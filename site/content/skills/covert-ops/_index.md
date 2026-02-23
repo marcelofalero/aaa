@@ -3,6 +3,7 @@ title = "Covert Ops"
 description = "Consolidated broad skill for stealth and bypassing security."
 weight = 1
 attribute = "DEX"
+category = "Other"
 +++
 
 The **Covert Ops** broad skill (formerly Stealth and Manipulation) focuses on remaining undetected and bypassing physical security. It consolidates the arts of stealth with the technical skills needed to bypass locks and pick pockets.

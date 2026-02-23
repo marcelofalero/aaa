@@ -3,6 +3,7 @@ title = "Knowledge"
 description = "General training in various topics; ability to recall and research information."
 weight = 4
 attribute = "INT"
+category = "Technical"
 +++
 
 This broad skill represents a hero's ability to know at least a little bit about any particular subject.

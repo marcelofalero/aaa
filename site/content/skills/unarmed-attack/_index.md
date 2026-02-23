@@ -3,6 +3,7 @@ title = "Unarmed Attack"
 description = "Basic knowledge and experience in hand-to-hand fighting."
 weight = 5
 attribute = "STR"
+category = "Combat"
 +++
 
 This broad skill provides a hero with basic knowledge and experience in hand-to-hand fighting. A hero trained in Unarmed Attack has enough know-how to dish out damage and protect himself in a street fight.

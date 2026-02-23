@@ -3,6 +3,7 @@ title = "Culture"
 description = "Ability to understand and interact with different cultures and species."
 weight = 1
 attribute = "PER"
+category = "Social"
 +++
 
 This broad skill represents a hero's ability to understand and interact with cultures different from his own. It covers customs, philosophy, and major historical figures.

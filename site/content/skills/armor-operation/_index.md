@@ -3,6 +3,7 @@ title = "Armor Operation"
 description = "Become accustomed to wearing armor, negating penalties."
 weight = 1
 attribute = "STR"
+category = "Combat"
 +++
 
 This broad skill allows a hero to become accustomed to wearing armor, negating some or all of the penalties associated with its use. All types of armor except those listed on TABLE P41: LIGHT-DUTY ARMOR have an action check and Dexterity resistance modifier penalty. Wearing any of these types of armor effectively is difficult unless a character is trained in Armor Operation.

@@ -3,6 +3,7 @@ title = "Demolitions"
 description = "Basic training in setting explosive charges to demolish a specific target."
 weight = 3
 attribute = "INT"
+category = "Technical"
 untrained = true
 +++
 

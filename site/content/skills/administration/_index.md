@@ -3,6 +3,7 @@ title = "Administration"
 description = "Knowledge of forms and procedures for running an office or organization."
 weight = 1
 attribute = "WIL"
+category = "Social"
 +++
 
 This broad skill provides a hero with knowledge of the forms and procedures for running an office or organization, including scheduling, personnel, and equipment management.

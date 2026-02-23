@@ -3,6 +3,7 @@ title = "Deception"
 description = "Proficiency at deceiving others through conversation and face-to-face interaction."
 weight = 2
 attribute = "PER"
+category = "Social"
 +++
 
 This broad skill represents a hero's proficiency at deceiving others through conversation and interaction. It covers all verbal tricks and subterfuges, but changes in attitude brought about by this skill are not necessarily long-lasting.

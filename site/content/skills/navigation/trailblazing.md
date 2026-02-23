@@ -1,6 +1,6 @@
 +++
 title = "Trailblazing"
-attribute = "CON"
+attribute = "INT"
 +++
 
 With trailblazing, a hero learns to find paths through rough terrain or create paths that others can use to move faster and cover more ground during a full day’s travel.

@@ -3,6 +3,7 @@ title = "Creativity"
 description = "Training and talent in aesthetic and emotional expression."
 weight = 4
 attribute = "WIL"
+category = "Other"
 +++
 
 This broad skill provides a hero with training and talent (or knowledge) in creative endeavors.

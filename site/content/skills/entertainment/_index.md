@@ -3,6 +3,7 @@ title = "Entertainment"
 description = "Proficiency in the performing arts; talent and technical knowledge."
 weight = 3
 attribute = "PER"
+category = "Social"
 +++
 
 This broad skill represents a hero's proficiency in the performing arts. Technical knowledge and training are part of this skill, as is the hero's ability to play to an audience and elicit an emotional response.

@@ -3,6 +3,7 @@ title = "Telepathy"
 description = "Open the mind to the thoughts of others or send own thoughts."
 weight = 4
 attribute = "PER"
+category = "Psionics"
 untrained = true
 +++
 

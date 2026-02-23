@@ -3,6 +3,7 @@ title = "Navigation"
 description = "Training in navigating on a planetary surface or in space."
 weight = 8
 attribute = "INT"
+category = "Technical"
 +++
 
 This broad skill provides a hero with training in navigating on a planetary surface or in space. Plotting a course requires a simple skill check.

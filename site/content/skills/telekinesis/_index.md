@@ -3,6 +3,7 @@ title = "Telekinesis"
 description = "Manipulate physical environment with only the power of the mind."
 weight = 3
 attribute = "WIL"
+category = "Psionics"
 untrained = true
 +++
 

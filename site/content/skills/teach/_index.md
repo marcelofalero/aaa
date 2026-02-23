@@ -3,6 +3,7 @@ title = "Teach"
 description = "Ability to instruct others in the use of a skill belonging to the Open group."
 weight = 8
 attribute = "WIL"
+category = "Social"
 +++
 
 This broad skill represents a hero's ability to instruct others in Open group skills.

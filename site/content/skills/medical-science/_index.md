@@ -3,6 +3,7 @@ title = "Medical Science"
 description = "Training in medical procedures, diagnosis, and treatment."
 weight = 7
 attribute = "INT"
+category = "Technical"
 untrained = true
 +++
 

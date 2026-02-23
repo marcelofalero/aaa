@@ -3,6 +3,7 @@ title = "Investigate"
 description = "Training and ability to examine things systematically through observation and inquiry."
 weight = 5
 attribute = "WIL"
+category = "Other"
 +++
 
 This broad skill provides a hero with the training and ability to examine things systematically. Unlike Awareness skills, Investigate takes time.

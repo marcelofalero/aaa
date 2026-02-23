@@ -3,6 +3,7 @@ title = "Stamina"
 description = "Physical fortitude with regard to the effects of mortal damage and fatigue."
 weight = 2
 attribute = "CON"
+category = "Other"
 +++
 
 This broad skill measures a hero's physical fortitude with regard to the effects of mortal damage and fatigue.

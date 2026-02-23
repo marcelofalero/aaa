@@ -3,6 +3,7 @@ title = "Computer Science"
 description = "Basic understanding of computers and computer systems."
 weight = 2
 attribute = "INT"
+category = "Technical"
 untrained = true
 +++
 

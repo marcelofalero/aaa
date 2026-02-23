@@ -3,6 +3,7 @@ title = "Biokinesis"
 description = "Harness the power of the mind to enhance body functions."
 weight = 1
 attribute = "CON"
+category = "Psionics"
 untrained = true
 +++
 

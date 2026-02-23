@@ -3,6 +3,7 @@ title = "Interaction"
 description = "Basics of interpersonal contact; winning friends and influencing people."
 weight = 4
 attribute = "PER"
+category = "Social"
 +++
 
 This broad skill provides a hero with the basics of interpersonal contact with members of the same species and culture. Interaction is an encounter skill, meaning it takes into account the target's attitude.

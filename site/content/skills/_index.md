@@ -1,6 +1,6 @@
 +++
 title = "Skills"
-description = "Comprehensive list of broad and specialty skills."
+description = "Comprehensive list of broad and specialty skills categorized by function."
 weight = 20
 +++
 
@@ -18,10 +18,55 @@ There are three ways to perform a skill check:
 2. **Broad Skill Only:** Use the **Broad Skill's Attribute** and its training bonus (if any).
 3. **Specialty Skill:** Use the **Specialty Skill's Attribute** and its training rank.
 
-**Note on Attributes:** Specialty skills may have a different attribute than their parent Broad skill. If you perform a check using the Broad skill (because you don't have the specific specialty), you always use the Broad skill's default attribute.
+## Categorized Broad Skills
 
-## All Broad Skills
+### Combat
+- [Armor Operation](/skills/armor-operation/)
+- [Heavy Weapons](/skills/heavy-weapons/)
+- [Melee Weapons](/skills/melee-weapons/)
+- [Modern Ranged Weapons](/skills/modern-ranged-weapons/)
+- [Primitive Ranged Weapons](/skills/primitive-ranged-weapons/)
+- [Tactics](/skills/tactics/)
+- [Unarmed Attack](/skills/unarmed-attack/)
 
-- **[Covert Ops](/skills/covert-ops/)**: Consolidated broad skill for stealth and security.
+### Other
+- [Acrobatics](/skills/acrobatics/)
+- [Animal Handling](/skills/animal-handling/)
+- [Athletics](/skills/athletics/)
+- [Awareness](/skills/awareness/)
+- [Covert Ops](/skills/covert-ops/)
+- [Creativity](/skills/creativity/)
+- [Investigate](/skills/investigate/)
+- [Resolve](/skills/resolve-wil/)
+- [Stamina](/skills/stamina/)
+- [Street Smart](/skills/street-smart/)
 
-{{% list %}}
+### Psionics
+- [Biokinesis](/skills/biokinesis/)
+- [ESP](/skills/esp/)
+- [Telekinesis](/skills/telekinesis/)
+- [Telepathy](/skills/telepathy/)
+- [Teleportation](/skills/teleportation/)
+
+### Social
+- [Administration](/skills/administration/)
+- [Business](/skills/business/)
+- [Culture](/skills/culture/)
+- [Deception](/skills/deception/)
+- [Entertainment](/skills/entertainment/)
+- [Interaction](/skills/interaction/)
+- [Leadership](/skills/leadership/)
+- [Teach](/skills/teach/)
+
+### Technical
+- [Computer Science](/skills/computer-science/)
+- [Demolitions](/skills/demolitions/)
+- [Knowledge](/skills/knowledge/)
+- [Life Science](/skills/life-science/)
+- [Medical Science](/skills/medical-science/)
+- [Navigation](/skills/navigation/)
+- [Physical Science](/skills/physical-science/)
+- [Security](/skills/security/)
+- [System Operation](/skills/system-operation/)
+- [Technical Science](/skills/technical-science/)
+- [Vehicle Operation](/skills/vehicle-operation/)

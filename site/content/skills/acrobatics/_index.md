@@ -3,6 +3,7 @@ title = "Acrobatics"
 description = "Basic training in gymnastics, tumbling, vaulting, rolling, dodging, balancing, and falling."
 weight = 1
 attribute = "DEX"
+category = "Other"
 +++
 
 This broad skill provides a hero with basic training in acrobatics. It is used when a hero wants to vault over a fence or other obstacle, dodge out of the way of an immediate danger, or try to land safely after a fall.

@@ -3,6 +3,7 @@ title = "Security"
 description = "Basic knowledge of security systems and procedures for physical objects or defined areas."
 weight = 10
 attribute = "INT"
+category = "Technical"
 untrained = true
 +++
 

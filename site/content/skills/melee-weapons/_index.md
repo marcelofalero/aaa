@@ -3,6 +3,7 @@ title = "Melee Weapons"
 description = "Training in close-quarters combat with blades and bludgeons."
 weight = 4
 attribute = "STR"
+category = "Combat"
 +++
 
 This skill provides a hero with training in the use of melee weapons. A melee weapon is any object a hero uses in a close-quarters fight, from a blade (knife, sword, ax) to a bludgeoning weapon (club, mace, table leg) to a powered melee weapon (gravmace, stun baton, tri-staff).

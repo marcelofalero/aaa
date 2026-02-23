@@ -3,6 +3,7 @@ title = "Street Smart"
 description = "Knowledge of protocols for dealing with gangs, criminal organizations, and illegal goods."
 weight = 7
 attribute = "WIL"
+category = "Other"
 +++
 
 This broad skill provides a hero with knowledge of the protocols for dealing with gangs, street people, and criminal organizations. It measures a hero's ability to negotiate and make contact with the realm of the blue-collar criminal.

@@ -3,6 +3,7 @@ title = "System Operation"
 description = "Training in the use of spaceship systems other than the helm."
 weight = 11
 attribute = "INT"
+category = "Technical"
 untrained = true
 +++
 

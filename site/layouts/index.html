@@ -5,16 +5,35 @@
         {{ range .Site.Sections.ByWeight }}
         <section class="mt4">
             <h2 class="f3 b bb b--light-gray pb2"><a href="{{ .RelPermalink }}" class="link black hover-blue">{{ .Title }}</a></h2>
-            <ul class="list pl0">
-                {{ range .Pages.ByWeight }}
-                <li class="pv2 ml3">
-                    <a href="{{ .RelPermalink }}" class="link blue hover-dark-blue f4">{{ .Title }}</a>
-                    {{ with .Description }}
-                    <p class="f6 i mt1 dark-gray">{{ . }}</p>
-                    {{ end }}
-                </li>
+            
+            {{ if eq .Section "skills" }}
+                {{ range .Pages.GroupByParam "category" }}
+                <div class="mt3">
+                    <h3 class="f4 b gray">{{ .Key }}</h3>
+                    <ul class="list pl0">
+                        {{ range .Pages.ByTitle }}
+                        <li class="pv2 ml3">
+                            <a href="{{ .RelPermalink }}" class="link blue hover-dark-blue f4">{{ .Title }}</a>
+                            {{ with .Description }}
+                            <p class="f6 i mt1 dark-gray">{{ . }}</p>
+                            {{ end }}
+                        </li>
+                        {{ end }}
+                    </ul>
+                </div>
                 {{ end }}
-            </ul>
+            {{ else }}
+                <ul class="list pl0">
+                    {{ range .Pages.ByWeight }}
+                    <li class="pv2 ml3">
+                        <a href="{{ .RelPermalink }}" class="link blue hover-dark-blue f4">{{ .Title }}</a>
+                        {{ with .Description }}
+                        <p class="f6 i mt1 dark-gray">{{ . }}</p>
+                        {{ end }}
+                    </li>
+                    {{ end }}
+                </ul>
+            {{ end }}
         </section>
         {{ end }}
     </div>

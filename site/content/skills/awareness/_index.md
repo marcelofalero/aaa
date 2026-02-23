@@ -3,6 +3,7 @@ title = "Awareness"
 description = "Powers of observation, perception, and intuition."
 weight = 3
 attribute = "WIL"
+category = "Other"
 +++
 
 This broad skill represents a hero's powers of observation, perception, and intuition. Skill checks are called for by the Gamemaster to determine if a hero notices something.

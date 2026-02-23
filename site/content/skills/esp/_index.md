@@ -3,6 +3,7 @@ title = "ESP"
 description = "Experience environment beyond normal senses using the mind."
 weight = 2
 attribute = "INT"
+category = "Psionics"
 untrained = true
 +++
 

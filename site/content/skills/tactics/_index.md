@@ -3,6 +3,7 @@ title = "Tactics"
 description = "Basic training and understanding of tactical situations."
 weight = 12
 attribute = "INT"
+category = "Combat"
 +++
 
 This broad skill provides a hero with an understanding of tactics. A successful use provides a penalty to the opponent's next skill check.

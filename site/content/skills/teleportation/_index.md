@@ -3,6 +3,7 @@ title = "Teleportation"
 description = "Psionic manipulation of space and distance."
 weight = 5
 attribute = "WIL"
+category = "Psionics"
 untrained = true
 +++
 

@@ -3,6 +3,7 @@ title = "Animal Handling"
 description = "Basic ability to train, ride, and handle domestic or wild animals."
 weight = 2
 attribute = "WIL"
+category = "Other"
 +++
 
 This broad skill provides a hero with the basic ability to train animals for labor, riding, tracking, and attacking. Purchasing the broad skill entitles a hero to select one type of animal to train.

@@ -3,6 +3,7 @@ title = "Heavy Weapons"
 description = "Training in use of mortars, grenade/rocket launchers, and heavy firearms."
 weight = 3
 attribute = "STR"
+category = "Combat"
 +++
 
 This broad skill provides a hero with training in the use of heavy weaponry that isn't part of a ship or a vehicle, including mortars, grenade and rocket launchers, shoulder-fired missiles, and heavy firearms. Weapons that are part of a large ship or a single-operator vehicle require the use of System Operation or Vehicle Operation, respectively.

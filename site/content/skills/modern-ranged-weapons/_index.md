@@ -3,6 +3,7 @@ title = "Modern Ranged Weapons"
 description = "Training in use of modern ranged weapons, including pistols, rifles, and SMGs."
 weight = 3
 attribute = "DEX"
+category = "Combat"
 +++
 
 This broad skill provides a hero with training in the use of modern ranged weapons. This skill covers pistols, rifles, shotguns, and submachine guns of all types, including projectile and energy weapons.

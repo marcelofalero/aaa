@@ -3,6 +3,7 @@ title = "Technical Science"
 description = "Training in the technical sciences, including maintenance, repair, and invention."
 weight = 13
 attribute = "INT"
+category = "Technical"
 untrained = true
 +++
 

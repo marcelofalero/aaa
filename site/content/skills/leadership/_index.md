@@ -3,6 +3,7 @@ title = "Leadership"
 description = "Abilities and talents of a leader; coordination of a group to work as a team."
 weight = 5
 attribute = "PER"
+category = "Social"
 +++
 
 This broad skill provides a hero with the abilities and talents of a leader. A leader can coordinate a group to perform better or work as a team. Only one character can assume the role of leader at a time.
