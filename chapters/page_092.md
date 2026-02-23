@@ -1,0 +1,105 @@
+the wheels of bureaucracy. Important
+applications, permits, clearances, reports, or other bureaucratic requests
+can be processed faster and more efficiently with the use of this skill.
+Conversely, this skill can be used to
+make the same bureaucratic processes slower for others. Management This skill indicates a hero's ability to
+manage both personnel and administrative duties. A skilled manager
+can increase productivity, inspire
+workers, and supervise the workings
+of a business or office. AnivMAL HANDLING This broad skill provides a hero with
+the basic ability to train animals to
+perform a variety of tasks, including
+doing labor, accepting riders, tracking, and attacking. It's also used to
+determine if a hero can get a trained
+animal to perform a task, to ride an
+animal, or to calm, capture, or otherwise handle a wild animal or an unfamiliar domestic animal. Note that
+the methods of training and the commands used with different animal
+species can vary widely. Purchasing the broad skill entitles
+a hero to select one type of animal
+that he is able to train, subject to the
+approval of the Gamemaster. For instance, it may be possible for a hero
+loselect “horse,” or the Gamemaster
+may dictate that separate applications of the skill are needed to train
+quarter horses and draft horses. In
+such a case, the hero would need to
+have the specialty skill animal training in order to be able to train and
+handle more than one type of horse. Any use of the Animal Handling
+broad skill to train a creature requires a complex skill check. Depending on the type of animal being
+worked with, a modifier is applied to
+esach segment of the complex skill
+check, and certain types of animals
+take longer to train (more successes
+needed) than other types. To have a chance of successfully
+training an animal, a character must
+spend at least 4 hours a day working
+with the creature. At the end of each
+week of continuous work, a skill
+check indicates how many successes
+were achieved toward the goal during that week. If the training schedule
+isinterrupted by one or more days of
+10 work, any days of work since the last skill check are lost. At the
+Gamemaster's discretion, an interruption of a week or more could mean
+that the training of that animal automatically fails and any successes
+that had been accumulated are lost. If the complex skill check ends in
+a Critical Failure, the animal goes
+berserk and attacks its trainer. I the
+check is aborted because of three
+Failure results, the animal simply refuses to be trained (but a different
+character might have better results). After an animal has been trained,
+other situation modifiers (listed in
+the bottom section of the sidebar)
+apply to any attempt to have the animal perform a certain task. “Unfamiliar animal” refers to a creature
+that has been trained by someone
+other than the character who's trying
+to make it perform. This modifier is
+cumulative with those listed under
+"Trained animal,” so that trying to
+get an unfamiliar trained animal to
+perform a [Good] task carries a +3
+penalty. Someone with the Animal Handling skill may be able to get a wild
+animal or an untrained domestic animal to do something, but in no case
+will such an animal perform a task
+of greater than [Ordinary] difficulty. [Ordinary] tasks include activities
+in response to simple, one-word commands such as “Attack,” “Come,”
+"Sit,” “Stay,” “Fetch,” “"Speak,” and
+"Quiet.” A [Good] task could be a combination of two [Ordinary] tasks (in
+succession or simultaneously), or it
+could be something more difficult,
+such as a dog pushing a lever with
+its paw when directed to do so. An
+[Amazing] task is just that—something that very few animals can or
+will do on command, such as running into a burning building to rescue a child. Of course, the Gamemaster has the final say on whether
+a task or trick is [Ordinary], [Good], or
+[Amazing]. The broad skill also enables a
+character to ride any animal that can
+be used for basic ground transportation—generally meaning horses,
+mules, and other large quadrupeds.
+When an animal is being ridden, the
+creature moves in every phase. During a phase in which the hero has an
+action, he can use this skill in an attempt to maneuver the animal. See
+page 198 in Chapter 12: Vehicles for
+information on the types of maneuvers—Routine, Moderate, and Extreme—a rider may attempt. (Al- Animal Handling
+Situation Modifiers Modifier Complexity STIINS p = though an animal is not normally
+thought of as a vehicle, the same
+general rules apply to riders of animals and drivers of vehicles.) Animal Riding This specialty skill enables a hero to
+improve this aspect of the Animal
+Handling broad skill. A character
+with this skill can attempt racing
+over dangerous terrain, making
+jumps or performing other stunts,
+and engaging in mounted combat. » Trick Riding: When a hero
+reaches rank 3 in this specialty, he
+becomes able to perform trick riding.
+This allows him to direct his mount
+to jump fences, leap chasms, or move
+backward. On a Critical Failure result, the animal trips (causing damage as per an Extremely Short fall for
+both mount and rider); on a Failure,
+the animal refuses to perform. For making horizontal leaps, success on a skill check adds to an animal’s natural jumping ability: [[Ordinary]], animal leaps normal
+distance plus 1 meter; [Good], normal
+distance plus 2 meters; [Amazing],
+normal distance plus 3 meters. For jumping over obstructions, the
+results are: [Ordinary], normal distance plus 1 meter; [Good], normal
+distance plus 1.5 meters; [Amazing],
+normal distance plus 2 meters. For moving backward, an [[Ordinary]] means that the animal
+backs up at one-half of its walk q
+movement rate; [Good], animal backs ]

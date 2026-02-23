@@ -1,0 +1,1 @@
+Clip Size/Ammo Used Hide Mass| EQUIPMENT

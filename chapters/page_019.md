@@ -1,0 +1,2 @@
+The information in this chaptor: ibles you to create any type of modernto. far-iuture hero you can imagine. 'hfomgucter templates in Chapler 1: Fast- Play Rules showed you some ‘examples o of typical heroes. Now it’s time to take | first big step toward tailoring the INITY game to meet your unique wants making your own custom-design: lcter \
+Throughout the hero creation pro y charactensucs*andattrib tes—th
