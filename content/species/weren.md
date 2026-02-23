@@ -1,0 +1,22 @@
++++
+title = "Weren"
+description = "Large, fur-covered philosopher-warriors with a fierce code of honor."
+weight = 6
++++
+
+# Weren
+
+You can't miss a weren (pronounced "wear-enn”). Standing 2.2 meters tall and weighing 180 kilograms, they are covered in thick fur with a great mane of hair and powerful claws.
+
+## History
+Hailing from the world of **Kurg**, the weren were discovered by humans during their version of the Renaissance—a time of learning, printing presses, and flintlocks. Despite their age of enlightenment, the weren were embroiled in a global war, keeping them sharp and battle-ready. They are a dichotomy: enlightened scholars one moment, noble savages the next.
+
+## Special Abilities
+- **Superior Durability:** A weren's durability rating is calculated using **Constitution x 1.5**.
+- **Natural Weapon:** Retractable claws (Unarmed Attack-brawl/power martial arts) do d4w/d4+2w/d4m damage.
+- **Camouflage:** Fur shimmers to match surroundings. Ranged attacks against a weren at a distance receive a **+1 step penalty**.
+- **Primitive Culture:** Suffer a **+2 step penalty** with technology from Progress Level 4 or higher (can be reduced with skill points).
+- **Free Broad Skills:** Athletics (STR), Unarmed Attack (STR), Stamina (CON), Knowledge (INT), Awareness (WIL), Interaction (PER).
+
+## Culture & Roleplaying
+Weren approach life with amazing intensity and become zealots for any new idea they embrace. They have strict codes of honor and noble acts. While fierce warriors (Combat Specs), some find roles as Diplomats or clergy. They struggle with high technology and often take roles as mercenaries or heavy laborers in galactic society.

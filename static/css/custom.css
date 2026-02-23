@@ -1,0 +1,59 @@
+/* Custom Table Styling for Alternity Core */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 2rem 0;
+    font-family: sans-serif;
+    font-size: 0.9rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+table th {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    text-align: left;
+    padding: 12px 15px;
+}
+
+table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #dddddd;
+}
+
+table tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+table tr:last-of-type {
+    border-bottom: 2px solid #1a1a1a;
+}
+
+table tr:hover {
+    background-color: #f5f5f5;
+}
+
+/* Fix Ananke text centering in list/section layouts */
+article section.tc-l {
+    text-align: left !important;
+}
+
+/* Ensure main content area is left-aligned */
+.lh-copy {
+    text-align: left;
+}
+
+/* Increase content width for a more expansive look */
+.measure-wide {
+    max-width: 80rem !important; /* Standard measure-wide is 34em */
+}
+
+/* For single pages and large containers */
+.mw7, .mw8 {
+    max-width: 90% !important;
+}
+
+/* Adjust nested copy line height section for wider text */
+article section.measure-wide {
+    max-width: 80% !important;
+    margin-left: 5%;
+}
