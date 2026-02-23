@@ -1,11 +1,15 @@
 +++
-title = "Manipulation"
-description = "Natural proficiency in manual dexterity and control."
-weight = 2
+title = "Manipulation (Retired)"
+description = "Retired broad skill; see Covert Ops."
+weight = 100
 attribute = "DEX"
 +++
 
-This broad skill provides a hero with a natural proficiency in manual dexterity and control. This proficiency allows a hero to attempt such actions as picking a pocket without being noticed, performing a sleight-of-hand feat, picking a lock, or doing anything else that requires a steady hand, a sharp eye, and plenty of coordination.
+This broad skill has been retired. Its core functionalities have been moved to the **Covert Ops** broad skill.
+
+- **Lockpick:** Moved to [Covert Ops](/skills/covert-ops/lockpick/)
+- **Pickpocket:** Moved to [Covert Ops](/skills/covert-ops/pickpocket/)
+- **Prestidigitation:** Retired.
 
 ## Specialty Skills
 

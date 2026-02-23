@@ -22,4 +22,6 @@ There are three ways to perform a skill check:
 
 ## All Broad Skills
 
+- **[Covert Ops](/skills/covert-ops/)**: Consolidated broad skill for stealth and security.
+
 {{% list %}}
