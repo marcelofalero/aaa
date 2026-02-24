@@ -11,6 +11,7 @@
   --neon-pink: #993366;
   --border-light: rgba(0, 153, 170, 0.15);
   --border-purple: rgba(102, 68, 170, 0.2);
+  --header-gray: #374151;
 }
 
 /* Global Overrides */
@@ -54,8 +55,47 @@ a:hover, .link:hover {
 }
 
 /* Override Ananke color classes */
-.bg-near-white, .bg-white, .bg-light-gray, .bg-black {
+.bg-near-white, .bg-white, .bg-light-gray {
   background-color: transparent !important;
+}
+
+/* Specific Header Height & Color Fixes */
+header .bg-black {
+  background-color: var(--header-gray) !important;
+  padding-bottom: 0 !important; /* Force remove pb6-l / pb3-m */
+}
+
+/* Remove the massive padding from the homepage/section headers */
+header div.pb3-m, 
+header div.pb6-l, 
+header div.pv6 {
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
+  min-height: auto !important;
+}
+
+header.cover {
+  min-height: auto !important;
+  height: auto !important;
+}
+
+.tc-l.pv6 {
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+}
+
+/* Adjust title size in thin header */
+header .f2.f1-l, 
+header .f3 {
+  font-size: 1.25rem !important;
+  margin: 0 !important;
+  font-family: 'Orbitron', sans-serif !important;
+}
+
+/* Hide header description to save space */
+header .fw1.f5, 
+header .fw1.f3-l {
+  display: none !important;
 }
 
 .mid-gray, .dark-gray, .black, .gray {
@@ -84,34 +124,6 @@ article header.w-100 {
   border-bottom: 1px solid var(--border-purple);
   margin-bottom: 2rem;
   border-radius: 2px;
-}
-
-/* Site-wide Header (The one taking 500px+) */
-header.cover {
-  min-height: 80px !important; /* Force a thin header */
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-header.cover > div {
-  background-color: rgba(55, 65, 81, 0.8) !important; /* Mid-gray background */
-}
-
-/* This targets the container with pv6 (the padding causing the massive height) */
-.tc-l.pv6 {
-  padding-top: 1rem !important;
-  padding-bottom: 1rem !important;
-}
-
-/* Adjust title size in thin header */
-.tc-l.pv6 .f2.f1-l {
-  font-size: 1.5rem !important;
-  margin: 0 !important;
-}
-
-/* Hide description in the thin top header to save space */
-.tc-l.pv6 .fw1.f5 {
-  display: none;
 }
 
 /* Floating Table of Contents Sidebar */
@@ -225,8 +237,8 @@ code {
 
 /* Top Navigation Bar */
 header nav.flex-l {
-  background-color: rgba(0, 0, 0, 0.8) !important;
-  border-bottom: 1px solid var(--border-light);
+  background-color: rgba(0, 0, 0, 0.2) !important;
+  border-bottom: 1px solid rgba(0, 210, 255, 0.1);
 }
 
 /* Horizontal Rule */
