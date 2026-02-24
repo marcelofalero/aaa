@@ -3,6 +3,9 @@ languageCode = 'en-us'
 title = 'AAA (Alterated Alternity Alternative)'
 theme = 'ananke'
 
+[params]
+  custom_css = ["css/scifi.css"]
+
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]

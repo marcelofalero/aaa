@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@400;600&display=swap');
+
+:root {
+  --bg-dark: #0a0e17;
+  --bg-panel: #131a2a;
+  --text-main: #a5b4cc;
+  --neon-cyan: #00f0ff;
+  --neon-purple: #9d00ff;
+  --neon-pink: #ff007f;
+  --border-light: rgba(0, 240, 255, 0.2);
+}
+
+/* Global Overrides */
+body {
+  background-color: var(--bg-dark) !important;
+  color: var(--text-main) !important;
+  font-family: 'Rajdhani', sans-serif !important;
+  font-size: 1.1rem;
+  background-image: 
+    linear-gradient(rgba(0, 240, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 240, 255, 0.03) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6, .athelas {
+  font-family: 'Orbitron', sans-serif !important;
+  color: var(--neon-cyan) !important;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-shadow: 0 0 10px rgba(0, 240, 255, 0.4);
+}
+
+a, .link {
+  color: var(--neon-purple) !important;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+a:hover, .link:hover {
+  color: var(--neon-pink) !important;
+  text-shadow: 0 0 8px var(--neon-pink);
+}
+
+/* Override Ananke color classes */
+.bg-near-white, .bg-white, .bg-light-gray {
+  background-color: transparent !important;
+}
+
+.mid-gray, .dark-gray, .black, .gray {
+  color: var(--text-main) !important;
+}
+
+/* Structural Blocks */
+article.flex-l {
+  max-width: 1200px; /* Wider for desktop */
+}
+
+/* Main Content Area Styling */
+.nested-copy-line-height {
+  background-color: var(--bg-panel);
+  border: 1px solid var(--border-light);
+  border-left: 3px solid var(--neon-cyan);
+  padding: 2rem !important;
+  border-radius: 4px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.5), inset 0 0 20px rgba(0, 240, 255, 0.02);
+}
+
+/* Header Area */
+header.w-100 {
+  background: var(--bg-panel);
+  padding: 1.5rem;
+  border-bottom: 2px solid var(--neon-purple);
+  margin-bottom: 2rem;
+  border-radius: 4px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+/* Floating Table of Contents Sidebar */
+aside.w-30-l {
+  position: sticky;
+  top: 2rem;
+  align-self: flex-start;
+  max-height: calc(100vh - 4rem);
+  overflow-y: auto;
+  background-color: var(--bg-panel);
+  border: 1px solid var(--neon-purple);
+  border-radius: 4px;
+  padding: 1.5rem;
+  box-shadow: 0 0 15px rgba(157, 0, 255, 0.15);
+}
+
+aside.w-30-l::-webkit-scrollbar {
+  width: 6px;
+}
+aside.w-30-l::-webkit-scrollbar-thumb {
+  background: var(--neon-purple);
+  border-radius: 3px;
+}
+
+/* TOC internal styling */
+#TableOfContents ul {
+  list-style-type: none;
+  padding-left: 1rem;
+}
+#TableOfContents > ul {
+  padding-left: 0;
+}
+#TableOfContents li {
+  margin-bottom: 0.5rem;
+}
+#TableOfContents a {
+  color: var(--text-main) !important;
+  font-size: 0.95rem;
+}
+#TableOfContents a:hover {
+  color: var(--neon-cyan) !important;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 1px solid var(--border-light);
+}
+
+th, td {
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--border-light);
+  text-align: left;
+}
+
+th {
+  background-color: rgba(0, 240, 255, 0.1);
+  color: var(--neon-cyan);
+  font-family: 'Orbitron', sans-serif;
+  font-size: 0.9rem;
+}
+
+tr:hover {
+  background-color: rgba(157, 0, 255, 0.1);
+}
+
+/* Custom Tabs & Breadcrumbs */
+.tabs-nav {
+  background: var(--bg-dark) !important;
+  border-bottom: 1px solid var(--neon-purple) !important;
+}
+.tab-btn {
+  color: var(--text-main) !important;
+  border-right: 1px solid var(--border-light) !important;
+  font-family: 'Orbitron', sans-serif;
+}
+.tab-btn:hover {
+  background: rgba(0, 240, 255, 0.1) !important;
+  color: var(--neon-cyan) !important;
+}
+.tab-btn.active {
+  background: var(--bg-panel) !important;
+  color: var(--neon-cyan) !important;
+  border-bottom: 2px solid var(--neon-cyan) !important;
+}
+.tab-panel {
+  background: var(--bg-panel);
+}
+
+.breadcrumbs {
+  border-bottom: 1px dashed var(--border-light) !important;
+}
+
+/* Code blocks & Pre */
+pre {
+  background: #000 !important;
+  border: 1px solid var(--border-light);
+  border-left: 3px solid var(--neon-pink);
+  padding: 1rem;
+  border-radius: 4px;
+  overflow-x: auto;
+}
+
+code {
+  color: var(--neon-cyan);
+  background: rgba(0, 240, 255, 0.1);
+  padding: 0.1rem 0.3rem;
+  border-radius: 3px;
+  font-family: monospace;
+}
+
+/* Horizontal Rule */
+hr {
+  border: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--neon-cyan), transparent);
+  margin: 2rem 0;
+}
+
+/* Top Navigation Bar */
+.bg-black {
+  background-color: var(--bg-dark) !important;
+  border-bottom: 2px solid var(--neon-cyan) !important;
+  box-shadow: 0 0 10px rgba(0, 240, 255, 0.3) !important;
+}
+
+.bg-primary {
+  background-color: var(--bg-dark) !important;
+  border-bottom: 2px solid var(--neon-cyan) !important;
+}
+
+/* Fix sidebar TOC links */
+.nested-links a {
+  color: var(--neon-cyan);
+}
+
+.nested-links a:hover {
+  color: var(--neon-pink);
+}
+
+/* Sci-fi List Summary Card */
+.sci-fi-card {
+  background-color: var(--bg-panel);
+  border: 1px solid var(--border-light);
+  border-left: 3px solid var(--neon-purple);
+  padding: 1.5rem;
+  border-radius: 4px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+  transition: all 0.3s ease;
+}
+
+.sci-fi-card:hover {
+  box-shadow: 0 4px 15px rgba(157, 0, 255, 0.2);
+  border-left: 3px solid var(--neon-cyan);
+}
