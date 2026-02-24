@@ -228,17 +228,17 @@ hr {
   margin-top: 0;
 }
 
-/* Homepage 2-column Grid Index */
+/* Homepage Grid Index - Refined Responsive Logic */
 .grid-index {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
   gap: 2rem;
   padding-bottom: 4rem;
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 768px) {
   .grid-index {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -248,6 +248,7 @@ hr {
   border: 1px solid var(--border-purple);
   border-top: 3px solid var(--neon-cyan);
   border-radius: 2px;
+  height: 100%;
 }
 
 .grid-index h2 {
