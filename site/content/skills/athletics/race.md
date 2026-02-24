@@ -1,7 +1,7 @@
 +++
 title = "Race"
 attribute = "CON"
-untrained = true
+untrained = false
 +++
 
 *This skill can't be used untrained.*

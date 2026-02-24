@@ -1,0 +1,48 @@
+<div class="tabs-container">
+  <div class="tabs-nav">
+    <!-- Nav buttons will be injected here via JS or via nested capture if more complex -->
+  </div>
+  <div class="tabs-content">
+    {{ .Inner }}
+  </div>
+</div>
+
+<script>
+(function() {
+  document.addEventListener("DOMContentLoaded", function() {
+    const containers = document.querySelectorAll('.tabs-container');
+    containers.forEach(container => {
+      const nav = container.querySelector('.tabs-nav');
+      const panels = container.querySelectorAll('.tab-panel');
+      
+      panels.forEach((panel, index) => {
+        const title = panel.getAttribute('data-title');
+        const btn = document.createElement('button');
+        btn.textContent = title;
+        btn.classList.add('tab-btn');
+        if (index === 0) {
+          btn.classList.add('active');
+          panel.classList.add('active');
+        }
+        btn.addEventListener('click', () => {
+          container.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+          container.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+          btn.classList.add('active');
+          panel.classList.add('active');
+        });
+        nav.appendChild(btn);
+      });
+    });
+  });
+})();
+</script>
+
+<style>
+.tabs-container { margin: 2rem 0; border: 1px solid #ddd; border-radius: 4px; overflow: hidden; }
+.tabs-nav { display: flex; background: #f8f9fa; border-bottom: 1px solid #ddd; flex-wrap: wrap; }
+.tab-btn { padding: 0.75rem 1.25rem; border: none; background: none; cursor: pointer; font-weight: 600; color: #555; border-right: 1px solid #ddd; }
+.tab-btn:hover { background: #e9ecef; }
+.tab-btn.active { background: #fff; color: #0074d9; border-bottom: 2px solid #0074d9; margin-bottom: -1px; }
+.tab-panel { display: none; padding: 1.5rem; }
+.tab-panel.active { display: block; }
+</style>

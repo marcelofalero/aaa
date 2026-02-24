@@ -1,7 +1,7 @@
 +++
 title = "Swim"
 attribute = "CON"
-untrained = true
+untrained = false
 +++
 
 *Except to determine if a hero can tread water to avoid drowning, this skill can’t be used untrained.*

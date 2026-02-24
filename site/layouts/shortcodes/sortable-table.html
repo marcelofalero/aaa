@@ -1,0 +1,46 @@
+<div class="table-wrapper">
+  {{ .Inner }}
+</div>
+
+<script>
+(function() {
+  document.addEventListener("DOMContentLoaded", function() {
+    const tables = document.querySelectorAll('.table-wrapper table');
+    tables.forEach(table => {
+      const headers = table.querySelectorAll('th');
+      headers.forEach((header, index) => {
+        header.style.cursor = 'pointer';
+        header.title = 'Click to sort';
+        header.addEventListener('click', () => {
+          sortTable(table, index);
+        });
+      });
+    });
+
+    function sortTable(table, colIndex) {
+      const tbody = table.tBodies[0];
+      const rows = Array.from(tbody.rows);
+      const isNumeric = !isNaN(rows[0].cells[colIndex].textContent.trim().replace('$', '').replace('kg', ''));
+      
+      const direction = table.getAttribute('data-sort-dir') === 'asc' ? -1 : 1;
+      const sortedRows = rows.sort((a, b) => {
+        let aText = a.cells[colIndex].textContent.trim().replace('$', '').replace('kg', '');
+        let bText = b.cells[colIndex].textContent.trim().replace('$', '').replace('kg', '');
+        
+        if (isNumeric) {
+          return direction * (parseFloat(aText) - parseFloat(bText));
+        }
+        return direction * aText.localeCompare(bText);
+      });
+
+      table.setAttribute('data-sort-dir', direction === 1 ? 'asc' : 'desc');
+      tbody.append(...sortedRows);
+    }
+  });
+})();
+</script>
+
+<style>
+.table-wrapper th:hover { background-color: #f0f0f0; }
+.table-wrapper th::after { content: ' ↕'; font-size: 0.8em; color: #999; }
+</style>
