@@ -77,13 +77,42 @@ article.flex-l {
   box-shadow: 0 10px 30px rgba(0,0,0,0.6);
 }
 
-/* Header Area */
-header.w-100 {
+/* Page Body Header Area (The one inside <article>) */
+article header.w-100 {
   background: var(--bg-panel-alt);
   padding: 1.5rem 2rem;
   border-bottom: 1px solid var(--border-purple);
   margin-bottom: 2rem;
   border-radius: 2px;
+}
+
+/* Site-wide Header (The one taking 500px+) */
+header.cover {
+  min-height: 80px !important; /* Force a thin header */
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+header.cover > div {
+  background-color: rgba(0, 0, 0, 0.7) !important;
+}
+
+/* This targets the container with pv6 (the padding causing the massive height) */
+.tc-l.pv6 {
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+}
+
+/* Adjust title size in thin header */
+.tc-l.pv6 .f2.f1-l {
+  font-size: 1.5rem !important;
+  margin: 0 !important;
+}
+
+/* Hide description in the thin top header to save space if needed, 
+   or just make it very small */
+.tc-l.pv6 .fw1.f5 {
+  display: none;
 }
 
 /* Floating Table of Contents Sidebar */
@@ -249,7 +278,7 @@ hr {
   background-color: var(--bg-panel);
   padding: 1.5rem;
   border: 1px solid var(--border-purple);
-  border-top: 2px solid var(--neon-cyan);
+  border-top: 3px solid var(--neon-cyan);
   border-radius: 2px;
   height: 100%;
 }
