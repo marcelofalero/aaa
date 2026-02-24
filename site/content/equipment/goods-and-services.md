@@ -5,22 +5,6 @@ weight = 1
 
 This section covers the basic economic rules and general equipment available in the AAA system.
 
-## Starting Funds
-
-Every hero starts with a bankroll to purchase their initial gear. Refer to the table below based on your chosen profession. Multiply the result by 100 to determine your total starting funds in Credits ($).
-
-| Profession | Starting Funds Multiplier |
-| :--- | :---: |
-| Combat Spec | 5d6 |
-| Diplomat | 5d12 |
-| Free Agent | 5d8 |
-| Tech Op | 5d8 |
-| Mindwalker | 5d4 |
-
-### Rich and Poor
-- **Filthy Rich (Perk):** Multiply your starting funds by x10, x20, x50, or x100 depending on your Perk check.
-- **Dirt Poor (Flaw):** Reduce your starting funds by 90%, 75%, 50%, or 25% depending on your Flaw check.
-
 ## Progress Levels (PL)
 
 The state of technology in a society is defined by its Progress Level.

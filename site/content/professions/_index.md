@@ -39,3 +39,21 @@ Technical operatives skilled in the use, creation, or maintenance of high-tech e
 | **Free Agent** | DEX 9, WIL 9 |
 | **Tech Op** | DEX 9, INT 9 |
 | **Mindwalker** | WIL 9, PER 9 |
+
+---
+
+## Starting Funds
+
+Every hero starts with a bankroll to purchase their initial gear. Refer to the table below based on your chosen profession. Multiply the result by 100 to determine your total starting funds in Credits ($).
+
+| Profession | Starting Funds Multiplier |
+| :--- | :---: |
+| Combat Spec | 5d6 |
+| Diplomat | 5d12 |
+| Free Agent | 5d8 |
+| Tech Op | 5d8 |
+| Mindwalker | 5d4 |
+
+### Rich and Poor
+- **Filthy Rich (Perk):** Multiply your starting funds by x10, x20, x50, or x100 depending on your Perk check.
+- **Dirt Poor (Flaw):** Reduce your starting funds by 90%, 75%, 50%, or 25% depending on your Flaw check.
