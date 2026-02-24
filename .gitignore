@@ -3,4 +3,3 @@ resources/_gen/
 .hugo_build.lock
 hugo_server.log
 hugo_startup.log
-node_modules/
