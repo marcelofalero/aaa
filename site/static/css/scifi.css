@@ -1,16 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@400;600&display=swap');
 
 :root {
-  --bg-dark: #020408;
-  --bg-panel: #080c14;
-  --bg-panel-alt: #0c121d;
-  --text-main: #94a3b8;
-  --text-dim: #64748b;
-  --neon-cyan: #00d2ff;
-  --neon-purple: #7a00ff;
-  --neon-pink: #d4006b;
-  --border-light: rgba(0, 210, 255, 0.1);
-  --border-purple: rgba(122, 0, 255, 0.2);
+  --bg-dark: #05070a;
+  --bg-panel: #0b0f17;
+  --bg-panel-alt: #111621;
+  --text-main: #8a9ab0;
+  --text-dim: #5c6b7e;
+  --neon-cyan: #0099aa;
+  --neon-purple: #6644aa;
+  --neon-pink: #993366;
+  --border-light: rgba(0, 153, 170, 0.15);
+  --border-purple: rgba(102, 68, 170, 0.2);
 }
 
 /* Global Overrides */
@@ -21,9 +21,9 @@ html, body, .scifi-body {
   font-size: 1.1rem;
   line-height: 1.6;
   background-image: 
-    linear-gradient(rgba(0, 210, 255, 0.02) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0, 210, 255, 0.02) 1px, transparent 1px) !important;
-  background-size: 40px 40px !important;
+    linear-gradient(rgba(0, 153, 170, 0.015) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 153, 170, 0.015) 1px, transparent 1px) !important;
+  background-size: 50px 50px !important;
   margin: 0;
   min-height: 100vh;
 }
@@ -33,22 +33,24 @@ h1, h2, h3, h4, h5, h6, .athelas {
   font-family: 'Orbitron', sans-serif !important;
   color: var(--neon-cyan) !important;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
-  text-shadow: 0 0 15px rgba(0, 210, 255, 0.3);
+  letter-spacing: 0.08em;
+  text-shadow: 0 0 8px rgba(0, 153, 170, 0.2);
   margin-top: 2rem;
 }
 
-h1 { font-size: 2.5rem; margin-bottom: 1.5rem; }
+h1 { font-size: 2.2rem; margin-bottom: 1.2rem; }
 
 a, .link {
-  color: var(--neon-purple) !important;
+  color: var(--neon-cyan) !important;
   transition: all 0.3s ease;
-  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-color: rgba(0, 153, 170, 0.3);
 }
 
 a:hover, .link:hover {
-  color: var(--neon-cyan) !important;
-  text-shadow: 0 0 10px var(--neon-cyan);
+  color: var(--neon-purple) !important;
+  text-shadow: none;
+  text-decoration-color: var(--neon-purple);
 }
 
 /* Override Ananke color classes */
@@ -72,17 +74,16 @@ article.flex-l {
   border-left: 2px solid var(--neon-cyan);
   padding: 2.5rem !important;
   border-radius: 2px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
 }
 
 /* Header Area */
 header.w-100 {
   background: var(--bg-panel-alt);
-  padding: 2rem;
-  border-bottom: 1px solid var(--neon-purple);
-  margin-bottom: 3rem;
+  padding: 1.5rem 2rem;
+  border-bottom: 1px solid var(--border-purple);
+  margin-bottom: 2rem;
   border-radius: 2px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.7);
 }
 
 /* Floating Table of Contents Sidebar */
@@ -95,22 +96,22 @@ aside.w-30-l {
   background-color: var(--bg-panel);
   border: 1px solid var(--border-purple);
   border-radius: 2px;
-  padding: 1.5rem;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  padding: 1.2rem;
 }
 
-aside.w-30-l::-webkit-scrollbar { width: 4px; }
-aside.w-30-l::-webkit-scrollbar-thumb { background: var(--neon-purple); }
+aside.w-30-l::-webkit-scrollbar { width: 3px; }
+aside.w-30-l::-webkit-scrollbar-thumb { background: var(--border-purple); }
 
 /* TOC internal styling */
 #TableOfContents ul { list-style-type: none; padding-left: 1rem; }
 #TableOfContents > ul { padding-left: 0; }
-#TableOfContents li { margin-bottom: 0.6rem; }
+#TableOfContents li { margin-bottom: 0.5rem; }
 #TableOfContents a {
   color: var(--text-dim) !important;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   text-transform: uppercase;
   font-family: 'Orbitron', sans-serif;
+  text-decoration: none;
 }
 #TableOfContents a:hover {
   color: var(--neon-cyan) !important;
@@ -121,18 +122,18 @@ table {
   width: 100%;
   border-collapse: collapse;
   margin: 2.5rem 0;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.3);
   border: 1px solid var(--border-light);
 }
 
 th, td {
-  padding: 1rem;
+  padding: 0.8rem 1rem;
   border: 1px solid var(--border-light);
   text-align: left;
 }
 
 th {
-  background-color: rgba(0, 210, 255, 0.05);
+  background-color: rgba(0, 153, 170, 0.05);
   color: var(--neon-cyan);
   font-family: 'Orbitron', sans-serif;
   font-size: 0.8rem;
@@ -140,30 +141,30 @@ th {
 }
 
 tr:hover {
-  background-color: rgba(0, 210, 255, 0.03);
+  background-color: rgba(0, 153, 170, 0.03);
 }
 
 /* Custom Tabs */
 .tabs-container { margin: 3rem 0; }
 .tabs-nav {
-  background: #000 !important;
-  border-bottom: 1px solid var(--neon-purple) !important;
+  background: rgba(0,0,0,0.4) !important;
+  border-bottom: 1px solid var(--border-purple) !important;
 }
 .tab-btn {
   color: var(--text-dim) !important;
   border-right: 1px solid var(--border-purple) !important;
   font-family: 'Orbitron', sans-serif;
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   letter-spacing: 0.1em;
 }
 .tab-btn:hover {
-  background: rgba(122, 0, 255, 0.1) !important;
+  background: rgba(102, 68, 170, 0.1) !important;
   color: var(--text-main) !important;
 }
 .tab-btn.active {
   background: var(--bg-panel) !important;
   color: var(--neon-cyan) !important;
-  border-bottom: 2px solid var(--neon-cyan) !important;
+  border-bottom: 1px solid var(--neon-cyan) !important;
 }
 .tab-panel {
   background: var(--bg-panel);
@@ -173,68 +174,68 @@ tr:hover {
 
 /* Breadcrumbs */
 .breadcrumbs {
-  border-bottom: 1px solid var(--border-purple) !important;
-  margin-bottom: 2rem !important;
+  border-bottom: 1px dashed var(--border-purple) !important;
+  margin-bottom: 1.5rem !important;
 }
-.breadcrumbs a { color: var(--text-dim) !important; }
-.breadcrumbs a:hover { color: var(--neon-purple) !important; }
+.breadcrumbs a { color: var(--text-dim) !important; text-decoration: none; }
+.breadcrumbs a:hover { color: var(--neon-cyan) !important; }
 
 /* Code blocks & Pre */
 pre {
   background: #000 !important;
   border: 1px solid var(--border-purple);
-  border-left: 4px solid var(--neon-pink);
-  padding: 1.5rem;
-  border-radius: 0;
+  border-left: 3px solid var(--neon-pink);
+  padding: 1.2rem;
 }
 
 code {
   color: var(--neon-pink);
-  background: rgba(212, 0, 107, 0.05);
-  padding: 0.2rem 0.4rem;
-  font-family: 'Courier New', Courier, monospace;
+  background: rgba(153, 51, 102, 0.1);
+  padding: 0.1rem 0.3rem;
+  font-family: monospace;
 }
 
 /* Top Navigation Bar */
 header nav.flex-l {
-  background-color: rgba(0, 0, 0, 0.9) !important;
-  border-bottom: 1px solid var(--neon-cyan);
+  background-color: rgba(0, 0, 0, 0.8) !important;
+  border-bottom: 1px solid var(--border-light);
 }
 
 /* Horizontal Rule */
 hr {
   border: 0;
   height: 1px;
-  background: linear-gradient(90deg, transparent, var(--neon-purple), transparent);
-  margin: 3rem 0;
+  background: linear-gradient(90deg, transparent, var(--border-purple), transparent);
+  margin: 2.5rem 0;
 }
 
 /* Sci-fi List Summary Card */
 .sci-fi-card {
   background-color: var(--bg-panel-alt);
   border: 1px solid var(--border-purple);
-  border-top: 2px solid var(--neon-purple);
-  padding: 2rem;
+  border-top: 2px solid var(--border-purple);
+  padding: 1.5rem;
   border-radius: 2px;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.6);
-  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+  transition: all 0.3s ease;
 }
 
 .sci-fi-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.8);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
   border-top: 2px solid var(--neon-cyan);
 }
 
 .sci-fi-card h2, .sci-fi-card h1 {
   margin-top: 0;
+  font-size: 1.2rem;
 }
 
-/* Homepage Grid Index - Refined Responsive Logic */
+/* Homepage Grid Index */
 .grid-index {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 2rem;
+  gap: 1.5rem;
   padding-bottom: 4rem;
 }
 
@@ -248,12 +249,12 @@ hr {
   background-color: var(--bg-panel);
   padding: 1.5rem;
   border: 1px solid var(--border-purple);
-  border-top: 3px solid var(--neon-cyan);
+  border-top: 2px solid var(--neon-cyan);
   border-radius: 2px;
   height: 100%;
 }
 
 .grid-index h2 {
   margin-top: 0;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
