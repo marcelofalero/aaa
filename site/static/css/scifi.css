@@ -14,7 +14,7 @@
 }
 
 /* Global Overrides */
-body {
+html, body, .scifi-body {
   background-color: var(--bg-dark) !important;
   color: var(--text-main) !important;
   font-family: 'Rajdhani', sans-serif !important;
@@ -22,8 +22,10 @@ body {
   line-height: 1.6;
   background-image: 
     linear-gradient(rgba(0, 210, 255, 0.02) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0, 210, 255, 0.02) 1px, transparent 1px);
-  background-size: 40px 40px;
+    linear-gradient(90deg, rgba(0, 210, 255, 0.02) 1px, transparent 1px) !important;
+  background-size: 40px 40px !important;
+  margin: 0;
+  min-height: 100vh;
 }
 
 /* Typography */

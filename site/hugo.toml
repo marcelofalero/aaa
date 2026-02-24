@@ -5,6 +5,7 @@ theme = 'ananke'
 
 [params]
   custom_css = ["css/scifi.css"]
+  body_classes = "scifi-body"
 
 [markup]
   [markup.goldmark]
