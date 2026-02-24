@@ -59,43 +59,23 @@ a:hover, .link:hover {
   background-color: transparent !important;
 }
 
-/* Specific Header Height & Color Fixes */
-header .bg-black {
+/* Specific Header Styling */
+.bg-black {
   background-color: var(--header-gray) !important;
-  padding-bottom: 0 !important; /* Force remove pb6-l / pb3-m */
+  border-bottom: 1px solid var(--border-light);
 }
 
-/* Remove the massive padding from the homepage/section headers */
-header div.pb3-m, 
-header div.pb6-l, 
-header div.pv6 {
-  padding-top: 0.5rem !important;
-  padding-bottom: 0.5rem !important;
-  min-height: auto !important;
+header nav {
+  padding-top: 0.75rem !important;
+  padding-bottom: 0.75rem !important;
 }
 
-header.cover {
-  min-height: auto !important;
-  height: auto !important;
-}
-
-.tc-l.pv6 {
-  padding-top: 1rem !important;
-  padding-bottom: 1rem !important;
-}
-
-/* Adjust title size in thin header */
-header .f2.f1-l, 
+/* Adjust title size in navigation */
 header .f3 {
-  font-size: 1.25rem !important;
-  margin: 0 !important;
+  font-size: 1.2rem !important;
   font-family: 'Orbitron', sans-serif !important;
-}
-
-/* Hide header description to save space */
-header .fw1.f5, 
-header .fw1.f3-l {
-  display: none !important;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 .mid-gray, .dark-gray, .black, .gray {
@@ -117,7 +97,7 @@ article.flex-l {
   box-shadow: 0 10px 30px rgba(0,0,0,0.6);
 }
 
-/* Page Body Header Area (The one inside <article>) */
+/* Page Body Header Area (Inside <article>) */
 article header.w-100 {
   background: var(--bg-panel-alt);
   padding: 1.5rem 2rem;
@@ -237,8 +217,7 @@ code {
 
 /* Top Navigation Bar */
 header nav.flex-l {
-  background-color: rgba(0, 0, 0, 0.2) !important;
-  border-bottom: 1px solid rgba(0, 210, 255, 0.1);
+  background-color: transparent !important;
 }
 
 /* Horizontal Rule */
