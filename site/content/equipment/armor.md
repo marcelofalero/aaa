@@ -46,8 +46,7 @@ toc = true
 
 ### Armor Descriptions
 
-{{< tabs >}}
-{{< tab title="PL 0-3" >}}
+### PL 0-3
 **PL 0: Stone Age**
 *   **Hide Armor:** This armor utilizes the furs and skins of animals, which are stitched or fastened together to roughly fit the body of the individual wearing it. The protection it provides is minimal, and its use during the era is uncommon. This category also includes weaves of thick vegetation made into protective garments.
 
@@ -61,9 +60,8 @@ toc = true
 
 **PL 3: Age of Reason**
 *   **Leather Coat:** The "cuir bouilli" (boiled leather) coat isn't the best armor, but it's better than nothing. Leather coats have an advantage in being innately concealable; in many societies, the rugged coat is an item of style.
-{{< /tab >}}
 
-{{< tab title="PL 4-6" >}}
+### PL 4-6
 **PL 4: Industrial Age**
 *   **Flak Jacket:** While unable to fully absorb the blows of the weapons of the period, the flak jacket is the first armor to seriously inhibit the passage of high impact damage to its wearer.
 
@@ -76,9 +74,8 @@ toc = true
 *   **CF Short Coat:** A stylish, lightweight coat made from carbonate fiber (CF) weave, which is much stronger than leather and provides excellent protection against many types of damage.
 *   **CF Long Coat:** A longer version of the CF coat that provides more coverage and protection.
 *   **Attack Armor:** The earliest true attack armor are improved versions of typical assault gear, incorporating a rigid carbonate fiber breastplate for maximum protection.
-{{< /tab >}}
 
-{{< tab title="PL 7-8" >}}
+### PL 7-8
 **PL 7: Gravity Age**
 *   **Cerametal Armor:** A suit of advanced armor made from a combination of ceramic and metallic alloys, which is incredibly strong and resistant to most forms of damage.
 *   **Assault Suit:** A heavy, powered exoskeleton that provides the wearer with incredible strength and protection, as well as several integrated weapons and sensors.
@@ -88,5 +85,3 @@ toc = true
 *   **Body Tank:** A self-contained suit of powered armor that acts as a walking tank, equipped with on-board sensors, computers, and weapon systems.
 *   **Commando Suit:** A lighter, more agile version of powered armor designed for stealth and infiltration missions.
 *   **Mauler Suit:** The heaviest and most powerful form of powered armor, capable of crushing almost any obstacle in its path.
-{{< /tab >}}
-{{< /tabs >}}

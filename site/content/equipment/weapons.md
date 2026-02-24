@@ -40,8 +40,7 @@ toc = true
 
 ### Melee Weapon Descriptions
 
-{{< tabs >}}
-{{< tab title="PL 0-1" >}}
+### PL 0-1
 **PL 0: Stone Age**
 *   <span id="club">**Club:**</span> This category includes all types of simple, one-piece bludgeons—humanity’s oldest weapon. Clubs range from natural sticks and bones to carved stone or wood to modern nightsticks and truncheons of hard wood, plastic, or even metal. The combat statistics for a club also apply to any heavy, club-like object a character picks up to use in a fight, such as a table leg or a lead pipe.
 *   <span id="dagger">**Dagger:**</span> All knives, stilettos, and other such weapons are included in this category (except for the combat knife, which has its own entry).
@@ -53,8 +52,7 @@ toc = true
 *   <span id="hand-ax">**Hand Ax:**</span> A tool that became a weapon, the hand ax consists of a short wooden handle with a heavy, single-edged cutting head. Primitive axes can be made from carved stone, but the majority of axes at higher Progress Levels have metal heads.
 *   <span id="mace">**Mace:**</span> A mace is a club with a blunt stone or iron head fitted to one end. Some of the heads may be studded, flanged, or spiked.
 *   <span id="short-sword">**Short Sword:**</span> The short sword consists of a handle designed for one-handed use and a blade that's longer than a dagger's—any blade just over 0.5 meters in length. The blade is pointed and used for thrusting.
-{{< /tab >}}
-{{< tab title="PL 2-3" >}}
+### PL 2-3
 **PL 2: Middle Ages**
 *   <span id="broad-sword">**Broad Sword:**</span> The heavy, double-edged broad sword features a meter-long blade designed for both cutting and slashing.
 *   <span id="flail">**Flail:**</span> The common threshing flail, modified for war, is a potent weapon. It consists of a sturdy wooden handle attached by a chain to an iron rod, a spiked rod, or a spiked iron ball.
@@ -67,16 +65,14 @@ toc = true
 *   <span id="katana">**Katana:**</span> This is the sword of the samurai. It features a slightly curved blade with a chisel point and a small, circular guard. The katana is forged from the finest steel, and its careful construction yields a blade of great strength and flexibility.
 *   <span id="rapier">**Rapier:**</span> Along, slender blade designed for thrusting, used primarily in duels and fencing.
 *   <span id="saber">**Saber:**</span> The favorite cavalry weapon, the saber has a slightly curved blade that gives maximum slashing power.
-{{< /tab >}}
-{{< tab title="PL 4-5" >}}
+### PL 4-5
 **PL 4: Industrial Age**
 *   <span id="bayonet">**Bayonet:**</span> Originally a dagger designed to be attached to a rifle’s muzzle, the bayonet occasionally becomes a primary weapon in its own right. In effect, a bayonet turns a rifle into a spear.
 
 **PL 5: Information Age**
 *   <span id="combat-knife">**Combat Knife:**</span> This weapon is a high-tech version of the standard knife, typically composed of tempered steel, sophisticated polymers, or ceramics.
 *   <span id="stun-baton">**Stun Baton:**</span> This low-powered version of the pulse baton is sometimes known as a taser. Its surface crackles with a high-voltage, low-current electrical charge that can temporarily short-circuit the human nervous system. Insulated gloves are necessary to prevent the user from accidentally shocking himself.
-{{< /tab >}}
-{{< tab title="PL 6-8" >}}
+### PL 6-8
 **PL 6: Fusion Age**
 *   <span id="chainsword">**Chainsword:**</span> This device consists of a meter-long blade with a motorized, rotating chain of razor-sharp teeth.
 *   <span id="pulse-baton">**Pulse Baton:**</span> An improved version of the stun baton, the pulse baton delivers a massive electrical discharge upon impact.
@@ -88,8 +84,6 @@ toc = true
 **PL 8: Energy Age**
 *   <span id="star-sword">**Star Sword:**</span> This weapon generates a containment field in the shape of a blade, and then fills the interior of this field with white-hot plasma. On contact, the containment field releases a stream of plasma that can burn or cut through almost anything. A star sword is difficult to use and often damages an untrained wielder.
 *   <span id="tri-staff">**Tri-staff:**</span> This 2-meter-long staff is topped by a three-pronged blade. When the staff is activated, an internal power source suffuses it with a soft glow. This aura acts as a defensive force field that improves the Strength and Dexterity resistance modifiers of its wielder by 1 step.
-{{< /tab >}}
-{{< /tabs >}}
 
 ## Ranged Weapons
 
@@ -137,8 +131,7 @@ toc = true
 
 ### Ranged Weapon Descriptions
 
-{{< tabs >}}
-{{< tab title="PL 0-3" >}}
+### PL 0-3
 **PL 0: Stone Age**
 *   <span id="bow-short">**Bow, Short:**</span> This is a simple bow made from a single piece of wood. It is the earliest and most widespread form of archery.
 *   <span id="sling">**Sling:**</span> A simple strap of leather used to hurl stones or lead bullets with surprising force.
@@ -155,8 +148,7 @@ toc = true
 *   <span id="musket-flintlock">**Musket, Flintlock:**</span> The earliest form of common black powder firearm, inaccurate and slow-loading, but powerful at close range.
 *   <span id="pistol-flintlock">**Pistol, Flintlock:**</span> A small handgun that uses a flintlock mechanism, popular for self-defense and dueling.
 *   <span id="rifle-long">**Rifle, Long:**</span> Also known as the Kentucky rifle, this flintlock weapon features rifled barrels for significantly improved accuracy over a smoothbore musket.
-{{< /tab >}}
-{{< tab title="PL 4-6" >}}
+### PL 4-6
 **PL 4: Industrial Age**
 *   <span id="derringer">**Derringer:**</span> A very small, easily concealed pistol, typically having two barrels and used as a backup weapon.
 *   <span id="pistol-38-rev">**Pistol, .38 Revolver:**</span> A standard, reliable handgun that uses a rotating cylinder to hold multiple rounds.
@@ -170,8 +162,7 @@ toc = true
 *   <span id="pistol-9mm-zero-g">**Pistol, 9mm Zero-G:**</span> A charge pistol with a sophisticated anti-recoil system, allowing it to be used in weightless conditions without affecting the wielder's movement.
 *   <span id="rifle-11mm-charge">**Rifle, 11mm Charge:**</span> A heavier version of the charge rifle, firing larger rounds with greater range and damage.
 *   <span id="shotgun-autoflec">**Shotgun, Autoflec:**</span> A high-tech shotgun that fires a cloud of tiny flechettes (needle-like projectiles) and is capable of semi-automatic fire.
-{{< /tab >}}
-{{< tab title="PL 7-8" >}}
+### PL 7-8
 **PL 7: Gravity Age**
 *   <span id="pistol-15mm-sabot">**Pistol, 15mm Sabot:**</span> Fires high-velocity, sub-caliber projectiles that can penetrate most personal armor with ease.
 *   <span id="pistol-laser">**Pistol, Laser:**</span> Uses an electrical charge to fire a focused, white-hot beam of light that can burn through many materials.
@@ -185,8 +176,6 @@ toc = true
 *   <span id="automaser">**Automaser:**</span> A submachine-gun version of maser technology, providing high-rate energy blasts for rapid fire.
 *   <span id="pistol-maser">**Pistol, maser:**</span> Fires a blast of microwave energy that generates intense heat within the target's body.
 *   <span id="rifle-maser">**Rifle, maser:**</span> A larger, more powerful version of the maser pistol, capable of inflicting severe internal damage at longer ranges.
-{{< /tab >}}
-{{< /tabs >}}
 
 ## Heavy Weapons
 
@@ -226,8 +215,7 @@ toc = true
 
 ### Heavy Weapon Descriptions
 
-{{< tabs >}}
-{{< tab title="PL 4-5" >}}
+### PL 4-5
 **PL 4: Industrial Age**
 *   <span id="flamethrower">**Flamethrower:**</span> Uses a tank of liquid fuel to project a stream of burning fire, capable of engulfing several targets in its path.
 *   <span id="grenade-frag">**Grenade, Fragmentation:**</span> A standard grenade designed to scatter razor-sharp fragments in all directions upon detonation.
@@ -241,8 +229,7 @@ toc = true
 *   <span id="grenade-smoke">**Grenade, Smoke:**</span> A non-lethal grenade that releases a thick cloud of smoke to obscure vision.
 *   <span id="hvy-machine-gun">**Heavy Machine Gun:**</span> A larger, more powerful machine gun that can penetrate light armor and suppress large areas.
 *   <span id="sam-handheld">**SAM, Handheld:**</span> A man-portable surface-to-air missile launcher used to shoot down low-flying aircraft.
-{{< /tab >}}
-{{< tab title="PL 6-7" >}}
+### PL 6-7
 **PL 6: Fusion Age**
 *   <span id="bantam-launcher">**Bantam Launcher:**</span> A high-tech rocket launcher that can fire several different types of specialized "Bantam" missiles.
 *   <span id="bantam-antiair">**Bantam, antiair:**</span> A missile designed to track and destroy fast-moving aerial targets.
@@ -260,12 +247,9 @@ toc = true
 *   <span id="grenade-tracer">**Grenade, tracer:**</span> A specialized grenade that releases a swarm of tiny sensors to track and mark targets.
 *   <span id="plasma-gun">**Plasma Gun:**</span> A larger, more powerful version of the plasma grenade, capable of firing repeated bursts of superheated plasma.
 *   <span id="quantum-mini">**Quantum Mini:**</span> A personal version of the particle beam cannon, firing subatomic particles with devastating force.
-{{< /tab >}}
-{{< tab title="PL 8" >}}
+### PL 8
 **PL 8: Energy Age**
 *   <span id="bantam-starload">**Bantam, starload:**</span> A missile that uses a miniature mass reactor to create a massive explosion, targeting both people and vehicles.
 *   <span id="cannon-maser">**Cannon, maser:**</span> A heavy energy weapon that uses a mass reactor to supply the power for destructive maser blasts.
 *   <span id="grenade-mass">**Grenade, mass:**</span> Detonates a tiny mass reactor to create a small but destructive singularity that destroys anything in its vicinity.
 *   <span id="mass-launcher">**Mass Launcher:**</span> An indirect-fire weapon that launches waves of gravity energy, using the planet's gravity well to magnify its power.
-{{< /tab >}}
-{{< /tabs >}}
