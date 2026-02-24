@@ -5,19 +5,6 @@ weight = 1
 
 This section covers the basic economic rules and general equipment available in the AAA system.
 
-## Progress Levels (PL)
-
-The state of technology in a society is defined by its Progress Level.
-- **PL 0 (Stone Age):** Fire, domestication, stone tools.
-- **PL 1 (Bronze/Iron Age):** Metalworking, durable tools and weapons.
-- **PL 2 (Middle Ages):** Architecture, metallurgy, sea travel.
-- **PL 3 (Age of Reason):** Scientific method, experimentation.
-- **PL 4 (Industrial Age):** Steam/electric power, global communication.
-- **PL 5 (Information Age):** Computers, fission power, the first Grid.
-- **PL 6 (Fusion Age):** Fusion power, space colonization, virtual reality.
-- **PL 7 (Gravity Age):** Mass reactors, star system colonization.
-- **PL 8 (Energy Age):** Miniaturized stardrives, force screens, energy weapons.
-
 ## Personal Equipment
 
 ### Clothing and Accessories
