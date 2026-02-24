@@ -289,3 +289,15 @@ hr {
   margin-top: 0;
   font-size: 1.1rem;
 }
+
+/* Table Separator Row */
+tr.table-separator td {
+  background-color: var(--bg-panel-alt) !important;
+  color: var(--neon-cyan) !important;
+  font-weight: 700;
+  text-align: center;
+  border-bottom: 1px solid var(--border-purple);
+  padding: 1rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
