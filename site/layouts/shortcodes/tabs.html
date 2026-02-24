@@ -1,6 +1,6 @@
 <div class="tabs-container">
   <div class="tabs-nav">
-    <!-- Nav buttons will be injected here via JS or via nested capture if more complex -->
+    <!-- Nav buttons will be injected here via JS -->
   </div>
   <div class="tabs-content">
     {{ .Inner }}
@@ -33,6 +33,30 @@
         nav.appendChild(btn);
       });
     });
+
+    // Handle anchor links to switch tabs
+    function handleHash() {
+      const hash = window.location.hash;
+      if (hash) {
+        const target = document.querySelector(hash);
+        if (target) {
+          const panel = target.closest('.tab-panel');
+          if (panel) {
+            const container = panel.closest('.tabs-container');
+            const index = Array.from(container.querySelectorAll('.tab-panel')).indexOf(panel);
+            const buttons = container.querySelectorAll('.tab-btn');
+            if (buttons[index]) {
+              buttons[index].click();
+              // Scroll to target after a short delay to allow tab to show
+              setTimeout(() => target.scrollIntoView({ behavior: 'smooth' }), 50);
+            }
+          }
+        }
+      }
+    }
+
+    window.addEventListener('hashchange', handleHash);
+    handleHash(); // Run on initial load
   });
 })();
 </script>

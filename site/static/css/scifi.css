@@ -12,6 +12,8 @@
   --border-light: rgba(0, 153, 170, 0.15);
   --border-purple: rgba(102, 68, 170, 0.2);
   --header-gray: #374151;
+  --table-stripe-1: #1e1e2e;
+  --table-stripe-2: #252539;
 }
 
 /* Global Overrides */
@@ -142,7 +144,7 @@ table {
   width: 100%;
   border-collapse: collapse;
   margin: 2.5rem 0;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: transparent;
   border: 1px solid var(--border-light);
 }
 
@@ -153,15 +155,30 @@ th, td {
 }
 
 th {
-  background-color: rgba(0, 153, 170, 0.05);
+  background-color: rgba(0, 153, 170, 0.1) !important;
   color: var(--neon-cyan);
   font-family: 'Orbitron', sans-serif;
   font-size: 0.8rem;
   letter-spacing: 0.05em;
 }
 
+/* Striping with close shades of gray */
+tbody tr:nth-child(odd) {
+  background-color: var(--table-stripe-1);
+}
+tbody tr:nth-child(even) {
+  background-color: var(--table-stripe-2);
+}
+
+/* Removing hover highlight effect */
 tr:hover {
-  background-color: rgba(0, 153, 170, 0.03);
+  background-color: inherit;
+}
+
+/* Special styling for links in tables */
+td a {
+  font-weight: 600;
+  text-decoration: none !important;
 }
 
 /* Custom Tabs */
