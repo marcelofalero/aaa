@@ -93,7 +93,7 @@ Attacking with two weapons inflicts a **+2 penalty** to the main hand and a **+4
 
 ### Thrown Weapons & Grenades
 - **Range:** Based on STR score (Short = STR meters).
-- **Grenades:** Use the *Athletics-throw* skill. If they miss, they deviate based on the degree of failure.
+- **Grenades:** Use the [*Athletics-throw*](/skills/athletics/throw) skill. If they miss, they deviate based on the degree of failure.
 
 ### Impact Damage (Falling)
 Falling damage is based on distance and the result of an *Acrobatics-fall* or DEX check. Terminal velocity is reached after 61 meters.

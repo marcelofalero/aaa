@@ -1,0 +1,19 @@
+<nav class="breadcrumbs aria-label="breadcrumb"">
+  <ul class="list pl0 mb3 f6">
+    <li class="dib mr2"><a href="/" class="link blue hover-dark-blue">Home</a></li>
+    {{ range .Ancestors.Reverse }}
+      <li class="dib mr2"><span class="gray">/</span></li>
+      <li class="dib mr2"><a href="{{ .RelPermalink }}" class="link blue hover-dark-blue">{{ .Title }}</a></li>
+    {{ end }}
+    <li class="dib mr2"><span class="gray">/</span></li>
+    <li class="dib mr2 gray">{{ .Title }}</li>
+  </ul>
+</nav>
+
+<style>
+.breadcrumbs {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+</style>

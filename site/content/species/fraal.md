@@ -13,7 +13,7 @@ The fraal are nomadic starfarers who came to Earth more than 10,000 years ago. T
 
 ## Special Abilities
 - **Psionic Proficiency:** Fraal are extremely proficient in psionics. A fraal character who is a Talent or a Mindwalker has significantly higher psionic energy points than other species (Will x 1.0 or Will x 1.5 respectively).
-- **Natural Telepath:** When using the specialty skill **telepathy-contact**, a fraal character expends **no psionic energy** unless the skill check fails.
+- **Natural Telepath:** When using the specialty skill [**telepathy-contact**](/skills/telepathy/contact), a fraal character expends **no psionic energy** unless the skill check fails.
 - **Free Broad Skills:** Awareness (PER), Resolve (WIL), Vehicle Operation (DEX), Knowledge (INT), Interaction (PER), Telepathy (WIL).
 
 ## Culture & Roleplaying
