@@ -7,44 +7,35 @@ toc = true
 ## Melee Weapons
 
 {{< sortable-table >}}
-| Weapon (PL) | Skill | Acc | Damage (O/G/A) | Actions | Mass | Avail | Cost ($) |
-| :--- | :--- | :--: | :--- | :---: | :--: | :---: | :---: |
-| **PL 0: Stone Age** | | | | | | | |
-| [Club](#club) | [Melee-bludgeon](/skills/melee-weapons/bludgeon/) | 0 | d4+1s/d6w/d4+1w | 1 | 2 | C | 5 |
-| [Dagger](#dagger) | [Melee-blade](/skills/melee-weapons/blade/) | 0 | d6w/d4+1w/d4+2w | 1 | 1 | C | 10 |
-| [Quarterstaff](#quarterstaff) | [Melee-bludgeon](/skills/melee-weapons/bludgeon/) | -1 | d4+1s/d4+3s/d6w | 1 | 2 | C | 10 |
-| [Spear](#spear) | [Melee-blade](/skills/melee-weapons/blade/) | 0 | d4w/d4+2w/d4m | 1 | 3 | C | 15 |
-| Unarmed | [Unarmed Attack](/skills/unarmed-attack/) | 0 | d4s/d4+1s/d6+2s | 1 | - | C | - |
-| **PL 1: Bronze/Iron Age** | | | | | | | |
-| [Gauntlet](#gauntlet) | [Unarmed Attack](/skills/unarmed-attack/) | 0 | d4+1s/d4+2s/d4+1w | 1 | 1 | C | 25 |
-| [Hand ax](#hand-ax) | [Melee-blade](/skills/melee-weapons/blade/) | 0 | d4+1w/d4+2w/d4+3w | 1 | 2 | C | 20 |
-| [Mace](#mace) | [Melee-bludgeon](/skills/melee-weapons/bludgeon/) | 0 | d6+1s/d4+1w/d8+1w | 1 | 4 | C | 30 |
-| [Short sword](#short-sword) | [Melee-blade](/skills/melee-weapons/blade/) | 0 | d6w/d8w/d6+2w | 1 | 2 | C | 50 |
-| **PL 2: Middle Ages** | | | | | | | |
-| [Broad sword](#broad-sword) | [Melee-blade](/skills/melee-weapons/blade/) | 0 | d4+2w/d6+2w/d4m | 1 | 3 | C | 100 |
-| [Flail](#flail) | [Melee-bludgeon](/skills/melee-weapons/bludgeon/) | +1 | d6+2s/d4+2w/d8+2w | 1 | 4 | U | 75 |
-| [Great ax](#great-ax) | [Melee-blade](/skills/melee-weapons/blade/) | +1 | d6+1w/d8+2w/d4+1m | 2 | 8 | U | 150 |
-| [Nunchaku](#nunchaku) | [Melee-bludgeon](/skills/melee-weapons/bludgeon/) | -1 | d6s/d6+2s/d8+3s | 1 | 1 | U | 40 |
-| [Polearm](#polearm) | [Melee-blade](/skills/melee-weapons/blade/) | +1 | d6+1w/d4+3w/d4+1m | 2 | 6 | C | 60 |
-| **PL 3: Age of Reason** | | | | | | | |
-| [Cutlass](#cutlass) | [Melee-blade](/skills/melee-weapons/blade/) | 0 | d4+1w/d8+1w/d8+3w | 1 | 2 | C | 80 |
-| [Katana](#katana) | [Melee-blade](/skills/melee-weapons/blade/) | -1 | d4+2w/d6+2w/d4+1m | 1 | 2 | R | 500 |
-| [Rapier](#rapier) | [Melee-blade](/skills/melee-weapons/blade/) | -1 | d4w/d4+1w/d4+2w | 1 | 1 | U | 100 |
-| [Saber](#saber) | [Melee-blade](/skills/melee-weapons/blade/) | 0 | d4w/d4+2w/2d4+1w | 1 | 2 | U | 120 |
-| **PL 4: Industrial Age** | | | | | | | |
-| [Bayonet](#bayonet) | [Melee-blade](/skills/melee-weapons/blade/) | +1 | d4w/d4+2w/d6m | 1 | 1 | C | 25 |
-| **PL 5: Information Age**| | | | | | | |
-| [Combat knife](#combat-knife) | [Melee-blade](/skills/melee-weapons/blade/) | 0 | d4+1w/d4+2w/d4+3w | 1 | 1 | C | 50 |
-| [Stun baton](#stun-baton) | [Melee-powered](/skills/melee-weapons/powered-weapon/) | 0 | d4+1s/d4+3s/d6+4s | 1 | 1 | U | 200 |
-| **PL 6: Fusion Age** | | | | | | | |
-| [Chainsword](#chainsword) | [Melee-powered](/skills/melee-weapons/powered-weapon/) | +1 | d8+1w/d8+2w/d4+1m | 1 | 5 | R | 1500 |
-| [Pulse baton](#pulse-baton) | [Melee-powered](/skills/melee-weapons/powered-weapon/) | 0 | d8s/d4+2w/d6+2w | 1 | 2 | U | 400 |
-| **PL 7: Gravity Age** | | | | | | | |
-| [Gravmace](#gravmace) | [Melee-powered](/skills/melee-weapons/powered-weapon/) | +1 | d6+2s/d6+2w/d8+2w | 1 | 4 | R | 2000 |
-| [Power Cestus](#power-cestus) | [Unarmed-brawl](/skills/unarmed-attack/brawl/) | -1 | d4+2s/d4w/d4+1w | 1 | 3 | R | 1800 |
-| **PL 8: Energy Age** | | | | | | | |
-| [Star sword](#star-sword) | [Melee-powered](/skills/melee-weapons/powered-weapon/) | -2 | d8+1w/2d6w/d4+3m | 1 | 3 | R | 7500 |
-| [Tri-staff](#tri-staff) | [Melee-powered](/skills/melee-weapons/powered-weapon/) | -1 | d8+2w/3d4+1w/d8m | 1 | 4 | R | 4000 |
+| PL | Weapon | Skill | Acc | Damage (O/G/A) | Actions | Mass | Avail | Cost ($) |
+| :--- | :--- | :--- | :--: | :--- | :---: | :--: | :---: | :---: |
+| 0 | [Club](#club) | [Melee-bludgeon](/skills/melee-weapons/bludgeon/) | 0 | d4+1s/d6w/d4+1w | 1 | 2 | C | 5 |
+| 0 | [Dagger](#dagger) | [Melee-blade](/skills/melee-weapons/blade/) | 0 | d6w/d4+1w/d4+2w | 1 | 1 | C | 10 |
+| 0 | [Quarterstaff](#quarterstaff) | [Melee-bludgeon](/skills/melee-weapons/bludgeon/) | -1 | d4+1s/d4+3s/d6w | 1 | 2 | C | 10 |
+| 0 | [Spear](#spear) | [Melee-blade](/skills/melee-weapons/blade/) | 0 | d4w/d4+2w/d4m | 1 | 3 | C | 15 |
+| 0 | Unarmed | [Unarmed Attack](/skills/unarmed-attack/) | 0 | d4s/d4+1s/d6+2s | 1 | - | C | - |
+| 1 | [Gauntlet](#gauntlet) | [Unarmed Attack](/skills/unarmed-attack/) | 0 | d4+1s/d4+2s/d4+1w | 1 | 1 | C | 25 |
+| 1 | [Hand ax](#hand-ax) | [Melee-blade](/skills/melee-weapons/blade/) | 0 | d4+1w/d4+2w/d4+3w | 1 | 2 | C | 20 |
+| 1 | [Mace](#mace) | [Melee-bludgeon](/skills/melee-weapons/bludgeon/) | 0 | d6+1s/d4+1w/d8+1w | 1 | 4 | C | 30 |
+| 1 | [Short sword](#short-sword) | [Melee-blade](/skills/melee-weapons/blade/) | 0 | d6w/d8w/d6+2w | 1 | 2 | C | 50 |
+| 2 | [Broad sword](#broad-sword) | [Melee-blade](/skills/melee-weapons/blade/) | 0 | d4+2w/d6+2w/d4m | 1 | 3 | C | 100 |
+| 2 | [Flail](#flail) | [Melee-bludgeon](/skills/melee-weapons/bludgeon/) | +1 | d6+2s/d4+2w/d8+2w | 1 | 4 | U | 75 |
+| 2 | [Great ax](#great-ax) | [Melee-blade](/skills/melee-weapons/blade/) | +1 | d6+1w/d8+2w/d4+1m | 2 | 8 | U | 150 |
+| 2 | [Nunchaku](#nunchaku) | [Melee-bludgeon](/skills/melee-weapons/bludgeon/) | -1 | d6s/d6+2s/d8+3s | 1 | 1 | U | 40 |
+| 2 | [Polearm](#polearm) | [Melee-blade](/skills/melee-weapons/blade/) | +1 | d6+1w/d4+3w/d4+1m | 2 | 6 | C | 60 |
+| 3 | [Cutlass](#cutlass) | [Melee-blade](/skills/melee-weapons/blade/) | 0 | d4+1w/d8+1w/d8+3w | 1 | 2 | C | 80 |
+| 3 | [Katana](#katana) | [Melee-blade](/skills/melee-weapons/blade/) | -1 | d4+2w/d6+2w/d4+1m | 1 | 2 | R | 500 |
+| 3 | [Rapier](#rapier) | [Melee-blade](/skills/melee-weapons/blade/) | -1 | d4w/d4+1w/d4+2w | 1 | 1 | U | 100 |
+| 3 | [Saber](#saber) | [Melee-blade](/skills/melee-weapons/blade/) | 0 | d4w/d4+2w/2d4+1w | 1 | 2 | U | 120 |
+| 4 | [Bayonet](#bayonet) | [Melee-blade](/skills/melee-weapons/blade/) | +1 | d4w/d4+2w/d6m | 1 | 1 | C | 25 |
+| 5 | [Combat knife](#combat-knife) | [Melee-blade](/skills/melee-weapons/blade/) | 0 | d4+1w/d4+2w/d4+3w | 1 | 1 | C | 50 |
+| 5 | [Stun baton](#stun-baton) | [Melee-powered](/skills/melee-weapons/powered-weapon/) | 0 | d4+1s/d4+3s/d6+4s | 1 | 1 | U | 200 |
+| 6 | [Chainsword](#chainsword) | [Melee-powered](/skills/melee-weapons/powered-weapon/) | +1 | d8+1w/d8+2w/d4+1m | 1 | 5 | R | 1500 |
+| 6 | [Pulse baton](#pulse-baton) | [Melee-powered](/skills/melee-weapons/powered-weapon/) | 0 | d8s/d4+2w/d6+2w | 1 | 2 | U | 400 |
+| 7 | [Gravmace](#gravmace) | [Melee-powered](/skills/melee-weapons/powered-weapon/) | +1 | d6+2s/d6+2w/d8+2w | 1 | 4 | R | 2000 |
+| 7 | [Power Cestus](#power-cestus) | [Unarmed-brawl](/skills/unarmed-attack/brawl/) | -1 | d4+2s/d4w/d4+1w | 1 | 3 | R | 1800 |
+| 8 | [Star sword](#star-sword) | [Melee-powered](/skills/melee-weapons/powered-weapon/) | -2 | d8+1w/2d6w/d4+3m | 1 | 3 | R | 7500 |
+| 8 | [Tri-staff](#tri-staff) | [Melee-powered](/skills/melee-weapons/powered-weapon/) | -1 | d8+2w/3d4+1w/d8m | 1 | 4 | R | 4000 |
 {{< /sortable-table >}}
 
 ### Melee Weapon Descriptions
@@ -103,53 +94,45 @@ toc = true
 ## Ranged Weapons
 
 {{< sortable-table >}}
-| Weapon (PL) | Skill | Acc | Range (S/M/L) | Damage (O/G/A) | Act. | Clip | Cost ($) |
-| :--- | :--- | :-: | :--- | :--- | :-: | :-: | :---: |
-| **PL 0: Stone Age** | | | | | | | |
-| [Bow, short](#bow-short) | [Prim-bow](/skills/primitive-ranged-weapons/bow/) | 0 | 20/40/100 | d4w/d4+2w/d4+3w | 1 | 1 | 40 |
-| [Sling](#sling) | [Prim-sling](/skills/primitive-ranged-weapons/sling/) | +2 | 10/20/60 | d4s/d4+1s/d4+2s | 1 | 1 | 10 |
-| **PL 1: Bronze/Iron Age** | | | | | | | |
-| [Javelin](#javelin) | [Athl-throw](/skills/athletics/throw/) | 0 | Per STR | d4+1w/d6+1w/d4m | 1 | 1 | 20 |
-| **PL 2: Middle Ages** | | | | | | | |
-| [Bow, long](#bow-long) | [Prim-bow](/skills/primitive-ranged-weapons/bow/) | -1 | 40/80/200 | d4+2w/d6+2w/d4+1m | 1 | 1 | 75 |
-| [Crossbow](#crossbow) | [Prim-bow](/skills/primitive-ranged-weapons/bow/) | 0 | 50/100/250| d6s/d4w/d4+1w | 2 | 1 | 150 |
-| [Shuriken](#shuriken) | [Athl-throw](/skills/athletics/throw/) | -1 | Per STR | d4s/d4+1s/d6+1s | 1 | 1 | 10 |
-| **PL 3: Age of Reason** | | | | | | | |
-| [Musket, flintlock](#musket-flintlock) | [Prim-flint](/skills/primitive-ranged-weapons/flintlock/) | +2 | 20/40/100 | d4+2w/d6+2w/d8m | 3 | 1 | 200 |
-| [Pistol, flintlock](#pistol-flintlock) | [Prim-flint](/skills/primitive-ranged-weapons/flintlock/) | +2 | 4/8/16 | d4s/d6w/d8+2w | 3 | 1 | 150 |
-| [Rifle, long](#rifle-long) | [Prim-flint](/skills/primitive-ranged-weapons/flintlock/) | 0 | 30/60/150 | d6w/d6+2w/d4+1m | 3 | 1 | 300 |
-| **PL 4: Industrial Age** | | | | | | | |
-| [Derringer](#derringer) | [Mod-pistol](/skills/modern-ranged-weapons/pistol/) | +2 | 5/10/30 | d4w/d6w/d4m | 2 | 2 | 100 |
-| [Pistol, .38 rev](#pistol-38-rev) | [Mod-pistol](/skills/modern-ranged-weapons/pistol/) | 0 | 10/20/80 | d4+1w/d4+2w/d6m | 1 | 6 | 200 |
-| [Pistol, .44 magnum](#pistol-44-magnum) | [Mod-pistol](/skills/modern-ranged-weapons/pistol/) | +1 | 30/60/200 | d4+2w/d6+2w/d4+1m | 1 | 6 | 400 |
-| [Rifle, 7.62mm](#rifle-7-62mm) | [Mod-rifle](/skills/modern-ranged-weapons/rifle/) | -1 | 80/160/400| d6w/d8+1w/d6+1m | 1 | 10 | 500 |
-| [Rifle, assault](#rifle-assault) | [Mod-rifle](/skills/modern-ranged-weapons/rifle/) | -1 | 50/100/300| d4w/d6w/d4m | 1 | 30 | 700 |
-| [SMG, 9mm](#smg-9mm) | [Mod-SMG](/skills/modern-ranged-weapons/smg/) | +1 | 30/60/150 | d4+1w/d4+2w/d6m | 1 | 30 | 600 |
-| **PL 6: Fusion Age** | | | | | | | |
-| [Pistol, 9mm ch](#pistol-9mm-charge) | [Mod-pistol](/skills/modern-ranged-weapons/pistol/) | 0 | 20/40/100 | d4+1w/d6+1w/d4m | 1 | 15 | 400 |
-| [Pistol, 9mm zero-g](#pistol-9mm-zero-g) | [Mod-pistol](/skills/modern-ranged-weapons/pistol/) | 0 | 20/40/100 | d4+1w/d6+1w/d4m | 1 | 15 | 600 |
-| [Pistol, 11mm ch](#pistol-11mm-charge) | [Mod-pistol](/skills/modern-ranged-weapons/pistol/) | +1 | 40/80/240 | d4+2w/d6+2w/d4+1m | 1 | 10 | 500 |
-| [Rifle, 11mm ch](#rifle-11mm-charge) | [Mod-rifle](/skills/modern-ranged-weapons/rifle/) | 0 | 100/400/1000| d6+1w/d6+3w/d6+1m | 1 | 30 | 900 |
-| [Rifle, 11mm zero-g](#rifle-11mm-zero-g) | [Mod-rifle](/skills/modern-ranged-weapons/rifle/) | 0 | 100/400/1000| d6+1w/d6+3w/d6+1m | 1 | 15 | 1100 |
-| [Shotgun, autoflec](#shotgun-autoflec) | [Mod-rifle](/skills/modern-ranged-weapons/rifle/) | +2 | 4/12/30 | d6w/d6+2w/d8m | 1 | 15 | 800 |
-| [SMG, 9mm ch](#smg-9mm-charge) | [Mod-SMG](/skills/modern-ranged-weapons/smg/) | +1 | 50/100/250| d4+1w/d6+1w/d4m | 1 | 30 | 750 |
-| **PL 7: Gravity Age** | | | | | | | |
-| [Pistol, 15mm sabot](#pistol-15mm-sabot) | [Mod-pistol](/skills/modern-ranged-weapons/pistol/) | -1 | 80/200/500| 2d4w/2d4+1w/d4+3m | 1 | 6 | 900 |
-| [Pistol, laser](#pistol-laser) | [Mod-pistol](/skills/modern-ranged-weapons/pistol/) | -1 | 50/100/250| d4+1w/d6+1w/d4m | 1 | 20 | 600 |
-| [Pistol, mass](#pistol-mass) | [Mod-pistol](/skills/modern-ranged-weapons/pistol/) | +1 | 20/80/200 | d6w/d6+2w/d8m | 1 | 10 | 800 |
-| [Pistol, stutter](#pistol-stutter) | [Mod-pistol](/skills/modern-ranged-weapons/pistol/) | 0 | 10/20/80 | d6+2s/d8+2s/d8+4s | 1 | 10 | 400 |
-| [Rifle, laser](#rifle-laser) | [Mod-rifle](/skills/modern-ranged-weapons/rifle/) | -2 | 60/120/400| d6+1w/d6+3w/d4+1m | 1 | 12 | 1000 |
-| [Rifle, mass](#rifle-mass) | [Mod-rifle](/skills/modern-ranged-weapons/rifle/) | 0 | 20/60/120 | d8w/d8+1w/d6+1m | 1 | 8 | 1300 |
-| [Rifle, quantum](#rifle-quantum) | [Mod-rifle](/skills/modern-ranged-weapons/rifle/) | -1 | 40/200/500| d4+3w/d6+4w/d8+1m | 1 | 15 | 5000 |
-| [Rifle, render](#rifle-render) | [Mod-rifle](/skills/modern-ranged-weapons/rifle/) | 0 | 20/40/80 | d6+1s/d6+1w/d4+1m | 1 | 8 | 1500 |
-| [SMG, laser](#smg-laser) | [Mod-SMG](/skills/modern-ranged-weapons/smg/) | -1 | 20/40/80 | d6w/d6+2w/d4m | 1 | 40 | 800 |
-| [SMG, stutter](#smg-stutter) | [Mod-SMG](/skills/modern-ranged-weapons/smg/) | +1 | 10/20/60 | d6+2s/d8+2s/d8+4s | 1 | 20 | 700 |
-| **PL 8: Energy Age** | | | | | | | |
-| [Automaser](#automaser) | [Mod-SMG](/skills/modern-ranged-weapons/smg/) | -2 | 60/120/400| d6w/d6+2w/d4m | 1 | 20 | 1500 |
-| [Pistol, hvy maser](#pistol-hvy-maser) | [Mod-pistol](/skills/modern-ranged-weapons/pistol/) | -1 | 40/200/500| d6+1w/2d4+1w/d4+1m| 1 | 30 | 1200 |
-| [Pistol, maser](#pistol-maser) | [Mod-pistol](/skills/modern-ranged-weapons/pistol/) | -1 | 20/60/120 | d6w/d6+2w/d4m | 1 | 40 | 900 |
-| [Rifle, hvy maser](#rifle-hvy-maser) | [Mod-rifle](/skills/modern-ranged-weapons/rifle/) | -2 | 80/200/600| d8+1w/d12w/d6+1m | 1 | 60 | 2500 |
-| [Rifle, maser](#rifle-maser) | [Mod-rifle](/skills/modern-ranged-weapons/rifle/) | -2 | 60/120/400| d6+2w/2d4+2w/d4+2m| 1 | 90 | 1800 |
+| PL | Weapon | Skill | Acc | Range (S/M/L) | Damage (O/G/A) | Act. | Clip | Cost ($) |
+| :--- | :--- | :--- | :-: | :--- | :--- | :-: | :-: | :---: |
+| 0 | [Bow, short](#bow-short) | [Prim-bow](/skills/primitive-ranged-weapons/bow/) | 0 | 20/40/100 | d4w/d4+2w/d4+3w | 1 | 1 | 40 |
+| 0 | [Sling](#sling) | [Prim-sling](/skills/primitive-ranged-weapons/sling/) | +2 | 10/20/60 | d4s/d4+1s/d4+2s | 1 | 1 | 10 |
+| 1 | [Javelin](#javelin) | [Athl-throw](/skills/athletics/throw/) | 0 | Per STR | d4+1w/d6+1w/d4m | 1 | 1 | 20 |
+| 2 | [Bow, long](#bow-long) | [Prim-bow](/skills/primitive-ranged-weapons/bow/) | -1 | 40/80/200 | d4+2w/d6+2w/d4+1m | 1 | 1 | 75 |
+| 2 | [Crossbow](#crossbow) | [Prim-bow](/skills/primitive-ranged-weapons/bow/) | 0 | 50/100/250| d6s/d4w/d4+1w | 2 | 1 | 150 |
+| 2 | [Shuriken](#shuriken) | [Athl-throw](/skills/athletics/throw/) | -1 | Per STR | d4s/d4+1s/d6+1s | 1 | 1 | 10 |
+| 3 | [Musket, flintlock](#musket-flintlock) | [Prim-flint](/skills/primitive-ranged-weapons/flintlock/) | +2 | 20/40/100 | d4+2w/d6+2w/d8m | 3 | 1 | 200 |
+| 3 | [Pistol, flintlock](#pistol-flintlock) | [Prim-flint](/skills/primitive-ranged-weapons/flintlock/) | +2 | 4/8/16 | d4s/d6w/d8+2w | 3 | 1 | 150 |
+| 3 | [Rifle, long](#rifle-long) | [Prim-flint](/skills/primitive-ranged-weapons/flintlock/) | 0 | 30/60/150 | d6w/d6+2w/d4+1m | 3 | 1 | 300 |
+| 4 | [Derringer](#derringer) | [Mod-pistol](/skills/modern-ranged-weapons/pistol/) | +2 | 5/10/30 | d4w/d6w/d4m | 2 | 2 | 100 |
+| 4 | [Pistol, .38 rev](#pistol-38-rev) | [Mod-pistol](/skills/modern-ranged-weapons/pistol/) | 0 | 10/20/80 | d4+1w/d4+2w/d6m | 1 | 6 | 200 |
+| 4 | [Pistol, .44 magnum](#pistol-44-magnum) | [Mod-pistol](/skills/modern-ranged-weapons/pistol/) | +1 | 30/60/200 | d4+2w/d6+2w/d4+1m | 1 | 6 | 400 |
+| 4 | [Rifle, 7.62mm](#rifle-7-62mm) | [Mod-rifle](/skills/modern-ranged-weapons/rifle/) | -1 | 80/160/400| d6w/d8+1w/d6+1m | 1 | 10 | 500 |
+| 4 | [Rifle, assault](#rifle-assault) | [Mod-rifle](/skills/modern-ranged-weapons/rifle/) | -1 | 50/100/300| d4w/d6w/d4m | 1 | 30 | 700 |
+| 4 | [SMG, 9mm](#smg-9mm) | [Mod-SMG](/skills/modern-ranged-weapons/smg/) | +1 | 30/60/150 | d4+1w/d4+2w/d6m | 1 | 30 | 600 |
+| 6 | [Pistol, 9mm ch](#pistol-9mm-charge) | [Mod-pistol](/skills/modern-ranged-weapons/pistol/) | 0 | 20/40/100 | d4+1w/d6+1w/d4m | 1 | 15 | 400 |
+| 6 | [Pistol, 9mm zero-g](#pistol-9mm-zero-g) | [Mod-pistol](/skills/modern-ranged-weapons/pistol/) | 0 | 20/40/100 | d4+1w/d6+1w/d4m | 1 | 15 | 600 |
+| 6 | [Pistol, 11mm ch](#pistol-11mm-charge) | [Mod-pistol](/skills/modern-ranged-weapons/pistol/) | +1 | 40/80/240 | d4+2w/d6+2w/d4+1m | 1 | 10 | 500 |
+| 6 | [Rifle, 11mm ch](#rifle-11mm-charge) | [Mod-rifle](/skills/modern-ranged-weapons/rifle/) | 0 | 100/400/1000| d6+1w/d6+3w/d6+1m | 1 | 30 | 900 |
+| 6 | [Rifle, 11mm zero-g](#rifle-11mm-zero-g) | [Mod-rifle](/skills/modern-ranged-weapons/rifle/) | 0 | 100/400/1000| d6+1w/d6+3w/d6+1m | 1 | 15 | 1100 |
+| 6 | [Shotgun, autoflec](#shotgun-autoflec) | [Mod-rifle](/skills/modern-ranged-weapons/rifle/) | +2 | 4/12/30 | d6w/d6+2w/d8m | 1 | 15 | 800 |
+| 6 | [SMG, 9mm ch](#smg-9mm-charge) | [Mod-SMG](/skills/modern-ranged-weapons/smg/) | +1 | 50/100/250| d4+1w/d6+1w/d4m | 1 | 30 | 750 |
+| 7 | [Pistol, 15mm sabot](#pistol-15mm-sabot) | [Mod-pistol](/skills/modern-ranged-weapons/pistol/) | -1 | 80/200/500| 2d4w/2d4+1w/d4+3m | 1 | 6 | 900 |
+| 7 | [Pistol, laser](#pistol-laser) | [Mod-pistol](/skills/modern-ranged-weapons/pistol/) | -1 | 50/100/250| d4+1w/d6+1w/d4m | 1 | 20 | 600 |
+| 7 | [Pistol, mass](#pistol-mass) | [Mod-pistol](/skills/modern-ranged-weapons/pistol/) | +1 | 20/80/200 | d6w/d6+2w/d8m | 1 | 10 | 800 |
+| 7 | [Pistol, stutter](#pistol-stutter) | [Mod-pistol](/skills/modern-ranged-weapons/pistol/) | 0 | 10/20/80 | d6+2s/d8+2s/d8+4s | 1 | 10 | 400 |
+| 7 | [Rifle, laser](#rifle-laser) | [Mod-rifle](/skills/modern-ranged-weapons/rifle/) | -2 | 60/120/400| d6+1w/d6+3w/d4+1m | 1 | 12 | 1000 |
+| 7 | [Rifle, mass](#rifle-mass) | [Mod-rifle](/skills/modern-ranged-weapons/rifle/) | 0 | 20/60/120 | d8w/d8+1w/d6+1m | 1 | 8 | 1300 |
+| 7 | [Rifle, quantum](#rifle-quantum) | [Mod-rifle](/skills/modern-ranged-weapons/rifle/) | -1 | 40/200/500| d4+3w/d6+4w/d8+1m | 1 | 15 | 5000 |
+| 7 | [Rifle, render](#rifle-render) | [Mod-rifle](/skills/modern-ranged-weapons/rifle/) | 0 | 20/40/80 | d6+1s/d6+1w/d4+1m | 1 | 8 | 1500 |
+| 7 | [SMG, laser](#smg-laser) | [Mod-SMG](/skills/modern-ranged-weapons/smg/) | -1 | 20/40/80 | d6w/d6+2w/d4m | 1 | 40 | 800 |
+| 7 | [SMG, stutter](#smg-stutter) | [Mod-SMG](/skills/modern-ranged-weapons/smg/) | +1 | 10/20/60 | d6+2s/d8+2s/d8+4s | 1 | 20 | 700 |
+| 8 | [Automaser](#automaser) | [Mod-SMG](/skills/modern-ranged-weapons/smg/) | -2 | 60/120/400| d6w/d6+2w/d4m | 1 | 20 | 1500 |
+| 8 | [Pistol, hvy maser](#pistol-hvy-maser) | [Mod-pistol](/skills/modern-ranged-weapons/pistol/) | -1 | 40/200/500| d6+1w/2d4+1w/d4+1m| 1 | 30 | 1200 |
+| 8 | [Pistol, maser](#pistol-maser) | [Mod-pistol](/skills/modern-ranged-weapons/pistol/) | -1 | 20/60/120 | d6w/d6+2w/d4m | 1 | 40 | 900 |
+| 8 | [Rifle, hvy maser](#rifle-hvy-maser) | [Mod-rifle](/skills/modern-ranged-weapons/rifle/) | -2 | 80/200/600| d8+1w/d12w/d6+1m | 1 | 60 | 2500 |
+| 8 | [Rifle, maser](#rifle-maser) | [Mod-rifle](/skills/modern-ranged-weapons/rifle/) | -2 | 60/120/400| d6+2w/2d4+2w/d4+2m| 1 | 90 | 1800 |
 {{< /sortable-table >}}
 
 ### Ranged Weapon Descriptions
@@ -208,42 +191,37 @@ toc = true
 ## Heavy Weapons
 
 {{< sortable-table >}}
-| Weapon (PL) | Skill | Acc | Range (S/M/L) | Damage (O/G/A) | Act. | Clip | Cost ($) |
-| :--- | :--- | :-: | :--- | :--- | :-: | :-: | :---: |
-| **PL 4: Industrial Age**| | | | | | | |
-| [Flamethrower](#flamethrower) | [Hvy-dir](/skills/heavy-weapons/direct-fire/) | +2 | 10/20/40 | d6w/d8w/d12w | 1 | 10 | 600 |
-| [Grenade, frag](#grenade-frag) | [Athl-thr](/skills/athletics/throw/) | 0 | Per STR | d6+2s/d4w/d4+1w | 1 | 1 | 75 |
-| [Machine gun, .30](#machine-gun-30) | [Hvy-dir](/skills/heavy-weapons/direct-fire/) | -1 | 60/200/600 | d6+1w/d8+1w/d6+1m | 1 | 100 | 1200 |
-| [Rocket launcher](#rocket-launcher) | [Hvy-dir](/skills/heavy-weapons/direct-fire/) | +1 | 50/200/350 | d8w/d4+1m/d6+1m | 2 | 1 | 1000 |
-| **PL 5: Information Age**| | | | | | | |
-| [Grenade launcher](#grenade-launcher) | [Hvy-ind](/skills/heavy-weapons/indirect-fire/) | 0 | As load | As load | 1 | 6 | 800 |
-| [Grenade, concus.](#grenade-concussion) | [Athl-thr](/skills/athletics/throw/) | 0 | Per STR | d6+2s/d8w/d4+1w | 1 | 1 | 100 |
-| [Grenade, incend.](#grenade-incendiary) | [Athl-thr](/skills/athletics/throw/) | 0 | Per STR | d4w/d4+2w/d4+3w | 1 | 1 | 100 |
-| [Grenade, smoke](#grenade-smoke) | [Athl-thr](/skills/athletics/throw/) | 0 | Per STR | Special | 1 | 1 | 50 |
-| [Hvy machine gun](#hvy-machine-gun) | [Hvy-dir](/skills/heavy-weapons/direct-fire/) | -2 | 100/400/1000| d6+1w/2d4+2w/d8m | 1 | 200 | 2500 |
-| [SAM, handheld](#sam-handheld) | [Hvy-ind](/skills/heavy-weapons/indirect-fire/) | 0 | 1000/2000/4000| d4w/d8w/d8+4w | 2 | 1 | 5000 |
-| **PL 6: Fusion Age** | | | | | | | |
-| [Bantam launcher](#bantam-launcher) | [Hvy-ind](/skills/heavy-weapons/indirect-fire/) | 0 | 100/800/4000| As load | 1 | 1 | 2000 |
-| [Bantam, antiair](#bantam-antiair) | [Hvy-ind](/skills/heavy-weapons/indirect-fire/) | 0 | As launcher | d4w/d4+2w/d4+3w | 1 | 1 | 1000 |
-| [Bantam, antiper.](#bantam-antiper) | [Hvy-ind](/skills/heavy-weapons/indirect-fire/) | 0 | As launcher | d6w/d8+2w/d8+2w | 1 | 1 | 800 |
-| [Bantam, antiveh.](#bantam-antiveh) | [Hvy-ind](/skills/heavy-weapons/indirect-fire/) | 0 | As launcher | d4+2w/d4+4w/d4+1m| 1 | 1 | 1200 |
-| [Grenade, plasma](#grenade-plasma) | [Athl-thr](/skills/athletics/throw/) | 0 | Per STR | d4+2w/d8+2w/d4m | 1 | 1 | 150 |
-| [Grenade, stun](#grenade-stun) | [Athl-thr](/skills/athletics/throw/) | 0 | Per STR | d6s/d8s/d8+2s | 1 | 1 | 75 |
-| [Hvy mach gun, ch](#hvy-mach-gun-ch) | [Hvy-dir](/skills/heavy-weapons/direct-fire/) | -2 | 200/600/1200| d8w/2d6w/2d4m | 1 | 100 | 3500 |
-| [Rail gun](#rail-gun) | [Hvy-dir](/skills/heavy-weapons/direct-fire/) | -1 | 150/500/1500| d6w/d6+2w/d8m | 1 | 20 | 4000 |
-| **PL 7: Gravity Age** | | | | | | | |
-| [Arc gun](#arc-gun) | [Hvy-dir](/skills/heavy-weapons/direct-fire/) | +1 | 20/40/100 | d8+1s/d8w/d6+3w | 1 | 10 | 2000 |
-| [Cannon, stutter](#cannon-stutter) | [Hvy-dir](/skills/heavy-weapons/direct-fire/) | 0 | 20/40/80 | d6+2s/d8+3s/2d6+3s| 1 | 20 | 1500 |
-| [Cannon, 25mm sabot](#cannon-25mm-sabot) | [Hvy-dir](/skills/heavy-weapons/direct-fire/) | -2 | 100/200/2000| d8w/d4+1m/d6+2m | 2 | 20 | 6000 |
-| [Grenade, pulse](#grenade-pulse) | [Athl-thr](/skills/athletics/throw/) | 0 | Per STR | d4+2s/d6+2s/d8+2s | 1 | 1 | 100 |
-| [Grenade, tracer](#grenade-tracer) | [Athl-thr](/skills/athletics/throw/) | 0 | Per STR | d4+2w/d6+2w/d4+2m| 1 | 1 | 250 |
-| [Plasma gun](#plasma-gun) | [Hvy-dir](/skills/heavy-weapons/direct-fire/) | 0 | 40/80/200 | d8w/d8+3w/d12+3w| 1 | 10 | 3000 |
-| [Quantum mini](#quantum-mini) | [Hvy-dir](/skills/heavy-weapons/direct-fire/) | 0 | 100/250/800| d8+1w/d8+3w/d6m | 1 | 50 | 15000 |
-| **PL 8: Energy Age** | | | | | | | |
-| [Bantam, starload](#bantam-starload) | [Hvy-ind](/skills/heavy-weapons/indirect-fire/) | 0 | As launcher | d8+2w/d4+1m/d6+1m| 1 | 1 | 2500 |
-| [Cannon, maser](#cannon-maser) | [Hvy-dir](/skills/heavy-weapons/direct-fire/) | -1 | 80/200/600 | d8w/d4+1m/d8+2m | 2 | 20 | 8000 |
-| [Grenade, mass](#grenade-mass) | [Athl-thr](/skills/athletics/throw/) | 0 | Per STR | d6+2s/d6+2w/d8m | 1 | 1 | 200 |
-| [Mass launcher](#mass-launcher) | [Hvy-ind](/skills/heavy-weapons/indirect-fire/) | 0 | 20/300/1000| d6+1w/d6+3w/d4+1m| 1 | 4 | 3000 |
+| PL | Weapon | Skill | Acc | Range (S/M/L) | Damage (O/G/A) | Act. | Clip | Cost ($) |
+| :--- | :--- | :--- | :-: | :--- | :--- | :-: | :-: | :---: |
+| 4 | [Flamethrower](#flamethrower) | [Hvy-dir](/skills/heavy-weapons/direct-fire/) | +2 | 10/20/40 | d6w/d8w/d12w | 1 | 10 | 600 |
+| 4 | [Grenade, frag](#grenade-frag) | [Athl-thr](/skills/athletics/throw/) | 0 | Per STR | d6+2s/d4w/d4+1w | 1 | 1 | 75 |
+| 4 | [Machine gun, .30](#machine-gun-30) | [Hvy-dir](/skills/heavy-weapons/direct-fire/) | -1 | 60/200/600 | d6+1w/d8+1w/d6+1m | 1 | 100 | 1200 |
+| 4 | [Rocket launcher](#rocket-launcher) | [Hvy-dir](/skills/heavy-weapons/direct-fire/) | +1 | 50/200/350 | d8w/d4+1m/d6+1m | 2 | 1 | 1000 |
+| 5 | [Grenade launcher](#grenade-launcher) | [Hvy-ind](/skills/heavy-weapons/indirect-fire/) | 0 | As load | As load | 1 | 6 | 800 |
+| 5 | [Grenade, concus.](#grenade-concussion) | [Athl-thr](/skills/athletics/throw/) | 0 | Per STR | d6+2s/d8w/d4+1w | 1 | 1 | 100 |
+| 5 | [Grenade, incend.](#grenade-incendiary) | [Athl-thr](/skills/athletics/throw/) | 0 | Per STR | d4w/d4+2w/d4+3w | 1 | 1 | 100 |
+| 5 | [Grenade, smoke](#grenade-smoke) | [Athl-thr](/skills/athletics/throw/) | 0 | Per STR | Special | 1 | 1 | 50 |
+| 5 | [Hvy machine gun](#hvy-machine-gun) | [Hvy-dir](/skills/heavy-weapons/direct-fire/) | -2 | 100/400/1000| d6+1w/2d4+2w/d8m | 1 | 200 | 2500 |
+| 5 | [SAM, handheld](#sam-handheld) | [Hvy-ind](/skills/heavy-weapons/indirect-fire/) | 0 | 1000/2000/4000| d4w/d8w/d8+4w | 2 | 1 | 5000 |
+| 6 | [Bantam launcher](#bantam-launcher) | [Hvy-ind](/skills/heavy-weapons/indirect-fire/) | 0 | 100/800/4000| As load | 1 | 1 | 2000 |
+| 6 | [Bantam, antiair](#bantam-antiair) | [Hvy-ind](/skills/heavy-weapons/indirect-fire/) | 0 | As launcher | d4w/d4+2w/d4+3w | 1 | 1 | 1000 |
+| 6 | [Bantam, antiper.](#bantam-antiper) | [Hvy-ind](/skills/heavy-weapons/indirect-fire/) | 0 | As launcher | d6w/d8+2w/d8+2w | 1 | 1 | 800 |
+| 6 | [Bantam, antiveh.](#bantam-antiveh) | [Hvy-ind](/skills/heavy-weapons/indirect-fire/) | 0 | As launcher | d4+2w/d4+4w/d4+1m| 1 | 1 | 1200 |
+| 6 | [Grenade, plasma](#grenade-plasma) | [Athl-thr](/skills/athletics/throw/) | 0 | Per STR | d4+2w/d8+2w/d4m | 1 | 1 | 150 |
+| 6 | [Grenade, stun](#grenade-stun) | [Athl-thr](/skills/athletics/throw/) | 0 | Per STR | d6s/d8s/d8+2s | 1 | 1 | 75 |
+| 6 | [Hvy mach gun, ch](#hvy-mach-gun-ch) | [Hvy-dir](/skills/heavy-weapons/direct-fire/) | -2 | 200/600/1200| d8w/2d6w/2d4m | 1 | 100 | 3500 |
+| 6 | [Rail gun](#rail-gun) | [Hvy-dir](/skills/heavy-weapons/direct-fire/) | -1 | 150/500/1500| d6w/d6+2w/d8m | 1 | 20 | 4000 |
+| 7 | [Arc gun](#arc-gun) | [Hvy-dir](/skills/heavy-weapons/direct-fire/) | +1 | 20/40/100 | d8+1s/d8w/d6+3w | 1 | 10 | 2000 |
+| 7 | [Cannon, stutter](#cannon-stutter) | [Hvy-dir](/skills/heavy-weapons/direct-fire/) | 0 | 20/40/80 | d6+2s/d8+3s/2d6+3s| 1 | 20 | 1500 |
+| 7 | [Cannon, 25mm sabot](#cannon-25mm-sabot) | [Hvy-dir](/skills/heavy-weapons/direct-fire/) | -2 | 100/200/2000| d8w/d4+1m/d6+2m | 2 | 20 | 6000 |
+| 7 | [Grenade, pulse](#grenade-pulse) | [Athl-thr](/skills/athletics/throw/) | 0 | Per STR | d4+2s/d6+2s/d8+2s | 1 | 1 | 100 |
+| 7 | [Grenade, tracer](#grenade-tracer) | [Athl-thr](/skills/athletics/throw/) | 0 | Per STR | d4+2w/d6+2w/d4+2m| 1 | 1 | 250 |
+| 7 | [Plasma gun](#plasma-gun) | [Hvy-dir](/skills/heavy-weapons/direct-fire/) | 0 | 40/80/200 | d8w/d8+3w/d12+3w| 1 | 10 | 3000 |
+| 7 | [Quantum mini](#quantum-mini) | [Hvy-dir](/skills/heavy-weapons/direct-fire/) | 0 | 100/250/800| d8+1w/d8+3w/d6m | 1 | 50 | 15000 |
+| 8 | [Bantam, starload](#bantam-starload) | [Hvy-ind](/skills/heavy-weapons/indirect-fire/) | 0 | As launcher | d8+2w/d4+1m/d6+1m| 1 | 1 | 2500 |
+| 8 | [Cannon, maser](#cannon-maser) | [Hvy-dir](/skills/heavy-weapons/direct-fire/) | -1 | 80/200/600 | d8w/d4+1m/d8+2m | 2 | 20 | 8000 |
+| 8 | [Grenade, mass](#grenade-mass) | [Athl-thr](/skills/athletics/throw/) | 0 | Per STR | d6+2s/d6+2w/d8m | 1 | 1 | 200 |
+| 8 | [Mass launcher](#mass-launcher) | [Hvy-ind](/skills/heavy-weapons/indirect-fire/) | 0 | 20/300/1000| d6+1w/d6+3w/d4+1m| 1 | 4 | 3000 |
 {{< /sortable-table >}}
 
 ### Heavy Weapon Descriptions
