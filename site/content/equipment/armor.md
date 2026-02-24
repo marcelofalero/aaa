@@ -6,48 +6,205 @@ toc = true
 
 ## Light-Duty Armor
 
-{{< sortable-table >}}
-| Armor (PL) | Mass | AC Pen | Stun/Wound/Mortal | Cost ($) |
-| :--- | :--: | :---: | :---: | :---: |
-| Hide (0) | 10 | 0 | 2/1/0 | 50 |
-| Leather (1) | 8 | 0 | 3/1/0 | 100 |
-| Quilted (2) | 12 | +1 | 4/2/0 | 150 |
-| Light-duty vest (5) | 4 | 0 | 5/2/1 | 200 |
-| CF short coat (6) | 3 | 0 | 6/3/1 | 400 |
-{{< /sortable-table >}}
+<div class="table-wrapper">
+<table>
+<thead>
+<tr>
+<th>Armor</th>
+<th>Mass</th>
+<th>AC Pen</th>
+<th>Stun/Wound/Mortal</th>
+<th>Cost ($)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="table-separator"><td colspan="5">0</td></tr>
+<tr>
+<td>Hide</td>
+<td>10</td>
+<td>0</td>
+<td>2/1/0</td>
+<td>50</td>
+</tr>
+<tr class="table-separator"><td colspan="5">1</td></tr>
+<tr>
+<td>Leather</td>
+<td>8</td>
+<td>0</td>
+<td>3/1/0</td>
+<td>100</td>
+</tr>
+<tr class="table-separator"><td colspan="5">2</td></tr>
+<tr>
+<td>Quilted</td>
+<td>12</td>
+<td>+1</td>
+<td>4/2/0</td>
+<td>150</td>
+</tr>
+<tr class="table-separator"><td colspan="5">5</td></tr>
+<tr>
+<td>Light-duty vest</td>
+<td>4</td>
+<td>0</td>
+<td>5/2/1</td>
+<td>200</td>
+</tr>
+<tr class="table-separator"><td colspan="5">6</td></tr>
+<tr>
+<td>CF short coat</td>
+<td>3</td>
+<td>0</td>
+<td>6/3/1</td>
+<td>400</td>
+</tr>
+</tbody>
+</table>
+</div>
 
 ## Combat Armor
 
-{{< sortable-table >}}
-| Armor (PL) | Mass | AC Pen | Stun/Wound/Mortal | Cost ($) |
-| :--- | :--: | :---: | :---: | :---: |
-| Chain mail (2) | 20 | +2 | 4/2/1 | 400 |
-| Scale mail (2) | 25 | +3 | 5/3/1 | 600 |
-| Plate mail (3) | 30 | +4 | 6/4/2 | 1500 |
-| Battle vest (5) | 8 | +1 | 8/4/2 | 500 |
-| Battle jacket (5) | 12 | +2 | 10/5/2 | 700 |
-| CF long coat (6) | 6 | +1 | 12/6/3 | 900 |
-| Attack armor (6) | 15 | +2 | 14/7/3 | 1200 |
-| Cerametal armor (7) | 20 | +3 | 16/8/4 | 2500 |
-| Body tank (8) | 25 | +4 | 20/10/5 | 5000 |
-{{< /sortable-table >}}
+<div class="table-wrapper">
+<table>
+<thead>
+<tr>
+<th>Armor</th>
+<th>Mass</th>
+<th>AC Pen</th>
+<th>Stun/Wound/Mortal</th>
+<th>Cost ($)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="table-separator"><td colspan="5">2</td></tr>
+<tr>
+<td>Chain mail</td>
+<td>20</td>
+<td>+2</td>
+<td>4/2/1</td>
+<td>400</td>
+</tr>
+<tr>
+<td>Scale mail</td>
+<td>25</td>
+<td>+3</td>
+<td>5/3/1</td>
+<td>600</td>
+</tr>
+<tr class="table-separator"><td colspan="5">3</td></tr>
+<tr>
+<td>Plate mail</td>
+<td>30</td>
+<td>+4</td>
+<td>6/4/2</td>
+<td>1500</td>
+</tr>
+<tr class="table-separator"><td colspan="5">5</td></tr>
+<tr>
+<td>Battle vest</td>
+<td>8</td>
+<td>+1</td>
+<td>8/4/2</td>
+<td>500</td>
+</tr>
+<tr>
+<td>Battle jacket</td>
+<td>12</td>
+<td>+2</td>
+<td>10/5/2</td>
+<td>700</td>
+</tr>
+<tr class="table-separator"><td colspan="5">6</td></tr>
+<tr>
+<td>CF long coat</td>
+<td>6</td>
+<td>+1</td>
+<td>12/6/3</td>
+<td>900</td>
+</tr>
+<tr>
+<td>Attack armor</td>
+<td>15</td>
+<td>+2</td>
+<td>14/7/3</td>
+<td>1200</td>
+</tr>
+<tr class="table-separator"><td colspan="5">7</td></tr>
+<tr>
+<td>Cerametal armor</td>
+<td>20</td>
+<td>+3</td>
+<td>16/8/4</td>
+<td>2500</td>
+</tr>
+<tr class="table-separator"><td colspan="5">8</td></tr>
+<tr>
+<td>Body tank</td>
+<td>25</td>
+<td>+4</td>
+<td>20/10/5</td>
+<td>5000</td>
+</tr>
+</tbody>
+</table>
+</div>
 
 ## Powered Armor
 
-{{< sortable-table >}}
-| Armor (PL) | Mass | AC Pen | Stun/Wound/Mortal | STR | Cost ($) |
-| :--- | :--: | :---: | :---: | :--: | :---: |
-| Assault suit (7) | 75 | +2 | 20/10/5 | 18 | 75K |
-| Battle suit (7) | 100| +3 | 24/12/6 | 20 | 100K |
-| Commando suit (8)| 60 | +1 | 24/12/6 | 20 | 150K |
-| Mauler suit (8) | 120| +4 | 30/15/7 | 24 | 200K |
-{{< /sortable-table >}}
+<div class="table-wrapper">
+<table>
+<thead>
+<tr>
+<th>Armor</th>
+<th>Mass</th>
+<th>AC Pen</th>
+<th>Stun/Wound/Mortal</th>
+<th>STR</th>
+<th>Cost ($)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="table-separator"><td colspan="6">7</td></tr>
+<tr>
+<td>Assault suit</td>
+<td>75</td>
+<td>+2</td>
+<td>20/10/5</td>
+<td>18</td>
+<td>75K</td>
+</tr>
+<tr>
+<td>Battle suit</td>
+<td>100</td>
+<td>+3</td>
+<td>24/12/6</td>
+<td>20</td>
+<td>100K</td>
+</tr>
+<tr class="table-separator"><td colspan="6">8</td></tr>
+<tr>
+<td>Commando suit</td>
+<td>60</td>
+<td>+1</td>
+<td>24/12/6</td>
+<td>20</td>
+<td>150K</td>
+</tr>
+<tr>
+<td>Mauler suit</td>
+<td>120</td>
+<td>+4</td>
+<td>30/15/7</td>
+<td>24</td>
+<td>200K</td>
+</tr>
+</tbody>
+</table>
+</div>
 *K=thousand*
 
 ### Armor Descriptions
 
-{{< tabs >}}
-{{< tab title="PL 0-3" >}}
 **PL 0: Stone Age**
 *   **Hide Armor:** This armor utilizes the furs and skins of animals, which are stitched or fastened together to roughly fit the body of the individual wearing it. The protection it provides is minimal, and its use during the era is uncommon. This category also includes weaves of thick vegetation made into protective garments.
 
@@ -61,9 +218,7 @@ toc = true
 
 **PL 3: Age of Reason**
 *   **Leather Coat:** The "cuir bouilli" (boiled leather) coat isn't the best armor, but it's better than nothing. Leather coats have an advantage in being innately concealable; in many societies, the rugged coat is an item of style.
-{{< /tab >}}
 
-{{< tab title="PL 4-6" >}}
 **PL 4: Industrial Age**
 *   **Flak Jacket:** While unable to fully absorb the blows of the weapons of the period, the flak jacket is the first armor to seriously inhibit the passage of high impact damage to its wearer.
 
@@ -76,9 +231,7 @@ toc = true
 *   **CF Short Coat:** A stylish, lightweight coat made from carbonate fiber (CF) weave, which is much stronger than leather and provides excellent protection against many types of damage.
 *   **CF Long Coat:** A longer version of the CF coat that provides more coverage and protection.
 *   **Attack Armor:** The earliest true attack armor are improved versions of typical assault gear, incorporating a rigid carbonate fiber breastplate for maximum protection.
-{{< /tab >}}
 
-{{< tab title="PL 7-8" >}}
 **PL 7: Gravity Age**
 *   **Cerametal Armor:** A suit of advanced armor made from a combination of ceramic and metallic alloys, which is incredibly strong and resistant to most forms of damage.
 *   **Assault Suit:** A heavy, powered exoskeleton that provides the wearer with incredible strength and protection, as well as several integrated weapons and sensors.
@@ -88,5 +241,3 @@ toc = true
 *   **Body Tank:** A self-contained suit of powered armor that acts as a walking tank, equipped with on-board sensors, computers, and weapon systems.
 *   **Commando Suit:** A lighter, more agile version of powered armor designed for stealth and infiltration missions.
 *   **Mauler Suit:** The heaviest and most powerful form of powered armor, capable of crushing almost any obstacle in its path.
-{{< /tab >}}
-{{< /tabs >}}

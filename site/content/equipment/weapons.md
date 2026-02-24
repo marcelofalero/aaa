@@ -6,51 +6,306 @@ toc = true
 
 ## Melee Weapons
 
-{{< sortable-table >}}
-| Weapon (PL) | Skill | Acc | Damage (O/G/A) | Actions | Mass | Avail | Cost ($) |
-| :--- | :--- | :--: | :--- | :---: | :--: | :---: | :---: |
-| **PL 0: Stone Age** | | | | | | | |
-| [Club](#club) | [Melee-bludgeon](/skills/melee-weapons/bludgeon/) | 0 | d4+1s/d6w/d4+1w | 1 | 2 | C | 5 |
-| [Dagger](#dagger) | [Melee-blade](/skills/melee-weapons/blade/) | 0 | d6w/d4+1w/d4+2w | 1 | 1 | C | 10 |
-| [Quarterstaff](#quarterstaff) | [Melee-bludgeon](/skills/melee-weapons/bludgeon/) | -1 | d4+1s/d4+3s/d6w | 1 | 2 | C | 10 |
-| [Spear](#spear) | [Melee-blade](/skills/melee-weapons/blade/) | 0 | d4w/d4+2w/d4m | 1 | 3 | C | 15 |
-| Unarmed | [Unarmed Attack](/skills/unarmed-attack/) | 0 | d4s/d4+1s/d6+2s | 1 | - | C | - |
-| **PL 1: Bronze/Iron Age** | | | | | | | |
-| [Gauntlet](#gauntlet) | [Unarmed Attack](/skills/unarmed-attack/) | 0 | d4+1s/d4+2s/d4+1w | 1 | 1 | C | 25 |
-| [Hand ax](#hand-ax) | [Melee-blade](/skills/melee-weapons/blade/) | 0 | d4+1w/d4+2w/d4+3w | 1 | 2 | C | 20 |
-| [Mace](#mace) | [Melee-bludgeon](/skills/melee-weapons/bludgeon/) | 0 | d6+1s/d4+1w/d8+1w | 1 | 4 | C | 30 |
-| [Short sword](#short-sword) | [Melee-blade](/skills/melee-weapons/blade/) | 0 | d6w/d8w/d6+2w | 1 | 2 | C | 50 |
-| **PL 2: Middle Ages** | | | | | | | |
-| [Broad sword](#broad-sword) | [Melee-blade](/skills/melee-weapons/blade/) | 0 | d4+2w/d6+2w/d4m | 1 | 3 | C | 100 |
-| [Flail](#flail) | [Melee-bludgeon](/skills/melee-weapons/bludgeon/) | +1 | d6+2s/d4+2w/d8+2w | 1 | 4 | U | 75 |
-| [Great ax](#great-ax) | [Melee-blade](/skills/melee-weapons/blade/) | +1 | d6+1w/d8+2w/d4+1m | 2 | 8 | U | 150 |
-| [Nunchaku](#nunchaku) | [Melee-bludgeon](/skills/melee-weapons/bludgeon/) | -1 | d6s/d6+2s/d8+3s | 1 | 1 | U | 40 |
-| [Polearm](#polearm) | [Melee-blade](/skills/melee-weapons/blade/) | +1 | d6+1w/d4+3w/d4+1m | 2 | 6 | C | 60 |
-| **PL 3: Age of Reason** | | | | | | | |
-| [Cutlass](#cutlass) | [Melee-blade](/skills/melee-weapons/blade/) | 0 | d4+1w/d8+1w/d8+3w | 1 | 2 | C | 80 |
-| [Katana](#katana) | [Melee-blade](/skills/melee-weapons/blade/) | -1 | d4+2w/d6+2w/d4+1m | 1 | 2 | R | 500 |
-| [Rapier](#rapier) | [Melee-blade](/skills/melee-weapons/blade/) | -1 | d4w/d4+1w/d4+2w | 1 | 1 | U | 100 |
-| [Saber](#saber) | [Melee-blade](/skills/melee-weapons/blade/) | 0 | d4w/d4+2w/2d4+1w | 1 | 2 | U | 120 |
-| **PL 4: Industrial Age** | | | | | | | |
-| [Bayonet](#bayonet) | [Melee-blade](/skills/melee-weapons/blade/) | +1 | d4w/d4+2w/d6m | 1 | 1 | C | 25 |
-| **PL 5: Information Age**| | | | | | | |
-| [Combat knife](#combat-knife) | [Melee-blade](/skills/melee-weapons/blade/) | 0 | d4+1w/d4+2w/d4+3w | 1 | 1 | C | 50 |
-| [Stun baton](#stun-baton) | [Melee-powered](/skills/melee-weapons/powered-weapon/) | 0 | d4+1s/d4+3s/d6+4s | 1 | 1 | U | 200 |
-| **PL 6: Fusion Age** | | | | | | | |
-| [Chainsword](#chainsword) | [Melee-powered](/skills/melee-weapons/powered-weapon/) | +1 | d8+1w/d8+2w/d4+1m | 1 | 5 | R | 1500 |
-| [Pulse baton](#pulse-baton) | [Melee-powered](/skills/melee-weapons/powered-weapon/) | 0 | d8s/d4+2w/d6+2w | 1 | 2 | U | 400 |
-| **PL 7: Gravity Age** | | | | | | | |
-| [Gravmace](#gravmace) | [Melee-powered](/skills/melee-weapons/powered-weapon/) | +1 | d6+2s/d6+2w/d8+2w | 1 | 4 | R | 2000 |
-| [Power Cestus](#power-cestus) | [Unarmed-brawl](/skills/unarmed-attack/brawl/) | -1 | d4+2s/d4w/d4+1w | 1 | 3 | R | 1800 |
-| **PL 8: Energy Age** | | | | | | | |
-| [Star sword](#star-sword) | [Melee-powered](/skills/melee-weapons/powered-weapon/) | -2 | d8+1w/2d6w/d4+3m | 1 | 3 | R | 7500 |
-| [Tri-staff](#tri-staff) | [Melee-powered](/skills/melee-weapons/powered-weapon/) | -1 | d8+2w/3d4+1w/d8m | 1 | 4 | R | 4000 |
-{{< /sortable-table >}}
+<div class="table-wrapper">
+<table>
+<thead>
+<tr>
+<th>Weapon</th>
+<th>Skill</th>
+<th>Acc</th>
+<th>Damage (O/G/A)</th>
+<th>Actions</th>
+<th>Mass</th>
+<th>Avail</th>
+<th>Cost ($)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="table-separator"><td colspan="8">PL 0: Stone Age</td></tr>
+<tr>
+<td><a href="#club">Club</a></td>
+<td><a href="/skills/melee-weapons/bludgeon/">Melee-bludgeon</a></td>
+<td>0</td>
+<td>d4+1s/d6w/d4+1w</td>
+<td>1</td>
+<td>2</td>
+<td>C</td>
+<td>5</td>
+</tr>
+<tr>
+<td><a href="#dagger">Dagger</a></td>
+<td><a href="/skills/melee-weapons/blade/">Melee-blade</a></td>
+<td>0</td>
+<td>d6w/d4+1w/d4+2w</td>
+<td>1</td>
+<td>1</td>
+<td>C</td>
+<td>10</td>
+</tr>
+<tr>
+<td><a href="#quarterstaff">Quarterstaff</a></td>
+<td><a href="/skills/melee-weapons/bludgeon/">Melee-bludgeon</a></td>
+<td>-1</td>
+<td>d4+1s/d4+3s/d6w</td>
+<td>1</td>
+<td>2</td>
+<td>C</td>
+<td>10</td>
+</tr>
+<tr>
+<td><a href="#spear">Spear</a></td>
+<td><a href="/skills/melee-weapons/blade/">Melee-blade</a></td>
+<td>0</td>
+<td>d4w/d4+2w/d4m</td>
+<td>1</td>
+<td>3</td>
+<td>C</td>
+<td>15</td>
+</tr>
+<tr>
+<td>Unarmed</td>
+<td><a href="/skills/unarmed-attack/">Unarmed Attack</a></td>
+<td>0</td>
+<td>d4s/d4+1s/d6+2s</td>
+<td>1</td>
+<td>-</td>
+<td>C</td>
+<td>-</td>
+</tr>
+<tr class="table-separator"><td colspan="8">PL 1: Bronze/Iron Age</td></tr>
+<tr>
+<td><a href="#gauntlet">Gauntlet</a></td>
+<td><a href="/skills/unarmed-attack/">Unarmed Attack</a></td>
+<td>0</td>
+<td>d4+1s/d4+2s/d4+1w</td>
+<td>1</td>
+<td>1</td>
+<td>C</td>
+<td>25</td>
+</tr>
+<tr>
+<td><a href="#hand-ax">Hand ax</a></td>
+<td><a href="/skills/melee-weapons/blade/">Melee-blade</a></td>
+<td>0</td>
+<td>d4+1w/d4+2w/d4+3w</td>
+<td>1</td>
+<td>2</td>
+<td>C</td>
+<td>20</td>
+</tr>
+<tr>
+<td><a href="#mace">Mace</a></td>
+<td><a href="/skills/melee-weapons/bludgeon/">Melee-bludgeon</a></td>
+<td>0</td>
+<td>d6+1s/d4+1w/d8+1w</td>
+<td>1</td>
+<td>4</td>
+<td>C</td>
+<td>30</td>
+</tr>
+<tr>
+<td><a href="#short-sword">Short sword</a></td>
+<td><a href="/skills/melee-weapons/blade/">Melee-blade</a></td>
+<td>0</td>
+<td>d6w/d8w/d6+2w</td>
+<td>1</td>
+<td>2</td>
+<td>C</td>
+<td>50</td>
+</tr>
+<tr class="table-separator"><td colspan="8">PL 2: Middle Ages</td></tr>
+<tr>
+<td><a href="#broad-sword">Broad sword</a></td>
+<td><a href="/skills/melee-weapons/blade/">Melee-blade</a></td>
+<td>0</td>
+<td>d4+2w/d6+2w/d4m</td>
+<td>1</td>
+<td>3</td>
+<td>C</td>
+<td>100</td>
+</tr>
+<tr>
+<td><a href="#flail">Flail</a></td>
+<td><a href="/skills/melee-weapons/bludgeon/">Melee-bludgeon</a></td>
+<td>+1</td>
+<td>d6+2s/d4+2w/d8+2w</td>
+<td>1</td>
+<td>4</td>
+<td>U</td>
+<td>75</td>
+</tr>
+<tr>
+<td><a href="#great-ax">Great ax</a></td>
+<td><a href="/skills/melee-weapons/blade/">Melee-blade</a></td>
+<td>+1</td>
+<td>d6+1w/d8+2w/d4+1m</td>
+<td>2</td>
+<td>8</td>
+<td>U</td>
+<td>150</td>
+</tr>
+<tr>
+<td><a href="#nunchaku">Nunchaku</a></td>
+<td><a href="/skills/melee-weapons/bludgeon/">Melee-bludgeon</a></td>
+<td>-1</td>
+<td>d6s/d6+2s/d8+3s</td>
+<td>1</td>
+<td>1</td>
+<td>U</td>
+<td>40</td>
+</tr>
+<tr>
+<td><a href="#polearm">Polearm</a></td>
+<td><a href="/skills/melee-weapons/blade/">Melee-blade</a></td>
+<td>+1</td>
+<td>d6+1w/d4+3w/d4+1m</td>
+<td>2</td>
+<td>6</td>
+<td>C</td>
+<td>60</td>
+</tr>
+<tr class="table-separator"><td colspan="8">PL 3: Age of Reason</td></tr>
+<tr>
+<td><a href="#cutlass">Cutlass</a></td>
+<td><a href="/skills/melee-weapons/blade/">Melee-blade</a></td>
+<td>0</td>
+<td>d4+1w/d8+1w/d8+3w</td>
+<td>1</td>
+<td>2</td>
+<td>C</td>
+<td>80</td>
+</tr>
+<tr>
+<td><a href="#katana">Katana</a></td>
+<td><a href="/skills/melee-weapons/blade/">Melee-blade</a></td>
+<td>-1</td>
+<td>d4+2w/d6+2w/d4+1m</td>
+<td>1</td>
+<td>2</td>
+<td>R</td>
+<td>500</td>
+</tr>
+<tr>
+<td><a href="#rapier">Rapier</a></td>
+<td><a href="/skills/melee-weapons/blade/">Melee-blade</a></td>
+<td>-1</td>
+<td>d4w/d4+1w/d4+2w</td>
+<td>1</td>
+<td>1</td>
+<td>U</td>
+<td>100</td>
+</tr>
+<tr>
+<td><a href="#saber">Saber</a></td>
+<td><a href="/skills/melee-weapons/blade/">Melee-blade</a></td>
+<td>0</td>
+<td>d4w/d4+2w/2d4+1w</td>
+<td>1</td>
+<td>2</td>
+<td>U</td>
+<td>120</td>
+</tr>
+<tr class="table-separator"><td colspan="8">PL 4: Industrial Age</td></tr>
+<tr>
+<td><a href="#bayonet">Bayonet</a></td>
+<td><a href="/skills/melee-weapons/blade/">Melee-blade</a></td>
+<td>+1</td>
+<td>d4w/d4+2w/d6m</td>
+<td>1</td>
+<td>1</td>
+<td>C</td>
+<td>25</td>
+</tr>
+<tr class="table-separator"><td colspan="8">PL 5: Information Age</td></tr>
+<tr>
+<td><a href="#combat-knife">Combat knife</a></td>
+<td><a href="/skills/melee-weapons/blade/">Melee-blade</a></td>
+<td>0</td>
+<td>d4+1w/d4+2w/d4+3w</td>
+<td>1</td>
+<td>1</td>
+<td>C</td>
+<td>50</td>
+</tr>
+<tr>
+<td><a href="#stun-baton">Stun baton</a></td>
+<td><a href="/skills/melee-weapons/powered-weapon/">Melee-powered</a></td>
+<td>0</td>
+<td>d4+1s/d4+3s/d6+4s</td>
+<td>1</td>
+<td>1</td>
+<td>U</td>
+<td>200</td>
+</tr>
+<tr class="table-separator"><td colspan="8">PL 6: Fusion Age</td></tr>
+<tr>
+<td><a href="#chainsword">Chainsword</a></td>
+<td><a href="/skills/melee-weapons/powered-weapon/">Melee-powered</a></td>
+<td>+1</td>
+<td>d8+1w/d8+2w/d4+1m</td>
+<td>1</td>
+<td>5</td>
+<td>R</td>
+<td>1500</td>
+</tr>
+<tr>
+<td><a href="#pulse-baton">Pulse baton</a></td>
+<td><a href="/skills/melee-weapons/powered-weapon/">Melee-powered</a></td>
+<td>0</td>
+<td>d8s/d4+2w/d6+2w</td>
+<td>1</td>
+<td>2</td>
+<td>U</td>
+<td>400</td>
+</tr>
+<tr class="table-separator"><td colspan="8">PL 7: Gravity Age</td></tr>
+<tr>
+<td><a href="#gravmace">Gravmace</a></td>
+<td><a href="/skills/melee-weapons/powered-weapon/">Melee-powered</a></td>
+<td>+1</td>
+<td>d6+2s/d6+2w/d8+2w</td>
+<td>1</td>
+<td>4</td>
+<td>R</td>
+<td>2000</td>
+</tr>
+<tr>
+<td><a href="#power-cestus">Power Cestus</a></td>
+<td><a href="/skills/unarmed-attack/brawl/">Unarmed-brawl</a></td>
+<td>-1</td>
+<td>d4+2s/d4w/d4+1w</td>
+<td>1</td>
+<td>3</td>
+<td>R</td>
+<td>1800</td>
+</tr>
+<tr class="table-separator"><td colspan="8">PL 8: Energy Age</td></tr>
+<tr>
+<td><a href="#star-sword">Star sword</a></td>
+<td><a href="/skills/melee-weapons/powered-weapon/">Melee-powered</a></td>
+<td>-2</td>
+<td>d8+1w/2d6w/d4+3m</td>
+<td>1</td>
+<td>3</td>
+<td>R</td>
+<td>7500</td>
+</tr>
+<tr>
+<td><a href="#tri-staff">Tri-staff</a></td>
+<td><a href="/skills/melee-weapons/powered-weapon/">Melee-powered</a></td>
+<td>-1</td>
+<td>d8+2w/3d4+1w/d8m</td>
+<td>1</td>
+<td>4</td>
+<td>R</td>
+<td>4000</td>
+</tr>
+</tbody>
+</table>
+</div>
 
 ### Melee Weapon Descriptions
 
-{{< tabs >}}
-{{< tab title="PL 0-1" >}}
 **PL 0: Stone Age**
 *   <span id="club">**Club:**</span> This category includes all types of simple, one-piece bludgeons—humanity’s oldest weapon. Clubs range from natural sticks and bones to carved stone or wood to modern nightsticks and truncheons of hard wood, plastic, or even metal. The combat statistics for a club also apply to any heavy, club-like object a character picks up to use in a fight, such as a table leg or a lead pipe.
 *   <span id="dagger">**Dagger:**</span> All knives, stilettos, and other such weapons are included in this category (except for the combat knife, which has its own entry).
@@ -62,8 +317,7 @@ toc = true
 *   <span id="hand-ax">**Hand Ax:**</span> A tool that became a weapon, the hand ax consists of a short wooden handle with a heavy, single-edged cutting head. Primitive axes can be made from carved stone, but the majority of axes at higher Progress Levels have metal heads.
 *   <span id="mace">**Mace:**</span> A mace is a club with a blunt stone or iron head fitted to one end. Some of the heads may be studded, flanged, or spiked.
 *   <span id="short-sword">**Short Sword:**</span> The short sword consists of a handle designed for one-handed use and a blade that's longer than a dagger's—any blade just over 0.5 meters in length. The blade is pointed and used for thrusting.
-{{< /tab >}}
-{{< tab title="PL 2-3" >}}
+
 **PL 2: Middle Ages**
 *   <span id="broad-sword">**Broad Sword:**</span> The heavy, double-edged broad sword features a meter-long blade designed for both cutting and slashing.
 *   <span id="flail">**Flail:**</span> The common threshing flail, modified for war, is a potent weapon. It consists of a sturdy wooden handle attached by a chain to an iron rod, a spiked rod, or a spiked iron ball.
@@ -76,16 +330,14 @@ toc = true
 *   <span id="katana">**Katana:**</span> This is the sword of the samurai. It features a slightly curved blade with a chisel point and a small, circular guard. The katana is forged from the finest steel, and its careful construction yields a blade of great strength and flexibility.
 *   <span id="rapier">**Rapier:**</span> Along, slender blade designed for thrusting, used primarily in duels and fencing.
 *   <span id="saber">**Saber:**</span> The favorite cavalry weapon, the saber has a slightly curved blade that gives maximum slashing power.
-{{< /tab >}}
-{{< tab title="PL 4-5" >}}
+
 **PL 4: Industrial Age**
 *   <span id="bayonet">**Bayonet:**</span> Originally a dagger designed to be attached to a rifle’s muzzle, the bayonet occasionally becomes a primary weapon in its own right. In effect, a bayonet turns a rifle into a spear.
 
 **PL 5: Information Age**
 *   <span id="combat-knife">**Combat Knife:**</span> This weapon is a high-tech version of the standard knife, typically composed of tempered steel, sophisticated polymers, or ceramics.
 *   <span id="stun-baton">**Stun Baton:**</span> This low-powered version of the pulse baton is sometimes known as a taser. Its surface crackles with a high-voltage, low-current electrical charge that can temporarily short-circuit the human nervous system. Insulated gloves are necessary to prevent the user from accidentally shocking himself.
-{{< /tab >}}
-{{< tab title="PL 6-8" >}}
+
 **PL 6: Fusion Age**
 *   <span id="chainsword">**Chainsword:**</span> This device consists of a meter-long blade with a motorized, rotating chain of razor-sharp teeth.
 *   <span id="pulse-baton">**Pulse Baton:**</span> An improved version of the stun baton, the pulse baton delivers a massive electrical discharge upon impact.
@@ -97,65 +349,408 @@ toc = true
 **PL 8: Energy Age**
 *   <span id="star-sword">**Star Sword:**</span> This weapon generates a containment field in the shape of a blade, and then fills the interior of this field with white-hot plasma. On contact, the containment field releases a stream of plasma that can burn or cut through almost anything. A star sword is difficult to use and often damages an untrained wielder.
 *   <span id="tri-staff">**Tri-staff:**</span> This 2-meter-long staff is topped by a three-pronged blade. When the staff is activated, an internal power source suffuses it with a soft glow. This aura acts as a defensive force field that improves the Strength and Dexterity resistance modifiers of its wielder by 1 step.
-{{< /tab >}}
-{{< /tabs >}}
 
 ## Ranged Weapons
 
-{{< sortable-table >}}
-| Weapon (PL) | Skill | Acc | Range (S/M/L) | Damage (O/G/A) | Act. | Clip | Cost ($) |
-| :--- | :--- | :-: | :--- | :--- | :-: | :-: | :---: |
-| **PL 0: Stone Age** | | | | | | | |
-| [Bow, short](#bow-short) | [Prim-bow](/skills/primitive-ranged-weapons/bow/) | 0 | 20/40/100 | d4w/d4+2w/d4+3w | 1 | 1 | 40 |
-| [Sling](#sling) | [Prim-sling](/skills/primitive-ranged-weapons/sling/) | +2 | 10/20/60 | d4s/d4+1s/d4+2s | 1 | 1 | 10 |
-| **PL 1: Bronze/Iron Age** | | | | | | | |
-| [Javelin](#javelin) | [Athl-throw](/skills/athletics/throw/) | 0 | Per STR | d4+1w/d6+1w/d4m | 1 | 1 | 20 |
-| **PL 2: Middle Ages** | | | | | | | |
-| [Bow, long](#bow-long) | [Prim-bow](/skills/primitive-ranged-weapons/bow/) | -1 | 40/80/200 | d4+2w/d6+2w/d4+1m | 1 | 1 | 75 |
-| [Crossbow](#crossbow) | [Prim-bow](/skills/primitive-ranged-weapons/bow/) | 0 | 50/100/250| d6s/d4w/d4+1w | 2 | 1 | 150 |
-| [Shuriken](#shuriken) | [Athl-throw](/skills/athletics/throw/) | -1 | Per STR | d4s/d4+1s/d6+1s | 1 | 1 | 10 |
-| **PL 3: Age of Reason** | | | | | | | |
-| [Musket, flintlock](#musket-flintlock) | [Prim-flint](/skills/primitive-ranged-weapons/flintlock/) | +2 | 20/40/100 | d4+2w/d6+2w/d8m | 3 | 1 | 200 |
-| [Pistol, flintlock](#pistol-flintlock) | [Prim-flint](/skills/primitive-ranged-weapons/flintlock/) | +2 | 4/8/16 | d4s/d6w/d8+2w | 3 | 1 | 150 |
-| [Rifle, long](#rifle-long) | [Prim-flint](/skills/primitive-ranged-weapons/flintlock/) | 0 | 30/60/150 | d6w/d6+2w/d4+1m | 3 | 1 | 300 |
-| **PL 4: Industrial Age** | | | | | | | |
-| [Derringer](#derringer) | [Mod-pistol](/skills/modern-ranged-weapons/pistol/) | +2 | 5/10/30 | d4w/d6w/d4m | 2 | 2 | 100 |
-| [Pistol, .38 rev](#pistol-38-rev) | [Mod-pistol](/skills/modern-ranged-weapons/pistol/) | 0 | 10/20/80 | d4+1w/d4+2w/d6m | 1 | 6 | 200 |
-| [Pistol, .44 magnum](#pistol-44-magnum) | [Mod-pistol](/skills/modern-ranged-weapons/pistol/) | +1 | 30/60/200 | d4+2w/d6+2w/d4+1m | 1 | 6 | 400 |
-| [Rifle, 7.62mm](#rifle-7-62mm) | [Mod-rifle](/skills/modern-ranged-weapons/rifle/) | -1 | 80/160/400| d6w/d8+1w/d6+1m | 1 | 10 | 500 |
-| [Rifle, assault](#rifle-assault) | [Mod-rifle](/skills/modern-ranged-weapons/rifle/) | -1 | 50/100/300| d4w/d6w/d4m | 1 | 30 | 700 |
-| [SMG, 9mm](#smg-9mm) | [Mod-SMG](/skills/modern-ranged-weapons/smg/) | +1 | 30/60/150 | d4+1w/d4+2w/d6m | 1 | 30 | 600 |
-| **PL 6: Fusion Age** | | | | | | | |
-| [Pistol, 9mm ch](#pistol-9mm-charge) | [Mod-pistol](/skills/modern-ranged-weapons/pistol/) | 0 | 20/40/100 | d4+1w/d6+1w/d4m | 1 | 15 | 400 |
-| [Pistol, 9mm zero-g](#pistol-9mm-zero-g) | [Mod-pistol](/skills/modern-ranged-weapons/pistol/) | 0 | 20/40/100 | d4+1w/d6+1w/d4m | 1 | 15 | 600 |
-| [Pistol, 11mm ch](#pistol-11mm-charge) | [Mod-pistol](/skills/modern-ranged-weapons/pistol/) | +1 | 40/80/240 | d4+2w/d6+2w/d4+1m | 1 | 10 | 500 |
-| [Rifle, 11mm ch](#rifle-11mm-charge) | [Mod-rifle](/skills/modern-ranged-weapons/rifle/) | 0 | 100/400/1000| d6+1w/d6+3w/d6+1m | 1 | 30 | 900 |
-| [Rifle, 11mm zero-g](#rifle-11mm-zero-g) | [Mod-rifle](/skills/modern-ranged-weapons/rifle/) | 0 | 100/400/1000| d6+1w/d6+3w/d6+1m | 1 | 15 | 1100 |
-| [Shotgun, autoflec](#shotgun-autoflec) | [Mod-rifle](/skills/modern-ranged-weapons/rifle/) | +2 | 4/12/30 | d6w/d6+2w/d8m | 1 | 15 | 800 |
-| [SMG, 9mm ch](#smg-9mm-charge) | [Mod-SMG](/skills/modern-ranged-weapons/smg/) | +1 | 50/100/250| d4+1w/d6+1w/d4m | 1 | 30 | 750 |
-| **PL 7: Gravity Age** | | | | | | | |
-| [Pistol, 15mm sabot](#pistol-15mm-sabot) | [Mod-pistol](/skills/modern-ranged-weapons/pistol/) | -1 | 80/200/500| 2d4w/2d4+1w/d4+3m | 1 | 6 | 900 |
-| [Pistol, laser](#pistol-laser) | [Mod-pistol](/skills/modern-ranged-weapons/pistol/) | -1 | 50/100/250| d4+1w/d6+1w/d4m | 1 | 20 | 600 |
-| [Pistol, mass](#pistol-mass) | [Mod-pistol](/skills/modern-ranged-weapons/pistol/) | +1 | 20/80/200 | d6w/d6+2w/d8m | 1 | 10 | 800 |
-| [Pistol, stutter](#pistol-stutter) | [Mod-pistol](/skills/modern-ranged-weapons/pistol/) | 0 | 10/20/80 | d6+2s/d8+2s/d8+4s | 1 | 10 | 400 |
-| [Rifle, laser](#rifle-laser) | [Mod-rifle](/skills/modern-ranged-weapons/rifle/) | -2 | 60/120/400| d6+1w/d6+3w/d4+1m | 1 | 12 | 1000 |
-| [Rifle, mass](#rifle-mass) | [Mod-rifle](/skills/modern-ranged-weapons/rifle/) | 0 | 20/60/120 | d8w/d8+1w/d6+1m | 1 | 8 | 1300 |
-| [Rifle, quantum](#rifle-quantum) | [Mod-rifle](/skills/modern-ranged-weapons/rifle/) | -1 | 40/200/500| d4+3w/d6+4w/d8+1m | 1 | 15 | 5000 |
-| [Rifle, render](#rifle-render) | [Mod-rifle](/skills/modern-ranged-weapons/rifle/) | 0 | 20/40/80 | d6+1s/d6+1w/d4+1m | 1 | 8 | 1500 |
-| [SMG, laser](#smg-laser) | [Mod-SMG](/skills/modern-ranged-weapons/smg/) | -1 | 20/40/80 | d6w/d6+2w/d4m | 1 | 40 | 800 |
-| [SMG, stutter](#smg-stutter) | [Mod-SMG](/skills/modern-ranged-weapons/smg/) | +1 | 10/20/60 | d6+2s/d8+2s/d8+4s | 1 | 20 | 700 |
-| **PL 8: Energy Age** | | | | | | | |
-| [Automaser](#automaser) | [Mod-SMG](/skills/modern-ranged-weapons/smg/) | -2 | 60/120/400| d6w/d6+2w/d4m | 1 | 20 | 1500 |
-| [Pistol, hvy maser](#pistol-hvy-maser) | [Mod-pistol](/skills/modern-ranged-weapons/pistol/) | -1 | 40/200/500| d6+1w/2d4+1w/d4+1m| 1 | 30 | 1200 |
-| [Pistol, maser](#pistol-maser) | [Mod-pistol](/skills/modern-ranged-weapons/pistol/) | -1 | 20/60/120 | d6w/d6+2w/d4m | 1 | 40 | 900 |
-| [Rifle, hvy maser](#rifle-hvy-maser) | [Mod-rifle](/skills/modern-ranged-weapons/rifle/) | -2 | 80/200/600| d8+1w/d12w/d6+1m | 1 | 60 | 2500 |
-| [Rifle, maser](#rifle-maser) | [Mod-rifle](/skills/modern-ranged-weapons/rifle/) | -2 | 60/120/400| d6+2w/2d4+2w/d4+2m| 1 | 90 | 1800 |
-{{< /sortable-table >}}
+<div class="table-wrapper">
+<table>
+<thead>
+<tr>
+<th>Weapon</th>
+<th>Skill</th>
+<th>Acc</th>
+<th>Range (S/M/L)</th>
+<th>Damage (O/G/A)</th>
+<th>Act.</th>
+<th>Clip</th>
+<th>Cost ($)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="table-separator"><td colspan="8">PL 0: Stone Age</td></tr>
+<tr>
+<td><a href="#bow-short">Bow, short</a></td>
+<td><a href="/skills/primitive-ranged-weapons/bow/">Prim-bow</a></td>
+<td>0</td>
+<td>20/40/100</td>
+<td>d4w/d4+2w/d4+3w</td>
+<td>1</td>
+<td>1</td>
+<td>40</td>
+</tr>
+<tr>
+<td><a href="#sling">Sling</a></td>
+<td><a href="/skills/primitive-ranged-weapons/sling/">Prim-sling</a></td>
+<td>+2</td>
+<td>10/20/60</td>
+<td>d4s/d4+1s/d4+2s</td>
+<td>1</td>
+<td>1</td>
+<td>10</td>
+</tr>
+<tr class="table-separator"><td colspan="8">PL 1: Bronze/Iron Age</td></tr>
+<tr>
+<td><a href="#javelin">Javelin</a></td>
+<td><a href="/skills/athletics/throw/">Athl-throw</a></td>
+<td>0</td>
+<td>Per STR</td>
+<td>d4+1w/d6+1w/d4m</td>
+<td>1</td>
+<td>1</td>
+<td>20</td>
+</tr>
+<tr class="table-separator"><td colspan="8">PL 2: Middle Ages</td></tr>
+<tr>
+<td><a href="#bow-long">Bow, long</a></td>
+<td><a href="/skills/primitive-ranged-weapons/bow/">Prim-bow</a></td>
+<td>-1</td>
+<td>40/80/200</td>
+<td>d4+2w/d6+2w/d4+1m</td>
+<td>1</td>
+<td>1</td>
+<td>75</td>
+</tr>
+<tr>
+<td><a href="#crossbow">Crossbow</a></td>
+<td><a href="/skills/primitive-ranged-weapons/bow/">Prim-bow</a></td>
+<td>0</td>
+<td>50/100/250</td>
+<td>d6s/d4w/d4+1w</td>
+<td>2</td>
+<td>1</td>
+<td>150</td>
+</tr>
+<tr>
+<td><a href="#shuriken">Shuriken</a></td>
+<td><a href="/skills/athletics/throw/">Athl-throw</a></td>
+<td>-1</td>
+<td>Per STR</td>
+<td>d4s/d4+1s/d6+1s</td>
+<td>1</td>
+<td>1</td>
+<td>10</td>
+</tr>
+<tr class="table-separator"><td colspan="8">PL 3: Age of Reason</td></tr>
+<tr>
+<td><a href="#musket-flintlock">Musket, flintlock</a></td>
+<td><a href="/skills/primitive-ranged-weapons/flintlock/">Prim-flint</a></td>
+<td>+2</td>
+<td>20/40/100</td>
+<td>d4+2w/d6+2w/d8m</td>
+<td>3</td>
+<td>1</td>
+<td>200</td>
+</tr>
+<tr>
+<td><a href="#pistol-flintlock">Pistol, flintlock</a></td>
+<td><a href="/skills/primitive-ranged-weapons/flintlock/">Prim-flint</a></td>
+<td>+2</td>
+<td>4/8/16</td>
+<td>d4s/d6w/d8+2w</td>
+<td>3</td>
+<td>1</td>
+<td>150</td>
+</tr>
+<tr>
+<td><a href="#rifle-long">Rifle, long</a></td>
+<td><a href="/skills/primitive-ranged-weapons/flintlock/">Prim-flint</a></td>
+<td>0</td>
+<td>30/60/150</td>
+<td>d6w/d6+2w/d4+1m</td>
+<td>3</td>
+<td>1</td>
+<td>300</td>
+</tr>
+<tr class="table-separator"><td colspan="8">PL 4: Industrial Age</td></tr>
+<tr>
+<td><a href="#derringer">Derringer</a></td>
+<td><a href="/skills/modern-ranged-weapons/pistol/">Mod-pistol</a></td>
+<td>+2</td>
+<td>5/10/30</td>
+<td>d4w/d6w/d4m</td>
+<td>2</td>
+<td>2</td>
+<td>100</td>
+</tr>
+<tr>
+<td><a href="#pistol-38-rev">Pistol, .38 rev</a></td>
+<td><a href="/skills/modern-ranged-weapons/pistol/">Mod-pistol</a></td>
+<td>0</td>
+<td>10/20/80</td>
+<td>d4+1w/d4+2w/d6m</td>
+<td>1</td>
+<td>6</td>
+<td>200</td>
+</tr>
+<tr>
+<td><a href="#pistol-44-magnum">Pistol, .44 magnum</a></td>
+<td><a href="/skills/modern-ranged-weapons/pistol/">Mod-pistol</a></td>
+<td>+1</td>
+<td>30/60/200</td>
+<td>d4+2w/d6+2w/d4+1m</td>
+<td>1</td>
+<td>6</td>
+<td>400</td>
+</tr>
+<tr>
+<td><a href="#rifle-7-62mm">Rifle, 7.62mm</a></td>
+<td><a href="/skills/modern-ranged-weapons/rifle/">Mod-rifle</a></td>
+<td>-1</td>
+<td>80/160/400</td>
+<td>d6w/d8+1w/d6+1m</td>
+<td>1</td>
+<td>10</td>
+<td>500</td>
+</tr>
+<tr>
+<td><a href="#rifle-assault">Rifle, assault</a></td>
+<td><a href="/skills/modern-ranged-weapons/rifle/">Mod-rifle</a></td>
+<td>-1</td>
+<td>50/100/300</td>
+<td>d4w/d6w/d4m</td>
+<td>1</td>
+<td>30</td>
+<td>700</td>
+</tr>
+<tr>
+<td><a href="#smg-9mm">SMG, 9mm</a></td>
+<td><a href="/skills/modern-ranged-weapons/smg/">Mod-SMG</a></td>
+<td>+1</td>
+<td>30/60/150</td>
+<td>d4+1w/d4+2w/d6m</td>
+<td>1</td>
+<td>30</td>
+<td>600</td>
+</tr>
+<tr class="table-separator"><td colspan="8">PL 6: Fusion Age</td></tr>
+<tr>
+<td><a href="#pistol-9mm-charge">Pistol, 9mm ch</a></td>
+<td><a href="/skills/modern-ranged-weapons/pistol/">Mod-pistol</a></td>
+<td>0</td>
+<td>20/40/100</td>
+<td>d4+1w/d6+1w/d4m</td>
+<td>1</td>
+<td>15</td>
+<td>400</td>
+</tr>
+<tr>
+<td><a href="#pistol-9mm-zero-g">Pistol, 9mm zero-g</a></td>
+<td><a href="/skills/modern-ranged-weapons/pistol/">Mod-pistol</a></td>
+<td>0</td>
+<td>20/40/100</td>
+<td>d4+1w/d6+1w/d4m</td>
+<td>1</td>
+<td>15</td>
+<td>600</td>
+</tr>
+<tr>
+<td><a href="#pistol-11mm-charge">Pistol, 11mm ch</a></td>
+<td><a href="/skills/modern-ranged-weapons/pistol/">Mod-pistol</a></td>
+<td>+1</td>
+<td>40/80/240</td>
+<td>d4+2w/d6+2w/d4+1m</td>
+<td>1</td>
+<td>10</td>
+<td>500</td>
+</tr>
+<tr>
+<td><a href="#rifle-11mm-charge">Rifle, 11mm ch</a></td>
+<td><a href="/skills/modern-ranged-weapons/rifle/">Mod-rifle</a></td>
+<td>0</td>
+<td>100/400/1000</td>
+<td>d6+1w/d6+3w/d6+1m</td>
+<td>1</td>
+<td>30</td>
+<td>900</td>
+</tr>
+<tr>
+<td><a href="#rifle-11mm-zero-g">Rifle, 11mm zero-g</a></td>
+<td><a href="/skills/modern-ranged-weapons/rifle/">Mod-rifle</a></td>
+<td>0</td>
+<td>100/400/1000</td>
+<td>d6+1w/d6+3w/d6+1m</td>
+<td>1</td>
+<td>15</td>
+<td>1100</td>
+</tr>
+<tr>
+<td><a href="#shotgun-autoflec">Shotgun, autoflec</a></td>
+<td><a href="/skills/modern-ranged-weapons/rifle/">Mod-rifle</a></td>
+<td>+2</td>
+<td>4/12/30</td>
+<td>d6w/d6+2w/d8m</td>
+<td>1</td>
+<td>15</td>
+<td>800</td>
+</tr>
+<tr>
+<td><a href="#smg-9mm-charge">SMG, 9mm ch</a></td>
+<td><a href="/skills/modern-ranged-weapons/smg/">Mod-SMG</a></td>
+<td>+1</td>
+<td>50/100/250</td>
+<td>d4+1w/d6+1w/d4m</td>
+<td>1</td>
+<td>30</td>
+<td>750</td>
+</tr>
+<tr class="table-separator"><td colspan="8">PL 7: Gravity Age</td></tr>
+<tr>
+<td><a href="#pistol-15mm-sabot">Pistol, 15mm sabot</a></td>
+<td><a href="/skills/modern-ranged-weapons/pistol/">Mod-pistol</a></td>
+<td>-1</td>
+<td>80/200/500</td>
+<td>2d4w/2d4+1w/d4+3m</td>
+<td>1</td>
+<td>6</td>
+<td>900</td>
+</tr>
+<tr>
+<td><a href="#pistol-laser">Pistol, laser</a></td>
+<td><a href="/skills/modern-ranged-weapons/pistol/">Mod-pistol</a></td>
+<td>-1</td>
+<td>50/100/250</td>
+<td>d4+1w/d6+1w/d4m</td>
+<td>1</td>
+<td>20</td>
+<td>600</td>
+</tr>
+<tr>
+<td><a href="#pistol-mass">Pistol, mass</a></td>
+<td><a href="/skills/modern-ranged-weapons/pistol/">Mod-pistol</a></td>
+<td>+1</td>
+<td>20/80/200</td>
+<td>d6w/d6+2w/d8m</td>
+<td>1</td>
+<td>10</td>
+<td>800</td>
+</tr>
+<tr>
+<td><a href="#pistol-stutter">Pistol, stutter</a></td>
+<td><a href="/skills/modern-ranged-weapons/pistol/">Mod-pistol</a></td>
+<td>0</td>
+<td>10/20/80</td>
+<td>d6+2s/d8+2s/d8+4s</td>
+<td>1</td>
+<td>10</td>
+<td>400</td>
+</tr>
+<tr>
+<td><a href="#rifle-laser">Rifle, laser</a></td>
+<td><a href="/skills/modern-ranged-weapons/rifle/">Mod-rifle</a></td>
+<td>-2</td>
+<td>60/120/400</td>
+<td>d6+1w/d6+3w/d4+1m</td>
+<td>1</td>
+<td>12</td>
+<td>1000</td>
+</tr>
+<tr>
+<td><a href="#rifle-mass">Rifle, mass</a></td>
+<td><a href="/skills/modern-ranged-weapons/rifle/">Mod-rifle</a></td>
+<td>0</td>
+<td>20/60/120</td>
+<td>d8w/d8+1w/d6+1m</td>
+<td>1</td>
+<td>8</td>
+<td>1300</td>
+</tr>
+<tr>
+<td><a href="#rifle-quantum">Rifle, quantum</a></td>
+<td><a href="/skills/modern-ranged-weapons/rifle/">Mod-rifle</a></td>
+<td>-1</td>
+<td>40/200/500</td>
+<td>d4+3w/d6+4w/d8+1m</td>
+<td>1</td>
+<td>15</td>
+<td>5000</td>
+</tr>
+<tr>
+<td><a href="#rifle-render">Rifle, render</a></td>
+<td><a href="/skills/modern-ranged-weapons/rifle/">Mod-rifle</a></td>
+<td>0</td>
+<td>20/40/80</td>
+<td>d6+1s/d6+1w/d4+1m</td>
+<td>1</td>
+<td>8</td>
+<td>1500</td>
+</tr>
+<tr>
+<td><a href="#smg-laser">SMG, laser</a></td>
+<td><a href="/skills/modern-ranged-weapons/smg/">Mod-SMG</a></td>
+<td>-1</td>
+<td>20/40/80</td>
+<td>d6w/d6+2w/d4m</td>
+<td>1</td>
+<td>40</td>
+<td>800</td>
+</tr>
+<tr>
+<td><a href="#smg-stutter">SMG, stutter</a></td>
+<td><a href="/skills/modern-ranged-weapons/smg/">Mod-SMG</a></td>
+<td>+1</td>
+<td>10/20/60</td>
+<td>d6+2s/d8+2s/d8+4s</td>
+<td>1</td>
+<td>20</td>
+<td>700</td>
+</tr>
+<tr class="table-separator"><td colspan="8">PL 8: Energy Age</td></tr>
+<tr>
+<td><a href="#automaser">Automaser</a></td>
+<td><a href="/skills/modern-ranged-weapons/smg/">Mod-SMG</a></td>
+<td>-2</td>
+<td>60/120/400</td>
+<td>d6w/d6+2w/d4m</td>
+<td>1</td>
+<td>20</td>
+<td>1500</td>
+</tr>
+<tr>
+<td><a href="#pistol-hvy-maser">Pistol, hvy maser</a></td>
+<td><a href="/skills/modern-ranged-weapons/pistol/">Mod-pistol</a></td>
+<td>-1</td>
+<td>40/200/500</td>
+<td>d6+1w/2d4+1w/d4+1m</td>
+<td>1</td>
+<td>30</td>
+<td>1200</td>
+</tr>
+<tr>
+<td><a href="#pistol-maser">Pistol, maser</a></td>
+<td><a href="/skills/modern-ranged-weapons/pistol/">Mod-pistol</a></td>
+<td>-1</td>
+<td>20/60/120</td>
+<td>d6w/d6+2w/d4m</td>
+<td>1</td>
+<td>40</td>
+<td>900</td>
+</tr>
+<tr>
+<td><a href="#rifle-hvy-maser">Rifle, hvy maser</a></td>
+<td><a href="/skills/modern-ranged-weapons/rifle/">Mod-rifle</a></td>
+<td>-2</td>
+<td>80/200/600</td>
+<td>d8+1w/d12w/d6+1m</td>
+<td>1</td>
+<td>60</td>
+<td>2500</td>
+</tr>
+<tr>
+<td><a href="#rifle-maser">Rifle, maser</a></td>
+<td><a href="/skills/modern-ranged-weapons/rifle/">Mod-rifle</a></td>
+<td>-2</td>
+<td>60/120/400</td>
+<td>d6+2w/2d4+2w/d4+2m</td>
+<td>1</td>
+<td>90</td>
+<td>1800</td>
+</tr>
+</tbody>
+</table>
+</div>
 
 ### Ranged Weapon Descriptions
 
-{{< tabs >}}
-{{< tab title="PL 0-3" >}}
 **PL 0: Stone Age**
 *   <span id="bow-short">**Bow, Short:**</span> This is a simple bow made from a single piece of wood. It is the earliest and most widespread form of archery.
 *   <span id="sling">**Sling:**</span> A simple strap of leather used to hurl stones or lead bullets with surprising force.
@@ -172,8 +767,7 @@ toc = true
 *   <span id="musket-flintlock">**Musket, Flintlock:**</span> The earliest form of common black powder firearm, inaccurate and slow-loading, but powerful at close range.
 *   <span id="pistol-flintlock">**Pistol, Flintlock:**</span> A small handgun that uses a flintlock mechanism, popular for self-defense and dueling.
 *   <span id="rifle-long">**Rifle, Long:**</span> Also known as the Kentucky rifle, this flintlock weapon features rifled barrels for significantly improved accuracy over a smoothbore musket.
-{{< /tab >}}
-{{< tab title="PL 4-6" >}}
+
 **PL 4: Industrial Age**
 *   <span id="derringer">**Derringer:**</span> A very small, easily concealed pistol, typically having two barrels and used as a backup weapon.
 *   <span id="pistol-38-rev">**Pistol, .38 Revolver:**</span> A standard, reliable handgun that uses a rotating cylinder to hold multiple rounds.
@@ -187,8 +781,7 @@ toc = true
 *   <span id="pistol-9mm-zero-g">**Pistol, 9mm Zero-G:**</span> A charge pistol with a sophisticated anti-recoil system, allowing it to be used in weightless conditions without affecting the wielder's movement.
 *   <span id="rifle-11mm-charge">**Rifle, 11mm Charge:**</span> A heavier version of the charge rifle, firing larger rounds with greater range and damage.
 *   <span id="shotgun-autoflec">**Shotgun, Autoflec:**</span> A high-tech shotgun that fires a cloud of tiny flechettes (needle-like projectiles) and is capable of semi-automatic fire.
-{{< /tab >}}
-{{< tab title="PL 7-8" >}}
+
 **PL 7: Gravity Age**
 *   <span id="pistol-15mm-sabot">**Pistol, 15mm Sabot:**</span> Fires high-velocity, sub-caliber projectiles that can penetrate most personal armor with ease.
 *   <span id="pistol-laser">**Pistol, Laser:**</span> Uses an electrical charge to fire a focused, white-hot beam of light that can burn through many materials.
@@ -202,54 +795,325 @@ toc = true
 *   <span id="automaser">**Automaser:**</span> A submachine-gun version of maser technology, providing high-rate energy blasts for rapid fire.
 *   <span id="pistol-maser">**Pistol, maser:**</span> Fires a blast of microwave energy that generates intense heat within the target's body.
 *   <span id="rifle-maser">**Rifle, maser:**</span> A larger, more powerful version of the maser pistol, capable of inflicting severe internal damage at longer ranges.
-{{< /tab >}}
-{{< /tabs >}}
 
 ## Heavy Weapons
 
-{{< sortable-table >}}
-| Weapon (PL) | Skill | Acc | Range (S/M/L) | Damage (O/G/A) | Act. | Clip | Cost ($) |
-| :--- | :--- | :-: | :--- | :--- | :-: | :-: | :---: |
-| **PL 4: Industrial Age**| | | | | | | |
-| [Flamethrower](#flamethrower) | [Hvy-dir](/skills/heavy-weapons/direct-fire/) | +2 | 10/20/40 | d6w/d8w/d12w | 1 | 10 | 600 |
-| [Grenade, frag](#grenade-frag) | [Athl-thr](/skills/athletics/throw/) | 0 | Per STR | d6+2s/d4w/d4+1w | 1 | 1 | 75 |
-| [Machine gun, .30](#machine-gun-30) | [Hvy-dir](/skills/heavy-weapons/direct-fire/) | -1 | 60/200/600 | d6+1w/d8+1w/d6+1m | 1 | 100 | 1200 |
-| [Rocket launcher](#rocket-launcher) | [Hvy-dir](/skills/heavy-weapons/direct-fire/) | +1 | 50/200/350 | d8w/d4+1m/d6+1m | 2 | 1 | 1000 |
-| **PL 5: Information Age**| | | | | | | |
-| [Grenade launcher](#grenade-launcher) | [Hvy-ind](/skills/heavy-weapons/indirect-fire/) | 0 | As load | As load | 1 | 6 | 800 |
-| [Grenade, concus.](#grenade-concussion) | [Athl-thr](/skills/athletics/throw/) | 0 | Per STR | d6+2s/d8w/d4+1w | 1 | 1 | 100 |
-| [Grenade, incend.](#grenade-incendiary) | [Athl-thr](/skills/athletics/throw/) | 0 | Per STR | d4w/d4+2w/d4+3w | 1 | 1 | 100 |
-| [Grenade, smoke](#grenade-smoke) | [Athl-thr](/skills/athletics/throw/) | 0 | Per STR | Special | 1 | 1 | 50 |
-| [Hvy machine gun](#hvy-machine-gun) | [Hvy-dir](/skills/heavy-weapons/direct-fire/) | -2 | 100/400/1000| d6+1w/2d4+2w/d8m | 1 | 200 | 2500 |
-| [SAM, handheld](#sam-handheld) | [Hvy-ind](/skills/heavy-weapons/indirect-fire/) | 0 | 1000/2000/4000| d4w/d8w/d8+4w | 2 | 1 | 5000 |
-| **PL 6: Fusion Age** | | | | | | | |
-| [Bantam launcher](#bantam-launcher) | [Hvy-ind](/skills/heavy-weapons/indirect-fire/) | 0 | 100/800/4000| As load | 1 | 1 | 2000 |
-| [Bantam, antiair](#bantam-antiair) | [Hvy-ind](/skills/heavy-weapons/indirect-fire/) | 0 | As launcher | d4w/d4+2w/d4+3w | 1 | 1 | 1000 |
-| [Bantam, antiper.](#bantam-antiper) | [Hvy-ind](/skills/heavy-weapons/indirect-fire/) | 0 | As launcher | d6w/d8+2w/d8+2w | 1 | 1 | 800 |
-| [Bantam, antiveh.](#bantam-antiveh) | [Hvy-ind](/skills/heavy-weapons/indirect-fire/) | 0 | As launcher | d4+2w/d4+4w/d4+1m| 1 | 1 | 1200 |
-| [Grenade, plasma](#grenade-plasma) | [Athl-thr](/skills/athletics/throw/) | 0 | Per STR | d4+2w/d8+2w/d4m | 1 | 1 | 150 |
-| [Grenade, stun](#grenade-stun) | [Athl-thr](/skills/athletics/throw/) | 0 | Per STR | d6s/d8s/d8+2s | 1 | 1 | 75 |
-| [Hvy mach gun, ch](#hvy-mach-gun-ch) | [Hvy-dir](/skills/heavy-weapons/direct-fire/) | -2 | 200/600/1200| d8w/2d6w/2d4m | 1 | 100 | 3500 |
-| [Rail gun](#rail-gun) | [Hvy-dir](/skills/heavy-weapons/direct-fire/) | -1 | 150/500/1500| d6w/d6+2w/d8m | 1 | 20 | 4000 |
-| **PL 7: Gravity Age** | | | | | | | |
-| [Arc gun](#arc-gun) | [Hvy-dir](/skills/heavy-weapons/direct-fire/) | +1 | 20/40/100 | d8+1s/d8w/d6+3w | 1 | 10 | 2000 |
-| [Cannon, stutter](#cannon-stutter) | [Hvy-dir](/skills/heavy-weapons/direct-fire/) | 0 | 20/40/80 | d6+2s/d8+3s/2d6+3s| 1 | 20 | 1500 |
-| [Cannon, 25mm sabot](#cannon-25mm-sabot) | [Hvy-dir](/skills/heavy-weapons/direct-fire/) | -2 | 100/200/2000| d8w/d4+1m/d6+2m | 2 | 20 | 6000 |
-| [Grenade, pulse](#grenade-pulse) | [Athl-thr](/skills/athletics/throw/) | 0 | Per STR | d4+2s/d6+2s/d8+2s | 1 | 1 | 100 |
-| [Grenade, tracer](#grenade-tracer) | [Athl-thr](/skills/athletics/throw/) | 0 | Per STR | d4+2w/d6+2w/d4+2m| 1 | 1 | 250 |
-| [Plasma gun](#plasma-gun) | [Hvy-dir](/skills/heavy-weapons/direct-fire/) | 0 | 40/80/200 | d8w/d8+3w/d12+3w| 1 | 10 | 3000 |
-| [Quantum mini](#quantum-mini) | [Hvy-dir](/skills/heavy-weapons/direct-fire/) | 0 | 100/250/800| d8+1w/d8+3w/d6m | 1 | 50 | 15000 |
-| **PL 8: Energy Age** | | | | | | | |
-| [Bantam, starload](#bantam-starload) | [Hvy-ind](/skills/heavy-weapons/indirect-fire/) | 0 | As launcher | d8+2w/d4+1m/d6+1m| 1 | 1 | 2500 |
-| [Cannon, maser](#cannon-maser) | [Hvy-dir](/skills/heavy-weapons/direct-fire/) | -1 | 80/200/600 | d8w/d4+1m/d8+2m | 2 | 20 | 8000 |
-| [Grenade, mass](#grenade-mass) | [Athl-thr](/skills/athletics/throw/) | 0 | Per STR | d6+2s/d6+2w/d8m | 1 | 1 | 200 |
-| [Mass launcher](#mass-launcher) | [Hvy-ind](/skills/heavy-weapons/indirect-fire/) | 0 | 20/300/1000| d6+1w/d6+3w/d4+1m| 1 | 4 | 3000 |
-{{< /sortable-table >}}
+<div class="table-wrapper">
+<table>
+<thead>
+<tr>
+<th>Weapon</th>
+<th>Skill</th>
+<th>Acc</th>
+<th>Range (S/M/L)</th>
+<th>Damage (O/G/A)</th>
+<th>Act.</th>
+<th>Clip</th>
+<th>Cost ($)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="table-separator"><td colspan="8">PL 4: Industrial Age</td></tr>
+<tr>
+<td><a href="#flamethrower">Flamethrower</a></td>
+<td><a href="/skills/heavy-weapons/direct-fire/">Hvy-dir</a></td>
+<td>+2</td>
+<td>10/20/40</td>
+<td>d6w/d8w/d12w</td>
+<td>1</td>
+<td>10</td>
+<td>600</td>
+</tr>
+<tr>
+<td><a href="#grenade-frag">Grenade, frag</a></td>
+<td><a href="/skills/athletics/throw/">Athl-thr</a></td>
+<td>0</td>
+<td>Per STR</td>
+<td>d6+2s/d4w/d4+1w</td>
+<td>1</td>
+<td>1</td>
+<td>75</td>
+</tr>
+<tr>
+<td><a href="#machine-gun-30">Machine gun, .30</a></td>
+<td><a href="/skills/heavy-weapons/direct-fire/">Hvy-dir</a></td>
+<td>-1</td>
+<td>60/200/600</td>
+<td>d6+1w/d8+1w/d6+1m</td>
+<td>1</td>
+<td>100</td>
+<td>1200</td>
+</tr>
+<tr>
+<td><a href="#rocket-launcher">Rocket launcher</a></td>
+<td><a href="/skills/heavy-weapons/direct-fire/">Hvy-dir</a></td>
+<td>+1</td>
+<td>50/200/350</td>
+<td>d8w/d4+1m/d6+1m</td>
+<td>2</td>
+<td>1</td>
+<td>1000</td>
+</tr>
+<tr class="table-separator"><td colspan="8">PL 5: Information Age</td></tr>
+<tr>
+<td><a href="#grenade-launcher">Grenade launcher</a></td>
+<td><a href="/skills/heavy-weapons/indirect-fire/">Hvy-ind</a></td>
+<td>0</td>
+<td>As load</td>
+<td>As load</td>
+<td>1</td>
+<td>6</td>
+<td>800</td>
+</tr>
+<tr>
+<td><a href="#grenade-concussion">Grenade, concus.</a></td>
+<td><a href="/skills/athletics/throw/">Athl-thr</a></td>
+<td>0</td>
+<td>Per STR</td>
+<td>d6+2s/d8w/d4+1w</td>
+<td>1</td>
+<td>1</td>
+<td>100</td>
+</tr>
+<tr>
+<td><a href="#grenade-incendiary">Grenade, incend.</a></td>
+<td><a href="/skills/athletics/throw/">Athl-thr</a></td>
+<td>0</td>
+<td>Per STR</td>
+<td>d4w/d4+2w/d4+3w</td>
+<td>1</td>
+<td>1</td>
+<td>100</td>
+</tr>
+<tr>
+<td><a href="#grenade-smoke">Grenade, smoke</a></td>
+<td><a href="/skills/athletics/throw/">Athl-thr</a></td>
+<td>0</td>
+<td>Per STR</td>
+<td>Special</td>
+<td>1</td>
+<td>1</td>
+<td>50</td>
+</tr>
+<tr>
+<td><a href="#hvy-machine-gun">Hvy machine gun</a></td>
+<td><a href="/skills/heavy-weapons/direct-fire/">Hvy-dir</a></td>
+<td>-2</td>
+<td>100/400/1000</td>
+<td>d6+1w/2d4+2w/d8m</td>
+<td>1</td>
+<td>200</td>
+<td>2500</td>
+</tr>
+<tr>
+<td><a href="#sam-handheld">SAM, handheld</a></td>
+<td><a href="/skills/heavy-weapons/indirect-fire/">Hvy-ind</a></td>
+<td>0</td>
+<td>1000/2000/4000</td>
+<td>d4w/d8w/d8+4w</td>
+<td>2</td>
+<td>1</td>
+<td>5000</td>
+</tr>
+<tr class="table-separator"><td colspan="8">PL 6: Fusion Age</td></tr>
+<tr>
+<td><a href="#bantam-launcher">Bantam launcher</a></td>
+<td><a href="/skills/heavy-weapons/indirect-fire/">Hvy-ind</a></td>
+<td>0</td>
+<td>100/800/4000</td>
+<td>As load</td>
+<td>1</td>
+<td>1</td>
+<td>2000</td>
+</tr>
+<tr>
+<td><a href="#bantam-antiair">Bantam, antiair</a></td>
+<td><a href="/skills/heavy-weapons/indirect-fire/">Hvy-ind</a></td>
+<td>0</td>
+<td>As launcher</td>
+<td>d4w/d4+2w/d4+3w</td>
+<td>1</td>
+<td>1</td>
+<td>1000</td>
+</tr>
+<tr>
+<td><a href="#bantam-antiper">Bantam, antiper.</a></td>
+<td><a href="/skills/heavy-weapons/indirect-fire/">Hvy-ind</a></td>
+<td>0</td>
+<td>As launcher</td>
+<td>d6w/d8+2w/d8+2w</td>
+<td>1</td>
+<td>1</td>
+<td>800</td>
+</tr>
+<tr>
+<td><a href="#bantam-antiveh">Bantam, antiveh.</a></td>
+<td><a href="/skills/heavy-weapons/indirect-fire/">Hvy-ind</a></td>
+<td>0</td>
+<td>As launcher</td>
+<td>d4+2w/d4+4w/d4+1m</td>
+<td>1</td>
+<td>1</td>
+<td>1200</td>
+</tr>
+<tr>
+<td><a href="#grenade-plasma">Grenade, plasma</a></td>
+<td><a href="/skills/athletics/throw/">Athl-thr</a></td>
+<td>0</td>
+<td>Per STR</td>
+<td>d4+2w/d8+2w/d4m</td>
+<td>1</td>
+<td>1</td>
+<td>150</td>
+</tr>
+<tr>
+<td><a href="#grenade-stun">Grenade, stun</a></td>
+<td><a href="/skills/athletics/throw/">Athl-thr</a></td>
+<td>0</td>
+<td>Per STR</td>
+<td>d6s/d8s/d8+2s</td>
+<td>1</td>
+<td>1</td>
+<td>75</td>
+</tr>
+<tr>
+<td><a href="#hvy-mach-gun-ch">Hvy mach gun, ch</a></td>
+<td><a href="/skills/heavy-weapons/direct-fire/">Hvy-dir</a></td>
+<td>-2</td>
+<td>200/600/1200</td>
+<td>d8w/2d6w/2d4m</td>
+<td>1</td>
+<td>100</td>
+<td>3500</td>
+</tr>
+<tr>
+<td><a href="#rail-gun">Rail gun</a></td>
+<td><a href="/skills/heavy-weapons/direct-fire/">Hvy-dir</a></td>
+<td>-1</td>
+<td>150/500/1500</td>
+<td>d6w/d6+2w/d8m</td>
+<td>1</td>
+<td>20</td>
+<td>4000</td>
+</tr>
+<tr class="table-separator"><td colspan="8">PL 7: Gravity Age</td></tr>
+<tr>
+<td><a href="#arc-gun">Arc gun</a></td>
+<td><a href="/skills/heavy-weapons/direct-fire/">Hvy-dir</a></td>
+<td>+1</td>
+<td>20/40/100</td>
+<td>d8+1s/d8w/d6+3w</td>
+<td>1</td>
+<td>10</td>
+<td>2000</td>
+</tr>
+<tr>
+<td><a href="#cannon-stutter">Cannon, stutter</a></td>
+<td><a href="/skills/heavy-weapons/direct-fire/">Hvy-dir</a></td>
+<td>0</td>
+<td>20/40/80</td>
+<td>d6+2s/d8+3s/2d6+3s</td>
+<td>1</td>
+<td>20</td>
+<td>1500</td>
+</tr>
+<tr>
+<td><a href="#cannon-25mm-sabot">Cannon, 25mm sabot</a></td>
+<td><a href="/skills/heavy-weapons/direct-fire/">Hvy-dir</a></td>
+<td>-2</td>
+<td>100/200/2000</td>
+<td>d8w/d4+1m/d6+2m</td>
+<td>2</td>
+<td>20</td>
+<td>6000</td>
+</tr>
+<tr>
+<td><a href="#grenade-pulse">Grenade, pulse</a></td>
+<td><a href="/skills/athletics/throw/">Athl-thr</a></td>
+<td>0</td>
+<td>Per STR</td>
+<td>d4+2s/d6+2s/d8+2s</td>
+<td>1</td>
+<td>1</td>
+<td>100</td>
+</tr>
+<tr>
+<td><a href="#grenade-tracer">Grenade, tracer</a></td>
+<td><a href="/skills/athletics/throw/">Athl-thr</a></td>
+<td>0</td>
+<td>Per STR</td>
+<td>d4+2w/d6+2w/d4+2m</td>
+<td>1</td>
+<td>1</td>
+<td>250</td>
+</tr>
+<tr>
+<td><a href="#plasma-gun">Plasma gun</a></td>
+<td><a href="/skills/heavy-weapons/direct-fire/">Hvy-dir</a></td>
+<td>0</td>
+<td>40/80/200</td>
+<td>d8w/d8+3w/d12+3w</td>
+<td>1</td>
+<td>10</td>
+<td>3000</td>
+</tr>
+<tr>
+<td><a href="#quantum-mini">Quantum mini</a></td>
+<td><a href="/skills/heavy-weapons/direct-fire/">Hvy-dir</a></td>
+<td>0</td>
+<td>100/250/800</td>
+<td>d8+1w/d8+3w/d6m</td>
+<td>1</td>
+<td>50</td>
+<td>15000</td>
+</tr>
+<tr class="table-separator"><td colspan="8">PL 8: Energy Age</td></tr>
+<tr>
+<td><a href="#bantam-starload">Bantam, starload</a></td>
+<td><a href="/skills/heavy-weapons/indirect-fire/">Hvy-ind</a></td>
+<td>0</td>
+<td>As launcher</td>
+<td>d8+2w/d4+1m/d6+1m</td>
+<td>1</td>
+<td>1</td>
+<td>2500</td>
+</tr>
+<tr>
+<td><a href="#cannon-maser">Cannon, maser</a></td>
+<td><a href="/skills/heavy-weapons/direct-fire/">Hvy-dir</a></td>
+<td>-1</td>
+<td>80/200/600</td>
+<td>d8w/d4+1m/d8+2m</td>
+<td>2</td>
+<td>20</td>
+<td>8000</td>
+</tr>
+<tr>
+<td><a href="#grenade-mass">Grenade, mass</a></td>
+<td><a href="/skills/athletics/throw/">Athl-thr</a></td>
+<td>0</td>
+<td>Per STR</td>
+<td>d6+2s/d6+2w/d8m</td>
+<td>1</td>
+<td>1</td>
+<td>200</td>
+</tr>
+<tr>
+<td><a href="#mass-launcher">Mass launcher</a></td>
+<td><a href="/skills/heavy-weapons/indirect-fire/">Hvy-ind</a></td>
+<td>0</td>
+<td>20/300/1000</td>
+<td>d6+1w/d6+3w/d4+1m</td>
+<td>1</td>
+<td>4</td>
+<td>3000</td>
+</tr>
+</tbody>
+</table>
+</div>
 
 ### Heavy Weapon Descriptions
 
-{{< tabs >}}
-{{< tab title="PL 4-5" >}}
 **PL 4: Industrial Age**
 *   <span id="flamethrower">**Flamethrower:**</span> Uses a tank of liquid fuel to project a stream of burning fire, capable of engulfing several targets in its path.
 *   <span id="grenade-frag">**Grenade, Fragmentation:**</span> A standard grenade designed to scatter razor-sharp fragments in all directions upon detonation.
@@ -263,8 +1127,7 @@ toc = true
 *   <span id="grenade-smoke">**Grenade, Smoke:**</span> A non-lethal grenade that releases a thick cloud of smoke to obscure vision.
 *   <span id="hvy-machine-gun">**Heavy Machine Gun:**</span> A larger, more powerful machine gun that can penetrate light armor and suppress large areas.
 *   <span id="sam-handheld">**SAM, Handheld:**</span> A man-portable surface-to-air missile launcher used to shoot down low-flying aircraft.
-{{< /tab >}}
-{{< tab title="PL 6-7" >}}
+
 **PL 6: Fusion Age**
 *   <span id="bantam-launcher">**Bantam Launcher:**</span> A high-tech rocket launcher that can fire several different types of specialized "Bantam" missiles.
 *   <span id="bantam-antiair">**Bantam, antiair:**</span> A missile designed to track and destroy fast-moving aerial targets.
@@ -282,12 +1145,9 @@ toc = true
 *   <span id="grenade-tracer">**Grenade, tracer:**</span> A specialized grenade that releases a swarm of tiny sensors to track and mark targets.
 *   <span id="plasma-gun">**Plasma Gun:**</span> A larger, more powerful version of the plasma grenade, capable of firing repeated bursts of superheated plasma.
 *   <span id="quantum-mini">**Quantum Mini:**</span> A personal version of the particle beam cannon, firing subatomic particles with devastating force.
-{{< /tab >}}
-{{< tab title="PL 8" >}}
+
 **PL 8: Energy Age**
 *   <span id="bantam-starload">**Bantam, starload:**</span> A missile that uses a miniature mass reactor to create a massive explosion, targeting both people and vehicles.
 *   <span id="cannon-maser">**Cannon, maser:**</span> A heavy energy weapon that uses a mass reactor to supply the power for destructive maser blasts.
 *   <span id="grenade-mass">**Grenade, mass:**</span> Detonates a tiny mass reactor to create a small but destructive singularity that destroys anything in its vicinity.
 *   <span id="mass-launcher">**Mass Launcher:**</span> An indirect-fire weapon that launches waves of gravity energy, using the planet's gravity well to magnify its power.
-{{< /tab >}}
-{{< /tabs >}}

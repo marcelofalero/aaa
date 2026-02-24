@@ -13,7 +13,7 @@
   --border-purple: rgba(102, 68, 170, 0.2);
   --header-gray: #374151;
   --table-stripe-1: #1e1e2e;
-  --table-stripe-2: #252539;
+  --table-stripe-2: #212132;
 }
 
 /* Global Overrides */
@@ -170,11 +170,6 @@ tbody tr:nth-child(even) {
   background-color: var(--table-stripe-2);
 }
 
-/* Removing hover highlight effect */
-tr:hover {
-  background-color: inherit;
-}
-
 /* Special styling for links in tables */
 td a {
   font-weight: 600;
@@ -293,4 +288,16 @@ hr {
 .grid-index h2 {
   margin-top: 0;
   font-size: 1.1rem;
+}
+
+/* Table Separator Row */
+tr.table-separator td {
+  background-color: var(--bg-panel-alt) !important;
+  color: var(--neon-cyan) !important;
+  font-weight: 700;
+  text-align: center;
+  border-bottom: 1px solid var(--border-purple);
+  padding: 1rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
 }
