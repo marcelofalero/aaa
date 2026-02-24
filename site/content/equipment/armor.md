@@ -7,6 +7,7 @@ toc = true
 ## Light-Duty Armor
 
 {{< sortable-table >}}
+
 | PL | Armor | Mass | AC Pen | Stun/Wound/Mortal | Cost ($) |
 | :--- | :--- | :--: | :---: | :---: | :---: |
 | 0 | Hide | 10 | 0 | 2/1/0 | 50 |
@@ -19,6 +20,7 @@ toc = true
 ## Combat Armor
 
 {{< sortable-table >}}
+
 | PL | Armor | Mass | AC Pen | Stun/Wound/Mortal | Cost ($) |
 | :--- | :--- | :--: | :---: | :---: | :---: |
 | 2 | Chain mail | 20 | +2 | 4/2/1 | 400 |
@@ -35,6 +37,7 @@ toc = true
 ## Powered Armor
 
 {{< sortable-table >}}
+
 | PL | Armor | Mass | AC Pen | Stun/Wound/Mortal | STR | Cost ($) |
 | :--- | :--- | :--: | :---: | :---: | :--: | :---: |
 | 7 | Assault suit | 75 | +2 | 20/10/5 | 18 | 75K |

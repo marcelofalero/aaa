@@ -4,13 +4,30 @@
 
 <script>
 (function() {
+  if (window.sortableTableInitialized) return;
+  window.sortableTableInitialized = true;
+
   document.addEventListener("DOMContentLoaded", function() {
     const tables = document.querySelectorAll('.table-wrapper table');
     tables.forEach(table => {
+      // Add sortable class and attribute if missing
+      table.classList.add('sortable-theme-bootstrap');
+      table.setAttribute('data-sortable', '');
+
       const headers = table.querySelectorAll('th');
       headers.forEach((header, index) => {
         header.style.cursor = 'pointer';
         header.title = 'Click to sort';
+
+        // Add sort icon placeholder
+        if (!header.querySelector('.sort-icon')) {
+            const icon = document.createElement('span');
+            icon.className = 'sort-icon';
+            icon.style.marginLeft = '5px';
+            icon.textContent = '↕';
+            header.appendChild(icon);
+        }
+
         header.addEventListener('click', () => {
           sortTable(table, index);
         });
@@ -20,20 +37,57 @@
     function sortTable(table, colIndex) {
       const tbody = table.tBodies[0];
       const rows = Array.from(tbody.rows);
-      const isNumeric = !isNaN(rows[0].cells[colIndex].textContent.trim().replace('$', '').replace('kg', ''));
       
-      const direction = table.getAttribute('data-sort-dir') === 'asc' ? -1 : 1;
+      // Determine if numeric
+      // Check first non-empty cell
+      let isNumeric = true;
+      let sampleVal = '';
+      for(let r of rows) {
+          let cell = r.cells[colIndex];
+          if(cell) {
+              let text = cell.textContent.trim().replace(/[$,]/g, '').replace('kg', '');
+              if(text !== '' && text !== '-') {
+                  sampleVal = text;
+                  break;
+              }
+          }
+      }
+      if(!sampleVal || isNaN(parseFloat(sampleVal))) {
+          isNumeric = false;
+      }
+
+      // Get current direction
+      // Default to ascending if not set or if current is desc
+      // If current is asc, switch to desc
+      const currentDir = table.getAttribute('data-sort-dir') || 'desc'; // default to desc so first click is asc? No usually asc first.
+      const newDir = currentDir === 'asc' ? 'desc' : 'asc';
+      const direction = newDir === 'asc' ? 1 : -1;
+
       const sortedRows = rows.sort((a, b) => {
-        let aText = a.cells[colIndex].textContent.trim().replace('$', '').replace('kg', '');
-        let bText = b.cells[colIndex].textContent.trim().replace('$', '').replace('kg', '');
+        let aCell = a.cells[colIndex];
+        let bCell = b.cells[colIndex];
+        let aText = aCell ? aCell.textContent.trim().replace(/[$,]/g, '').replace('kg', '') : '';
+        let bText = bCell ? bCell.textContent.trim().replace(/[$,]/g, '').replace('kg', '') : '';
         
+        if (aText === '-' || aText === '') return 1; // move empty to bottom
+        if (bText === '-' || bText === '') return -1;
+
         if (isNumeric) {
           return direction * (parseFloat(aText) - parseFloat(bText));
         }
         return direction * aText.localeCompare(bText);
       });
 
-      table.setAttribute('data-sort-dir', direction === 1 ? 'asc' : 'desc');
+      table.setAttribute('data-sort-dir', newDir);
+
+      // Update icons
+      table.querySelectorAll('th .sort-icon').forEach(icon => icon.textContent = '↕');
+      const activeHeader = table.querySelectorAll('th')[colIndex];
+      if(activeHeader) {
+          const activeIcon = activeHeader.querySelector('.sort-icon');
+          if(activeIcon) activeIcon.textContent = newDir === 'asc' ? '↑' : '↓';
+      }
+
       tbody.append(...sortedRows);
     }
   });
@@ -41,6 +95,26 @@
 </script>
 
 <style>
-.table-wrapper th:hover { background-color: #f0f0f0; }
-.table-wrapper th::after { content: ' ↕'; font-size: 0.8em; color: #999; }
+.table-wrapper {
+    overflow-x: auto;
+    margin-bottom: 1rem;
+}
+.table-wrapper table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.table-wrapper th, .table-wrapper td {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+.table-wrapper th {
+    background-color: #f4f4f4;
+}
+.table-wrapper tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+.table-wrapper th:hover {
+    background-color: #e0e0e0;
+}
 </style>

@@ -7,6 +7,7 @@ toc = true
 ## Melee Weapons
 
 {{< sortable-table >}}
+
 | PL | Weapon | Skill | Acc | Damage (O/G/A) | Actions | Mass | Avail | Cost ($) |
 | :--- | :--- | :--- | :--: | :--- | :---: | :--: | :---: | :---: |
 | 0 | [Club](#club) | [Melee-bludgeon](/skills/melee-weapons/bludgeon/) | 0 | d4+1s/d6w/d4+1w | 1 | 2 | C | 5 |
@@ -94,6 +95,7 @@ toc = true
 ## Ranged Weapons
 
 {{< sortable-table >}}
+
 | PL | Weapon | Skill | Acc | Range (S/M/L) | Damage (O/G/A) | Act. | Clip | Cost ($) |
 | :--- | :--- | :--- | :-: | :--- | :--- | :-: | :-: | :---: |
 | 0 | [Bow, short](#bow-short) | [Prim-bow](/skills/primitive-ranged-weapons/bow/) | 0 | 20/40/100 | d4w/d4+2w/d4+3w | 1 | 1 | 40 |
@@ -191,6 +193,7 @@ toc = true
 ## Heavy Weapons
 
 {{< sortable-table >}}
+
 | PL | Weapon | Skill | Acc | Range (S/M/L) | Damage (O/G/A) | Act. | Clip | Cost ($) |
 | :--- | :--- | :--- | :-: | :--- | :--- | :-: | :-: | :---: |
 | 4 | [Flamethrower](#flamethrower) | [Hvy-dir](/skills/heavy-weapons/direct-fire/) | +2 | 10/20/40 | d6w/d8w/d12w | 1 | 10 | 600 |
