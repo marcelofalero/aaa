@@ -14,13 +14,12 @@ The foundation of the Alternity system is the **Action Check** and the **Success
 
 ### Chapters
 
-1.  **[Fast-Play Rules](/rules/chapter-01):** A quick overview of the essential mechanics.
-2.  **Character Creation:** Defining your character's profession, abilities, and background.
-3.  **Characters in Action:** Detailed rules for performing tasks, combat, and damage.
-4.  **Skills:** Broad and specialty skills used for various activities.
-5.  **Perks & Flaws:** Advantages and disadvantages that define your character.
-6.  **Attributes:** Motivation, moral attitude, and character traits.
-7.  **Achievements:** How characters grow and improve through their experiences.
+1.  **[Character Creation](/rules/chapter-02):** Defining your character's profession, abilities, and background.
+2.  **[Characters in Action](/rules/chapter-03):** Detailed rules for performing tasks, combat, and damage.
+3.  **Skills:** Broad and specialty skills used for various activities.
+4.  **Perks & Flaws:** Advantages and disadvantages that define your character.
+5.  **Attributes:** Motivation, moral attitude, and character traits.
+6.  **Achievements:** How characters grow and improve through their experiences.
 
 ## How to Roll
 

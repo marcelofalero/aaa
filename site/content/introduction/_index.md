@@ -28,7 +28,6 @@ The Alternity game is a comprehensive system with a foundation of core rules tha
 
 This documentation is designed to provide all the rules needed to create characters and to roleplay those characters in any Alternity campaign.
 
-- **Fast-Play Rules:** Offers an overview of the game and teaches the basics of the system.
 - **Character Creation:** Guides you through the process of building your own science fiction character.
 - **Rules of Play:** Explains how to perform actions, handle damage, and recover from injuries.
 - **Equipment and Tech:** Details the gear, weapons, and vehicles available in various technological eras.
