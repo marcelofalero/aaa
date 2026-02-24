@@ -94,7 +94,7 @@ header.cover {
 }
 
 header.cover > div {
-  background-color: rgba(0, 0, 0, 0.7) !important;
+  background-color: rgba(55, 65, 81, 0.8) !important; /* Mid-gray background */
 }
 
 /* This targets the container with pv6 (the padding causing the massive height) */
@@ -109,8 +109,7 @@ header.cover > div {
   margin: 0 !important;
 }
 
-/* Hide description in the thin top header to save space if needed, 
-   or just make it very small */
+/* Hide description in the thin top header to save space */
 .tc-l.pv6 .fw1.f5 {
   display: none;
 }
