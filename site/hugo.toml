@@ -1,10 +1,10 @@
 baseURL = 'http://localhost:1313/'
 languageCode = 'en-us'
 title = 'AAA (Alterated Alternity Alternative)'
-theme = 'ananke'
+# theme = 'ananke' # Removed theme as we are vendoring it
 
 [params]
-  custom_css = ["css/scifi.css"]
+  # custom_css = ["css/scifi.css"] # Loaded via head-additions.html now
   body_classes = "scifi-body"
 
 [markup]

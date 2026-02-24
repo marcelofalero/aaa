@@ -1,0 +1,61 @@
+site/layouts/_default/single.html:  {{ partials.Include "page-header.html" . }}
+site/layouts/_default/single.html:      {{- partials.IncludeCached "social/share.html" . . -}}
+site/layouts/_default/single.html:      {{- partials.Include "tags.html" . -}}
+site/layouts/_default/single.html:      {{- partials.Include "menu-contextual.html" . -}}
+site/layouts/partials/page-header.html:{{ $featured_image := partials.Include "func/GetFeaturedImage.html" . }}
+site/layouts/partials/page-header.html:      {{ partials.Include "site-navigation.html" . }}
+site/layouts/partials/page-header.html:      {{ partials.Include "site-navigation.html" . }}
+site/layouts/partials/site-style.html:{{ with partials.IncludeCached "func/style/GetMainCSS.html" "style/GetMainCSS" }}
+site/layouts/partials/site-style.html:  {{ with partials.IncludeCached "func/style/GetResource.html" . . }}{{ else }}
+site/layouts/partials/site-footer.html:    <div>{{ partials.IncludeCached "social/follow.html" . }}</div>
+site/layouts/partials/summary.html:{{ partials.Include "func/warn.html" `You are currently using 'partial "summary"' in your project templates.
+site/layouts/partials/site-header.html:{{ $featured_image := partials.Include "func/GetFeaturedImage.html" . }}
+site/layouts/partials/site-header.html:      {{ partials.Include "site-navigation.html" .}}
+site/layouts/partials/site-header.html:      {{ partials.Include "site-navigation.html" . }}
+site/layouts/partials/summary-with-image.html:{{ partials.Include "func/warn.html" `You are currently using 'partial "summary-with-image"' in your project templates.
+site/layouts/partials/summary-with-image.html:{{ $featured_image := partials.Include "func/GetFeaturedImage.html" . }}
+site/layouts/partials/social/share.html:      {{- $href := partials.Include "func/social/getShareLink.html" $options -}}
+site/layouts/partials/social/follow.html:        {{- partials.Include "new-window-icon.html" . -}}
+site/layouts/partials/func/warn.html:  {{ partials.Include "func/warn.html" $message }}
+site/layouts/partials/func/style/GetMainCSS.html:  {{ with partials.IncludeCached "func/style/GetResource.html" . . }}
+site/layouts/partials/func/style/GetMainCSS.html:    {{ with partials.IncludeCached "func/style/GetResource.html" . . }}
+site/layouts/partials/func/style/GetMainCSS.html:          {{ partials.Include "func/warn.html" (fmt.Printf "Processing of stylesheet %s of type %s has been skipped. You need Hugo Extended to process such files." .Name .MediaType.SubType) }}
+site/layouts/partials/site-navigation.html:      {{ partials.Include "i18nlist.html" . }}
+site/layouts/partials/site-navigation.html:      {{ partials.IncludeCached "social/follow.html" . }}
+site/layouts/partials/new-window-icon.html:<span class="new-window">{{ partials.Include "svg/new-window.svg" (dict "size" $new_window_icon_size) }}</span>
+site/layouts/summary-with-image.html:{{ $featured_image := partials.Include "func/GetFeaturedImage.html" . }}
+site/layouts/baseof.html:    {{ partials.Include "site-style.html" . }}
+site/layouts/baseof.html:    {{ partials.Include "site-scripts.html" . }}
+site/layouts/baseof.html:      {{ partials.IncludeCached "site-favicon.html" . }}
+site/layouts/baseof.html:	{{ block "head" . }}{{ partials.Include "head-additions.html" . }}{{ end }}
+site/layouts/baseof.html:    {{ block "header" . }}{{ partials.Include "site-header.html" .}}{{ end }}
+site/layouts/baseof.html:    {{ block "footer" . }}{{ partials.IncludeCached "site-footer.html" . }}{{ end }}
+site/layouts/404.html:{{ define "header" }}{{ partials.Include "page-header.html" . }}{{ end }}
+site/layouts/single.html:  {{ partials.Include "page-header.html" . }}
+site/layouts/single.html:      {{- partials.IncludeCached "social/share.html" . . -}}
+site/layouts/single.html:      {{- partials.Include "tags.html" . -}}
+site/layouts/single.html:        {{ partials.Include "disqus.html" . }}
+site/layouts/single.html:        {{- partials.Include "commento.html" . -}}
+site/layouts/single.html:      {{- partials.Include "menu-contextual.html" . -}}
+site/layouts/page/single.html:{{ define "header" }}{{ partials.Include "page-header.html" . }}{{ end }}
+site/layouts/_partials/page-header.html:{{ $featured_image := partials.Include "func/GetFeaturedImage.html" . }}
+site/layouts/_partials/page-header.html:      {{ partials.Include "site-navigation.html" . }}
+site/layouts/_partials/page-header.html:      {{ partials.Include "site-navigation.html" . }}
+site/layouts/_partials/site-style.html:{{ with partials.IncludeCached "func/style/GetMainCSS.html" "style/GetMainCSS" }}
+site/layouts/_partials/site-style.html:  {{ with partials.IncludeCached "func/style/GetResource.html" . . }}{{ else }}
+site/layouts/_partials/site-footer.html:    <div>{{ partials.IncludeCached "social/follow.html" . }}</div>
+site/layouts/_partials/summary.html:{{ partials.Include "func/warn.html" `You are currently using 'partial "summary"' in your project templates.
+site/layouts/_partials/site-header.html:{{ $featured_image := partials.Include "func/GetFeaturedImage.html" . }}
+site/layouts/_partials/site-header.html:      {{ partials.Include "site-navigation.html" .}}
+site/layouts/_partials/site-header.html:      {{ partials.Include "site-navigation.html" . }}
+site/layouts/_partials/summary-with-image.html:{{ partials.Include "func/warn.html" `You are currently using 'partial "summary-with-image"' in your project templates.
+site/layouts/_partials/summary-with-image.html:{{ $featured_image := partials.Include "func/GetFeaturedImage.html" . }}
+site/layouts/_partials/social/share.html:      {{- $href := partials.Include "func/social/getShareLink.html" $options -}}
+site/layouts/_partials/social/follow.html:        {{- partials.Include "new-window-icon.html" . -}}
+site/layouts/_partials/func/warn.html:  {{ partials.Include "func/warn.html" $message }}
+site/layouts/_partials/func/style/GetMainCSS.html:  {{ with partials.IncludeCached "func/style/GetResource.html" . . }}
+site/layouts/_partials/func/style/GetMainCSS.html:    {{ with partials.IncludeCached "func/style/GetResource.html" . . }}
+site/layouts/_partials/func/style/GetMainCSS.html:          {{ partials.Include "func/warn.html" (fmt.Printf "Processing of stylesheet %s of type %s has been skipped. You need Hugo Extended to process such files." .Name .MediaType.SubType) }}
+site/layouts/_partials/site-navigation.html:      {{ partials.Include "i18nlist.html" . }}
+site/layouts/_partials/site-navigation.html:      {{ partials.IncludeCached "social/follow.html" . }}
+site/layouts/_partials/new-window-icon.html:<span class="new-window">{{ partials.Include "svg/new-window.svg" (dict "size" $new_window_icon_size) }}</span>

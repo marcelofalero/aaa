@@ -3,3 +3,6 @@ resources/_gen/
 .hugo_build.lock
 hugo_server.log
 hugo_startup.log
+site/layouts/partials/
+site/static/
+site/assets/
