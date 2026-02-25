@@ -301,3 +301,15 @@ tr.table-separator td {
   letter-spacing: 0.05em;
   text-transform: uppercase;
 }
+
+/* Responsive Table Wrapper */
+.table-wrapper {
+  overflow-x: auto;
+  width: 100%;
+  margin: 2.5rem 0;
+  -webkit-overflow-scrolling: touch;
+}
+
+.table-wrapper table {
+  margin: 0;
+}
