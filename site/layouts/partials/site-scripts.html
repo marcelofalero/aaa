@@ -1,0 +1,35 @@
+<script>
+  (function() {
+    try {
+      // Use Hugo template variables to get current page info
+      const currentPage = {
+        title: "{{ if .IsHome }}Index{{ else }}{{ .Title }}{{ end }}",
+        url: "{{ .RelPermalink }}"
+      };
+
+      let history = [];
+      try {
+        history = JSON.parse(sessionStorage.getItem('pageHistory')) || [];
+      } catch (e) {
+        console.error("Error parsing history from sessionStorage", e);
+        history = [];
+      }
+
+      // Remove any existing entry for the current page to avoid duplicates
+      history = history.filter(page => page.url !== currentPage.url);
+
+      // Add current page to the end
+      history.push(currentPage);
+
+      // Limit history length to avoid excessive storage usage
+      // 20 seems reasonable for a browsing session
+      if (history.length > 20) {
+        history.shift();
+      }
+
+      sessionStorage.setItem('pageHistory', JSON.stringify(history));
+    } catch (e) {
+      console.error("History tracking error:", e);
+    }
+  })();
+</script>

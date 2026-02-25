@@ -1,0 +1,58 @@
+<nav class="breadcrumbs" aria-label="breadcrumb">
+  <ul id="history-breadcrumbs-list" class="list pl0 mb3 f6">
+    <!-- JS will populate this -->
+  </ul>
+</nav>
+
+<style>
+.breadcrumbs {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+</style>
+
+<script>
+  (function() {
+    const list = document.getElementById('history-breadcrumbs-list');
+    if (!list) return;
+
+    try {
+      const history = JSON.parse(sessionStorage.getItem('pageHistory')) || [];
+      const currentUrl = "{{ .RelPermalink }}";
+
+      const fragment = document.createDocumentFragment();
+
+      history.forEach((page, index) => {
+        if (index > 0) {
+          // Add separator
+          const sep = document.createElement('li');
+          sep.className = "dib mr2";
+          sep.innerHTML = '<span class="gray">/</span>';
+          fragment.appendChild(sep);
+        }
+
+        const li = document.createElement('li');
+        li.className = "dib mr2";
+
+        // If it's the current page (and the last item in history), style it differently
+        // Note: The tracking script runs in <head>, so current page IS in history.
+        if (page.url === currentUrl && index === history.length - 1) {
+           li.className += " gray";
+           li.textContent = page.title;
+        } else {
+           const a = document.createElement('a');
+           a.href = page.url;
+           a.className = "link blue hover-dark-blue";
+           a.textContent = page.title;
+           li.appendChild(a);
+        }
+        fragment.appendChild(li);
+      });
+
+      list.appendChild(fragment);
+    } catch (e) {
+      console.error("Breadcrumb rendering error:", e);
+    }
+  })();
+</script>

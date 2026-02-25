@@ -1,0 +1,119 @@
+{
+  "light": {
+    "columns": [
+      { "name": "Armor", "key": "name" },
+      { "name": "Mass", "key": "mass" },
+      { "name": "AC Pen", "key": "ac_pen" },
+      { "name": "Stun/Wound/Mortal", "key": "swm" },
+      { "name": "Cost ($)", "key": "cost" }
+    ],
+    "groups": [
+      {
+        "name": "PL 0",
+        "items": [
+          { "name": "Hide", "mass": "10", "ac_pen": "0", "swm": "2/1/0", "cost": "50" }
+        ]
+      },
+      {
+        "name": "PL 1",
+        "items": [
+          { "name": "Leather", "mass": "8", "ac_pen": "0", "swm": "3/1/0", "cost": "100" }
+        ]
+      },
+      {
+        "name": "PL 2",
+        "items": [
+          { "name": "Quilted", "mass": "12", "ac_pen": "+1", "swm": "4/2/0", "cost": "150" }
+        ]
+      },
+      {
+        "name": "PL 5",
+        "items": [
+          { "name": "Light-duty vest", "mass": "4", "ac_pen": "0", "swm": "5/2/1", "cost": "200" }
+        ]
+      },
+      {
+        "name": "PL 6",
+        "items": [
+          { "name": "CF short coat", "mass": "3", "ac_pen": "0", "swm": "6/3/1", "cost": "400" }
+        ]
+      }
+    ]
+  },
+  "combat": {
+    "columns": [
+      { "name": "Armor", "key": "name" },
+      { "name": "Mass", "key": "mass" },
+      { "name": "AC Pen", "key": "ac_pen" },
+      { "name": "Stun/Wound/Mortal", "key": "swm" },
+      { "name": "Cost ($)", "key": "cost" }
+    ],
+    "groups": [
+      {
+        "name": "PL 2",
+        "items": [
+          { "name": "Chain mail", "mass": "20", "ac_pen": "+2", "swm": "4/2/1", "cost": "400" },
+          { "name": "Scale mail", "mass": "25", "ac_pen": "+3", "swm": "5/3/1", "cost": "600" }
+        ]
+      },
+      {
+        "name": "PL 3",
+        "items": [
+          { "name": "Plate mail", "mass": "30", "ac_pen": "+4", "swm": "6/4/2", "cost": "1500" }
+        ]
+      },
+      {
+        "name": "PL 5",
+        "items": [
+          { "name": "Battle vest", "mass": "8", "ac_pen": "+1", "swm": "8/4/2", "cost": "500" },
+          { "name": "Battle jacket", "mass": "12", "ac_pen": "+2", "swm": "10/5/2", "cost": "700" }
+        ]
+      },
+      {
+        "name": "PL 6",
+        "items": [
+          { "name": "CF long coat", "mass": "6", "ac_pen": "+1", "swm": "12/6/3", "cost": "900" },
+          { "name": "Attack armor", "mass": "15", "ac_pen": "+2", "swm": "14/7/3", "cost": "1200" }
+        ]
+      },
+      {
+        "name": "PL 7",
+        "items": [
+          { "name": "Cerametal armor", "mass": "20", "ac_pen": "+3", "swm": "16/8/4", "cost": "2500" }
+        ]
+      },
+      {
+        "name": "PL 8",
+        "items": [
+          { "name": "Body tank", "mass": "25", "ac_pen": "+4", "swm": "20/10/5", "cost": "5000" }
+        ]
+      }
+    ]
+  },
+  "powered": {
+    "columns": [
+      { "name": "Armor", "key": "name" },
+      { "name": "Mass", "key": "mass" },
+      { "name": "AC Pen", "key": "ac_pen" },
+      { "name": "Stun/Wound/Mortal", "key": "swm" },
+      { "name": "STR", "key": "str" },
+      { "name": "Cost ($)", "key": "cost" }
+    ],
+    "groups": [
+      {
+        "name": "PL 7",
+        "items": [
+          { "name": "Assault suit", "mass": "75", "ac_pen": "+2", "swm": "20/10/5", "str": "18", "cost": "75K" },
+          { "name": "Battle suit", "mass": "100", "ac_pen": "+3", "swm": "24/12/6", "str": "20", "cost": "100K" }
+        ]
+      },
+      {
+        "name": "PL 8",
+        "items": [
+          { "name": "Commando suit", "mass": "60", "ac_pen": "+1", "swm": "24/12/6", "str": "20", "cost": "150K" },
+          { "name": "Mauler suit", "mass": "120", "ac_pen": "+4", "swm": "30/15/7", "str": "24", "cost": "200K" }
+        ]
+      }
+    ]
+  }
+}

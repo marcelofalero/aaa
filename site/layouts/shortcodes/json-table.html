@@ -1,0 +1,9 @@
+{{ $file := .Get 0 }}
+{{ $key := .Get 1 }}
+
+{{ $data := index .Site.Data $file }}
+{{ if $key }}
+  {{ $data = index $data $key }}
+{{ end }}
+
+{{ partial "render-table.html" $data }}
