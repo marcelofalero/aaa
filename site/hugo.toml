@@ -6,6 +6,9 @@ title = 'AAA'
   custom_css = ["css/scifi.css"]
   body_classes = "scifi-body"
 
+  [params.ananke.social]
+    networks = []
+
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
