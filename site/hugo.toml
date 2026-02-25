@@ -1,7 +1,6 @@
 baseURL = 'http://localhost:1313/'
 languageCode = 'en-us'
-title = 'AAA (Alterated Alternity Alternative)'
-theme = 'ananke'
+title = 'AAA'
 
 [params]
   custom_css = ["css/scifi.css"]
