@@ -1,26 +1,66 @@
 <nav class="pv3 ph3 ph4-ns" role="navigation">
   <div class="flex-l center items-center justify-between">
-    <a href="{{ .Site.Home.RelPermalink }}" class="f3 fw2 hover-white white-90 dib no-underline">
-      {{ with .Site.Params.site_logo }}
-        <img src="{{ urls.RelURL . }}" class="w100 mw5-ns" alt="{{ $.Site.Title }}" />
-      {{ else }}
-        {{ .Site.Title }}
-      {{ end }}
-    </a>
-    <div class="flex-l items-center">
-      {{ partials.Include "i18nlist.html" . }}
-      {{ if .Site.Menus.main }}
-        <ul class="{{ compare.Conditional (compare.Eq $.Site.Language.LanguageDirection "rtl") "pr0 ml3" "pl0 mr3" }}">
-          {{ range .Site.Menus.main }}
-          <li class="list f5 f4-ns fw4 dib {{ compare.Conditional (compare.Eq $.Site.Language.LanguageDirection "rtl") "pl3" "pr3" }}">
-            <a class="hover-white white-90 no-underline" href="{{ .URL }}" title="{{ lang.Translate "pageTitle" . }}">
-              {{ .Name }}
-            </a>
-          </li>
-          {{ end }}
-        </ul>
-      {{ end }}
-      {{ partials.IncludeCached "social/follow.html" . }}
+    <div class="flex items-center">
+      <button id="sidebar-toggle" class="mr3 pointer bg-transparent bn white f3" aria-label="Toggle Sidebar">
+        ☰
+      </button>
+      <a href="{{ .Site.Home.RelPermalink }}" class="f3 fw2 hover-white white-90 dib no-underline">
+        {{ with .Site.Params.site_logo }}
+          <img src="{{ urls.RelURL . }}" class="w100 mw5-ns" alt="{{ $.Site.Title }}" />
+        {{ else }}
+          Index
+        {{ end }}
+      </a>
     </div>
+
+    <div id="sidebar-menu" class="fixed top-0 left-0 h-100 w-60 w-30-l bg-near-black shadow-2 transform-off" style="z-index: 1000; transition: transform 0.3s ease-in-out; transform: translateX(-100%);">
+       <div class="pa3 tr">
+         <button id="sidebar-close" class="pointer bg-transparent bn white f3" aria-label="Close Sidebar">&times;</button>
+       </div>
+       <div class="pa3">
+         {{ partial "i18nlist.html" . }}
+         {{ if .Site.Menus.main }}
+           <ul class="list pl0 mt3">
+             {{ range .Site.Menus.main }}
+             <li class="mb3 f4 fw4">
+               <a class="hover-white white-90 no-underline" href="{{ .URL }}" title="{{ lang.Translate "pageTitle" . }}">
+                 {{ .Name }}
+               </a>
+             </li>
+             {{ end }}
+           </ul>
+         {{ end }}
+         <div class="mt4">
+           {{ partialCached "social/follow.html" . }}
+         </div>
+       </div>
+    </div>
+
+    <!-- Overlay -->
+    <div id="sidebar-overlay" class="fixed top-0 left-0 w-100 h-100 bg-black-50 dn" style="z-index: 900;"></div>
+
   </div>
 </nav>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const toggle = document.getElementById('sidebar-toggle');
+    const close = document.getElementById('sidebar-close');
+    const menu = document.getElementById('sidebar-menu');
+    const overlay = document.getElementById('sidebar-overlay');
+
+    function openMenu() {
+      menu.style.transform = 'translateX(0)';
+      overlay.classList.remove('dn');
+    }
+
+    function closeMenu() {
+      menu.style.transform = 'translateX(-100%)';
+      overlay.classList.add('dn');
+    }
+
+    if (toggle) toggle.addEventListener('click', openMenu);
+    if (close) close.addEventListener('click', closeMenu);
+    if (overlay) overlay.addEventListener('click', closeMenu);
+  });
+</script>

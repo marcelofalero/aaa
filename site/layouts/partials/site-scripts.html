@@ -3,7 +3,7 @@
     try {
       // Use Hugo template variables to get current page info
       const currentPage = {
-        title: "{{ .Title }}",
+        title: "{{ if .IsHome }}Index{{ else }}{{ .Title }}{{ end }}",
         url: "{{ .RelPermalink }}"
       };
 
@@ -15,19 +15,19 @@
         history = [];
       }
 
-      // Add current page if it's different from the last one in history
-      // This prevents duplicates when refreshing the page
-      if (history.length === 0 || history[history.length - 1].url !== currentPage.url) {
-        history.push(currentPage);
+      // Remove any existing entry for the current page to avoid duplicates
+      history = history.filter(page => page.url !== currentPage.url);
 
-        // Limit history length to avoid excessive storage usage
-        // 20 seems reasonable for a browsing session
-        if (history.length > 20) {
-          history.shift();
-        }
+      // Add current page to the end
+      history.push(currentPage);
 
-        sessionStorage.setItem('pageHistory', JSON.stringify(history));
+      // Limit history length to avoid excessive storage usage
+      // 20 seems reasonable for a browsing session
+      if (history.length > 20) {
+        history.shift();
       }
+
+      sessionStorage.setItem('pageHistory', JSON.stringify(history));
     } catch (e) {
       console.error("History tracking error:", e);
     }
