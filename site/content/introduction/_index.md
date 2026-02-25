@@ -24,6 +24,19 @@ Roleplaying games aren't about winning and losing. The goal is to create a **gro
 
 The Alternity game is a comprehensive system with a foundation of core rules that can be used in a variety of settings, each referred to as an **alternate tomorrow**. A campaign might revolve around modern-day high-tech espionage or be set 500 years in the future, where characters explore the galaxy in vessels capable of crossing vast distances in short spans of time.
 
+### Progress Levels (PL)
+
+The state of technology in a society is defined by its Progress Level.
+- **PL 0 (Stone Age):** Fire, domestication, stone tools.
+- **PL 1 (Bronze/Iron Age):** Metalworking, durable tools and weapons.
+- **PL 2 (Middle Ages):** Architecture, metallurgy, sea travel.
+- **PL 3 (Age of Reason):** Scientific method, experimentation.
+- **PL 4 (Industrial Age):** Steam/electric power, global communication.
+- **PL 5 (Information Age):** Computers, fission power, the first Grid.
+- **PL 6 (Fusion Age):** Fusion power, space colonization, virtual reality.
+- **PL 7 (Gravity Age):** Mass reactors, star system colonization.
+- **PL 8 (Energy Age):** Miniaturized stardrives, force screens, energy weapons.
+
 ## How to Use This Site
 
 This documentation is designed to provide all the rules needed to create characters and to roleplay those characters in any Alternity campaign.
