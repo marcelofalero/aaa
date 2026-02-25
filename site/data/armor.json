@@ -1,117 +1,294 @@
 {
   "light": {
     "columns": [
-      { "name": "Armor", "key": "name" },
-      { "name": "Mass", "key": "mass" },
-      { "name": "AC Pen", "key": "ac_pen" },
-      { "name": "Stun/Wound/Mortal", "key": "swm" },
-      { "name": "Cost ($)", "key": "cost" }
+      {
+        "name": "Armor",
+        "key": "name"
+      },
+      {
+        "name": "Mass",
+        "key": "mass"
+      },
+      {
+        "name": "AC Pen",
+        "key": "ac_pen"
+      },
+      {
+        "name": "Stun/Wound/Mortal",
+        "key": "swm"
+      },
+      {
+        "name": "Cost ($)",
+        "key": "cost"
+      }
     ],
     "groups": [
       {
         "name": "PL 0",
         "items": [
-          { "name": "Hide", "mass": "10", "ac_pen": "0", "swm": "2/1/0", "cost": "50" }
+          {
+            "name": "Hide",
+            "mass": "10",
+            "ac_pen": "0",
+            "swm": "2/1/0",
+            "cost": "50",
+            "description": "This armor utilizes the furs and skins of animals, which are stitched or fastened together to roughly fit the body of the individual wearing it. The protection it provides is minimal, and its use during the era is uncommon. This category also includes weaves of thick vegetation made into protective garments."
+          }
         ]
       },
       {
         "name": "PL 1",
         "items": [
-          { "name": "Leather", "mass": "8", "ac_pen": "0", "swm": "3/1/0", "cost": "100" }
+          {
+            "name": "Leather",
+            "mass": "8",
+            "ac_pen": "0",
+            "swm": "3/1/0",
+            "cost": "100",
+            "description": "This protection is easy to craft and maintain, and does a decent job of protecting the wearer from the weapons of the day."
+          }
         ]
       },
       {
         "name": "PL 2",
         "items": [
-          { "name": "Quilted", "mass": "12", "ac_pen": "+1", "swm": "4/2/0", "cost": "150" }
+          {
+            "name": "Quilted",
+            "mass": "12",
+            "ac_pen": "+1",
+            "swm": "4/2/0",
+            "cost": "150"
+          }
         ]
       },
       {
         "name": "PL 5",
         "items": [
-          { "name": "Light-duty vest", "mass": "4", "ac_pen": "0", "swm": "5/2/1", "cost": "200" }
+          {
+            "name": "Light-duty vest",
+            "mass": "4",
+            "ac_pen": "0",
+            "swm": "5/2/1",
+            "cost": "200",
+            "description": "A lightweight, flexible vest designed to be worn under clothing, providing basic protection against handgun fire and knives."
+          }
         ]
       },
       {
         "name": "PL 6",
         "items": [
-          { "name": "CF short coat", "mass": "3", "ac_pen": "0", "swm": "6/3/1", "cost": "400" }
+          {
+            "name": "CF short coat",
+            "mass": "3",
+            "ac_pen": "0",
+            "swm": "6/3/1",
+            "cost": "400",
+            "description": "A stylish, lightweight coat made from carbonate fiber (CF) weave, which is much stronger than leather and provides excellent protection against many types of damage."
+          }
         ]
       }
     ]
   },
   "combat": {
     "columns": [
-      { "name": "Armor", "key": "name" },
-      { "name": "Mass", "key": "mass" },
-      { "name": "AC Pen", "key": "ac_pen" },
-      { "name": "Stun/Wound/Mortal", "key": "swm" },
-      { "name": "Cost ($)", "key": "cost" }
+      {
+        "name": "Armor",
+        "key": "name"
+      },
+      {
+        "name": "Mass",
+        "key": "mass"
+      },
+      {
+        "name": "AC Pen",
+        "key": "ac_pen"
+      },
+      {
+        "name": "Stun/Wound/Mortal",
+        "key": "swm"
+      },
+      {
+        "name": "Cost ($)",
+        "key": "cost"
+      }
     ],
     "groups": [
       {
         "name": "PL 2",
         "items": [
-          { "name": "Chain mail", "mass": "20", "ac_pen": "+2", "swm": "4/2/1", "cost": "400" },
-          { "name": "Scale mail", "mass": "25", "ac_pen": "+3", "swm": "5/3/1", "cost": "600" }
+          {
+            "name": "Chain mail",
+            "mass": "20",
+            "ac_pen": "+2",
+            "swm": "4/2/1",
+            "cost": "400",
+            "description": "Various types of laminated, scale, brigandine, splint, and banded armor fall under the broad category of chain mail. Formed by linking or sewing metal rings to a plain leather backing, chain mail provides excellent protection against slashing (low impact) attacks."
+          },
+          {
+            "name": "Scale mail",
+            "mass": "25",
+            "ac_pen": "+3",
+            "swm": "5/3/1",
+            "cost": "600",
+            "description": "A suit of armor consisting of many small, overlapping metal plates (scales) sewn to a backing of leather or cloth. It is more flexible than plate armor but provides less protection."
+          }
         ]
       },
       {
         "name": "PL 3",
         "items": [
-          { "name": "Plate mail", "mass": "30", "ac_pen": "+4", "swm": "6/4/2", "cost": "1500" }
+          {
+            "name": "Plate mail",
+            "mass": "30",
+            "ac_pen": "+4",
+            "swm": "6/4/2",
+            "cost": "1500",
+            "description": "Made from shaped and fitted metal plates riveted and interlocked in such a way as to cover the entire body. It includes a helmet, gauntlets, and boots."
+          }
         ]
       },
       {
         "name": "PL 5",
         "items": [
-          { "name": "Battle vest", "mass": "8", "ac_pen": "+1", "swm": "8/4/2", "cost": "500" },
-          { "name": "Battle jacket", "mass": "12", "ac_pen": "+2", "swm": "10/5/2", "cost": "700" }
+          {
+            "name": "Battle vest",
+            "mass": "8",
+            "ac_pen": "+1",
+            "swm": "8/4/2",
+            "cost": "500",
+            "description": "This category includes all the varieties of bulletproof vests that come into use during the latter half of the 20th century. A normal battle vest can be worn under very bulky clothing, but generally it's meant to be pulled over anything else a person might happen to be wearing."
+          },
+          {
+            "name": "Battle jacket",
+            "mass": "12",
+            "ac_pen": "+2",
+            "swm": "10/5/2",
+            "cost": "700",
+            "description": "A heavier version of the battle vest that covers the entire torso and arms, providing superior protection but being much more bulky."
+          }
         ]
       },
       {
         "name": "PL 6",
         "items": [
-          { "name": "CF long coat", "mass": "6", "ac_pen": "+1", "swm": "12/6/3", "cost": "900" },
-          { "name": "Attack armor", "mass": "15", "ac_pen": "+2", "swm": "14/7/3", "cost": "1200" }
+          {
+            "name": "CF long coat",
+            "mass": "6",
+            "ac_pen": "+1",
+            "swm": "12/6/3",
+            "cost": "900",
+            "description": "A longer version of the CF coat that provides more coverage and protection."
+          },
+          {
+            "name": "Attack armor",
+            "mass": "15",
+            "ac_pen": "+2",
+            "swm": "14/7/3",
+            "cost": "1200",
+            "description": "The earliest true attack armor are improved versions of typical assault gear, incorporating a rigid carbonate fiber breastplate for maximum protection."
+          }
         ]
       },
       {
         "name": "PL 7",
         "items": [
-          { "name": "Cerametal armor", "mass": "20", "ac_pen": "+3", "swm": "16/8/4", "cost": "2500" }
+          {
+            "name": "Cerametal armor",
+            "mass": "20",
+            "ac_pen": "+3",
+            "swm": "16/8/4",
+            "cost": "2500",
+            "description": "A suit of advanced armor made from a combination of ceramic and metallic alloys, which is incredibly strong and resistant to most forms of damage."
+          }
         ]
       },
       {
         "name": "PL 8",
         "items": [
-          { "name": "Body tank", "mass": "25", "ac_pen": "+4", "swm": "20/10/5", "cost": "5000" }
+          {
+            "name": "Body tank",
+            "mass": "25",
+            "ac_pen": "+4",
+            "swm": "20/10/5",
+            "cost": "5000",
+            "description": "A self-contained suit of powered armor that acts as a walking tank, equipped with on-board sensors, computers, and weapon systems."
+          }
         ]
       }
     ]
   },
   "powered": {
     "columns": [
-      { "name": "Armor", "key": "name" },
-      { "name": "Mass", "key": "mass" },
-      { "name": "AC Pen", "key": "ac_pen" },
-      { "name": "Stun/Wound/Mortal", "key": "swm" },
-      { "name": "STR", "key": "str" },
-      { "name": "Cost ($)", "key": "cost" }
+      {
+        "name": "Armor",
+        "key": "name"
+      },
+      {
+        "name": "Mass",
+        "key": "mass"
+      },
+      {
+        "name": "AC Pen",
+        "key": "ac_pen"
+      },
+      {
+        "name": "Stun/Wound/Mortal",
+        "key": "swm"
+      },
+      {
+        "name": "STR",
+        "key": "str"
+      },
+      {
+        "name": "Cost ($)",
+        "key": "cost"
+      }
     ],
     "groups": [
       {
         "name": "PL 7",
         "items": [
-          { "name": "Assault suit", "mass": "75", "ac_pen": "+2", "swm": "20/10/5", "str": "18", "cost": "75K" },
-          { "name": "Battle suit", "mass": "100", "ac_pen": "+3", "swm": "24/12/6", "str": "20", "cost": "100K" }
+          {
+            "name": "Assault suit",
+            "mass": "75",
+            "ac_pen": "+2",
+            "swm": "20/10/5",
+            "str": "18",
+            "cost": "75K",
+            "description": "A heavy, powered exoskeleton that provides the wearer with incredible strength and protection, as well as several integrated weapons and sensors."
+          },
+          {
+            "name": "Battle suit",
+            "mass": "100",
+            "ac_pen": "+3",
+            "swm": "24/12/6",
+            "str": "20",
+            "cost": "100K",
+            "description": "A larger, more powerful version of the assault suit, designed for the heaviest combat missions and capable of withstanding massive punishment."
+          }
         ]
       },
       {
         "name": "PL 8",
         "items": [
-          { "name": "Commando suit", "mass": "60", "ac_pen": "+1", "swm": "24/12/6", "str": "20", "cost": "150K" },
-          { "name": "Mauler suit", "mass": "120", "ac_pen": "+4", "swm": "30/15/7", "str": "24", "cost": "200K" }
+          {
+            "name": "Commando suit",
+            "mass": "60",
+            "ac_pen": "+1",
+            "swm": "24/12/6",
+            "str": "20",
+            "cost": "150K",
+            "description": "A lighter, more agile version of powered armor designed for stealth and infiltration missions."
+          },
+          {
+            "name": "Mauler suit",
+            "mass": "120",
+            "ac_pen": "+4",
+            "swm": "30/15/7",
+            "str": "24",
+            "cost": "200K",
+            "description": "The heaviest and most powerful form of powered armor, capable of crushing almost any obstacle in its path."
+          }
         ]
       }
     ]

@@ -1,245 +1,1426 @@
 {
   "melee": {
     "columns": [
-      { "name": "Weapon", "key": "name", "link": true },
-      { "name": "Skill", "key": "skill" },
-      { "name": "Acc", "key": "acc" },
-      { "name": "Damage (O/G/A)", "key": "damage" },
-      { "name": "Actions", "key": "actions" },
-      { "name": "Mass", "key": "mass" },
-      { "name": "Avail", "key": "avail" },
-      { "name": "Cost ($)", "key": "cost" }
+      {
+        "name": "Weapon",
+        "key": "name",
+        "link": true
+      },
+      {
+        "name": "Skill",
+        "key": "skill"
+      },
+      {
+        "name": "Acc",
+        "key": "acc"
+      },
+      {
+        "name": "Damage (O/G/A)",
+        "key": "damage"
+      },
+      {
+        "name": "Actions",
+        "key": "actions"
+      },
+      {
+        "name": "Mass",
+        "key": "mass"
+      },
+      {
+        "name": "Avail",
+        "key": "avail"
+      },
+      {
+        "name": "Cost ($)",
+        "key": "cost"
+      }
     ],
     "groups": [
       {
         "name": "PL 0: Stone Age",
         "items": [
-          { "name": "Club", "skill": "Melee-bludgeon", "skill_url": "/skills/melee-weapons/bludgeon/", "acc": "0", "damage": "d4+1s/d6w/d4+1w", "actions": "1", "mass": "2", "avail": "C", "cost": "5", "anchor": "club" },
-          { "name": "Dagger", "skill": "Melee-blade", "skill_url": "/skills/melee-weapons/blade/", "acc": "0", "damage": "d6w/d4+1w/d4+2w", "actions": "1", "mass": "1", "avail": "C", "cost": "10", "anchor": "dagger" },
-          { "name": "Quarterstaff", "skill": "Melee-bludgeon", "skill_url": "/skills/melee-weapons/bludgeon/", "acc": "-1", "damage": "d4+1s/d4+3s/d6w", "actions": "1", "mass": "2", "avail": "C", "cost": "10", "anchor": "quarterstaff" },
-          { "name": "Spear", "skill": "Melee-blade", "skill_url": "/skills/melee-weapons/blade/", "acc": "0", "damage": "d4w/d4+2w/d4m", "actions": "1", "mass": "3", "avail": "C", "cost": "15", "anchor": "spear" },
-          { "name": "Unarmed", "skill": "Unarmed Attack", "skill_url": "/skills/unarmed-attack/", "acc": "0", "damage": "d4s/d4+1s/d6+2s", "actions": "1", "mass": "-", "avail": "C", "cost": "-", "anchor": "" }
+          {
+            "name": "Club",
+            "skill": "Melee-bludgeon",
+            "skill_url": "/skills/melee-weapons/bludgeon/",
+            "acc": "0",
+            "damage": "d4+1s/d6w/d4+1w",
+            "actions": "1",
+            "mass": "2",
+            "avail": "C",
+            "cost": "5",
+            "anchor": "club",
+            "description": "This category includes all types of simple, one-piece bludgeons\u2014humanity\u2019s oldest weapon. Clubs range from natural sticks and bones to carved stone or wood to modern nightsticks and truncheons of hard wood, plastic, or even metal. The combat statistics for a club also apply to any heavy, club-like object a character picks up to use in a fight, such as a table leg or a lead pipe."
+          },
+          {
+            "name": "Dagger",
+            "skill": "Melee-blade",
+            "skill_url": "/skills/melee-weapons/blade/",
+            "acc": "0",
+            "damage": "d6w/d4+1w/d4+2w",
+            "actions": "1",
+            "mass": "1",
+            "avail": "C",
+            "cost": "10",
+            "anchor": "dagger",
+            "description": "All knives, stilettos, and other such weapons are included in this category (except for the combat knife, which has its own entry)."
+          },
+          {
+            "name": "Quarterstaff",
+            "skill": "Melee-bludgeon",
+            "skill_url": "/skills/melee-weapons/bludgeon/",
+            "acc": "-1",
+            "damage": "d4+1s/d4+3s/d6w",
+            "actions": "1",
+            "mass": "2",
+            "avail": "C",
+            "cost": "10",
+            "anchor": "quarterstaff",
+            "description": "While this stout rod of wood\u2014or metal or plastic at high Progress Levels\u2014isn't particularly deadly, it's easy to use (note its accuracy bonus)."
+          },
+          {
+            "name": "Spear",
+            "skill": "Melee-blade",
+            "skill_url": "/skills/melee-weapons/blade/",
+            "acc": "0",
+            "damage": "d4w/d4+2w/d4m",
+            "actions": "1",
+            "mass": "3",
+            "avail": "C",
+            "cost": "15",
+            "anchor": "spear",
+            "description": "A primitive spear consists of a wooden shaft with a sharpened stone or bone head. At higher Progress Levels, spears have metal or synthetic heads."
+          },
+          {
+            "name": "Unarmed",
+            "skill": "Unarmed Attack",
+            "skill_url": "/skills/unarmed-attack/",
+            "acc": "0",
+            "damage": "d4s/d4+1s/d6+2s",
+            "actions": "1",
+            "mass": "-",
+            "avail": "C",
+            "cost": "-",
+            "anchor": ""
+          }
         ]
       },
       {
         "name": "PL 1: Bronze/Iron Age",
         "items": [
-          { "name": "Gauntlet", "skill": "Unarmed Attack", "skill_url": "/skills/unarmed-attack/", "acc": "0", "damage": "d4+1s/d4+2s/d4+1w", "actions": "1", "mass": "1", "avail": "C", "cost": "25", "anchor": "gauntlet" },
-          { "name": "Hand ax", "skill": "Melee-blade", "skill_url": "/skills/melee-weapons/blade/", "acc": "0", "damage": "d4+1w/d4+2w/d4+3w", "actions": "1", "mass": "2", "avail": "C", "cost": "20", "anchor": "hand-ax" },
-          { "name": "Mace", "skill": "Melee-bludgeon", "skill_url": "/skills/melee-weapons/bludgeon/", "acc": "0", "damage": "d6+1s/d4+1w/d8+1w", "actions": "1", "mass": "4", "avail": "C", "cost": "30", "anchor": "mace" },
-          { "name": "Short sword", "skill": "Melee-blade", "skill_url": "/skills/melee-weapons/blade/", "acc": "0", "damage": "d6w/d8w/d6+2w", "actions": "1", "mass": "2", "avail": "C", "cost": "50", "anchor": "short-sword" }
+          {
+            "name": "Gauntlet",
+            "skill": "Unarmed Attack",
+            "skill_url": "/skills/unarmed-attack/",
+            "acc": "0",
+            "damage": "d4+1s/d4+2s/d4+1w",
+            "actions": "1",
+            "mass": "1",
+            "avail": "C",
+            "cost": "25",
+            "anchor": "gauntlet",
+            "description": "This weapon is a metal sheath that fits over the outside of the hand, providing slightly better damage potential in a fistfight than one\u2019s bare knuckles."
+          },
+          {
+            "name": "Hand ax",
+            "skill": "Melee-blade",
+            "skill_url": "/skills/melee-weapons/blade/",
+            "acc": "0",
+            "damage": "d4+1w/d4+2w/d4+3w",
+            "actions": "1",
+            "mass": "2",
+            "avail": "C",
+            "cost": "20",
+            "anchor": "hand-ax",
+            "description": "A tool that became a weapon, the hand ax consists of a short wooden handle with a heavy, single-edged cutting head. Primitive axes can be made from carved stone, but the majority of axes at higher Progress Levels have metal heads."
+          },
+          {
+            "name": "Mace",
+            "skill": "Melee-bludgeon",
+            "skill_url": "/skills/melee-weapons/bludgeon/",
+            "acc": "0",
+            "damage": "d6+1s/d4+1w/d8+1w",
+            "actions": "1",
+            "mass": "4",
+            "avail": "C",
+            "cost": "30",
+            "anchor": "mace",
+            "description": "A mace is a club with a blunt stone or iron head fitted to one end. Some of the heads may be studded, flanged, or spiked."
+          },
+          {
+            "name": "Short sword",
+            "skill": "Melee-blade",
+            "skill_url": "/skills/melee-weapons/blade/",
+            "acc": "0",
+            "damage": "d6w/d8w/d6+2w",
+            "actions": "1",
+            "mass": "2",
+            "avail": "C",
+            "cost": "50",
+            "anchor": "short-sword",
+            "description": "The short sword consists of a handle designed for one-handed use and a blade that's longer than a dagger's\u2014any blade just over 0.5 meters in length. The blade is pointed and used for thrusting."
+          }
         ]
       },
       {
         "name": "PL 2: Middle Ages",
         "items": [
-          { "name": "Broad sword", "skill": "Melee-blade", "skill_url": "/skills/melee-weapons/blade/", "acc": "0", "damage": "d4+2w/d6+2w/d4m", "actions": "1", "mass": "3", "avail": "C", "cost": "100", "anchor": "broad-sword" },
-          { "name": "Flail", "skill": "Melee-bludgeon", "skill_url": "/skills/melee-weapons/bludgeon/", "acc": "+1", "damage": "d6+2s/d4+2w/d8+2w", "actions": "1", "mass": "4", "avail": "U", "cost": "75", "anchor": "flail" },
-          { "name": "Great ax", "skill": "Melee-blade", "skill_url": "/skills/melee-weapons/blade/", "acc": "+1", "damage": "d6+1w/d8+2w/d4+1m", "actions": "2", "mass": "8", "avail": "U", "cost": "150", "anchor": "great-ax" },
-          { "name": "Nunchaku", "skill": "Melee-bludgeon", "skill_url": "/skills/melee-weapons/bludgeon/", "acc": "-1", "damage": "d6s/d6+2s/d8+3s", "actions": "1", "mass": "1", "avail": "U", "cost": "40", "anchor": "nunchaku" },
-          { "name": "Polearm", "skill": "Melee-blade", "skill_url": "/skills/melee-weapons/blade/", "acc": "+1", "damage": "d6+1w/d4+3w/d4+1m", "actions": "2", "mass": "6", "avail": "C", "cost": "60", "anchor": "polearm" }
+          {
+            "name": "Broad sword",
+            "skill": "Melee-blade",
+            "skill_url": "/skills/melee-weapons/blade/",
+            "acc": "0",
+            "damage": "d4+2w/d6+2w/d4m",
+            "actions": "1",
+            "mass": "3",
+            "avail": "C",
+            "cost": "100",
+            "anchor": "broad-sword",
+            "description": "The heavy, double-edged broad sword features a meter-long blade designed for both cutting and slashing."
+          },
+          {
+            "name": "Flail",
+            "skill": "Melee-bludgeon",
+            "skill_url": "/skills/melee-weapons/bludgeon/",
+            "acc": "+1",
+            "damage": "d6+2s/d4+2w/d8+2w",
+            "actions": "1",
+            "mass": "4",
+            "avail": "U",
+            "cost": "75",
+            "anchor": "flail",
+            "description": "The common threshing flail, modified for war, is a potent weapon. It consists of a sturdy wooden handle attached by a chain to an iron rod, a spiked rod, or a spiked iron ball."
+          },
+          {
+            "name": "Great ax",
+            "skill": "Melee-blade",
+            "skill_url": "/skills/melee-weapons/blade/",
+            "acc": "+1",
+            "damage": "d6+1w/d8+2w/d4+1m",
+            "actions": "2",
+            "mass": "8",
+            "avail": "U",
+            "cost": "150",
+            "anchor": "great-ax",
+            "description": "This weapon consists of a stout wooden shaft, 2 meters long, with a curved, single-edged blade at one end; it does impressive damage but takes two hands to wield."
+          },
+          {
+            "name": "Nunchaku",
+            "skill": "Melee-bludgeon",
+            "skill_url": "/skills/melee-weapons/bludgeon/",
+            "acc": "-1",
+            "damage": "d6s/d6+2s/d8+3s",
+            "actions": "1",
+            "mass": "1",
+            "avail": "U",
+            "cost": "40",
+            "anchor": "nunchaku",
+            "description": "A nunchaku consists of two wooden or metal bars joined by a chain or a hinge. It can deliver powerful blows, and provides a +1 bonus to parry checks."
+          },
+          {
+            "name": "Polearm",
+            "skill": "Melee-blade",
+            "skill_url": "/skills/melee-weapons/blade/",
+            "acc": "+1",
+            "damage": "d6+1w/d4+3w/d4+1m",
+            "actions": "2",
+            "mass": "6",
+            "avail": "C",
+            "cost": "60",
+            "anchor": "polearm",
+            "description": "Polearms are a class of weapons consisting of a long shaft with an edged weapon mounted at one end. These weapons require two hands to use."
+          }
         ]
       },
       {
         "name": "PL 3: Age of Reason",
         "items": [
-          { "name": "Cutlass", "skill": "Melee-blade", "skill_url": "/skills/melee-weapons/blade/", "acc": "0", "damage": "d4+1w/d8+1w/d8+3w", "actions": "1", "mass": "2", "avail": "C", "cost": "80", "anchor": "cutlass" },
-          { "name": "Katana", "skill": "Melee-blade", "skill_url": "/skills/melee-weapons/blade/", "acc": "-1", "damage": "d4+2w/d6+2w/d4+1m", "actions": "1", "mass": "2", "avail": "R", "cost": "500", "anchor": "katana" },
-          { "name": "Rapier", "skill": "Melee-blade", "skill_url": "/skills/melee-weapons/blade/", "acc": "-1", "damage": "d4w/d4+1w/d4+2w", "actions": "1", "mass": "1", "avail": "U", "cost": "100", "anchor": "rapier" },
-          { "name": "Saber", "skill": "Melee-blade", "skill_url": "/skills/melee-weapons/blade/", "acc": "0", "damage": "d4w/d4+2w/2d4+1w", "actions": "1", "mass": "2", "avail": "U", "cost": "120", "anchor": "saber" }
+          {
+            "name": "Cutlass",
+            "skill": "Melee-blade",
+            "skill_url": "/skills/melee-weapons/blade/",
+            "acc": "0",
+            "damage": "d4+1w/d8+1w/d8+3w",
+            "actions": "1",
+            "mass": "2",
+            "avail": "C",
+            "cost": "80",
+            "anchor": "cutlass",
+            "description": "The weapon made famous by pirates, the cutlass features a curved, single-edged blade and a heavy basket hilt."
+          },
+          {
+            "name": "Katana",
+            "skill": "Melee-blade",
+            "skill_url": "/skills/melee-weapons/blade/",
+            "acc": "-1",
+            "damage": "d4+2w/d6+2w/d4+1m",
+            "actions": "1",
+            "mass": "2",
+            "avail": "R",
+            "cost": "500",
+            "anchor": "katana",
+            "description": "This is the sword of the samurai. It features a slightly curved blade with a chisel point and a small, circular guard. The katana is forged from the finest steel, and its careful construction yields a blade of great strength and flexibility."
+          },
+          {
+            "name": "Rapier",
+            "skill": "Melee-blade",
+            "skill_url": "/skills/melee-weapons/blade/",
+            "acc": "-1",
+            "damage": "d4w/d4+1w/d4+2w",
+            "actions": "1",
+            "mass": "1",
+            "avail": "U",
+            "cost": "100",
+            "anchor": "rapier",
+            "description": "Along, slender blade designed for thrusting, used primarily in duels and fencing."
+          },
+          {
+            "name": "Saber",
+            "skill": "Melee-blade",
+            "skill_url": "/skills/melee-weapons/blade/",
+            "acc": "0",
+            "damage": "d4w/d4+2w/2d4+1w",
+            "actions": "1",
+            "mass": "2",
+            "avail": "U",
+            "cost": "120",
+            "anchor": "saber",
+            "description": "The favorite cavalry weapon, the saber has a slightly curved blade that gives maximum slashing power."
+          }
         ]
       },
       {
         "name": "PL 4: Industrial Age",
         "items": [
-          { "name": "Bayonet", "skill": "Melee-blade", "skill_url": "/skills/melee-weapons/blade/", "acc": "+1", "damage": "d4w/d4+2w/d6m", "actions": "1", "mass": "1", "avail": "C", "cost": "25", "anchor": "bayonet" }
+          {
+            "name": "Bayonet",
+            "skill": "Melee-blade",
+            "skill_url": "/skills/melee-weapons/blade/",
+            "acc": "+1",
+            "damage": "d4w/d4+2w/d6m",
+            "actions": "1",
+            "mass": "1",
+            "avail": "C",
+            "cost": "25",
+            "anchor": "bayonet",
+            "description": "Originally a dagger designed to be attached to a rifle\u2019s muzzle, the bayonet occasionally becomes a primary weapon in its own right. In effect, a bayonet turns a rifle into a spear."
+          }
         ]
       },
       {
         "name": "PL 5: Information Age",
         "items": [
-          { "name": "Combat knife", "skill": "Melee-blade", "skill_url": "/skills/melee-weapons/blade/", "acc": "0", "damage": "d4+1w/d4+2w/d4+3w", "actions": "1", "mass": "1", "avail": "C", "cost": "50", "anchor": "combat-knife" },
-          { "name": "Stun baton", "skill": "Melee-powered", "skill_url": "/skills/melee-weapons/powered-weapon/", "acc": "0", "damage": "d4+1s/d4+3s/d6+4s", "actions": "1", "mass": "1", "avail": "U", "cost": "200", "anchor": "stun-baton" }
+          {
+            "name": "Combat knife",
+            "skill": "Melee-blade",
+            "skill_url": "/skills/melee-weapons/blade/",
+            "acc": "0",
+            "damage": "d4+1w/d4+2w/d4+3w",
+            "actions": "1",
+            "mass": "1",
+            "avail": "C",
+            "cost": "50",
+            "anchor": "combat-knife",
+            "description": "This weapon is a high-tech version of the standard knife, typically composed of tempered steel, sophisticated polymers, or ceramics."
+          },
+          {
+            "name": "Stun baton",
+            "skill": "Melee-powered",
+            "skill_url": "/skills/melee-weapons/powered-weapon/",
+            "acc": "0",
+            "damage": "d4+1s/d4+3s/d6+4s",
+            "actions": "1",
+            "mass": "1",
+            "avail": "U",
+            "cost": "200",
+            "anchor": "stun-baton",
+            "description": "This low-powered version of the pulse baton is sometimes known as a taser. Its surface crackles with a high-voltage, low-current electrical charge that can temporarily short-circuit the human nervous system. Insulated gloves are necessary to prevent the user from accidentally shocking himself."
+          }
         ]
       },
       {
         "name": "PL 6: Fusion Age",
         "items": [
-          { "name": "Chainsword", "skill": "Melee-powered", "skill_url": "/skills/melee-weapons/powered-weapon/", "acc": "+1", "damage": "d8+1w/d8+2w/d4+1m", "actions": "1", "mass": "5", "avail": "R", "cost": "1500", "anchor": "chainsword" },
-          { "name": "Pulse baton", "skill": "Melee-powered", "skill_url": "/skills/melee-weapons/powered-weapon/", "acc": "0", "damage": "d8s/d4+2w/d6+2w", "actions": "1", "mass": "2", "avail": "U", "cost": "400", "anchor": "pulse-baton" }
+          {
+            "name": "Chainsword",
+            "skill": "Melee-powered",
+            "skill_url": "/skills/melee-weapons/powered-weapon/",
+            "acc": "+1",
+            "damage": "d8+1w/d8+2w/d4+1m",
+            "actions": "1",
+            "mass": "5",
+            "avail": "R",
+            "cost": "1500",
+            "anchor": "chainsword",
+            "description": "This device consists of a meter-long blade with a motorized, rotating chain of razor-sharp teeth."
+          },
+          {
+            "name": "Pulse baton",
+            "skill": "Melee-powered",
+            "skill_url": "/skills/melee-weapons/powered-weapon/",
+            "acc": "0",
+            "damage": "d8s/d4+2w/d6+2w",
+            "actions": "1",
+            "mass": "2",
+            "avail": "U",
+            "cost": "400",
+            "anchor": "pulse-baton",
+            "description": "An improved version of the stun baton, the pulse baton delivers a massive electrical discharge upon impact."
+          }
         ]
       },
       {
         "name": "PL 7: Gravity Age",
         "items": [
-          { "name": "Gravmace", "skill": "Melee-powered", "skill_url": "/skills/melee-weapons/powered-weapon/", "acc": "+1", "damage": "d6+2s/d6+2w/d8+2w", "actions": "1", "mass": "4", "avail": "R", "cost": "2000", "anchor": "gravmace" },
-          { "name": "Power Cestus", "skill": "Unarmed-brawl", "skill_url": "/skills/unarmed-attack/brawl/", "acc": "-1", "damage": "d4+2s/d4w/d4+1w", "actions": "1", "mass": "3", "avail": "R", "cost": "1800", "anchor": "power-cestus" }
+          {
+            "name": "Gravmace",
+            "skill": "Melee-powered",
+            "skill_url": "/skills/melee-weapons/powered-weapon/",
+            "acc": "+1",
+            "damage": "d6+2s/d6+2w/d8+2w",
+            "actions": "1",
+            "mass": "4",
+            "avail": "R",
+            "cost": "2000",
+            "anchor": "gravmace",
+            "description": "The gravmace consists of a meter-long handle with a gravitationally active striking head. Powerful capacitors manipulate the weapon\u2019s mass, making it lighter when being swung and much heavier upon impact."
+          },
+          {
+            "name": "Power Cestus",
+            "skill": "Unarmed-brawl",
+            "skill_url": "/skills/unarmed-attack/brawl/",
+            "acc": "-1",
+            "damage": "d4+2s/d4w/d4+1w",
+            "actions": "1",
+            "mass": "3",
+            "avail": "R",
+            "cost": "1800",
+            "anchor": "power-cestus",
+            "description": "This weapon consists of a heavy fighting glove reinforced with carbonate fiber and powered by a small energy cell, allowing the wielder to deliver blows of astonishing power."
+          }
         ]
       },
       {
         "name": "PL 8: Energy Age",
         "items": [
-          { "name": "Star sword", "skill": "Melee-powered", "skill_url": "/skills/melee-weapons/powered-weapon/", "acc": "-2", "damage": "d8+1w/2d6w/d4+3m", "actions": "1", "mass": "3", "avail": "R", "cost": "7500", "anchor": "star-sword" },
-          { "name": "Tri-staff", "skill": "Melee-powered", "skill_url": "/skills/melee-weapons/powered-weapon/", "acc": "-1", "damage": "d8+2w/3d4+1w/d8m", "actions": "1", "mass": "4", "avail": "R", "cost": "4000", "anchor": "tri-staff" }
+          {
+            "name": "Star sword",
+            "skill": "Melee-powered",
+            "skill_url": "/skills/melee-weapons/powered-weapon/",
+            "acc": "-2",
+            "damage": "d8+1w/2d6w/d4+3m",
+            "actions": "1",
+            "mass": "3",
+            "avail": "R",
+            "cost": "7500",
+            "anchor": "star-sword",
+            "description": "This weapon generates a containment field in the shape of a blade, and then fills the interior of this field with white-hot plasma. On contact, the containment field releases a stream of plasma that can burn or cut through almost anything. A star sword is difficult to use and often damages an untrained wielder."
+          },
+          {
+            "name": "Tri-staff",
+            "skill": "Melee-powered",
+            "skill_url": "/skills/melee-weapons/powered-weapon/",
+            "acc": "-1",
+            "damage": "d8+2w/3d4+1w/d8m",
+            "actions": "1",
+            "mass": "4",
+            "avail": "R",
+            "cost": "4000",
+            "anchor": "tri-staff",
+            "description": "This 2-meter-long staff is topped by a three-pronged blade. When the staff is activated, an internal power source suffuses it with a soft glow. This aura acts as a defensive force field that improves the Strength and Dexterity resistance modifiers of its wielder by 1 step."
+          }
         ]
       }
     ]
   },
   "ranged": {
     "columns": [
-      { "name": "Weapon", "key": "name", "link": true },
-      { "name": "Skill", "key": "skill" },
-      { "name": "Acc", "key": "acc" },
-      { "name": "Range (S/M/L)", "key": "range" },
-      { "name": "Damage (O/G/A)", "key": "damage" },
-      { "name": "Act.", "key": "act" },
-      { "name": "Clip", "key": "clip" },
-      { "name": "Cost ($)", "key": "cost" }
+      {
+        "name": "Weapon",
+        "key": "name",
+        "link": true
+      },
+      {
+        "name": "Skill",
+        "key": "skill"
+      },
+      {
+        "name": "Acc",
+        "key": "acc"
+      },
+      {
+        "name": "Range (S/M/L)",
+        "key": "range"
+      },
+      {
+        "name": "Damage (O/G/A)",
+        "key": "damage"
+      },
+      {
+        "name": "Act.",
+        "key": "act"
+      },
+      {
+        "name": "Clip",
+        "key": "clip"
+      },
+      {
+        "name": "Cost ($)",
+        "key": "cost"
+      }
     ],
     "groups": [
       {
         "name": "PL 0: Stone Age",
         "items": [
-          { "name": "Bow, short", "skill": "Prim-bow", "skill_url": "/skills/primitive-ranged-weapons/bow/", "acc": "0", "range": "20/40/100", "damage": "d4w/d4+2w/d4+3w", "act": "1", "clip": "1", "cost": "40", "anchor": "bow-short" },
-          { "name": "Sling", "skill": "Prim-sling", "skill_url": "/skills/primitive-ranged-weapons/sling/", "acc": "+2", "range": "10/20/60", "damage": "d4s/d4+1s/d4+2s", "act": "1", "clip": "1", "cost": "10", "anchor": "sling" }
+          {
+            "name": "Bow, short",
+            "skill": "Prim-bow",
+            "skill_url": "/skills/primitive-ranged-weapons/bow/",
+            "acc": "0",
+            "range": "20/40/100",
+            "damage": "d4w/d4+2w/d4+3w",
+            "act": "1",
+            "clip": "1",
+            "cost": "40",
+            "anchor": "bow-short",
+            "description": "This is a simple bow made from a single piece of wood. It is the earliest and most widespread form of archery."
+          },
+          {
+            "name": "Sling",
+            "skill": "Prim-sling",
+            "skill_url": "/skills/primitive-ranged-weapons/sling/",
+            "acc": "+2",
+            "range": "10/20/60",
+            "damage": "d4s/d4+1s/d4+2s",
+            "act": "1",
+            "clip": "1",
+            "cost": "10",
+            "anchor": "sling",
+            "description": "A simple strap of leather used to hurl stones or lead bullets with surprising force."
+          }
         ]
       },
       {
         "name": "PL 1: Bronze/Iron Age",
         "items": [
-          { "name": "Javelin", "skill": "Athl-throw", "skill_url": "/skills/athletics/throw/", "acc": "0", "range": "Per STR", "damage": "d4+1w/d6+1w/d4m", "act": "1", "clip": "1", "cost": "20", "anchor": "javelin" }
+          {
+            "name": "Javelin",
+            "skill": "Athl-throw",
+            "skill_url": "/skills/athletics/throw/",
+            "acc": "0",
+            "range": "Per STR",
+            "damage": "d4+1w/d6+1w/d4m",
+            "act": "1",
+            "clip": "1",
+            "cost": "20",
+            "anchor": "javelin",
+            "description": "A light throwing spear, sometimes fashioned from metal or weighted for stability. Its balance and mass make it an ideal throwing weapon."
+          }
         ]
       },
       {
         "name": "PL 2: Middle Ages",
         "items": [
-          { "name": "Bow, long", "skill": "Prim-bow", "skill_url": "/skills/primitive-ranged-weapons/bow/", "acc": "-1", "range": "40/80/200", "damage": "d4+2w/d6+2w/d4+1m", "act": "1", "clip": "1", "cost": "75", "anchor": "bow-long" },
-          { "name": "Crossbow", "skill": "Prim-bow", "skill_url": "/skills/primitive-ranged-weapons/bow/", "acc": "0", "range": "50/100/250", "damage": "d6s/d4w/d4+1w", "act": "2", "clip": "1", "cost": "150", "anchor": "crossbow" },
-          { "name": "Shuriken", "skill": "Athl-throw", "skill_url": "/skills/athletics/throw/", "acc": "-1", "range": "Per STR", "damage": "d4s/d4+1s/d6+1s", "act": "1", "clip": "1", "cost": "10", "anchor": "shuriken" }
+          {
+            "name": "Bow, long",
+            "skill": "Prim-bow",
+            "skill_url": "/skills/primitive-ranged-weapons/bow/",
+            "acc": "-1",
+            "range": "40/80/200",
+            "damage": "d4+2w/d6+2w/d4+1m",
+            "act": "1",
+            "clip": "1",
+            "cost": "75",
+            "anchor": "bow-long",
+            "description": "A larger, more powerful version of the short bow, used primarily for its range and accuracy."
+          },
+          {
+            "name": "Crossbow",
+            "skill": "Prim-bow",
+            "skill_url": "/skills/primitive-ranged-weapons/bow/",
+            "acc": "0",
+            "range": "50/100/250",
+            "damage": "d6s/d4w/d4+1w",
+            "act": "2",
+            "clip": "1",
+            "cost": "150",
+            "anchor": "crossbow",
+            "description": "A bow mounted crosswise on a wooden or metal stock, fired much like a gun. It's slower but has superior range and striking power."
+          },
+          {
+            "name": "Shuriken",
+            "skill": "Athl-throw",
+            "skill_url": "/skills/athletics/throw/",
+            "acc": "-1",
+            "range": "Per STR",
+            "damage": "d4s/d4+1s/d6+1s",
+            "act": "1",
+            "clip": "1",
+            "cost": "10",
+            "anchor": "shuriken",
+            "description": "Small, flat throwing stars made of metal, easily concealed and designed to inflict wounds or distract enemies."
+          }
         ]
       },
       {
         "name": "PL 3: Age of Reason",
         "items": [
-          { "name": "Musket, flintlock", "skill": "Prim-flint", "skill_url": "/skills/primitive-ranged-weapons/flintlock/", "acc": "+2", "range": "20/40/100", "damage": "d4+2w/d6+2w/d8m", "act": "3", "clip": "1", "cost": "200", "anchor": "musket-flintlock" },
-          { "name": "Pistol, flintlock", "skill": "Prim-flint", "skill_url": "/skills/primitive-ranged-weapons/flintlock/", "acc": "+2", "range": "4/8/16", "damage": "d4s/d6w/d8+2w", "act": "3", "clip": "1", "cost": "150", "anchor": "pistol-flintlock" },
-          { "name": "Rifle, long", "skill": "Prim-flint", "skill_url": "/skills/primitive-ranged-weapons/flintlock/", "acc": "0", "range": "30/60/150", "damage": "d6w/d6+2w/d4+1m", "act": "3", "clip": "1", "cost": "300", "anchor": "rifle-long" }
+          {
+            "name": "Musket, flintlock",
+            "skill": "Prim-flint",
+            "skill_url": "/skills/primitive-ranged-weapons/flintlock/",
+            "acc": "+2",
+            "range": "20/40/100",
+            "damage": "d4+2w/d6+2w/d8m",
+            "act": "3",
+            "clip": "1",
+            "cost": "200",
+            "anchor": "musket-flintlock",
+            "description": "The earliest form of common black powder firearm, inaccurate and slow-loading, but powerful at close range."
+          },
+          {
+            "name": "Pistol, flintlock",
+            "skill": "Prim-flint",
+            "skill_url": "/skills/primitive-ranged-weapons/flintlock/",
+            "acc": "+2",
+            "range": "4/8/16",
+            "damage": "d4s/d6w/d8+2w",
+            "act": "3",
+            "clip": "1",
+            "cost": "150",
+            "anchor": "pistol-flintlock",
+            "description": "A small handgun that uses a flintlock mechanism, popular for self-defense and dueling."
+          },
+          {
+            "name": "Rifle, long",
+            "skill": "Prim-flint",
+            "skill_url": "/skills/primitive-ranged-weapons/flintlock/",
+            "acc": "0",
+            "range": "30/60/150",
+            "damage": "d6w/d6+2w/d4+1m",
+            "act": "3",
+            "clip": "1",
+            "cost": "300",
+            "anchor": "rifle-long",
+            "description": "Also known as the Kentucky rifle, this flintlock weapon features rifled barrels for significantly improved accuracy over a smoothbore musket."
+          }
         ]
       },
       {
         "name": "PL 4: Industrial Age",
         "items": [
-          { "name": "Derringer", "skill": "Mod-pistol", "skill_url": "/skills/modern-ranged-weapons/pistol/", "acc": "+2", "range": "5/10/30", "damage": "d4w/d6w/d4m", "act": "2", "clip": "2", "cost": "100", "anchor": "derringer" },
-          { "name": "Pistol, .38 rev", "skill": "Mod-pistol", "skill_url": "/skills/modern-ranged-weapons/pistol/", "acc": "0", "range": "10/20/80", "damage": "d4+1w/d4+2w/d6m", "act": "1", "clip": "6", "cost": "200", "anchor": "pistol-38-rev" },
-          { "name": "Pistol, .44 magnum", "skill": "Mod-pistol", "skill_url": "/skills/modern-ranged-weapons/pistol/", "acc": "+1", "range": "30/60/200", "damage": "d4+2w/d6+2w/d4+1m", "act": "1", "clip": "6", "cost": "400", "anchor": "pistol-44-magnum" },
-          { "name": "Rifle, 7.62mm", "skill": "Mod-rifle", "skill_url": "/skills/modern-ranged-weapons/rifle/", "acc": "-1", "range": "80/160/400", "damage": "d6w/d8+1w/d6+1m", "act": "1", "clip": "10", "cost": "500", "anchor": "rifle-7-62mm" },
-          { "name": "Rifle, assault", "skill": "Mod-rifle", "skill_url": "/skills/modern-ranged-weapons/rifle/", "acc": "-1", "range": "50/100/300", "damage": "d4w/d6w/d4m", "act": "1", "clip": "30", "cost": "700", "anchor": "rifle-assault" },
-          { "name": "SMG, 9mm", "skill": "Mod-SMG", "skill_url": "/skills/modern-ranged-weapons/smg/", "acc": "+1", "range": "30/60/150", "damage": "d4+1w/d4+2w/d6m", "act": "1", "clip": "30", "cost": "600", "anchor": "smg-9mm" }
+          {
+            "name": "Derringer",
+            "skill": "Mod-pistol",
+            "skill_url": "/skills/modern-ranged-weapons/pistol/",
+            "acc": "+2",
+            "range": "5/10/30",
+            "damage": "d4w/d6w/d4m",
+            "act": "2",
+            "clip": "2",
+            "cost": "100",
+            "anchor": "derringer",
+            "description": "A very small, easily concealed pistol, typically having two barrels and used as a backup weapon."
+          },
+          {
+            "name": "Pistol, .38 rev",
+            "skill": "Mod-pistol",
+            "skill_url": "/skills/modern-ranged-weapons/pistol/",
+            "acc": "0",
+            "range": "10/20/80",
+            "damage": "d4+1w/d4+2w/d6m",
+            "act": "1",
+            "clip": "6",
+            "cost": "200",
+            "anchor": "pistol-38-rev",
+            "description": "A standard, reliable handgun that uses a rotating cylinder to hold multiple rounds."
+          },
+          {
+            "name": "Pistol, .44 magnum",
+            "skill": "Mod-pistol",
+            "skill_url": "/skills/modern-ranged-weapons/pistol/",
+            "acc": "+1",
+            "range": "30/60/200",
+            "damage": "d4+2w/d6+2w/d4+1m",
+            "act": "1",
+            "clip": "6",
+            "cost": "400",
+            "anchor": "pistol-44-magnum",
+            "description": "A powerful handgun known for its high stopping power and heavy recoil."
+          },
+          {
+            "name": "Rifle, 7.62mm",
+            "skill": "Mod-rifle",
+            "skill_url": "/skills/modern-ranged-weapons/rifle/",
+            "acc": "-1",
+            "range": "80/160/400",
+            "damage": "d6w/d8+1w/d6+1m",
+            "act": "1",
+            "clip": "10",
+            "cost": "500",
+            "anchor": "rifle-7-62mm",
+            "description": "A standard bolt-action battle rifle, accurate and reliable over long distances."
+          },
+          {
+            "name": "Rifle, assault",
+            "skill": "Mod-rifle",
+            "skill_url": "/skills/modern-ranged-weapons/rifle/",
+            "acc": "-1",
+            "range": "50/100/300",
+            "damage": "d4w/d6w/d4m",
+            "act": "1",
+            "clip": "30",
+            "cost": "700",
+            "anchor": "rifle-assault",
+            "description": "The first firearm capable of both burst fire and full-automatic fire, becoming the standard military weapon of its era."
+          },
+          {
+            "name": "SMG, 9mm",
+            "skill": "Mod-SMG",
+            "skill_url": "/skills/modern-ranged-weapons/smg/",
+            "acc": "+1",
+            "range": "30/60/150",
+            "damage": "d4+1w/d4+2w/d6m",
+            "act": "1",
+            "clip": "30",
+            "cost": "600",
+            "anchor": "smg-9mm",
+            "description": "A small but deadly automatic weapon with a high rate of fire, ideal for close-quarters combat."
+          }
         ]
       },
       {
         "name": "PL 6: Fusion Age",
         "items": [
-          { "name": "Pistol, 9mm ch", "skill": "Mod-pistol", "skill_url": "/skills/modern-ranged-weapons/pistol/", "acc": "0", "range": "20/40/100", "damage": "d4+1w/d6+1w/d4m", "act": "1", "clip": "15", "cost": "400", "anchor": "pistol-9mm-charge" },
-          { "name": "Pistol, 9mm zero-g", "skill": "Mod-pistol", "skill_url": "/skills/modern-ranged-weapons/pistol/", "acc": "0", "range": "20/40/100", "damage": "d4+1w/d6+1w/d4m", "act": "1", "clip": "15", "cost": "600", "anchor": "pistol-9mm-zero-g" },
-          { "name": "Pistol, 11mm ch", "skill": "Mod-pistol", "skill_url": "/skills/modern-ranged-weapons/pistol/", "acc": "+1", "range": "40/80/240", "damage": "d4+2w/d6+2w/d4+1m", "act": "1", "clip": "10", "cost": "500", "anchor": "pistol-11mm-charge" },
-          { "name": "Rifle, 11mm ch", "skill": "Mod-rifle", "skill_url": "/skills/modern-ranged-weapons/rifle/", "acc": "0", "range": "100/400/1000", "damage": "d6+1w/d6+3w/d6+1m", "act": "1", "clip": "30", "cost": "900", "anchor": "rifle-11mm-charge" },
-          { "name": "Rifle, 11mm zero-g", "skill": "Mod-rifle", "skill_url": "/skills/modern-ranged-weapons/rifle/", "acc": "0", "range": "100/400/1000", "damage": "d6+1w/d6+3w/d6+1m", "act": "1", "clip": "15", "cost": "1100", "anchor": "rifle-11mm-zero-g" },
-          { "name": "Shotgun, autoflec", "skill": "Mod-rifle", "skill_url": "/skills/modern-ranged-weapons/rifle/", "acc": "+2", "range": "4/12/30", "damage": "d6w/d6+2w/d8m", "act": "1", "clip": "15", "cost": "800", "anchor": "shotgun-autoflec" },
-          { "name": "SMG, 9mm ch", "skill": "Mod-SMG", "skill_url": "/skills/modern-ranged-weapons/smg/", "acc": "+1", "range": "50/100/250", "damage": "d4+1w/d6+1w/d4m", "act": "1", "clip": "30", "cost": "750", "anchor": "smg-9mm-charge" }
+          {
+            "name": "Pistol, 9mm ch",
+            "skill": "Mod-pistol",
+            "skill_url": "/skills/modern-ranged-weapons/pistol/",
+            "acc": "0",
+            "range": "20/40/100",
+            "damage": "d4+1w/d6+1w/d4m",
+            "act": "1",
+            "clip": "15",
+            "cost": "400",
+            "anchor": "pistol-9mm-charge",
+            "description": "An electrochemical weapon that uses an electrical shock to ignite its propellant, resulting in much higher muzzle velocities than conventional firearms."
+          },
+          {
+            "name": "Pistol, 9mm zero-g",
+            "skill": "Mod-pistol",
+            "skill_url": "/skills/modern-ranged-weapons/pistol/",
+            "acc": "0",
+            "range": "20/40/100",
+            "damage": "d4+1w/d6+1w/d4m",
+            "act": "1",
+            "clip": "15",
+            "cost": "600",
+            "anchor": "pistol-9mm-zero-g",
+            "description": "A charge pistol with a sophisticated anti-recoil system, allowing it to be used in weightless conditions without affecting the wielder's movement."
+          },
+          {
+            "name": "Pistol, 11mm ch",
+            "skill": "Mod-pistol",
+            "skill_url": "/skills/modern-ranged-weapons/pistol/",
+            "acc": "+1",
+            "range": "40/80/240",
+            "damage": "d4+2w/d6+2w/d4+1m",
+            "act": "1",
+            "clip": "10",
+            "cost": "500",
+            "anchor": "pistol-11mm-charge"
+          },
+          {
+            "name": "Rifle, 11mm ch",
+            "skill": "Mod-rifle",
+            "skill_url": "/skills/modern-ranged-weapons/rifle/",
+            "acc": "0",
+            "range": "100/400/1000",
+            "damage": "d6+1w/d6+3w/d6+1m",
+            "act": "1",
+            "clip": "30",
+            "cost": "900",
+            "anchor": "rifle-11mm-charge",
+            "description": "A heavier version of the charge rifle, firing larger rounds with greater range and damage."
+          },
+          {
+            "name": "Rifle, 11mm zero-g",
+            "skill": "Mod-rifle",
+            "skill_url": "/skills/modern-ranged-weapons/rifle/",
+            "acc": "0",
+            "range": "100/400/1000",
+            "damage": "d6+1w/d6+3w/d6+1m",
+            "act": "1",
+            "clip": "15",
+            "cost": "1100",
+            "anchor": "rifle-11mm-zero-g"
+          },
+          {
+            "name": "Shotgun, autoflec",
+            "skill": "Mod-rifle",
+            "skill_url": "/skills/modern-ranged-weapons/rifle/",
+            "acc": "+2",
+            "range": "4/12/30",
+            "damage": "d6w/d6+2w/d8m",
+            "act": "1",
+            "clip": "15",
+            "cost": "800",
+            "anchor": "shotgun-autoflec",
+            "description": "A high-tech shotgun that fires a cloud of tiny flechettes (needle-like projectiles) and is capable of semi-automatic fire."
+          },
+          {
+            "name": "SMG, 9mm ch",
+            "skill": "Mod-SMG",
+            "skill_url": "/skills/modern-ranged-weapons/smg/",
+            "acc": "+1",
+            "range": "50/100/250",
+            "damage": "d4+1w/d6+1w/d4m",
+            "act": "1",
+            "clip": "30",
+            "cost": "750",
+            "anchor": "smg-9mm-charge"
+          }
         ]
       },
       {
         "name": "PL 7: Gravity Age",
         "items": [
-          { "name": "Pistol, 15mm sabot", "skill": "Mod-pistol", "skill_url": "/skills/modern-ranged-weapons/pistol/", "acc": "-1", "range": "80/200/500", "damage": "2d4w/2d4+1w/d4+3m", "act": "1", "clip": "6", "cost": "900", "anchor": "pistol-15mm-sabot" },
-          { "name": "Pistol, laser", "skill": "Mod-pistol", "skill_url": "/skills/modern-ranged-weapons/pistol/", "acc": "-1", "range": "50/100/250", "damage": "d4+1w/d6+1w/d4m", "act": "1", "clip": "20", "cost": "600", "anchor": "pistol-laser" },
-          { "name": "Pistol, mass", "skill": "Mod-pistol", "skill_url": "/skills/modern-ranged-weapons/pistol/", "acc": "+1", "range": "20/80/200", "damage": "d6w/d6+2w/d8m", "act": "1", "clip": "10", "cost": "800", "anchor": "pistol-mass" },
-          { "name": "Pistol, stutter", "skill": "Mod-pistol", "skill_url": "/skills/modern-ranged-weapons/pistol/", "acc": "0", "range": "10/20/80", "damage": "d6+2s/d8+2s/d8+4s", "act": "1", "clip": "10", "cost": "400", "anchor": "pistol-stutter" },
-          { "name": "Rifle, laser", "skill": "Mod-rifle", "skill_url": "/skills/modern-ranged-weapons/rifle/", "acc": "-2", "range": "60/120/400", "damage": "d6+1w/d6+3w/d4+1m", "act": "1", "clip": "12", "cost": "1000", "anchor": "rifle-laser" },
-          { "name": "Rifle, mass", "skill": "Mod-rifle", "skill_url": "/skills/modern-ranged-weapons/rifle/", "acc": "0", "range": "20/60/120", "damage": "d8w/d8+1w/d6+1m", "act": "1", "clip": "8", "cost": "1300", "anchor": "rifle-mass" },
-          { "name": "Rifle, quantum", "skill": "Mod-rifle", "skill_url": "/skills/modern-ranged-weapons/rifle/", "acc": "-1", "range": "40/200/500", "damage": "d4+3w/d6+4w/d8+1m", "act": "1", "clip": "15", "cost": "5000", "anchor": "rifle-quantum" },
-          { "name": "Rifle, render", "skill": "Mod-rifle", "skill_url": "/skills/modern-ranged-weapons/rifle/", "acc": "0", "range": "20/40/80", "damage": "d6+1s/d6+1w/d4+1m", "act": "1", "clip": "8", "cost": "1500", "anchor": "rifle-render" },
-          { "name": "SMG, laser", "skill": "Mod-SMG", "skill_url": "/skills/modern-ranged-weapons/smg/", "acc": "-1", "range": "20/40/80", "damage": "d6w/d6+2w/d4m", "act": "1", "clip": "40", "cost": "800", "anchor": "smg-laser" },
-          { "name": "SMG, stutter", "skill": "Mod-SMG", "skill_url": "/skills/modern-ranged-weapons/smg/", "acc": "+1", "range": "10/20/60", "damage": "d6+2s/d8+2s/d8+4s", "act": "1", "clip": "20", "cost": "700", "anchor": "smg-stutter" }
+          {
+            "name": "Pistol, 15mm sabot",
+            "skill": "Mod-pistol",
+            "skill_url": "/skills/modern-ranged-weapons/pistol/",
+            "acc": "-1",
+            "range": "80/200/500",
+            "damage": "2d4w/2d4+1w/d4+3m",
+            "act": "1",
+            "clip": "6",
+            "cost": "900",
+            "anchor": "pistol-15mm-sabot",
+            "description": "Fires high-velocity, sub-caliber projectiles that can penetrate most personal armor with ease."
+          },
+          {
+            "name": "Pistol, laser",
+            "skill": "Mod-pistol",
+            "skill_url": "/skills/modern-ranged-weapons/pistol/",
+            "acc": "-1",
+            "range": "50/100/250",
+            "damage": "d4+1w/d6+1w/d4m",
+            "act": "1",
+            "clip": "20",
+            "cost": "600",
+            "anchor": "pistol-laser",
+            "description": "Uses an electrical charge to fire a focused, white-hot beam of light that can burn through many materials."
+          },
+          {
+            "name": "Pistol, mass",
+            "skill": "Mod-pistol",
+            "skill_url": "/skills/modern-ranged-weapons/pistol/",
+            "acc": "+1",
+            "range": "20/80/200",
+            "damage": "d6w/d6+2w/d8m",
+            "act": "1",
+            "clip": "10",
+            "cost": "800",
+            "anchor": "pistol-mass",
+            "description": "Utilizes gravity induction technology to fire a short-lived artificial mass singularity, causing horrible tidal damage to its target."
+          },
+          {
+            "name": "Pistol, stutter",
+            "skill": "Mod-pistol",
+            "skill_url": "/skills/modern-ranged-weapons/pistol/",
+            "acc": "0",
+            "range": "10/20/80",
+            "damage": "d6+2s/d8+2s/d8+4s",
+            "act": "1",
+            "clip": "10",
+            "cost": "400",
+            "anchor": "pistol-stutter",
+            "description": "A non-lethal sonic weapon that uses low-frequency rumbles to incapacitate a target with stun damage."
+          },
+          {
+            "name": "Rifle, laser",
+            "skill": "Mod-rifle",
+            "skill_url": "/skills/modern-ranged-weapons/rifle/",
+            "acc": "-2",
+            "range": "60/120/400",
+            "damage": "d6+1w/d6+3w/d4+1m",
+            "act": "1",
+            "clip": "12",
+            "cost": "1000",
+            "anchor": "rifle-laser",
+            "description": "A larger, heavier version of the laser pistol, with much greater range and accuracy."
+          },
+          {
+            "name": "Rifle, mass",
+            "skill": "Mod-rifle",
+            "skill_url": "/skills/modern-ranged-weapons/rifle/",
+            "acc": "0",
+            "range": "20/60/120",
+            "damage": "d8w/d8+1w/d6+1m",
+            "act": "1",
+            "clip": "8",
+            "cost": "1300",
+            "anchor": "rifle-mass"
+          },
+          {
+            "name": "Rifle, quantum",
+            "skill": "Mod-rifle",
+            "skill_url": "/skills/modern-ranged-weapons/rifle/",
+            "acc": "-1",
+            "range": "40/200/500",
+            "damage": "d4+3w/d6+4w/d8+1m",
+            "act": "1",
+            "clip": "15",
+            "cost": "5000",
+            "anchor": "rifle-quantum",
+            "description": "A personal version of the ship-mounted particle beam, firing subatomic particles at a target with lethal force."
+          },
+          {
+            "name": "Rifle, render",
+            "skill": "Mod-rifle",
+            "skill_url": "/skills/modern-ranged-weapons/rifle/",
+            "acc": "0",
+            "range": "20/40/80",
+            "damage": "d6+1s/d6+1w/d4+1m",
+            "act": "1",
+            "clip": "8",
+            "cost": "1500",
+            "anchor": "rifle-render",
+            "description": "Uses gravity induction technology to rapidly alternate attraction and repulsion, literally tearing the target apart."
+          },
+          {
+            "name": "SMG, laser",
+            "skill": "Mod-SMG",
+            "skill_url": "/skills/modern-ranged-weapons/smg/",
+            "acc": "-1",
+            "range": "20/40/80",
+            "damage": "d6w/d6+2w/d4m",
+            "act": "1",
+            "clip": "40",
+            "cost": "800",
+            "anchor": "smg-laser"
+          },
+          {
+            "name": "SMG, stutter",
+            "skill": "Mod-SMG",
+            "skill_url": "/skills/modern-ranged-weapons/smg/",
+            "acc": "+1",
+            "range": "10/20/60",
+            "damage": "d6+2s/d8+2s/d8+4s",
+            "act": "1",
+            "clip": "20",
+            "cost": "700",
+            "anchor": "smg-stutter"
+          }
         ]
       },
       {
         "name": "PL 8: Energy Age",
         "items": [
-          { "name": "Automaser", "skill": "Mod-SMG", "skill_url": "/skills/modern-ranged-weapons/smg/", "acc": "-2", "range": "60/120/400", "damage": "d6w/d6+2w/d4m", "act": "1", "clip": "20", "cost": "1500", "anchor": "automaser" },
-          { "name": "Pistol, hvy maser", "skill": "Mod-pistol", "skill_url": "/skills/modern-ranged-weapons/pistol/", "acc": "-1", "range": "40/200/500", "damage": "d6+1w/2d4+1w/d4+1m", "act": "1", "clip": "30", "cost": "1200", "anchor": "pistol-hvy-maser" },
-          { "name": "Pistol, maser", "skill": "Mod-pistol", "skill_url": "/skills/modern-ranged-weapons/pistol/", "acc": "-1", "range": "20/60/120", "damage": "d6w/d6+2w/d4m", "act": "1", "clip": "40", "cost": "900", "anchor": "pistol-maser" },
-          { "name": "Rifle, hvy maser", "skill": "Mod-rifle", "skill_url": "/skills/modern-ranged-weapons/rifle/", "acc": "-2", "range": "80/200/600", "damage": "d8+1w/d12w/d6+1m", "act": "1", "clip": "60", "cost": "2500", "anchor": "rifle-hvy-maser" },
-          { "name": "Rifle, maser", "skill": "Mod-rifle", "skill_url": "/skills/modern-ranged-weapons/rifle/", "acc": "-2", "range": "60/120/400", "damage": "d6+2w/2d4+2w/d4+2m", "act": "1", "clip": "90", "cost": "1800", "anchor": "rifle-maser" }
+          {
+            "name": "Automaser",
+            "skill": "Mod-SMG",
+            "skill_url": "/skills/modern-ranged-weapons/smg/",
+            "acc": "-2",
+            "range": "60/120/400",
+            "damage": "d6w/d6+2w/d4m",
+            "act": "1",
+            "clip": "20",
+            "cost": "1500",
+            "anchor": "automaser",
+            "description": "A submachine-gun version of maser technology, providing high-rate energy blasts for rapid fire."
+          },
+          {
+            "name": "Pistol, hvy maser",
+            "skill": "Mod-pistol",
+            "skill_url": "/skills/modern-ranged-weapons/pistol/",
+            "acc": "-1",
+            "range": "40/200/500",
+            "damage": "d6+1w/2d4+1w/d4+1m",
+            "act": "1",
+            "clip": "30",
+            "cost": "1200",
+            "anchor": "pistol-hvy-maser"
+          },
+          {
+            "name": "Pistol, maser",
+            "skill": "Mod-pistol",
+            "skill_url": "/skills/modern-ranged-weapons/pistol/",
+            "acc": "-1",
+            "range": "20/60/120",
+            "damage": "d6w/d6+2w/d4m",
+            "act": "1",
+            "clip": "40",
+            "cost": "900",
+            "anchor": "pistol-maser",
+            "description": "Fires a blast of microwave energy that generates intense heat within the target's body."
+          },
+          {
+            "name": "Rifle, hvy maser",
+            "skill": "Mod-rifle",
+            "skill_url": "/skills/modern-ranged-weapons/rifle/",
+            "acc": "-2",
+            "range": "80/200/600",
+            "damage": "d8+1w/d12w/d6+1m",
+            "act": "1",
+            "clip": "60",
+            "cost": "2500",
+            "anchor": "rifle-hvy-maser"
+          },
+          {
+            "name": "Rifle, maser",
+            "skill": "Mod-rifle",
+            "skill_url": "/skills/modern-ranged-weapons/rifle/",
+            "acc": "-2",
+            "range": "60/120/400",
+            "damage": "d6+2w/2d4+2w/d4+2m",
+            "act": "1",
+            "clip": "90",
+            "cost": "1800",
+            "anchor": "rifle-maser",
+            "description": "A larger, more powerful version of the maser pistol, capable of inflicting severe internal damage at longer ranges."
+          }
         ]
       }
     ]
   },
   "heavy": {
     "columns": [
-      { "name": "Weapon", "key": "name", "link": true },
-      { "name": "Skill", "key": "skill" },
-      { "name": "Acc", "key": "acc" },
-      { "name": "Range (S/M/L)", "key": "range" },
-      { "name": "Damage (O/G/A)", "key": "damage" },
-      { "name": "Act.", "key": "act" },
-      { "name": "Clip", "key": "clip" },
-      { "name": "Cost ($)", "key": "cost" }
+      {
+        "name": "Weapon",
+        "key": "name",
+        "link": true
+      },
+      {
+        "name": "Skill",
+        "key": "skill"
+      },
+      {
+        "name": "Acc",
+        "key": "acc"
+      },
+      {
+        "name": "Range (S/M/L)",
+        "key": "range"
+      },
+      {
+        "name": "Damage (O/G/A)",
+        "key": "damage"
+      },
+      {
+        "name": "Act.",
+        "key": "act"
+      },
+      {
+        "name": "Clip",
+        "key": "clip"
+      },
+      {
+        "name": "Cost ($)",
+        "key": "cost"
+      }
     ],
     "groups": [
       {
         "name": "PL 4: Industrial Age",
         "items": [
-          { "name": "Flamethrower", "skill": "Hvy-dir", "skill_url": "/skills/heavy-weapons/direct-fire/", "acc": "+2", "range": "10/20/40", "damage": "d6w/d8w/d12w", "act": "1", "clip": "10", "cost": "600", "anchor": "flamethrower" },
-          { "name": "Grenade, frag", "skill": "Athl-thr", "skill_url": "/skills/athletics/throw/", "acc": "0", "range": "Per STR", "damage": "d6+2s/d4w/d4+1w", "act": "1", "clip": "1", "cost": "75", "anchor": "grenade-frag" },
-          { "name": "Machine gun, .30", "skill": "Hvy-dir", "skill_url": "/skills/heavy-weapons/direct-fire/", "acc": "-1", "range": "60/200/600", "damage": "d6+1w/d8+1w/d6+1m", "act": "1", "clip": "100", "cost": "1200", "anchor": "machine-gun-30" },
-          { "name": "Rocket launcher", "skill": "Hvy-dir", "skill_url": "/skills/heavy-weapons/direct-fire/", "acc": "+1", "range": "50/200/350", "damage": "d8w/d4+1m/d6+1m", "act": "2", "clip": "1", "cost": "1000", "anchor": "rocket-launcher" }
+          {
+            "name": "Flamethrower",
+            "skill": "Hvy-dir",
+            "skill_url": "/skills/heavy-weapons/direct-fire/",
+            "acc": "+2",
+            "range": "10/20/40",
+            "damage": "d6w/d8w/d12w",
+            "act": "1",
+            "clip": "10",
+            "cost": "600",
+            "anchor": "flamethrower",
+            "description": "Uses a tank of liquid fuel to project a stream of burning fire, capable of engulfing several targets in its path."
+          },
+          {
+            "name": "Grenade, frag",
+            "skill": "Athl-thr",
+            "skill_url": "/skills/athletics/throw/",
+            "acc": "0",
+            "range": "Per STR",
+            "damage": "d6+2s/d4w/d4+1w",
+            "act": "1",
+            "clip": "1",
+            "cost": "75",
+            "anchor": "grenade-frag",
+            "description": "A standard grenade designed to scatter razor-sharp fragments in all directions upon detonation."
+          },
+          {
+            "name": "Machine gun, .30",
+            "skill": "Hvy-dir",
+            "skill_url": "/skills/heavy-weapons/direct-fire/",
+            "acc": "-1",
+            "range": "60/200/600",
+            "damage": "d6+1w/d8+1w/d6+1m",
+            "act": "1",
+            "clip": "100",
+            "cost": "1200",
+            "anchor": "machine-gun-30",
+            "description": "A light, air-cooled machine gun that fires rapid bursts of ammunition to suppress enemies."
+          },
+          {
+            "name": "Rocket launcher",
+            "skill": "Hvy-dir",
+            "skill_url": "/skills/heavy-weapons/direct-fire/",
+            "acc": "+1",
+            "range": "50/200/350",
+            "damage": "d8w/d4+1m/d6+1m",
+            "act": "2",
+            "clip": "1",
+            "cost": "1000",
+            "anchor": "rocket-launcher",
+            "description": "An anti-tank weapon that fires a rocket-propelled grenade to inflict massive damage on vehicles and buildings."
+          }
         ]
       },
       {
         "name": "PL 5: Information Age",
         "items": [
-          { "name": "Grenade launcher", "skill": "Hvy-ind", "skill_url": "/skills/heavy-weapons/indirect-fire/", "acc": "0", "range": "As load", "damage": "As load", "act": "1", "clip": "6", "cost": "800", "anchor": "grenade-launcher" },
-          { "name": "Grenade, concus.", "skill": "Athl-thr", "skill_url": "/skills/athletics/throw/", "acc": "0", "range": "Per STR", "damage": "d6+2s/d8w/d4+1w", "act": "1", "clip": "1", "cost": "100", "anchor": "grenade-concussion" },
-          { "name": "Grenade, incend.", "skill": "Athl-thr", "skill_url": "/skills/athletics/throw/", "acc": "0", "range": "Per STR", "damage": "d4w/d4+2w/d4+3w", "act": "1", "clip": "1", "cost": "100", "anchor": "grenade-incendiary" },
-          { "name": "Grenade, smoke", "skill": "Athl-thr", "skill_url": "/skills/athletics/throw/", "acc": "0", "range": "Per STR", "damage": "Special", "act": "1", "clip": "1", "cost": "50", "anchor": "grenade-smoke" },
-          { "name": "Hvy machine gun", "skill": "Hvy-dir", "skill_url": "/skills/heavy-weapons/direct-fire/", "acc": "-2", "range": "100/400/1000", "damage": "d6+1w/2d4+2w/d8m", "act": "1", "clip": "200", "cost": "2500", "anchor": "hvy-machine-gun" },
-          { "name": "SAM, handheld", "skill": "Hvy-ind", "skill_url": "/skills/heavy-weapons/indirect-fire/", "acc": "0", "range": "1000/2000/4000", "damage": "d4w/d8w/d8+4w", "act": "2", "clip": "1", "cost": "5000", "anchor": "sam-handheld" }
+          {
+            "name": "Grenade launcher",
+            "skill": "Hvy-ind",
+            "skill_url": "/skills/heavy-weapons/indirect-fire/",
+            "acc": "0",
+            "range": "As load",
+            "damage": "As load",
+            "act": "1",
+            "clip": "6",
+            "cost": "800",
+            "anchor": "grenade-launcher",
+            "description": "A separate weapon specifically designed to fire small, high-explosive grenades."
+          },
+          {
+            "name": "Grenade, concus.",
+            "skill": "Athl-thr",
+            "skill_url": "/skills/athletics/throw/",
+            "acc": "0",
+            "range": "Per STR",
+            "damage": "d6+2s/d8w/d4+1w",
+            "act": "1",
+            "clip": "1",
+            "cost": "100",
+            "anchor": "grenade-concussion",
+            "description": "Uses a powerful blast of air pressure to stun or knock out enemies without causing lethal wounds."
+          },
+          {
+            "name": "Grenade, incend.",
+            "skill": "Athl-thr",
+            "skill_url": "/skills/athletics/throw/",
+            "acc": "0",
+            "range": "Per STR",
+            "damage": "d4w/d4+2w/d4+3w",
+            "act": "1",
+            "clip": "1",
+            "cost": "100",
+            "anchor": "grenade-incendiary",
+            "description": "Designed to ignite on impact, starting fires and burning anyone within its blast radius."
+          },
+          {
+            "name": "Grenade, smoke",
+            "skill": "Athl-thr",
+            "skill_url": "/skills/athletics/throw/",
+            "acc": "0",
+            "range": "Per STR",
+            "damage": "Special",
+            "act": "1",
+            "clip": "1",
+            "cost": "50",
+            "anchor": "grenade-smoke",
+            "description": "A non-lethal grenade that releases a thick cloud of smoke to obscure vision."
+          },
+          {
+            "name": "Hvy machine gun",
+            "skill": "Hvy-dir",
+            "skill_url": "/skills/heavy-weapons/direct-fire/",
+            "acc": "-2",
+            "range": "100/400/1000",
+            "damage": "d6+1w/2d4+2w/d8m",
+            "act": "1",
+            "clip": "200",
+            "cost": "2500",
+            "anchor": "hvy-machine-gun",
+            "description": "A larger, more powerful machine gun that can penetrate light armor and suppress large areas."
+          },
+          {
+            "name": "SAM, handheld",
+            "skill": "Hvy-ind",
+            "skill_url": "/skills/heavy-weapons/indirect-fire/",
+            "acc": "0",
+            "range": "1000/2000/4000",
+            "damage": "d4w/d8w/d8+4w",
+            "act": "2",
+            "clip": "1",
+            "cost": "5000",
+            "anchor": "sam-handheld",
+            "description": "A man-portable surface-to-air missile launcher used to shoot down low-flying aircraft."
+          }
         ]
       },
       {
         "name": "PL 6: Fusion Age",
         "items": [
-          { "name": "Bantam launcher", "skill": "Hvy-ind", "skill_url": "/skills/heavy-weapons/indirect-fire/", "acc": "0", "range": "100/800/4000", "damage": "As load", "act": "1", "clip": "1", "cost": "2000", "anchor": "bantam-launcher" },
-          { "name": "Bantam, antiair", "skill": "Hvy-ind", "skill_url": "/skills/heavy-weapons/indirect-fire/", "acc": "0", "range": "As launcher", "damage": "d4w/d4+2w/d4+3w", "act": "1", "clip": "1", "cost": "1000", "anchor": "bantam-antiair" },
-          { "name": "Bantam, antiper.", "skill": "Hvy-ind", "skill_url": "/skills/heavy-weapons/indirect-fire/", "acc": "0", "range": "As launcher", "damage": "d6w/d8+2w/d8+2w", "act": "1", "clip": "1", "cost": "800", "anchor": "bantam-antiper" },
-          { "name": "Bantam, antiveh.", "skill": "Hvy-ind", "skill_url": "/skills/heavy-weapons/indirect-fire/", "acc": "0", "range": "As launcher", "damage": "d4+2w/d4+4w/d4+1m", "act": "1", "clip": "1", "cost": "1200", "anchor": "bantam-antiveh" },
-          { "name": "Grenade, plasma", "skill": "Athl-thr", "skill_url": "/skills/athletics/throw/", "acc": "0", "range": "Per STR", "damage": "d4+2w/d8+2w/d4m", "act": "1", "clip": "1", "cost": "150", "anchor": "grenade-plasma" },
-          { "name": "Grenade, stun", "skill": "Athl-thr", "skill_url": "/skills/athletics/throw/", "acc": "0", "range": "Per STR", "damage": "d6s/d8s/d8+2s", "act": "1", "clip": "1", "cost": "75", "anchor": "grenade-stun" },
-          { "name": "Hvy mach gun, ch", "skill": "Hvy-dir", "skill_url": "/skills/heavy-weapons/direct-fire/", "acc": "-2", "range": "200/600/1200", "damage": "d8w/2d6w/2d4m", "act": "1", "clip": "100", "cost": "3500", "anchor": "hvy-mach-gun-ch" },
-          { "name": "Rail gun", "skill": "Hvy-dir", "skill_url": "/skills/heavy-weapons/direct-fire/", "acc": "-1", "range": "150/500/1500", "damage": "d6w/d6+2w/d8m", "act": "1", "clip": "20", "cost": "4000", "anchor": "rail-gun" }
+          {
+            "name": "Bantam launcher",
+            "skill": "Hvy-ind",
+            "skill_url": "/skills/heavy-weapons/indirect-fire/",
+            "acc": "0",
+            "range": "100/800/4000",
+            "damage": "As load",
+            "act": "1",
+            "clip": "1",
+            "cost": "2000",
+            "anchor": "bantam-launcher",
+            "description": "A high-tech rocket launcher that can fire several different types of specialized \"Bantam\" missiles."
+          },
+          {
+            "name": "Bantam, antiair",
+            "skill": "Hvy-ind",
+            "skill_url": "/skills/heavy-weapons/indirect-fire/",
+            "acc": "0",
+            "range": "As launcher",
+            "damage": "d4w/d4+2w/d4+3w",
+            "act": "1",
+            "clip": "1",
+            "cost": "1000",
+            "anchor": "bantam-antiair",
+            "description": "A missile designed to track and destroy fast-moving aerial targets."
+          },
+          {
+            "name": "Bantam, antiper.",
+            "skill": "Hvy-ind",
+            "skill_url": "/skills/heavy-weapons/indirect-fire/",
+            "acc": "0",
+            "range": "As launcher",
+            "damage": "d6w/d8+2w/d8+2w",
+            "act": "1",
+            "clip": "1",
+            "cost": "800",
+            "anchor": "bantam-antiper",
+            "description": "An anti-personnel missile designed to maximize its blast radius and fragmentation."
+          },
+          {
+            "name": "Bantam, antiveh.",
+            "skill": "Hvy-ind",
+            "skill_url": "/skills/heavy-weapons/indirect-fire/",
+            "acc": "0",
+            "range": "As launcher",
+            "damage": "d4+2w/d4+4w/d4+1m",
+            "act": "1",
+            "clip": "1",
+            "cost": "1200",
+            "anchor": "bantam-antiveh",
+            "description": "A missile with a shaped-charge warhead designed to penetrate heavy armor."
+          },
+          {
+            "name": "Grenade, plasma",
+            "skill": "Athl-thr",
+            "skill_url": "/skills/athletics/throw/",
+            "acc": "0",
+            "range": "Per STR",
+            "damage": "d4+2w/d8+2w/d4m",
+            "act": "1",
+            "clip": "1",
+            "cost": "150",
+            "anchor": "grenade-plasma",
+            "description": "Releases a burst of superheated plasma that can burn through almost any material."
+          },
+          {
+            "name": "Grenade, stun",
+            "skill": "Athl-thr",
+            "skill_url": "/skills/athletics/throw/",
+            "acc": "0",
+            "range": "Per STR",
+            "damage": "d6s/d8s/d8+2s",
+            "act": "1",
+            "clip": "1",
+            "cost": "75",
+            "anchor": "grenade-stun",
+            "description": "A non-lethal grenade that uses a flash of light and a loud noise to daze and disorient enemies."
+          },
+          {
+            "name": "Hvy mach gun, ch",
+            "skill": "Hvy-dir",
+            "skill_url": "/skills/heavy-weapons/direct-fire/",
+            "acc": "-2",
+            "range": "200/600/1200",
+            "damage": "d8w/2d6w/2d4m",
+            "act": "1",
+            "clip": "100",
+            "cost": "3500",
+            "anchor": "hvy-mach-gun-ch"
+          },
+          {
+            "name": "Rail gun",
+            "skill": "Hvy-dir",
+            "skill_url": "/skills/heavy-weapons/direct-fire/",
+            "acc": "-1",
+            "range": "150/500/1500",
+            "damage": "d6w/d6+2w/d8m",
+            "act": "1",
+            "clip": "20",
+            "cost": "4000",
+            "anchor": "rail-gun",
+            "description": "Uses electromagnetic coils to accelerate a metal slug to incredibly high velocities."
+          }
         ]
       },
       {
         "name": "PL 7: Gravity Age",
         "items": [
-          { "name": "Arc gun", "skill": "Hvy-dir", "skill_url": "/skills/heavy-weapons/direct-fire/", "acc": "+1", "range": "20/40/100", "damage": "d8+1s/d8w/d6+3w", "act": "1", "clip": "10", "cost": "2000", "anchor": "arc-gun" },
-          { "name": "Cannon, stutter", "skill": "Hvy-dir", "skill_url": "/skills/heavy-weapons/direct-fire/", "acc": "0", "range": "20/40/80", "damage": "d6+2s/d8+3s/2d6+3s", "act": "1", "clip": "20", "cost": "1500", "anchor": "cannon-stutter" },
-          { "name": "Cannon, 25mm sabot", "skill": "Hvy-dir", "skill_url": "/skills/heavy-weapons/direct-fire/", "acc": "-2", "range": "100/200/2000", "damage": "d8w/d4+1m/d6+2m", "act": "2", "clip": "20", "cost": "6000", "anchor": "cannon-25mm-sabot" },
-          { "name": "Grenade, pulse", "skill": "Athl-thr", "skill_url": "/skills/athletics/throw/", "acc": "0", "range": "Per STR", "damage": "d4+2s/d6+2s/d8+2s", "act": "1", "clip": "1", "cost": "100", "anchor": "grenade-pulse" },
-          { "name": "Grenade, tracer", "skill": "Athl-thr", "skill_url": "/skills/athletics/throw/", "acc": "0", "range": "Per STR", "damage": "d4+2w/d6+2w/d4+2m", "act": "1", "clip": "1", "cost": "250", "anchor": "grenade-tracer" },
-          { "name": "Plasma gun", "skill": "Hvy-dir", "skill_url": "/skills/heavy-weapons/direct-fire/", "acc": "0", "range": "40/80/200", "damage": "d8w/d8+3w/d12+3w", "act": "1", "clip": "10", "cost": "3000", "anchor": "plasma-gun" },
-          { "name": "Quantum mini", "skill": "Hvy-dir", "skill_url": "/skills/heavy-weapons/direct-fire/", "acc": "0", "range": "100/250/800", "damage": "d8+1w/d8+3w/d6m", "act": "1", "clip": "50", "cost": "15000", "anchor": "quantum-mini" }
+          {
+            "name": "Arc gun",
+            "skill": "Hvy-dir",
+            "skill_url": "/skills/heavy-weapons/direct-fire/",
+            "acc": "+1",
+            "range": "20/40/100",
+            "damage": "d8+1s/d8w/d6+3w",
+            "act": "1",
+            "clip": "10",
+            "cost": "2000",
+            "anchor": "arc-gun",
+            "description": "Projects a bolt of high-voltage electricity that can arc between multiple targets."
+          },
+          {
+            "name": "Cannon, stutter",
+            "skill": "Hvy-dir",
+            "skill_url": "/skills/heavy-weapons/direct-fire/",
+            "acc": "0",
+            "range": "20/40/80",
+            "damage": "d6+2s/d8+3s/2d6+3s",
+            "act": "1",
+            "clip": "20",
+            "cost": "1500",
+            "anchor": "cannon-stutter",
+            "description": "A larger, more powerful version of the stutter pistol, capable of incapacitating many enemies at once."
+          },
+          {
+            "name": "Cannon, 25mm sabot",
+            "skill": "Hvy-dir",
+            "skill_url": "/skills/heavy-weapons/direct-fire/",
+            "acc": "-2",
+            "range": "100/200/2000",
+            "damage": "d8w/d4+1m/d6+2m",
+            "act": "2",
+            "clip": "20",
+            "cost": "6000",
+            "anchor": "cannon-25mm-sabot",
+            "description": "A heavy weapon that fires large, high-velocity sabot rounds designed to destroy heavy vehicles."
+          },
+          {
+            "name": "Grenade, pulse",
+            "skill": "Athl-thr",
+            "skill_url": "/skills/athletics/throw/",
+            "acc": "0",
+            "range": "Per STR",
+            "damage": "d4+2s/d6+2s/d8+2s",
+            "act": "1",
+            "clip": "1",
+            "cost": "100",
+            "anchor": "grenade-pulse",
+            "description": "Emits a powerful electromagnetic pulse (EMP) that can disable electronics and cybernetics."
+          },
+          {
+            "name": "Grenade, tracer",
+            "skill": "Athl-thr",
+            "skill_url": "/skills/athletics/throw/",
+            "acc": "0",
+            "range": "Per STR",
+            "damage": "d4+2w/d6+2w/d4+2m",
+            "act": "1",
+            "clip": "1",
+            "cost": "250",
+            "anchor": "grenade-tracer",
+            "description": "A specialized grenade that releases a swarm of tiny sensors to track and mark targets."
+          },
+          {
+            "name": "Plasma gun",
+            "skill": "Hvy-dir",
+            "skill_url": "/skills/heavy-weapons/direct-fire/",
+            "acc": "0",
+            "range": "40/80/200",
+            "damage": "d8w/d8+3w/d12+3w",
+            "act": "1",
+            "clip": "10",
+            "cost": "3000",
+            "anchor": "plasma-gun",
+            "description": "A larger, more powerful version of the plasma grenade, capable of firing repeated bursts of superheated plasma."
+          },
+          {
+            "name": "Quantum mini",
+            "skill": "Hvy-dir",
+            "skill_url": "/skills/heavy-weapons/direct-fire/",
+            "acc": "0",
+            "range": "100/250/800",
+            "damage": "d8+1w/d8+3w/d6m",
+            "act": "1",
+            "clip": "50",
+            "cost": "15000",
+            "anchor": "quantum-mini",
+            "description": "A personal version of the particle beam cannon, firing subatomic particles with devastating force."
+          }
         ]
       },
       {
         "name": "PL 8: Energy Age",
         "items": [
-          { "name": "Bantam, starload", "skill": "Hvy-ind", "skill_url": "/skills/heavy-weapons/indirect-fire/", "acc": "0", "range": "As launcher", "damage": "d8+2w/d4+1m/d6+1m", "act": "1", "clip": "1", "cost": "2500", "anchor": "bantam-starload" },
-          { "name": "Cannon, maser", "skill": "Hvy-dir", "skill_url": "/skills/heavy-weapons/direct-fire/", "acc": "-1", "range": "80/200/600", "damage": "d8w/d4+1m/d8+2m", "act": "2", "clip": "20", "cost": "8000", "anchor": "cannon-maser" },
-          { "name": "Grenade, mass", "skill": "Athl-thr", "skill_url": "/skills/athletics/throw/", "acc": "0", "range": "Per STR", "damage": "d6+2s/d6+2w/d8m", "act": "1", "clip": "1", "cost": "200", "anchor": "grenade-mass" },
-          { "name": "Mass launcher", "skill": "Hvy-ind", "skill_url": "/skills/heavy-weapons/indirect-fire/", "acc": "0", "range": "20/300/1000", "damage": "d6+1w/d6+3w/d4+1m", "act": "1", "clip": "4", "cost": "3000", "anchor": "mass-launcher" }
+          {
+            "name": "Bantam, starload",
+            "skill": "Hvy-ind",
+            "skill_url": "/skills/heavy-weapons/indirect-fire/",
+            "acc": "0",
+            "range": "As launcher",
+            "damage": "d8+2w/d4+1m/d6+1m",
+            "act": "1",
+            "clip": "1",
+            "cost": "2500",
+            "anchor": "bantam-starload",
+            "description": "A missile that uses a miniature mass reactor to create a massive explosion, targeting both people and vehicles."
+          },
+          {
+            "name": "Cannon, maser",
+            "skill": "Hvy-dir",
+            "skill_url": "/skills/heavy-weapons/direct-fire/",
+            "acc": "-1",
+            "range": "80/200/600",
+            "damage": "d8w/d4+1m/d8+2m",
+            "act": "2",
+            "clip": "20",
+            "cost": "8000",
+            "anchor": "cannon-maser",
+            "description": "A heavy energy weapon that uses a mass reactor to supply the power for destructive maser blasts."
+          },
+          {
+            "name": "Grenade, mass",
+            "skill": "Athl-thr",
+            "skill_url": "/skills/athletics/throw/",
+            "acc": "0",
+            "range": "Per STR",
+            "damage": "d6+2s/d6+2w/d8m",
+            "act": "1",
+            "clip": "1",
+            "cost": "200",
+            "anchor": "grenade-mass",
+            "description": "Detonates a tiny mass reactor to create a small but destructive singularity that destroys anything in its vicinity."
+          },
+          {
+            "name": "Mass launcher",
+            "skill": "Hvy-ind",
+            "skill_url": "/skills/heavy-weapons/indirect-fire/",
+            "acc": "0",
+            "range": "20/300/1000",
+            "damage": "d6+1w/d6+3w/d4+1m",
+            "act": "1",
+            "clip": "4",
+            "cost": "3000",
+            "anchor": "mass-launcher",
+            "description": "An indirect-fire weapon that launches waves of gravity energy, using the planet's gravity well to magnify its power."
+          }
         ]
       }
     ]
