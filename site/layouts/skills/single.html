@@ -1,6 +1,7 @@
 {{ define "main" }}
-<article class="pa3 pa4-ns mw7 center">
+<article class="main-container">
   <header class="mt4 w-100">
+    {{ partial "breadcrumbs.html" . }}
     <h1 class="f1 athelas mt3 mb1">
       {{ .Title }}{{ if .Params.untrained }} (U){{ end }} {{ with .Params.attribute }}({{ . }}){{ end }}
     </h1>

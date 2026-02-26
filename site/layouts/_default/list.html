@@ -1,5 +1,5 @@
 {{ define "main" }}
-  <article class="pa3 pa4-ns nested-copy-line-height">
+  <article class="main-container nested-copy-line-height">
     <div class="mw8 center">
       {{ partial "breadcrumbs.html" . }}
     </div>
@@ -14,6 +14,6 @@
         </div>
       {{ end }}
     </section>
-    {{ partial "pagination.html" . -}}
+    {{ template "_internal/pagination.html" . -}}
   </article>
 {{ end }}

@@ -1,7 +1,7 @@
 +++
 title = "Professions"
 description = "The primary roles and training paths for characters."
-weight = 11
+weight = 4
 +++
 
 # Professions in AAA

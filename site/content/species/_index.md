@@ -1,7 +1,7 @@
 +++
 title = "Species"
 description = "The sentient species of the AAA universe, from ancient starfarers to high-tech cyborgs."
-weight = 10
+weight = 3
 +++
 
 # Species of the AAA Universe

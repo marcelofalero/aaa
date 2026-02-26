@@ -1,6 +1,17 @@
 baseURL = 'http://localhost:1313/'
-languageCode = 'en-us'
+defaultContentLanguage = 'en'
 title = 'AAA'
+
+[languages]
+  [languages.en]
+    languageName = 'English'
+    weight = 1
+    title = 'AAA'
+
+  [languages.es]
+    languageName = 'Español'
+    weight = 2
+    title = 'AAA'
 
 [params]
   custom_css = ["css/scifi.css"]

@@ -1,7 +1,7 @@
 +++
 title = "Backgrounds"
 description = "Your life before adventuring, providing skills and unique abilities."
-weight = 12
+weight = 5
 +++
 
 # Backgrounds in AAA

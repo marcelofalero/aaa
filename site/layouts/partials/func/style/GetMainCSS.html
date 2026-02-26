@@ -16,30 +16,9 @@
 {{/* We prepare a slice of resources to be concatenated as one */}}
 {{ $assets_to_concat := collections.Slice }}
 {{/* We add locale css files to the slice in the proper order */}}
-{{ range collections.Slice "_tachyons.css" "_code.css" "_hugo-internal-templates.css" "_social-icons.css" "_styles.css" }}
+{{ range collections.Slice "_tachyons.css" "_code.css" "_hugo-internal-templates.css" "_styles.css" }}
   {{ with partials.IncludeCached "func/style/GetResource.html" . . }}
     {{ $assets_to_concat = $assets_to_concat | collections.Append . }}
-  {{ end }}
-{{ end }}
-
-{{- $config := site.Params.ananke.social -}}
-{{- $networks := $config.follow.networks -}}
-{{- $setups := (collections.Where $config.networks "slug" "in" $networks) }}
-{{ with $setups }}
-  {{ $socials_rules := collections.Slice }}
-  {{ range $service := . }}
-    {{ with .color }}
-      {{ $rule := fmt.Printf `
-        .ananke-socials a.%s:hover {
-          color: %s !important;
-        }` $service.slug . }}
-      {{ $socials_rules = $socials_rules | collections.Append $rule }}
-    {{ end }}
-  {{ end }}
-  {{ with $socials_rules }}
-    {{ $socials_rules = collections.Delimit . " " }}
-    {{ $socials_css := $socials_rules | resources.FromString "ananke/css/generated_socials.css" }}
-    {{ $assets_to_concat = $assets_to_concat | collections.Append $socials_css }}
   {{ end }}
 {{ end }}
 

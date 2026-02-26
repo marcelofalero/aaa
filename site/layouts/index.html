@@ -1,41 +1,56 @@
 {{ define "main" }}
-<article class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy nested-links mid-gray">
-    <h1 class="f1 athelas mt3 mb1 tc">Table of Contents</h1>
-    <div class="tl mw9 center grid-index">
-        {{ range .Site.Sections.ByWeight }}
-        <section class="mt4">
-            <h2 class="f3 b bb b--light-gray pb2"><a href="{{ .RelPermalink }}" class="link black hover-blue">{{ .Title }}</a></h2>
-            
-            {{ if eq .Section "skills" }}
-                {{ range .Pages.GroupByParam "category" }}
-                <div class="mt3">
-                    <h3 class="f4 b gray">{{ .Key }}</h3>
-                    <ul class="list pl0">
-                        {{ range .Pages.ByTitle }}
-                        <li class="pv2 ml3">
-                            <a href="{{ .RelPermalink }}" class="link blue hover-dark-blue f4">{{ .Title }}</a>
-                            {{ with .Description }}
-                            <p class="f6 i mt1 dark-gray">{{ . }}</p>
-                            {{ end }}
-                        </li>
-                        {{ end }}
-                    </ul>
-                </div>
+<div class="main-container">
+  {{ partial "breadcrumbs.html" . }}
+  <h1 class="f1 tc athelas mt3 mb5 neon-text-glitch" data-text="SYSTEM INDEX">SYSTEM INDEX</h1>
+  <div class="grid-index">
+    {{ range .Site.Sections.ByWeight }}
+      <section class="sci-fi-card relative overflow-hidden flex flex-column">
+        <div class="card-header bb b--white-10 pb2 mb3 flex justify-between items-center">
+            <h2 class="f3 mv0">
+            <a href="{{ .RelPermalink }}" class="link white hover-neon-cyan dim">{{ .Title }}</a>
+            </h2>
+            <span class="f6 code o-50">SEC-{{ printf "%02d" .Weight }}</span>
+        </div>
+
+        <div class="flex-auto">
+        {{ if eq .Section "skills" }}
+          {{/* Skills specific layout */}}
+          {{ range .Pages.GroupByParam "category" }}
+            <div class="mb3">
+              <h3 class="f6 ttu tracked neon-purple mb2 o-80">{{ .Key }}</h3>
+              <ul class="list pl0 ml0">
+                {{ range .Pages.ByTitle }}
+                  <li class="mb1 flex items-center">
+                    <span class="mr2 neon-cyan">›</span>
+                    <a href="{{ .RelPermalink }}" class="link silver hover-white f5">{{ .Title }}</a>
+                  </li>
                 {{ end }}
-            {{ else }}
-                <ul class="list pl0">
-                    {{ range .Pages.ByWeight }}
-                    <li class="pv2 ml3">
-                        <a href="{{ .RelPermalink }}" class="link blue hover-dark-blue f4">{{ .Title }}</a>
-                        {{ with .Description }}
-                        <p class="f6 i mt1 dark-gray">{{ . }}</p>
-                        {{ end }}
-                    </li>
-                    {{ end }}
-                </ul>
+              </ul>
+            </div>
+          {{ end }}
+        {{ else }}
+          {{/* Default section layout */}}
+          <ul class="list pl0 ml0">
+            {{ range .Pages.ByWeight | first 5 }}
+              <li class="mb2 flex items-center">
+                <span class="mr2 neon-cyan">›</span>
+                <a href="{{ .RelPermalink }}" class="link silver hover-white f5">{{ .Title }}</a>
+                {{ with .Description }}
+                  <span class="dn db-ns f7 ml2 o-50 truncate w-50">{{ . }}</span>
+                {{ end }}
+              </li>
             {{ end }}
-        </section>
+          </ul>
         {{ end }}
-    </div>
-</article>
+        </div>
+
+        {{ if gt (len .Pages) 5 }}
+        <div class="mt3 tr pt2 bt b--white-05">
+            <a href="{{ .RelPermalink }}" class="f7 link neon-cyan dim ttu tracked">Access All Data >></a>
+        </div>
+        {{ end }}
+      </section>
+    {{ end }}
+  </div>
+</div>
 {{ end }}
