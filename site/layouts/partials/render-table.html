@@ -1,10 +1,14 @@
-{{ $data := . }}
+{{ $file := .file }}
+{{ $key := .key }}
+{{ $data := .data }}
+{{ $hidden_fields := .hidden_fields }}
+
 {{ if (reflect.IsMap $data) }}
 
-{{/* Calculate visible columns count */}}
+{{/* Calculate visible columns count, excluding 'description' */}}
 {{ $colCount := 0 }}
 {{ range $data.columns }}
-  {{ if and (ne .key "description") (not .hidden) }}{{ $colCount = add $colCount 1 }}{{ end }}
+  {{ if and (not (in $hidden_fields .key)) (ne .key "description") }}{{ $colCount = add $colCount 1 }}{{ end }}
 {{ end }}
 
 <div class="table-wrapper">
@@ -12,7 +16,7 @@
 <thead>
 <tr>
 {{ range $data.columns }}
-  {{ if and (ne .key "description") (not .hidden) }}
+  {{ if and (not (in $hidden_fields .key)) (ne .key "description") }}
     <th>{{ .name }}</th>
   {{ end }}
 {{ end }}
@@ -22,12 +26,10 @@
 {{ range $data.groups }}
 <tr class="table-separator"><td colspan="{{ $colCount }}">{{ .name }}</td></tr>
 {{ range $index, $item := .items }}
-{{ $rowId := printf "desc-%s-%d" ($item.name | urlize) $index }}
-{{ $hasHiddenCols := false }}
-{{ range $data.columns }}{{ if .hidden }}{{ $hasHiddenCols = true }}{{ end }}{{ end }}
-<tr class="data-row {{ if or $item.description $hasHiddenCols }}has-description{{ end }}" data-target="{{ $rowId }}">
+{{ $rowId := printf "desc-%s-%s-%s-%d" $file $key ($item.name | urlize) $index }}
+<tr class="data-row {{ if or $item.description (gt (len $hidden_fields) 0) }}has-description{{ end }}" data-target="{{ $rowId }}">
 {{ range $data.columns }}
-  {{ if and (ne .key "description") (not .hidden) }}
+  {{ if and (not (in $hidden_fields .key)) (ne .key "description") }}
     <td>
       {{ if .link }}
         <a href="#{{ $item.anchor }}">{{ index $item .key }}</a>
@@ -40,30 +42,32 @@
   {{ end }}
 {{ end }}
 </tr>
-{{ if or $item.description $hasHiddenCols }}
+{{ if or $item.description (gt (len $hidden_fields) 0) }}
 <tr id="{{ $rowId }}" class="description-row" style="display: none;">
   <td colspan="{{ $colCount }}" class="pa3 bg-panel-alt silver i" style="border-top: none;">
-    <div class="flex flex-column">
-      {{ if $item.description }}
-      <div class="flex items-start mb2">
-        <span class="neon-amber mr2">›</span>
-        <span>{{ $item.description }}</span>
-      </div>
-      {{ end }}
-
-      <div class="flex flex-wrap">
-      {{ range $data.columns }}
-        {{ if .hidden }}
-          {{ $val := index $item .key }}
+    <div>
+      <div class="mb2">
+      {{ range $field_key := $hidden_fields }}
+        {{ $column_slice := where $data.columns "key" $field_key }}
+        {{ if $column_slice }}
+          {{ $column := index $column_slice 0 }}
+          {{ $val := index $item $field_key }}
           {{ if $val }}
-          <div class="flex items-center mr4 mb1 f6">
-            <span class="neon-green mr2">{{ .name }}:</span>
+          <div class="hidden-field-item">
+            <span class="neon-green mr2">{{ $column.name }}:</span>
             <span class="silver">{{ $val }}</span>
           </div>
           {{ end }}
         {{ end }}
       {{ end }}
       </div>
+
+      {{ if $item.description }}
+      <div class="flex items-start">
+        <span class="neon-amber mr2">›</span>
+        <span>{{ $item.description | safeHTML }}</span>
+      </div>
+      {{ end }}
     </div>
   </td>
 </tr>
@@ -75,56 +79,63 @@
 </div>
 
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-  const tables = document.querySelectorAll('.interactive-table');
+// Using a self-executing function to avoid polluting the global scope and ensure the script only runs once.
+(function() {
+  if (window.interactiveTableScriptLoaded) {
+    return;
+  }
+  window.interactiveTableScriptLoaded = true;
 
-  tables.forEach(table => {
-    table.addEventListener('click', function(e) {
-      // Find the closest row, but ensure it's a data-row (not a separator or description)
-      const row = e.target.closest('.data-row');
+  document.addEventListener('DOMContentLoaded', function() {
+    const tables = document.querySelectorAll('.interactive-table');
 
-      // If we clicked a link inside the row, let it function normally
-      if (e.target.tagName === 'A') return;
-
-      if (!row) return;
-
-      const targetId = row.getAttribute('data-target');
-      const targetRow = document.getElementById(targetId);
-
-      if (targetRow) {
-        // Close all other description rows in this table
-        const allDescRows = table.querySelectorAll('.description-row');
-        const allDataRows = table.querySelectorAll('.data-row');
-
-        allDescRows.forEach(r => {
-          if (r !== targetRow) r.style.display = 'none';
-        });
-
-        allDataRows.forEach(r => {
-          if (r !== row) r.classList.remove('active-row');
-        });
-
-        // Toggle current
-        if (targetRow.style.display === 'none') {
-          targetRow.style.display = 'table-row';
-          row.classList.add('active-row');
-        } else {
-          targetRow.style.display = 'none';
-          row.classList.remove('active-row');
+    tables.forEach(table => {
+      table.addEventListener('click', function(e) {
+        const row = e.target.closest('.data-row');
+        if (e.target.tagName === 'A' || !row) {
+          return;
         }
-      }
+
+        const targetId = row.getAttribute('data-target');
+        const targetRow = document.getElementById(targetId);
+
+        if (targetRow) {
+          const isVisible = targetRow.style.display === 'table-row';
+
+          // Close all other description rows in THIS table
+          const allDescRows = table.querySelectorAll('.description-row');
+          allDescRows.forEach(r => {
+            r.style.display = 'none';
+          });
+
+          const allDataRows = table.querySelectorAll('.data-row');
+          allDataRows.forEach(r => {
+            r.classList.remove('active-row');
+          });
+
+          // Toggle current row
+          if (!isVisible) {
+            targetRow.style.display = 'table-row';
+            row.classList.add('active-row');
+          }
+        }
+      });
     });
   });
-});
+})();
 </script>
 
 <style>
-.data-row { cursor: pointer; transition: background-color 0.2s; }
-.data-row:hover { background-color: rgba(255, 176, 0, 0.05); }
-.active-row { background-color: rgba(255, 176, 0, 0.1) !important; }
-.description-row td { padding: 1rem 1.5rem; color: var(--text-dim); }
-.neon-amber { color: var(--accent-amber); }
-.neon-green { color: var(--accent-green); }
+{{ if not ($.Page.Scratch.Get "interactiveTableStylesLoaded") }}
+  {{ $.Page.Scratch.Set "interactiveTableStylesLoaded" true }}
+  .data-row { cursor: pointer; transition: background-color 0.2s; }
+  .data-row:hover { background-color: rgba(255, 176, 0, 0.05); }
+  .active-row { background-color: rgba(255, 176, 0, 0.1) !important; }
+  .description-row td { padding: 1rem 1.5rem; color: var(--text-dim); }
+  .neon-amber { color: var(--accent-amber); }
+  .neon-green { color: var(--accent-green); }
+  .hidden-field-item { display: inline-block; width: 200px; vertical-align: top; margin-right: 1rem; margin-bottom: 0.25rem; font-size: 0.875rem; }
+{{ end }}
 </style>
 
 {{ else }}
