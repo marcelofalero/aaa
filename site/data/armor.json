@@ -5,37 +5,38 @@
       { "name": "Mass", "key": "mass" },
       { "name": "AC Pen", "key": "ac_pen" },
       { "name": "Stun/Wound/Mortal", "key": "swm" },
-      { "name": "Cost ($)", "key": "cost" }
+      { "name": "Cost ($)", "key": "cost" },
+      { "name": "Description", "key": "description", "description_only": true }
     ],
     "groups": [
       {
         "name": "PL 0",
         "items": [
-          { "name": "Hide", "mass": "10", "ac_pen": "0", "swm": "2/1/0", "cost": "50" }
+          { "name": "Hide", "mass": "10", "ac_pen": "0", "swm": "2/1/0", "cost": "50", "description": "Thick animal hide, crudely cured. Offers basic protection against claws and primitive weapons." }
         ]
       },
       {
         "name": "PL 1",
         "items": [
-          { "name": "Leather", "mass": "8", "ac_pen": "0", "swm": "3/1/0", "cost": "100" }
+          { "name": "Leather", "mass": "8", "ac_pen": "0", "swm": "3/1/0", "cost": "100", "description": "Hardened leather plates, offering a good balance of mobility and protection." }
         ]
       },
       {
         "name": "PL 2",
         "items": [
-          { "name": "Quilted", "mass": "12", "ac_pen": "+1", "swm": "4/2/0", "cost": "150" }
+          { "name": "Quilted", "mass": "12", "ac_pen": "+1", "swm": "4/2/0", "cost": "150", "description": "A thick, padded garment that is surprisingly effective at absorbing impacts, but is somewhat bulky." }
         ]
       },
       {
         "name": "PL 5",
         "items": [
-          { "name": "Light-duty vest", "mass": "4", "ac_pen": "0", "swm": "5/2/1", "cost": "200" }
+          { "name": "Light-duty vest", "mass": "4", "ac_pen": "0", "swm": "5/2/1", "cost": "200", "description": "A modern ballistic-weave vest, easily concealed under clothing. Standard issue for corporate security." }
         ]
       },
       {
         "name": "PL 6",
         "items": [
-          { "name": "CF short coat", "mass": "3", "ac_pen": "0", "swm": "6/3/1", "cost": "400" }
+          { "name": "CF short coat", "mass": "3", "ac_pen": "0", "swm": "6/3/1", "cost": "400", "description": "A stylish carbon-fiber coat that provides excellent, discrete protection against modern firearms." }
         ]
       }
     ]
@@ -46,46 +47,47 @@
       { "name": "Mass", "key": "mass" },
       { "name": "AC Pen", "key": "ac_pen" },
       { "name": "Stun/Wound/Mortal", "key": "swm" },
-      { "name": "Cost ($)", "key": "cost" }
+      { "name": "Cost ($)", "key": "cost" },
+      { "name": "Description", "key": "description", "description_only": true }
     ],
     "groups": [
       {
         "name": "PL 2",
         "items": [
-          { "name": "Chain mail", "mass": "20", "ac_pen": "+2", "swm": "4/2/1", "cost": "400" },
-          { "name": "Scale mail", "mass": "25", "ac_pen": "+3", "swm": "5/3/1", "cost": "600" }
+          { "name": "Chain mail", "mass": "20", "ac_pen": "+2", "swm": "4/2/1", "cost": "400", "description": "Interlocking metal rings, effective against slashing weapons but heavy and noisy." },
+          { "name": "Scale mail", "mass": "25", "ac_pen": "+3", "swm": "5/3/1", "cost": "600", "description": "Overlapping plates of metal, offering superior protection to chain mail at the cost of increased weight." }
         ]
       },
       {
         "name": "PL 3",
         "items": [
-          { "name": "Plate mail", "mass": "30", "ac_pen": "+4", "swm": "6/4/2", "cost": "1500" }
+          { "name": "Plate mail", "mass": "30", "ac_pen": "+4", "swm": "6/4/2", "cost": "1500", "description": "Full suit of articulated steel plates. Provides excellent protection but severely restricts movement." }
         ]
       },
       {
         "name": "PL 5",
         "items": [
-          { "name": "Battle vest", "mass": "8", "ac_pen": "+1", "swm": "8/4/2", "cost": "500" },
-          { "name": "Battle jacket", "mass": "12", "ac_pen": "+2", "swm": "10/5/2", "cost": "700" }
+          { "name": "Battle vest", "mass": "8", "ac_pen": "+1", "swm": "8/4/2", "cost": "500", "description": "A military-grade vest with ceramic inserts, designed to stop rifle rounds." },
+          { "name": "Battle jacket", "mass": "12", "ac_pen": "+2", "swm": "10/5/2", "cost": "700", "description": "Extends the protection of a battle vest to the arms and torso, with added gear webbing." }
         ]
       },
       {
         "name": "PL 6",
         "items": [
-          { "name": "CF long coat", "mass": "6", "ac_pen": "+1", "swm": "12/6/3", "cost": "900" },
-          { "name": "Attack armor", "mass": "15", "ac_pen": "+2", "swm": "14/7/3", "cost": "1200" }
+          { "name": "CF long coat", "mass": "6", "ac_pen": "+1", "swm": "12/6/3", "cost": "900", "description": "A full-length carbon-fiber duster, favored by freelancers for its blend of style and serious protection." },
+          { "name": "Attack armor", "mass": "15", "ac_pen": "+2", "swm": "14/7/3", "cost": "1200", "description": "A rigid composite cuirass and pauldrons, offering frontline combat protection." }
         ]
       },
       {
         "name": "PL 7",
         "items": [
-          { "name": "Cerametal armor", "mass": "20", "ac_pen": "+3", "swm": "16/8/4", "cost": "2500" }
+          { "name": "Cerametal armor", "mass": "20", "ac_pen": "+3", "swm": "16/8/4", "cost": "2500", "description": "Advanced, custom-molded plates of a ceramic-metal alloy. The standard for elite soldiers." }
         ]
       },
       {
         "name": "PL 8",
         "items": [
-          { "name": "Body tank", "mass": "25", "ac_pen": "+4", "swm": "20/10/5", "cost": "5000" }
+          { "name": "Body tank", "mass": "25", "ac_pen": "+4", "swm": "20/10/5", "cost": "5000", "description": "A massive, full-body enclosure of layered composites. Sacrifices all subtlety for maximum survivability." }
         ]
       }
     ]
@@ -97,21 +99,22 @@
       { "name": "AC Pen", "key": "ac_pen" },
       { "name": "Stun/Wound/Mortal", "key": "swm" },
       { "name": "STR", "key": "str" },
-      { "name": "Cost ($)", "key": "cost" }
+      { "name": "Cost ($)", "key": "cost" },
+      { "name": "Description", "key": "description", "description_only": true }
     ],
     "groups": [
       {
         "name": "PL 7",
         "items": [
-          { "name": "Assault suit", "mass": "75", "ac_pen": "+2", "swm": "20/10/5", "str": "18", "cost": "75K" },
-          { "name": "Battle suit", "mass": "100", "ac_pen": "+3", "swm": "24/12/6", "str": "20", "cost": "100K" }
+          { "name": "Assault suit", "mass": "75", "ac_pen": "+2", "swm": "20/10/5", "str": "18", "cost": "75K", "description": "An unsealed suit of powered armor with myomer bundles, granting enhanced strength and significant protection." },
+          { "name": "Battle suit", "mass": "100", "ac_pen": "+3", "swm": "24/12/6", "str": "20", "cost": "100K", "description": "A fully-sealed suit of military powered armor, equipped with a basic life support system and heavy plating." }
         ]
       },
       {
         "name": "PL 8",
         "items": [
-          { "name": "Commando suit", "mass": "60", "ac_pen": "+1", "swm": "24/12/6", "str": "20", "cost": "150K" },
-          { "name": "Mauler suit", "mass": "120", "ac_pen": "+4", "swm": "30/15/7", "str": "24", "cost": "200K" }
+          { "name": "Commando suit", "mass": "60", "ac_pen": "+1", "swm": "24/12/6", "str": "20", "cost": "150K", "description": "A lightweight, high-tech suit designed for special forces, featuring advanced sensors and stealth capabilities." },
+          { "name": "Mauler suit", "mass": "120", "ac_pen": "+4", "swm": "30/15/7", "str": "24", "cost": "200K", "description": "A walking tank. The Mauler is the pinnacle of personal armor, capable of shrugging off heavy weapons fire." }
         ]
       }
     ]

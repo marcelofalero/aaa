@@ -5,7 +5,7 @@
         {{- range .THead }}
           <tr>
             {{- range . }}
-              <th{{ if .Align }} style="text-align: {{ .Align }}"{{ end }}>
+              <th{{ if .Alignment }} style="text-align: {{ .Alignment }}"{{ end }}>
                 {{ .Text | safeHTML }}
               </th>
             {{- end }}
@@ -17,7 +17,7 @@
       {{- range .TBody }}
         <tr>
           {{- range . }}
-            <td{{ if .Align }} style="text-align: {{ .Align }}"{{ end }}>
+            <td{{ if .Alignment }} style="text-align: {{ .Alignment }}"{{ end }}>
               {{ .Text | safeHTML }}
             </td>
           {{- end }}

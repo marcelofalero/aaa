@@ -1,7 +1,7 @@
 +++
 title = "Skills"
 description = "Comprehensive list of broad and specialty skills categorized by function."
-weight = 20
+weight = 6
 +++
 
 # Skills in AAA

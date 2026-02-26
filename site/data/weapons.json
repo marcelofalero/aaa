@@ -1,245 +1,254 @@
 {
   "melee": {
     "columns": [
-      { "name": "Weapon", "key": "name", "link": true },
+      { "name": "Weapon", "key": "name" },
       { "name": "Skill", "key": "skill" },
       { "name": "Acc", "key": "acc" },
       { "name": "Damage (O/G/A)", "key": "damage" },
       { "name": "Actions", "key": "actions" },
       { "name": "Mass", "key": "mass" },
       { "name": "Avail", "key": "avail" },
-      { "name": "Cost ($)", "key": "cost" }
+      { "name": "Cost ($)", "key": "cost" },
+      { "name": "Description", "key": "description", "hidden": true },
+      { "name": "Clip Cost", "key": "clip_cost", "hidden": true },
+      { "name": "Hide", "key": "hide_modifier", "hidden": true }
     ],
     "groups": [
       {
         "name": "PL 0: Stone Age",
         "items": [
-          { "name": "Club", "skill": "Melee-bludgeon", "skill_url": "/skills/melee-weapons/bludgeon/", "acc": "0", "damage": "d4+1s/d6w/d4+1w", "actions": "1", "mass": "2", "avail": "C", "cost": "5", "anchor": "club" },
-          { "name": "Dagger", "skill": "Melee-blade", "skill_url": "/skills/melee-weapons/blade/", "acc": "0", "damage": "d6w/d4+1w/d4+2w", "actions": "1", "mass": "1", "avail": "C", "cost": "10", "anchor": "dagger" },
-          { "name": "Quarterstaff", "skill": "Melee-bludgeon", "skill_url": "/skills/melee-weapons/bludgeon/", "acc": "-1", "damage": "d4+1s/d4+3s/d6w", "actions": "1", "mass": "2", "avail": "C", "cost": "10", "anchor": "quarterstaff" },
-          { "name": "Spear", "skill": "Melee-blade", "skill_url": "/skills/melee-weapons/blade/", "acc": "0", "damage": "d4w/d4+2w/d4m", "actions": "1", "mass": "3", "avail": "C", "cost": "15", "anchor": "spear" },
-          { "name": "Unarmed", "skill": "Unarmed Attack", "skill_url": "/skills/unarmed-attack/", "acc": "0", "damage": "d4s/d4+1s/d6+2s", "actions": "1", "mass": "-", "avail": "C", "cost": "-", "anchor": "" }
+          { "name": "Club", "skill": "Melee-bludgeon", "skill_url": "/skills/melee-weapons/bludgeon/", "acc": "0", "damage": "d4+1s/d6w/d4+1w", "actions": "1", "mass": "2", "avail": "C", "cost": "5", "anchor": "club", "description": "A heavy stick or cudgel, simple but effective.", "clip_cost": "N/A", "hide_modifier": "N/A" },
+          { "name": "Dagger", "skill": "Melee-blade", "skill_url": "/skills/melee-weapons/blade/", "acc": "0", "damage": "d6w/d4+1w/d4+2w", "actions": "1", "mass": "1", "avail": "C", "cost": "10", "anchor": "dagger", "description": "A short, double-edged blade used for stabbing or thrusting.", "clip_cost": "N/A", "hide_modifier": "N/A" },
+          { "name": "Quarterstaff", "skill": "Melee-bludgeon", "skill_url": "/skills/melee-weapons/bludgeon/", "acc": "-1", "damage": "d4+1s/d4+3s/d6w", "actions": "1", "mass": "2", "avail": "C", "cost": "10", "anchor": "quarterstaff", "description": "A long, sturdy pole of wood, often shod with iron.", "clip_cost": "N/A", "hide_modifier": "N/A" },
+          { "name": "Spear", "skill": "Melee-blade", "skill_url": "/skills/melee-weapons/blade/", "acc": "0", "damage": "d4w/d4+2w/d4m", "actions": "1", "mass": "3", "avail": "C", "cost": "15", "anchor": "spear", "description": "A pole weapon with a sharp point, designed for thrusting.", "clip_cost": "N/A", "hide_modifier": "N/A" },
+          { "name": "Unarmed", "skill": "Unarmed Attack", "skill_url": "/skills/unarmed-attack/", "acc": "0", "damage": "d4s/d4+1s/d6+2s", "actions": "1", "mass": "-", "avail": "C", "cost": "-", "anchor": "", "description": "Fighting with bare hands, feet, or other natural weapons.", "clip_cost": "N/A", "hide_modifier": "N/A" }
         ]
       },
       {
         "name": "PL 1: Bronze/Iron Age",
         "items": [
-          { "name": "Gauntlet", "skill": "Unarmed Attack", "skill_url": "/skills/unarmed-attack/", "acc": "0", "damage": "d4+1s/d4+2s/d4+1w", "actions": "1", "mass": "1", "avail": "C", "cost": "25", "anchor": "gauntlet" },
-          { "name": "Hand ax", "skill": "Melee-blade", "skill_url": "/skills/melee-weapons/blade/", "acc": "0", "damage": "d4+1w/d4+2w/d4+3w", "actions": "1", "mass": "2", "avail": "C", "cost": "20", "anchor": "hand-ax" },
-          { "name": "Mace", "skill": "Melee-bludgeon", "skill_url": "/skills/melee-weapons/bludgeon/", "acc": "0", "damage": "d6+1s/d4+1w/d8+1w", "actions": "1", "mass": "4", "avail": "C", "cost": "30", "anchor": "mace" },
-          { "name": "Short sword", "skill": "Melee-blade", "skill_url": "/skills/melee-weapons/blade/", "acc": "0", "damage": "d6w/d8w/d6+2w", "actions": "1", "mass": "2", "avail": "C", "cost": "50", "anchor": "short-sword" }
+          { "name": "Gauntlet", "skill": "Unarmed Attack", "skill_url": "/skills/unarmed-attack/", "acc": "0", "damage": "d4+1s/d4+2s/d4+1w", "actions": "1", "mass": "1", "avail": "C", "cost": "25", "anchor": "gauntlet", "description": "Armored glove that protects the hand and adds weight to punches.", "clip_cost": "N/A", "hide_modifier": "N/A" },
+          { "name": "Hand ax", "skill": "Melee-blade", "skill_url": "/skills/melee-weapons/blade/", "acc": "0", "damage": "d4+1w/d4+2w/d4+3w", "actions": "1", "mass": "2", "avail": "C", "cost": "20", "anchor": "hand-ax", "description": "A small axe that can be used in melee or thrown.", "clip_cost": "N/A", "hide_modifier": "N/A" },
+          { "name": "Mace", "skill": "Melee-bludgeon", "skill_url": "/skills/melee-weapons/bludgeon/", "acc": "0", "damage": "d6+1s/d4+1w/d8+1w", "actions": "1", "mass": "4", "avail": "C", "cost": "30", "anchor": "mace", "description": "A heavy club with a metal head, designed to crush armor.", "clip_cost": "N/A", "hide_modifier": "N/A" },
+          { "name": "Short sword", "skill": "Melee-blade", "skill_url": "/skills/melee-weapons/blade/", "acc": "0", "damage": "d6w/d8w/d6+2w", "actions": "1", "mass": "2", "avail": "C", "cost": "50", "anchor": "short-sword", "description": "A sword with a blade length between a dagger and a longsword.", "clip_cost": "N/A", "hide_modifier": "N/A" }
         ]
       },
       {
         "name": "PL 2: Middle Ages",
         "items": [
-          { "name": "Broad sword", "skill": "Melee-blade", "skill_url": "/skills/melee-weapons/blade/", "acc": "0", "damage": "d4+2w/d6+2w/d4m", "actions": "1", "mass": "3", "avail": "C", "cost": "100", "anchor": "broad-sword" },
-          { "name": "Flail", "skill": "Melee-bludgeon", "skill_url": "/skills/melee-weapons/bludgeon/", "acc": "+1", "damage": "d6+2s/d4+2w/d8+2w", "actions": "1", "mass": "4", "avail": "U", "cost": "75", "anchor": "flail" },
-          { "name": "Great ax", "skill": "Melee-blade", "skill_url": "/skills/melee-weapons/blade/", "acc": "+1", "damage": "d6+1w/d8+2w/d4+1m", "actions": "2", "mass": "8", "avail": "U", "cost": "150", "anchor": "great-ax" },
-          { "name": "Nunchaku", "skill": "Melee-bludgeon", "skill_url": "/skills/melee-weapons/bludgeon/", "acc": "-1", "damage": "d6s/d6+2s/d8+3s", "actions": "1", "mass": "1", "avail": "U", "cost": "40", "anchor": "nunchaku" },
-          { "name": "Polearm", "skill": "Melee-blade", "skill_url": "/skills/melee-weapons/blade/", "acc": "+1", "damage": "d6+1w/d4+3w/d4+1m", "actions": "2", "mass": "6", "avail": "C", "cost": "60", "anchor": "polearm" }
+          { "name": "Broad sword", "skill": "Melee-blade", "skill_url": "/skills/melee-weapons/blade/", "acc": "0", "damage": "d4+2w/d6+2w/d4m", "actions": "1", "mass": "3", "avail": "C", "cost": "100", "anchor": "broad-sword", "description": "A heavy, double-edged sword designed for cutting.", "clip_cost": "N/A", "hide_modifier": "N/A" },
+          { "name": "Flail", "skill": "Melee-bludgeon", "skill_url": "/skills/melee-weapons/bludgeon/", "acc": "+1", "damage": "d6+2s/d4+2w/d8+2w", "actions": "1", "mass": "4", "avail": "U", "cost": "75", "anchor": "flail", "description": "A striking weapon consisting of a stick with a swinging metal head.", "clip_cost": "N/A", "hide_modifier": "N/A" },
+          { "name": "Great ax", "skill": "Melee-blade", "skill_url": "/skills/melee-weapons/blade/", "acc": "+1", "damage": "d6+1w/d8+2w/d4+1m", "actions": "2", "mass": "8", "avail": "U", "cost": "150", "anchor": "great-ax", "description": "A massive two-handed axe capable of devastating strikes.", "clip_cost": "N/A", "hide_modifier": "N/A" },
+          { "name": "Nunchaku", "skill": "Melee-bludgeon", "skill_url": "/skills/melee-weapons/bludgeon/", "acc": "-1", "damage": "d6s/d6+2s/d8+3s", "actions": "1", "mass": "1", "avail": "U", "cost": "40", "anchor": "nunchaku", "description": "Two sticks connected by a short chain or rope.", "clip_cost": "N/A", "hide_modifier": "N/A" },
+          { "name": "Polearm", "skill": "Melee-blade", "skill_url": "/skills/melee-weapons/blade/", "acc": "+1", "damage": "d6+1w/d4+3w/d4+1m", "actions": "2", "mass": "6", "avail": "C", "cost": "60", "anchor": "polearm", "description": "A weapon with a long shaft and a cutting or thrusting head.", "clip_cost": "N/A", "hide_modifier": "N/A" }
         ]
       },
       {
         "name": "PL 3: Age of Reason",
         "items": [
-          { "name": "Cutlass", "skill": "Melee-blade", "skill_url": "/skills/melee-weapons/blade/", "acc": "0", "damage": "d4+1w/d8+1w/d8+3w", "actions": "1", "mass": "2", "avail": "C", "cost": "80", "anchor": "cutlass" },
-          { "name": "Katana", "skill": "Melee-blade", "skill_url": "/skills/melee-weapons/blade/", "acc": "-1", "damage": "d4+2w/d6+2w/d4+1m", "actions": "1", "mass": "2", "avail": "R", "cost": "500", "anchor": "katana" },
-          { "name": "Rapier", "skill": "Melee-blade", "skill_url": "/skills/melee-weapons/blade/", "acc": "-1", "damage": "d4w/d4+1w/d4+2w", "actions": "1", "mass": "1", "avail": "U", "cost": "100", "anchor": "rapier" },
-          { "name": "Saber", "skill": "Melee-blade", "skill_url": "/skills/melee-weapons/blade/", "acc": "0", "damage": "d4w/d4+2w/2d4+1w", "actions": "1", "mass": "2", "avail": "U", "cost": "120", "anchor": "saber" }
+          { "name": "Cutlass", "skill": "Melee-blade", "skill_url": "/skills/melee-weapons/blade/", "acc": "0", "damage": "d4+1w/d8+1w/d8+3w", "actions": "1", "mass": "2", "avail": "C", "cost": "80", "anchor": "cutlass", "description": "A short, broad sabre or slashing sword, with a straight or slightly curved blade.", "clip_cost": "N/A", "hide_modifier": "N/A" },
+          { "name": "Katana", "skill": "Melee-blade", "skill_url": "/skills/melee-weapons/blade/", "acc": "-1", "damage": "d4+2w/d6+2w/d4+1m", "actions": "1", "mass": "2", "avail": "R", "cost": "500", "anchor": "katana", "description": "A traditional Japanese sword with a curved, single-edged blade.", "clip_cost": "N/A", "hide_modifier": "N/A" },
+          { "name": "Rapier", "skill": "Melee-blade", "skill_url": "/skills/melee-weapons/blade/", "acc": "-1", "damage": "d4w/d4+1w/d4+2w", "actions": "1", "mass": "1", "avail": "U", "cost": "100", "anchor": "rapier", "description": "A slender, sharply pointed sword, ideally used for thrusting attacks.", "clip_cost": "N/A", "hide_modifier": "N/A" },
+          { "name": "Saber", "skill": "Melee-blade", "skill_url": "/skills/melee-weapons/blade/", "acc": "0", "damage": "d4w/d4+2w/2d4+1w", "actions": "1", "mass": "2", "avail": "U", "cost": "120", "anchor": "saber", "description": "A sword with a curved blade, associated with light cavalry.", "clip_cost": "N/A", "hide_modifier": "N/A" }
         ]
       },
       {
         "name": "PL 4: Industrial Age",
         "items": [
-          { "name": "Bayonet", "skill": "Melee-blade", "skill_url": "/skills/melee-weapons/blade/", "acc": "+1", "damage": "d4w/d4+2w/d6m", "actions": "1", "mass": "1", "avail": "C", "cost": "25", "anchor": "bayonet" }
+          { "name": "Bayonet", "skill": "Melee-blade", "skill_url": "/skills/melee-weapons/blade/", "acc": "+1", "damage": "d4w/d4+2w/d6m", "actions": "1", "mass": "1", "avail": "C", "cost": "25", "anchor": "bayonet", "description": "A knife, dagger, sword, or spike-shaped weapon designed to fit on the end of a rifle barrel.", "clip_cost": "N/A", "hide_modifier": "N/A" }
         ]
       },
       {
         "name": "PL 5: Information Age",
         "items": [
-          { "name": "Combat knife", "skill": "Melee-blade", "skill_url": "/skills/melee-weapons/blade/", "acc": "0", "damage": "d4+1w/d4+2w/d4+3w", "actions": "1", "mass": "1", "avail": "C", "cost": "50", "anchor": "combat-knife" },
-          { "name": "Stun baton", "skill": "Melee-powered", "skill_url": "/skills/melee-weapons/powered-weapon/", "acc": "0", "damage": "d4+1s/d4+3s/d6+4s", "actions": "1", "mass": "1", "avail": "U", "cost": "200", "anchor": "stun-baton" }
+          { "name": "Combat knife", "skill": "Melee-blade", "skill_url": "/skills/melee-weapons/blade/", "acc": "0", "damage": "d4+1w/d4+2w/d4+3w", "actions": "1", "mass": "1", "avail": "C", "cost": "50", "anchor": "combat-knife", "description": "A durable knife designed for military use, often with a serrated edge.", "clip_cost": "N/A", "hide_modifier": "N/A" },
+          { "name": "Stun baton", "skill": "Melee-powered", "skill_url": "/skills/melee-weapons/powered-weapon/", "acc": "0", "damage": "d4+1s/d4+3s/d6+4s", "actions": "1", "mass": "1", "avail": "U", "cost": "200", "anchor": "stun-baton", "description": "A baton that delivers a high-voltage electric shock on impact.", "clip_cost": "N/A", "hide_modifier": "N/A" }
         ]
       },
       {
         "name": "PL 6: Fusion Age",
         "items": [
-          { "name": "Chainsword", "skill": "Melee-powered", "skill_url": "/skills/melee-weapons/powered-weapon/", "acc": "+1", "damage": "d8+1w/d8+2w/d4+1m", "actions": "1", "mass": "5", "avail": "R", "cost": "1500", "anchor": "chainsword" },
-          { "name": "Pulse baton", "skill": "Melee-powered", "skill_url": "/skills/melee-weapons/powered-weapon/", "acc": "0", "damage": "d8s/d4+2w/d6+2w", "actions": "1", "mass": "2", "avail": "U", "cost": "400", "anchor": "pulse-baton" }
+          { "name": "Chainsword", "skill": "Melee-powered", "skill_url": "/skills/melee-weapons/powered-weapon/", "acc": "+1", "damage": "d8+1w/d8+2w/d4+1m", "actions": "1", "mass": "5", "avail": "R", "cost": "1500", "anchor": "chainsword", "description": "A sword with powered teeth that rotate like a chainsaw.", "clip_cost": "N/A", "hide_modifier": "N/A" },
+          { "name": "Pulse baton", "skill": "Melee-powered", "skill_url": "/skills/melee-weapons/powered-weapon/", "acc": "0", "damage": "d8s/d4+2w/d6+2w", "actions": "1", "mass": "2", "avail": "U", "cost": "400", "anchor": "pulse-baton", "description": "A baton that emits a kinetic pulse on impact, causing internal damage.", "clip_cost": "N/A", "hide_modifier": "N/A" }
         ]
       },
       {
         "name": "PL 7: Gravity Age",
         "items": [
-          { "name": "Gravmace", "skill": "Melee-powered", "skill_url": "/skills/melee-weapons/powered-weapon/", "acc": "+1", "damage": "d6+2s/d6+2w/d8+2w", "actions": "1", "mass": "4", "avail": "R", "cost": "2000", "anchor": "gravmace" },
-          { "name": "Power Cestus", "skill": "Unarmed-brawl", "skill_url": "/skills/unarmed-attack/brawl/", "acc": "-1", "damage": "d4+2s/d4w/d4+1w", "actions": "1", "mass": "3", "avail": "R", "cost": "1800", "anchor": "power-cestus" }
+          { "name": "Gravmace", "skill": "Melee-powered", "skill_url": "/skills/melee-weapons/powered-weapon/", "acc": "+1", "damage": "d6+2s/d6+2w/d8+2w", "actions": "1", "mass": "4", "avail": "R", "cost": "2000", "anchor": "gravmace", "description": "A mace that uses gravity generators to increase the force of impact.", "clip_cost": "N/A", "hide_modifier": "N/A" },
+          { "name": "Power Cestus", "skill": "Unarmed-brawl", "skill_url": "/skills/unarmed-attack/brawl/", "acc": "-1", "damage": "d4+2s/d4w/d4+1w", "actions": "1", "mass": "3", "avail": "R", "cost": "1800", "anchor": "power-cestus", "description": "A powered gauntlet that enhances unarmed strikes.", "clip_cost": "N/A", "hide_modifier": "N/A" }
         ]
       },
       {
         "name": "PL 8: Energy Age",
         "items": [
-          { "name": "Star sword", "skill": "Melee-powered", "skill_url": "/skills/melee-weapons/powered-weapon/", "acc": "-2", "damage": "d8+1w/2d6w/d4+3m", "actions": "1", "mass": "3", "avail": "R", "cost": "7500", "anchor": "star-sword" },
-          { "name": "Tri-staff", "skill": "Melee-powered", "skill_url": "/skills/melee-weapons/powered-weapon/", "acc": "-1", "damage": "d8+2w/3d4+1w/d8m", "actions": "1", "mass": "4", "avail": "R", "cost": "4000", "anchor": "tri-staff" }
+          { "name": "Star sword", "skill": "Melee-powered", "skill_url": "/skills/melee-weapons/powered-weapon/", "acc": "-2", "damage": "d8+1w/2d6w/d4+3m", "actions": "1", "mass": "3", "avail": "R", "cost": "7500", "anchor": "star-sword", "description": "A sword with a blade of contained plasma energy.", "clip_cost": "N/A", "hide_modifier": "N/A" },
+          { "name": "Tri-staff", "skill": "Melee-powered", "skill_url": "/skills/melee-weapons/powered-weapon/", "acc": "-1", "damage": "d8+2w/3d4+1w/d8m", "actions": "1", "mass": "4", "avail": "R", "cost": "4000", "anchor": "tri-staff", "description": "A three-section staff with energy emitters at each end.", "clip_cost": "N/A", "hide_modifier": "N/A" }
         ]
       }
     ]
   },
   "ranged": {
     "columns": [
-      { "name": "Weapon", "key": "name", "link": true },
+      { "name": "Weapon", "key": "name" },
       { "name": "Skill", "key": "skill" },
       { "name": "Acc", "key": "acc" },
       { "name": "Range (S/M/L)", "key": "range" },
       { "name": "Damage (O/G/A)", "key": "damage" },
       { "name": "Act.", "key": "act" },
       { "name": "Clip", "key": "clip" },
-      { "name": "Cost ($)", "key": "cost" }
+      { "name": "Cost ($)", "key": "cost" },
+      { "name": "Description", "key": "description", "hidden": true },
+      { "name": "Clip Cost", "key": "clip_cost", "hidden": true },
+      { "name": "Hide", "key": "hide_modifier", "hidden": true }
     ],
     "groups": [
       {
         "name": "PL 0: Stone Age",
         "items": [
-          { "name": "Bow, short", "skill": "Prim-bow", "skill_url": "/skills/primitive-ranged-weapons/bow/", "acc": "0", "range": "20/40/100", "damage": "d4w/d4+2w/d4+3w", "act": "1", "clip": "1", "cost": "40", "anchor": "bow-short" },
-          { "name": "Sling", "skill": "Prim-sling", "skill_url": "/skills/primitive-ranged-weapons/sling/", "acc": "+2", "range": "10/20/60", "damage": "d4s/d4+1s/d4+2s", "act": "1", "clip": "1", "cost": "10", "anchor": "sling" }
+          { "name": "Bow, short", "skill": "Prim-bow", "skill_url": "/skills/primitive-ranged-weapons/bow/", "acc": "0", "range": "20/40/100", "damage": "d4w/d4+2w/d4+3w", "act": "1", "clip": "1", "cost": "40", "anchor": "bow-short", "description": "A simple bow made from a single piece of wood.", "clip_cost": "N/A", "hide_modifier": "N/A" },
+          { "name": "Sling", "skill": "Prim-sling", "skill_url": "/skills/primitive-ranged-weapons/sling/", "acc": "+2", "range": "10/20/60", "damage": "d4s/d4+1s/d4+2s", "act": "1", "clip": "1", "cost": "10", "anchor": "sling", "description": "A looped strap used to throw stones or lead bullets.", "clip_cost": "N/A", "hide_modifier": "N/A" }
         ]
       },
       {
         "name": "PL 1: Bronze/Iron Age",
         "items": [
-          { "name": "Javelin", "skill": "Athl-throw", "skill_url": "/skills/athletics/throw/", "acc": "0", "range": "Per STR", "damage": "d4+1w/d6+1w/d4m", "act": "1", "clip": "1", "cost": "20", "anchor": "javelin" }
+          { "name": "Javelin", "skill": "Athl-throw", "skill_url": "/skills/athletics/throw/", "acc": "0", "range": "Per STR", "damage": "d4+1w/d6+1w/d4m", "act": "1", "clip": "1", "cost": "20", "anchor": "javelin", "description": "A light spear designed primarily to be thrown.", "clip_cost": "N/A", "hide_modifier": "N/A" }
         ]
       },
       {
         "name": "PL 2: Middle Ages",
         "items": [
-          { "name": "Bow, long", "skill": "Prim-bow", "skill_url": "/skills/primitive-ranged-weapons/bow/", "acc": "-1", "range": "40/80/200", "damage": "d4+2w/d6+2w/d4+1m", "act": "1", "clip": "1", "cost": "75", "anchor": "bow-long" },
-          { "name": "Crossbow", "skill": "Prim-bow", "skill_url": "/skills/primitive-ranged-weapons/bow/", "acc": "0", "range": "50/100/250", "damage": "d6s/d4w/d4+1w", "act": "2", "clip": "1", "cost": "150", "anchor": "crossbow" },
-          { "name": "Shuriken", "skill": "Athl-throw", "skill_url": "/skills/athletics/throw/", "acc": "-1", "range": "Per STR", "damage": "d4s/d4+1s/d6+1s", "act": "1", "clip": "1", "cost": "10", "anchor": "shuriken" }
+          { "name": "Bow, long", "skill": "Prim-bow", "skill_url": "/skills/primitive-ranged-weapons/bow/", "acc": "-1", "range": "40/80/200", "damage": "d4+2w/d6+2w/d4+1m", "act": "1", "clip": "1", "cost": "75", "anchor": "bow-long", "description": "A tall bow roughly equal to the height of the user.", "clip_cost": "N/A", "hide_modifier": "N/A" },
+          { "name": "Crossbow", "skill": "Prim-bow", "skill_url": "/skills/primitive-ranged-weapons/bow/", "acc": "0", "range": "50/100/250", "damage": "d6s/d4w/d4+1w", "act": "2", "clip": "1", "cost": "150", "anchor": "crossbow", "description": "A bow mounted on a stock that shoots bolts or quarrels.", "clip_cost": "N/A", "hide_modifier": "N/A" },
+          { "name": "Shuriken", "skill": "Athl-throw", "skill_url": "/skills/athletics/throw/", "acc": "-1", "range": "Per STR", "damage": "d4s/d4+1s/d6+1s", "act": "1", "clip": "1", "cost": "10", "anchor": "shuriken", "description": "A concealed weapon that is generally thrown.", "clip_cost": "N/A", "hide_modifier": "N/A" }
         ]
       },
       {
         "name": "PL 3: Age of Reason",
         "items": [
-          { "name": "Musket, flintlock", "skill": "Prim-flint", "skill_url": "/skills/primitive-ranged-weapons/flintlock/", "acc": "+2", "range": "20/40/100", "damage": "d4+2w/d6+2w/d8m", "act": "3", "clip": "1", "cost": "200", "anchor": "musket-flintlock" },
-          { "name": "Pistol, flintlock", "skill": "Prim-flint", "skill_url": "/skills/primitive-ranged-weapons/flintlock/", "acc": "+2", "range": "4/8/16", "damage": "d4s/d6w/d8+2w", "act": "3", "clip": "1", "cost": "150", "anchor": "pistol-flintlock" },
-          { "name": "Rifle, long", "skill": "Prim-flint", "skill_url": "/skills/primitive-ranged-weapons/flintlock/", "acc": "0", "range": "30/60/150", "damage": "d6w/d6+2w/d4+1m", "act": "3", "clip": "1", "cost": "300", "anchor": "rifle-long" }
+          { "name": "Musket, flintlock", "skill": "Prim-flint", "skill_url": "/skills/primitive-ranged-weapons/flintlock/", "acc": "+2", "range": "20/40/100", "damage": "d4+2w/d6+2w/d8m", "act": "3", "clip": "1", "cost": "200", "anchor": "musket-flintlock", "description": "A muzzle-loaded long gun that uses a flintlock mechanism.", "clip_cost": "N/A", "hide_modifier": "N/A" },
+          { "name": "Pistol, flintlock", "skill": "Prim-flint", "skill_url": "/skills/primitive-ranged-weapons/flintlock/", "acc": "+2", "range": "4/8/16", "damage": "d4s/d6w/d8+2w", "act": "3", "clip": "1", "cost": "150", "anchor": "pistol-flintlock", "description": "A muzzle-loaded handgun that uses a flintlock mechanism.", "clip_cost": "N/A", "hide_modifier": "N/A" },
+          { "name": "Rifle, long", "skill": "Prim-flint", "skill_url": "/skills/primitive-ranged-weapons/flintlock/", "acc": "0", "range": "30/60/150", "damage": "d6w/d6+2w/d4+1m", "act": "3", "clip": "1", "cost": "300", "anchor": "rifle-long", "description": "A long gun with a rifled barrel for improved accuracy.", "clip_cost": "N/A", "hide_modifier": "N/A" }
         ]
       },
       {
         "name": "PL 4: Industrial Age",
         "items": [
-          { "name": "Derringer", "skill": "Mod-pistol", "skill_url": "/skills/modern-ranged-weapons/pistol/", "acc": "+2", "range": "5/10/30", "damage": "d4w/d6w/d4m", "act": "2", "clip": "2", "cost": "100", "anchor": "derringer" },
-          { "name": "Pistol, .38 rev", "skill": "Mod-pistol", "skill_url": "/skills/modern-ranged-weapons/pistol/", "acc": "0", "range": "10/20/80", "damage": "d4+1w/d4+2w/d6m", "act": "1", "clip": "6", "cost": "200", "anchor": "pistol-38-rev" },
-          { "name": "Pistol, .44 magnum", "skill": "Mod-pistol", "skill_url": "/skills/modern-ranged-weapons/pistol/", "acc": "+1", "range": "30/60/200", "damage": "d4+2w/d6+2w/d4+1m", "act": "1", "clip": "6", "cost": "400", "anchor": "pistol-44-magnum" },
-          { "name": "Rifle, 7.62mm", "skill": "Mod-rifle", "skill_url": "/skills/modern-ranged-weapons/rifle/", "acc": "-1", "range": "80/160/400", "damage": "d6w/d8+1w/d6+1m", "act": "1", "clip": "10", "cost": "500", "anchor": "rifle-7-62mm" },
-          { "name": "Rifle, assault", "skill": "Mod-rifle", "skill_url": "/skills/modern-ranged-weapons/rifle/", "acc": "-1", "range": "50/100/300", "damage": "d4w/d6w/d4m", "act": "1", "clip": "30", "cost": "700", "anchor": "rifle-assault" },
-          { "name": "SMG, 9mm", "skill": "Mod-SMG", "skill_url": "/skills/modern-ranged-weapons/smg/", "acc": "+1", "range": "30/60/150", "damage": "d4+1w/d4+2w/d6m", "act": "1", "clip": "30", "cost": "600", "anchor": "smg-9mm" }
+          { "name": "Derringer", "skill": "Mod-pistol", "skill_url": "/skills/modern-ranged-weapons/pistol/", "acc": "+2", "range": "5/10/30", "damage": "d4w/d6w/d4m", "act": "2", "clip": "2", "cost": "100", "anchor": "derringer", "description": "A small, easily concealable handgun.", "clip_cost": "N/A", "hide_modifier": "N/A" },
+          { "name": "Pistol, .38 rev", "skill": "Mod-pistol", "skill_url": "/skills/modern-ranged-weapons/pistol/", "acc": "0", "range": "10/20/80", "damage": "d4+1w/d4+2w/d6m", "act": "1", "clip": "6", "cost": "200", "anchor": "pistol-38-rev", "description": "A reliable six-shot revolver chambered in .38 caliber.", "clip_cost": "N/A", "hide_modifier": "N/A" },
+          { "name": "Pistol, .44 magnum", "skill": "Mod-pistol", "skill_url": "/skills/modern-ranged-weapons/pistol/", "acc": "+1", "range": "30/60/200", "damage": "d4+2w/d6+2w/d4+1m", "act": "1", "clip": "6", "cost": "400", "anchor": "pistol-44-magnum", "description": "A powerful revolver known for its stopping power.", "clip_cost": "N/A", "hide_modifier": "N/A" },
+          { "name": "Rifle, 7.62mm", "skill": "Mod-rifle", "skill_url": "/skills/modern-ranged-weapons/rifle/", "acc": "-1", "range": "80/160/400", "damage": "d6w/d8+1w/d6+1m", "act": "1", "clip": "10", "cost": "500", "anchor": "rifle-7-62mm", "description": "A bolt-action or semi-automatic rifle firing a heavy cartridge.", "clip_cost": "N/A", "hide_modifier": "N/A" },
+          { "name": "Rifle, assault", "skill": "Mod-rifle", "skill_url": "/skills/modern-ranged-weapons/rifle/", "acc": "-1", "range": "50/100/300", "damage": "d4w/d6w/d4m", "act": "1", "clip": "30", "cost": "700", "anchor": "rifle-assault", "description": "A selective-fire rifle that uses an intermediate cartridge.", "clip_cost": "N/A", "hide_modifier": "N/A" },
+          { "name": "SMG, 9mm", "skill": "Mod-SMG", "skill_url": "/skills/modern-ranged-weapons/smg/", "acc": "+1", "range": "30/60/150", "damage": "d4+1w/d4+2w/d6m", "act": "1", "clip": "30", "cost": "600", "anchor": "smg-9mm", "description": "A submachine gun firing 9mm pistol ammunition.", "clip_cost": "N/A", "hide_modifier": "N/A" }
         ]
       },
       {
         "name": "PL 6: Fusion Age",
         "items": [
-          { "name": "Pistol, 9mm ch", "skill": "Mod-pistol", "skill_url": "/skills/modern-ranged-weapons/pistol/", "acc": "0", "range": "20/40/100", "damage": "d4+1w/d6+1w/d4m", "act": "1", "clip": "15", "cost": "400", "anchor": "pistol-9mm-charge" },
-          { "name": "Pistol, 9mm zero-g", "skill": "Mod-pistol", "skill_url": "/skills/modern-ranged-weapons/pistol/", "acc": "0", "range": "20/40/100", "damage": "d4+1w/d6+1w/d4m", "act": "1", "clip": "15", "cost": "600", "anchor": "pistol-9mm-zero-g" },
-          { "name": "Pistol, 11mm ch", "skill": "Mod-pistol", "skill_url": "/skills/modern-ranged-weapons/pistol/", "acc": "+1", "range": "40/80/240", "damage": "d4+2w/d6+2w/d4+1m", "act": "1", "clip": "10", "cost": "500", "anchor": "pistol-11mm-charge" },
-          { "name": "Rifle, 11mm ch", "skill": "Mod-rifle", "skill_url": "/skills/modern-ranged-weapons/rifle/", "acc": "0", "range": "100/400/1000", "damage": "d6+1w/d6+3w/d6+1m", "act": "1", "clip": "30", "cost": "900", "anchor": "rifle-11mm-charge" },
-          { "name": "Rifle, 11mm zero-g", "skill": "Mod-rifle", "skill_url": "/skills/modern-ranged-weapons/rifle/", "acc": "0", "range": "100/400/1000", "damage": "d6+1w/d6+3w/d6+1m", "act": "1", "clip": "15", "cost": "1100", "anchor": "rifle-11mm-zero-g" },
-          { "name": "Shotgun, autoflec", "skill": "Mod-rifle", "skill_url": "/skills/modern-ranged-weapons/rifle/", "acc": "+2", "range": "4/12/30", "damage": "d6w/d6+2w/d8m", "act": "1", "clip": "15", "cost": "800", "anchor": "shotgun-autoflec" },
-          { "name": "SMG, 9mm ch", "skill": "Mod-SMG", "skill_url": "/skills/modern-ranged-weapons/smg/", "acc": "+1", "range": "50/100/250", "damage": "d4+1w/d6+1w/d4m", "act": "1", "clip": "30", "cost": "750", "anchor": "smg-9mm-charge" }
+          { "name": "Pistol, 9mm ch", "skill": "Mod-pistol", "skill_url": "/skills/modern-ranged-weapons/pistol/", "acc": "0", "range": "20/40/100", "damage": "d4+1w/d6+1w/d4m", "act": "1", "clip": "15", "cost": "400", "anchor": "pistol-9mm-charge", "description": "A pistol that uses electrically charged ammunition for increased velocity.", "clip_cost": "N/A", "hide_modifier": "N/A" },
+          { "name": "Pistol, 9mm zero-g", "skill": "Mod-pistol", "skill_url": "/skills/modern-ranged-weapons/pistol/", "acc": "0", "range": "20/40/100", "damage": "d4+1w/d6+1w/d4m", "act": "1", "clip": "15", "cost": "600", "anchor": "pistol-9mm-zero-g", "description": "A recoilless pistol designed for use in zero-gravity environments.", "clip_cost": "N/A", "hide_modifier": "N/A" },
+          { "name": "Pistol, 11mm ch", "skill": "Mod-pistol", "skill_url": "/skills/modern-ranged-weapons/pistol/", "acc": "+1", "range": "40/80/240", "damage": "d4+2w/d6+2w/d4+1m", "act": "1", "clip": "10", "cost": "500", "anchor": "pistol-11mm-charge", "description": "A heavy pistol firing charged 11mm rounds.", "clip_cost": "N/A", "hide_modifier": "N/A" },
+          { "name": "Rifle, 11mm ch", "skill": "Mod-rifle", "skill_url": "/skills/modern-ranged-weapons/rifle/", "acc": "0", "range": "100/400/1000", "damage": "d6+1w/d6+3w/d6+1m", "act": "1", "clip": "30", "cost": "900", "anchor": "rifle-11mm-charge", "description": "A standard issue military rifle firing charged 11mm rounds.", "clip_cost": "N/A", "hide_modifier": "N/A" },
+          { "name": "Rifle, 11mm zero-g", "skill": "Mod-rifle", "skill_url": "/skills/modern-ranged-weapons/rifle/", "acc": "0", "range": "100/400/1000", "damage": "d6+1w/d6+3w/d6+1m", "act": "1", "clip": "15", "cost": "1100", "anchor": "rifle-11mm-zero-g", "description": "A recoilless rifle designed for zero-gravity combat.", "clip_cost": "N/A", "hide_modifier": "N/A" },
+          { "name": "Shotgun, autoflec", "skill": "Mod-rifle", "skill_url": "/skills/modern-ranged-weapons/rifle/", "acc": "+2", "range": "4/12/30", "damage": "d6w/d6+2w/d8m", "act": "1", "clip": "15", "cost": "800", "anchor": "shotgun-autoflec", "description": "A shotgun that fires flechette rounds for wide area damage.", "clip_cost": "N/A", "hide_modifier": "N/A" },
+          { "name": "SMG, 9mm ch", "skill": "Mod-SMG", "skill_url": "/skills/modern-ranged-weapons/smg/", "acc": "+1", "range": "50/100/250", "damage": "d4+1w/d6+1w/d4m", "act": "1", "clip": "30", "cost": "750", "anchor": "smg-9mm-charge", "description": "A submachine gun firing charged 9mm rounds.", "clip_cost": "N/A", "hide_modifier": "N/A" }
         ]
       },
       {
         "name": "PL 7: Gravity Age",
         "items": [
-          { "name": "Pistol, 15mm sabot", "skill": "Mod-pistol", "skill_url": "/skills/modern-ranged-weapons/pistol/", "acc": "-1", "range": "80/200/500", "damage": "2d4w/2d4+1w/d4+3m", "act": "1", "clip": "6", "cost": "900", "anchor": "pistol-15mm-sabot" },
-          { "name": "Pistol, laser", "skill": "Mod-pistol", "skill_url": "/skills/modern-ranged-weapons/pistol/", "acc": "-1", "range": "50/100/250", "damage": "d4+1w/d6+1w/d4m", "act": "1", "clip": "20", "cost": "600", "anchor": "pistol-laser" },
-          { "name": "Pistol, mass", "skill": "Mod-pistol", "skill_url": "/skills/modern-ranged-weapons/pistol/", "acc": "+1", "range": "20/80/200", "damage": "d6w/d6+2w/d8m", "act": "1", "clip": "10", "cost": "800", "anchor": "pistol-mass" },
-          { "name": "Pistol, stutter", "skill": "Mod-pistol", "skill_url": "/skills/modern-ranged-weapons/pistol/", "acc": "0", "range": "10/20/80", "damage": "d6+2s/d8+2s/d8+4s", "act": "1", "clip": "10", "cost": "400", "anchor": "pistol-stutter" },
-          { "name": "Rifle, laser", "skill": "Mod-rifle", "skill_url": "/skills/modern-ranged-weapons/rifle/", "acc": "-2", "range": "60/120/400", "damage": "d6+1w/d6+3w/d4+1m", "act": "1", "clip": "12", "cost": "1000", "anchor": "rifle-laser" },
-          { "name": "Rifle, mass", "skill": "Mod-rifle", "skill_url": "/skills/modern-ranged-weapons/rifle/", "acc": "0", "range": "20/60/120", "damage": "d8w/d8+1w/d6+1m", "act": "1", "clip": "8", "cost": "1300", "anchor": "rifle-mass" },
-          { "name": "Rifle, quantum", "skill": "Mod-rifle", "skill_url": "/skills/modern-ranged-weapons/rifle/", "acc": "-1", "range": "40/200/500", "damage": "d4+3w/d6+4w/d8+1m", "act": "1", "clip": "15", "cost": "5000", "anchor": "rifle-quantum" },
-          { "name": "Rifle, render", "skill": "Mod-rifle", "skill_url": "/skills/modern-ranged-weapons/rifle/", "acc": "0", "range": "20/40/80", "damage": "d6+1s/d6+1w/d4+1m", "act": "1", "clip": "8", "cost": "1500", "anchor": "rifle-render" },
-          { "name": "SMG, laser", "skill": "Mod-SMG", "skill_url": "/skills/modern-ranged-weapons/smg/", "acc": "-1", "range": "20/40/80", "damage": "d6w/d6+2w/d4m", "act": "1", "clip": "40", "cost": "800", "anchor": "smg-laser" },
-          { "name": "SMG, stutter", "skill": "Mod-SMG", "skill_url": "/skills/modern-ranged-weapons/smg/", "acc": "+1", "range": "10/20/60", "damage": "d6+2s/d8+2s/d8+4s", "act": "1", "clip": "20", "cost": "700", "anchor": "smg-stutter" }
+          { "name": "Pistol, 15mm sabot", "skill": "Mod-pistol", "skill_url": "/skills/modern-ranged-weapons/pistol/", "acc": "-1", "range": "80/200/500", "damage": "2d4w/2d4+1w/d4+3m", "act": "1", "clip": "6", "cost": "900", "anchor": "pistol-15mm-sabot", "description": "A heavy pistol firing armor-piercing sabot rounds.", "clip_cost": "N/A", "hide_modifier": "N/A" },
+          { "name": "Pistol, laser", "skill": "Mod-pistol", "skill_url": "/skills/modern-ranged-weapons/pistol/", "acc": "-1", "range": "50/100/250", "damage": "d4+1w/d6+1w/d4m", "act": "1", "clip": "20", "cost": "600", "anchor": "pistol-laser", "description": "A pistol that fires a focused beam of light.", "clip_cost": "N/A", "hide_modifier": "N/A" },
+          { "name": "Pistol, mass", "skill": "Mod-pistol", "skill_url": "/skills/modern-ranged-weapons/pistol/", "acc": "+1", "range": "20/80/200", "damage": "d6w/d6+2w/d8m", "act": "1", "clip": "10", "cost": "800", "anchor": "pistol-mass", "description": "A pistol that uses gravity fields to accelerate projectiles.", "clip_cost": "N/A", "hide_modifier": "N/A" },
+          { "name": "Pistol, stutter", "skill": "Mod-pistol", "skill_url": "/skills/modern-ranged-weapons/pistol/", "acc": "0", "range": "10/20/80", "damage": "d6+2s/d8+2s/d8+4s", "act": "1", "clip": "10", "cost": "400", "anchor": "pistol-stutter", "description": "A non-lethal pistol that disrupts the nervous system.", "clip_cost": "N/A", "hide_modifier": "N/A" },
+          { "name": "Rifle, laser", "skill": "Mod-rifle", "skill_url": "/skills/modern-ranged-weapons/rifle/", "acc": "-2", "range": "60/120/400", "damage": "d6+1w/d6+3w/d4+1m", "act": "1", "clip": "12", "cost": "1000", "anchor": "rifle-laser", "description": "A rifle that fires a high-powered laser beam.", "clip_cost": "N/A", "hide_modifier": "N/A" },
+          { "name": "Rifle, mass", "skill": "Mod-rifle", "skill_url": "/skills/modern-ranged-weapons/rifle/", "acc": "0", "range": "20/60/120", "damage": "d8w/d8+1w/d6+1m", "act": "1", "clip": "8", "cost": "1300", "anchor": "rifle-mass", "description": "A rifle that uses gravity fields to accelerate projectiles.", "clip_cost": "N/A", "hide_modifier": "N/A" },
+          { "name": "Rifle, quantum", "skill": "Mod-rifle", "skill_url": "/skills/modern-ranged-weapons/rifle/", "acc": "-1", "range": "40/200/500", "damage": "d4+3w/d6+4w/d8+1m", "act": "1", "clip": "15", "cost": "5000", "anchor": "rifle-quantum", "description": "A rifle that manipulates quantum states to cause damage.", "clip_cost": "N/A", "hide_modifier": "N/A" },
+          { "name": "Rifle, render", "skill": "Mod-rifle", "skill_url": "/skills/modern-ranged-weapons/rifle/", "acc": "0", "range": "20/40/80", "damage": "d6+1s/d6+1w/d4+1m", "act": "1", "clip": "8", "cost": "1500", "anchor": "rifle-render", "description": "A rifle that fires projectiles that tear through armor.", "clip_cost": "N/A", "hide_modifier": "N/A" },
+          { "name": "SMG, laser", "skill": "Mod-SMG", "skill_url": "/skills/modern-ranged-weapons/smg/", "acc": "-1", "range": "20/40/80", "damage": "d6w/d6+2w/d4m", "act": "1", "clip": "40", "cost": "800", "anchor": "smg-laser", "description": "A rapid-fire laser weapon.", "clip_cost": "N/A", "hide_modifier": "N/A" },
+          { "name": "SMG, stutter", "skill": "Mod-SMG", "skill_url": "/skills/modern-ranged-weapons/smg/", "acc": "+1", "range": "10/20/60", "damage": "d6+2s/d8+2s/d8+4s", "act": "1", "clip": "20", "cost": "700", "anchor": "smg-stutter", "description": "A rapid-fire non-lethal weapon.", "clip_cost": "N/A", "hide_modifier": "N/A" }
         ]
       },
       {
         "name": "PL 8: Energy Age",
         "items": [
-          { "name": "Automaser", "skill": "Mod-SMG", "skill_url": "/skills/modern-ranged-weapons/smg/", "acc": "-2", "range": "60/120/400", "damage": "d6w/d6+2w/d4m", "act": "1", "clip": "20", "cost": "1500", "anchor": "automaser" },
-          { "name": "Pistol, hvy maser", "skill": "Mod-pistol", "skill_url": "/skills/modern-ranged-weapons/pistol/", "acc": "-1", "range": "40/200/500", "damage": "d6+1w/2d4+1w/d4+1m", "act": "1", "clip": "30", "cost": "1200", "anchor": "pistol-hvy-maser" },
-          { "name": "Pistol, maser", "skill": "Mod-pistol", "skill_url": "/skills/modern-ranged-weapons/pistol/", "acc": "-1", "range": "20/60/120", "damage": "d6w/d6+2w/d4m", "act": "1", "clip": "40", "cost": "900", "anchor": "pistol-maser" },
-          { "name": "Rifle, hvy maser", "skill": "Mod-rifle", "skill_url": "/skills/modern-ranged-weapons/rifle/", "acc": "-2", "range": "80/200/600", "damage": "d8+1w/d12w/d6+1m", "act": "1", "clip": "60", "cost": "2500", "anchor": "rifle-hvy-maser" },
-          { "name": "Rifle, maser", "skill": "Mod-rifle", "skill_url": "/skills/modern-ranged-weapons/rifle/", "acc": "-2", "range": "60/120/400", "damage": "d6+2w/2d4+2w/d4+2m", "act": "1", "clip": "90", "cost": "1800", "anchor": "rifle-maser" }
+          { "name": "Automaser", "skill": "Mod-SMG", "skill_url": "/skills/modern-ranged-weapons/smg/", "acc": "-2", "range": "60/120/400", "damage": "d6w/d6+2w/d4m", "act": "1", "clip": "20", "cost": "1500", "anchor": "automaser", "description": "A rapid-fire maser weapon.", "clip_cost": "N/A", "hide_modifier": "N/A" },
+          { "name": "Pistol, hvy maser", "skill": "Mod-pistol", "skill_url": "/skills/modern-ranged-weapons/pistol/", "acc": "-1", "range": "40/200/500", "damage": "d6+1w/2d4+1w/d4+1m", "act": "1", "clip": "30", "cost": "1200", "anchor": "pistol-hvy-maser", "description": "A heavy pistol that fires a microwave laser.", "clip_cost": "N/A", "hide_modifier": "N/A" },
+          { "name": "Pistol, maser", "skill": "Mod-pistol", "skill_url": "/skills/modern-ranged-weapons/pistol/", "acc": "-1", "range": "20/60/120", "damage": "d6w/d6+2w/d4m", "act": "1", "clip": "40", "cost": "900", "anchor": "pistol-maser", "description": "A pistol that fires a microwave laser.", "clip_cost": "N/A", "hide_modifier": "N/A" },
+          { "name": "Rifle, hvy maser", "skill": "Mod-rifle", "skill_url": "/skills/modern-ranged-weapons/rifle/", "acc": "-2", "range": "80/200/600", "damage": "d8+1w/d12w/d6+1m", "act": "1", "clip": "60", "cost": "2500", "anchor": "rifle-hvy-maser", "description": "A heavy rifle that fires a microwave laser.", "clip_cost": "N/A", "hide_modifier": "N/A" },
+          { "name": "Rifle, maser", "skill": "Mod-rifle", "skill_url": "/skills/modern-ranged-weapons/rifle/", "acc": "-2", "range": "60/120/400", "damage": "d6+2w/2d4+2w/d4+2m", "act": "1", "clip": "90", "cost": "1800", "anchor": "rifle-maser", "description": "A rifle that fires a microwave laser.", "clip_cost": "N/A", "hide_modifier": "N/A" }
         ]
       }
     ]
   },
   "heavy": {
     "columns": [
-      { "name": "Weapon", "key": "name", "link": true },
+      { "name": "Weapon", "key": "name" },
       { "name": "Skill", "key": "skill" },
       { "name": "Acc", "key": "acc" },
       { "name": "Range (S/M/L)", "key": "range" },
       { "name": "Damage (O/G/A)", "key": "damage" },
       { "name": "Act.", "key": "act" },
       { "name": "Clip", "key": "clip" },
-      { "name": "Cost ($)", "key": "cost" }
+      { "name": "Cost ($)", "key": "cost" },
+      { "name": "Description", "key": "description", "hidden": true },
+      { "name": "Clip Cost", "key": "clip_cost", "hidden": true },
+      { "name": "Hide", "key": "hide_modifier", "hidden": true }
     ],
     "groups": [
       {
         "name": "PL 4: Industrial Age",
         "items": [
-          { "name": "Flamethrower", "skill": "Hvy-dir", "skill_url": "/skills/heavy-weapons/direct-fire/", "acc": "+2", "range": "10/20/40", "damage": "d6w/d8w/d12w", "act": "1", "clip": "10", "cost": "600", "anchor": "flamethrower" },
-          { "name": "Grenade, frag", "skill": "Athl-thr", "skill_url": "/skills/athletics/throw/", "acc": "0", "range": "Per STR", "damage": "d6+2s/d4w/d4+1w", "act": "1", "clip": "1", "cost": "75", "anchor": "grenade-frag" },
-          { "name": "Machine gun, .30", "skill": "Hvy-dir", "skill_url": "/skills/heavy-weapons/direct-fire/", "acc": "-1", "range": "60/200/600", "damage": "d6+1w/d8+1w/d6+1m", "act": "1", "clip": "100", "cost": "1200", "anchor": "machine-gun-30" },
-          { "name": "Rocket launcher", "skill": "Hvy-dir", "skill_url": "/skills/heavy-weapons/direct-fire/", "acc": "+1", "range": "50/200/350", "damage": "d8w/d4+1m/d6+1m", "act": "2", "clip": "1", "cost": "1000", "anchor": "rocket-launcher" }
+          { "name": "Flamethrower", "skill": "Hvy-dir", "skill_url": "/skills/heavy-weapons/direct-fire/", "acc": "+2", "range": "10/20/40", "damage": "d6w/d8w/d12w", "act": "1", "clip": "10", "cost": "600", "anchor": "flamethrower", "description": "A weapon that projects a stream of ignited flammable liquid.", "clip_cost": "N/A", "hide_modifier": "N/A" },
+          { "name": "Grenade, frag", "skill": "Athl-thr", "skill_url": "/skills/athletics/throw/", "acc": "0", "range": "Per STR", "damage": "d6+2s/d4w/d4+1w", "act": "1", "clip": "1", "cost": "75", "anchor": "grenade-frag", "description": "A fragmentation grenade designed to kill or injure personnel.", "clip_cost": "N/A", "hide_modifier": "N/A" },
+          { "name": "Machine gun, .30", "skill": "Hvy-dir", "skill_url": "/skills/heavy-weapons/direct-fire/", "acc": "-1", "range": "60/200/600", "damage": "d6+1w/d8+1w/d6+1m", "act": "1", "clip": "100", "cost": "1200", "anchor": "machine-gun-30", "description": "A fully automatic firearm firing .30 caliber ammunition.", "clip_cost": "N/A", "hide_modifier": "N/A" },
+          { "name": "Rocket launcher", "skill": "Hvy-dir", "skill_url": "/skills/heavy-weapons/direct-fire/", "acc": "+1", "range": "50/200/350", "damage": "d8w/d4+1m/d6+1m", "act": "2", "clip": "1", "cost": "1000", "anchor": "rocket-launcher", "description": "A portable weapon capable of firing unguided rockets.", "clip_cost": "N/A", "hide_modifier": "N/A" }
         ]
       },
       {
         "name": "PL 5: Information Age",
         "items": [
-          { "name": "Grenade launcher", "skill": "Hvy-ind", "skill_url": "/skills/heavy-weapons/indirect-fire/", "acc": "0", "range": "As load", "damage": "As load", "act": "1", "clip": "6", "cost": "800", "anchor": "grenade-launcher" },
-          { "name": "Grenade, concus.", "skill": "Athl-thr", "skill_url": "/skills/athletics/throw/", "acc": "0", "range": "Per STR", "damage": "d6+2s/d8w/d4+1w", "act": "1", "clip": "1", "cost": "100", "anchor": "grenade-concussion" },
-          { "name": "Grenade, incend.", "skill": "Athl-thr", "skill_url": "/skills/athletics/throw/", "acc": "0", "range": "Per STR", "damage": "d4w/d4+2w/d4+3w", "act": "1", "clip": "1", "cost": "100", "anchor": "grenade-incendiary" },
-          { "name": "Grenade, smoke", "skill": "Athl-thr", "skill_url": "/skills/athletics/throw/", "acc": "0", "range": "Per STR", "damage": "Special", "act": "1", "clip": "1", "cost": "50", "anchor": "grenade-smoke" },
-          { "name": "Hvy machine gun", "skill": "Hvy-dir", "skill_url": "/skills/heavy-weapons/direct-fire/", "acc": "-2", "range": "100/400/1000", "damage": "d6+1w/2d4+2w/d8m", "act": "1", "clip": "200", "cost": "2500", "anchor": "hvy-machine-gun" },
-          { "name": "SAM, handheld", "skill": "Hvy-ind", "skill_url": "/skills/heavy-weapons/indirect-fire/", "acc": "0", "range": "1000/2000/4000", "damage": "d4w/d8w/d8+4w", "act": "2", "clip": "1", "cost": "5000", "anchor": "sam-handheld" }
+          { "name": "Grenade launcher", "skill": "Hvy-ind", "skill_url": "/skills/heavy-weapons/indirect-fire/", "acc": "0", "range": "As load", "damage": "As load", "act": "1", "clip": "6", "cost": "800", "anchor": "grenade-launcher", "description": "A weapon designed to fire grenades.", "clip_cost": "N/A", "hide_modifier": "N/A" },
+          { "name": "Grenade, concus.", "skill": "Athl-thr", "skill_url": "/skills/athletics/throw/", "acc": "0", "range": "Per STR", "damage": "d6+2s/d8w/d4+1w", "act": "1", "clip": "1", "cost": "100", "anchor": "grenade-concussion", "description": "A grenade that produces a powerful shockwave to stun or disorient.", "clip_cost": "N/A", "hide_modifier": "N/A" },
+          { "name": "Grenade, incend.", "skill": "Athl-thr", "skill_url": "/skills/athletics/throw/", "acc": "0", "range": "Per STR", "damage": "d4w/d4+2w/d4+3w", "act": "1", "clip": "1", "cost": "100", "anchor": "grenade-incendiary", "description": "A grenade that starts fires and burns targets.", "clip_cost": "N/A", "hide_modifier": "N/A" },
+          { "name": "Grenade, smoke", "skill": "Athl-thr", "skill_url": "/skills/athletics/throw/", "acc": "0", "range": "Per STR", "damage": "Special", "act": "1", "clip": "1", "cost": "50", "anchor": "grenade-smoke", "description": "A grenade that creates a cloud of smoke for concealment.", "clip_cost": "N/A", "hide_modifier": "N/A" },
+          { "name": "Hvy machine gun", "skill": "Hvy-dir", "skill_url": "/skills/heavy-weapons/direct-fire/", "acc": "-2", "range": "100/400/1000", "damage": "d6+1w/2d4+2w/d8m", "act": "1", "clip": "200", "cost": "2500", "anchor": "hvy-machine-gun", "description": "A large caliber machine gun.", "clip_cost": "N/A", "hide_modifier": "N/A" },
+          { "name": "SAM, handheld", "skill": "Hvy-ind", "skill_url": "/skills/heavy-weapons/indirect-fire/", "acc": "0", "range": "1000/2000/4000", "damage": "d4w/d8w/d8+4w", "act": "2", "clip": "1", "cost": "5000", "anchor": "sam-handheld", "description": "A portable surface-to-air missile launcher.", "clip_cost": "N/A", "hide_modifier": "N/A" }
         ]
       },
       {
         "name": "PL 6: Fusion Age",
         "items": [
-          { "name": "Bantam launcher", "skill": "Hvy-ind", "skill_url": "/skills/heavy-weapons/indirect-fire/", "acc": "0", "range": "100/800/4000", "damage": "As load", "act": "1", "clip": "1", "cost": "2000", "anchor": "bantam-launcher" },
-          { "name": "Bantam, antiair", "skill": "Hvy-ind", "skill_url": "/skills/heavy-weapons/indirect-fire/", "acc": "0", "range": "As launcher", "damage": "d4w/d4+2w/d4+3w", "act": "1", "clip": "1", "cost": "1000", "anchor": "bantam-antiair" },
-          { "name": "Bantam, antiper.", "skill": "Hvy-ind", "skill_url": "/skills/heavy-weapons/indirect-fire/", "acc": "0", "range": "As launcher", "damage": "d6w/d8+2w/d8+2w", "act": "1", "clip": "1", "cost": "800", "anchor": "bantam-antiper" },
-          { "name": "Bantam, antiveh.", "skill": "Hvy-ind", "skill_url": "/skills/heavy-weapons/indirect-fire/", "acc": "0", "range": "As launcher", "damage": "d4+2w/d4+4w/d4+1m", "act": "1", "clip": "1", "cost": "1200", "anchor": "bantam-antiveh" },
-          { "name": "Grenade, plasma", "skill": "Athl-thr", "skill_url": "/skills/athletics/throw/", "acc": "0", "range": "Per STR", "damage": "d4+2w/d8+2w/d4m", "act": "1", "clip": "1", "cost": "150", "anchor": "grenade-plasma" },
-          { "name": "Grenade, stun", "skill": "Athl-thr", "skill_url": "/skills/athletics/throw/", "acc": "0", "range": "Per STR", "damage": "d6s/d8s/d8+2s", "act": "1", "clip": "1", "cost": "75", "anchor": "grenade-stun" },
-          { "name": "Hvy mach gun, ch", "skill": "Hvy-dir", "skill_url": "/skills/heavy-weapons/direct-fire/", "acc": "-2", "range": "200/600/1200", "damage": "d8w/2d6w/2d4m", "act": "1", "clip": "100", "cost": "3500", "anchor": "hvy-mach-gun-ch" },
-          { "name": "Rail gun", "skill": "Hvy-dir", "skill_url": "/skills/heavy-weapons/direct-fire/", "acc": "-1", "range": "150/500/1500", "damage": "d6w/d6+2w/d8m", "act": "1", "clip": "20", "cost": "4000", "anchor": "rail-gun" }
+          { "name": "Bantam launcher", "skill": "Hvy-ind", "skill_url": "/skills/heavy-weapons/indirect-fire/", "acc": "0", "range": "100/800/4000", "damage": "As load", "act": "1", "clip": "1", "cost": "2000", "anchor": "bantam-launcher", "description": "A compact missile launcher.", "clip_cost": "N/A", "hide_modifier": "N/A" },
+          { "name": "Bantam, antiair", "skill": "Hvy-ind", "skill_url": "/skills/heavy-weapons/indirect-fire/", "acc": "0", "range": "As launcher", "damage": "d4w/d4+2w/d4+3w", "act": "1", "clip": "1", "cost": "1000", "anchor": "bantam-antiair", "description": "A bantam missile designed to target aircraft.", "clip_cost": "N/A", "hide_modifier": "N/A" },
+          { "name": "Bantam, antiper.", "skill": "Hvy-ind", "skill_url": "/skills/heavy-weapons/indirect-fire/", "acc": "0", "range": "As launcher", "damage": "d6w/d8+2w/d8+2w", "act": "1", "clip": "1", "cost": "800", "anchor": "bantam-antiper", "description": "A bantam missile designed to target personnel.", "clip_cost": "N/A", "hide_modifier": "N/A" },
+          { "name": "Bantam, antiveh.", "skill": "Hvy-ind", "skill_url": "/skills/heavy-weapons/indirect-fire/", "acc": "0", "range": "As launcher", "damage": "d4+2w/d4+4w/d4+1m", "act": "1", "clip": "1", "cost": "1200", "anchor": "bantam-antiveh", "description": "A bantam missile designed to target vehicles.", "clip_cost": "N/A", "hide_modifier": "N/A" },
+          { "name": "Grenade, plasma", "skill": "Athl-thr", "skill_url": "/skills/athletics/throw/", "acc": "0", "range": "Per STR", "damage": "d4+2w/d8+2w/d4m", "act": "1", "clip": "1", "cost": "150", "anchor": "grenade-plasma", "description": "A grenade that releases a burst of superheated plasma.", "clip_cost": "N/A", "hide_modifier": "N/A" },
+          { "name": "Grenade, stun", "skill": "Athl-thr", "skill_url": "/skills/athletics/throw/", "acc": "0", "range": "Per STR", "damage": "d6s/d8s/d8+2s", "act": "1", "clip": "1", "cost": "75", "anchor": "grenade-stun", "description": "A grenade designed to incapacitate targets without killing them.", "clip_cost": "N/A", "hide_modifier": "N/A" },
+          { "name": "Hvy mach gun, ch", "skill": "Hvy-dir", "skill_url": "/skills/heavy-weapons/direct-fire/", "acc": "-2", "range": "200/600/1200", "damage": "d8w/2d6w/2d4m", "act": "1", "clip": "100", "cost": "3500", "anchor": "hvy-mach-gun-ch", "description": "A heavy machine gun firing charged ammunition.", "clip_cost": "N/A", "hide_modifier": "N/A" },
+          { "name": "Rail gun", "skill": "Hvy-dir", "skill_url": "/skills/heavy-weapons/direct-fire/", "acc": "-1", "range": "150/500/1500", "damage": "d6w/d6+2w/d8m", "act": "1", "clip": "20", "cost": "4000", "anchor": "rail-gun", "description": "A weapon that uses electromagnetic rails to accelerate projectiles to high velocities.", "clip_cost": "N/A", "hide_modifier": "N/A" }
         ]
       },
       {
         "name": "PL 7: Gravity Age",
         "items": [
-          { "name": "Arc gun", "skill": "Hvy-dir", "skill_url": "/skills/heavy-weapons/direct-fire/", "acc": "+1", "range": "20/40/100", "damage": "d8+1s/d8w/d6+3w", "act": "1", "clip": "10", "cost": "2000", "anchor": "arc-gun" },
-          { "name": "Cannon, stutter", "skill": "Hvy-dir", "skill_url": "/skills/heavy-weapons/direct-fire/", "acc": "0", "range": "20/40/80", "damage": "d6+2s/d8+3s/2d6+3s", "act": "1", "clip": "20", "cost": "1500", "anchor": "cannon-stutter" },
-          { "name": "Cannon, 25mm sabot", "skill": "Hvy-dir", "skill_url": "/skills/heavy-weapons/direct-fire/", "acc": "-2", "range": "100/200/2000", "damage": "d8w/d4+1m/d6+2m", "act": "2", "clip": "20", "cost": "6000", "anchor": "cannon-25mm-sabot" },
-          { "name": "Grenade, pulse", "skill": "Athl-thr", "skill_url": "/skills/athletics/throw/", "acc": "0", "range": "Per STR", "damage": "d4+2s/d6+2s/d8+2s", "act": "1", "clip": "1", "cost": "100", "anchor": "grenade-pulse" },
-          { "name": "Grenade, tracer", "skill": "Athl-thr", "skill_url": "/skills/athletics/throw/", "acc": "0", "range": "Per STR", "damage": "d4+2w/d6+2w/d4+2m", "act": "1", "clip": "1", "cost": "250", "anchor": "grenade-tracer" },
-          { "name": "Plasma gun", "skill": "Hvy-dir", "skill_url": "/skills/heavy-weapons/direct-fire/", "acc": "0", "range": "40/80/200", "damage": "d8w/d8+3w/d12+3w", "act": "1", "clip": "10", "cost": "3000", "anchor": "plasma-gun" },
-          { "name": "Quantum mini", "skill": "Hvy-dir", "skill_url": "/skills/heavy-weapons/direct-fire/", "acc": "0", "range": "100/250/800", "damage": "d8+1w/d8+3w/d6m", "act": "1", "clip": "50", "cost": "15000", "anchor": "quantum-mini" }
+          { "name": "Arc gun", "skill": "Hvy-dir", "skill_url": "/skills/heavy-weapons/direct-fire/", "acc": "+1", "range": "20/40/100", "damage": "d8+1s/d8w/d6+3w", "act": "1", "clip": "10", "cost": "2000", "anchor": "arc-gun", "description": "A weapon that fires a bolt of electricity.", "clip_cost": "N/A", "hide_modifier": "N/A" },
+          { "name": "Cannon, stutter", "skill": "Hvy-dir", "skill_url": "/skills/heavy-weapons/direct-fire/", "acc": "0", "range": "20/40/80", "damage": "d6+2s/d8+3s/2d6+3s", "act": "1", "clip": "20", "cost": "1500", "anchor": "cannon-stutter", "description": "A heavy non-lethal weapon that disrupts the nervous system.", "clip_cost": "N/A", "hide_modifier": "N/A" },
+          { "name": "Cannon, 25mm sabot", "skill": "Hvy-dir", "skill_url": "/skills/heavy-weapons/direct-fire/", "acc": "-2", "range": "100/200/2000", "damage": "d8w/d4+1m/d6+2m", "act": "2", "clip": "20", "cost": "6000", "anchor": "cannon-25mm-sabot", "description": "A heavy cannon firing 25mm armor-piercing sabot rounds.", "clip_cost": "N/A", "hide_modifier": "N/A" },
+          { "name": "Grenade, pulse", "skill": "Athl-thr", "skill_url": "/skills/athletics/throw/", "acc": "0", "range": "Per STR", "damage": "d4+2s/d6+2s/d8+2s", "act": "1", "clip": "1", "cost": "100", "anchor": "grenade-pulse", "description": "A grenade that emits a kinetic pulse.", "clip_cost": "N/A", "hide_modifier": "N/A" },
+          { "name": "Grenade, tracer", "skill": "Athl-thr", "skill_url": "/skills/athletics/throw/", "acc": "0", "range": "Per STR", "damage": "d4+2w/d6+2w/d4+2m", "act": "1", "clip": "1", "cost": "250", "anchor": "grenade-tracer", "description": "A grenade that tags targets for tracking.", "clip_cost": "N/A", "hide_modifier": "N/A" },
+          { "name": "Plasma gun", "skill": "Hvy-dir", "skill_url": "/skills/heavy-weapons/direct-fire/", "acc": "0", "range": "40/80/200", "damage": "d8w/d8+3w/d12+3w", "act": "1", "clip": "10", "cost": "3000", "anchor": "plasma-gun", "description": "A heavy weapon that fires bolts of plasma.", "clip_cost": "N/A", "hide_modifier": "N/A" },
+          { "name": "Quantum mini", "skill": "Hvy-dir", "skill_url": "/skills/heavy-weapons/direct-fire/", "acc": "0", "range": "100/250/800", "damage": "d8+1w/d8+3w/d6m", "act": "1", "clip": "50", "cost": "15000", "anchor": "quantum-mini", "description": "A miniaturized quantum weapon.", "clip_cost": "N/A", "hide_modifier": "N/A" }
         ]
       },
       {
         "name": "PL 8: Energy Age",
         "items": [
-          { "name": "Bantam, starload", "skill": "Hvy-ind", "skill_url": "/skills/heavy-weapons/indirect-fire/", "acc": "0", "range": "As launcher", "damage": "d8+2w/d4+1m/d6+1m", "act": "1", "clip": "1", "cost": "2500", "anchor": "bantam-starload" },
-          { "name": "Cannon, maser", "skill": "Hvy-dir", "skill_url": "/skills/heavy-weapons/direct-fire/", "acc": "-1", "range": "80/200/600", "damage": "d8w/d4+1m/d8+2m", "act": "2", "clip": "20", "cost": "8000", "anchor": "cannon-maser" },
-          { "name": "Grenade, mass", "skill": "Athl-thr", "skill_url": "/skills/athletics/throw/", "acc": "0", "range": "Per STR", "damage": "d6+2s/d6+2w/d8m", "act": "1", "clip": "1", "cost": "200", "anchor": "grenade-mass" },
-          { "name": "Mass launcher", "skill": "Hvy-ind", "skill_url": "/skills/heavy-weapons/indirect-fire/", "acc": "0", "range": "20/300/1000", "damage": "d6+1w/d6+3w/d4+1m", "act": "1", "clip": "4", "cost": "3000", "anchor": "mass-launcher" }
+          { "name": "Bantam, starload", "skill": "Hvy-ind", "skill_url": "/skills/heavy-weapons/indirect-fire/", "acc": "0", "range": "As launcher", "damage": "d8+2w/d4+1m/d6+1m", "act": "1", "clip": "1", "cost": "2500", "anchor": "bantam-starload", "description": "A bantam missile with a high-yield warhead.", "clip_cost": "N/A", "hide_modifier": "N/A" },
+          { "name": "Cannon, maser", "skill": "Hvy-dir", "skill_url": "/skills/heavy-weapons/direct-fire/", "acc": "-1", "range": "80/200/600", "damage": "d8w/d4+1m/d8+2m", "act": "2", "clip": "20", "cost": "8000", "anchor": "cannon-maser", "description": "A heavy maser cannon.", "clip_cost": "N/A", "hide_modifier": "N/A" },
+          { "name": "Grenade, mass", "skill": "Athl-thr", "skill_url": "/skills/athletics/throw/", "acc": "0", "range": "Per STR", "damage": "d6+2s/d6+2w/d8m", "act": "1", "clip": "1", "cost": "200", "anchor": "grenade-mass", "description": "A grenade that uses gravity fields to cause damage.", "clip_cost": "N/A", "hide_modifier": "N/A" },
+          { "name": "Mass launcher", "skill": "Hvy-ind", "skill_url": "/skills/heavy-weapons/indirect-fire/", "acc": "0", "range": "20/300/1000", "damage": "d6+1w/d6+3w/d4+1m", "act": "1", "clip": "4", "cost": "3000", "anchor": "mass-launcher", "description": "A launcher that fires mass-driver projectiles.", "clip_cost": "N/A", "hide_modifier": "N/A" }
         ]
       }
     ]

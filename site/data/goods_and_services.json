@@ -1,0 +1,227 @@
+{
+  "clothing_and_accessories": {
+    "columns": [
+      { "name": "Item", "key": "name" },
+      { "name": "PL", "key": "pl" },
+      { "name": "Mass (kg)", "key": "mass" },
+      { "name": "Cost ($)", "key": "cost" },
+      { "name": "Description", "key": "description", "hidden": true }
+    ],
+    "groups": [
+      {
+        "name": "Clothing and Accessories",
+        "items": [
+          { "name": "Antiscan weave", "pl": "7", "mass": "-", "cost": "Cost x3", "description": "Micro-circuit fibers can be combined with either Ordinary or CF (carbonate fiber) fabric to create a cloth that hampers several types of scanning technology, including infrared, radar, magnetic detectors, X-rays, and weapon detectors. Any detection check using such equipment is made at a +3 penalty when someone wearing antiscan weave is being targeted. The price of any such item is three times the base cost of the Ordinary version of the item." },
+          { "name": "Backpack", "pl": "4", "mass": "2", "cost": "100", "description": "" },
+          { "name": "Bioholster", "pl": "6", "mass": "1", "cost": "150", "description": "Also known as a smart holster, this is a hip-worn device that is keyed to its owner's bioelectric field. When someone other than the weapon’s owner tries to take the weapon from the holster, the holster locks the weapon in place. The bioholster includes a motion-detection release system that aids fast draws; it negates the +1 penalty for drawing and using a weapon in the same phase." },
+          { "name": "Boots", "pl": "2", "mass": "2", "cost": "100", "description": "" },
+          { "name": "Briefcase", "pl": "3", "mass": "2", "cost": "60", "description": "" },
+          { "name": "Business dress", "pl": "3", "mass": "2", "cost": "300", "description": "" },
+          { "name": "Casual dress", "pl": "3", "mass": "1", "cost": "50", "description": "" },
+          { "name": "Coat", "pl": "1", "mass": "3", "cost": "100", "description": "" },
+          { "name": "Fatigues", "pl": "5", "mass": "2", "cost": "50", "description": "" },
+          { "name": "Formal dress", "pl": "3", "mass": "2", "cost": "500", "description": "" },
+          { "name": "Glasses", "pl": "3", "mass": "-", "cost": "150", "description": "" },
+          { "name": "Goggles, protective", "pl": "5", "mass": "1", "cost": "250", "description": "" },
+          { "name": "Holster/scabbard", "pl": "1", "mass": "1", "cost": "25", "description": "" },
+          { "name": "Jewelry", "pl": "1", "mass": "-", "cost": "varies", "description": "" },
+          { "name": "Pouch", "pl": "2", "mass": "-", "cost": "25", "description": "" },
+          { "name": "Shoes, athletic", "pl": "5", "mass": "1", "cost": "75", "description": "" },
+          { "name": "Shoes, business", "pl": "4", "mass": "1", "cost": "50", "description": "" },
+          { "name": "Shoes, formal", "pl": "3", "mass": "1", "cost": "250", "description": "" },
+          { "name": "Stealth cloak", "pl": "8", "mass": "4", "cost": "7500", "description": "This large hooded poncho made from an antiscan weave with conductive fibers is standard issue for many military forces. When activated, the garment provides the wearer with a +3 bonus on any skill checks involving Stealth. A charge cell lasts for 6 hours of operation and costs $100." },
+          { "name": "Utility harness", "pl": "4", "mass": "1", "cost": "75", "description": "" },
+          { "name": "Watch", "pl": "4", "mass": "-", "cost": "50", "description": "" }
+        ]
+      }
+    ]
+  },
+  "communications": {
+    "columns": [
+      { "name": "Item", "key": "name" },
+      { "name": "PL", "key": "pl" },
+      { "name": "Mass (kg)", "key": "mass" },
+      { "name": "Cost ($)", "key": "cost" },
+      { "name": "Description", "key": "description", "hidden": true }
+    ],
+    "groups": [
+      {
+        "name": "Communications",
+        "items": [
+          { "name": "Cellular phone", "pl": "5", "mass": "1", "cost": "100", "description": "" },
+          { "name": "Comm gear", "pl": "7", "mass": "-", "cost": "175", "description": "" },
+          { "name": "Command link", "pl": "5", "mass": "-", "cost": "250", "description": "" },
+          { "name": "Mass transceiver", "pl": "7", "mass": "200", "cost": "40000", "description": "" },
+          { "name": "Orbital uplink", "pl": "5", "mass": "2", "cost": "200", "description": "" },
+          { "name": "Radio, personal", "pl": "5", "mass": "1", "cost": "175", "description": "" }
+        ]
+      }
+    ]
+  },
+  "medical_gear": {
+    "columns": [
+      { "name": "Item", "key": "name" },
+      { "name": "PL", "key": "pl" },
+      { "name": "Mass (kg)", "key": "mass" },
+      { "name": "Cost ($)", "key": "cost" },
+      { "name": "Description", "key": "description", "hidden": true }
+    ],
+    "groups": [
+      {
+        "name": "Medical Gear",
+        "items": [
+          { "name": "First aid kit", "pl": "4", "mass": "1", "cost": "100", "description": "" },
+          { "name": "Forensics kit", "pl": "5", "mass": "5", "cost": "250", "description": "" },
+          { "name": "Life support pack", "pl": "7", "mass": "10", "cost": "5000", "description": "" },
+          { "name": "Medical gauntlet", "pl": "7", "mass": "2", "cost": "1250", "description": "" },
+          { "name": "Medical scanner", "pl": "6", "mass": "10", "cost": "3000", "description": "" },
+          { "name": "Anesthetic", "pl": "4", "mass": "-", "cost": "50", "description": "" },
+          { "name": "Antibiotic", "pl": "5", "mass": "-", "cost": "50", "description": "" },
+          { "name": "Antiradiation", "pl": "6", "mass": "-", "cost": "500", "description": "" },
+          { "name": "Antivenom", "pl": "5", "mass": "-", "cost": "50", "description": "" },
+          { "name": "Coagulant", "pl": "6", "mass": "-", "cost": "75", "description": "" },
+          { "name": "Psi-enhancer", "pl": "7", "mass": "-", "cost": "50", "description": "" },
+          { "name": "Sedative", "pl": "5", "mass": "-", "cost": "25", "description": "Sedatives (PL 5) are used to calm people who might be dangerous to themselves or those around them. Sedated individuals suffer a +3 penalty to all action checks and actions. That penalty is reduced by 1 step per hour (or some other time unit, as determined by the Gamemaster) until the effect of the drug wears off. Using a sedative against an unwilling target in combat requires a successful Unarmed Attack roll, and the victim is entitled to a Constitution feat check to fight off the effects: [Ordinary], penalty reduced to +2; [Good], penalty reduced to +1; [Amazing], drug has no effect." },
+          { "name": "Stimulant", "pl": "5", "mass": "-", "cost": "50", "description": "" },
+          { "name": "Surgical kit", "pl": "6", "mass": "15", "cost": "2500", "description": "" },
+          { "name": "Trauma pack I", "pl": "6", "mass": "1", "cost": "750", "description": "" },
+          { "name": "Trauma pack II", "pl": "7", "mass": "1", "cost": "1500", "description": "" }
+        ]
+      }
+    ]
+  },
+  "tools_and_electronics": {
+    "columns": [
+      { "name": "Item", "key": "name" },
+      { "name": "PL", "key": "pl" },
+      { "name": "Mass (kg)", "key": "mass" },
+      { "name": "Cost ($)", "key": "cost" },
+      { "name": "Description", "key": "description", "hidden": true }
+    ],
+    "groups": [
+      {
+        "name": "Tools and Electronics",
+        "items": [
+          { "name": "Chain hoist", "pl": "3", "mass": "50", "cost": "500", "description": "" },
+          { "name": "Cutting torch", "pl": "4", "mass": "15", "cost": "500", "description": "" },
+          { "name": "Demolitions pack", "pl": "5", "mass": "20", "cost": "500", "description": "" },
+          { "name": "Generator, portable", "pl": "5", "mass": "50", "cost": "1000", "description": "" },
+          { "name": "Instrument pack", "pl": "5", "mass": "10", "cost": "400", "description": "" },
+          { "name": "Rescue pack", "pl": "5", "mass": "25", "cost": "1000", "description": "" },
+          { "name": "Toolkit", "pl": "4", "mass": "10", "cost": "300", "description": "" },
+          { "name": "Toolkit, special", "pl": "4", "mass": "10", "cost": "500", "description": "" },
+          { "name": "Walker", "pl": "6", "mass": "200", "cost": "2000", "description": "" },
+          { "name": "Weight neutralizer", "pl": "7", "mass": "20", "cost": "300", "description": "" },
+          { "name": "Workshop, portable", "pl": "6", "mass": "100", "cost": "10000", "description": "" }
+        ]
+      }
+    ]
+  },
+  "sensors": {
+    "columns": [
+      { "name": "Item", "key": "name" },
+      { "name": "PL", "key": "pl" },
+      { "name": "Mass (kg)", "key": "mass" },
+      { "name": "Cost ($)", "key": "cost" },
+      { "name": "Description", "key": "description", "hidden": true }
+    ],
+    "groups": [
+      {
+        "name": "Sensors",
+        "items": [
+          { "name": "Audiorecorder", "pl": "4", "mass": "1", "cost": "100", "description": "" },
+          { "name": "Binoculars", "pl": "3", "mass": "2", "cost": "100", "description": "" },
+          { "name": "Compass", "pl": "1", "mass": "-", "cost": "25", "description": "" },
+          { "name": "Goggles, imaging", "pl": "6", "mass": "1", "cost": "1000", "description": "" },
+          { "name": "Goggles, infrared", "pl": "5", "mass": "1", "cost": "750", "description": "" },
+          { "name": "GPS receiver", "pl": "5", "mass": "1", "cost": "200", "description": "" },
+          { "name": "Holorecorder", "pl": "6", "mass": "2", "cost": "400", "description": "" },
+          { "name": "Microphone, para.", "pl": "5", "mass": "4", "cost": "300", "description": "" },
+          { "name": "Psi-detector", "pl": "7", "mass": "2", "cost": "2000", "description": "" },
+          { "name": "Radar gauntlet", "pl": "7", "mass": "2", "cost": "1500", "description": "" },
+          { "name": "Sensor boom", "pl": "6", "mass": "5", "cost": "500", "description": "" },
+          { "name": "Sensor gauntlet", "pl": "6", "mass": "2", "cost": "1000", "description": "" },
+          { "name": "Surveillance gear", "pl": "5", "mass": "10", "cost": "500", "description": "" },
+          { "name": "Videorecorder", "pl": "5", "mass": "2", "cost": "200", "description": "" },
+          { "name": "Weapon detector", "pl": "5", "mass": "100", "cost": "5000", "description": "" }
+        ]
+      }
+    ]
+  },
+  "general_gear": {
+    "columns": [
+      { "name": "Item", "key": "name" },
+      { "name": "PL", "key": "pl" },
+      { "name": "Mass (kg)", "key": "mass" },
+      { "name": "Cost ($)", "key": "cost" },
+      { "name": "Description", "key": "description", "hidden": true }
+    ],
+    "groups": [
+      {
+        "name": "General Gear",
+        "items": [
+          { "name": "Animal, guard", "pl": "1", "mass": "varies", "cost": "250", "description": "" },
+          { "name": "Animal, mount", "pl": "1", "mass": "varies", "cost": "500", "description": "" },
+          { "name": "Animal, pack", "pl": "1", "mass": "varies", "cost": "100", "description": "" },
+          { "name": "Animal, pet", "pl": "1", "mass": "varies", "cost": "50", "description": "" },
+          { "name": "Bedroll", "pl": "1", "mass": "4", "cost": "25", "description": "" },
+          { "name": "Biolock", "pl": "6", "mass": "1", "cost": "200", "description": "A lock that uses biometric authentication (e.g., fingerprint, retina scan) for security." },
+          { "name": "Boots, magnetic", "pl": "6", "mass": "4", "cost": "350", "description": "Boots equipped with magnetic soles for walking on metal surfaces in zero-gravity or inverted environments." },
+          { "name": "Cabin, portable", "pl": "5", "mass": "50", "cost": "650", "description": "" },
+          { "name": "Camping unit", "pl": "5", "mass": "40", "cost": "300", "description": "" },
+          { "name": "Candle", "pl": "1", "mass": "-", "cost": "1", "description": "" },
+          { "name": "Climate weave", "pl": "6", "mass": "-", "cost": "Cost x2", "description": "Fabric woven with micro-filaments that can actively regulate temperature, providing protection against extreme heat or cold." },
+          { "name": "Climbing gear", "pl": "2", "mass": "10", "cost": "100", "description": "" },
+          { "name": "Cooler", "pl": "4", "mass": "5", "cost": "50", "description": "" },
+          { "name": "Duct tape", "pl": "4", "mass": "1", "cost": "10/roll", "description": "" },
+          { "name": "Ear plugs", "pl": "4", "mass": "-", "cost": "10", "description": "" },
+          { "name": "E-suit, soft", "pl": "6", "mass": "5", "cost": "2500", "description": "A flexible environmental suit for protection against hazardous atmospheres or vacuum." },
+          { "name": "E-suit, hard", "pl": "7", "mass": "20", "cost": "4000", "description": "A rigid, armored environmental suit for extreme conditions, offering enhanced protection and life support." },
+          { "name": "Emergency beacon", "pl": "5", "mass": "1", "cost": "250", "description": "" },
+          { "name": "Fire extinguisher", "pl": "4", "mass": "2", "cost": "25", "description": "" },
+          { "name": "Flare", "pl": "3", "mass": "-", "cost": "5", "description": "" },
+          { "name": "Flashlight", "pl": "4", "mass": "1", "cost": "25", "description": "" },
+          { "name": "Grappling hook", "pl": "3", "mass": "2", "cost": "20", "description": "" },
+          { "name": "Habitat dome", "pl": "6", "mass": "100", "cost": "2500", "description": "" },
+          { "name": "Handcuffs", "pl": "4", "mass": "1", "cost": "25", "description": "" },
+          { "name": "Heater, portable", "pl": "4", "mass": "10", "cost": "75", "description": "" },
+          { "name": "Holoviewer", "pl": "6", "mass": "1", "cost": "500", "description": "" },
+          { "name": "Instant glue", "pl": "5", "mass": "-", "cost": "50", "description": "" },
+          { "name": "Jumpsuit", "pl": "5", "mass": "2", "cost": "50", "description": "" },
+          { "name": "Lantern", "pl": "2", "mass": "2", "cost": "20", "description": "" },
+          { "name": "Lighter", "pl": "3", "mass": "-", "cost": "5", "description": "" },
+          { "name": "Lockpick set", "pl": "3", "mass": "1", "cost": "250", "description": "" },
+          { "name": "Machete", "pl": "1", "mass": "2", "cost": "25", "description": "" },
+          { "name": "Magnetic clamp", "pl": "6", "mass": "1", "cost": "50", "description": "" },
+          { "name": "Matches", "pl": "2", "mass": "-", "cost": "1/box", "description": "" },
+          { "name": "Mirror", "pl": "1", "mass": "-", "cost": "5", "description": "" },
+          { "name": "Music gauntlet", "pl": "6", "mass": "1", "cost": "100", "description": "" },
+          { "name": "Musical instrument", "pl": "1", "mass": "varies", "cost": "varies", "description": "" },
+          { "name": "Padlock", "pl": "2", "mass": "1", "cost": "25", "description": "" },
+          { "name": "Parachute", "pl": "4", "mass": "10", "cost": "500", "description": "" },
+          { "name": "Helm", "pl": "7", "mass": "2", "cost": "5000", "description": "A device that fits over the head, designed to suppress psionic abilities. It imposes a +3 penalty to all psionic skill checks." },
+          { "name": "Collar", "pl": "7", "mass": "4", "cost": "10000", "description": "A neck-worn device that emits a disruptive field, making psionic activity difficult. It imposes a +5 penalty to all psionic skill checks." },
+          { "name": "Implant", "pl": "8", "mass": "-", "cost": "25000", "description": "A surgically implanted device that directly interferes with psionic brain functions, effectively neutralizing psionic abilities. It imposes a +7 penalty to all psionic skill checks." },
+          { "name": "Raft, inflatable", "pl": "4", "mass": "10", "cost": "200", "description": "" },
+          { "name": "Rations (1 wk.)", "pl": "1", "mass": "5", "cost": "50", "description": "" },
+          { "name": "Respirator mask", "pl": "5", "mass": "1", "cost": "100", "description": "" },
+          { "name": "Rope, 50 m", "pl": "1", "mass": "5", "cost": "25", "description": "" },
+          { "name": "Scuba gear", "pl": "4", "mass": "20", "cost": "400", "description": "" },
+          { "name": "Skis", "pl": "1", "mass": "4", "cost": "150", "description": "" },
+          { "name": "Stove, portable", "pl": "4", "mass": "2", "cost": "50", "description": "" },
+          { "name": "Suitcase", "pl": "3", "mass": "4", "cost": "50", "description": "" },
+          { "name": "Survival gear", "pl": "4", "mass": "5", "cost": "200", "description": "" },
+          { "name": "Tent", "pl": "1", "mass": "10", "cost": "100", "description": "" },
+          { "name": "Torch", "pl": "1", "mass": "1", "cost": "1", "description": "" },
+          { "name": "Vacuum mask", "pl": "7", "mass": "1", "cost": "150", "description": "" },
+          { "name": "Videoviewer", "pl": "5", "mass": "1", "cost": "200", "description": "" },
+          { "name": "Water condenser", "pl": "6", "mass": "15", "cost": "300", "description": "" },
+          { "name": "Water purifier", "pl": "5", "mass": "1", "cost": "100", "description": "" },
+          { "name": "Weapon biokey", "pl": "6", "mass": "-", "cost": "100", "description": "A biometric key that allows only the authorized user to operate a weapon." },
+          { "name": "Weather monitor", "pl": "5", "mass": "2", "cost": "250", "description": "" },
+          { "name": "Zero-g web", "pl": "6", "mass": "2", "cost": "100", "description": "" }
+        ]
+      }
+    ]
+  }
+}

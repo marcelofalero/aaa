@@ -1,7 +1,10 @@
-<footer class="{{ .Site.Params.background_color_class | compare.Default "bg-black" }} bottom-0 w-100 pa3" role="contentinfo">
-  <div class="flex justify-between">
-  <a class="f4 fw4 hover-white white-70 dn dib-ns pv2 ph3 no-underline" href="{{ .Site.Home.Permalink }}" >
+<footer class="bg-panel-alt bottom-0 w-100 pa3 bt b--border-purple" role="contentinfo">
+  <div class="flex justify-between items-center">
+  <a class="f6 fw4 hover-neon-cyan silver dn dib-ns pv2 ph3 no-underline ttu tracked" href="{{ .Site.Home.Permalink }}" >
     &copy; {{ with .Site.Copyright | compare.Default .Site.Title }} {{ . | safe.HTML }} {{ now.Format "2006"}} {{ end }}
   </a>
+  <div class="f7 silver o-50">
+    SYSTEM STATUS: ONLINE
+  </div>
   </div>
 </footer>

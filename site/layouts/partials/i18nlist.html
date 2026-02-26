@@ -1,10 +1,12 @@
 {{ if .IsTranslated }}
-<h4>{{ lang.Translate "translations" }}</h4>
-<ul class="{{ compare.Conditional (compare.Eq $.Site.Language.LanguageDirection "rtl") "pr0 ml3" "pl0 mr3" }}">
+<div class="flex items-center ml3">
+  <span class="f6 neon-purple ttu tracked mr2">{{ lang.Translate "translations" }}:</span>
+  <ul class="list pl0 mv0 flex">
     {{ range .Translations }}
-    <li class="list f5 f4-ns fw4 dib {{ compare.Conditional (compare.Eq $.Site.Language.LanguageDirection "rtl") "pl3" "pr3" }}">
-        <a class="hover-white white-90 no-underline" href="{{ .RelPermalink }}">{{ .Lang }}</a>
+    <li class="list f6 fw4 dib ml2">
+        <a class="hover-neon-cyan silver no-underline ttu transition-all" href="{{ .RelPermalink }}">{{ .Lang }}</a>
     </li>
     {{ end}}
-</ul>
+  </ul>
+</div>
 {{ end }}

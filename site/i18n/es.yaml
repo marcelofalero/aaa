@@ -1,0 +1,12 @@
+readingTime:
+  other: "{{ .Count }} minutos de lectura"
+wordCount:
+  other: "{{ .Count }} palabras"
+by:
+  other: "Por"
+readMore:
+  other: "Leer más"
+translations:
+  other: "Traducciones"
+pageTitle:
+  other: "{{ .Name }}"

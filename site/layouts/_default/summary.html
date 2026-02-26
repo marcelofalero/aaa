@@ -1,0 +1,19 @@
+<div class="w-100 mb4 nested-copy-line-height relative sci-fi-card pa0">
+  <div class="pa4 overflow-hidden">
+    {{with .CurrentSection.Title }}<span class="f7 db neon-purple ttu tracked mb2 o-80">{{ . }}</span>{{end}}
+    <h1 class="f3 mt0 mb3">
+      <a href="{{ .RelPermalink }}" class="link neon-cyan hover-neon-purple dim no-underline">
+        {{ .Title }}
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height silver mb3">
+      {{ .Summary }}
+    </div>
+    <a href="{{.RelPermalink}}" class="ba b--neon-cyan bg-transparent br1 neon-cyan dib f7 hover-bg-neon-cyan hover-white link ph3 pv2 ttu tracked transition-all no-underline">
+      {{ $.Param "read_more_copy" | compare.Default (lang.Translate "readMore") }} >>
+    </a>
+  </div>
+  <div class="absolute bottom-0 right-0 o-05 f-headline select-none pointer-events-none z-0" style="line-height: 0.8; margin-bottom: -10px; margin-right: -10px;">
+    {{ substr .Title 0 1 }}
+  </div>
+</div>

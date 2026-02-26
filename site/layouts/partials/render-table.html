@@ -1,37 +1,132 @@
 {{ $data := . }}
 {{ if (reflect.IsMap $data) }}
+
+{{/* Calculate visible columns count */}}
+{{ $colCount := 0 }}
+{{ range $data.columns }}
+  {{ if and (ne .key "description") (not .hidden) }}{{ $colCount = add $colCount 1 }}{{ end }}
+{{ end }}
+
 <div class="table-wrapper">
-<table>
+<table class="interactive-table">
 <thead>
 <tr>
 {{ range $data.columns }}
-<th>{{ .name }}</th>
+  {{ if and (ne .key "description") (not .hidden) }}
+    <th>{{ .name }}</th>
+  {{ end }}
 {{ end }}
 </tr>
 </thead>
 <tbody>
 {{ range $data.groups }}
-<tr class="table-separator"><td colspan="{{ len $data.columns }}">{{ .name }}</td></tr>
-{{ range .items }}
-<tr>
-{{ $item := . }}
+<tr class="table-separator"><td colspan="{{ $colCount }}">{{ .name }}</td></tr>
+{{ range $index, $item := .items }}
+{{ $rowId := printf "desc-%s-%d" ($item.name | urlize) $index }}
+{{ $hasHiddenCols := false }}
+{{ range $data.columns }}{{ if .hidden }}{{ $hasHiddenCols = true }}{{ end }}{{ end }}
+<tr class="data-row {{ if or $item.description $hasHiddenCols }}has-description{{ end }}" data-target="{{ $rowId }}">
 {{ range $data.columns }}
-<td>
-  {{ if .link }}
-    <a href="#{{ $item.anchor }}">{{ index $item .key }}</a>
-  {{ else if and (eq .key "skill") (index $item "skill_url") }}
-    <a href="{{ index $item "skill_url" }}">{{ index $item .key }}</a>
-  {{ else }}
-    {{ index $item .key }}
+  {{ if and (ne .key "description") (not .hidden) }}
+    <td>
+      {{ if .link }}
+        <a href="#{{ $item.anchor }}">{{ index $item .key }}</a>
+      {{ else if and (eq .key "skill") (index $item "skill_url") }}
+        <a href="{{ index $item "skill_url" }}">{{ index $item .key }}</a>
+      {{ else }}
+        {{ index $item .key }}
+      {{ end }}
+    </td>
   {{ end }}
-</td>
 {{ end }}
 </tr>
+{{ if or $item.description $hasHiddenCols }}
+<tr id="{{ $rowId }}" class="description-row" style="display: none;">
+  <td colspan="{{ $colCount }}" class="pa3 bg-panel-alt silver i" style="border-top: none;">
+    <div class="flex flex-column">
+      {{ if $item.description }}
+      <div class="flex items-start mb2">
+        <span class="neon-amber mr2">›</span>
+        <span>{{ $item.description }}</span>
+      </div>
+      {{ end }}
+
+      <div class="flex flex-wrap">
+      {{ range $data.columns }}
+        {{ if .hidden }}
+          {{ $val := index $item .key }}
+          {{ if $val }}
+          <div class="flex items-center mr4 mb1 f6">
+            <span class="neon-green mr2">{{ .name }}:</span>
+            <span class="silver">{{ $val }}</span>
+          </div>
+          {{ end }}
+        {{ end }}
+      {{ end }}
+      </div>
+    </div>
+  </td>
+</tr>
+{{ end }}
 {{ end }}
 {{ end }}
 </tbody>
 </table>
 </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const tables = document.querySelectorAll('.interactive-table');
+
+  tables.forEach(table => {
+    table.addEventListener('click', function(e) {
+      // Find the closest row, but ensure it's a data-row (not a separator or description)
+      const row = e.target.closest('.data-row');
+
+      // If we clicked a link inside the row, let it function normally
+      if (e.target.tagName === 'A') return;
+
+      if (!row) return;
+
+      const targetId = row.getAttribute('data-target');
+      const targetRow = document.getElementById(targetId);
+
+      if (targetRow) {
+        // Close all other description rows in this table
+        const allDescRows = table.querySelectorAll('.description-row');
+        const allDataRows = table.querySelectorAll('.data-row');
+
+        allDescRows.forEach(r => {
+          if (r !== targetRow) r.style.display = 'none';
+        });
+
+        allDataRows.forEach(r => {
+          if (r !== row) r.classList.remove('active-row');
+        });
+
+        // Toggle current
+        if (targetRow.style.display === 'none') {
+          targetRow.style.display = 'table-row';
+          row.classList.add('active-row');
+        } else {
+          targetRow.style.display = 'none';
+          row.classList.remove('active-row');
+        }
+      }
+    });
+  });
+});
+</script>
+
+<style>
+.data-row { cursor: pointer; transition: background-color 0.2s; }
+.data-row:hover { background-color: rgba(255, 176, 0, 0.05); }
+.active-row { background-color: rgba(255, 176, 0, 0.1) !important; }
+.description-row td { padding: 1rem 1.5rem; color: var(--text-dim); }
+.neon-amber { color: var(--accent-amber); }
+.neon-green { color: var(--accent-green); }
+</style>
+
 {{ else }}
   <p>Error: Invalid data format for table.</p>
 {{ end }}

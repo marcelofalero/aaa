@@ -1,6 +1,6 @@
 +++
 title = "Equipment"
-weight = 3
+weight = 8
 +++
 
 This section contains all available equipment, including weapons, armor, computers, vehicles, and cybernetic enhancements.

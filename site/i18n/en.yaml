@@ -1,0 +1,12 @@
+readingTime:
+  other: "{{ .Count }} minutes read"
+wordCount:
+  other: "{{ .Count }} words"
+by:
+  other: "By"
+readMore:
+  other: "Read more"
+translations:
+  other: "Translations"
+pageTitle:
+  other: "{{ .Name }}"
