@@ -1,10 +1,11 @@
 <script>
-  (function() {
+  (function () {
     try {
       // Use Hugo template variables to get current page info
       const currentPage = {
         title: "{{ if .IsHome }}Index{{ else }}{{ .Title }}{{ end }}",
-        url: "{{ .RelPermalink }}"
+        url: "{{ .RelPermalink }}",
+        translationKey: "{{ .TranslationKey }}"
       };
 
       let history = [];
@@ -15,8 +16,8 @@
         history = [];
       }
 
-      // Remove any existing entry for the current page to avoid duplicates
-      history = history.filter(page => page.url !== currentPage.url);
+      // Remove any existing entry for the current page to avoid duplicates, including its translations
+      history = history.filter(page => page.url !== currentPage.url && (!page.translationKey || page.translationKey !== currentPage.translationKey));
 
       // Add current page to the end
       history.push(currentPage);
@@ -33,3 +34,5 @@
     }
   })();
 </script>
+
+<script src="/js/table-toggle.js"></script>

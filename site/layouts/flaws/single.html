@@ -1,0 +1,15 @@
+{{ define "main" }}
+<article class="main-container">
+  <header class="mt4 w-100">
+    {{ partial "breadcrumbs.html" . }}
+    <h1 class="f1 athelas mt3 mb1">{{ .Title }}</h1>
+    <div class="meta-data flex items-center f5 silver mb4">
+      <div class="mr4"><strong>Bonus Points:</strong> <span class="neon-amber">{{ .Params.bonus_points }}</span></div>
+      <div><strong>Ability:</strong> <span class="neon-amber">{{ .Params.ability }}</span></div>
+    </div>
+  </header>
+  <div class="nested-copy-line-height lh-copy f4 nested-links mid-gray">
+    {{ .Content }}
+  </div>
+</article>
+{{ end }}

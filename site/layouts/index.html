@@ -1,55 +1,96 @@
 {{ define "main" }}
 <div class="main-container">
   {{ partial "breadcrumbs.html" . }}
-  <h1 class="f1 tc athelas mt3 mb5 neon-text-glitch" data-text="SYSTEM INDEX">SYSTEM INDEX</h1>
+
   <div class="grid-index">
     {{ range .Site.Sections.ByWeight }}
-      <section class="sci-fi-card relative overflow-hidden flex flex-column">
-        <div class="card-header bb b--white-10 pb2 mb3 flex justify-between items-center">
-            <h2 class="f3 mv0">
-            <a href="{{ .RelPermalink }}" class="link white hover-neon-cyan dim">{{ .Title }}</a>
-            </h2>
-            <span class="f6 code o-50">SEC-{{ printf "%02d" .Weight }}</span>
-        </div>
+    <section class="sci-fi-card">
+      <div class="card-header">
+        <h2 class="f3 mv0 w-100 tc">
+          <a href="{{ .RelPermalink }}" class="link white hover-neon-cyan dim">{{ .Title }}</a>
+        </h2>
+      </div>
 
-        <div class="flex-auto">
+      <div class="flex-auto">
         {{ if eq .Section "skills" }}
-          {{/* Skills specific layout */}}
-          {{ range .Pages.GroupByParam "category" }}
-            <div class="mb3">
-              <h3 class="f6 ttu tracked neon-purple mb2 o-80">{{ .Key }}</h3>
-              <ul class="list pl0 ml0">
-                {{ range .Pages.ByTitle }}
-                  <li class="mb1 flex items-center">
-                    <span class="mr2 neon-cyan">›</span>
-                    <a href="{{ .RelPermalink }}" class="link silver hover-white f5">{{ .Title }}</a>
-                  </li>
-                {{ end }}
-              </ul>
-            </div>
-          {{ end }}
-        {{ else }}
-          {{/* Default section layout */}}
-          <ul class="list pl0 ml0">
-            {{ range .Pages.ByWeight | first 5 }}
-              <li class="mb2 flex items-center">
-                <span class="mr2 neon-cyan">›</span>
-                <a href="{{ .RelPermalink }}" class="link silver hover-white f5">{{ .Title }}</a>
-                {{ with .Description }}
-                  <span class="dn db-ns f7 ml2 o-50 truncate w-50">{{ . }}</span>
-                {{ end }}
-              </li>
-            {{ end }}
-          </ul>
-        {{ end }}
-        </div>
+        {{ $groups := .Pages.GroupByParam "category" }}
+        {{ $categoryOrder := slice "Combat" "Psionics" "Social" "Technical" "Other" }}
 
-        {{ if gt (len .Pages) 5 }}
-        <div class="mt3 tr pt2 bt b--white-05">
-            <a href="{{ .RelPermalink }}" class="f7 link neon-cyan dim ttu tracked">Access All Data >></a>
+        {{ range $categoryOrder }}
+        {{ $categoryName := . }}
+        {{ range where $groups "Key" $categoryName }}
+        <div class="mb3">
+          <h3 class="f6 ttu tracked neon-cyan mb2 o-80">
+            {{ if eq $.Site.Language.Lang "es" }}
+            {{ if eq .Key "Combat" }}Combate
+            {{ else if eq .Key "Psionics" }}Psiónica
+            {{ else if eq .Key "Social" }}Social
+            {{ else if eq .Key "Technical" }}Técnico
+            {{ else if eq .Key "Other" }}Otro
+            {{ else }}{{ .Key }}{{ end }}
+            {{ else }}
+            {{ .Key }}
+            {{ end }}
+          </h3>
+          <p class="f6 lh-copy">
+            {{ $skills := .Pages.ByTitle }}
+            {{ range $index, $skill := $skills }}
+            <a href="{{ .RelPermalink }}" class="link silver hover-white">{{ .Title }}</a>{{ if ne $index (sub (len
+            $skills) 1) }}, {{ end }}
+            {{ end }}
+          </p>
         </div>
         {{ end }}
-      </section>
+        {{ end }}
+        {{ else if eq .Section "perks_flaws" }}
+        <div class="mb3">
+          <h3 class="f6 ttu tracked neon-cyan mb2 o-80">{{ if eq .Site.Language.Lang "es" }}Beneficios{{ else }}Perks{{
+            end }}</h3>
+          <p class="f6 lh-copy">
+            {{ $perks := where .Site.RegularPages "Section" "perks_flaws" }}
+            {{ range $index, $perk := $perks }}
+            <a href="{{ .RelPermalink }}" class="link silver hover-white">{{ .Title }}</a>{{ if ne $index (sub (len
+            $perks) 1) }}, {{ end }}
+            {{ end }}
+          </p>
+        </div>
+        <div class="mb3">
+          <h3 class="f6 ttu tracked neon-cyan mb2 o-80">{{ if eq .Site.Language.Lang "es" }}Defectos{{ else }}Flaws{{
+            end }}</h3>
+          <p class="f6 lh-copy">
+            {{ $flaws := where .Site.RegularPages "Section" "flaws" }}
+            {{ range $index, $flaw := $flaws }}
+            <a href="{{ .RelPermalink }}" class="link silver hover-white">{{ .Title }}</a>{{ if ne $index (sub (len
+            $flaws) 1) }}, {{ end }}
+            {{ end }}
+          </p>
+        </div>
+        {{ else }}
+        {{/* Default section layout */}}
+        <ul>
+          {{ range .Pages.ByWeight | first 5 }}
+          <li class="flex items-center">
+            <span class="mr2 neon-cyan">›</span>
+            <a href="{{ .RelPermalink }}" class="link silver hover-white f5 whitespace-nowrap">{{ .Title }}</a>
+            {{ with .Description }}
+            <div class="toc-leader flex-auto mx2"
+              style="border-bottom: 1px dotted rgba(255,255,255,0.2); margin: 0 10px; position:relative; top:-2px;">
+            </div>
+            <span class="toc-description dn db-ns f7 o-50 truncate" style="max-width: 50%;">{{ . }}</span>
+            {{ end }}
+          </li>
+          {{ end }}
+        </ul>
+        {{ end }}
+      </div>
+
+      {{ if gt (len .Pages) 5 }}
+      <div class="mt3 tr pt2 bt b--white-05">
+        <a href="{{ .RelPermalink }}" class="f7 link neon-cyan dim ttu tracked">{{ if eq .Site.Language.Lang "es"
+          }}Acceder a todos los datos >>{{ else }}Access All Data >>{{ end }}</a>
+      </div>
+      {{ end }}
+    </section>
     {{ end }}
   </div>
 </div>

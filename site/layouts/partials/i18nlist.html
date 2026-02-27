@@ -1,12 +1,23 @@
-{{ if .IsTranslated }}
-<div class="flex items-center ml3">
-  <span class="f6 neon-purple ttu tracked mr2">{{ lang.Translate "translations" }}:</span>
-  <ul class="list pl0 mv0 flex">
-    {{ range .Translations }}
-    <li class="list f6 fw4 dib ml2">
-        <a class="hover-neon-cyan silver no-underline ttu transition-all" href="{{ .RelPermalink }}">{{ .Lang }}</a>
-    </li>
-    {{ end}}
-  </ul>
-</div>
+{{ if eq .Site.Language.Lang "en" }}
+{{ $targetUrl := "/es/" }}
+{{ range .Translations }}
+{{ if eq .Language.Lang "es" }}
+{{ $targetUrl = .RelPermalink }}
+{{ end }}
+{{ end }}
+<a class="f6 fw4 hover-neon-cyan silver link dn dib-ns pv2 ph3 no-underline ttu tracked border-0"
+  href="{{ $targetUrl }}" style="border-bottom: none !important;">
+  [ Español ]
+</a>
+{{ else }}
+{{ $targetUrl := "/" }}
+{{ range .Translations }}
+{{ if eq .Language.Lang "en" }}
+{{ $targetUrl = .RelPermalink }}
+{{ end }}
+{{ end }}
+<a class="f6 fw4 hover-neon-cyan silver link dn dib-ns pv2 ph3 no-underline ttu tracked border-0"
+  href="{{ $targetUrl }}" style="border-bottom: none !important;">
+  [ English ]
+</a>
 {{ end }}

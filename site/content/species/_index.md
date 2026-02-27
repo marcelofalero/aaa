@@ -21,6 +21,3 @@ In **AAA**, players can choose from several sentient species. Each species offer
 
 ---
 
-## The Species of the Galaxy
-
-{{% list %}}
