@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vehicle Operation on AAA</title>
+    <link>http://localhost:1313/skills/vehicle-operation/</link>
+    <description>Recent content in Vehicle Operation on AAA</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="http://localhost:1313/skills/vehicle-operation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Air Vehicle</title>
+      <link>http://localhost:1313/skills/vehicle-operation/air-vehicle/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/skills/vehicle-operation/air-vehicle/</guid>
+      <description>&lt;p&gt;&lt;em&gt;This skill can’t be used untrained.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;This specialty skill enables a hero to become trained in the use of a specific type of air vehicle (e.g., propeller planes, helicopters, jet fighters). If he wants to be skilled in more than one type, he must purchase each separately.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Land Vehicle</title>
+      <link>http://localhost:1313/skills/vehicle-operation/land-vehicle/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/skills/vehicle-operation/land-vehicle/</guid>
+      <description>&lt;p&gt;This specialty skill enables a hero to become trained in the use of a specific type of land vehicle (e.g., automobiles, motorcycles, race cars, tanks). If he wants to be skilled in more than one type, he must purchase each separately.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Sea Vehicle</title>
+      <link>http://localhost:1313/skills/vehicle-operation/sea-vehicle/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/skills/vehicle-operation/sea-vehicle/</guid>
+      <description>&lt;p&gt;Operating surface ships and submersibles.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Space Vehicle</title>
+      <link>http://localhost:1313/skills/vehicle-operation/space-vehicle/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/skills/vehicle-operation/space-vehicle/</guid>
+      <description>&lt;p&gt;&lt;em&gt;This skill can’t be used untrained.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;This specialty skill enables a hero to become trained in the use of a specific type of space vehicle (e.g., space fighters, scouts, medium freighters, capital ships). If he wants to be skilled in more than one type, he must purchase each separately.&#xA;This skill is also used to operate the helm of large, multicrewed space vessels.&lt;/p&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th style=&#34;text-align: left&#34;&gt;Vehicle Type&lt;/th&gt;&#xA;          &lt;th style=&#34;text-align: left&#34;&gt;Durability&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;&lt;strong&gt;Space fighter&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;10 or less&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;&lt;strong&gt;Scout/Light freighter&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;11-32&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;&lt;strong&gt;Medium freighter/Corvette&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;33-60&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;&lt;strong&gt;Capital ship&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;more than 60&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;</description>
+    </item>
+    <item>
+      <title>Water Vehicle</title>
+      <link>http://localhost:1313/skills/vehicle-operation/water-vehicle/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/skills/vehicle-operation/water-vehicle/</guid>
+      <description>&lt;p&gt;This specialty skill enables a hero to become trained in the use of a specific type of water vehicle (e.g., sailboats, jet skis, large commercial vessels, submersible craft). If he wants to be skilled in more than one type, he must purchase each separately.&#xA;This skill is also used to operate the helm of large, multicrewed water vessels.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

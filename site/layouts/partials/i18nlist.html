@@ -1,5 +1,5 @@
-{{ if eq .Site.Language.Lang "en" }}
 {{ $targetUrl := "/es/" }}
+{{ if eq .Site.Language.Lang "en" }}
 {{ range .Translations }}
 {{ if eq .Language.Lang "es" }}
 {{ $targetUrl = .RelPermalink }}
@@ -10,7 +10,7 @@
   [ Español ]
 </a>
 {{ else }}
-{{ $targetUrl := "/" }}
+{{ $targetUrl = "/" }}
 {{ range .Translations }}
 {{ if eq .Language.Lang "en" }}
 {{ $targetUrl = .RelPermalink }}

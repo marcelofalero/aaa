@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Armas a distancia primitivas on AAA</title>
+    <link>http://localhost:1313/es/skills/primitive-ranged-weapons/</link>
+    <description>Recent content in Armas a distancia primitivas on AAA</description>
+    <generator>Hugo</generator>
+    <language>es</language>
+    <atom:link href="http://localhost:1313/es/skills/primitive-ranged-weapons/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Arco</title>
+      <link>http://localhost:1313/es/skills/primitive-ranged-weapons/bow/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/es/skills/primitive-ranged-weapons/bow/</guid>
+      <description>&lt;p&gt;With the bow skill, a hero can become increasingly more proficient with the long bow and the short bow. A bow can be loaded and fired in the same action by any character.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Ballesta</title>
+      <link>http://localhost:1313/es/skills/primitive-ranged-weapons/crossbow/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/es/skills/primitive-ranged-weapons/crossbow/</guid>
+      <description>&lt;p&gt;With the crossbow skill, a hero can become increasingly more proficient with this type of primitive weapon. It takes one action to load a crossbow and a separate action to fire the weapon.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>chispa</title>
+      <link>http://localhost:1313/es/skills/primitive-ranged-weapons/flintlock/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/es/skills/primitive-ranged-weapons/flintlock/</guid>
+      <description>&lt;p&gt;This specialty skill covers the use of all types of flintlocks, including both pistols and rifles.&lt;/p&gt;&#xA;&lt;p&gt;It takes one action to load a flintlock pistol and a separate action to fire the weapon. It takes two actions to load a flintlock rifle, plus a separate action to fire the weapon.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Honda</title>
+      <link>http://localhost:1313/es/skills/primitive-ranged-weapons/sling/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/es/skills/primitive-ranged-weapons/sling/</guid>
+      <description>&lt;p&gt;With the sling skill, a hero can become increasingly more proficient with this type of primitive weapon. A sling can be loaded and fired in the same action by any character.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

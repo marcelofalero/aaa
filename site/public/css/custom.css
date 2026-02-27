@@ -1,0 +1,28 @@
+/* Custom Table Styling for Alternity Core */
+/* Removed conflicting table styles to allow scifi.css to control appearance */
+
+/* Fix Ananke text centering in list/section layouts */
+article section.tc-l {
+    text-align: left !important;
+}
+
+/* Ensure main content area is left-aligned */
+.lh-copy {
+    text-align: left;
+}
+
+/* Increase content width for a more expansive look */
+.measure-wide {
+    max-width: 80rem !important; /* Standard measure-wide is 34em */
+}
+
+/* For single pages and large containers */
+.mw7, .mw8 {
+    max-width: 90% !important;
+}
+
+/* Adjust nested copy line height section for wider text */
+article section.measure-wide {
+    max-width: 80% !important;
+    margin-left: 5%;
+}

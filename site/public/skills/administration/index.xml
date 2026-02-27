@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Administration on AAA</title>
+    <link>http://localhost:1313/skills/administration/</link>
+    <description>Recent content in Administration on AAA</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="http://localhost:1313/skills/administration/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bureaucracy</title>
+      <link>http://localhost:1313/skills/administration/bureaucracy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/skills/administration/bureaucracy/</guid>
+      <description>&lt;p&gt;This specialty skill measures a hero&amp;rsquo;s ability to grease (or clog up) the wheels of bureaucracy. Important applications, permits, clearances, reports, or other bureaucratic requests can be processed faster and more efficiently with the use of this skill. Conversely, this skill can be used to make the same bureaucratic processes slower for others.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Management</title>
+      <link>http://localhost:1313/skills/administration/management/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/skills/administration/management/</guid>
+      <description>&lt;p&gt;This skill indicates a hero&amp;rsquo;s ability to manage both personnel and administrative duties. A skilled manager can increase productivity, inspire workers, and supervise the workings of a business or office.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Unarmed Attack on AAA</title>
+    <link>http://localhost:1313/skills/unarmed-attack/</link>
+    <description>Recent content in Unarmed Attack on AAA</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="http://localhost:1313/skills/unarmed-attack/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Brawl</title>
+      <link>http://localhost:1313/skills/unarmed-attack/brawl/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/skills/unarmed-attack/brawl/</guid>
+      <description>&lt;p&gt;This specialty skill allows a hero to improve his proficiency in brawling. Brawling is the art of unarmed, hand-to-hand combat that can be as undisciplined as street fighting or as studied as boxing or wrestling.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Power Martial Arts</title>
+      <link>http://localhost:1313/skills/unarmed-attack/power-martial-arts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/skills/unarmed-attack/power-martial-arts/</guid>
+      <description>&lt;p&gt;&lt;em&gt;This skill can’t be used untrained.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;This specialty skill allows a hero to learn one of the many disciplines of unarmed combat that emphasize the use of muscles and bones for power. Direct movements and offensive attacks predominate. The power martial arts skill encompasses combat styles such as karate and tae kwon do.&lt;/p&gt;&#xA;&lt;p&gt;A hero with this skill enjoys improved damage on a successful unarmed attack: d6s/d6+2s/d4w, plus any Strength bonuses.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Rank Benefits (All Specialties)</title>
+      <link>http://localhost:1313/skills/unarmed-attack/rank-benefits-all-specialties/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/skills/unarmed-attack/rank-benefits-all-specialties/</guid>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Rank 2 [No Hands]:&lt;/strong&gt; A hero can inflict normal unarmed damage with a head butt, kick, or other attack that doesn’t involve his hands.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Rank 3, 6, 9, 12 [Increased Damage]:&lt;/strong&gt; The hero adds +1 to his Unarmed Attack damage at each of these ranks.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Rank 5 [Knockout]:&lt;/strong&gt; A hero can make a knockout attack (+4 penalty). If the attack succeeds, it inflicts normal stun damage and forces the target to make a &lt;a href=&#34;http://localhost:1313/skills/resolve-con/physical-resolve/&#34;&gt;Resolve-physical resolve&lt;/a&gt; check with a penalty equal to the number of stun points inflicted. If this check fails, the target is knocked out for d6 rounds.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Overpowering:&lt;/strong&gt; The Unarmed Attack skill is also used to determine the success of an attempt to overpower an opponent. Every additional attacker who takes part in the same overpowering attempt provides a cumulative -1 bonus to the skill check. Overpowering does not cause damage, but it immobilizes an opponent.&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Teletransportación on AAA</title>
+    <link>http://localhost:1313/es/skills/teleportation/</link>
+    <description>Recent content in Teletransportación on AAA</description>
+    <generator>Hugo</generator>
+    <language>es</language>
+    <atom:link href="http://localhost:1313/es/skills/teleportation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ancla dimensional</title>
+      <link>http://localhost:1313/es/skills/teleportation/dimensional-anchor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/es/skills/teleportation/dimensional-anchor/</guid>
+      <description>&lt;p&gt;The ability to prevent others from teleporting into or out of a specific area.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Cambio espacial</title>
+      <link>http://localhost:1313/es/skills/teleportation/spatial-shift/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/es/skills/teleportation/spatial-shift/</guid>
+      <description>&lt;p&gt;The ability to teleport objects or other willing characters without moving yourself.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Excursión</title>
+      <link>http://localhost:1313/es/skills/teleportation/jaunt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/es/skills/teleportation/jaunt/</guid>
+      <description>&lt;p&gt;A medium-to-long range teleportation to a known or visible location. Requires significant concentration.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Parpadear</title>
+      <link>http://localhost:1313/es/skills/teleportation/blink/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/es/skills/teleportation/blink/</guid>
+      <description>&lt;p&gt;A short-range, combat-effective jump within line of sight. Used to dodge attacks or reposition instantly.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Deception on AAA</title>
+    <link>http://localhost:1313/skills/deception/</link>
+    <description>Recent content in Deception on AAA</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="http://localhost:1313/skills/deception/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bluff</title>
+      <link>http://localhost:1313/skills/deception/bluff/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/skills/deception/bluff/</guid>
+      <description>&lt;p&gt;Bluff is the talent for misleading or deceiving through false bravado, outright lies, or displaying extreme confidence. It is the ability to make another character believe something that isn&amp;rsquo;t true.&lt;/p&gt;&#xA;&lt;h3 id=&#34;results&#34;&gt;Results&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Critical Failure:&lt;/strong&gt; Bluff is seen through; target becomes Hostile or Combative.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Failure:&lt;/strong&gt; Patter is considered annoying and condescending.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Ordinary:&lt;/strong&gt; Bluff works for the immediate scene.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Good:&lt;/strong&gt; Target&amp;rsquo;s attitude improves by one grade for d8+1 time units.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Amazing:&lt;/strong&gt; Target&amp;rsquo;s attitude improves by two grades for d12+2 time units.&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th style=&#34;text-align: left&#34;&gt;Results&lt;/th&gt;&#xA;          &lt;th style=&#34;text-align: left&#34;&gt;Description&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;&lt;strong&gt;Ordinary&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;Success indicates that the bluff works for the scene.&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;&lt;strong&gt;Good&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;Success indicates that the target&amp;rsquo;s attitude improves by one grade.&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;&lt;strong&gt;Amazing&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;Success indicates that the target&amp;rsquo;s attitude improves by two grades.&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Bribe</title>
+      <link>http://localhost:1313/skills/deception/bribe/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/skills/deception/bribe/</guid>
+      <description>&lt;p&gt;Bribe is used when a hero wants to offer another character money, goods, information, or services to get what he wants.&lt;/p&gt;&#xA;&lt;h3 id=&#34;results&#34;&gt;Results&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Critical Failure:&lt;/strong&gt; Bribe is refused; target becomes Hostile or Combative.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Failure:&lt;/strong&gt; Bribe is refused; each subsequent attempt must raise the value.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Ordinary:&lt;/strong&gt; Bribe is accepted, but the attitude of the target is unchanged.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Good:&lt;/strong&gt; Bribe is accepted; the target’s attitude improves by one grade for 2d6 hours.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Amazing:&lt;/strong&gt; Bribe is accepted; the target&amp;rsquo;s attitude improves by two grades for 4d6 hours.&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th style=&#34;text-align: left&#34;&gt;Results&lt;/th&gt;&#xA;          &lt;th style=&#34;text-align: left&#34;&gt;Description&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;&lt;strong&gt;Ordinary&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;Success indicates that the bribe is accepted.&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;&lt;strong&gt;Good&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;Success indicates that the target&amp;rsquo;s attitude improves by one grade.&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;&lt;strong&gt;Amazing&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;Success indicates that the target&amp;rsquo;s attitude improves by two grades.&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Gamble</title>
+      <link>http://localhost:1313/skills/deception/gamble/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/skills/deception/gamble/</guid>
+      <description>&lt;p&gt;This specialty skill represents a hero&amp;rsquo;s proficiency at various games of chance. With each purchase, the player selects a different game.&lt;/p&gt;&#xA;&lt;p&gt;Success allows estimating odds, determining if a game is rigged, counting cards, and spotting a cheater.&lt;/p&gt;&#xA;&lt;h3 id=&#34;contests&#34;&gt;Contests&lt;/h3&gt;&#xA;&lt;p&gt;If playing honestly, the winner is the one with the highest success level. Situation modifiers are based on the opponent&amp;rsquo;s skill:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Untrained opponent:&lt;/strong&gt; -2 bonus.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Trained opponent (same or lower rank):&lt;/strong&gt; no modifier.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Trained opponent (higher rank):&lt;/strong&gt; +2 penalty.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;cheating&#34;&gt;Cheating&lt;/h3&gt;&#xA;&lt;p&gt;If a hero decides to cheat, different modifiers apply:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

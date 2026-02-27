@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Melee Weapons on AAA</title>
+    <link>http://localhost:1313/skills/melee-weapons/</link>
+    <description>Recent content in Melee Weapons on AAA</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="http://localhost:1313/skills/melee-weapons/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Blade</title>
+      <link>http://localhost:1313/skills/melee-weapons/blade/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/skills/melee-weapons/blade/</guid>
+      <description>&lt;p&gt;This specialty skill allows a hero to improve his proficiency with any bladed melee weapon—a sword, knife, dagger, ax, polearm, or any other weapon that inflicts damage by either piercing or slashing an opponent with its sharp edge.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Bludgeon</title>
+      <link>http://localhost:1313/skills/melee-weapons/bludgeon/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/skills/melee-weapons/bludgeon/</guid>
+      <description>&lt;p&gt;This specialty skill allows a hero to improve his proficiency with any bludgeoning melee weapon—a club, mace, quarterstaff, or any other weapon that inflicts damage by striking an opponent with its blunt surface.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Powered Weapon</title>
+      <link>http://localhost:1313/skills/melee-weapons/powered-weapon/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/skills/melee-weapons/powered-weapon/</guid>
+      <description>&lt;p&gt;This specialty skill allows a hero to improve his proficiency with any powered melee weapon—a chain sword, gravmace, star sword, pulse baton, or any other melee weapon that uses energy to enhance its performance and damage capability.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Rank Benefits</title>
+      <link>http://localhost:1313/skills/melee-weapons/rank-benefits/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/skills/melee-weapons/rank-benefits/</guid>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Resistance Modifier:&lt;/strong&gt; The hero&amp;rsquo;s Dexterity resistance modifier improves by +1 at rank 3, by +1 again at rank 7, and by +1 again at rank 11.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Reaction Parry:&lt;/strong&gt; At rank 4, a hero with a Melee Weapons specialty skill can make a “reaction parry” as his first action in a round, allowing him to parry an attack made in a phase earlier than his own.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Double-Strike:&lt;/strong&gt; At rank 6, a hero can make two attacks as a single action (+2 penalty).&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Ordinary:&lt;/strong&gt; 1 attack, normal damage.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Good:&lt;/strong&gt; 2 attacks, normal damage.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Amazing:&lt;/strong&gt; 2 attacks, Good damage.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Multistrike:&lt;/strong&gt; At rank 12, an Amazing success on a Double-Strike allows three attacks that each inflict Good damage.&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+  </channel>
+</rss>

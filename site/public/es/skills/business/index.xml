@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Negocio on AAA</title>
+    <link>http://localhost:1313/es/skills/business/</link>
+    <description>Recent content in Negocio on AAA</description>
+    <generator>Hugo</generator>
+    <language>es</language>
+    <atom:link href="http://localhost:1313/es/skills/business/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Corporativo</title>
+      <link>http://localhost:1313/es/skills/business/corporate/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/es/skills/business/corporate/</guid>
+      <description>&lt;p&gt;This specialty skill enables a hero to function in the realm of large-scale trade and commerce, dealing with stock markets, mergers, corporate acquisitions, and speculative business. It also provides an understanding of how big businesses and corporations operate.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Negocios ilícitos</title>
+      <link>http://localhost:1313/es/skills/business/illicit-business/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/es/skills/business/illicit-business/</guid>
+      <description>&lt;p&gt;This specialty skill allows a hero to function in the underside of the business world, including extortion, smuggling, fencing stolen goods, and dealing with the black market. It also covers white-collar crime like embezzlement and corporate spying.&lt;/p&gt;&#xA;&lt;p&gt;Having this skill reduces the penalty for attempting an illegal transaction by -1 step initially.&lt;/p&gt;&#xA;&lt;h3 id=&#34;rank-benefits&#34;&gt;Rank Benefits&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Increased Effect:&lt;/strong&gt; Penalty reduction improves to -2 steps at rank 4, -3 steps at rank 7, and -4 steps at rank 10. (Never provides a bonus, only reduces penalties.)&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Pequeñas empresas</title>
+      <link>http://localhost:1313/es/skills/business/small-business/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/es/skills/business/small-business/</guid>
+      <description>&lt;p&gt;This specialty skill allows a hero to function in the pursuit of small-scale trade and commerce. It improves a hero&amp;rsquo;s ability to haggle on the consumer level, determine the value of goods and services, and find buyers and sellers in a specific area.&lt;/p&gt;&#xA;&lt;p&gt;This skill provides a situation die bonus when a character attempts to make deals, haggle, or otherwise bargain in the pursuit of small-business finance. The bonus starts at -1 step.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
