@@ -1,0 +1,312 @@
+{
+  "light": {
+    "columns": [
+      {
+        "name": "Armadura",
+        "key": "name"
+      },
+      {
+        "name": "Masa",
+        "key": "mass"
+      },
+      {
+        "name": "Pluma de CA",
+        "key": "ac_pen"
+      },
+      {
+        "name": "Stun/Wound/Mortal",
+        "key": "swm"
+      },
+      {
+        "name": "Costo ($)",
+        "key": "cost"
+      },
+      {
+        "name": "Descripción",
+        "key": "description",
+        "description_only": true
+      }
+    ],
+    "groups": [
+      {
+        "name": "PL 0",
+        "items": [
+          {
+            "name": "Esconder",
+            "mass": "10",
+            "ac_pen": "0",
+            "swm": "2/1/0",
+            "cost": "50",
+            "description": "Piel de animal gruesa, toscamente curada. Ofrece protección básica contra garras y armas primitivas."
+          }
+        ]
+      },
+      {
+        "name": "PL 1",
+        "items": [
+          {
+            "name": "Cuero",
+            "mass": "8",
+            "ac_pen": "0",
+            "swm": "3/1/0",
+            "cost": "100",
+            "description": "Placas de cuero endurecido que ofrecen un buen equilibrio entre movilidad y protección."
+          }
+        ]
+      },
+      {
+        "name": "PL 2",
+        "items": [
+          {
+            "name": "Acolchado",
+            "mass": "12",
+            "ac_pen": "+1",
+            "swm": "4/2/0",
+            "cost": "150",
+            "description": "Una prenda gruesa y acolchada que resulta sorprendentemente eficaz a la hora de absorber impactos, pero que resulta algo voluminosa."
+          }
+        ]
+      },
+      {
+        "name": "PL 5",
+        "items": [
+          {
+            "name": "Chaleco ligero",
+            "mass": "4",
+            "ac_pen": "0",
+            "swm": "5/2/1",
+            "cost": "200",
+            "description": "Un chaleco moderno de tejido balístico que se oculta fácilmente debajo de la ropa. Edición estándar para seguridad corporativa."
+          }
+        ]
+      },
+      {
+        "name": "PL 6",
+        "items": [
+          {
+            "name": "abrigo corto CF",
+            "mass": "3",
+            "ac_pen": "0",
+            "swm": "6/3/1",
+            "cost": "400",
+            "description": "Un elegante abrigo de fibra de carbono que proporciona una protección excelente y discreta contra las armas de fuego modernas."
+          }
+        ]
+      }
+    ]
+  },
+  "combat": {
+    "columns": [
+      {
+        "name": "Armadura",
+        "key": "name"
+      },
+      {
+        "name": "Masa",
+        "key": "mass"
+      },
+      {
+        "name": "Pluma de CA",
+        "key": "ac_pen"
+      },
+      {
+        "name": "Stun/Wound/Mortal",
+        "key": "swm"
+      },
+      {
+        "name": "Costo ($)",
+        "key": "cost"
+      },
+      {
+        "name": "Descripción",
+        "key": "description",
+        "description_only": true
+      }
+    ],
+    "groups": [
+      {
+        "name": "PL 2",
+        "items": [
+          {
+            "name": "cota de malla",
+            "mass": "20",
+            "ac_pen": "+2",
+            "swm": "4/2/1",
+            "cost": "400",
+            "description": "Anillos de metal entrelazados, eficaces contra armas cortantes pero pesados ​​y ruidosos."
+          },
+          {
+            "name": "Escala de correo",
+            "mass": "25",
+            "ac_pen": "+3",
+            "swm": "5/3/1",
+            "cost": "600",
+            "description": "Placas de metal superpuestas que ofrecen una protección superior a la cota de malla a costa de un mayor peso."
+          }
+        ]
+      },
+      {
+        "name": "PL 3",
+        "items": [
+          {
+            "name": "correo de placa",
+            "mass": "30",
+            "ac_pen": "+4",
+            "swm": "6/4/2",
+            "cost": "1500",
+            "description": "Traje completo de placas de acero articuladas. Proporciona una excelente protección pero restringe severamente el movimiento."
+          }
+        ]
+      },
+      {
+        "name": "PL 5",
+        "items": [
+          {
+            "name": "chaleco de batalla",
+            "mass": "8",
+            "ac_pen": "+1",
+            "swm": "8/4/2",
+            "cost": "500",
+            "description": "Un chaleco de grado militar con inserciones de cerámica, diseñado para detener disparos de rifle."
+          },
+          {
+            "name": "chaqueta de batalla",
+            "mass": "12",
+            "ac_pen": "+2",
+            "swm": "10/5/2",
+            "cost": "700",
+            "description": "Extiende la protección de un chaleco de batalla a los brazos y el torso, con correas adicionales para el equipo."
+          }
+        ]
+      },
+      {
+        "name": "PL 6",
+        "items": [
+          {
+            "name": "abrigo largo CF",
+            "mass": "6",
+            "ac_pen": "+1",
+            "swm": "12/6/3",
+            "cost": "900",
+            "description": "Un guardapolvo de fibra de carbono de cuerpo entero, preferido por los autónomos por su combinación de estilo y protección seria."
+          },
+          {
+            "name": "Armadura de ataque",
+            "mass": "15",
+            "ac_pen": "+2",
+            "swm": "14/7/3",
+            "cost": "1200",
+            "description": "Una coraza y hombreras compuestas rígidas que ofrecen protección de combate en primera línea."
+          }
+        ]
+      },
+      {
+        "name": "PL 7",
+        "items": [
+          {
+            "name": "Armadura de cerametal",
+            "mass": "20",
+            "ac_pen": "+3",
+            "swm": "16/8/4",
+            "cost": "2500",
+            "description": "Placas avanzadas moldeadas a medida de una aleación de cerámica y metal. El estándar para los soldados de élite."
+          }
+        ]
+      },
+      {
+        "name": "PL 8",
+        "items": [
+          {
+            "name": "tanque de cuerpo",
+            "mass": "25",
+            "ac_pen": "+4",
+            "swm": "20/10/5",
+            "cost": "5000",
+            "description": "Un enorme recinto de cuerpo completo hecho de compuestos en capas. Sacrifica toda sutileza para lograr la máxima capacidad de supervivencia."
+          }
+        ]
+      }
+    ]
+  },
+  "powered": {
+    "columns": [
+      {
+        "name": "Armadura",
+        "key": "name"
+      },
+      {
+        "name": "Masa",
+        "key": "mass"
+      },
+      {
+        "name": "Pluma de CA",
+        "key": "ac_pen"
+      },
+      {
+        "name": "Stun/Wound/Mortal",
+        "key": "swm"
+      },
+      {
+        "name": "FUE",
+        "key": "str"
+      },
+      {
+        "name": "Costo ($)",
+        "key": "cost"
+      },
+      {
+        "name": "Descripción",
+        "key": "description",
+        "description_only": true
+      }
+    ],
+    "groups": [
+      {
+        "name": "PL 7",
+        "items": [
+          {
+            "name": "traje de asalto",
+            "mass": "75",
+            "ac_pen": "+2",
+            "swm": "20/10/5",
+            "str": "18",
+            "cost": "75K",
+            "description": "Una armadura motorizada abierta con haces de miómero, que otorga mayor resistencia y una protección significativa."
+          },
+          {
+            "name": "traje de batalla",
+            "mass": "100",
+            "ac_pen": "+3",
+            "swm": "24/12/6",
+            "str": "20",
+            "cost": "100K",
+            "description": "Una armadura militar totalmente sellada, equipada con un sistema de soporte vital básico y placas pesadas."
+          }
+        ]
+      },
+      {
+        "name": "PL 8",
+        "items": [
+          {
+            "name": "traje de comando",
+            "mass": "60",
+            "ac_pen": "+1",
+            "swm": "24/12/6",
+            "str": "20",
+            "cost": "150K",
+            "description": "Un traje liviano y de alta tecnología diseñado para fuerzas especiales, con sensores avanzados y capacidades sigilosas."
+          },
+          {
+            "name": "traje maulador",
+            "mass": "120",
+            "ac_pen": "+4",
+            "swm": "30/15/7",
+            "str": "24",
+            "cost": "200K",
+            "description": "Un tanque andante. El Mauler es el pináculo de la armadura personal, capaz de hacer caso omiso del fuego de armas pesadas."
+          }
+        ]
+      }
+    ]
+  }
+}
