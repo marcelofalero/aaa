@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Atletismo on AAA</title>
+    <link>http://localhost:1313/es/skills/athletics/</link>
+    <description>Recent content in Atletismo on AAA</description>
+    <generator>Hugo</generator>
+    <language>es</language>
+    <atom:link href="http://localhost:1313/es/skills/athletics/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Carrera</title>
+      <link>http://localhost:1313/es/skills/athletics/race/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/es/skills/athletics/race/</guid>
+      <description>&lt;p&gt;&lt;em&gt;This skill can&amp;rsquo;t be used untrained.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;This specialty skill allows a hero to improve his ability to move faster and cover more ground in a combat scene. A character who purchases rank 1 in this specialty immediately improves his run movement rate by 2 meters.&lt;/p&gt;&#xA;&lt;h3 id=&#34;rank-benefits&#34;&gt;Rank Benefits&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Run Rate:&lt;/strong&gt; Increases by 2 meters at ranks 5 and 9.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Sprint Rate:&lt;/strong&gt; Increases by 2 meters at ranks 4, 7, and 12.&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Nadar</title>
+      <link>http://localhost:1313/es/skills/athletics/swim/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/es/skills/athletics/swim/</guid>
+      <description>&lt;p&gt;&lt;em&gt;Except to determine if a hero can tread water to avoid drowning, this skill can’t be used untrained.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;This specialty skill is necessary for a hero to be able to use his swim movement rate. Without this skill, a hero can only tread water and paddle in a crude fashion.&lt;/p&gt;&#xA;&lt;h3 id=&#34;rank-benefits&#34;&gt;Rank Benefits&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Rank 1 [Holding Breath]:&lt;/strong&gt; Any Stamina-endurance checks a hero must make to keep holding his breath are made with a -1 bonus.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Rank 4, 8, 12 [Improved Breathing]:&lt;/strong&gt; The bonus to Stamina-endurance checks improves to -2 (rank 4), -3 (rank 8), and -4 (rank 12).&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Rank 4, 8, 12 [Movement Rate]:&lt;/strong&gt; Both swim and easy swim rates increase by 1 meter at each of these ranks.&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Saltar</title>
+      <link>http://localhost:1313/es/skills/athletics/jump/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/es/skills/athletics/jump/</guid>
+      <description>&lt;p&gt;With the jump skill, a hero can attempt to leap over obstacles by performing a horizontal running or standing jump, or a vertical leap.&lt;/p&gt;&#xA;&lt;p&gt;On any jumping attempt, a Critical Failure result indicates that the hero trips and takes a hard fall, suffering d6 points of stun damage. A Marginal indicates that the hero makes a leap of Ordinary distance but suffers d4 points of stun damage because of a poor landing.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Tirar</title>
+      <link>http://localhost:1313/es/skills/athletics/throw/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/es/skills/athletics/throw/</guid>
+      <description>&lt;p&gt;With the throw skill, a hero can accurately toss balls, darts, stones, throwing knives, grenades, and other small objects at a specific target.&lt;/p&gt;&#xA;&lt;p&gt;The accuracy of a throw depends on the range and the degree of success achieved on a skill check.&lt;/p&gt;&#xA;&lt;h3 id=&#34;accuracy-by-range&#34;&gt;Accuracy by Range&lt;/h3&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th style=&#34;text-align: left&#34;&gt;Skill Check Result&lt;/th&gt;&#xA;          &lt;th style=&#34;text-align: left&#34;&gt;Short Range&lt;/th&gt;&#xA;          &lt;th style=&#34;text-align: left&#34;&gt;Medium Range&lt;/th&gt;&#xA;          &lt;th style=&#34;text-align: left&#34;&gt;Long Range&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;&lt;strong&gt;Critical Failure&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;Miss by 4m&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;Miss by 8m&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;Miss by 16m&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;&lt;strong&gt;Failure&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;Miss by 2m&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;Miss by 4m&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;Miss by 8m&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;&lt;strong&gt;Ordinary&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;On target&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;Miss by 2m&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;Miss by 4m&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;&lt;strong&gt;Good&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;On target&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;On target&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;Miss by 2m&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;&lt;strong&gt;Amazing&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;On target&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;Always on target&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;On target&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;</description>
+    </item>
+    <item>
+      <title>Trepar</title>
+      <link>http://localhost:1313/es/skills/athletics/climb/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/es/skills/athletics/climb/</guid>
+      <description>&lt;p&gt;This specialty skill allows a hero to scale walls, ascend mountains, or otherwise climb up or over obstacles.&lt;/p&gt;&#xA;&lt;p&gt;In combat scenes, a hero can climb a certain number of meters in a phase, depending on the result of a skill check:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Critical Failure:&lt;/strong&gt; fall (if possible)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Marginal:&lt;/strong&gt; no progress this action&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Ordinary:&lt;/strong&gt; 1 meter&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Good:&lt;/strong&gt; 2 meters&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Amazing:&lt;/strong&gt; 3 meters&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;In challenge scenes or whenever the Gamemaster determines that a time unit other than rounds applies, a climb check is a complex skill check.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,10 +1,17 @@
-<footer class="bg-panel-alt bottom-0 w-100 pa3 bt b--border-purple" role="contentinfo">
+<footer class="bottom-0 w-100 pa3 bt"
+  style="border-top: 1px solid var(--border-color); background-color: var(--bg-dark); color: var(--text-light);"
+  role="contentinfo">
   <div class="flex justify-between items-center">
-  <a class="f6 fw4 hover-neon-cyan silver dn dib-ns pv2 ph3 no-underline ttu tracked" href="{{ .Site.Home.Permalink }}" >
-    &copy; {{ with .Site.Copyright | compare.Default .Site.Title }} {{ . | safe.HTML }} {{ now.Format "2006"}} {{ end }}
-  </a>
-  <div class="f7 silver o-50">
-    SYSTEM STATUS: ONLINE
-  </div>
+    <div class="flex items-center">
+      <a class="f6 fw4 hover-neon-cyan silver link dn dib-ns pv2 ph3 no-underline ttu tracked"
+        style="border-bottom: none !important;" href="{{ .Site.Home.Permalink }}">
+        &copy; {{ with .Site.Copyright | compare.Default .Site.Title }} {{ . | safe.HTML }} {{ now.Format "2006"}} {{
+        end }}
+      </a>
+      {{ partial "i18nlist.html" . }}
+    </div>
+    <div class="f7 silver o-50">
+      {{ if eq .Site.Language.Lang "es" }}ESTADO DEL SISTEMA: EN LÍNEA{{ else }}SYSTEM STATUS: ONLINE{{ end }}
+    </div>
   </div>
 </footer>

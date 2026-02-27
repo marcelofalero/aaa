@@ -1,9 +1,11 @@
 <ul class="pa0 mt4">
   {{ range .GetTerms "tags" }}
-   <li class="list di mr2">
-     <a href="{{ .RelPermalink }}" class="link f6 grow br1 ba b--neon-purple ph3 pv1 mb2 dib neon-cyan hover-bg-neon-purple hover-white sans-serif no-underline transition-all">
-       #{{- .LinkTitle -}}
-     </a>
-   </li>
+  <li class="list di mr2">
+    <a href="{{ .RelPermalink }}"
+      class="link f6 grow br1 ba ph3 pv1 mb2 dib neon-cyan hover-white sans-serif no-underline transition-all"
+      style="border-color: var(--accent-cyan);">
+      #{{- .LinkTitle -}}
+    </a>
+  </li>
   {{ end }}
 </ul>

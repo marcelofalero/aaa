@@ -1,11 +1,11 @@
 <nav class="breadcrumbs" aria-label="breadcrumb">
-  <ul id="history-breadcrumbs-list" class="list pl0 mb3 f6 flex items-center flex-wrap">
+  <ul id="history-breadcrumbs-list">
     <!-- JS will populate this -->
   </ul>
 </nav>
 
 <script>
-  (function() {
+  (function () {
     const list = document.getElementById('history-breadcrumbs-list');
     if (!list) return;
 
@@ -17,34 +17,36 @@
         console.error("Error parsing history", e);
       }
 
-      // Don't render a breadcrumb for a single page in history (the current page)
       if (history.length <= 1) {
-        list.remove();
+        const nav = list.closest('.breadcrumbs');
+        if (nav) nav.remove();
         return;
       }
 
       const currentUrl = "{{ .RelPermalink }}";
       const fragment = document.createDocumentFragment();
 
-      history.forEach((page, index) => {
+      // Reverse history so current page is first
+      const reversedHistory = [...history].reverse();
+
+      reversedHistory.forEach((page, index) => {
         if (index > 0) {
           const sep = document.createElement('li');
-          sep.className = "mh2 neon-purple o-50"; // Use horizontal margin instead of just right
-          sep.textContent = '›'; // Use a chevron for a more classic look
+          sep.className = "separator";
+          sep.innerHTML = '‹';
           fragment.appendChild(sep);
         }
 
         const li = document.createElement('li');
-        // All items are flex items, no need for display: inline-block
-        if (page.url === currentUrl && index === history.length - 1) {
-           li.className = "silver o-80 ttu";
-           li.textContent = page.title;
+        if (page.url === currentUrl && index === 0) {
+          li.className = "current-page f4 fw6 neon-text truncate";
+          li.textContent = page.title;
         } else {
-           const a = document.createElement('a');
-           a.href = page.url;
-           a.className = "link neon-cyan hover-neon-purple transition-all ttu";
-           a.textContent = page.title;
-           li.appendChild(a);
+          const a = document.createElement('a');
+          a.href = page.url;
+          a.textContent = page.title;
+          a.className = "truncate";
+          li.appendChild(a);
         }
         fragment.appendChild(li);
       });

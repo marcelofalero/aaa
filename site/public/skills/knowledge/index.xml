@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Knowledge on AAA</title>
+    <link>http://localhost:1313/skills/knowledge/</link>
+    <description>Recent content in Knowledge on AAA</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="http://localhost:1313/skills/knowledge/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Computer Operation</title>
+      <link>http://localhost:1313/skills/knowledge/computer-operation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/skills/knowledge/computer-operation/</guid>
+      <description>&lt;p&gt;&lt;em&gt;This skill can&amp;rsquo;t be used untrained.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;This skill allows a character to improve his ability to make computers perform, specifically his ability to get the most out of software (including the operating system).&#xA;The degree of success achieved relates to the quality or quantity of the information accessed or retrieved, or the speed of performance.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Deduce</title>
+      <link>http://localhost:1313/skills/knowledge/deduce/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/skills/knowledge/deduce/</guid>
+      <description>&lt;p&gt;This specialty skill enables a hero to hone his abilities to use reason and logic to reach a conclusion. It is used by detectives, scientists, engineers, and others to discover the answer to a skill-related problem.&lt;/p&gt;&#xA;&lt;h3 id=&#34;rank-benefits&#34;&gt;Rank Benefits&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Resistance Modifier:&lt;/strong&gt; The hero&amp;rsquo;s Intelligence resistance modifier (only for deceiving the hero) improves by +1 at rank 4, by +1 again at rank 8, and by +1 again at rank 12.&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>First Aid</title>
+      <link>http://localhost:1313/skills/knowledge/first-aid/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/skills/knowledge/first-aid/</guid>
+      <description>&lt;p&gt;&lt;em&gt;This skill can&amp;rsquo;t be used untrained.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;This specialty skill represents basic training in first aid techniques, including the use of trauma packs and first aid kits. It doesn&amp;rsquo;t provide a hero with the ability to use surgical tools or specialized gauntlets.&lt;/p&gt;&#xA;&lt;h3 id=&#34;heal-stun-damage&#34;&gt;Heal Stun Damage&lt;/h3&gt;&#xA;&lt;p&gt;Successful skill check restores 2 (Ordinary), 3 (Good), or 4 (Amazing) stun points to a conscious patient.&lt;/p&gt;&#xA;&lt;h3 id=&#34;knockout-recovery&#34;&gt;Knockout Recovery&lt;/h3&gt;&#xA;&lt;p&gt;Successful skill check brings a character back to consciousness and recovers 1 (Ordinary), 2 (Good), or 3 (Amazing) stun points.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Language</title>
+      <link>http://localhost:1313/skills/knowledge/language/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/skills/knowledge/language/</guid>
+      <description>&lt;p&gt;&lt;em&gt;This skill can&amp;rsquo;t be used untrained.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;Every hero begins with rank 3 in his or her native language (speak and read as well as a native). Lower ranks indicate crude familiarity; higher ranks improve vocabulary and deeper comprehension.&lt;/p&gt;&#xA;&lt;p&gt;At the Gamemaster&amp;rsquo;s discretion, a hero&amp;rsquo;s skill (or lack thereof) with a language might provide a situation die modifier to the use of other skills involving communication.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Rank 1:&lt;/strong&gt; +3 penalty on communication attempts.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;rank-benefits&#34;&gt;Rank Benefits&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Improved Communication:&lt;/strong&gt; The penalty on communication is reduced to +1 at rank 2 and eliminated at rank 3. Rank 6 provides a -1 bonus, rank 9 a -2 bonus, and rank 12 a -3 bonus.&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Street Knowledge</title>
+      <link>http://localhost:1313/skills/knowledge/street-knowledge/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/skills/knowledge/street-knowledge/</guid>
+      <description>&lt;p&gt;Local info about a specific city or region.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>World Knowledge</title>
+      <link>http://localhost:1313/skills/knowledge/world-knowledge/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/skills/knowledge/world-knowledge/</guid>
+      <description>&lt;p&gt;Specific info about a planet, system, or academic field (e.g., History, Math).&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

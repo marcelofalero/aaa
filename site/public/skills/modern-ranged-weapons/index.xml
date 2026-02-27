@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Modern Ranged Weapons on AAA</title>
+    <link>http://localhost:1313/skills/modern-ranged-weapons/</link>
+    <description>Recent content in Modern Ranged Weapons on AAA</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="http://localhost:1313/skills/modern-ranged-weapons/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Energy Weapon</title>
+      <link>http://localhost:1313/skills/modern-ranged-weapons/energy-weapon/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/skills/modern-ranged-weapons/energy-weapon/</guid>
+      <description>&lt;p&gt;Proficiency with lasers, blasters, and other high-tech energy projectors.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Firearm</title>
+      <link>http://localhost:1313/skills/modern-ranged-weapons/firearm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/skills/modern-ranged-weapons/firearm/</guid>
+      <description>&lt;p&gt;Proficiency with traditional slug-throwers.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Pistol</title>
+      <link>http://localhost:1313/skills/modern-ranged-weapons/pistol/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/skills/modern-ranged-weapons/pistol/</guid>
+      <description>&lt;p&gt;This specialty skill allows a hero to improve his proficiency with modern pistols of all types, including projectile and energy weapons.&lt;/p&gt;&#xA;&lt;p&gt;If a hero wants to draw and fire his pistol in the same phase, the action receives a +1 penalty.&lt;/p&gt;&#xA;&lt;h3 id=&#34;rank-benefits&#34;&gt;Rank Benefits&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Rank 3 [Quick Draw]:&lt;/strong&gt; Perform a quick draw and fire in the same phase without the +1 penalty.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Other Benefits:&lt;/strong&gt; See Ranged Weapons Rank Benefits.&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Rifle</title>
+      <link>http://localhost:1313/skills/modern-ranged-weapons/rifle/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/skills/modern-ranged-weapons/rifle/</guid>
+      <description>&lt;p&gt;This specialty skill allows a hero to improve his proficiency with modern rifles and shotguns of all types.&lt;/p&gt;&#xA;&lt;p&gt;Some rifles are automatic weapons capable of firing multiple rounds of ammunition in every attack.&lt;/p&gt;&#xA;&lt;h3 id=&#34;rank-benefits&#34;&gt;Rank Benefits&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Rank 3 [Improved Aim]:&lt;/strong&gt; Hit a target with more dependability, providing a -1 bonus to the situation die for any rifle attack.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Rank 6 [Precision Shooting]:&lt;/strong&gt; Situation die penalties for making an autofire attack are reduced to 0, +1 step, and +2 steps.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Other Benefits:&lt;/strong&gt; See Ranged Weapons Rank Benefits.&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>SMG</title>
+      <link>http://localhost:1313/skills/modern-ranged-weapons/smg/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/skills/modern-ranged-weapons/smg/</guid>
+      <description>&lt;p&gt;This specialty skill allows a hero to improve his proficiency with modern submachine guns of all types.&lt;/p&gt;&#xA;&lt;p&gt;All SMGs are automatic weapons capable of firing multiple rounds of ammunition in every attack.&lt;/p&gt;&#xA;&lt;h3 id=&#34;rank-benefits&#34;&gt;Rank Benefits&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Rank 3 [Rock-n-Roll]:&lt;/strong&gt; Change clips more efficiently. The penalty for changing a clip and firing in the same action is reduced to +1 step.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Rank 6 [Precision Shooting]:&lt;/strong&gt; Situation die penalties for making an autofire attack with an SMG are reduced to 0, +1 step, and +2 steps.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Rank 9 [Extra Burst]:&lt;/strong&gt; Get off four bursts of ammunition instead of three on every autofire attack. He receives a fourth situation die with a +3 penalty assigned to it.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Other Benefits:&lt;/strong&gt; See Ranged Weapons Rank Benefits.&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+  </channel>
+</rss>

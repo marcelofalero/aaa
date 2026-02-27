@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Technical Science on AAA</title>
+    <link>http://localhost:1313/skills/technical-science/</link>
+    <description>Recent content in Technical Science on AAA</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="http://localhost:1313/skills/technical-science/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Invention</title>
+      <link>http://localhost:1313/skills/technical-science/invention/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/skills/technical-science/invention/</guid>
+      <description>&lt;p&gt;Invention lets a hero build an electronic or mechanical component from scratch, or modify an existing device to perform a new function. Invention checks are always complex skill checks and take time (hours, days, weeks).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Juryrig</title>
+      <link>http://localhost:1313/skills/technical-science/juryrig/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/skills/technical-science/juryrig/</guid>
+      <description>&lt;p&gt;This skill enables a hero to make fast, patchwork repairs in order to get an electronic or mechanical device up and running for a short period of time. A juryrig repair can be made successfully once on a specific system.&lt;/p&gt;&#xA;&lt;p&gt;Making a juryrig skill check is a single action, and the character can&amp;rsquo;t attempt other actions for the rest of the round.&lt;/p&gt;&#xA;&lt;h3 id=&#34;results&#34;&gt;Results&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Critical Failure:&lt;/strong&gt; System becomes unusable and requires full repairs.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Failure:&lt;/strong&gt; Juryrig attempt doesn&amp;rsquo;t work.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Ordinary:&lt;/strong&gt; Operational for d6+1 time units; 3 more successes needed for full repairs.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Good:&lt;/strong&gt; Operational for 2d4+2 time units; 2 more successes needed for full repairs.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Amazing:&lt;/strong&gt; Operational for 3d4+2 time units; 1 more success needed for full repairs.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;rank-benefits&#34;&gt;Rank Benefits&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Improved Juryrig:&lt;/strong&gt; At rank 6: Ordinary produces a Good result, Good produces an Amazing result, and Amazing success means the system is fully repaired and operational.&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Repair</title>
+      <link>http://localhost:1313/skills/technical-science/repair/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/skills/technical-science/repair/</guid>
+      <description>&lt;p&gt;This skill provides a hero with training in the repair and maintenance of mechanical and electronic technology. Any use of repair requires a complex skill check.&lt;/p&gt;&#xA;&lt;h3 id=&#34;complexity&#34;&gt;Complexity&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Stun Damage:&lt;/strong&gt; Ordinary complexity.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Wound Damage:&lt;/strong&gt; Good complexity.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Mortal Damage:&lt;/strong&gt; Amazing complexity (may require more than 10 successes).&#xA;The time unit is designated by the Gamemaster (minutes, hours, days, etc.).&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Technical Knowledge</title>
+      <link>http://localhost:1313/skills/technical-science/technical-knowledge/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/skills/technical-science/technical-knowledge/</guid>
+      <description>&lt;p&gt;This skill represents the study of technology and how up-to-date a hero is on techniques or procedures.&lt;/p&gt;&#xA;&lt;h3 id=&#34;rank-benefits&#34;&gt;Rank Benefits&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Increased Effect:&lt;/strong&gt; Situation die bonus to Technical Science, Invention, Juryrig, or Repair: -1 at rank 3, -2 at rank 6, -3 at rank 9, and -4 at rank 12.&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ciencias de la Computación on AAA</title>
+    <link>http://localhost:1313/es/skills/computer-science/</link>
+    <description>Recent content in Ciencias de la Computación on AAA</description>
+    <generator>Hugo</generator>
+    <language>es</language>
+    <atom:link href="http://localhost:1313/es/skills/computer-science/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hardware</title>
+      <link>http://localhost:1313/es/skills/computer-science/hardware/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/es/skills/computer-science/hardware/</guid>
+      <description>&lt;p&gt;This specialty represents a character&amp;rsquo;s knowledge of and proficiency with the physical components of a computer, including setup, design, and repair.&lt;/p&gt;&#xA;&lt;h3 id=&#34;rank-benefits&#34;&gt;Rank Benefits&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Increased Effect:&lt;/strong&gt; Situation die bonus of -1 at rank 4, -2 at rank 8, and -3 at rank 12 for repairing computer systems and working with hardware.&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Programación</title>
+      <link>http://localhost:1313/es/skills/computer-science/programming/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/es/skills/computer-science/programming/</guid>
+      <description>&lt;p&gt;This specialty skill enables a hero to analyze computer programs, modify existing programs, and create programs by writing her own code.&lt;/p&gt;&#xA;&lt;p&gt;Having rank 1 in this skill enables a character to modify the source code of programs of Ordinary quality and Ordinary complexity.&lt;/p&gt;&#xA;&lt;h3 id=&#34;rank-benefits&#34;&gt;Rank Benefits&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Modify Existing Programs:&lt;/strong&gt; At rank 3, able to modify code of programs of Good quality and Good complexity. At rank 6, can modify any existing program.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Create New Programs:&lt;/strong&gt; At rank 3, create new programs of Marginal quality and Marginal complexity. Ordinary programs at rank 6, Good programs at rank 9, and Amazing programs at rank 12.&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Seco</title>
+      <link>http://localhost:1313/es/skills/computer-science/hacking/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/es/skills/computer-science/hacking/</guid>
+      <description>&lt;p&gt;&lt;em&gt;This skill can&amp;rsquo;t be used untrained.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;Hacking is the ability to break computer codes and bypass computer security to gain access to restricted data or systems. It&amp;rsquo;s used to retrieve secured data, take control of a system, or perform sabotage.&lt;/p&gt;&#xA;&lt;h3 id=&#34;rank-benefits&#34;&gt;Rank Benefits&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Increased Effect:&lt;/strong&gt; Situation die bonus of -1 at rank 4, -2 at rank 8, and -3 at rank 12.&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+  </channel>
+</rss>

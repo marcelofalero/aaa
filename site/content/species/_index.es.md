@@ -21,6 +21,3 @@ En **AAA**, los jugadores pueden elegir entre varias especies inteligentes. Cada
 
 ---
 
-## Las Especies de la Galaxia
-
-{{% list %}}

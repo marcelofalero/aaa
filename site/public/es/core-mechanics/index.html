@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  
+  <title>Mecánicas principales | AAA</title>
+  <meta name="viewport" content="width=device-width,minimum-scale=1">
+  <meta name="description"
+    content="Bienvenido a AAA (Alterated Alternity Alternative).">
+  <meta name="generator" content="Hugo 0.156.0">
+  
+  
+  
+  <meta name="robots" content="noindex, nofollow">
+  
+  
+
+  
+
+
+  
+    <link rel="stylesheet" href="/css/scifi.css">
+  
+
+
+  <script>
+  (function () {
+    try {
+      
+      const currentPage = {
+        title: "Mecánicas principales",
+        url: "\/es\/core-mechanics\/",
+        translationKey: "\/core-mechanics"
+      };
+
+      let history = [];
+      try {
+        history = JSON.parse(sessionStorage.getItem('pageHistory')) || [];
+      } catch (e) {
+        console.error("Error parsing history from sessionStorage", e);
+        history = [];
+      }
+
+      
+      history = history.filter(page => page.url !== currentPage.url && (!page.translationKey || page.translationKey !== currentPage.translationKey));
+
+      
+      history.push(currentPage);
+
+      
+      
+      if (history.length > 20) {
+        history.shift();
+      }
+
+      sessionStorage.setItem('pageHistory', JSON.stringify(history));
+    } catch (e) {
+      console.error("History tracking error:", e);
+    }
+  })();
+</script>
+
+<script src="/js/table-toggle.js"></script>
+
+  
+  
+
+  
+
+  
+  
+  <link href="/es/core-mechanics/index.xml" rel="alternate" type="application/rss+xml" title="AAA" />
+  <link href="/es/core-mechanics/index.xml" rel="feed" type="application/rss+xml" title="AAA" />
+  
+  
+
+  
+  <link rel="canonical" href="http://localhost:1313/es/core-mechanics/">
+  
+
+  
+  
+  <meta property="og:url" content="http://localhost:1313/es/core-mechanics/">
+  <meta property="og:site_name" content="AAA">
+  <meta property="og:title" content="Mecánicas principales">
+  <meta property="og:description" content="Bienvenido a AAA (Alterated Alternity Alternative).">
+  <meta property="og:locale" content="es">
+  <meta property="og:type" content="website">
+
+  <meta itemprop="name" content="Mecánicas principales">
+  <meta itemprop="description" content="Bienvenido a AAA (Alterated Alternity Alternative).">
+  <meta itemprop="wordCount" content="353">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Mecánicas principales">
+  <meta name="twitter:description" content="Bienvenido a AAA (Alterated Alternity Alternative).">
+
+  
+</head><body class="ma0 scifi-body development is-section is-section">
+  
+
+<header>
+  <div class="bg-black">
+    <nav class="pv3 ph3 ph4-ns w-100 relative" role="navigation">
+  <div class="flex center items-center justify-between w-100">
+    <div class="flex items-center">
+      <a href="/es/" class="f3 fw2 hover-neon-cyan neon-text db no-underline athelas mr4"
+        style="line-height: 1.3;">
+        
+        <div class="neon-text-glitch" data-text="Alterated">Alterated</div>
+        <div class="neon-text-glitch" data-text="Alternity" style="margin-left: 2rem;">Alternity</div>
+        <div class="neon-text-glitch" data-text="Alternative" style="margin-left: 4rem;">Alternative</div>
+        
+      </a>
+    </div>
+
+    <div class="flex items-center flex-auto justify-end">
+      
+    </div>
+  </div>
+</nav>
+  </div>
+</header>
+
+  <main class="pb7" role="main">
+    
+  <article class="main-container nested-copy-line-height">
+    <div class="mw8 center">
+      <nav class="breadcrumbs" aria-label="breadcrumb">
+  <ul id="history-breadcrumbs-list">
+    
+  </ul>
+</nav>
+
+<script>
+  (function () {
+    const list = document.getElementById('history-breadcrumbs-list');
+    if (!list) return;
+
+    try {
+      let history = [];
+      try {
+        history = JSON.parse(sessionStorage.getItem('pageHistory')) || [];
+      } catch (e) {
+        console.error("Error parsing history", e);
+      }
+
+      if (history.length <= 1) {
+        const nav = list.closest('.breadcrumbs');
+        if (nav) nav.remove();
+        return;
+      }
+
+      const currentUrl = "\/es\/core-mechanics\/";
+      const fragment = document.createDocumentFragment();
+
+      
+      const reversedHistory = [...history].reverse();
+
+      reversedHistory.forEach((page, index) => {
+        if (index > 0) {
+          const sep = document.createElement('li');
+          sep.className = "separator";
+          sep.innerHTML = '‹';
+          fragment.appendChild(sep);
+        }
+
+        const li = document.createElement('li');
+        if (page.url === currentUrl && index === 0) {
+          li.className = "current-page f4 fw6 neon-text truncate";
+          li.textContent = page.title;
+        } else {
+          const a = document.createElement('a');
+          a.href = page.url;
+          a.textContent = page.title;
+          a.className = "truncate";
+          li.appendChild(a);
+        }
+        fragment.appendChild(li);
+      });
+
+      list.appendChild(fragment);
+    } catch (e) {
+      console.error("Breadcrumb rendering error:", e);
+    }
+  })();
+</script>
+    </div>
+    <section class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy nested-links mid-gray">
+      <h1 class="f1 athelas">Mecánicas principales</h1><p>Bienvenido a <strong>AAA (Alterated Alternity Alternative)</strong>. Este es mi intento de modernizar y mejorar el juego de rol de ciencia ficción Alternity, manteniendo el espíritu del juego original. Este juego de rol proporciona un marco para todo tipo de aventuras de ciencia ficción, desde contemporáneas hasta de un futuro lejano. Ya seas un explorador al mando de la nueva nave estelar de la flota, un científico que busca una cura para un virus alienígena mortal, o un marine espacial cansado de la batalla que protege la galaxia, puedes experimentar el futuro, ¡una aventura a la vez!</p>
+<p>Aunque me centraré en el PL 7 (Era de la Gravedad), intentaré mantener las reglas modulares, para que puedas añadir o eliminar reglas fácilmente según sea necesario. También intentaré mantener las reglas simples y fáciles de aprender, sin dejar de proporcionar suficiente profundidad para permitir una experiencia de juego interesante y desafiante.</p>
+<h2 id="juegos-de-rol-en-mañanas-alternativos">Juegos de rol en mañanas alternativos</h2>
+<p>El juego Alternity es un sistema integral con una base de reglas principales que se pueden usar en una variedad de escenarios, cada uno denominado un <strong>mañana alternativo</strong>. Una campaña podría girar en torno al espionaje moderno de alta tecnología o estar ambientada 500 años en el futuro, donde los personajes exploran la galaxia en naves capaces de cruzar enormes distancias en cortos períodos de tiempo.</p>
+<h3 id="niveles-de-progreso-pl">Niveles de progreso (PL)</h3>
+<p>El estado de la tecnología en una sociedad se define por su Nivel de Progreso (PL, por sus siglas en inglés).</p>
+<ul>
+<li><strong>PL 0 (Edad de Piedra):</strong> Fuego, domesticación, herramientas de piedra.</li>
+<li><strong>PL 1 (Edad de Bronce/Hierro):</strong> Metalurgia, herramientas y armas duraderas.</li>
+<li><strong>PL 2 (Edad Media):</strong> Arquitectura, metalurgia, viajes por mar.</li>
+<li><strong>PL 3 (Edad de la Razón):</strong> Método científico, experimentación.</li>
+<li><strong>PL 4 (Era Industrial):</strong> Energía de vapor/eléctrica, comunicación global.</li>
+<li><strong>PL 5 (Era de la Información):</strong> Computadoras, energía de fisión, la primera Red.</li>
+<li><strong>PL 6 (Era de la Fusión):</strong> Energía de fusión, colonización espacial, realidad virtual.</li>
+<li><strong>PL 7 (Era de la Gravedad):</strong> Reactores de masa, colonización de sistemas estelares.</li>
+<li><strong>PL 8 (Era de la Energía):</strong> Motores estelares miniaturizados, campos de fuerza, armas de energía.</li>
+</ul>
+<hr>
+<p><strong>¡La acción comienza ahora! Bienvenido al futuro.</strong></p>
+</section>
+    <section class="flex-ns mt5 flex-wrap justify-around">
+      
+    </section>
+    </article>
+
+  </main>
+  <footer class="bottom-0 w-100 pa3 bt"
+  style="border-top: 1px solid var(--border-color); background-color: var(--bg-dark); color: var(--text-light);"
+  role="contentinfo">
+  <div class="flex justify-between items-center">
+    <div class="flex items-center">
+      <a class="f6 fw4 hover-neon-cyan silver link dn dib-ns pv2 ph3 no-underline ttu tracked"
+        style="border-bottom: none !important;" href="http://localhost:1313/es/">
+        &copy;  AAA 2026 
+      </a>
+      
+
+
+
+
+
+
+
+<a class="f6 fw4 hover-neon-cyan silver link dn dib-ns pv2 ph3 no-underline ttu tracked border-0"
+  href="/core-mechanics/" style="border-bottom: none !important;">
+  [ English ]
+</a>
+
+    </div>
+    <div class="f7 silver o-50">
+      ESTADO DEL SISTEMA: EN LÍNEA
+    </div>
+  </div>
+</footer>
+</body>
+
+</html>

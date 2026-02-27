@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Operación de armadura on AAA</title>
+    <link>http://localhost:1313/es/skills/armor-operation/</link>
+    <description>Recent content in Operación de armadura on AAA</description>
+    <generator>Hugo</generator>
+    <language>es</language>
+    <atom:link href="http://localhost:1313/es/skills/armor-operation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Armadura de combate</title>
+      <link>http://localhost:1313/es/skills/armor-operation/combat-armor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/es/skills/armor-operation/combat-armor/</guid>
+      <description>&lt;p&gt;This specialty skill allows a hero to improve his ability to perform actions, including parrying with a shield, while wearing standard combat armor, by a gradual process of learning to compensate for the weight and awkwardness of the heavy armor. A character with this skill at rank 1, 2, or 3 is allowed to reduce the action check and Dexterity resistance modifier penalty associated with combat armor (not powered armor) by 1 additional step.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Armadura potenciada</title>
+      <link>http://localhost:1313/es/skills/armor-operation/powered-armor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/es/skills/armor-operation/powered-armor/</guid>
+      <description>&lt;p&gt;&lt;em&gt;This skill can&amp;rsquo;t be used untrained.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;This specialty skill allows a hero to improve his proficiency with powered combat armor, becoming able to efficiently employ the strength enhancements built into powered armor. A character with this skill at rank 1, 2, or 3 is allowed to reduce the action check and Dexterity resistance modifier penalty associated with combat armor (not powered armor) by 1 additional step.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Beneficios de rango</title>
+      <link>http://localhost:1313/es/skills/armor-operation/rank-benefits/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/es/skills/armor-operation/rank-benefits/</guid>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Improved Operation:&lt;/strong&gt; At rank 4, 8 and 12, a character with the combat armor or powered armor skill can reduce the action check and Dexterity resistance modifier penalty of the appropriate type of armor by one additional step.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Shaking Off Stuns:&lt;/strong&gt; A character with the combat armor skill at rank 5 or higher can attempt to “shake off” some of the stun damage he suffers in combat. Once per round, the character can make a skill check; an Ordinary result allows him to ignore 1 point of stun damage inflicted in that round, a Good result allows him to ignore up to 2 points, and an Amazing result allows him to ignore up to 4 points.&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Conciencia on AAA</title>
+    <link>http://localhost:1313/es/skills/awareness/</link>
+    <description>Recent content in Conciencia on AAA</description>
+    <generator>Hugo</generator>
+    <language>es</language>
+    <atom:link href="http://localhost:1313/es/skills/awareness/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Intuición</title>
+      <link>http://localhost:1313/es/skills/awareness/intuition/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/es/skills/awareness/intuition/</guid>
+      <description>&lt;p&gt;This specialty skill represents a hero&amp;rsquo;s natural instincts—his ability to sense danger when no obvious signs are evident, to avoid surprise, or to make an intuitive leap of logic.&lt;/p&gt;&#xA;&lt;h3 id=&#34;avoid-surprise&#34;&gt;Avoid Surprise&lt;/h3&gt;&#xA;&lt;p&gt;Success indicates that the hero isn&amp;rsquo;t surprised and can act in the surprise phase of the upcoming round.&lt;/p&gt;&#xA;&lt;h3 id=&#34;intuitive-best-guess&#34;&gt;Intuitive &amp;ldquo;Best Guess&amp;rdquo;&lt;/h3&gt;&#xA;&lt;p&gt;The Gamemaster may allow a player to call for an intuition skill check. Any success yields a beneficial result, with greater levels of success yielding more accurate and complete conclusions. This is only permitted to heroes who have purchased the specialty skill.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Percepción</title>
+      <link>http://localhost:1313/es/skills/awareness/perception/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/es/skills/awareness/perception/</guid>
+      <description>&lt;p&gt;This specialty skill represents a hero&amp;rsquo;s alertness and powers of observation using normal senses—a broken twig, the click of a gun&amp;rsquo;s safety, the scent of perfume.&lt;/p&gt;&#xA;&lt;h3 id=&#34;avoid-surprise&#34;&gt;Avoid Surprise&lt;/h3&gt;&#xA;&lt;p&gt;When potential danger obviously exists, a hero&amp;rsquo;s subconscious use of this skill can help him avoid being caught by surprise. Success indicates that the hero isn&amp;rsquo;t surprised and can act in the surprise phase of the upcoming round.&lt;/p&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th style=&#34;text-align: left&#34;&gt;Results&lt;/th&gt;&#xA;          &lt;th style=&#34;text-align: left&#34;&gt;Description&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;&lt;strong&gt;Ordinary&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;Success indicates that the hero isn&amp;rsquo;t surprised and can act in the surprise phase.&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;&lt;strong&gt;Good&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;Success indicates that the hero isn&amp;rsquo;t surprised and can act in the surprise phase.&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;&lt;strong&gt;Amazing&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;Success indicates that the hero isn&amp;rsquo;t surprised and can act in the surprise phase.&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;</description>
+    </item>
+  </channel>
+</rss>

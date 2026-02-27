@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Aguante on AAA</title>
+    <link>http://localhost:1313/es/skills/stamina/</link>
+    <description>Recent content in Aguante on AAA</description>
+    <generator>Hugo</generator>
+    <language>es</language>
+    <atom:link href="http://localhost:1313/es/skills/stamina/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Resistencia</title>
+      <link>http://localhost:1313/es/skills/stamina/endurance/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/es/skills/stamina/endurance/</guid>
+      <description>&lt;p&gt;As a hero acquires ranks in the endurance skill, he becomes more able to withstand the effects of damage. For a character who has this specialty, endurance checks take the place of Stamina checks.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Resistir el dolor</title>
+      <link>http://localhost:1313/es/skills/stamina/resist-pain/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/es/skills/stamina/resist-pain/</guid>
+      <description>&lt;p&gt;&lt;em&gt;This skill can’t be used untrained.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;Resist pain allows a hero to function normally and ignore some or all of the situation penalties for suffering stun, wound, or mortal damage. A check does not count as an action.&lt;/p&gt;&#xA;&lt;h3 id=&#34;results&#34;&gt;Results&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Critical Failure:&lt;/strong&gt; Hero succumbs to the pain and can&amp;rsquo;t act for 2d4 phases.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Failure:&lt;/strong&gt; Hero suffers from damage penalties.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Ordinary:&lt;/strong&gt; Hero ignores 1 step of penalty.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Good:&lt;/strong&gt; Hero ignores 2 steps of penalty.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Amazing:&lt;/strong&gt; Hero ignores 3 steps of penalty.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Resist pain only lessens or eliminates situation penalties caused by cumulative damage. It doesn&amp;rsquo;t turn a penalty into a bonus or stave off dying or death.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Covert Ops on AAA</title>
+    <link>http://localhost:1313/skills/covert-ops/</link>
+    <description>Recent content in Covert Ops on AAA</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="http://localhost:1313/skills/covert-ops/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Conceal</title>
+      <link>http://localhost:1313/skills/covert-ops/conceal/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/skills/covert-ops/conceal/</guid>
+      <description>&lt;p&gt;This specialty skill represents the ability to hide objects from view or sensors. While &lt;strong&gt;Stealth&lt;/strong&gt; is used to hide oneself, &lt;strong&gt;Conceal&lt;/strong&gt; is used to hide items, such as weapons on one&amp;rsquo;s person, contraband in a vehicle, or a secret compartment in a room.&lt;/p&gt;&#xA;&lt;h3 id=&#34;results&#34;&gt;Results&lt;/h3&gt;&#xA;&lt;p&gt;The degree of success on a Conceal check provides a penalty to an observer&amp;rsquo;s Awareness-perception or Investigate-search check to find the hidden object:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Ordinary:&lt;/strong&gt; +1 penalty to observer&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Good:&lt;/strong&gt; +2 penalty to observer&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Amazing:&lt;/strong&gt; +3 penalty to observer&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;hiding-weapons&#34;&gt;Hiding Weapons&lt;/h3&gt;&#xA;&lt;p&gt;A concealed weapon is worn in a place not normally searched or not subject to easy spotting (the small of the back, inside of the forearm, etc.). The concealed weapon must be either a small handgun or a blade. Concealment provides a +2 penalty to all but the most intrusive searches.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Disguise</title>
+      <link>http://localhost:1313/skills/covert-ops/disguise/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/skills/covert-ops/disguise/</guid>
+      <description>&lt;p&gt;Disguise is the ability to change your appearance to look like someone else or to blend into a crowd.&lt;/p&gt;&#xA;&lt;p&gt;While the &lt;strong&gt;Entertainment-act&lt;/strong&gt; skill is used for professional makeup and performance, this specialty covers more immediate and practical applications of disguise, such as changing clothes, wearing a wig, or using simple props to avoid recognition.&lt;/p&gt;&#xA;&lt;p&gt;A hero&amp;rsquo;s Disguise situation die is modified by the observer&amp;rsquo;s Awareness-perception modifier.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Lockpick</title>
+      <link>http://localhost:1313/skills/covert-ops/lockpick/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/skills/covert-ops/lockpick/</guid>
+      <description>&lt;p&gt;&lt;em&gt;This skill can&amp;rsquo;t be used untrained.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;This specialty skill allows a hero to open physical locks (doors, safes, vehicles, etc.). It is usually employed with tools which provide a situation die bonus.&lt;/p&gt;&#xA;&lt;p&gt;The lockpick skill is useless against a computer-assisted lock unless it has a physical mechanism the hero can manipulate. Almost always, the use of lockpick requires a complex skill check.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Pickpocket</title>
+      <link>http://localhost:1313/skills/covert-ops/pickpocket/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/skills/covert-ops/pickpocket/</guid>
+      <description>&lt;p&gt;&lt;em&gt;This skill can&amp;rsquo;t be used untrained.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;This specialty skill allows a hero to remove objects from a person (or plant something) without that person noticing. The base situation die is determined by the target&amp;rsquo;s Will resistance modifier.&lt;/p&gt;&#xA;&lt;h3 id=&#34;results&#34;&gt;Results&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Failure/Critical Failure:&lt;/strong&gt; The attempt fails and the pickpocketer is noticed.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Ordinary:&lt;/strong&gt; The attempt succeeds.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Good/Amazing:&lt;/strong&gt; The attempt succeeds and may offset penalties for repeated attempts against the same target.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;rank-benefits&#34;&gt;Rank Benefits&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Rank 3, 6, 9, 12 [It Takes One to Know One]:&lt;/strong&gt; The character&amp;rsquo;s Will resistance modifier (only for spotting a pickpocket attempt) improves by +1 penalty to the foe&amp;rsquo;s attempt at rank 3, +2 steps at rank 6, +3 steps at rank 9, and +4 steps at rank 12.&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Stealth</title>
+      <link>http://localhost:1313/skills/covert-ops/stealth/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/skills/covert-ops/stealth/</guid>
+      <description>&lt;p&gt;This specialty (also known as Unified Stealth) merges the techniques of hide, sneak, and shadow into a single field of expertise. It is the art of remaining undetected while stationary or in motion.&lt;/p&gt;&#xA;&lt;h3 id=&#34;hide-stationary&#34;&gt;Hide (Stationary)&lt;/h3&gt;&#xA;&lt;p&gt;Ability to stay unnoticed by keeping quiet and still using cover or darkness.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Results:&lt;/strong&gt; Degree of success gives observer penalty: Ordinary (+1), Good (+2), Amazing (+3).&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;sneak-in-motion&#34;&gt;Sneak (In Motion)&lt;/h3&gt;&#xA;&lt;p&gt;Ability to move silently (up to one-half walk rate).&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
