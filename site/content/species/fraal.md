@@ -1,6 +1,7 @@
 +++
 title = "Fraal"
 description = "Ancient, peaceful starfarers with powerful psionic abilities."
+image = "/images/species/fraal.jpg"
 weight = 2
 +++
 

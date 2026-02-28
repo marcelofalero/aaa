@@ -1,6 +1,7 @@
 +++
 title = "Sesheyan"
 description = "Winged hunters from a world of perpetual twilight."
+image = "/images/species/sesheyan.jpg"
 weight = 4
 +++
 

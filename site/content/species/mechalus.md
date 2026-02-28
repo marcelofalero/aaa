@@ -1,6 +1,7 @@
 +++
 title = "Mechalus"
 description = "Logical humanoids born with integrated cybernetic technology."
+image = "/images/species/mechalus.jpg"
 weight = 3
 +++
 

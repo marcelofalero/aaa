@@ -1,6 +1,7 @@
 +++
 title = "T'sa"
 description = "Manitas reptilianos rápidos con un entusiasmo contagioso por el descubrimiento."
+image = "/images/species/tsa.jpg"
 weight = 5
 +++
 

@@ -4,8 +4,6 @@ description = "The sentient species of the AAA universe, from ancient starfarers
 weight = 3
 +++
 
-# Species of the AAA Universe
-
 In **AAA**, players can choose from several sentient species. Each species offers unique physiological traits, a distinct history, and specific roleplaying opportunities.
 
 ## At a Glance: Ability Score Limits
