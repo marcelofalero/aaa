@@ -1,6 +1,7 @@
 +++
 title = "Human"
 description = "Versatile, ambitious, and culturally diverse inhabitants of Earth and its colonies."
+image = "/images/species/human.jpg"
 weight = 1
 +++
 

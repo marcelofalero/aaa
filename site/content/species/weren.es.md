@@ -1,6 +1,7 @@
 +++
 title = "Weren"
 description = "Grandes filósofos-guerreros cubiertos de piel con un feroz código de honor."
+image = "/images/species/weren.jpg"
 weight = 6
 +++
 
@@ -14,7 +15,7 @@ Provenientes del mundo de **Kurg**, los weren fueron descubiertos por los humano
 ## Habilidades Especiales
 - **CA Natural:** El pelaje grueso y la piel dura proporcionan protección (**d8+1/d6+1/d6**). Si un weren usa armadura de calidad Buena, su armadura natural también se considera de calidad Buena.
 - **Arma Natural:** Garras retráctiles (Ataque Desarmado-pelea/artes marciales de poder) hacen d4h/d4+2h/d4m de daño.
-- **Camuflaje:** El pelaje brilla para coincidir con el entorno. Los ataques a distancia contra un weren a distancia reciben una **penalización de +1 paso**. Esta habilidad no funciona si el weren lleva ropa o armadura que cubra más del 15% de su cuerpo.
+- **Camuflaje:** El pelaje brilla para coincidir con el entorno. Los ataques a distancia contra un weren a distancia reciben una **penalización de +1 paso**, y el weren recibe una **bonificación de -1 paso** en las pruebas de [Operaciones Encubiertas-sigilo](/es/skills/covert-ops/stealth). Esta habilidad no funciona si el weren lleva ropa o armadura que cubra más del 15% de su cuerpo.
 - **Resistente:** Reciben una **bonificación de -1 paso** en las pruebas de habilidad de **resistencia-resistir dolor**.
 - **Intimidante:** Reciben una **bonificación de -2 pasos** en las pruebas de habilidad de **interacción-intimidar** cuando amenazan físicamente a alguien.
 - **Cultura Primitiva:** Sufren una **penalización de +2 pasos** con tecnología de Nivel de Progreso 4 o superior (se puede reducir con puntos de habilidad).

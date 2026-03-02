@@ -1,0 +1,55 @@
+{{ define "main" }}
+<article class="main-container nested-copy-line-height">
+    <div class="mw8 center">
+        {{ partial "breadcrumbs.html" . }}
+    </div>
+    <section class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy nested-links {{ $.Param " text_color" |
+        compare.Default "mid-gray" }}">
+        <h1 class="f1 athelas">{{ .Title }}</h1>
+        {{- .Content -}}
+    </section>
+    <section class="mw8 center ph3 ph5-l tc pb4 species-grid">
+        <style>
+            .species-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 2rem;
+                justify-items: center;
+            }
+
+            .species-link-img {
+                filter: grayscale(100%);
+                transition: filter 0.3s ease, transform 0.3s ease;
+                width: 250px;
+                height: 489px;
+                object-fit: cover;
+                border-radius: 4px;
+            }
+
+            .species-link-img:hover {
+                filter: grayscale(0%);
+                transform: scale(1.02);
+            }
+
+            .species-link-container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-decoration: none;
+            }
+        </style>
+        {{ range .Paginator.Pages }}
+        {{ if .Params.image }}
+        <div class="species-grid-item">
+            <a href="{{ .RelPermalink }}" class="species-link-container link" title="{{ .Title }}">
+                <img src="{{ .Params.image }}" alt="{{ .Title }}" class="species-link-img shadow-4">
+                <span class="f4 fw6 mt3 tc {{ $.Param " text_color" | compare.Default "mid-gray" }} hover-blue">{{
+                    .Title }}</span>
+            </a>
+        </div>
+        {{ end }}
+        {{ end }}
+        {{ template "_internal/pagination.html" . -}}
+    </section>
+</article>
+{{ end }}

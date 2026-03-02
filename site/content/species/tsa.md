@@ -1,6 +1,7 @@
 +++
 title = "T'sa"
 description = "Fast, reptilian tinkers with an infectious enthusiasm for discovery."
+image = "/images/species/tsa.jpg"
 weight = 5
 +++
 

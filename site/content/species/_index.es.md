@@ -4,8 +4,6 @@ description = "Las especies inteligentes del universo AAA, desde antiguos viajer
 weight = 3
 +++
 
-# Especies del Universo AAA
-
 En **AAA**, los jugadores pueden elegir entre varias especies inteligentes. Cada especie ofrece rasgos fisiológicos únicos, una historia distinta y oportunidades específicas de interpretación.
 
 ## De un Vistazo: Límites de Puntuación de Habilidad

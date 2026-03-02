@@ -1,6 +1,7 @@
 +++
 title = "Mechalus"
 description = "Humanoides lógicos nacidos con tecnología cibernética integrada."
+image = "/images/species/mechalus.jpg"
 weight = 3
 +++
 

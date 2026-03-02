@@ -1,6 +1,7 @@
 +++
 title = "Humano"
 description = "Habitantes de la Tierra y sus colonias, versátiles, ambiciosos y culturalmente diversos."
+image = "/images/species/human.jpg"
 weight = 1
 +++
 

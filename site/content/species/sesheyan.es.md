@@ -1,6 +1,7 @@
 +++
 title = "Sesheyan"
 description = "Cazadores alados de un mundo de crepúsculo perpetuo."
+image = "/images/species/sesheyan.jpg"
 weight = 4
 +++
 

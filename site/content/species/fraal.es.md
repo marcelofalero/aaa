@@ -1,6 +1,7 @@
 +++
 title = "Fraal"
 description = "Antiguos y pacíficos viajeros estelares con poderosas habilidades psiónicas."
+image = "/images/species/fraal.jpg"
 weight = 2
 +++
 
