@@ -24,6 +24,7 @@
       }
 
       const currentUrl = "{{ .RelPermalink }}";
+      const currentLang = "{{ .Site.Language.Lang }}";
       const fragment = document.createDocumentFragment();
 
       // Reverse history so current page is first
@@ -37,14 +38,23 @@
           fragment.appendChild(sep);
         }
 
+        let title = page.title;
+        let url = page.url;
+
+        // Try to get the translated version
+        if (page.translations && page.translations[currentLang]) {
+          title = page.translations[currentLang].title;
+          url = page.translations[currentLang].url;
+        }
+
         const li = document.createElement('li');
-        if (page.url === currentUrl && index === 0) {
+        if (url === currentUrl && index === 0) {
           li.className = "current-page f4 fw6 neon-text truncate";
-          li.textContent = page.title;
+          li.textContent = title;
         } else {
           const a = document.createElement('a');
-          a.href = page.url;
-          a.textContent = page.title;
+          a.href = url;
+          a.textContent = title;
           a.className = "truncate";
           li.appendChild(a);
         }

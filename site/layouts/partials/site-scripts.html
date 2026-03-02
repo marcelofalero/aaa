@@ -5,8 +5,15 @@
       const currentPage = {
         title: "{{ if .IsHome }}Index{{ else }}{{ .Title }}{{ end }}",
         url: "{{ .RelPermalink }}",
-        translationKey: "{{ .TranslationKey }}"
+        translationKey: "{{ .TranslationKey }}",
+        translations: {}
       };
+      {{- range .AllTranslations }}
+      currentPage.translations["{{ .Language.Lang }}"] = {
+        title: "{{ if .IsHome }}Index{{ else }}{{ .Title }}{{ end }}",
+        url: "{{ .RelPermalink }}"
+      };
+      {{- end }}
 
       let history = [];
       try {

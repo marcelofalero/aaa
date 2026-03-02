@@ -7,3 +7,4 @@ hugo_startup.log
 site/trans_env
 /site/trans_env/
 public/**
+site/public

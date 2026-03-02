@@ -1,0 +1,10 @@
+{{ $versions := dict }}
+{{ range .AllTranslations }}
+  {{ $title := .Title }}
+  {{ if .IsHome }}{{ $title = "Index" }}{{ end }}
+  {{ $versions = merge $versions (dict .Language.Lang (dict "title" $title "url" .RelPermalink)) }}
+{{ end }}
+<script>
+  const versions = {{ $versions | jsonify | safeJS }};
+  console.log(versions);
+</script>
