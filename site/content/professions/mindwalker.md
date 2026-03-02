@@ -15,7 +15,7 @@ Mindwalkers are individuals who have unlocked the latent potential of their mind
 - **Psionic Potential:** You have a base pool of psionic energy points.
 - **Mental Discipline:** You gain unique benefits when using psionic skills.
 
-## Favored Skills (Cost: Market Value - 1)
+## Favored Skills (Cost: List Price - 1)
 
 Mindwalkers favor the psionic skills found in Chapter 14, as well as several mental and social disciplines.
 

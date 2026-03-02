@@ -15,7 +15,7 @@ Technical Operatives (Tech Ops) are masters of the high-tech universe. Whether t
 - **Action Check Increase:** +1 to your Action Check score.
 - **Accelerated Learning:** You gain extra skill points as you level up, representing your ability to quickly master new technologies.
 
-## Favored Skills (Cost: Market Value - 1)
+## Favored Skills (Cost: List Price - 1)
 
 Tech Ops favor skills that involve the understanding and manipulation of technology, biology, and the physical universe.
 

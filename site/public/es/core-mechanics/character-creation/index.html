@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  
+  <title>Creación de personajes | AAA</title>
+  <meta name="viewport" content="width=device-width,minimum-scale=1">
+  <meta name="description"
+    content="Pasos para construir tu personaje de AAA, desde el concepto hasta la hoja de personaje completa.">
+  <meta name="generator" content="Hugo 0.157.0">
+  
+  
+  
+  <meta name="robots" content="noindex, nofollow">
+  
+  
+
+  
+
+
+  
+    <link rel="stylesheet" href="/css/scifi.css">
+  
+
+
+  <script>
+  (function () {
+    try {
+      
+      const currentPage = {
+        title: "Creación de personajes",
+        url: "\/es\/core-mechanics\/character-creation\/",
+        translationKey: "\/core-mechanics\/character-creation"
+      };
+
+      let history = [];
+      try {
+        history = JSON.parse(sessionStorage.getItem('pageHistory')) || [];
+      } catch (e) {
+        console.error("Error parsing history from sessionStorage", e);
+        history = [];
+      }
+
+      
+      history = history.filter(page => page.url !== currentPage.url && (!page.translationKey || page.translationKey !== currentPage.translationKey));
+
+      
+      history.push(currentPage);
+
+      
+      
+      if (history.length > 20) {
+        history.shift();
+      }
+
+      sessionStorage.setItem('pageHistory', JSON.stringify(history));
+    } catch (e) {
+      console.error("History tracking error:", e);
+    }
+  })();
+</script>
+
+<script src="/js/table-toggle.js"></script>
+
+  
+  
+
+  
+
+  
+  
+  <link href="/es/core-mechanics/character-creation/index.xml" rel="alternate" type="application/rss+xml" title="AAA" />
+  <link href="/es/core-mechanics/character-creation/index.xml" rel="feed" type="application/rss+xml" title="AAA" />
+  
+  
+
+  
+  <link rel="canonical" href="http://localhost:1313/es/core-mechanics/character-creation/">
+  
+
+  
+  
+  <meta property="og:url" content="http://localhost:1313/es/core-mechanics/character-creation/">
+  <meta property="og:site_name" content="AAA">
+  <meta property="og:title" content="Creación de personajes">
+  <meta property="og:description" content="Pasos para construir tu personaje de AAA, desde el concepto hasta la hoja de personaje completa.">
+  <meta property="og:locale" content="es">
+  <meta property="og:type" content="website">
+
+  <meta itemprop="name" content="Creación de personajes">
+  <meta itemprop="description" content="Pasos para construir tu personaje de AAA, desde el concepto hasta la hoja de personaje completa.">
+  <meta itemprop="wordCount" content="1051">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Creación de personajes">
+  <meta name="twitter:description" content="Pasos para construir tu personaje de AAA, desde el concepto hasta la hoja de personaje completa.">
+
+  
+</head><body class="ma0 scifi-body development is-section is-section">
+  
+
+<header>
+  <div class="bg-black">
+    <nav class="pv3 ph3 ph4-ns w-100 relative" role="navigation">
+  <div class="flex center items-center justify-between w-100">
+    <div class="flex items-center">
+      <a href="/es/" class="f3 fw2 hover-neon-cyan neon-text db no-underline athelas mr4"
+        style="line-height: 1.3;">
+        
+        <div class="neon-text-glitch" data-text="Alterated">Alterated</div>
+        <div class="neon-text-glitch" data-text="Alternity" style="margin-left: 2rem;">Alternity</div>
+        <div class="neon-text-glitch" data-text="Alternative" style="margin-left: 4rem;">Alternative</div>
+        
+      </a>
+    </div>
+
+    <div class="flex items-center flex-auto justify-end">
+      
+    </div>
+  </div>
+</nav>
+  </div>
+</header>
+
+  <main class="pb7" role="main">
+    
+  <article class="main-container nested-copy-line-height">
+    <div class="mw8 center">
+      <nav class="breadcrumbs" aria-label="breadcrumb">
+  <ul id="history-breadcrumbs-list">
+    
+  </ul>
+</nav>
+
+<script>
+  (function () {
+    const list = document.getElementById('history-breadcrumbs-list');
+    if (!list) return;
+
+    try {
+      let history = [];
+      try {
+        history = JSON.parse(sessionStorage.getItem('pageHistory')) || [];
+      } catch (e) {
+        console.error("Error parsing history", e);
+      }
+
+      if (history.length <= 1) {
+        const nav = list.closest('.breadcrumbs');
+        if (nav) nav.remove();
+        return;
+      }
+
+      const currentUrl = "\/es\/core-mechanics\/character-creation\/";
+      const fragment = document.createDocumentFragment();
+
+      
+      const reversedHistory = [...history].reverse();
+
+      reversedHistory.forEach((page, index) => {
+        if (index > 0) {
+          const sep = document.createElement('li');
+          sep.className = "separator";
+          sep.innerHTML = '‹';
+          fragment.appendChild(sep);
+        }
+
+        const li = document.createElement('li');
+        if (page.url === currentUrl && index === 0) {
+          li.className = "current-page f4 fw6 neon-text truncate";
+          li.textContent = page.title;
+        } else {
+          const a = document.createElement('a');
+          a.href = page.url;
+          a.textContent = page.title;
+          a.className = "truncate";
+          li.appendChild(a);
+        }
+        fragment.appendChild(li);
+      });
+
+      list.appendChild(fragment);
+    } catch (e) {
+      console.error("Breadcrumb rendering error:", e);
+    }
+  })();
+</script>
+    </div>
+    <section class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy nested-links mid-gray">
+      <h1 class="f1 athelas">Creación de personajes</h1><p>Crear un personaje en el juego AAA es un proceso paso a paso que define las habilidades físicas y mentales de tu personaje, su trasfondo y su papel en la galaxia.</p>
+<h2 id="1-desarrolla-un-concepto-de-personaje">1. Desarrolla un concepto de personaje</h2>
+<p>Antes de empezar a hacer cálculos, piensa qué tipo de personaje quieres interpretar. ¿Eres un rudo marine espacial, un científico brillante pero socialmente torpe, o un astuto espía independiente? El concepto de tu personaje guiará tus elecciones en los siguientes pasos.</p>
+<h2 id="2-elige-una-especie">2. Elige una Especie</h2>
+<p>Hay varias especies conscientes disponibles para jugar. Para obtener descripciones detalladas y estadísticas, consulta la <strong><a href="/es/species/">Sección de Especies</a></strong>.</p>
+<ul>
+<li><strong>Humanos (Human):</strong> Versátiles y culturalmente diversos, con tendencia a especializarse.</li>
+<li><strong>Fraal:</strong> Antiguos viajeros espaciales con dones psiónicos que coexistieron en secreto con los humanos durante milenios.</li>
+<li><strong>Mechalus:</strong> Humanoides cibernéticamente integrados e impulsados por la lógica que valoran la eficiencia por encima de todo, mientras suprimen sus emociones.</li>
+<li><strong>Sesheyan:</strong> Cazadores alados con múltiples ojos y una mentalidad alienígena.</li>
+<li><strong>T’sa:</strong> Reparadores y técnicos rápidos y reptilianos con instintos afilados.</li>
+<li><strong>Weren:</strong> Grandes y peludos guerreros y filósofos.</li>
+</ul>
+<h2 id="3-elige-un-trasfondo-background">3. Elige un Trasfondo (Background)</h2>
+<p>A diferencia de las etiquetas de carrera tradicionales, un <strong>Trasfondo</strong> en AAA es un elemento fundamental de tu personaje. Representa tu vida antes de ir de aventuras y proporciona beneficios mecánicos tangibles:</p>
+<ul>
+<li><strong>Habilidades favorecidas (Descuentos):</strong> Cada trasfondo identifica un conjunto de &ldquo;Habilidades favorecidas&rdquo;. Pagas <strong>1 punto menos</strong> para comprar o aumentar estas habilidades.</li>
+<li><strong>Precio de lista (List Price):</strong> Aunque pagas menos, el &ldquo;Precio de lista&rdquo; completo de la habilidad se utiliza para calcular tu Nivel de Personaje.</li>
+<li><strong>Habilidad única:</strong> Algunos trasfondos otorgan un rasgo o capacidad especial exclusiva de ese camino de vida.</li>
+</ul>
+<p>Para ver una lista completa de las opciones disponibles, consulta la <strong><a href="/es/backgrounds/">Sección de Trasfondos (Backgrounds)</a></strong>.</p>
+<h2 id="4-elige-una-profesión">4. Elige una Profesión</h2>
+<p>Cada personaje elige una <strong>Profesión</strong>, que representa su rol actual y entrenamiento principal. Cada profesión tiene requisitos únicos, beneficios y una lista dedicada de <strong>Habilidades favorecidas</strong>.</p>
+<p>Para obtener todos los detalles de cada camino, consulta la <strong><a href="/es/professions/">Sección de Profesiones</a></strong>.
+Las profesiones también tienen requisitos sobre las puntuaciones mínimas de algunas habilidades. Éstas se detallan en la tabla a continuación.</p>
+<h2 id="5-asigna-las-puntuaciones-de-las-habilidades">5. Asigna las puntuaciones de las habilidades</h2>
+<p>Tienes <strong>60 puntos</strong> para dividir entre seis Habilidades. Las puntuaciones deben cumplir con los mínimos de la profesión y los límites de la especie. A un coste fijo de 1 punto por punto de puntuación de habilidad.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 40px;">
+<div style="width: max-content;">
+<div class="table-wrapper">
+  <table>
+      <thead>
+          <tr>
+              <th style="text-align: left">
+                Especie (Species)
+              </th>
+              <th style="text-align: left">
+                FUE (STR)
+              </th>
+              <th style="text-align: left">
+                DES (DEX)
+              </th>
+              <th style="text-align: left">
+                CON
+              </th>
+              <th style="text-align: left">
+                INT
+              </th>
+              <th style="text-align: left">
+                VOL (WIL)
+              </th>
+              <th style="text-align: left">
+                PER
+              </th>
+          </tr>
+      </thead>
+    <tbody>
+        <tr>
+            <td style="text-align: left">
+              <strong><a href="/es/species/human/">Humano</a></strong>
+            </td>
+            <td style="text-align: left">
+              4-14
+            </td>
+            <td style="text-align: left">
+              4-14
+            </td>
+            <td style="text-align: left">
+              4-14
+            </td>
+            <td style="text-align: left">
+              4-14
+            </td>
+            <td style="text-align: left">
+              4-14
+            </td>
+            <td style="text-align: left">
+              4-14
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: left">
+              <strong><a href="/es/species/fraal/">Fraal</a></strong>
+            </td>
+            <td style="text-align: left">
+              3-12
+            </td>
+            <td style="text-align: left">
+              4-14
+            </td>
+            <td style="text-align: left">
+              3-12
+            </td>
+            <td style="text-align: left">
+              7-17
+            </td>
+            <td style="text-align: left">
+              7-17
+            </td>
+            <td style="text-align: left">
+              5-15
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: left">
+              <strong><a href="/es/species/mechalus/">Mechalus</a></strong>
+            </td>
+            <td style="text-align: left">
+              5-15
+            </td>
+            <td style="text-align: left">
+              4-14
+            </td>
+            <td style="text-align: left">
+              5-15
+            </td>
+            <td style="text-align: left">
+              7-17
+            </td>
+            <td style="text-align: left">
+              3-12
+            </td>
+            <td style="text-align: left">
+              3-12
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: left">
+              <strong><a href="/es/species/sesheyan/">Sesheyan</a></strong>
+            </td>
+            <td style="text-align: left">
+              3-12
+            </td>
+            <td style="text-align: left">
+              5-15
+            </td>
+            <td style="text-align: left">
+              4-14
+            </td>
+            <td style="text-align: left">
+              3-12
+            </td>
+            <td style="text-align: left">
+              5-15
+            </td>
+            <td style="text-align: left">
+              3-12
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: left">
+              <strong><a href="/es/species/tsa/">T&rsquo;sa</a></strong>
+            </td>
+            <td style="text-align: left">
+              3-12
+            </td>
+            <td style="text-align: left">
+              7-17
+            </td>
+            <td style="text-align: left">
+              3-12
+            </td>
+            <td style="text-align: left">
+              5-15
+            </td>
+            <td style="text-align: left">
+              4-14
+            </td>
+            <td style="text-align: left">
+              5-15
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: left">
+              <strong><a href="/es/species/weren/">Weren</a></strong>
+            </td>
+            <td style="text-align: left">
+              7-17
+            </td>
+            <td style="text-align: left">
+              3-12
+            </td>
+            <td style="text-align: left">
+              7-17
+            </td>
+            <td style="text-align: left">
+              3-12
+            </td>
+            <td style="text-align: left">
+              3-12
+            </td>
+            <td style="text-align: left">
+              3-12
+            </td>
+        </tr>
+    </tbody>
+  </table>
+</div>
+</div>
+<div style="width: max-content;">
+<div class="table-wrapper">
+  <table>
+      <thead>
+          <tr>
+              <th style="text-align: left">
+                Profesión
+              </th>
+              <th style="text-align: left">
+                Requisitos mínimos
+              </th>
+          </tr>
+      </thead>
+    <tbody>
+        <tr>
+            <td style="text-align: left">
+              <strong><a href="/es/professions/combat-spec/">Combat Spec</a></strong>
+            </td>
+            <td style="text-align: left">
+              STR 11, CON 9
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: left">
+              <strong><a href="/es/professions/free-agent/">Free Agent</a></strong>
+            </td>
+            <td style="text-align: left">
+              DEX 11, WIL 9
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: left">
+              <strong><a href="/es/professions/tech-op/">Tech Op</a></strong>
+            </td>
+            <td style="text-align: left">
+              DEX 9, INT 11
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: left">
+              <strong><a href="/es/professions/mindwalker/">Mindwalker</a></strong>
+            </td>
+            <td style="text-align: left">
+              CON 9, INT 9, WIL 11
+            </td>
+        </tr>
+    </tbody>
+  </table>
+</div>
+</div>
+</div>
+<h3 id="modificadores-de-resistencia-resistance-modifiers">Modificadores de Resistencia (Resistance Modifiers)</h3>
+<p>Las puntuaciones de habilidad más altas proporcionan un &ldquo;modificador de resistencia&rdquo; que penaliza a los oponentes que intentan actuar contra ti.</p>
+<div style="width: max-content;">
+<div class="table-wrapper">
+  <table>
+      <thead>
+          <tr>
+              <th style="text-align: left">
+                Habilidad (Ability)
+              </th>
+              <th style="text-align: left">
+                Modificador
+              </th>
+          </tr>
+      </thead>
+    <tbody>
+        <tr>
+            <td style="text-align: left">
+              4 o menos
+            </td>
+            <td style="text-align: left">
+              -2
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: left">
+              5-6
+            </td>
+            <td style="text-align: left">
+              -1
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: left">
+              7-10
+            </td>
+            <td style="text-align: left">
+              0
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: left">
+              11-12
+            </td>
+            <td style="text-align: left">
+              +1
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: left">
+              13-14
+            </td>
+            <td style="text-align: left">
+              +2
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: left">
+              15-16
+            </td>
+            <td style="text-align: left">
+              +3
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: left">
+              17-18
+            </td>
+            <td style="text-align: left">
+              +4
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: left">
+              19+
+            </td>
+            <td style="text-align: left">
+              +5
+            </td>
+        </tr>
+    </tbody>
+  </table>
+</div>
+</div>
+<h2 id="6-compra-de-habilidades">6. Compra de Habilidades</h2>
+<p>Cada personaje comienza el juego con <strong>70</strong> puntos de habilidad para gastar en habilidades en la creación del personaje. Puedes comprar <strong>Habilidades amplias (Broad Skills)</strong> (habilidades base) y <strong>Habilidades de especialidad (Specialty Skills)</strong> (entrenamiento específico) adicionales.</p>
+<h3 id="precio-de-lista-vs-costo-de-compra">Precio de lista vs. Costo de compra</h3>
+<p>En AAA, tu <strong>Nivel</strong> representa la cantidad total de puntos de habilidad que has invertido en tus habilidades, considerando solo el precio de lista y no el coste de compra. Esto asegura que el Nivel refleje con precisión el poder de tu personaje, independientemente de la eficiencia con la que hayas adquirido tu entrenamiento.</p>
+<ul>
+<li><strong>Precio de lista (List Price):</strong> Cada habilidad tiene un &ldquo;Precio de lista&rdquo; estándar. Se utiliza este valor para calcular tu experiencia total y tu Nivel.</li>
+<li><strong>Costo de compra (Purchase Cost):</strong> Si una habilidad es <strong>Favorecida</strong> (por tu Trasfondo o Profesión), recibes un descuento. Puedes comprarla o subirla por <strong>1 punto menos</strong> que el Precio de Lista.</li>
+<li><strong>Ejemplo:</strong> Una habilidad con un Precio de Lista de 5 que es Favorecida te cuesta <strong>4 puntos</strong> para comprar, pero suma <strong>5 puntos</strong> a tu &ldquo;Valor de Habilidad&rdquo; total para determinar tu nivel.</li>
+</ul>
+<h2 id="7-selecciona-ventajas-y-defectos-perks--flaws">7. Selecciona Ventajas y Defectos (Perks &amp; Flaws)</h2>
+<p>(Opcional) Puedes elegir hasta tres ventajas (perks) gastando puntos de habilidad, y hasta tres defectos (flaws) para ganar puntos de habilidad adicionales. Las ventajas gratuitas obtenidas por tu especie o trasfondo no cuentan para este límite.</p>
+<h2 id="8-elige-los-atributos">8. Elige los Atributos</h2>
+<p>Define la <strong>Motivación</strong>, <strong>Actitud Moral</strong> y <strong>Rasgos del personaje</strong> de tu personaje. Éstos proporcionan profundidad para el juego de rol y pueden otorgarte puntos de logro. Compártelos con tu DJ (GM) para asegurarte de que encajen en la campaña, también le dará ideas a tu DJ para ganchos argumentales y hacer que tu experiencia sea más personal y atractiva.</p>
+<h2 id="9-completa-la-hoja-de-personaje">9. Completa la Hoja de Personaje</h2>
+<p>Calcula los valores finales:</p>
+<ul>
+<li><strong>Puntuación del chequeo de acción (Action Check Score):</strong> (DEX + INT) / 2 + Bono de Profesión + Bono de Trasfondo si corresponde.</li>
+<li><strong>Acciones por asalto (Actions per Round):</strong> Basado en CON + WIL.</li>
+<li><strong>Durabilidad (Durability):</strong> Tu personaje tiene tantos niveles de aturdimiento (stun) y herida (wound) como tu puntuación de CON, mientras que tus niveles de mortal y fatiga (fatigue) son iguales a tu puntuación de CON dividida por 2 (redondeada hacia arriba). Éstos pueden ser modificados por trasfondo, ventajas, cibernética, mutaciones y otros factores.</li>
+<li><strong>Tasas de movimiento (Movement Rates):</strong> Basadas en STR + DEX.</li>
+</ul>
+<div style="display: flex; flex-wrap: wrap; gap: 40px;">
+<div>
+<p><strong>ACCIONES POR ASALTO (ACTIONS PER ROUND)</strong></p>
+<div class="table-wrapper">
+  <table>
+      <thead>
+          <tr>
+              <th style="text-align: left">
+                CON + WIL
+              </th>
+              <th style="text-align: left">
+                Acciones
+              </th>
+          </tr>
+      </thead>
+    <tbody>
+        <tr>
+            <td style="text-align: left">
+              8 o menos
+            </td>
+            <td style="text-align: left">
+              1
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: left">
+              9-16
+            </td>
+            <td style="text-align: left">
+              2
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: left">
+              17-24
+            </td>
+            <td style="text-align: left">
+              3
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: left">
+              25-32
+            </td>
+            <td style="text-align: left">
+              4
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: left">
+              33+
+            </td>
+            <td style="text-align: left">
+              5
+            </td>
+        </tr>
+    </tbody>
+  </table>
+</div>
+</div>
+<div>
+<p><strong>TASAS DE MOVIMIENTO EN COMBATE (COMBAT MOVEMENT RATES)</strong></p>
+<div class="table-wrapper">
+  <table>
+      <thead>
+          <tr>
+              <th style="text-align: left">
+                STR + DEX
+              </th>
+              <th style="text-align: left">
+                Sprint
+              </th>
+              <th style="text-align: left">
+                Correr (Run)
+              </th>
+              <th style="text-align: left">
+                Caminar (Walk)
+              </th>
+              <th style="text-align: left">
+                Nadar (Swim)
+              </th>
+              <th style="text-align: left">
+                Planear (Glide)
+              </th>
+          </tr>
+      </thead>
+    <tbody>
+        <tr>
+            <td style="text-align: left">
+              6-7
+            </td>
+            <td style="text-align: left">
+              6
+            </td>
+            <td style="text-align: left">
+              4
+            </td>
+            <td style="text-align: left">
+              2
+            </td>
+            <td style="text-align: left">
+              1
+            </td>
+            <td style="text-align: left">
+              6
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: left">
+              8-9
+            </td>
+            <td style="text-align: left">
+              8
+            </td>
+            <td style="text-align: left">
+              6
+            </td>
+            <td style="text-align: left">
+              3
+            </td>
+            <td style="text-align: left">
+              1
+            </td>
+            <td style="text-align: left">
+              8
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: left">
+              10-11
+            </td>
+            <td style="text-align: left">
+              10
+            </td>
+            <td style="text-align: left">
+              8
+            </td>
+            <td style="text-align: left">
+              4
+            </td>
+            <td style="text-align: left">
+              2
+            </td>
+            <td style="text-align: left">
+              10
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: left">
+              12-13
+            </td>
+            <td style="text-align: left">
+              12
+            </td>
+            <td style="text-align: left">
+              8
+            </td>
+            <td style="text-align: left">
+              4
+            </td>
+            <td style="text-align: left">
+              2
+            </td>
+            <td style="text-align: left">
+              12
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: left">
+              14-15
+            </td>
+            <td style="text-align: left">
+              14
+            </td>
+            <td style="text-align: left">
+              10
+            </td>
+            <td style="text-align: left">
+              5
+            </td>
+            <td style="text-align: left">
+              2
+            </td>
+            <td style="text-align: left">
+              14
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: left">
+              16-17
+            </td>
+            <td style="text-align: left">
+              16
+            </td>
+            <td style="text-align: left">
+              10
+            </td>
+            <td style="text-align: left">
+              5
+            </td>
+            <td style="text-align: left">
+              3
+            </td>
+            <td style="text-align: left">
+              16
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: left">
+              18-19
+            </td>
+            <td style="text-align: left">
+              18
+            </td>
+            <td style="text-align: left">
+              12
+            </td>
+            <td style="text-align: left">
+              6
+            </td>
+            <td style="text-align: left">
+              3
+            </td>
+            <td style="text-align: left">
+              18
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: left">
+              20-21
+            </td>
+            <td style="text-align: left">
+              20
+            </td>
+            <td style="text-align: left">
+              12
+            </td>
+            <td style="text-align: left">
+              6
+            </td>
+            <td style="text-align: left">
+              3
+            </td>
+            <td style="text-align: left">
+              20
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: left">
+              22-23
+            </td>
+            <td style="text-align: left">
+              22
+            </td>
+            <td style="text-align: left">
+              14
+            </td>
+            <td style="text-align: left">
+              7
+            </td>
+            <td style="text-align: left">
+              3
+            </td>
+            <td style="text-align: left">
+              22
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: left">
+              24-25
+            </td>
+            <td style="text-align: left">
+              24
+            </td>
+            <td style="text-align: left">
+              16
+            </td>
+            <td style="text-align: left">
+              8
+            </td>
+            <td style="text-align: left">
+              4
+            </td>
+            <td style="text-align: left">
+              24
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: left">
+              26-27
+            </td>
+            <td style="text-align: left">
+              26
+            </td>
+            <td style="text-align: left">
+              16
+            </td>
+            <td style="text-align: left">
+              8
+            </td>
+            <td style="text-align: left">
+              4
+            </td>
+            <td style="text-align: left">
+              26
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: left">
+              28-29
+            </td>
+            <td style="text-align: left">
+              28
+            </td>
+            <td style="text-align: left">
+              18
+            </td>
+            <td style="text-align: left">
+              9
+            </td>
+            <td style="text-align: left">
+              4
+            </td>
+            <td style="text-align: left">
+              28
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: left">
+              30-31
+            </td>
+            <td style="text-align: left">
+              30
+            </td>
+            <td style="text-align: left">
+              20
+            </td>
+            <td style="text-align: left">
+              10
+            </td>
+            <td style="text-align: left">
+              5
+            </td>
+            <td style="text-align: left">
+              30
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: left">
+              32+
+            </td>
+            <td style="text-align: left">
+              32
+            </td>
+            <td style="text-align: left">
+              20
+            </td>
+            <td style="text-align: left">
+              10
+            </td>
+            <td style="text-align: left">
+              5
+            </td>
+            <td style="text-align: left">
+              32
+            </td>
+        </tr>
+    </tbody>
+  </table>
+</div>
+</div>
+</div>
+</section>
+    <section class="flex-ns mt5 flex-wrap justify-around">
+      
+    </section>
+    </article>
+
+  </main>
+  <footer class="bottom-0 w-100 pa3 bt"
+  style="border-top: 1px solid var(--border-color); background-color: var(--bg-dark); color: var(--text-light);"
+  role="contentinfo">
+  <div class="flex justify-between items-center">
+    <div class="flex items-center">
+      <a class="f6 fw4 hover-neon-cyan silver link dn dib-ns pv2 ph3 no-underline ttu tracked"
+        style="border-bottom: none !important;" href="http://localhost:1313/es/">
+        &copy;  AAA 2026 
+      </a>
+      
+
+
+
+
+
+
+
+<a class="f6 fw4 hover-neon-cyan silver link dn dib-ns pv2 ph3 no-underline ttu tracked border-0"
+  href="/core-mechanics/character-creation/" style="border-bottom: none !important;">
+  [ English ]
+</a>
+
+    </div>
+    <div class="f7 silver o-50">
+      ESTADO DEL SISTEMA: EN LÍNEA
+    </div>
+  </div>
+</footer>
+</body>
+
+</html>

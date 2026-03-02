@@ -10,7 +10,7 @@ In **AAA (Alterated Alternity Alternative)**, your **Profession** represents you
 
 Choosing a Profession is a key part of character creation. It provides:
 1.  **Minimum Ability Requirements:** To qualify for a profession, you must meet certain physical or mental standards.
-2.  **Favored Skills:** Each Profession identifies a set of skills that receive a **Purchase Cost Discount** (Market Value - 1).
+2.  **Favored Skills:** Each Profession identifies a set of skills that receive a **Purchase Cost Discount** (List Price - 1).
 3.  **Unique Benefits:** Every Profession grants special mechanical advantages.
 
 ---
