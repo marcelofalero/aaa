@@ -15,7 +15,7 @@ Combat Specialists (Combat Specs) are the primary warriors of the AAA universe. 
 - **Action Check Increase:** +3 to your Action Check score.
 - **Combat Bonus:** Choose one combat specialty skill (from Melee Weapons, Unarmed Attack, or any Ranged/Heavy weapon skill). That skill's base situation die improves from +d0 to -d4.
 
-## Favored Skills (Cost: Market Value - 1)
+## Favored Skills (Cost: List Price - 1)
 
 The following skills are central to the Combat Spec profession and are easier for these characters to master.
 

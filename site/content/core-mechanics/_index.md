@@ -23,5 +23,10 @@ The state of technology in a society is defined by its Progress Level.
 - **PL 7 (Gravity Age):** Mass reactors, star system colonization.
 - **PL 8 (Energy Age):** Miniaturized stardrives, force screens, energy weapons.
 
+## In This Section
+- **[Character Creation](/core-mechanics/character-creation/)**
+- **[Character Advancement](/core-mechanics/character-advancement/)**
+- **[Heroes in Action](/core-mechanics/characters-in-action/)**
+
 ---
 **The action starts now! Welcome to the future.**

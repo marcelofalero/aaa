@@ -9,14 +9,14 @@ weight = 5
 In **AAA (Alterated Alternity Alternative)**, your **Background** represents your character's life, training, and experiences before they became a protagonist in the current story. 
 
 Choosing a Background is a critical step in character creation. It provides:
-1.  **Favored Skills (Purchase Cost Discount):** A set of skills that represent your upbringing. When you buy these skills, you pay **1 point less** than their List Price (Market Value).
+1.  **Favored Skills (Purchase Cost Discount):** A set of skills that represent your upbringing. When you buy these skills, you pay **1 point less** than their List Price.
 2.  **Background Ability:** A unique mechanical benefit or special trait that reflects your past.
 
 ---
 
-### The "Market Value" vs. "Purchase Cost" Rule
+### The "List Price" vs. "Purchase Cost" Rule
 To ensure all characters of the same Level have comparable power, we use a simple "Coupon" system:
-- **Market Value:** Every skill has a "Market Value" equal to its **List Price**. This is what you record on your character sheet to determine your **Character Level**.
+- **List Price:** Every skill has a "List Price". This is what you record on your character sheet to determine your **Character Level**.
 - **Purchase Cost:** If a skill is **Favored** (by your Background or Profession), you pay **1 point less** to buy it. You get a high-value skill for a lower cost!
 
 ---

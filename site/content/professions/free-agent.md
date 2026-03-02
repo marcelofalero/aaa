@@ -16,7 +16,7 @@ Free Agents are the ultimate troubleshooters. They rely on agility, intuition, a
 - **Resistance Bonus:** Choose one Ability. Improve its resistance modifier by +1 step.
 - **Last Resort Bonus:** Your maximum Last Resort points increase by +1. You can also spend 2 points at once to shift a result by two grades.
 
-## Favored Skills (Cost: Market Value - 1)
+## Favored Skills (Cost: List Price - 1)
 
 Free Agents favor skills that help them move unseen, bypass security, and manipulate their surroundings.
 
