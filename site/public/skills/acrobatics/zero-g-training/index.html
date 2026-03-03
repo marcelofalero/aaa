@@ -41,7 +41,8 @@ Sesheyan characters without the zero-g training skill function as though they ha
       const currentPage = {
         title: "Zero-g Training",
         url: "\/skills\/acrobatics\/zero-g-training\/",
-        translationKey: "\/skills\/acrobatics\/zero-g-training"
+        translationKey: "\/skills\/acrobatics\/zero-g-training",
+        translations: "[{\"Date\":\"0001-01-01T00:00:00Z\",\"Lastmod\":\"0001-01-01T00:00:00Z\",\"PublishDate\":\"0001-01-01T00:00:00Z\",\"ExpiryDate\":\"0001-01-01T00:00:00Z\",\"Aliases\":[],\"BundleType\":\"\",\"Description\":\"\",\"Draft\":false,\"IsHome\":false,\"Keywords\":null,\"Kind\":\"page\",\"Layout\":\"\",\"LinkTitle\":\"Zero-g Training\",\"IsNode\":false,\"IsPage\":true,\"Path\":\"/skills/acrobatics/zero-g-training\",\"Slug\":\"\",\"Lang\":\"en\",\"IsSection\":false,\"Section\":\"skills\",\"Sitemap\":{\"ChangeFreq\":\"\",\"Priority\":-1,\"Filename\":\"sitemap.xml\",\"Disable\":false},\"Type\":\"skills\",\"Weight\":0},{\"Date\":\"0001-01-01T00:00:00Z\",\"Lastmod\":\"0001-01-01T00:00:00Z\",\"PublishDate\":\"0001-01-01T00:00:00Z\",\"ExpiryDate\":\"0001-01-01T00:00:00Z\",\"Aliases\":[],\"BundleType\":\"\",\"Description\":\"\",\"Draft\":false,\"IsHome\":false,\"Keywords\":null,\"Kind\":\"page\",\"Layout\":\"\",\"LinkTitle\":\"Entrenamiento de gravedad cero\",\"IsNode\":false,\"IsPage\":true,\"Path\":\"/skills/acrobatics/zero-g-training\",\"Slug\":\"\",\"Lang\":\"es\",\"IsSection\":false,\"Section\":\"skills\",\"Sitemap\":{\"ChangeFreq\":\"\",\"Priority\":-1,\"Filename\":\"sitemap.xml\",\"Disable\":false},\"Type\":\"skills\",\"Weight\":0}]"
       };
 
       let history = [];
@@ -72,6 +73,7 @@ Sesheyan characters without the zero-g training skill function as though they ha
 </script>
 
 <script src="/js/table-toggle.js"></script>
+
 
   
   
@@ -163,6 +165,7 @@ Rank Benefits Rank 4: Zero-g penalty is reduced to &#43;1 step, and light gravit
         return;
       }
 
+      const currentLang = "en";
       const currentUrl = "\/skills\/acrobatics\/zero-g-training\/";
       const fragment = document.createDocumentFragment();
 
@@ -178,12 +181,22 @@ Rank Benefits Rank 4: Zero-g penalty is reduced to &#43;1 step, and light gravit
         }
 
         const li = document.createElement('li');
-        if (page.url === currentUrl && index === 0) {
+        let targetUrl = page.url;
+
+        
+        if (page.translations) {
+          const translation = page.translations.find(t => t.Lang === currentLang);
+          if (translation) {
+            targetUrl = translation.Permalink;
+          }
+        }
+
+        if (targetUrl === currentUrl && index === 0) {
           li.className = "current-page f4 fw6 neon-text truncate";
           li.textContent = page.title;
         } else {
           const a = document.createElement('a');
-          a.href = page.url;
+          a.href = targetUrl;
           a.textContent = page.title;
           a.className = "truncate";
           li.appendChild(a);
@@ -197,6 +210,7 @@ Rank Benefits Rank 4: Zero-g penalty is reduced to &#43;1 step, and light gravit
     }
   })();
 </script>
+
     <h1 class="f1 athelas mt3 mb1">
       Zero-g Training (U) (DEX)
     </h1>

@@ -80,7 +80,8 @@ Amazing: HI &#43;3 / LI &#43;4
       const currentPage = {
         title: "Kinetic Shield",
         url: "\/skills\/telekinesis\/kinetic-shield\/",
-        translationKey: "\/skills\/telekinesis\/kinetic-shield"
+        translationKey: "\/skills\/telekinesis\/kinetic-shield",
+        translations: "[{\"Date\":\"0001-01-01T00:00:00Z\",\"Lastmod\":\"0001-01-01T00:00:00Z\",\"PublishDate\":\"0001-01-01T00:00:00Z\",\"ExpiryDate\":\"0001-01-01T00:00:00Z\",\"Aliases\":[],\"BundleType\":\"\",\"Description\":\"\",\"Draft\":false,\"IsHome\":false,\"Keywords\":null,\"Kind\":\"page\",\"Layout\":\"\",\"LinkTitle\":\"Kinetic Shield\",\"IsNode\":false,\"IsPage\":true,\"Path\":\"/skills/telekinesis/kinetic-shield\",\"Slug\":\"\",\"Lang\":\"en\",\"IsSection\":false,\"Section\":\"skills\",\"Sitemap\":{\"ChangeFreq\":\"\",\"Priority\":-1,\"Filename\":\"sitemap.xml\",\"Disable\":false},\"Type\":\"skills\",\"Weight\":0},{\"Date\":\"0001-01-01T00:00:00Z\",\"Lastmod\":\"0001-01-01T00:00:00Z\",\"PublishDate\":\"0001-01-01T00:00:00Z\",\"ExpiryDate\":\"0001-01-01T00:00:00Z\",\"Aliases\":[],\"BundleType\":\"\",\"Description\":\"\",\"Draft\":false,\"IsHome\":false,\"Keywords\":null,\"Kind\":\"page\",\"Layout\":\"\",\"LinkTitle\":\"Escudo cinético\",\"IsNode\":false,\"IsPage\":true,\"Path\":\"/skills/telekinesis/kinetic-shield\",\"Slug\":\"\",\"Lang\":\"es\",\"IsSection\":false,\"Section\":\"skills\",\"Sitemap\":{\"ChangeFreq\":\"\",\"Priority\":-1,\"Filename\":\"sitemap.xml\",\"Disable\":false},\"Type\":\"skills\",\"Weight\":0}]"
       };
 
       let history = [];
@@ -111,6 +112,7 @@ Amazing: HI &#43;3 / LI &#43;4
 </script>
 
 <script src="/js/table-toggle.js"></script>
+
 
   
   
@@ -202,6 +204,7 @@ Results Ordinary: HI &#43;1 / LI &#43;2 Good: HI &#43;2 / LI &#43;3 Amazing: HI 
         return;
       }
 
+      const currentLang = "en";
       const currentUrl = "\/skills\/telekinesis\/kinetic-shield\/";
       const fragment = document.createDocumentFragment();
 
@@ -217,12 +220,22 @@ Results Ordinary: HI &#43;1 / LI &#43;2 Good: HI &#43;2 / LI &#43;3 Amazing: HI 
         }
 
         const li = document.createElement('li');
-        if (page.url === currentUrl && index === 0) {
+        let targetUrl = page.url;
+
+        
+        if (page.translations) {
+          const translation = page.translations.find(t => t.Lang === currentLang);
+          if (translation) {
+            targetUrl = translation.Permalink;
+          }
+        }
+
+        if (targetUrl === currentUrl && index === 0) {
           li.className = "current-page f4 fw6 neon-text truncate";
           li.textContent = page.title;
         } else {
           const a = document.createElement('a');
-          a.href = page.url;
+          a.href = targetUrl;
           a.textContent = page.title;
           a.className = "truncate";
           li.appendChild(a);
@@ -236,6 +249,7 @@ Results Ordinary: HI &#43;1 / LI &#43;2 Good: HI &#43;2 / LI &#43;3 Amazing: HI 
     }
   })();
 </script>
+
     <h1 class="f1 athelas mt3 mb1">
       Kinetic Shield (U) (WIL)
     </h1>

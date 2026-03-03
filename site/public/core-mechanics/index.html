@@ -32,7 +32,8 @@
       const currentPage = {
         title: "Core Mechanics",
         url: "\/core-mechanics\/",
-        translationKey: "\/core-mechanics"
+        translationKey: "\/core-mechanics",
+        translations: "[{\"Date\":\"0001-01-01T00:00:00Z\",\"Lastmod\":\"0001-01-01T00:00:00Z\",\"PublishDate\":\"0001-01-01T00:00:00Z\",\"ExpiryDate\":\"0001-01-01T00:00:00Z\",\"Aliases\":[],\"BundleType\":\"branch\",\"Description\":\"Welcome to the AAA (Alterated Alternity Alternative).\",\"Draft\":false,\"IsHome\":false,\"Keywords\":null,\"Kind\":\"section\",\"Layout\":\"\",\"LinkTitle\":\"Core Mechanics\",\"IsNode\":true,\"IsPage\":false,\"Path\":\"/core-mechanics\",\"Slug\":\"\",\"Lang\":\"en\",\"IsSection\":true,\"Section\":\"core-mechanics\",\"Sitemap\":{\"ChangeFreq\":\"\",\"Priority\":-1,\"Filename\":\"sitemap.xml\",\"Disable\":false},\"Type\":\"core-mechanics\",\"Weight\":1},{\"Date\":\"0001-01-01T00:00:00Z\",\"Lastmod\":\"0001-01-01T00:00:00Z\",\"PublishDate\":\"0001-01-01T00:00:00Z\",\"ExpiryDate\":\"0001-01-01T00:00:00Z\",\"Aliases\":[],\"BundleType\":\"branch\",\"Description\":\"Bienvenido a AAA (Alterated Alternity Alternative).\",\"Draft\":false,\"IsHome\":false,\"Keywords\":null,\"Kind\":\"section\",\"Layout\":\"\",\"LinkTitle\":\"Mecánicas principales\",\"IsNode\":true,\"IsPage\":false,\"Path\":\"/core-mechanics\",\"Slug\":\"\",\"Lang\":\"es\",\"IsSection\":true,\"Section\":\"core-mechanics\",\"Sitemap\":{\"ChangeFreq\":\"\",\"Priority\":-1,\"Filename\":\"sitemap.xml\",\"Disable\":false},\"Type\":\"core-mechanics\",\"Weight\":1}]"
       };
 
       let history = [];
@@ -64,6 +65,7 @@
 
 <script src="/js/table-toggle.js"></script>
 
+
   
   
 
@@ -91,7 +93,7 @@
 
   <meta itemprop="name" content="Core Mechanics">
   <meta itemprop="description" content="Welcome to the AAA (Alterated Alternity Alternative).">
-  <meta itemprop="wordCount" content="306">
+  <meta itemprop="wordCount" content="316">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Core Mechanics">
   <meta name="twitter:description" content="Welcome to the AAA (Alterated Alternity Alternative).">
@@ -152,6 +154,7 @@
         return;
       }
 
+      const currentLang = "en";
       const currentUrl = "\/core-mechanics\/";
       const fragment = document.createDocumentFragment();
 
@@ -167,12 +170,22 @@
         }
 
         const li = document.createElement('li');
-        if (page.url === currentUrl && index === 0) {
+        let targetUrl = page.url;
+
+        
+        if (page.translations) {
+          const translation = page.translations.find(t => t.Lang === currentLang);
+          if (translation) {
+            targetUrl = translation.Permalink;
+          }
+        }
+
+        if (targetUrl === currentUrl && index === 0) {
           li.className = "current-page f4 fw6 neon-text truncate";
           li.textContent = page.title;
         } else {
           const a = document.createElement('a');
-          a.href = page.url;
+          a.href = targetUrl;
           a.textContent = page.title;
           a.className = "truncate";
           li.appendChild(a);
@@ -186,6 +199,7 @@
     }
   })();
 </script>
+
     </div>
     <section class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy nested-links mid-gray">
       <h1 class="f1 athelas">Core Mechanics</h1><p>Welcome to the <strong>AAA (Alterated Alternity Alternative)</strong>. This is my attempt to modernize and improve the Alternity Science Fiction Roleplaying Game, while keeping the spirit of the original game. This roleplaying game provides a framework for all kinds of contemporary to far-future science fiction adventures. Whether you are an explorer commanding the newest starship in the fleet, a scientist seeking a cure for a deadly alien virus, or a battle-weary space marine protecting the galaxy, you can experience the future—one adventure at a time!</p>
@@ -205,10 +219,42 @@
 <li><strong>PL 7 (Gravity Age):</strong> Mass reactors, star system colonization.</li>
 <li><strong>PL 8 (Energy Age):</strong> Miniaturized stardrives, force screens, energy weapons.</li>
 </ul>
+<h2 id="in-this-section">In This Section</h2>
+<ul>
+<li><strong><a href="/core-mechanics/character-creation/">Character Creation</a></strong></li>
+<li><strong><a href="/core-mechanics/character-advancement/">Character Advancement</a></strong></li>
+<li><strong><a href="/core-mechanics/characters-in-action/">Heroes in Action</a></strong></li>
+</ul>
 <hr>
 <p><strong>The action starts now! Welcome to the future.</strong></p>
 </section>
     <section class="flex-ns mt5 flex-wrap justify-around">
+      
+        <div class="w-100 w-30-l mb4 relative sci-fi-card">
+          <div class="w-100 mb4 nested-copy-line-height relative sci-fi-card pa0">
+  <div class="pa4 overflow-hidden">
+    <span class="f7 db neon-cyan ttu tracked mb2 o-80">Core Mechanics</span>
+    <h1 class="f3 mt0 mb3">
+      <a href="/core-mechanics/character-advancement/" class="link neon-cyan hover-neon-cyan dim no-underline">
+        Character Advancement
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height silver mb3">
+      <p>In Alterated Alternity Alternative (AAA), character progression is not merely a tally of experience spent, but a measure of your character’s total weight and influence in the galaxy. This weight is tracked through Advancement Points (AP), representing the cumulative sum of every skill, perk, and benefit acquired over a career.</p>
+<h2 id="the-flow-of-experience">The Flow of Experience</h2>
+<p>AAA utilizes a fluid progression model where growth occurs incrementally between sessions. Experience Points (XP) represent the currency of learning, usually awarded at a rate of 3 to 5 points per session. While the primary time for growth is between game sessions, the Game Master may permit immediate spending to reflect a sudden &ldquo;combat insight&rdquo; or a successful narrative arc involving training and study.</p>
+    </div>
+    <a href="/core-mechanics/character-advancement/"
+      class="ba b--neon-cyan bg-transparent br1 neon-cyan dib f7 hover-bg-neon-cyan hover-white link ph3 pv2 ttu tracked transition-all no-underline">
+      Read more >>
+    </a>
+  </div>
+  <div class="absolute bottom-0 right-0 o-05 f-headline select-none pointer-events-none z-0"
+    style="line-height: 0.8; margin-bottom: -10px; margin-right: -10px;">
+    C
+  </div>
+</div>
+        </div>
       
         <div class="w-100 w-30-l mb4 relative sci-fi-card">
           <div class="w-100 mb4 nested-copy-line-height relative sci-fi-card pa0">

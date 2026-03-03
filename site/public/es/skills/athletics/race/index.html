@@ -38,7 +38,8 @@ Sprint Rate: Increases by 2 meters at ranks 4, 7, and 12.
       const currentPage = {
         title: "Carrera",
         url: "\/es\/skills\/athletics\/race\/",
-        translationKey: "\/skills\/athletics\/race"
+        translationKey: "\/skills\/athletics\/race",
+        translations: "[{\"Date\":\"0001-01-01T00:00:00Z\",\"Lastmod\":\"0001-01-01T00:00:00Z\",\"PublishDate\":\"0001-01-01T00:00:00Z\",\"ExpiryDate\":\"0001-01-01T00:00:00Z\",\"Aliases\":[],\"BundleType\":\"\",\"Description\":\"\",\"Draft\":false,\"IsHome\":false,\"Keywords\":null,\"Kind\":\"page\",\"Layout\":\"\",\"LinkTitle\":\"Race\",\"IsNode\":false,\"IsPage\":true,\"Path\":\"/skills/athletics/race\",\"Slug\":\"\",\"Lang\":\"en\",\"IsSection\":false,\"Section\":\"skills\",\"Sitemap\":{\"ChangeFreq\":\"\",\"Priority\":-1,\"Filename\":\"sitemap.xml\",\"Disable\":false},\"Type\":\"skills\",\"Weight\":0},{\"Date\":\"0001-01-01T00:00:00Z\",\"Lastmod\":\"0001-01-01T00:00:00Z\",\"PublishDate\":\"0001-01-01T00:00:00Z\",\"ExpiryDate\":\"0001-01-01T00:00:00Z\",\"Aliases\":[],\"BundleType\":\"\",\"Description\":\"\",\"Draft\":false,\"IsHome\":false,\"Keywords\":null,\"Kind\":\"page\",\"Layout\":\"\",\"LinkTitle\":\"Carrera\",\"IsNode\":false,\"IsPage\":true,\"Path\":\"/skills/athletics/race\",\"Slug\":\"\",\"Lang\":\"es\",\"IsSection\":false,\"Section\":\"skills\",\"Sitemap\":{\"ChangeFreq\":\"\",\"Priority\":-1,\"Filename\":\"sitemap.xml\",\"Disable\":false},\"Type\":\"skills\",\"Weight\":0}]"
       };
 
       let history = [];
@@ -69,6 +70,7 @@ Sprint Rate: Increases by 2 meters at ranks 4, 7, and 12.
 </script>
 
 <script src="/js/table-toggle.js"></script>
+
 
   
   
@@ -160,6 +162,7 @@ Rank Benefits Run Rate: Increases by 2 meters at ranks 5 and 9. Sprint Rate: Inc
         return;
       }
 
+      const currentLang = "es";
       const currentUrl = "\/es\/skills\/athletics\/race\/";
       const fragment = document.createDocumentFragment();
 
@@ -175,12 +178,22 @@ Rank Benefits Run Rate: Increases by 2 meters at ranks 5 and 9. Sprint Rate: Inc
         }
 
         const li = document.createElement('li');
-        if (page.url === currentUrl && index === 0) {
+        let targetUrl = page.url;
+
+        
+        if (page.translations) {
+          const translation = page.translations.find(t => t.Lang === currentLang);
+          if (translation) {
+            targetUrl = translation.Permalink;
+          }
+        }
+
+        if (targetUrl === currentUrl && index === 0) {
           li.className = "current-page f4 fw6 neon-text truncate";
           li.textContent = page.title;
         } else {
           const a = document.createElement('a');
-          a.href = page.url;
+          a.href = targetUrl;
           a.textContent = page.title;
           a.className = "truncate";
           li.appendChild(a);
@@ -194,6 +207,7 @@ Rank Benefits Run Rate: Increases by 2 meters at ranks 5 and 9. Sprint Rate: Inc
     }
   })();
 </script>
+
     <h1 class="f1 athelas mt3 mb1">
       Carrera (CON)
     </h1>

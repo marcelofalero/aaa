@@ -32,7 +32,8 @@
       const currentPage = {
         title: "Combat Spec",
         url: "\/professions\/combat-spec\/",
-        translationKey: "\/professions\/combat-spec"
+        translationKey: "\/professions\/combat-spec",
+        translations: "[{\"Date\":\"0001-01-01T00:00:00Z\",\"Lastmod\":\"0001-01-01T00:00:00Z\",\"PublishDate\":\"0001-01-01T00:00:00Z\",\"ExpiryDate\":\"0001-01-01T00:00:00Z\",\"Aliases\":[],\"BundleType\":\"\",\"Description\":\"Warriors and tactical experts.\",\"Draft\":false,\"IsHome\":false,\"Keywords\":null,\"Kind\":\"page\",\"Layout\":\"\",\"LinkTitle\":\"Combat Spec\",\"IsNode\":false,\"IsPage\":true,\"Path\":\"/professions/combat-spec\",\"Slug\":\"\",\"Lang\":\"en\",\"IsSection\":false,\"Section\":\"professions\",\"Sitemap\":{\"ChangeFreq\":\"\",\"Priority\":-1,\"Filename\":\"sitemap.xml\",\"Disable\":false},\"Type\":\"professions\",\"Weight\":1},{\"Date\":\"0001-01-01T00:00:00Z\",\"Lastmod\":\"0001-01-01T00:00:00Z\",\"PublishDate\":\"0001-01-01T00:00:00Z\",\"ExpiryDate\":\"0001-01-01T00:00:00Z\",\"Aliases\":[],\"BundleType\":\"\",\"Description\":\"Guerreros y expertos tácticos.\",\"Draft\":false,\"IsHome\":false,\"Keywords\":null,\"Kind\":\"page\",\"Layout\":\"\",\"LinkTitle\":\"Especificaciones de combate\",\"IsNode\":false,\"IsPage\":true,\"Path\":\"/professions/combat-spec\",\"Slug\":\"\",\"Lang\":\"es\",\"IsSection\":false,\"Section\":\"professions\",\"Sitemap\":{\"ChangeFreq\":\"\",\"Priority\":-1,\"Filename\":\"sitemap.xml\",\"Disable\":false},\"Type\":\"professions\",\"Weight\":1}]"
       };
 
       let history = [];
@@ -63,6 +64,7 @@
 </script>
 
 <script src="/js/table-toggle.js"></script>
+
 
   
   
@@ -155,6 +157,7 @@
         return;
       }
 
+      const currentLang = "en";
       const currentUrl = "\/professions\/combat-spec\/";
       const fragment = document.createDocumentFragment();
 
@@ -170,12 +173,22 @@
         }
 
         const li = document.createElement('li');
-        if (page.url === currentUrl && index === 0) {
+        let targetUrl = page.url;
+
+        
+        if (page.translations) {
+          const translation = page.translations.find(t => t.Lang === currentLang);
+          if (translation) {
+            targetUrl = translation.Permalink;
+          }
+        }
+
+        if (targetUrl === currentUrl && index === 0) {
           li.className = "current-page f4 fw6 neon-text truncate";
           li.textContent = page.title;
         } else {
           const a = document.createElement('a');
-          a.href = page.url;
+          a.href = targetUrl;
           a.textContent = page.title;
           a.className = "truncate";
           li.appendChild(a);
@@ -189,6 +202,7 @@
     }
   })();
 </script>
+
       
       
     </header>

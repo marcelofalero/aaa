@@ -14,19 +14,26 @@
       try {
         history = JSON.parse(sessionStorage.getItem('pageHistory')) || [];
       } catch (e) {
-        console.error("Error parsing history", e);
+        console.error("Error parsing history from sessionStorage", e);
       }
 
-      if (history.length <= 1) {
-        const nav = list.closest('.breadcrumbs');
-        if (nav) nav.remove();
-        return;
-      }
-
+      const currentLang = "{{ .Site.Language.Lang }}";
       const currentUrl = "{{ .RelPermalink }}";
-      const fragment = document.createDocumentFragment();
+      // Create a map of all pages on the site, keyed by their TranslationKey
+      const translationsMap = {
+        {{ range .Site.Pages }}
+          "{{ .TranslationKey }}": {
+            {{ range .AllTranslations }}
+              "{{ .Language.Lang }}": {
+                "url": "{{ .RelPermalink }}",
+                "title": "{{ .Title }}"
+              },
+            {{ end }}
+          },
+        {{ end }}
+      };
 
-      // Reverse history so current page is first
+      const fragment = document.createDocumentFragment();
       const reversedHistory = [...history].reverse();
 
       reversedHistory.forEach((page, index) => {
@@ -38,14 +45,23 @@
         }
 
         const li = document.createElement('li');
-        if (page.url === currentUrl && index === 0) {
-          li.className = "current-page f4 fw6 neon-text truncate";
-          li.textContent = page.title;
+        const pageData = translationsMap[page.id];
+
+        let targetUrl = "#"; // Default to a safe link
+        let targetTitle = page.title; // Use stored title as a fallback
+
+        if (pageData && pageData[currentLang]) {
+          targetUrl = pageData[currentLang].url;
+          targetTitle = pageData[currentLang].title;
+        }
+
+        if (targetUrl === currentUrl && index === 0) {
+          li.className = "current-page";
+          li.textContent = targetTitle;
         } else {
           const a = document.createElement('a');
-          a.href = page.url;
-          a.textContent = page.title;
-          a.className = "truncate";
+          a.href = targetUrl;
+          a.textContent = targetTitle;
           li.appendChild(a);
         }
         fragment.appendChild(li);

@@ -32,7 +32,8 @@
       const currentPage = {
         title: "Skills",
         url: "\/skills\/",
-        translationKey: "\/skills"
+        translationKey: "\/skills",
+        translations: "[{\"Date\":\"0001-01-01T00:00:00Z\",\"Lastmod\":\"0001-01-01T00:00:00Z\",\"PublishDate\":\"0001-01-01T00:00:00Z\",\"ExpiryDate\":\"0001-01-01T00:00:00Z\",\"Aliases\":[],\"BundleType\":\"branch\",\"Description\":\"Comprehensive list of broad and specialty skills categorized by function.\",\"Draft\":false,\"IsHome\":false,\"Keywords\":null,\"Kind\":\"section\",\"Layout\":\"\",\"LinkTitle\":\"Skills\",\"IsNode\":true,\"IsPage\":false,\"Path\":\"/skills\",\"Slug\":\"\",\"Lang\":\"en\",\"IsSection\":true,\"Section\":\"skills\",\"Sitemap\":{\"ChangeFreq\":\"\",\"Priority\":-1,\"Filename\":\"sitemap.xml\",\"Disable\":false},\"Type\":\"skills\",\"Weight\":6},{\"Date\":\"0001-01-01T00:00:00Z\",\"Lastmod\":\"0001-01-01T00:00:00Z\",\"PublishDate\":\"0001-01-01T00:00:00Z\",\"ExpiryDate\":\"0001-01-01T00:00:00Z\",\"Aliases\":[],\"BundleType\":\"branch\",\"Description\":\"Lista completa de habilidades amplias y especializadas categorizadas por función.\",\"Draft\":false,\"IsHome\":false,\"Keywords\":null,\"Kind\":\"section\",\"Layout\":\"\",\"LinkTitle\":\"Habilidades\",\"IsNode\":true,\"IsPage\":false,\"Path\":\"/skills\",\"Slug\":\"\",\"Lang\":\"es\",\"IsSection\":true,\"Section\":\"skills\",\"Sitemap\":{\"ChangeFreq\":\"\",\"Priority\":-1,\"Filename\":\"sitemap.xml\",\"Disable\":false},\"Type\":\"skills\",\"Weight\":6}]"
       };
 
       let history = [];
@@ -63,6 +64,7 @@
 </script>
 
 <script src="/js/table-toggle.js"></script>
+
 
   
   
@@ -152,6 +154,7 @@
         return;
       }
 
+      const currentLang = "en";
       const currentUrl = "\/skills\/";
       const fragment = document.createDocumentFragment();
 
@@ -167,12 +170,22 @@
         }
 
         const li = document.createElement('li');
-        if (page.url === currentUrl && index === 0) {
+        let targetUrl = page.url;
+
+        
+        if (page.translations) {
+          const translation = page.translations.find(t => t.Lang === currentLang);
+          if (translation) {
+            targetUrl = translation.Permalink;
+          }
+        }
+
+        if (targetUrl === currentUrl && index === 0) {
           li.className = "current-page f4 fw6 neon-text truncate";
           li.textContent = page.title;
         } else {
           const a = document.createElement('a');
-          a.href = page.url;
+          a.href = targetUrl;
           a.textContent = page.title;
           a.className = "truncate";
           li.appendChild(a);
@@ -186,6 +199,7 @@
     }
   })();
 </script>
+
     <h1 class="f1 athelas mt3 mb1">
       Skills 
     </h1>

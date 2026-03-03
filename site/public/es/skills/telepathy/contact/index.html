@@ -85,7 +85,8 @@ Familiar mind: -1; Unfamiliar mind: none; Combative: &#43;2; Hostile: &#43;1.
       const currentPage = {
         title: "Contacto",
         url: "\/es\/skills\/telepathy\/contact\/",
-        translationKey: "\/skills\/telepathy\/contact"
+        translationKey: "\/skills\/telepathy\/contact",
+        translations: "[{\"Date\":\"0001-01-01T00:00:00Z\",\"Lastmod\":\"0001-01-01T00:00:00Z\",\"PublishDate\":\"0001-01-01T00:00:00Z\",\"ExpiryDate\":\"0001-01-01T00:00:00Z\",\"Aliases\":[],\"BundleType\":\"\",\"Description\":\"\",\"Draft\":false,\"IsHome\":false,\"Keywords\":null,\"Kind\":\"page\",\"Layout\":\"\",\"LinkTitle\":\"Contact\",\"IsNode\":false,\"IsPage\":true,\"Path\":\"/skills/telepathy/contact\",\"Slug\":\"\",\"Lang\":\"en\",\"IsSection\":false,\"Section\":\"skills\",\"Sitemap\":{\"ChangeFreq\":\"\",\"Priority\":-1,\"Filename\":\"sitemap.xml\",\"Disable\":false},\"Type\":\"skills\",\"Weight\":0},{\"Date\":\"0001-01-01T00:00:00Z\",\"Lastmod\":\"0001-01-01T00:00:00Z\",\"PublishDate\":\"0001-01-01T00:00:00Z\",\"ExpiryDate\":\"0001-01-01T00:00:00Z\",\"Aliases\":[],\"BundleType\":\"\",\"Description\":\"\",\"Draft\":false,\"IsHome\":false,\"Keywords\":null,\"Kind\":\"page\",\"Layout\":\"\",\"LinkTitle\":\"Contacto\",\"IsNode\":false,\"IsPage\":true,\"Path\":\"/skills/telepathy/contact\",\"Slug\":\"\",\"Lang\":\"es\",\"IsSection\":false,\"Section\":\"skills\",\"Sitemap\":{\"ChangeFreq\":\"\",\"Priority\":-1,\"Filename\":\"sitemap.xml\",\"Disable\":false},\"Type\":\"skills\",\"Weight\":0}]"
       };
 
       let history = [];
@@ -116,6 +117,7 @@ Familiar mind: -1; Unfamiliar mind: none; Combative: &#43;2; Hostile: &#43;1.
 </script>
 
 <script src="/js/table-toggle.js"></script>
+
 
   
   
@@ -207,6 +209,7 @@ Results Ordinary: Simple concepts (brief questions/one-word answers). Good: Mode
         return;
       }
 
+      const currentLang = "es";
       const currentUrl = "\/es\/skills\/telepathy\/contact\/";
       const fragment = document.createDocumentFragment();
 
@@ -222,12 +225,22 @@ Results Ordinary: Simple concepts (brief questions/one-word answers). Good: Mode
         }
 
         const li = document.createElement('li');
-        if (page.url === currentUrl && index === 0) {
+        let targetUrl = page.url;
+
+        
+        if (page.translations) {
+          const translation = page.translations.find(t => t.Lang === currentLang);
+          if (translation) {
+            targetUrl = translation.Permalink;
+          }
+        }
+
+        if (targetUrl === currentUrl && index === 0) {
           li.className = "current-page f4 fw6 neon-text truncate";
           li.textContent = page.title;
         } else {
           const a = document.createElement('a');
-          a.href = page.url;
+          a.href = targetUrl;
           a.textContent = page.title;
           a.className = "truncate";
           li.appendChild(a);
@@ -241,6 +254,7 @@ Results Ordinary: Simple concepts (brief questions/one-word answers). Good: Mode
     }
   })();
 </script>
+
     <h1 class="f1 athelas mt3 mb1">
       Contacto (PER)
     </h1>

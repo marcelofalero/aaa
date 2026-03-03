@@ -84,7 +84,8 @@ Resistance Modifier: The hero&rsquo;s Will resistance modifier improves by &#43;
       const currentPage = {
         title: "Resolución mental",
         url: "\/es\/skills\/resolve-wil\/mental-resolve\/",
-        translationKey: "\/skills\/resolve-wil\/mental-resolve"
+        translationKey: "\/skills\/resolve-wil\/mental-resolve",
+        translations: "[{\"Date\":\"0001-01-01T00:00:00Z\",\"Lastmod\":\"0001-01-01T00:00:00Z\",\"PublishDate\":\"0001-01-01T00:00:00Z\",\"ExpiryDate\":\"0001-01-01T00:00:00Z\",\"Aliases\":[],\"BundleType\":\"\",\"Description\":\"\",\"Draft\":false,\"IsHome\":false,\"Keywords\":null,\"Kind\":\"page\",\"Layout\":\"\",\"LinkTitle\":\"Mental Resolve\",\"IsNode\":false,\"IsPage\":true,\"Path\":\"/skills/resolve-wil/mental-resolve\",\"Slug\":\"\",\"Lang\":\"en\",\"IsSection\":false,\"Section\":\"skills\",\"Sitemap\":{\"ChangeFreq\":\"\",\"Priority\":-1,\"Filename\":\"sitemap.xml\",\"Disable\":false},\"Type\":\"skills\",\"Weight\":0},{\"Date\":\"0001-01-01T00:00:00Z\",\"Lastmod\":\"0001-01-01T00:00:00Z\",\"PublishDate\":\"0001-01-01T00:00:00Z\",\"ExpiryDate\":\"0001-01-01T00:00:00Z\",\"Aliases\":[],\"BundleType\":\"\",\"Description\":\"\",\"Draft\":false,\"IsHome\":false,\"Keywords\":null,\"Kind\":\"page\",\"Layout\":\"\",\"LinkTitle\":\"Resolución mental\",\"IsNode\":false,\"IsPage\":true,\"Path\":\"/skills/resolve-wil/mental-resolve\",\"Slug\":\"\",\"Lang\":\"es\",\"IsSection\":false,\"Section\":\"skills\",\"Sitemap\":{\"ChangeFreq\":\"\",\"Priority\":-1,\"Filename\":\"sitemap.xml\",\"Disable\":false},\"Type\":\"skills\",\"Weight\":0}]"
       };
 
       let history = [];
@@ -115,6 +116,7 @@ Resistance Modifier: The hero&rsquo;s Will resistance modifier improves by &#43;
 </script>
 
 <script src="/js/table-toggle.js"></script>
+
 
   
   
@@ -203,6 +205,7 @@ Results Critical Failure: The hero collapses in anguish and can’t act, or flee
         return;
       }
 
+      const currentLang = "es";
       const currentUrl = "\/es\/skills\/resolve-wil\/mental-resolve\/";
       const fragment = document.createDocumentFragment();
 
@@ -218,12 +221,22 @@ Results Critical Failure: The hero collapses in anguish and can’t act, or flee
         }
 
         const li = document.createElement('li');
-        if (page.url === currentUrl && index === 0) {
+        let targetUrl = page.url;
+
+        
+        if (page.translations) {
+          const translation = page.translations.find(t => t.Lang === currentLang);
+          if (translation) {
+            targetUrl = translation.Permalink;
+          }
+        }
+
+        if (targetUrl === currentUrl && index === 0) {
           li.className = "current-page f4 fw6 neon-text truncate";
           li.textContent = page.title;
         } else {
           const a = document.createElement('a');
-          a.href = page.url;
+          a.href = targetUrl;
           a.textContent = page.title;
           a.className = "truncate";
           li.appendChild(a);
@@ -237,6 +250,7 @@ Results Critical Failure: The hero collapses in anguish and can’t act, or flee
     }
   })();
 </script>
+
     <h1 class="f1 athelas mt3 mb1">
       Resolución mental (WIL)
     </h1>

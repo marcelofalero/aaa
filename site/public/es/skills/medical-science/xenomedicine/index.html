@@ -38,7 +38,8 @@ Improved Treatment: Penalty reduction to &#43;2 at rank 3, &#43;1 at rank 6, eli
       const currentPage = {
         title: "Xenomedicina [Específica]",
         url: "\/es\/skills\/medical-science\/xenomedicine\/",
-        translationKey: "\/skills\/medical-science\/xenomedicine"
+        translationKey: "\/skills\/medical-science\/xenomedicine",
+        translations: "[{\"Date\":\"0001-01-01T00:00:00Z\",\"Lastmod\":\"0001-01-01T00:00:00Z\",\"PublishDate\":\"0001-01-01T00:00:00Z\",\"ExpiryDate\":\"0001-01-01T00:00:00Z\",\"Aliases\":[],\"BundleType\":\"\",\"Description\":\"\",\"Draft\":false,\"IsHome\":false,\"Keywords\":null,\"Kind\":\"page\",\"Layout\":\"\",\"LinkTitle\":\"Xenomedicine [Specific]\",\"IsNode\":false,\"IsPage\":true,\"Path\":\"/skills/medical-science/xenomedicine\",\"Slug\":\"\",\"Lang\":\"en\",\"IsSection\":false,\"Section\":\"skills\",\"Sitemap\":{\"ChangeFreq\":\"\",\"Priority\":-1,\"Filename\":\"sitemap.xml\",\"Disable\":false},\"Type\":\"skills\",\"Weight\":0},{\"Date\":\"0001-01-01T00:00:00Z\",\"Lastmod\":\"0001-01-01T00:00:00Z\",\"PublishDate\":\"0001-01-01T00:00:00Z\",\"ExpiryDate\":\"0001-01-01T00:00:00Z\",\"Aliases\":[],\"BundleType\":\"\",\"Description\":\"\",\"Draft\":false,\"IsHome\":false,\"Keywords\":null,\"Kind\":\"page\",\"Layout\":\"\",\"LinkTitle\":\"Xenomedicina [Específica]\",\"IsNode\":false,\"IsPage\":true,\"Path\":\"/skills/medical-science/xenomedicine\",\"Slug\":\"\",\"Lang\":\"es\",\"IsSection\":false,\"Section\":\"skills\",\"Sitemap\":{\"ChangeFreq\":\"\",\"Priority\":-1,\"Filename\":\"sitemap.xml\",\"Disable\":false},\"Type\":\"skills\",\"Weight\":0}]"
       };
 
       let history = [];
@@ -69,6 +70,7 @@ Improved Treatment: Penalty reduction to &#43;2 at rank 3, &#43;1 at rank 6, eli
 </script>
 
 <script src="/js/table-toggle.js"></script>
+
 
   
   
@@ -160,6 +162,7 @@ Rank Benefits Improved Treatment: Penalty reduction to &#43;2 at rank 3, &#43;1 
         return;
       }
 
+      const currentLang = "es";
       const currentUrl = "\/es\/skills\/medical-science\/xenomedicine\/";
       const fragment = document.createDocumentFragment();
 
@@ -175,12 +178,22 @@ Rank Benefits Improved Treatment: Penalty reduction to &#43;2 at rank 3, &#43;1 
         }
 
         const li = document.createElement('li');
-        if (page.url === currentUrl && index === 0) {
+        let targetUrl = page.url;
+
+        
+        if (page.translations) {
+          const translation = page.translations.find(t => t.Lang === currentLang);
+          if (translation) {
+            targetUrl = translation.Permalink;
+          }
+        }
+
+        if (targetUrl === currentUrl && index === 0) {
           li.className = "current-page f4 fw6 neon-text truncate";
           li.textContent = page.title;
         } else {
           const a = document.createElement('a');
-          a.href = page.url;
+          a.href = targetUrl;
           a.textContent = page.title;
           a.className = "truncate";
           li.appendChild(a);
@@ -194,6 +207,7 @@ Rank Benefits Improved Treatment: Penalty reduction to &#43;2 at rank 3, &#43;1 
     }
   })();
 </script>
+
     <h1 class="f1 athelas mt3 mb1">
       Xenomedicina [Específica] (U) (INT)
     </h1>

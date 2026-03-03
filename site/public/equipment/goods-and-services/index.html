@@ -5601,7 +5601,8 @@ Survival and Miscellaneous Gear
       const currentPage = {
         title: "Goods \u0026 Services",
         url: "\/equipment\/goods-and-services\/",
-        translationKey: "\/equipment\/goods-and-services"
+        translationKey: "\/equipment\/goods-and-services",
+        translations: "[{\"Date\":\"0001-01-01T00:00:00Z\",\"Lastmod\":\"0001-01-01T00:00:00Z\",\"PublishDate\":\"0001-01-01T00:00:00Z\",\"ExpiryDate\":\"0001-01-01T00:00:00Z\",\"Aliases\":[],\"BundleType\":\"\",\"Description\":\"\",\"Draft\":false,\"IsHome\":false,\"Keywords\":null,\"Kind\":\"page\",\"Layout\":\"\",\"LinkTitle\":\"Goods \\u0026 Services\",\"IsNode\":false,\"IsPage\":true,\"Path\":\"/equipment/goods-and-services\",\"Slug\":\"\",\"Lang\":\"en\",\"IsSection\":false,\"Section\":\"equipment\",\"Sitemap\":{\"ChangeFreq\":\"\",\"Priority\":-1,\"Filename\":\"sitemap.xml\",\"Disable\":false},\"Type\":\"equipment\",\"Weight\":1},{\"Date\":\"0001-01-01T00:00:00Z\",\"Lastmod\":\"0001-01-01T00:00:00Z\",\"PublishDate\":\"0001-01-01T00:00:00Z\",\"ExpiryDate\":\"0001-01-01T00:00:00Z\",\"Aliases\":[],\"BundleType\":\"\",\"Description\":\"\",\"Draft\":false,\"IsHome\":false,\"Keywords\":null,\"Kind\":\"page\",\"Layout\":\"\",\"LinkTitle\":\"Bienes y servicios\",\"IsNode\":false,\"IsPage\":true,\"Path\":\"/equipment/goods-and-services\",\"Slug\":\"\",\"Lang\":\"es\",\"IsSection\":false,\"Section\":\"equipment\",\"Sitemap\":{\"ChangeFreq\":\"\",\"Priority\":-1,\"Filename\":\"sitemap.xml\",\"Disable\":false},\"Type\":\"equipment\",\"Weight\":1}]"
       };
 
       let history = [];
@@ -5632,6 +5633,7 @@ Survival and Miscellaneous Gear
 </script>
 
 <script src="/js/table-toggle.js"></script>
+
 
   
   
@@ -5859,6 +5861,7 @@ Any complex skill check involving Technical Science or repair is considered to b
         return;
       }
 
+      const currentLang = "en";
       const currentUrl = "\/equipment\/goods-and-services\/";
       const fragment = document.createDocumentFragment();
 
@@ -5874,12 +5877,22 @@ Any complex skill check involving Technical Science or repair is considered to b
         }
 
         const li = document.createElement('li');
-        if (page.url === currentUrl && index === 0) {
+        let targetUrl = page.url;
+
+        
+        if (page.translations) {
+          const translation = page.translations.find(t => t.Lang === currentLang);
+          if (translation) {
+            targetUrl = translation.Permalink;
+          }
+        }
+
+        if (targetUrl === currentUrl && index === 0) {
           li.className = "current-page f4 fw6 neon-text truncate";
           li.textContent = page.title;
         } else {
           const a = document.createElement('a');
-          a.href = page.url;
+          a.href = targetUrl;
           a.textContent = page.title;
           a.className = "truncate";
           li.appendChild(a);
@@ -5893,6 +5906,7 @@ Any complex skill check involving Technical Science or repair is considered to b
     }
   })();
 </script>
+
       
 
       

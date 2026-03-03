@@ -1187,7 +1187,8 @@ Losing Control of a Vehicle
       const currentPage = {
         title: "Vehicles",
         url: "\/equipment\/vehicles\/",
-        translationKey: "\/equipment\/vehicles"
+        translationKey: "\/equipment\/vehicles",
+        translations: "[{\"Date\":\"0001-01-01T00:00:00Z\",\"Lastmod\":\"0001-01-01T00:00:00Z\",\"PublishDate\":\"0001-01-01T00:00:00Z\",\"ExpiryDate\":\"0001-01-01T00:00:00Z\",\"Aliases\":[],\"BundleType\":\"\",\"Description\":\"\",\"Draft\":false,\"IsHome\":false,\"Keywords\":null,\"Kind\":\"page\",\"Layout\":\"\",\"LinkTitle\":\"Vehicles\",\"IsNode\":false,\"IsPage\":true,\"Path\":\"/equipment/vehicles\",\"Slug\":\"\",\"Lang\":\"en\",\"IsSection\":false,\"Section\":\"equipment\",\"Sitemap\":{\"ChangeFreq\":\"\",\"Priority\":-1,\"Filename\":\"sitemap.xml\",\"Disable\":false},\"Type\":\"equipment\",\"Weight\":5},{\"Date\":\"0001-01-01T00:00:00Z\",\"Lastmod\":\"0001-01-01T00:00:00Z\",\"PublishDate\":\"0001-01-01T00:00:00Z\",\"ExpiryDate\":\"0001-01-01T00:00:00Z\",\"Aliases\":[],\"BundleType\":\"\",\"Description\":\"\",\"Draft\":false,\"IsHome\":false,\"Keywords\":null,\"Kind\":\"page\",\"Layout\":\"\",\"LinkTitle\":\"Vehículos\",\"IsNode\":false,\"IsPage\":true,\"Path\":\"/equipment/vehicles\",\"Slug\":\"\",\"Lang\":\"es\",\"IsSection\":false,\"Section\":\"equipment\",\"Sitemap\":{\"ChangeFreq\":\"\",\"Priority\":-1,\"Filename\":\"sitemap.xml\",\"Disable\":false},\"Type\":\"equipment\",\"Weight\":5}]"
       };
 
       let history = [];
@@ -1218,6 +1219,7 @@ Losing Control of a Vehicle
 </script>
 
 <script src="/js/table-toggle.js"></script>
+
 
   
   
@@ -1310,6 +1312,7 @@ Losing Control of a Vehicle
         return;
       }
 
+      const currentLang = "en";
       const currentUrl = "\/equipment\/vehicles\/";
       const fragment = document.createDocumentFragment();
 
@@ -1325,12 +1328,22 @@ Losing Control of a Vehicle
         }
 
         const li = document.createElement('li');
-        if (page.url === currentUrl && index === 0) {
+        let targetUrl = page.url;
+
+        
+        if (page.translations) {
+          const translation = page.translations.find(t => t.Lang === currentLang);
+          if (translation) {
+            targetUrl = translation.Permalink;
+          }
+        }
+
+        if (targetUrl === currentUrl && index === 0) {
           li.className = "current-page f4 fw6 neon-text truncate";
           li.textContent = page.title;
         } else {
           const a = document.createElement('a');
-          a.href = page.url;
+          a.href = targetUrl;
           a.textContent = page.title;
           a.className = "truncate";
           li.appendChild(a);
@@ -1344,6 +1357,7 @@ Losing Control of a Vehicle
     }
   })();
 </script>
+
       
 
       

@@ -81,7 +81,8 @@ Points must be used immediately or lost.
       const currentPage = {
         title: "Rejuvenate",
         url: "\/skills\/biokinesis\/rejuvenate\/",
-        translationKey: "\/skills\/biokinesis\/rejuvenate"
+        translationKey: "\/skills\/biokinesis\/rejuvenate",
+        translations: "[{\"Date\":\"0001-01-01T00:00:00Z\",\"Lastmod\":\"0001-01-01T00:00:00Z\",\"PublishDate\":\"0001-01-01T00:00:00Z\",\"ExpiryDate\":\"0001-01-01T00:00:00Z\",\"Aliases\":[],\"BundleType\":\"\",\"Description\":\"\",\"Draft\":false,\"IsHome\":false,\"Keywords\":null,\"Kind\":\"page\",\"Layout\":\"\",\"LinkTitle\":\"Rejuvenate\",\"IsNode\":false,\"IsPage\":true,\"Path\":\"/skills/biokinesis/rejuvenate\",\"Slug\":\"\",\"Lang\":\"en\",\"IsSection\":false,\"Section\":\"skills\",\"Sitemap\":{\"ChangeFreq\":\"\",\"Priority\":-1,\"Filename\":\"sitemap.xml\",\"Disable\":false},\"Type\":\"skills\",\"Weight\":0},{\"Date\":\"0001-01-01T00:00:00Z\",\"Lastmod\":\"0001-01-01T00:00:00Z\",\"PublishDate\":\"0001-01-01T00:00:00Z\",\"ExpiryDate\":\"0001-01-01T00:00:00Z\",\"Aliases\":[],\"BundleType\":\"\",\"Description\":\"\",\"Draft\":false,\"IsHome\":false,\"Keywords\":null,\"Kind\":\"page\",\"Layout\":\"\",\"LinkTitle\":\"Rejuvenecer\",\"IsNode\":false,\"IsPage\":true,\"Path\":\"/skills/biokinesis/rejuvenate\",\"Slug\":\"\",\"Lang\":\"es\",\"IsSection\":false,\"Section\":\"skills\",\"Sitemap\":{\"ChangeFreq\":\"\",\"Priority\":-1,\"Filename\":\"sitemap.xml\",\"Disable\":false},\"Type\":\"skills\",\"Weight\":0}]"
       };
 
       let history = [];
@@ -112,6 +113,7 @@ Points must be used immediately or lost.
 </script>
 
 <script src="/js/table-toggle.js"></script>
+
 
   
   
@@ -203,6 +205,7 @@ Ordinary: 2 points Good: 4 points Amazing: 6 points Points must be used immediat
         return;
       }
 
+      const currentLang = "en";
       const currentUrl = "\/skills\/biokinesis\/rejuvenate\/";
       const fragment = document.createDocumentFragment();
 
@@ -218,12 +221,22 @@ Ordinary: 2 points Good: 4 points Amazing: 6 points Points must be used immediat
         }
 
         const li = document.createElement('li');
-        if (page.url === currentUrl && index === 0) {
+        let targetUrl = page.url;
+
+        
+        if (page.translations) {
+          const translation = page.translations.find(t => t.Lang === currentLang);
+          if (translation) {
+            targetUrl = translation.Permalink;
+          }
+        }
+
+        if (targetUrl === currentUrl && index === 0) {
           li.className = "current-page f4 fw6 neon-text truncate";
           li.textContent = page.title;
         } else {
           const a = document.createElement('a');
-          a.href = page.url;
+          a.href = targetUrl;
           a.textContent = page.title;
           a.className = "truncate";
           li.appendChild(a);
@@ -237,6 +250,7 @@ Ordinary: 2 points Good: 4 points Amazing: 6 points Points must be used immediat
     }
   })();
 </script>
+
     <h1 class="f1 athelas mt3 mb1">
       Rejuvenate (CON)
     </h1>

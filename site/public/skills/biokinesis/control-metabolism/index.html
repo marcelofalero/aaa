@@ -41,7 +41,8 @@ After initial use, protection is maintained at 1 psionic energy point per hour.
       const currentPage = {
         title: "Control Metabolism",
         url: "\/skills\/biokinesis\/control-metabolism\/",
-        translationKey: "\/skills\/biokinesis\/control-metabolism"
+        translationKey: "\/skills\/biokinesis\/control-metabolism",
+        translations: "[{\"Date\":\"0001-01-01T00:00:00Z\",\"Lastmod\":\"0001-01-01T00:00:00Z\",\"PublishDate\":\"0001-01-01T00:00:00Z\",\"ExpiryDate\":\"0001-01-01T00:00:00Z\",\"Aliases\":[],\"BundleType\":\"\",\"Description\":\"\",\"Draft\":false,\"IsHome\":false,\"Keywords\":null,\"Kind\":\"page\",\"Layout\":\"\",\"LinkTitle\":\"Control Metabolism\",\"IsNode\":false,\"IsPage\":true,\"Path\":\"/skills/biokinesis/control-metabolism\",\"Slug\":\"\",\"Lang\":\"en\",\"IsSection\":false,\"Section\":\"skills\",\"Sitemap\":{\"ChangeFreq\":\"\",\"Priority\":-1,\"Filename\":\"sitemap.xml\",\"Disable\":false},\"Type\":\"skills\",\"Weight\":0},{\"Date\":\"0001-01-01T00:00:00Z\",\"Lastmod\":\"0001-01-01T00:00:00Z\",\"PublishDate\":\"0001-01-01T00:00:00Z\",\"ExpiryDate\":\"0001-01-01T00:00:00Z\",\"Aliases\":[],\"BundleType\":\"\",\"Description\":\"\",\"Draft\":false,\"IsHome\":false,\"Keywords\":null,\"Kind\":\"page\",\"Layout\":\"\",\"LinkTitle\":\"Controlar el metabolismo\",\"IsNode\":false,\"IsPage\":true,\"Path\":\"/skills/biokinesis/control-metabolism\",\"Slug\":\"\",\"Lang\":\"es\",\"IsSection\":false,\"Section\":\"skills\",\"Sitemap\":{\"ChangeFreq\":\"\",\"Priority\":-1,\"Filename\":\"sitemap.xml\",\"Disable\":false},\"Type\":\"skills\",\"Weight\":0}]"
       };
 
       let history = [];
@@ -72,6 +73,7 @@ After initial use, protection is maintained at 1 psionic energy point per hour.
 </script>
 
 <script src="/js/table-toggle.js"></script>
+
 
   
   
@@ -166,6 +168,7 @@ Ordinary: vacuum mask Good: jumpsuit Amazing: soft e-suit After initial use, pro
         return;
       }
 
+      const currentLang = "en";
       const currentUrl = "\/skills\/biokinesis\/control-metabolism\/";
       const fragment = document.createDocumentFragment();
 
@@ -181,12 +184,22 @@ Ordinary: vacuum mask Good: jumpsuit Amazing: soft e-suit After initial use, pro
         }
 
         const li = document.createElement('li');
-        if (page.url === currentUrl && index === 0) {
+        let targetUrl = page.url;
+
+        
+        if (page.translations) {
+          const translation = page.translations.find(t => t.Lang === currentLang);
+          if (translation) {
+            targetUrl = translation.Permalink;
+          }
+        }
+
+        if (targetUrl === currentUrl && index === 0) {
           li.className = "current-page f4 fw6 neon-text truncate";
           li.textContent = page.title;
         } else {
           const a = document.createElement('a');
-          a.href = page.url;
+          a.href = targetUrl;
           a.textContent = page.title;
           a.className = "truncate";
           li.appendChild(a);
@@ -200,6 +213,7 @@ Ordinary: vacuum mask Good: jumpsuit Amazing: soft e-suit After initial use, pro
     }
   })();
 </script>
+
     <h1 class="f1 athelas mt3 mb1">
       Control Metabolism (CON)
     </h1>

@@ -8,6 +8,13 @@
     <language>en</language>
     <atom:link href="http://localhost:1313/core-mechanics/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Character Advancement</title>
+      <link>http://localhost:1313/core-mechanics/character-advancement/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/core-mechanics/character-advancement/</guid>
+      <description>&lt;p&gt;In Alterated Alternity Alternative (AAA), character progression is not merely a tally of experience spent, but a measure of your character’s total weight and influence in the galaxy. This weight is tracked through Advancement Points (AP), representing the cumulative sum of every skill, perk, and benefit acquired over a career.&lt;/p&gt;&#xA;&lt;h2 id=&#34;the-flow-of-experience&#34;&gt;The Flow of Experience&lt;/h2&gt;&#xA;&lt;p&gt;AAA utilizes a fluid progression model where growth occurs incrementally between sessions. Experience Points (XP) represent the currency of learning, usually awarded at a rate of 3 to 5 points per session. While the primary time for growth is between game sessions, the Game Master may permit immediate spending to reflect a sudden &amp;ldquo;combat insight&amp;rdquo; or a successful narrative arc involving training and study.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Heroes in Action</title>
       <link>http://localhost:1313/core-mechanics/characters-in-action/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

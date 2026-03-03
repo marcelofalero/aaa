@@ -82,7 +82,8 @@ Normal computer defenses apply as a penalty.
       const currentPage = {
         title: "Datalink",
         url: "\/skills\/telepathy\/datalink\/",
-        translationKey: "\/skills\/telepathy\/datalink"
+        translationKey: "\/skills\/telepathy\/datalink",
+        translations: "[{\"Date\":\"0001-01-01T00:00:00Z\",\"Lastmod\":\"0001-01-01T00:00:00Z\",\"PublishDate\":\"0001-01-01T00:00:00Z\",\"ExpiryDate\":\"0001-01-01T00:00:00Z\",\"Aliases\":[],\"BundleType\":\"\",\"Description\":\"\",\"Draft\":false,\"IsHome\":false,\"Keywords\":null,\"Kind\":\"page\",\"Layout\":\"\",\"LinkTitle\":\"Datalink\",\"IsNode\":false,\"IsPage\":true,\"Path\":\"/skills/telepathy/datalink\",\"Slug\":\"\",\"Lang\":\"en\",\"IsSection\":false,\"Section\":\"skills\",\"Sitemap\":{\"ChangeFreq\":\"\",\"Priority\":-1,\"Filename\":\"sitemap.xml\",\"Disable\":false},\"Type\":\"skills\",\"Weight\":0},{\"Date\":\"0001-01-01T00:00:00Z\",\"Lastmod\":\"0001-01-01T00:00:00Z\",\"PublishDate\":\"0001-01-01T00:00:00Z\",\"ExpiryDate\":\"0001-01-01T00:00:00Z\",\"Aliases\":[],\"BundleType\":\"\",\"Description\":\"\",\"Draft\":false,\"IsHome\":false,\"Keywords\":null,\"Kind\":\"page\",\"Layout\":\"\",\"LinkTitle\":\"Enlace de datos\",\"IsNode\":false,\"IsPage\":true,\"Path\":\"/skills/telepathy/datalink\",\"Slug\":\"\",\"Lang\":\"es\",\"IsSection\":false,\"Section\":\"skills\",\"Sitemap\":{\"ChangeFreq\":\"\",\"Priority\":-1,\"Filename\":\"sitemap.xml\",\"Disable\":false},\"Type\":\"skills\",\"Weight\":0}]"
       };
 
       let history = [];
@@ -113,6 +114,7 @@ Normal computer defenses apply as a penalty.
 </script>
 
 <script src="/js/table-toggle.js"></script>
+
 
   
   
@@ -207,6 +209,7 @@ Up to 2m: none 2-4m: &#43;1 penalty 4-6m: &#43;2 penalty Normal computer defense
         return;
       }
 
+      const currentLang = "en";
       const currentUrl = "\/skills\/telepathy\/datalink\/";
       const fragment = document.createDocumentFragment();
 
@@ -222,12 +225,22 @@ Up to 2m: none 2-4m: &#43;1 penalty 4-6m: &#43;2 penalty Normal computer defense
         }
 
         const li = document.createElement('li');
-        if (page.url === currentUrl && index === 0) {
+        let targetUrl = page.url;
+
+        
+        if (page.translations) {
+          const translation = page.translations.find(t => t.Lang === currentLang);
+          if (translation) {
+            targetUrl = translation.Permalink;
+          }
+        }
+
+        if (targetUrl === currentUrl && index === 0) {
           li.className = "current-page f4 fw6 neon-text truncate";
           li.textContent = page.title;
         } else {
           const a = document.createElement('a');
-          a.href = page.url;
+          a.href = targetUrl;
           a.textContent = page.title;
           a.className = "truncate";
           li.appendChild(a);
@@ -241,6 +254,7 @@ Up to 2m: none 2-4m: &#43;1 penalty 4-6m: &#43;2 penalty Normal computer defense
     }
   })();
 </script>
+
     <h1 class="f1 athelas mt3 mb1">
       Datalink (U) (PER)
     </h1>

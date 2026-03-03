@@ -51,7 +51,8 @@ Cybernetic Surgery: At rank 3, repair or heal organisms with cybernetic implants
       const currentPage = {
         title: "Cirugía",
         url: "\/es\/skills\/medical-science\/surgery\/",
-        translationKey: "\/skills\/medical-science\/surgery"
+        translationKey: "\/skills\/medical-science\/surgery",
+        translations: "[{\"Date\":\"0001-01-01T00:00:00Z\",\"Lastmod\":\"0001-01-01T00:00:00Z\",\"PublishDate\":\"0001-01-01T00:00:00Z\",\"ExpiryDate\":\"0001-01-01T00:00:00Z\",\"Aliases\":[],\"BundleType\":\"\",\"Description\":\"\",\"Draft\":false,\"IsHome\":false,\"Keywords\":null,\"Kind\":\"page\",\"Layout\":\"\",\"LinkTitle\":\"Surgery\",\"IsNode\":false,\"IsPage\":true,\"Path\":\"/skills/medical-science/surgery\",\"Slug\":\"\",\"Lang\":\"en\",\"IsSection\":false,\"Section\":\"skills\",\"Sitemap\":{\"ChangeFreq\":\"\",\"Priority\":-1,\"Filename\":\"sitemap.xml\",\"Disable\":false},\"Type\":\"skills\",\"Weight\":0},{\"Date\":\"0001-01-01T00:00:00Z\",\"Lastmod\":\"0001-01-01T00:00:00Z\",\"PublishDate\":\"0001-01-01T00:00:00Z\",\"ExpiryDate\":\"0001-01-01T00:00:00Z\",\"Aliases\":[],\"BundleType\":\"\",\"Description\":\"\",\"Draft\":false,\"IsHome\":false,\"Keywords\":null,\"Kind\":\"page\",\"Layout\":\"\",\"LinkTitle\":\"Cirugía\",\"IsNode\":false,\"IsPage\":true,\"Path\":\"/skills/medical-science/surgery\",\"Slug\":\"\",\"Lang\":\"es\",\"IsSection\":false,\"Section\":\"skills\",\"Sitemap\":{\"ChangeFreq\":\"\",\"Priority\":-1,\"Filename\":\"sitemap.xml\",\"Disable\":false},\"Type\":\"skills\",\"Weight\":0}]"
       };
 
       let history = [];
@@ -82,6 +83,7 @@ Cybernetic Surgery: At rank 3, repair or heal organisms with cybernetic implants
 </script>
 
 <script src="/js/table-toggle.js"></script>
+
 
   
   
@@ -176,6 +178,7 @@ Mortal Damage: 1pt: Marginal; 2pt: Ordinary; 3pt: Good; 4&#43;pt: Amazing. Wound
         return;
       }
 
+      const currentLang = "es";
       const currentUrl = "\/es\/skills\/medical-science\/surgery\/";
       const fragment = document.createDocumentFragment();
 
@@ -191,12 +194,22 @@ Mortal Damage: 1pt: Marginal; 2pt: Ordinary; 3pt: Good; 4&#43;pt: Amazing. Wound
         }
 
         const li = document.createElement('li');
-        if (page.url === currentUrl && index === 0) {
+        let targetUrl = page.url;
+
+        
+        if (page.translations) {
+          const translation = page.translations.find(t => t.Lang === currentLang);
+          if (translation) {
+            targetUrl = translation.Permalink;
+          }
+        }
+
+        if (targetUrl === currentUrl && index === 0) {
           li.className = "current-page f4 fw6 neon-text truncate";
           li.textContent = page.title;
         } else {
           const a = document.createElement('a');
-          a.href = page.url;
+          a.href = targetUrl;
           a.textContent = page.title;
           a.className = "truncate";
           li.appendChild(a);
@@ -210,6 +223,7 @@ Mortal Damage: 1pt: Marginal; 2pt: Ordinary; 3pt: Good; 4&#43;pt: Amazing. Wound
     }
   })();
 </script>
+
     <h1 class="f1 athelas mt3 mb1">
       Cirugía (U) (INT)
     </h1>

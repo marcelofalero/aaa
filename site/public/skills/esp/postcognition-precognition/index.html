@@ -86,7 +86,8 @@ Forcing a flash: Cost is doubled (2/4/6 pts); &#43;3 penalty; cannot use conscio
       const currentPage = {
         title: "Postcognition \/ Precognition",
         url: "\/skills\/esp\/postcognition-precognition\/",
-        translationKey: "\/skills\/esp\/postcognition-precognition"
+        translationKey: "\/skills\/esp\/postcognition-precognition",
+        translations: "[{\"Date\":\"0001-01-01T00:00:00Z\",\"Lastmod\":\"0001-01-01T00:00:00Z\",\"PublishDate\":\"0001-01-01T00:00:00Z\",\"ExpiryDate\":\"0001-01-01T00:00:00Z\",\"Aliases\":[],\"BundleType\":\"\",\"Description\":\"\",\"Draft\":false,\"IsHome\":false,\"Keywords\":null,\"Kind\":\"page\",\"Layout\":\"\",\"LinkTitle\":\"Postcognition / Precognition\",\"IsNode\":false,\"IsPage\":true,\"Path\":\"/skills/esp/postcognition-precognition\",\"Slug\":\"\",\"Lang\":\"en\",\"IsSection\":false,\"Section\":\"skills\",\"Sitemap\":{\"ChangeFreq\":\"\",\"Priority\":-1,\"Filename\":\"sitemap.xml\",\"Disable\":false},\"Type\":\"skills\",\"Weight\":0},{\"Date\":\"0001-01-01T00:00:00Z\",\"Lastmod\":\"0001-01-01T00:00:00Z\",\"PublishDate\":\"0001-01-01T00:00:00Z\",\"ExpiryDate\":\"0001-01-01T00:00:00Z\",\"Aliases\":[],\"BundleType\":\"\",\"Description\":\"\",\"Draft\":false,\"IsHome\":false,\"Keywords\":null,\"Kind\":\"page\",\"Layout\":\"\",\"LinkTitle\":\"Postcognición / Precognición\",\"IsNode\":false,\"IsPage\":true,\"Path\":\"/skills/esp/postcognition-precognition\",\"Slug\":\"\",\"Lang\":\"es\",\"IsSection\":false,\"Section\":\"skills\",\"Sitemap\":{\"ChangeFreq\":\"\",\"Priority\":-1,\"Filename\":\"sitemap.xml\",\"Disable\":false},\"Type\":\"skills\",\"Weight\":0}]"
       };
 
       let history = [];
@@ -117,6 +118,7 @@ Forcing a flash: Cost is doubled (2/4/6 pts); &#43;3 penalty; cannot use conscio
 </script>
 
 <script src="/js/table-toggle.js"></script>
+
 
   
   
@@ -211,6 +213,7 @@ Forcing a flash: Cost is doubled (2/4/6 pts); &#43;3 penalty; cannot use conscio
         return;
       }
 
+      const currentLang = "en";
       const currentUrl = "\/skills\/esp\/postcognition-precognition\/";
       const fragment = document.createDocumentFragment();
 
@@ -226,12 +229,22 @@ Forcing a flash: Cost is doubled (2/4/6 pts); &#43;3 penalty; cannot use conscio
         }
 
         const li = document.createElement('li');
-        if (page.url === currentUrl && index === 0) {
+        let targetUrl = page.url;
+
+        
+        if (page.translations) {
+          const translation = page.translations.find(t => t.Lang === currentLang);
+          if (translation) {
+            targetUrl = translation.Permalink;
+          }
+        }
+
+        if (targetUrl === currentUrl && index === 0) {
           li.className = "current-page f4 fw6 neon-text truncate";
           li.textContent = page.title;
         } else {
           const a = document.createElement('a');
-          a.href = page.url;
+          a.href = targetUrl;
           a.textContent = page.title;
           a.className = "truncate";
           li.appendChild(a);
@@ -245,6 +258,7 @@ Forcing a flash: Cost is doubled (2/4/6 pts); &#43;3 penalty; cannot use conscio
     }
   })();
 </script>
+
     <h1 class="f1 athelas mt3 mb1">
       Postcognition / Precognition (INT)
     </h1>

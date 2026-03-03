@@ -81,7 +81,8 @@ Amazing: Target&rsquo;s attitude improves by two grades for d12&#43;2 time units
       const currentPage = {
         title: "Bluff",
         url: "\/skills\/deception\/bluff\/",
-        translationKey: "\/skills\/deception\/bluff"
+        translationKey: "\/skills\/deception\/bluff",
+        translations: "[{\"Date\":\"0001-01-01T00:00:00Z\",\"Lastmod\":\"0001-01-01T00:00:00Z\",\"PublishDate\":\"0001-01-01T00:00:00Z\",\"ExpiryDate\":\"0001-01-01T00:00:00Z\",\"Aliases\":[],\"BundleType\":\"\",\"Description\":\"\",\"Draft\":false,\"IsHome\":false,\"Keywords\":null,\"Kind\":\"page\",\"Layout\":\"\",\"LinkTitle\":\"Bluff\",\"IsNode\":false,\"IsPage\":true,\"Path\":\"/skills/deception/bluff\",\"Slug\":\"\",\"Lang\":\"en\",\"IsSection\":false,\"Section\":\"skills\",\"Sitemap\":{\"ChangeFreq\":\"\",\"Priority\":-1,\"Filename\":\"sitemap.xml\",\"Disable\":false},\"Type\":\"skills\",\"Weight\":0},{\"Date\":\"0001-01-01T00:00:00Z\",\"Lastmod\":\"0001-01-01T00:00:00Z\",\"PublishDate\":\"0001-01-01T00:00:00Z\",\"ExpiryDate\":\"0001-01-01T00:00:00Z\",\"Aliases\":[],\"BundleType\":\"\",\"Description\":\"\",\"Draft\":false,\"IsHome\":false,\"Keywords\":null,\"Kind\":\"page\",\"Layout\":\"\",\"LinkTitle\":\"Bluff\",\"IsNode\":false,\"IsPage\":true,\"Path\":\"/skills/deception/bluff\",\"Slug\":\"\",\"Lang\":\"es\",\"IsSection\":false,\"Section\":\"skills\",\"Sitemap\":{\"ChangeFreq\":\"\",\"Priority\":-1,\"Filename\":\"sitemap.xml\",\"Disable\":false},\"Type\":\"skills\",\"Weight\":0}]"
       };
 
       let history = [];
@@ -112,6 +113,7 @@ Amazing: Target&rsquo;s attitude improves by two grades for d12&#43;2 time units
 </script>
 
 <script src="/js/table-toggle.js"></script>
+
 
   
   
@@ -200,6 +202,7 @@ Results Critical Failure: Bluff is seen through; target becomes Hostile or Comba
         return;
       }
 
+      const currentLang = "en";
       const currentUrl = "\/skills\/deception\/bluff\/";
       const fragment = document.createDocumentFragment();
 
@@ -215,12 +218,22 @@ Results Critical Failure: Bluff is seen through; target becomes Hostile or Comba
         }
 
         const li = document.createElement('li');
-        if (page.url === currentUrl && index === 0) {
+        let targetUrl = page.url;
+
+        
+        if (page.translations) {
+          const translation = page.translations.find(t => t.Lang === currentLang);
+          if (translation) {
+            targetUrl = translation.Permalink;
+          }
+        }
+
+        if (targetUrl === currentUrl && index === 0) {
           li.className = "current-page f4 fw6 neon-text truncate";
           li.textContent = page.title;
         } else {
           const a = document.createElement('a');
-          a.href = page.url;
+          a.href = targetUrl;
           a.textContent = page.title;
           a.className = "truncate";
           li.appendChild(a);
@@ -234,6 +247,7 @@ Results Critical Failure: Bluff is seen through; target becomes Hostile or Comba
     }
   })();
 </script>
+
     <h1 class="f1 athelas mt3 mb1">
       Bluff (PER)
     </h1>

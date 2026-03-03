@@ -38,7 +38,8 @@ Create New Programs: At rank 3, create new programs of Marginal quality and Marg
       const currentPage = {
         title: "Programación",
         url: "\/es\/skills\/computer-science\/programming\/",
-        translationKey: "\/skills\/computer-science\/programming"
+        translationKey: "\/skills\/computer-science\/programming",
+        translations: "[{\"Date\":\"0001-01-01T00:00:00Z\",\"Lastmod\":\"0001-01-01T00:00:00Z\",\"PublishDate\":\"0001-01-01T00:00:00Z\",\"ExpiryDate\":\"0001-01-01T00:00:00Z\",\"Aliases\":[],\"BundleType\":\"\",\"Description\":\"\",\"Draft\":false,\"IsHome\":false,\"Keywords\":null,\"Kind\":\"page\",\"Layout\":\"\",\"LinkTitle\":\"Programming\",\"IsNode\":false,\"IsPage\":true,\"Path\":\"/skills/computer-science/programming\",\"Slug\":\"\",\"Lang\":\"en\",\"IsSection\":false,\"Section\":\"skills\",\"Sitemap\":{\"ChangeFreq\":\"\",\"Priority\":-1,\"Filename\":\"sitemap.xml\",\"Disable\":false},\"Type\":\"skills\",\"Weight\":0},{\"Date\":\"0001-01-01T00:00:00Z\",\"Lastmod\":\"0001-01-01T00:00:00Z\",\"PublishDate\":\"0001-01-01T00:00:00Z\",\"ExpiryDate\":\"0001-01-01T00:00:00Z\",\"Aliases\":[],\"BundleType\":\"\",\"Description\":\"\",\"Draft\":false,\"IsHome\":false,\"Keywords\":null,\"Kind\":\"page\",\"Layout\":\"\",\"LinkTitle\":\"Programación\",\"IsNode\":false,\"IsPage\":true,\"Path\":\"/skills/computer-science/programming\",\"Slug\":\"\",\"Lang\":\"es\",\"IsSection\":false,\"Section\":\"skills\",\"Sitemap\":{\"ChangeFreq\":\"\",\"Priority\":-1,\"Filename\":\"sitemap.xml\",\"Disable\":false},\"Type\":\"skills\",\"Weight\":0}]"
       };
 
       let history = [];
@@ -69,6 +70,7 @@ Create New Programs: At rank 3, create new programs of Marginal quality and Marg
 </script>
 
 <script src="/js/table-toggle.js"></script>
+
 
   
   
@@ -160,6 +162,7 @@ Rank Benefits Modify Existing Programs: At rank 3, able to modify code of progra
         return;
       }
 
+      const currentLang = "es";
       const currentUrl = "\/es\/skills\/computer-science\/programming\/";
       const fragment = document.createDocumentFragment();
 
@@ -175,12 +178,22 @@ Rank Benefits Modify Existing Programs: At rank 3, able to modify code of progra
         }
 
         const li = document.createElement('li');
-        if (page.url === currentUrl && index === 0) {
+        let targetUrl = page.url;
+
+        
+        if (page.translations) {
+          const translation = page.translations.find(t => t.Lang === currentLang);
+          if (translation) {
+            targetUrl = translation.Permalink;
+          }
+        }
+
+        if (targetUrl === currentUrl && index === 0) {
           li.className = "current-page f4 fw6 neon-text truncate";
           li.textContent = page.title;
         } else {
           const a = document.createElement('a');
-          a.href = page.url;
+          a.href = targetUrl;
           a.textContent = page.title;
           a.className = "truncate";
           li.appendChild(a);
@@ -194,6 +207,7 @@ Rank Benefits Modify Existing Programs: At rank 3, able to modify code of progra
     }
   })();
 </script>
+
     <h1 class="f1 athelas mt3 mb1">
       Programación (INT)
     </h1>

@@ -39,7 +39,8 @@ Ability to move silently (up to one-half walk rate).">
       const currentPage = {
         title: "Sigilo",
         url: "\/es\/skills\/covert-ops\/stealth\/",
-        translationKey: "\/skills\/covert-ops\/stealth"
+        translationKey: "\/skills\/covert-ops\/stealth",
+        translations: "[{\"Date\":\"0001-01-01T00:00:00Z\",\"Lastmod\":\"0001-01-01T00:00:00Z\",\"PublishDate\":\"0001-01-01T00:00:00Z\",\"ExpiryDate\":\"0001-01-01T00:00:00Z\",\"Aliases\":[],\"BundleType\":\"\",\"Description\":\"\",\"Draft\":false,\"IsHome\":false,\"Keywords\":null,\"Kind\":\"page\",\"Layout\":\"\",\"LinkTitle\":\"Stealth\",\"IsNode\":false,\"IsPage\":true,\"Path\":\"/skills/covert-ops/stealth\",\"Slug\":\"\",\"Lang\":\"en\",\"IsSection\":false,\"Section\":\"skills\",\"Sitemap\":{\"ChangeFreq\":\"\",\"Priority\":-1,\"Filename\":\"sitemap.xml\",\"Disable\":false},\"Type\":\"skills\",\"Weight\":0},{\"Date\":\"0001-01-01T00:00:00Z\",\"Lastmod\":\"0001-01-01T00:00:00Z\",\"PublishDate\":\"0001-01-01T00:00:00Z\",\"ExpiryDate\":\"0001-01-01T00:00:00Z\",\"Aliases\":[],\"BundleType\":\"\",\"Description\":\"\",\"Draft\":false,\"IsHome\":false,\"Keywords\":null,\"Kind\":\"page\",\"Layout\":\"\",\"LinkTitle\":\"Sigilo\",\"IsNode\":false,\"IsPage\":true,\"Path\":\"/skills/covert-ops/stealth\",\"Slug\":\"\",\"Lang\":\"es\",\"IsSection\":false,\"Section\":\"skills\",\"Sitemap\":{\"ChangeFreq\":\"\",\"Priority\":-1,\"Filename\":\"sitemap.xml\",\"Disable\":false},\"Type\":\"skills\",\"Weight\":0}]"
       };
 
       let history = [];
@@ -70,6 +71,7 @@ Ability to move silently (up to one-half walk rate).">
 </script>
 
 <script src="/js/table-toggle.js"></script>
+
 
   
   
@@ -161,6 +163,7 @@ Results: Degree of success gives observer penalty: Ordinary (&#43;1), Good (&#43
         return;
       }
 
+      const currentLang = "es";
       const currentUrl = "\/es\/skills\/covert-ops\/stealth\/";
       const fragment = document.createDocumentFragment();
 
@@ -176,12 +179,22 @@ Results: Degree of success gives observer penalty: Ordinary (&#43;1), Good (&#43
         }
 
         const li = document.createElement('li');
-        if (page.url === currentUrl && index === 0) {
+        let targetUrl = page.url;
+
+        
+        if (page.translations) {
+          const translation = page.translations.find(t => t.Lang === currentLang);
+          if (translation) {
+            targetUrl = translation.Permalink;
+          }
+        }
+
+        if (targetUrl === currentUrl && index === 0) {
           li.className = "current-page f4 fw6 neon-text truncate";
           li.textContent = page.title;
         } else {
           const a = document.createElement('a');
-          a.href = page.url;
+          a.href = targetUrl;
           a.textContent = page.title;
           a.className = "truncate";
           li.appendChild(a);
@@ -195,6 +208,7 @@ Results: Degree of success gives observer penalty: Ordinary (&#43;1), Good (&#43
     }
   })();
 </script>
+
     <h1 class="f1 athelas mt3 mb1">
       Sigilo (DEX)
     </h1>

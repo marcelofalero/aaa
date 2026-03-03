@@ -37,7 +37,8 @@ Increased Effect: Situation die bonus of -1 at rank 4, -2 at rank 8, and -3 at r
       const currentPage = {
         title: "Seco",
         url: "\/es\/skills\/computer-science\/hacking\/",
-        translationKey: "\/skills\/computer-science\/hacking"
+        translationKey: "\/skills\/computer-science\/hacking",
+        translations: "[{\"Date\":\"0001-01-01T00:00:00Z\",\"Lastmod\":\"0001-01-01T00:00:00Z\",\"PublishDate\":\"0001-01-01T00:00:00Z\",\"ExpiryDate\":\"0001-01-01T00:00:00Z\",\"Aliases\":[],\"BundleType\":\"\",\"Description\":\"\",\"Draft\":false,\"IsHome\":false,\"Keywords\":null,\"Kind\":\"page\",\"Layout\":\"\",\"LinkTitle\":\"Hacking\",\"IsNode\":false,\"IsPage\":true,\"Path\":\"/skills/computer-science/hacking\",\"Slug\":\"\",\"Lang\":\"en\",\"IsSection\":false,\"Section\":\"skills\",\"Sitemap\":{\"ChangeFreq\":\"\",\"Priority\":-1,\"Filename\":\"sitemap.xml\",\"Disable\":false},\"Type\":\"skills\",\"Weight\":0},{\"Date\":\"0001-01-01T00:00:00Z\",\"Lastmod\":\"0001-01-01T00:00:00Z\",\"PublishDate\":\"0001-01-01T00:00:00Z\",\"ExpiryDate\":\"0001-01-01T00:00:00Z\",\"Aliases\":[],\"BundleType\":\"\",\"Description\":\"\",\"Draft\":false,\"IsHome\":false,\"Keywords\":null,\"Kind\":\"page\",\"Layout\":\"\",\"LinkTitle\":\"Seco\",\"IsNode\":false,\"IsPage\":true,\"Path\":\"/skills/computer-science/hacking\",\"Slug\":\"\",\"Lang\":\"es\",\"IsSection\":false,\"Section\":\"skills\",\"Sitemap\":{\"ChangeFreq\":\"\",\"Priority\":-1,\"Filename\":\"sitemap.xml\",\"Disable\":false},\"Type\":\"skills\",\"Weight\":0}]"
       };
 
       let history = [];
@@ -68,6 +69,7 @@ Increased Effect: Situation die bonus of -1 at rank 4, -2 at rank 8, and -3 at r
 </script>
 
 <script src="/js/table-toggle.js"></script>
+
 
   
   
@@ -159,6 +161,7 @@ Rank Benefits Increased Effect: Situation die bonus of -1 at rank 4, -2 at rank 
         return;
       }
 
+      const currentLang = "es";
       const currentUrl = "\/es\/skills\/computer-science\/hacking\/";
       const fragment = document.createDocumentFragment();
 
@@ -174,12 +177,22 @@ Rank Benefits Increased Effect: Situation die bonus of -1 at rank 4, -2 at rank 
         }
 
         const li = document.createElement('li');
-        if (page.url === currentUrl && index === 0) {
+        let targetUrl = page.url;
+
+        
+        if (page.translations) {
+          const translation = page.translations.find(t => t.Lang === currentLang);
+          if (translation) {
+            targetUrl = translation.Permalink;
+          }
+        }
+
+        if (targetUrl === currentUrl && index === 0) {
           li.className = "current-page f4 fw6 neon-text truncate";
           li.textContent = page.title;
         } else {
           const a = document.createElement('a');
-          a.href = page.url;
+          a.href = targetUrl;
           a.textContent = page.title;
           a.className = "truncate";
           li.appendChild(a);
@@ -193,6 +206,7 @@ Rank Benefits Increased Effect: Situation die bonus of -1 at rank 4, -2 at rank 
     }
   })();
 </script>
+
     <h1 class="f1 athelas mt3 mb1">
       Seco (U) (INT)
     </h1>

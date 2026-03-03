@@ -85,7 +85,8 @@ Rank 9 [Increased Damage]: 2d4&#43;2s/2d6&#43;2s/2d8&#43;2s.
       const currentPage = {
         title: "Mind Blast",
         url: "\/skills\/telepathy\/mind-blast\/",
-        translationKey: "\/skills\/telepathy\/mind-blast"
+        translationKey: "\/skills\/telepathy\/mind-blast",
+        translations: "[{\"Date\":\"0001-01-01T00:00:00Z\",\"Lastmod\":\"0001-01-01T00:00:00Z\",\"PublishDate\":\"0001-01-01T00:00:00Z\",\"ExpiryDate\":\"0001-01-01T00:00:00Z\",\"Aliases\":[],\"BundleType\":\"\",\"Description\":\"\",\"Draft\":false,\"IsHome\":false,\"Keywords\":null,\"Kind\":\"page\",\"Layout\":\"\",\"LinkTitle\":\"Mind Blast\",\"IsNode\":false,\"IsPage\":true,\"Path\":\"/skills/telepathy/mind-blast\",\"Slug\":\"\",\"Lang\":\"en\",\"IsSection\":false,\"Section\":\"skills\",\"Sitemap\":{\"ChangeFreq\":\"\",\"Priority\":-1,\"Filename\":\"sitemap.xml\",\"Disable\":false},\"Type\":\"skills\",\"Weight\":0},{\"Date\":\"0001-01-01T00:00:00Z\",\"Lastmod\":\"0001-01-01T00:00:00Z\",\"PublishDate\":\"0001-01-01T00:00:00Z\",\"ExpiryDate\":\"0001-01-01T00:00:00Z\",\"Aliases\":[],\"BundleType\":\"\",\"Description\":\"\",\"Draft\":false,\"IsHome\":false,\"Keywords\":null,\"Kind\":\"page\",\"Layout\":\"\",\"LinkTitle\":\"Explosión mental\",\"IsNode\":false,\"IsPage\":true,\"Path\":\"/skills/telepathy/mind-blast\",\"Slug\":\"\",\"Lang\":\"es\",\"IsSection\":false,\"Section\":\"skills\",\"Sitemap\":{\"ChangeFreq\":\"\",\"Priority\":-1,\"Filename\":\"sitemap.xml\",\"Disable\":false},\"Type\":\"skills\",\"Weight\":0}]"
       };
 
       let history = [];
@@ -116,6 +117,7 @@ Rank 9 [Increased Damage]: 2d4&#43;2s/2d6&#43;2s/2d8&#43;2s.
 </script>
 
 <script src="/js/table-toggle.js"></script>
+
 
   
   
@@ -207,6 +209,7 @@ Results Ordinary: d4&#43;1s/d4&#43;2s/d6&#43;2s. Good: d4&#43;1s/d4&#43;2s/d6&#4
         return;
       }
 
+      const currentLang = "en";
       const currentUrl = "\/skills\/telepathy\/mind-blast\/";
       const fragment = document.createDocumentFragment();
 
@@ -222,12 +225,22 @@ Results Ordinary: d4&#43;1s/d4&#43;2s/d6&#43;2s. Good: d4&#43;1s/d4&#43;2s/d6&#4
         }
 
         const li = document.createElement('li');
-        if (page.url === currentUrl && index === 0) {
+        let targetUrl = page.url;
+
+        
+        if (page.translations) {
+          const translation = page.translations.find(t => t.Lang === currentLang);
+          if (translation) {
+            targetUrl = translation.Permalink;
+          }
+        }
+
+        if (targetUrl === currentUrl && index === 0) {
           li.className = "current-page f4 fw6 neon-text truncate";
           li.textContent = page.title;
         } else {
           const a = document.createElement('a');
-          a.href = page.url;
+          a.href = targetUrl;
           a.textContent = page.title;
           a.className = "truncate";
           li.appendChild(a);
@@ -241,6 +254,7 @@ Results Ordinary: d4&#43;1s/d4&#43;2s/d6&#43;2s. Good: d4&#43;1s/d4&#43;2s/d6&#4
     }
   })();
 </script>
+
     <h1 class="f1 athelas mt3 mb1">
       Mind Blast (U) (PER)
     </h1>

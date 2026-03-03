@@ -28,11 +28,11 @@
   <script>
   (function () {
     try {
-      
       const currentPage = {
-        title: "Creación de personajes",
-        url: "\/es\/core-mechanics\/character-creation\/",
-        translationKey: "\/core-mechanics\/character-creation"
+        
+        id: "\/core-mechanics\/character-creation",
+        
+        title: "Creación de personajes"
       };
 
       let history = [];
@@ -44,13 +44,11 @@
       }
 
       
-      history = history.filter(page => page.url !== currentPage.url && (!page.translationKey || page.translationKey !== currentPage.translationKey));
+      history = history.filter(page => page.id !== currentPage.id);
 
       
       history.push(currentPage);
 
-      
-      
       if (history.length > 20) {
         history.shift();
       }
@@ -63,6 +61,7 @@
 </script>
 
 <script src="/js/table-toggle.js"></script>
+
 
   
   
@@ -143,19 +142,3433 @@
       try {
         history = JSON.parse(sessionStorage.getItem('pageHistory')) || [];
       } catch (e) {
-        console.error("Error parsing history", e);
+        console.error("Error parsing history from sessionStorage", e);
       }
 
-      if (history.length <= 1) {
-        const nav = list.closest('.breadcrumbs');
-        if (nav) nav.remove();
-        return;
-      }
-
+      const currentLang = "es";
       const currentUrl = "\/es\/core-mechanics\/character-creation\/";
-      const fragment = document.createDocumentFragment();
-
       
+      const translationsMap = {
+        
+          "\/skills\/acrobatics": {
+            
+              "en": {
+                "url": "\/skills\/acrobatics\/",
+                "title": "Acrobatics"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/acrobatics\/",
+                "title": "Acrobacia"
+              },
+            
+          },
+        
+          "\/skills\/administration": {
+            
+              "en": {
+                "url": "\/skills\/administration\/",
+                "title": "Administration"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/administration\/",
+                "title": "Administración"
+              },
+            
+          },
+        
+          "\/equipment\/goods-and-services": {
+            
+              "en": {
+                "url": "\/equipment\/goods-and-services\/",
+                "title": "Goods \u0026 Services"
+              },
+            
+              "es": {
+                "url": "\/es\/equipment\/goods-and-services\/",
+                "title": "Bienes y servicios"
+              },
+            
+          },
+        
+          "\/skills\/biokinesis": {
+            
+              "en": {
+                "url": "\/skills\/biokinesis\/",
+                "title": "Biokinesis"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/biokinesis\/",
+                "title": "bioquinesis"
+              },
+            
+          },
+        
+          "\/skills\/culture": {
+            
+              "en": {
+                "url": "\/skills\/culture\/",
+                "title": "Culture"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/culture\/",
+                "title": "Cultura"
+              },
+            
+          },
+        
+          "\/professions\/combat-spec": {
+            
+              "en": {
+                "url": "\/professions\/combat-spec\/",
+                "title": "Combat Spec"
+              },
+            
+              "es": {
+                "url": "\/es\/professions\/combat-spec\/",
+                "title": "Especificaciones de combate"
+              },
+            
+          },
+        
+          "\/species\/human": {
+            
+              "en": {
+                "url": "\/species\/human\/",
+                "title": "Human"
+              },
+            
+              "es": {
+                "url": "\/es\/species\/human\/",
+                "title": "Humano"
+              },
+            
+          },
+        
+          "\/core-mechanics": {
+            
+              "en": {
+                "url": "\/core-mechanics\/",
+                "title": "Core Mechanics"
+              },
+            
+              "es": {
+                "url": "\/es\/core-mechanics\/",
+                "title": "Mecánicas principales"
+              },
+            
+          },
+        
+          "\/skills\/business": {
+            
+              "en": {
+                "url": "\/skills\/business\/",
+                "title": "Business"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/business\/",
+                "title": "Negocio"
+              },
+            
+          },
+        
+          "\/skills\/armor-operation": {
+            
+              "en": {
+                "url": "\/skills\/armor-operation\/",
+                "title": "Armor Operation"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/armor-operation\/",
+                "title": "Operación de armadura"
+              },
+            
+          },
+        
+          "\/skills\/covert-ops": {
+            
+              "en": {
+                "url": "\/skills\/covert-ops\/",
+                "title": "Covert Ops"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/covert-ops\/",
+                "title": "Operaciones encubiertas"
+              },
+            
+          },
+        
+          "\/skills\/stamina": {
+            
+              "en": {
+                "url": "\/skills\/stamina\/",
+                "title": "Stamina"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/stamina\/",
+                "title": "Aguante"
+              },
+            
+          },
+        
+          "\/equipment\/weapons": {
+            
+              "en": {
+                "url": "\/equipment\/weapons\/",
+                "title": "Weapons"
+              },
+            
+              "es": {
+                "url": "\/es\/equipment\/weapons\/",
+                "title": "Armas"
+              },
+            
+          },
+        
+          "\/skills\/athletics": {
+            
+              "en": {
+                "url": "\/skills\/athletics\/",
+                "title": "Athletics"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/athletics\/",
+                "title": "Atletismo"
+              },
+            
+          },
+        
+          "\/skills\/computer-science": {
+            
+              "en": {
+                "url": "\/skills\/computer-science\/",
+                "title": "Computer Science"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/computer-science\/",
+                "title": "Ciencias de la Computación"
+              },
+            
+          },
+        
+          "\/core-mechanics\/character-creation": {
+            
+              "en": {
+                "url": "\/core-mechanics\/character-creation\/",
+                "title": "Character Creation"
+              },
+            
+              "es": {
+                "url": "\/es\/core-mechanics\/character-creation\/",
+                "title": "Creación de personajes"
+              },
+            
+          },
+        
+          "\/skills\/deception": {
+            
+              "en": {
+                "url": "\/skills\/deception\/",
+                "title": "Deception"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/deception\/",
+                "title": "Engaño"
+              },
+            
+          },
+        
+          "\/skills\/esp": {
+            
+              "en": {
+                "url": "\/skills\/esp\/",
+                "title": "ESP"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/esp\/",
+                "title": "ESP"
+              },
+            
+          },
+        
+          "\/species\/fraal": {
+            
+              "en": {
+                "url": "\/species\/fraal\/",
+                "title": "Fraal"
+              },
+            
+              "es": {
+                "url": "\/es\/species\/fraal\/",
+                "title": "Fraal"
+              },
+            
+          },
+        
+          "\/skills\/animal-handling": {
+            
+              "en": {
+                "url": "\/skills\/animal-handling\/",
+                "title": "Animal Handling"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/animal-handling\/",
+                "title": "Manejo de animales"
+              },
+            
+          },
+        
+          "\/professions\/free-agent": {
+            
+              "en": {
+                "url": "\/professions\/free-agent\/",
+                "title": "Free Agent"
+              },
+            
+              "es": {
+                "url": "\/es\/professions\/free-agent\/",
+                "title": "Agente libre"
+              },
+            
+          },
+        
+          "\/equipment\/armor": {
+            
+              "en": {
+                "url": "\/equipment\/armor\/",
+                "title": "Armor"
+              },
+            
+              "es": {
+                "url": "\/es\/equipment\/armor\/",
+                "title": "Armadura"
+              },
+            
+          },
+        
+          "\/skills\/modern-ranged-weapons": {
+            
+              "en": {
+                "url": "\/skills\/modern-ranged-weapons\/",
+                "title": "Modern Ranged Weapons"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/modern-ranged-weapons\/",
+                "title": "Armas a distancia modernas"
+              },
+            
+          },
+        
+          "\/skills\/heavy-weapons": {
+            
+              "en": {
+                "url": "\/skills\/heavy-weapons\/",
+                "title": "Heavy Weapons"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/heavy-weapons\/",
+                "title": "Armas pesadas"
+              },
+            
+          },
+        
+          "\/core-mechanics\/character-advancement": {
+            
+              "en": {
+                "url": "\/core-mechanics\/character-advancement\/",
+                "title": "Character Advancement"
+              },
+            
+              "es": {
+                "url": "\/es\/core-mechanics\/character-advancement\/",
+                "title": "Avance del Personaje"
+              },
+            
+          },
+        
+          "\/rules\/chapter-03": {
+            
+              "en": {
+                "url": "\/rules\/chapter-03\/",
+                "title": "Chapter 3: Characters in Action"
+              },
+            
+              "es": {
+                "url": "\/es\/rules\/chapter-03\/",
+                "title": "Capítulo 3: Personajes en acción"
+              },
+            
+          },
+        
+          "\/skills\/awareness": {
+            
+              "en": {
+                "url": "\/skills\/awareness\/",
+                "title": "Awareness"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/awareness\/",
+                "title": "Conciencia"
+              },
+            
+          },
+        
+          "\/skills\/demolitions": {
+            
+              "en": {
+                "url": "\/skills\/demolitions\/",
+                "title": "Demolitions"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/demolitions\/",
+                "title": "Demoliciones"
+              },
+            
+          },
+        
+          "\/skills\/entertainment": {
+            
+              "en": {
+                "url": "\/skills\/entertainment\/",
+                "title": "Entertainment"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/entertainment\/",
+                "title": "Entretenimiento"
+              },
+            
+          },
+        
+          "\/species": {
+            
+              "en": {
+                "url": "\/species\/",
+                "title": "Species"
+              },
+            
+              "es": {
+                "url": "\/es\/species\/",
+                "title": "Especies"
+              },
+            
+          },
+        
+          "\/species\/mechalus": {
+            
+              "en": {
+                "url": "\/species\/mechalus\/",
+                "title": "Mechalus"
+              },
+            
+              "es": {
+                "url": "\/es\/species\/mechalus\/",
+                "title": "Mechalus"
+              },
+            
+          },
+        
+          "\/skills\/survival": {
+            
+              "en": {
+                "url": "\/skills\/survival\/",
+                "title": "Survival"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/survival\/",
+                "title": "Supervivencia"
+              },
+            
+          },
+        
+          "\/skills\/telekinesis": {
+            
+              "en": {
+                "url": "\/skills\/telekinesis\/",
+                "title": "Telekinesis"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/telekinesis\/",
+                "title": "Telequinesia"
+              },
+            
+          },
+        
+          "\/skills\/primitive-ranged-weapons": {
+            
+              "en": {
+                "url": "\/skills\/primitive-ranged-weapons\/",
+                "title": "Primitive Ranged Weapons"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/primitive-ranged-weapons\/",
+                "title": "Armas a distancia primitivas"
+              },
+            
+          },
+        
+          "\/skills\/melee-weapons": {
+            
+              "en": {
+                "url": "\/skills\/melee-weapons\/",
+                "title": "Melee Weapons"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/melee-weapons\/",
+                "title": "Armas cuerpo a cuerpo"
+              },
+            
+          },
+        
+          "\/equipment\/computers": {
+            
+              "en": {
+                "url": "\/equipment\/computers\/",
+                "title": "Computers"
+              },
+            
+              "es": {
+                "url": "\/es\/equipment\/computers\/",
+                "title": "Computadoras"
+              },
+            
+          },
+        
+          "\/skills\/knowledge": {
+            
+              "en": {
+                "url": "\/skills\/knowledge\/",
+                "title": "Knowledge"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/knowledge\/",
+                "title": "Conocimiento"
+              },
+            
+          },
+        
+          "\/skills\/creativity": {
+            
+              "en": {
+                "url": "\/skills\/creativity\/",
+                "title": "Creativity"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/creativity\/",
+                "title": "Creatividad"
+              },
+            
+          },
+        
+          "\/skills\/interaction": {
+            
+              "en": {
+                "url": "\/skills\/interaction\/",
+                "title": "Interaction"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/interaction\/",
+                "title": "Interacción"
+              },
+            
+          },
+        
+          "\/professions\/tech-op": {
+            
+              "en": {
+                "url": "\/professions\/tech-op\/",
+                "title": "Tech Op"
+              },
+            
+              "es": {
+                "url": "\/es\/professions\/tech-op\/",
+                "title": "Operación técnica"
+              },
+            
+          },
+        
+          "\/professions": {
+            
+              "en": {
+                "url": "\/professions\/",
+                "title": "Professions"
+              },
+            
+              "es": {
+                "url": "\/es\/professions\/",
+                "title": "Profesiones"
+              },
+            
+          },
+        
+          "\/skills\/resolve-con": {
+            
+              "en": {
+                "url": "\/skills\/resolve-con\/",
+                "title": "Resolve (Constitution)"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/resolve-con\/",
+                "title": "Resolver (Constitución)"
+              },
+            
+          },
+        
+          "\/species\/sesheyan": {
+            
+              "en": {
+                "url": "\/species\/sesheyan\/",
+                "title": "Sesheyan"
+              },
+            
+              "es": {
+                "url": "\/es\/species\/sesheyan\/",
+                "title": "Sesheyan"
+              },
+            
+          },
+        
+          "\/skills\/telepathy": {
+            
+              "en": {
+                "url": "\/skills\/telepathy\/",
+                "title": "Telepathy"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/telepathy\/",
+                "title": "Telepatía"
+              },
+            
+          },
+        
+          "\/skills\/unarmed-attack": {
+            
+              "en": {
+                "url": "\/skills\/unarmed-attack\/",
+                "title": "Unarmed Attack"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/unarmed-attack\/",
+                "title": "Ataque desarmado"
+              },
+            
+          },
+        
+          "\/professions\/mindwalker": {
+            
+              "en": {
+                "url": "\/professions\/mindwalker\/",
+                "title": "Mindwalker"
+              },
+            
+              "es": {
+                "url": "\/es\/professions\/mindwalker\/",
+                "title": "Caminante mental"
+              },
+            
+          },
+        
+          "\/backgrounds": {
+            
+              "en": {
+                "url": "\/backgrounds\/",
+                "title": "Backgrounds"
+              },
+            
+              "es": {
+                "url": "\/es\/backgrounds\/",
+                "title": "Fondos"
+              },
+            
+          },
+        
+          "\/skills\/investigate": {
+            
+              "en": {
+                "url": "\/skills\/investigate\/",
+                "title": "Investigate"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/investigate\/",
+                "title": "Investigar"
+              },
+            
+          },
+        
+          "\/skills\/law": {
+            
+              "en": {
+                "url": "\/skills\/law\/",
+                "title": "Law"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/law\/",
+                "title": "Ley"
+              },
+            
+          },
+        
+          "\/skills\/leadership": {
+            
+              "en": {
+                "url": "\/skills\/leadership\/",
+                "title": "Leadership"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/leadership\/",
+                "title": "Liderazgo"
+              },
+            
+          },
+        
+          "\/species\/tsa": {
+            
+              "en": {
+                "url": "\/species\/tsa\/",
+                "title": "T\u0027sa"
+              },
+            
+              "es": {
+                "url": "\/es\/species\/tsa\/",
+                "title": "T\u0027sa"
+              },
+            
+          },
+        
+          "\/skills\/teleportation": {
+            
+              "en": {
+                "url": "\/skills\/teleportation\/",
+                "title": "Teleportation"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/teleportation\/",
+                "title": "Teletransportación"
+              },
+            
+          },
+        
+          "\/equipment\/vehicles": {
+            
+              "en": {
+                "url": "\/equipment\/vehicles\/",
+                "title": "Vehicles"
+              },
+            
+              "es": {
+                "url": "\/es\/equipment\/vehicles\/",
+                "title": "Vehículos"
+              },
+            
+          },
+        
+          "\/equipment\/cybertech": {
+            
+              "en": {
+                "url": "\/equipment\/cybertech\/",
+                "title": "Cybertech"
+              },
+            
+              "es": {
+                "url": "\/es\/equipment\/cybertech\/",
+                "title": "cibertecnología"
+              },
+            
+          },
+        
+          "\/skills\/life-science": {
+            
+              "en": {
+                "url": "\/skills\/life-science\/",
+                "title": "Life Science"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/life-science\/",
+                "title": "Ciencias de la vida"
+              },
+            
+          },
+        
+          "\/skills": {
+            
+              "en": {
+                "url": "\/skills\/",
+                "title": "Skills"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/",
+                "title": "Habilidades"
+              },
+            
+          },
+        
+          "\/skills\/vehicle-operation": {
+            
+              "en": {
+                "url": "\/skills\/vehicle-operation\/",
+                "title": "Vehicle Operation"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/vehicle-operation\/",
+                "title": "Operación del vehículo"
+              },
+            
+          },
+        
+          "\/skills\/resolve-wil": {
+            
+              "en": {
+                "url": "\/skills\/resolve-wil\/",
+                "title": "Resolve"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/resolve-wil\/",
+                "title": "Resolver"
+              },
+            
+          },
+        
+          "\/species\/weren": {
+            
+              "en": {
+                "url": "\/species\/weren\/",
+                "title": "Weren"
+              },
+            
+              "es": {
+                "url": "\/es\/species\/weren\/",
+                "title": "Weren"
+              },
+            
+          },
+        
+          "\/skills\/street-smart": {
+            
+              "en": {
+                "url": "\/skills\/street-smart\/",
+                "title": "Street Smart"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/street-smart\/",
+                "title": "Calle inteligente"
+              },
+            
+          },
+        
+          "\/skills\/medical-science": {
+            
+              "en": {
+                "url": "\/skills\/medical-science\/",
+                "title": "Medical Science"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/medical-science\/",
+                "title": "ciencia medica"
+              },
+            
+          },
+        
+          "\/perks_flaws": {
+            
+              "en": {
+                "url": "\/perks_flaws\/",
+                "title": "Perks \u0026 Flaws"
+              },
+            
+              "es": {
+                "url": "\/es\/perks_flaws\/",
+                "title": "Ventajas y defectos"
+              },
+            
+          },
+        
+          "\/skills\/teach": {
+            
+              "en": {
+                "url": "\/skills\/teach\/",
+                "title": "Teach"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/teach\/",
+                "title": "Enseñar"
+              },
+            
+          },
+        
+          "\/equipment": {
+            
+              "en": {
+                "url": "\/equipment\/",
+                "title": "Equipment"
+              },
+            
+              "es": {
+                "url": "\/es\/equipment\/",
+                "title": "Equipo"
+              },
+            
+          },
+        
+          "\/skills\/navigation": {
+            
+              "en": {
+                "url": "\/skills\/navigation\/",
+                "title": "Navigation"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/navigation\/",
+                "title": "Navegación"
+              },
+            
+          },
+        
+          "\/skills\/physical-science": {
+            
+              "en": {
+                "url": "\/skills\/physical-science\/",
+                "title": "Physical Science"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/physical-science\/",
+                "title": "Ciencias Físicas"
+              },
+            
+          },
+        
+          "\/psionics": {
+            
+              "en": {
+                "url": "\/psionics\/",
+                "title": "Psionics"
+              },
+            
+              "es": {
+                "url": "\/es\/psionics\/",
+                "title": "Psionica"
+              },
+            
+          },
+        
+          "\/skills\/security": {
+            
+              "en": {
+                "url": "\/skills\/security\/",
+                "title": "Security"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/security\/",
+                "title": "Seguridad"
+              },
+            
+          },
+        
+          "\/skills\/system-operation": {
+            
+              "en": {
+                "url": "\/skills\/system-operation\/",
+                "title": "System Operation"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/system-operation\/",
+                "title": "Operación del sistema"
+              },
+            
+          },
+        
+          "\/skills\/tactics": {
+            
+              "en": {
+                "url": "\/skills\/tactics\/",
+                "title": "Tactics"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/tactics\/",
+                "title": "Táctica"
+              },
+            
+          },
+        
+          "\/skills\/technical-science": {
+            
+              "en": {
+                "url": "\/skills\/technical-science\/",
+                "title": "Technical Science"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/technical-science\/",
+                "title": "Ciencia Técnica"
+              },
+            
+          },
+        
+          "\/rules": {
+            
+              "en": {
+                "url": "\/rules\/",
+                "title": "Rules of Play"
+              },
+            
+              "es": {
+                "url": "\/es\/rules\/",
+                "title": "Reglas de juego"
+              },
+            
+          },
+        
+          "\/skills\/manipulation": {
+            
+              "en": {
+                "url": "\/skills\/manipulation\/",
+                "title": "Manipulation (Retired)"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/manipulation\/",
+                "title": "Manipulación (retirado)"
+              },
+            
+          },
+        
+          "\/notes": {
+            
+              "en": {
+                "url": "\/notes\/",
+                "title": "Project Notes"
+              },
+            
+              "es": {
+                "url": "\/es\/notes\/",
+                "title": "Notas del proyecto"
+              },
+            
+          },
+        
+          "\/introduction": {
+            
+              "en": {
+                "url": "\/introduction\/",
+                "title": ""
+              },
+            
+              "es": {
+                "url": "\/es\/introduction\/",
+                "title": ""
+              },
+            
+          },
+        
+          "\/rules\/chapter-02": {
+            
+              "en": {
+                "url": "\/rules\/chapter-02\/",
+                "title": ""
+              },
+            
+              "es": {
+                "url": "\/es\/rules\/chapter-02\/",
+                "title": ""
+              },
+            
+          },
+        
+          "\/": {
+            
+              "en": {
+                "url": "\/",
+                "title": "AAA"
+              },
+            
+              "es": {
+                "url": "\/es\/",
+                "title": "AAA"
+              },
+            
+          },
+        
+          "\/skills\/entertainment\/act": {
+            
+              "en": {
+                "url": "\/skills\/entertainment\/act\/",
+                "title": "Act"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/entertainment\/act\/",
+                "title": "Acto"
+              },
+            
+          },
+        
+          "\/skills\/teleportation\/dimensional-anchor": {
+            
+              "en": {
+                "url": "\/skills\/teleportation\/dimensional-anchor\/",
+                "title": "Dimensional Anchor"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/teleportation\/dimensional-anchor\/",
+                "title": "Ancla dimensional"
+              },
+            
+          },
+        
+          "\/skills\/primitive-ranged-weapons\/bow": {
+            
+              "en": {
+                "url": "\/skills\/primitive-ranged-weapons\/bow\/",
+                "title": "Bow"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/primitive-ranged-weapons\/bow\/",
+                "title": "Arco"
+              },
+            
+          },
+        
+          "\/skills\/biokinesis\/bioweapon": {
+            
+              "en": {
+                "url": "\/skills\/biokinesis\/bioweapon\/",
+                "title": "Bioweapon"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/biokinesis\/bioweapon\/",
+                "title": "Arma biológica"
+              },
+            
+          },
+        
+          "\/skills\/modern-ranged-weapons\/energy-weapon": {
+            
+              "en": {
+                "url": "\/skills\/modern-ranged-weapons\/energy-weapon\/",
+                "title": "Energy Weapon"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/modern-ranged-weapons\/energy-weapon\/",
+                "title": "Arma de energía"
+              },
+            
+          },
+        
+          "\/skills\/modern-ranged-weapons\/firearm": {
+            
+              "en": {
+                "url": "\/skills\/modern-ranged-weapons\/firearm\/",
+                "title": "Firearm"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/modern-ranged-weapons\/firearm\/",
+                "title": "Arma de fuego"
+              },
+            
+          },
+        
+          "\/skills\/melee-weapons\/powered-weapon": {
+            
+              "en": {
+                "url": "\/skills\/melee-weapons\/powered-weapon\/",
+                "title": "Powered Weapon"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/melee-weapons\/powered-weapon\/",
+                "title": "Arma potenciada"
+              },
+            
+          },
+        
+          "\/skills\/armor-operation\/combat-armor": {
+            
+              "en": {
+                "url": "\/skills\/armor-operation\/combat-armor\/",
+                "title": "Combat Armor"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/armor-operation\/combat-armor\/",
+                "title": "Armadura de combate"
+              },
+            
+          },
+        
+          "\/skills\/armor-operation\/powered-armor": {
+            
+              "en": {
+                "url": "\/skills\/armor-operation\/powered-armor\/",
+                "title": "Powered Armor"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/armor-operation\/powered-armor\/",
+                "title": "Armadura potenciada"
+              },
+            
+          },
+        
+          "\/skills\/system-operation\/weapons": {
+            
+              "en": {
+                "url": "\/skills\/system-operation\/weapons\/",
+                "title": "Weapons"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/system-operation\/weapons\/",
+                "title": "Armas"
+              },
+            
+          },
+        
+          "\/skills\/unarmed-attack\/power-martial-arts": {
+            
+              "en": {
+                "url": "\/skills\/unarmed-attack\/power-martial-arts\/",
+                "title": "Power Martial Arts"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/unarmed-attack\/power-martial-arts\/",
+                "title": "Artes marciales de poder"
+              },
+            
+          },
+        
+          "\/skills\/acrobatics\/defensive-martial-arts": {
+            
+              "en": {
+                "url": "\/skills\/acrobatics\/defensive-martial-arts\/",
+                "title": "Defensive Martial Arts"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/acrobatics\/defensive-martial-arts\/",
+                "title": "Artes marciales defensivas"
+              },
+            
+          },
+        
+          "\/skills\/navigation\/astrogation-drivespace": {
+            
+              "en": {
+                "url": "\/skills\/navigation\/astrogation-drivespace\/",
+                "title": "Astrogation, Drivespace"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/navigation\/astrogation-drivespace\/",
+                "title": "Astrogación, Drivespace"
+              },
+            
+          },
+        
+          "\/skills\/navigation\/astrogation-system": {
+            
+              "en": {
+                "url": "\/skills\/navigation\/astrogation-system\/",
+                "title": "Astrogation, System"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/navigation\/astrogation-system\/",
+                "title": "Astrogación, Sistema"
+              },
+            
+          },
+        
+          "\/skills\/physical-science\/astronomy": {
+            
+              "en": {
+                "url": "\/skills\/physical-science\/astronomy\/",
+                "title": "Astronomy"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/physical-science\/astronomy\/",
+                "title": "Astronomía"
+              },
+            
+          },
+        
+          "\/skills\/entertainment\/dance": {
+            
+              "en": {
+                "url": "\/skills\/entertainment\/dance\/",
+                "title": "Dance"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/entertainment\/dance\/",
+                "title": "Bailar"
+              },
+            
+          },
+        
+          "\/skills\/primitive-ranged-weapons\/crossbow": {
+            
+              "en": {
+                "url": "\/skills\/primitive-ranged-weapons\/crossbow\/",
+                "title": "Crossbow"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/primitive-ranged-weapons\/crossbow\/",
+                "title": "Ballesta"
+              },
+            
+          },
+        
+          "\/skills\/armor-operation\/rank-benefits": {
+            
+              "en": {
+                "url": "\/skills\/armor-operation\/rank-benefits\/",
+                "title": "Rank Benefits"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/armor-operation\/rank-benefits\/",
+                "title": "Beneficios de rango"
+              },
+            
+          },
+        
+          "\/skills\/melee-weapons\/rank-benefits": {
+            
+              "en": {
+                "url": "\/skills\/melee-weapons\/rank-benefits\/",
+                "title": "Rank Benefits"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/melee-weapons\/rank-benefits\/",
+                "title": "Beneficios de rango"
+              },
+            
+          },
+        
+          "\/skills\/physical-science\/rank-benefits": {
+            
+              "en": {
+                "url": "\/skills\/physical-science\/rank-benefits\/",
+                "title": "Rank Benefits"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/physical-science\/rank-benefits\/",
+                "title": "Beneficios de rango"
+              },
+            
+          },
+        
+          "\/skills\/unarmed-attack\/rank-benefits-all-specialties": {
+            
+              "en": {
+                "url": "\/skills\/unarmed-attack\/rank-benefits-all-specialties\/",
+                "title": "Rank Benefits (All Specialties)"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/unarmed-attack\/rank-benefits-all-specialties\/",
+                "title": "Beneficios de rango (todas las especialidades)"
+              },
+            
+          },
+        
+          "\/skills\/life-science\/biology-botany-zoology": {
+            
+              "en": {
+                "url": "\/skills\/life-science\/biology-botany-zoology\/",
+                "title": "Biology, Botany, Zoology"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/life-science\/biology-botany-zoology\/",
+                "title": "Biología, Botánica, Zoología"
+              },
+            
+          },
+        
+          "\/skills\/deception\/bluff": {
+            
+              "en": {
+                "url": "\/skills\/deception\/bluff\/",
+                "title": "Bluff"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/deception\/bluff\/",
+                "title": "Bluff"
+              },
+            
+          },
+        
+          "\/skills\/administration\/bureaucracy": {
+            
+              "en": {
+                "url": "\/skills\/administration\/bureaucracy\/",
+                "title": "Bureaucracy"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/administration\/bureaucracy\/",
+                "title": "Burocracia"
+              },
+            
+          },
+        
+          "\/skills\/investigate\/search": {
+            
+              "en": {
+                "url": "\/skills\/investigate\/search\/",
+                "title": "Search"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/investigate\/search\/",
+                "title": "Buscar"
+              },
+            
+          },
+        
+          "\/skills\/acrobatics\/fall": {
+            
+              "en": {
+                "url": "\/skills\/acrobatics\/fall\/",
+                "title": "Fall"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/acrobatics\/fall\/",
+                "title": "Caer"
+              },
+            
+          },
+        
+          "\/skills\/teleportation\/spatial-shift": {
+            
+              "en": {
+                "url": "\/skills\/teleportation\/spatial-shift\/",
+                "title": "Spatial Shift"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/teleportation\/spatial-shift\/",
+                "title": "Cambio espacial"
+              },
+            
+          },
+        
+          "\/skills\/entertainment\/sing": {
+            
+              "en": {
+                "url": "\/skills\/entertainment\/sing\/",
+                "title": "Sing"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/entertainment\/sing\/",
+                "title": "Cantar"
+              },
+            
+          },
+        
+          "\/skills\/athletics\/race": {
+            
+              "en": {
+                "url": "\/skills\/athletics\/race\/",
+                "title": "Race"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/athletics\/race\/",
+                "title": "Carrera"
+              },
+            
+          },
+        
+          "\/skills\/covert-ops\/pickpocket": {
+            
+              "en": {
+                "url": "\/skills\/covert-ops\/pickpocket\/",
+                "title": "Pickpocket"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/covert-ops\/pickpocket\/",
+                "title": "Carterista"
+              },
+            
+          },
+        
+          "\/skills\/manipulation\/pickpocket": {
+            
+              "en": {
+                "url": "\/skills\/manipulation\/pickpocket\/",
+                "title": "Pickpocket"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/manipulation\/pickpocket\/",
+                "title": "Carterista"
+              },
+            
+          },
+        
+          "\/categories": {
+            
+              "en": {
+                "url": "\/categories\/",
+                "title": "Categories"
+              },
+            
+              "es": {
+                "url": "\/es\/categories\/",
+                "title": "Categories"
+              },
+            
+          },
+        
+          "\/skills\/primitive-ranged-weapons\/flintlock": {
+            
+              "en": {
+                "url": "\/skills\/primitive-ranged-weapons\/flintlock\/",
+                "title": "Flintlock"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/primitive-ranged-weapons\/flintlock\/",
+                "title": "chispa"
+              },
+            
+          },
+        
+          "\/skills\/medical-science\/surgery": {
+            
+              "en": {
+                "url": "\/skills\/medical-science\/surgery\/",
+                "title": "Surgery"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/medical-science\/surgery\/",
+                "title": "Cirugía"
+              },
+            
+          },
+        
+          "\/skills\/esp\/clairaudience-clairvoyance": {
+            
+              "en": {
+                "url": "\/skills\/esp\/clairaudience-clairvoyance\/",
+                "title": "Clairaudience \/ Clairvoyance"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/esp\/clairaudience-clairvoyance\/",
+                "title": "Clariaudiencia \/ Clarividencia"
+              },
+            
+          },
+        
+          "\/skills\/esp\/navcognition": {
+            
+              "en": {
+                "url": "\/skills\/esp\/navcognition\/",
+                "title": "Navcognition"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/esp\/navcognition\/",
+                "title": "Cognición de navegación"
+              },
+            
+          },
+        
+          "\/skills\/system-operation\/communications": {
+            
+              "en": {
+                "url": "\/skills\/system-operation\/communications\/",
+                "title": "Communications"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/system-operation\/communications\/",
+                "title": "Comunicaciones"
+              },
+            
+          },
+        
+          "\/skills\/knowledge\/street-knowledge": {
+            
+              "en": {
+                "url": "\/skills\/knowledge\/street-knowledge\/",
+                "title": "Street Knowledge"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/knowledge\/street-knowledge\/",
+                "title": "Conocimiento de la calle"
+              },
+            
+          },
+        
+          "\/skills\/street-smart\/street-knowledge": {
+            
+              "en": {
+                "url": "\/skills\/street-smart\/street-knowledge\/",
+                "title": "Street Knowledge"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/street-smart\/street-knowledge\/",
+                "title": "Conocimiento de la calle"
+              },
+            
+          },
+        
+          "\/skills\/medical-science\/medical-knowledge": {
+            
+              "en": {
+                "url": "\/skills\/medical-science\/medical-knowledge\/",
+                "title": "Medical Knowledge"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/medical-science\/medical-knowledge\/",
+                "title": "Conocimiento médico"
+              },
+            
+          },
+        
+          "\/skills\/knowledge\/world-knowledge": {
+            
+              "en": {
+                "url": "\/skills\/knowledge\/world-knowledge\/",
+                "title": "World Knowledge"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/knowledge\/world-knowledge\/",
+                "title": "Conocimiento mundial"
+              },
+            
+          },
+        
+          "\/skills\/technical-science\/technical-knowledge": {
+            
+              "en": {
+                "url": "\/skills\/technical-science\/technical-knowledge\/",
+                "title": "Technical Knowledge"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/technical-science\/technical-knowledge\/",
+                "title": "Conocimiento técnico"
+              },
+            
+          },
+        
+          "\/skills\/telepathy\/contact": {
+            
+              "en": {
+                "url": "\/skills\/telepathy\/contact\/",
+                "title": "Contact"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/telepathy\/contact\/",
+                "title": "Contacto"
+              },
+            
+          },
+        
+          "\/skills\/biokinesis\/control-metabolism": {
+            
+              "en": {
+                "url": "\/skills\/biokinesis\/control-metabolism\/",
+                "title": "Control Metabolism"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/biokinesis\/control-metabolism\/",
+                "title": "Controlar el metabolismo"
+              },
+            
+          },
+        
+          "\/skills\/business\/corporate": {
+            
+              "en": {
+                "url": "\/skills\/business\/corporate\/",
+                "title": "Corporate"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/business\/corporate\/",
+                "title": "Corporativo"
+              },
+            
+          },
+        
+          "\/skills\/melee-weapons\/blade": {
+            
+              "en": {
+                "url": "\/skills\/melee-weapons\/blade\/",
+                "title": "Blade"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/melee-weapons\/blade\/",
+                "title": "Cuchilla"
+              },
+            
+          },
+        
+          "\/skills\/culture\/alien-culture": {
+            
+              "en": {
+                "url": "\/skills\/culture\/alien-culture\/",
+                "title": "Alien Culture [Specific]"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/culture\/alien-culture\/",
+                "title": "Cultura alienígena [específica]"
+              },
+            
+          },
+        
+          "\/skills\/biokinesis\/transfer-damage": {
+            
+              "en": {
+                "url": "\/skills\/biokinesis\/transfer-damage\/",
+                "title": "Transfer Damage"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/biokinesis\/transfer-damage\/",
+                "title": "Daño por transferencia"
+              },
+            
+          },
+        
+          "\/skills\/knowledge\/deduce": {
+            
+              "en": {
+                "url": "\/skills\/knowledge\/deduce\/",
+                "title": "Deduce"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/knowledge\/deduce\/",
+                "title": "Deducir"
+              },
+            
+          },
+        
+          "\/skills\/system-operation\/defenses": {
+            
+              "en": {
+                "url": "\/skills\/system-operation\/defenses\/",
+                "title": "Defenses"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/system-operation\/defenses\/",
+                "title": "Defensas"
+              },
+            
+          },
+        
+          "\/skills\/demolitions\/disarm": {
+            
+              "en": {
+                "url": "\/skills\/demolitions\/disarm\/",
+                "title": "Disarm"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/demolitions\/disarm\/",
+                "title": "Desarmar"
+              },
+            
+          },
+        
+          "\/skills\/security\/security-devices": {
+            
+              "en": {
+                "url": "\/skills\/security\/security-devices\/",
+                "title": "Security Devices"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/security\/security-devices\/",
+                "title": "Dispositivos de seguridad"
+              },
+            
+          },
+        
+          "\/skills\/leadership\/command": {
+            
+              "en": {
+                "url": "\/skills\/leadership\/command\/",
+                "title": "Command"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/leadership\/command\/",
+                "title": "Dominio"
+              },
+            
+          },
+        
+          "\/skills\/telekinesis\/electrokinetics": {
+            
+              "en": {
+                "url": "\/skills\/telekinesis\/electrokinetics\/",
+                "title": "Electrokinetics"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/telekinesis\/electrokinetics\/",
+                "title": "electrocinética"
+              },
+            
+          },
+        
+          "\/skills\/street-smart\/criminal-elements": {
+            
+              "en": {
+                "url": "\/skills\/street-smart\/criminal-elements\/",
+                "title": "Criminal Elements"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/street-smart\/criminal-elements\/",
+                "title": "Elementos criminales"
+              },
+            
+          },
+        
+          "\/skills\/esp\/empathy": {
+            
+              "en": {
+                "url": "\/skills\/esp\/empathy\/",
+                "title": "Empathy"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/esp\/empathy\/",
+                "title": "Empatía"
+              },
+            
+          },
+        
+          "\/skills\/interaction\/charm": {
+            
+              "en": {
+                "url": "\/skills\/interaction\/charm\/",
+                "title": "Charm"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/interaction\/charm\/",
+                "title": "Encanto"
+              },
+            
+          },
+        
+          "\/skills\/telepathy\/datalink": {
+            
+              "en": {
+                "url": "\/skills\/telepathy\/datalink\/",
+                "title": "Datalink"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/telepathy\/datalink\/",
+                "title": "Enlace de datos"
+              },
+            
+          },
+        
+          "\/skills\/teach\/instruction": {
+            
+              "en": {
+                "url": "\/skills\/teach\/instruction\/",
+                "title": "Teach [Specific Field]"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/teach\/instruction\/",
+                "title": "Enseñar [campo específico]"
+              },
+            
+          },
+        
+          "\/skills\/animal-handling\/animal-training": {
+            
+              "en": {
+                "url": "\/skills\/animal-handling\/animal-training\/",
+                "title": "Animal Training"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/animal-handling\/animal-training\/",
+                "title": "Entrenamiento de animales"
+              },
+            
+          },
+        
+          "\/skills\/acrobatics\/zero-g-training": {
+            
+              "en": {
+                "url": "\/skills\/acrobatics\/zero-g-training\/",
+                "title": "Zero-g Training"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/acrobatics\/zero-g-training\/",
+                "title": "Entrenamiento de gravedad cero"
+              },
+            
+          },
+        
+          "\/skills\/survival\/survival-training": {
+            
+              "en": {
+                "url": "\/skills\/survival\/survival-training\/",
+                "title": "Survival Training"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/survival\/survival-training\/",
+                "title": "Entrenamiento de supervivencia"
+              },
+            
+          },
+        
+          "\/skills\/interaction\/interview": {
+            
+              "en": {
+                "url": "\/skills\/interaction\/interview\/",
+                "title": "Interview"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/interaction\/interview\/",
+                "title": "Entrevista"
+              },
+            
+          },
+        
+          "\/skills\/creativity\/writing": {
+            
+              "en": {
+                "url": "\/skills\/creativity\/writing\/",
+                "title": "Writing"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/creativity\/writing\/",
+                "title": "Escribiendo"
+              },
+            
+          },
+        
+          "\/skills\/telekinesis\/kinetic-shield": {
+            
+              "en": {
+                "url": "\/skills\/telekinesis\/kinetic-shield\/",
+                "title": "Kinetic Shield"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/telekinesis\/kinetic-shield\/",
+                "title": "Escudo cinético"
+              },
+            
+          },
+        
+          "\/skills\/telepathy\/mind-shield": {
+            
+              "en": {
+                "url": "\/skills\/telepathy\/mind-shield\/",
+                "title": "Mind Shield"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/telepathy\/mind-shield\/",
+                "title": "Escudo mental"
+              },
+            
+          },
+        
+          "\/skills\/telepathy\/illusion": {
+            
+              "en": {
+                "url": "\/skills\/telepathy\/illusion\/",
+                "title": "Illusion"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/telepathy\/illusion\/",
+                "title": "Espejismo"
+              },
+            
+          },
+        
+          "\/skills\/acrobatics\/dodge": {
+            
+              "en": {
+                "url": "\/skills\/acrobatics\/dodge\/",
+                "title": "Dodge"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/acrobatics\/dodge\/",
+                "title": "Esquivar"
+              },
+            
+          },
+        
+          "\/skills\/demolitions\/set-explosives": {
+            
+              "en": {
+                "url": "\/skills\/demolitions\/set-explosives\/",
+                "title": "Set Explosives"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/demolitions\/set-explosives\/",
+                "title": "Establecer explosivos"
+              },
+            
+          },
+        
+          "\/skills\/culture\/etiquette": {
+            
+              "en": {
+                "url": "\/skills\/culture\/etiquette\/",
+                "title": "Etiquette [Specific]"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/culture\/etiquette\/",
+                "title": "Etiqueta [Específica]"
+              },
+            
+          },
+        
+          "\/skills\/teleportation\/jaunt": {
+            
+              "en": {
+                "url": "\/skills\/teleportation\/jaunt\/",
+                "title": "Jaunt"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/teleportation\/jaunt\/",
+                "title": "Excursión"
+              },
+            
+          },
+        
+          "\/skills\/telepathy\/mind-blast": {
+            
+              "en": {
+                "url": "\/skills\/telepathy\/mind-blast\/",
+                "title": "Mind Blast"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/telepathy\/mind-blast\/",
+                "title": "Explosión mental"
+              },
+            
+          },
+        
+          "\/skills\/demolitions\/scratch-built-explosives": {
+            
+              "en": {
+                "url": "\/skills\/demolitions\/scratch-built-explosives\/",
+                "title": "Scratch-Built Explosives"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/demolitions\/scratch-built-explosives\/",
+                "title": "Explosivos construidos desde cero"
+              },
+            
+          },
+        
+          "\/skills\/creativity\/artistic-expression": {
+            
+              "en": {
+                "url": "\/skills\/creativity\/artistic-expression\/",
+                "title": "Artistic Expression"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/creativity\/artistic-expression\/",
+                "title": "Expresión Artística"
+              },
+            
+          },
+        
+          "\/skills\/physical-science\/physics": {
+            
+              "en": {
+                "url": "\/skills\/physical-science\/physics\/",
+                "title": "Physics"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/physical-science\/physics\/",
+                "title": "Física"
+              },
+            
+          },
+        
+          "\/skills\/medical-science\/forensics": {
+            
+              "en": {
+                "url": "\/skills\/medical-science\/forensics\/",
+                "title": "Forensics"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/medical-science\/forensics\/",
+                "title": "forense"
+              },
+            
+          },
+        
+          "\/skills\/telekinesis\/photokinetics": {
+            
+              "en": {
+                "url": "\/skills\/telekinesis\/photokinetics\/",
+                "title": "Photokinetics"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/telekinesis\/photokinetics\/",
+                "title": "Fotocinética"
+              },
+            
+          },
+        
+          "\/skills\/heavy-weapons\/direct-fire": {
+            
+              "en": {
+                "url": "\/skills\/heavy-weapons\/direct-fire\/",
+                "title": "Direct Fire"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/heavy-weapons\/direct-fire\/",
+                "title": "Fuego directo"
+              },
+            
+          },
+        
+          "\/skills\/heavy-weapons\/indirect-fire": {
+            
+              "en": {
+                "url": "\/skills\/heavy-weapons\/indirect-fire\/",
+                "title": "Indirect Fire"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/heavy-weapons\/indirect-fire\/",
+                "title": "Fuego indirecto"
+              },
+            
+          },
+        
+          "\/skills\/covert-ops\/lockpick": {
+            
+              "en": {
+                "url": "\/skills\/covert-ops\/lockpick\/",
+                "title": "Lockpick"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/covert-ops\/lockpick\/",
+                "title": "ganzúa"
+              },
+            
+          },
+        
+          "\/skills\/manipulation\/lockpick": {
+            
+              "en": {
+                "url": "\/skills\/manipulation\/lockpick\/",
+                "title": "Lockpick"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/manipulation\/lockpick\/",
+                "title": "ganzúa"
+              },
+            
+          },
+        
+          "\/skills\/life-science\/genetics": {
+            
+              "en": {
+                "url": "\/skills\/life-science\/genetics\/",
+                "title": "Genetics"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/life-science\/genetics\/",
+                "title": "Genética"
+              },
+            
+          },
+        
+          "\/skills\/administration\/management": {
+            
+              "en": {
+                "url": "\/skills\/administration\/management\/",
+                "title": "Management"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/administration\/management\/",
+                "title": "Gestión"
+              },
+            
+          },
+        
+          "\/skills\/computer-science\/hardware": {
+            
+              "en": {
+                "url": "\/skills\/computer-science\/hardware\/",
+                "title": "Hardware"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/computer-science\/hardware\/",
+                "title": "Hardware"
+              },
+            
+          },
+        
+          "\/skills\/primitive-ranged-weapons\/sling": {
+            
+              "en": {
+                "url": "\/skills\/primitive-ranged-weapons\/sling\/",
+                "title": "Sling"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/primitive-ranged-weapons\/sling\/",
+                "title": "Honda"
+              },
+            
+          },
+        
+          "\/skills\/knowledge\/language": {
+            
+              "en": {
+                "url": "\/skills\/knowledge\/language\/",
+                "title": "Language"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/knowledge\/language\/",
+                "title": "Idioma"
+              },
+            
+          },
+        
+          "\/skills\/system-operation\/engineering": {
+            
+              "en": {
+                "url": "\/skills\/system-operation\/engineering\/",
+                "title": "Engineering"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/system-operation\/engineering\/",
+                "title": "Ingeniería"
+              },
+            
+          },
+        
+          "\/skills\/leadership\/inspire": {
+            
+              "en": {
+                "url": "\/skills\/leadership\/inspire\/",
+                "title": "Inspire"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/leadership\/inspire\/",
+                "title": "Inspirar"
+              },
+            
+          },
+        
+          "\/skills\/entertainment\/musical-instrument": {
+            
+              "en": {
+                "url": "\/skills\/entertainment\/musical-instrument\/",
+                "title": "Musical Instrument [Specific]"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/entertainment\/musical-instrument\/",
+                "title": "Instrumento musical [Específico]"
+              },
+            
+          },
+        
+          "\/skills\/interaction\/interrogate": {
+            
+              "en": {
+                "url": "\/skills\/interaction\/interrogate\/",
+                "title": "Interrogate"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/interaction\/interrogate\/",
+                "title": "Interrogar"
+              },
+            
+          },
+        
+          "\/skills\/investigate\/interrogate": {
+            
+              "en": {
+                "url": "\/skills\/investigate\/interrogate\/",
+                "title": "Interrogate"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/investigate\/interrogate\/",
+                "title": "Interrogar"
+              },
+            
+          },
+        
+          "\/skills\/interaction\/intimidate": {
+            
+              "en": {
+                "url": "\/skills\/interaction\/intimidate\/",
+                "title": "Intimidate"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/interaction\/intimidate\/",
+                "title": "Intimidar"
+              },
+            
+          },
+        
+          "\/skills\/awareness\/intuition": {
+            
+              "en": {
+                "url": "\/skills\/awareness\/intuition\/",
+                "title": "Intuition"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/awareness\/intuition\/",
+                "title": "Intuición"
+              },
+            
+          },
+        
+          "\/skills\/technical-science\/invention": {
+            
+              "en": {
+                "url": "\/skills\/technical-science\/invention\/",
+                "title": "Invention"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/technical-science\/invention\/",
+                "title": "Invención"
+              },
+            
+          },
+        
+          "\/skills\/deception\/gamble": {
+            
+              "en": {
+                "url": "\/skills\/deception\/gamble\/",
+                "title": "Gamble"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/deception\/gamble\/",
+                "title": "Jugar"
+              },
+            
+          },
+        
+          "\/skills\/technical-science\/juryrig": {
+            
+              "en": {
+                "url": "\/skills\/technical-science\/juryrig\/",
+                "title": "Juryrig"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/technical-science\/juryrig\/",
+                "title": "Jurado"
+              },
+            
+          },
+        
+          "\/skills\/esp\/mind-reading": {
+            
+              "en": {
+                "url": "\/skills\/esp\/mind-reading\/",
+                "title": "Mind Reading"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/esp\/mind-reading\/",
+                "title": "Lectura de la mente"
+              },
+            
+          },
+        
+          "\/skills\/telekinesis\/levitation": {
+            
+              "en": {
+                "url": "\/skills\/telekinesis\/levitation\/",
+                "title": "Levitation"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/telekinesis\/levitation\/",
+                "title": "Levitación"
+              },
+            
+          },
+        
+          "\/skills\/law\/law-specific-skill": {
+            
+              "en": {
+                "url": "\/skills\/law\/law-specific-skill\/",
+                "title": "Law [Specific]"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/law\/law-specific-skill\/",
+                "title": "Ley [Específica]"
+              },
+            
+          },
+        
+          "\/skills\/melee-weapons\/bludgeon": {
+            
+              "en": {
+                "url": "\/skills\/melee-weapons\/bludgeon\/",
+                "title": "Bludgeon"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/melee-weapons\/bludgeon\/",
+                "title": "Maza"
+              },
+            
+          },
+        
+          "\/skills\/esp\/battle-mind": {
+            
+              "en": {
+                "url": "\/skills\/esp\/battle-mind\/",
+                "title": "Battle Mind"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/esp\/battle-mind\/",
+                "title": "Mente de batalla"
+              },
+            
+          },
+        
+          "\/skills\/animal-handling\/animal-riding": {
+            
+              "en": {
+                "url": "\/skills\/animal-handling\/animal-riding\/",
+                "title": "Animal Riding"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/animal-handling\/animal-riding\/",
+                "title": "Montar animales"
+              },
+            
+          },
+        
+          "\/skills\/athletics\/swim": {
+            
+              "en": {
+                "url": "\/skills\/athletics\/swim\/",
+                "title": "Swim"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/athletics\/swim\/",
+                "title": "Nadar"
+              },
+            
+          },
+        
+          "\/skills\/navigation\/navigation-surface": {
+            
+              "en": {
+                "url": "\/skills\/navigation\/navigation-surface\/",
+                "title": "Navigation, Surface"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/navigation\/navigation-surface\/",
+                "title": "Navegación, Superficie"
+              },
+            
+          },
+        
+          "\/skills\/interaction\/bargain": {
+            
+              "en": {
+                "url": "\/skills\/interaction\/bargain\/",
+                "title": "Bargain"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/interaction\/bargain\/",
+                "title": "Negociar"
+              },
+            
+          },
+        
+          "\/skills\/business\/illicit-business": {
+            
+              "en": {
+                "url": "\/skills\/business\/illicit-business\/",
+                "title": "Illicit Business"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/business\/illicit-business\/",
+                "title": "Negocios ilícitos"
+              },
+            
+          },
+        
+          "\/skills\/telepathy\/tire": {
+            
+              "en": {
+                "url": "\/skills\/telepathy\/tire\/",
+                "title": "Tire"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/telepathy\/tire\/",
+                "title": "Neumático"
+              },
+            
+          },
+        
+          "\/skills\/covert-ops\/conceal": {
+            
+              "en": {
+                "url": "\/skills\/covert-ops\/conceal\/",
+                "title": "Conceal"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/covert-ops\/conceal\/",
+                "title": "Ocultar"
+              },
+            
+          },
+        
+          "\/skills\/covert-ops\/disguise": {
+            
+              "en": {
+                "url": "\/skills\/covert-ops\/disguise\/",
+                "title": "Disguise"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/covert-ops\/disguise\/",
+                "title": "Ocultar"
+              },
+            
+          },
+        
+          "\/skills\/knowledge\/computer-operation": {
+            
+              "en": {
+                "url": "\/skills\/knowledge\/computer-operation\/",
+                "title": "Computer Operation"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/knowledge\/computer-operation\/",
+                "title": "Operación de la computadora"
+              },
+            
+          },
+        
+          "\/skills\/teleportation\/blink": {
+            
+              "en": {
+                "url": "\/skills\/teleportation\/blink\/",
+                "title": "Blink"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/teleportation\/blink\/",
+                "title": "Parpadear"
+              },
+            
+          },
+        
+          "\/skills\/unarmed-attack\/brawl": {
+            
+              "en": {
+                "url": "\/skills\/unarmed-attack\/brawl\/",
+                "title": "Brawl"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/unarmed-attack\/brawl\/",
+                "title": "Pelearse"
+              },
+            
+          },
+        
+          "\/skills\/business\/small-business": {
+            
+              "en": {
+                "url": "\/skills\/business\/small-business\/",
+                "title": "Small Business"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/business\/small-business\/",
+                "title": "Pequeñas empresas"
+              },
+            
+          },
+        
+          "\/skills\/awareness\/perception": {
+            
+              "en": {
+                "url": "\/skills\/awareness\/perception\/",
+                "title": "Perception"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/awareness\/perception\/",
+                "title": "Percepción"
+              },
+            
+          },
+        
+          "\/skills\/navigation\/trailblazing": {
+            
+              "en": {
+                "url": "\/skills\/navigation\/trailblazing\/",
+                "title": "Trailblazing"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/navigation\/trailblazing\/",
+                "title": "Pionero"
+              },
+            
+          },
+        
+          "\/skills\/telekinesis\/pyrokinetics": {
+            
+              "en": {
+                "url": "\/skills\/telekinesis\/pyrokinetics\/",
+                "title": "Pyrokinetics"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/telekinesis\/pyrokinetics\/",
+                "title": "Pirocinética"
+              },
+            
+          },
+        
+          "\/skills\/investigate\/track": {
+            
+              "en": {
+                "url": "\/skills\/investigate\/track\/",
+                "title": "Track"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/investigate\/track\/",
+                "title": "Pista"
+              },
+            
+          },
+        
+          "\/skills\/modern-ranged-weapons\/pistol": {
+            
+              "en": {
+                "url": "\/skills\/modern-ranged-weapons\/pistol\/",
+                "title": "Pistol"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/modern-ranged-weapons\/pistol\/",
+                "title": "Pistola"
+              },
+            
+          },
+        
+          "\/skills\/physical-science\/planetology": {
+            
+              "en": {
+                "url": "\/skills\/physical-science\/planetology\/",
+                "title": "Planetology"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/physical-science\/planetology\/",
+                "title": "Planetología"
+              },
+            
+          },
+        
+          "\/skills\/esp\/postcognition-precognition": {
+            
+              "en": {
+                "url": "\/skills\/esp\/postcognition-precognition\/",
+                "title": "Postcognition \/ Precognition"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/esp\/postcognition-precognition\/",
+                "title": "Postcognición \/ Precognición"
+              },
+            
+          },
+        
+          "\/skills\/manipulation\/prestidigitation": {
+            
+              "en": {
+                "url": "\/skills\/manipulation\/prestidigitation\/",
+                "title": "Prestidigitation"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/manipulation\/prestidigitation\/",
+                "title": "Prestidigitación"
+              },
+            
+          },
+        
+          "\/skills\/culture\/first-encounter": {
+            
+              "en": {
+                "url": "\/skills\/culture\/first-encounter\/",
+                "title": "First Encounter"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/culture\/first-encounter\/",
+                "title": "Primer encuentro"
+              },
+            
+          },
+        
+          "\/skills\/knowledge\/first-aid": {
+            
+              "en": {
+                "url": "\/skills\/knowledge\/first-aid\/",
+                "title": "First Aid"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/knowledge\/first-aid\/",
+                "title": "Primeros auxilios"
+              },
+            
+          },
+        
+          "\/skills\/law\/law-enforcement-procedures": {
+            
+              "en": {
+                "url": "\/skills\/law\/law-enforcement-procedures\/",
+                "title": "Law Enforcement Procedures"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/law\/law-enforcement-procedures\/",
+                "title": "Procedimientos de aplicación de la ley"
+              },
+            
+          },
+        
+          "\/skills\/law\/court-procedures": {
+            
+              "en": {
+                "url": "\/skills\/law\/court-procedures\/",
+                "title": "Court Procedures"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/law\/court-procedures\/",
+                "title": "Procedimientos judiciales"
+              },
+            
+          },
+        
+          "\/skills\/computer-science\/programming": {
+            
+              "en": {
+                "url": "\/skills\/computer-science\/programming\/",
+                "title": "Programming"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/computer-science\/programming\/",
+                "title": "Programación"
+              },
+            
+          },
+        
+          "\/skills\/security\/protection-protocols": {
+            
+              "en": {
+                "url": "\/skills\/security\/protection-protocols\/",
+                "title": "Protection Protocols"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/security\/protection-protocols\/",
+                "title": "Protocolos de protección"
+              },
+            
+          },
+        
+          "\/skills\/medical-science\/psychology": {
+            
+              "en": {
+                "url": "\/skills\/medical-science\/psychology\/",
+                "title": "Psychology"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/medical-science\/psychology\/",
+                "title": "Psicología"
+              },
+            
+          },
+        
+          "\/skills\/esp\/psychometry": {
+            
+              "en": {
+                "url": "\/skills\/esp\/psychometry\/",
+                "title": "Psychometry"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/esp\/psychometry\/",
+                "title": "Psicometría"
+              },
+            
+          },
+        
+          "\/skills\/telekinesis\/psychokinetics": {
+            
+              "en": {
+                "url": "\/skills\/telekinesis\/psychokinetics\/",
+                "title": "Psychokinetics"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/telekinesis\/psychokinetics\/",
+                "title": "Psicoquinética"
+              },
+            
+          },
+        
+          "\/skills\/interaction\/taunt": {
+            
+              "en": {
+                "url": "\/skills\/interaction\/taunt\/",
+                "title": "Taunt"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/interaction\/taunt\/",
+                "title": "Pulla"
+              },
+            
+          },
+        
+          "\/skills\/physical-science\/chemistry": {
+            
+              "en": {
+                "url": "\/skills\/physical-science\/chemistry\/",
+                "title": "Chemistry"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/physical-science\/chemistry\/",
+                "title": "Química"
+              },
+            
+          },
+        
+          "\/skills\/biokinesis\/rejuvenate": {
+            
+              "en": {
+                "url": "\/skills\/biokinesis\/rejuvenate\/",
+                "title": "Rejuvenate"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/biokinesis\/rejuvenate\/",
+                "title": "Rejuvenecer"
+              },
+            
+          },
+        
+          "\/skills\/technical-science\/repair": {
+            
+              "en": {
+                "url": "\/skills\/technical-science\/repair\/",
+                "title": "Repair"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/technical-science\/repair\/",
+                "title": "Reparar"
+              },
+            
+          },
+        
+          "\/skills\/stamina\/endurance": {
+            
+              "en": {
+                "url": "\/skills\/stamina\/endurance\/",
+                "title": "Endurance"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/stamina\/endurance\/",
+                "title": "Resistencia"
+              },
+            
+          },
+        
+          "\/skills\/stamina\/resist-pain": {
+            
+              "en": {
+                "url": "\/skills\/stamina\/resist-pain\/",
+                "title": "Resist Pain"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/stamina\/resist-pain\/",
+                "title": "Resistir el dolor"
+              },
+            
+          },
+        
+          "\/skills\/resolve-con\/physical-resolve": {
+            
+              "en": {
+                "url": "\/skills\/resolve-con\/physical-resolve\/",
+                "title": "Physical Resolve"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/resolve-con\/physical-resolve\/",
+                "title": "Resolución física"
+              },
+            
+          },
+        
+          "\/skills\/resolve-wil\/physical-resolve": {
+            
+              "en": {
+                "url": "\/skills\/resolve-wil\/physical-resolve\/",
+                "title": "Physical Resolve"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/resolve-wil\/physical-resolve\/",
+                "title": "Resolución física"
+              },
+            
+          },
+        
+          "\/skills\/resolve-con\/mental-resolve": {
+            
+              "en": {
+                "url": "\/skills\/resolve-con\/mental-resolve\/",
+                "title": "Mental Resolve"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/resolve-con\/mental-resolve\/",
+                "title": "Resolución mental"
+              },
+            
+          },
+        
+          "\/skills\/resolve-wil\/mental-resolve": {
+            
+              "en": {
+                "url": "\/skills\/resolve-wil\/mental-resolve\/",
+                "title": "Mental Resolve"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/resolve-wil\/mental-resolve\/",
+                "title": "Resolución mental"
+              },
+            
+          },
+        
+          "\/skills\/modern-ranged-weapons\/rifle": {
+            
+              "en": {
+                "url": "\/skills\/modern-ranged-weapons\/rifle\/",
+                "title": "Rifle"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/modern-ranged-weapons\/rifle\/",
+                "title": "Rifle"
+              },
+            
+          },
+        
+          "\/skills\/athletics\/jump": {
+            
+              "en": {
+                "url": "\/skills\/athletics\/jump\/",
+                "title": "Jump"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/athletics\/jump\/",
+                "title": "Saltar"
+              },
+            
+          },
+        
+          "\/skills\/biokinesis\/heal": {
+            
+              "en": {
+                "url": "\/skills\/biokinesis\/heal\/",
+                "title": "Heal"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/biokinesis\/heal\/",
+                "title": "Sanar"
+              },
+            
+          },
+        
+          "\/skills\/computer-science\/hacking": {
+            
+              "en": {
+                "url": "\/skills\/computer-science\/hacking\/",
+                "title": "Hacking"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/computer-science\/hacking\/",
+                "title": "Seco"
+              },
+            
+          },
+        
+          "\/skills\/interaction\/seduce": {
+            
+              "en": {
+                "url": "\/skills\/interaction\/seduce\/",
+                "title": "Seduce"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/interaction\/seduce\/",
+                "title": "Seducir"
+              },
+            
+          },
+        
+          "\/skills\/esp\/sensitivity": {
+            
+              "en": {
+                "url": "\/skills\/esp\/sensitivity\/",
+                "title": "Sensitivity"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/esp\/sensitivity\/",
+                "title": "Sensibilidad"
+              },
+            
+          },
+        
+          "\/skills\/system-operation\/sensors": {
+            
+              "en": {
+                "url": "\/skills\/system-operation\/sensors\/",
+                "title": "Sensors"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/system-operation\/sensors\/",
+                "title": "Sensores"
+              },
+            
+          },
+        
+          "\/skills\/covert-ops\/stealth": {
+            
+              "en": {
+                "url": "\/skills\/covert-ops\/stealth\/",
+                "title": "Stealth"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/covert-ops\/stealth\/",
+                "title": "Sigilo"
+              },
+            
+          },
+        
+          "\/skills\/deception\/bribe": {
+            
+              "en": {
+                "url": "\/skills\/deception\/bribe\/",
+                "title": "Bribe"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/deception\/bribe\/",
+                "title": "Soborno"
+              },
+            
+          },
+        
+          "\/skills\/modern-ranged-weapons\/smg": {
+            
+              "en": {
+                "url": "\/skills\/modern-ranged-weapons\/smg\/",
+                "title": "SMG"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/modern-ranged-weapons\/smg\/",
+                "title": "subfusil"
+              },
+            
+          },
+        
+          "\/skills\/telepathy\/suggest": {
+            
+              "en": {
+                "url": "\/skills\/telepathy\/suggest\/",
+                "title": "Suggest"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/telepathy\/suggest\/",
+                "title": "Sugerir"
+              },
+            
+          },
+        
+          "\/skills\/tactics\/infantry-tactics": {
+            
+              "en": {
+                "url": "\/skills\/tactics\/infantry-tactics\/",
+                "title": "Infantry Tactics"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/tactics\/infantry-tactics\/",
+                "title": "Tácticas de infantería"
+              },
+            
+          },
+        
+          "\/skills\/tactics\/vehicle-tactics": {
+            
+              "en": {
+                "url": "\/skills\/tactics\/vehicle-tactics\/",
+                "title": "Vehicle Tactics"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/tactics\/vehicle-tactics\/",
+                "title": "Tácticas de vehículos"
+              },
+            
+          },
+        
+          "\/skills\/tactics\/space-tactics": {
+            
+              "en": {
+                "url": "\/skills\/tactics\/space-tactics\/",
+                "title": "Space Tactics"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/tactics\/space-tactics\/",
+                "title": "Tácticas espaciales"
+              },
+            
+          },
+        
+          "\/tags": {
+            
+              "en": {
+                "url": "\/tags\/",
+                "title": "Tags"
+              },
+            
+              "es": {
+                "url": "\/es\/tags\/",
+                "title": "Tags"
+              },
+            
+          },
+        
+          "\/skills\/acrobatics\/daredevil": {
+            
+              "en": {
+                "url": "\/skills\/acrobatics\/daredevil\/",
+                "title": "Daredevil"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/acrobatics\/daredevil\/",
+                "title": "Temerario"
+              },
+            
+          },
+        
+          "\/skills\/athletics\/throw": {
+            
+              "en": {
+                "url": "\/skills\/athletics\/throw\/",
+                "title": "Throw"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/athletics\/throw\/",
+                "title": "Tirar"
+              },
+            
+          },
+        
+          "\/skills\/biokinesis\/morph": {
+            
+              "en": {
+                "url": "\/skills\/biokinesis\/morph\/",
+                "title": "Morph"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/biokinesis\/morph\/",
+                "title": "transformar"
+              },
+            
+          },
+        
+          "\/skills\/medical-science\/treatment": {
+            
+              "en": {
+                "url": "\/skills\/medical-science\/treatment\/",
+                "title": "Treatment"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/medical-science\/treatment\/",
+                "title": "Tratamiento"
+              },
+            
+          },
+        
+          "\/skills\/athletics\/climb": {
+            
+              "en": {
+                "url": "\/skills\/athletics\/climb\/",
+                "title": "Climb"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/athletics\/climb\/",
+                "title": "Trepar"
+              },
+            
+          },
+        
+          "\/skills\/vehicle-operation\/water-vehicle": {
+            
+              "en": {
+                "url": "\/skills\/vehicle-operation\/water-vehicle\/",
+                "title": "Water Vehicle"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/vehicle-operation\/water-vehicle\/",
+                "title": "Vehículo acuático"
+              },
+            
+          },
+        
+          "\/skills\/vehicle-operation\/air-vehicle": {
+            
+              "en": {
+                "url": "\/skills\/vehicle-operation\/air-vehicle\/",
+                "title": "Air Vehicle"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/vehicle-operation\/air-vehicle\/",
+                "title": "Vehículo aéreo"
+              },
+            
+          },
+        
+          "\/skills\/vehicle-operation\/space-vehicle": {
+            
+              "en": {
+                "url": "\/skills\/vehicle-operation\/space-vehicle\/",
+                "title": "Space Vehicle"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/vehicle-operation\/space-vehicle\/",
+                "title": "Vehículo espacial"
+              },
+            
+          },
+        
+          "\/skills\/vehicle-operation\/sea-vehicle": {
+            
+              "en": {
+                "url": "\/skills\/vehicle-operation\/sea-vehicle\/",
+                "title": "Sea Vehicle"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/vehicle-operation\/sea-vehicle\/",
+                "title": "Vehículo marítimo"
+              },
+            
+          },
+        
+          "\/skills\/vehicle-operation\/land-vehicle": {
+            
+              "en": {
+                "url": "\/skills\/vehicle-operation\/land-vehicle\/",
+                "title": "Land Vehicle"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/vehicle-operation\/land-vehicle\/",
+                "title": "Vehículo terrestre"
+              },
+            
+          },
+        
+          "\/skills\/life-science\/xenology": {
+            
+              "en": {
+                "url": "\/skills\/life-science\/xenology\/",
+                "title": "Xenology"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/life-science\/xenology\/",
+                "title": "xenología"
+              },
+            
+          },
+        
+          "\/skills\/medical-science\/xenomedicine": {
+            
+              "en": {
+                "url": "\/skills\/medical-science\/xenomedicine\/",
+                "title": "Xenomedicine [Specific]"
+              },
+            
+              "es": {
+                "url": "\/es\/skills\/medical-science\/xenomedicine\/",
+                "title": "Xenomedicina [Específica]"
+              },
+            
+          },
+        
+      };
+
+      const fragment = document.createDocumentFragment();
       const reversedHistory = [...history].reverse();
 
       reversedHistory.forEach((page, index) => {
@@ -167,14 +3580,23 @@
         }
 
         const li = document.createElement('li');
-        if (page.url === currentUrl && index === 0) {
-          li.className = "current-page f4 fw6 neon-text truncate";
-          li.textContent = page.title;
+        const pageData = translationsMap[page.id];
+
+        let targetUrl = "#"; 
+        let targetTitle = page.title; 
+
+        if (pageData && pageData[currentLang]) {
+          targetUrl = pageData[currentLang].url;
+          targetTitle = pageData[currentLang].title;
+        }
+
+        if (targetUrl === currentUrl && index === 0) {
+          li.className = "current-page";
+          li.textContent = targetTitle;
         } else {
           const a = document.createElement('a');
-          a.href = page.url;
-          a.textContent = page.title;
-          a.className = "truncate";
+          a.href = targetUrl;
+          a.textContent = targetTitle;
           li.appendChild(a);
         }
         fragment.appendChild(li);
@@ -186,6 +3608,7 @@
     }
   })();
 </script>
+
     </div>
     <section class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy nested-links mid-gray">
       <h1 class="f1 athelas">Creación de personajes</h1><p>Crear un personaje en el juego AAA es un proceso paso a paso que define las habilidades físicas y mentales de tu personaje, su trasfondo y su papel en la galaxia.</p>

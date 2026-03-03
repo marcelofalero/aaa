@@ -73,7 +73,8 @@ Command cannot be used on targets who are Combative.
       const currentPage = {
         title: "Dominio",
         url: "\/es\/skills\/leadership\/command\/",
-        translationKey: "\/skills\/leadership\/command"
+        translationKey: "\/skills\/leadership\/command",
+        translations: "[{\"Date\":\"0001-01-01T00:00:00Z\",\"Lastmod\":\"0001-01-01T00:00:00Z\",\"PublishDate\":\"0001-01-01T00:00:00Z\",\"ExpiryDate\":\"0001-01-01T00:00:00Z\",\"Aliases\":[],\"BundleType\":\"\",\"Description\":\"\",\"Draft\":false,\"IsHome\":false,\"Keywords\":null,\"Kind\":\"page\",\"Layout\":\"\",\"LinkTitle\":\"Command\",\"IsNode\":false,\"IsPage\":true,\"Path\":\"/skills/leadership/command\",\"Slug\":\"\",\"Lang\":\"en\",\"IsSection\":false,\"Section\":\"skills\",\"Sitemap\":{\"ChangeFreq\":\"\",\"Priority\":-1,\"Filename\":\"sitemap.xml\",\"Disable\":false},\"Type\":\"skills\",\"Weight\":0},{\"Date\":\"0001-01-01T00:00:00Z\",\"Lastmod\":\"0001-01-01T00:00:00Z\",\"PublishDate\":\"0001-01-01T00:00:00Z\",\"ExpiryDate\":\"0001-01-01T00:00:00Z\",\"Aliases\":[],\"BundleType\":\"\",\"Description\":\"\",\"Draft\":false,\"IsHome\":false,\"Keywords\":null,\"Kind\":\"page\",\"Layout\":\"\",\"LinkTitle\":\"Dominio\",\"IsNode\":false,\"IsPage\":true,\"Path\":\"/skills/leadership/command\",\"Slug\":\"\",\"Lang\":\"es\",\"IsSection\":false,\"Section\":\"skills\",\"Sitemap\":{\"ChangeFreq\":\"\",\"Priority\":-1,\"Filename\":\"sitemap.xml\",\"Disable\":false},\"Type\":\"skills\",\"Weight\":0}]"
       };
 
       let history = [];
@@ -104,6 +105,7 @@ Command cannot be used on targets who are Combative.
 </script>
 
 <script src="/js/table-toggle.js"></script>
+
 
   
   
@@ -195,6 +197,7 @@ Results Description Ordinary Success indicates as many as two followers receive 
         return;
       }
 
+      const currentLang = "es";
       const currentUrl = "\/es\/skills\/leadership\/command\/";
       const fragment = document.createDocumentFragment();
 
@@ -210,12 +213,22 @@ Results Description Ordinary Success indicates as many as two followers receive 
         }
 
         const li = document.createElement('li');
-        if (page.url === currentUrl && index === 0) {
+        let targetUrl = page.url;
+
+        
+        if (page.translations) {
+          const translation = page.translations.find(t => t.Lang === currentLang);
+          if (translation) {
+            targetUrl = translation.Permalink;
+          }
+        }
+
+        if (targetUrl === currentUrl && index === 0) {
           li.className = "current-page f4 fw6 neon-text truncate";
           li.textContent = page.title;
         } else {
           const a = document.createElement('a');
-          a.href = page.url;
+          a.href = targetUrl;
           a.textContent = page.title;
           a.className = "truncate";
           li.appendChild(a);
@@ -229,6 +242,7 @@ Results Description Ordinary Success indicates as many as two followers receive 
     }
   })();
 </script>
+
     <h1 class="f1 athelas mt3 mb1">
       Dominio (PER)
     </h1>

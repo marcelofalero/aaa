@@ -12705,7 +12705,8 @@ PL 8: Energy Age
       const currentPage = {
         title: "Armas",
         url: "\/es\/equipment\/weapons\/",
-        translationKey: "\/equipment\/weapons"
+        translationKey: "\/equipment\/weapons",
+        translations: "[{\"Date\":\"0001-01-01T00:00:00Z\",\"Lastmod\":\"0001-01-01T00:00:00Z\",\"PublishDate\":\"0001-01-01T00:00:00Z\",\"ExpiryDate\":\"0001-01-01T00:00:00Z\",\"Aliases\":[],\"BundleType\":\"\",\"Description\":\"\",\"Draft\":false,\"IsHome\":false,\"Keywords\":null,\"Kind\":\"page\",\"Layout\":\"\",\"LinkTitle\":\"Weapons\",\"IsNode\":false,\"IsPage\":true,\"Path\":\"/equipment/weapons\",\"Slug\":\"\",\"Lang\":\"en\",\"IsSection\":false,\"Section\":\"equipment\",\"Sitemap\":{\"ChangeFreq\":\"\",\"Priority\":-1,\"Filename\":\"sitemap.xml\",\"Disable\":false},\"Type\":\"equipment\",\"Weight\":2},{\"Date\":\"0001-01-01T00:00:00Z\",\"Lastmod\":\"0001-01-01T00:00:00Z\",\"PublishDate\":\"0001-01-01T00:00:00Z\",\"ExpiryDate\":\"0001-01-01T00:00:00Z\",\"Aliases\":[],\"BundleType\":\"\",\"Description\":\"\",\"Draft\":false,\"IsHome\":false,\"Keywords\":null,\"Kind\":\"page\",\"Layout\":\"\",\"LinkTitle\":\"Armas\",\"IsNode\":false,\"IsPage\":true,\"Path\":\"/equipment/weapons\",\"Slug\":\"\",\"Lang\":\"es\",\"IsSection\":false,\"Section\":\"equipment\",\"Sitemap\":{\"ChangeFreq\":\"\",\"Priority\":-1,\"Filename\":\"sitemap.xml\",\"Disable\":false},\"Type\":\"equipment\",\"Weight\":2}]"
       };
 
       let history = [];
@@ -12736,6 +12737,7 @@ PL 8: Energy Age
 </script>
 
 <script src="/js/table-toggle.js"></script>
+
 
   
   
@@ -12873,6 +12875,7 @@ All targets within 4 meters of the blast suffer Amazing damage (d4&#43;1m); targ
         return;
       }
 
+      const currentLang = "es";
       const currentUrl = "\/es\/equipment\/weapons\/";
       const fragment = document.createDocumentFragment();
 
@@ -12888,12 +12891,22 @@ All targets within 4 meters of the blast suffer Amazing damage (d4&#43;1m); targ
         }
 
         const li = document.createElement('li');
-        if (page.url === currentUrl && index === 0) {
+        let targetUrl = page.url;
+
+        
+        if (page.translations) {
+          const translation = page.translations.find(t => t.Lang === currentLang);
+          if (translation) {
+            targetUrl = translation.Permalink;
+          }
+        }
+
+        if (targetUrl === currentUrl && index === 0) {
           li.className = "current-page f4 fw6 neon-text truncate";
           li.textContent = page.title;
         } else {
           const a = document.createElement('a');
-          a.href = page.url;
+          a.href = targetUrl;
           a.textContent = page.title;
           a.className = "truncate";
           li.appendChild(a);
@@ -12907,6 +12920,7 @@ All targets within 4 meters of the blast suffer Amazing damage (d4&#43;1m); targ
     }
   })();
 </script>
+
       
 
       

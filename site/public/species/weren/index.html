@@ -32,7 +32,8 @@
       const currentPage = {
         title: "Weren",
         url: "\/species\/weren\/",
-        translationKey: "\/species\/weren"
+        translationKey: "\/species\/weren",
+        translations: "[{\"Date\":\"0001-01-01T00:00:00Z\",\"Lastmod\":\"0001-01-01T00:00:00Z\",\"PublishDate\":\"0001-01-01T00:00:00Z\",\"ExpiryDate\":\"0001-01-01T00:00:00Z\",\"Aliases\":[],\"BundleType\":\"\",\"Description\":\"Large, fur-covered philosopher-warriors with a fierce code of honor.\",\"Draft\":false,\"IsHome\":false,\"Keywords\":null,\"Kind\":\"page\",\"Layout\":\"\",\"LinkTitle\":\"Weren\",\"IsNode\":false,\"IsPage\":true,\"Path\":\"/species/weren\",\"Slug\":\"\",\"Lang\":\"en\",\"IsSection\":false,\"Section\":\"species\",\"Sitemap\":{\"ChangeFreq\":\"\",\"Priority\":-1,\"Filename\":\"sitemap.xml\",\"Disable\":false},\"Type\":\"species\",\"Weight\":6},{\"Date\":\"0001-01-01T00:00:00Z\",\"Lastmod\":\"0001-01-01T00:00:00Z\",\"PublishDate\":\"0001-01-01T00:00:00Z\",\"ExpiryDate\":\"0001-01-01T00:00:00Z\",\"Aliases\":[],\"BundleType\":\"\",\"Description\":\"Grandes filósofos-guerreros cubiertos de piel con un feroz código de honor.\",\"Draft\":false,\"IsHome\":false,\"Keywords\":null,\"Kind\":\"page\",\"Layout\":\"\",\"LinkTitle\":\"Weren\",\"IsNode\":false,\"IsPage\":true,\"Path\":\"/species/weren\",\"Slug\":\"\",\"Lang\":\"es\",\"IsSection\":false,\"Section\":\"species\",\"Sitemap\":{\"ChangeFreq\":\"\",\"Priority\":-1,\"Filename\":\"sitemap.xml\",\"Disable\":false},\"Type\":\"species\",\"Weight\":6}]"
       };
 
       let history = [];
@@ -64,6 +65,7 @@
 
 <script src="/js/table-toggle.js"></script>
 
+
   
   
 
@@ -87,7 +89,7 @@
 
   <meta itemprop="name" content="Weren">
   <meta itemprop="description" content="Large, fur-covered philosopher-warriors with a fierce code of honor.">
-  <meta itemprop="wordCount" content="283">
+  <meta itemprop="wordCount" content="295">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Weren">
   <meta name="twitter:description" content="Large, fur-covered philosopher-warriors with a fierce code of honor.">
@@ -155,6 +157,7 @@
         return;
       }
 
+      const currentLang = "en";
       const currentUrl = "\/species\/weren\/";
       const fragment = document.createDocumentFragment();
 
@@ -170,12 +173,22 @@
         }
 
         const li = document.createElement('li');
-        if (page.url === currentUrl && index === 0) {
+        let targetUrl = page.url;
+
+        
+        if (page.translations) {
+          const translation = page.translations.find(t => t.Lang === currentLang);
+          if (translation) {
+            targetUrl = translation.Permalink;
+          }
+        }
+
+        if (targetUrl === currentUrl && index === 0) {
           li.className = "current-page f4 fw6 neon-text truncate";
           li.textContent = page.title;
         } else {
           const a = document.createElement('a');
-          a.href = page.url;
+          a.href = targetUrl;
           a.textContent = page.title;
           a.className = "truncate";
           li.appendChild(a);
@@ -189,6 +202,7 @@
     }
   })();
 </script>
+
       
       
     </header>
@@ -200,7 +214,7 @@
 <ul>
 <li><strong>Natural AC:</strong> Thick fur and tough hide provide protection (<strong>d8+1/d6+1/d6</strong>). If a weren wears Good quality armor, his natural armor is also considered Good quality.</li>
 <li><strong>Natural Weapon:</strong> Retractable claws (Unarmed Attack-brawl/power martial arts) do d4w/d4+2w/d4m damage.</li>
-<li><strong>Camouflage:</strong> Fur shimmers to match surroundings. Ranged attacks against a weren at a distance receive a <strong>+1 step penalty</strong>. This ability does not function if the weren is wearing clothing or armor that covers more than 15% of their body.</li>
+<li><strong>Camouflage:</strong> Fur shimmers to match surroundings. Ranged attacks against a weren at a distance receive a <strong>+1 step penalty</strong>, and the weren receives a <strong>-1 step bonus</strong> to <a href="/skills/covert-ops/stealth/">Covert Ops-stealth</a> checks. This ability does not function if the weren is wearing clothing or armor that covers more than 15% of their body.</li>
 <li><strong>Resilient:</strong> Receive a <strong>-1 step bonus</strong> on <strong>stamina-resist pain</strong> skill checks.</li>
 <li><strong>Intimidating:</strong> Receive a <strong>-2 step bonus</strong> on <strong>interaction-intimidate</strong> skill checks when physically threatening someone.</li>
 <li><strong>Primitive Culture:</strong> Suffer a <strong>+2 step penalty</strong> with technology from Progress Level 4 or higher (can be reduced with skill points).</li>

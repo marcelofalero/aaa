@@ -36,7 +36,8 @@ The Gamemaster may allow a player to call for an intuition skill check. Any succ
       const currentPage = {
         title: "Intuition",
         url: "\/skills\/awareness\/intuition\/",
-        translationKey: "\/skills\/awareness\/intuition"
+        translationKey: "\/skills\/awareness\/intuition",
+        translations: "[{\"Date\":\"0001-01-01T00:00:00Z\",\"Lastmod\":\"0001-01-01T00:00:00Z\",\"PublishDate\":\"0001-01-01T00:00:00Z\",\"ExpiryDate\":\"0001-01-01T00:00:00Z\",\"Aliases\":[],\"BundleType\":\"\",\"Description\":\"\",\"Draft\":false,\"IsHome\":false,\"Keywords\":null,\"Kind\":\"page\",\"Layout\":\"\",\"LinkTitle\":\"Intuition\",\"IsNode\":false,\"IsPage\":true,\"Path\":\"/skills/awareness/intuition\",\"Slug\":\"\",\"Lang\":\"en\",\"IsSection\":false,\"Section\":\"skills\",\"Sitemap\":{\"ChangeFreq\":\"\",\"Priority\":-1,\"Filename\":\"sitemap.xml\",\"Disable\":false},\"Type\":\"skills\",\"Weight\":0},{\"Date\":\"0001-01-01T00:00:00Z\",\"Lastmod\":\"0001-01-01T00:00:00Z\",\"PublishDate\":\"0001-01-01T00:00:00Z\",\"ExpiryDate\":\"0001-01-01T00:00:00Z\",\"Aliases\":[],\"BundleType\":\"\",\"Description\":\"\",\"Draft\":false,\"IsHome\":false,\"Keywords\":null,\"Kind\":\"page\",\"Layout\":\"\",\"LinkTitle\":\"Intuición\",\"IsNode\":false,\"IsPage\":true,\"Path\":\"/skills/awareness/intuition\",\"Slug\":\"\",\"Lang\":\"es\",\"IsSection\":false,\"Section\":\"skills\",\"Sitemap\":{\"ChangeFreq\":\"\",\"Priority\":-1,\"Filename\":\"sitemap.xml\",\"Disable\":false},\"Type\":\"skills\",\"Weight\":0}]"
       };
 
       let history = [];
@@ -67,6 +68,7 @@ The Gamemaster may allow a player to call for an intuition skill check. Any succ
 </script>
 
 <script src="/js/table-toggle.js"></script>
+
 
   
   
@@ -158,6 +160,7 @@ Intuitive “Best Guess” The Gamemaster may allow a player to call for an intu
         return;
       }
 
+      const currentLang = "en";
       const currentUrl = "\/skills\/awareness\/intuition\/";
       const fragment = document.createDocumentFragment();
 
@@ -173,12 +176,22 @@ Intuitive “Best Guess” The Gamemaster may allow a player to call for an intu
         }
 
         const li = document.createElement('li');
-        if (page.url === currentUrl && index === 0) {
+        let targetUrl = page.url;
+
+        
+        if (page.translations) {
+          const translation = page.translations.find(t => t.Lang === currentLang);
+          if (translation) {
+            targetUrl = translation.Permalink;
+          }
+        }
+
+        if (targetUrl === currentUrl && index === 0) {
           li.className = "current-page f4 fw6 neon-text truncate";
           li.textContent = page.title;
         } else {
           const a = document.createElement('a');
-          a.href = page.url;
+          a.href = targetUrl;
           a.textContent = page.title;
           a.className = "truncate";
           li.appendChild(a);
@@ -192,6 +205,7 @@ Intuitive “Best Guess” The Gamemaster may allow a player to call for an intu
     }
   })();
 </script>
+
     <h1 class="f1 athelas mt3 mb1">
       Intuition (WIL)
     </h1>
