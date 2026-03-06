@@ -19,6 +19,9 @@ Combat Specialists (Combat Specs) are the primary warriors of the AAA universe. 
 
 The following skills are central to the Combat Spec profession and are easier for these characters to master.
 
+### Core Combat Skills
+- **[Melee Combat](/skills/melee-combat/)**
+
 ### Primary Combat Skills
 - **Armor Operation:** Combat armor, Powered armor
 - **Heavy Weapons:** Direct fire, Indirect fire
