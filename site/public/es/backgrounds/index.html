@@ -32,7 +32,8 @@
       const currentPage = {
         title: "Fondos",
         url: "\/es\/backgrounds\/",
-        translationKey: "\/backgrounds"
+        translationKey: "\/backgrounds",
+        translations: "[{\"Date\":\"0001-01-01T00:00:00Z\",\"Lastmod\":\"0001-01-01T00:00:00Z\",\"PublishDate\":\"0001-01-01T00:00:00Z\",\"ExpiryDate\":\"0001-01-01T00:00:00Z\",\"Aliases\":[],\"BundleType\":\"branch\",\"Description\":\"Your life before adventuring, providing skills and unique abilities.\",\"Draft\":false,\"IsHome\":false,\"Keywords\":null,\"Kind\":\"section\",\"Layout\":\"\",\"LinkTitle\":\"Backgrounds\",\"IsNode\":true,\"IsPage\":false,\"Path\":\"/backgrounds\",\"Slug\":\"\",\"Lang\":\"en\",\"IsSection\":true,\"Section\":\"backgrounds\",\"Sitemap\":{\"ChangeFreq\":\"\",\"Priority\":-1,\"Filename\":\"sitemap.xml\",\"Disable\":false},\"Type\":\"backgrounds\",\"Weight\":5},{\"Date\":\"0001-01-01T00:00:00Z\",\"Lastmod\":\"0001-01-01T00:00:00Z\",\"PublishDate\":\"0001-01-01T00:00:00Z\",\"ExpiryDate\":\"0001-01-01T00:00:00Z\",\"Aliases\":[],\"BundleType\":\"branch\",\"Description\":\"Tu vida antes de la aventura, aportando habilidades y habilidades únicas.\",\"Draft\":false,\"IsHome\":false,\"Keywords\":null,\"Kind\":\"section\",\"Layout\":\"\",\"LinkTitle\":\"Fondos\",\"IsNode\":true,\"IsPage\":false,\"Path\":\"/backgrounds\",\"Slug\":\"\",\"Lang\":\"es\",\"IsSection\":true,\"Section\":\"backgrounds\",\"Sitemap\":{\"ChangeFreq\":\"\",\"Priority\":-1,\"Filename\":\"sitemap.xml\",\"Disable\":false},\"Type\":\"backgrounds\",\"Weight\":5}]"
       };
 
       let history = [];
@@ -63,6 +64,7 @@
 </script>
 
 <script src="/js/table-toggle.js"></script>
+
 
   
   
@@ -152,6 +154,7 @@
         return;
       }
 
+      const currentLang = "es";
       const currentUrl = "\/es\/backgrounds\/";
       const fragment = document.createDocumentFragment();
 
@@ -167,12 +170,22 @@
         }
 
         const li = document.createElement('li');
-        if (page.url === currentUrl && index === 0) {
+        let targetUrl = page.url;
+
+        
+        if (page.translations) {
+          const translation = page.translations.find(t => t.Lang === currentLang);
+          if (translation) {
+            targetUrl = translation.Permalink;
+          }
+        }
+
+        if (targetUrl === currentUrl && index === 0) {
           li.className = "current-page f4 fw6 neon-text truncate";
           li.textContent = page.title;
         } else {
           const a = document.createElement('a');
-          a.href = page.url;
+          a.href = targetUrl;
           a.textContent = page.title;
           a.className = "truncate";
           li.appendChild(a);
@@ -186,6 +199,7 @@
     }
   })();
 </script>
+
     </div>
     <section class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy nested-links mid-gray">
       <h1 class="f1 athelas">Fondos</h1><h1 id="backgrounds-in-aaa">Backgrounds in AAA</h1>

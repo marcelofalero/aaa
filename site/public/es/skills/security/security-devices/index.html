@@ -33,7 +33,8 @@ One check can be made per round (or per minute in non-combat situations), and th
       const currentPage = {
         title: "Dispositivos de seguridad",
         url: "\/es\/skills\/security\/security-devices\/",
-        translationKey: "\/skills\/security\/security-devices"
+        translationKey: "\/skills\/security\/security-devices",
+        translations: "[{\"Date\":\"0001-01-01T00:00:00Z\",\"Lastmod\":\"0001-01-01T00:00:00Z\",\"PublishDate\":\"0001-01-01T00:00:00Z\",\"ExpiryDate\":\"0001-01-01T00:00:00Z\",\"Aliases\":[],\"BundleType\":\"\",\"Description\":\"\",\"Draft\":false,\"IsHome\":false,\"Keywords\":null,\"Kind\":\"page\",\"Layout\":\"\",\"LinkTitle\":\"Security Devices\",\"IsNode\":false,\"IsPage\":true,\"Path\":\"/skills/security/security-devices\",\"Slug\":\"\",\"Lang\":\"en\",\"IsSection\":false,\"Section\":\"skills\",\"Sitemap\":{\"ChangeFreq\":\"\",\"Priority\":-1,\"Filename\":\"sitemap.xml\",\"Disable\":false},\"Type\":\"skills\",\"Weight\":0},{\"Date\":\"0001-01-01T00:00:00Z\",\"Lastmod\":\"0001-01-01T00:00:00Z\",\"PublishDate\":\"0001-01-01T00:00:00Z\",\"ExpiryDate\":\"0001-01-01T00:00:00Z\",\"Aliases\":[],\"BundleType\":\"\",\"Description\":\"\",\"Draft\":false,\"IsHome\":false,\"Keywords\":null,\"Kind\":\"page\",\"Layout\":\"\",\"LinkTitle\":\"Dispositivos de seguridad\",\"IsNode\":false,\"IsPage\":true,\"Path\":\"/skills/security/security-devices\",\"Slug\":\"\",\"Lang\":\"es\",\"IsSection\":false,\"Section\":\"skills\",\"Sitemap\":{\"ChangeFreq\":\"\",\"Priority\":-1,\"Filename\":\"sitemap.xml\",\"Disable\":false},\"Type\":\"skills\",\"Weight\":0}]"
       };
 
       let history = [];
@@ -64,6 +65,7 @@ One check can be made per round (or per minute in non-combat situations), and th
 </script>
 
 <script src="/js/table-toggle.js"></script>
+
 
   
   
@@ -152,6 +154,7 @@ One check can be made per round (or per minute in non-combat situations), and th
         return;
       }
 
+      const currentLang = "es";
       const currentUrl = "\/es\/skills\/security\/security-devices\/";
       const fragment = document.createDocumentFragment();
 
@@ -167,12 +170,22 @@ One check can be made per round (or per minute in non-combat situations), and th
         }
 
         const li = document.createElement('li');
-        if (page.url === currentUrl && index === 0) {
+        let targetUrl = page.url;
+
+        
+        if (page.translations) {
+          const translation = page.translations.find(t => t.Lang === currentLang);
+          if (translation) {
+            targetUrl = translation.Permalink;
+          }
+        }
+
+        if (targetUrl === currentUrl && index === 0) {
           li.className = "current-page f4 fw6 neon-text truncate";
           li.textContent = page.title;
         } else {
           const a = document.createElement('a');
-          a.href = page.url;
+          a.href = targetUrl;
           a.textContent = page.title;
           a.className = "truncate";
           li.appendChild(a);
@@ -186,6 +199,7 @@ One check can be made per round (or per minute in non-combat situations), and th
     }
   })();
 </script>
+
     <h1 class="f1 athelas mt3 mb1">
       Dispositivos de seguridad (INT)
     </h1>

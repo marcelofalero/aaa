@@ -42,7 +42,8 @@ Only one successful taunt can be directed at a target in a scene.">
       const currentPage = {
         title: "Pulla",
         url: "\/es\/skills\/interaction\/taunt\/",
-        translationKey: "\/skills\/interaction\/taunt"
+        translationKey: "\/skills\/interaction\/taunt",
+        translations: "[{\"Date\":\"0001-01-01T00:00:00Z\",\"Lastmod\":\"0001-01-01T00:00:00Z\",\"PublishDate\":\"0001-01-01T00:00:00Z\",\"ExpiryDate\":\"0001-01-01T00:00:00Z\",\"Aliases\":[],\"BundleType\":\"\",\"Description\":\"\",\"Draft\":false,\"IsHome\":false,\"Keywords\":null,\"Kind\":\"page\",\"Layout\":\"\",\"LinkTitle\":\"Taunt\",\"IsNode\":false,\"IsPage\":true,\"Path\":\"/skills/interaction/taunt\",\"Slug\":\"\",\"Lang\":\"en\",\"IsSection\":false,\"Section\":\"skills\",\"Sitemap\":{\"ChangeFreq\":\"\",\"Priority\":-1,\"Filename\":\"sitemap.xml\",\"Disable\":false},\"Type\":\"skills\",\"Weight\":0},{\"Date\":\"0001-01-01T00:00:00Z\",\"Lastmod\":\"0001-01-01T00:00:00Z\",\"PublishDate\":\"0001-01-01T00:00:00Z\",\"ExpiryDate\":\"0001-01-01T00:00:00Z\",\"Aliases\":[],\"BundleType\":\"\",\"Description\":\"\",\"Draft\":false,\"IsHome\":false,\"Keywords\":null,\"Kind\":\"page\",\"Layout\":\"\",\"LinkTitle\":\"Pulla\",\"IsNode\":false,\"IsPage\":true,\"Path\":\"/skills/interaction/taunt\",\"Slug\":\"\",\"Lang\":\"es\",\"IsSection\":false,\"Section\":\"skills\",\"Sitemap\":{\"ChangeFreq\":\"\",\"Priority\":-1,\"Filename\":\"sitemap.xml\",\"Disable\":false},\"Type\":\"skills\",\"Weight\":0}]"
       };
 
       let history = [];
@@ -73,6 +74,7 @@ Only one successful taunt can be directed at a target in a scene.">
 </script>
 
 <script src="/js/table-toggle.js"></script>
+
 
   
   
@@ -164,6 +166,7 @@ Results Critical Failure: Target uses the taunt to fuel rage, receiving a -2 bon
         return;
       }
 
+      const currentLang = "es";
       const currentUrl = "\/es\/skills\/interaction\/taunt\/";
       const fragment = document.createDocumentFragment();
 
@@ -179,12 +182,22 @@ Results Critical Failure: Target uses the taunt to fuel rage, receiving a -2 bon
         }
 
         const li = document.createElement('li');
-        if (page.url === currentUrl && index === 0) {
+        let targetUrl = page.url;
+
+        
+        if (page.translations) {
+          const translation = page.translations.find(t => t.Lang === currentLang);
+          if (translation) {
+            targetUrl = translation.Permalink;
+          }
+        }
+
+        if (targetUrl === currentUrl && index === 0) {
           li.className = "current-page f4 fw6 neon-text truncate";
           li.textContent = page.title;
         } else {
           const a = document.createElement('a');
-          a.href = page.url;
+          a.href = targetUrl;
           a.textContent = page.title;
           a.className = "truncate";
           li.appendChild(a);
@@ -198,6 +211,7 @@ Results Critical Failure: Target uses the taunt to fuel rage, receiving a -2 bon
     }
   })();
 </script>
+
     <h1 class="f1 athelas mt3 mb1">
       Pulla (PER)
     </h1>

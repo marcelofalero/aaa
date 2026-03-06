@@ -41,7 +41,8 @@ Improved Communication: The penalty on communication is reduced to &#43;1 at ran
       const currentPage = {
         title: "Idioma",
         url: "\/es\/skills\/knowledge\/language\/",
-        translationKey: "\/skills\/knowledge\/language"
+        translationKey: "\/skills\/knowledge\/language",
+        translations: "[{\"Date\":\"0001-01-01T00:00:00Z\",\"Lastmod\":\"0001-01-01T00:00:00Z\",\"PublishDate\":\"0001-01-01T00:00:00Z\",\"ExpiryDate\":\"0001-01-01T00:00:00Z\",\"Aliases\":[],\"BundleType\":\"\",\"Description\":\"\",\"Draft\":false,\"IsHome\":false,\"Keywords\":null,\"Kind\":\"page\",\"Layout\":\"\",\"LinkTitle\":\"Language\",\"IsNode\":false,\"IsPage\":true,\"Path\":\"/skills/knowledge/language\",\"Slug\":\"\",\"Lang\":\"en\",\"IsSection\":false,\"Section\":\"skills\",\"Sitemap\":{\"ChangeFreq\":\"\",\"Priority\":-1,\"Filename\":\"sitemap.xml\",\"Disable\":false},\"Type\":\"skills\",\"Weight\":0},{\"Date\":\"0001-01-01T00:00:00Z\",\"Lastmod\":\"0001-01-01T00:00:00Z\",\"PublishDate\":\"0001-01-01T00:00:00Z\",\"ExpiryDate\":\"0001-01-01T00:00:00Z\",\"Aliases\":[],\"BundleType\":\"\",\"Description\":\"\",\"Draft\":false,\"IsHome\":false,\"Keywords\":null,\"Kind\":\"page\",\"Layout\":\"\",\"LinkTitle\":\"Idioma\",\"IsNode\":false,\"IsPage\":true,\"Path\":\"/skills/knowledge/language\",\"Slug\":\"\",\"Lang\":\"es\",\"IsSection\":false,\"Section\":\"skills\",\"Sitemap\":{\"ChangeFreq\":\"\",\"Priority\":-1,\"Filename\":\"sitemap.xml\",\"Disable\":false},\"Type\":\"skills\",\"Weight\":0}]"
       };
 
       let history = [];
@@ -72,6 +73,7 @@ Improved Communication: The penalty on communication is reduced to &#43;1 at ran
 </script>
 
 <script src="/js/table-toggle.js"></script>
+
 
   
   
@@ -166,6 +168,7 @@ Rank 1: &#43;3 penalty on communication attempts. Rank Benefits Improved Communi
         return;
       }
 
+      const currentLang = "es";
       const currentUrl = "\/es\/skills\/knowledge\/language\/";
       const fragment = document.createDocumentFragment();
 
@@ -181,12 +184,22 @@ Rank 1: &#43;3 penalty on communication attempts. Rank Benefits Improved Communi
         }
 
         const li = document.createElement('li');
-        if (page.url === currentUrl && index === 0) {
+        let targetUrl = page.url;
+
+        
+        if (page.translations) {
+          const translation = page.translations.find(t => t.Lang === currentLang);
+          if (translation) {
+            targetUrl = translation.Permalink;
+          }
+        }
+
+        if (targetUrl === currentUrl && index === 0) {
           li.className = "current-page f4 fw6 neon-text truncate";
           li.textContent = page.title;
         } else {
           const a = document.createElement('a');
-          a.href = page.url;
+          a.href = targetUrl;
           a.textContent = page.title;
           a.className = "truncate";
           li.appendChild(a);
@@ -200,6 +213,7 @@ Rank 1: &#43;3 penalty on communication attempts. Rank Benefits Improved Communi
     }
   })();
 </script>
+
     <h1 class="f1 athelas mt3 mb1">
       Idioma (U) (INT)
     </h1>

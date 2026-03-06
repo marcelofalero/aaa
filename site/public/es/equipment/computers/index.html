@@ -33,7 +33,8 @@ Computer operation represents a user&rsquo;s ability to get the most out of a co
       const currentPage = {
         title: "Computadoras",
         url: "\/es\/equipment\/computers\/",
-        translationKey: "\/equipment\/computers"
+        translationKey: "\/equipment\/computers",
+        translations: "[{\"Date\":\"0001-01-01T00:00:00Z\",\"Lastmod\":\"0001-01-01T00:00:00Z\",\"PublishDate\":\"0001-01-01T00:00:00Z\",\"ExpiryDate\":\"0001-01-01T00:00:00Z\",\"Aliases\":[],\"BundleType\":\"\",\"Description\":\"\",\"Draft\":false,\"IsHome\":false,\"Keywords\":null,\"Kind\":\"page\",\"Layout\":\"\",\"LinkTitle\":\"Computers\",\"IsNode\":false,\"IsPage\":true,\"Path\":\"/equipment/computers\",\"Slug\":\"\",\"Lang\":\"en\",\"IsSection\":false,\"Section\":\"equipment\",\"Sitemap\":{\"ChangeFreq\":\"\",\"Priority\":-1,\"Filename\":\"sitemap.xml\",\"Disable\":false},\"Type\":\"equipment\",\"Weight\":4},{\"Date\":\"0001-01-01T00:00:00Z\",\"Lastmod\":\"0001-01-01T00:00:00Z\",\"PublishDate\":\"0001-01-01T00:00:00Z\",\"ExpiryDate\":\"0001-01-01T00:00:00Z\",\"Aliases\":[],\"BundleType\":\"\",\"Description\":\"\",\"Draft\":false,\"IsHome\":false,\"Keywords\":null,\"Kind\":\"page\",\"Layout\":\"\",\"LinkTitle\":\"Computadoras\",\"IsNode\":false,\"IsPage\":true,\"Path\":\"/equipment/computers\",\"Slug\":\"\",\"Lang\":\"es\",\"IsSection\":false,\"Section\":\"equipment\",\"Sitemap\":{\"ChangeFreq\":\"\",\"Priority\":-1,\"Filename\":\"sitemap.xml\",\"Disable\":false},\"Type\":\"equipment\",\"Weight\":4}]"
       };
 
       let history = [];
@@ -64,6 +65,7 @@ Computer operation represents a user&rsquo;s ability to get the most out of a co
 </script>
 
 <script src="/js/table-toggle.js"></script>
+
 
   
   
@@ -159,6 +161,7 @@ Computer operation represents a user’s ability to get the most out of a comput
         return;
       }
 
+      const currentLang = "es";
       const currentUrl = "\/es\/equipment\/computers\/";
       const fragment = document.createDocumentFragment();
 
@@ -174,12 +177,22 @@ Computer operation represents a user’s ability to get the most out of a comput
         }
 
         const li = document.createElement('li');
-        if (page.url === currentUrl && index === 0) {
+        let targetUrl = page.url;
+
+        
+        if (page.translations) {
+          const translation = page.translations.find(t => t.Lang === currentLang);
+          if (translation) {
+            targetUrl = translation.Permalink;
+          }
+        }
+
+        if (targetUrl === currentUrl && index === 0) {
           li.className = "current-page f4 fw6 neon-text truncate";
           li.textContent = page.title;
         } else {
           const a = document.createElement('a');
-          a.href = page.url;
+          a.href = targetUrl;
           a.textContent = page.title;
           a.className = "truncate";
           li.appendChild(a);
@@ -193,6 +206,7 @@ Computer operation represents a user’s ability to get the most out of a comput
     }
   })();
 </script>
+
       
 
       

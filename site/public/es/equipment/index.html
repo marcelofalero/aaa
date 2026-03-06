@@ -32,7 +32,8 @@
       const currentPage = {
         title: "Equipo",
         url: "\/es\/equipment\/",
-        translationKey: "\/equipment"
+        translationKey: "\/equipment",
+        translations: "[{\"Date\":\"0001-01-01T00:00:00Z\",\"Lastmod\":\"0001-01-01T00:00:00Z\",\"PublishDate\":\"0001-01-01T00:00:00Z\",\"ExpiryDate\":\"0001-01-01T00:00:00Z\",\"Aliases\":[],\"BundleType\":\"branch\",\"Description\":\"\",\"Draft\":false,\"IsHome\":false,\"Keywords\":null,\"Kind\":\"section\",\"Layout\":\"\",\"LinkTitle\":\"Equipment\",\"IsNode\":true,\"IsPage\":false,\"Path\":\"/equipment\",\"Slug\":\"\",\"Lang\":\"en\",\"IsSection\":true,\"Section\":\"equipment\",\"Sitemap\":{\"ChangeFreq\":\"\",\"Priority\":-1,\"Filename\":\"sitemap.xml\",\"Disable\":false},\"Type\":\"equipment\",\"Weight\":8},{\"Date\":\"0001-01-01T00:00:00Z\",\"Lastmod\":\"0001-01-01T00:00:00Z\",\"PublishDate\":\"0001-01-01T00:00:00Z\",\"ExpiryDate\":\"0001-01-01T00:00:00Z\",\"Aliases\":[],\"BundleType\":\"branch\",\"Description\":\"\",\"Draft\":false,\"IsHome\":false,\"Keywords\":null,\"Kind\":\"section\",\"Layout\":\"\",\"LinkTitle\":\"Equipo\",\"IsNode\":true,\"IsPage\":false,\"Path\":\"/equipment\",\"Slug\":\"\",\"Lang\":\"es\",\"IsSection\":true,\"Section\":\"equipment\",\"Sitemap\":{\"ChangeFreq\":\"\",\"Priority\":-1,\"Filename\":\"sitemap.xml\",\"Disable\":false},\"Type\":\"equipment\",\"Weight\":8}]"
       };
 
       let history = [];
@@ -63,6 +64,7 @@
 </script>
 
 <script src="/js/table-toggle.js"></script>
+
 
   
   
@@ -155,6 +157,7 @@ Equipment Categories Weapons - Melee, ranged, and heavy weapons categorized by P
         return;
       }
 
+      const currentLang = "es";
       const currentUrl = "\/es\/equipment\/";
       const fragment = document.createDocumentFragment();
 
@@ -170,12 +173,22 @@ Equipment Categories Weapons - Melee, ranged, and heavy weapons categorized by P
         }
 
         const li = document.createElement('li');
-        if (page.url === currentUrl && index === 0) {
+        let targetUrl = page.url;
+
+        
+        if (page.translations) {
+          const translation = page.translations.find(t => t.Lang === currentLang);
+          if (translation) {
+            targetUrl = translation.Permalink;
+          }
+        }
+
+        if (targetUrl === currentUrl && index === 0) {
           li.className = "current-page f4 fw6 neon-text truncate";
           li.textContent = page.title;
         } else {
           const a = document.createElement('a');
-          a.href = page.url;
+          a.href = targetUrl;
           a.textContent = page.title;
           a.className = "truncate";
           li.appendChild(a);
@@ -189,6 +202,7 @@ Equipment Categories Weapons - Melee, ranged, and heavy weapons categorized by P
     }
   })();
 </script>
+
     </div>
     <section class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy nested-links mid-gray">
       <h1 class="f1 athelas">Equipo</h1><p>This section contains all available equipment, including weapons, armor, computers, vehicles, and cybernetic enhancements.</p>

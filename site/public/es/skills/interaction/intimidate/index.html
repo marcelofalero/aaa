@@ -74,7 +74,8 @@ Interaction pp = 101">
       const currentPage = {
         title: "Intimidar",
         url: "\/es\/skills\/interaction\/intimidate\/",
-        translationKey: "\/skills\/interaction\/intimidate"
+        translationKey: "\/skills\/interaction\/intimidate",
+        translations: "[{\"Date\":\"0001-01-01T00:00:00Z\",\"Lastmod\":\"0001-01-01T00:00:00Z\",\"PublishDate\":\"0001-01-01T00:00:00Z\",\"ExpiryDate\":\"0001-01-01T00:00:00Z\",\"Aliases\":[],\"BundleType\":\"\",\"Description\":\"\",\"Draft\":false,\"IsHome\":false,\"Keywords\":null,\"Kind\":\"page\",\"Layout\":\"\",\"LinkTitle\":\"Intimidate\",\"IsNode\":false,\"IsPage\":true,\"Path\":\"/skills/interaction/intimidate\",\"Slug\":\"\",\"Lang\":\"en\",\"IsSection\":false,\"Section\":\"skills\",\"Sitemap\":{\"ChangeFreq\":\"\",\"Priority\":-1,\"Filename\":\"sitemap.xml\",\"Disable\":false},\"Type\":\"skills\",\"Weight\":0},{\"Date\":\"0001-01-01T00:00:00Z\",\"Lastmod\":\"0001-01-01T00:00:00Z\",\"PublishDate\":\"0001-01-01T00:00:00Z\",\"ExpiryDate\":\"0001-01-01T00:00:00Z\",\"Aliases\":[],\"BundleType\":\"\",\"Description\":\"\",\"Draft\":false,\"IsHome\":false,\"Keywords\":null,\"Kind\":\"page\",\"Layout\":\"\",\"LinkTitle\":\"Intimidar\",\"IsNode\":false,\"IsPage\":true,\"Path\":\"/skills/interaction/intimidate\",\"Slug\":\"\",\"Lang\":\"es\",\"IsSection\":false,\"Section\":\"skills\",\"Sitemap\":{\"ChangeFreq\":\"\",\"Priority\":-1,\"Filename\":\"sitemap.xml\",\"Disable\":false},\"Type\":\"skills\",\"Weight\":0}]"
       };
 
       let history = [];
@@ -105,6 +106,7 @@ Interaction pp = 101">
 </script>
 
 <script src="/js/table-toggle.js"></script>
+
 
   
   
@@ -196,6 +198,7 @@ Results Description Ordinary Success indicates that the hero produced a quality 
         return;
       }
 
+      const currentLang = "es";
       const currentUrl = "\/es\/skills\/interaction\/intimidate\/";
       const fragment = document.createDocumentFragment();
 
@@ -211,12 +214,22 @@ Results Description Ordinary Success indicates that the hero produced a quality 
         }
 
         const li = document.createElement('li');
-        if (page.url === currentUrl && index === 0) {
+        let targetUrl = page.url;
+
+        
+        if (page.translations) {
+          const translation = page.translations.find(t => t.Lang === currentLang);
+          if (translation) {
+            targetUrl = translation.Permalink;
+          }
+        }
+
+        if (targetUrl === currentUrl && index === 0) {
           li.className = "current-page f4 fw6 neon-text truncate";
           li.textContent = page.title;
         } else {
           const a = document.createElement('a');
-          a.href = page.url;
+          a.href = targetUrl;
           a.textContent = page.title;
           a.className = "truncate";
           li.appendChild(a);
@@ -230,6 +243,7 @@ Results Description Ordinary Success indicates that the hero produced a quality 
     }
   })();
 </script>
+
     <h1 class="f1 athelas mt3 mb1">
       Intimidar (PER)
     </h1>

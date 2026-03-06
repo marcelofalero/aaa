@@ -20,6 +20,9 @@ Free Agents are the ultimate troubleshooters. They rely on agility, intuition, a
 
 Free Agents favor skills that help them move unseen, bypass security, and manipulate their surroundings.
 
+### Core Combat Skills
+- **[Melee Combat](/skills/melee-combat/)**
+
 ### Covert Operations & Agility
 - **Covert Ops:** Stealth, Lockpick, Pickpocket
 - **Acrobatics:** Daredevil, Defensive martial arts, Fall

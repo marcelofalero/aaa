@@ -32,7 +32,8 @@
       const currentPage = {
         title: "Sesheyan",
         url: "\/species\/sesheyan\/",
-        translationKey: "\/species\/sesheyan"
+        translationKey: "\/species\/sesheyan",
+        translations: "[{\"Date\":\"0001-01-01T00:00:00Z\",\"Lastmod\":\"0001-01-01T00:00:00Z\",\"PublishDate\":\"0001-01-01T00:00:00Z\",\"ExpiryDate\":\"0001-01-01T00:00:00Z\",\"Aliases\":[],\"BundleType\":\"\",\"Description\":\"Winged hunters from a world of perpetual twilight.\",\"Draft\":false,\"IsHome\":false,\"Keywords\":null,\"Kind\":\"page\",\"Layout\":\"\",\"LinkTitle\":\"Sesheyan\",\"IsNode\":false,\"IsPage\":true,\"Path\":\"/species/sesheyan\",\"Slug\":\"\",\"Lang\":\"en\",\"IsSection\":false,\"Section\":\"species\",\"Sitemap\":{\"ChangeFreq\":\"\",\"Priority\":-1,\"Filename\":\"sitemap.xml\",\"Disable\":false},\"Type\":\"species\",\"Weight\":4},{\"Date\":\"0001-01-01T00:00:00Z\",\"Lastmod\":\"0001-01-01T00:00:00Z\",\"PublishDate\":\"0001-01-01T00:00:00Z\",\"ExpiryDate\":\"0001-01-01T00:00:00Z\",\"Aliases\":[],\"BundleType\":\"\",\"Description\":\"Cazadores alados de un mundo de crepúsculo perpetuo.\",\"Draft\":false,\"IsHome\":false,\"Keywords\":null,\"Kind\":\"page\",\"Layout\":\"\",\"LinkTitle\":\"Sesheyan\",\"IsNode\":false,\"IsPage\":true,\"Path\":\"/species/sesheyan\",\"Slug\":\"\",\"Lang\":\"es\",\"IsSection\":false,\"Section\":\"species\",\"Sitemap\":{\"ChangeFreq\":\"\",\"Priority\":-1,\"Filename\":\"sitemap.xml\",\"Disable\":false},\"Type\":\"species\",\"Weight\":4}]"
       };
 
       let history = [];
@@ -63,6 +64,7 @@
 </script>
 
 <script src="/js/table-toggle.js"></script>
+
 
   
   
@@ -155,6 +157,7 @@
         return;
       }
 
+      const currentLang = "en";
       const currentUrl = "\/species\/sesheyan\/";
       const fragment = document.createDocumentFragment();
 
@@ -170,12 +173,22 @@
         }
 
         const li = document.createElement('li');
-        if (page.url === currentUrl && index === 0) {
+        let targetUrl = page.url;
+
+        
+        if (page.translations) {
+          const translation = page.translations.find(t => t.Lang === currentLang);
+          if (translation) {
+            targetUrl = translation.Permalink;
+          }
+        }
+
+        if (targetUrl === currentUrl && index === 0) {
           li.className = "current-page f4 fw6 neon-text truncate";
           li.textContent = page.title;
         } else {
           const a = document.createElement('a');
-          a.href = page.url;
+          a.href = targetUrl;
           a.textContent = page.title;
           a.className = "truncate";
           li.appendChild(a);
@@ -189,6 +202,7 @@
     }
   })();
 </script>
+
       
       
     </header>

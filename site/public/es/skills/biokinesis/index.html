@@ -32,7 +32,8 @@
       const currentPage = {
         title: "bioquinesis",
         url: "\/es\/skills\/biokinesis\/",
-        translationKey: "\/skills\/biokinesis"
+        translationKey: "\/skills\/biokinesis",
+        translations: "[{\"Date\":\"0001-01-01T00:00:00Z\",\"Lastmod\":\"0001-01-01T00:00:00Z\",\"PublishDate\":\"0001-01-01T00:00:00Z\",\"ExpiryDate\":\"0001-01-01T00:00:00Z\",\"Aliases\":[],\"BundleType\":\"branch\",\"Description\":\"Harness the power of the mind to enhance body functions.\",\"Draft\":false,\"IsHome\":false,\"Keywords\":null,\"Kind\":\"section\",\"Layout\":\"\",\"LinkTitle\":\"Biokinesis\",\"IsNode\":true,\"IsPage\":false,\"Path\":\"/skills/biokinesis\",\"Slug\":\"\",\"Lang\":\"en\",\"IsSection\":true,\"Section\":\"skills\",\"Sitemap\":{\"ChangeFreq\":\"\",\"Priority\":-1,\"Filename\":\"sitemap.xml\",\"Disable\":false},\"Type\":\"skills\",\"Weight\":1},{\"Date\":\"0001-01-01T00:00:00Z\",\"Lastmod\":\"0001-01-01T00:00:00Z\",\"PublishDate\":\"0001-01-01T00:00:00Z\",\"ExpiryDate\":\"0001-01-01T00:00:00Z\",\"Aliases\":[],\"BundleType\":\"branch\",\"Description\":\"Aprovecha el poder de la mente para mejorar las funciones corporales.\",\"Draft\":false,\"IsHome\":false,\"Keywords\":null,\"Kind\":\"section\",\"Layout\":\"\",\"LinkTitle\":\"bioquinesis\",\"IsNode\":true,\"IsPage\":false,\"Path\":\"/skills/biokinesis\",\"Slug\":\"\",\"Lang\":\"es\",\"IsSection\":true,\"Section\":\"skills\",\"Sitemap\":{\"ChangeFreq\":\"\",\"Priority\":-1,\"Filename\":\"sitemap.xml\",\"Disable\":false},\"Type\":\"skills\",\"Weight\":1}]"
       };
 
       let history = [];
@@ -63,6 +64,7 @@
 </script>
 
 <script src="/js/table-toggle.js"></script>
+
 
   
   
@@ -152,6 +154,7 @@
         return;
       }
 
+      const currentLang = "es";
       const currentUrl = "\/es\/skills\/biokinesis\/";
       const fragment = document.createDocumentFragment();
 
@@ -167,12 +170,22 @@
         }
 
         const li = document.createElement('li');
-        if (page.url === currentUrl && index === 0) {
+        let targetUrl = page.url;
+
+        
+        if (page.translations) {
+          const translation = page.translations.find(t => t.Lang === currentLang);
+          if (translation) {
+            targetUrl = translation.Permalink;
+          }
+        }
+
+        if (targetUrl === currentUrl && index === 0) {
           li.className = "current-page f4 fw6 neon-text truncate";
           li.textContent = page.title;
         } else {
           const a = document.createElement('a');
-          a.href = page.url;
+          a.href = targetUrl;
           a.textContent = page.title;
           a.className = "truncate";
           li.appendChild(a);
@@ -186,6 +199,7 @@
     }
   })();
 </script>
+
     <h1 class="f1 athelas mt3 mb1">
       bioquinesis (U) (CON)
     </h1>

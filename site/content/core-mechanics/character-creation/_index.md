@@ -12,7 +12,7 @@ Before you start crunching numbers, think about what kind of character you want 
 ## 2. Choose a Species
 Several sentient species are available for play. For detailed descriptions and stats, see the **[Species Section](/species)**.
 
-- **Human:** Versatile and culturally diverse, with a tendency to specialize.
+- **Human:** Versatile and culturally diverse as a species, while individuals have a tendency to specialize.
 - **Fraal:** Ancient, psionically gifted starfarers who secretly coexisted with humans for millennia.
 - **Mechalus:** Cybernetically integrated logic-driven humanoids who value logic and efficiency above all else, while suppressing their emotions.
 - **Sesheyan:** Winged hunters with multiple eyes, and alien mindset.
@@ -20,10 +20,9 @@ Several sentient species are available for play. For detailed descriptions and s
 - **Weren:** Large, furry philosopher-warriors.
 
 ## 3. Choose a Background
-Unlike the traditional career labels, a **Background** in AAA is a foundational element of your character. It represents your life before adventuring and provides tangible mechanical benefits:
-- **Favored Skills (Discounts):** Each Background provides a set of "Favored Skills," which grant a **1 XP discount** whenever you purchase or raise them.
-- **Advancement Points (AP):** While you pay less XP, the skill's full "**Standard Price**" is added to your total Advancement Points (AP), which determines your current Character Rank.
-- **Unique Ability:** Some Backgrounds grant special trait or capability unique to that life path.
+Unlike the traditional career labels, a **Background** in AAA is a foundational element of your character. It represents your life before adventuring and provides tangible mechanical advantages and disadvantages.
+Some of which are **Favored Skills and Perks (Discounted):**, automatic **Perks** and **Flaws**, and occasionally special abilities to support you in roleplaying
+your background. Backgrounds also support the last resort mechanics by adding **tendencies**, that give you the chance to recover spent Last resource points.
 
 For a full list of available options, see the **[Backgrounds Section](/backgrounds)**.
 

@@ -80,7 +80,8 @@ Amazing: 6m / Walk x 2
       const currentPage = {
         title: "Levitación",
         url: "\/es\/skills\/telekinesis\/levitation\/",
-        translationKey: "\/skills\/telekinesis\/levitation"
+        translationKey: "\/skills\/telekinesis\/levitation",
+        translations: "[{\"Date\":\"0001-01-01T00:00:00Z\",\"Lastmod\":\"0001-01-01T00:00:00Z\",\"PublishDate\":\"0001-01-01T00:00:00Z\",\"ExpiryDate\":\"0001-01-01T00:00:00Z\",\"Aliases\":[],\"BundleType\":\"\",\"Description\":\"\",\"Draft\":false,\"IsHome\":false,\"Keywords\":null,\"Kind\":\"page\",\"Layout\":\"\",\"LinkTitle\":\"Levitation\",\"IsNode\":false,\"IsPage\":true,\"Path\":\"/skills/telekinesis/levitation\",\"Slug\":\"\",\"Lang\":\"en\",\"IsSection\":false,\"Section\":\"skills\",\"Sitemap\":{\"ChangeFreq\":\"\",\"Priority\":-1,\"Filename\":\"sitemap.xml\",\"Disable\":false},\"Type\":\"skills\",\"Weight\":0},{\"Date\":\"0001-01-01T00:00:00Z\",\"Lastmod\":\"0001-01-01T00:00:00Z\",\"PublishDate\":\"0001-01-01T00:00:00Z\",\"ExpiryDate\":\"0001-01-01T00:00:00Z\",\"Aliases\":[],\"BundleType\":\"\",\"Description\":\"\",\"Draft\":false,\"IsHome\":false,\"Keywords\":null,\"Kind\":\"page\",\"Layout\":\"\",\"LinkTitle\":\"Levitación\",\"IsNode\":false,\"IsPage\":true,\"Path\":\"/skills/telekinesis/levitation\",\"Slug\":\"\",\"Lang\":\"es\",\"IsSection\":false,\"Section\":\"skills\",\"Sitemap\":{\"ChangeFreq\":\"\",\"Priority\":-1,\"Filename\":\"sitemap.xml\",\"Disable\":false},\"Type\":\"skills\",\"Weight\":0}]"
       };
 
       let history = [];
@@ -111,6 +112,7 @@ Amazing: 6m / Walk x 2
 </script>
 
 <script src="/js/table-toggle.js"></script>
+
 
   
   
@@ -202,6 +204,7 @@ Results (Ascend per phase / Speed) Ordinary: 2m / Walk x 1 Good: 4m / Walk x 1.5
         return;
       }
 
+      const currentLang = "es";
       const currentUrl = "\/es\/skills\/telekinesis\/levitation\/";
       const fragment = document.createDocumentFragment();
 
@@ -217,12 +220,22 @@ Results (Ascend per phase / Speed) Ordinary: 2m / Walk x 1 Good: 4m / Walk x 1.5
         }
 
         const li = document.createElement('li');
-        if (page.url === currentUrl && index === 0) {
+        let targetUrl = page.url;
+
+        
+        if (page.translations) {
+          const translation = page.translations.find(t => t.Lang === currentLang);
+          if (translation) {
+            targetUrl = translation.Permalink;
+          }
+        }
+
+        if (targetUrl === currentUrl && index === 0) {
           li.className = "current-page f4 fw6 neon-text truncate";
           li.textContent = page.title;
         } else {
           const a = document.createElement('a');
-          a.href = page.url;
+          a.href = targetUrl;
           a.textContent = page.title;
           a.className = "truncate";
           li.appendChild(a);
@@ -236,6 +249,7 @@ Results (Ascend per phase / Speed) Ordinary: 2m / Walk x 1 Good: 4m / Walk x 1.5
     }
   })();
 </script>
+
     <h1 class="f1 athelas mt3 mb1">
       Levitación (WIL)
     </h1>

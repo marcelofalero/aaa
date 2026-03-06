@@ -40,7 +40,8 @@ Other Benefits: See Ranged Weapons Rank Benefits.
       const currentPage = {
         title: "subfusil",
         url: "\/es\/skills\/modern-ranged-weapons\/smg\/",
-        translationKey: "\/skills\/modern-ranged-weapons\/smg"
+        translationKey: "\/skills\/modern-ranged-weapons\/smg",
+        translations: "[{\"Date\":\"0001-01-01T00:00:00Z\",\"Lastmod\":\"0001-01-01T00:00:00Z\",\"PublishDate\":\"0001-01-01T00:00:00Z\",\"ExpiryDate\":\"0001-01-01T00:00:00Z\",\"Aliases\":[],\"BundleType\":\"\",\"Description\":\"\",\"Draft\":false,\"IsHome\":false,\"Keywords\":null,\"Kind\":\"page\",\"Layout\":\"\",\"LinkTitle\":\"SMG\",\"IsNode\":false,\"IsPage\":true,\"Path\":\"/skills/modern-ranged-weapons/smg\",\"Slug\":\"\",\"Lang\":\"en\",\"IsSection\":false,\"Section\":\"skills\",\"Sitemap\":{\"ChangeFreq\":\"\",\"Priority\":-1,\"Filename\":\"sitemap.xml\",\"Disable\":false},\"Type\":\"skills\",\"Weight\":0},{\"Date\":\"0001-01-01T00:00:00Z\",\"Lastmod\":\"0001-01-01T00:00:00Z\",\"PublishDate\":\"0001-01-01T00:00:00Z\",\"ExpiryDate\":\"0001-01-01T00:00:00Z\",\"Aliases\":[],\"BundleType\":\"\",\"Description\":\"\",\"Draft\":false,\"IsHome\":false,\"Keywords\":null,\"Kind\":\"page\",\"Layout\":\"\",\"LinkTitle\":\"subfusil\",\"IsNode\":false,\"IsPage\":true,\"Path\":\"/skills/modern-ranged-weapons/smg\",\"Slug\":\"\",\"Lang\":\"es\",\"IsSection\":false,\"Section\":\"skills\",\"Sitemap\":{\"ChangeFreq\":\"\",\"Priority\":-1,\"Filename\":\"sitemap.xml\",\"Disable\":false},\"Type\":\"skills\",\"Weight\":0}]"
       };
 
       let history = [];
@@ -71,6 +72,7 @@ Other Benefits: See Ranged Weapons Rank Benefits.
 </script>
 
 <script src="/js/table-toggle.js"></script>
+
 
   
   
@@ -162,6 +164,7 @@ Rank Benefits Rank 3 [Rock-n-Roll]: Change clips more efficiently. The penalty f
         return;
       }
 
+      const currentLang = "es";
       const currentUrl = "\/es\/skills\/modern-ranged-weapons\/smg\/";
       const fragment = document.createDocumentFragment();
 
@@ -177,12 +180,22 @@ Rank Benefits Rank 3 [Rock-n-Roll]: Change clips more efficiently. The penalty f
         }
 
         const li = document.createElement('li');
-        if (page.url === currentUrl && index === 0) {
+        let targetUrl = page.url;
+
+        
+        if (page.translations) {
+          const translation = page.translations.find(t => t.Lang === currentLang);
+          if (translation) {
+            targetUrl = translation.Permalink;
+          }
+        }
+
+        if (targetUrl === currentUrl && index === 0) {
           li.className = "current-page f4 fw6 neon-text truncate";
           li.textContent = page.title;
         } else {
           const a = document.createElement('a');
-          a.href = page.url;
+          a.href = targetUrl;
           a.textContent = page.title;
           a.className = "truncate";
           li.appendChild(a);
@@ -196,6 +209,7 @@ Rank Benefits Rank 3 [Rock-n-Roll]: Change clips more efficiently. The penalty f
     }
   })();
 </script>
+
     <h1 class="f1 athelas mt3 mb1">
       subfusil (DEX)
     </h1>

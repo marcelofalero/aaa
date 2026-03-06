@@ -83,7 +83,8 @@ Interaction pp = 101">
       const currentPage = {
         title: "Seduce",
         url: "\/skills\/interaction\/seduce\/",
-        translationKey: "\/skills\/interaction\/seduce"
+        translationKey: "\/skills\/interaction\/seduce",
+        translations: "[{\"Date\":\"0001-01-01T00:00:00Z\",\"Lastmod\":\"0001-01-01T00:00:00Z\",\"PublishDate\":\"0001-01-01T00:00:00Z\",\"ExpiryDate\":\"0001-01-01T00:00:00Z\",\"Aliases\":[],\"BundleType\":\"\",\"Description\":\"\",\"Draft\":false,\"IsHome\":false,\"Keywords\":null,\"Kind\":\"page\",\"Layout\":\"\",\"LinkTitle\":\"Seduce\",\"IsNode\":false,\"IsPage\":true,\"Path\":\"/skills/interaction/seduce\",\"Slug\":\"\",\"Lang\":\"en\",\"IsSection\":false,\"Section\":\"skills\",\"Sitemap\":{\"ChangeFreq\":\"\",\"Priority\":-1,\"Filename\":\"sitemap.xml\",\"Disable\":false},\"Type\":\"skills\",\"Weight\":0},{\"Date\":\"0001-01-01T00:00:00Z\",\"Lastmod\":\"0001-01-01T00:00:00Z\",\"PublishDate\":\"0001-01-01T00:00:00Z\",\"ExpiryDate\":\"0001-01-01T00:00:00Z\",\"Aliases\":[],\"BundleType\":\"\",\"Description\":\"\",\"Draft\":false,\"IsHome\":false,\"Keywords\":null,\"Kind\":\"page\",\"Layout\":\"\",\"LinkTitle\":\"Seducir\",\"IsNode\":false,\"IsPage\":true,\"Path\":\"/skills/interaction/seduce\",\"Slug\":\"\",\"Lang\":\"es\",\"IsSection\":false,\"Section\":\"skills\",\"Sitemap\":{\"ChangeFreq\":\"\",\"Priority\":-1,\"Filename\":\"sitemap.xml\",\"Disable\":false},\"Type\":\"skills\",\"Weight\":0}]"
       };
 
       let history = [];
@@ -114,6 +115,7 @@ Interaction pp = 101">
 </script>
 
 <script src="/js/table-toggle.js"></script>
+
 
   
   
@@ -208,6 +210,7 @@ Charmed: Seduction works well enough to lead to serious feelings if feigned inte
         return;
       }
 
+      const currentLang = "en";
       const currentUrl = "\/skills\/interaction\/seduce\/";
       const fragment = document.createDocumentFragment();
 
@@ -223,12 +226,22 @@ Charmed: Seduction works well enough to lead to serious feelings if feigned inte
         }
 
         const li = document.createElement('li');
-        if (page.url === currentUrl && index === 0) {
+        let targetUrl = page.url;
+
+        
+        if (page.translations) {
+          const translation = page.translations.find(t => t.Lang === currentLang);
+          if (translation) {
+            targetUrl = translation.Permalink;
+          }
+        }
+
+        if (targetUrl === currentUrl && index === 0) {
           li.className = "current-page f4 fw6 neon-text truncate";
           li.textContent = page.title;
         } else {
           const a = document.createElement('a');
-          a.href = page.url;
+          a.href = targetUrl;
           a.textContent = page.title;
           a.className = "truncate";
           li.appendChild(a);
@@ -242,6 +255,7 @@ Charmed: Seduction works well enough to lead to serious feelings if feigned inte
     }
   })();
 </script>
+
     <h1 class="f1 athelas mt3 mb1">
       Seduce (PER)
     </h1>

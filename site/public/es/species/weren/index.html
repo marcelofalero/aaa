@@ -32,7 +32,8 @@
       const currentPage = {
         title: "Weren",
         url: "\/es\/species\/weren\/",
-        translationKey: "\/species\/weren"
+        translationKey: "\/species\/weren",
+        translations: "[{\"Date\":\"0001-01-01T00:00:00Z\",\"Lastmod\":\"0001-01-01T00:00:00Z\",\"PublishDate\":\"0001-01-01T00:00:00Z\",\"ExpiryDate\":\"0001-01-01T00:00:00Z\",\"Aliases\":[],\"BundleType\":\"\",\"Description\":\"Large, fur-covered philosopher-warriors with a fierce code of honor.\",\"Draft\":false,\"IsHome\":false,\"Keywords\":null,\"Kind\":\"page\",\"Layout\":\"\",\"LinkTitle\":\"Weren\",\"IsNode\":false,\"IsPage\":true,\"Path\":\"/species/weren\",\"Slug\":\"\",\"Lang\":\"en\",\"IsSection\":false,\"Section\":\"species\",\"Sitemap\":{\"ChangeFreq\":\"\",\"Priority\":-1,\"Filename\":\"sitemap.xml\",\"Disable\":false},\"Type\":\"species\",\"Weight\":6},{\"Date\":\"0001-01-01T00:00:00Z\",\"Lastmod\":\"0001-01-01T00:00:00Z\",\"PublishDate\":\"0001-01-01T00:00:00Z\",\"ExpiryDate\":\"0001-01-01T00:00:00Z\",\"Aliases\":[],\"BundleType\":\"\",\"Description\":\"Grandes filósofos-guerreros cubiertos de piel con un feroz código de honor.\",\"Draft\":false,\"IsHome\":false,\"Keywords\":null,\"Kind\":\"page\",\"Layout\":\"\",\"LinkTitle\":\"Weren\",\"IsNode\":false,\"IsPage\":true,\"Path\":\"/species/weren\",\"Slug\":\"\",\"Lang\":\"es\",\"IsSection\":false,\"Section\":\"species\",\"Sitemap\":{\"ChangeFreq\":\"\",\"Priority\":-1,\"Filename\":\"sitemap.xml\",\"Disable\":false},\"Type\":\"species\",\"Weight\":6}]"
       };
 
       let history = [];
@@ -64,6 +65,7 @@
 
 <script src="/js/table-toggle.js"></script>
 
+
   
   
 
@@ -87,7 +89,7 @@
 
   <meta itemprop="name" content="Weren">
   <meta itemprop="description" content="Grandes filósofos-guerreros cubiertos de piel con un feroz código de honor.">
-  <meta itemprop="wordCount" content="322">
+  <meta itemprop="wordCount" content="337">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Weren">
   <meta name="twitter:description" content="Grandes filósofos-guerreros cubiertos de piel con un feroz código de honor.">
@@ -155,6 +157,7 @@
         return;
       }
 
+      const currentLang = "es";
       const currentUrl = "\/es\/species\/weren\/";
       const fragment = document.createDocumentFragment();
 
@@ -170,12 +173,22 @@
         }
 
         const li = document.createElement('li');
-        if (page.url === currentUrl && index === 0) {
+        let targetUrl = page.url;
+
+        
+        if (page.translations) {
+          const translation = page.translations.find(t => t.Lang === currentLang);
+          if (translation) {
+            targetUrl = translation.Permalink;
+          }
+        }
+
+        if (targetUrl === currentUrl && index === 0) {
           li.className = "current-page f4 fw6 neon-text truncate";
           li.textContent = page.title;
         } else {
           const a = document.createElement('a');
-          a.href = page.url;
+          a.href = targetUrl;
           a.textContent = page.title;
           a.className = "truncate";
           li.appendChild(a);
@@ -189,6 +202,7 @@
     }
   })();
 </script>
+
       
       
     </header>
@@ -200,7 +214,7 @@
 <ul>
 <li><strong>CA Natural:</strong> El pelaje grueso y la piel dura proporcionan protección (<strong>d8+1/d6+1/d6</strong>). Si un weren usa armadura de calidad Buena, su armadura natural también se considera de calidad Buena.</li>
 <li><strong>Arma Natural:</strong> Garras retráctiles (Ataque Desarmado-pelea/artes marciales de poder) hacen d4h/d4+2h/d4m de daño.</li>
-<li><strong>Camuflaje:</strong> El pelaje brilla para coincidir con el entorno. Los ataques a distancia contra un weren a distancia reciben una <strong>penalización de +1 paso</strong>. Esta habilidad no funciona si el weren lleva ropa o armadura que cubra más del 15% de su cuerpo.</li>
+<li><strong>Camuflaje:</strong> El pelaje brilla para coincidir con el entorno. Los ataques a distancia contra un weren a distancia reciben una <strong>penalización de +1 paso</strong>, y el weren recibe una <strong>bonificación de -1 paso</strong> en las pruebas de <a href="/es/skills/covert-ops/stealth">Operaciones Encubiertas-sigilo</a>. Esta habilidad no funciona si el weren lleva ropa o armadura que cubra más del 15% de su cuerpo.</li>
 <li><strong>Resistente:</strong> Reciben una <strong>bonificación de -1 paso</strong> en las pruebas de habilidad de <strong>resistencia-resistir dolor</strong>.</li>
 <li><strong>Intimidante:</strong> Reciben una <strong>bonificación de -2 pasos</strong> en las pruebas de habilidad de <strong>interacción-intimidar</strong> cuando amenazan físicamente a alguien.</li>
 <li><strong>Cultura Primitiva:</strong> Sufren una <strong>penalización de +2 pasos</strong> con tecnología de Nivel de Progreso 4 o superior (se puede reducir con puntos de habilidad).</li>

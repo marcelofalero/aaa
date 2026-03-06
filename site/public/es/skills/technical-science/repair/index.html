@@ -39,7 +39,8 @@ The time unit is designated by the Gamemaster (minutes, hours, days, etc.).
       const currentPage = {
         title: "Reparar",
         url: "\/es\/skills\/technical-science\/repair\/",
-        translationKey: "\/skills\/technical-science\/repair"
+        translationKey: "\/skills\/technical-science\/repair",
+        translations: "[{\"Date\":\"0001-01-01T00:00:00Z\",\"Lastmod\":\"0001-01-01T00:00:00Z\",\"PublishDate\":\"0001-01-01T00:00:00Z\",\"ExpiryDate\":\"0001-01-01T00:00:00Z\",\"Aliases\":[],\"BundleType\":\"\",\"Description\":\"\",\"Draft\":false,\"IsHome\":false,\"Keywords\":null,\"Kind\":\"page\",\"Layout\":\"\",\"LinkTitle\":\"Repair\",\"IsNode\":false,\"IsPage\":true,\"Path\":\"/skills/technical-science/repair\",\"Slug\":\"\",\"Lang\":\"en\",\"IsSection\":false,\"Section\":\"skills\",\"Sitemap\":{\"ChangeFreq\":\"\",\"Priority\":-1,\"Filename\":\"sitemap.xml\",\"Disable\":false},\"Type\":\"skills\",\"Weight\":0},{\"Date\":\"0001-01-01T00:00:00Z\",\"Lastmod\":\"0001-01-01T00:00:00Z\",\"PublishDate\":\"0001-01-01T00:00:00Z\",\"ExpiryDate\":\"0001-01-01T00:00:00Z\",\"Aliases\":[],\"BundleType\":\"\",\"Description\":\"\",\"Draft\":false,\"IsHome\":false,\"Keywords\":null,\"Kind\":\"page\",\"Layout\":\"\",\"LinkTitle\":\"Reparar\",\"IsNode\":false,\"IsPage\":true,\"Path\":\"/skills/technical-science/repair\",\"Slug\":\"\",\"Lang\":\"es\",\"IsSection\":false,\"Section\":\"skills\",\"Sitemap\":{\"ChangeFreq\":\"\",\"Priority\":-1,\"Filename\":\"sitemap.xml\",\"Disable\":false},\"Type\":\"skills\",\"Weight\":0}]"
       };
 
       let history = [];
@@ -70,6 +71,7 @@ The time unit is designated by the Gamemaster (minutes, hours, days, etc.).
 </script>
 
 <script src="/js/table-toggle.js"></script>
+
 
   
   
@@ -158,6 +160,7 @@ Complexity Stun Damage: Ordinary complexity. Wound Damage: Good complexity. Mort
         return;
       }
 
+      const currentLang = "es";
       const currentUrl = "\/es\/skills\/technical-science\/repair\/";
       const fragment = document.createDocumentFragment();
 
@@ -173,12 +176,22 @@ Complexity Stun Damage: Ordinary complexity. Wound Damage: Good complexity. Mort
         }
 
         const li = document.createElement('li');
-        if (page.url === currentUrl && index === 0) {
+        let targetUrl = page.url;
+
+        
+        if (page.translations) {
+          const translation = page.translations.find(t => t.Lang === currentLang);
+          if (translation) {
+            targetUrl = translation.Permalink;
+          }
+        }
+
+        if (targetUrl === currentUrl && index === 0) {
           li.className = "current-page f4 fw6 neon-text truncate";
           li.textContent = page.title;
         } else {
           const a = document.createElement('a');
-          a.href = page.url;
+          a.href = targetUrl;
           a.textContent = page.title;
           a.className = "truncate";
           li.appendChild(a);
@@ -192,6 +205,7 @@ Complexity Stun Damage: Ordinary complexity. Wound Damage: Good complexity. Mort
     }
   })();
 </script>
+
     <h1 class="f1 athelas mt3 mb1">
       Reparar (INT)
     </h1>

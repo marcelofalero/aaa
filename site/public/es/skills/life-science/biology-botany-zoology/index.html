@@ -41,7 +41,8 @@ Increased Effect: Situation die bonus of -1 at rank 3, -2 at rank 6, -3 at rank 
       const currentPage = {
         title: "Biología, Botánica, Zoología",
         url: "\/es\/skills\/life-science\/biology-botany-zoology\/",
-        translationKey: "\/skills\/life-science\/biology-botany-zoology"
+        translationKey: "\/skills\/life-science\/biology-botany-zoology",
+        translations: "[{\"Date\":\"0001-01-01T00:00:00Z\",\"Lastmod\":\"0001-01-01T00:00:00Z\",\"PublishDate\":\"0001-01-01T00:00:00Z\",\"ExpiryDate\":\"0001-01-01T00:00:00Z\",\"Aliases\":[],\"BundleType\":\"\",\"Description\":\"\",\"Draft\":false,\"IsHome\":false,\"Keywords\":null,\"Kind\":\"page\",\"Layout\":\"\",\"LinkTitle\":\"Biology, Botany, Zoology\",\"IsNode\":false,\"IsPage\":true,\"Path\":\"/skills/life-science/biology-botany-zoology\",\"Slug\":\"\",\"Lang\":\"en\",\"IsSection\":false,\"Section\":\"skills\",\"Sitemap\":{\"ChangeFreq\":\"\",\"Priority\":-1,\"Filename\":\"sitemap.xml\",\"Disable\":false},\"Type\":\"skills\",\"Weight\":0},{\"Date\":\"0001-01-01T00:00:00Z\",\"Lastmod\":\"0001-01-01T00:00:00Z\",\"PublishDate\":\"0001-01-01T00:00:00Z\",\"ExpiryDate\":\"0001-01-01T00:00:00Z\",\"Aliases\":[],\"BundleType\":\"\",\"Description\":\"\",\"Draft\":false,\"IsHome\":false,\"Keywords\":null,\"Kind\":\"page\",\"Layout\":\"\",\"LinkTitle\":\"Biología, Botánica, Zoología\",\"IsNode\":false,\"IsPage\":true,\"Path\":\"/skills/life-science/biology-botany-zoology\",\"Slug\":\"\",\"Lang\":\"es\",\"IsSection\":false,\"Section\":\"skills\",\"Sitemap\":{\"ChangeFreq\":\"\",\"Priority\":-1,\"Filename\":\"sitemap.xml\",\"Disable\":false},\"Type\":\"skills\",\"Weight\":0}]"
       };
 
       let history = [];
@@ -72,6 +73,7 @@ Increased Effect: Situation die bonus of -1 at rank 3, -2 at rank 6, -3 at rank 
 </script>
 
 <script src="/js/table-toggle.js"></script>
+
 
   
   
@@ -160,6 +162,7 @@ Biology: The study of organisms and biochemical processes. Botany: The study of 
         return;
       }
 
+      const currentLang = "es";
       const currentUrl = "\/es\/skills\/life-science\/biology-botany-zoology\/";
       const fragment = document.createDocumentFragment();
 
@@ -175,12 +178,22 @@ Biology: The study of organisms and biochemical processes. Botany: The study of 
         }
 
         const li = document.createElement('li');
-        if (page.url === currentUrl && index === 0) {
+        let targetUrl = page.url;
+
+        
+        if (page.translations) {
+          const translation = page.translations.find(t => t.Lang === currentLang);
+          if (translation) {
+            targetUrl = translation.Permalink;
+          }
+        }
+
+        if (targetUrl === currentUrl && index === 0) {
           li.className = "current-page f4 fw6 neon-text truncate";
           li.textContent = page.title;
         } else {
           const a = document.createElement('a');
-          a.href = page.url;
+          a.href = targetUrl;
           a.textContent = page.title;
           a.className = "truncate";
           li.appendChild(a);
@@ -194,6 +207,7 @@ Biology: The study of organisms and biochemical processes. Botany: The study of 
     }
   })();
 </script>
+
     <h1 class="f1 athelas mt3 mb1">
       Biología, Botánica, Zoología (INT)
     </h1>

@@ -79,7 +79,8 @@ Amazing: Identify the exact specialty skill(s) being used.
       const currentPage = {
         title: "Sensibilidad",
         url: "\/es\/skills\/esp\/sensitivity\/",
-        translationKey: "\/skills\/esp\/sensitivity"
+        translationKey: "\/skills\/esp\/sensitivity",
+        translations: "[{\"Date\":\"0001-01-01T00:00:00Z\",\"Lastmod\":\"0001-01-01T00:00:00Z\",\"PublishDate\":\"0001-01-01T00:00:00Z\",\"ExpiryDate\":\"0001-01-01T00:00:00Z\",\"Aliases\":[],\"BundleType\":\"\",\"Description\":\"\",\"Draft\":false,\"IsHome\":false,\"Keywords\":null,\"Kind\":\"page\",\"Layout\":\"\",\"LinkTitle\":\"Sensitivity\",\"IsNode\":false,\"IsPage\":true,\"Path\":\"/skills/esp/sensitivity\",\"Slug\":\"\",\"Lang\":\"en\",\"IsSection\":false,\"Section\":\"skills\",\"Sitemap\":{\"ChangeFreq\":\"\",\"Priority\":-1,\"Filename\":\"sitemap.xml\",\"Disable\":false},\"Type\":\"skills\",\"Weight\":0},{\"Date\":\"0001-01-01T00:00:00Z\",\"Lastmod\":\"0001-01-01T00:00:00Z\",\"PublishDate\":\"0001-01-01T00:00:00Z\",\"ExpiryDate\":\"0001-01-01T00:00:00Z\",\"Aliases\":[],\"BundleType\":\"\",\"Description\":\"\",\"Draft\":false,\"IsHome\":false,\"Keywords\":null,\"Kind\":\"page\",\"Layout\":\"\",\"LinkTitle\":\"Sensibilidad\",\"IsNode\":false,\"IsPage\":true,\"Path\":\"/skills/esp/sensitivity\",\"Slug\":\"\",\"Lang\":\"es\",\"IsSection\":false,\"Section\":\"skills\",\"Sitemap\":{\"ChangeFreq\":\"\",\"Priority\":-1,\"Filename\":\"sitemap.xml\",\"Disable\":false},\"Type\":\"skills\",\"Weight\":0}]"
       };
 
       let history = [];
@@ -110,6 +111,7 @@ Amazing: Identify the exact specialty skill(s) being used.
 </script>
 
 <script src="/js/table-toggle.js"></script>
+
 
   
   
@@ -198,6 +200,7 @@ Results Ordinary: Aware of psionic skill within 20m and identifying the source c
         return;
       }
 
+      const currentLang = "es";
       const currentUrl = "\/es\/skills\/esp\/sensitivity\/";
       const fragment = document.createDocumentFragment();
 
@@ -213,12 +216,22 @@ Results Ordinary: Aware of psionic skill within 20m and identifying the source c
         }
 
         const li = document.createElement('li');
-        if (page.url === currentUrl && index === 0) {
+        let targetUrl = page.url;
+
+        
+        if (page.translations) {
+          const translation = page.translations.find(t => t.Lang === currentLang);
+          if (translation) {
+            targetUrl = translation.Permalink;
+          }
+        }
+
+        if (targetUrl === currentUrl && index === 0) {
           li.className = "current-page f4 fw6 neon-text truncate";
           li.textContent = page.title;
         } else {
           const a = document.createElement('a');
-          a.href = page.url;
+          a.href = targetUrl;
           a.textContent = page.title;
           a.className = "truncate";
           li.appendChild(a);
@@ -232,6 +245,7 @@ Results Ordinary: Aware of psionic skill within 20m and identifying the source c
     }
   })();
 </script>
+
     <h1 class="f1 athelas mt3 mb1">
       Sensibilidad (INT)
     </h1>

@@ -158,16 +158,16 @@
                 href="http://localhost:1313/skills/athletics/"
                 />
   </url><url>
-    <loc>http://localhost:1313/character-creation/</loc>
+    <loc>http://localhost:1313/core-mechanics/character-creation/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://localhost:1313/es/character-creation/"
+                href="http://localhost:1313/es/core-mechanics/character-creation/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/character-creation/"
+                href="http://localhost:1313/core-mechanics/character-creation/"
                 />
   </url><url>
     <loc>http://localhost:1313/skills/computer-science/</loc>
@@ -276,6 +276,18 @@
                 rel="alternate"
                 hreflang="en"
                 href="http://localhost:1313/rules/chapter-03/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/core-mechanics/character-advancement/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="http://localhost:1313/es/core-mechanics/character-advancement/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/core-mechanics/character-advancement/"
                 />
   </url><url>
     <loc>http://localhost:1313/skills/demolitions/</loc>

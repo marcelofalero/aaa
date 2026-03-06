@@ -42,7 +42,8 @@ If a hero decides to cheat, different modifiers apply:">
       const currentPage = {
         title: "Gamble",
         url: "\/skills\/deception\/gamble\/",
-        translationKey: "\/skills\/deception\/gamble"
+        translationKey: "\/skills\/deception\/gamble",
+        translations: "[{\"Date\":\"0001-01-01T00:00:00Z\",\"Lastmod\":\"0001-01-01T00:00:00Z\",\"PublishDate\":\"0001-01-01T00:00:00Z\",\"ExpiryDate\":\"0001-01-01T00:00:00Z\",\"Aliases\":[],\"BundleType\":\"\",\"Description\":\"\",\"Draft\":false,\"IsHome\":false,\"Keywords\":null,\"Kind\":\"page\",\"Layout\":\"\",\"LinkTitle\":\"Gamble\",\"IsNode\":false,\"IsPage\":true,\"Path\":\"/skills/deception/gamble\",\"Slug\":\"\",\"Lang\":\"en\",\"IsSection\":false,\"Section\":\"skills\",\"Sitemap\":{\"ChangeFreq\":\"\",\"Priority\":-1,\"Filename\":\"sitemap.xml\",\"Disable\":false},\"Type\":\"skills\",\"Weight\":0},{\"Date\":\"0001-01-01T00:00:00Z\",\"Lastmod\":\"0001-01-01T00:00:00Z\",\"PublishDate\":\"0001-01-01T00:00:00Z\",\"ExpiryDate\":\"0001-01-01T00:00:00Z\",\"Aliases\":[],\"BundleType\":\"\",\"Description\":\"\",\"Draft\":false,\"IsHome\":false,\"Keywords\":null,\"Kind\":\"page\",\"Layout\":\"\",\"LinkTitle\":\"Jugar\",\"IsNode\":false,\"IsPage\":true,\"Path\":\"/skills/deception/gamble\",\"Slug\":\"\",\"Lang\":\"es\",\"IsSection\":false,\"Section\":\"skills\",\"Sitemap\":{\"ChangeFreq\":\"\",\"Priority\":-1,\"Filename\":\"sitemap.xml\",\"Disable\":false},\"Type\":\"skills\",\"Weight\":0}]"
       };
 
       let history = [];
@@ -73,6 +74,7 @@ If a hero decides to cheat, different modifiers apply:">
 </script>
 
 <script src="/js/table-toggle.js"></script>
+
 
   
   
@@ -167,6 +169,7 @@ Untrained opponent: -2 bonus. Trained opponent (same or lower rank): no modifier
         return;
       }
 
+      const currentLang = "en";
       const currentUrl = "\/skills\/deception\/gamble\/";
       const fragment = document.createDocumentFragment();
 
@@ -182,12 +185,22 @@ Untrained opponent: -2 bonus. Trained opponent (same or lower rank): no modifier
         }
 
         const li = document.createElement('li');
-        if (page.url === currentUrl && index === 0) {
+        let targetUrl = page.url;
+
+        
+        if (page.translations) {
+          const translation = page.translations.find(t => t.Lang === currentLang);
+          if (translation) {
+            targetUrl = translation.Permalink;
+          }
+        }
+
+        if (targetUrl === currentUrl && index === 0) {
           li.className = "current-page f4 fw6 neon-text truncate";
           li.textContent = page.title;
         } else {
           const a = document.createElement('a');
-          a.href = page.url;
+          a.href = targetUrl;
           a.textContent = page.title;
           a.className = "truncate";
           li.appendChild(a);
@@ -201,6 +214,7 @@ Untrained opponent: -2 bonus. Trained opponent (same or lower rank): no modifier
     }
   })();
 </script>
+
     <h1 class="f1 athelas mt3 mb1">
       Gamble (PER)
     </h1>

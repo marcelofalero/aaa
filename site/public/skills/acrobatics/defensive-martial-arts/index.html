@@ -40,7 +40,8 @@ Rank 4, 8, 12 [Resistance Modifier]: The hero&rsquo;s Strength resistance modifi
       const currentPage = {
         title: "Defensive Martial Arts",
         url: "\/skills\/acrobatics\/defensive-martial-arts\/",
-        translationKey: "\/skills\/acrobatics\/defensive-martial-arts"
+        translationKey: "\/skills\/acrobatics\/defensive-martial-arts",
+        translations: "[{\"Date\":\"0001-01-01T00:00:00Z\",\"Lastmod\":\"0001-01-01T00:00:00Z\",\"PublishDate\":\"0001-01-01T00:00:00Z\",\"ExpiryDate\":\"0001-01-01T00:00:00Z\",\"Aliases\":[],\"BundleType\":\"\",\"Description\":\"\",\"Draft\":false,\"IsHome\":false,\"Keywords\":null,\"Kind\":\"page\",\"Layout\":\"\",\"LinkTitle\":\"Defensive Martial Arts\",\"IsNode\":false,\"IsPage\":true,\"Path\":\"/skills/acrobatics/defensive-martial-arts\",\"Slug\":\"\",\"Lang\":\"en\",\"IsSection\":false,\"Section\":\"skills\",\"Sitemap\":{\"ChangeFreq\":\"\",\"Priority\":-1,\"Filename\":\"sitemap.xml\",\"Disable\":false},\"Type\":\"skills\",\"Weight\":0},{\"Date\":\"0001-01-01T00:00:00Z\",\"Lastmod\":\"0001-01-01T00:00:00Z\",\"PublishDate\":\"0001-01-01T00:00:00Z\",\"ExpiryDate\":\"0001-01-01T00:00:00Z\",\"Aliases\":[],\"BundleType\":\"\",\"Description\":\"\",\"Draft\":false,\"IsHome\":false,\"Keywords\":null,\"Kind\":\"page\",\"Layout\":\"\",\"LinkTitle\":\"Artes marciales defensivas\",\"IsNode\":false,\"IsPage\":true,\"Path\":\"/skills/acrobatics/defensive-martial-arts\",\"Slug\":\"\",\"Lang\":\"es\",\"IsSection\":false,\"Section\":\"skills\",\"Sitemap\":{\"ChangeFreq\":\"\",\"Priority\":-1,\"Filename\":\"sitemap.xml\",\"Disable\":false},\"Type\":\"skills\",\"Weight\":0}]"
       };
 
       let history = [];
@@ -71,6 +72,7 @@ Rank 4, 8, 12 [Resistance Modifier]: The hero&rsquo;s Strength resistance modifi
 </script>
 
 <script src="/js/table-toggle.js"></script>
+
 
   
   
@@ -165,6 +167,7 @@ Rank Benefits Rank 2 [Block]: Attempt to block or counter an unarmed attack. The
         return;
       }
 
+      const currentLang = "en";
       const currentUrl = "\/skills\/acrobatics\/defensive-martial-arts\/";
       const fragment = document.createDocumentFragment();
 
@@ -180,12 +183,22 @@ Rank Benefits Rank 2 [Block]: Attempt to block or counter an unarmed attack. The
         }
 
         const li = document.createElement('li');
-        if (page.url === currentUrl && index === 0) {
+        let targetUrl = page.url;
+
+        
+        if (page.translations) {
+          const translation = page.translations.find(t => t.Lang === currentLang);
+          if (translation) {
+            targetUrl = translation.Permalink;
+          }
+        }
+
+        if (targetUrl === currentUrl && index === 0) {
           li.className = "current-page f4 fw6 neon-text truncate";
           li.textContent = page.title;
         } else {
           const a = document.createElement('a');
-          a.href = page.url;
+          a.href = targetUrl;
           a.textContent = page.title;
           a.className = "truncate";
           li.appendChild(a);
@@ -199,6 +212,7 @@ Rank Benefits Rank 2 [Block]: Attempt to block or counter an unarmed attack. The
     }
   })();
 </script>
+
     <h1 class="f1 athelas mt3 mb1">
       Defensive Martial Arts (U) (DEX)
     </h1>

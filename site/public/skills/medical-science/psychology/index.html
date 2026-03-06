@@ -36,7 +36,8 @@ Increased Effect: Situation die bonus of -1 at rank 3, -2 at rank 6, -3 at rank 
       const currentPage = {
         title: "Psychology",
         url: "\/skills\/medical-science\/psychology\/",
-        translationKey: "\/skills\/medical-science\/psychology"
+        translationKey: "\/skills\/medical-science\/psychology",
+        translations: "[{\"Date\":\"0001-01-01T00:00:00Z\",\"Lastmod\":\"0001-01-01T00:00:00Z\",\"PublishDate\":\"0001-01-01T00:00:00Z\",\"ExpiryDate\":\"0001-01-01T00:00:00Z\",\"Aliases\":[],\"BundleType\":\"\",\"Description\":\"\",\"Draft\":false,\"IsHome\":false,\"Keywords\":null,\"Kind\":\"page\",\"Layout\":\"\",\"LinkTitle\":\"Psychology\",\"IsNode\":false,\"IsPage\":true,\"Path\":\"/skills/medical-science/psychology\",\"Slug\":\"\",\"Lang\":\"en\",\"IsSection\":false,\"Section\":\"skills\",\"Sitemap\":{\"ChangeFreq\":\"\",\"Priority\":-1,\"Filename\":\"sitemap.xml\",\"Disable\":false},\"Type\":\"skills\",\"Weight\":0},{\"Date\":\"0001-01-01T00:00:00Z\",\"Lastmod\":\"0001-01-01T00:00:00Z\",\"PublishDate\":\"0001-01-01T00:00:00Z\",\"ExpiryDate\":\"0001-01-01T00:00:00Z\",\"Aliases\":[],\"BundleType\":\"\",\"Description\":\"\",\"Draft\":false,\"IsHome\":false,\"Keywords\":null,\"Kind\":\"page\",\"Layout\":\"\",\"LinkTitle\":\"Psicología\",\"IsNode\":false,\"IsPage\":true,\"Path\":\"/skills/medical-science/psychology\",\"Slug\":\"\",\"Lang\":\"es\",\"IsSection\":false,\"Section\":\"skills\",\"Sitemap\":{\"ChangeFreq\":\"\",\"Priority\":-1,\"Filename\":\"sitemap.xml\",\"Disable\":false},\"Type\":\"skills\",\"Weight\":0}]"
       };
 
       let history = [];
@@ -67,6 +68,7 @@ Increased Effect: Situation die bonus of -1 at rank 3, -2 at rank 6, -3 at rank 
 </script>
 
 <script src="/js/table-toggle.js"></script>
+
 
   
   
@@ -155,6 +157,7 @@ Rank Benefits Increased Effect: Situation die bonus of -1 at rank 3, -2 at rank 
         return;
       }
 
+      const currentLang = "en";
       const currentUrl = "\/skills\/medical-science\/psychology\/";
       const fragment = document.createDocumentFragment();
 
@@ -170,12 +173,22 @@ Rank Benefits Increased Effect: Situation die bonus of -1 at rank 3, -2 at rank 
         }
 
         const li = document.createElement('li');
-        if (page.url === currentUrl && index === 0) {
+        let targetUrl = page.url;
+
+        
+        if (page.translations) {
+          const translation = page.translations.find(t => t.Lang === currentLang);
+          if (translation) {
+            targetUrl = translation.Permalink;
+          }
+        }
+
+        if (targetUrl === currentUrl && index === 0) {
           li.className = "current-page f4 fw6 neon-text truncate";
           li.textContent = page.title;
         } else {
           const a = document.createElement('a');
-          a.href = page.url;
+          a.href = targetUrl;
           a.textContent = page.title;
           a.className = "truncate";
           li.appendChild(a);
@@ -189,6 +202,7 @@ Rank Benefits Increased Effect: Situation die bonus of -1 at rank 3, -2 at rank 
     }
   })();
 </script>
+
     <h1 class="f1 athelas mt3 mb1">
       Psychology (INT)
     </h1>

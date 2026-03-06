@@ -2145,7 +2145,8 @@ Zero-G Web: A network of elastic lines and handles deployed in a room to facilit
       const currentPage = {
         title: "Bienes y servicios",
         url: "\/es\/equipment\/goods-and-services\/",
-        translationKey: "\/equipment\/goods-and-services"
+        translationKey: "\/equipment\/goods-and-services",
+        translations: "[{\"Date\":\"0001-01-01T00:00:00Z\",\"Lastmod\":\"0001-01-01T00:00:00Z\",\"PublishDate\":\"0001-01-01T00:00:00Z\",\"ExpiryDate\":\"0001-01-01T00:00:00Z\",\"Aliases\":[],\"BundleType\":\"\",\"Description\":\"\",\"Draft\":false,\"IsHome\":false,\"Keywords\":null,\"Kind\":\"page\",\"Layout\":\"\",\"LinkTitle\":\"Goods \\u0026 Services\",\"IsNode\":false,\"IsPage\":true,\"Path\":\"/equipment/goods-and-services\",\"Slug\":\"\",\"Lang\":\"en\",\"IsSection\":false,\"Section\":\"equipment\",\"Sitemap\":{\"ChangeFreq\":\"\",\"Priority\":-1,\"Filename\":\"sitemap.xml\",\"Disable\":false},\"Type\":\"equipment\",\"Weight\":1},{\"Date\":\"0001-01-01T00:00:00Z\",\"Lastmod\":\"0001-01-01T00:00:00Z\",\"PublishDate\":\"0001-01-01T00:00:00Z\",\"ExpiryDate\":\"0001-01-01T00:00:00Z\",\"Aliases\":[],\"BundleType\":\"\",\"Description\":\"\",\"Draft\":false,\"IsHome\":false,\"Keywords\":null,\"Kind\":\"page\",\"Layout\":\"\",\"LinkTitle\":\"Bienes y servicios\",\"IsNode\":false,\"IsPage\":true,\"Path\":\"/equipment/goods-and-services\",\"Slug\":\"\",\"Lang\":\"es\",\"IsSection\":false,\"Section\":\"equipment\",\"Sitemap\":{\"ChangeFreq\":\"\",\"Priority\":-1,\"Filename\":\"sitemap.xml\",\"Disable\":false},\"Type\":\"equipment\",\"Weight\":1}]"
       };
 
       let history = [];
@@ -2176,6 +2177,7 @@ Zero-G Web: A network of elastic lines and handles deployed in a room to facilit
 </script>
 
 <script src="/js/table-toggle.js"></script>
+
 
   
   
@@ -2271,6 +2273,7 @@ Personal Equipment Clothing and Accessories Item PL Mass (kg) Cost ($) Antiscan 
         return;
       }
 
+      const currentLang = "es";
       const currentUrl = "\/es\/equipment\/goods-and-services\/";
       const fragment = document.createDocumentFragment();
 
@@ -2286,12 +2289,22 @@ Personal Equipment Clothing and Accessories Item PL Mass (kg) Cost ($) Antiscan 
         }
 
         const li = document.createElement('li');
-        if (page.url === currentUrl && index === 0) {
+        let targetUrl = page.url;
+
+        
+        if (page.translations) {
+          const translation = page.translations.find(t => t.Lang === currentLang);
+          if (translation) {
+            targetUrl = translation.Permalink;
+          }
+        }
+
+        if (targetUrl === currentUrl && index === 0) {
           li.className = "current-page f4 fw6 neon-text truncate";
           li.textContent = page.title;
         } else {
           const a = document.createElement('a');
-          a.href = page.url;
+          a.href = targetUrl;
           a.textContent = page.title;
           a.className = "truncate";
           li.appendChild(a);
@@ -2305,6 +2318,7 @@ Personal Equipment Clothing and Accessories Item PL Mass (kg) Cost ($) Antiscan 
     }
   })();
 </script>
+
       
 
       

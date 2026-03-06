@@ -42,7 +42,8 @@ Resist pain only lessens or eliminates situation penalties caused by cumulative 
       const currentPage = {
         title: "Resistir el dolor",
         url: "\/es\/skills\/stamina\/resist-pain\/",
-        translationKey: "\/skills\/stamina\/resist-pain"
+        translationKey: "\/skills\/stamina\/resist-pain",
+        translations: "[{\"Date\":\"0001-01-01T00:00:00Z\",\"Lastmod\":\"0001-01-01T00:00:00Z\",\"PublishDate\":\"0001-01-01T00:00:00Z\",\"ExpiryDate\":\"0001-01-01T00:00:00Z\",\"Aliases\":[],\"BundleType\":\"\",\"Description\":\"\",\"Draft\":false,\"IsHome\":false,\"Keywords\":null,\"Kind\":\"page\",\"Layout\":\"\",\"LinkTitle\":\"Resist Pain\",\"IsNode\":false,\"IsPage\":true,\"Path\":\"/skills/stamina/resist-pain\",\"Slug\":\"\",\"Lang\":\"en\",\"IsSection\":false,\"Section\":\"skills\",\"Sitemap\":{\"ChangeFreq\":\"\",\"Priority\":-1,\"Filename\":\"sitemap.xml\",\"Disable\":false},\"Type\":\"skills\",\"Weight\":0},{\"Date\":\"0001-01-01T00:00:00Z\",\"Lastmod\":\"0001-01-01T00:00:00Z\",\"PublishDate\":\"0001-01-01T00:00:00Z\",\"ExpiryDate\":\"0001-01-01T00:00:00Z\",\"Aliases\":[],\"BundleType\":\"\",\"Description\":\"\",\"Draft\":false,\"IsHome\":false,\"Keywords\":null,\"Kind\":\"page\",\"Layout\":\"\",\"LinkTitle\":\"Resistir el dolor\",\"IsNode\":false,\"IsPage\":true,\"Path\":\"/skills/stamina/resist-pain\",\"Slug\":\"\",\"Lang\":\"es\",\"IsSection\":false,\"Section\":\"skills\",\"Sitemap\":{\"ChangeFreq\":\"\",\"Priority\":-1,\"Filename\":\"sitemap.xml\",\"Disable\":false},\"Type\":\"skills\",\"Weight\":0}]"
       };
 
       let history = [];
@@ -73,6 +74,7 @@ Resist pain only lessens or eliminates situation penalties caused by cumulative 
 </script>
 
 <script src="/js/table-toggle.js"></script>
+
 
   
   
@@ -164,6 +166,7 @@ Results Critical Failure: Hero succumbs to the pain and can’t act for 2d4 phas
         return;
       }
 
+      const currentLang = "es";
       const currentUrl = "\/es\/skills\/stamina\/resist-pain\/";
       const fragment = document.createDocumentFragment();
 
@@ -179,12 +182,22 @@ Results Critical Failure: Hero succumbs to the pain and can’t act for 2d4 phas
         }
 
         const li = document.createElement('li');
-        if (page.url === currentUrl && index === 0) {
+        let targetUrl = page.url;
+
+        
+        if (page.translations) {
+          const translation = page.translations.find(t => t.Lang === currentLang);
+          if (translation) {
+            targetUrl = translation.Permalink;
+          }
+        }
+
+        if (targetUrl === currentUrl && index === 0) {
           li.className = "current-page f4 fw6 neon-text truncate";
           li.textContent = page.title;
         } else {
           const a = document.createElement('a');
-          a.href = page.url;
+          a.href = targetUrl;
           a.textContent = page.title;
           a.className = "truncate";
           li.appendChild(a);
@@ -198,6 +211,7 @@ Results Critical Failure: Hero succumbs to the pain and can’t act for 2d4 phas
     }
   })();
 </script>
+
     <h1 class="f1 athelas mt3 mb1">
       Resistir el dolor (U) (CON)
     </h1>

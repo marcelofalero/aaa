@@ -36,7 +36,8 @@ Increased Effect: Situation die bonus of -1 step at rank 3, -2 at rank 6, -3 at 
       const currentPage = {
         title: "Química",
         url: "\/es\/skills\/physical-science\/chemistry\/",
-        translationKey: "\/skills\/physical-science\/chemistry"
+        translationKey: "\/skills\/physical-science\/chemistry",
+        translations: "[{\"Date\":\"0001-01-01T00:00:00Z\",\"Lastmod\":\"0001-01-01T00:00:00Z\",\"PublishDate\":\"0001-01-01T00:00:00Z\",\"ExpiryDate\":\"0001-01-01T00:00:00Z\",\"Aliases\":[],\"BundleType\":\"\",\"Description\":\"\",\"Draft\":false,\"IsHome\":false,\"Keywords\":null,\"Kind\":\"page\",\"Layout\":\"\",\"LinkTitle\":\"Chemistry\",\"IsNode\":false,\"IsPage\":true,\"Path\":\"/skills/physical-science/chemistry\",\"Slug\":\"\",\"Lang\":\"en\",\"IsSection\":false,\"Section\":\"skills\",\"Sitemap\":{\"ChangeFreq\":\"\",\"Priority\":-1,\"Filename\":\"sitemap.xml\",\"Disable\":false},\"Type\":\"skills\",\"Weight\":0},{\"Date\":\"0001-01-01T00:00:00Z\",\"Lastmod\":\"0001-01-01T00:00:00Z\",\"PublishDate\":\"0001-01-01T00:00:00Z\",\"ExpiryDate\":\"0001-01-01T00:00:00Z\",\"Aliases\":[],\"BundleType\":\"\",\"Description\":\"\",\"Draft\":false,\"IsHome\":false,\"Keywords\":null,\"Kind\":\"page\",\"Layout\":\"\",\"LinkTitle\":\"Química\",\"IsNode\":false,\"IsPage\":true,\"Path\":\"/skills/physical-science/chemistry\",\"Slug\":\"\",\"Lang\":\"es\",\"IsSection\":false,\"Section\":\"skills\",\"Sitemap\":{\"ChangeFreq\":\"\",\"Priority\":-1,\"Filename\":\"sitemap.xml\",\"Disable\":false},\"Type\":\"skills\",\"Weight\":0}]"
       };
 
       let history = [];
@@ -67,6 +68,7 @@ Increased Effect: Situation die bonus of -1 step at rank 3, -2 at rank 6, -3 at 
 </script>
 
 <script src="/js/table-toggle.js"></script>
+
 
   
   
@@ -155,6 +157,7 @@ Rank Benefits Increased Effect: Situation die bonus of -1 step at rank 3, -2 at 
         return;
       }
 
+      const currentLang = "es";
       const currentUrl = "\/es\/skills\/physical-science\/chemistry\/";
       const fragment = document.createDocumentFragment();
 
@@ -170,12 +173,22 @@ Rank Benefits Increased Effect: Situation die bonus of -1 step at rank 3, -2 at 
         }
 
         const li = document.createElement('li');
-        if (page.url === currentUrl && index === 0) {
+        let targetUrl = page.url;
+
+        
+        if (page.translations) {
+          const translation = page.translations.find(t => t.Lang === currentLang);
+          if (translation) {
+            targetUrl = translation.Permalink;
+          }
+        }
+
+        if (targetUrl === currentUrl && index === 0) {
           li.className = "current-page f4 fw6 neon-text truncate";
           li.textContent = page.title;
         } else {
           const a = document.createElement('a');
-          a.href = page.url;
+          a.href = targetUrl;
           a.textContent = page.title;
           a.className = "truncate";
           li.appendChild(a);
@@ -189,6 +202,7 @@ Rank Benefits Increased Effect: Situation die bonus of -1 step at rank 3, -2 at 
     }
   })();
 </script>
+
     <h1 class="f1 athelas mt3 mb1">
       Química (INT)
     </h1>

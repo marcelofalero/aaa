@@ -35,7 +35,8 @@ Shaking Off Stuns: A character with the combat armor skill at rank 5 or higher c
       const currentPage = {
         title: "Rank Benefits",
         url: "\/skills\/armor-operation\/rank-benefits\/",
-        translationKey: "\/skills\/armor-operation\/rank-benefits"
+        translationKey: "\/skills\/armor-operation\/rank-benefits",
+        translations: "[{\"Date\":\"0001-01-01T00:00:00Z\",\"Lastmod\":\"0001-01-01T00:00:00Z\",\"PublishDate\":\"0001-01-01T00:00:00Z\",\"ExpiryDate\":\"0001-01-01T00:00:00Z\",\"Aliases\":[],\"BundleType\":\"\",\"Description\":\"\",\"Draft\":false,\"IsHome\":false,\"Keywords\":null,\"Kind\":\"page\",\"Layout\":\"\",\"LinkTitle\":\"Rank Benefits\",\"IsNode\":false,\"IsPage\":true,\"Path\":\"/skills/armor-operation/rank-benefits\",\"Slug\":\"\",\"Lang\":\"en\",\"IsSection\":false,\"Section\":\"skills\",\"Sitemap\":{\"ChangeFreq\":\"\",\"Priority\":-1,\"Filename\":\"sitemap.xml\",\"Disable\":false},\"Type\":\"skills\",\"Weight\":0},{\"Date\":\"0001-01-01T00:00:00Z\",\"Lastmod\":\"0001-01-01T00:00:00Z\",\"PublishDate\":\"0001-01-01T00:00:00Z\",\"ExpiryDate\":\"0001-01-01T00:00:00Z\",\"Aliases\":[],\"BundleType\":\"\",\"Description\":\"\",\"Draft\":false,\"IsHome\":false,\"Keywords\":null,\"Kind\":\"page\",\"Layout\":\"\",\"LinkTitle\":\"Beneficios de rango\",\"IsNode\":false,\"IsPage\":true,\"Path\":\"/skills/armor-operation/rank-benefits\",\"Slug\":\"\",\"Lang\":\"es\",\"IsSection\":false,\"Section\":\"skills\",\"Sitemap\":{\"ChangeFreq\":\"\",\"Priority\":-1,\"Filename\":\"sitemap.xml\",\"Disable\":false},\"Type\":\"skills\",\"Weight\":0}]"
       };
 
       let history = [];
@@ -66,6 +67,7 @@ Shaking Off Stuns: A character with the combat armor skill at rank 5 or higher c
 </script>
 
 <script src="/js/table-toggle.js"></script>
+
 
   
   
@@ -151,6 +153,7 @@ Shaking Off Stuns: A character with the combat armor skill at rank 5 or higher c
         return;
       }
 
+      const currentLang = "en";
       const currentUrl = "\/skills\/armor-operation\/rank-benefits\/";
       const fragment = document.createDocumentFragment();
 
@@ -166,12 +169,22 @@ Shaking Off Stuns: A character with the combat armor skill at rank 5 or higher c
         }
 
         const li = document.createElement('li');
-        if (page.url === currentUrl && index === 0) {
+        let targetUrl = page.url;
+
+        
+        if (page.translations) {
+          const translation = page.translations.find(t => t.Lang === currentLang);
+          if (translation) {
+            targetUrl = translation.Permalink;
+          }
+        }
+
+        if (targetUrl === currentUrl && index === 0) {
           li.className = "current-page f4 fw6 neon-text truncate";
           li.textContent = page.title;
         } else {
           const a = document.createElement('a');
-          a.href = page.url;
+          a.href = targetUrl;
           a.textContent = page.title;
           a.className = "truncate";
           li.appendChild(a);
@@ -185,6 +198,7 @@ Shaking Off Stuns: A character with the combat armor skill at rank 5 or higher c
     }
   })();
 </script>
+
     <h1 class="f1 athelas mt3 mb1">
       Rank Benefits (STR)
     </h1>

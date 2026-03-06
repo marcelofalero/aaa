@@ -1,11 +1,11 @@
 <script>
   (function () {
     try {
-      // Use Hugo template variables to get current page info
       const currentPage = {
-        title: "{{ if .IsHome }}Index{{ else }}{{ .Title }}{{ end }}",
-        url: "{{ .RelPermalink }}",
-        translationKey: "{{ .TranslationKey }}"
+        // Use TranslationKey as the unique, language-independent identifier
+        id: "{{ .TranslationKey }}",
+        // Store the title for immediate display, it will be replaced if language changes
+        title: "{{ if .IsHome }}Index{{ else }}{{ .Title }}{{ end }}"
       };
 
       let history = [];
@@ -16,14 +16,12 @@
         history = [];
       }
 
-      // Remove any existing entry for the current page to avoid duplicates, including its translations
-      history = history.filter(page => page.url !== currentPage.url && (!page.translationKey || page.translationKey !== currentPage.translationKey));
+      // Remove any previous entry for this page using the unique ID
+      history = history.filter(page => page.id !== currentPage.id);
 
       // Add current page to the end
       history.push(currentPage);
 
-      // Limit history length to avoid excessive storage usage
-      // 20 seems reasonable for a browsing session
       if (history.length > 20) {
         history.shift();
       }

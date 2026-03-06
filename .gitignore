@@ -1,9 +1,10 @@
-public/
 resources/_gen/
 .hugo_build.lock
 hugo_server.log
 hugo_startup.log
+/site/public/
+terraform.tfstate*
+terraform.tfstate
 .env
-site/trans_env
 /site/trans_env/
-public/**
+

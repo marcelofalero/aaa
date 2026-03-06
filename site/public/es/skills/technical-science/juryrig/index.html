@@ -45,7 +45,8 @@ Improved Juryrig: At rank 6: Ordinary produces a Good result, Good produces an A
       const currentPage = {
         title: "Jurado",
         url: "\/es\/skills\/technical-science\/juryrig\/",
-        translationKey: "\/skills\/technical-science\/juryrig"
+        translationKey: "\/skills\/technical-science\/juryrig",
+        translations: "[{\"Date\":\"0001-01-01T00:00:00Z\",\"Lastmod\":\"0001-01-01T00:00:00Z\",\"PublishDate\":\"0001-01-01T00:00:00Z\",\"ExpiryDate\":\"0001-01-01T00:00:00Z\",\"Aliases\":[],\"BundleType\":\"\",\"Description\":\"\",\"Draft\":false,\"IsHome\":false,\"Keywords\":null,\"Kind\":\"page\",\"Layout\":\"\",\"LinkTitle\":\"Juryrig\",\"IsNode\":false,\"IsPage\":true,\"Path\":\"/skills/technical-science/juryrig\",\"Slug\":\"\",\"Lang\":\"en\",\"IsSection\":false,\"Section\":\"skills\",\"Sitemap\":{\"ChangeFreq\":\"\",\"Priority\":-1,\"Filename\":\"sitemap.xml\",\"Disable\":false},\"Type\":\"skills\",\"Weight\":0},{\"Date\":\"0001-01-01T00:00:00Z\",\"Lastmod\":\"0001-01-01T00:00:00Z\",\"PublishDate\":\"0001-01-01T00:00:00Z\",\"ExpiryDate\":\"0001-01-01T00:00:00Z\",\"Aliases\":[],\"BundleType\":\"\",\"Description\":\"\",\"Draft\":false,\"IsHome\":false,\"Keywords\":null,\"Kind\":\"page\",\"Layout\":\"\",\"LinkTitle\":\"Jurado\",\"IsNode\":false,\"IsPage\":true,\"Path\":\"/skills/technical-science/juryrig\",\"Slug\":\"\",\"Lang\":\"es\",\"IsSection\":false,\"Section\":\"skills\",\"Sitemap\":{\"ChangeFreq\":\"\",\"Priority\":-1,\"Filename\":\"sitemap.xml\",\"Disable\":false},\"Type\":\"skills\",\"Weight\":0}]"
       };
 
       let history = [];
@@ -76,6 +77,7 @@ Improved Juryrig: At rank 6: Ordinary produces a Good result, Good produces an A
 </script>
 
 <script src="/js/table-toggle.js"></script>
+
 
   
   
@@ -167,6 +169,7 @@ Results Critical Failure: System becomes unusable and requires full repairs. Fai
         return;
       }
 
+      const currentLang = "es";
       const currentUrl = "\/es\/skills\/technical-science\/juryrig\/";
       const fragment = document.createDocumentFragment();
 
@@ -182,12 +185,22 @@ Results Critical Failure: System becomes unusable and requires full repairs. Fai
         }
 
         const li = document.createElement('li');
-        if (page.url === currentUrl && index === 0) {
+        let targetUrl = page.url;
+
+        
+        if (page.translations) {
+          const translation = page.translations.find(t => t.Lang === currentLang);
+          if (translation) {
+            targetUrl = translation.Permalink;
+          }
+        }
+
+        if (targetUrl === currentUrl && index === 0) {
           li.className = "current-page f4 fw6 neon-text truncate";
           li.textContent = page.title;
         } else {
           const a = document.createElement('a');
-          a.href = page.url;
+          a.href = targetUrl;
           a.textContent = page.title;
           a.className = "truncate";
           li.appendChild(a);
@@ -201,6 +214,7 @@ Results Critical Failure: System becomes unusable and requires full repairs. Fai
     }
   })();
 </script>
+
     <h1 class="f1 athelas mt3 mb1">
       Jurado (INT)
     </h1>

@@ -32,7 +32,8 @@
       const currentPage = {
         title: "Mecánicas principales",
         url: "\/es\/core-mechanics\/",
-        translationKey: "\/core-mechanics"
+        translationKey: "\/core-mechanics",
+        translations: "[{\"Date\":\"0001-01-01T00:00:00Z\",\"Lastmod\":\"0001-01-01T00:00:00Z\",\"PublishDate\":\"0001-01-01T00:00:00Z\",\"ExpiryDate\":\"0001-01-01T00:00:00Z\",\"Aliases\":[],\"BundleType\":\"branch\",\"Description\":\"Welcome to the AAA (Alterated Alternity Alternative).\",\"Draft\":false,\"IsHome\":false,\"Keywords\":null,\"Kind\":\"section\",\"Layout\":\"\",\"LinkTitle\":\"Core Mechanics\",\"IsNode\":true,\"IsPage\":false,\"Path\":\"/core-mechanics\",\"Slug\":\"\",\"Lang\":\"en\",\"IsSection\":true,\"Section\":\"core-mechanics\",\"Sitemap\":{\"ChangeFreq\":\"\",\"Priority\":-1,\"Filename\":\"sitemap.xml\",\"Disable\":false},\"Type\":\"core-mechanics\",\"Weight\":1},{\"Date\":\"0001-01-01T00:00:00Z\",\"Lastmod\":\"0001-01-01T00:00:00Z\",\"PublishDate\":\"0001-01-01T00:00:00Z\",\"ExpiryDate\":\"0001-01-01T00:00:00Z\",\"Aliases\":[],\"BundleType\":\"branch\",\"Description\":\"Bienvenido a AAA (Alterated Alternity Alternative).\",\"Draft\":false,\"IsHome\":false,\"Keywords\":null,\"Kind\":\"section\",\"Layout\":\"\",\"LinkTitle\":\"Mecánicas principales\",\"IsNode\":true,\"IsPage\":false,\"Path\":\"/core-mechanics\",\"Slug\":\"\",\"Lang\":\"es\",\"IsSection\":true,\"Section\":\"core-mechanics\",\"Sitemap\":{\"ChangeFreq\":\"\",\"Priority\":-1,\"Filename\":\"sitemap.xml\",\"Disable\":false},\"Type\":\"core-mechanics\",\"Weight\":1}]"
       };
 
       let history = [];
@@ -63,6 +64,7 @@
 </script>
 
 <script src="/js/table-toggle.js"></script>
+
 
   
   
@@ -152,6 +154,7 @@
         return;
       }
 
+      const currentLang = "es";
       const currentUrl = "\/es\/core-mechanics\/";
       const fragment = document.createDocumentFragment();
 
@@ -167,12 +170,22 @@
         }
 
         const li = document.createElement('li');
-        if (page.url === currentUrl && index === 0) {
+        let targetUrl = page.url;
+
+        
+        if (page.translations) {
+          const translation = page.translations.find(t => t.Lang === currentLang);
+          if (translation) {
+            targetUrl = translation.Permalink;
+          }
+        }
+
+        if (targetUrl === currentUrl && index === 0) {
           li.className = "current-page f4 fw6 neon-text truncate";
           li.textContent = page.title;
         } else {
           const a = document.createElement('a');
-          a.href = page.url;
+          a.href = targetUrl;
           a.textContent = page.title;
           a.className = "truncate";
           li.appendChild(a);
@@ -186,6 +199,7 @@
     }
   })();
 </script>
+
     </div>
     <section class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy nested-links mid-gray">
       <h1 class="f1 athelas">Mecánicas principales</h1><p>Bienvenido a <strong>AAA (Alterated Alternity Alternative)</strong>. Este es mi intento de modernizar y mejorar el juego de rol de ciencia ficción Alternity, manteniendo el espíritu del juego original. Este juego de rol proporciona un marco para todo tipo de aventuras de ciencia ficción, desde contemporáneas hasta de un futuro lejano. Ya seas un explorador al mando de la nueva nave estelar de la flota, un científico que busca una cura para un virus alienígena mortal, o un marine espacial cansado de la batalla que protege la galaxia, puedes experimentar el futuro, ¡una aventura a la vez!</p>
@@ -209,6 +223,32 @@
 <p><strong>¡La acción comienza ahora! Bienvenido al futuro.</strong></p>
 </section>
     <section class="flex-ns mt5 flex-wrap justify-around">
+      
+        <div class="w-100 w-30-l mb4 relative sci-fi-card">
+          <div class="w-100 mb4 nested-copy-line-height relative sci-fi-card pa0">
+  <div class="pa4 overflow-hidden">
+    <span class="f7 db neon-cyan ttu tracked mb2 o-80">Mecánicas principales</span>
+    <h1 class="f3 mt0 mb3">
+      <a href="/es/core-mechanics/character-advancement/" class="link neon-cyan hover-neon-cyan dim no-underline">
+        Avance del Personaje
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height silver mb3">
+      <p>En Alterated Alternity Alternative (AAA), la progresión del personaje no es simplemente un recuento de la experiencia gastada, sino una medida del peso e influencia total de tu personaje en la galaxia. Este peso se rastrea a través de los Puntos de Avance (AP), que representan la suma acumulativa de cada habilidad, ventaja y beneficio adquirido a lo largo de una carrera.</p>
+<h2 id="el-flujo-de-experiencia">El Flujo de Experiencia</h2>
+<p>AAA utiliza un modelo de progresión fluido donde el crecimiento ocurre de manera incremental entre sesiones. Los Puntos de Experiencia (XP) representan la moneda de aprendizaje, usualmente otorgados a un ritmo de 3 a 5 puntos por sesión. Aunque el momento principal para el crecimiento es entre sesiones de juego, el Director de Juego (DJ o GM) puede permitir el gasto inmediato para reflejar una &ldquo;intuición de combate&rdquo; repentina o un arco narrativo exitoso que involucre entrenamiento y estudio.</p>
+    </div>
+    <a href="/es/core-mechanics/character-advancement/"
+      class="ba b--neon-cyan bg-transparent br1 neon-cyan dib f7 hover-bg-neon-cyan hover-white link ph3 pv2 ttu tracked transition-all no-underline">
+      Leer más >>
+    </a>
+  </div>
+  <div class="absolute bottom-0 right-0 o-05 f-headline select-none pointer-events-none z-0"
+    style="line-height: 0.8; margin-bottom: -10px; margin-right: -10px;">
+    A
+  </div>
+</div>
+        </div>
       
     </section>
     </article>
