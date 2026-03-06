@@ -21,3 +21,9 @@ This broad skill provides a hero with an understanding of tactics. A successful 
 - **Infantry Tactics:** Battlefield strategies when individual troops are the main component.
 - **Space Tactics:** Battlefield strategies when spaceships engage in combat.
 - **Vehicle Tactics:** Battlefield strategies when vehicles other than spaceships are the main component.
+
+### Tácticas espaciales
+Combat between spaceships.
+
+### Tácticas de vehículos
+Combat involving air, land, or water vehicles.

@@ -23,3 +23,20 @@ When a hero engages in certain fatigue-causing activities, he must make a Stamin
 ## Specialty Skills
 
 {{% list %}}
+
+### Resistencia
+As a hero acquires ranks in the endurance skill, he becomes more able to withstand the effects of damage. For a character who has this specialty, endurance checks take the place of Stamina checks.
+
+### Resistir el dolor
+*This skill can’t be used untrained.*
+
+Resist pain allows a hero to function normally and ignore some or all of the situation penalties for suffering stun, wound, or mortal damage. A check does not count as an action.
+
+### Results
+- **Critical Failure:** Hero succumbs to the pain and can't act for 2d4 phases.
+- **Failure:** Hero suffers from damage penalties.
+- **Ordinary:** Hero ignores 1 step of penalty.
+- **Good:** Hero ignores 2 steps of penalty.
+- **Amazing:** Hero ignores 3 steps of penalty.
+
+Resist pain only lessens or eliminates situation penalties caused by cumulative damage. It doesn't turn a penalty into a bonus or stave off dying or death.
