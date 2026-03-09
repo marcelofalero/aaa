@@ -5,7 +5,7 @@ description = "Competencia básica para participar en combate físico a corta di
 category = "Combate"
 favored_by = ["Especialista en Combate", "Agente Libre"]
 +++
-
+**Costo:** 6
 El Combate Cuerpo a Cuerpo representa la competencia básica de cualquier combatiente físico que participa en una lucha a corta distancia. Abarca la comprensión esencial del alcance, el tiempo y la transferencia eficiente de la fuerza cinética a través del cuerpo o una herramienta de mano. Un héroe entrenado en esta habilidad general posee una comprensión inherente de la conciencia espacial y la puntería, lo que le permite identificar vulnerabilidades en un oponente mientras mantiene su propio centro de gravedad y postura con el arma durante un intercambio.
 
 El entrenamiento profesional en este campo también facilita el uso de armas de fuego en medio de una lucha. Este entrenamiento elimina las penalizaciones de +1 paso de las pistolas y subfusiles cuando se usan contra un oponente en cuerpo a cuerpo, y elimina la bonificación de +2 pasos para desarmar que un oponente tiene contra ti cuando empuñas un rifle de asalto, un rifle de francotirador o cualquier forma de arma pesada equipada. Además, las pistolas y los subfusiles se manejan con la misma facilidad que las armas cuerpo a cuerpo de una mano; se pueden desenfundar y disparar en cualquier circunstancia en la que se permitiría un cuchillo o una porra.
