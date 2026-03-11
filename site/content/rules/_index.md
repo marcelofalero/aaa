@@ -13,9 +13,8 @@ The **AAA (Alterated Alternity Alternative)** uses a modular and scalable set of
 The foundation of the Alternity system is the **Action Check** and the **Success Check**. These mechanics allow for a range of outcomes beyond simple "pass or fail," providing varying degrees of success based on the quality of the roll.
 
 ### Chapters
-
-1.  **[Character Creation](/rules/chapter-02):** Defining your character's profession, abilities, and background.
-2.  **[Characters in Action](/rules/chapter-03):** Detailed rules for performing tasks, combat, and damage.
+1.  **[Character Creation](/core-mechanics/character-creation):** Defining your character's profession, abilities, and background.
+2.  **[Characters in Action](/core-mechanics/characters-in-action):** Detailed rules for performing tasks, combat, and damage.
 3.  **Skills:** Broad and specialty skills used for various activities.
 4.  **Perks & Flaws:** Advantages and disadvantages that define your character.
 5.  **Attributes:** Motivation, moral attitude, and character traits.
