@@ -11,10 +11,11 @@ This page provides a mapping of common game terms from English to Spanish to ens
 | English | Spanish |
 | :--- | :--- |
 | Skill Points | Puntos de Habilidad |
+| Specialty Skill | Especialización |
 | Character | Personaje |
 | Gamemaster (GM) | Director de Juego (DJ) |
-| Action Check | Prueba de Acción |
-| Success Check | Prueba de Éxito |
+| Action Check | Tirada de Acción |
+| Success Check | Tirada de Éxito |
 | Situation Die | Dado de Situación |
 | Control Die | Dado de Control |
 | Ordinary | Ordinario |
@@ -27,6 +28,8 @@ This page provides a mapping of common game terms from English to Spanish to ens
 | Wound | Herida |
 | Mortal | Mortal |
 | Fatigue | Fatiga |
+| Alternate Tomorrows | Futuros Alternativos |
+| Ability Scores | Atributos |
 
 ## Skills
 | English | Spanish |

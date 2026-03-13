@@ -1,6 +1,6 @@
 +++
 title = "Character Creation"
-description = "Steps to build your AAA character, from concept to completed character sheet."
+description = "How we start"
 weight = 2
 +++
 

@@ -9,10 +9,13 @@ Welcome to the **AAA (Alterated Alternity Alternative)**. This is my attempt to 
 While I will be focusing on PL 7 (Gravity Age), I will try to keep the rules modular, so you can easily add or remove rules as needed. I will also try to keep the rules simple and easy to learn, while still providing enough depth to allow for interesting and challenging gameplay.
 
 ## Roleplaying Alternate Tomorrows
+
 The Alternity game is a comprehensive system with a foundation of core rules that can be used in a variety of settings, each referred to as an **alternate tomorrow**. A campaign might revolve around modern-day high-tech espionage or be set 500 years in the future, where characters explore the galaxy in vessels capable of crossing vast distances in short spans of time.
 
 ### Progress Levels (PL)
+
 The state of technology in a society is defined by its Progress Level.
+
 - **PL 0 (Stone Age):** Fire, domestication, stone tools.
 - **PL 1 (Bronze/Iron Age):** Metalworking, durable tools and weapons.
 - **PL 2 (Middle Ages):** Architecture, metallurgy, sea travel.
@@ -24,9 +27,11 @@ The state of technology in a society is defined by its Progress Level.
 - **PL 8 (Energy Age):** Miniaturized stardrives, force screens, energy weapons.
 
 ## In This Section
+
 - **[Character Creation](/core-mechanics/character-creation/)**
 - **[Character Advancement](/core-mechanics/character-advancement/)**
 - **[Heroes in Action](/core-mechanics/characters-in-action/)**
 
 ---
+
 **The action starts now! Welcome to the future.**
