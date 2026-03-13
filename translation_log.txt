@@ -1,0 +1,2 @@
+Last translation update: 2024-10-27
+- Updated all species files to match the latest English versions.
