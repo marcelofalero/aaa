@@ -1,5 +1,6 @@
 +++
 title = "Characters in Action"
+description = "How we do things"
 weight = 3
 +++
 
@@ -589,12 +590,12 @@ When a character faces extreme danger, when great injury or even death seem inev
 Last resort points depend on the character title, once spent they can only be regained by at the start of the next Act. Optionally the GM can allow characters to make a personality feat check while spending last resource points, to determine the outcome, at their own peril.
 
 
-| Result               | Effect                                                                                                                                                                             |
-| -------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Critical failure     | You lose the Last Resort Point without any benefit                                                                                                                                 |
-| Marginal or Ordinary | The Last Resource point has the normal effect                                                                                                                                      |
+| Result               | Effect                                                                                                                                                             |
+| -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Critical failure     | You lose the Last Resort Point without any benefit                                                                                                                 |
+| Marginal or Ordinary | The Last Resource point has the normal effect                                                                                                                      |
 | Good                 | You gain a Temporary last resource point that must be used before the end of the session,Free Agent can also use it to further improve the check that generated it |
-| Amazing              | The Last Resource point is not spent, Free Agent can instead use it to further improve the result of the check that generated it                                        |
+| Amazing              | The Last Resource point is not spent, Free Agent can instead use it to further improve the result of the check that generated it                                   |
 
 ### Effects of Last Resorts
 

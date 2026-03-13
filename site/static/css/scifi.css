@@ -231,6 +231,22 @@ header .silver {
   box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.5);
 }
 
+.table-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.table-container > div {
+  flex: 1 1 100%;
+}
+
+@media (min-width: 768px) {
+  .table-container > div {
+    flex: 1 1 40%;
+  }
+}
+
 table {
   width: 100%;
   border-collapse: collapse;
@@ -275,6 +291,14 @@ tr.table-separator td {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   font-size: 1.1rem;
+}
+
+.table-category td {
+  background-color: rgba(0, 206, 209, 0.1);
+  color: var(--accent-cyan);
+  font-weight: 700;
+  text-align: left;
+  border-bottom: 1px solid var(--accent-cyan);
 }
 
 .description-row td {

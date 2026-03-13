@@ -68,7 +68,7 @@
         {{ else }}
         {{/* Default section layout */}}
         <ul>
-          {{ range .Pages.ByWeight | first 5 }}
+          {{ range .Pages.ByWeight }}
           <li class="flex items-center">
             <span class="mr2 neon-cyan">›</span>
             <a href="{{ .RelPermalink }}" class="link silver hover-white f5 whitespace-nowrap">{{ .Title }}</a>
@@ -83,13 +83,6 @@
         </ul>
         {{ end }}
       </div>
-
-      {{ if gt (len .Pages) 5 }}
-      <div class="mt3 tr pt2 bt b--white-05">
-        <a href="{{ .RelPermalink }}" class="f7 link neon-cyan dim ttu tracked">{{ if eq .Site.Language.Lang "es"
-          }}Acceder a todos los datos >>{{ else }}Access All Data >>{{ end }}</a>
-      </div>
-      {{ end }}
     </section>
     {{ end }}
   </div>

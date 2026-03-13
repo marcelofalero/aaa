@@ -1,6 +1,6 @@
 +++
 title = "Character Advancement"
-description = "Rules for leveling up and improving your character."
+description = "How we continue"
 weight = 3
 +++
 In Alterated Alternity Alternative (AAA), character progression is not merely a tally of experience spent, but a measure of your character’s total weight and influence in the galaxy. This weight is tracked through Advancement Points (AP), representing the cumulative sum of every skill, perk, and benefit acquired over a career.

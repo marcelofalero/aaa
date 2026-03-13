@@ -36,11 +36,11 @@ Every additional attacker who takes part in the same overpowering attempt provid
 
 ⊗ Resistance Modifier: At higher ranks, the skill provides an improvement to a character's Strength resistance modifier. By leveraging his speed and flexibility, the practitioner’s reactive movement provides a +1 step increase at rank 3, an additional +1 at rank 7, and a final +1 at rank 11. This increase doesn't stack with similar bonuses provided by other melee combat specialty skills.
 
-▶ Flowing Counter: When a character reaches rank 4, if an opponent misses him with a melee attack, the hero's next attack against that specific opponent before the end of the next round can use either his own or his opponent's Strength modifier for damage.
+How we do things reaches rank 4, if an opponent misses him with a melee attack, the hero's next attack against that specific opponent before the end of the next round can use either his own or his opponent's Strength modifier for damage.
 
 ▶ Redirection of Force: When a hero reaches rank 7, if an opponent performs an All Out Attack against him, the attacker receives all the penalties of that maneuver but gains none of the benefits.
 
-▶ Persistent Flow: When a hero reaches rank 10, All Out Attacks that miss him can be redirected against any other target adjacent to the attacker. The attacker must make a new normal attack roll against the new target to determine the result.
+How we do things reaches rank 10, All Out Attacks that miss him can be redirected against any other target adjacent to the attacker. The attacker must make a new normal attack roll against the new target to determine the result.
 
 ▶ Formless Master: When a hero reaches rank 12, he may ignore 1 step of an opponent's Strength defense due to the unpredictability of his attacks.
 
