@@ -14,7 +14,7 @@ Hailing from the Earthlike world of Aleer, the Aleerins' history diverged from h
 
 ## Special Abilities
 - **Computer Operation Skill Bonus:** Mechalus receive a **-1 step situation die bonus** for [Knowledge-computer operation](/skills/knowledge/computer-operation) or [Computer Science-hacking](/skills/computer-science/hacking) skills when merged with a computer via finger filaments.
-- **Cybernetic Enhancements:** Born with neural data slots, an internal processor ([Good] nanocomputer equivalent), and a reflex device.
+- **Cybernetic Enhancements:** Born with neural data slots, an internal processor (Good nanocomputer equivalent), and a reflex device.
 - **Cyber Tolerance:** Mechalus are not subject to cybernetic rejection, and their cybernetic limit is based on **Constitution +4** instead of just Constitution.
 - **Free Broad Skills:** [Athletics](/skills/athletics) (STR), [Vehicle Op](/skills/vehicle-operation) (DEX), [Stamina](/skills/stamina) (CON), [Knowledge](/skills/knowledge) (INT), [Awareness](/skills/awareness) (WIL), [Computer Science](/skills/computer-science) (INT).
 

@@ -17,7 +17,7 @@ The sesheyans emerged from prehistory recently and are in an aboriginal stage of
 - **Zero-g Training:** Inherently function in weightless conditions as though they have Acrobatics-zero-g training at rank 1.
 - **Falling:** As long as they are conscious and able to use their wings, they never suffer impact damage from a fall.
 - **Night Vision:** Eyes intensify ambient light, allowing them to see in near-total darkness.
-- **Light Sensitivity:** Penalties (+1 to +3 steps) apply in [Ordinary], [Good], or [Amazing] illumination without protective goggles.
+- **Light Sensitivity:** Penalties (+1 to +3 steps) apply in Ordinary, Good, or Amazing illumination without protective goggles.
 - **Free Broad Skills:** Melee Weapons (STR), Acrobatics (DEX), Stamina (CON), Knowledge (INT), Awareness (WIL), Interaction (PER).
 
 ## Culture & Roleplaying

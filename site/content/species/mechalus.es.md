@@ -14,7 +14,7 @@ Provenientes del mundo similar a la Tierra de Aleer, la historia de los Aleerins
 
 ## Habilidades Especiales
 - **Bonificación de Habilidad de Operación de Computadoras:** Los mechalus reciben una **bonificación de dado de situación de -1 paso** para las habilidades [Conocimiento-operación de computadoras](/es/skills/knowledge/computer-operation) o [Ciencia de la Computación-hacking](/es/skills/computer-science/hacking) cuando se fusionan con una computadora a través de filamentos en los dedos.
-- **Mejoras Cibernéticas:** Nacen con ranuras de datos neuronales, un procesador interno (equivalente a un nanocomputador [Bueno]) y un dispositivo de reflejos.
+- **Mejoras Cibernéticas:** Nacen con ranuras de datos neuronales, un procesador interno (equivalente a un nanocomputador Bueno) y un dispositivo de reflejos.
 - **Tolerancia Cibernética:** Los mechalus no están sujetos al rechazo cibernético, y su límite cibernético se basa en **Constitución +4** en lugar de solo Constitución.
 - **Habilidades Generales Gratuitas:** [Atletismo](/es/skills/athletics) (FUE), [Op. de Vehículos](/es/skills/vehicle-operation) (DES), [Resistencia](/es/skills/stamina) (CON), [Conocimiento](/es/skills/knowledge) (INT), [Percepción](/es/skills/awareness) (VOL), [Ciencia de la Computación](/es/skills/computer-science) (INT).
 

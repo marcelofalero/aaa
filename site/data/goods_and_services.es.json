@@ -362,7 +362,7 @@
             "pl": "5",
             "mass": "-",
             "cost": "25",
-            "description": "Los sedantes (PL 5) se utilizan para calmar a personas que podrían resultar peligrosas para ellas mismas o para quienes las rodean. Los individuos sedados sufren una penalización de +3 a todas las pruebas y acciones de acción. Esa penalización se reduce en 1 paso por hora (o alguna otra unidad de tiempo, según lo determine el Director de Juego) hasta que el efecto de la droga desaparezca. Usar un sedante contra un objetivo reacio en combate requiere una tirada exitosa de Ataque sin armas, y la víctima tiene derecho a una prueba de dote de Constitución para luchar contra los efectos: [Ordinario], penalización reducida a +2; [Bien], penalización reducida a +1; [Asombroso], la droga no tiene ningún efecto."
+            "description": "Los sedantes (PL 5) se utilizan para calmar a personas que podrían resultar peligrosas para ellas mismas o para quienes las rodean. Los individuos sedados sufren una penalización de +3 a todas las pruebas y acciones de acción. Esa penalización se reduce en 1 paso por hora (o alguna otra unidad de tiempo, según lo determine el Director de Juego) hasta que el efecto de la droga desaparezca. Usar un sedante contra un objetivo reacio en combate requiere una tirada exitosa de Ataque sin armas, y la víctima tiene derecho a una prueba de dote de Constitución para luchar contra los efectos: Ordinario, penalización reducida a +2; [Bien], penalización reducida a +1; Asombroso, la droga no tiene ningún efecto."
           },
           {
             "name": "Estimulante",
