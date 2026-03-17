@@ -207,7 +207,7 @@ At the other extreme, modifiers that push a situation die beyond +3d20 indicate 
 
 # PERFORMING ACTIONS
 
-A character's action check score is determined by adding his Dexterity and Intelligence scores, dividing the sum by 2 (rounding down), then adding a profession bonus. This has already been done on the templates. Marginal, [[Ordinary]], [[Good]], and [[Amazing]] are the degrees of success attainable on an action check. How well you succeed when making an action check determines how soon your character can take an action. The actions per round number is based on the character's Constitution and Will scores, and has already been determined for you.
+A character's action check score is determined by adding his Dexterity and Intelligence scores, dividing the sum by 2 (rounding down), then adding a profession bonus. This has already been done on the templates. Marginal, [Ordinary], [Good], and [Amazing] are the degrees of success attainable on an action check. How well you succeed when making an action check determines how soon your character can take an action. The actions per round number is based on the character's Constitution and Will scores, and has already been determined for you.
 
 ## Possible Situation Modifiers
 

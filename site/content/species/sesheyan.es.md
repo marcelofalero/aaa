@@ -17,7 +17,7 @@ Los sesheyans emergieron de la prehistoria recientemente y se encuentran en una 
 - **Entrenamiento en Gravedad Cero:** Funcionan inherentemente en condiciones de ingravidez como si tuvieran entrenamiento en Acrobacias-gravedad cero en rango 1.
 - **Caída:** Mientras estén conscientes y puedan usar sus alas, nunca sufren daño por impacto de una caída.
 - **Visión Nocturna:** Sus ojos intensifican la luz ambiental, permitiéndoles ver en oscuridad casi total.
-- **Sensibilidad a la Luz:** Se aplican penalizaciones (+1 a +3 pasos) en iluminación [Ordinaria], [Buena] o [Asombrosa] sin gafas protectoras.
+- **Sensibilidad a la Luz:** Se aplican penalizaciones (+1 a +3 pasos) en iluminación [Ordinaria], [Buena] o Asombrosa sin gafas protectoras.
 - **Habilidades Generales Gratuitas:** Armas Cuerpo a Cuerpo (FUE), Acrobacias (DES), Resistencia (CON), Conocimiento (INT), Percepción (VOL), Interacción (PER).
 
 ## Cultura e Interpretación

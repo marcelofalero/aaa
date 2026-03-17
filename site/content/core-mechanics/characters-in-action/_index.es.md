@@ -205,7 +205,7 @@ En el otro extremo, los modificadores que empujan un dado de situación más all
 
 # REALIZANDO ACCIONES
 
-La puntuación de tirada de acción de un personaje se determina sumando sus puntuaciones de Destreza e Inteligencia, dividiendo la suma por 2 (redondeando hacia abajo) y luego agregando una bonificación de profesión. Esto ya se ha hecho en las plantillas. Marginal, [[Ordinario]], [[Bueno]] y [[Asombroso]] son los grados de éxito que se pueden alcanzar en una tirada de acción. Qué tan bien tengas éxito al hacer una tirada de acción determina qué tan pronto puede actuar tu personaje. El número de acciones por asalto se basa en las puntuaciones de Constitución y Voluntad del personaje, y ya se ha determinado para ti.
+La puntuación de tirada de acción de un personaje se determina sumando sus puntuaciones de Destreza e Inteligencia, dividiendo la suma por 2 (redondeando hacia abajo) y luego agregando una bonificación de profesión. Esto ya se ha hecho en las plantillas. Marginal, [Ordinario], [Bueno] y [Asombroso] son los grados de éxito que se pueden alcanzar en una tirada de acción. Qué tan bien tengas éxito al hacer una tirada de acción determina qué tan pronto puede actuar tu personaje. El número de acciones por asalto se basa en las puntuaciones de Constitución y Voluntad del personaje, y ya se ha determinado para ti.
 
 ## Posibles Modificadores de Situación
 
