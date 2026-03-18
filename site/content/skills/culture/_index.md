@@ -17,11 +17,6 @@ When used in an interactive context, Culture is an encounter skill.
 
 ## Specialty Skills
 
-{{% list %}}
-- **Alien Culture [Specific]:** Proficiency with a particular alien society.
-- **Etiquette [Specific]::** Grasp of customs, attitudes, and beliefs of a specific culture.
-- **First Encounter:** Training in making first contact with an unknown culture.
-
 ### Etiquette [Specific]
 *This skill can't be used untrained.*
 
@@ -42,7 +37,7 @@ In general, it comes into play when a hero wants to reach an accord. The skill c
 | Results | Description |
 | :--- | :--- |
 | **Ordinary** | Success indicates that the hero can reach an agreement. |
-| **Good** | Success indicates that the hero can reach an agreement. |
+| **Good** | Success indicates that the hero can reach an an agreement. |
 | **Amazing** | Success indicates that the hero can reach an agreement. |
 
 ### First Encounter

@@ -12,4 +12,5 @@ General training in survival necessities, including finding food, water, and she
 
 ## Specialty Skills
 
-{{% list %}}
+### Survival Training
+Improve survival ability in a specific terrain type (Forest, Desert, Mountain, Arctic, Jungle, Swamp, Ocean, Urban).
