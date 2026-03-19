@@ -6,28 +6,22 @@ attribute = "WIL"
 category = "Other"
 +++
 
-This broad skill provides a hero with training and talent (or knowledge) in a variety of creative endeavors. A hero with the Creativity skill has a well-developed sense for the aesthetically pleasing, a facility for communicating with the written word, and the ability to convey.
+**Cost:** 4
 
-### Creativity Results
-Using this skill involves a complex skill check. The situation modifier depends on conditions, and the complexity relates to the task (e.g., a simple poem vs. a Shakespearean sonnet).
-- **Complexity:** Ordinary: simple task; Amazing: extremely difficult/quality task.
-- **Results:** Critical Failure or three Failure results means the work is scrapped.
+This skill provides a hero with training and talent (or knowledge) in a variety of creative endeavors. A hero with the Creativity skill has a well-developed sense for the aesthetically pleasing, a facility for communicating with the written word, and the ability to convey and evoke powerful emotions through a chosen medium.
 
-## Specialty Skills
+A character with just the broad skill possesses all of these characteristics, but not to such a degree that he’s able to make a living as an artist, writer, or photographer. Turning the Creativity skill into the basis of a career (or being able to produce work of professional quality, if a character has another career) requires that the character pursue a specialty skill in his chosen field(s).
 
-### Writing
-This specialty skill represents a hero's facility for communicating with the written word. Turning this skill into the basis of a career (or being able to produce work of professional quality) requires that the character pursue this specialty in his chosen field(s).
-The complexity of the task (e.g., a simple poem vs. a Shakespearean sonnet) is determined by the Gamemaster.
+Using the Creativity skill involves a complex skill check, with a situation modifier based on the conditions under which the work is being done and a number of successes required related to the complexity of the task at hand. (Dashing off a cute, four-line poem might be merely an [Ordinary] accomplishment, but composing a lyrical, Shakespearean-quality sonnet would be [Amazing].)
 
-### Artistic Expression
-This specialty skill provides a hero with a well-developed sense for the aesthetically pleasing and a talent for a chosen artistic medium. Turn this skill into the basis of a career (or being able to produce work of professional quality) requires that the character pursue this specialty in his chosen field(s).
-The complexity of the task (e.g., a simple illustration vs. a complex masterpiece) is determined by the Gamemaster.
+If the complex skill check ends in a Critical Failure, or three Failure results are obtained before the check is completed, whatever the character was trying to produce is scrapped (it just wasn't turning out right).
 
-| Results | Description |
-| :--- | :--- |
-| **Ordinary** | Success indicates that the hero produced a quality piece. |
-| **Good** | Success indicates that the hero produced a very quality piece. |
-| **Amazing** | Success indicates that the hero produced a masterpiece. |
+---
 
-### Creativity, Specific Skill
-A specific aspect of this skill, like computer graphics or holo art.
+# Specialty Skills
+
+## Creativity, Specific Skill
+
+Cost: 2
+
+A blank line is provided under the Creativity skill on the hero sheet for a player to use if his hero specializes in some aspect of this skill. The Gamemaster will determine if a certain specialty skill is allowable, usually based on whether it defines a narrow enough field of interest. For instance, illustration might be allowed as a Creativity specialty, or it might be necessary for a hero to be more specific by singling out computer graphics or holo art as his area of expertise.

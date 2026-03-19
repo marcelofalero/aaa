@@ -90,7 +90,7 @@ society might want Entertainment
 and one or more of its specialties. » Signature Equipment: Based on
 the cleric’s secondary profession,
 plus a holy item and holy text. » Skill Package: Knowledge-first
-aid 2, religious doctrine; Resolvemental resolve; Teach; Culture-etiquette (specific); Leadership-inspire,
+aid 2, religious doctrine; Resolve mental resolve; Teach; Culture-etiquette (specific); Leadership-inspire,
 Cost: 30 points. Entertainer An entertainer is either on his way
 up or has already reached the top of
 his field. He's an actor, a musician, a

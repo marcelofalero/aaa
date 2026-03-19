@@ -40,7 +40,7 @@ Disguise is the ability to change your appearance to look like someone else or t
 
 While the **Entertainment-act** skill is used for professional makeup and performance, this specialty covers more immediate and practical applications of disguise, such as changing clothes, wearing a wig, or using simple props to avoid recognition.
 
-A hero's Disguise situation die is modified by the observer's Awareness-perception modifier.
+A character's Disguise situation die is modified by the observer's Awareness-perception modifier.
 
 ---
 
@@ -49,9 +49,9 @@ A hero's Disguise situation die is modified by the observer's Awareness-percepti
 
 *This skill can't be used untrained.*
 
-This specialty skill allows a hero to open physical locks (doors, safes, vehicles, etc.). It is usually employed with tools which provide a situation die bonus.
+This specialty skill allows a character to open physical locks (doors, safes, vehicles, etc.). It is usually employed with tools which provide a situation die bonus.
 
-The lockpick skill is useless against a computer-assisted lock unless it has a physical mechanism the hero can manipulate. Almost always, the use of lockpick requires a complex skill check.
+The lockpick skill is useless against a computer-assisted lock unless it has a physical mechanism the character can manipulate. Almost always, the use of lockpick requires a complex skill check.
 
 ---
 
@@ -60,7 +60,18 @@ The lockpick skill is useless against a computer-assisted lock unless it has a p
 
 *This skill can't be used untrained.*
 
-This specialty skill allows a hero to remove objects from a person (or plant something) without that person noticing. The base situation die is determined by the target's Will resistance modifier.
+This specialty skill allows a character to remove objects from a person (or plant something) without that person noticing. The base situation die is determined by the target's Will resistance modifier.
+
+### Pickpocket Situation Modifiers
+
+| Condition | Modifier |
+| :--- | :--- |
+| Object is in direct contact with target's skin | +3 |
+| Object is heavy | +2 |
+| Object is kept in inner pocket of garment | +1 |
+| Object is light in weight | -1 |
+| Object is kept in exposed pocket or pack | -1 |
+| Victim is distracted | -1 to -3 |
 
 ### Results
 
