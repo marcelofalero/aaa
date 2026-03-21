@@ -1,26 +1,65 @@
 +++
 title = "Interacción"
-description = "Conceptos básicos del contacto interpersonal; ganar amigos e influir en las personas."
-weight = 4
-attribute = "PER"
+description = "Habilidades interpersonales utilizadas en encuentros, como negociar, encantar e intimidar."
+weight = 3
+attribute = "WIL"
 category = "Social"
 +++
 
-This broad skill provides a hero with the basics of interpersonal contact with members of the same species and culture. Interaction is an encounter skill, meaning it takes into account the target's attitude.
+Las habilidades de interacción son utilizadas por los personajes para influir directamente en los demás. Estas incluyen negociar, encantar, entrevistar, intimidar, seducir y provocar.
 
-Combative or Fanatic characters cannot be influenced by Interaction. Target's Will resistance modifier and relevant factors from the sidebar also apply.
+Los personajes combativos o fanáticos no pueden ser influenciados por Interacción. También se aplican el **modificador de resistencia de Voluntad** del objetivo y otros factores relevantes.
 
-## Specialty Skills
-
-{{% list %}}
-- **Bargain:** Haggle, negotiate, and close deals.
-- **Charm:** Change the attitude of those you interact with by being likable.
-- **Interview:** Get information from another character in a non-aggressive way.
-- **Intimidate:** Threaten another character by presence or authority.
-- **Seduce:** Entice or beguile through intimate behavior and emotional manipulation.
-- **Taunt:** Trade insults to rattle or enrage an opponent.
-| Results | Description |
+| Resultados | Descripción |
 | :--- | :--- |
-| **Ordinary** | Success indicates that the hero produced a quality interaction. |
-| **Good** | Success indicates that the hero produced a very quality interaction. |
-| **Amazing** | Success indicates that the hero produced a masterpiece interaction. |
+| **Ordinario** | El éxito indica que el personaje produjo una interacción de calidad. |
+| **Bueno** | El éxito indica que el personaje produjo una interacción de muy buena calidad. |
+| **Asombroso** | El éxito indica que el personaje produjo una interacción magistral. |
+
+---
+
+# Especialidades
+
+## Negociar (WIL)
+
+Negociar representa la capacidad de un personaje para pactar un precio más barato por un objeto que quiere comprar o un precio mejor por uno que está vendiendo. También cubre negociaciones comerciales más formales. Una tirada exitosa mejora la posición del personaje en la mesa de negociación, mientras que un éxito Asombroso le otorga una bonificación de -3 pasos (o a su oponente una penalización de +3) en cualquier tirada de Interacción posterior realizada durante el encuentro.
+
+---
+
+## Encantar (WIL)
+
+Un personaje con la habilidad de especialidad de encantar tiene talento para ser agradable y para convertir a los demás en sus amigos y aliados. Encantar se utiliza a menudo para modificar la actitud inicial de un público hacia un artista. Una tirada exitosa mejora la actitud del público en un paso (Neutral se vuelve Amistoso, Amistoso se vuelve Fanático).
+
+---
+
+## Interrogar (WIL)
+
+Interrogar es la habilidad necesaria para obtener información de un sujeto poco cooperativo. Implica coacción, ya sea física o psicológica.
+
+---
+
+## Entrevistar (WIL)
+
+La habilidad de especialidad de entrevistar representa el talento para obtener información de otro personaje de forma no agresiva. Las entrevistas son utilizadas a menudo por reporteros, investigadores y funcionarios que llevan a cabo procedimientos administrativos estándar.
+
+---
+
+## Intimidar (WIL)
+
+Intimidar se utiliza para influir en las acciones de otros mediante la presencia, la amenaza verbal o alguna muestra de autoridad. Un personaje que intimida a su oponente intenta desconcertarlo, lo que suele provocar que este retroceda ante una amenaza inmediata o se vuelva más cooperativo.
+
+---
+
+## Seducir (WIL)
+
+Seducir es la habilidad que permite a un personaje atraer o cautivar a otro personaje mediante el comportamiento íntimo y la manipulación emocional. La utilizan los personajes que quieren encandilar a alguien, ya sea para obtener información o simplemente para aprovecharse de los sentimientos de ese personaje.
+
+⊗ **Rango 3, 6, 12 [Modificador de resistencia]:** El modificador de resistencia de Voluntad del personaje mejora (contra seducción/interacción) en estos rangos.
+
+---
+
+## Provocar (WIL)
+
+La habilidad de especialidad de provocar representa el talento para intercambiar insultos con el fin de desconcertar o enfurecer a un oponente. Un personaje que provoca a su oponente intenta forzarle a cometer un error de juicio o a realizar una acción que normalmente no llevaría a cabo.
+
+▶ **Distracción:** En el rango 4, si una tirada de provocar tiene éxito, el objetivo recibe una penalización de +1 paso en cualquier tirada de habilidad realizada durante el asalto siguiente.

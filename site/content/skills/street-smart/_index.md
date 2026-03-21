@@ -6,19 +6,41 @@ attribute = "WIL"
 category = "Other"
 +++
 
-This broad skill provides a hero with knowledge of the protocols for dealing with gangs, street people, and criminal organizations. It measures a hero's ability to negotiate and make contact with the realm of the blue-collar criminal.
+This broad skill provides a character with general knowledge in the protocols of "the street." It measures a character's ability to negotiate and make contact with the realm of blue-collar crime, gangs, and illicit dealers. Street Smart and its specialties are encounter skills.
 
-Street Smart and its specialties are encounter skills.
+### Street Smart Situation Modifiers
+| Condition | Modifier |
+| :--- | :--- |
+| Society has no law | -3 steps |
+| Society has Good law | +2 steps |
+| Society has Amazing law | +3 steps |
+| Belongs to similar group | -1 step |
+| Belongs to same group | -2 steps |
+| Belongs to opposed group | +3 steps |
+| Has local contact | -1 step |
+| Has Reputation perk | -1 step |
+| Is an obvious stranger | +1 step |
+| Has Infamy flaw | +1 step |
+| Seeks Ordinary assistance | -1 step |
+| Seeks Good assistance | +2 steps |
+| Seeks Amazing assistance | +4 steps |
 
-### Scarcity and Legality
-Situation modifiers depend on the item or service sought, its legality, and connection with illegal groups:
-- **Marginal:** no penalty.
-- **Ordinary:** +1 penalty.
-- **Good:** +2 penalty.
-- **Amazing:** +3 penalty.
+---
 
-## Specialty Skills
+# Specialty Skills
 
-{{% list %}}
-- **Criminal Elements:** Making contact with and dealing with organized crime, professional criminals, and gangs.
-- **Street Knowledge:** Familiarity with the inner workings of a particular organization or geographical area.
+## Criminal Elements (WIL)
+
+
+This specialty skill represents a character's ability to make contact with and deal with those who are considered part of the criminal element—organized crime, professional criminals, street gangs, and underworld organizations.
+
+Whenever a character tries to locate or interact with these groups, he uses this skill.
+
+---
+
+## Street Knowledge (WIL)
+
+
+This skill enables a character to improve his familiarity with the inner workings of a particular organization or geographical area. Unlike other specialties, it must be purchased separately for each organization or area (e.g., **Street Knowledge—Alpha Colony** or **Street Knowledge—The Void Syndicate**).
+
+A character needs to buy this specialty twice in order to become familiar with how things get done in a specific interstellar organization or interstellar trade union.

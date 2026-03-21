@@ -5,6 +5,7 @@ attribute = "WIL"
 category = "Other"
 +++
 
+
 **Free to fraal, human, mechalus, sesheyan, t'sa, and weren heroes.**
 
 This broad skill represents a hero's powers of observation, perception, and intuition. Skill checks are called for when the Gamemaster needs to determine if a hero notices something—heroes themselves never call for a use of this skill.

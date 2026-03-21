@@ -6,9 +6,8 @@ attribute = "WIL"
 category = "Social"
 +++
 
-**Cost:** 4
 
-This broad skill provides a hero with knowledge concerning the forms and procedures that go into running an office or organization of almost any kind. With this skill, a hero understands scheduling, personnel and equipment management, and the regulations and laws that apply to such endeavors. Any large organizations, including governments, agencies, and corporations, have some type of administrational bureaucracy that a hero may someday be called upon to interact with. This skill allows him to attempt to identify the proper administrators to deal with in a particular situation, the proper procedures to follow, and the best way to cut through red tape.
+This broad skill provides a character with knowledge concerning the forms and procedures that go into running an office or organization of almost any kind. With this skill, a character understands scheduling, personnel and equipment management, and the regulations and laws that apply to such endeavors. Any large organizations, including governments, agencies, and corporations, have some type of administrational bureaucracy that a character may someday be called upon to interact with. This skill allows him to attempt to identify the proper administrators to deal with in a particular situation, the proper procedures to follow, and the best way to cut through red tape.
 
 The Administration skill can be used in an attempt to change the attitude of an individual employee of some corporation or organization. In such a case, it is treated as an [encounter skill](/core-mechanics/characters-in-action/#encounter-scene). If the use of this skill results in a target's attitude being changed to Friendly or better, this can provide a bonus on any subsequent skill check to get information or cooperation out of the organization that is the employer of the target.
 
@@ -22,14 +21,12 @@ A character's Administration skill can also be used to hinder someone else's att
 
 ## Bureaucracy (WIL)
 
-**Cost:** 3
 
-This specialty skill measures a hero's ability to grease (or clog up) the wheels of bureaucracy. Important applications, permits, clearances, reports, or other bureaucratic requests can be processed faster and more efficiently with the use of this skill. Conversely, this skill can be used to make the same bureaucratic processes slower for others.
+This specialty skill measures a character's ability to grease (or clog up) the wheels of bureaucracy. Important applications, permits, clearances, reports, or other bureaucratic requests can be processed faster and more efficiently with the use of this skill. Conversely, this skill can be used to make the same bureaucratic processes slower for others.
 
 ---
 
 ## Management (WIL)
 
-**Cost:** 3
 
-This skill indicates a hero's ability to manage both personnel and administrative duties. A skilled manager can increase productivity, inspire workers, and supervise the workings of a business or office.
+This skill indicates a character's ability to manage both personnel and administrative duties. A skilled manager can increase productivity, inspire workers, and supervise the workings of a business or office.

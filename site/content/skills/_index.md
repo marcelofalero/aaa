@@ -23,7 +23,7 @@ There are three ways to perform a skill check:
 ### Combat
 - [Armor Operation](/skills/armor-operation/)
 - [Heavy Weapons](/skills/heavy-weapons/)
-- [Melee Weapons](/skills/melee-weapons/)
+- [Melee Combat](/skills/melee-combat/)
 - [Modern Ranged Weapons](/skills/modern-ranged-weapons/)
 - [Primitive Ranged Weapons](/skills/primitive-ranged-weapons/)
 - [Tactics](/skills/tactics/)
@@ -37,9 +37,10 @@ There are three ways to perform a skill check:
 - [Covert Ops](/skills/covert-ops/)
 - [Creativity](/skills/creativity/)
 - [Investigate](/skills/investigate/)
-- [Resolve](/skills/resolve-wil/)
+- [Resolve](/skills/resolve/)
 - [Stamina](/skills/stamina/)
 - [Street Smart](/skills/street-smart/)
+
 
 ### Psionics
 - [Biokinesis](/skills/biokinesis/)

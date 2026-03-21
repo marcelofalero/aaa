@@ -5,6 +5,8 @@ weight = 1
 attribute = "STR"
 category = "Combat"
 +++
+
+
 Armor that's bulky, heavy, and cumbersome hinders the character using it. This is reflected by a penalty to the character's action check and the lessening or negating of a character's Dexterity resistance modifier. The Armor Operation broad skill and its specialty skills help to alleviate these penalties.
 
 The Table in the [Armor Section](/equipment/armor) lists the various types of armor available and indicates which ones require the user to take an action check and Dexterity resistance modifier penalty. Under the "AP” column on that table, an entry of "0" means that the Armor Operation skill is not needed to use the armor effectively, and no action check or Dexterity resistance modifier penalty is associated with it.
@@ -48,7 +50,7 @@ This specialty skill represents the mastery in the use of integrated propulsion 
 
 Rank 2: Thermal/Fuel Management. Optimize fuel or heat dissipation, extending operational time of propulsion units by 50%.
 
-Rank 4: Vector Calibration. Adjust thrust nozzles for specific tasks, providing a -1 step bonus to maneuvering checks made using the system.
+Rank 4: Vector Calibration & Aerobatics Integration. Adjust thrust nozzles for specific tasks, providing a **-1 step bonus** to maneuvering checks. Additionally, the character is sufficiently familiarized with armor propulsion systems to use the **Aerobatics** specialty skill for complex maneuvers while wearing the suit.
 
 Rank 7: Maximum Burn. Make a Propulsion Systems check to increase speed for the round: Ordinary (+25%), Good (+50%), or Amazing (+100%).
 Each consecutive round of forcing the engine incurs a cumulative +1 step penalty to the check. The penalty is reduced by 1 for each round the propulsion is not being used.

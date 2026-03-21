@@ -6,27 +6,39 @@ attribute = "INT"
 category = "Combat"
 +++
 
-This broad skill provides a hero with an understanding of tactics. A successful use provides a penalty to the opponent's next skill check.
+This broad skill provides a character with basic training in and an understanding of tactics and tactical situations. While tactics may come into play in many types of situations, it's most commonly used during infantry combat, space combat, and vehicle combat. 
 
-### Results
-- **Critical Failure:** Opponent sees through intentions and receives a -1 bonus.
-- **Failure:** No modifier to opponent's next skill check.
-- **Ordinary:** +1 penalty to opponent's next skill check.
-- **Good:** +2 penalty to opponent's next skill check.
-- **Amazing:** +3 penalty to opponent's next skill check.
+A successful use of the skill provides a penalty to the opponent's next skill check, indicating that you developed a tactical plan and successfully employed it against him.
 
-## Specialty Skills
+### Tactics Check Results
+- **Critical Failure:** The opponent sees through your intentions and receives a **-1 bonus** on their next skill check.
+- **Failure:** No modifier to the opponent's next skill check.
+- **Ordinary:** **+1 penalty** to the opponent's next skill check.
+- **Good:** **+2 penalty** to the opponent's next skill check.
+- **Amazing:** **+3 penalty** to the opponent's next skill check.
 
-{{% list %}}
-- **Infantry Tactics:** Battlefield strategies when individual troops are the main component.
-- **Space Tactics:** Battlefield strategies when spaceships engage in combat.
-- **Vehicle Tactics:** Battlefield strategies when vehicles other than spaceships are the main component.
+---
 
-### Space Tactics
-Combat between spaceships.
+# Specialty Skills
 
-### Vehicle Tactics
-Combat involving air, land, or water vehicles.
+## Infantry Tactics (INT)
 
-### Infantry Tactics
-Ground-based combat involving individual troops.
+The specialty skill covers battlefield strategies when the main component of the battle is individual troops.
+
+⊗ **Increased Effect:** As a character achieves higher ranks in a Tactics specialty skill, he receives a situation die bonus for dealing with opposing forces (infantry, space vessels, or vehicles). The bonus is **-1 step at rank 4**, **-2 steps at rank 8**, and **-3 steps at rank 12**.
+
+---
+
+## Space Tactics (INT)
+
+Battlefield strategies involving combat between spaceships.
+
+⊗ **Increased Effect:** As a character achieves higher ranks in a Tactics specialty skill, he receives a situation die bonus for dealing with opposing forces. The bonus is **-1 step at rank 4**, **-2 steps at rank 8**, and **-3 steps at rank 12**.
+
+---
+
+## Vehicle Tactics (INT)
+
+Battlefield strategies involving combat where vehicles other than starships (air, land, or water) are the main component.
+
+⊗ **Increased Effect:** As a character achieves higher ranks in a Tactics specialty skill, he receives a situation die bonus for dealing with opposing forces. The bonus is **-1 step at rank 4**, **-2 steps at rank 8**, and **-3 steps at rank 12**.

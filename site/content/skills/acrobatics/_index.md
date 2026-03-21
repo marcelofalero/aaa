@@ -6,9 +6,8 @@ attribute = "DEX"
 category = "Other"
 +++
 
-**Cost:** 7
 
-This broad skill provides a hero with basic training in acrobatics. It is used when a hero wants to vault over a fence or other obstacle, dodge out of the way of an immediate danger, or try to land safely after a fall.
+This broad skill provides a character with basic training in acrobatics. It is used when a character wants to vault over a fence or other obstacle, dodge out of the way of an immediate danger, or try to land safely after a fall.
 
 ### Vaulting
 
@@ -21,7 +20,6 @@ Vaulting is a vertical leap enhanced by assistance (springing off an object or u
 
 ## Dodge (DEX)
 
-**Cost:** 3
 
 This specialty skill allows a character to use acrobatics as a defense in combat situations. It's also used when a character dives for cover or hits the deck when an area-effect attack targets him. Dodge lets a character tumble, roll, duck, dive, or spring out of the way of an attack.
 
@@ -44,9 +42,8 @@ One skill check (requiring an action) is made at the beginning of the first phas
 
 ## Fall (DEX)
 
-**Cost:** 3
 
-This specialty skill allows a hero to improve his ability to survive a fall by twisting his body, catching nearby protrusions, or otherwise slowing his descent, thereby decreasing the damage he sustains from an impact.
+This specialty skill allows a character to improve his ability to survive a fall by twisting his body, catching nearby protrusions, or otherwise slowing his descent, thereby decreasing the damage he sustains from an impact.
 
 A character with the fall specialty skill adds his rank in the specialty to his Acrobatics score and uses that number to make the skill check, with a +d0 base situation die.
 
@@ -54,9 +51,8 @@ A character with the fall specialty skill adds his rank in the specialty to his 
 
 ## Daredevil (DEX)
 
-**Cost:** 3
 
-This specialty skill enables a hero to perform high-risk activities such as skydiving, scuba diving, hang gliding, surfing, bungee jumping, and whitewater rafting.
+This specialty skill enables a character to perform high-risk activities such as skydiving, scuba diving, hang gliding, surfing, bungee jumping, and whitewater rafting.
 
 **Results**
 
@@ -70,11 +66,10 @@ This specialty skill enables a hero to perform high-risk activities such as skyd
 
 ## Zero-g Training (DEX - Trained Only)
 
-**Cost:** 3
 
 *This skill can’t be used untrained.*
 
-A hero with the zero-g training skill can function in weightless or near-weightless conditions better than someone who doesn't have this skill. An untrained character has a +3 step penalty in zero gravity and a +1 step penalty in light gravity. Purchasing this skill immediately reduces the zero-g penalty to +2 steps and eliminates the penalty for light gravity.
+A character with the zero-g training skill can function in weightless or near-weightless conditions better than someone who doesn't have this skill. An untrained character has a +3 step penalty in zero gravity and a +1 step penalty in light gravity. Purchasing this skill immediately reduces the zero-g penalty to +2 steps and eliminates the penalty for light gravity.
 
 **Rank Progression**
 ⊗ **Rank 4:** Zero-g penalty is reduced to +1 step, and light gravity actions receive a -1 step bonus.
@@ -83,3 +78,26 @@ A hero with the zero-g training skill can function in weightless or near-weightl
 
 **Sesheyan Advantage**
 Sesheyan characters without the zero-g training skill function as though they have it at rank 1. If a sesheyan purchases this skill, penalties are reduced by 1 step and bonuses are improved by the same amount (max bonus -2 in light gravity).
+
+---
+
+## Aerobatics (DEX)
+
+
+This specialty skill represents a character's mastery of complex maneuvers during personal flight, whether through natural wings, specialized jump-packs, or gravitic personal flight devices (GADS). While basic locomotion is covered by the Acrobatics broad skill, Aerobatics is required for high-speed turns, precise landing, evasive maneuvers, and aerial acrobatics. At **Rank 4** in **Armor Operation—Propulsion Systems**, this skill can also be used for complex maneuvers using a powered suit's integrated thrusters.
+
+**Note:** This skill covers *personal* locomotion and complex maneuvers. Operating a larger vehicle through the air or space requires [Vehicle Operation—air](/skills/vehicle-operation/#air-vehicle) or [Vehicle Operation—space](/skills/vehicle-operation/#space-vehicle).
+
+### Results
+
+- **Critical Failure:** Loss of control, potential stall or collision.
+- **Ordinary:** Basic controlled flight; can perform simple maneuvers.
+- **Good:** Increased control; can perform evasive maneuvers.
+- **Amazing:** Perfect control; can perform complex aerial or orbital acrobatics.
+
+### Rank Progression
+
+⊗ **Rank 4 (Stealthy Descent):** When using a jump-pack or GADS, the character can descend with minimal noise, receiving a **-2 step bonus** to Stealth checks.
+
+⊗ **Rank 6 (Endurance Flight):** When using natural or cybernetic wings, the character can fly for extended periods, receiving a **-2 step bonus** to Stamina checks for long-distance travel.
+
