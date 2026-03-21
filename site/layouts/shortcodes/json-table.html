@@ -7,6 +7,6 @@
   {{ $data = index $data $key }}
 {{ end }}
 
-{{ $context := dict "data" $data "file" $file "key" $key "hidden_fields" $hidden_fields }}
+{{ $context := dict "Page" .Page "data" $data "file" $file "key" $key "hidden_fields" $hidden_fields }}
 
 {{ partial "render-table.html" $context }}

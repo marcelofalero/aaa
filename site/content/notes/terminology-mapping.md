@@ -34,9 +34,20 @@ This page provides a mapping of common game terms from English to Spanish to ens
 ## Skills
 | English | Spanish |
 | :--- | :--- |
-| Melee Combat | Combate Cuerpo a Cuerpo |
-| Flow Martial Arts | Artes Marciales Fluidas |
-| Power Martial Arts | Artes Marciales de Poder |
+| Melee Combat | Combate cuerpo a cuerpo |
+| Modern Ranged Weapons | Armas a distancia modernas |
+| Heavy Weapons | Armas pesadas |
+| Primitive Ranged Weapons | Armas a distancia primitivas |
+| Technical Science | Ciencia técnica |
+| Life Science | Ciencias de la vida |
+| Physical Science | Ciencias físicas |
+| Medical Science | Ciencias médicas |
+| Weapon Technical Knowledge | Conocimiento técnico de armas |
+| Flintlock Pistol | Pistola de chispa |
+| Musket | Mosquete |
+| Assault Rifle | Fusil de asalto |
+| Shotgun | Escopeta |
+| SMG | Subfusil |
 | ... | ... |
 
 ## Perks & Flaws

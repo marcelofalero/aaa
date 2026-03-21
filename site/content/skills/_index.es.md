@@ -4,69 +4,70 @@ description = "Lista completa de habilidades amplias y especializadas categoriza
 weight = 6
 +++
 
-# Skills in AAA
+# Habilidades en AAA
 
-Skills are the heart of the AAA system. Most of what a character is capable of doing—fighting an opponent, piloting a spacecraft, or developing a vaccine—is governed by their skills and how accomplished they are at using them.
+Las habilidades son el corazón del sistema AAA. La mayor parte de lo que un personaje es capaz de hacer —luchar contra un oponente, pilotar una nave espacial o desarrollar una vacuna— está regido por sus habilidades y lo consumado que sea utilizándolas.
 
-## Broad vs. Specialty Skills
-- **Broad Skills:** Represent a general area of knowledge, talent, or training (e.g., *Athletics*, *Knowledge*).
-- **Specialty Skills:** Represent narrow fields of expertise (e.g., *Climb*, *First Aid*).
+## Habilidades Amplias vs. Especializadas
+- **Habilidades Amplias:** Representan un área general de conocimiento, talento o entrenamiento (ej. *Atletismo*, *Conocimiento*).
+- **Habilidades de Especialidad:** Representan campos estrechos de pericia (ej. *Trepar*, *Primeros auxilios*).
 
-## Skill Checks & Defaulting
-There are three ways to perform a skill check:
-1. **Untrained (No Broad Skill):** Use the **Broad Skill's Attribute** with a +1 step penalty to the situation die.
-2. **Broad Skill Only:** Use the **Broad Skill's Attribute** and its training bonus (if any).
-3. **Specialty Skill:** Use the **Specialty Skill's Attribute** and its training rank.
+## Tiradas de Habilidad y Uso sin Entrenamiento
+Hay tres formas de realizar una tirada de habilidad:
+1. **No entrenado (Sin habilidad amplia):** Utiliza el **Atributo de la habilidad amplia** con una penalización de +1 paso al dado de situación.
+2. **Solo habilidad amplia:** Utiliza el **Atributo de la habilidad amplia** y su bono de entrenamiento (si lo hubiera).
+3. **Habilidad de especialidad:** Utiliza el **Atributo de la habilidad de especialidad** y su rango de entrenamiento.
 
-## Categorized Broad Skills
+## Habilidades Amplias Categorizadas
 
-### Combat
-- [Armor Operation](/skills/armor-operation/)
-- [Heavy Weapons](/skills/heavy-weapons/)
-- [Melee Weapons](/skills/melee-weapons/)
-- [Modern Ranged Weapons](/skills/modern-ranged-weapons/)
-- [Primitive Ranged Weapons](/skills/primitive-ranged-weapons/)
-- [Tactics](/skills/tactics/)
-- [Unarmed Attack](/skills/unarmed-attack/)
+### Combate
+- [Operación de armadura](/skills/armor-operation/)
+- [Armas pesadas](/skills/heavy-weapons/)
+- [Combate cuerpo a cuerpo](/skills/melee-combat/)
+- [Armas a distancia modernas](/skills/modern-ranged-weapons/)
+- [Armas a distancia primitivas](/skills/primitive-ranged-weapons/)
+- [Táctica](/skills/tactics/)
+- [Ataque sin armas](/skills/unarmed-attack/)
 
-### Other
-- [Acrobatics](/skills/acrobatics/)
-- [Animal Handling](/skills/animal-handling/)
-- [Athletics](/skills/athletics/)
-- [Awareness](/skills/awareness/)
-- [Covert Ops](/skills/covert-ops/)
-- [Creativity](/skills/creativity/)
-- [Investigate](/skills/investigate/)
-- [Resolve](/skills/resolve-wil/)
-- [Stamina](/skills/stamina/)
-- [Street Smart](/skills/street-smart/)
+### Otras
+- [Acrobacias](/skills/acrobatics/)
+- [Manejo de animales](/skills/animal-handling/)
+- [Atletismo](/skills/athletics/)
+- [Conciencia](/skills/awareness/)
+- [Operaciones encubiertas](/skills/covert-ops/)
+- [Creatividad](/skills/creativity/)
+- [Investigar](/skills/investigate/)
+- [Firmeza](/skills/resolve/)
+- [Aguante](/skills/stamina/)
+- [Astucia callejera](/skills/street-smart/)
 
-### Psionics
-- [Biokinesis](/skills/biokinesis/)
+### Psiónica
+- [Biocinesis](/skills/biokinesis/)
 - [ESP](/skills/esp/)
-- [Telekinesis](/skills/telekinesis/)
-- [Telepathy](/skills/telepathy/)
-- [Teleportation](/skills/teleportation/)
+- [Telequinesis](/skills/telekinesis/)
+- [Telepatía](/skills/telepathy/)
+- [Teletransporte](/skills/teleportation/)
 
-### Social
-- [Administration](/skills/administration/)
-- [Business](/skills/business/)
-- [Culture](/skills/culture/)
-- [Deception](/skills/deception/)
-- [Entertainment](/skills/entertainment/)
-- [Interaction](/skills/interaction/)
-- [Leadership](/skills/leadership/)
-- [Teach](/skills/teach/)
+### Sociales
+- [Administración](/skills/administration/)
+- [Negocios](/skills/business/)
+- [Cultura](/skills/culture/)
+- [Engaño](/skills/deception/)
+- [Entretenimiento](/skills/entertainment/)
+- [Interacción](/skills/interaction/)
+- [Liderazgo](/skills/leadership/)
+- [Enseñar](/skills/teach/)
 
-### Technical
-- [Computer Science](/skills/computer-science/)
-- [Demolitions](/skills/demolitions/)
-- [Knowledge](/skills/knowledge/)
-- [Life Science](/skills/life-science/)
-- [Medical Science](/skills/medical-science/)
-- [Navigation](/skills/navigation/)
-- [Physical Science](/skills/physical-science/)
-- [Security](/skills/security/)
-- [System Operation](/skills/system-operation/)
-- [Technical Science](/skills/technical-science/)
-- [Vehicle Operation](/skills/vehicle-operation/)
+### Técnicas
+- [Ciencias de la computación](/skills/computer-science/)
+- [Demoliciones](/skills/demolitions/)
+- [Conocimiento](/skills/knowledge/)
+- [Ciencias de la vida](/skills/life-science/)
+- [Ciencias médicas](/skills/medical-science/)
+- [Navegación](/skills/navigation/)
+- [Ciencias físicas](/skills/physical-science/)
+- [Seguridad](/skills/security/)
+- [Operación de sistemas](/skills/system-operation/)
+- [Ciencia técnica](/skills/technical-science/)
+- [Operación de vehículos](/skills/vehicle-operation/)
+

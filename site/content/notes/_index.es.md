@@ -26,5 +26,23 @@ The **Covert Ops** Broad Skill has been implemented, consolidating:
 - **Drive-Space Entity (Name TBD):** A new species originating from "Drive Space" (the dimension used for FTL travel). They are specialized psions with a physiology adapted to the non-Euclidean nature of that realm.
 - **Teleportation Broad Skill:** A new Psionic broad skill allowing for the manipulation of space and distance. This will include specialties for personal blink-steps, long-range jaunts, and potentially shifting objects.
 
-This change aims to streamline "rogue-style" characters and reduce skill bloat in the dexterity and intelligence categories.
+Este cambio tiene como objetivo agilizar los personajes de tipo "pícaro" (rogue) y reducir la saturación de habilidades en las categorías de destreza e inteligencia.
+
+### Familiaridad con las habilidades y entrenamiento en múltiples especialidades (la "Regla de la mitad")
+
+El entrenamiento en un arma de fuego se traduce frecuentemente en el resto. El rango de especialidad más alto de un personaje en una habilidad amplia (como Armas modernas a distancia o Combate cuerpo a cuerpo) debería teóricamente "elevar" su competencia básica en las demás.
+
+-   **Base de familiaridad:** Se utiliza la **mitad** del rango de especialidad más alto (redondeado hacia abajo) como base para otras especialidades en la misma habilidad amplia.
+-   **Alcance de la familiaridad:** Solo afecta a los cálculos de precisión/modificador, NO a los beneficios de rango (como Desenfundado rápido o Rock-n-Roll). Los beneficios deben seguir adquiriéndose de forma específica.
+-   **La Bonificación de Integración:** Para resolver la "zona muerta de PX", los personajes deberían recibir una **bonificación adicional de –1 paso** mientras sus rangos nativos sean inferiores a su base de familiaridad. Esta bonificación se pierde una vez que el entrenamiento nativo la iguala.
+
+### División de especialidades de armas a distancia modernas (Modelo de 5 especialidades)
+
+El sistema AAA implementa una estructura de 5 especialidades para las armas de fuego modernas para mejorar la claridad del nicho táctico y el equilibrio de la "Experiencia Real" sobre el modelo estándar de 3 especialidades:
+1. **Pistola** (DEX - Compactación/Velocidad)
+2. **Subfusil** (DEX - Automático a corta distancia)
+3. **Fusil de asalto** (DEX - Automático a media distancia)
+4. **Escopeta** (DEX - Versatilidad táctica/Selección de munición)
+5. **Fusil** (DEX - Precisión a larga distancia)
+
 

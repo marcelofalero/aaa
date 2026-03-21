@@ -6,17 +6,15 @@ attribute = "DEX"
 category = "Other"
 +++
 
-**Cost:** 8
 
-The **Covert Ops** broad skill (formerly Stealth and Manipulation) focuses on remaining undetected and bypassing physical security. It consolidates the arts of stealth with the technical skills needed to bypass locks and pick pockets.
+The **Covert Ops** broad skill focuses on remaining undetected and bypassing physical security. It consolidates the arts of stealth with the practical skills needed to blend in or pick pockets.
 
 - **Unified Stealth:** Merging hide, sneak, and shadowing into a single Stealth specialty.
-- **Physical Bypassing:** Including Lockpick and Pickpocket.
+- **Physical Bypassing:** Including Pickpocket and Conceal.
 
 ---
 
 ## Conceal (DEX)
-**Cost:** 3
 
 This specialty skill represents the ability to hide objects from view or sensors. While **Stealth** is used to hide oneself, **Conceal** is used to hide items, such as weapons on one's person, contraband in a vehicle, or a secret compartment in a room.
 
@@ -34,7 +32,6 @@ A concealed weapon is worn in a place not normally searched or not subject to ea
 ---
 
 ## Disguise (CHA)
-**Cost:** 3
 
 Disguise is the ability to change your appearance to look like someone else or to blend into a crowd.
 
@@ -44,19 +41,8 @@ A character's Disguise situation die is modified by the observer's Awareness-per
 
 ---
 
-## Lockpick (DEX - Trained Only)
-**Cost:** 3
-
-*This skill can't be used untrained.*
-
-This specialty skill allows a character to open physical locks (doors, safes, vehicles, etc.). It is usually employed with tools which provide a situation die bonus.
-
-The lockpick skill is useless against a computer-assisted lock unless it has a physical mechanism the character can manipulate. Almost always, the use of lockpick requires a complex skill check.
-
----
 
 ## Pickpocket (DEX - Trained Only)
-**Cost:** 3
 
 *This skill can't be used untrained.*
 
@@ -86,7 +72,6 @@ This specialty skill allows a character to remove objects from a person (or plan
 ---
 
 ## Stealth (DEX)
-**Cost:** 3
 
 This specialty (also known as Unified Stealth) merges the techniques of hide, sneak, and shadow into a single field of expertise. It is the art of remaining undetected while stationary or in motion.
 

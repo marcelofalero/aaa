@@ -5,6 +5,7 @@ attribute = "INT"
 category = "Technical"
 +++
 
+
 This broad skill provides a character with training in the basics of setting explosive charges to demolish a specific target. A skilled character has a working knowledge of handling explosives, using primers and timing devices, and placing charges for maximum effect.
 
 Prepared charges come in several forms—satchel bombs, mines, and objects using plastic explosive, to name some typical ones. A prepared charge inflicts a specific type and amount of damage on objects within its explosive radius, as detailed in “Prepared Explosives” on page 180 in Chapter 11: Weapons & Armor.
@@ -49,3 +50,4 @@ A skill check is then made to determine the degree of success, which is directly
 ## Set Explosives (INT)
 
 This specialty skill allows a character to improve his ability to set manufactured explosive charges. See the description of the Demolitions broad skill for information on how this skill is employed.
+

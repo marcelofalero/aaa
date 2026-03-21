@@ -28,3 +28,21 @@ The **Covert Ops** Broad Skill has been implemented, consolidating:
 
 This change aims to streamline "rogue-style" characters and reduce skill bloat in the dexterity and intelligence categories.
 
+### Skill Familiarity & Cross-Specialty Training (The "Half Rule")
+
+Training in one firearm frequently translates to others. A character's highest specialty rank in a broad skill (like Modern Ranged or Melee Combat) should theoretically "pull up" their base competence in others.
+
+-   **Proposed Baseline:** Use **half** of the highest specialty rank (rounded down) as a baseline for other specialties in the same broad skill (Familiarity Rank).
+-   **Familiarity Scope:** Only affects accuracy/modifier calculations, NOT rank benefits (like Quick Draw or Rock-n-Roll). Benefits must still be purchased natively.
+-   **The Integration Bonus:** To solve the "XP dead zone," characters should receive an additional **-1 step bonus** while their native ranks are lower than their familiarity floor. This bonus is lost once native training catches up.
+
+### Modern Ranged Specialty Split (5-Specialty Model)
+
+The AAA system implements a 5-specialty structure for modern firearms to improve tactical niche clarity and "Real Experience" balancing over the standard 3-specialty model:
+1. **Pistol** (DEX - Compactness/Speed)
+2. **SMG** (DEX - Close-Range Automatic)
+3. **Assault Rifle** (DEX - Mid-Range Automatic)
+4. **Shotgun** (DEX - Tactical Versatility/Selection)
+5. **Rifle** (DEX - Long-Range Precision)
+
+

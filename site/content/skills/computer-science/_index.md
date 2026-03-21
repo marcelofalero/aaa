@@ -6,7 +6,6 @@ attribute = "INT"
 category = "Technical"
 +++
 
-**Cost:** 7
 
 **Free to mechalus characters.**
 
@@ -32,7 +31,6 @@ For more information on how the Computer Science specialty skills are used, see 
 
 ## Hacking (INT - Trained Only)
 
-**Cost:** 4
 
 Hacking is the ability to break computer codes and bypass computer security for the purposes of gaining access to restricted data or secure computer systems. Hacking can be performed at a computer station that’s physically connected to the data stores in question, or it can be performed from a distant location by creating a link via a network of some kind. It's most often used to retrieve secured data, to enter and take control of a computer system, or to perform some type of sabotage such as erasing files or introducing a virus of some kind.
 
@@ -44,7 +42,6 @@ This specialty skill allows a character equipped with a computer to perform the 
 
 ## Hardware (INT)
 
-**Cost:** 4
 
 This specialty represents a character's knowledge of and proficiency with the physical components that make up a computer. Understanding how a computer system works, being able to set one up quickly, designing and building your own computer, and repairing computer equipment are some of the tasks covered by this skill.
 
@@ -54,7 +51,6 @@ This specialty represents a character's knowledge of and proficiency with the ph
 
 ## Programming (INT)
 
-**Cost:** 4
 
 This specialty skill enables a character to improve her ability to analyze computer programs, modify existing programs, and (at higher ranks) create programs by writing her own code. Having rank 1 in this skill enables a character to modify the source code of programs of Ordinary quality and Ordinary complexity.
 

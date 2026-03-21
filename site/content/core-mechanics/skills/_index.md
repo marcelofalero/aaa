@@ -118,3 +118,15 @@ If a character doesn't have a particular broad skill or a related specialty skil
 ### Feat Checks
 
 Sometimes an action your character attempts is not directly related to a specific skill. In such cases, success or failure is determined by the result of a feat check. **To make a feat check, a player rolls a d20 (the control die) with a base situation die of +d4.** (Of course, other conditions may modify the situation die.) **If the dice roll is equal to or less than the character's relevant Ability Score**, some degree of success is achieved.
+
+---
+
+## TABLE P19: SKILL LIST
+
+This table provides a comprehensive list of all available skills, grouped by their governing attribute. It includes the cost for broad skills and specialty skills, as well as the profession codes for favored skills.
+
+{{< json-table "skills" >}}
+
+**Profession (Pr.) Codes:** `C`: Combat Spec | `D`: Diplomat | `F`: Free Agent | `T`: Tech Op | `—`: Open.
+
+

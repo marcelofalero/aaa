@@ -6,7 +6,6 @@ attribute = "STR"
 category = "Other"
 +++
 
-**Cost:** 3
 
 This broad skill provides a character with the abilities of a natural athlete—a competent level of strength, grace, and physical prowess. This skill is used to determine the success of physical actions such as climbing a tree, jumping over a large hole, or throwing an object at a target.
 
@@ -14,7 +13,6 @@ This broad skill provides a character with the abilities of a natural athlete—
 
 ### Climb (STR)
 
-**Cost:** 2
 
 This specialty skill allows a character to scale walls, ascend mountains, or otherwise climb up or over obstacles.
 
@@ -29,9 +27,10 @@ In challenge scenes or whenever the Gamemaster determines that a time unit other
 
 If a character gets a Critical Failure on a climb check, he loses his grip and falls (unless equipment prevents it). If he has any actions left in the round, he can attempt to regain his hold by getting an Ordinary or better on a second climb check with a +1 penalty on top of any other modifiers that apply. If this attempt fails or if the character has no remaining actions, he falls.
 
+---
+
 ### Jump (STR)
 
-**Cost:** 1
 
 With the jump skill, a character can attempt to leap over obstacles by performing a horizontal running or standing jump, or a vertical leap.
 
@@ -47,30 +46,19 @@ On any jumping attempt, a Critical Failure result indicates that the character t
 #### Rank Benefits
 - **Increased Distance:** The running jump improves by 1 meter at ranks 3, 6, 9, and 12; the standing jump improves by 1 meter at ranks 4, 7, and 10; and the vertical leap improves by 0.5 meters at ranks 5, 8, and 11.
 
-### Race (CON)
-
-*This skill can't be used untrained.*
-
-This specialty skill allows a character to improve his ability to move faster and cover more ground in a combat scene. A character who purchases rank 1 in this specialty immediately improves his run movement rate by 2 meters.
-
-#### Rank Benefits
-- **Run Rate:** Increases by 2 meters at ranks 5 and 9.
-- **Sprint Rate:** Increases by 2 meters at ranks 4, 7, and 12.
+---
 
 ### Swim (CON)
 
-*Except to determine if a character can tread water to avoid drowning, this skill can’t be used untrained.*
 
-This specialty skill is necessary for a character to be able to use his swim movement rate. Without this skill, a character can only tread water and paddle in a crude fashion.
+The Swim specialty skill represents a character's ability to move through water or other liquid environments without sinking or drowning.
 
-#### Rank Benefits
-- **Rank 1 [Holding Breath]:** Any Stamina-endurance checks a character must make to keep holding his breath are made with a -1 bonus.
-- **Rank 4, 8, 12 [Improved Breathing]:** The bonus to Stamina-endurance checks improves to -2 (rank 4), -3 (rank 8), and -4 (rank 12).
-- **Rank 4, 8, 12 [Movement Rate]:** Both swim and easy swim rates increase by 1 meter at each of these ranks.
+⊗ **Movement Rate Increase:** As a character achieves higher ranks in the swim specialty skill, he or she improves swim and easy swim movement rates. Both rates increase by **1 meter** at rank 4, again at rank 8, and again at rank 12.
+
+---
 
 ### Throw (STR)
 
-**Cost:** 2
 
 With the throw skill, a character can accurately toss balls, darts, stones, throwing knives, grenades, and other small objects at a specific target.
 

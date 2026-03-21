@@ -6,7 +6,6 @@ attribute = "STR"
 category = "Combat"
 +++
 
-**Cost:** 8
 
 Armor that's bulky, heavy, and cumbersome hinders the character using it. This is reflected by a penalty to the character's action check and the lessening or negating of a character's Dexterity resistance modifier. The Armor Operation broad skill and its specialty skills help to alleviate these penalties.
 
@@ -25,7 +24,6 @@ For a character **untrained** in Armor Operation, an action check and Dexterity 
 ## Specialty Skills
 
 ### Combat Armor (STR)
-**Cost:** 3
 
 This specialty represent the level of mastery in the use of armor, as well as the specialized training needed to use powered armors, allowing the character to obtain the most of any armor.
 
@@ -36,7 +34,6 @@ Rank 2: Shaking Off Stuns. Stun damage (including secondary) is reduced by 1 poi
 Rank 7: Powered Armor Operation. The character has mastered the synchronization required to operate Powered Armor suits.
 
 ### Tactical Armor (INT)
-**Cost:** 3
 
 This specialty skill enters into play when armors with integrated equipment are used, from sensors to communications. But not in the case of mounted weaponry that usually the specific skill for the mounted weapon.
 This skill can also be used to shake of electronic attacks like sensors hacking or jamming.
@@ -48,19 +45,17 @@ Rank 5: Sensor Proficiency. Receive a -1 step bonus to checks involving the oper
 Rank 7: Counter-Intrusion. Gain a -1 step bonus to resist electronic warfare or hacking attempts directed at the suit. This improves to -2 steps at Rank 11.
 
 ### Propulsion Systems (INT)
-**Cost:** 3
 
 This specialty skill represents the mastery in the use of integrated propulsion systems, like jetpacks, underwater drives, or even gravitic assisted deceleration systems (GADS, the gravity age version of parachuting).
 
 Rank 2: Thermal/Fuel Management. Optimize fuel or heat dissipation, extending operational time of propulsion units by 50%.
 
-Rank 4: Vector Calibration. Adjust thrust nozzles for specific tasks, providing a -1 step bonus to maneuvering checks made using the system.
+Rank 4: Vector Calibration & Aerobatics Integration. Adjust thrust nozzles for specific tasks, providing a **-1 step bonus** to maneuvering checks. Additionally, the character is sufficiently familiarized with armor propulsion systems to use the **Aerobatics** specialty skill for complex maneuvers while wearing the suit.
 
 Rank 7: Maximum Burn. Make a Propulsion Systems check to increase speed for the round: Ordinary (+25%), Good (+50%), or Amazing (+100%).
 Each consecutive round of forcing the engine incurs a cumulative +1 step penalty to the check. The penalty is reduced by 1 for each round the propulsion is not being used.
 
 ### Shields (STR)
-**Cost:** 3
 
 Focuses on the tactical use of physical, energy, or ballistic shields.
 

@@ -11,7 +11,7 @@ El Director de Juego asignará modificadores al dado de situación, teniendo en 
 
 Opcionalmente, en tal caso, la habilidad de Negocios puede tratarse como una [habilidad de encuentro](/es/core-mechanics/characters-in-action/#encounter-scene). Si el uso de esta habilidad da como resultado que la actitud de un objetivo cambie a Amistosa o mejor, esto puede proporcionar una bonificación en cualquier tirada de habilidad posterior para que la otra parte coopere.
 
-Por lo general, se aplicará una penalización de dado de situación cuando un héroe intente negociar con bienes exóticos, raros o desconocidos; intente realizar una transacción ilegal; o intente cerrar un trato con un miembro de una cultura desconocida. Cualquiera de estas penalizaciones puede ser [Ordinaria], [Buena] o Asombrosa, dependiendo de la situación específica.
+Por lo general, se aplicará una penalización de dado de situación cuando un héroe intente negociar con bienes exóticos, raros o desconocidos; intente realizar una transacción ilegal; o intente cerrar un trato con un miembro de una cultura desconocida. Cualquiera de estas penalizaciones puede ser Ordinaria, Buena o Asombrosa, dependiendo de la situación específica.
 
 Se aplicaría una bonificación al dado de situación si el héroe tiene información privilegiada que le da una ventaja al realizar una transacción, o si está tratando con un producto o cultura familiar.
 
