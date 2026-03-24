@@ -1,0 +1,27 @@
++++
+title = "El Héroe de Guerra"
+weight = 11
++++
+
+Estás definido por un único conflicto muy publicitado. Ya fueras un piloto as, un médico de combate o el único superviviente de un escuadrón condenado, la galaxia conoce tu rostro y espera que estés a la altura de la leyenda.
+
+## Habilidades Especializadas Favoritas:
+*   [Liderazgo-Inspirar](/skills/leadership/#inspire)
+*   [Resistencia-Aguante](/skills/stamina/#endurance)
+*   [Resolución-Resolución Mental](/skills/resolve-con/#mental-resolve)
+
+## Ventaja Automática:
+*   [Celebridad](/perks_flaws/#celebrity)
+
+## Desventaja Automática:
+*   [Antigua Lesión](/perks_flaws/#old-injury) (Un recordatorio físico duradero del evento que te hizo famoso).
+
+## Equipo Inicial:
+Un arma distintiva personalizada o muy marcada por la batalla, medallas de combate oficiales, una chaqueta militar resistente y un suministro de analgésicos médicos.
+
+## Habilidad Especial: Carga de Gloria
+Recibes una bonificación de -1 paso a las tiradas de habilidad de [Interacción](/skills/interaction/) o [Liderazgo](/skills/leadership/) al tratar con veteranos, personal militar activo o ciudadanos patrióticos que reconocen tu servicio.
+
+## Tendencias:
+*   **La Leyenda Viviente:** Acepta voluntariamente una desventaja significativa o soporta el peso de un ataque para proteger a civiles o aliados, impulsado por la necesidad de estar a la altura de tu reputación imposible.
+*   **El Fantasma del Pasado:** Reacciona a una situación actual utilizando el contexto obsoleto o traumático de tu guerra pasada, complicando una simple negociación o infiltración al tratarla como un campo de batalla.
