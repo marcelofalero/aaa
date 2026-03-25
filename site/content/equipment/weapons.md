@@ -15,3 +15,11 @@ toc = true
 ## Heavy Weapons
 
 {{< json-table "weapons" "heavy" "acc" "range" "act" "clip" "mass" "hide" >}}
+
+## Ammunition
+
+{{< json-table "weapons" "ammunition" "platform" "payload" "cost" >}}
+
+## Accessories
+
+{{< json-table "weapons" "accessories" "platform" "mass" "cost" >}}

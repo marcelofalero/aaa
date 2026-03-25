@@ -1,47 +1,82 @@
-document.addEventListener('DOMContentLoaded', function() {
-  const tables = document.querySelectorAll('.interactive-table');
+(function () {
+  const initTable = function (wrapper) {
+    if (wrapper.dataset.jsInitialized) return;
+    wrapper.dataset.jsInitialized = "true";
 
-  tables.forEach(table => {
-    // Use a named function for the event listener for clarity
-    function handleRowClick(e) {
-      // Don't do anything if the click was on a link
-      if (e.target.tagName === 'A') {
-        return;
-      }
+    const table = wrapper.querySelector('.interactive-table');
+    if (!table) return;
 
+    const filterInput = wrapper.querySelector('.table-filter-input');
+    const rows = table.querySelectorAll('.data-row');
+    const separators = table.querySelectorAll('.table-separator');
+
+    // Click handling
+    table.addEventListener('click', function (e) {
       const row = e.target.closest('.data-row');
-      if (!row) {
-        return;
-      }
+      if (e.target.tagName === 'A' || !row) return;
 
       const targetId = row.getAttribute('data-target');
       const targetRow = document.getElementById(targetId);
 
-      if (!targetRow) {
-        return;
+      if (targetRow) {
+        const isVisible = targetRow.style.display === 'table-row';
+
+        const allDescRows = table.querySelectorAll('.description-row');
+        allDescRows.forEach(r => r.style.display = 'none');
+
+        const allDataRows = table.querySelectorAll('.data-row');
+        allDataRows.forEach(r => r.classList.remove('active-row'));
+
+        if (!isVisible) {
+          targetRow.style.display = 'table-row';
+          row.classList.add('active-row');
+        }
       }
+    });
 
-      // Check if the clicked row is already active
-      const isAlreadyActive = row.classList.contains('active-row');
+    // Filter handling
+    if (filterInput) {
+      filterInput.addEventListener('input', function () {
+        const query = this.value.toLowerCase().trim();
+        rows.forEach(row => {
+          const text = row.textContent.toLowerCase();
+          const targetId = row.getAttribute('data-target');
+          const descRow = document.getElementById(targetId);
 
-      // First, close all description rows and deactivate all data rows
-      const allDescRows = table.querySelectorAll('.description-row');
-      const allDataRows = table.querySelectorAll('.data-row');
+          if (text.includes(query)) {
+            row.style.display = 'table-row';
+          } else {
+            row.style.display = 'none';
+            if (descRow) descRow.style.display = 'none';
+            row.classList.remove('active-row');
+          }
+        });
 
-      allDescRows.forEach(r => {
-        r.style.display = 'none';
+        separators.forEach(sep => {
+          let next = sep.nextElementSibling;
+          let hasVisible = false;
+          while (next && !next.classList.contains('table-separator')) {
+            if (next.classList.contains('data-row') && next.style.display !== 'none') {
+              hasVisible = true;
+              break;
+            }
+            next = next.nextElementSibling;
+          }
+          sep.style.display = hasVisible ? 'table-row' : 'none';
+        });
       });
-      allDataRows.forEach(r => {
-        r.classList.remove('active-row');
-      });
-
-      // If the clicked row was not already active, open its description
-      if (!isAlreadyActive) {
-        targetRow.style.display = 'table-row';
-        row.classList.add('active-row');
-      }
     }
+  };
 
-    table.addEventListener('click', handleRowClick);
-  });
-});
+  const bindAllTables = () => {
+    document.querySelectorAll('.table-wrapper').forEach(initTable);
+  };
+
+  // Run immediately, in case script was deferred or loaded after DOM
+  bindAllTables();
+
+  // Run on DOMContentLoaded, in case script was in head
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', bindAllTables);
+  }
+})();

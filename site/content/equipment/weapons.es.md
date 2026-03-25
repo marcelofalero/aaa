@@ -4,16 +4,22 @@ weight = 2
 toc = true
 +++
 
-## Melee Weapons
+## Armas cuerpo a cuerpo
 
 {{< json-table "weapons" "melee" >}}
 
-## Ranged Weapons
+## Armas a distancia
 
 {{< json-table "weapons" "ranged" >}}
 
-
-## Heavy Weapons
+## Armas pesadas
 
 {{< json-table "weapons" "heavy" >}}
 
+## Munición
+
+{{< json-table "weapons" "ammunition" "platform" "payload" "cost" >}}
+
+## Accesorios
+
+{{< json-table "weapons" "accessories" "platform" "mass" "cost" >}}

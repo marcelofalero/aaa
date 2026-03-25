@@ -1,1666 +1,2690 @@
 {
-  "melee": {
-    "columns": [
-      {
-        "name": "Arma",
-        "key": "name"
-      },
-      {
-        "name": "Habilidad",
-        "key": "skill"
-      },
-      {
-        "name": "Acc",
-        "key": "acc"
-      },
-      {
-        "name": "Daño (O/G/A)",
-        "key": "damage"
-      },
-      {
-        "name": "Comportamiento",
-        "key": "actions"
-      },
-      {
-        "name": "Masa",
-        "key": "mass"
-      },
-      {
-        "name": "Aprovechar",
-        "key": "avail"
-      },
-      {
-        "name": "Costo ($)",
-        "key": "cost"
-      },
-      {
-        "name": "Descripción",
-        "key": "description",
-        "hidden": true
-      },
-      {
-        "name": "Costo del clip",
-        "key": "clip_cost",
-        "hidden": true
-      },
-      {
-        "name": "Esconder",
-        "key": "hide_modifier",
-        "hidden": true
-      }
-    ],
-    "groups": [
-      {
-        "name": "PL 0: Edad de Piedra",
-        "items": [
-          {
-            "name": "Club",
-            "skill": "garrote cuerpo a cuerpo",
-            "skill_url": "/skills/melee-weapons/bludgeon/",
-            "acc": "0",
-            "damage": "d4+1s/d6w/d4+1w",
-            "actions": "1",
-            "mass": "2",
-            "avail": "do",
-            "cost": "5",
-            "anchor": "club",
-            "description": "Un palo o garrote pesado, sencillo pero eficaz.",
-            "clip_cost": "N/A",
-            "hide_modifier": "N/A"
-          },
-          {
-            "name": "Daga",
-            "skill": "espada cuerpo a cuerpo",
-            "skill_url": "/skills/melee-weapons/blade/",
-            "acc": "0",
-            "damage": "d6w/d4+1w/d4+2w",
-            "actions": "1",
-            "mass": "1",
-            "avail": "do",
-            "cost": "10",
-            "anchor": "daga",
-            "description": "Una hoja corta de doble filo que se utiliza para apuñalar o empujar.",
-            "clip_cost": "N/A",
-            "hide_modifier": "N/A"
-          },
-          {
-            "name": "Barra",
-            "skill": "garrote cuerpo a cuerpo",
-            "skill_url": "/skills/melee-weapons/bludgeon/",
-            "acc": "-1",
-            "damage": "d4+1s/d4+3s/d6w",
-            "actions": "1",
-            "mass": "2",
-            "avail": "do",
-            "cost": "10",
-            "anchor": "barra",
-            "description": "Un poste de madera largo y resistente, a menudo forrado con hierro.",
-            "clip_cost": "N/A",
-            "hide_modifier": "N/A"
-          },
-          {
-            "name": "Lanza",
-            "skill": "espada cuerpo a cuerpo",
-            "skill_url": "/skills/melee-weapons/blade/",
-            "acc": "0",
-            "damage": "d4w/d4+2w/d4m",
-            "actions": "1",
-            "mass": "3",
-            "avail": "do",
-            "cost": "15",
-            "anchor": "lanza",
-            "description": "Un arma de asta con una punta afilada, diseñada para empujar.",
-            "clip_cost": "N/A",
-            "hide_modifier": "N/A"
-          },
-          {
-            "name": "Desarmado",
-            "skill": "Ataque desarmado",
-            "skill_url": "/skills/unarmed-attack/",
-            "acc": "0",
-            "damage": "d4s/d4+1s/d6+2s",
-            "actions": "1",
-            "mass": "-",
-            "avail": "do",
-            "cost": "-",
-            "anchor": "",
-            "description": "Pelear con las manos, los pies u otras armas naturales desnudos.",
-            "clip_cost": "N/A",
-            "hide_modifier": "N/A"
-          }
+    "melee": {
+        "columns": [
+            {
+                "name": "Arma",
+                "key": "name"
+            },
+            {
+                "name": "Habilidad",
+                "key": "skill"
+            },
+            {
+                "name": "Acc",
+                "key": "acc"
+            },
+            {
+                "name": "Daño (O/G/A)",
+                "key": "damage"
+            },
+            {
+                "name": "Comportamiento",
+                "key": "actions"
+            },
+            {
+                "name": "Masa",
+                "key": "mass"
+            },
+            {
+                "name": "Aprovechar",
+                "key": "avail"
+            },
+            {
+                "name": "Costo ($)",
+                "key": "cost"
+            },
+            {
+                "name": "Descripción",
+                "key": "description",
+                "hidden": true
+            },
+            {
+                "name": "Costo del clip",
+                "key": "clip_cost",
+                "hidden": true
+            },
+            {
+                "name": "Esconder",
+                "key": "hide_modifier",
+                "hidden": true
+            }
+        ],
+        "groups": [
+            {
+                "name": "PL 0: Edad de Piedra",
+                "items": [
+                    {
+                        "name": "Club",
+                        "skill": "garrote cuerpo a cuerpo",
+                        "skill_url": "/skills/melee-weapons/bludgeon/",
+                        "acc": "0",
+                        "damage": "d4+1s/d6w/d4+1w",
+                        "actions": "1",
+                        "mass": "2",
+                        "avail": "do",
+                        "cost": "5",
+                        "anchor": "club",
+                        "description": "Un palo o garrote pesado, sencillo pero eficaz.",
+                        "clip_cost": "N/A",
+                        "hide_modifier": "N/A"
+                    },
+                    {
+                        "name": "Daga",
+                        "skill": "espada cuerpo a cuerpo",
+                        "skill_url": "/skills/melee-weapons/blade/",
+                        "acc": "0",
+                        "damage": "d6w/d4+1w/d4+2w",
+                        "actions": "1",
+                        "mass": "1",
+                        "avail": "do",
+                        "cost": "10",
+                        "anchor": "daga",
+                        "description": "Una hoja corta de doble filo que se utiliza para apuñalar o empujar.",
+                        "clip_cost": "N/A",
+                        "hide_modifier": "N/A"
+                    },
+                    {
+                        "name": "Barra",
+                        "skill": "garrote cuerpo a cuerpo",
+                        "skill_url": "/skills/melee-weapons/bludgeon/",
+                        "acc": "-1",
+                        "damage": "d4+1s/d4+3s/d6w",
+                        "actions": "1",
+                        "mass": "2",
+                        "avail": "do",
+                        "cost": "10",
+                        "anchor": "barra",
+                        "description": "Un poste de madera largo y resistente, a menudo forrado con hierro.",
+                        "clip_cost": "N/A",
+                        "hide_modifier": "N/A"
+                    },
+                    {
+                        "name": "Lanza",
+                        "skill": "espada cuerpo a cuerpo",
+                        "skill_url": "/skills/melee-weapons/blade/",
+                        "acc": "0",
+                        "damage": "d4w/d4+2w/d4m",
+                        "actions": "1",
+                        "mass": "3",
+                        "avail": "do",
+                        "cost": "15",
+                        "anchor": "lanza",
+                        "description": "Un arma de asta con una punta afilada, diseñada para empujar.",
+                        "clip_cost": "N/A",
+                        "hide_modifier": "N/A"
+                    },
+                    {
+                        "name": "Desarmado",
+                        "skill": "Ataque desarmado",
+                        "skill_url": "/skills/unarmed-attack/",
+                        "acc": "0",
+                        "damage": "d4s/d4+1s/d6+2s",
+                        "actions": "1",
+                        "mass": "-",
+                        "avail": "do",
+                        "cost": "-",
+                        "anchor": "",
+                        "description": "Pelear con las manos, los pies u otras armas naturales desnudos.",
+                        "clip_cost": "N/A",
+                        "hide_modifier": "N/A"
+                    }
+                ]
+            },
+            {
+                "name": "PL 1: Bronce/Edad del Hierro",
+                "items": [
+                    {
+                        "name": "Guantelete",
+                        "skill": "Ataque desarmado",
+                        "skill_url": "/skills/unarmed-attack/",
+                        "acc": "0",
+                        "damage": "d4+1s/d4+2s/d4+1w",
+                        "actions": "1",
+                        "mass": "1",
+                        "avail": "do",
+                        "cost": "25",
+                        "anchor": "guantelete",
+                        "description": "Guante blindado que protege la mano y añade peso a los golpes.",
+                        "clip_cost": "N/A",
+                        "hide_modifier": "N/A"
+                    },
+                    {
+                        "name": "hacha de mano",
+                        "skill": "espada cuerpo a cuerpo",
+                        "skill_url": "/skills/melee-weapons/blade/",
+                        "acc": "0",
+                        "damage": "d4+1w/d4+2w/d4+3w",
+                        "actions": "1",
+                        "mass": "2",
+                        "avail": "do",
+                        "cost": "20",
+                        "anchor": "hacha de mano",
+                        "description": "Un hacha pequeña que puede usarse en combate cuerpo a cuerpo o arrojarse.",
+                        "clip_cost": "N/A",
+                        "hide_modifier": "N/A"
+                    },
+                    {
+                        "name": "Maza",
+                        "skill": "garrote cuerpo a cuerpo",
+                        "skill_url": "/skills/melee-weapons/bludgeon/",
+                        "acc": "0",
+                        "damage": "d6+1s/d4+1w/d8+1w",
+                        "actions": "1",
+                        "mass": "4",
+                        "avail": "do",
+                        "cost": "30",
+                        "anchor": "maza",
+                        "description": "Un garrote pesado con cabeza de metal, diseñado para aplastar armaduras.",
+                        "clip_cost": "N/A",
+                        "hide_modifier": "N/A"
+                    },
+                    {
+                        "name": "espada corta",
+                        "skill": "espada cuerpo a cuerpo",
+                        "skill_url": "/skills/melee-weapons/blade/",
+                        "acc": "0",
+                        "damage": "d6w/d8w/d6+2w",
+                        "actions": "1",
+                        "mass": "2",
+                        "avail": "do",
+                        "cost": "50",
+                        "anchor": "espada corta",
+                        "description": "Una espada con una longitud de hoja entre una daga y una espada larga.",
+                        "clip_cost": "N/A",
+                        "hide_modifier": "N/A"
+                    }
+                ]
+            },
+            {
+                "name": "PL 2: Edad Media",
+                "items": [
+                    {
+                        "name": "espada ancha",
+                        "skill": "espada cuerpo a cuerpo",
+                        "skill_url": "/skills/melee-weapons/blade/",
+                        "acc": "0",
+                        "damage": "d4+2w/d6+2w/d4m",
+                        "actions": "1",
+                        "mass": "3",
+                        "avail": "do",
+                        "cost": "100",
+                        "anchor": "sable",
+                        "description": "Una espada pesada de doble filo diseñada para cortar.",
+                        "clip_cost": "N/A",
+                        "hide_modifier": "N/A"
+                    },
+                    {
+                        "name": "Mayal",
+                        "skill": "garrote cuerpo a cuerpo",
+                        "skill_url": "/skills/melee-weapons/bludgeon/",
+                        "acc": "+1",
+                        "damage": "d6+2s/d4+2w/d8+2w",
+                        "actions": "1",
+                        "mass": "4",
+                        "avail": "Ud.",
+                        "cost": "75",
+                        "anchor": "mayal",
+                        "description": "Arma de golpe que consta de un palo con una cabeza de metal oscilante.",
+                        "clip_cost": "N/A",
+                        "hide_modifier": "N/A"
+                    },
+                    {
+                        "name": "gran hacha",
+                        "skill": "espada cuerpo a cuerpo",
+                        "skill_url": "/skills/melee-weapons/blade/",
+                        "acc": "+1",
+                        "damage": "d6+1w/d8+2w/d4+1m",
+                        "actions": "2",
+                        "mass": "8",
+                        "avail": "Ud.",
+                        "cost": "150",
+                        "anchor": "gran hacha",
+                        "description": "Un enorme hacha a dos manos capaz de realizar golpes devastadores.",
+                        "clip_cost": "N/A",
+                        "hide_modifier": "N/A"
+                    },
+                    {
+                        "name": "Nunchaku",
+                        "skill": "garrote cuerpo a cuerpo",
+                        "skill_url": "/skills/melee-weapons/bludgeon/",
+                        "acc": "-1",
+                        "damage": "d6s/d6+2s/d8+3s",
+                        "actions": "1",
+                        "mass": "1",
+                        "avail": "Ud.",
+                        "cost": "40",
+                        "anchor": "nunchaku",
+                        "description": "Dos palos conectados por una cadena o cuerda corta.",
+                        "clip_cost": "N/A",
+                        "hide_modifier": "N/A"
+                    },
+                    {
+                        "name": "arma de asta",
+                        "skill": "espada cuerpo a cuerpo",
+                        "skill_url": "/skills/melee-weapons/blade/",
+                        "acc": "+1",
+                        "damage": "d6+1w/d4+3w/d4+1m",
+                        "actions": "2",
+                        "mass": "6",
+                        "avail": "do",
+                        "cost": "60",
+                        "anchor": "arma de asta",
+                        "description": "Arma con un mango largo y una cabeza cortante o punzante.",
+                        "clip_cost": "N/A",
+                        "hide_modifier": "N/A"
+                    }
+                ]
+            },
+            {
+                "name": "PL 3: Edad de la Razón",
+                "items": [
+                    {
+                        "name": "Chafarote",
+                        "skill": "espada cuerpo a cuerpo",
+                        "skill_url": "/skills/melee-weapons/blade/",
+                        "acc": "0",
+                        "damage": "d4+1w/d8+1w/d8+3w",
+                        "actions": "1",
+                        "mass": "2",
+                        "avail": "do",
+                        "cost": "80",
+                        "anchor": "chafarote",
+                        "description": "Sable o espada cortante, corta y ancha, de hoja recta o ligeramente curvada.",
+                        "clip_cost": "N/A",
+                        "hide_modifier": "N/A"
+                    },
+                    {
+                        "name": "Katana",
+                        "skill": "espada cuerpo a cuerpo",
+                        "skill_url": "/skills/melee-weapons/blade/",
+                        "acc": "-1",
+                        "damage": "d4+2w/d6+2w/d4+1m",
+                        "actions": "1",
+                        "mass": "2",
+                        "avail": "R",
+                        "cost": "500",
+                        "anchor": "catana",
+                        "description": "Una espada tradicional japonesa con una hoja curva y de un solo filo.",
+                        "clip_cost": "N/A",
+                        "hide_modifier": "N/A"
+                    },
+                    {
+                        "name": "Estoque",
+                        "skill": "espada cuerpo a cuerpo",
+                        "skill_url": "/skills/melee-weapons/blade/",
+                        "acc": "-1",
+                        "damage": "d4w/d4+1w/d4+2w",
+                        "actions": "1",
+                        "mass": "1",
+                        "avail": "Ud.",
+                        "cost": "100",
+                        "anchor": "estoque",
+                        "description": "Una espada delgada y puntiaguda, ideal para ataques de estocada.",
+                        "clip_cost": "N/A",
+                        "hide_modifier": "N/A"
+                    },
+                    {
+                        "name": "Sable",
+                        "skill": "espada cuerpo a cuerpo",
+                        "skill_url": "/skills/melee-weapons/blade/",
+                        "acc": "0",
+                        "damage": "d4w/d4+2w/2d4+1w",
+                        "actions": "1",
+                        "mass": "2",
+                        "avail": "Ud.",
+                        "cost": "120",
+                        "anchor": "sable",
+                        "description": "Espada de hoja curva, asociada a la caballería ligera.",
+                        "clip_cost": "N/A",
+                        "hide_modifier": "N/A"
+                    }
+                ]
+            },
+            {
+                "name": "PL 4: Era industrial",
+                "items": [
+                    {
+                        "name": "Bayoneta",
+                        "skill": "espada cuerpo a cuerpo",
+                        "skill_url": "/skills/melee-weapons/blade/",
+                        "acc": "+1",
+                        "damage": "d4w/d4+2w/d6m",
+                        "actions": "1",
+                        "mass": "1",
+                        "avail": "do",
+                        "cost": "25",
+                        "anchor": "bayoneta",
+                        "description": "Un cuchillo, daga, espada o arma con forma de púa diseñada para caber en el extremo del cañón de un rifle.",
+                        "clip_cost": "N/A",
+                        "hide_modifier": "N/A"
+                    }
+                ]
+            },
+            {
+                "name": "PL 5: Era de la información",
+                "items": [
+                    {
+                        "name": "cuchillo de combate",
+                        "skill": "espada cuerpo a cuerpo",
+                        "skill_url": "/skills/melee-weapons/blade/",
+                        "acc": "0",
+                        "damage": "d4+1w/d4+2w/d4+3w",
+                        "actions": "1",
+                        "mass": "1",
+                        "avail": "do",
+                        "cost": "50",
+                        "anchor": "cuchillo de combate",
+                        "description": "Un cuchillo duradero diseñado para uso militar, a menudo con un borde dentado.",
+                        "clip_cost": "N/A",
+                        "hide_modifier": "N/A"
+                    },
+                    {
+                        "name": "bastón paralizante",
+                        "skill": "Accionado cuerpo a cuerpo",
+                        "skill_url": "/skills/melee-weapons/powered-weapon/",
+                        "acc": "0",
+                        "damage": "d4+1s/d4+3s/d6+4s",
+                        "actions": "1",
+                        "mass": "1",
+                        "avail": "Ud.",
+                        "cost": "200",
+                        "anchor": "bastón paralizante",
+                        "description": "Un bastón que aplica una descarga eléctrica de alto voltaje al impactar.",
+                        "clip_cost": "N/A",
+                        "hide_modifier": "N/A"
+                    }
+                ]
+            },
+            {
+                "name": "PL 6: Era de la fusión",
+                "items": [
+                    {
+                        "name": "Espada sierra",
+                        "skill": "Accionado cuerpo a cuerpo",
+                        "skill_url": "/skills/melee-weapons/powered-weapon/",
+                        "acc": "+1",
+                        "damage": "d8+1w/d8+2w/d4+1m",
+                        "actions": "1",
+                        "mass": "5",
+                        "avail": "R",
+                        "cost": "1500",
+                        "anchor": "espada sierra",
+                        "description": "Una espada con dientes motorizados que giran como una motosierra.",
+                        "clip_cost": "N/A",
+                        "hide_modifier": "N/A"
+                    },
+                    {
+                        "name": "Bastón de pulso",
+                        "skill": "Accionado cuerpo a cuerpo",
+                        "skill_url": "/skills/melee-weapons/powered-weapon/",
+                        "acc": "0",
+                        "damage": "d8s/d4+2w/d6+2w",
+                        "actions": "1",
+                        "mass": "2",
+                        "avail": "Ud.",
+                        "cost": "400",
+                        "anchor": "bastón de pulso",
+                        "description": "Un bastón que emite un pulso cinético al impactar, causando daños internos.",
+                        "clip_cost": "N/A",
+                        "hide_modifier": "N/A"
+                    }
+                ]
+            },
+            {
+                "name": "PL 7: Era de la gravedad",
+                "items": [
+                    {
+                        "name": "Gravmace",
+                        "skill": "Accionado cuerpo a cuerpo",
+                        "skill_url": "/skills/melee-weapons/powered-weapon/",
+                        "acc": "+1",
+                        "damage": "d6+2s/d6+2w/d8+2w",
+                        "actions": "1",
+                        "mass": "4",
+                        "avail": "R",
+                        "cost": "2000",
+                        "anchor": "grava",
+                        "description": "Una maza que utiliza generadores de gravedad para aumentar la fuerza del impacto.",
+                        "clip_cost": "N/A",
+                        "hide_modifier": "N/A"
+                    },
+                    {
+                        "name": "Cestus de poder",
+                        "skill": "pelea desarmada",
+                        "skill_url": "/skills/unarmed-attack/brawl/",
+                        "acc": "-1",
+                        "damage": "d4+2s/d4w/d4+1w",
+                        "actions": "1",
+                        "mass": "3",
+                        "avail": "R",
+                        "cost": "1800",
+                        "anchor": "poder-cestus",
+                        "description": "Un guantelete motorizado que mejora los ataques sin armas.",
+                        "clip_cost": "N/A",
+                        "hide_modifier": "N/A"
+                    },
+                    {
+                        "name": "Hoja Iónica Samurai 300",
+                        "skill": "Melee-powered",
+                        "acc": "0",
+                        "type": "En/O",
+                        "damage": "d4+3s/d6+4s/d4+3w",
+                        "actions": "4",
+                        "mass": "2.25",
+                        "hide": "+2",
+                        "avail": "Mil",
+                        "cost": "750",
+                        "description": "La hoja iónica emite una descarga de energía electromagnética al contacto. Aunque es moderadamente efectiva contra objetivos sin armadura, su propósito principal es neutralizar armaduras pesadas, robots y equipo cibernético. Un objetivo que dependa de sistemas de control electrónico o computadoras sufre un penalizador de +2 pasos a cualquier control de Destreza y Resistencia que deba hacer tras ser impactado."
+                    },
+                    {
+                        "name": "Bastón de Pulsos Nighthawk A5",
+                        "skill": "Melee-powered",
+                        "acc": "0",
+                        "type": "En/O",
+                        "damage": "d8s/d4+2w/d6+2w",
+                        "actions": "3",
+                        "mass": "1.15",
+                        "hide": "+4",
+                        "avail": "Con",
+                        "cost": "500",
+                        "description": "Los bastones de pulsos se han usado por más de un siglo. Pocos objetivos sin armadura pueden resistir más de uno o dos choques de sus potentes capacitores. El Nighthawk es un modelo sigiloso telescópico hecho de plástico de baja densidad. Es muy fácil de ocultar y no aparece en la mayoría de detectores de armas, permitiendo al usuario introducirlo de contrabando en lugares donde normalmente no podría ir armado."
+                    },
+                    {
+                        "name": "Bastón Aturdidor PunkThumper 6000",
+                        "skill": "Melee-powered",
+                        "acc": "0",
+                        "type": "En/O",
+                        "damage": "d6+1s/d8+2s/d12+3s",
+                        "actions": "3",
+                        "mass": "2",
+                        "hide": "+2",
+                        "avail": "Com",
+                        "cost": "425",
+                        "description": "Existen cientos de modelos de bastones aturdidores, pero Merrick otorga su máxima calificación al PunkThumper 6000 como el mejor de su clase. Destinado a trabajos de restricción en serio, usa una batería extrapesada para dar la mayor sacudida posible. No dura tanto como una carga normal de bastón aturdidor, pero con este bastón cada golpe cuenta."
+                    },
+                    {
+                        "name": "Espada Sierra AX2",
+                        "skill": "Melee-powered",
+                        "acc": "+1",
+                        "type": "LI/G",
+                        "damage": "d8+1w/d8+2w/d4+1m",
+                        "actions": "2",
+                        "mass": "7",
+                        "hide": "-",
+                        "avail": "Mil",
+                        "cost": "1250",
+                        "description": "La espada sierra es pesada y torpe, pero causa un daño extremo cuerpo a cuerpo. Su filo es una cadena dentada microingenierizada capaz de aserrar casi cualquier material normal. El AX2 es un modelo diseñado para usarse contra objetivos muy blindados."
+                    },
+                    {
+                        "name": "Hoja de Filamento Viper D",
+                        "skill": "Melee-powered",
+                        "acc": "0",
+                        "type": "LI/O",
+                        "damage": "d8-1w/d8w/d12-1w",
+                        "actions": "3",
+                        "mass": "1.75",
+                        "hide": "+2",
+                        "avail": "Con",
+                        "cost": "1500",
+                        "description": "El arma consta de una empuñadura y un pequeño módulo de plomo con una hebra continua de carbonato monomolecular conectándolos. El módulo detecta el balanceo del usuario y mantiene el filamento tenso en todo momento. Puede ajustarse a una longitud de hasta 4 metros para ataques cuerpo a cuerpo contra objetivos distantes."
+                    },
+                    {
+                        "name": "Hoja TN T-Bar",
+                        "skill": "Melee-blade",
+                        "acc": "0",
+                        "type": "LI/G",
+                        "damage": "d6w/d6+1w/d4m",
+                        "actions": "4",
+                        "mass": "4",
+                        "hide": "+3",
+                        "avail": "Com",
+                        "cost": "500",
+                        "description": "TN significa tungsteno-neutronita. Es la aleación más dura conocida, capaz de perforar cerametal como palanca a través de aluminio. Esta arma es un gran cuchillo de combate, pero mucho más densa (y pesada) que una cuchilla convencional. Es la única arma no energizada capaz de penetrar armaduras como el tanque corporal."
+                    },
+                    {
+                        "name": "Gravimaza Thunder 150",
+                        "skill": "Melee-powered",
+                        "acc": "0",
+                        "type": "LI/O",
+                        "damage": "d8+2s/d6+2w/d8+2w",
+                        "actions": "3",
+                        "mass": "3",
+                        "hide": "+1",
+                        "avail": "Con",
+                        "cost": "850",
+                        "description": "La maza de gravedad es un arma popular entre tropas de asalto de primera línea. Es más ligera y rápida que una turbosierra, y aunque carece de su impacto destructor, su batería dura el doble. El Thunder 150 es el modelo estándar en varias naciones estelares y firmas de seguridad privada."
+                    },
+                    {
+                        "name": "Cestus de Energía HeadBuster",
+                        "skill": "Unarmed Attack",
+                        "acc": "0",
+                        "type": "LI/O",
+                        "damage": "d4+2s/d4w/d4+2w",
+                        "actions": "4",
+                        "mass": "2",
+                        "hide": "+3",
+                        "avail": "Con",
+                        "cost": "625",
+                        "description": "Ganador del premio de Triple-Bullseye de Merrick, es el mejor cestus de energía disponible. Es más ligero y ocultable que sus rivales, pero da el mismo poder de impacto. Es tan fácil de usar que puedes elegir usar tu habilidad de Armas Cuerpo a Cuerpo o Ataques Desarmados al golpear con el HeadBuster."
+                    },
+                    {
+                        "name": "Hacha Gravedad Cero K-3",
+                        "skill": "Melee-powered",
+                        "acc": "+1",
+                        "type": "LI/O",
+                        "damage": "d6+2w/d4+4w/d4+2m",
+                        "actions": "3",
+                        "mass": "4",
+                        "hide": "-",
+                        "avail": "Mil",
+                        "cost": "950",
+                        "description": "El hacha de gravedad cero es un arma energizada especializada para acciones de abordaje y situaciones de microgravedad. En la base de su mango, un contrapeso compensa la masa variable de su letal hoja. Anula dos niveles de penalizadores de combate de gravedad cero o ligera, permitiendo el combate cuerpo a cuerpo libre de penalizaciones para alguien entrenado."
+                    },
+                    {
+                        "name": "Chuurkhna",
+                        "skill": "Melee-blade",
+                        "acc": "0",
+                        "type": "LI/O",
+                        "damage": "d4+3w/d6+3w/d6m",
+                        "actions": "3",
+                        "mass": "7",
+                        "hide": "-",
+                        "avail": "Com",
+                        "cost": "350",
+                        "description": "Un antiguo diseño weren, aún preferida por miembros de la raza. Es una guja o alabarda con un mango de metro y medio. Su hoja es grande y pesada, diseñada para cortar en lugar de apuñalar. Los weren la blanden a 1 o 2 manos pero la mayoría de los humanos necesitarían ambas manos. Tienen la fama de perforar la armadura más pesada."
+                    },
+                    {
+                        "name": "Dait'sya",
+                        "skill": "Melee-blade",
+                        "acc": "0",
+                        "type": "LI/O",
+                        "damage": "d4+1w/d4+2w/d4+3w",
+                        "actions": "4",
+                        "mass": "1",
+                        "hide": "+2",
+                        "avail": "Com",
+                        "cost": "250",
+                        "description": "El dait'sya es un arma tradicional t'sa de doble cuchilla empuñada a puño cerrado y siempre usadas en pares (precio, masa y estadísticas representan las dos). En combinación con la velocidad t'sa, la dait'sya es muy peligrosa en distancias cortas. Su ligereza disminuye cualquier penalización de pelear con un arma a cada mano en 1 paso."
+                    },
+                    {
+                        "name": "Tong Fe",
+                        "skill": "Melee-bludgeon / Unarmed Attack",
+                        "acc": "-1",
+                        "type": "LI/O",
+                        "damage": "d6s/d6+2s/d4+1w",
+                        "actions": "4",
+                        "mass": "1",
+                        "hide": "+2",
+                        "avail": "Com",
+                        "cost": "60",
+                        "description": "El tong fe es un arma de artes marciales popular entre patrullaje policial. Hecha para reflejar ataques, otorga un bonus de -2 pasos a cualquier intento de parada (parry). Al igual que con la dait'sya, a menudo son blandidos en equipo; el tong fe disminuye las penalizaciones por atacar con armas a dos manos un total de 1 paso."
+                    }
+                ]
+            },
+            {
+                "name": "PL 8: Era Energética",
+                "items": [
+                    {
+                        "name": "espada estrella",
+                        "skill": "Accionado cuerpo a cuerpo",
+                        "skill_url": "/skills/melee-weapons/powered-weapon/",
+                        "acc": "-2",
+                        "damage": "d8+1w/2d6w/d4+3m",
+                        "actions": "1",
+                        "mass": "3",
+                        "avail": "R",
+                        "cost": "7500",
+                        "anchor": "espada-estrella",
+                        "description": "Una espada con una hoja de energía de plasma contenida.",
+                        "clip_cost": "N/A",
+                        "hide_modifier": "N/A"
+                    },
+                    {
+                        "name": "triple personal",
+                        "skill": "Accionado cuerpo a cuerpo",
+                        "skill_url": "/skills/melee-weapons/powered-weapon/",
+                        "acc": "-1",
+                        "damage": "d8+2w/3d4+1w/d8m",
+                        "actions": "1",
+                        "mass": "4",
+                        "avail": "R",
+                        "cost": "4000",
+                        "anchor": "triple personal",
+                        "description": "Un bastón de tres secciones con emisores de energía en cada extremo.",
+                        "clip_cost": "N/A",
+                        "hide_modifier": "N/A"
+                    }
+                ]
+            }
         ]
-      },
-      {
-        "name": "PL 1: Bronce/Edad del Hierro",
-        "items": [
-          {
-            "name": "Guantelete",
-            "skill": "Ataque desarmado",
-            "skill_url": "/skills/unarmed-attack/",
-            "acc": "0",
-            "damage": "d4+1s/d4+2s/d4+1w",
-            "actions": "1",
-            "mass": "1",
-            "avail": "do",
-            "cost": "25",
-            "anchor": "guantelete",
-            "description": "Guante blindado que protege la mano y añade peso a los golpes.",
-            "clip_cost": "N/A",
-            "hide_modifier": "N/A"
-          },
-          {
-            "name": "hacha de mano",
-            "skill": "espada cuerpo a cuerpo",
-            "skill_url": "/skills/melee-weapons/blade/",
-            "acc": "0",
-            "damage": "d4+1w/d4+2w/d4+3w",
-            "actions": "1",
-            "mass": "2",
-            "avail": "do",
-            "cost": "20",
-            "anchor": "hacha de mano",
-            "description": "Un hacha pequeña que puede usarse en combate cuerpo a cuerpo o arrojarse.",
-            "clip_cost": "N/A",
-            "hide_modifier": "N/A"
-          },
-          {
-            "name": "Maza",
-            "skill": "garrote cuerpo a cuerpo",
-            "skill_url": "/skills/melee-weapons/bludgeon/",
-            "acc": "0",
-            "damage": "d6+1s/d4+1w/d8+1w",
-            "actions": "1",
-            "mass": "4",
-            "avail": "do",
-            "cost": "30",
-            "anchor": "maza",
-            "description": "Un garrote pesado con cabeza de metal, diseñado para aplastar armaduras.",
-            "clip_cost": "N/A",
-            "hide_modifier": "N/A"
-          },
-          {
-            "name": "espada corta",
-            "skill": "espada cuerpo a cuerpo",
-            "skill_url": "/skills/melee-weapons/blade/",
-            "acc": "0",
-            "damage": "d6w/d8w/d6+2w",
-            "actions": "1",
-            "mass": "2",
-            "avail": "do",
-            "cost": "50",
-            "anchor": "espada corta",
-            "description": "Una espada con una longitud de hoja entre una daga y una espada larga.",
-            "clip_cost": "N/A",
-            "hide_modifier": "N/A"
-          }
+    },
+    "ranged": {
+        "columns": [
+            {
+                "name": "Arma",
+                "key": "name"
+            },
+            {
+                "name": "Habilidad",
+                "key": "skill"
+            },
+            {
+                "name": "Acc",
+                "key": "acc"
+            },
+            {
+                "name": "Rango (P/M/L)",
+                "key": "range"
+            },
+            {
+                "name": "Daño (O/G/A)",
+                "key": "damage"
+            },
+            {
+                "name": "Acto.",
+                "key": "act"
+            },
+            {
+                "name": "Acortar",
+                "key": "clip"
+            },
+            {
+                "name": "Costo ($)",
+                "key": "cost"
+            },
+            {
+                "name": "Descripción",
+                "key": "description",
+                "hidden": true
+            },
+            {
+                "name": "Costo del clip",
+                "key": "clip_cost",
+                "hidden": true
+            },
+            {
+                "name": "Esconder",
+                "key": "hide_modifier",
+                "hidden": true
+            }
+        ],
+        "groups": [
+            {
+                "name": "PL 0: Edad de Piedra",
+                "items": [
+                    {
+                        "name": "Arco, corto",
+                        "skill": "arco prim",
+                        "skill_url": "/skills/primitive-ranged-weapons/bow/",
+                        "acc": "0",
+                        "range": "20/40/100",
+                        "damage": "d4w/d4+2w/d4+3w",
+                        "act": "1",
+                        "clip": "1",
+                        "cost": "40",
+                        "anchor": "arco corto",
+                        "description": "Un arco sencillo fabricado a partir de una sola pieza de madera.",
+                        "clip_cost": "N/A",
+                        "hide_modifier": "N/A"
+                    },
+                    {
+                        "name": "Honda",
+                        "skill": "cabestrillo",
+                        "skill_url": "/skills/primitive-ranged-weapons/sling/",
+                        "acc": "+2",
+                        "range": "10/20/60",
+                        "damage": "d4s/d4+1s/d4+2s",
+                        "act": "1",
+                        "clip": "1",
+                        "cost": "10",
+                        "anchor": "honda",
+                        "description": "Correa con bucle que se utiliza para arrojar piedras o balas de plomo.",
+                        "clip_cost": "N/A",
+                        "hide_modifier": "N/A"
+                    }
+                ]
+            },
+            {
+                "name": "PL 1: Bronce/Edad del Hierro",
+                "items": [
+                    {
+                        "name": "Jabalina",
+                        "skill": "lanzamiento de athl",
+                        "skill_url": "/skills/athletics/throw/",
+                        "acc": "0",
+                        "range": "Por STR",
+                        "damage": "d4+1w/d6+1w/d4m",
+                        "act": "1",
+                        "clip": "1",
+                        "cost": "20",
+                        "anchor": "jabalina",
+                        "description": "Una lanza ligera diseñada principalmente para ser arrojada.",
+                        "clip_cost": "N/A",
+                        "hide_modifier": "N/A"
+                    }
+                ]
+            },
+            {
+                "name": "PL 2: Edad Media",
+                "items": [
+                    {
+                        "name": "Arco, largo",
+                        "skill": "arco prim",
+                        "skill_url": "/skills/primitive-ranged-weapons/bow/",
+                        "acc": "-1",
+                        "range": "40/80/200",
+                        "damage": "d4+2w/d6+2w/d4+1m",
+                        "act": "1",
+                        "clip": "1",
+                        "cost": "75",
+                        "anchor": "largo del arco",
+                        "description": "Un arco alto aproximadamente igual a la altura del usuario.",
+                        "clip_cost": "N/A",
+                        "hide_modifier": "N/A"
+                    },
+                    {
+                        "name": "Ballesta",
+                        "skill": "arco prim",
+                        "skill_url": "/skills/primitive-ranged-weapons/bow/",
+                        "acc": "0",
+                        "range": "50/100/250",
+                        "damage": "d6s/d4w/d4+1w",
+                        "act": "2",
+                        "clip": "1",
+                        "cost": "150",
+                        "anchor": "ballesta",
+                        "description": "Arco montado sobre una culata que dispara virotes o virotes.",
+                        "clip_cost": "N/A",
+                        "hide_modifier": "N/A"
+                    },
+                    {
+                        "name": "shuriken",
+                        "skill": "lanzamiento de athl",
+                        "skill_url": "/skills/athletics/throw/",
+                        "acc": "-1",
+                        "range": "Por STR",
+                        "damage": "d4s/d4+1s/d6+1s",
+                        "act": "1",
+                        "clip": "1",
+                        "cost": "10",
+                        "anchor": "shuriken",
+                        "description": "Arma oculta que generalmente se arroja.",
+                        "clip_cost": "N/A",
+                        "hide_modifier": "N/A"
+                    }
+                ]
+            },
+            {
+                "name": "PL 3: Edad de la Razón",
+                "items": [
+                    {
+                        "name": "Mosquete, llave de chispa",
+                        "skill": "pedernal remilgado",
+                        "skill_url": "/skills/primitive-ranged-weapons/flintlock/",
+                        "acc": "+2",
+                        "range": "20/40/100",
+                        "damage": "d4+2w/d6+2w/d8m",
+                        "act": "3",
+                        "clip": "1",
+                        "cost": "200",
+                        "anchor": "mosquete de chispa",
+                        "description": "Un arma larga con avancarga que utiliza un mecanismo de chispa.",
+                        "clip_cost": "N/A",
+                        "hide_modifier": "N/A"
+                    },
+                    {
+                        "name": "Pistola, llave de chispa",
+                        "skill": "pedernal remilgado",
+                        "skill_url": "/skills/primitive-ranged-weapons/flintlock/",
+                        "acc": "+2",
+                        "range": "4/8/16",
+                        "damage": "d4s/d6w/d8+2w",
+                        "act": "3",
+                        "clip": "1",
+                        "cost": "150",
+                        "anchor": "pistola de chispa",
+                        "description": "Una pistola con avancarga que utiliza un mecanismo de chispa.",
+                        "clip_cost": "N/A",
+                        "hide_modifier": "N/A"
+                    },
+                    {
+                        "name": "Rifle, largo",
+                        "skill": "pedernal remilgado",
+                        "skill_url": "/skills/primitive-ranged-weapons/flintlock/",
+                        "acc": "0",
+                        "range": "30/60/150",
+                        "damage": "d6w/d6+2w/d4+1m",
+                        "act": "3",
+                        "clip": "1",
+                        "cost": "300",
+                        "anchor": "largo del rifle",
+                        "description": "Un arma larga con un cañón estriado para mejorar la precisión.",
+                        "clip_cost": "N/A",
+                        "hide_modifier": "N/A"
+                    }
+                ]
+            },
+            {
+                "name": "PL 4: Era industrial",
+                "items": [
+                    {
+                        "name": "derringer",
+                        "skill": "pistola mod",
+                        "skill_url": "/skills/modern-ranged-weapons/pistol/",
+                        "acc": "+2",
+                        "range": "5/10/30",
+                        "damage": "d4w/d6w/d4m",
+                        "act": "2",
+                        "clip": "2",
+                        "cost": "100",
+                        "anchor": "derringer",
+                        "description": "Una pistola pequeña y fácilmente ocultable.",
+                        "clip_cost": "N/A",
+                        "hide_modifier": "N/A"
+                    },
+                    {
+                        "name": "Pistola, .38 rev",
+                        "skill": "pistola mod",
+                        "skill_url": "/skills/modern-ranged-weapons/pistol/",
+                        "acc": "0",
+                        "range": "10/20/80",
+                        "damage": "d4+1w/d4+2w/d6m",
+                        "act": "1",
+                        "clip": "6",
+                        "cost": "200",
+                        "anchor": "pistola-38-rev",
+                        "description": "Un revólver confiable de seis tiros con recámara de calibre .38.",
+                        "clip_cost": "N/A",
+                        "hide_modifier": "N/A"
+                    },
+                    {
+                        "name": "Pistola, .44 magnum",
+                        "skill": "pistola mod",
+                        "skill_url": "/skills/modern-ranged-weapons/pistol/",
+                        "acc": "+1",
+                        "range": "30/60/200",
+                        "damage": "d4+2w/d6+2w/d4+1m",
+                        "act": "1",
+                        "clip": "6",
+                        "cost": "400",
+                        "anchor": "pistola-44-magnum",
+                        "description": "Un poderoso revólver conocido por su poder de detención.",
+                        "clip_cost": "N/A",
+                        "hide_modifier": "N/A"
+                    },
+                    {
+                        "name": "Rifle, 7,62 mm",
+                        "skill": "rifle mod",
+                        "skill_url": "/skills/modern-ranged-weapons/rifle/",
+                        "acc": "-1",
+                        "range": "80/160/400",
+                        "damage": "d6w/d8+1w/d6+1m",
+                        "act": "1",
+                        "clip": "10",
+                        "cost": "500",
+                        "anchor": "rifle-7-62mm",
+                        "description": "Un rifle de cerrojo o semiautomático que dispara un cartucho pesado.",
+                        "clip_cost": "N/A",
+                        "hide_modifier": "N/A"
+                    },
+                    {
+                        "name": "fusil, asalto",
+                        "skill": "rifle mod",
+                        "skill_url": "/skills/modern-ranged-weapons/rifle/",
+                        "acc": "-1",
+                        "range": "50/100/300",
+                        "damage": "d4w/d6w/d4m",
+                        "act": "1",
+                        "clip": "30",
+                        "cost": "700",
+                        "anchor": "asalto con rifle",
+                        "description": "Un rifle de fuego selectivo que utiliza un cartucho intermedio.",
+                        "clip_cost": "N/A",
+                        "hide_modifier": "N/A"
+                    },
+                    {
+                        "name": "Subfusil, 9 mm",
+                        "skill": "Mod-SMG",
+                        "skill_url": "/skills/modern-ranged-weapons/smg/",
+                        "acc": "+1",
+                        "range": "30/60/150",
+                        "damage": "d4+1w/d4+2w/d6m",
+                        "act": "1",
+                        "clip": "30",
+                        "cost": "600",
+                        "anchor": "smg-9mm",
+                        "description": "Una metralleta que dispara munición de pistola de 9 mm.",
+                        "clip_cost": "N/A",
+                        "hide_modifier": "N/A"
+                    }
+                ]
+            },
+            {
+                "name": "PL 6: Era de la fusión",
+                "items": [
+                    {
+                        "name": "Pistola, canal de 9 mm.",
+                        "skill": "pistola mod",
+                        "skill_url": "/skills/modern-ranged-weapons/pistol/",
+                        "acc": "0",
+                        "range": "20/40/100",
+                        "damage": "d4+1w/d6+1w/d4m",
+                        "act": "1",
+                        "clip": "15",
+                        "cost": "400",
+                        "anchor": "pistola-carga-9mm",
+                        "description": "Una pistola que utiliza munición cargada eléctricamente para aumentar la velocidad.",
+                        "clip_cost": "N/A",
+                        "hide_modifier": "N/A"
+                    },
+                    {
+                        "name": "Pistola, 9 mm de gravedad cero",
+                        "skill": "pistola mod",
+                        "skill_url": "/skills/modern-ranged-weapons/pistol/",
+                        "acc": "0",
+                        "range": "20/40/100",
+                        "damage": "d4+1w/d6+1w/d4m",
+                        "act": "1",
+                        "clip": "15",
+                        "cost": "600",
+                        "anchor": "pistola-9mm-cero-g",
+                        "description": "Una pistola sin retroceso diseñada para usar en entornos de gravedad cero.",
+                        "clip_cost": "N/A",
+                        "hide_modifier": "N/A"
+                    },
+                    {
+                        "name": "Pistola, canal de 11 mm.",
+                        "skill": "pistola mod",
+                        "skill_url": "/skills/modern-ranged-weapons/pistol/",
+                        "acc": "+1",
+                        "range": "40/80/240",
+                        "damage": "d4+2w/d6+2w/d4+1m",
+                        "act": "1",
+                        "clip": "10",
+                        "cost": "500",
+                        "anchor": "pistola-carga-11mm",
+                        "description": "Un disparo de pistola pesada cargó balas de 11 mm.",
+                        "clip_cost": "N/A",
+                        "hide_modifier": "N/A"
+                    },
+                    {
+                        "name": "Rifle, canal de 11 mm",
+                        "skill": "rifle mod",
+                        "skill_url": "/skills/modern-ranged-weapons/rifle/",
+                        "acc": "0",
+                        "range": "100/400/1000",
+                        "damage": "d6+1w/d6+3w/d6+1m",
+                        "act": "1",
+                        "clip": "30",
+                        "cost": "900",
+                        "anchor": "rifle-carga-11mm",
+                        "description": "Un rifle militar estándar que disparaba balas cargadas de 11 mm.",
+                        "clip_cost": "N/A",
+                        "hide_modifier": "N/A"
+                    },
+                    {
+                        "name": "Rifle, 11 mm de gravedad cero",
+                        "skill": "rifle mod",
+                        "skill_url": "/skills/modern-ranged-weapons/rifle/",
+                        "acc": "0",
+                        "range": "100/400/1000",
+                        "damage": "d6+1w/d6+3w/d6+1m",
+                        "act": "1",
+                        "clip": "15",
+                        "cost": "1100",
+                        "anchor": "rifle-11mm-cero-g",
+                        "description": "Un rifle sin retroceso diseñado para combates en gravedad cero.",
+                        "clip_cost": "N/A",
+                        "hide_modifier": "N/A"
+                    },
+                    {
+                        "name": "Escopeta, autoflec",
+                        "skill": "rifle mod",
+                        "skill_url": "/skills/modern-ranged-weapons/rifle/",
+                        "acc": "+2",
+                        "range": "4/12/30",
+                        "damage": "d6w/d6+2w/d8m",
+                        "act": "1",
+                        "clip": "15",
+                        "cost": "800",
+                        "anchor": "escopeta-autoflec",
+                        "description": "Una escopeta que dispara balas de flechette para causar daños en áreas amplias.",
+                        "clip_cost": "N/A",
+                        "hide_modifier": "N/A"
+                    },
+                    {
+                        "name": "SMG, canal de 9 mm",
+                        "skill": "Mod-SMG",
+                        "skill_url": "/skills/modern-ranged-weapons/smg/",
+                        "acc": "+1",
+                        "range": "50/100/250",
+                        "damage": "d4+1w/d6+1w/d4m",
+                        "act": "1",
+                        "clip": "30",
+                        "cost": "750",
+                        "anchor": "carga-smg-9mm",
+                        "description": "Una metralleta disparaba balas cargadas de 9 mm.",
+                        "clip_cost": "N/A",
+                        "hide_modifier": "N/A"
+                    }
+                ]
+            },
+            {
+                "name": "PL 7: Era de la gravedad",
+                "items": [
+                    {
+                        "name": "Pistola, sabot de 15 mm",
+                        "skill": "pistola mod",
+                        "skill_url": "/skills/modern-ranged-weapons/pistol/",
+                        "acc": "-1",
+                        "range": "80/200/500",
+                        "damage": "2d4w/2d4+1w/d4+3m",
+                        "act": "1",
+                        "clip": "6",
+                        "cost": "900",
+                        "anchor": "pistola-15mm-sabot",
+                        "description": "Una pistola pesada que dispara balas de sabot perforantes.",
+                        "clip_cost": "N/A",
+                        "hide_modifier": "N/A"
+                    },
+                    {
+                        "name": "Pistola, láser",
+                        "skill": "pistola mod",
+                        "skill_url": "/skills/modern-ranged-weapons/pistol/",
+                        "acc": "-1",
+                        "range": "50/100/250",
+                        "damage": "d4+1w/d6+1w/d4m",
+                        "act": "1",
+                        "clip": "20",
+                        "cost": "600",
+                        "anchor": "pistola láser",
+                        "description": "Una pistola que dispara un rayo de luz enfocado.",
+                        "clip_cost": "N/A",
+                        "hide_modifier": "N/A"
+                    },
+                    {
+                        "name": "Pistola, masa",
+                        "skill": "pistola mod",
+                        "skill_url": "/skills/modern-ranged-weapons/pistol/",
+                        "acc": "+1",
+                        "range": "20/80/200",
+                        "damage": "d6w/d6+2w/d8m",
+                        "act": "1",
+                        "clip": "10",
+                        "cost": "800",
+                        "anchor": "masa de pistola",
+                        "description": "Una pistola que utiliza campos de gravedad para acelerar proyectiles.",
+                        "clip_cost": "N/A",
+                        "hide_modifier": "N/A"
+                    },
+                    {
+                        "name": "Pistola, tartamudeo",
+                        "skill": "pistola mod",
+                        "skill_url": "/skills/modern-ranged-weapons/pistol/",
+                        "acc": "0",
+                        "range": "10/20/80",
+                        "damage": "d6+2s/d8+2s/d8+4s",
+                        "act": "1",
+                        "clip": "10",
+                        "cost": "400",
+                        "anchor": "tartamudeo de pistola",
+                        "description": "Una pistola no letal que altera el sistema nervioso.",
+                        "clip_cost": "N/A",
+                        "hide_modifier": "N/A"
+                    },
+                    {
+                        "name": "rifle, láser",
+                        "skill": "rifle mod",
+                        "skill_url": "/skills/modern-ranged-weapons/rifle/",
+                        "acc": "-2",
+                        "range": "60/120/400",
+                        "damage": "d6+1w/d6+3w/d4+1m",
+                        "act": "1",
+                        "clip": "12",
+                        "cost": "1000",
+                        "anchor": "rifle láser",
+                        "description": "Un rifle que dispara un rayo láser de alta potencia.",
+                        "clip_cost": "N/A",
+                        "hide_modifier": "N/A"
+                    },
+                    {
+                        "name": "fusil, masa",
+                        "skill": "rifle mod",
+                        "skill_url": "/skills/modern-ranged-weapons/rifle/",
+                        "acc": "0",
+                        "range": "20/60/120",
+                        "damage": "d8w/d8+1w/d6+1m",
+                        "act": "1",
+                        "clip": "8",
+                        "cost": "1300",
+                        "anchor": "masa de rifle",
+                        "description": "Un rifle que utiliza campos de gravedad para acelerar proyectiles.",
+                        "clip_cost": "N/A",
+                        "hide_modifier": "N/A"
+                    },
+                    {
+                        "name": "Rifle, cuántico",
+                        "skill": "rifle mod",
+                        "skill_url": "/skills/modern-ranged-weapons/rifle/",
+                        "acc": "-1",
+                        "range": "40/200/500",
+                        "damage": "d4+3w/d6+4w/d8+1m",
+                        "act": "1",
+                        "clip": "15",
+                        "cost": "5000",
+                        "anchor": "rifle-cuántico",
+                        "description": "Un rifle que manipula estados cuánticos para causar daño.",
+                        "clip_cost": "N/A",
+                        "hide_modifier": "N/A"
+                    },
+                    {
+                        "name": "rifle, render",
+                        "skill": "rifle mod",
+                        "skill_url": "/skills/modern-ranged-weapons/rifle/",
+                        "acc": "0",
+                        "range": "20/40/80",
+                        "damage": "d6+1s/d6+1w/d4+1m",
+                        "act": "1",
+                        "clip": "8",
+                        "cost": "1500",
+                        "anchor": "renderizado de rifle",
+                        "description": "Un rifle que dispara proyectiles que atraviesan la armadura.",
+                        "clip_cost": "N/A",
+                        "hide_modifier": "N/A"
+                    },
+                    {
+                        "name": "SMG, láser",
+                        "skill": "Mod-SMG",
+                        "skill_url": "/skills/modern-ranged-weapons/smg/",
+                        "acc": "-1",
+                        "range": "20/40/80",
+                        "damage": "d6w/d6+2w/d4m",
+                        "act": "1",
+                        "clip": "40",
+                        "cost": "800",
+                        "anchor": "smg-laser",
+                        "description": "Un arma láser de fuego rápido.",
+                        "clip_cost": "N/A",
+                        "hide_modifier": "N/A"
+                    },
+                    {
+                        "name": "SMG, tartamudeo",
+                        "skill": "Mod-SMG",
+                        "skill_url": "/skills/modern-ranged-weapons/smg/",
+                        "acc": "+1",
+                        "range": "10/20/60",
+                        "damage": "d6+2s/d8+2s/d8+4s",
+                        "act": "1",
+                        "clip": "20",
+                        "cost": "700",
+                        "anchor": "smg-tartamudeo",
+                        "description": "Un arma no letal de fuego rápido.",
+                        "clip_cost": "N/A",
+                        "hide_modifier": "N/A"
+                    },
+                    {
+                        "name": "Pistola de Carga de 9mm M9",
+                        "skill": "Ranged-pistol",
+                        "acc": "-1",
+                        "md": "F",
+                        "range": "8/16/60",
+                        "type": "HI/O",
+                        "damage": "d4+1w/d6+1w/d4m",
+                        "act": "4",
+                        "clip": "15",
+                        "mass": "1",
+                        "hide": "+3",
+                        "avail": "Com",
+                        "cost": "500",
+                        "description": "La pistola de carga M9 ha sido el arma reglamentaria del Servicio Estelar de Orión durante más de ochenta años. Más de dos millones de M9 han sido producidos por A.M. Industries. Es un excelente ejemplo de pistola de carga ligera equipada con un supresor engañoso para silenciar el estallido lumínico en el cañón característico del arma. (Carga: bala de 9mm)"
+                    },
+                    {
+                        "name": "Pistola de Carga de 11mm Hammer 5",
+                        "skill": "Ranged-pistol",
+                        "acc": "-1",
+                        "md": "F",
+                        "range": "10/20/80",
+                        "type": "HI/O",
+                        "damage": "d4+2w/d6+2w/d4+1m",
+                        "act": "3",
+                        "clip": "12",
+                        "mass": "1.2",
+                        "hide": "+2",
+                        "avail": "Com",
+                        "cost": "1000",
+                        "description": "Una de las mejores pistolas de 11mm del mercado, la Hammer 5 de Soze es un arma excepcionalmente estable y letal. Es un poco grande para una pistolera normal, pero los entusiastas adoran su gran precisión por encide de su peso extra. Existen miles de modelos del estándar de 11mm en el mercado actualmente, con un precio que ronda los 800$. (Carga: bala de 11mm)"
+                    },
+                    {
+                        "name": "Pistola Gravedad Cero de 9mm K-SAT 100",
+                        "skill": "Ranged-pistol",
+                        "acc": "0",
+                        "md": "F",
+                        "range": "4/10/40",
+                        "type": "HI/O",
+                        "damage": "d4+1w/d6+1w/d4m",
+                        "act": "3",
+                        "clip": "15",
+                        "mass": "1",
+                        "hide": "+3",
+                        "avail": "Com",
+                        "cost": "400",
+                        "description": "La Karadnya es un diseño antiguo que cuenta con medio siglo de historia. Un freno de boca y retroceso le confiere el título de 'cero retroceso'. Aunque su lenta salida en disparo limite su alcance, se usa de maravilla y anula cualquier nivel de penalizador en microgravedad hasta 1 escalón. Actualmente han sido eclipsadas y reemplazadas por tecnologías de energía. (Carga: bala de 9mm)"
+                    },
+                    {
+                        "name": "Rifle Automático de Carga de 6mm ARZ",
+                        "skill": "Ranged-rifle",
+                        "acc": "-1",
+                        "md": "B/A",
+                        "range": "60/150/400",
+                        "type": "HI/O",
+                        "damage": "d6w/2d4w/d4+1m",
+                        "act": "3",
+                        "clip": "30 ráfagas",
+                        "mass": "2.75",
+                        "hide": "-",
+                        "avail": "Mil",
+                        "cost": "2000",
+                        "description": "Los autorifles son armas ligeras con una alta tasa de fuego preparadas para apoyo armamentístico. El ARZ es uno de los diseños más populares, producido de fábrica bajo la Unión Solar y El Imperio Thuldan. Cuenta con su clásico acoplaje de disparo expansivo y una excelente cantidad de reserva en el alimentador de disparos. (Carga: bala de 6mm)"
+                    },
+                    {
+                        "name": "Rifle de Carga de 11mm IF-3",
+                        "skill": "Ranged-rifle",
+                        "acc": "0",
+                        "md": "F/B/A",
+                        "range": "90/180/600",
+                        "type": "HI/O",
+                        "damage": "d6+1w/d6+3w/d6+1m",
+                        "act": "4",
+                        "clip": "30 tiros/10 ráfag.",
+                        "mass": "3",
+                        "hide": "-",
+                        "avail": "Mil",
+                        "cost": "1600",
+                        "description": "El IF-3 ha sido el arma de infantería estándar de las fuerzas de la Concordia durante casi dos décadas. Fabricada por Austrin-Ontis, es destacada por su peso inferior y fiabilidad. Con una inversión adicional de 50$ su configuración de Gravedad-0 anula gran parte de su alcance, a cambio de suprimir las penalizaciones al portador al vacío. (Carga: bala de 11mm)"
+                    },
+                    {
+                        "name": "SMG de Carga de 9mm Bulldog",
+                        "skill": "Ranged-SMG",
+                        "acc": "0",
+                        "md": "B/A",
+                        "range": "20/50/100",
+                        "type": "HI/O",
+                        "damage": "d4+1w/d6+1w/d4m",
+                        "act": "4",
+                        "clip": "8 ráfagas",
+                        "mass": "2.25",
+                        "hide": "+1",
+                        "avail": "Mil",
+                        "cost": "1750",
+                        "description": "El Bulldog es un excelente ejemplo de arma de segunda generación. Suprimió montones de defectos de los antiguos prototipos, con un soporte apto y macizo de las peores condiciones meteorológicas. Sumado a un brillante panel de control de cadencia y estabilidad de mira, es uno de los más seguros disparando a modo automático y ráfaga. (Carga: bala de 9mm)"
+                    },
+                    {
+                        "name": "Escopeta Autoflechette AGC-7",
+                        "skill": "Ranged-rifle",
+                        "acc": "0",
+                        "md": "F/B/A",
+                        "range": "10/20/50",
+                        "type": "HI/O",
+                        "damage": "d4w/d6w/d4m",
+                        "act": "4",
+                        "clip": "15 tiros/5 ráfag.",
+                        "mass": "3.25",
+                        "hide": "+1",
+                        "avail": "Mil",
+                        "cost": "2750",
+                        "description": "La AGC-7 (o \"Aggie\", como se la conoce cariñosamente) es un arma temible para corto alcance. Consiste en un surtidor de disparo que dispersa cientos de finas agujas o navajas a su entorno, haciendo un daño severo de proximidad. Infringe daño doble dentro del primer alcance marcado, y daño a la mitad a todo objetivo lejano a 20 metros. (Carga: cartucho flechette 25mm)"
+                    },
+                    {
+                        "name": "Pistola Flechette Devastator",
+                        "skill": "Ranged-pistol",
+                        "acc": "-1",
+                        "md": "F",
+                        "range": "8/16/40",
+                        "type": "HI/O",
+                        "damage": "d4w/d6w/d4m",
+                        "act": "3",
+                        "clip": "6",
+                        "mass": "1.5",
+                        "hide": "+2",
+                        "avail": "Mil",
+                        "cost": "1450",
+                        "description": "La Devastator es una declaración sucinta de la filosofía de Soze Arms: el exceso es el camino. El modelo dispara una franja flechette, haciendo un daño en el ambiente cercano al objetivo en lugar de al contacto focal. Genera el doble del daño original por objetivo en el primer medidor, mermando a un 50% extra en rango corto. (Carga: cartucho flechette 25mm)"
+                    },
+                    {
+                        "name": "Pistola Sabot de 15mm Tornado 600",
+                        "skill": "Ranged-pistol",
+                        "acc": "0",
+                        "md": "F",
+                        "range": "10/20/100",
+                        "type": "HI/O",
+                        "damage": "2d4w/2d4+1w/d4+3m",
+                        "act": "3",
+                        "clip": "6",
+                        "mass": "2",
+                        "hide": "+1",
+                        "avail": "Con",
+                        "cost": "900",
+                        "description": "Las pistolas sabot son grandes y pesadas, pero son las armas de mano más potentes conocidas en gran escala. De largo alcance y cañón estable gracias a los supresores no explosivos internos; sus células de lantánido generan energía suficiente para usar cuatro cartuchos de cargador, donde luego recargarlas tiene un mantenimiento extra. (Carga: estatorreactor sabot de 10mm)"
+                    },
+                    {
+                        "name": "Rifle Sabot de 15mm MS",
+                        "skill": "Ranged-rifle",
+                        "acc": "0",
+                        "md": "F",
+                        "range": "80/200/800",
+                        "type": "HI/O",
+                        "damage": "d4+4w/2d4+2w/d6+3m",
+                        "act": "2",
+                        "clip": "12",
+                        "mass": "4",
+                        "hide": "-",
+                        "avail": "Mil",
+                        "cost": "4500",
+                        "description": "Si bien nadie cuestiona su alcance o potencia, su falta de capacidad de fuego automático ha decaído su popularidad. Otros rifles del mercado dan asaltos con mucho mejor ratio de tiro o penetrabilidad de chalecos pesados, aún así es popular entre guardias forestales y mercenarios colonizadores necesitados de fuego contundente. (Carga: estatorreactor sabot de 10mm)"
+                    },
+                    {
+                        "name": "Pistola de Masa Nova 6",
+                        "skill": "Ranged-pistol",
+                        "acc": "0",
+                        "md": "F",
+                        "range": "2/6/12",
+                        "type": "En/G",
+                        "damage": "d6w/d6+2w/d6m",
+                        "act": "3",
+                        "clip": "6",
+                        "mass": "1",
+                        "hide": "+2",
+                        "avail": "Mil",
+                        "cost": "1475",
+                        "description": "Famosa por las holopelículas de acción de Jack Everstar, la Nova 6 es una de las opciones más eficientes del mercado de tecnología en masa de energía. Puede potenciar hasta 6 disparos enteros antes de vaciar sus recargas de la célula. Bastante limitadas en el interperie, no hay mejores armas de fuego preparadas dentro de un cuarto estrecho contra armaduras. (Carga: Fuente puntual de gravedad)"
+                    },
+                    {
+                        "name": "Rifle de Masa AAMG-12",
+                        "skill": "Ranged-rifle",
+                        "acc": "-1",
+                        "md": "F",
+                        "range": "4/12/30",
+                        "type": "En/G",
+                        "damage": "d6+1w/d8+1w/d6+1m",
+                        "act": "2",
+                        "clip": "8 disparos",
+                        "mass": "4",
+                        "hide": "-",
+                        "avail": "Mil",
+                        "cost": "2450",
+                        "description": "Una versión más grande y potente de la pistola de masa. Sacrifica alcance y cadencia de fuego por una penetración de armadura imbatible. El AAMG es un diseño moderno de Karadnya-Brusilev con características innovadoras: es el rifle de masa más preciso del mercado y su nueva tecnología de células duplica su cargador respecto a armas similares. (Carga: Fuente puntual de gravedad)"
+                    },
+                    {
+                        "name": "Pistola Láser Ninja 600",
+                        "skill": "Ranged-pistol",
+                        "acc": "-1",
+                        "md": "F",
+                        "range": "20/40/150",
+                        "type": "En/O",
+                        "damage": "d4+1w/d6+1w/d4m",
+                        "act": "4",
+                        "clip": "20 disparos",
+                        "mass": "0.5",
+                        "hide": "+4",
+                        "avail": "Con",
+                        "cost": "1225",
+                        "description": "La Ninja 600 es una pistola láser pequeña y muy ocultable con un diseño de frente liso. Como todos los láseres, es extremadamente precisa y ofrece el mejor alcance en pistolas. Es muy popular entre ejecutivos corporativos y celebridades que quieren un arma de autodefensa sin gritar que están armados. (Carga: Luz coherente)"
+                    },
+                    {
+                        "name": "Rifle Láser CLR-19",
+                        "skill": "Ranged-rifle",
+                        "acc": "-1",
+                        "md": "F",
+                        "range": "100/600/1500",
+                        "type": "En/O",
+                        "damage": "d6+1w/d6+3w/d4+1m",
+                        "act": "3",
+                        "clip": "12 disparos",
+                        "mass": "4",
+                        "hide": "-",
+                        "avail": "Mil",
+                        "cost": "1800",
+                        "description": "Arma de infantería estándar de la Liga de Orión, el CLR-19 (Combat Laser Rifle-19) es de un alcance y precisión extraordinarios. Ha probado su valor en numerosos enfrentamientos ante armas antiguas. En distancias cortas, su longitud y baja cadencia son desventajas frente a escopetas o el rápido rifle de carga de 11mm. (Carga: Luz coherente)"
+                    },
+                    {
+                        "name": "Autoláser Valkyrie 9",
+                        "skill": "Ranged-SMG",
+                        "acc": "0",
+                        "md": "B/A",
+                        "range": "20/80/200",
+                        "type": "En/O",
+                        "damage": "d6+1w/d6+3w/d4+1m",
+                        "act": "4",
+                        "clip": "10 ráfag.",
+                        "mass": "3.25",
+                        "hide": "-",
+                        "avail": "Con",
+                        "cost": "1725",
+                        "description": "El autoláser más potente del mercado. Ofrece daño igual a un rifle láser pero con fuego automático. Aunque lo llamen 'subfusil láser', no es una ametralladora real; lanza un chorro candente, realizando barridos y cortes continuos con su rayo blanco ardiente para simular enormes ráfagas contra el objetivo. (Carga: Luz coherente)"
+                    },
+                    {
+                        "name": "Pistola Stutter Falcon T9",
+                        "skill": "Ranged-pistol",
+                        "acc": "0",
+                        "md": "F",
+                        "range": "4/8/20",
+                        "type": "LI/O",
+                        "damage": "d6+2s/d8+2s/d8+4s",
+                        "act": "3",
+                        "clip": "10 disparos",
+                        "mass": "0.75",
+                        "hide": "+4",
+                        "avail": "Com",
+                        "cost": "375",
+                        "description": "Una de las pistolas de mano más populares. La Falcon T9 es el súmmum de defensa personal a buen precio. Más ligera y esbelta que su hermana estándar, cambia alcance y eficacia en un encuentro por ser muy portable. Ocultable y fácil para uso civil sin apenas entrenamiento. (Carga: Aire comprimido)"
+                    },
+                    {
+                        "name": "Pistola Stutter Condor X7",
+                        "skill": "Ranged-pistol",
+                        "acc": "0",
+                        "md": "F",
+                        "range": "8/16/40",
+                        "type": "LI/O",
+                        "damage": "d6+3s/d8+3s/d12+3s",
+                        "act": "3",
+                        "clip": "8 disparos",
+                        "mass": "1.25",
+                        "hide": "+1",
+                        "avail": "Com",
+                        "cost": "850",
+                        "description": "Las fuerzas de paz profesionales prefieren pistolas algo más pesadas a las de venta cotidiana. La Condor es de marco pesado diseñada para someter criminales no letalmente. Un impacto ordinario aturde o noquea, e incuso un hombre fuertemente armado puede tropezar. (Carga: Aire comprimido)"
+                    },
+                    {
+                        "name": "SMG Stutter Cyclone 700",
+                        "skill": "Ranged-SMG",
+                        "acc": "0",
+                        "md": "B/A",
+                        "range": "10/20/80",
+                        "type": "LI/O",
+                        "damage": "d6+2s/d8+2s/d8+4s",
+                        "act": "4",
+                        "clip": "20 ráfag.",
+                        "mass": "3",
+                        "hide": "+1",
+                        "avail": "Con",
+                        "cost": "1000",
+                        "description": "El SMG stutter no es un subfusil real; se le llama así por su alta cadencia. Diseñado para control de disturbios o redadas donde se debe doblegar a multitudes a rápida escala. Equipos tácticos lo usan para capturar rehenes sin sacrificar sus vidas por su baja letalidad. (Carga: Aire comprimido)"
+                    },
+                    {
+                        "name": "Rifle Stutter Sirocco 100",
+                        "skill": "Ranged-rifle",
+                        "acc": "-1",
+                        "md": "F",
+                        "range": "20/40/200",
+                        "type": "LI/O",
+                        "damage": "d6+3s/d8+3s/d12+3s",
+                        "act": "2",
+                        "clip": "12 disparos",
+                        "mass": "3.5",
+                        "hide": "-",
+                        "avail": "Con",
+                        "cost": "750",
+                        "description": "Si solo tienes una oportunidad para inhabilitar un objetivo con fuego no letal, el Sirocco 100 es perfecto. Mayor alcance, impacto y puntería que cualquier arma stun parecida. Conocida entre los scouts por su durabilidad. Ganador de Triple-Diana para el modelo de su rama del año anterior. (Carga: Aire comprimido)"
+                    },
+                    {
+                        "name": "Pistola de Impacto Tauri 9",
+                        "skill": "Ranged-pistol",
+                        "acc": "0",
+                        "md": "F/B",
+                        "range": "4/12/36",
+                        "type": "LI/O",
+                        "damage": "2d4s/d6+1w/d6+3w",
+                        "act": "4",
+                        "clip": "12 tiros/4 ráfag.",
+                        "mass": "1",
+                        "hide": "+2",
+                        "avail": "Con",
+                        "cost": "1150",
+                        "description": "Un refinamiento mortal del arma stutter, esta pistola lanza aire comprimido tan violento capaz de pulverizar hormigón a corta distancia. Tiene modo de ráfaga limitada y daño abismal. Al igual que con el aire, el arma fallará irremediablemente al intentar ser disparada en pleno vacío. (Carga: Aire comprimido)"
+                    },
+                    {
+                        "name": "Arco Reflejo Apache LX",
+                        "skill": "Ranged-bow",
+                        "acc": "0",
+                        "md": "F",
+                        "range": "50/100/250",
+                        "type": "LI/O",
+                        "damage": "d4+2w/d6+2w/d4+1m",
+                        "act": "2",
+                        "clip": "1 dispa.",
+                        "mass": "1",
+                        "hide": "-",
+                        "avail": "Com",
+                        "cost": "650",
+                        "description": "Su mayor ventaja es el sigilo y mutismo, sin ráfagas de luz ni retroceso ruidoso que revele la posición, haciéndolo perfecto y letal en lo salvaje de la jungla espesa. Cada reabastecimiento requiere 1 acción. Así mismo se requiere total control de ambos brazos, inhabilitando su disparo tendido en suelo por completo. (Carga: Flecha punta navaja)"
+                    },
+                    {
+                        "name": "Ballesta Commando 3000",
+                        "skill": "Ranged-bow",
+                        "acc": "0",
+                        "md": "F",
+                        "range": "60/120/300",
+                        "type": "HI/O",
+                        "damage": "d6+1w/d8+1w/d6m",
+                        "act": "2",
+                        "clip": "1 dispa.",
+                        "mass": "2",
+                        "hide": "-",
+                        "avail": "Con",
+                        "cost": "950",
+                        "description": "Las ballestas modernas son tan letales como un rifle perforante. Al igual que el arco antiguo es mortal y oscura para misiones de sigilo. Lo negativo es que cada recarga gasta un turno para preparar y enroscar el virote a diferencia de un cargador. Por otro lado, su corto perfil la hace perfecta para disparo en posición tendido y oculto. (Carga: Virote punta navaja)"
+                    },
+                    {
+                        "name": "Pistola de Dardos Cobra F77",
+                        "skill": "Ranged-pistol",
+                        "acc": "0",
+                        "md": "F",
+                        "range": "4/8/16",
+                        "type": "LI/O",
+                        "damage": "d4-1w/d4w/d4+1w",
+                        "act": "2",
+                        "clip": "6 dispa.",
+                        "mass": "1.5",
+                        "hide": "+2",
+                        "avail": "Com",
+                        "cost": "450",
+                        "description": "La pistola de dardos cuenta con balas neumáticas ahuecadas. El modelo favorito es su versión de bolsillo modificada (Ocultación +4, coste $300). Aunque hace un gran daño de por sí, se usa para dosificar veneno. Un dardo común cuenta con neurotoxina (+1 paso al penalizador de Fortaleza, efecto d4 asaltos) o paralizante (+2 penalizador, efecto en d4-1 asaltos). (Carga: Dardo envenenado)"
+                    },
+                    {
+                        "name": "Pistola Taser Blue Bolt",
+                        "skill": "Ranged-rifle",
+                        "acc": "-1",
+                        "md": "F",
+                        "range": "20/40/100",
+                        "type": "En/G",
+                        "damage": "d8+1s/d8w/d6+3w",
+                        "act": "2",
+                        "clip": "12 dispa.",
+                        "mass": "10",
+                        "hide": "-",
+                        "avail": "Mil",
+                        "cost": "2750",
+                        "description": "Tanto las pistolas de arco como los lanzallamas son de alto peligro de cerca. El Blue Bolt tiene una curiosidad inusual y es un modo taser inalámbrico. Una vez activado un láser mide la densidad protectora del objetivo y calcula un aturdimiento. En este modo impacta d8+1s/2d6s/2d6+2s en niveles de éxito. Cambiar de letal/no letal gasta una acción. (Carga: Arco eléctrico)"
+                    },
+                    {
+                        "name": "Lanzallamas de Mano Demon 9",
+                        "skill": "Ranged-SMG",
+                        "acc": "-1",
+                        "md": "F/B/A",
+                        "range": "6/12/24",
+                        "type": "En/O",
+                        "damage": "d6w/d6+2w/d8+3w",
+                        "act": "3",
+                        "clip": "10 dispa./3 ráfag.",
+                        "mass": "4.5",
+                        "hide": "-1",
+                        "avail": "Con",
+                        "cost": "1200",
+                        "description": "Los herederos del venerable lanzallamas, disparan un rocío de aerosol de llamas y peróxido autoxidante que se aferra al objetivo ampliamente para no fallar y freírlo. Al mantener el gatillo se abanica el objetivo asimilando una ráfaga similar a automático pero su cargador se agota de inmediato en apenas un par de acciones antes de la sequía. (Carga: Chorro incendiario)"
+                    },
+                    {
+                        "name": "Rifle Render Z-LOK",
+                        "skill": "Ranged-rifle",
+                        "acc": "0",
+                        "md": "F",
+                        "range": "50/100/250",
+                        "type": "En/O",
+                        "damage": "d6+1s/d6+1w/d4+1m",
+                        "act": "3",
+                        "clip": "8 dispa.",
+                        "mass": "4",
+                        "hide": "-",
+                        "avail": "Res",
+                        "cost": "2000",
+                        "description": "El rifle Z-LOK proyecta un haz de gravitón y estragos estructurales abismales. A diferencia de otros fusiles de gravedad que pueden generar mucho dolor, su gran ventaja es destrozar la armadura y reducirla a su valor de absorción mínimo. Por ejemplo un blindaje resta d6 impactos, pero ante él solo frenaría estricto e inmodificable 1 punto. (Carga: Rayo gravitón)"
+                    },
+                    {
+                        "name": "Granada Inteligente Bloodhound F3",
+                        "skill": "Athletics-throw",
+                        "acc": "-1",
+                        "md": "F",
+                        "range": "por FUE o 30/60/120",
+                        "type": "por cabeza",
+                        "damage": "por cabeza",
+                        "act": "2",
+                        "clip": "n/a",
+                        "mass": "0.5",
+                        "hide": "+3",
+                        "avail": "Mil",
+                        "cost": "300",
+                        "description": "El sistema Bloodhound consta de una caparazón acoplable que sirve de cabeza motora inteligente sobre otras granadas ordinarias. El tirador gasta una acción asegurando una imagen objetivo, y la lanza en la siguiente con un rango enorme de guiado. De usarla sin interfaz o sin espera asiste un rango por Fuerza normal como el resto de los explosivos. (Carga: Granadas varias)"
+                    }
+                ]
+            },
+            {
+                "name": "PL 8: Era Energética",
+                "items": [
+                    {
+                        "name": "Automaser",
+                        "skill": "Mod-SMG",
+                        "skill_url": "/skills/modern-ranged-weapons/smg/",
+                        "acc": "-2",
+                        "range": "60/120/400",
+                        "damage": "d6w/d6+2w/d4m",
+                        "act": "1",
+                        "clip": "20",
+                        "cost": "1500",
+                        "anchor": "automático",
+                        "description": "Un arma máser de fuego rápido.",
+                        "clip_cost": "N/A",
+                        "hide_modifier": "N/A"
+                    },
+                    {
+                        "name": "Pistola, máser hvy",
+                        "skill": "pistola mod",
+                        "skill_url": "/skills/modern-ranged-weapons/pistol/",
+                        "acc": "-1",
+                        "range": "40/200/500",
+                        "damage": "d6+1w/2d4+1w/d4+1m",
+                        "act": "1",
+                        "clip": "30",
+                        "cost": "1200",
+                        "anchor": "pistola-hvy-maser",
+                        "description": "Una pistola pesada que dispara un láser de microondas.",
+                        "clip_cost": "N/A",
+                        "hide_modifier": "N/A"
+                    },
+                    {
+                        "name": "Pistola, máser",
+                        "skill": "pistola mod",
+                        "skill_url": "/skills/modern-ranged-weapons/pistol/",
+                        "acc": "-1",
+                        "range": "20/60/120",
+                        "damage": "d6w/d6+2w/d4m",
+                        "act": "1",
+                        "clip": "40",
+                        "cost": "900",
+                        "anchor": "pistola-maser",
+                        "description": "Una pistola que dispara un láser de microondas.",
+                        "clip_cost": "N/A",
+                        "hide_modifier": "N/A"
+                    },
+                    {
+                        "name": "Rifle, máser hvy",
+                        "skill": "rifle mod",
+                        "skill_url": "/skills/modern-ranged-weapons/rifle/",
+                        "acc": "-2",
+                        "range": "80/200/600",
+                        "damage": "d8+1w/d12w/d6+1m",
+                        "act": "1",
+                        "clip": "60",
+                        "cost": "2500",
+                        "anchor": "rifle-hvy-maser",
+                        "description": "Un rifle pesado que dispara un láser de microondas.",
+                        "clip_cost": "N/A",
+                        "hide_modifier": "N/A"
+                    },
+                    {
+                        "name": "fusil, máser",
+                        "skill": "rifle mod",
+                        "skill_url": "/skills/modern-ranged-weapons/rifle/",
+                        "acc": "-2",
+                        "range": "60/120/400",
+                        "damage": "d6+2w/2d4+2w/d4+2m",
+                        "act": "1",
+                        "clip": "90",
+                        "cost": "1800",
+                        "anchor": "fusil-maser",
+                        "description": "Un rifle que dispara un láser de microondas.",
+                        "clip_cost": "N/A",
+                        "hide_modifier": "N/A"
+                    }
+                ]
+            }
         ]
-      },
-      {
-        "name": "PL 2: Edad Media",
-        "items": [
-          {
-            "name": "espada ancha",
-            "skill": "espada cuerpo a cuerpo",
-            "skill_url": "/skills/melee-weapons/blade/",
-            "acc": "0",
-            "damage": "d4+2w/d6+2w/d4m",
-            "actions": "1",
-            "mass": "3",
-            "avail": "do",
-            "cost": "100",
-            "anchor": "sable",
-            "description": "Una espada pesada de doble filo diseñada para cortar.",
-            "clip_cost": "N/A",
-            "hide_modifier": "N/A"
-          },
-          {
-            "name": "Mayal",
-            "skill": "garrote cuerpo a cuerpo",
-            "skill_url": "/skills/melee-weapons/bludgeon/",
-            "acc": "+1",
-            "damage": "d6+2s/d4+2w/d8+2w",
-            "actions": "1",
-            "mass": "4",
-            "avail": "Ud.",
-            "cost": "75",
-            "anchor": "mayal",
-            "description": "Arma de golpe que consta de un palo con una cabeza de metal oscilante.",
-            "clip_cost": "N/A",
-            "hide_modifier": "N/A"
-          },
-          {
-            "name": "gran hacha",
-            "skill": "espada cuerpo a cuerpo",
-            "skill_url": "/skills/melee-weapons/blade/",
-            "acc": "+1",
-            "damage": "d6+1w/d8+2w/d4+1m",
-            "actions": "2",
-            "mass": "8",
-            "avail": "Ud.",
-            "cost": "150",
-            "anchor": "gran hacha",
-            "description": "Un enorme hacha a dos manos capaz de realizar golpes devastadores.",
-            "clip_cost": "N/A",
-            "hide_modifier": "N/A"
-          },
-          {
-            "name": "Nunchaku",
-            "skill": "garrote cuerpo a cuerpo",
-            "skill_url": "/skills/melee-weapons/bludgeon/",
-            "acc": "-1",
-            "damage": "d6s/d6+2s/d8+3s",
-            "actions": "1",
-            "mass": "1",
-            "avail": "Ud.",
-            "cost": "40",
-            "anchor": "nunchaku",
-            "description": "Dos palos conectados por una cadena o cuerda corta.",
-            "clip_cost": "N/A",
-            "hide_modifier": "N/A"
-          },
-          {
-            "name": "arma de asta",
-            "skill": "espada cuerpo a cuerpo",
-            "skill_url": "/skills/melee-weapons/blade/",
-            "acc": "+1",
-            "damage": "d6+1w/d4+3w/d4+1m",
-            "actions": "2",
-            "mass": "6",
-            "avail": "do",
-            "cost": "60",
-            "anchor": "arma de asta",
-            "description": "Arma con un mango largo y una cabeza cortante o punzante.",
-            "clip_cost": "N/A",
-            "hide_modifier": "N/A"
-          }
+    },
+    "heavy": {
+        "columns": [
+            {
+                "name": "Arma",
+                "key": "name"
+            },
+            {
+                "name": "Habilidad",
+                "key": "skill"
+            },
+            {
+                "name": "Acc",
+                "key": "acc"
+            },
+            {
+                "name": "Rango (P/M/L)",
+                "key": "range"
+            },
+            {
+                "name": "Daño (O/G/A)",
+                "key": "damage"
+            },
+            {
+                "name": "Acto.",
+                "key": "act"
+            },
+            {
+                "name": "Acortar",
+                "key": "clip"
+            },
+            {
+                "name": "Costo ($)",
+                "key": "cost"
+            },
+            {
+                "name": "Descripción",
+                "key": "description",
+                "hidden": true
+            },
+            {
+                "name": "Costo del clip",
+                "key": "clip_cost",
+                "hidden": true
+            },
+            {
+                "name": "Esconder",
+                "key": "hide_modifier",
+                "hidden": true
+            }
+        ],
+        "groups": [
+            {
+                "name": "PL 4: Era industrial",
+                "items": [
+                    {
+                        "name": "Echador de llama",
+                        "skill": "hvy-dir",
+                        "skill_url": "/skills/heavy-weapons/direct-fire/",
+                        "acc": "+2",
+                        "range": "10/20/40",
+                        "damage": "d6w/d8w/d12w",
+                        "act": "1",
+                        "clip": "10",
+                        "cost": "600",
+                        "anchor": "echador de llama",
+                        "description": "Arma que proyecta una corriente de líquido inflamable encendido.",
+                        "clip_cost": "N/A",
+                        "hide_modifier": "N/A"
+                    },
+                    {
+                        "name": "Granada, fragmentación",
+                        "skill": "Athl-thr",
+                        "skill_url": "/skills/athletics/throw/",
+                        "acc": "0",
+                        "range": "Por STR",
+                        "damage": "d6+2s/d4w/d4+1w",
+                        "act": "1",
+                        "clip": "1",
+                        "cost": "75",
+                        "anchor": "granada de fragmentación",
+                        "description": "Granada de fragmentación diseñada para matar o herir al personal.",
+                        "clip_cost": "N/A",
+                        "hide_modifier": "N/A"
+                    },
+                    {
+                        "name": "Ametralladora, .30",
+                        "skill": "hvy-dir",
+                        "skill_url": "/skills/heavy-weapons/direct-fire/",
+                        "acc": "-1",
+                        "range": "60/200/600",
+                        "damage": "d6+1w/d8+1w/d6+1m",
+                        "act": "1",
+                        "clip": "100",
+                        "cost": "1200",
+                        "anchor": "ametralladora-30",
+                        "description": "Un arma de fuego totalmente automática que dispara munición calibre .30.",
+                        "clip_cost": "N/A",
+                        "hide_modifier": "N/A"
+                    },
+                    {
+                        "name": "Lanzacohetes",
+                        "skill": "hvy-dir",
+                        "skill_url": "/skills/heavy-weapons/direct-fire/",
+                        "acc": "+1",
+                        "range": "50/200/350",
+                        "damage": "d8w/d4+1m/d6+1m",
+                        "act": "2",
+                        "clip": "1",
+                        "cost": "1000",
+                        "anchor": "lanzacohetes",
+                        "description": "Un arma portátil capaz de disparar cohetes no guiados.",
+                        "clip_cost": "N/A",
+                        "hide_modifier": "N/A"
+                    }
+                ]
+            },
+            {
+                "name": "PL 5: Era de la información",
+                "items": [
+                    {
+                        "name": "lanzagranadas",
+                        "skill": "Hvy-ind",
+                        "skill_url": "/skills/heavy-weapons/indirect-fire/",
+                        "acc": "0",
+                        "range": "como carga",
+                        "damage": "como carga",
+                        "act": "1",
+                        "clip": "6",
+                        "cost": "800",
+                        "anchor": "lanzagranadas",
+                        "description": "Un arma diseñada para disparar granadas.",
+                        "clip_cost": "N/A",
+                        "hide_modifier": "N/A"
+                    },
+                    {
+                        "name": "Granada, conmoción cerebral.",
+                        "skill": "Athl-thr",
+                        "skill_url": "/skills/athletics/throw/",
+                        "acc": "0",
+                        "range": "Por STR",
+                        "damage": "d6+2s/d8w/d4+1w",
+                        "act": "1",
+                        "clip": "1",
+                        "cost": "100",
+                        "anchor": "granada-conmoción cerebral",
+                        "description": "Una granada que produce una poderosa onda de choque para aturdir o desorientar.",
+                        "clip_cost": "N/A",
+                        "hide_modifier": "N/A"
+                    },
+                    {
+                        "name": "Granada, incendio.",
+                        "skill": "Athl-thr",
+                        "skill_url": "/skills/athletics/throw/",
+                        "acc": "0",
+                        "range": "Por STR",
+                        "damage": "d4w/d4+2w/d4+3w",
+                        "act": "1",
+                        "clip": "1",
+                        "cost": "100",
+                        "anchor": "granada-incendiaria",
+                        "description": "Una granada que inicia incendios y quema objetivos.",
+                        "clip_cost": "N/A",
+                        "hide_modifier": "N/A"
+                    },
+                    {
+                        "name": "Granada, humo",
+                        "skill": "Athl-thr",
+                        "skill_url": "/skills/athletics/throw/",
+                        "acc": "0",
+                        "range": "Por STR",
+                        "damage": "Especial",
+                        "act": "1",
+                        "clip": "1",
+                        "cost": "50",
+                        "anchor": "humo de granada",
+                        "description": "Una granada que crea una nube de humo para ocultarse.",
+                        "clip_cost": "N/A",
+                        "hide_modifier": "N/A"
+                    },
+                    {
+                        "name": "ametralladora hvy",
+                        "skill": "hvy-dir",
+                        "skill_url": "/skills/heavy-weapons/direct-fire/",
+                        "acc": "-2",
+                        "range": "100/400/1000",
+                        "damage": "d6+1w/2d4+2w/d8m",
+                        "act": "1",
+                        "clip": "200",
+                        "cost": "2500",
+                        "anchor": "ametralladora-hvy",
+                        "description": "Una ametralladora de gran calibre.",
+                        "clip_cost": "N/A",
+                        "hide_modifier": "N/A"
+                    },
+                    {
+                        "name": "SAM, portátil",
+                        "skill": "Hvy-ind",
+                        "skill_url": "/skills/heavy-weapons/indirect-fire/",
+                        "acc": "0",
+                        "range": "1000/2000/4000",
+                        "damage": "d4w/d8w/d8+4w",
+                        "act": "2",
+                        "clip": "1",
+                        "cost": "5000",
+                        "anchor": "sam-de mano",
+                        "description": "Un lanzador portátil de misiles tierra-aire.",
+                        "clip_cost": "N/A",
+                        "hide_modifier": "N/A"
+                    }
+                ]
+            },
+            {
+                "name": "PL 6: Era de la fusión",
+                "items": [
+                    {
+                        "name": "lanzador gallo",
+                        "skill": "Hvy-ind",
+                        "skill_url": "/skills/heavy-weapons/indirect-fire/",
+                        "acc": "0",
+                        "range": "100/800/4000",
+                        "damage": "como carga",
+                        "act": "1",
+                        "clip": "1",
+                        "cost": "2000",
+                        "anchor": "lanzador-gallo",
+                        "description": "Un lanzador de misiles compacto.",
+                        "clip_cost": "N/A",
+                        "hide_modifier": "N/A"
+                    },
+                    {
+                        "name": "Gallo, antiaéreo",
+                        "skill": "Hvy-ind",
+                        "skill_url": "/skills/heavy-weapons/indirect-fire/",
+                        "acc": "0",
+                        "range": "Como lanzador",
+                        "damage": "d4w/d4+2w/d4+3w",
+                        "act": "1",
+                        "clip": "1",
+                        "cost": "1000",
+                        "anchor": "antiaéreo gallo",
+                        "description": "Un misil gallo diseñado para apuntar a aviones.",
+                        "clip_cost": "N/A",
+                        "hide_modifier": "N/A"
+                    },
+                    {
+                        "name": "Gallo, antiper.",
+                        "skill": "Hvy-ind",
+                        "skill_url": "/skills/heavy-weapons/indirect-fire/",
+                        "acc": "0",
+                        "range": "Como lanzador",
+                        "damage": "d6w/d8+2w/d8+2w",
+                        "act": "1",
+                        "clip": "1",
+                        "cost": "800",
+                        "anchor": "antiper gallo",
+                        "description": "Un misil gallo diseñado para apuntar al personal.",
+                        "clip_cost": "N/A",
+                        "hide_modifier": "N/A"
+                    },
+                    {
+                        "name": "Bantam, antiveh.",
+                        "skill": "Hvy-ind",
+                        "skill_url": "/skills/heavy-weapons/indirect-fire/",
+                        "acc": "0",
+                        "range": "Como lanzador",
+                        "damage": "d4+2w/d4+4w/d4+1m",
+                        "act": "1",
+                        "clip": "1",
+                        "cost": "1200",
+                        "anchor": "bantam-antiveh",
+                        "description": "Un misil gallo diseñado para apuntar a vehículos.",
+                        "clip_cost": "N/A",
+                        "hide_modifier": "N/A"
+                    },
+                    {
+                        "name": "granada, plasma",
+                        "skill": "Athl-thr",
+                        "skill_url": "/skills/athletics/throw/",
+                        "acc": "0",
+                        "range": "Por STR",
+                        "damage": "d4+2w/d8+2w/d4m",
+                        "act": "1",
+                        "clip": "1",
+                        "cost": "150",
+                        "anchor": "granada-plasma",
+                        "description": "Una granada que libera una ráfaga de plasma sobrecalentado.",
+                        "clip_cost": "N/A",
+                        "hide_modifier": "N/A"
+                    },
+                    {
+                        "name": "Granada, aturdimiento",
+                        "skill": "Athl-thr",
+                        "skill_url": "/skills/athletics/throw/",
+                        "acc": "0",
+                        "range": "Por STR",
+                        "damage": "d6s/d8s/d8+2s",
+                        "act": "1",
+                        "clip": "1",
+                        "cost": "75",
+                        "anchor": "granada paralizante",
+                        "description": "Una granada diseñada para incapacitar objetivos sin matarlos.",
+                        "clip_cost": "N/A",
+                        "hide_modifier": "N/A"
+                    },
+                    {
+                        "name": "Hvy ametralladora, ch",
+                        "skill": "hvy-dir",
+                        "skill_url": "/skills/heavy-weapons/direct-fire/",
+                        "acc": "-2",
+                        "range": "200/600/1200",
+                        "damage": "d8w/2d6w/2d4m",
+                        "act": "1",
+                        "clip": "100",
+                        "cost": "3500",
+                        "anchor": "hvy-ametralladora-ch",
+                        "description": "Una ametralladora pesada que dispara munición cargada.",
+                        "clip_cost": "N/A",
+                        "hide_modifier": "N/A"
+                    },
+                    {
+                        "name": "Pistola de riel",
+                        "skill": "hvy-dir",
+                        "skill_url": "/skills/heavy-weapons/direct-fire/",
+                        "acc": "-1",
+                        "range": "150/500/1500",
+                        "damage": "d6w/d6+2w/d8m",
+                        "act": "1",
+                        "clip": "20",
+                        "cost": "4000",
+                        "anchor": "cañón de riel",
+                        "description": "Un arma que utiliza rieles electromagnéticos para acelerar proyectiles a altas velocidades.",
+                        "clip_cost": "N/A",
+                        "hide_modifier": "N/A"
+                    }
+                ]
+            },
+            {
+                "name": "PL 7: Era de la gravedad",
+                "items": [
+                    {
+                        "name": "pistola de arco",
+                        "skill": "hvy-dir",
+                        "skill_url": "/skills/heavy-weapons/direct-fire/",
+                        "acc": "+1",
+                        "range": "20/40/100",
+                        "damage": "d8+1s/d8w/d6+3w",
+                        "act": "1",
+                        "clip": "10",
+                        "cost": "2000",
+                        "anchor": "pistola de arco",
+                        "description": "Un arma que dispara un rayo de electricidad.",
+                        "clip_cost": "N/A",
+                        "hide_modifier": "N/A"
+                    },
+                    {
+                        "name": "Cañón, tartamudeo",
+                        "skill": "hvy-dir",
+                        "skill_url": "/skills/heavy-weapons/direct-fire/",
+                        "acc": "0",
+                        "range": "20/40/80",
+                        "damage": "d6+2s/d8+3s/2d6+3s",
+                        "act": "1",
+                        "clip": "20",
+                        "cost": "1500",
+                        "anchor": "tartamudeo de cañón",
+                        "description": "Un arma pesada no letal que altera el sistema nervioso.",
+                        "clip_cost": "N/A",
+                        "hide_modifier": "N/A"
+                    },
+                    {
+                        "name": "Cañón, zueco de 25 mm",
+                        "skill": "hvy-dir",
+                        "skill_url": "/skills/heavy-weapons/direct-fire/",
+                        "acc": "-2",
+                        "range": "100/200/2000",
+                        "damage": "d8w/d4+1m/d6+2m",
+                        "act": "2",
+                        "clip": "20",
+                        "cost": "6000",
+                        "anchor": "canon-25mm-sabot",
+                        "description": "Un cañón pesado que dispara balas de sabot perforantes de 25 mm.",
+                        "clip_cost": "N/A",
+                        "hide_modifier": "N/A"
+                    },
+                    {
+                        "name": "Granada, pulso",
+                        "skill": "Athl-thr",
+                        "skill_url": "/skills/athletics/throw/",
+                        "acc": "0",
+                        "range": "Por STR",
+                        "damage": "d4+2s/d6+2s/d8+2s",
+                        "act": "1",
+                        "clip": "1",
+                        "cost": "100",
+                        "anchor": "pulso de granada",
+                        "description": "Una granada que emite un pulso cinético.",
+                        "clip_cost": "N/A",
+                        "hide_modifier": "N/A"
+                    },
+                    {
+                        "name": "Granada, trazador",
+                        "skill": "Athl-thr",
+                        "skill_url": "/skills/athletics/throw/",
+                        "acc": "0",
+                        "range": "Por STR",
+                        "damage": "d4+2w/d6+2w/d4+2m",
+                        "act": "1",
+                        "clip": "1",
+                        "cost": "250",
+                        "anchor": "rastreador de granadas",
+                        "description": "Una granada que marca objetivos para su seguimiento.",
+                        "clip_cost": "N/A",
+                        "hide_modifier": "N/A"
+                    },
+                    {
+                        "name": "pistola de plasma",
+                        "skill": "hvy-dir",
+                        "skill_url": "/skills/heavy-weapons/direct-fire/",
+                        "acc": "0",
+                        "range": "40/80/200",
+                        "damage": "d8w/d8+3w/d12+3w",
+                        "act": "1",
+                        "clip": "10",
+                        "cost": "3000",
+                        "anchor": "pistola de plasma",
+                        "description": "Un arma pesada que dispara rayos de plasma.",
+                        "clip_cost": "N/A",
+                        "hide_modifier": "N/A"
+                    },
+                    {
+                        "name": "minicuántico",
+                        "skill": "hvy-dir",
+                        "skill_url": "/skills/heavy-weapons/direct-fire/",
+                        "acc": "0",
+                        "range": "100/250/800",
+                        "damage": "d8+1w/d8+3w/d6m",
+                        "act": "1",
+                        "clip": "50",
+                        "cost": "15000",
+                        "anchor": "mini cuántico",
+                        "description": "Un arma cuántica miniaturizada.",
+                        "clip_cost": "N/A",
+                        "hide_modifier": "N/A"
+                    },
+                    {
+                        "name": "Ametralladora de Carga KZ 160 13mm",
+                        "skill": "Heavy-direct fire",
+                        "acc": "-1",
+                        "md": "A",
+                        "range": "200/600/1200",
+                        "type": "HI/G",
+                        "damage": "d8w/2d6w/d8m",
+                        "act": "4",
+                        "clip": "50 ráfagas",
+                        "mass": "22.5",
+                        "hide": "-",
+                        "avail": "Res",
+                        "cost": "9500",
+                        "description": "La KZ 160 es una ametralladora pesada en uso para un escuadrón completo o asalto en movimiento de vehículos. Un héroe que consiga una prueba de condición atlética en Fuerza podría poder sostener este arma con disparo a la cadencia base asumiendo un malus severo de retroceso de daño de zona. Es mucho más ligera y fiable que prototipos previos. (Carga: bala de 13mm)"
+                    },
+                    {
+                        "name": "Cañón Sabot de 25mm Ronin 900",
+                        "skill": "Heavy-direct fire",
+                        "acc": "+1",
+                        "md": "F",
+                        "range": "100/200/500",
+                        "type": "HI/G",
+                        "damage": "d8w/d4+1m/d6+2m",
+                        "act": "2",
+                        "clip": "20",
+                        "mass": "10",
+                        "hide": "-",
+                        "avail": "Res",
+                        "cost": "10000",
+                        "description": "Diseñado para destruir vehículos y los blindajes pesados; el cañón Sabot es el infierno volador para un regimiento de infantería común. Es capaz de dejar agujeros con estatuas en hormigón armado, sin embargo, debe hacer contacto directo de impacto para efectuar cualquier daño perjudicial, sin poseer ningún radio o foco de ráfagas expansivas. (Carga: estatorreactor sabot de 20mm)"
+                    },
+                    {
+                        "name": "Cañón de Masa Supernova XI",
+                        "skill": "Heavy-direct fire",
+                        "acc": "0",
+                        "md": "F",
+                        "range": "6/20/60",
+                        "type": "En/G",
+                        "damage": "d8+1w/d12+1w/d8+1m",
+                        "act": "2",
+                        "clip": "8 disparos",
+                        "mass": "8.75",
+                        "hide": "-",
+                        "avail": "Res",
+                        "cost": "6825",
+                        "description": "El cañón de masa es un arma estruendosa en el campo de batalla. Poderoso y demoledor pero su poco avance es innegable. Los diseñadores intentaban replicar una versión antílope de la armadura ligera en algo antivehicular portátil, pero sacrificando muchísimas características para ello dejándola en nicho. (Carga: Fuente puntual gravedad)"
+                    },
+                    {
+                        "name": "Cañón Stutter Roc Z1",
+                        "skill": "Heavy-direct fire",
+                        "acc": "-1",
+                        "md": "F",
+                        "range": "20/40/80",
+                        "type": "LI/O",
+                        "damage": "d6+2s/d8+3s/2d6+3s",
+                        "act": "2",
+                        "clip": "10 disparos",
+                        "mass": "15",
+                        "hide": "-",
+                        "avail": "Con",
+                        "cost": "2500",
+                        "description": "Herramienta definitiva de control de masas por repulsión. Afectando en un radio de 3 metros, sus ráfagas rebotan causando dolor secundario a cualquiera a merced. Los alcanzados en impacto de grado Bueno (d8+3s) salpicarán un impacto indirecto grado Ordinario de (d6+2s) a todos a 3m. El caso inferior no produce daño indirecto del todo. (Carga: Aire comprimido)"
+                    },
+                    {
+                        "name": "Lanzallamas Pesado Dragon 3",
+                        "skill": "Heavy-direct fire",
+                        "acc": "-1",
+                        "md": "F/B/A",
+                        "range": "8/16/40",
+                        "type": "En/G",
+                        "damage": "d6+1w/d8+2w/2d6+1w",
+                        "act": "2",
+                        "clip": "15 dispa./5 ráfag.",
+                        "mass": "8.5",
+                        "hide": "-",
+                        "avail": "Mil",
+                        "cost": "2400",
+                        "description": "La versión enorme y brutal de un flamer. Su pesado tanque extra de mochila le otorga un volumen abismal, que puede ignorar chalecos ignífugos o armaduras personales inmolando a sus presas. Aunque no dispone del rango kilométrico de otras armas de su talla, la destrucción y purga en los pasillos de un crucero se vuelve un puro terror absoluto. (Carga: Chorro incendiario)"
+                    },
+                    {
+                        "name": "Cañón de Plasma D16",
+                        "skill": "Heavy-direct fire",
+                        "acc": "0",
+                        "md": "F",
+                        "range": "50/100/400",
+                        "type": "En/G",
+                        "damage": "d8w/d8+2w/d8+4w",
+                        "act": "2",
+                        "clip": "8 dispa.",
+                        "mass": "6",
+                        "hide": "-",
+                        "avail": "Mil",
+                        "cost": "12000",
+                        "description": "Armamento de impacto estelar de la Liga armada de Orion, es espectacular. Expande su gran descarga unos 2 metros de asimilación circular. Quien esté dentro de esa zona recibe una herida que pendería ser el grado anterior al blanco. Si acierta a grado Increíble (d12+3w), su blanco lo asume per los compañeros sufren un ataque derivado grado Bueno (d8+3w). (Carga: Plasma)"
+                    },
+                    {
+                        "name": "Minigun Cuántica HAK-59",
+                        "skill": "Heavy-direct fire",
+                        "acc": "0",
+                        "md": "F/B/A",
+                        "range": "40/80/200",
+                        "type": "En/O",
+                        "damage": "d8+1w/d8+3w/d6m",
+                        "act": "4",
+                        "clip": "90 dispa./30 ráfag.",
+                        "mass": "10",
+                        "hide": "-",
+                        "avail": "Res",
+                        "cost": "15000",
+                        "description": "Conocida como arma protónica o de ráfaga cuántica, produce chorros láser pesados de subpartículas que desintegran un frente. Carece de la perforación de blindajes densos de otros rifles, pero su ratio de tiro salvaje lo soluciona escupiendo fuego hasta licuar formaciones tropas de élite en segundos y obligar al asedio Nariac a huir de contención. (Carga: Haz de partículas)"
+                    },
+                    {
+                        "name": "Lanzagranadas ZK5",
+                        "skill": "Heavy-indirect fire",
+                        "acc": "-1",
+                        "md": "F",
+                        "range": "40/240/480",
+                        "type": "por cabeza",
+                        "damage": "por cabeza",
+                        "act": "3",
+                        "clip": "10 dispa.",
+                        "mass": "2",
+                        "hide": "-2",
+                        "avail": "Mil",
+                        "cost": "1500",
+                        "description": "El ZK5 (o cariñosamente \"Zeke 5\" por los Concord) es el pináculo de la lluvia de mortero portátil. Su cargador tambor tiene 10 depósitos de 30mm muy letales. Estabiliza ojivas finas de desaceleración lineal con un percutor base de disparo logrando unas arcas de trayectoria altísimas y lejanas mucho mejores a los lanzadores antiguos u obsoletos. (Carga: Granadas varias)"
+                    },
+                    {
+                        "name": "Lanzacohetes Bantam 5",
+                        "skill": "Heavy-indirect fire",
+                        "acc": "-2",
+                        "md": "F",
+                        "range": "40/400/2000",
+                        "type": "por cabeza",
+                        "damage": "por cabeza",
+                        "act": "2",
+                        "clip": "4 dispa.",
+                        "mass": "7",
+                        "hide": "-",
+                        "avail": "Mil",
+                        "cost": "4000",
+                        "description": "El cohete lanza misiles Bantam 5 portátil es un tubo hueco pero con un inmenso designador de rastreo lateral y una mirilla inteligente guiada. El artillero designa su presa acorralándola a la condena, apuntando para rodear esquinas, colinas y saltar barreras. Incluso un observador remoto pasará láser de fijación a la ojiva para darle un trazo limpio. (Carga: Misiles varios)"
+                    },
+                    {
+                        "name": "Cohete Antiaéreo",
+                        "skill": "n/a",
+                        "acc": "n/a",
+                        "md": "n/a",
+                        "range": "por lanzador",
+                        "type": "HI/G",
+                        "damage": "d4w/d4+2w/d4m",
+                        "act": "-",
+                        "clip": "n/a",
+                        "mass": "3",
+                        "hide": "-",
+                        "avail": "Res",
+                        "cost": "1000",
+                        "description": "El cohete ligero cuenta con sistema infrarrojo guiado y una cabeza de fragmentación para tumbar aeronaves enemigas. (Carga: Varilla dentada) (Área de efecto: 4m/8m/12m)"
+                    },
+                    {
+                        "name": "Cohete Antipersonal",
+                        "skill": "n/a",
+                        "acc": "n/a",
+                        "md": "n/a",
+                        "range": "por lanzador",
+                        "type": "En/O",
+                        "damage": "d6w/d6+2w/d8+2w",
+                        "act": "-",
+                        "clip": "n/a",
+                        "mass": "3",
+                        "hide": "-",
+                        "avail": "Mil",
+                        "cost": "500",
+                        "description": "Diseñado para aniquilar gente sin afectar al valioso equipo, asolando una mortífera onda de radiación a los que estén dentro de su detonación. Al igual que el antiaéreo, inflige en área. (Carga: Radiación de neutrones) (Área de efecto: 4m/8m/12m)"
+                    },
+                    {
+                        "name": "Cohete Antivehículos",
+                        "skill": "n/a",
+                        "acc": "n/a",
+                        "md": "n/a",
+                        "range": "por lanzador",
+                        "type": "HI/G",
+                        "damage": "d4+2w/d4+4w/d4+1m",
+                        "act": "-",
+                        "clip": "n/a",
+                        "mass": "3",
+                        "hide": "-",
+                        "avail": "Mil",
+                        "cost": "1000",
+                        "description": "Libera un disparador perforante sabot en fase capaz de cruzar las armaduras acorazadas de vehículos blindados o servos de infantería pesada con gran potencia. (Carga: Penetrador cinético) (Área de efecto: contacto/2m/4m)"
+                    },
+                    {
+                        "name": "Cohete CHE",
+                        "skill": "n/a",
+                        "acc": "n/a",
+                        "md": "n/a",
+                        "range": "por lanzador",
+                        "type": "En/O o En/G",
+                        "damage": "d8-2w/d8w/d4m",
+                        "act": "-",
+                        "clip": "n/a",
+                        "mass": "3",
+                        "hide": "-",
+                        "avail": "Mil",
+                        "cost": "250",
+                        "description": "Empacado con Detonex. De los más populares y destructivos explosivos convencionales del cosmos. Su poder ardiente asolará a todo el que se le cruce a 6 metros redondos. (Carga: Ojiva de detonex) (Área de efecto: 6m/10m/16m)"
+                    },
+                    {
+                        "name": "Granada AP",
+                        "skill": "Athl-throw",
+                        "acc": "0",
+                        "md": "F",
+                        "range": "Por FUE",
+                        "type": "En/G",
+                        "damage": "d6-1w/d4m/d4+2m",
+                        "act": "2",
+                        "clip": "n/a",
+                        "mass": "0.5",
+                        "hide": "+2",
+                        "avail": "Mil",
+                        "cost": "400",
+                        "description": "Su espoleta de radar detecta dónde ubica a la víctima y asesta una carga concentrada sobre ella, ideada para destrozar armadura o armazones de vehículo. (Carga: Carga focalizada) (Área de efecto: contacto/1m/2m)"
+                    },
+                    {
+                        "name": "Granada de Concusión",
+                        "skill": "Athl-throw",
+                        "acc": "0",
+                        "md": "F",
+                        "range": "Por FUE",
+                        "type": "LI/O",
+                        "damage": "d6+3s/d6w/d6+2w",
+                        "act": "2",
+                        "clip": "n/a",
+                        "mass": "0.5",
+                        "hide": "+2",
+                        "avail": "Mil",
+                        "cost": "150",
+                        "description": "Este cubo de bloque explosivo detona envuelto de un estuche no esparcible incapacitando e hiriendo al personal por impacto cinético sónico, limitando la limpieza de cadáveres letales. (Carga: Explosivo sin vaina) (Área de efecto: 2m/4m/6m)"
+                    },
+                    {
+                        "name": "Granada de Frag",
+                        "skill": "Athl-throw",
+                        "acc": "0",
+                        "md": "F",
+                        "range": "Por FUE",
+                        "type": "HI/G",
+                        "damage": "d8w/d8+1w/d4+1m",
+                        "act": "2",
+                        "clip": "n/a",
+                        "mass": "0.5",
+                        "hide": "+2",
+                        "avail": "Mil",
+                        "cost": "100",
+                        "description": "Peligrosa metralla punzante despedida desde escombros giratorios a gran distancia. Los protegidos tras una cobertura contundente restan el daño una categoría para simular que se tumban frente al daño y caen bajo suelo. (Carga: Metralla) (Área de efecto: 2m/6m/10m)"
+                    },
+                    {
+                        "name": "Granada de Gas",
+                        "skill": "Athl-throw",
+                        "acc": "0",
+                        "md": "F",
+                        "range": "Por FUE",
+                        "type": "II/O",
+                        "damage": "d4s/d4+2s/d4w",
+                        "act": "2",
+                        "clip": "n/a",
+                        "mass": "0.5",
+                        "hide": "+2",
+                        "avail": "Mil",
+                        "cost": "300",
+                        "description": "Estalla creando una nube a presión de gas paralizante hemotóxico a 8 metros. La toxina demora de media unos d4+1 asaltos en actuar, y no existe escudo a la Fortaleza de quien la respira. (Carga: Gas venenoso) (Área de efecto: contacto/2m/4m)"
+                    },
+                    {
+                        "name": "Granada de Pulso",
+                        "skill": "Athl-throw",
+                        "acc": "0",
+                        "md": "F",
+                        "range": "Por FUE",
+                        "type": "En/G",
+                        "damage": "d4+2s/d6+2s/d8+2s",
+                        "act": "2",
+                        "clip": "n/a",
+                        "mass": "0.5",
+                        "hide": "+2",
+                        "avail": "Mil",
+                        "cost": "350",
+                        "description": "La granada irradia impulsos magnéticos resecando e interfiriendo en el sistema nervioso humano y fundiendo material tecnológico. Máximo daño contra implantes cibernéticos, armas de energía y servomotores acoplados o armadura robótica (Impacto ordinario causa 6 de aturdimiento). (Carga: Pulso Electromagnético) (Área: 2m/4m/10m)"
+                    }
+                ]
+            },
+            {
+                "name": "PL 8: Era Energética",
+                "items": [
+                    {
+                        "name": "Gallo, carga de estrellas",
+                        "skill": "Hvy-ind",
+                        "skill_url": "/skills/heavy-weapons/indirect-fire/",
+                        "acc": "0",
+                        "range": "Como lanzador",
+                        "damage": "d8+2w/d4+1m/d6+1m",
+                        "act": "1",
+                        "clip": "1",
+                        "cost": "2500",
+                        "anchor": "carga-de-estrellas-galleta",
+                        "description": "Un misil gallo con una ojiva de alto rendimiento.",
+                        "clip_cost": "N/A",
+                        "hide_modifier": "N/A"
+                    },
+                    {
+                        "name": "Cañón, máser",
+                        "skill": "hvy-dir",
+                        "skill_url": "/skills/heavy-weapons/direct-fire/",
+                        "acc": "-1",
+                        "range": "80/200/600",
+                        "damage": "d8w/d4+1m/d8+2m",
+                        "act": "2",
+                        "clip": "20",
+                        "cost": "8000",
+                        "anchor": "máser de cañón",
+                        "description": "Un cañón máser pesado.",
+                        "clip_cost": "N/A",
+                        "hide_modifier": "N/A"
+                    },
+                    {
+                        "name": "granada, masa",
+                        "skill": "Athl-thr",
+                        "skill_url": "/skills/athletics/throw/",
+                        "acc": "0",
+                        "range": "Por STR",
+                        "damage": "d6+2s/d6+2w/d8m",
+                        "act": "1",
+                        "clip": "1",
+                        "cost": "200",
+                        "anchor": "masa de granada",
+                        "description": "Una granada que utiliza campos de gravedad para causar daño.",
+                        "clip_cost": "N/A",
+                        "hide_modifier": "N/A"
+                    },
+                    {
+                        "name": "lanzador masivo",
+                        "skill": "Hvy-ind",
+                        "skill_url": "/skills/heavy-weapons/indirect-fire/",
+                        "acc": "0",
+                        "range": "20/300/1000",
+                        "damage": "d6+1w/d6+3w/d4+1m",
+                        "act": "1",
+                        "clip": "4",
+                        "cost": "3000",
+                        "anchor": "lanzador masivo",
+                        "description": "Un lanzador que dispara proyectiles de masa.",
+                        "clip_cost": "N/A",
+                        "hide_modifier": "N/A"
+                    }
+                ]
+            }
         ]
-      },
-      {
-        "name": "PL 3: Edad de la Razón",
-        "items": [
-          {
-            "name": "Chafarote",
-            "skill": "espada cuerpo a cuerpo",
-            "skill_url": "/skills/melee-weapons/blade/",
-            "acc": "0",
-            "damage": "d4+1w/d8+1w/d8+3w",
-            "actions": "1",
-            "mass": "2",
-            "avail": "do",
-            "cost": "80",
-            "anchor": "chafarote",
-            "description": "Sable o espada cortante, corta y ancha, de hoja recta o ligeramente curvada.",
-            "clip_cost": "N/A",
-            "hide_modifier": "N/A"
-          },
-          {
-            "name": "Katana",
-            "skill": "espada cuerpo a cuerpo",
-            "skill_url": "/skills/melee-weapons/blade/",
-            "acc": "-1",
-            "damage": "d4+2w/d6+2w/d4+1m",
-            "actions": "1",
-            "mass": "2",
-            "avail": "R",
-            "cost": "500",
-            "anchor": "catana",
-            "description": "Una espada tradicional japonesa con una hoja curva y de un solo filo.",
-            "clip_cost": "N/A",
-            "hide_modifier": "N/A"
-          },
-          {
-            "name": "Estoque",
-            "skill": "espada cuerpo a cuerpo",
-            "skill_url": "/skills/melee-weapons/blade/",
-            "acc": "-1",
-            "damage": "d4w/d4+1w/d4+2w",
-            "actions": "1",
-            "mass": "1",
-            "avail": "Ud.",
-            "cost": "100",
-            "anchor": "estoque",
-            "description": "Una espada delgada y puntiaguda, ideal para ataques de estocada.",
-            "clip_cost": "N/A",
-            "hide_modifier": "N/A"
-          },
-          {
-            "name": "Sable",
-            "skill": "espada cuerpo a cuerpo",
-            "skill_url": "/skills/melee-weapons/blade/",
-            "acc": "0",
-            "damage": "d4w/d4+2w/2d4+1w",
-            "actions": "1",
-            "mass": "2",
-            "avail": "Ud.",
-            "cost": "120",
-            "anchor": "sable",
-            "description": "Espada de hoja curva, asociada a la caballería ligera.",
-            "clip_cost": "N/A",
-            "hide_modifier": "N/A"
-          }
+    },
+    "ammunition": {
+        "columns": [
+            {
+                "name": "Objeto",
+                "key": "name"
+            },
+            {
+                "name": "Plataforma",
+                "key": "platform"
+            },
+            {
+                "name": "Carga",
+                "key": "payload"
+            },
+            {
+                "name": "Coste ($)",
+                "key": "cost"
+            },
+            {
+                "name": "Description",
+                "key": "description",
+                "hidden": true
+            }
+        ],
+        "groups": [
+            {
+                "name": "PL 7: Era de la gravedad",
+                "items": [
+                    {
+                        "name": "Muni. Perforante Trueno Oscuro",
+                        "platform": "Armas de asalto / casquillo",
+                        "payload": "Penetrador Sabot",
+                        "cost": "Cargador x2",
+                        "description": "El clásico penetrador de asalto de teflón para rajar armaduras. Cualquier blanco atravesado ve su coraza reducida a la mitad (Redondeando a su alza más próxima). Por poner ejemplo: Un blindaje medio detiene unos de bloque d6+1 impactos. Si sacamos 4 al d6 daría 5 contra municiones normales, que gracias al Trueno queda reducida a salvacargas de 3 en blindajes. Si el atacante que acerta portaba trueno oscuro el daño recibido al final resta 1 de golpe, minimizando su daño inicial pero destrozando gran armadura de una bala si el sujeto era blindado puro de pie a cabeza."
+                    },
+                    {
+                        "name": "Muni. Explosiva Potente MightyMite",
+                        "platform": "Armas de asalto u sabot",
+                        "payload": "Ojiva Destructiva",
+                        "cost": "Cargador x4",
+                        "description": "Forrado de esquirlas Detonex con explosión al chasquear impacto. El cuerpo abre una herida brutal de esquirla sangrante inminente de metrallas punzantes incrustadas en el riego. Si se perforó armadura el impacto sufre unos d6-3 de letalidad y herida extra que asimilan en carne ajena sin que la armadura lo proteja el añadido destructivo que se diseminará en sangre."
+                    },
+                    {
+                        "name": "Muni. Estabilizada AA",
+                        "platform": "Armas de asalto u sabot",
+                        "payload": "Sabot Estabilizado",
+                        "cost": "Cargador x3",
+                        "description": "No traza círculos ni derrape circular como cualquier proyectil clásico; se alinea asemejando a una flecha minúscula abriendo alas y engranaje estabilizante desde el interior. Precisión enorme y sublime restando penalización mediana ni larga a un único paso al que dispare."
+                    },
+                    {
+                        "name": "Munición de Flecha C5 Shredder",
+                        "platform": "Armas de asalto",
+                        "payload": "Paquete de Dardos T",
+                        "cost": "Cargador x2",
+                        "description": "Convertirá el arma que usas al de flechas de lluvia. Talla las variables limitándote de Rango corto, a de 6/12/30 y un daño fijo de d4w/d6w/d4m pero DUPLICA asertos e impactos cercanos. La flecha C5 es perfecta para pasillos navales estrechos y melé; mientras que las tiradas largas mermarán tu daño a la mitad ante esparcimiento."
+                    },
+                    {
+                        "name": "Bala de Gel A-Mace",
+                        "platform": "Armas asalto o sabot",
+                        "payload": "Cápsula blanda de gel",
+                        "cost": "Cargador x2",
+                        "description": "Gel de control letal civil. Asimila cualquier herida y absorbe su sangrado o muerte, pasando todos los restos de letal daño a doble impacto sumado aturdimiento de anestesia durmiente. El arma con Gel A-Mace pierde algo de aerodinámica e incuba maldad con retraso penalizador para impactables largos."
+                    },
+                    {
+                        "name": "Muni. Guiada X",
+                        "platform": "Armas asalto o sabot",
+                        "payload": "Casquillo Láser Guiable",
+                        "cost": "Cargador x5",
+                        "description": "Balas guiadas de letal persecución unidas al sistema inteligente del sensor visual de miras X o rastreo manual. La Talon incorpora en puntera corrección telemétrica si ha fallado buscando su fin y redirigiéndose. Sin un guiado no resultará letal frente a nada y no funciona."
+                    },
+                    {
+                        "name": "Casquillos Infrarrojo Snake Eyes",
+                        "platform": "Armas asalto o sabot",
+                        "payload": "Acorralador Infrarrojo",
+                        "cost": "Cargador x4",
+                        "description": "Caza una presa buscándole el calor del motor de vehículos o de armadura del cuerpo orgánico. Da penalizador salvavidas -2 extra en mediana ni tan distante e invierte restando en rango extremo a un bono si se usa y un solo -1 lejano. Sus fallos no se dispersan ni erran: rastrea un segundo radar ajeno saltando de nuevo al compañero, o si atacas colisiona a otro calor cercano del que esté en esa sala. No distingue amigos de terroristas, pero si la segunda vez su tirada es fallo... el ojo de la serpiente errará ya del todo al fin colisionando estancado a tierra y suelo libre."
+                    }
+                ]
+            }
         ]
-      },
-      {
-        "name": "PL 4: Era industrial",
-        "items": [
-          {
-            "name": "Bayoneta",
-            "skill": "espada cuerpo a cuerpo",
-            "skill_url": "/skills/melee-weapons/blade/",
-            "acc": "+1",
-            "damage": "d4w/d4+2w/d6m",
-            "actions": "1",
-            "mass": "1",
-            "avail": "do",
-            "cost": "25",
-            "anchor": "bayoneta",
-            "description": "Un cuchillo, daga, espada o arma con forma de púa diseñada para caber en el extremo del cañón de un rifle.",
-            "clip_cost": "N/A",
-            "hide_modifier": "N/A"
-          }
+    },
+    "accessories": {
+        "columns": [
+            {
+                "name": "Objeto",
+                "key": "name"
+            },
+            {
+                "name": "Plataforma",
+                "key": "platform"
+            },
+            {
+                "name": "Masa (kg)",
+                "key": "mass"
+            },
+            {
+                "name": "Coste ($)",
+                "key": "cost"
+            },
+            {
+                "name": "Description",
+                "key": "description",
+                "hidden": true
+            }
+        ],
+        "groups": [
+            {
+                "name": "PL 7: Era de la gravedad",
+                "items": [
+                    {
+                        "name": "Sistema Guía Falcon X",
+                        "platform": "Cualquier arma proyectiles (tipo HI)",
+                        "mass": "0.1",
+                        "cost": "1250",
+                        "description": "El sistema fijador usa munición guiada. Incorpora una franja láser de baja densidad al barril y gastar un turno prepara su disparo para que, bajo su misma designación de puntería, trace y otorgue un bonificador extra de -3 nivel al disparo guiado infalible exacto. Este sistema puede apagarse para funcionar con normalidad."
+                    },
+                    {
+                        "name": "Mirillas Holo Target X",
+                        "platform": "Cualquier arma a distancia",
+                        "mass": "0.1",
+                        "cost": "850",
+                        "description": "La mayor precisión óptica del siglo y los mejores visores en venta, cuenta con unas lentes de rastreo que miden telemetría con crucetas de fijación sin perder nada de visión o perimetral del arma. Su uso anula cualquier penalizador de larga distancia o disparos lejanos rebajándolo 2 pasos. Solo una de las miras puede ser acoplada al cañón."
+                    },
+                    {
+                        "name": "Visor IFF  700 Reaper",
+                        "platform": "Cualquier arma a distancia",
+                        "mass": "0.1",
+                        "cost": "850",
+                        "description": "IFF sirve de Identificación Aliada / Enemiga, una capa protectora inteligente. Los miembros del pelotón emiten traspondedor IFF (Una de frecuencias comprada por 50$) ajustado al sistema en misma sintonía para que sea funcional. Si tu colega cruza la franja de combate, el arma de IFF bloquea el disparo al vuelo e imposibilita la muerte colateral accidental. Ideal asaltos confusos de cuartos donde se rocía pánico omitiendo miedo y penas al fuego general en área de melés y combate de cercanía ciega."
+                    },
+                    {
+                        "name": "Mira Mongoose Imaging",
+                        "platform": "Cualquier arma a distancia",
+                        "mass": "0.1",
+                        "cost": "300",
+                        "description": "Lupa de barril muy sencilla y acoplable a cualquier ranura superior de fuego táctico que purifica la captación nocturna u opaca de luz redimiendo penalizaciones por ceguera y oscuridad en 2 puntos, y lejana de 1 rango extra."
+                    },
+                    {
+                        "name": "Funda de Sigilo Stealth",
+                        "platform": "Pistola o Subfusil",
+                        "mass": "1",
+                        "cost": "400",
+                        "description": "Forjado con blindaje elástico material antiscáner se funde invisible con el trazo de cuerpo y forma anatómica para despistar miradas dando un modificador pasivo sigiloso de Ocultación de +3 al cuerpo y escurrir al cacheo y sensores de guardias, pero desenfundar desde ahí exige un pericia un engorro logrando +1 paso la penalización por desenfunde acelerado de saque instantánea."
+                    }
+                ]
+            }
         ]
-      },
-      {
-        "name": "PL 5: Era de la información",
-        "items": [
-          {
-            "name": "cuchillo de combate",
-            "skill": "espada cuerpo a cuerpo",
-            "skill_url": "/skills/melee-weapons/blade/",
-            "acc": "0",
-            "damage": "d4+1w/d4+2w/d4+3w",
-            "actions": "1",
-            "mass": "1",
-            "avail": "do",
-            "cost": "50",
-            "anchor": "cuchillo de combate",
-            "description": "Un cuchillo duradero diseñado para uso militar, a menudo con un borde dentado.",
-            "clip_cost": "N/A",
-            "hide_modifier": "N/A"
-          },
-          {
-            "name": "bastón paralizante",
-            "skill": "Accionado cuerpo a cuerpo",
-            "skill_url": "/skills/melee-weapons/powered-weapon/",
-            "acc": "0",
-            "damage": "d4+1s/d4+3s/d6+4s",
-            "actions": "1",
-            "mass": "1",
-            "avail": "Ud.",
-            "cost": "200",
-            "anchor": "bastón paralizante",
-            "description": "Un bastón que aplica una descarga eléctrica de alto voltaje al impactar.",
-            "clip_cost": "N/A",
-            "hide_modifier": "N/A"
-          }
-        ]
-      },
-      {
-        "name": "PL 6: Era de la fusión",
-        "items": [
-          {
-            "name": "Espada sierra",
-            "skill": "Accionado cuerpo a cuerpo",
-            "skill_url": "/skills/melee-weapons/powered-weapon/",
-            "acc": "+1",
-            "damage": "d8+1w/d8+2w/d4+1m",
-            "actions": "1",
-            "mass": "5",
-            "avail": "R",
-            "cost": "1500",
-            "anchor": "espada sierra",
-            "description": "Una espada con dientes motorizados que giran como una motosierra.",
-            "clip_cost": "N/A",
-            "hide_modifier": "N/A"
-          },
-          {
-            "name": "Bastón de pulso",
-            "skill": "Accionado cuerpo a cuerpo",
-            "skill_url": "/skills/melee-weapons/powered-weapon/",
-            "acc": "0",
-            "damage": "d8s/d4+2w/d6+2w",
-            "actions": "1",
-            "mass": "2",
-            "avail": "Ud.",
-            "cost": "400",
-            "anchor": "bastón de pulso",
-            "description": "Un bastón que emite un pulso cinético al impactar, causando daños internos.",
-            "clip_cost": "N/A",
-            "hide_modifier": "N/A"
-          }
-        ]
-      },
-      {
-        "name": "PL 7: Era de la gravedad",
-        "items": [
-          {
-            "name": "Gravmace",
-            "skill": "Accionado cuerpo a cuerpo",
-            "skill_url": "/skills/melee-weapons/powered-weapon/",
-            "acc": "+1",
-            "damage": "d6+2s/d6+2w/d8+2w",
-            "actions": "1",
-            "mass": "4",
-            "avail": "R",
-            "cost": "2000",
-            "anchor": "grava",
-            "description": "Una maza que utiliza generadores de gravedad para aumentar la fuerza del impacto.",
-            "clip_cost": "N/A",
-            "hide_modifier": "N/A"
-          },
-          {
-            "name": "Cestus de poder",
-            "skill": "pelea desarmada",
-            "skill_url": "/skills/unarmed-attack/brawl/",
-            "acc": "-1",
-            "damage": "d4+2s/d4w/d4+1w",
-            "actions": "1",
-            "mass": "3",
-            "avail": "R",
-            "cost": "1800",
-            "anchor": "poder-cestus",
-            "description": "Un guantelete motorizado que mejora los ataques sin armas.",
-            "clip_cost": "N/A",
-            "hide_modifier": "N/A"
-          }
-        ]
-      },
-      {
-        "name": "PL 8: Era Energética",
-        "items": [
-          {
-            "name": "espada estrella",
-            "skill": "Accionado cuerpo a cuerpo",
-            "skill_url": "/skills/melee-weapons/powered-weapon/",
-            "acc": "-2",
-            "damage": "d8+1w/2d6w/d4+3m",
-            "actions": "1",
-            "mass": "3",
-            "avail": "R",
-            "cost": "7500",
-            "anchor": "espada-estrella",
-            "description": "Una espada con una hoja de energía de plasma contenida.",
-            "clip_cost": "N/A",
-            "hide_modifier": "N/A"
-          },
-          {
-            "name": "triple personal",
-            "skill": "Accionado cuerpo a cuerpo",
-            "skill_url": "/skills/melee-weapons/powered-weapon/",
-            "acc": "-1",
-            "damage": "d8+2w/3d4+1w/d8m",
-            "actions": "1",
-            "mass": "4",
-            "avail": "R",
-            "cost": "4000",
-            "anchor": "triple personal",
-            "description": "Un bastón de tres secciones con emisores de energía en cada extremo.",
-            "clip_cost": "N/A",
-            "hide_modifier": "N/A"
-          }
-        ]
-      }
-    ]
-  },
-  "ranged": {
-    "columns": [
-      {
-        "name": "Arma",
-        "key": "name"
-      },
-      {
-        "name": "Habilidad",
-        "key": "skill"
-      },
-      {
-        "name": "Acc",
-        "key": "acc"
-      },
-      {
-        "name": "Rango (P/M/L)",
-        "key": "range"
-      },
-      {
-        "name": "Daño (O/G/A)",
-        "key": "damage"
-      },
-      {
-        "name": "Acto.",
-        "key": "act"
-      },
-      {
-        "name": "Acortar",
-        "key": "clip"
-      },
-      {
-        "name": "Costo ($)",
-        "key": "cost"
-      },
-      {
-        "name": "Descripción",
-        "key": "description",
-        "hidden": true
-      },
-      {
-        "name": "Costo del clip",
-        "key": "clip_cost",
-        "hidden": true
-      },
-      {
-        "name": "Esconder",
-        "key": "hide_modifier",
-        "hidden": true
-      }
-    ],
-    "groups": [
-      {
-        "name": "PL 0: Edad de Piedra",
-        "items": [
-          {
-            "name": "Arco, corto",
-            "skill": "arco prim",
-            "skill_url": "/skills/primitive-ranged-weapons/bow/",
-            "acc": "0",
-            "range": "20/40/100",
-            "damage": "d4w/d4+2w/d4+3w",
-            "act": "1",
-            "clip": "1",
-            "cost": "40",
-            "anchor": "arco corto",
-            "description": "Un arco sencillo fabricado a partir de una sola pieza de madera.",
-            "clip_cost": "N/A",
-            "hide_modifier": "N/A"
-          },
-          {
-            "name": "Honda",
-            "skill": "cabestrillo",
-            "skill_url": "/skills/primitive-ranged-weapons/sling/",
-            "acc": "+2",
-            "range": "10/20/60",
-            "damage": "d4s/d4+1s/d4+2s",
-            "act": "1",
-            "clip": "1",
-            "cost": "10",
-            "anchor": "honda",
-            "description": "Correa con bucle que se utiliza para arrojar piedras o balas de plomo.",
-            "clip_cost": "N/A",
-            "hide_modifier": "N/A"
-          }
-        ]
-      },
-      {
-        "name": "PL 1: Bronce/Edad del Hierro",
-        "items": [
-          {
-            "name": "Jabalina",
-            "skill": "lanzamiento de athl",
-            "skill_url": "/skills/athletics/throw/",
-            "acc": "0",
-            "range": "Por STR",
-            "damage": "d4+1w/d6+1w/d4m",
-            "act": "1",
-            "clip": "1",
-            "cost": "20",
-            "anchor": "jabalina",
-            "description": "Una lanza ligera diseñada principalmente para ser arrojada.",
-            "clip_cost": "N/A",
-            "hide_modifier": "N/A"
-          }
-        ]
-      },
-      {
-        "name": "PL 2: Edad Media",
-        "items": [
-          {
-            "name": "Arco, largo",
-            "skill": "arco prim",
-            "skill_url": "/skills/primitive-ranged-weapons/bow/",
-            "acc": "-1",
-            "range": "40/80/200",
-            "damage": "d4+2w/d6+2w/d4+1m",
-            "act": "1",
-            "clip": "1",
-            "cost": "75",
-            "anchor": "largo del arco",
-            "description": "Un arco alto aproximadamente igual a la altura del usuario.",
-            "clip_cost": "N/A",
-            "hide_modifier": "N/A"
-          },
-          {
-            "name": "Ballesta",
-            "skill": "arco prim",
-            "skill_url": "/skills/primitive-ranged-weapons/bow/",
-            "acc": "0",
-            "range": "50/100/250",
-            "damage": "d6s/d4w/d4+1w",
-            "act": "2",
-            "clip": "1",
-            "cost": "150",
-            "anchor": "ballesta",
-            "description": "Arco montado sobre una culata que dispara virotes o virotes.",
-            "clip_cost": "N/A",
-            "hide_modifier": "N/A"
-          },
-          {
-            "name": "shuriken",
-            "skill": "lanzamiento de athl",
-            "skill_url": "/skills/athletics/throw/",
-            "acc": "-1",
-            "range": "Por STR",
-            "damage": "d4s/d4+1s/d6+1s",
-            "act": "1",
-            "clip": "1",
-            "cost": "10",
-            "anchor": "shuriken",
-            "description": "Arma oculta que generalmente se arroja.",
-            "clip_cost": "N/A",
-            "hide_modifier": "N/A"
-          }
-        ]
-      },
-      {
-        "name": "PL 3: Edad de la Razón",
-        "items": [
-          {
-            "name": "Mosquete, llave de chispa",
-            "skill": "pedernal remilgado",
-            "skill_url": "/skills/primitive-ranged-weapons/flintlock/",
-            "acc": "+2",
-            "range": "20/40/100",
-            "damage": "d4+2w/d6+2w/d8m",
-            "act": "3",
-            "clip": "1",
-            "cost": "200",
-            "anchor": "mosquete de chispa",
-            "description": "Un arma larga con avancarga que utiliza un mecanismo de chispa.",
-            "clip_cost": "N/A",
-            "hide_modifier": "N/A"
-          },
-          {
-            "name": "Pistola, llave de chispa",
-            "skill": "pedernal remilgado",
-            "skill_url": "/skills/primitive-ranged-weapons/flintlock/",
-            "acc": "+2",
-            "range": "4/8/16",
-            "damage": "d4s/d6w/d8+2w",
-            "act": "3",
-            "clip": "1",
-            "cost": "150",
-            "anchor": "pistola de chispa",
-            "description": "Una pistola con avancarga que utiliza un mecanismo de chispa.",
-            "clip_cost": "N/A",
-            "hide_modifier": "N/A"
-          },
-          {
-            "name": "Rifle, largo",
-            "skill": "pedernal remilgado",
-            "skill_url": "/skills/primitive-ranged-weapons/flintlock/",
-            "acc": "0",
-            "range": "30/60/150",
-            "damage": "d6w/d6+2w/d4+1m",
-            "act": "3",
-            "clip": "1",
-            "cost": "300",
-            "anchor": "largo del rifle",
-            "description": "Un arma larga con un cañón estriado para mejorar la precisión.",
-            "clip_cost": "N/A",
-            "hide_modifier": "N/A"
-          }
-        ]
-      },
-      {
-        "name": "PL 4: Era industrial",
-        "items": [
-          {
-            "name": "derringer",
-            "skill": "pistola mod",
-            "skill_url": "/skills/modern-ranged-weapons/pistol/",
-            "acc": "+2",
-            "range": "5/10/30",
-            "damage": "d4w/d6w/d4m",
-            "act": "2",
-            "clip": "2",
-            "cost": "100",
-            "anchor": "derringer",
-            "description": "Una pistola pequeña y fácilmente ocultable.",
-            "clip_cost": "N/A",
-            "hide_modifier": "N/A"
-          },
-          {
-            "name": "Pistola, .38 rev",
-            "skill": "pistola mod",
-            "skill_url": "/skills/modern-ranged-weapons/pistol/",
-            "acc": "0",
-            "range": "10/20/80",
-            "damage": "d4+1w/d4+2w/d6m",
-            "act": "1",
-            "clip": "6",
-            "cost": "200",
-            "anchor": "pistola-38-rev",
-            "description": "Un revólver confiable de seis tiros con recámara de calibre .38.",
-            "clip_cost": "N/A",
-            "hide_modifier": "N/A"
-          },
-          {
-            "name": "Pistola, .44 magnum",
-            "skill": "pistola mod",
-            "skill_url": "/skills/modern-ranged-weapons/pistol/",
-            "acc": "+1",
-            "range": "30/60/200",
-            "damage": "d4+2w/d6+2w/d4+1m",
-            "act": "1",
-            "clip": "6",
-            "cost": "400",
-            "anchor": "pistola-44-magnum",
-            "description": "Un poderoso revólver conocido por su poder de detención.",
-            "clip_cost": "N/A",
-            "hide_modifier": "N/A"
-          },
-          {
-            "name": "Rifle, 7,62 mm",
-            "skill": "rifle mod",
-            "skill_url": "/skills/modern-ranged-weapons/rifle/",
-            "acc": "-1",
-            "range": "80/160/400",
-            "damage": "d6w/d8+1w/d6+1m",
-            "act": "1",
-            "clip": "10",
-            "cost": "500",
-            "anchor": "rifle-7-62mm",
-            "description": "Un rifle de cerrojo o semiautomático que dispara un cartucho pesado.",
-            "clip_cost": "N/A",
-            "hide_modifier": "N/A"
-          },
-          {
-            "name": "fusil, asalto",
-            "skill": "rifle mod",
-            "skill_url": "/skills/modern-ranged-weapons/rifle/",
-            "acc": "-1",
-            "range": "50/100/300",
-            "damage": "d4w/d6w/d4m",
-            "act": "1",
-            "clip": "30",
-            "cost": "700",
-            "anchor": "asalto con rifle",
-            "description": "Un rifle de fuego selectivo que utiliza un cartucho intermedio.",
-            "clip_cost": "N/A",
-            "hide_modifier": "N/A"
-          },
-          {
-            "name": "Subfusil, 9 mm",
-            "skill": "Mod-SMG",
-            "skill_url": "/skills/modern-ranged-weapons/smg/",
-            "acc": "+1",
-            "range": "30/60/150",
-            "damage": "d4+1w/d4+2w/d6m",
-            "act": "1",
-            "clip": "30",
-            "cost": "600",
-            "anchor": "smg-9mm",
-            "description": "Una metralleta que dispara munición de pistola de 9 mm.",
-            "clip_cost": "N/A",
-            "hide_modifier": "N/A"
-          }
-        ]
-      },
-      {
-        "name": "PL 6: Era de la fusión",
-        "items": [
-          {
-            "name": "Pistola, canal de 9 mm.",
-            "skill": "pistola mod",
-            "skill_url": "/skills/modern-ranged-weapons/pistol/",
-            "acc": "0",
-            "range": "20/40/100",
-            "damage": "d4+1w/d6+1w/d4m",
-            "act": "1",
-            "clip": "15",
-            "cost": "400",
-            "anchor": "pistola-carga-9mm",
-            "description": "Una pistola que utiliza munición cargada eléctricamente para aumentar la velocidad.",
-            "clip_cost": "N/A",
-            "hide_modifier": "N/A"
-          },
-          {
-            "name": "Pistola, 9 mm de gravedad cero",
-            "skill": "pistola mod",
-            "skill_url": "/skills/modern-ranged-weapons/pistol/",
-            "acc": "0",
-            "range": "20/40/100",
-            "damage": "d4+1w/d6+1w/d4m",
-            "act": "1",
-            "clip": "15",
-            "cost": "600",
-            "anchor": "pistola-9mm-cero-g",
-            "description": "Una pistola sin retroceso diseñada para usar en entornos de gravedad cero.",
-            "clip_cost": "N/A",
-            "hide_modifier": "N/A"
-          },
-          {
-            "name": "Pistola, canal de 11 mm.",
-            "skill": "pistola mod",
-            "skill_url": "/skills/modern-ranged-weapons/pistol/",
-            "acc": "+1",
-            "range": "40/80/240",
-            "damage": "d4+2w/d6+2w/d4+1m",
-            "act": "1",
-            "clip": "10",
-            "cost": "500",
-            "anchor": "pistola-carga-11mm",
-            "description": "Un disparo de pistola pesada cargó balas de 11 mm.",
-            "clip_cost": "N/A",
-            "hide_modifier": "N/A"
-          },
-          {
-            "name": "Rifle, canal de 11 mm",
-            "skill": "rifle mod",
-            "skill_url": "/skills/modern-ranged-weapons/rifle/",
-            "acc": "0",
-            "range": "100/400/1000",
-            "damage": "d6+1w/d6+3w/d6+1m",
-            "act": "1",
-            "clip": "30",
-            "cost": "900",
-            "anchor": "rifle-carga-11mm",
-            "description": "Un rifle militar estándar que disparaba balas cargadas de 11 mm.",
-            "clip_cost": "N/A",
-            "hide_modifier": "N/A"
-          },
-          {
-            "name": "Rifle, 11 mm de gravedad cero",
-            "skill": "rifle mod",
-            "skill_url": "/skills/modern-ranged-weapons/rifle/",
-            "acc": "0",
-            "range": "100/400/1000",
-            "damage": "d6+1w/d6+3w/d6+1m",
-            "act": "1",
-            "clip": "15",
-            "cost": "1100",
-            "anchor": "rifle-11mm-cero-g",
-            "description": "Un rifle sin retroceso diseñado para combates en gravedad cero.",
-            "clip_cost": "N/A",
-            "hide_modifier": "N/A"
-          },
-          {
-            "name": "Escopeta, autoflec",
-            "skill": "rifle mod",
-            "skill_url": "/skills/modern-ranged-weapons/rifle/",
-            "acc": "+2",
-            "range": "4/12/30",
-            "damage": "d6w/d6+2w/d8m",
-            "act": "1",
-            "clip": "15",
-            "cost": "800",
-            "anchor": "escopeta-autoflec",
-            "description": "Una escopeta que dispara balas de flechette para causar daños en áreas amplias.",
-            "clip_cost": "N/A",
-            "hide_modifier": "N/A"
-          },
-          {
-            "name": "SMG, canal de 9 mm",
-            "skill": "Mod-SMG",
-            "skill_url": "/skills/modern-ranged-weapons/smg/",
-            "acc": "+1",
-            "range": "50/100/250",
-            "damage": "d4+1w/d6+1w/d4m",
-            "act": "1",
-            "clip": "30",
-            "cost": "750",
-            "anchor": "carga-smg-9mm",
-            "description": "Una metralleta disparaba balas cargadas de 9 mm.",
-            "clip_cost": "N/A",
-            "hide_modifier": "N/A"
-          }
-        ]
-      },
-      {
-        "name": "PL 7: Era de la gravedad",
-        "items": [
-          {
-            "name": "Pistola, sabot de 15 mm",
-            "skill": "pistola mod",
-            "skill_url": "/skills/modern-ranged-weapons/pistol/",
-            "acc": "-1",
-            "range": "80/200/500",
-            "damage": "2d4w/2d4+1w/d4+3m",
-            "act": "1",
-            "clip": "6",
-            "cost": "900",
-            "anchor": "pistola-15mm-sabot",
-            "description": "Una pistola pesada que dispara balas de sabot perforantes.",
-            "clip_cost": "N/A",
-            "hide_modifier": "N/A"
-          },
-          {
-            "name": "Pistola, láser",
-            "skill": "pistola mod",
-            "skill_url": "/skills/modern-ranged-weapons/pistol/",
-            "acc": "-1",
-            "range": "50/100/250",
-            "damage": "d4+1w/d6+1w/d4m",
-            "act": "1",
-            "clip": "20",
-            "cost": "600",
-            "anchor": "pistola láser",
-            "description": "Una pistola que dispara un rayo de luz enfocado.",
-            "clip_cost": "N/A",
-            "hide_modifier": "N/A"
-          },
-          {
-            "name": "Pistola, masa",
-            "skill": "pistola mod",
-            "skill_url": "/skills/modern-ranged-weapons/pistol/",
-            "acc": "+1",
-            "range": "20/80/200",
-            "damage": "d6w/d6+2w/d8m",
-            "act": "1",
-            "clip": "10",
-            "cost": "800",
-            "anchor": "masa de pistola",
-            "description": "Una pistola que utiliza campos de gravedad para acelerar proyectiles.",
-            "clip_cost": "N/A",
-            "hide_modifier": "N/A"
-          },
-          {
-            "name": "Pistola, tartamudeo",
-            "skill": "pistola mod",
-            "skill_url": "/skills/modern-ranged-weapons/pistol/",
-            "acc": "0",
-            "range": "10/20/80",
-            "damage": "d6+2s/d8+2s/d8+4s",
-            "act": "1",
-            "clip": "10",
-            "cost": "400",
-            "anchor": "tartamudeo de pistola",
-            "description": "Una pistola no letal que altera el sistema nervioso.",
-            "clip_cost": "N/A",
-            "hide_modifier": "N/A"
-          },
-          {
-            "name": "rifle, láser",
-            "skill": "rifle mod",
-            "skill_url": "/skills/modern-ranged-weapons/rifle/",
-            "acc": "-2",
-            "range": "60/120/400",
-            "damage": "d6+1w/d6+3w/d4+1m",
-            "act": "1",
-            "clip": "12",
-            "cost": "1000",
-            "anchor": "rifle láser",
-            "description": "Un rifle que dispara un rayo láser de alta potencia.",
-            "clip_cost": "N/A",
-            "hide_modifier": "N/A"
-          },
-          {
-            "name": "fusil, masa",
-            "skill": "rifle mod",
-            "skill_url": "/skills/modern-ranged-weapons/rifle/",
-            "acc": "0",
-            "range": "20/60/120",
-            "damage": "d8w/d8+1w/d6+1m",
-            "act": "1",
-            "clip": "8",
-            "cost": "1300",
-            "anchor": "masa de rifle",
-            "description": "Un rifle que utiliza campos de gravedad para acelerar proyectiles.",
-            "clip_cost": "N/A",
-            "hide_modifier": "N/A"
-          },
-          {
-            "name": "Rifle, cuántico",
-            "skill": "rifle mod",
-            "skill_url": "/skills/modern-ranged-weapons/rifle/",
-            "acc": "-1",
-            "range": "40/200/500",
-            "damage": "d4+3w/d6+4w/d8+1m",
-            "act": "1",
-            "clip": "15",
-            "cost": "5000",
-            "anchor": "rifle-cuántico",
-            "description": "Un rifle que manipula estados cuánticos para causar daño.",
-            "clip_cost": "N/A",
-            "hide_modifier": "N/A"
-          },
-          {
-            "name": "rifle, render",
-            "skill": "rifle mod",
-            "skill_url": "/skills/modern-ranged-weapons/rifle/",
-            "acc": "0",
-            "range": "20/40/80",
-            "damage": "d6+1s/d6+1w/d4+1m",
-            "act": "1",
-            "clip": "8",
-            "cost": "1500",
-            "anchor": "renderizado de rifle",
-            "description": "Un rifle que dispara proyectiles que atraviesan la armadura.",
-            "clip_cost": "N/A",
-            "hide_modifier": "N/A"
-          },
-          {
-            "name": "SMG, láser",
-            "skill": "Mod-SMG",
-            "skill_url": "/skills/modern-ranged-weapons/smg/",
-            "acc": "-1",
-            "range": "20/40/80",
-            "damage": "d6w/d6+2w/d4m",
-            "act": "1",
-            "clip": "40",
-            "cost": "800",
-            "anchor": "smg-laser",
-            "description": "Un arma láser de fuego rápido.",
-            "clip_cost": "N/A",
-            "hide_modifier": "N/A"
-          },
-          {
-            "name": "SMG, tartamudeo",
-            "skill": "Mod-SMG",
-            "skill_url": "/skills/modern-ranged-weapons/smg/",
-            "acc": "+1",
-            "range": "10/20/60",
-            "damage": "d6+2s/d8+2s/d8+4s",
-            "act": "1",
-            "clip": "20",
-            "cost": "700",
-            "anchor": "smg-tartamudeo",
-            "description": "Un arma no letal de fuego rápido.",
-            "clip_cost": "N/A",
-            "hide_modifier": "N/A"
-          }
-        ]
-      },
-      {
-        "name": "PL 8: Era Energética",
-        "items": [
-          {
-            "name": "Automaser",
-            "skill": "Mod-SMG",
-            "skill_url": "/skills/modern-ranged-weapons/smg/",
-            "acc": "-2",
-            "range": "60/120/400",
-            "damage": "d6w/d6+2w/d4m",
-            "act": "1",
-            "clip": "20",
-            "cost": "1500",
-            "anchor": "automático",
-            "description": "Un arma máser de fuego rápido.",
-            "clip_cost": "N/A",
-            "hide_modifier": "N/A"
-          },
-          {
-            "name": "Pistola, máser hvy",
-            "skill": "pistola mod",
-            "skill_url": "/skills/modern-ranged-weapons/pistol/",
-            "acc": "-1",
-            "range": "40/200/500",
-            "damage": "d6+1w/2d4+1w/d4+1m",
-            "act": "1",
-            "clip": "30",
-            "cost": "1200",
-            "anchor": "pistola-hvy-maser",
-            "description": "Una pistola pesada que dispara un láser de microondas.",
-            "clip_cost": "N/A",
-            "hide_modifier": "N/A"
-          },
-          {
-            "name": "Pistola, máser",
-            "skill": "pistola mod",
-            "skill_url": "/skills/modern-ranged-weapons/pistol/",
-            "acc": "-1",
-            "range": "20/60/120",
-            "damage": "d6w/d6+2w/d4m",
-            "act": "1",
-            "clip": "40",
-            "cost": "900",
-            "anchor": "pistola-maser",
-            "description": "Una pistola que dispara un láser de microondas.",
-            "clip_cost": "N/A",
-            "hide_modifier": "N/A"
-          },
-          {
-            "name": "Rifle, máser hvy",
-            "skill": "rifle mod",
-            "skill_url": "/skills/modern-ranged-weapons/rifle/",
-            "acc": "-2",
-            "range": "80/200/600",
-            "damage": "d8+1w/d12w/d6+1m",
-            "act": "1",
-            "clip": "60",
-            "cost": "2500",
-            "anchor": "rifle-hvy-maser",
-            "description": "Un rifle pesado que dispara un láser de microondas.",
-            "clip_cost": "N/A",
-            "hide_modifier": "N/A"
-          },
-          {
-            "name": "fusil, máser",
-            "skill": "rifle mod",
-            "skill_url": "/skills/modern-ranged-weapons/rifle/",
-            "acc": "-2",
-            "range": "60/120/400",
-            "damage": "d6+2w/2d4+2w/d4+2m",
-            "act": "1",
-            "clip": "90",
-            "cost": "1800",
-            "anchor": "fusil-maser",
-            "description": "Un rifle que dispara un láser de microondas.",
-            "clip_cost": "N/A",
-            "hide_modifier": "N/A"
-          }
-        ]
-      }
-    ]
-  },
-  "heavy": {
-    "columns": [
-      {
-        "name": "Arma",
-        "key": "name"
-      },
-      {
-        "name": "Habilidad",
-        "key": "skill"
-      },
-      {
-        "name": "Acc",
-        "key": "acc"
-      },
-      {
-        "name": "Rango (P/M/L)",
-        "key": "range"
-      },
-      {
-        "name": "Daño (O/G/A)",
-        "key": "damage"
-      },
-      {
-        "name": "Acto.",
-        "key": "act"
-      },
-      {
-        "name": "Acortar",
-        "key": "clip"
-      },
-      {
-        "name": "Costo ($)",
-        "key": "cost"
-      },
-      {
-        "name": "Descripción",
-        "key": "description",
-        "hidden": true
-      },
-      {
-        "name": "Costo del clip",
-        "key": "clip_cost",
-        "hidden": true
-      },
-      {
-        "name": "Esconder",
-        "key": "hide_modifier",
-        "hidden": true
-      }
-    ],
-    "groups": [
-      {
-        "name": "PL 4: Era industrial",
-        "items": [
-          {
-            "name": "Echador de llama",
-            "skill": "hvy-dir",
-            "skill_url": "/skills/heavy-weapons/direct-fire/",
-            "acc": "+2",
-            "range": "10/20/40",
-            "damage": "d6w/d8w/d12w",
-            "act": "1",
-            "clip": "10",
-            "cost": "600",
-            "anchor": "echador de llama",
-            "description": "Arma que proyecta una corriente de líquido inflamable encendido.",
-            "clip_cost": "N/A",
-            "hide_modifier": "N/A"
-          },
-          {
-            "name": "Granada, fragmentación",
-            "skill": "Athl-thr",
-            "skill_url": "/skills/athletics/throw/",
-            "acc": "0",
-            "range": "Por STR",
-            "damage": "d6+2s/d4w/d4+1w",
-            "act": "1",
-            "clip": "1",
-            "cost": "75",
-            "anchor": "granada de fragmentación",
-            "description": "Granada de fragmentación diseñada para matar o herir al personal.",
-            "clip_cost": "N/A",
-            "hide_modifier": "N/A"
-          },
-          {
-            "name": "Ametralladora, .30",
-            "skill": "hvy-dir",
-            "skill_url": "/skills/heavy-weapons/direct-fire/",
-            "acc": "-1",
-            "range": "60/200/600",
-            "damage": "d6+1w/d8+1w/d6+1m",
-            "act": "1",
-            "clip": "100",
-            "cost": "1200",
-            "anchor": "ametralladora-30",
-            "description": "Un arma de fuego totalmente automática que dispara munición calibre .30.",
-            "clip_cost": "N/A",
-            "hide_modifier": "N/A"
-          },
-          {
-            "name": "Lanzacohetes",
-            "skill": "hvy-dir",
-            "skill_url": "/skills/heavy-weapons/direct-fire/",
-            "acc": "+1",
-            "range": "50/200/350",
-            "damage": "d8w/d4+1m/d6+1m",
-            "act": "2",
-            "clip": "1",
-            "cost": "1000",
-            "anchor": "lanzacohetes",
-            "description": "Un arma portátil capaz de disparar cohetes no guiados.",
-            "clip_cost": "N/A",
-            "hide_modifier": "N/A"
-          }
-        ]
-      },
-      {
-        "name": "PL 5: Era de la información",
-        "items": [
-          {
-            "name": "lanzagranadas",
-            "skill": "Hvy-ind",
-            "skill_url": "/skills/heavy-weapons/indirect-fire/",
-            "acc": "0",
-            "range": "como carga",
-            "damage": "como carga",
-            "act": "1",
-            "clip": "6",
-            "cost": "800",
-            "anchor": "lanzagranadas",
-            "description": "Un arma diseñada para disparar granadas.",
-            "clip_cost": "N/A",
-            "hide_modifier": "N/A"
-          },
-          {
-            "name": "Granada, conmoción cerebral.",
-            "skill": "Athl-thr",
-            "skill_url": "/skills/athletics/throw/",
-            "acc": "0",
-            "range": "Por STR",
-            "damage": "d6+2s/d8w/d4+1w",
-            "act": "1",
-            "clip": "1",
-            "cost": "100",
-            "anchor": "granada-conmoción cerebral",
-            "description": "Una granada que produce una poderosa onda de choque para aturdir o desorientar.",
-            "clip_cost": "N/A",
-            "hide_modifier": "N/A"
-          },
-          {
-            "name": "Granada, incendio.",
-            "skill": "Athl-thr",
-            "skill_url": "/skills/athletics/throw/",
-            "acc": "0",
-            "range": "Por STR",
-            "damage": "d4w/d4+2w/d4+3w",
-            "act": "1",
-            "clip": "1",
-            "cost": "100",
-            "anchor": "granada-incendiaria",
-            "description": "Una granada que inicia incendios y quema objetivos.",
-            "clip_cost": "N/A",
-            "hide_modifier": "N/A"
-          },
-          {
-            "name": "Granada, humo",
-            "skill": "Athl-thr",
-            "skill_url": "/skills/athletics/throw/",
-            "acc": "0",
-            "range": "Por STR",
-            "damage": "Especial",
-            "act": "1",
-            "clip": "1",
-            "cost": "50",
-            "anchor": "humo de granada",
-            "description": "Una granada que crea una nube de humo para ocultarse.",
-            "clip_cost": "N/A",
-            "hide_modifier": "N/A"
-          },
-          {
-            "name": "ametralladora hvy",
-            "skill": "hvy-dir",
-            "skill_url": "/skills/heavy-weapons/direct-fire/",
-            "acc": "-2",
-            "range": "100/400/1000",
-            "damage": "d6+1w/2d4+2w/d8m",
-            "act": "1",
-            "clip": "200",
-            "cost": "2500",
-            "anchor": "ametralladora-hvy",
-            "description": "Una ametralladora de gran calibre.",
-            "clip_cost": "N/A",
-            "hide_modifier": "N/A"
-          },
-          {
-            "name": "SAM, portátil",
-            "skill": "Hvy-ind",
-            "skill_url": "/skills/heavy-weapons/indirect-fire/",
-            "acc": "0",
-            "range": "1000/2000/4000",
-            "damage": "d4w/d8w/d8+4w",
-            "act": "2",
-            "clip": "1",
-            "cost": "5000",
-            "anchor": "sam-de mano",
-            "description": "Un lanzador portátil de misiles tierra-aire.",
-            "clip_cost": "N/A",
-            "hide_modifier": "N/A"
-          }
-        ]
-      },
-      {
-        "name": "PL 6: Era de la fusión",
-        "items": [
-          {
-            "name": "lanzador gallo",
-            "skill": "Hvy-ind",
-            "skill_url": "/skills/heavy-weapons/indirect-fire/",
-            "acc": "0",
-            "range": "100/800/4000",
-            "damage": "como carga",
-            "act": "1",
-            "clip": "1",
-            "cost": "2000",
-            "anchor": "lanzador-gallo",
-            "description": "Un lanzador de misiles compacto.",
-            "clip_cost": "N/A",
-            "hide_modifier": "N/A"
-          },
-          {
-            "name": "Gallo, antiaéreo",
-            "skill": "Hvy-ind",
-            "skill_url": "/skills/heavy-weapons/indirect-fire/",
-            "acc": "0",
-            "range": "Como lanzador",
-            "damage": "d4w/d4+2w/d4+3w",
-            "act": "1",
-            "clip": "1",
-            "cost": "1000",
-            "anchor": "antiaéreo gallo",
-            "description": "Un misil gallo diseñado para apuntar a aviones.",
-            "clip_cost": "N/A",
-            "hide_modifier": "N/A"
-          },
-          {
-            "name": "Gallo, antiper.",
-            "skill": "Hvy-ind",
-            "skill_url": "/skills/heavy-weapons/indirect-fire/",
-            "acc": "0",
-            "range": "Como lanzador",
-            "damage": "d6w/d8+2w/d8+2w",
-            "act": "1",
-            "clip": "1",
-            "cost": "800",
-            "anchor": "antiper gallo",
-            "description": "Un misil gallo diseñado para apuntar al personal.",
-            "clip_cost": "N/A",
-            "hide_modifier": "N/A"
-          },
-          {
-            "name": "Bantam, antiveh.",
-            "skill": "Hvy-ind",
-            "skill_url": "/skills/heavy-weapons/indirect-fire/",
-            "acc": "0",
-            "range": "Como lanzador",
-            "damage": "d4+2w/d4+4w/d4+1m",
-            "act": "1",
-            "clip": "1",
-            "cost": "1200",
-            "anchor": "bantam-antiveh",
-            "description": "Un misil gallo diseñado para apuntar a vehículos.",
-            "clip_cost": "N/A",
-            "hide_modifier": "N/A"
-          },
-          {
-            "name": "granada, plasma",
-            "skill": "Athl-thr",
-            "skill_url": "/skills/athletics/throw/",
-            "acc": "0",
-            "range": "Por STR",
-            "damage": "d4+2w/d8+2w/d4m",
-            "act": "1",
-            "clip": "1",
-            "cost": "150",
-            "anchor": "granada-plasma",
-            "description": "Una granada que libera una ráfaga de plasma sobrecalentado.",
-            "clip_cost": "N/A",
-            "hide_modifier": "N/A"
-          },
-          {
-            "name": "Granada, aturdimiento",
-            "skill": "Athl-thr",
-            "skill_url": "/skills/athletics/throw/",
-            "acc": "0",
-            "range": "Por STR",
-            "damage": "d6s/d8s/d8+2s",
-            "act": "1",
-            "clip": "1",
-            "cost": "75",
-            "anchor": "granada paralizante",
-            "description": "Una granada diseñada para incapacitar objetivos sin matarlos.",
-            "clip_cost": "N/A",
-            "hide_modifier": "N/A"
-          },
-          {
-            "name": "Hvy ametralladora, ch",
-            "skill": "hvy-dir",
-            "skill_url": "/skills/heavy-weapons/direct-fire/",
-            "acc": "-2",
-            "range": "200/600/1200",
-            "damage": "d8w/2d6w/2d4m",
-            "act": "1",
-            "clip": "100",
-            "cost": "3500",
-            "anchor": "hvy-ametralladora-ch",
-            "description": "Una ametralladora pesada que dispara munición cargada.",
-            "clip_cost": "N/A",
-            "hide_modifier": "N/A"
-          },
-          {
-            "name": "Pistola de riel",
-            "skill": "hvy-dir",
-            "skill_url": "/skills/heavy-weapons/direct-fire/",
-            "acc": "-1",
-            "range": "150/500/1500",
-            "damage": "d6w/d6+2w/d8m",
-            "act": "1",
-            "clip": "20",
-            "cost": "4000",
-            "anchor": "cañón de riel",
-            "description": "Un arma que utiliza rieles electromagnéticos para acelerar proyectiles a altas velocidades.",
-            "clip_cost": "N/A",
-            "hide_modifier": "N/A"
-          }
-        ]
-      },
-      {
-        "name": "PL 7: Era de la gravedad",
-        "items": [
-          {
-            "name": "pistola de arco",
-            "skill": "hvy-dir",
-            "skill_url": "/skills/heavy-weapons/direct-fire/",
-            "acc": "+1",
-            "range": "20/40/100",
-            "damage": "d8+1s/d8w/d6+3w",
-            "act": "1",
-            "clip": "10",
-            "cost": "2000",
-            "anchor": "pistola de arco",
-            "description": "Un arma que dispara un rayo de electricidad.",
-            "clip_cost": "N/A",
-            "hide_modifier": "N/A"
-          },
-          {
-            "name": "Cañón, tartamudeo",
-            "skill": "hvy-dir",
-            "skill_url": "/skills/heavy-weapons/direct-fire/",
-            "acc": "0",
-            "range": "20/40/80",
-            "damage": "d6+2s/d8+3s/2d6+3s",
-            "act": "1",
-            "clip": "20",
-            "cost": "1500",
-            "anchor": "tartamudeo de cañón",
-            "description": "Un arma pesada no letal que altera el sistema nervioso.",
-            "clip_cost": "N/A",
-            "hide_modifier": "N/A"
-          },
-          {
-            "name": "Cañón, zueco de 25 mm",
-            "skill": "hvy-dir",
-            "skill_url": "/skills/heavy-weapons/direct-fire/",
-            "acc": "-2",
-            "range": "100/200/2000",
-            "damage": "d8w/d4+1m/d6+2m",
-            "act": "2",
-            "clip": "20",
-            "cost": "6000",
-            "anchor": "canon-25mm-sabot",
-            "description": "Un cañón pesado que dispara balas de sabot perforantes de 25 mm.",
-            "clip_cost": "N/A",
-            "hide_modifier": "N/A"
-          },
-          {
-            "name": "Granada, pulso",
-            "skill": "Athl-thr",
-            "skill_url": "/skills/athletics/throw/",
-            "acc": "0",
-            "range": "Por STR",
-            "damage": "d4+2s/d6+2s/d8+2s",
-            "act": "1",
-            "clip": "1",
-            "cost": "100",
-            "anchor": "pulso de granada",
-            "description": "Una granada que emite un pulso cinético.",
-            "clip_cost": "N/A",
-            "hide_modifier": "N/A"
-          },
-          {
-            "name": "Granada, trazador",
-            "skill": "Athl-thr",
-            "skill_url": "/skills/athletics/throw/",
-            "acc": "0",
-            "range": "Por STR",
-            "damage": "d4+2w/d6+2w/d4+2m",
-            "act": "1",
-            "clip": "1",
-            "cost": "250",
-            "anchor": "rastreador de granadas",
-            "description": "Una granada que marca objetivos para su seguimiento.",
-            "clip_cost": "N/A",
-            "hide_modifier": "N/A"
-          },
-          {
-            "name": "pistola de plasma",
-            "skill": "hvy-dir",
-            "skill_url": "/skills/heavy-weapons/direct-fire/",
-            "acc": "0",
-            "range": "40/80/200",
-            "damage": "d8w/d8+3w/d12+3w",
-            "act": "1",
-            "clip": "10",
-            "cost": "3000",
-            "anchor": "pistola de plasma",
-            "description": "Un arma pesada que dispara rayos de plasma.",
-            "clip_cost": "N/A",
-            "hide_modifier": "N/A"
-          },
-          {
-            "name": "minicuántico",
-            "skill": "hvy-dir",
-            "skill_url": "/skills/heavy-weapons/direct-fire/",
-            "acc": "0",
-            "range": "100/250/800",
-            "damage": "d8+1w/d8+3w/d6m",
-            "act": "1",
-            "clip": "50",
-            "cost": "15000",
-            "anchor": "mini cuántico",
-            "description": "Un arma cuántica miniaturizada.",
-            "clip_cost": "N/A",
-            "hide_modifier": "N/A"
-          }
-        ]
-      },
-      {
-        "name": "PL 8: Era Energética",
-        "items": [
-          {
-            "name": "Gallo, carga de estrellas",
-            "skill": "Hvy-ind",
-            "skill_url": "/skills/heavy-weapons/indirect-fire/",
-            "acc": "0",
-            "range": "Como lanzador",
-            "damage": "d8+2w/d4+1m/d6+1m",
-            "act": "1",
-            "clip": "1",
-            "cost": "2500",
-            "anchor": "carga-de-estrellas-galleta",
-            "description": "Un misil gallo con una ojiva de alto rendimiento.",
-            "clip_cost": "N/A",
-            "hide_modifier": "N/A"
-          },
-          {
-            "name": "Cañón, máser",
-            "skill": "hvy-dir",
-            "skill_url": "/skills/heavy-weapons/direct-fire/",
-            "acc": "-1",
-            "range": "80/200/600",
-            "damage": "d8w/d4+1m/d8+2m",
-            "act": "2",
-            "clip": "20",
-            "cost": "8000",
-            "anchor": "máser de cañón",
-            "description": "Un cañón máser pesado.",
-            "clip_cost": "N/A",
-            "hide_modifier": "N/A"
-          },
-          {
-            "name": "granada, masa",
-            "skill": "Athl-thr",
-            "skill_url": "/skills/athletics/throw/",
-            "acc": "0",
-            "range": "Por STR",
-            "damage": "d6+2s/d6+2w/d8m",
-            "act": "1",
-            "clip": "1",
-            "cost": "200",
-            "anchor": "masa de granada",
-            "description": "Una granada que utiliza campos de gravedad para causar daño.",
-            "clip_cost": "N/A",
-            "hide_modifier": "N/A"
-          },
-          {
-            "name": "lanzador masivo",
-            "skill": "Hvy-ind",
-            "skill_url": "/skills/heavy-weapons/indirect-fire/",
-            "acc": "0",
-            "range": "20/300/1000",
-            "damage": "d6+1w/d6+3w/d4+1m",
-            "act": "1",
-            "clip": "4",
-            "cost": "3000",
-            "anchor": "lanzador masivo",
-            "description": "Un lanzador que dispara proyectiles de masa.",
-            "clip_cost": "N/A",
-            "hide_modifier": "N/A"
-          }
-        ]
-      }
-    ]
-  }
+    }
 }
