@@ -1557,6 +1557,102 @@
                         "avail": "Com",
                         "cost": "650",
                         "description": "Su mayor ventaja es el sigilo y mutismo, sin ráfagas de luz ni retroceso ruidoso que revele la posición, haciéndolo perfecto y letal en lo salvaje de la jungla espesa. Cada reabastecimiento requiere 1 acción. Así mismo se requiere total control de ambos brazos, inhabilitando su disparo tendido en suelo por completo. (Carga: Flecha punta navaja)"
+                    },
+                    {
+                        "name": "Ballesta Commando 3000",
+                        "skill": "Ranged-bow",
+                        "acc": "0",
+                        "md": "F",
+                        "range": "60/120/300",
+                        "type": "HI/O",
+                        "damage": "d6+1w/d8+1w/d6m",
+                        "act": "2",
+                        "clip": "1 dispa.",
+                        "mass": "2",
+                        "hide": "-",
+                        "avail": "Con",
+                        "cost": "950",
+                        "description": "Las ballestas modernas son tan letales como un rifle perforante. Al igual que el arco antiguo es mortal y oscura para misiones de sigilo. Lo negativo es que cada recarga gasta un turno para preparar y enroscar el virote a diferencia de un cargador. Por otro lado, su corto perfil la hace perfecta para disparo en posición tendido y oculto. (Carga: Virote punta navaja)"
+                    },
+                    {
+                        "name": "Pistola de Dardos Cobra F77",
+                        "skill": "Ranged-pistol",
+                        "acc": "0",
+                        "md": "F",
+                        "range": "4/8/16",
+                        "type": "LI/O",
+                        "damage": "d4-1w/d4w/d4+1w",
+                        "act": "2",
+                        "clip": "6 dispa.",
+                        "mass": "1.5",
+                        "hide": "+2",
+                        "avail": "Com",
+                        "cost": "450",
+                        "description": "La pistola de dardos cuenta con balas neumáticas ahuecadas. El modelo favorito es su versión de bolsillo modificada (Ocultación +4, coste $300). Aunque hace un gran daño de por sí, se usa para dosificar veneno. Un dardo común cuenta con neurotoxina (+1 paso al penalizador de Fortaleza, efecto d4 asaltos) o paralizante (+2 penalizador, efecto en d4-1 asaltos). (Carga: Dardo envenenado)"
+                    },
+                    {
+                        "name": "Pistola Taser Blue Bolt",
+                        "skill": "Ranged-rifle",
+                        "acc": "-1",
+                        "md": "F",
+                        "range": "20/40/100",
+                        "type": "En/G",
+                        "damage": "d8+1s/d8w/d6+3w",
+                        "act": "2",
+                        "clip": "12 dispa.",
+                        "mass": "10",
+                        "hide": "-",
+                        "avail": "Mil",
+                        "cost": "2750",
+                        "description": "Tanto las pistolas de arco como los lanzallamas son de alto peligro de cerca. El Blue Bolt tiene una curiosidad inusual y es un modo taser inalámbrico. Una vez activado un láser mide la densidad protectora del objetivo y calcula un aturdimiento. En este modo impacta d8+1s/2d6s/2d6+2s en niveles de éxito. Cambiar de letal/no letal gasta una acción. (Carga: Arco eléctrico)"
+                    },
+                    {
+                        "name": "Lanzallamas de Mano Demon 9",
+                        "skill": "Ranged-SMG",
+                        "acc": "-1",
+                        "md": "F/B/A",
+                        "range": "6/12/24",
+                        "type": "En/O",
+                        "damage": "d6w/d6+2w/d8+3w",
+                        "act": "3",
+                        "clip": "10 dispa./3 ráfag.",
+                        "mass": "4.5",
+                        "hide": "-1",
+                        "avail": "Con",
+                        "cost": "1200",
+                        "description": "Los herederos del venerable lanzallamas, disparan un rocío de aerosol de llamas y peróxido autoxidante que se aferra al objetivo ampliamente para no fallar y freírlo. Al mantener el gatillo se abanica el objetivo asimilando una ráfaga similar a automático pero su cargador se agota de inmediato en apenas un par de acciones antes de la sequía. (Carga: Chorro incendiario)"
+                    },
+                    {
+                        "name": "Rifle Render Z-LOK",
+                        "skill": "Ranged-rifle",
+                        "acc": "0",
+                        "md": "F",
+                        "range": "50/100/250",
+                        "type": "En/O",
+                        "damage": "d6+1s/d6+1w/d4+1m",
+                        "act": "3",
+                        "clip": "8 dispa.",
+                        "mass": "4",
+                        "hide": "-",
+                        "avail": "Res",
+                        "cost": "2000",
+                        "description": "El rifle Z-LOK proyecta un haz de gravitón y estragos estructurales abismales. A diferencia de otros fusiles de gravedad que pueden generar mucho dolor, su gran ventaja es destrozar la armadura y reducirla a su valor de absorción mínimo. Por ejemplo un blindaje resta d6 impactos, pero ante él solo frenaría estricto e inmodificable 1 punto. (Carga: Rayo gravitón)"
+                    },
+                    {
+                        "name": "Granada Inteligente Bloodhound F3",
+                        "skill": "Athletics-throw",
+                        "acc": "-1",
+                        "md": "F",
+                        "range": "por FUE o 30/60/120",
+                        "type": "por cabeza",
+                        "damage": "por cabeza",
+                        "act": "2",
+                        "clip": "n/a",
+                        "mass": "0.5",
+                        "hide": "+3",
+                        "avail": "Mil",
+                        "cost": "300",
+                        "description": "El sistema Bloodhound consta de una caparazón acoplable que sirve de cabeza motora inteligente sobre otras granadas ordinarias. El tirador gasta una acción asegurando una imagen objetivo, y la lanza en la siguiente con un rango enorme de guiado. De usarla sin interfaz o sin espera asiste un rango por Fuerza normal como el resto de los explosivos. (Carga: Granadas varias)"
                     }
                 ]
             },
@@ -2149,6 +2245,230 @@
                         "avail": "Con",
                         "cost": "2500",
                         "description": "Herramienta definitiva de control de masas por repulsión. Afectando en un radio de 3 metros, sus ráfagas rebotan causando dolor secundario a cualquiera a merced. Los alcanzados en impacto de grado Bueno (d8+3s) salpicarán un impacto indirecto grado Ordinario de (d6+2s) a todos a 3m. El caso inferior no produce daño indirecto del todo. (Carga: Aire comprimido)"
+                    },
+                    {
+                        "name": "Lanzallamas Pesado Dragon 3",
+                        "skill": "Heavy-direct fire",
+                        "acc": "-1",
+                        "md": "F/B/A",
+                        "range": "8/16/40",
+                        "type": "En/G",
+                        "damage": "d6+1w/d8+2w/2d6+1w",
+                        "act": "2",
+                        "clip": "15 dispa./5 ráfag.",
+                        "mass": "8.5",
+                        "hide": "-",
+                        "avail": "Mil",
+                        "cost": "2400",
+                        "description": "La versión enorme y brutal de un flamer. Su pesado tanque extra de mochila le otorga un volumen abismal, que puede ignorar chalecos ignífugos o armaduras personales inmolando a sus presas. Aunque no dispone del rango kilométrico de otras armas de su talla, la destrucción y purga en los pasillos de un crucero se vuelve un puro terror absoluto. (Carga: Chorro incendiario)"
+                    },
+                    {
+                        "name": "Cañón de Plasma D16",
+                        "skill": "Heavy-direct fire",
+                        "acc": "0",
+                        "md": "F",
+                        "range": "50/100/400",
+                        "type": "En/G",
+                        "damage": "d8w/d8+2w/d8+4w",
+                        "act": "2",
+                        "clip": "8 dispa.",
+                        "mass": "6",
+                        "hide": "-",
+                        "avail": "Mil",
+                        "cost": "12000",
+                        "description": "Armamento de impacto estelar de la Liga armada de Orion, es espectacular. Expande su gran descarga unos 2 metros de asimilación circular. Quien esté dentro de esa zona recibe una herida que pendería ser el grado anterior al blanco. Si acierta a grado Increíble (d12+3w), su blanco lo asume per los compañeros sufren un ataque derivado grado Bueno (d8+3w). (Carga: Plasma)"
+                    },
+                    {
+                        "name": "Minigun Cuántica HAK-59",
+                        "skill": "Heavy-direct fire",
+                        "acc": "0",
+                        "md": "F/B/A",
+                        "range": "40/80/200",
+                        "type": "En/O",
+                        "damage": "d8+1w/d8+3w/d6m",
+                        "act": "4",
+                        "clip": "90 dispa./30 ráfag.",
+                        "mass": "10",
+                        "hide": "-",
+                        "avail": "Res",
+                        "cost": "15000",
+                        "description": "Conocida como arma protónica o de ráfaga cuántica, produce chorros láser pesados de subpartículas que desintegran un frente. Carece de la perforación de blindajes densos de otros rifles, pero su ratio de tiro salvaje lo soluciona escupiendo fuego hasta licuar formaciones tropas de élite en segundos y obligar al asedio Nariac a huir de contención. (Carga: Haz de partículas)"
+                    },
+                    {
+                        "name": "Lanzagranadas ZK5",
+                        "skill": "Heavy-indirect fire",
+                        "acc": "-1",
+                        "md": "F",
+                        "range": "40/240/480",
+                        "type": "por cabeza",
+                        "damage": "por cabeza",
+                        "act": "3",
+                        "clip": "10 dispa.",
+                        "mass": "2",
+                        "hide": "-2",
+                        "avail": "Mil",
+                        "cost": "1500",
+                        "description": "El ZK5 (o cariñosamente \"Zeke 5\" por los Concord) es el pináculo de la lluvia de mortero portátil. Su cargador tambor tiene 10 depósitos de 30mm muy letales. Estabiliza ojivas finas de desaceleración lineal con un percutor base de disparo logrando unas arcas de trayectoria altísimas y lejanas mucho mejores a los lanzadores antiguos u obsoletos. (Carga: Granadas varias)"
+                    },
+                    {
+                        "name": "Lanzacohetes Bantam 5",
+                        "skill": "Heavy-indirect fire",
+                        "acc": "-2",
+                        "md": "F",
+                        "range": "40/400/2000",
+                        "type": "por cabeza",
+                        "damage": "por cabeza",
+                        "act": "2",
+                        "clip": "4 dispa.",
+                        "mass": "7",
+                        "hide": "-",
+                        "avail": "Mil",
+                        "cost": "4000",
+                        "description": "El cohete lanza misiles Bantam 5 portátil es un tubo hueco pero con un inmenso designador de rastreo lateral y una mirilla inteligente guiada. El artillero designa su presa acorralándola a la condena, apuntando para rodear esquinas, colinas y saltar barreras. Incluso un observador remoto pasará láser de fijación a la ojiva para darle un trazo limpio. (Carga: Misiles varios)"
+                    },
+                    {
+                        "name": "Cohete Antiaéreo",
+                        "skill": "n/a",
+                        "acc": "n/a",
+                        "md": "n/a",
+                        "range": "por lanzador",
+                        "type": "HI/G",
+                        "damage": "d4w/d4+2w/d4m",
+                        "act": "-",
+                        "clip": "n/a",
+                        "mass": "3",
+                        "hide": "-",
+                        "avail": "Res",
+                        "cost": "1000",
+                        "description": "El cohete ligero cuenta con sistema infrarrojo guiado y una cabeza de fragmentación para tumbar aeronaves enemigas. (Carga: Varilla dentada) (Área de efecto: 4m/8m/12m)"
+                    },
+                    {
+                        "name": "Cohete Antipersonal",
+                        "skill": "n/a",
+                        "acc": "n/a",
+                        "md": "n/a",
+                        "range": "por lanzador",
+                        "type": "En/O",
+                        "damage": "d6w/d6+2w/d8+2w",
+                        "act": "-",
+                        "clip": "n/a",
+                        "mass": "3",
+                        "hide": "-",
+                        "avail": "Mil",
+                        "cost": "500",
+                        "description": "Diseñado para aniquilar gente sin afectar al valioso equipo, asolando una mortífera onda de radiación a los que estén dentro de su detonación. Al igual que el antiaéreo, inflige en área. (Carga: Radiación de neutrones) (Área de efecto: 4m/8m/12m)"
+                    },
+                    {
+                        "name": "Cohete Antivehículos",
+                        "skill": "n/a",
+                        "acc": "n/a",
+                        "md": "n/a",
+                        "range": "por lanzador",
+                        "type": "HI/G",
+                        "damage": "d4+2w/d4+4w/d4+1m",
+                        "act": "-",
+                        "clip": "n/a",
+                        "mass": "3",
+                        "hide": "-",
+                        "avail": "Mil",
+                        "cost": "1000",
+                        "description": "Libera un disparador perforante sabot en fase capaz de cruzar las armaduras acorazadas de vehículos blindados o servos de infantería pesada con gran potencia. (Carga: Penetrador cinético) (Área de efecto: contacto/2m/4m)"
+                    },
+                    {
+                        "name": "Cohete CHE",
+                        "skill": "n/a",
+                        "acc": "n/a",
+                        "md": "n/a",
+                        "range": "por lanzador",
+                        "type": "En/O o En/G",
+                        "damage": "d8-2w/d8w/d4m",
+                        "act": "-",
+                        "clip": "n/a",
+                        "mass": "3",
+                        "hide": "-",
+                        "avail": "Mil",
+                        "cost": "250",
+                        "description": "Empacado con Detonex. De los más populares y destructivos explosivos convencionales del cosmos. Su poder ardiente asolará a todo el que se le cruce a 6 metros redondos. (Carga: Ojiva de detonex) (Área de efecto: 6m/10m/16m)"
+                    },
+                    {
+                        "name": "Granada AP",
+                        "skill": "Athl-throw",
+                        "acc": "0",
+                        "md": "F",
+                        "range": "Por FUE",
+                        "type": "En/G",
+                        "damage": "d6-1w/d4m/d4+2m",
+                        "act": "2",
+                        "clip": "n/a",
+                        "mass": "0.5",
+                        "hide": "+2",
+                        "avail": "Mil",
+                        "cost": "400",
+                        "description": "Su espoleta de radar detecta dónde ubica a la víctima y asesta una carga concentrada sobre ella, ideada para destrozar armadura o armazones de vehículo. (Carga: Carga focalizada) (Área de efecto: contacto/1m/2m)"
+                    },
+                    {
+                        "name": "Granada de Concusión",
+                        "skill": "Athl-throw",
+                        "acc": "0",
+                        "md": "F",
+                        "range": "Por FUE",
+                        "type": "LI/O",
+                        "damage": "d6+3s/d6w/d6+2w",
+                        "act": "2",
+                        "clip": "n/a",
+                        "mass": "0.5",
+                        "hide": "+2",
+                        "avail": "Mil",
+                        "cost": "150",
+                        "description": "Este cubo de bloque explosivo detona envuelto de un estuche no esparcible incapacitando e hiriendo al personal por impacto cinético sónico, limitando la limpieza de cadáveres letales. (Carga: Explosivo sin vaina) (Área de efecto: 2m/4m/6m)"
+                    },
+                    {
+                        "name": "Granada de Frag",
+                        "skill": "Athl-throw",
+                        "acc": "0",
+                        "md": "F",
+                        "range": "Por FUE",
+                        "type": "HI/G",
+                        "damage": "d8w/d8+1w/d4+1m",
+                        "act": "2",
+                        "clip": "n/a",
+                        "mass": "0.5",
+                        "hide": "+2",
+                        "avail": "Mil",
+                        "cost": "100",
+                        "description": "Peligrosa metralla punzante despedida desde escombros giratorios a gran distancia. Los protegidos tras una cobertura contundente restan el daño una categoría para simular que se tumban frente al daño y caen bajo suelo. (Carga: Metralla) (Área de efecto: 2m/6m/10m)"
+                    },
+                    {
+                        "name": "Granada de Gas",
+                        "skill": "Athl-throw",
+                        "acc": "0",
+                        "md": "F",
+                        "range": "Por FUE",
+                        "type": "II/O",
+                        "damage": "d4s/d4+2s/d4w",
+                        "act": "2",
+                        "clip": "n/a",
+                        "mass": "0.5",
+                        "hide": "+2",
+                        "avail": "Mil",
+                        "cost": "300",
+                        "description": "Estalla creando una nube a presión de gas paralizante hemotóxico a 8 metros. La toxina demora de media unos d4+1 asaltos en actuar, y no existe escudo a la Fortaleza de quien la respira. (Carga: Gas venenoso) (Área de efecto: contacto/2m/4m)"
+                    },
+                    {
+                        "name": "Granada de Pulso",
+                        "skill": "Athl-throw",
+                        "acc": "0",
+                        "md": "F",
+                        "range": "Por FUE",
+                        "type": "En/G",
+                        "damage": "d4+2s/d6+2s/d8+2s",
+                        "act": "2",
+                        "clip": "n/a",
+                        "mass": "0.5",
+                        "hide": "+2",
+                        "avail": "Mil",
+                        "cost": "350",
+                        "description": "La granada irradia impulsos magnéticos resecando e interfiriendo en el sistema nervioso humano y fundiendo material tecnológico. Máximo daño contra implantes cibernéticos, armas de energía y servomotores acoplados o armadura robótica (Impacto ordinario causa 6 de aturdimiento). (Carga: Pulso Electromagnético) (Área: 2m/4m/10m)"
                     }
                 ]
             },
@@ -2214,6 +2534,154 @@
                         "description": "Un lanzador que dispara proyectiles de masa.",
                         "clip_cost": "N/A",
                         "hide_modifier": "N/A"
+                    }
+                ]
+            }
+        ]
+    },
+    "ammunition": {
+        "columns": [
+            {
+                "name": "Objeto",
+                "key": "name"
+            },
+            {
+                "name": "Plataforma",
+                "key": "platform"
+            },
+            {
+                "name": "Carga",
+                "key": "payload"
+            },
+            {
+                "name": "Coste ($)",
+                "key": "cost"
+            },
+            {
+                "name": "Description",
+                "key": "description",
+                "hidden": true
+            }
+        ],
+        "groups": [
+            {
+                "name": "PL 7: Era de la gravedad",
+                "items": [
+                    {
+                        "name": "Muni. Perforante Trueno Oscuro",
+                        "platform": "Armas de asalto / casquillo",
+                        "payload": "Penetrador Sabot",
+                        "cost": "Cargador x2",
+                        "description": "El clásico penetrador de asalto de teflón para rajar armaduras. Cualquier blanco atravesado ve su coraza reducida a la mitad (Redondeando a su alza más próxima). Por poner ejemplo: Un blindaje medio detiene unos de bloque d6+1 impactos. Si sacamos 4 al d6 daría 5 contra municiones normales, que gracias al Trueno queda reducida a salvacargas de 3 en blindajes. Si el atacante que acerta portaba trueno oscuro el daño recibido al final resta 1 de golpe, minimizando su daño inicial pero destrozando gran armadura de una bala si el sujeto era blindado puro de pie a cabeza."
+                    },
+                    {
+                        "name": "Muni. Explosiva Potente MightyMite",
+                        "platform": "Armas de asalto u sabot",
+                        "payload": "Ojiva Destructiva",
+                        "cost": "Cargador x4",
+                        "description": "Forrado de esquirlas Detonex con explosión al chasquear impacto. El cuerpo abre una herida brutal de esquirla sangrante inminente de metrallas punzantes incrustadas en el riego. Si se perforó armadura el impacto sufre unos d6-3 de letalidad y herida extra que asimilan en carne ajena sin que la armadura lo proteja el añadido destructivo que se diseminará en sangre."
+                    },
+                    {
+                        "name": "Muni. Estabilizada AA",
+                        "platform": "Armas de asalto u sabot",
+                        "payload": "Sabot Estabilizado",
+                        "cost": "Cargador x3",
+                        "description": "No traza círculos ni derrape circular como cualquier proyectil clásico; se alinea asemejando a una flecha minúscula abriendo alas y engranaje estabilizante desde el interior. Precisión enorme y sublime restando penalización mediana ni larga a un único paso al que dispare."
+                    },
+                    {
+                        "name": "Munición de Flecha C5 Shredder",
+                        "platform": "Armas de asalto",
+                        "payload": "Paquete de Dardos T",
+                        "cost": "Cargador x2",
+                        "description": "Convertirá el arma que usas al de flechas de lluvia. Talla las variables limitándote de Rango corto, a de 6/12/30 y un daño fijo de d4w/d6w/d4m pero DUPLICA asertos e impactos cercanos. La flecha C5 es perfecta para pasillos navales estrechos y melé; mientras que las tiradas largas mermarán tu daño a la mitad ante esparcimiento."
+                    },
+                    {
+                        "name": "Bala de Gel A-Mace",
+                        "platform": "Armas asalto o sabot",
+                        "payload": "Cápsula blanda de gel",
+                        "cost": "Cargador x2",
+                        "description": "Gel de control letal civil. Asimila cualquier herida y absorbe su sangrado o muerte, pasando todos los restos de letal daño a doble impacto sumado aturdimiento de anestesia durmiente. El arma con Gel A-Mace pierde algo de aerodinámica e incuba maldad con retraso penalizador para impactables largos."
+                    },
+                    {
+                        "name": "Muni. Guiada X",
+                        "platform": "Armas asalto o sabot",
+                        "payload": "Casquillo Láser Guiable",
+                        "cost": "Cargador x5",
+                        "description": "Balas guiadas de letal persecución unidas al sistema inteligente del sensor visual de miras X o rastreo manual. La Talon incorpora en puntera corrección telemétrica si ha fallado buscando su fin y redirigiéndose. Sin un guiado no resultará letal frente a nada y no funciona."
+                    },
+                    {
+                        "name": "Casquillos Infrarrojo Snake Eyes",
+                        "platform": "Armas asalto o sabot",
+                        "payload": "Acorralador Infrarrojo",
+                        "cost": "Cargador x4",
+                        "description": "Caza una presa buscándole el calor del motor de vehículos o de armadura del cuerpo orgánico. Da penalizador salvavidas -2 extra en mediana ni tan distante e invierte restando en rango extremo a un bono si se usa y un solo -1 lejano. Sus fallos no se dispersan ni erran: rastrea un segundo radar ajeno saltando de nuevo al compañero, o si atacas colisiona a otro calor cercano del que esté en esa sala. No distingue amigos de terroristas, pero si la segunda vez su tirada es fallo... el ojo de la serpiente errará ya del todo al fin colisionando estancado a tierra y suelo libre."
+                    }
+                ]
+            }
+        ]
+    },
+    "accessories": {
+        "columns": [
+            {
+                "name": "Objeto",
+                "key": "name"
+            },
+            {
+                "name": "Plataforma",
+                "key": "platform"
+            },
+            {
+                "name": "Masa (kg)",
+                "key": "mass"
+            },
+            {
+                "name": "Coste ($)",
+                "key": "cost"
+            },
+            {
+                "name": "Description",
+                "key": "description",
+                "hidden": true
+            }
+        ],
+        "groups": [
+            {
+                "name": "PL 7: Era de la gravedad",
+                "items": [
+                    {
+                        "name": "Sistema Guía Falcon X",
+                        "platform": "Cualquier arma proyectiles (tipo HI)",
+                        "mass": "0.1",
+                        "cost": "1250",
+                        "description": "El sistema fijador usa munición guiada. Incorpora una franja láser de baja densidad al barril y gastar un turno prepara su disparo para que, bajo su misma designación de puntería, trace y otorgue un bonificador extra de -3 nivel al disparo guiado infalible exacto. Este sistema puede apagarse para funcionar con normalidad."
+                    },
+                    {
+                        "name": "Mirillas Holo Target X",
+                        "platform": "Cualquier arma a distancia",
+                        "mass": "0.1",
+                        "cost": "850",
+                        "description": "La mayor precisión óptica del siglo y los mejores visores en venta, cuenta con unas lentes de rastreo que miden telemetría con crucetas de fijación sin perder nada de visión o perimetral del arma. Su uso anula cualquier penalizador de larga distancia o disparos lejanos rebajándolo 2 pasos. Solo una de las miras puede ser acoplada al cañón."
+                    },
+                    {
+                        "name": "Visor IFF  700 Reaper",
+                        "platform": "Cualquier arma a distancia",
+                        "mass": "0.1",
+                        "cost": "850",
+                        "description": "IFF sirve de Identificación Aliada / Enemiga, una capa protectora inteligente. Los miembros del pelotón emiten traspondedor IFF (Una de frecuencias comprada por 50$) ajustado al sistema en misma sintonía para que sea funcional. Si tu colega cruza la franja de combate, el arma de IFF bloquea el disparo al vuelo e imposibilita la muerte colateral accidental. Ideal asaltos confusos de cuartos donde se rocía pánico omitiendo miedo y penas al fuego general en área de melés y combate de cercanía ciega."
+                    },
+                    {
+                        "name": "Mira Mongoose Imaging",
+                        "platform": "Cualquier arma a distancia",
+                        "mass": "0.1",
+                        "cost": "300",
+                        "description": "Lupa de barril muy sencilla y acoplable a cualquier ranura superior de fuego táctico que purifica la captación nocturna u opaca de luz redimiendo penalizaciones por ceguera y oscuridad en 2 puntos, y lejana de 1 rango extra."
+                    },
+                    {
+                        "name": "Funda de Sigilo Stealth",
+                        "platform": "Pistola o Subfusil",
+                        "mass": "1",
+                        "cost": "400",
+                        "description": "Forjado con blindaje elástico material antiscáner se funde invisible con el trazo de cuerpo y forma anatómica para despistar miradas dando un modificador pasivo sigiloso de Ocultación de +3 al cuerpo y escurrir al cacheo y sensores de guardias, pero desenfundar desde ahí exige un pericia un engorro logrando +1 paso la penalización por desenfunde acelerado de saque instantánea."
                     }
                 ]
             }

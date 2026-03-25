@@ -1660,6 +1660,102 @@
                         "avail": "Com",
                         "cost": "650",
                         "description": "The bow's greatest advantage is silence and stealth. It has no muzzle flash or loud report to give away the user's location, making it perfect for dense terrain such as jungle or heavy brush. Its disadvantage is the low rate of fire (after each 'shot', the user must waste an action to ready another arrow, or shoot with a +2 step penalty) and its size, which prevents it from being fired from a prone position. (Payload: Razor-tipped arrow)"
+                    },
+                    {
+                        "name": "Commando 3000 Crossbow",
+                        "skill": "Ranged-bow",
+                        "acc": "0",
+                        "md": "F",
+                        "range": "60/120/300",
+                        "type": "HI/O",
+                        "damage": "d6+1w/d8+1w/d6m",
+                        "act": "2",
+                        "clip": "1 shot",
+                        "mass": "2",
+                        "hide": "-",
+                        "avail": "Con",
+                        "cost": "950",
+                        "description": "Modern crossbows are extremely dangerous weapons, with hitting power comparable to a high-powered rifle. Like the bow, it's silent and dark, perfect for stealthy missions. On the downside, it's slow; after each shot, the marksman must spend an action to cock the weapon and ready another quarrel. However, crossbows can be carried cocked and can be fired from a prone position. (Payload: Razor-tipped bolt)"
+                    },
+                    {
+                        "name": "Cobra F77 Dart Gun",
+                        "skill": "Ranged-pistol",
+                        "acc": "0",
+                        "md": "F",
+                        "range": "4/8/16",
+                        "type": "LI/O",
+                        "damage": "d4-1w/d4w/d4+1w",
+                        "act": "2",
+                        "clip": "6 shots",
+                        "mass": "1.5",
+                        "hide": "+2",
+                        "avail": "Com",
+                        "cost": "450",
+                        "description": "The dart gun is a pneumatic pistol designed to fire a large, hollow dart. One popular version of this gun (pictured) is a specially designed, pocket-sized weapon (Hide value +4, cost $300). While the dart can inflict serious injury by itself, it's usually used as a delivery system for an insinuative venom. The typical dart is filled with neurotoxin (+1 step penalty to the victim's Constitution feat check, onset time d4 rounds) or a paralytic agent (+2 step penalty, onset time d4-1 rounds). (Payload: Poison-tipped dart)"
+                    },
+                    {
+                        "name": "Blue Bolt Arc Gun",
+                        "skill": "Ranged-rifle",
+                        "acc": "-1",
+                        "md": "F",
+                        "range": "20/40/100",
+                        "type": "En/G",
+                        "damage": "d8+1s/d8w/d6+3w",
+                        "act": "2",
+                        "clip": "12 shots",
+                        "mass": "10",
+                        "hide": "-",
+                        "avail": "Mil",
+                        "cost": "2750",
+                        "description": "Designed for close assault, both arc guns and flamers are accurate weapons at short ranges. The Blue Bolt has an unusual feature not found on many arc guns-a wireless taser setting. When it's activated, the gun's laser marker measures the target's surface resistance and calculates an appropriate stun charge. In taser mode, the Blue Bolt inflicts d8+1s/2d6s/2d6+2s for an Ordinary, Good, or Amazing success on the attack skill check. Switching from taser mode to normal operation requires an action. (Payload: Electrical arc)"
+                    },
+                    {
+                        "name": "Demon 9 Hand Flamer",
+                        "skill": "Ranged-SMG",
+                        "acc": "-1",
+                        "md": "F/B/A",
+                        "range": "6/12/24",
+                        "type": "En/O",
+                        "damage": "d6w/d6+2w/d8+3w",
+                        "act": "3",
+                        "clip": "10 shots/3 bursts",
+                        "mass": "4.5",
+                        "hide": "-1",
+                        "avail": "Con",
+                        "cost": "1200",
+                        "description": "The Gravity Age successors to the venerable flamethrower, flamers are vicious weapons that spew a tight aerosol spray of self-oxidizing fuel gel at the target. Its broad pattern ensures great accuracy at close range, and the flame spray inflicts terrible wounds. By holding down the trigger and fanning the weapon from side to side, the user can achieve an autofirelike effect, but this rapidly exhausts his fuel. (Payload: Incendiary stream)"
+                    },
+                    {
+                        "name": "Z-LOK Render Rifle",
+                        "skill": "Ranged-rifle",
+                        "acc": "0",
+                        "md": "F",
+                        "range": "50/100/250",
+                        "type": "En/O",
+                        "damage": "d6+1s/d6+1w/d4+1m",
+                        "act": "3",
+                        "clip": "8 shots",
+                        "mass": "4",
+                        "hide": "-",
+                        "avail": "Res",
+                        "cost": "2000",
+                        "description": "The Z-LOK render rifle projects a graviton beam that creates destructive tidal attractions within the target's structure. While it's not particularly lethal compared to other Gravity Age rifles, it offers one big advantage-the target's armor is reduced to its minimal protection value against the beam. For example, cerametal armor normally stops d6 points of energy damage, but against a render rifle it only stops 1 point, the minimum possible (no roll allowed). (Payload: Graviton beam)"
+                    },
+                    {
+                        "name": "Bloodhound F3 Smart Grenade",
+                        "skill": "Athletics-throw",
+                        "acc": "-1",
+                        "md": "F",
+                        "range": "per STR or 30/60/120",
+                        "type": "by warhead",
+                        "damage": "by warhead",
+                        "act": "2",
+                        "clip": "n/a",
+                        "mass": "0.5",
+                        "hide": "+3",
+                        "avail": "Mil",
+                        "cost": "300",
+                        "description": "The Bloodhound smart grenade is a delivery system attached to any other grenade warhead. The thrower can spend an action to lock its image targeting system onto a target. When he throws the grenade in a subsequent action, its rocket motor guides it to the target. In guided flight, the grenade has a range of 30/60/120 meters and an accuracy of -1; in unguided mode, it's treated like any other thrown grenade. (Payload: Various grenades)"
                     }
                 ]
             },
@@ -2292,6 +2388,230 @@
                         "avail": "Con",
                         "cost": "2500",
                         "description": "When it's important to subdue a number of people in a hurry, the stutter cannon is the best tool for the job. The cannon affects all targets in a 3-meter radius, inflicting damage one category less than the damage inflicted to the primary target. For example, if the user scores a Good hit (d8+3s) against one rioter, all other people within 3 meters suffer Ordinary damage (d6+2s). Ordinary hits inflict no damage to nearby targets. (Payload: Compressed air)"
+                    },
+                    {
+                        "name": "Dragon 3 Heavy Flamer",
+                        "skill": "Heavy-direct fire",
+                        "acc": "-1",
+                        "md": "F/B/A",
+                        "range": "8/16/40",
+                        "type": "En/G",
+                        "damage": "d6+1w/d8+2w/2d6+1w",
+                        "act": "2",
+                        "clip": "15 shots/5 bursts",
+                        "mass": "8.5",
+                        "hide": "-",
+                        "avail": "Mil",
+                        "cost": "2400",
+                        "description": "A larger and more powerful version of the hand flamer, the heavy flamer's fuel tank is worn as a backpack unit. Its high-volume, high-pressure discharge can ignite even the most flame-resistant objects and personal armor. While it doesn't have the range of many other heavy weapons, in close quarters there are few weapons that match the sheer terror and destructiveness of a heavy flamer. (Payload: Incendiary stream)"
+                    },
+                    {
+                        "name": "D16 Plasma Gun",
+                        "skill": "Heavy-direct fire",
+                        "acc": "0",
+                        "md": "F",
+                        "range": "50/100/400",
+                        "type": "En/G",
+                        "damage": "d8w/d8+2w/d8+4w",
+                        "act": "2",
+                        "clip": "8 shots",
+                        "mass": "6",
+                        "hide": "-",
+                        "avail": "Mil",
+                        "cost": "12000",
+                        "description": "The standard assault weapon of Orion League armored infantry, the D16 plasma gun is a spectacular weapon. Its massive energy discharge has a 2-meter area of effect. Anything in this area sustains damage one success grade lower than the damage inflicted to the point target, so if a plasma gun scores an Amazing hit, the target suffers d12+3w and anything else within 2 meters suffers a Good hit (d8+3w). (Payload: Incandescent plasma)"
+                    },
+                    {
+                        "name": "HAK-59 Quantum Minigun",
+                        "skill": "Heavy-direct fire",
+                        "acc": "0",
+                        "md": "F/B/A",
+                        "range": "40/80/200",
+                        "type": "En/O",
+                        "damage": "d8+1w/d8+3w/d6m",
+                        "act": "4",
+                        "clip": "90 shots/30 bursts",
+                        "mass": "10",
+                        "hide": "-",
+                        "avail": "Res",
+                        "cost": "15000",
+                        "description": "Also known as a particle gun or neutron gun, the quantum minigun produces beams of heavy, fast-moving subatomic particles that slag anything they hit. The minigun doesn't have the armor penetration capability of other heavy weapons, but its high rate of fire and high damage potential merit respect. The HAK-59 is currently in service in the Nariac Domain and with some VoidCorp troop formations. (Payload: Particle beam)"
+                    },
+                    {
+                        "name": "ZK5 Grenade Launcher",
+                        "skill": "Heavy-indirect fire",
+                        "acc": "-1",
+                        "md": "F",
+                        "range": "40/240/480",
+                        "type": "by warhead",
+                        "damage": "by warhead",
+                        "act": "3",
+                        "clip": "10 shots",
+                        "mass": "2",
+                        "hide": "-2",
+                        "avail": "Mil",
+                        "cost": "1500",
+                        "description": "The ZK5 (or 'Zeke 5' as it's known by the Concord Marines) is a modern version of the old grenade launcher. Its drum-style magazine holds ten 30mm grenades, smaller but more powerful than their historical counterparts. The Zeke launches its fin-stabilized warheads by means of a low-powered linear accelerator, a simple sabot gun with much better range and accuracy than the old hand mortars. (Payload: Various grenades)"
+                    },
+                    {
+                        "name": "Bantam 5 Rocket Launcher",
+                        "skill": "Heavy-indirect fire",
+                        "acc": "-2",
+                        "md": "F",
+                        "range": "40/400/2000",
+                        "type": "by warhead",
+                        "damage": "by warhead",
+                        "act": "2",
+                        "clip": "4 shots",
+                        "mass": "7",
+                        "hide": "-",
+                        "avail": "Mil",
+                        "cost": "4000",
+                        "description": "The Bantam 5 handheld rocket launcher is basically a hollow tube with laser-designating sights for the guidance of bantam rocket rounds. The rockets can be guided by the launcher's sights, or a remote observer can use a separate laser designator to mark targets out of the firer's line of sight, allowing attacks over hills or around corners. (Payload: Various rockets)"
+                    },
+                    {
+                        "name": "Antiair Rocket",
+                        "skill": "n/a",
+                        "acc": "n/a",
+                        "md": "n/a",
+                        "range": "por lanzador",
+                        "type": "HI/G",
+                        "damage": "d4w/d4+2w/d4m",
+                        "act": "-",
+                        "clip": "n/a",
+                        "mass": "3",
+                        "hide": "-",
+                        "avail": "Res",
+                        "cost": "1000",
+                        "description": "This bantam rocket features an IR guidance system and a fragmentation warhead to knock down enemy aircraft. (Payload: Serrated rod warhead) (Area of Effect: 4m/8m/12m)"
+                    },
+                    {
+                        "name": "Antipersonnel Rocket",
+                        "skill": "n/a",
+                        "acc": "n/a",
+                        "md": "n/a",
+                        "range": "por lanzador",
+                        "type": "En/O",
+                        "damage": "d6w/d6+2w/d8+2w",
+                        "act": "-",
+                        "clip": "n/a",
+                        "mass": "3",
+                        "hide": "-",
+                        "avail": "Mil",
+                        "cost": "500",
+                        "description": "Designed to knock out personnel without damaging vital equipment, the antipersonnel rocket delivers a deadly blast of neutron radiation on detonation. Like the antiair rocket, it's an area-effect weapon. (Payload: Neutron radiation) (Area of Effect: 4m/8m/12m)"
+                    },
+                    {
+                        "name": "Antivehicle Rocket",
+                        "skill": "n/a",
+                        "acc": "n/a",
+                        "md": "n/a",
+                        "range": "por lanzador",
+                        "type": "HI/G",
+                        "damage": "d4+2w/d4+4w/d4+1m",
+                        "act": "-",
+                        "clip": "n/a",
+                        "mass": "3",
+                        "hide": "-",
+                        "avail": "Mil",
+                        "cost": "1000",
+                        "description": "This rocket delivers a discarding-sabot booster stage that can pierce very heavy armor. It's designed for use against light vehicles and heavy powered infantry. (Payload: Kinetic penetrator) (Area of Effect: contact/2m/4m)"
+                    },
+                    {
+                        "name": "CHE Rocket",
+                        "skill": "n/a",
+                        "acc": "n/a",
+                        "md": "n/a",
+                        "range": "por lanzador",
+                        "type": "En/O or En/G",
+                        "damage": "d8-2w/d8w/d4m",
+                        "act": "-",
+                        "clip": "n/a",
+                        "mass": "3",
+                        "hide": "-",
+                        "avail": "Mil",
+                        "cost": "250",
+                        "description": "This rocket is packed with a kilo of Detonex, one of the most powerful conventional explosives around. Its firepower is considered to be Good within 6 meters of the detonation point. (Payload: Detonex warhead) (Area of Effect: 6m/10m/16m)"
+                    },
+                    {
+                        "name": "AP Grenade",
+                        "skill": "Athl-throw",
+                        "acc": "0",
+                        "md": "F",
+                        "range": "Per STR",
+                        "type": "En/G",
+                        "damage": "d6-1w/d4m/d4+2m",
+                        "act": "2",
+                        "clip": "n/a",
+                        "mass": "0.5",
+                        "hide": "+2",
+                        "avail": "Mil",
+                        "cost": "400",
+                        "description": "This grenade's radar fuse senses its orientation to the target and creates a shaped-charge blast on contact. It is designed for piercing vehicular and body armor. (Payload: Directional charge) (Area of Effect: contact/1m/2m)"
+                    },
+                    {
+                        "name": "Concussion Grenade",
+                        "skill": "Athl-throw",
+                        "acc": "0",
+                        "md": "F",
+                        "range": "Per STR",
+                        "type": "LI/O",
+                        "damage": "d6+3s/d6w/d6+2w",
+                        "act": "2",
+                        "clip": "n/a",
+                        "mass": "0.5",
+                        "hide": "+2",
+                        "avail": "Mil",
+                        "cost": "150",
+                        "description": "This grenade is a block of explosive in a nonfragmenting case. It's designed to incapacitate instead of kill. (Payload: Caseless explosive) (Area of Effect: 2m/4m/6m)"
+                    },
+                    {
+                        "name": "Frag Grenade",
+                        "skill": "Athl-throw",
+                        "acc": "0",
+                        "md": "F",
+                        "range": "Per STR",
+                        "type": "HI/G",
+                        "damage": "d8w/d8+1w/d4+1m",
+                        "act": "2",
+                        "clip": "n/a",
+                        "mass": "0.5",
+                        "hide": "+2",
+                        "avail": "Mil",
+                        "cost": "100",
+                        "description": "The fragmentation grenade is a very dangerous weapon, capable of hurling deadly shrapnel a great distance. Targets behind hard cover reduce the damage by one category, as if they'd hit the deck (see page 47 of the Alternity Gamemaster Guide). (Payload: Shrapnel) (Area of Effect: 2m/6m/10m)"
+                    },
+                    {
+                        "name": "Gas Grenade",
+                        "skill": "Athl-throw",
+                        "acc": "0",
+                        "md": "F",
+                        "range": "Per STR",
+                        "type": "II/O",
+                        "damage": "d4s/d4+2s/d4w",
+                        "act": "2",
+                        "clip": "n/a",
+                        "mass": "0.5",
+                        "hide": "+2",
+                        "avail": "Mil",
+                        "cost": "300",
+                        "description": "This weapon explodes in a cloud of poison gas 8 meters in diameter. This is a hemotoxin with an onset time of d4+1 rounds, and no modifier to the victim's Constitution feat check to resist its effects. See 'Poison' in Chapter 3 of the Alternity Gamemaster Guide for details. (Payload: Poison gas) (Area of Effect: contact/2m/4m)"
+                    },
+                    {
+                        "name": "Pulse Grenade",
+                        "skill": "Athl-throw",
+                        "acc": "0",
+                        "md": "F",
+                        "range": "Per STR",
+                        "type": "En/G",
+                        "damage": "d4+2s/d6+2s/d8+2s",
+                        "act": "2",
+                        "clip": "n/a",
+                        "mass": "0.5",
+                        "hide": "+2",
+                        "avail": "Mil",
+                        "cost": "350",
+                        "description": "The pulse grenade radiates a magnetic pulse on detonation, ionizing delicate electronics and interfering with victims' nervous systems. Against electronics, cybernetic targets, or powered armor, it inflicts maximum damage (6 stuns for an Ordinary hit, etc.). (Payload: Electromagnetic pulse) (Area of Effect: 2m/4m/10m)"
                     }
                 ]
             },
@@ -2361,6 +2681,154 @@
                         "avail": "Res",
                         "cost": "8000",
                         "description": "This indirect-fire weapon can only be used on a planetary surface, or in an artificial environment with at least light gravity. It launches a wave of gravity energy into the air and relies on the gravity well of a planet to both return the energy to the ground and magnify its power.<br />All targets within 4 meters of the blast suffer Amazing damage (d4+1m); targets within 8 meters suffer Good damage (d6+3w); and targets within 12 meters suffer Ordinary damage (d6+1w)."
+                    }
+                ]
+            }
+        ]
+    },
+    "ammunition": {
+        "columns": [
+            {
+                "name": "Item",
+                "key": "name"
+            },
+            {
+                "name": "Platform",
+                "key": "platform"
+            },
+            {
+                "name": "Payload",
+                "key": "payload"
+            },
+            {
+                "name": "Cost ($)",
+                "key": "cost"
+            },
+            {
+                "name": "Description",
+                "key": "description",
+                "hidden": true
+            }
+        ],
+        "groups": [
+            {
+                "name": "PL 7: Gravity Age",
+                "items": [
+                    {
+                        "name": "Black Thunder AP Round",
+                        "platform": "Any charge weapon",
+                        "payload": "Sabot penetrator",
+                        "cost": "2x clip",
+                        "description": "The Black Thunder bullet is a discarding-sabot Teflon penetrator designed to pierce armor. This high-impact round halves the effect of any armor it strikes (round up). For example, attack armor normally stops d6+1 points of HI damage. If the d6 result is a 4, the armor stops a total of 5 points of primary damage against standard ammunition, but it only stops 3 points of damage (one-half of 5, rounded up) from a Black Thunder round. The damage roll of a sabot weapon using this round is reduced by 1 point, to a minimum of 1. Clips of AP ammo are twice as expensive as clips of normal ammo."
+                    },
+                    {
+                        "name": "MightyMite Explosive Round",
+                        "platform": "Charge and sabot guns",
+                        "payload": "Detonex warhead",
+                        "cost": "4x clip",
+                        "description": "Tipped with a Detonex-filled slug, the MightyMite explodes a split second after impact, causing ghastly wounds. If the bullet penetrates the target's armor (i.e., the target suffers primary wound or mortal damage from the attack), the exploding bullet inflicts d6-3 additional wound points that the victim's armor does not block."
+                    },
+                    {
+                        "name": "Archer AA Stabilized Round",
+                        "platform": "Charge and sabot guns",
+                        "payload": "Fin-stabilized sabot",
+                        "cost": "3x clip",
+                        "description": "This round is not rifled for spin-stabilization as most conventional slugs are; instead, it resembles a small aerodynamic dart, deploying small fins after leaving the barrel. It's extremely accurate, reducing penalties for medium- and long-range fire by 1 step."
+                    },
+                    {
+                        "name": "Shredder C5 Flechette Ammo",
+                        "platform": "Charge guns",
+                        "payload": "Flechette bundle",
+                        "cost": "2x clip",
+                        "description": "This round converts a standard charge pistol or rifle into a flechette weapon. The weapon's range is reduced to 6/12/30 meters, and its damage to d4w/d6w/d4m, but its damage doubles for short-range shots. The Shredder C5 is popular for close-quarters fights, naturally; damage for long-range shots is reduced to one-half normal."
+                    },
+                    {
+                        "name": "B-Mace Gel Round",
+                        "platform": "Charge or sabot guns",
+                        "payload": "Soft gel capsule",
+                        "cost": "2x clip",
+                        "description": "Intended for nonlethal target subdual, the gel round converts any wound damage normally inflicted by the weapon to stun points, and any mortal damage to twice that number of stun points. The B-Mace suffers a +1 step penalty to long-range fire."
+                    },
+                    {
+                        "name": "Talon X Guided Round",
+                        "platform": "Charge or sabot guns",
+                        "payload": "Laser-guided slug",
+                        "cost": "5x clip",
+                        "description": "The Talon X guided round is necessary in order to take advantage of the Falcon X weapon guidance system (see previous section). A Talon X round is fitted with a laser-seeking head and aerofoils for in-flight course correction. Without guided ammo, the guidance system is useless."
+                    },
+                    {
+                        "name": "Snake Eyes IR Homing Round",
+                        "platform": "Charge or sabot guns",
+                        "payload": "Infrared-guided slug",
+                        "cost": "4x clip",
+                        "description": "The infrared homing bullet is fitted with a tiny heat-seeking sensor in its head, adjusting its path to strike likely heat sources. It offers a -2 step bonus to medium- and long-range attacks, or a -1 step bonus to long-range attacks. If the attack skill check fails, the bullet locks on to some other likely heat source, and the user must then make a normal attack skill check against the alternate target. Sometimes this is another enemy nearby, but the Snake Eyes can't distinguish between friend and foe. (It's not a good round to fire into a area where friendlies are mixed up with hostiles.) If the second attack misses, too, the bullet doesn't endanger anyone else."
+                    }
+                ]
+            }
+        ]
+    },
+    "accessories": {
+        "columns": [
+            {
+                "name": "Item",
+                "key": "name"
+            },
+            {
+                "name": "Platform",
+                "key": "platform"
+            },
+            {
+                "name": "Mass",
+                "key": "mass"
+            },
+            {
+                "name": "Cost ($)",
+                "key": "cost"
+            },
+            {
+                "name": "Description",
+                "key": "description",
+                "hidden": true
+            }
+        ],
+        "groups": [
+            {
+                "name": "PL 7: Gravity Age",
+                "items": [
+                    {
+                        "name": "Falcon X Guidance System",
+                        "platform": "Any projectile (type HI) weapon",
+                        "mass": "0.1",
+                        "cost": "1250",
+                        "description": "This sighting system uses guided ammunition (see next page). It consists of a low-powered laser target designator on the weapon's barrel. Firing the weapon takes two actions—one to set up the shot, and the following to make the attack skill check. When the weapon is fired, the guided ammo homes in on the laser signal with pinpoint accuracy, conferring a -3 step bonus to the attack skill check. Naturally, the guidance system can be turned off to allow fire in the normal unguided mode."
+                    },
+                    {
+                        "name": "Target X Holo Sights",
+                        "platform": "Any ranged weapon",
+                        "mass": "0.1",
+                        "cost": "850",
+                        "description": "The best long-range sights in production today, the Target X unit uses a sophisticated binocular apparatus to project a virtual crosshair. It works much like a telescopic sight, but with automatic rangefinding and no loss of peripheral vision. Holo sights reduce any range penalties for long-range fire by two steps. Note that a weapon can only have one set of sights installed."
+                    },
+                    {
+                        "name": "Reaper 700 IFF Sights",
+                        "platform": "Any ranged weapon",
+                        "mass": "0.1",
+                        "cost": "850",
+                        "description": "IFF stands for Identify Friend or Foe, a system for preventing friendly casualties in combat. The user's allies must wear IFF transponders (a comm gear option costing $50) keyed to the right frequency in order for the system to function. If an ally is standing in the line of fire, the IFF sight prevents the gun from firing. It's extremely useful in close-quarters assaults, since a gunman can hose down a crowded room without fear of hitting his friends-ignore the normal risks of firing into a melee if the gunman's allies are wearing transponders."
+                    },
+                    {
+                        "name": "Mongoose Imaging Sights",
+                        "platform": "Any ranged weapon",
+                        "mass": "0.1",
+                        "cost": "300",
+                        "description": "This device is simply a light-intensifying scope mounted over the weapon's barrel. It reduces penalties for darkness by 2 steps, and penalties for long range by 1 step."
+                    },
+                    {
+                        "name": "Stealth Holster",
+                        "platform": "Any pistol or SMG",
+                        "mass": "1",
+                        "cost": "400",
+                        "description": "The stealth holster is made with antiscan material and molded to the user's body contours. It adds +3 steps to a weapon's Hide modifier, making it much less likely to be detected. Because the holster is often hidden in a hard-to-reach spot, the user suffers a +1 step penalty to his action check if he is attempting to draw his weapon in a hurry."
                     }
                 ]
             }
