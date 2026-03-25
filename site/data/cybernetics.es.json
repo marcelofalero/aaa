@@ -1,0 +1,312 @@
+{
+    "gear": {
+        "columns": [
+            {
+                "name": "Equipo",
+                "key": "name"
+            },
+            {
+                "name": "Nanocomp.",
+                "key": "nanocomp"
+            },
+            {
+                "name": "Masa",
+                "key": "mass"
+            },
+            {
+                "name": "Tamaño",
+                "key": "size"
+            },
+            {
+                "name": "Costo (O/B/A)",
+                "key": "cost"
+            },
+            {
+                "name": "Descripción",
+                "key": "description",
+                "hidden": true
+            }
+        ],
+        "groups": [
+            {
+                "name": "Nivel de Progreso 6",
+                "items": [
+                    {
+                        "name": "BattleKlaw",
+                        "mass": "1",
+                        "size": "2",
+                        "cost": "300 / 600 / 900",
+                        "description": "Un BattleKlaw es un arma cibernética que mejora el daño que un personaje puede infligir en un Ataque Desarmado normal. Aparece como una sola garra de metal que termina en una punta afilada. Un BattleKlaw Ordinario está fijo en su lugar. Un BattleKlaw Bueno es retráctil. Un BattleKlaw Asombroso requiere un exoesqueleto y una extremidad cibernética para usarse.",
+                        "nanocomp": "Sí"
+                    },
+                    {
+                        "name": "BioArt**",
+                        "mass": "-",
+                        "size": "-",
+                        "cost": "50 / 100 / 200",
+                        "description": "El BioArt es un implante de neón subdérmico que produce un tatuaje brillante en la superficie de la piel. Es puramente decorativo. A mejor calidad, más llamativo el diseño. No requiere gasto de puntos de habilidad ni nanocomputadora, y no puede ser rechazado.",
+                        "nanocomp": "-"
+                    },
+                    {
+                        "name": "BioWatch**",
+                        "mass": "-",
+                        "size": "-",
+                        "cost": "50 / 100 / 300",
+                        "description": "Un BioWatch es un reloj subdérmico, ya sea analógico o digital, que muestra la hora actual y tiene una variedad de otras funciones. Está oculto bajo la carne, invisible hasta que se golpea con la punta de un dedo. No requiere habilidad ni nanocomputadora.",
+                        "nanocomp": "-"
+                    },
+                    {
+                        "name": "Revestimiento Corporal: Ordinario",
+                        "mass": "20",
+                        "size": "2",
+                        "cost": "1500 / - / -",
+                        "description": "El revestimiento corporal combina metal y armadura plástica, que se adhiere al cuerpo del personaje. No requiere nanocomputadora, pero deben gastarse puntos de habilidad para aprender a moverse. El revestimiento ordinario proporciona protección de d4 (LI), d4 (HI), d4-1 (En).",
+                        "nanocomp": "-"
+                    },
+                    {
+                        "name": "Revestimiento Corporal: Bueno",
+                        "mass": "40",
+                        "size": "3",
+                        "cost": "- / 3000 / 4500",
+                        "description": "El revestimiento corporal bueno proporciona protección de d6 (LI), d4+1 (HI), d4+1 (En).",
+                        "nanocomp": "-"
+                    },
+                    {
+                        "name": "Revestimiento Corporal: Asombroso",
+                        "mass": "60",
+                        "size": "4",
+                        "cost": "- / - / 3000",
+                        "description": "El revestimiento corporal asombroso reduce la puntuación de Destreza del personaje en 2 puntos y proporciona protección de d8+1 (LI), d6+1 (HI), d6+1 (En).",
+                        "nanocomp": "-"
+                    },
+                    {
+                        "name": "Ciber-extremidad (Cyberlimb)",
+                        "mass": "10",
+                        "size": "2",
+                        "cost": "500 / 1000 / 2000",
+                        "description": "Una ciber-extremidad reemplaza una extremidad perdida por daño o enfermedad. Puede tener otro equipo instalado en su interior. Una Ordinaria suma +1 a la Fuerza; una Buena suma +2 y requiere exoesqueleto; una Asombrosa suma +3 y requiere exoesqueleto. Aplica solo a dicha extremidad.",
+                        "nanocomp": "Sí"
+                    },
+                    {
+                        "name": "Ciber-óptica (Cyberoptics)",
+                        "mass": "-",
+                        "size": "1",
+                        "cost": "1000 / 1500 / 2000",
+                        "description": "Reemplazan un globo ocular vivo o añaden un dispositivo extra al personaje. La versión Ordinaria proporciona visión normal y opera como cámara digital. La Buena opera como zoom 50x. La Asombrosa opera como zoom 300x.",
+                        "nanocomp": "Sí"
+                    },
+                    {
+                        "name": "Fast chip",
+                        "mass": "-",
+                        "size": "1",
+                        "cost": "500 / - / 3000",
+                        "description": "Proporciona una bonificación a las pruebas de acción del personaje. Permanece activo un número de asaltos igual a la calidad de la nanocomputadora. Al final, el personaje recibe 1 pto de fatiga. Su uso excesivo puede causar Cykosis.",
+                        "nanocomp": "Sí"
+                    },
+                    {
+                        "name": "MusclePlus",
+                        "mass": "2",
+                        "size": "2",
+                        "cost": "1000 / 2000 / 3000",
+                        "description": "Reemplaza el músculo vivo con material sintético altamente resistente que incrementa la puntuación normal de Fuerza en esas extremidades. MusclePlus Ordinario da +1 a Fuerza; Bueno da +2 pero requiere exoesqueleto; Asombroso da +3 pero requiere exoesqueleto y extremidad cibernética.",
+                        "nanocomp": "Sí"
+                    },
+                    {
+                        "name": "Nanocomputadora",
+                        "mass": "-",
+                        "size": "1",
+                        "cost": "2000 / 3000 / 4000",
+                        "description": "Requerido para usar equipo cibernético. Incluye circuitería citrónica para transmitir las señales neuronales al hardware. Contiene un disco interno 3D y sistema de almacenamiento en la cabeza o cavidad corporal del paciente alimentado bioeléctricamente.",
+                        "nanocomp": "-"
+                    },
+                    {
+                        "name": "NIJack",
+                        "mass": "-",
+                        "size": "1",
+                        "cost": "500 / - / -",
+                        "description": "El neural interface jack es un conector localizado en el cuello o cabeza usado para conectar hardware a cable o la red gridcaster. Todos los NIJacks son Ordinarios.",
+                        "nanocomp": "Sí"
+                    },
+                    {
+                        "name": "Optic screen",
+                        "mass": "2",
+                        "size": "-",
+                        "cost": "250 / - / -",
+                        "description": "Lente implantado en el globo ocular que proyecta una imagen o visor enfrente de la retina (Heads-up display) controlada a la nanocomputadora. No interfiere la vista.",
+                        "nanocomp": "Sí"
+                    },
+                    {
+                        "name": "Unidad autoreparadora",
+                        "mass": "2",
+                        "size": "2",
+                        "cost": "1000 / 2000 / 3000",
+                        "description": "La unidad de autorreparación cibernética es una pieza de equipo interno que incluye un suministro de material en bruto y una horda de robots nanites. Este equipo requiere una nanocomputadora. Al ordenarse vía la nanocomputadora, los nanites convierten el material en bruto en componentes y comienzan a reparar el equipo cibernético dañado. Los nanites tardan 1 hora en reparar cada punto de herida y 2 horas en reparar cada punto mortal. Una unidad Ordinaria repara hasta 4 heridas o 2 mortales; Buena repara 6 heridas o 3 mortales; Asombrosa repara 8 heridas o 4 mortales. El material en bruto de reemplazo cuesta $1000, $2000, o $3000.",
+                        "nanocomp": "Sí"
+                    },
+                    {
+                        "name": "Comunicador subdérmico",
+                        "mass": "-",
+                        "size": "1",
+                        "cost": "- / 500 / -",
+                        "description": "Es un equipo de comunicaciones estándar instalado en la garganta y la cabeza, proporcionando un sistema de comunicaciones oculto. Nadie puede escuchar las llamadas entrantes, y un susurro es todo lo que se necesita para enviar un mensaje. Tiene un alcance de 1,000 kilómetros para comunicaciones en superficie, y puede llegar a la órbita planetaria alta para contactar con una nave espacial estacionada. Todo este equipo es de calidad Buena.",
+                        "nanocomp": "-"
+                    },
+                    {
+                        "name": "Soporte de arma subdérmico: Ordinario",
+                        "mass": "2",
+                        "size": "2",
+                        "cost": "250 / - / -",
+                        "description": "Las armas subdérmicas son dispositivos ofensivos ocultos dentro del cuerpo que pueden exponerse para infligir daño. Las armas que pesan 1 kg o menos requieren monturas Ordinarias (pueden instalarse en miembros naturales o cibernéticos).",
+                        "nanocomp": "Sí"
+                    },
+                    {
+                        "name": "Soporte de arma subdérmico: Bueno",
+                        "mass": "2",
+                        "size": "3",
+                        "cost": "- / 500 / -",
+                        "description": "Las armas que pesan hasta 3 kg requieren monturas Buenas y deben instalarse en ciber-extremidades (cyberlimbs).",
+                        "nanocomp": "Sí"
+                    },
+                    {
+                        "name": "Soporte de arma subdérmico: Asombroso",
+                        "mass": "2",
+                        "size": "4",
+                        "cost": "- / - / 750",
+                        "description": "Las armas que pesan más de 3 kg y hasta 6 kg requieren monturas Asombrosas. Estas deben instalarse en ciber-extremidades unidas a exoesqueletos. Las armas que pesan más de 6 kg no pueden convertirse en equipo subdérmico.",
+                        "nanocomp": "Sí"
+                    }
+                ]
+            },
+            {
+                "name": "Nivel de Progreso 7",
+                "items": [
+                    {
+                        "name": "CF skinweave**",
+                        "mass": "1",
+                        "size": "1",
+                        "cost": "1000 / 2000 / 3000",
+                        "description": "CF skinweave es fibra tejida con carne viva para proveer de protección oculta ante daños en la durabilidad del personaje: Ordinario añade 2 a Stun; Bueno añade 2 a Stun y 1 a Wound; Asombroso añade 2 a Stun, 1 a Wound y 1 a Mortal. No requiere uso de puntos.",
+                        "nanocomp": "-"
+                    },
+                    {
+                        "name": "Data slot, pasivo**",
+                        "mass": "1",
+                        "size": "1",
+                        "cost": "500 / 700 / 900",
+                        "description": "Una ranura externa para hardware sin requerimiento de estar vinculado a la red. Muy usado para pasar por contrabando de data encubriendo el portador del hardware a traves de seguridad interna.",
+                        "nanocomp": "-"
+                    },
+                    {
+                        "name": "ER slot",
+                        "mass": "1",
+                        "size": "1",
+                        "cost": "500 / 1000 / 1500",
+                        "description": "Un ER slot (acrónimo para cuarto de emergencia) inyectará automáticamente medicación o adrenalina contenida en un trama pack II al usuario al momento de desmayarse.",
+                        "nanocomp": "Sí"
+                    },
+                    {
+                        "name": "ER slot, pasivo**",
+                        "mass": "1",
+                        "size": "1",
+                        "cost": "500 / 1000 / 1500",
+                        "description": "Versión pasiva de ER Slot que no permite accionar manualmente.",
+                        "nanocomp": "-"
+                    },
+                    {
+                        "name": "Exoesqueleto",
+                        "mass": "30",
+                        "size": "3",
+                        "cost": "2000 / 3000 / 4000",
+                        "description": "Refuerzo al marco óseo biológico, muy usado para anclar accesorios cibernéticos masivos con la durabilidad necesaria. Otorga al usuario bonos de indice de durabilidad. Ordinario: da 2 PTS stun; Bueno: 2 PTS stun, 2 PTS wounds; Asombroso: 2 PTS stuns, 2 PTS wounds, 2 PTS mortales.",
+                        "nanocomp": "Sí"
+                    },
+                    {
+                        "name": "Neural 3D, ext.",
+                        "mass": "1",
+                        "size": "1",
+                        "cost": "500 / 750 / 1000",
+                        "description": "Almacenamiento e interfaz external añadido adicional a la nanocomputadora del poseedor. Da un volumen superior general e acceso extra temporal de hardware como 3D o memorias.",
+                        "nanocomp": "Sí"
+                    },
+                    {
+                        "name": "Reflex",
+                        "mass": "-",
+                        "size": "2",
+                        "cost": "- / 2000 / -",
+                        "description": "Los Reflejos son circuitos citrónicos especializados con el propósito expreso de usar programas de mejora (Enhance programs). Los programas de mejora utilizan el cableado de reflejos para permitir que el cuerpo rinda más rápido, con mayor precisión y mejor control. Desventaja: por cada asalto o porción de asalto que un personaje activa sus reflejos, sufre daño aturdidor (stun) basado en la calidad del programa de mejora. En un Fallo Crítico, el DJ puede requerir una prueba de cykosis. Todos los reflejos son de calidad Buena.",
+                        "nanocomp": "Sí"
+                    },
+                    {
+                        "name": "Subdermal NIJack",
+                        "mass": "-",
+                        "size": "1",
+                        "cost": "- / 700 / -",
+                        "description": "Estos NIJacks casi completamente ocultos se instalan en la muñeca o el antebrazo de modo que un guantelete gridcaster pueda conectarse al brazo sin cables engorrosos expuestos ni necesidad de cablear hacia el cuello o la cabeza. Todos los NIJacks subdérmicos son calidad Buena.",
+                        "nanocomp": "Sí"
+                    },
+                    {
+                        "name": "Wireless NIJack",
+                        "mass": "-",
+                        "size": "1",
+                        "cost": "- / 1000 / -",
+                        "description": "El NIJack inalámbrico es un sensor ubicado en el exterior de la cabeza, generalmente en la parte alta del costado o en la nuca donde puede ocultarse con el pelo. Completa un enlace de datos transfiriendo mediante emisiones de radio hacia una computadora o gridcaster con un sensor similar. El personaje debe tener línea de visión y no estar a más de 10 metros del sistema.",
+                        "nanocomp": "Sí"
+                    }
+                ]
+            }
+        ]
+    },
+    "surgery": {
+        "columns": [
+            {
+                "name": "Cirugía",
+                "key": "name"
+            },
+            {
+                "name": "Puntuación",
+                "key": "score"
+            },
+            {
+                "name": "Mod.",
+                "key": "mod"
+            },
+            {
+                "name": "Costo",
+                "key": "cost"
+            },
+            {
+                "name": "Descripción",
+                "key": "description",
+                "hidden": true
+            }
+        ],
+        "groups": [
+            {
+                "name": "Modificadores de Cirugía por Instalación",
+                "items": [
+                    {
+                        "name": "Taller clandestino",
+                        "score": "6 a 12",
+                        "mod": "+2",
+                        "cost": "Costo del artículo ×1/2",
+                        "description": ""
+                    },
+                    {
+                        "name": "Ordinario",
+                        "score": "13 a 16",
+                        "mod": "-1",
+                        "cost": "Costo del artículo",
+                        "description": ""
+                    },
+                    {
+                        "name": "Bueno",
+                        "score": "17 a 19",
+                        "mod": "-2",
+                        "cost": "Costo del artículo ×2",
+                        "description": ""
+                    }
+                ]
+            }
+        ]
+    }
+}

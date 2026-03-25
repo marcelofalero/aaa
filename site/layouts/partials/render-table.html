@@ -8,68 +8,69 @@
 {{/* Calculate visible columns count, excluding 'description' */}}
 {{ $colCount := 0 }}
 {{ range $data.columns }}
-  {{ if and (not (in $hidden_fields .key)) (ne .key "description") }}{{ $colCount = add $colCount 1 }}{{ end }}
+{{ if and (not (in $hidden_fields .key)) (ne .key "description") }}{{ $colCount = add $colCount 1 }}{{ end }}
 {{ end }}
 
 <div class="table-wrapper">
   <div class="table-controls mb3">
     <div class="filter-container">
       <span class="neon-amber mr2">›</span>
-      <input type="text" 
-             class="table-filter-input" 
-             placeholder="{{ if eq $.Page.Language.Lang "es" }}Filtrar resultados...{{ else }}Filter results...{{ end }}"
-             aria-label="Filter table">
+      <input type="text" class="table-filter-input" placeholder="{{ if eq $.Page.Language.Lang " es" }}Filtrar
+        resultados...{{ else }}Filter results...{{ end }}" aria-label="Filter table">
     </div>
   </div>
 
   <table class="interactive-table">
     <thead>
       <tr>
-      {{ range $data.columns }}
+        {{ range $data.columns }}
         {{ if and (not (in $hidden_fields .key)) (ne .key "description") }}
-          <th>{{ .name }}</th>
+        <th>{{ .name }}</th>
         {{ end }}
-      {{ end }}
+        {{ end }}
       </tr>
     </thead>
     <tbody>
-    {{ range $data.groups }}
-      <tr class="table-separator" data-group-name="{{ .name }}"><td colspan="{{ $colCount }}">{{ .name }}</td></tr>
+      {{ range $data.groups }}
+      <tr class="table-separator" data-group-name="{{ .name }}">
+        <td colspan="{{ $colCount }}">{{ .name }}</td>
+      </tr>
       {{ range $index, $item := .items }}
       {{ $rowId := printf "desc-%s-%s-%s-%d" $file $key ($item.name | urlize) $index }}
-      <tr class="data-row {{ if or $item.description (gt (len $hidden_fields) 0) }}has-description{{ end }}" data-target="{{ $rowId }}">
-      {{ range $data.columns }}
+      <tr class="data-row {{ if or $item.description (gt (len $hidden_fields) 0) }}has-description{{ end }}"
+        data-target="{{ $rowId }}">
+        {{ range $data.columns }}
         {{ if and (not (in $hidden_fields .key)) (ne .key "description") }}
-          <td>
-            {{ if .link }}
-              <a href="#{{ $item.anchor }}">{{ index $item .key | safeHTML }}</a>
-            {{ else if and (eq .key "skill") (index $item "skill_url") }}
-              <a href="{{ index $item "skill_url" }}">{{ index $item .key | safeHTML }}</a>
-            {{ else }}
-              {{ index $item .key | safeHTML }}
-            {{ end }}
-          </td>
+        <td>
+          {{ if .link }}
+          <a href="#{{ $item.anchor }}">{{ index $item .key | safeHTML }}</a>
+          {{ else if and (eq .key "skill") (index $item "skill_url") }}
+          <a href="{{ index $item " skill_url" }}">{{ index $item .key | safeHTML }}</a>
+          {{ else }}
+          {{ index $item .key | safeHTML }}
+          {{ end }}
+        </td>
         {{ end }}
-      {{ end }}
+        {{ end }}
       </tr>
       {{ if or $item.description (gt (len $hidden_fields) 0) }}
       <tr id="{{ $rowId }}" class="description-row" style="display: none;">
         <td colspan="{{ $colCount }}" class="pa3 bg-panel-alt silver i" style="border-top: none;">
           <div>
             <div class="mb2">
-            {{ range $field_key := $hidden_fields }}
+              {{ range $field_key := $hidden_fields }}
               {{ $column_slice := where $data.columns "key" $field_key }}
               {{ if $column_slice }}
-                {{ $column := index $column_slice 0 }}
-                {{ $val := index $item $field_key }}
-                {{ if $val }}
-                <div class="hidden-field-item">
-                  <span class="neon-green mr2">{{ $column.name }}:</span>
-                  <span class="silver">{{ $val }}</span>
-                </div>
-                {{ end }}
+              {{ $column := index $column_slice 0 }}
+              {{ $val := index $item $field_key }}
+              {{ if $val }}
+              <div class="hidden-field-item">
+                <span class="neon-green mr2">{{ $column.name }}:</span>
+                <span class="silver">{{ $val }}</span>
+              </div>
               {{ end }}
-            {{ end }}
+              {{ end }}
+              {{ end }}
             </div>
 
             {{ if $item.description }}
@@ -83,135 +84,11 @@
       </tr>
       {{ end }}
       {{ end }}
-    {{ end }}
+      {{ end }}
     </tbody>
   </table>
 </div>
 
-<script>
-(function() {
-  if (window.interactiveTableScriptLoaded) {
-    return;
-  }
-  window.interactiveTableScriptLoaded = true;
-
-  document.addEventListener('DOMContentLoaded', function() {
-    const tableWrappers = document.querySelectorAll('.table-wrapper');
-
-    tableWrappers.forEach(wrapper => {
-      const table = wrapper.querySelector('.interactive-table');
-      const filterInput = wrapper.querySelector('.table-filter-input');
-      const rows = table.querySelectorAll('.data-row');
-      const separators = table.querySelectorAll('.table-separator');
-
-      // Click handling
-      table.addEventListener('click', function(e) {
-        const row = e.target.closest('.data-row');
-        if (e.target.tagName === 'A' || !row) {
-          return;
-        }
-
-        const targetId = row.getAttribute('data-target');
-        const targetRow = document.getElementById(targetId);
-
-        if (targetRow) {
-          const isVisible = targetRow.style.display === 'table-row';
-
-          // Close all other description rows in THIS table
-          const allDescRows = table.querySelectorAll('.description-row');
-          allDescRows.forEach(r => {
-            r.style.display = 'none';
-          });
-
-          const allDataRows = table.querySelectorAll('.data-row');
-          allDataRows.forEach(r => {
-            r.classList.remove('active-row');
-          });
-
-          // Toggle current row
-          if (!isVisible) {
-            targetRow.style.display = 'table-row';
-            row.classList.add('active-row');
-          }
-        }
-      });
-
-      // Filter handling
-      if (filterInput) {
-        filterInput.addEventListener('input', function() {
-          const query = this.value.toLowerCase().trim();
-          
-          rows.forEach(row => {
-            const text = row.textContent.toLowerCase();
-            const targetId = row.getAttribute('data-target');
-            const descRow = document.getElementById(targetId);
-            
-            if (text.includes(query)) {
-              row.style.display = 'table-row';
-            } else {
-              row.style.display = 'none';
-              if (descRow) descRow.style.display = 'none';
-              row.classList.remove('active-row');
-            }
-          });
-
-          // Hide separators if all items in group are hidden
-          separators.forEach(sep => {
-            let next = sep.nextElementSibling;
-            let hasVisible = false;
-            while (next && !next.classList.contains('table-separator')) {
-              if (next.classList.contains('data-row') && next.style.display !== 'none') {
-                hasVisible = true;
-                break;
-              }
-              next = next.nextElementSibling;
-            }
-            sep.style.display = hasVisible ? 'table-row' : 'none';
-          });
-        });
-      }
-    });
-  });
-})();
-</script>
-
-<style>
-{{ if not ($.Page.Scratch.Get "interactiveTableStylesLoaded") }}
-  {{ $.Page.Scratch.Set "interactiveTableStylesLoaded" true }}
-  .data-row { cursor: pointer; transition: background-color 0.2s; }
-  .data-row:hover { background-color: rgba(255, 176, 0, 0.05); }
-  .active-row { background-color: rgba(255, 176, 0, 0.1) !important; }
-  .description-row td { padding: 1rem 1.5rem; color: var(--text-dim); }
-  .neon-amber { color: var(--accent-amber); }
-  .neon-green { color: var(--accent-green); }
-  .hidden-field-item { display: inline-block; width: 200px; vertical-align: top; margin-right: 1rem; margin-bottom: 0.25rem; font-size: 0.875rem; }
-  
-  .table-filter-input {
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 176, 0, 0.2);
-    color: var(--text-bright);
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
-    width: 300px;
-    font-size: 0.9rem;
-    transition: all 0.2s ease;
-  }
-  
-  .table-filter-input:focus {
-    outline: none;
-    border-color: var(--accent-amber);
-    box-shadow: 0 0 10px rgba(255, 176, 0, 0.1);
-    background: rgba(255, 255, 255, 0.08);
-  }
-
-  .filter-container {
-    display: flex;
-    align-items: center;
-  }
-{{ end }}
-</style>
-
 {{ else }}
-  <p>Error: Invalid data format for table.</p>
+<p>Error: Invalid data format for table.</p>
 {{ end }}
-

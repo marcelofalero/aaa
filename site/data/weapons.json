@@ -1,274 +1,2369 @@
 {
-  "melee": {
-    "columns": [
-      { "name": "Weapon", "key": "name" },
-      { "name": "Skill", "key": "skill" },
-      { "name": "Acc", "key": "acc" },
-      { "name": "Type", "key": "type" },
-      { "name": "Damage (O/G/A)", "key": "damage" },
-      { "name": "Actions", "key": "actions" },
-      { "name": "Mass", "key": "mass" },
-      { "name": "Hide", "key": "hide" },
-      { "name": "Avail", "key": "avail" },
-      { "name": "Cost ($)", "key": "cost" },
-      { "name": "Description", "key": "description", "hidden": true }
-    ],
-    "groups": [
-      {
-        "name": "PL 0: Stone Age",
-        "items": [
-          { "name": "Club", "skill": "Melee-bludgeon", "acc": "0", "type": "LI/O", "damage": "d4+1s/d4w/d4+1w", "actions": "3", "mass": "2", "hide": "+12", "avail": "Any", "cost": "10", "description": "A heavy stick or cudgel, simple but effective." },
-          { "name": "Dagger", "skill": "Melee-blade", "acc": "0", "type": "LI/O", "damage": "d4w/d4w+1/d4+2w", "actions": "4", "mass": "1", "hide": "+3", "avail": "Any", "cost": "20", "description": "A short, double-edged blade used for stabbing or thrusting." },
-          { "name": "Quarterstaff", "skill": "Melee-bludgeon", "acc": "-1", "type": "LI/O", "damage": "d4+1s/d4+3s/d6w", "actions": "3", "mass": "2", "hide": "-", "avail": "Any", "cost": "15", "description": "A long, sturdy pole of wood, often shod with iron." },
-          { "name": "Spear", "skill": "Melee-blade", "acc": "0", "type": "LI/O", "damage": "d4w/d4+2w/d4m", "actions": "3", "mass": "2", "hide": "-", "avail": "Any", "cost": "15", "description": "A pole weapon with a sharp point, designed for thrusting." },
-          { "name": "Unarmed", "skill": "Unarmed Attack", "acc": "0", "type": "LI/O", "damage": "d4s/d4+1s/d4+2s", "actions": "4", "mass": "-", "hide": "-", "avail": "Any", "cost": "35", "description": "Fighting with bare hands, feet, or other natural weapons." }
+    "melee": {
+        "columns": [
+            {
+                "name": "Weapon",
+                "key": "name"
+            },
+            {
+                "name": "Skill",
+                "key": "skill"
+            },
+            {
+                "name": "Acc",
+                "key": "acc"
+            },
+            {
+                "name": "Type",
+                "key": "type"
+            },
+            {
+                "name": "Damage (O/G/A)",
+                "key": "damage"
+            },
+            {
+                "name": "Actions",
+                "key": "actions"
+            },
+            {
+                "name": "Mass",
+                "key": "mass"
+            },
+            {
+                "name": "Hide",
+                "key": "hide"
+            },
+            {
+                "name": "Avail",
+                "key": "avail"
+            },
+            {
+                "name": "Cost ($)",
+                "key": "cost"
+            },
+            {
+                "name": "Description",
+                "key": "description",
+                "hidden": true
+            }
+        ],
+        "groups": [
+            {
+                "name": "PL 0: Stone Age",
+                "items": [
+                    {
+                        "name": "Club",
+                        "skill": "Melee-bludgeon",
+                        "acc": "0",
+                        "type": "LI/O",
+                        "damage": "d4+1s/d4w/d4+1w",
+                        "actions": "3",
+                        "mass": "2",
+                        "hide": "+12",
+                        "avail": "Any",
+                        "cost": "10",
+                        "description": "A heavy stick or cudgel, simple but effective."
+                    },
+                    {
+                        "name": "Dagger",
+                        "skill": "Melee-blade",
+                        "acc": "0",
+                        "type": "LI/O",
+                        "damage": "d4w/d4w+1/d4+2w",
+                        "actions": "4",
+                        "mass": "1",
+                        "hide": "+3",
+                        "avail": "Any",
+                        "cost": "20",
+                        "description": "A short, double-edged blade used for stabbing or thrusting."
+                    },
+                    {
+                        "name": "Quarterstaff",
+                        "skill": "Melee-bludgeon",
+                        "acc": "-1",
+                        "type": "LI/O",
+                        "damage": "d4+1s/d4+3s/d6w",
+                        "actions": "3",
+                        "mass": "2",
+                        "hide": "-",
+                        "avail": "Any",
+                        "cost": "15",
+                        "description": "A long, sturdy pole of wood, often shod with iron."
+                    },
+                    {
+                        "name": "Spear",
+                        "skill": "Melee-blade",
+                        "acc": "0",
+                        "type": "LI/O",
+                        "damage": "d4w/d4+2w/d4m",
+                        "actions": "3",
+                        "mass": "2",
+                        "hide": "-",
+                        "avail": "Any",
+                        "cost": "15",
+                        "description": "A pole weapon with a sharp point, designed for thrusting."
+                    },
+                    {
+                        "name": "Unarmed",
+                        "skill": "Unarmed Attack",
+                        "acc": "0",
+                        "type": "LI/O",
+                        "damage": "d4s/d4+1s/d4+2s",
+                        "actions": "4",
+                        "mass": "-",
+                        "hide": "-",
+                        "avail": "Any",
+                        "cost": "35",
+                        "description": "Fighting with bare hands, feet, or other natural weapons."
+                    }
+                ]
+            },
+            {
+                "name": "PL 1: Bronze/Iron Age",
+                "items": [
+                    {
+                        "name": "Gauntlet",
+                        "skill": "Unarmed Attack",
+                        "acc": "0",
+                        "type": "LI/O",
+                        "damage": "d4+1s/d4+2s/d4-1w",
+                        "actions": "4",
+                        "mass": "1",
+                        "hide": "+3",
+                        "avail": "Com",
+                        "cost": "10",
+                        "description": "Armored glove that protects the hand and adds weight to punches."
+                    },
+                    {
+                        "name": "Hand ax",
+                        "skill": "Melee-blade",
+                        "acc": "0",
+                        "type": "LI/O",
+                        "damage": "d4+1w/d4+2w/d4+3w",
+                        "actions": "3",
+                        "mass": "2",
+                        "hide": "+2",
+                        "avail": "Any",
+                        "cost": "50",
+                        "description": "A small axe that can be used in melee or thrown."
+                    },
+                    {
+                        "name": "Mace",
+                        "skill": "Melee-bludgeon",
+                        "acc": "0",
+                        "type": "LI/O",
+                        "damage": "d6+1s/d4+1w/d6+1w",
+                        "actions": "2",
+                        "mass": "4",
+                        "hide": "+1",
+                        "avail": "Com",
+                        "cost": "75",
+                        "description": "A heavy club with a metal head, designed to crush armor."
+                    },
+                    {
+                        "name": "Short sword",
+                        "skill": "Melee-blade",
+                        "acc": "0",
+                        "type": "LI/O",
+                        "damage": "d4w/d6w/d6+2w",
+                        "actions": "3",
+                        "mass": "1",
+                        "hide": "+1",
+                        "avail": "Com",
+                        "cost": "100",
+                        "description": "A sword with a blade length between a dagger and a longsword."
+                    }
+                ]
+            },
+            {
+                "name": "PL 2: Middle Ages",
+                "items": [
+                    {
+                        "name": "Broad sword",
+                        "skill": "Melee-blade",
+                        "acc": "0",
+                        "type": "LI/O",
+                        "damage": "d4+2w/d6+2w/d4m",
+                        "actions": "2",
+                        "mass": "3",
+                        "hide": "-",
+                        "avail": "Con",
+                        "cost": "200",
+                        "description": "A heavy, double-edged sword designed for cutting."
+                    },
+                    {
+                        "name": "Flail",
+                        "skill": "Melee-bludgeon",
+                        "acc": "+1",
+                        "type": "LI/O",
+                        "damage": "d6+2s/d4+2w/d6+2w",
+                        "actions": "2",
+                        "mass": "4",
+                        "hide": "-",
+                        "avail": "Com",
+                        "cost": "150",
+                        "description": "A striking weapon consisting of a stick with a swinging metal head."
+                    },
+                    {
+                        "name": "Great ax",
+                        "skill": "Melee-blade",
+                        "acc": "+1",
+                        "type": "LI/O",
+                        "damage": "d6+1w/d6+2w/d4+1m",
+                        "actions": "2",
+                        "mass": "5",
+                        "hide": "-",
+                        "avail": "Com",
+                        "cost": "100",
+                        "description": "A massive two-handed axe capable of devastating strikes."
+                    },
+                    {
+                        "name": "Nunchaku",
+                        "skill": "Melee-bludgeon",
+                        "acc": "0",
+                        "type": "LI/O",
+                        "damage": "d6s/d6+2s/d8+3s",
+                        "actions": "3",
+                        "mass": "1",
+                        "hide": "+2",
+                        "avail": "Com",
+                        "cost": "75",
+                        "description": "Two sticks connected by a short chain or rope."
+                    },
+                    {
+                        "name": "Polearm",
+                        "skill": "Melee-blade",
+                        "acc": "+1",
+                        "type": "LI/O",
+                        "damage": "d6+1w/d4+3w/d4+1m",
+                        "actions": "1",
+                        "mass": "5",
+                        "hide": "-",
+                        "avail": "Com",
+                        "cost": "50",
+                        "description": "A weapon with a long shaft and a cutting or thrusting head."
+                    }
+                ]
+            },
+            {
+                "name": "PL 3: Age of Reason",
+                "items": [
+                    {
+                        "name": "Cutlass",
+                        "skill": "Melee-blade",
+                        "acc": "+1",
+                        "type": "LI/O",
+                        "damage": "d4+1w/d6+1w/d6+3w",
+                        "actions": "3",
+                        "mass": "3",
+                        "hide": "-",
+                        "avail": "Com",
+                        "cost": "100",
+                        "description": "A short, broad sabre or slashing sword, with a straight or slightly curved blade."
+                    },
+                    {
+                        "name": "Katana",
+                        "skill": "Melee-blade",
+                        "acc": "-1",
+                        "type": "LI/O",
+                        "damage": "d4+2w/d6+2w/d4+1m",
+                        "actions": "3",
+                        "mass": "2",
+                        "hide": "+1",
+                        "avail": "Con",
+                        "cost": "1000",
+                        "description": "A traditional Japanese sword with a curved, single-edged blade."
+                    },
+                    {
+                        "name": "Rapier",
+                        "skill": "Melee-blade",
+                        "acc": "-1",
+                        "type": "LI/O",
+                        "damage": "d4w/d4+1w/d4+2w",
+                        "actions": "3",
+                        "mass": "2",
+                        "hide": "+2",
+                        "avail": "Com",
+                        "cost": "300",
+                        "description": "A slender, sharply pointed sword, ideally used for thrusting attacks."
+                    },
+                    {
+                        "name": "Saber",
+                        "skill": "Melee-blade",
+                        "acc": "0",
+                        "type": "LI/O",
+                        "damage": "d4w/d4+2w/2d4+1w",
+                        "actions": "3",
+                        "mass": "2",
+                        "hide": "+1",
+                        "avail": "Com",
+                        "cost": "250",
+                        "description": "A sword with a curved blade, associated with light cavalry."
+                    }
+                ]
+            },
+            {
+                "name": "PL 4: Industrial Age",
+                "items": [
+                    {
+                        "name": "Bayonet",
+                        "skill": "Melee-blade",
+                        "acc": "+1",
+                        "type": "LI/O",
+                        "damage": "d4w/d4+2w/d4m",
+                        "actions": "3",
+                        "mass": "2",
+                        "hide": "-",
+                        "avail": "Com",
+                        "cost": "50",
+                        "description": "Originally a dagger crudely attached to a rifle's muzzle, the bayonet eventually becomes a standard attachment.<br />In effect, a bayonet turns a rifle into a spear."
+                    }
+                ]
+            },
+            {
+                "name": "PL 5: Information Age",
+                "items": [
+                    {
+                        "name": "Combat knife",
+                        "skill": "Melee-blade",
+                        "acc": "0",
+                        "type": "LI/O",
+                        "damage": "d4+1w/d4+2w/d4+3w",
+                        "actions": "4",
+                        "mass": "1",
+                        "hide": "+3",
+                        "avail": "Any",
+                        "cost": "35",
+                        "description": "This weapon is a high-tech version of the standard dagger or knife, composed of tempered steel, sophisticated polymers, or ceramic blends. A combat knife is typically equipped with additional features:<br />A small compass can be inlaid in the handle, or a hollow handle can contain several meters of fishing line and a hook, a dozen matches, or some other suitably sized piece of survival gear."
+                    },
+                    {
+                        "name": "Stun baton",
+                        "skill": "Melee-powered",
+                        "acc": "0",
+                        "type": "En/O",
+                        "damage": "d4+1s/d4+3s/d6+4s",
+                        "actions": "3",
+                        "mass": "2",
+                        "hide": "+2",
+                        "avail": "Com",
+                        "cost": "300",
+                        "description": "This low-powered version of the pulse baton is sometimes known as a taser. Above the insulated handle, its surface crackles with a high-voltage, low-current electrical charge that can temporarily short-circuit the human nervous system.<br />Insulated gloves are necessary to prevent the user from accidentally shocking himself. Without gloves, the user suffers Ordinary damage (d4+1s) if his Melee Attack-powered weapon skill check result is a Critical Failure."
+                    }
+                ]
+            },
+            {
+                "name": "PL 6: Fusion Age",
+                "items": [
+                    {
+                        "name": "Chainsword",
+                        "skill": "Melee-powered",
+                        "acc": "+1",
+                        "type": "LI/O",
+                        "damage": "d8+1w/d8+2w/d4+1m",
+                        "actions": "2",
+                        "mass": "5",
+                        "hide": "-",
+                        "avail": "Mil",
+                        "cost": "1500",
+                        "description": "This device consists of a meter-long blade either built into a heavy forearm gauntlet and power supply or a standard weapon hilt. The blade is edged with a molecule-thin razor of super-tough artificial crystals, driven in chainsaw fashion along the weapon's edge.<br />This provides a powerful cutting edge and a particularly lethal melee weapon."
+                    },
+                    {
+                        "name": "Pulse baton",
+                        "skill": "Melee-powered",
+                        "acc": "0",
+                        "type": "En/O",
+                        "damage": "d8s/d4+2w/d6+2w",
+                        "actions": "3",
+                        "mass": "2",
+                        "hide": "+2",
+                        "avail": "Con",
+                        "cost": "500",
+                        "description": "The first powered melee weapon capable of inflicting lethal damage, the pulse baton is a half-meter-long rod that delivers a concentrated energy discharge when it hits a target.<br />While the baton appears to be a simple flashlight, the operator must wear a pair of insulated gloves to prevent an accidental discharge."
+                    }
+                ]
+            },
+            {
+                "name": "PL 7: Gravity Age",
+                "items": [
+                    {
+                        "name": "Gravmace",
+                        "skill": "Melee-powered",
+                        "acc": "0",
+                        "type": "LI/O",
+                        "damage": "d8+2s/d6+2w/d8+2w",
+                        "actions": "3",
+                        "mass": "3",
+                        "hide": "-",
+                        "avail": "Con",
+                        "cost": "850",
+                        "description": "The gravmace consists of a meter-long handle with a gravitonic capacitor inside a striking head. Powerful capacitors manipulate the weapon's mass, making it strike like a sledgehammer while being swung like a willow switch."
+                    },
+                    {
+                        "name": "Power cestus",
+                        "skill": "Unarmed-brawl",
+                        "acc": "0",
+                        "type": "LI/O",
+                        "damage": "d4+2s/d4w/d4+1w",
+                        "actions": "4",
+                        "mass": "3",
+                        "hide": "+1",
+                        "avail": "Con",
+                        "cost": "500",
+                        "description": "The power cestus consists of an elbow-length gauntlet of CF (carbonate fiber) weave, ending in a heavy fighting glove that covers the user's hand. Gravity technology allows the wielder to strike blows of astonishing power with a gloved hand."
+                    },
+                    {
+                        "name": "Samurai 300 Ion Blade",
+                        "skill": "Melee-powered",
+                        "acc": "0",
+                        "type": "En/O",
+                        "damage": "d4+3s/d6+4s/d4+3w",
+                        "actions": "4",
+                        "mass": "2.25",
+                        "hide": "+2",
+                        "avail": "Mil",
+                        "cost": "750",
+                        "description": "The ion blade delivers a discharge of electromagnetic energy on contact. While it's moderately effective against unarmored targets, its primary purpose is to neutralize heavy body armor, robots, and cybernetics. A target that relies on electronic control systems or computers suffers a +2 step penalty to any Stamina-endurance checks he (or it) must make after being struck by an ion blade."
+                    },
+                    {
+                        "name": "Nighthawk A5 Pulse Baton",
+                        "skill": "Melee-powered",
+                        "acc": "0",
+                        "type": "En/O",
+                        "damage": "d8s/d4+2w/d6+2w",
+                        "actions": "3",
+                        "mass": "1.15",
+                        "hide": "+4",
+                        "avail": "Con",
+                        "cost": "500",
+                        "description": "Pulse batons have been in use for more than a century. Few unarmored targets can stand up to more than one or two shocks from its powerful capacitors. The Nighthawk is a telescoping stealth model made from low-density plastics. It's extremely concealable and does not show up on most weapon detectors, allowing the user to smuggle it into places he might not normally be armed."
+                    },
+                    {
+                        "name": "PunkThumper 6000 Stun Baton",
+                        "skill": "Melee-powered",
+                        "acc": "0",
+                        "type": "En/O",
+                        "damage": "d6+1s/d8+2s/d12+3s",
+                        "actions": "3",
+                        "mass": "2",
+                        "hide": "+2",
+                        "avail": "Com",
+                        "cost": "425",
+                        "description": "Hundreds of models of stun batons are available, but Merrick's awards its prestigious Triple-Bullseye rating to the PunkThumper 6000 as the best of its class. Intended for serious restraint work, the PT 6K uses an extra-heavy pulse baton battery to deliver the biggest stun-sized jolt around. It doesn't last as long as a standard stun baton's charge, but with the PunkThumper each hit counts."
+                    },
+                    {
+                        "name": "AX2 Chainsword",
+                        "skill": "Melee-powered",
+                        "acc": "+1",
+                        "type": "LI/G",
+                        "damage": "d8+1w/d8+2w/d4+1m",
+                        "actions": "2",
+                        "mass": "7",
+                        "hide": "-",
+                        "avail": "Mil",
+                        "cost": "1250",
+                        "description": "The chainsword is heavy and unwieldy, but it delivers outstanding damage in hand-to-hand combat. Its fighting edge is a chain-driven array of serrated, microengineered teeth, capable of cutting through almost any normal material. (In fact, the chainsword serves as a decent concrete saw in a pinch.) The AX2 is a heavy-duty model designed for use against heavily armored targets."
+                    },
+                    {
+                        "name": "Viper D Filament Blade",
+                        "skill": "Melee-powered",
+                        "acc": "0",
+                        "type": "LI/O",
+                        "damage": "d8-1w/d8w/d12-1w",
+                        "actions": "3",
+                        "mass": "1.75",
+                        "hide": "+2",
+                        "avail": "Con",
+                        "cost": "1500",
+                        "description": "A filament blade's fighting edge is a single strand of monomolecular carbonate fiber. The weapon consists of a hilt and a small, free-floating lead module, between which the monofilament is stretched. The lead module senses the user's swings and maneuvers accordingly, keeping the filament taut at all times. The weapon can be set for a length of up to 4 meters for melee attacks against distant targets."
+                    },
+                    {
+                        "name": "T-Bar TN Blade",
+                        "skill": "Melee-blade",
+                        "acc": "0",
+                        "type": "LI/G",
+                        "damage": "d6w/d6+1w/d4m",
+                        "actions": "4",
+                        "mass": "4",
+                        "hide": "+3",
+                        "avail": "Com",
+                        "cost": "500",
+                        "description": "TN stands for tungsten-neutronite. It's the toughest conventional alloy known, capable of punching through cerametal or vanadium steel like an iron crowbar through tin foil. This weapon is a large combat knife, but it's far denser (and heavier) than a conventional blade. The TN knife is the only nonpowered weapon capable of piercing powered attack armors such as the body tank."
+                    },
+                    {
+                        "name": "Thunder 150 Gravmace",
+                        "skill": "Melee-powered",
+                        "acc": "0",
+                        "type": "LI/O",
+                        "damage": "d8+2s/d6+2w/d8+2w",
+                        "actions": "3",
+                        "mass": "3",
+                        "hide": "+1",
+                        "avail": "Con",
+                        "cost": "850",
+                        "description": "The gravity mace (or gravmace, as it's more commonly known) is a popular weapon among many front-line assault troops. It's lighter and faster than the chainsword, and even if it lacks the chainsword's hitting power, the gravmace's combat battery lasts twice as long. The Thunder 150 is a standard model found in the inventory of several stellar nations and a number of private security firms."
+                    },
+                    {
+                        "name": "HeadBuster Power Cestus",
+                        "skill": "Unarmed Attack",
+                        "acc": "0",
+                        "type": "LI/O",
+                        "damage": "d4+2s/d4w/d4+2w",
+                        "actions": "4",
+                        "mass": "2",
+                        "hide": "+3",
+                        "avail": "Con",
+                        "cost": "625",
+                        "description": "Winner of the Merrick's Triple-Bullseye, the HeadBuster is the best power cestus available. It's lighter and more concealable than most power cesti, but provides the same hitting power. The HeadBuster is so easy to use that most wielders require no formal training in powered weapons; the wielder can choose to use either his Melee Weapons or Unarmed Attack skill when attacking with the HeadBuster."
+                    },
+                    {
+                        "name": "K-3 Zero-G Axe",
+                        "skill": "Melee-powered",
+                        "acc": "+1",
+                        "type": "LI/O",
+                        "damage": "d6+2w/d4+4w/d4+2m",
+                        "actions": "3",
+                        "mass": "4",
+                        "hide": "-",
+                        "avail": "Mil",
+                        "cost": "950",
+                        "description": "The zero-g axe is a powered weapon specialized for use in boarding actions and microgravity situations. At the bottom of its haft, a counterweight compensates perfectly for the variable mass of its deadly carbonite blade. The weapon negates two steps of light-gravity or zero-g combat penalties, allowing a user with magnetic boots or the Acrobatics-zero-g training skill to make melee attacks with no penalty."
+                    },
+                    {
+                        "name": "Chuurkhna",
+                        "skill": "Melee-blade",
+                        "acc": "0",
+                        "type": "LI/O",
+                        "damage": "d4+3w/d6+3w/d6m",
+                        "actions": "3",
+                        "mass": "7",
+                        "hide": "-",
+                        "avail": "Com",
+                        "cost": "350",
+                        "description": "An ancient weren design, the chuurkhna is still favored by members of that race. It's a glaive or halberd with a haft about a meter and a half long. Its blade is large and heavy, intended for chopping rather than thrusting. A weren can wield it one- or two-handed, but most humans would have to use both hands to control it. Weren have been known to drive chuurkhnas through the heaviest body armor."
+                    },
+                    {
+                        "name": "Dait'sya",
+                        "skill": "Melee-blade",
+                        "acc": "0",
+                        "type": "LI/O",
+                        "damage": "d4+1w/d4+2w/d4+3w",
+                        "actions": "4",
+                        "mass": "1",
+                        "hide": "+2",
+                        "avail": "Com",
+                        "cost": "250",
+                        "description": "The dait'sya is a traditional t'sa weapon, a double-bladed dagger held in the wielder's closed fist. They're always used in pairs (the listed cost, mass, and damage is for two weapons). Combined with the lightning speed of most t'sa, the dait'sya is especially dangerous in close-quarters combat. Because of the dait'sya's light design, any penalties for fighting with a weapon in each hand are reduced by 1 step."
+                    },
+                    {
+                        "name": "Tong Fe",
+                        "skill": "Melee-bludgeon / Unarmed Attack",
+                        "acc": "-1",
+                        "type": "LI/O",
+                        "damage": "d6s/d6+2s/d4+1w",
+                        "actions": "4",
+                        "mass": "1",
+                        "hide": "+2",
+                        "avail": "Com",
+                        "cost": "60",
+                        "description": "The tong fe is a martial arts weapon that has become the fighting stick of choice for many police and security forces. Designed specifically for parrying, the tong fe adds a -2 step bonus to any parrying effort the user attempts. As with the dait'sya, experts often wield two of these weapons at once; the tong fe reduces the penalties for attacking with two weapons at once by 1 step."
+                    }
+                ]
+            },
+            {
+                "name": "PL 8: Energy Age",
+                "items": [
+                    {
+                        "name": "Star sword",
+                        "skill": "Melee-powered",
+                        "acc": "0",
+                        "type": "En/G",
+                        "damage": "d6+1w/2d6w/d4+3m",
+                        "actions": "3",
+                        "mass": "2",
+                        "hide": "+2",
+                        "avail": "Res",
+                        "cost": "7000",
+                        "description": "The star sword generates a complex, phased magnetic field in the rough shape of a sword blade, and then fills the interior of this field with white-hot plasma.<br />On contact, the containment field releases a stream of plasma that can burn or cut through almost anything."
+                    },
+                    {
+                        "name": "Tri-staff",
+                        "skill": "Melee-powered",
+                        "acc": "-1",
+                        "type": "En/O",
+                        "damage": "d8+2w/3d4+1w/d6m",
+                        "actions": "3",
+                        "mass": "3",
+                        "hide": "-",
+                        "avail": "Res",
+                        "cost": "4000",
+                        "description": "This 2-meter-long staff is topped by a three-pronged blade. When the staff is activated, an internal power source suffuses it with a soft glow. This aura acts as a defensive force field that improves the Strength and Dexterity resistance modifiers of its wielder by 1 step."
+                    }
+                ]
+            }
         ]
-      },
-      {
-        "name": "PL 1: Bronze/Iron Age",
-        "items": [
-          { "name": "Gauntlet", "skill": "Unarmed Attack", "acc": "0", "type": "LI/O", "damage": "d4+1s/d4+2s/d4-1w", "actions": "4", "mass": "1", "hide": "+3", "avail": "Com", "cost": "10", "description": "Armored glove that protects the hand and adds weight to punches." },
-          { "name": "Hand ax", "skill": "Melee-blade", "acc": "0", "type": "LI/O", "damage": "d4+1w/d4+2w/d4+3w", "actions": "3", "mass": "2", "hide": "+2", "avail": "Any", "cost": "50", "description": "A small axe that can be used in melee or thrown." },
-          { "name": "Mace", "skill": "Melee-bludgeon", "acc": "0", "type": "LI/O", "damage": "d6+1s/d4+1w/d6+1w", "actions": "2", "mass": "4", "hide": "+1", "avail": "Com", "cost": "75", "description": "A heavy club with a metal head, designed to crush armor." },
-          { "name": "Short sword", "skill": "Melee-blade", "acc": "0", "type": "LI/O", "damage": "d4w/d6w/d6+2w", "actions": "3", "mass": "1", "hide": "+1", "avail": "Com", "cost": "100", "description": "A sword with a blade length between a dagger and a longsword." }
+    },
+    "ranged": {
+        "columns": [
+            {
+                "name": "Weapon",
+                "key": "name"
+            },
+            {
+                "name": "Skill",
+                "key": "skill"
+            },
+            {
+                "name": "Acc",
+                "key": "acc"
+            },
+            {
+                "name": "Md",
+                "key": "md"
+            },
+            {
+                "name": "Range (S/M/L)",
+                "key": "range"
+            },
+            {
+                "name": "Type",
+                "key": "type"
+            },
+            {
+                "name": "Damage (O/G/A)",
+                "key": "damage"
+            },
+            {
+                "name": "Act.",
+                "key": "act"
+            },
+            {
+                "name": "Clip",
+                "key": "clip"
+            },
+            {
+                "name": "Mass",
+                "key": "mass"
+            },
+            {
+                "name": "Hide",
+                "key": "hide"
+            },
+            {
+                "name": "Avail",
+                "key": "avail"
+            },
+            {
+                "name": "Cost ($)",
+                "key": "cost"
+            },
+            {
+                "name": "Description",
+                "key": "description",
+                "hidden": true
+            }
+        ],
+        "groups": [
+            {
+                "name": "PL 0: Stone Age",
+                "items": [
+                    {
+                        "name": "Bow, short",
+                        "skill": "Prim-bow",
+                        "acc": "+1",
+                        "md": "F",
+                        "range": "20/40/100",
+                        "type": "LI/O",
+                        "damage": "d4w/d4+2w/d4+3w",
+                        "act": "3",
+                        "clip": "10",
+                        "mass": "1",
+                        "hide": "-",
+                        "avail": "Any",
+                        "cost": "100",
+                        "description": "This is a simple bow made from a single piece of wood. Because archery and bowhunting exist as sports, short bows made of high-tech materials may be readily available at higher Progress Levels."
+                    },
+                    {
+                        "name": "Sling",
+                        "skill": "Prim-sling",
+                        "acc": "+1",
+                        "md": "F",
+                        "range": "10/20/60",
+                        "type": "LI/O",
+                        "damage": "d4s/d4+2s/d4w",
+                        "act": "2",
+                        "clip": "10",
+                        "mass": "0.1",
+                        "hide": "-",
+                        "avail": "Any",
+                        "cost": "25",
+                        "description": "This weapon is a simple looped strap in which a stone is whirled and then let fly. Small stones originally serve as ammunition, but the sling at PL 2 and higher uses metal bullets, whose aerodynamic shape increases the sling's range by 10 meters in each category."
+                    }
+                ]
+            },
+            {
+                "name": "PL 1: Bronze/Iron Age",
+                "items": [
+                    {
+                        "name": "Javelin",
+                        "skill": "Athl-throw",
+                        "acc": "0",
+                        "md": "F",
+                        "range": "Per STR",
+                        "type": "LI/O",
+                        "damage": "d4w/d4+1w/d4+2w",
+                        "act": "1",
+                        "clip": "1",
+                        "mass": "1",
+                        "hide": "-",
+                        "avail": "Com",
+                        "cost": "50",
+                        "description": "A light throwing spear, sometimes fashioned from metal, the javelin was often used in hunting. Its balance and mass make it an ideal throwing weapon, increasing the wielder's normal throwing range by 50 percent."
+                    }
+                ]
+            },
+            {
+                "name": "PL 2: Middle Ages",
+                "items": [
+                    {
+                        "name": "Bow, long",
+                        "skill": "Prim-bow",
+                        "acc": "+1",
+                        "md": "F",
+                        "range": "40/80/200",
+                        "type": "LI/O",
+                        "damage": "d4+1w/d6+1w/d4m",
+                        "act": "2",
+                        "clip": "10",
+                        "mass": "1",
+                        "hide": "-",
+                        "avail": "Com",
+                        "cost": "200",
+                        "description": "A famous weapon, the long bow actually exceeds the PL 3 flintlock rifle in range, accuracy, and rate of fire and does nearly as much damage. The long bow remained the weapon of choice for many soldiers long after the advent of firearms."
+                    },
+                    {
+                        "name": "Crossbow",
+                        "skill": "Prim-bow",
+                        "acc": "0",
+                        "md": "F",
+                        "range": "50/100/250",
+                        "type": "LI/O",
+                        "damage": "d4+2w/d6+2w/d4+1m",
+                        "act": "1",
+                        "clip": "1",
+                        "mass": "2",
+                        "hide": "-",
+                        "avail": "Con",
+                        "cost": "400",
+                        "description": "Consisting of a bow mounted crosswise on a wooden or metal stock, the crossbow is fired much like a gun. Although slower and clumsier than a long bow, it outranges the bow and has superior striking power."
+                    },
+                    {
+                        "name": "Shuriken",
+                        "skill": "Athl-throw",
+                        "acc": "+2",
+                        "md": "F",
+                        "range": "Per STR",
+                        "type": "LI/O",
+                        "damage": "d4s/d4w/d4+1w",
+                        "act": "4",
+                        "clip": "1",
+                        "mass": "0.1",
+                        "hide": "+4",
+                        "avail": "Com",
+                        "cost": "10",
+                        "description": "Though these \"throwing stars\" are not extremely lethal, the metal, sharp-pointed disks are easy to conceal."
+                    }
+                ]
+            },
+            {
+                "name": "PL 3: Age of Reason",
+                "items": [
+                    {
+                        "name": "Musket, flintlock",
+                        "skill": "Prim-flint",
+                        "acc": "+2",
+                        "md": "F",
+                        "range": "20/40/100",
+                        "type": "HI/O",
+                        "damage": "d6+1w/d6+3w/d6+1m",
+                        "act": "1",
+                        "clip": "1",
+                        "mass": "4",
+                        "hide": "-",
+                        "avail": "Com",
+                        "cost": "350",
+                        "description": "The musket was the most successful of the black powder weapons. By later standards it is inaccurate and unreliable, but its 50 to 60 caliber bullet deserves respect."
+                    },
+                    {
+                        "name": "Pistol, flintlock",
+                        "skill": "Prim-flint",
+                        "acc": "+2",
+                        "md": "F",
+                        "range": "4/8/16",
+                        "type": "HI/O",
+                        "damage": "d4+2w/d6+2w/d4+1m",
+                        "act": "2",
+                        "clip": "1",
+                        "mass": "2",
+                        "hide": "+2",
+                        "avail": "Com",
+                        "cost": "200",
+                        "description": "The flintlock pistol employs the same mechanism and muzzle-loading powder and shot as the flintlock musket."
+                    },
+                    {
+                        "name": "Rifle, long",
+                        "skill": "Prim-flint",
+                        "acc": "+1",
+                        "md": "F",
+                        "range": "30/60/150",
+                        "type": "HI/O",
+                        "damage": "d6w/d6+2w/d6m",
+                        "act": "1",
+                        "clip": "1",
+                        "mass": "5",
+                        "hide": "-",
+                        "avail": "Com",
+                        "cost": "500",
+                        "description": "Also known as a Kentucky rifle, this flintlock weapon was more accurate than the musket, but fired a smaller ball."
+                    }
+                ]
+            },
+            {
+                "name": "PL 4: Industrial Age",
+                "items": [
+                    {
+                        "name": "Derringer",
+                        "skill": "Mod-pistol",
+                        "acc": "+1",
+                        "md": "F",
+                        "range": "2/6/12",
+                        "type": "HI/O",
+                        "damage": "d4-1w/d6w/d6+2w",
+                        "act": "2",
+                        "clip": "2",
+                        "mass": "0.25",
+                        "hide": "+4",
+                        "avail": "Com",
+                        "cost": "100",
+                        "description": "The smallest pistols ever made, these weapons appeared with flintlock actions early in the 19th century but didn't become popular until the 1870s."
+                    },
+                    {
+                        "name": "Pistol, .32 rev.",
+                        "skill": "Mod-pistol",
+                        "acc": "+1",
+                        "md": "F",
+                        "range": "4/8/30",
+                        "type": "HI/O",
+                        "damage": "d4w/d6w/d4m",
+                        "act": "3",
+                        "clip": "6",
+                        "mass": "1",
+                        "hide": "+3",
+                        "avail": "Com",
+                        "cost": "200",
+                        "description": "Light revolvers and small handguns are in common use for centuries after their invention. The small size of the .32 caliber makes it ideal for concealment in a hidden holster or pocket."
+                    },
+                    {
+                        "name": "Pistol, .45 rev.",
+                        "skill": "Mod-pistol",
+                        "acc": "+1",
+                        "md": "F",
+                        "range": "4/10/40",
+                        "type": "HI/O",
+                        "damage": "d4+1w/d4+2w/d6m",
+                        "act": "3",
+                        "clip": "6",
+                        "mass": "1",
+                        "hide": "+2",
+                        "avail": "Com",
+                        "cost": "250",
+                        "description": "A heavier pistol, it's not quite as easy to conceal as the .32, but delivers greater damage and has longer range."
+                    },
+                    {
+                        "name": "Rifle, .30 bolt",
+                        "skill": "Mod-rifle",
+                        "acc": "0",
+                        "md": "F",
+                        "range": "50/100/300",
+                        "type": "HI/O",
+                        "damage": "d4+2w/d6+2w/d4+1m",
+                        "act": "1",
+                        "clip": "10",
+                        "mass": "3",
+                        "hide": "-",
+                        "avail": "Mil",
+                        "cost": "500",
+                        "description": "A common infantry weapon, the bolt-action rifle is accurate, but tends to be slow-firing and heavy."
+                    },
+                    {
+                        "name": "Rifle, .44 lever",
+                        "skill": "Mod-rifle",
+                        "acc": "+1",
+                        "md": "F",
+                        "range": "40/80/240",
+                        "type": "HI/O",
+                        "damage": "d6w/d8+1w/d6m",
+                        "act": "2",
+                        "clip": "12",
+                        "mass": "3",
+                        "hide": "-",
+                        "avail": "Com",
+                        "cost": "400",
+                        "description": "Introduced early in the Industrial Age, repeating rifles such as this weapon were common in the Old West, mainly among hunters and frontiersmen."
+                    },
+                    {
+                        "name": "Shotgun, 12 gauge",
+                        "skill": "Mod-rifle",
+                        "acc": "0",
+                        "md": "F",
+                        "range": "6/12/30",
+                        "type": "HI/O",
+                        "damage": "d4w/d6w/d4m",
+                        "act": "2",
+                        "clip": "5",
+                        "mass": "4",
+                        "hide": "+7",
+                        "avail": "Com",
+                        "cost": "500",
+                        "description": "Shotguns come in several different forms, including pump-action, bolt-action, single-shot, and double-barrel. The 12 gauge is a fairly typical pump-action shotgun.<br />Damage from a shotgun is highly dependent on range. At short range, damage is doubled. At long range, all damage results are halved (round down, to a minimum of 1 point)."
+                    },
+                    {
+                        "name": "SMG, .45 cal",
+                        "skill": "Mod-SMG",
+                        "acc": "+2",
+                        "md": "B/A",
+                        "range": "8/16/40",
+                        "type": "HI/O",
+                        "damage": "d4+1w/d4+2w/d6m",
+                        "act": "4",
+                        "clip": "-/8",
+                        "mass": "4",
+                        "hide": "-",
+                        "avail": "Con",
+                        "cost": "600",
+                        "description": "Popularly known as the \"tommy gun,\" this weapon came into use near the end of the Industrial Age. It was the first of the personal automatic weapons, with the ability to damage more than one target in a single attack. That property made it a highly desirable firearm despite its relatively poor accuracy."
+                    }
+                ]
+            },
+            {
+                "name": "PL 5: Information Age",
+                "items": [
+                    {
+                        "name": "Pistol, .38 rev",
+                        "skill": "Mod-pistol",
+                        "acc": "0",
+                        "md": "F",
+                        "range": "6/12/40",
+                        "type": "HI/O",
+                        "damage": "d4w/d4+1w/d4m",
+                        "act": "3",
+                        "clip": "6",
+                        "mass": "1",
+                        "hide": "+2",
+                        "avail": "Com",
+                        "cost": "100",
+                        "description": "This medium revolver comes into widespread use because of its relatively low cost as well as its slightly improved range."
+                    },
+                    {
+                        "name": "Pistol, .44 magnum",
+                        "skill": "Mod-pistol",
+                        "acc": "0",
+                        "md": "F",
+                        "range": "6/12/50",
+                        "type": "HI/O",
+                        "damage": "d4+2w/d4+3w/d4+2m",
+                        "act": "3",
+                        "clip": "6",
+                        "mass": "1",
+                        "hide": "+1",
+                        "avail": "Com",
+                        "cost": "450",
+                        "description": "The most powerful handgun of the 20th century, this formidable weapon is renowned for its hitting power."
+                    },
+                    {
+                        "name": "Pistol, 9mm",
+                        "skill": "Mod-pistol",
+                        "acc": "0",
+                        "md": "F",
+                        "range": "6/12/50",
+                        "type": "HI/O",
+                        "damage": "d4+1w/d4+2w/d4m",
+                        "act": "4",
+                        "clip": "15",
+                        "mass": "1",
+                        "hide": "+3",
+                        "avail": "Com",
+                        "cost": "300",
+                        "description": "Smaller but deadlier than the .38, the 9mm is an extremely popular handgun in the second half of the Information Age. A high-capacity ammo clip and a rapid rate of fire combine to produce an approximation of autofire, although the pistol is incapable of fully automatic action."
+                    },
+                    {
+                        "name": "Rifle, 7.62mm",
+                        "skill": "Mod-rifle",
+                        "acc": "0",
+                        "md": "F",
+                        "range": "70/140/350",
+                        "type": "HI/O",
+                        "damage": "d6+1w/2d4+1w/d4+1m",
+                        "act": "3",
+                        "clip": "10",
+                        "mass": "4",
+                        "hide": "-",
+                        "avail": "Con",
+                        "cost": "1000",
+                        "description": "The main battle rifle of the mid-20th century, the 7.62 remains a favorite of marksmen long after lighter, full-automatic weapons supersede it on the battlefield."
+                    },
+                    {
+                        "name": "Rifle, assault",
+                        "skill": "Mod-rifle",
+                        "acc": "0",
+                        "md": "F/B/A",
+                        "range": "60/120/300",
+                        "type": "HI/O",
+                        "damage": "d4+2w/d6+3w/d4+1m",
+                        "act": "4",
+                        "clip": "30/10",
+                        "mass": "3",
+                        "hide": "-",
+                        "avail": "Mil",
+                        "cost": "1500",
+                        "description": "The assault rifle—the first firearm capable of both burst mode and autofire—is the standard military weapon of the era. Its range and damage are superior to anything that has come before it."
+                    },
+                    {
+                        "name": "SMG, 9mm",
+                        "skill": "Mod-SMG",
+                        "acc": "+1",
+                        "md": "B/A",
+                        "range": "10/20/80",
+                        "type": "HI/O",
+                        "damage": "d4+1w/d4+2w/d4m",
+                        "act": "4",
+                        "clip": "-/10",
+                        "mass": "3",
+                        "hide": "+1",
+                        "avail": "Con",
+                        "cost": "1200",
+                        "description": "A whole family of small but deadly automatic weapons with astounding rates of fire fall into this category. The submachine gun is an outstanding weapon in a close-in fight, but can't match a rifle for range or accuracy."
+                    }
+                ]
+            },
+            {
+                "name": "PL 6: Fusion Age",
+                "items": [
+                    {
+                        "name": "Pistol, 9mm ch",
+                        "skill": "Mod-pistol",
+                        "acc": "0",
+                        "md": "F",
+                        "range": "8/16/60",
+                        "type": "HI/O",
+                        "damage": "d4+1w/d6+1w/d4m",
+                        "act": "4",
+                        "clip": "15",
+                        "mass": "1",
+                        "hide": "+3",
+                        "avail": "Com",
+                        "cost": "400",
+                        "description": "In this weapon, the firing pin and chemical explosive combination of a PL 5 firearm is replaced by a powerful contact delivering a massive shock to the cartridge, which is powered by an electrochemical propellant. On firing, the propellant is converted into a white-hot plasma that expands more powerfully and smoothly than a chemical explosive. The result is a weapon that fires a slug with much higher muzzle velocity than earlier firearms."
+                    },
+                    {
+                        "name": "Pistol, 9mm zero-g",
+                        "skill": "Mod-pistol",
+                        "acc": "0",
+                        "md": "F",
+                        "range": "4/10/40",
+                        "type": "HI/O",
+                        "damage": "d4+1w/d6+1w/d4m",
+                        "act": "2",
+                        "clip": "15",
+                        "mass": "1",
+                        "hide": "+3",
+                        "avail": "Com",
+                        "cost": "500",
+                        "description": "This charge pistol has a sophisticated anti-recoil system to neutralize the gun's movement. It allows the user to fire the weapon in weightless conditions without throwing himself into awkward tumbles or turns."
+                    },
+                    {
+                        "name": "Pistol, 11mm ch",
+                        "skill": "Mod-pistol",
+                        "acc": "0",
+                        "md": "F",
+                        "range": "10/20/80",
+                        "type": "HI/O",
+                        "damage": "d4+2w/d6+2w/d4+1m",
+                        "act": "4",
+                        "clip": "10",
+                        "mass": "1.2",
+                        "hide": "+2",
+                        "avail": "Con",
+                        "cost": "800",
+                        "description": "This is a heavier version of the 9mm charge pistol, firing a larger round."
+                    },
+                    {
+                        "name": "Rifle, 11mm ch",
+                        "skill": "Mod-rifle",
+                        "acc": "0",
+                        "md": "F/B/A",
+                        "range": "80/160/400",
+                        "type": "HI/O",
+                        "damage": "d6+1w/d6+3w/d6+1m",
+                        "act": "4",
+                        "clip": "30/10",
+                        "mass": "4",
+                        "hide": "-",
+                        "avail": "Mil",
+                        "cost": "1500",
+                        "description": "The standard 11mm charge rifle features the electrochemical firing system described above for the charge pistol, but includes an automatic mode."
+                    },
+                    {
+                        "name": "Rifle, 11mm zero-g",
+                        "skill": "Mod-rifle",
+                        "acc": "0",
+                        "md": "F",
+                        "range": "30/60/200",
+                        "type": "HI/O",
+                        "damage": "d6+1w/d6+3w/d6+1m",
+                        "act": "4",
+                        "clip": "15",
+                        "mass": "4",
+                        "hide": "-",
+                        "avail": "Mil",
+                        "cost": "1800",
+                        "description": "Like the zero-g pistol, this rifle fires standard charge rounds with a special anti-recoil system to neutralize its kick."
+                    },
+                    {
+                        "name": "Shotgun, autoflec",
+                        "skill": "Mod-rifle",
+                        "acc": "0",
+                        "md": "F/B/A",
+                        "range": "10/20/40",
+                        "type": "HI/O",
+                        "damage": "d4w/d6w/d4m",
+                        "act": "4",
+                        "clip": "15/5",
+                        "mass": "3",
+                        "hide": "+1",
+                        "avail": "Mil",
+                        "cost": "2500",
+                        "description": "The autoflechette gun fires a 25mm round that contains a bundle of tiny, razor-sharp aerofoils. A single hit can carve an unarmored person to ribbons, but the autoflechette gun can also be used in full automatic mode with a rate of fire equal to that of most submachine guns—thus, it can clean out a roomful of targets with a few bursts.<br />Like the standard shotgun, damage from the autoflechette is highly dependent on range. At short range, damage is doubled. At long range, damage rolls are halved (round down, to a minimum of 1 point)."
+                    },
+                    {
+                        "name": "SMG, 9mm ch",
+                        "skill": "Mod-SMG",
+                        "acc": "+1",
+                        "md": "B/A",
+                        "range": "20/40/100",
+                        "type": "HI/O",
+                        "damage": "d4+1w/d6+1w/d4m",
+                        "act": "4",
+                        "clip": "-/10",
+                        "mass": "3",
+                        "hide": "+1",
+                        "avail": "Mil",
+                        "cost": "1500",
+                        "description": "This weapon combines electrochemical charge technology with full automatic action."
+                    }
+                ]
+            },
+            {
+                "name": "PL 7: Gravity Age",
+                "items": [
+                    {
+                        "name": "Pistol, 15mm sabot",
+                        "skill": "Mod-pistol",
+                        "acc": "0",
+                        "md": "F",
+                        "range": "10/20/100",
+                        "type": "HI/O",
+                        "damage": "2d4w/2d4+1w/d4+3m",
+                        "act": "3",
+                        "clip": "6",
+                        "mass": "2",
+                        "hide": "-",
+                        "avail": "Con",
+                        "cost": "900",
+                        "description": "This small, handheld electromagnetic accelerator hurls a special, discarding-rocket slug at hypersonic velocities.<br />The round fired by this weapon is a miniature scramjet that ignites soon after leaving the muzzle and quickly accelerates to incredible speed. Due to its extremely high velocity, the rocket round is designed to splatter against any appreciable resistance to transfer as much kinetic energy as possible to the target."
+                    },
+                    {
+                        "name": "Pistol, laser",
+                        "skill": "Mod-pistol",
+                        "acc": "-1",
+                        "md": "F",
+                        "range": "20/40/200",
+                        "type": "En/O",
+                        "damage": "d4+1w/d6+1w/d4m",
+                        "act": "4",
+                        "clip": "20",
+                        "mass": "1",
+                        "hide": "+3",
+                        "avail": "Con",
+                        "cost": "1000",
+                        "description": "Another application of electrochemical technology, the laser weapon uses an electrical charge to raise a chemical mass to brilliant fluorescence. This light is focused through precisely machined artificial crystals and expelled from the weapon as a white-hot beam."
+                    },
+                    {
+                        "name": "Pistol, mass",
+                        "skill": "Mod-pistol",
+                        "acc": "0",
+                        "md": "F",
+                        "range": "2/6/12",
+                        "type": "En/G",
+                        "damage": "d6w/d6+2w/d6m",
+                        "act": "4",
+                        "clip": "2",
+                        "mass": "1",
+                        "hide": "+2",
+                        "avail": "Mil",
+                        "cost": "1200",
+                        "description": "Utilizing the gravity induction technology also employed in shipboard weapons systems, the mass pistol throws an artificial, short-lived mass singularity at its target. This gravity point causes horrible damage through tidal effects to both animate and inanimate objects, but it is short-ranged and consumes an enormous amount of energy."
+                    },
+                    {
+                        "name": "Pistol, stutter",
+                        "skill": "Mod-pistol",
+                        "acc": "0",
+                        "md": "F",
+                        "range": "6/12/30",
+                        "type": "LI/O",
+                        "damage": "d6+2s/d8+2s/d8+4s",
+                        "act": "4",
+                        "clip": "10",
+                        "mass": "1.5",
+                        "hide": "+2",
+                        "avail": "Com",
+                        "cost": "500",
+                        "description": "This handheld weapon uses sonic energy—audible as a loud, low-frequency rumble—to incapacitate a target. Since the stutter pistol delivers stun damage, it is favored by riot response teams and those who seek to pacify rather than terminate opponents. The stutter pistol doesn't function in a vacuum."
+                    },
+                    {
+                        "name": "Rifle, laser",
+                        "skill": "Mod-rifle",
+                        "acc": "-1",
+                        "md": "F",
+                        "range": "100/400/1000",
+                        "type": "En/O",
+                        "damage": "d6+1w/d6+3w/d4+1m",
+                        "act": "3",
+                        "clip": "12",
+                        "mass": "4",
+                        "hide": "-",
+                        "avail": "Mil",
+                        "cost": "1500",
+                        "description": "The laser rifle is a larger, heavier, improved version of the laser pistol—every bit as accurate as the smaller weapon, and able to hit a target from as far away as a full kilometer."
+                    },
+                    {
+                        "name": "Rifle, mass",
+                        "skill": "Mod-rifle",
+                        "acc": "0",
+                        "md": "F",
+                        "range": "4/12/30",
+                        "type": "En/G",
+                        "damage": "d6w/d8+1w/d6+1m",
+                        "act": "4",
+                        "clip": "2",
+                        "mass": "4",
+                        "hide": "-",
+                        "avail": "Mil",
+                        "cost": "2000",
+                        "description": "The mass rifle works on the same principle as the mass pistol, but is heavier and has a longer range."
+                    },
+                    {
+                        "name": "Rifle, quantum",
+                        "skill": "Mod-rifle",
+                        "acc": "0",
+                        "md": "F/B/A",
+                        "range": "80/200/500",
+                        "type": "En/O",
+                        "damage": "d4+3w/d6+4w/d6+1m",
+                        "act": "3",
+                        "clip": "15/5",
+                        "mass": "8",
+                        "hide": "-",
+                        "avail": "Res",
+                        "cost": "8000",
+                        "description": "This weapon is a personal version of the ship-mounted particle beam. It uses a small accelerator to fire subatomic particles at a target. All personal quantum weapons are extremely expensive and highly restricted, making them rare and often illegal to own and operate."
+                    },
+                    {
+                        "name": "Rifle, render",
+                        "skill": "Mod-rifle",
+                        "acc": "0",
+                        "md": "F",
+                        "range": "50/100/250",
+                        "type": "En/O",
+                        "damage": "d6+1s/d6+1w/d4+1m",
+                        "act": "3",
+                        "clip": "8",
+                        "mass": "4",
+                        "hide": "+1",
+                        "avail": "Res",
+                        "cost": "2000",
+                        "description": "This weapon utilizes gravity induction technology to strobe through a lightning-quick cycle of attraction and repulsion against the target. This action causes matter to literally tear itself to pieces. A lucky target may escape with bad bruises, surface abrasions, and a thorough battering, but a well-centered hit by the render creates massive body trauma."
+                    },
+                    {
+                        "name": "SMG, laser",
+                        "skill": "Mod-SMG",
+                        "acc": "0",
+                        "md": "B/A",
+                        "range": "20/80/200",
+                        "type": "En/O",
+                        "damage": "d6w/d6+2w/d4m",
+                        "act": "4",
+                        "clip": "-/10",
+                        "mass": "3",
+                        "hide": "-",
+                        "avail": "Con",
+                        "cost": "1500",
+                        "description": "The laser SMG does more damage, has greater accuracy, and fires more shots per clip than previous SMGs."
+                    },
+                    {
+                        "name": "SMG, stutter",
+                        "skill": "Mod-SMG",
+                        "acc": "0",
+                        "md": "B/A",
+                        "range": "10/20/80",
+                        "type": "LI/O",
+                        "damage": "d6+2s/d8+2s/d8+4s",
+                        "act": "4",
+                        "clip": "-/20",
+                        "mass": "3",
+                        "hide": "+1",
+                        "avail": "Con",
+                        "cost": "1000",
+                        "description": "The automatic version of the stutter pistol is a favored weapon of riot-control police and others who need to knock out a large number of people without inflicting lethal injuries. The stutter SMG doesn't function in a vacuum."
+                    },
+                    {
+                        "name": "M9 9mm Charge Pistol",
+                        "skill": "Ranged-pistol",
+                        "acc": "-1",
+                        "md": "F",
+                        "range": "8/16/60",
+                        "type": "HI/O",
+                        "damage": "d4+1w/d6+1w/d4m",
+                        "act": "4",
+                        "clip": "15",
+                        "mass": "1",
+                        "hide": "+3",
+                        "avail": "Com",
+                        "cost": "500",
+                        "description": "The M9 charge pistol has been the standard sidearm of the Orion Star Service for more than eighty years. More than two million M9s have been produced by A.M. Industries. It's a good example of a light charge pistol, equipped with a baffled suppressor to hide the weapon's characteristic muzzle flash. In recent years, the Star Service has begun a design competition in search of a replacement for this model. (Payload: 9mm bullet)"
+                    },
+                    {
+                        "name": "Hammer 5 11mm Charge Pistol",
+                        "skill": "Ranged-pistol",
+                        "acc": "-1",
+                        "md": "F",
+                        "range": "10/20/80",
+                        "type": "HI/O",
+                        "damage": "d4+2w/d6+2w/d4+1m",
+                        "act": "3",
+                        "clip": "12",
+                        "mass": "1.2",
+                        "hide": "+2",
+                        "avail": "Com",
+                        "cost": "1000",
+                        "description": "One of the finest 11mm pistols on the market, the Soze Hammer 5 is an unusually steady and accurate heavy pistol. It's a little large to fit comfortably in many handgun holsters, but many enthusiasts think that the weapon's legendary accuracy is worth the extra cost and trouble. Numerous models of \"standard\" 11mm pistols exist, generally priced around $800 for a new gun. (Payload: 11mm bullet)"
+                    },
+                    {
+                        "name": "K-SAT 100 9mm Zero-G Pistol",
+                        "skill": "Ranged-pistol",
+                        "acc": "0",
+                        "md": "F",
+                        "range": "4/10/40",
+                        "type": "HI/O",
+                        "damage": "d4+1w/d6+1w/d4m",
+                        "act": "3",
+                        "clip": "15",
+                        "mass": "1",
+                        "hide": "+3",
+                        "avail": "Com",
+                        "cost": "400",
+                        "description": "The Karadnya is a vintage design that's been around for more than fifty years. A muzzle brake and recoil cylinder surrounding the weapon's action make it virtually recoil-free. Although its low muzzle velocity limits its range, the K-SAT reduces any penalties for firing in zero-g conditions by 1 step. Today, energy weapons such as the laser pistol are beginning to replace the old zero-g firearms. (Payload: 9mm bullet)"
+                    },
+                    {
+                        "name": "ARZ 6mm Charge Autorifle",
+                        "skill": "Ranged-rifle",
+                        "acc": "-1",
+                        "md": "B/A",
+                        "range": "60/150/400",
+                        "type": "HI/O",
+                        "damage": "d6w/2d4w/d4+1m",
+                        "act": "3",
+                        "clip": "30 bursts",
+                        "mass": "2.75",
+                        "hide": "-",
+                        "avail": "Mil",
+                        "cost": "2000",
+                        "description": "Autorifles are light weapons with a very high rate of fire, intended for assault or support roles. The ARZ is one of the most popular of these designs; originally produced by Karadnya-Brusilev of Nariac, it's now manufactured under license in the Thuldan Empire and the Solar Union. The model shown here is fitted with the standard 100-round magazine, which provides the soldier with plenty of ammo. (Payload: 6mm bullet)"
+                    },
+                    {
+                        "name": "IF-3 11mm Charge Rifle",
+                        "skill": "Ranged-rifle",
+                        "acc": "0",
+                        "md": "F/B/A",
+                        "range": "90/180/600",
+                        "type": "HI/O",
+                        "damage": "d6+1w/d6+3w/d6+1m",
+                        "act": "4",
+                        "clip": "30 rounds/10 bursts",
+                        "mass": "3",
+                        "hide": "-",
+                        "avail": "Mil",
+                        "cost": "1600",
+                        "description": "IF-3 has been the standard infantry weapon of the Concord Defense Corps and the Concord Marines. Adopted from Austrin-Ontis as the best combat rifle available at the time, the IF-3 is light, rugged, and long-ranged. With the addition of a $50 conversion kit, the IF-3 can be configured for zero-g combat. This halves all range figures, but reduces zero-g penalties by 1 step. (Payload: 11mm bullet)"
+                    },
+                    {
+                        "name": "Bulldog 9mm Charge SMG",
+                        "skill": "Ranged-SMG",
+                        "acc": "0",
+                        "md": "B/A",
+                        "range": "20/50/100",
+                        "type": "HI/O",
+                        "damage": "d4+1w/d6+1w/d4m",
+                        "act": "4",
+                        "clip": "8 bursts",
+                        "mass": "2.25",
+                        "hide": "+1",
+                        "avail": "Mil",
+                        "cost": "1750",
+                        "description": "The Bulldog is a fine example of a second-generation weapon. Many of the flaws of earlier charge SMGs were corrected in this design. It's compact and sturdy, standing up to the worst field conditions. The most innovative feature is a recoil suppression system that controls the natural tendency of an automatic weapon to \"walk\" when fired in full auto-the Bulldog's accuracy is legendary. (Payload: 9mm bullet)"
+                    },
+                    {
+                        "name": "AGC-7 Autoflechette Shotgun",
+                        "skill": "Ranged-rifle",
+                        "acc": "0",
+                        "md": "F/B/A",
+                        "range": "10/20/50",
+                        "type": "HI/O",
+                        "damage": "d4w/d6w/d4m",
+                        "act": "4",
+                        "clip": "15 rounds/5 bursts",
+                        "mass": "3.25",
+                        "hide": "+1",
+                        "avail": "Mil",
+                        "cost": "2750",
+                        "description": "The AGC-7 (or \"Aggie,\" as it's affectionately known) is one of the most fearsome close assault weapons in existence. It's a fully automatic charge weapon firing 20mm flechette rounds-bundles of razor-sharp needles that shred anything they hit. Like other shotguns, it inflicts double damage to targets within short range (10 meters), and only half damage (minimum of 1 point) to targets at long range. (Payload: 25mm flechette round)"
+                    },
+                    {
+                        "name": "Devastator Flechette Pistol",
+                        "skill": "Ranged-pistol",
+                        "acc": "-1",
+                        "md": "F",
+                        "range": "8/16/40",
+                        "type": "HI/O",
+                        "damage": "d4w/d6w/d4m",
+                        "act": "3",
+                        "clip": "6",
+                        "mass": "1.5",
+                        "hide": "+2",
+                        "avail": "Mil",
+                        "cost": "1450",
+                        "description": "The Devastator is a succinct statement of the Soze Arms design philosophy-overkill is the way to go. This pistol fires a wide-pattern flechette round, shredding anything in the general vicinity. It inflicts double the listed damage at close range (8 meters or less), but only half damage for shots at long range (16 to 40 meters). The flechette pistol doesn't have the full-auto capability of the autoflechette shotgun. (Payload: 25mm flechette round)"
+                    },
+                    {
+                        "name": "Tornado 600 15mm Sabot Pistol",
+                        "skill": "Ranged-pistol",
+                        "acc": "0",
+                        "md": "F",
+                        "range": "10/20/100",
+                        "type": "HI/O",
+                        "damage": "2d4w/2d4+1w/d4+3m",
+                        "act": "3",
+                        "clip": "6",
+                        "mass": "2",
+                        "hide": "+1",
+                        "avail": "Con",
+                        "cost": "900",
+                        "description": "Sabot pistols are big and heavy, but they're the most powerful handguns produced in any numbers. The weapon has great range for a pistol, and almost no kick-the accelerator pushes the slug out of the barrel with a smooth, nonexplosive action. The sabot pistol's lanthanide cell provides enough energy to fire four clips of ammo before it's exhausted; the cell can be recharged for $10 or replaced for $200. (Payload: 10mm sabot ramjet)"
+                    },
+                    {
+                        "name": "MS 15mm Sabot Rifle",
+                        "skill": "Ranged-rifle",
+                        "acc": "0",
+                        "md": "F",
+                        "range": "80/200/800",
+                        "type": "HI/O",
+                        "damage": "d4+4w/2d4+2w/d6+3m",
+                        "act": "2",
+                        "clip": "12",
+                        "mass": "4",
+                        "hide": "-",
+                        "avail": "Mil",
+                        "cost": "4500",
+                        "description": "While no one questions the sabot rifle's range or hitting power, its lack of automatic-fire capability has limited its appeal. Other combat rifles of the day provide a greater volume of fire, longer range, or better armor penetration. Despite this, the sabot rifle is popular with scouts and colonial militias who want one-shot stopping power at range for dealing with dangerous native creatures. (Payload: 10mm sabot ramjet)"
+                    },
+                    {
+                        "name": "Nova 6 Mass Pistol",
+                        "skill": "Ranged-pistol",
+                        "acc": "0",
+                        "md": "F",
+                        "range": "2/6/12",
+                        "type": "En/G",
+                        "damage": "d6w/d6+2w/d6m",
+                        "act": "3",
+                        "clip": "6",
+                        "mass": "1",
+                        "hide": "+2",
+                        "avail": "Mil",
+                        "cost": "1475",
+                        "description": "Made famous by the action holomovies of Jack Everstar, the Nova 6 is a top-of-the-line mass pistol. Slightly more efficient than most mass pistols, the charge cells of a Nova 6 can power up to six shots before exhausting the weapon's energy reserves. Mass pistols are virtually useless in open terrain, but there aren't many weapons better for close-quarters combat against armored foes. (Payload: Gravity point-source)"
+                    },
+                    {
+                        "name": "AAMG-12 Mass Rifle",
+                        "skill": "Ranged-rifle",
+                        "acc": "-1",
+                        "md": "F",
+                        "range": "4/12/30",
+                        "type": "En/G",
+                        "damage": "d6+1w/d8+1w/d6+1m",
+                        "act": "2",
+                        "clip": "8 shots",
+                        "mass": "4",
+                        "hide": "-",
+                        "avail": "Mil",
+                        "cost": "2450",
+                        "description": "A larger and more powerful version of the mass pistol, the mass rifle sacrifices range and rate of fire for unbeatable armor penetration. The AAMG is a brand-new design from Karadnya-Brusilev. It's the most accurate mass rifle on the market today, and its new charge cell technology doubles its magazine capacity compared to others of its type. (Payload: Gravity point-source)"
+                    },
+                    {
+                        "name": "Ninja 600 Laser Pistol",
+                        "skill": "Ranged-pistol",
+                        "acc": "-1",
+                        "md": "F",
+                        "range": "20/40/150",
+                        "type": "En/O",
+                        "damage": "d4+1w/d6+1w/d4m",
+                        "act": "4",
+                        "clip": "20 shots",
+                        "mass": "0.5",
+                        "hide": "+4",
+                        "avail": "Con",
+                        "cost": "1225",
+                        "description": "The Ninja 600 is a small and easily concealable laser pistol built to the flush-front design. Like all lasers, it's extremely accurate and offers the best range characteristics of any handgun. The Ninja line is very popular with corporate execs and other affluent celebrities who want to carry a weapon for self-defense without advertising the fact that they're armed. Most combat specs prefer a heavier weapon. (Payload: Coherent light)"
+                    },
+                    {
+                        "name": "CLR-19 Laser Rifle",
+                        "skill": "Ranged-rifle",
+                        "acc": "-1",
+                        "md": "F",
+                        "range": "100/600/1500",
+                        "type": "En/O",
+                        "damage": "d6+1w/d6+3w/d4+1m",
+                        "act": "3",
+                        "clip": "12 shots",
+                        "mass": "4",
+                        "hide": "-",
+                        "avail": "Mil",
+                        "cost": "1800",
+                        "description": "The standard infantry firearm of the Orion League, CLR-19 (Combat Laser Rifle-19) is a weapon of extraordinary range and accuracy. It's proven its value in numerous engagements against older charge weapons, especially in relatively open terrain. In close quarters, the weapon's length and low rate of fire are distinct drawbacks compared to the faster-firing and harder-hitting 11mm charge rifle. (Payload: Coherent light)"
+                    },
+                    {
+                        "name": "Valkyrie 9 Autolaser",
+                        "skill": "Ranged-SMG",
+                        "acc": "0",
+                        "md": "B/A",
+                        "range": "20/80/200",
+                        "type": "En/O",
+                        "damage": "d6+1w/d6+3w/d4+1m",
+                        "act": "4",
+                        "clip": "10 bursts",
+                        "mass": "3.25",
+                        "hide": "-",
+                        "avail": "Con",
+                        "cost": "1725",
+                        "description": "The largest and most powerful autolaser available, the Valkyrie offers damage equal to a laser rifle with full automatic fire. While many people refer to the autolaser as a laser submachine gun, this is a misnomer-the device is not a machine gun and has little in common with any conventional firearm. Bursts or full-auto attacks with this weapon are actually sweeps and slashes of its white-hot beam. (Payload: Coherent light)"
+                    },
+                    {
+                        "name": "Falcon T9 Stutter Pistol",
+                        "skill": "Ranged-pistol",
+                        "acc": "0",
+                        "md": "F",
+                        "range": "4/8/20",
+                        "type": "LI/O",
+                        "damage": "d6+2s/d8+2s/d8+4s",
+                        "act": "3",
+                        "clip": "10 shots",
+                        "mass": "0.75",
+                        "hide": "+4",
+                        "avail": "Com",
+                        "cost": "375",
+                        "description": "One of the most popular handguns in human space, the Falcon T9 is synonymous with reasonably priced, nonlethal personal defense. It's lighter and slimmer than the standard stutter pistol, trading range and clip capacity for easy concealment and use by people who aren't highly trained. 'Point and say good-night' is the tag line for SekureTek's Falcon ads, and it's just about that easy. (Payload: Compressed air)"
+                    },
+                    {
+                        "name": "Condor X7 Stutter Pistol",
+                        "skill": "Ranged-pistol",
+                        "acc": "0",
+                        "md": "F",
+                        "range": "8/16/40",
+                        "type": "LI/O",
+                        "damage": "d6+3s/d8+3s/d12+3s",
+                        "act": "3",
+                        "clip": "8 shots",
+                        "mass": "1.25",
+                        "hide": "+1",
+                        "avail": "Com",
+                        "cost": "850",
+                        "description": "Professional peacekeepers prefer a more capable weapon than the light stutter pistols favored for personal defense. The Condor is an example of the heavy stutter pistol, a weapon designed for the subdual of armed, dangerous criminals. One hit almost always dazes or knocks out an unarmored opponent, and even armored targets can be brought down with accurate and sustained fire. (Payload: Compressed air)"
+                    },
+                    {
+                        "name": "Cyclone 700 Stutter SMG",
+                        "skill": "Ranged-SMG",
+                        "acc": "0",
+                        "md": "B/A",
+                        "range": "10/20/80",
+                        "type": "LI/O",
+                        "damage": "d6+2s/d8+2s/d8+4s",
+                        "act": "4",
+                        "clip": "20 bursts",
+                        "mass": "3",
+                        "hide": "+1",
+                        "avail": "Con",
+                        "cost": "1000",
+                        "description": "The stutter SMG isn't a real submachine gun, of course; it's referred to as an SMG because of its high cyclic rate of fire. It's intended for use in close-quarters riot control or police raid situations in which the authorities must subdue a large number of people in a very short time. Stutter SMGs are also favored by special forces teams attempting to take prisoners instead of simply killing their enemies. (Payload: Compressed air)"
+                    },
+                    {
+                        "name": "Sirocco 100 Stutter Rifle",
+                        "skill": "Ranged-rifle",
+                        "acc": "-1",
+                        "md": "F",
+                        "range": "20/40/200",
+                        "type": "LI/O",
+                        "damage": "d6+3s/d8+3s/d12+3s",
+                        "act": "2",
+                        "clip": "12 shots",
+                        "mass": "3.5",
+                        "hide": "-",
+                        "avail": "Con",
+                        "cost": "750",
+                        "description": "In situations where you're only going to get one chance to stun an opponent, the stutter rifle's a good choice. It offers a longer range, more hitting power, and better accuracy than any other stutter weapon, making it perfect for taking out a problem with one clean shot at distance. The Sirocco is renowned as a scout's weapon, durable and effective; last year it won Merrick's Triple-Bullseye for best in class. (Payload: Compressed air)"
+                    },
+                    {
+                        "name": "Tauri 9 Impact Pistol",
+                        "skill": "Ranged-pistol",
+                        "acc": "0",
+                        "md": "F/B",
+                        "range": "4/12/36",
+                        "type": "LI/O",
+                        "damage": "2d4s/d6+1w/d6+3w",
+                        "act": "4",
+                        "clip": "12 shots/4 bursts",
+                        "mass": "1",
+                        "hide": "+2",
+                        "avail": "Con",
+                        "cost": "1150",
+                        "description": "A deadly refinement of stutter weapon technology, the impact pistol fires an even more powerful blast of compressed air that can powder concrete at close range. It can be set for a high-speed mode that allows burst fire (but not full automatic), or for low-speed, single-shot mode. Like any stutter weapon, the impact pistol doesn't work in vacuum due to the lack of air to compress. (Payload: Compressed air)"
+                    },
+                    {
+                        "name": "Apache LX Reflex Bow",
+                        "skill": "Ranged-bow",
+                        "acc": "0",
+                        "md": "F",
+                        "range": "50/100/250",
+                        "type": "LI/O",
+                        "damage": "d4+2w/d6+2w/d4+1m",
+                        "act": "2",
+                        "clip": "1 shot",
+                        "mass": "1",
+                        "hide": "-",
+                        "avail": "Com",
+                        "cost": "650",
+                        "description": "The bow's greatest advantage is silence and stealth. It has no muzzle flash or loud report to give away the user's location, making it perfect for dense terrain such as jungle or heavy brush. Its disadvantage is the low rate of fire (after each 'shot', the user must waste an action to ready another arrow, or shoot with a +2 step penalty) and its size, which prevents it from being fired from a prone position. (Payload: Razor-tipped arrow)"
+                    }
+                ]
+            },
+            {
+                "name": "PL 8: Energy Age",
+                "items": [
+                    {
+                        "name": "Automaser",
+                        "skill": "Mod-SMG",
+                        "acc": "-1",
+                        "md": "B/A",
+                        "range": "20/60/120",
+                        "type": "En/O",
+                        "damage": "d6w/d6+2w/d4m",
+                        "act": "4",
+                        "clip": "-/20",
+                        "mass": "3",
+                        "hide": "-",
+                        "avail": "Mil",
+                        "cost": "20000",
+                        "description": "This submachine gun is a heavy maser pistol (see below) capable of full automatic fire. It uses a small mass reactor and an internal antenna array to create a broadband blast of electromagnetic energy, combining the nastier features of a laser and a microwave beam."
+                    },
+                    {
+                        "name": "Pistol, hvy maser",
+                        "skill": "Mod-pistol",
+                        "acc": "-1",
+                        "md": "F",
+                        "range": "20/40/80",
+                        "type": "En/G",
+                        "damage": "d6+1w/2d4+1w/d4+1m",
+                        "act": "3",
+                        "clip": "30",
+                        "mass": "2",
+                        "hide": "+1",
+                        "avail": "Mil",
+                        "cost": "12000",
+                        "description": "The heavy maser pistol harnesses the power of a miniature mass reactor to create destructive bolts of broadband electromagnetic radiation. This results in a beam with the cutting or penetrating power of a high-grade laser, coupled with the scorching and charring of a microwave burst."
+                    },
+                    {
+                        "name": "Pistol, maser",
+                        "skill": "Mod-pistol",
+                        "acc": "-2",
+                        "md": "F",
+                        "range": "10/20/60",
+                        "type": "En/O",
+                        "damage": "d6w/d6+2w/d4m",
+                        "act": "4",
+                        "clip": "40",
+                        "mass": "1",
+                        "hide": "+2",
+                        "avail": "Con",
+                        "cost": "8000",
+                        "description": "The maser pistol—one of the most accurate weapons ever produced—is a less powerful version of the heavy maser pistol."
+                    },
+                    {
+                        "name": "Rifle, hvy maser",
+                        "skill": "Mod-rifle",
+                        "acc": "-1",
+                        "md": "F/B/A",
+                        "range": "40/200/500",
+                        "type": "En/G",
+                        "damage": "d8+1w/d12w/d6+1m",
+                        "act": "3",
+                        "clip": "60/20",
+                        "mass": "5",
+                        "hide": "-",
+                        "avail": "Mil",
+                        "cost": "18000",
+                        "description": "This weapon works on the same principles as the maser pistol, but adds greater range and full auto capability."
+                    },
+                    {
+                        "name": "Rifle, maser",
+                        "skill": "Mod-rifle",
+                        "acc": "-2",
+                        "md": "F/B/A",
+                        "range": "60/120/400",
+                        "type": "En/O",
+                        "damage": "d6+2w/2d4+2w/d4+2m",
+                        "act": "4",
+                        "clip": "90/30",
+                        "mass": "4",
+                        "hide": "-",
+                        "avail": "Mil",
+                        "cost": "15000",
+                        "description": "This is a smaller, more accurate, and less powerful version of the heavy maser rifle."
+                    }
+                ]
+            }
         ]
-      },
-      {
-        "name": "PL 2: Middle Ages",
-        "items": [
-          { "name": "Broad sword", "skill": "Melee-blade", "acc": "0", "type": "LI/O", "damage": "d4+2w/d6+2w/d4m", "actions": "2", "mass": "3", "hide": "-", "avail": "Con", "cost": "200", "description": "A heavy, double-edged sword designed for cutting." },
-          { "name": "Flail", "skill": "Melee-bludgeon", "acc": "+1", "type": "LI/O", "damage": "d6+2s/d4+2w/d6+2w", "actions": "2", "mass": "4", "hide": "-", "avail": "Com", "cost": "150", "description": "A striking weapon consisting of a stick with a swinging metal head." },
-          { "name": "Great ax", "skill": "Melee-blade", "acc": "+1", "type": "LI/O", "damage": "d6+1w/d6+2w/d4+1m", "actions": "2", "mass": "5", "hide": "-", "avail": "Com", "cost": "100", "description": "A massive two-handed axe capable of devastating strikes." },
-          { "name": "Nunchaku", "skill": "Melee-bludgeon", "acc": "0", "type": "LI/O", "damage": "d6s/d6+2s/d8+3s", "actions": "3", "mass": "1", "hide": "+2", "avail": "Com", "cost": "75", "description": "Two sticks connected by a short chain or rope." },
-          { "name": "Polearm", "skill": "Melee-blade", "acc": "+1", "type": "LI/O", "damage": "d6+1w/d4+3w/d4+1m", "actions": "1", "mass": "5", "hide": "-", "avail": "Com", "cost": "50", "description": "A weapon with a long shaft and a cutting or thrusting head." }
+    },
+    "heavy": {
+        "columns": [
+            {
+                "name": "Weapon",
+                "key": "name"
+            },
+            {
+                "name": "Skill",
+                "key": "skill"
+            },
+            {
+                "name": "Acc",
+                "key": "acc"
+            },
+            {
+                "name": "Md",
+                "key": "md"
+            },
+            {
+                "name": "Range (S/M/L)",
+                "key": "range"
+            },
+            {
+                "name": "Type",
+                "key": "type"
+            },
+            {
+                "name": "Damage (O/G/A)",
+                "key": "damage"
+            },
+            {
+                "name": "Act.",
+                "key": "act"
+            },
+            {
+                "name": "Clip",
+                "key": "clip"
+            },
+            {
+                "name": "Mass",
+                "key": "mass"
+            },
+            {
+                "name": "Hide",
+                "key": "hide"
+            },
+            {
+                "name": "Avail",
+                "key": "avail"
+            },
+            {
+                "name": "Cost ($)",
+                "key": "cost"
+            },
+            {
+                "name": "Description",
+                "key": "description",
+                "hidden": true
+            }
+        ],
+        "groups": [
+            {
+                "name": "PL 4: Industrial Age",
+                "items": [
+                    {
+                        "name": "Flamethrower",
+                        "skill": "Hvy-direct",
+                        "acc": "0",
+                        "md": "F",
+                        "range": "6/12/30",
+                        "type": "En/O",
+                        "damage": "d6w/d6+3w/d8+3w",
+                        "act": "2",
+                        "clip": "12",
+                        "mass": "22",
+                        "hide": "-",
+                        "avail": "Mil",
+                        "cost": "500",
+                        "description": "This device consists of an incendiary fuel tank (worn slung across the back) and a gunlike nozzle and hose. The weapon projects a stream of ignited fuel that can hit a target as far away as 30 meters.<br />Fireproof or heat-shielded objects suffer half or no damage depending on the level of their protection. Flammable objects ignite and continue to burn for d6 rounds, suffering d4-2 points of wound damage each round or until the fire is extinguished. A flamethrower weighs 6 kg when its tank is empty."
+                    },
+                    {
+                        "name": "Grenade, frag.",
+                        "skill": "Athl-throw",
+                        "acc": "+1",
+                        "md": "F",
+                        "range": "Per STR",
+                        "type": "HI/G",
+                        "damage": "d4w/d4+2w/d6+2w",
+                        "act": "2",
+                        "clip": "1",
+                        "mass": "1",
+                        "hide": "+2",
+                        "avail": "Mil",
+                        "cost": "75",
+                        "description": "The earliest version of this explosive device is difficult to throw accurately, but it can do formidable damage to anything that's nearby when it goes off. All targets within 2 meters of a frag grenade's explosion suffer Amazing damage (d6+2w); targets within 6 meters suffer Good damage (d4+2w); and targets within 10 meters suffer Ordinary damage (d4w). Anything farther than 10 meters away isn't affected by the blast."
+                    },
+                    {
+                        "name": "Machine gun, .30",
+                        "skill": "Hvy-direct",
+                        "acc": "0",
+                        "md": "A",
+                        "range": "60/200/600",
+                        "type": "HI/O",
+                        "damage": "d6w/d6+3w/d6m",
+                        "act": "4",
+                        "clip": "50",
+                        "mass": "10",
+                        "hide": "-",
+                        "avail": "Mil",
+                        "cost": "2000",
+                        "description": "This fairly light, air-cooled machine gun came to prominence on battlefields of the era. The mechanism behind the machine gun is brilliant and simple: propellant and energy left over from expending a round of ammunition is used to load the next round into the chamber. It fires its bullets in rapid succession—much faster than a character could empty a single-shot gun."
+                    },
+                    {
+                        "name": "Rocket launcher",
+                        "skill": "Hvy-direct",
+                        "acc": "+1",
+                        "md": "F",
+                        "range": "30/60/150",
+                        "type": "HI/G",
+                        "damage": "d6w/d4+3w/d4m",
+                        "act": "1",
+                        "clip": "1",
+                        "mass": "5",
+                        "hide": "-",
+                        "avail": "Mil",
+                        "cost": "1200",
+                        "description": "Introduced as an infantryman's antitank weapon, the shoulder-fired rocket launcher is also useful for busting bunkers and heavy fire support. Many PL 5 variations of this weapon (the LAW rocket, the RPG-7, etc.) also exist."
+                    }
+                ]
+            },
+            {
+                "name": "PL 5: Information Age",
+                "items": [
+                    {
+                        "name": "Grenade launcher",
+                        "skill": "Hvy-indirect",
+                        "acc": "0",
+                        "md": "F",
+                        "range": "50/200/350",
+                        "type": "As load",
+                        "damage": "As load",
+                        "act": "3",
+                        "clip": "1",
+                        "mass": "2",
+                        "hide": "-",
+                        "avail": "Mil",
+                        "cost": "1000",
+                        "description": "While there are grenade launchers that mount on rifles, this item is a separate weapon specifically designed to fire small, explosive shells. The standard launcher can accommodate a variety of loads. The two basic types of launchers are the 40mm hand mortar and the 6x40mm six-shot launcher.<br />The hand mortar resembles a simple breech-loading, single-barreled shotgun. The six-shot looks like an oversized revolver mounted on a shotgun stock. Unlike the hand mortar, the six-shot can hold six grenades at once (but can only fire them one at a time). It also costs four times the listed price. In other ways, it's identical to the hand mortar."
+                    },
+                    {
+                        "name": "Grenade, concus.",
+                        "skill": "Athl-throw",
+                        "acc": "+1",
+                        "md": "F",
+                        "range": "Per STR",
+                        "type": "LI/O",
+                        "damage": "d6+2s/d4w/d4+1w",
+                        "act": "2",
+                        "clip": "1",
+                        "mass": "0.5",
+                        "hide": "+3",
+                        "avail": "Mil",
+                        "cost": "75",
+                        "description": "The concussion grenade is basically a half-kilogram block of TNT in a cardboard wrapper. It has a pin and arm mechanism, but no fragmentation material. The concussion grenade is considered an offensive weapon, since it can be thrown by troops in open terrain without fear of causing themselves shrapnel damage.<br />All targets within 2 meters of a concussion grenade's explosion suffer Amazing damage (d4+1w); targets from 2 to 4 meters away suffer Good damage (d4w); targets from 4 to 6 meters away suffer Ordinary damage (d6+2s); and targets beyond 6 meters aren't damaged by the blast."
+                    },
+                    {
+                        "name": "Grenade, incend.",
+                        "skill": "Athl-throw",
+                        "acc": "+1",
+                        "md": "F",
+                        "range": "Per STR",
+                        "type": "En/G",
+                        "damage": "d4w/d4+2w/d4+3w",
+                        "act": "2",
+                        "clip": "1",
+                        "mass": "0.5",
+                        "hide": "+3",
+                        "avail": "Mil",
+                        "cost": "150",
+                        "description": "This grenade releases a highly combustible chemical that ignites and throws shrapnel within a 6-meter radius.<br />All targets within 2 meters of an incendiary grenade's explosion suffer Amazing damage (d4+3w); those from 2 to 4 meters away receive Good damage (d4+2w); and those from 4 to 6 meters away receive Ordinary damage (d4w). Fireproof or heat-shielded objects suffer half or no damage depending on the level of their protection. Flammable objects ignite and continue to burn for d6+1 rounds, suffering d4-1 points of wound damage each round or until the fire is extinguished."
+                    },
+                    {
+                        "name": "Grenade, smoke",
+                        "skill": "Athl-throw",
+                        "acc": "+1",
+                        "md": "F",
+                        "range": "Per STR",
+                        "type": "Special",
+                        "damage": "Special",
+                        "act": "2",
+                        "clip": "1",
+                        "mass": "0.5",
+                        "hide": "+3",
+                        "avail": "Con",
+                        "cost": "50",
+                        "description": "This grenade releases a thick cloud of smoke that fills an area in a 6-meter radius around the explosion site. The smoke lasts for d8+4 rounds. It provides Good cover (+2 penalty to opponents' attempts to attack) and applies a +2 penalty to Awareness checks for all characters within the area of effect.<br />Some smoke grenades are filled with tear gas. Tear gas works just like smoke with the added benefit of partially incapacitating unprotected characters. Each individual in the area of effect makes a Constitution feat check to try to counter the effect of the gas: Critical Failure, helpless for 2d4 rounds; Failure, +3 penalty to all action checks and actions for 2d4 rounds; Ordinary, +2 penalty; Good, +1 penalty; Amazing, gas has no effect. Characters wearing e-suits or using respirator masks or oxygen tanks are unaffected by tear gas."
+                    },
+                    {
+                        "name": "Hvy machine gun",
+                        "skill": "Hvy-direct",
+                        "acc": "0",
+                        "md": "A",
+                        "range": "100/400/1000",
+                        "type": "HI/G",
+                        "damage": "d6+1w/2d4+2w/d8m",
+                        "act": "4",
+                        "clip": "50",
+                        "mass": "12",
+                        "hide": "-",
+                        "avail": "Mil",
+                        "cost": "5000",
+                        "description": "This weapon type includes any of the large automatic weapons that use large-caliber rounds and require a mount to control the recoil. Without the use of such a mount, penalties for using automatic fire are doubled (+2/+4/+6 instead of the usual +1/+2/+3), the user must take an additional +1 penalty for lack of accuracy, and must make a successful Strength feat check to keep from being knocked down."
+                    },
+                    {
+                        "name": "SAM, handheld",
+                        "skill": "Hvy-indirect",
+                        "acc": "0",
+                        "md": "F",
+                        "range": "1000/2000/4000",
+                        "type": "HI/G",
+                        "damage": "d4w/d6w/d6+4w",
+                        "act": "1",
+                        "clip": "1",
+                        "mass": "8",
+                        "hide": "-",
+                        "avail": "Res",
+                        "cost": "3500",
+                        "description": "This is a shoulder-fired surface-to-air missile with a heat-seeking head. When used against an airborne target that's giving off a significant amount of heat, the missile will circle around for a second attack one round later if it misses the target on its first pass."
+                    }
+                ]
+            },
+            {
+                "name": "PL 6: Fusion Age",
+                "items": [
+                    {
+                        "name": "Bantam launcher",
+                        "skill": "Hvy-indirect",
+                        "acc": "0",
+                        "md": "F",
+                        "range": "100/800/4000",
+                        "type": "As load",
+                        "damage": "As load",
+                        "act": "2",
+                        "clip": "4",
+                        "mass": "7",
+                        "hide": "-",
+                        "avail": "Mil",
+                        "cost": "4000",
+                        "description": "This portable launcher fires miniature bantam rockets. Braced on the shoulder and fired like a bazooka, the bantam launcher is light and easy to use. It has four chambers that can hold a variety of bantam rocket loads. The pistol grip has four triggers, one to activate each of the four load chambers, though only one trigger can be depressed at a time. The built-in guidance system makes this weapon accurate to extreme ranges."
+                    },
+                    {
+                        "name": "Bantam, antiair",
+                        "skill": "Hvy-indirect",
+                        "acc": "-2",
+                        "md": "F",
+                        "range": "As launcher",
+                        "type": "HI/G",
+                        "damage": "d4w/d4+2w/d4m",
+                        "act": "2",
+                        "clip": "1",
+                        "mass": "3",
+                        "hide": "+1",
+                        "avail": "Res",
+                        "cost": "1000",
+                        "description": "This projectile, about 0.5 meter long, has additional lift and guidance systems to lock onto and track low-flying aircraft. It can be triggered to seek a heat source such as a jet engine or to follow the commands of its user, who can direct it with a laser sight. The blast inflicts Amazing damage (d4m) within 4 meters of the explosion; Good damage (d4+2w) up to 8 meters away and Ordinary damage (d4w) out to 12 meters."
+                    },
+                    {
+                        "name": "Bantam, antiper.",
+                        "skill": "Hvy-indirect",
+                        "acc": "0",
+                        "md": "F",
+                        "range": "As launcher",
+                        "type": "En/O",
+                        "damage": "d6w/d6+2w/d8+2w",
+                        "act": "2",
+                        "clip": "1",
+                        "mass": "3",
+                        "hide": "+1",
+                        "avail": "Mil",
+                        "cost": "500",
+                        "description": "This rocket delivers a low-level radiation burst designed to inflict maximum damage on people while leaving vehicles and buildings intact. Amazing damage (d8+2w) is inflicted within 4 meters of impact; Good damage (d6+2w) up to 8 meters; and Ordinary damage (d6w) out to 12 meters."
+                    },
+                    {
+                        "name": "Bantam, antiveh.",
+                        "skill": "Hvy-indirect",
+                        "acc": "-2",
+                        "md": "F",
+                        "range": "As launcher",
+                        "type": "HI/G",
+                        "damage": "d4+2w/d4+4w/d4+1m",
+                        "act": "2",
+                        "clip": "1",
+                        "mass": "3",
+                        "hide": "+1",
+                        "avail": "Mil",
+                        "cost": "1000",
+                        "description": "This weapon is designed to hinder or destroy armored vehicles, but can also be used against bunkers and other hardened installations. It causes Amazing damage (d4+1m) to the target it impacts; Good damage (d4+4w) within 2 meters; and Ordinary damage (d4+2w) out to 4 meters away."
+                    },
+                    {
+                        "name": "Grenade, plasma",
+                        "skill": "Athl-throw",
+                        "acc": "+1",
+                        "md": "F",
+                        "range": "Per STR",
+                        "type": "En/G",
+                        "damage": "d4+2w/d6+2w/d4m",
+                        "act": "2",
+                        "clip": "1",
+                        "mass": "0.5",
+                        "hide": "+3",
+                        "avail": "Res",
+                        "cost": "400",
+                        "description": "This is a more powerful version of the incendiary grenade. All targets within 2 meters of a plasma grenade's explosion suffer Amazing damage (d4m); those from 2 to 4 meters away suffer Good damage (d6+2w); and those from 4 to 8 meters away take Ordinary damage (d4+2w). Fireproof or heat-shielded objects suffer half or no damage, depending on the level of their protection. Flammable objects ignite and burn for d6+1 rounds, taking d4 points of wound damage per round or until the fire is extinguished."
+                    },
+                    {
+                        "name": "Grenade, stun",
+                        "skill": "Athl-throw",
+                        "acc": "+1",
+                        "md": "F",
+                        "range": "Per STR",
+                        "type": "En/O",
+                        "damage": "d6s/d8s/d8+2s",
+                        "act": "2",
+                        "clip": "1",
+                        "mass": "0.5",
+                        "hide": "+3",
+                        "avail": "Mil",
+                        "cost": "250",
+                        "description": "The stun grenade creates a concussive wave that stuns those within the blast radius. All targets within 2 meters of the impact suffer Amazing damage (d8+2s); Good damage (d8s) is inflicted out to a distance of 4 meters; and Ordinary damage (d6s) extends to those up to 10 meters away."
+                    },
+                    {
+                        "name": "Hvy mach gun, ch",
+                        "skill": "Hvy-direct",
+                        "acc": "-1",
+                        "md": "A",
+                        "range": "200/600/1200",
+                        "type": "HI/G",
+                        "damage": "d8w/2d6w/2d4m",
+                        "act": "4",
+                        "clip": "-/50",
+                        "mass": "45",
+                        "hide": "-",
+                        "avail": "Res",
+                        "cost": "10000",
+                        "description": "This heavy machine gun makes use of charge technology to substantially improve upon the heavy machine gun of the previous era; this weapon has better range, stopping power, and accuracy. Without the use of a mount, penalties for automatic fire are doubled (+2/+4/+6), the user must take an additional +1 penalty for lack of accuracy (or disregard the weapon's accuracy bonus, if the optional rule is being used), and must make a successful Strength feat check to avoid being knocked down."
+                    },
+                    {
+                        "name": "Rail gun",
+                        "skill": "Hvy-direct",
+                        "acc": "-1",
+                        "md": "B/A",
+                        "range": "150/500/1500",
+                        "type": "HI/G",
+                        "damage": "d6w/d6+2w/d6m",
+                        "act": "4",
+                        "clip": "-/30",
+                        "mass": "20",
+                        "hide": "-",
+                        "avail": "Res",
+                        "cost": "20000",
+                        "description": "This weapon consists of a powerful electromagnetic accelerator that fires a stream of small projectiles at extremely high velocity."
+                    }
+                ]
+            },
+            {
+                "name": "PL 7: Gravity Age",
+                "items": [
+                    {
+                        "name": "Arc gun",
+                        "skill": "Hvy-direct",
+                        "acc": "-1",
+                        "md": "F",
+                        "range": "20/40/100",
+                        "type": "En/G",
+                        "damage": "d8+1s/d8w/d6+3w",
+                        "act": "2",
+                        "clip": "6",
+                        "mass": "10",
+                        "hide": "-",
+                        "avail": "Mil",
+                        "cost": "2000",
+                        "description": "This is a weapon capable of delivering a powerful electrical shock in the form of a lightning bolt. The arc gun uses a built-in, low-powered laser beam to ionize the air between the weapon and its target, creating a path for the electrical arc. Because it requires air to operate, the weapon is useless in a vacuum."
+                    },
+                    {
+                        "name": "Cannon, stutter",
+                        "skill": "Hvy-direct",
+                        "acc": "-1",
+                        "md": "F",
+                        "range": "20/40/80",
+                        "type": "LI/O",
+                        "damage": "d6+2s/d8+3s/2d6+3s",
+                        "act": "1",
+                        "clip": "2",
+                        "mass": "15",
+                        "hide": "-",
+                        "avail": "Con",
+                        "cost": "2500",
+                        "description": "A stutter cannon is a heavy weapon that consists of a backpack and attached gun. It is designed to disperse or otherwise handle a crowd without the use of lethal force. The stutter cannon produces compressed sonic waves that deliver hammerlike blows against targets. Each pulse affects all targets in a 3-meter radius."
+                    },
+                    {
+                        "name": "Cannon, 25mm sabot",
+                        "skill": "Hvy-direct",
+                        "acc": "0",
+                        "md": "F",
+                        "range": "100/200/2000",
+                        "type": "HI/G",
+                        "damage": "d8w/d4+1m/d6+2m",
+                        "act": "2",
+                        "clip": "20",
+                        "mass": "10",
+                        "hide": "-",
+                        "avail": "Mil",
+                        "cost": "10000",
+                        "description": "The backpack contains an electromagnetic accelerator that releases a powered 25mm projectile with amazing speed and force. The cannon's energy cell must be replaced after the weapon has fired two clips."
+                    },
+                    {
+                        "name": "Grenade, pulse",
+                        "skill": "Athl-throw",
+                        "acc": "+1",
+                        "md": "F",
+                        "range": "Per STR",
+                        "type": "En/G",
+                        "damage": "d4+2s/d6+2s/d8+2s",
+                        "act": "2",
+                        "clip": "1",
+                        "mass": "0.5",
+                        "hide": "+3",
+                        "avail": "Res",
+                        "cost": "350",
+                        "description": "This grenade consists of a powerful capacitor and a special ceramic shell that functions as a spherical antenna array. When it detonates, the capacitor releases a pulse of electromagnetic energy in the immediate area. This pulse can stun unprotected humans, but it's more useful for damaging electronic equipment—computers, sensors, vehicle control systems, servomotors, and the like. The discharge causes Amazing damage (d8+2s) within 2 meters; Good damage (d6+2s) out to 4 meters; and Ordinary damage (d4+2s) out to 10 meters."
+                    },
+                    {
+                        "name": "Grenade, tracer",
+                        "skill": "Athl-throw",
+                        "acc": "+1",
+                        "md": "F",
+                        "range": "Per STR",
+                        "type": "HI/G",
+                        "damage": "d4+2w/d6+2w/d4+2m",
+                        "act": "2",
+                        "clip": "1",
+                        "mass": "0.5",
+                        "hide": "+3",
+                        "avail": "Mil",
+                        "cost": "350",
+                        "description": "This is a smart shaped-charge grenade. Though it can be manually tossed or hurled by a launcher, once it reaches its target area it searches for a moving target to make contact with. Upon impact, the grenade explodes and releases its razor-sharp fragments. Amazing damage (d4+2m) is suffered by the target it impacts with (if any); Good damage (d6+2w) extends out to 2 meters; and Ordinary damage (d4+2w) extends to 4 meters. If no target is within 2 meters of its landing point, the grenade falls to the ground and waits up to 2 rounds for a target to approach within its detection range of 2 meters. If those 2 rounds go by without it being approached by a target the tracer grenade automatically deactivates. In such a case, it can be salvaged and reused."
+                    },
+                    {
+                        "name": "Plasma gun",
+                        "skill": "Hvy-direct",
+                        "acc": "0",
+                        "md": "F",
+                        "range": "40/80/200",
+                        "type": "En/G",
+                        "damage": "d8w/d8+3w/d12+3w",
+                        "act": "2",
+                        "clip": "8",
+                        "mass": "6",
+                        "hide": "-",
+                        "avail": "Mil",
+                        "cost": "12000",
+                        "description": "The plasma gun consists of a backpack and attached gun. Using a powerful electromagnetic accelerator, it throws blasts of superheated plasma generated by the delivery of an electrical shock to a large electrochemical shell."
+                    },
+                    {
+                        "name": "Quantum mini",
+                        "skill": "Hvy-direct",
+                        "acc": "0",
+                        "md": "F/B/A",
+                        "range": "100/250/800",
+                        "type": "En/G",
+                        "damage": "d8+1w/d8+3w/d6m",
+                        "act": "4",
+                        "clip": "90/30",
+                        "mass": "10",
+                        "hide": "+1",
+                        "avail": "Res",
+                        "cost": "15000",
+                        "description": "This weapon adds a backpack accelerator to the quantum rifle, producing particle beams with longer range and more lethal force. All personal quantum weapons are extremely expensive and highly restricted, making them rare and often illegal to own and operate. Like the rifle, the minigun is capable of burst mode and autofire."
+                    },
+                    {
+                        "name": "KZ 160 13mm Charge MG",
+                        "skill": "Heavy-direct fire",
+                        "acc": "-1",
+                        "md": "A",
+                        "range": "200/600/1200",
+                        "type": "HI/G",
+                        "damage": "d8w/2d6w/d8m",
+                        "act": "4",
+                        "clip": "50 bursts",
+                        "mass": "22.5",
+                        "hide": "-",
+                        "avail": "Res",
+                        "cost": "9500",
+                        "description": "The KZ 160 is a typical heavy charge machine gun, usually employed as a crew-served or vehicle-mounted weapon. Heroes who succeed on a Strength feat check can fire the KZ 160 from the hip at a +1 step penalty, but the double-autofire penalty doesn't apply to this weapon-the KZ 160 is a much lighter and steadier weapon than the standard heavy charge machine gun. (Payload: 13mm bullet)"
+                    },
+                    {
+                        "name": "Ronin 900 25mm Sabot Cannon",
+                        "skill": "Heavy-direct fire",
+                        "acc": "+1",
+                        "md": "F",
+                        "range": "100/200/500",
+                        "type": "HI/G",
+                        "damage": "d8w/d4+1m/d6+2m",
+                        "act": "2",
+                        "clip": "20",
+                        "mass": "10",
+                        "hide": "-",
+                        "avail": "Res",
+                        "cost": "10000",
+                        "description": "Designed to defeat vehicles and the best personal armor, the sabot cannon is the embodiment of raw firepower. Its oversized slug can punch gaping holes in almost anything. Its only weakness is its lack of accuracy compared to other heavy weapons-the sabot cannon's round has to make hard contact to inflict damage, and doesn't offer the wide beam of a plasma cannon or the fire volume of a machine gun. (Payload: 20mm sabot ramjet)"
+                    },
+                    {
+                        "name": "Supernova XI Mass Cannon",
+                        "skill": "Heavy-direct fire",
+                        "acc": "0",
+                        "md": "F",
+                        "range": "6/20/60",
+                        "type": "En/G",
+                        "damage": "d8+1w/d12+1w/d8+1m",
+                        "act": "2",
+                        "clip": "8 shots",
+                        "mass": "8.75",
+                        "hide": "-",
+                        "avail": "Res",
+                        "cost": "6825",
+                        "description": "The mass cannon is something of a white elephant. While it's a powerful, hard-hitting gun, other heavy weapons hit just as hard with better range characteristics. The weapon's designers hoped to follow up on the success of its smaller cousins by designing a true man-portable antivehicular mass weapon, but they weren't able to achieve the kind of armor penetration increase they had hoped for. (Payload: Gravity point-source)"
+                    },
+                    {
+                        "name": "Roc Z1 Stutter Cannon",
+                        "skill": "Heavy-direct fire",
+                        "acc": "-1",
+                        "md": "F",
+                        "range": "20/40/80",
+                        "type": "LI/O",
+                        "damage": "d6+2s/d8+3s/2d6+3s",
+                        "act": "2",
+                        "clip": "10 shots",
+                        "mass": "15",
+                        "hide": "-",
+                        "avail": "Con",
+                        "cost": "2500",
+                        "description": "When it's important to subdue a number of people in a hurry, the stutter cannon is the best tool for the job. The cannon affects all targets in a 3-meter radius, inflicting damage one category less than the damage inflicted to the primary target. For example, if the user scores a Good hit (d8+3s) against one rioter, all other people within 3 meters suffer Ordinary damage (d6+2s). Ordinary hits inflict no damage to nearby targets. (Payload: Compressed air)"
+                    }
+                ]
+            },
+            {
+                "name": "PL 8: Energy Age",
+                "items": [
+                    {
+                        "name": "Bantam, starload",
+                        "skill": "Hvy-indirect",
+                        "acc": "-2",
+                        "md": "F",
+                        "range": "As launcher",
+                        "type": "En/A",
+                        "damage": "d8+2w/d4+1m/d6+1m",
+                        "act": "2",
+                        "clip": "1",
+                        "mass": "3",
+                        "hide": "+1",
+                        "avail": "Res",
+                        "cost": "2000",
+                        "description": "This projectile uses a miniature mass reactor to power an explosion, creating a blast that targets people and vehicles with ferocious punishment. The blast does Amazing damage (d6+1m) to anything within 6 meters; Good damage (d4+1m) out to 12 meters; and Ordinary damage (d8+2w) out to 20 meters."
+                    },
+                    {
+                        "name": "Cannon, maser",
+                        "skill": "Hvy-direct",
+                        "acc": "-1",
+                        "md": "F",
+                        "range": "80/200/600",
+                        "type": "En/G",
+                        "damage": "d8w/d4+1m/d6+2m",
+                        "act": "2",
+                        "clip": "12",
+                        "mass": "10",
+                        "hide": "-",
+                        "avail": "Res",
+                        "cost": "25000",
+                        "description": "The maser cannon employs a miniature mass reactor and requires the use of a heavy backpack accelerator to supply the energy for maser blasts."
+                    },
+                    {
+                        "name": "Grenade, mass",
+                        "skill": "Athl-throw",
+                        "acc": "+1",
+                        "md": "F",
+                        "range": "Per STR",
+                        "type": "En/G",
+                        "damage": "d6+2s/d6+2w/d6m",
+                        "act": "2",
+                        "clip": "1",
+                        "mass": "2",
+                        "hide": "-",
+                        "avail": "Res",
+                        "cost": "1000",
+                        "description": "This grenade detonates a tiny mass reactor, resulting in a few cubic meters of cosmic catastrophe. Heat, light, and all forms of broadband electromagnetic radiation slag anything in the general vicinity of the grenade. All targets within 2 meters of the explosion suffer Amazing damage (d6m); Good damage (d6+2w) is inflicted on those within 4 meters; and Ordinary damage (d6+2s) is suffered by those within 10 meters of the blast."
+                    },
+                    {
+                        "name": "Mass launcher",
+                        "skill": "Hvy-indirect",
+                        "acc": "-1",
+                        "md": "F",
+                        "range": "20/300/1000",
+                        "type": "En/G",
+                        "damage": "d6+1w/d6+3w/d4+1m",
+                        "act": "1",
+                        "clip": "4",
+                        "mass": "15",
+                        "hide": "-",
+                        "avail": "Res",
+                        "cost": "8000",
+                        "description": "This indirect-fire weapon can only be used on a planetary surface, or in an artificial environment with at least light gravity. It launches a wave of gravity energy into the air and relies on the gravity well of a planet to both return the energy to the ground and magnify its power.<br />All targets within 4 meters of the blast suffer Amazing damage (d4+1m); targets within 8 meters suffer Good damage (d6+3w); and targets within 12 meters suffer Ordinary damage (d6+1w)."
+                    }
+                ]
+            }
         ]
-      },
-      {
-        "name": "PL 3: Age of Reason",
-        "items": [
-          { "name": "Cutlass", "skill": "Melee-blade", "acc": "+1", "type": "LI/O", "damage": "d4+1w/d6+1w/d6+3w", "actions": "3", "mass": "3", "hide": "-", "avail": "Com", "cost": "100", "description": "A short, broad sabre or slashing sword, with a straight or slightly curved blade." },
-          { "name": "Katana", "skill": "Melee-blade", "acc": "-1", "type": "LI/O", "damage": "d4+2w/d6+2w/d4+1m", "actions": "3", "mass": "2", "hide": "+1", "avail": "Con", "cost": "1000", "description": "A traditional Japanese sword with a curved, single-edged blade." },
-          { "name": "Rapier", "skill": "Melee-blade", "acc": "-1", "type": "LI/O", "damage": "d4w/d4+1w/d4+2w", "actions": "3", "mass": "2", "hide": "+2", "avail": "Com", "cost": "300", "description": "A slender, sharply pointed sword, ideally used for thrusting attacks." },
-          { "name": "Saber", "skill": "Melee-blade", "acc": "0", "type": "LI/O", "damage": "d4w/d4+2w/2d4+1w", "actions": "3", "mass": "2", "hide": "+1", "avail": "Com", "cost": "250", "description": "A sword with a curved blade, associated with light cavalry." }
-        ]
-      },
-      {
-        "name": "PL 4: Industrial Age",
-        "items": [
-          { "name": "Bayonet", "skill": "Melee-blade", "acc": "+1", "type": "LI/O", "damage": "d4w/d4+2w/d4m", "actions": "3", "mass": "2", "hide": "-", "avail": "Com", "cost": "50", "description": "Originally a dagger crudely attached to a rifle's muzzle, the bayonet eventually becomes a standard attachment.<br />In effect, a bayonet turns a rifle into a spear." }
-        ]
-      },
-      {
-        "name": "PL 5: Information Age",
-        "items": [
-          { "name": "Combat knife", "skill": "Melee-blade", "acc": "0", "type": "LI/O", "damage": "d4+1w/d4+2w/d4+3w", "actions": "4", "mass": "1", "hide": "+3", "avail": "Any", "cost": "35", "description": "This weapon is a high-tech version of the standard dagger or knife, composed of tempered steel, sophisticated polymers, or ceramic blends. A combat knife is typically equipped with additional features:<br />A small compass can be inlaid in the handle, or a hollow handle can contain several meters of fishing line and a hook, a dozen matches, or some other suitably sized piece of survival gear." },
-          { "name": "Stun baton", "skill": "Melee-powered", "acc": "0", "type": "En/O", "damage": "d4+1s/d4+3s/d6+4s", "actions": "3", "mass": "2", "hide": "+2", "avail": "Com", "cost": "300", "description": "This low-powered version of the pulse baton is sometimes known as a taser. Above the insulated handle, its surface crackles with a high-voltage, low-current electrical charge that can temporarily short-circuit the human nervous system.<br />Insulated gloves are necessary to prevent the user from accidentally shocking himself. Without gloves, the user suffers Ordinary damage (d4+1s) if his Melee Attack-powered weapon skill check result is a Critical Failure." }
-        ]
-      },
-      {
-        "name": "PL 6: Fusion Age",
-        "items": [
-          { "name": "Chainsword", "skill": "Melee-powered", "acc": "+1", "type": "LI/O", "damage": "d8+1w/d8+2w/d4+1m", "actions": "2", "mass": "5", "hide": "-", "avail": "Mil", "cost": "1500", "description": "This device consists of a meter-long blade either built into a heavy forearm gauntlet and power supply or a standard weapon hilt. The blade is edged with a molecule-thin razor of super-tough artificial crystals, driven in chainsaw fashion along the weapon's edge.<br />This provides a powerful cutting edge and a particularly lethal melee weapon." },
-          { "name": "Pulse baton", "skill": "Melee-powered", "acc": "0", "type": "En/O", "damage": "d8s/d4+2w/d6+2w", "actions": "3", "mass": "2", "hide": "+2", "avail": "Con", "cost": "500", "description": "The first powered melee weapon capable of inflicting lethal damage, the pulse baton is a half-meter-long rod that delivers a concentrated energy discharge when it hits a target.<br />While the baton appears to be a simple flashlight, the operator must wear a pair of insulated gloves to prevent an accidental discharge." }
-        ]
-      },
-      {
-        "name": "PL 7: Gravity Age",
-        "items": [
-          { "name": "Gravmace", "skill": "Melee-powered", "acc": "0", "type": "LI/O", "damage": "d8+2s/d6+2w/d8+2w", "actions": "3", "mass": "3", "hide": "-", "avail": "Con", "cost": "850", "description": "The gravmace consists of a meter-long handle with a gravitonic capacitor inside a striking head. Powerful capacitors manipulate the weapon's mass, making it strike like a sledgehammer while being swung like a willow switch." },
-          { "name": "Power cestus", "skill": "Unarmed-brawl", "acc": "0", "type": "LI/O", "damage": "d4+2s/d4w/d4+1w", "actions": "4", "mass": "3", "hide": "+1", "avail": "Con", "cost": "500", "description": "The power cestus consists of an elbow-length gauntlet of CF (carbonate fiber) weave, ending in a heavy fighting glove that covers the user's hand. Gravity technology allows the wielder to strike blows of astonishing power with a gloved hand." }
-        ]
-      },
-      {
-        "name": "PL 8: Energy Age",
-        "items": [
-          { "name": "Star sword", "skill": "Melee-powered", "acc": "0", "type": "En/G", "damage": "d6+1w/2d6w/d4+3m", "actions": "3", "mass": "2", "hide": "+2", "avail": "Res", "cost": "7000", "description": "The star sword generates a complex, phased magnetic field in the rough shape of a sword blade, and then fills the interior of this field with white-hot plasma.<br />On contact, the containment field releases a stream of plasma that can burn or cut through almost anything." },
-          { "name": "Tri-staff", "skill": "Melee-powered", "acc": "-1", "type": "En/O", "damage": "d8+2w/3d4+1w/d6m", "actions": "3", "mass": "3", "hide": "-", "avail": "Res", "cost": "4000", "description": "This 2-meter-long staff is topped by a three-pronged blade. When the staff is activated, an internal power source suffuses it with a soft glow. This aura acts as a defensive force field that improves the Strength and Dexterity resistance modifiers of its wielder by 1 step." }
-        ]
-      }
-    ]
-  },
-  "ranged": {
-    "columns": [
-      { "name": "Weapon", "key": "name" },
-      { "name": "Skill", "key": "skill" },
-      { "name": "Acc", "key": "acc" },
-      { "name": "Md", "key": "md" },
-      { "name": "Range (S/M/L)", "key": "range" },
-      { "name": "Type", "key": "type" },
-      { "name": "Damage (O/G/A)", "key": "damage" },
-      { "name": "Act.", "key": "act" },
-      { "name": "Clip", "key": "clip" },
-      { "name": "Mass", "key": "mass" },
-      { "name": "Hide", "key": "hide" },
-      { "name": "Avail", "key": "avail" },
-      { "name": "Cost ($)", "key": "cost" },
-      { "name": "Description", "key": "description", "hidden": true }
-    ],
-    "groups": [
-      {
-        "name": "PL 0: Stone Age",
-        "items": [
-          { "name": "Bow, short", "skill": "Prim-bow", "acc": "+1", "md": "F", "range": "20/40/100", "type": "LI/O", "damage": "d4w/d4+2w/d4+3w", "act": "3", "clip": "10", "mass": "1", "hide": "-", "avail": "Any", "cost": "100", "description": "This is a simple bow made from a single piece of wood. Because archery and bowhunting exist as sports, short bows made of high-tech materials may be readily available at higher Progress Levels." },
-          { "name": "Sling", "skill": "Prim-sling", "acc": "+1", "md": "F", "range": "10/20/60", "type": "LI/O", "damage": "d4s/d4+2s/d4w", "act": "2", "clip": "10", "mass": "0.1", "hide": "-", "avail": "Any", "cost": "25", "description": "This weapon is a simple looped strap in which a stone is whirled and then let fly. Small stones originally serve as ammunition, but the sling at PL 2 and higher uses metal bullets, whose aerodynamic shape increases the sling's range by 10 meters in each category." }
-        ]
-      },
-      {
-        "name": "PL 1: Bronze/Iron Age",
-        "items": [
-          { "name": "Javelin", "skill": "Athl-throw", "acc": "0", "md": "F", "range": "Per STR", "type": "LI/O", "damage": "d4w/d4+1w/d4+2w", "act": "1", "clip": "1", "mass": "1", "hide": "-", "avail": "Com", "cost": "50", "description": "A light throwing spear, sometimes fashioned from metal, the javelin was often used in hunting. Its balance and mass make it an ideal throwing weapon, increasing the wielder's normal throwing range by 50 percent." }
-        ]
-      },
-      {
-        "name": "PL 2: Middle Ages",
-        "items": [
-          { "name": "Bow, long", "skill": "Prim-bow", "acc": "+1", "md": "F", "range": "40/80/200", "type": "LI/O", "damage": "d4+1w/d6+1w/d4m", "act": "2", "clip": "10", "mass": "1", "hide": "-", "avail": "Com", "cost": "200", "description": "A famous weapon, the long bow actually exceeds the PL 3 flintlock rifle in range, accuracy, and rate of fire and does nearly as much damage. The long bow remained the weapon of choice for many soldiers long after the advent of firearms." },
-          { "name": "Crossbow", "skill": "Prim-bow", "acc": "0", "md": "F", "range": "50/100/250", "type": "LI/O", "damage": "d4+2w/d6+2w/d4+1m", "act": "1", "clip": "1", "mass": "2", "hide": "-", "avail": "Con", "cost": "400", "description": "Consisting of a bow mounted crosswise on a wooden or metal stock, the crossbow is fired much like a gun. Although slower and clumsier than a long bow, it outranges the bow and has superior striking power." },
-          { "name": "Shuriken", "skill": "Athl-throw", "acc": "+2", "md": "F", "range": "Per STR", "type": "LI/O", "damage": "d4s/d4w/d4+1w", "act": "4", "clip": "1", "mass": "0.1", "hide": "+4", "avail": "Com", "cost": "10", "description": "Though these \"throwing stars\" are not extremely lethal, the metal, sharp-pointed disks are easy to conceal." }
-        ]
-      },
-      {
-        "name": "PL 3: Age of Reason",
-        "items": [
-          { "name": "Musket, flintlock", "skill": "Prim-flint", "acc": "+2", "md": "F", "range": "20/40/100", "type": "HI/O", "damage": "d6+1w/d6+3w/d6+1m", "act": "1", "clip": "1", "mass": "4", "hide": "-", "avail": "Com", "cost": "350", "description": "The musket was the most successful of the black powder weapons. By later standards it is inaccurate and unreliable, but its 50 to 60 caliber bullet deserves respect." },
-          { "name": "Pistol, flintlock", "skill": "Prim-flint", "acc": "+2", "md": "F", "range": "4/8/16", "type": "HI/O", "damage": "d4+2w/d6+2w/d4+1m", "act": "2", "clip": "1", "mass": "2", "hide": "+2", "avail": "Com", "cost": "200", "description": "The flintlock pistol employs the same mechanism and muzzle-loading powder and shot as the flintlock musket." },
-          { "name": "Rifle, long", "skill": "Prim-flint", "acc": "+1", "md": "F", "range": "30/60/150", "type": "HI/O", "damage": "d6w/d6+2w/d6m", "act": "1", "clip": "1", "mass": "5", "hide": "-", "avail": "Com", "cost": "500", "description": "Also known as a Kentucky rifle, this flintlock weapon was more accurate than the musket, but fired a smaller ball." }
-        ]
-      },
-      {
-        "name": "PL 4: Industrial Age",
-        "items": [
-          { "name": "Derringer", "skill": "Mod-pistol", "acc": "+1", "md": "F", "range": "2/6/12", "type": "HI/O", "damage": "d4-1w/d6w/d6+2w", "act": "2", "clip": "2", "mass": "0.25", "hide": "+4", "avail": "Com", "cost": "100", "description": "The smallest pistols ever made, these weapons appeared with flintlock actions early in the 19th century but didn't become popular until the 1870s." },
-          { "name": "Pistol, .32 rev.", "skill": "Mod-pistol", "acc": "+1", "md": "F", "range": "4/8/30", "type": "HI/O", "damage": "d4w/d6w/d4m", "act": "3", "clip": "6", "mass": "1", "hide": "+3", "avail": "Com", "cost": "200", "description": "Light revolvers and small handguns are in common use for centuries after their invention. The small size of the .32 caliber makes it ideal for concealment in a hidden holster or pocket." },
-          { "name": "Pistol, .45 rev.", "skill": "Mod-pistol", "acc": "+1", "md": "F", "range": "4/10/40", "type": "HI/O", "damage": "d4+1w/d4+2w/d6m", "act": "3", "clip": "6", "mass": "1", "hide": "+2", "avail": "Com", "cost": "250", "description": "A heavier pistol, it's not quite as easy to conceal as the .32, but delivers greater damage and has longer range." },
-          { "name": "Rifle, .30 bolt", "skill": "Mod-rifle", "acc": "0", "md": "F", "range": "50/100/300", "type": "HI/O", "damage": "d4+2w/d6+2w/d4+1m", "act": "1", "clip": "10", "mass": "3", "hide": "-", "avail": "Mil", "cost": "500", "description": "A common infantry weapon, the bolt-action rifle is accurate, but tends to be slow-firing and heavy." },
-          { "name": "Rifle, .44 lever", "skill": "Mod-rifle", "acc": "+1", "md": "F", "range": "40/80/240", "type": "HI/O", "damage": "d6w/d8+1w/d6m", "act": "2", "clip": "12", "mass": "3", "hide": "-", "avail": "Com", "cost": "400", "description": "Introduced early in the Industrial Age, repeating rifles such as this weapon were common in the Old West, mainly among hunters and frontiersmen." },
-          { "name": "Shotgun, 12 gauge", "skill": "Mod-rifle", "acc": "0", "md": "F", "range": "6/12/30", "type": "HI/O", "damage": "d4w/d6w/d4m", "act": "2", "clip": "5", "mass": "4", "hide": "+7", "avail": "Com", "cost": "500", "description": "Shotguns come in several different forms, including pump-action, bolt-action, single-shot, and double-barrel. The 12 gauge is a fairly typical pump-action shotgun.<br />Damage from a shotgun is highly dependent on range. At short range, damage is doubled. At long range, all damage results are halved (round down, to a minimum of 1 point)." },
-          { "name": "SMG, .45 cal", "skill": "Mod-SMG", "acc": "+2", "md": "B/A", "range": "8/16/40", "type": "HI/O", "damage": "d4+1w/d4+2w/d6m", "act": "4", "clip": "-/8", "mass": "4", "hide": "-", "avail": "Con", "cost": "600", "description": "Popularly known as the \"tommy gun,\" this weapon came into use near the end of the Industrial Age. It was the first of the personal automatic weapons, with the ability to damage more than one target in a single attack. That property made it a highly desirable firearm despite its relatively poor accuracy." }
-        ]
-      },
-      {
-        "name": "PL 5: Information Age",
-        "items": [
-          { "name": "Pistol, .38 rev", "skill": "Mod-pistol", "acc": "0", "md": "F", "range": "6/12/40", "type": "HI/O", "damage": "d4w/d4+1w/d4m", "act": "3", "clip": "6", "mass": "1", "hide": "+2", "avail": "Com", "cost": "100", "description": "This medium revolver comes into widespread use because of its relatively low cost as well as its slightly improved range." },
-          { "name": "Pistol, .44 magnum", "skill": "Mod-pistol", "acc": "0", "md": "F", "range": "6/12/50", "type": "HI/O", "damage": "d4+2w/d4+3w/d4+2m", "act": "3", "clip": "6", "mass": "1", "hide": "+1", "avail": "Com", "cost": "450", "description": "The most powerful handgun of the 20th century, this formidable weapon is renowned for its hitting power." },
-          { "name": "Pistol, 9mm", "skill": "Mod-pistol", "acc": "0", "md": "F", "range": "6/12/50", "type": "HI/O", "damage": "d4+1w/d4+2w/d4m", "act": "4", "clip": "15", "mass": "1", "hide": "+3", "avail": "Com", "cost": "300", "description": "Smaller but deadlier than the .38, the 9mm is an extremely popular handgun in the second half of the Information Age. A high-capacity ammo clip and a rapid rate of fire combine to produce an approximation of autofire, although the pistol is incapable of fully automatic action." },
-          { "name": "Rifle, 7.62mm", "skill": "Mod-rifle", "acc": "0", "md": "F", "range": "70/140/350", "type": "HI/O", "damage": "d6+1w/2d4+1w/d4+1m", "act": "3", "clip": "10", "mass": "4", "hide": "-", "avail": "Con", "cost": "1000", "description": "The main battle rifle of the mid-20th century, the 7.62 remains a favorite of marksmen long after lighter, full-automatic weapons supersede it on the battlefield." },
-          { "name": "Rifle, assault", "skill": "Mod-rifle", "acc": "0", "md": "F/B/A", "range": "60/120/300", "type": "HI/O", "damage": "d4+2w/d6+3w/d4+1m", "act": "4", "clip": "30/10", "mass": "3", "hide": "-", "avail": "Mil", "cost": "1500", "description": "The assault rifle—the first firearm capable of both burst mode and autofire—is the standard military weapon of the era. Its range and damage are superior to anything that has come before it." },
-          { "name": "SMG, 9mm", "skill": "Mod-SMG", "acc": "+1", "md": "B/A", "range": "10/20/80", "type": "HI/O", "damage": "d4+1w/d4+2w/d4m", "act": "4", "clip": "-/10", "mass": "3", "hide": "+1", "avail": "Con", "cost": "1200", "description": "A whole family of small but deadly automatic weapons with astounding rates of fire fall into this category. The submachine gun is an outstanding weapon in a close-in fight, but can't match a rifle for range or accuracy." }
-        ]
-      },
-      {
-        "name": "PL 6: Fusion Age",
-        "items": [
-          { "name": "Pistol, 9mm ch", "skill": "Mod-pistol", "acc": "0", "md": "F", "range": "8/16/60", "type": "HI/O", "damage": "d4+1w/d6+1w/d4m", "act": "4", "clip": "15", "mass": "1", "hide": "+3", "avail": "Com", "cost": "400", "description": "In this weapon, the firing pin and chemical explosive combination of a PL 5 firearm is replaced by a powerful contact delivering a massive shock to the cartridge, which is powered by an electrochemical propellant. On firing, the propellant is converted into a white-hot plasma that expands more powerfully and smoothly than a chemical explosive. The result is a weapon that fires a slug with much higher muzzle velocity than earlier firearms." },
-          { "name": "Pistol, 9mm zero-g", "skill": "Mod-pistol", "acc": "0", "md": "F", "range": "4/10/40", "type": "HI/O", "damage": "d4+1w/d6+1w/d4m", "act": "2", "clip": "15", "mass": "1", "hide": "+3", "avail": "Com", "cost": "500", "description": "This charge pistol has a sophisticated anti-recoil system to neutralize the gun's movement. It allows the user to fire the weapon in weightless conditions without throwing himself into awkward tumbles or turns." },
-          { "name": "Pistol, 11mm ch", "skill": "Mod-pistol", "acc": "0", "md": "F", "range": "10/20/80", "type": "HI/O", "damage": "d4+2w/d6+2w/d4+1m", "act": "4", "clip": "10", "mass": "1.2", "hide": "+2", "avail": "Con", "cost": "800", "description": "This is a heavier version of the 9mm charge pistol, firing a larger round." },
-          { "name": "Rifle, 11mm ch", "skill": "Mod-rifle", "acc": "0", "md": "F/B/A", "range": "80/160/400", "type": "HI/O", "damage": "d6+1w/d6+3w/d6+1m", "act": "4", "clip": "30/10", "mass": "4", "hide": "-", "avail": "Mil", "cost": "1500", "description": "The standard 11mm charge rifle features the electrochemical firing system described above for the charge pistol, but includes an automatic mode." },
-          { "name": "Rifle, 11mm zero-g", "skill": "Mod-rifle", "acc": "0", "md": "F", "range": "30/60/200", "type": "HI/O", "damage": "d6+1w/d6+3w/d6+1m", "act": "4", "clip": "15", "mass": "4", "hide": "-", "avail": "Mil", "cost": "1800", "description": "Like the zero-g pistol, this rifle fires standard charge rounds with a special anti-recoil system to neutralize its kick." },
-          { "name": "Shotgun, autoflec", "skill": "Mod-rifle", "acc": "0", "md": "F/B/A", "range": "10/20/40", "type": "HI/O", "damage": "d4w/d6w/d4m", "act": "4", "clip": "15/5", "mass": "3", "hide": "+1", "avail": "Mil", "cost": "2500", "description": "The autoflechette gun fires a 25mm round that contains a bundle of tiny, razor-sharp aerofoils. A single hit can carve an unarmored person to ribbons, but the autoflechette gun can also be used in full automatic mode with a rate of fire equal to that of most submachine guns—thus, it can clean out a roomful of targets with a few bursts.<br />Like the standard shotgun, damage from the autoflechette is highly dependent on range. At short range, damage is doubled. At long range, damage rolls are halved (round down, to a minimum of 1 point)." },
-          { "name": "SMG, 9mm ch", "skill": "Mod-SMG", "acc": "+1", "md": "B/A", "range": "20/40/100", "type": "HI/O", "damage": "d4+1w/d6+1w/d4m", "act": "4", "clip": "-/10", "mass": "3", "hide": "+1", "avail": "Mil", "cost": "1500", "description": "This weapon combines electrochemical charge technology with full automatic action." }
-        ]
-      },
-      {
-        "name": "PL 7: Gravity Age",
-        "items": [
-          { "name": "Pistol, 15mm sabot", "skill": "Mod-pistol", "acc": "0", "md": "F", "range": "10/20/100", "type": "HI/O", "damage": "2d4w/2d4+1w/d4+3m", "act": "3", "clip": "6", "mass": "2", "hide": "-", "avail": "Con", "cost": "900", "description": "This small, handheld electromagnetic accelerator hurls a special, discarding-rocket slug at hypersonic velocities.<br />The round fired by this weapon is a miniature scramjet that ignites soon after leaving the muzzle and quickly accelerates to incredible speed. Due to its extremely high velocity, the rocket round is designed to splatter against any appreciable resistance to transfer as much kinetic energy as possible to the target." },
-          { "name": "Pistol, laser", "skill": "Mod-pistol", "acc": "-1", "md": "F", "range": "20/40/200", "type": "En/O", "damage": "d4+1w/d6+1w/d4m", "act": "4", "clip": "20", "mass": "1", "hide": "+3", "avail": "Con", "cost": "1000", "description": "Another application of electrochemical technology, the laser weapon uses an electrical charge to raise a chemical mass to brilliant fluorescence. This light is focused through precisely machined artificial crystals and expelled from the weapon as a white-hot beam." },
-          { "name": "Pistol, mass", "skill": "Mod-pistol", "acc": "0", "md": "F", "range": "2/6/12", "type": "En/G", "damage": "d6w/d6+2w/d6m", "act": "4", "clip": "2", "mass": "1", "hide": "+2", "avail": "Mil", "cost": "1200", "description": "Utilizing the gravity induction technology also employed in shipboard weapons systems, the mass pistol throws an artificial, short-lived mass singularity at its target. This gravity point causes horrible damage through tidal effects to both animate and inanimate objects, but it is short-ranged and consumes an enormous amount of energy." },
-          { "name": "Pistol, stutter", "skill": "Mod-pistol", "acc": "0", "md": "F", "range": "6/12/30", "type": "LI/O", "damage": "d6+2s/d8+2s/d8+4s", "act": "4", "clip": "10", "mass": "1.5", "hide": "+2", "avail": "Com", "cost": "500", "description": "This handheld weapon uses sonic energy—audible as a loud, low-frequency rumble—to incapacitate a target. Since the stutter pistol delivers stun damage, it is favored by riot response teams and those who seek to pacify rather than terminate opponents. The stutter pistol doesn't function in a vacuum." },
-          { "name": "Rifle, laser", "skill": "Mod-rifle", "acc": "-1", "md": "F", "range": "100/400/1000", "type": "En/O", "damage": "d6+1w/d6+3w/d4+1m", "act": "3", "clip": "12", "mass": "4", "hide": "-", "avail": "Mil", "cost": "1500", "description": "The laser rifle is a larger, heavier, improved version of the laser pistol—every bit as accurate as the smaller weapon, and able to hit a target from as far away as a full kilometer." },
-          { "name": "Rifle, mass", "skill": "Mod-rifle", "acc": "0", "md": "F", "range": "4/12/30", "type": "En/G", "damage": "d6w/d8+1w/d6+1m", "act": "4", "clip": "2", "mass": "4", "hide": "-", "avail": "Mil", "cost": "2000", "description": "The mass rifle works on the same principle as the mass pistol, but is heavier and has a longer range." },
-          { "name": "Rifle, quantum", "skill": "Mod-rifle", "acc": "0", "md": "F/B/A", "range": "80/200/500", "type": "En/O", "damage": "d4+3w/d6+4w/d6+1m", "act": "3", "clip": "15/5", "mass": "8", "hide": "-", "avail": "Res", "cost": "8000", "description": "This weapon is a personal version of the ship-mounted particle beam. It uses a small accelerator to fire subatomic particles at a target. All personal quantum weapons are extremely expensive and highly restricted, making them rare and often illegal to own and operate." },
-          { "name": "Rifle, render", "skill": "Mod-rifle", "acc": "0", "md": "F", "range": "50/100/250", "type": "En/O", "damage": "d6+1s/d6+1w/d4+1m", "act": "3", "clip": "8", "mass": "4", "hide": "+1", "avail": "Res", "cost": "2000", "description": "This weapon utilizes gravity induction technology to strobe through a lightning-quick cycle of attraction and repulsion against the target. This action causes matter to literally tear itself to pieces. A lucky target may escape with bad bruises, surface abrasions, and a thorough battering, but a well-centered hit by the render creates massive body trauma." },
-          { "name": "SMG, laser", "skill": "Mod-SMG", "acc": "0", "md": "B/A", "range": "20/80/200", "type": "En/O", "damage": "d6w/d6+2w/d4m", "act": "4", "clip": "-/10", "mass": "3", "hide": "-", "avail": "Con", "cost": "1500", "description": "The laser SMG does more damage, has greater accuracy, and fires more shots per clip than previous SMGs." },
-          { "name": "SMG, stutter", "skill": "Mod-SMG", "acc": "0", "md": "B/A", "range": "10/20/80", "type": "LI/O", "damage": "d6+2s/d8+2s/d8+4s", "act": "4", "clip": "-/20", "mass": "3", "hide": "+1", "avail": "Con", "cost": "1000", "description": "The automatic version of the stutter pistol is a favored weapon of riot-control police and others who need to knock out a large number of people without inflicting lethal injuries. The stutter SMG doesn't function in a vacuum." }
-        ]
-      },
-      {
-        "name": "PL 8: Energy Age",
-        "items": [
-          { "name": "Automaser", "skill": "Mod-SMG", "acc": "-1", "md": "B/A", "range": "20/60/120", "type": "En/O", "damage": "d6w/d6+2w/d4m", "act": "4", "clip": "-/20", "mass": "3", "hide": "-", "avail": "Mil", "cost": "20000", "description": "This submachine gun is a heavy maser pistol (see below) capable of full automatic fire. It uses a small mass reactor and an internal antenna array to create a broadband blast of electromagnetic energy, combining the nastier features of a laser and a microwave beam." },
-          { "name": "Pistol, hvy maser", "skill": "Mod-pistol", "acc": "-1", "md": "F", "range": "20/40/80", "type": "En/G", "damage": "d6+1w/2d4+1w/d4+1m", "act": "3", "clip": "30", "mass": "2", "hide": "+1", "avail": "Mil", "cost": "12000", "description": "The heavy maser pistol harnesses the power of a miniature mass reactor to create destructive bolts of broadband electromagnetic radiation. This results in a beam with the cutting or penetrating power of a high-grade laser, coupled with the scorching and charring of a microwave burst." },
-          { "name": "Pistol, maser", "skill": "Mod-pistol", "acc": "-2", "md": "F", "range": "10/20/60", "type": "En/O", "damage": "d6w/d6+2w/d4m", "act": "4", "clip": "40", "mass": "1", "hide": "+2", "avail": "Con", "cost": "8000", "description": "The maser pistol—one of the most accurate weapons ever produced—is a less powerful version of the heavy maser pistol." },
-          { "name": "Rifle, hvy maser", "skill": "Mod-rifle", "acc": "-1", "md": "F/B/A", "range": "40/200/500", "type": "En/G", "damage": "d8+1w/d12w/d6+1m", "act": "3", "clip": "60/20", "mass": "5", "hide": "-", "avail": "Mil", "cost": "18000", "description": "This weapon works on the same principles as the maser pistol, but adds greater range and full auto capability." },
-          { "name": "Rifle, maser", "skill": "Mod-rifle", "acc": "-2", "md": "F/B/A", "range": "60/120/400", "type": "En/O", "damage": "d6+2w/2d4+2w/d4+2m", "act": "4", "clip": "90/30", "mass": "4", "hide": "-", "avail": "Mil", "cost": "15000", "description": "This is a smaller, more accurate, and less powerful version of the heavy maser rifle." }
-        ]
-      }
-    ]
-  },
-  "heavy": {
-    "columns": [
-      { "name": "Weapon", "key": "name" },
-      { "name": "Skill", "key": "skill" },
-      { "name": "Acc", "key": "acc" },
-      { "name": "Md", "key": "md" },
-      { "name": "Range (S/M/L)", "key": "range" },
-      { "name": "Type", "key": "type" },
-      { "name": "Damage (O/G/A)", "key": "damage" },
-      { "name": "Act.", "key": "act" },
-      { "name": "Clip", "key": "clip" },
-      { "name": "Mass", "key": "mass" },
-      { "name": "Hide", "key": "hide" },
-      { "name": "Avail", "key": "avail" },
-      { "name": "Cost ($)", "key": "cost" },
-      { "name": "Description", "key": "description", "hidden": true }
-    ],
-    "groups": [
-      {
-        "name": "PL 4: Industrial Age",
-        "items": [
-          { "name": "Flamethrower", "skill": "Hvy-direct", "acc": "0", "md": "F", "range": "6/12/30", "type": "En/O", "damage": "d6w/d6+3w/d8+3w", "act": "2", "clip": "12", "mass": "22", "hide": "-", "avail": "Mil", "cost": "500", "description": "This device consists of an incendiary fuel tank (worn slung across the back) and a gunlike nozzle and hose. The weapon projects a stream of ignited fuel that can hit a target as far away as 30 meters.<br />Fireproof or heat-shielded objects suffer half or no damage depending on the level of their protection. Flammable objects ignite and continue to burn for d6 rounds, suffering d4-2 points of wound damage each round or until the fire is extinguished. A flamethrower weighs 6 kg when its tank is empty." },
-          { "name": "Grenade, frag.", "skill": "Athl-throw", "acc": "+1", "md": "F", "range": "Per STR", "type": "HI/G", "damage": "d4w/d4+2w/d6+2w", "act": "2", "clip": "1", "mass": "1", "hide": "+2", "avail": "Mil", "cost": "75", "description": "The earliest version of this explosive device is difficult to throw accurately, but it can do formidable damage to anything that's nearby when it goes off. All targets within 2 meters of a frag grenade's explosion suffer Amazing damage (d6+2w); targets within 6 meters suffer Good damage (d4+2w); and targets within 10 meters suffer Ordinary damage (d4w). Anything farther than 10 meters away isn't affected by the blast." },
-          { "name": "Machine gun, .30", "skill": "Hvy-direct", "acc": "0", "md": "A", "range": "60/200/600", "type": "HI/O", "damage": "d6w/d6+3w/d6m", "act": "4", "clip": "50", "mass": "10", "hide": "-", "avail": "Mil", "cost": "2000", "description": "This fairly light, air-cooled machine gun came to prominence on battlefields of the era. The mechanism behind the machine gun is brilliant and simple: propellant and energy left over from expending a round of ammunition is used to load the next round into the chamber. It fires its bullets in rapid succession—much faster than a character could empty a single-shot gun." },
-          { "name": "Rocket launcher", "skill": "Hvy-direct", "acc": "+1", "md": "F", "range": "30/60/150", "type": "HI/G", "damage": "d6w/d4+3w/d4m", "act": "1", "clip": "1", "mass": "5", "hide": "-", "avail": "Mil", "cost": "1200", "description": "Introduced as an infantryman's antitank weapon, the shoulder-fired rocket launcher is also useful for busting bunkers and heavy fire support. Many PL 5 variations of this weapon (the LAW rocket, the RPG-7, etc.) also exist." }
-        ]
-      },
-      {
-        "name": "PL 5: Information Age",
-        "items": [
-          { "name": "Grenade launcher", "skill": "Hvy-indirect", "acc": "0", "md": "F", "range": "50/200/350", "type": "As load", "damage": "As load", "act": "3", "clip": "1", "mass": "2", "hide": "-", "avail": "Mil", "cost": "1000", "description": "While there are grenade launchers that mount on rifles, this item is a separate weapon specifically designed to fire small, explosive shells. The standard launcher can accommodate a variety of loads. The two basic types of launchers are the 40mm hand mortar and the 6x40mm six-shot launcher.<br />The hand mortar resembles a simple breech-loading, single-barreled shotgun. The six-shot looks like an oversized revolver mounted on a shotgun stock. Unlike the hand mortar, the six-shot can hold six grenades at once (but can only fire them one at a time). It also costs four times the listed price. In other ways, it's identical to the hand mortar." },
-          { "name": "Grenade, concus.", "skill": "Athl-throw", "acc": "+1", "md": "F", "range": "Per STR", "type": "LI/O", "damage": "d6+2s/d4w/d4+1w", "act": "2", "clip": "1", "mass": "0.5", "hide": "+3", "avail": "Mil", "cost": "75", "description": "The concussion grenade is basically a half-kilogram block of TNT in a cardboard wrapper. It has a pin and arm mechanism, but no fragmentation material. The concussion grenade is considered an offensive weapon, since it can be thrown by troops in open terrain without fear of causing themselves shrapnel damage.<br />All targets within 2 meters of a concussion grenade's explosion suffer Amazing damage (d4+1w); targets from 2 to 4 meters away suffer Good damage (d4w); targets from 4 to 6 meters away suffer Ordinary damage (d6+2s); and targets beyond 6 meters aren't damaged by the blast." },
-          { "name": "Grenade, incend.", "skill": "Athl-throw", "acc": "+1", "md": "F", "range": "Per STR", "type": "En/G", "damage": "d4w/d4+2w/d4+3w", "act": "2", "clip": "1", "mass": "0.5", "hide": "+3", "avail": "Mil", "cost": "150", "description": "This grenade releases a highly combustible chemical that ignites and throws shrapnel within a 6-meter radius.<br />All targets within 2 meters of an incendiary grenade's explosion suffer Amazing damage (d4+3w); those from 2 to 4 meters away receive Good damage (d4+2w); and those from 4 to 6 meters away receive Ordinary damage (d4w). Fireproof or heat-shielded objects suffer half or no damage depending on the level of their protection. Flammable objects ignite and continue to burn for d6+1 rounds, suffering d4-1 points of wound damage each round or until the fire is extinguished." },
-          { "name": "Grenade, smoke", "skill": "Athl-throw", "acc": "+1", "md": "F", "range": "Per STR", "type": "Special", "damage": "Special", "act": "2", "clip": "1", "mass": "0.5", "hide": "+3", "avail": "Con", "cost": "50", "description": "This grenade releases a thick cloud of smoke that fills an area in a 6-meter radius around the explosion site. The smoke lasts for d8+4 rounds. It provides Good cover (+2 penalty to opponents' attempts to attack) and applies a +2 penalty to Awareness checks for all characters within the area of effect.<br />Some smoke grenades are filled with tear gas. Tear gas works just like smoke with the added benefit of partially incapacitating unprotected characters. Each individual in the area of effect makes a Constitution feat check to try to counter the effect of the gas: Critical Failure, helpless for 2d4 rounds; Failure, +3 penalty to all action checks and actions for 2d4 rounds; Ordinary, +2 penalty; Good, +1 penalty; Amazing, gas has no effect. Characters wearing e-suits or using respirator masks or oxygen tanks are unaffected by tear gas." },
-          { "name": "Hvy machine gun", "skill": "Hvy-direct", "acc": "0", "md": "A", "range": "100/400/1000", "type": "HI/G", "damage": "d6+1w/2d4+2w/d8m", "act": "4", "clip": "50", "mass": "12", "hide": "-", "avail": "Mil", "cost": "5000", "description": "This weapon type includes any of the large automatic weapons that use large-caliber rounds and require a mount to control the recoil. Without the use of such a mount, penalties for using automatic fire are doubled (+2/+4/+6 instead of the usual +1/+2/+3), the user must take an additional +1 penalty for lack of accuracy, and must make a successful Strength feat check to keep from being knocked down." },
-          { "name": "SAM, handheld", "skill": "Hvy-indirect", "acc": "0", "md": "F", "range": "1000/2000/4000", "type": "HI/G", "damage": "d4w/d6w/d6+4w", "act": "1", "clip": "1", "mass": "8", "hide": "-", "avail": "Res", "cost": "3500", "description": "This is a shoulder-fired surface-to-air missile with a heat-seeking head. When used against an airborne target that's giving off a significant amount of heat, the missile will circle around for a second attack one round later if it misses the target on its first pass." }
-        ]
-      },
-      {
-        "name": "PL 6: Fusion Age",
-        "items": [
-          { "name": "Bantam launcher", "skill": "Hvy-indirect", "acc": "0", "md": "F", "range": "100/800/4000", "type": "As load", "damage": "As load", "act": "2", "clip": "4", "mass": "7", "hide": "-", "avail": "Mil", "cost": "4000", "description": "This portable launcher fires miniature bantam rockets. Braced on the shoulder and fired like a bazooka, the bantam launcher is light and easy to use. It has four chambers that can hold a variety of bantam rocket loads. The pistol grip has four triggers, one to activate each of the four load chambers, though only one trigger can be depressed at a time. The built-in guidance system makes this weapon accurate to extreme ranges." },
-          { "name": "Bantam, antiair", "skill": "Hvy-indirect", "acc": "-2", "md": "F", "range": "As launcher", "type": "HI/G", "damage": "d4w/d4+2w/d4m", "act": "2", "clip": "1", "mass": "3", "hide": "+1", "avail": "Res", "cost": "1000", "description": "This projectile, about 0.5 meter long, has additional lift and guidance systems to lock onto and track low-flying aircraft. It can be triggered to seek a heat source such as a jet engine or to follow the commands of its user, who can direct it with a laser sight. The blast inflicts Amazing damage (d4m) within 4 meters of the explosion; Good damage (d4+2w) up to 8 meters away and Ordinary damage (d4w) out to 12 meters." },
-          { "name": "Bantam, antiper.", "skill": "Hvy-indirect", "acc": "0", "md": "F", "range": "As launcher", "type": "En/O", "damage": "d6w/d6+2w/d8+2w", "act": "2", "clip": "1", "mass": "3", "hide": "+1", "avail": "Mil", "cost": "500", "description": "This rocket delivers a low-level radiation burst designed to inflict maximum damage on people while leaving vehicles and buildings intact. Amazing damage (d8+2w) is inflicted within 4 meters of impact; Good damage (d6+2w) up to 8 meters; and Ordinary damage (d6w) out to 12 meters." },
-          { "name": "Bantam, antiveh.", "skill": "Hvy-indirect", "acc": "-2", "md": "F", "range": "As launcher", "type": "HI/G", "damage": "d4+2w/d4+4w/d4+1m", "act": "2", "clip": "1", "mass": "3", "hide": "+1", "avail": "Mil", "cost": "1000", "description": "This weapon is designed to hinder or destroy armored vehicles, but can also be used against bunkers and other hardened installations. It causes Amazing damage (d4+1m) to the target it impacts; Good damage (d4+4w) within 2 meters; and Ordinary damage (d4+2w) out to 4 meters away." },
-          { "name": "Grenade, plasma", "skill": "Athl-throw", "acc": "+1", "md": "F", "range": "Per STR", "type": "En/G", "damage": "d4+2w/d6+2w/d4m", "act": "2", "clip": "1", "mass": "0.5", "hide": "+3", "avail": "Res", "cost": "400", "description": "This is a more powerful version of the incendiary grenade. All targets within 2 meters of a plasma grenade's explosion suffer Amazing damage (d4m); those from 2 to 4 meters away suffer Good damage (d6+2w); and those from 4 to 8 meters away take Ordinary damage (d4+2w). Fireproof or heat-shielded objects suffer half or no damage, depending on the level of their protection. Flammable objects ignite and burn for d6+1 rounds, taking d4 points of wound damage per round or until the fire is extinguished." },
-          { "name": "Grenade, stun", "skill": "Athl-throw", "acc": "+1", "md": "F", "range": "Per STR", "type": "En/O", "damage": "d6s/d8s/d8+2s", "act": "2", "clip": "1", "mass": "0.5", "hide": "+3", "avail": "Mil", "cost": "250", "description": "The stun grenade creates a concussive wave that stuns those within the blast radius. All targets within 2 meters of the impact suffer Amazing damage (d8+2s); Good damage (d8s) is inflicted out to a distance of 4 meters; and Ordinary damage (d6s) extends to those up to 10 meters away." },
-          { "name": "Hvy mach gun, ch", "skill": "Hvy-direct", "acc": "-1", "md": "A", "range": "200/600/1200", "type": "HI/G", "damage": "d8w/2d6w/2d4m", "act": "4", "clip": "-/50", "mass": "45", "hide": "-", "avail": "Res", "cost": "10000", "description": "This heavy machine gun makes use of charge technology to substantially improve upon the heavy machine gun of the previous era; this weapon has better range, stopping power, and accuracy. Without the use of a mount, penalties for automatic fire are doubled (+2/+4/+6), the user must take an additional +1 penalty for lack of accuracy (or disregard the weapon's accuracy bonus, if the optional rule is being used), and must make a successful Strength feat check to avoid being knocked down." },
-          { "name": "Rail gun", "skill": "Hvy-direct", "acc": "-1", "md": "B/A", "range": "150/500/1500", "type": "HI/G", "damage": "d6w/d6+2w/d6m", "act": "4", "clip": "-/30", "mass": "20", "hide": "-", "avail": "Res", "cost": "20000", "description": "This weapon consists of a powerful electromagnetic accelerator that fires a stream of small projectiles at extremely high velocity." }
-        ]
-      },
-      {
-        "name": "PL 7: Gravity Age",
-        "items": [
-          { "name": "Arc gun", "skill": "Hvy-direct", "acc": "-1", "md": "F", "range": "20/40/100", "type": "En/G", "damage": "d8+1s/d8w/d6+3w", "act": "2", "clip": "6", "mass": "10", "hide": "-", "avail": "Mil", "cost": "2000", "description": "This is a weapon capable of delivering a powerful electrical shock in the form of a lightning bolt. The arc gun uses a built-in, low-powered laser beam to ionize the air between the weapon and its target, creating a path for the electrical arc. Because it requires air to operate, the weapon is useless in a vacuum." },
-          { "name": "Cannon, stutter", "skill": "Hvy-direct", "acc": "-1", "md": "F", "range": "20/40/80", "type": "LI/O", "damage": "d6+2s/d8+3s/2d6+3s", "act": "1", "clip": "2", "mass": "15", "hide": "-", "avail": "Con", "cost": "2500", "description": "A stutter cannon is a heavy weapon that consists of a backpack and attached gun. It is designed to disperse or otherwise handle a crowd without the use of lethal force. The stutter cannon produces compressed sonic waves that deliver hammerlike blows against targets. Each pulse affects all targets in a 3-meter radius." },
-          { "name": "Cannon, 25mm sabot", "skill": "Hvy-direct", "acc": "0", "md": "F", "range": "100/200/2000", "type": "HI/G", "damage": "d8w/d4+1m/d6+2m", "act": "2", "clip": "20", "mass": "10", "hide": "-", "avail": "Mil", "cost": "10000", "description": "The backpack contains an electromagnetic accelerator that releases a powered 25mm projectile with amazing speed and force. The cannon's energy cell must be replaced after the weapon has fired two clips." },
-          { "name": "Grenade, pulse", "skill": "Athl-throw", "acc": "+1", "md": "F", "range": "Per STR", "type": "En/G", "damage": "d4+2s/d6+2s/d8+2s", "act": "2", "clip": "1", "mass": "0.5", "hide": "+3", "avail": "Res", "cost": "350", "description": "This grenade consists of a powerful capacitor and a special ceramic shell that functions as a spherical antenna array. When it detonates, the capacitor releases a pulse of electromagnetic energy in the immediate area. This pulse can stun unprotected humans, but it's more useful for damaging electronic equipment—computers, sensors, vehicle control systems, servomotors, and the like. The discharge causes Amazing damage (d8+2s) within 2 meters; Good damage (d6+2s) out to 4 meters; and Ordinary damage (d4+2s) out to 10 meters." },
-          { "name": "Grenade, tracer", "skill": "Athl-throw", "acc": "+1", "md": "F", "range": "Per STR", "type": "HI/G", "damage": "d4+2w/d6+2w/d4+2m", "act": "2", "clip": "1", "mass": "0.5", "hide": "+3", "avail": "Mil", "cost": "350", "description": "This is a smart shaped-charge grenade. Though it can be manually tossed or hurled by a launcher, once it reaches its target area it searches for a moving target to make contact with. Upon impact, the grenade explodes and releases its razor-sharp fragments. Amazing damage (d4+2m) is suffered by the target it impacts with (if any); Good damage (d6+2w) extends out to 2 meters; and Ordinary damage (d4+2w) extends to 4 meters. If no target is within 2 meters of its landing point, the grenade falls to the ground and waits up to 2 rounds for a target to approach within its detection range of 2 meters. If those 2 rounds go by without it being approached by a target the tracer grenade automatically deactivates. In such a case, it can be salvaged and reused." },
-          { "name": "Plasma gun", "skill": "Hvy-direct", "acc": "0", "md": "F", "range": "40/80/200", "type": "En/G", "damage": "d8w/d8+3w/d12+3w", "act": "2", "clip": "8", "mass": "6", "hide": "-", "avail": "Mil", "cost": "12000", "description": "The plasma gun consists of a backpack and attached gun. Using a powerful electromagnetic accelerator, it throws blasts of superheated plasma generated by the delivery of an electrical shock to a large electrochemical shell." },
-          { "name": "Quantum mini", "skill": "Hvy-direct", "acc": "0", "md": "F/B/A", "range": "100/250/800", "type": "En/G", "damage": "d8+1w/d8+3w/d6m", "act": "4", "clip": "90/30", "mass": "10", "hide": "+1", "avail": "Res", "cost": "15000", "description": "This weapon adds a backpack accelerator to the quantum rifle, producing particle beams with longer range and more lethal force. All personal quantum weapons are extremely expensive and highly restricted, making them rare and often illegal to own and operate. Like the rifle, the minigun is capable of burst mode and autofire." }
-        ]
-      },
-      {
-        "name": "PL 8: Energy Age",
-        "items": [
-          { "name": "Bantam, starload", "skill": "Hvy-indirect", "acc": "-2", "md": "F", "range": "As launcher", "type": "En/A", "damage": "d8+2w/d4+1m/d6+1m", "act": "2", "clip": "1", "mass": "3", "hide": "+1", "avail": "Res", "cost": "2000", "description": "This projectile uses a miniature mass reactor to power an explosion, creating a blast that targets people and vehicles with ferocious punishment. The blast does Amazing damage (d6+1m) to anything within 6 meters; Good damage (d4+1m) out to 12 meters; and Ordinary damage (d8+2w) out to 20 meters." },
-          { "name": "Cannon, maser", "skill": "Hvy-direct", "acc": "-1", "md": "F", "range": "80/200/600", "type": "En/G", "damage": "d8w/d4+1m/d6+2m", "act": "2", "clip": "12", "mass": "10", "hide": "-", "avail": "Res", "cost": "25000", "description": "The maser cannon employs a miniature mass reactor and requires the use of a heavy backpack accelerator to supply the energy for maser blasts." },
-          { "name": "Grenade, mass", "skill": "Athl-throw", "acc": "+1", "md": "F", "range": "Per STR", "type": "En/G", "damage": "d6+2s/d6+2w/d6m", "act": "2", "clip": "1", "mass": "2", "hide": "-", "avail": "Res", "cost": "1000", "description": "This grenade detonates a tiny mass reactor, resulting in a few cubic meters of cosmic catastrophe. Heat, light, and all forms of broadband electromagnetic radiation slag anything in the general vicinity of the grenade. All targets within 2 meters of the explosion suffer Amazing damage (d6m); Good damage (d6+2w) is inflicted on those within 4 meters; and Ordinary damage (d6+2s) is suffered by those within 10 meters of the blast." },
-          { "name": "Mass launcher", "skill": "Hvy-indirect", "acc": "-1", "md": "F", "range": "20/300/1000", "type": "En/G", "damage": "d6+1w/d6+3w/d4+1m", "act": "1", "clip": "4", "mass": "15", "hide": "-", "avail": "Res", "cost": "8000", "description": "This indirect-fire weapon can only be used on a planetary surface, or in an artificial environment with at least light gravity. It launches a wave of gravity energy into the air and relies on the gravity well of a planet to both return the energy to the ground and magnify its power.<br />All targets within 4 meters of the blast suffer Amazing damage (d4+1m); targets within 8 meters suffer Good damage (d6+3w); and targets within 12 meters suffer Ordinary damage (d6+1w)." }
-        ]
-      }
-    ]
-  }
+    }
 }

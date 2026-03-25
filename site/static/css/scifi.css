@@ -417,3 +417,53 @@ tr.table-separator td {
 .neon-cyan {
   color: var(--accent-cyan) !important;
 }
+
+/* Interactive Table Overrides */
+.data-row {
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.active-row td {
+  background-color: rgba(75, 181, 193, 0.25) !important;
+}
+
+.neon-amber {
+  color: #FFA500 !important;
+}
+
+.neon-green {
+  color: #A6C12E !important;
+}
+
+.hidden-field-item {
+  display: inline-block;
+  width: 200px;
+  vertical-align: top;
+  margin-right: 1rem;
+  margin-bottom: 0.25rem;
+  font-size: 0.95rem;
+}
+
+.table-filter-input {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(56, 158, 189, 0.4);
+  color: var(--table-text-light);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  width: 300px;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}
+
+.table-filter-input:focus {
+  outline: none;
+  border-color: var(--accent-cyan);
+  box-shadow: 0 0 10px rgba(56, 158, 189, 0.3);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.filter-container {
+  display: flex;
+  align-items: center;
+}
