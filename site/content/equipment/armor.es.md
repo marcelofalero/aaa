@@ -1,19 +1,11 @@
 +++
-title = "Armadura"
+title = "Armaduras"
 weight = 3
 toc = true
 +++
 
-## Light-Duty Armor
+## Base de Datos de Armaduras Tácticas
 
-{{< json-table "armor" "light" >}}
+{{< json-table "armor" "all" expand="PL 7" >}}
 
-## Combat Armor
-
-{{< json-table "armor" "combat" >}}
-
-## Powered Armor
-
-{{< json-table "armor" "powered" >}}
-
-*K=thousand*
+*K=mil*

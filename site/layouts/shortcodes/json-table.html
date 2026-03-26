@@ -2,11 +2,18 @@
 {{ $key := .Get 1 }}
 {{ $hidden_fields := after 2 .Params }}
 
+{{/* Language-aware data loading */}}
 {{ $data := index .Site.Data $file }}
-{{ if $key }}
-  {{ $data = index $data $key }}
+{{ $lang_suffix := printf "%s" .Page.Language.Lang }}
+{{ if and (ne $lang_suffix "en") (index .Site.Data (printf "%s.%s" $file $lang_suffix)) }}
+{{ $data = index .Site.Data (printf "%s.%s" $file $lang_suffix) }}
 {{ end }}
 
-{{ $context := dict "Page" .Page "data" $data "file" $file "key" $key "hidden_fields" $hidden_fields }}
+{{ if $key }}
+{{ $data = index $data $key }}
+{{ end }}
+
+{{ $expand := .Get "expand" | default "" }}
+{{ $context := dict "Page" .Page "data" $data "file" $file "key" $key "hidden_fields" $hidden_fields "expand" $expand }}
 
 {{ partial "render-table.html" $context }}
