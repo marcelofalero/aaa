@@ -1,0 +1,397 @@
+	</div> <!-- Close Character Mode -->
+
+	<div class="sheet-section-starshipmode">
+	<div class="sheet-col">
+		<div class="sheet-row">
+			<div class="sheet-broadskill sheet-col sheet-8emwidth">Ship Name</div>
+			<div class="sheet-col"><input type="text" name="attr_character_name"></div>
+		</div>
+		<div class="sheet-row">
+			<div class="sheet-broadskill sheet-col sheet-8emwidth">Hull Type</div>
+			<div class="sheet-col"><input type="text" name="attr_Starshiphulltype"></div>
+		</div>
+		<div class="sheet-row">
+			<div class="sheet-broadskill sheet-col sheet-8emwidth">Hull Size</div>
+			<div class="sheet-col"><input type="text" name="attr_StarshipHullSize"></div>
+		</div>
+	</div>
+	<div class="sheet-col">
+		<div class="sheet-row">
+			<div class="sheet-broadskill sheet-col sheet-8emwidth">Maneuver Rating</div>
+			<div class="sheet-col"><input type="text" name="attr_StarshipManeuverRating"></div>
+		</div>
+		<div class="sheet-row">
+			<div class="sheet-broadskill sheet-col sheet-8emwidth">Acceleration</div>
+			<div class="sheet-col"><input type="text" name="attr_StarshipAcceleration"></div>
+		</div>
+		<div class="sheet-row">
+			<div class="sheet-broadskill sheet-col sheet-8emwidth">Cruising Speed</div>
+			<div class="sheet-col"><input type="text" name="attr_StarshipCruisingSpeed"></div>
+		</div>
+	</div>
+	<div class="sheet-col">
+		<div class="sheet-row">
+			<div class="sheet-broadskill sheet-col sheet-8emwidth">Captain's Name</div>
+			<div class="sheet-col"><input type="text" name="attr_StarshipCaptain"></div>
+		</div>
+		<div class="sheet-row">
+			<div class="sheet-broadskill sheet-col sheet-8emwidth">Starfall Distance</div>
+			<div class="sheet-col"><input type="text" name="attr_StarshipStarfallDistance"></div>
+		</div>
+	</div>
+	<br />
+	<br />
+	<div class="sheet-fullwidth">
+		<div class="sheet-row">
+			<div class="sheet-col sheet-broadskill sheet-12emwidth">Ship Stations</div>
+			<div class="sheet-col sheet-broadskill sheet-12emwidth">Station Location</div>
+			<div class="sheet-col sheet-broadskill sheet-12emwidth">Operator's Name</div>
+			<div class="sheet-col sheet-broadskill sheet-12emwidth">System Location</div>
+			<div class="sheet-col sheet-broadskill sheet-12emwidth">Skill Score</div>
+		</div>
+		<div class="sheet-row">
+			<div class="sheet-col sheet-broadskill sheet-12emwidth"><button type="roll" name="roll_CommandStation"
+					value="&{template:default} {{name= @{character_name} - Command Station}} {{Operator=@{CommandStationOperator}}} {{Operator's Score= [[@{CommandStationO}]]/[[@{CommandStationG}]]/[[@{CommandStationA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}} "></button>Command
+			</div>
+			<div class="sheet-col sheet-broadskill sheet-12emwidth"><input type="text"
+					name="attr_CommandStationLocation"></div>
+			<div class="sheet-col sheet-broadskill sheet-12emwidth"><input type="text"
+					name="attr_CommandStationOperator"></div>
+			<div class="sheet-col sheet-broadskill sheet-12emwidth"><input type="text"
+					name="attr_CommandStationSystemLocation"></div>
+			<div class="sheet-col sheet-broadskill sheet-12emwidth"><input type="number" name="attr_CommandStationO"
+					class="sheet-score" value="0">/<input type="text" name="attr_CommandStationG"
+					class="sheet-scoredisabled" disabled="true" value="(floor(@{CommandStationO}/2))">/<input
+					type="text" name="attr_CommandStationA" class="sheet-scoredisabled" disabled="true"
+					value="(floor(@{CommandStationO}/4))"></div>
+		</div>
+		<div class="sheet-row">
+			<div class="sheet-col sheet-broadskill sheet-12emwidth"><button type="roll" name="roll_PilotStation"
+					value="&{template:default} {{name= @{character_name} - Pilot Station}} {{Operator=@{PilotStationOperator}}} {{Operator's Score= [[@{PilotStationO}]]/[[@{PilotStationG}]]/[[@{PilotStationA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}} "></button>Pilot
+			</div>
+			<div class="sheet-col sheet-broadskill sheet-12emwidth"><input type="text" name="attr_PilotStationLocation">
+			</div>
+			<div class="sheet-col sheet-broadskill sheet-12emwidth"><input type="text" name="attr_PilotStationOperator">
+			</div>
+			<div class="sheet-col sheet-broadskill sheet-12emwidth"><input type="text"
+					name="attr_PilotStationSystemLocation"></div>
+			<div class="sheet-col sheet-broadskill sheet-12emwidth"><input type="number" name="attr_PilotStationO"
+					class="sheet-score" value="0">/<input type="text" name="attr_PilotStationG"
+					class="sheet-scoredisabled" disabled="true" value="(floor(@{PilotStationO}/2))">/<input type="text"
+					name="attr_PilotStationA" class="sheet-scoredisabled" disabled="true"
+					value="(floor(@{PilotStationO}/4))"></div>
+		</div>
+		<div class="sheet-row">
+			<div class="sheet-col sheet-broadskill sheet-12emwidth"><button type="roll" name="roll_CopilotStation"
+					value="&{template:default} {{name= @{character_name} - Copilot Station}} {{Operator=@{CopilotStationOperator}}} {{Operator's Score= [[@{CopilotStationO}]]/[[@{CopilotStationG}]]/[[@{CopilotStationA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}} "></button>Copilot
+			</div>
+			<div class="sheet-col sheet-broadskill sheet-12emwidth"><input type="text"
+					name="attr_CopilotStationLocation"></div>
+			<div class="sheet-col sheet-broadskill sheet-12emwidth"><input type="text"
+					name="attr_CopilotStationOperator"></div>
+			<div class="sheet-col sheet-broadskill sheet-12emwidth"><input type="text"
+					name="attr_CopilotStationSystemLocation"></div>
+			<div class="sheet-col sheet-broadskill sheet-12emwidth"><input type="number" name="attr_CopilotStationO"
+					class="sheet-score" value="0">/<input type="text" name="attr_CopilotStationG"
+					class="sheet-scoredisabled" disabled="true" value="(floor(@{CopilotStationO}/2))">/<input
+					type="text" name="attr_CopilotStationA" class="sheet-scoredisabled" disabled="true"
+					value="(floor(@{CopilotStationO}/4))"></div>
+		</div>
+		<div class="sheet-row">
+			<div class="sheet-col sheet-broadskill sheet-12emwidth"><button type="roll" name="roll_CommunicationStation"
+					value="&{template:default} {{name= @{character_name} - Communications Station}} {{Operator=@{CommunicationStationOperator}}} {{Operator's Score= [[@{CommunicationStationO}]]/[[@{CommunicationStationG}]]/[[@{CommunicationStationA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}} "></button>Communications
+			</div>
+			<div class="sheet-col sheet-broadskill sheet-12emwidth"><input type="text"
+					name="attr_CommunicationStationLocation"></div>
+			<div class="sheet-col sheet-broadskill sheet-12emwidth"><input type="text"
+					name="attr_CommunicationStationOperator"></div>
+			<div class="sheet-col sheet-broadskill sheet-12emwidth"><input type="text"
+					name="attr_CommunicationStationSystemLocation"></div>
+			<div class="sheet-col sheet-broadskill sheet-12emwidth"><input type="number"
+					name="attr_CommunicationStationO" class="sheet-score" value="0">/<input type="text"
+					name="attr_CommunicationStationG" class="sheet-scoredisabled" disabled="true"
+					value="(floor(@{CommunicationStationO}/2))">/<input type="text" name="attr_CommunicationStationA"
+					class="sheet-scoredisabled" disabled="true" value="(floor(@{CommunicationStationO}/4))"></div>
+		</div>
+		<div class="sheet-row">
+			<div class="sheet-col sheet-broadskill sheet-12emwidth"><button type="roll" name="roll_DamageControl"
+					value="&{template:default} {{name= @{character_name} - Damage Control}} {{Operator=@{DamageControlOperator}}} {{Operator's Score= [[@{DamageControlO}]]/[[@{DamageControlG}]]/[[@{DamageControlA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}} "></button>Damage
+				Control</div>
+			<div class="sheet-col sheet-broadskill sheet-12emwidth">N/A</div>
+			<div class="sheet-col sheet-broadskill sheet-12emwidth"><input type="text"
+					name="attr_DamageControlOperator"></div>
+			<div class="sheet-col sheet-broadskill sheet-12emwidth"><input type="text"
+					name="attr_DamageControlSystemLocation"></div>
+			<div class="sheet-col sheet-broadskill sheet-12emwidth"><input type="number" name="attr_DamageControlO"
+					class="sheet-score" value="0">/<input type="text" name="attr_DamageControlG"
+					class="sheet-scoredisabled" disabled="true" value="(floor(@{DamageControlO}/2))">/<input type="text"
+					name="attr_DamageControlA" class="sheet-scoredisabled" disabled="true"
+					value="(floor(@{DamageControlO}/4))"></div>
+		</div>
+		<div class="sheet-row">
+			<div class="sheet-col sheet-broadskill sheet-12emwidth"><button type="roll" name="roll_DefenseStation"
+					value="&{template:default} {{name= @{character_name} - Defense Station}} {{Operator=@{DefenseStationOperator}}} {{Operator's Score= [[@{DefenseStationO}]]/[[@{DefenseStationG}]]/[[@{DefenseStationA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}} "></button>Defenses
+			</div>
+			<div class="sheet-col sheet-broadskill sheet-12emwidth"><input type="text"
+					name="attr_DefenseStationLocation"></div>
+			<div class="sheet-col sheet-broadskill sheet-12emwidth"><input type="text"
+					name="attr_DefenseStationOperator"></div>
+			<div class="sheet-col sheet-broadskill sheet-12emwidth"><input type="text"
+					name="attr_DefenseStationSystemLocation"></div>
+			<div class="sheet-col sheet-broadskill sheet-12emwidth"><input type="number" name="attr_DefenseStationO"
+					class="sheet-score" value="0">/<input type="text" name="attr_DefenseStationG"
+					class="sheet-scoredisabled" disabled="true" value="(floor(@{DefenseStationO}/2))">/<input
+					type="text" name="attr_DefenseStationA" class="sheet-scoredisabled" disabled="true"
+					value="(floor(@{DefenseStationO}/4))"></div>
+		</div>
+		<div class="sheet-row">
+			<div class="sheet-col sheet-broadskill sheet-12emwidth"><button type="roll" name="roll_EngineeringStation"
+					value="&{template:default} {{name= @{character_name} - Engineering Station}} {{Operator=@{EngineeringStationOperator}}} {{Operator's Score= [[@{EngineeringStationO}]]/[[@{EngineeringStationG}]]/[[@{EngineeringStationA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}} "></button>Engineering
+			</div>
+			<div class="sheet-col sheet-broadskill sheet-12emwidth"><input type="text"
+					name="attr_EngineeringStationLocation"></div>
+			<div class="sheet-col sheet-broadskill sheet-12emwidth"><input type="text"
+					name="attr_EngineeringStationOperator"></div>
+			<div class="sheet-col sheet-broadskill sheet-12emwidth"><input type="text"
+					name="attr_EngineeringStationSystemLocation"></div>
+			<div class="sheet-col sheet-broadskill sheet-12emwidth"><input type="number" name="attr_EngineeringStationO"
+					class="sheet-score" value="0">/<input type="text" name="attr_EngineeringStationG"
+					class="sheet-scoredisabled" disabled="true" value="(floor(@{EngineeringStationO}/2))">/<input
+					type="text" name="attr_EngineeringStationA" class="sheet-scoredisabled" disabled="true"
+					value="(floor(@{EngineeringStationO}/4))"></div>
+		</div>
+		<div class="sheet-row">
+			<div class="sheet-col sheet-broadskill sheet-12emwidth"><button type="roll" name="roll_SensorStation"
+					value="&{template:default} {{name= @{character_name} - Sensor Station}} {{Operator=@{SensorStationOperator}}} {{Operator's Score= [[@{SensorStationO}]]/[[@{SensorStationG}]]/[[@{SensorStationA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}} "></button>Sensors
+			</div>
+			<div class="sheet-col sheet-broadskill sheet-12emwidth"><input type="text"
+					name="attr_SensorStationLocation"></div>
+			<div class="sheet-col sheet-broadskill sheet-12emwidth"><input type="text"
+					name="attr_SensorStationOperator"></div>
+			<div class="sheet-col sheet-broadskill sheet-12emwidth"><input type="text"
+					name="attr_SensorStationSystemLocation"></div>
+			<div class="sheet-col sheet-broadskill sheet-12emwidth"><input type="number" name="attr_SensorStationO"
+					class="sheet-score" value="0">/<input type="text" name="attr_SensorStationG"
+					class="sheet-scoredisabled" disabled="true" value="(floor(@{SensorStationO}/2))">/<input type="text"
+					name="attr_SensorStationA" class="sheet-scoredisabled" disabled="true"
+					value="(floor(@{SensorStationO}/4))"></div>
+		</div>
+		<div class="sheet-row">
+			<div class="sheet-col sheet-broadskill sheet-12emwidth"><button type="roll" name="roll_WeaponStation"
+					value="&{template:default} {{name= @{character_name} - Weapons Station}} {{Operator=@{WeaponStationOperator}}} {{Operator's Score= [[@{WeaponStationO}]]/[[@{WeaponStationG}]]/[[@{WeaponStationA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}} "></button>Weapons
+			</div>
+			<div class="sheet-col sheet-broadskill sheet-12emwidth"><input type="text"
+					name="attr_WeaponStationLocation"></div>
+			<div class="sheet-col sheet-broadskill sheet-12emwidth"><input type="text"
+					name="attr_WeaponStationOperator"></div>
+			<div class="sheet-col sheet-broadskill sheet-12emwidth"><input type="text"
+					name="attr_WeaponStationSystemLocation"></div>
+			<div class="sheet-col sheet-broadskill sheet-12emwidth"><input type="number" name="attr_WeaponStationO"
+					class="sheet-score" value="0">/<input type="text" name="attr_WeaponStationG"
+					class="sheet-scoredisabled" disabled="true" value="(floor(@{WeaponStationO}/2))">/<input type="text"
+					name="attr_WeaponStationA" class="sheet-scoredisabled" disabled="true"
+					value="(floor(@{WeaponStationO}/4))"></div>
+		</div>
+		<div class="sheet-row">
+			<div class="sheet-col sheet-broadskill sheet-12emwidth"><button type="roll"
+					value="&{template:default} {{name=@{character_name} - @{StarshipArmorName}}} {{protection= [[@{StarshipLowImpact}]]LI / [[@{StarshipHighImpact}]]HI / [[@{StarshipEnergy}]]EN}}"></button>Armor
+			</div>
+			<div class="sheet-col sheet-broadskill sheet-12emwidth"><input type="text" name="attr_StarshipArmorName"
+					placeholder="Enter Starship Armor Name"></div>
+			<div class="sheet-col sheet-broadskill"><input type="text" name="attr_StarshipLowImpact"
+					class="sheet-dicetype" value="d0">(LI)<input type="text" name="attr_StarshipHighImpact"
+					class="sheet-dicetype" value="d0">(HI)<input type="text" name="attr_StarshipEnergy"
+					class="sheet-dicetype" value="d0">(En)</div>
+		</div>
+	</div>
+	<br />
+	<div class="sheet-row">
+		<div class="sheet-20emwidth sheet-col"></div>
+		<div class="sheet-col">
+			<h3 class="sheet-row sheet-skilltitle">Starship Weapons</h3>
+		</div>
+	</div>
+	<div class="sheet-row">
+		<div class="sheet-col" style="width:2em;"></div>
+		<div class="sheet-col sheet-broadskill sheet-16emwidth">Weapon Name</div>
+		<div class="sheet-col sheet-broadskill" style="width:3em;">Acc</div>
+		<div class="sheet-col sheet-8emwidth sheet-broadskill">Range</div>
+		<div class="sheet-col sheet-4emwidth sheet-broadskill">Type</div>
+		<div class="sheet-col sheet-20emwidth sheet-broadskill">Damage</div>
+		<div class="sheet-col sheet-broadskill">Actions</div>
+	</div>
+	<fieldset class="repeating_starshipweapons">
+		<div class="sheet-row">
+			<div class="sheet-col"><button type="roll" name="roll_StarshipWeapon"
+					value="&{template:default} {{name= @{character_name} - @{StarshipWeaponName}}} {{Operator=@{WeaponStationOperator}}} {{Operator's Score= [[@{WeaponStationO}]]/[[@{WeaponStationG}]]/[[@{WeaponStationA}]]}} {{type= @{StarshipWeapontype}}} {{range= @{StarshipWeaponrange}}} {{damage= [[@{StarshipWeapondamageordinary}]]@{StarshipWeapondamageordinarytype}/[[@{StarshipWeapondamagegood}]]@{StarshipWeapondamagegoodtype}/[[@{StarshipWeapondamageamazing}]]@{StarshipWeapondamageamazingtype}}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}}"></button><input
+					type="text" name="attr_StarshipWeaponName" class="sheet-16emwidth"
+					placeholder="Enter Starship Weapon"></div>
+			<div class="sheet-col"><input type="text" name="attr_StarshipWeaponAcc" class="sheet-score" value="0">
+			</div>
+			<div class="sheet-col"><input type="text" name="attr_StarshipWeaponRange" class="sheet-range"
+					placeholder="Weapon Range"></div>
+			<div class="sheet-col"><input type="text" name="attr_StarshipWeaponType" class="sheet-dicetype"></div>
+			<div class="sheet-col"><input type="text" name="attr_StarshipWeapondamageordinary"
+					class="sheet-dicetype"><input type="text" name="attr_StarshipWeapondamageordinarytype"
+					class="sheet-dmgtype">/<input type="text" name="attr_StarshipWeapondamagegood"
+					class="sheet-dicetype"><input type="text" name="attr_StarshipWeapondamagegoodtype"
+					class="sheet-dmgtype">/<input type="text" name="attr_StarshipWeapondamageamazing"
+					class="sheet-dicetype"><input type="text" name="attr_StarshipWeapondamageamazingtype"
+					class="sheet-dmgtype"></div>
+			<div class="sheet-col"><input type="text" name="attr_StarshipWeaponActions" class="sheet-dmgtype"></div>
+		</div>
+	</fieldset>
+
+	<div class="sheet-row">
+		<div class="sheet-20emwidth sheet-col"></div>
+		<div class="sheet-col">
+			<h3 class="sheet-row sheet-skilltitle">Starship Equipment</h3>
+		</div>
+	</div>
+	<div class="sheet-row">
+		<div class="sheet-col sheet-broadskill sheet-10emwidth">Equipment Name</div>
+		<div class="sheet-col sheet-broadskill sheet-8emwidth">Type</div>
+		<div class="sheet-col sheet-4emwidth sheet-broadskill">Power</div>
+		<div class="sheet-col sheet-4emwidth sheet-broadskill">Dura</div>
+		<div class="sheet-col sheet-broadskill">Description</div>
+	</div>
+	<fieldset class="repeating_starshipEquipment">
+		<div class="sheet-row">
+			<div class="sheet-col"><input type="text" name="attr_StarshipEquipmentName" class="sheet-12emwidth"
+					placeholder="Enter Equipment Name"></div>
+			<div class="sheet-col" style="height: 2em;"><select name="attr_StarshipEquipmentType"
+					class="sheet-8emwidth">
+					<option value="Power">Power</option>
+					<option value="Engines">Engines</option>
+					<option value="Drive">Drive</option>
+					<option value="Support">Support</option>
+					<option value="Sensor">Sensor</option>
+					<option value="Defense">Defense</option>
+					<option value="Communication">Communication</option>
+					<option value="Computer">Computer</option>
+					<option value="Crew">Crew</option>
+					<option value="Cargo">Cargo</option>
+					<option value="Other">Other</option>
+				</select></div>
+			<div class="sheet-col"><input type="text" name="attr_StarshipEquipmentPower" class="sheet-dicetype">
+			</div>
+			<div class="sheet-col"><input type="text" name="attr_StarshipEquipmentDurability" class="sheet-dicetype">
+			</div>
+			<div class="sheet-col"><input type="text" name="attr_StarshipEquipmentDescription" style="width:30em;">
+			</div>
+		</div>
+	</fieldset>
+
+	<div class="sheet-row">
+		<div class="sheet-20emwidth sheet-col"></div>
+		<div class="sheet-col">
+			<h2 class="sheet-row sheet-skilltitle">Starship Compartments</h2>
+		</div>
+	</div>
+	<div class="sheet-fullwidth">
+		<div class="sheet-col sheet-20emwidth">
+			<h3 class="sheet-row sheet-skilltitle">Port Side</h3>
+			<fieldset class="repeating_StarshipPortCompartments">
+				<div class="sheet-bordersolid sheet-compartmentcontainer">
+					<input type="checkbox" name="attr_CompartmentHide" class="sheet-compartment" checked />
+					<div class="sheet-compartment">
+						<div class="sheet-row">
+							<div class="sheet-col sheet-8emwidth sheet-broadskill">Compartment</div>
+							<input type="text" name="attr_StarshipCompartmentName" style="width:10em;">
+						</div>
+						<div class="sheet-row">
+							<div class="sheet-col sheet-8emwidth sheet-broadskill">Stun</div>
+							<input type="number" name="attr_StarshipCompartmentStunCurrent"
+								class="sheet-4emwidth">/<input type="number" name="attr_StarshipCompartmentStunMax"
+								class="sheet-4emwidth">
+						</div>
+						<div class="sheet-row">
+							<div class="sheet-col sheet-8emwidth sheet-broadskill">Wound</div>
+							<input type="number" name="attr_StarshipCompartmentWoundCurrent"
+								class="sheet-4emwidth">/<input type="number" name="attr_StarshipCompartmentWoundMax"
+								class="sheet-4emwidth">
+						</div>
+						<div class="sheet-row">
+							<div class="sheet-col sheet-8emwidth sheet-broadskill">Mortal</div>
+							<input type="number" name="attr_StarshipCompartmentMortalCurrent"
+								class="sheet-4emwidth">/<input type="number" name="attr_StarshipCompartmentMortalMax"
+								class="sheet-4emwidth">
+						</div>
+					</div>
+				</div>
+			</fieldset>
+		</div>
+		<div class="sheet-col sheet-20emwidth">
+			<h3 class="sheet-row sheet-skilltitle">Central</h3>
+			<fieldset class="repeating_StarshipCenterCompartments">
+				<div class="sheet-bordersolid sheet-compartmentcontainer">
+					<input type="checkbox" name="attr_CompartmentHide" class="sheet-compartment" checked />
+					<div class="sheet-compartment">
+						<div class="sheet-row">
+							<div class="sheet-col sheet-8emwidth sheet-broadskill">Compartment</div>
+							<input type="text" name="attr_StarshipCompartmentName" style="width:10em;">
+						</div>
+						<div class="sheet-row">
+							<div class="sheet-col sheet-8emwidth sheet-broadskill">Stun</div>
+							<input type="number" name="attr_StarshipCompartmentStunCurrent"
+								class="sheet-4emwidth">/<input type="number" name="attr_StarshipCompartmentStunMax"
+								class="sheet-4emwidth">
+						</div>
+						<div class="sheet-row">
+							<div class="sheet-col sheet-8emwidth sheet-broadskill">Wound</div>
+							<input type="number" name="attr_StarshipCompartmentWoundCurrent"
+								class="sheet-4emwidth">/<input type="number" name="attr_StarshipCompartmentWoundMax"
+								class="sheet-4emwidth">
+						</div>
+						<div class="sheet-row">
+							<div class="sheet-col sheet-8emwidth sheet-broadskill">Mortal</div>
+							<input type="number" name="attr_StarshipCompartmentMortalCurrent"
+								class="sheet-4emwidth">/<input type="number" name="attr_StarshipCompartmentMortalMax"
+								class="sheet-4emwidth">
+						</div>
+					</div>
+				</div>
+			</fieldset>
+		</div>
+		<div class="sheet-col sheet-20emwidth">
+			<h3 class="sheet-row sheet-skilltitle">Starboard Side</h3>
+			<fieldset class="repeating_StarshipStarboardCompartments">
+				<div class="sheet-bordersolid sheet-compartmentcontainer">
+					<input type="checkbox" name="attr_CompartmentHide" class="sheet-compartment" checked />
+					<div class="sheet-compartment">
+						<div class="sheet-row">
+							<div class="sheet-col sheet-8emwidth sheet-broadskill">Compartment</div>
+							<input type="text" name="attr_StarshipCompartmentName" style="width:10em;">
+						</div>
+						<div class="sheet-row">
+							<div class="sheet-col sheet-8emwidth sheet-broadskill">Stun</div>
+							<input type="number" name="attr_StarshipCompartmentStunCurrent"
+								class="sheet-4emwidth">/<input type="number" name="attr_StarshipCompartmentStunMax"
+								class="sheet-4emwidth">
+						</div>
+						<div class="sheet-row">
+							<div class="sheet-col sheet-8emwidth sheet-broadskill">Wound</div>
+							<input type="number" name="attr_StarshipCompartmentWoundCurrent"
+								class="sheet-4emwidth">/<input type="number" name="attr_StarshipCompartmentWoundMax"
+								class="sheet-4emwidth">
+						</div>
+						<div class="sheet-row">
+							<div class="sheet-col sheet-8emwidth sheet-broadskill">Mortal</div>
+							<input type="number" name="attr_StarshipCompartmentMortalCurrent"
+								class="sheet-4emwidth">/<input type="number" name="attr_StarshipCompartmentMortalMax"
+								class="sheet-4emwidth">
+						</div>
+					</div>
+				</div>
+			</fieldset>
+		</div>
+	</div>
+	<br />
+	<div class="sheet-fullwidth">
+		<div class="sheet-row sheet-broadskill">Starship Notes:</div>
+		<div class="sheet-row">
+			<textarea name="attr_StarshipNotes" class="sheet-fullbox"></textarea>
+		</div>
+	</div>
+
+</div>

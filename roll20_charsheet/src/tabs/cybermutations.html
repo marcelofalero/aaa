@@ -1,0 +1,166 @@
+		<div class="sheet-section-cybermutations">
+		<div class="sheet-fullwidth">
+			<div class="sheet-bordersolid sheet-fullwidth">
+					<div class="sheet-table">
+						<div class="sheet-rowtable sheet-skilltitle">MUTATIONS</div>
+						<div class="sheet-rowtable">
+							<div class="sheet-broadskill">Mutant Origin</div>
+							<div class="sheet-tablecell"><input type="text" name="attr_MutantOrigin"
+									class="sheet-range">
+							</div>
+							<div class="sheet-broadskill">Uniqueness</div>
+							<div class="sheet-tablecell"><input type="text" name="attr_Uniqueness" class="sheet-range">
+							</div>
+						</div>
+						<div class="sheet-rowtable">
+							<div class="sheet-broadskill">Mutation Points</div>
+							<div class="sheet-tablecell"><input type="text" name="attr_MutationPoints"
+									class="sheet-range">
+							</div>
+							<div class="sheet-broadskill">Drawback Points</div>
+							<div class="sheet-tablecell"><input type="text" name="attr_DrawbackPoints"
+									class="sheet-range">
+							</div>
+						</div>
+					</div>
+					<div class="sheet-table">
+						<div class="sheet-rowtable sheet-skilltitle">Ordinary Mutations</div>
+						<div class="sheet-rowtable"><textarea name="attr_OrdinaryMutations"></textarea></div>
+						<div class="sheet-rowtable sheet-skilltitle">Good Mutations</div>
+						<div class="sheet-rowtable"><textarea name="attr_GoodMutations"
+								class="sheet-smallbox"></textarea>
+						</div>
+						<div class="sheet-rowtable sheet-skilltitle">Amazing Mutation</div>
+						<div class="sheet-rowtable"><textarea name="attr_AmazingMutations"
+								class="sheet-smallbox"></textarea></div>
+						<div class="sheet-rowtable sheet-skilltitle">Slight Drawbacks</div>
+						<div class="sheet-rowtable"><textarea name="attr_SlightDrawbacks"></textarea></div>
+						<div class="sheet-rowtable sheet-skilltitle">Moderate Drawbacks</div>
+						<div class="sheet-rowtable"><textarea name="attr_ModerateDrawbacks"
+								class="sheet-smallbox"></textarea></div>
+						<div class="sheet-rowtable sheet-skilltitle">Extreme Drawback</div>
+						<div class="sheet-rowtable"><textarea name="attr_ExtremeDrawbacks"
+								class="sheet-smallbox"></textarea></div>
+					</div>
+				</div>
+				<div class="sheet-bordersolid sheet-fullwidth">
+					<div class="sheet-skilltitle" style="padding: 5px;">Cybernetic Gear</div>
+					<div class="sheet-table" style="background: var(--color-bg);">
+						<div class="sheet-rowtable">
+							<div class="sheet-tablecell sheet-broadskill" style="width: 25%;">Item Name</div>
+							<div class="sheet-tablecell sheet-broadskill" style="width: 10%;">Level</div>
+							<div class="sheet-tablecell sheet-broadskill" style="width: 10%;">Mass</div>
+							<div class="sheet-tablecell sheet-broadskill" style="width: 10%;">Size</div>
+							<div class="sheet-tablecell sheet-broadskill" style="width: 15%; text-align: center;">O
+							</div>
+							<div class="sheet-tablecell sheet-broadskill" style="width: 15%; text-align: center;">G
+							</div>
+							<div class="sheet-tablecell sheet-broadskill" style="width: 15%; text-align: center;">A
+							</div>
+						</div>
+					</div>
+					<fieldset class="repeating_cybergear">
+						<div class="sheet-table" style="border-top: 1px solid var(--color-border);">
+							<div class="sheet-rowtable">
+								<div class="sheet-tablecell" style="width: 25%;"><input type="text"
+										name="attr_CyberName" placeholder="Gear Name" style="width: 100%;"></div>
+								<div class="sheet-tablecell" style="width: 10%;"><input type="number"
+										name="attr_CyberLevel" style="width: 100%;"></div>
+								<div class="sheet-tablecell" style="width: 10%;"><input type="number"
+										name="attr_CyberMass" style="width: 100%;"></div>
+								<div class="sheet-tablecell" style="width: 10%;"><input type="text"
+										name="attr_CyberSize" style="width: 100%;"></div>
+								<div class="sheet-tablecell" style="width: 15%;"><input type="number"
+										name="attr_CyberCostO" style="width: 100%;"></div>
+								<div class="sheet-tablecell" style="width: 15%;"><input type="number"
+										name="attr_CyberCostG" style="width: 100%;"></div>
+								<div class="sheet-tablecell" style="width: 15%;"><input type="number"
+										name="attr_CyberCostA" style="width: 100%;"></div>
+							</div>
+						</div>
+					</fieldset>
+
+					<div class="sheet-table" style="margin-top: 10px; border-top: 2px solid var(--color-accent-teal);">
+						<div class="sheet-rowtable">
+							<div class="sheet-tablecell sheet-broadskill">Cyber Tolerance</div>
+							<div class="sheet-tablecell" style="text-align: right;">
+								<input type="text" name="attr_CyberToleranceO" class="sheet-scoredisabled"
+									disabled="true" value="(floor((@{CyberToleranceRank}+@{Constitution})/2))"> /
+								<input type="text" name="attr_CyberToleranceG" class="sheet-scoredisabled"
+									disabled="true" value="(ceil((@{CyberToleranceRank}+@{Constitution})/4))"> /
+								<input type="text" name="attr_CyberToleranceA" class="sheet-scoredisabled"
+									disabled="true" value="(floor((@{CyberToleranceRank}+@{Constitution})/4))">
+							</div>
+						</div>
+						<div class="sheet-rowtable">
+							<div class="sheet-tablecell" colspan="2">
+								<div class="sheet-rowtable sheet-broadskill" style="font-size: 0.8em; opacity: 0.7;">
+									Score:
+									6-12 (+2) | 13-16 (-1) | 17-19
+									(-2)</div>
+								<div class="sheet-rowtable">
+									<input type="checkbox" name="attr_CyberTolerance1" /><input type="checkbox"
+										name="attr_CyberTolerance2" /><input type="checkbox"
+										name="attr_CyberTolerance3" /><input type="checkbox"
+										name="attr_CyberTolerance4" /><input type="checkbox"
+										name="attr_CyberTolerance5" />
+									|
+									<input type="checkbox" name="attr_CyberTolerance6" /><input type="checkbox"
+										name="attr_CyberTolerance7" /><input type="checkbox"
+										name="attr_CyberTolerance8" /><input type="checkbox"
+										name="attr_CyberTolerance9" /><input type="checkbox"
+										name="attr_CyberTolerance10" />
+									|
+									<input type="checkbox" name="attr_CyberTolerance11" /><input type="checkbox"
+										name="attr_CyberTolerance12" /><input type="checkbox"
+										name="attr_CyberTolerance13" /><input type="checkbox"
+										name="attr_CyberTolerance14" /><input type="checkbox"
+										name="attr_CyberTolerance15" />
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="sheet-bordersolid sheet-fullwidth">
+					<div class="sheet-skilltitle">COMPUTERS</div>
+					<div class="sheet-row">
+						<div class="sheet-col sheet-broadskill" style="width:30%">Computer Model</div>
+						<div class="sheet-col"><input type="text" name="attr_ComputerModel" class="sheet-range" />
+						</div>
+					</div>
+					<div class="sheet-row">
+						<div class="sheet-col sheet-broadskill" style="width:30%">Processor Quality</div>
+						<div class="sheet-col"><input type="text" name="attr_ProcessorQuality" class="sheet-range" />
+						</div>
+					</div>
+					<div class="sheet-row">
+						<div class="sheet-col sheet-broadskill" style="width:30%">Active Memory</div>
+						<div class="sheet-col"><input type="text" name="attr_ActiveMemory" class="sheet-range" />
+						</div>
+					</div>
+					<div class="sheet-row">
+						<div class="sheet-col sheet-12emwidth sheet-broadskill">Programs</div>
+						<div class="sheet-col sheet-4emwidth sheet-broadskill">Size</div>
+						<div class="sheet-col sheet-4emwidth sheet-broadskill">Active</div>
+						<div class="sheet-col sheet-4emwidth sheet-broadskill">Storage</div>
+						<div class="sheet-col sheet-4emwidth sheet-broadskill">Function</div>
+					</div>
+					<fieldset class="repeating_programs">
+						<div class="sheet-row">
+							<div class="sheet-col sheet-12emwidth"><input type="text" name="attr_ProgramName" />
+							</div>
+							<div class="sheet-col sheet-4emwidth"><input type="text" name="attr_ProgramSize"
+									class="sheet-dicetype" /></div>
+							<div class="sheet-col sheet-4emwidth sheet-aligncenter"><input type="radio"
+									name="attr_ActiveStorage" value="1" /></div>
+							<div class="sheet-col sheet-4emwidth sheet-aligncenter"><input type="radio"
+									name="attr_ActiveStorage" value="0" /></div>
+							<div class="sheet-col sheet-4emwidth"><input type="text" name="attr_ProgramFunction" />
+							</div>
+						</div>
+					</fieldset>
+				</div>
+			</div>
+		</div>
+		<div class="sheet-fullwidth">
+		</div>

@@ -1,0 +1,688 @@
+		<div class="sheet-section-core">
+
+			<div class="sheet-core-row">
+				<div class="sheet-core-col" style="flex: 0 0 300px; width: 300px;">
+					<div class="sheet-panel" style="border-right: 1px solid var(--color-border);">
+						<div class="sheet-grid-abilities">
+							<div class="sheet-label-grid" data-i18n="ability">Ability</div>
+							<div class="sheet-label-grid" data-i18n="score">Score</div>
+							<div class="sheet-label-grid" data-i18n="res-mod" style="text-align: center;">Res. Mod.
+							</div>
+
+							<div class="sheet-broadskill" data-i18n="strength">Strength</div>
+							<div class="sheet-field-row">
+								<button type="roll" name="roll_Strength"
+									value="&{template:default} {{name= @{character_name} - Strength Feat Check}} {{score= [[@{Strength}]]/[[floor(@{Strength}/2)]]/[[floor(@{Strength}/4)]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}}"></button>
+								<input type="number" name="attr_Strength" class="sheet-ability" value="0">
+							</div>
+							<input type="number" name="attr_StrRes" class="sheet-ability">
+
+							<div class="sheet-broadskill" data-i18n="dexterity">Dexterity</div>
+							<div class="sheet-field-row">
+								<button type="roll" name="roll_Dexterity"
+									value="&{template:default} {{name= @{character_name} - Dexterity Feat Check}} {{score= [[@{Dexterity}]]/[[floor(@{Dexterity}/2)]]/[[floor(@{Dexterity}/4)]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}}"></button>
+								<input type="number" name="attr_Dexterity" class="sheet-ability" value="0">
+							</div>
+							<input type="number" name="attr_DexRes" class="sheet-ability">
+
+							<div class="sheet-broadskill" data-i18n="constitution">Constitution</div>
+							<div class="sheet-field-row">
+								<button type="roll" name="roll_Constitution"
+									value="&{template:default} {{name= @{character_name} - Constitution Feat Check}} {{score= [[@{Constitution}]]/[[floor(@{Constitution}/2)]]/[[floor(@{Constitution}/4)]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}}"></button>
+								<input type="number" name="attr_Constitution" class="sheet-ability" value="0">
+							</div>
+							<div style="text-align: center;">-</div>
+
+							<div class="sheet-broadskill" data-i18n="intelligence">Intelligence</div>
+							<div class="sheet-field-row">
+								<button type="roll" name="roll_Intelligence"
+									value="&{template:default} {{name= @{character_name} - Intelligence Feat Check}} {{score= [[@{Intelligence}]]/[[floor(@{Intelligence}/2)]]/[[floor(@{Intelligence}/4)]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}}"></button>
+								<input type="number" name="attr_Intelligence" class="sheet-ability" value="0">
+							</div>
+							<input type="number" name="attr_IntRes" class="sheet-ability">
+
+							<div class="sheet-broadskill" data-i18n="will">Will</div>
+							<div class="sheet-field-row">
+								<button type="roll" name="roll_Will"
+									value="&{template:default} {{name= @{character_name} - Will Feat Check}} {{score= [[@{Will}]]/[[floor(@{Will}/2)]]/[[floor(@{Will}/4)]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}}"></button>
+								<input type="number" name="attr_Will" class="sheet-ability" value="0">
+							</div>
+							<input type="number" name="attr_WillRes" class="sheet-ability">
+
+							<div class="sheet-broadskill" data-i18n="personality">Personality</div>
+							<div class="sheet-field-row">
+								<button type="roll" name="roll_Personality"
+									value="&{template:default} {{name= @{character_name} - Personality Feat Check}} {{score= [[@{Personality}]]/[[floor(@{Personality}/2)]]/[[floor(@{Personality}/4)]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}}"></button>
+								<input type="number" name="attr_Personality" class="sheet-ability" value="0">
+							</div>
+							<div style="text-align: center;">-</div>
+						</div>
+					</div>
+				</div>
+				<div class="sheet-core-col" style="flex: 1; min-width: 300px;">
+					<div class="sheet-panel">
+						<div class="sheet-skilltitle" data-i18n="durability">DURABILITY</div>
+					</div>
+					<div class="sheet-panel">
+						<div class="sheet-specskill" style="margin-bottom: 5px;" data-i18n="durability-desc">(Damage
+							Suffered/Durability Rating)</div>
+						<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px 20px;">
+							<div>
+								<div class="sheet-broadskill" data-i18n="stun">Stun</div>
+								<div class="sheet-field-row">
+									<input type="number" name="attr_StunCurrent"
+										style="width: 100% !important; max-width: 5em;"> <span
+										class="sheet-label-span">/</span> <input type="number" name="attr_StunMax"
+										style="width: 100% !important; max-width: 5em;">
+								</div>
+							</div>
+							<div>
+								<div class="sheet-broadskill" data-i18n="wound">Wound</div>
+								<div class="sheet-field-row">
+									<input type="number" name="attr_WoundCurrent"
+										style="width: 100% !important; max-width: 5em;"> <span
+										class="sheet-label-span">/</span> <input type="number" name="attr_WoundMax"
+										style="width: 100% !important; max-width: 5em;">
+								</div>
+							</div>
+							<div>
+								<div class="sheet-broadskill" data-i18n="fatigue">Fatigue</div>
+								<div class="sheet-field-row">
+									<input type="number" name="attr_FatigueCurrent"
+										style="width: 100% !important; max-width: 5em;">
+									<span class="sheet-label-span">/</span> <input type="number" name="attr_FatigueMax"
+										style="width: 100% !important; max-width: 5em;">
+								</div>
+							</div>
+							<div>
+								<div class="sheet-broadskill" data-i18n="mortal">Mortal</div>
+								<div class="sheet-field-row">
+									<input type="number" name="attr_MortalCurrent"
+										style="width: 100% !important; max-width: 5em;">
+									<span class="sheet-label-span">/</span> <input type="number" name="attr_MortalMax"
+										style="width: 100% !important; max-width: 5em;">
+								</div>
+							<div>
+								<div class="sheet-broadskill" data-i18n="psionic-energy">Psionic Energy</div>
+								<div class="sheet-field-row">
+									<input type="number" name="attr_PsionicEnergyCurrent"
+										style="width: 100% !important; max-width: 5em;"> <span
+										class="sheet-label-span">/</span> <input type="number" name="attr_PsionicEnergyMax"
+										style="width: 100% !important; max-width: 5em;">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="sheet-core-row" style="margin-top: 15px;">
+				<div class="sheet-fullwidth">
+					<div class="sheet-panel">
+						<div class="sheet-grid-action">
+							<div class="sheet-skilltitle sheet-fullwidth" data-i18n="action-check-score"
+								style="width: 100%; margin-bottom: 5px;">ACTION CHECK SCORE</div>
+
+							<div>
+								<div class="sheet-label-grid" data-i18n="marginal">Marginal</div><input type="text"
+									name="attr_ActionCheckM" disabled="true" class="sheet-ability"
+									style="width: 4em !important;" value="(@{ActionCheck}+1)">
+							</div>
+							<div>
+								<div class="sheet-label-grid" data-i18n="ordinary">Ordinary</div><input type="number"
+									name="attr_ActionCheck" class="sheet-ability" style="width: 4em !important;"
+									value="0">
+							</div>
+							<div>
+								<div class="sheet-label-grid" data-i18n="good">Good</div><input type="text"
+									name="attr_ActionCheckG" disabled="true" class="sheet-ability"
+									style="width: 4em !important;" value="(floor(@{ActionCheck}/2))">
+							</div>
+							<div>
+								<div class="sheet-label-grid" data-i18n="amazing">Amazing</div>
+								<div class="sheet-field-row" style="gap: 5px; align-items: center;">
+									<input type="text" name="attr_ActionCheckA" disabled="true" class="sheet-ability"
+										style="width: 4em !important;" value="(floor(@{ActionCheck}/4))">
+									<button type="roll"
+										value="&{template:default} {{name=@{character_name} - Action Check}} {{score= [[@{ActionCheckM}]]+/[[@{ActionCheck}]]/[[@{ActionCheckG}]]/[[@{ActionCheckA}]]}} {{result= [[1d20cs<1cf>20+@{ActionDie}cs<0cf<0]]}}"></button>
+								</div>
+							</div>
+
+							<div>
+								<div class="sheet-label-grid" data-i18n="die">DIE</div><input type="text"
+									name="attr_ActionDie" class="sheet-ability" style="width: 8em !important">
+							</div>
+							<div>
+								<div class="sheet-label-grid" data-i18n="actions-per-round">ACTIONS PER ROUND</div>
+								<input type="number" name="attr_ActionsPerRound" class="sheet-ability"
+									style="width: 4em !important">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="sheet-core-row" style="margin-top: 5px;">
+				<div class="sheet-fullwidth">
+					<div class="sheet-panel">
+						<div class="sheet-grid-movement">
+							<div class="sheet-skilltitle sheet-fullwidth" data-i18n="combat-movement-rates"
+								style="width: 100%; margin-bottom: 5px;">COMBAT MOVEMENT RATES</div>
+
+							<div>
+								<div class="sheet-label-grid" data-i18n="sprint">Sprint</div><input type="text"
+									name="attr_Sprint" class="sheet-ability" style="width: 5em !important;">
+							</div>
+							<div>
+								<div class="sheet-label-grid" data-i18n="run">Run</div><input type="text"
+									name="attr_Run" class="sheet-ability" style="width: 5em !important;">
+							</div>
+							<div>
+								<div class="sheet-label-grid" data-i18n="walk">Walk</div><input type="text"
+									name="attr_Walk" class="sheet-ability" style="width: 5em !important;">
+							</div>
+							<div>
+								<div class="sheet-label-grid" data-i18n="easy-swim">EasySwim</div><input type="text"
+									name="attr_EasySwim" class="sheet-ability" style="width: 5em !important;">
+							</div>
+							<div>
+								<div class="sheet-label-grid" data-i18n="swim">Swim</div><input type="text"
+									name="attr_Swim" class="sheet-ability" style="width: 5em !important;">
+							</div>
+							<div>
+								<div class="sheet-label-grid" data-i18n="glide">Glide</div><input type="text"
+									name="attr_Glide" class="sheet-ability" style="width: 5em !important;">
+							</div>
+							<div>
+								<div class="sheet-label-grid" data-i18n="fly">Fly</div><input type="text"
+									name="attr_Fly" class="sheet-ability" style="width: 5em !important;">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="sheet-core-row"
+				style="margin-top: 15px; border-top: 1px solid var(--color-border); padding-top: 15px;">
+				<div class="sheet-fullwidth">
+					<div class="sheet-skilltitle sheet-row" data-i18n="armor-layers">ARMOR LAYERS</div>
+					<fieldset class="repeating_armor">
+						<div class="sheet-core-row"
+							style="align-items: center; gap: 8px; margin-bottom: 5px; flex-wrap: wrap; border: 0px">
+							<button type="roll"
+								value="&{template:default} {{name=@{character_name} - @{ArmorName}}} {{protection= [[@{LowImpact}]]LI / [[@{HighImpact}]]HI / [[@{Energy}]]EN}} {{notes=@{ArmorNotes}}}"></button>
+							<div class="sheet-field" style="flex: 5; min-width: 250px;">
+								<input type="text" name="attr_ArmorName" data-i18n-placeholder="armor-name-placeholder"
+									placeholder="Armor Name" style="border-bottom: 1px solid var(--color-accent-teal);">
+							</div>
+							<div class="sheet-field-row" style="gap: 5px; align-items: center;">
+								<span style="font-weight: 800; color: var(--color-accent-teal);">Li</span>
+								<input type="text" name="attr_LowImpact" class="sheet-armor-input" value="d0">
+							</div>
+							<div class="sheet-field-row" style="gap: 5px; align-items: center;">
+								<span style="font-weight: 800; color: var(--color-accent-teal);">Hi</span>
+								<input type="text" name="attr_HighImpact" class="sheet-armor-input" value="d0">
+							</div>
+							<div class="sheet-field-row" style="gap: 5px; align-items: center;">
+								<span style="font-weight: 800; color: var(--color-accent-teal);">En</span>
+								<input type="text" name="attr_Energy" class="sheet-armor-input" value="d0">
+							</div>
+							<div class="sheet-field" style="flex: 8; min-width: 300px;">
+								<input type="text" name="attr_ArmorNotes" data-i18n-placeholder="notes-placeholder" placeholder="Notes"
+									style="font-size: 0.9rem; border-bottom: 1px dashed var(--color-border);">
+							</div>
+						</div>
+					</fieldset>
+				</div>
+			</div>
+			<br>
+
+
+
+			<br>
+			<!-- ATTACK FORMS & WEAPON DATA (unified repeating section) -->
+			<div class="sheet-skilltitle sheet-row" style="margin-top: 20px; margin-bottom: 4px;"
+				data-i18n="attack-forms">ATTACK FORMS</div>
+
+			<!-- Fixed Unarmed attack header -->
+
+
+			<!-- UNARMED -->
+			<div class="sheet-attackform-container">
+				<div class="sheet-attackform-row">
+					<button type="roll" name="roll_weapon_unarmed"
+						value="&{template:default} {{name= @{character_name} - @{formunarmed}}} {{score= [[@{formunarmedscore}]]/[[@{formunarmedscoregood}]]/[[@{formunarmedscoreamazing}]]}} {{type= @{formunarmedtype}}} {{range= @{formunarmedrange}}} {{damage= [[@{formunarmeddamageordinary}]]@{formunarmeddamageordinarytype}/[[@{formunarmeddamagegood}]]@{formunarmeddamagegoodtype}/[[@{formunarmeddamageamazing}]]@{formunarmeddamageamazingtype}}} {{results= [[1d20cs<1cf>20 + (@{formunarmed_step_die})]]}}"></button>
+
+					<div class="sheet-attackform-field" style="flex: 6; min-width: 200px;">
+						<div class="sheet-attackform-label" data-i18n="attack-form-name">Attack Form Name</div>
+						<input type="text" name="attr_formunarmed" disabled="true" value="Unarmed"
+							style="width: 100% !important;">
+					</div>
+
+					<div class="sheet-attackform-field" style="flex: 1; min-width: 60px;">
+						<div class="sheet-attackform-label" data-i18n="type">Type</div>
+						<input type="text" name="attr_formunarmedtype" value="LI/O" disabled="true"
+							style="width: 100% !important;">
+					</div>
+
+					<div class="sheet-attackform-field" style="flex: 2; min-width: 100px;">
+						<div class="sheet-attackform-label" data-i18n="range-sml">Range (S/M/L)</div>
+						<input type="text" name="attr_formunarmedrange" disabled="true" value="Personal"
+							style="width: 100% !important;">
+					</div>
+
+					<div class="sheet-attackform-field" style="flex: 10; min-width: 300px;">
+						<div class="sheet-attackform-label" data-i18n="notes">Notes</div>
+						<input type="text" name="attr_formunarmednotes" data-i18n-placeholder="notes-placeholder" placeholder="Notes"
+							style="width: 100% !important;">
+					</div>
+				</div>
+
+				<div class="sheet-attackform-row" style="padding-left: 34px;">
+					<div class="sheet-attackform-field">
+						<div class="sheet-attackform-label" data-i18n="score-oga">Score (O/G/A)</div>
+						<div class="sheet-triplet sheet-score-triplet">
+							<input type="number" name="attr_formunarmedscore" value="0">
+							<span>/</span>
+							<input type="text" name="attr_formunarmedscoregood" disabled="true"
+								value="(floor(@{formunarmedscore}/2))">
+							<span>/</span>
+							<input type="text" name="attr_formunarmedscoreamazing" disabled="true"
+								value="(floor(@{formunarmedscore}/4))">
+						</div>
+					</div>
+
+					<div class="sheet-attackform-field">
+						<div class="sheet-attackform-label" data-i18n="base-die">Base Die</div>
+						<select name="attr_formunarmeddie" style="width: 6em !important;">
+							<option value="-15">-15</option>
+							<option value="-14">-14</option>
+							<option value="-13">-13</option>
+							<option value="-12">-12</option>
+							<option value="-11">-11</option>
+							<option value="-10">-10</option>
+							<option value="-9">-9</option>
+							<option value="-8">-8</option>
+							<option value="-7">-7</option>
+							<option value="-6">-6</option>
+							<option value="-5">-5</option>
+							<option value="-4">-4</option>
+							<option value="-3">-3</option>
+							<option value="-2">-2</option>
+							<option value="-1">-1</option>
+							<option value="0">0</option>
+							<option value="1" selected>1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+							<option value="8">8</option>
+							<option value="9">9</option>
+							<option value="10">10</option>
+							<option value="11">11</option>
+							<option value="12">12</option>
+							<option value="13">13</option>
+							<option value="14">14</option>
+							<option value="15">15</option>
+						</select>
+					</div>
+
+					<div class="sheet-attackform-field">
+						<div class="sheet-attackform-label" data-i18n="acc">Acc</div>
+						<select name="attr_formunarmedaccuracy" style="width: 6em !important;">
+							<option value="-15">-15</option>
+							<option value="-14">-14</option>
+							<option value="-13">-13</option>
+							<option value="-12">-12</option>
+							<option value="-11">-11</option>
+							<option value="-10">-10</option>
+							<option value="-9">-9</option>
+							<option value="-8">-8</option>
+							<option value="-7">-7</option>
+							<option value="-6">-6</option>
+							<option value="-5">-5</option>
+							<option value="-4">-4</option>
+							<option value="-3">-3</option>
+							<option value="-2">-2</option>
+							<option value="-1">-1</option>
+							<option value="0" selected>0</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+							<option value="8">8</option>
+							<option value="9">9</option>
+							<option value="10">10</option>
+							<option value="11">11</option>
+							<option value="12">12</option>
+							<option value="13">13</option>
+							<option value="14">14</option>
+							<option value="15">15</option>
+						</select>
+					</div>
+
+					<div class="sheet-attackform-field">
+						<div class="sheet-attackform-label" data-i18n="sit">Situation</div>
+						<select name="attr_formunarmedsit" style="width: 4.5em !important;">
+							<option value="-15">-15</option>
+							<option value="-14">-14</option>
+							<option value="-13">-13</option>
+							<option value="-12">-12</option>
+							<option value="-11">-11</option>
+							<option value="-10">-10</option>
+							<option value="-9">-9</option>
+							<option value="-8">-8</option>
+							<option value="-7">-7</option>
+							<option value="-6">-6</option>
+							<option value="-5">-5</option>
+							<option value="-4">-4</option>
+							<option value="-3">-3</option>
+							<option value="-2">-2</option>
+							<option value="-1">-1</option>
+							<option value="0" selected>0</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+							<option value="8">8</option>
+							<option value="9">9</option>
+							<option value="10">10</option>
+							<option value="11">11</option>
+							<option value="12">12</option>
+							<option value="13">13</option>
+							<option value="14">14</option>
+							<option value="15">15</option>
+						</select>
+					</div>
+
+
+
+					<div class="sheet-attackform-field">
+						<div class="sheet-attackform-label" data-i18n="damage-oga">Damage (O / G / A)</div>
+						<div class="sheet-triplet sheet-damage-triplet">
+							<input type="text" name="attr_formunarmeddamageordinary" value="d4">
+							<input type="text" name="attr_formunarmeddamageordinarytype" value="s">
+							<span>/</span>
+							<input type="text" name="attr_formunarmeddamagegood" value="d4+1">
+							<input type="text" name="attr_formunarmeddamagegoodtype" value="s">
+							<span>/</span>
+							<input type="text" name="attr_formunarmeddamageamazing" value="d4+2">
+							<input type="text" name="attr_formunarmeddamageamazingtype" value="s">
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- ATTACK FORMS (repeating — one row per attack form) -->
+			<fieldset class="repeating_attackforms">
+				<div class="sheet-attackform-container">
+					<!-- Row 1: Name, Type, Range, Notes -->
+					<div class="sheet-attackform-row">
+						<button type="roll" name="roll_attackform"
+							value="&{template:default} {{name= @{character_name} - @{attackformname}}} {{score= [[@{attackformscore}]]/[[@{attackformscoregood}]]/[[@{attackformscooreamazing}]]}} {{type= @{attackformtype}}} {{range= @{attackformrange}}} {{damage= [[@{attackformdamageordinary}]]@{attackformdamageordinarytype}/[[@{attackformdamagegood}]]@{attackformdamagegoodtype}/[[@{attackformdamageamazing}]]@{attackformdamageamazingtype}}} {{notes= @{attackformnotes}}} {{results= [[1d20cs&lt;1cf&gt;20 + (@{attackform_step_die})]]}}"></button>
+
+						<div class="sheet-attackform-field" style="flex: 6; min-width: 200px;">
+							<div class="sheet-attackform-label" data-i18n="attack-form-name">Attack Form Name</div>
+							<input type="text" name="attr_attackformname"
+								data-i18n-placeholder="attack-form-placeholder" placeholder="Attack Form Name"
+								style="width: 100% !important;">
+						</div>
+
+						<div class="sheet-attackform-field" style="flex: 1; min-width: 60px;">
+							<div class="sheet-attackform-label" data-i18n="type">Type</div>
+							<input type="text" name="attr_attackformtype" style="width: 100% !important;">
+						</div>
+
+						<div class="sheet-attackform-field" style="flex: 2; min-width: 100px;">
+							<div class="sheet-attackform-label" data-i18n="range-sml">Range (S/M/L)</div>
+							<input type="text" name="attr_attackformrange" style="width: 100% !important;">
+						</div>
+
+						<div class="sheet-attackform-field" style="flex: 10; min-width: 300px;">
+							<div class="sheet-attackform-label" data-i18n="notes">Notes</div>
+							<input type="text" name="attr_attackformnotes" placeholder="Notes"
+								style="width: 100% !important;">
+						</div>
+					</div>
+
+					<!-- Row 2: Score, Base Die, Acc, Situation mod, damage -->
+					<div class="sheet-attackform-row" style="padding-left: 34px;"> <!-- Indent to align with name -->
+						<div class="sheet-attackform-field">
+							<div class="sheet-attackform-label" data-i18n="score-oga">Score (O/G/A)</div>
+							<div class="sheet-triplet sheet-score-triplet">
+								<input type="number" name="attr_attackformscore" value="0">
+								<span>/</span>
+								<input type="text" name="attr_attackformscoregood" disabled="true"
+									value="(floor(@{attackformscore}/2))">
+								<span>/</span>
+								<input type="text" name="attr_attackformscooreamazing" disabled="true"
+									value="(floor(@{attackformscore}/4))">
+							</div>
+						</div>
+
+						<div class="sheet-attackform-field">
+							<div class="sheet-attackform-label" data-i18n="base-die">Base Die</div>
+							<select name="attr_attackformdie" style="width: 4.5em !important;">
+								<option value="-15">-15</option>
+								<option value="-14">-14</option>
+								<option value="-13">-13</option>
+								<option value="-12">-12</option>
+								<option value="-11">-11</option>
+								<option value="-10">-10</option>
+								<option value="-9">-9</option>
+								<option value="-8">-8</option>
+								<option value="-7">-7</option>
+								<option value="-6">-6</option>
+								<option value="-5">-5</option>
+								<option value="-4">-4</option>
+								<option value="-3">-3</option>
+								<option value="-2">-2</option>
+								<option value="-1">-1</option>
+								<option value="0" selected>0</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+								<option value="7">7</option>
+								<option value="8">8</option>
+								<option value="9">9</option>
+								<option value="10">10</option>
+								<option value="11">11</option>
+								<option value="12">12</option>
+								<option value="13">13</option>
+								<option value="14">14</option>
+								<option value="15">15</option>
+							</select>
+						</div>
+
+						<div class="sheet-attackform-field">
+							<div class="sheet-attackform-label" data-i18n="acc">Acc</div>
+							<select name="attr_attackformaccuracy" style="width: 4.5em !important;">
+								<option value="-15">-15</option>
+								<option value="-14">-14</option>
+								<option value="-13">-13</option>
+								<option value="-12">-12</option>
+								<option value="-11">-11</option>
+								<option value="-10">-10</option>
+								<option value="-9">-9</option>
+								<option value="-8">-8</option>
+								<option value="-7">-7</option>
+								<option value="-6">-6</option>
+								<option value="-5">-5</option>
+								<option value="-4">-4</option>
+								<option value="-3">-3</option>
+								<option value="-2">-2</option>
+								<option value="-1">-1</option>
+								<option value="0" selected>0</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+								<option value="7">7</option>
+								<option value="8">8</option>
+								<option value="9">9</option>
+								<option value="10">10</option>
+								<option value="11">11</option>
+								<option value="12">12</option>
+								<option value="13">13</option>
+								<option value="14">14</option>
+								<option value="15">15</option>
+							</select>
+						</div>
+
+						<div class="sheet-attackform-field">
+							<div class="sheet-attackform-label" data-i18n="sit">Situation</div>
+							<select name="attr_attackformsit" style="width: 4.5em !important;">
+								<option value="-15">-15</option>
+								<option value="-14">-14</option>
+								<option value="-13">-13</option>
+								<option value="-12">-12</option>
+								<option value="-11">-11</option>
+								<option value="-10">-10</option>
+								<option value="-9">-9</option>
+								<option value="-8">-8</option>
+								<option value="-7">-7</option>
+								<option value="-6">-6</option>
+								<option value="-5">-5</option>
+								<option value="-4">-4</option>
+								<option value="-3">-3</option>
+								<option value="-2">-2</option>
+								<option value="-1">-1</option>
+								<option value="0" selected>0</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+								<option value="7">7</option>
+								<option value="8">8</option>
+								<option value="9">9</option>
+								<option value="10">10</option>
+								<option value="11">11</option>
+								<option value="12">12</option>
+								<option value="13">13</option>
+								<option value="14">14</option>
+								<option value="15">15</option>
+							</select>
+						</div>
+
+
+
+						<div class="sheet-attackform-field">
+							<div class="sheet-attackform-label" data-i18n="damage-oga">Damage (O / G / A)</div>
+							<div class="sheet-triplet sheet-damage-triplet">
+								<input type="text" name="attr_attackformdamageordinary" placeholder="d4">
+								<input type="text" name="attr_attackformdamageordinarytype" class="sheet-damage-type" placeholder="s">
+								<span>/</span>
+								<input type="text" name="attr_attackformdamagegood" placeholder="d4+1">
+								<input type="text" name="attr_attackformdamagegoodtype" class="sheet-damage-type" placeholder="s">
+								<span>/</span>
+								<input type="text" name="attr_attackformdamageamazing" placeholder="d4+2">
+								<input type="text" name="attr_attackformdamageamazingtype" class="sheet-damage-type" placeholder="s">
+							</div>
+						</div>
+					</div>
+				</div>
+			</fieldset>
+
+			<!-- WEAPON DATA (repeating — one entry per physical weapon) -->
+			<div class="sheet-skilltitle sheet-row" style="margin-top: 25px; margin-bottom: 4px;"
+				data-i18n="weapon-data">WEAPON DATA</div>
+			<div class="sheet-header-weapons">
+				<div data-i18n="weapon">Weapon</div>
+				<div data-i18n="acc" style="text-align: center;">Acc</div>
+				<div data-i18n="actions" style="text-align: center;">Actions</div>
+				<div data-i18n="clipsize-ammo" style="text-align: center;">Clip / Ammo</div>
+				<div data-i18n="hide" style="text-align: center;">Hide</div>
+				<div data-i18n="mass" style="text-align: center;">Mass</div>
+			</div>
+			<fieldset class="repeating_weapons">
+				<div class="sheet-grid-weapon-row">
+					<input type="text" name="attr_weaponname" class="sheet-weapon-name" data-i18n-placeholder="weapon-name-placeholder" placeholder="Weapon Name">
+					<input type="number" name="attr_weaponaccuracy" value="0">
+					<input type="text" name="attr_weaponactions">
+					<div class="sheet-triplet">
+						<input type="text" name="attr_weaponclipsize">
+						<span>/</span>
+						<input type="text" name="attr_weaponammoused">
+					</div>
+					<input type="text" name="attr_weaponhide">
+					<input type="text" name="attr_weaponmass">
+				</div>
+			</fieldset>
+
+			<!-- FOOTER SECTION -->
+			<div class="sheet-grid-footer"
+				style="margin-top: 30px; border-top: 1px solid var(--color-border); padding-top: 20px;">
+				<!-- COLUMN 1: PERSONAL & BIOGRAPHY -->
+				<div class="sheet-footer-section">
+					<div class="sheet-skilltitle" data-i18n="personal-data">PERSONAL DATA</div>
+					<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 10px;">
+						<div class="sheet-field-inline">
+							<label data-i18n="age">Age</label>
+							<input type="text" name="attr_age">
+						</div>
+						<div class="sheet-field-inline">
+							<label data-i18n="height">Height</label>
+							<input type="text" name="attr_height">
+						</div>
+						<div class="sheet-field-inline">
+							<label data-i18n="weight">Weight</label>
+							<input type="text" name="attr_weight">
+						</div>
+					</div>
+					<div>
+						<div class="sheet-label-grid" data-i18n="special-abilities">Special Abilities</div>
+						<textarea name="attr_specialabilities" class="sheet-footer-textarea"
+							style="min-height: 140px !important;"></textarea>
+					</div>
+					<div>
+						<div class="sheet-label-grid" data-i18n="contacts">Contacts</div>
+						<textarea name="attr_contacts" class="sheet-footer-textarea"
+							style="min-height: 115px !important;"></textarea>
+					</div>
+				</div>
+
+				<!-- COLUMN 2: GAME MECHANICS (INTERNAL 2-COLUMN GRID) -->
+				<div class="sheet-footer-section"
+					style="border-left: 1px solid var(--color-border); padding-left: 20px;">
+					<div class="sheet-skilltitle" data-i18n="game-data">GAME DATA</div>
+					<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+						<div>
+							<div class="sheet-label-grid" data-i18n="perks">Perks</div>
+							<textarea name="attr_perks" class="sheet-footer-textarea"
+								style="min-height: 200px !important;"></textarea>
+						</div>
+						<div>
+							<div class="sheet-label-grid" data-i18n="enemies">Enemies</div>
+							<textarea name="attr_enemies" class="sheet-footer-textarea"
+								style="min-height: 200px !important;"></textarea>
+						</div>
+						<div>
+							<div class="sheet-label-grid" data-i18n="flaws">Flaws</div>
+							<textarea name="attr_flaws" class="sheet-footer-textarea"
+								style="min-height: 200px !important;"></textarea>
+						</div>
+						<div>
+							<div class="sheet-label-grid" data-i18n="other">Other</div>
+							<textarea name="attr_other" class="sheet-footer-textarea"
+								style="min-height: 200px !important;"></textarea>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
