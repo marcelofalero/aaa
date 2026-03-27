@@ -102,4 +102,3 @@ Characters must be careful about how they acquire enhance programs, because some
 {{< json-table "cybernetics" "gear" "mass" "size" >}}
 
 *\*\* Can be installed at no cost in skill points.*
-

@@ -1,0 +1,889 @@
+config:
+  columns:
+    en:
+    - name: Gear
+      key: name
+    - name: Nanocomp.
+      key: nanocomp
+    - name: Mass
+      key: mass
+    - name: Size
+      key: size
+    - name: Cost
+      key: cost
+    - name: Description
+      key: description
+      hidden: true
+    es:
+    - name: Equipo
+      key: name
+    - name: Nanocomp.
+      key: nanocomp
+    - name: Masa
+      key: mass
+    - name: "Tama\xF1o"
+      key: size
+    - name: Coste
+      key: cost
+    - name: "Descripci\xF3n"
+      key: description
+      hidden: true
+categories:
+  gear:
+    groups:
+      Progress Level 6:
+      - name: BattleKlaw
+        nanocomp: 'Yes'
+        mass: '1'
+        size: '2'
+        cost: 300 / 600 / 900
+        description:
+          en: A BattleKlaw is a cybernetic weapon that improves the damage a character
+            can inflict on a normal Unarmed Attack. It appears as a single metal talon
+            that ends in a sharp point. An Ordinary BattleKlaw is fixed in position,
+            either attached to living bone or a cyberlimb. A Good BattleKlaw is retractable,
+            either attached to living bone or a cyberlimb. An Amazing BattleKlaw requires
+            an exoskeleton and a cyberlimb to use. The cost, mass, and size is for
+            a single BattleKlaw. If a character adds a second BattleKlaw to his body,
+            the cost, mass, and size are doubled.
+          es: >
+            Un BattleKlaw es un arma cibernética que mejora el daño que un personaje
+            puede infligir en un Ataque Desarmado normal. Aparece como una sola garra
+            de metal que termina en una punta afilada. Un BattleKlaw Normal está fijo
+            en su posición, ya sea unido al hueso vivo o a un cibermiembro. Un BattleKlaw
+            Bueno es retráctil, ya sea unido al hueso vivo o a un cibermiembro. Un
+            BattleKlaw Asombroso requiere un exoesqueleto y un cibermiembro para su
+            uso. El coste, la masa y el tamaño son para un solo BattleKlaw. Si un
+            personaje añade un segundo BattleKlaw a su cuerpo, el coste, la masa y
+            el tamaño se duplican.
+      - name: BioArt**
+        nanocomp: '-'
+        mass: '-'
+        size: '-'
+        cost: 50 / 100 / 200
+        description:
+          en: BioArt is a subdermal neon implant that produces a glowing tattoo on
+            the surface of the skin (it's lit from beneath). It can also come in the
+            form of fiber-optic filaments in the hair, eyelashes, or beard. BioArt
+            is purely decorative. The better the quality, the flashier the design.
+            BioArt requires no expense in skill points and no nanocomputer, and it
+            can't be rejected by the recipient (no Constitution feat check necessary).
+          es: >
+            El BioArt es un implante de neón subdérmico que produce un tatuaje brillante
+            en la superficie de la piel (está iluminado desde abajo). También puede
+            presentarse en forma de filamentos de fibra óptica en el cabello, las
+            pestañas o la barba. El BioArt es puramente decorativo. Cuanto mejor sea
+            la calidad, más llamativo será el diseño. El BioArt no requiere gasto
+            de puntos de habilidad ni nanocomputadora, y no puede ser rechazado por
+            el receptor (no es necesaria una prueba de dote de Constitución).
+      - name: BioWatch**
+        nanocomp: '-'
+        mass: '-'
+        size: '-'
+        cost: 50 / 100 / 300
+        description:
+          en: A BioWatch is a subdermal timepiece, either analog or digital, that
+            shows the current time and has a variety of other functions. A BioWatch
+            is hidden beneath the flesh, invisible until a fingertip or some other
+            small object is tapped against it. Then the glow shines through the flesh,
+            showing the time and other information on the surface of the skin for
+            a few seconds. A BioWatch requires no expense in skill points and no nanocomputer,
+            and it can't be rejected (no Constitution feat check necessary).
+          es: >
+            Un BioWatch es un reloj subdérmico, ya sea analógico o digital, que muestra
+            la hora actual y tiene una variedad de otras funciones. Un BioWatch está
+            oculto bajo la carne, invisible hasta que se toca con la punta de un dedo
+            o algún otro objeto pequeño. Entonces el brillo resplandece a través de
+            la carne, mostrando la hora y otra información en la superficie de la
+            piel durante unos segundos. Un BioWatch no requiere el gasto de puntos
+            de habilidad ni nanocomputadora, y no puede ser rechazado (no es necesaria
+            una prueba de dote de Constitución).
+      - name: 'Body Plating: Ordinary'
+        nanocomp: '-'
+        mass: '20'
+        size: '2'
+        cost: 1500 / - / -
+        description:
+          en: Body plating combines metal and plastic armor, which is then bonded
+            to a character's body. Even the best camouflaged body plating is obvious
+            on close inspection. Body plating doesn't require a nanocomputer, but
+            skill points must be spent to learn to move with the protective covering.
+            Ordinary body plating provides protection of d4 (LI), d4 (HI), d4-1 (En).
+          es: >
+            El blindaje corporal combina armadura de metal y plástico, que luego se
+            adhiere al cuerpo del personaje. Incluso el blindaje corporal mejor camuflado
+            es obvio tras una inspección cercana. El blindaje corporal no requiere
+            una nanocomputadora, pero se deben gastar puntos de habilidad para aprender
+            a moverse con la cubierta protectora. El blindaje corporal Normal proporciona
+            una protección de d4 (LI), d4 (HI), d4-1 (En).
+      - name: 'Body Plating: Good'
+        nanocomp: '-'
+        mass: '40'
+        size: '3'
+        cost: '- / 3000 / 4500'
+        description:
+          en: Good body plating provides protection of d6 (LI), d4+1 (HI), d4+1 (En).
+          es: El blindaje corporal Bueno proporciona una protección de d6 (LI), d4+1
+            (HI), d4+1 (En).
+      - name: 'Body Plating: Amazing'
+        nanocomp: '-'
+        mass: '60'
+        size: '4'
+        cost: '- / - / 3000'
+        description:
+          en: Amazing body plating reduces the character's Dexterity score by 2 points
+            and provides protection of d8+1 (LI), d6+1 (HI), d6+1 (En).
+          es: El blindaje corporal Asombroso reduce la puntuación de Destreza del personaje
+            en 2 puntos y proporciona una protección de d8+1 (LI), d6+1 (HI), d6+1 (En).
+      - name: Cyberlimb
+        nanocomp: 'Yes'
+        mass: '10'
+        size: '2'
+        cost: 500 / 1000 / 2000
+        description:
+          en: A cyberlimb replaces a limb lost to damage or disease, or is installed
+            simply as an "improvement" over the original flesh and bone. Cyberlimbs
+            can have other equipment installed within them. An Ordinary cyberlimb
+            adds +1 to Strength; a Good cyberlimb adds +2 to Strength and requires
+            an exoskeleton; an Amazing cyberlimb adds +3 to Strength and also requires
+            an exoskeleton. The Strength increase applies only to the cyberlimb being
+            used.
+          es: >
+            Un cibermiembro reemplaza una extremidad perdida por daño o enfermedad,
+            o se instala simplemente como una "mejora" de la carne y el hueso originales.
+            Los cibermiembros pueden tener otros equipos instalados en su interior.
+            Un cibermiembro Normal añade +1 a la Fuerza; un cibermiembro Bueno añade
+            +2 a la Fuerza y requiere un exoesqueleto; un cibermiembro Asombroso añade
+            +3 a la Fuerza y también requiere un exoesqueleto. El aumento de Fuerza
+            se aplica solo al cibermiembro que se está utilizando.
+      - name: Cyberoptics
+        nanocomp: 'Yes'
+        mass: '-'
+        size: '1'
+        cost: 1000 / 1500 / 2000
+        description:
+          en: Cyberoptics replaces a living eyeball or adds an extra sensory device
+            to a character. It can be attached to another part of the body, such as
+            the hand, the forehead, or the back of the neck, or mounted to the side
+            of the head, instead of being placed in an eye socket. The Ordinary version
+            provides normal vision and also operates as a digital camera. A Good cyberoptic
+            operates as a 50x zoom lens and provides extended vision. An Amazing cyberoptic
+            operates as a 300x zoom lens.
+          es: >
+            La ciberóptica reemplaza un globo ocular vivo o añade un dispositivo sensorial
+            adicional a un personaje. Puede fijarse en otra parte del cuerpo, como
+            la mano, la frente o la nuca, o montarse en el lateral de la cabeza en
+            lugar de colocarse en la cuenca del ojo. La versión Normal proporciona
+            visión normal y también funciona como cámara digital. Una ciberóptica
+            Buena funciona como una lente de zoom de 50 aumentos y proporciona visión
+            extendida. Una ciberóptica Asombrosa funciona como una lente de zoom de
+            300 aumentos.
+      - name: Fast chip
+        nanocomp: 'Yes'
+        mass: '-'
+        size: '1'
+        cost: 500 / - / 3000
+        description:
+          en: A fast chip is a device that has been banned in most civilized locales
+            due to the dangers associated with its use. A character equipped with
+            a nanocomputer, a fast chip, and reflex operates at a level above most
+            other people. The fast chip provides a bonus to the character's action
+            checks. The fast chip must be accessed; it remains active for a number
+            of rounds related to the quality of the character's nanocomputer (Marginal,
+            1; Ordinary, 2; Good, 3; Amazing, 4), or until the character shuts it
+            off, whichever comes first. At the end of a period of use, the character
+            suffers 1 point of fatigue damage. Use of a fast chip leads to the condition
+            known as cykosis.
+          es: >
+            Un chip rápido es un dispositivo que ha sido prohibido en la mayoría de
+            los lugares civilizados debido a los peligros asociados con su uso. Un
+            personaje equipado con una nanocomputadora, un chip rápido y reflejos
+            opera a un nivel superior al de la mayoría de las personas. El chip rápido
+            proporciona un bono a las pruebas de acción del personaje. El chip rápido
+            debe activarse; permanece activo durante un número de asaltos relacionado
+            con la calidad de la nanocomputadora del personaje (Marginal, 1; Normal,
+            2; Bueno, 3; Asombroso, 4), o hasta que el personaje lo apague, lo que
+            ocurra primero. Al final de un período de uso, el personaje sufre 1 punto
+            de daño por fatiga. El uso de un chip rápido conduce a la condición conocida
+            como cykosis.
+      - name: MusclePlus
+        nanocomp: 'Yes'
+        mass: '2'
+        size: '2'
+        cost: 1000 / 2000 / 3000
+        description:
+          en: MusclePlus replaces living muscle with strong, highly durable synthetic
+            material that increases a character's normal Strength score in those limbs
+            that receive the treatment. Ordinary MusclePlus provides a +1 Strength
+            increase; Good provides a +2 Strength increase but requires an exoskeleton;
+            Amazing provides a +3 Strength increase but requires both an exoskeleton
+            and a cyberlimb.
+          es: >
+            MusclePlus sustituye el músculo vivo por un material sintético resistente
+            y muy duradero que aumenta la puntuación normal de Fuerza de un personaje
+            en aquellas extremidades que reciben el tratamiento. MusclePlus Normal
+            proporciona un aumento de Fuerza de +1; el Bueno proporciona un aumento
+            de Fuerza de +2 pero requiere un exoesqueleto; el Asombroso proporciona
+            un aumento de Fuerza de +3 pero requiere tanto un exoesqueleto como un
+            cibermiembro.
+      - name: Nanocomputer
+        nanocomp: '-'
+        mass: '-'
+        size: '1'
+        cost: 1000 / 2000 / 3000 / 4000
+        description:
+          en: >
+            Without a nanocomputer and its cytronic circuitry, most other pieces
+            of cyberware are useless. The nanocomputer provides an interface
+            between the subject's central nervous system and his cyberware,
+            allowing him to control cyberlimbs, deploy weaponry, etc. Each
+            cybernetic system requiring conscious control takes 1 of the
+            nanocomputer's active memory slots, so a character with two cyberlimbs
+            and a BattleKlaw must allocate 3 of his nanocomputer's slots to the
+            direction of his cyberware. Nanocomputers cannot read 3Ds, download
+            data, or otherwise interact with the world around the character
+            unless some kind of interface device is purchased and installed-a
+            NIJack, a 3D drive, or a comm port.
+            Marginal: $1,000, 3 slots, None Processor Bonus.
+            Ordinary: $2,000, 4 slots, -1 step Processor Bonus.
+            Good: $3,000, 5 slots, -2 steps Processor Bonus.
+            Amazing: $4,000, 6 slots, -3 steps Processor Bonus.
+          es: >
+            Sin una nanocomputadora y su circuito cytrónico, la mayoría de las
+            demás piezas de equipo cibernético son inútiles. La nanocomputadora
+            proporciona una interfaz entre el sistema nervioso central del sujeto
+            y su equipo cibernético, permitiéndole controlar cibermiembros,
+            desplegar armamento, etc. Cada sistema cibernético que requiere
+            control consciente ocupa 1 de las ranuras de memoria activa de la
+            nanocomputadora, por lo que un personaje con dos cibermiembros y
+            un BattleKlaw debe asignar 3 de las ranuras de su nanocomputadora
+            a la dirección de su equipo cibernético. Las nanocomputadoras no
+            pueden leer 3Ds, descargar datos ni interactuar de otro modo con el
+            mundo que rodea al personaje a menos que se adquiera e instale algún
+            tipo de dispositivo de interfaz: un NIJack, una unidad 3D o un puerto
+            de comunicaciones.
+            Marginal: $1.000, 3 ranuras, Ninguna bonificación del procesador.
+            Normal: $2.000, 4 ranuras, -1 paso de bonificación del procesador.
+            Buena: $3.000, 5 ranuras, -2 pasos de bonificación del procesador.
+            Asombrosa: $4.000, 6 ranuras, -3 pasos de bonificación del procesador.
+      - name: NIJack
+        nanocomp: 'Yes'
+        mass: '-'
+        size: '1'
+        cost: 500 / - / -
+        description:
+          en: A neural interface jack, or NIJack, is a plug located in the neck or
+            head that allows data cables to be connected to a character's cytronic
+            circuitry system. A NIJack is required to use a gridcaster. All NIJacks
+            are of Ordinary quality.
+          es: >
+            Un conector de interfaz neural, o NIJack, es un enchufe situado en el
+            cuello o la cabeza que permite conectar cables de datos al sistema de
+            circuitos cytrónicos de un personaje. Se requiere un NIJack para utilizar
+            un gridcaster. Todos los NIJacks son de calidad Normal.
+      - name: Optic screen
+        nanocomp: 'Yes'
+        mass: '2'
+        size: '-'
+        cost: 250 / - / -
+        description:
+          en: An optic screen is a lens attached to a living eyeball or cyberoptic
+            gear. It acts as a heads-up display, showing data from a nanocomputer
+            or other computer source. The optic screen doesn't interfere with a character's
+            normal vision (or the vision provided by the cyberoptics); the images
+            it projects are translucent and set out of the direct field of view. All
+            optic screens are of Ordinary quality.
+          es: >
+            Una pantalla óptica es una lente acoplada a un globo ocular vivo o a
+            un equipo ciberóptico. Actúa como una pantalla de visualización frontal
+            (HUD), mostrando datos de una nanocomputadora u otra fuente informática.
+            La pantalla óptica no interfiere con la visión normal del personaje (o
+            la visión proporcionada por la ciberóptica); las imágenes que proyecta
+            son translúcidas y se sitúan fuera del campo de visión directo. Todas
+            las pantallas ópticas son de calidad Normal.
+      - name: Self-repair unit
+        nanocomp: 'Yes'
+        mass: '2'
+        size: '2'
+        cost: 1000 / 2000 / 3000
+        description:
+          en: The cybernetic self-repair unit is an internal piece of equipment that
+            includes a supply of raw material and a horde of nanite robots. It requires
+            a nanocomputer. When commanded via the nanocomputer, the nanites turn
+            the raw material into components and begin repairing damaged cyber gear.
+            It takes 1 hour to repair each wound point and 2 hours for each mortal
+            point. An Ordinary unit repairs up to 4 wounds or 2 mortals; Good can
+            fix 6 wounds or 3 mortals; Amazing can repair 8 wounds or 4 mortals. Replacement
+            material costs $1000/$2000/$3000.
+          es: >
+            La unidad cibernética de autorreparación es una pieza interna de equipo
+            que incluye un suministro de materia prima y una horda de robots nanites.
+            Requiere una nanocomputadora. Cuando se ordena a través de la nanocomputadora,
+            los nanites convierten la materia prima en componentes y comienzan a reparar
+            el equipo cibernético dañado. Se tarda 1 hora en reparar cada punto de
+            herida y 2 horas por cada punto mortal. Una unidad Normal repara hasta
+            4 heridas o 2 mortales; una Buena puede arreglar 6 heridas o 3 mortales;
+            una Asombrosa puede reparar 8 heridas o 4 mortales. El material de repuesto
+            cuesta $1000/$2000/$3000.
+      - name: Subdermal comm
+        nanocomp: '-'
+        mass: '-'
+        size: '1'
+        cost: '- / 500 / -'
+        description:
+          en: This is standard comm gear that's installed in the throat and head,
+            providing a character with a hidden communications system. No one can
+            hear incoming calls, and a whisper is all that's needed to send back a
+            message. Subdermal comm gear has a range of 1,000 kilometers for surface
+            communications, and can reach into high planetary orbit to contact a ship
+            or space station, provided an unobstructed path exists between the receiver
+            and the sender. All of this gear is of Good quality.
+          es: >
+            Se trata de un equipo de comunicaciones estándar que se instala en la
+            garganta y la cabeza, proporcionando al personaje un sistema de comunicaciones
+            oculto. Nadie puede oír las llamadas entrantes y basta un susurro para
+            devolver el mensaje. El equipo de comunicación subdérmica tiene un alcance
+            de 1.000 kilómetros para las comunicaciones de superficie, y puede llegar
+            hasta la órbita planetaria alta para contactar con una nave o estación
+            espacial, siempre que exista un camino sin obstáculos entre el receptor
+            y el emisor. Todo este equipo es de calidad Buena.
+      - name: 'Subdermal weapon mount: Ordinary'
+        nanocomp: 'Yes'
+        mass: '2'
+        size: '2'
+        cost: 250 / - / -
+        description:
+          en: Subdermal weapons are offensive devices hidden within a character's
+            body that can be exposed to inflict damage. Weapons that weigh 1 kg or
+            less require Ordinary mounts. They can be installed in natural limbs or
+            in cyberlimbs.
+          es: >
+            Las armas subdérmicas son dispositivos ofensivos ocultos en el cuerpo
+            de un personaje que pueden exponerse para infligir daño. Las armas que
+            pesan 1 kg o menos requieren monturas Normales. Pueden instalarse en extremidades
+            naturales o en cibermiembros.
+      - name: 'Subdermal weapon mount: Good'
+        nanocomp: 'Yes'
+        mass: '2'
+        size: '3'
+        cost: '- / 500 / -'
+        description:
+          en: Weapons that weigh up to 3 kg require Good mounts. These must be installed
+            in cyberlimbs.
+          es: >
+            Las armas que pesan hasta 3 kg requieren monturas Buenas. Éstas deben
+            instalarse en cibermiembros.
+      - name: 'Subdermal weapon mount: Amazing'
+        nanocomp: 'Yes'
+        mass: '2'
+        size: '4'
+        cost: '- / - / 750'
+        description:
+          en: Weapons that weigh more than 3 kg and up to 6 kg require Amazing mounts.
+            These must be installed within cyberlimbs that are attached to exoskeletons.
+            Weapons that weigh more than 6 kg can't be made into subdermal equipment.
+          es: >
+            Las armas que pesan más de 3 kg y hasta 6 kg requieren monturas Asombrosas.
+            Éstas deben instalarse en cibermiembros que estén unidos a exoesqueletos.
+            Las armas que pesen más de 6 kg no pueden convertirse en equipo subdérmico.
+      - name: Artificial Ear
+        nanocomp: 'Yes'
+        mass: '0.1'
+        size: '1'
+        cost: 1000 / 2000 / 4000
+        description:
+          en: >
+            The artificial ear is a sensitive microphone capable of detecting
+            extremely low and high frequency sounds, normally outside the range
+            of human hearing, such as sonar transmissions or dog whistles. Its
+            hearing is magnified (Ordinary x10, Good x25, Amazing x50), and it
+            gains a bonus to skill checks involving the ability to detect sound,
+            such as Awareness-intuition checks to avoid surprise, Security-security
+            devices checks against tumbler-type locks, and so on. If the subject
+            has two artificial ears, he can use the skill check bonus (-1, -2,
+            or -3 steps) to offset darkness-related combat penalties because
+            of his ability to locate his enemy through sound.
+          es: >
+            El oído artificial es un micrófono sensible capaz de detectar sonidos
+            de frecuencia extremadamente baja y alta, normalmente fuera del rango
+            de audición humana, como transmisiones de sonar o silbatos para perros.
+            Su audición se ve "magnificada" (Normal x10, Bueno x25, Asombroso x50),
+            y obtiene una bonificación a las pruebas de habilidad que implican la
+            capacidad de detectar sonido, como las pruebas de Conciencia-intuición
+            para evitar sorpresas, las pruebas de Seguridad-dispositivos de seguridad
+            contra cerraduras con tambores, etc. Si el sujeto tiene dos oídos
+            artificiales, puede usar la bonificación de la prueba de habilidad
+            (-1/-2/-3 pasos) para compensar las penalizaciones de combate
+            relacionadas con la oscuridad debido a su capacidad para localizar
+            a su enemigo a través del sonido.
+      - name: Artificial Eye
+        nanocomp: 'Yes'
+        mass: '0.1'
+        size: '1'
+        cost: 1000 / 2000 / 4000
+        description:
+          en: >
+            This device is a video imaging system that replaces one of the
+            user's own eyes. It provides magnification (Ordinary x10, Good x25,
+            Amazing x50) and a bonus to skill checks where visual acuity might
+            be important, such as Investigate-search or Awareness-perception
+            checks (-1, -2, or -3 steps). For twice the listed cost, an
+            artificial eye includes image enhancement or thermal technology,
+            conferring the benefits of image or thermal goggles in addition
+            to the simple magnification.
+          es: >
+            Este dispositivo es un sistema de imagen de vídeo que sustituye a uno
+            de los ojos del propio usuario. Proporciona aumento (Normal x10,
+            Bueno x25, Asombroso x50) y una bonificación a las pruebas de habilidad
+            en las que la agudeza visual puede ser importante, como Investigar-búsqueda
+            o Conciencia-percepción (-1/-2/-3 pasos). Por el doble del coste
+            indicado, un ojo artificial incluye tecnología de mejora de imagen o
+            térmica, lo que confiere los beneficios de las gafas de imagen o las
+            gafas térmicas además del simple aumento.
+      Progress Level 7:
+      - name: CF skinweave**
+        nanocomp: '-'
+        mass: '1'
+        size: '1'
+        cost: 1000 / 2000 / 3000
+        description:
+          en: 'CF skinweave is carbonate fiber woven together with living flesh to
+            provide hidden protection against damage. The level of protection is determined
+            by the quality of the CF skinweave: Ordinary, add 2 stun points to durability
+            rating; Good, add 2 stun points and 1 wound point; Amazing, add 2 stun
+            points, 1 wound point, and 1 mortal point. No nanocomputer is required
+            for CF skinweave, and no skill points must be spent to have it installed.'
+          es: >
+            El tejido de piel CF es fibra de carbonato tejida junto con carne viva
+            para proporcionar una protección oculta contra el daño. El nivel de protección
+            viene determinado por la calidad del tejido: Normal, añade 2 puntos de
+            aturdimiento a la clasificación de durabilidad; Bueno, añade 2 puntos
+            de aturdimiento y 1 punto de herida; Asombroso, añade 2 puntos de aturdimiento,
+            1 punto de herida y 1 punto mortal. No se requiere nanocomputadora para
+            el tejido de piel CF, y no es necesario gastar puntos de habilidad para
+            que se instale.
+      - name: Data slot, passive**
+        nanocomp: '-'
+        mass: '1'
+        size: '1'
+        cost: 500 / 700 / 900
+        description:
+          en: "A passive data slot is an external storage facility for a 3D or other\
+            \ data medium. Most are designed to be hidden, and are used by couriers\
+            \ and others seeking to move data without the knowledge of others. A data\
+            \ slot is considered to be passive because it isn't connected to a nanocomputer\u2014\
+            the character can't access the data stored within him but can only transport\
+            \ it to its destination. No nanocomputer is necessary to add this gear,\
+            \ and no skill points need to be spent."
+          es: >
+            Una ranura de datos pasiva es una instalación de almacenamiento externa
+            para un soporte de datos 3D u otro. La mayoría están diseñadas para estar
+            ocultas, y son utilizadas por mensajeros y otras personas que buscan mover
+            datos sin el conocimiento de otros. Una ranura de datos se considera pasiva
+            porque no está conectada a una nanocomputadora: el personaje no puede
+            acceder a los datos almacenados en su interior, sino que solo puede transportarlos
+            a su destino. No es necesaria una nanocomputadora para añadir este equipo
+            y no es necesario gastar puntos de habilidad.
+      - name: ER slot
+        nanocomp: 'Yes'
+        mass: '1'
+        size: '1'
+        cost: 500 / 1000 / 1500
+        description:
+          en: An ER slot (short for "emergency room") is an attachment designed to
+            contain a trauma pack II. With the pack and the ER slot, the pack's contents
+            are automatically injected into the character when he falls unconscious
+            due to knockout. The ER slot can also be manually activated by the character
+            at any time.
+          es: >
+            Una ranura ER (abreviatura de "sala de emergencias") es un accesorio
+            diseñado para contener un paquete de trauma II. Con el paquete y la ranura
+            ER, el contenido del paquete se inyecta automáticamente en el personaje
+            cuando este queda inconsciente debido a un aturdimiento. La ranura ER
+            también puede ser activada manualmente por el personaje en cualquier momento.
+      - name: ER slot, passive**
+        nanocomp: '-'
+        mass: '1'
+        size: '1'
+        cost: 500 / 1000 / 1500
+        description:
+          en: The passive ER slot works just like the regular ER slot, except it can't
+            be manually activated by the character.
+          es: >
+            La ranura ER pasiva funciona igual que la ranura ER normal, excepto que
+            no puede ser activada manualmente por el personaje.
+      - name: Exoskeleton
+        nanocomp: 'Yes'
+        mass: '30'
+        size: '3'
+        cost: 2000 / 3000 / 4000
+        description:
+          en: 'An exoskeleton provides reinforcement and structural integrity to a
+            character''s natural skeleton. Cyber gear that enables the body to perform
+            beyond its normal limits requires an exoskeleton; without such reinforcement,
+            the cyber-equipped body can tear itself apart when powerful servomuscles
+            interact with relatively fragile natural equipment. In addition to anchoring
+            powerful cyber gear, an exoskeleton increases a character''s durability
+            rating, depending on the quality of the implant: Ordinary, add 2 stun
+            points; Good, add 2 stun points and 2 wound points; Amazing, add 2 stun
+            points, 2 wound points, and 2 mortal points.'
+          es: >
+            Un exoesqueleto proporciona refuerzo e integridad estructural al esqueleto
+            natural de un personaje. El equipo cibernético que permite al cuerpo rendir
+            más allá de sus límites normales requiere un exoesqueleto; sin este refuerzo,
+            el cuerpo equipado con cibernética puede desgarrarse cuando los potentes
+            servomúsculos interactúan con el equipo natural, relativamente frágil.
+            Además de anclar los potentes equipos cibernéticos, un exoesqueleto aumenta
+            la durabilidad del personaje, dependiendo de la calidad del implante:
+            Normal, añade 2 puntos de aturdimiento; Bueno, añade 2 puntos de aturdimiento
+            y 2 puntos de herida; Asombroso, añade 2 puntos de aturdimiento, 2 puntos
+            de herida y 2 puntos mortales.
+      - name: Neural 3D, ext.
+        nanocomp: 'Yes'
+        mass: '1'
+        size: '1'
+        cost: 500 / 750 / 1000
+        description:
+          en: An external neural 3D is cyberware that can be added to a character
+            who has already had a nanocomputer and cytronic circuitry installed. An
+            external neural data slot provides an input drive that can be accessed
+            from outside the body; an open slot is visible where a 3D or other data
+            storage medium can be placed. An Ordinary data slot can use 3Ds; a Good
+            or Amazing slot can use both 3Ds and X3Ds.
+          es: >
+            Un neural 3D externo es un equipo cibernético que puede añadirse a un
+            personaje que ya tenga instalada una nanocomputadora y circuitos cytrónicos.
+            Una ranura de datos neurales externa proporciona una unidad de entrada
+            a la que se puede acceder desde fuera del cuerpo; una ranura abierta es
+            visible donde se puede colocar un 3D u otro soporte de almacenamiento
+            de datos. Una ranura de datos Normal puede utilizar 3Ds; una ranura Buena
+            o Asombrosa puede utilizar tanto 3Ds como X3Ds.
+      - name: Reflex
+        nanocomp: 'Yes'
+        mass: '-'
+        size: '2'
+        cost: '- / 2000 / -'
+        description:
+          en: 'Reflex is specialized cytronic circuitry that can be added to a body''s
+            cytronic circuitry system for the express purpose of allowing that body
+            to make use of enhance programs. Enhance programs utilize the reflex wiring
+            to allow the body to perform faster, more accurately, and with better
+            control. There is a downside: for every round a character activates his
+            reflex circuitry to run an enhance program, he suffers stun damage based
+            on the quality of the program. On a Critical Failure, the GM may call
+            for a cykosis check. All reflex is of Good quality.'
+          es: "Los reflejos son circuitos cytrónicos especializados que pueden añadirse\
+            \ al sistema de circuitos cytrónicos del cuerpo con el propósito expreso\
+            \ de permitir que ese cuerpo haga uso de programas de mejora (enhance).\
+            \ Los programas de mejora utilizan el cableado de los reflejos para permitir\
+            \ que el cuerpo actúe más rápido, con mayor precisión y con mejor control.\
+            \ Hay un inconveniente: por cada asalto que un personaje activa sus circuitos\
+            \ de reflejos para ejecutar un programa de mejora, sufre daños por aturdimiento\
+            \ en función de la calidad del programa. En caso de fallo crítico, el\
+            \ DJ puede pedir una prueba de cykosis. Todos los reflejos son de calidad\
+            \ Buena."
+      - name: Accelerator
+        nanocomp: 'Yes'
+        mass: '0.075'
+        size: '-'
+        cost: 2500 / 5000 / 10000
+        description:
+          en: >
+            The accelerator uses the subject's cybernetic control systems to
+            drastically enhance his reaction speed. The recipient must have
+            reflex wiring and a nanocomputer to support the accelerator, or the
+            device is useless. The accelerator provides the following benefits:
+            Ordinary: +2 Action Check Score Increase, None Actions/Rd Increase, $2,500.
+            Good: +3 Action Check Score Increase, +1 Actions/Rd Increase, $5,000.
+            Amazing: +4 Action Check Score Increase, +2 Actions/Rd Increase, $10,000.
+            In order to receive the accelerator bonus, the character's nanocomputer
+            and reflex wiring must be of equal or better quality. Otherwise, the
+            accelerator is limited in its effect to the weakest of the three
+            systems. Using an accelerator doubles the stun damage inflicted by
+            triggering an enhance program.
+          es: >
+            El acelerador utiliza los sistemas de control cibernético del sujeto
+            para mejorar drásticamente su velocidad de reacción. El receptor debe
+            tener biocableado de reflejos y una nanocomputadora para soportar el
+            acelerador, o el dispositivo es inútil. El acelerador proporciona los
+            siguientes beneficios:
+            Normal: +2 de aumento de la puntuación de la Prueba de Acción, Ninguna Acciones/Asalto, $2.500.
+            Buena: +3 de aumento de la puntuación de la Prueba de Acción, +1 Acción/Asalto, $5.000.
+            Asombrosa: +4 de aumento de la puntuación de la Prueba de Acción, +2 Acciones/Asalto, $10.000.
+            Para recibir la bonificación del acelerador, la nanocomputadora y el
+            biocableado de reflejos del personaje deben ser de igual o mejor
+            calidad. De lo contrario, el acelerador ve limitado su efecto al más
+            débil de los tres sistemas. El uso de un acelerador duplica el daño
+            por aturdimiento infligido al activar un programa de mejora.
+      - name: Subdermal NIJack
+        nanocomp: 'Yes'
+        mass: '-'
+        size: '1'
+        cost: '- / 700 / -'
+        description:
+          en: These mostly hidden NIJacks are installed in the wrist or forearm so
+            that a gridcaster gauntlet can be plugged into the arm without the need
+            for running exposed cables to the neck and head. All subdermal NIJacks
+            are of Good quality.
+          es: >
+            Estos NIJacks, casi ocultos, se instalan en la muñeca o el antebrazo
+            para que se pueda enchufar un guantelete gridcaster en el brazo sin necesidad
+            de pasar cables expuestos al cuello y la cabeza. Todos los NIJacks subdérmicos
+            son de calidad Buena.
+      - name: Wireless NIJack
+        nanocomp: 'Yes'
+        mass: '-'
+        size: '1'
+        cost: '- / 1000 / -'
+        description:
+          en: The wireless neural interface jack is a sensor located on the outside
+            of a character's head, usually high on the side or back of the neck where
+            it can be hidden by hair. When activated, it completes a data link with
+            a computer or gridcaster that has a similar sensor. A wireless NIJack
+            performs all functions of a regular NIJack but transfers data via radio
+            emissions. The character must be within line of sight and no farther than
+            10 meters from the interfaced system.
+          es: >
+            El conector de interfaz neural inalámbrico es un sensor situado en la
+            parte exterior de la cabeza del personaje, normalmente en la parte superior
+            del lateral o en la parte posterior del cuello, donde puede ocultarse
+            con el pelo. Cuando se activa, completa un enlace de datos con una computadora
+            o un gridcaster que tenga un sensor similar. Un NIJack inalámbrico realiza
+            todas las funciones de un NIJack normal pero transfiere datos mediante
+            emisiones de radio. El personaje debe estar en línea de visión y a no
+            más de 10 metros del sistema conectado.
+      - name: Scanner Implant
+        nanocomp: 'Yes'
+        mass: '0.35'
+        size: '2 / 1 / -'
+        cost: 1250 / 2500 / 3750
+        description:
+          en: >
+            The scanner implant is a magnetic resonance device that can be installed
+            in the user's eye or hand. It provides the cybernetic character with the
+            ability to see into or through walls or objects, as long as he is within
+            1 meter of the object to be scanned. (Ordinary size 2, Good size 1,
+            Amazing size -).
+          es: >
+            El implante de escáner es un dispositivo de resonancia magnética que
+            puede instalarse en el ojo o la mano del usuario. Proporciona al
+            personaje cibernético la capacidad de ver dentro o a través de paredes
+            u objetos, siempre que se encuentre a menos de 1 metro del objeto a
+            escanear. (Normal tamaño 2, Bueno tamaño 1, Asombroso tamaño -).
+      - name: Endoskeleton
+        nanocomp: 'Yes'
+        mass: '15'
+        size: '3'
+        cost: 4000 / 6000 / 8000
+        description:
+          en: >
+            One of the most difficult pieces of cyberware to install, the endoskeleton
+            provides all of the benefits of a cybernetic exoskeleton-but it's hidden
+            inside the user's body. Large portions of the user's natural skeleton
+            are replaced or reinforced with carbonide alloy structural members.
+            The endoskeleton can anchor cybernetic limbs, MusclePlus, and similar
+            systems just like the exoskeleton, and it provides the user with 3
+            extra stun/wound/mortal points for Ordinary, Good, or Amazing quality
+            implants.
+          es: >
+            El endoesqueleto, una de las piezas de equipo cibernético más difíciles
+            de instalar, proporciona todos los beneficios de un exoesqueleto cibernético,
+            pero está oculto dentro del cuerpo del usuario. Grandes porciones del
+            esqueleto natural del usuario se sustituyen o refuerzan con miembros
+            estructurales de aleación de carbonida. El endoesqueleto puede anclar
+            cibermiembros, MusclePlus y sistemas similares al igual que el exoesqueleto,
+            y proporciona al usuario 3 puntos extra de aturdimiento/herida/mortal
+            para implantes de calidad Normal, Buena o Asombrosa.
+      - name: Subdermal Armor
+        nanocomp: 'Yes'
+        mass: '15'
+        size: '2'
+        cost: 1500 / 3000 / 6000
+        description:
+          en: >
+            Consisting of flexible CF bands inserted over the vital portions of
+            the body, subdermal armor is much less obvious than body plating. It
+            doesn't have the stopping power of external armor, but it doesn't
+            affect the user's agility and doesn't advertise his special edge.
+            Ordinary armor stops d4-1 (LI), d6-2 (HI), d6-2 (En); Good armor
+            stops d6-1 (LI), d8-3 (HI), d8-2 (En); and Amazing armor stops d6+1
+            (LI), d6 (HI), d6 (En).
+          es: >
+            Compuesta por bandas flexibles de FC insertadas sobre las partes vitales
+            del cuerpo, la armadura subdérmica es mucho menos evidente que el
+            blindaje corporal. No tiene el poder de parada de la armadura externa,
+            pero no afecta a la agilidad del usuario ni anuncia su ventaja especial.
+            La armadura Normal detiene d4-1 (LI), d6-2 (HI), d6-2 (En); la armadura
+            Buena detiene d6-1 (LI), d8-3 (HI), d8-2 (En); y la armadura Asombrosa
+            detiene d6+1 (LI), d6 (HI), d6 (En).
+      - name: Systemic Reinforcement
+        nanocomp: 'Yes'
+        mass: '4'
+        size: '-'
+        cost: 5000 / 10000 / 15000
+        description:
+          en: >
+            This piece of cyberware serves to effectively increase a character's
+            cyber tolerance score. The subject's vital functions-breathing,
+            circulation, immune responses, etc.-are supplemented by nonintrusive
+            synthetic systems. Systemic reinforcement adds 1, 2, or 3 points to
+            the subject's cyber tolerance score for an Ordinary, Good, or Amazing
+            piece of equipment.
+          es: >
+            Esta pieza de equipo cibernético sirve para aumentar eficazmente la
+            puntuación de tolerancia cibernética de un personaje. Las funciones vitales
+            del sujeto -respiración, circulación, respuestas inmunitarias, etc.-
+            se complementan con sistemas sintéticos no intrusivos. El refuerzo sistémico
+            añade 1, 2 o 3 puntos a la puntuación de tolerancia cibernética del sujeto
+            para un equipo de calidad Normal, Buena o Asombrosa.
+      - name: Cortex Bomb
+        nanocomp: '-'
+        mass: '0.1'
+        size: '1'
+        cost: 1500
+        description:
+          en: >
+            The cortex bomb is one of the most brutal means available of ensuring
+            compliant behavior. It's a small radio-activated or timed explosive
+            charge, implanted in the subject's skull. If detonated, the bomb
+            kills the victim in a grisly display. Radio detonators must be within
+            200 meters to function; cluttered terrain or interior walls may
+            reduce this substantially. Removing a cortex bomb is possible, but
+            if the surgeon achieves a Critical Failure, the bomb goes off,
+            causing d4m to the surgeon and anyone else within 5 meters of the victim.
+          es: >
+            La bomba de córtex es uno de los medios más brutales disponibles para
+            garantizar un comportamiento complaciente. Se trata de una pequeña
+            carga explosiva temporizada o activada por radio, implantada en el
+            cráneo del sujeto. Si detona, la bomba mata a la víctima en una
+            macabra exhibición. Los detonadores de radio deben estar a menos de
+            200 metros para funcionar; el terreno desordenado o las paredes
+            interiores pueden reducir esto sustancialmente. Es posible retirar
+            una bomba de córtex, pero si el cirujano comete un Fallo Crítico, la
+            bomba estalla, causando d4m de daño al cirujano y a cualquier otra
+            persona en un radio de 5 metros de la víctima.
+      - name: Deflection Web
+        nanocomp: 'Yes'
+        mass: '3'
+        size: '2'
+        cost: 3500
+        description:
+          en: >
+            This is simply a deflection inducer installed in the subject's body.
+            When activated, it increases the subject's resistance modifier against
+            physical or energy attacks by +2, but hinders the subject's own attacks
+            with a +1 step penalty. The web's endurance is only 5 rounds; the
+            charge pack is usually hidden on the calf or upper arm, and changing
+            it requires an entire round.
+          es: >
+            Se trata simplemente de un inductor de deflexión instalado en el cuerpo
+            del sujeto. Cuando se activa, aumenta el modificador de resistencia
+            del sujeto contra ataques físicos o de energía en +2, pero dificulta
+            los propios ataques del sujeto con una penalización de +1 paso. La
+            resistencia de la red es de sólo 5 asaltos; el paquete de carga suele
+            estar oculto en la pantorrilla o en la parte superior del brazo, y
+            cambiarlo requiere un asalto completo.
+      - name: GP (General Purpose) Implant
+        nanocomp: 'Yes'
+        mass: '-'
+        size: '2 / 3 / 4'
+        cost: 500 / 1000 / 2000
+        description:
+          en: >
+            Almost any piece of gear imaginable can be installed in a general
+            purpose module. Items weighing 1 kg or less can be installed with
+            Ordinary implants; items weighing up to 3 kg are Good implants; and
+            items weighing up to 10 kg are Amazing implants. Powered items
+            include power leads that the character can use to recharge his
+            internal batteries. Common items chosen for GP implants include
+            gauntlets, cutting torches, vidcams, flashlights, zero-g webs, and
+            powered grapnels. General purpose implants cost $500, $1,000, or
+            $2,000 for Ordinary, Good, or Amazing modules, plus twice the cost
+            of the equipment to be installed.
+          es: >
+            Casi cualquier pieza de equipo imaginable puede instalarse en un módulo
+            de uso general. Los artículos que pesan 1 kg o menos pueden instalarse
+            con implantes Normales; los artículos que pesan hasta 3 kg son implantes
+            Buenos; y los artículos que pesan hasta 10 kg son implantes Asombrosos.
+            Los artículos potenciados incluyen cables de alimentación que el personaje
+            puede utilizar para recargar sus baterías internas. Los elementos comunes
+            elegidos para los implantes GP incluyen guanteletes, sopletes de corte,
+            videocámaras, linternas, redes de gravedad cero y garfios potenciados.
+            Los implantes de uso general cuestan 500, 1.000 o 2.000 dólares para los
+            módulos Normales, Buenos o Asombrosos, más el doble del coste del equipo
+            que se vaya a instalar.
+      - name: Comm Port
+        nanocomp: 'Yes'
+        mass: '0.1'
+        size: '-'
+        cost: 500 / 1500 / 2500
+        description:
+          en: >
+            This is a frequency-agile transceiver hardwired to the user's
+            nanocomputer. Through the port, the user can receive and transmit
+            comm signals, video feed (if he has an optic system), or datastream
+            feed. Using a comm port for a radio conversation is distracting, so
+            the character suffers a +1 step penalty to actions he takes while
+            communicating. Unlike the subdermal transceiver, which takes its cues
+            from subvocalizations, the comm port is controlled directly by the
+            wearer's mind through his nanocomputer. The comm port has a range
+            of 20/50/200 km for an Ordinary, Good, or Amazing installation.
+          es: >
+            Se trata de un transceptor hardwired a la nanocomputadora del usuario.
+            A través del puerto, el usuario puede recibir y transmitir señales
+            de comunicación, alimentación de vídeo (si tiene un sistema óptico)
+            o transmisión de datos. El uso de un puerto de comunicaciones para
+            una conversación por radio es una distracción, por lo que el personaje
+            sufre una penalización de +1 paso por las acciones que realice mientras
+            se comunica. A diferencia del transceptor subdérmico (que utiliza
+            subvocalizaciones), el puerto de comunicaciones se controla directamente
+            a través de la mente del usuario utilizando su nanocomputadora.
+            Alcance de 20/50/200 km.
+      - name: Gunsight
+        nanocomp: 'Yes'
+        mass: '0.3'
+        size: '-'
+        cost: 1500 / 2500 / 4500
+        description:
+          en: >
+            There are three components in this system: a vidcam mounted on the
+            wearer's weapon, a wire lead from the vidcam to the wearer's
+            cytronic circuitry, and an optic screen, artificial eye, or
+            cyberoptic system in the user's head (not included in the package).
+            When activated, the vidcam projects crosshairs in the user's field
+            of vision, showing exactly where the gun is pointing. The system
+            provides a -1, -2, or -3 step bonus to the user's attack skill
+            checks with the ranged weapon in question. The cybernetic gunsight
+            is especially deadly when used in conjunction with an enhance program.
+          es: >
+            Requiere una pantalla óptica o un sistema ciberóptico para funcionar.
+            Una videocámara montada en el arma proyecta una retícula en el campo
+            de visión del usuario, mostrando exactamente hacia dónde apunta el
+            arma. Proporciona una bonificación de -1/-2/-3 pasos a las pruebas
+            de habilidad de ataque con el arma a distancia en cuestión.
+      - name: System Link
+        nanocomp: 'Yes'
+        mass: '0.3'
+        size: '1'
+        cost: 1000 / 2000 / 4000
+        description:
+          en: >
+            Resembling the innate mechalus ability to directly interface with
+            computer hardware, the system link is an extension of the user's
+            cytronic circuitry net that can bypass manual controls, keyboards,
+            or displays. The user delivers commands to the vehicle or system
+            in question through a direct neural link, speeding his reactions
+            and increasing his precision. The link provides a -1, -2, or -3
+            step bonus to one specialty skill under Vehicle Operation or System
+            Operation. This bonus is not cumulative with any bonus for the
+            quality of a vehicle's onboard computer. Additional specialty
+            modules can be purchased for $500 each.
+          es: >
+            Permite al usuario conectarse directamente con vehículos o hardware
+            informático, puenteando los controles manuales. Proporciona una
+            bonificación de -1/-2/-3 pasos a una habilidad de especialidad bajo
+            Operación de vehículos u Operación de sistemas. Esta bonificación
+            no es acumulativa con las bonificaciones por la calidad de la computadora
+            de a bordo del vehículo. Se pueden adquirir módulos de especialidad
+            adicionales por $500 cada uno.
+      Expansion: []

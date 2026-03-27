@@ -19,7 +19,7 @@ Un personaje debe gastar puntos de habilidad para prepararse para la instalació
 La puntuación de Constitución de un personaje determina el límite superior de la cantidad de cibernética que su cuerpo puede soportar. Todo equipo cibernético tiene un "tamaño" asociado. Ningún personaje puede poseer equipo cuyos tamaños sumen más que su puntuación de Constitución. Por ejemplo, Kreg tiene una Constitución de 10. Puede manejar equipo que sume hasta 10 puntos, pero su cuerpo rechaza automáticamente cualquier equipo que lo ponga por encima de este número de puntos.
 
 > ### Reacción Alérgica
-> Para darle sabor o como un elemento de historia e interpretación, ya sea el Director de Juego o un jugador pueden determinar que un personaje de apoyo o héroe es "alérgico" al equipo cibernético. En tal caso, el personaje tiene un alto grado de rechazo corporal a los implantes cibernéticos y, por lo tanto, se le prohíbe usar y recibir dichos artículos.
+> Para darle sabor o como un elemento de historia e interpretación, ya sea el Director de Juego o un jugador pueden determinar que un personaje de apoyo o héroe es "allergic" al equipo cibernético. En tal caso, el personaje tiene un alto grado de rechazo corporal a los implantes cibernéticos y, por lo tanto, se le prohíbe usar y recibir dichos artículos.
 
 ### Equipo Cibernético para Héroes Iniciales
 > Incluso si el Director de Juego ha permitido el uso de estas reglas en su campaña, el costo de comprar equipo cibernético y tenerlo instalado puede poner tales mejoras más allá del alcance financiero de un héroe que recién comienza su carrera. Hay dos formas de hacer frente a tal situación:
@@ -83,7 +83,7 @@ Si un personaje cibernético sufre daño que asciende a más de la mitad de su �
 > Un peligro inherente asociado con algunas instalaciones de equipo cibernético (particularmente el chip rápido y el reflex), es la enfermedad mental conocida como cykosis. Esta dolencia retuerce a un personaje, haciéndolo comportarse más como una máquina que como un ser vivo. Este giro es homicida e impredecible, y no debería ser el objetivo de ningún héroe. Cuando un personaje sucumbe a la cykosis, se vuelve violentamente loco. Si esto le sucede a un héroe, se convierte en un personaje secundario (controlado por el Director de Juego) que busca a otros con la misma condición: los inadaptados cibernéticos conocidos como cykoteks (pronunciado como "psicóticos").
 > Todo personaje con un chip rápido instalado debe hacer una prueba exitosa de cykosis (una prueba de proeza de Voluntad utilizada para este propósito específico) para evitar la aparición de la cykosis. Estas pruebas se realizan siempre que un personaje accede al chip rápido para mejorar su prueba de acción.
 > La puntuación de cykosis de un personaje aparece en la hoja suplementaria del héroe. Es igual a la mitad de la puntuación de Voluntad del personaje, redondeado hacia arriba. En cualquier resultado de Fallo, se usa una de las casillas disponibles del personaje (indícalo poniendo una "x" o alguna otra marca). En cualquier Fallo Crítico, se usan dos casillas. En cualquier éxito, las casillas se dejan sin cambios.
-> Con cada casilla usada, el personaje se acerca más a convertirse en un cykotek. Si se usan todas las casillas de un personaje, sucumbe a la cykosis. El Director de Juego puede dictaminar que otras situaciones además del uso de un chip rápido requieran que un personaje haga una prueba de cykosis.
+> Con cada casilla usada, el personaje se acerca más a convertirse en un cykotek. Si se usan todas las casillas de un personaje, sucumbe a la cykosis. El Director de Juego puede dictaminar que otras situaciones en addition al uso de un chip rápido requieran que un personaje haga una prueba de cykosis.
 
 ## Programas de Mejora
 
@@ -104,4 +104,3 @@ Los personajes deben tener cuidado con cómo adquieren programas de mejora, porq
 {{< json-table "cybernetics" "gear" "mass" "size" >}}
 
 *\*\* Puede ser instalado sin costo en puntos de habilidad.*
-
