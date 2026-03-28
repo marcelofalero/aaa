@@ -19,7 +19,7 @@
 }
 
 /* LIGHT THEME OVERRIDE */
-.sheet-theme-control[value="1"]+.sheet-overall-wrapper {
+.sheet-theme-control[value="1"]~.sheet-overall-wrapper {
     --color-bg: #f0f4f8;
     --color-panel: #ffffff;
     --color-accent-yellow: #92400e;
@@ -591,6 +591,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 input[type=number] {
     -moz-appearance: textfield;
+    appearance: textfield;
 }
 
 .sheet-aligncenter {
@@ -633,6 +634,30 @@ fieldset.sheet-section-skills {
     column-gap: 12px;
     margin-top: 10px;
     display: block;
+}
+
+/* Skills Styling */
+.sheet-skill-name.sheet-trained-only {
+    color: #3b82f6; /* Bright blue for trained-only skills */
+}
+
+.sheet-skill-header-row {
+    position: relative;
+}
+
+button.sheet-skill-header-roll {
+    position: absolute;
+    top: 0;
+    left: 24px; /* Align with skill name start */
+    width: 60%;  /* Coverage for the skill name */
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.sheet-skill-header-row:hover .sheet-skill-name {
+    text-shadow: 0 0 5px var(--accent-color-1);
 }
 
 .sheet-skill-group-box {
@@ -1438,45 +1463,211 @@ fieldset.repeating_weapons {
 }
 
 /* Theme Switching Specific Adjustments */
-.sheet-theme-control[value="1"]+.sheet-overall-wrapper .sheet-neon-text-glitch {
+.sheet-theme-control[value="1"]~.sheet-overall-wrapper .sheet-neon-text-glitch {
     text-shadow: 2px 2px 0px rgba(0, 210, 223, 0.2), -2px -2px 0px rgba(248, 204, 58, 0.2);
     color: var(--color-accent-teal);
     animation: none;
     /* Reduce eye strain in light mode */
 }
 
-.sheet-theme-control[value="1"]+.sheet-overall-wrapper .sheet-field label {
+.sheet-theme-control[value="1"]~.sheet-overall-wrapper .sheet-field label {
     color: var(--color-text);
 }
 
-.sheet-theme-control[value="1"]+.sheet-overall-wrapper .sheet-panel {
+.sheet-theme-control[value="1"]~.sheet-overall-wrapper .sheet-panel {
     border-color: var(--color-border);
 }
 
-.sheet-theme-control[value="1"]+.sheet-overall-wrapper input[type="text"],
-.sheet-theme-control[value="1"]+.sheet-overall-wrapper input[type="number"],
-.sheet-theme-control[value="1"]+.sheet-overall-wrapper select,
-.sheet-theme-control[value="1"]+.sheet-overall-wrapper textarea,
-.sheet-theme-control[value="1"]+.sheet-overall-wrapper .sheet-triplet {
+.sheet-theme-control[value="1"]~.sheet-overall-wrapper input[type="text"],
+.sheet-theme-control[value="1"]~.sheet-overall-wrapper input[type="number"],
+.sheet-theme-control[value="1"]~.sheet-overall-wrapper select,
+.sheet-theme-control[value="1"]~.sheet-overall-wrapper textarea,
+.sheet-theme-control[value="1"]~.sheet-overall-wrapper .sheet-triplet {
     background-color: #fff;
     color: #000;
     border: 1px solid var(--color-border);
 }
 
-.sheet-theme-control[value="1"]+.sheet-overall-wrapper .sheet-scoredisabled {
+.sheet-theme-control[value="1"]~.sheet-overall-wrapper .sheet-scoredisabled {
     background-color: #f8fafc !important;
 }
 
-.sheet-theme-control[value="1"]+.sheet-overall-wrapper .sheet-skill-header-row {
+.sheet-theme-control[value="1"]~.sheet-overall-wrapper .sheet-skill-header-row {
     background: #e2e8f0;
     color: #1e293b;
 }
 
-.sheet-theme-control[value="1"]+.sheet-overall-wrapper .sheet-skill-row:nth-child(even) {
+.sheet-theme-control[value="1"]~.sheet-overall-wrapper .sheet-skill-row:nth-child(even) {
     background-color: #f1f5f9;
 }
 
-.sheet-theme-control[value="1"]+.sheet-overall-wrapper .sheet-skill-group-box {
+.sheet-theme-control[value="1"]~.sheet-overall-wrapper .sheet-skill-group-box {
     background: #fff;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+/* --- FONT SIZE ACCESSIBILITY OVERRIDES --- */
+
+/* When font-size control is "1" (Enlarged) */
+.sheet-font-control[value="1"]~.sheet-overall-wrapper {
+    font-size: 1.1rem;
+}
+
+.sheet-font-control[value="1"]~.sheet-overall-wrapper input,
+.sheet-font-control[value="1"]~.sheet-overall-wrapper select,
+.sheet-font-control[value="1"]~.sheet-overall-wrapper textarea {
+    font-size: 1.1rem !important;
+    height: 24px !important;
+}
+
+.sheet-font-control[value="1"]~.sheet-overall-wrapper .sheet-skill-name {
+    font-size: 1.05rem;
+}
+
+.sheet-font-control[value="1"]~.sheet-overall-wrapper .sheet-skill-header-row {
+    font-size: 0.95em;
+}
+
+.sheet-font-control[value="1"]~.sheet-overall-wrapper .sheet-skill-score-cell {
+    font-size: 1rem;
+}
+
+.sheet-font-control[value="1"]~.sheet-overall-wrapper .sheet-field label {
+    font-size: 1rem;
+}
+
+.sheet-font-control[value="1"]~.sheet-overall-wrapper .sheet-field input {
+    font-size: 1.3rem;
+}
+
+.sheet-font-control[value="1"]~.sheet-overall-wrapper .sheet-label-grid {
+    font-size: 0.95rem;
+}
+
+.sheet-font-control[value="1"]~.sheet-overall-wrapper .sheet-broadskill {
+    font-size: 1.15rem;
+}
+
+.sheet-font-control[value="1"]~.sheet-overall-wrapper .sheet-skilltitle {
+    font-size: 1.25em;
+}
+
+.sheet-font-control[value="1"]~.sheet-overall-wrapper .sheet-attackform-label {
+    font-size: 0.9rem;
+}
+
+.sheet-font-control[value="1"]~.sheet-overall-wrapper .sheet-triplet input {
+    font-size: 1rem !important;
+}
+
+.sheet-font-control[value="1"]~.sheet-overall-wrapper .sheet-weapon-name {
+    font-size: 1.1rem !important;
+}
+
+.sheet-font-control[value="1"]~.sheet-overall-wrapper .sheet-tab {
+    font-size: 1.15rem !important;
+}
+
+.sheet-font-control[value="1"]~.sheet-overall-wrapper .sheet-header-attack,
+.sheet-font-control[value="1"]~.sheet-overall-wrapper .sheet-header-weapons div,
+.sheet-font-control[value="1"]~.sheet-overall-wrapper .sheet-skill-header-row {
+    font-size: 0.95rem !important;
+}
+
+.sheet-font-control[value="1"]~.sheet-overall-wrapper .sheet-triplet span,
+.sheet-font-control[value="1"]~.sheet-overall-wrapper .sheet-score-triplet span,
+.sheet-font-control[value="1"]~.sheet-overall-wrapper .sheet-label-span {
+    font-size: 1.25rem !important;
+}
+
+.sheet-font-control[value="1"]~.sheet-overall-wrapper .sheet-wdata-label,
+.sheet-font-control[value="1"]~.sheet-overall-wrapper .sheet-attackform-label,
+.sheet-font-control[value="1"]~.sheet-overall-wrapper .sheet-skill-ability-label {
+    font-size: 0.95rem !important;
+}
+
+.sheet-font-control[value="1"]~.sheet-overall-wrapper .sheet-damage-triplet .sheet-damage-type {
+    font-size: 1rem !important;
+}
+
+.sheet-font-control[value="1"]~.sheet-overall-wrapper .sheet-field label,
+.sheet-font-control[value="1"]~.sheet-overall-wrapper .sheet-field-inline label {
+    font-size: 1.05rem !important;
+}
+
+.sheet-font-control[value="1"]~.sheet-overall-wrapper .sheet-field-inline input {
+    font-size: 1.3rem !important;
+}
+
+.sheet-font-control[value="1"]~.sheet-overall-wrapper .sheet-weapon-name-span,
+.sheet-font-control[value="1"]~.sheet-overall-wrapper .sheet-skill-name {
+    font-size: 1.1rem !important;
+}
+
+.sheet-font-control[value="1"]~.sheet-overall-wrapper .sheet-broadskill,
+.sheet-font-control[value="1"]~.sheet-overall-wrapper .sheet-broadskilluntrained,
+.sheet-font-control[value="1"]~.sheet-overall-wrapper .sheet-specskill,
+.sheet-font-control[value="1"]~.sheet-overall-wrapper .sheet-specskilluntrained {
+    font-size: 1.1rem !important;
+}
+
+.sheet-font-control[value="1"]~.sheet-overall-wrapper .sheet-skilltitle {
+    font-size: 1.3rem !important;
+}
+
+.sheet-font-control[value="1"]~.sheet-overall-wrapper h1,
+.sheet-font-control[value="1"]~.sheet-overall-wrapper h2,
+.sheet-font-control[value="1"]~.sheet-overall-wrapper h3 {
+    font-size: 1.5rem !important;
+}
+
+.sheet-font-control[value="1"]~.sheet-overall-wrapper .sheet-label-grid {
+    font-size: 1rem !important;
+}
+
+.sheet-font-control[value="1"]~.sheet-overall-wrapper .sheet-attackform-row input,
+.sheet-font-control[value="1"]~.sheet-overall-wrapper .sheet-grid-attack-row input,
+.sheet-font-control[value="1"]~.sheet-overall-wrapper .sheet-grid-weapon-row input {
+    height: 1.8rem !important;
+}
+
+.sheet-font-control[value="1"]~.sheet-overall-wrapper .repcontrol_add,
+.sheet-font-control[value="1"]~.sheet-overall-wrapper .repcontrol_edit,
+.sheet-font-control[value="1"]~.sheet-overall-wrapper .repcontrol_del {
+    font-size: 1rem !important;
+    padding: 2px 8px !important;
+}
+
+.sheet-skill-link {
+    text-decoration: none !important;
+    font-size: 0.8em;
+    margin-left: 4px;
+    color: var(--color-text-dim) !important;
+    transition: color 0.2s ease;
+    vertical-align: middle;
+    background: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+    cursor: pointer;
+    line-height: normal;
+}
+
+.sheet-skill-link::before {
+    display: none !important;
+    content: "" !important;
+    font-family: inherit !important;
+}
+
+.sheet-skill-link:hover {
+    color: var(--color-accent-teal) !important;
+    text-shadow: 0 0 5px rgba(0, 255, 255, 0.3);
+    background: transparent !important;
+}
+
+.sheet-font-control[value="1"]~.sheet-overall-wrapper .sheet-skill-link {
+    font-size: 1rem !important;
+}
+
+.sheet-font-control[value="1"]~.sheet-overall-wrapper .sheet-tablecell {
+    font-size: 1rem !important;
 }
