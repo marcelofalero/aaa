@@ -82,6 +82,7 @@ def generate_skills_html(data_list, indent_level=3):
         is_untrained = skill["u"]
         attr_full = ABILITY_MAP[attr_short]
         id_name = clean_id(name)
+        collapse_id = f"collapse_{id_name}"
         
         # Base URL for the broad skill
         url = f"https://aaa.dimble.net/skills/{name.lower().replace(' ', '-')}"
@@ -99,13 +100,12 @@ def generate_skills_html(data_list, indent_level=3):
             
         # Broad Skill Row
         h = f'{indent}<div class="sheet-skill-group-box">\n'
-        h += f'{indent}\t<input type="checkbox" name="attr_{id_name}" class="sheet-collapse-check" value="1" />\n'
-        h += f'{indent}\t<div class="sheet-skill-header-row">\n'
-        h += f'{indent}\t\t<button type="roll" name="roll_{id_name}_header" value="&{{template:default}} {{{{name= @{{character_name}} - {name}}}}} {roll_scores} {roll_results} {wiki_link}" class="sheet-skill-header-roll"></button>\n'
+        h += f'{indent}\t<input type="checkbox" id="{collapse_id}" name="attr_collapse_{id_name}" class="sheet-collapse-check" value="1" />\n'
+        h += f'{indent}\t<label class="sheet-skill-header-row" for="{collapse_id}">\n'
         h += f'{indent}\t\t<div></div><div class="sheet-skill-name">{name.upper()}</div><div></div>\n'
         h += f'{indent}\t\t<div class="sheet-skill-ability-label">RANKS</div>\n'
         h += f'{indent}\t\t<div class="sheet-skill-ability-label">SCORE</div>\n'
-        h += f'{indent}\t</div>\n'
+        h += f'{indent}\t</label>\n'
         h += f'{indent}\t<div class="sheet-skill-row">\n'
         h += f'{indent}\t\t<button type="roll" name="roll_{id_name}" value="&{{template:default}} {{{{name= @{{character_name}} - {name}}}}} {roll_scores} {roll_results} {wiki_link}"></button>\n'
         h += f'{indent}\t\t<div class="sheet-skill-name">{name} <button type="roll" name="roll_{id_name}_link" class="sheet-skill-link" value="[{name} Wiki]({url})">&#x2197;</button></div>\n'

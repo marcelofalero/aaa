@@ -638,22 +638,17 @@ fieldset.sheet-section-skills {
 
 /* Skills Styling */
 .sheet-skill-name.sheet-trained-only {
-    color: #3b82f6; /* Bright blue for trained-only skills */
+    color: #3b82f6 !important;
 }
 
 .sheet-skill-header-row {
+    cursor: pointer;
     position: relative;
+    z-index: 5;
 }
 
-button.sheet-skill-header-roll {
-    position: absolute;
-    top: 0;
-    left: 24px; /* Align with skill name start */
-    width: 60%;  /* Coverage for the skill name */
-    height: 100%;
-    opacity: 0;
-    cursor: pointer;
-    z-index: 10;
+.sheet-skill-header-row:hover {
+    background: rgba(255, 255, 255, 0.05);
 }
 
 .sheet-skill-header-row:hover .sheet-skill-name {
