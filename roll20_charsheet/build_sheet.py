@@ -100,7 +100,7 @@ def generate_skills_html(data_list, indent_level=3):
             
         # Broad Skill Row
         h = f'{indent}<div class="sheet-skill-group-box">\n'
-        h += f'{indent}\t<input type="checkbox" id="{collapse_id}" name="attr_collapse_{id_name}" class="sheet-collapse-check" value="1" />\n'
+        h += f'{indent}\t<input type="checkbox" id="{collapse_id}" name="attr_{id_name}" class="sheet-collapse-check" value="1" />\n'
         h += f'{indent}\t<label class="sheet-skill-header-row" for="{collapse_id}">\n'
         h += f'{indent}\t\t<div></div><div class="sheet-skill-name">{name.upper()}</div><div></div>\n'
         h += f'{indent}\t\t<div class="sheet-skill-ability-label">RANKS</div>\n'
