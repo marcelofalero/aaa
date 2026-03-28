@@ -27,6 +27,7 @@ El estado de la tecnología en una sociedad se define por su Nivel de Progreso.
 - **[Creación de Personajes](/es/core-mechanics/character-creation/)**
 - **[Avance de Personajes](/es/core-mechanics/character-advancement/)**
 - **[Personajes en Acción](/es/core-mechanics/characters-in-action/)**
+- **[Cibernética](/es/cybernetics/)**
 
 ---
 **¡La acción comienza ahora! Bienvenido al futuro.**

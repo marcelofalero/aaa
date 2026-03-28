@@ -31,6 +31,7 @@ The state of technology in a society is defined by its Progress Level.
 - **[Character Creation](/core-mechanics/character-creation/)**
 - **[Character Advancement](/core-mechanics/character-advancement/)**
 - **[Heroes in Action](/core-mechanics/characters-in-action/)**
+- **[Cybernetics](/cybernetics/)**
 
 ---
 
