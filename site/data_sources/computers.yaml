@@ -1,0 +1,216 @@
+config:
+  columns:
+    en:
+    - name: Item
+      key: name
+    - name: Quality
+      key: quality
+    - name: Slots
+      key: slots
+    - name: Cost ($)
+      key: cost
+    - name: Description
+      key: description
+      hidden: true
+    es:
+    - name: Objeto
+      key: name
+    - name: Calidad
+      key: quality
+    - name: Ranuras
+      key: slots
+    - name: Coste ($)
+      key: cost
+    - name: "Descripci\xF3n"
+      key: description
+      hidden: true
+categories:
+  hardware:
+    groups:
+      Expansion:
+      - name: Al Board
+        pl: '7'
+        mass: 'Mass (kg): 100 g'
+        cost: 'Cost ($ or #): (A) $15,000; (B) $3,500; (C) 4,000+'
+        avail: 'Availability: Restricted'
+        description:
+          en: The 'Al board' is a computer card that allows a mainframe of Good or
+            better quality to support true artificial intelligence. It requires separate
+            purchase.
+          es: "El 'Al board' es una tarjeta de computadora que permite a un n\xFA\
+            cleo principal de calidad Buena o mejorada soportar la inteligencia artificial\
+            \ verdadera. Requiere compra separada."
+        name_es: Baul de Al
+      - name: Al Emulator Program
+        pl: '7'
+        mass: 'Mass (kg): 2 kg'
+        cost: 'Cost ($ or #): 4 slots of active memory'
+        avail: 'Availability: Restricted'
+        description:
+          en: "El emulador Al es una interfaz de usuario f\xE1cil de usar que depende\
+            \ de una biblioteca de respuestas programadas para simular un car\xE1\
+            cter y alma separados."
+          es: "El Emulador Al es una interfaz de usuario sencilla y pr\xE1ctica que\
+            \ utiliza una biblioteca de respuestas preprogramadas para simular un\
+            \ personaje y la intuici\xF3n separados."
+        name_es: Emulador de armas Al
+      - name: Memory Harness
+        pl: '7'
+        mass: 'Mass (kg): 2 kg'
+        cost: "Cost ($ or #): +3 steps for a Marginal (\xA54,000) harness, +2 for\
+          \ an Ordinary (\xA55,000) harness, +1 for a Good (%6,000), and no penalty\
+          \ for an Amazing (\xA58,000) harness"
+        avail: 'Availability: Restricted'
+        description:
+          en: A portable computer system equivalent to a computer gauntlet of similar
+            quality. It is equipped with special fuzzy-logic banks.
+          es: "Un sistema inform\xE1tico port\xE1til equivalente a un puente de equipo\
+            \ similar al mismo nivel. Est\xE1 equipado con bancos especializados de\
+            \ logica difusa."
+        name_es: Parche de Memoria
+      - name: Mainframe
+        pl: '7'
+        mass: 'Mass (kg): 6 kg; 500 g'
+        cost: 'Cost ($ or #): #1,500+ (see helow)'
+        avail: 'Availability: Controlled'
+        description:
+          en: A powerful computer capable of handling almost any business task. It
+            includes an integrated high-definition video screen and a 3D drive.
+          es: "Un ordenador potente que puede manejar casi cualquier tarea empresarial.\
+            \ Incluye un monitor de v\xEDdeo integrado en alta definici\xF3n y un\
+            \ disco 3D."
+        name_es: Maquinaria principal
+      - name: Microcomputer
+        pl: '7'
+        mass: 'Mass (kg): 2 kg'
+        cost: 'Cost ($ or #): %4,500 9 slots; %3000 12 slots; %14,000 15 slots; $20,000
+          unlimited'
+        avail: 'Availability: Controlled'
+        description:
+          en: The businessman's traveling computer. It is smaller, lighter and more
+            powerful than laptops.
+          es: "El ordenador del viajero del negociante es m\xE1s peque\xF1o, ligero\
+            \ y potente que las computadoras port\xE1tiles."
+        name_es: "Ordenador Microelectr\xF3nico"
+      - name: 'Personal Computer (L-R): Data Slate, Desktop, Gauntlet'
+        pl: '7'
+        mass: 'Mass (kg): 300 g; 3 kg; 2 kg'
+        cost: 'Cost ($ or #): $84,500; %3000 12 slots; %14,000 15 slots; $20,000 unlimited'
+        avail: 'Availability: Controlled'
+        description:
+          en:
+            en: These are different types of personal computers with variable prices
+              and strengths.
+          es:
+            es: Estos son diferentes tipos de computadores personales con precios
+              y potencias variadas.
+        name_es: 'Computadora Personal (L-R): Plaqueta de Datos, Escritorio, Mazo'
+      - name: Quality Microcomp Gauntlet Active Memory
+        pl: 7
+        mass: 'Mass (kg): A) 300 g; (B) 3 kg; (C) 2 kg'
+        cost: "Cost ($ or #): Marginal ~ #1,500 $2,000 3 slots, Ordinary %2,500 $3,000\
+          \ 5 slots, Good %3500 %4000 7 slots, Amazing \xA54,500 %5000 9 slots"
+        avail: 'Availability: Controlled'
+        description:
+          en: "The Quality MicroComp Gauntlet Active Memory is a high-performance\
+            \ and high-capacity storage device. It's designed to offer unparalleled\
+            \ speed, reliability, and capacity that rivals the best microcomputers\
+            \ in existence.\n\nFeatures:\n1. Microprocessor: A high-level Intel Xeon\
+            \ E5 V3.<\uFF5Cbegin\u2581of\u2581sentence\uFF5C>0 CPU delivers exceptional\
+            \ power efficiency and performance.\n2. Memory Chip: The use of a state-of-the-art,\
+            \ ultra-high capacity memory chip ensures unrivaled storage speed and\
+            \ data retrieval times.\n3. Interface: This device has a USB 3.0 interface\
+            \ for easy connectivity to any system that can support it.\n\nMechanics:\n\
+            1. Energy Efficiency: With its powerful CPU and advanced storage technology,\
+            \ this item is one of the most energy-efficient tools at your disposal.\n\
+            2. Speed & Performance: The device packs a punch with unrivaled speed\
+            \ and performance levels, ensuring quick data processing times.\n\nFlavor:\n\
+            This memory solution boasts an elegant design that elegantly integrates\
+            \ into any system, yet is built to perform like a top-tier microcomputer.\n\
+            \nStats:\n1. Speed: Excellent\n2. Capacity: Excellent\n3. Efficiency:\
+            \ Outstanding"
+          es: "El Quality MicroComp Gauntlet Active Memory es un dispositivo de almacenamiento\
+            \ de alto rendimiento y capacidad m\xE1xima. Est\xE1 dise\xF1ado para\
+            \ ofrecer una velocidad, confiabilidad y capacidad inigualables que superan\
+            \ a los mejores microcomputadores existentes.\n\nCaracter\xEDsticas:\n\
+            1. Procesador: Un procesador Intel Xeon E5 V3.0 de alto nivel ofrece una\
+            \ eficiencia energ\xE9tica y desempe\xF1o \xF3ptimos.\n2. Tarjeta de Memoria:\
+            \ El uso de un chip de memoria ultragrande de estado de la artesan\xED\
+            a garantiza velocidades de almacenamiento y tiempos de recuperaci\xF3\
+            n de datos impensables.\n3. Interfaz: Este dispositivo cuenta con una\
+            \ interfaz USB 3.0 para f\xE1cil integraci\xF3n en cualquier sistema que\
+            \ soporte ella.\n\nMecanismos:\n1. Eficiencia energ\xE9tica: Con su potente\
+            \ CPU y tecnolog\xEDa de almacenamiento avanzada, este objeto es uno de\
+            \ los m\xE1s eficientes a la hora de la energ\xEDa que dispone.\n2. Velocidad\
+            \ & Desempe\xF1o: El dispositivo empaque un pu\xF1ado con tiempos de procesamiento\
+            \ de datos impensables y ofrece alto desempe\xF1o, r\xE1fagas de velocidad\
+            \ inolvidable.\n\nSabor:\nEste dispositivo de memoria es una hermosa pieza\
+            \ que se ajusta perfectamente a cualquier sistema, pero cuenta con un\
+            \ gran poder procesamiento que lo hace parecer como un microordenador\
+            \ de \xFAltima generaci\xF3n.\n\nEstad\xEDsticas:\n1. Velocidad: Excelente\n\
+            2. Capacidad: Excepcional\n3. Eficiencia: \xD3ptimo"
+        name_es: Guante de la Memoria Activa Microcomputadora de Calidad
+      - name: Gridcaster Gauntlet
+        pl: '7'
+        mass: '(A) 35 cm X 12 cm X 10 cm (approx.) or (B) 20 cm diameter X 15 cm tall
+          or (C)10cm X Scm X 2 cm. Mass: (A, B) 2 kg; (C) 500 g.'
+        cost: Marginal $1,500 - 4 slots, Ordinary $2,550 - 7 slots, Good $4,500 -
+          10 slots, Amazing $6,500 - 12 slots
+        avail: Available for purchase.
+        description:
+          en: "The Gridcaster Gauntlet is a powerful computer gauntlet with a special\
+            \ neural interface designed to mate with the wearer\u2019s cytronic circuitry.\
+            \ It provides a -1, -2, or -3 step bonus to Computer Science skill checks."
+          es: "El Guante Gridcaster es una arma de g\xE1ntula computacional potente\
+            \ con una interfaz neuronal especialmente dise\xF1ada para integrarse\
+            \ con la circuiter\xEDa c\xEDtrica del portador. Proporciona un b\xF3\
+            nus de -1, -2 o -3 pasos en las pruebas de habilidades de Ciencias de\
+            \ la Computaci\xF3n."
+        name_es: Guante de Gridcaster
+      - name: Cyberware
+        pl: '7'
+        mass: Varies
+        cost: See below
+        avail: Controlled
+        description:
+          en: Cyberware, also known as cybernetics, is the application of technology
+            to enhance human capabilities. It consists of a wide range of devices
+            and systems that can be installed in the body or mind of a person.
+          es: "El ciberequipamiento, tambi\xE9n conocido como ciencias cibern\xE9\
+            ticas, consiste en la aplicaci\xF3n de la tecnolog\xEDa para mejorar las\
+            \ capacidades humanas. Forma parte de una amplia gama de dispositivos\
+            \ y sistemas que se pueden instalar en el cuerpo o mente de una persona."
+        name_es: Ciberarma
+      - name: Cortex Bomb
+        pl: '7'
+        mass: 100 g
+        cost: '#3,500'
+        avail: Controlled
+        description:
+          en: "The cortex bomb is one of the most brutal means available to ensure\
+            \ compliance. It's a small radio-activated or timed explosive charge,\
+            \ implanted in the subject\u2019s skull. If detonated, it kills the victim\
+            \ in an unforgiving manner. Radio detonators must be within 200 meters\
+            \ for effective operation; cluttering terrain or interior walls may affect\
+            \ this proximity."
+          es: "La bomba de cortex es una de las formas m\xE1s brutales para asegurar\
+            \ la adhesi\xF3n. Es un peque\xF1o explosivo radioactivo o temporizado,\
+            \ implantado en el cerebro del sujeto. Si se activa, destruye al v\xED\
+            ctima de manera horrendemente r\xE1pida. Los detonadores radios deben\
+            \ estar a menos de 200 metros para funcionar; las desorganizaciones de\
+            \ la tierra o los muros interiores pueden afectar este cercamiento."
+        name_es: "Bomba de C\xF3rtex"
+      - name: Comm Port
+        pl: '7'
+        mass: Mass not provided
+        cost: Cost not provided
+        avail: Availability not provided
+        description:
+          en: A device to communicate signals, transmit and receive video streams
+            (if equipped with an Optical System), or data. Using the common port for
+            a radio conversation increases one's penalty in actions due to distraction.
+          es: "Un dispositivo para comunicar se\xF1ales, transmitir y recibir flujos\
+            \ de video (si est\xE1 equipado con un Sistema \xD3ptico), o datos. Usando\
+            \ el puerto com\xFAn para una conversaci\xF3n de radio aumenta en uno\
+            \ la penalizaci\xF3n de acciones por distracci\xF3n."
+        name_es: "Puerto de Comunicaci\xF3n"
