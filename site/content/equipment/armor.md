@@ -6,6 +6,6 @@ toc = true
 
 ## Tactical Armor Database
 
-{{< json-table "armor" "all" expand="PL 7" >}}
+{{< json-table "armor" "all" "PL 7" >}}
 
 *K=thousand*
