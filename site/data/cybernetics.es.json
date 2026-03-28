@@ -357,10 +357,6 @@
             "description": "Permite al usuario conectarse directamente con vehículos o hardware informático, puenteando los controles manuales. Proporciona una bonificación de -1/-2/-3 pasos a una habilidad de especialidad bajo Operación de vehículos u Operación de sistemas. Esta bonificación no es acumulativa con las bonificaciones por la calidad de la computadora de a bordo del vehículo. Se pueden adquirir módulos de especialidad adicionales por $500 cada uno.\n"
           }
         ]
-      },
-      {
-        "name": "Expansion",
-        "items": []
       }
     ]
   }
