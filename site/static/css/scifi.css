@@ -280,6 +280,21 @@ tr:not(.table-separator):not(.description-row):hover td {
   background-color: rgba(75, 181, 193, 0.15);
 }
 
+.accordion-toggle {
+  cursor: pointer;
+  user-select: none;
+}
+
+.accordion-toggle:hover td {
+  background-color: rgba(166, 193, 46, 0.05) !important;
+}
+
+.chevron {
+  display: inline-block;
+  width: 1rem;
+  font-family: monospace;
+}
+
 tr.table-separator td {
   background-color: transparent !important;
   color: #A6C12E !important;

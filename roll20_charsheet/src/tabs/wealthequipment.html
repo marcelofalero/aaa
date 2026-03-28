@@ -1,0 +1,110 @@
+		<div class="sheet-section-wealthequipment">
+			<div class="sheet-row">
+			<div class="sheet-thirdwidth">
+				<div class="sheet-row">
+					<div class="sheet-broadskill sheet-col" style="width:8em">Allegiance</div>
+					<div class="sheet-col"><input type="text" name="attr_allegiance" class="sheet-16emwidth"></div>
+				</div>
+				<div class="sheet-row">
+					<div class="sheet-broadskill sheet-col" style="width:8em">
+						Social Status
+						<span
+							title="Missing data? We've moved it to the bottom of your Extended Notes below as we could not automatically migrate it for you"
+							style="cursor: help;">?</span>
+					</div>
+					<table class="sheet-bordersolid">
+						<thead>
+							<tr>
+								<th colspan="2" style="border-right: 1px solid black;">Authority</th>
+								<th colspan="2" style="border-right: 1px solid black;">Wealth</th>
+								<th colspan="2">Fame</th>
+							</tr>
+							<tr>
+								<!-- Authority -->
+								<td>Rank</td>
+								<td style="border-right: 1px solid black;">Steps</td>
+								<!-- Wealth -->
+								<td>Rank</td>
+								<td style="border-right: 1px solid black;">Income</td>
+								<!-- Fame -->
+								<td>Rank</td>
+								<td>Steps</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<!-- Authority -->
+								<td><input type="number" name="attr_AuthorityRank" class="sheet-score" value="0">
+								</td>
+								<td style="border-right: 1px solid black;">
+									<input type="text" name="attr_AuthoritySteps" class="sheet-score" value="+0">
+								</td>
+								<!-- Wealth -->
+								<td><input type="number" name="attr_WealthRank" class="sheet-score" value="0"></td>
+								<td style="border-right: 1px solid black;">
+									<input type="number" name="attr_WealthIncome" class="sheet-ability" value="0"
+										placeholder="/month" title="Income /month">
+								</td>
+								<!-- Fame -->
+								<td><input type="number" name="attr_FameRank" class="sheet-score" value="0"></td>
+								<td><input type="text" name="attr_FameSteps" class="sheet-score" value="+0"></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="sheet-thirdwidth">
+				<div class="sheet-broadskill sheet-col" style="width:8em">Currency</div>
+				<div class="sheet-row">
+					<div class="sheet-col sheet-10emwidth">Amount</div>
+					<div class="sheet-col sheet-16emwidth">Location</div>
+				</div>
+				<fieldset class="repeating_currency">
+					<div class="sheet-row">
+						<div class="sheet-col"><input type="text" name="attr_wealth" class="sheet-10emwidth" value="0">
+						</div>
+						<div class="sheet-col"><input type="text" name="attr_wealthLocation" class="sheet-16emwidth">
+						</div>
+					</div>
+				</fieldset>
+			</div>
+		</div>
+		<div class="sheet-row sheet-broadskill" style="padding-top: 1em;">Extended Notes:</div>
+		<div class="sheet-row">
+			<textarea name="attr_LongNotes" class="sheet-fullbox"></textarea>
+		</div>
+		<h2 class="sheet-row sheet-skilltitle">Equipment List</h2>
+
+		<div class="sheet-row">
+			<div class="sheet-col" style="width:3em;">Qty</div>
+			<div class="sheet-col sheet-16emwidth">Item Name</div>
+			<div class="sheet-col" style="width:24em;">Item Description</div>
+			<div class="sheet-col sheet-10emwidth">Location</div>
+			<div class="sheet-col" style="width:3em;">Eqp?</div>
+			<div class="sheet-col" style="width:3em;">Mass</div>
+			<div class="sheet-col">Total</div>
+		</div>
+
+		<fieldset class="repeating_equipment">
+			<div class="sheet-row">
+				<div class="sheet-col"><input type="text" name="attr_ItemQty" class="sheet-score" value="0"></div>
+				<div class="sheet-col"><input type="text" name="attr_ItemName" class="sheet-16emwidth"
+						placeholder="Enter Item"></div>
+				<div class="sheet-col"><input type="text" name="attr_ItemDescription" style="width:24em;"
+						placeholder="Enter Description"></div>
+				<div class="sheet-col"><input type="text" name="attr_ItemLocation" class="sheet-12emwidth"
+						placeholder="Item Location"></div>
+				<div class="sheet-col"><input type="checkbox" name="attr_ItemIsWorn" style="width:3em;"
+						placeholder="Item Is Worn" value="1"></div>
+				<div class="sheet-col"><input type="text" name="attr_ItemMass" class="sheet-score" value="0"></div>
+				<div class="sheet-col"><input type="text" name="attr_ItemTotalMass" class="sheet-score" disabled="true"
+						value="@{ItemMass}*@{ItemQty}"></div>
+			</div>
+		</fieldset>
+
+		<div class="sheet-row">
+			<div class="sheet-broadskill sheet-col">Total equipped mass: </div>
+			<span name="attr_EquipmentTotal"></span>
+		</div>
+
+	</div>

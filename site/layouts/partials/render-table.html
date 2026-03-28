@@ -15,8 +15,8 @@
   <div class="table-controls mb3">
     <div class="filter-container">
       <span class="neon-amber mr2">›</span>
-      <input type="text" class="table-filter-input" placeholder="{{ if eq $.Page.Language.Lang " es" }}Filtrar
-        resultados...{{ else }}Filter results...{{ end }}" aria-label="Filter table">
+      <input type="text" class="table-filter-input" placeholder="{{ if eq .Page.Lang " es" }}Filtrar resultados...{{
+        else }}Filter results...{{ end }}" aria-label="Filter table">
     </div>
   </div>
 
@@ -31,9 +31,16 @@
       </tr>
     </thead>
     <tbody>
+      {{ $expandPattern := .expand }}
       {{ range $data.groups }}
-      <tr class="table-separator" data-group-name="{{ .name }}">
-        <td colspan="{{ $colCount }}">{{ .name }}</td>
+      {{ $isExpanded := false }}
+      {{ if and $expandPattern (findRE $expandPattern .name) }}{{ $isExpanded = true }}{{ end }}
+      <tr class="table-separator accordion-toggle" data-group-name="{{ .name }}" {{ if $isExpanded
+        }}data-expanded="true" {{ end }}>
+        <td colspan="{{ $colCount }}">
+          <span class="chevron mr2">{{ if $isExpanded }}▼{{ else }}▶{{ end }}</span>
+          {{ .name }}
+        </td>
       </tr>
       {{ range $index, $item := .items }}
       {{ $rowId := printf "desc-%s-%s-%s-%d" $file $key ($item.name | urlize) $index }}

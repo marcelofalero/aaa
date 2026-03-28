@@ -1,7 +1,7 @@
 +++
 title = "Cybernetics"
-description = "Rules and enhancements for blending flesh and machine."
-weight = 6
+description = "How to go Beep"
+weight = 5
 +++
 
 Cybernetic technology combines complex computer electronics with the human nervous system. Some cyber gear is purely decorative, used to make a techno fashion statement. Other cyber gear serves a necessary function, replacing limbs or organs lost to accident or disease. Finally, there's the gear that users believe give them an edge—cyber weapons, defenses, and utilities to make a cyberknight stand out from the crowd.

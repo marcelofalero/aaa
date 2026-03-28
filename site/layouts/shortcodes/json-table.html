@@ -1,12 +1,28 @@
-{{ $file := .Get 0 }}
-{{ $key := .Get 1 }}
-{{ $hidden_fields := after 2 .Params }}
+{{ $file := .Get "data" | default (.Get 0) }}
+{{ $key := .Get "key" | default (.Get 1) }}
+{{ $hidden_fields := slice }}
 
-{{ $data := index .Site.Data $file }}
+{{ if .IsNamedParams }}
+  {{ if .Get "hide" }}
+    {{ $hidden_fields = split (.Get "hide") " " }}
+  {{ end }}
+{{ else }}
+  {{ $hidden_fields = after 2 .Params }}
+{{ end }}
+
+{{/* Language-aware data loading */}}
+{{ $data := index hugo.Data $file }}
+{{ $lang_suffix := printf "%s" .Page.Language.Lang }}
+{{ if and (ne $lang_suffix "en") (index hugo.Data (printf "%s.%s" $file $lang_suffix)) }}
+  {{ $data = index hugo.Data (printf "%s.%s" $file $lang_suffix) }}
+{{ end }}
+
 {{ if $key }}
   {{ $data = index $data $key }}
 {{ end }}
 
-{{ $context := dict "Page" .Page "data" $data "file" $file "key" $key "hidden_fields" $hidden_fields }}
+{{/* Specific for accordion expansion pattern */}}
+{{ $expand := .Get "expand" | default (.Get 2) | default "" }}
+{{ $context := dict "Page" .Page "data" $data "file" $file "key" $key "hidden_fields" $hidden_fields "expand" $expand }}
 
 {{ partial "render-table.html" $context }}

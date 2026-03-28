@@ -1,0 +1,171 @@
+<input type="hidden" name="attr_sheet_theme" class="sheet-theme-control" value="0">
+<div class="sheet-overall-wrapper">
+
+
+	<script type="text/worker">
+
+/* ===== PARAMETERS ==========
+destinations = the name of the attribute that stores the total quantity
+        can be a single attribute, or an array: ['total_cost', 'total_weight']
+        If more than one, the matching fields must be in the same order.
+    section = name of repeating fieldset, without the repeating_
+    fields = the name of the attribute field to be summed
+          destination and fields both can be a single attribute: 'weight'
+          or an array of attributes: ['weight','number','equipped']
+*/
+const repeatingSum = (destinations, section, fields) => {
+    if (!Array.isArray(destinations)) destinations = [destinations.replace(/\s/g, '').split(',')];
+    if (!Array.isArray(fields)) fields = [fields.replace(/\s/g, '').split(',')];
+    getSectionIDs(`repeating_${section}`, idArray => {
+        const attrArray = idArray.reduce((m, id) => [...m, ...(fields.map(field => `repeating_${section}_${id}_${field}`))], []);
+        getAttrs([...attrArray], v => {
+            const getValue = (section, id, field) => v[`repeating_${section}_${id}_${field}`] === 'on' ? 1 : parseFloat(v[`repeating_${section}_${id}_${field}`]) || 0;
+            const commonMultipliers = (fields.length <= destinations.length) ? [] : fields.splice(destinations.length, fields.length - destinations.length);
+            const output = {};
+            destinations.forEach((destination, index) => {
+                output[destination] = (idArray.reduce((total, id) => total + getValue(section, id, fields[index]) * commonMultipliers.reduce((subtotal, mult) => subtotal * getValue(section, id, mult), 1), 0)).toFixed(2);
+            });
+            setAttrs(output);
+        });
+    });
+};
+
+on('change:repeating_equipment:ItemMass change:repeating_equipment:ItemQty change:repeating_equipment:ItemIsWorn remove:repeating_equipment', function() {
+	repeatingSum("EquipmentTotal", "equipment", ["ItemMass", "ItemQty", "ItemIsWorn"]);
+});
+
+on('sheet:opened', function() {
+	getAttrs(['wealth', 'socialstatus', 'LongNotes'], function(values) {
+		if (!!values.wealth) {
+			console.log(`Found old Currency data (${values.wealth}), migrating to new Currency fields`);
+			setAttrs({
+				['repeating_currency_' + generateRowID() + '_wealth']: values.wealth,
+				wealth: ''
+			});
+		}
+		if (!!values.socialstatus) {
+			console.log(`Found old Social Status data (${values.socialstatus}), appending to Extended Notes field`);
+			setAttrs({
+				LongNotes: values.LongNotes + `\n\nOld Social Status: ${values.socialstatus}`,
+				socialstatus: ''
+			});
+		}
+	});
+});
+
+/* ===== SUCCESS SCORE AUTO-CALCULATION ===== */
+const attributes = ['Strength', 'Dexterity', 'Constitution', 'Intelligence', 'Will', 'Personality'];
+
+attributes.forEach(attr => {
+    on(`change:${attr.toLowerCase()}`, function() {
+        getAttrs([attr], function(values) {
+            let score = parseInt(values[attr]) || 0;
+            let update = {};
+            let untPrefix = attr === 'Personality' ? 'Per' : 
+                            attr === 'Intelligence' ? 'Int' :
+                            attr === 'Constitution' ? 'Con' :
+                            attr.substring(0, 3);
+            update[`${untPrefix}Unt`] = Math.floor(score / 2);
+            setAttrs(update);
+        });
+    });
+});
+
+on("change:actioncheck", function() {
+    getAttrs(["ActionCheck"], function(v) {
+        let val = parseInt(v.ActionCheck) || 0;
+        setAttrs({
+            "ActionCheckM": val + 1,
+            "ActionCheckG": Math.floor(val / 2),
+            "ActionCheckA": Math.floor(val / 4)
+        });
+    });
+});
+
+	</script>
+
+	<div class="sheet-logo-container">
+		<div class="sheet-logo-wrapper">
+			<div class="sheet-neon-text-glitch" data-text="Alterated">Alterated</div>
+			<div class="sheet-neon-text-glitch" data-text="Alternity" style="margin-left: 1rem;">Alternity</div>
+			<div class="sheet-neon-text-glitch" data-text="Alternative" style="margin-left: 2rem;">Alternative</div>
+		</div>
+	</div>
+	<input type="radio" name="attr_mode" class="sheet-tab sheet-tab21" value="21" title="Character" checked="checked" />
+	<span class="sheet-tab sheet-tab21">Character</span>
+	<input type="radio" name="attr_mode" class="sheet-tab sheet-tab22" value="22" title="Starship" />
+	<span class="sheet-tab sheet-tab22">Starship</span>
+
+	<div class="sheet-section-charactermode">
+		<div class="sheet-header-grid">
+			<div class="sheet-field">
+				<label data-i18n="character-name">Character Name</label>
+				<input type="text" name="attr_character_name" data-i18n-placeholder="character-name-placeholder"
+					placeholder="Character Name">
+			</div>
+			<div class="sheet-field">
+				<label data-i18n="species">Species</label>
+				<input type="text" name="attr_race" data-i18n-placeholder="species-placeholder" placeholder="Species">
+			</div>
+			<div class="sheet-field">
+				<label data-i18n="gender">Gender</label>
+				<input type="text" name="attr_gender" data-i18n-placeholder="gender-placeholder" placeholder="Gender">
+			</div>
+
+			<div class="sheet-field">
+				<label data-i18n="profession">Profession</label>
+				<input type="text" name="attr_profession" data-i18n-placeholder="profession-placeholder"
+					placeholder="Profession">
+			</div>
+			<div class="sheet-field">
+				<label data-i18n="background">Background</label>
+				<input type="text" name="attr_career" data-i18n-placeholder="background-placeholder"
+					placeholder="Background">
+			</div>
+			<div class="sheet-field">
+				<label data-i18n="title">Title</label>
+				<input type="text" name="attr_character_title" value="Rookie">
+			</div>
+
+			<div class="sheet-field">
+				<label data-i18n="xp-stored-effective">Stored / Effective XP</label>
+				<div class="sheet-field-row">
+					<input type="number" name="attr_xp_stored" class="sheet-ability" data-i18n-placeholder="xp-stored"
+						placeholder="Stored" title="Stored XP (available to use)">
+					<span class="sheet-label-span">/</span>
+					<input type="number" name="attr_xp_effective" class="sheet-ability"
+						data-i18n-placeholder="xp-effective" placeholder="Effective" title="Effective XP">
+				</div>
+			</div>
+			<div class="sheet-field">
+				<label data-i18n="last-resorts">Last Resorts</label>
+				<div class="sheet-field-row">
+					<input type="number" name="attr_lastresorts" class="sheet-ability" value="1">
+					<span class="sheet-label-span">/</span>
+					<input type="number" name="attr_lastresortsmax" class="sheet-ability" value="1">
+				</div>
+			</div>
+		</div>
+
+
+
+		<div class="sheet-fullwidth">
+		</div>
+
+		<p></p>
+		<input type="radio" name="attr_tab" class="sheet-tab sheet-tab1" value="1" title="Core" checked="checked" />
+		<span class="sheet-tab sheet-tab1">Core</span>
+		<input type="radio" name="attr_tab" class="sheet-tab sheet-tab2" value="2" title="Skills" />
+		<span class="sheet-tab sheet-tab2">Skills</span>
+		<input type="radio" name="attr_tab" class="sheet-tab sheet-tab3" value="3" title="Psionics" />
+		<span class="sheet-tab sheet-tab3">Psionics</span>
+		<input type="radio" name="attr_tab" class="sheet-tab sheet-tab4" value="4" title="Cyber/Mutations" />
+		<span class="sheet-tab sheet-tab4">Cyber/Mut</span>
+		<input type="radio" name="attr_tab" class="sheet-tab sheet-tab5" value="5" title="Wealth/Equipment" />
+		<span class="sheet-tab sheet-tab5">Wealth/Equip</span>
+		<input type="radio" name="attr_tab" class="sheet-tab sheet-tab6" value="6" title="Custom Skills" />
+		<span class="sheet-tab sheet-tab6">Custom Skills</span>
+		<input type="radio" name="attr_tab" class="sheet-tab sheet-tab7" value="7" title="Options" />
+		<span class="sheet-tab sheet-tab7" data-i18n="options">Options</span>
+		<p></p>
+

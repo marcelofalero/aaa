@@ -4,16 +4,8 @@ weight = 3
 toc = true
 +++
 
-## Light-Duty Armor
+## Tactical Armor Database
 
-{{< json-table "armor" "light" >}}
-
-## Combat Armor
-
-{{< json-table "armor" "combat" >}}
-
-## Powered Armor
-
-{{< json-table "armor" "powered" >}}
+{{< json-table "armor" "all" "PL 7" >}}
 
 *K=thousand*

@@ -1,7 +1,7 @@
 +++
 title = "Cibernética"
 description = "Reglas y aumentos para la combinación de carne y máquina."
-weight = 6
+weight = 5
 +++
 
 # Cibernética

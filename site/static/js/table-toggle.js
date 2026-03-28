@@ -7,11 +7,46 @@
     if (!table) return;
 
     const filterInput = wrapper.querySelector('.table-filter-input');
-    const rows = table.querySelectorAll('.data-row');
     const separators = table.querySelectorAll('.table-separator');
+
+    // Accordion Toggle logic
+    const setGroupState = (sep, isExpanded) => {
+      const chevron = sep.querySelector('.chevron');
+      sep.setAttribute('data-expanded', isExpanded ? 'true' : 'false');
+      if (chevron) chevron.textContent = isExpanded ? '▼' : '▶';
+
+      let next = sep.nextElementSibling;
+      while (next && !next.classList.contains('table-separator')) {
+        if (!isExpanded) {
+          next.style.display = 'none';
+          if (next.classList.contains('data-row')) next.classList.remove('active-row');
+          if (next.classList.contains('description-row')) next.style.display = 'none';
+        } else {
+          if (next.classList.contains('data-row')) {
+            next.style.display = 'table-row';
+          }
+        }
+        next = next.nextElementSibling;
+      }
+    };
+
+    // Initial State based on data-expanded
+    separators.forEach(sep => {
+      const isExpanded = sep.getAttribute('data-expanded') === 'true';
+      setGroupState(sep, isExpanded);
+    });
 
     // Click handling
     table.addEventListener('click', function (e) {
+      // 1. Accordion Toggle
+      const sep = e.target.closest('.accordion-toggle');
+      if (sep) {
+        const isExpanded = sep.getAttribute('data-expanded') === 'true';
+        setGroupState(sep, !isExpanded);
+        return;
+      }
+
+      // 2. Data Row Description Toggle
       const row = e.target.closest('.data-row');
       if (e.target.tagName === 'A' || !row) return;
 
@@ -21,6 +56,7 @@
       if (targetRow) {
         const isVisible = targetRow.style.display === 'table-row';
 
+        // Collapse all descriptions in this table
         const allDescRows = table.querySelectorAll('.description-row');
         allDescRows.forEach(r => r.style.display = 'none');
 
@@ -38,6 +74,18 @@
     if (filterInput) {
       filterInput.addEventListener('input', function () {
         const query = this.value.toLowerCase().trim();
+        const rows = table.querySelectorAll('.data-row');
+
+        if (query === '') {
+          // Restore accordion state
+          separators.forEach(sep => {
+            const isExpanded = sep.getAttribute('data-expanded') === 'true';
+            setGroupState(sep, isExpanded);
+            sep.style.display = 'table-row';
+          });
+          return;
+        }
+
         rows.forEach(row => {
           const text = row.textContent.toLowerCase();
           const targetId = row.getAttribute('data-target');
@@ -63,6 +111,11 @@
             next = next.nextElementSibling;
           }
           sep.style.display = hasVisible ? 'table-row' : 'none';
+          // Temporarily show matches regardless of accordion state during filter
+          if (hasVisible) {
+            const chevron = sep.querySelector('.chevron');
+            if (chevron) chevron.textContent = '▼';
+          }
         });
       });
     }
