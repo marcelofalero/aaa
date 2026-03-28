@@ -1,0 +1,124 @@
+{
+  "hardware": {
+    "columns": [
+      {
+        "name": "Item",
+        "key": "name"
+      },
+      {
+        "name": "Quality",
+        "key": "quality"
+      },
+      {
+        "name": "Slots",
+        "key": "slots"
+      },
+      {
+        "name": "Cost ($)",
+        "key": "cost"
+      },
+      {
+        "name": "Description",
+        "key": "description",
+        "hidden": true
+      }
+    ],
+    "groups": [
+      {
+        "name": "Expansion",
+        "items": [
+          {
+            "name": "Al Board",
+            "pl": "7",
+            "mass": "Mass (kg): 100 g",
+            "cost": "Cost ($ or #): (A) $15,000; (B) $3,500; (C) 4,000+",
+            "avail": "Availability: Restricted",
+            "description": "The 'Al board' is a computer card that allows a mainframe of Good or better quality to support true artificial intelligence. It requires separate purchase."
+          },
+          {
+            "name": "Al Emulator Program",
+            "pl": "7",
+            "mass": "Mass (kg): 2 kg",
+            "cost": "Cost ($ or #): 4 slots of active memory",
+            "avail": "Availability: Restricted",
+            "description": "El emulador Al es una interfaz de usuario fácil de usar que depende de una biblioteca de respuestas programadas para simular un carácter y alma separados."
+          },
+          {
+            "name": "Memory Harness",
+            "pl": "7",
+            "mass": "Mass (kg): 2 kg",
+            "cost": "Cost ($ or #): +3 steps for a Marginal (¥4,000) harness, +2 for an Ordinary (¥5,000) harness, +1 for a Good (%6,000), and no penalty for an Amazing (¥8,000) harness",
+            "avail": "Availability: Restricted",
+            "description": "A portable computer system equivalent to a computer gauntlet of similar quality. It is equipped with special fuzzy-logic banks."
+          },
+          {
+            "name": "Mainframe",
+            "pl": "7",
+            "mass": "Mass (kg): 6 kg; 500 g",
+            "cost": "Cost ($ or #): #1,500+ (see helow)",
+            "avail": "Availability: Controlled",
+            "description": "A powerful computer capable of handling almost any business task. It includes an integrated high-definition video screen and a 3D drive."
+          },
+          {
+            "name": "Microcomputer",
+            "pl": "7",
+            "mass": "Mass (kg): 2 kg",
+            "cost": "Cost ($ or #): %4,500 9 slots; %3000 12 slots; %14,000 15 slots; $20,000 unlimited",
+            "avail": "Availability: Controlled",
+            "description": "The businessman's traveling computer. It is smaller, lighter and more powerful than laptops."
+          },
+          {
+            "name": "Personal Computer (L-R): Data Slate, Desktop, Gauntlet",
+            "pl": "7",
+            "mass": "Mass (kg): 300 g; 3 kg; 2 kg",
+            "cost": "Cost ($ or #): $84,500; %3000 12 slots; %14,000 15 slots; $20,000 unlimited",
+            "avail": "Availability: Controlled",
+            "description": {
+              "en": "These are different types of personal computers with variable prices and strengths."
+            }
+          },
+          {
+            "name": "Quality Microcomp Gauntlet Active Memory",
+            "pl": 7,
+            "mass": "Mass (kg): A) 300 g; (B) 3 kg; (C) 2 kg",
+            "cost": "Cost ($ or #): Marginal ~ #1,500 $2,000 3 slots, Ordinary %2,500 $3,000 5 slots, Good %3500 %4000 7 slots, Amazing ¥4,500 %5000 9 slots",
+            "avail": "Availability: Controlled",
+            "description": "The Quality MicroComp Gauntlet Active Memory is a high-performance and high-capacity storage device. It's designed to offer unparalleled speed, reliability, and capacity that rivals the best microcomputers in existence.\n\nFeatures:\n1. Microprocessor: A high-level Intel Xeon E5 V3.<｜begin▁of▁sentence｜>0 CPU delivers exceptional power efficiency and performance.\n2. Memory Chip: The use of a state-of-the-art, ultra-high capacity memory chip ensures unrivaled storage speed and data retrieval times.\n3. Interface: This device has a USB 3.0 interface for easy connectivity to any system that can support it.\n\nMechanics:\n1. Energy Efficiency: With its powerful CPU and advanced storage technology, this item is one of the most energy-efficient tools at your disposal.\n2. Speed & Performance: The device packs a punch with unrivaled speed and performance levels, ensuring quick data processing times.\n\nFlavor:\nThis memory solution boasts an elegant design that elegantly integrates into any system, yet is built to perform like a top-tier microcomputer.\n\nStats:\n1. Speed: Excellent\n2. Capacity: Excellent\n3. Efficiency: Outstanding"
+          },
+          {
+            "name": "Gridcaster Gauntlet",
+            "pl": "7",
+            "mass": "(A) 35 cm X 12 cm X 10 cm (approx.) or (B) 20 cm diameter X 15 cm tall or (C)10cm X Scm X 2 cm. Mass: (A, B) 2 kg; (C) 500 g.",
+            "cost": "Marginal $1,500 - 4 slots, Ordinary $2,550 - 7 slots, Good $4,500 - 10 slots, Amazing $6,500 - 12 slots",
+            "avail": "Available for purchase.",
+            "description": "The Gridcaster Gauntlet is a powerful computer gauntlet with a special neural interface designed to mate with the wearer’s cytronic circuitry. It provides a -1, -2, or -3 step bonus to Computer Science skill checks."
+          },
+          {
+            "name": "Cyberware",
+            "pl": "7",
+            "mass": "Varies",
+            "cost": "See below",
+            "avail": "Controlled",
+            "description": "Cyberware, also known as cybernetics, is the application of technology to enhance human capabilities. It consists of a wide range of devices and systems that can be installed in the body or mind of a person."
+          },
+          {
+            "name": "Cortex Bomb",
+            "pl": "7",
+            "mass": "100 g",
+            "cost": "#3,500",
+            "avail": "Controlled",
+            "description": "The cortex bomb is one of the most brutal means available to ensure compliance. It's a small radio-activated or timed explosive charge, implanted in the subject’s skull. If detonated, it kills the victim in an unforgiving manner. Radio detonators must be within 200 meters for effective operation; cluttering terrain or interior walls may affect this proximity."
+          },
+          {
+            "name": "Comm Port",
+            "pl": "7",
+            "mass": "Mass not provided",
+            "cost": "Cost not provided",
+            "avail": "Availability not provided",
+            "description": "A device to communicate signals, transmit and receive video streams (if equipped with an Optical System), or data. Using the common port for a radio conversation increases one's penalty in actions due to distraction."
+          }
+        ]
+      }
+    ]
+  }
+}
