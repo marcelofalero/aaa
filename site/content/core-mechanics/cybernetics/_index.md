@@ -1,6 +1,6 @@
 +++
 title = "Cybernetics"
-description = "Rules and enhancements for blending flesh and machine."
+description = "How to go Beep"
 weight = 5
 +++
 
