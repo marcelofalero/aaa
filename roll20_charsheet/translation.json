@@ -90,5 +90,8 @@
     "light-mode": "Light Mode (Reader Friendly)",
     "note": "Note",
     "light-mode-desc": "Light mode is designed to reduce eye strain in well-lit environments, mimicking the aesthetic of the original Alternity manuals.",
-    "psionic-energy": "Psionic Energy"
+    "psionic-energy": "Psionic Energy",
+    "font-size": "Font Scale",
+    "default-font": "Standard (Compact)",
+    "bigger-font": "Enlarged (Accessible)"
 }

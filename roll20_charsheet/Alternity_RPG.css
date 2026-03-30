@@ -550,7 +550,6 @@ input {
 }
 
 /* Combat modification selects (Base Die, Acc, SIT) */
-select[name^="attr_formunarmed"],
 select[name^="attr_formmelee"],
 select[name^="attr_formranged"] {
     width: 3.5em !important;
@@ -649,6 +648,7 @@ fieldset.sheet-section-skills {
     margin: 0 !important;
     box-sizing: border-box !important;
     background-color: var(--color-row-even);
+    border: none;
     border-bottom: 1px solid var(--color-border);
     font-size: 0.8em;
     font-weight: bold;
@@ -658,6 +658,12 @@ fieldset.sheet-section-skills {
     position: relative;
     z-index: 5;
     align-items: center;
+    text-align: left;
+    height: auto;
+    font-family: inherit;
+    box-shadow: none;
+    text-shadow: none;
+    appearance: none;
 }
 
 .sheet-skill-header-row:hover {
@@ -735,21 +741,6 @@ fieldset.sheet-section-skills {
 
 .sheet-skill-score-cell input {
     margin: 0 !important;
-}
-
-/* Collapsible Skills */
-.sheet-collapse-check {
-    display: none;
-}
-
-.sheet-collapse-check:not(:checked)~.sheet-specialties-container {
-    display: none;
-}
-
-/* Ensure the broad skill row and header remain visible */
-.sheet-skill-header-row,
-.sheet-skill-row:not(.sheet-spec) {
-    display: grid;
 }
 
 .sheet-specialties-container {

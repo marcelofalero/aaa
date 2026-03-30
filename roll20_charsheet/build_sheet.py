@@ -74,6 +74,7 @@ def generate_skills_html(data_list, indent_level=3):
     all_broad_skills.sort(key=lambda x: x["n"])
     
     output_html = []
+    skill_ids = []
     indent = "\t" * indent_level
 
     for skill in all_broad_skills:
@@ -82,7 +83,6 @@ def generate_skills_html(data_list, indent_level=3):
         is_untrained = skill["u"]
         attr_full = ABILITY_MAP[attr_short]
         id_name = clean_id(name)
-        collapse_id = f"collapse_{id_name}"
         
         # Base URL for the broad skill
         url = f"https://aaa.dimble.net/skills/{name.lower().replace(' ', '-')}"
@@ -98,14 +98,13 @@ def generate_skills_html(data_list, indent_level=3):
         else:
             formula = f"(floor(@{{{attr_full}}}/(2-@{{{id_name}}})))"
             
-        # Broad Skill Row
+        # Broad Skill Row (Simplified, removed collapse/expand)
         h = f'{indent}<div class="sheet-skill-group-box">\n'
-        h += f'{indent}\t<input type="checkbox" id="{collapse_id}" name="attr_{id_name}" class="sheet-collapse-check" value="1" />\n'
-        h += f'{indent}\t<label class="sheet-skill-header-row" for="{collapse_id}">\n'
+        h += f'{indent}\t<div class="sheet-skill-header-row">\n'
         h += f'{indent}\t\t<div></div><div class="sheet-skill-name">{name.upper()}</div><div></div>\n'
         h += f'{indent}\t\t<div class="sheet-skill-ability-label">RANKS</div>\n'
         h += f'{indent}\t\t<div class="sheet-skill-ability-label">SCORE</div>\n'
-        h += f'{indent}\t</label>\n'
+        h += f'{indent}\t</div>\n'
         h += f'{indent}\t<div class="sheet-skill-row">\n'
         h += f'{indent}\t\t<button type="roll" name="roll_{id_name}" value="&{{template:default}} {{{{name= @{{character_name}} - {name}}}}} {roll_scores} {roll_results} {wiki_link}"></button>\n'
         h += f'{indent}\t\t<div class="sheet-skill-name">{name} <button type="roll" name="roll_{id_name}_link" class="sheet-skill-link" value="[{name} Wiki]({url})">&#x2197;</button></div>\n'
@@ -133,7 +132,7 @@ def generate_skills_html(data_list, indent_level=3):
             spec_wiki_link = f"{{{{wiki= [↗ Wiki Documentation]({spec_url})}}}}"
 
             if spec_untrained == "NO":
-                spec_formula = f"(floor(((@{{{spec_id}Rank}}+@{{{spec_attr_full}}})*@{{{id_name}}}) * (@{{{spec_id}Rank}}/(@{{{spec_id}Rank}}+0.001))))"
+                spec_formula = f"(floor(((@{{{spec_id}Rank}}+@{{{spec_attr_full}}})*@{{{id_name}}}) * (@{{{spec_id}Rank}}/(@{{{spec_id}Rank}}+0.001)) + 0.5))"
                 trained_only_class = " sheet-trained-only"
             else:
                 spec_formula = f"(floor(((@{{{spec_id}Rank}}*@{{{id_name}}})+@{{{spec_attr_full}}})/(2-@{{{id_name}}})))"
@@ -153,8 +152,9 @@ def generate_skills_html(data_list, indent_level=3):
         h += f'{indent}\t</div>\n'
         h += f'{indent}</div>\n'
         output_html.append(h)
+        skill_ids.append(id_name)
 
-    return "".join(output_html)
+    return "".join(output_html), skill_ids
 
 def build():
     src_dir = 'src/tabs'
@@ -175,6 +175,7 @@ def build():
     ]
     
     final_html = []
+    all_skill_ids = []
     
     for filename in files:
         path = os.path.join(src_dir, filename)
@@ -187,17 +188,21 @@ def build():
             
         # Handle dynamic content
         if filename == 'skills.html':
-            skills_html = generate_skills_html(SKILLS_DATA, indent_level=3)
+            skills_html, skill_ids = generate_skills_html(SKILLS_DATA, indent_level=3)
             content = content.replace('<!-- SKILLS_PLACEHOLDER -->', skills_html)
+            all_skill_ids.extend(skill_ids)
         elif filename == 'psionics.html':
-            psionics_html = generate_skills_html(PSIONICS_DATA, indent_level=3)
+            psionics_html, skill_ids = generate_skills_html(PSIONICS_DATA, indent_level=3)
             content = content.replace('<!-- PSIONICS_PLACEHOLDER -->', psionics_html)
+            all_skill_ids.extend(skill_ids)
             
         final_html.append(content)
         
+    combined_html = "".join(final_html)
+    
     # Write to final file
     with open(output_file, 'w', encoding='utf-8') as f:
-        f.write("".join(final_html))
+        f.write(combined_html)
         
     print(f"Successfully built {output_file} from modular source files.")
 

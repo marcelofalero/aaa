@@ -419,179 +419,7 @@ on("change:actioncheck", function() {
 			<!-- Fixed Unarmed attack header -->
 
 
-			<!-- UNARMED -->
-			<div class="sheet-attackform-container">
-				<div class="sheet-attackform-row">
-					<button type="roll" name="roll_weapon_unarmed"
-						value="&{template:default} {{name= @{character_name} - @{formunarmed}}} {{score= [[@{formunarmedscore}]]/[[@{formunarmedscoregood}]]/[[@{formunarmedscoreamazing}]]}} {{type= @{formunarmedtype}}} {{range= @{formunarmedrange}}} {{damage= [[@{formunarmeddamageordinary}]]@{formunarmeddamageordinarytype}/[[@{formunarmeddamagegood}]]@{formunarmeddamagegoodtype}/[[@{formunarmeddamageamazing}]]@{formunarmeddamageamazingtype}}} {{results= [[1d20cs<1cf>20 + (@{formunarmed_step_die})]]}}"></button>
 
-					<div class="sheet-attackform-field" style="flex: 6; min-width: 200px;">
-						<div class="sheet-attackform-label" data-i18n="attack-form-name">Attack Form Name</div>
-						<input type="text" name="attr_formunarmed" disabled="true" value="Unarmed"
-							style="width: 100% !important;">
-					</div>
-
-					<div class="sheet-attackform-field" style="flex: 1; min-width: 60px;">
-						<div class="sheet-attackform-label" data-i18n="type">Type</div>
-						<input type="text" name="attr_formunarmedtype" value="LI/O" disabled="true"
-							style="width: 100% !important;">
-					</div>
-
-					<div class="sheet-attackform-field" style="flex: 2; min-width: 100px;">
-						<div class="sheet-attackform-label" data-i18n="range-sml">Range (S/M/L)</div>
-						<input type="text" name="attr_formunarmedrange" disabled="true" value="Personal"
-							style="width: 100% !important;">
-					</div>
-
-					<div class="sheet-attackform-field" style="flex: 10; min-width: 300px;">
-						<div class="sheet-attackform-label" data-i18n="notes">Notes</div>
-						<input type="text" name="attr_formunarmednotes" data-i18n-placeholder="notes-placeholder" placeholder="Notes"
-							style="width: 100% !important;">
-					</div>
-				</div>
-
-				<div class="sheet-attackform-row" style="padding-left: 34px;">
-					<div class="sheet-attackform-field">
-						<div class="sheet-attackform-label" data-i18n="score-oga">Score (O/G/A)</div>
-						<div class="sheet-triplet sheet-score-triplet">
-							<input type="number" name="attr_formunarmedscore" value="0">
-							<span>/</span>
-							<input type="text" name="attr_formunarmedscoregood" disabled="true"
-								value="(floor(@{formunarmedscore}/2))">
-							<span>/</span>
-							<input type="text" name="attr_formunarmedscoreamazing" disabled="true"
-								value="(floor(@{formunarmedscore}/4))">
-						</div>
-					</div>
-
-					<div class="sheet-attackform-field">
-						<div class="sheet-attackform-label" data-i18n="base-die">Base Die</div>
-						<select name="attr_formunarmeddie" style="width: 6em !important;">
-							<option value="-15">-15</option>
-							<option value="-14">-14</option>
-							<option value="-13">-13</option>
-							<option value="-12">-12</option>
-							<option value="-11">-11</option>
-							<option value="-10">-10</option>
-							<option value="-9">-9</option>
-							<option value="-8">-8</option>
-							<option value="-7">-7</option>
-							<option value="-6">-6</option>
-							<option value="-5">-5</option>
-							<option value="-4">-4</option>
-							<option value="-3">-3</option>
-							<option value="-2">-2</option>
-							<option value="-1">-1</option>
-							<option value="0">0</option>
-							<option value="1" selected>1</option>
-							<option value="2">2</option>
-							<option value="3">3</option>
-							<option value="4">4</option>
-							<option value="5">5</option>
-							<option value="6">6</option>
-							<option value="7">7</option>
-							<option value="8">8</option>
-							<option value="9">9</option>
-							<option value="10">10</option>
-							<option value="11">11</option>
-							<option value="12">12</option>
-							<option value="13">13</option>
-							<option value="14">14</option>
-							<option value="15">15</option>
-						</select>
-					</div>
-
-					<div class="sheet-attackform-field">
-						<div class="sheet-attackform-label" data-i18n="acc">Acc</div>
-						<select name="attr_formunarmedaccuracy" style="width: 6em !important;">
-							<option value="-15">-15</option>
-							<option value="-14">-14</option>
-							<option value="-13">-13</option>
-							<option value="-12">-12</option>
-							<option value="-11">-11</option>
-							<option value="-10">-10</option>
-							<option value="-9">-9</option>
-							<option value="-8">-8</option>
-							<option value="-7">-7</option>
-							<option value="-6">-6</option>
-							<option value="-5">-5</option>
-							<option value="-4">-4</option>
-							<option value="-3">-3</option>
-							<option value="-2">-2</option>
-							<option value="-1">-1</option>
-							<option value="0" selected>0</option>
-							<option value="1">1</option>
-							<option value="2">2</option>
-							<option value="3">3</option>
-							<option value="4">4</option>
-							<option value="5">5</option>
-							<option value="6">6</option>
-							<option value="7">7</option>
-							<option value="8">8</option>
-							<option value="9">9</option>
-							<option value="10">10</option>
-							<option value="11">11</option>
-							<option value="12">12</option>
-							<option value="13">13</option>
-							<option value="14">14</option>
-							<option value="15">15</option>
-						</select>
-					</div>
-
-					<div class="sheet-attackform-field">
-						<div class="sheet-attackform-label" data-i18n="sit">Situation</div>
-						<select name="attr_formunarmedsit" style="width: 4.5em !important;">
-							<option value="-15">-15</option>
-							<option value="-14">-14</option>
-							<option value="-13">-13</option>
-							<option value="-12">-12</option>
-							<option value="-11">-11</option>
-							<option value="-10">-10</option>
-							<option value="-9">-9</option>
-							<option value="-8">-8</option>
-							<option value="-7">-7</option>
-							<option value="-6">-6</option>
-							<option value="-5">-5</option>
-							<option value="-4">-4</option>
-							<option value="-3">-3</option>
-							<option value="-2">-2</option>
-							<option value="-1">-1</option>
-							<option value="0" selected>0</option>
-							<option value="1">1</option>
-							<option value="2">2</option>
-							<option value="3">3</option>
-							<option value="4">4</option>
-							<option value="5">5</option>
-							<option value="6">6</option>
-							<option value="7">7</option>
-							<option value="8">8</option>
-							<option value="9">9</option>
-							<option value="10">10</option>
-							<option value="11">11</option>
-							<option value="12">12</option>
-							<option value="13">13</option>
-							<option value="14">14</option>
-							<option value="15">15</option>
-						</select>
-					</div>
-
-
-
-					<div class="sheet-attackform-field">
-						<div class="sheet-attackform-label" data-i18n="damage-oga">Damage (O / G / A)</div>
-						<div class="sheet-triplet sheet-damage-triplet">
-							<input type="text" name="attr_formunarmeddamageordinary" value="d4">
-							<input type="text" name="attr_formunarmeddamageordinarytype" value="s">
-							<span>/</span>
-							<input type="text" name="attr_formunarmeddamagegood" value="d4+1">
-							<input type="text" name="attr_formunarmeddamagegoodtype" value="s">
-							<span>/</span>
-							<input type="text" name="attr_formunarmeddamageamazing" value="d4+2">
-							<input type="text" name="attr_formunarmeddamageamazingtype" value="s">
-						</div>
-					</div>
-				</div>
-			</div>
 
 			<!-- ATTACK FORMS (repeating — one row per attack form) -->
 			<fieldset class="repeating_attackforms">
@@ -861,12 +689,11 @@ on("change:actioncheck", function() {
 		<div class="sheet-section-skills">
 			<div class="sheet-skills-grid-wrapper">
 							<div class="sheet-skill-group-box">
-				<input type="checkbox" id="collapse_Acrobatics" name="attr_Acrobatics" class="sheet-collapse-check" value="1" />
-				<label class="sheet-skill-header-row" for="collapse_Acrobatics">
+				<div class="sheet-skill-header-row">
 					<div></div><div class="sheet-skill-name">ACROBATICS</div><div></div>
 					<div class="sheet-skill-ability-label">RANKS</div>
 					<div class="sheet-skill-ability-label">SCORE</div>
-				</label>
+				</div>
 				<div class="sheet-skill-row">
 					<button type="roll" name="roll_Acrobatics" value="&{template:default} {{name= @{character_name} - Acrobatics}} {{score= [[@{AcrobaticsO}]]/[[@{AcrobaticsG}]]/[[@{AcrobaticsA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/acrobatics)}}"></button>
 					<div class="sheet-skill-name">Acrobatics <button type="roll" name="roll_Acrobatics_link" class="sheet-skill-link" value="[Acrobatics Wiki](https://aaa.dimble.net/skills/acrobatics)">&#x2197;</button></div>
@@ -918,7 +745,7 @@ on("change:actioncheck", function() {
 						<div class="sheet-skill-ability-label">DEX</div>
 						<input type="number" name="attr_ZerogTrainingRank" class="sheet-score" value="0">
 						<div class="sheet-skill-score-cell">
-							<input type="text" name="attr_ZerogTrainingO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{ZerogTrainingRank}+@{Dexterity})*@{Acrobatics}) * (@{ZerogTrainingRank}/(@{ZerogTrainingRank}+0.001))))">/
+							<input type="text" name="attr_ZerogTrainingO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{ZerogTrainingRank}+@{Dexterity})*@{Acrobatics}) * (@{ZerogTrainingRank}/(@{ZerogTrainingRank}+0.001)) + 0.5))">/
 							<input type="text" name="attr_ZerogTrainingG" class="sheet-scoredisabled" disabled="true" value="(floor(@{ZerogTrainingO}/2))">/
 							<input type="text" name="attr_ZerogTrainingA" class="sheet-scoredisabled" disabled="true" value="(floor(@{ZerogTrainingO}/4))">
 						</div>
@@ -937,12 +764,11 @@ on("change:actioncheck", function() {
 				</div>
 			</div>
 			<div class="sheet-skill-group-box">
-				<input type="checkbox" id="collapse_Administration" name="attr_Administration" class="sheet-collapse-check" value="1" />
-				<label class="sheet-skill-header-row" for="collapse_Administration">
+				<div class="sheet-skill-header-row">
 					<div></div><div class="sheet-skill-name">ADMINISTRATION</div><div></div>
 					<div class="sheet-skill-ability-label">RANKS</div>
 					<div class="sheet-skill-ability-label">SCORE</div>
-				</label>
+				</div>
 				<div class="sheet-skill-row">
 					<button type="roll" name="roll_Administration" value="&{template:default} {{name= @{character_name} - Administration}} {{score= [[@{AdministrationO}]]/[[@{AdministrationG}]]/[[@{AdministrationA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/administration)}}"></button>
 					<div class="sheet-skill-name">Administration <button type="roll" name="roll_Administration_link" class="sheet-skill-link" value="[Administration Wiki](https://aaa.dimble.net/skills/administration)">&#x2197;</button></div>
@@ -980,12 +806,11 @@ on("change:actioncheck", function() {
 				</div>
 			</div>
 			<div class="sheet-skill-group-box">
-				<input type="checkbox" id="collapse_AnimalHandling" name="attr_AnimalHandling" class="sheet-collapse-check" value="1" />
-				<label class="sheet-skill-header-row" for="collapse_AnimalHandling">
+				<div class="sheet-skill-header-row">
 					<div></div><div class="sheet-skill-name">ANIMAL HANDLING</div><div></div>
 					<div class="sheet-skill-ability-label">RANKS</div>
 					<div class="sheet-skill-ability-label">SCORE</div>
-				</label>
+				</div>
 				<div class="sheet-skill-row">
 					<button type="roll" name="roll_AnimalHandling" value="&{template:default} {{name= @{character_name} - Animal Handling}} {{score= [[@{AnimalHandlingO}]]/[[@{AnimalHandlingG}]]/[[@{AnimalHandlingA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/animal-handling)}}"></button>
 					<div class="sheet-skill-name">Animal Handling <button type="roll" name="roll_AnimalHandling_link" class="sheet-skill-link" value="[Animal Handling Wiki](https://aaa.dimble.net/skills/animal-handling)">&#x2197;</button></div>
@@ -1023,12 +848,11 @@ on("change:actioncheck", function() {
 				</div>
 			</div>
 			<div class="sheet-skill-group-box">
-				<input type="checkbox" id="collapse_ArmorOperation" name="attr_ArmorOperation" class="sheet-collapse-check" value="1" />
-				<label class="sheet-skill-header-row" for="collapse_ArmorOperation">
+				<div class="sheet-skill-header-row">
 					<div></div><div class="sheet-skill-name">ARMOR OPERATION</div><div></div>
 					<div class="sheet-skill-ability-label">RANKS</div>
 					<div class="sheet-skill-ability-label">SCORE</div>
-				</label>
+				</div>
 				<div class="sheet-skill-row">
 					<button type="roll" name="roll_ArmorOperation" value="&{template:default} {{name= @{character_name} - Armor Operation}} {{score= [[@{ArmorOperationO}]]/[[@{ArmorOperationG}]]/[[@{ArmorOperationA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/armor-operation)}}"></button>
 					<div class="sheet-skill-name">Armor Operation <button type="roll" name="roll_ArmorOperation_link" class="sheet-skill-link" value="[Armor Operation Wiki](https://aaa.dimble.net/skills/armor-operation)">&#x2197;</button></div>
@@ -1099,12 +923,11 @@ on("change:actioncheck", function() {
 				</div>
 			</div>
 			<div class="sheet-skill-group-box">
-				<input type="checkbox" id="collapse_Athletics" name="attr_Athletics" class="sheet-collapse-check" value="1" />
-				<label class="sheet-skill-header-row" for="collapse_Athletics">
+				<div class="sheet-skill-header-row">
 					<div></div><div class="sheet-skill-name">ATHLETICS</div><div></div>
 					<div class="sheet-skill-ability-label">RANKS</div>
 					<div class="sheet-skill-ability-label">SCORE</div>
-				</label>
+				</div>
 				<div class="sheet-skill-row">
 					<button type="roll" name="roll_Athletics" value="&{template:default} {{name= @{character_name} - Athletics}} {{score= [[@{AthleticsO}]]/[[@{AthleticsG}]]/[[@{AthleticsA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/athletics)}}"></button>
 					<div class="sheet-skill-name">Athletics <button type="roll" name="roll_Athletics_link" class="sheet-skill-link" value="[Athletics Wiki](https://aaa.dimble.net/skills/athletics)">&#x2197;</button></div>
@@ -1164,12 +987,11 @@ on("change:actioncheck", function() {
 				</div>
 			</div>
 			<div class="sheet-skill-group-box">
-				<input type="checkbox" id="collapse_Awareness" name="attr_Awareness" class="sheet-collapse-check" value="1" />
-				<label class="sheet-skill-header-row" for="collapse_Awareness">
+				<div class="sheet-skill-header-row">
 					<div></div><div class="sheet-skill-name">AWARENESS</div><div></div>
 					<div class="sheet-skill-ability-label">RANKS</div>
 					<div class="sheet-skill-ability-label">SCORE</div>
-				</label>
+				</div>
 				<div class="sheet-skill-row">
 					<button type="roll" name="roll_Awareness" value="&{template:default} {{name= @{character_name} - Awareness}} {{score= [[@{AwarenessO}]]/[[@{AwarenessG}]]/[[@{AwarenessA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/awareness)}}"></button>
 					<div class="sheet-skill-name">Awareness <button type="roll" name="roll_Awareness_link" class="sheet-skill-link" value="[Awareness Wiki](https://aaa.dimble.net/skills/awareness)">&#x2197;</button></div>
@@ -1210,7 +1032,7 @@ on("change:actioncheck", function() {
 						<div class="sheet-skill-ability-label">WIL</div>
 						<input type="number" name="attr_PsionicSenseRank" class="sheet-score" value="0">
 						<div class="sheet-skill-score-cell">
-							<input type="text" name="attr_PsionicSenseO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{PsionicSenseRank}+@{Will})*@{Awareness}) * (@{PsionicSenseRank}/(@{PsionicSenseRank}+0.001))))">/
+							<input type="text" name="attr_PsionicSenseO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{PsionicSenseRank}+@{Will})*@{Awareness}) * (@{PsionicSenseRank}/(@{PsionicSenseRank}+0.001)) + 0.5))">/
 							<input type="text" name="attr_PsionicSenseG" class="sheet-scoredisabled" disabled="true" value="(floor(@{PsionicSenseO}/2))">/
 							<input type="text" name="attr_PsionicSenseA" class="sheet-scoredisabled" disabled="true" value="(floor(@{PsionicSenseO}/4))">
 						</div>
@@ -1218,12 +1040,11 @@ on("change:actioncheck", function() {
 				</div>
 			</div>
 			<div class="sheet-skill-group-box">
-				<input type="checkbox" id="collapse_Business" name="attr_Business" class="sheet-collapse-check" value="1" />
-				<label class="sheet-skill-header-row" for="collapse_Business">
+				<div class="sheet-skill-header-row">
 					<div></div><div class="sheet-skill-name">BUSINESS</div><div></div>
 					<div class="sheet-skill-ability-label">RANKS</div>
 					<div class="sheet-skill-ability-label">SCORE</div>
-				</label>
+				</div>
 				<div class="sheet-skill-row">
 					<button type="roll" name="roll_Business" value="&{template:default} {{name= @{character_name} - Business}} {{score= [[@{BusinessO}]]/[[@{BusinessG}]]/[[@{BusinessA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/business)}}"></button>
 					<div class="sheet-skill-name">Business <button type="roll" name="roll_Business_link" class="sheet-skill-link" value="[Business Wiki](https://aaa.dimble.net/skills/business)">&#x2197;</button></div>
@@ -1272,12 +1093,11 @@ on("change:actioncheck", function() {
 				</div>
 			</div>
 			<div class="sheet-skill-group-box">
-				<input type="checkbox" id="collapse_ComputerScience" name="attr_ComputerScience" class="sheet-collapse-check" value="1" />
-				<label class="sheet-skill-header-row" for="collapse_ComputerScience">
+				<div class="sheet-skill-header-row">
 					<div></div><div class="sheet-skill-name">COMPUTER SCIENCE</div><div></div>
 					<div class="sheet-skill-ability-label">RANKS</div>
 					<div class="sheet-skill-ability-label">SCORE</div>
-				</label>
+				</div>
 				<div class="sheet-skill-row">
 					<button type="roll" name="roll_ComputerScience" value="&{template:default} {{name= @{character_name} - Computer Science}} {{score= [[@{ComputerScienceO}]]/[[@{ComputerScienceG}]]/[[@{ComputerScienceA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/computer-science)}}"></button>
 					<div class="sheet-skill-name">Computer Science <button type="roll" name="roll_ComputerScience_link" class="sheet-skill-link" value="[Computer Science Wiki](https://aaa.dimble.net/skills/computer-science)">&#x2197;</button></div>
@@ -1296,7 +1116,7 @@ on("change:actioncheck", function() {
 						<div class="sheet-skill-ability-label">INT</div>
 						<input type="number" name="attr_HackingRank" class="sheet-score" value="0">
 						<div class="sheet-skill-score-cell">
-							<input type="text" name="attr_HackingO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{HackingRank}+@{Intelligence})*@{ComputerScience}) * (@{HackingRank}/(@{HackingRank}+0.001))))">/
+							<input type="text" name="attr_HackingO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{HackingRank}+@{Intelligence})*@{ComputerScience}) * (@{HackingRank}/(@{HackingRank}+0.001)) + 0.5))">/
 							<input type="text" name="attr_HackingG" class="sheet-scoredisabled" disabled="true" value="(floor(@{HackingO}/2))">/
 							<input type="text" name="attr_HackingA" class="sheet-scoredisabled" disabled="true" value="(floor(@{HackingO}/4))">
 						</div>
@@ -1326,12 +1146,11 @@ on("change:actioncheck", function() {
 				</div>
 			</div>
 			<div class="sheet-skill-group-box">
-				<input type="checkbox" id="collapse_CovertOps" name="attr_CovertOps" class="sheet-collapse-check" value="1" />
-				<label class="sheet-skill-header-row" for="collapse_CovertOps">
+				<div class="sheet-skill-header-row">
 					<div></div><div class="sheet-skill-name">COVERT OPS</div><div></div>
 					<div class="sheet-skill-ability-label">RANKS</div>
 					<div class="sheet-skill-ability-label">SCORE</div>
-				</label>
+				</div>
 				<div class="sheet-skill-row">
 					<button type="roll" name="roll_CovertOps" value="&{template:default} {{name= @{character_name} - Covert Ops}} {{score= [[@{CovertOpsO}]]/[[@{CovertOpsG}]]/[[@{CovertOpsA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/covert-ops)}}"></button>
 					<div class="sheet-skill-name">Covert Ops <button type="roll" name="roll_CovertOps_link" class="sheet-skill-link" value="[Covert Ops Wiki](https://aaa.dimble.net/skills/covert-ops)">&#x2197;</button></div>
@@ -1372,7 +1191,7 @@ on("change:actioncheck", function() {
 						<div class="sheet-skill-ability-label">DEX</div>
 						<input type="number" name="attr_PickpocketRank" class="sheet-score" value="0">
 						<div class="sheet-skill-score-cell">
-							<input type="text" name="attr_PickpocketO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{PickpocketRank}+@{Dexterity})*@{CovertOps}) * (@{PickpocketRank}/(@{PickpocketRank}+0.001))))">/
+							<input type="text" name="attr_PickpocketO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{PickpocketRank}+@{Dexterity})*@{CovertOps}) * (@{PickpocketRank}/(@{PickpocketRank}+0.001)) + 0.5))">/
 							<input type="text" name="attr_PickpocketG" class="sheet-scoredisabled" disabled="true" value="(floor(@{PickpocketO}/2))">/
 							<input type="text" name="attr_PickpocketA" class="sheet-scoredisabled" disabled="true" value="(floor(@{PickpocketO}/4))">
 						</div>
@@ -1391,12 +1210,11 @@ on("change:actioncheck", function() {
 				</div>
 			</div>
 			<div class="sheet-skill-group-box">
-				<input type="checkbox" id="collapse_Culture" name="attr_Culture" class="sheet-collapse-check" value="1" />
-				<label class="sheet-skill-header-row" for="collapse_Culture">
+				<div class="sheet-skill-header-row">
 					<div></div><div class="sheet-skill-name">CULTURE</div><div></div>
 					<div class="sheet-skill-ability-label">RANKS</div>
 					<div class="sheet-skill-ability-label">SCORE</div>
-				</label>
+				</div>
 				<div class="sheet-skill-row">
 					<button type="roll" name="roll_Culture" value="&{template:default} {{name= @{character_name} - Culture}} {{score= [[@{CultureO}]]/[[@{CultureG}]]/[[@{CultureA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/culture)}}"></button>
 					<div class="sheet-skill-name">Culture <button type="roll" name="roll_Culture_link" class="sheet-skill-link" value="[Culture Wiki](https://aaa.dimble.net/skills/culture)">&#x2197;</button></div>
@@ -1426,7 +1244,7 @@ on("change:actioncheck", function() {
 						<div class="sheet-skill-ability-label">PER</div>
 						<input type="number" name="attr_EtiquetteRank" class="sheet-score" value="0">
 						<div class="sheet-skill-score-cell">
-							<input type="text" name="attr_EtiquetteO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{EtiquetteRank}+@{Personality})*@{Culture}) * (@{EtiquetteRank}/(@{EtiquetteRank}+0.001))))">/
+							<input type="text" name="attr_EtiquetteO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{EtiquetteRank}+@{Personality})*@{Culture}) * (@{EtiquetteRank}/(@{EtiquetteRank}+0.001)) + 0.5))">/
 							<input type="text" name="attr_EtiquetteG" class="sheet-scoredisabled" disabled="true" value="(floor(@{EtiquetteO}/2))">/
 							<input type="text" name="attr_EtiquetteA" class="sheet-scoredisabled" disabled="true" value="(floor(@{EtiquetteO}/4))">
 						</div>
@@ -1437,7 +1255,7 @@ on("change:actioncheck", function() {
 						<div class="sheet-skill-ability-label">PER</div>
 						<input type="number" name="attr_FirstEncounterRank" class="sheet-score" value="0">
 						<div class="sheet-skill-score-cell">
-							<input type="text" name="attr_FirstEncounterO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{FirstEncounterRank}+@{Personality})*@{Culture}) * (@{FirstEncounterRank}/(@{FirstEncounterRank}+0.001))))">/
+							<input type="text" name="attr_FirstEncounterO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{FirstEncounterRank}+@{Personality})*@{Culture}) * (@{FirstEncounterRank}/(@{FirstEncounterRank}+0.001)) + 0.5))">/
 							<input type="text" name="attr_FirstEncounterG" class="sheet-scoredisabled" disabled="true" value="(floor(@{FirstEncounterO}/2))">/
 							<input type="text" name="attr_FirstEncounterA" class="sheet-scoredisabled" disabled="true" value="(floor(@{FirstEncounterO}/4))">
 						</div>
@@ -1445,12 +1263,11 @@ on("change:actioncheck", function() {
 				</div>
 			</div>
 			<div class="sheet-skill-group-box">
-				<input type="checkbox" id="collapse_Deception" name="attr_Deception" class="sheet-collapse-check" value="1" />
-				<label class="sheet-skill-header-row" for="collapse_Deception">
+				<div class="sheet-skill-header-row">
 					<div></div><div class="sheet-skill-name">DECEPTION</div><div></div>
 					<div class="sheet-skill-ability-label">RANKS</div>
 					<div class="sheet-skill-ability-label">SCORE</div>
-				</label>
+				</div>
 				<div class="sheet-skill-row">
 					<button type="roll" name="roll_Deception" value="&{template:default} {{name= @{character_name} - Deception}} {{score= [[@{DeceptionO}]]/[[@{DeceptionG}]]/[[@{DeceptionA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/deception)}}"></button>
 					<div class="sheet-skill-name">Deception <button type="roll" name="roll_Deception_link" class="sheet-skill-link" value="[Deception Wiki](https://aaa.dimble.net/skills/deception)">&#x2197;</button></div>
@@ -1499,12 +1316,11 @@ on("change:actioncheck", function() {
 				</div>
 			</div>
 			<div class="sheet-skill-group-box">
-				<input type="checkbox" id="collapse_Demolitions" name="attr_Demolitions" class="sheet-collapse-check" value="1" />
-				<label class="sheet-skill-header-row" for="collapse_Demolitions">
+				<div class="sheet-skill-header-row">
 					<div></div><div class="sheet-skill-name">DEMOLITIONS</div><div></div>
 					<div class="sheet-skill-ability-label">RANKS</div>
 					<div class="sheet-skill-ability-label">SCORE</div>
-				</label>
+				</div>
 				<div class="sheet-skill-row">
 					<button type="roll" name="roll_Demolitions" value="&{template:default} {{name= @{character_name} - Demolitions}} {{score= [[@{DemolitionsO}]]/[[@{DemolitionsG}]]/[[@{DemolitionsA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/demolitions)}}"></button>
 					<div class="sheet-skill-name">Demolitions <button type="roll" name="roll_Demolitions_link" class="sheet-skill-link" value="[Demolitions Wiki](https://aaa.dimble.net/skills/demolitions)">&#x2197;</button></div>
@@ -1545,7 +1361,7 @@ on("change:actioncheck", function() {
 						<div class="sheet-skill-ability-label">INT</div>
 						<input type="number" name="attr_ScratchBuiltExplosivesRank" class="sheet-score" value="0">
 						<div class="sheet-skill-score-cell">
-							<input type="text" name="attr_ScratchBuiltExplosivesO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{ScratchBuiltExplosivesRank}+@{Intelligence})*@{Demolitions}) * (@{ScratchBuiltExplosivesRank}/(@{ScratchBuiltExplosivesRank}+0.001))))">/
+							<input type="text" name="attr_ScratchBuiltExplosivesO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{ScratchBuiltExplosivesRank}+@{Intelligence})*@{Demolitions}) * (@{ScratchBuiltExplosivesRank}/(@{ScratchBuiltExplosivesRank}+0.001)) + 0.5))">/
 							<input type="text" name="attr_ScratchBuiltExplosivesG" class="sheet-scoredisabled" disabled="true" value="(floor(@{ScratchBuiltExplosivesO}/2))">/
 							<input type="text" name="attr_ScratchBuiltExplosivesA" class="sheet-scoredisabled" disabled="true" value="(floor(@{ScratchBuiltExplosivesO}/4))">
 						</div>
@@ -1553,12 +1369,11 @@ on("change:actioncheck", function() {
 				</div>
 			</div>
 			<div class="sheet-skill-group-box">
-				<input type="checkbox" id="collapse_Entertainment" name="attr_Entertainment" class="sheet-collapse-check" value="1" />
-				<label class="sheet-skill-header-row" for="collapse_Entertainment">
+				<div class="sheet-skill-header-row">
 					<div></div><div class="sheet-skill-name">ENTERTAINMENT</div><div></div>
 					<div class="sheet-skill-ability-label">RANKS</div>
 					<div class="sheet-skill-ability-label">SCORE</div>
-				</label>
+				</div>
 				<div class="sheet-skill-row">
 					<button type="roll" name="roll_Entertainment" value="&{template:default} {{name= @{character_name} - Entertainment}} {{score= [[@{EntertainmentO}]]/[[@{EntertainmentG}]]/[[@{EntertainmentA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/entertainment)}}"></button>
 					<div class="sheet-skill-name">Entertainment <button type="roll" name="roll_Entertainment_link" class="sheet-skill-link" value="[Entertainment Wiki](https://aaa.dimble.net/skills/entertainment)">&#x2197;</button></div>
@@ -1599,7 +1414,7 @@ on("change:actioncheck", function() {
 						<div class="sheet-skill-ability-label">PER</div>
 						<input type="number" name="attr_MusicalinstrumentRank" class="sheet-score" value="0">
 						<div class="sheet-skill-score-cell">
-							<input type="text" name="attr_MusicalinstrumentO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{MusicalinstrumentRank}+@{Personality})*@{Entertainment}) * (@{MusicalinstrumentRank}/(@{MusicalinstrumentRank}+0.001))))">/
+							<input type="text" name="attr_MusicalinstrumentO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{MusicalinstrumentRank}+@{Personality})*@{Entertainment}) * (@{MusicalinstrumentRank}/(@{MusicalinstrumentRank}+0.001)) + 0.5))">/
 							<input type="text" name="attr_MusicalinstrumentG" class="sheet-scoredisabled" disabled="true" value="(floor(@{MusicalinstrumentO}/2))">/
 							<input type="text" name="attr_MusicalinstrumentA" class="sheet-scoredisabled" disabled="true" value="(floor(@{MusicalinstrumentO}/4))">
 						</div>
@@ -1607,12 +1422,11 @@ on("change:actioncheck", function() {
 				</div>
 			</div>
 			<div class="sheet-skill-group-box">
-				<input type="checkbox" id="collapse_HeavyWeapons" name="attr_HeavyWeapons" class="sheet-collapse-check" value="1" />
-				<label class="sheet-skill-header-row" for="collapse_HeavyWeapons">
+				<div class="sheet-skill-header-row">
 					<div></div><div class="sheet-skill-name">HEAVY WEAPONS</div><div></div>
 					<div class="sheet-skill-ability-label">RANKS</div>
 					<div class="sheet-skill-ability-label">SCORE</div>
-				</label>
+				</div>
 				<div class="sheet-skill-row">
 					<button type="roll" name="roll_HeavyWeapons" value="&{template:default} {{name= @{character_name} - Heavy Weapons}} {{score= [[@{HeavyWeaponsO}]]/[[@{HeavyWeaponsG}]]/[[@{HeavyWeaponsA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/heavy-weapons)}}"></button>
 					<div class="sheet-skill-name">Heavy Weapons <button type="roll" name="roll_HeavyWeapons_link" class="sheet-skill-link" value="[Heavy Weapons Wiki](https://aaa.dimble.net/skills/heavy-weapons)">&#x2197;</button></div>
@@ -1650,12 +1464,11 @@ on("change:actioncheck", function() {
 				</div>
 			</div>
 			<div class="sheet-skill-group-box">
-				<input type="checkbox" id="collapse_Interaction" name="attr_Interaction" class="sheet-collapse-check" value="1" />
-				<label class="sheet-skill-header-row" for="collapse_Interaction">
+				<div class="sheet-skill-header-row">
 					<div></div><div class="sheet-skill-name">INTERACTION</div><div></div>
 					<div class="sheet-skill-ability-label">RANKS</div>
 					<div class="sheet-skill-ability-label">SCORE</div>
-				</label>
+				</div>
 				<div class="sheet-skill-row">
 					<button type="roll" name="roll_Interaction" value="&{template:default} {{name= @{character_name} - Interaction}} {{score= [[@{InteractionO}]]/[[@{InteractionG}]]/[[@{InteractionA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/interaction)}}"></button>
 					<div class="sheet-skill-name">Interaction <button type="roll" name="roll_Interaction_link" class="sheet-skill-link" value="[Interaction Wiki](https://aaa.dimble.net/skills/interaction)">&#x2197;</button></div>
@@ -1737,12 +1550,11 @@ on("change:actioncheck", function() {
 				</div>
 			</div>
 			<div class="sheet-skill-group-box">
-				<input type="checkbox" id="collapse_Investigate" name="attr_Investigate" class="sheet-collapse-check" value="1" />
-				<label class="sheet-skill-header-row" for="collapse_Investigate">
+				<div class="sheet-skill-header-row">
 					<div></div><div class="sheet-skill-name">INVESTIGATE</div><div></div>
 					<div class="sheet-skill-ability-label">RANKS</div>
 					<div class="sheet-skill-ability-label">SCORE</div>
-				</label>
+				</div>
 				<div class="sheet-skill-row">
 					<button type="roll" name="roll_Investigate" value="&{template:default} {{name= @{character_name} - Investigate}} {{score= [[@{InvestigateO}]]/[[@{InvestigateG}]]/[[@{InvestigateA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/investigate)}}"></button>
 					<div class="sheet-skill-name">Investigate <button type="roll" name="roll_Investigate_link" class="sheet-skill-link" value="[Investigate Wiki](https://aaa.dimble.net/skills/investigate)">&#x2197;</button></div>
@@ -1791,12 +1603,11 @@ on("change:actioncheck", function() {
 				</div>
 			</div>
 			<div class="sheet-skill-group-box">
-				<input type="checkbox" id="collapse_Knowledge" name="attr_Knowledge" class="sheet-collapse-check" value="1" />
-				<label class="sheet-skill-header-row" for="collapse_Knowledge">
+				<div class="sheet-skill-header-row">
 					<div></div><div class="sheet-skill-name">KNOWLEDGE</div><div></div>
 					<div class="sheet-skill-ability-label">RANKS</div>
 					<div class="sheet-skill-ability-label">SCORE</div>
-				</label>
+				</div>
 				<div class="sheet-skill-row">
 					<button type="roll" name="roll_Knowledge" value="&{template:default} {{name= @{character_name} - Knowledge}} {{score= [[@{KnowledgeO}]]/[[@{KnowledgeG}]]/[[@{KnowledgeA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/knowledge)}}"></button>
 					<div class="sheet-skill-name">Knowledge <button type="roll" name="roll_Knowledge_link" class="sheet-skill-link" value="[Knowledge Wiki](https://aaa.dimble.net/skills/knowledge)">&#x2197;</button></div>
@@ -1815,7 +1626,7 @@ on("change:actioncheck", function() {
 						<div class="sheet-skill-ability-label">INT</div>
 						<input type="number" name="attr_ComputerOperationRank" class="sheet-score" value="0">
 						<div class="sheet-skill-score-cell">
-							<input type="text" name="attr_ComputerOperationO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{ComputerOperationRank}+@{Intelligence})*@{Knowledge}) * (@{ComputerOperationRank}/(@{ComputerOperationRank}+0.001))))">/
+							<input type="text" name="attr_ComputerOperationO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{ComputerOperationRank}+@{Intelligence})*@{Knowledge}) * (@{ComputerOperationRank}/(@{ComputerOperationRank}+0.001)) + 0.5))">/
 							<input type="text" name="attr_ComputerOperationG" class="sheet-scoredisabled" disabled="true" value="(floor(@{ComputerOperationO}/2))">/
 							<input type="text" name="attr_ComputerOperationA" class="sheet-scoredisabled" disabled="true" value="(floor(@{ComputerOperationO}/4))">
 						</div>
@@ -1837,7 +1648,7 @@ on("change:actioncheck", function() {
 						<div class="sheet-skill-ability-label">INT</div>
 						<input type="number" name="attr_FirstAidRank" class="sheet-score" value="0">
 						<div class="sheet-skill-score-cell">
-							<input type="text" name="attr_FirstAidO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{FirstAidRank}+@{Intelligence})*@{Knowledge}) * (@{FirstAidRank}/(@{FirstAidRank}+0.001))))">/
+							<input type="text" name="attr_FirstAidO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{FirstAidRank}+@{Intelligence})*@{Knowledge}) * (@{FirstAidRank}/(@{FirstAidRank}+0.001)) + 0.5))">/
 							<input type="text" name="attr_FirstAidG" class="sheet-scoredisabled" disabled="true" value="(floor(@{FirstAidO}/2))">/
 							<input type="text" name="attr_FirstAidA" class="sheet-scoredisabled" disabled="true" value="(floor(@{FirstAidO}/4))">
 						</div>
@@ -1848,7 +1659,7 @@ on("change:actioncheck", function() {
 						<div class="sheet-skill-ability-label">INT</div>
 						<input type="number" name="attr_LanguageRank" class="sheet-score" value="0">
 						<div class="sheet-skill-score-cell">
-							<input type="text" name="attr_LanguageO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{LanguageRank}+@{Intelligence})*@{Knowledge}) * (@{LanguageRank}/(@{LanguageRank}+0.001))))">/
+							<input type="text" name="attr_LanguageO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{LanguageRank}+@{Intelligence})*@{Knowledge}) * (@{LanguageRank}/(@{LanguageRank}+0.001)) + 0.5))">/
 							<input type="text" name="attr_LanguageG" class="sheet-scoredisabled" disabled="true" value="(floor(@{LanguageO}/2))">/
 							<input type="text" name="attr_LanguageA" class="sheet-scoredisabled" disabled="true" value="(floor(@{LanguageO}/4))">
 						</div>
@@ -1856,12 +1667,11 @@ on("change:actioncheck", function() {
 				</div>
 			</div>
 			<div class="sheet-skill-group-box">
-				<input type="checkbox" id="collapse_Law" name="attr_Law" class="sheet-collapse-check" value="1" />
-				<label class="sheet-skill-header-row" for="collapse_Law">
+				<div class="sheet-skill-header-row">
 					<div></div><div class="sheet-skill-name">LAW</div><div></div>
 					<div class="sheet-skill-ability-label">RANKS</div>
 					<div class="sheet-skill-ability-label">SCORE</div>
-				</label>
+				</div>
 				<div class="sheet-skill-row">
 					<button type="roll" name="roll_Law" value="&{template:default} {{name= @{character_name} - Law}} {{score= [[@{LawO}]]/[[@{LawG}]]/[[@{LawA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/law)}}"></button>
 					<div class="sheet-skill-name">Law <button type="roll" name="roll_Law_link" class="sheet-skill-link" value="[Law Wiki](https://aaa.dimble.net/skills/law)">&#x2197;</button></div>
@@ -1902,7 +1712,7 @@ on("change:actioncheck", function() {
 						<div class="sheet-skill-ability-label">INT</div>
 						<input type="number" name="attr_LawspecificskillRank" class="sheet-score" value="0">
 						<div class="sheet-skill-score-cell">
-							<input type="text" name="attr_LawspecificskillO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{LawspecificskillRank}+@{Intelligence})*@{Law}) * (@{LawspecificskillRank}/(@{LawspecificskillRank}+0.001))))">/
+							<input type="text" name="attr_LawspecificskillO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{LawspecificskillRank}+@{Intelligence})*@{Law}) * (@{LawspecificskillRank}/(@{LawspecificskillRank}+0.001)) + 0.5))">/
 							<input type="text" name="attr_LawspecificskillG" class="sheet-scoredisabled" disabled="true" value="(floor(@{LawspecificskillO}/2))">/
 							<input type="text" name="attr_LawspecificskillA" class="sheet-scoredisabled" disabled="true" value="(floor(@{LawspecificskillO}/4))">
 						</div>
@@ -1910,12 +1720,11 @@ on("change:actioncheck", function() {
 				</div>
 			</div>
 			<div class="sheet-skill-group-box">
-				<input type="checkbox" id="collapse_Leadership" name="attr_Leadership" class="sheet-collapse-check" value="1" />
-				<label class="sheet-skill-header-row" for="collapse_Leadership">
+				<div class="sheet-skill-header-row">
 					<div></div><div class="sheet-skill-name">LEADERSHIP</div><div></div>
 					<div class="sheet-skill-ability-label">RANKS</div>
 					<div class="sheet-skill-ability-label">SCORE</div>
-				</label>
+				</div>
 				<div class="sheet-skill-row">
 					<button type="roll" name="roll_Leadership" value="&{template:default} {{name= @{character_name} - Leadership}} {{score= [[@{LeadershipO}]]/[[@{LeadershipG}]]/[[@{LeadershipA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/leadership)}}"></button>
 					<div class="sheet-skill-name">Leadership <button type="roll" name="roll_Leadership_link" class="sheet-skill-link" value="[Leadership Wiki](https://aaa.dimble.net/skills/leadership)">&#x2197;</button></div>
@@ -1945,7 +1754,7 @@ on("change:actioncheck", function() {
 						<div class="sheet-skill-ability-label">PER</div>
 						<input type="number" name="attr_InspireRank" class="sheet-score" value="0">
 						<div class="sheet-skill-score-cell">
-							<input type="text" name="attr_InspireO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{InspireRank}+@{Personality})*@{Leadership}) * (@{InspireRank}/(@{InspireRank}+0.001))))">/
+							<input type="text" name="attr_InspireO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{InspireRank}+@{Personality})*@{Leadership}) * (@{InspireRank}/(@{InspireRank}+0.001)) + 0.5))">/
 							<input type="text" name="attr_InspireG" class="sheet-scoredisabled" disabled="true" value="(floor(@{InspireO}/2))">/
 							<input type="text" name="attr_InspireA" class="sheet-scoredisabled" disabled="true" value="(floor(@{InspireO}/4))">
 						</div>
@@ -1953,12 +1762,11 @@ on("change:actioncheck", function() {
 				</div>
 			</div>
 			<div class="sheet-skill-group-box">
-				<input type="checkbox" id="collapse_LifeScience" name="attr_LifeScience" class="sheet-collapse-check" value="1" />
-				<label class="sheet-skill-header-row" for="collapse_LifeScience">
+				<div class="sheet-skill-header-row">
 					<div></div><div class="sheet-skill-name">LIFE SCIENCE</div><div></div>
 					<div class="sheet-skill-ability-label">RANKS</div>
 					<div class="sheet-skill-ability-label">SCORE</div>
-				</label>
+				</div>
 				<div class="sheet-skill-row">
 					<button type="roll" name="roll_LifeScience" value="&{template:default} {{name= @{character_name} - Life Science}} {{score= [[@{LifeScienceO}]]/[[@{LifeScienceG}]]/[[@{LifeScienceA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/life-science)}}"></button>
 					<div class="sheet-skill-name">Life Science <button type="roll" name="roll_LifeScience_link" class="sheet-skill-link" value="[Life Science Wiki](https://aaa.dimble.net/skills/life-science)">&#x2197;</button></div>
@@ -1977,7 +1785,7 @@ on("change:actioncheck", function() {
 						<div class="sheet-skill-ability-label">INT</div>
 						<input type="number" name="attr_BiologyRank" class="sheet-score" value="0">
 						<div class="sheet-skill-score-cell">
-							<input type="text" name="attr_BiologyO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{BiologyRank}+@{Intelligence})*@{LifeScience}) * (@{BiologyRank}/(@{BiologyRank}+0.001))))">/
+							<input type="text" name="attr_BiologyO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{BiologyRank}+@{Intelligence})*@{LifeScience}) * (@{BiologyRank}/(@{BiologyRank}+0.001)) + 0.5))">/
 							<input type="text" name="attr_BiologyG" class="sheet-scoredisabled" disabled="true" value="(floor(@{BiologyO}/2))">/
 							<input type="text" name="attr_BiologyA" class="sheet-scoredisabled" disabled="true" value="(floor(@{BiologyO}/4))">
 						</div>
@@ -1988,7 +1796,7 @@ on("change:actioncheck", function() {
 						<div class="sheet-skill-ability-label">INT</div>
 						<input type="number" name="attr_BotanyRank" class="sheet-score" value="0">
 						<div class="sheet-skill-score-cell">
-							<input type="text" name="attr_BotanyO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{BotanyRank}+@{Intelligence})*@{LifeScience}) * (@{BotanyRank}/(@{BotanyRank}+0.001))))">/
+							<input type="text" name="attr_BotanyO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{BotanyRank}+@{Intelligence})*@{LifeScience}) * (@{BotanyRank}/(@{BotanyRank}+0.001)) + 0.5))">/
 							<input type="text" name="attr_BotanyG" class="sheet-scoredisabled" disabled="true" value="(floor(@{BotanyO}/2))">/
 							<input type="text" name="attr_BotanyA" class="sheet-scoredisabled" disabled="true" value="(floor(@{BotanyO}/4))">
 						</div>
@@ -1999,7 +1807,7 @@ on("change:actioncheck", function() {
 						<div class="sheet-skill-ability-label">INT</div>
 						<input type="number" name="attr_GeneticsRank" class="sheet-score" value="0">
 						<div class="sheet-skill-score-cell">
-							<input type="text" name="attr_GeneticsO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{GeneticsRank}+@{Intelligence})*@{LifeScience}) * (@{GeneticsRank}/(@{GeneticsRank}+0.001))))">/
+							<input type="text" name="attr_GeneticsO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{GeneticsRank}+@{Intelligence})*@{LifeScience}) * (@{GeneticsRank}/(@{GeneticsRank}+0.001)) + 0.5))">/
 							<input type="text" name="attr_GeneticsG" class="sheet-scoredisabled" disabled="true" value="(floor(@{GeneticsO}/2))">/
 							<input type="text" name="attr_GeneticsA" class="sheet-scoredisabled" disabled="true" value="(floor(@{GeneticsO}/4))">
 						</div>
@@ -2010,7 +1818,7 @@ on("change:actioncheck", function() {
 						<div class="sheet-skill-ability-label">INT</div>
 						<input type="number" name="attr_XenologyRank" class="sheet-score" value="0">
 						<div class="sheet-skill-score-cell">
-							<input type="text" name="attr_XenologyO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{XenologyRank}+@{Intelligence})*@{LifeScience}) * (@{XenologyRank}/(@{XenologyRank}+0.001))))">/
+							<input type="text" name="attr_XenologyO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{XenologyRank}+@{Intelligence})*@{LifeScience}) * (@{XenologyRank}/(@{XenologyRank}+0.001)) + 0.5))">/
 							<input type="text" name="attr_XenologyG" class="sheet-scoredisabled" disabled="true" value="(floor(@{XenologyO}/2))">/
 							<input type="text" name="attr_XenologyA" class="sheet-scoredisabled" disabled="true" value="(floor(@{XenologyO}/4))">
 						</div>
@@ -2021,7 +1829,7 @@ on("change:actioncheck", function() {
 						<div class="sheet-skill-ability-label">INT</div>
 						<input type="number" name="attr_ZoologyRank" class="sheet-score" value="0">
 						<div class="sheet-skill-score-cell">
-							<input type="text" name="attr_ZoologyO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{ZoologyRank}+@{Intelligence})*@{LifeScience}) * (@{ZoologyRank}/(@{ZoologyRank}+0.001))))">/
+							<input type="text" name="attr_ZoologyO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{ZoologyRank}+@{Intelligence})*@{LifeScience}) * (@{ZoologyRank}/(@{ZoologyRank}+0.001)) + 0.5))">/
 							<input type="text" name="attr_ZoologyG" class="sheet-scoredisabled" disabled="true" value="(floor(@{ZoologyO}/2))">/
 							<input type="text" name="attr_ZoologyA" class="sheet-scoredisabled" disabled="true" value="(floor(@{ZoologyO}/4))">
 						</div>
@@ -2029,12 +1837,11 @@ on("change:actioncheck", function() {
 				</div>
 			</div>
 			<div class="sheet-skill-group-box">
-				<input type="checkbox" id="collapse_MedicalScience" name="attr_MedicalScience" class="sheet-collapse-check" value="1" />
-				<label class="sheet-skill-header-row" for="collapse_MedicalScience">
+				<div class="sheet-skill-header-row">
 					<div></div><div class="sheet-skill-name">MEDICAL SCIENCE</div><div></div>
 					<div class="sheet-skill-ability-label">RANKS</div>
 					<div class="sheet-skill-ability-label">SCORE</div>
-				</label>
+				</div>
 				<div class="sheet-skill-row">
 					<button type="roll" name="roll_MedicalScience" value="&{template:default} {{name= @{character_name} - Medical Science}} {{score= [[@{MedicalScienceO}]]/[[@{MedicalScienceG}]]/[[@{MedicalScienceA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/medical-science)}}"></button>
 					<div class="sheet-skill-name">Medical Science <button type="roll" name="roll_MedicalScience_link" class="sheet-skill-link" value="[Medical Science Wiki](https://aaa.dimble.net/skills/medical-science)">&#x2197;</button></div>
@@ -2053,7 +1860,7 @@ on("change:actioncheck", function() {
 						<div class="sheet-skill-ability-label">INT</div>
 						<input type="number" name="attr_ForensicsRank" class="sheet-score" value="0">
 						<div class="sheet-skill-score-cell">
-							<input type="text" name="attr_ForensicsO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{ForensicsRank}+@{Intelligence})*@{MedicalScience}) * (@{ForensicsRank}/(@{ForensicsRank}+0.001))))">/
+							<input type="text" name="attr_ForensicsO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{ForensicsRank}+@{Intelligence})*@{MedicalScience}) * (@{ForensicsRank}/(@{ForensicsRank}+0.001)) + 0.5))">/
 							<input type="text" name="attr_ForensicsG" class="sheet-scoredisabled" disabled="true" value="(floor(@{ForensicsO}/2))">/
 							<input type="text" name="attr_ForensicsA" class="sheet-scoredisabled" disabled="true" value="(floor(@{ForensicsO}/4))">
 						</div>
@@ -2064,7 +1871,7 @@ on("change:actioncheck", function() {
 						<div class="sheet-skill-ability-label">INT</div>
 						<input type="number" name="attr_MedicalKnowledgeRank" class="sheet-score" value="0">
 						<div class="sheet-skill-score-cell">
-							<input type="text" name="attr_MedicalKnowledgeO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{MedicalKnowledgeRank}+@{Intelligence})*@{MedicalScience}) * (@{MedicalKnowledgeRank}/(@{MedicalKnowledgeRank}+0.001))))">/
+							<input type="text" name="attr_MedicalKnowledgeO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{MedicalKnowledgeRank}+@{Intelligence})*@{MedicalScience}) * (@{MedicalKnowledgeRank}/(@{MedicalKnowledgeRank}+0.001)) + 0.5))">/
 							<input type="text" name="attr_MedicalKnowledgeG" class="sheet-scoredisabled" disabled="true" value="(floor(@{MedicalKnowledgeO}/2))">/
 							<input type="text" name="attr_MedicalKnowledgeA" class="sheet-scoredisabled" disabled="true" value="(floor(@{MedicalKnowledgeO}/4))">
 						</div>
@@ -2075,7 +1882,7 @@ on("change:actioncheck", function() {
 						<div class="sheet-skill-ability-label">INT</div>
 						<input type="number" name="attr_PsychologyRank" class="sheet-score" value="0">
 						<div class="sheet-skill-score-cell">
-							<input type="text" name="attr_PsychologyO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{PsychologyRank}+@{Intelligence})*@{MedicalScience}) * (@{PsychologyRank}/(@{PsychologyRank}+0.001))))">/
+							<input type="text" name="attr_PsychologyO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{PsychologyRank}+@{Intelligence})*@{MedicalScience}) * (@{PsychologyRank}/(@{PsychologyRank}+0.001)) + 0.5))">/
 							<input type="text" name="attr_PsychologyG" class="sheet-scoredisabled" disabled="true" value="(floor(@{PsychologyO}/2))">/
 							<input type="text" name="attr_PsychologyA" class="sheet-scoredisabled" disabled="true" value="(floor(@{PsychologyO}/4))">
 						</div>
@@ -2086,7 +1893,7 @@ on("change:actioncheck", function() {
 						<div class="sheet-skill-ability-label">INT</div>
 						<input type="number" name="attr_SurgeryRank" class="sheet-score" value="0">
 						<div class="sheet-skill-score-cell">
-							<input type="text" name="attr_SurgeryO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{SurgeryRank}+@{Intelligence})*@{MedicalScience}) * (@{SurgeryRank}/(@{SurgeryRank}+0.001))))">/
+							<input type="text" name="attr_SurgeryO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{SurgeryRank}+@{Intelligence})*@{MedicalScience}) * (@{SurgeryRank}/(@{SurgeryRank}+0.001)) + 0.5))">/
 							<input type="text" name="attr_SurgeryG" class="sheet-scoredisabled" disabled="true" value="(floor(@{SurgeryO}/2))">/
 							<input type="text" name="attr_SurgeryA" class="sheet-scoredisabled" disabled="true" value="(floor(@{SurgeryO}/4))">
 						</div>
@@ -2097,7 +1904,7 @@ on("change:actioncheck", function() {
 						<div class="sheet-skill-ability-label">INT</div>
 						<input type="number" name="attr_TreatmentRank" class="sheet-score" value="0">
 						<div class="sheet-skill-score-cell">
-							<input type="text" name="attr_TreatmentO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{TreatmentRank}+@{Intelligence})*@{MedicalScience}) * (@{TreatmentRank}/(@{TreatmentRank}+0.001))))">/
+							<input type="text" name="attr_TreatmentO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{TreatmentRank}+@{Intelligence})*@{MedicalScience}) * (@{TreatmentRank}/(@{TreatmentRank}+0.001)) + 0.5))">/
 							<input type="text" name="attr_TreatmentG" class="sheet-scoredisabled" disabled="true" value="(floor(@{TreatmentO}/2))">/
 							<input type="text" name="attr_TreatmentA" class="sheet-scoredisabled" disabled="true" value="(floor(@{TreatmentO}/4))">
 						</div>
@@ -2108,7 +1915,7 @@ on("change:actioncheck", function() {
 						<div class="sheet-skill-ability-label">INT</div>
 						<input type="number" name="attr_XenomedicineRank" class="sheet-score" value="0">
 						<div class="sheet-skill-score-cell">
-							<input type="text" name="attr_XenomedicineO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{XenomedicineRank}+@{Intelligence})*@{MedicalScience}) * (@{XenomedicineRank}/(@{XenomedicineRank}+0.001))))">/
+							<input type="text" name="attr_XenomedicineO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{XenomedicineRank}+@{Intelligence})*@{MedicalScience}) * (@{XenomedicineRank}/(@{XenomedicineRank}+0.001)) + 0.5))">/
 							<input type="text" name="attr_XenomedicineG" class="sheet-scoredisabled" disabled="true" value="(floor(@{XenomedicineO}/2))">/
 							<input type="text" name="attr_XenomedicineA" class="sheet-scoredisabled" disabled="true" value="(floor(@{XenomedicineO}/4))">
 						</div>
@@ -2116,12 +1923,11 @@ on("change:actioncheck", function() {
 				</div>
 			</div>
 			<div class="sheet-skill-group-box">
-				<input type="checkbox" id="collapse_MeleeCombat" name="attr_MeleeCombat" class="sheet-collapse-check" value="1" />
-				<label class="sheet-skill-header-row" for="collapse_MeleeCombat">
+				<div class="sheet-skill-header-row">
 					<div></div><div class="sheet-skill-name">MELEE COMBAT</div><div></div>
 					<div class="sheet-skill-ability-label">RANKS</div>
 					<div class="sheet-skill-ability-label">SCORE</div>
-				</label>
+				</div>
 				<div class="sheet-skill-row">
 					<button type="roll" name="roll_MeleeCombat" value="&{template:default} {{name= @{character_name} - Melee Combat}} {{score= [[@{MeleeCombatO}]]/[[@{MeleeCombatG}]]/[[@{MeleeCombatA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/melee-combat)}}"></button>
 					<div class="sheet-skill-name">Melee Combat <button type="roll" name="roll_MeleeCombat_link" class="sheet-skill-link" value="[Melee Combat Wiki](https://aaa.dimble.net/skills/melee-combat)">&#x2197;</button></div>
@@ -2157,12 +1963,23 @@ on("change:actioncheck", function() {
 						</div>
 					</div>
 					<div class="sheet-skill-row sheet-spec">
+						<button type="roll" name="roll_Brawl" value="&{template:default} {{name= @{character_name} - Brawl}} {{score= [[@{BrawlO}]]/[[@{BrawlG}]]/[[@{BrawlA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/melee-combat#brawl-str)}}"></button>
+						<div class="sheet-skill-name">Brawl <button type="roll" name="roll_Brawl_link" class="sheet-skill-link" value="[Brawl Wiki](https://aaa.dimble.net/skills/melee-combat#brawl-str)">&#x2197;</button></div>
+						<div class="sheet-skill-ability-label">STR</div>
+						<input type="number" name="attr_BrawlRank" class="sheet-score" value="0">
+						<div class="sheet-skill-score-cell">
+							<input type="text" name="attr_BrawlO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{BrawlRank}*@{MeleeCombat})+@{Strength})/(2-@{MeleeCombat})))">/
+							<input type="text" name="attr_BrawlG" class="sheet-scoredisabled" disabled="true" value="(floor(@{BrawlO}/2))">/
+							<input type="text" name="attr_BrawlA" class="sheet-scoredisabled" disabled="true" value="(floor(@{BrawlO}/4))">
+						</div>
+					</div>
+					<div class="sheet-skill-row sheet-spec">
 						<button type="roll" name="roll_DefensiveMartialArts" value="&{template:default} {{name= @{character_name} - Defensive Martial Arts}} {{score= [[@{DefensiveMartialArtsO}]]/[[@{DefensiveMartialArtsG}]]/[[@{DefensiveMartialArtsA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/melee-combat#defensive-martial-arts-dex---trained-only)}}"></button>
 						<div class="sheet-skill-name sheet-trained-only">Defensive Martial Arts <button type="roll" name="roll_DefensiveMartialArts_link" class="sheet-skill-link" value="[Defensive Martial Arts Wiki](https://aaa.dimble.net/skills/melee-combat#defensive-martial-arts-dex---trained-only)">&#x2197;</button></div>
 						<div class="sheet-skill-ability-label">DEX</div>
 						<input type="number" name="attr_DefensiveMartialArtsRank" class="sheet-score" value="0">
 						<div class="sheet-skill-score-cell">
-							<input type="text" name="attr_DefensiveMartialArtsO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{DefensiveMartialArtsRank}+@{Dexterity})*@{MeleeCombat}) * (@{DefensiveMartialArtsRank}/(@{DefensiveMartialArtsRank}+0.001))))">/
+							<input type="text" name="attr_DefensiveMartialArtsO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{DefensiveMartialArtsRank}+@{Dexterity})*@{MeleeCombat}) * (@{DefensiveMartialArtsRank}/(@{DefensiveMartialArtsRank}+0.001)) + 0.5))">/
 							<input type="text" name="attr_DefensiveMartialArtsG" class="sheet-scoredisabled" disabled="true" value="(floor(@{DefensiveMartialArtsO}/2))">/
 							<input type="text" name="attr_DefensiveMartialArtsA" class="sheet-scoredisabled" disabled="true" value="(floor(@{DefensiveMartialArtsO}/4))">
 						</div>
@@ -2173,7 +1990,7 @@ on("change:actioncheck", function() {
 						<div class="sheet-skill-ability-label">STR</div>
 						<input type="number" name="attr_PowerMartialArtsRank" class="sheet-score" value="0">
 						<div class="sheet-skill-score-cell">
-							<input type="text" name="attr_PowerMartialArtsO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{PowerMartialArtsRank}+@{Strength})*@{MeleeCombat}) * (@{PowerMartialArtsRank}/(@{PowerMartialArtsRank}+0.001))))">/
+							<input type="text" name="attr_PowerMartialArtsO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{PowerMartialArtsRank}+@{Strength})*@{MeleeCombat}) * (@{PowerMartialArtsRank}/(@{PowerMartialArtsRank}+0.001)) + 0.5))">/
 							<input type="text" name="attr_PowerMartialArtsG" class="sheet-scoredisabled" disabled="true" value="(floor(@{PowerMartialArtsO}/2))">/
 							<input type="text" name="attr_PowerMartialArtsA" class="sheet-scoredisabled" disabled="true" value="(floor(@{PowerMartialArtsO}/4))">
 						</div>
@@ -2192,12 +2009,11 @@ on("change:actioncheck", function() {
 				</div>
 			</div>
 			<div class="sheet-skill-group-box">
-				<input type="checkbox" id="collapse_ModernRangedWeapons" name="attr_ModernRangedWeapons" class="sheet-collapse-check" value="1" />
-				<label class="sheet-skill-header-row" for="collapse_ModernRangedWeapons">
+				<div class="sheet-skill-header-row">
 					<div></div><div class="sheet-skill-name">MODERN RANGED WEAPONS</div><div></div>
 					<div class="sheet-skill-ability-label">RANKS</div>
 					<div class="sheet-skill-ability-label">SCORE</div>
-				</label>
+				</div>
 				<div class="sheet-skill-row">
 					<button type="roll" name="roll_ModernRangedWeapons" value="&{template:default} {{name= @{character_name} - Modern Ranged Weapons}} {{score= [[@{ModernRangedWeaponsO}]]/[[@{ModernRangedWeaponsG}]]/[[@{ModernRangedWeaponsA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/modern-ranged-weapons)}}"></button>
 					<div class="sheet-skill-name">Modern Ranged Weapons <button type="roll" name="roll_ModernRangedWeapons_link" class="sheet-skill-link" value="[Modern Ranged Weapons Wiki](https://aaa.dimble.net/skills/modern-ranged-weapons)">&#x2197;</button></div>
@@ -2268,12 +2084,11 @@ on("change:actioncheck", function() {
 				</div>
 			</div>
 			<div class="sheet-skill-group-box">
-				<input type="checkbox" id="collapse_Navigation" name="attr_Navigation" class="sheet-collapse-check" value="1" />
-				<label class="sheet-skill-header-row" for="collapse_Navigation">
+				<div class="sheet-skill-header-row">
 					<div></div><div class="sheet-skill-name">NAVIGATION</div><div></div>
 					<div class="sheet-skill-ability-label">RANKS</div>
 					<div class="sheet-skill-ability-label">SCORE</div>
-				</label>
+				</div>
 				<div class="sheet-skill-row">
 					<button type="roll" name="roll_Navigation" value="&{template:default} {{name= @{character_name} - Navigation}} {{score= [[@{NavigationO}]]/[[@{NavigationG}]]/[[@{NavigationA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/navigation)}}"></button>
 					<div class="sheet-skill-name">Navigation <button type="roll" name="roll_Navigation_link" class="sheet-skill-link" value="[Navigation Wiki](https://aaa.dimble.net/skills/navigation)">&#x2197;</button></div>
@@ -2292,7 +2107,7 @@ on("change:actioncheck", function() {
 						<div class="sheet-skill-ability-label">INT</div>
 						<input type="number" name="attr_AstrogationdrivespaceRank" class="sheet-score" value="0">
 						<div class="sheet-skill-score-cell">
-							<input type="text" name="attr_AstrogationdrivespaceO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{AstrogationdrivespaceRank}+@{Intelligence})*@{Navigation}) * (@{AstrogationdrivespaceRank}/(@{AstrogationdrivespaceRank}+0.001))))">/
+							<input type="text" name="attr_AstrogationdrivespaceO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{AstrogationdrivespaceRank}+@{Intelligence})*@{Navigation}) * (@{AstrogationdrivespaceRank}/(@{AstrogationdrivespaceRank}+0.001)) + 0.5))">/
 							<input type="text" name="attr_AstrogationdrivespaceG" class="sheet-scoredisabled" disabled="true" value="(floor(@{AstrogationdrivespaceO}/2))">/
 							<input type="text" name="attr_AstrogationdrivespaceA" class="sheet-scoredisabled" disabled="true" value="(floor(@{AstrogationdrivespaceO}/4))">
 						</div>
@@ -2303,7 +2118,7 @@ on("change:actioncheck", function() {
 						<div class="sheet-skill-ability-label">INT</div>
 						<input type="number" name="attr_AstrogationsystemRank" class="sheet-score" value="0">
 						<div class="sheet-skill-score-cell">
-							<input type="text" name="attr_AstrogationsystemO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{AstrogationsystemRank}+@{Intelligence})*@{Navigation}) * (@{AstrogationsystemRank}/(@{AstrogationsystemRank}+0.001))))">/
+							<input type="text" name="attr_AstrogationsystemO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{AstrogationsystemRank}+@{Intelligence})*@{Navigation}) * (@{AstrogationsystemRank}/(@{AstrogationsystemRank}+0.001)) + 0.5))">/
 							<input type="text" name="attr_AstrogationsystemG" class="sheet-scoredisabled" disabled="true" value="(floor(@{AstrogationsystemO}/2))">/
 							<input type="text" name="attr_AstrogationsystemA" class="sheet-scoredisabled" disabled="true" value="(floor(@{AstrogationsystemO}/4))">
 						</div>
@@ -2322,12 +2137,11 @@ on("change:actioncheck", function() {
 				</div>
 			</div>
 			<div class="sheet-skill-group-box">
-				<input type="checkbox" id="collapse_PhysicalScience" name="attr_PhysicalScience" class="sheet-collapse-check" value="1" />
-				<label class="sheet-skill-header-row" for="collapse_PhysicalScience">
+				<div class="sheet-skill-header-row">
 					<div></div><div class="sheet-skill-name">PHYSICAL SCIENCE</div><div></div>
 					<div class="sheet-skill-ability-label">RANKS</div>
 					<div class="sheet-skill-ability-label">SCORE</div>
-				</label>
+				</div>
 				<div class="sheet-skill-row">
 					<button type="roll" name="roll_PhysicalScience" value="&{template:default} {{name= @{character_name} - Physical Science}} {{score= [[@{PhysicalScienceO}]]/[[@{PhysicalScienceG}]]/[[@{PhysicalScienceA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/physical-science)}}"></button>
 					<div class="sheet-skill-name">Physical Science <button type="roll" name="roll_PhysicalScience_link" class="sheet-skill-link" value="[Physical Science Wiki](https://aaa.dimble.net/skills/physical-science)">&#x2197;</button></div>
@@ -2346,7 +2160,7 @@ on("change:actioncheck", function() {
 						<div class="sheet-skill-ability-label">INT</div>
 						<input type="number" name="attr_AstronomyRank" class="sheet-score" value="0">
 						<div class="sheet-skill-score-cell">
-							<input type="text" name="attr_AstronomyO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{AstronomyRank}+@{Intelligence})*@{PhysicalScience}) * (@{AstronomyRank}/(@{AstronomyRank}+0.001))))">/
+							<input type="text" name="attr_AstronomyO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{AstronomyRank}+@{Intelligence})*@{PhysicalScience}) * (@{AstronomyRank}/(@{AstronomyRank}+0.001)) + 0.5))">/
 							<input type="text" name="attr_AstronomyG" class="sheet-scoredisabled" disabled="true" value="(floor(@{AstronomyO}/2))">/
 							<input type="text" name="attr_AstronomyA" class="sheet-scoredisabled" disabled="true" value="(floor(@{AstronomyO}/4))">
 						</div>
@@ -2357,7 +2171,7 @@ on("change:actioncheck", function() {
 						<div class="sheet-skill-ability-label">INT</div>
 						<input type="number" name="attr_ChemistryRank" class="sheet-score" value="0">
 						<div class="sheet-skill-score-cell">
-							<input type="text" name="attr_ChemistryO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{ChemistryRank}+@{Intelligence})*@{PhysicalScience}) * (@{ChemistryRank}/(@{ChemistryRank}+0.001))))">/
+							<input type="text" name="attr_ChemistryO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{ChemistryRank}+@{Intelligence})*@{PhysicalScience}) * (@{ChemistryRank}/(@{ChemistryRank}+0.001)) + 0.5))">/
 							<input type="text" name="attr_ChemistryG" class="sheet-scoredisabled" disabled="true" value="(floor(@{ChemistryO}/2))">/
 							<input type="text" name="attr_ChemistryA" class="sheet-scoredisabled" disabled="true" value="(floor(@{ChemistryO}/4))">
 						</div>
@@ -2368,7 +2182,7 @@ on("change:actioncheck", function() {
 						<div class="sheet-skill-ability-label">INT</div>
 						<input type="number" name="attr_PhysicsRank" class="sheet-score" value="0">
 						<div class="sheet-skill-score-cell">
-							<input type="text" name="attr_PhysicsO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{PhysicsRank}+@{Intelligence})*@{PhysicalScience}) * (@{PhysicsRank}/(@{PhysicsRank}+0.001))))">/
+							<input type="text" name="attr_PhysicsO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{PhysicsRank}+@{Intelligence})*@{PhysicalScience}) * (@{PhysicsRank}/(@{PhysicsRank}+0.001)) + 0.5))">/
 							<input type="text" name="attr_PhysicsG" class="sheet-scoredisabled" disabled="true" value="(floor(@{PhysicsO}/2))">/
 							<input type="text" name="attr_PhysicsA" class="sheet-scoredisabled" disabled="true" value="(floor(@{PhysicsO}/4))">
 						</div>
@@ -2379,7 +2193,7 @@ on("change:actioncheck", function() {
 						<div class="sheet-skill-ability-label">INT</div>
 						<input type="number" name="attr_PlanetologyRank" class="sheet-score" value="0">
 						<div class="sheet-skill-score-cell">
-							<input type="text" name="attr_PlanetologyO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{PlanetologyRank}+@{Intelligence})*@{PhysicalScience}) * (@{PlanetologyRank}/(@{PlanetologyRank}+0.001))))">/
+							<input type="text" name="attr_PlanetologyO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{PlanetologyRank}+@{Intelligence})*@{PhysicalScience}) * (@{PlanetologyRank}/(@{PlanetologyRank}+0.001)) + 0.5))">/
 							<input type="text" name="attr_PlanetologyG" class="sheet-scoredisabled" disabled="true" value="(floor(@{PlanetologyO}/2))">/
 							<input type="text" name="attr_PlanetologyA" class="sheet-scoredisabled" disabled="true" value="(floor(@{PlanetologyO}/4))">
 						</div>
@@ -2387,12 +2201,11 @@ on("change:actioncheck", function() {
 				</div>
 			</div>
 			<div class="sheet-skill-group-box">
-				<input type="checkbox" id="collapse_PrimitiveRangedWeapons" name="attr_PrimitiveRangedWeapons" class="sheet-collapse-check" value="1" />
-				<label class="sheet-skill-header-row" for="collapse_PrimitiveRangedWeapons">
+				<div class="sheet-skill-header-row">
 					<div></div><div class="sheet-skill-name">PRIMITIVE RANGED WEAPONS</div><div></div>
 					<div class="sheet-skill-ability-label">RANKS</div>
 					<div class="sheet-skill-ability-label">SCORE</div>
-				</label>
+				</div>
 				<div class="sheet-skill-row">
 					<button type="roll" name="roll_PrimitiveRangedWeapons" value="&{template:default} {{name= @{character_name} - Primitive Ranged Weapons}} {{score= [[@{PrimitiveRangedWeaponsO}]]/[[@{PrimitiveRangedWeaponsG}]]/[[@{PrimitiveRangedWeaponsA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/primitive-ranged-weapons)}}"></button>
 					<div class="sheet-skill-name">Primitive Ranged Weapons <button type="roll" name="roll_PrimitiveRangedWeapons_link" class="sheet-skill-link" value="[Primitive Ranged Weapons Wiki](https://aaa.dimble.net/skills/primitive-ranged-weapons)">&#x2197;</button></div>
@@ -2452,12 +2265,11 @@ on("change:actioncheck", function() {
 				</div>
 			</div>
 			<div class="sheet-skill-group-box">
-				<input type="checkbox" id="collapse_Resolve" name="attr_Resolve" class="sheet-collapse-check" value="1" />
-				<label class="sheet-skill-header-row" for="collapse_Resolve">
+				<div class="sheet-skill-header-row">
 					<div></div><div class="sheet-skill-name">RESOLVE</div><div></div>
 					<div class="sheet-skill-ability-label">RANKS</div>
 					<div class="sheet-skill-ability-label">SCORE</div>
-				</label>
+				</div>
 				<div class="sheet-skill-row">
 					<button type="roll" name="roll_Resolve" value="&{template:default} {{name= @{character_name} - Resolve}} {{score= [[@{ResolveO}]]/[[@{ResolveG}]]/[[@{ResolveA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/resolve)}}"></button>
 					<div class="sheet-skill-name">Resolve <button type="roll" name="roll_Resolve_link" class="sheet-skill-link" value="[Resolve Wiki](https://aaa.dimble.net/skills/resolve)">&#x2197;</button></div>
@@ -2495,12 +2307,11 @@ on("change:actioncheck", function() {
 				</div>
 			</div>
 			<div class="sheet-skill-group-box">
-				<input type="checkbox" id="collapse_Security" name="attr_Security" class="sheet-collapse-check" value="1" />
-				<label class="sheet-skill-header-row" for="collapse_Security">
+				<div class="sheet-skill-header-row">
 					<div></div><div class="sheet-skill-name">SECURITY</div><div></div>
 					<div class="sheet-skill-ability-label">RANKS</div>
 					<div class="sheet-skill-ability-label">SCORE</div>
-				</label>
+				</div>
 				<div class="sheet-skill-row">
 					<button type="roll" name="roll_Security" value="&{template:default} {{name= @{character_name} - Security}} {{score= [[@{SecurityO}]]/[[@{SecurityG}]]/[[@{SecurityA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/security)}}"></button>
 					<div class="sheet-skill-name">Security <button type="roll" name="roll_Security_link" class="sheet-skill-link" value="[Security Wiki](https://aaa.dimble.net/skills/security)">&#x2197;</button></div>
@@ -2538,12 +2349,11 @@ on("change:actioncheck", function() {
 				</div>
 			</div>
 			<div class="sheet-skill-group-box">
-				<input type="checkbox" id="collapse_Stamina" name="attr_Stamina" class="sheet-collapse-check" value="1" />
-				<label class="sheet-skill-header-row" for="collapse_Stamina">
+				<div class="sheet-skill-header-row">
 					<div></div><div class="sheet-skill-name">STAMINA</div><div></div>
 					<div class="sheet-skill-ability-label">RANKS</div>
 					<div class="sheet-skill-ability-label">SCORE</div>
-				</label>
+				</div>
 				<div class="sheet-skill-row">
 					<button type="roll" name="roll_Stamina" value="&{template:default} {{name= @{character_name} - Stamina}} {{score= [[@{StaminaO}]]/[[@{StaminaG}]]/[[@{StaminaA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/stamina)}}"></button>
 					<div class="sheet-skill-name">Stamina <button type="roll" name="roll_Stamina_link" class="sheet-skill-link" value="[Stamina Wiki](https://aaa.dimble.net/skills/stamina)">&#x2197;</button></div>
@@ -2573,7 +2383,7 @@ on("change:actioncheck", function() {
 						<div class="sheet-skill-ability-label">CON</div>
 						<input type="number" name="attr_ResistpainRank" class="sheet-score" value="0">
 						<div class="sheet-skill-score-cell">
-							<input type="text" name="attr_ResistpainO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{ResistpainRank}+@{Constitution})*@{Stamina}) * (@{ResistpainRank}/(@{ResistpainRank}+0.001))))">/
+							<input type="text" name="attr_ResistpainO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{ResistpainRank}+@{Constitution})*@{Stamina}) * (@{ResistpainRank}/(@{ResistpainRank}+0.001)) + 0.5))">/
 							<input type="text" name="attr_ResistpainG" class="sheet-scoredisabled" disabled="true" value="(floor(@{ResistpainO}/2))">/
 							<input type="text" name="attr_ResistpainA" class="sheet-scoredisabled" disabled="true" value="(floor(@{ResistpainO}/4))">
 						</div>
@@ -2581,12 +2391,11 @@ on("change:actioncheck", function() {
 				</div>
 			</div>
 			<div class="sheet-skill-group-box">
-				<input type="checkbox" id="collapse_StreetSmart" name="attr_StreetSmart" class="sheet-collapse-check" value="1" />
-				<label class="sheet-skill-header-row" for="collapse_StreetSmart">
+				<div class="sheet-skill-header-row">
 					<div></div><div class="sheet-skill-name">STREET SMART</div><div></div>
 					<div class="sheet-skill-ability-label">RANKS</div>
 					<div class="sheet-skill-ability-label">SCORE</div>
-				</label>
+				</div>
 				<div class="sheet-skill-row">
 					<button type="roll" name="roll_StreetSmart" value="&{template:default} {{name= @{character_name} - Street Smart}} {{score= [[@{StreetSmartO}]]/[[@{StreetSmartG}]]/[[@{StreetSmartA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/street-smart)}}"></button>
 					<div class="sheet-skill-name">Street Smart <button type="roll" name="roll_StreetSmart_link" class="sheet-skill-link" value="[Street Smart Wiki](https://aaa.dimble.net/skills/street-smart)">&#x2197;</button></div>
@@ -2624,12 +2433,11 @@ on("change:actioncheck", function() {
 				</div>
 			</div>
 			<div class="sheet-skill-group-box">
-				<input type="checkbox" id="collapse_Survival" name="attr_Survival" class="sheet-collapse-check" value="1" />
-				<label class="sheet-skill-header-row" for="collapse_Survival">
+				<div class="sheet-skill-header-row">
 					<div></div><div class="sheet-skill-name">SURVIVAL</div><div></div>
 					<div class="sheet-skill-ability-label">RANKS</div>
 					<div class="sheet-skill-ability-label">SCORE</div>
-				</label>
+				</div>
 				<div class="sheet-skill-row">
 					<button type="roll" name="roll_Survival" value="&{template:default} {{name= @{character_name} - Survival}} {{score= [[@{SurvivalO}]]/[[@{SurvivalG}]]/[[@{SurvivalA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/survival)}}"></button>
 					<div class="sheet-skill-name">Survival <button type="roll" name="roll_Survival_link" class="sheet-skill-link" value="[Survival Wiki](https://aaa.dimble.net/skills/survival)">&#x2197;</button></div>
@@ -2659,7 +2467,7 @@ on("change:actioncheck", function() {
 						<div class="sheet-skill-ability-label">CON</div>
 						<input type="number" name="attr_AdaptabilityRank" class="sheet-score" value="0">
 						<div class="sheet-skill-score-cell">
-							<input type="text" name="attr_AdaptabilityO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{AdaptabilityRank}+@{Constitution})*@{Survival}) * (@{AdaptabilityRank}/(@{AdaptabilityRank}+0.001))))">/
+							<input type="text" name="attr_AdaptabilityO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{AdaptabilityRank}+@{Constitution})*@{Survival}) * (@{AdaptabilityRank}/(@{AdaptabilityRank}+0.001)) + 0.5))">/
 							<input type="text" name="attr_AdaptabilityG" class="sheet-scoredisabled" disabled="true" value="(floor(@{AdaptabilityO}/2))">/
 							<input type="text" name="attr_AdaptabilityA" class="sheet-scoredisabled" disabled="true" value="(floor(@{AdaptabilityO}/4))">
 						</div>
@@ -2678,12 +2486,11 @@ on("change:actioncheck", function() {
 				</div>
 			</div>
 			<div class="sheet-skill-group-box">
-				<input type="checkbox" id="collapse_SystemOperation" name="attr_SystemOperation" class="sheet-collapse-check" value="1" />
-				<label class="sheet-skill-header-row" for="collapse_SystemOperation">
+				<div class="sheet-skill-header-row">
 					<div></div><div class="sheet-skill-name">SYSTEM OPERATION</div><div></div>
 					<div class="sheet-skill-ability-label">RANKS</div>
 					<div class="sheet-skill-ability-label">SCORE</div>
-				</label>
+				</div>
 				<div class="sheet-skill-row">
 					<button type="roll" name="roll_SystemOperation" value="&{template:default} {{name= @{character_name} - System Operation}} {{score= [[@{SystemOperationO}]]/[[@{SystemOperationG}]]/[[@{SystemOperationA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/system-operation)}}"></button>
 					<div class="sheet-skill-name">System Operation <button type="roll" name="roll_SystemOperation_link" class="sheet-skill-link" value="[System Operation Wiki](https://aaa.dimble.net/skills/system-operation)">&#x2197;</button></div>
@@ -2754,12 +2561,11 @@ on("change:actioncheck", function() {
 				</div>
 			</div>
 			<div class="sheet-skill-group-box">
-				<input type="checkbox" id="collapse_Tactics" name="attr_Tactics" class="sheet-collapse-check" value="1" />
-				<label class="sheet-skill-header-row" for="collapse_Tactics">
+				<div class="sheet-skill-header-row">
 					<div></div><div class="sheet-skill-name">TACTICS</div><div></div>
 					<div class="sheet-skill-ability-label">RANKS</div>
 					<div class="sheet-skill-ability-label">SCORE</div>
-				</label>
+				</div>
 				<div class="sheet-skill-row">
 					<button type="roll" name="roll_Tactics" value="&{template:default} {{name= @{character_name} - Tactics}} {{score= [[@{TacticsO}]]/[[@{TacticsG}]]/[[@{TacticsA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/tactics)}}"></button>
 					<div class="sheet-skill-name">Tactics <button type="roll" name="roll_Tactics_link" class="sheet-skill-link" value="[Tactics Wiki](https://aaa.dimble.net/skills/tactics)">&#x2197;</button></div>
@@ -2808,12 +2614,11 @@ on("change:actioncheck", function() {
 				</div>
 			</div>
 			<div class="sheet-skill-group-box">
-				<input type="checkbox" id="collapse_Teach" name="attr_Teach" class="sheet-collapse-check" value="1" />
-				<label class="sheet-skill-header-row" for="collapse_Teach">
+				<div class="sheet-skill-header-row">
 					<div></div><div class="sheet-skill-name">TEACH</div><div></div>
 					<div class="sheet-skill-ability-label">RANKS</div>
 					<div class="sheet-skill-ability-label">SCORE</div>
-				</label>
+				</div>
 				<div class="sheet-skill-row">
 					<button type="roll" name="roll_Teach" value="&{template:default} {{name= @{character_name} - Teach}} {{score= [[@{TeachO}]]/[[@{TeachG}]]/[[@{TeachA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/teach)}}"></button>
 					<div class="sheet-skill-name">Teach <button type="roll" name="roll_Teach_link" class="sheet-skill-link" value="[Teach Wiki](https://aaa.dimble.net/skills/teach)">&#x2197;</button></div>
@@ -2832,7 +2637,7 @@ on("change:actioncheck", function() {
 						<div class="sheet-skill-ability-label">WIL</div>
 						<input type="number" name="attr_SpecificfieldRank" class="sheet-score" value="0">
 						<div class="sheet-skill-score-cell">
-							<input type="text" name="attr_SpecificfieldO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{SpecificfieldRank}+@{Will})*@{Teach}) * (@{SpecificfieldRank}/(@{SpecificfieldRank}+0.001))))">/
+							<input type="text" name="attr_SpecificfieldO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{SpecificfieldRank}+@{Will})*@{Teach}) * (@{SpecificfieldRank}/(@{SpecificfieldRank}+0.001)) + 0.5))">/
 							<input type="text" name="attr_SpecificfieldG" class="sheet-scoredisabled" disabled="true" value="(floor(@{SpecificfieldO}/2))">/
 							<input type="text" name="attr_SpecificfieldA" class="sheet-scoredisabled" disabled="true" value="(floor(@{SpecificfieldO}/4))">
 						</div>
@@ -2840,12 +2645,11 @@ on("change:actioncheck", function() {
 				</div>
 			</div>
 			<div class="sheet-skill-group-box">
-				<input type="checkbox" id="collapse_TechnicalScience" name="attr_TechnicalScience" class="sheet-collapse-check" value="1" />
-				<label class="sheet-skill-header-row" for="collapse_TechnicalScience">
+				<div class="sheet-skill-header-row">
 					<div></div><div class="sheet-skill-name">TECHNICAL SCIENCE</div><div></div>
 					<div class="sheet-skill-ability-label">RANKS</div>
 					<div class="sheet-skill-ability-label">SCORE</div>
-				</label>
+				</div>
 				<div class="sheet-skill-row">
 					<button type="roll" name="roll_TechnicalScience" value="&{template:default} {{name= @{character_name} - Technical Science}} {{score= [[@{TechnicalScienceO}]]/[[@{TechnicalScienceG}]]/[[@{TechnicalScienceA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/technical-science)}}"></button>
 					<div class="sheet-skill-name">Technical Science <button type="roll" name="roll_TechnicalScience_link" class="sheet-skill-link" value="[Technical Science Wiki](https://aaa.dimble.net/skills/technical-science)">&#x2197;</button></div>
@@ -2864,7 +2668,7 @@ on("change:actioncheck", function() {
 						<div class="sheet-skill-ability-label">INT</div>
 						<input type="number" name="attr_InventionRank" class="sheet-score" value="0">
 						<div class="sheet-skill-score-cell">
-							<input type="text" name="attr_InventionO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{InventionRank}+@{Intelligence})*@{TechnicalScience}) * (@{InventionRank}/(@{InventionRank}+0.001))))">/
+							<input type="text" name="attr_InventionO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{InventionRank}+@{Intelligence})*@{TechnicalScience}) * (@{InventionRank}/(@{InventionRank}+0.001)) + 0.5))">/
 							<input type="text" name="attr_InventionG" class="sheet-scoredisabled" disabled="true" value="(floor(@{InventionO}/2))">/
 							<input type="text" name="attr_InventionA" class="sheet-scoredisabled" disabled="true" value="(floor(@{InventionO}/4))">
 						</div>
@@ -2875,7 +2679,7 @@ on("change:actioncheck", function() {
 						<div class="sheet-skill-ability-label">INT</div>
 						<input type="number" name="attr_JuryrigRank" class="sheet-score" value="0">
 						<div class="sheet-skill-score-cell">
-							<input type="text" name="attr_JuryrigO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{JuryrigRank}+@{Intelligence})*@{TechnicalScience}) * (@{JuryrigRank}/(@{JuryrigRank}+0.001))))">/
+							<input type="text" name="attr_JuryrigO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{JuryrigRank}+@{Intelligence})*@{TechnicalScience}) * (@{JuryrigRank}/(@{JuryrigRank}+0.001)) + 0.5))">/
 							<input type="text" name="attr_JuryrigG" class="sheet-scoredisabled" disabled="true" value="(floor(@{JuryrigO}/2))">/
 							<input type="text" name="attr_JuryrigA" class="sheet-scoredisabled" disabled="true" value="(floor(@{JuryrigO}/4))">
 						</div>
@@ -2886,7 +2690,7 @@ on("change:actioncheck", function() {
 						<div class="sheet-skill-ability-label">INT</div>
 						<input type="number" name="attr_RepairRank" class="sheet-score" value="0">
 						<div class="sheet-skill-score-cell">
-							<input type="text" name="attr_RepairO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{RepairRank}+@{Intelligence})*@{TechnicalScience}) * (@{RepairRank}/(@{RepairRank}+0.001))))">/
+							<input type="text" name="attr_RepairO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{RepairRank}+@{Intelligence})*@{TechnicalScience}) * (@{RepairRank}/(@{RepairRank}+0.001)) + 0.5))">/
 							<input type="text" name="attr_RepairG" class="sheet-scoredisabled" disabled="true" value="(floor(@{RepairO}/2))">/
 							<input type="text" name="attr_RepairA" class="sheet-scoredisabled" disabled="true" value="(floor(@{RepairO}/4))">
 						</div>
@@ -2897,7 +2701,7 @@ on("change:actioncheck", function() {
 						<div class="sheet-skill-ability-label">INT</div>
 						<input type="number" name="attr_TechnicalKnowledgeRank" class="sheet-score" value="0">
 						<div class="sheet-skill-score-cell">
-							<input type="text" name="attr_TechnicalKnowledgeO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{TechnicalKnowledgeRank}+@{Intelligence})*@{TechnicalScience}) * (@{TechnicalKnowledgeRank}/(@{TechnicalKnowledgeRank}+0.001))))">/
+							<input type="text" name="attr_TechnicalKnowledgeO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{TechnicalKnowledgeRank}+@{Intelligence})*@{TechnicalScience}) * (@{TechnicalKnowledgeRank}/(@{TechnicalKnowledgeRank}+0.001)) + 0.5))">/
 							<input type="text" name="attr_TechnicalKnowledgeG" class="sheet-scoredisabled" disabled="true" value="(floor(@{TechnicalKnowledgeO}/2))">/
 							<input type="text" name="attr_TechnicalKnowledgeA" class="sheet-scoredisabled" disabled="true" value="(floor(@{TechnicalKnowledgeO}/4))">
 						</div>
@@ -2905,55 +2709,11 @@ on("change:actioncheck", function() {
 				</div>
 			</div>
 			<div class="sheet-skill-group-box">
-				<input type="checkbox" id="collapse_UnarmedAttack" name="attr_UnarmedAttack" class="sheet-collapse-check" value="1" />
-				<label class="sheet-skill-header-row" for="collapse_UnarmedAttack">
-					<div></div><div class="sheet-skill-name">UNARMED ATTACK</div><div></div>
-					<div class="sheet-skill-ability-label">RANKS</div>
-					<div class="sheet-skill-ability-label">SCORE</div>
-				</label>
-				<div class="sheet-skill-row">
-					<button type="roll" name="roll_UnarmedAttack" value="&{template:default} {{name= @{character_name} - Unarmed Attack}} {{score= [[@{UnarmedAttackO}]]/[[@{UnarmedAttackG}]]/[[@{UnarmedAttackA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/unarmed-attack)}}"></button>
-					<div class="sheet-skill-name">Unarmed Attack <button type="roll" name="roll_UnarmedAttack_link" class="sheet-skill-link" value="[Unarmed Attack Wiki](https://aaa.dimble.net/skills/unarmed-attack)">&#x2197;</button></div>
-					<div class="sheet-skill-ability-label">STR</div>
-					<input type="checkbox" name="attr_UnarmedAttack" value="1" />
-					<div class="sheet-skill-score-cell">
-						<input type="text" name="attr_UnarmedAttackO" class="sheet-scoredisabled" disabled="true" value="(floor(@{Strength}/(2-@{UnarmedAttack})))">/
-						<input type="text" name="attr_UnarmedAttackG" class="sheet-scoredisabled" disabled="true" value="(floor(@{UnarmedAttackO}/2))">/
-						<input type="text" name="attr_UnarmedAttackA" class="sheet-scoredisabled" disabled="true" value="(floor(@{UnarmedAttackO}/4))">
-					</div>
-				</div>
-				<div class="sheet-specialties-container">
-					<div class="sheet-skill-row sheet-spec">
-						<button type="roll" name="roll_Brawl" value="&{template:default} {{name= @{character_name} - Brawl}} {{score= [[@{BrawlO}]]/[[@{BrawlG}]]/[[@{BrawlA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/unarmed-attack#brawl-str)}}"></button>
-						<div class="sheet-skill-name">Brawl <button type="roll" name="roll_Brawl_link" class="sheet-skill-link" value="[Brawl Wiki](https://aaa.dimble.net/skills/unarmed-attack#brawl-str)">&#x2197;</button></div>
-						<div class="sheet-skill-ability-label">STR</div>
-						<input type="number" name="attr_BrawlRank" class="sheet-score" value="0">
-						<div class="sheet-skill-score-cell">
-							<input type="text" name="attr_BrawlO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{BrawlRank}*@{UnarmedAttack})+@{Strength})/(2-@{UnarmedAttack})))">/
-							<input type="text" name="attr_BrawlG" class="sheet-scoredisabled" disabled="true" value="(floor(@{BrawlO}/2))">/
-							<input type="text" name="attr_BrawlA" class="sheet-scoredisabled" disabled="true" value="(floor(@{BrawlO}/4))">
-						</div>
-					</div>
-					<div class="sheet-skill-row sheet-spec">
-						<button type="roll" name="roll_PowerMartialArts" value="&{template:default} {{name= @{character_name} - Power Martial Arts}} {{score= [[@{PowerMartialArtsO}]]/[[@{PowerMartialArtsG}]]/[[@{PowerMartialArtsA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/unarmed-attack#power-martial-arts-str---trained-only)}}"></button>
-						<div class="sheet-skill-name sheet-trained-only">Power Martial Arts <button type="roll" name="roll_PowerMartialArts_link" class="sheet-skill-link" value="[Power Martial Arts Wiki](https://aaa.dimble.net/skills/unarmed-attack#power-martial-arts-str---trained-only)">&#x2197;</button></div>
-						<div class="sheet-skill-ability-label">STR</div>
-						<input type="number" name="attr_PowerMartialArtsRank" class="sheet-score" value="0">
-						<div class="sheet-skill-score-cell">
-							<input type="text" name="attr_PowerMartialArtsO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{PowerMartialArtsRank}+@{Strength})*@{UnarmedAttack}) * (@{PowerMartialArtsRank}/(@{PowerMartialArtsRank}+0.001))))">/
-							<input type="text" name="attr_PowerMartialArtsG" class="sheet-scoredisabled" disabled="true" value="(floor(@{PowerMartialArtsO}/2))">/
-							<input type="text" name="attr_PowerMartialArtsA" class="sheet-scoredisabled" disabled="true" value="(floor(@{PowerMartialArtsO}/4))">
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="sheet-skill-group-box">
-				<input type="checkbox" id="collapse_VehicleOperation" name="attr_VehicleOperation" class="sheet-collapse-check" value="1" />
-				<label class="sheet-skill-header-row" for="collapse_VehicleOperation">
+				<div class="sheet-skill-header-row">
 					<div></div><div class="sheet-skill-name">VEHICLE OPERATION</div><div></div>
 					<div class="sheet-skill-ability-label">RANKS</div>
 					<div class="sheet-skill-ability-label">SCORE</div>
-				</label>
+				</div>
 				<div class="sheet-skill-row">
 					<button type="roll" name="roll_VehicleOperation" value="&{template:default} {{name= @{character_name} - Vehicle Operation}} {{score= [[@{VehicleOperationO}]]/[[@{VehicleOperationG}]]/[[@{VehicleOperationA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/vehicle-operation)}}"></button>
 					<div class="sheet-skill-name">Vehicle Operation <button type="roll" name="roll_VehicleOperation_link" class="sheet-skill-link" value="[Vehicle Operation Wiki](https://aaa.dimble.net/skills/vehicle-operation)">&#x2197;</button></div>
@@ -2972,7 +2732,7 @@ on("change:actioncheck", function() {
 						<div class="sheet-skill-ability-label">DEX</div>
 						<input type="number" name="attr_AirvehicleRank" class="sheet-score" value="0">
 						<div class="sheet-skill-score-cell">
-							<input type="text" name="attr_AirvehicleO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{AirvehicleRank}+@{Dexterity})*@{VehicleOperation}) * (@{AirvehicleRank}/(@{AirvehicleRank}+0.001))))">/
+							<input type="text" name="attr_AirvehicleO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{AirvehicleRank}+@{Dexterity})*@{VehicleOperation}) * (@{AirvehicleRank}/(@{AirvehicleRank}+0.001)) + 0.5))">/
 							<input type="text" name="attr_AirvehicleG" class="sheet-scoredisabled" disabled="true" value="(floor(@{AirvehicleO}/2))">/
 							<input type="text" name="attr_AirvehicleA" class="sheet-scoredisabled" disabled="true" value="(floor(@{AirvehicleO}/4))">
 						</div>
@@ -2994,7 +2754,7 @@ on("change:actioncheck", function() {
 						<div class="sheet-skill-ability-label">DEX</div>
 						<input type="number" name="attr_SpacevehicleRank" class="sheet-score" value="0">
 						<div class="sheet-skill-score-cell">
-							<input type="text" name="attr_SpacevehicleO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{SpacevehicleRank}+@{Dexterity})*@{VehicleOperation}) * (@{SpacevehicleRank}/(@{SpacevehicleRank}+0.001))))">/
+							<input type="text" name="attr_SpacevehicleO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{SpacevehicleRank}+@{Dexterity})*@{VehicleOperation}) * (@{SpacevehicleRank}/(@{SpacevehicleRank}+0.001)) + 0.5))">/
 							<input type="text" name="attr_SpacevehicleG" class="sheet-scoredisabled" disabled="true" value="(floor(@{SpacevehicleO}/2))">/
 							<input type="text" name="attr_SpacevehicleA" class="sheet-scoredisabled" disabled="true" value="(floor(@{SpacevehicleO}/4))">
 						</div>
@@ -3028,12 +2788,11 @@ on("change:actioncheck", function() {
 			</div>
 			<div class="sheet-skills-grid-wrapper">
 							<div class="sheet-skill-group-box">
-				<input type="checkbox" id="collapse_Biokinesis" name="attr_Biokinesis" class="sheet-collapse-check" value="1" />
-				<label class="sheet-skill-header-row" for="collapse_Biokinesis">
+				<div class="sheet-skill-header-row">
 					<div></div><div class="sheet-skill-name">BIOKINESIS</div><div></div>
 					<div class="sheet-skill-ability-label">RANKS</div>
 					<div class="sheet-skill-ability-label">SCORE</div>
-				</label>
+				</div>
 				<div class="sheet-skill-row">
 					<button type="roll" name="roll_Biokinesis" value="&{template:default} {{name= @{character_name} - Biokinesis}} {{score= [[@{BiokinesisO}]]/[[@{BiokinesisG}]]/[[@{BiokinesisA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/biokinesis)}}"></button>
 					<div class="sheet-skill-name">Biokinesis <button type="roll" name="roll_Biokinesis_link" class="sheet-skill-link" value="[Biokinesis Wiki](https://aaa.dimble.net/skills/biokinesis)">&#x2197;</button></div>
@@ -3052,7 +2811,7 @@ on("change:actioncheck", function() {
 						<div class="sheet-skill-ability-label">CON</div>
 						<input type="number" name="attr_BioregenerationRank" class="sheet-score" value="0">
 						<div class="sheet-skill-score-cell">
-							<input type="text" name="attr_BioregenerationO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{BioregenerationRank}+@{Constitution})*@{Biokinesis}) * (@{BioregenerationRank}/(@{BioregenerationRank}+0.001))))">/
+							<input type="text" name="attr_BioregenerationO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{BioregenerationRank}+@{Constitution})*@{Biokinesis}) * (@{BioregenerationRank}/(@{BioregenerationRank}+0.001)) + 0.5))">/
 							<input type="text" name="attr_BioregenerationG" class="sheet-scoredisabled" disabled="true" value="(floor(@{BioregenerationO}/2))">/
 							<input type="text" name="attr_BioregenerationA" class="sheet-scoredisabled" disabled="true" value="(floor(@{BioregenerationO}/4))">
 						</div>
@@ -3063,7 +2822,7 @@ on("change:actioncheck", function() {
 						<div class="sheet-skill-ability-label">CON</div>
 						<input type="number" name="attr_PhysicalenhancementRank" class="sheet-score" value="0">
 						<div class="sheet-skill-score-cell">
-							<input type="text" name="attr_PhysicalenhancementO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{PhysicalenhancementRank}+@{Constitution})*@{Biokinesis}) * (@{PhysicalenhancementRank}/(@{PhysicalenhancementRank}+0.001))))">/
+							<input type="text" name="attr_PhysicalenhancementO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{PhysicalenhancementRank}+@{Constitution})*@{Biokinesis}) * (@{PhysicalenhancementRank}/(@{PhysicalenhancementRank}+0.001)) + 0.5))">/
 							<input type="text" name="attr_PhysicalenhancementG" class="sheet-scoredisabled" disabled="true" value="(floor(@{PhysicalenhancementO}/2))">/
 							<input type="text" name="attr_PhysicalenhancementA" class="sheet-scoredisabled" disabled="true" value="(floor(@{PhysicalenhancementO}/4))">
 						</div>
@@ -3074,7 +2833,7 @@ on("change:actioncheck", function() {
 						<div class="sheet-skill-ability-label">CON</div>
 						<input type="number" name="attr_SystemcontrolRank" class="sheet-score" value="0">
 						<div class="sheet-skill-score-cell">
-							<input type="text" name="attr_SystemcontrolO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{SystemcontrolRank}+@{Constitution})*@{Biokinesis}) * (@{SystemcontrolRank}/(@{SystemcontrolRank}+0.001))))">/
+							<input type="text" name="attr_SystemcontrolO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{SystemcontrolRank}+@{Constitution})*@{Biokinesis}) * (@{SystemcontrolRank}/(@{SystemcontrolRank}+0.001)) + 0.5))">/
 							<input type="text" name="attr_SystemcontrolG" class="sheet-scoredisabled" disabled="true" value="(floor(@{SystemcontrolO}/2))">/
 							<input type="text" name="attr_SystemcontrolA" class="sheet-scoredisabled" disabled="true" value="(floor(@{SystemcontrolO}/4))">
 						</div>
@@ -3082,12 +2841,11 @@ on("change:actioncheck", function() {
 				</div>
 			</div>
 			<div class="sheet-skill-group-box">
-				<input type="checkbox" id="collapse_ESP" name="attr_ESP" class="sheet-collapse-check" value="1" />
-				<label class="sheet-skill-header-row" for="collapse_ESP">
+				<div class="sheet-skill-header-row">
 					<div></div><div class="sheet-skill-name">ESP</div><div></div>
 					<div class="sheet-skill-ability-label">RANKS</div>
 					<div class="sheet-skill-ability-label">SCORE</div>
-				</label>
+				</div>
 				<div class="sheet-skill-row">
 					<button type="roll" name="roll_ESP" value="&{template:default} {{name= @{character_name} - ESP}} {{score= [[@{ESPO}]]/[[@{ESPG}]]/[[@{ESPA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/esp)}}"></button>
 					<div class="sheet-skill-name">ESP <button type="roll" name="roll_ESP_link" class="sheet-skill-link" value="[ESP Wiki](https://aaa.dimble.net/skills/esp)">&#x2197;</button></div>
@@ -3106,7 +2864,7 @@ on("change:actioncheck", function() {
 						<div class="sheet-skill-ability-label">INT</div>
 						<input type="number" name="attr_ClairaudienceRank" class="sheet-score" value="0">
 						<div class="sheet-skill-score-cell">
-							<input type="text" name="attr_ClairaudienceO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{ClairaudienceRank}+@{Intelligence})*@{ESP}) * (@{ClairaudienceRank}/(@{ClairaudienceRank}+0.001))))">/
+							<input type="text" name="attr_ClairaudienceO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{ClairaudienceRank}+@{Intelligence})*@{ESP}) * (@{ClairaudienceRank}/(@{ClairaudienceRank}+0.001)) + 0.5))">/
 							<input type="text" name="attr_ClairaudienceG" class="sheet-scoredisabled" disabled="true" value="(floor(@{ClairaudienceO}/2))">/
 							<input type="text" name="attr_ClairaudienceA" class="sheet-scoredisabled" disabled="true" value="(floor(@{ClairaudienceO}/4))">
 						</div>
@@ -3117,7 +2875,7 @@ on("change:actioncheck", function() {
 						<div class="sheet-skill-ability-label">INT</div>
 						<input type="number" name="attr_ClairvoyanceRank" class="sheet-score" value="0">
 						<div class="sheet-skill-score-cell">
-							<input type="text" name="attr_ClairvoyanceO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{ClairvoyanceRank}+@{Intelligence})*@{ESP}) * (@{ClairvoyanceRank}/(@{ClairvoyanceRank}+0.001))))">/
+							<input type="text" name="attr_ClairvoyanceO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{ClairvoyanceRank}+@{Intelligence})*@{ESP}) * (@{ClairvoyanceRank}/(@{ClairvoyanceRank}+0.001)) + 0.5))">/
 							<input type="text" name="attr_ClairvoyanceG" class="sheet-scoredisabled" disabled="true" value="(floor(@{ClairvoyanceO}/2))">/
 							<input type="text" name="attr_ClairvoyanceA" class="sheet-scoredisabled" disabled="true" value="(floor(@{ClairvoyanceO}/4))">
 						</div>
@@ -3128,7 +2886,7 @@ on("change:actioncheck", function() {
 						<div class="sheet-skill-ability-label">WIL</div>
 						<input type="number" name="attr_EmpathyRank" class="sheet-score" value="0">
 						<div class="sheet-skill-score-cell">
-							<input type="text" name="attr_EmpathyO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{EmpathyRank}+@{Will})*@{ESP}) * (@{EmpathyRank}/(@{EmpathyRank}+0.001))))">/
+							<input type="text" name="attr_EmpathyO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{EmpathyRank}+@{Will})*@{ESP}) * (@{EmpathyRank}/(@{EmpathyRank}+0.001)) + 0.5))">/
 							<input type="text" name="attr_EmpathyG" class="sheet-scoredisabled" disabled="true" value="(floor(@{EmpathyO}/2))">/
 							<input type="text" name="attr_EmpathyA" class="sheet-scoredisabled" disabled="true" value="(floor(@{EmpathyO}/4))">
 						</div>
@@ -3139,7 +2897,7 @@ on("change:actioncheck", function() {
 						<div class="sheet-skill-ability-label">INT</div>
 						<input type="number" name="attr_PostcognitionRank" class="sheet-score" value="0">
 						<div class="sheet-skill-score-cell">
-							<input type="text" name="attr_PostcognitionO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{PostcognitionRank}+@{Intelligence})*@{ESP}) * (@{PostcognitionRank}/(@{PostcognitionRank}+0.001))))">/
+							<input type="text" name="attr_PostcognitionO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{PostcognitionRank}+@{Intelligence})*@{ESP}) * (@{PostcognitionRank}/(@{PostcognitionRank}+0.001)) + 0.5))">/
 							<input type="text" name="attr_PostcognitionG" class="sheet-scoredisabled" disabled="true" value="(floor(@{PostcognitionO}/2))">/
 							<input type="text" name="attr_PostcognitionA" class="sheet-scoredisabled" disabled="true" value="(floor(@{PostcognitionO}/4))">
 						</div>
@@ -3150,7 +2908,7 @@ on("change:actioncheck", function() {
 						<div class="sheet-skill-ability-label">INT</div>
 						<input type="number" name="attr_PrecognitionRank" class="sheet-score" value="0">
 						<div class="sheet-skill-score-cell">
-							<input type="text" name="attr_PrecognitionO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{PrecognitionRank}+@{Intelligence})*@{ESP}) * (@{PrecognitionRank}/(@{PrecognitionRank}+0.001))))">/
+							<input type="text" name="attr_PrecognitionO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{PrecognitionRank}+@{Intelligence})*@{ESP}) * (@{PrecognitionRank}/(@{PrecognitionRank}+0.001)) + 0.5))">/
 							<input type="text" name="attr_PrecognitionG" class="sheet-scoredisabled" disabled="true" value="(floor(@{PrecognitionO}/2))">/
 							<input type="text" name="attr_PrecognitionA" class="sheet-scoredisabled" disabled="true" value="(floor(@{PrecognitionO}/4))">
 						</div>
@@ -3158,12 +2916,11 @@ on("change:actioncheck", function() {
 				</div>
 			</div>
 			<div class="sheet-skill-group-box">
-				<input type="checkbox" id="collapse_Telekinesis" name="attr_Telekinesis" class="sheet-collapse-check" value="1" />
-				<label class="sheet-skill-header-row" for="collapse_Telekinesis">
+				<div class="sheet-skill-header-row">
 					<div></div><div class="sheet-skill-name">TELEKINESIS</div><div></div>
 					<div class="sheet-skill-ability-label">RANKS</div>
 					<div class="sheet-skill-ability-label">SCORE</div>
-				</label>
+				</div>
 				<div class="sheet-skill-row">
 					<button type="roll" name="roll_Telekinesis" value="&{template:default} {{name= @{character_name} - Telekinesis}} {{score= [[@{TelekinesisO}]]/[[@{TelekinesisG}]]/[[@{TelekinesisA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/telekinesis)}}"></button>
 					<div class="sheet-skill-name">Telekinesis <button type="roll" name="roll_Telekinesis_link" class="sheet-skill-link" value="[Telekinesis Wiki](https://aaa.dimble.net/skills/telekinesis)">&#x2197;</button></div>
@@ -3182,7 +2939,7 @@ on("change:actioncheck", function() {
 						<div class="sheet-skill-ability-label">WIL</div>
 						<input type="number" name="attr_KineticshieldRank" class="sheet-score" value="0">
 						<div class="sheet-skill-score-cell">
-							<input type="text" name="attr_KineticshieldO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{KineticshieldRank}+@{Will})*@{Telekinesis}) * (@{KineticshieldRank}/(@{KineticshieldRank}+0.001))))">/
+							<input type="text" name="attr_KineticshieldO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{KineticshieldRank}+@{Will})*@{Telekinesis}) * (@{KineticshieldRank}/(@{KineticshieldRank}+0.001)) + 0.5))">/
 							<input type="text" name="attr_KineticshieldG" class="sheet-scoredisabled" disabled="true" value="(floor(@{KineticshieldO}/2))">/
 							<input type="text" name="attr_KineticshieldA" class="sheet-scoredisabled" disabled="true" value="(floor(@{KineticshieldO}/4))">
 						</div>
@@ -3193,7 +2950,7 @@ on("change:actioncheck", function() {
 						<div class="sheet-skill-ability-label">WIL</div>
 						<input type="number" name="attr_LevitationRank" class="sheet-score" value="0">
 						<div class="sheet-skill-score-cell">
-							<input type="text" name="attr_LevitationO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{LevitationRank}+@{Will})*@{Telekinesis}) * (@{LevitationRank}/(@{LevitationRank}+0.001))))">/
+							<input type="text" name="attr_LevitationO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{LevitationRank}+@{Will})*@{Telekinesis}) * (@{LevitationRank}/(@{LevitationRank}+0.001)) + 0.5))">/
 							<input type="text" name="attr_LevitationG" class="sheet-scoredisabled" disabled="true" value="(floor(@{LevitationO}/2))">/
 							<input type="text" name="attr_LevitationA" class="sheet-scoredisabled" disabled="true" value="(floor(@{LevitationO}/4))">
 						</div>
@@ -3204,7 +2961,7 @@ on("change:actioncheck", function() {
 						<div class="sheet-skill-ability-label">WIL</div>
 						<input type="number" name="attr_PhotokineticsRank" class="sheet-score" value="0">
 						<div class="sheet-skill-score-cell">
-							<input type="text" name="attr_PhotokineticsO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{PhotokineticsRank}+@{Will})*@{Telekinesis}) * (@{PhotokineticsRank}/(@{PhotokineticsRank}+0.001))))">/
+							<input type="text" name="attr_PhotokineticsO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{PhotokineticsRank}+@{Will})*@{Telekinesis}) * (@{PhotokineticsRank}/(@{PhotokineticsRank}+0.001)) + 0.5))">/
 							<input type="text" name="attr_PhotokineticsG" class="sheet-scoredisabled" disabled="true" value="(floor(@{PhotokineticsO}/2))">/
 							<input type="text" name="attr_PhotokineticsA" class="sheet-scoredisabled" disabled="true" value="(floor(@{PhotokineticsO}/4))">
 						</div>
@@ -3215,7 +2972,7 @@ on("change:actioncheck", function() {
 						<div class="sheet-skill-ability-label">WIL</div>
 						<input type="number" name="attr_PsychokineticsRank" class="sheet-score" value="0">
 						<div class="sheet-skill-score-cell">
-							<input type="text" name="attr_PsychokineticsO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{PsychokineticsRank}+@{Will})*@{Telekinesis}) * (@{PsychokineticsRank}/(@{PsychokineticsRank}+0.001))))">/
+							<input type="text" name="attr_PsychokineticsO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{PsychokineticsRank}+@{Will})*@{Telekinesis}) * (@{PsychokineticsRank}/(@{PsychokineticsRank}+0.001)) + 0.5))">/
 							<input type="text" name="attr_PsychokineticsG" class="sheet-scoredisabled" disabled="true" value="(floor(@{PsychokineticsO}/2))">/
 							<input type="text" name="attr_PsychokineticsA" class="sheet-scoredisabled" disabled="true" value="(floor(@{PsychokineticsO}/4))">
 						</div>
@@ -3226,7 +2983,7 @@ on("change:actioncheck", function() {
 						<div class="sheet-skill-ability-label">WIL</div>
 						<input type="number" name="attr_PyrokineticsRank" class="sheet-score" value="0">
 						<div class="sheet-skill-score-cell">
-							<input type="text" name="attr_PyrokineticsO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{PyrokineticsRank}+@{Will})*@{Telekinesis}) * (@{PyrokineticsRank}/(@{PyrokineticsRank}+0.001))))">/
+							<input type="text" name="attr_PyrokineticsO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{PyrokineticsRank}+@{Will})*@{Telekinesis}) * (@{PyrokineticsRank}/(@{PyrokineticsRank}+0.001)) + 0.5))">/
 							<input type="text" name="attr_PyrokineticsG" class="sheet-scoredisabled" disabled="true" value="(floor(@{PyrokineticsO}/2))">/
 							<input type="text" name="attr_PyrokineticsA" class="sheet-scoredisabled" disabled="true" value="(floor(@{PyrokineticsO}/4))">
 						</div>
@@ -3234,12 +2991,11 @@ on("change:actioncheck", function() {
 				</div>
 			</div>
 			<div class="sheet-skill-group-box">
-				<input type="checkbox" id="collapse_Telepathy" name="attr_Telepathy" class="sheet-collapse-check" value="1" />
-				<label class="sheet-skill-header-row" for="collapse_Telepathy">
+				<div class="sheet-skill-header-row">
 					<div></div><div class="sheet-skill-name">TELEPATHY</div><div></div>
 					<div class="sheet-skill-ability-label">RANKS</div>
 					<div class="sheet-skill-ability-label">SCORE</div>
-				</label>
+				</div>
 				<div class="sheet-skill-row">
 					<button type="roll" name="roll_Telepathy" value="&{template:default} {{name= @{character_name} - Telepathy}} {{score= [[@{TelepathyO}]]/[[@{TelepathyG}]]/[[@{TelepathyA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/telepathy)}}"></button>
 					<div class="sheet-skill-name">Telepathy <button type="roll" name="roll_Telepathy_link" class="sheet-skill-link" value="[Telepathy Wiki](https://aaa.dimble.net/skills/telepathy)">&#x2197;</button></div>
@@ -3258,7 +3014,7 @@ on("change:actioncheck", function() {
 						<div class="sheet-skill-ability-label">PER</div>
 						<input type="number" name="attr_ContactRank" class="sheet-score" value="0">
 						<div class="sheet-skill-score-cell">
-							<input type="text" name="attr_ContactO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{ContactRank}+@{Personality})*@{Telepathy}) * (@{ContactRank}/(@{ContactRank}+0.001))))">/
+							<input type="text" name="attr_ContactO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{ContactRank}+@{Personality})*@{Telepathy}) * (@{ContactRank}/(@{ContactRank}+0.001)) + 0.5))">/
 							<input type="text" name="attr_ContactG" class="sheet-scoredisabled" disabled="true" value="(floor(@{ContactO}/2))">/
 							<input type="text" name="attr_ContactA" class="sheet-scoredisabled" disabled="true" value="(floor(@{ContactO}/4))">
 						</div>
@@ -3269,7 +3025,7 @@ on("change:actioncheck", function() {
 						<div class="sheet-skill-ability-label">PER</div>
 						<input type="number" name="attr_DatalinkRank" class="sheet-score" value="0">
 						<div class="sheet-skill-score-cell">
-							<input type="text" name="attr_DatalinkO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{DatalinkRank}+@{Personality})*@{Telepathy}) * (@{DatalinkRank}/(@{DatalinkRank}+0.001))))">/
+							<input type="text" name="attr_DatalinkO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{DatalinkRank}+@{Personality})*@{Telepathy}) * (@{DatalinkRank}/(@{DatalinkRank}+0.001)) + 0.5))">/
 							<input type="text" name="attr_DatalinkG" class="sheet-scoredisabled" disabled="true" value="(floor(@{DatalinkO}/2))">/
 							<input type="text" name="attr_DatalinkA" class="sheet-scoredisabled" disabled="true" value="(floor(@{DatalinkO}/4))">
 						</div>
@@ -3280,7 +3036,7 @@ on("change:actioncheck", function() {
 						<div class="sheet-skill-ability-label">PER</div>
 						<input type="number" name="attr_IllusionRank" class="sheet-score" value="0">
 						<div class="sheet-skill-score-cell">
-							<input type="text" name="attr_IllusionO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{IllusionRank}+@{Personality})*@{Telepathy}) * (@{IllusionRank}/(@{IllusionRank}+0.001))))">/
+							<input type="text" name="attr_IllusionO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{IllusionRank}+@{Personality})*@{Telepathy}) * (@{IllusionRank}/(@{IllusionRank}+0.001)) + 0.5))">/
 							<input type="text" name="attr_IllusionG" class="sheet-scoredisabled" disabled="true" value="(floor(@{IllusionO}/2))">/
 							<input type="text" name="attr_IllusionA" class="sheet-scoredisabled" disabled="true" value="(floor(@{IllusionO}/4))">
 						</div>
@@ -3291,7 +3047,7 @@ on("change:actioncheck", function() {
 						<div class="sheet-skill-ability-label">PER</div>
 						<input type="number" name="attr_MindblastRank" class="sheet-score" value="0">
 						<div class="sheet-skill-score-cell">
-							<input type="text" name="attr_MindblastO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{MindblastRank}+@{Personality})*@{Telepathy}) * (@{MindblastRank}/(@{MindblastRank}+0.001))))">/
+							<input type="text" name="attr_MindblastO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{MindblastRank}+@{Personality})*@{Telepathy}) * (@{MindblastRank}/(@{MindblastRank}+0.001)) + 0.5))">/
 							<input type="text" name="attr_MindblastG" class="sheet-scoredisabled" disabled="true" value="(floor(@{MindblastO}/2))">/
 							<input type="text" name="attr_MindblastA" class="sheet-scoredisabled" disabled="true" value="(floor(@{MindblastO}/4))">
 						</div>
@@ -3302,7 +3058,7 @@ on("change:actioncheck", function() {
 						<div class="sheet-skill-ability-label">PER</div>
 						<input type="number" name="attr_MindshieldRank" class="sheet-score" value="0">
 						<div class="sheet-skill-score-cell">
-							<input type="text" name="attr_MindshieldO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{MindshieldRank}+@{Personality})*@{Telepathy}) * (@{MindshieldRank}/(@{MindshieldRank}+0.001))))">/
+							<input type="text" name="attr_MindshieldO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{MindshieldRank}+@{Personality})*@{Telepathy}) * (@{MindshieldRank}/(@{MindshieldRank}+0.001)) + 0.5))">/
 							<input type="text" name="attr_MindshieldG" class="sheet-scoredisabled" disabled="true" value="(floor(@{MindshieldO}/2))">/
 							<input type="text" name="attr_MindshieldA" class="sheet-scoredisabled" disabled="true" value="(floor(@{MindshieldO}/4))">
 						</div>
@@ -3313,7 +3069,7 @@ on("change:actioncheck", function() {
 						<div class="sheet-skill-ability-label">PER</div>
 						<input type="number" name="attr_SuggestRank" class="sheet-score" value="0">
 						<div class="sheet-skill-score-cell">
-							<input type="text" name="attr_SuggestO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{SuggestRank}+@{Personality})*@{Telepathy}) * (@{SuggestRank}/(@{SuggestRank}+0.001))))">/
+							<input type="text" name="attr_SuggestO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{SuggestRank}+@{Personality})*@{Telepathy}) * (@{SuggestRank}/(@{SuggestRank}+0.001)) + 0.5))">/
 							<input type="text" name="attr_SuggestG" class="sheet-scoredisabled" disabled="true" value="(floor(@{SuggestO}/2))">/
 							<input type="text" name="attr_SuggestA" class="sheet-scoredisabled" disabled="true" value="(floor(@{SuggestO}/4))">
 						</div>
@@ -3324,7 +3080,7 @@ on("change:actioncheck", function() {
 						<div class="sheet-skill-ability-label">PER</div>
 						<input type="number" name="attr_TireRank" class="sheet-score" value="0">
 						<div class="sheet-skill-score-cell">
-							<input type="text" name="attr_TireO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{TireRank}+@{Personality})*@{Telepathy}) * (@{TireRank}/(@{TireRank}+0.001))))">/
+							<input type="text" name="attr_TireO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{TireRank}+@{Personality})*@{Telepathy}) * (@{TireRank}/(@{TireRank}+0.001)) + 0.5))">/
 							<input type="text" name="attr_TireG" class="sheet-scoredisabled" disabled="true" value="(floor(@{TireO}/2))">/
 							<input type="text" name="attr_TireA" class="sheet-scoredisabled" disabled="true" value="(floor(@{TireO}/4))">
 						</div>
@@ -3332,12 +3088,11 @@ on("change:actioncheck", function() {
 				</div>
 			</div>
 			<div class="sheet-skill-group-box">
-				<input type="checkbox" id="collapse_Teleportation" name="attr_Teleportation" class="sheet-collapse-check" value="1" />
-				<label class="sheet-skill-header-row" for="collapse_Teleportation">
+				<div class="sheet-skill-header-row">
 					<div></div><div class="sheet-skill-name">TELEPORTATION</div><div></div>
 					<div class="sheet-skill-ability-label">RANKS</div>
 					<div class="sheet-skill-ability-label">SCORE</div>
-				</label>
+				</div>
 				<div class="sheet-skill-row">
 					<button type="roll" name="roll_Teleportation" value="&{template:default} {{name= @{character_name} - Teleportation}} {{score= [[@{TeleportationO}]]/[[@{TeleportationG}]]/[[@{TeleportationA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/teleportation)}}"></button>
 					<div class="sheet-skill-name">Teleportation <button type="roll" name="roll_Teleportation_link" class="sheet-skill-link" value="[Teleportation Wiki](https://aaa.dimble.net/skills/teleportation)">&#x2197;</button></div>
@@ -3356,7 +3111,7 @@ on("change:actioncheck", function() {
 						<div class="sheet-skill-ability-label">WIL</div>
 						<input type="number" name="attr_DimensionwalkRank" class="sheet-score" value="0">
 						<div class="sheet-skill-score-cell">
-							<input type="text" name="attr_DimensionwalkO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{DimensionwalkRank}+@{Will})*@{Teleportation}) * (@{DimensionwalkRank}/(@{DimensionwalkRank}+0.001))))">/
+							<input type="text" name="attr_DimensionwalkO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{DimensionwalkRank}+@{Will})*@{Teleportation}) * (@{DimensionwalkRank}/(@{DimensionwalkRank}+0.001)) + 0.5))">/
 							<input type="text" name="attr_DimensionwalkG" class="sheet-scoredisabled" disabled="true" value="(floor(@{DimensionwalkO}/2))">/
 							<input type="text" name="attr_DimensionwalkA" class="sheet-scoredisabled" disabled="true" value="(floor(@{DimensionwalkO}/4))">
 						</div>
@@ -3367,7 +3122,7 @@ on("change:actioncheck", function() {
 						<div class="sheet-skill-ability-label">WIL</div>
 						<input type="number" name="attr_ObjectteleportationRank" class="sheet-score" value="0">
 						<div class="sheet-skill-score-cell">
-							<input type="text" name="attr_ObjectteleportationO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{ObjectteleportationRank}+@{Will})*@{Teleportation}) * (@{ObjectteleportationRank}/(@{ObjectteleportationRank}+0.001))))">/
+							<input type="text" name="attr_ObjectteleportationO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{ObjectteleportationRank}+@{Will})*@{Teleportation}) * (@{ObjectteleportationRank}/(@{ObjectteleportationRank}+0.001)) + 0.5))">/
 							<input type="text" name="attr_ObjectteleportationG" class="sheet-scoredisabled" disabled="true" value="(floor(@{ObjectteleportationO}/2))">/
 							<input type="text" name="attr_ObjectteleportationA" class="sheet-scoredisabled" disabled="true" value="(floor(@{ObjectteleportationO}/4))">
 						</div>
@@ -3378,7 +3133,7 @@ on("change:actioncheck", function() {
 						<div class="sheet-skill-ability-label">WIL</div>
 						<input type="number" name="attr_SelfteleportationRank" class="sheet-score" value="0">
 						<div class="sheet-skill-score-cell">
-							<input type="text" name="attr_SelfteleportationO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{SelfteleportationRank}+@{Will})*@{Teleportation}) * (@{SelfteleportationRank}/(@{SelfteleportationRank}+0.001))))">/
+							<input type="text" name="attr_SelfteleportationO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{SelfteleportationRank}+@{Will})*@{Teleportation}) * (@{SelfteleportationRank}/(@{SelfteleportationRank}+0.001)) + 0.5))">/
 							<input type="text" name="attr_SelfteleportationG" class="sheet-scoredisabled" disabled="true" value="(floor(@{SelfteleportationO}/2))">/
 							<input type="text" name="attr_SelfteleportationA" class="sheet-scoredisabled" disabled="true" value="(floor(@{SelfteleportationO}/4))">
 						</div>
@@ -4180,16 +3935,7 @@ on("change:actioncheck", function() {
         return { step, warning };
     }
 
-    /* --- Fixed Unarmed row --- */
-    on('change:formunarmeddie change:formunarmedaccuracy change:formunarmedsit', () => {
-        getAttrs(['formunarmeddie', 'formunarmedaccuracy', 'formunarmedsit'], (v) => {
-            const result = calcStepDie(v.formunarmeddie, v.formunarmedaccuracy, v.formunarmedsit);
-            setAttrs({ 
-                formunarmed_step_die: result.step,
-                formunarmed_warning: result.warning
-            });
-        });
-    });
+
 
     /* --- Repeating attack form rows (row-scoped via sourceAttribute) --- */
     on('change:repeating_attackforms:attackformdie change:repeating_attackforms:attackformaccuracy change:repeating_attackforms:attackformsit', function(eventInfo) {

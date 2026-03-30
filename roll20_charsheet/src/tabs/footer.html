@@ -49,16 +49,7 @@
         return { step, warning };
     }
 
-    /* --- Fixed Unarmed row --- */
-    on('change:formunarmeddie change:formunarmedaccuracy change:formunarmedsit', () => {
-        getAttrs(['formunarmeddie', 'formunarmedaccuracy', 'formunarmedsit'], (v) => {
-            const result = calcStepDie(v.formunarmeddie, v.formunarmedaccuracy, v.formunarmedsit);
-            setAttrs({ 
-                formunarmed_step_die: result.step,
-                formunarmed_warning: result.warning
-            });
-        });
-    });
+
 
     /* --- Repeating attack form rows (row-scoped via sourceAttribute) --- */
     on('change:repeating_attackforms:attackformdie change:repeating_attackforms:attackformaccuracy change:repeating_attackforms:attackformsit', function(eventInfo) {

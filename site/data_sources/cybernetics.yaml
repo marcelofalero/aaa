@@ -564,14 +564,53 @@ categories:
         size: '2'
         cost: '- / 2000 / -'
         description:
-          en: 'Reflex is specialized cytronic circuitry that can be added to a body''s
+          en: >
+            Reflex is specialized cytronic circuitry that can be added to a body's
             cytronic circuitry system for the express purpose of allowing that body
             to make use of enhance programs. Enhance programs utilize the reflex wiring
             to allow the body to perform faster, more accurately, and with better
-            control. There is a downside: for every round a character activates his
-            reflex circuitry to run an enhance program, he suffers stun damage based
-            on the quality of the program. On a Critical Failure, the GM may call
-            for a cykosis check. All reflex is of Good quality.'
+            control. All reflex is of Good quality.
+
+
+            Enhance programs are a special kind of computer software that can only
+            be used by cyber-equipped characters. For a character who has a
+            nanocomputer and reflex wiring installed in his or her body, each
+            different type of enhance program provides a bonus to the character's
+            use of a particular physical skill or physical characteristic, as the
+            program and the reflex wiring work together to augment the character's
+            physical skill.
+
+
+            The use of an enhance program inflicts stun damage on the user for every
+            round or portion of a round that the program is running. The amount of
+            damage depends on the quality of the program: Ordinary, 1 stun; Good, 2
+            stuns; Amazing, 3 stuns. (There are no enhance programs of Marginal
+            quality.) Stun damage from multiple enhance programs running in the
+            same round is cumulative.
+
+
+            Each enhance program provides a -1, -2, or -3 bonus, depending on its
+            quality (Ordinary, Good, or Amazing). Physical skills that can be
+            stored on an enhance program include Athletics, Melee Weapons, Unarmed
+            Attack, Acrobatics, Manipulation, Primitive Ranged Weapons, and Modern
+            Ranged Weapons. On a Critical Failure, the GM may call for a cykosis
+            check.
+
+
+            An enhance program takes up 3 slots of active memory. The standard cost
+            of such a program is $1000 for Ordinary quality, $2000 for Good
+            quality, and $3000 for an Amazing program. Each specific type of
+            enhance program must be purchased separately. It does no good for a
+            character to have two copies of the same specific program running in
+            the same round, because the benefit provided by the second program is
+            not cumulative—but the stun damage is.
+
+
+            Characters must be careful about how they acquire enhance programs,
+            because some aren't what they appear to be. Enhance programs can be
+            rigged to inflict wounds instead or stuns, or they can be designed to
+            give penalties instead of bonuses, and some might even do both types
+            of harm to an unsuspecting user.
           es: "Los reflejos son circuitos cytrónicos especializados que pueden añadirse\
             \ al sistema de circuitos cytrónicos del cuerpo con el propósito expreso\
             \ de permitir que ese cuerpo haga uso de programas de mejora (enhance).\
