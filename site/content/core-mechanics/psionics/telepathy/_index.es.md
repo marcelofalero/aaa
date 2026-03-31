@@ -13,7 +13,6 @@ Esta habilidad amplia permite a un personaje abrir su mente a los pensamientos d
 
 ## Habilidades de Especialidad
 
-{{% list %}}
 - **[Armadura Psíquica](psychic-armor)**: Crear una zona de amortiguación mental que proporcione puntos de defensa psiónica.
 - **[Borrado Mental](mind-wipe)**: Borrar o editar recuerdos, o incluso conocimientos de habilidades, de la mente de un objetivo.
 - **[Cansancio](tire)**: Infringir daño por fatiga a un objetivo.
@@ -29,4 +28,3 @@ Esta habilidad amplia permite a un personaje abrir su mente a los pensamientos d
 - **[Proyección Psíquica](psychic-projection)**: Separar la mente del cuerpo físico para viajar de forma invisible e intangible.
 - **[Sometimiento](subdual)**: Engendrar sentimientos de calma o desapego en un objetivo para reducir la violencia.
 - **[Sugestión](suggest)**: Plantar un pensamiento en la mente de otra persona y convencerla de que es suyo.
-{{% /list %}}

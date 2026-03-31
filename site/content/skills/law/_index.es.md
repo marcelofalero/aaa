@@ -11,8 +11,6 @@ En una acción legal, el héroe y el oponente realizan tiradas de habilidad alte
 
 ## Habilidades de Especialidad
 
-{{% list %}}
-
 ### Procedimientos judiciales
 Abogados, jueces y otros utilizan esta habilidad para interactuar en un entorno judicial. Esta especialidad se usa para defender un caso o punto de vista en un procedimiento oficial.
 
@@ -31,4 +29,3 @@ Esta especialidad también se utiliza para determinar qué tan "legal" o sólido
 *No se puede usar sin estar entrenado.*
 
 Los abogados, jueces y otros utilizan esta habilidad para interactuar en salas de tribunales y en reuniones legislativas. Este aspecto de la habilidad amplia de Ley se utiliza para argumentar un caso o un punto de vista en un procedimiento oficial.
-{{% /list %}}

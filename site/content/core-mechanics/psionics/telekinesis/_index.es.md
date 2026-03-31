@@ -13,7 +13,6 @@ Esta habilidad amplia permite a un héroe manipular su entorno físico con el po
 
 ## Habilidades de Especialidad
 
-{{% list %}}
 - **[Crioquinesis](cryokinetics)**: Generar campos de frío intenso, congelando líquidos y tejidos.
 - **[Electroquinesis](electrokinetics)**: Acumular y dirigir cargas eléctricas.
 - **[Golpe Kinético](kinetic-blow)**: Utilizar las moléculas de aire para lanzar ataques físicos invisibles.
@@ -23,4 +22,3 @@ Esta habilidad amplia permite a un héroe manipular su entorno físico con el po
 - **[Presa de Sheya](sheyas-clutch)**: Apretar literalmente el corazón de una víctima psicokinéticamente (entrenado por sesheyans).
 - **[Psicoquinesis](psychokinetics)**: Mover, levantar o empujar objetos y apresar a seres vivos.
 - **[Piroquinesis](pyrokinesis)**: Excitar las moléculas para generar calor e incendiar objetos o crear tormentas de fuego.
-{{% /list %}}

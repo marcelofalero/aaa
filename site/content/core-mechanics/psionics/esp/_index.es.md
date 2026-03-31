@@ -13,7 +13,6 @@ Esta habilidad permite a un personaje experimentar su entorno a través de una a
 
 ## Habilidades de Especialidad
 
-{{% list %}}
 - **[Advertencia de Combate](battle-mind)**: Centrarse en el combate para obtener bonificaciones a las tiradas de acción.
 - **[Búsqueda en los Sueños (Dream Hunt)](dream-hunt)**: Concentrarse y participar mentalmente en una caza para localizar a un ser vivo.
 - **[Clariaudiencia](clairaudience)**: Proyectar la mente a un lugar distante para oír sonidos.
@@ -24,4 +23,3 @@ Esta habilidad permite a un personaje experimentar su entorno a través de una a
 - **[Postcognición](postcognition)**: Recibir impresiones sobre el pasado reciente de un lugar o persona.
 - **[Precognición](precognition)**: Recibir impresiones y destellos sobre posibles sucesos futuros.
 - **[Psicometría](psychometry)**: Leer impresiones psíquicas de objetos inanimados a través del tacto.
-{{% /list %}}

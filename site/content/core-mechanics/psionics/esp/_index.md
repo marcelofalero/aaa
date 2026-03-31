@@ -13,7 +13,6 @@ This skill allows a character to experience his environment through an agency be
 
 ## Specialty Skills
 
-{{% list %}}
 - **[Battle Mind](battle-mind)**: Focus on the battle for bonuses to action checks.
 - **[Clairaudience](clairaudience)**: Project the mind to a distant location to hear sounds.
 - **[Clairvoyance](clairvoyance)**: Project the mind to a distant location to see images.
@@ -24,4 +23,3 @@ This skill allows a character to experience his environment through an agency be
 - **[Postcognition](postcognition)**: Receive impressions about the recent past of a location or person.
 - **[Precognition](precognition)**: Receive impressions and flashes about possible future events.
 - **[Psychometry](psychometry)**: Read psychic impressions from inanimate objects through touch.
-{{% /list %}}

@@ -13,7 +13,6 @@ This broad skill allows a character to open his or her mind to the thoughts of o
 
 ## Specialty Skills
 
-{{% list %}}
 - **[Contact](contact)**: Send and receive thoughts to and from another character for information exchange.
 - **[Datalink](datalink)**: Link mind with a computer or cybernetic machine to operate systems.
 - **[Drain](drain)**: Draw energy or attribute points from another living being.
@@ -29,4 +28,3 @@ This broad skill allows a character to open his or her mind to the thoughts of o
 - **[Suggest](suggest)**: Plant a thought into another person's mind and convince them it is their own.
 - **[Tire](tire)**: Inflict fatigue damage upon a target.
 - **[Undo](undo)**: Reverse the effects of telepathic illusions, mind wipes, or suggestions.
-{{% /list %}}

@@ -13,7 +13,6 @@ This broad skill allows a character to manipulate his or her physical environmen
 
 ## Specialty Skills
 
-{{% list %}}
 - **[Cryokinetics](cryokinetics)**: Generate fields of intense cold, freezing liquids and tissues.
 - **[Electrokinetics](electrokinetics)**: Accumulate and direct electrical charges.
 - **[Kinetic Blow](kinetic-blow)**: Use air molecules to launch invisible physical attacks.
@@ -23,4 +22,3 @@ This broad skill allows a character to manipulate his or her physical environmen
 - **[Psychokinetics](psychokinetics)**: Move, lift, or push objects and grapple living beings.
 - **[Pyrokinesis](pyrokinesis)**: Excite molecules to generate heat and set objects on fire or create firestorms.
 - **[Sheya's Clutch](sheyas-clutch)**: Psychokinetically squeeze the heart of a victim (Sesheyan-trained).
-{{% /list %}}

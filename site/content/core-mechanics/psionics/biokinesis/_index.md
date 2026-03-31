@@ -13,7 +13,6 @@ This broad skill allows a character to manipulate his or her own biology and phy
 
 ## Specialty Skills
 
-{{% list %}}
 - **[Bio-Armor](bio-armor)**: Solidify the outer layer of skin to create a natural, protective layer.
 - **[Bioweapon](bioweapon)**: Mutate hands into natural weapons like claws or stingers.
 - **[Clamber](clamber)**: Generate tiny suckers on hands/feet to climb or run on vertical and inverted surfaces.
@@ -24,4 +23,3 @@ This broad skill allows a character to manipulate his or her own biology and phy
 - **[Rejuvenate](rejuvenate)**: Reverse the aging process or restore youth to cells.
 - **[Shatter](shatter)**: Direct bio-energy into solid objects or armor to make them break.
 - **[Transfer Damage](transfer-damage)**: Transfer wounds or fatigue from one living being to another.
-{{% /list %}}

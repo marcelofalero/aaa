@@ -13,7 +13,6 @@ Esta habilidad amplia permite a un personaje manipular su propia biología y fis
 
 ## Habilidades de Especialidad
 
-{{% list %}}
 - **[Bio-Armadura](bio-armor)**: Solidificar la capa externa de la piel para crear una capa protectora natural.
 - **[Bioarma](bioweapon)**: Mutar las manos en armas naturales como garras o aguijones.
 - **[Controlar el Metabolismo](control-metabolism)**: Controlar las funciones corporales como el ritmo cardíaco para obtener beneficios físicos.
@@ -24,4 +23,3 @@ Esta habilidad amplia permite a un personaje manipular su propia biología y fis
 - **[Rejuvenecer](rejuvenate)**: Revertir el proceso de envejecimiento o restaurar la juventud de las células.
 - **[Transferir Daño](transfer-damage)**: Transferir heridas o fatiga de un ser vivo a otro.
 - **[Trepado](clamber)**: Generar diminutas ventosas en manos/pies para trepar o correr por superficies verticales e invertidas.
-{{% /list %}}
