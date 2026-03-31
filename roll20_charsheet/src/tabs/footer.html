@@ -51,18 +51,29 @@
 
 
 
-    /* --- Repeating attack form rows (row-scoped via sourceAttribute) --- */
-    on('change:repeating_attackforms:attackformdie change:repeating_attackforms:attackformaccuracy change:repeating_attackforms:attackformsit', function(eventInfo) {
-        const rowMatch = eventInfo.sourceAttribute.match(/repeating_attackforms_([-\w]+)_/);
-        if (!rowMatch) return;
-        const rowId = rowMatch[1];
-        const prefix = 'repeating_attackforms_' + rowId + '_';
+    /* --- Function to update a single attack form row --- */
+    function updateAttackForm(rowId) {
+        const prefix = rowId ? 'repeating_attackforms_' + rowId + '_' : 'repeating_attackforms_';
         getAttrs([prefix + 'attackformdie', prefix + 'attackformaccuracy', prefix + 'attackformsit'], function(v) {
             const result = calcStepDie(v[prefix + 'attackformdie'], v[prefix + 'attackformaccuracy'], v[prefix + 'attackformsit']);
             setAttrs({ 
                 [prefix + 'attackform_step_die']: result.step,
                 [prefix + 'attackform_warning']: result.warning
             });
+        });
+    }
+
+    /* --- Repeating attack form rows (row-scoped via sourceAttribute) --- */
+    on('change:repeating_attackforms:attackformdie change:repeating_attackforms:attackformaccuracy change:repeating_attackforms:attackformsit', function(eventInfo) {
+        const rowMatch = eventInfo.sourceAttribute.match(/repeating_attackforms_([-\w]+)_/);
+        if (!rowMatch) return;
+        updateAttackForm(rowMatch[1]);
+    });
+
+    /* --- Universal initialization on sheet open --- */
+    on('sheet:opened', function() {
+        getSectionIDs('repeating_attackforms', function(idarray) {
+            idarray.forEach(rowId => updateAttackForm(rowId));
         });
     });
 

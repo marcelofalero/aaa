@@ -427,7 +427,7 @@ on("change:actioncheck", function() {
 					<!-- Row 1: Name, Type, Range, Notes -->
 					<div class="sheet-attackform-row">
 						<button type="roll" name="roll_attackform"
-							value="&{template:default} {{name= @{character_name} - @{attackformname}}} {{score= [[@{attackformscore}]]/[[@{attackformscoregood}]]/[[@{attackformscooreamazing}]]}} {{type= @{attackformtype}}} {{range= @{attackformrange}}} {{damage= [[@{attackformdamageordinary}]]@{attackformdamageordinarytype}/[[@{attackformdamagegood}]]@{attackformdamagegoodtype}/[[@{attackformdamageamazing}]]@{attackformdamageamazingtype}}} {{notes= @{attackformnotes}}} {{results= [[1d20cs&lt;1cf&gt;20 + (@{attackform_step_die})]]}}"></button>
+							value="&{template:default} {{name= @{character_name} - @{attackformname}}} {{score= [[@{attackformscore}]]/[[@{attackformscoregood}]]/[[@{attackformscoreamazing}]]}} {{type= @{attackformtype}}} {{range= @{attackformrange}}} {{damage= [[@{attackformdamageordinary}]]@{attackformdamageordinarytype}/[[@{attackformdamagegood}]]@{attackformdamagegoodtype}/[[@{attackformdamageamazing}]]@{attackformdamageamazingtype}}} {{notes= @{attackformnotes}}} {{results= [[1d20cs&lt;1cf&gt;20 @{attackform_step_die}]]}}"></button>
 
 						<div class="sheet-attackform-field" style="flex: 6; min-width: 200px;">
 							<div class="sheet-attackform-label" data-i18n="attack-form-name">Attack Form Name</div>
@@ -463,10 +463,13 @@ on("change:actioncheck", function() {
 								<input type="text" name="attr_attackformscoregood" disabled="true"
 									value="(floor(@{attackformscore}/2))">
 								<span>/</span>
-								<input type="text" name="attr_attackformscooreamazing" disabled="true"
+								<input type="text" name="attr_attackformscoreamazing" disabled="true"
 									value="(floor(@{attackformscore}/4))">
 							</div>
 						</div>
+
+						<input type="hidden" name="attr_attackform_step_die" value="+0">
+						<input type="hidden" name="attr_attackform_warning" value="">
 
 						<div class="sheet-attackform-field">
 							<div class="sheet-attackform-label" data-i18n="base-die">Base Die</div>
@@ -1960,17 +1963,6 @@ on("change:actioncheck", function() {
 							<input type="text" name="attr_BluntO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{BluntRank}*@{MeleeCombat})+@{Strength})/(2-@{MeleeCombat})))">/
 							<input type="text" name="attr_BluntG" class="sheet-scoredisabled" disabled="true" value="(floor(@{BluntO}/2))">/
 							<input type="text" name="attr_BluntA" class="sheet-scoredisabled" disabled="true" value="(floor(@{BluntO}/4))">
-						</div>
-					</div>
-					<div class="sheet-skill-row sheet-spec">
-						<button type="roll" name="roll_Brawl" value="&{template:default} {{name= @{character_name} - Brawl}} {{score= [[@{BrawlO}]]/[[@{BrawlG}]]/[[@{BrawlA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/melee-combat#brawl-str)}}"></button>
-						<div class="sheet-skill-name">Brawl <button type="roll" name="roll_Brawl_link" class="sheet-skill-link" value="[Brawl Wiki](https://aaa.dimble.net/skills/melee-combat#brawl-str)">&#x2197;</button></div>
-						<div class="sheet-skill-ability-label">STR</div>
-						<input type="number" name="attr_BrawlRank" class="sheet-score" value="0">
-						<div class="sheet-skill-score-cell">
-							<input type="text" name="attr_BrawlO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{BrawlRank}*@{MeleeCombat})+@{Strength})/(2-@{MeleeCombat})))">/
-							<input type="text" name="attr_BrawlG" class="sheet-scoredisabled" disabled="true" value="(floor(@{BrawlO}/2))">/
-							<input type="text" name="attr_BrawlA" class="sheet-scoredisabled" disabled="true" value="(floor(@{BrawlO}/4))">
 						</div>
 					</div>
 					<div class="sheet-skill-row sheet-spec">
@@ -3937,18 +3929,29 @@ on("change:actioncheck", function() {
 
 
 
-    /* --- Repeating attack form rows (row-scoped via sourceAttribute) --- */
-    on('change:repeating_attackforms:attackformdie change:repeating_attackforms:attackformaccuracy change:repeating_attackforms:attackformsit', function(eventInfo) {
-        const rowMatch = eventInfo.sourceAttribute.match(/repeating_attackforms_([-\w]+)_/);
-        if (!rowMatch) return;
-        const rowId = rowMatch[1];
-        const prefix = 'repeating_attackforms_' + rowId + '_';
+    /* --- Function to update a single attack form row --- */
+    function updateAttackForm(rowId) {
+        const prefix = rowId ? 'repeating_attackforms_' + rowId + '_' : 'repeating_attackforms_';
         getAttrs([prefix + 'attackformdie', prefix + 'attackformaccuracy', prefix + 'attackformsit'], function(v) {
             const result = calcStepDie(v[prefix + 'attackformdie'], v[prefix + 'attackformaccuracy'], v[prefix + 'attackformsit']);
             setAttrs({ 
                 [prefix + 'attackform_step_die']: result.step,
                 [prefix + 'attackform_warning']: result.warning
             });
+        });
+    }
+
+    /* --- Repeating attack form rows (row-scoped via sourceAttribute) --- */
+    on('change:repeating_attackforms:attackformdie change:repeating_attackforms:attackformaccuracy change:repeating_attackforms:attackformsit', function(eventInfo) {
+        const rowMatch = eventInfo.sourceAttribute.match(/repeating_attackforms_([-\w]+)_/);
+        if (!rowMatch) return;
+        updateAttackForm(rowMatch[1]);
+    });
+
+    /* --- Universal initialization on sheet open --- */
+    on('sheet:opened', function() {
+        getSectionIDs('repeating_attackforms', function(idarray) {
+            idarray.forEach(rowId => updateAttackForm(rowId));
         });
     });
 
