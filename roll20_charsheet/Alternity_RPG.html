@@ -2830,36 +2830,113 @@ on('change:repeating_attackforms sheet:opened', function() {
 				</div>
 				<div class="sheet-specialties-container">
 					<div class="sheet-skill-row sheet-spec">
-						<button type="roll" name="roll_Bioregeneration" value="&{template:default} {{name= @{character_name} - Bio-regeneration}} {{score= [[@{BioregenerationO}]]/[[@{BioregenerationG}]]/[[@{BioregenerationA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/biokinesis#bio-regeneration-con---trained-only)}}"></button>
-						<div class="sheet-skill-name sheet-trained-only">Bio-regeneration <button type="roll" name="roll_Bioregeneration_link" class="sheet-skill-link" value="[Bio-regeneration Wiki](https://aaa.dimble.net/skills/biokinesis#bio-regeneration-con---trained-only)">&#x2197;</button></div>
+						<button type="roll" name="roll_BioArmor" value="&{template:default} {{name= @{character_name} - Bio-Armor}} {{score= [[@{BioArmorO}]]/[[@{BioArmorG}]]/[[@{BioArmorA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/biokinesis#bio-armor-con---trained-only)}}"></button>
+						<div class="sheet-skill-name sheet-trained-only">Bio-Armor <button type="roll" name="roll_BioArmor_link" class="sheet-skill-link" value="[Bio-Armor Wiki](https://aaa.dimble.net/skills/biokinesis#bio-armor-con---trained-only)">&#x2197;</button></div>
 						<div class="sheet-skill-ability-label">CON</div>
-						<input type="number" name="attr_BioregenerationRank" class="sheet-score" value="0">
+						<input type="number" name="attr_BioArmorRank" class="sheet-score" value="0">
 						<div class="sheet-skill-score-cell">
-							<input type="text" name="attr_BioregenerationO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{BioregenerationRank}+@{Constitution})*@{Biokinesis}) * (@{BioregenerationRank}/(@{BioregenerationRank}+0.001)) + 0.5))">/
-							<input type="text" name="attr_BioregenerationG" class="sheet-scoredisabled" disabled="true" value="(floor(@{BioregenerationO}/2))">/
-							<input type="text" name="attr_BioregenerationA" class="sheet-scoredisabled" disabled="true" value="(floor(@{BioregenerationO}/4))">
+							<input type="text" name="attr_BioArmorO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{BioArmorRank}+@{Constitution})*@{Biokinesis}) * (@{BioArmorRank}/(@{BioArmorRank}+0.001)) + 0.5))">/
+							<input type="text" name="attr_BioArmorG" class="sheet-scoredisabled" disabled="true" value="(floor(@{BioArmorO}/2))">/
+							<input type="text" name="attr_BioArmorA" class="sheet-scoredisabled" disabled="true" value="(floor(@{BioArmorO}/4))">
 						</div>
 					</div>
 					<div class="sheet-skill-row sheet-spec">
-						<button type="roll" name="roll_Physicalenhancement" value="&{template:default} {{name= @{character_name} - Physical enhancement}} {{score= [[@{PhysicalenhancementO}]]/[[@{PhysicalenhancementG}]]/[[@{PhysicalenhancementA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/biokinesis#physical-enhancement-con---trained-only)}}"></button>
-						<div class="sheet-skill-name sheet-trained-only">Physical enhancement <button type="roll" name="roll_Physicalenhancement_link" class="sheet-skill-link" value="[Physical enhancement Wiki](https://aaa.dimble.net/skills/biokinesis#physical-enhancement-con---trained-only)">&#x2197;</button></div>
+						<button type="roll" name="roll_Bioweapon" value="&{template:default} {{name= @{character_name} - Bioweapon}} {{score= [[@{BioweaponO}]]/[[@{BioweaponG}]]/[[@{BioweaponA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/biokinesis#bioweapon-con---trained-only)}}"></button>
+						<div class="sheet-skill-name sheet-trained-only">Bioweapon <button type="roll" name="roll_Bioweapon_link" class="sheet-skill-link" value="[Bioweapon Wiki](https://aaa.dimble.net/skills/biokinesis#bioweapon-con---trained-only)">&#x2197;</button></div>
 						<div class="sheet-skill-ability-label">CON</div>
-						<input type="number" name="attr_PhysicalenhancementRank" class="sheet-score" value="0">
+						<input type="number" name="attr_BioweaponRank" class="sheet-score" value="0">
 						<div class="sheet-skill-score-cell">
-							<input type="text" name="attr_PhysicalenhancementO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{PhysicalenhancementRank}+@{Constitution})*@{Biokinesis}) * (@{PhysicalenhancementRank}/(@{PhysicalenhancementRank}+0.001)) + 0.5))">/
-							<input type="text" name="attr_PhysicalenhancementG" class="sheet-scoredisabled" disabled="true" value="(floor(@{PhysicalenhancementO}/2))">/
-							<input type="text" name="attr_PhysicalenhancementA" class="sheet-scoredisabled" disabled="true" value="(floor(@{PhysicalenhancementO}/4))">
+							<input type="text" name="attr_BioweaponO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{BioweaponRank}+@{Constitution})*@{Biokinesis}) * (@{BioweaponRank}/(@{BioweaponRank}+0.001)) + 0.5))">/
+							<input type="text" name="attr_BioweaponG" class="sheet-scoredisabled" disabled="true" value="(floor(@{BioweaponO}/2))">/
+							<input type="text" name="attr_BioweaponA" class="sheet-scoredisabled" disabled="true" value="(floor(@{BioweaponO}/4))">
 						</div>
 					</div>
 					<div class="sheet-skill-row sheet-spec">
-						<button type="roll" name="roll_Systemcontrol" value="&{template:default} {{name= @{character_name} - System control}} {{score= [[@{SystemcontrolO}]]/[[@{SystemcontrolG}]]/[[@{SystemcontrolA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/biokinesis#system-control-con---trained-only)}}"></button>
-						<div class="sheet-skill-name sheet-trained-only">System control <button type="roll" name="roll_Systemcontrol_link" class="sheet-skill-link" value="[System control Wiki](https://aaa.dimble.net/skills/biokinesis#system-control-con---trained-only)">&#x2197;</button></div>
+						<button type="roll" name="roll_Clamber" value="&{template:default} {{name= @{character_name} - Clamber}} {{score= [[@{ClamberO}]]/[[@{ClamberG}]]/[[@{ClamberA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/biokinesis#clamber-con---trained-only)}}"></button>
+						<div class="sheet-skill-name sheet-trained-only">Clamber <button type="roll" name="roll_Clamber_link" class="sheet-skill-link" value="[Clamber Wiki](https://aaa.dimble.net/skills/biokinesis#clamber-con---trained-only)">&#x2197;</button></div>
 						<div class="sheet-skill-ability-label">CON</div>
-						<input type="number" name="attr_SystemcontrolRank" class="sheet-score" value="0">
+						<input type="number" name="attr_ClamberRank" class="sheet-score" value="0">
 						<div class="sheet-skill-score-cell">
-							<input type="text" name="attr_SystemcontrolO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{SystemcontrolRank}+@{Constitution})*@{Biokinesis}) * (@{SystemcontrolRank}/(@{SystemcontrolRank}+0.001)) + 0.5))">/
-							<input type="text" name="attr_SystemcontrolG" class="sheet-scoredisabled" disabled="true" value="(floor(@{SystemcontrolO}/2))">/
-							<input type="text" name="attr_SystemcontrolA" class="sheet-scoredisabled" disabled="true" value="(floor(@{SystemcontrolO}/4))">
+							<input type="text" name="attr_ClamberO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{ClamberRank}+@{Constitution})*@{Biokinesis}) * (@{ClamberRank}/(@{ClamberRank}+0.001)) + 0.5))">/
+							<input type="text" name="attr_ClamberG" class="sheet-scoredisabled" disabled="true" value="(floor(@{ClamberO}/2))">/
+							<input type="text" name="attr_ClamberA" class="sheet-scoredisabled" disabled="true" value="(floor(@{ClamberO}/4))">
+						</div>
+					</div>
+					<div class="sheet-skill-row sheet-spec">
+						<button type="roll" name="roll_ControlMetabolism" value="&{template:default} {{name= @{character_name} - Control Metabolism}} {{score= [[@{ControlMetabolismO}]]/[[@{ControlMetabolismG}]]/[[@{ControlMetabolismA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/biokinesis#control-metabolism-con---trained-only)}}"></button>
+						<div class="sheet-skill-name sheet-trained-only">Control Metabolism <button type="roll" name="roll_ControlMetabolism_link" class="sheet-skill-link" value="[Control Metabolism Wiki](https://aaa.dimble.net/skills/biokinesis#control-metabolism-con---trained-only)">&#x2197;</button></div>
+						<div class="sheet-skill-ability-label">CON</div>
+						<input type="number" name="attr_ControlMetabolismRank" class="sheet-score" value="0">
+						<div class="sheet-skill-score-cell">
+							<input type="text" name="attr_ControlMetabolismO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{ControlMetabolismRank}+@{Constitution})*@{Biokinesis}) * (@{ControlMetabolismRank}/(@{ControlMetabolismRank}+0.001)) + 0.5))">/
+							<input type="text" name="attr_ControlMetabolismG" class="sheet-scoredisabled" disabled="true" value="(floor(@{ControlMetabolismO}/2))">/
+							<input type="text" name="attr_ControlMetabolismA" class="sheet-scoredisabled" disabled="true" value="(floor(@{ControlMetabolismO}/4))">
+						</div>
+					</div>
+					<div class="sheet-skill-row sheet-spec">
+						<button type="roll" name="roll_Heal" value="&{template:default} {{name= @{character_name} - Heal}} {{score= [[@{HealO}]]/[[@{HealG}]]/[[@{HealA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/biokinesis#heal-con---trained-only)}}"></button>
+						<div class="sheet-skill-name sheet-trained-only">Heal <button type="roll" name="roll_Heal_link" class="sheet-skill-link" value="[Heal Wiki](https://aaa.dimble.net/skills/biokinesis#heal-con---trained-only)">&#x2197;</button></div>
+						<div class="sheet-skill-ability-label">CON</div>
+						<input type="number" name="attr_HealRank" class="sheet-score" value="0">
+						<div class="sheet-skill-score-cell">
+							<input type="text" name="attr_HealO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{HealRank}+@{Constitution})*@{Biokinesis}) * (@{HealRank}/(@{HealRank}+0.001)) + 0.5))">/
+							<input type="text" name="attr_HealG" class="sheet-scoredisabled" disabled="true" value="(floor(@{HealO}/2))">/
+							<input type="text" name="attr_HealA" class="sheet-scoredisabled" disabled="true" value="(floor(@{HealO}/4))">
+						</div>
+					</div>
+					<div class="sheet-skill-row sheet-spec">
+						<button type="roll" name="roll_Intangibility" value="&{template:default} {{name= @{character_name} - Intangibility}} {{score= [[@{IntangibilityO}]]/[[@{IntangibilityG}]]/[[@{IntangibilityA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/biokinesis#intangibility-con---trained-only)}}"></button>
+						<div class="sheet-skill-name sheet-trained-only">Intangibility <button type="roll" name="roll_Intangibility_link" class="sheet-skill-link" value="[Intangibility Wiki](https://aaa.dimble.net/skills/biokinesis#intangibility-con---trained-only)">&#x2197;</button></div>
+						<div class="sheet-skill-ability-label">CON</div>
+						<input type="number" name="attr_IntangibilityRank" class="sheet-score" value="0">
+						<div class="sheet-skill-score-cell">
+							<input type="text" name="attr_IntangibilityO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{IntangibilityRank}+@{Constitution})*@{Biokinesis}) * (@{IntangibilityRank}/(@{IntangibilityRank}+0.001)) + 0.5))">/
+							<input type="text" name="attr_IntangibilityG" class="sheet-scoredisabled" disabled="true" value="(floor(@{IntangibilityO}/2))">/
+							<input type="text" name="attr_IntangibilityA" class="sheet-scoredisabled" disabled="true" value="(floor(@{IntangibilityO}/4))">
+						</div>
+					</div>
+					<div class="sheet-skill-row sheet-spec">
+						<button type="roll" name="roll_Morph" value="&{template:default} {{name= @{character_name} - Morph}} {{score= [[@{MorphO}]]/[[@{MorphG}]]/[[@{MorphA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/biokinesis#morph-con---trained-only)}}"></button>
+						<div class="sheet-skill-name sheet-trained-only">Morph <button type="roll" name="roll_Morph_link" class="sheet-skill-link" value="[Morph Wiki](https://aaa.dimble.net/skills/biokinesis#morph-con---trained-only)">&#x2197;</button></div>
+						<div class="sheet-skill-ability-label">CON</div>
+						<input type="number" name="attr_MorphRank" class="sheet-score" value="0">
+						<div class="sheet-skill-score-cell">
+							<input type="text" name="attr_MorphO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{MorphRank}+@{Constitution})*@{Biokinesis}) * (@{MorphRank}/(@{MorphRank}+0.001)) + 0.5))">/
+							<input type="text" name="attr_MorphG" class="sheet-scoredisabled" disabled="true" value="(floor(@{MorphO}/2))">/
+							<input type="text" name="attr_MorphA" class="sheet-scoredisabled" disabled="true" value="(floor(@{MorphO}/4))">
+						</div>
+					</div>
+					<div class="sheet-skill-row sheet-spec">
+						<button type="roll" name="roll_Rejuvenate" value="&{template:default} {{name= @{character_name} - Rejuvenate}} {{score= [[@{RejuvenateO}]]/[[@{RejuvenateG}]]/[[@{RejuvenateA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/biokinesis#rejuvenate-con---trained-only)}}"></button>
+						<div class="sheet-skill-name sheet-trained-only">Rejuvenate <button type="roll" name="roll_Rejuvenate_link" class="sheet-skill-link" value="[Rejuvenate Wiki](https://aaa.dimble.net/skills/biokinesis#rejuvenate-con---trained-only)">&#x2197;</button></div>
+						<div class="sheet-skill-ability-label">CON</div>
+						<input type="number" name="attr_RejuvenateRank" class="sheet-score" value="0">
+						<div class="sheet-skill-score-cell">
+							<input type="text" name="attr_RejuvenateO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{RejuvenateRank}+@{Constitution})*@{Biokinesis}) * (@{RejuvenateRank}/(@{RejuvenateRank}+0.001)) + 0.5))">/
+							<input type="text" name="attr_RejuvenateG" class="sheet-scoredisabled" disabled="true" value="(floor(@{RejuvenateO}/2))">/
+							<input type="text" name="attr_RejuvenateA" class="sheet-scoredisabled" disabled="true" value="(floor(@{RejuvenateO}/4))">
+						</div>
+					</div>
+					<div class="sheet-skill-row sheet-spec">
+						<button type="roll" name="roll_Shatter" value="&{template:default} {{name= @{character_name} - Shatter}} {{score= [[@{ShatterO}]]/[[@{ShatterG}]]/[[@{ShatterA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/biokinesis#shatter-con---trained-only)}}"></button>
+						<div class="sheet-skill-name sheet-trained-only">Shatter <button type="roll" name="roll_Shatter_link" class="sheet-skill-link" value="[Shatter Wiki](https://aaa.dimble.net/skills/biokinesis#shatter-con---trained-only)">&#x2197;</button></div>
+						<div class="sheet-skill-ability-label">CON</div>
+						<input type="number" name="attr_ShatterRank" class="sheet-score" value="0">
+						<div class="sheet-skill-score-cell">
+							<input type="text" name="attr_ShatterO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{ShatterRank}+@{Constitution})*@{Biokinesis}) * (@{ShatterRank}/(@{ShatterRank}+0.001)) + 0.5))">/
+							<input type="text" name="attr_ShatterG" class="sheet-scoredisabled" disabled="true" value="(floor(@{ShatterO}/2))">/
+							<input type="text" name="attr_ShatterA" class="sheet-scoredisabled" disabled="true" value="(floor(@{ShatterO}/4))">
+						</div>
+					</div>
+					<div class="sheet-skill-row sheet-spec">
+						<button type="roll" name="roll_TransferDamage" value="&{template:default} {{name= @{character_name} - Transfer Damage}} {{score= [[@{TransferDamageO}]]/[[@{TransferDamageG}]]/[[@{TransferDamageA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/biokinesis#transfer-damage-con---trained-only)}}"></button>
+						<div class="sheet-skill-name sheet-trained-only">Transfer Damage <button type="roll" name="roll_TransferDamage_link" class="sheet-skill-link" value="[Transfer Damage Wiki](https://aaa.dimble.net/skills/biokinesis#transfer-damage-con---trained-only)">&#x2197;</button></div>
+						<div class="sheet-skill-ability-label">CON</div>
+						<input type="number" name="attr_TransferDamageRank" class="sheet-score" value="0">
+						<div class="sheet-skill-score-cell">
+							<input type="text" name="attr_TransferDamageO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{TransferDamageRank}+@{Constitution})*@{Biokinesis}) * (@{TransferDamageRank}/(@{TransferDamageRank}+0.001)) + 0.5))">/
+							<input type="text" name="attr_TransferDamageG" class="sheet-scoredisabled" disabled="true" value="(floor(@{TransferDamageO}/2))">/
+							<input type="text" name="attr_TransferDamageA" class="sheet-scoredisabled" disabled="true" value="(floor(@{TransferDamageO}/4))">
 						</div>
 					</div>
 				</div>
@@ -2883,6 +2960,17 @@ on('change:repeating_attackforms sheet:opened', function() {
 				</div>
 				<div class="sheet-specialties-container">
 					<div class="sheet-skill-row sheet-spec">
+						<button type="roll" name="roll_BattleMind" value="&{template:default} {{name= @{character_name} - Battle Mind}} {{score= [[@{BattleMindO}]]/[[@{BattleMindG}]]/[[@{BattleMindA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/esp#battle-mind-int---trained-only)}}"></button>
+						<div class="sheet-skill-name sheet-trained-only">Battle Mind <button type="roll" name="roll_BattleMind_link" class="sheet-skill-link" value="[Battle Mind Wiki](https://aaa.dimble.net/skills/esp#battle-mind-int---trained-only)">&#x2197;</button></div>
+						<div class="sheet-skill-ability-label">INT</div>
+						<input type="number" name="attr_BattleMindRank" class="sheet-score" value="0">
+						<div class="sheet-skill-score-cell">
+							<input type="text" name="attr_BattleMindO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{BattleMindRank}+@{Intelligence})*@{ESP}) * (@{BattleMindRank}/(@{BattleMindRank}+0.001)) + 0.5))">/
+							<input type="text" name="attr_BattleMindG" class="sheet-scoredisabled" disabled="true" value="(floor(@{BattleMindO}/2))">/
+							<input type="text" name="attr_BattleMindA" class="sheet-scoredisabled" disabled="true" value="(floor(@{BattleMindO}/4))">
+						</div>
+					</div>
+					<div class="sheet-skill-row sheet-spec">
 						<button type="roll" name="roll_Clairaudience" value="&{template:default} {{name= @{character_name} - Clairaudience}} {{score= [[@{ClairaudienceO}]]/[[@{ClairaudienceG}]]/[[@{ClairaudienceA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/esp#clairaudience-int---trained-only)}}"></button>
 						<div class="sheet-skill-name sheet-trained-only">Clairaudience <button type="roll" name="roll_Clairaudience_link" class="sheet-skill-link" value="[Clairaudience Wiki](https://aaa.dimble.net/skills/esp#clairaudience-int---trained-only)">&#x2197;</button></div>
 						<div class="sheet-skill-ability-label">INT</div>
@@ -2905,14 +2993,47 @@ on('change:repeating_attackforms sheet:opened', function() {
 						</div>
 					</div>
 					<div class="sheet-skill-row sheet-spec">
-						<button type="roll" name="roll_Empathy" value="&{template:default} {{name= @{character_name} - Empathy}} {{score= [[@{EmpathyO}]]/[[@{EmpathyG}]]/[[@{EmpathyA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/esp#empathy-wil---trained-only)}}"></button>
-						<div class="sheet-skill-name sheet-trained-only">Empathy <button type="roll" name="roll_Empathy_link" class="sheet-skill-link" value="[Empathy Wiki](https://aaa.dimble.net/skills/esp#empathy-wil---trained-only)">&#x2197;</button></div>
-						<div class="sheet-skill-ability-label">WIL</div>
+						<button type="roll" name="roll_DreamHunt" value="&{template:default} {{name= @{character_name} - Dream Hunt}} {{score= [[@{DreamHuntO}]]/[[@{DreamHuntG}]]/[[@{DreamHuntA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/esp#dream-hunt-int---trained-only)}}"></button>
+						<div class="sheet-skill-name sheet-trained-only">Dream Hunt <button type="roll" name="roll_DreamHunt_link" class="sheet-skill-link" value="[Dream Hunt Wiki](https://aaa.dimble.net/skills/esp#dream-hunt-int---trained-only)">&#x2197;</button></div>
+						<div class="sheet-skill-ability-label">INT</div>
+						<input type="number" name="attr_DreamHuntRank" class="sheet-score" value="0">
+						<div class="sheet-skill-score-cell">
+							<input type="text" name="attr_DreamHuntO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{DreamHuntRank}+@{Intelligence})*@{ESP}) * (@{DreamHuntRank}/(@{DreamHuntRank}+0.001)) + 0.5))">/
+							<input type="text" name="attr_DreamHuntG" class="sheet-scoredisabled" disabled="true" value="(floor(@{DreamHuntO}/2))">/
+							<input type="text" name="attr_DreamHuntA" class="sheet-scoredisabled" disabled="true" value="(floor(@{DreamHuntO}/4))">
+						</div>
+					</div>
+					<div class="sheet-skill-row sheet-spec">
+						<button type="roll" name="roll_Empathy" value="&{template:default} {{name= @{character_name} - Empathy}} {{score= [[@{EmpathyO}]]/[[@{EmpathyG}]]/[[@{EmpathyA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/esp#empathy-int---trained-only)}}"></button>
+						<div class="sheet-skill-name sheet-trained-only">Empathy <button type="roll" name="roll_Empathy_link" class="sheet-skill-link" value="[Empathy Wiki](https://aaa.dimble.net/skills/esp#empathy-int---trained-only)">&#x2197;</button></div>
+						<div class="sheet-skill-ability-label">INT</div>
 						<input type="number" name="attr_EmpathyRank" class="sheet-score" value="0">
 						<div class="sheet-skill-score-cell">
-							<input type="text" name="attr_EmpathyO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{EmpathyRank}+@{Will})*@{ESP}) * (@{EmpathyRank}/(@{EmpathyRank}+0.001)) + 0.5))">/
+							<input type="text" name="attr_EmpathyO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{EmpathyRank}+@{Intelligence})*@{ESP}) * (@{EmpathyRank}/(@{EmpathyRank}+0.001)) + 0.5))">/
 							<input type="text" name="attr_EmpathyG" class="sheet-scoredisabled" disabled="true" value="(floor(@{EmpathyO}/2))">/
 							<input type="text" name="attr_EmpathyA" class="sheet-scoredisabled" disabled="true" value="(floor(@{EmpathyO}/4))">
+						</div>
+					</div>
+					<div class="sheet-skill-row sheet-spec">
+						<button type="roll" name="roll_MindReading" value="&{template:default} {{name= @{character_name} - Mind Reading}} {{score= [[@{MindReadingO}]]/[[@{MindReadingG}]]/[[@{MindReadingA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/esp#mind-reading-int---trained-only)}}"></button>
+						<div class="sheet-skill-name sheet-trained-only">Mind Reading <button type="roll" name="roll_MindReading_link" class="sheet-skill-link" value="[Mind Reading Wiki](https://aaa.dimble.net/skills/esp#mind-reading-int---trained-only)">&#x2197;</button></div>
+						<div class="sheet-skill-ability-label">INT</div>
+						<input type="number" name="attr_MindReadingRank" class="sheet-score" value="0">
+						<div class="sheet-skill-score-cell">
+							<input type="text" name="attr_MindReadingO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{MindReadingRank}+@{Intelligence})*@{ESP}) * (@{MindReadingRank}/(@{MindReadingRank}+0.001)) + 0.5))">/
+							<input type="text" name="attr_MindReadingG" class="sheet-scoredisabled" disabled="true" value="(floor(@{MindReadingO}/2))">/
+							<input type="text" name="attr_MindReadingA" class="sheet-scoredisabled" disabled="true" value="(floor(@{MindReadingO}/4))">
+						</div>
+					</div>
+					<div class="sheet-skill-row sheet-spec">
+						<button type="roll" name="roll_Navcognition" value="&{template:default} {{name= @{character_name} - Navcognition}} {{score= [[@{NavcognitionO}]]/[[@{NavcognitionG}]]/[[@{NavcognitionA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/esp#navcognition-int---trained-only)}}"></button>
+						<div class="sheet-skill-name sheet-trained-only">Navcognition <button type="roll" name="roll_Navcognition_link" class="sheet-skill-link" value="[Navcognition Wiki](https://aaa.dimble.net/skills/esp#navcognition-int---trained-only)">&#x2197;</button></div>
+						<div class="sheet-skill-ability-label">INT</div>
+						<input type="number" name="attr_NavcognitionRank" class="sheet-score" value="0">
+						<div class="sheet-skill-score-cell">
+							<input type="text" name="attr_NavcognitionO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{NavcognitionRank}+@{Intelligence})*@{ESP}) * (@{NavcognitionRank}/(@{NavcognitionRank}+0.001)) + 0.5))">/
+							<input type="text" name="attr_NavcognitionG" class="sheet-scoredisabled" disabled="true" value="(floor(@{NavcognitionO}/2))">/
+							<input type="text" name="attr_NavcognitionA" class="sheet-scoredisabled" disabled="true" value="(floor(@{NavcognitionO}/4))">
 						</div>
 					</div>
 					<div class="sheet-skill-row sheet-spec">
@@ -2937,6 +3058,92 @@ on('change:repeating_attackforms sheet:opened', function() {
 							<input type="text" name="attr_PrecognitionA" class="sheet-scoredisabled" disabled="true" value="(floor(@{PrecognitionO}/4))">
 						</div>
 					</div>
+					<div class="sheet-skill-row sheet-spec">
+						<button type="roll" name="roll_Psychometry" value="&{template:default} {{name= @{character_name} - Psychometry}} {{score= [[@{PsychometryO}]]/[[@{PsychometryG}]]/[[@{PsychometryA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/esp#psychometry-int---trained-only)}}"></button>
+						<div class="sheet-skill-name sheet-trained-only">Psychometry <button type="roll" name="roll_Psychometry_link" class="sheet-skill-link" value="[Psychometry Wiki](https://aaa.dimble.net/skills/esp#psychometry-int---trained-only)">&#x2197;</button></div>
+						<div class="sheet-skill-ability-label">INT</div>
+						<input type="number" name="attr_PsychometryRank" class="sheet-score" value="0">
+						<div class="sheet-skill-score-cell">
+							<input type="text" name="attr_PsychometryO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{PsychometryRank}+@{Intelligence})*@{ESP}) * (@{PsychometryRank}/(@{PsychometryRank}+0.001)) + 0.5))">/
+							<input type="text" name="attr_PsychometryG" class="sheet-scoredisabled" disabled="true" value="(floor(@{PsychometryO}/2))">/
+							<input type="text" name="attr_PsychometryA" class="sheet-scoredisabled" disabled="true" value="(floor(@{PsychometryO}/4))">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="sheet-skill-group-box">
+				<div class="sheet-skill-header-row">
+					<div></div><div class="sheet-skill-name">PSYCHOPORTATION</div><div></div>
+					<div class="sheet-skill-ability-label">RANKS</div>
+					<div class="sheet-skill-ability-label">SCORE</div>
+				</div>
+				<div class="sheet-skill-row">
+					<button type="roll" name="roll_Psychoportation" value="&{template:default} {{name= @{character_name} - Psychoportation}} {{score= [[@{PsychoportationO}]]/[[@{PsychoportationG}]]/[[@{PsychoportationA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/psychoportation)}}"></button>
+					<div class="sheet-skill-name">Psychoportation <button type="roll" name="roll_Psychoportation_link" class="sheet-skill-link" value="[Psychoportation Wiki](https://aaa.dimble.net/skills/psychoportation)">&#x2197;</button></div>
+					<div class="sheet-skill-ability-label">WIL</div>
+					<input type="checkbox" name="attr_Psychoportation" value="1" />
+					<div class="sheet-skill-score-cell">
+						<input type="text" name="attr_PsychoportationO" class="sheet-scoredisabled" disabled="true" value="(floor(@{Will}*@{Psychoportation}))">/
+						<input type="text" name="attr_PsychoportationG" class="sheet-scoredisabled" disabled="true" value="(floor(@{PsychoportationO}/2))">/
+						<input type="text" name="attr_PsychoportationA" class="sheet-scoredisabled" disabled="true" value="(floor(@{PsychoportationO}/4))">
+					</div>
+				</div>
+				<div class="sheet-specialties-container">
+					<div class="sheet-skill-row sheet-spec">
+						<button type="roll" name="roll_AlterSpeed" value="&{template:default} {{name= @{character_name} - Alter Speed}} {{score= [[@{AlterSpeedO}]]/[[@{AlterSpeedG}]]/[[@{AlterSpeedA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/psychoportation#alter-speed-wil---trained-only)}}"></button>
+						<div class="sheet-skill-name sheet-trained-only">Alter Speed <button type="roll" name="roll_AlterSpeed_link" class="sheet-skill-link" value="[Alter Speed Wiki](https://aaa.dimble.net/skills/psychoportation#alter-speed-wil---trained-only)">&#x2197;</button></div>
+						<div class="sheet-skill-ability-label">WIL</div>
+						<input type="number" name="attr_AlterSpeedRank" class="sheet-score" value="0">
+						<div class="sheet-skill-score-cell">
+							<input type="text" name="attr_AlterSpeedO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{AlterSpeedRank}+@{Will})*@{Psychoportation}) * (@{AlterSpeedRank}/(@{AlterSpeedRank}+0.001)) + 0.5))">/
+							<input type="text" name="attr_AlterSpeedG" class="sheet-scoredisabled" disabled="true" value="(floor(@{AlterSpeedO}/2))">/
+							<input type="text" name="attr_AlterSpeedA" class="sheet-scoredisabled" disabled="true" value="(floor(@{AlterSpeedO}/4))">
+						</div>
+					</div>
+					<div class="sheet-skill-row sheet-spec">
+						<button type="roll" name="roll_Apportation" value="&{template:default} {{name= @{character_name} - Apportation}} {{score= [[@{ApportationO}]]/[[@{ApportationG}]]/[[@{ApportationA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/psychoportation#apportation-wil---trained-only)}}"></button>
+						<div class="sheet-skill-name sheet-trained-only">Apportation <button type="roll" name="roll_Apportation_link" class="sheet-skill-link" value="[Apportation Wiki](https://aaa.dimble.net/skills/psychoportation#apportation-wil---trained-only)">&#x2197;</button></div>
+						<div class="sheet-skill-ability-label">WIL</div>
+						<input type="number" name="attr_ApportationRank" class="sheet-score" value="0">
+						<div class="sheet-skill-score-cell">
+							<input type="text" name="attr_ApportationO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{ApportationRank}+@{Will})*@{Psychoportation}) * (@{ApportationRank}/(@{ApportationRank}+0.001)) + 0.5))">/
+							<input type="text" name="attr_ApportationG" class="sheet-scoredisabled" disabled="true" value="(floor(@{ApportationO}/2))">/
+							<input type="text" name="attr_ApportationA" class="sheet-scoredisabled" disabled="true" value="(floor(@{ApportationO}/4))">
+						</div>
+					</div>
+					<div class="sheet-skill-row sheet-spec">
+						<button type="roll" name="roll_Duplicate" value="&{template:default} {{name= @{character_name} - Duplicate}} {{score= [[@{DuplicateO}]]/[[@{DuplicateG}]]/[[@{DuplicateA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/psychoportation#duplicate-wil---trained-only)}}"></button>
+						<div class="sheet-skill-name sheet-trained-only">Duplicate <button type="roll" name="roll_Duplicate_link" class="sheet-skill-link" value="[Duplicate Wiki](https://aaa.dimble.net/skills/psychoportation#duplicate-wil---trained-only)">&#x2197;</button></div>
+						<div class="sheet-skill-ability-label">WIL</div>
+						<input type="number" name="attr_DuplicateRank" class="sheet-score" value="0">
+						<div class="sheet-skill-score-cell">
+							<input type="text" name="attr_DuplicateO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{DuplicateRank}+@{Will})*@{Psychoportation}) * (@{DuplicateRank}/(@{DuplicateRank}+0.001)) + 0.5))">/
+							<input type="text" name="attr_DuplicateG" class="sheet-scoredisabled" disabled="true" value="(floor(@{DuplicateO}/2))">/
+							<input type="text" name="attr_DuplicateA" class="sheet-scoredisabled" disabled="true" value="(floor(@{DuplicateO}/4))">
+						</div>
+					</div>
+					<div class="sheet-skill-row sheet-spec">
+						<button type="roll" name="roll_Timeslip" value="&{template:default} {{name= @{character_name} - Timeslip}} {{score= [[@{TimeslipO}]]/[[@{TimeslipG}]]/[[@{TimeslipA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/psychoportation#timeslip-wil---trained-only)}}"></button>
+						<div class="sheet-skill-name sheet-trained-only">Timeslip <button type="roll" name="roll_Timeslip_link" class="sheet-skill-link" value="[Timeslip Wiki](https://aaa.dimble.net/skills/psychoportation#timeslip-wil---trained-only)">&#x2197;</button></div>
+						<div class="sheet-skill-ability-label">WIL</div>
+						<input type="number" name="attr_TimeslipRank" class="sheet-score" value="0">
+						<div class="sheet-skill-score-cell">
+							<input type="text" name="attr_TimeslipO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{TimeslipRank}+@{Will})*@{Psychoportation}) * (@{TimeslipRank}/(@{TimeslipRank}+0.001)) + 0.5))">/
+							<input type="text" name="attr_TimeslipG" class="sheet-scoredisabled" disabled="true" value="(floor(@{TimeslipO}/2))">/
+							<input type="text" name="attr_TimeslipA" class="sheet-scoredisabled" disabled="true" value="(floor(@{TimeslipO}/4))">
+						</div>
+					</div>
+					<div class="sheet-skill-row sheet-spec">
+						<button type="roll" name="roll_Teleportation" value="&{template:default} {{name= @{character_name} - Teleportation}} {{score= [[@{TeleportationO}]]/[[@{TeleportationG}]]/[[@{TeleportationA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/psychoportation#teleportation-wil---trained-only)}}"></button>
+						<div class="sheet-skill-name sheet-trained-only">Teleportation <button type="roll" name="roll_Teleportation_link" class="sheet-skill-link" value="[Teleportation Wiki](https://aaa.dimble.net/skills/psychoportation#teleportation-wil---trained-only)">&#x2197;</button></div>
+						<div class="sheet-skill-ability-label">WIL</div>
+						<input type="number" name="attr_TeleportationRank" class="sheet-score" value="0">
+						<div class="sheet-skill-score-cell">
+							<input type="text" name="attr_TeleportationO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{TeleportationRank}+@{Will})*@{Psychoportation}) * (@{TeleportationRank}/(@{TeleportationRank}+0.001)) + 0.5))">/
+							<input type="text" name="attr_TeleportationG" class="sheet-scoredisabled" disabled="true" value="(floor(@{TeleportationO}/2))">/
+							<input type="text" name="attr_TeleportationA" class="sheet-scoredisabled" disabled="true" value="(floor(@{TeleportationO}/4))">
+						</div>
+					</div>
 				</div>
 			</div>
 			<div class="sheet-skill-group-box">
@@ -2958,14 +3165,47 @@ on('change:repeating_attackforms sheet:opened', function() {
 				</div>
 				<div class="sheet-specialties-container">
 					<div class="sheet-skill-row sheet-spec">
-						<button type="roll" name="roll_Kineticshield" value="&{template:default} {{name= @{character_name} - Kinetic shield}} {{score= [[@{KineticshieldO}]]/[[@{KineticshieldG}]]/[[@{KineticshieldA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/telekinesis#kinetic-shield-wil---trained-only)}}"></button>
-						<div class="sheet-skill-name sheet-trained-only">Kinetic shield <button type="roll" name="roll_Kineticshield_link" class="sheet-skill-link" value="[Kinetic shield Wiki](https://aaa.dimble.net/skills/telekinesis#kinetic-shield-wil---trained-only)">&#x2197;</button></div>
+						<button type="roll" name="roll_Cryokinetics" value="&{template:default} {{name= @{character_name} - Cryokinetics}} {{score= [[@{CryokineticsO}]]/[[@{CryokineticsG}]]/[[@{CryokineticsA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/telekinesis#cryokinetics-wil---trained-only)}}"></button>
+						<div class="sheet-skill-name sheet-trained-only">Cryokinetics <button type="roll" name="roll_Cryokinetics_link" class="sheet-skill-link" value="[Cryokinetics Wiki](https://aaa.dimble.net/skills/telekinesis#cryokinetics-wil---trained-only)">&#x2197;</button></div>
 						<div class="sheet-skill-ability-label">WIL</div>
-						<input type="number" name="attr_KineticshieldRank" class="sheet-score" value="0">
+						<input type="number" name="attr_CryokineticsRank" class="sheet-score" value="0">
 						<div class="sheet-skill-score-cell">
-							<input type="text" name="attr_KineticshieldO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{KineticshieldRank}+@{Will})*@{Telekinesis}) * (@{KineticshieldRank}/(@{KineticshieldRank}+0.001)) + 0.5))">/
-							<input type="text" name="attr_KineticshieldG" class="sheet-scoredisabled" disabled="true" value="(floor(@{KineticshieldO}/2))">/
-							<input type="text" name="attr_KineticshieldA" class="sheet-scoredisabled" disabled="true" value="(floor(@{KineticshieldO}/4))">
+							<input type="text" name="attr_CryokineticsO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{CryokineticsRank}+@{Will})*@{Telekinesis}) * (@{CryokineticsRank}/(@{CryokineticsRank}+0.001)) + 0.5))">/
+							<input type="text" name="attr_CryokineticsG" class="sheet-scoredisabled" disabled="true" value="(floor(@{CryokineticsO}/2))">/
+							<input type="text" name="attr_CryokineticsA" class="sheet-scoredisabled" disabled="true" value="(floor(@{CryokineticsO}/4))">
+						</div>
+					</div>
+					<div class="sheet-skill-row sheet-spec">
+						<button type="roll" name="roll_Electrokinetics" value="&{template:default} {{name= @{character_name} - Electrokinetics}} {{score= [[@{ElectrokineticsO}]]/[[@{ElectrokineticsG}]]/[[@{ElectrokineticsA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/telekinesis#electrokinetics-wil---trained-only)}}"></button>
+						<div class="sheet-skill-name sheet-trained-only">Electrokinetics <button type="roll" name="roll_Electrokinetics_link" class="sheet-skill-link" value="[Electrokinetics Wiki](https://aaa.dimble.net/skills/telekinesis#electrokinetics-wil---trained-only)">&#x2197;</button></div>
+						<div class="sheet-skill-ability-label">WIL</div>
+						<input type="number" name="attr_ElectrokineticsRank" class="sheet-score" value="0">
+						<div class="sheet-skill-score-cell">
+							<input type="text" name="attr_ElectrokineticsO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{ElectrokineticsRank}+@{Will})*@{Telekinesis}) * (@{ElectrokineticsRank}/(@{ElectrokineticsRank}+0.001)) + 0.5))">/
+							<input type="text" name="attr_ElectrokineticsG" class="sheet-scoredisabled" disabled="true" value="(floor(@{ElectrokineticsO}/2))">/
+							<input type="text" name="attr_ElectrokineticsA" class="sheet-scoredisabled" disabled="true" value="(floor(@{ElectrokineticsO}/4))">
+						</div>
+					</div>
+					<div class="sheet-skill-row sheet-spec">
+						<button type="roll" name="roll_KineticBlow" value="&{template:default} {{name= @{character_name} - Kinetic Blow}} {{score= [[@{KineticBlowO}]]/[[@{KineticBlowG}]]/[[@{KineticBlowA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/telekinesis#kinetic-blow-wil---trained-only)}}"></button>
+						<div class="sheet-skill-name sheet-trained-only">Kinetic Blow <button type="roll" name="roll_KineticBlow_link" class="sheet-skill-link" value="[Kinetic Blow Wiki](https://aaa.dimble.net/skills/telekinesis#kinetic-blow-wil---trained-only)">&#x2197;</button></div>
+						<div class="sheet-skill-ability-label">WIL</div>
+						<input type="number" name="attr_KineticBlowRank" class="sheet-score" value="0">
+						<div class="sheet-skill-score-cell">
+							<input type="text" name="attr_KineticBlowO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{KineticBlowRank}+@{Will})*@{Telekinesis}) * (@{KineticBlowRank}/(@{KineticBlowRank}+0.001)) + 0.5))">/
+							<input type="text" name="attr_KineticBlowG" class="sheet-scoredisabled" disabled="true" value="(floor(@{KineticBlowO}/2))">/
+							<input type="text" name="attr_KineticBlowA" class="sheet-scoredisabled" disabled="true" value="(floor(@{KineticBlowO}/4))">
+						</div>
+					</div>
+					<div class="sheet-skill-row sheet-spec">
+						<button type="roll" name="roll_KineticShield" value="&{template:default} {{name= @{character_name} - Kinetic Shield}} {{score= [[@{KineticShieldO}]]/[[@{KineticShieldG}]]/[[@{KineticShieldA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/telekinesis#kinetic-shield-wil---trained-only)}}"></button>
+						<div class="sheet-skill-name sheet-trained-only">Kinetic Shield <button type="roll" name="roll_KineticShield_link" class="sheet-skill-link" value="[Kinetic Shield Wiki](https://aaa.dimble.net/skills/telekinesis#kinetic-shield-wil---trained-only)">&#x2197;</button></div>
+						<div class="sheet-skill-ability-label">WIL</div>
+						<input type="number" name="attr_KineticShieldRank" class="sheet-score" value="0">
+						<div class="sheet-skill-score-cell">
+							<input type="text" name="attr_KineticShieldO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{KineticShieldRank}+@{Will})*@{Telekinesis}) * (@{KineticShieldRank}/(@{KineticShieldRank}+0.001)) + 0.5))">/
+							<input type="text" name="attr_KineticShieldG" class="sheet-scoredisabled" disabled="true" value="(floor(@{KineticShieldO}/2))">/
+							<input type="text" name="attr_KineticShieldA" class="sheet-scoredisabled" disabled="true" value="(floor(@{KineticShieldO}/4))">
 						</div>
 					</div>
 					<div class="sheet-skill-row sheet-spec">
@@ -3002,14 +3242,25 @@ on('change:repeating_attackforms sheet:opened', function() {
 						</div>
 					</div>
 					<div class="sheet-skill-row sheet-spec">
-						<button type="roll" name="roll_Pyrokinetics" value="&{template:default} {{name= @{character_name} - Pyrokinetics}} {{score= [[@{PyrokineticsO}]]/[[@{PyrokineticsG}]]/[[@{PyrokineticsA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/telekinesis#pyrokinetics-wil---trained-only)}}"></button>
-						<div class="sheet-skill-name sheet-trained-only">Pyrokinetics <button type="roll" name="roll_Pyrokinetics_link" class="sheet-skill-link" value="[Pyrokinetics Wiki](https://aaa.dimble.net/skills/telekinesis#pyrokinetics-wil---trained-only)">&#x2197;</button></div>
+						<button type="roll" name="roll_Pyrokinesis" value="&{template:default} {{name= @{character_name} - Pyrokinesis}} {{score= [[@{PyrokinesisO}]]/[[@{PyrokinesisG}]]/[[@{PyrokinesisA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/telekinesis#pyrokinesis-wil---trained-only)}}"></button>
+						<div class="sheet-skill-name sheet-trained-only">Pyrokinesis <button type="roll" name="roll_Pyrokinesis_link" class="sheet-skill-link" value="[Pyrokinesis Wiki](https://aaa.dimble.net/skills/telekinesis#pyrokinesis-wil---trained-only)">&#x2197;</button></div>
 						<div class="sheet-skill-ability-label">WIL</div>
-						<input type="number" name="attr_PyrokineticsRank" class="sheet-score" value="0">
+						<input type="number" name="attr_PyrokinesisRank" class="sheet-score" value="0">
 						<div class="sheet-skill-score-cell">
-							<input type="text" name="attr_PyrokineticsO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{PyrokineticsRank}+@{Will})*@{Telekinesis}) * (@{PyrokineticsRank}/(@{PyrokineticsRank}+0.001)) + 0.5))">/
-							<input type="text" name="attr_PyrokineticsG" class="sheet-scoredisabled" disabled="true" value="(floor(@{PyrokineticsO}/2))">/
-							<input type="text" name="attr_PyrokineticsA" class="sheet-scoredisabled" disabled="true" value="(floor(@{PyrokineticsO}/4))">
+							<input type="text" name="attr_PyrokinesisO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{PyrokinesisRank}+@{Will})*@{Telekinesis}) * (@{PyrokinesisRank}/(@{PyrokinesisRank}+0.001)) + 0.5))">/
+							<input type="text" name="attr_PyrokinesisG" class="sheet-scoredisabled" disabled="true" value="(floor(@{PyrokinesisO}/2))">/
+							<input type="text" name="attr_PyrokinesisA" class="sheet-scoredisabled" disabled="true" value="(floor(@{PyrokinesisO}/4))">
+						</div>
+					</div>
+					<div class="sheet-skill-row sheet-spec">
+						<button type="roll" name="roll_Sheya'sClutch" value="&{template:default} {{name= @{character_name} - Sheya's Clutch}} {{score= [[@{Sheya'sClutchO}]]/[[@{Sheya'sClutchG}]]/[[@{Sheya'sClutchA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/telekinesis#sheya's-clutch-wil---trained-only)}}"></button>
+						<div class="sheet-skill-name sheet-trained-only">Sheya's Clutch <button type="roll" name="roll_Sheya'sClutch_link" class="sheet-skill-link" value="[Sheya's Clutch Wiki](https://aaa.dimble.net/skills/telekinesis#sheya's-clutch-wil---trained-only)">&#x2197;</button></div>
+						<div class="sheet-skill-ability-label">WIL</div>
+						<input type="number" name="attr_Sheya'sClutchRank" class="sheet-score" value="0">
+						<div class="sheet-skill-score-cell">
+							<input type="text" name="attr_Sheya'sClutchO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{Sheya'sClutchRank}+@{Will})*@{Telekinesis}) * (@{Sheya'sClutchRank}/(@{Sheya'sClutchRank}+0.001)) + 0.5))">/
+							<input type="text" name="attr_Sheya'sClutchG" class="sheet-scoredisabled" disabled="true" value="(floor(@{Sheya'sClutchO}/2))">/
+							<input type="text" name="attr_Sheya'sClutchA" class="sheet-scoredisabled" disabled="true" value="(floor(@{Sheya'sClutchO}/4))">
 						</div>
 					</div>
 				</div>
@@ -3055,6 +3306,39 @@ on('change:repeating_attackforms sheet:opened', function() {
 						</div>
 					</div>
 					<div class="sheet-skill-row sheet-spec">
+						<button type="roll" name="roll_Drain" value="&{template:default} {{name= @{character_name} - Drain}} {{score= [[@{DrainO}]]/[[@{DrainG}]]/[[@{DrainA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/telepathy#drain-per---trained-only)}}"></button>
+						<div class="sheet-skill-name sheet-trained-only">Drain <button type="roll" name="roll_Drain_link" class="sheet-skill-link" value="[Drain Wiki](https://aaa.dimble.net/skills/telepathy#drain-per---trained-only)">&#x2197;</button></div>
+						<div class="sheet-skill-ability-label">PER</div>
+						<input type="number" name="attr_DrainRank" class="sheet-score" value="0">
+						<div class="sheet-skill-score-cell">
+							<input type="text" name="attr_DrainO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{DrainRank}+@{Personality})*@{Telepathy}) * (@{DrainRank}/(@{DrainRank}+0.001)) + 0.5))">/
+							<input type="text" name="attr_DrainG" class="sheet-scoredisabled" disabled="true" value="(floor(@{DrainO}/2))">/
+							<input type="text" name="attr_DrainA" class="sheet-scoredisabled" disabled="true" value="(floor(@{DrainO}/4))">
+						</div>
+					</div>
+					<div class="sheet-skill-row sheet-spec">
+						<button type="roll" name="roll_EmpathicProjection" value="&{template:default} {{name= @{character_name} - Empathic Projection}} {{score= [[@{EmpathicProjectionO}]]/[[@{EmpathicProjectionG}]]/[[@{EmpathicProjectionA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/telepathy#empathic-projection-per---trained-only)}}"></button>
+						<div class="sheet-skill-name sheet-trained-only">Empathic Projection <button type="roll" name="roll_EmpathicProjection_link" class="sheet-skill-link" value="[Empathic Projection Wiki](https://aaa.dimble.net/skills/telepathy#empathic-projection-per---trained-only)">&#x2197;</button></div>
+						<div class="sheet-skill-ability-label">PER</div>
+						<input type="number" name="attr_EmpathicProjectionRank" class="sheet-score" value="0">
+						<div class="sheet-skill-score-cell">
+							<input type="text" name="attr_EmpathicProjectionO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{EmpathicProjectionRank}+@{Personality})*@{Telepathy}) * (@{EmpathicProjectionRank}/(@{EmpathicProjectionRank}+0.001)) + 0.5))">/
+							<input type="text" name="attr_EmpathicProjectionG" class="sheet-scoredisabled" disabled="true" value="(floor(@{EmpathicProjectionO}/2))">/
+							<input type="text" name="attr_EmpathicProjectionA" class="sheet-scoredisabled" disabled="true" value="(floor(@{EmpathicProjectionO}/4))">
+						</div>
+					</div>
+					<div class="sheet-skill-row sheet-spec">
+						<button type="roll" name="roll_Guidance" value="&{template:default} {{name= @{character_name} - Guidance}} {{score= [[@{GuidanceO}]]/[[@{GuidanceG}]]/[[@{GuidanceA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/telepathy#guidance-per---trained-only)}}"></button>
+						<div class="sheet-skill-name sheet-trained-only">Guidance <button type="roll" name="roll_Guidance_link" class="sheet-skill-link" value="[Guidance Wiki](https://aaa.dimble.net/skills/telepathy#guidance-per---trained-only)">&#x2197;</button></div>
+						<div class="sheet-skill-ability-label">PER</div>
+						<input type="number" name="attr_GuidanceRank" class="sheet-score" value="0">
+						<div class="sheet-skill-score-cell">
+							<input type="text" name="attr_GuidanceO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{GuidanceRank}+@{Personality})*@{Telepathy}) * (@{GuidanceRank}/(@{GuidanceRank}+0.001)) + 0.5))">/
+							<input type="text" name="attr_GuidanceG" class="sheet-scoredisabled" disabled="true" value="(floor(@{GuidanceO}/2))">/
+							<input type="text" name="attr_GuidanceA" class="sheet-scoredisabled" disabled="true" value="(floor(@{GuidanceO}/4))">
+						</div>
+					</div>
+					<div class="sheet-skill-row sheet-spec">
 						<button type="roll" name="roll_Illusion" value="&{template:default} {{name= @{character_name} - Illusion}} {{score= [[@{IllusionO}]]/[[@{IllusionG}]]/[[@{IllusionA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/telepathy#illusion-per---trained-only)}}"></button>
 						<div class="sheet-skill-name sheet-trained-only">Illusion <button type="roll" name="roll_Illusion_link" class="sheet-skill-link" value="[Illusion Wiki](https://aaa.dimble.net/skills/telepathy#illusion-per---trained-only)">&#x2197;</button></div>
 						<div class="sheet-skill-ability-label">PER</div>
@@ -3066,25 +3350,69 @@ on('change:repeating_attackforms sheet:opened', function() {
 						</div>
 					</div>
 					<div class="sheet-skill-row sheet-spec">
-						<button type="roll" name="roll_Mindblast" value="&{template:default} {{name= @{character_name} - Mind blast}} {{score= [[@{MindblastO}]]/[[@{MindblastG}]]/[[@{MindblastA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/telepathy#mind-blast-per---trained-only)}}"></button>
-						<div class="sheet-skill-name sheet-trained-only">Mind blast <button type="roll" name="roll_Mindblast_link" class="sheet-skill-link" value="[Mind blast Wiki](https://aaa.dimble.net/skills/telepathy#mind-blast-per---trained-only)">&#x2197;</button></div>
+						<button type="roll" name="roll_MindBlast" value="&{template:default} {{name= @{character_name} - Mind Blast}} {{score= [[@{MindBlastO}]]/[[@{MindBlastG}]]/[[@{MindBlastA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/telepathy#mind-blast-per---trained-only)}}"></button>
+						<div class="sheet-skill-name sheet-trained-only">Mind Blast <button type="roll" name="roll_MindBlast_link" class="sheet-skill-link" value="[Mind Blast Wiki](https://aaa.dimble.net/skills/telepathy#mind-blast-per---trained-only)">&#x2197;</button></div>
 						<div class="sheet-skill-ability-label">PER</div>
-						<input type="number" name="attr_MindblastRank" class="sheet-score" value="0">
+						<input type="number" name="attr_MindBlastRank" class="sheet-score" value="0">
 						<div class="sheet-skill-score-cell">
-							<input type="text" name="attr_MindblastO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{MindblastRank}+@{Personality})*@{Telepathy}) * (@{MindblastRank}/(@{MindblastRank}+0.001)) + 0.5))">/
-							<input type="text" name="attr_MindblastG" class="sheet-scoredisabled" disabled="true" value="(floor(@{MindblastO}/2))">/
-							<input type="text" name="attr_MindblastA" class="sheet-scoredisabled" disabled="true" value="(floor(@{MindblastO}/4))">
+							<input type="text" name="attr_MindBlastO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{MindBlastRank}+@{Personality})*@{Telepathy}) * (@{MindBlastRank}/(@{MindBlastRank}+0.001)) + 0.5))">/
+							<input type="text" name="attr_MindBlastG" class="sheet-scoredisabled" disabled="true" value="(floor(@{MindBlastO}/2))">/
+							<input type="text" name="attr_MindBlastA" class="sheet-scoredisabled" disabled="true" value="(floor(@{MindBlastO}/4))">
 						</div>
 					</div>
 					<div class="sheet-skill-row sheet-spec">
-						<button type="roll" name="roll_Mindshield" value="&{template:default} {{name= @{character_name} - Mind shield}} {{score= [[@{MindshieldO}]]/[[@{MindshieldG}]]/[[@{MindshieldA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/telepathy#mind-shield-per---trained-only)}}"></button>
-						<div class="sheet-skill-name sheet-trained-only">Mind shield <button type="roll" name="roll_Mindshield_link" class="sheet-skill-link" value="[Mind shield Wiki](https://aaa.dimble.net/skills/telepathy#mind-shield-per---trained-only)">&#x2197;</button></div>
+						<button type="roll" name="roll_MindShield" value="&{template:default} {{name= @{character_name} - Mind Shield}} {{score= [[@{MindShieldO}]]/[[@{MindShieldG}]]/[[@{MindShieldA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/telepathy#mind-shield-per---trained-only)}}"></button>
+						<div class="sheet-skill-name sheet-trained-only">Mind Shield <button type="roll" name="roll_MindShield_link" class="sheet-skill-link" value="[Mind Shield Wiki](https://aaa.dimble.net/skills/telepathy#mind-shield-per---trained-only)">&#x2197;</button></div>
 						<div class="sheet-skill-ability-label">PER</div>
-						<input type="number" name="attr_MindshieldRank" class="sheet-score" value="0">
+						<input type="number" name="attr_MindShieldRank" class="sheet-score" value="0">
 						<div class="sheet-skill-score-cell">
-							<input type="text" name="attr_MindshieldO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{MindshieldRank}+@{Personality})*@{Telepathy}) * (@{MindshieldRank}/(@{MindshieldRank}+0.001)) + 0.5))">/
-							<input type="text" name="attr_MindshieldG" class="sheet-scoredisabled" disabled="true" value="(floor(@{MindshieldO}/2))">/
-							<input type="text" name="attr_MindshieldA" class="sheet-scoredisabled" disabled="true" value="(floor(@{MindshieldO}/4))">
+							<input type="text" name="attr_MindShieldO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{MindShieldRank}+@{Personality})*@{Telepathy}) * (@{MindShieldRank}/(@{MindShieldRank}+0.001)) + 0.5))">/
+							<input type="text" name="attr_MindShieldG" class="sheet-scoredisabled" disabled="true" value="(floor(@{MindShieldO}/2))">/
+							<input type="text" name="attr_MindShieldA" class="sheet-scoredisabled" disabled="true" value="(floor(@{MindShieldO}/4))">
+						</div>
+					</div>
+					<div class="sheet-skill-row sheet-spec">
+						<button type="roll" name="roll_MindWipe" value="&{template:default} {{name= @{character_name} - Mind Wipe}} {{score= [[@{MindWipeO}]]/[[@{MindWipeG}]]/[[@{MindWipeA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/telepathy#mind-wipe-per---trained-only)}}"></button>
+						<div class="sheet-skill-name sheet-trained-only">Mind Wipe <button type="roll" name="roll_MindWipe_link" class="sheet-skill-link" value="[Mind Wipe Wiki](https://aaa.dimble.net/skills/telepathy#mind-wipe-per---trained-only)">&#x2197;</button></div>
+						<div class="sheet-skill-ability-label">PER</div>
+						<input type="number" name="attr_MindWipeRank" class="sheet-score" value="0">
+						<div class="sheet-skill-score-cell">
+							<input type="text" name="attr_MindWipeO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{MindWipeRank}+@{Personality})*@{Telepathy}) * (@{MindWipeRank}/(@{MindWipeRank}+0.001)) + 0.5))">/
+							<input type="text" name="attr_MindWipeG" class="sheet-scoredisabled" disabled="true" value="(floor(@{MindWipeO}/2))">/
+							<input type="text" name="attr_MindWipeA" class="sheet-scoredisabled" disabled="true" value="(floor(@{MindWipeO}/4))">
+						</div>
+					</div>
+					<div class="sheet-skill-row sheet-spec">
+						<button type="roll" name="roll_PsychicArmor" value="&{template:default} {{name= @{character_name} - Psychic Armor}} {{score= [[@{PsychicArmorO}]]/[[@{PsychicArmorG}]]/[[@{PsychicArmorA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/telepathy#psychic-armor-per---trained-only)}}"></button>
+						<div class="sheet-skill-name sheet-trained-only">Psychic Armor <button type="roll" name="roll_PsychicArmor_link" class="sheet-skill-link" value="[Psychic Armor Wiki](https://aaa.dimble.net/skills/telepathy#psychic-armor-per---trained-only)">&#x2197;</button></div>
+						<div class="sheet-skill-ability-label">PER</div>
+						<input type="number" name="attr_PsychicArmorRank" class="sheet-score" value="0">
+						<div class="sheet-skill-score-cell">
+							<input type="text" name="attr_PsychicArmorO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{PsychicArmorRank}+@{Personality})*@{Telepathy}) * (@{PsychicArmorRank}/(@{PsychicArmorRank}+0.001)) + 0.5))">/
+							<input type="text" name="attr_PsychicArmorG" class="sheet-scoredisabled" disabled="true" value="(floor(@{PsychicArmorO}/2))">/
+							<input type="text" name="attr_PsychicArmorA" class="sheet-scoredisabled" disabled="true" value="(floor(@{PsychicArmorO}/4))">
+						</div>
+					</div>
+					<div class="sheet-skill-row sheet-spec">
+						<button type="roll" name="roll_PsychicProjection" value="&{template:default} {{name= @{character_name} - Psychic Projection}} {{score= [[@{PsychicProjectionO}]]/[[@{PsychicProjectionG}]]/[[@{PsychicProjectionA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/telepathy#psychic-projection-per---trained-only)}}"></button>
+						<div class="sheet-skill-name sheet-trained-only">Psychic Projection <button type="roll" name="roll_PsychicProjection_link" class="sheet-skill-link" value="[Psychic Projection Wiki](https://aaa.dimble.net/skills/telepathy#psychic-projection-per---trained-only)">&#x2197;</button></div>
+						<div class="sheet-skill-ability-label">PER</div>
+						<input type="number" name="attr_PsychicProjectionRank" class="sheet-score" value="0">
+						<div class="sheet-skill-score-cell">
+							<input type="text" name="attr_PsychicProjectionO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{PsychicProjectionRank}+@{Personality})*@{Telepathy}) * (@{PsychicProjectionRank}/(@{PsychicProjectionRank}+0.001)) + 0.5))">/
+							<input type="text" name="attr_PsychicProjectionG" class="sheet-scoredisabled" disabled="true" value="(floor(@{PsychicProjectionO}/2))">/
+							<input type="text" name="attr_PsychicProjectionA" class="sheet-scoredisabled" disabled="true" value="(floor(@{PsychicProjectionO}/4))">
+						</div>
+					</div>
+					<div class="sheet-skill-row sheet-spec">
+						<button type="roll" name="roll_Subdual" value="&{template:default} {{name= @{character_name} - Subdual}} {{score= [[@{SubdualO}]]/[[@{SubdualG}]]/[[@{SubdualA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/telepathy#subdual-per---trained-only)}}"></button>
+						<div class="sheet-skill-name sheet-trained-only">Subdual <button type="roll" name="roll_Subdual_link" class="sheet-skill-link" value="[Subdual Wiki](https://aaa.dimble.net/skills/telepathy#subdual-per---trained-only)">&#x2197;</button></div>
+						<div class="sheet-skill-ability-label">PER</div>
+						<input type="number" name="attr_SubdualRank" class="sheet-score" value="0">
+						<div class="sheet-skill-score-cell">
+							<input type="text" name="attr_SubdualO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{SubdualRank}+@{Personality})*@{Telepathy}) * (@{SubdualRank}/(@{SubdualRank}+0.001)) + 0.5))">/
+							<input type="text" name="attr_SubdualG" class="sheet-scoredisabled" disabled="true" value="(floor(@{SubdualO}/2))">/
+							<input type="text" name="attr_SubdualA" class="sheet-scoredisabled" disabled="true" value="(floor(@{SubdualO}/4))">
 						</div>
 					</div>
 					<div class="sheet-skill-row sheet-spec">
@@ -3109,57 +3437,15 @@ on('change:repeating_attackforms sheet:opened', function() {
 							<input type="text" name="attr_TireA" class="sheet-scoredisabled" disabled="true" value="(floor(@{TireO}/4))">
 						</div>
 					</div>
-				</div>
-			</div>
-			<div class="sheet-skill-group-box">
-				<div class="sheet-skill-header-row">
-					<div></div><div class="sheet-skill-name">TELEPORTATION</div><div></div>
-					<div class="sheet-skill-ability-label">RANKS</div>
-					<div class="sheet-skill-ability-label">SCORE</div>
-				</div>
-				<div class="sheet-skill-row">
-					<button type="roll" name="roll_Teleportation" value="&{template:default} {{name= @{character_name} - Teleportation}} {{score= [[@{TeleportationO}]]/[[@{TeleportationG}]]/[[@{TeleportationA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/teleportation)}}"></button>
-					<div class="sheet-skill-name">Teleportation <button type="roll" name="roll_Teleportation_link" class="sheet-skill-link" value="[Teleportation Wiki](https://aaa.dimble.net/skills/teleportation)">&#x2197;</button></div>
-					<div class="sheet-skill-ability-label">WIL</div>
-					<input type="checkbox" name="attr_Teleportation" value="1" />
-					<div class="sheet-skill-score-cell">
-						<input type="text" name="attr_TeleportationO" class="sheet-scoredisabled" disabled="true" value="(floor(@{Will}*@{Teleportation}))">/
-						<input type="text" name="attr_TeleportationG" class="sheet-scoredisabled" disabled="true" value="(floor(@{TeleportationO}/2))">/
-						<input type="text" name="attr_TeleportationA" class="sheet-scoredisabled" disabled="true" value="(floor(@{TeleportationO}/4))">
-					</div>
-				</div>
-				<div class="sheet-specialties-container">
 					<div class="sheet-skill-row sheet-spec">
-						<button type="roll" name="roll_Dimensionwalk" value="&{template:default} {{name= @{character_name} - Dimension walk}} {{score= [[@{DimensionwalkO}]]/[[@{DimensionwalkG}]]/[[@{DimensionwalkA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/teleportation#dimension-walk-wil---trained-only)}}"></button>
-						<div class="sheet-skill-name sheet-trained-only">Dimension walk <button type="roll" name="roll_Dimensionwalk_link" class="sheet-skill-link" value="[Dimension walk Wiki](https://aaa.dimble.net/skills/teleportation#dimension-walk-wil---trained-only)">&#x2197;</button></div>
-						<div class="sheet-skill-ability-label">WIL</div>
-						<input type="number" name="attr_DimensionwalkRank" class="sheet-score" value="0">
+						<button type="roll" name="roll_Undo" value="&{template:default} {{name= @{character_name} - Undo}} {{score= [[@{UndoO}]]/[[@{UndoG}]]/[[@{UndoA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/telepathy#undo-per---trained-only)}}"></button>
+						<div class="sheet-skill-name sheet-trained-only">Undo <button type="roll" name="roll_Undo_link" class="sheet-skill-link" value="[Undo Wiki](https://aaa.dimble.net/skills/telepathy#undo-per---trained-only)">&#x2197;</button></div>
+						<div class="sheet-skill-ability-label">PER</div>
+						<input type="number" name="attr_UndoRank" class="sheet-score" value="0">
 						<div class="sheet-skill-score-cell">
-							<input type="text" name="attr_DimensionwalkO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{DimensionwalkRank}+@{Will})*@{Teleportation}) * (@{DimensionwalkRank}/(@{DimensionwalkRank}+0.001)) + 0.5))">/
-							<input type="text" name="attr_DimensionwalkG" class="sheet-scoredisabled" disabled="true" value="(floor(@{DimensionwalkO}/2))">/
-							<input type="text" name="attr_DimensionwalkA" class="sheet-scoredisabled" disabled="true" value="(floor(@{DimensionwalkO}/4))">
-						</div>
-					</div>
-					<div class="sheet-skill-row sheet-spec">
-						<button type="roll" name="roll_Objectteleportation" value="&{template:default} {{name= @{character_name} - Object teleportation}} {{score= [[@{ObjectteleportationO}]]/[[@{ObjectteleportationG}]]/[[@{ObjectteleportationA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/teleportation#object-teleportation-wil---trained-only)}}"></button>
-						<div class="sheet-skill-name sheet-trained-only">Object teleportation <button type="roll" name="roll_Objectteleportation_link" class="sheet-skill-link" value="[Object teleportation Wiki](https://aaa.dimble.net/skills/teleportation#object-teleportation-wil---trained-only)">&#x2197;</button></div>
-						<div class="sheet-skill-ability-label">WIL</div>
-						<input type="number" name="attr_ObjectteleportationRank" class="sheet-score" value="0">
-						<div class="sheet-skill-score-cell">
-							<input type="text" name="attr_ObjectteleportationO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{ObjectteleportationRank}+@{Will})*@{Teleportation}) * (@{ObjectteleportationRank}/(@{ObjectteleportationRank}+0.001)) + 0.5))">/
-							<input type="text" name="attr_ObjectteleportationG" class="sheet-scoredisabled" disabled="true" value="(floor(@{ObjectteleportationO}/2))">/
-							<input type="text" name="attr_ObjectteleportationA" class="sheet-scoredisabled" disabled="true" value="(floor(@{ObjectteleportationO}/4))">
-						</div>
-					</div>
-					<div class="sheet-skill-row sheet-spec">
-						<button type="roll" name="roll_Selfteleportation" value="&{template:default} {{name= @{character_name} - Self teleportation}} {{score= [[@{SelfteleportationO}]]/[[@{SelfteleportationG}]]/[[@{SelfteleportationA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/teleportation#self-teleportation-wil---trained-only)}}"></button>
-						<div class="sheet-skill-name sheet-trained-only">Self teleportation <button type="roll" name="roll_Selfteleportation_link" class="sheet-skill-link" value="[Self teleportation Wiki](https://aaa.dimble.net/skills/teleportation#self-teleportation-wil---trained-only)">&#x2197;</button></div>
-						<div class="sheet-skill-ability-label">WIL</div>
-						<input type="number" name="attr_SelfteleportationRank" class="sheet-score" value="0">
-						<div class="sheet-skill-score-cell">
-							<input type="text" name="attr_SelfteleportationO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{SelfteleportationRank}+@{Will})*@{Teleportation}) * (@{SelfteleportationRank}/(@{SelfteleportationRank}+0.001)) + 0.5))">/
-							<input type="text" name="attr_SelfteleportationG" class="sheet-scoredisabled" disabled="true" value="(floor(@{SelfteleportationO}/2))">/
-							<input type="text" name="attr_SelfteleportationA" class="sheet-scoredisabled" disabled="true" value="(floor(@{SelfteleportationO}/4))">
+							<input type="text" name="attr_UndoO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{UndoRank}+@{Personality})*@{Telepathy}) * (@{UndoRank}/(@{UndoRank}+0.001)) + 0.5))">/
+							<input type="text" name="attr_UndoG" class="sheet-scoredisabled" disabled="true" value="(floor(@{UndoO}/2))">/
+							<input type="text" name="attr_UndoA" class="sheet-scoredisabled" disabled="true" value="(floor(@{UndoO}/4))">
 						</div>
 					</div>
 				</div>
