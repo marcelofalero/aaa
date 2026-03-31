@@ -6,24 +6,24 @@ attribute = "PER"
 category = "Social"
 +++
 
-This broad skill represents a hero's proficiency in the performing arts. Technical knowledge and training are part of this skill, as is the hero's ability to play to an audience and elicit an emotional response.
+Esta habilidad general representa la competencia de un héroe en las artes escénicas. Los conocimientos técnicos y el entrenamiento son parte de esta habilidad, al igual que la capacidad del héroe para actuar ante un público y provocar una respuesta emocional.
 
-Skill checks are modified by the target's Will resistance modifier (to alter emotions) or Personality resistance modifier (to impress).
+Las tiradas de habilidad se ven modificadas por el modificador de resistencia de Voluntad del objetivo (para alterar las emociones) o por el modificador de resistencia de Personalidad (para impresionar).
 
-### Entertainment Results
-The greater the level of success, the more powerful the performance.
-- **Critical Failure:** Bad luck occurs (microphone goes out, set collapses, etc.).
+### Resultados de Entretenimiento
+Cuanto mayor sea el nivel de éxito, más potente será la actuación.
+- **Fallo Crítico:** Ocurre mala suerte (el micrófono se apaga, el decorado se derrumba, etc.).
 
-## Specialty Skills
+## Habilidades de Especialidad
 
 {{% list %}}
-- **Acting:** Playing a part, assuming a dramatic role, and impersonation.
-- **Dance:** Rhythmic movement to music through set steps or improvisation.
-- **Musical Instrument [Specific]:** Playing a particular instrument and reading music.
-- **Singing:** Trained vocalist with a melodious voice.
-- **Stand-up Comedy, Juggling, Ventriloquism:** Other possible specialties.
-| Results | Description |
+- **Actuar:** Interpretar un papel, asumir un rol dramático e imitación.
+- **Danza:** Movimiento rítmico al son de la música mediante pasos establecidos o improvisación.
+- **Instrumento Musical [Específico]:** Tocar un instrumento concreto y leer música.
+- **Canto:** Vocalista entrenado con voz melodiosa.
+- **Monólogos (Stand-up Comedy), Malabarismo, Ventriloquía:** Otras especialidades posibles.
+| Resultados | Descripción |
 | :--- | :--- |
-| **Ordinary** | Success indicates that the hero produced a quality performance. |
-| **Good** | Success indicates that the hero produced a very quality performance. |
-| **Amazing** | Success indicates that the hero produced a masterpiece performance. |
+| **Ordinario** | El éxito indica que el héroe produjo una actuación de calidad. |
+| **Bueno** | El éxito indica que el héroe produjo una actuación de muy buena calidad. |
+| **Asombroso** | El éxito indica que el héroe produjo una actuación magistral. |

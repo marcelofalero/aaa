@@ -42,11 +42,11 @@ Hay tres formas de realizar una tirada de habilidad:
 - [Astucia callejera](/skills/street-smart/)
 
 ### Psiónica
-- [Biocinesis](/skills/biokinesis/)
-- [ESP](/skills/esp/)
-- [Telequinesis](/skills/telekinesis/)
-- [Telepatía](/skills/telepathy/)
-- [Teletransporte](/skills/teleportation/)
+- [Biocinesis](/core-mechanics/psionics/biokinesis/)
+- [ESP](/core-mechanics/psionics/esp/)
+- [Telequinesis](/core-mechanics/psionics/telekinesis/)
+- [Telepatía](/core-mechanics/psionics/telepathy/)
+- [Teletransporte](/core-mechanics/psionics/teleportation/)
 
 ### Sociales
 - [Administración](/skills/administration/)

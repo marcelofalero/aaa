@@ -6,13 +6,13 @@ attribute = "PER"
 category = "Social"
 +++
 
-This broad skill represents a hero's proficiency at deceiving others through conversation and interaction. It covers all verbal tricks and subterfuges, but changes in attitude brought about by this skill are not necessarily long-lasting.
+Esta habilidad general representa la competencia de un héroe para engañar a otros mediante la conversación y la interacción. Abarca todos los trucos y subterfugios verbales, pero los cambios de actitud provocados por esta habilidad no son necesariamente duraderos.
 
-A hero's situation die is modified by the target's Intelligence resistance modifier.
+El dado de situación de un héroe se ve modificado por el modificador de resistencia de Inteligencia del objetivo.
 
-## Specialty Skills
+## Habilidades de Especialidad
 
 {{% list %}}
-- **Bluff:** Talent for misleading or deceiving through false bravado or outright lies.
-- **Bribe:** Offering money, goods, information, or services to get what you want.
-- **Gamble:** Proficiency at various games of chance.
+- **Farolear (Bluff):** Talento para despistar o engañar mediante una falsa bravuconería o mentiras descaradas.
+- **Sobornar:** Ofrecer dinero, bienes, información o servicios para obtener lo que se desea.
+- **Apostar (Gamble):** Competencia en varios juegos de azar.

@@ -127,6 +127,6 @@ This table provides a comprehensive list of all available skills, grouped by the
 
 {{< json-table "skills" >}}
 
-**Profession (Pr.) Codes:** `C`: Combat Spec | `D`: Diplomat | `F`: Free Agent | `T`: Tech Op | `—`: Open.
+**Profession (Pr.) Codes:** `C`: Combat Spec | `F`: Free Agent | `T`: Tech Op | `—`: Open.
 
 

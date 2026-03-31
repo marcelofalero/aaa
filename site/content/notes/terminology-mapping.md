@@ -11,7 +11,7 @@ This page provides a mapping of common game terms from English to Spanish to ens
 | English | Spanish |
 | :--- | :--- |
 | Skill Points | Puntos de Habilidad |
-| Specialty Skill | Especialización |
+| Specialty Skill | Especialidad |
 | Character | Personaje |
 | Gamemaster (GM) | Director de Juego (DJ) |
 | Action Check | Tirada de Acción |
@@ -48,6 +48,12 @@ This page provides a mapping of common game terms from English to Spanish to ens
 | Assault Rifle | Fusil de asalto |
 | Shotgun | Escopeta |
 | SMG | Subfusil |
+| Brawl | Pelea |
+| Scratch-Built Explosives | Explosivos improvisados |
+| Psionic Sense | Sentido psiónico |
+| Investigation | Investigar |
+| Interrogate | Interrogar |
+| Track | Rastrear |
 | ... | ... |
 
 ## Perks & Flaws

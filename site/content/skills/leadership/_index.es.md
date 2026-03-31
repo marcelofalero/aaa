@@ -6,24 +6,24 @@ attribute = "PER"
 category = "Social"
 +++
 
-This broad skill provides a hero with the abilities and talents of a leader. A leader can coordinate a group to perform better or work as a team. Only one character can assume the role of leader at a time.
+Esta habilidad general proporciona a un héroe las capacidades y talentos de un líder. Un líder puede coordinar a un grupo para rendir mejor o trabajar en equipo. Solo un personaje puede asumir el papel de líder a la vez.
 
-A leader's action check provides a bonus to all actions performed in the remainder of the round and all following rounds by followers. It can't be used on targets who are Combative.
+La tirada de acción de un líder proporciona una bonificación a todas las acciones realizadas en el resto del asalto y en todos los asaltos siguientes por parte de sus seguidores. No se puede usar sobre objetivos que estén Combativos.
 
-### Results
-- **Critical Failure:** Leader confuses his followers, who receive a +1 penalty for the remainder of the round.
-- **Failure:** Followers receive no bonus; leader can make another check in the next round.
-- **Ordinary:** As many as two followers receive the leadership bonus.
-- **Good:** As many as four followers receive the leadership bonus.
-- **Amazing:** As many as six followers receive the leadership bonus.
+### Resultados
+- **Fallo Crítico:** El líder confunde a sus seguidores, quienes reciben una penalización de +1 para el resto del asalto.
+- **Fallo:** Los seguidores no reciben bonificación; el líder puede realizar otra tirada en el siguiente asalto.
+- **Ordinario:** Hasta dos seguidores reciben la bonificación de liderazgo.
+- **Bueno:** Hasta cuatro seguidores reciben la bonificación de liderazgo.
+- **Asombroso:** Hasta seis seguidores reciben la bonificación de liderazgo.
 
-## Specialty Skills
+## Habilidades de Especialidad
 
 {{% list %}}
-- **Command:** Leading others through sheer authoritativeness and persuasive ability.
-- **Inspire:** Commanding by example; can be used on Hostile or Combative targets.
-| Results | Description |
+- **Mando (Command):** Liderar a otros mediante la pura autoridad y capacidad de persuasión.
+- **Inspirar:** Liderar mediante el ejemplo; puede usarse sobre objetivos Hostiles o Combativos.
+| Resultados | Descripción |
 | :--- | :--- |
-| **Ordinary** | Success indicates as many as two followers receive the leadership bonus. |
-| **Good** | Success indicates as many as four followers receive the leadership bonus. |
-| **Amazing** | Success indicates as many as six followers receive the leadership bonus. |
+| **Ordinario** | El éxito indica que hasta dos seguidores reciben la bonificación de liderazgo. |
+| **Bueno** | El éxito indica que hasta cuatro seguidores reciben la bonificación de liderazgo. |
+| **Asombroso** | El éxito indica que hasta seis seguidores reciben la bonificación de liderazgo. |

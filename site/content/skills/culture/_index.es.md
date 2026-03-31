@@ -6,56 +6,56 @@ attribute = "PER"
 category = "Social"
 +++
 
-This broad skill represents a hero's ability to understand and interact with cultures different from his own. It covers customs, philosophy, and major historical figures.
+Esta habilidad general representa la capacidad de un héroe para comprender e interactuar con culturas diferentes a la suya. Abarca costumbres, filosofía y figuras históricas importantes.
 
-When used in an interactive context, Culture is an encounter skill.
+Cuando se utiliza en un contexto interactivo, Cultura es una habilidad de encuentro.
 
-### Concept Complexity
-- **Simple (names, help):** -1 bonus
-- **Everyday (origin, occupation):** no modifier
-- **Complex (threats, esoteric ideas):** +1 penalty or more
+### Complejidad del Concepto
+- **Simple (nombres, ayuda):** bonificación de -1
+- **Cotidiano (origen, ocupación):** sin modificador
+- **Complejo (amenazas, ideas esotéricas):** penalización de +1 o más
 
-## Specialty Skills
+## Habilidades de Especialidad
 
 {{% list %}}
-- **Alien Culture [Specific]:** Proficiency with a particular alien society.
-- **Etiquette [Specific]:** Grasp of customs, attitudes, and beliefs of a specific culture.
-- **First Encounter:** Training in making first contact with an unknown culture.
+- **Cultura Alienígena [Específica]:** Proficiencia con una sociedad alienígena en particular.
+- **Etiqueta [Específica]:** Conocimiento de las costumbres, actitudes y creencias de una cultura específica.
+- **Primer Encuentro:** Entrenamiento para realizar el primer contacto con una cultura desconocida.
 
 ### Etiqueta [Específica]
-*This skill can't be used untrained.*
+*No se puede usar sin estar entrenado.*
 
-For each separate purchase of this specialty, a hero selects a specific culture. As it is improved, the hero gains a stronger grasp on the customs, attitudes, and beliefs of that culture.
+Para cada compra separada de esta especialidad, un héroe selecciona una cultura específica. A medida que mejora, el héroe adquiere un mayor conocimiento de las costumbres, actitudes y creencias de esa cultura.
 
-### Rank Benefits
-- **Improved Effect:** Gaining ranks provides a bonus to the use of Diplomacy with members of that culture: -1 bonus at rank 3, -2 bonus at rank 6, -3 bonus at rank 9, and -4 bonus at rank 12.
-| Results | Description |
+### Beneficios de Rango
+- **Efecto Mejorado:** Ganar rangos proporciona una bonificación al uso de Diplomacia con los miembros de esa cultura: bonificación de -1 en el rango 3, bonificación de -2 en el rango 6, bonificación de -3 en el rango 9 y bonificación de -4 en el rango 12.
+| Resultados | Descripción |
 | :--- | :--- |
-| **Ordinary** | Success indicates that the hero understands the customs of a culture. |
-| **Good** | Success indicates that the hero understands the customs of a culture. |
-| **Amazing** | Success indicates that the hero understands the customs of a culture. |
+| **Ordinario** | El éxito indica que el héroe comprende las costumbres de una cultura. |
+| **Bueno** | El éxito indica que el héroe comprende las costumbres de una cultura. |
+| **Asombroso** | El éxito indica que el héroe comprende las costumbres de una cultura. |
 
 ### Cultura alienígena [específica]
-This specialty skill (also known as Diplomacy) allows a hero to improve his ability to reach agreements and understandings with representatives of different nations, cultures, subcultures, and species.
+Esta habilidad de especialidad (también conocida como Diplomacia) permite a un héroe mejorar su capacidad para llegar a acuerdos y entendimientos con representantes de diferentes naciones, culturas, subculturas y especies.
 
-In general, it comes into play when a hero wants to reach an accord. The skill can only be used on a particular target if the hero has at least rank 1 in the specific Etiquette skill that pertains to the target's culture.
-| Results | Description |
+En general, entra en juego cuando un héroe quiere llegar a un acuerdo. La habilidad solo se puede utilizar en un objetivo concreto si el héroe tiene al menos rango 1 en la habilidad de Etiqueta específica que pertenece a la cultura del objetivo.
+| Resultados | Descripción |
 | :--- | :--- |
-| **Ordinary** | Success indicates that the hero can reach an agreement. |
-| **Good** | Success indicates that the hero can reach an agreement. |
-| **Amazing** | Success indicates that the hero can reach an agreement. |
+| **Ordinario** | El éxito indica que el héroe puede llegar a un acuerdo. |
+| **Bueno** | El éxito indica que el héroe puede llegar a un acuerdo. |
+| **Asombroso** | El éxito indica que el héroe puede llegar a un acuerdo. |
 
 ### Primer encuentro
-*This skill can't be used untrained.*
+*No se puede usar sin estar entrenado.*
 
-This specialty skill represents training in the theories and protocols of making first contact with a previously unknown culture. With this skill, a hero can assess capabilities, establish communications, and study cultural habits.
+Esta habilidad de especialidad representa el entrenamiento en las teorías y protocolos para realizar el primer contacto con una cultura previamente desconocida. Con esta habilidad, un héroe puede evaluar capacidades, establecer comunicaciones y estudiar hábitos culturales.
 
-### Complex Task
-A first encounter skill check is always a complex chore that may take days, weeks, or months. The Gamemaster determines the number of successes needed based on how different the cultures are.
+### Tarea Compleja
+Una tirada de habilidad de primer encuentro es siempre una tarea compleja que puede llevar días, semanas o meses. El Director de Juego determina el número de éxitos necesarios basándose en lo diferentes que son las culturas.
 
-Upon successful completion, the hero immediately gains rank 1 in the Knowledge-language and Culture-etiquette skills that relate to that formerly unknown culture.
-| Results | Description |
+Al completarla con éxito, el héroe gana inmediatamente el rango 1 en las habilidades de Conocimiento—idioma y Cultura—etiqueta que se relacionan con esa cultura anteriormente desconocida.
+| Resultados | Descripción |
 | :--- | :--- |
-| **Ordinary** | Success indicates successes towards the goal. |
-| **Good** | Success indicates successes towards the goal. |
-| **Amazing** | Success indicates successes towards the goal. |
+| **Ordinario** | El éxito indica progresos hacia el objetivo. |
+| **Bueno** | El éxito indica progresos hacia el objetivo. |
+| **Asombroso** | El éxito indica progresos hacia el objetivo. |
