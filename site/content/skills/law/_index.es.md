@@ -27,3 +27,8 @@ Para cada compra por separado de esta especialidad, un héroe selecciona una cul
 ### Procedimientos de aplicación de la ley
 Oficiales de policía, detectives, cazarrecompensas y otros utilizan esta habilidad para seguir (o eludir) los procedimientos legales de aplicación de la ley. Los temas incluyen vigilancia, registro e incautación, arresto y detención, y redacción de informes.
 Esta especialidad también se utiliza para determinar qué tan "legal" o sólido es un arresto.
+### Ley psiónica
+*No se puede usar sin estar entrenado.*
+
+Los abogados, jueces y otros utilizan esta habilidad para interactuar en salas de tribunales y en reuniones legislativas. Este aspecto de la habilidad amplia de Ley se utiliza para argumentar un caso o un punto de vista en un procedimiento oficial.
+{{% /list %}}

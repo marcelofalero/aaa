@@ -585,6 +585,14 @@
           "pr": "C"
         },
         {
+          "skill": "&nbsp;&nbsp;&nbsp;Scratch-Built Explosives",
+          "skill_url": "/skills/demolitions#scratch-built-explosives",
+          "type": "Specialty",
+          "attribute": "INT",
+          "cost": 3,
+          "pr": "T"
+        },
+        {
           "skill": "**Law**",
           "skill_url": "/skills/law",
           "type": "Broad",
@@ -1024,6 +1032,14 @@
         {
           "skill": "&nbsp;&nbsp;&nbsp;Perception",
           "skill_url": "/skills/awareness#perception",
+          "type": "Specialty",
+          "attribute": "WIL",
+          "cost": 3,
+          "pr": "—"
+        },
+        {
+          "skill": "&nbsp;&nbsp;&nbsp;Psionic Sense",
+          "skill_url": "/skills/awareness#psionic-sense",
           "type": "Specialty",
           "attribute": "WIL",
           "cost": 3,

@@ -42,3 +42,13 @@ La genética es el estudio de la herencia y los genes, formando la base de la in
 La xenología es el estudio de formas de vida animal de naturaleza alienígena y puede usarse para identificar o clasificar dichas formas de vida, incluida la vida vegetal alienígena. Permite a un personaje realizar suposiciones educadas sobre la naturaleza, el comportamiento y las capacidades de las formas de vida alienígenas.
 
 ⊗ **Efecto incrementado:** Un personaje recibe una **bonificación de -1 paso** en el rango 3, **-2** en el rango 6, **-3** en el rango 9 y **-4** en el rango 12 en ciertas otras tiradas de habilidad que puedan ser asistidas por esta especialidad. Estas habilidades incluyen Supervivencia (en entornos alienígenas), Manejo de animales (con criaturas alienígenas) y Ciencias médicas—xenomedicina.
+---
+
+## Psiónica (INT - Solo entrenamiento)
+
+
+*Esta habilidad no se puede usar sin entrenamiento.*
+
+Esta habilidad de especialidad representa el estudio científico de la naturaleza biológica y bioquímica de las habilidades psiónicas.
+
+⊗ **Efecto incrementado:** Un personaje recibe una **bonificación de -1 paso** en el rango 3, **-2** en el rango 6, **-3** en el rango 9 y **-4** en el rango 12 en ciertas otras tiradas de habilidad que puedan ser asistidas por esta especialidad. Estas habilidades incluyen Telepatía—drenaje, Biocinesis—bioluminiscente y Biocinesis—bioarma.

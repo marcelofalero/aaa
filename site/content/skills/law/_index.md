@@ -55,3 +55,11 @@ For each separate purchase of this specialty, a character selects a specific cul
 - **-2 bonus at Rank 6**
 - **-3 bonus at Rank 9**
 - **-4 bonus at Rank 12**
+---
+
+## Psionic Law (INT - Trained Only)
+
+
+*This skill can't be used untrained.*
+
+Lawyers, judges, and others use this skill to interact in courtrooms and in legislative meetings. This aspect of the Law broad skill is used to argue a case or a point of view in an official proceeding.

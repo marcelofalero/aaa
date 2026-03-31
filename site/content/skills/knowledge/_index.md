@@ -83,3 +83,11 @@ This specialty skill gives a character a certain amount of fluency in a specific
 
 ### Rank Benefits
 ⊗ **Improved Communication:** As a character achieves higher skill ranks in a specific language, he or she gets better at employing other skills that involve language use (such as encounter skills and some Creativity specialties).  This benefit provides a reduction to situation die penalties: **1 step at rank 4**, **2 steps at rank 8**, and **3 steps at rank 12**. This benefit only reduces a penalty; it never provides a bonus.
+---
+
+## Psionics (INT - Trained Only)
+
+
+*This skill can't be used untrained.*
+
+This skill gives a character a working knowledge of psionic abilities, perhaps even beyond what the character's culture understands as a whole. The degree of success achieved on a skill check relates to the quality or quantity of information that is available to or understood by the character.

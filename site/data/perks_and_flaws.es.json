@@ -180,6 +180,13 @@
             "ability": "Wil",
             "type": "Activo",
             "description": "Esta ventaja proporciona al héroe un aumento de +1 paso en su modificador de resistencia a la voluntad. Entonces, un héroe con una puntuación de Voluntad de 11 que tiene un modificador de resistencia de +1 paso (la penalización a las tiradas de su oponente) aumenta el modificador a +2 pasos con esta ventaja."
+          },
+          {
+            "name": "Energía Psiónica Extra",
+            "cost": "3",
+            "ability": "Wil",
+            "type": "Activo",
+            "description": "Esta ventaja proporciona al héroe 2 Puntos de Energía Psiónica (PP) adicionales. Esta ventaja solo puede comprarse una vez."
           }
         ]
       }

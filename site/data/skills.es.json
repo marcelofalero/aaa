@@ -553,6 +553,14 @@
           "pr": "C"
         },
         {
+          "skill": "&nbsp;&nbsp;&nbsp;Explosivos improvisados",
+          "skill_url": "/skills/demolitions#explosivos-improvisados",
+          "type": "Especialidad",
+          "attribute": "INT",
+          "cost": 3,
+          "pr": "T"
+        },
+        {
           "skill": "**Ley**",
           "skill_url": "/skills/law",
           "type": "Amplia",
@@ -942,7 +950,7 @@
           "pr": "D"
         },
         {
-          "skill": "&nbsp;&nbsp;&nbsp;Intuition",
+          "skill": "&nbsp;&nbsp;&nbsp;Intuición",
           "skill_url": "/skills/awareness#intuicion",
           "type": "Especialidad",
           "attribute": "WIL",
@@ -952,6 +960,14 @@
         {
           "skill": "&nbsp;&nbsp;&nbsp;Percepción",
           "skill_url": "/skills/awareness#percepcion",
+          "type": "Especialidad",
+          "attribute": "WIL",
+          "cost": 3,
+          "pr": "—"
+        },
+        {
+          "skill": "&nbsp;&nbsp;&nbsp;Sentido psiónico",
+          "skill_url": "/skills/awareness#sentido-psionico",
           "type": "Especialidad",
           "attribute": "WIL",
           "cost": 3,
@@ -980,14 +996,6 @@
           "attribute": "WIL",
           "cost": 3,
           "pr": "—"
-        },
-        {
-          "skill": "&nbsp;&nbsp;&nbsp;Interrogar",
-          "skill_url": "/skills/interaction#interrogar",
-          "type": "Especialidad",
-          "attribute": "WIL",
-          "cost": 4,
-          "pr": "FT"
         },
         {
           "skill": "&nbsp;&nbsp;&nbsp;Entrevistar",
@@ -1025,7 +1033,15 @@
           "skill": "**Investigar**",
           "skill_url": "/skills/investigate",
           "type": "Amplia",
-          "attribute": "INT",
+          "attribute": "WIL",
+          "cost": 3,
+          "pr": "FT"
+        },
+        {
+          "skill": "&nbsp;&nbsp;&nbsp;Interrogar",
+          "skill_url": "/skills/investigate#interrogar",
+          "type": "Especialidad",
+          "attribute": "WIL",
           "cost": 3,
           "pr": "FT"
         },
@@ -1033,9 +1049,17 @@
           "skill": "&nbsp;&nbsp;&nbsp;Búsqueda",
           "skill_url": "/skills/investigate#busqueda",
           "type": "Especialidad",
-          "attribute": "INT",
+          "attribute": "WIL",
           "cost": 1,
           "pr": "—"
+        },
+        {
+          "skill": "&nbsp;&nbsp;&nbsp;Rastrear",
+          "skill_url": "/skills/investigate#rastrear",
+          "type": "Especialidad",
+          "attribute": "WIL",
+          "cost": 3,
+          "pr": "FT"
         },
         {
           "skill": "**Conocimiento**",

@@ -79,3 +79,11 @@ Esta habilidad de especialidad le da a un personaje cierta fluidez en un idioma 
 
 ### Beneficios de Rango
 ⊗ **Comunicación Mejorada:** A medida que un personaje alcanza rangos de habilidad más altos en un idioma específico, mejora en el empleo de otras habilidades que involucran el uso del lenguaje (como las habilidades de encuentro y algunas especialidades de Creatividad). Este beneficio proporciona una reducción a las penalizaciones por dado de situación: **1 paso al rango 4**, **2 pasos al rango 8** y **3 pasos al rango 12**. Este beneficio solo reduce una penalización; nunca proporciona un bono.
+---
+
+## Psiónica (INT - Solo Entrenados)
+
+
+*Esta habilidad no puede usarse sin entrenamiento.*
+
+Esta habilidad le da a un personaje un conocimiento práctico de las habilidades psiónicas, tal vez incluso más allá de lo que entiende su cultura como un todo. El grado de éxito logrado en una comprobación de habilidad se relaciona con la calidad o cantidad de información disponible o comprendida por el personaje.
