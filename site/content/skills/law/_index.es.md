@@ -5,25 +5,25 @@ weight = 5
 attribute = "INT"
 +++
 
-This broad skill provides a hero with general knowledge of the laws and legal systems of her native society. It can also be treated as an encounter skill to change an individual's attitude.
+Esta habilidad general proporciona a un héroe conocimientos generales sobre las leyes y sistemas legales de su sociedad nativa. También puede tratarse como una habilidad de encuentro para cambiar la actitud de un individuo.
 
-In a legal action, the hero and opponent make alternating skill checks until someone gets a Critical Failure or an Amazing result.
+En una acción legal, el héroe y el oponente realizan tiradas de habilidad alternas hasta que alguien obtiene un Fallo Crítico o un resultado Asombroso.
 
-## Specialty Skills
+## Habilidades de Especialidad
 
 {{% list %}}
 
 ### Procedimientos judiciales
-Lawyers, judges, and others use this skill to interact in a courtroom setting. This specialty is used to argue a case or point of view in an official proceeding.
+Abogados, jueces y otros utilizan esta habilidad para interactuar en un entorno judicial. Esta especialidad se usa para defender un caso o punto de vista en un procedimiento oficial.
 
 ### Ley [Específica]
-*This skill can't be used untrained.*
+*No se puede usar sin estar entrenado.*
 
-For each separate purchase of this specialty, a hero selects a specific culture or type of law (maritime, salvage, etc.). Familiarity translates into a bonus to Law, Court Procedures, or Law Enforcement Procedures in the relevant culture.
+Para cada compra por separado de esta especialidad, un héroe selecciona una cultura o tipo de ley específico (marítima, de salvamento, etc.). La familiaridad se traduce en una bonificación a las tiradas de Ley, Procedimientos Judiciales o Procedimientos de Aplicación de la Ley en la cultura correspondiente.
 
-### Rank Benefits
-- **Improved Effect:** Bonus of -1 at rank 3, -2 at rank 6, -3 at rank 9, and -4 at rank 12.
+### Beneficios de Rango
+- **Efecto Mejorado:** Bonificación de -1 en el rango 3, -2 en el rango 6, -3 en el rango 9 y -4 en el rango 12.
 
 ### Procedimientos de aplicación de la ley
-Police officers, detectives, bounty hunters, and others use this skill to follow (or bend) legal law enforcement procedures. Topics include surveillance, search and seizure, arrest and detainment, and report writing.
-This specialty is also used to determine how "good" an arrest is.
+Oficiales de policía, detectives, cazarrecompensas y otros utilizan esta habilidad para seguir (o eludir) los procedimientos legales de aplicación de la ley. Los temas incluyen vigilancia, registro e incautación, arresto y detención, y redacción de informes.
+Esta especialidad también se utiliza para determinar qué tan "legal" o sólido es un arresto.

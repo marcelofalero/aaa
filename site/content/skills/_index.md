@@ -43,11 +43,11 @@ There are three ways to perform a skill check:
 
 
 ### Psionics
-- [Biokinesis](/skills/biokinesis/)
-- [ESP](/skills/esp/)
-- [Telekinesis](/skills/telekinesis/)
-- [Telepathy](/skills/telepathy/)
-- [Teleportation](/skills/teleportation/)
+- [Biokinesis](/core-mechanics/psionics/biokinesis/)
+- [ESP](/core-mechanics/psionics/esp/)
+- [Telekinesis](/core-mechanics/psionics/telekinesis/)
+- [Telepathy](/core-mechanics/psionics/telepathy/)
+- [Teleportation](/core-mechanics/psionics/teleportation/)
 
 ### Social
 - [Administration](/skills/administration/)

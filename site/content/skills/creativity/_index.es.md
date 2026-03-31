@@ -6,16 +6,16 @@ attribute = "WIL"
 category = "Other"
 +++
 
-This broad skill provides a hero with training and talent (or knowledge) in creative endeavors.
+Esta habilidad general proporciona a un héroe entrenamiento y talento (o conocimiento) en empeños creativos.
 
-### Creativity Results
-Using this skill involves a complex skill check. The situation modifier depends on conditions, and the complexity relates to the task (e.g., a simple poem vs. a Shakespearean sonnet).
-- **Complexity:** Ordinary: simple task; Amazing: extremely difficult/quality task.
-- **Results:** Critical Failure or three Failure results means the work is scrapped.
+### Resultados de Creatividad
+Usar esta habilidad implica una tirada de habilidad compleja. El modificador de situación depende de las condiciones, y la complejidad se relaciona con la tarea (por ejemplo, un poema simple frente a un soneto shakesperiano).
+- **Complejidad:** Ordinaria: tarea sencilla; Asombrosa: tarea de calidad/dificultad extrema.
+- **Resultados:** Un Fallo Crítico o tres resultados de Fallo significan que el trabajo se desecha.
 
-## Specialty Skills
+## Habilidades de Especialidad
 
 {{% list %}}
-- **Writing:** Facility for communicating with the written word.
-- **Artistic Expression:** Talent for a chosen artistic medium.
-- **Creativity, Specific Skill:** A specific aspect of this skill, like computer graphics or holo art.
+- **Escritura:** Facilidad para comunicarse con la palabra escrita.
+- **Expresión Artística:** Talento para un medio artístico elegido.
+- **Creatividad, Habilidad Específica:** Un aspecto específico de esta habilidad, como gráficos por computadora o arte holográfico.

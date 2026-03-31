@@ -26,7 +26,7 @@ As a character improves his ability in the defensive martial arts specialty skil
 
 The essence of defensive and dexterity-based martial arts lies in non-resistance and the sophisticated manipulation of kinetic vectors. Rather than meeting force with force, these styles utilize fluid, spherical movements to redirect an attacker's momentum, effectively turning their own mass and acceleration against them.
 
-▶ Overpowering: This skill can be used to determine the success of an attempt to overpower an opponent. Briefly, overpowering is a form of unarmed attack made simultaneously by one or more allies trying to grab and restrain a single opponent. If a single attacker tries to overpower another character, his Unarmed Attack skill check is made at a +1 penalty.
+▶ Overpowering: This skill can be used to determine the success of an attempt to overpower an opponent. Briefly, overpowering is a form of unarmed attack made simultaneously by one or more allies trying to grab and restrain a single opponent. If a single attacker tries to overpower another character, his Melee Combat skill check is made at a +1 penalty.
 
 Every additional attacker who takes part in the same overpowering attempt provides a cumulative –1 bonus to the skill check. Overpowering does not cause damage, but it immobilizes an opponent for as long as one of the attackers continues to maintain a tight hold on that opponent.
 
@@ -51,7 +51,7 @@ As a character improves his ability in the power martial arts specialty skill, h
 
 The essence of power-oriented martial arts lies in the efficient mobilization of total body mass through structural alignment and explosive kinetic sequencing. These styles treat the body as a single, rigid unit at the moment of impact, using the ground as a fulcrum to funnel energy.
 
-▶ Overpowering: This skill can be used to determine the success of an attempt to overpower an opponent. Briefly, overpowering is a form of unarmed attack made simultaneously by one or more allies trying to grab and restrain a single opponent. If a single attacker tries to overpower another character, his Unarmed Attack skill check is made at a +1 penalty.
+▶ Overpowering: This skill can be used to determine the success of an attempt to overpower an opponent. Briefly, overpowering is a form of unarmed attack made simultaneously by one or more allies trying to grab and restrain a single opponent. If a single attacker tries to overpower another character, his Melee Combat skill check is made at a +1 penalty.
 
 Every additional attacker who takes part in the same overpowering attempt provides a cumulative –1 bonus to the skill check. Overpowering does not cause damage, but it immobilizes an opponent for as long as one of the attackers continues to maintain a tight hold on that opponent.
 
@@ -80,7 +80,7 @@ As a character improves his ability in the blade specialty skill, he gains rank 
 
 ⊗ Resistance Modifier: At higher ranks, the skill provides an improvement to a character's Strength resistance modifier. It improves by +1 at rank 4, by +1 again at rank 8, and by +1 again at rank 12. This increase doesn't stack with similar bonuses provided by other melee combat specialty skills.
 
-▶ Reaction Parry: When a character reaches rank 4, he can attempt to parry whenever a Melee Weapons or Unarmed Attack is used against him. The parry attempt uses up the character's next available action.
+▶ Reaction Parry: When a character reaches rank 4, he can attempt to parry whenever a melee or unarmed attack is used against him. The parry attempt uses up the character's next available action.
 
 ▶ Double-Strike: When a character reaches skill rank 6, he learns to make a double-strike against a target with a successful skill check. The player rolls one control die and two situation dice to make his double-strike attack. The first situation die is the base modifier needed to make an attack with a +1 step penalty; the second situation die is the base modifier with a +2 step penalty.
 
@@ -95,7 +95,7 @@ As a character improves his ability in the blunt specialty skill, he gains rank 
 
 ⊗ Resistance Modifier: At higher ranks, the skill provides an improvement to a character's Strength resistance modifier. It improves by +1 at rank 4, by +1 again at rank 8, and by +1 again at rank 12. This increase doesn't stack with similar bonuses provided by other melee combat specialty skills.
 
-▶ Reaction Parry: When a character reaches rank 4, he can attempt to parry whenever a Melee Weapons or Unarmed Attack is used against him. The parry attempt uses up the character's next available action.
+▶ Reaction Parry: When a character reaches rank 4, he can attempt to parry whenever a melee or unarmed attack is used against him. The parry attempt uses up the character's next available action.
 
 ▶ Double-Strike: When a character reaches skill rank 6, he learns to make a double-strike against a target with a successful skill check. The player rolls one control die and two situation dice. The first situation die is the base modifier with a +1 step penalty; the second situation die is the base modifier with a +2 step penalty.
 
@@ -112,7 +112,7 @@ Due to the inherent complexity of powered weapons they are more fragile than the
 
 ⊗ Resistance Modifier: At higher ranks, the skill provides an improvement to a character's Strength resistance modifier. It improves by +1 at rank 4, by +1 again at rank 8, and by +1 again at rank 12. This increase doesn't stack with similar bonuses provided by other melee combat specialty skills.
 
-▶ Reaction Parry: When a character reaches rank 4, he can attempt to parry whenever a Melee Weapons or Unarmed Attack is used against him. The parry attempt uses up the character's next available action.
+▶ Reaction Parry: When a character reaches rank 4, he can attempt to parry whenever a melee or unarmed attack is used against him. The parry attempt uses up the character's next available action.
 
 ▶ Double-Strike: When a character reaches skill rank 6, he learns to make a double-strike against a target with a successful skill check. The player rolls one control die and two situation dice. The first situation die is the base modifier with a +1 step penalty; the second situation die is the base modifier with a +2 step penalty.
 

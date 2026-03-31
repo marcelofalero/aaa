@@ -32,12 +32,6 @@ Un personaje con la habilidad de especialidad de encantar tiene talento para ser
 
 ---
 
-## Interrogar (WIL)
-
-Interrogar es la habilidad necesaria para obtener información de un sujeto poco cooperativo. Implica coacción, ya sea física o psicológica.
-
----
-
 ## Entrevistar (WIL)
 
 La habilidad de especialidad de entrevistar representa el talento para obtener información de otro personaje de forma no agresiva. Las entrevistas son utilizadas a menudo por reporteros, investigadores y funcionarios que llevan a cabo procedimientos administrativos estándar.

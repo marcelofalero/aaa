@@ -6,19 +6,19 @@ attribute = "WIL"
 category = "Other"
 +++
 
-This broad skill provides a hero with knowledge of the protocols for dealing with gangs, street people, and criminal organizations. It measures a hero's ability to negotiate and make contact with the realm of the blue-collar criminal.
+Esta habilidad general proporciona a un héroe conocimiento de los protocolos para tratar con pandillas, gente de la calle y organizaciones criminales. Mide la capacidad de un héroe para negociar y establecer contacto con el reino del criminal de "cuello azul" (delincuencia común).
 
-Street Smart and its specialties are encounter skills.
+Callejeo y sus especialidades son habilidades de encuentro.
 
-### Scarcity and Legality
-Situation modifiers depend on the item or service sought, its legality, and connection with illegal groups:
-- **Marginal:** no penalty.
-- **Ordinary:** +1 penalty.
-- **Good:** +2 penalty.
-- **Amazing:** +3 penalty.
+### Escasez y Legalidad
+Los modificadores de situación dependen del objeto o servicio buscado, su legalidad y la conexión con grupos ilegales:
+- **Marginal:** sin penalización.
+- **Ordinario:** penalización de +1.
+- **Bueno:** penalización de +2.
+- **Asombroso:** penalización de +3.
 
-## Specialty Skills
+## Habilidades de Especialidad
 
 {{% list %}}
-- **Criminal Elements:** Making contact with and dealing with organized crime, professional criminals, and gangs.
-- **Street Knowledge:** Familiarity with the inner workings of a particular organization or geographical area.
+- **Elementos Criminales:** Establecer contacto y tratar con el crimen organizado, criminales profesionales y pandillas.
+- **Conocimiento de la Calle:** Familiaridad con el funcionamiento interno de una organización o área geográfica en particular.
