@@ -54,8 +54,18 @@
     /* --- Function to update a single attack form row --- */
     function updateAttackForm(rowId) {
         const prefix = rowId ? 'repeating_attackforms_' + rowId + '_' : 'repeating_attackforms_';
+        
         getAttrs([prefix + 'attackformdie', prefix + 'attackformaccuracy', prefix + 'attackformsit'], function(v) {
-            const result = calcStepDie(v[prefix + 'attackformdie'], v[prefix + 'attackformaccuracy'], v[prefix + 'attackformsit']);
+            console.log('Alternity | Updating row: ' + (rowId || 'base'), v);
+            
+            const die = v[prefix + 'attackformdie'] || '0';
+            const acc = v[prefix + 'attackformaccuracy'] || '0';
+            const sit = v[prefix + 'attackformsit'] || '0';
+            
+            const result = calcStepDie(die, acc, sit);
+            
+            console.log('Alternity | Result: ', result);
+            
             setAttrs({ 
                 [prefix + 'attackform_step_die']: result.step,
                 [prefix + 'attackform_warning']: result.warning
@@ -70,8 +80,9 @@
         updateAttackForm(rowMatch[1]);
     });
 
-    /* --- Universal initialization on sheet open --- */
-    on('sheet:opened', function() {
+    /* --- Handle row creation/deletion and sheet load --- */
+    on('change:repeating_attackforms sheet:opened', function() {
+        console.log('Alternity | Initializing all Attack Forms');
         getSectionIDs('repeating_attackforms', function(idarray) {
             idarray.forEach(rowId => updateAttackForm(rowId));
         });
