@@ -1,6 +1,6 @@
-+++
 title = "Bioweapon"
 attribute = "CON"
+description = "Mutate hands into natural weapons like claws or stingers."
 +++
 
 *Extended duration.*

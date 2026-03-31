@@ -9,5 +9,27 @@
   <div class="nested-copy-line-height lh-copy f4 nested-links mid-gray">
     {{ .Content }}
   </div>
+
+  {{ if not .Params.omit_automatic_list }}
+  <section class="mt5 ph3 ph5-l center measure-wide">
+    {{ range .Pages }}
+      <div class="mb4 pb3 bb b--white-10 relative">
+        <h2 class="f3 mt0 mb2 athelas">
+          <a href="{{ .RelPermalink }}" class="link neon-cyan hover-white dim no-underline tracked-tight">
+            {{ .Title }}{{ with .Params.attribute }} ({{ . }}){{ end }}
+          </a>
+        </h2>
+        <div class="silver f5 lh-copy measure-wide specialty-summary">
+          {{ .Params.description | default .Summary }}
+        </div>
+        <div class="mt2">
+          <a href="{{ .RelPermalink }}" class="link neon-cyan f7 ttu tracked dim o-80">
+            READ MORE &raquo;
+          </a>
+        </div>
+      </div>
+    {{ end }}
+  </section>
+  {{ end }}
 </article>
 {{ end }}

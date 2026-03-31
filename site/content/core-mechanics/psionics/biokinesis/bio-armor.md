@@ -1,6 +1,6 @@
-+++
 title = "Bio-armor"
 attribute = "CON"
+description = "Solidify the outer layer of skin to create a natural, protective layer."
 +++
 
 *Extended duration.*

@@ -5,6 +5,7 @@ weight = 4
 attribute = "PER"
 category = "Psionics"
 untrained = true
+omit_automatic_list = true
 +++
 
 *This skill can't be used untrained.*
