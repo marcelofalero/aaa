@@ -93,5 +93,12 @@
     "psionic-energy": "Psionic Energy",
     "font-size": "Font Scale",
     "default-font": "Standard (Compact)",
-    "bigger-font": "Enlarged (Accessible)"
+    "bigger-font": "Enlarged (Accessible)",
+    "campaign": "Campaign",
+    "campaign-information": "Campaign Information",
+    "campaign-name": "Campaign Name",
+    "campaign-wiki-url": "Reference / Wiki URL",
+    "campaign-notes": "Campaign & Narrative Notes",
+    "group-objectives": "GROUP OBJECTIVES",
+    "important-contacts": "IMPORTANT CONTACTS"
 }
