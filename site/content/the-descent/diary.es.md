@@ -10,7 +10,7 @@ weight = 10
 **Localización:** Crucero Comercial Aurora, Espacio Profundo.
 **Estado:** Colapso Estructural / Evacuación de Emergencia.
 
-El crucero comercial Aurora, una nave modular de transporte de pasajeros y carga, acababa de salir de un salto en el drive space. Sin previo aviso, el impacto de lo que parece haber sido una mina inteligente o un arma automática remanente de la guerra fragmentó la sección de proa, produciendo una reacción en cadena a medida que la macroestructura de la nave se retorcía y fracturaba, exponiendo los vagones uno a uno al vacío.
+El crucero comercial Aurora, una nave modular de transporte de pasajeros y carga, acababa de salir de un salto en el drive space. Sin previo aviso, el impacto de lo que parece haber sido una mina inteligente o un arma automática remanente de la guerra fragmentó la sección de proa. La subsecuente reacción en cadena causó que la macroestructura de la nave se retorciera y fracturara, exponiendo los vagones uno a uno al vacío.
 
 **Crónica del Escape**
 *   **El Horror del Vacío:** El compartimento inmediatamente delante del nuestro sufrió una fractura catastrófica. A través del cristal reforzado de la puerta de sellado, presenciamos el horror absoluto: un segmento de fuselaje del vagón contiguo se desprendió por completo, exponiendo el interior al vacío. Vimos a pasajeros morir víctimas de la descompresión explosiva, el ebullismo y la hipoxia fulminante mientras sus fluidos corporales se vaporizaban por la caída de presión. No hubo sonido, solo el caos visual de la desintegración.
