@@ -10,42 +10,42 @@ weight = 10
 **Localización:** Crucero Comercial Aurora, Espacio Profundo.
 **Estado:** Colapso Estructural / Evacuación de Emergencia.
 
-El crucero comercial Aurora, una nave modular de transporte de pasajeros y carga, acababa de salir de un salto en el drive space. Sin previo aviso, el impacto de lo que parece haber sido una mina inteligente o un arma automática remanente de la guerra fragmentó la sección de proa. La subsecuente reacción en cadena causó que la macroestructura de la nave se retorciera y fracturara, exponiendo los vagones uno a uno al vacío.
+El crucero comercial Aurora, una nave modular de transporte de pasajeros y carga, acababa de salir de un salto en el drive space. Sin previo aviso, el impacto de lo que pareció ser una mina inteligente —un armamento remanente de la guerra— destruyó por completo la sección de proa. La reacción en cadena subsiguiente provocó que la macroestructura se retorciera y se fracturara, dejando a los vagones expuestos al vacío uno por uno.
 
 **Crónica del Escape**
-*   **El Horror del Vacío:** El compartimento inmediatamente delante del nuestro sufrió una fractura catastrófica. A través del cristal reforzado de la puerta de sellado, presenciamos el horror absoluto: un segmento de fuselaje del vagón contiguo se desprendió por completo, exponiendo el interior al vacío. Vimos a pasajeros morir víctimas de la descompresión explosiva, el ebullismo y la hipoxia fulminante mientras sus fluidos corporales se vaporizaban por la caída de presión. No hubo sonido, solo el caos visual de la desintegración.
-*   **Falla de Gravedad:** La gravedad artificial fallaba de forma intermitente en el vagón. El estruendo del fuselaje retorciéndose era un constante recordatorio de que su tiempo se estaba acabando, mientras las luces rojas de emergencia bañaban el pasillo.
-*   **El Bypass del Baluarte:** Con los pods de nuestra sección inutilizados, nos dirigimos a popa. El mamparo blindado de presión estaba encajado por la torsión del casco. Tarek Ionis realizó un bypass electrónico a los solenoides magnéticos, logrando abrir una brecha antes de que el vagón se sellara definitivamente.
-*   **Sección de Carga:** La gravedad en la sección de carga todavía estaba funcional, probablemente por las características de este tipo de nave, que como un tren estaba formado por módulos independientes interconectados. Afortunadamente, el colapso estructural causó que la sección de carga se desacoplase, deteniendo el colapso estructural. Algunos de nosotros empezaron a buscar los contenedores de nuestro equipo en la bitácora de carga, mientras otros abrían contenedores para obtener las pocas pertenencias que fuesen de utilidad.
-*   **Ingeniería:** Fue en esta situación que interceptamos al equipo de ingeniería —Sam Logan, Clara Ananta y un Mathew Nadir severamente herido— que huían de los reactores, que habían sufrido una sobrecarga y estaban fuera de control. El personal de ingeniería cargó equipo adicional en la cápsula de escape, un carro con neutralizadores de peso lleno de suministros de algún tipo.
-*   **La Extracción:** Abordamos la cápsula de carga a toda prisa. Segundos después de eyectar, la sección de ingeniería del Aurora sufrió un colapso estructural total. Sin atmósfera para una explosión, vimos cómo la nave se doblaba sobre sí misma mientras el fallo de los reactores incineraba el interior en un destello de plasma blanco, dejando atrás un armazón de metal fundido.
+*   **El horror del vacío:** El compartimento inmediatamente anterior al nuestro sufrió una fractura catastrófica. A través del cristal reforzado de la compuerta, presenciamos una escena dantesca: un segmento del fuselaje contiguo se desprendió de cuajo, dejando el interior expuesto al espacio. Vimos a los pasajeros fallecer víctimas de la descompresión explosiva, el ebullismo y la hipoxia fulminante, mientras sus fluidos corporales se vaporizaban de manera repentina por la drástica caída de presión. No hubo sonido alguno, solo el caos visual de la desintegración.
+*   **Falla de gravedad:** La gravedad artificial fallaba de forma intermitente en nuestro vagón. El estruendo del metal retorciéndose era un recordatorio constante de que nuestro tiempo se agotaba, mientras las luces rojas de emergencia teñían el pasillo.
+*   **El puente al mamparo:** Como las cápsulas de nuestra sección habían quedado inutilizadas, nos dirigimos hacia popa. La compuerta blindada estaba trabada por la torsión del casco. El médico mechalus, Tarek Ionis, realizó un puente electrónico a los solenoides magnéticos y logró abrir una brecha apenas unos segundos antes de que el vagón se sellara de manera definitiva.
+*   **Sección de carga:** Aquí la gravedad aún funcionaba gracias al diseño modular de la nave, semejante a los vagones de un tren. Afortunadamente, el daño en la proa activó los sistemas de seguridad y la sección de carga se desacopló de forma automática, frenando el colapso estructural. Algunos procedimos a buscar nuestros contenedores de equipo en los registros, mientras otros forzaban cajas al azar para rescatar cualquier pertenencia de utilidad.
+*   **Ingeniería:** En medio del caos, interceptamos al equipo de ingeniería —Sam Logan, Clara Ananta y un Mathew Nadir severamente herido—. Huían de los reactores, los cuales habían sufrido una sobrecarga y se encontraban incontrolables. El personal logró cargar equipo adicional en nuestra cápsula de escape: un carro con neutralizadores de peso lleno de provisiones de naturaleza desconocida.
+*   **La extracción:** Abordamos la cápsula con suma urgencia. Segundos después de la eyección, la sección de ingeniería del Aurora colapsó por completo. Sin atmósfera que permitiera una explosión visible, observamos cómo la nave se doblaba sobre sí misma hasta que el fallo de los reactores incineró el interior en un destello de plasma blanco. Solo quedó atrás un armazón de chapa y metal fundido.
 
 ### Registro 02: La Deriva y el Aterrizaje
-**Localización:** Cápsula de Salvamento Modelo 7-E / Superficie Planetaria Desconocida.
-**Duración:** 121 horas de deriva.
+**Localización:** Cápsula de Salvamento Modelo 7-E / Superficie planetaria desconocida.
+**Duración:** 121 horas a la deriva.
 
-Lo que debía ser un escape se convirtió en una lenta degradación moral y física dentro de un espacio de diez metros cuadrados.
+Lo que debió haber sido un escape milagroso se transformó en una lenta degradación física y moral dentro de un habitáculo de diez metros cuadrados.
 
 **Cronología de la Deriva**
-*   **Día 1: El Frío Cálculo.** Mathew Nadir se desangraba debido a las heridas de la explosión. El médico mechalus, Tarek Ionis, calculó que el gasto de suministros médicos no era eficiente dada la baja probabilidad de supervivencia del ingeniero. Hizo el mínimo esfuerzo. Mathew murió esa noche, dejando un ambiente de desconfianza y horror.
-*   **Día 2: La Bolsa de Lona.** El hedor de la desesperación y la descomposición se volvió intolerable. Para que el cuerpo de Mathew entrara en una bolsa de lona, hubo que dislocarle los brazos. Sellamos la bolsa con cinta para caños para intentar contener los fluidos y el olor en el aire reciclado.
-*   **Día 3: El Estallido de Tony.** El estrés postraumático y el encierro quebraron a Tony Skigrocu. Su brote violento puso en peligro la integridad del grupo, obligándonos a reducirlo físicamente y mantenerlo bajo fuertes calmantes que lo mantuvieran a raya pero sin llegar a la inconsciencia.
-*   **Día 4: Contrastes.** El hambre y el aire saturado de $CO_2$ nos consumían. Basilio Zuzunaga ("Zuzu") se mantuvo en una calma absoluta e inquietante, mientras Ssi-T’krik no podía dejar de moverse en los escasos centímetros libres y Makya se aferraba a su arco, al límite de sus nervios.
-*   **Día 5: Punto de Ruptura.** El efecto de los calmantes sobre Tony perdió eficacia y recuperó su voluntad combativa. Pistola en mano, nos apuntó a todos en un arranque de lucidez paranoide. La masacre era inminente cuando la alarma de proximidad planetaria interrumpió el duelo.
+*   **Día 1: Los números en frío.** Mathew Nadir se desangraba a causa de las heridas de la explosión. Tarek Ionis calculó que el gasto de insumos médicos era ineficiente, dado que el ingeniero carecía de probabilidades reales de supervivencia. Por lo tanto, se limitó a los cuidados paliativos mínimos. Mathew falleció esa misma noche, instaurando un clima de profunda desconfianza y horror en la cápsula.
+*   **Día 2: La bolsa de lona.** El hedor de la descomposición, sumado a la desesperación, se volvió intolerable. Para lograr introducir el cuerpo de Mathew, ya con rigor mortis, en una bolsa de lona, tuvimos que dislocarle los brazos. Sellamos los bordes con cinta adhesiva industrial, en un intento desesperado por contener los fluidos y el olor en el sistema de aire reciclado.
+*   **Día 3: El estallido de Tony.** El estrés postraumático y el encierro quebraron a Tony Skigrocu. Su violento brote psicótico puso en grave peligro al grupo entero, obligándonos a reducirlo físicamente. Tuvimos que sedarlo con altas dosis de calmantes para mantenerlo controlado, llevándolo casi al límite de la inconsciencia.
+*   **Día 4: Contrastes.** El hambre y el aire saturado de dióxido de carbono nos consumían. Basilio Zuzunaga ("Zuzu") se mantuvo en una calma absoluta y francamente inquietante. En contrapartida, Ssi-T’krik no podía dejar de moverse en los escasos centímetros disponibles, mientras Makya se aferraba a su arco, con los nervios destrozados.
+*   **Día 5: Punto de quiebre.** El organismo de Tony generó resistencia a los sedantes y el tripulante recuperó su voluntad combativa. Arma en mano, nos apuntó a todos durante un ataque de lucidez paranoide. Una masacre resultaba inminente, pero la alarma de proximidad planetaria interrumpió la tensión.
 
 **El Aterrizaje**
-Hemos tocado tierra en un páramo de hielo seco. Los sensores indican que estamos en el lado oscuro de un planeta con acoplamiento de marea, forma técnica de indicar que la misma cara siempre mira al sol.
+Hicimos contacto sobre un páramo de hielo seco. Los sensores indican que nos encontramos en el lado oscuro de un planeta con acoplamiento de marea (es decir, el astro presenta permanentemente la misma cara hacia su sol).
 
-Frente a la escotilla se alzan las ruinas de una colonia. El fallido intento de identificar el planeta nos dejó con más preguntas que respuestas. En el horizonte lejano, se percibe un resplandor naranja constante.
+Frente a la escotilla se erigen las ruinas de una antigua colonia. Los sistemas informáticos fracasaron en su intento de identificar el planeta, dejándonos con más interrogantes que certezas. En la lejanía, sobre el horizonte, se recorta un resplandor naranja constante.
 
 **Estado de Situación:**
-*   Tony Skigrocu sigue armado y tenso.
-*   El cadáver de Mathew permanece sellado en el fondo de la cápsula.
-*   El exterior es gélido, alrededor de -100 ºC y una presión de 3.5 atmósferas terrestres, lo que explica el suave descenso. A esa presión caminar se siente como estar sumergido, y el viento son corrientes contra las cuales es casi imposible resistir.
-*   Ubicación desconocida. La baliza de emergencia, un grito de auxilio en el vacío.
+*   Tony Skigrocu permanece armado y sumamente alterado.
+*   El cadáver de Mathew continúa sellado en el fondo de la cápsula.
+*   Las condiciones exteriores son letales: temperaturas de -100 ºC y una presión atmosférica aplastante de 3.5 atmósferas terrestres (lo cual explica nuestro suave descenso). Bajo dicha presión, caminar se percibe como avanzar sumergido en un líquido, y los vientos son corrientes sólidas contra las que resulta casi imposible resistir.
+*   Nuestra ubicación es incierta. La baliza de emergencia constituye nuestro único pedido de auxilio en el vacío.
 
 **Inventario de Supervivencia**
-*   **Sustento:** 30 días de Agua y NutriMix (MeatLoaf/BBQ) para 12 personas.
-*   **Equipo:** 12 sacos de dormir, 12 unidades térmicas, 12 trajes (9 Soft, 3 Hard - uno para T'sa).
-*   **Médico:** 6 Trauma Pack I, 1 Med Kit, Farmacéuticos (1,000 cr), 1 MedCare One.
-*   **Logística:** 2 Domos Gliese 300b con corredores, Carro con Neutralizador de Peso (10,000 Kg/h), herramientas pesadas y Cargador Universal.
+*   **Sustento:** Agua y NutriMix (MeatLoaf/BBQ) para 12 personas por 30 días.
+*   **Equipo Personal:** 12 bolsas de dormir, 12 unidades térmicas, 12 trajes ambientales (9 clase Soft, 3 clase Hard — uno adaptado para la fisionomía T’sa).
+*   **Suministros Médicos:** 6 Trauma Pack I, 1 Med Kit, Fármacos (por un valor de 1,000 cr), 1 MedCare One.
+*   **Logística Pesada:** 2 Domos Gliese 300b con corredores de acople, Carro con Neutralizador de Peso (capacidad de 10,000 Kg/h), herramientas pesadas y 1 Cargador Universal.
