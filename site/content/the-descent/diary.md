@@ -10,7 +10,7 @@ weight = 10
 **Location:** Commercial Cruiser Aurora, Deep Space.
 **Status:** Structural Collapse / Emergency Evacuation.
 
-The commercial cruiser Aurora, a modular passenger and cargo transport vessel, had just transitioned out of drive space. Without warning, the impact of what appeared to be a smart mine or an automated weapon remnant from the war shattered the bow section, sparking a chain reaction as the ship's macrostructure twisted and fractured, exposing the cars one by one to the vacuum.
+The commercial cruiser Aurora, a modular passenger and cargo transport vessel, had just transitioned out of drive space. Without warning, the impact of what appeared to be a smart mine or an automated weapon remnant from the war shattered the bow section. The subsequent chain reaction caused the ship's macrostructure to twist and fracture, exposing the cars one by one to the vacuum.
 
 **Chronicle of the Escape**
 *   **The Horror of the Void:** The compartment directly ahead of ours suffered a catastrophic rupture. Through the reinforced glass of the sealing door, we witnessed absolute horror: a segment of the adjacent car's fuselage detached completely, exposing the interior to the vacuum. We watched passengers die victims of explosive decompression, ebullism, and fulminant hypoxia as their bodily fluids vaporized from the pressure drop. There was no sound, only the visual chaos of disintegration.
