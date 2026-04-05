@@ -83,6 +83,38 @@ on("change:actioncheck", function() {
     });
 });
 
+/* ===== COMBAT STEP DIE CALCULATION ===== */
+const combatStepMap = {
+    '-15': '-11d20cs<0cf<0', '-14': '-10d20cs<0cf<0', '-13': '-9d20cs<0cf<0', '-12': '-8d20cs<0cf<0', '-11': '-7d20cs<0cf<0',
+    '-10': '-6d20cs<0cf<0',  '-9':  '-5d20cs<0cf<0',  '-8':  '-4d20cs<0cf<0',  '-7':  '-3d20cs<0cf<0',  '-6':  '-2d20cs<0cf<0',
+    '-5':  '-1d20cs<0cf<0',  '-4':  '-1d12cs<0cf<0',  '-3':  '-1d8cs<0cf<0',   '-2':  '-1d6cs<0cf<0',   '-1':  '-1d4cs<0cf<0',
+    '0':   '+0',
+    '1':   '+1d4cs<0cf<0',   '2':   '+1d6cs<0cf<0',   '3':   '+1d8cs<0cf<0',   '4':   '+1d12cs<0cf<0',  '5':   '+1d20cs<0cf<0',
+    '6':   '+2d20cs<0cf<0',  '7':   '+3d20cs<0cf<0',  '8':   '+4d20cs<0cf<0',  '9':   '+5d20cs<0cf<0',  '10':  '+6d20cs<0cf<0',
+    '11':  '+7d20cs<0cf<0',  '12':  '+8d20cs<0cf<0',  '13':  '+9d20cs<0cf<0',  '14':  '+10d20cs<0cf<0', '15':  '+11d20cs<0cf<0'
+};
+
+function updateAttackForm(rowId) {
+    const prefix = rowId ? 'repeating_attackforms_' + rowId + '_' : 'repeating_attackforms_';
+    getAttrs([prefix + 'attackformdie', prefix + 'attackformaccuracy', prefix + 'attackformsit'], function(v) {
+        const total = (parseInt(v[prefix + 'attackformdie']) || 0) + (parseInt(v[prefix + 'attackformaccuracy']) || 0) + (parseInt(v[prefix + 'attackformsit']) || 0);
+        const clamped = Math.max(-15, Math.min(15, total));
+        const step = combatStepMap[String(clamped)] || '+0';
+        setAttrs({ [prefix + 'attackformstepdie']: step });
+    });
+}
+
+on('change:repeating_attackforms:attackformdie change:repeating_attackforms:attackformaccuracy change:repeating_attackforms:attackformsit', function(eventInfo) {
+    const rowMatch = eventInfo.sourceAttribute.match(/repeating_attackforms_([-\w]+)_/);
+    if (rowMatch) updateAttackForm(rowMatch[1]);
+});
+
+on('change:repeating_attackforms sheet:opened', function() {
+    getSectionIDs('repeating_attackforms', function(idarray) {
+        idarray.forEach(rowId => updateAttackForm(rowId));
+    });
+});
+
 	</script>
 
 	<div class="sheet-logo-container">

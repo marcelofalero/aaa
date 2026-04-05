@@ -5,6 +5,7 @@ weight = 1
 attribute = "CON"
 category = "Psionics"
 untrained = true
+omit_automatic_list = true
 +++
 
 *This skill can't be used untrained.*

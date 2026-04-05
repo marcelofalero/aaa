@@ -820,6 +820,7 @@ input.sheet-tab4:checked~div.sheet-section-cybermutations,
 input.sheet-tab5:checked~div.sheet-section-wealthequipment,
 input.sheet-tab6:checked~div.sheet-section-customskills,
 input.sheet-tab7:checked~div.sheet-section-options,
+input.sheet-tab8:checked~div.sheet-section-campaign,
 input.sheet-tab21:checked~div.sheet-section-charactermode,
 input.sheet-tab22:checked~div.sheet-section-starshipmode {
     display: block;
@@ -868,6 +869,7 @@ input.sheet-tab4:checked+span.sheet-tab4,
 input.sheet-tab5:checked+span.sheet-tab5,
 input.sheet-tab6:checked+span.sheet-tab6,
 input.sheet-tab7:checked+span.sheet-tab7,
+input.sheet-tab8:checked+span.sheet-tab8,
 input.sheet-tab21:checked+span.sheet-tab21,
 input.sheet-tab22:checked+span.sheet-tab22 {
     background: var(--color-accent-teal);

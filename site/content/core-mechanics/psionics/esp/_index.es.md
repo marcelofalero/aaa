@@ -5,6 +5,7 @@ weight = 2
 attribute = "INT"
 category = "Psionics"
 untrained = true
+omit_automatic_list = true
 +++
 
 *Esta habilidad no puede usarse sin estar entrenado.*

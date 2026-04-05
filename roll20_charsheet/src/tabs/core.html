@@ -255,7 +255,10 @@
 					<!-- Row 1: Name, Type, Range, Notes -->
 					<div class="sheet-attackform-row">
 						<button type="roll" name="roll_attackform"
-							value="&{template:default} {{name= @{character_name} - @{attackformname}}} {{score= [[@{attackformscore}]]/[[@{attackformscoregood}]]/[[@{attackformscoreamazing}]]}} {{type= @{attackformtype}}} {{range= @{attackformrange}}} {{damage= [[@{attackformdamageordinary}]]@{attackformdamageordinarytype}/[[@{attackformdamagegood}]]@{attackformdamagegoodtype}/[[@{attackformdamageamazing}]]@{attackformdamageamazingtype}}} {{notes= @{attackformnotes}}} {{results= [[1d20cs&lt;1cf&gt;20 @{attackform_step_die}]]}}"></button>
+							value="&{template:default} {{name= @{character_name} - @{attackformname}}} {{score= [[@{attackformscore}]]/[[@{attackformscoregood}]]/[[@{attackformscoreamazing}]]}} {{type= @{attackformtype}}} {{range= @{attackformrange}}} {{damage= [[@{attackformdamageordinary}]]@{attackformdamageordinarytype}/[[@{attackformdamagegood}]]@{attackformdamagegoodtype}/[[@{attackformdamageamazing}]]@{attackformdamageamazingtype}}} {{notes= @{attackformnotes}}} {{results= [[1d20cs<1cf>20 @{attackformstepdie}]]}}"></button>
+
+						<input type="hidden" name="attr_attackformstepdie" value="+0">
+						<input type="hidden" name="attr_attackformwarning" value="">
 
 						<div class="sheet-attackform-field" style="flex: 6; min-width: 200px;">
 							<div class="sheet-attackform-label" data-i18n="attack-form-name">Attack Form Name</div>
@@ -295,9 +298,6 @@
 									value="(floor(@{attackformscore}/4))">
 							</div>
 						</div>
-
-						<input type="hidden" name="attr_attackform_step_die" value="+0">
-						<input type="hidden" name="attr_attackform_warning" value="">
 
 						<div class="sheet-attackform-field">
 							<div class="sheet-attackform-label" data-i18n="base-die">Base Die</div>
