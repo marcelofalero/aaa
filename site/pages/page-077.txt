@@ -1,0 +1,130 @@
+tion. The inducer creates a cylindrical field of gravitation-
+al energy surrounding the wearer at a range of 1 meter.
+Objects passing through this field in either direction are
+deflected from their course, inflicting a +2 step penalty to
+projectile or melee weapon attacks, and a +1 step penal-
+ty to energy attacks. The user suffers the same penalties
+to his own attacks. The inducer’s cells can maintain the
+field for 5 rounds; turning the field on or off requires an
+action.
+
+ANVIL 44 MAGNETIC SCREEN
+
+Soze Arms Ltd.
+
+Availahility: Restricted
+
+Cost: #7500
+
+Mass: 3.5 kg
+
+Composition: Magnetic force
+
+Environmental Tolerance:
+Gravity: n/a
+Radiation: RO-B4
+Atmosphere: n/a
+Pressure: n/a
+Heat: n/a
+
+Action Penalty: 0
+
+Toughness: Ordinary
+
+LI/HI/En: +3/+43/+2 (Only effective against certain
+weapons; see descriptive text)
+
+Hide: 0
+
+Elfective Strength: n/a
+
+Skill: —
+
+The electromagnetic screen (or magnetic screen, for
+short) resembles the deflection inducer in operation, but
+protects the wearer with magnetic force. It provides excel-
+lent protection against metallic melee weapons, metallic
+rounds (charge, sabat, and flechette ammo), and weapons
+that fire electrical discharges, such as the arc gun. It pro-
+vides no protection against other types of weapons or
+attacks. Since the screen is set to repel incoming attacks,
+it has no deleterious effect on the wearer's own attack
+rolls. Its energy cells last for 6 rounds of continuous use.
+
+PARTICLE SCREENS
+
+Energy screens rely on the use of electromagnetic or
+gravitational energy to deflect attacks. Particle screens
+wark a little differently, by interposing a wall of subatom-
+ic matter contained within a magnetic field. Incoming
+attacks are scattered and absorbed by the particles, atten-
+uating the attack. Particle screen technology is still new
+and unrefined; the machinery is heavy, expensive, and
+impractical. Typically, man-portable particle screens are
+limited to the heaviest powered armor. Note that no
+screen or field can be combined with any other.
+
+ALPHA 50 PARTICLE SCREEN
+
+MBA Technologies, Inc.
+Availahility: Military
+Cost: $8,500
+Mass: 12 kg
+Composition: Alpha particles
+Environmental Tolerance:
+Gravity: n/a
+Radiation: R0-B4
+Atmosphere: n/a
+Pressure: n/a
+Heat: n/a
+Action Penalty: +1
+Toughness: Ordinary
+LI/HI/En: d6-3/d6-2/d8-2
+Hide: -3
+Effective Strength: n/a
+Skill: Armor Operation-powered armor
+
+The Alpha 50 generates a shell of alpha particles—heli-
+um nuclei stripped of their electrons. When a character
+wearing a particle screen is struck by a weapon, he may
+add the screen's protective value to the protection of his
+armor. For example, a hero wearing Paladin Body Armor
+and a particle screen actually stops 2d4+2 (for the
+armor), plus an additional d8-2, versus energy attacks.
+The screen ‘blinks out’ when a hero fires his own
+weapon, so it automnatically has no effect in any phase in
+which a hero attacks. It has a maximum endurance of 10
+rounds before it shuts down.
+
+SCM-16 CAPACITOR SCREEN
+
+Austrin-Ontis Munitions Div 1
+Availability: Restricted
+Cost: #15,750
+Mass: 8.5 kg
+Composition: Jonized air
+Environmental Tolerance:
+
+Gravity: n/a
+
+Radiation: RO-B4
+
+Atmosphere: n/a
+
+Pressure: n/a
+
+Heat: n/a
+Action Penalty: +1
+Toughness: Good vs. LI and HI, Amazing vs. En
+Low Impact: +4s/2w/1m
+High Impact: +4s/2w/1m
+Energy: +6s/4w/2m
+Hide: -2
+Effective Strength: n/a
+Skill: Armor Operation-powered armar
+
+The Scam-16, as it's commanly known, creates a field of
+ionized particles from the air molecules in the user's
+
+5N33435 3T)114Yd
+

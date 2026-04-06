@@ -1,0 +1,93 @@
+LAseErR WEAPONS
+
+The earliest energy weapons to appear, lasers have been
+adopted as the weapon of choice by many military orga-
+nizations, including the Orion Planetary Defense
+Directorate and the Solar Army. What they lack in hitting
+power, they make up for with outstanding range and
+accuracy.
+
+NiINjA 600 Laser PistoL
+
+Koshimi Industries, Inc.
+Availahility: Controlled
+
+Cost: $1,225
+
+Mass/Length: 0.5 kg
+
+Length: 15 cm
+
+Payload: Coherent light
+Accuracy: -1
+
+Actions: 4
+
+Mode: F
+
+Type/Firepower: En/0
+Damage: d4+1w/d6+1w/d4m
+Range: 20/40/150 meters
+Hide: +4
+
+Clip/charge Size: 20 shots
+Clip/charge Cost: $50
+
+Skill: Modern
+Hanged
+Weapons-pistal
+
+The Ninja 600 is a
+small and easily
+concealable laser
+pistol built to the
+flush-front  design.
+Like all lasers, it's
+extremely accurate
+and offers the best range characteristics of any handgun.
+The Ninja line is very popular with corporate execs and
+other affluent celebrities who want to carry a weapon for
+self-defense without advertising the fact that they’re
+
+armed. Most combat specs prefer a heavier weapon.
+
+CLR-19 Laser RIFLE
+AM. Industries
+Availability: Military
+Cost: #1,800
+Mass: 4 kg
+Length: 75 cm
+Payload: Coherent light
+Accuracy: -1
+Actions: 3
+Maode: F
+Type/Firepower: En/0
+Damage: d6+1w/d6+3w/d4+1m
+Bange: 100/600/1500 meters
+Hide: —
+Clip/charge Size: 12 shots
+Clip/charge Cost: $75
+Skill: Modern Hanged Weapons—rifle
+
+The standard infantry firearm of the Orion League, the
+CLB-19 (Combat Laser Rifle-19) is a weapon of extra-
+ordinary range and accuracy. It's proven its value in
+numerous engagements against older charge weapons,
+especially in relatively open terrain. In close quarters, the
+weapon's length and low rate of fire are distinct draw-
+backs compared to the faster-firing and harder-hitting
+11mm charge rifle.
+
+VALKYRIE 9 A
+Soze Arms, Ltd.
+Availability: Controlled
+Cost: #1,725
+Mass: 3.25 kg
+Length: 35 cm
+Payload: Coherent light
+Accuracy: 0
+Actions: 4
+Mode: B/A
+
+SNOHIM H35HT
+

@@ -1,0 +1,127 @@
+[}
+[=%
+
+SOLAR X SHIPYARDS
+
+filament that you can use in all kinds of conditions—heavy
+rain, gusting winds, even underwater! At 600° C, the
+HotSpot doesn't take long at all to start even the greenest
+wood burning,
+
+TrRAILTECH K90
+CARBON LAaMP
+Availability: Common
+Cost: #75
+Mass: 1 kg
+Stock No.: 160TE0832
+
+Everyone likes to see the stars at night when you're out
+in the wilderness, but before you settle in for an evening
+of stargazing you want to be able to see enough to fix
+your dinner and wash your dishes. The K90 carbon lamp
+is one of the best outdoor lanterns around. At high power
+you'll marvel at a dome of bright light nearly 80 meters
+in diameter . . . or, if you prefer less intense illumination,
+use the dimmer switch to cut the K90 back to a soft glow.
+The carbon lamp relies on two Headyever lanthanide
+cells with an endurance of 48 hours at high setting, or
+240 hours at low. It's completely watertight and can oper-
+ate at full efficiency in any environment. Additional lanth
+cells cost #5 apiece, or the lamp can be recharged for a
+nominal fee at any commercial power outlet.
+
+TRAILTECH ROCKBITER
+ADHESIVE PITONS
+
+Availahility: Comman
+Cost: $10
+
+Mass: 0.1 kg
+
+Stock No.: 190TE3284
+
+Hammering pitons into rock is one of the most tiring and
+dangerous tasks a climber faces. At best, your arms are
+going to get bone tired and you're going to be up there all
+day; at worst, you'll shatter the spot you're trying to
+secure, or plant a piton that looks solid but won't hold
+when you need it most. The Hockbiter is the answer
+you've been looking for!
+
+Manufactured from the finest magnesium alloy, these
+light, strong pitons are equipped with a spring-loaded
+adhesive sac at the business end. Just set it against the
+rock and push. Presto! Your piton's glued to the rock face,
+capable of supporting up to 700 kg of dead weight with-
+out breaking free—and even then, the Rockbiter holds
+while tearing out a divot of stone!
+
+Adhesive pitons count as climbing equipment of
+Ordinary quality, and offer a -1 step bonus to any recov-
+ery checks the climber must make after a miscue in his
+climb. To be fully effective, pitons should be spaced no
+more than 5 meters apart.
+
+TRAILLTECH BuGcZar
+SoNic BARRIER
+Availability: Cornmon
+Cost; #85
+Mass: 1 kg
+Stock No.: 105TEB839
+
+Mosquitoes, gnats, horseflies, ants—who wants to share a
+camping site with ‘em? You sure don't! Fortunately, these
+pests are sensitive to ultrasonic vibrations that you can't
+even feel. Our sonic barrier creates a bug-free zone up to
+20 meters in radius that most insects (and many other
+kinds of vermin) just can't tolerate! You'll be as safe and
+comfortable as you would be inside your own house. All
+you need to do is set the barrier module in the center of
+your campsite and flip the switch. The BugZap's battery
+lasts for up to 24 hours of continuous use.
+
+SoLAR X SHIPYARDS
+
+Stand out in the dark countryside of any human-settled
+planet and gaze up at the stars on a clear night. If you
+look long enough, you'll probably catch a glint of sunlight
+from a ship in high orbit, heading out to distant stars and
+alien suns. And in that moment, you'll feel a longing, a
+wanderlust, as old and strong as the stars themselves.
+That's the human nature—to gaze at the edge of the
+unknown and wonder what lies beyond.
+
+At Solar X, we feel that it's our duty and privilege to
+place the key to the stars in your hands. Humankind has
+grown a lot in the last couple of centuries. Where once we
+looked no farther than Earth's horizons, now each and
+every one of us is bound together in a galactic communi-
+ty made of a thousand different worlds. Whether you're a
+‘hbusinessman, merchant, or entrepreneur, there's only one
+place for you to be today—out in the infinite beyond that
+links us all, an endless ocean of commerce and discovery
+beyond the sky. And Solar X Shipyards can take you
+there.
+
+HERMES-cLASS COURIER
+
+Compartments: 4 Dur: 16
+Maneuver rating: ~1 Acc: 3 Mpp
+Cruising speed: 2 AU/hr Berthing: 14
+
+Armament:: Plasma cannon
+Hange 4/8/16 Mm d6+2w/dB+2w/d6+1m En/A
+
+Defenses: Chaff dispenser, jammer
+
+Armor: Light cerametal (0 dur)
+d6-1 (LI), d6-1 (HI), d6-1 (En)
+
+Computer: Ordinary computer core, Ordinary navigation
+dedicated computer
+
+Engines: Induction engine
+
+Power: Mass reactor rated at 25 power factars
+
+Drive: None

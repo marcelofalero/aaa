@@ -1,0 +1,91 @@
+Damage: d8+1s/dBw/d6+3w
+Hange: 20/40/100 meters
+
+Hide: —
+
+Clip/charge Size: 12 shots
+Clip/charge Cost: ¥250
+
+Skill: Modern Ranged Weapons-rifle
+
+The Blue Bolt has an unusual feature not found on many
+arc guns—a wireless taser setting. When it’s activated, the
+gun's laser marker measures the target's surface resis-
+tance and calculates an appropriate stun charge. In taser
+mode, the Blue Bolt inflicts d8+1s/2dBs/2d6+2s for an
+Ordinary, Good, or Amazing success on the attack skill
+check. Switching from taser mode to normal operation
+requires an action.
+
+Soze Arms Ltd.
+Availability: Controlled
+
+Cost: ¥1,200
+
+Mass: 4.5 kg
+
+Length: 40 cm
+
+Payload: Incendiary stream
+Accuracy: -1
+
+Actions: 3
+
+Mode: F/B/A
+Type/Firepower: En/0
+Damage: d6w/d6+2w/dB+3w
+
+-
+
+Hange: 6/12/24
+
+Hide: -1
+
+Clip/charge Size: 10 shots/3 bursts
+Clip/charge Cost: $100
+
+Skill: Modern Ranged Weapons-5MG
+
+The Gravity Age successors ta the venerable flamethrow-
+er, flamers are vicious weapons that spew a tight aerosol
+spray of self-oxidizing fuel gel at the target. Its broad pat-
+tern ensures great accuracy at close range, and the flame
+spray inflicts terrible wounds. By holding down the trig-
+ger and fanning the weapon from side to side, the user
+can achieve an autofirelike effect, but this rapidly
+exhausts his fuel
+
+Soze Arms Ltd.
+Availability: Military
+Cost: $2,400
+
+Mass: 8.5 kg
+Length: 65 cm
+Payload: Incendiary stream
+Accuracy: -1
+
+Actions: 2
+
+Made: F/B/A
+
+Type/Firepower: En/G
+
+Damage: d6+1w/d8+2w/2d6+1w
+Range: 8/16/40 meters
+
+Hide: —
+
+Clip/charge Size: 15 shots/5 bursts
+Clip/charge Cost: ¥200
+
+Skill: Heavy Weapons-direct fire
+
+A larger and more powerful version of the hand flamer,
+the heavy flamer’s fuel tank is worn as a backpack unit.
+Its high-volume, high-pressure discharge can ignite even
+the most flame-resistant objects and personal armor.
+While it doesn’t have the range of many other heavy
+weapons, in close quarters there are few weapons that
+match the sheer terror and destructiveness of a heavy
+flamer.
+

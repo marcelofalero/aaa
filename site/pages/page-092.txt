@@ -1,0 +1,177 @@
+e |
+=
+=
+=
+=
+=
+=
+o
+o
+=
+=
+—
+=
+o
+
+Armor: Moderate neutronite (4 dur)
+d6+1 (LI), d6+1 (HI), d6 (En)
+
+Computer: Good computer core; Good battle and sensor
+dedicated computers; Ordinary engineering
+and navigation dedicated computers
+
+Engines: Induction engine
+
+Power: 3 mass reactors rated at 25 power factors
+
+Drive: None
+
+Roll Comp't
+e Command
+
+Systems (Dur/Pow) Durability
+Multiband radar (0/0) 8/8/4
+Laser transceiver (0/1)
+
+Radio transceiver (0/1)
+
+Crew quarters (2/0)
+
+Airlock (0/0)
+
+Good computer core (2/0)
+Heentry capsule (0/0)
+1-2  Engineering 1 Induction engine (4/4)
+Mass reactar (4/%)
+Mass reactor (4/%)
+Autosupport (0/2)
+Launch tube (3/1)
+Mass cannon (2/3)
+Deflection inducer (2/4)
+Mass transceiver (1/1)
+EM detector (0/0)
+Mass transceiver (1/1)
+Jammer (0/1)
+
+10-12 Engineering 2 Induction engine (2/2)
+Mass reactor (2/*)
+Launch tube (3/1)
+Mass cannon (2/3)
+Cargo space (2/0)
+
+16/16/8
+
+3-4  Audliary 8/8/4
+
+5-6  Weapons 1 10/10/5
+
+7-8  Electronics 8/8/4
+
+8/8/4
+
+13-16 Weapons 2 10/10/5
+
+17-20 Cargo 4/4/2
+The largest and most powerful patrol craft produced by a
+private shipyard outside the Tendril system, Nike-class
+gunboats are becoming a common sight in lawless sys-
+tems, defending corporate outposts and interests. Heavily
+armed with twenty missiles and two mass cannons, the
+Nike can outslug almost any noncapital ship it encounters,
+The standard boat is not equipped with a stardrive, and
+the Nike is used principally as a system defense ship.
+
+A flotilla of over thirty standard and modified Nikes
+serves as the Calefir family's personal navy in the near
+portion of the Verge. At least one is on station in the
+Tendril, Aegis, Algemron, Lucullus, and Karnath systems
+at all times, and the Calefirs visit other nearby systems
+frequently. Other Solar X clients with Nike-class gunboats
+in their inventories include Grith, VergeTech, and a num-
+ber of smaller companies seeking a basic defense asset
+for vulnerable mining colonies and trading posts.
+
+While the Nike is well armed for its size, it's not espe-
+cially fast and it's relatively short-ranged. Most experi-
+enced Nike skippers prefer to stay close ta their assigned
+territary, recognizing that many faster ships can run right
+past their defenses given a chance. Cost: #10,435,000
+
+L
+
+GuLL-cLASS LAUNCH
+
+Compartments: 2 Dur: 8
+Maneuver rating: —1 Acc: 3 Mpp
+Cruising speed: 2 AU/hr Berthing: Special
+
+Armament:: Mass cannon
+
+Hange 5/10/15 Mm d6+2s/d6+1w/d6+3w LI/A
+Defenses: Jammer
+Armor: Moderate cerametal (1 dur)
+
+d4-+1 (LI), d4+1 (HI), d4+1 (En)
+
+Computer: Marginal computer core
+Engines: Induction engine
+Power: Mass reactor rated at 5 power factars
+Drive: None
+
+Roll Comp't
+1-6  Command
+
+Systems (Dur/Pow) Durahility
+
+Mass cannon (2/3) 6/6/3
+
+Jammer (0/1)
+
+Multiband radar (0/0)
+
+EM detectar (0/0)
+
+Radio transceiver (0/1)
+
+Airlack (0/0)
+
+Marginal computer core (0/0)
+
+Reentry capsule (0/0)
+
+Special System: either
+Passenger suite (1/0); or
+Crew quarters (1/0); or
+Cargo space (1/0)
+
+7-12  Engineering Induction engine (2/2)
+
+Mass reactor (2/%)
+
+Autosupport (0/1)
+
+8/8/4
+
+One of the smallest interplanetary craft manufactured
+anywhere, the Solar X Gul is usually found as a ship’s
+boat or launch on larger vessels. (uick and responsive,
+the Gull is perfect as a planetary excursion vehicle. While
+it's capable of supporting its crew for weeks on end in
+interplanetary space, most pilots feel that it's just a litlle
+too small for outer-system travel, where a mishap might
+strand a ship billions of kilometers from any safe haven.
+It's also notoriously underpowered, as its quite impossible
+for the crew to power up all of the ship’s systems at once.
+
+The Gull can be configured to carry a 1-point crew sec-
+tion (6 hands), a 1-point passenger section (4 passen-
+gers), or a 1-point cargo hold (roughly 30 cubic meters
+of cargo). It takes about 4 hours to rearrange the internal
+partitions and bulkheads in order to set up the shuttle’s
+interior for one of these three functions. Typically, the
+shuttle is left in crew configuration, although wealthy jet-
+setters often custom-order Gulls with exceptional passen-
+ger facilities, using them as private transports. Cost:
+1,425,000
+
+RECT Ry T T R WO SR Y e

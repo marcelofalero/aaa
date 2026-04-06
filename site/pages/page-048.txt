@@ -1,0 +1,138 @@
+()
+—
+[—]
+==
+—
+[==]
+==
+[urw)
+=
+o
+==
+=
+P
+o=
+—
+1
+(=]
+1
+[—]
+i
+=
+—
+
+Ha Nnuvc:nE 4AND
+HYPERBLADES
+The term "hyperblade” refers to any fighting weapon with
+a super-sharp molecular blade. Through modern nano-
+engineering techniques, it's possible to construct blades
+thousands of times sharper than anything found in nature.
+Hyperblades are mare lethal than many firearms, and the
+best close-quarters weapons around.
+
+AX2 CHAINSWORD
+Pulan-Tough Job Corporation
+Availability: Military
+Cost: #1,250
+Mass: 7 kg
+Length: 115 cm
+Payload: Monomolecular edge
+Accuracy: +1
+Actions: 2
+Type/Firepower: LI/G
+Damage: d8+1w/d8+2w/d4+1m
+Hange: Personal
+Hide: —
+
+Clip/charge Size: 8
+Clip/charge Cost: #125
+Skill: Melee Weapons-powered
+
+The chainsword is heavy and unwieldy, but it delivers
+outstanding damage in hand-to-hand combat. Its fighting
+edge is a chain-driven array of serrated, microengineered
+teeth, capable of cutting through almost any normal mate-
+rial. (In fact, the chainsword serves as a decent concrete
+saw in a pinch.) The AX2 is a heavy-duty model designed
+for use against heavily armored targets.
+
+ViPER D FILAMENT BLADE
+Dietterlich Industries
+
+Availahility: Contralled
+
+Cost: $1,500
+
+Mass: 1.75 kg
+
+Length: 30-400 cm
+
+Payload: Malecule chain edge
+
+Accuracy: 0
+
+Actions: 3
+
+Type/Firepower: LI/0
+
+Damage: d8-1w/d8w/d12-1w
+
+Range: 4 meters
+
+Hide: +2
+
+Clip/charge Size: 20
+
+Clip/charge Cost: #75
+
+Skill: Melee Weapons—powered
+
+A filament blade’s fighting edge is a single strand of
+monomolecular carbonate fiber. The weapon consists of a
+hilt and a small, free-floating lead module, between which
+the monofilament is stretched. The lead module senses
+the user’s swings and maneuvers accordingly, keeping
+the filament taut at all times. The weapon can be set for
+a length of up to 4 meters for melee attacks against dis-
+tant targets.
+
+T-BAr
+StarMech Edge One Division
+Availability: Common
+Cost: #500
+Mass: 4 kg
+Length: 35 cm
+Payload: Conventional blade
+Accuracy: 0
+Actions: 4
+Type/Firepower: LI/G
+Damage: d6w/dB+1w/d4m
+Range: Personal
+Hide: +3
+Clip/charge Size: n/a
+Clip/charge Cost: n/a P e
+Skill: Melee Weapons—blade : L5
+
+TN stands for tungsten-neu- !
+tronite. It's the toughest con-
+
+ventional alloy known, capa- I
+
+ble of punching through cer-
+
+ametal or vanadium steel like l |
+an iron crowbar through tin
+
+foil. This weapon is a large [
+
+combat knife, but it's far
+
+denser (and heavier) than a
+conventional blade. The TN |
+
+knife is the only nonpowered |
+weapon capable of piercing
+
+powered attack armors such |
+as the body tank. \ /
+

@@ -1,0 +1,81 @@
+items:
+- name: STAR*DRIVE™ CAMPAIGN GUIDE
+  pl: '7'
+  mass: N/A
+  cost: N/A
+  avail: Available in the Star*Drive campaign of the RPG.
+  description:
+    en: La guía proporciona una revisión detallada de diversos artículos, dispositivos,
+      armas, vehículos y otros equipos útiles que pueden encontrarse en una campaña
+      de STAR'DRIVE™. Incluye información sobre cómo utilizarlos eficientemente, sus
+      limitaciones y las estrategias que pueden ser utilizadas para el beneficio de
+      los héroes. También explora posibles avances tecnológicos en la época de la
+      Gravedad.
+    es: La guía proporciona una revisión detallada de diversos artículos, dispositivos,
+      armas, vehículos y otros equipos útiles que pueden encontrarse en una campaña
+      de STAR'DRIVE™. Incluye información sobre cómo utilizarlos eficientemente, sus
+      limitaciones y las estrategias que pueden ser utilizadas para el beneficio de
+      los héroes. También explora posibles avances tecnológicos en la época del tiempo.
+  name_es: GUÍA DE LA NAVIDAD STAR*DRIVE™
+- name: Entertainment and Communication
+  pl: '7'
+  mass: ''
+  cost: ''
+  avail: ''
+  description:
+    en: One of the best weapons that power holds.
+    es: Uno de los mejores armas que el poder tiene.
+  name_es: Entretenimiento y Comunicación
+- name: Exodus Star*Drive
+  pl: 7
+  mass: Mass not specified
+  cost: Cost not specified
+  avail: Available in the Stellar Bing
+  description:
+    en: The Exodus Star*Drive is a spacecraft designed for interstellar exploration.
+      It's equipped with cutting-edge technology and features an array of weapons
+      to aid in combat against threats.
+    es: El Exodus Star*Drive es un cohete diseñado para la exploración intergaláctica.
+      Está equipado con tecnología avanzada y cuenta con una amplia gama de armas
+      para ayudar en las batallas frente a las amenazas.
+  name_es: Cuerpo de Estrella del Exodu*
+- name: The Merchant Exchange
+  pl: '7'
+  mass: Mass not specified
+  cost: '#100 per year (daily dues)'
+  avail: Available 24/7 in the public areas of most major cities. Membership for ease
+    of obtaining.
+  description:
+    en: The Rigunmor Star Consortium Merchant Exchange is a massive facility located
+      at New Manhattan on Umbra V, serving as the registry and licensing center of
+      all Rigunmor merchants. It publishes a complete catalog every quarter featuring
+      goods from its members. The Exchange has been growing into a center of Rigunmor
+      commerce.
+    es: El Consejo Estatal de Comercio y Registro del Consorcio Estelar Rigunmor se
+      ubica en una gran instalación en la ciudad de Nueva Manhattan, en el sistema
+      Umbra V. Funciona como centro de registro y licitación para todos los negociantes
+      de Rigunmor. Publica un catálogo completo cada trimestre con productos de sus
+      miembros. El Consejo está creciendo a lo largo del comercio de Rigunmor.
+  name_es: La Intercambio del Comerciante
+- name: TrailTech™ Backpack
+  pl: '7'
+  mass: 1 kg
+  cost: $100
+  avail: Available in store and online for purchase. However, those who are not part
+    of the Tendril system must either buy locally or transmit an order via the Grid
+    instead.
+  description:
+    en: Our new hiking backpack is designed for people looking for a practical, lightweight
+      and comfortable gear set. The main compartment can store up to 100 x 50 x 25
+      cm of supplies, equipment and materials; two smaller pouches can also store
+      up to 10 x 10 x 20 cm each. Extensions at the frame and pivot points allow you
+      to lug objects that are too big for the main compartment up or down the backpack;
+      strap and frame can support loads up to a weight of 60 kg.
+    es: Nuestra nueva mochila de senderismo está diseñada para las personas que buscan
+      un equipo práctico, ligero y cómodo. El gran compartimento principal puede almacenar
+      hasta 100 x 50 x 25 cm de suministros, equipos y materiales; dos bolsillos más
+      pequeños pueden almacenar hasta 10 x 10 x 20 cm cada uno. Las extensiones del
+      cuadro y los puntos de fijación le permiten guardar objetos tan grandes para
+      el principal compartimento en la parte superior o inferior de la mochila; la
+      correa y el cuadro pueden soportar cargas hasta un peso de 60 kg.
+  name_es: Mochila de TrailTech™

@@ -1,0 +1,139 @@
+reach spot, the user suffers a +1 step penalty to his
+action check if he is attempting to draw his weapon in a
+hurry.
+
+[=x]
+=1
+
+SPECIALTY AMMUNITION
+
+Most weapon professionals prefer high-tech, high-quality
+ammunition over the basic rounds available for most
+firearms. The specialized munitions described below are
+available for any projectle weapon (any weapon that
+inflicts HI damage), including charge weapons, sabot
+weapons, and flechette weapons.
+
+Brack THUNDER AP Rounp
+
+ThunderCorp Arms
+Availability/Cost: Controlled/2X normal clip cost
+Payload: Sabot penetrator
+Platform: Any charge weapon
+
+The Black Thunder bullet is a discarding-sabot Teflon
+penetrator designed to pierce armor. This high-impact
+round halves the effect of any armor it strikes (round up).
+For example, attack armor normally stops d6+1 points of
+HI damage. If the d6 result is a 4, the armor stops a total
+of 5 points of primary damage against standard ammu-
+nition, but it only stops 3 points of damage (one-half of 5,
+rounded up) from a Black Thunder round.
+
+The damage roll of a sabot weapon using this round is
+reduced by 1 point, to a minimum of 1. Clips of AP amma
+are twice as expensive as clips of normal ammo.
+
+=
+=
+=
+=
+=
+-
+> ==
+=
+=
+=
+=
+=3
+=}
+[orw]
+o
+o)
+
+MiGHTYMITE EXPLOSIVE ROUND
+Dietterlich Industries
+Availability/Cost: Military/4 X normal clip cost
+Payload: Detonex warhead
+Platform: Charge and sabot guns
+
+Tipped with a Detonex-filled slug, the MightyMite
+explodes a split second after impact, causing ghastly
+wounds. If the bullet penetrates the target's armar (i, the
+target suffers primary wound or mortal damage from the
+attack), the exploding bullet inflicts d6-3 additional wound
+points that the victim’s armor does not block.
+
+ARcHER AA STABILIZED ROUND
+TexMex Munitions Inc.
+Availability/Cost: Controlled/3 X normal clip cost
+Payload: Fin-stahilized sabot
+Platform: Charge and sabot guns
+
+This round is not rifled for spin-stabilization as most
+conventional slugs are; instead, it resembles a small
+aerodynamic dart, deploying small fins after leaving the
+barrel. Its extremely accurate, reducing penalties for
+medium- and long-range fire by 1 step.
+
+SHREDDER C5 FLECHETTE AMMO
+
+Soze Arms Ltd.
+Availability/Cost: Controlled/2 X normal clip cost
+Payload: Flechette bundle
+Platform: Charge guns
+
+This round converts a standard charge pistol or rifle
+into a flechette weapon. The weapon's range is reduced
+to 6/12/30 meters, and its damage to d4w/d6w/d4m—
+but its damage doubles for shortrange shats. The
+Shredder CS is popular for close-guarters fights, natural-
+ly; damage for long-range shots is reduced to one-half
+normal.
+
+B-MAce GEL Rounp
+
+StarMech Edge One Division
+Availability/Cost: Controlled/2X normal clip cost
+Payload: Soft gel capsule
+Platform: Charge or sabot guns
+
+Intended for nonlethal target subdual, the gel round
+converts any wound damage normally inflicted by the
+weapon to stun points, and any mortal damage to twice
+that number of stun points. The B-Mace suffers a +1 step
+penalty to long-range fire.
+
+TaLoN X GuiDep Rounbp
+
+MBA Technologies Inc.
+Availability/Cost: Military/5X normal clip cost
+Payload: Laser-guided slug
+Platform: Charge or sahot guns
+
+The Talon X guided round is necessary in order to take
+advantage of the Falcon X weapon guidance system (see
+previous section). A Talon X round is fitted with a laser-
+seeking head and aerofoils for in-flight course correction.
+Without guided ammo, the guidance system is useless.
+
+SNAKE EYEs IR HoMING Rounp
+TexMex Munitions Inc.
+Availability/Cost: Military/4 X normal clip cost
+Payload: Infrared-guided slug
+Platform: Charge or sabot guns
+
+The infrared homing bullet is fitted with a tiny heat-
+seeking sensor in its head, adjusting its path to strike like-
+ly heat sources. It offers a -2 step bonus to medium-
+range attacks, or a —1 step bonus to long-range attacks.
+
+If the attack skill check fails, the bullet lacks on to some
+other likely heat source, and the user must then make a
+normal attack skill check against the alternate target.
+Sometimes this is another enemy nearby, but the Snake
+Eyes can't distinguish between friend and foe. (It's not a
+good round to fire into a area where friendlies are mixed
+up with hostiles.) If the secand attack misses, tao, the bul-
+let doesn't endanger anyone else.
+

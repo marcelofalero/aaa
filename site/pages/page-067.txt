@@ -1,0 +1,128 @@
+victims' nervous systems. Against electronics, cybernetic
+
+targets, or powered armor, it inflicts maximum damage (6
+stuns for an Ordinary hit, etc.).
+
+HOLSTERS AND SIGHTS
+
+Thousands of weapon accessories are available to help a
+character carry, clean, conceal, or fire his weapon. These
+devices range from simple hip holsters to exotic holo-
+graphic imaging sights, laser designators, and all kinds of
+high-tech hardware. Here are a few common choices:
+
+FaLcoN X GUIDANCE SYSTEM
+
+MBA Technologies Inc.
+
+Availability: Military
+
+Cost: $1,250
+
+Mass/Length: 0.1 kg/15 cm
+
+Platform: Any projectile (type HI) weapon
+
+This sighting system uses guided ammunition (see next
+
+page). It consists of a low-powered laser target designa-
+tor on the weapon's barrel. Firing the weapon takes two
+actions—one to set up the shot, and the following to make
+the attack skill check. When the weapon is fired, the guid-
+ed ammo homes in on the laser signal with pinpoint accu-
+racy, conferring a -3 step bonus to the attack skill check.
+Naturally, the guidance system can be turned off to allow
+fire in the normal unguided mode.
+
+TARGET X HoLo SIGHTS
+
+StarMech Edge One Division
+Availahility: Common
+
+Cost: 850
+
+Mass/Length: 0.1 kg/10 cm
+Platform: Any ranged weapon
+
+The best long-range sights in
+production today, the Target X
+unit uses a sophisticated binoc-
+ular apparatus to project a
+heads-up target image with a
+virtual crosshair. It works
+much like a telescopic sight,
+but with automatic rangefind-
+ing and no loss of peripheral
+
+vision. Holo sights reduce any range penalties for long-
+range fire by two steps. Note that a weapon can only have
+one set of sights installed.
+
+REeAPER 700 IFF SIGHTS
+
+AccuTron Optics Ltd.
+Availability: Controlled
+
+Cost: ¥850
+
+Mass/Length: 0.1 kg/10 cm
+Platform: Any ranged weapon
+
+IFF stands for Identify Friend or Foe, a system for pre-
+venting friendly casualties in combat. The user’s allies
+must wear [FF transponders (a comm gear option costing
+$50) keyed to the right frequency in order for the system
+to function. If an ally is standing in the line of fire, the IFF
+sight prevents the gun from firing. It's extremely useful in
+close-quarters assaults, since a gunman can hose down
+a crowded room without fear of hitting his friends—ignore
+the normal risks of firing into a melee if the gunman's
+allies are wearing transponders.
+
+=
+=
+=
+)
+=
+[=a]
+==
+o
+=
+=
+=
+=L
+=
+=
+=
+)
+
+MONGOOSE IMAGING SIGHTS
+
+NiteSite Manufacturing Inc.
+Availability: Controlled
+
+Cost: #300
+
+Mass/Length: 0.1 kg/15 cm
+Platform: Any ranged weapon
+
+This device is simply a light-intensifying scope mounted
+over the weapon's barrel. It reduces penalties for dark-
+ness by 2 steps, and penalties for long range by 1 step.
+
+STEALTH HOLSTER
+
+DarkTech Inc.
+
+Availability: Controlled
+
+Cost: ¥400
+
+Mass/Length: 1 kg/35 cm
+
+Platform: Any pistol ar SMG I
+
+The stealth holster is made with antiscan material and
+molded to the user’s hody contours. It adds +3 steps to a
+weapon's Hide modifier, making it much less likely to be
+detected. Because the holster is often hidden in a hard-to-

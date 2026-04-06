@@ -1,0 +1,117 @@
+which any educated person with the inclination-and the
+means can be the master of his own world.
+
+The homesite unit is a special segregated piece of hard-
+ware through which Grid visitors can reach the user’s
+system. It operates independently of the base system;
+active around the clock, it's a message system, a business
+tool, and a first line of defense against hostile hackers,
+The unit provides a honus to defensive programs, Grid
+utilities, or shadow programs run by the homesite's
+owner:
+
+Quality Homesite Cost  Grid Op Bonus
+Marginal $1,000 None
+Ordinary $1,500 -1 step
+Good $2,500 -2 steps
+Amazing 5,000 -3 steps
+HarRDWARE CSA349065
+
+Class: Computers
+
+Availability: Controlled
+
+Cost: (A) #100; (B) $350; (C) #875; (D) #400
+
+Mass: (A, C, D) 100 g; (B) 2 kg
+
+Dim: (A, C,D) 10 cm X 5 cm X 2 mm
+(B)30 cm X 15cm X B cm
+
+A Datastream Link. The PL 7 version of a modem, the
+datastream link is a communication connection that
+allows the computer to transmit or receive information
+and commands via direct data transfer. Almost all PL 7
+computer systems include a datastream link.
+
+B. Dataprinter. The all-purpose output device of the
+Gravity Age, the dataprinter combines printer, fax, copier,
+and scanner. In many places, it is almost obsolete—direct
+Grid transmission of data obviates the need for bulky
+printouts or tedious scanning jobs.
+
+C. Indelible Drive. This is a backup device that uses a
+laser scribe to permanently mark a 3D chip with a record
+of all transactions that occur on a particular system. Once
+recorded, nothing can be done to change the drive’s his-
+tory. Of course, indelible drives can simply be destroyed,
+or the 3D crystal library disposed of in a number of ways,
+but short of physical removal or destruction there’s no
+way to falsify the indelible drive—making it a vital back-
+up for contracts, financial transactions, legal records, efc.
+
+D. Vocal Interface. Keyhoards, pointers, and touch-
+pens are common interface devices on the computers of
+the Gravity Age, but many also use a vocal interface—an
+input/output device by which the computer can under-
+stand spoken commands, and report via audio speakers.
+Vocal interfaces are favored by people who like “fuzzy
+logic” systems or old-fashioned thinking aloud; theyre
+also useful since a vocal interface is a “hands-off” device
+that doesn't require the physical proximity or direct atten-
+tion of the user.
+
+CYBERWARE
+
+CYBERWARE, SENSORY
+CYs100873
+Class: Cybernetics
+Availability: Controlled
+Cost: See below
+Mass: (A, B) 100 g; (C) 350 g
+Dim; (A, B)2cm X 2 cm X 1cm
+(C)4 cm X 3cm X 2 cm
+
+JHHME384)
+
+A Artificial Ear. The artificial ear is a sensitive micro-
+phone capable of detecting extremely low and high fre-
+quency sound normally outside the human hearing range,
+such as sonar transmissions or dog whistles. His hearing
+is ‘magnified” as shown below, and he gains a bonus to
+skill checks that involve the ability to detect sound, such
+as Awareness-intuition checks to avoid surprise,
+Manipulation-Jockpick checks against locks with tum-
+blers, and so on. If the subject has two artificial ears, he
+can use the skill check bonus to offset darkness-related
+combat penalties due to his ability to locate his foe
+through sound.
+
+Ordinary $1,000 x10 -1 step 1
+Good #2000 x25 —2 steps 1
+Amazing %4000 x50 -3 steps 1
+
+B. Artificial Eye. This device is a video imaging sys- | |
+tem that replaces one of the user's own eyes. It provides
+magnification as described on the table above, and a \
+bonus to skill checks in which visual acuity may be —
+important, such as Investigate-search or Awareness—per-
+ception. For double the listed cost, an artificial eye
+includes image-enhancing or thermal technology, confer-
+ring the benefits of imaging goggles or thermal goggles in
+addition to simple magnification.
+
+C. Scanner Implant. The scanner implant is a mag-
+netic resonance device that can be installed in the user’s
+eye or hand. It provides the cybernetic character with the
+ability to see into or through walls or objects, as long as
+he is within 1 meter of the object to be scanned. (See
+page XX for details on the magnetic scanner and weapon
+detector.) The better the implant, the lighter and less intru-
+sive it is, as shown below.
+
+Quality Cost Size
+Ordinary §1,250 2
+Good §2,500 1
+Amazing 3,750 -
+

@@ -1,0 +1,70 @@
+4
+
+ar her range of vision. The gauntlet can detect vehicles or
+characters in powered armor at a range of 5 km, air-
+borne vehicles at a range of 100 km, and ships in open
+space at a range of 2,000 km. It is an active sensor
+whose emissions can be detected by any EM detector at
+twice its own detection range. Naturally, hills, mountains,
+or buildings may shorten the gauntlet’s range. The device
+is operated by means of the System Operation-sensors
+skill
+
+GoGgGLEs SDV 199840
+
+Class: Sensors
+
+Availability: Common
+
+Cost: (A) #300; (B) #425; (C) #350; (D) $250
+Mass: 175 g
+
+Dim: 15 em X 5 cm X 1 cm (approx)
+
+A Imaging. Also known as light-intensifying goggles,
+imaging goggles boost ambient light reaching the user's
+eyes to provide effective night vision. The goggles reduce
+darkness-based penalties by 2 steps, but they need some
+light to work—total darkness blinds the wearer. Unlike the
+imaging goggles of earlier Progress Levels, these are rel-
+atively light and easy to wear, and do not obstruct the
+wearer’s peripheral vision.
+
+B. Magnifying. The hinoculars of the Gravity Age,
+
+Y D D e, [~
+=
+
+magnifying goggles sense the muscular motions of the
+wearer's eyes and dilate to magnify and focus on the
+object examined. The goggles provide 10X magnifica-
+tion, so an object 200 meters distant appears to be only
+20 meters away. In addition, magnifying goggles negate
+1 step of range-based penalties for firing weapaons at tar-
+gets more than 100 meters distant (provided the weapon
+does not already have a scope of some kind). Constant
+use of magnifying goggles causes some eyestrain after an
+hour or two.
+
+C. Thermal. Another night-vision device, thermal gog-
+gles convert infrared light to visible light, allowing the
+user to see in the infrared (or heat) spectrum. Thermal
+goggles completely negate darkness-based penalties, as
+long as there are opponents or targets that stand out from
+the background temperature of the surroundings.
+Thermal goggles also provide a -1 step bonus to
+Investigate skill checks to detect new tracks or recently
+handled ohjects. Gravity Age thermal goggles have
+damper systems to negate the blinding effect of sudden
+heat blooms.
+
+D. Sonic. Two forms of sonic goggles exist. The first
+converts sound echoes into visible light, allowing the user
+to see by echolocation. This negates darkness- or water-
+hased penalties. The second version costs $2,500 and
+requires a cybertech implant in the wearer's visual cor-
+
+_
+
+T4
+

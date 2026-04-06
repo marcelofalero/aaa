@@ -1,0 +1,124 @@
+MEDICAL GEAR AND SUPPLIES
+
+Attack skill check in order to deliver the substance. The
+spray is easy to deliver (no attack penalty) but provides
+the victim with a —2 step bonus to any check he makes
+to avoid the drug'’s effects, since the dose is dispersed.
+The injection, on the other hand, is hard to administer (+-2
+step penalty to the Unarmed Attack skill check), but deliv-
+ers a concentrated dose, providing no bonus to the sub-
+ject's Constitution or Wil feat check to resist.
+
+Identifying the condition of the patient, measuring the
+right dosage, and correctly applying any of the pharma-
+ceuticals or supplies below requires a Medical Science—
+treatment skill check. (A character without this specialty
+skill must make an untrained skill check to get it right,) If
+this fails, the pharmaceutical won't be effective when ap-
+plied. If the administering character rolls a Critical Failure,
+he might aggravate the subject’s condition in some way.
+
+A. Analgesic. Painkillers offset the penalties from mor-
+tal or excessive wound damage. (See the description of
+the Stamina-resist pain skill in Chapter 4 of the AtTerNITY
+Player’s Handbook) The patient must make a Will feat
+check. On a Good or Amazing success, he ignores 3 steps
+of pain-related penalties; on an Ordinary success, 2 steps;
+and on a Marginal success, 1 step. The painkiller dose
+lasts for 4 hours. A character can be heavily dosed, tak-
+ing a second analgesic while the first one is still in effect,
+but he automatically takes a +1 step penalty to all actions
+due to numbness and disorientation. However, the addi-
+tional dose may help enough to make it worthwhile. Item
+250100344a, $10/dose, Controlled
+
+B. Anesthetic. A dose of anesthetic knocks out any
+willing character for a specified time of up to 12 hours.
+The administering physician is allowed a Medical
+Science—treatment check to see how well he times the
+length of unconsciousness (on a Failure, the vicim
+awakes d4 hours earlier or later than the target time).
+Against an unwilling character, the administering physi-
+cian must succeed on an Unarmed Attack skill check. The
+victim must succeed on a Constitution feat check to resist
+knockout: Failure: knockout; Ordinary: 2d4+2s; Good:
+d6+1s; Amazing: dds. Item 250110677h, #50/dose,
+Controlled
+
+C. Antibiotic. This broad-spectrum agent fights bacter-
+ial and viral infections of all kinds. A complete regimen
+requires d4 days of continued dosage and provides the
+recipient with a —4 step bonus to his Constitution feat
+checks in order to fight off the disease. Item
+250115119, #50/dose, Controlled
+
+D. Antiradiation Serum. Few treatments are effective
+against radiation sickness, but this serum is one of them.
+Its electrolyte solution helps to stabilize damaged cells in
+the bone marrow and gastrointestinal tract, the tissues
+most vulnerable to radiation damage. Antiradiation serum
+comes in 1 liter bags for intravenous administration.
+When treated, the victim gains a -2 step bonus to his
+
+.
+
+Constitution feat checks against that episode of radiation
+sickness. Item 2505052904, #100/dose, Controlled
+
+E. Antivenom. Countering the effects of natural poi-
+sons, antivenom provides the stricken character with a
+—4 step honus to his Constitution feat check against the
+poison if administered during the onset time, or a -2 step
+bonus if administered while the poison is inflicting dam-
+age on the victim. Specific antivenoms—for example,
+against timber rattler bites, box jelly stings, stonefish
+venom, and so forth.—are even maore effective, improving
+the bonus to -6 and —4 respectively, but they're useless
+against other types of natural poisons. The purchaser
+must decide if he wants the increased effectiveness of the
+specific agent, or the usefulness of the general antivenom.
+Item 250307188e, #100/dose, Contralled
+
+F Coagulant. Easily administered with a simple Knowl-
+edge—first aid check, coagulant induces artificial clotting at
+the point of injury, drastically slowing bleeding. A dose
+gives the victim a -3 step bonus to any Stamnina-en-
+durance checks he attempts in the next ten minutes. More
+than two doses in the course of an hour are risky; the vicim
+must succeed on a Constitution feat check or go into cardiac
+arrest from the thickening of his blood. Iterm 2504804751,
+$50/dose, Controlled
+
+G. Immunization Booster. The best way to survive a
+disease is to not get sick in the first place. An immuniza-
+tion booster “tunes” the recipient’s immune system to the
+common ailments of a particular setting or world, provid-
+ing him with a —2 step bonus to any Constitution feat
+checks he attempts to resist catching those diseases. The
+booster's effects last for one year Item 250806991g,
+#50, Controlled
+
+H. Psi-enhancer. Using mental powers takes a great
+toll on a mindwalker, but modern medical technology pro-
+vides a solution to this problem. The psi-enhancer
+restores 2d4 lost psionic energy points when ingested.
+Unfortunately, the distracting side-effects of the serum
+provide a +1 step penalty to a hero's psionic skill checks
+for the next dB hours. Item 250996148h, %150/dose,
+Controlled
+
+I Psychoactive Booster. Deadening the mindwalker's
+physical sensations and detaching his awareness from
+the warld without, this booster provides a -2 step bonus
+to the use of all psionic skills for the next 2d4 hours. The
+recipient also gains d4 temporary psionic energy points,
+which are expended before his own points when he uses
+psionic talents.
+
+The downside is simple: For the next 4d4 hours, the
+victim suffers a +3 step penalty to all nonpsionic skill
+checks, feat checks, and other activities. If the psychoac-
+tive hooster is administered more than once in a single
+24-hour period, the victim must attempt a Resolve—men-
+tal resolve skill check. If he fails, he permanently loses 1
+point of Intelligence, Will, or Personality (randomly deter-

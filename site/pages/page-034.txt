@@ -1,0 +1,102 @@
+oa
+o
+
+COMMUNICATIONS GEAR
+
+\
+
+C. Subdermal Communicator. Consisting of miniatur-
+ized comm gear implanted near the user’s jawbone, the
+subdermal communicator is made for stealthy or subtle
+communication jobs. The wearer can toggle a hidden
+microswitch to transmit simply by speaking aloud; he can
+receive transmissions without a sound. The device has a
+range of 10 km, and breaks down into easily ahsorbed
+components after one month. Installing or remaving a sub-
+dermal communicator requires a Medical Science-surgery
+skill check.
+
+MaAss TRANSCEIVER CMT844002
+
+Class: Communications
+Availability: Common
+
+Cost: #4,000
+
+Mass: 50 kg
+
+Dim: 80 cm X 50 cm X 50 cm
+
+The central feature of the mass transceiver is a gravi-
+ty induction device that generates gravitational waves by
+varying the mass of the main signal guide. Gravitational
+waves appear to propagate faster than light, allowing true
+instantaneous communication with no time lag for dis-
+tance between transmitter and receiver. Although no one
+has managed to build a mass transceiver powerful
+enough to bridge the gap between the stars, mass trans-
+
+-
+
+ceivers are useful for passing information within a stel-
+lar system.
+
+The semiportable mass transceiver described here
+requires a separate source of power—a portable fusion
+generator or vehicular power plant is typical. Mass trans-
+ceivers can only talk to other mass transceivers—a hero
+can't pick up a mass signal on his personal radio. The
+transceiver described here has an effective range of 10
+AU, or about 1.5 billion km. Larger transceivers, such as
+those found on starships or in major installations, have
+ranges of 40 to 100 AU. Beyond this distance, the back-
+ground gravitational signatures of a star system mask the
+transceiver’s oscillations.
+
+Smaller mass transceivers are available, but the tech-
+nology is new and the devices tend to be very expensive—
+see the next entry.
+
+Pack, COMMUNICATIONS
+CMP199802
+
+Class: Communications
+
+Availability: Common
+
+Cost: (A) %1,500; (B) 15,000
+
+Mass: (a) 20 kg; (B) 100 kg
+
+Dim: (A) 35 cm X 20 cm X 75 cm;
+B)15mXx2m X 1m
+
+A. Laser Comm Pack. Lasers are an excellent medium
+for communication. They're perfectly directional and offer
+no possibility of hostile intercept, they have a high baud
+rate for the transfer of information, and in the right medi-
+um a laser can carry a signal for millions of kilometers.
+The laser comm pack is built around a powerful signal
+laser and sighting mechanism, with a general conversion
+jack for vocal, video, or datastream transmission and
+reception.
+
+The laser's planetary range is line of sight, but in open
+space it can reach up to 5 AU easily. However, it's impos-
+sible to hit a target as small as a ship from this distance
+without some kind of aiming point—for instance, a point in
+a certain constellation, or a terrain feature on a moon. (A
+System Operation—communications skill check is appro-
+priate for checking a laser’s aim.) The pack’s lanth cells
+allow up to 10 hours of continuous communication before
+they must be recharged.
+
+B. Mass Comm Pack. This is a miniature mass trans-
+ceiver, powered by its own lanth cells. It has only a frac-
+tion of the range of a transceiver unit (1 AU at best), but
+can be transported from place to place if it is loaded onto
+a cart or some other vehicle. The pack’s batteries can
+power 1 hour of continuous communication before they
+must be recharged. Like the transceiver, the mass comm
+pack can only send signals to another mass communica-
+tion device.

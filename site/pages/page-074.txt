@@ -1,0 +1,120 @@
+NEUTRONITE SPECIAL BATTLE ARMOR
+
+mators provide an effective Strength of 16 to the user for
+purposes of lifting, carrying, hand-to-hand damage
+adjustment, and breaking things. (The wearer’s unmodi-
+fied Strength is used for derived skill scores and resis-
+tance modifiers) The Paladin’s onboard systems are
+described in the accompanying box. In addition to the
+standard body tank systems, the Paladin’s hydraulic moti-
+vataors allow a movement of 20 meters per phase in bro-
+ken terrain, or 40 meters per phase in open terrain, with-
+out fatiguing the wearer.
+
+NEUTRONITE SPECIAL
+BATTLE ARMOR, POWERED
+(Boby TANK)
+
+Special battle armar is even tougher than the basic neu-
+tronite body tanks. One popular model provides better
+protection while at the same time being easier to manip-
+ulate; another type is entirely devoted to keeping its
+wearer safe from damage, at the expense of being
+extremely unwieldy.
+
+ABS-11 DrAGOON RECON
+ARMOR
+
+General Arms Manufacturing
+Availahility: Restricted
+Cost: $35,000
+Mass: 50 kg
+Composition: Neutronite alloy
+Environmental Tolerance:
+Gravity: G0-G4
+Radiation: RO-H4
+Atmosphere: AD-A4
+Pressure: PO-P4
+Heat: HO-H4
+Action Penalty: +3
+Toughness: Good
+LI/HI/En: 2d4+2/2d4+2/2d4+1
+Hide: —
+Effective Strength: 15
+Skill: Armor Operation—powered armor
+
+Also known as a recon or scout body tank, the Dragoon
+is a lighter and more mobile powered suit. It has all the
+features described above, with one key addition—a grav-
+ity induction drive, providing flight capability at a maxi-
+mum speed of 180 kph (or meters per phase). Since this
+is powered flight, the wearer suffers no fatigue damage
+for flying. On the ground, the Dragoon can maove at 30
+kph (or 30 meters per phase) in broken terrain, or 60
+kph on open ground. Typically, one squad of troops in an
+armor platoon is equipped with recon armor.
+
+= il
+
+BuiLT-IN FEATURES
+
+All modern powered armors include the following sys-
+tems and features:
+
+Targeting optics reduce penalties for long-range
+weapans fire by 1 step.
+
+Image enhancement optics negate 1 step of penalties
+derived from darkness.
+
+The onboard computer is considered to be a com-
+puter gauntlet of Ordinary quality (see page 42). It has
+no 30 slots, but does include a datastream link with a
+jack for direct connection and a comm link for data
+transmission.
+
+The comm suite is a standard set of hands-free
+comm gear and a signal laser in the user’s helmet.
+This signal device can also be used as a target desig-
+nator for laser-guided ordnance.
+
+A threat receiver detects radar and laser emissions
+impinging on the user, providing a -2 step bonus to
+Awareness checks to detect threats of this nature.
+
+Trauma packs are installed to monitor the wearer'’s
+condition and preserve his life in case of injury; two
+type Il trauma packs are included.
+
+A smart display provides a topographical mapping
+system of the surrounding area, providing a -1 step
+bonus to Tactics checks,
+
+The heavy weapon hardpoint allows the attachment
+of a heavy weapon system, usually a bantam rocket
+launcher with a magazine of four rockets. Other
+options include a 13mm heavy charge machine gun, a
+‘heavy flamer, or a 25mm sabot cannon.
+
+AAS-23 TitAN AssAuLT ARMOR
+
+General Arms Manufacturing
+Availability: Restricted
+Cost: #50,000
+Mass: B0 kg
+Composition: Neutronite alloy
+Environmental Tolerance:
+Gravity: GO-G4
+Radiation: RO-B4
+Atmosphere: AO-AS
+Pressure: PO-P5
+Heat: HO-H4
+Action Penalty: +5
+Toughness: Good
+LI/HI/En: 3d4/3d4/2d4+2
+Hide: —
+Effective Strength: 17
+Skill: Armar Operation-powered armor
+
+Fully space-to-ground capable, the Titan is also known as
+zero-g armor. It can be fited with an ablative reentry

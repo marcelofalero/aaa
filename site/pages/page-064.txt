@@ -1,0 +1,72 @@
+LAUNCH
+
+T AND GRENADE
+
+D16 Plasma Gun
+
+The standard assault weapon of Orion League armored
+infantry, the D9 plasma gun is a spectacular weapon. Its
+massive energy discharge has a 2-meter area of effect.
+Anything in this area sustains damage one success grade
+lower than the damage inflicted to the point target, so if a
+plasma gun scores an Amazing hit, the target suffers
+d12+3w and anything else within 2 meters suffers a
+Good hit (dB8+3w).
+
+J 9 QuANTUM MINIGUN
+Raradnya-Brusilev Industries
+Availahility: Restricted
+
+Cost: $15,000
+
+Mass: 10 kg
+
+Length: 125 cm
+
+Payload: Particle beam
+Accuracy: 0
+
+Actions: 4
+
+Mode: F/B/A
+Type/Firepower: En/0
+Damage: d8+1w/d8+3w/dBm
+Hange: 40/80/200 meters
+
+Hide: —
+
+Clip/charge Size: 90 shots/30 bursts
+Clip/charge Cost: #300
+
+Skill: Heavy Weapons-direct fire
+
+Also known as a particle gun or neutron gun, the quantum
+minigun produces beams of heavy, fast-moving subatomic
+particles that slag anything they hit. The minigun doesn’t
+have the armor penetration capability of other heavy
+weapons, but its high rate of fire and high damage poten-
+tial merit respect. The HAK-59 is currently in service in the
+Nariac Domain and with some VoidCorp troop formations.
+
+ROCKET AND GRENAD
+LAUNCHERS
+
+One of the most effective battlefield weapons for hundreds
+of years, portable artillery in the form of grenades or
+rackets is still popular in the Gravity Age. A rocket or
+grenade can take out large numbers of enemy troops
+with one blow. These launch systems make use of the
+various warheads described below.
+
+ZK5 GRENADE LAUNCHER
+Pulan-Tough Job Corporation
+Availability: Military
+Cost: 1,500
+Mass: 2 kg
+Length: 55 cm
+Payload: Various grenades
+Accuracy: -1
+
+iy
+
+HAK-58 Quantum Minigun

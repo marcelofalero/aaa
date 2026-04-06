@@ -1,0 +1,111 @@
+HAND-TO-HANI
+GRAvVITONIC WEAP
+Gravitonic weapons make use of the continuing miniatur-
+ization and development of gravity induction technology.
+These devices rely on smart sensors that vary the
+weapon's mass, allowing a skilled user to strike mon-
+strously powerful blows with no more effort than it takes
+to swing a conductor’s baton.
+
+THUNDER |50 GRAVMACE
+ThunderCorp Arms, Ltd.
+Availability: Controlled
+Cost: #850
+Mass: 3 kg
+Length: 90 cm
+Payload: Variable mass head
+Accuracy: 0
+Actions: 3
+Type/Firepower: LI/0
+Damage: d8+2s/d6+2w/d8+2w
+Range: Personal
+Hide: +1
+Clip/charge Size: 10
+Clip/charge Cost: $75 |
+Skill: Melee Weapons—powered
+
+The gravity mace (or grav-
+mace, as its more commonly
+known) is a popular weapon
+among many front-line assault
+troops. Its lighter and faster
+than the chainsword, and even
+if it lacks the chainsword's hit-
+ting power, the gravmace's
+combat battery lasts twice as |
+long. The Thunder 150 is a
+standard model found in the |
+inventory of several stellar
+nations and a number of pri-
+vate security firms.
+
+HeADBUSTER Power CEsTus
+
+SekureTek Group
+Availability: Controlled
+
+Cost: $625
+
+Mass: 2 kg
+
+Length: 15 cm
+
+Payload: Variable mass head
+Accuracy: 0
+
+Actions: 4
+
+Type/Firepower: LI/0
+Damage: d4+2s/d4w/d4+2w
+Range: Personal
+
+Hide: +3
+
+Clip/charge Size: 12
+Clip/charge Cost: $50
+
+Skill: Unarmed Attack—braw!
+
+Winner of the Merrick’s Triple-
+Bullseye, the HeadBuster is
+the best power cestus avail-
+able. It's lighter and more con-
+cealable than most power
+cesti, but provides the same
+hitting power. The HeadBuster
+is so easy to use that most
+wielders require no formal
+training in powered weapons;
+the wielder can choose to use
+either his Melee Weapons or
+Unarmed Attack skill when
+attacking with the HeadBuster.
+
+K-
+ThunderCorp Arms, Ltd.
+Availability: Military
+Cast: ¥350
+Mass: 4 kg
+Length: 110 cm
+Payload: Variable mass blade
+Accuracy: +1
+Actions: 3
+Type/Firepower: LI/0
+Damage: d6+2w/d4+4w/d4+2m
+Range: Personal
+Hide: —
+Clip/charge Size: 10
+Clip/charge Cost: $100
+Skill: Melee Weapons—powered
+
+The zero-g axe is a powered weapon specialized for use
+in boarding actions and microgravity situations. At the
+bottom of its hat, a counterweight compensates perfectly
+for the variable mass of its deadly carbonite blade. The
+weapon negates two steps of light-gravity or zero-g com-
+bat penalties, allowing a user with magnetic boots or the
+Acrobatics-zero-g training skill to make melee attacks
+with no penalty.
+
+: ——
+

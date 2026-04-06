@@ -1,0 +1,145 @@
+MobuLeE, COMMUNICATIONS
+CMM663817
+
+Class: Communications
+
+Availability: (A) Common; (B) Military; (C) Controlled; (D)
+Controlled
+
+Cost: (A) #50; (B) #500; (C) ¥200; (D) #100
+
+Mass: 70 g
+
+Dim: Bcm X 5cm X 2 cm
+
+A. Datastream Module. About the size and shape of a
+plastic key card, this module is designed to cradle or con-
+nect to a cellcomm, comm gear, vidphone, or other com-
+munication device. A 2-meter microwire lead ends in a
+jack suitable for a computer’s comm port or a cybernetic
+character’s NUack. The datastream module simply allows
+a computer to transmit and receive information over any
+kind of communications gear.
+
+B. Encryption Module. Resembling the datastream
+module in size and use, encryption modules are sold in
+pairs. Attached to a normal communicatar, the encryption
+device automatically scrambles the signal so that anyone
+listening in can't understand a thing. Only the matching
+encryption module can decipher the transmission.
+
+C. Voice Modulation Module. Like the other modules,
+a voice modulator is simply fitted to another communica-
+tions device. When activated, it allows the speaker to alter
+his voice patterns to just about anything imaginable,
+although it doesn't give him the ability to speak in anoth-
+er language. The modulator is perfectly capable of mim-
+icking a specific person, if the character can obtain a
+recording of that person's speech patterns.
+
+D. Uplink Module. Most Gravity Age communications
+devices have sufficient power ta reach orbital satellites or
+ships, but finding the right part of the sky to point at is
+another matter. The uplink module zeroes in on a ‘mark-
+er’ signal from the target satellite or ship, allowing the
+user to select orbital targets simply by dialing a selector
+on the module. On highly developed worlds, the user
+might have dozens or hundreds of orbital stations to
+choose from.
+
+TrRANsLATOR CMT909163
+
+Class: Communications
+Availability: Common
+
+Cost: (A) #1,500; (B) $2,250
+Mass: (A) 500 g; (B) 600 g
+Dim: 15 cm X 10 cm X 5 cm
+
+A Translate. While no universal translator exists in the
+Gravity Age, fairly good facsimiles for known languages
+exist. The translation slate—translate, for short—is a device
+similar in size and shape to a standard data slate, with the
+addition of a built-in microphone and speaker unit. With
+
+a standard language 3D in place, the translate converts a
+foreign phrase or sentence into an equivalent phrase in
+the second language, and plays it through the speaker.
+Using a translate is a litfle awkward, since the speaker
+must press a start button, speak clearly and plainly, then
+press a stop button to trigger the translation. Complicated
+concepts, exact emotional inflection, and other such
+nuances may be hard to get across. Translate language
+3Ds are available for every known human tongue and all
+major alien languages, costing #100 each.
+
+B. Active Interpreter. This device is a translate with a
+wire lead to an earpiece and a second lead to an amulet-
+like throat speaker. The throat piece generates a perfect
+interference with the wearer's natural voice, silencing his
+speech in his native language while enunciating the trans-
+lated words. The active interpreter continuously translates
+for the wearer without the stop-and-go exchange of a
+normal translate. Favored for diplomatic functions, the
+device can easily be worn under any clothing.
+
+VippHONE CMV564861
+
+Class: Communications
+
+Availability: Any
+
+Cost: (A) #400; (B) #750; (C) 1,850
+
+Mass: (A, B) 1 kg; (C) 2 kg
+
+Dim: (A, B) 20 cm X 12 cm X 6 cm
+(C) 25 cm % 20 cm X 15 cm
+
+A Vidphone. Many people prefer face-to-face commu-
+nications. Portable video phones are every bit as popular
+as cellular phones in earlier years. The vidphone's optic | |
+pickup is a small video camera. A character on the go
+can hold the vidphone about half a meter in front of her
+face and look into it as she talks, but most folks prefer to
+set the vidphone on a desk or dashboard to use it
+
+The vidphone can be set for send only, receive only,
+audio mode, or full two-way video. Its camera, while
+small, is a normal video camera and can be used to
+“record” images or scenes simply by calling up someone
+who has a video recorder attached to his or her vidphone.
+
+B. Heads-up Vidgear. Resembling comm gear, the
+‘heads-up version of the vidphone includes a transparent
+eyescreen that the wearer can flip down over his face to
+receive video over his communication circuit His own
+transmission camera is worn as part of his headpiece and
+shows what he’s looking at, not his own face (although its
+easy enough to detach the camera feed and look into it).
+Heads-up vidgear is available in cellular or independent
+models.
+
+C. Holophone. The holophone is a small console with
+two separate camera pickups in order to catch the speak-
+er's face in three dimensions. Its base is a small holopro-
+jector, allowing the user to converse with a holographic
+image of the other party. Usually, holophones are set to
+
+=
+=
+==
+=
+=
+—
+=
+=
+=
+=
+=
+o
+[==]
+™
+=
+==
+

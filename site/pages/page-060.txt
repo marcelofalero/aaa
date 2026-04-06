@@ -1,0 +1,107 @@
+Roc Z1 S
+
+SekureTek Group
+Availability: Contralled ' m
+Cost: $2,500 m
+Mass: 15 kg }' |
+Length: 110 cm )
+Payload: Compressed air O |
+Accuracy: -1 o
+Actions: 2 X
+Mode: F \
+Type/Firepower: LI/0
+
+Damage: d6+2s/dB+3s/2d6+3s
+Range: 20/40/80 meters
+
+Hide: —
+
+Clip/charge Size: 10 shots
+Clip/charge Cost: $100
+
+Skill: Heavy Weapons—direct fire
+
+When it's important to subdue a number of people in a
+hurry, the stutter cannon is the best tool for the job. The
+cannon affects all targets in a 3-meter radius, inflicting
+damage one category less than the damage inflicted to the
+primary target. For example, if the user scores a Good hit
+(d8+3s) against one rioter, all other people within 3
+meters suffer Ordinary damage (d6+2s). Ordinary hits
+inflict no damage to nearby targets.
+
+TAuR! 9 IMPACT PisToL
+MHA Technologies, Inc.
+Availability: Controlled  _come—— R
+Cost: $1,150 (
+Mass: 1 kg
+Length: 22.5 cm
+Payload: Compressed
+air
+Accuracy: 0
+Actions: 4
+Mode: F/B
+Type/Firepawer: LI/0
+Damage: 2d4s/d6+1w/d6+3w
+Hange: 4/12/36 meters
+Hide: +2
+Clip/charge Size: 12 shots/4 bursts
+Clip/charge Cost; #50
+Skill: Modern Ranged Weapons—pistol
+
+A deadly refinement of stutter weapon technology, the
+impact pistol fires an even mare powerful blast of com-
+pressed air that can powder concrete at close range. It
+can be set for a high-speed mode that allows burst fire
+(but not full automatic), or for low-speed, single-shot
+mode. Like any stutter weapon, the impact pistal doesn't
+waork in vacuumn due to the lack of air to compress.
+
+[ »
+
+D
+
+ows, CROSSBOWS,
+AND DART GUNS
+
+While any number of firearms or energy weapons pro-
+vide better range, better damage potential, or higher rates
+of fire, modern versions of ancient weapons such as the
+bow or crosshow are still popular for special missions.
+Silent and deadly, an arrow or poison dart can kil just as
+easily as a bullet.
+
+ArAcHE LX REFLEX Bow
+StarMech Edge One Division
+Availability: Comman
+Cost: $650
+Mass: 1 kg
+Length: 135 cm
+Payload: Razor-tipped arrow
+Accuracy: 0
+Actions: 2
+Mode: F
+Type/Firepower: LI/0
+Damage: d4+2w/d6+2w/d4+1m
+Range: 50/100/250 meters
+Hide: —
+Clip/charge Size: 1 shot
+Clip/charge Cost: #25
+Skill: Primitive TR
+Ranged Weapons—bow r kg A
+
+The bow’s greatest advantage is
+silence and stealth. It has no
+muzzle flash or loud report to
+give away the users location,
+making it perfect for dense ter-
+rain such as jungle or heavy
+brush. Its disadvantage is the low
+rate of fire (after each “shot” the
+user must waste an action to
+ready another arrow, or shoot
+with a +2 step penalty) and its
+size, which prevents it from being s
+
+fired from a prone position. ¢ j
+

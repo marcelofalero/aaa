@@ -1,0 +1,114 @@
+3 11mmMm
+Austrin-Ontis Munitions Div. 1
+Availahility: Military
+
+Cost: ¥1,600
+
+Mass: 3 kg
+
+Length: 85 cm
+
+Payload: 11mm bullet
+Accuracy: 0
+
+Actions: 4
+
+Mode: F/B/A
+Type/Firepower: HI/0
+Damage: d6+1w/d6+3w/d6+1m
+
+Range: 90/180/600 meters
+
+Hide: —
+
+Clip/charge Size: 30 rounds/10 bursts
+
+Clip/charge Cost: $60
+
+Skill: Modern Ranged Weapans-rifleFor twenty years, the
+
+IF-3 has been the standard infantry weapon of the
+Concord Defense Corps and the Concord Marines.
+Adopted from Austrin-Ontis as the best combat rifle avail-
+able at the time, the IP-3 is light, rugged, and long-
+ranged. With the addition of a 50 conversion kit, the
+
+IF-3 can be configured for zero-g combat. This halves all
+range figures, but reduces zero-g penalties by 1 step.
+
+The electrochemical propellant technology of charge
+weapons was not developed for personal firearms—it was
+originally applied to large guns such as howitzers and
+tank cannons. Over the two centuries in which charge
+weapons have been in the limelight, hundreds of types of
+firearms have made use of this technology.
+
+AGC-7 AuToFL
+StarMech Edge One Division
+Availability: Military p-
+Cost: #2,750
+Mass: 3.25 kg
+Length: 45 cm
+Payload: 25mm flechette round
+Accuracy: 0
+Actions: 4
+Mode: F/B/A
+Type/Firepower: HI/0
+Damage: d4w/d6w/d4m
+
+Range: 10/20/50 meters
+
+Hide: +1
+
+Clip/charge Size: 15 rounds/5 bursts
+
+Clip/charge Cost: 150
+
+Skill: Modern Ranged Weapons-rifle
+
+The AGC-7 (or “Aggie,” as it's affectionately known) is
+one of the most fearsome close assault weapons in exis-
+tence. It's a fully automatic charge weapon firing 20mm
+flechette rounds—bundles of razor-sharp needles that
+shred anything they hit. Like other shotguns, it inflicts
+double damage to targets within shart range (10 meters),
+and only half damage (minimum of 1 point) to targets at
+long range.
+
+Soze Arms Ltd.
+Availahility: Military
+Cost: #1,450
+
+Mass: 1.5 kg
+Length: 27.5 cm
+Payload: 25mm flechette round
+Accuracy: -1
+
+Actions: 3
+
+Mode: F
+
+Type/Firepower: HI/0
+
+Damage: d4w/d6w/d4m
+
+Range: 8/16/40 meters
+
+Hide: +2
+
+Clip/charge Size: 6 rounds
+Clip/charge Cost: 50
+
+Skill: Modern Ranged Weapons—
+pistol
+
+The Devastator is a succinct statement of the Soze Arms
+design philosophy—overkill is the way to go. This pistol
+fires a wide-pattern flechette round, shredding anything in
+the general vicinity. It inflicts double the listed damage at
+close range (8 meters or less), but only half damage for
+shots at long range (16 to 40 meters). The flechette pis-
+tol doesn't have the full-auto capability of the autoflechette
+
+shotgun.
+

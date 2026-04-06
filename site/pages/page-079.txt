@@ -1,0 +1,131 @@
+worn, the ptokh k'se improves the t'sa’s natural armor
+value from d4+1 (LI), d4 (HI), d4-1 (En) to the values
+given in the statistics. (This is an exception to the rule
+about layering armor; see Chapter 11 of the ALTERNITY
+Player’s Handbook.) While its mass is noticeable, the vest
+is thin and flexible enough to be worn under almost any
+other garment. Few t'sa like to wear heavy battle armor,
+but the ptokh k'se is a good compromise between ease of
+movement and protection.
+
+BELLWEYN SiL
+(FRAAL)
+
+Innishaal Space Industries
+Availability: Controlled
+Cost: 86,500
+Mass: 2 kg
+Composition: Malecule weave
+Environmental Tolerance:
+
+Gravity: n/a
+
+Hadiation: n/a
+
+Atmosphere: n/a
+
+Pressure: n/a
+
+Heat: H1-H3
+Action Penalty: 0
+Toughness: Ordinary
+LI/HI/En: d6/d6-1/d6-1
+Hide: —
+Effective Strength: n/a
+Skll: —
+
+The bellweyn sil (‘battle-coat” in the fraal tongue) is a
+protective garment that embodies some of the elegance
+and aesthetics of the species. It consists of a light arming
+
+ADAPTING “HUMAN’’ ARMOR
+
+In addition to the four types presented on these two
+pages (and variations on these basic themes), aliens
+are also capable of wearing some of the kinds of
+armor described earlier in this section. In particular,
+fraal and mechalus, because of the close similarity of
+their body shapes to the human form, have relatively
+Far example, a fraal who normally wears a bellweyn
+sil but sometimes finds herself in situations where she
+vides might also own a CF bodysuit (page 71).
+
+‘The sesheyan, weren, and tsa are at somewhat of a
+disadvantage when it comes to fitting into armor de-
+signed primarily for humans. Some vests and jackets
+can be altered to fit a nonhuman body, but bulkier and
+stronger types of armor are not as easily modified.
+(See “Aliens in Armor” in Chapter 11 of the AtTerNITY
+Player’s Handbook for some general guidelines.)
+
+suit of engineered molecular weave. Over this layers of
+stiffened molecular weave are fashioned into soft, over-
+lapping bands that vaguely resemble ancient human
+armors. Richly adorned with embroidery and metallic fin-
+ishes, the bellweyn sil is a spectacular garment suitable
+for many diplomatic or formal affairs. Fraal leaders,
+guards, and emissaries often wear this garment when
+dealing with less developed species.
+
+HAD’NILTAS
+(MECHALUS)
+
+Nari Cho' Manufacturing
+Availahility: Restricted
+Cost: ¥25,000
+Mass: 12 kg
+Composition: Nanofluidics
+Environmental Tolerance:
+
+Gravity: GO-G4
+
+Radiation: RO-R4
+
+Atmosphere: AD-A4
+
+Pressure: PO-P4
+
+Heat: HO-H4
+Action Penalty: +1
+Toughness: Ordinary
+LI/HI/En: 2d4/d6+1/2d4+1
+Hide: +1
+Effective Strength: 15
+Skill: Armor Operation—powered armor
+
+An putstanding example of alien technology, the mechalus
+had'niltas is a superior suit of powered armor. Unlike the
+bulky plated suits developed by human armorers, the
+had'niltas is light and flexible. It consists of a full-body
+jumnpsuit or wrap of advanced fabric. Inside the suit’s fab-
+ric is a layer of liquid metal containing millions of
+nanocircuits. These instantly respond to any attack, hard-
+ening the suit at the point of impact and dissipating heat
+or energy. The had'niltas is nearly impervious to slashing
+attacks or energy weapons, but high-velocity projectiles
+can sometimes penetrate before the suit reacts.
+
+ADVANCED TECHNOLOGY
+
+The khe! burund and ptokh K'se represent fairly sim-
+ple designs familiar to human armorers, but other
+sess a materials technology that is still ahead of human
+technology in many regards, despite centuries of close
+partnership between the species.
+
+Similarly, the mechalus demonstrate a superior
+command of nanotechnology. The had'niltas is a gar-
+ment that binds with mechalus biocircuitry, echoing the
+‘wearer'’s motions at the speed of thought.
+
+=
+=
+m
+=
+=)
+=
+—
+[
+=
+o
+

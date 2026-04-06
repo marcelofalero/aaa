@@ -1,0 +1,133 @@
+66
+
+ROCHET AND GRENADE WARHEADS
+
+ROCKET AND GRENADE WARHEADS
+
+Launchers are useless without ordnance to put on-target.
+Hockets can only be fired with a launcher, but grenades
+can be bought as dumb (listed cost, thrown weapon with
+a +1 accuracy), smart (cost +#300, see details on previ-
+ous page), or launch-ready (listed cost see grenade
+launcher on previous page).
+
+ANTIAIR ROCKET
+
+Availability/Cost: Restricted/$1,000
+Mass/Length: 3 kg/65 cm
+Payload: Serrated rod warhead
+Type/Firepawer: HI/G
+Damage: d4w/d4+2w/d4m
+Area of Effect: 4m/8m/12m
+
+This bantam racket features an IR guidance system and
+a fragmentation warhead to knack down enemy aircraft.
+
+ANTIPERSONNEL ROCKET
+
+Availability/Cost: Military/$500
+Mass/Length: 3 kg/B5 cm
+Payload: Neutron radiation
+Type/Firepower: En/0
+Damage: d6w/d6+2w/d8+2w
+Area of Effect: 4m/8m/12m
+
+Designed to knock out personnel without damaging
+vital equipment, the antipersonnel rocket delivers a dead-
+ly blast of neutron radiation on detonation. Like the anti-
+air rocket, it's an area-effect weapon.
+
+ANTIVEHICLE ROCKET
+
+Availability/Cost: Military/$1,000
+Mass/Length: 3 kg/55 cm
+Payload: Kinetic penetrator
+Type/Firepower: HI/G
+Damage: d4+2w/d4+4w/d4+1m
+Area of Effect: contact/2m/4m
+
+This rocket delivers a discarding-sabot booster stage
+that can pierce very heavy armor. It's designed for use
+against light vehicles and heavy powered infantry.
+
+CHE RockEeT
+
+Availahility/Cost: Military/$250
+Mass/Length: 3 kg/B5 cm
+Payload: Detonex warhead
+Type/Firepower: En/0 or En/G
+Damage: d8-2w/dBw/d4m
+Area of Effect: 6m/10m/16m
+
+This rocket is packed with a kilo of Detonex, one of the
+most powerful conventional explosives around. Its fire-
+power is considered to be Good within 6 meters of the
+detonation point.
+
+AP GRENADE
+
+Availability/Cost: Military/$400
+Mass/Length: 0.5 kg/15 cm
+Payload: Directional charge
+Type/Firepower: En/G
+Damage: d6-1w/d4m/d4+2m
+Area of Effect: contact/ 1m/2m
+
+This grenade’s radar fuse senses its orientation to the
+target and creates a shaped-charge blast on contact. It is
+designed for piercing vehicular and body armar.
+
+CONCUSsSION GRENADE
+
+Availability/Cost: Military/%150
+Mass/Length: 0.5 kg/15 cm
+Payload: Caseless explosive
+Type/Firepower: LI/0
+Damage: d6+3s/d6w/d6+2w
+Area of Effect: 2m/4m/6m
+
+This grenade is a block of explosive in a nonfragment-
+ing case. It's designed to incapacitate instead of kill
+
+FRAG GRENADE
+
+Availability/Cost: Military/#100
+Mass/Length: 0.5 kg/15 cm
+Payload: Shrapnel
+Type/Firepower: HI/G
+Damage: dBw/d8+1w/d4+1m
+Area of Effect: 2m/6m/10m
+
+The fragmentation grenade is a very dangerous
+weapon, capable of hurling deadly shrapnel a great dis-
+tance. Targets behind hard cover reduce the damage by
+one category, as if they'd hit the deck (see page 47 of the
+ALTERNITY Gamemaster Guide).
+
+GAs GRENADE
+
+Availability/Cost: Military/$300
+Mass/Length: 0.5 kg/15 cm
+Payload: Poison gas
+Type/Firepower: LI/0
+Damage: d4s/d4+2s/d4w
+Area of Effect: contact/2m/4m
+
+This weapon explodes in a cloud of poison gas B
+meters in diameter. This is a hemotoxin with an onset
+time of d4+1 rounds, and no modifier to the victim's
+Constitution feat check to resist its effects. See “Poison” in
+Chijapter 3 of the ALTERNITY Gamemaster Guide for details.
+
+PuLse GRENADE
+
+Availability/Cost: Military/#350
+Mass/Length: 0.5 kg/10 cm
+Payload: Electromagnetic pulse
+Type/Firepower: En/G
+Damage: d4+2s/d6+2s/d8+2s
+Area of Effect: 2m/4m/10m
+
+The pulse grenade radiates a magnetic pulse on deto-
+nation, ionizing delicate electronics and interfering with
+

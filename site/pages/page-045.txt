@@ -1,0 +1,136 @@
+$2,000 for Ordinary, Good, or Amazing modules, plus
+twice the cost of the equipment to be installed.
+
+CYBERWARE, INTERFACE
+CYF290349
+
+Class: Cybernetics
+
+Availability: Controlled
+
+Cost: (A) ¥500+; (B) #1,500+; (C) #1,000+
+
+Mass: (A) 100 g; (B, C) 300 g
+
+Dim: (A) 2cm X 1 cm X 5 mm
+(B,0)3cm X 2cm X 1cm
+
+Size: (A) — (B) — () 1
+
+A. Comm Port. This is a frequency-agile transceiver
+hardwired to the user’s nanocomputer. Through the port,
+the user can receive and transmit comm signals, video
+feed (if he has an optic system), or datastream feed. Using
+a comm port for a radio conversation is distracting, so the
+character suffers a +1 step penalty to actions he takes
+while communicating. Unlike the subdermal transceiver,
+which takes its cues from subvocalizations, the comm
+port is controlled directly by the wearer’s mind through
+his nanocomputer. The comm port has a range of
+20/50/200 km for an Ordinary, Good, or Amazing instal-
+lation.
+
+B. Gunsight. There are three components in this sys-
+tern: a vidcam mounted on the wearer’s weapon, a wire
+lead from the vidcam to the wearer's cytronic circuitry,
+and an optic screen, artificial eye, or cyberoptic system in
+the user’s head (not included in the package). When acti-
+vated, the vidcam projects crosshairs in the user’s field of
+vision, showing exactly where the qun is pointing. The
+system provides a -1, -2, or —3 step bonus to the user’s
+attack skill checks with the ranged weapon in question.
+The cybernetic gunsight is especially deadly when used in
+conjunction with an enhance program.
+
+C. System Link. Resembling the innate mechalus abil-
+ity to directly interface with computer hardware, the sys-
+tem link is an extension of the user’s cytronic circuitry net
+that can bypass manual controls, keyhoards, or displays.
+The user delivers commands to the vehicle or system in
+question through a direct neural link, speeding his reac-
+tions and increasing his precision. The link provides a -1,
+~2, or -3 step bonus to one specialty skill under Vehicle
+Operation or System Operation. This bonus is not cumu-
+lative with any honus for the quality of a vehicle’s on-
+board computer. Additional specialty modules can be pur-
+chased for #500 each.
+
+System Ordinary Good Amazing
+; Comm Port #500 §1,500 2,500
+
+Gunsight §1,500 $2,500 §4,500
+
+System Link 1,000 $2,000 $4,000
+
+CYBERWARE, COMMAND
+CYC208442
+
+Class: Cybernetics
+
+Availability: Controlled
+
+Cost: (A) $2,500+; (B) #1,000+
+
+Mass: (A) 75 g; (B) 150 g
+
+Dim: (A) 2 cm X 2 cm X 2 mm
+B)5cm X 3cm X 5mm
+
+Size: (A) —; (B) 1
+
+L}
+=
+==1
+[ma]
+=3
+=
+=
+==}
+[aal
+
+A. Accelerator. The accelerator uses the subject’s
+cybernetic contral systems to drastically enhance his
+reaction speed. The recipient must have reflex wiring (see
+Chapter 15 in the ALTERNITY Player’s Handbook) and a
+nanocomputer to support the accelerator, or the device is
+useless. The accelerator provides the following benefits:
+
+Action Check Actions/Rd
+
+Quality Score Increase Increase Cost
+
+Ordinary +2 None $2,500
+Good +3 +1 %5,000
+Amazing +4 +2 #10,000
+
+In order to receive the accelerator bonus, the charac-
+ter’s nanocomputer and reflex wiring must be of equal or
+better quality. Otherwise, the accelerator is limited in its
+effect to the weakest of the three systems. For example, a
+character with an Amazing accelerator, Good reflex, and
+an Ordinary nanocomputer only gains the Ordinary accel-
+erator benefits. Using an accelerator doubles the stun
+damage inflicted by triggering an enhance program. ] |
+
+B. Nanocomputer. Without a nanocomputer and its 2
+cytronic circuitry, most other pieces of cyberware are
+useless. The nanocomputer provides an interface
+between the subjects central nervous system and his
+cyberware, allowing him to control cyberlimbs, deploy
+weaponry, etc. Each cybernetic system requiring con-
+scious control takes 1 of the nanocomputer's active mem-
+ory slots, so a character with two cyberlimbs and a
+BattleKlaw must allocate 3 of his nanocomputer’s slots to
+the direction of his cyberware. Nanocomputers cannot
+read 3D0s, download data, or otherwise interact with the
+world around the character unless some kind of interface
+device is purchased and installed—a Nlack, a 3D drive,
+or a comm port.
+
+Active Processor
+Quality Cost Memory Bonus
+Marginal %1000 3 slots None
+Ordinary 2,000 4 slots -1 step
+Good $3,000 5 slats -2 steps
+Amazing §4,000 B slots -3 steps
+

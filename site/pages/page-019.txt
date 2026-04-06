@@ -1,0 +1,107 @@
+check score—15+/14/7/3; Actions per round 3; Mass 30
+kg; Size 1 meter tall; Processor quality—Good (10 active
+slots); Stored programs—operating system, Medical
+Science~medical knowledge 2, Medical Science-surgery,
+Medical Science-treatment 3.
+
+NANOSURGERY KiT
+
+Surgeons are only human (well, in most cases they are).
+Even today, some surgical repairs are simply beyond
+their skill. With our new nanosurgery kit, no surgery is
+impossible. The surgeon never touches the patient—
+instead, he's the general of an army of nanorobots,
+orchestrating the most difficult surgical procedures with
+perfect precision and execution.
+
+The nanosurgery kit consists of three major compo-
+nents: the control unit, the nanorobot storage and arming
+chamber, and the nanorohot injection and retrieval sys-
+tem. The entire assembly is housed in a tough plastic cas-
+ing. The nanosurgery kit isn't intended for use as a com-
+bat surgery station; it has no provisions for anesthetizing
+the patient, securing his body, or monitaring his life func-
+tions. It's basically a very sophisticated scalpel.
+
+The control unit is a top-notch desktop computer
+equipped with a sensor and communications package,
+allowing the surgeon to relay his orders to the nanorobots
+inside the patient. It's also slaved to microassembly lines
+within the storage chamber in order to produce the exact
+type of robots needed. Specialized sensor nanorobots act
+as the control unit’s eyes and ears inside the patient. The
+nanorobots are injected into the bloodstream or lymphat-
+ic system, or delivered as an aerosol to the nasal pas-
+sages or lungs. They can be retrieved through a simple
+blood-extraction tube.
+
+A surgeon must have rank 5 in Medical Science-
+surgery in order to use the nanosurgery kit with best
+effectiveness. The kit adds a -2 step bonus ta the sur-
+geon's skill checks (only -1 if the surgeon doesn't have
+the right training) and allows the surgeon to heal 1 point
+of mortal damage and 2 points of wound damage on each
+success achieved during the complex skill check (instead
+of each two successes). Each time the kit is used to per-
+form nanosurgery, it costs $2,000 to replace the exotic
+nanotech and materials expended in the operation. ltem
+210995872, $25,000, 10 kg, Restricted
+
+IM NEURAL STIMULATOR
+
+Death itself is no longer a barrier to the well-equipped
+doctor. The neural stimulator can return the spark of life
+to a clinically dead patient. It's a desperate measure, to be
+sure, but if it's the only chance you've got to save a
+patient, you've got to give it a try.
+
+The neural stimulator generates thousands of
+microcurrent pulses of electricity in the subject’s brain and
+
+spinal cord, possibly retrieving him or her from the “flat-
+line® of brain death. It resembles a skulicap with control
+and pulse nodules scattered around its perimeter. When it
+is applied and activated, dozens of tiny electrodes pierce
+the victim's skull and attempt to induce neural activity.
+
+The neural stimulator is intended only for use on char-
+acters who have died—in game terms, characters who are
+out of mortal points. Applying the device successfully
+requires @ Medical Science-treatment skill check; on a
+Good result, the doctor applies a -1 step bonus to the vic-
+tim's ensuing Will feat check, and an Amazing result
+applies a -3 step bonus.
+
+Once the device has been applied, the victim makes a
+Will feat check to return to life, regaining his last mortal
+point if any grade of success is achieved. A cumulative
++1 step penalty applies for every 10 minutes that the vic-
+tim has been dead; under the right circumstances (cold
+water drowning, freezing, etc) this penalty drops to +1
+per hour. Naturally, the victim is still in a bad way, and
+probably requires immediate and extensive medical treat-
+ment to survive. If the neural stimulator is used on a liv-
+ing character, the victim suffers dBs. ltem 240900990,
+%5,000, 0.5 kg, Restricted
+
+53/ddN5 NG B39 THII0IN
+
+PHARMACEUTICALS
+
+The Gravity Age doctor has hundreds of wonderful tools
+at his disposal-weapons against disease, injury, and
+other health problems that earlier physicians only
+dreamed of. Our pharmaceutical supplies are carefully
+screened through the most stringent examinations to
+ensure your safety and health.
+
+All the drugs described below are human-specific.
+Similar drugs designed to work on (or against) fraal,
+mechalus, sesheyan, 'sa, or weren patients can be had
+for three to five times the listed cost. Each pharmaceuti-
+cal is available in at least one of three forms—injection,
+spray, or capsule. Forcing an unwilling person to take one
+of these medicines usually requires an assistant to over-
+power or restrain the would-be patient. If the victim is
+free to resist, the medic must make a successful Unarmed
+

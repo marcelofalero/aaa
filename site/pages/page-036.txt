@@ -1,0 +1,119 @@
+3
+
+d-
+
+| [l
+I&!
+| Al
+
+Wi
+~t
+
+e
+
+portrait mode, simply showing the head and shoulders of
+each party, but the speakers can select full-image trans-
+mission and reception. In this mode, the holophone pro-
+jects a 20-cm tall miniature image of the other party.
+Holophones aren't available in heads-up models.
+
+Detector SDD209807
+
+Class: Sensars
+
+Availahility: Any
+
+Cost: (A) ¥250; (B) %250; (C) #125; (D) $125
+Mass: 2 kg
+
+Dim: 25 cm X 12 cm X 4 cm
+
+A Biodetector. The biodetector is a handheld unit
+about 15 cm X 10 cm X 3 cm. It's a specialized hio-
+chemical sniffer that detects traces of key organic com-
+pounds in an area. While the biodstector can't detect spe-
+cific lifeforms or track their movements, it can determine
+if life exists, what its basic chemistry or series is, and
+what type of creatures (small plants, large carnivores,
+microbes only, etc.) inhabit the area. The detector pro-
+vides a —2 step bonus to Life Science-biology or System
+Operation-sensors skill checks to search for or classify
+life signs. It can sniff an area roughly 50 meters in diam-
+eter with 12 seconds (1 round) of readings.
+
+B. Chem Detector. Hesembling the biodetector in form,
+the chem detector is a general-purpose sniffer and taster
+device that can analyze atmospheric composition or spe-
+cific substances it is brought into contact with. It provides
+a -1 step bonus to the user’s Physical Science-chemistry
+or System Operation-sensors skill checks to detect or
+classify chemical compounds in the vicinity.
+
+“ i
+
+C. EM Detector. This device detects electromagnetic
+energy and transmissions. It's useful for detecting radio or
+radar emissions, measuring an object’s radiant heat, and
+measuring magnetic fields. Note that x-ray, gamma, and
+cosmic radiation are part of the EM spectrum, so the
+detector can also spot dangerous radiation levels. The
+detector provides a -1 step bonus to the user’s Physical
+Science-physics or System Operation-sensors skill
+checks in these areas.
+
+D. Rad Detector. The radiation detector combines a
+high-band EM detector with a series of plates designed to
+measure particulate (alpha, beta, or neutron) radiation
+levels. The detector provides a -2 step bonus to Physical
+Science-physics, System Operation-sensors, or Aware-
+ness-perception skill checks to spot danger or localize
+specific sources of radiation.
+
+GAunTLET SDG297003
+
+Class: Sensors
+
+Availability: Common
+
+Cost: (A) $550; (B) #725; (C) #350
+
+Mass: 2 kg
+
+Dim: 40 cm X 12 cm X 10 cm (approx.)
+
+A Diver Gauntlet. The gauntlet is an easy-to-use
+frame for many kinds of sensors and hardware. Fitting
+over the forearm and hand, it's light, durable, and conve-
+nient. The diver gauntlet is completely waterproof; it has
+a small sonar transducer and display, an inertial mapping
+system to help the diver keep track of his location, and a
+blood chemistry sampler that continuously monitors for
+dangerous. conditions (narcosis, the bends, etc) and
+warns the diver when he must return to the surface. The
+gauntlet reduces penalties for visibility or disorientation
+by 2 steps and provides a —1 step bonus to any Dare-
+devil-diving or Movement-swim skill
+
+L
+
+* .| B Sensor Gauntlet This useful device
+miniaturizes the EM and chemical detec-
+tors described in the previous entry and
+combines them in one convenient plat-
+form. Optionally, sensor gauntlets may be
+specialized to include any two of the four
+detector devices described above, so it's
+possible to buy a biochem sensor gaunt-
+let, a chemrad sensor gauntlet, and so
+forth. The gauntlet provides a -1 step
+bonus to the user’s Life Science, Physical
+Science, Awareness, and Investigate skill
+checks.
+
+C. Radar Gauntlet. The radar gauntlet
+features a small phased-array radar sys-
+temn that gives the user the ability to
+detect vehicles or objects far beyond his
+
+y
+

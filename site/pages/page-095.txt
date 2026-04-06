@@ -1,0 +1,57 @@
+RANGED WEAPONS (CONT.)
+
+Skill Md  Acc Range Type  Damage (0/G/A) Actions
+
+Sirocco 100 Stutter Bifle Mod-rifle F -1  20/40/200 LI d6-+3s/dB+3s/d12+3s 2
+
+Tauri 9 Impact Pistal Mod-pistsl  F/B O 4/12/36 L/0 2d4s/d6+1w/d6+3w 4
+
+Apache LX Reflex Baw Pim-bow F 0  50/100/250  LI/O d4-+2w/d6+2w/dd+1m 2
+
+Commando 3000 Crosshow Pim-bow F 0  B0/120/300  HLO d6+1w/d8+1w/d6m 1
+
+Cobra F77 Dart Gun Mod-pistsl  F O 4/8/16 L/0 d4-1w/ddw/dd+1w 2
+
+Blue Balt Arc Gun Mod-rife  F -1  20/40/100  En/G dB-+15/dBw/d6+3w 2
+
+Demon 9 Hand Flamer Mod-SMG F/B/A -1 6/12/24 En/0 dBw/dB-+2w/d8+3w 3
+
+Z-L0K Render Rifle Mod-rifle  F 0  50/100/250  En/0 d6-+1s/d6+1w/d4+1m 3
+
+Heavy WEAPONS
+
+Weapon Skill Md  Acc Range Type Damage (0/6/A) Actions
+
+KZ 160 13mm Charge MG Hvy-direct A -1 200/600/1200 HI/G dBw/2d6w/dBm 4
+
+Honin 900 25mm Sabot Cannon~ Hvy-direct  F +1  100/200/500  HU/G dBw/d4-+1m/d6+2m 2
+
+Supernova X1 Mass Cannon Hvy-direct  F 0 6/20/60 En/G d8+1w/d12+1w/dB+1m 2
+
+Hoc Z1 Stutter Cannon Hvy-direct F -1 20/40/80 /0 d6+25/dB+3s/2d6+3s 2
+
+Dragon 3 Heavy Flamer Hvy-direct F/B/A -1 8/16/40 En/G d6-+1w/dB+2w/2d6+1w 8
+
+D16 Plasma Gun Hvy-direct  F 0  50/100/400  En/G dBw/dB+2w/dB+4w 2
+
+HAK-59 Quantum Minigun Hvy-direct F/B/A 0 40/80/200  En/D dB-+1w/dB+3w/dBm 4
+
+ZKS Grenade Launcher Hvy-indrect F -1 40/240/480 Asload  Asload 3
+
+Bantam 5 Rocket Launcher Hvy-indirect F -2  40/400/2000 Asload  Asload 2
+
+Bloodhound F3 Smart Grenade  Athl-thow  F -1 Per STR  Asload  Asload 2
+
+ROCKET AND GRENADE WARHEADS
+Clip  Clip
+
+Weapon Slkill Md  Acc Areaof Effect Type Damage (0/6/A) Actions Size Cost Hide Mass Avail Cost
+Antiair Rocket Aslauncher F  Varies  4/8/12 HI/G d4w/dd+2w/d4m Aslauncher — - - 3 Hes 1000
+Antipersannel Rocket Aslauncher F  Varies  4/8/12 En/0 d6w/d6+2w/dB+2w  Aslauncher — - - 3 Ml 500
+Antivehicle Racket Aslauncher F  Varies 0/2/4 HI/G d4-+ew/d4+4w/dd+1m Aslauncher — - - 3 Ml 1000
+CHE Rocket Aslauncher F  Varies  6/10/16  En/0E)  dB-2w/dBw/ddm Aslauncher — - - 3 Ml 250
+AP Grenade Aslauncher F  Varies 0/1/2 En/G d6-1w/d4m/d4-+2m Aslauncher - - - 05 Ml 400
+Concussion Grenade Aslauncher F  Varies 2/4/8 LI/0 d6-+3s/dBw/d6+2w Aslauncher - - - 05 Ml 150
+Frag Grenade Aslancher F  Varies  2/6/10 HI/G dBw/dB+1w/d4+1m  Aslamcher — - - 05 Ml 100
+Gas Grenade Aslauncher F  Varies 0/2/4 LI/0 dds/d4-+2s/ddw Aslauncher - - - 05 Ml 300
+Pulse Grenade Aslauncher F  Varies  2/4/10 En/G d4+2s/d6+2s/d8+2s  Aslauncher — - - 05 Ml 350

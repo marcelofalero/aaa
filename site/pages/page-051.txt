@@ -1,0 +1,133 @@
+CHARGE PisToLs
+
+The final evolution of the conventional firearm, charge
+weapons replace the old firing-pin mechanism of earlier
+guns with an electrical action. Charge weapons are stur-
+dy, reliable, and cheap compared to more advanced per-
+sonal weapons, and are still extremely popular in many
+regions.
+
+M9 9MmM CHARGE PisToL
+
+AM. Industries, Orion League
+Availability: Common
+
+Cost: ¥500
+
+Mass: 1 kg
+
+Length: 18 cm
+
+Payload: 9mm bullet
+
+Accuracy: -1
+
+Actions: 4
+
+Mode: F
+
+Type/Firepower: HI/0
+Damage: d4+1w/d6+1w/d4m
+Range: 8/16/60 meters
+
+Hide: +3
+
+Clip/charge Size: 15 rounds
+Clip/charge Cost: $50
+
+Skill: Modern Ranged Weapons-pistal
+
+The M9 charge
+pistol has been the
+standard sidearm
+of the Orion Star
+Service for mare
+than eighty years.
+More than two
+million M3s have
+been produced by
+AM. Industries. It's a good example of a light charge pis-
+tol, equipped with a baffled suppressor to hide the
+weapon's characteristic muzzle flash. In recent years, the
+Star Service has begun a design competition in search of
+a replacement for this model.
+
+HAMMER 5 | IMM CHARGE PisToL
+
+Soze Arms Ltd.
+Availability: Common
+Cost: $1,000
+
+Mass: 1.2 kg
+
+Length: 22 cm
+Payload: 11mm bullet
+Accuracy: -1
+
+Actions: 3
+
+Mode: F
+Type/Firepower: HI/0
+Damage: d4+2w/d6+2w/d4+1m
+
+Hange: 10/20/80
+
+Hide: +2
+
+Clip/charge Size: 12 rounds
+Clip/charge Cost: %60
+
+Skill: Modern Hanged Weapons-pistol
+
+s ~ = T,
+
+=\ 7S S O
+
+One of the finest 11mm pistals on the market, the Soze
+Hammer 5 is an unusually steady and accurate heavy
+pistol. Its a little large to fit comfortably in many handgun
+holsters, but many enthusiasts think that the weapon's
+legendary accuracy is worth the extra cost and trouble.
+Numerous models of “standard” 11mm pistols exist, gen-
+erally priced around #800 for a new gun.
+
+K-SAT 100 9MM Zero-G PisToL
+Karadnya-Brusilev Industries
+Availability: Common —
+Cost: #400 2ec
+Mass: 1 kg
+Length: 22 cm
+Payload: 9mm bullet
+Accuracy: 0
+Actions: 3
+Mode: P
+Type/Firepower: HI/0
+Damage: d4+1w/d6+1w/ddm &
+
+Hange: 4/10/40
+
+Hide: +3
+
+Clip/charge Size: 15 rounds
+Clip/charge Cost: $50
+
+Skill: Modern Ranged Weapons-pistol
+
+The Karadnya is a vintage design that's been around for
+more than fifty years. A muzzle brake and recail cylinder
+surrounding the weapon's action make it virtually recoil-
+free. Although its low muzzle velocity limits its range, the
+K-SAT reduces any penalties for firing in zero-g condi-
+tions by 1 step. Today, energy weapons such as the laser
+pistol are beginning to replace the old zero-g firearms.
+
+d 394
+
+I
+
+0
+
+c
+
+J |
+

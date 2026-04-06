@@ -1,0 +1,106 @@
+(]
+[==
+[
+—
+=
+oo
+=
+=
+L=
+
+=
+
+C. Vidcam. Simply an improved version of the PL 5
+video camera, the Gravity Age version of this device
+records straight to a 3D disk that can be played in any
+vidviewer, computer, or data slate. The model described
+here is a light shoulder-carried version with a back-carry
+sling included; the user can let the camera hang over his
+shoulder blade when he's not shooting.
+
+COMPUTERS
+
+Al Systems CSA891081
+
+Class: Computers
+Availahility: Restricted
+Cost: (A) $15,000; (B) $3,500; (C) 4,000+
+Mass: (A) 100 g; (C) 2 kg
+Dim: (A) 8 cm X 5 cm' X4 mm
+
+(C) 100 cm x B cm X 2 cm
+
+A. Al Board. An artificial intelligence requires some
+very specialized hardware. The ‘Al board is a computer
+card that allows a mainframe of Good or better quality to
+support a true artificial intelligence. (The Al program is
+sold separately; refer to Chapter 10 of the ALTeRNITY
+Player’s Handbook.) When an Al is loaded onto a system,
+all of the system’s available active memory slots are
+filled—but the Al can freely use any programs in the com-
+
+puter's storage memory just as a human character might
+employ her own skills.
+
+B. Al Emulator Program. Artificial intelligence is
+extremely expensive, but the Al emulator is a good com-
+promise. Its not a true Al, but a very sophisticated inter-
+face that relies on a library of programmed responses to
+simulate an independent personality and consciousness.
+The Al emulator requires 4 slots of active memory, but it
+provides a —1 step bonus to any other programs a hero
+wants to run on the machine due to its user-friendly inter-
+face and aggressive problem-solving features.
+
+C. Memory Harness. Most Als are tied to their home
+system; unlike a human character, an Al can't get up and
+walk around to investigate situations in person. The
+memary harness is a portable computer system equiva-
+lent to a computer gauntlet of similar quality—a Good
+memory harness, for instance, has the same number of
+active memary slots and the same functions as a Good
+computer gauntlet. In addition, the memory harness is
+equipped with special fuzzy-logic banks to contain a
+working echo of a larger artificial intelligence. Basic audio
+and optic sensors, along with datastream-capable comm
+gear, allow the Al to stay in touch with the wearer of the
+harness.
+
+An Al maintains its normal personality and functions
+while downloaded into a memory harness, but it usually
+operates at a penalty: +3 steps for a Marginal (¥4,000)
+harness, +2 for an Ordinary (¥5,000) harness, +1 for a
+Good (%6,000), and no penalty for an Amazing (¥8,000)
+harness. (The Ability Scores for an Al are cut in half,
+rounded up, when the Al is loaded into a memory har-
+ness; see Chapter 10 of the ALTERNITY Player’s
+Handbook)
+
+BusiNEss SYsTEMs CSB390712
+
+Class: Computers
+
+Availability: Controlled
+
+Cost: #1,500+ (see helow)
+
+Mass: (A) 6 kg; (B) 500 g
+
+Dim: (A) 40 cm X 30 cm X 15 cm
+(B)20 cm X 15em X 5 cm
+
+A. Mainframe. This powerful computer can handle
+almost any business task, from high-end data manage-
+ment and research applications to inventory or payroll
+confrol. Many starships use a modified mainframe as a
+computer core. The mainframe comes in both tower and
+desktop designs, with an integrated high-definition vid-
+screen that stows in the casing when not in use. Most
+mainframes include a 3D drive, an indelible drive back-
+up, and a datastream jack for connection to comm sys-
+tems.
+
+The cost and capacity of a mainframe varies with the
+quality of the machine:
+
+e

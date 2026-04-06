@@ -1,0 +1,137 @@
+SURVEILLANCE GEAR
+SEC990765
+
+Class: Sensors
+
+Availahility: Military
+
+Cost: (A, D, E, F) ¥250; (B, C) ¥600
+
+Mass: (A E, F) 20 g; (B, D) 100 g; (C) 500 g
+
+Dim: (A, E,F) Smm X 5mm X 2 mm
+(B,D)Sem X 3cm X 2 cm
+
+A Bug. This is a tiny, easily concealed audio pickup.
+Bugs must be attached to either transmitters or recorders
+in order to convey the information they receive. Typically,
+the bug is directly connected to a transmitter, or feeds to
+a hidden recorder by means of a wire lead. Bugs can pick
+up normal conversation at a range of 20 meters in rooms
+with typical background noise.
+
+B. Microcam. This unit is a tiny vidcam that can cap-
+ture both audio and visual feed. Like the bug, the micro-
+cam must feed to either a transmitter or a recorder in
+order for its information to be recovered. Microcams can
+also film through tiny fiber-optic tubes dozens of meters
+long, allowing the user to reduce the camera’s “footprint”
+in the surveillance area to the end of a wire.
+
+C. Laser Microphone. This mike measures the micro-
+scopic displacement of a window pane caused by con-
+versation in the room beyond, picking up anything spo-
+ken inside. The laser mike has a range of 250 meters,
+and can even record conversation across an intervening
+stretch of vacuum.
+
+D. Recorder. This tiny device records the feed of a bug
+or a microcam onto @ miniature 30 crystal for later
+recovery and play. Since recorders don't actively trans-
+mit, they're less likely to be found in antibug sweeps, but
+the user has to figure out a means to get to the informa-
+tion.
+
+E. Transmitter. The other option for a bug or a micro-
+cam is to simply relay its findings by low-powered radio
+transmissions on a continual basis. The transmitter is eas-
+ier to use, but security devices are more likely to pick up
+its signals than a recorder’s operation. The transmitter
+has an effective range of 200 meters.
+
+F. Trace. The tracer device is a tiny radio transmitter
+that emits a homing signal. Concealed on a vehicle, in
+luggage, or even on a target’s clothes, it can be detected
+by a signal tracker (see the next item) at ranges of up to
+30 km. Traces can be set to begin transmitting immedi-
+ately, after a certain time delay, or when a specific inter-
+rogatory signal is received.
+
+Tracker STR344070
+
+Class: Sensors
+Availability: Controlled
+Cost: (A) ¥250; (B) #325
+
+Mass: 700 g
+Dim: 18 cm X 6 cm X 4 cm
+
+A Signal Tracker. A trace is useless without a spe-
+cialized signal tracker to home in on its transmission. The
+tracker is @ sensitive radio receiver with two separate
+antenna elements; by comparing the signal between the
+two receptors, it can determine the direction and approx-
+imate strength of the selected signal. The signal tracker
+provides a -3 step bonus to the user's Investigate—track
+skill checks to follow an active trace, or (optionally)
+allows the user to track with his System Operation-sen-
+sors skill at a -1 step bonus. The signal tracker can also
+be coupled to an EM detector to determine the precise ori-
+gin of an unknown signal.
+
+B. Sonic Tracker. The scout’s best friend, the sonic
+tracker detects motion in the immediate vicinity by mea-
+suring subtle variations in air pressure. The tracker
+negates any Awareness check penalties caused by poor
+visihility, dense ground cover, or cluttered terrain, making
+it more difficult to surprise the user. In addition, in open
+terrain, the tracker provides a -2 step bonus to the user’s
+Awareness checks. It is more effective against large, fast-
+moving targets than small or stationary ones; apply a -1
+step bonus to the user's skill checks for large or fast crea-
+tures, and a +1 step penalty for small or slow ones.
+
+Vibcam SRDI100661
+
+Class: Sensors
+
+Availability: Common
+
+Cost: (A) ¥1,650; (B) $800; (C) $350
+
+Mass: (A) 1 kg; (B) 200 g; (C) 1 kg
+
+Dim: (A, C) 25cm X 6 cm X 4 cm
+(B) 12 cm X 4 cm X 3 cm
+
+A Dual Holocam. One of the initial stumbling blocks in
+public acceptance of holophotography was the require-
+ment for two separate holorecorders to capture a single
+scene. The dual holocam changes that. This recorder fea-
+tures a light, boom-mounted repeater lens that, at maxi-
+mum extension, sits 1.7 meters from the camera proper.
+One camera operator working with a dual holocam can
+focus on objects up to 25 meters distant and record in
+holographic mode. Objects more than 25 meters distant
+are too far for the dual holocam’s 1.7 meter baseline, and
+the operator must detach the repeater lens and position it
+by hand in order to capture holographic images. The dual
+holocam’s extension boom folds into a compact fairing
+with the rest of the camera, taking up no more space than
+a standard shoulder-mounted vidcam.
+
+B. Minicam. The smallest commercially available
+video recorder, the minicam can be mounted to a helmet,
+a bell, or held in the palm. Like the other vidcams
+described here, it records to a standard 3D crystal.
+
+3
+
+]
+m
+=
+I ¥xd
+—]
+==}
+o
+
