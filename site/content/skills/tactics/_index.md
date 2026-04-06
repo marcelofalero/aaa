@@ -21,7 +21,8 @@ A successful use of the skill provides a penalty to the opponent's next skill ch
 
 # Specialty Skills
 
-## Infantry Tactics (INT)
+## Infantry Tactics
+### (INT)
 
 The specialty skill covers battlefield strategies when the main component of the battle is individual troops.
 
@@ -29,7 +30,8 @@ The specialty skill covers battlefield strategies when the main component of the
 
 ---
 
-## Space Tactics (INT)
+## Space Tactics
+### (INT)
 
 Battlefield strategies involving combat between spaceships.
 
@@ -37,7 +39,8 @@ Battlefield strategies involving combat between spaceships.
 
 ---
 
-## Vehicle Tactics (INT)
+## Vehicle Tactics
+### (INT)
 
 Battlefield strategies involving combat where vehicles other than starships (air, land, or water) are the main component.
 

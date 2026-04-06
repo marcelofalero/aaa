@@ -13,7 +13,7 @@ Estás definido por un único conflicto muy publicitado. Ya fueras un piloto as,
 ## Especialidades Favorecidas:
 *   [Liderazgo-Inspirar](/skills/leadership/#inspire)
 *   [Resistencia-Aguante](/skills/stamina/#endurance)
-*   [Resolución-Resolución Mental](/skills/resolve-con/#mental-resolve)
+*   [Resolución-Resolución Mental](/skills/resolve-con/#firmeza-mental)
 
 ## Perks Favorecidos:
 *   [Celebridad](/perks_flaws/#celebrity)

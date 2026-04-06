@@ -17,7 +17,8 @@ Un personaje con solo la habilidad amplia no puede tratar daños; se requieren l
 
 # Especialidades
 
-## Ciencias forenses (INT - Solo entrenamiento)
+## Ciencias forenses
+### (INT - Solo entrenamiento)
 
 *Esta habilidad no se puede usar sin entrenamiento.*
 
@@ -27,7 +28,8 @@ La ciencia forense es la aplicación del conocimiento médico y científico a pr
 
 ---
 
-## Conocimiento médico (INT - Solo entrenamiento)
+## Conocimiento médico
+### (INT - Solo entrenamiento)
 
 *Esta habilidad no se puede usar sin entrenamiento.*
 
@@ -37,7 +39,8 @@ Esta habilidad de especialidad representa la profunda comprensión académica y 
 
 ---
 
-## Psicología (INT - Solo entrenamiento)
+## Psicología
+### (INT - Solo entrenamiento)
 
 *Esta habilidad no se puede usar sin entrenamiento.*
 
@@ -47,7 +50,8 @@ La psicología es el estudio de la mente y el comportamiento. Puede usarse para 
 
 ---
 
-## Cirugía (INT - Solo entrenamiento)
+## Cirugía
+### (INT - Solo entrenamiento)
 
 *Esta habilidad no se puede usar sin entrenamiento.*
 
@@ -57,7 +61,8 @@ La cirugía implica el tratamiento de lesiones o trastornos del cuerpo mediante 
 
 ---
 
-## Tratamiento (INT - Solo entrenamiento)
+## Tratamiento
+### (INT - Solo entrenamiento)
 
 *Esta habilidad no se puede usar sin entrenamiento.*
 
@@ -73,7 +78,8 @@ La especialidad de tratamiento puede utilizarse para todas las tareas que cubren
 
 ---
 
-## Xenomedicina [Específica] (INT - Solo entrenamiento)
+## Xenomedicina [Específica]
+### (INT - Solo entrenamiento)
 
 *Esta habilidad no se puede usar sin entrenamiento.*
 

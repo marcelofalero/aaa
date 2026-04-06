@@ -14,7 +14,8 @@ Skill checks made to determine if a character knows a certain piece of technical
 
 # Specialty Skills
 
-## Invention (INT - Trained Only)
+## Invention
+### (INT - Trained Only)
 
 *This skill can't be used untrained.*
 
@@ -26,7 +27,8 @@ Using this skill requires time; Invention checks are always complex skill checks
 
 ---
 
-## Juryrig (INT - Trained Only)
+## Juryrig
+### (INT - Trained Only)
 
 *This skill can't be used untrained.*
 
@@ -46,7 +48,8 @@ The amount of difficulty added to the full repairs depends on the result of the 
 
 ---
 
-## Repair (INT - Trained Only)
+## Repair
+### (INT - Trained Only)
 
 *This skill can't be used untrained.*
 
@@ -61,7 +64,8 @@ Any use of the repair skill requires a complex skill check and takes a period of
 
 ---
 
-## Technical Knowledge (INT - Trained Only)
+## Technical Knowledge
+### (INT - Trained Only)
 
 *This skill can't be used untrained.*
 

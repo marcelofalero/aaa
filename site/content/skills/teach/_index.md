@@ -34,7 +34,8 @@ The benefit of a teacher depends on the result of the teacher's skill check:
 
 # Specialty Skills
 
-## Teach, Specific Field (WIL - Trained Only)
+## Teach, Specific Field
+### (WIL - Trained Only)
 
 *This skill can’t be used untrained.*
 

@@ -30,13 +30,15 @@ A few direct-fire heavy weapons (as well as some rifles and all submachine guns)
 
 # Specialty Skills
 
-## Direct Fire (STR)
+## Direct Fire
+### (STR)
 
 This specialty skill allows a character to improve his proficiency with direct-fire heavy weapons. These weapons work just like normal firearms, requiring the user to aim them at a target. Direct-fire heavy weapons include heavy-caliber firearms, plasma guns, and raiders.
 
 ---
 
-## Indirect Fire (STR)
+## Indirect Fire
+### (STR)
 
 This specialty skill allows a character to improve his proficiency with indirect-fire heavy weapons. These weapons can fire over or around obstacles; they deliver an area effect attack instead of an attack against a specific target. Indirect-fire heavy weapons include grenade launchers, rocket launchers, shoulder-fired missiles, and mortars.
 

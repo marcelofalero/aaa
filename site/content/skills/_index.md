@@ -27,7 +27,8 @@ For skills that require specialized knowledge or training is recommended that th
 
 ## Skill Checks and Situation Dice
 
-A skill check is used to determine the outcome of an action directly related to that skill. To make a skill check, a player rolls a d20 (the control die) plus a situation die that varies according to the difficulty of what's being attempted. **The check succeeds if the result of the dice roll is equal to or less than the character’s skill score.**
+A skill check is used to determine the outcome of an action directly related to that skill. To make a skill check, a player rolls a d20
+### (the control die) plus a situation die that varies according to the difficulty of what's being attempted. **The check succeeds if the result of the dice roll is equal to or less than the character’s skill score.**
 
 **The base situation die for all broad skills is +d4**, and **the base situation die for all specialty skills is +d0**. The situation die for any particular skill check may be modified by other factors, as specified in a skill description or as directed by the Gamemaster.
 
@@ -122,64 +123,4 @@ Sometimes an action your character attempts is not directly related to a specifi
 
 This table provides a comprehensive list of all available skills, grouped by their governing attribute. It includes the cost for broad skills and specialty skills, as well as the profession codes for favored skills.
 
-{{< json-table "skills" >}}
-
-**Profession (Pr.) Codes:** `C`: Combat Spec | `F`: Free Agent | `T`: Tech Op | `—`: Open.
-
----
-
-## Detailed Skill Categories
-
-For in-depth information on each broad skill and its specialties, choose a category below:
-
-### Combat
-- [Armor Operation](/skills/armor-operation/)
-- [Heavy Weapons](/skills/heavy-weapons/)
-- [Melee Combat](/skills/melee-combat/)
-- [Modern Ranged Weapons](/skills/modern-ranged-weapons/)
-- [Primitive Ranged Weapons](/skills/primitive-ranged-weapons/)
-- [Tactics](/skills/tactics/)
-- [Unarmed Attack](/skills/unarmed-attack/)
-
-### Physical & Mental
-- [Acrobatics](/skills/acrobatics/)
-- [Animal Handling](/skills/animal-handling/)
-- [Athletics](/skills/athletics/)
-- [Awareness](/skills/awareness/)
-- [Covert Ops](/skills/covert-ops/)
-- [Creativity](/skills/creativity/)
-- [Investigate](/skills/investigate/)
-- [Resolve](/skills/resolve/)
-- [Stamina](/skills/stamina/)
-- [Street Smart](/skills/street-smart/)
-- [Survival](/skills/survival/)
-
-### Social
-- [Administration](/skills/administration/)
-- [Business](/skills/business/)
-- [Culture](/skills/culture/)
-- [Deception](/skills/deception/)
-- [Entertainment](/skills/entertainment/)
-- [Interaction](/skills/interaction/)
-- [Leadership](/skills/leadership/)
-- [Teach](/skills/teach/)
-
-### Technical
-- [Computer Science](/skills/computer-science/)
-- [Demolitions](/skills/demolitions/)
-- [Knowledge](/skills/knowledge/)
-- [Life Science](/skills/life-science/)
-- [Medical Science](/skills/medical-science/)
-- [Navigation](/skills/navigation/)
-- [Physical Science](/skills/physical-science/)
-- [Security](/skills/security/)
-- [System Operation](/skills/system-operation/)
-- [Technical Science](/skills/technical-science/)
-- [Vehicle Operation](/skills/vehicle-operation/)
-
-### Psionics
-- [Biokinesis](/core-mechanics/psionics/biokinesis/)
-- [ESP](/core-mechanics/psionics/esp/)
-- [Psychoportation](/core-mechanics/psionics/psychoportation/)
-- [Telekinesis](/core-mechanics/psionics/telekinesis/)
-- [Telepathy](/core-mechanics/psionics/telepathy/)
+{{< json-table data="skills" hide="pr" >}}

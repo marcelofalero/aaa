@@ -17,7 +17,8 @@ La complejidad de un sistema se relaciona con el tiempo que se tarda en atravesa
 
 # Habilidades de Especialidad
 
-## Protocolos de Protección (INT)
+## Protocolos de Protección
+### (INT)
 
 Esta habilidad representa el entrenamiento de un personaje en procedimientos de protección de todo tipo. Tiene dos usos principales:
 
@@ -50,7 +51,8 @@ La tirada de análisis se ve modificada por lo bien que esté asegurada el área
 
 ---
 
-## Dispositivos de Seguridad (INT)
+## Dispositivos de Seguridad
+### (INT)
 
 Usando esta habilidad, un personaje puede intentar eludir todo tipo de seguridad mecánica o electrónica. Esto incluye desde las tradicionales cerraduras de pernos y cajas fuertes mecánicas (ganzuado) hasta sensores de movimiento de alta tecnología, cables trampa y cierres magnéticos electrónicos (maglocks). También se usa para colocar trampas, tanto de naturaleza electrónica como mecánica.
 

@@ -15,7 +15,8 @@ It is used to defend against mental stress or attacks, to stand up to physical d
 
 # Specialty Skills
 
-## Mental Resolve (WIL)
+## Mental Resolve
+### (WIL)
 
 
 This specialty skill is used to determine a character's ability to cope with emotional or mental stress of all kinds. The higher the rank, the more resistant he is to emotional trauma, fear, panic, madness, insanity, mind control techniques, and mental powers.
@@ -35,7 +36,8 @@ When a character is confronted with debilitating effects, he can make a Mental R
 
 ---
 
-## Physical Resolve (WIL)
+## Physical Resolve
+### (WIL)
 
 
 Physical Resolve is used to determine a character's ability to cope with physical trauma of all kinds. It represents a character's determination to resist physical torture, to press on though tired or in great pain, and to bounce back from physical damage.

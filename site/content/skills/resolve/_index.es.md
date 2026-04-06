@@ -14,7 +14,8 @@ Esta habilidad amplia representa la fuerza de voluntad interna de un personaje. 
 
 # Habilidades de Especialidad
 
-## Firmeza Mental (WIL)
+## Firmeza Mental
+### (WIL)
 
 La Firmeza Mental representa la capacidad de un personaje para lidiar con el estrés emocional, psicológico o de otro mundo. Se utiliza para resistir efectos que alteran la mente, mantener la concentración bajo una presión extrema o soportar interrogatorios psicológicos.
 
@@ -30,7 +31,8 @@ La Firmeza Mental representa la capacidad de un personaje para lidiar con el est
 
 ---
 
-## Firmeza Física (WIL)
+## Firmeza Física
+### (WIL)
 
 La Firmeza Física permite a un personaje llevar su cuerpo más allá de sus límites normales, lidiando con el trauma y la fatiga a través de la pura fuerza de voluntad. Se utiliza para ignorar el choque inicial de una lesión o para retrasar la aparición del agotamiento.
 

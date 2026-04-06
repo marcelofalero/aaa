@@ -11,7 +11,8 @@ This broad skill provides a character with the abilities of a natural athlete—
 
 ## Specialty Skills
 
-### Climb (STR)
+### Climb
+### (STR)
 
 
 This specialty skill allows a character to scale walls, ascend mountains, or otherwise climb up or over obstacles.

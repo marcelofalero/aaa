@@ -93,3 +93,50 @@
 .close-modal:hover {
   color: var(--accent-cyan);
 }
+
+/* Interactive Table Overrides */
+.interactive-table td a,
+.interactive-table td a:hover,
+.data-row td a,
+.data-row td a:hover {
+  border-bottom: none !important;
+  text-decoration: none !important;
+  box-shadow: none !important;
+}
+
+/* Responsive Heading Fixes */
+@media (max-width: 600px) {
+  html, body, .scifi-body {
+    font-size: 17px !important; /* Slightly smaller base for mobile */
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+  hyphens: auto;
+  max-width: 100%;
+}
+
+h1 {
+  display: block !important;
+  font-size: clamp(1.4rem, 7vw, 2rem) !important;
+  line-height: 1.15;
+}
+
+h2 {
+  font-size: clamp(1.1rem, 5vw, 1.6rem) !important;
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: clamp(0.95rem, 4vw, 1.2rem) !important;
+  line-height: 1.2;
+  text-transform: none !important; /* Attribute subtitles look better in mixed case */
+  opacity: 0.85; /* Subtle subtitle feel */
+}
+
+.table-wrapper {
+  overflow-x: auto !important;
+}

@@ -18,13 +18,15 @@ In addition, completing a complex skill check of Good complexity indicates that 
 
 ---
 
-## Disarm (INT)
+## Disarm
+### (INT)
 
 The disarm skill lets a character attempt to render bombs, mines, and other demolition packages inoperative before they explode. A character does not need to make a skill check to disarm his own work or any common explosives. A skill check is required when time is of the essence, if the explosive is of unusual make, or if it has been rigged with security devices or booby traps. Except in the very simplest of cases, a complex skill check (see page 62) is involved.
 
 ---
 
-## Scratch-Built Explosives (INT - Trained Only)
+## Scratch-Built Explosives
+### (INT - Trained Only)
 
 *This skill can't be used untrained.*
 
@@ -47,7 +49,8 @@ A skill check is then made to determine the degree of success, which is directly
 
 ---
 
-## Set Explosives (INT)
+## Set Explosives
+### (INT)
 
 This specialty skill allows a character to improve his ability to set manufactured explosive charges. See the description of the Demolitions broad skill for information on how this skill is employed.
 

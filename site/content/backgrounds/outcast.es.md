@@ -11,11 +11,11 @@ Vienes de un lugar donde la tecnología es magia y la supervivencia es la única
 *   Ninguna.
 
 ## Especialidades Favorecidas:
-*   [Supervivencia-Entrenamiento de Supervivencia](/skills/survival/#survival-training)
-*   [Atletismo-Escalar](/skills/athletics/#climb)
-*   [Atletismo-Lanzar](/skills/athletics/#throw)
-*   [Conciencia-Percepción](/skills/awareness/#perception)
-*   [Operaciones Encubiertas-Sigilo](/skills/covert-ops/#stealth)
+*   [Supervivencia-Entrenamiento de Supervivencia](/skills/survival/#entrenamiento-en-supervivencia)
+*   [Atletismo-Escalar](/skills/athletics/#escalar)
+*   [Atletismo-Lanzar](/skills/athletics/#lanzar)
+*   [Conciencia-Percepción](/skills/awareness/#percepcion)
+*   [Operaciones Encubiertas-Sigilo](/skills/covert-ops/#sigilo)
 
 ## Perks Favorecidos:
 *   Ninguna.

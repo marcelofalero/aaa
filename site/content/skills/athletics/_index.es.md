@@ -12,7 +12,8 @@ Esta habilidad amplia proporciona a un personaje las capacidades de un atleta na
 
 # Habilidades de Especialidad
 
-## Escalar (STR)
+## Escalar
+### (STR)
 
 Esta habilidad de especialidad permite a un personaje escalar muros, ascender montañas o trepar por encima de obstáculos.
 
@@ -29,7 +30,8 @@ Si un personaje obtiene un Fallo Crítico en una comprobación de escalar, pierd
 
 ---
 
-## Saltar (STR)
+## Saltar
+### (STR)
 
 Con la habilidad de saltar, un personaje puede intentar saltar obstáculos realizando un salto horizontal (en carrera o desde parado) o un salto vertical.
 
@@ -47,7 +49,8 @@ En cualquier intento de salto, un resultado de Fallo Crítico indica que el pers
 
 ---
 
-## Nadar (CON)
+## Nadar
+### (CON)
 
 La habilidad de especialidad de Nadar representa la capacidad de un personaje para moverse a través del agua u otros entornos líquidos sin hundirse ni ahogarse.
 
@@ -55,7 +58,8 @@ La habilidad de especialidad de Nadar representa la capacidad de un personaje pa
 
 ---
 
-## Lanzar (STR)
+## Lanzar
+### (STR)
 
 Con la habilidad de lanzar, un personaje puede arrojar con precisión pelotas, dardos, piedras, cuchillos arrojadizos, granadas y otros objetos pequeños a un objetivo específico.
 

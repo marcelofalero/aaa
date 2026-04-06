@@ -12,7 +12,8 @@ Esta habilidad amplia representa la formación de un personaje en las ciencias f
 
 # Especialidades
 
-## Astronomía (INT - Solo entrenamiento)
+## Astronomía
+### (INT - Solo entrenamiento)
 
 *Esta habilidad no se puede usar sin entrenamiento.*
 
@@ -22,7 +23,8 @@ La astronomía es el estudio de los objetos celestes y los fenómenos que se ori
 
 ---
 
-## Química (INT - Solo entrenamiento)
+## Química
+### (INT - Solo entrenamiento)
 
 *Esta habilidad no se puede usar sin entrenamiento.*
 
@@ -32,7 +34,8 @@ La química es el estudio de la materia, sus propiedades y cómo y por qué las 
 
 ---
 
-## Física (INT - Solo entrenamiento)
+## Física
+### (INT - Solo entrenamiento)
 
 *Esta habilidad no se puede usar sin entrenamiento.*
 
@@ -42,7 +45,8 @@ La física es el estudio de la materia, la energía y las fuerzas fundamentales 
 
 ---
 
-## Planetología (INT - Solo entrenamiento)
+## Planetología
+### (INT - Solo entrenamiento)
 
 *Esta habilidad no se puede usar sin entrenamiento.*
 

@@ -14,7 +14,7 @@ La vida en las calles te enseñó a sobrevivir, pero te dejó con un nombre que 
 ## Especialidades Favorecidas:
 *   [Pillería-Conocimiento Callejero](/skills/street-smart/#street-knowledge)
 *   [Operaciones Encubiertas-Carterista](/skills/covert-ops/#pickpocket)
-*   [Operaciones Encubiertas-Sigilo](/skills/covert-ops/#stealth)
+*   [Operaciones Encubiertas-Sigilo](/skills/covert-ops/#sigilo)
 *   [Engaño-Soborno](/skills/deception/#bribe)
 *   [Seguridad-Dispositivos de Seguridad](/skills/security/#security-devices)
 

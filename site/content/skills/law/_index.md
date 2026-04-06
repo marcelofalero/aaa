@@ -24,14 +24,16 @@ When a legal battle is played out "off camera," the GM may call for Law skill ch
 
 # Specialty Skills
 
-## Court Procedures (INT)
+## Court Procedures
+### (INT)
 
 
 Lawyers, judges, and others use this skill to interact in a courtroom setting. This specialty is used to argue a case or point of view in an official proceeding.
 
 ---
 
-## Law Enforcement Procedures (INT)
+## Law Enforcement Procedures
+### (INT)
 
 
 Police officers, detectives, bounty hunters, and others use this skill to follow (or bend) legal law enforcement procedures. Topics covered include:
@@ -43,7 +45,8 @@ This specialty is also used to determine how "good" an arrest is (providing ammu
 
 ---
 
-## Law, Specific Skill (INT - Trained Only)
+## Law, Specific Skill
+### (INT - Trained Only)
 
 
 *This skill can't be used untrained.*
@@ -57,7 +60,8 @@ For each separate purchase of this specialty, a character selects a specific cul
 - **-4 bonus at Rank 12**
 ---
 
-## Psionic Law (INT - Trained Only)
+## Psionic Law
+### (INT - Trained Only)
 
 
 *This skill can't be used untrained.*

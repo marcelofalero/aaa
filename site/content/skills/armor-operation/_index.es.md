@@ -29,7 +29,8 @@ Para un personaje **no entrenado** en Operación de Armadura, siempre se aplica 
 - **Sistemas de Propulsión:** Manejo de jetpacks y motores subacuáticos.
 - **Escudos:** Uso táctico de escudos físicos y de energía.
 
-### Armadura de Combate (STR)
+### Armadura de Combate
+### (STR)
 
 Esta especialidad representa el nivel de maestría en el uso de la armadura, así como el entrenamiento especializado necesario para usar armaduras potenciadas, permitiendo al personaje obtener el máximo de cualquier armadura.
 

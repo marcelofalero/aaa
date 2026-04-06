@@ -11,9 +11,9 @@ Representas el nivel de élite de la formación institucional. No solo te uniste
 *   Ninguna.
 
 ## Especialidades Favorecidas:
-*   [Liderazgo-Mando](/skills/leadership/#command)
-*   [Tácticas-Tácticas de Infantería](/skills/tactics/#infantry-tactics)
-*   [Administración-Gestión](/skills/administration/#management)
+*   [Liderazgo-Mando](/skills/leadership/#mando)
+*   [Tácticas-Tácticas de Infantería](/skills/tactics/#tactica-infanteria)
+*   [Administración-Gestión](/skills/administration/#gestion)
 *   [Cultura-Etiqueta](/skills/culture/#etiquette-specific)
 
 ## Perks Favorecidos:
@@ -26,7 +26,7 @@ Representas el nivel de élite de la formación institucional. No solo te uniste
 Un uniforme de gala impecable, un arma de fuego de oficial estándar, un proyector de holomapa táctico y una credencial de autorización de bajo nivel.
 
 ## Habilidad Especial: Evaluación Táctica
-Tienes una bonificación de -1 paso a las tiradas de [Conciencia-Percepción](/skills/awareness/#perception) o [Tácticas-Tácticas de Infantería](/skills/tactics/#infantry-tactics) realizadas específicamente para evaluar la formación de combate de un oponente, sus debilidades defensivas o la calidad de su equipo antes de que comience un enfrentamiento.
+Tienes una bonificación de -1 paso a las tiradas de [Conciencia-Percepción](/skills/awareness/#percepcion) o [Tácticas-Tácticas de Infantería](/skills/tactics/#tactica-infanteria) realizadas específicamente para evaluar la formación de combate de un oponente, sus debilidades defensivas o la calidad de su equipo antes de que comience un enfrentamiento.
 
 ## Tendencias (Elige 2):
 *   **El Oficial al Mando:** Afirma tu rango o autoridad para tomar el control de una situación caótica, incluso cuando hacerlo te convierte en el objetivo principal de enemigos o del escrutinio social.

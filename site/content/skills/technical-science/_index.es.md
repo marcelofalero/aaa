@@ -14,7 +14,8 @@ Las comprobaciones de habilidad realizadas para determinar si un personaje conoc
 
 # Habilidades de Especialidad
 
-## Invención (INT - Solo Entrenados)
+## Invención
+### (INT - Solo Entrenados)
 
 *Esta habilidad no puede usarse sin entrenamiento.*
 
@@ -26,7 +27,8 @@ El uso de esta habilidad requiere tiempo; las comprobaciones de Invención son s
 
 ---
 
-## Remiendo [Juryrig] (INT - Solo Entrenados)
+## Remiendo [Juryrig]
+### (INT - Solo Entrenados)
 
 *Esta habilidad no puede usarse sin entrenamiento.*
 
@@ -46,7 +48,8 @@ La cantidad de dificultad añadida a las reparaciones completas depende del resu
 
 ---
 
-## Reparación (INT - Solo Entrenados)
+## Reparación
+### (INT - Solo Entrenados)
 
 *Esta habilidad no puede usarse sin entrenamiento.*
 
@@ -61,7 +64,8 @@ Cualquier uso de la habilidad de reparación requiere una comprobación de habil
 
 ---
 
-## Conocimiento Técnico (INT - Solo Entrenados)
+## Conocimiento Técnico
+### (INT - Solo Entrenados)
 
 *Esta habilidad no puede usarse sin entrenamiento.*
 

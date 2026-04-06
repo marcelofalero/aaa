@@ -13,7 +13,8 @@ La habilidad general de **Operaciones Encubiertas** (anteriormente Sigilo y Mani
 
 ---
 
-## Ocultar (DES)
+## Ocultar
+### (DES)
 
 Esta especialización representa la habilidad de esconder objetos de la vista o de los sensores. Mientras que **Sigilo** se usa para esconderse a uno mismo, **Ocultar** se usa para esconder objetos, como armas en el cuerpo, contrabando en un vehículo o un compartimento secreto en una habitación.
 
@@ -28,7 +29,8 @@ Un arma oculta se lleva en un lugar que normalmente no se registra o que no es f
 
 ---
 
-## Disfraz (DES)
+## Disfraz
+### (DES)
 
 Disfraz es la habilidad de cambiar tu apariencia para parecerte a otra persona o para mezclarte con la multitud.
 
@@ -38,7 +40,8 @@ El dado de situación de Disfraz de un héroe se modifica por el modificador de 
 
 ---
 
-## Abrir Cerraduras (DES - Solo Entrenado)
+## Abrir Cerraduras
+### (DES - Solo Entrenado)
 
 *Esta habilidad no se puede usar sin entrenamiento.*
 
@@ -48,7 +51,8 @@ La habilidad de abrir cerraduras es inútil contra una cerradura asistida por co
 
 ---
 
-## Carterear (DES - Solo Entrenado)
+## Carterear
+### (DES - Solo Entrenado)
 
 *Esta habilidad no se puede usar sin entrenamiento.*
 
@@ -64,7 +68,8 @@ Esta especialización permite a un héroe quitar objetos de una persona (o coloc
 
 ---
 
-## Sigilo (DES)
+## Sigilo
+### (DES)
 
 Esta especialización (también conocida como Sigilo Unificado) fusiona las técnicas de esconderse, moverse sigilosamente y seguir en la sombra en un único campo de experiencia. Es el arte de permanecer sin ser detectado mientras se está quieto o en movimiento.
 

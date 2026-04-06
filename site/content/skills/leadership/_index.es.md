@@ -20,7 +20,8 @@ La tirada de acción de un líder proporciona una bonificación a todas las acci
 ## Habilidades de Especialidad
 
 {{% list %}}
-- **Mando (Command):** Liderar a otros mediante la pura autoridad y capacidad de persuasión.
+- **Mando
+### (Command):** Liderar a otros mediante la pura autoridad y capacidad de persuasión.
 - **Inspirar:** Liderar mediante el ejemplo; puede usarse sobre objetivos Hostiles o Combativos.
 | Resultados | Descripción |
 | :--- | :--- |

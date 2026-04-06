@@ -11,9 +11,9 @@ Creciste a la sombra del servicio. No tienes los genes de "héroe", pero tienes 
 *   Ninguna.
 
 ## Especialidades Favorecidas:
-*   [Tácticas-Tácticas de Infantería](/skills/tactics/#infantry-tactics)
-*   [Resolución-Resolución Física](/skills/resolve-con/#physical-resolve)
-*   [Conocimiento-Primeros Auxilios](/skills/knowledge/#first-aid)
+*   [Tácticas-Tácticas de Infantería](/skills/tactics/#tactica-infanteria)
+*   [Resolución-Resolución Física](/skills/resolve-con/#firmeza-fisica)
+*   [Conocimiento-Primeros Auxilios](/skills/knowledge/#primeros-auxilios)
 
 ## Perks Favorecidos:
 *   Ninguna.
@@ -25,7 +25,7 @@ Creciste a la sombra del servicio. No tienes los genes de "héroe", pero tienes 
 Una pieza de equipo militar excedente (como una chaqueta de fatiga resistente o botas de combate), un botiquín básico de campo y un arma de fuego de dotación estándar.
 
 ## Habilidad Especial: Procedimiento Estándar
-Tienes una bonificación de -1 paso a las tiradas de [Resolución-Resolución Mental](/skills/resolve-con/#mental-resolve) o [Resolución-Resolución Física](/skills/resolve-con/#physical-resolve) durante situaciones de alto estrés, siempre y cuando sigas un plan u orden claro y preestablecido.
+Tienes una bonificación de -1 paso a las tiradas de [Resolución-Resolución Mental](/skills/resolve-con/#firmeza-mental) o [Resolución-Resolución Física](/skills/resolve-con/#firmeza-fisica) durante situaciones de alto estrés, siempre y cuando sigas un plan u orden claro y preestablecido.
 
 ## Tendencias (Elige 2):
 *   **El Creador de Reglas:** Insistir en una rutina "disciplinada" o conjunto de reglas dentro del grupo, causando fricción con los miembros más caóticos o de espíritu libre.

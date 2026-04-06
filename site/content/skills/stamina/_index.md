@@ -34,7 +34,8 @@ When a character engages in certain fatigue-causing activities, he must make a S
 
 # Specialty Skills
 
-## Endurance (CON)
+## Endurance
+### (CON)
 
 
 
@@ -44,7 +45,8 @@ As a character acquires ranks in the endurance skill, he becomes more able to wi
 
 ---
 
-## Resist Pain (CON - Trained Only)
+## Resist Pain
+### (CON - Trained Only)
 
 
 
