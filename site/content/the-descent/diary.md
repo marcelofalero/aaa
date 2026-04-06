@@ -42,7 +42,7 @@ What should have been a miraculous escape transformed into a slow physical and m
   {{< gallery-item src="/images/species/diary/heavy-heart-flir.png" cap="FLIR view of the ruins" >}}
 {{< /gallery >}}
 
-We made contact on a dry ice wasteland. Sensors indicate we are on the dark side of a tidally locked planet (that is, the star permanently faces the same side toward its sun).
+We made contact on a dry ice wasteland. As we landed on the planet, we could see frozen ruins through the pod windows. Sensors indicate we are on the dark side of a tidally locked planet (that is, the star permanently faces the same side toward its sun).
 
 Ruins of an ancient colony rise 468 meters from the capsule. The computer systems failed in their attempt to identify the planet, leaving us with more questions than certainties. In the distance, over the horizon, a constant orange glow is silhouetted.
 

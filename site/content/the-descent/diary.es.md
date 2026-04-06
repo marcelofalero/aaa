@@ -42,7 +42,7 @@ Lo que debió haber sido un escape milagroso se transformó en una lenta degrada
   {{< gallery-item src="/images/species/diary/heavy-heart-flir.png" cap="Vista FLIR de las ruinas" >}}
 {{< /gallery >}}
 
-Hicimos contacto sobre un páramo de hielo seco. Los sensores indican que nos encontramos en el lado oscuro de un planeta con acoplamiento de marea (es decir, el astro presenta permanentemente la misma cara hacia su sol).
+Hicimos contacto sobre un páramo de hielo seco. Al aterrizar en el planeta, pudimos ver ruinas congeladas a través de las ventanas de la cápsula. Los sensores indican que nos encontramos en el lado oscuro de un planeta con acoplamiento de marea (es decir, el astro presenta permanentemente la misma cara hacia su sol).
 
 A 468 metros de la cápsula se erigen las ruinas de una antigua colonia. Los sistemas informáticos fracasaron en su intento de identificar el planeta, dejándonos con más interrogantes que certezas. En la lejanía, sobre el horizonte, se recorta un resplandor naranja constante.
 
