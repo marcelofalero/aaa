@@ -45,7 +45,17 @@
       {{ range $index, $item := .items }}
       {{ $rowId := printf "desc-%s-%s-%s-%d" $file $key ($item.skill | urlize) $index }}
       {{ $tier := $item.tier | default 0 }}
-      <tr class="data-row tier-{{ $tier }} {{ if or $item.description (gt (len $hidden_fields) 0) }}has-description{{ end }}"
+      
+      {{/* Check if there are ANY displayable fields in expansion */}}
+      {{ $hasVisibleDetails := false }}
+      {{ if $item.description }}{{ $hasVisibleDetails = true }}{{ end }}
+      {{ if not $hasVisibleDetails }}
+        {{ range $field_key := $hidden_fields }}
+          {{ if and (ne $field_key "pr") (index $item $field_key) }}{{ $hasVisibleDetails = true }}{{ end }}
+        {{ end }}
+      {{ end }}
+
+      <tr class="data-row tier-{{ $tier }} {{ if $hasVisibleDetails }}has-description{{ end }}"
         data-target="{{ $rowId }}"
         data-tier="{{ $tier }}">
         {{ range $data.columns }}
@@ -62,7 +72,7 @@
         {{ end }}
         {{ end }}
       </tr>
-      {{ if or $item.description (gt (len $hidden_fields) 0) }}
+      {{ if $hasVisibleDetails }}
       <tr id="{{ $rowId }}" class="description-row" style="display: none;">
         <td colspan="{{ $colCount }}" class="pa3 bg-panel-alt silver i" style="border-top: none;">
           <div>

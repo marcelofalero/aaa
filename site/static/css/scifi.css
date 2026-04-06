@@ -276,7 +276,7 @@ td:first-child {
   text-align: left;
 }
 
-tr:not(.table-separator):not(.description-row):hover td {
+tr:not(.table-separator):not(.description-row).has-description:hover td {
   background-color: rgba(75, 181, 193, 0.15);
 }
 
@@ -434,8 +434,10 @@ tr.table-separator td {
 }
 
 /* Interactive Table Overrides */
-.data-row {
+.data-row.has-description {
   cursor: pointer;
+}
+.data-row {
   transition: background-color 0.2s;
 }
 
