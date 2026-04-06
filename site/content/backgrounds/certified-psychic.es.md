@@ -1,4 +1,6 @@
 +++
+type = "background"
+
 title = "El Psíquico Certificado"
 weight = 13
 +++
@@ -23,6 +25,8 @@ Una insignia/orden de árbitro oficial, un dispositivo de grabación portátil, 
 ## Habilidad Especial: Árbitro Autónomo
 Tu verificación psiónica es legalmente vinculante. Recibes una bonificación de -1 paso a las tiradas de [Interacción](/skills/interaction/) o [Ley](/skills/law/) al actuar como tercero neutral en negociaciones o al hacer valer tu derecho legal a verificar la veracidad de una declaración en el campo.
 
-## Tendencias:
-*   **La Verdad Absoluta:** Fuerza una verdad dura o peligrosa a la luz para mantener tu neutralidad absoluta, incluso cuando una mentira educada o un engaño habrían facilitado las cosas para la parte.
-*   **El Juez No Deseado:** Complica una situación actuando sobre un crimen o un secreto oscuro que obtuviste de la mente de alguien, usando tu autoridad autónoma para intervenir cuando no era tu lucha.
+## Tendencias (Elige 2):
+*   **La Verdad Absoluta:** Forzar una verdad dura o peligrosa a la luz para mantener tu neutralidad absoluta, incluso cuando una mentira cortés o engaño hubiera facilitado las cosas para el grupo.
+*   **El Juez no Deseado:** Complica una situación actuando sobre un crimen o secreto oscuro que has extraído de la mente de alguien, usando tu autoridad autónoma para intervenir cuando no era tu lucha.
+*   **El Agotamiento Psíquico:** Insistir en evitar una situación urgente o estresante para "recentrar tu mente" después de un sobreesfuerzo psíquico, causando retrasos críticos.
+*   **Sobrecarga Empática:** Centrarse obsesivamente en la angustia de un civil o en el recuerdo de una víctima, negándose a abandonarlos incluso en una zona de combate de alto riesgo.

@@ -1,4 +1,6 @@
 +++
+type = "background"
+
 title = "El Denunciante"
 weight = 15
 +++
@@ -26,6 +28,8 @@ Un equipo de micrograbación de alta gama, un pase de prensa oficial (o falsific
 ## Habilidad Especial: Extraoficial
 Recibes una bonificación de -1 paso a las tiradas de [Interacción-Entrevista](/skills/interaction/#interview) o [Pillería-Conocimiento Callejero](/skills/street-smart/#street-knowledge) al intentar sonsacar rumores, información clasificada o declaraciones no oficiales de una fuente reacia.
 
-## Tendencias:
-*   **La Exposición:** Prioriza documentar un crimen, una conspiración o un evento antes que detenerlo, poniéndote en peligro táctico para asegurar que el metraje o la historia sobrevivan.
-*   **La Pregunta Difícil:** Interroga o provoca agresivamente a un individuo poderoso en un entorno social, destruyendo el progreso diplomático para evaluar su reacción.
+## Tendencias (Elige 2):
+*   **La Exposición:** Priorizar documentar un crimen o conspiración sobre el detenerlo, arriesgándote para que la historia sobreviva.
+*   **La Pregunta Difícil:** Interrogar agresivamente a alguien poderoso en un entorno social, destruyendo el progreso diplomático.
+*   **El Buscador de Plazos:** Insistir en "un minuto más" en una escena hasta que la "historia completa" esté lista para enviarse, incluso si es necesaria una retirada inmediata.
+*   **La Pista Anónima:** Enviar una "pista" a un contacto sobre tu misión actual, alertando sin saberlo a los rastreadores.

@@ -1,4 +1,6 @@
 +++
+type = "background"
+
 title = "El Contacto"
 weight = 5
 +++
@@ -23,6 +25,8 @@ Un comunicador ilocalizable, un bolsillo lleno de diversas monedas o fichas de i
 ## Habilidad Especial: "Conozco a Alguien."
 Una vez por sesión, puedes localizar un objeto, personaje o pieza de información específica con una bonificación de -2 pasos, encontrándolo en la mitad del tiempo normal.
 
-## Tendencias:
-*   **El Negociador:** Resuelve un conflicto mediando un acuerdo que impulse la trama.
-*   **El Gestor de Activos:** Arriesga un objetivo para preservar un contacto útil o una pieza de equipo.
+## Tendencias (Elige 2):
+*   **El Negociador:** Insiste en resolver un conflicto mediante un complejo acuerdo en el que todos salgan ganando, incluso cuando una solución directa o contundente sería mucho más rápida.
+*   **El Gestor de Activos:** Arriesga un objetivo principal de la misión para proteger o recuperar una pieza de equipo "valiosa" pero no esencial o un contacto específico.
+*   **El Cobrador de Deudas:** Complica una negociación crítica al insistir en saldar una deuda personal antigua y no relacionada ahora mismo, creando fricción con una parte poderosa.
+*   **El Corredor de Sombras:** Inserta una cláusula secreta o acepta un "pago paralelo" de un tercero que solo te beneficia a ti, creando una complicación oculta para el grupo más adelante.

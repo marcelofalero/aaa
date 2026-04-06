@@ -1,4 +1,6 @@
 +++
+type = "background"
+
 title = "El Contrabandista"
 weight = 12
 +++
@@ -23,6 +25,8 @@ Un abrigo grande con bolsillos ocultos a prueba de sensores, un bláster de bols
 ## Habilidad Especial: Escondite del Contrabandista
 Recibes una bonificación de -1 paso a las tiradas de [Operaciones Encubiertas-Ocultar](/skills/covert-ops/#conceal) al esconder objetos, datos o personas de inspecciones físicas o barridos de sensores rutinarios.
 
-## Tendencias:
-*   **El Contrabandista:** Asume un riesgo narrativo o táctico para introducir algo ilegal o restringido en un área segura, incluso si la misión actual no lo requiere estrictamente.
-*   **El Quemador:** Desecha carga valiosa, abandona un trato lucrativo o rompe lazos con un contacto útil a la primera señal de escrutinio oficial para asegurar tu propia libertad.
+## Tendencias (Elige 2):
+*   **El Contrabandista:** Arriesgarte a colar algo ilegal o restringido en un área segura, incluso si la misión no lo requiere estrictamente.
+*   **El Quemador:** Desechar carga valiosa, abandonar un trato lucrativo o romper lazos con un contacto ante el primer signo de escrutinio oficial.
+*   **Charlatán:** Bombardear intencionalmente a un agente de aduanas con información irrelevante para confundirlo, lo cual podría ser contraproducente y causar una inspección completa.
+*   **Contacto Turbio:** Insistir en conocer a un contacto específico y poco fiable en persona en lugar de usar un buzón de entrega seguro, arriesgándote a una emboscada por los viejos tiempos.

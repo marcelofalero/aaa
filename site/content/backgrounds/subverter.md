@@ -1,4 +1,6 @@
 +++
+type = "background"
+
 title = "The Subverter"
 weight = 17
 +++
@@ -26,6 +28,8 @@ A portable signal-hijacker or high-yield spray tech, an encrypted data-drive ful
 ## Special Ability: Subliminal Messaging
 You have a -1 step bonus to [Leadership-Inspire](/skills/leadership/#inspire) or [Deception-Bluff](/skills/deception/#bluff) checks when you use your art to incite a crowd, cause a public distraction, or rapidly sway public opinion.
 
-## Tendencies:
-*   **The Calling Card:** Leave a recognizable piece of your art or propaganda at the scene of a mission, intentionally drawing attention to yourself and risking immediate discovery.
-*   **The Agitator:** Openly provoke authority figures or corporate security, using the resulting chaos to make a political point even if it jeopardizes the current operation.
+## Tendencies (Pick 2):
+*   **The Calling Card:** Leave a recognizable piece of your art or propaganda at the scene of a mission, intentionally risking discovery to make a statement.
+*   **The Agitator:** Openly provoke authority figures or security, using the resulting chaos to make a political point even if it jeopardizes the operation.
+*   **Public Martyr:** Choose to be "caught" or stay behind to deliver a final message or ensure a broadcast succeeds, rather than making a safe retreat.
+*   **Graffiti Artist:** Spend vital time tagging or hacking a high-security surface during a time-sensitive mission, alerting security to your location for the sake of your art.

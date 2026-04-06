@@ -1,4 +1,6 @@
 +++
+type = "background"
+
 title = "The Hacker"
 weight = 3
 +++
@@ -23,6 +25,8 @@ A high-end custom cyberdeck or illegal intrusion rig, a biometric spoofer, an en
 ## Special Ability: Backdoor Access
 You receive a -1 step bonus to [Computer Science-Hacking](/skills/computer-science/#hacking) or [Security-Security Devices](/skills/security/#security-devices) checks when attempting to bypass digital security, decrypt files, or spoof electronic access logs.
 
-## Tendencies:
-*   **The Digital Ghost:** Prioritize erasing your digital footprint or stealing secondary data over the physical safety or immediate tactical needs of the party.
+## Tendencies (Pick 2):
+*   **The Digital Ghost:** Prioritize erasing your digital footprint or stealing secondary, non-mission data over physical safety or immediate tactical needs.
 *   **The Curious Intruder:** Cannot resist poking into a secure system or locked file even when it has nothing to do with the current mission and risks triggering alarms.
+*   **The Digital Duelist:** Spend excessive time "punishing" a security program or rival hacker instead of just getting the data and logging out.
+*   **The Tech Elitist:** Overcomplicate a simple physical problem (like a mechanical door lock) by insisting on a "high-tech" hack rather than just using a simpler tool.

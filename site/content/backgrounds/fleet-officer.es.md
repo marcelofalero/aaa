@@ -1,4 +1,6 @@
 +++
+type = "background"
+
 title = "El Oficial de Flota"
 weight = 10
 +++
@@ -23,6 +25,8 @@ Un uniforme naval, un traje espacial personal (traje de vacío) diseñado para e
 ## Habilidad Especial: Intuición de Puente
 Tienes una bonificación de -1 paso a todas las tiradas de habilidad especializada de [Operación de Sistemas](/skills/system-operation/) mientras estás en el puente de una nave estelar, lo que representa tu profunda familiaridad con las interfaces estándar de la flota y los protocolos de emergencia.
 
-## Tendencias:
-*   **El Alma de la Nave:** Prioriza la integridad estructural y el mantenimiento a largo plazo de la nave sobre el equipo personal o los objetivos de la misión.
-*   **El Purista del Protocolo:** Insiste en seguir los protocolos estándar de comunicación y combate naval incluso cuando opera en la "naturaleza" o con tripulaciones civiles, lo que podría causar fricción social.
+## Tendencias (Elige 2):
+*   **El Alma de la Nave:** Prioriza la integridad estructural o la supervivencia de tu nave sobre el equipo personal, los objetivos en tierra o el orgullo militar.
+*   **El Purista del Protocolo:** Insiste en seguir los protocolos formales de comunicación o combate naval incluso cuando trabajas con tripulaciones civiles o en sistemas sin ley, causando fricción social.
+*   **Obsesivo de la Logística:** Causa retrasos críticos en operaciones urgentes al insistir en verificar cada detalle del manifiesto antes de acordar un plan de misión.
+*   **Mal del Vacío:** Tiene dificultades evidentes en entornos de alta gravedad o planetarios, insistiendo en controles ambientales complejos o en permanecer en órbita siempre que sea posible.

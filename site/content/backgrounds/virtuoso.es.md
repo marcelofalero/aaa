@@ -1,4 +1,6 @@
 +++
+type = "background"
+
 title = "El Virtuoso"
 weight = 16
 +++
@@ -26,6 +28,8 @@ Herramientas de creación personalizadas de alta gama (un holo-estilete a medida
 ## Habilidad Especial: Favor del Patrón y Catarsis
 Puedes aprovechar tu prestigio artístico para obtener acceso a eventos exclusivos o asegurar financiación. Recibes una bonificación de -1 paso a las tiradas de habilidad de [Interacción-Encanto](/skills/interaction/#charm) o [Cultura-Etiqueta](/skills/culture/#etiquette-specific) al tratar con patrones de la alta sociedad o entusiastas del arte (esta bonificación mejora a -2 pasos si posees la ventaja [Asquerosamente Rico](/perks_flaws/#filthy-rich)). Además, participar en tu arte proporciona alivio psicológico: si se utilizan las reglas opcionales de Estrés Persistente, una tirada exitosa de [Creatividad-Expresión Artística](/skills/creativity/#artistic-expression) otorga una bonificación de +1 (Ordinario), +2 (Bueno) o +3 (Asombroso) pasos a las proezas de Personalidad realizadas para resistir las penalizaciones por estrés.
 
-## Tendencias:
+## Tendencias (Elige 2):
 *   **El Esteta:** Elige un curso de acción basado puramente en su atractivo estético o estilo dramático en lugar de su solidez táctica o eficiencia.
-*   **La Diva:** Se niega a cooperar o transigir con el grupo hasta que se cumplan sus demandas específicas, a menudo insignificantes, con respecto a la comodidad o la integridad artística.
+*   **La Diva:** Le cuesta realizar sus habilidades o colaborar con el grupo hasta que se cumplan sus demandas específicas de comodidad o integridad artística.
+*   **Ego Frágil:** Sufre un error grave o retira su enfoque total si un aliado critica públicamente su trabajo o visión, creando brechas tácticas o sociales repentinas.
+*   **La Señal de Alta Sociedad:** Enviar una señal "artística" no autorizada a un rival o patrón al que intentas impresionar, alertando involuntariamente a los rastreadores.

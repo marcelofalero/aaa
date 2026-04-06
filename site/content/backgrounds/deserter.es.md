@@ -1,4 +1,8 @@
 +++
+type = "background"
+
+type = "background"
+
 title = "El Desertor"
 weight = 4
 +++
@@ -22,6 +26,8 @@ Un arma de grado militar (con números de serie limados), una tienda de campaña
 ## Habilidad Especial: Intuición de Refugio
 Tienes una bonificación de -1 paso para encontrar refugios improvisados, suministros del mercado negro o contactos comprensivos en territorio hostil.
 
-## Tendencias:
-*   **La Fuga Pragmática:** Abandona una causa cuando los riesgos se vuelven "inaceptables" para asegurar tu supervivencia.
-*   **La Mano Oculta:** Renuncia a la fama o la recompensa para asegurar que tu identidad permanezca sin descubrir.
+## Tendencias (Elige 2):
+*   **El Escape Pragmático:** Presiona para una retirada temprana o abandona una posición cuando los riesgos te resulten "inaceptables", sin importar la importancia de la misión.
+*   **La Mano Oculta:** Renuncia a la fama, a una recompensa oficial o al estatus para asegurar que tu identidad y tu pasado militar permanezcan ocultos.
+*   **El Veterano Desconfiado:** Cuestiona abierta y agresivamente la lealtad de un nuevo aliado o contacto, lo que puede alienar a una fuente crítica de información.
+*   **Reflejo del Campo de Batalla:** Reacciona exageradamente ante un ruido repentino o amenaza percibida en una zona de no combate, provocando una escena pública.

@@ -1,4 +1,6 @@
 +++
+type = "background"
+
 title = "The Academy Graduate"
 weight = 9
 +++
@@ -23,6 +25,8 @@ A pristine dress uniform, a standard-issue officer's sidearm, a tactical holomap
 ## Special Ability: Tactical Evaluation
 You have a -1 step bonus to [Awareness-Perception](/skills/awareness/#perception) or [Tactics-Infantry Tactics](/skills/tactics/#infantry-tactics) checks made specifically to evaluate an opponent's combat formation, defensive weaknesses, or equipment quality before an engagement begins.
 
-## Tendencies:
+## Tendencies (Pick 2):
 *   **The Officer in Charge:** Assert your rank or authority to take command of a chaotic situation, even when doing so makes you the primary target for enemies or social scrutiny.
-*   **The Strategist:** Refuse to deviate from a sophisticated or "correct" tactical plan even when a simpler, more "rugged" solution is available, prioritizing the doctrine you were taught.
+*   **The Strategist:** Struggle to deviate from a sophisticated or "correct" tactical plan even when a simpler, more "rugged" solution is available, prioritizing the doctrine you were taught.
+*   **The Institutionalist:** Struggle to trust or associate with "dishonorable" elements (criminals, pirates, or low-lifes), overcomplicating necessary black-market deals through obvious disdain.
+*   **The Drill Instructor:** Publicly and harshly criticize an ally's "sloppy" performance or equipment maintenance, creating immediate social tension or compromising a stealthy situation with your outburst.

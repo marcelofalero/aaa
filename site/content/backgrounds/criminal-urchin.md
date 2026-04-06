@@ -1,4 +1,6 @@
 +++
+type = "background"
+
 title = "The Criminal / Urchin"
 weight = 2
 +++
@@ -27,6 +29,8 @@ A well-used physical or electronic entry kit, a burner comm-link, a forged low-t
 ## Special Ability:
 None. (Your raw survival instincts are instead reflected mechanically by receiving a free broad skill to represent your foundational street upbringing).
 
-## Tendencies:
-*   **The Opportunist:** Take an unnecessary risk to secure a personal profit or an "angle."
-*   **The Paranoiac:** Compromise a plan to ensure you have a clear escape route.
+## Tendencies (Pick 2):
+*   **The Opportunist:** Take an unnecessary risk to secure a personal profit or an "angle" that wasn't part of the plan.
+*   **The Paranoiac:** Compromise a group plan or retreat early to ensure you have a clear, personal escape route at all times.
+*   **The Street Thief:** Steal a seemingly insignificant piece of personal property from a contact, risking the entire relationship for a petty "win."
+*   **Scrounger's Greed:** Waste time in a dangerous or crumbling area to strip "valuable" scrap or electronics from a wreck after the main objective is met.
