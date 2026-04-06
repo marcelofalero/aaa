@@ -43,16 +43,18 @@
         </td>
       </tr>
       {{ range $index, $item := .items }}
-      {{ $rowId := printf "desc-%s-%s-%s-%d" $file $key ($item.name | urlize) $index }}
-      <tr class="data-row {{ if or $item.description (gt (len $hidden_fields) 0) }}has-description{{ end }}"
-        data-target="{{ $rowId }}">
+      {{ $rowId := printf "desc-%s-%s-%s-%d" $file $key ($item.skill | urlize) $index }}
+      {{ $tier := $item.tier | default 0 }}
+      <tr class="data-row tier-{{ $tier }} {{ if or $item.description (gt (len $hidden_fields) 0) }}has-description{{ end }}"
+        data-target="{{ $rowId }}"
+        data-tier="{{ $tier }}">
         {{ range $data.columns }}
         {{ if and (not (in $hidden_fields .key)) (ne .key "description") }}
-        <td>
+        <td class="cell-{{ .key }}">
           {{ if .link }}
           <a href="#{{ $item.anchor }}">{{ index $item .key | safeHTML }}</a>
           {{ else if and (eq .key "skill") (index $item "skill_url") }}
-          <a href="{{ index $item " skill_url" }}">{{ index $item .key | safeHTML }}</a>
+          <a href="{{ index $item "skill_url" }}">{{ index $item .key | safeHTML }}</a>
           {{ else }}
           {{ index $item .key | safeHTML }}
           {{ end }}
@@ -66,6 +68,7 @@
           <div>
             <div class="mb2">
               {{ range $field_key := $hidden_fields }}
+              {{ if ne $field_key "pr" }} {{/* EXPLICITLY HIDE PR FROM EXPANSION */}}
               {{ $column_slice := where $data.columns "key" $field_key }}
               {{ if $column_slice }}
               {{ $column := index $column_slice 0 }}
@@ -75,6 +78,7 @@
                 <span class="neon-green mr2">{{ $column.name }}:</span>
                 <span class="silver">{{ $val }}</span>
               </div>
+              {{ end }}
               {{ end }}
               {{ end }}
               {{ end }}

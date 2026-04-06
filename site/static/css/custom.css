@@ -140,3 +140,33 @@ h3 {
 .table-wrapper {
   overflow-x: auto !important;
 }
+
+/* Agnostic 3-Tier Hierarchy Styling */
+.tier-1 {
+  background: rgba(75, 181, 193, 0.08) !important;
+  font-weight: 600;
+  border-top: 2px solid rgba(75, 181, 193, 0.15);
+}
+
+.tier-1 [class*="cell-"], .tier-1 td:first-child {
+  color: var(--accent-cyan) !important;
+  letter-spacing: 0.05em;
+}
+
+.tier-2 {
+  font-size: 0.95em;
+}
+
+.tier-2 [class*="cell-"]:first-child, .tier-2 td:first-child {
+  padding-left: 2.2rem !important;
+  position: relative;
+  text-align: left !important;
+}
+
+.tier-2 [class*="cell-"]:first-child::before, .tier-2 td:first-child::before {
+  content: "↳";
+  position: absolute;
+  left: 0.8rem;
+  color: var(--accent-cyan);
+  opacity: 0.6;
+}

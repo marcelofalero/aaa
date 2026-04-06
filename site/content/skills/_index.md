@@ -3,6 +3,7 @@ title = "Skills"
 description = "Comprehensive guide and database of all broad and specialty skills."
 weight = 6
 toc = true
+omit_automatic_list = true
 +++
 
 Skills are the heart of the AAA game system. Most of what a character is capable of doing—fighting an opponent, piloting a spacecraft, closing a big business deal, developing a vaccine for a deadly virus—is governed by what skills the character possesses and how accomplished he is at using those skills.

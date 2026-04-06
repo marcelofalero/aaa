@@ -3,6 +3,7 @@ title = "Habilidades"
 description = "Cómo hacer bien las cosas - Guía completa y base de datos de todas las habilidades amplias y de especialidad."
 weight = 6
 toc = true
+omit_automatic_list = true
 +++
 
 Las habilidades son el corazón del sistema de juego AAA. La mayor parte de lo que un personaje es capaz de hacer —luchar contra un oponente, pilotar una nave espacial, cerrar un gran acuerdo de negocios, desarrollar una vacuna para un virus mortal— se rige por las habilidades que posee el personaje y lo hábil que es utilizándolas.

@@ -22,7 +22,7 @@
 {{ end }}
 
 {{/* Specific for accordion expansion pattern */}}
-{{ $expand := .Get "expand" | default (.Get 2) | default "" }}
+{{ $expand := .Get "expand" | default (.Get 2) | default ".*" }}
 {{ $context := dict "Page" .Page "data" $data "file" $file "key" $key "hidden_fields" $hidden_fields "expand" $expand }}
 
 {{ partial "render-table.html" $context }}
