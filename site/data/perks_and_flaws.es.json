@@ -161,6 +161,13 @@
             "description": "Este beneficio proporciona al héroe una reputación conocida en todas partes. A diferencia del beneficio Celebridad, que indica una reacción positiva debido a la influencia de la Personalidad de un héroe, el beneficio Reputación ayuda al héroe al hacer que otros teman o se impresionen por sus supuestos logros. En términos de juego, este beneficio proporciona una bonificación de dado de situación cada vez que el héroe intenta usar ciertas habilidades de encuentro. El jugador y el director de juego deben determinar cuál es la reputación del héroe y a qué habilidades de encuentro proporciona una bonificación.<br><br>A medida que mejora el nivel de logro de un personaje, éste se vuelve más capaz de aprovechar su reputación: en el nivel 5, el dado de situación base para cualquier prueba de beneficio de reputación se convierte en -d4; en el nivel 10 pasa a ser -d6; y en el nivel 15 se convierte en -d8."
           },
           {
+            "name": "Enfoque en Habilidad de Especialidad (Habilidad)",
+            "cost": "5",
+            "ability": "—",
+            "type": "Especial",
+            "description": "Esta ventaja altera cómo se obtienen los beneficios de rango para una habilidad de especialidad específica. Un personaje con esta ventaja siempre está un beneficio de rango por delante en su habilidad elegida. Por ejemplo, si una habilidad ofrece beneficios en los rangos 2, 5 y 7, y el personaje tiene rango 3, ya disfruta de los beneficios de los rangos 2 y 5. Si luego aumenta la habilidad al rango 5, en su lugar obtiene el beneficio del rango 7. Si no quedan más beneficios por obtener, el personaje recibe una bonificación permanente de -1 paso a todas las tiradas con esa habilidad. No todos los beneficios de rango pueden obtenerse por adelantado; aquellos que están restringidos suelen estar marcados con una convención de bala hueca ○ en lugar de la estándar ⊗ o un encabezado de rango específico. Esta ventaja cuesta 5 puntos, requiere el rango de Experimentado (Seasoned), y se considera favorecida si la habilidad de especialidad elegida es favorecida por la profesión del personaje."
+          },
+          {
             "name": "Duro como las uñas",
             "cost": "4",
             "ability": "FUE",

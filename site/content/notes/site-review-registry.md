@@ -62,6 +62,7 @@ This registry tracks the review status of every granular element of the site. St
 | | Psionic Awareness | [PENDING] |
 | | Reflexes | [PENDING] |
 | | Reputation | [PENDING] |
+| | Specialty Skill Focus | [PENDING] |
 | | Tough as Nails | [PENDING] |
 | | Vigor | [PENDING] |
 | | Willpower | [PENDING] |
