@@ -1,0 +1,117 @@
+~3
+=
+
+BALLISTIC ARMOR
+
+BALLIsSTIC ARMOR
+
+Also known as battle armor, ballistic armor is descended
+from the bulletproof vests of the 20th century. It consists
+of light ceramic or cerametal plates sandwiched in a
+weave of carbonate fiber. These body armors offer better
+protection than CF alone, but battle vests and jackets
+cover a smaller area than assault gear or CF garments.
+Ballistic armor is common for police and light security
+details, as well as private citizens seeking a socially
+acceptable armor heavier than a CF coat.
+
+BobYGUARD BALLISTIC VEST
+
+Olsen Personal Defense Corp.
+Availability: Common
+Cost: #750
+Mass: 3 kg
+Composition: CF/cerametal
+Environmental Tolerance:
+Gravity: n/a
+Hadiation: n/a
+Atmosphere: n/a
+Pressure: n/a
+Heat: n/a
+Action Penalty: 0
+Toughness: Ordinary
+LI/HI/En: d6-1/d6/d6-2
+Hide: +3
+Effective Strength: n/a
+Skill: —
+
+The BodyGuard vest is one of the most popular personal
+armors available. It's significantly lighter and maore
+durahle than its predecessors, capable of stopping an
+11mm charge rifle round at point-blank range. It's only
+18mm thick at its heaviest, and fits snugly under most
+street clothes without any outward sign (although securi-
+ty services typically wear the ballistic vest over their uni-
+forms to deter armed resistance). The only drawback is
+the limited coverage of the vest-it offers no protection to
+the wearer's head or limbs.
+
+LANDSKNECHT 34
+BALLISTIC JACKET
+
+Dietterlich Industries
+Availability: Controlled
+Cost: $1,650
+Mass: 6 kg
+Composition: CF/cerametal
+Environmental Tolerance:
+Gravity: n/a
+Radiation: n/a
+Atmosphere: AD-A3 protected
+Pressure: PO-P3 protected
+
+Heat: H1-H3 protected
+Action Penalty: +1
+Toughness: Ordinary
+LI/HI/En: dB-1/d4+1/d4-1
+Hide: +1
+Effective Strength: n/a
+Skill: Armor Operation
+
+Heavier and mare extensive than the ballistic vest, a bat-
+tle jacket like the Landsknecht provides an excellent com-
+promise between mass, cost, and protective value. It can
+be awkward for people who aren't used to wearing body
+armar, but with minimal training anyone can get used to
+it. The Landsknecht is about the heaviest armor that could
+be worn in a rough-and-tumble spaceport without invit-
+ing unwelcome attention.
+
+The ballistic jacket includes a hood with a face seal and
+a vacuum mask for emergency operations in zero-atmos-
+phere situations, although it's not intended for open space.
+
+CARBONATE FIBER (CF)
+Boby ARMOR
+
+Carbon molecules are unique in their ability to form
+chains with virtually any physical properties desired.
+Carbonate fiber is an advanced armor weave in which
+nanoengineered palymers are used to create dense lay-
+ers of bulletproof cloth. Light and easy to conceal, CF
+armor has become the personal protection of choice for
+people who prefer armor that doesn't advertise the wear-
+er's defenses. Few organizations issue CF armor, but
+some light-duty security forces (shipboard security teams,
+technical experts, etc.) wear it
+
+HAaraMaki 100/200 CF Coar
+
+Koshimi Industries
+Availability: Common
+Cost: $800 (#500 short)
+Mass: 3 kg (2 kg shart)
+Composition: CF weave
+Environmental Tolerance:
+Gravity: n/a
+Radiation: n/a
+Atmosphere: n/a
+Pressure: n/a
+Heat: n/a
+Action Penalty: 0
+Toughness: Ordinary
+LI/HI/En (long): d4/d4/d6-2
+LI/HI/En (short): d4-1/d4-1/d6-3
+Hide: +3
+Effective Strength: n/a
+Skill: —

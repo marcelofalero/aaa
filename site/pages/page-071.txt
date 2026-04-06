@@ -1,0 +1,73 @@
+Designed for comfortable wear all day long, the Haramaki
+series jackets come in two distinct styles—a heavy flight
+jacket (the short model), and a long overcoat or duster
+suitable for inclement weather (the long model). The long
+jacket is more expensive, but provides a modest increase
+in protective value since it covers a greater portion of the
+user’s hody. Neither jacket appears to be personal armor;
+they're noticeably heavier than street clothes of the same
+cut, but on the outside they seem to be typical garments.
+
+MiLano GX CF Bobysuit
+
+New EuroTech Manufacturing
+Availability: Controlled
+Cost: 2,250
+Mass: 3 kg
+Composition: CF weave
+Environmental Tolerance:
+Gravity: n/a
+Radiation: n/a
+Atmosphere: n/a
+Pressure: n/a
+Heat: n/a
+Action Penalty: 0
+Toughness: Ordinary
+LI/HI/En: d8-1/dB-1/d6
+Hide: +2
+Effective Strength: n/a
+Skill: —
+
+The CF bodysuit is a heavier version of the popular soft-
+suit, with molded panels and a stylish appearance. Unlike
+the softsuit, it's meant to be worn in place of the user's
+clothes instead of under them; it looks like a tight-fitting
+jumpsuit. Some bodysuits are molded or patterned as
+exotic costumes or fighting outfits. The Milano is the top
+of the line in this type of armor, a garment of outstanding
+durahility, comfort, and protective value. It can be vacu-
+um-sealed, although it does not include a vacuum mask.
+While it's not intended for wear under clothes, it's light
+enough to be worn under clothes if the user wishes.
+
+PoLYMERE ATTACK ARMOR
+
+Another advanced plastic, polymere is extruded as a very
+tough carbon fiber and then pressed into stiff plates. It's
+somewhat dated in today’s culture, but many second-rate
+powers or organizations equip their forces with polymere
+plate armor. It's available in both powered and nonpow-
+ered versions; the powered version provides the wearer
+with an effective Strength of 15 for purposes of lifting,
+carrying, or breaking objects. This doesn't affect the
+wearer's skill scores or movement rates, but it does fig-
+ure into his hand-to-hand damage adjustment.
+
+DAUNTLESS 29 ATTACK ARMOR
+Dietterlich Industries
+Availability: Controlled
+Cost: 93,300
+Mass: 12 kg
+Composition: Polymere plate
+Environmental Tolerance:
+Gravity: n/a
+Hadiation: n/a
+Atmosphere: A2-A3
+Pressure: P1-P3
+Heat: H1-H3
+Action Penalty: +2
+Toughness: Ordinary
+LI/HI/En: d4+2/d6+2/d6
+
+Dauntless 28 Attack
+

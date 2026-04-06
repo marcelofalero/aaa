@@ -1,0 +1,103 @@
+tex. It allows the wearer to literally see sound, providing
+360-degree vision and negating any penalties for blind-
+ness.
+
+NAv GEAR SGNO097862
+
+Class: Sensors
+Availability: Common
+Cost: (A) #750; (B) $125; (C) #900; (D) #100
+Mass: (A) 500 g; (B) 200 g; (C) 500 g; (D) 200 g
+Dim: (A, C) 15cm X 10 cm X 3 cm;
+
+(B, D) 7 cm diameter, 2 cm thick
+
+A. Celestial Navkit. This kit is a modified data slate
+built around a head-down starfinder and holosextant. The
+navkit’s internal sensors compute horizon location in any
+terrain, and its repeater display lets the navigator shoot
+his bearings without the tedious and painstaking
+
+.y
+
+ScANNER SSD004598
+
+Class: Sensors
+
+Availability: Common
+
+Cost: (A) %375; (B) $125
+Mass: 1 kg
+
+Dim: 18 cm X 9 cm X B cm
+
+A. Imaging Scanner. Using advanced magnetic reso-
+nance technology, the imaging scanner provides an inside
+look at anything it's touched to. Its field of view is 8 cen-
+timeters wide, and the focus depth can be adjusted from
+1 centimeter to 3 meters by a simple dial. It's useful for
+locating alarm circuits and analyzing locks, scanning
+packages or crates to examine their contents without
+opening them, or determining the extent of a wounded
+comrade’s injuries. In general, the imaging scanner pro-
+
+process of swinging a sextant. Three identifi- (
+able stars allow the user to compute his exact
+location on a planet's surface in about a
+minute. Celestial navigation doesn't rely on a
+vulnerahle satellite network, but a heavy over-
+cast prevents the user from shooting stars. The
+celestial navkit requires a planetary database
+for each world it's going to be used on; a
+world-disk costs #50. The celestial navkit pro-
+vides a —2 step bonus to Navigation-system
+astrogation skill checks.
+
+B. Gyrocompass. The gyrocompass, or
+inertial compass, uses a battery-powered gyro-
+scope to indicate true north. Its lanth cell lasts
+for 60 days of continual operation. The gyro-
+compass provides a -1 step bonus to
+Navigation-surface navigation skill checks.
+
+C. Inertial Navkit. This device uses
+extremely sensitive accelerometers to record exactly how
+far it moves in every direction, creating a flawless track
+of the user's motion across, over, or under the surface of
+a planet. Like the celestial navkit, the inertial kit requires
+a planetary database of detailed topographical informa-
+tion in order to be useful. The inertial navkit provides a
+—2 step bonus to the user's Navigation—surface navigation
+skill checks, and its lanthanide cells provide up to six
+months of operation.
+
+D. Satellite Receiver. Using navigational signals from
+a constellation of special satellites, the sat receiver (also
+known as a GPS system) simply provides the user’s exact
+coordinates on demand. It provides a -2 step bonus to the
+user’s Navigation-surface navigation skill checks, but
+only if there is a satellite navigation system in place—
+without the satellites, the receiver is useless.
+
+vides a —1 step bonus to Demolitions—disarm, Technical
+Science-repair, Security-security devices, and Manipula-
+tion—/ockpick skill checks.
+
+Some security systems or bomb fuses are set to react
+to the magnetic field of an imaging scanner; heroes
+should not assume that it's always safe to use this device.
+
+B. Weapon Detector. This device is a simple imaging
+scanner designed to provide a wide-field scan for dense
+ohjects. Coupled with the scanner is a chemical sniffer
+sensitized for conventional and plasma explosives. The
+weapon detector can't provide the thorough examination
+of an imaging scanner, but it's much faster and adds the
+capability of sniffing out explosives. System Opera-
+tion-sensors and Investigate—search are the skills associ-
+ated with the weapon detector; the device provides a -2
+step bonus to either in detecting metallic or hard plastic
+Wweapons.
+
+Weapon detectors and imaging scanners can be defeat-
+ed by antiscan weave.

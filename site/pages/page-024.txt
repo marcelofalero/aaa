@@ -1,0 +1,145 @@
+-
+_=
+furar]
+_—
+==
+=
+=
+(e
+-
+=
+==
+=
+il
+>
+farki]
+[ e
+=
+=
+=
+
+GRAVITY AGE EXPLOSIVES
+While there are virtually hundreds of different explo-
+sives in use throughout the stellar nations, the great
+majority have very similar properties. Here are five of
+the most common explosives herces might encounter.
+
+Detonex™: The all-purpose plastic explosive of the
+26th century, Detonex can be molded to fit any surface.
+Block $200, satchel $500; Controlled
+
+Matter charge: This potent device is a mass reac-
+tor bomb, using dark matter decay to create an intense
+burst of energy. Satchel #2,500; Controlled
+
+Nuclear charge: Available only in the darkest
+black markets, the Gravity Age nuke is a small, effi-
+cient fusion device. Anything within 400 meters of its
+detonation point is gone. Objects 400 to 1,000 meters
+away sustain 2dBw, and targets 1 to 2 kilometers dis-
+tant suffer d12w. $500,000 and up; Restricted
+
+Plasma jelly: This electrochemical mix flashes to
+white-hot plasma when detonated, creating a scorching
+fireball. Its more damaging than Detonex, but more
+expensive. Block $500, satchel $1,500; Controlled
+
+Pyrenex™: An advanced incendiary, Pyrenex cre-
+ates horrible firestorms when detonated. Anything
+within the area of effect is almost certain to catch fire
+after the blast. Block $600, satchel #1,800; Controlled
+
+Block charges
+
+Explosive Type RAoE  Damage E
+Detonex  LI/G o/1/2  d6+1w/d4w/dBs
+Plasma jelly En/G  o/1/2  d4m/d6+1w/dd+1w
+Pyrenex  En/G o/1/3  204w/d6+1w/ddw
+
+Satchel charges
+
+Explosive Type AoE
+
+Detonex  LI/A 4/8/12 2d4m/2dBw/dB-1w
+Matter En/A 6/10/16 d4+4m/d6+2m/d12w
+Nuclear  En/A see above see above
+
+Plasma  En/A o/4/10 2d4+1m/d6+1m/2d4w
+Pyrenex En/A 4/8/12 3dBw/2dBw/dBw
+
+Proximity: The approach of an object of a minimum
+speed or size sets off the charge. Proximity fuses could be
+set to react to the approach of a vehicle moving at more
+than 20 kph, a person moving at a walking pace, efc.
+
+Thermal: The charge detonates when the fuse detects a
+change in temperature.
+
+Dozens of other variations are possible. ltem
+3105006901, ¥50, 0.5 kg, Controlled
+
+G. Detonator, command. Since the conditions activat-
+ing a fused detonator may not occur, it's common to rig
+command detonators for most jobs. A command detona-
+tor allows the demolitions engineer to fire the detonators
+remotely when he’s ready. Two common models are
+
+available: radio and wire detonators. Hadio detonators
+
+transmit a radio signal, but can be jammed or intercept-
+ed. Wire leads can be tangled or pulled loose. Item
+310550245g, ¥25, 0.5 kg, Controlled
+
+H. Sequencer box. This device is a radio and wire sig-
+nal switchbox that allows the demolitions expert to speci-
+fy exactly the order in which multiple command-detonat-
+ed charges at different sites will detonate. Multiple
+charges controlled by a sequencer box add a +2 step
+penalty to the target structure’s durability check to resist
+destruction through demolitions charges, or a -2 step
+bonus to the user’s Demaolitions skill check if you prefer to
+use the basic skill mechanic. ltem 310040788h, #200, 3
+kg, Commaon
+
+I Spike cap. The smallest and simplest explosive
+charge available, the spike cap looks like a railroad spike
+or spliting wedge. Driven into a seam or corner and acti-
+vated by a safety switch, the cap allows 10 seconds for
+the character to get clear and then detonates. It inflicts
+d6+1w of Good damage to the object it's inserted in (add
++1 point per additional spike cap if more than one are
+used simultaneously). The device is so simple that no skill
+check is needed to apply it. Item 310920405, 850, 0.5
+kg, Controlled
+
+J. Timer. The last type of detonator available, the timer
+simply allows the demolitions rigger to specify a count-
+down or set time for the charge to fire. It can be coupled
+with a fuse device to provide a countdown after some
+other condition has been met. ltem 310520500, ¥10, 0.5
+kg, Controlled
+
+BERTEK EXCAVATION PROJECTOR
+
+The days of backbreaking labor are over! Equip your
+team with our projectors, and every man’s got the digging
+power of a ten-ton bulldozer on his back.
+
+A derivative of the render rifle’s gravitonic technology,
+an excavation projector is a handheld digging and lifting
+device. A heavy backpack contains the projector’s lanth
+cells and graviton generation device, while the user
+directs a gunlike nozzle at his target. Ten minutes of work
+in excavation mode displaces 5 cubic meters of sand or
+soft earth, 2 cubic meters of hard-packed earth or clay, 1
+cubic meter of soft or porous stone, or 0.5 cubic meter of
+hard stone. In push mode, the projector can move up to
+500 kg of material at a rate of 2 meters per phase.
+Typically, a projector operator toggles back and forth
+between modes several times a minute to break up mate-
+rial and then move it out of the way.
+
+Four hours of heavy work or eight hours of light or
+intermittent work exhaust the projector’s lanthanide cells.
+Item 340677839, %1,000, 20 kg, Common
+

@@ -1,0 +1,68 @@
+Systems (Dur/Pow) Durability
+1-4 Command Plasma cannon (3/3)  10/10/5
+Chaff (1/0)
+
+Multiband radar (0/0)
+
+Jammer (0/1)
+
+Laser transceiver (0/1)
+
+Radio transceiver (0/1)
+
+Airlock (0/0)
+
+Ordinary computer core (1/0)
+5-7  Engineering Induction engine (4/4) 8/8/4
+
+Autosuppoart (0/1)
+
+Reentry capsule (0/0)
+8-12 Auxiliary Mass reactor (4/°) 8/8/4
+13-20 Crew Crew quarters (1/0) 6/6/3
+Passenger suite (2/0)
+
+Small and fast, the Hermes-class system couriers are
+built for high-speed interplanetary passenger and mail
+runs. Many larger warships carry system couriers like
+the Hermes as captain’s gigs, admiral’s barges, and crew
+shuttles. The Hermes is not equipped with a stardrive;
+she's too small to carry an interstellar drive. However, her
+small size allows the Hermes to hitch a ride with almost
+any driveship that comes along.
+
+The Hermes is equipped with a forward-firing plasma
+cannan for defense, along with an excellent suite of sen-
+sors. She can easily be handled by a single pilot, but basic
+passenger/crew fuarters for six hands, plus spacions
+staterooms for two passengers, are provided.
+
+Hermes-class couriers are found throughout the Verge;
+its been a very successful design for Solar X, and these
+slender ships are popular personal transports for high-
+ranking government and corporate officials in several
+systems. The Hermes also has a mare sinister connota-
+tion—smugglers and crime lords are also known to favor
+the Hermes's combination of speed, comfort, and style.
+
+From the time the order is placed, the Solar X shipyard
+requires 6d4 weeks to build and outfit a new Hermes-
+class courier. On occasion, finished hulls may be availahle
+due to canceled orders or contract disputes; interested
+parties may be able to fly the ship out of the yard within
+a matter of hours if Solar X happens to have any com-
+pleted hulls in their orbital facility awaiting a buyer. Cost:
+2,395,000
+
+NiIKe=-cLASS GUNBOAT
+
+Compartments: 8 Dur: 40
+Maneuver rating: 0 Acc: 2 Mpp
+Cruising speed: 1.5 AU/hr Berthing: 12
+
+Armament:: 2 mass cannons
+Hange 5/10/15 Mm  d6+2s/d6+1w/d6+3w LI/A
+2 launch tubes w/20 missiles (8 CHE, 8 ARN, 4 SMP)
+Defenses: Jammer, deflection inducer
+
+SOHBAGIHS X HH105

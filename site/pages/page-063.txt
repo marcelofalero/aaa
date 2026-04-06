@@ -1,0 +1,83 @@
+Dozens of various energy beams have been incorporated
+in experimental weapons—infrared lasers, gamma rays,
+heavy particle beams, and ultraviolet rays, to name a few.
+The weapons listed below illustrate a few of the more
+successful designs that are now found in military and
+civilian inventories throughout the Stellar Ring.
+
+StarMech Edge One Division
+Availability: estricted
+
+Cost: $2,000
+
+Mass: 4 kg
+
+Length: 80 cm
+
+Payload: Graviton beam
+Accuracy: 0
+
+Actions: 3
+
+Mode: F
+
+Type/Firepower: En/0
+
+Damage: d6+1s/d6+1w/d4+1m
+Range: 50/100/250 meters
+Hide: -
+
+Clip/charge Size: 8 shots
+Clip/charge Cost: $100
+
+Skill: Modern Hanged Weapons-rifle
+
+The Z-LOK render rifle projects a graviton beam that cre-
+ates destructive tidal attractions within the target's struc-
+ture. While it's not particularly lethal compared to other
+Gravity Age rifles, it offers one big advantage—the target's
+armor is reduced to its minimal protection value against
+the beam. For example, cerametal armor normally stops
+d6 points of energy damage, but against a render rifle it
+only stops 1 point, the minimum possible (no roll
+allowed).
+
+FLASMA GUN
+
+AM. Industries, Orion League
+Availahility: Military
+
+Cost: #12,000
+
+Mass: 6 kg
+
+Length: 110 cm
+
+Payload: Incandescent plasma
+Accuracy: 0
+
+Actions: 2
+
+Mode: F
+
+Type/Firepower: En/G
+Damage: dBw/d8+2w/d8+4w
+Range: 50/100/400 meters
+Hide: —
+
+Clip/charge Size: B shots
+Clip/charge Cost: ¥100
+
+Skill: Heavy Weapons—direct fire
+
+,.
+I
+
+103N8771305
+
+[0 50
+
+u
+
+il
+

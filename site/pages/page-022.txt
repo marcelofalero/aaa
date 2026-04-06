@@ -1,0 +1,153 @@
+(5]
+o
+
+(e
+=
+—
+==
+a2
+>
+o
+=
+=
+==
+(=
+=
+[
+=3
+—
+=
+=
+=]
+]
+=
+
+p
+>
+
+SuraGicaL KiT
+
+Disaster can strike anywhere. You might not always have
+the hixury of a full medical facility to operate on injured
+people. With our surgical kit, you've got all the tools you
+need to help people anywhere.
+
+The surgical kit contains laser scalpels, a vital-signs
+monitoring system, an anesthesia bottle and control sys-
+tem, antiseptics, portable lighting, and an assortment of
+other high-tech instruments, providing a surgeon with all
+the tools he needs to practice his art. The doctor still
+needs a quiet place where he can work on the patient—
+the cleaner, the better, although the antiseptic sprays
+included in the kit can keep the instruments and patient
+free of infectious microorganisms if used with care. The
+entire kit stows into a tough plastic case the size of a stan-
+dard backpack.
+
+The surgical kit is considered a Marginal medical facil-
+ity if used in the field (no modifier to Medical Science-
+surgery skill checks), or an Ordinary facility (-1 step
+bonus to surgery skill checks) if the doctor can find a
+sheltered building or vehicle with power and water.
+Performing an operation with the kit expends supplies
+worth #250, which must be replaced before the kit can be
+used again. Item 240855838, #1,250, 12 kg, Controlled
+
+TRAUMA Pack |
+
+Why leave anything to chance? The trauma pack is a
+medic in a box, capable of handling the most serious
+combat injuries. Best yet, its “fire and forget” technology
+allows a soldier to apply one to a wounded comrade and
+get back to the fight, confident that his buddy’s going to
+make it.
+
+The trauma pack is armed with microinjectors and tiny
+stores of various medical supplies. It provides a -2 step
+bonus to the user’s Bnowledge—first aid skill check, or a
+—3 step bonus to Medical Science-treatment skill checks.
+Better yet, the onboard computer's assist program allows
+characters untrained in first aid to check as if they had a
+skill of first aid 3. Finally, if the trauma pack is positioned
+over the site of the injury and set to automatic mode, it
+can use Medical Science-treatment on fallen heroes with
+an effective skill score of 12. Trauma packs can be used
+in the following modes:
+
+® Heal stun damage: A single skill check restores
+2/3/4 stun points to the victim, depending on the medic’s
+SUCCESS.
+
+* Recover consciousness: A single skill check awak-
+ens an unconscious victim and restores 2/3/4 stun
+points. If the victim was knocked out through loss of all
+his wound points, he regains 1 wound point.
+
+® Heal wound damage: With two consecutive suc-
+cessful skill checks, the trauma pack heals 4 wound
+points of damage.
+
+Bl
+
+® Staunch mortal damage: With a successful skill
+check, a mortally injured character is stabilized and need
+not make Stamina-endurance checks related to mortal
+damage for the duration of the scene.
+
+The trauma pack measures 20 cm X 10 cm X 2 cm.
+It contains supplies for six applications, after which it
+must be refilled at a cost of #100. Item 210555765,
+%200, 1 kg, Common
+
+TrRAUMA Pack I
+
+What's the use of carrying a trauma pack if you're too
+badly hurt to apply it? The advanced model of this life-
+saver is a feature of body tank armor and is also avail-
+able as a cybernetic attachment.
+
+The trauma pack Il continuously monitors the wearer's
+vital signs and responds instantly to a variety of injuries.
+
+* Knockout: When the wearer loses all his stun points,
+the pack injects him with stimulants and painkillers to
+immediately return half his full normal allotment of stun
+points (round up). The victim has a +2 step penalty to all
+actions in the following round due to grogginess.
+
+® Heal wounds: When the wearer loses more than
+half his wound points, the pack’s automedic features
+immediately restore d4+2 lost wound points.
+
+® Mortal damage: The trauma pack automatically
+staunches any mortal damage, negating the need for
+Stamina-endurance checks. However, the subject suffers
+a +3 step penalty to all actions until the end of the scene,
+and then suffers the normal penalty based on the amount
+of mortal damage he's received.
+
+Each trauma pack contains materials and supplies for
+two uses of each function. A single character can't wear
+more than one trauma pack at a time, but he could carry
+additional packs and plug them in when the active pack
+has run out of supplies. It takes about five minutes to
+change trauma packs. ltem 255900344, %400, 2 kg,
+Controlled
+
+WALKER, MEDICAL
+
+‘Wheelchairs are awkward and uncomfortable, even with
+modern gravity induction technology. Our medical walker
+allows a patient full mobility while recovering from the
+most serious injuries, and can even be concealed beneath
+most normal clothes. Don't let a serious accident change
+your lifestyle!
+
+The medical walker consists of a pair of powered leg
+braces and lower back support unit. It provides a con-
+scious wearer with the ability to walk at up to 6 meters
+per phase, regardless of his physical condition. Even
+characters temporarily paralyzed by spinal injuries can
+walk with the aid of a medical walker. Not recommended
+for patients whose legs should be immobilized due to
+fractures. Iterm 285290662, ¥1,500, 10 kg, Common

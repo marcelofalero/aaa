@@ -1,0 +1,87 @@
+___ i
+
+vicinity. Against low impact and high impact attacks, the
+capacitor screen is considered to have a toughness of
+Good; against energy attacks, its toughness is Amazing. In
+addition, the screen automatically reduces the damage of
+an attack by the amount listed, so an energy attack that
+inflicts 6 wounds is reduced by 4 to 2 wounds before sec-
+ondary damage or the user's armor is taken into account.
+The screen can absorb d6+1 attacks before its capacitors
+are full and it's forced to shut down for at least 2 hours.
+
+ALEN ARMORS
+
+Humans aren't the only species that manufactures armaor.
+All of the aliens encountered to date have possessed
+some level of personal armor technology. The tsa favor
+partial-plate armors that reinforce their natural armor by
+providing another layer of protection over vital areas; the
+fraal produce several advanced weaves that can be worn
+as everyday garments but are tougher than CF weave.
+The aboriginal sesheyans often wear light natural
+leathers (see ayaishe and beishen, pages 14-15).
+
+e! BURUND
+(WEREN MAIL)
+DhuulQeshOhe Maarhak
+Availability: Controlled
+Cost: #3,500
+Mass: 12 kg
+Composition: Laminated steel
+Environmental Tolerance:
+Gravity: n/a
+Hadiation: n/a
+Atmosphere: n/a
+Pressure: n/a
+Heat: n/a
+Action Penalty: +1
+Toughness: Ordinary
+LI/HI/En: d6/d6-2/d6-2
+Hide: -2
+Effective Strength: n/a
+Skill: Armor Operation—combat armor
+
+Developed within the last hundred years to resist musket
+balls, the khe! burund is a hauberk of light chain mail
+with stiff leather strips woven between the links, worn
+over a leather arming coat. The coat covers the wearer's
+arms to the elbow, his legs to the knee, and includes a
+hood. Favored by many weren mercenaries and expatri-
+ates because it's an element of weren technology that
+stands up to human weapons, the khe! burund (the excla-
+mation mark signifies that the first word is vocalized as a
+cough) has become an emblem of weren tradition in the
+face of overwhelming change.
+
+PTokH K’SE
+(T’sa)
+
+Aakhi Bros. Goods & Trade
+Availability: Commaon
+Cost: $800
+Mass: 2 kg
+Composition: Metal fiber
+Environmental Tolerance:
+
+Gravity: n/a
+
+Hadiation: n/a
+
+Atmosphere: n/a
+
+Pressure: n/a
+
+Heat: n/a
+Action Penalty: 0
+Toughness: Ordinary
+LI/HI/En: d6+1/d6/dB-1
+Hide: +2
+Effective Strength: n/a
+Skill: —
+
+The ptokh k'se (pronounced TAHEK-see, more or less) is
+the t'sa version of a bulletproof vest. It consists of a dense
+weave of extruded alloy wire, woven into a heavy cloth
+and sandwiched between tough artificial weaves. When
+

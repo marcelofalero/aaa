@@ -1,0 +1,69 @@
+Communicatios Gear (handheld, headset]
+
+for constant or intermittent emission, or the beacon can be
+set to transponder mode, only pinging in response to a
+preselected interrogatory signal. Automated beacons are
+useful for Navigation or Vehicle Operation skill checks in
+difficult conditions—an active beacon reduces any penal-
+ties for poor conditions by 2 steps. The range of an auto-
+mated beacon is 500 km in a planetary environment, or
+50,000 km in space. lts power cells allow 1 year of nor-
+mal operation.
+
+B. Emergency Beacon. The spacefarer's S0S signal,
+an emergency beacon is standard equipment on most
+spacecraft and life pods. When set up and activated, the
+beacon periodically emits powerful radio signals to mark
+the user’s location for any passing vehicles. The beacon's
+signal can be detected from 5,000 km away on a plane-
+tary surface, or from as far as 5 AU (750 million km) in
+open space. The emergency beacon lasts for 5 years
+before its cells run out of power.
+
+C. Marker Beacon. A much smaller beacon used to
+mark very specific locations, the marker is usually used for
+precise surveys or locations—archeological sites, camps or
+caches, and so forth. Bantam rockets and heavier ordnance
+can be set to guide on the marker's signal, providing a -3
+step bonus to the attacker’s skill check when he fires at the
+beacon. Marker beacons have magnetic clamps for easy
+attachment to a variety of surfaces. The beacon has a range
+of 250 km and a duration of 1 month.
+
+CoMMUNICATOR CMC290371
+
+Class: Communications
+
+Availahility: Any
+
+Cost: #100 (A), $175 (B), #300 (C)
+
+Mass: 100 g (A), 100g (B); S g (C)
+
+Dim: Handset: 15 cm X Bem X 1 cm;
+Card: Bcm X 5cm X 3 mm
+
+A Cellular Communicator. Basically a handheld radio
+that directs its transmissions to the nearest convenient
+relay, the cellcomm is popular on developed planets with
+global relay coverage. It can reach relay towers up to
+1,000 km distant; once the communicator’s got a relay,
+the user can reach any point on a planet or in a system
+through commercial comm circuits. The unit is available
+incard or handset models. Its batteries must be recharged
+once a week.
+
+B. Multiband Comm Gear. This is a frequency-agile
+handheld radio available as a card, handset, or headset.
+Unlike the cellcomm, comm gear doesn't patch into a
+lacal circuit-it's an independent communication system.
+Since it can transmit and receive on a variety of frequen-
+cies, comm gear is more versatile and resistant to inter-
+ference or jamming than a cellcomm. The transmitter has
+& surface range of 1,000 km, or a line-of-sight range of
+10,000 km.
+
+R
+
+H§39 SNOLLBIINNWWOI
+

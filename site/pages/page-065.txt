@@ -1,0 +1,97 @@
+Actions: 3
+
+Mode: F
+
+Type/Firepower: by warhead
+Damage: by warhead
+
+Range: 40/240/480 meters
+
+Hide: -2
+
+Clip/charge Size: 10 shots
+Clip/charge Cost: varies
+
+Skill: Heavy Weapons—indirect fire
+
+The ZKS (or “Zeke 5 as it's known by
+
+the Concord Marines) is a modern
+
+version of the old grenade launcher. Its
+drum-style magazine holds ten 30mm grenades, smaller
+but more powerful than their historical counterparts. The
+Zeke launches its fin-stabilized warheads by means of a
+low-powered linear accelerator, a simple sabot qun with
+much better range and accuracy than the old hand mor-
+tars.
+
+BANTAM §
+Soze Arms Ltd.
+Availability: Military
+Cost: 4,000
+Mass: 7 kg
+Length: 80 cm
+Payload: Various rockets
+Accuracy: -2
+Actions: 2
+Mode: F
+Type/Firepower: by warhead
+Damage: by warhead
+Hange: 40/400/2000 meters
+Hide: —
+
+Clip/charge Size: 4 shots
+Clip/charge Cost: varies
+Skill: Heavy Weapons-indirect fire
+
+The Bantam 5 handheld rocket launcher is basically a
+hollow tube with laser-designating sights for the guidance
+of bantam rocket rounds. The rockets can be guided by
+the launcher's sights, or a remote observer can use a
+separate laser designator to mark targets out of the firer's
+line of sight, allowing attacks over hills or around corners.
+
+The Soze Arms model of this popular weapon has a fifth
+launch tube for an extra shot.
+
+SekureTek Group
+Availability: Military
+
+Cost: ¥300
+
+Mass: 0.5 kg
+
+Length: 12 cm
+
+Payload: Various grenades
+Accuracy: -1
+
+Actions: 2
+
+Mode: F
+
+Type/Firepower: by warhead
+Damage: by warhead
+
+Range: per STH or 30/60/120 meters
+Hide: +3
+
+Clip/charge Size: n/a
+Clip/charge Cost: n/a
+
+Skill: Athletics—thraw
+
+The Bloodhound smart grenade is a delivery system
+
+attached to any other grenade warhead. The thrower can
+
+spend an action to lock its image targeting system onto a
+target. When he throws the grenade in
+a subsequent action, its rocket motor
+guides it to the target. In guided flight,
+the grenade has a range of
+30/60/120 meters and an accuracy
+of -1; in unguided mode, it's treated
+like any other thrown grenade.
+

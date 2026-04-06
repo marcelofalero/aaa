@@ -1,0 +1,97 @@
+SekureTek Group
+
+Availahility: Contralled
+
+Cost: ¥350
+
+Mass: 2 kg
+
+Length: 75 cm
+
+Payload: Hazor-tipped baolt
+
+Accuracy: 0
+
+Actions: 1
+
+Mode: P
+
+Type/Firepower: HI/0
+
+Damage: d6+1w/d8+1w/dBm
+
+Range: 60/120/300 meters
+
+Hide: —
+
+Clip/charge Size: 1 shot
+
+Clip/charge Cost: $25
+
+Skill: Primitive Banged Weapons—bow
+
+Modern crossbows are extremely dangerous weapons,
+with hitting power comparable to a high-powered rifle.
+Like the bow, it’s silent and dark, perfect for stealthy mis-
+sions. On the downside, it's slow; after each shat, the
+marksman must spend an action to cock the weapon and
+ready another quarrel. However, crosshows can be car-
+ried cocked and can be fired from a prone position.
+
+CoBRA F
+SekureTek Group
+Availahility: Common
+Cost: #450
+Mass: 1.5 kg
+Length: 32.5 cm
+
+Payload: Poison-tipped dart
+Accuracy: 0
+
+Actions: 2
+
+Mode: F
+
+Type/Firepower: LI/0
+Damage: d4-1w/d4w/d4+1w
+Hange: 4/8/16 meters
+
+Hide: +2
+
+Clip/charge Size: B shots
+Clip/charge Cost: ¥100
+
+Skill: Modern Ranged Weapons—pistol
+
+The dart gun is a pneumatic pistol designed to fire a
+large, hollow dart. One popular version of this gun (pic-
+tured) is a specially designed, pocket-sized weapon (Hide
+value +4, cost $300). While the dart can inflict serious
+injury by itself, it’'s usually used as a delivery system for
+an insinuative venom. The typical dart is filled with neu-
+rotoxin (+1 step penalty to the victim's Constitution feat
+check, onset time d4 rounds) or a paralytic agent (+2
+step penalty, onset time d4-1 rounds). See Chapter 3 in
+the ALTERNITY Gamemaster Guide for details on poison.
+
+Designed for close assault, both arc guns and flamers are
+accurate weapons at short ranges. While the weapons
+don't have any real relation to each other, they're often
+employed in similar circumstances, which is why they’re
+listed together in this series of entries.
+
+Dietterlich Industries
+Availability: Military
+Cost: $2,750
+
+Mass: 10 kg
+
+Length: 85 cm
+Payload: Electrical arc
+Accuracy: -1
+
+Actions: 2
+
+Mode: P
+Type/Firepower: En/G
+

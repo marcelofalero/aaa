@@ -1,0 +1,112 @@
+e
+HAND-TO-HAND
+NonNPOWERED WEAPONS
+Thousands of conventional hand-to-hand weapons can
+still be found within the borders of the Stellar Ring. Some
+are collectors’ pieces, carried only by the fashionable or
+eccentric. Others are so simple and easy to manufacture
+
+that they'll never go out of style; clubs and knives are
+likely to stay around as long as humankind does.
+
+CHUURKHNA
+
+Weren melee weapon
+Availahility: Common
+
+Cost: ¥350
+
+Mass: 7 kg
+
+Length: 160 cm
+
+Payload: Conventional blade
+Accuracy: 0
+
+Actions: 3
+
+Type/Firepower: LI/0
+Damage: d4+3w/d6+3w/d6m
+Range: Personal
+
+Hide: —
+
+Clip/charge Size: n/a
+Clip/charge Cost: n/a
+
+Skill: Melee Weapons-blade
+
+An ancient weren design, the chuurkhna is still favored
+by members of that race. It's a glaive or halberd with a
+haft about a meter and a half long. Its blade is large and
+heavy, intended for chopping rather than thrusting. A
+weren can wield it one- or two-handed, but most humans
+would have to use both hands to control it. Weren have
+been known to drive chuurkhnas through the heaviest
+body armor.
+
+DAIT’sya
+T'sa melee weapon
+Availability: Common
+Cost: ¥250
+Mass: 1 kg
+Length: 25 cm
+Payload: Conventional blade
+Accuracy: 0
+Actions: 4
+
+—
+
+Type/Firepower: LI/0
+
+Damage: d4+1w/d4+2w/d4+3w
+Range: Personal
+
+Hide: +2
+
+Clip/charge Size: n/a
+
+Clip/charge Cost: n/a
+
+Skill: Melee Weapons—blade
+
+The dait'sya is a traditional t'sa weapon, a double-bladed
+dagger held in the wielder’s closed fist. TheyTe always
+used in pairs (the listed cost, mass, and damage is for two
+weapons). Combined with the lightning speed of maost tsa,
+the dait'sya is especially dangerous in close-guarters
+combat. Because of the dait'sya's light design, any penal-
+ties for fighting with a weapon in each hand are reduced
+by 1 step.
+
+TONG FE
+Police fighting stick
+Availability: Common
+Cost: $60
+Mass: 1 kg
+Length: 45 cm
+Payload: Conventional blunt
+Accuracy: -1
+Actions: 4
+Type/Firepawer: L1/0
+Damage: dBs/d6+2s/d4+1w
+Range: Personal
+Hide: +2 \
+Clip/charge Size: n/a
+Clip/charge Cost: n/a
+Skill: Melee Weapons—bludgeon or
+Unarmed Attack-power martial arts
+
+The tong fe is a martial arts weapon
+that has become the fighting stick of |
+choice for many police and security
+forces. Designed specifically for par- |
+rying, the tong fe adds a -2 step |
+bonus to any parrying effort the |
+user attempts. As with the daitsya, | |
+experts often wield two of these
+weapons at once; the tong fe |
+reduces the penalties for attacking
+
+with two weapons at once by 1 step. '
+

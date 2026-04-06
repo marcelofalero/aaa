@@ -1,0 +1,104 @@
+L) 100 | A\ ®,
+Frund Armsworks, Thulda Prime
+Availability: Restricted
+
+Cost: 9,500
+
+Mass: 22.5 kg
+
+Length: 115 cm
+
+Payload: 13mm bullet
+
+Accuracy: -1
+
+Actions: 4
+
+Muode: A
+
+Type/Firepower: HI/G
+
+Damage: dBw/2d6w/dBm
+Hange: 200/600/1200 meters
+Hide: —
+
+Clip/charge Size: 50 bursts
+Clip/charge Cost: ¥2,000
+
+Skill: Heavy Weapons-direct fire
+
+The KZ 160 is a typical heavy charge machine gun, usu-
+ally employed as a crew-served or vehicle-mounted
+weapon. Heroes who succeed on a Strength feat check
+can fire the KZ 160 from the hip at a +1 step penalty, but
+the double-autofire penalty mentioned in the ALTERNITY
+Player's Handbook doesn't apply to this weapon—the KZ
+160 is a much lighter and steadier weapon than the stan-
+dard heavy charge machine gun.
+
+N
+
+ABOT UNS
+
+These weapons use modern superconducting technology
+to power a discarding-sabot slug through a magnetic
+accelerator that runs the length of the barrel. After the
+slug clears the muzzle, the sabot falls away, and a scram-
+jet engine ignites, propelling the sabot gun slug to extreme
+velocities. Nothing hits harder.
+
+ThunderCorp Arms
+Availability: Controlled
+Cost: ¥300
+Mass: 2 kg
+
+Length: 25 cm
+
+Payload: 10mm sabot ramjet
+Accuracy: 0
+
+Actions: 3
+
+Mode: F
+
+Type/Firepower: HI/O
+
+Damage: 2d4w/2d4+1w/d4+3m
+Range: 10/20/100 meters
+
+Hide: +1
+
+Clip/charge Size: 6 rounds
+Clip/charge Cost: $60
+
+Skill: Modern Ranged Weapons—pistol
+
+Sabot pistols are big and heavy, but they're the most pow-
+erful handguns produced in any numbers. The weapon
+has great range for a pistol, and almost no kick—the
+accelerator pushes the slug out of the barrel with a
+smooth, nonexplosive action. The sabot pistol's lanthanide
+cell provides enough energy to fire four clips of ammo
+before it's exhausted; the cell can be recharged for #10 or
+replaced for $200.
+
+M5 I5mmMm SaBoTt RIFLE
+AM. Industries
+Availability: Military
+Cost: #4,500
+Mass: 4 kg
+Length: 125 cm
+Payload: 10mm sabot ramjet
+Accuracy: 0
+Actions: 2
+Mode: F
+Type/Firepower: HI/0
+Damage: d4+4w/2d4+2w/d6+3m
+Range: 80/200/800 meters
+Hide: —
+Clip/charge Size: 12 rounds
+Clip/charge Cost: $100
+Skill: Modern Ranged Weapons—rifle
+
+While no one questions the sabot rifle's range or hitting
+power, its lack of automatic-fire capability has limited its

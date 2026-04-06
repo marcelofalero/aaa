@@ -1,0 +1,117 @@
+Weapons in this class rely on contact-delivered energy to
+stun or incapacitate the opponent. Since mass or cutting
+edge is simply a secondary characteristic of the device,
+most melee weapons of this group are light and easy to
+use.
+
+HKoshimi Industries
+
+Availability: Military
+
+Cost: $750
+
+Mass: 2.25 kg
+
+Length: B5 cm
+
+Payload: lonizing energy
+Accuracy: 0
+
+Actions: 4
+
+Type/Firepower: En/0
+
+Damage: d4+3s/dB+4s/d4+3w
+Hange: Personal
+
+Hide: +2
+
+Clip/charge Size: 10
+Clip/charge Cost: $75
+
+Skill: Melee Weapons—powered
+
+The ion blade delivers a discharge of electromagnetic
+energy on contact. While it's moderately effective against
+unarmored targets, its primary purpose is to neutralize
+heavy body armaor, robots, and cybernetics. A target that
+relies on electronic control systems or computers suffers
+a +2 step penalty to any Stamina-endurance checks he
+(or it) must make after being struck by an ion blade.
+
+SekureTek Group
+Availahility: Controlled
+Cost: ¥500
+
+Mass: 1.15 kg
+
+Length: 50 cm
+
+Payload: Electrical shock
+Accuracy: 0
+
+Actions: 3
+Type/Firepower: En/0
+Damage: d8s/d4+2w/d6+2w
+Hange: Personal
+
+Hide: +4
+
+A4 v
+
+Clip/charge Size: 10
+Clip/charge Cost: $75
+Skill: Melee Weapons—powered
+
+Pulse batons have been in use for more than a century.
+Few unarmored targets can stand up to more than one or
+two shocks from its powerful capacitors. The Nighthawk
+is a telescoping stealth model made from low-density
+plastics. It's extremely concealable and does not show up
+on most weapon detectors, allowing the user to smuggle
+it into places he might not normally be armed.
+
+SekureTek Group
+
+Availability: Common
+
+Cost: #425
+
+Mass: 2 kg
+
+Length: 45 cm
+
+Payload: Electrical shock
+Accuracy: 0
+
+Actions: 3
+
+Type/Firepower: En/0
+Damage: d6+1s/d8+2s/d12+3s
+Hange: Personal
+
+Hide: +2
+
+Clip/charge Size: 10
+Clip/charge Cost: $75
+
+Skill: Melee Weapons-powered
+
+Hundreds of models of
+stun batons are available,
+but Merrick's awards its
+prestigious Triple-Bullseye
+rating to the PunkThumper
+B000 as the best of its
+class. Intended for serious
+restraint work, the PT 6K
+uses an extra-heavy pulse
+baton battery to deliver the
+biggest stun-sized jalt
+around. It doesn't last as
+long as a standard stun
+baton's charge, but with the
+PunkThumper each hit
+
+counts.
+

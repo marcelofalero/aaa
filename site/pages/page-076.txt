@@ -1,0 +1,121 @@
+~3
+o
+
+ASSAULT SHIELDS
+
+ASSAULT SHIELDS
+
+For thousands of years, arm-carried shields have been
+one of the best ways to interpose an impervious barrier
+between an enemy’s weapon and oneself. While shields
+can be very effective in some tactical situations, they have
+drawbacks—it's extra weight to carry, one of the user’s
+hands is full, and they don't protect against rear or flank
+attacks. Against frontal attacks, however, the shield user
+may add the shield’s benefit to his armor roll, increasing
+the amount of primary damage stopped.
+
+AEeGIs 650 CERAMETAL SHIELD
+
+SekureTek Group Inc.
+Availability: Common
+Cost: $225
+Mass: 1.6 kg
+Composition: Cerametal plate
+Environmental Tolerance:
+Gravity: n/a
+Hadiation: n/a
+Atmosphere: n/a
+Pressure: n/a
+Heat: n/a
+Action Penalty: +2
+Toughness: Ordinary
+LI/HI/En: +2/+2/+2
+Hide: —
+Effective Strength: n/a
+Skill: Armor Operation—combat armor
+
+The Aegis 650 is the kind of shield an ancient warrior
+would have treasured. Light and unbelievably strong, it
+can stop a 9mm round cold at point-blank range. The
+Aeqis includes a vision slit of bulletproof polymere and a
+firing port, allowing the user to crouch behind it for
+portable hard cover. When used in this fashion, the Aegis
+provides a +1 increase to the user's resistance modifier
+against ranged attacks as well as providing its normal
+benefit of enhancing armor rolls. Naturally, the shield
+doesn't contribute to armor rolls against attacks from
+behind.
+
+SAIl POWERED SHIELD
+
+StarMech Edge One Division
+Availability: Controlled
+
+Cost: %6,500
+
+Mass: B kg
+
+Composition: Cerametal plate
+Environmental Tolerance:
+Gravity: n/a
+
+Badiation: n/a
+Atmosphere: n/a
+Pressure: n/a
+
+Heat: n/a
+Action Penalty: +1
+Toughness: Ordinary
+LI/HI/En: +3/+2/+2
+Hide: —
+Effective Strength: n/a
+Skill: Armor Operation-powered armor
+
+The conventional shield's drawbacks are bulk and the
+problem of tying up the user’s second hand. The SAI
+solves that; it's actually a free-floating unit powered by an
+induction motor. Its smart sensors detect incoming attacks
+and direct the shield to interpose itself automatically. The
+user of the SAI shield may even apply the shield’s bene-
+fit against flank or rear attacks. However, there's a catch—
+the SAI automatically moves to parry the first attack that
+is directed at the user in any given phase of combat, hit
+or miss, and provides no benefit to subsequent attacks in
+the same phase that strike from a different quarter.
+
+DEFLECTION SCREENS
+
+With the advent of man-portable high-powered capacitors
+in the form of lanthanide cells, the first practical energy
+screens become possible. They're not impervious—con-
+trolling and shaping an energy field capable of deflecting
+or absorhing small arms fire takes up most of the unit's
+power, and even the best personal shields may not stop
+a powerful handgun. Heavy-duty versions of these
+screens are often featured in suits of powered armor,
+adding the benefits described below to the armor's innate
+protection.
+
+RAMPART DEFLECTION INDUCER
+
+MRA Technologies, Inc.
+Availability: Controlled
+Cost: $1,350
+Mass: 1.2 kg
+Composition: Gravity field
+Environmental Tolerance:
+Gravity: n/a
+BRadiation: n/a
+Atmosphere: n/a
+Pressure: n/a
+Heat: n/a
+Action Penalty: 0
+Toughness: Ordinary
+LI/HI/En: +2/+2/+1
+Hide: +4
+Effective Strength: n/a
+Skill: —
+
+A cheaper version than the standard model, the Hampart
+sacrifices defensive power in exchange for light construc-

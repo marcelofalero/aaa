@@ -1,0 +1,91 @@
+[
+
+ThunderCorp Arms
+
+Availability: Controlled
+
+Cost: #1,000
+
+Mass: 3 kg
+
+Length: 30 cm
+
+Payload: Compressed air
+Accuracy: 0
+
+Actions: 4
+
+Mode: B/A
+
+Type/Firepower: LI/0
+
+Damage: d6+2s/d8+2s/dB+4s
+Range: 10/20/80 meters
+
+Hide: +1
+
+Clip/charge Size: 20 bursts
+Clip/charge Cost: $200
+
+Skill: Modern Ranged Weapons-5MG
+
+I
+|
+l
+
+The stutter SMG isn't a real submachine gun, of course;
+it's referred to as an SMG because of its high cyclic rate
+of fire. It's intended for use in close-quarters riot control
+or police raid situations in which the authorities must sub-
+due a large number of people in a very shart time. Stutter
+SMGs are also favored by special forces teams atternpting
+to take prisoners instead of simply killing their enemies.
+
+Heavier stutter weapons are often used for game contral
+on worlds where native lifeforms pose a threat to
+humans, for arming guards in high-security prisons or
+detention areas, and for crowd control under the most
+extreme conditions.
+
+ThunderCorp Arms
+
+Availability: Controlled
+
+Cost: $750
+
+Mass: 3.5 kg
+
+Length: 65 cm
+
+Payload: Compressed air
+Accuracy: -1
+
+Actions: 2
+
+Mode: F
+
+Type/Firepower: LI/0
+
+Damage: d6+3s/d8+3s/d12+3s
+Range: 20/40/200 meters
+
+Hide: —
+
+Clip/charge Size: 12 shots
+Clip/charge Cost: $70
+
+Skill: Modern Hanged Weapons—rifle
+
+In situations where you're only going to get one chance to
+stun an opponent, the stutter rifle’s a good choice. Tt offers
+a longer range, more hitting power, and better accuracy
+than any other stutter weapon, making it perfect for tak-
+ing out a problem with one clean shot at distance. The
+Siroceo is renowned as a scout’s weapon, durable and
+effective; last year it won Merrick’s Triple-Bullseye for
+best in class.
+
+T,
+
+=iy
+

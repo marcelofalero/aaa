@@ -1,0 +1,78 @@
+items:
+- name: IsoMep ARTIFICIAL BLooD
+  pl: '7'
+  mass: 2 kg
+  cost: Common
+  avail: Any
+  description:
+    en: Artificial blood comes as a ready-to<｜begin▁of▁sentence｜> to mix in a folded
+      plastic bag. The medic simply adds one liter of common tap water to the bag
+      and gives it a good shake (the bag has a mass of 2 kg when full). Administering
+      artificial blood increases the amount of wound damage healed through use of
+      the Bnowledge—first aid or Medical Science-treatment skills by 1 point. Artificial
+      blood can also be used to help stabilize a character who has sustained mortal
+      damage; one dose provides a -2 step bonus to the victim's next Stamina-endurance
+      check.
+    es: El sangre artificial sale como una pasta lista para<｜begin▁of▁sentence｜> mezclar
+      en un bolsillo plástico enrollado. El médico simplemente añade un litro de agua
+      común a la bolsa y le da una buena rodada (la bolsa tiene una masa de 2 kg cuando
+      está llena). Administra el sangre artificial para aumentar la cantidad del daño
+      herido que se recupera con la habilidad de primera ayuda o Medicina-treatment
+      skills por un punto. El sangre artificial también puede ser utilizado para ayudar
+      a estabilizar a un personaje que ha sufrido el daño mortal; una dosis proporciona
+      un bono -2 al próximo control de la capacidad de fuerza y resistencia del víctima.
+  name_es: ARTEFICIAL BLuO D de IsoMep
+- name: Artificial Skin
+  pl: '7'
+  mass: 0.1 kg
+  cost: '50'
+  avail: Common
+  description:
+    en: Artificial skin is a special adhesive bandage that can be molded and shaped
+      to the exact contours of an injury. It's an outstanding pressure bandage that
+      quickly brings most bleeding under control, as well as an aseptic dressing that
+      won't come loose or require changing under most circumstances.
+    es: La piel artificial es un bandajo de adherencia especial que se puede mordelar
+      y reformar para las curvas exactas de una lesión. Es una banda de presión excepcionalmente
+      eficaz que rápidamente controla la mayoría de la sangre, además de un traje
+      aseptico que no desintegrará o requerirá cambios en la mayoría de los casos.
+  name_es: Piel Artificial
+- name: Bone Graft
+  pl: '7'
+  mass: 0.5 kg
+  cost: $500
+  avail: Controlled
+  description:
+    en: A gel-like substance that can be shaped and molded easily when first removed
+      from its container. However, it hardens into a tough organic cement after an
+      hour or so. It's used with an arthroscapic art syringe-like applicator to knot
+      broken bones in the span of an hour. As soon as the graft sets, the victim recovers
+      full use of the limb, although the injured area typically remains sore and tender
+      for a week or more. After 40 to 60 days, the bone graft disintegrates, having
+      served its purpose as an internal cast and matrix for bone regrowth.
+    es: Una sustancia gelífera que se puede hacer y moldear fácilmente cuando se retira
+      por primera vez de su contenedor. Sin embargo, dura en un hueso ósico duradero
+      después de una hora o más. Se utiliza con un arcoíris ósicoarticular similar
+      a una siringa para coser huesos rotos durante la misma hora. Cuando el adhesivo
+      se pone, la víctima recupera todo el uso del miembro, aunque el área herida
+      típicamente queda dolorosa y fresca por un tiempo considerable. Después de 40
+      a 60 días, el adhesivo huesar disuelve, sirviendo como una obra interna para
+      la regeneración de huesos.
+  name_es: Gusano Sellado
+- name: Neural Stimulator
+  pl: '7'
+  mass: 10 kg
+  cost: $25,000
+  avail: Restricted
+  description:
+    en: 'A device that generates thousands of microcurrent pulses of electricity in
+      the subject''s brain and spinal cord. It is intended for use on characters who
+      have passed away. Applying it requires a successful Medical Science-treatment
+      skill check, with different bonuses depending on the result: -1 step bonus on
+      Good result, -3 steps bonus on Amazing result.'
+    es: 'Un dispositivo que genera miles de pulsos eléctricos microcortantes en la
+      mente y cuerpo espinal del sujeto. Está diseñado para su uso en personajes que
+      hayan muerto. Aplicando este dispositivo requiere una prueba de habilidad, Medical
+      Science-treatment, con diferentes bonificaciones según el resultado: un bonus
+      de 1 paso en la opción Buena y -3 pasos en la opción Excelente.'
+  name_es: Inyector Neuronal

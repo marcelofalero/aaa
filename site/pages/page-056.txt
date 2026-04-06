@@ -1,0 +1,75 @@
+Karadnya-Brusilev Industries
+
+Availability: Military
+
+Cost: 2,450
+
+Mass: 4 kg
+
+Length: 85 cm
+
+Payload: Gravity point-source
+
+Accuracy: -1
+
+Actions: 2
+
+Mode: F
+
+Type/Firepower: En/G
+
+Damage: d6+1w/d8+1w/d6+1m
+
+Range: 4/12/30 meters
+
+Hide: —
+
+Clip/charge Size: 8 shots
+
+Clip/charge Cost: $100
+
+Skill: Modern Ranged Weapons—rifle
+
+A larger and more powerful version of the mass pistal,
+the mass rifle sacrifices range and rate of fire for unbeat-
+able armor penefration. The AAMG (sometimes short-
+ened to “am-gee”) is a brand-new design from Karadnya-
+Brusilev, with several innovative features. It's the most
+accurate mass rifle on the market today, and its new
+charge cell technology doubles its magazine capacity
+compared to others of its type.
+
+U ERNOVA
+MBA Technologies, Inc.
+Availability: Restricted
+Cost: 6,825
+Mass: B.75 kg
+Length: 105 cm
+Payload: Gravity point-source
+Accuracy: 0
+Actions: 2
+Mode: F
+Type/Firepower: En/G
+Damage: d8+1w/d12+1w/d8+1m
+Range: 6/20/60 meters
+Hide: —
+
+Clip/charge Size: 8 shots
+
+Clip/charge Cost: #100
+
+Skill: Heavy Weapons—direct fire
+
+The mass cannon is something of a white elephant. While
+it's a powerful, hard-hitting gun, other heavy weapons hit
+just as hard with better range characteristics. The
+weapon’s designers hoped to follow up on the success of
+its smaller cousins by designing a true man-portahle
+antivehicular mass weapon, but they weren't able to
+achieve the kind of armor penetration increase they had
+hoped for.
+
+™\
+
+A
+

@@ -1,0 +1,105 @@
+gridwork for a launch pad, a radio transceiver and uplink
+for communications with the satellites, a desktop comput-
+er to manage things, and a robot orhiter—a small space-
+capable booster capable of lifting a satellite weighing 100
+kg into orbit. The orbiter itself is a collapsible saucer-
+shaped vehicle powered by induction motors and an
+onboard fusion generator. At 250 kg, it's the biggest piece
+of the facility, and it breaks down into twelve smaller
+pieces for easier transport. The other components weigh
+an additional 150 kg, and the whole thing can be trans-
+ported in a good-sized jeep, skycar, or by six men on foot.
+Setting up the facility for launch is a complex skill check
+using System Operation or Technical Science, requiring
+three successes (one check per five minutes).
+
+Satellites aren't included with the facility. Some of the
+models available include:
+
+Commsat: The commsat provides orbital communica-
+tions to any point in the hemisphere over which it's pass-
+ing. Three commsats can create continuous coverage
+over a whole planet. Each sat weighs 50 kg and costs
+85,000.
+
+Defsat: The defsat can engage space vessels in orbit.
+Its a flying mine armed with any missile warhead,
+destroying itself in the attack. It weighs 100 kg and costs
+$10,000 (specialized warheads may be much more
+EXpensive).
+
+Spysat: The spysat offers continuous surveillance of
+the planet below with its powerful cameras. It can detect
+human-sized figures in a path 10 kilometers wide. It
+takes thirty spysats to set up a pattern that can sweep
+every point on the planet’s surface once per day. Each
+weighs 100 kg and costs #15,000.
+
+Weathersat: The weathersat monitors atmospheric
+conditions and provides invaluable data for forecasting
+local and planetary weather. Six can create a network that
+provides a meteorologist with significant new data at B-
+hour intervals. Each weighs S0 kg and costs ¥5,000.
+
+Item 330100100, $12,000 base cost, 400 kg base
+mass, Controlled
+
+BERTEK LASER TORCH
+
+Nothing beats the cutting power of a high-intensity laser
+beam. Steel runs like water when you put this little beau-
+ty to work!
+
+By means of a special focusing ring, the torch-user can
+vary the cutting length of the beam with a simple dial
+Beyond the set focus distance, the laser beam rapidly dis-
+perses into harmless light. The torch’s lanth cells and las-
+ing mechanism are worn in a backpack, connected by
+fiber-optic line to a pistol-grip.
+
+The laser torch can handle cuts up to 30 cm deep in
+materials of Ordinary, Good, or Amazing toughness. A cut
+1 meter in length takes about 1 round per centimeter of
+depth, so cuttinga 1 m X 1 m hole in a wall 5 cm thick
+
+takes 20 rounds. The torch’s batteries have an endurance
+of 30 minutes (150 rounds) of heavy cutting. If the torch
+is employed as a weapon, the wielder must take a +3
+step penalty on his or her attack skill check. If the torch
+hits, it inflicts damage equal to a chainsword (d8+1w/
+dB+2w/d4+1m, but this damage is type En/A). Item
+300397544, $750, 10 kg, Common
+
+BerRTeExk Pump, PORTABLE
+
+Got water in one place when you need it someplace else?
+A portable pump sure beats a bucket brigade!
+
+Using the same kind of combustion engine that drives
+a portable generatar, the pump has a capacity of 2,000
+liters per minute with a level transfer. Pumping against
+Earth-normal gravity reduces the capacity by 100 liters
+per minute per meter of lift. The portable pump can run
+for an hour on a liter of Oxymite™ fuel; a full 10-liter tank
+is included with the pump. Additional fuel costs #10 and
+2 kg per liter, Item 340658577, 250, 30 kg
+
+RPV Kit
+
+When you need a bird's-eye view but you can't get a
+manned aircraft into the sky, a remote-piloted vehicle
+(BPV) may be just the compromise you're looking for.
+Don't wonder about what's over the next hill-send your
+drone to take a look!
+
+This useful kit consists of three major components: two
+RPVs and a control consale. Each RPV is a small aircraft
+powered by an induction engine, armed with vidcam and
+sensor pickups that continuously transmit back to the dis-
+play unit. The RPVs are about 1 meter long with a mass
+of 15 kg each, and the control unit is about the size of a
+desktop computer and masses 8 kg—the RPV kit is easi-
+ly transportable by one person.
+
+1N3WdIN03 ‘THNOISS340kd
+

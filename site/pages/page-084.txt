@@ -1,0 +1,121 @@
+The suit's lanthanide power cells provide up to 80
+hours of continuous operation for the onboard control
+module and heating/cooling elements. Instead of a bulky
+air tank, the Orbiter has a rebreather system vmh an oxy-
+genator cartridge that provides 12 hours of D%ina small,
+1-kg package (not included in the listed suit mass). The
+rebreather system includes two regulators and a switch
+valve, so you'll be able to change out oxygen cartridges
+in open space without interrupting your air supply—a big
+advantage over some competitors’ designs! Many experi-
+enced spacehands have recorded EVAs of 20 to 30 hours
+in the Orbiter C1, carrying two or three spare oxygen car-
+tridges.
+
+The Orbiter includes a multiband suit communicator
+with a range of 10,000 km in open space or 1,000 km
+on a planetary surface. Additional oxygenator cartridges
+cost $25 each, and additional power cells cost #50 each.
+
+=
+=
+)
+=
+—J
+—_
+=
+=
+-3
+>
+w
+=
+=
+—
+{ )
+=
+=
+-]
+.
+
+EXPLORER D9
+ARMORED ENVIRONMENT SUIT
+
+Availability: Controlled
+Cost: $4,500
+Mass: 12.5 kg
+Action Penalty: +2
+Environmental Tolerance:
+
+Gravity: GO-G3
+
+Badiation: RO-R4
+
+Atmosphere: AO-AS
+
+Pressure: PO-PS
+
+Heat: HO-H4
+LI/HI/En: d6-1/d6/d6-1
+Stock No.: 400AV2548
+
+If vacuum is only one of your environmental worries,
+you'll want the Explorer D9. Made from cerametal plate
+and ultratough polymere weave, its advanced materials
+actually get stronger under pressure. Because the suit is
+virtually impervious to any kind of terrestrial or subter-
+restrial environment, only the most intolerable heat or
+intense gravity can threaten a traveler wearing the
+Explorer.
+
+As with the Orbiter C1, the Explorer's onboard lanth
+cells provide enough power for 80 hours of continuous
+operation. Its heavy-duty rebreather system provides 12
+hours of oxygen in a 1-kg cartridge that can be changed
+out in any environment without interrupting the air sup-
+ply. For an extra 2,500, the Explorer can be fitted with
+an exoskeletal support system, permitting normal motion
+and activity in gravity up to G4, and increasing the wear-
+er's Strength score to 15 for purposes of lifting or break-
+ing objects.
+
+The Explorer's control module includes a multiband suit
+communicator with an open-space range of 10,000 km
+or 1,000 km on a planetary surface. Additional oxygena-
+
+B
+
+E-Suits AND DAMAGE
+
+E-suits are lined with a self-sealing, puncture-resistant
+inner layer. This prevents small tears, punctures, and
+cuts from depressurizing the suit. In the Gravity Age,
+the ability of e-suits to retain their integrity despite
+being damaged is improved over the durability of ear-
+lier versions. When the wearer of a soft e-suit is struck
+by an attack, the suit loses integrity only if the wearer
+suffers 4 points or more of primary wound or mortal
+damage (ie,, the wound or mortal damage exceeds the
+armor roll of the suit by 4 points or more). For exam-
+ple, if a suited character is struck by a 8mm bullet that
+inflicts 5 wound points of damage, his suit is breached
+only if he gets a result of 1 (ar lower)
+roll. On the other hand, a plasma gun
+' points of wound damage will breach the suit
+armar roll is a 4 or lower, since at least 4 points of pri-
+mary damage will penetrate. Hard e-suits are only
+breached if the wearer suffers 4 points or mare of
+mortal damage.
+
+When a suit loses integrity, the wearer usually per-
+ishes quickly from exposure to vacuum. However, all
+suits include a suit patch kit in a thigh or hip pocket.
+Patching the suit requires a single successful Technical
+Science—repair skill check by the injured hero or
+someone near enough to aid him, and the character
+may attempt one check per action. If he's lucky, he'll
+patch the suit before perishing from exposure to vac-
+uum (see “PO: Vacuum” in Chapter 3 of the ALTERNITY
+Gamemaster Guide).
+
+[Explorer D9 Armored E-Suit
+

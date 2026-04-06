@@ -1,0 +1,141 @@
+(¥}
+=
+[
+—_
+=
+[
+—
+=1
+Lt
+
+middle-class or upper-class home and most places of
+business. Even lower-class abodes are likely to have a
+battered old desktop just to stay in touch. Desktops come
+with a 3D drive and a datastream jack.
+
+Quality Cost Active Memory
+Marginal $1,000 4 slots
+Ordinary §2,000 6 slots
+Good %3,000 8 slots
+Amazing $4,000 10 slots
+
+C. Gauntlet. Computers in the Gravity Age are so ubig-
+uitous and necessary that manufacturers are constantly
+searching for lighter and more comfortable platforms. The
+computer gauntlet is one of the newer and more popular
+maodels. This device appears as a forearm-mounted key-
+board and flatscreen. It includes a 30 drive, a datastream
+jack, and a built-in pointer interface—a mouse device
+operated by the hand on which the gauntlet is worn. The
+computer gauntlet's cost and power are summed up on
+the previous page, under the microcomputer entry.
+
+PROFESSIONAL GAUNTLET
+CSP290711
+
+Class: Computers
+
+Availahility: Controlled
+
+Cost: #1,000+ (see below)
+
+Mass: 2 kg
+
+Dim: 35 cm X 12 cm X 10 cm (approx.)
+
+A. Medical Gauntlet. Based on the computer gauntlet
+(see above), this model sacrifices some processar power
+in exchange for a compact suite of medical scanners and
+materials. In addition to the onboard computer and med-
+ical programs, the gauntlet includes a blood sampling and
+testing module, a magnetic resonating scanner module,
+and first aid supplies equivalent to a trauma pack I (see
+page 22). The gauntlet provides a -1, -2, or -3 step
+bonus (for an Ordinary, Good, or Amazing-quality device)
+to the user’s Medical Science or first aid skill checks.
+
+The medical gauntlets computing power varies by
+quality, as shown below:
+
+Quality Medical Professional Active Memory
+
+Marginal ~ $3,000 §1,000 3 slots
+Ordinary 4000  %2,000 5 slots
+Good %5000 $3.000 7 slots
+Amazng 6000 $4,000 9 slots
+
+B. Professional Gauntlet. Like the medical gauntlet, a
+professional gauntlet is a variation on the computer
+gauntlet that sacrifices processor power in exchange for
+sensors or interfaces that are especially useful in another
+field. Most of these are less extensive than the sophisti-
+cated suite of a medical gauntlet, so professional gauntlets
+
+ﬁ
+
+are generally much cheaper. A professional gauntlet pro-
+vides a -1, -2, or -3 step bonus to the appropriate skill
+checks. Available models include:
+
+Ops Gauntlet: Equipped with a console interface, the
+ops gauntlet aids in System Operation skill checks.
+
+Pilot Gauntlet: Nav modules and reflex boosters aid in
+Vehicle Operation and Navigation skill checks.
+
+Science Gauntlet: The gauntlet includes databases in all
+scientific fields, providing a bonus to Life Science,
+Physical Science, or Technical Science skill checks.
+
+Tactics Gauntlet: This gauntlet includes special terrain
+displays, comm gear circuits, and weapon readouts that
+allow an officer to track the location of soldiers under his
+command and coordinate their efforts. It aids Tactics and
+Leadership skill checks.
+
+Security Gauntlet: Fitted with a broadband emission
+detector to detect electric eyes and internal comms, this
+gauntlet aids Security skill checks.
+
+GRIDWARE CSG300696
+
+Class: Computers
+
+Availahility: Controlled
+
+Cost: 1,000+ (see below)
+
+Mass: (A, B) 2 kg; (C) 500 g.
+
+Dim: (A) 35 cm X 12 cm X 10 cm (approx.)
+(B) 20 cm diameter X 15 cm tall
+(C)10cm X Scm X 2 cm
+
+A. Gridcaster Gauntlet. The gridcaster is simply a
+powerful computer gauntlet with a special neural inter-
+face jack designed to mate with the wearer’s cytronic cir-
+cuitry. It provides a -1, -2, or -3 step bonus to Computer
+Science skill checks for a gauntlet of Ordinary, Good, or
+Amazing quality.
+
+Quality Gauntlet Helmet  Active Memory
+Marginal $1,500 2,500 4 slots
+Ordinary §2,5500 §4,500 7 slots
+Good %4000 $6,500 10 slots
+Amazing $5,000 8,500 12 slots
+
+B. Gridcaster Helmet. The gridcaster helmet resem-
+hles the gridcaster gauntlet in all important details, except
+that it doesn’t have any kind of external interface; it's
+operated through the wearer’s NJacks. The helmet pro-
+vides a +1 point increase to all Ability Scores generated
+for a shadow while wearing the device, but the user is
+oblivious to the outside world while immersed in the Grid.
+
+C. Homesite Unit. Millions of people maintain person-
+al or business-oriented homesites, analogous to the web-
+sites of the Information Age. However, a homesite is far
+more complex and personalized than an old-fashioned
+web address; it's a complete virtual environment tailored
+to its owner’s taste, a form of expression and creativity in
+

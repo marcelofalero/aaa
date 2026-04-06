@@ -1,0 +1,110 @@
+. ’
+
+Type/Firepower: En/0 ,-f
+D a m a g e
+d6+1w/d6+3w/d4+1m
+Hange: 20/80/200 meters
+Hide: —
+Clip/charge Size: 10 bursts
+Clip/charge Cost: $75
+Skill: Modern
+
+Ranged Weapons-SMG
+
+The largest and most power-
+ful autolaser available, the
+Valkyrie offers damage equal to a laser rifle with full
+automatic fire. While many people refer to the autolaser
+as a laser submachine gun, this is a misnomer—the
+device is not a machine gun and has little in common with
+any conventional firearm. Bursts or full-auto attacks with
+this weapon are actually sweeps and slashes of its white-
+hot beam.
+
+STUTTER WEAPONS
+
+Popular with police and riot troops, stutter weapons expel
+blasts of compressed air that can knock out subjects with-
+out causing serious injury. Used carelessly, stutter
+weapons can cause concussions, broken bones, or lung
+injuries, and there are a number of recorded instances in
+which people have died from accumulated stutter gun
+fire.
+
+FALCON T9 STUTTER PisToL
+SekureTek Group
+Availahility: Common
+Cost: #375
+Mass: 0.75 kg
+Length: 20 cm
+Payload: Compressed air
+Accuracy: 0
+Actions: 3
+Mode: F
+Type/Firepower: LI/0
+Damage: d6+2s/d8+2s/dB+4s
+Hange: 4/8/20 meters
+Hide: +4
+Clip/charge Size: 10 shots
+Clip/charge Cost: $50
+Skill: Modern o
+
+Hanged.§ ‘
+
+Weapons—pistol
+
+One of the most
+popular handguns
+in human space, the
+Falcon T9 is syn-
+
+onymous with reasonably priced, nonlethal personal
+defense. It's lighter and slimmer than the standard stutter
+pistol, trading range and clip capacity for easy conceal-
+ment and use by people who aren't highly trained. “Point
+and say good-night” is the tag line for SekureTek’s Falcon
+ads, and it's just about that easy.
+
+ConNDOR X7
+
+SekureTek Group
+Availahility: Common
+Cost: #850
+
+Mass: 1.25 kg
+
+Length: 25 cm
+
+Payload: Compressed air
+Accuracy: 0
+
+Actions: 3
+
+Mode: F
+Type/Firepower: LI/0
+Damage: d6+3s/d8+3s/d12+3s
+Hange: 8/16/40 meters
+Hide: +1
+
+Clip/charge Size: 8 shots
+Clip/charge Cost: $60
+
+STUTTER PisToL
+
+T — = —
+
+p ™
+"{[ E
+|
+
+|
+Liidy ,
+Skill: Modern Ranged Weapons—pista/
+Professional peacekeepers prefer a more capable
+weapon than the light stutter pistols favored for personal
+defense. The Condor is an example of the heavy stutter
+pistol, a weapon designed for the subdual of armed, dan-
+gerous criminals. One hit almost always dazes or knocks
+out an unarmored opponent, and even armored targets
+can be brought down with accurate and sustained fire.
+

@@ -1,0 +1,62 @@
+HOWHY JTLLHE NIW JLINOHLIN
+
+Pressure: n/a
+
+Heat: n/a
+Action Penalty: +1
+Toughness: Ordinary
+LI/HI/En: d4+2/d6/d6
+Hide: +1
+Effective Strength: n/a
+Skill: Armor Operation
+
+The Bushmaster is a tight-fitting garment of extremely
+fine cerametal chain mail. It covers the wearer from the
+neck to the knee, and is surrounded by layers of carbon-
+ate fiber weave. Designed for use on worlds with dan-
+gerous lifeforms, it's especially resistant to cutting, slash-
+ing, and tearing-type attacks. It's tougher than any lighter
+armar, and lighter than any tougher type of armor, offer-
+ing a good compromise of flexibility, light mass, and pro-
+tection. A strong swimmer can easily manage the
+Bushmaster’s mass, and the vented padding quickly airs
+out after an immersion in water.
+
+OR, POWERED
+TANK)
+Powered by a high-density array of lanthanide capacitors,
+
+the body tank is the heaviest personal armor available.
+Its composed of neutronite alloy, a superdense material
+
+Cerametal Mail
+
+several times heavier than lead (fortunately, a little neu-
+tronite goes a long way). The armor's batteries can anly
+power 12 hours of intense action, or 72 hours of inter-
+mittent activity, so main battle armor is typically reserved
+for intense shock assaults—maintaining a standing
+armored force in the field is very difficult
+
+ABM-5 PALADIN BATTLE ARMOR
+General Arms Manufacturing
+Availahility: Restricted
+Cost: ¥25,000
+Mass: 60 kg
+Composition: Neutronite alloy
+Environmental Tolerance:
+Gravity: G1-G4
+Hadiation: RO-R4
+Atmosphere: A0-A4
+Pressure: P0-P4
+Heat: H1-H3
+Action Penalty: +4
+Toughness: Good
+LI/HI/En: 2d4+1/2d4+1/2d4
+Hide: —
+Effective Strength: 16
+Skill: Armor Operation-powered armor
+
+The Paladin is the standard powered armor suit of the
+Concord Marines and Planetary Defense Force. Its servo-
+

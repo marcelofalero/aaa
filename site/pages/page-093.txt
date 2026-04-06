@@ -1,0 +1,59 @@
+ARMOR, SHIELDS, AND E-SuiTs
+
+[¥-)
+pr
+
+Skill AP Type LI/ HI/En Hide Mass Avail Cost
+Batilshawk Zero-G Assault Gear  combat  +2 0 d6-1/d6 / d6-1 - 8 Con 3250
+Scout 230 AET Assault Gear combat  +2 0 d6 / d8 / d-1 = 2 Mil 4400 ‘
+BodyGuard Ballistic Vest - 0 0 d6-1/d6 / d6-2 +3 3 Com 750 Yo
+Landsknecht 34 Ballistic Jacket Armor Op +1 0 d6-1/d4+1/d4-1 +1 B Con 1650 §
+Haramaki 200 CF Coat (long) = 1) 0 d4 / d4 / d6-2 +3 3 Com 800 ==
+Haramaki 100 CF Coat (chort) =~ 1] 1] d4-1/d4-1/ d6-3 +3 2 Com 500 ;
+Milana 6X CF Bodysuit - 0 0 d8-1/d8-1/ds +2 3 Con 2250 =
+Dauntless 29 Attack Armor combat ~ +2 1) d4+2 / d6+2 / dé = 12 Con 3300 =
+Tiger mod 6 Powered Armor powered +2 G db+1/d6+2/ d6 = 25 Ml 9000 =
+ACN 4 Cerametal Armor combat  +2 0  d6+1/d8+1/d6 - 10 Mil 2000 [
+Buchmaster Cerametal Mail Armor Op +1 i} d4+2 / d6 / dB S| 7 Con 2650 o
+ABM-5 Paladin Battle Armor powered  +4 G 2d4+1/2d4+1/ 2d4 - B0 Bes 25000
+ABS-11 Dragoon Becon Armar powered  +3 G 2d4+2 /2d4+2/ 2dd+1 - 50 Bes 35000
+AAS-23 Titan Assault Armor powered  +5 G 3d4 /3d4 / 2d4+2 = 80 Hes 50000
+Aegis 650 Cerametal Shield combat  +2 o +2/+27+2 - 18 Com 225
+SAI Powered Shield powered  +1 0 +3/4+2/+2 = 8 Con  B500
+Rampart Deflection Inducer - 1] o 27 42141 +4 12 Con 1350
+Anvil 44 Magnetic Screen - a o +3% 43"/ 42° o 35 Res 7500
+Alpha 50 Particle Screen powered  +1 o d6-3 / d6-2 / d8-2 -3 12 Mil 8500
+SCM-16 Capacitor Screen powered  +1  G(A) Special -2 85 BRes 15750
+Ehe! burund combat  +1 o d6 / d6-2 / dB-2 -2 12 Con 3500
+Piokh K'se = 0 o dB+1/d6 / d6-1 +2 2 Com 800
+Bellweyn sil - 0 o d6 / d6-1/ dB-1 - 2 Con 6500
+Had'niltas powered  +1 0 2d4 / d6+1/ 2d4+1 +1 12 Hes 25000
+Sunrunner 60 Climate Suit = 0 0 d4-2/d6-3/d6-4 = 1 Com 825
+Orbiter C1 Soft Environment Suit - +1 0 d6-3/d6-2/d4-2 = 25 Com 1500
+Explorer D8 Armored E-Suit - +2 o d6-1/d6 / d6-1 7 125 Con 4500
+VEHICLES
+Vehicle Skill Drv  Acc  Cruise  Max  Type Dur  Avail  Cost
+Solar X Grizzly ATV Groundcar Land =1 40 120 240 G 14/14/7 Com 55595
+Salar X Candor Skycar Air =1 200 1000 3000 G 12/12/6 Com 41225
+Salar X Invader ATV Cycle Land 0 60 100 150 G 5/5/3 Com 8985
+Solar X Falcon Sky Cycle Air —2 . ‘250 600 1200 G 4/4/2  Com 20295
+Solar X Sparrow Gravbelt Air +1 50 200 400 a 3/3/2 Com 10985
+Solar X Spinnaker Parafoil Air = 10 40 80 o 8/8/4 Com 3735
+Hermes-class Courier Space -1 &M 2AU - A Hull 16/4 Con
+Nike-class Gunboat Space 1] 2M 1.5AU - A Hull 40/8 Bes
+Gull-class Launch Space -1 3M 2A0 - G Hull 8/2 Any
+CYBERNETIC EQUIPMENT
+Cost per Quality Cost per Quality
+Item Mass Size O B A Item Mass Size O G A
+Artificial Ear 0.1 1 1000 2000 4000  Deflection Web ) 2 3500 -
+Artificial Eye - 1 1000 2000 4000  General Purpose Implant:
+enhanced = 1 2000 4000 8000 Ordinary 1 2 %500 -
+Scanner Implant: Good 8 3 - 1000
+Ordinary e L SR Amazing G S
+Good = 1 = 2300 = Comm Port 01 - 500 1500
+Amazing = = = — 3750  Gunsight 01 — 1500 2500
+Endoskeleton 15 3 4000 6000 B0OO  System Link 03 1 1000 2000
+Subdermal Armor 15 2 1500 3000 6000  Accelerator 0075 - 2500 S000
+Systemic Reinforcement 4 — 5000 10000 15000 Nanocomputer 0.15 1 2000 3000
+Cortex Bomb 0.1 1 1500 - -
+

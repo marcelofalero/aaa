@@ -1,0 +1,81 @@
+The most common weapon in military inventaries to this
+day, the charge rifle and its cousins provide an excellent
+comhbination of range, rate of fire, hitting power, durabili-
+ty, and affordability. While more powerful energy
+weapons are beginning to replace the charge rifle, few
+can provide more firepower at a hetter price.
+
+Karadnya-Brusilev Industries
+Availability: Military
+
+Cost: $2,000
+
+Mass: 2.75 kg
+
+Length: 80 cm
+
+Payload: 6mm bullet
+Accuracy: -1
+
+Actions: 3
+
+Mode: B/A
+
+Type/Firepower: HI/0
+Damage: d6w/2d4w/d4+1m
+Hange: 60/150/400 meters
+Hide: —
+
+Clip/charge Size: 30 bursts
+Clip/charge Cost: $125
+
+Skill: Modern Ranged Weapons-rifle
+
+E
+
+Autorifles are light weapons with a very high rate of fire,
+intended for assault or support roles. The ARZ is one of
+the mast popular of these designs; originally produced by
+Karadnya-Brusilev of Nariac, its now manufactured
+under license in the Thuldan Empire and the Solar Unian.
+The model shown here is fitted with the standard 100-
+round magazine, which provides the soldier with plenty
+of amma.
+
+Dietterlich Industries
+Availahility: Military
+
+Cost: ¥1,750
+
+Mass: 2.25 kg
+
+Length: 35 cm
+
+Payload: 9mm bullet
+Accuracy: 0
+
+Actions: 4
+
+Mode: B/A
+
+Type/Firepawer: HI/0
+Damage: d4+1w/d6+1w/d4m
+Range: 20/50/100 meters
+Hide: +1
+
+Clip/charge Size: 8 bursts
+Clip/charge Cast: $100
+
+Skill: Modern Ranged Weapons—-SMG
+
+The Bulldog is a fine example of a sec-
+ond-generation weapon. Many of the
+flaws of earlier charge SMGs were cor-
+rected in this design. Its compact and
+sturdy, standing up to the worst field
+conditions. The most innovative feature
+is a recoil suppression system that con-
+trols the natural tendency of an auto-
+matic weapon to “walk” when fired in
+full auto—the Bulldog’s accuracy is leg-
+endary.
