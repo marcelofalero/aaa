@@ -7,13 +7,16 @@ weight = 10
 
 You didn't train at a prestigious academy or fight under a planetary flag. You learned to command in the grueling, profit-driven world of private military companies or local militias, where logistics are scarce and victory goes to the pragmatic.
 
+## Favored Broad Skill:
+*   None.
+
 ## Favored Specialty Skills:
 *   [Leadership-Command](/skills/leadership/#command)
 *   [Tactics-Infantry Tactics](/skills/tactics/#infantry-tactics)
 *   [Business-Small Business](/skills/business/#small-business)
 *   [Modern Ranged Weapons-Assault Rifle](/skills/modern-ranged-weapons/#rifle)
 
-## Automatic Perk:
+## Favored Perks:
 *   [Reputation](/perks_flaws/#reputation)
 
 ## Automatic Flaw:

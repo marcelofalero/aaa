@@ -1,0 +1,36 @@
+{{ define "header" }}
+   {{/* We can override any block in the baseof file be defining it in the template */}}
+  {{ partials.Include "page-header.html" . }}
+{{ end }}
+
+{{ define "main" }}
+  {{ $page := .}}
+  {{ $section := .Site.GetPage "section" .Section }}
+
+  {{/* Calculate a unique class for this post */}}
+  {{- $post_class := "" -}}
+  {{- with .File -}}
+    {{- $post_class = printf "page-%s" .ContentBaseName -}}
+  {{- end -}}
+
+  <article class="{{ $post_class }} main-container">
+    <header class="mt4 w-100">
+      {{ partial "breadcrumbs.html" . }}
+      
+      <h1 class="f1 athelas mt3 mb1">
+        {{ .Title }}
+      </h1>
+      
+      {{ if (or (compare.Eq (.Param "show_reading_time") true) (compare.Eq $section.Params.show_reading_time true) )}}
+        {{ $readingTime := .ReadingTime }}
+        <span class="f6 mv4 dib tracked"> - {{ lang.Translate "readingTime" $readingTime }} </span>
+        <span class="f6 mv4 dib tracked"> - {{ lang.Translate "wordCount" .WordCount }} </span>
+      {{ end }}
+    </header>
+    <div class="nested-copy-line-height lh-copy {{ $.Param "post_content_classes"  | compare.Default "serif"}} f4 nested-links {{ $.Param "text_color" | compare.Default "mid-gray" }} {{ compare.Conditional (compare.Eq $.Site.Language.LanguageDirection "rtl") "pl4-l" "pr4-l" }} w-100-l">
+      {{- .Content -}}
+      {{- partials.Include "tags.html" . -}}
+    </div>
+
+  </article>
+{{ end }}

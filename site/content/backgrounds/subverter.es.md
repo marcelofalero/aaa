@@ -7,16 +7,16 @@ weight = 17
 
 Usas tu arte no para las galerías, sino para las calles. Eres un propagandista, un hacker de espacios públicos y un agitador que sabe que una imagen bien colocada puede hacer más daño que una bomba.
 
-## Habilidad Amplia Gratuita:
+## Habilidad Amplia Favorecida:
 *   [Creatividad](/skills/creativity/)
 
-## Habilidades Especializadas Favoritas:
+## Especialidades Favorecidas:
 *   [Creatividad-Habilidad Específica](/skills/creativity/#creativity-specific-skill) (ej. arte holográfico, graffiti público o diseño de propaganda)
 *   [Engaño-Farolear](/skills/deception/#bluff)
 *   [Operaciones Encubiertas-Sigilo](/skills/covert-ops/#stealth)
 *   [Liderazgo-Inspirar](/skills/leadership/#inspire)
 
-## Ventaja Automática:
+## Perks Favorecidos:
 *   [Aliado Poderoso](/perks_flaws/#powerful-ally) (Un movimiento de resistencia clandestino, un colectivo anarquista o un grupo de hackers descentralizado).
 
 ## Desventaja Automática:

@@ -7,18 +7,18 @@ weight = 2
 
 La vida en las calles te enseñó a sobrevivir, pero te dejó con un nombre que las autoridades no olvidarán.
 
-## Habilidad Amplia Gratuita:
+## Habilidad Amplia Favorecida:
 
 *   [Pillería](/skills/street-smart/)
 
-## Habilidades Especializadas Favoritas:
+## Especialidades Favorecidas:
 *   [Pillería-Conocimiento Callejero](/skills/street-smart/#street-knowledge)
 *   [Operaciones Encubiertas-Carterista](/skills/covert-ops/#pickpocket)
 *   [Operaciones Encubiertas-Sigilo](/skills/covert-ops/#stealth)
 *   [Engaño-Soborno](/skills/deception/#bribe)
 *   [Seguridad-Dispositivos de Seguridad](/skills/security/#security-devices)
 
-## Ventaja Automática:
+## Perks Favorecidos:
 *   Ninguna.
 
 ## Desventaja Automática:

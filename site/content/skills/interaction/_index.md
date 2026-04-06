@@ -60,13 +60,6 @@ This specialty skill represents a character's ability to change the attitudes of
 
 ---
 
-## Interrogate (WIL)
-
-
-Interrogate is the skill used to get information from an uncooperative subject. It involves coercion, either physical or psychological.
-
----
-
 ## Interview (PER)
 
 

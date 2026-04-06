@@ -7,13 +7,16 @@ weight = 13
 
 You are an autonomous legal entity, granted the rare authority to use psionic powers openly. You act as an arbiter in high-stakes negotiations and possess the legal right to probe minds in situ if you determine there is reasonable cause.
 
+## Favored Broad Skill:
+*   None.
+
 ## Favored Specialty Skills:
 *   [Telepathy-Mind Reading](/skills/telepathy/#mind-reading)
 *   [Law-Court Procedures](/skills/law/#court-procedures)
 *   [Interaction-Interview](/skills/interaction/#interview)
 *   [Resolve-Mental Resolve](/skills/resolve-con/#mental-resolve)
 
-## Automatic Perk:
+## Favored Perks:
 *   [Reputation](/perks_flaws/#reputation)
 
 ## Automatic Flaw:

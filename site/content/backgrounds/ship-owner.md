@@ -7,13 +7,16 @@ weight = 14
 
 You hold the keys to the most valuable asset in the galaxy: a starship. However, that kind of hardware isn't cheap, and you signed your soul away to a cartel, bank, or shadowy benefactor to get it.
 
+## Favored Broad Skill:
+*   None.
+
 ## Favored Specialty Skills:
 *   [Vehicle Operation-Space Vehicle](/skills/vehicle-operation/#space-vehicle)
 *   [Business-Small Business](/skills/business/#small-business)
 *   [Leadership-Command](/skills/leadership/#command)
 *   [Administration-Management](/skills/administration/#management)
 
-## Automatic Perk:
+## Favored Perks:
 *   None.
 
 ## Automatic Flaw:

@@ -4,36 +4,48 @@ description = "Guerreros y expertos tácticos."
 weight = 1
 +++
 
-# Combat Spec
+# Especialista en Combate (Combat Spec)
 
-Combat Specialists (Combat Specs) are the primary warriors of the AAA universe. They rely on physical power, endurance, and rigorous training in the tactics and techniques of battle.
+Los Especialistas en Combate (Combat Specs) son los guerreros principales del universo AAA. Dependen de su poder físico, resistencia y un riguroso entrenamiento en las tácticas y técnicas de batalla.
 
-## Requirements
+## Requisitos
 - **STR 9+, CON 9+**
 
-## Profession Benefits
-- **Action Check Increase:** +3 to your Action Check score.
-- **Combat Bonus:** Choose one combat specialty skill (from Melee Weapons, Unarmed Attack, or any Ranged/Heavy weapon skill). That skill's base situation die improves from +d0 to -d4.
+## Beneficios de Profesión
+- **Incremento en la Tirada de Acción:** +3 a tu puntuación de Tirada de Acción.
+- **Bonificación de Combate:** Elige una especialidad de combate (de Armas de Melé, Ataque Desarmado o cualquier habilidad de arma a Distancia/Pesada). El dado de situación base de esa habilidad mejora de +d0 a -d4.
 
-## Favored Skills (Cost: List Price - 1)
+## Habilidades Amplias Favorecidas (Coste: Precio Estándar - 1)
+- **Operación de Armadura**
+- **Atletismo**
+- **Armas Pesadas**
+- **Combate Cuerpo a Cuerpo**
+- **Armas a Distancia Modernas**
+- **Armas a Distancia Primitivas**
+- **Demoliciones**
+- **Interacción**
+- **Liderazgo**
+- **Resolución**
+- **Operación de Sistemas**
+- **Tácticas**
 
-The following skills are central to the Combat Spec profession and are easier for these characters to master.
+## Especialidades Favorecidas (Coste: Precio Estándar - 1)
+- **Operación de Armadura:** (Todas)
+- **Atletismo:** (Todas)
+- **Armas Pesadas:** (Todas)
+- **Combate Cuerpo a Cuerpo:** (Todas)
+- **Armas a Distancia Modernas:** (Todas)
+- **Armas a Distancia Primitivas:** (Todas)
+- **Demoliciones:** Desactivar, Colocar explosivos
+- **Interacción:** Intimidar
+- **Liderazgo:** Mando
+- **Resolución:** Resolución física
+- **Operación de Sistemas:** Defensas, Armas
+- **Tácticas:** (Todas)
 
-### Primary Combat Skills
-- **Armor Operation:** Combat armor, Powered armor
-- **Heavy Weapons:** Direct fire, Indirect fire
-- **Melee Weapons:** Blade, Bludgeon, Powered weapon
-- **Unarmed Attack:** Brawl, Power martial arts, Subtle martial arts
-- **Modern Ranged Weapons:** Energy weapon, Firearm
-- **Primitive Ranged Weapons:** Bow, Crossbow, Sling
-
-### Tactical & Physical Skills
-- **Resolve:** Physical resolve
-- **Tactics:** Infantry tactics, Space tactics, Vehicle tactics
-- **Athletics:** (Broad skill and all specialties)
-
-### Technical & Leadership Skills
-- **Demolitions:** Disarm, Set explosives
-- **System Operation:** Defenses, Weapons
-- **Interaction:** Intimidate
-- **Leadership:** Command
+## Perks Favorecidos (Coste: Precio Estándar - 1)
+- Enfoque en Especialidad (Specialty Skill Focus) (Cualquier habilidad de especialidad favorecida por esta profesión)
+- Puños de Hierro (Fists of Iron)
+- Duro como el Acero (Tough as Nails)
+- Reflejos (Reflexes)
+- Fuerza de Voluntad (Willpower)

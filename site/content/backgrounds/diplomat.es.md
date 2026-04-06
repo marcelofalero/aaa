@@ -7,13 +7,16 @@ weight = 1
 
 Fuiste criado en los pasillos del poder, donde el protocolo es un arma y la reputación lo es todo.
 
-## Habilidades Especializadas Favoritas:
+## Habilidad Amplia Favorecida:
+*   Ninguna.
+
+## Especialidades Favorecidas:
 *   [Cultura-Etiqueta](/skills/culture/#etiquette-specific)
 *   [Administración-Burocracia](/skills/administration/#bureaucracy)
 *   [Interacción-Encanto](/skills/interaction/#charm)
-*   [Interacción-Negociar](/skills/interaction/#bargain)
+*   [Interacción-Regatear](/skills/interaction/#regatear)
 
-## Ventaja Automática:
+## Perks Favorecidos:
 *   [Reputación](/perks_flaws/#reputation)
 
 ## Desventaja Automática:

@@ -7,6 +7,9 @@ weight = 6
 
 You come from a place where technology is magic and survival is the only law.
 
+## Favored Broad Skill:
+*   None.
+
 ## Favored Specialty Skills:
 *   [Survival-Survival Training](/skills/survival/#survival-training)
 *   [Athletics-Climb](/skills/athletics/#climb)
@@ -14,7 +17,7 @@ You come from a place where technology is magic and survival is the only law.
 *   [Awareness-Perception](/skills/awareness/#perception)
 *   [Covert Ops-Stealth](/skills/covert-ops/#stealth)
 
-## Automatic Perk:
+## Favored Perks:
 *   None.
 
 ## Automatic Flaw:

@@ -7,7 +7,7 @@ weight = 17
 
 You use your art not for the galleries, but for the streets. You are a propagandist, a hacker of public spaces, and an agitator who knows that a well-placed image can do more damage than a bomb.
 
-## Free Broad Skill:
+## Favored Broad Skill:
 *   [Creativity](/skills/creativity/)
 
 ## Favored Specialty Skills:
@@ -16,7 +16,7 @@ You use your art not for the galleries, but for the streets. You are a propagand
 *   [Covert Ops-Stealth](/skills/covert-ops/#stealth)
 *   [Leadership-Inspire](/skills/leadership/#inspire)
 
-## Automatic Perk:
+## Favored Perks:
 *   [Powerful Ally](/perks_flaws/#powerful-ally) (An underground resistance movement, anarchist collective, or decentralized hacker group).
 
 ## Automatic Flaw:

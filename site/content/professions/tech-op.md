@@ -13,26 +13,38 @@ Technical Operatives (Tech Ops) are masters of the high-tech universe. Whether t
 
 ## Profession Benefits
 - **Action Check Increase:** +1 to your Action Check score.
-- **Accelerated Learning:** You gain extra skill points as you level up, representing your ability to quickly master new technologies.
+- **Technical Specialization:** You have a permanent -1 step bonus on specialty skill checks of one of the following broad skill: Computer Science, Life Science, Medical Science, Physical Science, or Technical Science. The broad skill chosen will greatly influence your future reputation.
 
-## Favored Skills (Cost: List Price - 1)
+## Favored Broad Skills (Cost: Standard Price - 1)
+- **Acrobatics**
+- **Computer Science**
+- **Demolitions**
+- **Life Science**
+- **Medical Science**
+- **Navigation**
+- **Physical Science**
+- **Security**
+- **System Operation**
+- **Tactics**
+- **Technical Science**
+- **Vehicle Operation**
 
-Tech Ops favor skills that involve the understanding and manipulation of technology, biology, and the physical universe.
-
-### Technology & Engineering
-- **Computer Science:** Hacking, Hardware, Software
-- **Technical Science:** Invention, Repair, Technical knowledge
-- **System Operation:** Communications, Defenses, Engineering, Sensors, Weapons
-- **Navigation:** Astrogation (Drivespace/System)
-
-### Science & Medicine
-- **Life Science:** Biology, Botany, Genetics, Xenobiology, Zoology
-- **Medical Science:** Forensics, Medical knowledge, Surgery, Treatment, Xenomedicine
-- **Physical Science:** Astronomy, Chemistry, Physics, Planetology
-
-### Specialized Operation
+## Favored Specialty Skills (Cost: Standard Price - 1)
 - **Acrobatics:** Zero-g training
-- **Vehicle Operation:** Space vehicle
+- **Computer Science:** (All)
 - **Demolitions:** Disarm, Set explosives
+- **Life Science:** (All)
+- **Medical Science:** (All)
+- **Navigation:** Astrogation—drivespace, Astrogation—system
+- **Physical Science:** (All)
 - **Security:** Security devices
+- **System Operation:** (All)
 - **Tactics:** Space tactics
+- **Technical Science:** (All)
+- **Vehicle Operation:** (All)
+
+## Favored Perks (Cost: Standard Price - 1)
+- Specialty Skill Focus (Any specialty skill favored by this profession)
+- Concentration
+- Observant
+- Photo Memory

@@ -7,12 +7,15 @@ weight = 3
 
 Creciste a la sombra del servicio. No tienes los genes de "héroe", pero tienes la disciplina.
 
-## Habilidades Especializadas Favoritas:
+## Habilidad Amplia Favorecida:
+*   Ninguna.
+
+## Especialidades Favorecidas:
 *   [Tácticas-Tácticas de Infantería](/skills/tactics/#infantry-tactics)
 *   [Resolución-Resolución Física](/skills/resolve-con/#physical-resolve)
 *   [Conocimiento-Primeros Auxilios](/skills/knowledge/#first-aid)
 
-## Ventaja Automática:
+## Perks Favorecidos:
 *   Ninguna.
 
 ## Desventaja Automática:

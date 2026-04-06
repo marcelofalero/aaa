@@ -7,13 +7,16 @@ weight = 3
 
 Creciste en las sombras digitales, viendo el mundo físico como una realidad secundaria. Los firewalls son solo rompecabezas, los secretos corporativos son moneda y te has ganado la vida eludiendo lo inquebrantable.
 
-## Habilidades Especializadas Favoritas:
+## Habilidad Amplia Favorecida:
+*   Ninguna.
+
+## Especialidades Favorecidas:
 *   [Negocios-Negocios Ilícitos](/skills/business/#illicit-business)
 *   [Pillería-Elementos Criminales](/skills/street-smart/#criminal-elements)
 *   [Operaciones Encubiertas-Ocultar](/skills/covert-ops/#conceal)
 *   [Armas de Fuego Modernas-Pistola](/skills/modern-ranged-weapons/#pistol)
 
-## Ventaja Automática:
+## Perks Favorecidos:
 *   Ninguna.
 
 ## Desventaja Automática:

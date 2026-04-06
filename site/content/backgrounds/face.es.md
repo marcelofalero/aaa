@@ -7,13 +7,16 @@ weight = 8
 
 Eres un maestro del "engaño". Ya sea que estés buscando suministros restringidos o abriéndote paso en un puesto de control de seguridad, usas tu encanto para conseguir lo imposible.
 
-## Habilidades Especializadas Favoritas:
+## Habilidad Amplia Favorecida:
+*   Ninguna.
+
+## Especialidades Favorecidas:
 *   [Entretenimiento-Actuar](/skills/entertainment/#act)
-*   [Engaño-Farolear](/skills/deception/#bluff)
-*   [Interacción-Negociar](/skills/interaction/#bargain)
+*   [Engaño-Mentir](/skills/deception/#mentir)
+*   [Interacción-Regatear](/skills/interaction/#regatear)
 *   [Interacción-Encanto](/skills/interaction/#charm)
 
-## Ventaja Automática:
+## Perks Favorecidos:
 *   [Gran Apariencia](/perks_flaws/#great-looks)
 
 ## Desventaja Automática:
@@ -23,7 +26,7 @@ Eres un maestro del "engaño". Ya sea que estés buscando suministros restringid
 Un vestuario extravagante adecuado para eventos de alto nivel, un kit de disfraz cosmético y un arma de fuego llamativa pero de bajo calibre.
 
 ## Habilidad Especial: El Rebuscador
-Recibes una bonificación de -1 paso a las tiradas de [Interacción-Negociar](/skills/interaction/#bargain) o [Pillería-Conocimiento Callejero](/skills/street-smart/#street-knowledge) al intentar adquirir equipo específico o artículos restringidos por medios no monetarios (engaños, favores o "préstamos").
+Recibes una bonificación de -1 paso a las tiradas de [Interacción-Regatear](/skills/interaction/#regatear) o [Pillería-Conocimiento Callejero](/skills/street-smart/#street-knowledge) al intentar adquirir equipo específico o artículos restringidos por medios no monetarios (engaños, favores o "préstamos").
 
 ## Tendencias (Elige 2):
 *   **El Buscador de Atención:** Llama la atención sobre sí mismo intencionalmente en un entorno social para crear una distracción, incluso cuando pasar desapercibido es más seguro.

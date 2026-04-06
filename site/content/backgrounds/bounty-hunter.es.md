@@ -7,13 +7,16 @@ weight = 7
 
 La galaxia es vasta, pero para ti, es solo una serie de huellas y rastros digitales. Vives por el contrato y la satisfacción de un caso cerrado.
 
-## Habilidades Especializadas Favoritas:
+## Habilidad Amplia Favorecida:
+*   Ninguna.
+
+## Especialidades Favorecidas:
 *   [Investigar-Rastrear](/skills/investigate/#track)
 *   [Ley-Procedimientos de Aplicación de la Ley](/skills/law/#law-enforcement-procedures)
 *   [Conciencia-Percepción](/skills/awareness/#perception)
 *   [Pillería-Conocimiento Callejero](/skills/street-smart/#street-knowledge)
 
-## Ventaja Automática:
+## Perks Favorecidos:
 *   [Observador](/perks_flaws/#observant)
 
 ## Desventaja Automática:

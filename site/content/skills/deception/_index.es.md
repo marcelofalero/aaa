@@ -13,6 +13,6 @@ El dado de situación de un héroe se ve modificado por el modificador de resist
 ## Habilidades de Especialidad
 
 {{% list %}}
-- **Farolear (Bluff):** Talento para despistar o engañar mediante una falsa bravuconería o mentiras descaradas.
+- **Mentir:** Talento para despistar o engañar mediante una falsa bravuconería o mentiras descaradas.
 - **Sobornar:** Ofrecer dinero, bienes, información o servicios para obtener lo que se desea.
-- **Apostar (Gamble):** Competencia en varios juegos de azar.
+- **Apostar:** Competencia en varios juegos de azar.

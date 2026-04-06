@@ -7,12 +7,15 @@ weight = 11
 
 You are defined by a single, highly publicized conflict. Whether you were an ace pilot, a combat medic, or the sole survivor of a doomed squad, the galaxy knows your face—and expects you to live up to the legend.
 
+## Favored Broad Skill:
+*   None.
+
 ## Favored Specialty Skills:
 *   [Leadership-Inspire](/skills/leadership/#inspire)
 *   [Stamina-Endurance](/skills/stamina/#endurance)
 *   [Resolve-Mental Resolve](/skills/resolve-con/#mental-resolve)
 
-## Automatic Perk:
+## Favored Perks:
 *   [Celebrity](/perks_flaws/#celebrity)
 
 ## Automatic Flaw:

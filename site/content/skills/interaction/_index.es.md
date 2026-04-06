@@ -1,12 +1,12 @@
 +++
 title = "Interacción"
-description = "Habilidades interpersonales utilizadas en encuentros, como negociar, encantar e intimidar."
+description = "Habilidades interpersonales utilizadas en encuentros, como regatear, encantar e intimidar."
 weight = 3
 attribute = "WIL"
 category = "Social"
 +++
 
-Las habilidades de interacción son utilizadas por los personajes para influir directamente en los demás. Estas incluyen negociar, encantar, entrevistar, intimidar, seducir y provocar.
+Las habilidades de interacción son utilizadas por los personajes para influir directamente en los demás. Estas incluyen regatear, encantar, entrevistar, intimidar, seducir y provocar.
 
 Los personajes combativos o fanáticos no pueden ser influenciados por Interacción. También se aplican el **modificador de resistencia de Voluntad** del objetivo y otros factores relevantes.
 
@@ -20,9 +20,9 @@ Los personajes combativos o fanáticos no pueden ser influenciados por Interacci
 
 # Especialidades
 
-## Negociar (WIL)
+## Regatear (WIL)
 
-Negociar representa la capacidad de un personaje para pactar un precio más barato por un objeto que quiere comprar o un precio mejor por uno que está vendiendo. También cubre negociaciones comerciales más formales. Una tirada exitosa mejora la posición del personaje en la mesa de negociación, mientras que un éxito Asombroso le otorga una bonificación de -3 pasos (o a su oponente una penalización de +3) en cualquier tirada de Interacción posterior realizada durante el encuentro.
+Regatear representa la capacidad de un personaje para pactar un precio más barato por un objeto que quiere comprar o un precio mejor por uno que está vendiendo. También cubre negociaciones comerciales más formales. Una tirada exitosa mejora la posición del personaje en la mesa de negociación, mientras que un éxito Asombroso le otorga una bonificación de -3 pasos (o a su oponente una penalización de +3) en cualquier tirada de Interacción posterior realizada durante el encuentro.
 
 ---
 

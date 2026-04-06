@@ -7,7 +7,7 @@ weight = 15
 
 You are a relentless investigative journalist or freelance whistleblower. You use words to topple corporate empires and expose government corruption, making you a very dangerous person to know.
 
-## Free Broad Skill:
+## Favored Broad Skill:
 *   [Creativity](/skills/creativity/)
 
 ## Favored Specialty Skills:
@@ -16,7 +16,7 @@ You are a relentless investigative journalist or freelance whistleblower. You us
 *   [Interaction-Interview](/skills/interaction/#interview)
 *   [Street Smart-Street Knowledge](/skills/street-smart/#street-knowledge)
 
-## Automatic Perk:
+## Favored Perks:
 *   None.
 
 ## Automatic Flaw:

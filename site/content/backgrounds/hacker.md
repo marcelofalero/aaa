@@ -7,13 +7,16 @@ weight = 3
 
 You grew up in the digital shadows, viewing the physical world as a secondary reality. Firewalls are just puzzles, corporate secrets are currency, and you've made a living bypassing the unbreakable.
 
+## Favored Broad Skill:
+*   None.
+
 ## Favored Specialty Skills:
 *   [Business-Illicit Business](/skills/business/#illicit-business)
 *   [Street Smart-Criminal Elements](/skills/street-smart/#criminal-elements)
 *   [Covert Ops-Conceal](/skills/covert-ops/#conceal)
 *   [Modern Ranged Weapons-Pistol](/skills/modern-ranged-weapons/#pistol)
 
-## Automatic Perk:
+## Favored Perks:
 *   None.
 
 ## Automatic Flaw:

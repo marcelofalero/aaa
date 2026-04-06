@@ -7,12 +7,15 @@ weight = 4
 
 You are a ghost in the machine. You have the reflexes of a soldier but the soul of a fugitive.
 
+## Favored Broad Skill:
+*   None.
+
 ## Favored Specialty Skills:
 *   [Survival-Survival Training](/skills/survival/#survival-training)
 *   [Deception-Bluff](/skills/deception/#bluff)
 *   [Covert Ops-Conceal](/skills/covert-ops/#conceal)
 
-## Automatic Perk:
+## Favored Perks:
 *   [Reflexes](/perks_flaws/#reflexes)
 
 ## Automatic Flaw:

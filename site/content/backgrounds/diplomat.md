@@ -7,13 +7,16 @@ weight = 1
 
 You were raised in the halls of power, where protocol is a weapon and reputation is everything.
 
+## Favored Broad Skill:
+*   None.
+
 ## Favored Specialty Skills:
 *   [Culture-Etiquette](/skills/culture/#etiquette-specific)
 *   [Administration-Bureaucracy](/skills/administration/#bureaucracy)
 *   [Interaction-Charm](/skills/interaction/#charm)
 *   [Interaction-Bargain](/skills/interaction/#bargain)
 
-## Automatic Perk:
+## Favored Perks:
 *   [Reputation](/perks_flaws/#reputation)
 
 ## Automatic Flaw:

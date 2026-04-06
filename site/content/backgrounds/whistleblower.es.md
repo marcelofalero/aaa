@@ -7,16 +7,16 @@ weight = 15
 
 Eres un periodista de investigación implacable o un denunciante independiente. Usas las palabras para derribar imperios corporativos y exponer la corrupción gubernamental, lo que te convierte en una persona muy peligrosa de conocer.
 
-## Habilidad Amplia Gratuita:
+## Habilidad Amplia Favorecida:
 *   [Creatividad](/skills/creativity/)
 
-## Habilidades Especializadas Favoritas:
+## Especialidades Favorecidas:
 *   [Creatividad-Escritura](/skills/creativity/#writing)
 *   [Investigar-Buscar](/skills/investigate/#search)
 *   [Interacción-Entrevista](/skills/interaction/#interview)
 *   [Pillería-Conocimiento Callejero](/skills/street-smart/#street-knowledge)
 
-## Ventaja Automática:
+## Perks Favorecidos:
 *   Ninguna.
 
 ## Desventaja Automática:

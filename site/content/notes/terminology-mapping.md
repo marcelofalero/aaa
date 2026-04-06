@@ -54,7 +54,48 @@ This page provides a mapping of common game terms from English to Spanish to ens
 | Investigation | Investigar |
 | Interrogate | Interrogar |
 | Track | Rastrear |
+| Bargain | Regatear |
+| Bluff | Mentir |
 | ... | ... |
+
+
+## Backgrounds
+| English | Spanish |
+| :--- | :--- |
+| The Academy Graduate | El Graduado de la Academia |
+| The Bounty Hunter | El Cazador de Recompensas |
+| The Breacher | El Especialista en Brechas |
+| The Certified Psychic | El Psíquico Certificado |
+| The Corporate Enforcer | El Ejecutor Corporativo |
+| The Criminal / Urchin | El Criminal / Pilluelo |
+| The Deserter | El Desertor |
+| The Diplomat | El Diplomático |
+| The Face | El Rostro |
+| The Field Medic | El Médico de Campo |
+| The Field Researcher | El Investigador de Campo |
+| The Fixer | El Fixer |
+| The Fleet Officer | El Oficial de la Flota |
+| The Freelance Captain | El Capitán Freelance |
+| The Ghost Agent | El Agente Fantasma |
+| The Grifter | El Estafador |
+| The Hacker | El Hacker |
+| The Innovator | El Innovador |
+| The Military Brat | El Hijo de Militares |
+| The Operative | El Operativo |
+| The Outcast | El Paria |
+| The Paramilitary Officer | El Oficial Paramilitar |
+| The Private Eye | El Detective Privado |
+| The Roughneck | El Estibador Espacial |
+| The Sapper | El Zapador |
+| The Scavenger | El Chatarrero |
+| The Ship Owner | El Dueño de Nave |
+| The Smuggler | El Contrabandista |
+| The Subverter | El Subversivo |
+| The Test Subject | El Sujeto de Pruebas |
+| The Virtuoso | El Virtuoso |
+| The Wage Slave | El Esclavo del Salario |
+| The War Hero | El Héroe de Guerra |
+| The Whistleblower | El Denunciante |
 
 ## Perks & Flaws
 | English | Spanish |

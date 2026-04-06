@@ -4,29 +4,39 @@ description = "Especialistas en poderes psiónicos."
 weight = 5
 +++
 
-# Mindwalker
+# Caminante Mental (Mindwalker)
 
-Mindwalkers are individuals who have unlocked the latent potential of their minds. They specialize in psionics, using mental energy to influence the physical world and the minds of others.
+Los Caminantes Mentales son individuos que han desbloqueado el potencial latente de sus mentes. Se especializan en psiónica, utilizando energía mental para influir en el mundo físico y las mentes de otros.
 
-## Requirements
+## Requisitos
 - **WIL 9+, PER 9+**
 
-## Profession Benefits
-- **Psionic Potential:** You have a base pool of psionic energy points.
-- **Mental Discipline:** You gain unique benefits when using psionic skills.
+## Beneficios de Profesión
+- **Potencial Psiónico:** Tienes una reserva de puntos de energía psiónica.
+- **Disciplina Mental:** Obtienes beneficios únicos al usar habilidades psiónicas.
 
-## Favored Skills (Cost: List Price - 1)
+## Habilidades Amplias Favorecidas (Coste: Precio Estándar - 1)
+- **Alerta**
+- **Biocinesis**
+- **Cultura**
+- **ESP**
+- **Interacción**
+- **Resolución**
+- **Telequinesis**
+- **Telepatía**
 
-Mindwalkers favor the psionic skills found in Chapter 14, as well as several mental and social disciplines.
+## Especialidades Favorecidas (Coste: Precio Estándar - 1)
+- **Alerta:** (Todas)
+- **Biocinesis:** (Todas)
+- **Cultura:** Cultura alienígena, Primer contacto
+- **ESP:** (Todas)
+- **Interacción:** Carisma, Seducir
+- **Resolución:** Resolución mental
+- **Telequinesis:** (Todas)
+- **Telepatía:** (Todas)
 
-### Psionic Disciplines
-- **Biokinesis:** (All specialties)
-- **ESP:** (All specialties)
-- **Telekinesis:** (All specialties)
-- **Telepathy:** (All specialties)
-
-### Mental & Social Skills
-- **Resolve:** Mental resolve
-- **Awareness:** Intuition, Perception
-- **Interaction:** Charm, Seduce
-- **Culture:** Alien culture, First encounter
+## Perks Favorecidos (Coste: Precio Estándar - 1)
+- Enfoque en Especialidad (Specialty Skill Focus) (Cualquier habilidad de especialidad favorecida por esta profesión)
+- Conciencia Psiónica (Psionic Awareness)
+- Energía Psiónica Extra (Extra Psionic Energy)
+- Fuerza de Voluntad (Willpower)

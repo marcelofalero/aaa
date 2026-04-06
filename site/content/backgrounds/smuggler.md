@@ -7,13 +7,16 @@ weight = 12
 
 You make your living in the gray areas between borders and laws. Moving illicit cargo requires a steady nerve, knowledge of the black market, and the ability to lie to an inspector’s face.
 
+## Favored Broad Skill:
+*   None.
+
 ## Favored Specialty Skills:
 *   [Business-Illicit Business](/skills/business/#illicit-business)
 *   [Covert Ops-Conceal](/skills/covert-ops/#conceal)
 *   [Deception-Bribe](/skills/deception/#bribe)
 *   [Street Smart-Criminal Elements](/skills/street-smart/#criminal-elements)
 
-## Automatic Perk:
+## Favored Perks:
 *   [Good Luck](/perks_flaws/#good-luck)
 
 ## Automatic Flaw:

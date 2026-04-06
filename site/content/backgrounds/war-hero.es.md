@@ -7,12 +7,15 @@ weight = 11
 
 Estás definido por un único conflicto muy publicitado. Ya fueras un piloto as, un médico de combate o el único superviviente de un escuadrón condenado, la galaxia conoce tu rostro y espera que estés a la altura de la leyenda.
 
-## Habilidades Especializadas Favoritas:
+## Habilidad Amplia Favorecida:
+*   Ninguna.
+
+## Especialidades Favorecidas:
 *   [Liderazgo-Inspirar](/skills/leadership/#inspire)
 *   [Resistencia-Aguante](/skills/stamina/#endurance)
 *   [Resolución-Resolución Mental](/skills/resolve-con/#mental-resolve)
 
-## Ventaja Automática:
+## Perks Favorecidos:
 *   [Celebridad](/perks_flaws/#celebrity)
 
 ## Desventaja Automática:

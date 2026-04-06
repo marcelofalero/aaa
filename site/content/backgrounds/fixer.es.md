@@ -7,13 +7,16 @@ weight = 5
 
 Conoces a todo el mundo, le debes a todo el mundo, y eres el único que puede hacer el trabajo.
 
-## Habilidades Especializadas Favoritas:
-*   [Interacción-Negociar](/skills/interaction/#bargain)
+## Habilidad Amplia Favorecida:
+*   Ninguna.
+
+## Especialidades Favorecidas:
+*   [Interacción-Regatear](/skills/interaction/#regatear)
 *   [Administración-Burocracia](/skills/administration/#bureaucracy)
 *   [Pillería-Conocimiento Callejero](/skills/street-smart/#street-knowledge)
 *   [Engaño-Soborno](/skills/deception/#bribe)
 
-## Ventaja Automática:
+## Perks Favorecidos:
 *   Ninguna.
 
 ## Desventaja Automática:

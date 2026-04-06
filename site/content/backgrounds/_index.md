@@ -17,4 +17,4 @@ Choosing a Background is a critical step in character creation. It provides:
 
 ## Sample Backgrounds
 
-{{< json-table "backgrounds" "all" "free_skill" "favored_skills" "perk" "flaw" "equipment" "special_ability" "tendencies" >}}
+{{< json-table "backgrounds" "all" "favored_broad_skill" "favored_specialty_skills" "favored_perks" "flaw" "equipment" "special_ability" "tendencies" >}}

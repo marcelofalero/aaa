@@ -7,7 +7,7 @@ weight = 16
 
 You are a master of aesthetics and performance. Your work is highly sought after by the galactic elite, but true art requires an uncompromising vision that often clashes with practical reality.
 
-## Free Broad Skill:
+## Favored Broad Skill:
 *   [Creativity](/skills/creativity/)
 
 ## Favored Specialty Skills:
@@ -16,7 +16,7 @@ You are a master of aesthetics and performance. Your work is highly sought after
 *   [Entertainment-Act](/skills/entertainment/#act)
 *   [Interaction-Charm](/skills/interaction/#charm)
 
-## Automatic Perk:
+## Favored Perks:
 *   [Celebrity](/perks_flaws/#celebrity)
 
 ## Automatic Flaw:
