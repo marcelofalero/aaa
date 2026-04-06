@@ -764,7 +764,15 @@
           "pr": "D"
         },
         {
-          "skill": "Interacción",
+          "skill": "&nbsp;&nbsp;&nbsp;Sentido psiónico",
+          "skill_url": "/skills/awareness#sentido-psionico",
+          "type": "Especialidad",
+          "attribute": "WIL",
+          "cost": 4,
+          "pr": "—"
+        },
+        {
+          "skill": "**Interacción**",
           "skill_url": "/skills/interaction",
           "type": "Amplia",
           "attribute": "WIL",
@@ -1169,8 +1177,8 @@
           "pr": "D"
         },
         {
-          "skill": "&nbsp;&nbsp;&nbsp;Intuición",
-          "skill_url": "/skills/awareness#intuicion",
+          "skill": "&nbsp;&nbsp;&nbsp;Mentir",
+          "skill_url": "/skills/deception#mentir",
           "type": "Especialidad",
           "attribute": "WIL",
           "cost": 1,

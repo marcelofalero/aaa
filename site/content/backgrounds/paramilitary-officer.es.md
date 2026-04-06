@@ -11,9 +11,9 @@ No te entrenaste en una academia prestigiosa ni luchaste bajo una bandera planet
 *   Ninguna.
 
 ## Especialidades Favorecidas:
-*   [Liderazgo-Mando](/skills/leadership/#mando)
-*   [Tácticas-Tácticas de Infantería](/skills/tactics/#tactica-infanteria)
-*   [Negocios-Pequeños Negocios](/skills/business/#pequenos-negocios)
+*   [Liderazgo-Mando](/skills/leadership/#command)
+*   [Tácticas-Tácticas de Infantería](/skills/tactics/#infantry-tactics)
+*   [Negocios-Pequeños Negocios](/skills/business/#small-business)
 *   [Armas de Fuego Modernas-Rifle de Asalto](/skills/modern-ranged-weapons/#rifle)
 
 ## Perks Favorecidos:

@@ -13,7 +13,7 @@ Los Operarios Técnicos (Tech Ops) son los maestros del universo de alta tecnolo
 
 ## Beneficios de Profesión
 - **Incremento en la Tirada de Acción:** +1 a tu puntuación de Tirada de Acción.
-- **Especialización Técnica:** Tienes una bonificación permanente de -1 paso en las tiradas de especialidad de una de las siguientes habilidades amplias: Ciencias de la Computación, Ciencias de la Vida, Ciencias Médicas, Ciencias Físicas o Ciencia Técnica. La habilidad elegida influirá en gran medida en la reputación futura del personaje.
+- **Especialización Técnica:** Tienes una bonificación permanente de -1 paso en las tiradas de especialidad de una de las siguientes habilidades amplias: Ciencias de la Computación, Ciencias de la Vida, Ciencias Médicas, Ciencias Físicas o Ciencia Técnica. La habilidad elegida influirá en gran medida en tu reputación futura.
 
 ## Habilidades Amplias Favorecidas (Coste: Precio Estándar - 1)
 - **Acrobacias**

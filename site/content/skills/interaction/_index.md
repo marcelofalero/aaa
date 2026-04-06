@@ -62,8 +62,7 @@ This specialty skill represents a character's ability to change the attitudes of
 
 ---
 
-## Interview
-### (PER)
+## Interview (PER)
 
 
 The interview skill represents a character's ability to get information from another character in a non-aggressive way. Interviews are often used by reporters, investigators, and officials conducting standard administrative procedures.

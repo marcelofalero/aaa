@@ -11,6 +11,7 @@ Representas el nivel de élite de la formación institucional. No solo te uniste
 *   Ninguna.
 
 ## Especialidades Favorecidas:
+
 *   [Liderazgo-Mando](/skills/leadership/#mando)
 *   [Tácticas-Tácticas de Infantería](/skills/tactics/#tactica-infanteria)
 *   [Administración-Gestión](/skills/administration/#gestion)

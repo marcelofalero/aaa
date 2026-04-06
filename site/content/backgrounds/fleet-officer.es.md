@@ -11,10 +11,10 @@ Mientras las fuerzas terrestres luchan por metros, tú luchas por sistemas. Enti
 *   Ninguna.
 
 ## Especialidades Favorecidas:
-*   [Tácticas-Tácticas Espaciales](/skills/tactics/#tactica-espacial)
-*   [Navegación-Astrogación de Sistemas](/skills/navigation/#astrogacion-sistema)
-*   [Operación de Sistemas-Sensores](/skills/system-operation/#sensores)
-*   [Liderazgo-Mando](/skills/leadership/#mando)
+*   [Tácticas-Tácticas Espaciales](/skills/tactics/#space-tactics)
+*   [Navegación-Astrogación de Sistemas](/skills/navigation/#astrogation-system)
+*   [Operación de Sistemas-Sensores](/skills/system-operation/#sensors)
+*   [Liderazgo-Mando](/skills/leadership/#command)
 
 ## Perks Favorecidos:
 *   [Reputación](/perks_flaws/#reputation)

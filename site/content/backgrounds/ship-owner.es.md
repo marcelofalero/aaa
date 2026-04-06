@@ -11,10 +11,10 @@ Tienes las llaves del activo más valioso de la galaxia: una nave estelar. Sin e
 *   Ninguna.
 
 ## Especialidades Favorecidas:
-*   [Operación de Vehículos-Vehículo Espacial](/skills/vehicle-operation/#vehiculo-espacial)
-*   [Negocios-Pequeños Negocios](/skills/business/#pequenos-negocios)
-*   [Liderazgo-Mando](/skills/leadership/#mando)
-*   [Administración-Gestión](/skills/administration/#gestion)
+*   [Operación de Vehículos-Vehículo Espacial](/skills/vehicle-operation/#space-vehicle)
+*   [Negocios-Pequeños Negocios](/skills/business/#small-business)
+*   [Liderazgo-Mando](/skills/leadership/#command)
+*   [Administración-Gestión](/skills/administration/#management)
 
 ## Perks Favorecidos:
 *   Ninguna.

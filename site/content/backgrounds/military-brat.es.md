@@ -11,9 +11,9 @@ Creciste a la sombra del servicio. No tienes los genes de "héroe", pero tienes 
 *   Ninguna.
 
 ## Especialidades Favorecidas:
-*   [Tácticas-Tácticas de Infantería](/skills/tactics/#tactica-infanteria)
-*   [Resolución-Resolución Física](/skills/resolve-con/#firmeza-fisica)
-*   [Conocimiento-Primeros Auxilios](/skills/knowledge/#primeros-auxilios)
+*   [Tácticas-Tácticas de Infantería](/skills/tactics/#infantry-tactics)
+*   [Resolución-Resolución Física](/skills/resolve-con/#physical-resolve)
+*   [Conocimiento-Primeros Auxilios](/skills/knowledge/#first-aid)
 
 ## Perks Favorecidos:
 *   Ninguna.

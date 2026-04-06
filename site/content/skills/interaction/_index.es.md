@@ -20,8 +20,7 @@ Los personajes combativos o fanáticos no pueden ser influenciados por Interacci
 
 # Especialidades
 
-## Regatear
-### (WIL)
+## Regatear (WIL)
 
 Regatear representa la capacidad de un personaje para pactar un precio más barato por un objeto que quiere comprar o un precio mejor por uno que está vendiendo. También cubre negociaciones comerciales más formales. Una tirada exitosa mejora la posición del personaje en la mesa de negociación, mientras que un éxito Asombroso le otorga una bonificación de -3 pasos (o a su oponente una penalización de +3) en cualquier tirada de Interacción posterior realizada durante el encuentro.
 

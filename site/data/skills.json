@@ -796,8 +796,16 @@
           "pr": "D"
         },
         {
-          "skill": "Teach",
-          "skill_url": "/skills/teach",
+          "skill": "&nbsp;&nbsp;&nbsp;Psionic Sense",
+          "skill_url": "/skills/awareness#psionic-sense",
+          "type": "Specialty",
+          "attribute": "WIL",
+          "cost": 4,
+          "pr": "—"
+        },
+        {
+          "skill": "**Resolve**",
+          "skill_url": "/skills/resolve",
           "type": "Broad",
           "attribute": "WIL",
           "cost": 3,
