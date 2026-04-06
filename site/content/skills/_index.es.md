@@ -5,8 +5,6 @@ weight = 6
 toc = true
 +++
 
-# Habilidades
-
 Las habilidades son el corazón del sistema de juego AAA. La mayor parte de lo que un personaje es capaz de hacer —luchar contra un oponente, pilotar una nave espacial, cerrar un gran acuerdo de negocios, desarrollar una vacuna para un virus mortal— se rige por las habilidades que posee el personaje y lo hábil que es utilizándolas.
 
 Cada vez que crees un personaje, querrás leer sobre las habilidades que tu personaje obtiene de forma gratuita; y luego, a medida que selecciones otras habilidades para su posible compra, leerás las descripciones de esas habilidades antes de tomar una decisión final sobre si gastar puntos en ellas. Con el tiempo te familiarizarás con todas las habilidades, pero tener un conocimiento profundo de cada una de ellas no es necesario antes de que tu personaje comience su primera aventura.
@@ -15,15 +13,11 @@ Cada vez que crees un personaje, querrás leer sobre las habilidades que tu pers
 
 Las habilidades amplias representan un área general de conocimiento, talento o formación, mientras que las habilidades de especialidad son campos estrechos de experiencia. Cada rango en una habilidad de especialidad mejora la probabilidad de éxito de un personaje en el uso de esa habilidad y, a veces, también proporciona ventajas adicionales según lo establecido en la descripción de la habilidad. Estas ventajas, llamadas beneficios de rango, las obtiene automáticamente un personaje que alcanza el rango apropiado en la habilidad de especialidad.
 
-Alternativamente, un personaje puede recibir un beneficio de rango antes de tiempo si su jugador decide gastar puntos de habilidad para adquirir el beneficio.
-
-### Habilidades Amplias Gratuitas
-
-Cada personaje recibe seis habilidades amplias gratuitas al comienzo de su carrera, basadas en su especie y trasfondo.
+Cada personaje recibe seis habilidades amplias gratuitas al comienzo de su carrera, basadas en la profesión elegida, y puede recibir habilidades amplias adicionales basadas en su especie y trasfondo.
 
 ### Puntos de Habilidad
 
-Cada personaje principiante recibe una asignación de puntos de habilidad y tiene derecho a utilizar esos puntos para adquirir un cierto número de habilidades amplias y de especialidad adicionales antes de comenzar su carrera.
+Cada personaje principiante recibe una asignación de puntos de habilidad y tiene derecho a utilizar esos puntos para adquirir un cierto número de habilidades amplias y de especialidad adicionales antes de comenzar su carrera. Consulte [Creación de Personajes](/core-mechanics/character-creation/) para más detalles.
 
 A medida que el personaje prosigue su carrera, recibe puntos de experiencia del Director de Juego como recompensa por la resolución con éxito de misiones y la consecución de objetivos. El personaje tiene derecho a gastar estos puntos para mejorar sus habilidades, normalmente entre sesiones. Si el Director de Juego lo considera apropiado, puede permitir al personaje mejorar una habilidad a mitad de la sesión, representando normalmente algún tipo de revelación. Para detalles específicos, consulte la sección de [Progresión del personaje](/core-mechanics/character-advancement/).
 

@@ -5,8 +5,6 @@ weight = 6
 toc = true
 +++
 
-# Skills
-
 Skills are the heart of the AAA game system. Most of what a character is capable of doing—fighting an opponent, piloting a spacecraft, closing a big business deal, developing a vaccine for a deadly virus—is governed by what skills the character possesses and how accomplished he is at using those skills.
 
 Whenever you create a character, you'll want to read about the skills your character gets for free; and then as you select other skills for possible purchase, you'll read the descriptions of those skills before making a final decision on whether to spend points on them. Eventually you'll become familiar with all the skills, but having a thorough understanding of every one of them certainly isn‘t necessary before your character begins his first adventure.
