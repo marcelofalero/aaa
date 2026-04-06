@@ -7,7 +7,7 @@ weight = 2
 
 Life on the streets taught you how to survive, but it left you with a name that the authorities won't forget.
 
-## Free Broad Skill:
+## Favored Broad Skill:
 *   [Street Smart](/skills/street-smart/)
 
 ## Favored Specialty Skills:
@@ -17,7 +17,7 @@ Life on the streets taught you how to survive, but it left you with a name that 
 *   [Deception-Bribe](/skills/deception/#bribe)
 *   [Security-Security Devices](/skills/security/#security-devices)
 
-## Automatic Perk:
+## Favored Perks:
 *   None.
 
 ## Automatic Flaw:

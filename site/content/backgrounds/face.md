@@ -7,13 +7,16 @@ weight = 8
 
 You are a master of the "hustle." Whether you're scrounging restricted supplies or talking your way past a security checkpoint, you use your charm to requisition the impossible.
 
+## Favored Broad Skill:
+*   None.
+
 ## Favored Specialty Skills:
 *   [Entertainment-Act](/skills/entertainment/#act)
 *   [Deception-Bluff](/skills/deception/#bluff)
 *   [Interaction-Bargain](/skills/interaction/#bargain)
 *   [Interaction-Charm](/skills/interaction/#charm)
 
-## Automatic Perk:
+## Favored Perks:
 *   [Great Looks](/perks_flaws/#great-looks)
 
 ## Automatic Flaw:

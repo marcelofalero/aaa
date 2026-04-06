@@ -7,13 +7,16 @@ weight = 7
 
 The galaxy is vast, but for you, it is just a series of footprints and digital trails. You live for the contract and the satisfaction of a closed case.
 
+## Favored Broad Skill:
+*   None.
+
 ## Favored Specialty Skills:
 *   [Investigate-Track](/skills/investigate/#track)
 *   [Law-Law Enforcement Procedures](/skills/law/#law-enforcement-procedures)
 *   [Awareness-Perception](/skills/awareness/#perception)
 *   [Street Smart-Street Knowledge](/skills/street-smart/#street-knowledge)
 
-## Automatic Perk:
+## Favored Perks:
 *   [Observant](/perks_flaws/#observant)
 
 ## Automatic Flaw:

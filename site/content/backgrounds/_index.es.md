@@ -17,4 +17,4 @@ Elegir un Fondo es un paso crítico en la creación del personaje. Proporciona:
 
 ## Fondos de Ejemplo
 
-{{< json-table "backgrounds.es" "all" "free_skill" "favored_skills" "perk" "flaw" "equipment" "special_ability" "tendencies" >}}
+{{< json-table "backgrounds.es" "all" "favored_broad_skill" "favored_specialty_skills" "favored_perks" "flaw" "equipment" "special_ability" "tendencies" >}}

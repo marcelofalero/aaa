@@ -15,18 +15,28 @@ Mindwalkers are individuals who have unlocked the latent potential of their mind
 - **Psionic Potential:** You have a base pool of psionic energy points.
 - **Mental Discipline:** You gain unique benefits when using psionic skills.
 
-## Favored Skills (Cost: List Price - 1)
+## Favored Broad Skills (Cost: Standard Price - 1)
+- **Awareness**
+- **Biokinesis**
+- **Culture**
+- **ESP**
+- **Interaction**
+- **Resolve**
+- **Telekinesis**
+- **Telepathy**
 
-Mindwalkers favor the psionic skills found in Chapter 14, as well as several mental and social disciplines.
-
-### Psionic Disciplines
-- **Biokinesis:** (All specialties)
-- **ESP:** (All specialties)
-- **Telekinesis:** (All specialties)
-- **Telepathy:** (All specialties)
-
-### Mental & Social Skills
-- **Resolve:** Mental resolve
-- **Awareness:** Intuition, Perception
-- **Interaction:** Charm, Seduce
+## Favored Specialty Skills (Cost: Standard Price - 1)
+- **Awareness:** (All)
+- **Biokinesis:** (All)
 - **Culture:** Alien culture, First encounter
+- **ESP:** (All)
+- **Interaction:** Charm, Seduce
+- **Resolve:** Mental resolve
+- **Telekinesis:** (All)
+- **Telepathy:** (All)
+
+## Favored Perks (Cost: Standard Price - 1)
+- Specialty Skill Focus (Any specialty skill favored by this profession)
+- Psionic Awareness
+- Extra Psionic Energy
+- Willpower

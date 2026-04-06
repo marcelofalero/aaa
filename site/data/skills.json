@@ -1046,6 +1046,14 @@
           "pr": "—"
         },
         {
+          "skill": "&nbsp;&nbsp;&nbsp;Psionic Sense",
+          "skill_url": "/skills/awareness#psionic-sense",
+          "type": "Specialty",
+          "attribute": "WIL",
+          "cost": 4,
+          "pr": "—"
+        },
+        {
           "skill": "**Resolve**",
           "skill_url": "/skills/resolve",
           "type": "Broad",

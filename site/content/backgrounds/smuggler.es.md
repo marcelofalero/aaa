@@ -7,13 +7,16 @@ weight = 12
 
 Te ganas la vida en las zonas grises entre fronteras y leyes. Mover carga ilícita requiere nervios de acero, conocimiento del mercado negro y la habilidad de mentirle a la cara a un inspector.
 
-## Habilidades Especializadas Favoritas:
+## Habilidad Amplia Favorecida:
+*   Ninguna.
+
+## Especialidades Favorecidas:
 *   [Negocios-Negocios Ilícitos](/skills/business/#illicit-business)
 *   [Operaciones Encubiertas-Ocultar](/skills/covert-ops/#conceal)
 *   [Engaño-Soborno](/skills/deception/#bribe)
 *   [Pillería-Elementos Criminales](/skills/street-smart/#criminal-elements)
 
-## Ventaja Automática:
+## Perks Favorecidos:
 *   [Buena Suerte](/perks_flaws/#good-luck)
 
 ## Desventaja Automática:

@@ -7,13 +7,16 @@ weight = 10
 
 No te entrenaste en una academia prestigiosa ni luchaste bajo una bandera planetaria. Aprendiste a mandar en el mundo agotador y lucrativo de las compañías militares privadas o las milicias locales, donde la logística es escasa y la victoria es para el pragmático.
 
-## Habilidades Especializadas Favoritas:
+## Habilidad Amplia Favorecida:
+*   Ninguna.
+
+## Especialidades Favorecidas:
 *   [Liderazgo-Mando](/skills/leadership/#command)
 *   [Tácticas-Tácticas de Infantería](/skills/tactics/#infantry-tactics)
 *   [Negocios-Pequeños Negocios](/skills/business/#small-business)
 *   [Armas de Fuego Modernas-Rifle de Asalto](/skills/modern-ranged-weapons/#rifle)
 
-## Ventaja Automática:
+## Perks Favorecidos:
 *   [Reputación](/perks_flaws/#reputation)
 
 ## Desventaja Automática:

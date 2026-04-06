@@ -7,13 +7,16 @@ weight = 14
 
 Tienes las llaves del activo más valioso de la galaxia: una nave estelar. Sin embargo, ese tipo de hardware no es barato, y vendiste tu alma a un cartel, banco o benefactor sombrío para conseguirlo.
 
-## Habilidades Especializadas Favoritas:
+## Habilidad Amplia Favorecida:
+*   Ninguna.
+
+## Especialidades Favorecidas:
 *   [Operación de Vehículos-Vehículo Espacial](/skills/vehicle-operation/#space-vehicle)
 *   [Negocios-Pequeños Negocios](/skills/business/#small-business)
 *   [Liderazgo-Mando](/skills/leadership/#command)
 *   [Administración-Gestión](/skills/administration/#management)
 
-## Ventaja Automática:
+## Perks Favorecidos:
 *   Ninguna.
 
 ## Desventaja Automática:

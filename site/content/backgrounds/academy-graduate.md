@@ -7,13 +7,16 @@ weight = 9
 
 You represent the elite tier of institutional training. You didn't just join the service; you were forged by it, learning that leadership is a burden and doctrine is a shield.
 
+## Favored Broad Skill:
+*   None.
+
 ## Favored Specialty Skills:
 *   [Leadership-Command](/skills/leadership/#command)
 *   [Tactics-Infantry Tactics](/skills/tactics/#infantry-tactics)
 *   [Administration-Management](/skills/administration/#management)
 *   [Culture-Etiquette](/skills/culture/#etiquette-specific)
 
-## Automatic Perk:
+## Favored Perks:
 *   [Reputation](/perks_flaws/#reputation)
 
 ## Automatic Flaw:

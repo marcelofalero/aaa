@@ -7,14 +7,17 @@ weight = 6
 
 Vienes de un lugar donde la tecnología es magia y la supervivencia es la única ley.
 
-## Habilidades Especializadas Favoritas:
+## Habilidad Amplia Favorecida:
+*   Ninguna.
+
+## Especialidades Favorecidas:
 *   [Supervivencia-Entrenamiento de Supervivencia](/skills/survival/#survival-training)
 *   [Atletismo-Escalar](/skills/athletics/#climb)
 *   [Atletismo-Lanzar](/skills/athletics/#throw)
 *   [Conciencia-Percepción](/skills/awareness/#perception)
 *   [Operaciones Encubiertas-Sigilo](/skills/covert-ops/#stealth)
 
-## Ventaja Automática:
+## Perks Favorecidos:
 *   Ninguna.
 
 ## Desventaja Automática:

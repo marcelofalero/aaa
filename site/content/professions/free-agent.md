@@ -16,24 +16,33 @@ Free Agents are the ultimate troubleshooters. They rely on agility, intuition, a
 - **Resistance Bonus:** Choose one Ability. Improve its resistance modifier by +1 step.
 - **Last Resort Bonus:** Your maximum Last Resort points increase by +1. You can also spend 2 points at once to shift a result by two grades.
 
-## Favored Skills (Cost: List Price - 1)
+## Favored Broad Skills (Cost: Standard Price - 1)
+- **Acrobatics**
+- **Awareness**
+- **Business**
+- **Covert Ops**
+- **Deception**
+- **Interaction**
+- **Investigate**
+- **Knowledge**
+- **Security**
+- **Street Smart**
 
-Free Agents favor skills that help them move unseen, bypass security, and manipulate their surroundings.
-
-### Core Combat Skills
-- **[Melee Combat](/skills/melee-combat/)**
-
-### Covert Operations & Agility
-- **Covert Ops:** Stealth, Lockpick, Pickpocket
-- **Acrobatics:** Daredevil, Defensive martial arts, Fall
-
-### Information & Security
-- **Security:** Protection protocols, Security devices
-- **Awareness:** Intuition
-- **Knowledge:** Deduce, Street knowledge
-- **Street Smart:** Criminal elements, Street knowledge
-
-### Social Manipulation
-- **Deception:** Bluff, Boasting
-- **Interaction:** Seduce, Taunt
+## Favored Specialty Skills (Cost: Standard Price - 1)
+- **Acrobatics:** Dodge, Daredevil, Fall
+- **Awareness:** Intuition, Perception
 - **Business:** Illicit business
+- **Covert Ops:** (All)
+- **Deception:** Bluff
+- **Interaction:** Bargain, Interview, Seduce, Taunt
+- **Investigate:** (All)
+- **Knowledge:** Deduce
+- **Melee Combat:** Blade, Blunt, Defensive Martial Arts
+- **Security:** (All)
+- **Street Smart:** (All)
+
+## Favored Perks (Cost: Standard Price - 1)
+- Specialty Skill Focus (Any specialty skill favored by this profession)
+- Danger Sense
+- Good Luck
+- Ambidextrous

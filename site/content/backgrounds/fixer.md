@@ -7,13 +7,16 @@ weight = 5
 
 You know everyone, you owe everyone, and you're the only one who can get the job done.
 
+## Favored Broad Skill:
+*   None.
+
 ## Favored Specialty Skills:
 *   [Interaction-Bargain](/skills/interaction/#bargain)
 *   [Administration-Bureaucracy](/skills/administration/#bureaucracy)
 *   [Street Smart-Street Knowledge](/skills/street-smart/#street-knowledge)
 *   [Deception-Bribe](/skills/deception/#bribe)
 
-## Automatic Perk:
+## Favored Perks:
 *   None.
 
 ## Automatic Flaw:

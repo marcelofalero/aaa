@@ -7,16 +7,16 @@ weight = 16
 
 Eres un maestro de la estética y la interpretación. Tu trabajo es muy solicitado por la élite galáctica, pero el verdadero arte requiere una visión intransigente que a menudo choca con la realidad práctica.
 
-## Habilidad Amplia Gratuita:
+## Habilidad Amplia Favorecida:
 *   [Creatividad](/skills/creativity/)
 
-## Habilidades Especializadas Favoritas:
+## Especialidades Favorecidas:
 *   [Creatividad-Expresión Artística](/skills/creativity/#artistic-expression)
 *   [Cultura-Etiqueta](/skills/culture/#etiquette-specific)
 *   [Entretenimiento-Actuar](/skills/entertainment/#act)
 *   [Interacción-Encanto](/skills/interaction/#charm)
 
-## Ventaja Automática:
+## Perks Favorecidos:
 *   [Celebridad](/perks_flaws/#celebrity)
 
 ## Desventaja Automática:

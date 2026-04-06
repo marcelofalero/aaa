@@ -7,12 +7,15 @@ weight = 3
 
 You grew up in the shadow of the service. You don't have the "character" genes, but you have the discipline.
 
+## Favored Broad Skill:
+*   None.
+
 ## Favored Specialty Skills:
 *   [Tactics-Infantry Tactics](/skills/tactics/#infantry-tactics)
 *   [Resolve-Physical Resolve](/skills/resolve-con/#physical-resolve)
 *   [Knowledge-First Aid](/skills/knowledge/#first-aid)
 
-## Automatic Perk:
+## Favored Perks:
 *   None.
 
 ## Automatic Flaw:

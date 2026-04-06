@@ -7,13 +7,16 @@ weight = 10
 
 While ground forces fight for meters, you fight for systems. You understand the complex dance of starship systems and the strategic weight of the high ground in the void.
 
+## Favored Broad Skill:
+*   None.
+
 ## Favored Specialty Skills:
 *   [Tactics-Space Tactics](/skills/tactics/#space-tactics)
 *   [Navigation-Astrogation System](/skills/navigation/#astrogation-system)
 *   [System Operation-Sensors](/skills/system-operation/#sensors)
 *   [Leadership-Command](/skills/leadership/#command)
 
-## Automatic Perk:
+## Favored Perks:
 *   [Reputation](/perks_flaws/#reputation)
 
 ## Automatic Flaw:

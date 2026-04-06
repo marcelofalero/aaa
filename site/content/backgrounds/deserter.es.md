@@ -9,12 +9,15 @@ weight = 4
 
 Eres un fantasma en la máquina. Tienes los reflejos de un soldado pero el alma de un fugitivo.
 
-## Habilidades Especializadas Favoritas:
+## Habilidad Amplia Favorecida:
+*   Ninguna.
+
+## Especialidades Favorecidas:
 *   [Supervivencia-Entrenamiento de Supervivencia](/skills/survival/#survival-training)
 *   [Engaño-Farolear](/skills/deception/#bluff)
 *   [Operaciones Encubiertas-Ocultar](/skills/covert-ops/#conceal)
 
-## Ventaja Automática:
+## Perks Favorecidos:
 *   [Reflejos](/perks_flaws/#reflexes)
 
 ## Desventaja Automática:

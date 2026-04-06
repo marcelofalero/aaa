@@ -7,13 +7,16 @@ weight = 9
 
 Representas el nivel de élite de la formación institucional. No solo te uniste al servicio; fuiste forjado por él, aprendiendo que el liderazgo es una carga y la doctrina un escudo.
 
-## Habilidades Especializadas Favoritas:
+## Habilidad Amplia Favorecida:
+*   Ninguna.
+
+## Especialidades Favorecidas:
 *   [Liderazgo-Mando](/skills/leadership/#command)
 *   [Tácticas-Tácticas de Infantería](/skills/tactics/#infantry-tactics)
 *   [Administración-Gestión](/skills/administration/#management)
 *   [Cultura-Etiqueta](/skills/culture/#etiquette-specific)
 
-## Ventaja Automática:
+## Perks Favorecidos:
 *   [Reputación](/perks_flaws/#reputation)
 
 ## Desventaja Automática:

@@ -7,13 +7,16 @@ weight = 10
 
 Mientras las fuerzas terrestres luchan por metros, tú luchas por sistemas. Entiendes la compleja danza de los sistemas de naves estelares y el peso estratégico de la posición elevada en el vacío.
 
-## Habilidades Especializadas Favoritas:
+## Habilidad Amplia Favorecida:
+*   Ninguna.
+
+## Especialidades Favorecidas:
 *   [Tácticas-Tácticas Espaciales](/skills/tactics/#space-tactics)
 *   [Navegación-Astrogación de Sistemas](/skills/navigation/#astrogation-system)
 *   [Operación de Sistemas-Sensores](/skills/system-operation/#sensors)
 *   [Liderazgo-Mando](/skills/leadership/#command)
 
-## Ventaja Automática:
+## Perks Favorecidos:
 *   [Reputación](/perks_flaws/#reputation)
 
 ## Desventaja Automática:

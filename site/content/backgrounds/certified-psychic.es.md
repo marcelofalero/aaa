@@ -7,13 +7,16 @@ weight = 13
 
 Eres una entidad legal autónoma, con la rara autoridad de usar poderes psiónicos abiertamente. Actúas como árbitro en negociaciones de alto riesgo y posees el derecho legal de sondear mentes in situ si determinas que hay una causa razonable.
 
-## Habilidades Especializadas Favoritas:
+## Habilidad Amplia Favorecida:
+*   Ninguna.
+
+## Especialidades Favorecidas:
 *   [Telepatía-Lectura Mental](/skills/telepathy/#mind-reading)
 *   [Ley-Procedimientos Judiciales](/skills/law/#court-procedures)
 *   [Interacción-Entrevista](/skills/interaction/#interview)
 *   [Resolución-Resolución Mental](/skills/resolve-con/#mental-resolve)
 
-## Ventaja Automática:
+## Perks Favorecidos:
 *   [Reputación](/perks_flaws/#reputation)
 
 ## Desventaja Automática:
