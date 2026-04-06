@@ -45,26 +45,25 @@
       {{ range $index, $item := .items }}
       {{ $rowId := printf "desc-%s-%s-%s-%d" $file $key ($item.skill | urlize) $index }}
       {{ $tier := $item.tier | default 0 }}
-      
+
       {{/* Check if there are ANY displayable fields in expansion */}}
       {{ $hasVisibleDetails := false }}
       {{ if $item.description }}{{ $hasVisibleDetails = true }}{{ end }}
       {{ if not $hasVisibleDetails }}
-        {{ range $field_key := $hidden_fields }}
-          {{ if and (ne $field_key "pr") (index $item $field_key) }}{{ $hasVisibleDetails = true }}{{ end }}
-        {{ end }}
+      {{ range $field_key := $hidden_fields }}
+      {{ if and (ne $field_key "pr") (index $item $field_key) }}{{ $hasVisibleDetails = true }}{{ end }}
+      {{ end }}
       {{ end }}
 
       <tr class="data-row tier-{{ $tier }} {{ if $hasVisibleDetails }}has-description{{ end }}"
-        data-target="{{ $rowId }}"
-        data-tier="{{ $tier }}">
+        data-target="{{ $rowId }}" data-tier="{{ $tier }}">
         {{ range $data.columns }}
         {{ if and (not (in $hidden_fields .key)) (ne .key "description") }}
         <td class="cell-{{ .key }}">
           {{ if .link }}
           <a href="#{{ $item.anchor }}">{{ index $item .key | safeHTML }}</a>
           {{ else if and (eq .key "skill") (index $item "skill_url") }}
-          <a href="{{ index $item "skill_url" }}">{{ index $item .key | safeHTML }}</a>
+          <a href="{{ index $item " skill_url" }}">{{ index $item .key | safeHTML }}</a>
           {{ else }}
           {{ index $item .key | safeHTML }}
           {{ end }}

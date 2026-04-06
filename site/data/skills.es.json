@@ -92,7 +92,7 @@
           "skill": "Arco",
           "skill_url": "/es/skills/primitive-ranged-weapons#arco",
           "type": "Especialidad",
-          "attribute": "DEX",
+          "attribute": "STR",
           "cost": 3,
           "pr": "C",
           "tier": 2
@@ -128,7 +128,7 @@
           "skill": "Armas pesadas",
           "skill_url": "/es/skills/heavy-weapons",
           "type": "Amplia",
-          "attribute": "STR",
+          "attribute": "DEX",
           "cost": 6,
           "pr": "C",
           "tier": 1
@@ -137,7 +137,7 @@
           "skill": "Fuego directo",
           "skill_url": "/es/skills/heavy-weapons#fuego-directo",
           "type": "Especialidad",
-          "attribute": "STR",
+          "attribute": "DEX",
           "cost": 4,
           "pr": "C",
           "tier": 2
@@ -146,7 +146,7 @@
           "skill": "Fuego indirecto",
           "skill_url": "/es/skills/heavy-weapons#fuego-indirecto",
           "type": "Especialidad",
-          "attribute": "STR",
+          "attribute": "DEX",
           "cost": 4,
           "pr": "C",
           "tier": 2
@@ -173,7 +173,7 @@
           "skill": "Artes marciales defensivas",
           "skill_url": "/es/skills/melee-combat#artes-marciales-defensivas",
           "type": "Especialidad",
-          "attribute": "DEX",
+          "attribute": "STR",
           "cost": 3,
           "pr": "F",
           "tier": 2
@@ -200,7 +200,7 @@
           "skill": "Potenciada",
           "skill_url": "/es/skills/melee-combat#potenciada",
           "type": "Especialidad",
-          "attribute": "DEX",
+          "attribute": "STR",
           "cost": 4,
           "pr": "C",
           "tier": 2
@@ -813,7 +813,7 @@
           "skill": "Interacción",
           "skill_url": "/es/skills/interaction",
           "type": "Amplia",
-          "attribute": "WIL",
+          "attribute": "PER",
           "cost": 3,
           "pr": "—",
           "tier": 1
@@ -831,7 +831,7 @@
           "skill": "Entrevistar",
           "skill_url": "/es/skills/interaction#entrevistar",
           "type": "Especialidad",
-          "attribute": "WIL",
+          "attribute": "PER",
           "cost": 3,
           "pr": "—",
           "tier": 2

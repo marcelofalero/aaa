@@ -56,7 +56,8 @@
             "equipment": "Un abrigo blindado, dos juegos de ataduras de alta resistencia, un localizador/escáner de rastreo y una pistola pesada o porra aturdidora.",
             "special_ability": "**Rastreador de Fugitivos:** Tienes una bonificación de -1 paso a las tiradas de [Investigar-Buscar](/skills/investigate/#search) al buscar información sobre la ubicación actual o el historial reciente de un individuo específico.",
             "tendencies": "**El Obsesivo:** Persigue un objetivo o una pista en una situación claramente peligrosa o desventajosa en lugar de elegir un camino más seguro y lento.<br>**El Profesional:** Honra la letra específica de un contrato incluso cuando se le ofrece un \"trato secundario\" más rentable o una salida moral más fácil.",
-            "url": "/es/backgrounds/bounty-hunter/"
+            "url": "/es/backgrounds/bounty-hunter/",
+            "skill_url": "/es/backgrounds/bounty-hunter/"
           },
           {
             "name": "El Contacto",
@@ -68,7 +69,8 @@
             "equipment": "Un comunicador ilocalizable, un bolsillo lleno de diversas monedas o fichas de intercambio físico, y un arma oculta.",
             "special_ability": "**\"Conozco a Alguien.\":** Una vez por sesión, puedes localizar un objeto, personaje o pieza de información específica con una bonificación de -2 pasos, encontrándolo en la mitad del tiempo normal.",
             "tendencies": "**El Negociador:** Resuelve un conflicto mediando un acuerdo que impulse la trama.<br>**El Gestor de Activos:** Arriesga un objetivo para preservar un contacto útil o una pieza de equipo.",
-            "url": "/es/backgrounds/fixer/"
+            "url": "/es/backgrounds/fixer/",
+            "skill_url": "/es/backgrounds/fixer/"
           },
           {
             "name": "El Contrabandista",
@@ -80,7 +82,8 @@
             "equipment": "Un abrigo grande con bolsillos ocultos a prueba de sensores, un bláster de bolsillo, un libro de contabilidad físico y un juego de códigos de transpondedor o identificaciones falsas.",
             "special_ability": "**Escondite del Contrabandista:** Recibes una bonificación de -1 paso a las tiradas de [Operaciones Encubiertas-Ocultar](/skills/covert-ops/#conceal) al esconder objetos, datos o personas de inspecciones físicas o barridos de sensores rutinarios.",
             "tendencies": "**El Contrabandista:** Asume un riesgo narrativo o táctico para introducir algo ilegal o restringido en un área segura, incluso si la misión actual no lo requiere estrictamente.<br>**El Quemador:** Desecha carga valiosa, abandona un trato lucrativo o rompe lazos con un contacto útil a la primera señal de escrutinio oficial para asegurar tu propia libertad.",
-            "url": "/es/backgrounds/smuggler/"
+            "url": "/es/backgrounds/smuggler/",
+            "skill_url": "/es/backgrounds/smuggler/"
           },
           {
             "name": "El Criminal / Golfillo",
@@ -92,7 +95,8 @@
             "equipment": "Un kit de entrada físico o electrónico muy usado, un comunicador desechable, una identificación de bajo nivel falsificada y un arma de fabricación callejera fiable (como una navaja o una pistola de bolsillo).",
             "special_ability": "Ninguna. (Tus instintos de supervivencia brutos se reflejan mecánicamente al recibir una habilidad amplia gratuita para representar tu formación fundamental en la calle).",
             "tendencies": "**El Oportunista:** Asume un riesgo innecesario para asegurar un beneficio personal o una \"ventaja\".<br>**El Paranoico:** Compromete un plan para asegurar una ruta de escape clara.",
-            "url": "/es/backgrounds/criminal-urchin/"
+            "url": "/es/backgrounds/criminal-urchin/",
+            "skill_url": "/es/backgrounds/criminal-urchin/"
           },
           {
             "name": "El Denunciante",
@@ -104,7 +108,8 @@
             "equipment": "Un equipo de micrograbación de alta gama, un pase de prensa oficial (o falsificado de alta precisión), un comunicador desechable y un depurador de datos portátil.",
             "special_ability": "**Extraoficial:** Recibes una bonificación de -1 paso a las tiradas de [Interacción-Entrevista](/skills/interaction/#interview) o [Pillería-Conocimiento Callejero](/skills/street-smart/#street-knowledge) al intentar sonsacar rumores, información clasificada o declaraciones no oficiales de una fuente reacia.",
             "tendencies": "**La Exposición:** Prioriza documentar un crimen, una conspiración o un evento antes que detenerlo, poniéndote en peligro táctico para asegurar que el metraje o la historia sobrevivan.<br>**La Pregunta Difícil:** Interroga o provoca agresivamente a un individuo poderoso en un entorno social, destruyendo el progreso diplomático para evaluar su reacción.",
-            "url": "/es/backgrounds/whistleblower/"
+            "url": "/es/backgrounds/whistleblower/",
+            "skill_url": "/es/backgrounds/whistleblower/"
           },
           {
             "name": "El Desertor",
@@ -116,7 +121,8 @@
             "equipment": "Un arma de grado militar (con números de serie limados), una tienda de campaña o saco de dormir resistente y una tarjeta de identificación falsa de alta calidad.",
             "special_ability": "**Intuición de Refugio:** Tienes una bonificación de -1 paso para encontrar refugios improvisados, suministros del mercado negro o contactos comprensivos en territorio hostil.",
             "tendencies": "**La Fuga Pragmática:** Abandona una causa cuando los riesgos se vuelven \"inaceptables\" para asegurar tu supervivencia.<br>**La Mano Oculta:** Renuncia a la fama o la recompensa para asegurar que tu identidad permanezca sin descubrir.",
-            "url": "/es/backgrounds/deserter/"
+            "url": "/es/backgrounds/deserter/",
+            "skill_url": "/es/backgrounds/deserter/"
           },
           {
             "name": "El Diplomático",
@@ -128,7 +134,8 @@
             "equipment": "Un traje de alta sociedad a medida, un datapad encriptado con un códice legal localizado y un arma de fuego ceremonial o fácilmente ocultable.",
             "special_ability": "**Inmunidad Diplomática:** En sistemas establecidos, a menudo estás exento de leyes locales menores y búsquedas rutinarias mientras realizas negocios oficiales. Esta inmunidad se extiende estrictamente a tu persona y a tu cabina personal a bordo de una nave, a menos que la nave misma esté registrada como transporte diplomático. Recibes una bonificación de -1 paso a las tiradas que involucren navegación legal.",
             "tendencies": "**El Mediador:** Intenta resolver una situación hostil mediante la negociación, incluso cuando el combate sea más fácil.<br>**El Arquitecto:** Retrasa la acción para asegurar que cada variable social o consecuencia sea considerada.",
-            "url": "/es/backgrounds/diplomat/"
+            "url": "/es/backgrounds/diplomat/",
+            "skill_url": "/es/backgrounds/diplomat/"
           },
           {
             "name": "El Graduado de la Academia",
@@ -140,7 +147,8 @@
             "equipment": "Un uniforme de gala impecable, un arma de fuego de oficial estándar, un proyector de holomapa táctico y una credencial de autorización de bajo nivel.",
             "special_ability": "**Evaluación Táctica:** Tienes una bonificación de -1 paso a las tiradas de [Conciencia-Percepción](/skills/awareness/#perception) o [Tácticas-Tácticas de Infantería](/skills/tactics/#infantry-tactics) realizadas específicamente para evaluar la formación de combate de un oponente, sus debilidades defensivas o la calidad de su equipo antes de que comience un enfrentamiento.",
             "tendencies": "**El Oficial al Mando:** Afirma tu rango o autoridad para tomar el control de una situación caótica, incluso cuando hacerlo te convierte en el objetivo principal de enemigos o del escrutinio social.<br>**El Estratega:** Se niega a desviarse de un plan táctico sofisticado o \"correcto\" incluso cuando una solución más simple y \"ruda\" está disponible, priorizando la doctrina que le enseñaron.",
-            "url": "/es/backgrounds/academy-graduate/"
+            "url": "/es/backgrounds/academy-graduate/",
+            "skill_url": "/es/backgrounds/academy-graduate/"
           },
           {
             "name": "El Hacker",
@@ -152,7 +160,8 @@
             "equipment": "Una ciberplataforma personalizada de alta gama o un equipo de intrusión ilegal, un suplantador biométrico, una unidad de datos desechable encriptada y un suministro de estimulantes suaves.",
             "special_ability": "**Acceso por Puerta Trasera:** Recibes una bonificación de -1 paso a las tiradas de [Ciencias de la Computación-Hacking](/skills/computer-science/#hacking) o [Seguridad-Dispositivos de Seguridad](/skills/security/#security-devices) al intentar eludir la seguridad digital, descifrar archivos o falsificar registros de acceso electrónico.",
             "tendencies": "**El Fantasma Digital:** Prioriza borrar tu huella digital o robar datos secundarios por encima de la seguridad física o las necesidades tácticas inmediatas del grupo.<br>**El Intruso Curioso:** No puede resistirse a hurgar en un sistema seguro o un archivo bloqueado, incluso cuando no tiene nada que ver con la misión actual y corre el riesgo de activar alarmas.",
-            "url": "/es/backgrounds/hacker/"
+            "url": "/es/backgrounds/hacker/",
+            "skill_url": "/es/backgrounds/hacker/"
           },
           {
             "name": "El Héroe de Guerra",
@@ -164,7 +173,8 @@
             "equipment": "Un arma distintiva personalizada o muy marcada por la batalla, medallas de combate oficiales, una chaqueta militar resistente y un suministro de analgésicos médicos.",
             "special_ability": "**Carga de Gloria:** Recibes una bonificación de -1 paso a las tiradas de habilidad de [Interacción](/skills/interaction/) o [Liderazgo](/skills/leadership/) al tratar con veteranos, personal militar activo o ciudadanos patrióticos que reconocen tu servicio.",
             "tendencies": "**La Leyenda Viviente:** Acepta voluntariamente una desventaja significativa o soporta el peso de un ataque para proteger a civiles o aliados, impulsado por la necesidad de estar a la altura de tu reputación imposible.<br>**El Fantasma del Pasado:** Reacciona a una situación actual utilizando el contexto obsoleto o traumático de tu guerra pasada, complicando una simple negociación o infiltración al tratarla como un campo de batalla.",
-            "url": "/es/backgrounds/war-hero/"
+            "url": "/es/backgrounds/war-hero/",
+            "skill_url": "/es/backgrounds/war-hero/"
           },
           {
             "name": "El Marginado",
@@ -176,7 +186,8 @@
             "equipment": "Un arma arcaica robusta (como una lanza, arco o hoja pesada), un cuchillo de supervivencia, tótems tribales o de clan, y ropa de supervivencia resistente.",
             "special_ability": "Ninguna. (Tu supervivencia se basa en una amplia gama de habilidades físicas y rudas).",
             "tendencies": "**El Tradicionalista:** Resuelve un problema moderno utilizando un método antiguo, de baja tecnología o ritualista.<br>**El Solitario:** Asume una desventaja para realizar una tarea completamente solo, rechazando la ayuda de la tecnología \"blanda\" o de sus compañeros de equipo.",
-            "url": "/es/backgrounds/outcast/"
+            "url": "/es/backgrounds/outcast/",
+            "skill_url": "/es/backgrounds/outcast/"
           },
           {
             "name": "El Niño Militar",
@@ -188,7 +199,8 @@
             "equipment": "Una pieza de equipo militar excedente (como una chaqueta de fatiga resistente o botas de combate), un botiquín básico de campo y un arma de fuego de dotación estándar.",
             "special_ability": "**Procedimiento Estándar:** Tienes una bonificación de -1 paso a las tiradas de [Resolución-Resolución Mental](/skills/resolve-con/#mental-resolve) o [Resolución-Resolución Física](/skills/resolve-con/#physical-resolve) durante situaciones de alto estrés, siempre y cuando sigas un plan u orden claro y preestablecido.",
             "tendencies": "**El Seguidor de Órdenes:** Se adhiere a un plan o instrucción incluso cuando las circunstancias han cambiado.<br>**El Protector:** Se pone en riesgo para cubrir el flanco de un aliado.",
-            "url": "/es/backgrounds/military-brat/"
+            "url": "/es/backgrounds/military-brat/",
+            "skill_url": "/es/backgrounds/military-brat/"
           },
           {
             "name": "El Oficial Paramilitar",
@@ -200,7 +212,8 @@
             "equipment": "Un traje de armadura táctica personalizado y no estándar, un rifle de asalto fuertemente modificado, un libro de contabilidad digital de contratos y una unidad de comunicaciones encriptada a nivel de escuadrón.",
             "special_ability": "**Guerra Asimétrica:** Recibes una bonificación de -1 paso a las tiradas de [Tácticas-Tácticas de Infantería](/skills/tactics/#infantry-tactics) o [Supervivencia-Entrenamiento de Supervivencia](/skills/survival/#survival-training) al ejecutar una emboscada, librar una campaña de guerrilla u operar completamente aislado de las líneas de suministro oficiales.",
             "tendencies": "**El Mercenario:** Exige renegociación, pago por riesgo o una clara ventaja táctica antes de comprometerse en un peligroso tiroteo que no estaba en el plan original.<br>**El Pragmatista:** Ignora las reglas de enfrentamiento tradicionales o la doctrina \"honorable\" en favor de trampas, sabotajes o una fuerza desproporcionada abrumadora.",
-            "url": "/es/backgrounds/paramilitary-officer/"
+            "url": "/es/backgrounds/paramilitary-officer/",
+            "skill_url": "/es/backgrounds/paramilitary-officer/"
           },
           {
             "name": "El Oficial de Flota",
@@ -212,7 +225,8 @@
             "equipment": "Un uniforme naval, un traje espacial personal (traje de vacío) diseñado para emergencias en gravedad cero y un arma de fuego de oficial.",
             "special_ability": "**Intuición de Puente:** Tienes una bonificación de -1 paso a todas las tiradas de habilidad especializada de [Operación de Sistemas](/skills/system-operation/) mientras estás en el puente de una nave estelar, lo que representa tu profunda familiaridad con las interfaces estándar de la flota y los protocolos de emergencia.",
             "tendencies": "**El Alma de la Nave:** Prioriza la integridad estructural y el mantenimiento a largo plazo de la nave sobre el equipo personal o los objetivos de la misión.<br>**El Purista del Protocolo:** Insiste en seguir los protocolos estándar de comunicación y combate naval incluso cuando opera en la \"naturaleza\" o con tripulaciones civiles, lo que podría causar fricción social.",
-            "url": "/es/backgrounds/fleet-officer/"
+            "url": "/es/backgrounds/fleet-officer/",
+            "skill_url": "/es/backgrounds/fleet-officer/"
           },
           {
             "name": "El Propietario de Nave",
@@ -224,7 +238,8 @@
             "equipment": "Un abrigo de capitán, una llave inglesa pesada o multiherramienta, y una baliza de socorro personal vinculada a tu nave.",
             "special_ability": "**Capitán y Comandante:** Comienzas el juego en posesión de una nave estelar capaz de viajes interestelares y de acomodar a todo el grupo.",
             "tendencies": "**El Resultado Final:** Toma una decisión táctica o narrativa estrictamente basada en la ganancia financiera o la preservación física de tu nave, ignorando súplicas morales o riesgos personales.<br>**Mi Nave, Mis Reglas:** Afirma tu autoridad absoluta sobre una situación o pasajero a bordo de tu nave, incluso cuando ceder ante un aliado o experto sería significativamente más seguro.",
-            "url": "/es/backgrounds/ship-owner/"
+            "url": "/es/backgrounds/ship-owner/",
+            "skill_url": "/es/backgrounds/ship-owner/"
           },
           {
             "name": "El Psíquico Certificado",
@@ -236,7 +251,8 @@
             "equipment": "Una insignia/orden de árbitro oficial, un dispositivo de grabación portátil, vestimenta profesional formal y sedantes/estimulantes suaves para la tensión psíquica.",
             "special_ability": "**Árbitro Autónomo:** Tu verificación psiónica es legalmente vinculante. Recibes una bonificación de -1 paso a las tiradas de [Interacción](/skills/interaction/) o [Ley](/skills/law/) al actuar como tercero neutral en negociaciones o al hacer valer tu derecho legal a verificar la veracidad de una declaración en el campo.",
             "tendencies": "**La Verdad Absoluta:** Fuerza una verdad dura o peligrosa a la luz para mantener tu neutralidad absoluta, incluso cuando una mentira educada o un engaño habrían facilitado las cosas para la parte.<br>**El Juez No Deseado:** Complica una situación actuando sobre un crimen o un secreto oscuro que obtuviste de la mente de alguien, usando tu autoridad autónoma para intervenir cuando no era tu lucha.",
-            "url": "/es/backgrounds/certified-psychic/"
+            "url": "/es/backgrounds/certified-psychic/",
+            "skill_url": "/es/backgrounds/certified-psychic/"
           },
           {
             "name": "El Subversor",
@@ -248,7 +264,8 @@
             "equipment": "Un secuestrador de señales portátil o tecnología de pulverización de alto rendimiento, una unidad de datos encriptada llena de propaganda, una máscara de respiración para ocultar tu rostro y ropa de calle resistente.",
             "special_ability": "**Mensajes Subliminales:** Tienes una bonificación de -1 paso a las tiradas de [Liderazgo-Inspirar](/skills/leadership/#inspire) o [Engaño-Farolear](/skills/deception/#bluff) cuando usas tu arte para incitar a una multitud, causar una distracción pública o influir rápidamente en la opinión pública.",
             "tendencies": "**La Tarjeta de Visita:** Deja una pieza reconocible de tu arte o propaganda en la escena de una misión, llamando intencionalmente la atención sobre ti mismo y arriesgando el descubrimiento inmediato.<br>**El Agitador:** Provoca abiertamente a figuras de autoridad o a la seguridad corporativa, utilizando el caos resultante para hacer una declaración política incluso si pone en peligro la operación actual.",
-            "url": "/es/backgrounds/subverter/"
+            "url": "/es/backgrounds/subverter/",
+            "skill_url": "/es/backgrounds/subverter/"
           },
           {
             "name": "El Virtuoso",
@@ -260,7 +277,8 @@
             "equipment": "Herramientas de creación personalizadas de alta gama (un holo-estilete a medida o medios físicos), atuendo de lujo y un portafolio digital portátil.",
             "special_ability": "**Favor del Patrón y Catarsis:** Puedes aprovechar tu prestigio artístico para obtener acceso a eventos exclusivos o asegurar financiación. Recibes una bonificación de -1 paso a las tiradas de habilidad de [Interacción-Encanto](/skills/interaction/#charm) o [Cultura-Etiqueta](/skills/culture/#etiquette-specific) al tratar con patrones de la alta sociedad o entusiastas del arte (esta bonificación mejora a -2 pasos si posees la ventaja [Asquerosamente Rico](/perks_flaws/#filthy-rich)). Además, participar en tu arte proporciona alivio psicológico: si se utilizan las reglas opcionales de Estrés Persistente, una tirada exitosa de [Creatividad-Expresión Artística](/skills/creativity/#artistic-expression) otorga una bonificación de +1 (Ordinario), +2 (Bueno) o +3 (Asombroso) pasos a las proezas de Personalidad realizadas para resistir las penalizaciones por estrés.",
             "tendencies": "**El Esteta:** Elige un curso de acción basado puramente en su atractivo estético o estilo dramático en lugar de su solidez táctica o eficiencia.<br>**La Diva:** Se niega a cooperar o transigir con el grupo hasta que se cumplan sus demandas específicas, a menudo insignificantes, con respecto a la comodidad o la integridad artística.",
-            "url": "/es/backgrounds/virtuoso/"
+            "url": "/es/backgrounds/virtuoso/",
+            "skill_url": "/es/backgrounds/virtuoso/"
           },
           {
             "name": "La Cara",
@@ -272,7 +290,8 @@
             "equipment": "Un vestuario extravagante adecuado para eventos de alto nivel, un kit de disfraz cosmético y un arma de fuego llamativa pero de bajo calibre.",
             "special_ability": "**El Rebuscador:** Recibes una bonificación de -1 paso a las tiradas de [Interacción-Negociar](/skills/interaction/#bargain) o [Pillería-Conocimiento Callejero](/skills/street-smart/#street-knowledge) al intentar adquirir equipo específico o artículos restringidos por medios no monetarios (engaños, favores o \"préstamos\").",
             "tendencies": "**El Buscador de Atención:** Intencionalmente llama la atención sobre sí mismo en un entorno social para crear una distracción, incluso cuando pasar desapercibido es más seguro.<br>**El Estafador:** Intenta \"estafar\" o salir de un problema o entrar en un área restringida usando su atractivo personal, incluso cuando existe un método más directo (pero menos elegante).",
-            "url": "/es/backgrounds/face/"
+            "url": "/es/backgrounds/face/",
+            "skill_url": "/es/backgrounds/face/"
           }
         ]
       }

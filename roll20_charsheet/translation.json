@@ -100,5 +100,7 @@
     "campaign-wiki-url": "Reference / Wiki URL",
     "campaign-notes": "Campaign & Narrative Notes",
     "group-objectives": "GROUP OBJECTIVES",
-    "important-contacts": "IMPORTANT CONTACTS"
+    "important-contacts": "IMPORTANT CONTACTS",
+    "tendencies": "Tendencies",
+    "tendency-placeholder": "Choose Tendency"
 }

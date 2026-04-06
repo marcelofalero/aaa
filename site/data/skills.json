@@ -83,7 +83,7 @@
           "skill": "Defensive Martial Arts",
           "skill_url": "/skills/melee-combat#defensive-martial-arts",
           "type": "Specialty",
-          "attribute": "DEX",
+          "attribute": "STR",
           "cost": 3,
           "pr": "F",
           "tier": 2
@@ -101,7 +101,7 @@
           "skill": "Powered",
           "skill_url": "/skills/melee-combat#powered",
           "type": "Specialty",
-          "attribute": "DEX",
+          "attribute": "STR",
           "cost": 4,
           "pr": "C",
           "tier": 2
@@ -1232,7 +1232,7 @@
           "skill": "Swim",
           "skill_url": "/skills/athletics#swim",
           "type": "Specialty",
-          "attribute": "CON",
+          "attribute": "STR",
           "cost": 2,
           "pr": "—",
           "tier": 2

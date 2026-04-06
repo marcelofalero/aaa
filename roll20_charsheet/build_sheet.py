@@ -25,7 +25,7 @@ def get_skill_urls():
                 for item in group.get("items", []):
                     # Normalize name for matching
                     name = item["skill"].replace('**', '').replace('&nbsp;', '').replace('—', '-').replace('[spec]', '').strip()
-                    urls[name] = "https://aaa.dimble.net" + item["skill_url"]
+                    urls[name] = item["skill_url"]
     except Exception as e:
         print(f"Error loading skill URLs: {e}")
         
@@ -84,8 +84,9 @@ def generate_skills_html(data_list, indent_level=3):
         attr_full = ABILITY_MAP[attr_short]
         id_name = clean_id(name)
         
-        # Base URL for the broad skill
-        url = f"https://aaa.dimble.net/skills/{name.lower().replace(' ', '-')}"
+        # Base URL for the broad skill (Use map if available, else fallback)
+        base_url = SKILL_URL_MAP.get(name, f"/skills/{name.lower().replace(' ', '-')}")
+        url = f"https://aaa.dimble.net{base_url}"
 
         # Common roll value partials
         roll_scores = f"{{{{score= [[@{{{id_name}O}}]]/[[@{{{id_name}G}}]]/[[@{{{id_name}A}}]]}}}}"
@@ -126,9 +127,10 @@ def generate_skills_html(data_list, indent_level=3):
             spec_attr_full = ABILITY_MAP[spec_attr]
             spec_id = clean_id(spec_name)
             
-            # Smart Anchor generation for specialties
-            anchor = get_smart_anchor(spec)
-            spec_url = f"{url}#{anchor}"
+            # Specialty URL (Use map if available, else guess)
+            spec_base_url = SKILL_URL_MAP.get(spec_name, f"{base_url}#{spec_name.lower().replace(' ', '-')}")
+            if not spec_base_url.startswith('/'): spec_base_url = f"/{spec_base_url}" # Ensure slash
+            spec_url = f"https://aaa.dimble.net{spec_base_url}"
             spec_wiki_link = f"{{{{wiki= [↗ Wiki Documentation]({spec_url})}}}}"
 
             if spec_untrained == "NO":

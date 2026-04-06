@@ -3,22 +3,22 @@
 {{ $hidden_fields := slice }}
 
 {{ if .IsNamedParams }}
-  {{ if .Get "hide" }}
-    {{ $hidden_fields = split (.Get "hide") " " }}
-  {{ end }}
+{{ if .Get "hide" }}
+{{ $hidden_fields = split (.Get "hide") " " }}
+{{ end }}
 {{ else }}
-  {{ $hidden_fields = after 2 .Params }}
+{{ $hidden_fields = after 2 .Params }}
 {{ end }}
 
 {{/* Language-aware data loading */}}
 {{ $data := index hugo.Data $file }}
 {{ $lang_suffix := printf "%s" .Page.Language.Lang }}
 {{ if and (ne $lang_suffix "en") (index hugo.Data (printf "%s.%s" $file $lang_suffix)) }}
-  {{ $data = index hugo.Data (printf "%s.%s" $file $lang_suffix) }}
+{{ $data = index hugo.Data (printf "%s.%s" $file $lang_suffix) }}
 {{ end }}
 
 {{ if $key }}
-  {{ $data = index $data $key }}
+{{ $data = index $data $key }}
 {{ end }}
 
 {{/* Specific for accordion expansion pattern */}}

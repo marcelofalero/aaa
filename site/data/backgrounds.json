@@ -56,7 +56,8 @@
             "equipment": "A pristine dress uniform, a standard-issue officer's sidearm, a tactical holomap projector, and a low-level clearance badge.",
             "special_ability": "**Tactical Evaluation:** You have a -1 step bonus to [Awareness-Perception](/skills/awareness/#perception) or [Tactics-Infantry Tactics](/skills/tactics/#infantry-tactics) checks made specifically to evaluate an opponent's combat formation, defensive weaknesses, or equipment quality before an engagement begins.",
             "tendencies": "**The Officer in Charge:** Assert your rank or authority to take command of a chaotic situation, even when doing so makes you the primary target for enemies or social scrutiny.<br>**The Strategist:** Refuse to deviate from a sophisticated or \"correct\" tactical plan even when a simpler, more \"rugged\" solution is available, prioritizing the doctrine you were taught.",
-            "url": "/backgrounds/academy-graduate/"
+            "url": "/backgrounds/academy-graduate/",
+            "skill_url": "/backgrounds/academy-graduate/"
           },
           {
             "name": "The Bounty Hunter",
@@ -64,11 +65,12 @@
             "favored_broad_skill": "",
             "favored_specialty_skills": "[Investigate-Track](/skills/investigate/#track)<br>[Law-Law Enforcement Procedures](/skills/law/#law-enforcement-procedures)<br>[Awareness-Perception](/skills/awareness/#perception)<br>[Street Smart-Street Knowledge](/skills/street-smart/#street-knowledge)",
             "favored_perks": "[Observant](/perks_flaws/#observant)",
-            "flaw": "[Powerful Enemy](/perks_flaws/#powerful-enemy) (Someone you caught, or someone you\u2019re currently hunting who has the upper hand).",
+            "flaw": "[Powerful Enemy](/perks_flaws/#powerful-enemy) (Someone you caught, or someone you’re currently hunting who has the upper hand).",
             "equipment": "An armored longcoat, two sets of heavy-duty binders, a tracking fob/scanner, and a heavy pistol or stun baton.",
             "special_ability": "**Skip Tracer:** You have a -1 step bonus to [Investigate-Search](/skills/investigate/#search) checks when looking for information regarding a specific individual's current location or recent history.",
             "tendencies": "**The Single-Minded:** Pursue a target or a lead into a clearly dangerous or disadvantageous situation instead of choosing a safer, slower path.<br>**The Professional:** Honor the specific letter of a contract even when offered a more profitable \"side deal\" or an easier moral out.",
-            "url": "/backgrounds/bounty-hunter/"
+            "url": "/backgrounds/bounty-hunter/",
+            "skill_url": "/backgrounds/bounty-hunter/"
           },
           {
             "name": "The Certified Psychic",
@@ -80,7 +82,8 @@
             "equipment": "An official arbiter's badge/warrant, a portable recording device, formal professional wear, and mild sedatives/stimulants for psychic strain.",
             "special_ability": "**Autonomous Arbiter:** Your psionic verification is legally binding. You receive a -1 step bonus to [Interaction](/skills/interaction/) or [Law](/skills/law/) checks when acting as a neutral third party in negotiations or when asserting your legal right to verify the truth of a statement in the field.",
             "tendencies": "**The Absolute Truth:** Force a harsh or dangerous truth out into the open to maintain your absolute neutrality, even when a polite lie or deception would have made things easier for the party.<br>**The Unwanted Judge:** Complicate a situation by acting on a crime or dark secret you gleaned from someone's mind, using your autonomous authority to intervene when it wasn't your fight.",
-            "url": "/backgrounds/certified-psychic/"
+            "url": "/backgrounds/certified-psychic/",
+            "skill_url": "/backgrounds/certified-psychic/"
           },
           {
             "name": "The Criminal / Urchin",
@@ -92,7 +95,8 @@
             "equipment": "A well-used physical or electronic entry kit, a burner comm-link, a forged low-tier ID, and a reliable street-made weapon (like a shiv or a holdout pistol).",
             "special_ability": "None. (Your raw survival instincts are instead reflected mechanically by receiving a free broad skill to represent your foundational street upbringing).",
             "tendencies": "**The Opportunist:** Take an unnecessary risk to secure a personal profit or an \"angle.\"<br>**The Paranoiac:** Compromise a plan to ensure you have a clear escape route.",
-            "url": "/backgrounds/criminal-urchin/"
+            "url": "/backgrounds/criminal-urchin/",
+            "skill_url": "/backgrounds/criminal-urchin/"
           },
           {
             "name": "The Deserter",
@@ -104,7 +108,8 @@
             "equipment": "A military-grade weapon (with filed-off serial numbers), a rugged survival tent or sleeping roll, and a high-quality fake ident-card.",
             "special_ability": "**Safehouse Intuition:** You have a -1 step bonus to find makeshift shelter, black-market supplies, or sympathetic contacts in hostile territory.",
             "tendencies": "**The Pragmatic Escape:** Abandon a cause when the risks become \"unacceptable\" to ensure your survival.<br>**The Hidden Hand:** Pass up fame or reward to ensure your identity remains undiscovered.",
-            "url": "/backgrounds/deserter/"
+            "url": "/backgrounds/deserter/",
+            "skill_url": "/backgrounds/deserter/"
           },
           {
             "name": "The Diplomat",
@@ -116,7 +121,8 @@
             "equipment": "A tailored high-society suit, an encrypted datapad with a localized legal codex, and a ceremonial or easily concealable sidearm.",
             "special_ability": "**Diplomatic Immunity:** In settled systems, you are often exempt from minor local laws and routine searches while on official business. This immunity extends strictly to your person and your personal cabin aboard a vessel, unless the ship itself is registered as a diplomatic transport. You receive a -1 step bonus to checks involving legal navigation.",
             "tendencies": "**The Mediator:** Attempt to resolve a hostile situation through negotiation even when combat is easier.<br>**The Architect:** Delay action to ensure every social variable or consequence is accounted for.",
-            "url": "/backgrounds/diplomat/"
+            "url": "/backgrounds/diplomat/",
+            "skill_url": "/backgrounds/diplomat/"
           },
           {
             "name": "The Face",
@@ -128,7 +134,8 @@
             "equipment": "An extravagant wardrobe suitable for high-end venues, a cosmetic disguise kit, and a flashy but low-caliber sidearm.",
             "special_ability": "**The Scrounger:** You have a -1 step bonus to [Interaction-Bargain](/skills/interaction/#bargain) or [Street Smart-Street Knowledge](/skills/street-smart/#street-knowledge) checks when trying to acquire specific equipment or restricted items through non-monetary means (cons, favors, or \"borrowing\").",
             "tendencies": "**The Spotlight Seeker:** Intentionally draw attention to yourself in a social setting to create a distraction, even when being inconspicuous is safer.<br>**The Hustler:** Attempt to \"scam\" or talk your way out of a problem or into a restricted area using your personal appeal, even when a more direct (but less elegant) method exists.",
-            "url": "/backgrounds/face/"
+            "url": "/backgrounds/face/",
+            "skill_url": "/backgrounds/face/"
           },
           {
             "name": "The Fixer",
@@ -140,7 +147,8 @@
             "equipment": "An untraceable comm-link, a pocket full of varied currency or physical trade chits, and a concealed weapon.",
             "special_ability": "**\"I Know a Guy.\":** Once per session, you can locate a specific item, character, or piece of information with a -2 step bonus, finding it in half the normal time.",
             "tendencies": "**The Negotiator:** Solve a conflict by brokering a deal that moves the plot forward.<br>**The Asset Manager:** Risk an objective to preserve a useful contact or piece of equipment.",
-            "url": "/backgrounds/fixer/"
+            "url": "/backgrounds/fixer/",
+            "skill_url": "/backgrounds/fixer/"
           },
           {
             "name": "The Fleet Officer",
@@ -151,8 +159,9 @@
             "flaw": "[Code of Honor](/perks_flaws/#code-of-honor) (Strict adherence to naval protocol and superiority).",
             "equipment": "A naval uniform, a personal void-suit (vacuum suit) designed for zero-G emergencies, and an officer's sidearm.",
             "special_ability": "**Bridge Intuition:** You have a -1 step bonus to all [System Operation](/skills/system-operation/) specialty skill checks while on the bridge of a starship, representing your deep familiarity with fleet-standard interfaces and emergency protocols.",
-            "tendencies": "**The Ship\u2019s Soul:** Prioritize the structural integrity and long-term maintenance of the vessel over personal equipment or mission objectives.<br>**The Protocol Purist:** Insist on following standard naval communications and engagement protocols even when operating in the \"wild\" or with civilian crews, potentially causing social friction.",
-            "url": "/backgrounds/fleet-officer/"
+            "tendencies": "**The Ship’s Soul:** Prioritize the structural integrity and long-term maintenance of the vessel over personal equipment or mission objectives.<br>**The Protocol Purist:** Insist on following standard naval communications and engagement protocols even when operating in the \"wild\" or with civilian crews, potentially causing social friction.",
+            "url": "/backgrounds/fleet-officer/",
+            "skill_url": "/backgrounds/fleet-officer/"
           },
           {
             "name": "The Hacker",
@@ -164,7 +173,8 @@
             "equipment": "A high-end custom cyberdeck or illegal intrusion rig, a biometric spoofer, an encrypted burner drive, and a mild stimulant supply.",
             "special_ability": "**Backdoor Access:** You receive a -1 step bonus to [Computer Science-Hacking](/skills/computer-science/#hacking) or [Security-Security Devices](/skills/security/#security-devices) checks when attempting to bypass digital security, decrypt files, or spoof electronic access logs.",
             "tendencies": "**The Digital Ghost:** Prioritize erasing your digital footprint or stealing secondary data over the physical safety or immediate tactical needs of the party.<br>**The Curious Intruder:** Cannot resist poking into a secure system or locked file even when it has nothing to do with the current mission and risks triggering alarms.",
-            "url": "/backgrounds/hacker/"
+            "url": "/backgrounds/hacker/",
+            "skill_url": "/backgrounds/hacker/"
           },
           {
             "name": "The Military Brat",
@@ -176,7 +186,8 @@
             "equipment": "A piece of surplus military gear (like a rugged fatigue jacket or combat boots), a basic field medkit, and a standard-issue sidearm.",
             "special_ability": "**Standard Procedure:** You have a -1 step bonus to [Resolve-Mental Resolve](/skills/resolve-con/#mental-resolve) or [Resolve-Physical Resolve](/skills/resolve-con/#physical-resolve) checks during high-stress situations as long as you are following a clear, pre-established plan or order.",
             "tendencies": "**The Order-Follower:** Adhere to a plan or instruction even when circumstances have shifted.<br>**The Protector:** Put yourself at risk to cover an ally's flank.",
-            "url": "/backgrounds/military-brat/"
+            "url": "/backgrounds/military-brat/",
+            "skill_url": "/backgrounds/military-brat/"
           },
           {
             "name": "The Outcast",
@@ -188,7 +199,8 @@
             "equipment": "A sturdy archaic weapon (like a spear, bow, or heavy blade), a survival knife, tribal or clan tokens, and rugged survival clothing.",
             "special_ability": "None. (Your survival is bought with a wide array of raw, physical skills).",
             "tendencies": "**The Traditionalist:** Solve a modern problem using an ancient, low-tech, or ritualistic method.<br>**The Loner:** Take a disadvantage to handle a task entirely on your own, refusing the help of \"soft\" technology or teammates.",
-            "url": "/backgrounds/outcast/"
+            "url": "/backgrounds/outcast/",
+            "skill_url": "/backgrounds/outcast/"
           },
           {
             "name": "The Paramilitary Officer",
@@ -200,7 +212,8 @@
             "equipment": "A personalized, non-standard suit of tactical armor, a heavily modified assault rifle, a digital contract ledger, and a squad-level encrypted comms unit.",
             "special_ability": "**Asymmetrical Warfare:** You receive a -1 step bonus to [Tactics-Infantry Tactics](/skills/tactics/#infantry-tactics) or [Survival-Survival Training](/skills/survival/#survival-training) checks when executing an ambush, fighting a guerrilla campaign, or operating entirely cut off from official supply lines.",
             "tendencies": "**The Mercenary:** Demand renegotiation, hazard pay, or a clear tactical advantage before committing to a dangerous firefight that wasn't in the original plan.<br>**The Pragmatist:** Disregard traditional rules of engagement or \"honorable\" doctrine in favor of traps, sabotage, or overwhelming disproportionate force.",
-            "url": "/backgrounds/paramilitary-officer/"
+            "url": "/backgrounds/paramilitary-officer/",
+            "skill_url": "/backgrounds/paramilitary-officer/"
           },
           {
             "name": "The Ship Owner",
@@ -212,11 +225,12 @@
             "equipment": "A captain's coat, a heavy spanner or multi-tool, and a personal distress beacon linked to your ship.",
             "special_ability": "**Captain and Commander:** You begin the game in possession of a starship capable of interstellar travel and accommodating the entire party.",
             "tendencies": "**The Bottom Line:** Make a tactical or narrative decision strictly based on financial gain or the physical preservation of your ship, ignoring moral pleas or personal risks.<br>**My Ship, My Rules:** Assert your absolute authority over a situation or passenger while aboard your vessel, even when deferring to an ally or expert would be significantly safer.",
-            "url": "/backgrounds/ship-owner/"
+            "url": "/backgrounds/ship-owner/",
+            "skill_url": "/backgrounds/ship-owner/"
           },
           {
             "name": "The Smuggler",
-            "description": "You make your living in the gray areas between borders and laws. Moving illicit cargo requires a steady nerve, knowledge of the black market, and the ability to lie to an inspector\u2019s face.",
+            "description": "You make your living in the gray areas between borders and laws. Moving illicit cargo requires a steady nerve, knowledge of the black market, and the ability to lie to an inspector’s face.",
             "favored_broad_skill": "",
             "favored_specialty_skills": "[Business-Illicit Business](/skills/business/#illicit-business)<br>[Covert Ops-Conceal](/skills/covert-ops/#conceal)<br>[Deception-Bribe](/skills/deception/#bribe)<br>[Street Smart-Criminal Elements](/skills/street-smart/#criminal-elements)",
             "favored_perks": "[Good Luck](/perks_flaws/#good-luck)",
@@ -224,7 +238,8 @@
             "equipment": "An oversized coat with hidden sensor-baffled pockets, a holdout blaster, a physical ledger, and a set of fake transponder codes or IDs.",
             "special_ability": "**Smuggler's Hold:** You receive a -1 step bonus to [Covert Ops-Conceal](/skills/covert-ops/#conceal) checks when hiding objects, data, or people from physical inspections or routine sensor sweeps.",
             "tendencies": "**The Contrabandist:** Take a narrative or tactical risk to sneak something illegal or restricted into a secure area, even if the current mission doesn't strictly require it.<br>**The Burner:** Dump valuable cargo, abandon a lucrative deal, or cut ties with a useful contact at the first sign of official scrutiny to ensure your own freedom.",
-            "url": "/backgrounds/smuggler/"
+            "url": "/backgrounds/smuggler/",
+            "skill_url": "/backgrounds/smuggler/"
           },
           {
             "name": "The Subverter",
@@ -236,7 +251,8 @@
             "equipment": "A portable signal-hijacker or high-yield spray tech, an encrypted data-drive full of propaganda, a breather mask to obscure your face, and rugged street clothes.",
             "special_ability": "**Subliminal Messaging:** You have a -1 step bonus to [Leadership-Inspire](/skills/leadership/#inspire) or [Deception-Bluff](/skills/deception/#bluff) checks when you use your art to incite a crowd, cause a public distraction, or rapidly sway public opinion.",
             "tendencies": "**The Calling Card:** Leave a recognizable piece of your art or propaganda at the scene of a mission, intentionally drawing attention to yourself and risking immediate discovery.<br>**The Agitator:** Openly provoke authority figures or corporate security, using the resulting chaos to make a political point even if it jeopardizes the current operation.",
-            "url": "/backgrounds/subverter/"
+            "url": "/backgrounds/subverter/",
+            "skill_url": "/backgrounds/subverter/"
           },
           {
             "name": "The Virtuoso",
@@ -248,11 +264,12 @@
             "equipment": "High-end, custom-made creation tools (a bespoke holo-stylus or physical mediums), luxury attire, and a portable digital portfolio.",
             "special_ability": "**Patron's Favor & Catharsis:** You can leverage your artistic prestige to gain access to exclusive events or secure funding. You receive a -1 step bonus to [Interaction-Charm](/skills/interaction/#charm) or [Culture-Etiquette](/skills/culture/#etiquette-specific) checks when dealing with high-society patrons or art enthusiasts (this bonus improves to -2 steps if you possess the [Filthy Rich](/perks_flaws/#filthy-rich) perk). Additionally, engaging in your art provides psychological relief: if using the Persistent Stress optional rules, a successful [Creativity-Artistic Expression](/skills/creativity/#artistic-expression) check grants a +1 (Ordinary), +2 (Good), or +3 (Amazing) step bonus to Personality feats made to resist stress penalties.",
             "tendencies": "**The Aesthete:** Choose a course of action based purely on its aesthetic appeal or dramatic flair rather than its tactical soundness or efficiency.<br>**The Diva:** Refuse to cooperate or compromise with the party until your specific, often petty, demands regarding comfort or artistic integrity are met.",
-            "url": "/backgrounds/virtuoso/"
+            "url": "/backgrounds/virtuoso/",
+            "skill_url": "/backgrounds/virtuoso/"
           },
           {
             "name": "The War Hero",
-            "description": "You are defined by a single, highly publicized conflict. Whether you were an ace pilot, a combat medic, or the sole survivor of a doomed squad, the galaxy knows your face\u2014and expects you to live up to the legend.",
+            "description": "You are defined by a single, highly publicized conflict. Whether you were an ace pilot, a combat medic, or the sole survivor of a doomed squad, the galaxy knows your face—and expects you to live up to the legend.",
             "favored_broad_skill": "",
             "favored_specialty_skills": "[Leadership-Inspire](/skills/leadership/#inspire)<br>[Stamina-Endurance](/skills/stamina/#endurance)<br>[Resolve-Mental Resolve](/skills/resolve-con/#mental-resolve)",
             "favored_perks": "[Celebrity](/perks_flaws/#celebrity)",
@@ -260,7 +277,8 @@
             "equipment": "A personalized or heavily battle-scarred signature weapon, official combat medals, a rugged military jacket, and a supply of medical painkillers.",
             "special_ability": "**Burden of Glory:** You receive a -1 step bonus to [Interaction](/skills/interaction/) or [Leadership](/skills/leadership/) skill checks when dealing with veterans, active military personnel, or patriotic citizens who recognize your service.",
             "tendencies": "**The Living Legend:** Voluntarily accept a significant disadvantage or take the brunt of an attack to protect civilians or allies, driven by the need to live up to your impossible reputation.<br>**The Ghost of the Past:** React to a current situation using the outdated or traumatic context of your past war, complicating a simple negotiation or infiltration by treating it like a battlefield.",
-            "url": "/backgrounds/war-hero/"
+            "url": "/backgrounds/war-hero/",
+            "skill_url": "/backgrounds/war-hero/"
           },
           {
             "name": "The Whistleblower",
@@ -271,8 +289,9 @@
             "flaw": "[Obsessed](/perks_flaws/#obsessed) (With uncovering the absolute truth of a situation, regardless of the danger it poses to yourself or your allies).",
             "equipment": "A high-end micro-recording rig, an official (or highly accurate forged) press pass, a burner comm-link, and a portable data-scrubber.",
             "special_ability": "**Off the Record:** You receive a -1 step bonus to [Interaction-Interview](/skills/interaction/#interview) or [Street Smart-Street Knowledge](/skills/street-smart/#street-knowledge) checks when trying to coax rumors, classified information, or unofficial statements out of a reluctant source.",
-            "tendencies": "**The Expos\u00e9:** Prioritize documenting a crime, conspiracy, or event over stopping it, putting yourself in tactical danger to ensure the footage or story survives.<br>**The Hard Question:** Aggressively interrogate or provoke a powerful individual in a social setting, destroying diplomatic progress in order to gauge their reaction.",
-            "url": "/backgrounds/whistleblower/"
+            "tendencies": "**The Exposé:** Prioritize documenting a crime, conspiracy, or event over stopping it, putting yourself in tactical danger to ensure the footage or story survives.<br>**The Hard Question:** Aggressively interrogate or provoke a powerful individual in a social setting, destroying diplomatic progress in order to gauge their reaction.",
+            "url": "/backgrounds/whistleblower/",
+            "skill_url": "/backgrounds/whistleblower/"
           }
         ]
       }
