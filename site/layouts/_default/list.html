@@ -28,6 +28,8 @@
       {{ end }}
     </section>
     {{ end }}
+    {{ if not .Params.omit_automatic_list }}
     {{ template "_internal/pagination.html" . -}}
+    {{ end }}
   </article>
 {{ end }}
