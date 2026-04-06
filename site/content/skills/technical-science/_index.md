@@ -14,7 +14,8 @@ Skill checks made to determine if a character knows a certain piece of technical
 
 # Specialty Skills
 
-## Invention (INT - Trained Only)
+## Invention
+### (INT - Trained Only)
 
 *This skill can't be used untrained.*
 
@@ -26,7 +27,8 @@ Using this skill requires time; Invention checks are always complex skill checks
 
 ---
 
-## Juryrig (INT - Trained Only)
+## Jury-rig
+### (INT - Trained Only)
 
 *This skill can't be used untrained.*
 
@@ -34,7 +36,7 @@ This skill enables a character to make fast, patchwork repairs in order to get a
 
 A juryrig repair can be made successfully **once** on a specific system or item. If it breaks down after being juryrigged, the system or item won't work again until it's completely fixed (using Technical Science—repair). Making a juryrig skill check is a single action, but a character who tries to use this skill must do so on his first available action in a round, and he can't attempt any other actions for the rest of the round. 
 
-### Juryrig Results
+### Jury-rig Results
 The amount of difficulty added to the full repairs depends on the result of the juryrig check:
 - **Critical Failure:** The system or item becomes unusable and can't be made functional again without full repairs.
 - **Failure:** The juryrig attempt doesn't work but can be tried again.
@@ -42,11 +44,12 @@ The amount of difficulty added to the full repairs depends on the result of the 
 - **Good success:** The system or item becomes operational for **2d4+2 time units**, and **2 more successes** are needed for full repairs.
 - **Amazing success:** The system or item becomes operational for **3d4+2 time units**, and **1 more success** is needed to make full repairs.
 
-⊗ **Improved Juryrig:** When a character reaches **Rank 6**, his ability improves as follows: an Ordinary success produces a Good result, a Good success produces an Amazing result, and an Amazing success means the juryrig works so well that the system or item is considered repaired and in regular working order.
+⊗ **Improved Jury-rig:** When a character reaches **Rank 6**, his ability improves as follows: an Ordinary success produces a Good result, a Good success produces an Amazing result, and an Amazing success means the juryrig works so well that the system or item is considered repaired and in regular working order.
 
 ---
 
-## Repair (INT - Trained Only)
+## Repair
+### (INT - Trained Only)
 
 *This skill can't be used untrained.*
 
@@ -61,7 +64,8 @@ Any use of the repair skill requires a complex skill check and takes a period of
 
 ---
 
-## Technical Knowledge (INT - Trained Only)
+## Technical Knowledge
+### (INT - Trained Only)
 
 *This skill can't be used untrained.*
 

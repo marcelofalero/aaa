@@ -16,7 +16,8 @@ The complexity of a system relates to how time-consuming it is to get through an
 
 # Specialty Skills
 
-## Protection Protocols (INT)
+## Protection Protocols
+### (INT)
 
 **Cost: 3**
 
@@ -53,7 +54,8 @@ The analysis check is modified by how well the area is secured:
 
 ---
 
-## Security Devices (INT)
+## Security Devices
+### (INT)
 
 **Cost: 4**
 

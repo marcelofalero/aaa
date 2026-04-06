@@ -21,7 +21,8 @@ Cuanto mayor sea el nivel de éxito, más potente será la actuación.
 - **Danza:** Movimiento rítmico al son de la música mediante pasos establecidos o improvisación.
 - **Instrumento Musical [Específico]:** Tocar un instrumento concreto y leer música.
 - **Canto:** Vocalista entrenado con voz melodiosa.
-- **Monólogos (Stand-up Comedy), Malabarismo, Ventriloquía:** Otras especialidades posibles.
+- **Monólogos
+### (Stand-up Comedy), Malabarismo, Ventriloquía:** Otras especialidades posibles.
 | Resultados | Descripción |
 | :--- | :--- |
 | **Ordinario** | El éxito indica que el héroe produjo una actuación de calidad. |

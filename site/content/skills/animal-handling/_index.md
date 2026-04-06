@@ -136,7 +136,8 @@ This specialty skill enables a hero to improve this aspect of the Animal Handlin
 
 ▶ **Trick Riding:** When a hero reaches rank 3 in this specialty, he becomes able to perform trick riding. This allows him to direct his mount to jump fences, leap chasms, or move backward.
 
-On a Critical Failure result, the animal trips (causing damage as per an Extremely Short fall for both mount and rider); on a Failure, the animal refuses to perform.
+On a Critical Failure result, the animal trips
+### (causing damage as per an Extremely Short fall for both mount and rider); on a Failure, the animal refuses to perform.
 
 For making **horizontal leaps**, success on a skill check adds to an animal’s natural jumping ability:
 

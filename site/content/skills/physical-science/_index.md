@@ -13,7 +13,8 @@ This broad skill represents a character's training in the physical sciences. Ski
 
 # Specialty Skills
 
-## Astronomy (INT - Trained Only)
+## Astronomy
+### (INT - Trained Only)
 
 
 *This skill can't be used untrained.*
@@ -24,7 +25,8 @@ Astronomy is the study of celestial objects and phenomena that originate outside
 
 ---
 
-## Chemistry (INT - Trained Only)
+## Chemistry
+### (INT - Trained Only)
 
 
 *This skill can't be used untrained.*
@@ -35,7 +37,8 @@ Chemistry is the study of matter, its properties, and how and why substances com
 
 ---
 
-## Physics (INT - Trained Only)
+## Physics
+### (INT - Trained Only)
 
 
 *This skill can't be used untrained.*
@@ -46,7 +49,8 @@ Physics is the study of matter, energy, and the fundamental forces of nature.
 
 ---
 
-## Planetology (INT - Trained Only)
+## Planetology
+### (INT - Trained Only)
 
 
 *This skill can't be used untrained.*

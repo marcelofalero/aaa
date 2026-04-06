@@ -18,7 +18,8 @@ A character with just the broad skill cannot treat damage; **Treatment** or **Su
 
 # Specialty Skills
 
-## Forensic Science (INT - Trained Only)
+## Forensic Science
+### (INT - Trained Only)
 
 
 *This skill can't be used untrained.*
@@ -29,7 +30,8 @@ Forensic science is the application of medical and scientific knowledge to legal
 
 ---
 
-## Medical Knowledge (INT - Trained Only)
+## Medical Knowledge
+### (INT - Trained Only)
 
 
 *This skill can't be used untrained.*
@@ -40,7 +42,8 @@ This specialty skill represents a character's deep academic and practical unders
 
 ---
 
-## Psychology (INT - Trained Only)
+## Psychology
+### (INT - Trained Only)
 
 
 *This skill can't be used untrained.*
@@ -51,7 +54,8 @@ Psychology is the study of the mind and behavior. It can be used to diagnose men
 
 ---
 
-## Surgery (INT - Trained Only)
+## Surgery
+### (INT - Trained Only)
 
 
 *This skill can't be used untrained.*
@@ -62,7 +66,8 @@ Surgery involves the treatment of injuries or disorders of the body by incision 
 
 ---
 
-## Treatment (INT - Trained Only)
+## Treatment
+### (INT - Trained Only)
 
 
 *This skill can't be used untrained.*
@@ -79,7 +84,8 @@ The treatment specialty can be used for all tasks first aid covers, but with gre
 
 ---
 
-## Xenomedicine [Specific] (INT - Trained Only)
+## Xenomedicine [Specific]
+### (INT - Trained Only)
 
 
 *This skill can't be used untrained.*

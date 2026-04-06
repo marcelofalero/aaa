@@ -12,7 +12,8 @@ Esta habilidad amplia representa la formación de un personaje en las ciencias d
 
 # Especialidades
 
-## Biología, Botánica, Zoología (INT - Solo entrenamiento)
+## Biología, Botánica, Zoología
+### (INT - Solo entrenamiento)
 
 *Esta habilidad no se puede usar sin entrenamiento.*
 
@@ -25,7 +26,8 @@ Estas habilidades de especialidad deben comprarse por separado.
 
 ---
 
-## Genética (INT - Solo entrenamiento)
+## Genética
+### (INT - Solo entrenamiento)
 
 *Esta habilidad no se puede usar sin entrenamiento.*
 
@@ -35,7 +37,8 @@ La genética es el estudio de la herencia y los genes, formando la base de la in
 
 ---
 
-## Xenología (INT - Solo entrenamiento)
+## Xenología
+### (INT - Solo entrenamiento)
 
 *Esta habilidad no se puede usar sin entrenamiento.*
 
@@ -44,7 +47,8 @@ La xenología es el estudio de formas de vida animal de naturaleza alienígena y
 ⊗ **Efecto incrementado:** Un personaje recibe una **bonificación de -1 paso** en el rango 3, **-2** en el rango 6, **-3** en el rango 9 y **-4** en el rango 12 en ciertas otras tiradas de habilidad que puedan ser asistidas por esta especialidad. Estas habilidades incluyen Supervivencia (en entornos alienígenas), Manejo de animales (con criaturas alienígenas) y Ciencias médicas—xenomedicina.
 ---
 
-## Psiónica (INT - Solo entrenamiento)
+## Psiónica
+### (INT - Solo entrenamiento)
 
 
 *Esta habilidad no se puede usar sin entrenamiento.*

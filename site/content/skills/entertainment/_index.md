@@ -30,7 +30,8 @@ Possible combinations of skills to which this benefit could apply include act or
 
 # Specialty Skills
 
-## Act (PER)
+## Act
+### (PER)
 
 This specialty skill represents a talent for playing a part or assuming a dramatic role. It also covers impersonation and the skills and techniques of the stage and screen.
 
@@ -50,7 +51,8 @@ Possible combinations of skills to which this benefit could apply include act or
 
 ---
 
-## Dance (PER)
+## Dance
+### (PER)
 
 The dance skill represents a talent for moving rhythmically to music by following set steps and gestures or by improvisation. It also covers the technical aspects of performance dance, such as choreography and the knowledge of various popular and cultural dance techniques.
 
@@ -64,7 +66,8 @@ Possible combinations of skills to which this benefit could apply include act or
 
 ---
 
-## Musical Instrument [Specific] (PER - Trained Only)
+## Musical Instrument [Specific]
+### (PER - Trained Only)
 
 *This skill can't be used untrained.*
 
@@ -80,7 +83,8 @@ Possible combinations of skills to which this benefit could apply include act or
 
 ---
 
-## Sing (PER)
+## Sing
+### (PER)
 
 Sing represents a talent for carrying a note and singing songs. A character with this skill is a trained vocalist with a strong and melodious voice. The greater a character's skill rank, the greater the caliber and quality of the performance he can give.
 

@@ -13,7 +13,7 @@ Technical Operatives (Tech Ops) are masters of the high-tech universe. Whether t
 
 ## Profession Benefits
 - **Action Check Increase:** +1 to your Action Check score.
-- **Technical Specialization:** You have a permanent -1 step bonus on specialty skill checks of one of the following broad skill: Computer Science, Life Science, Medical Science, Physical Science, or Technical Science. The broad skill chosen will greatly influence your future reputation.
+- **Technical Specialization:** You have a permanent -1 step bonus on specialty skill checks of one of the following broad skill: Computer Science, Life Science, Medical Science, Physical Science, or Technical Science. The broad skill chosen will greatly influence the character's future reputation.
 
 ## Favored Broad Skills (Cost: Standard Price - 1)
 - **Acrobatics**

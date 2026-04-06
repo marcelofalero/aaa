@@ -16,30 +16,35 @@ For full details on how **System Operation** skills are used, see the sections o
 
 # Specialty Skills
 
-## Communications (INT)
+## Communications
+### (INT)
 
 A communications specialist can operate all shipboard and personal communication gear with precision, attempt to decipher coded communication signals, code outgoing messages, jam external communication and sensor signals, and try to overcome jamming from an outside source.
 
 ---
 
-## Defenses (INT)
+## Defenses
+### (INT)
 
 A defenses specialist can operate all shipboard defensive systems with precision, attempt to direct defenses to parts of the ship where they're most needed, and analyze attack patterns to make best use of the defenses his ship possesses. In space vehicle combat, the defenses operator can provide a penalty to an opponent's weapons or sensors during any given attack.
 
 ---
 
-## Engineering (INT)
+## Engineering
+### (INT)
 
 An engineering specialist monitors a ship's electronic and mechanical systems as a whole, watching for fluctuations and other signs that a component is breaking down. He can institute repairs to damaged systems from his station, route power to specific systems, and direct hands-on repairs at remote locations.
 
 ---
 
-## Sensors (INT)
+## Sensors
+### (INT)
 
 A sensors specialist can operate all shipboard and personal sensor gear with precision, attempt to scan ships or planets, and analyze those readings in a short period of time. He can use the data to provide bonuses to a weapons or defenses operator.
 
 ---
 
-## Weapons (INT)
+## Weapons
+### (INT)
 
 A weapons specialist can operate all shipboard weapons systems with precision. In starship combat, the weapons operator picks targets and makes attacks.

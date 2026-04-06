@@ -13,7 +13,7 @@ Usas tu arte no para las galerías, sino para las calles. Eres un propagandista,
 ## Especialidades Favorecidas:
 *   [Creatividad-Habilidad Específica](/skills/creativity/#creativity-specific-skill) (ej. arte holográfico, graffiti público o diseño de propaganda)
 *   [Engaño-Farolear](/skills/deception/#bluff)
-*   [Operaciones Encubiertas-Sigilo](/skills/covert-ops/#stealth)
+*   [Operaciones Encubiertas-Sigilo](/skills/covert-ops/#sigilo)
 *   [Liderazgo-Inspirar](/skills/leadership/#inspire)
 
 ## Perks Favorecidos:

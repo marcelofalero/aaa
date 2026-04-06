@@ -29,7 +29,8 @@ For a Knowledge skill check, the Gamemaster determines which category the inform
 
 # Specialty Skills
 
-## Computer Operation (INT - Trained Only)
+## Computer Operation
+### (INT - Trained Only)
 
 
 *This skill can't be used untrained.*
@@ -38,7 +39,8 @@ This specialty skill allows a character to improve his ability to make computers
 
 ---
 
-## Deduce (INT)
+## Deduce
+### (INT)
 
 
 With this specialty skill, a character can hone his abilities to use reason and logic to reach a conclusion. Deduce is used by detectives and investigators to piece together clues, or by scientists and engineers to discover the answer to a skill-related problem.
@@ -47,7 +49,8 @@ With this specialty skill, a character can hone his abilities to use reason and 
 
 ---
 
-## First Aid (INT - Trained Only)
+## First Aid
+### (INT - Trained Only)
 
 
 *This skill can't be used untrained.*
@@ -74,7 +77,8 @@ A character with any amount of mortal damage is considered to be dying. A charac
 
 ---
 
-## Language, Specific Skill (INT - Trained Only)
+## Language, Specific Skill
+### (INT - Trained Only)
 
 
 *This skill can't be used untrained.*
@@ -85,7 +89,8 @@ This specialty skill gives a character a certain amount of fluency in a specific
 ⊗ **Improved Communication:** As a character achieves higher skill ranks in a specific language, he or she gets better at employing other skills that involve language use (such as encounter skills and some Creativity specialties).  This benefit provides a reduction to situation die penalties: **1 step at rank 4**, **2 steps at rank 8**, and **3 steps at rank 12**. This benefit only reduces a penalty; it never provides a bonus.
 ---
 
-## Psionics (INT - Trained Only)
+## Psionics
+### (INT - Trained Only)
 
 
 *This skill can't be used untrained.*

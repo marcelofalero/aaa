@@ -30,13 +30,15 @@ Unas pocas armas pesadas de fuego directo (así como algunos rifles y todos los 
 
 # Habilidades de especialidad
 
-## Fuego directo (STR)
+## Fuego directo
+### (STR)
 
 Esta habilidad de especialidad permite a un personaje mejorar su competencia con las armas pesadas de fuego directo. Estas armas funcionan igual que las armas de fuego normales, requiriendo que el usuario las apunte a un objetivo. Las armas pesadas de fuego directo incluyen armas de fuego de gran calibre, cañones de plasma y raiders.
 
 ---
 
-## Fuego indirecto (STR)
+## Fuego indirecto
+### (STR)
 
 Esta habilidad de especialidad permite a un personaje mejorar su competencia con las armas pesadas de fuego indirecto. Estas armas pueden disparar por encima o alrededor de obstáculos; ejecutan un ataque de efecto de área en lugar de un ataque contra un objetivo específico. Las armas pesadas de fuego indirecto incluyen lanzagranadas, lanzacohetes, misiles lanzados desde el hombro y morteros.
 

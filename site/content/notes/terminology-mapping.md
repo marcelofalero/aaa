@@ -56,6 +56,7 @@ This page provides a mapping of common game terms from English to Spanish to ens
 | Track | Rastrear |
 | Bargain | Regatear |
 | Bluff | Mentir |
+| Jury-rig | Remendar |
 | ... | ... |
 
 

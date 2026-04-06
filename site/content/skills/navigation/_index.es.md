@@ -14,7 +14,8 @@ El tiempo óptimo para un intento de Navegación es de 5 minutos. Cada minuto me
 
 # Especialidades
 
-## Navegación—superficie (INT)
+## Navegación—superficie
+### (INT)
 
 Esta habilidad de especialidad cubre la navegación en un entorno planetario, utilizando mapas, accidentes del terreno, brújulas y sistemas GPS para desplazarse de un punto a otro.
 
@@ -22,7 +23,8 @@ Esta habilidad de especialidad cubre la navegación en un entorno planetario, ut
 
 ---
 
-## Pionero (Trailblazing) (INT)
+## Pionero
+### (Trailblazing) (INT)
 
 La habilidad de pionero implica identificar y crear nuevos caminos a través de tierras salvajes o terrenos inexplorados donde no existen mapas.
 
@@ -30,7 +32,8 @@ La habilidad de pionero implica identificar y crear nuevos caminos a través de 
 
 ---
 
-## Astrogación—sistema (INT - Solo entrenamiento)
+## Astrogación—sistema
+### (INT - Solo entrenamiento)
 
 *Esta habilidad no se puede usar sin entrenamiento.*
 
@@ -43,7 +46,8 @@ Esta habilidad de especialidad cubre la navegación a través de un sistema este
 
 ---
 
-## Astrogación—espacio de curvatura (INT - Solo entrenamiento)
+## Astrogación—espacio de curvatura
+### (INT - Solo entrenamiento)
 
 *Esta habilidad no se puede usar sin entrenamiento.*
 

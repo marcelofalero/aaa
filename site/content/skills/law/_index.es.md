@@ -18,7 +18,8 @@ Abogados, jueces y otros utilizan esta habilidad para interactuar en un entorno 
 ### Ley [Específica]
 *No se puede usar sin estar entrenado.*
 
-Para cada compra por separado de esta especialidad, un héroe selecciona una cultura o tipo de ley específico (marítima, de salvamento, etc.). La familiaridad se traduce en una bonificación a las tiradas de Ley, Procedimientos Judiciales o Procedimientos de Aplicación de la Ley en la cultura correspondiente.
+Para cada compra por separado de esta especialidad, un héroe selecciona una cultura o tipo de ley específico
+### (marítima, de salvamento, etc.). La familiaridad se traduce en una bonificación a las tiradas de Ley, Procedimientos Judiciales o Procedimientos de Aplicación de la Ley en la cultura correspondiente.
 
 ### Beneficios de Rango
 - **Efecto Mejorado:** Bonificación de -1 en el rango 3, -2 en el rango 6, -3 en el rango 9 y -4 en el rango 12.

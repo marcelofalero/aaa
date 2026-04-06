@@ -16,7 +16,8 @@ The optimum time for a Navigation attempt is 5 minutes. Every minute less than 5
 
 # Specialty Skills
 
-## Navigation—surface (INT)
+## Navigation—surface
+### (INT)
 
 This specialty skill covers navigation in a planetary environment, utilizing maps, terrain features, compasses, and GPS systems to move from one point to another.
 
@@ -24,7 +25,8 @@ This specialty skill covers navigation in a planetary environment, utilizing map
 
 ---
 
-## Astrogation—system (INT - Trained Only)
+## Astrogation—system
+### (INT - Trained Only)
 
 *This skill can't be used untrained.*
 
@@ -37,7 +39,8 @@ This specialty skill covers navigation through a star system, usually movements 
 
 ---
 
-## Astrogation—drivespace (INT - Trained Only)
+## Astrogation—drivespace
+### (INT - Trained Only)
 
 *This skill can't be used untrained.*
 

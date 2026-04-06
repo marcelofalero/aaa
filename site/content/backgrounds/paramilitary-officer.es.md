@@ -11,9 +11,9 @@ No te entrenaste en una academia prestigiosa ni luchaste bajo una bandera planet
 *   Ninguna.
 
 ## Especialidades Favorecidas:
-*   [Liderazgo-Mando](/skills/leadership/#command)
-*   [Tácticas-Tácticas de Infantería](/skills/tactics/#infantry-tactics)
-*   [Negocios-Pequeños Negocios](/skills/business/#small-business)
+*   [Liderazgo-Mando](/skills/leadership/#mando)
+*   [Tácticas-Tácticas de Infantería](/skills/tactics/#tactica-infanteria)
+*   [Negocios-Pequeños Negocios](/skills/business/#pequenos-negocios)
 *   [Armas de Fuego Modernas-Rifle de Asalto](/skills/modern-ranged-weapons/#rifle)
 
 ## Perks Favorecidos:
@@ -26,7 +26,7 @@ No te entrenaste en una academia prestigiosa ni luchaste bajo una bandera planet
 Un traje de armadura táctica personalizado y no estándar, un rifle de asalto fuertemente modificado, un libro de contabilidad digital de contratos y una unidad de comunicaciones encriptada a nivel de escuadrón.
 
 ## Habilidad Especial: Guerra Asimétrica
-Recibes una bonificación de -1 paso a las tiradas de [Tácticas-Tácticas de Infantería](/skills/tactics/#infantry-tactics) o [Supervivencia-Entrenamiento de Supervivencia](/skills/survival/#survival-training) al ejecutar una emboscada, librar una campaña de guerrilla u operar completamente aislado de las líneas de suministro oficiales.
+Recibes una bonificación de -1 paso a las tiradas de [Tácticas-Tácticas de Infantería](/skills/tactics/#tactica-infanteria) o [Supervivencia-Entrenamiento de Supervivencia](/skills/survival/#entrenamiento-en-supervivencia) al ejecutar una emboscada, librar una campaña de guerrilla u operar completamente aislado de las líneas de suministro oficiales.
 
 ## Tendencias (Elige 2):
 *   **El Vigilante:** Hacer cumplir tu "justicia" personal sobre un criminal de bajo rango, distrayendo al grupo de una misión de alto riesgo.

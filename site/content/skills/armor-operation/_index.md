@@ -23,7 +23,8 @@ For a character **untrained** in Armor Operation, an action check and Dexterity 
 
 ## Specialty Skills
 
-### Combat Armor (STR)
+### Combat Armor
+### (STR)
 
 This specialty represent the level of mastery in the use of armor, as well as the specialized training needed to use powered armors, allowing the character to obtain the most of any armor.
 

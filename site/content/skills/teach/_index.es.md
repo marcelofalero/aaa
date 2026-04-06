@@ -34,7 +34,8 @@ El beneficio de un profesor depende del resultado de la comprobación de habilid
 
 # Habilidades de Especialidad
 
-## Campo Específico (WIL - Solo Entrenados)
+## Campo Específico
+### (WIL - Solo Entrenados)
 
 *Esta habilidad no puede usarse sin entrenamiento.*
 

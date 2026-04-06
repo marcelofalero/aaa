@@ -36,7 +36,8 @@ Para cada compra separada de esta especialidad, un héroe selecciona una cultura
 | **Asombroso** | El éxito indica que el héroe comprende las costumbres de una cultura. |
 
 ### Cultura alienígena [específica]
-Esta habilidad de especialidad (también conocida como Diplomacia) permite a un héroe mejorar su capacidad para llegar a acuerdos y entendimientos con representantes de diferentes naciones, culturas, subculturas y especies.
+Esta habilidad de especialidad
+### (también conocida como Diplomacia) permite a un héroe mejorar su capacidad para llegar a acuerdos y entendimientos con representantes de diferentes naciones, culturas, subculturas y especies.
 
 En general, entra en juego cuando un héroe quiere llegar a un acuerdo. La habilidad solo se puede utilizar en un objetivo concreto si el héroe tiene al menos rango 1 en la habilidad de Etiqueta específica que pertenece a la cultura del objetivo.
 | Resultados | Descripción |

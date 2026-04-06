@@ -34,7 +34,8 @@ The check is modified by the attitude of the targets, plus any other factors det
 
 # Specialty Skills
 
-## Command (PER)
+## Command
+### (PER)
 
 **Cost: 4**
 
@@ -46,7 +47,8 @@ This specialty skill represents the character's ability to lead others by virtue
 
 ---
 
-## Inspire (PER - Trained Only)
+## Inspire
+### (PER - Trained Only)
 
 **Cost: 3**
 

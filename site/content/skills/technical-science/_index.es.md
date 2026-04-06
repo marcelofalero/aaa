@@ -14,7 +14,8 @@ Las comprobaciones de habilidad realizadas para determinar si un personaje conoc
 
 # Habilidades de Especialidad
 
-## Invención (INT - Solo Entrenados)
+## Invención
+### (INT - Solo Entrenados)
 
 *Esta habilidad no puede usarse sin entrenamiento.*
 
@@ -26,7 +27,8 @@ El uso de esta habilidad requiere tiempo; las comprobaciones de Invención son s
 
 ---
 
-## Remiendo [Juryrig] (INT - Solo Entrenados)
+## Remendar
+### (INT - Solo Entrenados)
 
 *Esta habilidad no puede usarse sin entrenamiento.*
 
@@ -34,7 +36,7 @@ Esta habilidad permite a un personaje realizar reparaciones rápidas y provision
 
 Una reparación de remiendo se puede realizar con éxito **una vez** en un sistema u objeto específico. Si se avería después de haber sido remendado, el sistema u objeto no volverá a funcionar hasta que esté completamente arreglado (utilizando Ciencia Técnica—reparación). Realizar una comprobación de habilidad de remiendo es una acción única, pero un personaje que intenta usar esta habilidad debe hacerlo en su primera acción disponible en un asalto, y no puede intentar ninguna otra acción durante el resto del asalto.
 
-### Resultados de Remiendo
+### Resultados de Remendar
 La cantidad de dificultad añadida a las reparaciones completas depende del resultado de la comprobación de remiendo:
 - **Fallo Crítico:** El sistema u objeto se vuelve inutilizable y no puede volver a funcionar sin reparaciones completas.
 - **Fallo:** El intento de remiendo no funciona pero se puede intentar de nuevo.
@@ -42,11 +44,12 @@ La cantidad de dificultad añadida a las reparaciones completas depende del resu
 - **Éxito Bueno:** El sistema u objeto entra en funcionamiento durante **2d4+2 unidades de tiempo**, y se necesitan **2 éxitos más** para las reparaciones completas.
 - **Éxito Asombroso:** El sistema u objeto entra en funcionamiento durante **3d4+2 unidades de tiempo**, y se necesita **1 éxito más** para realizar las reparaciones completas.
 
-⊗ **Remiendo Mejorado:** Cuando un personaje alcanza el **Rango 6**, su capacidad mejora de la siguiente manera: un éxito Ordinario produce un resultado Bueno, un éxito Bueno produce un resultado Asombroso, y un éxito Asombroso significa que el remiendo funciona tan bien que el sistema u objeto se considera reparado y en estado de funcionamiento normal.
+⊗ **Remendar Mejorado:** Cuando un personaje alcanza el **Rango 6**, su capacidad mejora de la siguiente manera: un éxito Ordinario produce un resultado Bueno, un éxito Bueno produce un resultado Asombroso, y un éxito Asombroso significa que el remendar funciona tan bien que el sistema u objeto se considera reparado y en estado de funcionamiento normal.
 
 ---
 
-## Reparación (INT - Solo Entrenados)
+## Reparación
+### (INT - Solo Entrenados)
 
 *Esta habilidad no puede usarse sin entrenamiento.*
 
@@ -61,7 +64,8 @@ Cualquier uso de la habilidad de reparación requiere una comprobación de habil
 
 ---
 
-## Conocimiento Técnico (INT - Solo Entrenados)
+## Conocimiento Técnico
+### (INT - Solo Entrenados)
 
 *Esta habilidad no puede usarse sin entrenamiento.*
 

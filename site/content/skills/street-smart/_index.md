@@ -29,7 +29,8 @@ This broad skill provides a character with general knowledge in the protocols of
 
 # Specialty Skills
 
-## Criminal Elements (WIL)
+## Criminal Elements
+### (WIL)
 
 
 This specialty skill represents a character's ability to make contact with and deal with those who are considered part of the criminal element—organized crime, professional criminals, street gangs, and underworld organizations.
@@ -38,7 +39,8 @@ Whenever a character tries to locate or interact with these groups, he uses this
 
 ---
 
-## Street Knowledge (WIL)
+## Street Knowledge
+### (WIL)
 
 
 This skill enables a character to improve his familiarity with the inner workings of a particular organization or geographical area. Unlike other specialties, it must be purchased separately for each organization or area (e.g., **Street Knowledge—Alpha Colony** or **Street Knowledge—The Void Syndicate**).

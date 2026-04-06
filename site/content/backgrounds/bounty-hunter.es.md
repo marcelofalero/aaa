@@ -13,7 +13,7 @@ La galaxia es vasta, pero para ti, es solo una serie de huellas y rastros digita
 ## Especialidades Favorecidas:
 *   [Investigar-Rastrear](/skills/investigate/#track)
 *   [Ley-Procedimientos de Aplicación de la Ley](/skills/law/#law-enforcement-procedures)
-*   [Conciencia-Percepción](/skills/awareness/#perception)
+*   [Conciencia-Percepción](/skills/awareness/#percepcion)
 *   [Pillería-Conocimiento Callejero](/skills/street-smart/#street-knowledge)
 
 ## Perks Favorecidos:

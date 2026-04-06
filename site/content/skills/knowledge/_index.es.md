@@ -29,7 +29,8 @@ Para una comprobación de la habilidad de Conocimiento, el Director de Juego det
 
 # Habilidades de Especialidad
 
-## Operación de Computadoras (INT - Solo Entrenados)
+## Operación de Computadoras
+### (INT - Solo Entrenados)
 
 *Esta habilidad no puede usarse sin entrenamiento.*
 
@@ -37,7 +38,8 @@ Esta habilidad de especialidad permite a un personaje mejorar su capacidad para 
 
 ---
 
-## Deducir (INT)
+## Deducir
+### (INT)
 
 Con esta habilidad de especialidad, un personaje puede perfeccionar sus habilidades para usar la razón y la lógica para llegar a una conclusión. Los detectives e investigadores utilizan Deducir para armar pistas, o los científicos e ingenieros para descubrir la respuesta a un problema relacionado con sus habilidades.
 
@@ -45,7 +47,8 @@ Con esta habilidad de especialidad, un personaje puede perfeccionar sus habilida
 
 ---
 
-## Primeros Auxilios (INT - Solo Entrenados)
+## Primeros Auxilios
+### (INT - Solo Entrenados)
 
 *Esta habilidad no puede usarse sin entrenamiento.*
 
@@ -71,7 +74,8 @@ Un personaje con cualquier cantidad de daño mortal se considera agonizante. Un 
 
 ---
 
-## Idioma, Habilidad Específica (INT - Solo Entrenados)
+## Idioma, Habilidad Específica
+### (INT - Solo Entrenados)
 
 *Esta habilidad no puede usarse sin entrenamiento.*
 
@@ -81,7 +85,8 @@ Esta habilidad de especialidad le da a un personaje cierta fluidez en un idioma 
 ⊗ **Comunicación Mejorada:** A medida que un personaje alcanza rangos de habilidad más altos en un idioma específico, mejora en el empleo de otras habilidades que involucran el uso del lenguaje (como las habilidades de encuentro y algunas especialidades de Creatividad). Este beneficio proporciona una reducción a las penalizaciones por dado de situación: **1 paso al rango 4**, **2 pasos al rango 8** y **3 pasos al rango 12**. Este beneficio solo reduce una penalización; nunca proporciona un bono.
 ---
 
-## Psiónica (INT - Solo Entrenados)
+## Psiónica
+### (INT - Solo Entrenados)
 
 
 *Esta habilidad no puede usarse sin entrenamiento.*

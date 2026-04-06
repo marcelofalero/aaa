@@ -3,6 +3,7 @@ title = "Habilidades"
 description = "Cómo hacer bien las cosas - Guía completa y base de datos de todas las habilidades amplias y de especialidad."
 weight = 6
 toc = true
+omit_automatic_list = true
 +++
 
 Las habilidades son el corazón del sistema de juego AAA. La mayor parte de lo que un personaje es capaz de hacer —luchar contra un oponente, pilotar una nave espacial, cerrar un gran acuerdo de negocios, desarrollar una vacuna para un virus mortal— se rige por las habilidades que posee el personaje y lo hábil que es utilizándolas.
@@ -25,7 +26,8 @@ Para las habilidades que requieren conocimientos o formación especializados, se
 
 ## Tiradas de Habilidad y Dados de Situación
 
-Se utiliza una tirada de habilidad para determinar el resultado de una acción directamente relacionada con esa habilidad. Para realizar una tirada de habilidad, un jugador lanza un d20 (el dado de control) más un dado de situación que varía según la dificultad de lo que se intenta. **La tirada tiene éxito si el resultado es igual o inferior a la puntuación de habilidad del personaje.**
+Se utiliza una tirada de habilidad para determinar el resultado de una acción directamente relacionada con esa habilidad. Para realizar una tirada de habilidad, un jugador lanza un d20
+### (el dado de control) más un dado de situación que varía según la dificultad de lo que se intenta. **La tirada tiene éxito si el resultado es igual o inferior a la puntuación de habilidad del personaje.**
 
 **El dado de situación base para todas las habilidades amplias es +d4**, y **el dado de situación base para todas las habilidades de especialidad es +d0**. El dado de situación para cualquier tirada de habilidad en particular puede verse modificado por otros factores, como se especifica en la descripción de la habilidad o como determine el Director de Juego.
 
@@ -118,66 +120,8 @@ A veces, una acción que intenta tu personaje no está directamente relacionada 
 
 ## Lista de Habilidades
 
-Esta tabla proporciona una lista completa de todas las habilidades disponibles, agrupadas por su atributo rector. Incluye el coste de las habilidades amplias y de las habilidades de especialidad, así como los códigos de profesión para las habilidades favorecidas.
+Esta tabla proporciona una lista completa de todas las habilidades disponibles, agrupadas por categorías funcionales. Incluye el coste de las habilidades amplias y de especialidad, así como sus atributos correspondientes.
 
-{{< json-table "skills" >}}
-
-**Códigos de Profesión (Pr.):** `C`: Esp. Combate | `D`: Diplomático | `F`: Agente Libre | `T`: Op. Técnico | `—`: Abierta.
+{{< json-table data="skills" hide="pr" >}}
 
 ---
-
-## Categorías de Habilidades Detalladas
-
-Para información profunda sobre cada habilidad amplia y sus especialidades, elija una categoría abajo:
-
-### Combate
-- [Operación de Armadura](/skills/armor-operation/)
-- [Armas Pesadas](/skills/heavy-weapons/)
-- [Combate Cuerpo a Cuerpo](/skills/melee-combat/)
-- [Armas a Distancia Modernas](/skills/modern-ranged-weapons/)
-- [Armas a Distancia Primitivas](/skills/primitive-ranged-weapons/)
-- [Tácticas](/skills/tactics/)
-- [Ataque Desarmado](/skills/unarmed-attack/)
-
-### Físicas y Mentales
-- [Acrobacias](/skills/acrobatics/)
-- [Trato con Animales](/skills/animal-handling/)
-- [Atletismo](/skills/athletics/)
-- [Alerta](/skills/awareness/)
-- [Operaciones Encubiertas](/skills/covert-ops/)
-- [Creatividad](/skills/creativity/)
-- [Investigar](/skills/investigate/)
-- [Resolución](/skills/resolve/)
-- [Resistencia](/skills/stamina/)
-- [Astucia Callejera](/skills/street-smart/)
-- [Supervivencia](/skills/survival/)
-
-### Sociales
-- [Administración](/skills/administration/)
-- [Negocios](/skills/business/)
-- [Cultura](/skills/culture/)
-- [Engaño](/skills/deception/)
-- [Entretenimiento](/skills/entertainment/)
-- [Interacción](/skills/interaction/)
-- [Liderazgo](/skills/leadership/)
-- [Enseñar](/skills/teach/)
-
-### Técnicas
-- [Ciencias de la Computación](/skills/computer-science/)
-- [Demoliciones](/skills/demolitions/)
-- [Conocimiento](/skills/knowledge/)
-- [Ciencias de la Vida](/skills/life-science/)
-- [Ciencias Médicas](/skills/medical-science/)
-- [Navegación](/skills/navigation/)
-- [Ciencias Físicas](/skills/physical-science/)
-- [Seguridad](/skills/security/)
-- [Operación de Sistemas](/skills/system-operation/)
-- [Ciencia Técnica](/skills/technical-science/)
-- [Operación de Vehículos](/skills/vehicle-operation/)
-
-### Psiónica
-- [Biocinesis](/core-mechanics/psionics/biokinesis/)
-- [ESP](/core-mechanics/psionics/esp/)
-- [Psicoportación](/core-mechanics/psionics/psychoportation/)
-- [Telequinesis](/core-mechanics/psionics/telekinesis/)
-- [Telepatía](/core-mechanics/psionics/telepathy/)

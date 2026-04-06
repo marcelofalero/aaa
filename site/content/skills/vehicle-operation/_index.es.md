@@ -18,7 +18,8 @@ Para más detalles sobre vehículos, consulte la sección de [Vehículos y Naves
 
 # Habilidades de Especialidad
 
-## Vehículo Aéreo (DEX - Solo Entrenados)
+## Vehículo Aéreo
+### (DEX - Solo Entrenados)
 
 *Esta habilidad no puede usarse sin entrenamiento.*
 
@@ -28,7 +29,8 @@ Los tipos de vehículos aéreos incluyen aviones de hélice, helicópteros, jets
 
 ---
 
-## Vehículo Terrestre (DEX)
+## Vehículo Terrestre
+### (DEX)
 
 Esta habilidad de especialidad permite a un personaje estar entrenado en el uso de un tipo específico de vehículo terrestre. Si desea ser experto en la operación de más de un tipo de vehículo terrestre, debe comprar y mejorar cada habilidad de especialidad por separado.
 
@@ -36,7 +38,8 @@ Los tipos de vehículos terrestres incluyen automóviles, motocicletas, coches d
 
 ---
 
-## Vehículo Espacial (DEX - Solo Entrenados)
+## Vehículo Espacial
+### (DEX - Solo Entrenados)
 
 *Esta habilidad no puede usarse sin entrenamiento.*
 
@@ -52,7 +55,8 @@ Los tipos de vehículos espaciales incluyen:
 
 ---
 
-## Vehículo Acuático (DEX)
+## Vehículo Acuático
+### (DEX)
 
 Esta habilidad de especialidad permite a un personaje estar entrenado en el uso de un tipo específico de vehículo acuático. Si desea ser experto en la operación de más de un tipo de vehículo acuático, debe comprar y mejorar cada habilidad de especialidad por separado.
 

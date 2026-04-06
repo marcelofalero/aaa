@@ -29,7 +29,8 @@ Para obtener más información sobre cómo se utilizan las especializaciones de 
 
 # Especializaciones
 
-## Hacking (INT - Solo Entrenado)
+## Hacking
+### (INT - Solo Entrenado)
 
 
 El Hacking es la habilidad de romper códigos informáticos y eludir la seguridad informática con el fin de obtener acceso a datos restringidos o sistemas informáticos seguros. El Hacking se puede realizar en una estación de computadora que esté conectada físicamente a las tiendas de datos en cuestión, o se puede realizar desde una ubicación distante creando un enlace a través de una red de algún tipo. Se utiliza con mayor frecuencia para recuperar datos protegidos, entrar y tomar el control de un sistema informático, o para realizar algún tipo de sabotaje como borrar archivos o introducir un virus de algún tipo.
@@ -40,7 +41,8 @@ Esta especialidad le permite a un personaje equipado con una computadora realiza
 
 ---
 
-## Hardware (INT)
+## Hardware
+### (INT)
 
 
 Esta especialidad representa el conocimiento y la competencia de un personaje con los componentes físicos que conforman una computadora. Comprender cómo funciona un sistema informático, poder configurarlo rápidamente, diseñar y construir su propia computadora y reparar el equipo informático son algunas de las tareas cubiertas por esta habilidad.
@@ -49,7 +51,8 @@ Esta especialidad representa el conocimiento y la competencia de un personaje co
 
 ---
 
-## Programación (INT)
+## Programación
+### (INT)
 
 
 Esta especialidad le permite a un personaje mejorar su capacidad para analizar programas informáticos, modificar programas existentes y (en rangos superiores) crear programas escribiendo su propio código. Tener el rango 1 en esta habilidad permite a un personaje modificar el código fuente de programas de calidad Ordinaria y complejidad Ordinaria.

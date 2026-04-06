@@ -18,7 +18,8 @@ Vaulting is a vertical leap enhanced by assistance (springing off an object or u
 
 ---
 
-## Dodge (DEX)
+## Dodge
+### (DEX)
 
 
 This specialty skill allows a character to use acrobatics as a defense in combat situations. It's also used when a character dives for cover or hits the deck when an area-effect attack targets him. Dodge lets a character tumble, roll, duck, dive, or spring out of the way of an attack.
@@ -40,7 +41,8 @@ One skill check (requiring an action) is made at the beginning of the first phas
 
 ---
 
-## Fall (DEX)
+## Fall
+### (DEX)
 
 
 This specialty skill allows a character to improve his ability to survive a fall by twisting his body, catching nearby protrusions, or otherwise slowing his descent, thereby decreasing the damage he sustains from an impact.
@@ -49,7 +51,8 @@ A character with the fall specialty skill adds his rank in the specialty to his 
 
 ---
 
-## Daredevil (DEX)
+## Daredevil
+### (DEX)
 
 
 This specialty skill enables a character to perform high-risk activities such as skydiving, scuba diving, hang gliding, surfing, bungee jumping, and whitewater rafting.
@@ -64,7 +67,8 @@ This specialty skill enables a character to perform high-risk activities such as
 
 ---
 
-## Zero-g Training (DEX - Trained Only)
+## Zero-g Training
+### (DEX - Trained Only)
 
 
 *This skill can’t be used untrained.*
@@ -81,7 +85,8 @@ Sesheyan characters without the zero-g training skill function as though they ha
 
 ---
 
-## Aerobatics (DEX)
+## Aerobatics
+### (DEX)
 
 
 This specialty skill represents a character's mastery of complex maneuvers during personal flight, whether through natural wings, specialized jump-packs, or gravitic personal flight devices (GADS). While basic locomotion is covered by the Acrobatics broad skill, Aerobatics is required for high-speed turns, precise landing, evasive maneuvers, and aerial acrobatics. At **Rank 4** in **Armor Operation—Propulsion Systems**, this skill can also be used for complex maneuvers using a powered suit's integrated thrusters.

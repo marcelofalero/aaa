@@ -17,13 +17,26 @@ La tirada de acción de un líder proporciona una bonificación a todas las acci
 - **Bueno:** Hasta cuatro seguidores reciben la bonificación de liderazgo.
 - **Asombroso:** Hasta seis seguidores reciben la bonificación de liderazgo.
 
-## Habilidades de Especialidad
+---
 
-{{% list %}}
-- **Mando (Command):** Liderar a otros mediante la pura autoridad y capacidad de persuasión.
-- **Inspirar:** Liderar mediante el ejemplo; puede usarse sobre objetivos Hostiles o Combativos.
+# Habilidades de Especialidad
+
+## Mando
+### (PER)
+
+Liderar a otros mediante la pura autoridad y capacidad de persuasión.
+
+---
+
+## Inspirar
+### (PER)
+
+Liderar mediante el ejemplo; puede usarse sobre objetivos Hostiles o Combativos. Las tiradas de Inspirar se realizan en lugar de las tiradas de Liderazgo estándar.
+
+### Resultados de Inspirar
+
 | Resultados | Descripción |
 | :--- | :--- |
-| **Ordinario** | El éxito indica que hasta dos seguidores reciben la bonificación de liderazgo. |
-| **Bueno** | El éxito indica que hasta cuatro seguidores reciben la bonificación de liderazgo. |
-| **Asombroso** | El éxito indica que hasta seis seguidores reciben la bonificación de liderazgo. |
+| **Ordinario** | Hasta dos seguidores reciben la bonificación de liderazgo. |
+| **Bueno** | Hasta cuatro seguidores reciben la bonificación de liderazgo. |
+| **Asombroso** | Hasta seis seguidores reciben la bonificación de liderazgo. |

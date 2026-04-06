@@ -18,13 +18,15 @@ A bonus to the situation die would apply if the character has inside information
 
 ---
 
-## Corporate (INT)
+## Corporate
+### (INT)
 
 This specialty skill enables a character to improve his ability to function in the realm of large-scale trade and commerce, and to deal with stock markets, mergers, corporate acquisitions, speculative business, and the businesspeople who operate in these circles. It also provides a character with an understanding of how big businesses and corporations operate. Corporate presidents and trade lords who move goods and services on a global or galactic scale use this skill to determine the success of their business activities.
 
 ---
 
-## Illicit Business (INT)
+## Illicit Business
+### (INT)
 
 This specialty skill allows a character to improve his ability to function in the underside of the business world. Extortion, smuggling, fencing stolen goods, and dealing with the black market are among the questionable trade practices this skill provides knowledge in. Purchasing ranks in this skill doesn't necessarily lead to a successful criminal career; it merely provides the character with the knowledge to interact with the wrong side of the law. This is the skill used by the white-collar criminal—the embezzler, the insider trader, the corporate spy, and so forth.
 
@@ -36,7 +38,8 @@ In addition, having this skill reduces the penalty for attempting an illegal tra
 
 ---
 
-## Small Business (INT)
+## Small Business
+### (INT)
 
 This specialty skill allows a character to improve his ability to function in the pursuit of small-scale trade and commerce. Small-business owners and merchants use this skill to determine the success of their business activities. This skill improves a character's ability to haggle on the consumer level, determine the value of goods and services, and find buyers and sellers in a specific area.
 

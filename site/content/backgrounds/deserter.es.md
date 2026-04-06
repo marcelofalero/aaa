@@ -1,8 +1,6 @@
 +++
 type = "background"
 
-type = "background"
-
 title = "El Desertor"
 weight = 4
 +++
@@ -13,7 +11,7 @@ Eres un fantasma en la máquina. Tienes los reflejos de un soldado pero el alma 
 *   Ninguna.
 
 ## Especialidades Favorecidas:
-*   [Supervivencia-Entrenamiento de Supervivencia](/skills/survival/#survival-training)
+*   [Supervivencia-Entrenamiento de Supervivencia](/skills/survival/#entrenamiento-en-supervivencia)
 *   [Engaño-Farolear](/skills/deception/#bluff)
 *   [Operaciones Encubiertas-Ocultar](/skills/covert-ops/#conceal)
 

@@ -36,7 +36,8 @@ The complexity of the ideas that are being communicated during a use of the Cult
 
 # Specialty Skills
 
-## Etiquette [Specific] (PER - Trained Only)
+## Etiquette [Specific]
+### (PER - Trained Only)
 
 *This skill can't be used untrained.*
 
@@ -48,7 +49,8 @@ The Gamemaster will decide what constitutes a "specific culture," taking the cam
 
 ---
 
-## Diplomacy (PER)
+## Diplomacy
+### (PER)
 
 This specialty skill allows a character to improve his ability to reach agreements and understandings with representatives of different nations, cultures, subcultures and species.
 
@@ -60,7 +62,8 @@ Depending on the nature of the issue to be resolved, the diplomacy skill check m
 
 ---
 
-## First Encounter (PER - Trained Only)
+## First Encounter
+### (PER - Trained Only)
 
 *This skill can't be used untrained.*
 

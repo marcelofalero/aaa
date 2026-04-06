@@ -18,7 +18,8 @@ For more details on vehicles, see the section on [Vehicles and Vessels](/core-me
 
 # Specialty Skills
 
-## Air Vehicle (DEX - Trained Only)
+## Air Vehicle
+### (DEX - Trained Only)
 
 *This skill can’t be used untrained.*
 
@@ -28,7 +29,8 @@ Types of air vehicles include propeller planes, helicopters, private jets, comme
 
 ---
 
-## Land Vehicle (DEX)
+## Land Vehicle
+### (DEX)
 
 This specialty skill enables a character to become trained in the use of a specific type of land vehicle. If he wants to be skilled in the operation of more than one type of land vehicle, he must purchase and improve each specialty skill separately.
 
@@ -36,7 +38,8 @@ Types of land vehicles include automobiles, motorcycles, race cars, large trucks
 
 ---
 
-## Space Vehicle (DEX - Trained Only)
+## Space Vehicle
+### (DEX - Trained Only)
 
 *This skill can’t be used untrained.*
 
@@ -52,7 +55,8 @@ Types of space vehicles include:
 
 ---
 
-## Water Vehicle (DEX)
+## Water Vehicle
+### (DEX)
 
 This specialty skill enables a character to become trained in the use of a specific type of water vehicle. If he wants to be skilled in the operation of more than one type of water vehicle, he must purchase and improve each specialty skill separately. 
 

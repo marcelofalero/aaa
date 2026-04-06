@@ -14,7 +14,7 @@ Eres una entidad legal autónoma, con la rara autoridad de usar poderes psiónic
 *   [Telepatía-Lectura Mental](/skills/telepathy/#mind-reading)
 *   [Ley-Procedimientos Judiciales](/skills/law/#court-procedures)
 *   [Interacción-Entrevista](/skills/interaction/#interview)
-*   [Resolución-Resolución Mental](/skills/resolve-con/#mental-resolve)
+*   [Resolución-Resolución Mental](/skills/resolve-con/#firmeza-mental)
 
 ## Perks Favorecidos:
 *   [Reputación](/perks_flaws/#reputation)

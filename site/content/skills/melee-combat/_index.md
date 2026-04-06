@@ -19,7 +19,8 @@ The base damage for an unarmed attack depends on the size of the character; for 
 
 # Specialty Skills
 
-## Defensive Martial Arts (DEX - Trained Only)
+## Defensive Martial Arts
+### (DEX - Trained Only)
 
 
 As a character improves his ability in the defensive martial arts specialty skill, he gains rank benefits as described below. Note: These benefits only apply when the character is fighting unarmed or with appropriate martial arts implements.
@@ -44,7 +45,8 @@ How we do things reaches rank 10, All Out Attacks that miss him can be redirecte
 
 ---
 
-## Power Martial Arts (STR - Trained Only)
+## Power Martial Arts
+### (STR - Trained Only)
 
 
 As a character improves his ability in the power martial arts specialty skill, he gains rank benefits as described below. Note: These benefits only apply when the character is fighting unarmed or with appropriate martial arts implements.
@@ -73,7 +75,8 @@ Every additional attacker who takes part in the same overpowering attempt provid
 
 ---
 
-## Blade (STR)
+## Blade
+### (STR)
 
 
 As a character improves his ability in the blade specialty skill, he gains rank benefits as described below. Note: These benefits only apply when the character is using a weapon covered by this skill.
@@ -88,7 +91,8 @@ As a character improves his ability in the blade specialty skill, he gains rank 
 
 ---
 
-## Blunt (STR)
+## Blunt
+### (STR)
 
 
 As a character improves his ability in the blunt specialty skill, he gains rank benefits as described below. Note: These benefits only apply when the character is using a weapon covered by this skill.
@@ -103,7 +107,8 @@ As a character improves his ability in the blunt specialty skill, he gains rank 
 
 ---
 
-## Powered (DEX - Trained only)
+## Powered
+### (DEX - Trained only)
 
 
 As a character improves his ability in the powered specialty skill, he gains rank benefits as described below. Note: These benefits only apply when the character is using a weapon covered by this skill.
