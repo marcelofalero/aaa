@@ -10,7 +10,7 @@ weight = 10
 **Localización:** Crucero Comercial Aurora, Espacio Profundo.
 **Estado:** Colapso Estructural / Evacuación de Emergencia.
 
-El crucero comercial Aurora, una nave modular de transporte de pasajeros y carga, acababa de salir de un salto en el drive space. Sin previo aviso, el impacto de lo que pareció ser una mina inteligente —un armamento remanente de la guerra— destruyó por completo la sección de proa. La reacción en cadena subsiguiente provocó que la macroestructura se retorciera y se fracturara, dejando a los vagones expuestos al vacío uno por uno.
+El crucero comercial Aurora, una nave modular de transporte de pasajeros y carga, acababa de salir de un salto en el drive space. Sin previo aviso, el impacto de lo que pareció ser una mina inteligente —un armamento remanente de la guerra— destruyó por completo la sección de proa. La subsecuente reacción en cadena causó que la macroestructura se retorciera y se fracturara, dejando a los vagones expuestos al vacío uno por uno.
 
 **Crónica del Escape**
 *   **El horror del vacío:** El compartimento inmediatamente anterior al nuestro sufrió una fractura catastrófica. A través del cristal reforzado de la compuerta, presenciamos una escena dantesca: un segmento del fuselaje contiguo se desprendió de cuajo, dejando el interior expuesto al espacio. Vimos a los pasajeros fallecer víctimas de la descompresión explosiva, el ebullismo y la hipoxia fulminante, mientras sus fluidos corporales se vaporizaban de manera repentina por la drástica caída de presión. No hubo sonido alguno, solo el caos visual de la desintegración.
@@ -34,9 +34,17 @@ Lo que debió haber sido un escape milagroso se transformó en una lenta degrada
 *   **Día 5: Punto de quiebre.** El organismo de Tony generó resistencia a los sedantes y el tripulante recuperó su voluntad combativa. Arma en mano, nos apuntó a todos durante un ataque de lucidez paranoide. Una masacre resultaba inminente, pero la alarma de proximidad planetaria interrumpió la tensión.
 
 **El Aterrizaje**
+
+*Imágenes capturadas por el sistema de guía de la cápsula durante el descenso:*
+
+{{< gallery >}}
+  {{< gallery-item src="/images/species/diary/heavy-heart-ruins.png" cap="Ruinas detectadas en superficie" >}}
+  {{< gallery-item src="/images/species/diary/heavy-heart-flir.png" cap="Vista FLIR de las ruinas" >}}
+{{< /gallery >}}
+
 Hicimos contacto sobre un páramo de hielo seco. Los sensores indican que nos encontramos en el lado oscuro de un planeta con acoplamiento de marea (es decir, el astro presenta permanentemente la misma cara hacia su sol).
 
-Frente a la escotilla se erigen las ruinas de una antigua colonia. Los sistemas informáticos fracasaron en su intento de identificar el planeta, dejándonos con más interrogantes que certezas. En la lejanía, sobre el horizonte, se recorta un resplandor naranja constante.
+A 468 metros de la cápsula se erigen las ruinas de una antigua colonia. Los sistemas informáticos fracasaron en su intento de identificar el planeta, dejándonos con más interrogantes que certezas. En la lejanía, sobre el horizonte, se recorta un resplandor naranja constante.
 
 **Estado de Situación:**
 *   Tony Skigrocu permanece armado y sumamente alterado.

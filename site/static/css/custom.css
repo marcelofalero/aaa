@@ -1,28 +1,95 @@
-/* Custom Table Styling for Alternity Core */
-/* Removed conflicting table styles to allow scifi.css to control appearance */
-
-/* Fix Ananke text centering in list/section layouts */
-article section.tc-l {
-    text-align: left !important;
+/* Image Gallery & Lightbox */
+.image-gallery {
+  display: flex;
+  gap: 1.5rem;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-/* Ensure main content area is left-aligned */
-.lh-copy {
-    text-align: left;
+.gallery-item {
+  cursor: pointer;
+  flex: 0 1 300px;
+  border: 1px solid var(--accent-cyan);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.05);
+  display: flex;
+  flex-direction: column;
 }
 
-/* Increase content width for a more expansive look */
-.measure-wide {
-    max-width: 80rem !important; /* Standard measure-wide is 34em */
+.gallery-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(56, 158, 189, 0.4);
+  background: rgba(255, 255, 255, 0.08);
 }
 
-/* For single pages and large containers */
-.mw7, .mw8 {
-    max-width: 90% !important;
+.gallery-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
 }
 
-/* Adjust nested copy line height section for wider text */
-article section.measure-wide {
-    max-width: 80% !important;
-    margin-left: 5%;
+.gallery-caption {
+  padding: 0.75rem;
+  font-size: 0.9rem;
+  font-family: 'Michroma', sans-serif;
+  color: var(--accent-cyan);
+  text-align: center;
+  border-top: 1px solid var(--accent-cyan);
+  text-transform: uppercase;
+}
+
+/* Modal / Lightbox */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 10, 20, 0.95);
+  backdrop-filter: blur(5px);
+  cursor: zoom-out;
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  max-width: 90%;
+  max-height: 85vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid var(--accent-cyan);
+  box-shadow: 0 0 30px rgba(56, 158, 189, 0.5);
+}
+
+.modal-caption {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-family: 'Michroma', sans-serif;
+  font-size: 1.1rem;
+  text-shadow: 0 0 10px var(--accent-cyan);
+}
+
+.close-modal {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: #fff;
+  font-size: 50px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close-modal:hover {
+  color: var(--accent-cyan);
 }

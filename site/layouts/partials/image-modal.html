@@ -1,0 +1,33 @@
+<div id="imageModal" class="modal" onclick="closeModal()">
+  <span class="close-modal">&times;</span>
+  <img class="modal-content" id="modalImg">
+  <div id="modalCaption" class="modal-caption"></div>
+</div>
+
+<script>
+function openModal(src, caption) {
+  const modal = document.getElementById("imageModal");
+  const modalImg = document.getElementById("modalImg");
+  const modalCaption = document.getElementById("modalCaption");
+  
+  if (modal && modalImg && modalCaption) {
+    modal.style.display = "block";
+    modalImg.src = src;
+    modalCaption.innerHTML = caption;
+  }
+}
+
+function closeModal() {
+  const modal = document.getElementById("imageModal");
+  if (modal) {
+    modal.style.display = "none";
+  }
+}
+
+// Esc key to close
+document.addEventListener('keydown', function(event) {
+  if (event.key === "Escape") {
+    closeModal();
+  }
+});
+</script>

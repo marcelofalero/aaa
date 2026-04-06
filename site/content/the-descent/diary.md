@@ -30,13 +30,21 @@ What should have been a miraculous escape transformed into a slow physical and m
 *   **Day 1: Cold numbers.** Mathew Nadir was bleeding out from explosion wounds. Tarek Ionis calculated that the expenditure of medical supplies was inefficient, given that the engineer lacked any real chance of survival. Therefore, he limited himself to minimal palliative care. Mathew passed away that same night, establishing a climate of deep distrust and horror within the pod.
 *   **Day 2: The duffle bag.** The stench of decomposition, added to the desperation, became intolerable. To fit Mathew's body—already in rigor mortis—into a duffle bag, we had to dislocate his arms. We sealed the edges with industrial adhesive tape in a desperate attempt to contain the fluids and smell within the recycled air system.
 *   **Day 3: Tony's outburst.** Post-traumatic stress and confinement broke Tony Skigrocu. His violent psychotic break put the entire group in grave danger, forcing us to physically restrain him. We had to sedate him with high doses of tranquilizers to keep him controlled, pushing him almost to the edge of unconsciousness.
-*   **Day 4: Contrasts.** Hunger and $CO_2$-saturated air consumed us. Basilio Zuzunaga ("Zuzu") remained in an absolute and frankly disturbing calm. In contrast, Ssi-T’krik couldn't stop moving in the few available centimeters, while Makya clung to her bow, her nerves shattered.
+*   **Day 4: Contrasts.** Hunger and carbon dioxide-saturated air consumed us. Basilio Zuzunaga ("Zuzu") remained in an absolute and frankly disturbing calm. In contrast, Ssi-T’krik couldn't stop moving in the few available centimeters, while Makya clung to her bow, her nerves shattered.
 *   **Day 5: Breaking point.** Tony's body built up resistance to the sedatives, and the crewmember regained his combative will. Weapon in hand, he pointed at us all during a fit of paranoid lucidity. A massacre was imminent, but the planetary proximity alarm interrupted the tension.
 
 **The Landing**
+
+*Images captured by the pod's guiding system during the descent:*
+
+{{< gallery >}}
+  {{< gallery-item src="/images/species/diary/heavy-heart-ruins.png" cap="Ruins detected on the surface" >}}
+  {{< gallery-item src="/images/species/diary/heavy-heart-flir.png" cap="FLIR view of the ruins" >}}
+{{< /gallery >}}
+
 We made contact on a dry ice wasteland. Sensors indicate we are on the dark side of a tidally locked planet (that is, the star permanently faces the same side toward its sun).
 
-Ruins of an ancient colony rise before the hatch. The computer systems failed in their attempt to identify the planet, leaving us with more questions than certainties. In the distance, over the horizon, a constant orange glow is silhouette.
+Ruins of an ancient colony rise 468 meters from the capsule. The computer systems failed in their attempt to identify the planet, leaving us with more questions than certainties. In the distance, over the horizon, a constant orange glow is silhouetted.
 
 **Status Report:**
 *   Tony Skigrocu remains armed and extremely agitated.

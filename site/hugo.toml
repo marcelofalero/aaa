@@ -14,7 +14,7 @@ title = 'AAA'
     title = 'AAA'
 
 [params]
-  custom_css = ["css/scifi.css"]
+  custom_css = ["css/scifi.css", "css/custom.css"]
   body_classes = "scifi-body"
 
 [markup]
