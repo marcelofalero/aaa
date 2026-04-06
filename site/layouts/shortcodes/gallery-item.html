@@ -1,0 +1,4 @@
+<div class="gallery-item" data-src="{{ .Get "src" | relURL }}" data-cap="{{ .Get "cap" }}" onclick="openModal(this.dataset.src, this.dataset.cap)">
+  <img src="{{ .Get "src" | relURL }}" alt="{{ .Get "cap" }}">
+  <div class="gallery-caption">{{ .Get "cap" }}</div>
+</div>
