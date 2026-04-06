@@ -5,7 +5,6 @@ weight = 5
 omit_automatic_list = true
 +++
 
-# Trasfondos en AAA
 
 En **AAA (Alterated Alternity Alternative)**, tu **Trasfondo** representa la vida, el entrenamiento y las experiencias de tu personaje antes de convertirse en protagonista de la historia actual. 
 

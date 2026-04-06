@@ -5,7 +5,6 @@ weight = 5
 omit_automatic_list = true
 +++
 
-# Backgrounds in AAA
 
 In **AAA (Alterated Alternity Alternative)**, your **Background** represents your character's life, training, and experiences before they became a protagonist in the current story. 
 
