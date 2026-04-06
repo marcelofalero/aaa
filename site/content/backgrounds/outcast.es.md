@@ -1,4 +1,6 @@
 +++
+type = "background"
+
 title = "El Marginado"
 weight = 6
 +++
@@ -24,6 +26,8 @@ Un arma arcaica robusta (como una lanza, arco o hoja pesada), un cuchillo de sup
 ## Habilidad Especial:
 Ninguna. (Tu supervivencia se basa en una amplia gama de habilidades físicas y rudas).
 
-## Tendencias:
-*   **El Tradicionalista:** Resuelve un problema moderno utilizando un método antiguo, de baja tecnología o ritualista.
-*   **El Solitario:** Asume una desventaja para realizar una tarea completamente solo, rechazando la ayuda de la tecnología "blanda" o de sus compañeros de equipo.
+## Tendencias (Elige 2):
+*   **El Cínico:** Cuestiona o critica públicamente el potencial de éxito de un plan para protegerte del dolor de otro fracaso, desmoralizando al grupo.
+*   **El Lobo Solitario:** Le cuesta integrarse con el equipo o las tácticas del grupo, insistiendo en usar tus propios métodos "probados" pero inferiores o permaneciendo en la periferia de las formaciones.
+*   **El Tecno-Fóbico:** Sobrecomplica el uso de dispositivos "mágicos" complejos y no probados (como prototipos) al requerir explicaciones excesivas o una reafirmación constante durante su uso.
+*   **La Disputa Tribal:** Priorizar un viejo rencor personal contra una especie o grupo corporativo específico por encima del objetivo actual de la misión.

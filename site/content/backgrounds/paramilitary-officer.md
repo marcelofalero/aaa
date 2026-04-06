@@ -1,4 +1,6 @@
 +++
+type = "background"
+
 title = "The Paramilitary Officer"
 weight = 10
 +++
@@ -23,6 +25,8 @@ A personalized, non-standard suit of tactical armor, a heavily modified assault 
 ## Special Ability: Asymmetrical Warfare
 You receive a -1 step bonus to [Tactics-Infantry Tactics](/skills/tactics/#infantry-tactics) or [Survival-Survival Training](/skills/survival/#survival-training) checks when executing an ambush, fighting a guerrilla campaign, or operating entirely cut off from official supply lines.
 
-## Tendencies:
-*   **The Mercenary:** Demand renegotiation, hazard pay, or a clear tactical advantage before committing to a dangerous firefight that wasn't in the original plan.
-*   **The Pragmatist:** Disregard traditional rules of engagement or "honorable" doctrine in favor of traps, sabotage, or overwhelming disproportionate force.
+## Tendencies (Pick 2):
+*   **The Vigilante:** Enforce your personal "justice" on a minor criminal or rule-breaker, distracting the party from a high-stakes mission.
+*   **The Hardliner:** Overcomplicate negotiations with "enemies of the state" or criminals by maintaining an openly hostile or combative stance.
+*   **The Unit First:** Sacrifice a civilian or an outside objective to ensure every member of your immediate squad survives an encounter.
+*   **Ammo Counter:** Prioritize inventory over tactical needs, choosing less effective solutions or taking unnecessary risks to avoid "wasting" ordnance.

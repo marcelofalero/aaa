@@ -1,4 +1,6 @@
 +++
+type = "background"
+
 title = "The Fleet Officer"
 weight = 10
 +++
@@ -23,6 +25,8 @@ A naval uniform, a personal void-suit (vacuum suit) designed for zero-G emergenc
 ## Special Ability: Bridge Intuition
 You have a -1 step bonus to all [System Operation](/skills/system-operation/) specialty skill checks while on the bridge of a starship, representing your deep familiarity with fleet-standard interfaces and emergency protocols.
 
-## Tendencies:
-*   **The Ship’s Soul:** Prioritize the structural integrity and long-term maintenance of the vessel over personal equipment or mission objectives.
-*   **The Protocol Purist:** Insist on following standard naval communications and engagement protocols even when operating in the "wild" or with civilian crews, potentially causing social friction.
+## Tendencies (Pick 2):
+*   **The Ship’s Soul:** Prioritize the structural integrity or survival of your vessel over personal equipment, ground-based objectives, or military pride.
+*   **The Protocol Purist:** Insist on following formal naval communications or engagement protocols even when working with civilian crews or in lawless systems, causing social friction.
+*   **Logistics Obsessive:** Cause critical delays in time-sensitive operations by obsessively verifying every manifest detail before agreeing to a mission plan.
+*   **Void Sickness:** Openly struggle with high-gravity or planetary settings, insisting on complex environmental checks or secure orbits whenever possible.

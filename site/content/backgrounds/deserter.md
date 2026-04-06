@@ -1,4 +1,6 @@
 +++
+type = "background"
+
 title = "The Deserter"
 weight = 4
 +++
@@ -22,6 +24,8 @@ A military-grade weapon (with filed-off serial numbers), a rugged survival tent 
 ## Special Ability: Safehouse Intuition
 You have a -1 step bonus to find makeshift shelter, black-market supplies, or sympathetic contacts in hostile territory.
 
-## Tendencies:
-*   **The Pragmatic Escape:** Abandon a cause when the risks become "unacceptable" to ensure your survival.
-*   **The Hidden Hand:** Pass up fame or reward to ensure your identity remains undiscovered.
+## Tendencies (Pick 2):
+*   **The Pragmatic Escape:** Push for an early retreat or abandon a position when the risks become "unacceptable" to you, regardless of the mission's importance.
+*   **The Hidden Hand:** Pass up fame, official reward, or status to ensure your identity and military past remain undiscovered.
+*   **The Suspicious Veteran:** Openly and aggressively question the loyalty of a new ally or contact, potentially alienating a critical source of information.
+*   **Battlefield Reflex:** Overreact to a sudden noise, bright light, or perceived threat in a non-combat zone, causing a public scene or revealing your military training.

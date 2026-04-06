@@ -1,4 +1,6 @@
 +++
+type = "background"
+
 title = "El Criminal / Golfillo"
 weight = 2
 +++
@@ -6,6 +8,7 @@ weight = 2
 La vida en las calles te enseñó a sobrevivir, pero te dejó con un nombre que las autoridades no olvidarán.
 
 ## Habilidad Amplia Gratuita:
+
 *   [Pillería](/skills/street-smart/)
 
 ## Habilidades Especializadas Favoritas:
@@ -27,6 +30,8 @@ Un kit de entrada físico o electrónico muy usado, un comunicador desechable, u
 ## Habilidad Especial:
 Ninguna. (Tus instintos de supervivencia brutos se reflejan mecánicamente al recibir una habilidad amplia gratuita para representar tu formación fundamental en la calle).
 
-## Tendencias:
-*   **El Oportunista:** Asume un riesgo innecesario para asegurar un beneficio personal o una "ventaja".
-*   **El Paranoico:** Compromete un plan para asegurar una ruta de escape clara.
+## Tendencias (Elige 2):
+*   **El Oportunista:** Asume un riesgo innecesario para asegurar un beneficio personal o una "ventaja" que no formaba parte del plan.
+*   **El Paranoico:** Compromete un plan grupal o se retira temprano para asegurarse de tener una ruta de escape personal y clara en todo momento.
+*   **El Ladrón Callejero:** Roba una propiedad personal aparentemente insignificante de un contacto, arriesgando toda la relación por una pequeña "victoria".
+*   **Codicia del Rebuscador:** Pierde tiempo en un área peligrosa o en ruinas para despojar de chatarra o componentes electrónicos "valiosos" a un pecio después de que se haya cumplido el objetivo principal.

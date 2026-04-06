@@ -1,4 +1,6 @@
 +++
+type = "background"
+
 title = "El Subversor"
 weight = 17
 +++
@@ -26,6 +28,8 @@ Un secuestrador de señales portátil o tecnología de pulverización de alto re
 ## Habilidad Especial: Mensajes Subliminales
 Tienes una bonificación de -1 paso a las tiradas de [Liderazgo-Inspirar](/skills/leadership/#inspire) o [Engaño-Farolear](/skills/deception/#bluff) cuando usas tu arte para incitar a una multitud, causar una distracción pública o influir rápidamente en la opinión pública.
 
-## Tendencias:
-*   **La Tarjeta de Visita:** Deja una pieza reconocible de tu arte o propaganda en la escena de una misión, llamando intencionalmente la atención sobre ti mismo y arriesgando el descubrimiento inmediato.
-*   **El Agitador:** Provoca abiertamente a figuras de autoridad o a la seguridad corporativa, utilizando el caos resultante para hacer una declaración política incluso si pone en peligro la operación actual.
+## Tendencias (Elige 2):
+*   **La Tarjeta de Visita:** Dejar una pieza reconocible de tu arte o propaganda en la escena de una misión, arriesgando el descubrimiento para hacer una declaración.
+*   **El Agitador:** Provocar abiertamente a figuras de autoridad para crear caos político, incluso si pone en peligro la misión.
+*   **Mártir Público:** Elegir ser capturado o quedarse atrás para emitir un último mensaje en lugar de una retirada segura.
+*   **Grafitero:** Perder tiempo vital en marcar una superficie de alta seguridad durante una misión crítica, alertando a la seguridad por amor al arte.

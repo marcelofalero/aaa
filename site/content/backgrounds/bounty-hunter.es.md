@@ -1,4 +1,6 @@
 +++
+type = "background"
+
 title = "El Cazarrecompensas"
 weight = 7
 +++
@@ -23,6 +25,8 @@ Un abrigo blindado, dos juegos de ataduras de alta resistencia, un localizador/e
 ## Habilidad Especial: Rastreador de Fugitivos
 Tienes una bonificación de -1 paso a las tiradas de [Investigar-Buscar](/skills/investigate/#search) al buscar información sobre la ubicación actual o el historial reciente de un individuo específico.
 
-## Tendencias:
-*   **El Obsesivo:** Persigue un objetivo o una pista en una situación claramente peligrosa o desventajosa en lugar de elegir un camino más seguro y lento.
-*   **El Profesional:** Honra la letra específica de un contrato incluso cuando se le ofrece un "trato secundario" más rentable o una salida moral más fácil.
+## Tendencias (Elige 2):
+*   **El Resuelto:** Persigue a un objetivo o una pista en una situación claramente peligrosa o desventajosa en lugar de elegir un camino más seguro y lento.
+*   **El Profesional:** Honra la letra específica de un contrato incluso cuando se le ofrece un "trato paralelo" más rentable o una salida moral más fácil.
+*   **El Cazador Solitario:** Se separa intencionalmente del grupo para rastrear una pista secundaria secreta o verificar una corazonada, dejando al grupo vulnerable o desinformado.
+*   **La Recompensa sobre la Sangre:** Prioriza capturar a un objetivo VIVO (para asegurar la recompensa completa) incluso cuando matarlo es la única forma segura de sobrevivir a un encuentro desesperado.

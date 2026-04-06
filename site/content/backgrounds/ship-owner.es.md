@@ -1,4 +1,6 @@
 +++
+type = "background"
+
 title = "El Propietario de Nave"
 weight = 14
 +++
@@ -23,6 +25,8 @@ Un abrigo de capitán, una llave inglesa pesada o multiherramienta, y una baliza
 ## Habilidad Especial: Capitán y Comandante
 Comienzas el juego en posesión de una nave estelar capaz de viajes interestelares y de acomodar a todo el grupo.
 
-## Tendencias:
-*   **El Resultado Final:** Toma una decisión táctica o narrativa estrictamente basada en la ganancia financiera o la preservación física de tu nave, ignorando súplicas morales o riesgos personales.
-*   **Mi Nave, Mis Reglas:** Afirma tu autoridad absoluta sobre una situación o pasajero a bordo de tu nave, incluso cuando ceder ante un aliado o experto sería significativamente más seguro.
+## Tendencias (Elige 2):
+*   **El Resultado Final:** Tomar una decisión táctica o narrativa basada estrictamente en la ganancia financiera o en la preservación física de tu nave, ignorando súplicas morales.
+*   **Mi Nave, Mis Reglas:** Afirmar la autoridad absoluta sobre una situación o pasajero mientras estás a bordo de tu nave, incluso cuando delegar sería significativamente más seguro.
+*   **El Cazador de Polizones:** Presiona para detener una retirada o misión crítica hasta que puedas verificar que no se hayan colado en tu nave "pesos no autorizados" o dispositivos de seguimiento.
+*   **El Esnob del Puerto:** Se queja abiertamente e insiste en una costosa "descontaminación" o en una ruta más larga hacia un muelle "certificado", creando fricción financiera o social.

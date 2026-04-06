@@ -1,4 +1,6 @@
 +++
+type = "background"
+
 title = "El Oficial Paramilitar"
 weight = 10
 +++
@@ -23,6 +25,8 @@ Un traje de armadura táctica personalizado y no estándar, un rifle de asalto f
 ## Habilidad Especial: Guerra Asimétrica
 Recibes una bonificación de -1 paso a las tiradas de [Tácticas-Tácticas de Infantería](/skills/tactics/#infantry-tactics) o [Supervivencia-Entrenamiento de Supervivencia](/skills/survival/#survival-training) al ejecutar una emboscada, librar una campaña de guerrilla u operar completamente aislado de las líneas de suministro oficiales.
 
-## Tendencias:
-*   **El Mercenario:** Exige renegociación, pago por riesgo o una clara ventaja táctica antes de comprometerse en un peligroso tiroteo que no estaba en el plan original.
-*   **El Pragmatista:** Ignora las reglas de enfrentamiento tradicionales o la doctrina "honorable" en favor de trampas, sabotajes o una fuerza desproporcionada abrumadora.
+## Tendencias (Elige 2):
+*   **El Vigilante:** Hacer cumplir tu "justicia" personal sobre un criminal de bajo rango, distrayendo al grupo de una misión de alto riesgo.
+*   **El Intransigente:** Sobrecomplica las negociaciones con "enemigos del estado" o criminales al mantener una postura abiertamente hostil o combativa.
+*   **La Unidad Primero:** Sacrificar a un civil o un objetivo externo para asegurar que todos los miembros de tu escuadrón inmediato sobrevivan a un encuentro.
+*   **Contado de Munición:** Prioriza el inventario sobre las necesidades tácticas, eligiendo soluciones menos efectivas o asumiendo riesgos innecesarios para evitar "desperdiciar" munición.

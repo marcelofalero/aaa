@@ -1,4 +1,6 @@
 +++
+type = "background"
+
 title = "El Diplomático"
 weight = 1
 +++
@@ -23,6 +25,8 @@ Un traje de alta sociedad a medida, un datapad encriptado con un códice legal l
 ## Habilidad Especial: Inmunidad Diplomática
 En sistemas establecidos, a menudo estás exento de leyes locales menores y búsquedas rutinarias mientras realizas negocios oficiales. Esta inmunidad se extiende estrictamente a tu persona y a tu cabina personal a bordo de una nave, a menos que la nave misma esté registrada como transporte diplomático. Recibes una bonificación de -1 paso a las tiradas que involucren navegación legal.
 
-## Tendencias:
-*   **El Mediador:** Intenta resolver una situación hostil mediante la negociación, incluso cuando el combate sea más fácil.
-*   **El Arquitecto:** Retrasa la acción para asegurar que cada variable social o consecuencia sea considerada.
+## Tendencias (Elige 2):
+*   **El Pacificador:** Ceder una posición u objetivo duramente ganado para evitar "desagrados" o conflictos abiertos, incluso cuando eso debilita la posición del grupo.
+*   **El Formalista:** Insiste en protocolos legales estrictos o en la inmunidad diplomática en situaciones donde una acción rápida y decisiva (pero ilegal) habría sido mucho más efectiva.
+*   **El Esnob de la Alta Sociedad:** Insulta o aliena abiertamente a un contacto de bajo estatus (como un estibador o un pirata) porque su falta de "clase" te hace imposible la negociación.
+*   **El Documentalista:** Insistir en redactar un contrato formal o un memorando de entendimiento antes de actuar, ralentizando acuerdos en los que el tiempo es crítico.

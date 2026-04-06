@@ -1,4 +1,6 @@
 +++
+type = "background"
+
 title = "The Military Brat"
 weight = 3
 +++
@@ -22,6 +24,8 @@ A piece of surplus military gear (like a rugged fatigue jacket or combat boots),
 ## Special Ability: Standard Procedure
 You have a -1 step bonus to [Resolve-Mental Resolve](/skills/resolve-con/#mental-resolve) or [Resolve-Physical Resolve](/skills/resolve-con/#physical-resolve) checks during high-stress situations as long as you are following a clear, pre-established plan or order.
 
-## Tendencies:
-*   **The Order-Follower:** Adhere to a plan or instruction even when circumstances have shifted.
-*   **The Protector:** Put yourself at risk to cover an ally's flank.
+## Tendencies (Pick 2):
+*   **The Rule-Maker:** Insist on a "disciplined" routine or set of rules within the party, causing friction with more chaotic or free-spirited members.
+*   **The Legacy Burden:** Act out or take unnecessary risks to prove you are more than just "someone's child" or to live up to a parent's impossible standard.
+*   **The Tradition Follower:** Insist on performing a specific military ritual or etiquette (like polishing gear or saluting superiors) even when time is critical or in informal settings.
+*   **The Reflexive Recruit:** Automatically defer to anyone with "official" status (like police or military), even an enemy, which might force you to follow a harmful "request."

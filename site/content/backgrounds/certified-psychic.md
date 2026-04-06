@@ -1,4 +1,6 @@
 +++
+type = "background"
+
 title = "The Certified Psychic"
 weight = 13
 +++
@@ -23,6 +25,8 @@ An official arbiter's badge/warrant, a portable recording device, formal profess
 ## Special Ability: Autonomous Arbiter
 Your psionic verification is legally binding. You receive a -1 step bonus to [Interaction](/skills/interaction/) or [Law](/skills/law/) checks when acting as a neutral third party in negotiations or when asserting your legal right to verify the truth of a statement in the field.
 
-## Tendencies:
+## Tendencies (Pick 2):
 *   **The Absolute Truth:** Force a harsh or dangerous truth out into the open to maintain your absolute neutrality, even when a polite lie or deception would have made things easier for the party.
 *   **The Unwanted Judge:** Complicate a situation by acting on a crime or dark secret you gleaned from someone's mind, using your autonomous authority to intervene when it wasn't your fight.
+*   **The Psychic Drain:** Insist on avoiding an urgent or stressful situation to "recenter your mind" after psychic overexertion, causing critical delays.
+*   **Empathic Overload:** Become obsessively focused on a civilian's distress or a victim's memory, refusing to abandon them even in a high-risk combat zone.

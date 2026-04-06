@@ -1,4 +1,6 @@
 +++
+type = "background"
+
 title = "The Ship Owner"
 weight = 14
 +++
@@ -23,6 +25,8 @@ A captain's coat, a heavy spanner or multi-tool, and a personal distress beacon 
 ## Special Ability: Captain and Commander
 You begin the game in possession of a starship capable of interstellar travel and accommodating the entire party.
 
-## Tendencies:
-*   **The Bottom Line:** Make a tactical or narrative decision strictly based on financial gain or the physical preservation of your ship, ignoring moral pleas or personal risks.
-*   **My Ship, My Rules:** Assert your absolute authority over a situation or passenger while aboard your vessel, even when deferring to an ally or expert would be significantly safer.
+## Tendencies (Pick 2):
+*   **The Bottom Line:** Make a tactical or narrative decision strictly based on financial gain or the physical preservation of your ship, ignoring moral pleas.
+*   **My Ship, My Rules:** Assert absolute authority over a situation or passenger while aboard your vessel, even when deferring would be significantly safer.
+*   **The Stowaway Hunter:** Push to halt a critical retreat or mission until you can verify no "unauthorized weight" or tracking devices were snuck onto your ship.
+*   **The Port Snob:** Openly complain and insist on an expensive "decontamination" or longer route to a "certified" dock, creating financial or social friction.

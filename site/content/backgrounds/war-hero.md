@@ -1,4 +1,6 @@
 +++
+type = "background"
+
 title = "The War Hero"
 weight = 11
 +++
@@ -22,6 +24,8 @@ A personalized or heavily battle-scarred signature weapon, official combat medal
 ## Special Ability: Burden of Glory
 You receive a -1 step bonus to [Interaction](/skills/interaction/) or [Leadership](/skills/leadership/) skill checks when dealing with veterans, active military personnel, or patriotic citizens who recognize your service.
 
-## Tendencies:
-*   **The Living Legend:** Voluntarily accept a significant disadvantage or take the brunt of an attack to protect civilians or allies, driven by the need to live up to your impossible reputation.
-*   **The Ghost of the Past:** React to a current situation using the outdated or traumatic context of your past war, complicating a simple negotiation or infiltration by treating it like a battlefield.
+## Tendencies (Pick 2):
+*   **The Living Legend:** Voluntarily accept a significant disadvantage or take the brunt of an attack to protect civilians or allies, driven by the need to live up to your reputation.
+*   **The Ghost of the Past:** React to a current situation using the outdated or traumatic context of your past war, complicating a simple negotiation by treating it like a battlefield.
+*   **The Flashback:** Momentarily lose focus in a non-combat situation because a specific smell or sound triggers a traumatic memory, causing a social or tactical fumble.
+*   **The Recruiter:** Spend too much time trying to convince "the youth" or civilians of the horrors or requirements of war, delaying a quick getaway or infiltration.
