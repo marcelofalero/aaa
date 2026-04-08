@@ -1,9 +1,7 @@
 +++
 title = "Street Smart"
-description = "Knowledge of protocols for dealing with gangs, criminal organizations, and illegal goods."
-weight = 7
 attribute = "WIL"
-category = "Other"
+category = "Social"
 +++
 
 This broad skill provides a character with general knowledge in the protocols of "the street." It measures a character's ability to negotiate and make contact with the realm of blue-collar crime, gangs, and illicit dealers. Street Smart and its specialties are encounter skills.
@@ -29,9 +27,14 @@ This broad skill provides a character with general knowledge in the protocols of
 
 # Specialty Skills
 
-## Criminal Elements
-### (WIL)
 
+## Street Knowledge
+
+This skill enables a character to improve his familiarity with the inner workings of a particular organization or geographical area. Unlike other specialties, it must be purchased separately for each organization or area (e.g., **Street Knowledge—Alpha Colony** or **Street Knowledge—The Void Syndicate**).
+
+A character needs to buy this specialty twice in order to become familiar with how things get done in a specific interstellar organization or interstellar trade union.
+
+## Criminal elements (WIL)
 
 This specialty skill represents a character's ability to make contact with and deal with those who are considered part of the criminal element—organized crime, professional criminals, street gangs, and underworld organizations.
 
@@ -39,10 +42,5 @@ Whenever a character tries to locate or interact with these groups, he uses this
 
 ---
 
-## Street Knowledge
-### (WIL)
+---
 
-
-This skill enables a character to improve his familiarity with the inner workings of a particular organization or geographical area. Unlike other specialties, it must be purchased separately for each organization or area (e.g., **Street Knowledge—Alpha Colony** or **Street Knowledge—The Void Syndicate**).
-
-A character needs to buy this specialty twice in order to become familiar with how things get done in a specific interstellar organization or interstellar trade union.

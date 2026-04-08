@@ -1,10 +1,9 @@
 +++
 title = "Combate Cuerpo a Cuerpo"
-attribute = "FUE"
-description = "Competencia básica para participar en combate físico a corta distancia."
+attribute = "STR"
 category = "Combate"
-favored_by = ["Especialista en Combate", "Agente Libre"]
 +++
+
 El Combate Cuerpo a Cuerpo representa la competencia básica de cualquier combatiente físico que participa en una lucha a corta distancia. Abarca la comprensión esencial del alcance, el tiempo y la transferencia eficiente de la fuerza cinética a través del cuerpo o una herramienta de mano. Un héroe entrenado en esta habilidad general posee una comprensión inherente de la conciencia espacial y la puntería, lo que le permite identificar vulnerabilidades en un oponente mientras mantiene su propio centro de gravedad y postura con el arma durante un intercambio.
 
 El entrenamiento profesional en este campo también facilita el uso de armas de fuego en medio de una lucha. Este entrenamiento elimina las penalizaciones de +1 paso de las pistolas y subfusiles cuando se usan contra un oponente en cuerpo a cuerpo, y elimina la bonificación de +2 pasos para desarmar que un oponente tiene contra ti cuando empuñas un rifle de asalto, un rifle de francotirador o cualquier forma de arma pesada equipada. Además, las pistolas y los subfusiles se manejan con la misma facilidad que las armas cuerpo a cuerpo de una mano; se pueden desenfundar y disparar en cualquier circunstancia en la que se permitiría un cuchillo o una porra.
@@ -15,9 +14,7 @@ El daño base de un ataque sin armas depende del tamaño del personaje; para un 
 
 ----------------------
 
-## Artes Marciales Defensivas
-### (DES - Solo Entrenado)
-
+## Artes Marciales Defensivas (STR)
 
 La esencia de las artes marciales defensivas y basadas en la destreza radica en la no resistencia y la manipulación sofisticada de los vectores cinéticos. En lugar de enfrentar la fuerza con la fuerza, estos estilos utilizan movimientos fluidos y esféricos para redirigir el impulso de un atacante, convirtiendo efectivamente su propia masa y aceleración en su contra. Al priorizar la elasticidad estructural y la propiocepción de alto nivel, un practicante permanece inasible, utilizando un juego de pies preciso y un cambio de peso dinámico para abandonar la línea de ataque mientras realiza una transición simultánea a una posición de contra-apalancamiento.
 
@@ -35,9 +32,9 @@ La esencia de las artes marciales defensivas y basadas en la destreza radica en 
 
 ----------------------------
 
-## Artes Marciales de Poder
-### (FUE - Solo Entrenado)
+---
 
+## Artes Marciales de Poder (STR)
 
 La esencia de las artes marciales orientadas al poder radica en la movilización eficiente de la masa corporal total a través de la alineación estructural y la secuenciación cinética explosiva. En lugar de depender de la fuerza muscular aislada, estos estilos tratan el cuerpo como una unidad única y rígida en el momento del impacto, utilizando el suelo como punto de apoyo para canalizar la energía de las piernas y las caderas giratorias hacia un punto de entrega enfocado. Al sincronizar la respiración, el apilamiento esquelético y el "peso que cae", el practicante maximiza la física del impulso para superar la resistencia de un oponente a través de la pura integridad estructural y la fuerza calculada.
 
@@ -68,3 +65,78 @@ La esencia de las artes marciales orientadas al poder radica en la movilización
 ▶ Multigolpe: Cuando un héroe alcanza el rango de habilidad 9, aprende a realizar múltiples ataques en una sola fase. El héroe puede golpear con un arma cuerpo a cuerpo tres veces en una fase. Estos ataques pueden dirigirse a un solo objetivo o a hasta tres blancos separados a menos de dos metros del héroe.
 
 Para resolver un ataque de multigolpe, el jugador del héroe tira un dado de control y tres dados de situación al mismo tiempo. Todos los resultados se leen en el dado de control, según lo modificado por los tres dados de situación. En un ataque de multigolpe, el primero dado de situación es el dado base para el ataque con una penalización de +1 paso. El segundo dado es el dado base con una penalización de +2 pasos. El tercero dado es el dado base con una penalización de +3 pasos. Al calcular el dado de situación base, utiliza el objetivo que sea más difícil de golpear.
+
+---
+
+## Defensive Martial Arts (STR)
+
+As a Personaje improves his ability in the defensive martial arts Especialidad, he gains rank benefits as described below. Note: These benefits only apply when the Personaje is fighting unarmed or with appropriate martial arts implements.
+
+The essence of defensive and dexterity-based martial arts lies in non-resistance and the sophisticated manipulation of kinetic vectors. Rather than meeting force with force, these styles utilize fluid, spherical movements to redirect an attacker's momentum, effectively turning their own mass and acceleration against them.
+
+▶ Overpowering: This skill can be used to determine the success of an attempt to overpower an opponent. Briefly, overpowering is a form of unarmed attack made simultaneously by one or more allies trying to grab and restrain a single opponent. If a single attacker tries to overpower another Personaje, his Combate cuerpo a cuerpo skill check is made at a +1 penalty.
+
+Every additional attacker who takes part in the same overpowering attempt provides a cumulative –1 bonus to the skill check. Overpowering does not cause damage, but it immobilizes an opponent for as long as one of the attackers continues to maintain a tight hold on that opponent.
+
+▶ Base Damage: When a Personaje reaches skill rank 1, he learns to maintain balance while identifying openings. This increases his base unarmed damage to **d4s/d6s/d6w**.
+
+⊗ Resistance Modifier: At higher ranks, the skill provides an improvement to a Personaje's Strength resistance modifier. By leveraging his speed and flexibility, the practitioner’s reactive movement provides a +1 step increase at rank 3, an additional +1 at rank 7, and a final +1 at rank 11. This increase doesn't stack with similar bonuses provided by other Combate cuerpo a cuerpo specialty skills.
+
+How we do things reaches rank 4, if an opponent misses him with a melee attack, the Personaje's next attack against that specific opponent before the end of the next round can use either his own or his opponent's Strength modifier for damage.
+
+▶ Redirection of Force: When a Personaje reaches rank 7, if an opponent performs an All Out Attack against him, the attacker receives all the penalties of that maneuver but gains none of the benefits.
+
+How we do things reaches rank 10, All Out Attacks that miss him can be redirected against any other target adjacent to the attacker. The attacker must make a new normal attack roll against the new target to determine the result.
+
+▶ Formless Master: When a Personaje reaches rank 12, he may ignore 1 step of an opponent's Strength defense due to the unpredictability of his attacks.
+
+---
+
+---
+
+## Power Martial Arts (STR)
+
+As a Personaje improves his ability in the power martial arts Especialidad, he gains rank benefits as described below. Note: These benefits only apply when the Personaje is fighting unarmed or with appropriate martial arts implements.
+
+The essence of power-oriented martial arts lies in the efficient mobilization of total body mass through structural alignment and explosive kinetic sequencing. These styles treat the body as a single, rigid unit at the moment of impact, using the ground as a fulcrum to funnel energy.
+
+▶ Overpowering: This skill can be used to determine the success of an attempt to overpower an opponent. Briefly, overpowering is a form of unarmed attack made simultaneously by one or more allies trying to grab and restrain a single opponent. If a single attacker tries to overpower another Personaje, his Combate cuerpo a cuerpo skill check is made at a +1 penalty.
+
+Every additional attacker who takes part in the same overpowering attempt provides a cumulative –1 bonus to the skill check. Overpowering does not cause damage, but it immobilizes an opponent for as long as one of the attackers continues to maintain a tight hold on that opponent.
+
+▶ Mass Leverage: When a Personaje reaches skill rank 1, he learns to properly leverage his mass. This increases his base unarmed damage to **d4s/d4w/d6+1w**.
+
+▶ High Impulse: When a Personaje reaches rank 3, an Asombroso success on an attack forces the target to make a knockout check (Resolve or Stamina) with a +1 step penalty. This penalty increases to +2 at rank 6, +3 at rank 9, and +4 at rank 12.
+
+▶ Structural Efficiency: When a Personaje reaches rank 4, all unarmed damage increases by +1. This bonus increases by an additional +1 at rank 8 and again at rank 12.
+
+⊗ Resistance Modifier: At higher ranks, the skill provides an improvement to a Personaje's Strength resistance modifier. It improves by +1 at rank 4, by +1 again at rank 8, and by +1 again at rank 12. This increase doesn't stack with similar bonuses provided by other Combate cuerpo a cuerpo specialty skills.
+
+▶ Short-range Power (Fajin): When a Personaje reaches rank 5, he learns to strike effectively even if his hands are bound or unusable by utilizing his shoulders, knees, or head.
+
+▶ Structural Destruction: When a Personaje reaches rank 8, if he utilizes an All Out Attack, the target must roll their Armor dice twice and take the worse result. This applies to standard armors.
+
+▶ Master of Force: When a Personaje reaches rank 12, the "roll twice/take worse" armor penalty now applies to Powered Armors and supernatural defenses.
+
+**Note:** Practitioners that frequently utilize the All Out Attack option in combat are usually called brawlers.
+
+---
+
+---
+
+## Powered (STR)
+
+As a Personaje improves his ability in the powered Especialidad, he gains rank benefits as described below. Note: These benefits only apply when the Personaje is using a weapon covered by this skill.
+
+Due to the inherent complexity of powered weapons they are more fragile than their counterparts; this requires the user to be more careful when parrying, resulting in a +2 step penalty on parry checks.
+
+⊗ Resistance Modifier: At higher ranks, the skill provides an improvement to a Personaje's Strength resistance modifier. It improves by +1 at rank 4, by +1 again at rank 8, and by +1 again at rank 12. This increase doesn't stack with similar bonuses provided by other Combate cuerpo a cuerpo specialty skills.
+
+▶ Reaction Parry: When a Personaje reaches rank 4, he can attempt to parry whenever a melee or unarmed attack is used against him. The parry attempt uses up the Personaje's next available action.
+
+▶ Double-Strike: When a Personaje reaches skill rank 6, he learns to make a double-strike against a target with a successful skill check. The player rolls one Dado de Control and two situation dice. The first Dado de Situación is the base modifier with a +1 step penalty; the second Dado de Situación is the base modifier with a +2 step penalty.
+
+▶ Multistrike: When a Personaje reaches skill rank 9, he learns to make multiple attacks in a single phase. The Personaje can strike with a melee weapon three times in a phase. These attacks can be directed at a single target or at up to three separate targets within two meters of the Personaje.
+
+---
+

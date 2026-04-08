@@ -1,10 +1,8 @@
 +++
 title = "Manejo de Animales"
-description = "La habilidad básica para entrenar y manejar animales."
-attribute = "VOL"
+attribute = "WIL"
 category = "Otro"
 +++
-
 
 Esta habilidad general proporciona a un héroe la habilidad básica para entrenar animales para realizar una variedad de tareas, incluyendo trabajo, aceptar jinetes, rastrear y atacar. También se usa para determinar si un héroe puede hacer que un animal entrenado realice una tarea, para montar un animal, o para calmar, capturar o manejar de otra manera un animal salvaje o un animal doméstico desconocido. Tenga en cuenta que los métodos de entrenamiento y los comandos utilizados con diferentes especies de animales pueden variar ampliamente.
 
@@ -22,7 +20,7 @@ Alguien con la habilidad de Manejo de Animales puede lograr que un animal salvaj
 
 La habilidad general también permite a un personaje montar cualquier animal que pueda usarse para el transporte terrestre básico, lo que generalmente significa caballos, mulas y otros grandes cuadrúpedos. Cuando se monta un animal, la criatura se mueve en cada fase. Durante una fase en la que el héroe tiene una acción, puede usar esta habilidad para intentar maniobrar al animal. Consulte la página 198 del Capítulo 12: Vehículos para obtener información sobre los tipos de maniobras (Rutinaria, Moderada y Extrema) que un jinete puede intentar. (Aunque normalmente no se piensa en un animal como un vehículo, las mismas reglas generales se aplican a los jinetes de animales y a los conductores de vehículos).
 
-## Modificadores de Situación de Manejo de Animales
+## Modificadores de Situación de Manejo de Animales (WIL)
 
 ### Complejidad del Modificador
 
@@ -51,15 +49,14 @@ La habilidad general también permite a un personaje montar cualquier animal que
 
 ---
 
-## Montar Animales
+---
+
+## Montar Animales (WIL)
 
 Esta especialización permite a un héroe mejorar este aspecto de la habilidad general de Manejo de Animales. Un personaje con esta habilidad puede intentar correr por terrenos peligrosos, hacer saltos o realizar otras acrobacias, y participar en combate montado.
 
 » **Equitación de Acrobacias:** Cuando un héroe alcanza el rango 3 en esta especialidad, se vuelve capaz de realizar equitación de acrobacias. Esto le permite dirigir a su montura para saltar vallas, saltar abismos o moverse hacia atrás. Con un resultado de Fallo Crítico, el animal tropieza
-### (causando daño como en una caída Extremadamente Corta tanto para la montura como para el jinete); con un Fracaso, el animal se niega a realizar la acción. Para realizar saltos horizontales, el éxito en una tirada de habilidad se suma a la capacidad de salto natural de un animal: [Ordinario], el animal salta la distancia normal más 1 metro; Bueno, distancia normal más 2 metros; Asombroso, distancia normal más 3 metros. Para saltar sobre obstrucciones, los resultados son: Ordinario, distancia normal más 1 metro; Bueno, distancia normal más 1.5 metros; Asombroso, distancia normal más 2 metros. Para moverse hacia atrás, un [Ordinario] significa que el animal retrocede a la mitad de su velocidad de movimiento al paso; Bueno, el animal retrocede a su velocidad de movimiento al paso completa; Asombroso, el animal retrocede a una vez y media su velocidad de movimiento al paso. Un héroe con la habilidad de equitación de acrobacias también puede usar su montura como cobertura. Esto proporciona una penalización a la posibilidad de un oponente de golpear al jinete, dependiendo del resultado de la tirada de habilidad del jinete: Ordinario, +1 paso; Bueno, +2 pasos; Asombroso, +3 pasos. Por supuesto, esta táctica no protege a la montura de ninguna manera. La equitación de acrobacias no se puede combinar con ninguna otra acción; por ejemplo, no es posible realizar un ataque mientras se insta a la montura a saltar un muro.
+---
 
 ---
 
-## Entrenamiento de Animales
-
-Esta habilidad permite a un héroe ser capaz de manejar, montar y entrenar un tipo específico de animal. Debe comprar y mejorar esta habilidad de especialidad por separado para cada tipo de animal que quiera entrenar. Los tipos de animales incluyen animales de monta, animales de carga, animales de ataque y animales de guardia. Su Director de Juego tiene la última palabra sobre cómo se clasifican los animales y cuáles requieren aplicaciones separadas de esta habilidad.

@@ -1,11 +1,8 @@
 +++
 title = "Armas a distancia modernas"
-description = "Entrenamiento en el uso de armas a distancia modernas, incluidas pistolas, rifles y subfusiles."
-weight = 3
 attribute = "DEX"
 category = "Combat"
 +++
-
 
 Esta habilidad amplia proporciona a un personaje entrenamiento en el uso de armas a distancia modernas. Esta habilidad cubre pistolas, fusiles, escopetas y subfusiles de todos los tipos, incluyendo armas de proyectiles y de energía.
 
@@ -46,8 +43,7 @@ Cuando un personaje usa cualquier arma a distancia, ya sea primitiva o moderna, 
 
 # Habilidades de especialidad
 
-## Pistola
-### (DEX)
+## Pistola (DEX)
 
 Esta habilidad de especialidad permite a un personaje mejorar su competencia con pistolas modernas de todo tipo, incluyendo armas de proyectiles y de energía.
 
@@ -55,8 +51,9 @@ Esta habilidad de especialidad permite a un personaje mejorar su competencia con
 
 ---
 
-## Subfusil
-### (DEX)
+---
+
+## Subfusil (DEX)
 
 Esta habilidad de especialidad permite a un personaje mejorar su competencia con subfusiles modernos de todo tipo (armas automáticas pequeñas que disparan cartuchos de tamaño de pistola), así como subfusiles equivalentes de energía.
 
@@ -72,8 +69,9 @@ Los subfusiles (y los fusiles de asalto) proporcionan a un personaje hasta tres 
 
 ---
 
-## Fusil de asalto
-### (DEX)
+---
+
+## Fusil de asalto (DEX)
 
 Esta habilidad de especialidad cubre los fusiles automáticos: armas de infantería estándar capaces de fuego selectivo y modos automáticos usando cartuchos de calibre de fusil.
 
@@ -89,8 +87,9 @@ Los fusiles de asalto proporcionan a un personaje hasta tres opciones de ataque 
 
 ---
 
-## Escopeta
-### (DEX)
+---
+
+## Escopeta (DEX)
 
 Esta habilidad de especialidad cubre todos los tipos de escopetas modernas, desde las tradicionales armas de proyectiles de corredera y semiautomáticas hasta los emisores especializados de energía de dispersión. Las escopetas se definen por su amplia gama de tipos de munición especializada (postat, balas sólidas, proyectiles de brecha, etc.) o sus configuraciones de energía de modo múltiple.
 
@@ -98,9 +97,13 @@ Esta habilidad de especialidad cubre todos los tipos de escopetas modernas, desd
 
 ---
 
-## Fusil
-### (DEX)
+---
+
+## Fusil (DEX)
 
 Esta habilidad de especialidad permite a un personaje mejorar su competencia con fusiles modernos de un solo disparo, fusiles de precisión (sniper) y fusiles de caza.
 
 ▶ **Puntería mejorada:** Cuando un personaje alcanza el rango 3 en esta especialidad, se vuelve capaz de impactar a un objetivo con mayor fiabilidad. Esta mejora en la precisión se traduce en una **bonificación de –1** al dado de situación de cualquier ataque con fusil de un solo disparo que realice el personaje.
+
+---
+

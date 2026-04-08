@@ -1,7 +1,5 @@
 +++
 title = "Culture"
-description = "Ability to understand and interact with different cultures and species."
-weight = 1
 attribute = "PER"
 category = "Social"
 +++
@@ -36,8 +34,8 @@ The complexity of the ideas that are being communicated during a use of the Cult
 
 # Specialty Skills
 
+
 ## Etiquette [Specific]
-### (PER - Trained Only)
 
 *This skill can't be used untrained.*
 
@@ -49,8 +47,7 @@ The Gamemaster will decide what constitutes a "specific culture," taking the cam
 
 ---
 
-## Diplomacy
-### (PER)
+## Diplomacy (PER)
 
 This specialty skill allows a character to improve his ability to reach agreements and understandings with representatives of different nations, cultures, subcultures and species.
 
@@ -62,8 +59,15 @@ Depending on the nature of the issue to be resolved, the diplomacy skill check m
 
 ---
 
-## First Encounter
-### (PER - Trained Only)
+---
+
+## Etiquette [spec] (PER)
+
+
+
+---
+
+## First Encounter (PER)
 
 *This skill can't be used untrained.*
 
@@ -72,3 +76,6 @@ This specialty skill represents a character's training in the theories and proto
 A first encounter skill check is always a complex chore, and may take days, weeks, or even months to successfully complete. The Gamemaster will assign the number of successes necessary to complete the skill check based on the extent of difference between the two cultures involved. Also, the Gamemaster will determine the initial attitude of the target creature(s) toward the character, and may inform the character of changes in that attitude that take place while the complex skill check is under way.
 
 Upon the successful completion of the first encounter skill check, the character immediately gains rank 1 in the Knowledge—language and Culture—etiquette skills that relate to the formerly unknown culture.
+
+---
+

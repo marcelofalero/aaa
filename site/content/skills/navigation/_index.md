@@ -1,11 +1,8 @@
 +++
 title = "Navigation"
-description = "Training in navigating on a planetary surface or in space."
-weight = 8
 attribute = "INT"
-category = "Technical"
+category = "Other"
 +++
-
 
 This broad skill provides a character with training in navigating on a planetary surface or in space. Plotting a course requires a simple skill check.
 
@@ -16,17 +13,20 @@ The optimum time for a Navigation attempt is 5 minutes. Every minute less than 5
 
 # Specialty Skills
 
-## Navigation—surface
-### (INT)
 
-This specialty skill covers navigation in a planetary environment, utilizing maps, terrain features, compasses, and GPS systems to move from one point to another.
+## Astrogation—drivespace
 
-⊗ **Increased Effect:** A character receives a **-1 bonus** at rank 3, **-2** at rank 6, **-3** at rank 9, and **-4** at rank 12 on Navigation—surface checks when using maps and navigation sensors.
+*This skill can't be used untrained.*
 
----
+This specialty skill involves navigation through drivespace, usually movement between star systems.
 
-## Astrogation—system
-### (INT - Trained Only)
+### Starfall Results
+- **Critical Failure/Failure:** Consult "Drivespace Off Course Results" table.
+- **Ordinary:** Arrive at the edge of the destination star system.
+- **Good:** Arrive inside destination star system, d12+2 AUs from target.
+- **Amazing:** Arrive inside destination system, d4 AUs from target.
+
+## Astrogation—system (INT)
 
 *This skill can't be used untrained.*
 
@@ -39,16 +39,15 @@ This specialty skill covers navigation through a star system, usually movements 
 
 ---
 
-## Astrogation—drivespace
-### (INT - Trained Only)
+---
 
-*This skill can't be used untrained.*
+## Navigation—surface (INT)
 
-This specialty skill involves navigation through drivespace, usually movement between star systems.
+This specialty skill covers navigation in a planetary environment, utilizing maps, terrain features, compasses, and GPS systems to move from one point to another.
 
-### Starfall Results
-- **Critical Failure/Failure:** Consult "Drivespace Off Course Results" table.
-- **Ordinary:** Arrive at the edge of the destination star system.
-- **Good:** Arrive inside destination star system, d12+2 AUs from target.
-- **Amazing:** Arrive inside destination system, d4 AUs from target.
+⊗ **Increased Effect:** A character receives a **-1 bonus** at rank 3, **-2** at rank 6, **-3** at rank 9, and **-4** at rank 12 on Navigation—surface checks when using maps and navigation sensors.
+
+---
+
+---
 

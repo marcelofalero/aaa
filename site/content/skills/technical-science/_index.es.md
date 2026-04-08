@@ -1,7 +1,5 @@
 +++
 title = "Ciencia Técnica"
-description = "Entrenamiento en las ciencias técnicas, incluyendo mantenimiento, reparación e invención."
-weight = 13
 attribute = "INT"
 category = "Técnica"
 +++
@@ -14,8 +12,7 @@ Las comprobaciones de habilidad realizadas para determinar si un personaje conoc
 
 # Habilidades de Especialidad
 
-## Invención
-### (INT - SOLO ENTRENADOS)### (INT - Solo Entrenados)
+## Invención (INT)
 
 *Esta habilidad no puede usarse sin entrenamiento.*
 
@@ -27,8 +24,9 @@ El uso de esta habilidad requiere tiempo; las comprobaciones de Invención son s
 
 ---
 
-## Remendar
-### (INT - SOLO ENTRENADOS)### (INT - Solo Entrenados)
+---
+
+## Remendar (INT)
 
 *Esta habilidad no puede usarse sin entrenamiento.*
 
@@ -48,8 +46,9 @@ La cantidad de dificultad añadida a las reparaciones completas depende del resu
 
 ---
 
-## Reparación
-### (INT - Solo Entrenados)
+---
+
+## Reparación (INT)
 
 *Esta habilidad no puede usarse sin entrenamiento.*
 
@@ -58,36 +57,11 @@ Esta habilidad proporciona a un personaje entrenamiento en la reparación y el m
 Cualquier uso de la habilidad de reparación requiere una comprobación de habilidad compleja y toma un período de tiempo determinado por el Director del Juego (minutos, horas, días o semanas). La complejidad de una comprobación de habilidad de reparación está relacionada con la cantidad de daño que debe repararse:
 - **Daño de Aturdimiento:** Arreglar un objeto con solo daño de aturdimiento es de complejidad **Ordinaria**.
 - **Daño de Herida:** Arreglar un objeto con daño de herida es de complejidad **Buena**.
-- **Daño Mortal:** Arreglar un objeto con cualquier cantidad de daño mortal es de complejidad **Asombrosa** (y puede requerir más de 10 éxitos).
+- **Daño Mortal:** Arreglar un objeto con cualquier cantidad de daño Mortal es de complejidad **Asombrosa** (y puede requerir más de 10 éxitos).
 
 ⊗ **Efecto Incrementado:** A medida que aumenta el rango de habilidad de especialidad de un personaje, este recibe un bono a cualquier comprobación de habilidad que involucre Ciencia Técnica o las otras tres habilidades de especialidad: **bono de -1 paso al rango 3**, **-2 al rango 6**, **-3 al rango 9** y **-4 al rango 12**.
 
 ---
 
-## Conocimiento Técnico
-### (INT - Solo Entrenados)
-
-*Esta habilidad no puede usarse sin entrenamiento.*
-
-Esta habilidad representa el estudio de la tecnología e indica qué tan actualizado está un personaje sobre las técnicas o procedimientos que le ayudan a manipular herramientas y otros dispositivos. Es necesario que un personaje use ciertas herramientas sofisticadas o potencialmente peligrosas, como un soplete de corte, sin arriesgarse a sufrir lesiones personales o dañar la herramienta.
-
-⊗ **Efecto Incrementado:** A medida que aumenta el rango de habilidad de especialidad de un personaje, este recibe un bono a cualquier comprobación de habilidad que involucre Ciencia Técnica o las otras tres habilidades de especialidad: **bono de -1 paso al rango 3**, **-2 al rango 6**, **-3 al rango 9** y **-4 al rango 12**.
-
 ---
 
-### Modificadores de Situación de Ciencia Técnica
-
-| Situación | Modificador |
-| :--- | :--- |
-| **Sin herramientas** | +3 pasos |
-| **Herramientas mínimas** | 0 |
-| **Juego de herramientas estándar (Toolkit)** | -1 paso |
-| **Juego de herramientas especializado** | -2 pasos |
-| **Oscuridad** | +3 pasos |
-| **Iluminación marginal** | +1 paso |
-| **Iluminación ordinaria** | 0 |
-| **Buena iluminación** | -1 paso |
-| **Sin fecha límite** | -2 pasos |
-| **Fecha límite razonable** | 0 |
-| **Fecha límite ajustada** | +1 paso |
-| **Fecha límite irrazonable** | +3 pasos |

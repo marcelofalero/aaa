@@ -1,7 +1,5 @@
 +++
 title = "Teach"
-description = "Ability to instruct others in the use of a skill belonging to the Open group."
-weight = 8
 attribute = "WIL"
 category = "Social"
 +++
@@ -34,8 +32,8 @@ The benefit of a teacher depends on the result of the teacher's skill check:
 
 # Specialty Skills
 
+
 ## Teach, Specific Field
-### (WIL - Trained Only)
 
 *This skill can’t be used untrained.*
 
@@ -58,3 +56,10 @@ The character then becomes able to teach all skills associated with that profess
 | **Teaching to Rank 6** | +3 steps |
 | **Student is learning a Professional skill** | -1 step |
 | **Student is learning an Out-of-Profession skill** | +2 steps |
+
+## Specific field (WIL)
+
+
+
+---
+

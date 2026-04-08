@@ -1,0 +1,23 @@
+[{{ range $index, $page := .Site.RegularPages }}{{ if $index }}, {{ end }}{{ $section := index (split $page.File.Dir "/") 0 }}{
+  "title": {{ $page.Title | jsonify }},
+  "url": {{ $page.RelPermalink | jsonify }},
+  "description": {{ $page.Params.description | default $page.Summary | jsonify }},
+  "section": {{ $section | jsonify }},
+  "content": {{ $page.Plain | jsonify }}
+}{{ end }}
+
+{{/* Add Specialty Skills from Data */}}
+{{ $skills := .Site.Data.skills }}
+{{ range $g_idx, $group := $skills.groups }}
+  {{ range $i_idx, $item := $group.items }}
+    {{ if eq $item.type "Specialty" }},
+    {
+      "title": {{ $item.skill | jsonify }},
+      "url": {{ $item.skill_url | jsonify }},
+      "description": {{ printf "Specialty Skill (%s)" $item.attribute | jsonify }},
+      "section": "skills",
+      "content": {{ printf "%s specialty skill under %s attribute." $item.skill $item.attribute | jsonify }}
+    }
+    {{ end }}
+  {{ end }}
+{{ end }}]

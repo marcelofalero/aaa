@@ -2,6 +2,9 @@ baseURL = 'http://localhost:1313/'
 defaultContentLanguage = 'en'
 title = 'AAA'
 
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
 [languages]
   [languages.en]
     languageName = 'English'

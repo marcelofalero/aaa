@@ -1,7 +1,5 @@
 +++
 title = "Leadership"
-description = "Abilities and talents of a leader; coordination of a group to work as a team."
-weight = 5
 attribute = "PER"
 category = "Social"
 +++
@@ -34,8 +32,7 @@ The check is modified by the attitude of the targets, plus any other factors det
 
 # Specialty Skills
 
-## Command
-### (PER)
+## Command (PER)
 
 **Cost: 4**
 
@@ -47,8 +44,9 @@ This specialty skill represents the character's ability to lead others by virtue
 
 ---
 
-## Inspire
-### (PER - Trained Only)
+---
+
+## Inspire (PER)
 
 **Cost: 3**
 
@@ -61,3 +59,6 @@ One major difference is that **Inspire can be used on targets who are Hostile or
 ⊗ **Increased Effect:** As a character achieves higher ranks in this specialty, the bonus to his or her Leadership skill checks improves to **-1 at rank 4**, **-2 at rank 8**, and **-3 at rank 12**. (Note: This bonus is not cumulative.)
 
 ---
+
+---
+

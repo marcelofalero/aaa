@@ -1,10 +1,7 @@
 +++
 title = "Ciencias médicas"
-description = "Formación en procedimientos médicos, diagnóstico y tratamiento."
-weight = 7
 attribute = "INT"
 category = "Technical"
-untrained = true
 +++
 
 *Esta habilidad no se puede usar sin entrenamiento.*
@@ -17,8 +14,7 @@ Un personaje con solo la habilidad amplia no puede tratar daños; se requieren l
 
 # Especialidades
 
-## Ciencias forenses
-### (INT - Solo entrenamiento)
+## Ciencias forenses (INT)
 
 *Esta habilidad no se puede usar sin entrenamiento.*
 
@@ -28,8 +24,9 @@ La ciencia forense es la aplicación del conocimiento médico y científico a pr
 
 ---
 
-## Conocimiento médico
-### (INT - Solo entrenamiento)
+---
+
+## Conocimiento médico (INT)
 
 *Esta habilidad no se puede usar sin entrenamiento.*
 
@@ -39,8 +36,9 @@ Esta habilidad de especialidad representa la profunda comprensión académica y 
 
 ---
 
-## Psicología
-### (INT - Solo entrenamiento)
+---
+
+## Psicología (INT)
 
 *Esta habilidad no se puede usar sin entrenamiento.*
 
@@ -50,8 +48,9 @@ La psicología es el estudio de la mente y el comportamiento. Puede usarse para 
 
 ---
 
-## Cirugía
-### (INT - Solo entrenamiento)
+---
+
+## Cirugía (INT)
 
 *Esta habilidad no se puede usar sin entrenamiento.*
 
@@ -61,8 +60,9 @@ La cirugía implica el tratamiento de lesiones o trastornos del cuerpo mediante 
 
 ---
 
-## Tratamiento
-### (INT - Solo entrenamiento)
+---
+
+## Tratamiento (INT)
 
 *Esta habilidad no se puede usar sin entrenamiento.*
 
@@ -72,21 +72,11 @@ La especialidad de tratamiento puede utilizarse para todas las tareas que cubren
 - **Daño por aturdimiento:** Restaura 2, 3 o 4 puntos a un paciente consciente.
 - **Recuperación de inconsciencia:** Recupera 2, 3 o 4 puntos de aturdimiento.
 - **Daño por heridas:** Tirada de habilidad compleja utilizando un botiquín de primeros auxilios (complejidad Ordinaria, 2 heridas curadas) o un paquete de traumatología (complejidad Marginal, 4 heridas curadas).
-- **Moribundo:** Estabiliza el daño mortal, aumentando el tiempo entre las tiradas de Resistencia-aguante de una por hora a una por día.
+- **Moribundo:** Estabiliza el daño Mortal, aumentando el tiempo entre las tiradas de Resistencia-aguante de una por hora a una por día.
 
 ⊗ **Tratamiento mejorado:** Un personaje recibe una **bonificación de -1 paso** en el rango 3, **-2** en el rango 6, **-3** en el rango 9 y **-4** en el rango 12 en las tiradas de Tratamiento.
 
 ---
 
-## Xenomedicina [Específica]
-### (INT - Solo entrenamiento)
+---
 
-*Esta habilidad no se puede usar sin entrenamiento.*
-
-Esta habilidad de especialidad implica el estudio médico de una especie alienígena específica, lo que permite al personaje utilizar sus otras habilidades médicas en miembros de esa especie. Inicialmente, se aplica una **penalización de +3 pasos** al curar a personajes alienígenas si no se conoce esta habilidad.
-
-⊗ **Tratamiento mejorado:** La penalización por tratar a la especie alienígena específica se reduce de la siguiente manera:
-- **Rango 3:** Penalización reducida a +2 pasos.
-- **Rango 6:** Penalización reducida a +1 paso.
-- **Rango 9:** Penalización eliminada.
-- **Rango 12:** El personaje recibe una bonificación de -1 paso.

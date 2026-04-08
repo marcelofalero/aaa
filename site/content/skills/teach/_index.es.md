@@ -1,7 +1,5 @@
 +++
 title = "Enseñanza"
-description = "Capacidad de instruir a otros en el uso de una habilidad perteneciente al grupo Abierto."
-weight = 8
 attribute = "WIL"
 category = "Social"
 +++
@@ -34,8 +32,7 @@ El beneficio de un profesor depende del resultado de la comprobación de habilid
 
 # Habilidades de Especialidad
 
-## Campo Específico
-### (WIL - Solo Entrenados)
+## Campo Específico (WIL)
 
 *Esta habilidad no puede usarse sin entrenamiento.*
 
@@ -58,3 +55,6 @@ El personaje entonces puede enseñar todas las habilidades asociadas con ese gru
 | **Enseñar al Rango 6** | +3 pasos |
 | **El estudiante está aprendiendo una habilidad de Profesión** | -1 paso |
 | **El estudiante está aprendiendo una habilidad "Fuera de Profesión"** | +2 pasos |
+
+---
+

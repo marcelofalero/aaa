@@ -1,7 +1,5 @@
 +++
 title = "Ciencias de la vida"
-description = "Formación en ciencias de la vida, incluidas biología, botánica, genética y zoología."
-weight = 6
 attribute = "INT"
 category = "Technical"
 +++
@@ -12,8 +10,7 @@ Esta habilidad amplia representa la formación de un personaje en las ciencias d
 
 # Especialidades
 
-## Biología, Botánica, Zoología
-### (INT - Solo entrenamiento)
+## Biología, Botánica, Zoología (INT)
 
 *Esta habilidad no se puede usar sin entrenamiento.*
 
@@ -26,8 +23,9 @@ Estas habilidades de especialidad deben comprarse por separado.
 
 ---
 
-## Genética
-### (INT - Solo entrenamiento)
+---
+
+## Genética (INT)
 
 *Esta habilidad no se puede usar sin entrenamiento.*
 
@@ -37,8 +35,9 @@ La genética es el estudio de la herencia y los genes, formando la base de la in
 
 ---
 
-## Xenología
-### (INT - Solo entrenamiento)
+---
+
+## Xenología (INT)
 
 *Esta habilidad no se puede usar sin entrenamiento.*
 
@@ -47,12 +46,21 @@ La xenología es el estudio de formas de vida animal de naturaleza alienígena y
 ⊗ **Efecto incrementado:** Un personaje recibe una **bonificación de -1 paso** en el rango 3, **-2** en el rango 6, **-3** en el rango 9 y **-4** en el rango 12 en ciertas otras tiradas de habilidad que puedan ser asistidas por esta especialidad. Estas habilidades incluyen Supervivencia (en entornos alienígenas), Manejo de animales (con criaturas alienígenas) y Ciencias médicas—xenomedicina.
 ---
 
-## Psiónica
-### (INT - Solo entrenamiento)
+---
 
+## Psiónica (INT)
 
 *Esta habilidad no se puede usar sin entrenamiento.*
 
 Esta habilidad de especialidad representa el estudio científico de la naturaleza biológica y bioquímica de las habilidades psiónicas.
 
 ⊗ **Efecto incrementado:** Un personaje recibe una **bonificación de -1 paso** en el rango 3, **-2** en el rango 6, **-3** en el rango 9 y **-4** en el rango 12 en ciertas otras tiradas de habilidad que puedan ser asistidas por esta especialidad. Estas habilidades incluyen Telepatía—drenaje, Biocinesis—bioluminiscente y Biocinesis—bioarma.
+
+---
+
+## Zoology (INT)
+
+
+
+---
+

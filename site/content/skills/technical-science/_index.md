@@ -1,7 +1,5 @@
 +++
 title = "Technical Science"
-description = "Training in the technical sciences, including maintenance, repair, and invention."
-weight = 13
 attribute = "INT"
 category = "Technical"
 +++
@@ -14,21 +12,8 @@ Skill checks made to determine if a character knows a certain piece of technical
 
 # Specialty Skills
 
-## Invention
-### (INT - Trained Only)
-
-*This skill can't be used untrained.*
-
-Invention lets a character build an electronic or mechanical component or system from scratch, or to modify an existing device to perform a new function. 
-
-Using this skill requires time; Invention checks are always complex skill checks. Modifying an existing item may be able to be done in rounds, but all other aspects of invention require hours, days, weeks, or months, depending on the determination of the Gamemaster. 
-
-⊗ **Increased Effect:** As a character’s specialty skill rank increases, he receives a bonus to any skill checks involving Technical Science or the other three specialty skills: **-1 step at rank 3**, **-2 at rank 6**, **-3 at rank 9**, and **-4 at rank 12**.
-
----
 
 ## Juryrig
-### (INT - Trained Only)
 
 *This skill can't be used untrained.*
 
@@ -48,24 +33,7 @@ The amount of difficulty added to the full repairs depends on the result of the 
 
 ---
 
-## Repair
-### (INT - Trained Only)
-
-*This skill can't be used untrained.*
-
-This skill provides a character with training in the repair and maintenance of various types of mechanical and electronic technology.
-
-Any use of the repair skill requires a complex skill check and takes a period of time determined by the Gamemaster (minutes, hours, days, or weeks). The complexity of a repair skill check is related to the amount of damage that must be repaired:
-- **Stun Damage:** Fix an object with only stun damage is **Ordinary** complexity.
-- **Wound Damage:** Fix an object with wound damage is **Good** complexity.
-- **Mortal Damage:** Fixing an object with any amount of mortal damage is **Amazing** complexity (and may require 10+ successes).
-
-⊗ **Increased Effect:** As a character’s specialty skill rank increases, he receives a bonus to any skill checks involving Technical Science or the other three specialty skills: **-1 step at rank 3**, **-2 at rank 6**, **-3 at rank 9**, and **-4 at rank 12**.
-
----
-
 ## Technical Knowledge
-### (INT - Trained Only)
 
 *This skill can't be used untrained.*
 
@@ -91,3 +59,41 @@ This skill represents the study of technology and indicates how up-to-date a cha
 | **Reasonable deadline** | 0 |
 | **Tight deadline** | +1 step |
 | **Unreasonable deadline** | +3 steps |
+
+## Invention (INT)
+
+*This skill can't be used untrained.*
+
+Invention lets a character build an electronic or mechanical component or system from scratch, or to modify an existing device to perform a new function. 
+
+Using this skill requires time; Invention checks are always complex skill checks. Modifying an existing item may be able to be done in rounds, but all other aspects of invention require hours, days, weeks, or months, depending on the determination of the Gamemaster. 
+
+⊗ **Increased Effect:** As a character’s specialty skill rank increases, he receives a bonus to any skill checks involving Technical Science or the other three specialty skills: **-1 step at rank 3**, **-2 at rank 6**, **-3 at rank 9**, and **-4 at rank 12**.
+
+---
+
+---
+
+## Jury-rig (INT)
+
+
+
+---
+
+## Repair (INT)
+
+*This skill can't be used untrained.*
+
+This skill provides a character with training in the repair and maintenance of various types of mechanical and electronic technology.
+
+Any use of the repair skill requires a complex skill check and takes a period of time determined by the Gamemaster (minutes, hours, days, or weeks). The complexity of a repair skill check is related to the amount of damage that must be repaired:
+- **Stun Damage:** Fix an object with only stun damage is **Ordinary** complexity.
+- **Wound Damage:** Fix an object with wound damage is **Good** complexity.
+- **Mortal Damage:** Fixing an object with any amount of mortal damage is **Amazing** complexity (and may require 10+ successes).
+
+⊗ **Increased Effect:** As a character’s specialty skill rank increases, he receives a bonus to any skill checks involving Technical Science or the other three specialty skills: **-1 step at rank 3**, **-2 at rank 6**, **-3 at rank 9**, and **-4 at rank 12**.
+
+---
+
+---
+

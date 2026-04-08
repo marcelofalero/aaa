@@ -1,8 +1,6 @@
 +++
 title = "Operaciones Encubiertas"
-description = "Habilidad general consolidada para el sigilo y la elusión de la seguridad."
-weight = 1
-attribute = "DES"
+attribute = "DEX"
 category = "Otro"
 +++
 
@@ -13,8 +11,7 @@ La habilidad general de **Operaciones Encubiertas** (anteriormente Sigilo y Mani
 
 ---
 
-## Ocultar
-### (DES)
+## Ocultar (DEX)
 
 Esta especialización representa la habilidad de esconder objetos de la vista o de los sensores. Mientras que **Sigilo** se usa para esconderse a uno mismo, **Ocultar** se usa para esconder objetos, como armas en el cuerpo, contrabando en un vehículo o un compartimento secreto en una habitación.
 
@@ -29,8 +26,9 @@ Un arma oculta se lleva en un lugar que normalmente no se registra o que no es f
 
 ---
 
-## Disfraz
-### (DES)
+---
+
+## Disfraz (CHA)
 
 Disfraz es la habilidad de cambiar tu apariencia para parecerte a otra persona o para mezclarte con la multitud.
 
@@ -40,8 +38,9 @@ El dado de situación de Disfraz de un héroe se modifica por el modificador de 
 
 ---
 
-## Abrir Cerraduras
-### (DES - Solo Entrenado)
+---
+
+## Abrir Cerraduras (DEX)
 
 *Esta habilidad no se puede usar sin entrenamiento.*
 
@@ -51,8 +50,9 @@ La habilidad de abrir cerraduras es inútil contra una cerradura asistida por co
 
 ---
 
-## Carterear
-### (DES - Solo Entrenado)
+---
+
+## Carterear (DEX)
 
 *Esta habilidad no se puede usar sin entrenamiento.*
 
@@ -68,18 +68,5 @@ Esta especialización permite a un héroe quitar objetos de una persona (o coloc
 
 ---
 
-## Sigilo
-### (DES)
+---
 
-Esta especialización (también conocida como Sigilo Unificado) fusiona las técnicas de esconderse, moverse sigilosamente y seguir en la sombra en un único campo de experiencia. Es el arte de permanecer sin ser detectado mientras se está quieto o en movimiento.
-
-### Esconderse (Estacionario)
-Habilidad para pasar desapercibido manteniéndose en silencio y quieto usando cobertura u oscuridad.
-- **Resultados:** El grado de éxito otorga una penalización al observador: Ordinario (+1), Bueno (+2), Asombroso (+3).
-
-### Moverse Sigilosamente (En Movimiento)
-Habilidad para moverse en silencio (hasta la mitad de la velocidad de caminar).
-- **Sorpresa:** Si tiene éxito junto a un oponente, recibe una bonificación de ataque: Ordinario (-1), Bueno (-2), Asombroso (-3).
-
-### Seguir en la Sombra (Siguiendo)
-Habilidad para seguir a un objetivo sin ser notado. Modificado por el modificador de resistencia de Voluntad del objetivo y detectado por Percepción-intuición.

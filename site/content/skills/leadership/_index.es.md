@@ -1,7 +1,5 @@
 +++
 title = "Liderazgo"
-description = "Habilidades y talentos de un líder; Coordinación de un grupo para trabajar en equipo."
-weight = 5
 attribute = "PER"
 category = "Social"
 +++
@@ -17,14 +15,32 @@ La tirada de acción de un líder proporciona una bonificación a todas las acci
 - **Bueno:** Hasta cuatro seguidores reciben la bonificación de liderazgo.
 - **Asombroso:** Hasta seis seguidores reciben la bonificación de liderazgo.
 
-## Habilidades de Especialidad
+## Habilidades de Especialidad (PER)
 
 {{% list %}}
 - **Mando
-### (Command):** Liderar a otros mediante la pura autoridad y capacidad de persuasión.
 - **Inspirar:** Liderar mediante el ejemplo; puede usarse sobre objetivos Hostiles o Combativos.
 | Resultados | Descripción |
 | :--- | :--- |
 | **Ordinario** | El éxito indica que hasta dos seguidores reciben la bonificación de liderazgo. |
 | **Bueno** | El éxito indica que hasta cuatro seguidores reciben la bonificación de liderazgo. |
 | **Asombroso** | El éxito indica que hasta seis seguidores reciben la bonificación de liderazgo. |
+
+---
+
+## Inspire (PER)
+
+**Cost: 3**
+
+*This skill can't be used untrained.*
+
+This Especialidad represents the ability to command by example. This skill can be used by military officers, elected officials, and law enforcers who also have the command specialty, but inspire is more often used by those who are trying to lead civil disobedience movements and other types of nonviolent activities.
+
+One major difference is that **Inspire can be used on targets who are Hostile or Combative**, favorably altering the attitude of the target(s) toward the user of the skill.
+
+⊗ **Increased Effect:** As a Personaje achieves higher ranks in this specialty, the bonus to his or her Leadership skill checks improves to **-1 at rank 4**, **-2 at rank 8**, and **-3 at rank 12**. (Note: This bonus is not cumulative.)
+
+---
+
+---
+

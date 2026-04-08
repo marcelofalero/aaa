@@ -1,7 +1,5 @@
 +++
 title = "Tactics"
-description = "Basic training and understanding of tactical situations."
-weight = 12
 attribute = "INT"
 category = "Combat"
 +++
@@ -21,8 +19,7 @@ A successful use of the skill provides a penalty to the opponent's next skill ch
 
 # Specialty Skills
 
-## Infantry Tactics
-### (INT)
+## Infantry tactics (INT)
 
 The specialty skill covers battlefield strategies when the main component of the battle is individual troops.
 
@@ -30,8 +27,9 @@ The specialty skill covers battlefield strategies when the main component of the
 
 ---
 
-## Space Tactics
-### (INT)
+---
+
+## Space tactics (INT)
 
 Battlefield strategies involving combat between spaceships.
 
@@ -39,9 +37,13 @@ Battlefield strategies involving combat between spaceships.
 
 ---
 
-## Vehicle Tactics
-### (INT)
+---
+
+## Vehicle tactics (INT)
 
 Battlefield strategies involving combat where vehicles other than starships (air, land, or water) are the main component.
 
 ⊗ **Increased Effect:** As a character achieves higher ranks in a Tactics specialty skill, he receives a situation die bonus for dealing with opposing forces. The bonus is **-1 step at rank 4**, **-2 steps at rank 8**, and **-3 steps at rank 12**.
+
+---
+

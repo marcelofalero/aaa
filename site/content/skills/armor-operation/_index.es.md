@@ -1,11 +1,8 @@
 +++
 title = "Operación de armadura"
-description = "Acostúmbrate a llevar armadura, anulando las penalizaciones."
-weight = 1
 attribute = "STR"
 category = "Combate"
 +++
-
 
 La armadura que es voluminosa, pesada y engorrosa dificulta al personaje que la usa. Esto se refleja en una penalización a la tirada de acción del personaje y la disminución o anulación del modificador de resistencia de Destreza del personaje. La habilidad amplia de Operación de Armadura y sus habilidades de especialidad ayudan a aliviar estas penalizaciones.
 
@@ -21,7 +18,7 @@ Para un personaje **no entrenado** en Operación de Armadura, siempre se aplica 
 
 *Nota: la penalización AP de las armaduras y escudos es acumulativa.*
 
-## Habilidades de Especialidad
+## Habilidades de Especialidad (STR)
 
 {{% list %}}
 - **Armadura de Combate:** Dominio de armaduras pesadas y potenciadas.
@@ -30,8 +27,6 @@ Para un personaje **no entrenado** en Operación de Armadura, siempre se aplica 
 - **Escudos:** Uso táctico de escudos físicos y de energía.
 
 ### Armadura de Combate
-### (STR)
-
 Esta especialidad representa el nivel de maestría en el uso de la armadura, así como el entrenamiento especializado necesario para usar armaduras potenciadas, permitiendo al personaje obtener el máximo de cualquier armadura.
 
 - **Rango 1: Operación Mejorada.** La reducción de las penalizaciones a la tirada de acción y al modificador de resistencia de Destreza pasa a ser de 2 pasos. Mejora a 3 pasos en el Rango 4, 4 pasos en el Rango 6 y 5 pasos en el Rango 10.
@@ -65,3 +60,30 @@ Se centra en el uso táctico de escudos físicos, de energía o balísticos.
 - **Rango 6: Carga Táctica.** Anula la bonificación estándar de +2 pasos que reciben los oponentes para golpear a un objetivo que carga.
 - **Rango 8: Anclaje de Retroceso.** Reduce en 1 paso la penalización del dado de situación por ráfaga (Burst) o fuego automático (Autofire) cuando se usan armas de una mano con un escudo.
 - **Rango 12: Cobertura Solapada.** Comparte la bonificación del modificador de resistencia del escudo con un aliado a menos de 2 metros contra un ataque a distancia por asalto.
+
+---
+
+## Powered armor (STR)
+
+
+
+---
+
+## Propulsion systems (INT)
+
+
+
+---
+
+## Shields (STR)
+
+
+
+---
+
+## Tactical armor (INT)
+
+
+
+---
+

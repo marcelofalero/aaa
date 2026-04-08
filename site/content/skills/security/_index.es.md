@@ -1,10 +1,7 @@
 +++
 title = "Seguridad"
-description = "Conocimientos básicos de sistemas y procedimientos de seguridad de objetos físicos o áreas definidas."
-weight = 10
 attribute = "INT"
 category = "Technical"
-untrained = true
 +++
 
 Esta habilidad amplia proporciona a un personaje conocimientos básicos sobre sistemas y procedimientos de seguridad. Se refiere a los sistemas de seguridad que protegen objetos físicos o áreas específicamente definidas. (Ten en cuenta que los sistemas del tipo que protegen contra el robo o la corrupción de datos informatizados se tratan bajo la especialidad de Ciencias de la Computación—hacking).
@@ -17,8 +14,7 @@ La complejidad de un sistema se relaciona con el tiempo que se tarda en atravesa
 
 # Habilidades de Especialidad
 
-## Protocolos de Protección
-### (INT)
+## Protocolos de Protección (INT)
 
 Esta habilidad representa el entrenamiento de un personaje en procedimientos de protección de todo tipo. Tiene dos usos principales:
 
@@ -51,11 +47,15 @@ La tirada de análisis se ve modificada por lo bien que esté asegurada el área
 
 ---
 
-## Dispositivos de Seguridad
-### (INT)
+---
+
+## Dispositivos de Seguridad (INT)
 
 Usando esta habilidad, un personaje puede intentar eludir todo tipo de seguridad mecánica o electrónica. Esto incluye desde las tradicionales cerraduras de pernos y cajas fuertes mecánicas (ganzuado) hasta sensores de movimiento de alta tecnología, cables trampa y cierres magnéticos electrónicos (maglocks). También se usa para colocar trampas, tanto de naturaleza electrónica como mecánica.
 
 Se puede realizar una tirada por asalto, y el personaje que realiza la tirada está ocupado durante todo el asalto (no son posibles otras acciones). En una situación que no tenga lugar en asaltos, la unidad de tiempo cambia de asaltos a minutos.
 
 ⊗ **Efecto Aumentado:** A medida que un personaje alcanza rangos más altos en esta especialidad, recibe una bonificación de dado de situación en las tiradas de habilidad asistidas por ella: **-1 paso en el rango 3**, **-2 pasos en el rango 6**, **-3 pasos en el rango 9** y **-4 pasos en el rango 12**.
+
+---
+

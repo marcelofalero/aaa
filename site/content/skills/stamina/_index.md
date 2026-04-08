@@ -1,7 +1,5 @@
 +++
 title = "Stamina"
-description = "Physical fortitude with regard to the effects of mortal damage and fatigue."
-weight = 2
 attribute = "CON"
 category = "Other"
 +++
@@ -34,10 +32,7 @@ When a character engages in certain fatigue-causing activities, he must make a S
 
 # Specialty Skills
 
-## Endurance
-### (CON)
-
-
+## Endurance (CON)
 
 As a character acquires ranks in the endurance skill, he becomes more able to withstand the effects of damage. For a character who has this specialty, endurance checks take the place of Stamina checks for damage and fatigue.
 
@@ -45,10 +40,9 @@ As a character acquires ranks in the endurance skill, he becomes more able to wi
 
 ---
 
-## Resist Pain
-### (CON - Trained Only)
+---
 
-
+## Resist pain (CON)
 
 *This skill can’t be used untrained.*
 
@@ -67,3 +61,6 @@ A character with this specialty may get an opportunity **once per combat scene**
 
 **Benefit Consolidation:**
 Resist pain only helps to lessen or eliminate situation penalties caused by cumulative damage. The benefit a character receives from a successful skill check can't be used to turn a penalty into a bonus. (If a character only has a +1 penalty due to damage when the check is made but the result indicates a reduction of 2 points of penalty, the character gets no immediate benefit from the extra reduction—but it might come into play if he suffers damage later in the scene). Having this skill doesn't help a character stave off dying or death results.
+
+---
+

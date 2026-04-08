@@ -1,20 +1,15 @@
 +++
 title = "Athletics"
-description = "Natural athlete abilities: strength, grace, and physical prowess."
-weight = 2
 attribute = "STR"
 category = "Other"
 +++
 
-
 This broad skill provides a character with the abilities of a natural athlete—a competent level of strength, grace, and physical prowess. This skill is used to determine the success of physical actions such as climbing a tree, jumping over a large hole, or throwing an object at a target.
+
 
 ## Specialty Skills
 
 ### Climb
-### (STR)
-
-
 This specialty skill allows a character to scale walls, ascend mountains, or otherwise climb up or over obstacles.
 
 In combat scenes, a character can climb a certain number of meters in a phase, depending on the result of a skill check:
@@ -74,3 +69,28 @@ The accuracy of a throw depends on the range and the degree of success achieved 
 | **Ordinary** | On target | Miss by 2m | Miss by 4m |
 | **Good** | On target | On target | Miss by 2m |
 | **Amazing** | On target | Always on target | On target |
+
+## Climb (STR)
+
+
+
+---
+
+## Jump (STR)
+
+
+
+---
+
+## Swim (STR)
+
+
+
+---
+
+## Throw (STR)
+
+
+
+---
+

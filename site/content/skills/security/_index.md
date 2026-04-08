@@ -1,9 +1,7 @@
 +++
 title = "Security"
-description = "Basic knowledge of security systems and procedures for physical objects or defined areas."
-weight = 10
 attribute = "INT"
-category = "Technical"
+category = "Other"
 +++
 
 This broad skill provides a character with basic knowledge of security systems and procedures. This pertains to security systems that protect physical objects or specifically defined areas. (Note that systems of the sort that protect the theft or corruption of computerized data are dealt with under the Computer Science-hacking specialty). 
@@ -16,8 +14,7 @@ The complexity of a system relates to how time-consuming it is to get through an
 
 # Specialty Skills
 
-## Protection Protocols
-### (INT)
+## Protection protocols (INT)
 
 **Cost: 3**
 
@@ -54,8 +51,9 @@ The analysis check is modified by how well the area is secured:
 
 ---
 
-## Security Devices
-### (INT)
+---
+
+## Security devices (INT)
 
 **Cost: 4**
 
@@ -64,3 +62,6 @@ Using this skill, a character can attempt to bypass all types of mechanical or e
 One check can be made per round, and the character making the check is busy for the entire round (no other actions possible). In a situation that isn't taking place in rounds, the time unit changes from rounds to minutes.
 
 ⊗ **Increased Effect:** As a character achieves higher ranks in this specialty, he receives a situation die bonus on skill checks assisted by it: **-1 step at rank 3**, **-2 steps at rank 6**, **-3 steps at rank 9**, and **-4 steps at rank 12**.
+
+---
+

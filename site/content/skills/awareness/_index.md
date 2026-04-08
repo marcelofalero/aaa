@@ -1,10 +1,8 @@
 +++
 title = "Awareness"
-description = "A hero's powers of observation, perception, and intuition."
 attribute = "WIL"
 category = "Other"
 +++
-
 
 **Free to fraal, human, mechalus, sesheyan, t'sa, and weren heroes.**
 
@@ -18,8 +16,7 @@ Some pieces of sensor equipment may provide benefits to a hero’s Awareness ski
 
 ---
 
-## Intuition
-### (WIL)
+## Intuition (WIL)
 
 This specialty skill represents a hero's natural instincts—his ability to sense danger when no obvious signs are evident, to avoid surprise, or to make an intuitive leap of logic without the support of hard facts. It's the ability to make a best guess in a given situation.
 
@@ -29,8 +26,9 @@ When a hero wants to make an intuitive "best guess,” the Gamemaster may allow 
 
 ---
 
-## Perception
-### (WIL)
+---
+
+## Perception (WIL)
 
 This specialty skill represents a hero's alertness and powers of observation—the hero notices something either consciously or on a subliminal level. While intuition is a feeling or unexplainable sense, perception works on signs that can be spotted by normal senses—a broken twig lying in a path, the click of a gun’s safety being released, the scent of familiar perfume in a crowded bar, a whisper in the wind. This skill can help determine a hero’s ability to spot signs of trouble, perceive the true meaning in an authority figure's comment, or notice a subtle clue poking out of a pile of leaves.
 
@@ -69,3 +67,18 @@ Possible powers:
 Each power is subject to its own limitations and range
 
 Characters capable of using the **Clairvoyance** power can use it to trace the source of the psionic event, applying the same bonus to their Clairvoyance skill check (0, -1, or -3 steps).
+
+---
+
+## Psionic Sense (WIL)
+
+
+
+---
+
+## Psionic Sense (WIL)
+
+
+
+---
+

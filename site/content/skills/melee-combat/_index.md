@@ -1,11 +1,8 @@
 +++
 title = "Melee Combat"
 attribute = "STR"
-description = "Baseline proficiency for engaging in physical combat at personal range."
 category = "Combat"
-favored_by = ["Combat Spec", "Free Agent"]
 +++
-
 
 Melee Combat represents the baseline proficiency of any physical combatant engaging in a struggle at personal range. It covers the essential understanding of reach, timing, and the efficient transfer of kinetic force through the body or a handheld tool. A character trained in this broad skill possesses an inherent grasp of spatial awareness and targeting, allowing them to identify vulnerabilities in an opponent while maintaining their own center of gravity and weapon posture during an exchange.
 
@@ -19,9 +16,39 @@ The base damage for an unarmed attack depends on the size of the character; for 
 
 # Specialty Skills
 
-## Defensive Martial Arts
-### (DEX - Trained Only)
+## Blade (STR)
 
+As a character improves his ability in the blade specialty skill, he gains rank benefits as described below. Note: These benefits only apply when the character is using a weapon covered by this skill.
+
+⊗ Resistance Modifier: At higher ranks, the skill provides an improvement to a character's Strength resistance modifier. It improves by +1 at rank 4, by +1 again at rank 8, and by +1 again at rank 12. This increase doesn't stack with similar bonuses provided by other melee combat specialty skills.
+
+▶ Reaction Parry: When a character reaches rank 4, he can attempt to parry whenever a melee or unarmed attack is used against him. The parry attempt uses up the character's next available action.
+
+▶ Double-Strike: When a character reaches skill rank 6, he learns to make a double-strike against a target with a successful skill check. The player rolls one control die and two situation dice to make his double-strike attack. The first situation die is the base modifier needed to make an attack with a +1 step penalty; the second situation die is the base modifier with a +2 step penalty.
+
+▶ Multistrike: When a character reaches skill rank 9, he learns to make multiple attacks in a single phase. The character can strike with a melee weapon three times in a phase. These attacks can be directed at a single target or at up to three separate targets within two meters of the character.
+
+---
+
+---
+
+## Blunt (STR)
+
+As a character improves his ability in the blunt specialty skill, he gains rank benefits as described below. Note: These benefits only apply when the character is using a weapon covered by this skill.
+
+⊗ Resistance Modifier: At higher ranks, the skill provides an improvement to a character's Strength resistance modifier. It improves by +1 at rank 4, by +1 again at rank 8, and by +1 again at rank 12. This increase doesn't stack with similar bonuses provided by other melee combat specialty skills.
+
+▶ Reaction Parry: When a character reaches rank 4, he can attempt to parry whenever a melee or unarmed attack is used against him. The parry attempt uses up the character's next available action.
+
+▶ Double-Strike: When a character reaches skill rank 6, he learns to make a double-strike against a target with a successful skill check. The player rolls one control die and two situation dice. The first situation die is the base modifier with a +1 step penalty; the second situation die is the base modifier with a +2 step penalty.
+
+▶ Multistrike: When a character reaches skill rank 9, he learns to make multiple attacks in a single phase. The character can strike with a melee weapon three times in a phase. These attacks can be directed at a single target or at up to three separate targets within two meters of the character.
+
+---
+
+---
+
+## Defensive Martial Arts (STR)
 
 As a character improves his ability in the defensive martial arts specialty skill, he gains rank benefits as described below. Note: These benefits only apply when the character is fighting unarmed or with appropriate martial arts implements.
 
@@ -45,9 +72,9 @@ How we do things reaches rank 10, All Out Attacks that miss him can be redirecte
 
 ---
 
-## Power Martial Arts
-### (STR - Trained Only)
+---
 
+## Power Martial Arts (STR)
 
 As a character improves his ability in the power martial arts specialty skill, he gains rank benefits as described below. Note: These benefits only apply when the character is fighting unarmed or with appropriate martial arts implements.
 
@@ -75,41 +102,9 @@ Every additional attacker who takes part in the same overpowering attempt provid
 
 ---
 
-## Blade
-### (STR)
-
-
-As a character improves his ability in the blade specialty skill, he gains rank benefits as described below. Note: These benefits only apply when the character is using a weapon covered by this skill.
-
-⊗ Resistance Modifier: At higher ranks, the skill provides an improvement to a character's Strength resistance modifier. It improves by +1 at rank 4, by +1 again at rank 8, and by +1 again at rank 12. This increase doesn't stack with similar bonuses provided by other melee combat specialty skills.
-
-▶ Reaction Parry: When a character reaches rank 4, he can attempt to parry whenever a melee or unarmed attack is used against him. The parry attempt uses up the character's next available action.
-
-▶ Double-Strike: When a character reaches skill rank 6, he learns to make a double-strike against a target with a successful skill check. The player rolls one control die and two situation dice to make his double-strike attack. The first situation die is the base modifier needed to make an attack with a +1 step penalty; the second situation die is the base modifier with a +2 step penalty.
-
-▶ Multistrike: When a character reaches skill rank 9, he learns to make multiple attacks in a single phase. The character can strike with a melee weapon three times in a phase. These attacks can be directed at a single target or at up to three separate targets within two meters of the character.
-
 ---
 
-## Blunt
-### (STR)
-
-
-As a character improves his ability in the blunt specialty skill, he gains rank benefits as described below. Note: These benefits only apply when the character is using a weapon covered by this skill.
-
-⊗ Resistance Modifier: At higher ranks, the skill provides an improvement to a character's Strength resistance modifier. It improves by +1 at rank 4, by +1 again at rank 8, and by +1 again at rank 12. This increase doesn't stack with similar bonuses provided by other melee combat specialty skills.
-
-▶ Reaction Parry: When a character reaches rank 4, he can attempt to parry whenever a melee or unarmed attack is used against him. The parry attempt uses up the character's next available action.
-
-▶ Double-Strike: When a character reaches skill rank 6, he learns to make a double-strike against a target with a successful skill check. The player rolls one control die and two situation dice. The first situation die is the base modifier with a +1 step penalty; the second situation die is the base modifier with a +2 step penalty.
-
-▶ Multistrike: When a character reaches skill rank 9, he learns to make multiple attacks in a single phase. The character can strike with a melee weapon three times in a phase. These attacks can be directed at a single target or at up to three separate targets within two meters of the character.
-
----
-
-## Powered
-### (DEX - Trained only)
-
+## Powered (STR)
 
 As a character improves his ability in the powered specialty skill, he gains rank benefits as described below. Note: These benefits only apply when the character is using a weapon covered by this skill.
 
@@ -122,3 +117,6 @@ Due to the inherent complexity of powered weapons they are more fragile than the
 ▶ Double-Strike: When a character reaches skill rank 6, he learns to make a double-strike against a target with a successful skill check. The player rolls one control die and two situation dice. The first situation die is the base modifier with a +1 step penalty; the second situation die is the base modifier with a +2 step penalty.
 
 ▶ Multistrike: When a character reaches skill rank 9, he learns to make multiple attacks in a single phase. The character can strike with a melee weapon three times in a phase. These attacks can be directed at a single target or at up to three separate targets within two meters of the character.
+
+---
+

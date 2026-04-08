@@ -1,7 +1,5 @@
 +++
 title = "Conocimiento"
-description = "Entrenamiento general en diversos temas; capacidad de recordar e investigar información."
-weight = 4
 attribute = "INT"
 category = "Técnica"
 +++
@@ -29,8 +27,7 @@ Para una comprobación de la habilidad de Conocimiento, el Director de Juego det
 
 # Habilidades de Especialidad
 
-## Operación de Computadoras
-### (INT - Solo Entrenados)
+## Operación de Computadoras (INT)
 
 *Esta habilidad no puede usarse sin entrenamiento.*
 
@@ -38,8 +35,9 @@ Esta habilidad de especialidad permite a un personaje mejorar su capacidad para 
 
 ---
 
-## Deducir
-### (INT)
+---
+
+## Deducir (INT)
 
 Con esta habilidad de especialidad, un personaje puede perfeccionar sus habilidades para usar la razón y la lógica para llegar a una conclusión. Los detectives e investigadores utilizan Deducir para armar pistas, o los científicos e ingenieros para descubrir la respuesta a un problema relacionado con sus habilidades.
 
@@ -47,8 +45,9 @@ Con esta habilidad de especialidad, un personaje puede perfeccionar sus habilida
 
 ---
 
-## Primeros Auxilios
-### (INT - Solo Entrenados)
+---
+
+## Primeros Auxilios (INT)
 
 *Esta habilidad no puede usarse sin entrenamiento.*
 
@@ -67,15 +66,16 @@ La habilidad de primeros auxilios se puede usar para curar heridas, aunque se re
 - **Fallo Crítico:** Si se usa un paquete de traumatología, el paciente sufre 1 herida en lugar de curarse, y el paquete se arruina.
 
 ### Agonizante (Dying)
-Un personaje con cualquier cantidad de daño mortal se considera agonizante. Un personaje que usa un kit de primeros auxilios o un paquete de traumatología y realiza una comprobación de habilidad de primeros auxilios exitosa puede **estabilizar el daño mortal**, eliminando la necesidad de que el personaje realice una comprobación de Resistencia–aguante al final de la escena actual. (Nota: la cirugía sigue siendo necesaria para restaurar la salud de un personaje agonizante).
+Un personaje con cualquier cantidad de daño Mortal se considera agonizante. Un personaje que usa un kit de primeros auxilios o un paquete de traumatología y realiza una comprobación de habilidad de primeros auxilios exitosa puede **estabilizar el daño Mortal**, eliminando la necesidad de que el personaje realice una comprobación de Resistencia–aguante al final de la escena actual. (Nota: la cirugía sigue siendo necesaria para restaurar la salud de un personaje agonizante).
 
 ### Beneficios de Rango
 ⊗ **Primeros Auxilios Mejorados:** A medida que un personaje alcanza rangos de habilidad más altos, se vuelve más competente al brindar ayuda a los pacientes lesionados. Esto reduce la penalización por dado de situación en **1 paso al rango 4**, **2 pasos al rango 8** y **3 pasos al rango 12**.
 
 ---
 
-## Idioma, Habilidad Específica
-### (INT - Solo Entrenados)
+---
+
+## Idioma, Habilidad Específica (INT)
 
 *Esta habilidad no puede usarse sin entrenamiento.*
 
@@ -85,10 +85,25 @@ Esta habilidad de especialidad le da a un personaje cierta fluidez en un idioma 
 ⊗ **Comunicación Mejorada:** A medida que un personaje alcanza rangos de habilidad más altos en un idioma específico, mejora en el empleo de otras habilidades que involucran el uso del lenguaje (como las habilidades de encuentro y algunas especialidades de Creatividad). Este beneficio proporciona una reducción a las penalizaciones por dado de situación: **1 paso al rango 4**, **2 pasos al rango 8** y **3 pasos al rango 12**. Este beneficio solo reduce una penalización; nunca proporciona un bono.
 ---
 
-## Psiónica
-### (INT - Solo Entrenados)
+---
 
+## Psiónica (INT)
 
 *Esta habilidad no puede usarse sin entrenamiento.*
 
 Esta habilidad le da a un personaje un conocimiento práctico de las habilidades psiónicas, tal vez incluso más allá de lo que entiende su cultura como un todo. El grado de éxito logrado en una comprobación de habilidad se relaciona con la calidad o cantidad de información disponible o comprendida por el personaje.
+
+---
+
+## Street knowledge (WIL)
+
+
+
+---
+
+## Technical Knowledge (INT)
+
+
+
+---
+

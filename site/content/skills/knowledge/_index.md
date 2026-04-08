@@ -1,7 +1,5 @@
 +++
 title = "Knowledge"
-description = "General training in various topics; ability to recall and research information."
-weight = 4
 attribute = "INT"
 category = "Technical"
 +++
@@ -29,9 +27,24 @@ For a Knowledge skill check, the Gamemaster determines which category the inform
 
 # Specialty Skills
 
-## Computer Operation
-### (INT - Trained Only)
 
+## Language, Specific Skill
+
+*This skill can't be used untrained.*
+
+This specialty skill gives a character a certain amount of fluency in a specific language. Every character begins with **Rank 3** in his or her native language. Lower ranks indicate a crude familiarity; higher ranks improve the character's vocabulary and comprehension of obscure or complicated passages.
+
+### Rank Benefits
+⊗ **Improved Communication:** As a character achieves higher skill ranks in a specific language, he or she gets better at employing other skills that involve language use (such as encounter skills and some Creativity specialties).  This benefit provides a reduction to situation die penalties: **1 step at rank 4**, **2 steps at rank 8**, and **3 steps at rank 12**. This benefit only reduces a penalty; it never provides a bonus.
+---
+
+## Psionics
+
+*This skill can't be used untrained.*
+
+This skill gives a character a working knowledge of psionic abilities, perhaps even beyond what the character's culture understands as a whole. The degree of success achieved on a skill check relates to the quality or quantity of information that is available to or understood by the character.
+
+## Computer Operation (INT)
 
 *This skill can't be used untrained.*
 
@@ -39,9 +52,9 @@ This specialty skill allows a character to improve his ability to make computers
 
 ---
 
-## Deduce
-### (INT)
+---
 
+## Deduce (INT)
 
 With this specialty skill, a character can hone his abilities to use reason and logic to reach a conclusion. Deduce is used by detectives and investigators to piece together clues, or by scientists and engineers to discover the answer to a skill-related problem.
 
@@ -49,9 +62,9 @@ With this specialty skill, a character can hone his abilities to use reason and 
 
 ---
 
-## First Aid
-### (INT - Trained Only)
+---
 
+## First Aid (INT)
 
 *This skill can't be used untrained.*
 
@@ -77,22 +90,29 @@ A character with any amount of mortal damage is considered to be dying. A charac
 
 ---
 
-## Language, Specific Skill
-### (INT - Trained Only)
-
-
-*This skill can't be used untrained.*
-
-This specialty skill gives a character a certain amount of fluency in a specific language. Every character begins with **Rank 3** in his or her native language. Lower ranks indicate a crude familiarity; higher ranks improve the character's vocabulary and comprehension of obscure or complicated passages.
-
-### Rank Benefits
-⊗ **Improved Communication:** As a character achieves higher skill ranks in a specific language, he or she gets better at employing other skills that involve language use (such as encounter skills and some Creativity specialties).  This benefit provides a reduction to situation die penalties: **1 step at rank 4**, **2 steps at rank 8**, and **3 steps at rank 12**. This benefit only reduces a penalty; it never provides a bonus.
 ---
 
-## Psionics
-### (INT - Trained Only)
+## Language (INT)
 
 
-*This skill can't be used untrained.*
 
-This skill gives a character a working knowledge of psionic abilities, perhaps even beyond what the character's culture understands as a whole. The degree of success achieved on a skill check relates to the quality or quantity of information that is available to or understood by the character.
+---
+
+## Medical Knowledge (INT)
+
+
+
+---
+
+## Street knowledge (WIL)
+
+
+
+---
+
+## Technical Knowledge (INT)
+
+
+
+---
+

@@ -1,9 +1,7 @@
 +++
 title = "Entertainment"
-description = "Proficiency in the performing arts; talent and technical knowledge."
-weight = 3
 attribute = "PER"
-category = "Social"
+category = "Other"
 +++
 
 This broad skill represents a character's proficiency in the performing arts. A character with this skill is competent enough to perform amateur theater or play at the equivalent of a high school dance, while the specialty skills allow a character to become a first-rate performer—or even a star.
@@ -30,8 +28,34 @@ Possible combinations of skills to which this benefit could apply include act or
 
 # Specialty Skills
 
-## Act
-### (PER)
+
+## Musical Instrument [Specific]
+
+*This skill can't be used untrained.*
+
+The musical instrument skill represents a talent for playing a particular musical instrument and reading music. When a character purchases this skill, he selects a specific musical instrument. If he wants to be skilled with more than one instrument, he must purchase and improve each specialty skill separately.
+
+Musical instruments include drums, guitars, violins, flutes, saxophones, pianos, and any other instrument the Gamemaster determines exists in his campaign.
+
+#### Entertainment Skill Rank Benefit
+
+⊗ **Enhance Another Skill:** Entertainment specialty skills can be combined with certain other skills for greater effect. The higher a character's skill rank in the Entertainment skill, the better his chance of succeeding at using another skill in combination: At rank 1, he receives a **-1 bonus** to the check for the other skill; at rank 4 the bonus is **-2**; at rank 8 the bonus is **-3**; and at rank 12 the bonus is **-4**.
+
+Possible combinations of skills to which this benefit could apply include act or dance with Interaction—seduce; dance with **Covert Ops—pickpocket** or Acrobatics; sing with Interaction—taunt; and musical instrument with Leadership—inspire. If you have other ideas for how an Entertainment skill can be used in this way, talk them over with your Gamemaster.
+
+---
+
+## Sing
+
+Sing represents a talent for carrying a note and singing songs. A character with this skill is a trained vocalist with a strong and melodious voice. The greater a character's skill rank, the greater the caliber and quality of the performance he can give.
+
+#### Entertainment Skill Rank Benefit
+
+⊗ **Enhance Another Skill:** Entertainment specialty skills can be combined with certain other skills for greater effect. The higher a character's skill rank in the Entertainment skill, the better his chance of succeeding at using another skill in combination: At rank 1, he receives a **-1 bonus** to the check for the other skill; at rank 4 the bonus is **-2**; at rank 8 the bonus is **-3**; and at rank 12 the bonus is **-4**.
+
+Possible combinations of skills to which this benefit could apply include act or dance with Interaction—seduce; dance with Covert Ops—pickpocket or Acrobatics; sing with Interaction—taunt; and musical instrument with Leadership—inspire. If you have other ideas for how an Entertainment skill can be used in this way, talk them over with your Gamemaster.
+
+## Act (PER)
 
 This specialty skill represents a talent for playing a part or assuming a dramatic role. It also covers impersonation and the skills and techniques of the stage and screen.
 
@@ -51,8 +75,9 @@ Possible combinations of skills to which this benefit could apply include act or
 
 ---
 
-## Dance
-### (PER)
+---
+
+## Dance (PER)
 
 The dance skill represents a talent for moving rhythmically to music by following set steps and gestures or by improvisation. It also covers the technical aspects of performance dance, such as choreography and the knowledge of various popular and cultural dance techniques.
 
@@ -66,30 +91,11 @@ Possible combinations of skills to which this benefit could apply include act or
 
 ---
 
-## Musical Instrument [Specific]
-### (PER - Trained Only)
+---
 
-*This skill can't be used untrained.*
+## Musical instrument (PER)
 
-The musical instrument skill represents a talent for playing a particular musical instrument and reading music. When a character purchases this skill, he selects a specific musical instrument. If he wants to be skilled with more than one instrument, he must purchase and improve each specialty skill separately.
 
-Musical instruments include drums, guitars, violins, flutes, saxophones, pianos, and any other instrument the Gamemaster determines exists in his campaign.
-
-#### Entertainment Skill Rank Benefit
-
-⊗ **Enhance Another Skill:** Entertainment specialty skills can be combined with certain other skills for greater effect. The higher a character's skill rank in the Entertainment skill, the better his chance of succeeding at using another skill in combination: At rank 1, he receives a **-1 bonus** to the check for the other skill; at rank 4 the bonus is **-2**; at rank 8 the bonus is **-3**; and at rank 12 the bonus is **-4**.
-
-Possible combinations of skills to which this benefit could apply include act or dance with Interaction—seduce; dance with **Covert Ops—pickpocket** or Acrobatics; sing with Interaction—taunt; and musical instrument with Leadership—inspire. If you have other ideas for how an Entertainment skill can be used in this way, talk them over with your Gamemaster.
 
 ---
 
-## Sing
-### (PER)
-
-Sing represents a talent for carrying a note and singing songs. A character with this skill is a trained vocalist with a strong and melodious voice. The greater a character's skill rank, the greater the caliber and quality of the performance he can give.
-
-#### Entertainment Skill Rank Benefit
-
-⊗ **Enhance Another Skill:** Entertainment specialty skills can be combined with certain other skills for greater effect. The higher a character's skill rank in the Entertainment skill, the better his chance of succeeding at using another skill in combination: At rank 1, he receives a **-1 bonus** to the check for the other skill; at rank 4 the bonus is **-2**; at rank 8 the bonus is **-3**; and at rank 12 the bonus is **-4**.
-
-Possible combinations of skills to which this benefit could apply include act or dance with Interaction—seduce; dance with Covert Ops—pickpocket or Acrobatics; sing with Interaction—taunt; and musical instrument with Leadership—inspire. If you have other ideas for how an Entertainment skill can be used in this way, talk them over with your Gamemaster.

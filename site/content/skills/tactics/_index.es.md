@@ -1,7 +1,5 @@
 +++
 title = "Táctica"
-description = "Entrenamiento básico y comprensión de situaciones tácticas."
-weight = 12
 attribute = "INT"
 category = "Combate"
 +++
@@ -21,8 +19,7 @@ El uso exitoso de la habilidad proporciona una penalización a la siguiente comp
 
 # Habilidades de Especialidad
 
-## Táctica de Infantería
-### (INT)
+## Táctica de Infantería (INT)
 
 Esta habilidad de especialidad cubre las estrategias de campo de batalla cuando el componente principal de la batalla son las tropas individuales.
 
@@ -30,8 +27,9 @@ Esta habilidad de especialidad cubre las estrategias de campo de batalla cuando 
 
 ---
 
-## Táctica Espacial
-### (INT)
+---
+
+## Táctica Espacial (INT)
 
 Estrategias de campo de batalla que involucran el combate entre naves espaciales.
 
@@ -39,8 +37,9 @@ Estrategias de campo de batalla que involucran el combate entre naves espaciales
 
 ---
 
-## Táctica de Vehículos
-### (INT)
+---
+
+## Táctica de Vehículos (INT)
 
 Estrategias de campo de batalla que involucran combate donde los vehículos que no son naves espaciales (aire, tierra o agua) son el componente principal.
 
@@ -57,3 +56,6 @@ Estrategias de campo de batalla que involucran combate donde los vehículos que 
 | **Oponente familiar** | -1 paso |
 | **Oponente desconocido (misma especie)** | +1 paso |
 | **Oponente desconocido (especie diferente)** | +2 pasos |
+
+---
+

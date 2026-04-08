@@ -1,7 +1,5 @@
 +++
 title = "Cultura"
-description = "Capacidad para comprender e interactuar con diferentes culturas y especies."
-weight = 1
 attribute = "PER"
 category = "Social"
 +++
@@ -15,7 +13,7 @@ Cuando se utiliza en un contexto interactivo, Cultura es una habilidad de encuen
 - **Cotidiano (origen, ocupación):** sin modificador
 - **Complejo (amenazas, ideas esotéricas):** penalización de +1 o más
 
-## Habilidades de Especialidad
+## Habilidades de Especialidad (PER)
 
 {{% list %}}
 - **Cultura Alienígena [Específica]:** Proficiencia con una sociedad alienígena en particular.
@@ -37,8 +35,6 @@ Para cada compra separada de esta especialidad, un héroe selecciona una cultura
 
 ### Cultura alienígena [específica]
 Esta habilidad de especialidad
-### (también conocida como Diplomacia) permite a un héroe mejorar su capacidad para llegar a acuerdos y entendimientos con representantes de diferentes naciones, culturas, subculturas y especies.
-
 En general, entra en juego cuando un héroe quiere llegar a un acuerdo. La habilidad solo se puede utilizar en un objetivo concreto si el héroe tiene al menos rango 1 en la habilidad de Etiqueta específica que pertenece a la cultura del objetivo.
 | Resultados | Descripción |
 | :--- | :--- |
@@ -60,3 +56,24 @@ Al completarla con éxito, el héroe gana inmediatamente el rango 1 en las habil
 | **Ordinario** | El éxito indica progresos hacia el objetivo. |
 | **Bueno** | El éxito indica progresos hacia el objetivo. |
 | **Asombroso** | El éxito indica progresos hacia el objetivo. |
+
+---
+
+## Etiquette [spec] (PER)
+
+
+
+---
+
+## First Encounter (PER)
+
+*This skill can't be used untrained.*
+
+This Especialidad represents a Personaje's training in the theories and protocols of making first contact with a previously unknown culture. With this skill, a Personaje can assess the mental, physical, and technological capabilities of an unfamiliar species, begin the process of establishing communications and learning each other's language, and make a preliminary study of the strangers' cultural and societal habits.
+
+A first encounter skill check is always a complex chore, and may take days, weeks, or even months to successfully complete. The Gamemaster will assign the number of successes necessary to complete the skill check based on the extent of difference between the two cultures involved. Also, the Gamemaster will determine the initial attitude of the target creature(s) toward the Personaje, and may inform the Personaje of changes in that attitude that take place while the complex skill check is under way.
+
+Upon the successful completion of the first encounter skill check, the Personaje immediately gains rank 1 in the Knowledge—language and Culture—etiquette skills that relate to the formerly unknown culture.
+
+---
+

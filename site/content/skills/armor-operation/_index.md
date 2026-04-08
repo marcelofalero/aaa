@@ -1,11 +1,8 @@
 +++
 title = "Armor Operation"
-description = "Become accustomed to wearing armor, negating penalties."
-weight = 1
 attribute = "STR"
-category = "Combat"
+category = "Other"
 +++
-
 
 Armor that's bulky, heavy, and cumbersome hinders the character using it. This is reflected by a penalty to the character's action check and the lessening or negating of a character's Dexterity resistance modifier. The Armor Operation broad skill and its specialty skills help to alleviate these penalties.
 
@@ -21,11 +18,10 @@ For a character **untrained** in Armor Operation, an action check and Dexterity 
 
 *Note: the AP penalty of armors and shields is cumulative.*
 
+
 ## Specialty Skills
 
 ### Combat Armor
-### (STR)
-
 This specialty represent the level of mastery in the use of armor, as well as the specialized training needed to use powered armors, allowing the character to obtain the most of any armor.
 
 Rank 1: Improved Operation. The reduction to action check and Dexterity resistance modifier penalties becomes 2 steps. This improves to 3 steps at Rank 4, 4 steps at Rank 6, and 5 steps at Rank 10.
@@ -71,3 +67,34 @@ Rank 6: Tactical Charge. Negates the standard +2 step bonus opponents receive to
 Rank 8: Recoil Anchor. Reduce the situation die penalty for Burst or Autofire by 1 step when using one-handed weapons with a shield.
 
 Rank 12: Overlapping Coverage. Share the shield's resistance modifier bonus with an ally within 2 meters against one ranged attack per round.
+
+## Combat armor (STR)
+
+
+
+---
+
+## Powered armor (STR)
+
+
+
+---
+
+## Propulsion systems (INT)
+
+
+
+---
+
+## Shields (STR)
+
+
+
+---
+
+## Tactical armor (INT)
+
+
+
+---
+

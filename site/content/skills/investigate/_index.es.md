@@ -1,7 +1,5 @@
 +++
 title = "Investigar"
-description = "Formación y capacidad para examinar las cosas sistemáticamente mediante la observación y la indagación."
-weight = 5
 attribute = "WIL"
 category = "Otros"
 +++
@@ -37,8 +35,7 @@ Esta habilidad general proporciona a un héroe el entrenamiento y la capacidad d
 
 # Habilidades de Especialidad
 
-## Interrogar
-### (WIL)
+## Interrogar (WIL)
 
 La habilidad de Interrogar representa la capacidad de un héroe para hacer las preguntas correctas con el fin de obtener información de un personaje objetivo específico. El modificador de resistencia de Voluntad de ese personaje es su protección frente a las preguntas incisivas de un interrogador experto.
 
@@ -46,8 +43,9 @@ La habilidad cubre el tipo de interrogatorio que podría llevar a cabo un period
 
 ---
 
-## Buscar
-### (WIL)
+---
+
+## Buscar (WIL)
 
 Esta habilidad de especialidad permite a un héroe desarrollar su ojo para los detalles y su capacidad para detectar objetos ocultos. Buscar se utiliza cuando un héroe quiere buscar pistas en un área específica, encontrar un objeto o persona en particular que sabe que está en el área, o buscar objetos importantes de la manera más rápida y sistemática posible.
 
@@ -55,11 +53,15 @@ El grado de éxito alcanzado en una tirada de habilidad determina lo que el hér
 
 ---
 
-## Rastrear
-### (WIL)
+---
+
+## Rastrear (WIL)
 
 Esta habilidad de especialidad permite a un héroe mejorar su capacidad para seguir a una persona, criatura o vehículo terrestre observando los rastros que deja a su paso.
 
 Los rastros pueden ser cualquier cosa, desde huellas reales hasta señales reveladoras como ramas rotas, basura desechada, material de desecho obvio u otra evidencia de paso. Un rastreador puede no estar siguiendo necesariamente evidencia física; puede estar usando habilidades detectivescas, técnicas de entrevista, sensores u otro equipo especial.
 
 Rastrear se utiliza para localizar y seguir un rastro, ya sea físico o de información. Una vez que un héroe detecta a su presa, se puede usar **Sigilo—seguir en la sombra** para seguirla de cerca sin ser detectado.
+
+---
+

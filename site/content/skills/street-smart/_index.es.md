@@ -1,7 +1,5 @@
 +++
 title = "Calle inteligente"
-description = "Conocimiento de protocolos para el tratamiento de pandillas, organizaciones criminales y mercancías ilegales."
-weight = 7
 attribute = "WIL"
 category = "Other"
 +++
@@ -17,8 +15,11 @@ Los modificadores de situación dependen del objeto o servicio buscado, su legal
 - **Bueno:** penalización de +2.
 - **Asombroso:** penalización de +3.
 
-## Habilidades de Especialidad
+## Habilidades de Especialidad (WIL)
 
 {{% list %}}
 - **Elementos Criminales:** Establecer contacto y tratar con el crimen organizado, criminales profesionales y pandillas.
 - **Conocimiento de la Calle:** Familiaridad con el funcionamiento interno de una organización o área geográfica en particular.
+
+---
+

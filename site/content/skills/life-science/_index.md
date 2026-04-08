@@ -1,11 +1,8 @@
 +++
 title = "Life Science"
-description = "Training in life sciences, including biology, botany, genetics, and zoology."
-weight = 6
 attribute = "INT"
 category = "Technical"
 +++
-
 
 This broad skill represents a character's training in the life sciences. Skill checks involving this skill are made the same as Knowledge skill checks.
 
@@ -13,9 +10,8 @@ This broad skill represents a character's training in the life sciences. Skill c
 
 # Specialty Skills
 
-## Biology, Botany, Zoology
-### (INT - Trained Only)
 
+## Biology, Botany, Zoology
 
 *This skill can't be used untrained.*
 
@@ -28,9 +24,27 @@ These specialty skills must be purchased separately.
 
 ---
 
-## Genetics
-### (INT - Trained Only)
+## Psionics
 
+*This skill can't be used untrained.*
+
+This specialty skill represents the scientific study of the biological and biochemical nature of psionic abilities.
+
+⊗ **Increased Effect:** A character receives a **-1 bonus** at rank 3, **-2** at rank 6, **-3** at rank 9, and **-4** at rank 12 on certain other skill checks that can be assisted by this specialty. These skills include Telepathy—drain, Bio-Kinesis—bioluminescent, and Bio-Kinesis—bioweapon.
+
+## Biology (INT)
+
+
+
+---
+
+## Botany (INT)
+
+
+
+---
+
+## Genetics (INT)
 
 *This skill can't be used untrained.*
 
@@ -40,9 +54,9 @@ Genetics is the study of heredity and genes, forming the basis of genetic engine
 
 ---
 
-## Xenology
-### (INT - Trained Only)
+---
 
+## Xenology (INT)
 
 *This skill can't be used untrained.*
 
@@ -51,12 +65,11 @@ Xenology is the study of animal life forms of an alien nature and can be used to
 ⊗ **Increased Effect:** A character receives a **-1 bonus** at rank 3, **-2** at rank 6, **-3** at rank 9, and **-4** at rank 12 on certain other skill checks that can be assisted by this specialty. These skills include Survival (in alien environments), Animal Handling (with alien creatures), and Medical Science—xenomedicine.
 ---
 
-## Psionics
-### (INT - Trained Only)
+---
+
+## Zoology (INT)
 
 
-*This skill can't be used untrained.*
 
-This specialty skill represents the scientific study of the biological and biochemical nature of psionic abilities.
+---
 
-⊗ **Increased Effect:** A character receives a **-1 bonus** at rank 3, **-2** at rank 6, **-3** at rank 9, and **-4** at rank 12 on certain other skill checks that can be assisted by this specialty. These skills include Telepathy—drain, Bio-Kinesis—bioluminescent, and Bio-Kinesis—bioweapon.

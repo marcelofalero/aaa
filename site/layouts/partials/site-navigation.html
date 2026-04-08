@@ -13,9 +13,8 @@
       </a>
     </div>
 
-    <div class="flex items-center flex-auto justify-end">
       {{ if .Site.Menus.main }}
-      <ul class="list pl0 mv0 flex flex-wrap mr-auto">
+      <ul class="list pl0 mv0 flex flex-wrap mr3 items-center">
         {{ range .Site.Menus.main }}
         <li class="ml3 f5 fw4">
           <a class="hover-neon-cyan silver no-underline flex items-center transition-all" href="{{ .URL }}"
@@ -26,6 +25,15 @@
         {{ end }}
       </ul>
       {{ end }}
-    </div>
+
+      <!-- Search Input -->
+      <div class="relative flex items-center search-container" style="min-width: 250px;">
+        <input type="text" id="search-input" placeholder="Search library..." 
+               class="bg-transparent neon-border-cyan silver f5 ph3 pv2 w-100 outline-0 transition-all focus-neon-glow"
+               autocomplete="off">
+        <div id="search-results" class="absolute top-100 left-0 w-100 mt2 bg-black-90 neon-border-cyan z-max hidden overflow-y-auto" style="max-height: 400px;">
+          <!-- Results will be injected here -->
+        </div>
+      </div>
   </div>
 </nav>
