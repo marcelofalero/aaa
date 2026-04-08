@@ -1,7 +1,7 @@
 +++
 title = "Acrobacia"
 attribute = "DEX"
-category = "Otros"
+category = "Other"
 +++
 
 Esta habilidad amplia proporciona a un personaje entrenamiento básico en acrobacias. Se utiliza cuando un personaje desea saltar por encima de una valla u otro obstáculo, esquivar un peligro inmediato o tratar de aterrizar de forma segura después de una caída.

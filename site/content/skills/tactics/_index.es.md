@@ -1,7 +1,7 @@
 +++
 title = "Táctica"
 attribute = "INT"
-category = "Combate"
+category = "Combat"
 +++
 
 Esta habilidad amplia proporciona a un personaje entrenamiento básico y una comprensión de las tácticas y las situaciones tácticas. Si bien las tácticas pueden entrar en juego en muchos tipos de situaciones, se utilizan más comúnmente durante el combate de infantería, el combate espacial y el combate de vehículos.

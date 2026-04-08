@@ -1,7 +1,7 @@
 +++
 title = "Calle inteligente"
 attribute = "WIL"
-category = "Other"
+category = "Social"
 +++
 
 Esta habilidad general proporciona a un héroe conocimiento de los protocolos para tratar con pandillas, gente de la calle y organizaciones criminales. Mide la capacidad de un héroe para negociar y establecer contacto con el reino del criminal de "cuello azul" (delincuencia común).

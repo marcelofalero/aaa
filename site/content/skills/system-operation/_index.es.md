@@ -1,7 +1,7 @@
 +++
 title = "Operación de Sistemas"
 attribute = "INT"
-category = "Técnica"
+category = "Technical"
 +++
 
 Esta habilidad amplia proporciona a un personaje entrenamiento básico en el uso de sistemas de naves espaciales que no sean el timón o los sistemas de pilotaje. (La Operación de Vehículos cubre el pilotaje real de una nave espacial). También se aplica a otros tipos de vehículos o instalaciones terrestres que utilizan uno o más de los sistemas específicos descritos a continuación en la sección de Habilidades de Especialidad.

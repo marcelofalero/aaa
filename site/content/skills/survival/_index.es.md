@@ -1,7 +1,7 @@
 +++
 title = "Supervivencia"
 attribute = "CON"
-category = "Otros"
+category = "Other"
 +++
 
 Esta habilidad amplia proporciona a un personaje entrenamiento en supervivencia a través de áreas salvajes, paisajes urbanos hostiles o en ruinas, y biosferas alienígenas. Cubre la obtención de necesidades básicas (comida, agua, refugio), la evitación de peligros ambientales y el estudio ecológico sistemático.

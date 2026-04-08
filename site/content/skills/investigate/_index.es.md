@@ -1,7 +1,7 @@
 +++
 title = "Investigar"
 attribute = "WIL"
-category = "Otros"
+category = "Social"
 +++
 
 Esta habilidad general proporciona a un héroe el entrenamiento y la capacidad de examinar las cosas sistemáticamente mediante la observación y la indagación. A diferencia de las habilidades de Alerta, Investigar requiere tiempo. Se puede utilizar cuando un personaje intenta aplicar la lógica y la razón para llegar a una conclusión o deducir la solución a un problema.

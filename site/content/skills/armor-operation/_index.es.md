@@ -1,7 +1,7 @@
 +++
 title = "Operación de armadura"
 attribute = "STR"
-category = "Combate"
+category = "Other"
 +++
 
 La armadura que es voluminosa, pesada y engorrosa dificulta al personaje que la usa. Esto se refleja en una penalización a la tirada de acción del personaje y la disminución o anulación del modificador de resistencia de Destreza del personaje. La habilidad amplia de Operación de Armadura y sus habilidades de especialidad ayudan a aliviar estas penalizaciones.

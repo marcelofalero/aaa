@@ -1,7 +1,7 @@
 +++
 title = "Combate Cuerpo a Cuerpo"
 attribute = "STR"
-category = "Combate"
+category = "Combat"
 +++
 
 El Combate Cuerpo a Cuerpo representa la competencia básica de cualquier combatiente físico que participa en una lucha a corta distancia. Abarca la comprensión esencial del alcance, el tiempo y la transferencia eficiente de la fuerza cinética a través del cuerpo o una herramienta de mano. Un héroe entrenado en esta habilidad general posee una comprensión inherente de la conciencia espacial y la puntería, lo que le permite identificar vulnerabilidades en un oponente mientras mantiene su propio centro de gravedad y postura con el arma durante un intercambio.

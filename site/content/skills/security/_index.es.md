@@ -1,7 +1,7 @@
 +++
 title = "Seguridad"
 attribute = "INT"
-category = "Technical"
+category = "Other"
 +++
 
 Esta habilidad amplia proporciona a un personaje conocimientos básicos sobre sistemas y procedimientos de seguridad. Se refiere a los sistemas de seguridad que protegen objetos físicos o áreas específicamente definidas. (Ten en cuenta que los sistemas del tipo que protegen contra el robo o la corrupción de datos informatizados se tratan bajo la especialidad de Ciencias de la Computación—hacking).

@@ -1,7 +1,7 @@
 +++
 title = "Operación de Vehículos"
 attribute = "DEX"
-category = "Técnica"
+category = "Technical"
 +++
 
 Esta habilidad amplia proporciona a un personaje una comprensión básica y competencia con los vehículos modernos. Usando esta habilidad, un personaje puede intentar operar la mayoría de los vehículos terrestres y acuáticos normales. Algunos vehículos terrestres y acuáticos militares o especializados pueden tener controles que son demasiado complejos para que la habilidad amplia los cubra, requiriendo al menos algún nivel de especialización antes de que un personaje sea capaz de operarlos con éxito.

@@ -1,7 +1,7 @@
 +++
 title = "Alerta [Awareness]"
 attribute = "WIL"
-category = "Otros"
+category = "Other"
 +++
 
 **Habilidad gratuita para personajes Fraal, Humanos, Mechalus, Sesheyan, T'sa y Weren.**

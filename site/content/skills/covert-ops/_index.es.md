@@ -1,7 +1,7 @@
 +++
 title = "Operaciones Encubiertas"
 attribute = "DEX"
-category = "Otro"
+category = "Social"
 +++
 
 La habilidad general de **Operaciones Encubiertas** (anteriormente Sigilo y Manipulación) se centra en permanecer sin ser detectado y eludir la seguridad física. Consolida las artes del sigilo con las habilidades técnicas necesarias para abrir cerraduras y carterear.

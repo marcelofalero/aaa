@@ -1,7 +1,7 @@
 +++
 title = "Conocimiento"
 attribute = "INT"
-category = "Técnica"
+category = "Technical"
 +++
 
 Esta habilidad amplia representa la capacidad de un personaje para saber al menos un poco sobre cualquier tema en particular. Solo con la habilidad amplia, un personaje no es considerado un experto, pero representa la capacidad de recordar lógicamente una clase que tomó, un artículo que leyó o un documental que vio sobre el tema en cuestión.

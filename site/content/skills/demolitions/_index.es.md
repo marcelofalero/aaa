@@ -1,7 +1,7 @@
 +++
 title = "Demoliciones"
 attribute = "INT"
-category = "Técnico"
+category = "Technical"
 +++
 
 Esta habilidad general proporciona a un héroe entrenamiento en los conceptos básicos de la colocación de cargas explosivas para demoler un objetivo específico. Un héroe hábil tiene un conocimiento práctico del manejo de explosivos, el uso de cebos y dispositivos de temporización, y la colocación de cargas para obtener el máximo efecto.

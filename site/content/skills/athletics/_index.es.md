@@ -1,7 +1,7 @@
 +++
 title = "Atletismo"
 attribute = "STR"
-category = "Otros"
+category = "Other"
 +++
 
 Esta habilidad amplia proporciona a un personaje las capacidades de un atleta natural: un nivel competente de fuerza, gracia y destreza física. Esta habilidad se utiliza para determinar el éxito de acciones físicas como trepar a un árbol, saltar por encima de un gran agujero o lanzar un objeto a un objetivo.

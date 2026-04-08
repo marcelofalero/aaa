@@ -1,1531 +1,229 @@
 {
-  "columns": [
-    {
-      "name": "Skill Name",
-      "key": "skill"
-    },
-    {
-      "name": "Type",
-      "key": "type"
-    },
-    {
-      "name": "Attribute",
-      "key": "attribute"
-    },
-    {
-      "name": "Cost",
-      "key": "cost"
-    },
-    {
-      "name": "Pr.",
-      "key": "pr"
-    }
-  ],
-  "groups": [
-    {
-      "name": "Combat",
-      "items": [
+    "groups": [
         {
-          "skill": "Heavy Weapons",
-          "skill_url": "/skills/heavy-weapons",
-          "type": "Broad",
-          "attribute": "STR",
-          "cost": 6,
-          "pr": "C",
-          "tier": 1
+            "name": "Combat",
+            "items": [
+                {
+                    "skill": "Heavy Weapons",
+                    "attribute": "STR",
+                    "skill_url": "/skills/heavy-weapons"
+                },
+                {
+                    "skill": "Melee Combat",
+                    "attribute": "STR",
+                    "skill_url": "/skills/melee-combat"
+                },
+                {
+                    "skill": "Modern Ranged Weapons",
+                    "attribute": "DEX",
+                    "skill_url": "/skills/modern-ranged-weapons"
+                },
+                {
+                    "skill": "Primitive Ranged Weapons",
+                    "attribute": "DEX",
+                    "skill_url": "/skills/primitive-ranged-weapons"
+                },
+                {
+                    "skill": "Tactics",
+                    "attribute": "INT",
+                    "skill_url": "/skills/tactics"
+                }
+            ]
         },
         {
-          "skill": "Direct fire",
-          "skill_url": "/skills/heavy-weapons#direct-fire",
-          "type": "Specialty",
-          "attribute": "STR",
-          "cost": 4,
-          "pr": "C",
-          "tier": 2
+            "name": "Technical",
+            "items": [
+                {
+                    "skill": "Administration",
+                    "attribute": "INT",
+                    "skill_url": "/skills/administration"
+                },
+                {
+                    "skill": "Computer Science",
+                    "attribute": "INT",
+                    "skill_url": "/skills/computer-science"
+                },
+                {
+                    "skill": "Demolitions",
+                    "attribute": "INT",
+                    "skill_url": "/skills/demolitions"
+                },
+                {
+                    "skill": "Knowledge",
+                    "attribute": "INT",
+                    "skill_url": "/skills/knowledge"
+                },
+                {
+                    "skill": "Life Science",
+                    "attribute": "INT",
+                    "skill_url": "/skills/life-science"
+                },
+                {
+                    "skill": "Medical Science",
+                    "attribute": "INT",
+                    "skill_url": "/skills/medical-science"
+                },
+                {
+                    "skill": "Physical Science",
+                    "attribute": "INT",
+                    "skill_url": "/skills/physical-science"
+                },
+                {
+                    "skill": "System Operation",
+                    "attribute": "INT",
+                    "skill_url": "/skills/system-operation"
+                },
+                {
+                    "skill": "Technical Science",
+                    "attribute": "INT",
+                    "skill_url": "/skills/technical-science"
+                },
+                {
+                    "skill": "Vehicle Operation",
+                    "attribute": "DEX",
+                    "skill_url": "/skills/vehicle-operation"
+                }
+            ]
         },
         {
-          "skill": "Indirect fire",
-          "skill_url": "/skills/heavy-weapons#indirect-fire",
-          "type": "Specialty",
-          "attribute": "STR",
-          "cost": 4,
-          "pr": "C",
-          "tier": 2
+            "name": "Social",
+            "items": [
+                {
+                    "skill": "Business",
+                    "attribute": "INT",
+                    "skill_url": "/skills/business"
+                },
+                {
+                    "skill": "Covert Ops",
+                    "attribute": "DEX",
+                    "skill_url": "/skills/covert-ops"
+                },
+                {
+                    "skill": "Culture",
+                    "attribute": "PER",
+                    "skill_url": "/skills/culture"
+                },
+                {
+                    "skill": "Deception",
+                    "attribute": "PER",
+                    "skill_url": "/skills/deception"
+                },
+                {
+                    "skill": "Interaction",
+                    "attribute": "PER",
+                    "skill_url": "/skills/interaction"
+                },
+                {
+                    "skill": "Investigate",
+                    "attribute": "WIL",
+                    "skill_url": "/skills/investigate"
+                },
+                {
+                    "skill": "Law",
+                    "attribute": "INT",
+                    "skill_url": "/skills/law"
+                },
+                {
+                    "skill": "Leadership",
+                    "attribute": "PER",
+                    "skill_url": "/skills/leadership"
+                },
+                {
+                    "skill": "Street Smart",
+                    "attribute": "WIL",
+                    "skill_url": "/skills/street-smart"
+                },
+                {
+                    "skill": "Teach",
+                    "attribute": "WIL",
+                    "skill_url": "/skills/teach"
+                }
+            ]
         },
         {
-          "skill": "Melee Combat",
-          "skill_url": "/skills/melee-combat",
-          "type": "Broad",
-          "attribute": "STR",
-          "cost": 6,
-          "pr": "CF",
-          "tier": 1
-        },
-        {
-          "skill": "Blade",
-          "skill_url": "/skills/melee-combat#blade",
-          "type": "Specialty",
-          "attribute": "STR",
-          "cost": 3,
-          "pr": "C",
-          "tier": 2
-        },
-        {
-          "skill": "Blunt",
-          "skill_url": "/skills/melee-combat#blunt",
-          "type": "Specialty",
-          "attribute": "STR",
-          "cost": 3,
-          "pr": "C",
-          "tier": 2
-        },
-        {
-          "skill": "Defensive Martial Arts",
-          "skill_url": "/skills/melee-combat#defensive-martial-arts",
-          "type": "Specialty",
-          "attribute": "STR",
-          "cost": 3,
-          "pr": "F",
-          "tier": 2
-        },
-        {
-          "skill": "Power Martial Arts",
-          "skill_url": "/skills/melee-combat#power-martial-arts",
-          "type": "Specialty",
-          "attribute": "STR",
-          "cost": 3,
-          "pr": "C",
-          "tier": 2
-        },
-        {
-          "skill": "Powered",
-          "skill_url": "/skills/melee-combat#powered",
-          "type": "Specialty",
-          "attribute": "STR",
-          "cost": 4,
-          "pr": "C",
-          "tier": 2
-        },
-        {
-          "skill": "Modern Ranged Weapons",
-          "skill_url": "/skills/modern-ranged-weapons",
-          "type": "Broad",
-          "attribute": "DEX",
-          "cost": 6,
-          "pr": "C",
-          "tier": 1
-        },
-        {
-          "skill": "Assault Rifle",
-          "skill_url": "/skills/modern-ranged-weapons#assault-rifle",
-          "type": "Specialty",
-          "attribute": "DEX",
-          "cost": 3,
-          "pr": "C",
-          "tier": 2
-        },
-        {
-          "skill": "Pistol",
-          "skill_url": "/skills/modern-ranged-weapons#pistol",
-          "type": "Specialty",
-          "attribute": "DEX",
-          "cost": 3,
-          "pr": "C",
-          "tier": 2
-        },
-        {
-          "skill": "Rifle",
-          "skill_url": "/skills/modern-ranged-weapons#rifle",
-          "type": "Specialty",
-          "attribute": "DEX",
-          "cost": 3,
-          "pr": "C",
-          "tier": 2
-        },
-        {
-          "skill": "SMG",
-          "skill_url": "/skills/modern-ranged-weapons#smg",
-          "type": "Specialty",
-          "attribute": "DEX",
-          "cost": 3,
-          "pr": "C",
-          "tier": 2
-        },
-        {
-          "skill": "Shotgun",
-          "skill_url": "/skills/modern-ranged-weapons#shotgun",
-          "type": "Specialty",
-          "attribute": "DEX",
-          "cost": 3,
-          "pr": "C",
-          "tier": 2
-        },
-        {
-          "skill": "Primitive Ranged Weapons",
-          "skill_url": "/skills/primitive-ranged-weapons",
-          "type": "Broad",
-          "attribute": "DEX",
-          "cost": 7,
-          "pr": "C",
-          "tier": 1
-        },
-        {
-          "skill": "Bow",
-          "skill_url": "/skills/primitive-ranged-weapons#bow",
-          "type": "Specialty",
-          "attribute": "DEX",
-          "cost": 3,
-          "pr": "C",
-          "tier": 2
-        },
-        {
-          "skill": "Crossbow",
-          "skill_url": "/skills/primitive-ranged-weapons#crossbow",
-          "type": "Specialty",
-          "attribute": "DEX",
-          "cost": 3,
-          "pr": "C",
-          "tier": 2
-        },
-        {
-          "skill": "Flintlock",
-          "skill_url": "/skills/primitive-ranged-weapons#flintlock",
-          "type": "Specialty",
-          "attribute": "DEX",
-          "cost": 3,
-          "pr": "C",
-          "tier": 2
-        },
-        {
-          "skill": "Sling",
-          "skill_url": "/skills/primitive-ranged-weapons#sling",
-          "type": "Specialty",
-          "attribute": "DEX",
-          "cost": 3,
-          "pr": "C",
-          "tier": 2
-        },
-        {
-          "skill": "Tactics",
-          "skill_url": "/skills/tactics",
-          "type": "Broad",
-          "attribute": "INT",
-          "cost": 6,
-          "pr": "C",
-          "tier": 1
-        },
-        {
-          "skill": "Infantry tactics",
-          "skill_url": "/skills/tactics#infantry-tactics",
-          "type": "Specialty",
-          "attribute": "INT",
-          "cost": 3,
-          "pr": "C",
-          "tier": 2
-        },
-        {
-          "skill": "Space tactics",
-          "skill_url": "/skills/tactics#space-tactics",
-          "type": "Specialty",
-          "attribute": "INT",
-          "cost": 3,
-          "pr": "CT",
-          "tier": 2
-        },
-        {
-          "skill": "Vehicle tactics",
-          "skill_url": "/skills/tactics#vehicle-tactics",
-          "type": "Specialty",
-          "attribute": "INT",
-          "cost": 3,
-          "pr": "CT",
-          "tier": 2
+            "name": "Other",
+            "items": [
+                {
+                    "skill": "Acrobatics",
+                    "attribute": "DEX",
+                    "skill_url": "/skills/acrobatics"
+                },
+                {
+                    "skill": "Animal Handling",
+                    "attribute": "WIL",
+                    "skill_url": "/skills/animal-handling"
+                },
+                {
+                    "skill": "Armor Operation",
+                    "attribute": "STR",
+                    "skill_url": "/skills/armor-operation"
+                },
+                {
+                    "skill": "Athletics",
+                    "attribute": "STR",
+                    "skill_url": "/skills/athletics"
+                },
+                {
+                    "skill": "Awareness",
+                    "attribute": "WIL",
+                    "skill_url": "/skills/awareness"
+                },
+                {
+                    "skill": "Biokinesis",
+                    "attribute": "WIL",
+                    "skill_url": "/psionics/biokinesis"
+                },
+                {
+                    "skill": "ESP",
+                    "attribute": "WIL",
+                    "skill_url": "/psionics/esp"
+                },
+                {
+                    "skill": "Entertainment",
+                    "attribute": "PER",
+                    "skill_url": "/skills/entertainment"
+                },
+                {
+                    "skill": "Navigation",
+                    "attribute": "INT",
+                    "skill_url": "/skills/navigation"
+                },
+                {
+                    "skill": "Resolve",
+                    "attribute": "WIL",
+                    "skill_url": "/skills/resolve"
+                },
+                {
+                    "skill": "Security",
+                    "attribute": "INT",
+                    "skill_url": "/skills/security"
+                },
+                {
+                    "skill": "Stamina",
+                    "attribute": "CON",
+                    "skill_url": "/skills/stamina"
+                },
+                {
+                    "skill": "Survival",
+                    "attribute": "CON",
+                    "skill_url": "/skills/survival"
+                },
+                {
+                    "skill": "Telekinesis",
+                    "attribute": "WIL",
+                    "skill_url": "/psionics/telekinesis"
+                },
+                {
+                    "skill": "Telepathy",
+                    "attribute": "WIL",
+                    "skill_url": "/psionics/telepathy"
+                },
+                {
+                    "skill": "Teleportation",
+                    "attribute": "WIL",
+                    "skill_url": "/psionics/teleportation"
+                }
+            ]
         }
-      ]
-    },
-    {
-      "name": "Technical",
-      "items": [
-        {
-          "skill": "Administration",
-          "skill_url": "/skills/administration",
-          "type": "Broad",
-          "attribute": "INT",
-          "cost": 4,
-          "pr": "D",
-          "tier": 1
-        },
-        {
-          "skill": "Bureaucracy",
-          "skill_url": "/skills/administration#bureaucracy",
-          "type": "Specialty",
-          "attribute": "INT",
-          "cost": 3,
-          "pr": "D",
-          "tier": 2
-        },
-        {
-          "skill": "Management",
-          "skill_url": "/skills/administration#management",
-          "type": "Specialty",
-          "attribute": "INT",
-          "cost": 3,
-          "pr": "D",
-          "tier": 2
-        },
-        {
-          "skill": "Computer Science",
-          "skill_url": "/skills/computer-science",
-          "type": "Broad",
-          "attribute": "INT",
-          "cost": 7,
-          "pr": "T",
-          "tier": 1
-        },
-        {
-          "skill": "Hacking",
-          "skill_url": "/skills/computer-science#hacking",
-          "type": "Specialty",
-          "attribute": "INT",
-          "cost": 4,
-          "pr": "F",
-          "tier": 2
-        },
-        {
-          "skill": "Hardware",
-          "skill_url": "/skills/computer-science#hardware",
-          "type": "Specialty",
-          "attribute": "INT",
-          "cost": 3,
-          "pr": "T",
-          "tier": 2
-        },
-        {
-          "skill": "Programming",
-          "skill_url": "/skills/computer-science#programming",
-          "type": "Specialty",
-          "attribute": "INT",
-          "cost": 3,
-          "pr": "T",
-          "tier": 2
-        },
-        {
-          "skill": "Demolitions",
-          "skill_url": "/skills/demolitions",
-          "type": "Broad",
-          "attribute": "INT",
-          "cost": 6,
-          "pr": "CT",
-          "tier": 1
-        },
-        {
-          "skill": "Disarm",
-          "skill_url": "/skills/demolitions#disarm",
-          "type": "Specialty",
-          "attribute": "INT",
-          "cost": 4,
-          "pr": "T",
-          "tier": 2
-        },
-        {
-          "skill": "Scratch-Built Explosives",
-          "skill_url": "/skills/demolitions#scratch-built-explosives",
-          "type": "Specialty",
-          "attribute": "INT",
-          "cost": 3,
-          "pr": "T",
-          "tier": 2
-        },
-        {
-          "skill": "Set explosives",
-          "skill_url": "/skills/demolitions#set-explosives",
-          "type": "Specialty",
-          "attribute": "INT",
-          "cost": 3,
-          "pr": "C",
-          "tier": 2
-        },
-        {
-          "skill": "Knowledge",
-          "skill_url": "/skills/knowledge",
-          "type": "Broad",
-          "attribute": "INT",
-          "cost": 4,
-          "pr": "FT",
-          "tier": 1
-        },
-        {
-          "skill": "Computer Operation",
-          "skill_url": "/skills/knowledge#computer-operation",
-          "type": "Specialty",
-          "attribute": "INT",
-          "cost": 2,
-          "pr": "FT",
-          "tier": 2
-        },
-        {
-          "skill": "Deduce",
-          "skill_url": "/skills/knowledge#deduce",
-          "type": "Specialty",
-          "attribute": "INT",
-          "cost": 2,
-          "pr": "FT",
-          "tier": 2
-        },
-        {
-          "skill": "First Aid",
-          "skill_url": "/skills/knowledge#first-aid",
-          "type": "Specialty",
-          "attribute": "INT",
-          "cost": 3,
-          "pr": "FT",
-          "tier": 2
-        },
-        {
-          "skill": "Language",
-          "skill_url": "/skills/knowledge#language",
-          "type": "Specialty",
-          "attribute": "INT",
-          "cost": 2,
-          "pr": "—",
-          "tier": 2
-        },
-        {
-          "skill": "Medical Knowledge",
-          "skill_url": "/skills/medical-science#medical-knowledge",
-          "type": "Specialty",
-          "attribute": "INT",
-          "cost": 3,
-          "pr": "T",
-          "tier": 2
-        },
-        {
-          "skill": "Street knowledge",
-          "skill_url": "/skills/street-smart#street-knowledge",
-          "type": "Specialty",
-          "attribute": "WIL",
-          "cost": 3,
-          "pr": "F",
-          "tier": 2
-        },
-        {
-          "skill": "Technical Knowledge",
-          "skill_url": "/skills/technical-science#technical-knowledge",
-          "type": "Specialty",
-          "attribute": "INT",
-          "cost": 3,
-          "pr": "T",
-          "tier": 2
-        },
-        {
-          "skill": "Life Science",
-          "skill_url": "/skills/life-science",
-          "type": "Broad",
-          "attribute": "INT",
-          "cost": 7,
-          "pr": "T",
-          "tier": 1
-        },
-        {
-          "skill": "Biology",
-          "skill_url": "/skills/life-science#biology",
-          "type": "Specialty",
-          "attribute": "INT",
-          "cost": 3,
-          "pr": "T",
-          "tier": 2
-        },
-        {
-          "skill": "Botany",
-          "skill_url": "/skills/life-science#botany",
-          "type": "Specialty",
-          "attribute": "INT",
-          "cost": 3,
-          "pr": "T",
-          "tier": 2
-        },
-        {
-          "skill": "Genetics",
-          "skill_url": "/skills/life-science#genetics",
-          "type": "Specialty",
-          "attribute": "INT",
-          "cost": 3,
-          "pr": "T",
-          "tier": 2
-        },
-        {
-          "skill": "Xenology",
-          "skill_url": "/skills/life-science#xenology",
-          "type": "Specialty",
-          "attribute": "INT",
-          "cost": 3,
-          "pr": "T",
-          "tier": 2
-        },
-        {
-          "skill": "Zoology",
-          "skill_url": "/skills/life-science#zoology",
-          "type": "Specialty",
-          "attribute": "INT",
-          "cost": 3,
-          "pr": "T",
-          "tier": 2
-        },
-        {
-          "skill": "Medical Science",
-          "skill_url": "/skills/medical-science",
-          "type": "Broad",
-          "attribute": "INT",
-          "cost": 7,
-          "pr": "T",
-          "tier": 1
-        },
-        {
-          "skill": "Forensics",
-          "skill_url": "/skills/medical-science#forensics",
-          "type": "Specialty",
-          "attribute": "INT",
-          "cost": 3,
-          "pr": "T",
-          "tier": 2
-        },
-        {
-          "skill": "Psychology",
-          "skill_url": "/skills/medical-science#psychology",
-          "type": "Specialty",
-          "attribute": "INT",
-          "cost": 5,
-          "pr": "T",
-          "tier": 2
-        },
-        {
-          "skill": "Surgery",
-          "skill_url": "/skills/medical-science#surgery",
-          "type": "Specialty",
-          "attribute": "INT",
-          "cost": 5,
-          "pr": "T",
-          "tier": 2
-        },
-        {
-          "skill": "Treatment",
-          "skill_url": "/skills/medical-science#treatment",
-          "type": "Specialty",
-          "attribute": "INT",
-          "cost": 4,
-          "pr": "T",
-          "tier": 2
-        },
-        {
-          "skill": "Xenomedicine [spec]",
-          "skill_url": "/skills/medical-science#xenomedicine-spec",
-          "type": "Specialty",
-          "attribute": "INT",
-          "cost": 3,
-          "pr": "T",
-          "tier": 2
-        },
-        {
-          "skill": "Physical Science",
-          "skill_url": "/skills/physical-science",
-          "type": "Broad",
-          "attribute": "INT",
-          "cost": 7,
-          "pr": "T",
-          "tier": 1
-        },
-        {
-          "skill": "Astronomy",
-          "skill_url": "/skills/physical-science#astronomy",
-          "type": "Specialty",
-          "attribute": "INT",
-          "cost": 3,
-          "pr": "T",
-          "tier": 2
-        },
-        {
-          "skill": "Chemistry",
-          "skill_url": "/skills/physical-science#chemistry",
-          "type": "Specialty",
-          "attribute": "INT",
-          "cost": 3,
-          "pr": "T",
-          "tier": 2
-        },
-        {
-          "skill": "Physics",
-          "skill_url": "/skills/physical-science#physics",
-          "type": "Specialty",
-          "attribute": "INT",
-          "cost": 3,
-          "pr": "T",
-          "tier": 2
-        },
-        {
-          "skill": "Planetology",
-          "skill_url": "/skills/physical-science#planetology",
-          "type": "Specialty",
-          "attribute": "INT",
-          "cost": 3,
-          "pr": "T",
-          "tier": 2
-        },
-        {
-          "skill": "System Operation",
-          "skill_url": "/skills/system-operation",
-          "type": "Broad",
-          "attribute": "INT",
-          "cost": 3,
-          "pr": "T",
-          "tier": 1
-        },
-        {
-          "skill": "Communications",
-          "skill_url": "/skills/system-operation#communications",
-          "type": "Specialty",
-          "attribute": "INT",
-          "cost": 3,
-          "pr": "T",
-          "tier": 2
-        },
-        {
-          "skill": "Defenses",
-          "skill_url": "/skills/system-operation#defenses",
-          "type": "Specialty",
-          "attribute": "INT",
-          "cost": 3,
-          "pr": "T",
-          "tier": 2
-        },
-        {
-          "skill": "Engineering",
-          "skill_url": "/skills/system-operation#engineering",
-          "type": "Specialty",
-          "attribute": "INT",
-          "cost": 3,
-          "pr": "T",
-          "tier": 2
-        },
-        {
-          "skill": "Sensors",
-          "skill_url": "/skills/system-operation#sensors",
-          "type": "Specialty",
-          "attribute": "INT",
-          "cost": 3,
-          "pr": "FT",
-          "tier": 2
-        },
-        {
-          "skill": "Weapons",
-          "skill_url": "/skills/system-operation#weapons",
-          "type": "Specialty",
-          "attribute": "INT",
-          "cost": 6,
-          "pr": "C",
-          "tier": 2
-        },
-        {
-          "skill": "Technical Science",
-          "skill_url": "/skills/technical-science",
-          "type": "Broad",
-          "attribute": "INT",
-          "cost": 7,
-          "pr": "T",
-          "tier": 1
-        },
-        {
-          "skill": "Invention",
-          "skill_url": "/skills/technical-science#invention",
-          "type": "Specialty",
-          "attribute": "INT",
-          "cost": 3,
-          "pr": "T",
-          "tier": 2
-        },
-        {
-          "skill": "Jury-rig",
-          "skill_url": "/skills/technical-science#jury-rig",
-          "type": "Specialty",
-          "attribute": "INT",
-          "cost": 3,
-          "pr": "T",
-          "tier": 2
-        },
-        {
-          "skill": "Repair",
-          "skill_url": "/skills/technical-science#repair",
-          "type": "Specialty",
-          "attribute": "INT",
-          "cost": 3,
-          "pr": "T",
-          "tier": 2
-        },
-        {
-          "skill": "Vehicle Operation",
-          "skill_url": "/skills/vehicle-operation",
-          "type": "Broad",
-          "attribute": "DEX",
-          "cost": 3,
-          "pr": "T",
-          "tier": 1
-        },
-        {
-          "skill": "Air vehicle",
-          "skill_url": "/skills/vehicle-operation#air-vehicle",
-          "type": "Specialty",
-          "attribute": "DEX",
-          "cost": 5,
-          "pr": "T",
-          "tier": 2
-        },
-        {
-          "skill": "Land vehicle",
-          "skill_url": "/skills/vehicle-operation#land-vehicle",
-          "type": "Specialty",
-          "attribute": "DEX",
-          "cost": 3,
-          "pr": "T",
-          "tier": 2
-        },
-        {
-          "skill": "Space vehicle",
-          "skill_url": "/skills/vehicle-operation#space-vehicle",
-          "type": "Specialty",
-          "attribute": "DEX",
-          "cost": 5,
-          "pr": "T",
-          "tier": 2
-        },
-        {
-          "skill": "Water vehicle",
-          "skill_url": "/skills/vehicle-operation#water-vehicle",
-          "type": "Specialty",
-          "attribute": "DEX",
-          "cost": 3,
-          "pr": "T",
-          "tier": 2
-        }
-      ]
-    },
-    {
-      "name": "Social",
-      "items": [
-        {
-          "skill": "Business",
-          "skill_url": "/skills/business",
-          "type": "Broad",
-          "attribute": "INT",
-          "cost": 4,
-          "pr": "D",
-          "tier": 1
-        },
-        {
-          "skill": "Corporate",
-          "skill_url": "/skills/business#corporate",
-          "type": "Specialty",
-          "attribute": "INT",
-          "cost": 3,
-          "pr": "D",
-          "tier": 2
-        },
-        {
-          "skill": "Illicit business",
-          "skill_url": "/skills/business#illicit-business",
-          "type": "Specialty",
-          "attribute": "INT",
-          "cost": 3,
-          "pr": "F",
-          "tier": 2
-        },
-        {
-          "skill": "Small business",
-          "skill_url": "/skills/business#small-business",
-          "type": "Specialty",
-          "attribute": "INT",
-          "cost": 3,
-          "pr": "D",
-          "tier": 2
-        },
-        {
-          "skill": "Covert Ops",
-          "skill_url": "/skills/covert-ops",
-          "type": "Broad",
-          "attribute": "DEX",
-          "cost": 8,
-          "pr": "F",
-          "tier": 1
-        },
-        {
-          "skill": "Conceal",
-          "skill_url": "/skills/covert-ops#conceal",
-          "type": "Specialty",
-          "attribute": "DEX",
-          "cost": 3,
-          "pr": "F",
-          "tier": 2
-        },
-        {
-          "skill": "Disguise",
-          "skill_url": "/skills/covert-ops#disguise",
-          "type": "Specialty",
-          "attribute": "CHA",
-          "cost": 3,
-          "pr": "F",
-          "tier": 2
-        },
-        {
-          "skill": "Pickpocket",
-          "skill_url": "/skills/covert-ops#pickpocket",
-          "type": "Specialty",
-          "attribute": "DEX",
-          "cost": 3,
-          "pr": "F",
-          "tier": 2
-        },
-        {
-          "skill": "Stealth",
-          "skill_url": "/skills/covert-ops#stealth",
-          "type": "Specialty",
-          "attribute": "DEX",
-          "cost": 3,
-          "pr": "F",
-          "tier": 2
-        },
-        {
-          "skill": "Culture",
-          "skill_url": "/skills/culture",
-          "type": "Broad",
-          "attribute": "PER",
-          "cost": 5,
-          "pr": "D",
-          "tier": 1
-        },
-        {
-          "skill": "Diplomacy",
-          "skill_url": "/skills/culture#diplomacy",
-          "type": "Specialty",
-          "attribute": "PER",
-          "cost": 3,
-          "pr": "D",
-          "tier": 2
-        },
-        {
-          "skill": "Etiquette [spec]",
-          "skill_url": "/skills/culture#etiquette-spec",
-          "type": "Specialty",
-          "attribute": "PER",
-          "cost": 2,
-          "pr": "D",
-          "tier": 2
-        },
-        {
-          "skill": "First Encounter",
-          "skill_url": "/skills/culture#first-encounter",
-          "type": "Specialty",
-          "attribute": "PER",
-          "cost": 3,
-          "pr": "D",
-          "tier": 2
-        },
-        {
-          "skill": "Deception",
-          "skill_url": "/skills/deception",
-          "type": "Broad",
-          "attribute": "PER",
-          "cost": 5,
-          "pr": "F",
-          "tier": 1
-        },
-        {
-          "skill": "Bluff",
-          "skill_url": "/skills/deception#bluff",
-          "type": "Specialty",
-          "attribute": "PER",
-          "cost": 3,
-          "pr": "F",
-          "tier": 2
-        },
-        {
-          "skill": "Bribe",
-          "skill_url": "/skills/deception#bribe",
-          "type": "Specialty",
-          "attribute": "PER",
-          "cost": 3,
-          "pr": "DF",
-          "tier": 2
-        },
-        {
-          "skill": "Gamble",
-          "skill_url": "/skills/deception#gamble",
-          "type": "Specialty",
-          "attribute": "PER",
-          "cost": 4,
-          "pr": "F",
-          "tier": 2
-        },
-        {
-          "skill": "Interaction",
-          "skill_url": "/skills/interaction",
-          "type": "Broad",
-          "attribute": "PER",
-          "cost": 3,
-          "pr": "—",
-          "tier": 1
-        },
-        {
-          "skill": "Bargain",
-          "skill_url": "/skills/interaction#bargain",
-          "type": "Specialty",
-          "attribute": "PER",
-          "cost": 3,
-          "pr": "—",
-          "tier": 2
-        },
-        {
-          "skill": "Charm",
-          "skill_url": "/skills/interaction#charm",
-          "type": "Specialty",
-          "attribute": "PER",
-          "cost": 3,
-          "pr": "—",
-          "tier": 2
-        },
-        {
-          "skill": "Interview",
-          "skill_url": "/skills/interaction#interview",
-          "type": "Specialty",
-          "attribute": "PER",
-          "cost": 3,
-          "pr": "—",
-          "tier": 2
-        },
-        {
-          "skill": "Intimidate",
-          "skill_url": "/skills/interaction#intimidate",
-          "type": "Specialty",
-          "attribute": "PER",
-          "cost": 3,
-          "pr": "C",
-          "tier": 2
-        },
-        {
-          "skill": "Seduce",
-          "skill_url": "/skills/interaction#seduce",
-          "type": "Specialty",
-          "attribute": "PER",
-          "cost": 3,
-          "pr": "—",
-          "tier": 2
-        },
-        {
-          "skill": "Taunt",
-          "skill_url": "/skills/interaction#taunt",
-          "type": "Specialty",
-          "attribute": "PER",
-          "cost": 3,
-          "pr": "—",
-          "tier": 2
-        },
-        {
-          "skill": "Investigate",
-          "skill_url": "/skills/investigate",
-          "type": "Broad",
-          "attribute": "WIL",
-          "cost": 3,
-          "pr": "FT",
-          "tier": 1
-        },
-        {
-          "skill": "Interrogate",
-          "skill_url": "/skills/investigate#interrogate",
-          "type": "Specialty",
-          "attribute": "WIL",
-          "cost": 3,
-          "pr": "FT",
-          "tier": 2
-        },
-        {
-          "skill": "Search",
-          "skill_url": "/skills/investigate#search",
-          "type": "Specialty",
-          "attribute": "WIL",
-          "cost": 1,
-          "pr": "—",
-          "tier": 2
-        },
-        {
-          "skill": "Track",
-          "skill_url": "/skills/investigate#track",
-          "type": "Specialty",
-          "attribute": "WIL",
-          "cost": 3,
-          "pr": "FT",
-          "tier": 2
-        },
-        {
-          "skill": "Law",
-          "skill_url": "/skills/law",
-          "type": "Broad",
-          "attribute": "INT",
-          "cost": 0,
-          "pr": "D",
-          "tier": 1
-        },
-        {
-          "skill": "Court procedures",
-          "skill_url": "/skills/law#court-procedures",
-          "type": "Specialty",
-          "attribute": "INT",
-          "cost": 3,
-          "pr": "D",
-          "tier": 2
-        },
-        {
-          "skill": "Law enforcement procedures",
-          "skill_url": "/skills/law#law-enforcement-procedures",
-          "type": "Specialty",
-          "attribute": "INT",
-          "cost": 3,
-          "pr": "CF",
-          "tier": 2
-        },
-        {
-          "skill": "Law, specific skill",
-          "skill_url": "/skills/law#law-specific-skill",
-          "type": "Specialty",
-          "attribute": "INT",
-          "cost": 2,
-          "pr": "—",
-          "tier": 2
-        },
-        {
-          "skill": "Leadership",
-          "skill_url": "/skills/leadership",
-          "type": "Broad",
-          "attribute": "PER",
-          "cost": 4,
-          "pr": "CD",
-          "tier": 1
-        },
-        {
-          "skill": "Command",
-          "skill_url": "/skills/leadership#command",
-          "type": "Specialty",
-          "attribute": "PER",
-          "cost": 4,
-          "pr": "CD",
-          "tier": 2
-        },
-        {
-          "skill": "Inspire",
-          "skill_url": "/skills/leadership#inspire",
-          "type": "Specialty",
-          "attribute": "PER",
-          "cost": 3,
-          "pr": "CD",
-          "tier": 2
-        },
-        {
-          "skill": "Street Smart",
-          "skill_url": "/skills/street-smart",
-          "type": "Broad",
-          "attribute": "WIL",
-          "cost": 3,
-          "pr": "F",
-          "tier": 1
-        },
-        {
-          "skill": "Criminal elements",
-          "skill_url": "/skills/street-smart#criminal-elements",
-          "type": "Specialty",
-          "attribute": "WIL",
-          "cost": 5,
-          "pr": "F",
-          "tier": 2
-        },
-        {
-          "skill": "Teach",
-          "skill_url": "/skills/teach",
-          "type": "Broad",
-          "attribute": "WIL",
-          "cost": 3,
-          "pr": "C",
-          "tier": 1
-        },
-        {
-          "skill": "Specific field",
-          "skill_url": "/skills/teach#specific-field",
-          "type": "Specialty",
-          "attribute": "WIL",
-          "cost": 2,
-          "pr": "C",
-          "tier": 2
-        }
-      ]
-    },
-    {
-      "name": "Other",
-      "items": [
-        {
-          "skill": "Acrobatics",
-          "skill_url": "/skills/acrobatics",
-          "type": "Broad",
-          "attribute": "DEX",
-          "cost": 7,
-          "pr": "F",
-          "tier": 1
-        },
-        {
-          "skill": "Aerobatics",
-          "skill_url": "/skills/acrobatics#aerobatics",
-          "type": "Specialty",
-          "attribute": "DEX",
-          "cost": 3,
-          "pr": "—",
-          "tier": 2
-        },
-        {
-          "skill": "Daredevil",
-          "skill_url": "/skills/acrobatics#daredevil",
-          "type": "Specialty",
-          "attribute": "DEX",
-          "cost": 3,
-          "pr": "F",
-          "tier": 2
-        },
-        {
-          "skill": "Dodge",
-          "skill_url": "/skills/acrobatics#dodge",
-          "type": "Specialty",
-          "attribute": "DEX",
-          "cost": 3,
-          "pr": "CF",
-          "tier": 2
-        },
-        {
-          "skill": "Fall",
-          "skill_url": "/skills/acrobatics#fall",
-          "type": "Specialty",
-          "attribute": "DEX",
-          "cost": 3,
-          "pr": "F",
-          "tier": 2
-        },
-        {
-          "skill": "Zero-g Training",
-          "skill_url": "/skills/acrobatics#zero-g-training",
-          "type": "Specialty",
-          "attribute": "DEX",
-          "cost": 3,
-          "pr": "CT",
-          "tier": 2
-        },
-        {
-          "skill": "Animal Handling",
-          "skill_url": "/skills/animal-handling",
-          "type": "Broad",
-          "attribute": "WIL",
-          "cost": 3,
-          "pr": "D",
-          "tier": 1
-        },
-        {
-          "skill": "Animal riding",
-          "skill_url": "/skills/animal-handling#animal-riding",
-          "type": "Specialty",
-          "attribute": "WIL",
-          "cost": 1,
-          "pr": "—",
-          "tier": 2
-        },
-        {
-          "skill": "Animal training",
-          "skill_url": "/skills/animal-handling#animal-training",
-          "type": "Specialty",
-          "attribute": "WIL",
-          "cost": 3,
-          "pr": "D",
-          "tier": 2
-        },
-        {
-          "skill": "Armor Operation",
-          "skill_url": "/skills/armor-operation",
-          "type": "Broad",
-          "attribute": "STR",
-          "cost": 7,
-          "pr": "C",
-          "tier": 1
-        },
-        {
-          "skill": "Combat armor",
-          "skill_url": "/skills/armor-operation#combat-armor",
-          "type": "Specialty",
-          "attribute": "STR",
-          "cost": 3,
-          "pr": "C",
-          "tier": 2
-        },
-        {
-          "skill": "Powered armor",
-          "skill_url": "/skills/armor-operation#powered-armor",
-          "type": "Specialty",
-          "attribute": "STR",
-          "cost": 4,
-          "pr": "C",
-          "tier": 2
-        },
-        {
-          "skill": "Propulsion systems",
-          "skill_url": "/skills/armor-operation#propulsion-systems",
-          "type": "Specialty",
-          "attribute": "INT",
-          "cost": 3,
-          "pr": "T",
-          "tier": 2
-        },
-        {
-          "skill": "Shields",
-          "skill_url": "/skills/armor-operation#shields",
-          "type": "Specialty",
-          "attribute": "STR",
-          "cost": 3,
-          "pr": "C",
-          "tier": 2
-        },
-        {
-          "skill": "Tactical armor",
-          "skill_url": "/skills/armor-operation#tactical-armor",
-          "type": "Specialty",
-          "attribute": "INT",
-          "cost": 3,
-          "pr": "T",
-          "tier": 2
-        },
-        {
-          "skill": "Athletics",
-          "skill_url": "/skills/athletics",
-          "type": "Broad",
-          "attribute": "STR",
-          "cost": 3,
-          "pr": "C",
-          "tier": 1
-        },
-        {
-          "skill": "Climb",
-          "skill_url": "/skills/athletics#climb",
-          "type": "Specialty",
-          "attribute": "STR",
-          "cost": 2,
-          "pr": "—",
-          "tier": 2
-        },
-        {
-          "skill": "Jump",
-          "skill_url": "/skills/athletics#jump",
-          "type": "Specialty",
-          "attribute": "STR",
-          "cost": 1,
-          "pr": "—",
-          "tier": 2
-        },
-        {
-          "skill": "Swim",
-          "skill_url": "/skills/athletics#swim",
-          "type": "Specialty",
-          "attribute": "STR",
-          "cost": 2,
-          "pr": "—",
-          "tier": 2
-        },
-        {
-          "skill": "Throw",
-          "skill_url": "/skills/athletics#throw",
-          "type": "Specialty",
-          "attribute": "STR",
-          "cost": 2,
-          "pr": "—",
-          "tier": 2
-        },
-        {
-          "skill": "Awareness",
-          "skill_url": "/skills/awareness",
-          "type": "Broad",
-          "attribute": "WIL",
-          "cost": 3,
-          "pr": "D",
-          "tier": 1
-        },
-        {
-          "skill": "Intuition",
-          "skill_url": "/skills/awareness#intuition",
-          "type": "Specialty",
-          "attribute": "WIL",
-          "cost": 1,
-          "pr": "—",
-          "tier": 2
-        },
-        {
-          "skill": "Perception",
-          "skill_url": "/skills/awareness#perception",
-          "type": "Specialty",
-          "attribute": "WIL",
-          "cost": 3,
-          "pr": "—",
-          "tier": 2
-        },
-        {
-          "skill": "Psionic Sense",
-          "skill_url": "/skills/awareness#psionic-sense",
-          "type": "Specialty",
-          "attribute": "WIL",
-          "cost": 3,
-          "pr": "—",
-          "tier": 2
-        },
-        {
-          "skill": "Psionic Sense",
-          "skill_url": "/skills/awareness#psionic-sense",
-          "type": "Specialty",
-          "attribute": "WIL",
-          "cost": 4,
-          "pr": "—",
-          "tier": 2
-        },
-        {
-          "skill": "Biokinesis",
-          "skill_url": "/psionics/biokinesis",
-          "type": "Broad",
-          "attribute": "WIL",
-          "cost": 6,
-          "pr": "—",
-          "tier": 1
-        },
-        {
-          "skill": "ESP",
-          "skill_url": "/psionics/esp",
-          "type": "Broad",
-          "attribute": "WIL",
-          "cost": 6,
-          "pr": "—",
-          "tier": 1
-        },
-        {
-          "skill": "Astrogation—drivespace",
-          "skill_url": "/skills/navigation#astrogation-drivespace",
-          "type": "Specialty",
-          "attribute": "INT",
-          "cost": 4,
-          "pr": "T",
-          "tier": 2
-        },
-        {
-          "skill": "Entertainment",
-          "skill_url": "/skills/entertainment",
-          "type": "Broad",
-          "attribute": "PER",
-          "cost": 4,
-          "pr": "DF",
-          "tier": 1
-        },
-        {
-          "skill": "Act",
-          "skill_url": "/skills/entertainment#act",
-          "type": "Specialty",
-          "attribute": "PER",
-          "cost": 2,
-          "pr": "DF",
-          "tier": 2
-        },
-        {
-          "skill": "Dance",
-          "skill_url": "/skills/entertainment#dance",
-          "type": "Specialty",
-          "attribute": "PER",
-          "cost": 2,
-          "pr": "DF",
-          "tier": 2
-        },
-        {
-          "skill": "Musical instrument",
-          "skill_url": "/skills/entertainment#musical-instrument",
-          "type": "Specialty",
-          "attribute": "PER",
-          "cost": 2,
-          "pr": "DF",
-          "tier": 2
-        },
-        {
-          "skill": "Navigation",
-          "skill_url": "/skills/navigation",
-          "type": "Broad",
-          "attribute": "INT",
-          "cost": 3,
-          "pr": "T",
-          "tier": 1
-        },
-        {
-          "skill": "Astrogation—system",
-          "skill_url": "/skills/navigation#astrogation-system",
-          "type": "Specialty",
-          "attribute": "INT",
-          "cost": 3,
-          "pr": "T",
-          "tier": 2
-        },
-        {
-          "skill": "Navigation—surface",
-          "skill_url": "/skills/navigation#navigation-surface",
-          "type": "Specialty",
-          "attribute": "INT",
-          "cost": 3,
-          "pr": "T",
-          "tier": 2
-        },
-        {
-          "skill": "Resolve",
-          "skill_url": "/skills/resolve",
-          "type": "Broad",
-          "attribute": "WIL",
-          "cost": 6,
-          "pr": "—",
-          "tier": 1
-        },
-        {
-          "skill": "Mental resolve",
-          "skill_url": "/skills/resolve#mental-resolve",
-          "type": "Specialty",
-          "attribute": "WIL",
-          "cost": 3,
-          "pr": "—",
-          "tier": 2
-        },
-        {
-          "skill": "Physical resolve",
-          "skill_url": "/skills/resolve#physical-resolve",
-          "type": "Specialty",
-          "attribute": "WIL",
-          "cost": 3,
-          "pr": "—",
-          "tier": 2
-        },
-        {
-          "skill": "Security",
-          "skill_url": "/skills/security",
-          "type": "Broad",
-          "attribute": "INT",
-          "cost": 3,
-          "pr": "FT",
-          "tier": 1
-        },
-        {
-          "skill": "Protection protocols",
-          "skill_url": "/skills/security#protection-protocols",
-          "type": "Specialty",
-          "attribute": "INT",
-          "cost": 3,
-          "pr": "T",
-          "tier": 2
-        },
-        {
-          "skill": "Security devices",
-          "skill_url": "/skills/security#security-devices",
-          "type": "Specialty",
-          "attribute": "INT",
-          "cost": 4,
-          "pr": "T",
-          "tier": 2
-        },
-        {
-          "skill": "Stamina",
-          "skill_url": "/skills/stamina",
-          "type": "Broad",
-          "attribute": "CON",
-          "cost": 3,
-          "pr": "C",
-          "tier": 1
-        },
-        {
-          "skill": "Endurance",
-          "skill_url": "/skills/stamina#endurance",
-          "type": "Specialty",
-          "attribute": "CON",
-          "cost": 4,
-          "pr": "C",
-          "tier": 2
-        },
-        {
-          "skill": "Resist pain",
-          "skill_url": "/skills/stamina#resist-pain",
-          "type": "Specialty",
-          "attribute": "CON",
-          "cost": 5,
-          "pr": "CF",
-          "tier": 2
-        },
-        {
-          "skill": "Survival",
-          "skill_url": "/skills/survival",
-          "type": "Broad",
-          "attribute": "CON",
-          "cost": 3,
-          "pr": "—",
-          "tier": 1
-        },
-        {
-          "skill": "Adaptability",
-          "skill_url": "/skills/survival#adaptability",
-          "type": "Specialty",
-          "attribute": "CON",
-          "cost": 3,
-          "pr": "T",
-          "tier": 2
-        },
-        {
-          "skill": "Survival training [spec]",
-          "skill_url": "/skills/survival#survival-training-spec",
-          "type": "Specialty",
-          "attribute": "CON",
-          "cost": 3,
-          "pr": "—",
-          "tier": 2
-        },
-        {
-          "skill": "Trailblazing",
-          "skill_url": "/skills/survival#trailblazing",
-          "type": "Specialty",
-          "attribute": "CON",
-          "cost": 3,
-          "pr": "T",
-          "tier": 2
-        },
-        {
-          "skill": "Telekinesis",
-          "skill_url": "/psionics/telekinesis",
-          "type": "Broad",
-          "attribute": "WIL",
-          "cost": 6,
-          "pr": "—",
-          "tier": 1
-        },
-        {
-          "skill": "Telepathy",
-          "skill_url": "/psionics/telepathy",
-          "type": "Broad",
-          "attribute": "WIL",
-          "cost": 6,
-          "pr": "—",
-          "tier": 1
-        },
-        {
-          "skill": "Teleportation",
-          "skill_url": "/psionics/teleportation",
-          "type": "Broad",
-          "attribute": "WIL",
-          "cost": 6,
-          "pr": "—",
-          "tier": 1
-        }
-      ]
-    }
-  ]
+    ]
 }

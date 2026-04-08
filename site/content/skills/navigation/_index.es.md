@@ -1,7 +1,7 @@
 +++
 title = "Navegación"
 attribute = "INT"
-category = "Technical"
+category = "Other"
 +++
 
 Esta habilidad amplia proporciona al personaje formación en navegación sobre superficies planetarias o en el espacio. Trazar un rumbo requiere una tirada de habilidad simple.

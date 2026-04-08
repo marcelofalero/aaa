@@ -1,7 +1,7 @@
 +++
 title = "Entretenimiento"
 attribute = "PER"
-category = "Social"
+category = "Other"
 +++
 
 Esta habilidad general representa la competencia de un héroe en las artes escénicas. Los conocimientos técnicos y el entrenamiento son parte de esta habilidad, al igual que la capacidad del héroe para actuar ante un público y provocar una respuesta emocional.

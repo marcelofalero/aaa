@@ -1,7 +1,7 @@
 +++
 title = "Administración"
 attribute = "INT"
-category = "Social"
+category = "Technical"
 +++
 
 Esta habilidad general proporciona a un héroe el conocimiento de los formularios y procedimientos para dirigir una oficina u organización de casi cualquier tipo. Con esta habilidad, un héroe comprende la programación, la gestión de personal y equipos, y las regulaciones y leyes que se aplican a tales empresas. Cualquier organización grande, incluidos gobiernos, agencias y corporaciones, tiene algún tipo de burocracia administrativa con la que un héroe puede tener que interactuar algún día. Esta habilidad le permite intentar identificar a los administradores adecuados con los que tratar en una situación particular, los procedimientos adecuados a seguir y la mejor manera de eliminar la burocracia.

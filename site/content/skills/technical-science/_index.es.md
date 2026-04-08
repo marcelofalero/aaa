@@ -1,7 +1,7 @@
 +++
 title = "Ciencia Técnica"
 attribute = "INT"
-category = "Técnica"
+category = "Technical"
 +++
 
 Esta habilidad amplia representa el entrenamiento de un personaje en las ciencias técnicas, incluyendo el mantenimiento, reparación e invención de dispositivos mecánicos y electrónicos (sin incluir ordenadores/computadoras), y el conocimiento técnico general.
