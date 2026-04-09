@@ -21,7 +21,7 @@ Cuanto mayor sea el nivel de éxito, más potente será la actuación.
 - **Actuar:** Interpretar un papel, asumir un rol dramático e imitación.
 - **Danza:** Movimiento rítmico al son de la música mediante pasos establecidos o improvisación.
 - **Instrumento Musical [Específico]:** Tocar un instrumento concreto y leer música.
-- **Canto:** Vocalista entrenado con voz melodiosa.
+- **Canto:** Vocalista entrenado CON voz melodiosa.
 - **Monólogos
 | Resultados | Descripción |
 | :--- | :--- |
@@ -42,7 +42,7 @@ Dance can be used to entertain, tell a story, or impress an audience. The greate
 
 ⊗ **Enhance Another Skill:** Entertainment specialty skills can be combined with certain Otros skills for greater effect. The higher a Personaje's skill rank in the Entertainment skill, the better his chance of succeeding at using another skill in combination: At rank 1, he receives a **-1 bonus** to the check for the Otros skill; at rank 4 the bonus is **-2**; at rank 8 the bonus is **-3**; and at rank 12 the bonus is **-4**.
 
-Possible combinations of skills to which this benefit could apply include act or dance with Interaction—seduce; dance with **Covert Ops—pickpocket** or Acrobatics; sing with Interaction—taunt; and musical instrument with Leadership—inspire. If you have Otros ideas for how an Entertainment skill can be used in this way, talk them over with your Gamemaster.
+Possible combinations of skills to which this benefit could apply include act or dance with Interaction—seduce; dance with **Covert Ops—pickpocket** or Acrobatics; sing with Interaction—taunt; and musical instrument with Liderazgo—Inspirar. If you have Otros ideas for how an Entertainment skill can be used in this way, talk them over with your Gamemaster.
 
 ---
 

@@ -10,7 +10,7 @@ layout = "list"
 
 Esta habilidad amplia proporciona al personaje el entrenamiento necesario para realizar procedimientos médicos, incluyendo el diagnóstico de dolencias y la investigación de información médica.
 
-Un personaje con solo la habilidad amplia no puede tratar daños; se requieren las especialidades de **Tratamiento** o **Cirugía** (o la especialidad de **Primeros auxilios** de la habilidad amplia de Conocimiento) para esas tareas.
+Un personaje CON solo la habilidad amplia no puede tratar daños; se requieren las especialidades de **Tratamiento** o **Cirugía** (o la especialidad de **Primeros auxilios** de la habilidad amplia de Conocimiento) para esas tareas.
 
 ---
 
@@ -62,7 +62,7 @@ La psicología es el estudio de la mente y el comportamiento. Puede usarse para 
 
 La cirugía implica el tratamiento de lesiones o trastornos del cuerpo mediante incisiones o manipulación. Se utiliza para reparar daños internos, extraer objetos extraños o realizar trasplantes de órganos.
 
-▶ **Competencia quirúrgica:** En el rango 3, el personaje puede reparar o curar organismos con implantes cibernéticos. En el rango 6, el personaje puede instalar implantes cibernéticos.
+▶ **Competencia quirúrgica:** En el rango 3, el personaje puede reparar o curar organismos CON implantes cibernéticos. En el rango 6, el personaje puede instalar implantes cibernéticos.
 
 ---
 
@@ -73,7 +73,7 @@ La cirugía implica el tratamiento de lesiones o trastornos del cuerpo mediante 
 
 *Esta habilidad no se puede usar sin entrenamiento.*
 
-La especialidad de tratamiento puede utilizarse para todas las tareas que cubren los primeros auxilios, pero con mayor eficacia.
+La especialidad de tratamiento puede utilizarse para todas las tareas que cubren los primeros auxilios, pero CON mayor eficacia.
 
 ### Curar Daño
 - **Daño por aturdimiento:** Restaura 2, 3 o 4 puntos a un paciente consciente.

@@ -1,25 +1,25 @@
 +++
-title = "Combate Cuerpo a Cuerpo"
-attribute = "STR"
+title = "Combate cuerpo a cuerpo"
+attribute = "FUE"
 category = "Combate"
 type = "skill"
 layout = "list"
 +++
 
-El Combate Cuerpo a Cuerpo representa la competencia básica de cualquier combatiente físico que participa en una lucha a corta distancia. Abarca la comprensión esencial del alcance, el tiempo y la transferencia eficiente de la fuerza cinética a través del cuerpo o una herramienta de mano. Un héroe entrenado en esta habilidad general posee una comprensión inherente de la conciencia espacial y la puntería, lo que le permite identificar vulnerabilidades en un oponente mientras mantiene su propio centro de gravedad y postura con el arma durante un intercambio.
+El Combate Cuerpo a Cuerpo representa la competencia básica de cualquier combatiente físico que participa en una lucha a corta distancia. Abarca la comprensión esencial del alcance, el tiempo y la transferencia eficiente de la fuerza cinética a través del cuerpo o una herramienta de mano. Un héroe entrenado en esta habilidad general posee una comprensión inherente de la conciencia espacial y la puntería, lo que le permite identificar vulnerabilidades en un oponente mientras mantiene su propio centro de gravedad y postura CON el arma durante un intercambio.
 
-El entrenamiento profesional en este campo también facilita el uso de armas de fuego en medio de una lucha. Este entrenamiento elimina las penalizaciones de +1 paso de las pistolas y subfusiles cuando se usan contra un oponente en cuerpo a cuerpo, y elimina la bonificación de +2 pasos para desarmar que un oponente tiene contra ti cuando empuñas un rifle de asalto, un rifle de francotirador o cualquier forma de arma pesada equipada. Además, las pistolas y los subfusiles se manejan con la misma facilidad que las armas cuerpo a cuerpo de una mano; se pueden desenfundar y disparar en cualquier circunstancia en la que se permitiría un cuchillo o una porra.
+El entrenamiento profesional en este campo también facilita el uso de armas de fuego en medio de una lucha. Este entrenamiento elimina las penalizaciones de +1 paso de las pistolas y subfusiles cuando se usan contra un oponente en cuerpo a cuerpo, y elimina la bonificación de +2 pasos para desarmar que un oponente tiene contra ti cuando empuñas un rifle de asalto, un rifle de francotirador o cualquier forma de arma pesada equipada. Además, las pistolas y los subfusiles se manejan CON la misma facilidad que las armas cuerpo a cuerpo de una mano; se pueden desenfundar y disparar en cualquier circunstancia en la que se permitiría un cuchillo o una porra.
 
 ### Daño sin Armas
 
-El daño base de un ataque sin armas depende del tamaño del personaje; para un héroe de tamaño mediano, el daño base es **d4s/d4+1s/d4+2s**, más la bonificación de Fuerza del personaje. Ciertos implementos pueden usarse para aumentar este daño, aunque algunos requieren un entrenamiento especializado para desbloquear todo su potencial. La entrada de la habilidad en la tabla de armas indica si el arma requiere rangos en una habilidad de especialidad particular para usarla de manera efectiva; cada rango por debajo del requisito indicado resulta en una penalización de +1 paso a cualquier ataque realizado con tales armas.
+El daño base de un ataque sin armas depende del tamaño del personaje; para un héroe de tamaño mediano, el daño base es **d4s/d4+1s/d4+2s**, más la bonificación de Fuerza del personaje. Ciertos implementos pueden usarse para aumentar este daño, aunque algunos requieren un entrenamiento especializado para desbloquear todo su potencial. La entrada de la habilidad en la tabla de armas indica si el arma requiere rangos en una habilidad de especialidad particular para usarla de manera efectiva; cada rango por debajo del requisito indicado resulta en una penalización de +1 paso a cualquier ataque realizado CON tales armas.
 
 ----------------------
 
-## Artes Marciales Defensivas
-### (STR)
+## Arma blanca
+### (FUE)
 
-La esencia de las artes marciales defensivas y basadas en la destreza radica en la no resistencia y la manipulación sofisticada de los vectores cinéticos. En lugar de enfrentar la fuerza con la fuerza, estos estilos utilizan movimientos fluidos y esféricos para redirigir el impulso de un atacante, convirtiendo efectivamente su propia masa y aceleración en su contra. Al priorizar la elasticidad estructural y la propiocepción de alto nivel, un practicante permanece inasible, utilizando un juego de pies preciso y un cambio de peso dinámico para abandonar la línea de ataque mientras realiza una transición simultánea a una posición de contra-apalancamiento.
+La esencia de las artes marciales defensivas y basadas en la destreza radica en la no resistencia y la manipulación sofisticada de los vectores cinéticos. En lugar de enfrentar la fuerza CON la fuerza, estos estilos utilizan movimientos fluidos y esféricos para redirigir el impulso de un atacante, convirtiendo efectivamente su propia masa y aceleración en su contra. Al priorizar la elasticidad estructural y la propiocepción de alto nivel, un practicante permanece inasible, utilizando un juego de pies preciso y un cambio de peso dinámico para abandonar la línea de ataque mientras realiza una transición simultánea a una posición de contra-apalancamiento.
 
 **Rango 1: Línea de Base Táctica.** El practicante aprende a mantener el equilibrio mientras identifica las aberturas. Aumenta el daño base sin armas a **d4s/d6s/d6w**.
 
@@ -37,14 +37,14 @@ La esencia de las artes marciales defensivas y basadas en la destreza radica en 
 
 ---
 
-## Artes Marciales de Poder
-### (STR)
+## Arma contundente
+### (FUE)
 
 La esencia de las artes marciales orientadas al poder radica en la movilización eficiente de la masa corporal total a través de la alineación estructural y la secuenciación cinética explosiva. En lugar de depender de la fuerza muscular aislada, estos estilos tratan el cuerpo como una unidad única y rígida en el momento del impacto, utilizando el suelo como punto de apoyo para canalizar la energía de las piernas y las caderas giratorias hacia un punto de entrega enfocado. Al sincronizar la respiración, el apilamiento esquelético y el "peso que cae", el practicante maximiza la física del impulso para superar la resistencia de un oponente a través de la pura integridad estructural y la fuerza calculada.
 
 **Rango 1: El practicante aprende a aprovechar adecuadamente su masa.** Aumenta el daño base sin armas a **d4s/d4w/d6+1w**.
 
-**Rango 3: Entrega de fuerza con alto impulso.** Un éxito Asombroso en un ataque obliga al objetivo a realizar una prueba de noqueo (Resolución o Resistencia) con una penalización de +1 paso. Esta penalización aumenta a +2 en el Rango 6, +3 en el Rango 9 y +4 en el Rango 12.
+**Rango 3: Entrega de fuerza CON alto impulso.** Un éxito Asombroso en un ataque obliga al objetivo a realizar una prueba de noqueo (Resolución o Resistencia) CON una penalización de +1 paso. Esta penalización aumenta a +2 en el Rango 6, +3 en el Rango 9 y +4 en el Rango 12.
 
 **Rango 4: La eficiencia estructural aumenta el daño.** Todo el daño sin armas aumenta en 1. Esta bonificación aumenta en 1 adicional en el Rango 8 y el Rango 12.
 
@@ -56,7 +56,7 @@ La esencia de las artes marciales orientadas al poder radica en la movilización
 
 **Rango 12: Maestro de la Fuerza.** La penalización de armadura "tirar dos veces/tomar el peor" ahora se aplica a las Armaduras de Poder y las defensas sobrenaturales.
 
-**Nota:** Los practicantes que utilizan con frecuencia las opciones de Ataque Total en combate suelen ser llamados luchadores.
+**Nota:** Los practicantes que utilizan CON frecuencia las opciones de Ataque Total en combate suelen ser llamados luchadores.
 
 -------------------------------
 
@@ -64,18 +64,18 @@ La esencia de las artes marciales orientadas al poder radica en la movilización
 
 ▶ Parada de Reacción: Cuando un personaje alcanza el rango 4, puede intentar parar siempre que se utilice un ataque cuerpo a cuerpo o sin armas contra él. El intento de parada gasta la siguiente acción disponible del personaje. Por ejemplo, un héroe que logra un resultado de chequeo de acción Ordinario y tiene 2 acciones por ronda podría intentar parar ataques dirigidos contra él en las fases Asombrosa y Buena, pero luego no le quedarían acciones para las fases Ordinaria y Marginal.
 
-▶ Doble Golpe: Cuando un héroe alcanza el rango de habilidad 6, aprende a realizar un doble golpe contra un objetivo con un chequeo de habilidad exitoso. Un doble golpe funciona de la siguiente manera: El jugador tira un dado de control y dos dados de situación para realizar su ataque de doble golpe. El primer dado de situación es el modificador base necesario para realizar un ataque con una penalización de +1 paso; el segundo dado de situación es el modificador base con una penalización de +2 pasos.
+▶ Doble Golpe: Cuando un héroe alcanza el rango de habilidad 6, aprende a realizar un doble golpe contra un objetivo CON un chequeo de habilidad exitoso. Un doble golpe funciona de la siguiente manera: El jugador tira un dado de control y dos dados de situación para realizar su ataque de doble golpe. El primer dado de situación es el modificador base necesario para realizar un ataque CON una penalización de +1 paso; el segundo dado de situación es el modificador base CON una penalización de +2 pasos.
 
-▶ Multigolpe: Cuando un héroe alcanza el rango de habilidad 9, aprende a realizar múltiples ataques en una sola fase. El héroe puede golpear con un arma cuerpo a cuerpo tres veces en una fase. Estos ataques pueden dirigirse a un solo objetivo o a hasta tres blancos separados a menos de dos metros del héroe.
+▶ Multigolpe: Cuando un héroe alcanza el rango de habilidad 9, aprende a realizar múltiples ataques en una sola fase. El héroe puede golpear CON un arma cuerpo a cuerpo tres veces en una fase. Estos ataques pueden dirigirse a un solo objetivo o a hasta tres blancos separados a menos de dos metros del héroe.
 
-Para resolver un ataque de multigolpe, el jugador del héroe tira un dado de control y tres dados de situación al mismo tiempo. Todos los resultados se leen en el dado de control, según lo modificado por los tres dados de situación. En un ataque de multigolpe, el primero dado de situación es el dado base para el ataque con una penalización de +1 paso. El segundo dado es el dado base con una penalización de +2 pasos. El tercero dado es el dado base con una penalización de +3 pasos. Al calcular el dado de situación base, utiliza el objetivo que sea más difícil de golpear.
+Para resolver un ataque de multigolpe, el jugador del héroe tira un dado de control y tres dados de situación al mismo tiempo. Todos los resultados se leen en el dado de control, según lo modificado por los tres dados de situación. En un ataque de multigolpe, el primero dado de situación es el dado base para el ataque CON una penalización de +1 paso. El segundo dado es el dado base CON una penalización de +2 pasos. El tercero dado es el dado base CON una penalización de +3 pasos. Al calcular el dado de situación base, utiliza el objetivo que sea más difícil de golpear.
 
 ---
 
-## Defensive Martial Arts
-### (STR)
+## Artes marciales defensivas
+### (FUE)
 
-As a Personaje improves his ability in the defensive martial arts Especialidad, he gains rank benefits as described below. Note: These benefits only apply when the Personaje is fighting unarmed or with appropriate martial arts implements.
+As a Personaje improves his ability in the Artes marciales defensivas Especialidad, he gains rank benefits as described below. Note: These benefits only apply when the Personaje is fighting unarmed or with appropriate martial arts implements.
 
 The essence of defensive and dexterity-based martial arts lies in non-resistance and the sophisticated manipulation of kinetic vectors. Rather than meeting force with force, these styles utilize fluid, spherical movements to redirect an attacker's momentum, effectively turning their own mass and acceleration against them.
 
@@ -99,10 +99,10 @@ How we do things reaches rank 10, All Out Attacks that miss him can be redirecte
 
 ---
 
-## Power Martial Arts
-### (STR)
+## Artes marciales de poder
+### (FUE)
 
-As a Personaje improves his ability in the power martial arts Especialidad, he gains rank benefits as described below. Note: These benefits only apply when the Personaje is fighting unarmed or with appropriate martial arts implements.
+As a Personaje improves his ability in the Artes marciales de poder Especialidad, he gains rank benefits as described below. Note: These benefits only apply when the Personaje is fighting unarmed or with appropriate martial arts implements.
 
 The essence of power-oriented martial arts lies in the efficient mobilization of total body mass through structural alignment and explosive kinetic sequencing. These styles treat the body as a single, rigid unit at the moment of impact, using the ground as a fulcrum to funnel energy.
 
@@ -122,7 +122,7 @@ Every additional attacker who takes part in the same overpowering attempt provid
 
 ▶ Structural Destruction: When a Personaje reaches rank 8, if he utilizes an All Out Attack, the target must roll their Armor dice twice and take the worse result. This applies to standard armors.
 
-▶ Master of Force: When a Personaje reaches rank 12, the "roll twice/take worse" armor penalty now applies to Powered Armors and supernatural defenses.
+▶ Master of Force: When a Personaje reaches rank 12, the "roll twice/take worse" armor penalty now applies to Armas de energía Armors and supernatural defenses.
 
 **Note:** Practitioners that frequently utilize the All Out Attack option in Combate are usually called brawlers.
 
@@ -130,12 +130,12 @@ Every additional attacker who takes part in the same overpowering attempt provid
 
 ---
 
-## Powered
-### (STR)
+## Armas de energía
+### (FUE)
 
-As a Personaje improves his ability in the powered Especialidad, he gains rank benefits as described below. Note: These benefits only apply when the Personaje is using a weapon covered by this skill.
+As a Personaje improves his ability in the Armas de energía Especialidad, he gains rank benefits as described below. Note: These benefits only apply when the Personaje is using a weapon covered by this skill.
 
-Due to the inherent complexity of powered weapons they are more fragile than their counterparts; this requires the user to be more careful when parrying, resulting in a +2 step penalty on parry checks.
+Due to the inherent complexity of Armas de energía weapons they are more fragile than their counterparts; this requires the user to be more careful when parrying, resulting in a +2 step penalty on parry checks.
 
 ⊗ Resistance Modifier: At higher ranks, the skill provides an improvement to a Personaje's Strength resistance modifier. It improves by +1 at rank 4, by +1 again at rank 8, and by +1 again at rank 12. This increase doesn't stack with similar bonuses provided by Otros Combate cuerpo a cuerpo specialty skills.
 

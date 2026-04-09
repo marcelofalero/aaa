@@ -19,7 +19,7 @@ Para obtener detalles completos sobre cómo se usan las habilidades de **Operaci
 ## Comunicaciones
 ### (INT)
 
-Un especialista en comunicaciones puede operar todos los equipos de comunicación personales y de la nave con precisión, intentar descifrar señales de comunicación codificadas, codificar mensajes salientes, interferir (jam) señales de comunicación y sensores externos, e intentar superar las interferencias de una fuente externa.
+Un especialista en comunicaciones puede operar todos los equipos de comunicación personales y de la nave CON precisión, intentar descifrar señales de comunicación codificadas, codificar mensajes salientes, interferir (jam) señales de comunicación y sensores externos, e intentar superar las interferencias de una fuente externa.
 
 ---
 
@@ -28,7 +28,7 @@ Un especialista en comunicaciones puede operar todos los equipos de comunicació
 ## Defensas
 ### (INT)
 
-Un especialista en defensas puede operar todos los sistemas defensivos de la nave con precisión, intentar dirigir las defensas a las partes de la nave donde son más necesarias, y analizar patrones de ataque para hacer el mejor uso de las defensas que posee su nave. En el combate de vehículos espaciales, el operador de defensas puede proporcionar una penalización a las armas o sensores de un oponente durante cualquier ataque dado.
+Un especialista en defensas puede operar todos los sistemas defensivos de la nave CON precisión, intentar dirigir las defensas a las partes de la nave donde son más necesarias, y analizar patrones de ataque para hacer el mejor uso de las defensas que posee su nave. En el combate de vehículos espaciales, el operador de defensas puede proporcionar una penalización a las armas o sensores de un oponente durante cualquier ataque dado.
 
 ---
 
@@ -46,7 +46,7 @@ Un especialista en ingeniería monitorea los sistemas electrónicos y mecánicos
 ## Sensores
 ### (INT)
 
-Un especialista en sensores puede operar con precisión todos los equipos de sensores personales y de la nave, intentar escanear naves o planetas, y analizar esas lecturas en un corto período de tiempo. Puede usar los datos para proporcionar bonificaciones a un operador de armas o defensas.
+Un especialista en sensores puede operar CON precisión todos los equipos de sensores personales y de la nave, intentar escanear naves o planetas, y analizar esas lecturas en un corto período de tiempo. Puede usar los datos para proporcionar bonificaciones a un operador de armas o defensas.
 
 ---
 
@@ -55,7 +55,7 @@ Un especialista en sensores puede operar con precisión todos los equipos de sen
 ## Armas
 ### (INT)
 
-Un especialista en armas puede operar con precisión todos los sistemas de armas de la nave. En el combate de naves espaciales, el operador de armas elige objetivos y realiza ataques.
+Un especialista en armas puede operar CON precisión todos los sistemas de armas de la nave. En el combate de naves espaciales, el operador de armas elige objetivos y realiza ataques.
 
 ---
 

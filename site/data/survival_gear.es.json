@@ -58,7 +58,7 @@
                         "mass": "50 kg",
                         "cost": "1750",
                         "avail": "Com",
-                        "description": "El domo de habitat Gliese 300 está hecho de numaplas micromejorados—un plástico pesado y denso con cierres de tejido forjados y cámaras pneumétricas de inflación automática. Un solo cartucho estándar COg (dos están incluidos) puede desplegar el domo en momentos. Cuando se infla, el domo mide 2 metros de altura y 5 metros de diámetro."
+                        "description": "El domo de habitat Gliese 300 está hecho de numaplas micromejorados—un plástico pesado y denso CON cierres de tejido forjados y cámaras pneumétricas de inflación automática. Un solo cartucho estándar COg (dos están incluidos) puede desplegar el domo en momentos. Cuando se infla, el domo mide 2 metros de altura y 5 metros de diámetro."
                     },
                     {
                         "name": "CUERDA DE GUARDAMORTE DOS-PERSONAS ALBERGUE CALIENTE",
@@ -66,7 +66,7 @@
                         "mass": "1 kg",
                         "cost": "135",
                         "avail": "Com",
-                        "description": "El ARMADILLO MPT Two-MAN TENT es un toldo ligero, fácil de usar que ofrece comodidad y durabilidad. Proporciona apoyo para dos personas con una sola matriz de soporte numaplas, la cual inflama con un pedal pie útil para darle una estructura más ligera y más robusta que el aluminio. El tentáculo pesa 1 kg y cuesta $135. Está disponible en cualquier lugar."
+                        "description": "El ARMADILLO MPT Two-MAN TENT es un toldo ligero, fácil de usar que ofrece comodidad y durabilidad. Proporciona apoyo para dos personas CON una sola matriz de soporte numaplas, la cual inflama CON un pedal pie útil para darle una estructura más ligera y más robusta que el aluminio. El tentáculo pesa 1 kg y cuesta $135. Está disponible en cualquier lugar."
                     },
                     {
                         "name": "Botas de Unner 60 CLIMATE SuIT",
@@ -74,7 +74,7 @@
                         "mass": "1 kg",
                         "cost": "825",
                         "avail": "Common",
-                        "description": "El Unner 60 Climate Suit es una chaqueta versátil, ligera y cómoda diseñada para mantenerte saludable y fresco en entornos extraterrestres sin vacío. Sus elementos de calentamiento/cooling permiten trabajar y viajar durante longitudes de tiempo en ambientes con atmósfera tóxica, delgado, densa o moderadamente corrosiva."
+                        "description": "El Unner 60 Climate Suit es una chaqueta versátil, ligera y cómoda diseñada para mantenerte saludable y fresco en entornos extraterrestres sin vacío. Sus elementos de calentamiento/cooling permiten trabajar y viajar durante longitudes de tiempo en ambientes CON atmósfera tóxica, delgado, densa o moderadamente corrosiva."
                     },
                     {
                         "name": "Cinturón de armadura E-Suit Explorador D9",
@@ -82,7 +82,7 @@
                         "mass": "5 kg",
                         "cost": "2550",
                         "avail": "Com",
-                        "description": "El traje armado E-Suit del Explorador está llevado por un capa de aire aire, puntuada con resistencia al agujero y algodón. Proporciona protección contra los peligros ambientales como el vacío, la gravedad, la radiación y las alteraciones de presión atmosférica. Deja de ser útil si el portador sufre 4 puntos o más de heridas primarias o mortales."
+                        "description": "El traje armado E-Suit del Explorador está llevado por un capa de aire aire, puntuada CON resistencia al agujero y algodón. Proporciona protección contra los peligros ambientales como el vacío, la gravedad, la radiación y las alteraciones de presión atmosférica. Deja de ser útil si el portador sufre 4 puntos o más de heridas primarias o mortales."
                     }
                 ]
             }

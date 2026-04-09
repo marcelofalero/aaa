@@ -8,7 +8,7 @@ layout = "list"
 
 Esta habilidad amplia proporciona a un personaje entrenamiento básico y una comprensión de las tácticas y las situaciones tácticas. Si bien las tácticas pueden entrar en juego en muchos tipos de situaciones, se utilizan más comúnmente durante el combate de infantería, el combate espacial y el combate de vehículos.
 
-El uso exitoso de la habilidad proporciona una penalización a la siguiente comprobación de habilidad del oponente, lo que indica que desarrollaste un plan táctico y lo empleaste con éxito contra él.
+El uso exitoso de la habilidad proporciona una penalización a la siguiente comprobación de habilidad del oponente, lo que indica que desarrollaste un plan táctico y lo empleaste CON éxito contra él.
 
 ### Resultados de la Comprobación de Táctica
 - **Fallo Crítico:** El oponente ve a través de tus intenciones y recibe un **bono de -1** en su próxima comprobación de habilidad.
@@ -26,7 +26,7 @@ El uso exitoso de la habilidad proporciona una penalización a la siguiente comp
 
 Esta habilidad de especialidad cubre las estrategias de campo de batalla cuando el componente principal de la batalla son las tropas individuales.
 
-⊗ **Efecto Incrementado:** A medida que un personaje alcanza rangos más altos en una especialidad de Táctica, recibe un bono de dado de situación para tratar con las fuerzas opuestas (infantería, naves espaciales o vehículos). El bono es de **-1 paso al rango 4**, **-2 pasos al rango 8** y **-3 pasos al rango 12**.
+⊗ **Efecto Incrementado:** A medida que un personaje alcanza rangos más altos en una especialidad de Táctica, recibe un bono de dado de situación para tratar CON las fuerzas opuestas (infantería, naves espaciales o vehículos). El bono es de **-1 paso al rango 4**, **-2 pasos al rango 8** y **-3 pasos al rango 12**.
 
 ---
 
@@ -37,7 +37,7 @@ Esta habilidad de especialidad cubre las estrategias de campo de batalla cuando 
 
 Estrategias de campo de batalla que involucran el combate entre naves espaciales.
 
-⊗ **Efecto Incrementado:** A medida que un personaje alcanza rangos más altos en una especialidad de Táctica, recibe un bono de dado de situación para tratar con las fuerzas opuestas. El bono es de **-1 paso al rango 4**, **-2 pasos al rango 8** y **-3 pasos al rango 12**.
+⊗ **Efecto Incrementado:** A medida que un personaje alcanza rangos más altos en una especialidad de Táctica, recibe un bono de dado de situación para tratar CON las fuerzas opuestas. El bono es de **-1 paso al rango 4**, **-2 pasos al rango 8** y **-3 pasos al rango 12**.
 
 ---
 
@@ -48,7 +48,7 @@ Estrategias de campo de batalla que involucran el combate entre naves espaciales
 
 Estrategias de campo de batalla que involucran combate donde los vehículos que no son naves espaciales (aire, tierra o agua) son el componente principal.
 
-⊗ **Efecto Incrementado:** A medida que un personaje alcanza rangos más altos en una especialidad de Táctica, recibe un bono de dado de situación para tratar con las fuerzas opuestas. El bono es de **-1 paso al rango 4**, **-2 pasos al rango 8** y **-3 pasos al rango 12**.
+⊗ **Efecto Incrementado:** A medida que un personaje alcanza rangos más altos en una especialidad de Táctica, recibe un bono de dado de situación para tratar CON las fuerzas opuestas. El bono es de **-1 paso al rango 4**, **-2 pasos al rango 8** y **-3 pasos al rango 12**.
 
 ---
 

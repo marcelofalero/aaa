@@ -26,6 +26,7 @@ def load_mapping():
     if not os.path.exists(MAPPING_MD): return mapping
     with open(MAPPING_MD, 'r', encoding='utf-8') as f:
         content = f.read()
+    # Simple table parser for terminology mapping
     matches = re.findall(r'\|\s*(.*?)\s*\|\s*(.*?)\s*\|', content)
     for en, es in matches:
         en_clean = en.strip().strip('*').strip('_')
@@ -36,16 +37,24 @@ def load_mapping():
 
 def apply_mapping(text, mapping):
     if not text or not isinstance(text, str): return text
+    # Soft mapping using terminology rules
     sorted_en_terms = sorted(mapping.keys(), key=len, reverse=True)
     for en in sorted_en_terms:
-        # Avoid double mapping or mapping inside other words
         pattern = r'\b' + re.escape(en) + r'\b' if re.match(r'^\w', en) else re.escape(en)
         text = re.sub(pattern, mapping[en], text, flags=re.IGNORECASE)
     return text
 
+def translate_field(en_val, es_override, mapping, lang):
+    if lang == 'en': return en_val
+    # Strong mapping: prioritize terminal mapping rules over YAML overrides
+    if en_val in mapping:
+        return mapping[en_val]
+    # Soft fallback: use override or apply general mapping rules
+    return es_override if es_override else apply_mapping(en_val, mapping)
+
 def rebuild_all():
     mapping = load_mapping()
-    print(f'Applying {len(mapping)} terminology rules to ABSOLUTELY EVERYTHING...')
+    print(f'Applying {len(mapping)} terminology rules...')
     os.makedirs(SITE_DATA_DIR, exist_ok=True)
     
     skills_yaml = os.path.join(DATA_SOURCES_DIR, 'skills.yaml')
@@ -55,6 +64,7 @@ def rebuild_all():
             skills_data = yaml.load(f, Loader=yaml.FullLoader)
         process_skills(skills_data, mapping)
     
+    # Generic gear data (Armor, weapons, etc)
     gear_sources = ['armor', 'computers', 'cybernetics', 'survival_gear', 'weapons']
     for base_name in gear_sources:
         yaml_path = os.path.join(DATA_SOURCES_DIR, f'{base_name}.yaml')
@@ -71,18 +81,25 @@ def rebuild_all():
 def apply_rules_to_node(node, mapping, lang='en'):
     if isinstance(node, dict):
         new_node = {}
+        # Special case: translation dictionary
         if 'en' in node and 'es' in node and len(node) == 2:
              val = node.get(lang, node.get('en', ''))
              return apply_mapping(val, mapping) if lang == 'es' else val
-        if lang == 'es' and 'name_es' in node:
-            new_node['name'] = apply_mapping(node['name_es'], mapping)
+        
         for k, v in node.items():
             if k in ['name_es', 'skill_es', 'description_es']: continue
-            if k == 'name' and lang == 'es' and 'name_es' in node: continue
-            new_val = apply_rules_to_node(v, mapping, lang)
-            if isinstance(new_val, str) and lang == 'es':
-                new_val = apply_mapping(new_val, mapping)
-            new_node[k] = new_val
+            # Translate keys like 'name'
+            if k == 'name':
+                new_node[k] = translate_field(v, node.get('name_es'), mapping, lang)
+            elif k == 'skill':
+                new_node[k] = translate_field(v, node.get('skill_es'), mapping, lang)
+            elif k == 'attribute':
+                new_node[k] = translate_field(v, None, mapping, lang)
+            else:
+                new_val = apply_rules_to_node(v, mapping, lang)
+                if isinstance(new_val, str) and lang == 'es':
+                    new_val = apply_mapping(new_val, mapping)
+                new_node[k] = new_val
         return new_node
     elif isinstance(node, list):
         return [apply_rules_to_node(item, mapping, lang) for item in node]
@@ -96,67 +113,46 @@ def process_skills(skills_list, mapping):
         slug = url.strip('/').split('/')[-1]
         out_dir = f'site/content/skills/{slug}'
         os.makedirs(out_dir, exist_ok=True)
-        # Markdown Page Generation
+        
         for lang in ['en', 'es']:
-            title = broad['skill'] if lang == 'en' else broad.get('skill_es', apply_mapping(broad['skill'], mapping))
-            attr = broad['attribute'] if lang == 'en' else apply_mapping(broad['attribute'], mapping)
-            # Use normalized categories for frontmatter too
+            title = translate_field(broad['skill'], broad.get('skill_es'), mapping, lang)
+            attr = translate_field(broad['attribute'], None, mapping, lang)
             cat_en = broad.get('category', 'Other')
             cat = cat_en if lang == 'en' else CATEGORY_MAP.get(cat_en, apply_mapping(cat_en, mapping))
-            
             desc = broad.get('description', '') if lang == 'en' else apply_mapping(broad.get('description_es', broad.get('description', '')), mapping)
+            
             suffix = '.es.md' if lang == 'es' else '.md'
             with open(os.path.join(out_dir, '_index' + suffix), 'w', encoding='utf-8') as f:
                 f.write(f'+++\ntitle = "{title}"\nattribute = "{attr}"\ncategory = "{cat}"\ntype = "skill"\nlayout = "list"\n+++\n\n{desc}\n\n')
                 for spec in broad.get('specialties', []):
-                    s_title = spec['skill'] if lang == 'en' else spec.get('skill_es', apply_mapping(spec['skill'], mapping))
-                    s_attr = spec['attribute'] if lang == 'en' else apply_mapping(spec['attribute'], mapping)
+                    s_title = translate_field(spec['skill'], spec.get('skill_es'), mapping, lang)
+                    s_attr = translate_field(spec['attribute'], None, mapping, lang)
                     s_desc = spec.get('description', '') if lang == 'en' else apply_mapping(spec.get('description_es', spec.get('description', '')), mapping)
                     f.write(f'## {s_title}\n### ({s_attr})\n\n{s_desc}\n\n---\n\n')
 
-    # FLAT structure for legacy interactive table (deprecated but kept for compatibility)
-    def build_flat_json(lang):
-        groups_dict = defaultdict(list)
-        for b in skills_list:
-            b_name = b['skill'] if lang == 'en' else b.get('skill_es', apply_mapping(b['skill'], mapping))
-            cat_en = b.get('category', 'Other')
-            cat = cat_en if lang == 'en' else CATEGORY_MAP.get(cat_en, apply_mapping(cat_en, mapping))
-            attr = b['attribute'] if lang == 'en' else apply_mapping(b['attribute'], mapping)
-            groups_dict[cat].append({"skill": b_name, "attribute": attr, "skill_url": b['skill_url'], "cost": b.get('cost', 0), "type": "Broad"})
-            for s in b.get('specialties', []):
-                s_name = s['skill'] if lang == 'en' else s.get('skill_es', apply_mapping(s['skill'], mapping))
-                s_attr = s['attribute'] if lang == 'en' else apply_mapping(s['attribute'], mapping)
-                groups_dict[cat].append({"skill": s_name, "attribute": s_attr, "skill_url": s['skill_url'], "cost": s.get('cost', 0), "type": "Specialty"})
-        cols = [{"key": "skill", "name": "Skill" if lang == "en" else "Habilidad", "link": True}, {"key": "attribute", "name": "Attr." if lang == "en" else "Atrib."}, {"key": "cost", "name": "Cost" if lang == "en" else "Costo"}]
-        return {"columns": cols, "groups": [{"name": cat, "items": items} for cat, items in groups_dict.items()]}
-
-    # NEW NESTED structure with fields (skills-table.json)
     def build_nested_skills_table(lang):
         fields = [
             {"key": "skill", "name": "Skill" if lang == 'en' else "Habilidad", "link": True},
             {"key": "attribute", "name": "Attr." if lang == 'en' else "Atrib."},
             {"key": "cost", "name": "Cost" if lang == 'en' else "Costo"}
         ]
-        # Group by category (Tier 1)
         categories = defaultdict(list)
         for b in skills_list:
             cat_en = b.get('category', 'Other')
             cat = cat_en if lang == 'en' else CATEGORY_MAP.get(cat_en, apply_mapping(cat_en, mapping))
             
-            # Tier 2 (Broad)
             broad_entry = {
-                "skill": b['skill'] if lang == 'en' else b.get('skill_es', apply_mapping(b['skill'], mapping)),
-                "attribute": b['attribute'] if lang == 'en' else apply_mapping(b['attribute'], mapping),
+                "skill": translate_field(b['skill'], b.get('skill_es'), mapping, lang),
+                "attribute": translate_field(b['attribute'], None, mapping, lang),
                 "skill_url": b['skill_url'],
                 "cost": b.get('cost', 0),
                 "type": "Broad"
             }
-            # Tier 3 (Specialties)
             specs = []
             for s in b.get('specialties', []):
                 specs.append({
-                    "skill": s['skill'] if lang == 'en' else s.get('skill_es', apply_mapping(s['skill'], mapping)),
-                    "attribute": s['attribute'] if lang == 'en' else apply_mapping(s['attribute'], mapping),
+                    "skill": translate_field(s['skill'], s.get('skill_es'), mapping, lang),
+                    "attribute": translate_field(s['attribute'], None, mapping, lang),
                     "skill_url": s['skill_url'],
                     "cost": s.get('cost', 0),
                     "type": "Specialty"
@@ -165,21 +161,10 @@ def process_skills(skills_list, mapping):
             categories[cat].append(broad_entry)
             
         data = []
-        # Sort categories to ensure consistent output
         for cat in sorted(categories.keys()):
-            data.append({
-                "skill": cat,
-                "type": "Category",
-                "children": categories[cat]
-            })
-            
+            data.append({"skill": cat, "type": "Category", "children": categories[cat]})
         return {"fields": fields, "data": data}
 
-    with open(os.path.join(SITE_DATA_DIR, 'skills.json'), 'w', encoding='utf-8') as f:
-        json.dump(build_flat_json('en'), f, indent=4, ensure_ascii=False)
-    with open(os.path.join(SITE_DATA_DIR, 'skills.es.json'), 'w', encoding='utf-8') as f:
-        json.dump(build_flat_json('es'), f, indent=4, ensure_ascii=False)
-        
     with open(os.path.join(SITE_DATA_DIR, 'skills-table.json'), 'w', encoding='utf-8') as f:
         json.dump(build_nested_skills_table('en'), f, indent=4, ensure_ascii=False)
     with open(os.path.join(SITE_DATA_DIR, 'skills-table.es.json'), 'w', encoding='utf-8') as f:
@@ -187,4 +172,3 @@ def process_skills(skills_list, mapping):
 
 if __name__ == '__main__':
     rebuild_all()
-    print('Category Normalization complete.')

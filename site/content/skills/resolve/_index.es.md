@@ -1,6 +1,6 @@
 +++
 title = "Firmeza"
-attribute = "WIL"
+attribute = "VOL"
 category = "Otros"
 type = "skill"
 layout = "list"
@@ -13,9 +13,9 @@ Esta habilidad amplia representa la fuerza de voluntad interna de un personaje. 
 # Habilidades de Especialidad
 
 ## Firmeza Mental
-### (WIL)
+### (VOL)
 
-La Firmeza Mental representa la capacidad de un personaje para lidiar con el estrés emocional, psicológico o de otro mundo. Se utiliza para resistir efectos que alteran la mente, mantener la concentración bajo una presión extrema o soportar interrogatorios psicológicos.
+La Firmeza Mental representa la capacidad de un personaje para lidiar CON el estrés emocional, psicológico o de otro mundo. Se utiliza para resistir efectos que alteran la mente, mantener la concentración bajo una presión extrema o soportar interrogatorios psicológicos.
 
 | Resultados | Descripción |
 | :--- | :--- |
@@ -32,9 +32,9 @@ La Firmeza Mental representa la capacidad de un personaje para lidiar con el est
 ---
 
 ## Firmeza Física
-### (WIL)
+### (VOL)
 
-La Firmeza Física permite a un personaje llevar su cuerpo más allá de sus límites normales, lidiando con el trauma y la fatiga a través de la pura fuerza de voluntad. Se utiliza para ignorar el choque inicial de una lesión o para retrasar la aparición del agotamiento.
+La Firmeza Física permite a un personaje llevar su cuerpo más allá de sus límites normales, lidiando CON el trauma y la fatiga a través de la pura fuerza de voluntad. Se utiliza para ignorar el choque inicial de una lesión o para retrasar la aparición del agotamiento.
 
 ### Recuperación de Puntos de Aturdimiento
 Al realizar una acción para estabilizarse, un personaje puede intentar una tirada de Firmeza Física para recuperar puntos de aturdimiento durante una escena de combate.

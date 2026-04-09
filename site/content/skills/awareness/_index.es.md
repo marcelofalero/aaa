@@ -1,6 +1,6 @@
 +++
 title = "Alerta [Awareness]"
-attribute = "WIL"
+attribute = "VOL"
 category = "Otros"
 type = "skill"
 layout = "list"
@@ -12,7 +12,7 @@ Esta habilidad amplia representa los poderes de observación, percepción e intu
 
 Notar algo podría ser tan simple como proporcionar una pista que el personaje pasó por alto en el curso normal del juego, o ayuda cuando el personaje parece totalmente perdido o confundido. En un Fallo, el personaje no nota nada. De lo contrario, cualquier éxito proporciona al personaje al menos una pequeña pista. El Director de Juego puede decidir que cuanto mejor sea el nivel de éxito alcanzado, de más detalles se percatará el personaje. Los modificadores de dado de situación se enumeran en la Guía del Director de Juego. Tenga en cuenta también que el uso de ciertas habilidades por parte de otro personaje (como Sigilo y los protocolos de protección de Seguridad) puede añadir modificadores a la comprobación de Alerta de un personaje.
 
-La habilidad amplia de Alerta y sus especialidades son buenos ejemplos de cómo se aplica la regla general sobre el lanzamiento de dados: los dados solo deben lanzarse en una comprobación de habilidad en una situación en la que el Director de Juego necesite determinar si un personaje es capaz de hacer algo difícil o fuera de lo Ordinario. En la mayoría de los casos, los personajes con puntuaciones respetables en Alerta o sus especialidades tendrán éxito automáticamente cuando exista algo que pueda ser notado o percibido; por ejemplo, no se requiere una comprobación de habilidad para determinar si un personaje ve un árbol caído bloqueando su camino. Por otro lado, se puede solicitar una comprobación de habilidad para ver si el personaje nota que el árbol caído tiene un hueco en su tronco donde se oculta un objeto; o, el Director de Juego podría asumir que un personaje que tiene varios rangos en la especialidad de percepción nota inmediatamente el hueco.
+La habilidad amplia de Alerta y sus especialidades son buenos ejemplos de cómo se aplica la regla general sobre el lanzamiento de dados: los dados solo deben lanzarse en una comprobación de habilidad en una situación en la que el Director de Juego necesite determinar si un personaje es capaz de hacer algo difícil o fuera de lo Ordinario. En la mayoría de los casos, los personajes CON puntuaciones respetables en Alerta o sus especialidades tendrán éxito automáticamente cuando exista algo que pueda ser notado o percibido; por ejemplo, no se requiere una comprobación de habilidad para determinar si un personaje ve un árbol caído bloqueando su camino. Por otro lado, se puede solicitar una comprobación de habilidad para ver si el personaje nota que el árbol caído tiene un hueco en su tronco donde se oculta un objeto; o, el Director de Juego podría asumir que un personaje que tiene varios rangos en la especialidad de percepción nota inmediatamente el hueco.
 
 Algunos equipos de sensores pueden proporcionar beneficios a la comprobación de habilidad de Alerta de un personaje, como se describe en la sección de Equipo.
 
@@ -21,7 +21,7 @@ Algunos equipos de sensores pueden proporcionar beneficios a la comprobación de
 # Habilidades de Especialidad
 
 ## Intuición
-### (WIL)
+### (VOL)
 
 Esta habilidad de especialidad representa los instintos naturales de un personaje: su capacidad para sentir el peligro cuando no hay señales obvias evidentes, para evitar la sorpresa o para realizar un salto intuitivo de lógica sin el apoyo de hechos concretos. Es la capacidad de hacer una "mejor suposición" en una situación dada.
 
@@ -34,7 +34,7 @@ Cuando un personaje quiere hacer una "mejor suposición" intuitiva, el Director 
 ---
 
 ## Percepción
-### (WIL)
+### (VOL)
 
 Esta habilidad de especialidad representa la alerta y los poderes de observación de un personaje: el personaje nota algo ya sea consciente o subliminalmente. Mientras que la intuición es un sentimiento o sentido inexplicable, la percepción trabaja sobre señales que pueden ser detectadas por los sentidos normales: una ramita rota en un camino, el clic del seguro de un arma al ser liberado, el aroma de un perfume familiar en un bar abarrotado, un susurro en el viento. Esta habilidad puede ayudar a determinar la capacidad de un personaje para detectar señales de problemas, percibir el verdadero significado en el comentario de una figura de autoridad o notar una pista sutil que asoma entre un montón de hojas.
 
@@ -44,8 +44,8 @@ Cuando el peligro potencial existe obviamente en una situación, el uso subconsc
 
 ---
 
-## Sentido Psiónico
-### (WIL)
+## Sentido psiónico
+### (VOL)
 
 *Esta habilidad no puede usarse sin entrenamiento.*
 
@@ -70,7 +70,7 @@ Los personajes capaces de usar el poder de **Clarividencia** pueden usarlo para 
 ---
 
 ## Sentido psiónico
-### (WIL)
+### (VOL)
 
 
 

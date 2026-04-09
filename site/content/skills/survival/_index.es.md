@@ -14,7 +14,7 @@ Las comprobaciones se realizan **una vez al día**, a menos que el Director de J
 - **Fallo:** El personaje no puede adquirir las necesidades básicas para este día.
 - **Ordinario:** El personaje adquiere suficientes necesidades básicas para mantenerse a sí mismo durante este día.
 - **Bueno:** El personaje adquiere suficientes necesidades básicas para sí mismo y hasta **seis más** para este día.
-- **Asombroso:** El personaje se familiariza tanto con el lugar que la supervivencia ya no es un problema a menos que la situación cambie.
+- **Asombroso:** El personaje se familiariza tanto CON el lugar que la supervivencia ya no es un problema a menos que la situación cambie.
 
 ---
 
@@ -44,12 +44,12 @@ El tipo de terreno o entorno donde se encuentra el personaje puede proporcionar 
 Esta habilidad de especialidad permite a un personaje mejorar su capacidad para usar la habilidad amplia de Supervivencia en un tipo particular de terreno. Esto normalmente incluye todos los tipos de terreno comunes a su **mundo de origen**, además de cualquier otro adquirido por separado.
 
 ### Discernir Peligros
-Mientras se encuentra en un terreno con el que está familiarizado, un personaje es capaz de identificar rápidamente los riesgos ambientales — desde edificios colapsados en suburbios urbanos hasta esporas venenosas en una selva fúngica.
+Mientras se encuentra en un terreno CON el que está familiarizado, un personaje es capaz de identificar rápidamente los riesgos ambientales — desde edificios colapsados en suburbios urbanos hasta esporas venenosas en una selva fúngica.
 - **Ordinario:** El personaje siente un vago peligro posible pero no puede identificar su naturaleza.
-- **Bueno o mejor:** El éxito permite al personaje identificar el peligro con tiempo suficiente para reaccionar apropiadamente.
+- **Bueno o mejor:** El éxito permite al personaje identificar el peligro CON tiempo suficiente para reaccionar apropiadamente.
 
 > [!NOTE]
-> Los modificadores de situación dados en la tabla siempre se aplican, incluso para alguien con un rango alto en la especialidad, pero el rango alto en sí mismo significa que el personaje tiene más probabilidades de éxito.
+> Los modificadores de situación dados en la tabla siempre se aplican, incluso para alguien CON un rango alto en la especialidad, pero el rango alto en sí mismo significa que el personaje tiene más probabilidades de éxito.
 
 ---
 
@@ -64,7 +64,7 @@ Esta especialidad mejora la capacidad del personaje para adaptarse a entornos al
 
 ### Dominio de Entornos Alienígenas
 Un personaje puede realizar un desafío de **Supervivencia—Adaptabilidad**, pasando tiempo estudiando el entorno (una comprobación por día).
-- **Éxito Inicial:** Permite al personaje usar su especialidad de **Entrenamiento en Supervivencia** en el entorno alienígena, pero con una **penalización adicional de +5 pasos**.
+- **Éxito Inicial:** Permite al personaje usar su especialidad de **Entrenamiento en Supervivencia** en el entorno alienígena, pero CON una **penalización adicional de +5 pasos**.
 - **Progresión:** Por cada **3 éxitos adicionales** logrados en el desafío, esta penalización se reduce en un paso (hasta un mínimo del modificador de terreno base).
 - **Maestría:** Una vez que el personaje reduce la penalización por completo, ha **dominado el terreno** y recibe automáticamente **un rango** en una nueva especialidad de **Entrenamiento en Supervivencia** para ese entorno específico.
 
@@ -77,7 +77,7 @@ Un personaje **no puede comprar** o aumentar su rango en un nuevo tipo de terren
 ## Apertura de Sendas
 ### (CON)
 
-Con la apertura de sendas, un personaje aprende a encontrar caminos a través de terreno difícil o a crear caminos que otros puedan usar para moverse más rápido y cubrir más terreno durante un día completo de viaje. El uso exitoso de esta habilidad reduce los efectos adversos de viajar en condiciones de dificultad Buena o Asombrosa para el personaje y cualquier compañero que viaje con él.
+CON la apertura de sendas, un personaje aprende a encontrar caminos a través de terreno difícil o a crear caminos que otros puedan usar para moverse más rápido y cubrir más terreno durante un día completo de viaje. El uso exitoso de esta habilidad reduce los efectos adversos de viajar en condiciones de dificultad Buena o Asombrosa para el personaje y cualquier compañero que viaje CON él.
 
 Esta comprobación de habilidad se realiza una vez al día, al comienzo de un día de viaje.
 
@@ -97,13 +97,13 @@ Nota: Esta reducción no puede usarse para convertir una penalización en un bon
 *   **Supervivencia Urbana:** Se aplica a entornos urbanos hostiles o en ruinas (zonas de guerra, estaciones espaciales abandonadas) donde las habilidades sociales normales como **Negocios** o **Callejeo** ya no son efectivas para encontrar recursos básicos.
 *   **Deducción Ecológica:** "Discernir Peligros" no es solo detectar una trampa; es entender el ecosistema (p. ej., "La ausencia de los bichos verdes locales indica que un depredador superior está cerca").
 *   **Ecosistemas Similares:** Los directores de juego pueden reducir la penalización inicial de Adaptabilidad de **+5 pasos a +3 pasos** si el personaje está estudiando un ecosistema sorprendentemente similar a uno que ya ha dominado.
-*   **Interacción con Equipo:** El equipo especializado de supervivencia o soporte vital (descrito en la sección de Equipo) puede proporcionar bonos de dado de situación a las comprobaciones de supervivencia y adaptabilidad al reducir el estrés ambiental. Barnices, purificadores de agua y domos ambientales pueden satisfacer automáticamente necesidades de refugio o agua.
+*   **Interacción CON Equipo:** El equipo especializado de supervivencia o soporte vital (descrito en la sección de Equipo) puede proporcionar bonos de dado de situación a las comprobaciones de supervivencia y adaptabilidad al reducir el estrés ambiental. Barnices, purificadores de agua y domos ambientales pueden satisfacer automáticamente necesidades de refugio o agua.
 *   **Requisitos Biológicos:** La maestría es una comprensión del entorno, no una transformación física. Los mundos sin aire o venenosos aún requieren equipo de protección y fuentes de oxígeno.
 
 ---
 
 ### Supervivencia en Otros Mundos
-La habilidad de Supervivencia está diseñada principalmente para entornos similares a la Tierra. Si un personaje está en un mundo alienígena, los modificadores de situación dados aún podrían aplicarse (asumiendo que la flora/fauna local sea comestible). Si un entorno es drásticamente diferente de la experiencia nativa de un personaje, este debe usar la especialidad de **[Adaptabilidad](#adaptabilidad-con---solo-entrenados)** para cerrar la brecha.
+La habilidad de Supervivencia está diseñada principalmente para entornos similares a la Tierra. Si un personaje está en un mundo alienígena, los modificadores de situación dados aún podrían aplicarse (asumiendo que la flora/fauna local sea comestible). Si un entorno es drásticamente diferente de la experiencia nativa de un personaje, este debe usar la especialidad de **[Adaptabilidad](#adaptabilidad-CON---solo-entrenados)** para cerrar la brecha.
 
 El uso de la habilidad de Supervivencia aún podría ser **imposible** en ciertas situaciones extremas — por ejemplo, un asteroide estéril y sin aire sin el equipo de protección adecuado.
 

@@ -1,12 +1,12 @@
 +++
 title = "Operaciones Encubiertas"
-attribute = "DEX"
+attribute = "DES"
 category = "Social"
 type = "skill"
 layout = "list"
 +++
 
-La habilidad general de **Operaciones Encubiertas** (anteriormente Sigilo y Manipulación) se centra en permanecer sin ser detectado y eludir la seguridad física. Consolida las artes del sigilo con las habilidades técnicas necesarias para abrir cerraduras y carterear.
+La habilidad general de **Operaciones Encubiertas** (anteriormente Sigilo y Manipulación) se centra en permanecer sin ser detectado y eludir la seguridad física. Consolida las artes del sigilo CON las habilidades técnicas necesarias para abrir cerraduras y carterear.
 
 - **Sigilo Unificado:** Fusiona esconderse, moverse sigilosamente y seguir en la sombra en una única especialización de Sigilo.
 - **Elusión Física:** Incluye Abrir Cerraduras y Carterear.
@@ -14,7 +14,7 @@ La habilidad general de **Operaciones Encubiertas** (anteriormente Sigilo y Mani
 ---
 
 ## Ocultar
-### (DEX)
+### (DES)
 
 Esta especialización representa la habilidad de esconder objetos de la vista o de los sensores. Mientras que **Sigilo** se usa para esconderse a uno mismo, **Ocultar** se usa para esconder objetos, como armas en el cuerpo, contrabando en un vehículo o un compartimento secreto en una habitación.
 
@@ -32,9 +32,9 @@ Un arma oculta se lleva en un lugar que normalmente no se registra o que no es f
 ---
 
 ## Disfraz
-### (CHA)
+### (CAR)
 
-Disfraz es la habilidad de cambiar tu apariencia para parecerte a otra persona o para mezclarte con la multitud.
+Disfraz es la habilidad de cambiar tu apariencia para parecerte a otra persona o para mezclarte CON la multitud.
 
 Mientras que la habilidad de **Entretenimiento-actuar** se usa para el maquillaje y la actuación profesional, esta especialización cubre aplicaciones más inmediatas y prácticas del disfraz, como cambiarse de ropa, usar una peluca o usar accesorios simples para evitar ser reconocido.
 
@@ -45,11 +45,11 @@ El dado de situación de Disfraz de un héroe se modifica por el modificador de 
 ---
 
 ## Abrir Cerraduras
-### (DEX)
+### (DES)
 
 *Esta habilidad no se puede usar sin entrenamiento.*
 
-Esta especialización permite a un héroe abrir cerraduras físicas (puertas, cajas fuertes, vehículos, etc.). Generalmente se emplea con herramientas que proporcionan una bonificación al dado de situación.
+Esta especialización permite a un héroe abrir cerraduras físicas (puertas, cajas fuertes, vehículos, etc.). Generalmente se emplea CON herramientas que proporcionan una bonificación al dado de situación.
 
 La habilidad de abrir cerraduras es inútil contra una cerradura asistida por computadora a menos que tenga un mecanismo físico que el héroe pueda manipular. Casi siempre, el uso de abrir cerraduras requiere una tirada de habilidad compleja.
 
@@ -58,7 +58,7 @@ La habilidad de abrir cerraduras es inútil contra una cerradura asistida por co
 ---
 
 ## Carterear
-### (DEX)
+### (DES)
 
 *Esta habilidad no se puede usar sin entrenamiento.*
 

@@ -1,6 +1,6 @@
 +++
 title = "ESP"
-attribute = "WIL"
+attribute = "VOL"
 category = "Otros"
 type = "skill"
 layout = "list"

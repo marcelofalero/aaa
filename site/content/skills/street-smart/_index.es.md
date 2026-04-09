@@ -1,28 +1,28 @@
 +++
 title = "Calle inteligente"
-attribute = "WIL"
+attribute = "VOL"
 category = "Social"
 type = "skill"
 layout = "list"
 +++
 
-Esta habilidad general proporciona a un héroe conocimiento de los protocolos para tratar con pandillas, gente de la calle y organizaciones criminales. Mide la capacidad de un héroe para negociar y establecer contacto con el reino del criminal de "cuello azul" (delincuencia común).
+Esta habilidad general proporciona a un héroe conocimiento de los protocolos para tratar CON pandillas, gente de la calle y organizaciones criminales. Mide la capacidad de un héroe para negociar y establecer contacto CON el reino del criminal de "cuello azul" (delincuencia común).
 
 Callejeo y sus especialidades son habilidades de encuentro.
 
 ### Escasez y Legalidad
-Los modificadores de situación dependen del objeto o servicio buscado, su legalidad y la conexión con grupos ilegales:
+Los modificadores de situación dependen del objeto o servicio buscado, su legalidad y la conexión CON grupos ilegales:
 - **Marginal:** sin penalización.
 - **Ordinario:** penalización de +1.
 - **Bueno:** penalización de +2.
 - **Asombroso:** penalización de +3.
 
 ## Habilidades de Especialidad
-### (WIL)
+### (VOL)
 
 {{% list %}}
-- **Elementos Criminales:** Establecer contacto y tratar con el crimen organizado, criminales profesionales y pandillas.
-- **Conocimiento de la Calle:** Familiaridad con el funcionamiento interno de una organización o área geográfica en particular.
+- **Elementos Criminales:** Establecer contacto y tratar CON el crimen organizado, criminales profesionales y pandillas.
+- **Conocimiento de la Calle:** Familiaridad CON el funcionamiento interno de una organización o área geográfica en particular.
 
 ---
 

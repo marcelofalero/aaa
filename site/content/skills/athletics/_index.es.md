@@ -1,6 +1,6 @@
 +++
 title = "Atletismo"
-attribute = "STR"
+attribute = "FUE"
 category = "Otros"
 type = "skill"
 layout = "list"
@@ -13,7 +13,7 @@ Esta habilidad amplia proporciona a un personaje las capacidades de un atleta na
 # Habilidades de Especialidad
 
 ## Escalar
-### (STR)
+### (FUE)
 
 Esta habilidad de especialidad permite a un personaje escalar muros, ascender montañas o trepar por encima de obstáculos.
 
@@ -26,16 +26,16 @@ En escenas de combate, un personaje puede escalar un cierto número de metros en
 
 En escenas de desafío o siempre que el Director de Juego determine que se aplica una unidad de tiempo distinta a los asaltos, la comprobación de escalar es una comprobación de habilidad compleja.
 
-Si un personaje obtiene un Fallo Crítico en una comprobación de escalar, pierde el agarre y se cae (a menos que el equipo lo impida). Si le quedan acciones en el asalto, puede intentar recuperar el agarre obteniendo un éxito Ordinario o mejor en una segunda comprobación de escalar con una penalización de +1 además de cualquier otro modificador que se aplique. Si este intento falla o si al personaje no le quedan acciones, se cae.
+Si un personaje obtiene un Fallo Crítico en una comprobación de escalar, pierde el agarre y se cae (a menos que el equipo lo impida). Si le quedan acciones en el asalto, puede intentar recuperar el agarre obteniendo un éxito Ordinario o mejor en una segunda comprobación de escalar CON una penalización de +1 además de cualquier otro modificador que se aplique. Si este intento falla o si al personaje no le quedan acciones, se cae.
 
 ---
 
 ---
 
 ## Saltar
-### (STR)
+### (FUE)
 
-Con la habilidad de saltar, un personaje puede intentar saltar obstáculos realizando un salto horizontal (en carrera o desde parado) o un salto vertical.
+CON la habilidad de saltar, un personaje puede intentar saltar obstáculos realizando un salto horizontal (en carrera o desde parado) o un salto vertical.
 
 En cualquier intento de salto, un resultado de Fallo Crítico indica que el personaje tropieza y sufre una caída dura, recibiendo d6 puntos de daño de aturdimiento. Un resultado Marginal indica que el personaje realiza un salto de distancia Ordinaria pero sufre d4 puntos de daño de aturdimiento debido a un mal aterrizaje.
 
@@ -54,7 +54,7 @@ En cualquier intento de salto, un resultado de Fallo Crítico indica que el pers
 ---
 
 ## Nadar
-### (STR)
+### (FUE)
 
 La habilidad de especialidad de Nadar representa la capacidad de un personaje para moverse a través del agua u otros entornos líquidos sin hundirse ni ahogarse.
 
@@ -65,9 +65,9 @@ La habilidad de especialidad de Nadar representa la capacidad de un personaje pa
 ---
 
 ## Lanzar
-### (STR)
+### (FUE)
 
-Con la habilidad de lanzar, un personaje puede arrojar con precisión pelotas, dardos, piedras, cuchillos arrojadizos, granadas y otros objetos pequeños a un objetivo específico.
+CON la habilidad de lanzar, un personaje puede arrojar CON precisión pelotas, dardos, piedras, cuchillos arrojadizos, granadas y otros objetos pequeños a un objetivo específico.
 
 La precisión de un lanzamiento depende del alcance y del grado de éxito obtenido en una comprobación de habilidad.
 

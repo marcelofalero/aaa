@@ -6,7 +6,7 @@ type = "skill"
 layout = "list"
 +++
 
-Esta habilidad amplia mide la fortaleza física de un héroe con respecto a los efectos del daño Mortal y el agotamiento (fatiga).
+Esta habilidad amplia mide la fortaleza física de un héroe CON respecto a los efectos del daño Mortal y el agotamiento (fatiga).
 
 ### Moribundo
 Un personaje que ha sufrido daño Mortal debe realizar una tirada de Aguante al final de una escena y una vez por hora.
@@ -31,7 +31,7 @@ A medida que un héroe adquiere rangos en la habilidad de resistencia, se vuelve
 ### Resistir el dolor
 *No se puede usar sin estar entrenado.*
 
-Resistir el dolor permite a un héroe funcionar con normalidad e ignorar algunas o todas las penalizaciones de situación por sufrir daño por aturdimiento, heridas o daño Mortal. Una tirada no cuenta como acción.
+Resistir el dolor permite a un héroe funcionar CON normalidad e ignorar algunas o todas las penalizaciones de situación por sufrir daño por aturdimiento, heridas o daño Mortal. Una tirada no cuenta como acción.
 
 ### Resultados
 - **Fallo Crítico:** El héroe sucumbe al dolor y no puede actuar durante 2d4 fases.
@@ -51,7 +51,7 @@ Resistir el dolor solo disminuye o elimina las penalizaciones de situación caus
 
 Resist pain allows a Personaje to function normally and ignore some or all of the situation penalties for suffering large amounts of Aturdimiento, Herida, or Mortal (but not Fatiga) damage.
 
-A Personaje with this specialty may get an opportunity **once per Combate scene** to check the effectiveness of his ability to resist pain. The first time during a Combate scene when the Personaje has received Aturdimiento points or Herida points, or when he receives at least 1 point of Mortal damage, he makes a resist pain skill check. 
+A Personaje with this specialty may get an opportunity **once PER Combate scene** to check the effectiveness of his ability to resist pain. The first time during a Combate scene when the Personaje has received Aturdimiento points or Herida points, or when he receives at least 1 point of Mortal damage, he makes a resist pain skill check. 
 
 **Note:** This check does not count as an action, and takes place before any characters attempt any actions. The result of the resist pain check lasts for the rest of the Combate scene.
 

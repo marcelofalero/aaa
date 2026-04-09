@@ -1,6 +1,6 @@
 +++
 title = "Investigar"
-attribute = "WIL"
+attribute = "VOL"
 category = "Social"
 type = "skill"
 layout = "list"
@@ -38,9 +38,9 @@ Esta habilidad general proporciona a un héroe el entrenamiento y la capacidad d
 # Habilidades de Especialidad
 
 ## Interrogar
-### (WIL)
+### (VOL)
 
-La habilidad de Interrogar representa la capacidad de un héroe para hacer las preguntas correctas con el fin de obtener información de un personaje objetivo específico. El modificador de resistencia de Voluntad de ese personaje es su protección frente a las preguntas incisivas de un interrogador experto.
+La habilidad de Interrogar representa la capacidad de un héroe para hacer las preguntas correctas CON el fin de obtener información de un personaje objetivo específico. El modificador de resistencia de Voluntad de ese personaje es su protección frente a las preguntas incisivas de un interrogador experto.
 
 La habilidad cubre el tipo de interrogatorio que podría llevar a cabo un periodista experimentado, un oficial de la ley, un abogado o un torturador entrenado; cualquiera que haga preguntas difíciles como algo natural. Puede incluir un toque de violencia o técnicas reales que provoquen dolor, pero normalmente solo implica un debate tranquilo y razonable, retórica y preguntas capciosas para hacer que el objetivo cometa un error.
 
@@ -49,7 +49,7 @@ La habilidad cubre el tipo de interrogatorio que podría llevar a cabo un period
 ---
 
 ## Buscar
-### (WIL)
+### (VOL)
 
 Esta habilidad de especialidad permite a un héroe desarrollar su ojo para los detalles y su capacidad para detectar objetos ocultos. Buscar se utiliza cuando un héroe quiere buscar pistas en un área específica, encontrar un objeto o persona en particular que sabe que está en el área, o buscar objetos importantes de la manera más rápida y sistemática posible.
 
@@ -60,7 +60,7 @@ El grado de éxito alcanzado en una tirada de habilidad determina lo que el hér
 ---
 
 ## Rastrear
-### (WIL)
+### (VOL)
 
 Esta habilidad de especialidad permite a un héroe mejorar su capacidad para seguir a una persona, criatura o vehículo terrestre observando los rastros que deja a su paso.
 

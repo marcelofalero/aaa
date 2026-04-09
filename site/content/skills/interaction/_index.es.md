@@ -32,7 +32,7 @@ Regatear representa la capacidad de un personaje para pactar un precio más bara
 ## Encantar
 ### (PER)
 
-Un personaje con la habilidad de especialidad de encantar tiene talento para ser agradable y para convertir a los demás en sus amigos y aliados. Encantar se utiliza a menudo para modificar la actitud inicial de un público hacia un artista. Una tirada exitosa mejora la actitud del público en un paso (Neutral se vuelve Amistoso, Amistoso se vuelve Fanático).
+Un personaje CON la habilidad de especialidad de encantar tiene talento para ser agradable y para convertir a los demás en sus amigos y aliados. Encantar se utiliza a menudo para modificar la actitud inicial de un público hacia un artista. Una tirada exitosa mejora la actitud del público en un paso (Neutral se vuelve Amistoso, Amistoso se vuelve Fanático).
 
 ---
 
@@ -70,7 +70,7 @@ Seducir es la habilidad que permite a un personaje atraer o cautivar a otro pers
 ## Provocar
 ### (PER)
 
-La habilidad de especialidad de provocar representa el talento para intercambiar insultos con el fin de desconcertar o enfurecer a un oponente. Un personaje que provoca a su oponente intenta forzarle a cometer un error de juicio o a realizar una acción que normalmente no llevaría a cabo.
+La habilidad de especialidad de provocar representa el talento para intercambiar insultos CON el fin de desconcertar o enfurecer a un oponente. Un personaje que provoca a su oponente intenta forzarle a cometer un error de juicio o a realizar una acción que normalmente no llevaría a cabo.
 
 ▶ **Distracción:** En el rango 4, si una tirada de provocar tiene éxito, el objetivo recibe una penalización de +1 paso en cualquier tirada de habilidad realizada durante el asalto siguiente.
 

@@ -1,5 +1,5 @@
 +++
-title = "Ciencia Técnica"
+title = "Ciencia técnica"
 attribute = "INT"
 category = "Técnica"
 type = "skill"
@@ -36,7 +36,7 @@ El uso de esta habilidad requiere tiempo; las comprobaciones de Invención son s
 
 Esta habilidad permite a un personaje realizar reparaciones rápidas y provisionales para poner en funcionamiento un dispositivo o sistema electrónico o mecánico durante un corto período de tiempo. Una reparación de remiendo, incluso cuando tiene éxito, añade dificultad a las reparaciones completas que deben realizarse más adelante, pero puede ayudar a un personaje a salir de una situación difícil.
 
-Una reparación de remiendo se puede realizar con éxito **una vez** en un sistema u objeto específico. Si se avería después de haber sido remendado, el sistema u objeto no volverá a funcionar hasta que esté completamente arreglado (utilizando Ciencia Técnica—reparación). Realizar una comprobación de habilidad de remiendo es una acción única, pero un personaje que intenta usar esta habilidad debe hacerlo en su primera acción disponible en un asalto, y no puede intentar ninguna otra acción durante el resto del asalto.
+Una reparación de remiendo se puede realizar CON éxito **una vez** en un sistema u objeto específico. Si se avería después de haber sido remendado, el sistema u objeto no volverá a funcionar hasta que esté completamente arreglado (utilizando Ciencia Técnica—reparación). Realizar una comprobación de habilidad de remiendo es una acción única, pero un personaje que intenta usar esta habilidad debe hacerlo en su primera acción disponible en un asalto, y no puede intentar ninguna otra acción durante el resto del asalto.
 
 ### Resultados de Remendar
 La cantidad de dificultad añadida a las reparaciones completas depende del resultado de la comprobación de remiendo:
@@ -59,10 +59,10 @@ La cantidad de dificultad añadida a las reparaciones completas depende del resu
 
 Esta habilidad proporciona a un personaje entrenamiento en la reparación y el mantenimiento de varios tipos de tecnología mecánica y electrónica.
 
-Cualquier uso de la habilidad de reparación requiere una comprobación de habilidad compleja y toma un período de tiempo determinado por el Director del Juego (minutos, horas, días o semanas). La complejidad de una comprobación de habilidad de reparación está relacionada con la cantidad de daño que debe repararse:
-- **Daño de Aturdimiento:** Arreglar un objeto con solo daño de aturdimiento es de complejidad **Ordinaria**.
-- **Daño de Herida:** Arreglar un objeto con daño de herida es de complejidad **Buena**.
-- **Daño Mortal:** Arreglar un objeto con cualquier cantidad de daño Mortal es de complejidad **Asombrosa** (y puede requerir más de 10 éxitos).
+Cualquier uso de la habilidad de reparación requiere una comprobación de habilidad compleja y toma un período de tiempo determinado por el Director del Juego (minutos, horas, días o semanas). La complejidad de una comprobación de habilidad de reparación está relacionada CON la cantidad de daño que debe repararse:
+- **Daño de Aturdimiento:** Arreglar un objeto CON solo daño de aturdimiento es de complejidad **Ordinaria**.
+- **Daño de Herida:** Arreglar un objeto CON daño de herida es de complejidad **Buena**.
+- **Daño Mortal:** Arreglar un objeto CON cualquier cantidad de daño Mortal es de complejidad **Asombrosa** (y puede requerir más de 10 éxitos).
 
 ⊗ **Efecto Incrementado:** A medida que aumenta el rango de habilidad de especialidad de un personaje, este recibe un bono a cualquier comprobación de habilidad que involucre Ciencia Técnica o las otras tres habilidades de especialidad: **bono de -1 paso al rango 3**, **-2 al rango 6**, **-3 al rango 9** y **-4 al rango 12**.
 

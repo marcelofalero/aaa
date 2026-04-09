@@ -1,6 +1,6 @@
 +++
 title = "Enseñanza"
-attribute = "WIL"
+attribute = "VOL"
 category = "Social"
 type = "skill"
 layout = "list"
@@ -28,20 +28,20 @@ El beneficio de un profesor depende del resultado de la comprobación de habilid
 ### Límites de Mentoría
 - **Uno a la vez:** Un profesor no puede enseñar a más de un estudiante a la vez.
 - **Uno por sesión:** Solo se puede ganar una nueva habilidad o un rango de mejora por un estudiante durante cualquier sesión de enseñanza (que generalmente ocurre entre aventuras).
-- **Límite de Maestría:** Un profesor solo puede enseñar una habilidad de especialidad hasta **la mitad de su propio rango actual** en esa habilidad. Por ejemplo, un profesor con un rango 4 en una habilidad solo puede enseñar a otro personaje hasta el rango 2.
+- **Límite de Maestría:** Un profesor solo puede enseñar una habilidad de especialidad hasta **la mitad de su propio rango actual** en esa habilidad. Por ejemplo, un profesor CON un rango 4 en una habilidad solo puede enseñar a otro personaje hasta el rango 2.
 
 ---
 
 # Habilidades de Especialidad
 
 ## Campo Específico
-### (WIL)
+### (VOL)
 
 *Esta habilidad no puede usarse sin entrenamiento.*
 
 Esta habilidad de especialidad permite a un personaje ampliar su capacidad de enseñanza a grupos de profesiones especializados. Por cada compra separada de esta habilidad de especialidad, el personaje selecciona un grupo de profesión: **Espec. en Combate**, **Diplomático**, **Agente Libre** o **Espec. Técnico**.
 
-El personaje entonces puede enseñar todas las habilidades asociadas con ese grupo de profesión además de las pertenecientes al grupo Abierto. (p. ej., un profesor especializado en Combate puede ayudar a otro personaje a aprender o mejorar una habilidad de Combate).
+El personaje entonces puede enseñar todas las habilidades asociadas CON ese grupo de profesión además de las pertenecientes al grupo Abierto. (p. ej., un profesor especializado en Combate puede ayudar a otro personaje a aprender o mejorar una habilidad de Combate).
 
 ⊗ **Entrenamiento de Psiónicos:** Si se están utilizando las reglas opcionales de Psiónica, un profesor que también tenga habilidades psiónicas puede enseñar habilidades psiónicas a otro personaje que también posea habilidades psiónicas.
 

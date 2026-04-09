@@ -1,6 +1,6 @@
 +++
 title = "Acrobacia"
-attribute = "DEX"
+attribute = "DES"
 category = "Otros"
 type = "skill"
 layout = "list"
@@ -20,7 +20,7 @@ Saltar es un salto vertical mejorado por asistencia (impulsarse en un objeto o u
 # Habilidades de Especialidad
 
 ## Esquivar [Dodge]
-### (DEX)
+### (DES)
 
 Esta habilidad de especialidad permite a un personaje usar acrobacias como defensa en situaciones de combate. También se usa cuando un personaje se lanza a cubierto o se tira al suelo cuando un ataque de área lo tiene como objetivo. Esquivar permite a un personaje dar volteretas, rodar, agacharse, lanzarse o saltar para apartarse de un ataque.
 
@@ -43,25 +43,25 @@ Se realiza una comprobación de habilidad (que requiere una acción) al comienzo
 ---
 
 ## Caída
-### (DEX)
+### (DES)
 
 Esta habilidad de especialidad permite a un personaje mejorar su capacidad para sobrevivir a una caída girando su cuerpo, agarrando protuberancias cercanas o frenando de otra manera su descenso, disminuyendo así el daño que sufre por un impacto.
 
-Un personaje con la especialidad de caída suma su rango en la especialidad a su puntuación de **Acrobacia** y usa ese número para realizar la comprobación de habilidad, con un dado de situación base de +d0.
+Un personaje CON la especialidad de caída suma su rango en la especialidad a su puntuación de **Acrobacia** y usa ese número para realizar la comprobación de habilidad, CON un dado de situación base de +d0.
 
 ---
 
 ---
 
 ## Temerario [Daredevil]
-### (DEX)
+### (DES)
 
 Esta habilidad de especialidad permite a un personaje realizar actividades de alto riesgo como paracaidismo, submarinismo (buceo), ala delta, surf, puenting y rafting.
 
 ### Resultados
 - **Fallo Crítico:** La acción falla y el personaje podría sufrir daño de aturdimiento o herida (fallo del equipo).
 - **Fallo:** La acción no tiene éxito, pero el personaje no necesariamente sufre daño (p. ej., aterrizar fuera de curso).
-- **Ordinario:** El personaje realiza la acción pero con un control mínimo.
+- **Ordinario:** El personaje realiza la acción pero CON un control mínimo.
 - **Bueno:** El personaje tiene un control limitado y ejecuta la acción bien.
 - **Asombroso:** Todo sale bien; la acción se ejecuta perfectamente sin daño.
 
@@ -70,11 +70,11 @@ Esta habilidad de especialidad permite a un personaje realizar actividades de al
 ---
 
 ## Entrenamiento en Gravedad Cero
-### (DEX)
+### (DES)
 
 *Esta habilidad no puede usarse sin entrenamiento.*
 
-Un personaje con la habilidad de entrenamiento en gravedad cero puede funcionar en condiciones de ingravidez o casi ingravidez mejor que alguien que no tenga esta habilidad. Un personaje no entrenado tiene una penalización de **+3 pasos** en gravedad cero y una penalización de **+1 paso** en gravedad ligera. Comprar esta habilidad reduce inmediatamente la penalización de gravedad cero a **+2 pasos** y elimina la penalización por gravedad ligera.
+Un personaje CON la habilidad de entrenamiento en gravedad cero puede funcionar en condiciones de ingravidez o casi ingravidez mejor que alguien que no tenga esta habilidad. Un personaje no entrenado tiene una penalización de **+3 pasos** en gravedad cero y una penalización de **+1 paso** en gravedad ligera. Comprar esta habilidad reduce inmediatamente la penalización de gravedad cero a **+2 pasos** y elimina la penalización por gravedad ligera.
 
 ### Progresión de Rango
 ⊗ **Rango 4:** La penalización en gravedad cero se reduce a **+1 paso**, y las acciones en gravedad ligera reciben un **bono de -1 paso**.
@@ -88,7 +88,7 @@ Un personaje con la habilidad de entrenamiento en gravedad cero puede funcionar 
 ---
 
 ## Acrobacia Aérea [Aerobatics]
-### (DEX)
+### (DES)
 
 Esta habilidad de especialidad representa la maestría de un personaje en maniobras complejas durante el vuelo personal, ya sea a través de alas naturales, jump-packs especializados o dispositivos de vuelo personal gravíticos (GADS). Mientras que la locomoción básica está cubierta por la habilidad amplia de **Acrobacia**, la Acrobacia Aérea es necesaria para giros a alta velocidad, aterrizajes precisos, maniobras evasivas y acrobacias aéreas. En el **Rango 4** de **Operación de Armadura—Sistemas de Propulsión**, esta habilidad también se puede usar para maniobras complejas utilizando los propulsores integrados de un traje potenciado.
 
@@ -101,7 +101,7 @@ Esta habilidad de especialidad representa la maestría de un personaje en maniob
 - **Asombroso:** Control perfecto; puede realizar acrobacias aéreas u orbitales complejas.
 
 ### Progresión de Rango
-⊗ **Rango 4 (Descenso Sigiloso):** Cuando se usa un jump-pack o GADS, el personaje puede descender con un ruido mínimo, recibiendo un **bono de -2 pasos** en las comprobaciones de **Sigilo**.
+⊗ **Rango 4 (Descenso Sigiloso):** Cuando se usa un jump-pack o GADS, el personaje puede descender CON un ruido mínimo, recibiendo un **bono de -2 pasos** en las comprobaciones de **Sigilo**.
 ⊗ **Rango 6 (Vuelo de Resistencia):** Cuando se usan alas naturales o cibernéticas, el personaje puede volar durante períodos prolongados, recibiendo un **bono de -2 pasos** en las comprobaciones de **Aguante (Stamina)** para viajes de larga distancia.
 
 ---

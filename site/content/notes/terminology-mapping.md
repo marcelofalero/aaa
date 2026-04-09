@@ -37,6 +37,17 @@ This page provides a mapping of common game terms from English to Spanish to ens
 | Mental | Mental |
 | Other | Otros |
 
+## Attributes
+| English | Spanish |
+| :--- | :--- |
+| STR | FUE |
+| DEX | DES |
+| CON | CON |
+| INT | INT |
+| WIL | VOL |
+| PER | PER |
+| CHA | CAR |
+
 ## Skills
 | English | Spanish |
 | :--- | :--- |
@@ -54,6 +65,16 @@ This page provides a mapping of common game terms from English to Spanish to ens
 | Assault Rifle | Fusil de asalto |
 | Shotgun | Escopeta |
 | SMG | Subfusil |
+| Pistol | Pistola |
+| Blade | Arma blanca |
+| Blunt | Arma contundente |
+| Defensive Martial Arts | Artes marciales defensivas |
+| Power Martial Arts | Artes marciales de poder |
+| Powered | Armas de energía |
+| Bow | Arco |
+| Crossbow | Ballesta |
+| Sling | Honda |
+| Flintlock | Arma de chispa |
 | Brawl | Pelea |
 | Scratch-Built Explosives | Explosivos improvisados |
 | Psionic Sense | Sentido psiónico |
@@ -62,6 +83,8 @@ This page provides a mapping of common game terms from English to Spanish to ens
 | Track | Rastrear |
 | Bargain | Regatear |
 | Bluff | Mentir |
+| Inspire | Inspirar |
+| Leadership | Liderazgo |
 | ... | ... |
 
 

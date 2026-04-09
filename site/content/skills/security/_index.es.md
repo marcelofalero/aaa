@@ -8,8 +8,8 @@ layout = "list"
 
 Esta habilidad amplia proporciona a un personaje conocimientos básicos sobre sistemas y procedimientos de seguridad. Se refiere a los sistemas de seguridad que protegen objetos físicos o áreas específicamente definidas. (Ten en cuenta que los sistemas del tipo que protegen contra el robo o la corrupción de datos informatizados se tratan bajo la especialidad de Ciencias de la Computación—hacking).
 
-La complejidad de un sistema se relaciona con el tiempo que se tarda en atravesar todas y cada una de las barreras que se encuentran entre un intruso y el objeto o área que el sistema de seguridad protege. Para determinar el modificador del dado de situación para cada segmento de una tirada de habilidad compleja de Seguridad:
-- **Calidad Marginal:** Una situación en la que (por ejemplo) el personaje no es molestado mientras examina o manipula un tipo de sistema de seguridad con el que está familiarizado.
+La complejidad de un sistema se relaciona CON el tiempo que se tarda en atravesar todas y cada una de las barreras que se encuentran entre un intruso y el objeto o área que el sistema de seguridad protege. Para determinar el modificador del dado de situación para cada segmento de una tirada de habilidad compleja de Seguridad:
+- **Calidad Marginal:** Una situación en la que (por ejemplo) el personaje no es molestado mientras examina o manipula un tipo de sistema de seguridad CON el que está familiarizado.
 - **Calidad Asombrosa:** Una en la que (por ejemplo) el personaje y sus aliados están involucrados en combate o bajo una fuerte presión de tiempo para lograr su objetivo.
 
 ---
@@ -22,10 +22,10 @@ La complejidad de un sistema se relaciona con el tiempo que se tarda en atravesa
 Esta habilidad representa el entrenamiento de un personaje en procedimientos de protección de todo tipo. Tiene dos usos principales:
 
 ### Asegurar un área
-Con la cantidad adecuada de tiempo y cooperación, un personaje puede establecer defensas y asegurar un área en mayor grado de lo que estaba antes. (Algunas áreas no se pueden asegurar o solo se pueden asegurar con gran dificultad, lo que significa que se aplica una penalización de dado de situación a la tirada de habilidad).
+CON la cantidad adecuada de tiempo y cooperación, un personaje puede establecer defensas y asegurar un área en mayor grado de lo que estaba antes. (Algunas áreas no se pueden asegurar o solo se pueden asegurar CON gran dificultad, lo que significa que se aplica una penalización de dado de situación a la tirada de habilidad).
 
 El grado de éxito en la tirada de habilidad afecta las posteriores **tiradas de habilidad de Alerta** de todos los que vigilen el área contra intrusos:
-- **Fallo Crítico / Fallo:** Las tiradas de Alerta del guardia(s) se realizan con una **penalización de +1**.
+- **Fallo Crítico / Fallo:** Las tiradas de Alerta del guardia(s) se realizan CON una **penalización de +1**.
 - **Ordinario:** El éxito provoca una **bonificación de -1** en las tiradas de Alerta.
 - **Bueno:** Una **bonificación de -2**.
 - **Asombroso:** Una **bonificación de -3**.

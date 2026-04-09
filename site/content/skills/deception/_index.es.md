@@ -10,7 +10,7 @@ Esta habilidad general representa la competencia de un héroe para engañar a ot
 
 El dado de situación de un héroe se ve modificado por el modificador de resistencia de Inteligencia del objetivo.
 
-## Habilidades de Especialidad
+## Mentir
 ### (PER)
 
 {{% list %}}
