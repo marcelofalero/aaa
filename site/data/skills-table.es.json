@@ -239,7 +239,7 @@
                             "type": "Specialty"
                         },
                         {
-                            "skill": "Acrobacia Aérea [Aerobatics]",
+                            "skill": "Entrenamiento en gravedad cero",
                             "attribute": "DES",
                             "skill_url": "/skills/acrobatics#zero-g-training",
                             "cost": 3,

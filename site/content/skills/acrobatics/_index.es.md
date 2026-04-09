@@ -87,7 +87,7 @@ Un personaje CON la habilidad de entrenamiento en gravedad cero puede funcionar 
 
 ---
 
-## Acrobacia Aérea [Aerobatics]
+## Entrenamiento en gravedad cero
 ### (DES)
 
 Esta habilidad de especialidad representa la maestría de un personaje en maniobras complejas durante el vuelo personal, ya sea a través de alas naturales, jump-packs especializados o dispositivos de vuelo personal gravíticos (GADS). Mientras que la locomoción básica está cubierta por la habilidad amplia de **Acrobacia**, la Acrobacia Aérea es necesaria para giros a alta velocidad, aterrizajes precisos, maniobras evasivas y acrobacias aéreas. En el **Rango 4** de **Operación de Armadura—Sistemas de Propulsión**, esta habilidad también se puede usar para maniobras complejas utilizando los propulsores integrados de un traje potenciado.

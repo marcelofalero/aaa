@@ -2755,7 +2755,7 @@
       ⊗ **Rank 4 (Stealthy Descent):** When using a jump-pack or GADS, the character can descend with minimal noise, receiving a **-2 step bonus** to Stealth checks.
 
       ⊗ **Rank 6 (Endurance Flight):** When using natural or cybernetic wings, the character can fly for extended periods, receiving a **-2 step bonus** to Stamina checks for long-distance travel.
-    skill_es: Esquivar [Dodge]
+    skill_es: Esquivar
     description_es: |-
       Esta habilidad de especialidad permite a un personaje usar acrobacias como defensa en situaciones de combate. También se usa cuando un personaje se lanza a cubierto o se tira al suelo cuando un ataque de área lo tiene como objetivo. Esquivar permite a un personaje dar volteretas, rodar, agacharse, lanzarse o saltar para apartarse de un ataque.
 
@@ -2820,7 +2820,7 @@
       ▶ **Rank 7 [Reaction Dodge]:** Perform a reaction dodge, allowing the character to defend earlier in the round. In a round when a character makes a reaction dodge, he can only dodge; all other actions are lost for the round.
 
       ---
-    skill_es: Temerario [Daredevil]
+    skill_es: Temerario
     description_es: |-
       Esta habilidad de especialidad permite a un personaje realizar actividades de alto riesgo como paracaidismo, submarinismo (buceo), ala delta, surf, puenting y rafting.
 
@@ -2874,7 +2874,7 @@
       Sesheyan characters without the zero-g training skill function as though they have it at rank 1. If a sesheyan purchases this skill, penalties are reduced by 1 step and bonuses are improved by the same amount (max bonus -2 in light gravity).
 
       ---
-    skill_es: Acrobacia Aérea [Aerobatics]
+    skill_es: Entrenamiento en gravedad cero
     description_es: |-
       Esta habilidad de especialidad representa la maestría de un personaje en maniobras complejas durante el vuelo personal, ya sea a través de alas naturales, jump-packs especializados o dispositivos de vuelo personal gravíticos (GADS). Mientras que la locomoción básica está cubierta por la habilidad amplia de **Acrobacia**, la Acrobacia Aérea es necesaria para giros a alta velocidad, aterrizajes precisos, maniobras evasivas y acrobacias aéreas. En el **Rango 4** de **Operación de Armadura—Sistemas de Propulsión**, esta habilidad también se puede usar para maniobras complejas utilizando los propulsores integrados de un traje potenciado.
 
@@ -3559,7 +3559,7 @@
     Some pieces of sensor equipment may provide benefits to a hero’s Awareness skill check, as described in Chapter 9: Goods & Services.
 
     ---
-  skill_es: Alerta [Awareness]
+  skill_es: Alerta
   category_es: Otros
   description_es: |-
     **Habilidad gratuita para personajes Fraal, Humanos, Mechalus, Sesheyan, T'sa y Weren.**
