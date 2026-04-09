@@ -14,7 +14,7 @@ El tiempo óptimo para un intento de Navegación es de 5 minutos. Cada minuto me
 
 # Especialidades
 
-## Navegación—superficie
+## Astrohabilidad—sistema
 ### (INT)
 
 Esta habilidad de especialidad cubre la navegación en un entorno planetario, utilizando mapas, accidentes del terreno, brújulas y sistemas GPS para desplazarse de un punto a otro.
@@ -25,7 +25,7 @@ Esta habilidad de especialidad cubre la navegación en un entorno planetario, ut
 
 ---
 
-## Pionero
+## Navegación—superficie
 ### (INT)
 
 La habilidad de pionero implica identificar y crear nuevos caminos a través de tierras salvajes o terrenos inexplorados donde no existen mapas.

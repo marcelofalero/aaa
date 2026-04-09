@@ -107,6 +107,16 @@ This page provides a mapping of common game terms from English to Spanish to ens
 | Gamble | Juego |
 | Bribe | Soborno |
 | Bribery | Soborno |
+| Armor Operation | Operación de armadura |
+| Combat armor | Armadura de combate |
+| Powered armor | Armadura potenciada |
+| Tactical armor | Armadura táctica |
+| Propulsion systems | Sistemas de propulsión |
+| Shields | Escudos |
+| Navigation | Navegación |
+| Navigation—surface | Navegación—superficie |
+| Astrogation—system | Astrohabilidad—sistema |
+| Astrogation—drivespace | Astrohabilidad—drivespace |
 | ... | ... |
 
 

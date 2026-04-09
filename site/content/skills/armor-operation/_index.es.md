@@ -20,7 +20,7 @@ Para un personaje **no entrenado** en Operación de Armadura, siempre se aplica 
 
 *Nota: la penalización AP de las armaduras y escudos es acumulativa.*
 
-## Habilidades de Especialidad
+## Armadura de combate
 ### (FUE)
 
 {{% list %}}
@@ -66,28 +66,28 @@ Se centra en el uso táctico de escudos físicos, de energía o balísticos.
 
 ---
 
-## Armas de energía armor
+## Armadura potenciada
 ### (FUE)
 
 
 
 ---
 
-## Propulsion systems
+## Sistemas de propulsión
 ### (INT)
 
 
 
 ---
 
-## Shields
+## Escudos
 ### (FUE)
 
 
 
 ---
 
-## Tactical armor
+## Armadura táctica
 ### (INT)
 
 

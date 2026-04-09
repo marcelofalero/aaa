@@ -278,37 +278,37 @@
                     "type": "Broad",
                     "children": [
                         {
-                            "skill": "Habilidades de Especialidad",
+                            "skill": "Armadura de combate",
                             "attribute": "FUE",
-                            "skill_url": "/es/skills/armor-operation#habilidades-de-especialidad",
+                            "skill_url": "/es/skills/armor-operation#armadura-de-combate",
                             "cost": 3,
                             "type": "Specialty"
                         },
                         {
-                            "skill": "Armas de energía armor",
+                            "skill": "Armadura potenciada",
                             "attribute": "FUE",
-                            "skill_url": "/es/skills/armor-operation#armas-de-energia-armor",
+                            "skill_url": "/es/skills/armor-operation#armadura-potenciada",
                             "cost": 4,
                             "type": "Specialty"
                         },
                         {
-                            "skill": "Propulsion systems",
+                            "skill": "Sistemas de propulsión",
                             "attribute": "INT",
-                            "skill_url": "/es/skills/armor-operation#propulsion-systems",
+                            "skill_url": "/es/skills/armor-operation#sistemas-de-propulsion",
                             "cost": 3,
                             "type": "Specialty"
                         },
                         {
-                            "skill": "Shields",
+                            "skill": "Escudos",
                             "attribute": "FUE",
-                            "skill_url": "/es/skills/armor-operation#shields",
+                            "skill_url": "/es/skills/armor-operation#escudos",
                             "cost": 3,
                             "type": "Specialty"
                         },
                         {
-                            "skill": "Tactical armor",
+                            "skill": "Armadura táctica",
                             "attribute": "INT",
-                            "skill_url": "/es/skills/armor-operation#tactical-armor",
+                            "skill_url": "/es/skills/armor-operation#armadura-tactica",
                             "cost": 3,
                             "type": "Specialty"
                         }
@@ -403,9 +403,9 @@
                     "type": "Broad",
                     "children": [
                         {
-                            "skill": "Astrogation—drivespace",
+                            "skill": "Astrohabilidad—drivespace",
                             "attribute": "INT",
-                            "skill_url": "/es/skills/navigation#astrogation-drivespace",
+                            "skill_url": "/es/skills/navigation#astrohabilidad-drivespace",
                             "cost": 4,
                             "type": "Specialty"
                         }
@@ -449,16 +449,16 @@
                     "type": "Broad",
                     "children": [
                         {
-                            "skill": "Navegación—superficie",
+                            "skill": "Astrohabilidad—sistema",
                             "attribute": "INT",
-                            "skill_url": "/es/skills/navigation#navegacion-superficie",
+                            "skill_url": "/es/skills/navigation#astrohabilidad-sistema",
                             "cost": 3,
                             "type": "Specialty"
                         },
                         {
-                            "skill": "Pionero",
+                            "skill": "Navegación—superficie",
                             "attribute": "INT",
-                            "skill_url": "/es/skills/navigation#pionero",
+                            "skill_url": "/es/skills/navigation#navegacion-superficie",
                             "cost": 3,
                             "type": "Specialty"
                         }
