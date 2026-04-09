@@ -1,0 +1,28 @@
+{{ define "main" }}
+  <article class="main-container">
+    <div class="mw8 center">
+      {{ partial "breadcrumbs.html" . }}
+    </div>
+    
+    <div class="ph3 ph5-l pv3 pv4-l center measure-wide">
+      {{ partial "skill-page.html" . }}
+    </div>
+
+    {{/* If there are still subpages, list them (though we are consolidating) */}}
+    {{ if not .Params.omit_automatic_list }}
+      {{ if .Pages }}
+        <section class="mt5 ph3 ph5-l center measure-wide">
+          <h2 class="f4 ttu tracked">Sub-Specialties</h2>
+          {{ range .Pages }}
+            <div class="mb4 pb3 bb b--white-10">
+              <h3 class="f3 mt0 mb2">
+                <a href="{{ .RelPermalink }}" class="link neon-cyan">{{ .Title }}</a>
+              </h3>
+              <div class="silver f5">{{ .Params.description | default .Summary }}</div>
+            </div>
+          {{ end }}
+        </section>
+      {{ end }}
+    {{ end }}
+  </article>
+{{ end }}

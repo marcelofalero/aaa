@@ -2,6 +2,9 @@
 title = "Psionics"
 description = "Mental powers and disciplines for Mindwalkers and other gifted individuals."
 weight = 9
+type = "skill"
+layout = "list"
+omit_automatic_list = true
 +++
 
 # Psionics
@@ -67,10 +70,6 @@ In cases where visibility is unclear, the Gamemaster may require an **Awarenessâ
 
 ## Disciplines
 
-- **[Biokinesis](biokinesis)**: Control over biological functions.
-- **[ESP](esp)**: Extrasensory perception.
-- **[Telekinesis](telekinesis)**: Moving objects with the mind.
-- **[Telepathy](telepathy)**: Mind-to-mind communication.
-- **[Teleportation](teleportation)**: Instantaneous travel.
+{{< json-table data="psionics" hide="pr" >}}
 
 This section is under construction.

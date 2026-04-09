@@ -4,6 +4,8 @@ description = "Formación en ciencias físicas, incluidas astronomía, química,
 weight = 9
 attribute = "INT"
 category = "Technical"
+type = "skill"
+layout = "list"
 +++
 
 Esta habilidad amplia representa la formación de un personaje en las ciencias físicas. Las tiradas de habilidad que involucran esta habilidad se realizan de la misma manera que las tiradas de la habilidad de Conocimiento.
@@ -14,7 +16,6 @@ Esta habilidad amplia representa la formación de un personaje en las ciencias f
 
 ## Astronomía
 ### (INT - Solo entrenamiento)
-
 *Esta habilidad no se puede usar sin entrenamiento.*
 
 La astronomía es el estudio de los objetos celestes y los fenómenos que se originan fuera de las atmósferas planetarias. Permite a un personaje identificar estrellas, planetas y otros cuerpos celestes, y calcular órbitas y trayectorias.
@@ -25,7 +26,6 @@ La astronomía es el estudio de los objetos celestes y los fenómenos que se ori
 
 ## Química
 ### (INT - Solo entrenamiento)
-
 *Esta habilidad no se puede usar sin entrenamiento.*
 
 La química es el estudio de la materia, sus propiedades y cómo y por qué las sustancias se combinan o separan para formar otras sustancias.
@@ -36,7 +36,6 @@ La química es el estudio de la materia, sus propiedades y cómo y por qué las 
 
 ## Física
 ### (INT - Solo entrenamiento)
-
 *Esta habilidad no se puede usar sin entrenamiento.*
 
 La física es el estudio de la materia, la energía y las fuerzas fundamentales de la naturaleza.
@@ -47,7 +46,6 @@ La física es el estudio de la materia, la energía y las fuerzas fundamentales 
 
 ## Planetología
 ### (INT - Solo entrenamiento)
-
 *Esta habilidad no se puede usar sin entrenamiento.*
 
 La planetología es el estudio de los cuerpos celestes, específicamente cuando se intenta clasificar, registrar y escanear en busca de información útil.

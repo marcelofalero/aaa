@@ -4,6 +4,8 @@ description = "Habilidades y talentos de un líder; Coordinación de un grupo pa
 weight = 5
 attribute = "PER"
 category = "Social"
+type = "skill"
+layout = "list"
 +++
 
 Esta habilidad general proporciona a un héroe las capacidades y talentos de un líder. Un líder puede coordinar a un grupo para rendir mejor o trabajar en equipo. Solo un personaje puede asumir el papel de líder a la vez.

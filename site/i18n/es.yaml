@@ -10,3 +10,23 @@ translations:
   other: "Traducciones"
 pageTitle:
   other: "{{ .Name }}"
+attribute:
+  other: "Atributo"
+category:
+  other: "Categoría"
+untrained:
+  other: "Sin entrenar"
+quickNavigation:
+  other: "Navegación rápida"
+yes:
+  other: "Sí"
+no:
+  other: "No"
+combate:
+  other: "Combate"
+technical:
+  other: "Técnica"
+social:
+  other: "Social"
+other:
+  other: "Otros"

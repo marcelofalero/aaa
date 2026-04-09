@@ -4,8 +4,9 @@ description = "Natural athlete abilities: strength, grace, and physical prowess.
 weight = 2
 attribute = "STR"
 category = "Other"
+type = "skill"
+layout = "list"
 +++
-
 
 This broad skill provides a character with the abilities of a natural athlete—a competent level of strength, grace, and physical prowess. This skill is used to determine the success of physical actions such as climbing a tree, jumping over a large hole, or throwing an object at a target.
 
@@ -30,7 +31,8 @@ If a character gets a Critical Failure on a climb check, he loses his grip and f
 
 ---
 
-### Jump (STR)
+### Jump
+### (STR)
 
 
 With the jump skill, a character can attempt to leap over obstacles by performing a horizontal running or standing jump, or a vertical leap.
@@ -49,7 +51,8 @@ On any jumping attempt, a Critical Failure result indicates that the character t
 
 ---
 
-### Swim (CON)
+### Swim
+### (CON)
 
 
 The Swim specialty skill represents a character's ability to move through water or other liquid environments without sinking or drowning.
@@ -58,7 +61,8 @@ The Swim specialty skill represents a character's ability to move through water 
 
 ---
 
-### Throw (STR)
+### Throw
+### (STR)
 
 
 With the throw skill, a character can accurately toss balls, darts, stones, throwing knives, grenades, and other small objects at a specific target.

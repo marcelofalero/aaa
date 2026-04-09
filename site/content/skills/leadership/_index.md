@@ -4,6 +4,8 @@ description = "Abilities and talents of a leader; coordination of a group to wor
 weight = 5
 attribute = "PER"
 category = "Social"
+type = "skill"
+layout = "list"
 +++
 
 This broad skill provides a character with the abilities and talents of a leader. With leadership training, a character can coordinate a group to get it to perform better or work as a team. Only one character can assume the role of leader at a time, and conflicting orders cancel each other out.
@@ -36,7 +38,6 @@ The check is modified by the attitude of the targets, plus any other factors det
 
 ## Command
 ### (PER)
-
 **Cost: 4**
 
 This specialty skill represents the character's ability to lead others by virtue of sheer authoritativeness and persuasive ability. This is the skill used by military officers, elected officials, and law enforcers to issue orders and see that they're carried out.
@@ -49,7 +50,6 @@ This specialty skill represents the character's ability to lead others by virtue
 
 ## Inspire
 ### (PER - Trained Only)
-
 **Cost: 3**
 
 *This skill can't be used untrained.*

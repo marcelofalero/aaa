@@ -2,7 +2,9 @@
 title = "Habilidades"
 description = "Cómo hacer bien las cosas - Guía completa y base de datos de todas las habilidades amplias y de especialidad."
 weight = 6
-toc = true
+type = "skill"
+layout = "list"
+omit_automatic_list = true
 +++
 
 Las habilidades son el corazón del sistema de juego AAA. La mayor parte de lo que un personaje es capaz de hacer —luchar contra un oponente, pilotar una nave espacial, cerrar un gran acuerdo de negocios, desarrollar una vacuna para un virus mortal— se rige por las habilidades que posee el personaje y lo hábil que es utilizándolas.
@@ -121,4 +123,4 @@ A veces, una acción que intenta tu personaje no está directamente relacionada 
 
 Esta tabla proporciona una lista completa de todas las habilidades disponibles, agrupadas por su atributo rector. Incluye el coste de las habilidades amplias y de las habilidades de especialidad, así como los códigos de profesión para las habilidades favorecidas.
 
-{{< json-table data="skills" hide="pr" >}}
+{{< json-table data="skills" hide="pr" expand=".*" >}}

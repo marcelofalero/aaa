@@ -4,6 +4,8 @@ description = "Formación en ciencias de la vida, incluidas biología, botánica
 weight = 6
 attribute = "INT"
 category = "Technical"
+type = "skill"
+layout = "list"
 +++
 
 Esta habilidad amplia representa la formación de un personaje en las ciencias de la vida. Las tiradas de habilidad que involucran esta habilidad se realizan de la misma manera que las tiradas de la habilidad de Conocimiento.
@@ -14,7 +16,6 @@ Esta habilidad amplia representa la formación de un personaje en las ciencias d
 
 ## Biología, Botánica, Zoología
 ### (INT - Solo entrenamiento)
-
 *Esta habilidad no se puede usar sin entrenamiento.*
 
 Estas habilidades de especialidad deben comprarse por separado.
@@ -28,7 +29,6 @@ Estas habilidades de especialidad deben comprarse por separado.
 
 ## Genética
 ### (INT - Solo entrenamiento)
-
 *Esta habilidad no se puede usar sin entrenamiento.*
 
 La genética es el estudio de la herencia y los genes, formando la base de la ingeniería genética y la clonación.
@@ -39,7 +39,6 @@ La genética es el estudio de la herencia y los genes, formando la base de la in
 
 ## Xenología
 ### (INT - Solo entrenamiento)
-
 *Esta habilidad no se puede usar sin entrenamiento.*
 
 La xenología es el estudio de formas de vida animal de naturaleza alienígena y puede usarse para identificar o clasificar dichas formas de vida, incluida la vida vegetal alienígena. Permite a un personaje realizar suposiciones educadas sobre la naturaleza, el comportamiento y las capacidades de las formas de vida alienígenas.
@@ -49,8 +48,6 @@ La xenología es el estudio de formas de vida animal de naturaleza alienígena y
 
 ## Psiónica
 ### (INT - Solo entrenamiento)
-
-
 *Esta habilidad no se puede usar sin entrenamiento.*
 
 Esta habilidad de especialidad representa el estudio científico de la naturaleza biológica y bioquímica de las habilidades psiónicas.

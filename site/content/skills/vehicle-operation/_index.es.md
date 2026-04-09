@@ -4,6 +4,8 @@ description = "Comprensión básica y competencia con vehículos modernos."
 weight = 6
 attribute = "DEX"
 category = "Técnica"
+type = "skill"
+layout = "list"
 +++
 
 Esta habilidad amplia proporciona a un personaje una comprensión básica y competencia con los vehículos modernos. Usando esta habilidad, un personaje puede intentar operar la mayoría de los vehículos terrestres y acuáticos normales. Algunos vehículos terrestres y acuáticos militares o especializados pueden tener controles que son demasiado complejos para que la habilidad amplia los cubra, requiriendo al menos algún nivel de especialización antes de que un personaje sea capaz de operarlos con éxito.
@@ -20,7 +22,6 @@ Para más detalles sobre vehículos, consulte la sección de [Vehículos y Naves
 
 ## Vehículo Aéreo
 ### (DEX - Solo Entrenados)
-
 *Esta habilidad no puede usarse sin entrenamiento.*
 
 Esta habilidad de especialidad permite a un personaje estar entrenado en el uso de un tipo específico de vehículo aéreo. Si desea ser experto en la operación de más de un tipo de vehículo aéreo, debe comprar y mejorar cada habilidad de especialidad por separado.
@@ -31,7 +32,6 @@ Los tipos de vehículos aéreos incluyen aviones de hélice, helicópteros, jets
 
 ## Vehículo Terrestre
 ### (DEX)
-
 Esta habilidad de especialidad permite a un personaje estar entrenado en el uso de un tipo específico de vehículo terrestre. Si desea ser experto en la operación de más de un tipo de vehículo terrestre, debe comprar y mejorar cada habilidad de especialidad por separado.
 
 Los tipos de vehículos terrestres incluyen automóviles, motocicletas, coches de carreras, camiones grandes y tanques y otros vehículos militares pesados.
@@ -40,7 +40,6 @@ Los tipos de vehículos terrestres incluyen automóviles, motocicletas, coches d
 
 ## Vehículo Espacial
 ### (DEX - Solo Entrenados)
-
 *Esta habilidad no puede usarse sin entrenamiento.*
 
 Esta habilidad de especialidad permite a un personaje estar entrenado en el uso de un tipo específico de vehículo espacial. Si desea ser experto en la operación de más de un tipo de vehículo espacial, debe comprar y mejorar cada habilidad de especialidad por separado.
@@ -57,7 +56,6 @@ Los tipos de vehículos espaciales incluyen:
 
 ## Vehículo Acuático
 ### (DEX)
-
 Esta habilidad de especialidad permite a un personaje estar entrenado en el uso de un tipo específico de vehículo acuático. Si desea ser experto en la operación de más de un tipo de vehículo acuático, debe comprar y mejorar cada habilidad de especialidad por separado.
 
 Esta habilidad también se usa para operar el timón de naves acuáticas grandes con tripulación múltiple (como acorazados, submarinos y petroleros); estos requieren una versión de las funciones especializadas de la habilidad amplia de **[Operación de Sistemas](/skills/system-operation/)**.

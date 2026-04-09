@@ -4,6 +4,8 @@ description = "Habilidades de atleta natural: fuerza, gracia y destreza física.
 weight = 2
 attribute = "STR"
 category = "Otros"
+type = "skill"
+layout = "list"
 +++
 
 Esta habilidad amplia proporciona a un personaje las capacidades de un atleta natural: un nivel competente de fuerza, gracia y destreza física. Esta habilidad se utiliza para determinar el éxito de acciones físicas como trepar a un árbol, saltar por encima de un gran agujero o lanzar un objeto a un objetivo.
@@ -14,7 +16,6 @@ Esta habilidad amplia proporciona a un personaje las capacidades de un atleta na
 
 ## Escalar
 ### (STR)
-
 Esta habilidad de especialidad permite a un personaje escalar muros, ascender montañas o trepar por encima de obstáculos.
 
 En escenas de combate, un personaje puede escalar un cierto número de metros en una fase, dependiendo del resultado de una comprobación de habilidad:
@@ -32,7 +33,6 @@ Si un personaje obtiene un Fallo Crítico en una comprobación de escalar, pierd
 
 ## Saltar
 ### (STR)
-
 Con la habilidad de saltar, un personaje puede intentar saltar obstáculos realizando un salto horizontal (en carrera o desde parado) o un salto vertical.
 
 En cualquier intento de salto, un resultado de Fallo Crítico indica que el personaje tropieza y sufre una caída dura, recibiendo d6 puntos de daño de aturdimiento. Un resultado Marginal indica que el personaje realiza un salto de distancia Ordinaria pero sufre d4 puntos de daño de aturdimiento debido a un mal aterrizaje.
@@ -50,8 +50,7 @@ En cualquier intento de salto, un resultado de Fallo Crítico indica que el pers
 ---
 
 ## Nadar
-### (CON)
-
+### (FUE)
 La habilidad de especialidad de Nadar representa la capacidad de un personaje para moverse a través del agua u otros entornos líquidos sin hundirse ni ahogarse.
 
 ⊗ **Aumento de la Velocidad de Movimiento:** A medida que un personaje alcanza rangos más altos en la especialidad de nadar, mejora sus velocidades de movimiento de nado y nado suave. Ambas velocidades aumentan en **1 metro** al rango 4, de nuevo al rango 8, y de nuevo al rango 12.
@@ -60,7 +59,6 @@ La habilidad de especialidad de Nadar representa la capacidad de un personaje pa
 
 ## Lanzar
 ### (STR)
-
 Con la habilidad de lanzar, un personaje puede arrojar con precisión pelotas, dardos, piedras, cuchillos arrojadizos, granadas y otros objetos pequeños a un objetivo específico.
 
 La precisión de un lanzamiento depende del alcance y del grado de éxito obtenido en una comprobación de habilidad.

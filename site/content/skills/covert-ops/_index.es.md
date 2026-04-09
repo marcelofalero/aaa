@@ -4,6 +4,8 @@ description = "Habilidad general consolidada para el sigilo y la elusión de la 
 weight = 1
 attribute = "DES"
 category = "Otro"
+type = "skill"
+layout = "list"
 +++
 
 La habilidad general de **Operaciones Encubiertas** (anteriormente Sigilo y Manipulación) se centra en permanecer sin ser detectado y eludir la seguridad física. Consolida las artes del sigilo con las habilidades técnicas necesarias para abrir cerraduras y carterear.
@@ -15,7 +17,6 @@ La habilidad general de **Operaciones Encubiertas** (anteriormente Sigilo y Mani
 
 ## Ocultar
 ### (DES)
-
 Esta especialización representa la habilidad de esconder objetos de la vista o de los sensores. Mientras que **Sigilo** se usa para esconderse a uno mismo, **Ocultar** se usa para esconder objetos, como armas en el cuerpo, contrabando en un vehículo o un compartimento secreto en una habitación.
 
 ### Resultados
@@ -31,7 +32,6 @@ Un arma oculta se lleva en un lugar que normalmente no se registra o que no es f
 
 ## Disfraz
 ### (DES)
-
 Disfraz es la habilidad de cambiar tu apariencia para parecerte a otra persona o para mezclarte con la multitud.
 
 Mientras que la habilidad de **Entretenimiento-actuar** se usa para el maquillaje y la actuación profesional, esta especialización cubre aplicaciones más inmediatas y prácticas del disfraz, como cambiarse de ropa, usar una peluca o usar accesorios simples para evitar ser reconocido.
@@ -42,7 +42,6 @@ El dado de situación de Disfraz de un héroe se modifica por el modificador de 
 
 ## Abrir Cerraduras
 ### (DES - Solo Entrenado)
-
 *Esta habilidad no se puede usar sin entrenamiento.*
 
 Esta especialización permite a un héroe abrir cerraduras físicas (puertas, cajas fuertes, vehículos, etc.). Generalmente se emplea con herramientas que proporcionan una bonificación al dado de situación.
@@ -53,7 +52,6 @@ La habilidad de abrir cerraduras es inútil contra una cerradura asistida por co
 
 ## Carterear
 ### (DES - Solo Entrenado)
-
 *Esta habilidad no se puede usar sin entrenamiento.*
 
 Esta especialización permite a un héroe quitar objetos de una persona (o colocar algo) sin que esa persona se dé cuenta. El dado de situación base se determina por el modificador de resistencia de Voluntad del objetivo.
@@ -70,16 +68,18 @@ Esta especialización permite a un héroe quitar objetos de una persona (o coloc
 
 ## Sigilo
 ### (DES)
-
 Esta especialización (también conocida como Sigilo Unificado) fusiona las técnicas de esconderse, moverse sigilosamente y seguir en la sombra en un único campo de experiencia. Es el arte de permanecer sin ser detectado mientras se está quieto o en movimiento.
 
-### Esconderse (Estacionario)
+### Esconderse
+#### (DES)
 Habilidad para pasar desapercibido manteniéndose en silencio y quieto usando cobertura u oscuridad.
 - **Resultados:** El grado de éxito otorga una penalización al observador: Ordinario (+1), Bueno (+2), Asombroso (+3).
 
-### Moverse Sigilosamente (En Movimiento)
+### Moverse Sigilosamente
+#### (DES)
 Habilidad para moverse en silencio (hasta la mitad de la velocidad de caminar).
 - **Sorpresa:** Si tiene éxito junto a un oponente, recibe una bonificación de ataque: Ordinario (-1), Bueno (-2), Asombroso (-3).
 
-### Seguir en la Sombra (Siguiendo)
+### Seguir en la Sombra
+#### (DES)
 Habilidad para seguir a un objetivo sin ser notado. Modificado por el modificador de resistencia de Voluntad del objetivo y detectado por Percepción-intuición.

@@ -65,7 +65,7 @@ def get_smart_anchor(item):
     anchor = anchor.replace(")", "")
     return anchor
 
-def generate_skills_html(data_list, indent_level=3):
+def generate_skills_html(data_list, indent_level=3, is_psionics=False):
     """Generates the HTML for broad and specialty skills based on the provided data."""
     all_broad_skills = []
     for group in data_list:
@@ -85,7 +85,14 @@ def generate_skills_html(data_list, indent_level=3):
         id_name = clean_id(name)
         
         # Base URL for the broad skill
-        url = f"https://aaa.dimble.net/skills/{name.lower().replace(' ', '-')}"
+        # Try to get from map, otherwise fallback to guessed URL
+        fallback_path = "psionics" if is_psionics else "skills"
+        default_url = f"https://aaa.dimble.net/{fallback_path}/{name.lower().replace(' ', '-')}"
+        url = SKILL_URL_MAP.get(name, default_url)
+        
+        # Correct psionics path if it's the simplified version from skills.json
+        if "https://aaa.dimble.net/psionics/" in url:
+            url = url.replace("/psionics/", "/core-mechanics/psionics/")
 
         # Common roll value partials
         roll_scores = f"{{{{score= [[@{{{id_name}O}}]]/[[@{{{id_name}G}}]]/[[@{{{id_name}A}}]]}}}}"
@@ -126,9 +133,18 @@ def generate_skills_html(data_list, indent_level=3):
             spec_attr_full = ABILITY_MAP[spec_attr]
             spec_id = clean_id(spec_name)
             
-            # Smart Anchor generation for specialties
-            anchor = get_smart_anchor(spec)
-            spec_url = f"{url}#{anchor}"
+            # Specialty URL from map or fallback
+            spec_url = SKILL_URL_MAP.get(spec_name)
+            
+            if spec_url:
+                # Correct psionics path if needed
+                if "https://aaa.dimble.net/psionics/" in spec_url:
+                    spec_url = spec_url.replace("/psionics/", "/core-mechanics/psionics/")
+            else:
+                # Fallback: Broad skill URL + slugified specialty name
+                anchor = spec_name.lower().replace(' ', '-').replace('\'', '').replace('(', '').replace(')', '')
+                spec_url = f"{url}#{anchor}"
+            
             spec_wiki_link = f"{{{{wiki= [↗ Wiki Documentation]({spec_url})}}}}"
 
             if spec_untrained == "NO":
@@ -192,7 +208,7 @@ def build():
             content = content.replace('<!-- SKILLS_PLACEHOLDER -->', skills_html)
             all_skill_ids.extend(skill_ids)
         elif filename == 'psionics.html':
-            psionics_html, skill_ids = generate_skills_html(PSIONICS_DATA, indent_level=3)
+            psionics_html, skill_ids = generate_skills_html(PSIONICS_DATA, indent_level=3, is_psionics=True)
             content = content.replace('<!-- PSIONICS_PLACEHOLDER -->', psionics_html)
             all_skill_ids.extend(skill_ids)
             

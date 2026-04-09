@@ -4,6 +4,8 @@ description = "Basic knowledge of security systems and procedures for physical o
 weight = 10
 attribute = "INT"
 category = "Technical"
+type = "skill"
+layout = "list"
 +++
 
 This broad skill provides a character with basic knowledge of security systems and procedures. This pertains to security systems that protect physical objects or specifically defined areas. (Note that systems of the sort that protect the theft or corruption of computerized data are dealt with under the Computer Science-hacking specialty). 
@@ -18,7 +20,6 @@ The complexity of a system relates to how time-consuming it is to get through an
 
 ## Protection Protocols
 ### (INT)
-
 **Cost: 3**
 
 This skill represents a character's training in protection procedures of all types. It has two principal uses:
@@ -56,7 +57,6 @@ The analysis check is modified by how well the area is secured:
 
 ## Security Devices
 ### (INT)
-
 **Cost: 4**
 
 Using this skill, a character can attempt to bypass all types of mechanical or electronic security. This includes everything from traditional pin-tumbler locks and mechanical safes (picking) to high-tech motion sensors, trip wires, and electronic maglocks. It's also used to set traps, both electronic and mechanical in nature.

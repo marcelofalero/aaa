@@ -4,6 +4,8 @@ description = "Entrenamiento general en diversos temas; capacidad de recordar e 
 weight = 4
 attribute = "INT"
 category = "Técnica"
+type = "skill"
+layout = "list"
 +++
 
 Esta habilidad amplia representa la capacidad de un personaje para saber al menos un poco sobre cualquier tema en particular. Solo con la habilidad amplia, un personaje no es considerado un experto, pero representa la capacidad de recordar lógicamente una clase que tomó, un artículo que leyó o un documental que vio sobre el tema en cuestión.
@@ -31,7 +33,6 @@ Para una comprobación de la habilidad de Conocimiento, el Director de Juego det
 
 ## Operación de Computadoras
 ### (INT - Solo Entrenados)
-
 *Esta habilidad no puede usarse sin entrenamiento.*
 
 Esta habilidad de especialidad permite a un personaje mejorar su capacidad para hacer que las computadoras funcionen, específicamente su capacidad para obtener el máximo provecho del software (incluido el sistema operativo) que está instalado en una computadora. El grado de éxito se relaciona con la calidad o cantidad de información accedida o recuperada, o la velocidad con la que el operador es capaz de realizar una tarea.
@@ -40,7 +41,6 @@ Esta habilidad de especialidad permite a un personaje mejorar su capacidad para 
 
 ## Deducir
 ### (INT)
-
 Con esta habilidad de especialidad, un personaje puede perfeccionar sus habilidades para usar la razón y la lógica para llegar a una conclusión. Los detectives e investigadores utilizan Deducir para armar pistas, o los científicos e ingenieros para descubrir la respuesta a un problema relacionado con sus habilidades.
 
 ⊗ **Modificador de Resistencia:** En rangos más altos, la habilidad de deducir proporciona una mejora al **modificador de resistencia de Inteligencia** de un personaje, lo que hace que sea más difícil para los oponentes usar con éxito habilidades de encuentro para engañar al personaje. El modificador mejora en **+1 al rango 4**, **+1 al rango 8** y **+1 al rango 12**.
@@ -49,7 +49,6 @@ Con esta habilidad de especialidad, un personaje puede perfeccionar sus habilida
 
 ## Primeros Auxilios
 ### (INT - Solo Entrenados)
-
 *Esta habilidad no puede usarse sin entrenamiento.*
 
 Esta habilidad de especialidad representa el entrenamiento básico en técnicas de primeros auxilios, incluyendo el uso de paquetes de traumatología, kits de primeros auxilios y otros artículos médicos de uso general. No proporciona al personaje la capacidad de usar herramientas quirúrgicas especializadas o equipo médico avanzado.
@@ -57,7 +56,8 @@ Esta habilidad de especialidad representa el entrenamiento básico en técnicas 
 ### Curar Daño de Aturdimiento
 Un personaje puede usar los primeros auxilios para eliminar el daño de aturdimiento de sí mismo o de otra persona. Una comprobación de habilidad exitosa restaura **2, 3 o 4 puntos de aturdimiento** dependiendo del éxito (Ordinario, Bueno o Asombroso). Esto solo funciona en alguien que está consciente.
 
-### Recuperación de Desmayo (Knockout)
+### Recuperación de Desmayo
+#### (INT)
 Un desmayo ocurre cuando se agotan los puntos de aturdimiento de un personaje. Una comprobación de habilidad exitosa devuelve la conciencia a un personaje y restaura **1, 2 o 3 puntos de aturdimiento**, según el grado de éxito.
 
 ### Curar Daño de Herida
@@ -66,7 +66,8 @@ La habilidad de primeros auxilios se puede usar para curar heridas, aunque se re
 - **Paquete de Traumatología:** Se requiere una comprobación de habilidad compleja de **Complejidad Ordinaria** (2 heridas curadas al finalizar).
 - **Fallo Crítico:** Si se usa un paquete de traumatología, el paciente sufre 1 herida en lugar de curarse, y el paquete se arruina.
 
-### Agonizante (Dying)
+### Agonizante
+#### (INT)
 Un personaje con cualquier cantidad de daño mortal se considera agonizante. Un personaje que usa un kit de primeros auxilios o un paquete de traumatología y realiza una comprobación de habilidad de primeros auxilios exitosa puede **estabilizar el daño mortal**, eliminando la necesidad de que el personaje realice una comprobación de Resistencia–aguante al final de la escena actual. (Nota: la cirugía sigue siendo necesaria para restaurar la salud de un personaje agonizante).
 
 ### Beneficios de Rango
@@ -76,7 +77,6 @@ Un personaje con cualquier cantidad de daño mortal se considera agonizante. Un 
 
 ## Idioma, Habilidad Específica
 ### (INT - Solo Entrenados)
-
 *Esta habilidad no puede usarse sin entrenamiento.*
 
 Esta habilidad de especialidad le da a un personaje cierta fluidez en un idioma específico. Cada personaje comienza con el **rango 3** en su idioma nativo. Los rangos más bajos indican una familiaridad rudimentaria; los rangos más altos mejoran el vocabulario del personaje y la comprensión de pasajes oscuros o complicados.
@@ -87,8 +87,6 @@ Esta habilidad de especialidad le da a un personaje cierta fluidez en un idioma 
 
 ## Psiónica
 ### (INT - Solo Entrenados)
-
-
 *Esta habilidad no puede usarse sin entrenamiento.*
 
 Esta habilidad le da a un personaje un conocimiento práctico de las habilidades psiónicas, tal vez incluso más allá de lo que entiende su cultura como un todo. El grado de éxito logrado en una comprobación de habilidad se relaciona con la calidad o cantidad de información disponible o comprendida por el personaje.

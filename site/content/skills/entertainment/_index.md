@@ -4,6 +4,8 @@ description = "Proficiency in the performing arts; talent and technical knowledg
 weight = 3
 attribute = "PER"
 category = "Social"
+type = "skill"
+layout = "list"
 +++
 
 This broad skill represents a character's proficiency in the performing arts. A character with this skill is competent enough to perform amateur theater or play at the equivalent of a high school dance, while the specialty skills allow a character to become a first-rate performer—or even a star.
@@ -32,7 +34,6 @@ Possible combinations of skills to which this benefit could apply include act or
 
 ## Act
 ### (PER)
-
 This specialty skill represents a talent for playing a part or assuming a dramatic role. It also covers impersonation and the skills and techniques of the stage and screen.
 
 The act skill is used to determine the results of a character's dramatic performance or to determine his knowledge or skill with a technical aspect of the stage or screen (such as directing, makeup, or stunts). In most cases, act is used to entertain. Penalties should be applied if an actor attempts a role that requires him to perform outside the controlled conditions of a sound stage.
@@ -53,7 +54,6 @@ Possible combinations of skills to which this benefit could apply include act or
 
 ## Dance
 ### (PER)
-
 The dance skill represents a talent for moving rhythmically to music by following set steps and gestures or by improvisation. It also covers the technical aspects of performance dance, such as choreography and the knowledge of various popular and cultural dance techniques.
 
 Dance can be used to entertain, tell a story, or impress an audience. The greater the level of success, the more impressive and inspiring the dance performance—an Amazing result indicates that the dancer is poetry in motion.
@@ -68,7 +68,6 @@ Possible combinations of skills to which this benefit could apply include act or
 
 ## Musical Instrument [Specific]
 ### (PER - Trained Only)
-
 *This skill can't be used untrained.*
 
 The musical instrument skill represents a talent for playing a particular musical instrument and reading music. When a character purchases this skill, he selects a specific musical instrument. If he wants to be skilled with more than one instrument, he must purchase and improve each specialty skill separately.
@@ -85,7 +84,6 @@ Possible combinations of skills to which this benefit could apply include act or
 
 ## Sing
 ### (PER)
-
 Sing represents a talent for carrying a note and singing songs. A character with this skill is a trained vocalist with a strong and melodious voice. The greater a character's skill rank, the greater the caliber and quality of the performance he can give.
 
 #### Entertainment Skill Rank Benefit

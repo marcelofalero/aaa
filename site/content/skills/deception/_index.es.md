@@ -4,6 +4,8 @@ description = "Competencia para engañar a otros mediante la conversación y la 
 weight = 2
 attribute = "PER"
 category = "Social"
+type = "skill"
+layout = "list"
 +++
 
 Esta habilidad general representa la competencia de un héroe para engañar a otros mediante la conversación y la interacción. Abarca todos los trucos y subterfugios verbales, pero los cambios de actitud provocados por esta habilidad no son necesariamente duraderos.

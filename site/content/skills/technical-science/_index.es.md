@@ -4,6 +4,8 @@ description = "Entrenamiento en las ciencias técnicas, incluyendo mantenimiento
 weight = 13
 attribute = "INT"
 category = "Técnica"
+type = "skill"
+layout = "list"
 +++
 
 Esta habilidad amplia representa el entrenamiento de un personaje en las ciencias técnicas, incluyendo el mantenimiento, reparación e invención de dispositivos mecánicos y electrónicos (sin incluir ordenadores/computadoras), y el conocimiento técnico general.
@@ -16,7 +18,6 @@ Las comprobaciones de habilidad realizadas para determinar si un personaje conoc
 
 ## Invención
 ### (INT - Solo Entrenados)
-
 *Esta habilidad no puede usarse sin entrenamiento.*
 
 La invención permite a un personaje construir un componente o sistema electrónico o mecánico desde cero, o modificar un dispositivo existente para que realice una nueva función.
@@ -29,7 +30,6 @@ El uso de esta habilidad requiere tiempo; las comprobaciones de Invención son s
 
 ## Remiendo [Juryrig]
 ### (INT - Solo Entrenados)
-
 *Esta habilidad no puede usarse sin entrenamiento.*
 
 Esta habilidad permite a un personaje realizar reparaciones rápidas y provisionales para poner en funcionamiento un dispositivo o sistema electrónico o mecánico durante un corto período de tiempo. Una reparación de remiendo, incluso cuando tiene éxito, añade dificultad a las reparaciones completas que deben realizarse más adelante, pero puede ayudar a un personaje a salir de una situación difícil.
@@ -50,7 +50,6 @@ La cantidad de dificultad añadida a las reparaciones completas depende del resu
 
 ## Reparación
 ### (INT - Solo Entrenados)
-
 *Esta habilidad no puede usarse sin entrenamiento.*
 
 Esta habilidad proporciona a un personaje entrenamiento en la reparación y el mantenimiento de varios tipos de tecnología mecánica y electrónica.
@@ -66,7 +65,6 @@ Cualquier uso de la habilidad de reparación requiere una comprobación de habil
 
 ## Conocimiento Técnico
 ### (INT - Solo Entrenados)
-
 *Esta habilidad no puede usarse sin entrenamiento.*
 
 Esta habilidad representa el estudio de la tecnología e indica qué tan actualizado está un personaje sobre las técnicas o procedimientos que le ayudan a manipular herramientas y otros dispositivos. Es necesario que un personaje use ciertas herramientas sofisticadas o potencialmente peligrosas, como un soplete de corte, sin arriesgarse a sufrir lesiones personales o dañar la herramienta.

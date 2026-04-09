@@ -4,6 +4,8 @@ description = "General training in planetary survival, ruined urban environments
 weight = 3
 attribute = "CON"
 category = "Other"
+type = "skill"
+layout = "list"
 +++
 
 This broad skill provides a character with training in survival across wilderness, ruined/hostile urban landscapes, and alien biospheres. It covers procuring necessities (food, water, shelter), avoiding environmental hazards, and systematic ecological study.
@@ -40,7 +42,6 @@ The type of terrain or environment where the character is located can provide a 
 
 ## Survival Training
 ### (CON)
-
 This specialty skill enables a character to improve his ability to use the Survival broad skill in a certain type of terrain. This normally includes all terrain types common to his **home world**, plus any others purchased separately.
 
 ### Discern Dangers
@@ -55,7 +56,6 @@ While in a terrain he is familiar with, a character is able to quickly identify 
 
 ## Adaptability
 ### (CON - Trained Only)
-
 *This skill can’t be used untrained.*
 
 This specialty improves a character’s ability to adapt to alien environments. The character is resourceful enough to grasp unknown survival mechanics through observation and study.
@@ -72,7 +72,6 @@ A character can perform a **Survival—Adaptability** challenge, spend studying 
 
 ## Trailblazing
 ### (CON)
-
 With trailblazing, a character learns to find paths through rough terrain or create paths that others can use to move faster and cover more ground during a full day's travel. The successful use of this skill reduces the adverse effects of traveling in conditions of Good or Amazing difficulty for the character and any companions who are traveling with him.
 
 This skill check is made once per day, at the beginning of a day of travel. 

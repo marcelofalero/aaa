@@ -4,8 +4,9 @@ description = "Training in use of mortars, grenade/rocket launchers, and heavy f
 weight = 3
 attribute = "STR"
 category = "Combat"
+type = "skill"
+layout = "list"
 +++
-
 
 This broad skill provides a character with training in the use of heavy weaponry that isn't part of a ship or vehicle, including mortars, grenade and rocket launchers, shoulder-fired missiles, and heavy firearms. Weapons that are part of a large ship or a single-operator vehicle require the use of [System Operation](/skills/system-operation/) or [Vehicle Operation](/skills/vehicle-operation/), respectively. Heavy weapons are listed on [**TABLE P40: HEAVY WEAPONS**](/equipment/weapons/#heavy-weapons).
 
@@ -32,13 +33,11 @@ A few direct-fire heavy weapons (as well as some rifles and all submachine guns)
 
 ## Direct Fire
 ### (STR)
-
 This specialty skill allows a character to improve his proficiency with direct-fire heavy weapons. These weapons work just like normal firearms, requiring the user to aim them at a target. Direct-fire heavy weapons include heavy-caliber firearms, plasma guns, and raiders.
 
 ---
 
 ## Indirect Fire
 ### (STR)
-
 This specialty skill allows a character to improve his proficiency with indirect-fire heavy weapons. These weapons can fire over or around obstacles; they deliver an area effect attack instead of an attack against a specific target. Indirect-fire heavy weapons include grenade launchers, rocket launchers, shoulder-fired missiles, and mortars.
 

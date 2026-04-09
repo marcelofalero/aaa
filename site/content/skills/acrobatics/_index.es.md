@@ -4,12 +4,14 @@ description = "Entrenamiento básico en gimnasia, volteretas, saltos, rodar, esq
 weight = 1
 attribute = "DEX"
 category = "Otros"
+type = "skill"
+layout = "list"
 +++
 
 Esta habilidad amplia proporciona a un personaje entrenamiento básico en acrobacias. Se utiliza cuando un personaje desea saltar por encima de una valla u otro obstáculo, esquivar un peligro inmediato o tratar de aterrizar de forma segura después de una caída.
 
-### Saltos (Vaulting)
-
+### Saltos
+#### (DEX)
 Saltar es un salto vertical mejorado por asistencia (impulsarse en un objeto o usar una pértiga). Un personaje puede usar tanto **Atletismo—saltar** como **Acrobacia**.
 
 - **Ambas habilidades:** Aumentan la distancia en 1 metro.
@@ -21,7 +23,6 @@ Saltar es un salto vertical mejorado por asistencia (impulsarse en un objeto o u
 
 ## Esquivar [Dodge]
 ### (DEX)
-
 Esta habilidad de especialidad permite a un personaje usar acrobacias como defensa en situaciones de combate. También se usa cuando un personaje se lanza a cubierto o se tira al suelo cuando un ataque de área lo tiene como objetivo. Esquivar permite a un personaje dar volteretas, rodar, agacharse, lanzarse o saltar para apartarse de un ataque.
 
 Se realiza una comprobación de habilidad (que requiere una acción) al comienzo de la primera fase en la que el personaje puede actuar. El resultado dura para todas las fases subsiguientes del asalto. Cualquier acción adicional realizada en el asalto recibe una penalización de +1.
@@ -42,7 +43,6 @@ Se realiza una comprobación de habilidad (que requiere una acción) al comienzo
 
 ## Caída
 ### (DEX)
-
 Esta habilidad de especialidad permite a un personaje mejorar su capacidad para sobrevivir a una caída girando su cuerpo, agarrando protuberancias cercanas o frenando de otra manera su descenso, disminuyendo así el daño que sufre por un impacto.
 
 Un personaje con la especialidad de caída suma su rango en la especialidad a su puntuación de **Acrobacia** y usa ese número para realizar la comprobación de habilidad, con un dado de situación base de +d0.
@@ -51,7 +51,6 @@ Un personaje con la especialidad de caída suma su rango en la especialidad a su
 
 ## Temerario [Daredevil]
 ### (DEX)
-
 Esta habilidad de especialidad permite a un personaje realizar actividades de alto riesgo como paracaidismo, submarinismo (buceo), ala delta, surf, puenting y rafting.
 
 ### Resultados
@@ -65,7 +64,6 @@ Esta habilidad de especialidad permite a un personaje realizar actividades de al
 
 ## Entrenamiento en Gravedad Cero
 ### (DEX - Solo Entrenados)
-
 *Esta habilidad no puede usarse sin entrenamiento.*
 
 Un personaje con la habilidad de entrenamiento en gravedad cero puede funcionar en condiciones de ingravidez o casi ingravidez mejor que alguien que no tenga esta habilidad. Un personaje no entrenado tiene una penalización de **+3 pasos** en gravedad cero y una penalización de **+1 paso** en gravedad ligera. Comprar esta habilidad reduce inmediatamente la penalización de gravedad cero a **+2 pasos** y elimina la penalización por gravedad ligera.
@@ -81,7 +79,6 @@ Un personaje con la habilidad de entrenamiento en gravedad cero puede funcionar 
 
 ## Acrobacia Aérea [Aerobatics]
 ### (DEX)
-
 Esta habilidad de especialidad representa la maestría de un personaje en maniobras complejas durante el vuelo personal, ya sea a través de alas naturales, jump-packs especializados o dispositivos de vuelo personal gravíticos (GADS). Mientras que la locomoción básica está cubierta por la habilidad amplia de **Acrobacia**, la Acrobacia Aérea es necesaria para giros a alta velocidad, aterrizajes precisos, maniobras evasivas y acrobacias aéreas. En el **Rango 4** de **Operación de Armadura—Sistemas de Propulsión**, esta habilidad también se puede usar para maniobras complejas utilizando los propulsores integrados de un traje potenciado.
 
 **Nota:** Esta habilidad cubre la locomoción *personal* y maniobras complejas. Operar un vehículo más grande por el aire o el espacio requiere [Operación de Vehículos—aire](/es/skills/vehicle-operation/#vehículo-aéreo) u [Operación de Vehículos—espacial](/es/skills/vehicle-operation/#vehículo-espacial).

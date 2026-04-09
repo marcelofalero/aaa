@@ -52,7 +52,7 @@
           {{ if .link }}
           <a href="#{{ $item.anchor }}">{{ index $item .key | safeHTML }}</a>
           {{ else if and (eq .key "skill") (index $item "skill_url") }}
-          <a href="{{ index $item " skill_url" }}">{{ index $item .key | safeHTML }}</a>
+          <a href="{{ index $item "skill_url" }}">{{ index $item .key | safeHTML }}</a>
           {{ else }}
           {{ index $item .key | safeHTML }}
           {{ end }}

@@ -4,8 +4,9 @@ description = "Consolidated broad skill for stealth and bypassing security."
 weight = 1
 attribute = "DEX"
 category = "Other"
+type = "skill"
+layout = "list"
 +++
-
 
 The **Covert Ops** broad skill focuses on remaining undetected and bypassing physical security. It consolidates the arts of stealth with the practical skills needed to blend in or pick pockets.
 
@@ -16,7 +17,6 @@ The **Covert Ops** broad skill focuses on remaining undetected and bypassing phy
 
 ## Conceal
 ### (DEX)
-
 This specialty skill represents the ability to hide objects from view or sensors. While **Stealth** is used to hide oneself, **Conceal** is used to hide items, such as weapons on one's person, contraband in a vehicle, or a secret compartment in a room.
 
 ### Results
@@ -34,7 +34,6 @@ A concealed weapon is worn in a place not normally searched or not subject to ea
 
 ## Disguise
 ### (CHA)
-
 Disguise is the ability to change your appearance to look like someone else or to blend into a crowd.
 
 While the **Entertainment-act** skill is used for professional makeup and performance, this specialty covers more immediate and practical applications of disguise, such as changing clothes, wearing a wig, or using simple props to avoid recognition.
@@ -46,7 +45,6 @@ A character's Disguise situation die is modified by the observer's Awareness-per
 
 ## Pickpocket
 ### (DEX - Trained Only)
-
 *This skill can't be used untrained.*
 
 This specialty skill allows a character to remove objects from a person (or plant something) without that person noticing. The base situation die is determined by the target's Will resistance modifier.
@@ -76,21 +74,23 @@ This specialty skill allows a character to remove objects from a person (or plan
 
 ## Stealth
 ### (DEX)
-
 This specialty (also known as Unified Stealth) merges the techniques of hide, sneak, and shadow into a single field of expertise. It is the art of remaining undetected while stationary or in motion.
 
-### Hide (Stationary)
+### Hide
+#### (Stationary)
 
 Ability to stay unnoticed by keeping quiet and still using cover or darkness.
 
 - **Results:** Degree of success gives observer penalty: Ordinary (+1), Good (+2), Amazing (+3).
 
-### Sneak (In Motion)
+### Sneak
+#### (In Motion)
 
 Ability to move silently (up to one-half walk rate).
 
 - **Surprise:** If successful adjacent to an opponent, receive attack bonus: Ordinary (-1), Good (-2), Amazing (-3).
 
-### Shadow (Following)
+### Shadow
+#### (Following)
 
 Ability to follow a target without being noticed. Modified by target's Will resistance modifier and detected by Awareness-intuition.

@@ -4,8 +4,9 @@ description = "Training in use of modern ranged weapons, including pistols, rifl
 weight = 3
 attribute = "DEX"
 category = "Combat"
+type = "skill"
+layout = "list"
 +++
-
 
 This broad skill provides a character with training in the use of modern ranged weapons. This skill covers pistols, rifles, shotguns, and submachine guns of all types, including projectile and energy weapons.
 
@@ -48,7 +49,6 @@ When a character uses any ranged weapon, either primitive or modern, a number of
 
 ## Pistol
 ### (DEX)
-
 This specialty skill allows a character to improve his proficiency with modern pistols of all types, including projectile and energy weapons.
 
 ▶ **Quick Draw:** After a character reaches rank 3 in this specialty, he can perform a quick draw with his pistol. This allows him to draw his weapon and fire it in the same phase with only a +1 penalty. As a character reaches rank 4, he can draw and fire in the same phase without any penalty.
@@ -57,7 +57,6 @@ This specialty skill allows a character to improve his proficiency with modern p
 
 ## SMG
 ### (DEX)
-
 This specialty skill allows a character to improve his proficiency with modern submachine guns of all types (small automatic weapons that fire pistol-sized cartridges) as well as energy-equivalent submachine guns. 
 
 ### Automatic Weapon Attack Modes
@@ -74,7 +73,6 @@ Submachine guns (and assault rifles) provide a character with up to three attack
 
 ## Assault Rifle
 ### (DEX)
-
 This specialty skill covers automatic rifles—standard infantry weapons capable of selective fire and automatic modes using rifle-caliber cartridges.
 
 ### Automatic Weapon Attack Modes
@@ -91,7 +89,6 @@ Assault rifles provide a character with up to three attack options per action ph
 
 ## Shotgun
 ### (DEX)
-
 This specialty skill covers all types of modern shotguns, from traditional pump-action and semi-automatic projectile weapons to specialized energy spread-emitters. Shotguns are defined by their wide range of specialized ammunition types (Buckshot, Slugs, Breaching rounds, etc.) or multi-mode energy settings.
 
 ▶ **Tactical Load / Selection:** When a character reaches rank 3 in this specialty, they have mastered the mechanics of their weapon. They can **Select/Switch Ammo types** or reconfigure weapon energy settings as a **Free Action** instead of an auxiliary action. This allows them to instantly adapt their weapon’s profile to the immediate tactical situation (e.g., swapping to a slug for a precision shot or buckshot for hallway clearing) during a combat phase.
@@ -100,7 +97,6 @@ This specialty skill covers all types of modern shotguns, from traditional pump-
 
 ## Rifle
 ### (DEX)
-
 This specialty skill allows a character to improve his proficiency with modern single-fire rifles, sniper rifles, and hunting rifles. 
 
 ▶ **Improved Aim:** When a character reaches rank 3 in this specialty, he becomes able to hit a target with more dependability. This improvement in accuracy translates to a **-1 bonus** to the situation die for any single-fire rifle attack the character makes.

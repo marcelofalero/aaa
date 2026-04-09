@@ -4,6 +4,8 @@ description = "Capacidad para comprender e interactuar con diferentes culturas y
 weight = 1
 attribute = "PER"
 category = "Social"
+type = "skill"
+layout = "list"
 +++
 
 Esta habilidad general representa la capacidad de un héroe para comprender e interactuar con culturas diferentes a la suya. Abarca costumbres, filosofía y figuras históricas importantes.

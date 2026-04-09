@@ -4,8 +4,9 @@ description = "Training in the physical sciences, including astronomy, chemistry
 weight = 9
 attribute = "INT"
 category = "Technical"
+type = "skill"
+layout = "list"
 +++
-
 
 This broad skill represents a character's training in the physical sciences. Skill checks involving this skill are made the same as Knowledge skill checks.
 
@@ -15,8 +16,6 @@ This broad skill represents a character's training in the physical sciences. Ski
 
 ## Astronomy
 ### (INT - Trained Only)
-
-
 *This skill can't be used untrained.*
 
 Astronomy is the study of celestial objects and phenomena that originate outside planet atmospheres. It allows a character to identify stars, planets, and other celestial bodies, and to calculate orbits and trajectories.
@@ -27,8 +26,6 @@ Astronomy is the study of celestial objects and phenomena that originate outside
 
 ## Chemistry
 ### (INT - Trained Only)
-
-
 *This skill can't be used untrained.*
 
 Chemistry is the study of matter, its properties, and how and why substances combine or separate to form other substances.
@@ -39,8 +36,6 @@ Chemistry is the study of matter, its properties, and how and why substances com
 
 ## Physics
 ### (INT - Trained Only)
-
-
 *This skill can't be used untrained.*
 
 Physics is the study of matter, energy, and the fundamental forces of nature.
@@ -51,8 +46,6 @@ Physics is the study of matter, energy, and the fundamental forces of nature.
 
 ## Planetology
 ### (INT - Trained Only)
-
-
 *This skill can't be used untrained.*
 
 Planetology is the study of celestial bodies, specifically when attempting to classify, log, and scan for useful information.

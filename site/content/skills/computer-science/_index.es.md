@@ -4,8 +4,9 @@ description = "El estudio y la aplicación de la computación, el procesamiento 
 weight = 2
 attribute = "INT"
 category = "Technical"
+type = "skill"
+layout = "list"
 +++
-
 
 **Gratis para los personajes mechalus.**
 
@@ -31,8 +32,6 @@ Para obtener más información sobre cómo se utilizan las especializaciones de 
 
 ## Hacking
 ### (INT - Solo Entrenado)
-
-
 El Hacking es la habilidad de romper códigos informáticos y eludir la seguridad informática con el fin de obtener acceso a datos restringidos o sistemas informáticos seguros. El Hacking se puede realizar en una estación de computadora que esté conectada físicamente a las tiendas de datos en cuestión, o se puede realizar desde una ubicación distante creando un enlace a través de una red de algún tipo. Se utiliza con mayor frecuencia para recuperar datos protegidos, entrar y tomar el control de un sistema informático, o para realizar algún tipo de sabotaje como borrar archivos o introducir un virus de algún tipo.
 
 Esta especialidad le permite a un personaje equipado con una computadora realizar las tareas mencionadas anteriormente. La propia habilidad del personaje y cualquier programa que se utilice pueden ayudar al personaje a navegar por sistemas informáticos, superar la seguridad e incluso defenderse frente a otros operadores conectados a un sistema.
@@ -43,8 +42,6 @@ Esta especialidad le permite a un personaje equipado con una computadora realiza
 
 ## Hardware
 ### (INT)
-
-
 Esta especialidad representa el conocimiento y la competencia de un personaje con los componentes físicos que conforman una computadora. Comprender cómo funciona un sistema informático, poder configurarlo rápidamente, diseñar y construir su propia computadora y reparar el equipo informático son algunas de las tareas cubiertas por esta habilidad.
 
 ▶ Efecto Incremental: A medida que un personaje gana rangos en esta especialidad, su capacidad para reparar sistemas informáticos y trabajar con hardware informático de otras maneras mejora. Esto se refleja con un **bonificador al dado de situación de -1 en el rango 4**, un **bonificador de -2 en el rango 8**, y un **bonificador de -3 en el rango 12**.
@@ -53,8 +50,6 @@ Esta especialidad representa el conocimiento y la competencia de un personaje co
 
 ## Programación
 ### (INT)
-
-
 Esta especialidad le permite a un personaje mejorar su capacidad para analizar programas informáticos, modificar programas existentes y (en rangos superiores) crear programas escribiendo su propio código. Tener el rango 1 en esta habilidad permite a un personaje modificar el código fuente de programas de calidad Ordinaria y complejidad Ordinaria.
 
 ▶ Modificar Programas Existentes: Un personaje con el rango 3 en esta habilidad puede modificar el código de los programas existentes de calidad Buena y complejidad Buena. Cuando el personaje logra el rango 6, puede modificar cualquier programa existente.

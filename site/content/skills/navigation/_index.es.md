@@ -4,6 +4,8 @@ description = "Formación en navegación en superficies planetarias o en el espa
 weight = 8
 attribute = "INT"
 category = "Technical"
+type = "skill"
+layout = "list"
 +++
 
 Esta habilidad amplia proporciona al personaje formación en navegación sobre superficies planetarias o en el espacio. Trazar un rumbo requiere una tirada de habilidad simple.
@@ -16,7 +18,6 @@ El tiempo óptimo para un intento de Navegación es de 5 minutos. Cada minuto me
 
 ## Navegación—superficie
 ### (INT)
-
 Esta habilidad de especialidad cubre la navegación en un entorno planetario, utilizando mapas, accidentes del terreno, brújulas y sistemas GPS para desplazarse de un punto a otro.
 
 ⊗ **Efecto incrementado:** Un personaje recibe una **bonificación de -1 paso** en el rango 3, **-2** en el rango 6, **-3** en el rango 9 y **-4** en el rango 12 en las tiradas de Navegación—superficie al utilizar mapas y sensores de navegación.
@@ -34,7 +35,6 @@ La habilidad de pionero implica identificar y crear nuevos caminos a través de 
 
 ## Astrogación—sistema
 ### (INT - Solo entrenamiento)
-
 *Esta habilidad no se puede usar sin entrenamiento.*
 
 Esta habilidad de especialidad cubre la navegación a través de un sistema estelar, normalmente los movimientos entre planetas, lunas y estaciones.
@@ -48,7 +48,6 @@ Esta habilidad de especialidad cubre la navegación a través de un sistema este
 
 ## Astrogación—espacio de curvatura
 ### (INT - Solo entrenamiento)
-
 *Esta habilidad no se puede usar sin entrenamiento.*
 
 Esta habilidad de especialidad implica la navegación a través del espacio de curvatura (drivespace), normalmente el movimiento entre sistemas estelares.

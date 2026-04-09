@@ -4,6 +4,8 @@ description = "Competencia en las artes escénicas; talento y conocimientos téc
 weight = 3
 attribute = "PER"
 category = "Social"
+type = "skill"
+layout = "list"
 +++
 
 Esta habilidad general representa la competencia de un héroe en las artes escénicas. Los conocimientos técnicos y el entrenamiento son parte de esta habilidad, al igual que la capacidad del héroe para actuar ante un público y provocar una respuesta emocional.
