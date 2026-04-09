@@ -52,13 +52,29 @@ def translate_field(en_val, es_override, mapping, lang):
     # Soft fallback: use override or apply general mapping rules
     return es_override if es_override else apply_mapping(en_val, mapping)
 
-def localize_url(url, lang):
+def slugify(text):
+    if not text: return ""
+    text = text.lower()
+    # Handle common Spanish accents to avoid problematic slugs
+    replacements = {'á': 'a', 'é': 'e', 'í': 'i', 'ó': 'o', 'ú': 'u', 'ñ': 'n'}
+    for k, v in replacements.items():
+        text = text.replace(k, v)
+    # Replace non-lowercase letters/numbers with -
+    text = re.sub(r'[^a-z0-9]', '-', text)
+    # Remove consecutive -
+    text = re.sub(r'-+', '-', text)
+    return text.strip('-')
+
+def localize_url(url, lang, localized_title=None):
     if not url: return url
     if lang == 'es':
-        if url.startswith('/'):
-            # Avoid double /es/es/
-            if not url.startswith('/es/'):
-                return '/es' + url
+        # Handle the path
+        if url.startswith('/') and not url.startswith('/es/'):
+            url = '/es' + url
+        # Handle the anchor if we have a localized title (matches Hugo header anchors)
+        if '#' in url and localized_title:
+            path_part = url.split('#')[0]
+            url = f"{path_part}#{slugify(localized_title)}"
     return url
 
 def rebuild_all():
@@ -95,17 +111,23 @@ def apply_rules_to_node(node, mapping, lang='en'):
              val = node.get(lang, node.get('en', ''))
              return apply_mapping(val, mapping) if lang == 'es' else val
         
+        # Pre-translate name/skill if possible for URL localization
+        loc_title = None
+        if lang == 'es':
+            if 'name' in node: loc_title = translate_field(node['name'], node.get('name_es'), mapping, 'es')
+            elif 'skill' in node: loc_title = translate_field(node['skill'], node.get('skill_es'), mapping, 'es')
+
         for k, v in node.items():
             if k in ['name_es', 'skill_es', 'description_es']: continue
             # Translate keys like 'name'
             if k == 'name':
-                new_node[k] = translate_field(v, node.get('name_es'), mapping, lang)
+                new_node[k] = loc_title if lang == 'es' else v
             elif k == 'skill':
-                new_node[k] = translate_field(v, node.get('skill_es'), mapping, lang)
+                new_node[k] = loc_title if lang == 'es' else v
             elif k == 'attribute':
                 new_node[k] = translate_field(v, None, mapping, lang)
             elif k.endswith('url'):
-                new_node[k] = localize_url(v, lang)
+                new_node[k] = localize_url(v, lang, loc_title)
             else:
                 new_val = apply_rules_to_node(v, mapping, lang)
                 if isinstance(new_val, str) and lang == 'es' and k not in ['type', 'category']:
@@ -152,19 +174,21 @@ def process_skills(skills_list, mapping):
             cat_en = b.get('category', 'Other')
             cat = cat_en if lang == 'en' else CATEGORY_MAP.get(cat_en, apply_mapping(cat_en, mapping))
             
+            b_title = translate_field(b['skill'], b.get('skill_es'), mapping, lang)
             broad_entry = {
-                "skill": translate_field(b['skill'], b.get('skill_es'), mapping, lang),
+                "skill": b_title,
                 "attribute": translate_field(b['attribute'], None, mapping, lang),
-                "skill_url": localize_url(b['skill_url'], lang),
+                "skill_url": localize_url(b['skill_url'], lang, b_title),
                 "cost": b.get('cost', 0),
                 "type": "Broad"
             }
             specs = []
             for s in b.get('specialties', []):
+                s_title = translate_field(s['skill'], s.get('skill_es'), mapping, lang)
                 specs.append({
-                    "skill": translate_field(s['skill'], s.get('skill_es'), mapping, lang),
+                    "skill": s_title,
                     "attribute": translate_field(s['attribute'], None, mapping, lang),
-                    "skill_url": localize_url(s['skill_url'], lang),
+                    "skill_url": localize_url(s['skill_url'], lang, s_title),
                     "cost": s.get('cost', 0),
                     "type": "Specialty"
                 })
