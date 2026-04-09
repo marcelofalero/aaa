@@ -61,9 +61,16 @@
         {{ if and (not (in $hidden_fields .key)) (ne .key "description") }}
         <td class="cell-{{ .key }}">
           {{ if .link }}
-          <a href="#{{ $item.anchor }}">{{ index $item .key | safeHTML }}</a>
+          <div class="flex items-center">
+            <a href="{{ index $item "skill_url" }}">{{ index $item .key | safeHTML }}</a>
+            {{ if eq (index $item "untrained") false }}
+            <span class="badge badge-error ml2 f7 t-up" title="Requires Training">Trained Only</span>
+            {{ end }}
+          </div>
           {{ else if and (eq .key "skill") (index $item "skill_url") }}
           <a href="{{ index $item "skill_url" }}">{{ index $item .key | safeHTML }}</a>
+          {{ else if eq .key "tier" }}
+          <span class="badge badge-info">{{ index $item .key }}</span>
           {{ else }}
           {{ index $item .key | safeHTML }}
           {{ end }}

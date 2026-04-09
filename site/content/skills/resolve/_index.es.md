@@ -1,12 +1,12 @@
 +++
 title = "Firmeza"
 attribute = "WIL"
-category = "Other"
+category = "Otros"
 type = "skill"
 layout = "list"
 +++
 
-Esta habilidad amplia representa la fuerza de voluntad interna de un personaje. Es la capacidad de soportar dificultades físicas, resistir la tensión mental y mantenerse firme en las propias convicciones. El entrenamiento en Firmeza permite a un personaje estabilizar su mente durante situaciones de alto estrés y recuperarse más eficientemente del choque inicial de un trauma corporal.
+Esta habilidad amplia representa la fuerza de voluntad interna de un personaje. Es la capacidad de soportar dificultades físicas, resistir la tensión Mental y mantenerse firme en las propias convicciones. El entrenamiento en Firmeza permite a un personaje estabilizar su mente durante situaciones de alto estrés y recuperarse más eficientemente del choque inicial de un trauma corporal.
 
 ---
 
@@ -19,9 +19,9 @@ La Firmeza Mental representa la capacidad de un personaje para lidiar con el est
 
 | Resultados | Descripción |
 | :--- | :--- |
-| **Ordinario** | El personaje ignora 1 paso de penalización mental/de estrés. |
-| **Bueno** | El personaje ignora 2 pasos de penalización mental/de estrés. |
-| **Asombroso** | El personaje ignora 3 pasos de penalización mental/de estrés. |
+| **Ordinario** | El personaje ignora 1 paso de penalización Mental/de estrés. |
+| **Bueno** | El personaje ignora 2 pasos de penalización Mental/de estrés. |
+| **Asombroso** | El personaje ignora 3 pasos de penalización Mental/de estrés. |
 
 ⊗ **Modificador de Resistencia:** Mejora el modificador de resistencia de Voluntad del personaje en +1 en el rango 4, +1 adicional en el rango 8 y un último +1 en el rango 12.
 

@@ -1,7 +1,7 @@
 +++
 title = "Supervivencia"
 attribute = "CON"
-category = "Other"
+category = "Otros"
 type = "skill"
 layout = "list"
 +++

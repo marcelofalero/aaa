@@ -1,7 +1,7 @@
 +++
 title = "Teleportation"
 attribute = "WIL"
-category = "Other"
+category = "Otros"
 type = "skill"
 layout = "list"
 +++

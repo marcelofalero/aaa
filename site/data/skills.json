@@ -1,4 +1,27 @@
 {
+    "columns": [
+        {
+            "key": "skill",
+            "name": "Skill",
+            "link": true
+        },
+        {
+            "key": "attribute",
+            "name": "Attr."
+        },
+        {
+            "key": "cost",
+            "name": "Cost"
+        },
+        {
+            "key": "tier",
+            "name": "Tier"
+        },
+        {
+            "key": "pr",
+            "name": "Prereq."
+        }
+    ],
     "groups": [
         {
             "name": "Combat",

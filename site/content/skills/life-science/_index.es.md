@@ -1,7 +1,7 @@
 +++
 title = "Ciencias de la vida"
 attribute = "INT"
-category = "Technical"
+category = "Técnico"
 type = "skill"
 layout = "list"
 +++

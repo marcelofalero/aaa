@@ -1,7 +1,7 @@
 +++
 title = "Combate Cuerpo a Cuerpo"
 attribute = "STR"
-category = "Combat"
+category = "Combate"
 type = "skill"
 layout = "list"
 +++
@@ -85,13 +85,13 @@ Every additional attacker who takes part in the same overpowering attempt provid
 
 ▶ Base Damage: When a Personaje reaches skill rank 1, he learns to maintain balance while identifying openings. This increases his base unarmed damage to **d4s/d6s/d6w**.
 
-⊗ Resistance Modifier: At higher ranks, the skill provides an improvement to a Personaje's Strength resistance modifier. By leveraging his speed and flexibility, the practitioner’s reactive movement provides a +1 step increase at rank 3, an additional +1 at rank 7, and a final +1 at rank 11. This increase doesn't stack with similar bonuses provided by other Combate cuerpo a cuerpo specialty skills.
+⊗ Resistance Modifier: At higher ranks, the skill provides an improvement to a Personaje's Strength resistance modifier. By leveraging his speed and flexibility, the practitioner’s reactive movement provides a +1 step increase at rank 3, an additional +1 at rank 7, and a final +1 at rank 11. This increase doesn't stack with similar bonuses provided by Otros Combate cuerpo a cuerpo specialty skills.
 
 How we do things reaches rank 4, if an opponent misses him with a melee attack, the Personaje's next attack against that specific opponent before the end of the next round can use either his own or his opponent's Strength modifier for damage.
 
 ▶ Redirection of Force: When a Personaje reaches rank 7, if an opponent performs an All Out Attack against him, the attacker receives all the penalties of that maneuver but gains none of the benefits.
 
-How we do things reaches rank 10, All Out Attacks that miss him can be redirected against any other target adjacent to the attacker. The attacker must make a new normal attack roll against the new target to determine the result.
+How we do things reaches rank 10, All Out Attacks that miss him can be redirected against any Otros target adjacent to the attacker. The attacker must make a new normal attack roll against the new target to determine the result.
 
 ▶ Formless Master: When a Personaje reaches rank 12, he may ignore 1 step of an opponent's Strength defense due to the unpredictability of his attacks.
 
@@ -116,7 +116,7 @@ Every additional attacker who takes part in the same overpowering attempt provid
 
 ▶ Structural Efficiency: When a Personaje reaches rank 4, all unarmed damage increases by +1. This bonus increases by an additional +1 at rank 8 and again at rank 12.
 
-⊗ Resistance Modifier: At higher ranks, the skill provides an improvement to a Personaje's Strength resistance modifier. It improves by +1 at rank 4, by +1 again at rank 8, and by +1 again at rank 12. This increase doesn't stack with similar bonuses provided by other Combate cuerpo a cuerpo specialty skills.
+⊗ Resistance Modifier: At higher ranks, the skill provides an improvement to a Personaje's Strength resistance modifier. It improves by +1 at rank 4, by +1 again at rank 8, and by +1 again at rank 12. This increase doesn't stack with similar bonuses provided by Otros Combate cuerpo a cuerpo specialty skills.
 
 ▶ Short-range Power (Fajin): When a Personaje reaches rank 5, he learns to strike effectively even if his hands are bound or unusable by utilizing his shoulders, knees, or head.
 
@@ -124,7 +124,7 @@ Every additional attacker who takes part in the same overpowering attempt provid
 
 ▶ Master of Force: When a Personaje reaches rank 12, the "roll twice/take worse" armor penalty now applies to Powered Armors and supernatural defenses.
 
-**Note:** Practitioners that frequently utilize the All Out Attack option in combat are usually called brawlers.
+**Note:** Practitioners that frequently utilize the All Out Attack option in Combate are usually called brawlers.
 
 ---
 
@@ -137,7 +137,7 @@ As a Personaje improves his ability in the powered Especialidad, he gains rank b
 
 Due to the inherent complexity of powered weapons they are more fragile than their counterparts; this requires the user to be more careful when parrying, resulting in a +2 step penalty on parry checks.
 
-⊗ Resistance Modifier: At higher ranks, the skill provides an improvement to a Personaje's Strength resistance modifier. It improves by +1 at rank 4, by +1 again at rank 8, and by +1 again at rank 12. This increase doesn't stack with similar bonuses provided by other Combate cuerpo a cuerpo specialty skills.
+⊗ Resistance Modifier: At higher ranks, the skill provides an improvement to a Personaje's Strength resistance modifier. It improves by +1 at rank 4, by +1 again at rank 8, and by +1 again at rank 12. This increase doesn't stack with similar bonuses provided by Otros Combate cuerpo a cuerpo specialty skills.
 
 ▶ Reaction Parry: When a Personaje reaches rank 4, he can attempt to parry whenever a melee or unarmed attack is used against him. The parry attempt uses up the Personaje's next available action.
 

@@ -1,7 +1,7 @@
 +++
 title = "Atletismo"
 attribute = "STR"
-category = "Other"
+category = "Otros"
 type = "skill"
 layout = "list"
 +++

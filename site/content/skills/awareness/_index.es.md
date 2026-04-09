@@ -1,7 +1,7 @@
 +++
 title = "Alerta [Awareness]"
 attribute = "WIL"
-category = "Other"
+category = "Otros"
 type = "skill"
 layout = "list"
 +++
@@ -57,7 +57,7 @@ Esta habilidad de especialidad permite a un personaje detectar la activación de
 El Director de Juego solicitará una comprobación cuando se active un poder psiónico en las proximidades del personaje, similar a una comprobación para detectar una emboscada.
 - **Ordinario:** El personaje siente que *algún* poder psiónico fue activado cerca.
 - **Bueno:** Si la fuente está dentro de la línea de visión, el personaje puede identificar al usuario. Si no, obtiene una idea general de la dirección y distancia a la fuente.
-- **Asombroso:** El personaje puede detectar los efectos sutiles y continuos de un poder psiónico, como la manipulación mental o las ilusiones psiónicas.
+- **Asombroso:** El personaje puede detectar los efectos sutiles y continuos de un poder psiónico, como la manipulación Mental o las ilusiones psiónicas.
 
 ### Identificación de Fenómenos Psiónicos
 Si el personaje intenta una comprobación de **Conocimiento—Psiónica** para identificar o rastrear la fuente del poder o fenómeno específico detectado, recibirá un bono basado en su resultado de Sentido Psiónico:

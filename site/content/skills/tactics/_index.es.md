@@ -1,7 +1,7 @@
 +++
 title = "Táctica"
 attribute = "INT"
-category = "Combat"
+category = "Combate"
 type = "skill"
 layout = "list"
 +++

@@ -1,7 +1,7 @@
 +++
 title = "Manejo de Animales"
 attribute = "WIL"
-category = "Other"
+category = "Otros"
 type = "skill"
 layout = "list"
 +++

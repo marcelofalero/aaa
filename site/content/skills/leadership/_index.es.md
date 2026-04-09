@@ -38,7 +38,7 @@ La tirada de acción de un líder proporciona una bonificación a todas las acci
 
 *This skill can't be used untrained.*
 
-This Especialidad represents the ability to command by example. This skill can be used by military officers, elected officials, and law enforcers who also have the command specialty, but inspire is more often used by those who are trying to lead civil disobedience movements and other types of nonviolent activities.
+This Especialidad represents the ability to command by example. This skill can be used by military officers, elected officials, and law enforcers who also have the command specialty, but inspire is more often used by those who are trying to lead civil disobedience movements and Otros types of nonviolent activities.
 
 One major difference is that **Inspire can be used on targets who are Hostile or Combative**, favorably altering the attitude of the target(s) toward the user of the skill.
 

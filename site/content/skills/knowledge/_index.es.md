@@ -1,7 +1,7 @@
 +++
 title = "Conocimiento"
 attribute = "INT"
-category = "Technical"
+category = "Técnico"
 type = "skill"
 layout = "list"
 +++
@@ -109,7 +109,7 @@ Esta habilidad le da a un personaje un conocimiento práctico de las habilidades
 
 ---
 
-## Technical Knowledge
+## Técnico Knowledge
 ### (INT)
 
 

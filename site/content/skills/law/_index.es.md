@@ -39,7 +39,7 @@ Los abogados, jueces y otros utilizan esta habilidad para interactuar en salas d
 Police officers, detectives, bounty hunters, and others use this skill to follow (or bend) legal law enforcement procedures. Topics covered include:
 - Knowing laws concerning surveillance, search, and seizure.
 - Proper arrest and detainment procedures.
-- Filling out reports and other official paperwork.
+- Filling out reports and Otros official paperwork.
 
 This specialty is also used to determine how "Bueno" an arrest is (providing ammunition to the lawyers who will try to make the arrest stick).
 

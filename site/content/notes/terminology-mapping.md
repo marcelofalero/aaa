@@ -30,6 +30,12 @@ This page provides a mapping of common game terms from English to Spanish to ens
 | Fatigue | Fatiga |
 | Alternate Tomorrows | Futuros Alternativos |
 | Ability Scores | Atributos |
+| Combat | Combate |
+| Technical | Técnico |
+| Social | Social |
+| Physical | Físico |
+| Mental | Mental |
+| Other | Otros |
 
 ## Skills
 | English | Spanish |

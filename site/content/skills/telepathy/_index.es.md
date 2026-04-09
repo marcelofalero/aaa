@@ -1,7 +1,7 @@
 +++
 title = "Telepathy"
 attribute = "WIL"
-category = "Other"
+category = "Otros"
 type = "skill"
 layout = "list"
 +++

@@ -74,7 +74,7 @@ Al completarla con éxito, el héroe gana inmediatamente el rango 1 en las habil
 
 *This skill can't be used untrained.*
 
-This Especialidad represents a Personaje's training in the theories and protocols of making first contact with a previously unknown culture. With this skill, a Personaje can assess the mental, physical, and technological capabilities of an unfamiliar species, begin the process of establishing communications and learning each other's language, and make a preliminary study of the strangers' cultural and societal habits.
+This Especialidad represents a Personaje's training in the theories and protocols of making first contact with a previously unknown culture. With this skill, a Personaje can assess the Mental, Físico, and technological capabilities of an unfamiliar species, begin the process of establishing communications and learning each Otros's language, and make a preliminary study of the strangers' cultural and societal habits.
 
 A first encounter skill check is always a complex chore, and may take days, weeks, or even months to successfully complete. The Gamemaster will assign the number of successes necessary to complete the skill check based on the extent of difference between the two cultures involved. Also, the Gamemaster will determine the initial attitude of the target creature(s) toward the Personaje, and may inform the Personaje of changes in that attitude that take place while the complex skill check is under way.
 

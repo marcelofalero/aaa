@@ -1,7 +1,7 @@
 +++
 title = "Aguante"
 attribute = "CON"
-category = "Other"
+category = "Otros"
 type = "skill"
 layout = "list"
 +++
@@ -51,9 +51,9 @@ Resistir el dolor solo disminuye o elimina las penalizaciones de situación caus
 
 Resist pain allows a Personaje to function normally and ignore some or all of the situation penalties for suffering large amounts of Aturdimiento, Herida, or Mortal (but not Fatiga) damage.
 
-A Personaje with this specialty may get an opportunity **once per combat scene** to check the effectiveness of his ability to resist pain. The first time during a combat scene when the Personaje has received Aturdimiento points or Herida points, or when he receives at least 1 point of Mortal damage, he makes a resist pain skill check. 
+A Personaje with this specialty may get an opportunity **once per Combate scene** to check the effectiveness of his ability to resist pain. The first time during a Combate scene when the Personaje has received Aturdimiento points or Herida points, or when he receives at least 1 point of Mortal damage, he makes a resist pain skill check. 
 
-**Note:** This check does not count as an action, and takes place before any characters attempt any actions. The result of the resist pain check lasts for the rest of the combat scene.
+**Note:** This check does not count as an action, and takes place before any characters attempt any actions. The result of the resist pain check lasts for the rest of the Combate scene.
 
 ### Results
 - **Fallo Crítico:** The Personaje succumbed to the pain and **can't act for 2d4 phases**.

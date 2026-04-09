@@ -1,7 +1,7 @@
 +++
 title = "Operación de Sistemas"
 attribute = "INT"
-category = "Technical"
+category = "Técnico"
 type = "skill"
 layout = "list"
 +++
@@ -10,7 +10,7 @@ Esta habilidad amplia proporciona a un personaje entrenamiento básico en el uso
 
 Estos otros vehículos e instalaciones incluyen (pero no se limitan a) grandes embarcaciones de agua como acorazados, submarinos militares y buques de carga; aviones de combate y grandes aeronaves comerciales; y puestos de radar y emplazamientos de armas.
 
-Para obtener detalles completos sobre cómo se usan las habilidades de **Operación de Sistemas**, consulte las secciones sobre ["¿Qué hay en una Nave Espacial?"](/core-mechanics/vehicles-and-vessels/) y ["Combate de Vehículos Espaciales"](/core-mechanics/vehicles-and-vessels#space-vehicle-combat).
+Para obtener detalles completos sobre cómo se usan las habilidades de **Operación de Sistemas**, consulte las secciones sobre ["¿Qué hay en una Nave Espacial?"](/core-mechanics/vehicles-and-vessels/) y ["Combate de Vehículos Espaciales"](/core-mechanics/vehicles-and-vessels#space-vehicle-Combate).
 
 ---
 
