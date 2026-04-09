@@ -1,7 +1,7 @@
 +++
 title = "Conocimiento"
 attribute = "INT"
-category = "Técnico"
+category = "Técnica"
 type = "skill"
 layout = "list"
 +++

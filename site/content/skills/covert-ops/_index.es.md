@@ -1,7 +1,7 @@
 +++
 title = "Operaciones Encubiertas"
 attribute = "DEX"
-category = "Social"
+category = "Otro"
 type = "skill"
 layout = "list"
 +++

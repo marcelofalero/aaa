@@ -1,7 +1,7 @@
 +++
 title = "Operación de Vehículos"
 attribute = "DEX"
-category = "Técnico"
+category = "Técnica"
 type = "skill"
 layout = "list"
 +++

@@ -29,8 +29,10 @@ def load_mapping():
 
 def apply_mapping(text, mapping):
     if not text or not isinstance(text, str): return text
+    # Sort terms by length to replace longer phrases first
     sorted_en_terms = sorted(mapping.keys(), key=len, reverse=True)
     for en in sorted_en_terms:
+        # Use word boundaries for alphabetic terms
         pattern = r'\b' + re.escape(en) + r'\b' if re.match(r'^\w', en) else re.escape(en)
         text = re.sub(pattern, mapping[en], text, flags=re.IGNORECASE)
     return text
@@ -60,7 +62,7 @@ def rebuild_all():
             skills_data = yaml.load(f, Loader=yaml.FullLoader)
         process_skills(skills_data, mapping)
     
-    # 2. Handle Equipment
+    # 2. Handle Equipment (Gear sources use Name logic)
     gear_sources = ['armor', 'computers', 'cybernetics', 'survival_gear', 'weapons']
     for base_name in gear_sources:
         yaml_path = os.path.join(DATA_SOURCES_DIR, f'{base_name}.yaml')
@@ -80,14 +82,18 @@ def rebuild_all():
 def apply_rules_to_node(node, mapping, lang='en'):
     if isinstance(node, dict):
         new_node = {}
+        # Handle localized objects {en: "...", es: "..."}
         if 'en' in node and 'es' in node and len(node) == 2:
              val = node.get(lang, node.get('en', ''))
              return apply_mapping(val, mapping) if lang == 'es' else val
+        # Handle fields with _es suffix
         if lang == 'es' and 'name_es' in node:
             new_node['name'] = apply_mapping(node['name_es'], mapping)
+        
         for k, v in node.items():
             if k in ['name_es', 'skill_es', 'description_es']: continue
             if k == 'name' and lang == 'es' and 'name_es' in node: continue
+            
             new_val = apply_rules_to_node(v, mapping, lang)
             if isinstance(new_val, str) and lang == 'es':
                 new_val = apply_mapping(new_val, mapping)
@@ -105,21 +111,18 @@ def process_skills(skills_list, mapping):
         slug = url.strip('/').split('/')[-1]
         out_dir = f'site/content/skills/{slug}'
         os.makedirs(out_dir, exist_ok=True)
-        # Category normalization: Force it through mapping to avoid Técnico/Técnica split
-        category_base = broad.get('category', 'Other')
-        category_es = apply_mapping(category_base, mapping)
-        
         # EN Page
         with open(os.path.join(out_dir, '_index.md'), 'w', encoding='utf-8') as f:
-            f.write(f'+++\ntitle = "{broad["skill"]}"\nattribute = "{broad["attribute"]}"\ncategory = "{category_base}"\ntype = "skill"\nlayout = "list"\n+++\n\n')
+            f.write(f'+++\ntitle = "{broad["skill"]}"\nattribute = "{broad["attribute"]}"\ncategory = "{broad.get("category", "Other")}"\ntype = "skill"\nlayout = "list"\n+++\n\n')
             f.write(broad.get('description', '') + '\n\n')
             for spec in broad.get('specialties', []):
-                attr = f'### ({spec["attribute"]})' if spec.get('attribute') else ''
-                f.write(f'## {spec["skill"]}\n{attr}\n\n{spec.get("description", "")}\n\n---\n\n')
+                attr_header = f'### ({spec["attribute"]})' if spec.get('attribute') else ''
+                f.write(f'## {spec["skill"]}\n{attr_header}\n\n{spec.get("description", "")}\n\n---\n\n')
         # ES Page
         title_es = broad.get('skill_es', apply_mapping(broad['skill'], mapping))
         attr_es = apply_mapping(broad['attribute'], mapping)
         desc_es = apply_mapping(broad.get('description_es', broad.get('description', '')), mapping)
+        category_es = broad.get('category_es', apply_mapping(broad.get('category', 'Other'), mapping))
         with open(os.path.join(out_dir, '_index.es.md'), 'w', encoding='utf-8') as f:
             f.write(f'+++\ntitle = "{title_es}"\nattribute = "{attr_es}"\ncategory = "{category_es}"\ntype = "skill"\nlayout = "list"\n+++\n\n')
             f.write(desc_es + '\n\n')
@@ -134,39 +137,37 @@ def process_skills(skills_list, mapping):
         groups_dict = defaultdict(list)
         for b in skills_list:
             name = b['skill'] if lang == 'en' else b.get('skill_es', apply_mapping(b['skill'], mapping))
-            # FORCE normalization by mapping even if category_es is in YAML
-            cat = b['category'] if lang == 'en' else apply_mapping(b['category'], mapping)
+            cat = b.get('category', 'Other') if lang == 'en' else b.get('category_es', apply_mapping(b.get('category', 'Other'), mapping))
             attr = b['attribute'] if lang == 'en' else apply_mapping(b['attribute'], mapping)
+            # Metadata extraction
+            untrained = not is_untrained_forbidden(b.get('description', ''))
+            cost = b.get('cost', 0)
+            tier = b.get('tier', 1)
+            pr = b.get('pr', '')
+            if lang == 'es': pr = apply_mapping(pr, mapping)
+            
             broad_entry = {
-                "skill": name,
-                "attribute": attr,
-                "skill_url": b['skill_url'],
-                "cost": b.get('cost', 0),
-                "type": "Broad",
-                "tier": b.get('tier', 1),
-                "pr": b.get('pr', ''),
-                "untrained": not is_untrained_forbidden(b.get('description', ''))
+                "skill": name, "attribute": attr, "skill_url": b['skill_url'],
+                "cost": cost, "type": "Broad", "tier": tier, "pr": pr, "untrained": untrained
             }
             specs = []
             for s in b.get('specialties', []):
                 s_name = s['skill'] if lang == 'en' else s.get('skill_es', apply_mapping(s['skill'], mapping))
                 s_attr = s['attribute'] if lang == 'en' else apply_mapping(s['attribute'], mapping)
-                # Ensure pr is clean
-                pr_val = s.get('pr', '')
-                if lang == 'es': pr_val = apply_mapping(pr_val, mapping)
+                s_untrained = not is_untrained_forbidden(s.get('description', ''))
+                s_cost = s.get('cost', 0)
+                # Heuristic for tier if missing
+                s_tier = s.get('tier', 1 + (1 if s_cost >= 3 else 0))
+                s_pr = s.get('pr', '')
+                if lang == 'es': s_pr = apply_mapping(s_pr, mapping)
                 
                 specs.append({
-                    "skill": s_name,
-                    "attribute": s_attr,
-                    "skill_url": s['skill_url'],
-                    "cost": s.get('cost', 0),
-                    "type": "Specialty",
-                    "tier": s.get('tier', 1 + (1 if s.get('cost', 0) >= 3 else 0)),
-                    "pr": pr_val,
-                    "untrained": not is_untrained_forbidden(s.get('description', ''))
+                    "skill": s_name, "attribute": s_attr, "skill_url": s['skill_url'],
+                    "cost": s_cost, "type": "Specialty", "tier": s_tier, "pr": s_pr, "untrained": s_untrained
                 })
             if specs: broad_entry["specialties"] = specs
             groups_dict[cat].append(broad_entry)
+            
         columns = [
             {"key": "skill", "name": "Skill" if lang == "en" else "Habilidad", "link": True},
             {"key": "attribute", "name": "Attr." if lang == "en" else "Atrib."},

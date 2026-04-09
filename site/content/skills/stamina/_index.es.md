@@ -1,7 +1,7 @@
 +++
 title = "Aguante"
 attribute = "CON"
-category = "Otros"
+category = "Other"
 type = "skill"
 layout = "list"
 +++

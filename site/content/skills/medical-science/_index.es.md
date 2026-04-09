@@ -1,7 +1,7 @@
 +++
 title = "Ciencias médicas"
 attribute = "INT"
-category = "Técnico"
+category = "Technical"
 type = "skill"
 layout = "list"
 +++

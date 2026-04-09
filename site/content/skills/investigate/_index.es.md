@@ -1,7 +1,7 @@
 +++
 title = "Investigar"
 attribute = "WIL"
-category = "Social"
+category = "Otros"
 type = "skill"
 layout = "list"
 +++

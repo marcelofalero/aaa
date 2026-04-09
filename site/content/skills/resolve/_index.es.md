@@ -1,7 +1,7 @@
 +++
 title = "Firmeza"
 attribute = "WIL"
-category = "Otros"
+category = "Other"
 type = "skill"
 layout = "list"
 +++

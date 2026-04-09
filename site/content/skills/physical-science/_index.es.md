@@ -1,7 +1,7 @@
 +++
 title = "Ciencias físicas"
 attribute = "INT"
-category = "Técnico"
+category = "Technical"
 type = "skill"
 layout = "list"
 +++
