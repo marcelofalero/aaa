@@ -4,6 +4,8 @@ description = "Capacidad de instruir a otros en el uso de una habilidad pertenec
 weight = 8
 attribute = "WIL"
 category = "Social"
+type = "skill"
+layout = "list"
 +++
 
 Esta habilidad amplia representa la capacidad de un personaje para instruir a otros en el uso de una habilidad perteneciente al grupo Abierto o común. Se requiere una comprobación de habilidad cada vez que un personaje desea enseñar una habilidad a otro personaje.
@@ -36,7 +38,6 @@ El beneficio de un profesor depende del resultado de la comprobación de habilid
 
 ## Campo Específico
 ### (WIL - Solo Entrenados)
-
 *Esta habilidad no puede usarse sin entrenamiento.*
 
 Esta habilidad de especialidad permite a un personaje ampliar su capacidad de enseñanza a grupos de profesiones especializados. Por cada compra separada de esta habilidad de especialidad, el personaje selecciona un grupo de profesión: **Espec. en Combate**, **Diplomático**, **Agente Libre** o **Espec. Técnico**.

@@ -1,10 +1,12 @@
 +++
 title = "Combate Cuerpo a Cuerpo"
-attribute = "FUE"
 description = "Competencia básica para participar en combate físico a corta distancia."
+attribute = "FUE"
 category = "Combate"
-favored_by = ["Especialista en Combate", "Agente Libre"]
+type = "skill"
+layout = "list"
 +++
+
 El Combate Cuerpo a Cuerpo representa la competencia básica de cualquier combatiente físico que participa en una lucha a corta distancia. Abarca la comprensión esencial del alcance, el tiempo y la transferencia eficiente de la fuerza cinética a través del cuerpo o una herramienta de mano. Un héroe entrenado en esta habilidad general posee una comprensión inherente de la conciencia espacial y la puntería, lo que le permite identificar vulnerabilidades en un oponente mientras mantiene su propio centro de gravedad y postura con el arma durante un intercambio.
 
 El entrenamiento profesional en este campo también facilita el uso de armas de fuego en medio de una lucha. Este entrenamiento elimina las penalizaciones de +1 paso de las pistolas y subfusiles cuando se usan contra un oponente en cuerpo a cuerpo, y elimina la bonificación de +2 pasos para desarmar que un oponente tiene contra ti cuando empuñas un rifle de asalto, un rifle de francotirador o cualquier forma de arma pesada equipada. Además, las pistolas y los subfusiles se manejan con la misma facilidad que las armas cuerpo a cuerpo de una mano; se pueden desenfundar y disparar en cualquier circunstancia en la que se permitiría un cuchillo o una porra.
@@ -17,8 +19,6 @@ El daño base de un ataque sin armas depende del tamaño del personaje; para un 
 
 ## Artes Marciales Defensivas
 ### (DES - Solo Entrenado)
-
-
 La esencia de las artes marciales defensivas y basadas en la destreza radica en la no resistencia y la manipulación sofisticada de los vectores cinéticos. En lugar de enfrentar la fuerza con la fuerza, estos estilos utilizan movimientos fluidos y esféricos para redirigir el impulso de un atacante, convirtiendo efectivamente su propia masa y aceleración en su contra. Al priorizar la elasticidad estructural y la propiocepción de alto nivel, un practicante permanece inasible, utilizando un juego de pies preciso y un cambio de peso dinámico para abandonar la línea de ataque mientras realiza una transición simultánea a una posición de contra-apalancamiento.
 
 **Rango 1: Línea de Base Táctica.** El practicante aprende a mantener el equilibrio mientras identifica las aberturas. Aumenta el daño base sin armas a **d4s/d6s/d6w**.
@@ -37,8 +37,6 @@ La esencia de las artes marciales defensivas y basadas en la destreza radica en 
 
 ## Artes Marciales de Poder
 ### (FUE - Solo Entrenado)
-
-
 La esencia de las artes marciales orientadas al poder radica en la movilización eficiente de la masa corporal total a través de la alineación estructural y la secuenciación cinética explosiva. En lugar de depender de la fuerza muscular aislada, estos estilos tratan el cuerpo como una unidad única y rígida en el momento del impacto, utilizando el suelo como punto de apoyo para canalizar la energía de las piernas y las caderas giratorias hacia un punto de entrega enfocado. Al sincronizar la respiración, el apilamiento esquelético y el "peso que cae", el practicante maximiza la física del impulso para superar la resistencia de un oponente a través de la pura integridad estructural y la fuerza calculada.
 
 **Rango 1: El practicante aprende a aprovechar adecuadamente su masa.** Aumenta el daño base sin armas a **d4s/d4w/d6+1w**.

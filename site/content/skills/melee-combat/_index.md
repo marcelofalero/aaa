@@ -1,11 +1,11 @@
 +++
 title = "Melee Combat"
-attribute = "STR"
 description = "Baseline proficiency for engaging in physical combat at personal range."
+attribute = "STR"
 category = "Combat"
-favored_by = ["Combat Spec", "Free Agent"]
+type = "skill"
+layout = "list"
 +++
-
 
 Melee Combat represents the baseline proficiency of any physical combatant engaging in a struggle at personal range. It covers the essential understanding of reach, timing, and the efficient transfer of kinetic force through the body or a handheld tool. A character trained in this broad skill possesses an inherent grasp of spatial awareness and targeting, allowing them to identify vulnerabilities in an opponent while maintaining their own center of gravity and weapon posture during an exchange.
 
@@ -21,8 +21,6 @@ The base damage for an unarmed attack depends on the size of the character; for 
 
 ## Defensive Martial Arts
 ### (DEX - Trained Only)
-
-
 As a character improves his ability in the defensive martial arts specialty skill, he gains rank benefits as described below. Note: These benefits only apply when the character is fighting unarmed or with appropriate martial arts implements.
 
 The essence of defensive and dexterity-based martial arts lies in non-resistance and the sophisticated manipulation of kinetic vectors. Rather than meeting force with force, these styles utilize fluid, spherical movements to redirect an attacker's momentum, effectively turning their own mass and acceleration against them.
@@ -47,8 +45,6 @@ How we do things reaches rank 10, All Out Attacks that miss him can be redirecte
 
 ## Power Martial Arts
 ### (STR - Trained Only)
-
-
 As a character improves his ability in the power martial arts specialty skill, he gains rank benefits as described below. Note: These benefits only apply when the character is fighting unarmed or with appropriate martial arts implements.
 
 The essence of power-oriented martial arts lies in the efficient mobilization of total body mass through structural alignment and explosive kinetic sequencing. These styles treat the body as a single, rigid unit at the moment of impact, using the ground as a fulcrum to funnel energy.
@@ -77,8 +73,6 @@ Every additional attacker who takes part in the same overpowering attempt provid
 
 ## Blade
 ### (STR)
-
-
 As a character improves his ability in the blade specialty skill, he gains rank benefits as described below. Note: These benefits only apply when the character is using a weapon covered by this skill.
 
 ⊗ Resistance Modifier: At higher ranks, the skill provides an improvement to a character's Strength resistance modifier. It improves by +1 at rank 4, by +1 again at rank 8, and by +1 again at rank 12. This increase doesn't stack with similar bonuses provided by other melee combat specialty skills.
@@ -93,8 +87,6 @@ As a character improves his ability in the blade specialty skill, he gains rank 
 
 ## Blunt
 ### (STR)
-
-
 As a character improves his ability in the blunt specialty skill, he gains rank benefits as described below. Note: These benefits only apply when the character is using a weapon covered by this skill.
 
 ⊗ Resistance Modifier: At higher ranks, the skill provides an improvement to a character's Strength resistance modifier. It improves by +1 at rank 4, by +1 again at rank 8, and by +1 again at rank 12. This increase doesn't stack with similar bonuses provided by other melee combat specialty skills.
@@ -108,9 +100,7 @@ As a character improves his ability in the blunt specialty skill, he gains rank 
 ---
 
 ## Powered
-### (DEX - Trained only)
-
-
+### (DEX - Trained Only)
 As a character improves his ability in the powered specialty skill, he gains rank benefits as described below. Note: These benefits only apply when the character is using a weapon covered by this skill.
 
 Due to the inherent complexity of powered weapons they are more fragile than their counterparts; this requires the user to be more careful when parrying, resulting in a +2 step penalty on parry checks.

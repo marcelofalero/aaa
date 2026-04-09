@@ -5,8 +5,9 @@ weight = 7
 attribute = "INT"
 category = "Technical"
 untrained = true
+type = "skill"
+layout = "list"
 +++
-
 
 *This skill can't be used untrained.*
 
@@ -20,8 +21,6 @@ A character with just the broad skill cannot treat damage; **Treatment** or **Su
 
 ## Forensic Science
 ### (INT - Trained Only)
-
-
 *This skill can't be used untrained.*
 
 Forensic science is the application of medical and scientific knowledge to legal problems and criminal investigations. It is used to determine cause of death, identify remains, and analyze evidence from a crime scene.
@@ -32,8 +31,6 @@ Forensic science is the application of medical and scientific knowledge to legal
 
 ## Medical Knowledge
 ### (INT - Trained Only)
-
-
 *This skill can't be used untrained.*
 
 This specialty skill represents a character's deep academic and practical understanding of medical principles, history, and advanced theory.
@@ -44,8 +41,6 @@ This specialty skill represents a character's deep academic and practical unders
 
 ## Psychology
 ### (INT - Trained Only)
-
-
 *This skill can't be used untrained.*
 
 Psychology is the study of the mind and behavior. It can be used to diagnose mental disorders, understand motivations, or predict behavioral patterns.
@@ -56,8 +51,6 @@ Psychology is the study of the mind and behavior. It can be used to diagnose men
 
 ## Surgery
 ### (INT - Trained Only)
-
-
 *This skill can't be used untrained.*
 
 Surgery involves the treatment of injuries or disorders of the body by incision or manipulation. It is used to repair internal damage, remove foreign objects, or perform organ transplants.
@@ -68,8 +61,6 @@ Surgery involves the treatment of injuries or disorders of the body by incision 
 
 ## Treatment
 ### (INT - Trained Only)
-
-
 *This skill can't be used untrained.*
 
 The treatment specialty can be used for all tasks first aid covers, but with greater effectiveness.
@@ -86,8 +77,6 @@ The treatment specialty can be used for all tasks first aid covers, but with gre
 
 ## Xenomedicine [Specific]
 ### (INT - Trained Only)
-
-
 *This skill can't be used untrained.*
 
 This specialty skill involves the medical study of a specific alien species, allowing a character to use his other medical skills on members of that species. Initially, a **+3 step penalty** is applied to healing alien characters if this skill is not known.

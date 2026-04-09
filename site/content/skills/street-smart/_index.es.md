@@ -4,6 +4,8 @@ description = "Conocimiento de protocolos para el tratamiento de pandillas, orga
 weight = 7
 attribute = "WIL"
 category = "Other"
+type = "skill"
+layout = "list"
 +++
 
 Esta habilidad general proporciona a un héroe conocimiento de los protocolos para tratar con pandillas, gente de la calle y organizaciones criminales. Mide la capacidad de un héroe para negociar y establecer contacto con el reino del criminal de "cuello azul" (delincuencia común).

@@ -3,8 +3,9 @@ title = "Animal Handling"
 description = "The basic ability to train and handle animals."
 attribute = "WIL"
 category = "Other"
+type = "skill"
+layout = "list"
 +++
-
 
 This broad skill provides a hero with the basic ability to train animals to perform a variety of tasks, including doing labor, accepting riders, tracking, and attacking. It's also used to determine if a hero can get a trained animal to perform a task, to ride an animal, or to calm, capture, or otherwise handle a wild animal or an unfamiliar domestic animal. Note that the methods of training and the commands used with different animal species can vary widely.
 

@@ -4,6 +4,8 @@ description = "General training in various topics; ability to recall and researc
 weight = 4
 attribute = "INT"
 category = "Technical"
+type = "skill"
+layout = "list"
 +++
 
 This broad skill represents a character's ability to know at least a little bit about any particular subject. With just the broad skill, a character isn't considered an expert, but it represents the ability to logically recall a class he took, an article he read, or a documentary he saw on the topic in question.
@@ -31,8 +33,6 @@ For a Knowledge skill check, the Gamemaster determines which category the inform
 
 ## Computer Operation
 ### (INT - Trained Only)
-
-
 *This skill can't be used untrained.*
 
 This specialty skill allows a character to improve his ability to make computers perform, specifically his ability to get the most out of the software (including the operating system) that is installed in a computer. The degree of success relates to the quality or quantity of information accessed or retrieved, or the speed with which the operator is able to perform a task.
@@ -41,8 +41,6 @@ This specialty skill allows a character to improve his ability to make computers
 
 ## Deduce
 ### (INT)
-
-
 With this specialty skill, a character can hone his abilities to use reason and logic to reach a conclusion. Deduce is used by detectives and investigators to piece together clues, or by scientists and engineers to discover the answer to a skill-related problem.
 
 ⊗ **Resistance Modifier:** At higher ranks, the deduce skill provides an improvement to a character's **Intelligence resistance modifier**, which makes it more difficult for opponents to successfully use encounter skills to deceive the character. The modifier improves by **+1 at Rank 4**, **+1 at Rank 8**, and **+1 at Rank 12**.
@@ -51,8 +49,6 @@ With this specialty skill, a character can hone his abilities to use reason and 
 
 ## First Aid
 ### (INT - Trained Only)
-
-
 *This skill can't be used untrained.*
 
 This specialty skill represents basic training in first aid techniques, including the use of trauma packs, first aid kits, and other general-use medical items. It doesn't provide a character with the ability to use specialized surgical tools or advanced medical gear.
@@ -79,8 +75,6 @@ A character with any amount of mortal damage is considered to be dying. A charac
 
 ## Language, Specific Skill
 ### (INT - Trained Only)
-
-
 *This skill can't be used untrained.*
 
 This specialty skill gives a character a certain amount of fluency in a specific language. Every character begins with **Rank 3** in his or her native language. Lower ranks indicate a crude familiarity; higher ranks improve the character's vocabulary and comprehension of obscure or complicated passages.
@@ -91,8 +85,6 @@ This specialty skill gives a character a certain amount of fluency in a specific
 
 ## Psionics
 ### (INT - Trained Only)
-
-
 *This skill can't be used untrained.*
 
 This skill gives a character a working knowledge of psionic abilities, perhaps even beyond what the character's culture understands as a whole. The degree of success achieved on a skill check relates to the quality or quantity of information that is available to or understood by the character.

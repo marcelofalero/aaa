@@ -2,6 +2,9 @@
 title = "Psionica"
 description = "Poderes mentales y disciplinas para Mindwalkers y otras personas superdotadas."
 weight = 9
+type = "skill"
+layout = "list"
+omit_automatic_list = true
 +++
 
 # Psiónica

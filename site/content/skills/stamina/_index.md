@@ -4,6 +4,8 @@ description = "Physical fortitude with regard to the effects of mortal damage an
 weight = 2
 attribute = "CON"
 category = "Other"
+type = "skill"
+layout = "list"
 +++
 
 This broad skill measures a character's physical fortitude with regard to the effects of mortal damage and fatigue.
@@ -36,9 +38,6 @@ When a character engages in certain fatigue-causing activities, he must make a S
 
 ## Endurance
 ### (CON)
-
-
-
 As a character acquires ranks in the endurance skill, he becomes more able to withstand the effects of damage. For a character who has this specialty, endurance checks take the place of Stamina checks for damage and fatigue.
 
 ⊗ **Improved Breathing:** The bonus to a character's Stamina-endurance check while holding his or her breath improves to **-2 at rank 4**, **-3 at rank 8**, and **-4 at rank 12**.
@@ -47,9 +46,6 @@ As a character acquires ranks in the endurance skill, he becomes more able to wi
 
 ## Resist Pain
 ### (CON - Trained Only)
-
-
-
 *This skill can’t be used untrained.*
 
 Resist pain allows a character to function normally and ignore some or all of the situation penalties for suffering large amounts of stun, wound, or mortal (but not fatigue) damage.

@@ -4,6 +4,8 @@ description = "Conocimiento general de leyes y sistemas legales; capacidad para 
 weight = 5
 attribute = "INT"
 omit_automatic_list = true
+type = "skill"
+layout = "list"
 +++
 
 Esta habilidad general proporciona a un héroe conocimientos generales sobre las leyes y sistemas legales de su sociedad nativa. También puede tratarse como una habilidad de encuentro para cambiar la actitud de un individuo.

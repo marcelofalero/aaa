@@ -4,6 +4,8 @@ description = "Ability to understand and interact with different cultures and sp
 weight = 1
 attribute = "PER"
 category = "Social"
+type = "skill"
+layout = "list"
 +++
 
 This broad skill represents a character's ability to understand and interact with cultures that are different from his own. Areas of knowledge covered by the skill include the customs, philosophy, and way of life of a particular culture, as well as a basic familiarity with major historical figures, events, and trends important to that culture.
@@ -38,7 +40,6 @@ The complexity of the ideas that are being communicated during a use of the Cult
 
 ## Etiquette [Specific]
 ### (PER - Trained Only)
-
 *This skill can't be used untrained.*
 
 For each separate purchase of this specialty skill, a character selects a specific culture. As the specialty skill is improved, the character gains a progressively stronger grasp on the customs, attitudes, and beliefs of that culture.
@@ -51,7 +52,6 @@ The Gamemaster will decide what constitutes a "specific culture," taking the cam
 
 ## Diplomacy
 ### (PER)
-
 This specialty skill allows a character to improve his ability to reach agreements and understandings with representatives of different nations, cultures, subcultures and species.
 
 In general, diplomacy will come into play when a character wants to reach an accord with a member of a different culture. The skill can only be used on a particular target if the character has at least rank 1 in the specific Culture—etiquette skill that pertains to the target's culture.
@@ -64,7 +64,6 @@ Depending on the nature of the issue to be resolved, the diplomacy skill check m
 
 ## First Encounter
 ### (PER - Trained Only)
-
 *This skill can't be used untrained.*
 
 This specialty skill represents a character's training in the theories and protocols of making first contact with a previously unknown culture. With this skill, a character can assess the mental, physical, and technological capabilities of an unfamiliar species, begin the process of establishing communications and learning each other's language, and make a preliminary study of the strangers' cultural and societal habits.

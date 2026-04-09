@@ -4,6 +4,8 @@ description = "Entrenamiento general en supervivencia planetaria, entornos urban
 weight = 3
 attribute = "CON"
 category = "Otros"
+type = "skill"
+layout = "list"
 +++
 
 Esta habilidad amplia proporciona a un personaje entrenamiento en supervivencia a través de áreas salvajes, paisajes urbanos hostiles o en ruinas, y biosferas alienígenas. Cubre la obtención de necesidades básicas (comida, agua, refugio), la evitación de peligros ambientales y el estudio ecológico sistemático.
@@ -40,7 +42,6 @@ El tipo de terreno o entorno donde se encuentra el personaje puede proporcionar 
 
 ## Entrenamiento en Supervivencia
 ### (CON)
-
 Esta habilidad de especialidad permite a un personaje mejorar su capacidad para usar la habilidad amplia de Supervivencia en un tipo particular de terreno. Esto normalmente incluye todos los tipos de terreno comunes a su **mundo de origen**, además de cualquier otro adquirido por separado.
 
 ### Discernir Peligros
@@ -55,7 +56,6 @@ Mientras se encuentra en un terreno con el que está familiarizado, un personaje
 
 ## Adaptabilidad
 ### (CON - Solo Entrenados)
-
 *Esta habilidad no puede usarse sin entrenamiento.*
 
 Esta especialidad mejora la capacidad del personaje para adaptarse a entornos alienígenas. El personaje es lo suficientemente ingenioso como para comprender mecánicas de supervivencia desconocidas a través de la observación y el estudio.
@@ -72,7 +72,6 @@ Un personaje **no puede comprar** o aumentar su rango en un nuevo tipo de terren
 
 ## Apertura de Sendas
 ### (CON)
-
 Con la apertura de sendas, un personaje aprende a encontrar caminos a través de terreno difícil o a crear caminos que otros puedan usar para moverse más rápido y cubrir más terreno durante un día completo de viaje. El uso exitoso de esta habilidad reduce los efectos adversos de viajar en condiciones de dificultad Buena o Asombrosa para el personaje y cualquier compañero que viaje con él.
 
 Esta comprobación de habilidad se realiza una vez al día, al comienzo de un día de viaje.

@@ -3,8 +3,9 @@ title = "Manejo de Animales"
 description = "La habilidad básica para entrenar y manejar animales."
 attribute = "VOL"
 category = "Otro"
+type = "skill"
+layout = "list"
 +++
-
 
 Esta habilidad general proporciona a un héroe la habilidad básica para entrenar animales para realizar una variedad de tareas, incluyendo trabajo, aceptar jinetes, rastrear y atacar. También se usa para determinar si un héroe puede hacer que un animal entrenado realice una tarea, para montar un animal, o para calmar, capturar o manejar de otra manera un animal salvaje o un animal doméstico desconocido. Tenga en cuenta que los métodos de entrenamiento y los comandos utilizados con diferentes especies de animales pueden variar ampliamente.
 

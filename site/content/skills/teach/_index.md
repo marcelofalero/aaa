@@ -4,6 +4,8 @@ description = "Ability to instruct others in the use of a skill belonging to the
 weight = 8
 attribute = "WIL"
 category = "Social"
+type = "skill"
+layout = "list"
 +++
 
 This broad skill represents a character's ability to instruct others in the use of a skill belonging to the Open group. A skill check is required whenever a character wants to teach a skill to another character.
@@ -36,7 +38,6 @@ The benefit of a teacher depends on the result of the teacher's skill check:
 
 ## Teach, Specific Field
 ### (WIL - Trained Only)
-
 *This skill can’t be used untrained.*
 
 This specialty skill allows a character to expand their teaching ability to specialized profession groups. For each separate purchase of this specialty skill, the character selects a profession group: **Combat Spec**, **Diplomat**, **Free Agent**, or **Tech Op**. 

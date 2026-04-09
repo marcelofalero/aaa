@@ -3,8 +3,9 @@ title = "Awareness"
 description = "A hero's powers of observation, perception, and intuition."
 attribute = "WIL"
 category = "Other"
+type = "skill"
+layout = "list"
 +++
-
 
 **Free to fraal, human, mechalus, sesheyan, t'sa, and weren heroes.**
 
@@ -20,7 +21,6 @@ Some pieces of sensor equipment may provide benefits to a hero’s Awareness ski
 
 ## Intuition
 ### (WIL)
-
 This specialty skill represents a hero's natural instincts—his ability to sense danger when no obvious signs are evident, to avoid surprise, or to make an intuitive leap of logic without the support of hard facts. It's the ability to make a best guess in a given situation.
 
 When no obvious signs of danger are evident, a hero’s subconscious use of this skill can enable him to avoid being caught by surprise. (The Gamemaster calls for intuition checks; players don't request them, except in the circumstances described in the next paragraph.) Success indicates that the hero isn't surprised and can act in the surprise phase of the upcoming round. (For more information about surprise situations, see page 58 of Chapter 3: Heroes in Action.)
@@ -31,15 +31,14 @@ When a hero wants to make an intuitive "best guess,” the Gamemaster may allow 
 
 ## Perception
 ### (WIL)
-
 This specialty skill represents a hero's alertness and powers of observation—the hero notices something either consciously or on a subliminal level. While intuition is a feeling or unexplainable sense, perception works on signs that can be spotted by normal senses—a broken twig lying in a path, the click of a gun’s safety being released, the scent of familiar perfume in a crowded bar, a whisper in the wind. This skill can help determine a hero’s ability to spot signs of trouble, perceive the true meaning in an authority figure's comment, or notice a subtle clue poking out of a pile of leaves.
 
 When potential danger obviously exists in a situation, a hero's subconscious use of this skill can help him avoid being caught by surprise. (The Gamemaster calls for perception checks; players don't request them.) Success indicates that the hero isn't surprised and can act in the surprise phase of the upcoming round. (For more information about surprise situations, see page 58 of Chapter 3: Heroes in Action.)
 
 ---
 
-### Psionic Sense (WIL - Trained Only)
-
+### Psionic Sense
+#### (WIL - Trained Only)
 This specialty skill allows a character to detect the activation of psionic powers, as well as the presence of psionic phenomena. It can be used to assist in identifying the general type of psionic power being used, the direction of its source, and the approximate intensity of the psionic user.
 
 **Note:** Only characters who are capable of using psionic powers (such as Mindwalkers) or those who have the "Psionic Awareness" perk can purchase and use this skill.

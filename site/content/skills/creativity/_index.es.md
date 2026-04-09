@@ -4,6 +4,8 @@ description = "Formación y talento en la expresión estética y emocional."
 weight = 4
 attribute = "WIL"
 category = "Other"
+type = "skill"
+layout = "list"
 +++
 
 Esta habilidad general proporciona a un héroe entrenamiento y talento (o conocimiento) en empeños creativos.

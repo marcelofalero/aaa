@@ -4,8 +4,9 @@ description = "Interpersonal skills used in encounters, such as bargain, charm, 
 weight = 3
 attribute = "PER"
 category = "Social"
+type = "skill"
+layout = "list"
 +++
-
 
 Interaction skills are used by characters to directly influence others. These include bargaining, charming, interviewing, intimidating, seducing, and taunting. 
 
@@ -34,8 +35,6 @@ In general, changes in attitude brought about through Interaction are longer-las
 
 ## Bargain
 ### (PER)
-
-
 Bargain represents a character's ability to negotiate a cheaper price for an object he wants to buy or a better price for one he's selling. It also covers more formal business negotiations. A successful check improves the character's position at the bargaining table. The degree of success determines who gets the better outcome.
 
 #### Bargain Situation Modifiers
@@ -54,8 +53,6 @@ Bargain represents a character's ability to negotiate a cheaper price for an obj
 
 ## Charm
 ### (PER)
-
-
 This specialty skill represents a character's ability to change the attitudes of those he interacts with by presenting himself in a likable, friendly manner. A character with this skill seeks to charm others into giving up something with kind words, a winning smile, and a personable attitude—whether it's material goods or simply a change of attitude.
 
 **Note:** Charm can only be used on targets whose attitude is **Neutral** or **Friendly**. A character cannot charm a Hostile or Combative target.
@@ -64,8 +61,6 @@ This specialty skill represents a character's ability to change the attitudes of
 
 ## Interview
 ### (PER)
-
-
 The interview skill represents a character's ability to get information from another character in a non-aggressive way. Interviews are often used by reporters, investigators, and officials conducting standard administrative procedures.
 
 It differs from **Investigate—interrogate** (a Will-based skill) in the amount of aggressiveness and fear applied by the questioner.
@@ -74,8 +69,6 @@ It differs from **Investigate—interrogate** (a Will-based skill) in the amount
 
 ## Intimidate
 ### (PER)
-
-
 This specialty represents a character's ability to threaten another, either by physical presence or weight of authority. Intimidate enables a character to force an opponent to back down, reveal information, or cooperate in some other way due to fear.
 
 The target's **Will resistance modifier** applies to the skill check, along with other Interaction modifiers. It is not possible to intimidate a Fanatic or Combative character. The greater the degree of success, the more cooperation the character can elicit.
@@ -84,8 +77,6 @@ The target's **Will resistance modifier** applies to the skill check, along with
 
 ## Seduce
 ### (PER)
-
-
 Seduce represents the ability to entice or beguile another character through opening lines, witty exchanges, playful conversation, and intimate behavior. The goal is to gain the seduced character’s trust through romantic overtures.
 
 **Note:** Seduce can only be used on targets whose attitude is **Neutral**, **Friendly**, or better. A character cannot seduce a Hostile or Combative target.
@@ -96,8 +87,6 @@ A seduced character doesn't stay that way forever. How long the character remain
 
 ## Taunt
 ### (PER)
-
-
 Taunt represents a character's ability to trade insults in order to rattle or enrage an opponent. A character who taunts his opponent tries to force him into making an error in judgment.
 
 #### Taunt Situation Modifiers

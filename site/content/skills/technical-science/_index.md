@@ -4,6 +4,8 @@ description = "Training in the technical sciences, including maintenance, repair
 weight = 13
 attribute = "INT"
 category = "Technical"
+type = "skill"
+layout = "list"
 +++
 
 This broad skill represents a character's training in the technical sciences, including the maintenance, repair, and invention of mechanical and electronic devices (not including computers), and general technical knowledge.
@@ -16,7 +18,6 @@ Skill checks made to determine if a character knows a certain piece of technical
 
 ## Invention
 ### (INT - Trained Only)
-
 *This skill can't be used untrained.*
 
 Invention lets a character build an electronic or mechanical component or system from scratch, or to modify an existing device to perform a new function. 
@@ -29,7 +30,6 @@ Using this skill requires time; Invention checks are always complex skill checks
 
 ## Juryrig
 ### (INT - Trained Only)
-
 *This skill can't be used untrained.*
 
 This skill enables a character to make fast, patchwork repairs in order to get an electronic or mechanical device or system up and running for a short period of time. A juryrig repair, even when successful, adds difficulty to the full repairs that must be made later, but it can get a character through a sticky situation.
@@ -50,7 +50,6 @@ The amount of difficulty added to the full repairs depends on the result of the 
 
 ## Repair
 ### (INT - Trained Only)
-
 *This skill can't be used untrained.*
 
 This skill provides a character with training in the repair and maintenance of various types of mechanical and electronic technology.
@@ -66,7 +65,6 @@ Any use of the repair skill requires a complex skill check and takes a period of
 
 ## Technical Knowledge
 ### (INT - Trained Only)
-
 *This skill can't be used untrained.*
 
 This skill represents the study of technology and indicates how up-to-date a character is on techniques or procedures that help him manipulate tools and other devices. It is necessary for a character to use certain sophisticated or potentially dangerous tools, such as a cutting torch, without risking personal injury or damage to the tool.

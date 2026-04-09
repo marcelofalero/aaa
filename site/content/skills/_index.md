@@ -2,7 +2,8 @@
 title = "Skills"
 description = "Comprehensive guide and database of all broad and specialty skills."
 weight = 6
-toc = true
+type = "skill"
+layout = "list"
 omit_automatic_list = true
 +++
 
@@ -124,4 +125,4 @@ Sometimes an action your character attempts is not directly related to a specifi
 
 This table provides a comprehensive list of all available skills, grouped by their governing attribute. It includes the cost for broad skills and specialty skills, as well as the profession codes for favored skills.
 
-{{< json-table data="skills" hide="pr" >}}
+{{< json-table data="skills" hide="pr" expand=".*" >}}

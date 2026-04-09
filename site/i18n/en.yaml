@@ -10,3 +10,15 @@ translations:
   other: "Translations"
 pageTitle:
   other: "{{ .Name }}"
+attribute:
+  other: "Attribute"
+category:
+  other: "Category"
+untrained:
+  other: "Untrained"
+quickNavigation:
+  other: "Quick Navigation"
+yes:
+  other: "Yes"
+no:
+  other: "No"

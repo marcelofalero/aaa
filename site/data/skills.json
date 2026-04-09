@@ -1067,7 +1067,111 @@
       "name": "Other",
       "items": [
         {
-          "skill": "Acrobatics",
+          "skill": "**Armor Operation**",
+          "skill_url": "/skills/armor-operation",
+          "type": "Broad",
+          "attribute": "STR",
+          "cost": 7,
+          "pr": "C"
+        },
+        {
+          "skill": "&nbsp;&nbsp;&nbsp;Combat armor",
+          "skill_url": "/skills/armor-operation#combat-armor",
+          "type": "Specialty",
+          "attribute": "STR",
+          "cost": 3,
+          "pr": "C"
+        },
+        {
+          "skill": "&nbsp;&nbsp;&nbsp;Powered armor",
+          "skill_url": "/skills/armor-operation#powered-armor",
+          "type": "Specialty",
+          "attribute": "STR",
+          "cost": 4,
+          "pr": "C"
+        },
+        {
+          "skill": "&nbsp;&nbsp;&nbsp;Tactical armor",
+          "skill_url": "/skills/armor-operation#tactical-armor",
+          "type": "Specialty",
+          "attribute": "STR",
+          "cost": 3,
+          "pr": "T"
+        },
+        {
+          "skill": "&nbsp;&nbsp;&nbsp;Propulsion systems",
+          "skill_url": "/skills/armor-operation#propulsion-systems",
+          "type": "Specialty",
+          "attribute": "STR",
+          "cost": 3,
+          "pr": "T"
+        },
+        {
+          "skill": "&nbsp;&nbsp;&nbsp;Shields",
+          "skill_url": "/skills/armor-operation#shields",
+          "type": "Specialty",
+          "attribute": "STR",
+          "cost": 3,
+          "pr": "C"
+        },
+        {
+          "skill": "**Athletics**",
+          "skill_url": "/skills/athletics",
+          "type": "Broad",
+          "attribute": "STR",
+          "cost": 3,
+          "pr": "C"
+        },
+        {
+          "skill": "&nbsp;&nbsp;&nbsp;Climb",
+          "skill_url": "/skills/athletics#climb",
+          "type": "Specialty",
+          "attribute": "STR",
+          "cost": 2,
+          "pr": "—"
+        },
+        {
+          "skill": "&nbsp;&nbsp;&nbsp;Jump",
+          "skill_url": "/skills/athletics#jump",
+          "type": "Specialty",
+          "attribute": "STR",
+          "cost": 1,
+          "pr": "—"
+        },
+        {
+          "skill": "&nbsp;&nbsp;&nbsp;Swim",
+          "skill_url": "/skills/athletics#swim",
+          "type": "Specialty",
+          "attribute": "STR",
+          "cost": 2,
+          "pr": "—"
+        },
+        {
+          "skill": "&nbsp;&nbsp;&nbsp;Throw",
+          "skill_url": "/skills/athletics#throw",
+          "type": "Specialty",
+          "attribute": "STR",
+          "cost": 2,
+          "pr": "—"
+        },
+        {
+          "skill": "**Heavy Weapons**",
+          "skill_url": "/skills/heavy-weapons",
+          "type": "Broad",
+          "attribute": "STR",
+          "cost": 6,
+          "pr": "C"
+        },
+        {
+          "skill": "**Melee Combat**",
+          "skill_url": "/skills/melee-combat",
+          "type": "Broad",
+          "attribute": "STR",
+          "cost": 6,
+          "pr": "CF"
+        },
+        {
+          "skill": "**Acrobatics**",
           "skill_url": "/skills/acrobatics",
           "type": "Broad",
           "attribute": "DEX",
@@ -1094,8 +1198,16 @@
           "tier": 2
         },
         {
-          "skill": "Dodge",
-          "skill_url": "/skills/acrobatics#dodge",
+          "skill": "&nbsp;&nbsp;&nbsp;Disguise",
+          "skill_url": "/skills/covert-ops#disguise",
+          "type": "Specialty",
+          "attribute": "DEX",
+          "cost": 3,
+          "pr": "F"
+        },
+        {
+          "skill": "&nbsp;&nbsp;&nbsp;Pickpocket",
+          "skill_url": "/skills/covert-ops#pickpocket",
           "type": "Specialty",
           "attribute": "DEX",
           "cost": 3,
@@ -1292,34 +1404,113 @@
           "tier": 2
         },
         {
-          "skill": "Biokinesis",
-          "skill_url": "/psionics/biokinesis",
+          "skill": "**Resolve**",
+          "skill_url": "/skills/resolve",
           "type": "Broad",
           "attribute": "WIL",
           "cost": 6,
-          "pr": "—",
-          "tier": 1
+          "pr": "—"
         },
         {
-          "skill": "ESP",
-          "skill_url": "/psionics/esp",
-          "type": "Broad",
-          "attribute": "WIL",
-          "cost": 6,
-          "pr": "—",
-          "tier": 1
-        },
-        {
-          "skill": "Astrogation—drivespace",
-          "skill_url": "/skills/navigation#astrogation-drivespace",
+          "skill": "&nbsp;&nbsp;&nbsp;Mental resolve",
+          "skill_url": "/skills/resolve#mental-resolve",
           "type": "Specialty",
-          "attribute": "INT",
-          "cost": 4,
-          "pr": "T",
-          "tier": 2
+          "attribute": "WIL",
+          "cost": 3,
+          "pr": "—"
         },
         {
-          "skill": "Entertainment",
+          "skill": "&nbsp;&nbsp;&nbsp;Physical resolve",
+          "skill_url": "/skills/resolve#physical-resolve",
+          "type": "Specialty",
+          "attribute": "WIL",
+          "cost": 3,
+          "pr": "—"
+        },
+        {
+          "skill": "**Investigate**",
+          "skill_url": "/skills/investigate",
+          "type": "Broad",
+          "attribute": "WIL",
+          "cost": 3,
+          "pr": "FT"
+        },
+        {
+          "skill": "**Street Smart**",
+          "skill_url": "/skills/street-smart",
+          "type": "Broad",
+          "attribute": "WIL",
+          "cost": 3,
+          "pr": "F"
+        },
+        {
+          "skill": "**Teach**",
+          "skill_url": "/skills/teach",
+          "type": "Broad",
+          "attribute": "WIL",
+          "cost": 3,
+          "pr": "C"
+        },
+        {
+          "skill": "**Biokinesis**",
+          "skill_url": "/core-mechanics/psionics/biokinesis",
+          "type": "Broad",
+          "attribute": "WIL",
+          "cost": 6,
+          "pr": "—",
+          "tier": 1
+        },
+        {
+          "skill": "**ESP**",
+          "skill_url": "/core-mechanics/psionics/esp",
+          "type": "Broad",
+          "attribute": "WIL",
+          "cost": 6,
+          "pr": "—",
+          "tier": 1
+        },
+        {
+          "skill": "**Telekinesis**",
+          "skill_url": "/core-mechanics/psionics/telekinesis",
+          "type": "Broad",
+          "attribute": "WIL",
+          "cost": 6,
+          "pr": "—"
+        },
+        {
+          "skill": "**Telepathy**",
+          "skill_url": "/core-mechanics/psionics/telepathy",
+          "type": "Broad",
+          "attribute": "WIL",
+          "cost": 6,
+          "pr": "—"
+        },
+        {
+          "skill": "**Psychoportation**",
+          "skill_url": "/core-mechanics/psionics/psychoportation",
+          "type": "Broad",
+          "attribute": "WIL",
+          "cost": 6,
+          "pr": "—"
+        },
+        {
+          "skill": "**Culture**",
+          "skill_url": "/skills/culture",
+          "type": "Broad",
+          "attribute": "PER",
+          "cost": 5,
+          "pr": "D"
+        },
+        {
+          "skill": "**Deception**",
+          "skill_url": "/skills/deception",
+          "type": "Broad",
+          "attribute": "PER",
+          "cost": 5,
+          "pr": "F"
+        },
+        {
+          "skill": "**Entertainment**",
           "skill_url": "/skills/entertainment",
           "type": "Broad",
           "attribute": "PER",

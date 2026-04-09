@@ -1,0 +1,177 @@
+/* Skill Page Specific Styles */
+
+.skill-header {
+    border-left: 5px solid var(--accent-cyan);
+    padding-left: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.skill-info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    background: rgba(128, 153, 172, 0.1);
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 1.5rem 0;
+}
+
+.skill-info-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.skill-info-label {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: var(--accent-cyan);
+    font-family: 'Michroma', sans-serif;
+}
+
+.skill-info-value {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+/* Quick Navigation / Compact TOC */
+.quick-nav {
+    margin: 2rem 0;
+}
+
+.quick-nav-title {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    color: var(--border-color);
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.25rem;
+    border-bottom: 1px solid rgba(128, 153, 172, 0.3);
+}
+
+.quick-nav-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    gap: 0.75rem;
+}
+
+.quick-nav-item {
+    background: white;
+    border: 1px solid var(--border-color);
+    padding: 0.5rem;
+    text-align: center;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    color: var(--accent-cyan) !important;
+    border-bottom: none !important; /* Override standard link style */
+    transition: all 0.2s ease;
+}
+
+.quick-nav-item:hover {
+    background: var(--accent-cyan);
+    color: white !important;
+    box-shadow: 0 0 10px rgba(56, 158, 189, 0.4);
+    transform: translateY(-2px);
+}
+
+/* Specialty Sections */
+.skill-content h2, 
+.skill-content h3 {
+    position: relative;
+}
+
+/* Specialty Title (Downgraded Broad Skill Style) */
+.skill-content h2:not(.skill-header h2), 
+.skill-content > h3 {
+    margin-top: 4rem;
+    margin-bottom: 0.25rem;
+    font-size: 1.4rem;
+    font-family: 'Michroma', sans-serif;
+    color: var(--accent-cyan);
+    border-left: 3px solid var(--accent-cyan);
+    padding: 0.5rem 1rem;
+    background: linear-gradient(to right, rgba(56, 158, 189, 0.08), transparent);
+    letter-spacing: 1px;
+}
+
+/* Remove old accent line */
+.skill-content h2:not(.skill-header h2)::before,
+.skill-content > h3::before {
+    display: none;
+}
+
+/* Specialty Info Grid (Downgraded version of broad grid) */
+.specialty-info-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid rgba(128, 153, 172, 0.1);
+}
+
+.specialty-info-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.specialty-info-label {
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    color: var(--accent-cyan);
+    font-family: 'Michroma', sans-serif;
+    opacity: 0.7;
+    letter-spacing: 1px;
+}
+
+.specialty-info-value {
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+/* Rank Progression Styling */
+/* We target strong tags that look like "Rank X" implicitly by their parent structure */
+.skill-content p > strong:first-child {
+    color: var(--accent-cyan);
+    font-size: 1.1rem;
+}
+
+/* Make lists and breaks cleaner */
+.skill-content hr {
+    margin: 4rem 0;
+    border: none;
+    border-top: 1px solid rgba(128, 153, 172, 0.2);
+    position: relative;
+    overflow: visible;
+}
+
+.skill-content hr::after {
+    content: "SECTION BREAK";
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #f8f9fa; /* Match your background */
+    padding: 0 15px;
+    font-family: 'Michroma', sans-serif;
+    font-size: 0.6rem;
+    color: var(--accent-cyan);
+    letter-spacing: 3px;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 600px) {
+    .quick-nav-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .skill-info-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .skill-content h2:not(.skill-header h2), 
+    .skill-content > h3 {
+        font-size: 1.2rem;
+        padding: 0.4rem 0.75rem;
+    }
+}

@@ -4,8 +4,9 @@ description = "Acostúmbrate a llevar armadura, anulando las penalizaciones."
 weight = 1
 attribute = "STR"
 category = "Combate"
+type = "skill"
+layout = "list"
 +++
-
 
 La armadura que es voluminosa, pesada y engorrosa dificulta al personaje que la usa. Esto se refleja en una penalización a la tirada de acción del personaje y la disminución o anulación del modificador de resistencia de Destreza del personaje. La habilidad amplia de Operación de Armadura y sus habilidades de especialidad ayudan a aliviar estas penalizaciones.
 
@@ -38,8 +39,8 @@ Esta especialidad representa el nivel de maestría en el uso de la armadura, as�
 - **Rango 2: Sacudirse Aturdimientos.** El daño por aturdimiento (incluido el secundario) se reduce en 1 punto. Aumenta en 1 por cada 2 rangos alcanzados (máximo 6 puntos en el Rango 12).
 - **Rango 7: Operación de Armadura Potenciada.** El personaje ha dominado la sincronización necesaria para operar trajes de Armadura Potenciada.
 
-### Armadura Táctica (INT)
-
+### Armadura Táctica
+#### (STR)
 Esta habilidad de especialidad entra en juego cuando se utilizan armaduras con equipo integrado, desde sensores hasta comunicaciones. Pero no en el caso del armamento montado, que suele utilizar la habilidad específica para el arma montada.
 Esta habilidad también se puede usar para sacudirse ataques electrónicos como el pirateo de sensores o las interferencias.
 
@@ -47,8 +48,8 @@ Esta habilidad también se puede usar para sacudirse ataques electrónicos como 
 - **Rango 5: Competencia en Sensores.** Recibe una bonificación de -1 paso en las tiradas que impliquen la operación o interpretación de los sensores integrados del traje.
 - **Rango 7: Contraintrusión.** Gana una bonificación de -1 paso para resistir intentos de guerra electrónica o pirateo dirigidos al traje. Esto mejora a -2 pasos en el Rango 11.
 
-### Sistemas de Propulsión (INT)
-
+### Sistemas de Propulsión
+#### (STR)
 Esta habilidad de especialidad representa la maestría en el uso de sistemas de propulsión integrados, como mochilas cohete, propulsores subacuáticos o incluso sistemas de deceleración asistida por gravedad (GADS, la versión de paracaidismo de la era de la gravedad).
 
 - **Rango 2: Gestión Térmica/Combustible.** Optimiza el combustible o la disipación de calor, extendiendo el tiempo operativo de las unidades de propulsión en un 50%.
@@ -56,8 +57,8 @@ Esta habilidad de especialidad representa la maestría en el uso de sistemas de 
 - **Rango 7: Empuje Máximo.** Realiza una tirada de Sistemas de Propulsión para aumentar la velocidad durante el asalto: Ordinario (+25%), Bueno (+50%) o Asombroso (+100%).
 Cada asalto consecutivo de forzar el motor incurre en una penalización acumulativa de +1 paso a la tirada. La penalización se reduce en 1 por cada asalto que no se use la propulsión.
 
-### Escudos (STR)
-
+### Escudos
+#### (STR)
 Se centra en el uso táctico de escudos físicos, de energía o balísticos.
 
 - **Rango 3: Bloqueo Reactivo.** Gasta la siguiente acción disponible para realizar una tirada enfrentada contra un atacante. Si tiene éxito, el ataque queda anulado. (Solo los escudos balísticos o grandes de materiales del mismo PL pueden bloquear fuego a distancia).
