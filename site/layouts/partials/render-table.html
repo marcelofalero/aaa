@@ -62,15 +62,13 @@
         <td class="cell-{{ .key }}">
           {{ if .link }}
           <div class="flex items-center">
-            <a href="{{ index $item "skill_url" }}">{{ index $item .key | safeHTML }}</a>
+            <a href="{{ index $item " skill_url" }}">{{ index $item .key | safeHTML }}</a>
             {{ if eq (index $item "untrained") false }}
-            <span class="badge badge-error ml2 f7 t-up" title="{{ if eq $.Page.Lang "es" }}Requiere Entrenamiento{{ else }}Requires Training{{ end }}">
-              {{ if eq $.Page.Lang "es" }}Solo Entrenado{{ else }}Trained Only{{ end }}
-            </span>
+            <span class="badge badge-error ml2 f7 t-up" title="Requires Training">Trained Only</span>
             {{ end }}
           </div>
           {{ else if and (eq .key "skill") (index $item "skill_url") }}
-          <a href="{{ index $item "skill_url" }}">{{ index $item .key | safeHTML }}</a>
+          <a href="{{ index $item " skill_url" }}">{{ index $item .key | safeHTML }}</a>
           {{ else if eq .key "tier" }}
           <span class="badge badge-info">{{ index $item .key }}</span>
           {{ else }}

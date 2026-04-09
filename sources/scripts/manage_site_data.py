@@ -31,29 +31,21 @@ def apply_mapping(text, mapping):
     if not text or not isinstance(text, str): return text
     sorted_en_terms = sorted(mapping.keys(), key=len, reverse=True)
     for en in sorted_en_terms:
-        # Use word boundaries if it's a word, else just replace
         pattern = r'\b' + re.escape(en) + r'\b' if re.match(r'^\w', en) else re.escape(en)
         text = re.sub(pattern, mapping[en], text, flags=re.IGNORECASE)
     return text
 
 def is_untrained_forbidden(description):
     if not description: return False
-    forbidden_phrases = [
-        "skill can't be used untrained",
-        "skill can’t be used untrained",
-        "habilidad no se puede usar sin entrenamiento",
-        "can't be used untrained"
-    ]
+    forbidden_phrases = ["skill can't be used untrained", "skill can’t be used untrained", "habilidad no se puede usar sin entrenamiento", "can't be used untrained"]
     desc_lower = description.lower()
     return any(phrase in desc_lower for phrase in forbidden_phrases)
 
 def rebuild_all():
     mapping = load_mapping()
     print(f'Applying {len(mapping)} terminology rules to ABSOLUTELY EVERYTHING...')
-    
     os.makedirs(SITE_DATA_DIR, exist_ok=True)
     
-    # 1. Handle Skills (Pages + JSON)
     skills_yaml = os.path.join(DATA_SOURCES_DIR, 'skills.yaml')
     if os.path.exists(skills_yaml):
         print('Processing Skills...')
@@ -61,7 +53,6 @@ def rebuild_all():
             skills_data = yaml.load(f, Loader=yaml.FullLoader)
         process_skills(skills_data, mapping)
     
-    # 2. Handle Equipment
     gear_sources = ['armor', 'computers', 'cybernetics', 'survival_gear', 'weapons']
     for base_name in gear_sources:
         yaml_path = os.path.join(DATA_SOURCES_DIR, f'{base_name}.yaml')
@@ -69,14 +60,11 @@ def rebuild_all():
         print(f'Processing {base_name}...')
         with open(yaml_path, 'r', encoding='utf-8') as f:
             data = yaml.load(f, Loader=yaml.FullLoader)
-        en_json = apply_rules_to_node(data, mapping, lang='en')
-        out_en = os.path.join(SITE_DATA_DIR, f'{base_name}.json')
-        with open(out_en, 'w', encoding='utf-8') as f:
-            json.dump(en_json, f, indent=4, ensure_ascii=False)
-        es_json = apply_rules_to_node(data, mapping, lang='es')
-        out_es = os.path.join(SITE_DATA_DIR, f'{base_name}.es.json')
-        with open(out_es, 'w', encoding='utf-8') as f:
-            json.dump(es_json, f, indent=4, ensure_ascii=False)
+        for lang in ['en', 'es']:
+            processed = apply_rules_to_node(data, mapping, lang)
+            suffix = '.es.json' if lang == 'es' else '.json'
+            with open(os.path.join(SITE_DATA_DIR, base_name + suffix), 'w', encoding='utf-8') as f:
+                json.dump(processed, f, indent=4, ensure_ascii=False)
 
 def apply_rules_to_node(node, mapping, lang='en'):
     if isinstance(node, dict):
@@ -100,6 +88,7 @@ def apply_rules_to_node(node, mapping, lang='en'):
         return node
 
 def process_skills(skills_list, mapping):
+    # Hugo Pages Generation (Simplified)
     for broad in skills_list:
         url = broad.get('skill_url', '')
         if not url: continue
@@ -108,53 +97,49 @@ def process_skills(skills_list, mapping):
         os.makedirs(out_dir, exist_ok=True)
         # EN Page
         with open(os.path.join(out_dir, '_index.md'), 'w', encoding='utf-8') as f:
-            f.write(f'+++\ntitle = "{broad["skill"]}"\nattribute = "{broad["attribute"]}"\ncategory = "{broad.get("category", "Other")}"\ntype = "skill"\nlayout = "list"\n+++\n\n')
-            f.write(broad.get('description', '') + '\n\n')
+            f.write(f'+++\ntitle = "{broad["skill"]}"\nattribute = "{broad["attribute"]}"\ncategory = "{broad.get("category", "Other")}"\ntype = "skill"\nlayout = "list"\n+++\n\n{broad.get("description", "")}\n\n')
             for spec in broad.get('specialties', []):
-                attr_header = f'### ({spec["attribute"]})' if spec.get('attribute') else ''
-                f.write(f'## {spec["skill"]}\n{attr_header}\n\n{spec.get("description", "")}\n\n---\n\n')
+                f.write(f'## {spec["skill"]}\n### ({spec["attribute"]})\n\n{spec.get("description", "")}\n\n---\n\n')
         # ES Page
         title_es = broad.get('skill_es', apply_mapping(broad['skill'], mapping))
         attr_es = apply_mapping(broad['attribute'], mapping)
+        cat_es = broad.get('category_es', apply_mapping(broad.get('category', 'Other'), mapping))
         desc_es = apply_mapping(broad.get('description_es', broad.get('description', '')), mapping)
-        category_es = broad.get('category_es', apply_mapping(broad.get('category', 'Other'), mapping))
         with open(os.path.join(out_dir, '_index.es.md'), 'w', encoding='utf-8') as f:
-            f.write(f'+++\ntitle = "{title_es}"\nattribute = "{attr_es}"\ncategory = "{category_es}"\ntype = "skill"\nlayout = "list"\n+++\n\n')
-            f.write(desc_es + '\n\n')
+            f.write(f'+++\ntitle = "{title_es}"\nattribute = "{attr_es}"\ncategory = "{cat_es}"\ntype = "skill"\nlayout = "list"\n+++\n\n{desc_es}\n\n')
             for spec in broad.get('specialties', []):
                 s_title_es = spec.get('skill_es', apply_mapping(spec['skill'], mapping))
                 s_attr_es = apply_mapping(spec['attribute'], mapping)
                 s_desc_es = apply_mapping(spec.get('description_es', spec.get('description', '')), mapping)
-                attr_header = f'### ({s_attr_es})' if s_attr_es else ''
-                f.write(f'## {s_title_es}\n{attr_header}\n\n{s_desc_es}\n\n---\n\n')
+                f.write(f'## {s_title_es}\n### ({s_attr_es})\n\n{s_desc_es}\n\n---\n\n')
 
     def build_json(lang):
         groups_dict = defaultdict(list)
         for b in skills_list:
-            name = b['skill'] if lang == 'en' else b.get('skill_es', apply_mapping(b['skill'], mapping))
+            b_name = b['skill'] if lang == 'en' else b.get('skill_es', apply_mapping(b['skill'], mapping))
             cat = b.get('category', 'Other') if lang == 'en' else b.get('category_es', apply_mapping(b.get('category', 'Other'), mapping))
             attr = b['attribute'] if lang == 'en' else apply_mapping(b['attribute'], mapping)
-            untrained = not is_untrained_forbidden(b.get('description', ''))
             
+            # BROAD skill entry
             broad_entry = {
-                "skill": name, "attribute": attr, "skill_url": b['skill_url'],
+                "skill": b_name, "attribute": attr, "skill_url": b['skill_url'],
                 "cost": b.get('cost', 0), "type": "Broad", "tier": b.get('tier', 1),
-                "pr": b.get('pr', ''), "untrained": untrained
+                "pr": apply_mapping(b.get('pr', ''), mapping) if lang == 'es' else b.get('pr', ''),
+                "untrained": not is_untrained_forbidden(b.get('description', ''))
             }
-            specs = []
+            groups_dict[cat].append(broad_entry)
+            
+            # SPECIALTY skills (FLAT LIST for data-agnostic shortcode)
             for s in b.get('specialties', []):
                 s_name = s['skill'] if lang == 'en' else s.get('skill_es', apply_mapping(s['skill'], mapping))
                 s_attr = s['attribute'] if lang == 'en' else apply_mapping(s['attribute'], mapping)
-                s_untrained = not is_untrained_forbidden(s.get('description', ''))
-                pr_val = s.get('pr', '')
-                if lang == 'es': pr_val = apply_mapping(pr_val, mapping)
-                specs.append({
+                s_cost = s.get('cost', 0)
+                groups_dict[cat].append({
                     "skill": s_name, "attribute": s_attr, "skill_url": s['skill_url'],
-                    "cost": s.get('cost', 0), "type": "Specialty", "tier": s.get('tier', 1 + (1 if s.get('cost', 0) >= 3 else 0)),
-                    "pr": pr_val, "untrained": s_untrained
+                    "cost": s_cost, "type": "Specialty", "tier": s.get('tier', 2 if s_cost < 3 else 3),
+                    "pr": apply_mapping(s.get('pr', ''), mapping) if lang == 'es' else s.get('pr', ''),
+                    "untrained": not is_untrained_forbidden(s.get('description', ''))
                 })
-            if specs: broad_entry["specialties"] = specs
-            groups_dict[cat].append(broad_entry)
         
         columns = [
             {"key": "skill", "name": "Skill" if lang == "en" else "Habilidad", "link": True},
