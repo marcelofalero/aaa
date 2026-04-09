@@ -15,7 +15,7 @@ Cuando se utiliza en un contexto interactivo, Cultura es una habilidad de encuen
 - **Cotidiano (origen, ocupación):** sin modificador
 - **Complejo (amenazas, ideas esotéricas):** penalización de +1 o más
 
-## Habilidades de Especialidad
+## Diplomacia
 ### (PER)
 
 {{% list %}}
@@ -62,7 +62,7 @@ Al completarla CON éxito, el héroe gana inmediatamente el rango 1 en las habil
 
 ---
 
-## Etiquette [spec]
+## Etiqueta [spec]
 ### (PER)
 
 
@@ -74,11 +74,11 @@ Al completarla CON éxito, el héroe gana inmediatamente el rango 1 en las habil
 
 *This skill can't be used untrained.*
 
-This Especialidad represents a Personaje's training in the theories and protocols of making first contact with a previously unknown culture. With this skill, a Personaje can assess the Mental, Físico, and technological capabilities of an unfamiliar species, begin the process of establishing communications and learning each Otros's language, and make a preliminary study of the strangers' cultural and societal habits.
+This Especialidad represents a Personaje's training in the theories and protocols of making first contact with a previously unknown Cultura. With this skill, a Personaje can assess the Mental, Físico, and technological capabilities of an unfamiliar species, begin the process of establishing communications and learning each Otros's language, and make a preliminary study of the strangers' cultural and societal habits.
 
 A first encounter skill check is always a complex chore, and may take days, weeks, or even months to successfully complete. The Gamemaster will assign the number of successes necessary to complete the skill check based on the extent of difference between the two cultures involved. Also, the Gamemaster will determine the initial attitude of the target creature(s) toward the Personaje, and may inform the Personaje of changes in that attitude that take place while the complex skill check is under way.
 
-Upon the successful completion of the first encounter skill check, the Personaje immediately gains rank 1 in the Knowledge—language and Culture—etiquette skills that relate to the formerly unknown culture.
+Upon the successful completion of the first encounter skill check, the Personaje immediately gains rank 1 in the Knowledge—language and Cultura—Etiqueta skills that relate to the formerly unknown Cultura.
 
 ---
 

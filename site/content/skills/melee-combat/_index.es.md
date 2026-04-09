@@ -112,7 +112,7 @@ Every additional attacker who takes part in the same overpowering attempt provid
 
 ▶ Mass Leverage: When a Personaje reaches skill rank 1, he learns to properly leverage his mass. This increases his base unarmed damage to **d4s/d4w/d6+1w**.
 
-▶ High Impulse: When a Personaje reaches rank 3, an Asombroso success on an attack forces the target to make a knockout check (Resolve or Stamina) with a +1 step penalty. This penalty increases to +2 at rank 6, +3 at rank 9, and +4 at rank 12.
+▶ High Impulse: When a Personaje reaches rank 3, an Asombroso success on an attack forces the target to make a knockout check (Firmeza or Aguante) with a +1 step penalty. This penalty increases to +2 at rank 6, +3 at rank 9, and +4 at rank 12.
 
 ▶ Structural Efficiency: When a Personaje reaches rank 4, all unarmed damage increases by +1. This bonus increases by an additional +1 at rank 8 and again at rank 12.
 

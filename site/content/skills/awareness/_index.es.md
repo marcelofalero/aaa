@@ -1,5 +1,5 @@
 +++
-title = "Alerta [Awareness]"
+title = "Alerta"
 attribute = "VOL"
 category = "Otros"
 type = "skill"

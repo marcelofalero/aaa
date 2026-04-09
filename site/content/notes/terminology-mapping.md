@@ -86,6 +86,27 @@ This page provides a mapping of common game terms from English to Spanish to ens
 | Inspire | Inspirar |
 | Leadership | Liderazgo |
 | Street Smart | Callejeo |
+| Acrobatics | Acrobacia |
+| Aerobatics | Acrobacia aérea |
+| Dodge | Esquivar |
+| Daredevil | Temerario |
+| Fall | Caída |
+| Zero-G Training | Entrenamiento en gravedad cero |
+| Awareness | Alerta |
+| Intuition | Intuición |
+| Perception | Percepción |
+| Endurance | Resistencia |
+| Stamina | Aguante |
+| Resolve | Firmeza |
+| Business | Negocios |
+| Culture | Cultura |
+| Diplomacy | Diplomacia |
+| Etiquette | Etiqueta |
+| Interaction | Interacción |
+| Deception | Engaño |
+| Gamble | Juego |
+| Bribe | Soborno |
+| Bribery | Soborno |
 | ... | ... |
 
 

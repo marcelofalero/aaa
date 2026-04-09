@@ -20,7 +20,7 @@ Cuando un héroe realiza ciertas actividades que provocan fatiga, debe realizar 
 - **Fallo:** 1 punto de daño por fatiga.
 - **Éxito:** No sufre daño por fatiga.
 
-## Habilidades de Especialidad
+## Resistencia
 ### (CON)
 
 {{% list %}}

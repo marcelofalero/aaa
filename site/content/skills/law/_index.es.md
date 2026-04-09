@@ -52,9 +52,9 @@ This specialty is also used to determine how "Bueno" an arrest is (providing amm
 
 *This skill can't be used untrained.*
 
-For each separate purchase of this specialty, a Personaje selects a specific culture or a specific type of law (maritime law, salvage law, etc.). As the Especialidad is improved, the Personaje gains a progressively stronger grasp on the laws and legal systems of that culture or specialty.
+For each separate purchase of this specialty, a Personaje selects a specific Cultura or a specific type of law (maritime law, salvage law, etc.). As the Especialidad is improved, the Personaje gains a progressively stronger grasp on the laws and legal systems of that Cultura or specialty.
 
-⊗ **Increased Effect:** At higher ranks, the Personaje becomes more proficient within the legal system of the culture in question. Using the specific skill provides a reduction to the Dado de Situación:
+⊗ **Increased Effect:** At higher ranks, the Personaje becomes more proficient within the legal system of the Cultura in question. Using the specific skill provides a reduction to the Dado de Situación:
 - **-1 bonus at Rank 3**
 - **-2 bonus at Rank 6**
 - **-3 bonus at Rank 9**

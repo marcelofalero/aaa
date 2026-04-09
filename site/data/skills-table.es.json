@@ -211,28 +211,28 @@
                     "type": "Broad",
                     "children": [
                         {
-                            "skill": "Esquivar [Dodge]",
+                            "skill": "Acrobacia aérea",
                             "attribute": "DES",
                             "skill_url": "/skills/acrobatics#aerobatics",
                             "cost": 3,
                             "type": "Specialty"
                         },
                         {
-                            "skill": "Caída",
+                            "skill": "Temerario",
                             "attribute": "DES",
                             "skill_url": "/skills/acrobatics#daredevil",
                             "cost": 3,
                             "type": "Specialty"
                         },
                         {
-                            "skill": "Temerario [Daredevil]",
+                            "skill": "Esquivar",
                             "attribute": "DES",
                             "skill_url": "/skills/acrobatics#dodge",
                             "cost": 3,
                             "type": "Specialty"
                         },
                         {
-                            "skill": "Entrenamiento en Gravedad Cero",
+                            "skill": "Caída",
                             "attribute": "DES",
                             "skill_url": "/skills/acrobatics#fall",
                             "cost": 3,
@@ -352,7 +352,7 @@
                     ]
                 },
                 {
-                    "skill": "Alerta [Awareness]",
+                    "skill": "Alerta",
                     "attribute": "VOL",
                     "skill_url": "/skills/awareness",
                     "cost": 3,
@@ -518,7 +518,7 @@
                     "type": "Broad",
                     "children": [
                         {
-                            "skill": "Habilidades de Especialidad",
+                            "skill": "Resistencia",
                             "attribute": "CON",
                             "skill_url": "/skills/stamina#endurance",
                             "cost": 4,
@@ -665,14 +665,14 @@
                     "type": "Broad",
                     "children": [
                         {
-                            "skill": "Habilidades de Especialidad",
+                            "skill": "Diplomacia",
                             "attribute": "PER",
                             "skill_url": "/skills/culture#diplomacy",
                             "cost": 3,
                             "type": "Specialty"
                         },
                         {
-                            "skill": "Etiquette [spec]",
+                            "skill": "Etiqueta [spec]",
                             "attribute": "PER",
                             "skill_url": "/skills/culture#etiquette-spec",
                             "cost": 2,
@@ -702,14 +702,14 @@
                             "type": "Specialty"
                         },
                         {
-                            "skill": "Bribe",
+                            "skill": "Soborno",
                             "attribute": "PER",
                             "skill_url": "/skills/deception#bribe",
                             "cost": 3,
                             "type": "Specialty"
                         },
                         {
-                            "skill": "Gamble",
+                            "skill": "Juego",
                             "attribute": "PER",
                             "skill_url": "/skills/deception#gamble",
                             "cost": 4,

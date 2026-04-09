@@ -19,7 +19,7 @@ Saltar es un salto vertical mejorado por asistencia (impulsarse en un objeto o u
 
 # Habilidades de Especialidad
 
-## Esquivar [Dodge]
+## Acrobacia aérea
 ### (DES)
 
 Esta habilidad de especialidad permite a un personaje usar acrobacias como defensa en situaciones de combate. También se usa cuando un personaje se lanza a cubierto o se tira al suelo cuando un ataque de área lo tiene como objetivo. Esquivar permite a un personaje dar volteretas, rodar, agacharse, lanzarse o saltar para apartarse de un ataque.
@@ -42,7 +42,7 @@ Se realiza una comprobación de habilidad (que requiere una acción) al comienzo
 
 ---
 
-## Caída
+## Temerario
 ### (DES)
 
 Esta habilidad de especialidad permite a un personaje mejorar su capacidad para sobrevivir a una caída girando su cuerpo, agarrando protuberancias cercanas o frenando de otra manera su descenso, disminuyendo así el daño que sufre por un impacto.
@@ -53,7 +53,7 @@ Un personaje CON la especialidad de caída suma su rango en la especialidad a su
 
 ---
 
-## Temerario [Daredevil]
+## Esquivar
 ### (DES)
 
 Esta habilidad de especialidad permite a un personaje realizar actividades de alto riesgo como paracaidismo, submarinismo (buceo), ala delta, surf, puenting y rafting.
@@ -69,7 +69,7 @@ Esta habilidad de especialidad permite a un personaje realizar actividades de al
 
 ---
 
-## Entrenamiento en Gravedad Cero
+## Caída
 ### (DES)
 
 *Esta habilidad no puede usarse sin entrenamiento.*
@@ -102,7 +102,7 @@ Esta habilidad de especialidad representa la maestría de un personaje en maniob
 
 ### Progresión de Rango
 ⊗ **Rango 4 (Descenso Sigiloso):** Cuando se usa un jump-pack o GADS, el personaje puede descender CON un ruido mínimo, recibiendo un **bono de -2 pasos** en las comprobaciones de **Sigilo**.
-⊗ **Rango 6 (Vuelo de Resistencia):** Cuando se usan alas naturales o cibernéticas, el personaje puede volar durante períodos prolongados, recibiendo un **bono de -2 pasos** en las comprobaciones de **Aguante (Stamina)** para viajes de larga distancia.
+⊗ **Rango 6 (Vuelo de Resistencia):** Cuando se usan alas naturales o cibernéticas, el personaje puede volar durante períodos prolongados, recibiendo un **bono de -2 pasos** en las comprobaciones de **Aguante (Aguante)** para viajes de larga distancia.
 
 ---
 
