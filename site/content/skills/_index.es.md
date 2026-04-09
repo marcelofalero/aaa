@@ -123,4 +123,4 @@ A veces, una acción que intenta tu personaje no está directamente relacionada 
 
 Esta tabla proporciona una lista completa de todas las habilidades disponibles, agrupadas por su atributo rector. Incluye el coste de las habilidades amplias y de las habilidades de especialidad, así como los códigos de profesión para las habilidades favorecidas.
 
-{{< json-table data="skills" hide="pr" expand=".*" >}}
+{{< nested-data-table file="skills-table.es.json" >}}

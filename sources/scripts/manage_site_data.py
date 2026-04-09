@@ -88,74 +88,91 @@ def process_skills(skills_list, mapping):
         slug = url.strip('/').split('/')[-1]
         out_dir = f'site/content/skills/{slug}'
         os.makedirs(out_dir, exist_ok=True)
-        # EN Page
-        with open(os.path.join(out_dir, '_index.md'), 'w', encoding='utf-8') as f:
-            f.write(f'+++\ntitle = "{broad["skill"]}"\nattribute = "{broad["attribute"]}"\ncategory = "{broad.get("category", "Other")}"\ntype = "skill"\nlayout = "list"\n+++\n\n{broad.get("description", "")}\n\n')
-            for spec in broad.get('specialties', []):
-                f.write(f'## {spec["skill"]}\n### ({spec["attribute"]})\n\n{spec.get("description", "")}\n\n---\n\n')
-        # ES Page
-        title_es = broad.get('skill_es', apply_mapping(broad['skill'], mapping))
-        attr_es = apply_mapping(broad['attribute'], mapping)
-        cat_es = broad.get('category_es', apply_mapping(broad.get('category', 'Other'), mapping))
-        desc_es = apply_mapping(broad.get('description_es', broad.get('description', '')), mapping)
-        with open(os.path.join(out_dir, '_index.es.md'), 'w', encoding='utf-8') as f:
-            f.write(f'+++\ntitle = "{title_es}"\nattribute = "{attr_es}"\ncategory = "{cat_es}"\ntype = "skill"\nlayout = "list"\n+++\n\n{desc_es}\n\n')
-            for spec in broad.get('specialties', []):
-                s_title_es = spec.get('skill_es', apply_mapping(spec['skill'], mapping))
-                s_attr_es = apply_mapping(spec['attribute'], mapping)
-                s_desc_es = apply_mapping(spec.get('description_es', spec.get('description', '')), mapping)
-                f.write(f'## {s_title_es}\n### ({s_attr_es})\n\n{s_desc_es}\n\n---\n\n')
+        # Markdown Page Generation
+        for lang in ['en', 'es']:
+            title = broad['skill'] if lang == 'en' else broad.get('skill_es', apply_mapping(broad['skill'], mapping))
+            attr = broad['attribute'] if lang == 'en' else apply_mapping(broad['attribute'], mapping)
+            cat = broad.get('category', 'Other') if lang == 'en' else broad.get('category_es', apply_mapping(broad.get('category', 'Other'), mapping))
+            desc = broad.get('description', '') if lang == 'en' else apply_mapping(broad.get('description_es', broad.get('description', '')), mapping)
+            suffix = '.es.md' if lang == 'es' else '.md'
+            with open(os.path.join(out_dir, '_index' + suffix), 'w', encoding='utf-8') as f:
+                f.write(f'+++\ntitle = "{title}"\nattribute = "{attr}"\ncategory = "{cat}"\ntype = "skill"\nlayout = "list"\n+++\n\n{desc}\n\n')
+                for spec in broad.get('specialties', []):
+                    s_title = spec['skill'] if lang == 'en' else spec.get('skill_es', apply_mapping(spec['skill'], mapping))
+                    s_attr = spec['attribute'] if lang == 'en' else apply_mapping(spec['attribute'], mapping)
+                    s_desc = spec.get('description', '') if lang == 'en' else apply_mapping(spec.get('description_es', spec.get('description', '')), mapping)
+                    f.write(f'## {s_title}\n### ({s_attr})\n\n{s_desc}\n\n---\n\n')
 
+    # FLAT structure for legacy interactive table
     def build_flat_json(lang):
         groups_dict = defaultdict(list)
         for b in skills_list:
             b_name = b['skill'] if lang == 'en' else b.get('skill_es', apply_mapping(b['skill'], mapping))
             cat = b.get('category', 'Other') if lang == 'en' else b.get('category_es', apply_mapping(b.get('category', 'Other'), mapping))
             attr = b['attribute'] if lang == 'en' else apply_mapping(b['attribute'], mapping)
-            groups_dict[cat].append({
-                "skill": b_name, "attribute": attr, "skill_url": b['skill_url'],
-                "cost": b.get('cost', 0), "type": "Broad"
-            })
+            groups_dict[cat].append({"skill": b_name, "attribute": attr, "skill_url": b['skill_url'], "cost": b.get('cost', 0), "type": "Broad"})
             for s in b.get('specialties', []):
                 s_name = s['skill'] if lang == 'en' else s.get('skill_es', apply_mapping(s['skill'], mapping))
                 s_attr = s['attribute'] if lang == 'en' else apply_mapping(s['attribute'], mapping)
-                groups_dict[cat].append({
-                    "skill": s_name, "attribute": s_attr, "skill_url": s['skill_url'],
-                    "cost": s.get('cost', 0), "type": "Specialty"
-                })
-        columns = [
-            {"key": "skill", "name": "Skill" if lang == "en" else "Habilidad", "link": True},
-            {"key": "attribute", "name": "Attr." if lang == "en" else "Atrib."},
-            {"key": "cost", "name": "Cost" if lang == "en" else "Costo"}
-        ]
-        return {"columns": columns, "groups": [{"name": cat, "items": items} for cat, items in groups_dict.items()]}
+                groups_dict[cat].append({"skill": s_name, "attribute": s_attr, "skill_url": s['skill_url'], "cost": s.get('cost', 0), "type": "Specialty"})
+        cols = [{"key": "skill", "name": "Skill" if lang == "en" else "Habilidad", "link": True}, {"key": "attribute", "name": "Attr." if lang == "en" else "Atrib."}, {"key": "cost", "name": "Cost" if lang == "en" else "Costo"}]
+        return {"columns": cols, "groups": [{"name": cat, "items": items} for cat, items in groups_dict.items()]}
 
-    def build_nested_table_json():
-        nested_skills = []
+    # NEW NESTED structure with fields (skills-table.json)
+    def build_nested_skills_table(lang):
+        fields = [
+            {"key": "skill", "name": "Skill" if lang == 'en' else "Habilidad", "link": True},
+            {"key": "attribute", "name": "Attr." if lang == 'en' else "Atrib."},
+            {"key": "cost", "name": "Cost" if lang == 'en' else "Costo"}
+        ]
+        # Group by category (Tier 1)
+        categories = defaultdict(list)
         for b in skills_list:
-            entry = {
-                "skill": b['skill'], "skill_es": b.get('skill_es', apply_mapping(b['skill'], mapping)),
-                "attribute": b['attribute'], "category": b.get('category', 'Other'),
-                "skill_url": b['skill_url'], "cost": b.get('cost', 0)
+            cat = b.get('category', 'Other') if lang == 'en' else b.get('category_es', apply_mapping(b.get('category', 'Other'), mapping))
+            
+            # Tier 2 (Broad)
+            broad_entry = {
+                "skill": b['skill'] if lang == 'en' else b.get('skill_es', apply_mapping(b['skill'], mapping)),
+                "attribute": b['attribute'] if lang == 'en' else apply_mapping(b['attribute'], mapping),
+                "skill_url": b['skill_url'],
+                "cost": b.get('cost', 0),
+                "type": "Broad"
             }
-            if 'category_es' in b: entry['category_es'] = b['category_es']
+            
+            # Tier 3 (Specialties)
             specs = []
             for s in b.get('specialties', []):
                 specs.append({
-                    "skill": s['skill'], "skill_es": s.get('skill_es', apply_mapping(s['skill'], mapping)),
-                    "attribute": s['attribute'], "skill_url": s['skill_url'], "cost": s.get('cost', 0)
+                    "skill": s['skill'] if lang == 'en' else s.get('skill_es', apply_mapping(s['skill'], mapping)),
+                    "attribute": s['attribute'] if lang == 'en' else apply_mapping(s['attribute'], mapping),
+                    "skill_url": s['skill_url'],
+                    "cost": s.get('cost', 0),
+                    "type": "Specialty"
                 })
-            if specs: entry['specialties'] = specs
-            nested_skills.append(entry)
-        return nested_skills
+            if specs: broad_entry["children"] = specs # Using generic 'children' key
+            categories[cat].append(broad_entry)
+            
+        data = []
+        for cat, items in categories.items():
+            data.append({
+                "skill": cat, # Category name acts as the 'skill' name in the top level
+                "type": "Category",
+                "children": items
+            })
+            
+        return {"fields": fields, "data": data}
 
     with open(os.path.join(SITE_DATA_DIR, 'skills.json'), 'w', encoding='utf-8') as f:
         json.dump(build_flat_json('en'), f, indent=4, ensure_ascii=False)
     with open(os.path.join(SITE_DATA_DIR, 'skills.es.json'), 'w', encoding='utf-8') as f:
         json.dump(build_flat_json('es'), f, indent=4, ensure_ascii=False)
+        
+    # Generate skills-table.json (EN and ES versions for now, or just one if agnostic)
     with open(os.path.join(SITE_DATA_DIR, 'skills-table.json'), 'w', encoding='utf-8') as f:
-        json.dump(build_nested_table_json(), f, indent=4, ensure_ascii=False)
+        json.dump(build_nested_skills_table('en'), f, indent=4, ensure_ascii=False)
+    with open(os.path.join(SITE_DATA_DIR, 'skills-table.es.json'), 'w', encoding='utf-8') as f:
+        json.dump(build_nested_skills_table('es'), f, indent=4, ensure_ascii=False)
 
 if __name__ == '__main__':
     rebuild_all()
-    print('ABSOLUTELY EVERYTHING synchronised. No hallucinations, just structure.')
+    print('Final Data Sync complete.')

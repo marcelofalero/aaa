@@ -1,0 +1,1302 @@
+{
+    "fields": [
+        {
+            "key": "skill",
+            "name": "Habilidad",
+            "link": true
+        },
+        {
+            "key": "attribute",
+            "name": "Atrib."
+        },
+        {
+            "key": "cost",
+            "name": "Costo"
+        }
+    ],
+    "data": [
+        {
+            "skill": "Combat",
+            "type": "Category",
+            "children": [
+                {
+                    "skill": "Armas pesadas",
+                    "attribute": "STR",
+                    "skill_url": "/skills/heavy-weapons",
+                    "cost": 6,
+                    "type": "Broad",
+                    "children": [
+                        {
+                            "skill": "Fuego directo",
+                            "attribute": "STR",
+                            "skill_url": "/skills/heavy-weapons#direct-fire",
+                            "cost": 4,
+                            "type": "Specialty"
+                        },
+                        {
+                            "skill": "Fuego indirecto",
+                            "attribute": "STR",
+                            "skill_url": "/skills/heavy-weapons#indirect-fire",
+                            "cost": 4,
+                            "type": "Specialty"
+                        }
+                    ]
+                },
+                {
+                    "skill": "Armas a distancia modernas",
+                    "attribute": "DEX",
+                    "skill_url": "/skills/modern-ranged-weapons",
+                    "cost": 6,
+                    "type": "Broad",
+                    "children": [
+                        {
+                            "skill": "Pistola",
+                            "attribute": "DEX",
+                            "skill_url": "/skills/modern-ranged-weapons#assault-rifle",
+                            "cost": 3,
+                            "type": "Specialty"
+                        },
+                        {
+                            "skill": "Subfusil",
+                            "attribute": "DEX",
+                            "skill_url": "/skills/modern-ranged-weapons#pistol",
+                            "cost": 3,
+                            "type": "Specialty"
+                        },
+                        {
+                            "skill": "Fusil de asalto",
+                            "attribute": "DEX",
+                            "skill_url": "/skills/modern-ranged-weapons#rifle",
+                            "cost": 3,
+                            "type": "Specialty"
+                        },
+                        {
+                            "skill": "Escopeta",
+                            "attribute": "DEX",
+                            "skill_url": "/skills/modern-ranged-weapons#smg",
+                            "cost": 3,
+                            "type": "Specialty"
+                        },
+                        {
+                            "skill": "Fusil",
+                            "attribute": "DEX",
+                            "skill_url": "/skills/modern-ranged-weapons#shotgun",
+                            "cost": 3,
+                            "type": "Specialty"
+                        }
+                    ]
+                },
+                {
+                    "skill": "Armas a distancia primitivas",
+                    "attribute": "DEX",
+                    "skill_url": "/skills/primitive-ranged-weapons",
+                    "cost": 7,
+                    "type": "Broad",
+                    "children": [
+                        {
+                            "skill": "Arco",
+                            "attribute": "DEX",
+                            "skill_url": "/skills/primitive-ranged-weapons#bow",
+                            "cost": 3,
+                            "type": "Specialty"
+                        },
+                        {
+                            "skill": "Ballesta",
+                            "attribute": "DEX",
+                            "skill_url": "/skills/primitive-ranged-weapons#crossbow",
+                            "cost": 3,
+                            "type": "Specialty"
+                        },
+                        {
+                            "skill": "Arma de chispa",
+                            "attribute": "DEX",
+                            "skill_url": "/skills/primitive-ranged-weapons#flintlock",
+                            "cost": 3,
+                            "type": "Specialty"
+                        },
+                        {
+                            "skill": "Honda",
+                            "attribute": "DEX",
+                            "skill_url": "/skills/primitive-ranged-weapons#sling",
+                            "cost": 3,
+                            "type": "Specialty"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "skill": "Combate",
+            "type": "Category",
+            "children": [
+                {
+                    "skill": "Combate Cuerpo a Cuerpo",
+                    "attribute": "STR",
+                    "skill_url": "/skills/melee-combat",
+                    "cost": 6,
+                    "type": "Broad",
+                    "children": [
+                        {
+                            "skill": "Artes Marciales Defensivas",
+                            "attribute": "STR",
+                            "skill_url": "/skills/melee-combat#blade",
+                            "cost": 3,
+                            "type": "Specialty"
+                        },
+                        {
+                            "skill": "Artes Marciales de Poder",
+                            "attribute": "STR",
+                            "skill_url": "/skills/melee-combat#blunt",
+                            "cost": 3,
+                            "type": "Specialty"
+                        },
+                        {
+                            "skill": "Defensive Martial Arts",
+                            "attribute": "STR",
+                            "skill_url": "/skills/melee-combat#defensive-martial-arts",
+                            "cost": 3,
+                            "type": "Specialty"
+                        },
+                        {
+                            "skill": "Power Martial Arts",
+                            "attribute": "STR",
+                            "skill_url": "/skills/melee-combat#power-martial-arts",
+                            "cost": 3,
+                            "type": "Specialty"
+                        },
+                        {
+                            "skill": "Powered",
+                            "attribute": "STR",
+                            "skill_url": "/skills/melee-combat#powered",
+                            "cost": 4,
+                            "type": "Specialty"
+                        }
+                    ]
+                },
+                {
+                    "skill": "Táctica",
+                    "attribute": "INT",
+                    "skill_url": "/skills/tactics",
+                    "cost": 6,
+                    "type": "Broad",
+                    "children": [
+                        {
+                            "skill": "Táctica de Infantería",
+                            "attribute": "INT",
+                            "skill_url": "/skills/tactics#infantry-tactics",
+                            "cost": 3,
+                            "type": "Specialty"
+                        },
+                        {
+                            "skill": "Táctica Espacial",
+                            "attribute": "INT",
+                            "skill_url": "/skills/tactics#space-tactics",
+                            "cost": 3,
+                            "type": "Specialty"
+                        },
+                        {
+                            "skill": "Táctica de Vehículos",
+                            "attribute": "INT",
+                            "skill_url": "/skills/tactics#vehicle-tactics",
+                            "cost": 3,
+                            "type": "Specialty"
+                        }
+                    ]
+                },
+                {
+                    "skill": "Operación de armadura",
+                    "attribute": "STR",
+                    "skill_url": "/skills/armor-operation",
+                    "cost": 7,
+                    "type": "Broad",
+                    "children": [
+                        {
+                            "skill": "Habilidades de Especialidad",
+                            "attribute": "STR",
+                            "skill_url": "/skills/armor-operation#combat-armor",
+                            "cost": 3,
+                            "type": "Specialty"
+                        },
+                        {
+                            "skill": "Powered armor",
+                            "attribute": "STR",
+                            "skill_url": "/skills/armor-operation#powered-armor",
+                            "cost": 4,
+                            "type": "Specialty"
+                        },
+                        {
+                            "skill": "Propulsion systems",
+                            "attribute": "INT",
+                            "skill_url": "/skills/armor-operation#propulsion-systems",
+                            "cost": 3,
+                            "type": "Specialty"
+                        },
+                        {
+                            "skill": "Shields",
+                            "attribute": "STR",
+                            "skill_url": "/skills/armor-operation#shields",
+                            "cost": 3,
+                            "type": "Specialty"
+                        },
+                        {
+                            "skill": "Tactical armor",
+                            "attribute": "INT",
+                            "skill_url": "/skills/armor-operation#tactical-armor",
+                            "cost": 3,
+                            "type": "Specialty"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "skill": "Social",
+            "type": "Category",
+            "children": [
+                {
+                    "skill": "Administración",
+                    "attribute": "INT",
+                    "skill_url": "/skills/administration",
+                    "cost": 4,
+                    "type": "Broad",
+                    "children": [
+                        {
+                            "skill": "Burocracia",
+                            "attribute": "INT",
+                            "skill_url": "/skills/administration#bureaucracy",
+                            "cost": 3,
+                            "type": "Specialty"
+                        },
+                        {
+                            "skill": "Gestión",
+                            "attribute": "INT",
+                            "skill_url": "/skills/administration#management",
+                            "cost": 3,
+                            "type": "Specialty"
+                        }
+                    ]
+                },
+                {
+                    "skill": "Negocios",
+                    "attribute": "INT",
+                    "skill_url": "/skills/business",
+                    "cost": 4,
+                    "type": "Broad",
+                    "children": [
+                        {
+                            "skill": "Corporativo",
+                            "attribute": "INT",
+                            "skill_url": "/skills/business#corporate",
+                            "cost": 3,
+                            "type": "Specialty"
+                        },
+                        {
+                            "skill": "Negocios Ilícitos",
+                            "attribute": "INT",
+                            "skill_url": "/skills/business#illicit-business",
+                            "cost": 3,
+                            "type": "Specialty"
+                        },
+                        {
+                            "skill": "Pequeños Negocios",
+                            "attribute": "INT",
+                            "skill_url": "/skills/business#small-business",
+                            "cost": 3,
+                            "type": "Specialty"
+                        }
+                    ]
+                },
+                {
+                    "skill": "Cultura",
+                    "attribute": "PER",
+                    "skill_url": "/skills/culture",
+                    "cost": 5,
+                    "type": "Broad",
+                    "children": [
+                        {
+                            "skill": "Habilidades de Especialidad",
+                            "attribute": "PER",
+                            "skill_url": "/skills/culture#diplomacy",
+                            "cost": 3,
+                            "type": "Specialty"
+                        },
+                        {
+                            "skill": "Etiquette [spec]",
+                            "attribute": "PER",
+                            "skill_url": "/skills/culture#etiquette-spec",
+                            "cost": 2,
+                            "type": "Specialty"
+                        },
+                        {
+                            "skill": "First Encounter",
+                            "attribute": "PER",
+                            "skill_url": "/skills/culture#first-encounter",
+                            "cost": 3,
+                            "type": "Specialty"
+                        }
+                    ]
+                },
+                {
+                    "skill": "Engaño",
+                    "attribute": "PER",
+                    "skill_url": "/skills/deception",
+                    "cost": 5,
+                    "type": "Broad",
+                    "children": [
+                        {
+                            "skill": "Habilidades de Especialidad",
+                            "attribute": "PER",
+                            "skill_url": "/skills/deception#bluff",
+                            "cost": 3,
+                            "type": "Specialty"
+                        },
+                        {
+                            "skill": "Bribe",
+                            "attribute": "PER",
+                            "skill_url": "/skills/deception#bribe",
+                            "cost": 3,
+                            "type": "Specialty"
+                        },
+                        {
+                            "skill": "Gamble",
+                            "attribute": "PER",
+                            "skill_url": "/skills/deception#gamble",
+                            "cost": 4,
+                            "type": "Specialty"
+                        }
+                    ]
+                },
+                {
+                    "skill": "Interacción",
+                    "attribute": "PER",
+                    "skill_url": "/skills/interaction",
+                    "cost": 3,
+                    "type": "Broad",
+                    "children": [
+                        {
+                            "skill": "Regatear",
+                            "attribute": "PER",
+                            "skill_url": "/skills/interaction#bargain",
+                            "cost": 3,
+                            "type": "Specialty"
+                        },
+                        {
+                            "skill": "Encantar",
+                            "attribute": "PER",
+                            "skill_url": "/skills/interaction#charm",
+                            "cost": 3,
+                            "type": "Specialty"
+                        },
+                        {
+                            "skill": "Entrevistar",
+                            "attribute": "PER",
+                            "skill_url": "/skills/interaction#interview",
+                            "cost": 3,
+                            "type": "Specialty"
+                        },
+                        {
+                            "skill": "Intimidar",
+                            "attribute": "PER",
+                            "skill_url": "/skills/interaction#intimidate",
+                            "cost": 3,
+                            "type": "Specialty"
+                        },
+                        {
+                            "skill": "Seducir",
+                            "attribute": "PER",
+                            "skill_url": "/skills/interaction#seduce",
+                            "cost": 3,
+                            "type": "Specialty"
+                        },
+                        {
+                            "skill": "Provocar",
+                            "attribute": "PER",
+                            "skill_url": "/skills/interaction#taunt",
+                            "cost": 3,
+                            "type": "Specialty"
+                        }
+                    ]
+                },
+                {
+                    "skill": "Ley",
+                    "attribute": "INT",
+                    "skill_url": "/skills/law",
+                    "cost": 0,
+                    "type": "Broad",
+                    "children": [
+                        {
+                            "skill": "Habilidades de Especialidad",
+                            "attribute": "INT",
+                            "skill_url": "/skills/law#court-procedures",
+                            "cost": 3,
+                            "type": "Specialty"
+                        },
+                        {
+                            "skill": "Law enforcement procedures",
+                            "attribute": "INT",
+                            "skill_url": "/skills/law#law-enforcement-procedures",
+                            "cost": 3,
+                            "type": "Specialty"
+                        },
+                        {
+                            "skill": "Law, specific skill",
+                            "attribute": "INT",
+                            "skill_url": "/skills/law#law-specific-skill",
+                            "cost": 2,
+                            "type": "Specialty"
+                        }
+                    ]
+                },
+                {
+                    "skill": "Liderazgo",
+                    "attribute": "PER",
+                    "skill_url": "/skills/leadership",
+                    "cost": 4,
+                    "type": "Broad",
+                    "children": [
+                        {
+                            "skill": "Habilidades de Especialidad",
+                            "attribute": "PER",
+                            "skill_url": "/skills/leadership#command",
+                            "cost": 4,
+                            "type": "Specialty"
+                        },
+                        {
+                            "skill": "Inspire",
+                            "attribute": "PER",
+                            "skill_url": "/skills/leadership#inspire",
+                            "cost": 3,
+                            "type": "Specialty"
+                        }
+                    ]
+                },
+                {
+                    "skill": "Enseñanza",
+                    "attribute": "WIL",
+                    "skill_url": "/skills/teach",
+                    "cost": 3,
+                    "type": "Broad",
+                    "children": [
+                        {
+                            "skill": "Campo Específico",
+                            "attribute": "WIL",
+                            "skill_url": "/skills/teach#specific-field",
+                            "cost": 2,
+                            "type": "Specialty"
+                        }
+                    ]
+                },
+                {
+                    "skill": "Entretenimiento",
+                    "attribute": "PER",
+                    "skill_url": "/skills/entertainment",
+                    "cost": 4,
+                    "type": "Broad",
+                    "children": [
+                        {
+                            "skill": "Habilidades de Especialidad",
+                            "attribute": "PER",
+                            "skill_url": "/skills/entertainment#act",
+                            "cost": 2,
+                            "type": "Specialty"
+                        },
+                        {
+                            "skill": "Dance",
+                            "attribute": "PER",
+                            "skill_url": "/skills/entertainment#dance",
+                            "cost": 2,
+                            "type": "Specialty"
+                        },
+                        {
+                            "skill": "Musical instrument",
+                            "attribute": "PER",
+                            "skill_url": "/skills/entertainment#musical-instrument",
+                            "cost": 2,
+                            "type": "Specialty"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "skill": "Technical",
+            "type": "Category",
+            "children": [
+                {
+                    "skill": "Ciencias de la Computación",
+                    "attribute": "INT",
+                    "skill_url": "/skills/computer-science",
+                    "cost": 7,
+                    "type": "Broad",
+                    "children": [
+                        {
+                            "skill": "Hacking",
+                            "attribute": "INT",
+                            "skill_url": "/skills/computer-science#hacking",
+                            "cost": 4,
+                            "type": "Specialty"
+                        },
+                        {
+                            "skill": "Hardware",
+                            "attribute": "INT",
+                            "skill_url": "/skills/computer-science#hardware",
+                            "cost": 3,
+                            "type": "Specialty"
+                        },
+                        {
+                            "skill": "Programación",
+                            "attribute": "INT",
+                            "skill_url": "/skills/computer-science#programming",
+                            "cost": 3,
+                            "type": "Specialty"
+                        }
+                    ]
+                },
+                {
+                    "skill": "Ciencias de la vida",
+                    "attribute": "INT",
+                    "skill_url": "/skills/life-science",
+                    "cost": 7,
+                    "type": "Broad",
+                    "children": [
+                        {
+                            "skill": "Biología, Botánica, Zoología",
+                            "attribute": "INT",
+                            "skill_url": "/skills/life-science#biology",
+                            "cost": 3,
+                            "type": "Specialty"
+                        },
+                        {
+                            "skill": "Genética",
+                            "attribute": "INT",
+                            "skill_url": "/skills/life-science#botany",
+                            "cost": 3,
+                            "type": "Specialty"
+                        },
+                        {
+                            "skill": "Xenología",
+                            "attribute": "INT",
+                            "skill_url": "/skills/life-science#genetics",
+                            "cost": 3,
+                            "type": "Specialty"
+                        },
+                        {
+                            "skill": "Psiónica",
+                            "attribute": "INT",
+                            "skill_url": "/skills/life-science#xenology",
+                            "cost": 3,
+                            "type": "Specialty"
+                        },
+                        {
+                            "skill": "Zoology",
+                            "attribute": "INT",
+                            "skill_url": "/skills/life-science#zoology",
+                            "cost": 3,
+                            "type": "Specialty"
+                        }
+                    ]
+                },
+                {
+                    "skill": "Ciencias médicas",
+                    "attribute": "INT",
+                    "skill_url": "/skills/medical-science",
+                    "cost": 7,
+                    "type": "Broad",
+                    "children": [
+                        {
+                            "skill": "Ciencias forenses",
+                            "attribute": "INT",
+                            "skill_url": "/skills/medical-science#forensics",
+                            "cost": 3,
+                            "type": "Specialty"
+                        },
+                        {
+                            "skill": "Conocimiento médico",
+                            "attribute": "INT",
+                            "skill_url": "/skills/medical-science#psychology",
+                            "cost": 5,
+                            "type": "Specialty"
+                        },
+                        {
+                            "skill": "Psicología",
+                            "attribute": "INT",
+                            "skill_url": "/skills/medical-science#surgery",
+                            "cost": 5,
+                            "type": "Specialty"
+                        },
+                        {
+                            "skill": "Cirugía",
+                            "attribute": "INT",
+                            "skill_url": "/skills/medical-science#treatment",
+                            "cost": 4,
+                            "type": "Specialty"
+                        },
+                        {
+                            "skill": "Tratamiento",
+                            "attribute": "INT",
+                            "skill_url": "/skills/medical-science#xenomedicine-spec",
+                            "cost": 3,
+                            "type": "Specialty"
+                        }
+                    ]
+                },
+                {
+                    "skill": "Ciencias físicas",
+                    "attribute": "INT",
+                    "skill_url": "/skills/physical-science",
+                    "cost": 7,
+                    "type": "Broad",
+                    "children": [
+                        {
+                            "skill": "Astronomía",
+                            "attribute": "INT",
+                            "skill_url": "/skills/physical-science#astronomy",
+                            "cost": 3,
+                            "type": "Specialty"
+                        },
+                        {
+                            "skill": "Química",
+                            "attribute": "INT",
+                            "skill_url": "/skills/physical-science#chemistry",
+                            "cost": 3,
+                            "type": "Specialty"
+                        },
+                        {
+                            "skill": "Física",
+                            "attribute": "INT",
+                            "skill_url": "/skills/physical-science#physics",
+                            "cost": 3,
+                            "type": "Specialty"
+                        },
+                        {
+                            "skill": "Planetología",
+                            "attribute": "INT",
+                            "skill_url": "/skills/physical-science#planetology",
+                            "cost": 3,
+                            "type": "Specialty"
+                        }
+                    ]
+                },
+                {
+                    "skill": "Navegación",
+                    "attribute": "INT",
+                    "skill_url": "/skills/navigation",
+                    "cost": 3,
+                    "type": "Broad",
+                    "children": [
+                        {
+                            "skill": "Navegación—superficie",
+                            "attribute": "INT",
+                            "skill_url": "/skills/navigation#astrogation-system",
+                            "cost": 3,
+                            "type": "Specialty"
+                        },
+                        {
+                            "skill": "Pionero",
+                            "attribute": "INT",
+                            "skill_url": "/skills/navigation#navigation-surface",
+                            "cost": 3,
+                            "type": "Specialty"
+                        }
+                    ]
+                },
+                {
+                    "skill": "Seguridad",
+                    "attribute": "INT",
+                    "skill_url": "/skills/security",
+                    "cost": 3,
+                    "type": "Broad",
+                    "children": [
+                        {
+                            "skill": "Protocolos de Protección",
+                            "attribute": "INT",
+                            "skill_url": "/skills/security#protection-protocols",
+                            "cost": 3,
+                            "type": "Specialty"
+                        },
+                        {
+                            "skill": "Dispositivos de Seguridad",
+                            "attribute": "INT",
+                            "skill_url": "/skills/security#security-devices",
+                            "cost": 4,
+                            "type": "Specialty"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "skill": "Técnico",
+            "type": "Category",
+            "children": [
+                {
+                    "skill": "Demoliciones",
+                    "attribute": "INT",
+                    "skill_url": "/skills/demolitions",
+                    "cost": 6,
+                    "type": "Broad",
+                    "children": [
+                        {
+                            "skill": "Desarmar",
+                            "attribute": "INT",
+                            "skill_url": "/skills/demolitions#disarm",
+                            "cost": 4,
+                            "type": "Specialty"
+                        },
+                        {
+                            "skill": "Explosivos Improvisados",
+                            "attribute": "INT",
+                            "skill_url": "/skills/demolitions#scratch-built-explosives",
+                            "cost": 3,
+                            "type": "Specialty"
+                        },
+                        {
+                            "skill": "Colocar Explosivos",
+                            "attribute": "INT",
+                            "skill_url": "/skills/demolitions#set-explosives",
+                            "cost": 3,
+                            "type": "Specialty"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "skill": "Técnica",
+            "type": "Category",
+            "children": [
+                {
+                    "skill": "Conocimiento",
+                    "attribute": "INT",
+                    "skill_url": "/skills/knowledge",
+                    "cost": 4,
+                    "type": "Broad",
+                    "children": [
+                        {
+                            "skill": "Operación de Computadoras",
+                            "attribute": "INT",
+                            "skill_url": "/skills/knowledge#computer-operation",
+                            "cost": 2,
+                            "type": "Specialty"
+                        },
+                        {
+                            "skill": "Deducir",
+                            "attribute": "INT",
+                            "skill_url": "/skills/knowledge#deduce",
+                            "cost": 2,
+                            "type": "Specialty"
+                        },
+                        {
+                            "skill": "Primeros Auxilios",
+                            "attribute": "INT",
+                            "skill_url": "/skills/knowledge#first-aid",
+                            "cost": 3,
+                            "type": "Specialty"
+                        },
+                        {
+                            "skill": "Idioma, Habilidad Específica",
+                            "attribute": "INT",
+                            "skill_url": "/skills/knowledge#language",
+                            "cost": 2,
+                            "type": "Specialty"
+                        },
+                        {
+                            "skill": "Psiónica",
+                            "attribute": "INT",
+                            "skill_url": "/skills/medical-science#medical-knowledge",
+                            "cost": 3,
+                            "type": "Specialty"
+                        },
+                        {
+                            "skill": "Street knowledge",
+                            "attribute": "WIL",
+                            "skill_url": "/skills/street-smart#street-knowledge",
+                            "cost": 3,
+                            "type": "Specialty"
+                        },
+                        {
+                            "skill": "Técnico Knowledge",
+                            "attribute": "INT",
+                            "skill_url": "/skills/technical-science#technical-knowledge",
+                            "cost": 3,
+                            "type": "Specialty"
+                        }
+                    ]
+                },
+                {
+                    "skill": "Operación de Sistemas",
+                    "attribute": "INT",
+                    "skill_url": "/skills/system-operation",
+                    "cost": 3,
+                    "type": "Broad",
+                    "children": [
+                        {
+                            "skill": "Comunicaciones",
+                            "attribute": "INT",
+                            "skill_url": "/skills/system-operation#communications",
+                            "cost": 3,
+                            "type": "Specialty"
+                        },
+                        {
+                            "skill": "Defensas",
+                            "attribute": "INT",
+                            "skill_url": "/skills/system-operation#defenses",
+                            "cost": 3,
+                            "type": "Specialty"
+                        },
+                        {
+                            "skill": "Ingeniería",
+                            "attribute": "INT",
+                            "skill_url": "/skills/system-operation#engineering",
+                            "cost": 3,
+                            "type": "Specialty"
+                        },
+                        {
+                            "skill": "Sensores",
+                            "attribute": "INT",
+                            "skill_url": "/skills/system-operation#sensors",
+                            "cost": 3,
+                            "type": "Specialty"
+                        },
+                        {
+                            "skill": "Armas",
+                            "attribute": "INT",
+                            "skill_url": "/skills/system-operation#weapons",
+                            "cost": 6,
+                            "type": "Specialty"
+                        }
+                    ]
+                },
+                {
+                    "skill": "Ciencia Técnica",
+                    "attribute": "INT",
+                    "skill_url": "/skills/technical-science",
+                    "cost": 7,
+                    "type": "Broad",
+                    "children": [
+                        {
+                            "skill": "Invención",
+                            "attribute": "INT",
+                            "skill_url": "/skills/technical-science#invention",
+                            "cost": 3,
+                            "type": "Specialty"
+                        },
+                        {
+                            "skill": "Remendar",
+                            "attribute": "INT",
+                            "skill_url": "/skills/technical-science#jury-rig",
+                            "cost": 3,
+                            "type": "Specialty"
+                        },
+                        {
+                            "skill": "Reparación",
+                            "attribute": "INT",
+                            "skill_url": "/skills/technical-science#repair",
+                            "cost": 3,
+                            "type": "Specialty"
+                        }
+                    ]
+                },
+                {
+                    "skill": "Operación de Vehículos",
+                    "attribute": "DEX",
+                    "skill_url": "/skills/vehicle-operation",
+                    "cost": 3,
+                    "type": "Broad",
+                    "children": [
+                        {
+                            "skill": "Vehículo Aéreo",
+                            "attribute": "DEX",
+                            "skill_url": "/skills/vehicle-operation#air-vehicle",
+                            "cost": 5,
+                            "type": "Specialty"
+                        },
+                        {
+                            "skill": "Vehículo Terrestre",
+                            "attribute": "DEX",
+                            "skill_url": "/skills/vehicle-operation#land-vehicle",
+                            "cost": 3,
+                            "type": "Specialty"
+                        },
+                        {
+                            "skill": "Vehículo Espacial",
+                            "attribute": "DEX",
+                            "skill_url": "/skills/vehicle-operation#space-vehicle",
+                            "cost": 5,
+                            "type": "Specialty"
+                        },
+                        {
+                            "skill": "Vehículo Acuático",
+                            "attribute": "DEX",
+                            "skill_url": "/skills/vehicle-operation#water-vehicle",
+                            "cost": 3,
+                            "type": "Specialty"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "skill": "Otro",
+            "type": "Category",
+            "children": [
+                {
+                    "skill": "Operaciones Encubiertas",
+                    "attribute": "DEX",
+                    "skill_url": "/skills/covert-ops",
+                    "cost": 8,
+                    "type": "Broad",
+                    "children": [
+                        {
+                            "skill": "Ocultar",
+                            "attribute": "DEX",
+                            "skill_url": "/skills/covert-ops#conceal",
+                            "cost": 3,
+                            "type": "Specialty"
+                        },
+                        {
+                            "skill": "Disfraz",
+                            "attribute": "CHA",
+                            "skill_url": "/skills/covert-ops#disguise",
+                            "cost": 3,
+                            "type": "Specialty"
+                        },
+                        {
+                            "skill": "Abrir Cerraduras",
+                            "attribute": "DEX",
+                            "skill_url": "/skills/covert-ops#pickpocket",
+                            "cost": 3,
+                            "type": "Specialty"
+                        },
+                        {
+                            "skill": "Carterear",
+                            "attribute": "DEX",
+                            "skill_url": "/skills/covert-ops#stealth",
+                            "cost": 3,
+                            "type": "Specialty"
+                        }
+                    ]
+                },
+                {
+                    "skill": "Manejo de Animales",
+                    "attribute": "WIL",
+                    "skill_url": "/skills/animal-handling",
+                    "cost": 3,
+                    "type": "Broad",
+                    "children": [
+                        {
+                            "skill": "Modificadores de Situación de Manejo de Animales",
+                            "attribute": "WIL",
+                            "skill_url": "/skills/animal-handling#animal-riding",
+                            "cost": 1,
+                            "type": "Specialty"
+                        },
+                        {
+                            "skill": "Montar Animales",
+                            "attribute": "WIL",
+                            "skill_url": "/skills/animal-handling#animal-training",
+                            "cost": 3,
+                            "type": "Specialty"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "skill": "Otros",
+            "type": "Category",
+            "children": [
+                {
+                    "skill": "Investigar",
+                    "attribute": "WIL",
+                    "skill_url": "/skills/investigate",
+                    "cost": 3,
+                    "type": "Broad",
+                    "children": [
+                        {
+                            "skill": "Interrogar",
+                            "attribute": "WIL",
+                            "skill_url": "/skills/investigate#interrogate",
+                            "cost": 3,
+                            "type": "Specialty"
+                        },
+                        {
+                            "skill": "Buscar",
+                            "attribute": "WIL",
+                            "skill_url": "/skills/investigate#search",
+                            "cost": 1,
+                            "type": "Specialty"
+                        },
+                        {
+                            "skill": "Rastrear",
+                            "attribute": "WIL",
+                            "skill_url": "/skills/investigate#track",
+                            "cost": 3,
+                            "type": "Specialty"
+                        }
+                    ]
+                },
+                {
+                    "skill": "Acrobacia",
+                    "attribute": "DEX",
+                    "skill_url": "/skills/acrobatics",
+                    "cost": 7,
+                    "type": "Broad",
+                    "children": [
+                        {
+                            "skill": "Esquivar [Dodge]",
+                            "attribute": "DEX",
+                            "skill_url": "/skills/acrobatics#aerobatics",
+                            "cost": 3,
+                            "type": "Specialty"
+                        },
+                        {
+                            "skill": "Caída",
+                            "attribute": "DEX",
+                            "skill_url": "/skills/acrobatics#daredevil",
+                            "cost": 3,
+                            "type": "Specialty"
+                        },
+                        {
+                            "skill": "Temerario [Daredevil]",
+                            "attribute": "DEX",
+                            "skill_url": "/skills/acrobatics#dodge",
+                            "cost": 3,
+                            "type": "Specialty"
+                        },
+                        {
+                            "skill": "Entrenamiento en Gravedad Cero",
+                            "attribute": "DEX",
+                            "skill_url": "/skills/acrobatics#fall",
+                            "cost": 3,
+                            "type": "Specialty"
+                        },
+                        {
+                            "skill": "Acrobacia Aérea [Aerobatics]",
+                            "attribute": "DEX",
+                            "skill_url": "/skills/acrobatics#zero-g-training",
+                            "cost": 3,
+                            "type": "Specialty"
+                        }
+                    ]
+                },
+                {
+                    "skill": "Atletismo",
+                    "attribute": "STR",
+                    "skill_url": "/skills/athletics",
+                    "cost": 3,
+                    "type": "Broad",
+                    "children": [
+                        {
+                            "skill": "Escalar",
+                            "attribute": "STR",
+                            "skill_url": "/skills/athletics#climb",
+                            "cost": 2,
+                            "type": "Specialty"
+                        },
+                        {
+                            "skill": "Saltar",
+                            "attribute": "STR",
+                            "skill_url": "/skills/athletics#jump",
+                            "cost": 1,
+                            "type": "Specialty"
+                        },
+                        {
+                            "skill": "Nadar",
+                            "attribute": "STR",
+                            "skill_url": "/skills/athletics#swim",
+                            "cost": 2,
+                            "type": "Specialty"
+                        },
+                        {
+                            "skill": "Lanzar",
+                            "attribute": "STR",
+                            "skill_url": "/skills/athletics#throw",
+                            "cost": 2,
+                            "type": "Specialty"
+                        }
+                    ]
+                },
+                {
+                    "skill": "Alerta [Awareness]",
+                    "attribute": "WIL",
+                    "skill_url": "/skills/awareness",
+                    "cost": 3,
+                    "type": "Broad",
+                    "children": [
+                        {
+                            "skill": "Intuición",
+                            "attribute": "WIL",
+                            "skill_url": "/skills/awareness#intuition",
+                            "cost": 1,
+                            "type": "Specialty"
+                        },
+                        {
+                            "skill": "Percepción",
+                            "attribute": "WIL",
+                            "skill_url": "/skills/awareness#perception",
+                            "cost": 3,
+                            "type": "Specialty"
+                        },
+                        {
+                            "skill": "Sentido Psiónico",
+                            "attribute": "WIL",
+                            "skill_url": "/skills/awareness#psionic-sense",
+                            "cost": 3,
+                            "type": "Specialty"
+                        },
+                        {
+                            "skill": "Sentido psiónico",
+                            "attribute": "WIL",
+                            "skill_url": "/skills/awareness#psionic-sense",
+                            "cost": 4,
+                            "type": "Specialty"
+                        }
+                    ]
+                },
+                {
+                    "skill": "Biokinesis",
+                    "attribute": "WIL",
+                    "skill_url": "/psionics/biokinesis",
+                    "cost": 6,
+                    "type": "Broad"
+                },
+                {
+                    "skill": "ESP",
+                    "attribute": "WIL",
+                    "skill_url": "/psionics/esp",
+                    "cost": 6,
+                    "type": "Broad",
+                    "children": [
+                        {
+                            "skill": "Astrogation—drivespace",
+                            "attribute": "INT",
+                            "skill_url": "/skills/navigation#astrogation-drivespace",
+                            "cost": 4,
+                            "type": "Specialty"
+                        }
+                    ]
+                },
+                {
+                    "skill": "Supervivencia",
+                    "attribute": "CON",
+                    "skill_url": "/skills/survival",
+                    "cost": 3,
+                    "type": "Broad",
+                    "children": [
+                        {
+                            "skill": "Entrenamiento en Supervivencia",
+                            "attribute": "CON",
+                            "skill_url": "/skills/survival#adaptability",
+                            "cost": 3,
+                            "type": "Specialty"
+                        },
+                        {
+                            "skill": "Adaptabilidad",
+                            "attribute": "CON",
+                            "skill_url": "/skills/survival#survival-training-spec",
+                            "cost": 3,
+                            "type": "Specialty"
+                        },
+                        {
+                            "skill": "Apertura de Sendas",
+                            "attribute": "CON",
+                            "skill_url": "/skills/survival#trailblazing",
+                            "cost": 3,
+                            "type": "Specialty"
+                        }
+                    ]
+                },
+                {
+                    "skill": "Telekinesis",
+                    "attribute": "WIL",
+                    "skill_url": "/psionics/telekinesis",
+                    "cost": 6,
+                    "type": "Broad"
+                },
+                {
+                    "skill": "Telepathy",
+                    "attribute": "WIL",
+                    "skill_url": "/psionics/telepathy",
+                    "cost": 6,
+                    "type": "Broad"
+                },
+                {
+                    "skill": "Teleportation",
+                    "attribute": "WIL",
+                    "skill_url": "/psionics/teleportation",
+                    "cost": 6,
+                    "type": "Broad"
+                }
+            ]
+        },
+        {
+            "skill": "Other",
+            "type": "Category",
+            "children": [
+                {
+                    "skill": "Calle inteligente",
+                    "attribute": "WIL",
+                    "skill_url": "/skills/street-smart",
+                    "cost": 3,
+                    "type": "Broad",
+                    "children": [
+                        {
+                            "skill": "Habilidades de Especialidad",
+                            "attribute": "WIL",
+                            "skill_url": "/skills/street-smart#criminal-elements",
+                            "cost": 5,
+                            "type": "Specialty"
+                        }
+                    ]
+                },
+                {
+                    "skill": "Firmeza",
+                    "attribute": "WIL",
+                    "skill_url": "/skills/resolve",
+                    "cost": 6,
+                    "type": "Broad",
+                    "children": [
+                        {
+                            "skill": "Firmeza Mental",
+                            "attribute": "WIL",
+                            "skill_url": "/skills/resolve#mental-resolve",
+                            "cost": 3,
+                            "type": "Specialty"
+                        },
+                        {
+                            "skill": "Firmeza Física",
+                            "attribute": "WIL",
+                            "skill_url": "/skills/resolve#physical-resolve",
+                            "cost": 3,
+                            "type": "Specialty"
+                        }
+                    ]
+                },
+                {
+                    "skill": "Aguante",
+                    "attribute": "CON",
+                    "skill_url": "/skills/stamina",
+                    "cost": 3,
+                    "type": "Broad",
+                    "children": [
+                        {
+                            "skill": "Habilidades de Especialidad",
+                            "attribute": "CON",
+                            "skill_url": "/skills/stamina#endurance",
+                            "cost": 4,
+                            "type": "Specialty"
+                        },
+                        {
+                            "skill": "Resist pain",
+                            "attribute": "CON",
+                            "skill_url": "/skills/stamina#resist-pain",
+                            "cost": 5,
+                            "type": "Specialty"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

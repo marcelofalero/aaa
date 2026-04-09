@@ -1,0 +1,108 @@
+{{ $file := .Get "file" }}
+{{ $data := index .Site.Data (replace $file ".json" "") }}
+{{ if not $data }}
+  {{ $parts := split $file "." }}
+  {{ $data = .Site.Data }}
+  {{ range $parts }}
+    {{ $data = index $data . }}
+  {{ end }}
+{{ end }}
+
+{{ if $data }}
+<div class="nested-table-container mb4" id="nested-table-{{ .Ordinal }}">
+  <div class="table-controls mb3">
+    <div class="filter-container">
+      <span class="neon-amber mr2">›</span>
+      <input type="text" class="nested-table-search" placeholder="{{ if eq .Page.Lang "es" }}Buscar...{{ else }}Search...{{ end }}" aria-label="Search table">
+    </div>
+  </div>
+
+  <table class="nested-table w-100">
+    <thead>
+      <tr>
+        {{ range $data.fields }}
+        <th>{{ .name }}</th>
+        {{ end }}
+      </tr>
+    </thead>
+    <tbody class="nested-table-body">
+      {{ range $data.data }}
+        {{ partial "nested-table-row.html" (dict "item" . "fields" $data.fields "level" 1 "Page" $.Page) }}
+      {{ end }}
+    </tbody>
+  </table>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const container = document.getElementById('nested-table-{{ .Ordinal }}');
+  const searchInput = container.querySelector('.nested-table-search');
+  const rows = container.querySelectorAll('.nested-table-row');
+
+  searchInput.addEventListener('input', function() {
+    const query = this.value.toLowerCase().trim();
+    
+    rows.forEach(row => {
+      const text = row.textContent.toLowerCase();
+      // Basic search: show if match. 
+      // Note: Truly data-agnostic search might need to handle parents/children visibility
+      if (text.includes(query)) {
+        row.style.display = '';
+      } else {
+        row.style.display = 'none';
+      }
+    });
+
+    // Strategy for nested visibility: 
+    // If a child matches, its parent should be visible too? 
+    // Or just simple filtering. For "check only" and "no collapsing", simple filtering is often expected.
+  });
+});
+</script>
+
+<style>
+.nested-table {
+  border-collapse: collapse;
+  color: var(--color-silver, #ccc);
+  font-family: var(--font-mono, monospace);
+  background: rgba(20, 20, 20, 0.8);
+}
+.nested-table th {
+  text-align: left;
+  padding: 12px;
+  background: #111;
+  color: var(--color-neon-amber, #ffb300);
+  border-bottom: 2px solid #333;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+}
+.nested-table td {
+  padding: 10px 12px;
+  border-bottom: 1px solid #222;
+}
+.nested-table-row:hover {
+  background: rgba(255, 179, 0, 0.05);
+}
+.level-1 { background: rgba(255, 255, 255, 0.02); }
+.level-2 { padding-left: 20px !important; }
+.level-3 { padding-left: 40px !important; }
+
+.indent-2 { padding-left: 20px; }
+.indent-3 { padding-left: 40px; }
+
+.nested-table-search {
+  background: #000;
+  border: 1px solid #333;
+  color: #fff;
+  padding: 8px 12px;
+  width: 100%;
+  max-width: 400px;
+  outline: none;
+}
+.nested-table-search:focus {
+  border-color: var(--color-neon-amber, #ffb300);
+}
+</style>
+{{ else }}
+<p class="red">Error: Data file '{{ $file }}' not found.</p>
+{{ end }}
