@@ -29,10 +29,9 @@ def load_mapping():
 
 def apply_mapping(text, mapping):
     if not text or not isinstance(text, str): return text
-    # Sort terms by length to replace longer phrases first
     sorted_en_terms = sorted(mapping.keys(), key=len, reverse=True)
     for en in sorted_en_terms:
-        # Use word boundaries for alphabetic terms
+        # Use word boundaries if it's a word, else just replace
         pattern = r'\b' + re.escape(en) + r'\b' if re.match(r'^\w', en) else re.escape(en)
         text = re.sub(pattern, mapping[en], text, flags=re.IGNORECASE)
     return text
@@ -62,7 +61,7 @@ def rebuild_all():
             skills_data = yaml.load(f, Loader=yaml.FullLoader)
         process_skills(skills_data, mapping)
     
-    # 2. Handle Equipment (Gear sources use Name logic)
+    # 2. Handle Equipment
     gear_sources = ['armor', 'computers', 'cybernetics', 'survival_gear', 'weapons']
     for base_name in gear_sources:
         yaml_path = os.path.join(DATA_SOURCES_DIR, f'{base_name}.yaml')
@@ -82,18 +81,14 @@ def rebuild_all():
 def apply_rules_to_node(node, mapping, lang='en'):
     if isinstance(node, dict):
         new_node = {}
-        # Handle localized objects {en: "...", es: "..."}
         if 'en' in node and 'es' in node and len(node) == 2:
              val = node.get(lang, node.get('en', ''))
              return apply_mapping(val, mapping) if lang == 'es' else val
-        # Handle fields with _es suffix
         if lang == 'es' and 'name_es' in node:
             new_node['name'] = apply_mapping(node['name_es'], mapping)
-        
         for k, v in node.items():
             if k in ['name_es', 'skill_es', 'description_es']: continue
             if k == 'name' and lang == 'es' and 'name_es' in node: continue
-            
             new_val = apply_rules_to_node(v, mapping, lang)
             if isinstance(new_val, str) and lang == 'es':
                 new_val = apply_mapping(new_val, mapping)
@@ -139,35 +134,28 @@ def process_skills(skills_list, mapping):
             name = b['skill'] if lang == 'en' else b.get('skill_es', apply_mapping(b['skill'], mapping))
             cat = b.get('category', 'Other') if lang == 'en' else b.get('category_es', apply_mapping(b.get('category', 'Other'), mapping))
             attr = b['attribute'] if lang == 'en' else apply_mapping(b['attribute'], mapping)
-            # Metadata extraction
             untrained = not is_untrained_forbidden(b.get('description', ''))
-            cost = b.get('cost', 0)
-            tier = b.get('tier', 1)
-            pr = b.get('pr', '')
-            if lang == 'es': pr = apply_mapping(pr, mapping)
             
             broad_entry = {
                 "skill": name, "attribute": attr, "skill_url": b['skill_url'],
-                "cost": cost, "type": "Broad", "tier": tier, "pr": pr, "untrained": untrained
+                "cost": b.get('cost', 0), "type": "Broad", "tier": b.get('tier', 1),
+                "pr": b.get('pr', ''), "untrained": untrained
             }
             specs = []
             for s in b.get('specialties', []):
                 s_name = s['skill'] if lang == 'en' else s.get('skill_es', apply_mapping(s['skill'], mapping))
                 s_attr = s['attribute'] if lang == 'en' else apply_mapping(s['attribute'], mapping)
                 s_untrained = not is_untrained_forbidden(s.get('description', ''))
-                s_cost = s.get('cost', 0)
-                # Heuristic for tier if missing
-                s_tier = s.get('tier', 1 + (1 if s_cost >= 3 else 0))
-                s_pr = s.get('pr', '')
-                if lang == 'es': s_pr = apply_mapping(s_pr, mapping)
-                
+                pr_val = s.get('pr', '')
+                if lang == 'es': pr_val = apply_mapping(pr_val, mapping)
                 specs.append({
                     "skill": s_name, "attribute": s_attr, "skill_url": s['skill_url'],
-                    "cost": s_cost, "type": "Specialty", "tier": s_tier, "pr": s_pr, "untrained": s_untrained
+                    "cost": s.get('cost', 0), "type": "Specialty", "tier": s.get('tier', 1 + (1 if s.get('cost', 0) >= 3 else 0)),
+                    "pr": pr_val, "untrained": s_untrained
                 })
             if specs: broad_entry["specialties"] = specs
             groups_dict[cat].append(broad_entry)
-            
+        
         columns = [
             {"key": "skill", "name": "Skill" if lang == "en" else "Habilidad", "link": True},
             {"key": "attribute", "name": "Attr." if lang == "en" else "Atrib."},
