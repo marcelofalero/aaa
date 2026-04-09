@@ -1,7 +1,7 @@
 +++
 title = "Entretenimiento"
 attribute = "PER"
-category = "Social"
+category = "Otros"
 type = "skill"
 layout = "list"
 +++

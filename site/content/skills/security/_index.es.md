@@ -1,7 +1,7 @@
 +++
 title = "Seguridad"
 attribute = "INT"
-category = "Technical"
+category = "Otros"
 type = "skill"
 layout = "list"
 +++

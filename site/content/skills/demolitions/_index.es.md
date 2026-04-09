@@ -1,7 +1,7 @@
 +++
 title = "Demoliciones"
 attribute = "INT"
-category = "Técnico"
+category = "Técnica"
 type = "skill"
 layout = "list"
 +++

@@ -1,7 +1,7 @@
 +++
 title = "Operación de armadura"
 attribute = "STR"
-category = "Combate"
+category = "Otros"
 type = "skill"
 layout = "list"
 +++

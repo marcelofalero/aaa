@@ -1,7 +1,7 @@
 +++
 title = "Administración"
 attribute = "INT"
-category = "Social"
+category = "Técnica"
 type = "skill"
 layout = "list"
 +++

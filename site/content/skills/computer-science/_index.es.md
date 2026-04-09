@@ -1,7 +1,7 @@
 +++
 title = "Ciencias de la Computación"
 attribute = "INT"
-category = "Technical"
+category = "Técnica"
 type = "skill"
 layout = "list"
 +++

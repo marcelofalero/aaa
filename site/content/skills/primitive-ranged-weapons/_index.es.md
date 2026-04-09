@@ -1,7 +1,7 @@
 +++
 title = "Armas a distancia primitivas"
 attribute = "DEX"
-category = "Combat"
+category = "Combate"
 type = "skill"
 layout = "list"
 +++

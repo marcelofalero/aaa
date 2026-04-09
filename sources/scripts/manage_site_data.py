@@ -14,6 +14,13 @@ SITE_DATA_DIR = 'site/data'
 SKILLS_CONTENT_DIR = 'site/content/skills'
 MAPPING_MD = 'site/content/notes/terminology-mapping.md'
 
+CATEGORY_MAP = {
+    'Combat': 'Combate',
+    'Technical': 'Técnica',
+    'Social': 'Social',
+    'Other': 'Otros'
+}
+
 def load_mapping():
     mapping = {}
     if not os.path.exists(MAPPING_MD): return mapping
@@ -31,6 +38,7 @@ def apply_mapping(text, mapping):
     if not text or not isinstance(text, str): return text
     sorted_en_terms = sorted(mapping.keys(), key=len, reverse=True)
     for en in sorted_en_terms:
+        # Avoid double mapping or mapping inside other words
         pattern = r'\b' + re.escape(en) + r'\b' if re.match(r'^\w', en) else re.escape(en)
         text = re.sub(pattern, mapping[en], text, flags=re.IGNORECASE)
     return text
@@ -92,7 +100,10 @@ def process_skills(skills_list, mapping):
         for lang in ['en', 'es']:
             title = broad['skill'] if lang == 'en' else broad.get('skill_es', apply_mapping(broad['skill'], mapping))
             attr = broad['attribute'] if lang == 'en' else apply_mapping(broad['attribute'], mapping)
-            cat = broad.get('category', 'Other') if lang == 'en' else broad.get('category_es', apply_mapping(broad.get('category', 'Other'), mapping))
+            # Use normalized categories for frontmatter too
+            cat_en = broad.get('category', 'Other')
+            cat = cat_en if lang == 'en' else CATEGORY_MAP.get(cat_en, apply_mapping(cat_en, mapping))
+            
             desc = broad.get('description', '') if lang == 'en' else apply_mapping(broad.get('description_es', broad.get('description', '')), mapping)
             suffix = '.es.md' if lang == 'es' else '.md'
             with open(os.path.join(out_dir, '_index' + suffix), 'w', encoding='utf-8') as f:
@@ -103,12 +114,13 @@ def process_skills(skills_list, mapping):
                     s_desc = spec.get('description', '') if lang == 'en' else apply_mapping(spec.get('description_es', spec.get('description', '')), mapping)
                     f.write(f'## {s_title}\n### ({s_attr})\n\n{s_desc}\n\n---\n\n')
 
-    # FLAT structure for legacy interactive table
+    # FLAT structure for legacy interactive table (deprecated but kept for compatibility)
     def build_flat_json(lang):
         groups_dict = defaultdict(list)
         for b in skills_list:
             b_name = b['skill'] if lang == 'en' else b.get('skill_es', apply_mapping(b['skill'], mapping))
-            cat = b.get('category', 'Other') if lang == 'en' else b.get('category_es', apply_mapping(b.get('category', 'Other'), mapping))
+            cat_en = b.get('category', 'Other')
+            cat = cat_en if lang == 'en' else CATEGORY_MAP.get(cat_en, apply_mapping(cat_en, mapping))
             attr = b['attribute'] if lang == 'en' else apply_mapping(b['attribute'], mapping)
             groups_dict[cat].append({"skill": b_name, "attribute": attr, "skill_url": b['skill_url'], "cost": b.get('cost', 0), "type": "Broad"})
             for s in b.get('specialties', []):
@@ -128,7 +140,8 @@ def process_skills(skills_list, mapping):
         # Group by category (Tier 1)
         categories = defaultdict(list)
         for b in skills_list:
-            cat = b.get('category', 'Other') if lang == 'en' else b.get('category_es', apply_mapping(b.get('category', 'Other'), mapping))
+            cat_en = b.get('category', 'Other')
+            cat = cat_en if lang == 'en' else CATEGORY_MAP.get(cat_en, apply_mapping(cat_en, mapping))
             
             # Tier 2 (Broad)
             broad_entry = {
@@ -138,7 +151,6 @@ def process_skills(skills_list, mapping):
                 "cost": b.get('cost', 0),
                 "type": "Broad"
             }
-            
             # Tier 3 (Specialties)
             specs = []
             for s in b.get('specialties', []):
@@ -149,15 +161,16 @@ def process_skills(skills_list, mapping):
                     "cost": s.get('cost', 0),
                     "type": "Specialty"
                 })
-            if specs: broad_entry["children"] = specs # Using generic 'children' key
+            if specs: broad_entry["children"] = specs
             categories[cat].append(broad_entry)
             
         data = []
-        for cat, items in categories.items():
+        # Sort categories to ensure consistent output
+        for cat in sorted(categories.keys()):
             data.append({
-                "skill": cat, # Category name acts as the 'skill' name in the top level
+                "skill": cat,
                 "type": "Category",
-                "children": items
+                "children": categories[cat]
             })
             
         return {"fields": fields, "data": data}
@@ -167,7 +180,6 @@ def process_skills(skills_list, mapping):
     with open(os.path.join(SITE_DATA_DIR, 'skills.es.json'), 'w', encoding='utf-8') as f:
         json.dump(build_flat_json('es'), f, indent=4, ensure_ascii=False)
         
-    # Generate skills-table.json (EN and ES versions for now, or just one if agnostic)
     with open(os.path.join(SITE_DATA_DIR, 'skills-table.json'), 'w', encoding='utf-8') as f:
         json.dump(build_nested_skills_table('en'), f, indent=4, ensure_ascii=False)
     with open(os.path.join(SITE_DATA_DIR, 'skills-table.es.json'), 'w', encoding='utf-8') as f:
@@ -175,4 +187,4 @@ def process_skills(skills_list, mapping):
 
 if __name__ == '__main__':
     rebuild_all()
-    print('Final Data Sync complete.')
+    print('Category Normalization complete.')

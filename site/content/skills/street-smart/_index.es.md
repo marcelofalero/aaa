@@ -1,7 +1,7 @@
 +++
 title = "Calle inteligente"
 attribute = "WIL"
-category = "Other"
+category = "Social"
 type = "skill"
 layout = "list"
 +++

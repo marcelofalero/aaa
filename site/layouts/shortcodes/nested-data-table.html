@@ -9,11 +9,11 @@
 {{ end }}
 
 {{ if $data }}
-<div class="nested-table-container mb4" id="nested-table-{{ .Ordinal }}">
+<div class="table-wrapper mb4" id="nested-table-{{ .Ordinal }}">
   <div class="table-controls mb3">
     <div class="filter-container">
       <span class="neon-amber mr2">›</span>
-      <input type="text" class="nested-table-search" placeholder="{{ if eq .Page.Lang "es" }}Buscar...{{ else }}Search...{{ end }}" aria-label="Search table">
+      <input type="text" class="table-filter-input nested-table-search" placeholder="{{ if eq .Page.Lang "es" }}Buscar...{{ else }}Search...{{ end }}" aria-label="Search table">
     </div>
   </div>
 
@@ -42,20 +42,29 @@ document.addEventListener('DOMContentLoaded', function() {
   searchInput.addEventListener('input', function() {
     const query = this.value.toLowerCase().trim();
     
+    rows.forEach(row => { row.style.display = 'none'; });
+
     rows.forEach(row => {
       const text = row.textContent.toLowerCase();
-      // Basic search: show if match. 
-      // Note: Truly data-agnostic search might need to handle parents/children visibility
-      if (text.includes(query)) {
-        row.style.display = '';
-      } else {
-        row.style.display = 'none';
+      if (query === '' || text.includes(query)) {
+        if (query !== '') {
+          row.style.display = '';
+          // Show ancestors
+          let level = parseInt(row.getAttribute('data-level'));
+          let current = row.previousElementSibling;
+          while (current && level > 1) {
+            let currentLevel = parseInt(current.getAttribute('data-level'));
+            if (currentLevel < level) {
+              current.style.display = '';
+              level = currentLevel;
+            }
+            current = current.previousElementSibling;
+          }
+        } else {
+          row.style.display = '';
+        }
       }
     });
-
-    // Strategy for nested visibility: 
-    // If a child matches, its parent should be visible too? 
-    // Or just simple filtering. For "check only" and "no collapsing", simple filtering is often expected.
   });
 });
 </script>
@@ -63,44 +72,76 @@ document.addEventListener('DOMContentLoaded', function() {
 <style>
 .nested-table {
   border-collapse: collapse;
-  color: var(--color-silver, #ccc);
-  font-family: var(--font-mono, monospace);
-  background: rgba(20, 20, 20, 0.8);
-}
-.nested-table th {
-  text-align: left;
-  padding: 12px;
-  background: #111;
-  color: var(--color-neon-amber, #ffb300);
-  border-bottom: 2px solid #333;
-  text-transform: uppercase;
-  font-size: 0.85rem;
-}
-.nested-table td {
-  padding: 10px 12px;
-  border-bottom: 1px solid #222;
-}
-.nested-table-row:hover {
-  background: rgba(255, 179, 0, 0.05);
-}
-.level-1 { background: rgba(255, 255, 255, 0.02); }
-.level-2 { padding-left: 20px !important; }
-.level-3 { padding-left: 40px !important; }
-
-.indent-2 { padding-left: 20px; }
-.indent-3 { padding-left: 40px; }
-
-.nested-table-search {
-  background: #000;
-  border: 1px solid #333;
-  color: #fff;
-  padding: 8px 12px;
   width: 100%;
-  max-width: 400px;
-  outline: none;
+  font-family: 'Michroma', sans-serif;
+  font-size: 0.9rem;
+  color: var(--table-text-light);
 }
-.nested-table-search:focus {
-  border-color: var(--color-neon-amber, #ffb300);
+
+.nested-table th {
+  color: var(--accent-cyan);
+  text-align: center;
+  padding: 0.75rem 1rem;
+  border-bottom: 2px solid var(--accent-cyan);
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+}
+
+.nested-table th:first-child {
+  text-align: left;
+}
+
+.nested-table td {
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid rgba(75, 181, 193, 0.3);
+  text-align: center;
+}
+
+.nested-table td:first-child {
+  text-align: left;
+}
+
+/* Tier 1 - Categories */
+.nested-table-row.level-1 td {
+  background-color: transparent !important;
+  color: var(--neon-green, #A6C12E) !important;
+  font-weight: 400;
+  text-align: center;
+  border-bottom: 2px solid var(--neon-green, #A6C12E);
+  padding: 1.5rem 1rem 0.5rem 1rem !important;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+}
+
+.nested-table-row.level-1 td:first-child {
+  text-align: left;
+}
+
+/* Indentation Logic */
+.nested-table td.indent-1 { padding-left: 12px !important; }
+.nested-table td.indent-2 { padding-left: 30px !important; }
+.nested-table td.indent-3 { padding-left: 50px !important; }
+
+.nested-table td.indent-2::before,
+.nested-table td.indent-3::before {
+  content: '└ ';
+  opacity: 0.5;
+  margin-right: 8px;
+}
+
+/* Hover effect for data rows (Tier 2 and 3) */
+.nested-table-row:not(.level-1):hover td {
+  background-color: rgba(75, 181, 193, 0.15);
+}
+
+/* Custom Table Wrapper Override for consistency */
+#nested-table-{{ .Ordinal }}.table-wrapper {
+    background: radial-gradient(circle, var(--center-glow) 0%, var(--bg-dark) 100%);
+    border: 2px solid var(--accent-cyan);
+    border-radius: 15px;
+    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.5);
 }
 </style>
 {{ else }}

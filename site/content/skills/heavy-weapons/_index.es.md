@@ -1,7 +1,7 @@
 +++
 title = "Armas pesadas"
 attribute = "STR"
-category = "Combat"
+category = "Combate"
 type = "skill"
 layout = "list"
 +++
