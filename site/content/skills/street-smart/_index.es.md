@@ -1,5 +1,5 @@
 +++
-title = "Calle inteligente"
+title = "Callejeo"
 attribute = "VOL"
 category = "Social"
 type = "skill"

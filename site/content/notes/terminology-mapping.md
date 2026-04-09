@@ -85,6 +85,7 @@ This page provides a mapping of common game terms from English to Spanish to ens
 | Bluff | Mentir |
 | Inspire | Inspirar |
 | Leadership | Liderazgo |
+| Street Smart | Callejeo |
 | ... | ... |
 
 
