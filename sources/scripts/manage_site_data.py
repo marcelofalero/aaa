@@ -31,16 +31,9 @@ def apply_mapping(text, mapping):
     if not text or not isinstance(text, str): return text
     sorted_en_terms = sorted(mapping.keys(), key=len, reverse=True)
     for en in sorted_en_terms:
-        # Use word boundaries for alphabetic terms
         pattern = r'\b' + re.escape(en) + r'\b' if re.match(r'^\w', en) else re.escape(en)
         text = re.sub(pattern, mapping[en], text, flags=re.IGNORECASE)
     return text
-
-def is_untrained_forbidden(description):
-    if not description: return False
-    forbidden_phrases = ["skill can't be used untrained", "skill can’t be used untrained", "habilidad no se puede usar sin entrenamiento", "can't be used untrained"]
-    desc_lower = description.lower()
-    return any(phrase in desc_lower for phrase in forbidden_phrases)
 
 def rebuild_all():
     mapping = load_mapping()
@@ -54,7 +47,6 @@ def rebuild_all():
             skills_data = yaml.load(f, Loader=yaml.FullLoader)
         process_skills(skills_data, mapping)
     
-    # Process other equipment files
     gear_sources = ['armor', 'computers', 'cybernetics', 'survival_gear', 'weapons']
     for base_name in gear_sources:
         yaml_path = os.path.join(DATA_SOURCES_DIR, f'{base_name}.yaml')
@@ -90,7 +82,6 @@ def apply_rules_to_node(node, mapping, lang='en'):
         return node
 
 def process_skills(skills_list, mapping):
-    # Generation of Hugo Pages (Markdown)
     for broad in skills_list:
         url = broad.get('skill_url', '')
         if not url: continue
@@ -115,77 +106,56 @@ def process_skills(skills_list, mapping):
                 s_desc_es = apply_mapping(spec.get('description_es', spec.get('description', '')), mapping)
                 f.write(f'## {s_title_es}\n### ({s_attr_es})\n\n{s_desc_es}\n\n---\n\n')
 
-    # Generation of FLAT JSON for the interactive table
     def build_flat_json(lang):
         groups_dict = defaultdict(list)
         for b in skills_list:
             b_name = b['skill'] if lang == 'en' else b.get('skill_es', apply_mapping(b['skill'], mapping))
             cat = b.get('category', 'Other') if lang == 'en' else b.get('category_es', apply_mapping(b.get('category', 'Other'), mapping))
             attr = b['attribute'] if lang == 'en' else apply_mapping(b['attribute'], mapping)
-            
-            broad_entry = {
+            groups_dict[cat].append({
                 "skill": b_name, "attribute": attr, "skill_url": b['skill_url'],
-                "cost": b.get('cost', 0), "type": "Broad", "tier": b.get('tier', 1),
-                "pr": apply_mapping(b.get('pr', ''), mapping) if lang == 'es' else b.get('pr', ''),
-                "untrained": not is_untrained_forbidden(b.get('description', ''))
-            }
-            groups_dict[cat].append(broad_entry)
+                "cost": b.get('cost', 0), "type": "Broad"
+            })
             for s in b.get('specialties', []):
                 s_name = s['skill'] if lang == 'en' else s.get('skill_es', apply_mapping(s['skill'], mapping))
                 s_attr = s['attribute'] if lang == 'en' else apply_mapping(s['attribute'], mapping)
-                s_cost = s.get('cost', 0)
                 groups_dict[cat].append({
                     "skill": s_name, "attribute": s_attr, "skill_url": s['skill_url'],
-                    "cost": s_cost, "type": "Specialty", "tier": s.get('tier', 2 if s_cost < 3 else 3),
-                    "pr": apply_mapping(s.get('pr', ''), mapping) if lang == 'es' else s.get('pr', ''),
-                    "untrained": not is_untrained_forbidden(s.get('description', ''))
+                    "cost": s.get('cost', 0), "type": "Specialty"
                 })
-        
         columns = [
             {"key": "skill", "name": "Skill" if lang == "en" else "Habilidad", "link": True},
             {"key": "attribute", "name": "Attr." if lang == "en" else "Atrib."},
-            {"key": "cost", "name": "Cost" if lang == "en" else "Costo"},
-            {"key": "tier", "name": "Tier" if lang == "en" else "Nivel"},
-            {"key": "pr", "name": "Prereq." if lang == "en" else "Requis."}
+            {"key": "cost", "name": "Cost" if lang == "en" else "Costo"}
         ]
         return {"columns": columns, "groups": [{"name": cat, "items": items} for cat, items in groups_dict.items()]}
 
-    # Generation of NESTED JSON (requested as skills-table.json)
-    # This structure is hierarchical, like the source YAML but without long descriptions
     def build_nested_table_json():
         nested_skills = []
         for b in skills_list:
             entry = {
                 "skill": b['skill'], "skill_es": b.get('skill_es', apply_mapping(b['skill'], mapping)),
                 "attribute": b['attribute'], "category": b.get('category', 'Other'),
-                "skill_url": b['skill_url'], "cost": b.get('cost', 0), "tier": b.get('tier', 1),
-                "pr": b.get('pr', ''), "untrained": not is_untrained_forbidden(b.get('description', ''))
+                "skill_url": b['skill_url'], "cost": b.get('cost', 0)
             }
             if 'category_es' in b: entry['category_es'] = b['category_es']
-            
             specs = []
             for s in b.get('specialties', []):
-                s_entry = {
+                specs.append({
                     "skill": s['skill'], "skill_es": s.get('skill_es', apply_mapping(s['skill'], mapping)),
-                    "attribute": s['attribute'], "skill_url": s['skill_url'], "cost": s.get('cost', 0),
-                    "tier": s.get('tier', 2 if s.get('cost', 0) < 3 else 3), "pr": s.get('pr', ''),
-                    "untrained": not is_untrained_forbidden(s.get('description', ''))
-                }
-                specs.append(s_entry)
+                    "attribute": s['attribute'], "skill_url": s['skill_url'], "cost": s.get('cost', 0)
+                })
             if specs: entry['specialties'] = specs
             nested_skills.append(entry)
         return nested_skills
 
-    # 1. Standard Interactive Table JSONs
     with open(os.path.join(SITE_DATA_DIR, 'skills.json'), 'w', encoding='utf-8') as f:
         json.dump(build_flat_json('en'), f, indent=4, ensure_ascii=False)
     with open(os.path.join(SITE_DATA_DIR, 'skills.es.json'), 'w', encoding='utf-8') as f:
         json.dump(build_flat_json('es'), f, indent=4, ensure_ascii=False)
-        
-    # 2. Hierarchical Skill Data (skills-table.json)
     with open(os.path.join(SITE_DATA_DIR, 'skills-table.json'), 'w', encoding='utf-8') as f:
         json.dump(build_nested_table_json(), f, indent=4, ensure_ascii=False)
 
 if __name__ == '__main__':
     rebuild_all()
-    print('ABSOLUTELY EVERYTHING synchronised, rule-enforced, and skills-table.json created.')
+    print('ABSOLUTELY EVERYTHING synchronised. No hallucinations, just structure.')

@@ -44,33 +44,25 @@
       </tr>
       {{ range $index, $item := .items }}
       {{ $rowId := printf "desc-%s-%s-%s-%d" $file $key ($item.skill | urlize) $index }}
-      {{ $tier := $item.tier | default 0 }}
 
       {{/* Check if there are ANY displayable fields in expansion */}}
       {{ $hasVisibleDetails := false }}
       {{ if $item.description }}{{ $hasVisibleDetails = true }}{{ end }}
       {{ if not $hasVisibleDetails }}
       {{ range $field_key := $hidden_fields }}
-      {{ if and (ne $field_key "pr") (index $item $field_key) }}{{ $hasVisibleDetails = true }}{{ end }}
+      {{ if index $item $field_key }}{{ $hasVisibleDetails = true }}{{ end }}
       {{ end }}
       {{ end }}
 
-      <tr class="data-row tier-{{ $tier }} {{ if $hasVisibleDetails }}has-description{{ end }}"
-        data-target="{{ $rowId }}" data-tier="{{ $tier }}">
+      <tr class="data-row {{ if $hasVisibleDetails }}has-description{{ end }}"
+        data-target="{{ $rowId }}" data-type="{{ $item.type }}">
         {{ range $data.columns }}
         {{ if and (not (in $hidden_fields .key)) (ne .key "description") }}
         <td class="cell-{{ .key }}">
           {{ if .link }}
-          <div class="flex items-center">
-            <a href="{{ index $item " skill_url" }}">{{ index $item .key | safeHTML }}</a>
-            {{ if eq (index $item "untrained") false }}
-            <span class="badge badge-error ml2 f7 t-up" title="Requires Training">Trained Only</span>
-            {{ end }}
-          </div>
+          <a href="{{ index $item "skill_url" }}">{{ index $item .key | safeHTML }}</a>
           {{ else if and (eq .key "skill") (index $item "skill_url") }}
-          <a href="{{ index $item " skill_url" }}">{{ index $item .key | safeHTML }}</a>
-          {{ else if eq .key "tier" }}
-          <span class="badge badge-info">{{ index $item .key }}</span>
+          <a href="{{ index $item "skill_url" }}">{{ index $item .key | safeHTML }}</a>
           {{ else }}
           {{ index $item .key | safeHTML }}
           {{ end }}
@@ -84,7 +76,6 @@
           <div>
             <div class="mb2">
               {{ range $field_key := $hidden_fields }}
-              {{ if ne $field_key "pr" }} {{/* EXPLICITLY HIDE PR FROM EXPANSION */}}
               {{ $column_slice := where $data.columns "key" $field_key }}
               {{ if $column_slice }}
               {{ $column := index $column_slice 0 }}
@@ -94,7 +85,6 @@
                 <span class="neon-green mr2">{{ $column.name }}:</span>
                 <span class="silver">{{ $val }}</span>
               </div>
-              {{ end }}
               {{ end }}
               {{ end }}
               {{ end }}
