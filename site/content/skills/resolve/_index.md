@@ -2,6 +2,8 @@
 title = "Resolve"
 attribute = "WIL"
 category = "Other"
+type = "skill"
+layout = "list"
 +++
 
 This broad skill represents a character's inner strength of will. It is the capacity to endure physical hardship, resist mental strain, and stand firm in one's convictions regardless of pressure or temptation. Training in Resolve allows a character to stabilize their mind during high-stress situations and recover more efficiently from the initial shock of bodily trauma.
@@ -12,7 +14,8 @@ It is used to defend against mental stress or attacks, to stand up to physical d
 
 # Specialty Skills
 
-## Mental resolve (WIL)
+## Mental resolve
+### (WIL)
 
 This specialty skill is used to determine a character's ability to cope with emotional or mental stress of all kinds. The higher the rank, the more resistant he is to emotional trauma, fear, panic, madness, insanity, mind control techniques, and mental powers.
 
@@ -33,7 +36,8 @@ When a character is confronted with debilitating effects, he can make a Mental R
 
 ---
 
-## Physical resolve (WIL)
+## Physical resolve
+### (WIL)
 
 Physical Resolve is used to determine a character's ability to cope with physical trauma of all kinds. It represents a character's determination to resist physical torture, to press on though tired or in great pain, and to bounce back from physical damage.
 

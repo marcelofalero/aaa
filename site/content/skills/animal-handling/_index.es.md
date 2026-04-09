@@ -2,6 +2,8 @@
 title = "Manejo de Animales"
 attribute = "WIL"
 category = "Other"
+type = "skill"
+layout = "list"
 +++
 
 Esta habilidad general proporciona a un héroe la habilidad básica para entrenar animales para realizar una variedad de tareas, incluyendo trabajo, aceptar jinetes, rastrear y atacar. También se usa para determinar si un héroe puede hacer que un animal entrenado realice una tarea, para montar un animal, o para calmar, capturar o manejar de otra manera un animal salvaje o un animal doméstico desconocido. Tenga en cuenta que los métodos de entrenamiento y los comandos utilizados con diferentes especies de animales pueden variar ampliamente.
@@ -20,7 +22,8 @@ Alguien con la habilidad de Manejo de Animales puede lograr que un animal salvaj
 
 La habilidad general también permite a un personaje montar cualquier animal que pueda usarse para el transporte terrestre básico, lo que generalmente significa caballos, mulas y otros grandes cuadrúpedos. Cuando se monta un animal, la criatura se mueve en cada fase. Durante una fase en la que el héroe tiene una acción, puede usar esta habilidad para intentar maniobrar al animal. Consulte la página 198 del Capítulo 12: Vehículos para obtener información sobre los tipos de maniobras (Rutinaria, Moderada y Extrema) que un jinete puede intentar. (Aunque normalmente no se piensa en un animal como un vehículo, las mismas reglas generales se aplican a los jinetes de animales y a los conductores de vehículos).
 
-## Modificadores de Situación de Manejo de Animales (WIL)
+## Modificadores de Situación de Manejo de Animales
+### (WIL)
 
 ### Complejidad del Modificador
 
@@ -51,7 +54,8 @@ La habilidad general también permite a un personaje montar cualquier animal que
 
 ---
 
-## Montar Animales (WIL)
+## Montar Animales
+### (WIL)
 
 Esta especialización permite a un héroe mejorar este aspecto de la habilidad general de Manejo de Animales. Un personaje con esta habilidad puede intentar correr por terrenos peligrosos, hacer saltos o realizar otras acrobacias, y participar en combate montado.
 

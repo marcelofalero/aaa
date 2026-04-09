@@ -2,6 +2,8 @@
 title = "Knowledge"
 attribute = "INT"
 category = "Technical"
+type = "skill"
+layout = "list"
 +++
 
 This broad skill represents a character's ability to know at least a little bit about any particular subject. With just the broad skill, a character isn't considered an expert, but it represents the ability to logically recall a class he took, an article he read, or a documentary he saw on the topic in question.
@@ -44,7 +46,8 @@ This specialty skill gives a character a certain amount of fluency in a specific
 
 This skill gives a character a working knowledge of psionic abilities, perhaps even beyond what the character's culture understands as a whole. The degree of success achieved on a skill check relates to the quality or quantity of information that is available to or understood by the character.
 
-## Computer Operation (INT)
+## Computer Operation
+### (INT)
 
 *This skill can't be used untrained.*
 
@@ -54,7 +57,8 @@ This specialty skill allows a character to improve his ability to make computers
 
 ---
 
-## Deduce (INT)
+## Deduce
+### (INT)
 
 With this specialty skill, a character can hone his abilities to use reason and logic to reach a conclusion. Deduce is used by detectives and investigators to piece together clues, or by scientists and engineers to discover the answer to a skill-related problem.
 
@@ -64,7 +68,8 @@ With this specialty skill, a character can hone his abilities to use reason and 
 
 ---
 
-## First Aid (INT)
+## First Aid
+### (INT)
 
 *This skill can't be used untrained.*
 
@@ -92,25 +97,29 @@ A character with any amount of mortal damage is considered to be dying. A charac
 
 ---
 
-## Language (INT)
+## Language
+### (INT)
 
 
 
 ---
 
-## Medical Knowledge (INT)
+## Medical Knowledge
+### (INT)
 
 
 
 ---
 
-## Street knowledge (WIL)
+## Street knowledge
+### (WIL)
 
 
 
 ---
 
-## Technical Knowledge (INT)
+## Technical Knowledge
+### (INT)
 
 
 

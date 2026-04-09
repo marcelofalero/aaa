@@ -2,13 +2,16 @@
 title = "Ley"
 attribute = "INT"
 category = "Social"
+type = "skill"
+layout = "list"
 +++
 
 Esta habilidad general proporciona a un héroe conocimientos generales sobre las leyes y sistemas legales de su sociedad nativa. También puede tratarse como una habilidad de encuentro para cambiar la actitud de un individuo.
 
 En una acción legal, el héroe y el oponente realizan tiradas de habilidad alternas hasta que alguien obtiene un Fallo Crítico o un resultado Asombroso.
 
-## Habilidades de Especialidad (INT)
+## Habilidades de Especialidad
+### (INT)
 
 ### Procedimientos judiciales
 Abogados, jueces y otros utilizan esta habilidad para interactuar en un entorno judicial. Esta especialidad se usa para defender un caso o punto de vista en un procedimiento oficial.
@@ -30,7 +33,8 @@ Los abogados, jueces y otros utilizan esta habilidad para interactuar en salas d
 
 ---
 
-## Law enforcement procedures (INT)
+## Law enforcement procedures
+### (INT)
 
 Police officers, detectives, bounty hunters, and others use this skill to follow (or bend) legal law enforcement procedures. Topics covered include:
 - Knowing laws concerning surveillance, search, and seizure.
@@ -43,7 +47,8 @@ This specialty is also used to determine how "Bueno" an arrest is (providing amm
 
 ---
 
-## Law, specific skill (INT)
+## Law, specific skill
+### (INT)
 
 *This skill can't be used untrained.*
 

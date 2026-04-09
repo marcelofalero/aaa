@@ -2,6 +2,8 @@
 title = "Culture"
 attribute = "PER"
 category = "Social"
+type = "skill"
+layout = "list"
 +++
 
 This broad skill represents a character's ability to understand and interact with cultures that are different from his own. Areas of knowledge covered by the skill include the customs, philosophy, and way of life of a particular culture, as well as a basic familiarity with major historical figures, events, and trends important to that culture.
@@ -47,7 +49,8 @@ The Gamemaster will decide what constitutes a "specific culture," taking the cam
 
 ---
 
-## Diplomacy (PER)
+## Diplomacy
+### (PER)
 
 This specialty skill allows a character to improve his ability to reach agreements and understandings with representatives of different nations, cultures, subcultures and species.
 
@@ -61,13 +64,15 @@ Depending on the nature of the issue to be resolved, the diplomacy skill check m
 
 ---
 
-## Etiquette [spec] (PER)
+## Etiquette [spec]
+### (PER)
 
 
 
 ---
 
-## First Encounter (PER)
+## First Encounter
+### (PER)
 
 *This skill can't be used untrained.*
 

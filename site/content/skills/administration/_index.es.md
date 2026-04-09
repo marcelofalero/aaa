@@ -2,6 +2,8 @@
 title = "Administración"
 attribute = "INT"
 category = "Technical"
+type = "skill"
+layout = "list"
 +++
 
 Esta habilidad general proporciona a un héroe el conocimiento de los formularios y procedimientos para dirigir una oficina u organización de casi cualquier tipo. Con esta habilidad, un héroe comprende la programación, la gestión de personal y equipos, y las regulaciones y leyes que se aplican a tales empresas. Cualquier organización grande, incluidos gobiernos, agencias y corporaciones, tiene algún tipo de burocracia administrativa con la que un héroe puede tener que interactuar algún día. Esta habilidad le permite intentar identificar a los administradores adecuados con los que tratar en una situación particular, los procedimientos adecuados a seguir y la mejor manera de eliminar la burocracia.
@@ -16,7 +18,8 @@ La habilidad de Administración de un personaje también se puede usar para obst
 
 ---
 
-## Burocracia (INT)
+## Burocracia
+### (INT)
 
 Esta especialización mide la capacidad de un héroe para engrasar (o atascar) los engranajes de la burocracia. Las solicitudes importantes, permisos, autorizaciones, informes u otras solicitudes burocráticas se pueden procesar más rápido y de manera más eficiente con el uso de esta habilidad. Por el contrario, esta habilidad se puede utilizar para hacer que los mismos procesos burocráticos sean más lentos para otros.
 
@@ -24,7 +27,8 @@ Esta especialización mide la capacidad de un héroe para engrasar (o atascar) l
 
 ---
 
-## Gestión (INT)
+## Gestión
+### (INT)
 
 Esta habilidad indica la capacidad de un héroe para gestionar tanto al personal como las tareas administrativas. Un gerente capacitado puede aumentar la productividad, inspirar a los trabajadores y supervisar el funcionamiento de un negocio u oficina.
 

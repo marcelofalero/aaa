@@ -2,6 +2,8 @@
 title = "Deception"
 attribute = "PER"
 category = "Social"
+type = "skill"
+layout = "list"
 +++
 
 This broad skill represents a character's proficiency at deceiving others through conversation and face-to-face interaction. Whether a character tries to bluff his way out of trouble, bribe a suspicious official, fast-talk dim-witted thugs into confusion, or gamble his way into a small fortune, this broad skill covers all verbal tricks and subterfuges.
@@ -14,7 +16,8 @@ A character's Deception situation die is modified by his target's Intelligence r
 
 # Specialty Skills
 
-## Bluff (PER)
+## Bluff
+### (PER)
 
 This specialty skill represents a talent for misleading or deceiving through false bravado or outright lies, or deterring a character by displaying extreme (and probably unwarranted) confidence.
 
@@ -26,7 +29,8 @@ On a **Critical Failure**, the bluff is seen for what it is, and the target beco
 
 ---
 
-## Bribe (PER)
+## Bribe
+### (PER)
 
 Whenever a character wants to offer another character money, goods, information, or services to get that character to do what the character wants, a bribe check is called for.
 
@@ -44,7 +48,8 @@ On an **Amazing** result, the bribe is accepted, and the target's attitude impro
 
 ---
 
-## Gamble (PER)
+## Gamble
+### (PER)
 
 This specialty skill represents a character's proficiency at various games of chance. With each purchase of the specialty skill, the player selects a different game (subject to the approval of the Gamemaster) for his character to be skilled in.
 

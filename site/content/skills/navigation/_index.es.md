@@ -2,6 +2,8 @@
 title = "Navegación"
 attribute = "INT"
 category = "Other"
+type = "skill"
+layout = "list"
 +++
 
 Esta habilidad amplia proporciona al personaje formación en navegación sobre superficies planetarias o en el espacio. Trazar un rumbo requiere una tirada de habilidad simple.
@@ -12,7 +14,8 @@ El tiempo óptimo para un intento de Navegación es de 5 minutos. Cada minuto me
 
 # Especialidades
 
-## Navegación—superficie (INT)
+## Navegación—superficie
+### (INT)
 
 Esta habilidad de especialidad cubre la navegación en un entorno planetario, utilizando mapas, accidentes del terreno, brújulas y sistemas GPS para desplazarse de un punto a otro.
 
@@ -22,7 +25,8 @@ Esta habilidad de especialidad cubre la navegación en un entorno planetario, ut
 
 ---
 
-## Pionero (INT)
+## Pionero
+### (INT)
 
 La habilidad de pionero implica identificar y crear nuevos caminos a través de tierras salvajes o terrenos inexplorados donde no existen mapas.
 

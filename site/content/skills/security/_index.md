@@ -2,6 +2,8 @@
 title = "Security"
 attribute = "INT"
 category = "Other"
+type = "skill"
+layout = "list"
 +++
 
 This broad skill provides a character with basic knowledge of security systems and procedures. This pertains to security systems that protect physical objects or specifically defined areas. (Note that systems of the sort that protect the theft or corruption of computerized data are dealt with under the Computer Science-hacking specialty). 
@@ -14,7 +16,8 @@ The complexity of a system relates to how time-consuming it is to get through an
 
 # Specialty Skills
 
-## Protection protocols (INT)
+## Protection protocols
+### (INT)
 
 **Cost: 3**
 
@@ -53,7 +56,8 @@ The analysis check is modified by how well the area is secured:
 
 ---
 
-## Security devices (INT)
+## Security devices
+### (INT)
 
 **Cost: 4**
 

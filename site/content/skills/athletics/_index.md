@@ -2,6 +2,8 @@
 title = "Athletics"
 attribute = "STR"
 category = "Other"
+type = "skill"
+layout = "list"
 +++
 
 This broad skill provides a character with the abilities of a natural athlete—a competent level of strength, grace, and physical prowess. This skill is used to determine the success of physical actions such as climbing a tree, jumping over a large hole, or throwing an object at a target.
@@ -70,25 +72,29 @@ The accuracy of a throw depends on the range and the degree of success achieved 
 | **Good** | On target | On target | Miss by 2m |
 | **Amazing** | On target | Always on target | On target |
 
-## Climb (STR)
+## Climb
+### (STR)
 
 
 
 ---
 
-## Jump (STR)
+## Jump
+### (STR)
 
 
 
 ---
 
-## Swim (STR)
+## Swim
+### (STR)
 
 
 
 ---
 
-## Throw (STR)
+## Throw
+### (STR)
 
 
 

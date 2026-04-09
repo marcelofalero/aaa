@@ -2,6 +2,8 @@
 title = "Law"
 attribute = "INT"
 category = "Social"
+type = "skill"
+layout = "list"
 +++
 
 This broad skill provides a character with general knowledge of the laws and legal systems of her native society. It can be a branch of human civilization on Earth or a colony planet; it could also be a specific alien society or culture.
@@ -29,7 +31,8 @@ When a legal battle is played out "off camera," the GM may call for Law skill ch
 
 Lawyers, judges, and others use this skill to interact in courtrooms and in legislative meetings. This aspect of the Law broad skill is used to argue a case or a point of view in an official proceeding.
 
-## Court procedures (INT)
+## Court procedures
+### (INT)
 
 Lawyers, judges, and others use this skill to interact in a courtroom setting. This specialty is used to argue a case or point of view in an official proceeding.
 
@@ -37,7 +40,8 @@ Lawyers, judges, and others use this skill to interact in a courtroom setting. T
 
 ---
 
-## Law enforcement procedures (INT)
+## Law enforcement procedures
+### (INT)
 
 Police officers, detectives, bounty hunters, and others use this skill to follow (or bend) legal law enforcement procedures. Topics covered include:
 - Knowing laws concerning surveillance, search, and seizure.
@@ -50,7 +54,8 @@ This specialty is also used to determine how "good" an arrest is (providing ammu
 
 ---
 
-## Law, specific skill (INT)
+## Law, specific skill
+### (INT)
 
 *This skill can't be used untrained.*
 

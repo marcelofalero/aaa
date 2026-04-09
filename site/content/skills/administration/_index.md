@@ -2,6 +2,8 @@
 title = "Administration"
 attribute = "INT"
 category = "Technical"
+type = "skill"
+layout = "list"
 +++
 
 This broad skill provides a character with knowledge concerning the forms and procedures that go into running an office or organization of almost any kind. With this skill, a character understands scheduling, personnel and equipment management, and the regulations and laws that apply to such endeavors. Any large organizations, including governments, agencies, and corporations, have some type of administrational bureaucracy that a character may someday be called upon to interact with. This skill allows him to attempt to identify the proper administrators to deal with in a particular situation, the proper procedures to follow, and the best way to cut through red tape.
@@ -16,7 +18,8 @@ A character's Administration skill can also be used to hinder someone else's att
 
 ---
 
-## Bureaucracy (INT)
+## Bureaucracy
+### (INT)
 
 This specialty skill measures a character's ability to grease (or clog up) the wheels of bureaucracy. Important applications, permits, clearances, reports, or other bureaucratic requests can be processed faster and more efficiently with the use of this skill. Conversely, this skill can be used to make the same bureaucratic processes slower for others.
 
@@ -24,7 +27,8 @@ This specialty skill measures a character's ability to grease (or clog up) the w
 
 ---
 
-## Management (INT)
+## Management
+### (INT)
 
 This skill indicates a character's ability to manage both personnel and administrative duties. A skilled manager can increase productivity, inspire workers, and supervise the workings of a business or office.
 

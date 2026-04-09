@@ -2,6 +2,8 @@
 title = "Navigation"
 attribute = "INT"
 category = "Other"
+type = "skill"
+layout = "list"
 +++
 
 This broad skill provides a character with training in navigating on a planetary surface or in space. Plotting a course requires a simple skill check.
@@ -26,7 +28,8 @@ This specialty skill involves navigation through drivespace, usually movement be
 - **Good:** Arrive inside destination star system, d12+2 AUs from target.
 - **Amazing:** Arrive inside destination system, d4 AUs from target.
 
-## Astrogation—system (INT)
+## Astrogation—system
+### (INT)
 
 *This skill can't be used untrained.*
 
@@ -41,7 +44,8 @@ This specialty skill covers navigation through a star system, usually movements 
 
 ---
 
-## Navigation—surface (INT)
+## Navigation—surface
+### (INT)
 
 This specialty skill covers navigation in a planetary environment, utilizing maps, terrain features, compasses, and GPS systems to move from one point to another.
 

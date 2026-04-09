@@ -4,6 +4,8 @@ description = "Training and talent in aesthetic and emotional expression."
 weight = 4
 attribute = "WIL"
 category = "Other"
+type = "skill"
+layout = "list"
 +++
 
 This skill provides a character with training and talent (or knowledge) in a variety of creative endeavors. A character with the Creativity skill has a well-developed sense for the aesthetically pleasing, a facility for communicating with the written word, and the ability to convey and evoke powerful emotions through a chosen medium.
@@ -20,6 +22,4 @@ If the complex skill check ends in a Critical Failure, or three Failure results 
 
 ## Creativity, Specific Skill
 ### (WIL)
-
-
 A blank line is provided under the Creativity skill on the hero sheet for a player to use if his character specializes in some aspect of this skill. The Gamemaster will determine if a certain specialty skill is allowable, usually based on whether it defines a narrow enough field of interest. For instance, illustration might be allowed as a Creativity specialty, or it might be necessary for a character to be more specific by singling out computer graphics or holo art as his area of expertise.

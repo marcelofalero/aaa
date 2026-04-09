@@ -2,6 +2,8 @@
 title = "Enseñanza"
 attribute = "WIL"
 category = "Social"
+type = "skill"
+layout = "list"
 +++
 
 Esta habilidad amplia representa la capacidad de un personaje para instruir a otros en el uso de una habilidad perteneciente al grupo Abierto o común. Se requiere una comprobación de habilidad cada vez que un personaje desea enseñar una habilidad a otro personaje.
@@ -32,7 +34,8 @@ El beneficio de un profesor depende del resultado de la comprobación de habilid
 
 # Habilidades de Especialidad
 
-## Campo Específico (WIL)
+## Campo Específico
+### (WIL)
 
 *Esta habilidad no puede usarse sin entrenamiento.*
 

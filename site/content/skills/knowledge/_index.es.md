@@ -2,6 +2,8 @@
 title = "Conocimiento"
 attribute = "INT"
 category = "Technical"
+type = "skill"
+layout = "list"
 +++
 
 Esta habilidad amplia representa la capacidad de un personaje para saber al menos un poco sobre cualquier tema en particular. Solo con la habilidad amplia, un personaje no es considerado un experto, pero representa la capacidad de recordar lógicamente una clase que tomó, un artículo que leyó o un documental que vio sobre el tema en cuestión.
@@ -27,7 +29,8 @@ Para una comprobación de la habilidad de Conocimiento, el Director de Juego det
 
 # Habilidades de Especialidad
 
-## Operación de Computadoras (INT)
+## Operación de Computadoras
+### (INT)
 
 *Esta habilidad no puede usarse sin entrenamiento.*
 
@@ -37,7 +40,8 @@ Esta habilidad de especialidad permite a un personaje mejorar su capacidad para 
 
 ---
 
-## Deducir (INT)
+## Deducir
+### (INT)
 
 Con esta habilidad de especialidad, un personaje puede perfeccionar sus habilidades para usar la razón y la lógica para llegar a una conclusión. Los detectives e investigadores utilizan Deducir para armar pistas, o los científicos e ingenieros para descubrir la respuesta a un problema relacionado con sus habilidades.
 
@@ -47,7 +51,8 @@ Con esta habilidad de especialidad, un personaje puede perfeccionar sus habilida
 
 ---
 
-## Primeros Auxilios (INT)
+## Primeros Auxilios
+### (INT)
 
 *Esta habilidad no puede usarse sin entrenamiento.*
 
@@ -75,7 +80,8 @@ Un personaje con cualquier cantidad de daño Mortal se considera agonizante. Un 
 
 ---
 
-## Idioma, Habilidad Específica (INT)
+## Idioma, Habilidad Específica
+### (INT)
 
 *Esta habilidad no puede usarse sin entrenamiento.*
 
@@ -87,7 +93,8 @@ Esta habilidad de especialidad le da a un personaje cierta fluidez en un idioma 
 
 ---
 
-## Psiónica (INT)
+## Psiónica
+### (INT)
 
 *Esta habilidad no puede usarse sin entrenamiento.*
 
@@ -95,13 +102,15 @@ Esta habilidad le da a un personaje un conocimiento práctico de las habilidades
 
 ---
 
-## Street knowledge (WIL)
+## Street knowledge
+### (WIL)
 
 
 
 ---
 
-## Technical Knowledge (INT)
+## Technical Knowledge
+### (INT)
 
 
 

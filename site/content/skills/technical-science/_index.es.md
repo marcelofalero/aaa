@@ -2,6 +2,8 @@
 title = "Ciencia Técnica"
 attribute = "INT"
 category = "Technical"
+type = "skill"
+layout = "list"
 +++
 
 Esta habilidad amplia representa el entrenamiento de un personaje en las ciencias técnicas, incluyendo el mantenimiento, reparación e invención de dispositivos mecánicos y electrónicos (sin incluir ordenadores/computadoras), y el conocimiento técnico general.
@@ -12,7 +14,8 @@ Las comprobaciones de habilidad realizadas para determinar si un personaje conoc
 
 # Habilidades de Especialidad
 
-## Invención (INT)
+## Invención
+### (INT)
 
 *Esta habilidad no puede usarse sin entrenamiento.*
 
@@ -26,7 +29,8 @@ El uso de esta habilidad requiere tiempo; las comprobaciones de Invención son s
 
 ---
 
-## Remendar (INT)
+## Remendar
+### (INT)
 
 *Esta habilidad no puede usarse sin entrenamiento.*
 
@@ -48,7 +52,8 @@ La cantidad de dificultad añadida a las reparaciones completas depende del resu
 
 ---
 
-## Reparación (INT)
+## Reparación
+### (INT)
 
 *Esta habilidad no puede usarse sin entrenamiento.*
 

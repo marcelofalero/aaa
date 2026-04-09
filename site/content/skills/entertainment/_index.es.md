@@ -2,6 +2,8 @@
 title = "Entretenimiento"
 attribute = "PER"
 category = "Other"
+type = "skill"
+layout = "list"
 +++
 
 Esta habilidad general representa la competencia de un héroe en las artes escénicas. Los conocimientos técnicos y el entrenamiento son parte de esta habilidad, al igual que la capacidad del héroe para actuar ante un público y provocar una respuesta emocional.
@@ -12,7 +14,8 @@ Las tiradas de habilidad se ven modificadas por el modificador de resistencia de
 Cuanto mayor sea el nivel de éxito, más potente será la actuación.
 - **Fallo Crítico:** Ocurre mala suerte (el micrófono se apaga, el decorado se derrumba, etc.).
 
-## Habilidades de Especialidad (PER)
+## Habilidades de Especialidad
+### (PER)
 
 {{% list %}}
 - **Actuar:** Interpretar un papel, asumir un rol dramático e imitación.
@@ -28,7 +31,8 @@ Cuanto mayor sea el nivel de éxito, más potente será la actuación.
 
 ---
 
-## Dance (PER)
+## Dance
+### (PER)
 
 The dance skill represents a talent for moving rhythmically to music by following set steps and gestures or by improvisation. It also covers the technical aspects of performance dance, such as choreography and the knowledge of various popular and cultural dance techniques.
 
@@ -44,7 +48,8 @@ Possible combinations of skills to which this benefit could apply include act or
 
 ---
 
-## Musical instrument (PER)
+## Musical instrument
+### (PER)
 
 
 

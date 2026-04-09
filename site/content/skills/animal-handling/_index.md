@@ -2,6 +2,8 @@
 title = "Animal Handling"
 attribute = "WIL"
 category = "Other"
+type = "skill"
+layout = "list"
 +++
 
 This broad skill provides a hero with the basic ability to train animals to perform a variety of tasks, including doing labor, accepting riders, tracking, and attacking. It's also used to determine if a hero can get a trained animal to perform a task, to ride an animal, or to calm, capture, or otherwise handle a wild animal or an unfamiliar domestic animal. Note that the methods of training and the commands used with different animal species can vary widely.
@@ -129,7 +131,8 @@ The broad skill also enables a character to ride any animal that can be used for
 
 ---
 
-## Animal riding (WIL)
+## Animal riding
+### (WIL)
 
 This specialty skill enables a hero to improve this aspect of the Animal Handling broad skill. A character with this skill can attempt racing over dangerous terrain, making jumps or performing other stunts, and engaging in mounted combat.
 
@@ -168,7 +171,8 @@ Trick riding can’t be combined with any other action; for instance, it's not p
 
 ---
 
-## Animal training (WIL)
+## Animal training
+### (WIL)
 
 This skill allows a hero to become able to handle, ride, and train a specific type of animal. He must purchase and improve this specialty skill separately for each type of animal he wants to train. Types of animals include riding animals, pack animals, attack animals, and guard animals. Your Gamemaster has the final say on how animals are classified, and which ones require separate applications of this skill.
 

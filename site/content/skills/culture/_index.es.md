@@ -2,6 +2,8 @@
 title = "Cultura"
 attribute = "PER"
 category = "Social"
+type = "skill"
+layout = "list"
 +++
 
 Esta habilidad general representa la capacidad de un héroe para comprender e interactuar con culturas diferentes a la suya. Abarca costumbres, filosofía y figuras históricas importantes.
@@ -13,7 +15,8 @@ Cuando se utiliza en un contexto interactivo, Cultura es una habilidad de encuen
 - **Cotidiano (origen, ocupación):** sin modificador
 - **Complejo (amenazas, ideas esotéricas):** penalización de +1 o más
 
-## Habilidades de Especialidad (PER)
+## Habilidades de Especialidad
+### (PER)
 
 {{% list %}}
 - **Cultura Alienígena [Específica]:** Proficiencia con una sociedad alienígena en particular.
@@ -59,13 +62,15 @@ Al completarla con éxito, el héroe gana inmediatamente el rango 1 en las habil
 
 ---
 
-## Etiquette [spec] (PER)
+## Etiquette [spec]
+### (PER)
 
 
 
 ---
 
-## First Encounter (PER)
+## First Encounter
+### (PER)
 
 *This skill can't be used untrained.*
 

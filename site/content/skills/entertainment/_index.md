@@ -2,6 +2,8 @@
 title = "Entertainment"
 attribute = "PER"
 category = "Other"
+type = "skill"
+layout = "list"
 +++
 
 This broad skill represents a character's proficiency in the performing arts. A character with this skill is competent enough to perform amateur theater or play at the equivalent of a high school dance, while the specialty skills allow a character to become a first-rate performer—or even a star.
@@ -55,7 +57,8 @@ Sing represents a talent for carrying a note and singing songs. A character with
 
 Possible combinations of skills to which this benefit could apply include act or dance with Interaction—seduce; dance with Covert Ops—pickpocket or Acrobatics; sing with Interaction—taunt; and musical instrument with Leadership—inspire. If you have other ideas for how an Entertainment skill can be used in this way, talk them over with your Gamemaster.
 
-## Act (PER)
+## Act
+### (PER)
 
 This specialty skill represents a talent for playing a part or assuming a dramatic role. It also covers impersonation and the skills and techniques of the stage and screen.
 
@@ -77,7 +80,8 @@ Possible combinations of skills to which this benefit could apply include act or
 
 ---
 
-## Dance (PER)
+## Dance
+### (PER)
 
 The dance skill represents a talent for moving rhythmically to music by following set steps and gestures or by improvisation. It also covers the technical aspects of performance dance, such as choreography and the knowledge of various popular and cultural dance techniques.
 
@@ -93,7 +97,8 @@ Possible combinations of skills to which this benefit could apply include act or
 
 ---
 
-## Musical instrument (PER)
+## Musical instrument
+### (PER)
 
 
 

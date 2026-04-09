@@ -2,6 +2,8 @@
 title = "Investigate"
 attribute = "WIL"
 category = "Social"
+type = "skill"
+layout = "list"
 +++
 
 This broad skill provides a character with the training and ability to examine things systematically through observation and inquiry. Unlike Awareness skills, Investigate takes time. It can be used when a character tries to apply logic and reason to reach a conclusion or deduce the solution to a problem.
@@ -35,7 +37,8 @@ This broad skill provides a character with the training and ability to examine t
 
 # Specialty Skills
 
-## Interrogate (WIL)
+## Interrogate
+### (WIL)
 
 The Interrogate skill represents a hero's ability to ask the right questions in order to gain information from a specific target character. That character's Will resistance modifier is his protection from the probing questions of a skilled interrogator.
 
@@ -45,7 +48,8 @@ The skill covers the sort of interrogation that might be conducted by a seasoned
 
 ---
 
-## Search (WIL)
+## Search
+### (WIL)
 
 This specialty skill enables a hero to develop his eye for detail and his ability to spot hidden objects. Search is used when a hero wants to look for clues in a specific area, find a particular object or person he knows is in the area, or hunt for important objects in as fast and systematic a fashion as possible.
 
@@ -55,7 +59,8 @@ The degree of success achieved on a skill check determines what the hero spots a
 
 ---
 
-## Track (WIL)
+## Track
+### (WIL)
 
 This specialty skill allows a hero to improve his ability to follow a person, creature, or land vehicle by noting the tracks it leaves in its wake. 
 

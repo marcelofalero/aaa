@@ -2,6 +2,8 @@
 title = "Combate Cuerpo a Cuerpo"
 attribute = "STR"
 category = "Combat"
+type = "skill"
+layout = "list"
 +++
 
 El Combate Cuerpo a Cuerpo representa la competencia básica de cualquier combatiente físico que participa en una lucha a corta distancia. Abarca la comprensión esencial del alcance, el tiempo y la transferencia eficiente de la fuerza cinética a través del cuerpo o una herramienta de mano. Un héroe entrenado en esta habilidad general posee una comprensión inherente de la conciencia espacial y la puntería, lo que le permite identificar vulnerabilidades en un oponente mientras mantiene su propio centro de gravedad y postura con el arma durante un intercambio.
@@ -14,7 +16,8 @@ El daño base de un ataque sin armas depende del tamaño del personaje; para un 
 
 ----------------------
 
-## Artes Marciales Defensivas (STR)
+## Artes Marciales Defensivas
+### (STR)
 
 La esencia de las artes marciales defensivas y basadas en la destreza radica en la no resistencia y la manipulación sofisticada de los vectores cinéticos. En lugar de enfrentar la fuerza con la fuerza, estos estilos utilizan movimientos fluidos y esféricos para redirigir el impulso de un atacante, convirtiendo efectivamente su propia masa y aceleración en su contra. Al priorizar la elasticidad estructural y la propiocepción de alto nivel, un practicante permanece inasible, utilizando un juego de pies preciso y un cambio de peso dinámico para abandonar la línea de ataque mientras realiza una transición simultánea a una posición de contra-apalancamiento.
 
@@ -34,7 +37,8 @@ La esencia de las artes marciales defensivas y basadas en la destreza radica en 
 
 ---
 
-## Artes Marciales de Poder (STR)
+## Artes Marciales de Poder
+### (STR)
 
 La esencia de las artes marciales orientadas al poder radica en la movilización eficiente de la masa corporal total a través de la alineación estructural y la secuenciación cinética explosiva. En lugar de depender de la fuerza muscular aislada, estos estilos tratan el cuerpo como una unidad única y rígida en el momento del impacto, utilizando el suelo como punto de apoyo para canalizar la energía de las piernas y las caderas giratorias hacia un punto de entrega enfocado. Al sincronizar la respiración, el apilamiento esquelético y el "peso que cae", el practicante maximiza la física del impulso para superar la resistencia de un oponente a través de la pura integridad estructural y la fuerza calculada.
 
@@ -68,7 +72,8 @@ Para resolver un ataque de multigolpe, el jugador del héroe tira un dado de con
 
 ---
 
-## Defensive Martial Arts (STR)
+## Defensive Martial Arts
+### (STR)
 
 As a Personaje improves his ability in the defensive martial arts Especialidad, he gains rank benefits as described below. Note: These benefits only apply when the Personaje is fighting unarmed or with appropriate martial arts implements.
 
@@ -94,7 +99,8 @@ How we do things reaches rank 10, All Out Attacks that miss him can be redirecte
 
 ---
 
-## Power Martial Arts (STR)
+## Power Martial Arts
+### (STR)
 
 As a Personaje improves his ability in the power martial arts Especialidad, he gains rank benefits as described below. Note: These benefits only apply when the Personaje is fighting unarmed or with appropriate martial arts implements.
 
@@ -124,7 +130,8 @@ Every additional attacker who takes part in the same overpowering attempt provid
 
 ---
 
-## Powered (STR)
+## Powered
+### (STR)
 
 As a Personaje improves his ability in the powered Especialidad, he gains rank benefits as described below. Note: These benefits only apply when the Personaje is using a weapon covered by this skill.
 

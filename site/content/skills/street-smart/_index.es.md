@@ -2,6 +2,8 @@
 title = "Calle inteligente"
 attribute = "WIL"
 category = "Social"
+type = "skill"
+layout = "list"
 +++
 
 Esta habilidad general proporciona a un héroe conocimiento de los protocolos para tratar con pandillas, gente de la calle y organizaciones criminales. Mide la capacidad de un héroe para negociar y establecer contacto con el reino del criminal de "cuello azul" (delincuencia común).
@@ -15,7 +17,8 @@ Los modificadores de situación dependen del objeto o servicio buscado, su legal
 - **Bueno:** penalización de +2.
 - **Asombroso:** penalización de +3.
 
-## Habilidades de Especialidad (WIL)
+## Habilidades de Especialidad
+### (WIL)
 
 {{% list %}}
 - **Elementos Criminales:** Establecer contacto y tratar con el crimen organizado, criminales profesionales y pandillas.

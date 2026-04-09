@@ -2,6 +2,8 @@
 title = "Technical Science"
 attribute = "INT"
 category = "Technical"
+type = "skill"
+layout = "list"
 +++
 
 This broad skill represents a character's training in the technical sciences, including the maintenance, repair, and invention of mechanical and electronic devices (not including computers), and general technical knowledge.
@@ -60,7 +62,8 @@ This skill represents the study of technology and indicates how up-to-date a cha
 | **Tight deadline** | +1 step |
 | **Unreasonable deadline** | +3 steps |
 
-## Invention (INT)
+## Invention
+### (INT)
 
 *This skill can't be used untrained.*
 
@@ -74,13 +77,15 @@ Using this skill requires time; Invention checks are always complex skill checks
 
 ---
 
-## Jury-rig (INT)
+## Jury-rig
+### (INT)
 
 
 
 ---
 
-## Repair (INT)
+## Repair
+### (INT)
 
 *This skill can't be used untrained.*
 

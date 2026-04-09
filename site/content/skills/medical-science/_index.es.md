@@ -2,6 +2,8 @@
 title = "Ciencias médicas"
 attribute = "INT"
 category = "Technical"
+type = "skill"
+layout = "list"
 +++
 
 *Esta habilidad no se puede usar sin entrenamiento.*
@@ -14,7 +16,8 @@ Un personaje con solo la habilidad amplia no puede tratar daños; se requieren l
 
 # Especialidades
 
-## Ciencias forenses (INT)
+## Ciencias forenses
+### (INT)
 
 *Esta habilidad no se puede usar sin entrenamiento.*
 
@@ -26,7 +29,8 @@ La ciencia forense es la aplicación del conocimiento médico y científico a pr
 
 ---
 
-## Conocimiento médico (INT)
+## Conocimiento médico
+### (INT)
 
 *Esta habilidad no se puede usar sin entrenamiento.*
 
@@ -38,7 +42,8 @@ Esta habilidad de especialidad representa la profunda comprensión académica y 
 
 ---
 
-## Psicología (INT)
+## Psicología
+### (INT)
 
 *Esta habilidad no se puede usar sin entrenamiento.*
 
@@ -50,7 +55,8 @@ La psicología es el estudio de la mente y el comportamiento. Puede usarse para 
 
 ---
 
-## Cirugía (INT)
+## Cirugía
+### (INT)
 
 *Esta habilidad no se puede usar sin entrenamiento.*
 
@@ -62,7 +68,8 @@ La cirugía implica el tratamiento de lesiones o trastornos del cuerpo mediante 
 
 ---
 
-## Tratamiento (INT)
+## Tratamiento
+### (INT)
 
 *Esta habilidad no se puede usar sin entrenamiento.*
 

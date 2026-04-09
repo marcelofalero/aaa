@@ -2,6 +2,8 @@
 title = "Life Science"
 attribute = "INT"
 category = "Technical"
+type = "skill"
+layout = "list"
 +++
 
 This broad skill represents a character's training in the life sciences. Skill checks involving this skill are made the same as Knowledge skill checks.
@@ -32,19 +34,22 @@ This specialty skill represents the scientific study of the biological and bioch
 
 ⊗ **Increased Effect:** A character receives a **-1 bonus** at rank 3, **-2** at rank 6, **-3** at rank 9, and **-4** at rank 12 on certain other skill checks that can be assisted by this specialty. These skills include Telepathy—drain, Bio-Kinesis—bioluminescent, and Bio-Kinesis—bioweapon.
 
-## Biology (INT)
+## Biology
+### (INT)
 
 
 
 ---
 
-## Botany (INT)
+## Botany
+### (INT)
 
 
 
 ---
 
-## Genetics (INT)
+## Genetics
+### (INT)
 
 *This skill can't be used untrained.*
 
@@ -56,7 +61,8 @@ Genetics is the study of heredity and genes, forming the basis of genetic engine
 
 ---
 
-## Xenology (INT)
+## Xenology
+### (INT)
 
 *This skill can't be used untrained.*
 
@@ -67,7 +73,8 @@ Xenology is the study of animal life forms of an alien nature and can be used to
 
 ---
 
-## Zoology (INT)
+## Zoology
+### (INT)
 
 
 

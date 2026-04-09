@@ -2,6 +2,8 @@
 title = "Operación de Vehículos"
 attribute = "DEX"
 category = "Technical"
+type = "skill"
+layout = "list"
 +++
 
 Esta habilidad amplia proporciona a un personaje una comprensión básica y competencia con los vehículos modernos. Usando esta habilidad, un personaje puede intentar operar la mayoría de los vehículos terrestres y acuáticos normales. Algunos vehículos terrestres y acuáticos militares o especializados pueden tener controles que son demasiado complejos para que la habilidad amplia los cubra, requiriendo al menos algún nivel de especialización antes de que un personaje sea capaz de operarlos con éxito.
@@ -16,7 +18,8 @@ Para más detalles sobre vehículos, consulte la sección de [Vehículos y Naves
 
 # Habilidades de Especialidad
 
-## Vehículo Aéreo (DEX)
+## Vehículo Aéreo
+### (DEX)
 
 *Esta habilidad no puede usarse sin entrenamiento.*
 
@@ -28,7 +31,8 @@ Los tipos de vehículos aéreos incluyen aviones de hélice, helicópteros, jets
 
 ---
 
-## Vehículo Terrestre (DEX)
+## Vehículo Terrestre
+### (DEX)
 
 Esta habilidad de especialidad permite a un personaje estar entrenado en el uso de un tipo específico de vehículo terrestre. Si desea ser experto en la operación de más de un tipo de vehículo terrestre, debe comprar y mejorar cada habilidad de especialidad por separado.
 
@@ -38,7 +42,8 @@ Los tipos de vehículos terrestres incluyen automóviles, motocicletas, coches d
 
 ---
 
-## Vehículo Espacial (DEX)
+## Vehículo Espacial
+### (DEX)
 
 *Esta habilidad no puede usarse sin entrenamiento.*
 
@@ -56,7 +61,8 @@ Los tipos de vehículos espaciales incluyen:
 
 ---
 
-## Vehículo Acuático (DEX)
+## Vehículo Acuático
+### (DEX)
 
 Esta habilidad de especialidad permite a un personaje estar entrenado en el uso de un tipo específico de vehículo acuático. Si desea ser experto en la operación de más de un tipo de vehículo acuático, debe comprar y mejorar cada habilidad de especialidad por separado.
 

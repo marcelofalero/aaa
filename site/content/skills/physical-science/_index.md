@@ -2,6 +2,8 @@
 title = "Physical Science"
 attribute = "INT"
 category = "Technical"
+type = "skill"
+layout = "list"
 +++
 
 This broad skill represents a character's training in the physical sciences. Skill checks involving this skill are made the same as Knowledge skill checks.
@@ -10,7 +12,8 @@ This broad skill represents a character's training in the physical sciences. Ski
 
 # Specialty Skills
 
-## Astronomy (INT)
+## Astronomy
+### (INT)
 
 *This skill can't be used untrained.*
 
@@ -22,7 +25,8 @@ Astronomy is the study of celestial objects and phenomena that originate outside
 
 ---
 
-## Chemistry (INT)
+## Chemistry
+### (INT)
 
 *This skill can't be used untrained.*
 
@@ -34,7 +38,8 @@ Chemistry is the study of matter, its properties, and how and why substances com
 
 ---
 
-## Physics (INT)
+## Physics
+### (INT)
 
 *This skill can't be used untrained.*
 
@@ -46,7 +51,8 @@ Physics is the study of matter, energy, and the fundamental forces of nature.
 
 ---
 
-## Planetology (INT)
+## Planetology
+### (INT)
 
 *This skill can't be used untrained.*
 

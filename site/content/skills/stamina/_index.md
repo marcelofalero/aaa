@@ -2,6 +2,8 @@
 title = "Stamina"
 attribute = "CON"
 category = "Other"
+type = "skill"
+layout = "list"
 +++
 
 This broad skill measures a character's physical fortitude with regard to the effects of mortal damage and fatigue.
@@ -32,7 +34,8 @@ When a character engages in certain fatigue-causing activities, he must make a S
 
 # Specialty Skills
 
-## Endurance (CON)
+## Endurance
+### (CON)
 
 As a character acquires ranks in the endurance skill, he becomes more able to withstand the effects of damage. For a character who has this specialty, endurance checks take the place of Stamina checks for damage and fatigue.
 
@@ -42,7 +45,8 @@ As a character acquires ranks in the endurance skill, he becomes more able to wi
 
 ---
 
-## Resist pain (CON)
+## Resist pain
+### (CON)
 
 *This skill can’t be used untrained.*
 

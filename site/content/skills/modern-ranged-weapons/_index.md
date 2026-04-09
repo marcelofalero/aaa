@@ -2,6 +2,8 @@
 title = "Modern Ranged Weapons"
 attribute = "DEX"
 category = "Combat"
+type = "skill"
+layout = "list"
 +++
 
 This broad skill provides a character with training in the use of modern ranged weapons. This skill covers pistols, rifles, shotguns, and submachine guns of all types, including projectile and energy weapons.
@@ -43,7 +45,8 @@ When a character uses any ranged weapon, either primitive or modern, a number of
 
 # Specialty Skills
 
-## Assault Rifle (DEX)
+## Assault Rifle
+### (DEX)
 
 This specialty skill covers automatic rifles—standard infantry weapons capable of selective fire and automatic modes using rifle-caliber cartridges.
 
@@ -61,7 +64,8 @@ Assault rifles provide a character with up to three attack options per action ph
 
 ---
 
-## Pistol (DEX)
+## Pistol
+### (DEX)
 
 This specialty skill allows a character to improve his proficiency with modern pistols of all types, including projectile and energy weapons.
 
@@ -71,7 +75,8 @@ This specialty skill allows a character to improve his proficiency with modern p
 
 ---
 
-## Rifle (DEX)
+## Rifle
+### (DEX)
 
 This specialty skill allows a character to improve his proficiency with modern single-fire rifles, sniper rifles, and hunting rifles. 
 
@@ -79,7 +84,8 @@ This specialty skill allows a character to improve his proficiency with modern s
 
 ---
 
-## SMG (DEX)
+## SMG
+### (DEX)
 
 This specialty skill allows a character to improve his proficiency with modern submachine guns of all types (small automatic weapons that fire pistol-sized cartridges) as well as energy-equivalent submachine guns. 
 
@@ -97,7 +103,8 @@ Submachine guns (and assault rifles) provide a character with up to three attack
 
 ---
 
-## Shotgun (DEX)
+## Shotgun
+### (DEX)
 
 This specialty skill covers all types of modern shotguns, from traditional pump-action and semi-automatic projectile weapons to specialized energy spread-emitters. Shotguns are defined by their wide range of specialized ammunition types (Buckshot, Slugs, Breaching rounds, etc.) or multi-mode energy settings.
 

@@ -2,6 +2,8 @@
 title = "Liderazgo"
 attribute = "PER"
 category = "Social"
+type = "skill"
+layout = "list"
 +++
 
 Esta habilidad general proporciona a un héroe las capacidades y talentos de un líder. Un líder puede coordinar a un grupo para rendir mejor o trabajar en equipo. Solo un personaje puede asumir el papel de líder a la vez.
@@ -15,7 +17,8 @@ La tirada de acción de un líder proporciona una bonificación a todas las acci
 - **Bueno:** Hasta cuatro seguidores reciben la bonificación de liderazgo.
 - **Asombroso:** Hasta seis seguidores reciben la bonificación de liderazgo.
 
-## Habilidades de Especialidad (PER)
+## Habilidades de Especialidad
+### (PER)
 
 {{% list %}}
 - **Mando
@@ -28,7 +31,8 @@ La tirada de acción de un líder proporciona una bonificación a todas las acci
 
 ---
 
-## Inspire (PER)
+## Inspire
+### (PER)
 
 **Cost: 3**
 

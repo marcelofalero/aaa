@@ -2,6 +2,8 @@
 title = "Teach"
 attribute = "WIL"
 category = "Social"
+type = "skill"
+layout = "list"
 +++
 
 This broad skill represents a character's ability to instruct others in the use of a skill belonging to the Open group. A skill check is required whenever a character wants to teach a skill to another character.
@@ -57,7 +59,8 @@ The character then becomes able to teach all skills associated with that profess
 | **Student is learning a Professional skill** | -1 step |
 | **Student is learning an Out-of-Profession skill** | +2 steps |
 
-## Specific field (WIL)
+## Specific field
+### (WIL)
 
 
 

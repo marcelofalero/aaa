@@ -2,6 +2,8 @@
 title = "Melee Combat"
 attribute = "STR"
 category = "Combat"
+type = "skill"
+layout = "list"
 +++
 
 Melee Combat represents the baseline proficiency of any physical combatant engaging in a struggle at personal range. It covers the essential understanding of reach, timing, and the efficient transfer of kinetic force through the body or a handheld tool. A character trained in this broad skill possesses an inherent grasp of spatial awareness and targeting, allowing them to identify vulnerabilities in an opponent while maintaining their own center of gravity and weapon posture during an exchange.
@@ -16,7 +18,8 @@ The base damage for an unarmed attack depends on the size of the character; for 
 
 # Specialty Skills
 
-## Blade (STR)
+## Blade
+### (STR)
 
 As a character improves his ability in the blade specialty skill, he gains rank benefits as described below. Note: These benefits only apply when the character is using a weapon covered by this skill.
 
@@ -32,7 +35,8 @@ As a character improves his ability in the blade specialty skill, he gains rank 
 
 ---
 
-## Blunt (STR)
+## Blunt
+### (STR)
 
 As a character improves his ability in the blunt specialty skill, he gains rank benefits as described below. Note: These benefits only apply when the character is using a weapon covered by this skill.
 
@@ -48,7 +52,8 @@ As a character improves his ability in the blunt specialty skill, he gains rank 
 
 ---
 
-## Defensive Martial Arts (STR)
+## Defensive Martial Arts
+### (STR)
 
 As a character improves his ability in the defensive martial arts specialty skill, he gains rank benefits as described below. Note: These benefits only apply when the character is fighting unarmed or with appropriate martial arts implements.
 
@@ -74,7 +79,8 @@ How we do things reaches rank 10, All Out Attacks that miss him can be redirecte
 
 ---
 
-## Power Martial Arts (STR)
+## Power Martial Arts
+### (STR)
 
 As a character improves his ability in the power martial arts specialty skill, he gains rank benefits as described below. Note: These benefits only apply when the character is fighting unarmed or with appropriate martial arts implements.
 
@@ -104,7 +110,8 @@ Every additional attacker who takes part in the same overpowering attempt provid
 
 ---
 
-## Powered (STR)
+## Powered
+### (STR)
 
 As a character improves his ability in the powered specialty skill, he gains rank benefits as described below. Note: These benefits only apply when the character is using a weapon covered by this skill.
 

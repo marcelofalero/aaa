@@ -2,6 +2,8 @@
 title = "Ciencias físicas"
 attribute = "INT"
 category = "Technical"
+type = "skill"
+layout = "list"
 +++
 
 Esta habilidad amplia representa la formación de un personaje en las ciencias físicas. Las tiradas de habilidad que involucran esta habilidad se realizan de la misma manera que las tiradas de la habilidad de Conocimiento.
@@ -10,7 +12,8 @@ Esta habilidad amplia representa la formación de un personaje en las ciencias f
 
 # Especialidades
 
-## Astronomía (INT)
+## Astronomía
+### (INT)
 
 *Esta habilidad no se puede usar sin entrenamiento.*
 
@@ -22,7 +25,8 @@ La astronomía es el estudio de los objetos celestes y los fenómenos que se ori
 
 ---
 
-## Química (INT)
+## Química
+### (INT)
 
 *Esta habilidad no se puede usar sin entrenamiento.*
 
@@ -34,7 +38,8 @@ La química es el estudio de la materia, sus propiedades y cómo y por qué las 
 
 ---
 
-## Física (INT)
+## Física
+### (INT)
 
 *Esta habilidad no se puede usar sin entrenamiento.*
 
@@ -46,7 +51,8 @@ La física es el estudio de la materia, la energía y las fuerzas fundamentales 
 
 ---
 
-## Planetología (INT)
+## Planetología
+### (INT)
 
 *Esta habilidad no se puede usar sin entrenamiento.*
 

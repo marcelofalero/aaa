@@ -2,6 +2,8 @@
 title = "Medical Science"
 attribute = "INT"
 category = "Technical"
+type = "skill"
+layout = "list"
 +++
 
 *This skill can't be used untrained.*
@@ -48,13 +50,15 @@ In this context, "alien species" refers to any species not well known to you. Fo
 - **Rank 9:** Penalty eliminated.
 - **Rank 12:** Character receives a -1 step bonus.
 
-## Forensics (INT)
+## Forensics
+### (INT)
 
 
 
 ---
 
-## Psychology (INT)
+## Psychology
+### (INT)
 
 *This skill can't be used untrained.*
 
@@ -66,7 +70,8 @@ Psychology is the study of the mind and behavior. It can be used to diagnose men
 
 ---
 
-## Surgery (INT)
+## Surgery
+### (INT)
 
 *This skill can't be used untrained.*
 
@@ -78,7 +83,8 @@ Surgery involves the treatment of injuries or disorders of the body by incision 
 
 ---
 
-## Treatment (INT)
+## Treatment
+### (INT)
 
 *This skill can't be used untrained.*
 
@@ -96,7 +102,8 @@ The treatment specialty can be used for all tasks first aid covers, but with gre
 
 ---
 
-## Xenomedicine [spec] (INT)
+## Xenomedicine [spec]
+### (INT)
 
 
 

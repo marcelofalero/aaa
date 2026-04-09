@@ -2,13 +2,16 @@
 title = "Engaño"
 attribute = "PER"
 category = "Social"
+type = "skill"
+layout = "list"
 +++
 
 Esta habilidad general representa la competencia de un héroe para engañar a otros mediante la conversación y la interacción. Abarca todos los trucos y subterfugios verbales, pero los cambios de actitud provocados por esta habilidad no son necesariamente duraderos.
 
 El dado de situación de un héroe se ve modificado por el modificador de resistencia de Inteligencia del objetivo.
 
-## Habilidades de Especialidad (PER)
+## Habilidades de Especialidad
+### (PER)
 
 {{% list %}}
 - **Mentir:** Talento para despistar o engañar mediante una falsa bravuconería o mentiras descaradas.
@@ -17,7 +20,8 @@ El dado de situación de un héroe se ve modificado por el modificador de resist
 
 ---
 
-## Bribe (PER)
+## Bribe
+### (PER)
 
 Whenever a Personaje wants to offer another Personaje money, goods, information, or services to get that Personaje to do what the Personaje wants, a bribe check is called for.
 
@@ -35,7 +39,8 @@ On an **Asombroso** result, the bribe is accepted, and the target's attitude imp
 
 ---
 
-## Gamble (PER)
+## Gamble
+### (PER)
 
 This Especialidad represents a Personaje's proficiency at various games of chance. With each purchase of the Especialidad, the player selects a different game (subject to the approval of the Gamemaster) for his Personaje to be skilled in.
 

@@ -2,6 +2,8 @@
 title = "Tactics"
 attribute = "INT"
 category = "Combat"
+type = "skill"
+layout = "list"
 +++
 
 This broad skill provides a character with basic training in and an understanding of tactics and tactical situations. While tactics may come into play in many types of situations, it's most commonly used during infantry combat, space combat, and vehicle combat. 
@@ -19,7 +21,8 @@ A successful use of the skill provides a penalty to the opponent's next skill ch
 
 # Specialty Skills
 
-## Infantry tactics (INT)
+## Infantry tactics
+### (INT)
 
 The specialty skill covers battlefield strategies when the main component of the battle is individual troops.
 
@@ -29,7 +32,8 @@ The specialty skill covers battlefield strategies when the main component of the
 
 ---
 
-## Space tactics (INT)
+## Space tactics
+### (INT)
 
 Battlefield strategies involving combat between spaceships.
 
@@ -39,7 +43,8 @@ Battlefield strategies involving combat between spaceships.
 
 ---
 
-## Vehicle tactics (INT)
+## Vehicle tactics
+### (INT)
 
 Battlefield strategies involving combat where vehicles other than starships (air, land, or water) are the main component.
 

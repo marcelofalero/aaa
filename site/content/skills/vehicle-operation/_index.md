@@ -2,6 +2,8 @@
 title = "Vehicle Operation"
 attribute = "DEX"
 category = "Technical"
+type = "skill"
+layout = "list"
 +++
 
 This broad skill provides a character with a basic understanding of and proficiency with modern vehicles. Using this skill, a character can attempt to operate most normal land and water vehicles. Some military or specialized land and water vehicles may have controls that are too complex for the broad skill to cover, requiring at least some level of specialization before a character is able to operate them successfully.
@@ -16,7 +18,8 @@ For more details on vehicles, see the section on [Vehicles and Vessels](/core-me
 
 # Specialty Skills
 
-## Air vehicle (DEX)
+## Air vehicle
+### (DEX)
 
 *This skill can’t be used untrained.*
 
@@ -28,7 +31,8 @@ Types of air vehicles include propeller planes, helicopters, private jets, comme
 
 ---
 
-## Land vehicle (DEX)
+## Land vehicle
+### (DEX)
 
 This specialty skill enables a character to become trained in the use of a specific type of land vehicle. If he wants to be skilled in the operation of more than one type of land vehicle, he must purchase and improve each specialty skill separately.
 
@@ -38,7 +42,8 @@ Types of land vehicles include automobiles, motorcycles, race cars, large trucks
 
 ---
 
-## Space vehicle (DEX)
+## Space vehicle
+### (DEX)
 
 *This skill can’t be used untrained.*
 
@@ -56,7 +61,8 @@ Types of space vehicles include:
 
 ---
 
-## Water vehicle (DEX)
+## Water vehicle
+### (DEX)
 
 This specialty skill enables a character to become trained in the use of a specific type of water vehicle. If he wants to be skilled in the operation of more than one type of water vehicle, he must purchase and improve each specialty skill separately. 
 

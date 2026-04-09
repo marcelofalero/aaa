@@ -2,6 +2,8 @@
 title = "Aguante"
 attribute = "CON"
 category = "Other"
+type = "skill"
+layout = "list"
 +++
 
 Esta habilidad amplia mide la fortaleza física de un héroe con respecto a los efectos del daño Mortal y el agotamiento (fatiga).
@@ -18,7 +20,8 @@ Cuando un héroe realiza ciertas actividades que provocan fatiga, debe realizar 
 - **Fallo:** 1 punto de daño por fatiga.
 - **Éxito:** No sufre daño por fatiga.
 
-## Habilidades de Especialidad (CON)
+## Habilidades de Especialidad
+### (CON)
 
 {{% list %}}
 
@@ -41,7 +44,8 @@ Resistir el dolor solo disminuye o elimina las penalizaciones de situación caus
 
 ---
 
-## Resist pain (CON)
+## Resist pain
+### (CON)
 
 *This skill can’t be used untrained.*
 

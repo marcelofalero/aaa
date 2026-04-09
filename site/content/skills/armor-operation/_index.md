@@ -2,6 +2,8 @@
 title = "Armor Operation"
 attribute = "STR"
 category = "Other"
+type = "skill"
+layout = "list"
 +++
 
 Armor that's bulky, heavy, and cumbersome hinders the character using it. This is reflected by a penalty to the character's action check and the lessening or negating of a character's Dexterity resistance modifier. The Armor Operation broad skill and its specialty skills help to alleviate these penalties.
@@ -68,31 +70,36 @@ Rank 8: Recoil Anchor. Reduce the situation die penalty for Burst or Autofire by
 
 Rank 12: Overlapping Coverage. Share the shield's resistance modifier bonus with an ally within 2 meters against one ranged attack per round.
 
-## Combat armor (STR)
+## Combat armor
+### (STR)
 
 
 
 ---
 
-## Powered armor (STR)
+## Powered armor
+### (STR)
 
 
 
 ---
 
-## Propulsion systems (INT)
+## Propulsion systems
+### (INT)
 
 
 
 ---
 
-## Shields (STR)
+## Shields
+### (STR)
 
 
 
 ---
 
-## Tactical armor (INT)
+## Tactical armor
+### (INT)
 
 
 

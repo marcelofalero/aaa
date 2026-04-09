@@ -1,0 +1,19 @@
+<div class="skill-header">
+    <h1 class="neon-text">{{ .Page.Title }}</h1>
+    <div class="skill-info-grid">
+        <div class="skill-info-item">
+            <span class="skill-info-label">Attribute</span>
+            <span class="skill-info-value">{{ .Page.Params.attribute | default "N/A" }}</span>
+        </div>
+        <div class="skill-info-item">
+            <span class="skill-info-label">Category</span>
+            <span class="skill-info-value">{{ .Page.Params.category | default "N/A" }}</span>
+        </div>
+        <div class="skill-info-item">
+            <span class="skill-info-label">Untrained</span>
+            <span class="skill-info-value">
+                {{ if eq .Page.Params.untrained false }}Trained Only{{ else }}Allowed{{ end }}
+            </span>
+        </div>
+    </div>
+</div>

@@ -2,6 +2,8 @@
 title = "Operación de armadura"
 attribute = "STR"
 category = "Other"
+type = "skill"
+layout = "list"
 +++
 
 La armadura que es voluminosa, pesada y engorrosa dificulta al personaje que la usa. Esto se refleja en una penalización a la tirada de acción del personaje y la disminución o anulación del modificador de resistencia de Destreza del personaje. La habilidad amplia de Operación de Armadura y sus habilidades de especialidad ayudan a aliviar estas penalizaciones.
@@ -18,7 +20,8 @@ Para un personaje **no entrenado** en Operación de Armadura, siempre se aplica 
 
 *Nota: la penalización AP de las armaduras y escudos es acumulativa.*
 
-## Habilidades de Especialidad (STR)
+## Habilidades de Especialidad
+### (STR)
 
 {{% list %}}
 - **Armadura de Combate:** Dominio de armaduras pesadas y potenciadas.
@@ -63,25 +66,29 @@ Se centra en el uso táctico de escudos físicos, de energía o balísticos.
 
 ---
 
-## Powered armor (STR)
+## Powered armor
+### (STR)
 
 
 
 ---
 
-## Propulsion systems (INT)
+## Propulsion systems
+### (INT)
 
 
 
 ---
 
-## Shields (STR)
+## Shields
+### (STR)
 
 
 
 ---
 
-## Tactical armor (INT)
+## Tactical armor
+### (INT)
 
 
 

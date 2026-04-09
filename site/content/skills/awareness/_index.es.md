@@ -2,6 +2,8 @@
 title = "Alerta [Awareness]"
 attribute = "WIL"
 category = "Other"
+type = "skill"
+layout = "list"
 +++
 
 **Habilidad gratuita para personajes Fraal, Humanos, Mechalus, Sesheyan, T'sa y Weren.**
@@ -18,7 +20,8 @@ Algunos equipos de sensores pueden proporcionar beneficios a la comprobación de
 
 # Habilidades de Especialidad
 
-## Intuición (WIL)
+## Intuición
+### (WIL)
 
 Esta habilidad de especialidad representa los instintos naturales de un personaje: su capacidad para sentir el peligro cuando no hay señales obvias evidentes, para evitar la sorpresa o para realizar un salto intuitivo de lógica sin el apoyo de hechos concretos. Es la capacidad de hacer una "mejor suposición" en una situación dada.
 
@@ -30,7 +33,8 @@ Cuando un personaje quiere hacer una "mejor suposición" intuitiva, el Director 
 
 ---
 
-## Percepción (WIL)
+## Percepción
+### (WIL)
 
 Esta habilidad de especialidad representa la alerta y los poderes de observación de un personaje: el personaje nota algo ya sea consciente o subliminalmente. Mientras que la intuición es un sentimiento o sentido inexplicable, la percepción trabaja sobre señales que pueden ser detectadas por los sentidos normales: una ramita rota en un camino, el clic del seguro de un arma al ser liberado, el aroma de un perfume familiar en un bar abarrotado, un susurro en el viento. Esta habilidad puede ayudar a determinar la capacidad de un personaje para detectar señales de problemas, percibir el verdadero significado en el comentario de una figura de autoridad o notar una pista sutil que asoma entre un montón de hojas.
 
@@ -40,7 +44,8 @@ Cuando el peligro potencial existe obviamente en una situación, el uso subconsc
 
 ---
 
-## Sentido Psiónico (WIL)
+## Sentido Psiónico
+### (WIL)
 
 *Esta habilidad no puede usarse sin entrenamiento.*
 
@@ -64,7 +69,8 @@ Los personajes capaces de usar el poder de **Clarividencia** pueden usarlo para 
 
 ---
 
-## Sentido psiónico (WIL)
+## Sentido psiónico
+### (WIL)
 
 
 

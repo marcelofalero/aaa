@@ -2,6 +2,8 @@
 title = "Armas pesadas"
 attribute = "STR"
 category = "Combat"
+type = "skill"
+layout = "list"
 +++
 
 Esta habilidad amplia proporciona a un personaje entrenamiento en el uso de armamento pesado que no forma parte de una nave o vehículo, incluyendo morteros, lanzagranadas y lanzacohetes, misiles lanzados desde el hombro y armas de fuego pesadas. Las armas que forman parte de una nave grande o de un vehículo de un solo operador requieren el uso de [Operación de Sistemas](/skills/system-operation/) u [Operación de Vehículos](/skills/vehicle-operation/), respectivamente. Las armas pesadas se enumeran en la [**TABLA P40: ARMAS PESADAS**](/equipment/weapons/#heavy-weapons).
@@ -27,7 +29,8 @@ Unas pocas armas pesadas de fuego directo (así como algunos rifles y todos los 
 
 # Habilidades de especialidad
 
-## Fuego directo (STR)
+## Fuego directo
+### (STR)
 
 Esta habilidad de especialidad permite a un personaje mejorar su competencia con las armas pesadas de fuego directo. Estas armas funcionan igual que las armas de fuego normales, requiriendo que el usuario las apunte a un objetivo. Las armas pesadas de fuego directo incluyen armas de fuego de gran calibre, cañones de plasma y raiders.
 
@@ -35,7 +38,8 @@ Esta habilidad de especialidad permite a un personaje mejorar su competencia con
 
 ---
 
-## Fuego indirecto (STR)
+## Fuego indirecto
+### (STR)
 
 Esta habilidad de especialidad permite a un personaje mejorar su competencia con las armas pesadas de fuego indirecto. Estas armas pueden disparar por encima o alrededor de obstáculos; ejecutan un ataque de efecto de área en lugar de un ataque contra un objetivo específico. Las armas pesadas de fuego indirecto incluyen lanzagranadas, lanzacohetes, misiles lanzados desde el hombro y morteros.
 
