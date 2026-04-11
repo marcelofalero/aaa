@@ -6,10 +6,12 @@
   "content": {{ $page.Plain | jsonify }}
 }{{ end }}
 
+]
 {{/* Add Specialty Skills from Data */}}
 {{ $skills := .Site.Data.skills }}
-{{ range $g_idx, $group := $skills.groups }}
-  {{ range $i_idx, $item := $group.items }}
+{{ if eq .Lang "es" }}{{ $skills = index .Site.Data "skills-table.es" | default .Site.Data.skills_es }}{{ end }}
+{{ range $group := $skills.groups }}
+  {{ range $item := $group.items }}
     {{ if eq $item.type "Specialty" }},
     {
       "title": {{ $item.skill | jsonify }},
@@ -20,4 +22,38 @@
     }
     {{ end }}
   {{ end }}
-{{ end }}]
+{{ end }}
+
+{{/* Add Equipment from Data (Weapons, Armor, Cybernetics, etc.) */}}
+{{ $lang := .Lang }}
+{{ $equip_types := slice "weapons" "armor" "cybernetics" "computers" "goods_and_services" "survival_gear" }}
+{{ range $type := $equip_types }}
+  {{ $data := index $.Site.Data $type }}
+  {{ if eq $lang "es" }}
+    {{ $es_key := printf "%s_es" $type }}
+    {{ $data_es := index $.Site.Data $es_key }}
+    {{ if $data_es }}{{ $data = $data_es }}{{ end }}
+  {{ end }}
+  
+  {{ if $data }}
+    {{ $url_segment := $type | urlize }}
+    {{ range $cat_key, $category := $data }}
+      {{ if reflect.IsMap $category }}
+        {{ range $group := $category.groups }}
+          {{ range $item := $group.items }}
+            {{ if $item.name }},
+            {
+              "title": {{ $item.name | jsonify }},
+              "url": {{ printf "/equipment/%s/#%s" $url_segment ($item.name | urlize) | relLangURL | jsonify }},
+              "description": {{ printf "%s (%s)" (upper $type) ($category.name | default $cat_key) | jsonify }},
+              "section": "equipment",
+              "content": {{ printf "%s %s: %s" $item.name ($item.type | default "") ($item.description | default "") | plainify | jsonify }}
+            }
+            {{ end }}
+          {{ end }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+]

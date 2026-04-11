@@ -54,7 +54,7 @@
       {{ end }}
       {{ end }}
 
-      <tr class="data-row {{ if $hasVisibleDetails }}has-description{{ end }}"
+      <tr id="{{ $item.name | urlize }}" class="data-row {{ if $hasVisibleDetails }}has-description{{ end }}"
         data-target="{{ $rowId }}" data-type="{{ $item.type }}">
         {{ range $data.columns }}
         {{ if and (not (in $hidden_fields .key)) (ne .key "description") }}

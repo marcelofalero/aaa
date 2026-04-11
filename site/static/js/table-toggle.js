@@ -123,6 +123,42 @@
 
   const bindAllTables = () => {
     document.querySelectorAll('.table-wrapper').forEach(initTable);
+    // Handle Hash Deep-Linking
+    const expandFromHash = () => {
+      const hash = decodeURIComponent(window.location.hash.substring(1));
+      if (!hash) return;
+
+      const targetRow = document.getElementById(hash);
+      if (targetRow && targetRow.classList.contains('data-row')) {
+        // Find preceding separator
+        let prev = targetRow.previousElementSibling;
+        while (prev && !prev.classList.contains('table-separator')) {
+          prev = prev.previousElementSibling;
+        }
+        if (prev) {
+          setGroupState(prev, true);
+        }
+
+        // Expand description
+        const targetId = targetRow.getAttribute('data-target');
+        const descRow = document.getElementById(targetId);
+        if (descRow) {
+          descRow.style.display = 'table-row';
+          targetRow.classList.add('active-row');
+          
+          // Scroll to row
+          setTimeout(() => {
+            targetRow.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          }, 100);
+        }
+      }
+    };
+
+    // Run on load
+    expandFromHash();
+
+    // Run on hash change (for subsequent searches)
+    window.addEventListener('hashchange', expandFromHash);
   };
 
   // Run immediately, in case script was deferred or loaded after DOM
