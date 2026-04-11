@@ -7,6 +7,31 @@
   justify-content: center;
 }
 
+.nav-flex-container {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  width: 100% !important;
+  flex-wrap: nowrap !important;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-flex-container {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+  .search-container-fixed {
+    margin-top: 1rem;
+    width: 100% !important;
+  }
+}
+
+.search-container-fixed {
+  margin-left: auto !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
 .gallery-item {
   cursor: pointer;
   flex: 0 1 300px;
