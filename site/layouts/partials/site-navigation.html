@@ -1,13 +1,14 @@
-<nav class="ph3 ph4-ns w-100 relative" role="navigation" style="min-height: 80px; padding-top: 1rem;">
-  <div class="nav-flex-container ph2 relative" style="padding-top: 1rem; padding-bottom: 1rem;">
+<nav class="ph3 ph4-ns w-100 relative" role="navigation" style="min-height: 110px; padding-top: 0.75rem;">
+  <div class="nav-flex-container ph2 relative" style="padding-top: 0.75rem; padding-bottom: 1rem;">
     <div class="flex items-center">
       <a href="{{ .Site.Home.RelPermalink }}" class="f3 fw2 hover-neon-cyan neon-text db no-underline athelas mr4"
         style="line-height: 1.1;">
         {{ with .Site.Params.site_logo }}
         <img src="{{ urls.RelURL . }}" class="w100 mw5-ns" alt="{{ $.Site.Title }}" />
         {{ else }}
-        <div class="neon-text-glitch f5" data-text="Alterated" style="font-size: 0.8rem;">Alterated</div>
-        <div class="neon-text-glitch f4" data-text="Alternity" style="margin-left: 1rem;">Alternity</div>
+        <div class="neon-text-glitch" data-text="Alterated" style="font-size: 0.75rem; line-height: 1;">Alterated</div>
+        <div class="neon-text-glitch" data-text="Alternity" style="margin-left: 1rem; font-size: 0.9rem; line-height: 1;">Alternity</div>
+        <div class="neon-text-glitch" data-text="Alternative" style="margin-left: 2rem; font-size: 0.9rem; line-height: 1;">Alternative</div>
         {{ end }}
       </a>
 
