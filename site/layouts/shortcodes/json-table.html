@@ -18,11 +18,17 @@
 {{ end }}
 
 {{ if $key }}
-{{ $data = index $data $key }}
+  {{ $attempt := index $data $key }}
+  {{ if not $attempt }}
+    {{ if index $data "categories" }}
+      {{ $attempt = index (index $data "categories") $key }}
+    {{ end }}
+  {{ end }}
+  {{ $data = $attempt }}
 {{ end }}
 
-{{/* Specific for accordion expansion pattern */}}
-{{ $expand := .Get "expand" | default (.Get 2) | default ".*" }}
-{{ $context := dict "Page" .Page "data" $data "file" $file "key" $key "hidden_fields" $hidden_fields "expand" $expand }}
+{{/* Specific for accordion expansion pattern - default to all (.*) */}}
+{{ $expand := .Get "expand" | default ".*" }}
+{{ $context := dict "Page" .Page "root" (index hugo.Data $file) "data" $data "file" $file "key" $key "hidden_fields" $hidden_fields "expand" $expand }}
 
 {{ partial "render-table.html" $context }}

@@ -4,10 +4,12 @@
 {{ $hidden_fields := .hidden_fields }}
 
 {{ if (reflect.IsMap $data) }}
+{{ $root := .root }}
+{{ $columns := $data.columns | default $root.config.columns | default $root.columns }}
 
 {{/* Calculate visible columns count, excluding 'description' */}}
 {{ $colCount := 0 }}
-{{ range $data.columns }}
+{{ range $columns }}
 {{ if and (not (in $hidden_fields .key)) (ne .key "description") }}{{ $colCount = add $colCount 1 }}{{ end }}
 {{ end }}
 
@@ -23,7 +25,7 @@
   <table class="interactive-table">
     <thead>
       <tr>
-        {{ range $data.columns }}
+        {{ range $columns }}
         {{ if and (not (in $hidden_fields .key)) (ne .key "description") }}
         <th>{{ .name }}</th>
         {{ end }}
@@ -32,17 +34,29 @@
     </thead>
     <tbody>
       {{ $expandPattern := .expand }}
-      {{ range $data.groups }}
+      {{ range $g_key, $g_val := $data.groups }}
+      {{ $groupName := "" }}
+      {{ $groupItems := slice }}
+      {{ if (reflect.IsMap $g_val) }}
+        {{/* Format A: { "name": "...", "items": [...] } */}}
+        {{ $groupName = $g_val.name }}
+        {{ $groupItems = $g_val.items }}
+      {{ else if (reflect.IsSlice $g_val) }}
+        {{/* Format B: "Group Name": [ {item1}, {item2} ] */}}
+        {{ $groupName = $g_key }}
+        {{ $groupItems = $g_val }}
+      {{ end }}
+
       {{ $isExpanded := false }}
-      {{ if and $expandPattern (findRE $expandPattern .name) }}{{ $isExpanded = true }}{{ end }}
-      <tr class="table-separator accordion-toggle" data-group-name="{{ .name }}" {{ if $isExpanded
+      {{ if and $expandPattern (findRE $expandPattern $groupName) }}{{ $isExpanded = true }}{{ end }}
+      <tr class="table-separator accordion-toggle" data-group-name="{{ $groupName }}" {{ if $isExpanded
         }}data-expanded="true" {{ end }}>
         <td colspan="{{ $colCount }}">
           <span class="chevron mr2">{{ if $isExpanded }}▼{{ else }}▶{{ end }}</span>
-          {{ .name }}
+          {{ $groupName }}
         </td>
       </tr>
-      {{ range $index, $item := .items }}
+      {{ range $index, $item := $groupItems }}
       {{ $rowId := printf "desc-%s-%s-%s-%d" $file $key ($item.skill | urlize) $index }}
 
       {{/* Check if there are ANY displayable fields in expansion */}}
@@ -56,7 +70,7 @@
 
       <tr id="{{ $item.name | urlize }}" class="data-row {{ if $hasVisibleDetails }}has-description{{ end }}"
         data-target="{{ $rowId }}" data-type="{{ $item.type }}">
-        {{ range $data.columns }}
+        {{ range $columns }}
         {{ if and (not (in $hidden_fields .key)) (ne .key "description") }}
         <td class="cell-{{ .key }}">
           {{ if .link }}
@@ -76,7 +90,7 @@
           <div>
             <div class="mb2">
               {{ range $field_key := $hidden_fields }}
-              {{ $column_slice := where $data.columns "key" $field_key }}
+              {{ $column_slice := where $columns "key" $field_key }}
               {{ if $column_slice }}
               {{ $column := index $column_slice 0 }}
               {{ $val := index $item $field_key }}
