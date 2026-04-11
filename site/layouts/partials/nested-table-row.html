@@ -3,7 +3,7 @@
 {{ $level := .level }}
 {{ $Page := .Page }}
 
-<tr class="nested-table-row level-{{ $level }}" data-level="{{ $level }}">
+<tr class="nested-table-row level-{{ $level }} {{ if $item.children }}has-children{{ end }}" data-level="{{ $level }}">
   {{ range $index, $field := $fields }}
   <td class="cell-{{ $field.key }} {{ if eq $index 0 }}indent-{{ $level }}{{ end }}">
     {{ $val := index $item $field.key }}

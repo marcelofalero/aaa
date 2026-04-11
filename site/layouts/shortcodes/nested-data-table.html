@@ -39,10 +39,11 @@ document.addEventListener('DOMContentLoaded', function() {
   const searchInput = container.querySelector('.nested-table-search');
   const rows = container.querySelectorAll('.nested-table-row');
 
+  // Search Logic
   searchInput.addEventListener('input', function() {
     const query = this.value.toLowerCase().trim();
     
-    rows.forEach(row => { row.style.display = 'none'; });
+    rows.forEach(row => { row.style.display = 'none'; row.classList.remove('hidden-by-search'); });
 
     rows.forEach(row => {
       const text = row.textContent.toLowerCase();
@@ -62,10 +63,54 @@ document.addEventListener('DOMContentLoaded', function() {
           }
         } else {
           row.style.display = '';
+          // If searching is cleared, respect collapsed state
+          checkCollapsedState();
         }
+      } else {
+        row.classList.add('hidden-by-search');
       }
     });
   });
+
+  // Branch Toggle Logic
+  container.addEventListener('click', function(e) {
+    const row = e.target.closest('.nested-table-row.has-children');
+    if (!row) return;
+    
+    // Don't toggle if clicking a link
+    if (e.target.tagName === 'A' || e.target.closest('a')) return;
+
+    row.classList.toggle('collapsed');
+    checkCollapsedState();
+  });
+
+  function checkCollapsedState() {
+    if (searchInput.value.trim() !== '') return; // Don't hide items while searching
+
+    let collapsedLevels = [];
+
+    rows.forEach(row => {
+      const level = parseInt(row.getAttribute('data-level'));
+      
+      // Remove any previously set collapse-hiding
+      row.style.display = '';
+
+      // Check if any ancestor level is collapsed
+      const isHiddenByAncestor = collapsedLevels.some(l => level > l);
+      if (isHiddenByAncestor) {
+        row.style.display = 'none';
+      }
+
+      // Update collapsed levels stack
+      // 1. Remove levels deeper than current
+      collapsedLevels = collapsedLevels.filter(l => l < level);
+      
+      // 2. If this row is collapsed, add its level to stack
+      if (row.classList.contains('collapsed')) {
+        collapsedLevels.push(level);
+      }
+    });
+  }
 });
 </script>
 
@@ -102,6 +147,25 @@ document.addEventListener('DOMContentLoaded', function() {
   text-align: left;
 }
 
+/* Branch Toggle Visuals */
+.has-children {
+  cursor: pointer;
+}
+
+.has-children td:first-child::after {
+  content: '▼';
+  font-size: 0.6rem;
+  margin-left: 8px;
+  opacity: 0.5;
+  display: inline-block;
+  transition: transform 0.2s ease;
+  vertical-align: middle;
+}
+
+.has-children.collapsed td:first-child::after {
+  transform: rotate(-90deg);
+}
+
 /* Tier 1 - Categories */
 .nested-table-row.level-1 td {
   background-color: transparent !important;
@@ -119,21 +183,51 @@ document.addEventListener('DOMContentLoaded', function() {
   text-align: left;
 }
 
+/* Tier 2 - Primary Items (Broad Skills) */
+.nested-table-row.level-2 td {
+  background-color: rgba(56, 158, 189, 0.1) !important;
+  color: var(--accent-cyan) !important;
+  font-weight: 600;
+  border-bottom: 2px solid rgba(56, 158, 189, 0.2);
+  font-size: 0.95rem;
+  padding-top: 0.75rem !important;
+  padding-bottom: 0.75rem !important;
+}
+
+/* Tier 3 - Sub Items (Specialty Skills) */
+.nested-table-row.level-3 td {
+  background-color: transparent !important;
+  font-size: 0.85rem;
+  color: var(--table-text-light) !important;
+  opacity: 0.75;
+  border-bottom: 1px solid rgba(128, 153, 172, 0.1);
+}
+
+.nested-table-row.level-3:hover td {
+  opacity: 1;
+}
+
 /* Indentation Logic */
 .nested-table td.indent-1 { padding-left: 12px !important; }
-.nested-table td.indent-2 { padding-left: 30px !important; }
-.nested-table td.indent-3 { padding-left: 50px !important; }
+.nested-table td.indent-2 { padding-left: 20px !important; }
+.nested-table td.indent-3 { padding-left: 45px !important; }
 
-.nested-table td.indent-2::before,
+.nested-table td.indent-2::before {
+  content: '› ';
+  color: var(--accent-cyan);
+  font-weight: bold;
+  margin-right: 8px;
+}
+
 .nested-table td.indent-3::before {
   content: '└ ';
-  opacity: 0.5;
+  opacity: 0.4;
   margin-right: 8px;
 }
 
 /* Hover effect for data rows (Tier 2 and 3) */
 .nested-table-row:not(.level-1):hover td {
-  background-color: rgba(75, 181, 193, 0.15);
+  background-color: rgba(75, 181, 193, 0.15) !important;
 }
 
 /* Custom Table Wrapper Override for consistency */
