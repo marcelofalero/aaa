@@ -14,7 +14,10 @@ window.addEventListener('DOMContentLoaded', () => {
     });
 
     // Fetch index
-    fetch('/index.json')
+    const lang = document.documentElement.lang || 'en';
+    const indexPath = lang.startsWith('es') ? '/es/index.json' : '/index.json';
+
+    fetch(indexPath)
         .then(response => response.json())
         .then(data => {
             const options = {
@@ -37,12 +40,13 @@ window.addEventListener('DOMContentLoaded', () => {
         }
 
         const results = fuse.search(query);
-        displayResults(results);
+        displayResults(results, lang);
     });
 
-    function displayResults(results) {
+    function displayResults(results, lang) {
         if (results.length === 0) {
-            searchResults.innerHTML = '<div class="pa3 silver f6 italic">No matches found in library.</div>';
+            const noMatchesMsg = lang.startsWith('es') ? 'No se encontraron coincidencias.' : 'No matches found in library.';
+            searchResults.innerHTML = `<div class="pa3 silver f6 italic">${noMatchesMsg}</div>`;
         } else {
             const html = results.slice(0, 12).map(result => {
                 const item = result.item;

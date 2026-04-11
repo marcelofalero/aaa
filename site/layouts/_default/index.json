@@ -1,25 +1,34 @@
-[{{ range $index, $page := .Site.RegularPages }}{{ if $index }}, {{ end }}{{ $section := index (split $page.File.Dir "/") 0 }}{
-  "title": {{ $page.Title | jsonify }},
-  "url": {{ $page.RelPermalink | jsonify }},
-  "description": {{ $page.Params.description | default $page.Summary | jsonify }},
-  "section": {{ $section | jsonify }},
-  "content": {{ $page.Plain | jsonify }}
-}{{ end }}
+[{{ $first := true }}
+{{ range $page := .Site.RegularPages }}
+  {{ if not $first }}, {{ end }}
+  {{ $section := index (split $page.File.Dir "/") 0 }}
+  {
+    "title": {{ $page.Title | jsonify }},
+    "url": {{ $page.RelPermalink | jsonify }},
+    "description": {{ $page.Params.description | default $page.Summary | jsonify }},
+    "section": {{ $section | jsonify }},
+    "content": {{ $page.Plain | jsonify }}
+  }
+  {{ $first = false }}
+{{ end }}
 
-]
 {{/* Add Specialty Skills from Data */}}
 {{ $skills := .Site.Data.skills }}
 {{ if eq .Lang "es" }}{{ $skills = index .Site.Data "skills-table.es" | default .Site.Data.skills_es }}{{ end }}
-{{ range $group := $skills.groups }}
-  {{ range $item := $group.items }}
-    {{ if eq $item.type "Specialty" }},
-    {
-      "title": {{ $item.skill | jsonify }},
-      "url": {{ $item.skill_url | jsonify }},
-      "description": {{ printf "Specialty Skill (%s)" $item.attribute | jsonify }},
-      "section": "skills",
-      "content": {{ printf "%s specialty skill under %s attribute." $item.skill $item.attribute | jsonify }}
-    }
+{{ if $skills }}
+  {{ range $group := $skills.groups }}
+    {{ range $item := $group.items }}
+      {{ if eq $item.type "Specialty" }}
+        {{ if not $first }}, {{ end }}
+        {
+          "title": {{ $item.skill | jsonify }},
+          "url": {{ $item.skill_url | jsonify }},
+          "description": {{ printf "Specialty Skill (%s)" $item.attribute | jsonify }},
+          "section": "skills",
+          "content": {{ printf "%s specialty skill under %s attribute." $item.skill $item.attribute | jsonify }}
+        }
+        {{ $first = false }}
+      {{ end }}
     {{ end }}
   {{ end }}
 {{ end }}
@@ -41,19 +50,20 @@
       {{ if reflect.IsMap $category }}
         {{ range $group := $category.groups }}
           {{ range $item := $group.items }}
-            {{ if $item.name }},
-            {
-              "title": {{ $item.name | jsonify }},
-              "url": {{ printf "/equipment/%s/#%s" $url_segment ($item.name | urlize) | relLangURL | jsonify }},
-              "description": {{ printf "%s (%s)" (upper $type) ($category.name | default $cat_key) | jsonify }},
-              "section": "equipment",
-              "content": {{ printf "%s %s: %s" $item.name ($item.type | default "") ($item.description | default "") | plainify | jsonify }}
-            }
+            {{ if $item.name }}
+              {{ if not $first }}, {{ end }}
+              {
+                "title": {{ $item.name | jsonify }},
+                "url": {{ printf "/equipment/%s/#%s" $url_segment ($item.name | urlize) | relLangURL | jsonify }},
+                "description": {{ printf "%s (%s)" (upper $type) ($category.name | default $cat_key) | jsonify }},
+                "section": "equipment",
+                "content": {{ printf "%s %s: %s" $item.name ($item.type | default "") ($item.description | default "") | plainify | jsonify }}
+              }
+              {{ $first = false }}
             {{ end }}
           {{ end }}
         {{ end }}
       {{ end }}
     {{ end }}
   {{ end }}
-{{ end }}
-]
+{{ end }}]
