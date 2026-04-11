@@ -5,5 +5,6 @@
 3. **Terminology Consistency:** Always replace mentions of "hero" with "character" unless otherwise explicitly instructed. 
 4. **Format Preservation:** Use the standardized Markdown conventions established on the site (e.g., `▶` or `⊗` for modifiers, bolding instead of bulleted lists when sentences naturally flow, etc.).
 5. **Translation:** When translating always check @content/notes/terminology_mapping.md for the correct translation of terms.
-6. **Git Workflow:** Always use the GitHub CLI (`gh`) for code changes. Create a feature branch, commit your changes, and then use `gh pr create --fill` followed by `gh pr merge --merge --delete-branch` to finalize the work into the `main` branch.
+6. **Git Workflow:** Always use the GitHub CLI (`gh`) for code changes. Create a feature branch, commit your changes, and then use `gh pr create --fill`. Wait for explicit user approval before using `gh pr merge --merge --delete-branch` to finalize the work into the `main` branch.
 7. **Source Integrity:** When importing content from the source, it should not be altered unless explicitly requested. Maintain the original text, structure, and meaning as found in the source documents.
+8. **Explicit Readiness:** Do not merge or push changes to the `main` branch unless the user explicitly confirms that the work is ready. Always wait for approval after creating a pull request.
