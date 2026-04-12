@@ -1,4 +1,9 @@
 {
+  "search_config": {
+    "display_name": "GOODS & SERVICES",
+    "base_url": "/equipment/goods-and-services/",
+    "section": "equipment"
+  },
   "medical_gear": {
     "columns": [
       { "name": "Item", "key": "name" },

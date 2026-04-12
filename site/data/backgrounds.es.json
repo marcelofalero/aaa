@@ -1,4 +1,9 @@
 {
+  "search_config": {
+    "display_name": "PROCEDENCIA",
+    "base_url": "/character-creation/backgrounds/",
+    "section": "rules"
+  },
   "all": {
     "columns": [
       {

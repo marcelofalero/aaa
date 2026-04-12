@@ -1,4 +1,9 @@
 {
+    "search_config": {
+        "display_name": "CYBERNETICS",
+        "base_url": "/core-mechanics/cybernetics/",
+        "section": "equipment"
+    },
     "config": {
         "columns": [
             {

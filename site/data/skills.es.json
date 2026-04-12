@@ -1,4 +1,9 @@
 {
+    "search_config": {
+        "display_name": "HABILIDADES",
+        "base_url": "/skills/",
+        "section": "skills"
+    },
     "columns": [
         {
             "key": "skill",

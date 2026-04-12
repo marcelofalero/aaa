@@ -1,63 +1,71 @@
 [{{ $first := true }}
 {{ range $page := .Site.RegularPages }}
-  {{ if not $first }}, {{ end }}
   {{ $section := index (split $page.File.Dir "/") 0 }}
-  {
-    "title": {{ $page.Title | jsonify }},
-    "url": {{ $page.RelPermalink | jsonify }},
-    "description": {{ $page.Params.description | default $page.Summary | jsonify }},
-    "section": {{ $section | jsonify }},
-    "content": {{ $page.Plain | jsonify }}
-  }
-  {{ $first = false }}
+  {{ if not (in (slice "backgrounds" "equipment" "skills" "perks_and_flaws" "species" "professions") $section) }}
+    {{ if not $first }}, {{ end }}
+    {
+      "title": {{ $page.Title | plainify | jsonify }},
+      "url": {{ $page.RelPermalink | jsonify }},
+      "description": {{ $page.Params.description | default $page.Summary | plainify | truncate 120 | jsonify }},
+      "section": {{ $section | jsonify }}
+    }
+    {{ $first = false }}
+  {{ end }}
 {{ end }}
 
-{{/* Add Specialty Skills from Data */}}
-{{ $skills := .Site.Data.skills }}
-{{ if eq .Lang "es" }}{{ $skills = index .Site.Data "skills-table.es" | default .Site.Data.skills_es }}{{ end }}
-{{ if $skills }}
-  {{ range $group := $skills.groups }}
-    {{ range $item := $group.items }}
-      {{ if eq $item.type "Specialty" }}
-        {{ if not $first }}, {{ end }}
-        {
-          "title": {{ $item.skill | jsonify }},
-          "url": {{ $item.skill_url | jsonify }},
-          "description": {{ printf "Specialty Skill (%s)" $item.attribute | jsonify }},
-          "section": "skills",
-          "content": {{ printf "%s specialty skill under %s attribute." $item.skill $item.attribute | jsonify }}
-        }
-        {{ $first = false }}
-      {{ end }}
+{{/* Add Equipment and other discovered Data */}}
+{{ range $file_key, $data := hugo.Data }}
+  {{ if and (reflect.IsMap $data) $data.search_config }}
+    {{/* Language matching logic: 
+         - In EN build: skip ES files
+         - In ES build: prioritize ES files, fallback to EN if no ES version exists 
+    */}}
+    {{ $is_es := or (in $file_key ".es") (in $file_key "_es") }}
+    {{ $base_key := strings.TrimSuffix ".es" (strings.TrimSuffix "_es" $file_key) }}
+    {{ $has_es := index hugo.Data (printf "%s.es" $base_key) | default (index hugo.Data (printf "%s_es" $base_key)) }}
+    
+    {{ $should_index := false }}
+    {{ if eq $.Lang "es" }}
+      {{ if or $is_es (not $has_es) }}{{ $should_index = true }}{{ end }}
+    {{ else }}
+      {{ if not $is_es }}{{ $should_index = true }}{{ end }}
     {{ end }}
-  {{ end }}
-{{ end }}
 
-{{/* Add Equipment from Data (Weapons, Armor, Cybernetics, etc.) */}}
-{{ $lang := .Lang }}
-{{ $equip_types := slice "weapons" "armor" "cybernetics" "computers" "goods_and_services" "survival_gear" }}
-{{ range $type := $equip_types }}
-  {{ $data := index $.Site.Data $type }}
-  {{ if eq $lang "es" }}
-    {{ $es_key := printf "%s_es" $type }}
-    {{ $data_es := index $.Site.Data $es_key }}
-    {{ if $data_es }}{{ $data = $data_es }}{{ end }}
-  {{ end }}
-  
-  {{ if $data }}
-    {{ $url_segment := $type | urlize }}
-    {{ range $cat_key, $category := $data }}
-      {{ if reflect.IsMap $category }}
-        {{ range $group := $category.groups }}
-          {{ range $item := $group.items }}
-            {{ if $item.name }}
+    {{ if $should_index }}
+      {{ $conf := $data.search_config }}
+      {{/* Discovery: Look for 'groups' at top level or within categories */}}
+      {{ $targets := slice }}
+      {{ if $data.groups }}
+        {{ $targets = $targets | append (dict "name" "" "groups" $data.groups) }}
+      {{ end }}
+      {{ $cats := $data.categories | default $data }}
+      {{ range $k, $v := $cats }}
+        {{ if and (reflect.IsMap $v) (ne $k "search_config") (ne $k "config") (ne $k "groups") }}
+          {{ if $v.groups }}
+            {{ $targets = $targets | append (dict "name" $k "groups" $v.groups) }}
+          {{ end }}
+        {{ end }}
+      {{ end }}
+
+      {{ range $target := $targets }}
+        {{ $cat_name := $target.name }}
+        {{ range $g_key, $g_val := $target.groups }}
+          {{ $items := slice }}
+          {{ if reflect.IsMap $g_val }}
+            {{ $items = $g_val.items }}
+          {{ else if reflect.IsSlice $g_val }}
+            {{ $items = $g_val }}
+          {{ end }}
+          
+          {{ range $item := $items }}
+            {{ $item_title := $item.name | default $item.skill }}
+            {{ if $item_title }}
               {{ if not $first }}, {{ end }}
               {
-                "title": {{ $item.name | jsonify }},
-                "url": {{ printf "/equipment/%s/#%s" $url_segment ($item.name | urlize) | relLangURL | jsonify }},
-                "description": {{ printf "%s (%s)" (upper $type) ($category.name | default $cat_key) | jsonify }},
-                "section": "equipment",
-                "content": {{ printf "%s %s: %s" $item.name ($item.type | default "") ($item.description | default "") | plainify | jsonify }}
+                "title": {{ $item_title | jsonify }},
+                "url": {{ $item.skill_url | default (printf "%s#%s" ($conf.base_url | default "/") ($item_title | urlize)) | relLangURL | jsonify }},
+                "description": {{ printf "%s%s" ($conf.display_name | default "EQUIPMENT") (cond (ne $cat_name "") (printf " (%s)" (upper $cat_name)) "") | jsonify }},
+                "section": {{ $conf.section | default "equipment" | jsonify }}
               }
               {{ $first = false }}
             {{ end }}

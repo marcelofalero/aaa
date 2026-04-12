@@ -1,4 +1,9 @@
 {
+  "search_config": {
+    "display_name": "PERKS & FLAWS",
+    "base_url": "/character-creation/perks-and-flaws/",
+    "section": "rules"
+  },
   "perks": {
     "columns": [
       { "name": "Perk", "key": "name" },

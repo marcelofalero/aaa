@@ -57,7 +57,7 @@
         </td>
       </tr>
       {{ range $index, $item := $groupItems }}
-      {{ $rowId := printf "desc-%s-%s-%s-%d" $file $key ($item.skill | urlize) $index }}
+      {{ $rowId := printf "desc-%s-%s-%s-%d" $file $key ($item.name | urlize) $index }}
 
       {{/* Check if there are ANY displayable fields in expansion */}}
       {{ $hasVisibleDetails := false }}

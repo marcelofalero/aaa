@@ -1,4 +1,9 @@
 {
+    "search_config": {
+        "display_name": "CIBERNÉTICA",
+        "base_url": "/core-mechanics/cybernetics/",
+        "section": "rules"
+    },
     "config": {
         "columns": [
             {

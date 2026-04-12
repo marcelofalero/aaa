@@ -1,4 +1,9 @@
 {
+    "search_config": {
+        "display_name": "WEAPONS",
+        "base_url": "/equipment/weapons/",
+        "section": "equipment"
+    },
     "melee": {
         "columns": [
             {

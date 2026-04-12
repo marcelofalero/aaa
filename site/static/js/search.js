@@ -48,10 +48,21 @@ window.addEventListener('DOMContentLoaded', () => {
             const noMatchesMsg = lang.startsWith('es') ? 'No se encontraron coincidencias.' : 'No matches found in library.';
             searchResults.innerHTML = `<div class="pa3 silver f6 italic">${noMatchesMsg}</div>`;
         } else {
-            const html = results.slice(0, 12).map(result => {
+            const html = results.slice(0, 8).map(result => {
                 const item = result.item;
-                const section = item.section ? item.section.charAt(0).toUpperCase() + item.section.slice(1) : 'General';
+                const sectionRaw = item.section || 'General';
+                const section = sectionRaw.charAt(0).toUpperCase() + sectionRaw.slice(1);
                 
+                // Icon mapping
+                let icon = '📄'; // Default
+                if (sectionRaw.includes('equipment')) icon = '🛠️';
+                if (sectionRaw.includes('weapon')) icon = '⚔️';
+                if (sectionRaw.includes('skill')) icon = '🎯';
+                if (sectionRaw.includes('rules')) icon = '📖';
+                if (sectionRaw.includes('species')) icon = '👥';
+                if (sectionRaw.includes('profession')) icon = '👷';
+                if (sectionRaw.includes('cybernetics')) icon = '🦾';
+
                 // Simple highlighting logic
                 let title = item.title;
                 if (result.matches) {
@@ -63,12 +74,9 @@ window.addEventListener('DOMContentLoaded', () => {
                 }
 
                 return `
-                    <a href="${item.url}" class="db pa3 no-underline search-result-item">
-                        <div class="flex items-center justify-between mb1">
-                            <div class="neon-cyan fw6 f5">${title}</div>
-                            <span class="badge ml2">${section}</span>
-                        </div>
-                        <div class="f7 silver truncate o-70">${item.description || 'View details...'}</div>
+                    <a href="${item.url}" class="pa2 no-underline search-result-item flex items-center" style="display: flex !important; align-items: center !important; text-decoration: none !important;">
+                        <span class="mr3 f5 flex-shrink-0" style="width: 24px; text-align: center; display: inline-block;" title="${section}">${icon}</span>
+                        <span class="neon-cyan fw6 f7 truncate flex-auto" style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">${title}</span>
                     </a>
                 `;
             }).join('');
