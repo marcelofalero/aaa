@@ -56,10 +56,12 @@ window.addEventListener('DOMContentLoaded', () => {
                 // Icon mapping
                 let icon = '📄'; // Default
                 if (sectionRaw.includes('equipment')) icon = '🛠️';
+                if (sectionRaw.includes('armor')) icon = '🛡️';
                 if (sectionRaw.includes('weapon')) icon = '⚔️';
                 if (sectionRaw.includes('skill')) icon = '🎯';
+                if (sectionRaw.includes('perk')) icon = '✨';
                 if (sectionRaw.includes('rules')) icon = '📖';
-                if (sectionRaw.includes('species')) icon = '👥';
+                if (sectionRaw.includes('species')) icon = '👽';
                 if (sectionRaw.includes('profession')) icon = '👷';
                 if (sectionRaw.includes('cybernetics')) icon = '🦾';
 
