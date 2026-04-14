@@ -1,0 +1,409 @@
+- discipline: Biokinesis
+  attribute: CON
+  url: /core-mechanics/psionics/biokinesis/
+  cost: 6
+  description:
+    en: Manipulate the user's or another living being's biology and physiology.
+    es: Manipula la biología y fisiología del usuario o de otro ser vivo.
+  powers:
+  - name: Bio-armor
+    attribute: CON
+    cost: 5
+    url: /core-mechanics/psionics/biokinesis/#bio-armor
+    description:
+      en: Psionically reinforces skin for protection.
+      es: Refuerza psiónicamente la piel para brindar protección.
+  - name: Bioweapon
+    attribute: CON
+    cost: 5
+    url: /core-mechanics/psionics/biokinesis/#bioweapon
+    description:
+      en: Generates a field of kinetic energy manifesting as a staff or sword.
+      es: Genera un campo de energía cinética que se manifiesta como un bastón o una espada.
+  - name: Clamber
+    attribute: CON
+    cost: 5
+    url: /core-mechanics/psionics/biokinesis/#clamber
+    description:
+      en: Generate tiny suckers on hands and feet to climb vertical or inverted surfaces.
+      es: Genera pequeñas ventosas en manos y pies para trepar por superficies verticales o invertidas.
+  - name: Control Metabolism
+    attribute: CON
+    cost: 5
+    url: /core-mechanics/psionics/biokinesis/#control-metabolism
+    description:
+      en: Regulate metabolic processes to survive hostile environments or boost physical performance.
+      es: Regula los procesos metabólicos para sobrevivir en entornos hostiles o mejorar el rendimiento físico.
+  - name: Heal
+    attribute: CON
+    cost: 5
+    url: /core-mechanics/psionics/biokinesis/#heal
+    trained_only: true
+    description:
+      en: Mentally mend wounds or cure diseases.
+      es: Cura mentalmente heridas o enfermedades.
+  - name: Intangibility
+    attribute: CON
+    cost: 5
+    url: /core-mechanics/psionics/biokinesis/#intangibility
+    description:
+      en: Reorder molecules to become immaterial and pass through solid objects.
+      es: Reordena las moléculas para volverse inmaterial y atravesar objetos sólidos.
+  - name: Morph
+    attribute: CON
+    cost: 5
+    url: /core-mechanics/psionics/biokinesis/#morph
+    trained_only: true
+    description:
+      en: Alter physical features to disguise identity or squeeze into small openings.
+      es: Altera los rasgos físicos para disfrazar la identidad o entrar en aberturas pequeñas.
+  - name: Rejuvenate
+    attribute: CON
+    cost: 5
+    url: /core-mechanics/psionics/biokinesis/#rejuvenate
+    description:
+      en: Offset fatigue or stun damage by stimulating the body's recovery.
+      es: Compensa el daño por fatiga o aturdimiento estimulando la recuperación del cuerpo.
+  - name: Shatter
+    attribute: CON
+    cost: 5
+    url: /core-mechanics/psionics/biokinesis/#shatter
+    description:
+      en: Direct bio-energy to break solid surfaces or armor.
+      es: Dirige la bioenergía para romper superficies sólidas o armaduras.
+  - name: Transfer Damage
+    attribute: CON
+    cost: 5
+    url: /core-mechanics/psionics/biokinesis/#transfer-damage
+    description:
+      en: Alleviate another's damage or disease by absorbing it into the psion's own body.
+      es: Alivia el daño o la enfermedad de otro absorbiéndolo en el propio cuerpo del psiónico.
+
+- discipline: ESP
+  attribute: INT
+  url: /core-mechanics/psionics/esp/
+  cost: 6
+  description:
+    en: Experience environment beyond normal senses using the mind.
+    es: Experimenta el entorno más allá de los sentidos normales usando la mente.
+  powers:
+  - name: Battle Mind
+    attribute: INT
+    cost: 5
+    url: /core-mechanics/psionics/esp/#battle-mind
+    description:
+      en: Focus the mind on battle to increase reaction time and accuracy.
+      es: Enfoca la mente en la batalla para aumentar el tiempo de reacción y la precisión.
+  - name: Clairaudience
+    attribute: INT
+    cost: 5
+    url: /core-mechanics/psionics/esp/#clairaudience
+    description:
+      en: Project the mind to a location to hear sounds as if physically present.
+      es: Proyecta la mente a un lugar para escuchar sonidos como si estuvieras físicamente allí.
+  - name: Clairvoyance
+    attribute: INT
+    cost: 5
+    url: /core-mechanics/psionics/esp/#clairvoyance
+    description:
+      en: Project the mind to a location to see everything as if physically there.
+      es: Proyecta la mente a un lugar para verlo todo como si estuvieras físicamente allí.
+  - name: Dream Hunt
+    attribute: INT
+    cost: 5
+    url: /core-mechanics/psionics/esp/#dream-hunt
+    description:
+      en: Mentally engage in a hunt to pinpoint a subject's future location.
+      es: Participa mentalmente en una caza para localizar la ubicación futura de un sujeto.
+  - name: Empathy
+    attribute: INT
+    cost: 5
+    url: /core-mechanics/psionics/esp/#empathy
+    description:
+      en: Read surface emotions and bioelectric fields of others.
+      es: Lee las emociones superficiales y los campos bioeléctricos de otros.
+  - name: Mind Reading
+    attribute: INT
+    cost: 5
+    url: /core-mechanics/psionics/esp/#mind-reading
+    description:
+      en: Read surface thoughts of subjects within range.
+      es: Lee los pensamientos superficiales de sujetos dentro del alcance.
+  - name: Navcognition
+    attribute: INT
+    cost: 5
+    url: /core-mechanics/psionics/esp/#navcognition
+    trained_only: true
+    description:
+      en: Innate ability to know exact location relative to a fixed point; allows astrogation.
+      es: Habilidad innata para conocer la ubicación exacta en relación con un punto fijo; permite la astronavegación.
+  - name: Postcognition
+    attribute: INT
+    cost: 5
+    url: /core-mechanics/psionics/esp/#postcognition
+    description:
+      en: Sense psychic residue to see past events in an area or object.
+      es: Siente el residuo psíquico para ver eventos pasados en un área u objeto.
+  - name: Precognition
+    attribute: INT
+    cost: 5
+    url: /core-mechanics/psionics/esp/#precognition
+    trained_only: true
+    description:
+      en: Receive impressions and flashes about possible future events.
+      es: Recibe impresiones y destellos sobre posibles eventos futuros.
+  - name: Psychometry
+    attribute: INT
+    cost: 5
+    url: /core-mechanics/psionics/esp/#psychometry
+    description:
+      en: Read psychic impressions from inanimate objects through touch.
+      es: Lee impresiones psíquicas de objetos inanimados a través del tacto.
+
+- discipline: Psychoportation
+  attribute: WIL
+  url: /core-mechanics/psionics/psychoportation/
+  cost: 6
+  description:
+    en: Control time and space through mental discipline.
+    es: Controla el tiempo y el espacio mediante la disciplina mental.
+  powers:
+  - name: Alter Speed
+    attribute: WIL
+    cost: 5
+    url: /core-mechanics/psionics/psychoportation/#alter-speed
+    trained_only: true
+    description:
+      en: Accelerate or decelerate an object or living being.
+      es: Acelera o desacelera un objeto o ser vivo.
+  - name: Apportation
+    attribute: WIL
+    cost: 5
+    url: /core-mechanics/psionics/psychoportation/#apportation
+    trained_only: true
+    description:
+      en: Mentally transport objects or others without traveling with them.
+      es: Transporta mentalmente objetos u otros sin viajar con ellos.
+  - name: Duplicate
+    attribute: WIL
+    cost: 5
+    url: /core-mechanics/psionics/psychoportation/#duplicate
+    trained_only: true
+    description:
+      en: Reach into an alternate timeline to bring a future self into the present.
+      es: Alcanza una línea de tiempo alternativa para traer un yo futuro al presente.
+  - name: Teleportation
+    attribute: WIL
+    cost: 5
+    url: /core-mechanics/psionics/psychoportation/#teleportation
+    trained_only: true
+    description:
+      en: Instantly travel from one location to another.
+      es: Viaja instantáneamente de un lugar a otro.
+  - name: Timeslip
+    attribute: WIL
+    cost: 5
+    url: /core-mechanics/psionics/psychoportation/#timeslip
+    trained_only: true
+    description:
+      en: Jump forward in time by moments, minutes, or hours.
+      es: Salta hacia adelante en el tiempo por momentos, minutos u horas.
+
+- discipline: Telekinesis
+  attribute: WIL
+  url: /core-mechanics/psionics/telekinesis/
+  cost: 6
+  description:
+    en: Manipulate and move physical objects using the power of the mind.
+    es: Manipula y mueve objetos físicos usando el poder de la mente.
+  powers:
+  - name: Cryokinetics
+    attribute: WIL
+    cost: 5
+    url: /core-mechanics/psionics/telekinesis/#cryokinetics
+    trained_only: true
+    description:
+      en: Absorb thermal energy to freeze objects or areas.
+      es: Absorbe energía térmica para congelar objetos o áreas.
+  - name: Electrokinetics
+    attribute: WIL
+    cost: 5
+    url: /core-mechanics/psionics/telekinesis/#electrokinetics
+    trained_only: true
+    description:
+      en: Control and generate electrical energy to power devices or attack.
+      es: Controla y genera energía eléctrica para alimentar dispositivos o atacar.
+  - name: Kinetic Blow
+    attribute: WIL
+    cost: 5
+    url: /core-mechanics/psionics/telekinesis/#kinetic-blow
+    trained_only: true
+    description:
+      en: Focus kinetic energy into a single physical strike.
+      es: Enfoca la energía cinética en un solo golpe físico.
+  - name: Kinetic Shield
+    attribute: WIL
+    cost: 5
+    url: /core-mechanics/psionics/telekinesis/#kinetic-shield
+    description:
+      en: Create a field of force to deflect physical and energy attacks.
+      es: Crea un campo de fuerza para desviar ataques físicos y energéticos.
+  - name: Levitation
+    attribute: WIL
+    cost: 5
+    url: /core-mechanics/psionics/telekinesis/#levitation
+    description:
+      en: Defy gravity to lift oneself or others.
+      es: Desafía la gravedad para levantarte a ti mismo o a otros.
+  - name: Photokinetics
+    attribute: WIL
+    cost: 5
+    url: /core-mechanics/psionics/telekinesis/#photokinetics
+    trained_only: true
+    description:
+      en: Manipulate light to create flashes, illuminate, or fire lasers.
+      es: Manipula la luz para crear destellos, iluminar o disparar láseres.
+  - name: Psychokinetics
+    attribute: WIL
+    cost: 5
+    url: /core-mechanics/psionics/telekinesis/#psychokinetics
+    trained_only: true
+    description:
+      en: Move and manipulate solid objects at a distance.
+      es: Mueve y manipula objetos sólidos a distancia.
+  - name: Pyrokinesis
+    attribute: WIL
+    cost: 5
+    url: /core-mechanics/psionics/telekinesis/#pyrokinesis
+    trained_only: true
+    description:
+      en: Excite molecules to generate heat and fire.
+      es: Excita las moléculas para generar calor y fuego.
+  - name: Sheya's Clutch
+    attribute: WIL
+    cost: 5
+    url: /core-mechanics/psionics/telekinesis/#sheyas-clutch
+    trained_only: true
+    description:
+      en: Mentally crush internal organs of a living being.
+      es: Aplasta mentalmente los órganos internos de un ser vivo.
+
+- discipline: Telepathy
+  attribute: PER
+  url: /core-mechanics/psionics/telepathy/
+  cost: 6
+  description:
+    en: Communicate and interact directly with the minds of others.
+    es: Comunícate e interactúa directamente con la mente de los demás.
+  powers:
+  - name: Contact
+    attribute: PER
+    cost: 5
+    url: /core-mechanics/psionics/telepathy/#contact
+    description:
+      en: Establish a mental link with another character.
+      es: Establece un vínculo mental con otro personaje.
+  - name: Datalink
+    attribute: PER
+    cost: 5
+    url: /core-mechanics/psionics/telepathy/#datalink
+    description:
+      en: Interface directly with computer systems using the mind.
+      es: Interfaz directamente con sistemas informáticos usando la mente.
+  - name: Drain
+    attribute: PER
+    cost: 5
+    url: /core-mechanics/psionics/telepathy/#drain
+    trained_only: true
+    description:
+      en: Mentally sap the health of another character.
+      es: Debilita mentalmente la salud de otro personaje.
+  - name: Empathic Projection
+    attribute: PER
+    cost: 5
+    url: /core-mechanics/psionics/telepathy/#empathic-projection
+    description:
+      en: Project emotions into the mind of another character.
+      es: Proyecta emociones en la mente de otro personaje.
+  - name: Guidance
+    attribute: PER
+    cost: 5
+    url: /core-mechanics/psionics/telepathy/#guidance
+    description:
+      en: Provide mental assistance to enhance another's skill check.
+      es: Proporciona asistencia mental para mejorar la prueba de habilidad de otro.
+  - name: Illusion
+    attribute: PER
+    cost: 5
+    url: /core-mechanics/psionics/telepathy/#illusion
+    description:
+      en: Create mental images and sensations to trick targets.
+      es: Crea imágenes y sensaciones mentales para engañar a los objetivos.
+  - name: Mind Blast
+    attribute: PER
+    cost: 5
+    url: /core-mechanics/psionics/telepathy/#mind-blast
+    trained_only: true
+    description:
+      en: Deliver a powerful telepathic strike to stun an opponent.
+      es: Lanza un poderoso ataque telepático para aturdir a un oponente.
+  - name: Mind Shield
+    attribute: PER
+    cost: 5
+    url: /core-mechanics/psionics/telepathy/#mind-shield
+    description:
+      en: Protect the mind against intrusion and psychic attacks.
+      es: Protege la mente contra intrusiones y ataques psíquicos.
+  - name: Mind Wipe
+    attribute: PER
+    cost: 5
+    url: /core-mechanics/psionics/telepathy/#mind-wipe
+    trained_only: true
+    description:
+      en: Erase or alter memories in the target's mind.
+      es: Borra o altera los recuerdos en la mente del objetivo.
+  - name: Psychic Armor
+    attribute: PER
+    cost: 5
+    url: /core-mechanics/psionics/telepathy/#psychic-armor
+    description:
+      en: Bolster the mind specifically against psychic damage.
+      es: Refuerza la mente específicamente contra el daño psíquico.
+  - name: Psychic Projection
+    attribute: PER
+    cost: 5
+    url: /core-mechanics/psionics/telepathy/#psychic-projection
+    description:
+      en: Project the psyche to a distant location.
+      es: Proyecta la psique a un lugar distante.
+  - name: Subdual
+    attribute: PER
+    cost: 5
+    url: /core-mechanics/psionics/telepathy/#subdual
+    trained_only: true
+    description:
+      en: Calm and pacify the minds of others to prevent violence.
+      es: Calma y pacifica las mentes de otros para prevenir la violencia.
+  - name: Suggest
+    attribute: PER
+    cost: 5
+    url: /core-mechanics/psionics/telepathy/#suggest
+    description:
+      en: Implant thoughts or ideas into another person's mind.
+      es: Implantar pensamientos o ideas en la mente de otra persona.
+  - name: Tire
+    attribute: PER
+    cost: 5
+    url: /core-mechanics/psionics/telepathy/#tire
+    trained_only: true
+    description:
+      en: Mentally induce fatigue and exhaustion in a target.
+      es: Induce mentalmente fatiga y agotamiento en un objetivo.
+  - name: Undo
+    attribute: PER
+    cost: 5
+    url: /core-mechanics/psionics/telepathy/#undo
+    trained_only: true
+    description:
+      en: Reverse or neutralize the effects of other telepathic powers.
+      es: Revierte o neutraliza los efectos de otros poderes telepáticos.
