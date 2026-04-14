@@ -1,26 +1,31 @@
+{{/* 
+  DATA AGNOSTIC PARTIAL
+  This component must remain data-agnostic. It renders rows based on
+  provided field definitions without knowledge of the specific data type.
+*/}}
 {{ $item := .item }}
 {{ $fields := .fields }}
 {{ $level := .level }}
 {{ $Page := .Page }}
 
-<tr class="nested-table-row level-{{ $level }} {{ if $item.children }}has-children{{ end }}" data-level="{{ $level }}">
+<tr class="nested-table-row level-{{ $level }} {{ if $item.items }}has-children{{ end }} {{ with $item.css_class }}{{ . }}{{ end }}" data-level="{{ $level }}">
   {{ range $index, $field := $fields }}
   <td class="cell-{{ $field.key }} {{ if eq $index 0 }}indent-{{ $level }}{{ end }}">
     {{ $val := index $item $field.key }}
-    {{ if and (eq $index 0) $field.link (index $item "skill_url") }}
-      <a href="{{ index $item "skill_url" }}">{{ $val | safeHTML }}</a>
+    {{ if and (eq $index 0) $field.link $item.url }}
+    <a href="{{ $item.url }}">{{ $val | safeHTML }}</a>
     {{ else if $val }}
-      {{ $val | safeHTML }}
+    {{ $val | safeHTML }}
     {{ else }}
-      <span class="silver-muted opacity-30">—</span>
+    <span class="silver-muted opacity-30">—</span>
     {{ end }}
   </td>
   {{ end }}
 </tr>
 
-{{ if $item.children }}
-  {{ $nextLevel := add $level 1 }}
-  {{ range $item.children }}
-    {{ partial "nested-table-row.html" (dict "item" . "fields" $fields "level" $nextLevel "Page" $Page) }}
-  {{ end }}
+{{ if $item.items }}
+{{ $nextLevel := add $level 1 }}
+{{ range $item.items }}
+{{ partial "nested-table-row.html" (dict "item" . "fields" $fields "level" $nextLevel "Page" $Page) }}
+{{ end }}
 {{ end }}

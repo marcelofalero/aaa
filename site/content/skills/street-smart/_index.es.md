@@ -6,7 +6,7 @@ type = "skill"
 layout = "list"
 +++
 
-Esta habilidad general proporciona a un héroe conocimiento de los protocolos para tratar CON pandillas, gente de la calle y organizaciones criminales. Mide la capacidad de un héroe para negociar y establecer contacto CON el reino del criminal de "cuello azul" (delincuencia común).
+Esta habilidad general proporciona a un personaje conocimiento de los protocolos para tratar CON pandillas, gente de la calle y organizaciones criminales. Mide la capacidad de un personaje para negociar y establecer contacto CON el reino del criminal de "cuello azul" (delincuencia común).
 
 Callejeo y sus especialidades son habilidades de encuentro.
 

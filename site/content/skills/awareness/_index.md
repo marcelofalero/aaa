@@ -6,26 +6,26 @@ type = "skill"
 layout = "list"
 +++
 
-**Free to fraal, human, mechalus, sesheyan, t'sa, and weren heroes.**
+**Free to fraal, human, mechalus, sesheyan, t'sa, and weren characters.**
 
-This broad skill represents a hero's powers of observation, perception, and intuition. Skill checks are called for when the Gamemaster needs to determine if a hero notices something—heroes themselves never call for a use of this skill.
+This broad skill represents a character's powers of observation, perception, and intuition. Skill checks are called for when the Gamemaster needs to determine if a character notices something—characters themselves never call for a use of this skill.
 
-Noticing something could be as simple as providing a hint that the hero missed in the normal course of play, or help when the hero appears totally lost or confused. On a Failure, the hero doesn't notice a thing. Otherwise, any success provides the hero with at least a small clue. The Gamemaster can decide that the better the level of success achieved, the more details the hero becomes aware of. Situation die modifiers are listed in the Gamemaster Guide. Note, too, that another character’s use of certain skills (such as Stealth and Security-protection protocols) can add modifiers to a hero's Awareness check.
+Noticing something could be as simple as providing a hint that the character missed in the normal course of play, or help when the character appears totally lost or confused. On a Failure, the character doesn't notice a thing. Otherwise, any success provides the character with at least a small clue. The Gamemaster can decide that the better the level of success achieved, the more details the character becomes aware of. Situation die modifiers are listed in the Gamemaster Guide. Note, too, that another character’s use of certain skills (such as Stealth and Security-protection protocols) can add modifiers to a character's Awareness check.
 
-The Awareness broad skill and its specialties are Good examples of how the general rule on dice rolling applies to an AAA game: Dice should only be rolled on a skill check in a situation when the Gamemaster needs to determine if a hero is capable of doing something difficult or out of the Ordinary. More often than not, heroes with respectable scores in Awareness or its specialties will automatically succeed when something exists that can be noticed or perceived—for instance, it doesn't take a skill check to determine if a hero sees a fallen tree blocking his path. On the other hand, a skill check may be called for to see if the hero notices that the fallen tree has a hole in its trunk where an object is concealed; or, the Gamemaster might assume that a hero who has several ranks in the perception specialty immediately notices the hole.
+The Awareness broad skill and its specialties are Good examples of how the general rule on dice rolling applies to an AAA game: Dice should only be rolled on a skill check in a situation when the Gamemaster needs to determine if a character is capable of doing something difficult or out of the Ordinary. More often than not, characters with respectable scores in Awareness or its specialties will automatically succeed when something exists that can be noticed or perceived—for instance, it doesn't take a skill check to determine if a character sees a fallen tree blocking his path. On the other hand, a skill check may be called for to see if the character notices that the fallen tree has a hole in its trunk where an object is concealed; or, the Gamemaster might assume that a character who has several ranks in the perception specialty immediately notices the hole.
 
-Some pieces of sensor equipment may provide benefits to a hero’s Awareness skill check, as described in Chapter 9: Goods & Services.
+Some pieces of sensor equipment may provide benefits to a character’s Awareness skill check, as described in Chapter 9: Goods & Services.
 
 ---
 
 ## Intuition
 ### (WIL)
 
-This specialty skill represents a hero's natural instincts—his ability to sense danger when no obvious signs are evident, to avoid surprise, or to make an intuitive leap of logic without the support of hard facts. It's the ability to make a best guess in a given situation.
+This specialty skill represents a character's natural instincts—his ability to sense danger when no obvious signs are evident, to avoid surprise, or to make an intuitive leap of logic without the support of hard facts. It's the ability to make a best guess in a given situation.
 
-When no obvious signs of danger are evident, a hero’s subconscious use of this skill can enable him to avoid being caught by surprise. (The Gamemaster calls for intuition checks; players don't request them, except in the circumstances described in the next paragraph.) Success indicates that the hero isn't surprised and can act in the surprise phase of the upcoming round. (For more information about surprise situations, see page 58 of Chapter 3: Heroes in Action.)
+When no obvious signs of danger are evident, a character’s subconscious use of this skill can enable him to avoid being caught by surprise. (The Gamemaster calls for intuition checks; players don't request them, except in the circumstances described in the next paragraph.) Success indicates that the character isn't surprised and can act in the surprise phase of the upcoming round. (For more information about surprise situations, see page 58 of Chapter 3: Characters in Action.)
 
-When a hero wants to make an intuitive "best guess,” the Gamemaster may allow a player to call for an intuition skill check on his character’s behalf. In such a case, any success yields a beneficial result, but the greater the level of success, the more accurate and complete the conclusion. This use of the intuition skill to make a best guess is only permitted to heroes who have purchased the specialty skill, and it shouldn't be allowed more than once or twice in an adventure.
+When a character wants to make an intuitive "best guess,” the Gamemaster may allow a player to call for an intuition skill check on his character’s behalf. In such a case, any success yields a beneficial result, but the greater the level of success, the more accurate and complete the conclusion. This use of the intuition skill to make a best guess is only permitted to characters who have purchased the specialty skill, and it shouldn't be allowed more than once or twice in an adventure.
 
 ---
 
@@ -34,9 +34,9 @@ When a hero wants to make an intuitive "best guess,” the Gamemaster may allow 
 ## Perception
 ### (WIL)
 
-This specialty skill represents a hero's alertness and powers of observation—the hero notices something either consciously or on a subliminal level. While intuition is a feeling or unexplainable sense, perception works on signs that can be spotted by normal senses—a broken twig lying in a path, the click of a gun’s safety being released, the scent of familiar perfume in a crowded bar, a whisper in the wind. This skill can help determine a hero’s ability to spot signs of trouble, perceive the true meaning in an authority figure's comment, or notice a subtle clue poking out of a pile of leaves.
+This specialty skill represents a character's alertness and powers of observation—the character notices something either consciously or on a subliminal level. While intuition is a feeling or unexplainable sense, perception works on signs that can be spotted by normal senses—a broken twig lying in a path, the click of a gun’s safety being released, the scent of familiar perfume in a crowded bar, a whisper in the wind. This skill can help determine a character’s ability to spot signs of trouble, perceive the true meaning in an authority figure's comment, or notice a subtle clue poking out of a pile of leaves.
 
-When potential danger obviously exists in a situation, a hero's subconscious use of this skill can help him avoid being caught by surprise. (The Gamemaster calls for perception checks; players don't request them.) Success indicates that the hero isn't surprised and can act in the surprise phase of the upcoming round. (For more information about surprise situations, see page 58 of Chapter 3: Heroes in Action.)
+When potential danger obviously exists in a situation, a character's subconscious use of this skill can help him avoid being caught by surprise. (The Gamemaster calls for perception checks; players don't request them.) Success indicates that the character isn't surprised and can act in the surprise phase of the upcoming round. (For more information about surprise situations, see page 58 of Chapter 3: Characters in Action.)
 
 ---
 

@@ -1,0 +1,520 @@
+{
+    "fields": [
+        {
+            "key": "skill",
+            "name": "Disciplina/Poder",
+            "link": true
+        },
+        {
+            "key": "attribute",
+            "name": "Atrib."
+        },
+        {
+            "key": "cost",
+            "name": "Costo"
+        }
+    ],
+    "items": [
+        {
+            "skill": "PSIÓNICA",
+            "type": "Category",
+            "items": [
+                {
+                    "skill": "Biokinesis",
+                    "attribute": "CON",
+                    "url": "/es/psionics/biokinesis/",
+                    "cost": 6,
+                    "type": "Broad",
+                    "items": [
+                        {
+                            "skill": "Bioarmadura",
+                            "attribute": "CON",
+                            "url": "/es/psionics/biokinesis/#bioarmadura",
+                            "cost": 3,
+                            "type": "Specialty",
+                            "css_class": "trained-only",
+                            "description": "Esta habilidad refuerza psiónicamente la piel de un personaje, ayudando a protegerlo del daño. Esta \"armadura corporal\" proporciona protección contra daños físicos y de energía, pero no protege contra ataques psiónicos. (Consulta Telepatía para conocer formas de evitar los ataques psiónicos).\n\nLa protección proporcionada por la bioarmadura se basa en la tirada de habilidad del usuario:\n\n| Resultado | LI | HI | En |\n| :--- | :---: | :---: | :---: |\n| **Ordinario** | d4 | d4–1 | d4–1 |\n| **Bueno** | d6 | d6–1 | d6–1 |\n| **Asombroso** | d6+1 | d6 | d6 |\n\n**Efecto Incrementado:**\n- **Al rango 3**, la protección proporcionada por la bioarmadura aumenta en 1 punto (añade 1 a lo que se tire en la tabla anterior).\n- **Al rango 6**, este valor aumenta de nuevo en 1 punto (un total de +2).\n- **Al rango 9**, la armadura se trata como si tuviera Dureza Buena (Bueno toughness).\n- **Al rango 12**, el valor de la armadura aumenta una vez más en 1 punto (un total de +3).\n\n---"
+                        },
+                        {
+                            "skill": "Bioarma",
+                            "attribute": "CON",
+                            "url": "/es/psionics/biokinesis/#bioarma",
+                            "cost": 3,
+                            "type": "Specialty",
+                            "css_class": "trained-only",
+                            "description": "Al emplear esta habilidad, un personaje genera un campo de energía cinética que emana de sus manos. Esta energía se manifiesta de una de dos maneras, que el jugador debe elegir en el momento en que el personaje realiza con éxito una prueba de habilidad: una vara o una espada.\n\nEl jugador puede alterar la forma de la vara para que sea un mazo, y la de la espada para que sea de un tipo particular (katana, sable, espada ancha, etc.). Estos cambios no afectan el daño que causará la bioarma ni le otorgan ninguna propiedad especial; son puramente cosméticos.\n\nLa principal diferencia entre las dos formas está en el tipo de daño que causan. Un personaje que solo desee noquear a un oponente haría mejor en crear una vara; aquellos que pretendan infligir un daño más serio probablemente crearán la espada.\n\n| Forma | Daño Base | Tipo |\n| :--- | :--- | :---: |\n| **Vara** | d8s/d8+2s/d12+2s | LI/O |\n| **Espada** | d6w/d6+2w/d6m | LI/O |\n\nEl personaje utiliza una de dos habilidades para blandir la bioarma: **Combate cuerpo a cuerpo (Melee Weapons)—contundente** para la vara o **Combate cuerpo a cuerpo (Melee Weapons)—filo** para la espada.\n\nEl resultado de la tirada de habilidad de la bioarma puede añadir una bonificación a la tirada de la habilidad de armas cuerpo a cuerpo correspondiente de la siguiente manera:\n- **Ordinario:** bonificación de –1 paso\n- **Bueno:** bonificación de –2 pasos\n- **Asombroso:** bonificación de –3 pasos\n\nEsta bonificación dura hasta que el personaje decida no seguir manteniendo la bioarma.\n\n**Daño Incrementado:**\n- **Al rango 3**, el daño de la bioarma aumenta en +1.\n- **Al rango 6**, aumenta de nuevo (hasta un total de +2).\n- **Al rango 9**, aumenta otro +1 (hasta un total de +3).\n- **Al rango 12**, todos los ataques realizados con la bioarma se consideran para infligir **daño Bueno** (Bueno damage).\n\n---"
+                        },
+                        {
+                            "skill": "Trepado",
+                            "attribute": "CON",
+                            "url": "/es/psionics/biokinesis/#trepado",
+                            "cost": 2,
+                            "type": "Specialty",
+                            "css_class": "",
+                            "description": "En un pasado lejano, ciertos psiónicos t'sa desarrollaron la habilidad de **trepado**, normalmente los que vivían en las regiones montañosas del planeta de origen de los t'sa. Con ella, el t'sa psiónico (o un psiónico entrenado por los t'sa) genera miles de minúsculas ventosas en las palmas de sus manos y en las plantas de sus pies. El personaje puede entonces subir y bajar por superficies casi verticales con facilidad, e incluso desplazarse por superficies invertidas en distancias cortas. En las escarpadas montañas del planeta t'sa, esto significaba a menudo la supervivencia.\n\nEl grado de éxito con esta habilidad determina el modificador de un intento de **Atletismo—trepar** del psiónico. El psiónico obtiene una **bonificación de –1, –2 ó –3 pasos**, dependiendo del grado de éxito (Ordinario, Bueno o Asombroso). Además, si la distancia está dentro de la velocidad de paso del usuario, el personaje puede correr por superficies invertidas, corriendo de hecho por el techo. El personaje no puede detenerse ni cambiar de dirección antes de recorrer toda la distancia sin caerse. Lo mismo ocurrirá si el personaje no tiene nada a lo que agarrarse al llegar a su destino.\n\n**Beneficios de Rango:**\n- **Al rango 4 [Distancia Incrementada (Increased Distance)]**, la distancia que el usuario puede recorrer mientras trepa o corre por superficies invertidas se duplica.\n- **Al rango 8**, la distancia es el triple de la velocidad base.\n- **Al rango 12**, la distancia es cuatro veces la velocidad base al rango 12.\n\n---"
+                        },
+                        {
+                            "skill": "Control del Metabolismo",
+                            "attribute": "CON",
+                            "url": "/es/psionics/biokinesis/#control-del-metabolismo",
+                            "cost": 2,
+                            "type": "Specialty",
+                            "css_class": "",
+                            "description": "A través del uso de esta habilidad, un personaje puede regular sus procesos metabólicos. Esto permite una supervivencia más prolongada sin comida ni agua, en climas extremos y en otras condiciones hostiles. El personaje también puede ralentizar sus funciones corporales hasta el punto de fingir que está muerto, si necesita engañar a otros en alguna situación.\n\nSe realiza una tirada cuando un personaje entra en un entorno hostil o si desea emplear esta habilidad de alguna otra manera.\n\n#### Entornos Hostiles\nEn el caso de un entorno hostil, el resultado de una tirada de habilidad determina el tipo de protección que un personaje puede simular:\n- **Ordinario:** máscara de vacío\n- **Bueno:** traje de vacío (vacuum suit)\n- **Asombroso:** traje electrónico ligero (soft e-suit)\n\nDespués del uso inicial de la habilidad, el nivel de protección se puede mantener posteriormente a un coste de 1 punto de energía psiónica por hora.\n\n#### Impulso de adrenalina (Adrenal boost)\n*Duración extendida.*\nEl personaje puede aumentar mentalmente la producción de adrenalina, otorgando una bonificación a las tiradas de acción.\n- **Ordinario:** +1 a la puntuación de la tirada de acción.\n- **Bueno:** +2 a la puntuación de la tirada de acción.\n- **Asombroso:** +3 a la puntuación de la tirada de acción.\n\nEsta bonificación dura lo que reste del asalto en el que se activó el poder y todo el asalto siguiente. Un personaje puede extender la duración 1 asalto por cada punto de energía psiónica gastado para ello.\n\n#### Liberación de endorfinas (Endorphin release)\n*Duración extendida.*\nEl personaje puede estimular mentalmente la producción de endorfinas, aumentando su resistencia al dolor y la fatiga.\n- **Ordinario:** bonificación de –1 paso a las tiradas de Firmeza (Aguante).\n- **Bueno:** bonificación de –2 pasos a las tiradas de Firmeza (Aguante).\n- **Asombroso:** bonificación de –3 pasos a las tiradas de Firmeza (Aguante).\n\nLa duración es de una hora; la duración puede extenderse una hora más por cada punto de energía psiónica adicional gastado para ello.\n\n---"
+                        },
+                        {
+                            "skill": "Sanar",
+                            "attribute": "CON",
+                            "url": "/es/psionics/biokinesis/#sanar",
+                            "cost": 4,
+                            "type": "Specialty",
+                            "css_class": "trained-only",
+                            "description": "Al concentrarse, un personaje puede curarse a sí mismo el daño por heridas o una enfermedad. La cantidad de daño que puede curarse depende del resultado de una tirada de habilidad:\n- **Ordinario:** 1 punto de herida\n- **Bueno:** 2 puntos de herida\n- **Asombroso:** 3 puntos de herida\n\n#### Enfermedad\nPara las enfermedades, se aplican los siguientes resultados:\n- **Ordinario:** reduce el grado de la enfermedad en un nivel (de Bueno a Ordinario, por ejemplo).\n- **Bueno:** reduce en dos niveles.\n- **Asombroso:** reduce en tres niveles.\nLas enfermedades reducidas por debajo de Marginal se consideran curadas.\n\n#### Tiempos\nLa curación psiónica requiere tiempo. Los resultados son inmediatos, pero la reacción del cuerpo al uso de la habilidad dura una hora. Por esta razón, la habilidad de sanar no se puede intentar más de una vez por hora, incluso si el resultado de la tirada es un Fallo.\n\n**Beneficios de Rango:**\n- **Al rango 4 [Tratar Venenos]**, un personaje puede contrarrestar el efecto de venenos o drogas en su sistema antes de que finalice su tiempo de reacción, reduciendo el impacto que puedan tener. El grado de éxito actúa como una bonificación a la tirada de dote de Constitución requerida: **Ordinario:** bonificación de –2 pasos, **Bueno:** bonificación de –3 pasos, **Asombroso:** bonificación de –4 pasos.\n- **Al rango 6 [Curar Daño Mortal]**, un personaje es capaz de curar el daño Mortal. Los resultados de la tirada cambian a: **Ordinario:** 2 heridas, **Bueno:** 3 heridas o 1 Mortal, **Asombroso:** 4 heridas o 2 mortales.\n- **Al rango 8 [Efecto Mejorado]**, la capacidad de curación del personaje mejora aún más: **Ordinario:** 3 heridas o 1 Mortal, **Bueno:** 4 heridas o 2 mortales, **Asombroso:** 6 heridas o 3 mortales.\n- **Al rango 8 [Imposición de manos]**, un personaje se vuelve capaz de curar el daño en otros. El sujeto a ser curado debe estar en contacto físico con el personaje que utiliza esta habilidad.\n\n---"
+                        },
+                        {
+                            "skill": "Intangibilidad",
+                            "attribute": "CON",
+                            "url": "/es/psionics/biokinesis/#intangibilidad",
+                            "cost": 4,
+                            "type": "Specialty",
+                            "css_class": "trained-only",
+                            "description": "Al reordenar mentalmente las moléculas de su cuerpo, el personaje puede concentrarse y volverse inmaterial, y así atravesar objetos sólidos. Esta habilidad afecta a la ropa del personaje (incluyendo la armadura ligera—cualquier armadura que no requiera la habilidad de Operación de Armaduras) y hasta un kilogramo por rango de habilidad de equipo adicional que se lleve en las manos.\n\nLa intangibilidad dura una fase, más una fase adicional por cada punto de energía psiónica gastado para mantenerla.\n\nUn personaje intangible aparece como una imagen tridimensional de sí mismo, ligeramente menos vívida, que otros pueden ver pero no percibir de otra manera.\n\nEl personaje puede moverse de forma normal, aunque atravesar objetos sólidos lo ralentiza a un ritmo de \"nado suave\" (easy swim). El personaje no puede atravesar materia viva (aunque sí materia orgánica—la madera de una puerta, por ejemplo).\n\nMientras sea intangible, el personaje cae a un ritmo muy reducido: aproximadamente tres metros por fase. Un personaje podría saltar desde un edificio y aterrizar como si fuera una pluma. Caer 20 metros mientras se es inmaterial requiere ocho puntos de energía psiónica: uno para activarla y uno más por cada tres metros de distancia caída.\n\n**Beneficios de Rango:**\n- **Al rango 4 [Bonificación de Movimiento]**, el personaje puede moverse a través de objetos sólidos a **ritmo de caminata** (walk rate).\n- **Al rango 6 [Esquivar]**, el personaje puede \"esquivar ataques\" volviéndose intangible. Esto se logra de la misma manera que un desvío (parry) de reacción.\n- **Al rango 8 [Bonificación de Movimiento]**, el personaje puede moverse a través de objetos sólidos a **ritmo de carrera** (run rate).\n- **Al rango 12 [Intangibilidad Selectiva]**, el personaje puede elegir volver inmaterial solo una parte de su cuerpo. Hacerlo añade una penalización de +2 pasos a la tirada de habilidad, y si el personaje intenta tocar o manipular un objeto sólido mientras es solo parcialmente tangible, este modificador aumenta hasta +4.\n\n---"
+                        },
+                        {
+                            "skill": "Metamorfosis",
+                            "attribute": "CON",
+                            "url": "/es/psionics/biokinesis/#metamorfosis",
+                            "cost": 4,
+                            "type": "Specialty",
+                            "css_class": "trained-only",
+                            "description": "Mediante el uso de esta habilidad, un personaje puede alterar sus rasgos físicos para disfrazarse o para lograr algo que de otro modo sería imposible, como apretujarse en un agujero pequeño, llegar más alto de lo que su estatura permite normalmente o soltarse de unas ataduras.\n\nLa metamorfosis requiere un asalto entero (4 fases) para completarse, desde el momento en que se activa la habilidad hasta el momento en que finaliza la alteración. El personaje no puede hacer nada más mientras se lleva a cabo este proceso.\n\nLa tirada de habilidad inicial determina cuánto tiempo dura la forma metamorfoseada:\n- **Ordinario:** 1 asalto\n- **Bueno:** 2 asaltos\n- **Asombroso:** 3 asaltos\n\nA partir de entonces, el personaje puede ampliar la duración gastando 1 punto de energía psiónica por asalto (u otra unidad de tiempo designada por el Director de Juego).\n\nUna parte del cuerpo metamorfoseada conserva sus características originales; no cambia ninguna estadística de juego, excepto las directamente relacionadas con la metamorfosis. La metamorfosis no tiene ningún efecto sobre la ropa o las posesiones del personaje.\n\n**Beneficios de Rango:** \n- **A los rangos 1 y 3**, selecciona una de estas formas:\n    - **Alargar dedos:** añade +0.5 metros al alcance (por ejemplo, para obtener una bonificación de -1 paso a las tiradas de la habilidad Manipulación—robaperlar).\n    - **Alargar brazos:** añade +1 metro al alcance.\n    - **Alargar piernas:** añade +1 metro a la altura.\n- **A los rangos de habilidad 5 y 7**, elige una de estas formas:\n    - **Disfrazarse:** altera los rasgos faciales para ocultar la identidad (penalización de +2 pasos a las tiradas de Alerta que impliquen un intento de reconocer al personaje).\n    - **Alargar brazos y piernas** simultáneamente.\n    - **Alteraciones del esqueleto:** altera todo el cuerpo y la estructura ósea para permitir el paso a través de aberturas pequeñas (tan pequeñas como medio metro de ancho).\n- **A los rangos de habilidad 10 y 12**, elige una de estas formas:\n    - **Disfraz mejorado:** altera los rasgos faciales y corporales para parecerse a una persona específica (penalización de +2 pasos a la Alerta) o para ocultar completamente la identidad (penalización de +4 pasos).\n    - **Reducir daño:** volverse tan flexible y maleable que reduzca los efectos del daño de bajo impacto. Una tirada de habilidad determina cuánto daño se reduce (sin coste adicional de PP): **Ordinario:** d4, **Bueno:** d4+2, **Asombroso:** d6+2.\n- **Al rango 12**, el personaje puede seleccionar uno de estos beneficios:\n    - **Control de metamorfosis:** activar dos formas cualesquiera simultáneamente.\n\n---"
+                        },
+                        {
+                            "skill": "Rejuvenecer",
+                            "attribute": "CON",
+                            "url": "/es/psionics/biokinesis/#rejuvenecer",
+                            "cost": 3,
+                            "type": "Specialty",
+                            "css_class": "trained-only",
+                            "description": "Al usar esta habilidad, un personaje puede compensar la fatiga o el daño por aturdimiento, o una parte de cada uno, que haya sufrido. La habilidad no hace nada para aliviar la pérdida de energía psiónica.\n\nUna tirada de habilidad de éxito proporciona al personaje un cierto número de \"puntos de rejuvenecimiento\". Cuesta 2 de estos puntos restaurar 1 punto de daño por fatiga y 1 de estos puntos para restaurar 1 punto de daño por aturdimiento. En un éxito Ordinario, el personaje recibe 2 \"puntos de rejuvenecimiento\"; en un éxito Bueno, 4 puntos; y en un éxito Asombroso, 6 puntos. El personaje puede usar estos puntos en cualquier combinación para restaurar puntos de aturdimiento, puntos de fatiga o parte de cada uno. Los \"puntos de rejuvenecimiento\" que no puedan usarse inmediatamente se perderán.\n\nEl rejuvenecimiento psiónico requiere tiempo. Los resultados son inmediatos, pero la reacción del cuerpo al uso de la habilidad dura una hora. Por esta razón, la habilidad de rejuvenecer no se puede intentar más de una vez por hora.\n\n**Beneficios de Rango:**\n- **Al rango 4 [Efecto Mejorado]**, la eficacia de una tirada de habilidad exitosa mejora de la siguiente manera: **Ordinario:** 4 puntos, **Bueno:** 6 puntos, **Asombroso:** 8 puntos.\n- **Al rango 8 [Imposición de manos]**, un personaje se vuelve capaz de curar la fatiga o el daño por aturdimiento en otros. El sujeto a ser curado debe estar en contacto físico con el personaje que utiliza esta habilidad.\n- **Al rango 12 [Dos Destinatarios]**, un personaje que utilice rejuvenecer puede afectar a dos individuos con un solo uso de la habilidad. Esto puede ser en otras dos personas o en el personaje y otra persona. Cada uno gana el beneficio que determine la tirada de habilidad de bioquinesis-rejuvenecer.\n\n---"
+                        },
+                        {
+                            "skill": "Destrozar",
+                            "attribute": "CON",
+                            "url": "/es/psionics/biokinesis/#destrozar",
+                            "cost": 3,
+                            "type": "Specialty",
+                            "css_class": "",
+                            "description": "La historia weren habla de un clan que utilizó la armadura para conquistar a los demás clanes. Habiendo fabricado placas de armadura rudimentaria con piel de marrizhe hervida, este clan era despreciado por los demás clanes, pero también era imparable. Entonces llegó un gran personaje —reclamado póstumamente por todos los demás clanes— que se batió en duelo con el señor de la guerra del clan acorazado por todas sus tierras, rebaños y esposas. En medio del duelo, el misterioso weren descargó de repente ambos puños sobre el pecho acorazado de su oponente, y las placas de cuero se destrozaron. El señor de la guerra, que en el mejor de los casos era un luchador mediocre sin su armadura, sucumbió rápidamente, y el guerrero weren desapareció misteriosamente, aunque no, por supuesto, sin reclamar sus premios.\n\nLos guerreros weren han intentado durante mucho tiempo emular a aquel luchador legendario, aunque los únicos éxitos han sido de usuarios de psiónica dotados de Biocinesis. Son capaces de dirigir la bioenergía hacia superficies sólidas —normalmente armaduras — de tal forma que la superficie se rompa. Para utilizar esta capacidad, el psiónico weren debe intentar primero una tirada de la especialidad de Biocinesis—destrozar. Si la tirada tiene éxito, el siguiente golpe a puño descubierto (bare-fisted) que aseste el weren infligirá daño a la armadura del oponente, si la tiene, en lugar de al oponente. Si el weren no logra golpear la armadura antes del final del siguiente asalto, el efecto se disipa, aunque el personaje puede volver a intentarlo.\n\nSi la tirada de la habilidad destrozar arrojó un resultado Ordinario, la armadura que golpee absorberá 1 punto menos de daño. En un resultado Bueno, la armadura absorbe 2 puntos menos de daño. Y en un resultado Asombroso, la armadura absorbe 3 puntos menos de daño. Consulta la Tabla G13: Armadura de Objetos en la Guía del Director de Juego para obtener información sobre lo bien que absorben el daño los objetos que no son armaduras.\n\n**Beneficios de Rango:**\n- **Al rango 4 [Efecto Incrementado (Increased Effect)]**, esta habilidad sólo puede afectar a armaduras u objetos de dureza Ordinaria. Al rango 4, el psiónico puede afectar a armaduras u objetos de dureza Buena. Con un éxito Ordinario, la armadura absorbe 2 puntos menos de daño, 3 menos con un resultado Bueno y 4 menos con un resultado Asombroso.\n- **Al rango 8 [Efecto Incrementado (Increased Effect)]**, con un éxito Ordinario se absorben 3 puntos menos, 4 menos con un resultado Bueno y 5 menos con un resultado Asombroso.\n- **Al rango 12 [Efecto Incrementado (Increased Effect)]**, el usuario puede afectar a objetos de dureza Asombrosa.\n\n---"
+                        },
+                        {
+                            "skill": "Transferir Daño",
+                            "attribute": "CON",
+                            "url": "/es/psionics/biokinesis/#transferir-dano",
+                            "cost": 2,
+                            "type": "Specialty",
+                            "css_class": "",
+                            "description": "Al imponer las manos sobre otro personaje y realizar con éxito una tirada de habilidad, el psiónico alivia el daño o la enfermedad de ese personaje absorbiéndolos.\n\nEl daño que se puede absorber está ligado al resultado de una tirada de habilidad:\n\n| Resultado | Daño Absorbido | Enfermedad Reducida |\n| :--- | :--- | :--- |\n| **Fallo Crítico** | El personaje sufre 1 herida. | Sin efecto sobre el paciente. |\n| **Ordinario** | El personaje absorbe 1 herida. | Reduce la enfermedad del paciente en un grado (por ejemplo, de Asombroso a Bueno), infectando simultáneamente al psiónico con ese grado de enfermedad. |\n| **Bueno** | El personaje absorbe 2 heridas o 1 Mortal. | Reduce la enfermedad del paciente en dos grados, transfiriendo la dolencia al psiónico. |\n| **Asombroso** | El personaje absorbe 3 heridas o 1 Mortal. | Transfiere cualquier enfermedad del paciente al psiónico. |\n\nUna vez que el personaje absorbe el daño o la enfermedad, debe utilizar la especialidad de **Bioquinesis—sanar**, curarse de forma natural o recibir atención médica o psiónica para aliviar el daño o curar la enfermedad.\n\n**Beneficios de Rango:**\n- **Al rango 6 [Desplazar Daño (Displace Damage)]**, el personaje psiónico puede transferir el daño a un personaje diferente, que también deba estar en contacto físico con el psiónico y que deba estar dispuesto a recibir el daño. Cualquier intento de transferir el daño a una criatura que no desee conscientemente aceptar el daño (como un personaje hostil o uno inconsciente) hace que el psiónico reciba el daño, como es normal.\n- **Al rango 12 [Transferencia Involuntaria (Unwilling Transfer)]**, el personaje puede transferir el daño a un personaje involuntario. El psiónico debe estar tocando a ambos personajes. Ambos personajes deben estar vivos tras activar la habilidad. El personaje \"donante\" será sanado de una cantidad de puntos de daño determinados por la tirada de habilidad de bioquinesis-transferir daño. Los puntos de daño se aplican entonces al receptor involuntario. **Ten en cuenta que este beneficio no se recibe si el psiónico lleva puesta una armadura.**"
+                        }
+                    ]
+                },
+                {
+                    "skill": "ESP",
+                    "attribute": "INT",
+                    "url": "/es/psionics/esp/",
+                    "cost": 5,
+                    "type": "Broad",
+                    "items": [
+                        {
+                            "skill": "Mente de Batalla",
+                            "attribute": "INT",
+                            "url": "/es/psionics/esp/#mente-de-batalla",
+                            "cost": 4,
+                            "type": "Specialty",
+                            "css_class": "",
+                            "description": "Esta habilidad permite a un personaje enfocar su mente en la batalla que le rodea, aumentando así su tiempo de reacción y su precisión. Cada éxito con esta habilidad otorga una bonificación a las [Tiradas de Acción](/core-mechanics/characters-in-action/#action-check) del personaje.\n\n- **Ordinario:** +1 a la puntuación de la tirada de acción.\n- **Bueno:** +2 a la puntuación de la tirada de acción.\n- **Asombroso:** +3 a la puntuación de la tirada de acción.\n\n**Beneficios de Rango:**\n- **Al rango 4 [Duración Incrementada]**, la bonificación dura **dos asaltos**. El personaje puede extender esta bonificación gastando 1 punto de energía psiónica por asalto adicional.\n- **Al rango 8 [Precisión de Ataque Incrementada]**, el personaje también puede aumentar su precisión en una de las siguientes habilidades amplias de Combate: **Combate sin Armas**, **Armas Cuerpo a Cuerpo**, **Armas de Proyectiles Primitivas** o **Armas de Proyectiles Modernas**. La bonificación es: **Ordinario:** –1 paso; **Bueno:** –2 pasos; **Asombroso:** –3 pasos.\n- **Al rango 12 [Bonificación de Combate Dual]**, el personaje puede aplicar la bonificación de combate a **dos habilidades** de Combate diferentes simultáneamente.\n\n---"
+                        },
+                        {
+                            "skill": "Clariaudiencia",
+                            "attribute": "INT",
+                            "url": "/es/psionics/esp/#clariaudiencia",
+                            "cost": 2,
+                            "type": "Specialty",
+                            "css_class": "",
+                            "description": "Con esta habilidad, un personaje selecciona una ubicación y proyecta su mente hacia ese lugar, escuchando los sonidos como si estuviera físicamente presente.\n\nLa clariaudiencia no filtra el ruido ambiental. El oído Mental no puede moverse del lugar seleccionado. El personaje permanece consciente dentro de su cuerpo.\n\nEl resultado determina la duración:\n- **Ordinario:** 1 asalto.\n- **Bueno:** 2 asaltos.\n- **Asombroso:** 3 asaltos.\n\n**Beneficios de Rango:**\n- **Al rango 4 [Duración Incrementada]**, el incremento de tiempo aumenta a **minutos**.\n- **Al rango 6 [Cambio de Perspectiva]**, el personaje puede intentar cambiar la ubicación proyectada.\n- **Al rango 8**, el incremento aumenta a **5 minutos**.\n- **Al rango 12**, el incremento aumenta a **30 minutos**.\n\n---"
+                        },
+                        {
+                            "skill": "Clarividencia",
+                            "attribute": "INT",
+                            "url": "/es/psionics/esp/#clarividencia",
+                            "cost": 2,
+                            "type": "Specialty",
+                            "css_class": "",
+                            "description": "A través de esta habilidad, un personaje proyecta su mente a un lugar distante para ver lo que sucede allí.\n\nLa duración es:\n- **Ordinario:** 1 asalto.\n- **Bueno:** 2 asaltos.\n- **Asombroso:** 3 asaltos.\n\n---"
+                        },
+                        {
+                            "skill": "Caza Onírica",
+                            "attribute": "INT",
+                            "url": "/es/psionics/esp/#caza-onirica",
+                            "cost": 3,
+                            "type": "Specialty",
+                            "css_class": "",
+                            "description": "Utilizada originalmente para la caza, esta técnica permite localizar a cualquier ser vivo. El psiónico se concentra en el objetivo; cuanto más conozca sus hábitos, más fácil será la caza.\n\nPrecisión según el éxito:\n- **Ordinario:** radio de 1000 metros.\n- **Bueno:** radio de 500 metros.\n- **Asombroso:** radio de 100 metros.\n\n**Beneficios de Rango:**\n- **Al rango 3**, permite acotar el momento del encuentro a un margen de 3 horas.\n- **Al rango 6**, mejora la precisión de los radios de búsqueda.\n- **Al rango 9**, permite determinar **cuándo** estará el objetivo en un lugar con un margen de 30 minutos.\n- **Al rango 12**, precisión máxima: Ord 100m, Bueno 50m, Asom 10m.\n\n---"
+                        },
+                        {
+                            "skill": "Empatía",
+                            "attribute": "INT",
+                            "url": "/es/psionics/esp/#empatia",
+                            "cost": 1,
+                            "type": "Specialty",
+                            "css_class": "",
+                            "description": "Permite \"leer\" las emociones superficiales de otro personaje en el rango visual. Otorga una bonificación a las habilidades de encuentro:\n- **Ordinario:** –1 paso.\n- **Bueno:** –2 pasos.\n- **Asombroso:** –3 pasos.\n\n**Beneficios de Rango:**\n- **Al rango 6 [Lectura de Aura]**, permite ver el campo bioeléctrico para evaluar la salud (bonificación de –1, –2 o –3 pasos a tiradas médicas).\n- **Al rango 9 [Conexión]**, permite mantener una conexión permanente para usar la habilidad más allá del rango visual (hasta 1.5 km por rango).\n\n---"
+                        },
+                        {
+                            "skill": "Lectura de Mente",
+                            "attribute": "INT",
+                            "url": "/es/psionics/esp/#lectura-de-mente",
+                            "cost": 3,
+                            "type": "Specialty",
+                            "css_class": "",
+                            "description": "Permite leer pensamientos superficiales a menos de 500 metros. La duración es:\n- **Ordinario:** 1 fase (pensamientos inconexos).\n- **Bueno:** 2 fases (contexto coherente).\n- **Asombroso:** 3 fases (pensamientos superficiales completos).\n\n**Beneficios de Rango:**\n- **Al rango 6 [Sonda]**, permite buscar información específica en la mente (+2 pasos para alienígenas).\n- **Al rango 12**, la duración aumenta a 1/2/3 minutos.\n\n---"
+                        },
+                        {
+                            "skill": "Navcognición",
+                            "attribute": "INT",
+                            "url": "/es/psionics/esp/#navcognicion",
+                            "cost": 3,
+                            "type": "Specialty",
+                            "css_class": "trained-only",
+                            "description": "Capacidad innata para conocer la posición exacta respecto a un punto fijo. Permite astrografía y cartografía sin equipo.\n\n**Beneficios de Rango:**\n- **Al rango 1**, selecciona una especialidad: **Navegación de Superficie**, **Astrografía de Sistema** o **Astrografía de Curvatura**.\n- **Al rango 6**, bonificación de –4 pasos en condiciones extremas (persecuciones, combate).\n- **Al rango 12 [Rastreo]**, permite rastrear el destino probable de un sujeto a través del espacio de curvatura.\n\n---"
+                        },
+                        {
+                            "skill": "Postcognición",
+                            "attribute": "INT",
+                            "url": "/es/psionics/esp/#postcognicion",
+                            "cost": 3,
+                            "type": "Specialty",
+                            "css_class": "",
+                            "description": "Siente la resonancia psíquica de un área u objeto:\n- **Ordinario:** emociones generales.\n- **Bueno:** destellos breves.\n- **Asombroso:** escena completa como observador.\n\nSe puede ver hacia el pasado tantos días como el rango de habilidad.\n\n**Beneficios de Rango:**\n- **Al rango 3, 6, 9, 12**, el alcance aumenta a semanas, meses, años y décadas.\n\n---"
+                        },
+                        {
+                            "skill": "Precognición",
+                            "attribute": "INT",
+                            "url": "/es/psionics/esp/#precognicion",
+                            "cost": 4,
+                            "type": "Specialty",
+                            "css_class": "trained-only",
+                            "description": "Recibe impresiones sobre sucesos futuros. Suele ser activada por el Director de Juego. El éxito otorga un \"punto de último recurso\" para la escena.\n\n**Beneficios de Rango:**\n- **Al rango 3, 6, 9, 12**, el alcance futuro aumenta de horas a días, semanas, meses y años.\n\n---"
+                        },
+                        {
+                            "skill": "Psicometría",
+                            "attribute": "INT",
+                            "url": "/es/psionics/esp/#psicometria",
+                            "cost": 3,
+                            "type": "Specialty",
+                            "css_class": "",
+                            "description": "Lee impresiones psíquicas de objetos inanimados mediante el tacto:\n- **Ordinario:** emociones simples.\n- **Bueno:** imágenes simples.\n- **Asombroso:** encuentro breve como el propietario."
+                        }
+                    ]
+                },
+                {
+                    "skill": "Psychoportation",
+                    "attribute": "VOL",
+                    "url": "/es/psionics/psychoportation/",
+                    "cost": 7,
+                    "type": "Broad",
+                    "items": [
+                        {
+                            "skill": "Alterar Velocidad",
+                            "attribute": "VOL",
+                            "url": "/es/psionics/psychoportation/#alterar-velocidad",
+                            "cost": 4,
+                            "type": "Specialty",
+                            "css_class": "trained-only",
+                            "description": "Permite acelerar o desacelerar un objeto o ser vivo dentro de un rango limitado (25/50/100 metros). El éxito determina el porcentaje de cambio de velocidad:\n- **Ordinario:** 10%\n- **Bueno:** 25%\n- **Asombroso:** 50%\n\n**Beneficios de Rango:**\n- **Al rango 4 [Efecto Incrementado]**, porcentajes aumentan a 25/50/75%.\n- **Al rango 8 [Efecto Incrementado]**, porcentajes aumentan a 50/75/100%.\n- **Al rango 12 [Parar/Arrancar Instantáneo]**, permite detener instantáneamente o llevar a velocidad máxima a un objeto.\n\n---"
+                        },
+                        {
+                            "skill": "Aportación",
+                            "attribute": "VOL",
+                            "url": "/es/psionics/psychoportation/#aportacion",
+                            "cost": 6,
+                            "type": "Specialty",
+                            "css_class": "trained-only",
+                            "description": "El psiónico puede transportar mentalmente objetos o seres vivos de un lugar a otro dentro de un rango de 100 metros. A diferencia de la Teletransportación, el psiónico no viaja con el objetivo.\n\n**Beneficios de Rango:**\n- **Al rango 4 [Alcance Incrementado]**, el rango aumenta a 1 kilómetro.\n- **Al rango 12 [Alcance Incrementado]**, el rango aumenta a 100 kilómetros.\n\n---"
+                        },
+                        {
+                            "skill": "Duplicado",
+                            "attribute": "VOL",
+                            "url": "/es/psionics/psychoportation/#duplicado",
+                            "cost": 6,
+                            "type": "Specialty",
+                            "css_class": "trained-only",
+                            "description": "El personaje trae una versión futura de sí mismo desde una línea temporal alternativa al presente para que le ayude.\n\n- **Ordinario:** El yo futuro dura 1 asalto; tiene +1 rango en una habilidad.\n- **Bueno:** Dura 2 asaltos; +2 rangos en habilidades y un beneficio de Logro.\n- **Asombroso:** Dura 3 asaltos; +3 rangos en habilidades y dos beneficios de Logro.\n\n**Fallo Crítico:** El personaje sufre daños, aturdimiento o pérdida de equipo.\n\n---"
+                        },
+                        {
+                            "skill": "Teletransportación",
+                            "attribute": "VOL",
+                            "url": "/es/psionics/psychoportation/#teletransportacion",
+                            "cost": 5,
+                            "type": "Specialty",
+                            "css_class": "trained-only",
+                            "description": "Viaje instantáneo a una ubicación conocida en un radio de 100 metros.\n\n**Beneficios de Rango:**\n- **Al rango 3, 6, 9, 12 [Masa Incrementada]**, la masa transportada aumenta de 1x Voluntad a 2x, 5x, 10x y 20x el valor de Voluntad.\n- **Al rango 4, 8, 12 [Distancia Incrementada]**, la distancia máxima aumenta a 1 km, 100 km y 1000 km.\n\n---"
+                        },
+                        {
+                            "skill": "Salto Temporal",
+                            "attribute": "VOL",
+                            "url": "/es/psionics/psychoportation/#salto-temporal",
+                            "cost": 6,
+                            "type": "Specialty",
+                            "css_class": "trained-only",
+                            "description": "\"Salta\" hacia adelante en el tiempo momentos, minutos u horas. El personaje desaparece y reaparece en las mismas coordenadas locales en el momento futuro elegido.\n\n- **Ordinario:** Viaja 1 unidad de tiempo al futuro.\n- **Bueno:** Viaja 2 unidades.\n- **Asombroso:** Viaja 3 unidades.\n\n**Beneficios de Rango:**\n- **Al rango 4, 8, 12 [Salto Extendido]**, la unidad de tiempo aumenta de 1 asalto a 1 minuto, 1 hora y 1 día.\n- **Al rango 6 [Esquiva]**, permite realizar un salto temporal como reacción para esquivar un ataque."
+                        },
+                        {
+                            "skill": "Caminar entre Dimensiones",
+                            "attribute": "VOL",
+                            "url": "/es/psionics/psychoportation/#caminar-entre-dimensiones",
+                            "cost": 6,
+                            "type": "Specialty",
+                            "css_class": "trained-only",
+                            "description": "Salto entre dimensiones paralelas o líneas temporales tangentes."
+                        }
+                    ]
+                },
+                {
+                    "skill": "Telekinesis",
+                    "attribute": "VOL",
+                    "url": "/es/psionics/telekinesis/",
+                    "cost": 6,
+                    "type": "Broad",
+                    "items": [
+                        {
+                            "skill": "Crioquinesis",
+                            "attribute": "VOL",
+                            "url": "/es/psionics/telekinesis/#crioquinesis",
+                            "cost": 3,
+                            "type": "Specialty",
+                            "css_class": "trained-only",
+                            "description": "Absorbe la energía térmica de un objeto o zona (hasta 30 metros), haciendo que se congele. El éxito inflige daño de energía y puede congelar mecanismos.\n\n**Beneficios de Rango:**\n- **Al rango 5, 9 [Daño Incrementado]**, los niveles de daño aumentan.\n\n---"
+                        },
+                        {
+                            "skill": "Electroquinesis",
+                            "attribute": "VOL",
+                            "url": "/es/psionics/telekinesis/#electroquinesis",
+                            "cost": 3,
+                            "type": "Specialty",
+                            "css_class": "trained-only",
+                            "description": "Controla y genera energía eléctrica (rango 30 metros). Puede usarse para alimentar dispositivos o atacar. El éxito inflige daño de energía y puede cortocircuitar la electrónica.\n\n**Beneficios de Rango:**\n- **Al rango 5, 9 [Daño Incrementado]**, los niveles de daño eléctrico aumentan.\n\n---"
+                        },
+                        {
+                            "skill": "Golpe Kinético",
+                            "attribute": "VOL",
+                            "url": "/es/psionics/telekinesis/#golpe-kinetico",
+                            "cost": 3,
+                            "type": "Specialty",
+                            "css_class": "trained-only",
+                            "description": "Enfoca la energía cinética en un único golpe físico que se añade al daño de un ataque sin armas.\n- **Ordinario:** +d4s de daño.\n- **Bueno:** +d6s de daño.\n- **Asombroso:** +d4w de daño.\n\n---"
+                        },
+                        {
+                            "skill": "Escudo Kinético",
+                            "attribute": "VOL",
+                            "url": "/es/psionics/telekinesis/#escudo-kinetico",
+                            "cost": 2,
+                            "type": "Specialty",
+                            "css_class": "",
+                            "description": "Crea un campo de fuerza para desviar ataques físicos y de energía (pero no psiónicos). El escudo actúa como armadura.\n\n**Beneficios de Rango:**\n- **Al rango 4, 8, 12 [Protección Mejorada]**, los valores de protección LI/HI/En aumentan.\n\n---"
+                        },
+                        {
+                            "skill": "Levitación",
+                            "attribute": "VOL",
+                            "url": "/es/psionics/telekinesis/#levitacion",
+                            "cost": 2,
+                            "type": "Specialty",
+                            "css_class": "",
+                            "description": "Desafía la gravedad para elevarse a sí mismo o a otros. El personaje se mueve verticalmente a una velocidad inicial de 2 metros por fase.\n\n**Beneficios de Rango:**\n- **Al rango 4, 8, 12 [Velocidad/Carga Incrementada]**, la velocidad vertical y la capacidad de carga aumentan.\n\n---"
+                        },
+                        {
+                            "skill": "Fotoquinesis",
+                            "attribute": "VOL",
+                            "url": "/es/psionics/telekinesis/#fotoquinesis",
+                            "cost": 1,
+                            "type": "Specialty",
+                            "css_class": "trained-only",
+                            "description": "Manipula la luz para crear destellos, iluminar áreas o lanzar rayos láser (rango 100 metros).\n\n**Beneficios de Rango:**\n- **Al rango 4 [Invisibilidad]**, desvía la luz para obtener una bonificación de sigilo (–4 pasos).\n- **Al rango 12 [Proyección Holográfica]**, crea ilusiones visuales complejas.\n\n---"
+                        },
+                        {
+                            "skill": "Psicoquinesis",
+                            "attribute": "VOL",
+                            "url": "/es/psionics/telekinesis/#psicoquinesis",
+                            "cost": 3,
+                            "type": "Specialty",
+                            "css_class": "trained-only",
+                            "description": "Mueve y manipula objetos sólidos a distancia. Puede usarse para lanzar objetos y causar daño.\n\n**Beneficios de Rango:**\n- **Al rango 3 [Manipular]**, opera mecanismos remotos (cerraduras, teclados).\n- **Al rango 6 [Batir]**, apresa y daña físicamente a seres vivos.\n- **Al rango 8 [Marioneta]**, controla los movimientos de otro personaje.\n- **Al rango 9, 12 [Daño Incrementado]**, el daño por objetos lanzados aumenta.\n\n---"
+                        },
+                        {
+                            "skill": "Piroquinesis",
+                            "attribute": "VOL",
+                            "url": "/es/psionics/telekinesis/#piroquinesis",
+                            "cost": 4,
+                            "type": "Specialty",
+                            "css_class": "trained-only",
+                            "description": "Excita las moléculas para generar calor y fuego (rango 30 metros). Los objetivos estallan en llamas, sufriendo daños de energía con el tiempo.\n\n**Beneficios de Rango:**\n- **Al rango 5, 9 [Daño Incrementado]**, los niveles de daño por fuego aumentan.\n\n---"
+                        },
+                        {
+                            "skill": "Presa de Sheya",
+                            "attribute": "VOL",
+                            "url": "/es/psionics/telekinesis/#presa-de-sheya",
+                            "cost": 5,
+                            "type": "Specialty",
+                            "css_class": "trained-only",
+                            "description": "Aplasta mentalmente el corazón u órganos internos de un ser vivo (rango 40 metros). Ignora toda armadura no psiónica. Es agotador para el usuario, que también recibe daño.\n\n**Beneficios de Rango:**\n- **Al rango 5, 9 [Daño Incrementado]**, el daño a la víctima aumenta mientras el coste relativo para el usuario disminuye ligeramente."
+                        }
+                    ]
+                },
+                {
+                    "skill": "Telepathy",
+                    "attribute": "PER",
+                    "url": "/es/psionics/telepathy/",
+                    "cost": 5,
+                    "type": "Broad",
+                    "items": [
+                        {
+                            "skill": "Contacto",
+                            "attribute": "PER",
+                            "url": "/es/psionics/telepathy/#contacto",
+                            "cost": 3,
+                            "type": "Specialty",
+                            "css_class": "",
+                            "description": "Establece un vínculo Mental con otro personaje en el rango visual. Permite comunicación bidireccional y es requisito para otros poderes.\n\n**Beneficios de Rango:**\n- **Al rango 4**, contacta a 4 individuos simultáneamente.\n- **Al rango 8**, contacta a individuos fuera de la vista si se conoce su ubicación.\n\n---"
+                        },
+                        {
+                            "skill": "Enlace de Datos",
+                            "attribute": "PER",
+                            "url": "/es/psionics/telepathy/#enlace-de-datos",
+                            "cost": 4,
+                            "type": "Specialty",
+                            "css_class": "",
+                            "description": "Interfaz directa con sistemas informáticos. Realiza tareas de computación (Acceso, Hackeo, etc.) a distancia sin terminal física.\n\n**Beneficios de Rango:**\n- **Al rango 9**, bonificación de –2 pasos a tiradas de informática.\n\n---"
+                        },
+                        {
+                            "skill": "Drenar",
+                            "attribute": "PER",
+                            "url": "/es/psionics/telepathy/#drenar",
+                            "cost": 4,
+                            "type": "Specialty",
+                            "css_class": "trained-only",
+                            "description": "Sapa la salud de otro personaje (rango 30 metros). El éxito inflige daño de heridas y puede curar al usuario.\n\n---"
+                        },
+                        {
+                            "skill": "Proyección Empática",
+                            "attribute": "PER",
+                            "url": "/es/psionics/telepathy/#proyeccion-empatica",
+                            "cost": 3,
+                            "type": "Specialty",
+                            "css_class": "",
+                            "description": "Proyecta emociones en la mente de otro para influir en su actitud (Amistoso, Hostil, etc.).\n\n---"
+                        },
+                        {
+                            "skill": "Guía",
+                            "attribute": "PER",
+                            "url": "/es/psionics/telepathy/#guia",
+                            "cost": 4,
+                            "type": "Specialty",
+                            "css_class": "",
+                            "description": "Ayuda Mental a otro personaje, otorgando una bonificación a una tirada de habilidad específica.\n\n---"
+                        },
+                        {
+                            "skill": "Ilusión",
+                            "attribute": "PER",
+                            "url": "/es/psionics/telepathy/#ilusion",
+                            "cost": 3,
+                            "type": "Specialty",
+                            "css_class": "",
+                            "description": "Crea imágenes y sensaciones mentales que engañan la percepción del objetivo. Solo existe en la mente del objetivo.\n\n---"
+                        },
+                        {
+                            "skill": "Explosión Mental",
+                            "attribute": "PER",
+                            "url": "/es/psionics/telepathy/#explosion-mental",
+                            "cost": 4,
+                            "type": "Specialty",
+                            "css_class": "trained-only",
+                            "description": "Ataque telepático para aturdir a un oponente (rango 30 metros). Ignora armadura física.\n\n---"
+                        },
+                        {
+                            "skill": "Escudo Mental",
+                            "attribute": "PER",
+                            "url": "/es/psionics/telepathy/#escudo-mental",
+                            "cost": 2,
+                            "type": "Specialty",
+                            "css_class": "",
+                            "description": "Protege la mente contra intrusiones y ataques psíquicos. Otorga bonificación a la resistencia de Voluntad.\n\n---"
+                        },
+                        {
+                            "skill": "Borrado Mental",
+                            "attribute": "PER",
+                            "url": "/es/psionics/telepathy/#borrado-mental",
+                            "cost": 4,
+                            "type": "Specialty",
+                            "css_class": "trained-only",
+                            "description": "Borra o altera recuerdos en la mente del objetivo. La complejidad depende del nivel de éxito.\n\n---"
+                        },
+                        {
+                            "skill": "Armadura Psíquica",
+                            "attribute": "PER",
+                            "url": "/es/psionics/telepathy/#armadura-psiquica",
+                            "cost": 2,
+                            "type": "Specialty",
+                            "css_class": "",
+                            "description": "Refuerza la mente contra el daño psíquico. Otorga puntos de \"protección psíquica\".\n\n---"
+                        },
+                        {
+                            "skill": "Proyección Psíquica",
+                            "attribute": "PER",
+                            "url": "/es/psionics/telepathy/#proyeccion-psiquica",
+                            "cost": 3,
+                            "type": "Specialty",
+                            "css_class": "",
+                            "description": "Proyecta la psique a un lugar distante. El personaje puede ver y oír pero no interactuar físicamente.\n\n---"
+                        },
+                        {
+                            "skill": "Sometimiento",
+                            "attribute": "PER",
+                            "url": "/es/psionics/telepathy/#sometimiento",
+                            "cost": 3,
+                            "type": "Specialty",
+                            "css_class": "trained-only",
+                            "description": "Calma y pacifica las mentes para evitar la violencia. Los objetivos sufren penalizaciones en combate.\n\n---"
+                        },
+                        {
+                            "skill": "Sugestión",
+                            "attribute": "PER",
+                            "url": "/es/psionics/telepathy/#sugestion",
+                            "cost": 3,
+                            "type": "Specialty",
+                            "css_class": "",
+                            "description": "Planta pensamientos en la mente de otro, convenciéndolo de que son suyos.\n\n---"
+                        },
+                        {
+                            "skill": "Cansancio",
+                            "attribute": "PER",
+                            "url": "/es/psionics/telepathy/#cansancio",
+                            "cost": 3,
+                            "type": "Specialty",
+                            "css_class": "trained-only",
+                            "description": "Induce fatiga y agotamiento Mental (rango 30 metros).\n\n---"
+                        },
+                        {
+                            "skill": "Deshacer",
+                            "attribute": "PER",
+                            "url": "/es/psionics/telepathy/#deshacer",
+                            "cost": 3,
+                            "type": "Specialty",
+                            "css_class": "trained-only",
+                            "description": "Revierte o neutraliza efectos telepáticos duraderos como Ilusión, Borrado Mental o Sugestión."
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

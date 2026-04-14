@@ -11,7 +11,7 @@ You are an autonomous legal entity, granted the rare authority to use psionic po
 *   None.
 
 ## Favored Specialty Skills:
-*   [Telepathy-Mind Reading](/skills/telepathy/#mind-reading)
+*   [Telepathy-Mind Reading](/psionics/telepathy/#mind-reading)
 *   [Law-Court Procedures](/skills/law/#court-procedures)
 *   [Interaction-Interview](/skills/interaction/#interview)
 *   [Resolve-Mental Resolve](/skills/resolve-con/#mental-resolve)

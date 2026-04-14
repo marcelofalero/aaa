@@ -158,10 +158,9 @@ This page provides a mapping of common game terms from English to Spanish to ens
 | The War Hero | El Héroe de Guerra |
 | The Whistleblower | El Denunciante |
 
-## Perks & Flaws
+## Availability
 | English | Spanish |
 | :--- | :--- |
-| Alien Artifact | Artefacto Alienígena |
-| Ambidextrous | Ambidiestro |
-| Animal Friend | Amigo de los Animales |
-| ... | ... |
+| Unrestricted | Sin restricciones |
+| Rare | Raro |
+| Illegal | Ilegal |

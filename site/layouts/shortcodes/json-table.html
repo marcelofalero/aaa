@@ -1,3 +1,9 @@
+{{/* 
+  DATA AGNOSTIC SHORTCODE
+  This component must remain data-agnostic. All field names, labels, 
+  and hierarchical structures must be driven by the input data file.
+  Avoid hardcoding specific system references (e.g., "skills", "gear").
+*/}}
 {{ $file := .Get "data" | default (.Get 0) }}
 {{ $key := .Get "key" | default (.Get 1) }}
 {{ $hidden_fields := slice }}
@@ -18,13 +24,30 @@
 {{ end }}
 
 {{ if $key }}
+  {{/* Key resolution in new items structure */}}
   {{ $attempt := index $data $key }}
   {{ if not $attempt }}
+    {{ if and (eq $key "all") $data.items }}
+      {{ $attempt = $data }}
+    {{ else }}
+      {{ range $data.items }}
+        {{ if eq .name $key }}
+          {{ $attempt = . }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+  
+  {{ if not $attempt }}
+    {{/* Legacy categories support */}}
     {{ if index $data "categories" }}
       {{ $attempt = index (index $data "categories") $key }}
     {{ end }}
   {{ end }}
-  {{ $data = $attempt }}
+  
+  {{ if $attempt }}
+    {{ $data = $attempt }}
+  {{ end }}
 {{ end }}
 
 {{/* Specific for accordion expansion pattern - default to all (.*) */}}

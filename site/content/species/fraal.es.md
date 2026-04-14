@@ -16,7 +16,7 @@ Los fraal son viajeros estelares nómadas que llegaron a la Tierra hace más de 
 ## Habilidades Especiales
 
 - **Competencia Psiónica:** Los fraal son extremadamente competentes en psiónica. Un personaje fraal que es un Talento o un Caminante Mental tiene puntos de energía psiónica significativamente más altos que otras especies (Voluntad x 1.0 o Voluntad x 1.5 respectivamente).
-- **Telépata Natural:** Al usar la habilidad de especialidad [**telepatía-contacto**](/es/skills/telepathy/contact), un personaje fraal **no gasta energía psiónica** a menos que falle la prueba de habilidad.
+- **Telépata Natural:** Al usar la habilidad de especialidad [**telepatía-contacto**](/es/psionics/telepathy/#contact), un personaje fraal **no gasta energía psiónica** a menos que falle la prueba de habilidad.
 - **Enfoque Psiónico:** Un personaje Fraal selecciona una habilidad de Especialidad Psiónica que puede usar en la creación del personaje; al usar esta habilidad, tiene una bonificación de -1 paso. Cada vez que el personaje avanza al siguiente Rango de Personaje, puede cambiar su enfoque a una habilidad diferente que pueda usar.
 - **Habilidades Generales Gratuitas:** Percepción (PER), Resolución (VOL), Operación de Vehículos (DES), Conocimiento (INT), Interacción (PER), Telepatía (VOL).
 

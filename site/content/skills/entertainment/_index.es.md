@@ -6,7 +6,7 @@ type = "skill"
 layout = "list"
 +++
 
-Esta habilidad general representa la competencia de un héroe en las artes escénicas. Los conocimientos técnicos y el entrenamiento son parte de esta habilidad, al igual que la capacidad del héroe para actuar ante un público y provocar una respuesta emocional.
+Esta habilidad general representa la competencia de un personaje en las artes escénicas. Los conocimientos técnicos y el entrenamiento son parte de esta habilidad, al igual que la capacidad del personaje para actuar ante un público y provocar una respuesta emocional.
 
 Las tiradas de habilidad se ven modificadas por el modificador de resistencia de Voluntad del objetivo (para alterar las emociones) o por el modificador de resistencia de Personalidad (para impresionar).
 
@@ -25,9 +25,9 @@ Cuanto mayor sea el nivel de éxito, más potente será la actuación.
 - **Monólogos
 | Resultados | Descripción |
 | :--- | :--- |
-| **Ordinario** | El éxito indica que el héroe produjo una actuación de calidad. |
-| **Bueno** | El éxito indica que el héroe produjo una actuación de muy buena calidad. |
-| **Asombroso** | El éxito indica que el héroe produjo una actuación magistral. |
+| **Ordinario** | El éxito indica que el personaje produjo una actuación de calidad. |
+| **Bueno** | El éxito indica que el personaje produjo una actuación de muy buena calidad. |
+| **Asombroso** | El éxito indica que el personaje produjo una actuación magistral. |
 
 ---
 

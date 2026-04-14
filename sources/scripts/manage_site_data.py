@@ -9,6 +9,21 @@ def str_presenter(dumper, data):
 
 yaml.add_representer(str, str_presenter)
 
+def to_list(data):
+    """Converts a Map-based collection to a List, injecting keys as IDs."""
+    if isinstance(data, dict):
+        res = []
+        for k, v in data.items():
+            if isinstance(v, dict):
+                item = v.copy()
+                if 'id' not in item:
+                    item['id'] = k
+                res.append(item)
+            else:
+                res.append({'id': k, 'name': v})
+        return res
+    return data
+
 DATA_SOURCES_DIR = 'sources/data_sources'
 SITE_DATA_DIR = 'site/data'
 SKILLS_CONTENT_DIR = 'site/content/skills'
@@ -19,6 +34,19 @@ CATEGORY_MAP = {
     'Technical': 'Técnica',
     'Social': 'Social',
     'Other': 'Otros'
+}
+
+AVAIL_MAP = {
+    'Any': 'Cualquiera',
+    'Com': 'Común',
+    'Con': 'Controlada',
+    'Mil': 'Militar',
+    'Res': 'Restringida',
+    'Availability: Any': 'Disponibilidad: Cualquiera',
+    'Availability: Common': 'Disponibilidad: Común',
+    'Availability: Controlled': 'Disponibilidad: Controlada',
+    'Availability: Military': 'Disponibilidad: Militar',
+    'Availability: Restricted': 'Disponibilidad: Restringida'
 }
 
 def load_mapping():
@@ -40,9 +68,27 @@ def apply_mapping(text, mapping):
     # Soft mapping using terminology rules
     sorted_en_terms = sorted(mapping.keys(), key=len, reverse=True)
     for en in sorted_en_terms:
-        pattern = r'\b' + re.escape(en) + r'\b' if re.match(r'^\w', en) else re.escape(en)
-        text = re.sub(pattern, mapping[en], text, flags=re.IGNORECASE)
+        # Avoid clobbering common Spanish words like 'con' or 'mil' with short game terms like 'CON' (attribute)
+        # We do this by making short terms (length <= 3) case-sensitive.
+        is_short = len(en) <= 3
+        flags = 0 if is_short else re.IGNORECASE
+        
+        # Use a regex that respects word boundaries for alphanumeric terms
+        if re.match(r'^\w', en):
+            pattern = r'\b' + re.escape(en) + r'\b'
+        else:
+            pattern = re.escape(en)
+        text = re.sub(pattern, mapping[en], text, flags=flags)
     return text
+
+def get_localized(node, lang):
+    """Extracts the language-specific block from the 'localized' list."""
+    if not isinstance(node, dict) or 'localized' not in node:
+        return {}
+    for item in node['localized']:
+        if lang in item:
+            return item[lang]
+    return {}
 
 def translate_field(en_val, es_override, mapping, lang):
     if lang == 'en': return en_val
@@ -86,8 +132,15 @@ def rebuild_all():
     if os.path.exists(skills_yaml):
         print('Processing Skills...')
         with open(skills_yaml, 'r', encoding='utf-8') as f:
-            skills_data = yaml.load(f, Loader=yaml.FullLoader)
-        process_skills(skills_data, mapping)
+            skills_raw = yaml.load(f, Loader=yaml.FullLoader)
+        process_skills(to_list(skills_raw.get('items', [])), mapping)
+    
+    psionics_yaml = os.path.join(DATA_SOURCES_DIR, 'psionics.yaml')
+    if os.path.exists(psionics_yaml):
+        print('Processing Psionics...')
+        with open(psionics_yaml, 'r', encoding='utf-8') as f:
+            psionics_raw = yaml.load(f, Loader=yaml.FullLoader)
+        process_psionics(to_list(psionics_raw.get('items', [])), mapping)
     
     # Generic gear data (Armor, weapons, etc)
     gear_sources = ['armor', 'computers', 'cybernetics', 'survival_gear', 'weapons']
@@ -106,38 +159,170 @@ def rebuild_all():
 def apply_rules_to_node(node, mapping, lang='en'):
     if isinstance(node, dict):
         new_node = {}
-        # Special case: translation dictionary
-        if 'en' in node and 'es' in node and len(node) == 2:
-             val = node.get(lang, node.get('en', ''))
-             return apply_mapping(val, mapping) if lang == 'es' else val
         
-        # Pre-translate name/skill if possible for URL localization
-        loc_title = None
-        if lang == 'es':
-            if 'name' in node: loc_title = translate_field(node['name'], node.get('name_es'), mapping, 'es')
-            elif 'skill' in node: loc_title = translate_field(node['skill'], node.get('skill_es'), mapping, 'es')
+        # Get localized data if present
+        loc_data = get_localized(node, lang)
+        
+        # Determine title for URL localization
+        # 1. From localized block
+        # 2. From root 'name' or 'skill' (common for categories or generic items)
+        loc_title = loc_data.get('name') or loc_data.get('skill') or loc_data.get('title')
+        if not loc_title:
+             loc_title = node.get('name') or node.get('skill') or node.get('discipline')
 
+        if not loc_title and lang == 'es':
+             # Fallback translation if root field exists but no Spanish localized version yet
+             orig_title = node.get('name') or node.get('skill') or node.get('discipline')
+             if orig_title:
+                 loc_title = translate_field(orig_title, node.get(f"{'name' if 'name' in node else 'skill'}_es"), mapping, 'es')
+
+        # Inject localized title if root field is missing (new standardized format)
+        if loc_title:
+            if 'name' in loc_data or 'name' in node:
+                new_node['name'] = loc_title
+            elif 'skill' in loc_data or 'skill' in node:
+                new_node['skill'] = loc_title
+            elif 'title' in loc_data or 'title' in node:
+                new_node['title'] = loc_title
+            else:
+                # Default to 'name' for category headers or if ambiguous
+                new_node['name'] = loc_title
+
+        # Process all root-level attributes
         for k, v in node.items():
-            if k in ['name_es', 'skill_es', 'description_es']: continue
-            # Translate keys like 'name'
-            if k == 'name':
-                new_node[k] = loc_title if lang == 'es' else v
-            elif k == 'skill':
-                new_node[k] = loc_title if lang == 'es' else v
+            if k == 'localized' or k.endswith('_es'): continue
+            
+            if k in ['items', 'config'] and isinstance(v, dict):
+                # Optimize for Humans (YAML Map) -> Optimize for Machines (JSON List)
+                item_list = []
+                for item_id, item_data in v.items():
+                    # Ensure it's a dict
+                    if not isinstance(item_data, dict):
+                        item_data = {'name': item_data}
+                    
+                    # Inject Key as ID (item_id)
+                    item_data = item_data.copy()
+                    # For config, we use 'id' or 'name' if not present
+                    if 'id' not in item_data:
+                        item_data['id'] = item_id
+                    
+                    item_list.append(apply_rules_to_node(item_data, mapping, lang))
+                new_node[k] = item_list
+            elif k in ['name', 'skill', 'discipline']:
+                # Prefer localized version but keep original if unavailable
+                new_node[k] = loc_title if loc_title else v
+            elif k == 'avail':
+                # Use specific availability map for this field to avoid global clobbering
+                new_node[k] = AVAIL_MAP.get(v, translate_field(v, None, mapping, lang))
             elif k == 'attribute':
                 new_node[k] = translate_field(v, None, mapping, lang)
-            elif k.endswith('url'):
-                new_node[k] = localize_url(v, lang, loc_title)
+            elif k.endswith('url') and isinstance(v, str):
+                loc_url = localize_url(v, lang, loc_title)
+                new_node[k] = loc_url
             else:
-                new_val = apply_rules_to_node(v, mapping, lang)
-                if isinstance(new_val, str) and lang == 'es' and k not in ['type', 'category']:
-                    new_val = apply_mapping(new_val, mapping)
-                new_node[k] = new_val
+                new_node[k] = apply_rules_to_node(v, mapping, lang)
+
+        # Merge in all other localized attributes (description, etc.)
+        for k, v in loc_data.items():
+            if k in ['name', 'skill', 'title']: continue # handled above
+            # Apply mapping rules to localized strings if in Spanish
+            processed_v = v
+            if isinstance(v, str) and lang == 'es':
+                processed_v = apply_mapping(v, mapping)
+            new_node[k] = processed_v
+
         return new_node
     elif isinstance(node, list):
         return [apply_rules_to_node(item, mapping, lang) for item in node]
     else:
         return node
+
+def process_psionics(psionics_list, mapping):
+    for lang in ['en', 'es']:
+        fields = [
+            {"key": "skill", "name": "Discipline/Power" if lang == 'en' else "Disciplina/Poder", "link": True},
+            {"key": "attribute", "name": "Attr." if lang == 'en' else "Atrib."},
+            {"key": "cost", "name": "Cost" if lang == 'en' else "Costo"}
+        ]
+        
+        discipline_entries = []
+        search_groups = {}
+        
+        for d in psionics_list:
+            loc_d = get_localized(d, lang)
+            d_title = loc_d.get('name') or loc_d.get('discipline') or translate_field(d.get('discipline', ''), None, mapping, lang)
+            d_attr = translate_field(d['attribute'], None, mapping, lang)
+            d_url = localize_url(d['url'], lang, d_title)
+            
+            broad_entry = {
+                "skill": d_title,
+                "attribute": d_attr,
+                "url": d_url,
+                "cost": d.get('cost', 6),
+                "type": "Broad"
+            }
+            
+            powers = []
+            powers_search = []
+            for p in to_list(d.get('items', [])):
+                loc_p = get_localized(p, lang)
+                p_title = loc_p.get('name') or translate_field(p.get('name', ''), None, mapping, lang)
+                p_attr = translate_field(p['attribute'], None, mapping, lang)
+                p_url = localize_url(p['url'], lang, p_title)
+                
+                # Extract description from localized block
+                p_desc = loc_p.get('description')
+                if not p_desc:
+                    # Legacy support
+                    p_desc = p.get('description', {}).get(lang, p.get('description', {}).get('en', ''))
+                
+                if lang == 'es':
+                    p_desc = apply_mapping(p_desc, mapping)
+                
+                power_entry = {
+                    "skill": p_title,
+                    "attribute": p_attr,
+                    "url": p_url,
+                    "cost": p.get('cost', 5),
+                    "type": "Specialty",
+                    "css_class": "trained-only" if p.get('trained_only', False) else "",
+                    "description": p_desc
+                }
+                powers.append(power_entry)
+                
+                # For search index
+                powers_search.append({
+                    "name": p_title,
+                    "attribute": p_attr,
+                    "skill_url": p_url,
+                    "description": p_desc
+                })
+            
+            if powers: broad_entry["items"] = powers
+            discipline_entries.append(broad_entry)
+            search_groups[d_title] = powers_search
+            
+        # Nested Table Data
+        table_data = {
+            "fields": fields,
+            "items": [{"skill": "PSIONICS" if lang == 'en' else "PSIÓNICA", "type": "Category", "items": discipline_entries}]
+        }
+        
+        suffix = '.es.json' if lang == 'es' else '.json'
+        with open(os.path.join(SITE_DATA_DIR, 'psionics-table' + suffix), 'w', encoding='utf-8') as f:
+            json.dump(table_data, f, indent=4, ensure_ascii=False)
+            
+        # Search Index Data
+        search_data = {
+            "search_config": {
+                "display_name": "PSIONICS" if lang == 'en' else "PSIÓNICA",
+                "base_url": "/core-mechanics/psionics/",
+                "section": "psionics"
+            },
+            "groups": search_groups
+        }
+        with open(os.path.join(SITE_DATA_DIR, 'psionics' + suffix), 'w', encoding='utf-8') as f:
+            json.dump(search_data, f, indent=4, ensure_ascii=False)
 
 def process_skills(skills_list, mapping):
     for broad in skills_list:
@@ -148,19 +333,34 @@ def process_skills(skills_list, mapping):
         os.makedirs(out_dir, exist_ok=True)
         
         for lang in ['en', 'es']:
-            title = translate_field(broad['skill'], broad.get('skill_es'), mapping, lang)
+            loc_broad = get_localized(broad, lang)
+            title = loc_broad.get('name') or loc_broad.get('skill') or translate_field(broad.get('skill', ''), broad.get('skill_es'), mapping, lang)
             attr = translate_field(broad['attribute'], None, mapping, lang)
             cat_en = broad.get('category', 'Other')
             cat = cat_en if lang == 'en' else CATEGORY_MAP.get(cat_en, apply_mapping(cat_en, mapping))
-            desc = broad.get('description', '') if lang == 'en' else apply_mapping(broad.get('description_es', broad.get('description', '')), mapping)
+            
+            desc = loc_broad.get('description')
+            if not desc:
+                # Legacy support
+                desc = broad.get('description', '') if lang == 'en' else apply_mapping(broad.get('description_es', broad.get('description', '')), mapping)
+            elif lang == 'es':
+                desc = apply_mapping(desc, mapping)
             
             suffix = '.es.md' if lang == 'es' else '.md'
             with open(os.path.join(out_dir, '_index' + suffix), 'w', encoding='utf-8') as f:
                 f.write(f'+++\ntitle = "{title}"\nattribute = "{attr}"\ncategory = "{cat}"\ntype = "skill"\nlayout = "list"\n+++\n\n{desc}\n\n')
-                for spec in broad.get('specialties', []):
-                    s_title = translate_field(spec['skill'], spec.get('skill_es'), mapping, lang)
+                for spec in to_list(broad.get('items', [])):
+                    loc_spec = get_localized(spec, lang)
+                    s_title = loc_spec.get('name') or loc_spec.get('skill') or translate_field(spec.get('skill', ''), spec.get('skill_es'), mapping, lang)
                     s_attr = translate_field(spec['attribute'], None, mapping, lang)
-                    s_desc = spec.get('description', '') if lang == 'en' else apply_mapping(spec.get('description_es', spec.get('description', '')), mapping)
+                    
+                    s_desc = loc_spec.get('description')
+                    if not s_desc:
+                        # Legacy support
+                        s_desc = spec.get('description', '') if lang == 'en' else apply_mapping(spec.get('description_es', spec.get('description', '')), mapping)
+                    elif lang == 'es':
+                        s_desc = apply_mapping(s_desc, mapping)
+                        
                     f.write(f'## {s_title}\n### ({s_attr})\n\n{s_desc}\n\n---\n\n')
 
     def build_nested_skills_table(lang):
@@ -174,31 +374,35 @@ def process_skills(skills_list, mapping):
             cat_en = b.get('category', 'Other')
             cat = cat_en if lang == 'en' else CATEGORY_MAP.get(cat_en, apply_mapping(cat_en, mapping))
             
-            b_title = translate_field(b['skill'], b.get('skill_es'), mapping, lang)
+            loc_b = get_localized(b, lang)
+            b_title = loc_b.get('name') or loc_b.get('skill') or translate_field(b.get('skill', ''), b.get('skill_es'), mapping, lang)
+            
             broad_entry = {
                 "skill": b_title,
                 "attribute": translate_field(b['attribute'], None, mapping, lang),
-                "skill_url": localize_url(b['skill_url'], lang, b_title),
+                "url": localize_url(b.get('url') or b.get('skill_url'), lang, b_title),
                 "cost": b.get('cost', 0),
                 "type": "Broad"
             }
             specs = []
-            for s in b.get('specialties', []):
-                s_title = translate_field(s['skill'], s.get('skill_es'), mapping, lang)
+            for s in to_list(b.get('items', [])):
+                loc_s = get_localized(s, lang)
+                s_title = loc_s.get('name') or loc_s.get('skill') or translate_field(s.get('skill', ''), s.get('skill_es'), mapping, lang)
                 specs.append({
                     "skill": s_title,
                     "attribute": translate_field(s['attribute'], None, mapping, lang),
-                    "skill_url": localize_url(s['skill_url'], lang, s_title),
+                    "url": localize_url(s.get('url') or s.get('skill_url'), lang, s_title),
                     "cost": s.get('cost', 0),
-                    "type": "Specialty"
+                    "type": "Specialty",
+                    "css_class": "trained-only" if s.get('trained_only', False) else ""
                 })
-            if specs: broad_entry["children"] = specs
+            if specs: broad_entry["items"] = specs
             categories[cat].append(broad_entry)
             
-        data = []
+        items = []
         for cat in sorted(categories.keys()):
-            data.append({"skill": cat, "type": "Category", "children": categories[cat]})
-        return {"fields": fields, "data": data}
+            items.append({"skill": cat, "type": "Category", "items": categories[cat]})
+        return {"fields": fields, "items": items}
 
     with open(os.path.join(SITE_DATA_DIR, 'skills-table.json'), 'w', encoding='utf-8') as f:
         json.dump(build_nested_skills_table('en'), f, indent=4, ensure_ascii=False)

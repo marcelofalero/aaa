@@ -1,409 +1,1593 @@
-- discipline: Biokinesis
-  attribute: CON
-  url: /core-mechanics/psionics/biokinesis/
-  cost: 6
-  description:
-    en: Manipulate the user's or another living being's biology and physiology.
-    es: Manipula la biología y fisiología del usuario o de otro ser vivo.
-  powers:
-  - name: Bio-armor
+items:
+  Biokinesis:
     attribute: CON
-    cost: 5
-    url: /core-mechanics/psionics/biokinesis/#bio-armor
-    description:
-      en: Psionically reinforces skin for protection.
-      es: Refuerza psiónicamente la piel para brindar protección.
-  - name: Bioweapon
-    attribute: CON
-    cost: 5
-    url: /core-mechanics/psionics/biokinesis/#bioweapon
-    description:
-      en: Generates a field of kinetic energy manifesting as a staff or sword.
-      es: Genera un campo de energía cinética que se manifiesta como un bastón o una espada.
-  - name: Clamber
-    attribute: CON
-    cost: 5
-    url: /core-mechanics/psionics/biokinesis/#clamber
-    description:
-      en: Generate tiny suckers on hands and feet to climb vertical or inverted surfaces.
-      es: Genera pequeñas ventosas en manos y pies para trepar por superficies verticales o invertidas.
-  - name: Control Metabolism
-    attribute: CON
-    cost: 5
-    url: /core-mechanics/psionics/biokinesis/#control-metabolism
-    description:
-      en: Regulate metabolic processes to survive hostile environments or boost physical performance.
-      es: Regula los procesos metabólicos para sobrevivir en entornos hostiles o mejorar el rendimiento físico.
-  - name: Heal
-    attribute: CON
-    cost: 5
-    url: /core-mechanics/psionics/biokinesis/#heal
-    trained_only: true
-    description:
-      en: Mentally mend wounds or cure diseases.
-      es: Cura mentalmente heridas o enfermedades.
-  - name: Intangibility
-    attribute: CON
-    cost: 5
-    url: /core-mechanics/psionics/biokinesis/#intangibility
-    description:
-      en: Reorder molecules to become immaterial and pass through solid objects.
-      es: Reordena las moléculas para volverse inmaterial y atravesar objetos sólidos.
-  - name: Morph
-    attribute: CON
-    cost: 5
-    url: /core-mechanics/psionics/biokinesis/#morph
-    trained_only: true
-    description:
-      en: Alter physical features to disguise identity or squeeze into small openings.
-      es: Altera los rasgos físicos para disfrazar la identidad o entrar en aberturas pequeñas.
-  - name: Rejuvenate
-    attribute: CON
-    cost: 5
-    url: /core-mechanics/psionics/biokinesis/#rejuvenate
-    description:
-      en: Offset fatigue or stun damage by stimulating the body's recovery.
-      es: Compensa el daño por fatiga o aturdimiento estimulando la recuperación del cuerpo.
-  - name: Shatter
-    attribute: CON
-    cost: 5
-    url: /core-mechanics/psionics/biokinesis/#shatter
-    description:
-      en: Direct bio-energy to break solid surfaces or armor.
-      es: Dirige la bioenergía para romper superficies sólidas o armaduras.
-  - name: Transfer Damage
-    attribute: CON
-    cost: 5
-    url: /core-mechanics/psionics/biokinesis/#transfer-damage
-    description:
-      en: Alleviate another's damage or disease by absorbing it into the psion's own body.
-      es: Alivia el daño o la enfermedad de otro absorbiéndolo en el propio cuerpo del psiónico.
+    url: /psionics/biokinesis/
+    cost: 6
+    localized:
+    - en:
+        name: Biokinesis
+        description: Manipulate the user's or another living being's biology and physiology.
+    - es:
+        name: Biokinesis
+        description: Manipula la biología y fisiología del usuario o de otro ser vivo.
+    items:
+      bio-armor:
+        attribute: CON
+        cost: 3
+        url: /psionics/biokinesis/#bio-armor
+        localized:
+        - en:
+            name: Bio-armor
+            description: |-
+              This skill psionically reinforces a character's skin, helping to protect from damage. This "body armor" provides protection against physical and energy damage, but does not protect against psionic attacks. (See Telepathy for ways to avoid psionic attacks.)
 
-- discipline: ESP
-  attribute: INT
-  url: /core-mechanics/psionics/esp/
-  cost: 6
-  description:
-    en: Experience environment beyond normal senses using the mind.
-    es: Experimenta el entorno más allá de los sentidos normales usando la mente.
-  powers:
-  - name: Battle Mind
-    attribute: INT
-    cost: 5
-    url: /core-mechanics/psionics/esp/#battle-mind
-    description:
-      en: Focus the mind on battle to increase reaction time and accuracy.
-      es: Enfoca la mente en la batalla para aumentar el tiempo de reacción y la precisión.
-  - name: Clairaudience
-    attribute: INT
-    cost: 5
-    url: /core-mechanics/psionics/esp/#clairaudience
-    description:
-      en: Project the mind to a location to hear sounds as if physically present.
-      es: Proyecta la mente a un lugar para escuchar sonidos como si estuvieras físicamente allí.
-  - name: Clairvoyance
-    attribute: INT
-    cost: 5
-    url: /core-mechanics/psionics/esp/#clairvoyance
-    description:
-      en: Project the mind to a location to see everything as if physically there.
-      es: Proyecta la mente a un lugar para verlo todo como si estuvieras físicamente allí.
-  - name: Dream Hunt
-    attribute: INT
-    cost: 5
-    url: /core-mechanics/psionics/esp/#dream-hunt
-    description:
-      en: Mentally engage in a hunt to pinpoint a subject's future location.
-      es: Participa mentalmente en una caza para localizar la ubicación futura de un sujeto.
-  - name: Empathy
-    attribute: INT
-    cost: 5
-    url: /core-mechanics/psionics/esp/#empathy
-    description:
-      en: Read surface emotions and bioelectric fields of others.
-      es: Lee las emociones superficiales y los campos bioeléctricos de otros.
-  - name: Mind Reading
-    attribute: INT
-    cost: 5
-    url: /core-mechanics/psionics/esp/#mind-reading
-    description:
-      en: Read surface thoughts of subjects within range.
-      es: Lee los pensamientos superficiales de sujetos dentro del alcance.
-  - name: Navcognition
-    attribute: INT
-    cost: 5
-    url: /core-mechanics/psionics/esp/#navcognition
-    trained_only: true
-    description:
-      en: Innate ability to know exact location relative to a fixed point; allows astrogation.
-      es: Habilidad innata para conocer la ubicación exacta en relación con un punto fijo; permite la astronavegación.
-  - name: Postcognition
-    attribute: INT
-    cost: 5
-    url: /core-mechanics/psionics/esp/#postcognition
-    description:
-      en: Sense psychic residue to see past events in an area or object.
-      es: Siente el residuo psíquico para ver eventos pasados en un área u objeto.
-  - name: Precognition
-    attribute: INT
-    cost: 5
-    url: /core-mechanics/psionics/esp/#precognition
-    trained_only: true
-    description:
-      en: Receive impressions and flashes about possible future events.
-      es: Recibe impresiones y destellos sobre posibles eventos futuros.
-  - name: Psychometry
-    attribute: INT
-    cost: 5
-    url: /core-mechanics/psionics/esp/#psychometry
-    description:
-      en: Read psychic impressions from inanimate objects through touch.
-      es: Lee impresiones psíquicas de objetos inanimados a través del tacto.
+              The protection afforded by bio-armor is based on the user's skill check:
 
-- discipline: Psychoportation
-  attribute: WIL
-  url: /core-mechanics/psionics/psychoportation/
-  cost: 6
-  description:
-    en: Control time and space through mental discipline.
-    es: Controla el tiempo y el espacio mediante la disciplina mental.
-  powers:
-  - name: Alter Speed
-    attribute: WIL
-    cost: 5
-    url: /core-mechanics/psionics/psychoportation/#alter-speed
-    trained_only: true
-    description:
-      en: Accelerate or decelerate an object or living being.
-      es: Acelera o desacelera un objeto o ser vivo.
-  - name: Apportation
-    attribute: WIL
-    cost: 5
-    url: /core-mechanics/psionics/psychoportation/#apportation
-    trained_only: true
-    description:
-      en: Mentally transport objects or others without traveling with them.
-      es: Transporta mentalmente objetos u otros sin viajar con ellos.
-  - name: Duplicate
-    attribute: WIL
-    cost: 5
-    url: /core-mechanics/psionics/psychoportation/#duplicate
-    trained_only: true
-    description:
-      en: Reach into an alternate timeline to bring a future self into the present.
-      es: Alcanza una línea de tiempo alternativa para traer un yo futuro al presente.
-  - name: Teleportation
-    attribute: WIL
-    cost: 5
-    url: /core-mechanics/psionics/psychoportation/#teleportation
-    trained_only: true
-    description:
-      en: Instantly travel from one location to another.
-      es: Viaja instantáneamente de un lugar a otro.
-  - name: Timeslip
-    attribute: WIL
-    cost: 5
-    url: /core-mechanics/psionics/psychoportation/#timeslip
-    trained_only: true
-    description:
-      en: Jump forward in time by moments, minutes, or hours.
-      es: Salta hacia adelante en el tiempo por momentos, minutos u horas.
+              | Result | LI | HI | En |
+              | :--- | :---: | :---: | :---: |
+              | **Ordinary** | d4 | d4–1 | d4–1 |
+              | **Good** | d6 | d6–1 | d6–1 |
+              | **Amazing** | d6+1 | d6 | d6 |
 
-- discipline: Telekinesis
-  attribute: WIL
-  url: /core-mechanics/psionics/telekinesis/
-  cost: 6
-  description:
-    en: Manipulate and move physical objects using the power of the mind.
-    es: Manipula y mueve objetos físicos usando el poder de la mente.
-  powers:
-  - name: Cryokinetics
-    attribute: WIL
-    cost: 5
-    url: /core-mechanics/psionics/telekinesis/#cryokinetics
-    trained_only: true
-    description:
-      en: Absorb thermal energy to freeze objects or areas.
-      es: Absorbe energía térmica para congelar objetos o áreas.
-  - name: Electrokinetics
-    attribute: WIL
-    cost: 5
-    url: /core-mechanics/psionics/telekinesis/#electrokinetics
-    trained_only: true
-    description:
-      en: Control and generate electrical energy to power devices or attack.
-      es: Controla y genera energía eléctrica para alimentar dispositivos o atacar.
-  - name: Kinetic Blow
-    attribute: WIL
-    cost: 5
-    url: /core-mechanics/psionics/telekinesis/#kinetic-blow
-    trained_only: true
-    description:
-      en: Focus kinetic energy into a single physical strike.
-      es: Enfoca la energía cinética en un solo golpe físico.
-  - name: Kinetic Shield
-    attribute: WIL
-    cost: 5
-    url: /core-mechanics/psionics/telekinesis/#kinetic-shield
-    description:
-      en: Create a field of force to deflect physical and energy attacks.
-      es: Crea un campo de fuerza para desviar ataques físicos y energéticos.
-  - name: Levitation
-    attribute: WIL
-    cost: 5
-    url: /core-mechanics/psionics/telekinesis/#levitation
-    description:
-      en: Defy gravity to lift oneself or others.
-      es: Desafía la gravedad para levantarte a ti mismo o a otros.
-  - name: Photokinetics
-    attribute: WIL
-    cost: 5
-    url: /core-mechanics/psionics/telekinesis/#photokinetics
-    trained_only: true
-    description:
-      en: Manipulate light to create flashes, illuminate, or fire lasers.
-      es: Manipula la luz para crear destellos, iluminar o disparar láseres.
-  - name: Psychokinetics
-    attribute: WIL
-    cost: 5
-    url: /core-mechanics/psionics/telekinesis/#psychokinetics
-    trained_only: true
-    description:
-      en: Move and manipulate solid objects at a distance.
-      es: Mueve y manipula objetos sólidos a distancia.
-  - name: Pyrokinesis
-    attribute: WIL
-    cost: 5
-    url: /core-mechanics/psionics/telekinesis/#pyrokinesis
-    trained_only: true
-    description:
-      en: Excite molecules to generate heat and fire.
-      es: Excita las moléculas para generar calor y fuego.
-  - name: Sheya's Clutch
-    attribute: WIL
-    cost: 5
-    url: /core-mechanics/psionics/telekinesis/#sheyas-clutch
-    trained_only: true
-    description:
-      en: Mentally crush internal organs of a living being.
-      es: Aplasta mentalmente los órganos internos de un ser vivo.
+              **Increased Effect:**
+              - **At rank 3**, the protection afforded by bio-armor increases by 1 point (add 1 to whatever is rolled on the table above).
+              - **At rank 6**, this value further increases by 1 point (a total of +2).
+              - **At rank 9**, the armor is treated as being of Good toughness.
+              - **At rank 12**, the armor value increases again by 1 point (a total of +3).
 
-- discipline: Telepathy
-  attribute: PER
-  url: /core-mechanics/psionics/telepathy/
-  cost: 6
-  description:
-    en: Communicate and interact directly with the minds of others.
-    es: Comunícate e interactúa directamente con la mente de los demás.
-  powers:
-  - name: Contact
-    attribute: PER
+              ---
+        - es:
+            name: Bioarmadura
+            description: |-
+              Esta habilidad refuerza psiónicamente la piel de un personaje, ayudando a protegerlo del daño. Esta "armadura corporal" proporciona protección contra daños físicos y de energía, pero no protege contra ataques psiónicos. (Consulta Telepatía para conocer formas de evitar los ataques psiónicos).
+
+              La protección proporcionada por la bioarmadura se basa en la tirada de habilidad del usuario:
+
+              | Resultado | LI | HI | En |
+              | :--- | :---: | :---: | :---: |
+              | **Ordinario** | d4 | d4–1 | d4–1 |
+              | **Bueno** | d6 | d6–1 | d6–1 |
+              | **Asombroso** | d6+1 | d6 | d6 |
+
+              **Efecto Incrementado:**
+              - **Al rango 3**, la protección proporcionada por la bioarmadura aumenta en 1 punto (añade 1 a lo que se tire en la tabla anterior).
+              - **Al rango 6**, este valor aumenta de nuevo en 1 punto (un total de +2).
+              - **Al rango 9**, la armadura se trata como si tuviera Dureza Buena (Good toughness).
+              - **Al rango 12**, el valor de la armadura aumenta una vez más en 1 punto (un total de +3).
+
+              ---
+        trained_only: true
+      bioweapon:
+        attribute: CON
+        cost: 3
+        url: /psionics/biokinesis/#bioweapon
+        localized:
+        - en:
+            name: Bioweapon
+            description: "When employing this skill, a character generates a field\
+              \ of kinetic energy emanating from his or her hands. This energy manifests\
+              \ in one of two ways, to be chosen by the player at the time the character\
+              \ makes a successful skill check: a staff or a sword.\n\nThe player\
+              \ may alter the shape of the staff to a club, and the sword to a particular\
+              \ type of sword (katana, saber, broadsword, and so on). These changes\
+              \ neither damage the bioweapon will do, nor do they grant any special\
+              \ properties to the weapon; they are cosmetic only.\n\nThe principal\
+              \ difference in the two forms is in the sort of damage they do. A character\
+              \ who wishes just to knock out an opponent would be best served creating\
+              \ a staff; those who mean to inflict more serious harm on an opponent\
+              \ will likely create the sword.\n\n| Form | Base Damage | Type |\n|\
+              \ :--- | :--- | :---: |\n| **Staff** | d8s/d8+2s/d12+2s | LI/O |\n|\
+              \ **Sword** | d6w/d6+2w/d6m | LI/O |\n\nThe character uses one of two\
+              \ skills to wield the bioweapon: **Melee Weapons—bludgeon** for the\
+              \ staff or **Melee Weapons—blade** for the sword. \n\nThe result of\
+              \ the bioweapon skill check may add a bonus to the appropriate Melee\
+              \ Weapon skill check as follows:\n- **Ordinary:** –1 step bonus\n- **Good:**\
+              \ –2 step bonus\n- **Amazing:** –3 step bonus\n\nThis bonus lasts until\
+              \ the character chooses not to maintain the bioweapon.\n\n**Increased\
+              \ Damage:** \n- **At rank 3**, the damage of the bioweapon increases\
+              \ by +1.\n- **At rank 6**, it increases again (to a total of +2).\n\
+              - **At rank 9**, it increases by another +1 (to a total of +3).\n- **At\
+              \ rank 12**, all attacks made with the bioweapon are considered to deliver\
+              \ **Good damage**.\n\n---"
+        - es:
+            name: Bioarma
+            description: |-
+              Al emplear esta habilidad, un personaje genera un campo de energía cinética que emana de sus manos. Esta energía se manifiesta de una de dos maneras, que el jugador debe elegir en el momento en que el personaje realiza con éxito una prueba de habilidad: una vara o una espada.
+
+              El jugador puede alterar la forma de la vara para que sea un mazo, y la de la espada para que sea de un tipo particular (katana, sable, espada ancha, etc.). Estos cambios no afectan el daño que causará la bioarma ni le otorgan ninguna propiedad especial; son puramente cosméticos.
+
+              La principal diferencia entre las dos formas está en el tipo de daño que causan. Un personaje que solo desee noquear a un oponente haría mejor en crear una vara; aquellos que pretendan infligir un daño más serio probablemente crearán la espada.
+
+              | Forma | Daño Base | Tipo |
+              | :--- | :--- | :---: |
+              | **Vara** | d8s/d8+2s/d12+2s | LI/O |
+              | **Espada** | d6w/d6+2w/d6m | LI/O |
+
+              El personaje utiliza una de dos habilidades para blandir la bioarma: **Combate cuerpo a cuerpo (Melee Weapons)—contundente** para la vara o **Combate cuerpo a cuerpo (Melee Weapons)—filo** para la espada.
+
+              El resultado de la tirada de habilidad de la bioarma puede añadir una bonificación a la tirada de la habilidad de armas cuerpo a cuerpo correspondiente de la siguiente manera:
+              - **Ordinario:** bonificación de –1 paso
+              - **Bueno:** bonificación de –2 pasos
+              - **Asombroso:** bonificación de –3 pasos
+
+              Esta bonificación dura hasta que el personaje decida no seguir manteniendo la bioarma.
+
+              **Daño Incrementado:**
+              - **Al rango 3**, el daño de la bioarma aumenta en +1.
+              - **Al rango 6**, aumenta de nuevo (hasta un total de +2).
+              - **Al rango 9**, aumenta otro +1 (hasta un total de +3).
+              - **Al rango 12**, todos los ataques realizados con la bioarma se consideran para infligir **daño Bueno** (Good damage).
+
+              ---
+        trained_only: true
+      clamber:
+        attribute: CON
+        cost: 2
+        url: /psionics/biokinesis/#clamber
+        localized:
+        - en:
+            name: Clamber
+            description: |-
+              In the distant past, certain t'sa psions developed the **clamber** skill—usually those who dwelled in the mountainous regions of the t'sa homeworld. With it, the psionic t'sa (or a psion trained by t'sa) generates thousands of tiny suckers on the palms of his hands and the soles of his or her feet. The character can then move up and down nearly vertical surfaces with ease, and can even move across inverted surfaces for short distances. In the steep mountains of the t'sa homeworld, this often meant survival.
+
+              The degree of success with this skill determines the modifier to a psion's **Athletics—climb** attempt. The psion gains a **–1, –2, or –3 step bonus**, depending on the degree of success (Ordinary, Good, or Amazing). Further, if the distance is within the user's walk rate, the character can dash across inverted surfaces, effectively running across the ceiling. The character cannot stop or change direction before traveling the full distance without falling. The same will happen if the character has nothing to hold onto on reaching his or her destination.
+
+              **Rank Benefits:**
+              - **At rank 4 [Increased Distance]**, the distance the user can travel while climbing or running across inverted surfaces is doubled.
+              - **At rank 8**, the distance is three times the base rate.
+              - **At rank 12**, the distance is four times the base rate.
+
+              ---
+        - es:
+            name: Trepado
+            description: |-
+              En un pasado lejano, ciertos psiónicos t'sa desarrollaron la habilidad de **trepado**, normalmente los que vivían en las regiones montañosas del planeta de origen de los t'sa. Con ella, el t'sa psiónico (o un psiónico entrenado por los t'sa) genera miles de minúsculas ventosas en las palmas de sus manos y en las plantas de sus pies. El personaje puede entonces subir y bajar por superficies casi verticales con facilidad, e incluso desplazarse por superficies invertidas en distancias cortas. En las escarpadas montañas del planeta t'sa, esto significaba a menudo la supervivencia.
+
+              El grado de éxito con esta habilidad determina el modificador de un intento de **Atletismo—trepar** del psiónico. El psiónico obtiene una **bonificación de –1, –2 ó –3 pasos**, dependiendo del grado de éxito (Ordinario, Bueno o Asombroso). Además, si la distancia está dentro de la velocidad de paso del usuario, el personaje puede correr por superficies invertidas, corriendo de hecho por el techo. El personaje no puede detenerse ni cambiar de dirección antes de recorrer toda la distancia sin caerse. Lo mismo ocurrirá si el personaje no tiene nada a lo que agarrarse al llegar a su destino.
+
+              **Beneficios de Rango:**
+              - **Al rango 4 [Distancia Incrementada (Increased Distance)]**, la distancia que el usuario puede recorrer mientras trepa o corre por superficies invertidas se duplica.
+              - **Al rango 8**, la distancia es el triple de la velocidad base.
+              - **Al rango 12**, la distancia es cuatro veces la velocidad base al rango 12.
+
+              ---
+        trained_only: false
+      control-metabolism:
+        attribute: CON
+        cost: 2
+        url: /psionics/biokinesis/#control-metabolism
+        localized:
+        - en:
+            name: Control Metabolism
+            description: "Through the use of this skill, a character can regulate\
+              \ his or her metabolic processes. This allows longer survival without\
+              \ food and water, in extreme climates, and in other hostile conditions.\
+              \ The character can also slow bodily functions to the point of pretending\
+              \ to be dead, should he or she need to fool others in some situation.\n\
+              \nA check is made when a character enters a hostile environment or otherwise\
+              \ wants to employ this skill.\n\n#### Hostile Environments\nIn the case\
+              \ of a hostile environment, the result of a skill check determines the\
+              \ type of protection a character can simulate:\n- **Ordinary:** vacuum\
+              \ mask\n- **Good:** vacuum suit\n- **Amazing:** soft e-suit\n\nAfter\
+              \ the initial use of the skill, the level of protection can be maintained\
+              \ thereafter for a cost of 1 psionic energy point per hour.\n\n####\
+              \ Adrenal boost\n*Extended duration.*\nThe character can mentally boost\
+              \ adrenaline output, giving an action check bonus. \n- **Ordinary:**\
+              \ +1 to action check score.\n- **Good:** +2 to action check score.\n\
+              - **Amazing:** +3 to action check score.\n\nThis bonus lasts for the\
+              \ duration of the round in which the power is activated and through\
+              \ all of the next round. A character may extend the duration 1 round\
+              \ for every psionic energy point spent to do so.\n\n#### Endorphin release\n\
+              *Extended duration.*\nThe character can mentally stimulate the production\
+              \ of endorphins, increasing his or her resistance to pain and fatigue.\n\
+              - **Ordinary:** -1 step bonus to Stamina checks.\n- **Good:** -2 step\
+              \ bonus to Stamina checks.\n- **Amazing:** -3 step bonus to Stamina\
+              \ checks.\n\nThe duration is one hour; the duration may be extended\
+              \ by one hour per extra psionic energy point spent to do so.\n\n---"
+        - es:
+            name: Control del Metabolismo
+            description: |-
+              A través del uso de esta habilidad, un personaje puede regular sus procesos metabólicos. Esto permite una supervivencia más prolongada sin comida ni agua, en climas extremos y en otras condiciones hostiles. El personaje también puede ralentizar sus funciones corporales hasta el punto de fingir que está muerto, si necesita engañar a otros en alguna situación.
+
+              Se realiza una tirada cuando un personaje entra en un entorno hostil o si desea emplear esta habilidad de alguna otra manera.
+
+              #### Entornos Hostiles
+              En el caso de un entorno hostil, el resultado de una tirada de habilidad determina el tipo de protección que un personaje puede simular:
+              - **Ordinario:** máscara de vacío
+              - **Bueno:** traje de vacío (vacuum suit)
+              - **Asombroso:** traje electrónico ligero (soft e-suit)
+
+              Después del uso inicial de la habilidad, el nivel de protección se puede mantener posteriormente a un coste de 1 punto de energía psiónica por hora.
+
+              #### Impulso de adrenalina (Adrenal boost)
+              *Duración extendida.*
+              El personaje puede aumentar mentalmente la producción de adrenalina, otorgando una bonificación a las tiradas de acción.
+              - **Ordinario:** +1 a la puntuación de la tirada de acción.
+              - **Bueno:** +2 a la puntuación de la tirada de acción.
+              - **Asombroso:** +3 a la puntuación de la tirada de acción.
+
+              Esta bonificación dura lo que reste del asalto en el que se activó el poder y todo el asalto siguiente. Un personaje puede extender la duración 1 asalto por cada punto de energía psiónica gastado para ello.
+
+              #### Liberación de endorfinas (Endorphin release)
+              *Duración extendida.*
+              El personaje puede estimular mentalmente la producción de endorfinas, aumentando su resistencia al dolor y la fatiga.
+              - **Ordinario:** bonificación de –1 paso a las tiradas de Firmeza (Stamina).
+              - **Bueno:** bonificación de –2 pasos a las tiradas de Firmeza (Stamina).
+              - **Asombroso:** bonificación de –3 pasos a las tiradas de Firmeza (Stamina).
+
+              La duración es de una hora; la duración puede extenderse una hora más por cada punto de energía psiónica adicional gastado para ello.
+
+              ---
+        trained_only: false
+      heal:
+        attribute: CON
+        cost: 4
+        url: /psionics/biokinesis/#heal
+        trained_only: true
+        localized:
+        - en:
+            name: Heal
+            description: "By concentrating, a character using this skill can heal\
+              \ wounds or disease. How much damage can be healed depends on the result\
+              \ of a skill check:\n- **Ordinary:** 1 wound point\n- **Good:** 2 points\n\
+              - **Amazing:** 3 points\n\n#### Disease\nFor disease, the following\
+              \ results apply:\n- **Ordinary:** reduce the degree of illness by one\
+              \ grade (from Good to Ordinary, for instance).\n- **Good:** reduce by\
+              \ two grades.\n- **Amazing:** reduce by three grades. \nDiseases reduced\
+              \ below Marginal are considered cured.\n\n#### Timing\nPsionic healing\
+              \ requires time. The results are immediate, but the body's reaction\
+              \ to the use of the skill lasts one hour. For this reason, the heal\
+              \ skill can't be attempted more than once per hour, even if the check\
+              \ result is a Failure.\n\n**Rank Benefits:**\n- **At rank 4 [Treating\
+              \ Poison]**, a character may counteract the effect of poisons or drugs\
+              \ in his or her system before the end of their onset time, reducing\
+              \ the impact they may have. The degree of success acts as a bonus to\
+              \ the Constitution feat check required: **Ordinary:** –2 step bonus,\
+              \ **Good:** –3 step bonus, **Amazing:** –4 step bonus.\n- **At rank\
+              \ 6 [Healing Mortal Damage]**, a character becomes able to heal mortal\
+              \ damage. Skill check results change to: **Ordinary:** 2 wounds, **Good:**\
+              \ 3 wounds or 1 mortal, **Amazing:** 4 wounds or 2 mortals.\n- **At\
+              \ rank 8 [Improved Effect]**, a character's ability to heal improves\
+              \ further: **Ordinary:** 3 wounds or 1 mortal, **Good:** 4 wounds or\
+              \ 2 mortals, **Amazing:** 6 wounds or 3 mortals.\n- **At rank 8 [Laying\
+              \ On Hands]**, a character becomes able to heal damage in others. The\
+              \ subject to be healed must be in physical contact with the character\
+              \ using this ability.\n\n---"
+        - es:
+            name: Sanar
+            description: |-
+              Al concentrarse, un personaje puede curarse a sí mismo el daño por heridas o una enfermedad. La cantidad de daño que puede curarse depende del resultado de una tirada de habilidad:
+              - **Ordinario:** 1 punto de herida
+              - **Bueno:** 2 puntos de herida
+              - **Asombroso:** 3 puntos de herida
+
+              #### Enfermedad
+              Para las enfermedades, se aplican los siguientes resultados:
+              - **Ordinario:** reduce el grado de la enfermedad en un nivel (de Bueno a Ordinario, por ejemplo).
+              - **Bueno:** reduce en dos niveles.
+              - **Asombroso:** reduce en tres niveles.
+              Las enfermedades reducidas por debajo de Marginal se consideran curadas.
+
+              #### Tiempos
+              La curación psiónica requiere tiempo. Los resultados son inmediatos, pero la reacción del cuerpo al uso de la habilidad dura una hora. Por esta razón, la habilidad de sanar no se puede intentar más de una vez por hora, incluso si el resultado de la tirada es un Fallo.
+
+              **Beneficios de Rango:**
+              - **Al rango 4 [Tratar Venenos]**, un personaje puede contrarrestar el efecto de venenos o drogas en su sistema antes de que finalice su tiempo de reacción, reduciendo el impacto que puedan tener. El grado de éxito actúa como una bonificación a la tirada de dote de Constitución requerida: **Ordinario:** bonificación de –2 pasos, **Bueno:** bonificación de –3 pasos, **Asombroso:** bonificación de –4 pasos.
+              - **Al rango 6 [Curar Daño Mortal]**, un personaje es capaz de curar el daño mortal. Los resultados de la tirada cambian a: **Ordinario:** 2 heridas, **Bueno:** 3 heridas o 1 mortal, **Asombroso:** 4 heridas o 2 mortales.
+              - **Al rango 8 [Efecto Mejorado]**, la capacidad de curación del personaje mejora aún más: **Ordinario:** 3 heridas o 1 mortal, **Bueno:** 4 heridas o 2 mortales, **Asombroso:** 6 heridas o 3 mortales.
+              - **Al rango 8 [Imposición de manos]**, un personaje se vuelve capaz de curar el daño en otros. El sujeto a ser curado debe estar en contacto físico con el personaje que utiliza esta habilidad.
+
+              ---
+      intangibility:
+        attribute: CON
+        cost: 4
+        url: /psionics/biokinesis/#intangibility
+        localized:
+        - en:
+            name: Intangibility
+            description: |-
+              By mentally reordering the molecules of his or her body, the character can concentrate and become immaterial and thus pass through solid objects. This ability affects the character's clothing (including light armor—any armor that does not require the Armor Operation skill) and up to one kilogram per skill rank of additional equipment carried in the hands.
+
+              Intangibility lasts for one phase, plus one additional phase per psionic energy point spent to maintain it.
+
+              An intangible character appears as a slightly less vivid, three-dimensional image of himself or herself, which others can see but not otherwise perceive.
+
+              The character can move about as normal, though passing through solid objects slows the character to the "easy swim" rate. The character cannot pass through living matter (although he may pass through organic matter—the wood of a door, for example).
+
+              While intangible, the character falls at a greatly reduced rate: roughly three meters per phase. A character could leap off a building and land as if he were a feather. Falling 20 meters while intangible requires eight psionic energy points: one to activate it, and one more per three meters of distance fallen.
+
+              **Rank Benefits:**
+              - **At rank 4 [Movement Bonus]**, the character can move through solid objects at the **walk rate**.
+              - **At rank 6 [Dodge]**, the character can "dodge attacks" by becoming intangible. This is accomplished in the same fashion as a reaction parry.
+              - **At rank 8 [Movement Bonus]**, the character can move through solid objects at the **run rate**.
+              - **At rank 12 [Selective Intangibility]**, the character can choose to render only part of his or her body intangible. Doing so adds a +2 step penalty to the skill check, and if the character attempts to touch or otherwise manipulate a solid object while only partially tangible, this modifier increases up to +4.
+
+              ---
+        - es:
+            name: Intangibilidad
+            description: |-
+              Al reordenar mentalmente las moléculas de su cuerpo, el personaje puede concentrarse y volverse inmaterial, y así atravesar objetos sólidos. Esta habilidad afecta a la ropa del personaje (incluyendo la armadura ligera—cualquier armadura que no requiera la habilidad de Operación de Armaduras) y hasta un kilogramo por rango de habilidad de equipo adicional que se lleve en las manos.
+
+              La intangibilidad dura una fase, más una fase adicional por cada punto de energía psiónica gastado para mantenerla.
+
+              Un personaje intangible aparece como una imagen tridimensional de sí mismo, ligeramente menos vívida, que otros pueden ver pero no percibir de otra manera.
+
+              El personaje puede moverse de forma normal, aunque atravesar objetos sólidos lo ralentiza a un ritmo de "nado suave" (easy swim). El personaje no puede atravesar materia viva (aunque sí materia orgánica—la madera de una puerta, por ejemplo).
+
+              Mientras sea intangible, el personaje cae a un ritmo muy reducido: aproximadamente tres metros por fase. Un personaje podría saltar desde un edificio y aterrizar como si fuera una pluma. Caer 20 metros mientras se es inmaterial requiere ocho puntos de energía psiónica: uno para activarla y uno más por cada tres metros de distancia caída.
+
+              **Beneficios de Rango:**
+              - **Al rango 4 [Bonificación de Movimiento]**, el personaje puede moverse a través de objetos sólidos a **ritmo de caminata** (walk rate).
+              - **Al rango 6 [Esquivar]**, el personaje puede "esquivar ataques" volviéndose intangible. Esto se logra de la misma manera que un desvío (parry) de reacción.
+              - **Al rango 8 [Bonificación de Movimiento]**, el personaje puede moverse a través de objetos sólidos a **ritmo de carrera** (run rate).
+              - **Al rango 12 [Intangibilidad Selectiva]**, el personaje puede elegir volver inmaterial solo una parte de su cuerpo. Hacerlo añade una penalización de +2 pasos a la tirada de habilidad, y si el personaje intenta tocar o manipular un objeto sólido mientras es solo parcialmente tangible, este modificador aumenta hasta +4.
+
+              ---
+        trained_only: true
+      morph:
+        attribute: CON
+        cost: 4
+        url: /psionics/biokinesis/#morph
+        trained_only: true
+        localized:
+        - en:
+            name: Morph
+            description: "By using this skill, a character can alter his or her physical\
+              \ features so as to be disguised or to accomplish something otherwise\
+              \ impossible, such as squeeze into a small hole, reach higher than his\
+              \ or her height normally allows, or slip loose of bonds.\n\nMorphing\
+              \ requires an entire round (4 phases) to complete, from the moment the\
+              \ skill is activated to the moment the alteration is finished. The character\
+              \ can do nothing else while this process is taking place.\n\nThe initial\
+              \ skill check determines how long the morphed form lasts:\n- **Ordinary:**\
+              \ 1 round\n- **Good:** 2 rounds\n- **Amazing:** 3 rounds\n\nThereafter,\
+              \ a character can extend the duration by spending 1 psionic energy point\
+              \ per round (or other time unit as designated by the Gamemaster).\n\n\
+              A morphed body part retains its original characteristics; no game statistics\
+              \ change, except for those directly related to the morphing. Morphing\
+              \ has no effect on a character's clothing or possessions.\n\n**Rank\
+              \ Benefits:** \n- **At rank 1 and 3**, select one of these forms:\n\
+              \    - **Elongate fingers:** add +0.5 meters to reach (for example,\
+              \ to get -1 step bonus to Manipulation-pickpocket skill checks).\n \
+              \   - **Elongate arms:** add +1 meter to reach.\n    - **Elongate legs:**\
+              \ add +1 meter to height.\n- **At skill ranks 5 and 7**, choose one\
+              \ of these forms:\n    - **Disguise:** alter facial features to hide\
+              \ identity (+2 step penalty to Awareness checks involving an attempt\
+              \ to recognize the character).\n    - **Elongate arms and legs** simultaneously.\n\
+              \    - **Skeleton alterations:** alter entire body and bone construction\
+              \ to allow passage through small openings (as small as one-half meter\
+              \ wide).\n- **At skill ranks 10 and 12**, choose one of these forms:\n\
+              \    - **Improved disguise:** alter facial and body features to resemble\
+              \ a specific person (+2 step penalty to Awareness checks) or to completely\
+              \ hide identity (+4 step penalty).\n    - **Lessen damage:** become\
+              \ so flexible and malleable as to reduce the effects of low-impact damage.\
+              \ A skill check determines how much damage is reduced (at no extra PP\
+              \ cost): **Ordinary:** d4, **Good:** d4+2, **Amazing:** d6+2.\n- **At\
+              \ rank 12**, the character can select one of these benefits:\n    -\
+              \ **Morph control:** activate any two forms simultaneously.\n\n---"
+        - es:
+            name: Metamorfosis
+            description: "Mediante el uso de esta habilidad, un personaje puede alterar\
+              \ sus rasgos físicos para disfrazarse o para lograr algo que de otro\
+              \ modo sería imposible, como apretujarse en un agujero pequeño, llegar\
+              \ más alto de lo que su estatura permite normalmente o soltarse de unas\
+              \ ataduras.\n\nLa metamorfosis requiere un asalto entero (4 fases) para\
+              \ completarse, desde el momento en que se activa la habilidad hasta\
+              \ el momento en que finaliza la alteración. El personaje no puede hacer\
+              \ nada más mientras se lleva a cabo este proceso.\n\nLa tirada de habilidad\
+              \ inicial determina cuánto tiempo dura la forma metamorfoseada:\n- **Ordinario:**\
+              \ 1 asalto\n- **Bueno:** 2 asaltos\n- **Asombroso:** 3 asaltos\n\nA\
+              \ partir de entonces, el personaje puede ampliar la duración gastando\
+              \ 1 punto de energía psiónica por asalto (u otra unidad de tiempo designada\
+              \ por el Director de Juego).\n\nUna parte del cuerpo metamorfoseada\
+              \ conserva sus características originales; no cambia ninguna estadística\
+              \ de juego, excepto las directamente relacionadas con la metamorfosis.\
+              \ La metamorfosis no tiene ningún efecto sobre la ropa o las posesiones\
+              \ del personaje.\n\n**Beneficios de Rango:** \n- **A los rangos 1 y\
+              \ 3**, selecciona una de estas formas:\n    - **Alargar dedos:** añade\
+              \ +0.5 metros al alcance (por ejemplo, para obtener una bonificación\
+              \ de -1 paso a las tiradas de la habilidad Manipulación—robaperlar).\n\
+              \    - **Alargar brazos:** añade +1 metro al alcance.\n    - **Alargar\
+              \ piernas:** añade +1 metro a la altura.\n- **A los rangos de habilidad\
+              \ 5 y 7**, elige una de estas formas:\n    - **Disfrazarse:** altera\
+              \ los rasgos faciales para ocultar la identidad (penalización de +2\
+              \ pasos a las tiradas de Alerta que impliquen un intento de reconocer\
+              \ al personaje).\n    - **Alargar brazos y piernas** simultáneamente.\n\
+              \    - **Alteraciones del esqueleto:** altera todo el cuerpo y la estructura\
+              \ ósea para permitir el paso a través de aberturas pequeñas (tan pequeñas\
+              \ como medio metro de ancho).\n- **A los rangos de habilidad 10 y 12**,\
+              \ elige una de estas formas:\n    - **Disfraz mejorado:** altera los\
+              \ rasgos faciales y corporales para parecerse a una persona específica\
+              \ (penalización de +2 pasos a la Alerta) o para ocultar completamente\
+              \ la identidad (penalización de +4 pasos).\n    - **Reducir daño:**\
+              \ volverse tan flexible y maleable que reduzca los efectos del daño\
+              \ de bajo impacto. Una tirada de habilidad determina cuánto daño se\
+              \ reduce (sin coste adicional de PP): **Ordinario:** d4, **Bueno:**\
+              \ d4+2, **Asombroso:** d6+2.\n- **Al rango 12**, el personaje puede\
+              \ seleccionar uno de estos beneficios:\n    - **Control de metamorfosis:**\
+              \ activar dos formas cualesquiera simultáneamente.\n\n---"
+      rejuvenate:
+        attribute: CON
+        cost: 3
+        url: /psionics/biokinesis/#rejuvenate
+        localized:
+        - en:
+            name: Rejuvenate
+            description: |-
+              When using this skill, a character can offset fatigue or stun damage, or some of each, that he or she has suffered. The skill does nothing to alleviate psionic energy loss.
+
+              A successful skill check provides the character with a certain number of "rejuvenation points." It costs 2 of these points to restore 1 point of fatigue damage, and 1 of these points to restore 1 point of stun damage. On an Ordinary success, the character receives 2 "rejuvenation points"; on a Good success, 4 points; and on an Amazing success, 6 points. The character can use these points in any combination to restore stun points, fatigue points, or some of each. "Rejuvenation points" that can't be used immediately are lost.
+
+              Psionic rejuvenation requires time. The results are immediate, but the body's reaction to the use of the skill lasts one hour. For this reason, the rejuvenate skill can't be attempted more than once per hour.
+
+              **Rank Benefits:**
+              - **At rank 4 [Improved Effect]**, the effect of a successful skill roll improves as follows: **Ordinary:** 4 points, **Good:** 6 points, **Amazing:** 8 points.
+              - **At rank 8 [Laying On Hands]**, a character becomes able to heal fatigue or stun damage in others. The subject to be healed must be in physical contact with the character using this ability.
+              - **At rank 12 [Two Recipients]**, a character using rejuvenate may affect two individuals with a single use of the skill. This can be on two other people or on the character and one other person. Each gains whatever benefit is determined by the Biokinesis-rejuvenate skill check.
+
+              ---
+        - es:
+            name: Rejuvenecer
+            description: |-
+              Al usar esta habilidad, un personaje puede compensar la fatiga o el daño por aturdimiento, o una parte de cada uno, que haya sufrido. La habilidad no hace nada para aliviar la pérdida de energía psiónica.
+
+              Una tirada de habilidad de éxito proporciona al personaje un cierto número de "puntos de rejuvenecimiento". Cuesta 2 de estos puntos restaurar 1 punto de daño por fatiga y 1 de estos puntos para restaurar 1 punto de daño por aturdimiento. En un éxito Ordinario, el personaje recibe 2 "puntos de rejuvenecimiento"; en un éxito Bueno, 4 puntos; y en un éxito Asombroso, 6 puntos. El personaje puede usar estos puntos en cualquier combinación para restaurar puntos de aturdimiento, puntos de fatiga o parte de cada uno. Los "puntos de rejuvenecimiento" que no puedan usarse inmediatamente se perderán.
+
+              El rejuvenecimiento psiónico requiere tiempo. Los resultados son inmediatos, pero la reacción del cuerpo al uso de la habilidad dura una hora. Por esta razón, la habilidad de rejuvenecer no se puede intentar más de una vez por hora.
+
+              **Beneficios de Rango:**
+              - **Al rango 4 [Efecto Mejorado]**, la eficacia de una tirada de habilidad exitosa mejora de la siguiente manera: **Ordinario:** 4 puntos, **Bueno:** 6 puntos, **Asombroso:** 8 puntos.
+              - **Al rango 8 [Imposición de manos]**, un personaje se vuelve capaz de curar la fatiga o el daño por aturdimiento en otros. El sujeto a ser curado debe estar en contacto físico con el personaje que utiliza esta habilidad.
+              - **Al rango 12 [Dos Destinatarios]**, un personaje que utilice rejuvenecer puede afectar a dos individuos con un solo uso de la habilidad. Esto puede ser en otras dos personas o en el personaje y otra persona. Cada uno gana el beneficio que determine la tirada de habilidad de bioquinesis-rejuvenecer.
+
+              ---
+        trained_only: true
+      shatter:
+        attribute: CON
+        cost: 3
+        url: /psionics/biokinesis/#shatter
+        localized:
+        - en:
+            name: Shatter
+            description: |-
+              Weren history tells of a clan that used armor to conquer the other clans. Having fashioned plates of crude armor from boiled marrizhe hide, this clan was despised by the other clans—but they were also unstoppable. Then came a great character—posthumously claimed by every other clan—who dueled the warlord of the armored clan for all his land, herds, and wives. In the midst of the duel, the mystery weren suddenly brought both fists down on his opponent's armored chest, and the leather plates shattered. At best an average fighter without his armor, the warlord quickly succumbed, and the weren warrior mysteriously vanished—though not, of course, without claiming his prizes.
+
+              Weren warriors have long attempted to emulate that legendary fighter, though the only successes have been by psionics-users gifted with Biokinesis. They are able to direct bio-energy at solid surfaces—usually armor—in such a way that the surface breaks. To use this ability, the weren psion must first attempt a Biokinesis—shatter skill check. If the check is successful, the next bare-fisted blow the weren lands inflicts damage to the opponent's armor, if any, rather than than to the opponent. If the weren fails to strike armor before the end of the next round, the effect dissipates, though the character can try again.
+
+              If the shatter skill check yielded an Ordinary result, the armor he strikes absorbs 1 fewer point of damage. On a Good result, the armor absorbs 2 fewer points of damage. And on an Amazing result, the armor absorbs 3 fewer points of damage. See Table G13: Object Armor in the Gamemaster Guide for information on how well non-armor objects absorb damage.
+
+              **Rank Benefits:**
+              - **At rank 4 [Increased Effect]**, this skill can only affect armor or objects of Ordinary toughness. At rank 4, the psion can affect armor or objects of Good toughness. At rank 8, the armor absorbs 2 fewer points of damage on an Ordinary success, 3 fewer on a Good result, and 4 fewer on an Amazing result.
+              - **At rank 8**, the armor absorbs 3 fewer points of damage on an Ordinary success, 4 fewer on a Good result, and 5 fewer on an Amazing result.
+              - **At rank 12**, the psion can affect objects of Amazing toughness.
+
+              ---
+        - es:
+            name: Destrozar
+            description: |-
+              La historia weren habla de un clan que utilizó la armadura para conquistar a los demás clanes. Habiendo fabricado placas de armadura rudimentaria con piel de marrizhe hervida, este clan era despreciado por los demás clanes, pero también era imparable. Entonces llegó un gran personaje —reclamado póstumamente por todos los demás clanes— que se batió en duelo con el señor de la guerra del clan acorazado por todas sus tierras, rebaños y esposas. En medio del duelo, el misterioso weren descargó de repente ambos puños sobre el pecho acorazado de su oponente, y las placas de cuero se destrozaron. El señor de la guerra, que en el mejor de los casos era un luchador mediocre sin su armadura, sucumbió rápidamente, y el guerrero weren desapareció misteriosamente, aunque no, por supuesto, sin reclamar sus premios.
+
+              Los guerreros weren han intentado durante mucho tiempo emular a aquel luchador legendario, aunque los únicos éxitos han sido de usuarios de psiónica dotados de Biocinesis. Son capaces de dirigir la bioenergía hacia superficies sólidas —normalmente armaduras — de tal forma que la superficie se rompa. Para utilizar esta capacidad, el psiónico weren debe intentar primero una tirada de la especialidad de Biocinesis—destrozar. Si la tirada tiene éxito, el siguiente golpe a puño descubierto (bare-fisted) que aseste el weren infligirá daño a la armadura del oponente, si la tiene, en lugar de al oponente. Si el weren no logra golpear la armadura antes del final del siguiente asalto, el efecto se disipa, aunque el personaje puede volver a intentarlo.
+
+              Si la tirada de la habilidad destrozar arrojó un resultado Ordinario, la armadura que golpee absorberá 1 punto menos de daño. En un resultado Bueno, la armadura absorbe 2 puntos menos de daño. Y en un resultado Asombroso, la armadura absorbe 3 puntos menos de daño. Consulta la Tabla G13: Armadura de Objetos en la Guía del Director de Juego para obtener información sobre lo bien que absorben el daño los objetos que no son armaduras.
+
+              **Beneficios de Rango:**
+              - **Al rango 4 [Efecto Incrementado (Increased Effect)]**, esta habilidad sólo puede afectar a armaduras u objetos de dureza Ordinaria. Al rango 4, el psiónico puede afectar a armaduras u objetos de dureza Buena. Con un éxito Ordinario, la armadura absorbe 2 puntos menos de daño, 3 menos con un resultado Bueno y 4 menos con un resultado Asombroso.
+              - **Al rango 8 [Efecto Incrementado (Increased Effect)]**, con un éxito Ordinario se absorben 3 puntos menos, 4 menos con un resultado Bueno y 5 menos con un resultado Asombroso.
+              - **Al rango 12 [Efecto Incrementado (Increased Effect)]**, el usuario puede afectar a objetos de dureza Asombrosa.
+
+              ---
+        trained_only: false
+      transfer-damage:
+        attribute: CON
+        cost: 2
+        url: /psionics/biokinesis/#transfer-damage
+        localized:
+        - en:
+            name: Transfer Damage
+            description: |-
+              By laying hands upon another character and making a successful skill check, the psion alleviates that character's damage or disease by absorbing it.
+
+              The damage that can be absorbed is tied to the result of a skill check:
+
+              | Result | Damage Absorbed | Illness Reduced |
+              | :--- | :--- | :--- |
+              | **Critical Failure** | Psion suffers 1 wound. | No effect. |
+              | **Ordinary** | Character absorbs 1 wound. | Reduce illness by one grade (e.g., Amazing to Good), simultaneously infecting the psion with that grade. |
+              | **Good** | Character absorbs 2 wounds or 1 mortal. | Reduce illness by two grades, transferring the ailment into the psion. |
+              | **Amazing** | Character absorbs 3 wounds or 1 mortal. | Transfers any illness from the patient into the psion. |
+
+              Once the character absorbs the damage or disease, he or she must either use the **Biokinesis—heal** specialty skill, heal naturally, or receive medical or psionic attention to alleviate the damage or cure the disease.
+
+              **Rank Benefits:**
+              - **At rank 6 [Displace Damage]**, the psionic character can transfer the damage to a different character, who must also be in physical contact with the psion, and who must be willing to take the damage. Any attempt to transfer the damage to a creature that does not consciously desire to accept the damage (such as a hostile character, or an unconscious one) results in the psion receiving the damage, as normal.
+              - **At rank 12 [Unwilling Transfer]**, the character can transfer the damage to an unwilling character. The psion must be touching both characters. Both characters must be alive when the skill is activated. The "donor" character will be healed of a number of damage points determined by the Biokinesis—transfer damage skill check. The damage points are then applied to the unwilling recipient. **Note that this benefit isn't received if the psion is wearing armor.**
+        - es:
+            name: Transferir Daño
+            description: |-
+              Al imponer las manos sobre otro personaje y realizar con éxito una tirada de habilidad, el psiónico alivia el daño o la enfermedad de ese personaje absorbiéndolos.
+
+              El daño que se puede absorber está ligado al resultado de una tirada de habilidad:
+
+              | Resultado | Daño Absorbido | Enfermedad Reducida |
+              | :--- | :--- | :--- |
+              | **Fallo Crítico** | El personaje sufre 1 herida. | Sin efecto sobre el paciente. |
+              | **Ordinario** | El personaje absorbe 1 herida. | Reduce la enfermedad del paciente en un grado (por ejemplo, de Asombroso a Bueno), infectando simultáneamente al psiónico con ese grado de enfermedad. |
+              | **Bueno** | El personaje absorbe 2 heridas o 1 mortal. | Reduce la enfermedad del paciente en dos grados, transfiriendo la dolencia al psiónico. |
+              | **Asombroso** | El personaje absorbe 3 heridas o 1 mortal. | Transfiere cualquier enfermedad del paciente al psiónico. |
+
+              Una vez que el personaje absorbe el daño o la enfermedad, debe utilizar la especialidad de **Bioquinesis—sanar**, curarse de forma natural o recibir atención médica o psiónica para aliviar el daño o curar la enfermedad.
+
+              **Beneficios de Rango:**
+              - **Al rango 6 [Desplazar Daño (Displace Damage)]**, el personaje psiónico puede transferir el daño a un personaje diferente, que también deba estar en contacto físico con el psiónico y que deba estar dispuesto a recibir el daño. Cualquier intento de transferir el daño a una criatura que no desee conscientemente aceptar el daño (como un personaje hostil o uno inconsciente) hace que el psiónico reciba el daño, como es normal.
+              - **Al rango 12 [Transferencia Involuntaria (Unwilling Transfer)]**, el personaje puede transferir el daño a un personaje involuntario. El psiónico debe estar tocando a ambos personajes. Ambos personajes deben estar vivos tras activar la habilidad. El personaje "donante" será sanado de una cantidad de puntos de daño determinados por la tirada de habilidad de bioquinesis-transferir daño. Los puntos de daño se aplican entonces al receptor involuntario. **Ten en cuenta que este beneficio no se recibe si el psiónico lleva puesta una armadura.**
+        trained_only: false
+  ESP:
+    attribute: INT
+    url: /psionics/esp/
     cost: 5
-    url: /core-mechanics/psionics/telepathy/#contact
-    description:
-      en: Establish a mental link with another character.
-      es: Establece un vínculo mental con otro personaje.
-  - name: Datalink
+    localized:
+    - en:
+        name: ESP
+        description: Experience environment beyond normal senses using the mind.
+    - es:
+        name: ESP
+        description: Experimenta el entorno más allá de los sentidos normales usando
+          la mente.
+    items:
+      battle-mind:
+        attribute: INT
+        cost: 4
+        url: /psionics/esp/#battle-mind
+        localized:
+        - en:
+            name: Battle Mind
+            description: |-
+              This skill allows a character to focus the mind on the battle around him or her, thereby increasing the character's reaction time and accuracy. Each success with this skill grants a bonus to the character's [Action Checks](/core-mechanics/characters-in-action/#action-check).
+
+              - **Ordinary:** +1 to action check score.
+              - **Good:** +2 to action check score.
+              - **Amazing:** +3 to action check score.
+
+              **Rank Benefits:**
+              - **At rank 4 [Increased Duration]**, the bonus lasts for **two rounds**. The character can extend this bonus by spending 1 psionic energy point per extra round.
+              - **At rank 8 [Increased Attack Accuracy]**, the character is also able to increase his or her accuracy in one of the following Combat broad skills: **Unarmed Combat**, **Melee Weapons**, **Primitive Ranged Weapons**, or **Modern Ranged Weapons**. The success of the Battle Mind skill check grants the following bonus to the selected combat skill check: **Ordinary:** –1 step; **Good:** –2 steps; **Amazing:** –3 steps.
+              - **At rank 12 [Dual Combat Bonus]**, the character can apply the combat bonus to **two different** Combat broad skills simultaneously.
+
+              ---
+        - es:
+            name: Mente de Batalla
+            description: |-
+              Esta habilidad permite a un personaje enfocar su mente en la batalla que le rodea, aumentando así su tiempo de reacción y su precisión. Cada éxito con esta habilidad otorga una bonificación a las [Tiradas de Acción](/core-mechanics/characters-in-action/#action-check) del personaje.
+
+              - **Ordinario:** +1 a la puntuación de la tirada de acción.
+              - **Bueno:** +2 a la puntuación de la tirada de acción.
+              - **Asombroso:** +3 a la puntuación de la tirada de acción.
+
+              **Beneficios de Rango:**
+              - **Al rango 4 [Duración Incrementada]**, la bonificación dura **dos asaltos**. El personaje puede extender esta bonificación gastando 1 punto de energía psiónica por asalto adicional.
+              - **Al rango 8 [Precisión de Ataque Incrementada]**, el personaje también puede aumentar su precisión en una de las siguientes habilidades amplias de Combate: **Combate sin Armas**, **Armas Cuerpo a Cuerpo**, **Armas de Proyectiles Primitivas** o **Armas de Proyectiles Modernas**. La bonificación es: **Ordinario:** –1 paso; **Bueno:** –2 pasos; **Asombroso:** –3 pasos.
+              - **Al rango 12 [Bonificación de Combate Dual]**, el personaje puede aplicar la bonificación de combate a **dos habilidades** de Combate diferentes simultáneamente.
+
+              ---
+        trained_only: false
+      clairaudience:
+        attribute: INT
+        cost: 2
+        url: /psionics/esp/#clairaudience
+        localized:
+        - en:
+            name: Clairaudience
+            description: |-
+              With this skill, a character selects a location and projects his or her mind to that spot, hearing sounds as though physically present.
+
+              Clairaudience does not filter out ambient noise, so the user might have trouble distinguishing particular sounds. It provides no help in interpreting unfamiliar languages or recognizing unfamiliar sounds, and the mental ear can't move from the selected spot. The location itself can be moving (a vehicle, for example), but such a target requires additional skill checks if the range to the target increases.
+
+              The user remains conscious within his or her body and is aware of what's happening around it.
+
+              The better the result of the skill check, the longer the ability lasts:
+              - **Ordinary:** 1 round
+              - **Good:** 2 rounds
+              - **Amazing:** 3 rounds
+
+              This duration can be extended by spending 1 psionic energy point for every additional round. Situation modifiers for the familiarity of the location and the distance at which clairaudience is being used are as follows:
+
+              | Situation/distance | Modifier |
+              | :--- | :---: |
+              | Familiar location | –1 |
+              | Unfamiliar location | none |
+              | 1–10 meters | –1 |
+              | 11–100 meters | none |
+              | 101 m–1 km | +1 |
+              | 2–10 km | +2 |
+              | 11–100 km | +3 |
+              | 101–1,000 km (low orbit) | +4 |
+              | 1,001–10,000 km (high orbit) | +5 |
+
+              **Rank Benefits:**
+              - **At rank 4 [Increased Duration]**, the time increment for a successful use of the skill increases to minutes (**Ordinary:** 1 minute; **Good:** 2 minutes; **Amazing:** 3 minutes). Each additional psionic energy point used to extend the duration adds 1 minute to the duration.
+              - **At rank 6 [Change of Perspective]**, the character can attempt another ESP-clairaudience skill check to shift the location to which the mental ear has been projected. The new check is modified by the distance from the current location that the psion is listening to, rather than the physical distance the psion is from the target area.
+              - **At rank 8 [Increased Duration]**, the time increment increases again: **Ordinary:** 5 minutes; **Good:** 10 minutes; **Amazing:** 15 minutes. Each additional psionic energy point adds 5 minutes.
+              - **At rank 12 [Increased Duration]**, the time increment becomes: **Ordinary:** 30 minutes; **Good:** 60 minutes; **Amazing:** 90 minutes. Each additional psionic energy point adds 30 minutes.
+
+              ---
+        - es:
+            name: Clariaudiencia
+            description: |-
+              Con esta habilidad, un personaje selecciona una ubicación y proyecta su mente hacia ese lugar, escuchando los sonidos como si estuviera físicamente presente.
+
+              La clariaudiencia no filtra el ruido ambiental. El oído mental no puede moverse del lugar seleccionado. El personaje permanece consciente dentro de su cuerpo.
+
+              El resultado determina la duración:
+              - **Ordinario:** 1 asalto.
+              - **Bueno:** 2 asaltos.
+              - **Asombroso:** 3 asaltos.
+
+              **Beneficios de Rango:**
+              - **Al rango 4 [Duración Incrementada]**, el incremento de tiempo aumenta a **minutos**.
+              - **Al rango 6 [Cambio de Perspectiva]**, el personaje puede intentar cambiar la ubicación proyectada.
+              - **Al rango 8**, el incremento aumenta a **5 minutos**.
+              - **Al rango 12**, el incremento aumenta a **30 minutos**.
+
+              ---
+        trained_only: false
+      clairvoyance:
+        attribute: INT
+        cost: 2
+        url: /psionics/esp/#clairvoyance
+        localized:
+        - en:
+            name: Clairvoyance
+            description: |-
+              To employ this skill, a character selects a location and projects his or her mind to that spot, seeing everything going on around that spot as though physically there. This projection must be to an unobstructed location, not (for instance) to a place inside a solid object.
+
+              The use of the skill doesn't block normal vision, so the user sees double images unless his or her eyes are closed. It also provides no help in seeing through obscuring elements, such as walls, closed doors, or darkness, and the mental eye can't move from the selected spot.
+
+              The user remains conscious within his or her body and is aware of what's happening around it.
+
+              The better the result of the skill check, the longer the ability lasts:
+              - **Ordinary:** 1 round
+              - **Good:** 2 rounds
+              - **Amazing:** 3 rounds
+
+              ---
+        - es:
+            name: Clarividencia
+            description: |-
+              A través de esta habilidad, un personaje proyecta su mente a un lugar distante para ver lo que sucede allí.
+
+              La duración es:
+              - **Ordinario:** 1 asalto.
+              - **Bueno:** 2 asaltos.
+              - **Asombroso:** 3 asaltos.
+
+              ---
+        trained_only: false
+      dream-hunt:
+        attribute: INT
+        cost: 3
+        url: /psionics/esp/#dream-hunt
+        localized:
+        - en:
+            name: Dream Hunt
+            description: "Mindwalkers take the role of mystics and shamans in sesheyan\
+              \ society. Though originally developed for hunting animals, the technique\
+              \ works on any living being. The sesheyan (or sesheyan-trained) psion\
+              \ concentrates on the subject and mentally engages in a hunt. The better\
+              \ the subject's habits are known, the easier the hunt. If the skill\
+              \ check is successful, the psion determines the place where the quarry\
+              \ will be at any single locale in the next 24 hours, though not when\
+              \ the prey will be there.\n\nThe degree of success determines how accurately\
+              \ the psion can pinpoint the location:\n- **Ordinary:** within 1000\
+              \ meters.\n- **Good:** within 500 meters.\n- **Amazing:** within 100\
+              \ meters.\n\n**Rank Benefits:**\n- **At rank 3 [Improved Accuracy]**,\
+              \ the psion is able to narrow a given locale to within 3 hours.\n- **At\
+              \ rank 6**, an **Ordinary** success narrows the location to within 500\
+              \ meters, a **Good** success narrows it to within 100 meters, and an\
+              \ **Amazing** success narrows it to within 50 meters.\n- **At rank 9**,\
+              \ the psion can determine **when** the prey will be at a particular\
+              \ location to within 30 minutes. \n- **At rank 12**, accuracy improves\
+              \ further: **Ordinary:** 100 meters, **Good:** 50 meters, **Amazing:**\
+              \ 10 meters.\n\n---"
+        - es:
+            name: Caza Onírica
+            description: |-
+              Utilizada originalmente para la caza, esta técnica permite localizar a cualquier ser vivo. El psiónico se concentra en el objetivo; cuanto más conozca sus hábitos, más fácil será la caza.
+
+              Precisión según el éxito:
+              - **Ordinario:** radio de 1000 metros.
+              - **Bueno:** radio de 500 metros.
+              - **Asombroso:** radio de 100 metros.
+
+              **Beneficios de Rango:**
+              - **Al rango 3**, permite acotar el momento del encuentro a un margen de 3 horas.
+              - **Al rango 6**, mejora la precisión de los radios de búsqueda.
+              - **Al rango 9**, permite determinar **cuándo** estará el objetivo en un lugar con un margen de 30 minutos.
+              - **Al rango 12**, precisión máxima: Ord 100m, Bueno 50m, Asom 10m.
+
+              ---
+        trained_only: false
+        alien_only: true
+      empathy:
+        attribute: INT
+        cost: 1
+        url: /psionics/esp/#empathy
+        localized:
+        - en:
+            name: Empathy
+            description: |-
+              This skill allows a psion to "read" the surface emotions of another character in visual range. A successful use of empathy provides a bonus when using encounter skills upon that target character:
+              - **Ordinary:** –1 step
+              - **Good:** –2 steps
+              - **Amazing:** –3 steps
+
+              **Rank Benefits:**
+              - **At rank 4 [Relationship]**, the empath can sense the surface emotions of **two other characters**—specifically, how they feel toward each other.
+              - **At rank 6 [Aura Reading]**, the user gains the ability to see the body's bioelectric field to evaluate a person's overall health and mental state. Success grants a –1, –2, or –3 step bonus to Medical checks.
+              - **At rank 9 [Connection]**, an empath may develop a permanent connection with another individual to use empathy even beyond visual range (max 1 mile per rank).
+
+              ---
+        - es:
+            name: Empatía
+            description: |-
+              Permite "leer" las emociones superficiales de otro personaje en el rango visual. Otorga una bonificación a las habilidades de encuentro:
+              - **Ordinario:** –1 paso.
+              - **Bueno:** –2 pasos.
+              - **Asombroso:** –3 pasos.
+
+              **Beneficios de Rango:**
+              - **Al rango 6 [Lectura de Aura]**, permite ver el campo bioeléctrico para evaluar la salud (bonificación de –1, –2 o –3 pasos a tiradas médicas).
+              - **Al rango 9 [Conexión]**, permite mantener una conexión permanente para usar la habilidad más allá del rango visual (hasta 1.5 km por rango).
+
+              ---
+        trained_only: false
+      mind-reading:
+        attribute: INT
+        cost: 3
+        url: /psionics/esp/#mind-reading
+        localized:
+        - en:
+            name: Mind Reading
+            description: |-
+              This skill allows a psion to "read" the surface thoughts of another character within 500 meters. The contact lasts for a limited time:
+              - **Ordinary:** 1 phase (random thoughts)
+              - **Good:** 2 phases (coherent context)
+              - **Amazing:** 3 phases (full surface thoughts)
+
+              **Rank Benefits:**
+              - **At rank 3 [Extra Time]**, duration increases to 2/3/4 phases.
+              - **At rank 6 [Probe]**, search the mind for specific information (+2 step penalty for alien species).
+              - **At rank 12 [Extra Time]**, duration increases to 1/2/3 minutes.
+
+              ---
+        - es:
+            name: Lectura de Mente
+            description: |-
+              Permite leer pensamientos superficiales a menos de 500 metros. La duración es:
+              - **Ordinario:** 1 fase (pensamientos inconexos).
+              - **Bueno:** 2 fases (contexto coherente).
+              - **Asombroso:** 3 fases (pensamientos superficiales completos).
+
+              **Beneficios de Rango:**
+              - **Al rango 6 [Sonda]**, permite buscar información específica en la mente (+2 pasos para alienígenas).
+              - **Al rango 12**, la duración aumenta a 1/2/3 minutos.
+
+              ---
+        trained_only: false
+      navcognition:
+        attribute: INT
+        cost: 3
+        url: /psionics/esp/#navcognition
+        trained_only: true
+        localized:
+        - en:
+            name: Navcognition
+            description: |-
+              This specialty skill represents a psion's innate ability to know exactly where he or she is in relation to a fixed location. This allows for astrogation and mapping without specialized equipment.
+
+              **Rank Benefits:**
+              - **At rank 1**, select one specialty: **Surface Navigation**, **System Astrogation**, or **Drivespace Astrogation**.
+              - **At rank 6 [Clarity of Mind]**, –4 step bonus to navigation during extreme conditions (chases, combat).
+              - **At rank 12 [Tracking]**, track the most likely destination of a target subject, even through drivespace.
+
+              ---
+        - es:
+            name: Navcognición
+            description: |-
+              Capacidad innata para conocer la posición exacta respecto a un punto fijo. Permite astrografía y cartografía sin equipo.
+
+              **Beneficios de Rango:**
+              - **Al rango 1**, selecciona una especialidad: **Navegación de Superficie**, **Astrografía de Sistema** o **Astrografía de Curvatura**.
+              - **Al rango 6**, bonificación de –4 pasos en condiciones extremas (persecuciones, combate).
+              - **Al rango 12 [Rastreo]**, permite rastrear el destino probable de un sujeto a través del espacio de curvatura.
+
+              ---
+      postcognition:
+        attribute: INT
+        cost: 3
+        url: /psionics/esp/#postcognition
+        localized:
+        - en:
+            name: Postcognition
+            description: |-
+              The character can sense the psychic residue of an area or object to see past events:
+              - **Ordinary:** sensing general emotions.
+              - **Good:** brief flashes of events.
+              - **Amazing:** experiencing a full scene as an observer.
+
+              In general, a character can see a number of days into the past equal to his or her skill rank.
+
+              **Rank Benefits:**
+              - **At rank 3, 6, 9, 12 [Extended Reach]**, the past-viewing window increases to weeks, months, years, and then decades.
+
+              ---
+        - es:
+            name: Postcognición
+            description: |-
+              Siente la resonancia psíquica de un área u objeto:
+              - **Ordinario:** emociones generales.
+              - **Bueno:** destellos breves.
+              - **Asombroso:** escena completa como observador.
+
+              Se puede ver hacia el pasado tantos días como el rango de habilidad.
+
+              **Beneficios de Rango:**
+              - **Al rango 3, 6, 9, 12**, el alcance aumenta a semanas, meses, años y décadas.
+
+              ---
+        trained_only: false
+      precognition:
+        attribute: INT
+        cost: 4
+        url: /psionics/esp/#precognition
+        trained_only: true
+        localized:
+        - en:
+            name: Precognition
+            description: |-
+              Receive impressions about possible future events. Usually triggered by the Gamemaster, but can be forced at double PP cost and a +3 step penalty. Success grants a "last resort point" usable only in that scene.
+
+              **Rank Benefits:**
+              - **At rank 3, 6, 9, 12 [Increased Time]**, the future-viewing window increases from hours to days, weeks, months, and then years.
+
+              ---
+        - es:
+            name: Precognición
+            description: |-
+              Recibe impresiones sobre sucesos futuros. Suele ser activada por el Director de Juego. El éxito otorga un "punto de último recurso" para la escena.
+
+              **Beneficios de Rango:**
+              - **Al rango 3, 6, 9, 12**, el alcance futuro aumenta de horas a días, semanas, meses y años.
+
+              ---
+      psychometry:
+        attribute: INT
+        cost: 3
+        url: /psionics/esp/#psychometry
+        localized:
+        - en:
+            name: Psychometry
+            description: |-
+              Read psychic impressions from inanimate objects through touch:
+              - **Ordinary:** receive simple emotions.
+              - **Good:** receive simple images.
+              - **Amazing:** experience a brief encounter as the owner.
+        - es:
+            name: Psicometría
+            description: |-
+              Lee impresiones psíquicas de objetos inanimados mediante el tacto:
+              - **Ordinario:** emociones simples.
+              - **Bueno:** imágenes simples.
+              - **Asombroso:** encuentro breve como el propietario.
+        trained_only: false
+  Psychoportation:
+    attribute: WIL
+    url: /psionics/psychoportation/
+    cost: 7
+    localized:
+    - en:
+        name: Psychoportation
+        description: Control time and space through mental discipline.
+    - es:
+        name: Psychoportation
+        description: Controla el tiempo y el espacio mediante la disciplina mental.
+    items:
+      alter-speed:
+        attribute: WIL
+        cost: 4
+        url: /psionics/psychoportation/#alter-speed
+        trained_only: true
+        localized:
+        - en:
+            name: Alter Speed
+            description: |-
+              This skill allows a character to accelerate or decelerate an object or living being within a limited range (25/50/100 meters). The result of the skill check determines the percentage of the target's current speed that is affected:
+              - **Ordinary:** 10%
+              - **Good:** 25%
+              - **Amazing:** 50%
+
+              **Rank Benefits:**
+              - **At rank 4 [Increased Effect]**, percentages increase to 25/50/75%.
+              - **At rank 8 [Increased Effect]**, percentages increase to 50/75/100%.
+              - **At rank 12 [Instant Stop/Start]**, the psion can instantly stop a moving object or bring a stationary object to its maximum speed.
+
+              ---
+        - es:
+            name: Alterar Velocidad
+            description: |-
+              Permite acelerar o desacelerar un objeto o ser vivo dentro de un rango limitado (25/50/100 metros). El éxito determina el porcentaje de cambio de velocidad:
+              - **Ordinario:** 10%
+              - **Bueno:** 25%
+              - **Asombroso:** 50%
+
+              **Beneficios de Rango:**
+              - **Al rango 4 [Efecto Incrementado]**, porcentajes aumentan a 25/50/75%.
+              - **Al rango 8 [Efecto Incrementado]**, porcentajes aumentan a 50/75/100%.
+              - **Al rango 12 [Parar/Arrancar Instantáneo]**, permite detener instantáneamente o llevar a velocidad máxima a un objeto.
+
+              ---
+      apportation:
+        attribute: WIL
+        cost: 6
+        url: /psionics/psychoportation/#apportation
+        trained_only: true
+        localized:
+        - en:
+            name: Apportation
+            description: |-
+              The psion can mentally transport objects or living beings from one location to another within limited range (25/50/100 meters). This differs from Teleportation in that the psion does not travel with the target.
+
+              **Rank Benefits:**
+              - **At rank 4 [Increased Range]**, range increases to 1 kilometer.
+              - **At rank 12 [Increased Range]**, range increases to 100 kilometers.
+
+              ---
+        - es:
+            name: Aportación
+            description: |-
+              El psiónico puede transportar mentalmente objetos o seres vivos de un lugar a otro dentro de un rango de 100 metros. A diferencia de la Teletransportación, el psiónico no viaja con el objetivo.
+
+              **Beneficios de Rango:**
+              - **Al rango 4 [Alcance Incrementado]**, el rango aumenta a 1 kilómetro.
+              - **Al rango 12 [Alcance Incrementado]**, el rango aumenta a 100 kilómetros.
+
+              ---
+      duplicate:
+        attribute: WIL
+        cost: 6
+        url: /psionics/psychoportation/#duplicate
+        trained_only: true
+        localized:
+        - en:
+            name: Duplicate
+            description: |-
+              The character can reach into an alternate timeline and bring a future version of himself or herself into the present. This future self acts as an independent entity and can assist the character.
+
+              - **Ordinary:** Future self lasts 1 round; copy has +1 rank in one skill.
+              - **Good:** Future self lasts 2 rounds; +2 ranks in skills and one Achievement benefit.
+              - **Amazing:** Future self lasts 3 rounds; +3 ranks in skills and two Achievement benefits.
+
+              **Critical Failure:** The character returns from the attempt having suffered damage or loss of equipment.
+
+              ---
+        - es:
+            name: Duplicado
+            description: |-
+              El personaje trae una versión futura de sí mismo desde una línea temporal alternativa al presente para que le ayude.
+
+              - **Ordinario:** El yo futuro dura 1 asalto; tiene +1 rango en una habilidad.
+              - **Bueno:** Dura 2 asaltos; +2 rangos en habilidades y un beneficio de Logro.
+              - **Asombroso:** Dura 3 asaltos; +3 rangos en habilidades y dos beneficios de Logro.
+
+              **Fallo Crítico:** El personaje sufre daños, aturdimiento o pérdida de equipo.
+
+              ---
+      teleportation:
+        attribute: WIL
+        cost: 5
+        url: /psionics/psychoportation/#teleportation
+        trained_only: true
+        localized:
+        - en:
+            name: Teleportation
+            description: |-
+              Instantly travel from one location to another within 100 meters. The psion must be familiar with the target location.
+
+              **Rank Benefits:**
+              - **At rank 3, 6, 9, 12 [Increased Mass]**, the weight of passengers/equipment increases from 1x Will to 2x, 5x, 10x, and finally 20x Will score.
+              - **At rank 4, 8, 12 [Increased Distance]**, maximum distance increases to 1 km, 100 km, and 1000 km.
+
+              ---
+        - es:
+            name: Teletransportación
+            description: |-
+              Viaje instantáneo a una ubicación conocida en un radio de 100 metros.
+
+              **Beneficios de Rango:**
+              - **Al rango 3, 6, 9, 12 [Masa Incrementada]**, la masa transportada aumenta de 1x Voluntad a 2x, 5x, 10x y 20x el valor de Voluntad.
+              - **Al rango 4, 8, 12 [Distancia Incrementada]**, la distancia máxima aumenta a 1 km, 100 km y 1000 km.
+
+              ---
+      timeslip:
+        attribute: WIL
+        cost: 6
+        url: /psionics/psychoportation/#timeslip
+        trained_only: true
+        localized:
+        - en:
+            name: Timeslip
+            description: |-
+              Jump forward in time by moments, minutes, or even hours. The character disappears and reappears at the same local coordinates at the specified future time.
+
+              - **Ordinary:** Travel 1 time unit forward.
+              - **Good:** Travel 2 time units.
+              - **Amazing:** Travel 3 time units.
+
+              **Rank Benefits:**
+              - **At rank 4, 8, 12 [Extended Slip]**, the base time unit increases from 1 round to 1 minute, 1 hour, and finally 1 day.
+              - **At rank 6 [Dodge]**, perform a reaction timeslip to avoid an attack.
+        - es:
+            name: Salto Temporal
+            description: |-
+              "Salta" hacia adelante en el tiempo momentos, minutos u horas. El personaje desaparece y reaparece en las mismas coordenadas locales en el momento futuro elegido.
+
+              - **Ordinario:** Viaja 1 unidad de tiempo al futuro.
+              - **Bueno:** Viaja 2 unidades.
+              - **Asombroso:** Viaja 3 unidades.
+
+              **Beneficios de Rango:**
+              - **Al rango 4, 8, 12 [Salto Extendido]**, la unidad de tiempo aumenta de 1 asalto a 1 minuto, 1 hora y 1 día.
+              - **Al rango 6 [Esquiva]**, permite realizar un salto temporal como reacción para esquivar un ataque.
+      dimension-walk:
+        attribute: WIL
+        cost: 6
+        trained_only: true
+        url: /psionics/psychoportation/#dimension-walk
+        localized:
+        - en:
+            name: Dimension Walk
+            description: Jump between parallel dimensions or tangent timelines.
+        - es:
+            name: Caminar entre Dimensiones
+            description: Salto entre dimensiones paralelas o líneas temporales tangentes.
+  Telekinesis:
+    attribute: WIL
+    url: /psionics/telekinesis/
+    cost: 6
+    localized:
+    - en:
+        name: Telekinesis
+        description: Manipulate and move physical objects using the power of the mind.
+    - es:
+        name: Telekinesis
+        description: Manipula y mueve objetos físicos usando el poder de la mente.
+    items:
+      cryokinetics:
+        attribute: WIL
+        cost: 3
+        url: /psionics/telekinesis/#cryokinetics
+        trained_only: true
+        localized:
+        - en:
+            name: Cryokinetics
+            description: |-
+              Absorb thermal energy from an object or area (up to 30 meters), causing it to freeze. Success inflicts energy damage and can potentially freeze mechanisms or targets.
+
+              **Rank Benefits:**
+              - **At rank 5, 9 [Increased Damage]**, damage increases from initial levels to higher tiers.
+
+              ---
+        - es:
+            name: Crioquinesis
+            description: |-
+              Absorbe la energía térmica de un objeto o zona (hasta 30 metros), haciendo que se congele. El éxito inflige daño de energía y puede congelar mecanismos.
+
+              **Beneficios de Rango:**
+              - **Al rango 5, 9 [Daño Incrementado]**, los niveles de daño aumentan.
+
+              ---
+      electrokinetics:
+        attribute: WIL
+        cost: 3
+        url: /psionics/telekinesis/#electrokinetics
+        trained_only: true
+        localized:
+        - en:
+            name: Electrokinetics
+            description: |-
+              Control and generate electrical energy (range 30 meters). Can be used to power devices or attack targets. Success inflicts energy damage and can short-circuit electronics.
+
+              **Rank Benefits:**
+              - **At rank 5, 9 [Increased Damage]**, electrical damage tiers increase.
+
+              ---
+        - es:
+            name: Electroquinesis
+            description: |-
+              Controla y genera energía eléctrica (rango 30 metros). Puede usarse para alimentar dispositivos o atacar. El éxito inflige daño de energía y puede cortocircuitar la electrónica.
+
+              **Beneficios de Rango:**
+              - **Al rango 5, 9 [Daño Incrementado]**, los niveles de daño eléctrico aumentan.
+
+              ---
+      kinetic-blow:
+        attribute: WIL
+        cost: 3
+        url: /psionics/telekinesis/#kinetic-blow
+        trained_only: true
+        localized:
+        - en:
+            name: Kinetic Blow
+            description: |-
+              Focus kinetic energy into a single physical strike. This adds to the damage of an unarmed attack.
+              - **Ordinary:** +d4s damage
+              - **Good:** +d6s damage
+              - **Amazing:** +d4w damage
+
+              ---
+        - es:
+            name: Golpe Kinético
+            description: |-
+              Enfoca la energía cinética en un único golpe físico que se añade al daño de un ataque sin armas.
+              - **Ordinario:** +d4s de daño.
+              - **Bueno:** +d6s de daño.
+              - **Asombroso:** +d4w de daño.
+
+              ---
+      kinetic-shield:
+        attribute: WIL
+        cost: 2
+        url: /psionics/telekinesis/#kinetic-shield
+        localized:
+        - en:
+            name: Kinetic Shield
+            description: |-
+              Create a field of force to deflect physical and energy attacks (but not psionic ones). The shield acts as armor.
+
+              **Rank Benefits:**
+              - **At rank 4, 8, 12 [Improved Protection]**, the LI/HI/En protection values increase.
+
+              ---
+        - es:
+            name: Escudo Kinético
+            description: |-
+              Crea un campo de fuerza para desviar ataques físicos y de energía (pero no psiónicos). El escudo actúa como armadura.
+
+              **Beneficios de Rango:**
+              - **Al rango 4, 8, 12 [Protección Mejorada]**, los valores de protección LI/HI/En aumentan.
+
+              ---
+        trained_only: false
+      levitation:
+        attribute: WIL
+        cost: 2
+        url: /psionics/telekinesis/#levitation
+        localized:
+        - en:
+            name: Levitation
+            description: |-
+              Defy gravity to lift oneself or others. The character can move vertically at a specified rate (initially 2 meters/phase).
+
+              **Rank Benefits:**
+              - **At rank 4, 8, 12 [Increased Speed/Carry]**, vertical speed and carry capacity increase.
+
+              ---
+        - es:
+            name: Levitación
+            description: |-
+              Desafía la gravedad para elevarse a sí mismo o a otros. El personaje se mueve verticalmente a una velocidad inicial de 2 metros por fase.
+
+              **Beneficios de Rango:**
+              - **Al rango 4, 8, 12 [Velocidad/Carga Incrementada]**, la velocidad vertical y la capacidad de carga aumentan.
+
+              ---
+        trained_only: false
+      photokinetics:
+        attribute: WIL
+        cost: 1
+        url: /psionics/telekinesis/#photokinetics
+        trained_only: true
+        localized:
+        - en:
+            name: Photokinetics
+            description: |-
+              Manipulate light to create flashes, illuminate areas, or even create laser-like bolts (range 100 meters).
+
+              **Rank Benefits:**
+              - **At rank 4 [Invisibility]**, bend light around the character for a stealth bonus (–4 step).
+              - **At rank 12 [Holographic Projection]**, create complex visual illusions.
+
+              ---
+        - es:
+            name: Fotoquinesis
+            description: |-
+              Manipula la luz para crear destellos, iluminar áreas o lanzar rayos láser (rango 100 metros).
+
+              **Beneficios de Rango:**
+              - **Al rango 4 [Invisibilidad]**, desvía la luz para obtener una bonificación de sigilo (–4 pasos).
+              - **Al rango 12 [Proyección Holográfica]**, crea ilusiones visuales complejas.
+
+              ---
+      psychokinetics:
+        attribute: WIL
+        cost: 3
+        url: /psionics/telekinesis/#psychokinetics
+        trained_only: true
+        localized:
+        - en:
+            name: Psychokinetics
+            description: |-
+              Move and manipulate solid objects at a distance. Can also be used to throw objects for damage.
+
+              **Rank Benefits:**
+              - **At rank 3 [Manipulate]**, operate mechanisms like locks or computer keys remotely.
+              - **At rank 6 [Batter]**, grab and damage living beings physically.
+              - **At rank 8 [Puppeteering]**, control the movements of another character.
+              - **At rank 9, 12 [Increased Damage]**, damage from thrown objects increases.
+
+              ---
+        - es:
+            name: Psicoquinesis
+            description: |-
+              Mueve y manipula objetos sólidos a distancia. Puede usarse para lanzar objetos y causar daño.
+
+              **Beneficios de Rango:**
+              - **Al rango 3 [Manipular]**, opera mecanismos remotos (cerraduras, teclados).
+              - **Al rango 6 [Batir]**, apresa y daña físicamente a seres vivos.
+              - **Al rango 8 [Marioneta]**, controla los movimientos de otro personaje.
+              - **Al rango 9, 12 [Daño Incrementado]**, el daño por objetos lanzados aumenta.
+
+              ---
+      pyrokinesis:
+        attribute: WIL
+        cost: 4
+        url: /psionics/telekinesis/#pyrokinesis
+        trained_only: true
+        localized:
+        - en:
+            name: Pyrokinesis
+            description: |-
+              Excite molecules to generate heat and fire (range 30 meters). Targets burst into flames, taking energy damage over time.
+
+              **Rank Benefits:**
+              - **At rank 5, 9 [Increased Damage]**, fire damage tiers increase.
+
+              ---
+        - es:
+            name: Piroquinesis
+            description: |-
+              Excita las moléculas para generar calor y fuego (rango 30 metros). Los objetivos estallan en llamas, sufriendo daños de energía con el tiempo.
+
+              **Beneficios de Rango:**
+              - **Al rango 5, 9 [Daño Incrementado]**, los niveles de daño por fuego aumentan.
+
+              ---
+      sheya's-clutch:
+        attribute: WIL
+        cost: 5
+        url: /psionics/telekinesis/#sheyas-clutch
+        trained_only: true
+        localized:
+        - en:
+            name: Sheya's Clutch
+            description: |-
+              Mentally crush the heart or internal organs of a living being (range 40 meters). Bypasses all non-psionic armor. This is physically draining for the user, who also takes damage.
+
+              **Rank Benefits:**
+              - **At rank 5, 9 [Increased Damage]**, damage to the victim increases while the relative cost to the user decreases slightly.
+        - es:
+            name: Presa de Sheya
+            description: |-
+              Aplasta mentalmente el corazón u órganos internos de un ser vivo (rango 40 metros). Ignora toda armadura no psiónica. Es agotador para el usuario, que también recibe daño.
+
+              **Beneficios de Rango:**
+              - **Al rango 5, 9 [Daño Incrementado]**, el daño a la víctima aumenta mientras el coste relativo para el usuario disminuye ligeramente.
+        alien_only: true
+  Telepathy:
     attribute: PER
+    url: /psionics/telepathy/
     cost: 5
-    url: /core-mechanics/psionics/telepathy/#datalink
-    description:
-      en: Interface directly with computer systems using the mind.
-      es: Interfaz directamente con sistemas informáticos usando la mente.
-  - name: Drain
-    attribute: PER
-    cost: 5
-    url: /core-mechanics/psionics/telepathy/#drain
-    trained_only: true
-    description:
-      en: Mentally sap the health of another character.
-      es: Debilita mentalmente la salud de otro personaje.
-  - name: Empathic Projection
-    attribute: PER
-    cost: 5
-    url: /core-mechanics/psionics/telepathy/#empathic-projection
-    description:
-      en: Project emotions into the mind of another character.
-      es: Proyecta emociones en la mente de otro personaje.
-  - name: Guidance
-    attribute: PER
-    cost: 5
-    url: /core-mechanics/psionics/telepathy/#guidance
-    description:
-      en: Provide mental assistance to enhance another's skill check.
-      es: Proporciona asistencia mental para mejorar la prueba de habilidad de otro.
-  - name: Illusion
-    attribute: PER
-    cost: 5
-    url: /core-mechanics/psionics/telepathy/#illusion
-    description:
-      en: Create mental images and sensations to trick targets.
-      es: Crea imágenes y sensaciones mentales para engañar a los objetivos.
-  - name: Mind Blast
-    attribute: PER
-    cost: 5
-    url: /core-mechanics/psionics/telepathy/#mind-blast
-    trained_only: true
-    description:
-      en: Deliver a powerful telepathic strike to stun an opponent.
-      es: Lanza un poderoso ataque telepático para aturdir a un oponente.
-  - name: Mind Shield
-    attribute: PER
-    cost: 5
-    url: /core-mechanics/psionics/telepathy/#mind-shield
-    description:
-      en: Protect the mind against intrusion and psychic attacks.
-      es: Protege la mente contra intrusiones y ataques psíquicos.
-  - name: Mind Wipe
-    attribute: PER
-    cost: 5
-    url: /core-mechanics/psionics/telepathy/#mind-wipe
-    trained_only: true
-    description:
-      en: Erase or alter memories in the target's mind.
-      es: Borra o altera los recuerdos en la mente del objetivo.
-  - name: Psychic Armor
-    attribute: PER
-    cost: 5
-    url: /core-mechanics/psionics/telepathy/#psychic-armor
-    description:
-      en: Bolster the mind specifically against psychic damage.
-      es: Refuerza la mente específicamente contra el daño psíquico.
-  - name: Psychic Projection
-    attribute: PER
-    cost: 5
-    url: /core-mechanics/psionics/telepathy/#psychic-projection
-    description:
-      en: Project the psyche to a distant location.
-      es: Proyecta la psique a un lugar distante.
-  - name: Subdual
-    attribute: PER
-    cost: 5
-    url: /core-mechanics/psionics/telepathy/#subdual
-    trained_only: true
-    description:
-      en: Calm and pacify the minds of others to prevent violence.
-      es: Calma y pacifica las mentes de otros para prevenir la violencia.
-  - name: Suggest
-    attribute: PER
-    cost: 5
-    url: /core-mechanics/psionics/telepathy/#suggest
-    description:
-      en: Implant thoughts or ideas into another person's mind.
-      es: Implantar pensamientos o ideas en la mente de otra persona.
-  - name: Tire
-    attribute: PER
-    cost: 5
-    url: /core-mechanics/psionics/telepathy/#tire
-    trained_only: true
-    description:
-      en: Mentally induce fatigue and exhaustion in a target.
-      es: Induce mentalmente fatiga y agotamiento en un objetivo.
-  - name: Undo
-    attribute: PER
-    cost: 5
-    url: /core-mechanics/psionics/telepathy/#undo
-    trained_only: true
-    description:
-      en: Reverse or neutralize the effects of other telepathic powers.
-      es: Revierte o neutraliza los efectos de otros poderes telepáticos.
+    localized:
+    - en:
+        name: Telepathy
+        description: Communicate and interact directly with the minds of others.
+    - es:
+        name: Telepathy
+        description: Comunícate e interactúa directamente con la mente de los demás.
+    items:
+      contact:
+        attribute: PER
+        cost: 3
+        url: /psionics/telepathy/#contact
+        localized:
+        - en:
+            name: Contact
+            description: |-
+              Establish a mental link with another character within visual range. This link allows for two-way communication and is often a prerequisite for other telepathic powers.
+
+              **Rank Benefits:**
+              - **At rank 4 [Multiple Contacts]**, contact up to 4 individuals simultaneously.
+              - **At rank 8 [Non-Visual Contact]**, contact individuals out of sight if their location is known.
+              - **At rank 12 [Group Link]**, create a mental network for a large group.
+
+              ---
+        - es:
+            name: Contacto
+            description: |-
+              Establece un vínculo mental con otro personaje en el rango visual. Permite comunicación bidireccional y es requisito para otros poderes.
+
+              **Beneficios de Rango:**
+              - **Al rango 4**, contacta a 4 individuos simultáneamente.
+              - **Al rango 8**, contacta a individuos fuera de la vista si se conoce su ubicación.
+
+              ---
+        trained_only: false
+      datalink:
+        attribute: PER
+        cost: 4
+        url: /psionics/telepathy/#datalink
+        localized:
+        - en:
+            name: Datalink
+            description: |-
+              Interface directly with computer systems using the mind. Perform computer-related tasks (Access, Hacking, etc.) at a distance without a physical terminal.
+
+              **Rank Benefits:**
+              - **At rank 5 [Increased Range]**, range increases to 100 meters.
+              - **At rank 9 [Deep Link]**, –2 step bonus to computer-related checks.
+
+              ---
+        - es:
+            name: Enlace de Datos
+            description: |-
+              Interfaz directa con sistemas informáticos. Realiza tareas de computación (Acceso, Hackeo, etc.) a distancia sin terminal física.
+
+              **Beneficios de Rango:**
+              - **Al rango 9**, bonificación de –2 pasos a tiradas de informática.
+
+              ---
+        trained_only: false
+      drain:
+        attribute: PER
+        cost: 4
+        url: /psionics/telepathy/#drain
+        trained_only: true
+        localized:
+        - en:
+            name: Drain
+            description: |-
+              Mentally sap the health of another character (range 30 meters). Success inflicts wound damage while potentially healing the user.
+
+              **Rank Benefits:**
+              - **At rank 6 [Life Drain]**, can drain Mortal damage.
+              - **At rank 12 [Mass Drain]**, affect multiple targets in a small area.
+
+              ---
+        - es:
+            name: Drenar
+            description: |-
+              Sapa la salud de otro personaje (rango 30 metros). El éxito inflige daño de heridas y puede curar al usuario.
+
+              ---
+      empathic-projection:
+        attribute: PER
+        cost: 3
+        url: /psionics/telepathy/#empathic-projection
+        localized:
+        - en:
+            name: Empathic Projection
+            description: |-
+              Project emotions into the mind of another character to influence their attitude (Friendly, Hostile, etc.).
+
+              **Rank Benefits:**
+              - **At rank 6 [Emotional Overload]**, stun the target with overwhelming emotion.
+
+              ---
+        - es:
+            name: Proyección Empática
+            description: |-
+              Proyecta emociones en la mente de otro para influir en su actitud (Amistoso, Hostil, etc.).
+
+              ---
+        trained_only: false
+      guidance:
+        attribute: PER
+        cost: 4
+        url: /psionics/telepathy/#guidance
+        localized:
+        - en:
+            name: Guidance
+            description: |-
+              Provide mental assistance to another character, granting them a bonus to a specific specialty skill check.
+
+              **Rank Benefits:**
+              - **At rank 4, 8, 12 [Improved Guidance]**, the step bonus increases.
+
+              ---
+        - es:
+            name: Guía
+            description: |-
+              Ayuda mental a otro personaje, otorgando una bonificación a una tirada de habilidad específica.
+
+              ---
+        trained_only: false
+      illusion:
+        attribute: PER
+        cost: 3
+        url: /psionics/telepathy/#illusion
+        localized:
+        - en:
+            name: Illusion
+            description: |-
+              Create mental images and sensations that trick the target's perception. The illusion exists only in the target's mind.
+
+              **Rank Benefits:**
+              - **At rank 6 [Multi-Sensory]**, include sound, smell, and touch in the illusion.
+              - **At rank 12 [Mass Illusion]**, affect everyone in a specified area.
+
+              ---
+        - es:
+            name: Ilusión
+            description: |-
+              Crea imágenes y sensaciones mentales que engañan la percepción del objetivo. Solo existe en la mente del objetivo.
+
+              ---
+        trained_only: false
+      mind-blast:
+        attribute: PER
+        cost: 4
+        url: /psionics/telepathy/#mind-blast
+        trained_only: true
+        localized:
+        - en:
+            name: Mind Blast
+            description: |-
+              Deliver a powerful telepathic strike to stun an opponent (range 30 meters). Bypasses physical armor.
+
+              ---
+        - es:
+            name: Explosión Mental
+            description: |-
+              Ataque telepático para aturdir a un oponente (rango 30 metros). Ignora armadura física.
+
+              ---
+      mind-shield:
+        attribute: PER
+        cost: 2
+        url: /psionics/telepathy/#mind-shield
+        localized:
+        - en:
+            name: Mind Shield
+            description: |-
+              Protect the mind against telepathic intrusion and psychic attacks. Provides a bonus to Willpower resistance.
+
+              ---
+        - es:
+            name: Escudo Mental
+            description: |-
+              Protege la mente contra intrusiones y ataques psíquicos. Otorga bonificación a la resistencia de Voluntad.
+
+              ---
+        trained_only: false
+      mind-wipe:
+        attribute: PER
+        cost: 4
+        url: /psionics/telepathy/#mind-wipe
+        trained_only: true
+        localized:
+        - en:
+            name: Mind Wipe
+            description: |-
+              Erase or alter memories in the target's mind. The complexity of the wipe depends on the success level.
+
+              ---
+        - es:
+            name: Borrado Mental
+            description: |-
+              Borra o altera recuerdos en la mente del objetivo. La complejidad depende del nivel de éxito.
+
+              ---
+      psychic-armor:
+        attribute: PER
+        cost: 2
+        url: /psionics/telepathy/#psychic-armor
+        localized:
+        - en:
+            name: Psychic Armor
+            description: |-
+              Bolster the mind specifically against psychic damage. Provides "psychic protection" points.
+
+              ---
+        - es:
+            name: Armadura Psíquica
+            description: |-
+              Refuerza la mente contra el daño psíquico. Otorga puntos de "protección psíquica".
+
+              ---
+        trained_only: false
+      psychic-projection:
+        attribute: PER
+        cost: 3
+        url: /psionics/telepathy/#psychic-projection
+        localized:
+        - en:
+            name: Psychic Projection
+            description: |-
+              Project the psyche to a distant location. The character can see and hear but cannot physically interact with the environment.
+
+              ---
+        - es:
+            name: Proyección Psíquica
+            description: |-
+              Proyecta la psique a un lugar distante. El personaje puede ver y oír pero no interactuar físicamente.
+
+              ---
+        trained_only: false
+      subdual:
+        attribute: PER
+        cost: 3
+        url: /psionics/telepathy/#subdual
+        trained_only: true
+        localized:
+        - en:
+            name: Subdual
+            description: |-
+              Calm and pacify the minds of others to prevent violence. Targets suffer penalties to combat actions.
+
+              ---
+        - es:
+            name: Sometimiento
+            description: |-
+              Calma y pacifica las mentes para evitar la violencia. Los objetivos sufren penalizaciones en combate.
+
+              ---
+      suggest:
+        attribute: PER
+        cost: 3
+        url: /psionics/telepathy/#suggest
+        localized:
+        - en:
+            name: Suggest
+            description: |-
+              Implant thoughts or ideas into another person's mind. The target believes the thought is their own and may act upon it.
+
+              ---
+        - es:
+            name: Sugestión
+            description: |-
+              Planta pensamientos en la mente de otro, convenciéndolo de que son suyos.
+
+              ---
+        trained_only: false
+      tire:
+        attribute: PER
+        cost: 3
+        url: /psionics/telepathy/#tire
+        trained_only: true
+        localized:
+        - en:
+            name: Tire
+            description: |-
+              Mentally induce fatigue and exhaustion in a target (range 30 meters).
+
+              ---
+        - es:
+            name: Cansancio
+            description: |-
+              Induce fatiga y agotamiento mental (rango 30 metros).
+
+              ---
+      undo:
+        attribute: PER
+        cost: 3
+        url: /psionics/telepathy/#undo
+        trained_only: true
+        localized:
+        - en:
+            name: Undo
+            description: Reverse or neutralize the lasting effects of other telepathic
+              powers like Illusion, Mind Wipe, or Suggestion.
+        - es:
+            name: Deshacer
+            description: Revierte o neutraliza efectos telepáticos duraderos como
+              Ilusión, Borrado Mental o Sugestión.

@@ -64,6 +64,7 @@ window.addEventListener('DOMContentLoaded', () => {
                 if (sectionRaw.includes('species')) icon = '👽';
                 if (sectionRaw.includes('profession')) icon = '👷';
                 if (sectionRaw.includes('cybernetics')) icon = '🦾';
+                if (sectionRaw.includes('psionics') || item.url.includes('psionics')) icon = '🧠';
 
                 // Simple highlighting logic
                 let title = item.title;

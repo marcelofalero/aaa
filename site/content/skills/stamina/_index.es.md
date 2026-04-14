@@ -6,7 +6,7 @@ type = "skill"
 layout = "list"
 +++
 
-Esta habilidad amplia mide la fortaleza física de un héroe CON respecto a los efectos del daño Mortal y el agotamiento (fatiga).
+Esta habilidad amplia mide la fortaleza física de un personaje CON respecto a los efectos del daño Mortal y el agotamiento (fatiga).
 
 ### Moribundo
 Un personaje que ha sufrido daño Mortal debe realizar una tirada de Aguante al final de una escena y una vez por hora.
@@ -15,7 +15,7 @@ Un personaje que ha sufrido daño Mortal debe realizar una tirada de Aguante al 
 - **Ordinario o mejor:** Su estado no cambia.
 
 ### Agotamiento (Fatiga)
-Cuando un héroe realiza ciertas actividades que provocan fatiga, debe realizar una tirada de Aguante.
+Cuando un personaje realiza ciertas actividades que provocan fatiga, debe realizar una tirada de Aguante.
 - **Fallo Crítico:** 2 puntos de daño por fatiga.
 - **Fallo:** 1 punto de daño por fatiga.
 - **Éxito:** No sufre daño por fatiga.
@@ -26,19 +26,19 @@ Cuando un héroe realiza ciertas actividades que provocan fatiga, debe realizar 
 {{% list %}}
 
 ### Resistencia
-A medida que un héroe adquiere rangos en la habilidad de resistencia, se vuelve más capaz de soportar los efectos del daño. Para un personaje que tiene esta especialidad, las tiradas de resistencia sustituyen a las tiradas de Aguante.
+A medida que un personaje adquiere rangos en la habilidad de resistencia, se vuelve más capaz de soportar los efectos del daño. Para un personaje que tiene esta especialidad, las tiradas de resistencia sustituyen a las tiradas de Aguante.
 
 ### Resistir el dolor
 *No se puede usar sin estar entrenado.*
 
-Resistir el dolor permite a un héroe funcionar CON normalidad e ignorar algunas o todas las penalizaciones de situación por sufrir daño por aturdimiento, heridas o daño Mortal. Una tirada no cuenta como acción.
+Resistir el dolor permite a un personaje funcionar CON normalidad e ignorar algunas o todas las penalizaciones de situación por sufrir daño por aturdimiento, heridas o daño Mortal. Una tirada no cuenta como acción.
 
 ### Resultados
-- **Fallo Crítico:** El héroe sucumbe al dolor y no puede actuar durante 2d4 fases.
-- **Fallo:** El héroe sufre las penalizaciones por daño.
-- **Ordinario:** El héroe ignora 1 paso de penalización.
-- **Bueno:** El héroe ignora 2 pasos de penalización.
-- **Asombroso:** El héroe ignora 3 pasos de penalización.
+- **Fallo Crítico:** El personaje sucumbe al dolor y no puede actuar durante 2d4 fases.
+- **Fallo:** El personaje sufre las penalizaciones por daño.
+- **Ordinario:** El personaje ignora 1 paso de penalización.
+- **Bueno:** El personaje ignora 2 pasos de penalización.
+- **Asombroso:** El personaje ignora 3 pasos de penalización.
 
 Resistir el dolor solo disminuye o elimina las penalizaciones de situación causadas por el daño acumulado. No convierte una penalización en una bonificación ni evita quedar moribundo o la muerte.
 

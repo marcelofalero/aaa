@@ -38,7 +38,7 @@ Disfraz es la habilidad de cambiar tu apariencia para parecerte a otra persona o
 
 Mientras que la habilidad de **Entretenimiento-actuar** se usa para el maquillaje y la actuación profesional, esta especialización cubre aplicaciones más inmediatas y prácticas del disfraz, como cambiarse de ropa, usar una peluca o usar accesorios simples para evitar ser reconocido.
 
-El dado de situación de Disfraz de un héroe se modifica por el modificador de Percepción-percepción del observador.
+El dado de situación de Disfraz de un personaje se modifica por el modificador de Percepción-percepción del observador.
 
 ---
 
@@ -49,9 +49,9 @@ El dado de situación de Disfraz de un héroe se modifica por el modificador de 
 
 *Esta habilidad no se puede usar sin entrenamiento.*
 
-Esta especialización permite a un héroe abrir cerraduras físicas (puertas, cajas fuertes, vehículos, etc.). Generalmente se emplea CON herramientas que proporcionan una bonificación al dado de situación.
+Esta especialización permite a un personaje abrir cerraduras físicas (puertas, cajas fuertes, vehículos, etc.). Generalmente se emplea CON herramientas que proporcionan una bonificación al dado de situación.
 
-La habilidad de abrir cerraduras es inútil contra una cerradura asistida por computadora a menos que tenga un mecanismo físico que el héroe pueda manipular. Casi siempre, el uso de abrir cerraduras requiere una tirada de habilidad compleja.
+La habilidad de abrir cerraduras es inútil contra una cerradura asistida por computadora a menos que tenga un mecanismo físico que el personaje pueda manipular. Casi siempre, el uso de abrir cerraduras requiere una tirada de habilidad compleja.
 
 ---
 
@@ -62,7 +62,7 @@ La habilidad de abrir cerraduras es inútil contra una cerradura asistida por co
 
 *Esta habilidad no se puede usar sin entrenamiento.*
 
-Esta especialización permite a un héroe quitar objetos de una persona (o colocar algo) sin que esa persona se dé cuenta. El dado de situación base se determina por el modificador de resistencia de Voluntad del objetivo.
+Esta especialización permite a un personaje quitar objetos de una persona (o colocar algo) sin que esa persona se dé cuenta. El dado de situación base se determina por el modificador de resistencia de Voluntad del objetivo.
 
 ### Resultados
 - **Fracaso/Fallo Crítico:** El intento falla y el carterista es descubierto.

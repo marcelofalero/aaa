@@ -6,7 +6,7 @@ type = "skill"
 layout = "list"
 +++
 
-Esta habilidad general proporciona a un héroe las capacidades y talentos de un líder. Un líder puede coordinar a un grupo para rendir mejor o trabajar en equipo. Solo un personaje puede asumir el papel de líder a la vez.
+Esta habilidad general proporciona a un personaje las capacidades y talentos de un líder. Un líder puede coordinar a un grupo para rendir mejor o trabajar en equipo. Solo un personaje puede asumir el papel de líder a la vez.
 
 La tirada de acción de un líder proporciona una bonificación a todas las acciones realizadas en el resto del asalto y en todos los asaltos siguientes por parte de sus seguidores. No se puede usar sobre objetivos que estén Combativos.
 
