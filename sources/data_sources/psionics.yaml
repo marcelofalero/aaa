@@ -1398,19 +1398,41 @@ items:
         - en:
             name: Guidance
             description: |-
-              Provide mental assistance to another character, granting them a bonus to a specific specialty skill check.
+              The fraal long ago realized that telepathy was an excellent way of putting the right skills in the right place. Often, fraal workers would hit a stumbling block on some project and require the expertise of a supervisor—who unfortunately was too far away to be helpful. Telepathy-contact somewhat overcame the problem, but the supervisor could only advise, and even then had to rely on the worker’s understanding of the situation. So the fraal developed a way of temporarily granting a worker the skill needed to do the job right.
 
-              **Rank Benefits:**
-              - **At rank 4, 8, 12 [Improved Guidance]**, the step bonus increases.
+              With a successful skill check, the telepath can implant one of his or her non-psionic skills in the mind of a subject for as long as he or she continues to expend psionic energy points. The attempt carries the same situational modifiers as the *contact* skill. The target must be within visual range of the psion using this skill.
+
+              The subject gains access to the appropriate broad skill on an Ordinary success, half the telepath’s rank (rounded down) in the appropriate specialty skill on a Good success, or the telepath’s rank -1 on an Amazing success. Obviously, the telepath cannot use *guidance* to confer skills he or she does not possess—and cannot confer skills learned via another telepath using *guidance*!
+
+              If the skill to be learned is a specialty skill and the subject did not already have the appropriate broad skill, any attempt to use the specialty skill carries a +1 step penalty, in addition to any other penalties that may apply. A further +1 step penalty applies if the skill is based on Strength, Constitution, or Dexterity.
+
+              **Example**: Mon jil Sohar can "loan" his skills to his companion, Hieo jil Esoam. On an Ordinary success, Hieo can use Mon's Life Science broad skill, half of Mon's ranks in Life Science-genetics on a Good success, or all but one of his ranks in the skill on an Amazing success. When Hieo attempts to use these skills, though, he suffers a +1 step penalty because he didn't already have the Life Science broad skill. If Mon tries to guide Hieo in the use of his Vehicle Operation-land vehicle skill, though, Hieo will suffer a +2 step penalty: +1 because he didn't already have the broad skill, and another +1 because it's based on Dexterity.
+
+              **Rank Benefits**:
+              - **▶ Extended Time**: At rank 6, the user only needs to expend psionic energy points every 5 rounds in order to continue granting the skill to the subject.
+              - **⊗ Conduit**: At rank 12, the user can transfer a non-psionic skill he or she does not possess by taking it from the mind of a willing "donor."
 
               ---
         - es:
             name: Guía
             description: |-
-              Ayuda mental a otro personaje, otorgando una bonificación a una tirada de habilidad específica.
+              Los fraal se dieron cuenta hace mucho tiempo de que la telepatía era una excelente manera de poner las habilidades adecuadas en el lugar correcto. A menudo, los trabajadores fraal se encontraban con un obstáculo en algún proyecto y requerían la experiencia de un supervisor, quien desafortunadamente estaba demasiado lejos para ser de ayuda. Telepatía-contacto superó en parte el problema, pero el supervisor solo podía aconsejar, e incluso entonces tenía que confiar en la comprensión de la situación por parte del trabajador. Así que los fraal desarrollaron una forma de otorgar temporalmente a un trabajador la habilidad necesaria para hacer el trabajo correctamente.
+
+              Con una prueba de habilidad exitosa, el telépata puede implantar una de sus habilidades no psiónicas en la mente de un sujeto mientras continúe gastando puntos de energía psiónica. El intento conlleva los mismos modificadores situacionales que la habilidad de *contacto*. El objetivo debe estar dentro del alcance visual del psiónico que usa esta habilidad.
+
+              El sujeto obtiene acceso a la habilidad amplia apropiada con un éxito Ordinario, la mitad del rango del telépata (redondeado hacia abajo) en la habilidad de especialidad apropiada con un éxito Bueno, o el rango del telépata -1 con un éxito Asombroso. ¡Obviamente, el telépata no puede usar *guía* para conferir habilidades que no posee, ni puede conferir habilidades aprendidas a través de otro telépata usando *guía*!
+
+              Si la habilidad a aprender es una habilidad de especialidad y el sujeto aún no tenía la habilidad amplia apropiada, cualquier intento de usar la habilidad de especialidad conlleva una penalización de +1 paso, además de cualquier otra penalización que pueda aplicarse. Se aplica una penalización adicional de +1 paso si la habilidad se basa en Fuerza, Constitución o Destreza.
+
+              **Ejemplo**: Mon jil Sohar puede "prestar" sus habilidades a su compañero, Hieo jil Esoam. Con un éxito Ordinario, Hieo puede usar la habilidad amplia de Ciencias de la Vida de Mon, la mitad de los rangos de Mon en Ciencias de la Vida-genética con un éxito Bueno, o todos menos uno de sus rangos en la habilidad con un éxito Asombroso. Sin embargo, cuando Hieo intenta usar estas habilidades, sufre una penalización de +1 paso porque aún no tenía la habilidad amplia de Ciencias de la Vida. Si Mon intenta guiar a Hieo en el uso de su habilidad de Operación de Vehículos-vehículo terrestre, Hieo sufrirá una penalización de +2 pasos: +1 porque aún no tenía la habilidad amplia y otro +1 porque se basa en Destreza.
+
+              **Beneficios de Rango**:
+              - **▶ Tiempo Extendido**: Al rango 6, el usuario solo necesita gastar puntos de energía psiónica cada 5 asaltos para continuar otorgando la habilidad al sujeto.
+              - **⊗ Conducto**: Al rango 12, el usuario puede transferir una habilidad no psiónica que no posee tomándola de la mente de un "donante" voluntario.
 
               ---
-        trained_only: false
+        trained_only: true
+
       illusion:
         attribute: PER
         cost: 3

@@ -76,3 +76,10 @@ Jump forward in time by moments, minutes, or even hours. The character disappear
 **Rank Benefits:**
 - **At rank 4, 8, 12 [Extended Slip]**, the base time unit increases from 1 round to 1 minute, 1 hour, and finally 1 day.
 - **At rank 6 [Dodge]**, perform a reaction timeslip to avoid an attack.
+
+---
+
+## Dimension Walk
+### (WIL - Trained Only)
+
+Jump between parallel dimensions or tangent timelines. Note that this skill requires special permission from the Gamemaster if the character doesn't have it already.

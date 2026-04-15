@@ -1,5 +1,5 @@
 +++
-title = "Psionica"
+title = "Psiónica"
 description = "Poderes mentales y disciplinas para Mindwalkers y otras personas superdotadas."
 weight = 9
 type = "skill"

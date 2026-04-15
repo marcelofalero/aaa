@@ -136,7 +136,7 @@ This skill allows a psion to "read" the surface thoughts of another character wi
 ---
 
 ## Navcognition
-### (INT)
+### (INT - Trained Only)
 
 This specialty skill represents a psion's innate ability to know exactly where he or she is in relation to a fixed location. This allows for astrogation and mapping without specialized equipment.
 
@@ -162,7 +162,7 @@ In general, a character can see a number of days into the past equal to his or h
 ---
 
 ## Precognition
-### (INT)
+### (INT - Trained Only)
 
 Receive impressions about possible future events. Usually triggered by the Gamemaster, but can be forced at double PP cost and a +3 step penalty. Success grants a "last resort point" usable only in that scene.
 

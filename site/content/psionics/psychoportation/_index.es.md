@@ -86,3 +86,11 @@ Viaje instantáneo a una ubicación conocida en un radio de 100 metros.
 **Beneficios de Rango:**
 - **Al rango 4, 8, 12 [Salto Extendido]**, la unidad de tiempo aumenta de 1 asalto a 1 minuto, 1 hora y 1 día.
 - **Al rango 6 [Esquiva]**, permite realizar un salto temporal como reacción para esquivar un ataque.
+
+---
+
+## Caminar entre Dimensiones
+### (Dimension Walk)
+### (WIL - Solo con Entrenamiento)
+
+Salto entre dimensiones paralelas o líneas temporales tangentes. Ten en cuenta que esta habilidad requiere un permiso especial del Director de Juego si el personaje no la tiene ya.

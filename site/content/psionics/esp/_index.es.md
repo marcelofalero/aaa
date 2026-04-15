@@ -41,18 +41,34 @@ Esta habilidad permite a un personaje enfocar su mente en la batalla que le rode
 
 Con esta habilidad, un personaje selecciona una ubicación y proyecta su mente hacia ese lugar, escuchando los sonidos como si estuviera físicamente presente.
 
-La clariaudiencia no filtra el ruido ambiental. El oído mental no puede moverse del lugar seleccionado. El personaje permanece consciente dentro de su cuerpo.
+La clariaudiencia no filtra el ruido ambiental, por lo que el usuario puede tener problemas para distinguir sonidos particulares. No proporciona ayuda para interpretar idiomas desconocidos ni para reconocer sonidos desconocidos, y el oído mental no puede moverse del lugar seleccionado. La ubicación en sí puede estar en movimiento (un vehículo, por ejemplo), pero tal objetivo requiere pruebas de habilidad adicionales si la distancia al objetivo aumenta.
+
+El personaje permanece consciente dentro de su cuerpo y es consciente de lo que sucede a su alrededor.
 
 El resultado determina la duración:
 - **Ordinario:** 1 asalto.
 - **Bueno:** 2 asaltos.
 - **Asombroso:** 3 asaltos.
 
+Esta duración puede extenderse gastando 1 punto de energía psiónica por cada asalto adicional. Los modificadores de situación por la familiaridad de la ubicación y la distancia a la que se utiliza la clariaudiencia son los siguientes:
+
+| Situación/distancia | Modificador |
+| :--- | :---: |
+| Ubicación familiar | –1 |
+| Ubicación desconocida | ninguno |
+| 1–10 metros | –1 |
+| 11–100 metros | ninguno |
+| 101 m–1 km | +1 |
+| 2–10 km | +2 |
+| 11–100 km | +3 |
+| 101–1.000 km (órbita baja) | +4 |
+| 1.001–10.000 km (órbita alta) | +5 |
+
 **Beneficios de Rango:**
-- **Al rango 4 [Duración Incrementada]**, el incremento de tiempo aumenta a **minutos**.
-- **Al rango 6 [Cambio de Perspectiva]**, el personaje puede intentar cambiar la ubicación proyectada.
-- **Al rango 8**, el incremento aumenta a **5 minutos**.
-- **Al rango 12**, el incremento aumenta a **30 minutos**.
+- **Al rango 4 [Duración Incrementada]**, el incremento de tiempo para un uso exitoso de la habilidad aumenta a minutos (**Ordinario:** 1 minuto; **Bueno:** 2 minutos; **Asombroso:** 3 minutos). Cada punto de energía psiónica adicional utilizado para extender la duración añade 1 minuto a la misma.
+- **Al rango 6 [Cambio de Perspectiva]**, el personaje puede intentar otra tirada de habilidad de ESP-clariaudiencia para cambiar la ubicación a la que se ha proyectado el oído mental. La nueva tirada se modifica por la distancia desde la ubicación actual que el psiónico está escuchando, en lugar de la distancia física a la que se encuentra el psiónico del área objetivo.
+- **Al rango 8 [Duración Incrementada]**, el incremento de tiempo aumenta de nuevo: **Ordinario:** 5 minutos; **Bueno:** 10 minutos; **Asombroso:** 15 minutos. Cada punto de energía psiónica adicional añade 5 minutos.
+- **Al rango 12 [Duración Incrementada]**, el incremento de tiempo pasa a ser: **Ordinario:** 30 minutos; **Bueno:** 60 minutos; **Asombroso:** 90 minutos. Cada punto de energía psiónica adicional añade 30 minutos.
 
 ---
 
@@ -75,19 +91,18 @@ La duración es:
 ### (Dream Hunt)
 ### (INT - Entrenado por Sesheyan)
 
+Los Mindwalkers asumen el papel de místicos y chamanes en la sociedad sesheyan. Aunque se desarrolló originalmente para la caza de animales, la técnica funciona sobre cualquier ser vivo. El psiónico sesheyan (o entrenado por sesheyan) se concentra en el objetivo y se involucra mentalmente en una caza. Cuanto mejor se conozcan los hábitos del objetivo, más fácil será la caza. Si la tirada de habilidad tiene éxito, el psiónico determina el lugar donde estará la presa en cualquier lugar único en las próximas 24 horas, aunque no cuándo estará allí la presa.
 
-Utilizada originalmente para la caza, esta técnica permite localizar a cualquier ser vivo. El psiónico se concentra en el objetivo; cuanto más conozca sus hábitos, más fácil será la caza.
-
-Precisión según el éxito:
+El grado de éxito determina con qué precisión el psiónico puede señalar la ubicación:
 - **Ordinario:** radio de 1000 metros.
 - **Bueno:** radio de 500 metros.
 - **Asombroso:** radio de 100 metros.
 
 **Beneficios de Rango:**
-- **Al rango 3**, permite acotar el momento del encuentro a un margen de 3 horas.
-- **Al rango 6**, mejora la precisión de los radios de búsqueda.
-- **Al rango 9**, permite determinar **cuándo** estará el objetivo en un lugar con un margen de 30 minutos.
-- **Al rango 12**, precisión máxima: Ord 100m, Bueno 50m, Asom 10m.
+- **Al rango 3 [Precisión Mejorada]**, el psiónico es capaz de acotar un lugar determinado a un margen de 3 horas.
+- **Al rango 6**, un éxito **Ordinario** reduce la ubicación a un radio de 500 metros, un éxito **Bueno** la reduce a 100 metros y un éxito **Asombroso** la reduce a 50 metros.
+- **Al rango 9**, el psiónico puede determinar **cuándo** estará la presa en un lugar concreto con un margen de 30 minutos.
+- **Al rango 12**, la precisión mejora aún más: **Ordinario:** 100 metros, **Bueno:** 50 metros, **Asombroso:** 10 metros.
 
 ---
 
