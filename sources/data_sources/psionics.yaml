@@ -6,12 +6,19 @@ items:
     localized:
       - en:
           name: Biokinesis
-          description: |
-            This skill can’t be used untrained. Using this skill allows a character to harness the power of the mind to enhance his or her performance. With just the broad skill, a character can attempt to use any of the related specialty skills except those that can't be used untrained.
+          description: |-
+            This skill can’t be used untrained. Using this skill allows a character to
+            harness the power of the mind to enhance his or her performance. With just the
+            broad skill, a character can attempt to use any of the related specialty skills
+            except those that can't be used untrained.
       - es:
           name: Biokinesis
-          description: |
-            Esta habilidad no puede usarse sin entrenamiento. El uso de esta habilidad permite a un personaje aprovechar el poder de la mente para mejorar su rendimiento. Con solo la habilidad de base, un personaje puede intentar usar cualquiera de las habilidades de especialidad relacionadas, excepto aquellas que no pueden usarse sin entrenamiento.
+          description: |-
+            Esta habilidad no puede usarse sin entrenamiento. El uso de esta habilidad
+            permite a un personaje aprovechar el poder de la mente para mejorar su
+            rendimiento. Con solo la habilidad de base, un personaje puede intentar usar
+            cualquiera de las habilidades de especialidad relacionadas, excepto aquellas que
+            no pueden usarse sin entrenamiento.
     items:
       bio-armor:
         attribute: CON
@@ -20,36 +27,42 @@ items:
         trained_only: false
         extended_duration: true
         localized:
-        - en:
-            name: Bio-armor
-            description: |
-              This skill psionically reinforces a character’s skin, helping to protect from damage. This "body armor” provides protection against physical and energy damage, but does not protect against psionic attacks. (See Telepathy for ways to avoid psionic attacks.)
+          - en:
+              name: Bio-armor
+              description: |
+                This skill psionically reinforces a character’s skin, helping to protect from
+                damage. This "body armor” provides protection against physical and energy
+                damage, but does not protect against psionic attacks. (See Telepathy for ways to
+                avoid psionic attacks.)
 
-              The protection afforded by bio-armor is based on the user's skill check:
-              - **Ordinary:** 1 point of armor.
-              - **Good:** 2 points of armor.
-              - **Amazing:** 3 points of armor.
+                The protection afforded by bio-armor is based on the user's skill check:
+                - **Ordinary:** 1 point of armor.
+                - **Good:** 2 points of armor.
+                - **Amazing:** 3 points of armor.
 
-              **Rank Benefits:**
-              - **At rank 3 [Increased Effect]:** the protection afforded by bio-armor increases by 1 point (add 1 to whatever is rolled on the table above).
-              - **At rank 6 [Increased Effect]:** this value further increases by 1 point (a total of +2).
-              - **At rank 9 [Increased Toughness]:** the armor is treated as being of Good toughness.
-              - **At rank 12 [Increased Effect]:** it increases by another point (a total of +3).
-        - es:
-            name: Bioarmadura
-            description: |
-              Esta habilidad refuerza psiónicamente la piel de un personaje, ayudando a protegerlo del daño. Esta "armadura corporal" proporciona protección contra daños físicos y de energía, pero no protege contra ataques psiónicos. (Ver Telepatía para formas de evitar ataques psiónicos).
+                **Rank Benefits:**
+                - **At rank 3 [Increased Effect]:** the protection afforded by bio-armor increases by 1 point (add 1 to whatever is rolled on the table above).
+                - **At rank 6 [Increased Effect]:** this value further increases by 1 point (a total of +2).
+                - **At rank 9 [Increased Toughness]:** the armor is treated as being of Good toughness.
+                - **At rank 12 [Increased Effect]:** it increases by another point (a total of +3).
+          - es:
+              name: Bioarmadura
+              description: |
+                Esta habilidad refuerza psiónicamente la piel de un personaje, ayudando a
+                protegerlo del daño. Esta "armadura corporal" proporciona protección contra
+                daños físicos y de energía, pero no protege contra ataques psiónicos. (Ver
+                Telepatía para formas de evitar ataques psiónicos).
 
-              La protección proporcionada por la bioarmadura se basa en la tirada de habilidad del usuario:
-              - **Ordinario:** 1 punto de armadura.
-              - **Bueno:** 2 puntos de armadura.
-              - **Asombroso:** 3 puntos de armadura.
+                La protección proporcionada por la bioarmadura se basa en la tirada de habilidad del usuario:
+                - **Ordinario:** 1 punto de armadura.
+                - **Bueno:** 2 puntos de armadura.
+                - **Asombroso:** 3 puntos de armadura.
 
-              **Beneficios de Rango:**
-              - **Al rango 3 [Efecto Incrementado]:** la protección proporcionada por la bioarmadura aumenta en 1 punto (añade 1 a lo que se obtenga en la tabla anterior).
-              - **Al rango 6 [Efecto Incrementado]:** este valor aumenta en otro punto (un total de +2).
-              - **Al rango 9 [Dureza Incrementada]:** la armadura se considera de dureza Buena.
-              - **Al rango 12 [Efecto Incrementado]:** aumenta en otro punto adicional (un total de +3).
+                **Beneficios de Rango:**
+                - **Al rango 3 [Efecto Incrementado]:** la protección proporcionada por la bioarmadura aumenta en 1 punto (añade 1 a lo que se obtenga en la tabla anterior).
+                - **Al rango 6 [Efecto Incrementado]:** este valor aumenta en otro punto (un total de +2).
+                - **Al rango 9 [Dureza Incrementada]:** la armadura se considera de dureza Buena.
+                - **Al rango 12 [Efecto Incrementado]:** aumenta en otro punto adicional (un total de +3).
       bioweapon:
         attribute: CON
         cost: 3
@@ -57,34 +70,55 @@ items:
         trained_only: false
         extended_duration: true
         localized:
-        - en:
-            name: Bioweapon
-            description: |
-              A psion with this skill can use psionic energy to alter the shape of his or her hands or feet, or parts of his or her hands or feet, into some sort of weapon. The weapon can be any shape the character wishes, within the limits of his or her own mass, although most characters find a long, sharp blade or a heavy, blunt club the most effective shapes.
+          - en:
+              name: Bioweapon
+              description: |
+                A psion with this skill can use psionic energy to alter the shape of his or her
+                hands or feet, or parts of his or her hands or feet, into some sort of weapon.
+                The weapon can be any shape the character wishes, within the limits of his or
+                her own mass, although most characters find a long, sharp blade or a heavy,
+                blunt club the most effective shapes.
 
-              While the ability is active, the character can use the bioweapon as a melee weapon. The success achieved on the skill check indicates a bonus to the character's melee weapon skill checks for the duration of the skill: Ordinary, no bonus; Good, -1 step bonus; Amazing, -2 step bonus. 
+                While the ability is active, the character can use the bioweapon as a melee
+                weapon. The success achieved on the skill check indicates a bonus to the
+                character's melee weapon skill checks for the duration of the skill: Ordinary,
+                no bonus; Good, -1 step bonus; Amazing, -2 step bonus.
 
-              The damage delivered by the bioweapon depends on the shape of the weapon. A blunt, clublike weapon delivers d8s/d8+2s/d12+2s damage (using the Melee Weapons—bludgeon specialty skill). A blade-like weapon delivers d4w/d6+2w/d6m damage (using the Melee Weapons—blade specialty skill).
+                The damage delivered by the bioweapon depends on the shape of the weapon. A
+                blunt, clublike weapon delivers d8s/d8+2s/d12+2s damage (using the Melee
+                Weapons—bludgeon specialty skill). A blade-like weapon delivers d4w/d6+2w/d6m
+                damage (using the Melee Weapons—blade specialty skill).
 
-              **Rank Benefits:**
-              - **At rank 3 [Increased Damage]:** the damage delivered by the bioweapon increases by 1 point (add 1 point to whatever damage is rolled).
-              - **At rank 6 [Increased Damage]:** the damage increases by another point (a total of +2).
-              - **At rank 9 [Increased Damage]:** the damage increases by another point (a total of +3).
-              - **At rank 12 [Improved Damage]:** any Ordinary success with the weapon is treated as a Good success for purposes of determining the damage delivered.
-        - es:
-            name: Bioarma
-            description: |
-              Un psiónico con esta habilidad puede usar energía psiónica para alterar la forma de sus manos o pies, o partes de ellos, en algún tipo de arma. El arma puede tener cualquier forma que el personaje desee, dentro de los límites de su propia masa, aunque la mayoría de los personajes encuentran que una hoja larga y afilada o una porra pesada y contundente son las formas más efectivas.
+                **Rank Benefits:**
+                - **At rank 3 [Increased Damage]:** the damage delivered by the bioweapon increases by 1 point (add 1 point to whatever damage is rolled).
+                - **At rank 6 [Increased Damage]:** the damage increases by another point (a total of +2).
+                - **At rank 9 [Increased Damage]:** the damage increases by another point (a total of +3).
+                - **At rank 12 [Improved Damage]:** any Ordinary success with the weapon is treated as a Good success for purposes of determining the damage delivered.
+          - es:
+              name: Bioarma
+              description: |
+                Un psiónico con esta habilidad puede usar energía psiónica para alterar la forma
+                de sus manos o pies, o partes de ellos, en algún tipo de arma. El arma puede
+                tener cualquier forma que el personaje desee, dentro de los límites de su propia
+                masa, aunque la mayoría de los personajes encuentran que una hoja larga y
+                afilada o una porra pesada y contundente son las formas más efectivas.
 
-              Mientras la habilidad está activa, el personaje puede usar el bioarma como un arma de melé. El éxito logrado en la tirada de habilidad indica un bonificador a las tiradas de habilidad de armas de melé del personaje mientras dure la habilidad: Ordinario, sin bonificador; Bueno, bonificador de -1 paso; Asombroso, bonificador de -2 pasos.
+                Mientras la habilidad está activa, el personaje puede usar el bioarma como un
+                arma de melé. El éxito logrado en la tirada de habilidad indica un bonificador a
+                las tiradas de habilidad de armas de melé del personaje mientras dure la
+                habilidad: Ordinario, sin bonificador; Bueno, bonificador de -1 paso; Asombroso,
+                bonificador de -2 pasos.
 
-              El daño infligido por el bioarma depende de la forma del arma. Un arma contundente tipo porra inflige d8s/d8+2s/d12+2s de daño (usando la habilidad de Armas de Melé—contusión). Un arma tipo hoja inflige d4w/d6+2w/d6m de daño (usando la habilidad de Armas de Melé—filo).
+                El daño infligido por el bioarma depende de la forma del arma. Un arma
+                contundente tipo porra inflige d8s/d8+2s/d12+2s de daño (usando la habilidad de
+                Armas de Melé—contusión). Un arma tipo hoja inflige d4w/d6+2w/d6m de daño
+                (usando la habilidad de Armas de Melé—filo).
 
-              **Beneficios de Rango:**
-              - **Al rango 3 [Daño Incrementado]:** el daño infligido por el bioarma aumenta en 1 punto (añade 1 punto a cualquier daño que se obtenga).
-              - **Al rango 6 [Daño Incrementado]:** el daño aumenta en otro punto (un total de +2).
-              - **Al rango 9 [Daño Incrementado]:** el daño aumenta en otro punto (un total de +3).
-              - **Al rango 12 [Daño Mejorado]:** cualquier éxito Ordinario con el arma se trata como un éxito Bueno a efectos de determinar el daño infligido.
+                **Beneficios de Rango:**
+                - **Al rango 3 [Daño Incrementado]:** el daño infligido por el bioarma aumenta en 1 punto (añade 1 punto a cualquier daño que se obtenga).
+                - **Al rango 6 [Daño Incrementado]:** el daño aumenta en otro punto (un total de +2).
+                - **Al rango 9 [Daño Incrementado]:** el daño aumenta en otro punto (un total de +3).
+                - **Al rango 12 [Daño Mejorado]:** cualquier éxito Ordinario con el arma se trata como un éxito Bueno a efectos de determinar el daño infligido.
       control-metabolism:
         attribute: CON
         cost: 2
@@ -92,30 +126,63 @@ items:
         trained_only: false
         extended_duration: true
         localized:
-        - en:
-            name: Control Metabolism
-            description: |
-              This skill allows a psion to assume control over his or her own metabolic processes. The character can use this to survive in a hostile environment or to enhance his or her physical performance.
+          - en:
+              name: Control Metabolism
+              description: |-
+                This skill allows a psion to assume control over his or her own metabolic
+                processes. The character can use this to survive in a hostile environment or to
+                enhance his or her physical performance.
 
-              A psion using this skill must decide which of the following three types of effects he or she is attempting before making the skill check:
+                A psion using this skill must decide which of the following three types of
+                effects he or she is attempting before making the skill check:
 
-              **Survival:** The character can survive in an environment that would normally be fatal (extreme heat, cold, or the lack of a breathable atmosphere). A successful check indicates that the psion can simulate the protection of a vacuum mask (Ordinary success), a vacuum suit (Good success), or a soft e-suit (Amazing success). To remain in this state, the character must expend 1 psionic energy point per hour.
+                **Survival:** The character can survive in an environment that would normally be
+                fatal (extreme heat, cold, or the lack of a breathable atmosphere). A successful
+                check indicates that the psion can simulate the protection of a vacuum mask
+                (Ordinary success), a vacuum suit (Good success), or a soft e-suit (Amazing
+                success). To remain in this state, the character must expend 1 psionic energy
+                point per hour.
 
-              **Adrenaline Boost:** The psion can trigger a release of adrenaline, giving a bonus to his or her action check score. An Ordinary success gives a +1 bonus; a Good success, a +2 bonus; and an Amazing success, a +3 bonus. This ability lasts for the round in which it is used and the following round; it can be extended by spending 1 psionic energy point per extra round.
+                **Adrenaline Boost:** The psion can trigger a release of adrenaline, giving a
+                bonus to his or her action check score. An Ordinary success gives a +1 bonus; a
+                Good success, a +2 bonus; and an Amazing success, a +3 bonus. This ability lasts
+                for the round in which it is used and the following round; it can be extended by
+                spending 1 psionic energy point per extra round.
 
-              **Endorphin Release:** The psion can trigger a release of endorphins to help resist the effects of pain. This provides a step bonus to his or her Stamina specialty skill checks: Ordinary, -1 step; Good, -2 steps; Amazing, -3 steps. This effect lasts for one hour and can be extended by spending 1 psionic energy point for each extra hour.
-        - es:
-            name: Control del Metabolismo
-            description: |
-              Esta habilidad permite a un psiónico asumir el control de sus propios procesos metabólicos. El personaje puede usar esto para sobrevivir en un entorno hostil o para mejorar su rendimiento físico.
+                **Endorphin Release:** The psion can trigger a release of endorphins to help
+                resist the effects of pain. This provides a step bonus to his or her Stamina
+                specialty skill checks: Ordinary, -1 step; Good, -2 steps; Amazing, -3 steps.
+                This effect lasts for one hour and can be extended by spending 1 psionic energy
+                point for each extra hour.
+          - es:
+              name: Control del Metabolismo
+              description: |-
+                Esta habilidad permite a un psiónico asumir el control de sus propios procesos
+                metabólicos. El personaje puede usar esto para sobrevivir en un entorno hostil o
+                para mejorar su rendimiento físico.
 
-              Un psiónico que use esta habilidad debe decidir cuál de los siguientes tres tipos de efectos está intentando antes de realizar la tirada de habilidad:
+                Un psiónico que use esta habilidad debe decidir cuál de los siguientes tres
+                tipos de efectos está intentando antes de realizar la tirada de habilidad:
 
-              **Supervivencia:** El personaje puede sobrevivir en un entorno que normalmente sería fatal (calor o frío extremos, o la falta de una atmósfera respirable). Una tirada con éxito indica que el psiónico puede simular la protección de una máscara de vacío (éxito Ordinario), un traje de vacío (éxito Bueno) o un e-suit ligero (éxito Asombroso). Para permanecer en este estado, el personaje debe gastar 1 punto de energía psiónica por hora.
+                **Supervivencia:** El personaje puede sobrevivir en un entorno que normalmente
+                sería fatal (calor o frío extremos, o la falta de una atmósfera respirable). Una
+                tirada con éxito indica que el psiónico puede simular la protección de una
+                máscara de vacío (éxito Ordinario), un traje de vacío (éxito Bueno) o un e-suit
+                ligero (éxito Asombroso). Para permanecer en este estado, el personaje debe
+                gastar 1 punto de energía psiónica por hora.
 
-              **Impulso de Adrenalina:** El psiónico puede desencadenar una liberación de adrenalina, otorgando una bonificación a su puntuación de tirada de acción. Un éxito Ordinario otorga un bonificador de +1; un éxito Bueno, un bonificador de +2; y un éxito Asombroso, un bonificador de +3. Esta habilidad dura el asalto en el que se usa y el siguiente; puede extenderse gastando 1 punto de energía psiónica por cada asalto extra.
+                **Impulso de Adrenalina:** El psiónico puede desencadenar una liberación de
+                adrenalina, otorgando una bonificación a su puntuación de tirada de acción. Un
+                éxito Ordinario otorga un bonificador de +1; un éxito Bueno, un bonificador de
+                +2; y un éxito Asombroso, un bonificador de +3. Esta habilidad dura el asalto en
+                el que se usa y el siguiente; puede extenderse gastando 1 punto de energía
+                psiónica por cada asalto extra.
 
-              **Liberación de Endorfinas:** El psiónico puede desencadenar una liberación de endorfinas para ayudar a resistir los efectos del dolor. Esto proporciona una bonificación de pasos a sus tiradas de la habilidad de Resistencia: Ordinario, -1 paso; Bueno, -2 pasos; Asombroso, -3 pasos. Este efecto dura una hora y puede extenderse gastando 1 punto de energía psiónica por cada hora extra.
+                **Liberación de Endorfinas:** El psiónico puede desencadenar una liberación de
+                endorfinas para ayudar a resistir los efectos del dolor. Esto proporciona una
+                bonificación de pasos a sus tiradas de la habilidad de Resistencia: Ordinario,
+                -1 paso; Bueno, -2 pasos; Asombroso, -3 pasos. Este efecto dura una hora y puede
+                extenderse gastando 1 punto de energía psiónica por cada hora extra.
       heal:
         attribute: CON
         cost: 4
@@ -123,30 +190,47 @@ items:
         trained_only: true
         extended_duration: false
         localized:
-        - en:
-            name: Heal
-            description: |
-              This specialty skill allows a character to heal wounds or to help the character’s body fight off a disease. To use the skill, the character concentrates on the wounds to be healed. The results of the skill check are immediate, although the body’s reaction to the healing process takes about one hour. During that hour, the character cannot be healed again using the heal specialty skill.
+          - en:
+              name: Heal
+              description: |
+                This specialty skill allows a character to heal wounds or to help the
+                character’s body fight off a disease. To use the skill, the character
+                concentrates on the wounds to be healed. The results of the skill check are
+                immediate, although the body’s reaction to the healing process takes about one
+                hour. During that hour, the character cannot be healed again using the heal
+                specialty skill.
 
-              For each success achieved, the character can heal wound points or reduce the grade of a disease: Ordinary success, 1 wound point or reduce the grade of a disease by one; Good success, 2 wound points or reduce the grade of a disease by two; Amazing success, 3 wound points or reduce the grade of a disease by three.
+                For each success achieved, the character can heal wound points or reduce the
+                grade of a disease: Ordinary success, 1 wound point or reduce the grade of a
+                disease by one; Good success, 2 wound points or reduce the grade of a disease by
+                two; Amazing success, 3 wound points or reduce the grade of a disease by three.
 
-              **Rank Benefits:**
-              - **At rank 4 [Treat Poison]:** the psion can use heal to help a body counteract the effects of a poison. The target of the skill check receives a bonus to his or her Constitution feat check to resist the poison: Ordinary, -2 steps; Good, -3 steps; Amazing, -4 steps.
-              - **At rank 6 [Heal Mortal]:** the psion can heal mortal damage. On an Ordinary success, 2 wound points are healed; on a Good success, 3 wound points and 1 mortal point are healed; on an Amazing success, 4 wound points and 2 mortal points are healed.
-              - **At rank 8 [Laying On Hands]:** the psion can use the heal skill on other characters through physical contact.
-              - **At rank 12 [Master Healer]:** the amount of damage that the psion can heal increases: Ordinary, 3 wound points and 1 mortal point; Good, 4 wound points and 2 mortal points; Amazing, 6 wound points and 3 mortal points.
-        - es:
-            name: Sanar
-            description: |
-              Esta habilidad de especialidad permite a un personaje sanar heridas o ayudar al cuerpo del personaje a combatir una enfermedad. Para usar la habilidad, el personaje se concentra en las heridas que desea sanar. Los resultados de la tirada de habilidad son inmediatos, aunque la reacción del cuerpo al proceso de curación tarda aproximadamente una hora. Durante esa hora, el personaje no puede ser sanado de nuevo usando la habilidad de especialidad de sanar.
+                **Rank Benefits:**
+                - **At rank 4 [Treat Poison]:** the psion can use heal to help a body counteract the effects of a poison. The target of the skill check receives a bonus to his or her Constitution feat check to resist the poison: Ordinary, -2 steps; Good, -3 steps; Amazing, -4 steps.
+                - **At rank 6 [Heal Mortal]:** the psion can heal mortal damage. On an Ordinary success, 2 wound points are healed; on a Good success, 3 wound points and 1 mortal point are healed; on an Amazing success, 4 wound points and 2 mortal points are healed.
+                - **At rank 8 [Laying On Hands]:** the psion can use the heal skill on other characters through physical contact.
+                - **At rank 12 [Master Healer]:** the amount of damage that the psion can heal increases: Ordinary, 3 wound points and 1 mortal point; Good, 4 wound points and 2 mortal points; Amazing, 6 wound points and 3 mortal points.
+          - es:
+              name: Sanar
+              description: |
+                Esta habilidad de especialidad permite a un personaje sanar heridas o ayudar al
+                cuerpo del personaje a combatir una enfermedad. Para usar la habilidad, el
+                personaje se concentra en las heridas que desea sanar. Los resultados de la
+                tirada de habilidad son inmediatos, aunque la reacción del cuerpo al proceso de
+                curación tarda aproximadamente una hora. Durante esa hora, el personaje no puede
+                ser sanado de nuevo usando la habilidad de especialidad de sanar.
 
-              Por cada éxito logrado, el personaje puede sanar puntos de herida o reducir el grado de una enfermedad: éxito Ordinario, 1 punto de herida o reducir el grado de una enfermedad en uno; éxito Bueno, 2 puntos de herida o reducir el grado de una enfermedad en dos; éxito Asombroso, 3 puntos de herida o reducir el grado de una enfermedad en tres.
+                Por cada éxito logrado, el personaje puede sanar puntos de herida o reducir el
+                grado de una enfermedad: éxito Ordinario, 1 punto de herida o reducir el grado
+                de una enfermedad en uno; éxito Bueno, 2 puntos de herida o reducir el grado de
+                una enfermedad en dos; éxito Asombroso, 3 puntos de herida o reducir el grado de
+                una enfermedad en tres.
 
-              **Beneficios de Rango:**
-              - **Al rango 4 [Tratar Veneno]:** el psiónico puede usar sanar para ayudar a un cuerpo a contrarrestar los efectos de un veneno. El objetivo de la tirada de habilidad recibe un bonificador a su tirada de proeza de Constitución para resistir el veneno: Ordinario, -2 pasos; Bueno, -3 pasos; Asombroso, -4 pasos.
-              - **Al rango 6 [Sanar Mortal]:** el psiónico puede sanar daño mortal. Con un éxito Ordinario, se sanan 2 puntos de herida; con un éxito Bueno, se sanan 3 puntos de herida y 1 punto mortal; con un éxito Asombroso, se sanan 4 puntos de herida y 2 puntos mortales.
-              - **Al rango 8 [Imposición de Manos]:** el psiónico puede usar la habilidad de sanar en otros personajes a través del contacto físico.
-              - **Al rango 12 [Maestro Sanador]:** la cantidad de daño que el psiónico puede sanar aumenta: Ordinario, 3 puntos de herida y 1 punto mortal; Bueno, 4 puntos de herida y 2 puntos mortales; Asombroso, 6 puntos de herida y 3 puntos mortales.
+                **Beneficios de Rango:**
+                - **Al rango 4 [Tratar Veneno]:** el psiónico puede usar sanar para ayudar a un cuerpo a contrarrestar los efectos de un veneno. El objetivo de la tirada de habilidad recibe un bonificador a su tirada de proeza de Constitución para resistir el veneno: Ordinario, -2 pasos; Bueno, -3 pasos; Asombroso, -4 pasos.
+                - **Al rango 6 [Sanar Mortal]:** el psiónico puede sanar daño mortal. Con un éxito Ordinario, se sanan 2 puntos de herida; con un éxito Bueno, se sanan 3 puntos de herida y 1 punto mortal; con un éxito Asombroso, se sanan 4 puntos de herida y 2 puntos mortales.
+                - **Al rango 8 [Imposición de Manos]:** el psiónico puede usar la habilidad de sanar en otros personajes a través del contacto físico.
+                - **Al rango 12 [Maestro Sanador]:** la cantidad de daño que el psiónico puede sanar aumenta: Ordinario, 3 puntos de herida y 1 punto mortal; Bueno, 4 puntos de herida y 2 puntos mortales; Asombroso, 6 puntos de herida y 3 puntos mortales.
       intangibility:
         attribute: CON
         cost: 4
@@ -154,30 +238,45 @@ items:
         trained_only: true
         extended_duration: false
         localized:
-        - en:
-            name: Intangibility
-            description: |
-              By mentally reordering the molecules of his or her own body, a psion can become immaterial. He or she can then pass through solid objects (except for other living beings). The character’s clothes and up to 1 kilogram per rank of gear also become intangible.
+          - en:
+              name: Intangibility
+              description: |
+                By mentally reordering the molecules of his or her own body, a psion can become
+                immaterial. He or she can then pass through solid objects (except for other
+                living beings). The character’s clothes and up to 1 kilogram per rank of gear
+                also become intangible.
 
-              The ability lasts for one phase, although the duration can be extended by spending 1 psionic energy point for each additional phase. Vertical movement is not possible while intangible; the psion merely sinks through any solid objects at a rate of 3 meters per phase. Horizontal movement through solid objects is possible at a rate equal to an "easy swim."
+                The ability lasts for one phase, although the duration can be extended by
+                spending 1 psionic energy point for each additional phase. Vertical movement is
+                not possible while intangible; the psion merely sinks through any solid objects
+                at a rate of 3 meters per phase. Horizontal movement through solid objects is
+                possible at a rate equal to an "easy swim."
 
-              **Rank Benefits:**
-              - **At rank 4 [Movement Bonus]:** the psion can move through solid objects at his or her walk rate.
-              - **At rank 6 [Dodge]:** a character can use the intangibility skill to dodge an attack. This is treated as a reaction parry; the psion must have a phase available and must decide to use the skill when the attack is announced.
-              - **At rank 8 [Movement Bonus]:** the psion can move through solid objects at his or her run rate.
-              - **At rank 12 [Selective Intangibility]:** the psion can render only a portion of his or her body intangible. This allows the character to reach through a solid object to manipulate something on the other side. Such an attempt carries a +2 step penalty to the intangibility skill check, and a +4 step penalty to any skill used to manipulate the object on the other side.
-        - es:
-            name: Intangibilidad
-            description: |
-              Al reordenar mentalmente las moléculas de su propio cuerpo, un psiónico puede volverse inmaterial. Entonces puede atravesar objetos sólidos (excepto otros seres vivos). La ropa del personaje y hasta 1 kilogramo por rango de equipo también se vuelven intangibles.
+                **Rank Benefits:**
+                - **At rank 4 [Movement Bonus]:** the psion can move through solid objects at his or her walk rate.
+                - **At rank 6 [Dodge]:** a character can use the intangibility skill to dodge an attack. This is treated as a reaction parry; the psion must have a phase available and must decide to use the skill when the attack is announced.
+                - **At rank 8 [Movement Bonus]:** the psion can move through solid objects at his or her run rate.
+                - **At rank 12 [Selective Intangibility]:** the psion can render only a portion of his or her body intangible. This allows the character to reach through a solid object to manipulate something on the other side. Such an attempt carries a +2 step penalty to the intangibility skill check, and a +4 step penalty to any skill used to manipulate the object on the other side.
+          - es:
+              name: Intangibilidad
+              description: |
+                Al reordenar mentalmente las moléculas de su propio cuerpo, un psiónico puede
+                volverse inmaterial. Entonces puede atravesar objetos sólidos (excepto otros
+                seres vivos). La ropa del personaje y hasta 1 kilogramo por rango de equipo
+                también se vuelven intangibles.
 
-              La habilidad dura una fase, aunque la duración puede extenderse gastando 1 punto de energía psiónica por cada fase adicional. El movimiento vertical no es posible mientras se es intangible; el psiónico simplemente se hunde a través de cualquier objeto sólido a una velocidad de 3 metros por fase. El movimiento horizontal a través de objetos sólidos es posible a una velocidad igual a un "nado fácil".
+                La habilidad dura una fase, aunque la duración puede extenderse gastando 1 punto
+                de energía psiónica por cada fase adicional. El movimiento vertical no es
+                posible mientras se es intangible; el psiónico simplemente se hunde a través de
+                cualquier objeto sólido a una velocidad de 3 metros por fase. El movimiento
+                horizontal a través de objetos sólidos es posible a una velocidad igual a un
+                "nado fácil".
 
-              **Beneficios de Rango:**
-              - **Al rango 4 [Bonificador de Movimiento]:** el psiónico puede moverse a través de objetos sólidos a su ritmo de caminata.
-              - **Al rango 6 [Esquiva]:** un personaje puede usar la habilidad de intangibilidad para esquivar un ataque. Esto se trata como una parada de reacción; el psiónico debe tener una fase disponible y debe decidir usar la habilidad cuando se anuncia el ataque.
-              - **Al rango 8 [Bonificador de Movimiento]:** el psiónico puede moverse a través de objetos sólidos a su ritmo de carrera.
-              - **Al rango 12 [Intangibilidad Selectiva]:** el psiónico puede volver intangible solo una parte de su cuerpo. Esto permite al personaje atravesar un objeto sólido para manipular algo al otro lado. Tal intento conlleva un penalizador de +2 pasos a la tirada de habilidad de intangibilidad, y un penalizador de +4 pasos a cualquier habilidad usada para manipular el objeto al otro lado.
+                **Beneficios de Rango:**
+                - **Al rango 4 [Bonificador de Movimiento]:** el psiónico puede moverse a través de objetos sólidos a su ritmo de caminata.
+                - **Al rango 6 [Esquiva]:** un personaje puede usar la habilidad de intangibilidad para esquivar un ataque. Esto se trata como una parada de reacción; el psiónico debe tener una fase disponible y debe decidir usar la habilidad cuando se anuncia el ataque.
+                - **Al rango 8 [Bonificador de Movimiento]:** el psiónico puede moverse a través de objetos sólidos a su ritmo de carrera.
+                - **Al rango 12 [Intangibilidad Selectiva]:** el psiónico puede volver intangible solo una parte de su cuerpo. Esto permite al personaje atravesar un objeto sólido para manipular algo al otro lado. Tal intento conlleva un penalizador de +2 pasos a la tirada de habilidad de intangibilidad, y un penalizador de +4 pasos a cualquier habilidad usada para manipular el objeto al otro lado.
       morph:
         attribute: CON
         cost: 4
@@ -185,32 +284,47 @@ items:
         trained_only: true
         extended_duration: false
         localized:
-        - en:
-            name: Morph
-            description: |
-              By using this skill, a psion can alter his or her physical features. This ability is most often used to create a disguise, although it can also be used to allow a character to reach or squeeze into areas that are normally inaccessible. The character must spend one round (4 phases) concentrating and making the skill check to activate the ability. 
+          - en:
+              name: Morph
+              description: |
+                By using this skill, a psion can alter his or her physical features. This
+                ability is most often used to create a disguise, although it can also be used to
+                allow a character to reach or squeeze into areas that are normally inaccessible.
+                The character must spend one round (4 phases) concentrating and making the skill
+                check to activate the ability.
 
-              Morph does not allow a character to change his or her mass, only to rearrange it. The duration of the transformation depends on the result of the skill check: Ordinary success, 1 round; Good success, 2 rounds; Amazing success, 3 rounds. The duration can be extended by spending 1 psionic energy point per extra round.
+                Morph does not allow a character to change his or her mass, only to rearrange
+                it. The duration of the transformation depends on the result of the skill check:
+                Ordinary success, 1 round; Good success, 2 rounds; Amazing success, 3 rounds.
+                The duration can be extended by spending 1 psionic energy point per extra round.
 
-              **Rank Benefits:** 
-              A character can choose to gain one of the following benefits at the listed rank:
-              - **Rank 1 or 3:** Elongate fingers (provides a +0.5 meter reach), Elongate arms (provides a +1 meter reach), or Elongate legs (provides +1 meter height).
-              - **Rank 5 or 7:** Disguise (anyone trying to recognize the psion suffers a +2 step penalty to Awareness—perception checks), Elongate both arms and legs simultaneously, or Skeleton alterations (allows the character to pass through an opening as small as 0.5 meters in diameter).
-              - **Rank 10 or 12:** Improved disguise (anyone trying to recognize the psion suffers a +4 step penalty to Awareness—perception checks, or +2 if the examiner is using psionics), or Lessen damage (the psion can rearrange his or her internal organs to avoid serious injury; reduce any damage delivered to the psion: Ordinary success, d4; Good success, d4+2; Amazing success, d6+2).
-              - **At rank 12 [Morph Control]:** a psion is able to have two forms of morphing active at the same time.
-        - es:
-            name: Metamorfosis
-            description: |
-              Mediante el uso de esta habilidad, un psiónico puede alterar sus rasgos físicos. Esta capacidad se usa con mayor frecuencia para crear un disfraz, aunque también puede usarse para permitir que un personaje alcance o se escurra en áreas que normalmente son inaccesibles. El personaje debe pasar un asalto (4 fases) concentrándose y realizando la tirada de habilidad para activar la capacidad.
+                **Rank Benefits:** 
+                A character can choose to gain one of the following benefits at the listed rank:
+                - **Rank 1 or 3:** Elongate fingers (provides a +0.5 meter reach), Elongate arms (provides a +1 meter reach), or Elongate legs (provides +1 meter height).
+                - **Rank 5 or 7:** Disguise (anyone trying to recognize the psion suffers a +2 step penalty to Awareness—perception checks), Elongate both arms and legs simultaneously, or Skeleton alterations (allows the character to pass through an opening as small as 0.5 meters in diameter).
+                - **Rank 10 or 12:** Improved disguise (anyone trying to recognize the psion suffers a +4 step penalty to Awareness—perception checks, or +2 if the examiner is using psionics), or Lessen damage (the psion can rearrange his or her internal organs to avoid serious injury; reduce any damage delivered to the psion: Ordinary success, d4; Good success, d4+2; Amazing success, d6+2).
+                - **At rank 12 [Morph Control]:** a psion is able to have two forms of morphing active at the same time.
+          - es:
+              name: Metamorfosis
+              description: |
+                Mediante el uso de esta habilidad, un psiónico puede alterar sus rasgos físicos.
+                Esta capacidad se usa con mayor frecuencia para crear un disfraz, aunque también
+                puede usarse para permitir que un personaje alcance o se escurra en áreas que
+                normalmente son inaccesibles. El personaje debe pasar un asalto (4 fases)
+                concentrándose y realizando la tirada de habilidad para activar la capacidad.
 
-              La metamorfosis no permite que un personaje cambie su masa, solo que la reorganice. La duración de la transformación depende del resultado de la tirada de habilidad: éxito Ordinario, 1 asalto; éxito Bueno, 2 asaltos; éxito Asombroso, 3 asaltos. La duración puede extenderse gastando 1 punto de energía psiónica por cada asalto extra.
+                La metamorfosis no permite que un personaje cambie su masa, solo que la
+                reorganice. La duración de la transformación depende del resultado de la tirada
+                de habilidad: éxito Ordinario, 1 asalto; éxito Bueno, 2 asaltos; éxito
+                Asombroso, 3 asaltos. La duración puede extenderse gastando 1 punto de energía
+                psiónica por cada asalto extra.
 
-              **Beneficios de Rango:**
-              Un personaje puede elegir obtener uno de los siguientes beneficios en el rango indicado:
-              - **Rango 1 o 3:** Elongar dedos (proporciona un alcance de +0,5 metros), Elongar brazos (proporciona un alcance de +1 metro) o Elongar piernas (proporciona +1 metro de altura).
-              - **Rango 5 o 7:** Disfraz (cualquiera que intente reconocer al psiónico sufre un penalizador de +2 pasos en las tiradas de Percepción), Elongar brazos y piernas simultáneamente, o alteraciones del esqueleto (permite al personaje pasar por una abertura de tan solo 0,5 metros de diámetro).
-              - **Rango 10 o 12:** Disfraz mejorado (cualquiera que intente reconocer al psiónico sufre un penalizador de +4 pasos en las tiradas de Percepción, o +2 si el examinador usa psiónica), o reducir daño (el psiónico puede reorganizar sus órganos internos para evitar lesiones graves; reduce cualquier daño infligido al psiónico: éxito Ordinario, d4; éxito Bueno, d4+2; éxito Asombroso, d6+2).
-              - **Al rango 12 [Control de Forma]:** un psiónico es capaz de tener dos formas de metamorfosis activas al mismo tiempo.
+                **Beneficios de Rango:**
+                Un personaje puede elegir obtener uno de los siguientes beneficios en el rango indicado:
+                - **Rango 1 o 3:** Elongar dedos (proporciona un alcance de +0,5 metros), Elongar brazos (proporciona un alcance de +1 metro) o Elongar piernas (proporciona +1 metro de altura).
+                - **Rango 5 o 7:** Disfraz (cualquiera que intente reconocer al psiónico sufre un penalizador de +2 pasos en las tiradas de Percepción), Elongar brazos y piernas simultáneamente, o alteraciones del esqueleto (permite al personaje pasar por una abertura de tan solo 0,5 metros de diámetro).
+                - **Rango 10 o 12:** Disfraz mejorado (cualquiera que intente reconocer al psiónico sufre un penalizador de +4 pasos en las tiradas de Percepción, o +2 si el examinador usa psiónica), o reducir daño (el psiónico puede reorganizar sus órganos internos para evitar lesiones graves; reduce cualquier daño infligido al psiónico: éxito Ordinario, d4; éxito Bueno, d4+2; éxito Asombroso, d6+2).
+                - **Al rango 12 [Control de Forma]:** un psiónico es capaz de tener dos formas de metamorfosis activas al mismo tiempo.
       rejuvenate:
         attribute: CON
         cost: 3
@@ -218,28 +332,44 @@ items:
         trained_only: false
         extended_duration: false
         localized:
-        - en:
-            name: Rejuvenate
-            description: |
-              To use this skill, a psion concentrates on his or her own body to help it offset the effects of fatigue or stun damage (it provides no help in recovering lost psionic energy). The results of the check are immediate, although the body’s reaction to the rejuvenation takes about one hour. During that hour, the psion cannot use the rejuvenate skill again.
+          - en:
+              name: Rejuvenate
+              description: |
+                To use this skill, a psion concentrates on his or her own body to help it offset
+                the effects of fatigue or stun damage (it provides no help in recovering lost
+                psionic energy). The results of the check are immediate, although the body’s
+                reaction to the rejuvenation takes about one hour. During that hour, the psion
+                cannot use the rejuvenate skill again.
 
-              The success of the skill check determines how many "rejuvenation points" the character receives: Ordinary success, 2 points; Good success, 4 points; Amazing success, 6 points. It costs 2 rejuvenation points for every point of fatigue damage to be recovered, and 1 rejuvenation point for every point of stun damage.
+                The success of the skill check determines how many "rejuvenation points" the
+                character receives: Ordinary success, 2 points; Good success, 4 points; Amazing
+                success, 6 points. It costs 2 rejuvenation points for every point of fatigue
+                damage to be recovered, and 1 rejuvenation point for every point of stun damage.
 
-              **Rank Benefits:**
-              - **At rank 4 [Improved Effect]:** the rejuvenation points received increase: Ordinary, 4 points; Good, 6 points; Amazing, 8 points.
-              - **At rank 8 [Laying On Hands]:** the psion can use the rejuvenate skill on other characters through physical contact.
-              - **At rank 12 [Two Recipients]:** the psion can affect two individuals simultaneously.
-        - es:
-            name: Rejuvenecer
-            description: |
-              Para usar esta habilidad, un psiónico se concentra en su propio cuerpo para ayudarlo a compensar los efectos del daño por fatiga o aturdimiento (no proporciona ayuda para recuperar la energía psiónica perdida). Los resultados de la tirada son inmediatos, aunque la reacción del cuerpo al rejuvenecimiento tarda aproximadamente una hora. Durante esa hora, el psiónico no puede volver a usar la habilidad de rejuvenecer.
+                **Rank Benefits:**
+                - **At rank 4 [Improved Effect]:** the rejuvenation points received increase: Ordinary, 4 points; Good, 6 points; Amazing, 8 points.
+                - **At rank 8 [Laying On Hands]:** the psion can use the rejuvenate skill on other characters through physical contact.
+                - **At rank 12 [Two Recipients]:** the psion can affect two individuals simultaneously.
+          - es:
+              name: Rejuvenecer
+              description: |
+                Para usar esta habilidad, un psiónico se concentra en su propio cuerpo para
+                ayudarlo a compensar los efectos del daño por fatiga o aturdimiento (no
+                proporciona ayuda para recuperar la energía psiónica perdida). Los resultados de
+                la tirada son inmediatos, aunque la reacción del cuerpo al rejuvenecimiento
+                tarda aproximadamente una hora. Durante esa hora, el psiónico no puede volver a
+                usar la habilidad de rejuvenecer.
 
-              El éxito de la tirada de habilidad determina cuántos "puntos de rejuvenecimiento" recibe el personaje: éxito Ordinario, 2 puntos; éxito Bueno, 4 puntos; éxito Asombroso, 6 puntos. Cuesta 2 puntos de rejuvenecimiento por cada punto de daño de fatiga a recuperar, y 1 punto de rejuvenecimiento por cada punto de daño de aturdimiento.
+                El éxito de la tirada de habilidad determina cuántos "puntos de
+                rejuvenecimiento" recibe el personaje: éxito Ordinario, 2 puntos; éxito Bueno, 4
+                puntos; éxito Asombroso, 6 puntos. Cuesta 2 puntos de rejuvenecimiento por cada
+                punto de daño de fatiga a recuperar, y 1 punto de rejuvenecimiento por cada
+                punto de daño de aturdimiento.
 
-              **Beneficios de Rango:**
-              - **Al rango 4 [Efecto Mejorado]:** los puntos de rejuvenecimiento recibidos aumentan: Ordinario, 4 puntos; Bueno, 6 puntos; Asombroso, 8 puntos.
-              - **Al rango 8 [Imposición de Manos]:** el psiónico puede usar la habilidad de rejuvenecer en otros personajes a través del contacto físico.
-              - **Al rango 12 [Dos Destinatarios]:** el psiónico puede afectar a dos individuos simultáneamente.
+                **Beneficios de Rango:**
+                - **Al rango 4 [Efecto Mejorado]:** los puntos de rejuvenecimiento recibidos aumentan: Ordinario, 4 puntos; Bueno, 6 puntos; Asombroso, 8 puntos.
+                - **Al rango 8 [Imposición de Manos]:** el psiónico puede usar la habilidad de rejuvenecer en otros personajes a través del contacto físico.
+                - **Al rango 12 [Dos Destinatarios]:** el psiónico puede afectar a dos individuos simultáneamente.
       transfer-damage:
         attribute: CON
         cost: 2
@@ -247,37 +377,41 @@ items:
         trained_only: false
         extended_duration: false
         localized:
-        - en:
-            name: Transfer Damage
-            description: |
-              By using this skill, a psion can absorb the wounds or the disease of another character. To use the skill, the psion must touch the character to be helped.
+          - en:
+              name: Transfer Damage
+              description: |
+                By using this skill, a psion can absorb the wounds or the disease of another
+                character. To use the skill, the psion must touch the character to be helped.
 
-              The success of the skill check determines the amount of damage transferred:
-              - **Ordinary:** the psion can absorb 1 wound point from the subject, or reduce the grade of an illness by one. The psion becomes infected by the illness, but at one grade lower than that already suffered by the subject.
-              - **Good:** the psion can absorb 2 wound points or reduce the grade of an illness by two.
-              - **Amazing:** the psion can absorb 3 wound points or 1 mortal point. In the case of an illness, the psion can automatically transfer the entire illness (of any grade) to himself or herself.
-              
-              On a Critical Failure, the psion suffers 1 wound point as he or she fails to correctly channel the energy.
+                The success of the skill check determines the amount of damage transferred:
+                - **Ordinary:** the psion can absorb 1 wound point from the subject, or reduce the grade of an illness by one. The psion becomes infected by the illness, but at one grade lower than that already suffered by the subject.
+                - **Good:** the psion can absorb 2 wound points or reduce the grade of an illness by two.
+                - **Amazing:** the psion can absorb 3 wound points or 1 mortal point. In the case of an illness, the psion can automatically transfer the entire illness (of any grade) to himself or herself.
 
-              **Rank Benefits:**
-              - **At rank 6 [Displace Damage]:** the psion can transfer the damage from one character to another (both of whom must be in physical contact with the psion). The target of the transfer must be willing.
-              - **At rank 12 [Unwilling Transfer]:** the psion can transfer damage from one character to another living recipient who is in contact with the psion, even if the recipient is unwilling. This requires a successful contact skill check against the unwilling recipient.
-        - es:
-            name: Transferir Daño
-            description: |
-              Al usar esta habilidad, un psiónico puede absorber las heridas o la enfermedad de otro personaje. Para usar la habilidad, el psiónico debe tocar al personaje que recibirá la ayuda.
+                On a Critical Failure, the psion suffers 1 wound point as he or she fails to
+                correctly channel the energy.
 
-              El éxito de la tirada de habilidad determina la cantidad de daño transferido:
-              - **Ordinario:** el psiónico puede absorber 1 punto de herida del sujeto, o reducir el grado de una enfermedad en uno. El psiónico se infecta con la enfermedad, pero en un grado inferior al que ya sufre el sujeto.
-              - **Bueno:** el psiónico puede absorber 2 puntos de herida o reducir el grado de una enfermedad en dos.
-              - **Asombroso:** el psiónico puede absorber 3 puntos de herida o 1 punto mortal. En el caso de una enfermedad, el psiónico puede transferirse automáticamente toda la enfermedad (de cualquier grado) a sí mismo.
+                **Rank Benefits:**
+                - **At rank 6 [Displace Damage]:** the psion can transfer the damage from one character to another (both of whom must be in physical contact with the psion). The target of the transfer must be willing.
+                - **At rank 12 [Unwilling Transfer]:** the psion can transfer damage from one character to another living recipient who is in contact with the psion, even if the recipient is unwilling. This requires a successful contact skill check against the unwilling recipient.
+          - es:
+              name: Transferir Daño
+              description: |
+                Al usar esta habilidad, un psiónico puede absorber las heridas o la enfermedad
+                de otro personaje. Para usar la habilidad, el psiónico debe tocar al personaje
+                que recibirá la ayuda.
 
-              En un Fallo Crítico, el psiónico sufre 1 punto de herida al no canalizar correctamente la energía.
+                El éxito de la tirada de habilidad determina la cantidad de daño transferido:
+                - **Ordinario:** el psiónico puede absorber 1 punto de herida del sujeto, o reducir el grado de una enfermedad en uno. El psiónico se infecta con la enfermedad, pero en un grado inferior al que ya sufre el sujeto.
+                - **Bueno:** el psiónico puede absorber 2 puntos de herida o reducir el grado de una enfermedad en dos.
+                - **Asombroso:** el psiónico puede absorber 3 puntos de herida o 1 punto mortal. En el caso de una enfermedad, el psiónico puede transferirse automáticamente toda la enfermedad (de cualquier grado) a sí mismo.
 
-              **Beneficios de Rango:**
-              - **Al rango 6 [Desplazar Daño]:** el psiónico puede transferir el daño de un personaje a otro (ambos deben estar en contacto físico con el psiónico). El objetivo de la transferencia debe estar dispuesto.
-              - **Al rango 12 [Transferencia Involuntaria]:** el psiónico puede transferir el daño de un personaje a otro destinatario vivo que esté en contacto con el psiónico, incluso si el destinatario no está dispuesto. Esto requiere una tirada de habilidad de contacto con éxito contra el destinatario involuntario.
-        trained_only: false
+                En un Fallo Crítico, el psiónico sufre 1 punto de herida al no canalizar
+                correctamente la energía.
+
+                **Beneficios de Rango:**
+                - **Al rango 6 [Desplazar Daño]:** el psiónico puede transferir el daño de un personaje a otro (ambos deben estar en contacto físico con el psiónico). El objetivo de la transferencia debe estar dispuesto.
+                - **Al rango 12 [Transferencia Involuntaria]:** el psiónico puede transferir el daño de un personaje a otro destinatario vivo que esté en contacto con el psiónico, incluso si el destinatario no está dispuesto. Esto requiere una tirada de habilidad de contacto con éxito contra el destinatario involuntario.
   ESP:
     attribute: INT
     url: /psionics/esp/
@@ -285,12 +419,19 @@ items:
     localized:
       - en:
           name: ESP
-          description: |
-            This skill can’t be used untrained. This skill allows a character to experience the environment through an agency beyond the normal senses, using the power of the mind. With just the broad skill, a character can attempt to use any of the related specialty skills except those that can't be used untrained.
+          description: |-
+            This skill can’t be used untrained. This skill allows a character to experience
+            the environment through an agency beyond the normal senses, using the power of
+            the mind. With just the broad skill, a character can attempt to use any of the
+            related specialty skills except those that can't be used untrained.
       - es:
           name: ESP
-          description: |
-            Esta habilidad no puede usarse sin entrenamiento. Esta habilidad permite a un personaje experimentar el entorno a través de un medio más allá de los sentidos normales, usando el poder de la mente. Con solo la habilidad de base, un personaje puede intentar usar cualquiera de las habilidades de especialidad relacionadas, excepto aquellas que no pueden usarse sin entrenamiento.
+          description: |-
+            Esta habilidad no puede usarse sin entrenamiento. Esta habilidad permite a un
+            personaje experimentar el entorno a través de un medio más allá de los sentidos
+            normales, usando el poder de la mente. Con solo la habilidad de base, un
+            personaje puede intentar usar cualquiera de las habilidades de especialidad
+            relacionadas, excepto aquellas que no pueden usarse sin entrenamiento.
     items:
       battle-mind:
         attribute: INT
@@ -302,14 +443,18 @@ items:
           - en:
               name: Battle Mind
               description: |
-                To use this skill, a psion focuses on the battle at hand and makes a skill check. The success achieved indicates the benefit while the current application of the skill remains active.
+                To use this skill, a psion focuses on the battle at hand and makes a skill
+                check. The success achieved indicates the benefit while the current application
+                of the skill remains active.
 
                 A successful skill check gives the user a bonus to his or her action checks: 
                 - **Ordinary:** -1 step bonus.
                 - **Good:** -2 step bonus.
                 - **Amazing:** -3 step bonus.
 
-                For purposes of using this skill, “battle” is defined as any situation in which the character has made an action check in the same round he or she uses the battle mind skill.
+                For purposes of using this skill, “battle” is defined as any situation in which
+                the character has made an action check in the same round he or she uses the
+                battle mind skill.
 
                 **Rank Benefits:**
                 - **At rank 4 [Increased Effect]:** the bonus to action checks improves: Ordinary, -2 steps; Good, -3 steps; Amazing, -4 steps.
@@ -318,14 +463,18 @@ items:
           - es:
               name: Mente de Batalla
               description: |
-                Para usar esta habilidad, un psiónico se concentra en la batalla actual y realiza una tirada de habilidad. El éxito logrado indica el beneficio mientras la aplicación actual de la habilidad permanezca activa.
+                Para usar esta habilidad, un psiónico se concentra en la batalla actual y
+                realiza una tirada de habilidad. El éxito logrado indica el beneficio mientras
+                la aplicación actual de la habilidad permanezca activa.
 
                 Una tirada con éxito otorga al usuario un bonificador a sus tiradas de acción:
                 - **Ordinario:** bonificador de -1 paso.
                 - **Bueno:** bonificador de -2 pasos.
                 - **Asombroso:** bonificador de -3 pasos.
 
-                A efectos del uso de esta habilidad, "batalla" se define como cualquier situación en la que el personaje haya realizado una tirada de acción en el mismo asalto en que usa la habilidad de mente de batalla.
+                A efectos del uso de esta habilidad, "batalla" se define como cualquier
+                situación en la que el personaje haya realizado una tirada de acción en el mismo
+                asalto en que usa la habilidad de mente de batalla.
 
                 **Beneficios de Rango:**
                 - **Al rango 4 [Efecto Incrementado]:** el bonificador a las tiradas de acción mejora: Ordinario, -2 pasos; Bueno, -3 pasos; Asombroso, -4 pasos.
@@ -342,21 +491,23 @@ items:
           - en:
               name: Clairaudience
               description: |
-                With this skill, a character selects a location and projects his or her mind to that spot, hearing sounds as though physically present. 
-                
-                Clairaudience doesn't screen out ambient noise, so the user might have trouble discerning particular sounds. It provides no help in interpreting unknown languages or recognizing unfamiliar sounds, and the mental ear can't move from the location it's projected to. The location itself may be moving (a vehicle, for example), but such a target necessitates additional skill checks if the range to the target increases.
+                With this skill, a character selects a location and projects his or her mind to
+                that spot, hearing sounds as though physically present.
 
-                The better the result of the skill check, the longer the ability lasts: Ordinary, 1 round; Good, 2 rounds; Amazing, 3 rounds. This duration can be extended by spending 1 psionic energy point for every additional round. 
+                Clairaudience doesn't screen out ambient noise, so the user might have trouble
+                discerning particular sounds. It provides no help in interpreting unknown
+                languages or recognizing unfamiliar sounds, and the mental ear can't move from
+                the location it's projected to. The location itself may be moving (a vehicle,
+                for example), but such a target necessitates additional skill checks if the
+                range to the target increases.
 
-                | Distance | Modifier |
-                | :--- | :---: |
-                | 1–10 meters | +0 |
-                | 11–100 meters | +1 |
-                | 101 m–1 km | +2 |
-                | 2–10 km | +3 |
-                | 11–100 km | +4 |
-                | 101–1,000 km (low orbit) | +5 |
-                | 1,001–10,000 km (high orbit) | +6 |
+                The better the result of the skill check, the longer the ability lasts:
+                Ordinary, 1 round; Good, 2 rounds; Amazing, 3 rounds. This duration can be
+                extended by spending 1 psionic energy point for every additional round.
+
+                | Distance | Modifier | | :--- | :---: | | 1–10 meters | +0 | | 11–100 meters |
+                +1 | | 101 m–1 km | +2 | | 2–10 km | +3 | | 11–100 km | +4 | | 101–1,000 km (low
+                orbit) | +5 | | 1,001–10,000 km (high orbit) | +6 |
 
                 **Rank Benefits:**
                 - **At rank 4 [Increased Duration]:** the time increment increases to minutes (Ordinary, 1 minute; Good, 2 minutes, Amazing, 3 minutes).
@@ -366,21 +517,24 @@ items:
           - es:
               name: Clariaudiencia
               description: |
-                Con esta habilidad, un personaje selecciona una ubicación y proyecta su mente a ese lugar, escuchando sonidos como si estuviera físicamente presente.
+                Con esta habilidad, un personaje selecciona una ubicación y proyecta su mente a
+                ese lugar, escuchando sonidos como si estuviera físicamente presente.
 
-                La clariaudiencia no filtra el ruido ambiental, por lo que el usuario puede tener problemas para discernir sonidos particulares. No proporciona ayuda para interpretar idiomas desconocidos o reconocer sonidos no familiares, y el oído mental no puede moverse del lugar al que se proyecta. La ubicación en sí puede estar en movimiento (un vehículo, por ejemplo), pero tal objetivo requiere tiradas de habilidad adicionales si el rango al objetivo aumenta.
+                La clariaudiencia no filtra el ruido ambiental, por lo que el usuario puede
+                tener problemas para discernir sonidos particulares. No proporciona ayuda para
+                interpretar idiomas desconocidos o reconocer sonidos no familiares, y el oído
+                mental no puede moverse del lugar al que se proyecta. La ubicación en sí puede
+                estar en movimiento (un vehículo, por ejemplo), pero tal objetivo requiere
+                tiradas de habilidad adicionales si el rango al objetivo aumenta.
 
-                Cuanto mejor sea el resultado de la tirada de habilidad, más tiempo durará la capacidad: Ordinario, 1 asalto; Bueno, 2 asaltos; Asombroso, 3 asaltos. Esta duración se puede extender gastando 1 punto de energía psiónica por cada asalto adicional.
+                Cuanto mejor sea el resultado de la tirada de habilidad, más tiempo durará la
+                capacidad: Ordinario, 1 asalto; Bueno, 2 asaltos; Asombroso, 3 asaltos. Esta
+                duración se puede extender gastando 1 punto de energía psiónica por cada asalto
+                adicional.
 
-                | Distancia | Modificador |
-                | :--- | :---: |
-                | 1–10 metros | +0 |
-                | 11–100 metros | +1 |
-                | 101 m–1 km | +2 |
-                | 2–10 km | +3 |
-                | 11–100 km | +4 |
-                | 101–1,000 km (órbita baja) | +5 |
-                | 1,001–10,000 km (órbita alta) | +6 |
+                | Distancia | Modificador | | :--- | :---: | | 1–10 metros | +0 | | 11–100
+                metros | +1 | | 101 m–1 km | +2 | | 2–10 km | +3 | | 11–100 km | +4 | |
+                101–1,000 km (órbita baja) | +5 | | 1,001–10,000 km (órbita alta) | +6 |
 
                 **Beneficios de Rango:**
                 - **Al rango 4 [Duración Incrementada]:** el incremento de tiempo aumenta a minutos (Ordinario, 1 minuto; Bueno, 2 minutos, Asombroso, 3 minutos).
@@ -397,13 +551,23 @@ items:
           - en:
               name: Clairvoyance
               description: |
-                To employ this skill, a character selects a location and projects his or her mind to that spot, seeing everything going on around that spot as though physically there. 
-                
-                Clairvoyance doesn't block normal vision, so the user sees double images unless his or her eyes are closed. It also provides no help in seeing through obscuring elements, such as walls, closed doors, or darkness, and the mental eye can't move from the selected spot. The location itself may be moving (a vehicle, for example), but such a target necessitates additional skill checks if the range to the target increases.
+                To employ this skill, a character selects a location and projects his or her
+                mind to that spot, seeing everything going on around that spot as though
+                physically there.
 
-                The better the result of the skill check, the longer the ability lasts: Ordinary, 1 round; Good, 2 rounds; Amazing, 3 rounds. This duration can be extended by spending 1 psionic energy point for every additional round. 
+                Clairvoyance doesn't block normal vision, so the user sees double images unless
+                his or her eyes are closed. It also provides no help in seeing through obscuring
+                elements, such as walls, closed doors, or darkness, and the mental eye can't
+                move from the selected spot. The location itself may be moving (a vehicle, for
+                example), but such a target necessitates additional skill checks if the range to
+                the target increases.
 
-                Situation modifiers for distance and familiarity are the same as for Clairaudience.
+                The better the result of the skill check, the longer the ability lasts:
+                Ordinary, 1 round; Good, 2 rounds; Amazing, 3 rounds. This duration can be
+                extended by spending 1 psionic energy point for every additional round.
+
+                Situation modifiers for distance and familiarity are the same as for
+                Clairaudience.
 
                 **Rank Benefits:**
                 - **At rank 4 [Increased Duration]:** the time increment increases to minutes (Ordinary, 1 minute; Good, 2 minutes, Amazing, 3 minutes).
@@ -413,13 +577,24 @@ items:
           - es:
               name: Clarividencia
               description: |
-                Para emplear esta habilidad, un personaje selecciona una ubicación y proyecta su mente a ese lugar, viendo todo lo que sucede alrededor de ese punto como si estuviera físicamente allí.
+                Para emplear esta habilidad, un personaje selecciona una ubicación y proyecta su
+                mente a ese lugar, viendo todo lo que sucede alrededor de ese punto como si
+                estuviera físicamente allí.
 
-                La clarividencia no bloquea la visión normal, por lo que el usuario ve imágenes dobles a menos que tenga los ojos cerrados. Tampoco proporciona ayuda para ver a través de elementos que oscurezcan la visión, como paredes, puertas cerradas o oscuridad, y el ojo mental no puede moverse del lugar seleccionado. La ubicación en sí puede estar en movimiento (un vehículo, por ejemplo), pero tal objetivo requiere tiradas de habilidad adicionales si el rango al objetivo aumenta.
+                La clarividencia no bloquea la visión normal, por lo que el usuario ve imágenes
+                dobles a menos que tenga los ojos cerrados. Tampoco proporciona ayuda para ver a
+                través de elementos que oscurezcan la visión, como paredes, puertas cerradas o
+                oscuridad, y el ojo mental no puede moverse del lugar seleccionado. La ubicación
+                en sí puede estar en movimiento (un vehículo, por ejemplo), pero tal objetivo
+                requiere tiradas de habilidad adicionales si el rango al objetivo aumenta.
 
-                Cuanto mejor sea el resultado de la tirada de habilidad, más tiempo durará la capacidad: Ordinario, 1 asalto; Bueno, 2 asaltos; Asombroso, 3 asaltos. Esta duración se puede extender gastando 1 punto de energía psiónica por cada asalto adicional.
+                Cuanto mejor sea el resultado de la tirada de habilidad, más tiempo durará la
+                capacidad: Ordinario, 1 asalto; Bueno, 2 asaltos; Asombroso, 3 asaltos. Esta
+                duración se puede extender gastando 1 punto de energía psiónica por cada asalto
+                adicional.
 
-                Los modificadores de situación por distancia y familiaridad son los mismos que para la Clariaudiencia.
+                Los modificadores de situación por distancia y familiaridad son los mismos que
+                para la Clariaudiencia.
 
                 **Beneficios de Rango:**
                 - **Al rango 4 [Duración Incrementada]:** el incremento de tiempo aumenta a minutos (Ordinario, 1 minuto; Bueno, 2 minutos, Asombroso, 3 minutos).
@@ -436,7 +611,12 @@ items:
           - en:
               name: Dream Hunt
               description: |
-                Though originally developed for hunting animals, the technique works on any living being. The sesheyan (or sesheyan-trained) psion concentrates on the subject and mentally engages in a hunt. The better the subject’s habits are known, the easier the hunt. If the skill check is successful, the psion determines the place where the quarry will be at any single locale in the next 24 hours (though not when).
+                Though originally developed for hunting animals, the technique works on any
+                living being. The sesheyan (or sesheyan-trained) psion concentrates on the
+                subject and mentally engages in a hunt. The better the subject’s habits are
+                known, the easier the hunt. If the skill check is successful, the psion
+                determines the place where the quarry will be at any single locale in the next
+                24 hours (though not when).
 
                 The better the target's habits are known, the easier the hunt:
                 - **Familiar target / territory:** -2 / -1 step bonus.
@@ -447,7 +627,9 @@ items:
                 - **Good:** within 500 meters.
                 - **Amazing:** within 100 meters.
 
-                Characters who receive this information can make Awareness-perception checks or Investigate-search checks with a -1, -2, or -3 step bonus to locate or avoid being surprised by the quarry.
+                Characters who receive this information can make Awareness-perception checks or
+                Investigate-search checks with a -1, -2, or -3 step bonus to locate or avoid
+                being surprised by the quarry.
 
                 **Rank Benefits:**
                 - **At rank 3 [Improved Accuracy]:** the psion is able to narrow down the time the prey will be at a given locale to within 3 hours.
@@ -457,7 +639,11 @@ items:
           - es:
               name: Caza Onírica
               description: |
-                Aunque originalmente desarrollada para cazar animales, esta técnica funciona en cualquier ser vivo. El psiónico se concentra en el sujeto y se involucra mentalmente en una caza. Si la tirada de habilidad tiene éxito, el psiónico determina el lugar donde estará la presa en cualquier ubicación única en las próximas 24 horas (aunque no cuándo).
+                Aunque originalmente desarrollada para cazar animales, esta técnica funciona en
+                cualquier ser vivo. El psiónico se concentra en el sujeto y se involucra
+                mentalmente en una caza. Si la tirada de habilidad tiene éxito, el psiónico
+                determina el lugar donde estará la presa en cualquier ubicación única en las
+                próximas 24 horas (aunque no cuándo).
 
                 Cuanto mejor se conozcan los hábitos del objetivo, más fácil será la caza:
                 - **Objetivo / territorio familiar:** bonificador de -2 / -1 pasos.
@@ -468,7 +654,9 @@ items:
                 - **Bueno:** dentro de 500 metros.
                 - **Asombroso:** dentro de 100 metros.
 
-                Los personajes que reciben esta información pueden realizar tiradas de Percepción-avistar o Investigar-buscar con un bonificador de -1, -2 o -3 pasos para localizar o evitar ser sorprendidos por la presa.
+                Los personajes que reciben esta información pueden realizar tiradas de
+                Percepción-avistar o Investigar-buscar con un bonificador de -1, -2 o -3 pasos
+                para localizar o evitar ser sorprendidos por la presa.
 
                 **Beneficios de Rango:**
                 - **Al rango 3 [Precisión Mejorada]:** el psiónico reduce el tiempo en que la presa estará en un lugar a un margen de 3 horas.
@@ -485,8 +673,10 @@ items:
           - en:
               name: Empathy
               description: |
-                This skill allows a psion to “read” the surface emotions of another character. This ability assists the user in encounter situations. The target must be within visual range.
-                
+                This skill allows a psion to “read” the surface emotions of another character.
+                This ability assists the user in encounter situations. The target must be within
+                visual range.
+
                 A successful use of empathy provides an understanding of the target's emotional state (Combative, Hostile, Neutral, Friendly, Charmed, or Fanatic) and provides a bonus when using encounter skills upon that target character: 
                 - **Ordinary:** -1 step bonus.
                 - **Good:** -2 step bonus.
@@ -501,7 +691,9 @@ items:
           - es:
               name: Empatía
               description: |
-                Esta habilidad permite a un psiónico "leer" las emociones superficiales de otro personaje. Esta capacidad ayuda al usuario en situaciones de encuentro. El objetivo debe estar dentro del rango visual.
+                Esta habilidad permite a un psiónico "leer" las emociones superficiales de otro
+                personaje. Esta capacidad ayuda al usuario en situaciones de encuentro. El
+                objetivo debe estar dentro del rango visual.
 
                 Un uso exitoso de la empatía proporciona una comprensión del estado emocional del objetivo (Combativo, Hostil, Neutral, Amistoso, Encantado o Fanático) y otorga un bonificador al usar habilidades de encuentro sobre ese personaje objetivo:
                 - **Ordinario:** bonificador de -1 paso.
@@ -524,8 +716,11 @@ items:
           - en:
               name: Mind Reading
               description: |
-                This skill enables a psion to “read” the surface thoughts of another character. The target must be within 500 meters (100m/200m/500m) of the psionics-user. The mental contact remains in effect for a limited time and can't be extended by the use of psionic energy points.
-                
+                This skill enables a psion to “read” the surface thoughts of another character.
+                The target must be within 500 meters (100m/200m/500m) of the psionics-user. The
+                mental contact remains in effect for a limited time and can't be extended by the
+                use of psionic energy points.
+
                 - **Ordinary:** contact lasts for 1 phase after the skill check is made. Only random and disjointed thoughts are perceived.
                 - **Good:** contact lasts for 2 phases. In addition to random thoughts, more detail and coherence is received, such as why the target is thinking about someone or something.
                 - **Amazing:** contact lasts for 3 phases. Complete surface thoughts can be read, plus some key fact related to what the psionics-user hoped to discover.
@@ -538,7 +733,10 @@ items:
           - es:
               name: Lectura Mental
               description: |
-                Esta habilidad permite a un psiónico "leer" los pensamientos superficiales de otro personaje. El objetivo debe estar dentro de los 500 metros (100m/200m/500m) del usuario. El contacto mental permanece en vigor por un tiempo limitado y no puede extenderse mediante el uso de puntos de energía psiónica.
+                Esta habilidad permite a un psiónico "leer" los pensamientos superficiales de
+                otro personaje. El objetivo debe estar dentro de los 500 metros (100m/200m/500m)
+                del usuario. El contacto mental permanece en vigor por un tiempo limitado y no
+                puede extenderse mediante el uso de puntos de energía psiónica.
 
                 - **Ordinario:** el contacto dura 1 fase después de realizar la tirada. Solo se perciben pensamientos aleatorios e inconexos.
                 - **Bueno:** el contacto dura 2 fases. Además de los pensamientos aleatorios, se recibe más detalle y coherencia, como por qué el objetivo piensa en algo o alguien.
@@ -559,16 +757,18 @@ items:
           - en:
               name: Navcognition
               description: |
-                A character who uses this skill can instinctively determine his or her present location and mentally plot a course. This can be accomplished on a planetary surface, in normal space, and even through drivespace. This mental ability replaces the use of the Navigation skill.
-                
-                At rank 1, the character selects one specialty: surface navigation, system astrogation, or drivespace astrogation.
+                A character who uses this skill can instinctively determine his or her present
+                location and mentally plot a course. This can be accomplished on a planetary
+                surface, in normal space, and even through drivespace. This mental ability
+                replaces the use of the Navigation skill.
 
-                | Situation/Condition | Modifier |
-                | :--- | :---: |
-                | Combat / Hostile conditions | +4 / +2 |
-                | Unexplored / Partially explored territory | +4 / +2 |
-                | Less than 5 minutes plotting | +1 per min. |
-                | More than 5 minutes plotting | -1 per min. |
+                At rank 1, the character selects one specialty: surface navigation, system
+                astrogation, or drivespace astrogation.
+
+                | Situation/Condition | Modifier | | :--- | :---: | | Combat / Hostile
+                conditions | +4 / +2 | | Unexplored / Partially explored territory | +4 / +2 | |
+                Less than 5 minutes plotting | +1 per min. | | More than 5 minutes plotting | -1
+                per min. |
 
                 **Rank Benefits:**
                 - **At rank 4 [Travel Time]:** becomes able to determine the clearest way to the destination. Cuts travel time (surface/system): Ordinary 75%; Good 50%; Amazing 25% of normal. 
@@ -580,16 +780,18 @@ items:
           - es:
               name: Navcognición
               description: |
-                Un personaje que usa esta habilidad puede determinar instintivamente su ubicación actual y trazar mentalmente un curso. Esto puede lograrse en una superficie planetaria, en el espacio normal e incluso a través del espacio de curvatura. Esta capacidad mental sustituye al uso de la habilidad de Navegación.
+                Un personaje que usa esta habilidad puede determinar instintivamente su
+                ubicación actual y trazar mentalmente un curso. Esto puede lograrse en una
+                superficie planetaria, en el espacio normal e incluso a través del espacio de
+                curvatura. Esta capacidad mental sustituye al uso de la habilidad de Navegación.
 
-                Al rango 1, el personaje selecciona una especialidad: navegación de superficie, astrografía de sistema o astrografía de motores de curvatura.
+                Al rango 1, el personaje selecciona una especialidad: navegación de superficie,
+                astrografía de sistema o astrografía de motores de curvatura.
 
-                | Situación/Condición | Modificador |
-                | :--- | :---: |
-                | Condiciones de combate / hostiles | +4 / +2 |
-                | Territorio inexplorado / parcialmente explorado | +4 / +2 |
-                | Menos de 5 minutos trazando | +1 por min. |
-                | Más de 5 minutos trazando | -1 por min. |
+                | Situación/Condición | Modificador | | :--- | :---: | | Condiciones de combate
+                / hostiles | +4 / +2 | | Territorio inexplorado / parcialmente explorado | +4 /
+                +2 | | Menos de 5 minutos trazando | +1 por min. | | Más de 5 minutos trazando |
+                -1 por min. |
 
                 **Beneficios de Rango:**
                 - **Al rango 4 [Tiempo de Viaje]:** capaz de determinar el camino más claro. Reduce el tiempo de viaje (superficie/sistema): Ordinario 75%; Bueno 50%; Asombroso 25% del normal.
@@ -608,8 +810,11 @@ items:
           - en:
               name: Postcognition
               description: |
-                With this skill, a character can sense the mood of an area and even “see” events that happened there in the recent past. The character must be in the actual area to sense psychic resonance. In general, a character can see a number of days into the past equal to his or her skill rank.
-                
+                With this skill, a character can sense the mood of an area and even “see” events
+                that happened there in the recent past. The character must be in the actual area
+                to sense psychic resonance. In general, a character can see a number of days
+                into the past equal to his or her skill rank.
+
                 - **Ordinary:** the character senses general emotions that have been left in an area.
                 - **Good:** the psion also receives brief flashes of events that may or may not make sense.
                 - **Amazing:** the character actually experiences a brief encounter as though at the scene when the events occurred.
@@ -622,7 +827,10 @@ items:
           - es:
               name: Postcognición
               description: |
-                Con esta habilidad, un personaje puede sentir el ambiente de un área e incluso "ver" eventos que ocurrieron allí en el pasado reciente. El personaje debe estar en la ubicación real para sentir la resonancia psíquica. En general, un personaje puede ver tantos días en el pasado como su rango de habilidad.
+                Con esta habilidad, un personaje puede sentir el ambiente de un área e incluso
+                "ver" eventos que ocurrieron allí en el pasado reciente. El personaje debe estar
+                en la ubicación real para sentir la resonancia psíquica. En general, un
+                personaje puede ver tantos días en el pasado como su rango de habilidad.
 
                 - **Ordinario:** el personaje siente emociones generales que han quedado en un área.
                 - **Bueno:** el psiónico también recibe breves destellos de eventos que pueden o no tener sentido.
@@ -643,15 +851,20 @@ items:
           - en:
               name: Precognition
               description: |
-                This skill is the ability to receive impressions about possible future events—what the psion sees will probably happen if no one takes action to change it. In general, a character can see a number of hours into the future equal to his or her skill rank.
+                This skill is the ability to receive impressions about possible future
+                events—what the psion sees will probably happen if no one takes action to change
+                it. In general, a character can see a number of hours into the future equal to
+                his or her skill rank.
 
-                On a successful skill check, the character gains information about the event as well as a free last resort point (LRP), which can only be used during the scene.
-                
+                On a successful skill check, the character gains information about the event as
+                well as a free last resort point (LRP), which can only be used during the scene.
+
                 - **Ordinary:** perceptions of vague images. The LRP can only be used to modify a check which directly affects the psion (e.g. reducing an opponent's attack roll).
                 - **Good:** brief flashes of coming events. The LRP may be used to modify the result of any action made against or by him or her during the scene.
                 - **Amazing:** mentally experiences a brief encounter as though seeing events transpire. The LRP can be applied to any skill check made by any character involved in the scene.
 
-                Forcing a flash doubles the cost in energy points, applies a +3 step penalty, and the skill can't be used again consciously for 2d6 days.
+                Forcing a flash doubles the cost in energy points, applies a +3 step penalty,
+                and the skill can't be used again consciously for 2d6 days.
 
                 **Rank Benefits:**
                 - **At rank 3 [Increased Time]:** extend precognitive ability to a number of days equal to skill rank.
@@ -661,15 +874,22 @@ items:
           - es:
               name: Precognición
               description: |
-                Esta habilidad es la capacidad de recibir impresiones sobre posibles eventos futuros: lo que el psiónico ve probablemente sucederá si nadie toma medidas para cambiarlo. En general, un personaje puede ver tantas horas en el futuro como su rango de habilidad.
+                Esta habilidad es la capacidad de recibir impresiones sobre posibles eventos
+                futuros: lo que el psiónico ve probablemente sucederá si nadie toma medidas para
+                cambiarlo. En general, un personaje puede ver tantas horas en el futuro como su
+                rango de habilidad.
 
-                En una tirada de habilidad exitosa, el personaje gana información sobre el evento, así como un punto de último recurso (LRP) gratuito, que solo puede usarse durante la escena.
+                En una tirada de habilidad exitosa, el personaje gana información sobre el
+                evento, así como un punto de último recurso (LRP) gratuito, que solo puede
+                usarse durante la escena.
 
                 - **Ordinario:** percepciones de imágenes vagas. El LRP solo puede usarse para modificar una tirada que afecte directamente al psiónico (por ejemplo, reducir la tirada de ataque de un oponente).
                 - **Bueno:** breves destellos de eventos venideros. El LRP puede usarse para modificar el resultado de cualquier acción realizada contra él/ella o por él/ella durante la escena.
                 - **Asombroso:** experimenta mentalmente un breve encuentro como si viera los hechos transcurrir. El LRP puede aplicarse a cualquier tirada de habilidad realizada por cualquier personaje involucrado en la escena.
 
-                Forzar un destello dobla el coste en puntos de energía, aplica un penalizador de +3 pasos, y la habilidad no podrá volver a usarse conscientemente durante 2d6 días.
+                Forzar un destello dobla el coste en puntos de energía, aplica un penalizador de
+                +3 pasos, y la habilidad no podrá volver a usarse conscientemente durante 2d6
+                días.
 
                 **Beneficios de Rango:**
                 - **Al rango 3 [Tiempo Incrementado]:** extiende la capacidad precognitiva a un número de días igual al rango de habilidad.
@@ -686,8 +906,12 @@ items:
           - en:
               name: Psychometry
               description: |
-                This skill gives its user the ability to read psychic impressions from inanimate objects. The character must touch the object to gain insight into who has used it and in what context. Tools, weapons, clothing, jewelry, books, other personal items, and even dead bodies can be studied. Living people and creatures can't be studied with this skill.
-                
+                This skill gives its user the ability to read psychic impressions from inanimate
+                objects. The character must touch the object to gain insight into who has used
+                it and in what context. Tools, weapons, clothing, jewelry, books, other personal
+                items, and even dead bodies can be studied. Living people and creatures can't be
+                studied with this skill.
+
                 - **Ordinary:** the character receives simple emotions associated with the object.
                 - **Good:** he or she receives simple images associated with the object.
                 - **Amazing:** the character experiences a brief encounter as though he or she is the person using the object or its owner.
@@ -700,7 +924,11 @@ items:
           - es:
               name: Psicometría
               description: |
-                Esta habilidad otorga a su usuario la capacidad de leer impresiones psíquicas de objetos inanimados. El personaje debe tocar el objeto para obtener información sobre quién lo ha usado y en qué contexto. Se pueden estudiar herramientas, armas, ropa, joyas, libros, otros artículos personales e incluso cadáveres. Las personas y criaturas vivas no pueden ser estudiadas con esta habilidad.
+                Esta habilidad otorga a su usuario la capacidad de leer impresiones psíquicas de
+                objetos inanimados. El personaje debe tocar el objeto para obtener información
+                sobre quién lo ha usado y en qué contexto. Se pueden estudiar herramientas,
+                armas, ropa, joyas, libros, otros artículos personales e incluso cadáveres. Las
+                personas y criaturas vivas no pueden ser estudiadas con esta habilidad.
 
                 - **Ordinario:** el personaje recibe emociones simples asociadas al objeto.
                 - **Bueno:** recibe imágenes simples asociadas al objeto.
@@ -718,12 +946,19 @@ items:
     localized:
       - en:
           name: Psychoportation
-          description: |
-            Psychoportation is the psionic specialty of moving material from one location to another. Many psychoportation skills allow a psion to move himself or herself, and at higher ranks, some of these skills allow the character to move others as well. This broad skill cannot be used untrained.
+          description: |-
+            Psychoportation is the psionic specialty of moving material from one location to
+            another. Many psychoportation skills allow a psion to move himself or herself,
+            and at higher ranks, some of these skills allow the character to move others as
+            well. This broad skill cannot be used untrained.
       - es:
           name: Psicoportación
-          description: |
-            La psicoportación es la especialidad psiónica de mover materia de un lugar a otro. Muchas habilidades de psicoportación permiten a un psiónico desplazarse a sí mismo y, en rangos superiores, algunas de estas habilidades permiten al personaje mover también a otros. Esta habilidad básica no puede usarse sin entrenamiento.
+          description: |-
+            La psicoportación es la especialidad psiónica de mover materia de un lugar a
+            otro. Muchas habilidades de psicoportación permiten a un psiónico desplazarse a
+            sí mismo y, en rangos superiores, algunas de estas habilidades permiten al
+            personaje mover también a otros. Esta habilidad básica no puede usarse sin
+            entrenamiento.
     items:
       alter-speed:
         attribute: WIL
@@ -735,14 +970,18 @@ items:
           - en:
               name: Alter Speed
               description: |
-                This skill can't be used untrained. By concentrating, the character can accelerate or decelerate himself or herself or another living target within 8 meters. The psion must decide whether he or she is accelerating or decelerating before making the skill check.
-                
+                This skill can't be used untrained. By concentrating, the character can
+                accelerate or decelerate himself or herself or another living target within 8
+                meters. The psion must decide whether he or she is accelerating or decelerating
+                before making the skill check.
+
                 The effect on the target's action check score depends on the success:
                 - **Ordinary:** +1 or -1 to the action check score.
                 - **Good:** +2 or -2 to the action check score.
                 - **Amazing:** +3 or -3 to the action check score.
-                
-                The ability lasts for one round, but the duration can be extended by spending 1 psionic energy point for each additional round.
+
+                The ability lasts for one round, but the duration can be extended by spending 1
+                psionic energy point for each additional round.
 
                 **Rank Benefits:**
                 - **At rank 6 [Action Points]:** the target gains or loses one action per round (to a maximum of 4 actions) while the effect lasts.
@@ -750,14 +989,18 @@ items:
           - es:
               name: Alterar Velocidad
               description: |
-                Esta habilidad no puede usarse sin entrenamiento. Al concentrarse, el personaje puede acelerar o desacelerar a sí mismo o a otro objetivo vivo dentro de un radio de 8 metros. El psiónico debe decidir si está acelerando o desacelerando antes de realizar la tirada de habilidad.
+                Esta habilidad no puede usarse sin entrenamiento. Al concentrarse, el personaje
+                puede acelerar o desacelerar a sí mismo o a otro objetivo vivo dentro de un
+                radio de 8 metros. El psiónico debe decidir si está acelerando o desacelerando
+                antes de realizar la tirada de habilidad.
 
                 El efecto sobre la puntuación de la tirada de acción del objetivo depende del éxito:
                 - **Ordinario:** +1 o -1 a la puntuación de la tirada de acción.
                 - **Bueno:** +2 o -2 a la puntuación de la tirada de acción.
                 - **Asombroso:** +3 o -3 a la puntuación de la tirada de acción.
 
-                La capacidad dura un asalto, pero la duración puede extenderse gastando 1 punto de energía psiónica por cada asalto adicional.
+                La capacidad dura un asalto, pero la duración puede extenderse gastando 1 punto
+                de energía psiónica por cada asalto adicional.
 
                 **Beneficios de Rango:**
                 - **Al rango 6 [Puntos de Acción]:** el objetivo gana o pierde una acción por asalto (hasta un máximo de 4 acciones) mientras dure el efecto.
@@ -772,13 +1015,15 @@ items:
           - en:
               name: Apportation
               description: |
-                This skill can't be used untrained. This ability allows a character to summon an inanimate object from a distant location or to banish an object to another location. The psion must have seen the object he or she is attempting to apport.
-                
+                This skill can't be used untrained. This ability allows a character to summon an
+                inanimate object from a distant location or to banish an object to another
+                location. The psion must have seen the object he or she is attempting to apport.
+
                 The weight of the object that can be apported depends on the skill rank and the success:
                 - **Ordinary:** 1 kilogram per rank.
                 - **Good:** 2 kilograms per rank.
                 - **Amazing:** 5 kilograms per rank.
-                
+
                 The object appears or disappears instantaneously.
 
                 **Rank Benefits:**
@@ -792,7 +1037,10 @@ items:
           - es:
               name: Aportación
               description: |
-                Esta habilidad no puede usarse sin entrenamiento. Esta capacidad permite a un personaje invocar un objeto inanimado desde una ubicación distante o desterrar un objeto a otra ubicación. El psiónico debe haber visto el objeto que intenta aportar.
+                Esta habilidad no puede usarse sin entrenamiento. Esta capacidad permite a un
+                personaje invocar un objeto inanimado desde una ubicación distante o desterrar
+                un objeto a otra ubicación. El psiónico debe haber visto el objeto que intenta
+                aportar.
 
                 El peso del objeto que se puede aportar depende del rango de habilidad y del éxito:
                 - **Ordinario:** 1 kilogramo por rango.
@@ -819,8 +1067,11 @@ items:
           - en:
               name: Duplicate
               description: |
-                This skill can't be used untrained. This ability allows a character to summon a duplicate of himself or herself from another location in the multiverse. The duplicate is identical in every way and possesses the same skills and attributes as the psion.
-                
+                This skill can't be used untrained. This ability allows a character to summon a
+                duplicate of himself or herself from another location in the multiverse. The
+                duplicate is identical in every way and possesses the same skills and attributes
+                as the psion.
+
                 The duration that the duplicate persists depends on the success:
                 - **Ordinary:** 1 round.
                 - **Good:** 2 rounds.
@@ -833,7 +1084,10 @@ items:
           - es:
               name: Duplicado
               description: |
-                Esta habilidad no puede usarse sin entrenamiento. Esta capacidad permite a un personaje convocar un duplicado de sí mismo desde otra ubicación del multiverso. El duplicado es idéntico en todos los sentidos y posee las mismas habilidades y atributos que el psiónico.
+                Esta habilidad no puede usarse sin entrenamiento. Esta capacidad permite a un
+                personaje convocar un duplicado de sí mismo desde otra ubicación del multiverso.
+                El duplicado es idéntico en todos los sentidos y posee las mismas habilidades y
+                atributos que el psiónico.
 
                 La duración que persiste el duplicado depende del éxito:
                 - **Ordinario:** 1 asalto.
@@ -854,8 +1108,10 @@ items:
           - en:
               name: Teleportation
               description: |
-                This skill can't be used untrained. Teleportation allows a psion to instantaneously move from his or her current location to another. The psion can also teleport objects or other characters.
-                
+                This skill can't be used untrained. Teleportation allows a psion to
+                instantaneously move from his or her current location to another. The psion can
+                also teleport objects or other characters.
+
                 The range and weight limit depend on the skill rank and the success:
                 - **Range:** 10/100/1000 meters.
                 - **Weight:** 10 kilograms per rank (Ordinary success), 20 kilograms per rank (Good success), or 40 kilograms per rank (Amazing success).
@@ -867,7 +1123,9 @@ items:
           - es:
               name: Teletransportación
               description: |
-                Esta habilidad no puede usarse sin entrenamiento. La teletransportación permite a un psiónico moverse instantáneamente desde su ubicación actual a otra. El psiónico también puede teletransportar objetos u otros personajes.
+                Esta habilidad no puede usarse sin entrenamiento. La teletransportación permite
+                a un psiónico moverse instantáneamente desde su ubicación actual a otra. El
+                psiónico también puede teletransportar objetos u otros personajes.
 
                 El rango y el límite de peso dependen del rango de habilidad y del éxito:
                 - **Rango:** 10/100/1000 metros.
@@ -887,8 +1145,10 @@ items:
           - en:
               name: Timeslip
               description: |
-                This skill can't be used untrained. This ability allows a psion to move himself or herself forward in time. To everyone else, the psion appears to vanish instantaneously and then reappear later.
-                
+                This skill can't be used untrained. This ability allows a psion to move himself
+                or herself forward in time. To everyone else, the psion appears to vanish
+                instantaneously and then reappear later.
+
                 The duration of the jump depends on the success:
                 - **Ordinary:** 1 phase.
                 - **Good:** 1 round.
@@ -901,7 +1161,9 @@ items:
           - es:
               name: Salto Temporal
               description: |
-                Esta habilidad no puede usarse sin entrenamiento. Esta capacidad permite a un psiónico desplazarse a sí mismo hacia adelante en el tiempo. Para todos los demás, el psiónico parece desaparecer instantáneamente y reaparecer más tarde.
+                Esta habilidad no puede usarse sin entrenamiento. Esta capacidad permite a un
+                psiónico desplazarse a sí mismo hacia adelante en el tiempo. Para todos los
+                demás, el psiónico parece desaparecer instantáneamente y reaparecer más tarde.
 
                 La duración del salto depende del éxito:
                 - **Ordinario:** 1 fase.
@@ -919,12 +1181,19 @@ items:
     localized:
       - en:
           name: Telekinesis
-          description: |
-            This skill can't be used untrained. This skill allows a psion to manipulate the physical environment with only the power of the mind. With just the broad skill, a character can attempt to use any of the related specialty skills except those that can't be used untrained.
+          description: |-
+            This skill can't be used untrained. This skill allows a psion to manipulate the
+            physical environment with only the power of the mind. With just the broad skill,
+            a character can attempt to use any of the related specialty skills except those
+            that can't be used untrained.
       - es:
           name: Telequinesis
-          description: |
-            Esta habilidad no puede usarse sin entrenamiento. Esta habilidad permite a un psiónico manipular el entorno físico únicamente con el poder de la mente. Con solo la habilidad de base, un personaje puede intentar usar cualquiera de las habilidades de especialidad relacionadas, excepto aquellas que no pueden usarse sin entrenamiento.
+          description: |-
+            Esta habilidad no puede usarse sin entrenamiento. Esta habilidad permite a un
+            psiónico manipular el entorno físico únicamente con el poder de la mente. Con
+            solo la habilidad de base, un personaje puede intentar usar cualquiera de las
+            habilidades de especialidad relacionadas, excepto aquellas que no pueden usarse
+            sin entrenamiento.
     items:
       cryokinetics:
         attribute: WIL
@@ -936,9 +1205,14 @@ items:
           - en:
               name: Cryokinetics
               description: |
-                This skill can't be used untrained. By concentrating, the character can generate fields of intense cold, freezing most liquids and damaging living tissue. The effective range is 24 meters (range 6/12/24), and the cold affects all materials within a 2 meter diameter.
-                
-                The energy damage inflicted to living beings by this power depends on the result of the skill check. When a character first acquires this skill, he or she is able to cause damage of d4s/d4+2s/d4w.
+                This skill can't be used untrained. By concentrating, the character can generate
+                fields of intense cold, freezing most liquids and damaging living tissue. The
+                effective range is 24 meters (range 6/12/24), and the cold affects all materials
+                within a 2 meter diameter.
+
+                The energy damage inflicted to living beings by this power depends on the result
+                of the skill check. When a character first acquires this skill, he or she is
+                able to cause damage of d4s/d4+2s/d4w.
 
                 **Rank Benefits:**
                 - **At rank 5 [Increased Damage]:** the damage becomes d4+2s/d6+2s/d4+2w.
@@ -948,9 +1222,14 @@ items:
           - es:
               name: Crioquinesis
               description: |
-                Esta habilidad no puede usarse sin entrenamiento. Al concentrarse, el personaje puede generar campos de frío intenso, congelando la mayoría de los líquidos y dañando el tejido vivo. El rango efectivo es de 24 metros (rango 6/12/24), y el frío afecta a todos los materiales dentro de un diámetro de 2 metros.
+                Esta habilidad no puede usarse sin entrenamiento. Al concentrarse, el personaje
+                puede generar campos de frío intenso, congelando la mayoría de los líquidos y
+                dañando el tejido vivo. El rango efectivo es de 24 metros (rango 6/12/24), y el
+                frío afecta a todos los materiales dentro de un diámetro de 2 metros.
 
-                El daño de energía infligido a los seres vivos por este poder depende del resultado de la tirada de habilidad. Cuando un personaje adquiere por primera vez esta habilidad, es capaz de causar un daño de d4s/d4+2s/d4w.
+                El daño de energía infligido a los seres vivos por este poder depende del
+                resultado de la tirada de habilidad. Cuando un personaje adquiere por primera
+                vez esta habilidad, es capaz de causar un daño de d4s/d4+2s/d4w.
 
                 **Beneficios de Rango:**
                 - **Al rango 5 [Daño Incrementado]:** el daño pasa a ser d4+2s/d6+2s/d4+2w.
@@ -967,9 +1246,13 @@ items:
           - en:
               name: Electrokinetics
               description: |
-                This skill can't be used untrained. By concentrating, the character can build and direct an electrical charge to a target within range of 16 meters (range 4/8/16). The charge persists into the round following its application, allowing the psion to discharge the energy at any point during those two rounds.
-                
-                The energy damage inflicted to living beings depends on the success of the skill check. When the skill is first acquired, it causes d4+2s/d6+2s/d4w damage.
+                This skill can't be used untrained. By concentrating, the character can build
+                and direct an electrical charge to a target within range of 16 meters (range
+                4/8/16). The charge persists into the round following its application, allowing
+                the psion to discharge the energy at any point during those two rounds.
+
+                The energy damage inflicted to living beings depends on the success of the skill
+                check. When the skill is first acquired, it causes d4+2s/d6+2s/d4w damage.
 
                 **Rank Benefits:**
                 - **At rank 3 [Datawipe]:** the character can bulk-erase computer media. Unless the psion is touching the media, there is a penalty to the skill check based on the distance: within 1 meter, +1 step; within 2 meters, +2 steps; within 3 meters, +3 steps. 
@@ -981,9 +1264,15 @@ items:
           - es:
               name: Electroquinesis
               description: |
-                Esta habilidad no puede usarse sin entrenamiento. Al concentrarse, el personaje puede generar y dirigir una descarga eléctrica a un objetivo dentro de un rango de 16 metros (rango 4/8/16). La carga persiste en el asalto posterior a su aplicación, lo que permite al psiónico descargar la energía en cualquier momento durante esos dos asaltos.
+                Esta habilidad no puede usarse sin entrenamiento. Al concentrarse, el personaje
+                puede generar y dirigir una descarga eléctrica a un objetivo dentro de un rango
+                de 16 metros (rango 4/8/16). La carga persiste en el asalto posterior a su
+                aplicación, lo que permite al psiónico descargar la energía en cualquier momento
+                durante esos dos asaltos.
 
-                El daño de energía infligido a los seres vivos depende del éxito de la tirada de habilidad. Cuando se adquiere la habilidad por primera vez, causa un daño de d4+2s/d6+2s/d4w.
+                El daño de energía infligido a los seres vivos depende del éxito de la tirada de
+                habilidad. Cuando se adquiere la habilidad por primera vez, causa un daño de
+                d4+2s/d6+2s/d4w.
 
                 **Beneficios de Rango:**
                 - **Al rango 3 [Borrado de Datos]:** el personaje puede borrar masivamente soportes informáticos. A menos que el psiónico esté tocando el soporte, hay un penalizador a la tirada de habilidad basado en la distancia: a menos de 1 metro, +1 paso; a menos de 2 metros, +2 pasos; a menos de 3 metros, +3 pasos.
@@ -1002,9 +1291,12 @@ items:
           - en:
               name: Kinetic Blow
               description: |
-                This skill can't be used untrained. This ability allows a psion to project a wave of kinetic energy at a target. The effective range is 16 meters (range 4/8/16). 
-                
-                The impact of the energy wave can cause significant physical damage. When first acquired, Kinetic Blow inflicts d4s/d4+2s/d4w damage.
+                This skill can't be used untrained. This ability allows a psion to project a
+                wave of kinetic energy at a target. The effective range is 16 meters (range
+                4/8/16).
+
+                The impact of the energy wave can cause significant physical damage. When first
+                acquired, Kinetic Blow inflicts d4s/d4+2s/d4w damage.
 
                 **Rank Benefits:**
                 - **At rank 4 [Increased Damage]:** the damage increases to d4+2s/d6+2s/d4+2w.
@@ -1013,9 +1305,13 @@ items:
           - es:
               name: Golpe Cinético
               description: |
-                Esta habilidad no puede usarse sin entrenamiento. Esta capacidad permite a un psiónico proyectar una onda de energía cinética hacia un objetivo. El rango efectivo es de 16 metros (rango 4/8/16).
+                Esta habilidad no puede usarse sin entrenamiento. Esta capacidad permite a un
+                psiónico proyectar una onda de energía cinética hacia un objetivo. El rango
+                efectivo es de 16 metros (rango 4/8/16).
 
-                El impacto de la onda de energía puede causar un daño físico significativo. Cuando se adquiere por primera vez, Golpe Cinético inflige un daño de d4s/d4+2s/d4w.
+                El impacto de la onda de energía puede causar un daño físico significativo.
+                Cuando se adquiere por primera vez, Golpe Cinético inflige un daño de
+                d4s/d4+2s/d4w.
 
                 **Beneficios de Rango:**
                 - **Al rango 4 [Daño Incrementado]:** el daño aumenta a d4+2s/d6+2s/d4+2w.
@@ -1031,14 +1327,18 @@ items:
           - en:
               name: Kinetic Shield
               description: |
-                This skill can't be used untrained. By concentrating, the character can create a field of kinetic energy that surrounds his or her body, protecting it from physical attacks. The shield reflects or absorbs kinetic energy from incoming attacks.
-                
+                This skill can't be used untrained. By concentrating, the character can create a
+                field of kinetic energy that surrounds his or her body, protecting it from
+                physical attacks. The shield reflects or absorbs kinetic energy from incoming
+                attacks.
+
                 The effectiveness of the shield depends on the success of the skill check:
                 - **Ordinary:** the shield provides 1 point of protection against all physical attacks.
                 - **Good:** the shield provides 2 points of protection against all physical attacks.
                 - **Amazing:** the shield provides 3 points of protection against all physical attacks.
-                
-                The shield lasts for one round, but the duration can be extended by spending 1 psionic energy point for each additional round.
+
+                The shield lasts for one round, but the duration can be extended by spending 1
+                psionic energy point for each additional round.
 
                 **Rank Benefits:**
                 - **At rank 4 [Improved Protection]:** the protection provided by the shield increases: Ordinary, 2 points; Good, 3 points; Amazing, 4 points.
@@ -1047,14 +1347,18 @@ items:
           - es:
               name: Escudo Cinético
               description: |
-                Esta habilidad no puede usarse sin entrenamiento. Al concentrarse, el personaje puede crear un campo de energía cinética que rodea su cuerpo, protegiéndolo de ataques físicos. El escudo refleja o absorbe la energía cinética de los ataques entrantes.
+                Esta habilidad no puede usarse sin entrenamiento. Al concentrarse, el personaje
+                puede crear un campo de energía cinética que rodea su cuerpo, protegiéndolo de
+                ataques físicos. El escudo refleja o absorbe la energía cinética de los ataques
+                entrantes.
 
                 La efectividad del escudo depende del éxito de la tirada de habilidad:
                 - **Ordinario:** el escudo proporciona 1 punto de protección contra todos los ataques físicos.
                 - **Bueno:** el escudo proporciona 2 puntos de protección contra todos los ataques físicos.
                 - **Asombroso:** el escudo proporciona 3 puntos de protección contra todos los ataques físicos.
 
-                El escudo dura un asalto, pero la duración puede extenderse gastando 1 punto de energía psiónica por cada asalto adicional.
+                El escudo dura un asalto, pero la duración puede extenderse gastando 1 punto de
+                energía psiónica por cada asalto adicional.
 
                 **Beneficios de Rango:**
                 - **Al rango 4 [Protección Mejorada]:** la protección proporcionada por el escudo aumenta: Ordinario, 2 puntos; Bueno, 3 puntos; Asombroso, 4 puntos.
@@ -1074,8 +1378,9 @@ items:
                 - **Ordinary:** the character can move at one-quarter his or her normal walk rate.
                 - **Good:** the character can move at one-half his or her normal walk rate.
                 - **Amazing:** the character can move at his or her full walk rate.
-                
-                The ability lasts for one minute, but the duration can be extended by spending 1 psionic energy point for each additional minute.
+
+                The ability lasts for one minute, but the duration can be extended by spending 1
+                psionic energy point for each additional minute.
 
                 **Rank Benefits:**
                 - **At rank 4 [Increased Speed]:** the movement rate while levitating increases: Ordinary, one-half walk; Good, full walk; Amazing, full run.
@@ -1089,7 +1394,8 @@ items:
                 - **Bueno:** el personaje puede moverse a la mitad de su ritmo normal de caminata.
                 - **Asombroso:** el personaje puede moverse a su ritmo normal de caminata.
 
-                La capacidad dura un minuto, pero la duración puede extenderse gastando 1 punto de energía psiónica por cada minuto adicional.
+                La capacidad dura un minuto, pero la duración puede extenderse gastando 1 punto
+                de energía psiónica por cada minuto adicional.
 
                 **Beneficios de Rango:**
                 - **Al rango 4 [Velocidad Incrementada]:** el ritmo de movimiento mientras levita aumenta: Ordinario, media caminata; Bueno, caminata completa; Asombroso, carrera completa.
@@ -1105,9 +1411,14 @@ items:
           - en:
               name: Photokinetics
               description: |
-                With this skill, a character can excite or reduce the amount of light in a specific area. The area affected is a diameter of 2 meters (Ordinary success), 4 meters (Good success), or 6 meters (Amazing success).
-                
-                The duration of the effect depends on the success of the skill check: Marginal success, 1 phase; Ordinary success, 1 round; Good success, 2 rounds; Amazing success, 1 minute. The duration can be extended by spending 1 psionic energy point for each additional duration unit.
+                With this skill, a character can excite or reduce the amount of light in a
+                specific area. The area affected is a diameter of 2 meters (Ordinary success), 4
+                meters (Good success), or 6 meters (Amazing success).
+
+                The duration of the effect depends on the success of the skill check: Marginal
+                success, 1 phase; Ordinary success, 1 round; Good success, 2 rounds; Amazing
+                success, 1 minute. The duration can be extended by spending 1 psionic energy
+                point for each additional duration unit.
 
                 **Rank Benefits:**
                 - **At rank 3 [Simple Illusion]:** the psion can create toy-sized visual illusions.
@@ -1120,9 +1431,14 @@ items:
           - es:
               name: Fotoquinesis
               description: |
-                Con esta habilidad, un personaje puede excitar o reducir la cantidad de luz en un área específica. El área afectada tiene un diámetro de 2 metros (éxito Ordinario), 4 metros (éxito Bueno) o 6 metros (éxito Asombroso).
+                Con esta habilidad, un personaje puede excitar o reducir la cantidad de luz en
+                un área específica. El área afectada tiene un diámetro de 2 metros (éxito
+                Ordinario), 4 metros (éxito Bueno) o 6 metros (éxito Asombroso).
 
-                La duración del efecto depende del éxito de la tirada de habilidad: éxito Marginal, 1 fase; éxito Ordinario, 1 asalto; éxito Bueno, 2 asaltos; éxito Asombroso, 1 minuto. La duración puede extenderse gastando 1 punto de energía psiónica por cada unidad de duración adicional.
+                La duración del efecto depende del éxito de la tirada de habilidad: éxito
+                Marginal, 1 fase; éxito Ordinario, 1 asalto; éxito Bueno, 2 asaltos; éxito
+                Asombroso, 1 minuto. La duración puede extenderse gastando 1 punto de energía
+                psiónica por cada unidad de duración adicional.
 
                 **Beneficios de Rango:**
                 - **Al rango 3 [Ilusión Simple]:** el psiónico puede crear ilusiones visuales de tamaño pequeño.
@@ -1146,10 +1462,13 @@ items:
                 - **Ordinary:** 10 kilograms per rank.
                 - **Good:** 20 kilograms per rank.
                 - **Amazing:** 40 kilograms per rank.
-                
-                The effective range is 10/20/50 meters. The ability lasts for one round, but the duration can be extended by spending 1 psionic energy point for each additional round.
 
-                When used to attack, the damage inflicted depends on the success: Ordinary, d4s; Good, d4+2s; Amazing, d4w.
+                The effective range is 10/20/50 meters. The ability lasts for one round, but the
+                duration can be extended by spending 1 psionic energy point for each additional
+                round.
+
+                When used to attack, the damage inflicted depends on the success: Ordinary, d4s;
+                Good, d4+2s; Amazing, d4w.
 
                 **Rank Benefits:**
                 - **At rank 4 [Movement Rate]:** the psion can move an object at his or her walk rate.
@@ -1165,9 +1484,12 @@ items:
                 - **Bueno:** 20 kilogramos por rango.
                 - **Asombroso:** 40 kilogramos por rango.
 
-                El rango efectivo es de 10/20/50 metros. La capacidad dura un asalto, pero la duración puede extenderse gastando 1 punto de energía psiónica por cada asalto adicional.
+                El rango efectivo es de 10/20/50 metros. La capacidad dura un asalto, pero la
+                duración puede extenderse gastando 1 punto de energía psiónica por cada asalto
+                adicional.
 
-                Cuando se usa para atacar, el daño infligido depende del éxito: Ordinario, d4s; Bueno, d4+2s; Asombroso, d4w.
+                Cuando se usa para atacar, el daño infligido depende del éxito: Ordinario, d4s;
+                Bueno, d4+2s; Asombroso, d4w.
 
                 **Beneficios de Rango:**
                 - **Al rango 4 [Ritmo de Movimiento]:** el psiónico puede mover un objeto a su ritmo de caminata.
@@ -1185,9 +1507,12 @@ items:
           - en:
               name: Pyrokinetics
               description: |
-                This skill can't be used untrained. By concentrating, the character can excite the molecules of an object, causing it to burst into flame or inflicting damage on a living creature. The effective range is 24 meters (range 6/12/24).
-                
-                The energy damage inflicted on living tissue depends on the success of the skill check. When first acquired, Pyrokinetics inflicts d4s/d4+2s/d4w damage.
+                This skill can't be used untrained. By concentrating, the character can excite
+                the molecules of an object, causing it to burst into flame or inflicting damage
+                on a living creature. The effective range is 24 meters (range 6/12/24).
+
+                The energy damage inflicted on living tissue depends on the success of the skill
+                check. When first acquired, Pyrokinetics inflicts d4s/d4+2s/d4w damage.
 
                 **Rank Benefits:**
                 - **At rank 4 [Increased Damage]:** the damage increases to d4+2s/d6+2s/d4+2w.
@@ -1196,9 +1521,14 @@ items:
           - es:
               name: Piroquinesis
               description: |
-                Esta habilidad no puede usarse sin entrenamiento. Al concentrarse, el personaje puede excitar las moléculas de un objeto, haciendo que estalle en llamas o infligiendo daño a una criatura viva. El rango efectivo es de 24 metros (rango 6/12/24).
+                Esta habilidad no puede usarse sin entrenamiento. Al concentrarse, el personaje
+                puede excitar las moléculas de un objeto, haciendo que estalle en llamas o
+                infligiendo daño a una criatura viva. El rango efectivo es de 24 metros (rango
+                6/12/24).
 
-                El daño de energía infligido al tejido vivo depende del éxito de la tirada de habilidad. Cuando se adquiere por primera vez, Piroquinesis inflige un daño de d4s/d4+2s/d4w.
+                El daño de energía infligido al tejido vivo depende del éxito de la tirada de
+                habilidad. Cuando se adquiere por primera vez, Piroquinesis inflige un daño de
+                d4s/d4+2s/d4w.
 
                 **Beneficios de Rango:**
                 - **Al rango 4 [Daño Incrementado]:** el daño aumenta a d4+2s/d6+2s/d4+2w.
@@ -1214,11 +1544,17 @@ items:
           - en:
               name: Sheya's Clutch
               description: |
-                This skill can't be used untrained. This ability allows a character to telekinetically choke a target. The character must have a clear line of sight to the target, and the target must be within 24 meters.
-                
-                A successful skill check indicates that the psion has successfully grasped the target's throat. The target suffers a +2 step penalty to all actions and suffers stun damage each round: Ordinary success, d4s; Good success, d4+2s; Amazing success, d4w.
-                
-                The ability lasts for one round, but the duration can be extended by spending 1 psionic energy point for each additional round.
+                This skill can't be used untrained. This ability allows a character to
+                telekinetically choke a target. The character must have a clear line of sight to
+                the target, and the target must be within 24 meters.
+
+                A successful skill check indicates that the psion has successfully grasped the
+                target's throat. The target suffers a +2 step penalty to all actions and suffers
+                stun damage each round: Ordinary success, d4s; Good success, d4+2s; Amazing
+                success, d4w.
+
+                The ability lasts for one round, but the duration can be extended by spending 1
+                psionic energy point for each additional round.
 
                 **Rank Benefits:**
                 - **At rank 4 [Increased Damage]:** the damage increases to d4+2s/d6+2s/d4w.
@@ -1227,11 +1563,17 @@ items:
           - es:
               name: El Abrazo de Sheya
               description: |
-                Esta habilidad no puede usarse sin entrenamiento. Esta capacidad permite a un personaje asfixiar telequinéticamente a un objetivo. El personaje debe tener una línea de visión clara hacia el objetivo, y este debe estar a menos de 24 metros.
+                Esta habilidad no puede usarse sin entrenamiento. Esta capacidad permite a un
+                personaje asfixiar telequinéticamente a un objetivo. El personaje debe tener una
+                línea de visión clara hacia el objetivo, y este debe estar a menos de 24 metros.
 
-                Una tirada de habilidad exitosa indica que el psiónico ha agarrado con éxito la garganta del objetivo. El objetivo sufre un penalizador de +2 pasos en todas las acciones y sufre daño por aturdimiento cada asalto: éxito Ordinario, d4s; éxito Bueno, d4+2s; éxito Asombroso, d4w.
+                Una tirada de habilidad exitosa indica que el psiónico ha agarrado con éxito la
+                garganta del objetivo. El objetivo sufre un penalizador de +2 pasos en todas las
+                acciones y sufre daño por aturdimiento cada asalto: éxito Ordinario, d4s; éxito
+                Bueno, d4+2s; éxito Asombroso, d4w.
 
-                La capacidad dura un asalto, pero la duración puede extenderse gastando 1 punto de energía psiónica por cada asalto adicional.
+                La capacidad dura un asalto, pero la duración puede extenderse gastando 1 punto
+                de energía psiónica por cada asalto adicional.
 
                 **Beneficios de Rango:**
                 - **Al rango 4 [Daño Incrementado]:** el daño aumenta a d4+2s/d6+2s/d4w.
@@ -1242,12 +1584,12 @@ items:
     url: /psionics/telepathy/
     cost: 5
     localized:
-    - en:
-        name: Telepathy
-        description: Communicate and interact directly with the minds of others.
-    - es:
-        name: Telepatía
-        description: Comunícate e interactúa directamente con la mente de los demás.
+      - en:
+          name: Telepathy
+          description: Communicate and interact directly with the minds of others.
+      - es:
+          name: Telepatía
+          description: Comunícate e interactúa directamente con la mente de los demás.
     items:
       contact:
         attribute: PER
@@ -1259,14 +1601,22 @@ items:
           - en:
               name: Contact
               description: |
-                With this skill, a character can send and receive thoughts to and from another character, usually for the purpose of exchanging information. Modifiers may apply, depending on the range, familiarity, and willingness of the target mind to be contacted.
-                
+                With this skill, a character can send and receive thoughts to and from another
+                character, usually for the purpose of exchanging information. Modifiers may
+                apply, depending on the range, familiarity, and willingness of the target mind
+                to be contacted.
+
                 The type of thoughts that can be exchanged depends on the result of a skill check:
                 - **Ordinary:** simple concepts (brief questions and one-word answers) can be exchanged.
                 - **Good:** moderate discussion (pass notes back and forth, one note per 2 phases) can occur.
                 - **Amazing:** the communicating characters can have a detailed discussion, as though they were conversing vocally.
-                
-                If the psionics-user's intended target isn't willing to communicate, the target's Will resistance modifier is applied as a penalty to the skill check, in addition to any other situation modifiers. If contact is established anyway, an unwilling mind can expel the user by making a successful Will feat check or a Resolve-mental resolve skill check, with a penalty (+1, +2, or +3 steps) depending on the psionics-user's degree of success.
+
+                If the psionics-user's intended target isn't willing to communicate, the
+                target's Will resistance modifier is applied as a penalty to the skill check, in
+                addition to any other situation modifiers. If contact is established anyway, an
+                unwilling mind can expel the user by making a successful Will feat check or a
+                Resolve-mental resolve skill check, with a penalty (+1, +2, or +3 steps)
+                depending on the psionics-user's degree of success.
 
                 **Rank Benefits:**
                 - **At rank 4 [Increased Duration]:** the unit of duration is 1 minute, plus an additional minute per psionic energy point spent to extend it. At rank 8, this duration becomes 5 minutes, and at rank 12, the base unit of duration becomes 30 minutes.
@@ -1275,14 +1625,23 @@ items:
           - es:
               name: Contacto
               description: |
-                Con esta habilidad, un personaje puede enviar y recibir pensamientos de otro personaje, generalmente con el propósito de intercambiar información. Se pueden aplicar modificadores, dependiendo de la distancia, la familiaridad y la disposición de la mente objetivo a ser contactada.
+                Con esta habilidad, un personaje puede enviar y recibir pensamientos de otro
+                personaje, generalmente con el propósito de intercambiar información. Se pueden
+                aplicar modificadores, dependiendo de la distancia, la familiaridad y la
+                disposición de la mente objetivo a ser contactada.
 
                 El tipo de pensamientos que se pueden intercambiar depende del resultado de una tirada de habilidad:
                 - **Ordinario:** se pueden intercambiar conceptos simples (preguntas breves y respuestas de una palabra).
                 - **Bueno:** puede haber una discusión moderada (intercambiar notas, una nota cada 2 fases).
                 - **Asombroso:** los personajes que se comunican pueden tener una discusión detallada, como si estuvieran conversando vocalmente.
 
-                Si el objetivo previsto por el usuario psiónico no está dispuesto a comunicarse, el modificador de resistencia de Voluntad del objetivo se aplica como un penalizador a la tirada de habilidad, además de cualquier otro modificador de situación. Si se establece contacto de todos modos, una mente involuntaria puede expulsar al usuario realizando una proeza de Voluntad exitosa o una tirada de la habilidad Resolución Mental, con un penalizador (+1, +2 o +3 pasos) dependiendo del grado de éxito del usuario psiónico.
+                Si el objetivo previsto por el usuario psiónico no está dispuesto a comunicarse,
+                el modificador de resistencia de Voluntad del objetivo se aplica como un
+                penalizador a la tirada de habilidad, además de cualquier otro modificador de
+                situación. Si se establece contacto de todos modos, una mente involuntaria puede
+                expulsar al usuario realizando una proeza de Voluntad exitosa o una tirada de la
+                habilidad Resolución Mental, con un penalizador (+1, +2 o +3 pasos) dependiendo
+                del grado de éxito del usuario psiónico.
 
                 **Beneficios de Rango:**
                 - **Al rango 4 [Duración Incrementada]:** la unidad de duración es de 1 minuto, más un minuto adicional por cada punto de energía psiónica gastado para extenderla. Al rango 8, esta duración se convierte en 5 minutos, y al rango 12, la unidad base de duración se convierte en 30 minutos.
@@ -1298,11 +1657,18 @@ items:
           - en:
               name: Datalink
               description: |
-                This skill can't be used untrained. This skill is the ability to link one's mind with a computer (or a cybernetic machine, if the optional rules for cybertech are being used) without using a physical connection of any kind.
-                
-                The datalink skill can be used to operate computers or cybernetic machinery with mental commands, to project one's mind into the datastream without using a neural interface jack (NIJack) or gridcaster, or to examine computer data by mentally scanning the storage unit.
-                
-                In game terms, the character is able to use the same functions provided by a computer operating system: copy, delete, error recognition, file management, protection, protocol, and save.
+                This skill can't be used untrained. This skill is the ability to link one's mind
+                with a computer (or a cybernetic machine, if the optional rules for cybertech
+                are being used) without using a physical connection of any kind.
+
+                The datalink skill can be used to operate computers or cybernetic machinery with
+                mental commands, to project one's mind into the datastream without using a
+                neural interface jack (NIJack) or gridcaster, or to examine computer data by
+                mentally scanning the storage unit.
+
+                In game terms, the character is able to use the same functions provided by a
+                computer operating system: copy, delete, error recognition, file management,
+                protection, protocol, and save.
 
                 **Rank Benefits:**
                 - **At rank 3 [Increased Distance]:** the distance at which the character can use the datalink skill increases to 4 (no penalty)/ 8 (+1 step penalty)/ 12 (+2 step penalty) meters. At rank 6, this becomes 8/16/25 meters. At rank 9, it increases again to 15/30/50 meters, and at rank 12, it improves to 30/60/100 meters.
@@ -1313,11 +1679,20 @@ items:
           - es:
               name: Enlace de Datos
               description: |
-                Esta habilidad no puede usarse sin entrenamiento. Esta habilidad es la capacidad de vincular la propia mente con un ordenador (o una máquina cibernética, si se usan las reglas opcionales para cibertecnología) sin usar una conexión física de ningún tipo.
+                Esta habilidad no puede usarse sin entrenamiento. Esta habilidad es la capacidad
+                de vincular la propia mente con un ordenador (o una máquina cibernética, si se
+                usan las reglas opcionales para cibertecnología) sin usar una conexión física de
+                ningún tipo.
 
-                La habilidad enlace de datos se puede utilizar para operar ordenadores o maquinaria cibernética con órdenes mentales, para proyectar la propia mente en el flujo de datos sin utilizar un conector de interfaz neuronal (NIJack) o integrador de red, o para examinar los datos de un ordenador explorando mentalmente la unidad de almacenamiento.
+                La habilidad enlace de datos se puede utilizar para operar ordenadores o
+                maquinaria cibernética con órdenes mentales, para proyectar la propia mente en
+                el flujo de datos sin utilizar un conector de interfaz neuronal (NIJack) o
+                integrador de red, o para examinar los datos de un ordenador explorando
+                mentalmente la unidad de almacenamiento.
 
-                En términos de juego, el personaje puede usar las mismas funciones proporcionadas por un sistema operativo de ordenador: copiar, eliminar, reconocimiento de errores, gestión de archivos, protección, protocolo y guardar.
+                En términos de juego, el personaje puede usar las mismas funciones
+                proporcionadas por un sistema operativo de ordenador: copiar, eliminar,
+                reconocimiento de errores, gestión de archivos, protección, protocolo y guardar.
 
                 **Beneficios de Rango:**
                 - **Al rango 3 [Distancia Incrementada]:** la distancia a la que el personaje puede usar la habilidad de enlace de datos aumenta a 4 (sin penalizador) / 8 (penalizador de +1 paso) / 12 (penalizador de +2 pasos) metros. Al rango 6, esto se convierte en 8/16/25 metros. Al rango 9, aumenta nuevamente a 15/30/50 metros, y al rango 12, mejora a 30/60/100 metros.
@@ -1335,9 +1710,15 @@ items:
           - en:
               name: Drain
               description: |
-                This skill can't be used untrained. The character becomes able to sap the energy of another living being from a short distance away (range 1/2/4). When the psion purchases the skill, he or she selects one of the target's attributes (STR, DEX, CON, INT, or WIL) to govern the effect type.
-                
-                Any success on the skill check results in the target losing 1 point of the related attribute. If the target reaches a 0 score in the affected ability, he or she is helpless and unable to do anything until his or her score improves to at least 1.
+                This skill can't be used untrained. The character becomes able to sap the energy
+                of another living being from a short distance away (range 1/2/4). When the psion
+                purchases the skill, he or she selects one of the target's attributes (STR, DEX,
+                CON, INT, or WIL) to govern the effect type.
+
+                Any success on the skill check results in the target losing 1 point of the
+                related attribute. If the target reaches a 0 score in the affected ability, he
+                or she is helpless and unable to do anything until his or her score improves to
+                at least 1.
 
                 **Rank Benefits:**
                 - **At rank 1 [Attribute Select]:** At ranks 1, 4, 8, and 12, the character can pick a new attribute to sap. The specific attribute affected is chosen before the skill check is made.
@@ -1345,9 +1726,15 @@ items:
           - es:
               name: Drenar
               description: |
-                Esta habilidad no puede usarse sin entrenamiento. El personaje se vuelve capaz de absorber la energía de otro ser vivo desde una corta distancia (rango 1/2/4). Cuando el psiónico adquiere la habilidad, selecciona una de las características del objetivo (FUE, DES, CON, INT o VOL) para gobernar el tipo de efecto.
+                Esta habilidad no puede usarse sin entrenamiento. El personaje se vuelve capaz
+                de absorber la energía de otro ser vivo desde una corta distancia (rango 1/2/4).
+                Cuando el psiónico adquiere la habilidad, selecciona una de las características
+                del objetivo (FUE, DES, CON, INT o VOL) para gobernar el tipo de efecto.
 
-                Cualquier éxito en la tirada de habilidad da como resultado que el objetivo pierda 1 punto de la característica relacionada. Si el objetivo llega a una puntuación de 0 en la capacidad afectada, queda indefenso e incapaz de hacer nada hasta que su puntuación mejore al menos a 1.
+                Cualquier éxito en la tirada de habilidad da como resultado que el objetivo
+                pierda 1 punto de la característica relacionada. Si el objetivo llega a una
+                puntuación de 0 en la capacidad afectada, queda indefenso e incapaz de hacer
+                nada hasta que su puntuación mejore al menos a 1.
 
                 **Beneficios de Rango:**
                 - **Al rango 1 [Selección de Característica]:** Al rango 1, 4, 8 y 12, el personaje puede elegir una nueva característica para absorber. La característica específica afectada se elige antes de realizar la tirada de habilidad.
@@ -1362,9 +1749,18 @@ items:
           - en:
               name: Empathic Projection
               description: |
-                With this skill, a character may alter the mood of other beings—even those with whom the character does not share a language, such as foreigners, aliens, or animals. In game terms, this shifts the emotional state of the target (Combative, Hostile, Neutral, Friendly, Charmed, or Fanatic) by one, two, or three steps, depending on the success (Ordinary, Good, or Amazing). In the event of a Critical Failure, the target's emotional state shifts two steps in the direction opposite of what was desired.
-                
-                The target must be within visual range of the psion. Minimum duration is d4 phases; add an additional number of phases equal to the user's skill rank. Multiple targets can be selected, but each additional target beyond the first provides a cumulative +1 step penalty to the skill check.
+                With this skill, a character may alter the mood of other beings—even those with
+                whom the character does not share a language, such as foreigners, aliens, or
+                animals. In game terms, this shifts the emotional state of the target
+                (Combative, Hostile, Neutral, Friendly, Charmed, or Fanatic) by one, two, or
+                three steps, depending on the success (Ordinary, Good, or Amazing). In the event
+                of a Critical Failure, the target's emotional state shifts two steps in the
+                direction opposite of what was desired.
+
+                The target must be within visual range of the psion. Minimum duration is d4
+                phases; add an additional number of phases equal to the user's skill rank.
+                Multiple targets can be selected, but each additional target beyond the first
+                provides a cumulative +1 step penalty to the skill check.
 
                 **Rank Benefits:**
                 - **At rank 4 [Increased Duration]:** the duration is in rounds (modified by an additional number of rounds equal to the user's skill rank). At rank 8, the duration increases to minutes. Finally, at rank 12, the duration is in 5-minute intervals.
@@ -1372,9 +1768,19 @@ items:
           - es:
               name: Proyección Empática
               description: |
-                Con esta habilidad, un personaje puede alterar el estado de ánimo de otros seres, incluso de aquellos con quienes no comparte un idioma, como extranjeros, alienígenas o animales. En términos de juego, esto cambia el estado emocional del objetivo (Combativo, Hostil, Neutral, Amistoso, Encantado o Fanático) en uno, dos o tres pasos, dependiendo del éxito (Ordinario, Bueno o Asombroso). En caso de un Fallo Crítico, el estado emocional del objetivo cambia dos pasos en la dirección opuesta a la deseada.
+                Con esta habilidad, un personaje puede alterar el estado de ánimo de otros
+                seres, incluso de aquellos con quienes no comparte un idioma, como extranjeros,
+                alienígenas o animales. En términos de juego, esto cambia el estado emocional
+                del objetivo (Combativo, Hostil, Neutral, Amistoso, Encantado o Fanático) en
+                uno, dos o tres pasos, dependiendo del éxito (Ordinario, Bueno o Asombroso). En
+                caso de un Fallo Crítico, el estado emocional del objetivo cambia dos pasos en
+                la dirección opuesta a la deseada.
 
-                El objetivo debe estar dentro del rango visual del psiónico. La duración mínima es de d4 fases; añada un número adicional de fases igual al rango de habilidad del usuario. Se pueden seleccionar múltiples objetivos, pero cada objetivo adicional más allá del primero proporciona un penalizador acumulativo de +1 paso a la tirada de habilidad.
+                El objetivo debe estar dentro del rango visual del psiónico. La duración mínima
+                es de d4 fases; añada un número adicional de fases igual al rango de habilidad
+                del usuario. Se pueden seleccionar múltiples objetivos, pero cada objetivo
+                adicional más allá del primero proporciona un penalizador acumulativo de +1 paso
+                a la tirada de habilidad.
 
                 **Beneficios de Rango:**
                 - **Al rango 4 [Duración Incrementada]:** la duración es en asaltos (modificada por un número adicional de asaltos igual al rango de habilidad del usuario). Al rango 8, la duración aumenta a minutos. Finalmente, al rango 12, la duración es en intervalos de 5 minutos.
@@ -1389,11 +1795,21 @@ items:
           - en:
               name: Illusion
               description: |
-                This skill enables a character to fool a target's mind by projecting an illusion into it. An illusion can be a sight or a sound, but no other senses can be affected. An illusion is not capable of directly causing damage, but might do so indirectly. The skill is usable only against targets the character can see, and it has a maximum range of 5 meters per skill rank of the user. Any actions the user attempts while maintaining an illusion receive a +1 step penalty.
-                
-                The result of the character's skill check determines how powerful the illusion is, which provides a penalty to the target's Awareness-intuition skill check to recognize the illusion: Ordinary, +1 step ; Good, +2 steps; Amazing, +3 steps.
-                
-                Multiple targets can be selected to receive a single illusion, but each additional target beyond the first one provides a cumulative +1 step penalty to the psionics-user's skill check. Each target is entitled to make an Awareness-intuition check to see if the illusion is effective against that individual.
+                This skill enables a character to fool a target's mind by projecting an illusion
+                into it. An illusion can be a sight or a sound, but no other senses can be
+                affected. An illusion is not capable of directly causing damage, but might do so
+                indirectly. The skill is usable only against targets the character can see, and
+                it has a maximum range of 5 meters per skill rank of the user. Any actions the
+                user attempts while maintaining an illusion receive a +1 step penalty.
+
+                The result of the character's skill check determines how powerful the illusion
+                is, which provides a penalty to the target's Awareness-intuition skill check to
+                recognize the illusion: Ordinary, +1 step ; Good, +2 steps; Amazing, +3 steps.
+
+                Multiple targets can be selected to receive a single illusion, but each
+                additional target beyond the first one provides a cumulative +1 step penalty to
+                the psionics-user's skill check. Each target is entitled to make an Awareness-
+                intuition check to see if the illusion is effective against that individual.
 
                 **Rank Benefits:**
                 - **At rank 5 [Vanish]:** a character who reaches rank 5 can mask his or her presence, effectively becoming invisible. The ability affects a number of observers equal to the psionics-user's rank in illusion without a penalty to the skill check; each additional target provides a cumulative +1 step penalty to the user's skill check.
@@ -1401,11 +1817,24 @@ items:
           - es:
               name: Ilusión
               description: |
-                Esta habilidad permite a un personaje engañar la mente de un objetivo proyectando una ilusión en ella. Una ilusión puede ser visual o sonora, pero no puede afectar ningún otro sentido. Una ilusión no es capaz de causar daño directamente, pero puede hacerlo indirectamente. La habilidad solo se puede usar contra objetivos que el personaje pueda ver, y tiene un rango máximo de 5 metros por rango de habilidad del usuario. Cualquier acción que intente el usuario mientras mantiene una ilusión recibe un penalizador de +1 paso.
+                Esta habilidad permite a un personaje engañar la mente de un objetivo
+                proyectando una ilusión en ella. Una ilusión puede ser visual o sonora, pero no
+                puede afectar ningún otro sentido. Una ilusión no es capaz de causar daño
+                directamente, pero puede hacerlo indirectamente. La habilidad solo se puede usar
+                contra objetivos que el personaje pueda ver, y tiene un rango máximo de 5 metros
+                por rango de habilidad del usuario. Cualquier acción que intente el usuario
+                mientras mantiene una ilusión recibe un penalizador de +1 paso.
 
-                El resultado de la tirada de habilidad del personaje determina cuán poderosa es la ilusión, lo que proporciona un penalizador a la tirada de Percepción-intuición del objetivo para reconocer la ilusión: Ordinario, +1 paso; Bueno, +2 pasos; Asombroso, +3 pasos.
+                El resultado de la tirada de habilidad del personaje determina cuán poderosa es
+                la ilusión, lo que proporciona un penalizador a la tirada de Percepción-
+                intuición del objetivo para reconocer la ilusión: Ordinario, +1 paso; Bueno, +2
+                pasos; Asombroso, +3 pasos.
 
-                Se pueden seleccionar múltiples objetivos para recibir una sola ilusión, pero cada objetivo adicional más allá del primero proporciona un penalizador acumulativo de +1 paso a la tirada de habilidad del usuario psiónico. Cada objetivo tiene derecho a hacer una tirada de Percepción-intuición para ver si la ilusión es efectiva contra ese individuo.
+                Se pueden seleccionar múltiples objetivos para recibir una sola ilusión, pero
+                cada objetivo adicional más allá del primero proporciona un penalizador
+                acumulativo de +1 paso a la tirada de habilidad del usuario psiónico. Cada
+                objetivo tiene derecho a hacer una tirada de Percepción-intuición para ver si la
+                ilusión es efectiva contra ese individuo.
 
                 **Beneficios de Rango:**
                 - **Al rango 5 [Desaparecer]:** un personaje que alcanza el rango 5 puede ocultar su presencia, haciéndose efectivamente invisible. La habilidad afecta a un número de observadores igual al rango del usuario psiónico en Ilusión sin penalizador a la tirada de habilidad; cada objetivo adicional proporciona un penalizador acumulativo de +1 paso a la tirada de habilidad del usuario.
@@ -1420,11 +1849,16 @@ items:
           - en:
               name: Mind Blast
               description: |
-                This skill can't be used untrained. This skill allows the user to direct a powerful blast of pure mental energy at another mind. The target must be within visual contact and no more than 40 meters away (range 10/20/40). Penalties for medium and long range are +1 and +2, respectively.
-                
-                Damage depends on the result of a skill check and the user's rank in the skill. Armor doesn't protect against a mind blast.
-                
-                When a character first acquires this skill, he or she is able to cause damage of d4+1s/d4+2s/d8+2s.
+                This skill can't be used untrained. This skill allows the user to direct a
+                powerful blast of pure mental energy at another mind. The target must be within
+                visual contact and no more than 40 meters away (range 10/20/40). Penalties for
+                medium and long range are +1 and +2, respectively.
+
+                Damage depends on the result of a skill check and the user's rank in the skill.
+                Armor doesn't protect against a mind blast.
+
+                When a character first acquires this skill, he or she is able to cause damage of
+                d4+1s/d4+2s/d8+2s.
 
                 **Rank Benefits:**
                 - **At rank 5 [Increased Damage]:** damage becomes d4+2s/d6+2s/d8+2s. At rank 9, the damage caused by the skill goes to 2d4+2s/2d6+2s/2d8+2s.
@@ -1432,11 +1866,17 @@ items:
           - es:
               name: Explosión Mental
               description: |
-                Esta habilidad no puede usarse sin entrenamiento. Esta habilidad permite al usuario dirigir una poderosa explosión de energía mental pura a otra mente. El objetivo debe estar dentro del contacto visual y a no más de 40 metros de distancia (rango 10/20/40). Los penalizadores para el rango medio y largo son +1 y +2, respectivamente.
+                Esta habilidad no puede usarse sin entrenamiento. Esta habilidad permite al
+                usuario dirigir una poderosa explosión de energía mental pura a otra mente. El
+                objetivo debe estar dentro del contacto visual y a no más de 40 metros de
+                distancia (rango 10/20/40). Los penalizadores para el rango medio y largo son +1
+                y +2, respectivamente.
 
-                El daño depende del resultado de una tirada de habilidad y del rango del usuario en la habilidad. La armadura no protege contra una explosión mental.
+                El daño depende del resultado de una tirada de habilidad y del rango del usuario
+                en la habilidad. La armadura no protege contra una explosión mental.
 
-                Cuando un personaje adquiere esta habilidad por primera vez, es capaz de causar un daño de d4+1s/d4+2s/d8+2s.
+                Cuando un personaje adquiere esta habilidad por primera vez, es capaz de causar
+                un daño de d4+1s/d4+2s/d8+2s.
 
                 **Beneficios de Rango:**
                 - **Al rango 5 [Daño Incrementado]:** el daño pasa a ser d4+2s/d6+2s/d8+2s. Al rango 9, el daño causado por la habilidad aumenta a 2d4+2s/2d6+2s/2d8+2s.
@@ -1451,11 +1891,19 @@ items:
           - en:
               name: Mind Shield
               description: |
-                This skill allows a character to establish a mental defense against psionic powers. Mind shield protects against these psionic skills: contact, drain, empathy, illusion, mind reading, mind blast, mind wipe, suggest, and tire.
-                
-                Mind shield provides a penalty to the skill check of another psionic character who's attempting to use any of the above-mentioned skills. The amount of the penalty depends on the result of the user's skill check: Ordinary, +1 step; Good, +2 steps; Amazing, +3 steps. These penalties are cumulative with any other resistances or protections a character might have.
-                
-                The shield created by this skill remains in place for 5-8 hours (d4+4) or until it fails to stop a psionic power directed against it, at which point it collapses.
+                This skill allows a character to establish a mental defense against psionic
+                powers. Mind shield protects against these psionic skills: contact, drain,
+                empathy, illusion, mind reading, mind blast, mind wipe, suggest, and tire.
+
+                Mind shield provides a penalty to the skill check of another psionic character
+                who's attempting to use any of the above-mentioned skills. The amount of the
+                penalty depends on the result of the user's skill check: Ordinary, +1 step;
+                Good, +2 steps; Amazing, +3 steps. These penalties are cumulative with any other
+                resistances or protections a character might have.
+
+                The shield created by this skill remains in place for 5-8 hours (d4+4) or until
+                it fails to stop a psionic power directed against it, at which point it
+                collapses.
 
                 **Rank Benefits:**
                 - **At rank 4 [Parry]:** he or she can attempt to mentally parry the use of contact, illusion, mind reading, mind blast, mind wipe, suggest, or tire against him or her. The parry attempt uses up the character's next available action, but if the Telepathy-mind shield skill check is successful, the opposing skill automatically fails. Further, on an Amazing success using this ability, the parry attempt costs the character no psionic energy points.
@@ -1464,11 +1912,21 @@ items:
           - es:
               name: Escudo Mental
               description: |
-                Esta habilidad permite a un personaje establecer una defensa mental contra los poderes psiónicos. Escudo mental protege contra estas habilidades psiónicas: Contacto, Drenar, Empatía, Ilusión, Leer la mente, Explosión mental, Borrado mental, Sugerencia y Agotar.
+                Esta habilidad permite a un personaje establecer una defensa mental contra los
+                poderes psiónicos. Escudo mental protege contra estas habilidades psiónicas:
+                Contacto, Drenar, Empatía, Ilusión, Leer la mente, Explosión mental, Borrado
+                mental, Sugerencia y Agotar.
 
-                Escudo mental proporciona un penalizador a la tirada de habilidad de otro personaje psiónico que intenta usar cualquiera de las habilidades mencionadas anteriormente. La cantidad del penalizador depende del resultado de la tirada de habilidad del usuario: Ordinario, +1 paso; Bueno, +2 pasos; Asombroso, +3 pasos. Estos penalizadores son acumulativos con cualquier otra resistencia o protección que pueda tener un personaje.
+                Escudo mental proporciona un penalizador a la tirada de habilidad de otro
+                personaje psiónico que intenta usar cualquiera de las habilidades mencionadas
+                anteriormente. La cantidad del penalizador depende del resultado de la tirada de
+                habilidad del usuario: Ordinario, +1 paso; Bueno, +2 pasos; Asombroso, +3 pasos.
+                Estos penalizadores son acumulativos con cualquier otra resistencia o protección
+                que pueda tener un personaje.
 
-                El escudo creado por esta habilidad permanece en su lugar durante 5-8 horas (d4+4) o hasta que no logra detener un poder psiónico dirigido contra él, momento en el que colapsa.
+                El escudo creado por esta habilidad permanece en su lugar durante 5-8 horas
+                (d4+4) o hasta que no logra detener un poder psiónico dirigido contra él,
+                momento en el que colapsa.
 
                 **Beneficios de Rango:**
                 - **Al rango 4 [Parada]:** puede intentar desviar mentalmente el uso de Contacto, Ilusión, Leer la mente, Explosión mental, Borrado mental, Sugerencia o Agotar en su contra. El intento de parada consume la próxima acción disponible del personaje, pero si la tirada de habilidad de Telepatía-escudo mental tiene éxito, la habilidad contraria falla automáticamente. Además, con un éxito Asombroso al usar esta habilidad, el intento de parada no le cuesta puntos de energía psiónica al personaje.
@@ -1484,11 +1942,22 @@ items:
           - en:
               name: Mind Wipe
               description: |
-                This skill can't be used untrained. With this skill, a psionic character can erase memories from a target's mind. One minute's memories can be erased for every rank the character has in mind wipe. The target must be within visual range, and no more than 10 meters away (range 2/5/10). The memories must be no older than 1 day per rank of the psionics-user.
-                
-                The character's skill check determines how difficult it is for the target to recall events during the 'erased' time. On an Ordinary success, the target receives a +1 step penalty on Intelligence feat checks to recall anything that happened during that time. On a Good success, the target receives a +2 step penalty. And on an Amazing success, the target receives a +3 step penalty.
-                
-                In any case, characters with erased memories will definitely know that something is wrong, assuming they are aware of the passage of time or of changes to themselves or their environment. They simply will not quite remember how these things happened.
+                This skill can't be used untrained. With this skill, a psionic character can
+                erase memories from a target's mind. One minute's memories can be erased for
+                every rank the character has in mind wipe. The target must be within visual
+                range, and no more than 10 meters away (range 2/5/10). The memories must be no
+                older than 1 day per rank of the psionics-user.
+
+                The character's skill check determines how difficult it is for the target to
+                recall events during the 'erased' time. On an Ordinary success, the target
+                receives a +1 step penalty on Intelligence feat checks to recall anything that
+                happened during that time. On a Good success, the target receives a +2 step
+                penalty. And on an Amazing success, the target receives a +3 step penalty.
+
+                In any case, characters with erased memories will definitely know that something
+                is wrong, assuming they are aware of the passage of time or of changes to
+                themselves or their environment. They simply will not quite remember how these
+                things happened.
 
                 **Rank Benefits:**
                 - **At rank 3 [Extended Reach]:** the character can "see" a number of weeks into the past equal to his or her skill rank. At rank 6, this becomes months; at rank 9, it becomes years; and at rank 12, it increases to decades.
@@ -1497,11 +1966,22 @@ items:
           - es:
               name: Borrado Mental
               description: |
-                Esta habilidad no puede usarse sin entrenamiento. Con esta habilidad, un personaje psiónico puede borrar recuerdos de la mente de un objetivo. Se pueden borrar los recuerdos de un minuto por cada rango que el personaje tenga en Borrado mental. El objetivo debe estar dentro del rango visual, y a no más de 10 metros de distancia (rango 2/5/10). Los recuerdos no deben tener más de 1 día por rango del usuario psiónico.
+                Esta habilidad no puede usarse sin entrenamiento. Con esta habilidad, un
+                personaje psiónico puede borrar recuerdos de la mente de un objetivo. Se pueden
+                borrar los recuerdos de un minuto por cada rango que el personaje tenga en
+                Borrado mental. El objetivo debe estar dentro del rango visual, y a no más de 10
+                metros de distancia (rango 2/5/10). Los recuerdos no deben tener más de 1 día
+                por rango del usuario psiónico.
 
-                El resultado de la tirada de habilidad del personaje determina lo difícil que es para el objetivo recordar eventos durante el tiempo "borrado". En un éxito Ordinario, el objetivo recibe un penalizador de +1 paso en las proezas de Inteligencia para recordar lo que sucedió durante ese tiempo. En un éxito Bueno, recibe un penalizador de +2 pasos. Y en un éxito Asombroso, recibe un penalizador de +3 pasos.
+                El resultado de la tirada de habilidad del personaje determina lo difícil que es
+                para el objetivo recordar eventos durante el tiempo "borrado". En un éxito
+                Ordinario, el objetivo recibe un penalizador de +1 paso en las proezas de
+                Inteligencia para recordar lo que sucedió durante ese tiempo. En un éxito Bueno,
+                recibe un penalizador de +2 pasos. Y en un éxito Asombroso, recibe un
+                penalizador de +3 pasos.
 
-                En cualquier caso, los personajes con recuerdos borrados sabrán que algo anda mal. Simplemente no recordarán exactamente cómo sucedieron las cosas.
+                En cualquier caso, los personajes con recuerdos borrados sabrán que algo anda
+                mal. Simplemente no recordarán exactamente cómo sucedieron las cosas.
 
                 **Beneficios de Rango:**
                 - **Al rango 3 [Alcance Extendido]:** el personaje puede "ver" en el pasado un número de semanas igual a su rango de habilidad. Al rango 6, esto se convierte en meses; al 9 en años; y al 12 aumenta a décadas.
@@ -1517,22 +1997,47 @@ items:
           - en:
               name: Psychic Armor
               description: |
-                This skill creates a psychic "buffer zone" around the character, which helps to lessen the effect of drain, mind blast, and tire attacks directed at him or her.
-                
-                Psychic armor provides the character with a number of "psionic defense points". An Ordinary success gives the character d6 defense points; a Good success gives him d6+2 defense points; and an Amazing success gives the character d8+2 defense points. Defense points remain for d4+4 hours, or until they are used. A character cannot use this skill to gain more defense points until any previous defense points are lost.
-                
-                These points are used to reduce the amount of damage suffered from mind blast (on a one-for-one basis) or to give the character another option for resisting tire, drain, or empathic projection attacks. Two defense points reduce one point of fatigue loss caused by Telepathy-tire, and three defense points reduce one point of attribute loss caused by Telepathy-drain. Four defense points reduce by one degree the extent to which a character's emotional state has been altered by Telepathy-empathic projection.
+                This skill creates a psychic "buffer zone" around the character, which helps to
+                lessen the effect of drain, mind blast, and tire attacks directed at him or her.
+
+                Psychic armor provides the character with a number of "psionic defense points".
+                An Ordinary success gives the character d6 defense points; a Good success gives
+                him d6+2 defense points; and an Amazing success gives the character d8+2 defense
+                points. Defense points remain for d4+4 hours, or until they are used. A
+                character cannot use this skill to gain more defense points until any previous
+                defense points are lost.
+
+                These points are used to reduce the amount of damage suffered from mind blast
+                (on a one-for-one basis) or to give the character another option for resisting
+                tire, drain, or empathic projection attacks. Two defense points reduce one point
+                of fatigue loss caused by Telepathy-tire, and three defense points reduce one
+                point of attribute loss caused by Telepathy-drain. Four defense points reduce by
+                one degree the extent to which a character's emotional state has been altered by
+                Telepathy-empathic projection.
 
                 **Rank Benefits:**
                 - **At rank 4 [Increased Effect]:** the character gains d6+2 defense points on an Ordinary success, d8+2 on a Good success, and d8+4 on an Amazing success. At rank 8, the character gains d8+2 defense points on an Ordinary success, d8+4 on a Good success, and d12+4 on an Amazing success. At rank 12, the character gains d8+4 defense points on an Ordinary success, d12+4 on a Good success, and d12+6 on an Amazing success.
           - es:
               name: Armadura Psíquica
               description: |
-                Esta habilidad crea una "zona de amortiguamiento" psíquica alrededor del personaje, que ayuda a disminuir el efecto de los ataques de Drenar, Explosión mental y Agotar dirigidos hacia él.
+                Esta habilidad crea una "zona de amortiguamiento" psíquica alrededor del
+                personaje, que ayuda a disminuir el efecto de los ataques de Drenar, Explosión
+                mental y Agotar dirigidos hacia él.
 
-                La armadura psíquica le proporciona al personaje una serie de "puntos de defensa psiónica". Un éxito Ordinario le da al personaje d6 puntos de defensa; uno Bueno le da d6+2 puntos de defensa; y uno Asombroso le da d8+2. Los puntos de defensa se mantienen durante d4+4 horas o hasta que se usan. Un personaje no puede usar esta habilidad para ganar más puntos de defensa hasta que se pierdan los anteriores.
+                La armadura psíquica le proporciona al personaje una serie de "puntos de defensa
+                psiónica". Un éxito Ordinario le da al personaje d6 puntos de defensa; uno Bueno
+                le da d6+2 puntos de defensa; y uno Asombroso le da d8+2. Los puntos de defensa
+                se mantienen durante d4+4 horas o hasta que se usan. Un personaje no puede usar
+                esta habilidad para ganar más puntos de defensa hasta que se pierdan los
+                anteriores.
 
-                Estos puntos se usan para reducir la cantidad de daño sufrido por Explosión Mntal (uno a uno) o para darle al personaje otra opción para resistirse a los ataques de Agotar, Drenar o Proyección empática. Dos puntos de defensa reducen un punto de fatiga causado por Telepatía-agotar, y tres puntos de defensa reducen un punto de pérdida de característica causado por Telepatía-drenar. Cuatro puntos de defensa reducen en un grado la medida en la que el estado emocional de un personaje ha sido alterado por Telepatía-proyección empática.
+                Estos puntos se usan para reducir la cantidad de daño sufrido por Explosión
+                Mntal (uno a uno) o para darle al personaje otra opción para resistirse a los
+                ataques de Agotar, Drenar o Proyección empática. Dos puntos de defensa reducen
+                un punto de fatiga causado por Telepatía-agotar, y tres puntos de defensa
+                reducen un punto de pérdida de característica causado por Telepatía-drenar.
+                Cuatro puntos de defensa reducen en un grado la medida en la que el estado
+                emocional de un personaje ha sido alterado por Telepatía-proyección empática.
 
                 **Beneficios de Rango:**
                 - **Al rango 4 [Efecto Incrementado]:** el personaje gana d6+2 puntos de defensa en un éxito Ordinario, d8+2 en un éxito Bueno, y d8+4 en un éxito Asombroso. Al rango 8, el personaje gana d8+2 puntos de defensa en un éxito Ordinario, d8+4 en un éxito Bueno, y d12+4 en un éxito Asombroso. Al rango 12, el personaje gana d8+4 puntos de defensa en un éxito Ordinario, d12+4 en un éxito Bueno, y d12+6 en un éxito Asombroso.
@@ -1546,22 +2051,41 @@ items:
           - en:
               name: Psychic Projection
               description: |
-                With this skill, a character can separate mind from body and travel wherever desired, leaving his or her physical form behind. The psion's consciousness is able to fly and to pass through solid objects. The character's mental form is invisible and intangible, though his or her physical body is still vulnerable.
-                
-                While travelling psychically, the character's movement rate is equal to (INT + WIL) x 2. The character is effectively naked—being unable to bring physical objects such as clothing or weapons along—though he or she can appear however desired. Only other psychically projected beings can perceive the character in any fashion, though he or she can perceive the real world via sight and sound.
-                
-                A projected individual can return to his or her physical body at any time desired, simply by traveling back to it and successfully performing another Telepathy-psychic projection skill check.
+                With this skill, a character can separate mind from body and travel wherever
+                desired, leaving his or her physical form behind. The psion's consciousness is
+                able to fly and to pass through solid objects. The character's mental form is
+                invisible and intangible, though his or her physical body is still vulnerable.
+
+                While travelling psychically, the character's movement rate is equal to (INT +
+                WIL) x 2. The character is effectively naked—being unable to bring physical
+                objects such as clothing or weapons along—though he or she can appear however
+                desired. Only other psychically projected beings can perceive the character in
+                any fashion, though he or she can perceive the real world via sight and sound.
+
+                A projected individual can return to his or her physical body at any time
+                desired, simply by traveling back to it and successfully performing another
+                Telepathy-psychic projection skill check.
 
                 **Rank Benefits:**
                 - **At rank 12 [Body-Riding]:** the character can attempt to seize control of a body that is already occupied, by making a Telepathy-psychic projection skill check, modified by the target's Will resistance modifier. The result determines how much control the character has over the new form.
           - es:
               name: Proyección Psíquica
               description: |
-                Con esta habilidad, un personaje puede separar la mente del cuerpo y viajar a donde desee, dejando atrás su forma física. La conciencia del psiónico es capaz de volar y atravesar objetos sólidos. La forma mental del personaje es invisible e intangible, aunque su cuerpo físico sigue siendo vulnerable.
+                Con esta habilidad, un personaje puede separar la mente del cuerpo y viajar a
+                donde desee, dejando atrás su forma física. La conciencia del psiónico es capaz
+                de volar y atravesar objetos sólidos. La forma mental del personaje es invisible
+                e intangible, aunque su cuerpo físico sigue siendo vulnerable.
 
-                Al viajar psíquicamente, la velocidad de movimiento del personaje es igual a (INT + VOL) x 2. El personaje está efectivamente desnudo, siendo incapaz de llevar consigo objetos físicos como ropa o armas, aunque puede aparecer como desee. Solo otros seres proyectados psíquicamente pueden percibir al personaje de alguna manera, aunque el personaje puede percibir el mundo real a través de la vista y el oído.
+                Al viajar psíquicamente, la velocidad de movimiento del personaje es igual a
+                (INT + VOL) x 2. El personaje está efectivamente desnudo, siendo incapaz de
+                llevar consigo objetos físicos como ropa o armas, aunque puede aparecer como
+                desee. Solo otros seres proyectados psíquicamente pueden percibir al personaje
+                de alguna manera, aunque el personaje puede percibir el mundo real a través de
+                la vista y el oído.
 
-                Un individuo proyectado puede regresar a su cuerpo físico en cualquier momento deseado, simplemente viajando de regreso a él y realizando con éxito otra tirada de habilidad de Telepatía-proyección psíquica.
+                Un individuo proyectado puede regresar a su cuerpo físico en cualquier momento
+                deseado, simplemente viajando de regreso a él y realizando con éxito otra tirada
+                de habilidad de Telepatía-proyección psíquica.
 
                 **Beneficios de Rango:**
                 - **Al rango 12 [Posesión de Cuerpos]:** el personaje puede intentar tomar el control de un cuerpo que ya está ocupado haciendo una tirada de habilidad de Telepatía-proyección psíquica, modificada por el modificador de resistencia de Voluntad del objetivo. El resultado determina cuánto control tiene el personaje sobre la nueva forma.
@@ -1575,22 +2099,43 @@ items:
           - en:
               name: Suggest
               description: |
-                This specialty skill allows a character to mesmerize another person. If successful, suggest plants a thought into another person's mind and convinces that person that the thought is his or her own. The target must be within visual range of the psion.
-                
-                No suggestion can have a permanent or immediately detrimental effect on the character it's directed at. A suggestion lasts for as long as 1, 2, or 3 hours, depending on the degree of success of the user's skill check (Ordinary, Good, or Amazing). It could expire before its time limit is reached, but it can't be extended without another successful application of the skill at precisely the time when the original suggestion is due to run out.
-                
-                The Gamemaster will assign a bonus or a penalty to the user's skill check to reflect how extreme the suggestion is (e.g. opposed to the character's nature would provide a severe penalty of +3 steps or more).
+                This specialty skill allows a character to mesmerize another person. If
+                successful, suggest plants a thought into another person's mind and convinces
+                that person that the thought is his or her own. The target must be within visual
+                range of the psion.
+
+                No suggestion can have a permanent or immediately detrimental effect on the
+                character it's directed at. A suggestion lasts for as long as 1, 2, or 3 hours,
+                depending on the degree of success of the user's skill check (Ordinary, Good, or
+                Amazing). It could expire before its time limit is reached, but it can't be
+                extended without another successful application of the skill at precisely the
+                time when the original suggestion is due to run out.
+
+                The Gamemaster will assign a bonus or a penalty to the user's skill check to
+                reflect how extreme the suggestion is (e.g. opposed to the character's nature
+                would provide a severe penalty of +3 steps or more).
 
                 **Rank Benefits:**
                 - **At rank 6 [Programmed Suggestion]:** the character can implant a suggestion that does not immediately take effect. Instead, when the subject experiences some kind of sensory cue, the subject acts upon the suggestion. The triggering event can be as long as 1 hour, 1 day, or 1 month later, depending on the result of the user's skill check.
           - es:
               name: Sugerir
               description: |
-                Esta habilidad especializada permite al personaje hipnotizar a otra persona. Si tiene éxito, sugiere implantar un pensamiento en la mente de otra persona y convencer a esa persona de que el pensamiento es propio. El objetivo debe estar dentro del rango visual del psiónico.
+                Esta habilidad especializada permite al personaje hipnotizar a otra persona. Si
+                tiene éxito, sugiere implantar un pensamiento en la mente de otra persona y
+                convencer a esa persona de que el pensamiento es propio. El objetivo debe estar
+                dentro del rango visual del psiónico.
 
-                Ninguna sugerencia puede tener un efecto permanente o inmediatamente perjudicial en el personaje al que está dirigida. Una sugerencia dura 1, 2 o 3 horas, dependiendo del grado de éxito de la tirada de habilidad del usuario (Ordinario, Bueno o Asombroso). Puede expirar antes de que se alcance su límite de tiempo, pero no se puede extender sin otra aplicación exitosa de la habilidad exactamente en el momento en que la sugerencia original debe terminar.
+                Ninguna sugerencia puede tener un efecto permanente o inmediatamente perjudicial
+                en el personaje al que está dirigida. Una sugerencia dura 1, 2 o 3 horas,
+                dependiendo del grado de éxito de la tirada de habilidad del usuario (Ordinario,
+                Bueno o Asombroso). Puede expirar antes de que se alcance su límite de tiempo,
+                pero no se puede extender sin otra aplicación exitosa de la habilidad
+                exactamente en el momento en que la sugerencia original debe terminar.
 
-                El Director de Juego asignará una bonificación o penalizador a la tirada de habilidad del usuario para reflejar lo extrema que es la sugerencia (p. ej., oponerse a la naturaleza del personaje proporcionaría un penalizador de +3 pasos o más).
+                El Director de Juego asignará una bonificación o penalizador a la tirada de
+                habilidad del usuario para reflejar lo extrema que es la sugerencia (p. ej.,
+                oponerse a la naturaleza del personaje proporcionaría un penalizador de +3 pasos
+                o más).
 
                 **Beneficios de Rango:**
                 - **Al rango 6 [Sugerencia Programada]:** el personaje puede implantar una sugerencia que no hace efecto de inmediato. En cambio, cuando el sujeto experimenta algún tipo de señal sensorial, actúa según la sugerencia. El evento desencadenante puede ser hasta 1 hora, 1 día o 1 mes después, dependiendo del resultado de la tirada de habilidad.
@@ -1604,9 +2149,13 @@ items:
           - en:
               name: Tire
               description: |
-                This skill inflicts fatigue damage upon a target, perhaps prompting that character to decide that he or she is in need of rest. The target must be within visual contact and no more than 30 meters away (range 10/20/30). Penalties for medium and long range are +1 and +2 respectively.
-                
-                The amount of damage inflicted depends on the result of a skill check: Ordinary, 1 fatigue point; Good, 2 points; Amazing, 3 points.
+                This skill inflicts fatigue damage upon a target, perhaps prompting that
+                character to decide that he or she is in need of rest. The target must be within
+                visual contact and no more than 30 meters away (range 10/20/30). Penalties for
+                medium and long range are +1 and +2 respectively.
+
+                The amount of damage inflicted depends on the result of a skill check: Ordinary,
+                1 fatigue point; Good, 2 points; Amazing, 3 points.
 
                 **Rank Benefits:**
                 - **At rank 4 [Increased Effect]:** the range increases to 15/30/50 meters. At rank 8, an Ordinary result inflicts 2 points of fatigue damage, a Good inflicts 3 points, and an Amazing 4 points. At rank 12, the range increases again to 20/40/60 meters.
@@ -1614,9 +2163,13 @@ items:
           - es:
               name: Agotar
               description: |
-                Esta habilidad inflige daño por fatiga al objetivo, quizás provocando que decida que necesita descansar. El objetivo debe estar a la vista y a no más de 30 metros de distancia (rango 10/20/30). Los penalizadores a medio y largo alcance son de +1 y +2 respectivamente.
+                Esta habilidad inflige daño por fatiga al objetivo, quizás provocando que decida
+                que necesita descansar. El objetivo debe estar a la vista y a no más de 30
+                metros de distancia (rango 10/20/30). Los penalizadores a medio y largo alcance
+                son de +1 y +2 respectivamente.
 
-                La cantidad de daño infligido depende del resultado de una tirada de habilidad: Ordinario, 1 punto de fatiga; Bueno, 2 puntos; Asombroso, 3 puntos.
+                La cantidad de daño infligido depende del resultado de una tirada de habilidad:
+                Ordinario, 1 punto de fatiga; Bueno, 2 puntos; Asombroso, 3 puntos.
 
                 **Beneficios de Rango:**
                 - **Al rango 4 [Efecto Incrementado]:** el alcance se incrementa a 15/30/50 metros. Al rango 8, un éxito Ordinario inflige 2 puntos de fatiga, 3 si es Bueno y 4 si es Asombroso. Al rango 12, el alcance aumenta de nuevo a 20/40/60 metros.
@@ -1630,12 +2183,22 @@ items:
         localized:
           - en:
               name: Undo
-              description: |
-                With this skill, a telepath can reverse the effects of a successful use of Telepathy-illusion, mind wipe, or suggest. The telepath must achieve a better result than the user of the original telepathic skill, with a +1 step modifier per rank of difference if the original user's rank is higher, or a -1 step modifier per rank of difference if the original user's rank is lower. Only one attempt is allowed each day.
+              description: |-
+                With this skill, a telepath can reverse the effects of a successful use of
+                Telepathy-illusion, mind wipe, or suggest. The telepath must achieve a better
+                result than the user of the original telepathic skill, with a +1 step modifier
+                per rank of difference if the original user's rank is higher, or a -1 step
+                modifier per rank of difference if the original user's rank is lower. Only one
+                attempt is allowed each day.
           - es:
               name: Deshacer
-              description: |
-                Con esta habilidad, un telépata puede revertir los efectos de un uso exitoso de Telepatía-ilusión, borrado mental o sugerir. El telépata debe lograr un mejor resultado que el usuario de la habilidad telepática original, con un modificador de +1 paso por rango de diferencia si el rango del usuario original es mayor, o un modificador de -1 paso por rango de diferencia si el rango del usuario original es menor. Solo se permite un intento por día.
+              description: |-
+                Con esta habilidad, un telépata puede revertir los efectos de un uso exitoso de
+                Telepatía-ilusión, borrado mental o sugerir. El telépata debe lograr un mejor
+                resultado que el usuario de la habilidad telepática original, con un modificador
+                de +1 paso por rango de diferencia si el rango del usuario original es mayor, o
+                un modificador de -1 paso por rango de diferencia si el rango del usuario
+                original es menor. Solo se permite un intento por día.
       guidance:
         attribute: PER
         cost: 4
@@ -1646,9 +2209,17 @@ items:
           - en:
               name: Guidance
               description: |
-                This skill can't be used untrained. With a successful skill check, the telepath can implant one of his or her non-psionic skills in the mind of a subject for as long as he or she continues to expend psionic energy points. The attempt carries the same situational modifiers as the contact skill. The target must be within visual range of the psion using this skill.
-                
-                The subject gains access to the appropriate broad skill on an Ordinary success, half the telepath's rank (rounded down) in the appropriate specialty skill on a Good success, or the telepath's rank -1 on an Amazing success. Obviously, the telepath cannot use guidance to confer skills he or she does not possess—and cannot confer skills learned via another telepath using guidance!
+                This skill can't be used untrained. With a successful skill check, the telepath
+                can implant one of his or her non-psionic skills in the mind of a subject for as
+                long as he or she continues to expend psionic energy points. The attempt carries
+                the same situational modifiers as the contact skill. The target must be within
+                visual range of the psion using this skill.
+
+                The subject gains access to the appropriate broad skill on an Ordinary success,
+                half the telepath's rank (rounded down) in the appropriate specialty skill on a
+                Good success, or the telepath's rank -1 on an Amazing success. Obviously, the
+                telepath cannot use guidance to confer skills he or she does not possess—and
+                cannot confer skills learned via another telepath using guidance!
 
                 **Rank Benefits:**
                 - **At rank 6 [Extended Time]:** the user only needs to expend psionic energy points every 5 rounds in order to continue granting the skill to the subject.
@@ -1656,9 +2227,18 @@ items:
           - es:
               name: Guía
               description: |
-                Esta habilidad no puede usarse sin entrenamiento. Con una tirada de habilidad exitosa, el telépata puede implantar una de sus habilidades no psiónicas en la mente de un objetivo durante el tiempo que continúe gastando puntos de energía psiónica. El intento conlleva los mismos modificadores situacionales que la habilidad Contacto. El objetivo debe estar dentro del rango visual del psiónico.
+                Esta habilidad no puede usarse sin entrenamiento. Con una tirada de habilidad
+                exitosa, el telépata puede implantar una de sus habilidades no psiónicas en la
+                mente de un objetivo durante el tiempo que continúe gastando puntos de energía
+                psiónica. El intento conlleva los mismos modificadores situacionales que la
+                habilidad Contacto. El objetivo debe estar dentro del rango visual del psiónico.
 
-                El sujeto adquiere acceso a la habilidad general apropiada en un éxito Ordinario, la mitad del rango del telépata (redondeado hacia abajo) en la habilidad especializada con un éxito Bueno, o el rango del telépata -1 en un éxito Asombroso. Está claro que el telépata no puede conferir habilidades que no posee él mismo, y no puede conferir habilidades adquiridas a través de la Guía de otra persona.
+                El sujeto adquiere acceso a la habilidad general apropiada en un éxito
+                Ordinario, la mitad del rango del telépata (redondeado hacia abajo) en la
+                habilidad especializada con un éxito Bueno, o el rango del telépata -1 en un
+                éxito Asombroso. Está claro que el telépata no puede conferir habilidades que no
+                posee él mismo, y no puede conferir habilidades adquiridas a través de la Guía
+                de otra persona.
 
                 **Beneficios de Rango:**
                 - **Al rango 6 [Tiempo Extendido]:** el usuario solo necesita gastar puntos de energía psiónica cada 5 asaltos para poder seguir concediendo la habilidad al objetivo.
@@ -1673,22 +2253,39 @@ items:
           - en:
               name: Subdual
               description: |
-                This skill allows the user to engender feelings of calm, or even detachment, in any intelligent species. The target must be within visual range.
-                
-                With an Ordinary result, the target becomes less violent, suffering a +1 step penalty to combat skill checks, including action checks. On a Good success, the reaction is even stronger, conferring a +3 step penalty to combat skill checks and action checks. And on an Amazing success, the subject becomes incapable of launching an attack against another living being, and will hesitate for a phase before attacking objects, structures, or other nonliving things.
-                
-                Most Aleerins, incidentally, would never dream of using this ability to take advantage of another being. To do so requires that the Aleerin succeed at a Resolve-mental resolve check.
+                This skill allows the user to engender feelings of calm, or even detachment, in
+                any intelligent species. The target must be within visual range.
+
+                With an Ordinary result, the target becomes less violent, suffering a +1 step
+                penalty to combat skill checks, including action checks. On a Good success, the
+                reaction is even stronger, conferring a +3 step penalty to combat skill checks
+                and action checks. And on an Amazing success, the subject becomes incapable of
+                launching an attack against another living being, and will hesitate for a phase
+                before attacking objects, structures, or other nonliving things.
+
+                Most Aleerins, incidentally, would never dream of using this ability to take
+                advantage of another being. To do so requires that the Aleerin succeed at a
+                Resolve-mental resolve check.
 
                 **Rank Benefits:**
                 - **At rank 4 [Increased Effect]:** the user can affect two targets with the same skill check. At rank 8, he or she can affect four targets, and eight targets at rank 12.
           - es:
               name: Sometimiento
               description: |
-                Esta habilidad permite al usuario engendrar sentimientos de calma o incluso distanciamiento en cualquier especie inteligente. El objetivo debe encontrarse dentro del alcance visual.
+                Esta habilidad permite al usuario engendrar sentimientos de calma o incluso
+                distanciamiento en cualquier especie inteligente. El objetivo debe encontrarse
+                dentro del alcance visual.
 
-                Con un resultado Ordinario, el objetivo se vuelve menos violento y recibe un penalizador de +1 a las tiradas de combate, incluyendo las de acción. En un éxito Bueno, la reacción es aún mayor, otorgando un penalizador de +3 a las tiradas de combate y de acción. Y en un éxito Asombroso, el objetivo se vuelve incapaz de iniciar un ataque contra otro ser vivo y dudará una fase antes de atacar objetos, estructuras o elementos inanimados.
+                Con un resultado Ordinario, el objetivo se vuelve menos violento y recibe un
+                penalizador de +1 a las tiradas de combate, incluyendo las de acción. En un
+                éxito Bueno, la reacción es aún mayor, otorgando un penalizador de +3 a las
+                tiradas de combate y de acción. Y en un éxito Asombroso, el objetivo se vuelve
+                incapaz de iniciar un ataque contra otro ser vivo y dudará una fase antes de
+                atacar objetos, estructuras o elementos inanimados.
 
-                Dicho sea de paso, la mayoría de los Aleerin nunca soñarían con usar esta habilidad para aprovecharse de otro ser. Para hacerlo, es necesario que el Aleerin supere una tirada de Resolución Mental.
+                Dicho sea de paso, la mayoría de los Aleerin nunca soñarían con usar esta
+                habilidad para aprovecharse de otro ser. Para hacerlo, es necesario que el
+                Aleerin supere una tirada de Resolución Mental.
 
                 **Beneficios de Rango:**
                 - **Al rango 4 [Efecto Incrementado]:** el usuario puede afectar a dos objetivos con la misma tirada de habilidad. Al rango 8, puede afectar a cuatro objetivos, y a ocho objetivos al rango 12.
