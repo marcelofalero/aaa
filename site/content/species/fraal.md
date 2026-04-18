@@ -33,3 +33,20 @@ Fraal aren't physically inclined. They tend to develop their minds instead of th
 Fraal aren't pacifists, but they believe that violence should be the last resort of an intelligent, civilized species. They can seem cold and distant, but that's because they don't have as wide a range of emotions as humans do—and the emotional range they do possess doesn't shift as rapidly or unpredictably as humans' emotions do.
 
 Peace-loving and intellectual, fraal are natural builders and scholars—forever working on creative or scientific endeavors, building or mending relationships (both personal and political), and adding to their pool of knowledge simply for the sake of learning.
+
+## Campaign Settings
+
+### Contemporary Campaign
+In a campaign set in contemporary times, the fraal are the first aliens to make contact with Earth. This is a time of paranoia and secrecy, with various powers working to keep the truth out of widespread circulation. Initially, the aliens are feared and few believe in their existence, but as the campaign unfolds the truth becomes more and more apparent. Of course, in this period of first contact, there are more than enough humans who want to exploit the fraal for personal ends. Government agencies, corporations, media moguls, and others seek to unlock the visitors' secrets for profit, out of curiosity, or to gain power and prestige.
+
+In this type of campaign, one or two fraal join forces with the characters, hoping to find a way to bring the two societies together. The road to peace and a better tomorrow stands before them, if they can work together to steer the two species in the right direction. This is a fragile time, and only great deeds and fortitude can keep events from tearing the world apart.
+
+### Near-Future Campaign
+A campaign set in the near future describes a world where the existence of the fraal is an accepted fact, and the visitors and humans valiantly work together to conquer the stars. No corner of the solar system is off limits to the humans or their alien partners; colonies, research stations, and industrial facilities can be found as near as Earth's moon and as far away as Saturn. This is a time of scientific exploration as the two species struggle to unlock the secrets of faster-than-light (FTL) travel—a technology whose origin lies in the combination of human and fraal science.
+
+In this type of campaign, the fraal are everywhere. They work with every friendly government (or with the world government, if one exists), helping civilization reach to the very limits of the solar system. This is an exciting time, a time of new discoveries, new challenges, and new technologies waiting to be developed for the good of all.
+
+### Far-Future Campaign
+The faster-than-light technology born from the merging of human and fraal science has opened the stars to both species. Humans and their fraal companions have established a galactic society, though the age-old problems of Earth remain to cast a shadow over everything that has been accomplished. New alien species have been discovered, and many of these take their place alongside the original human and fraal explorers. But humans like to draw lines and establish nations, and soon war and the threat of war hinders even greater progress.
+
+Still, there are no limits on where the human spirit can go or what can be discovered. In this type of campaign, the fraal can remain behind to help guide humanity out of its latest crisis, or the species can build FTL ships and head out in a new direction—perhaps in search of the homeworld they lost so many millennia ago....
