@@ -10,12 +10,8 @@ This broad skill represents a character's training in the life sciences. Skill c
 
 ---
 
-# Specialty Skills
-
-
 ## Biology, Botany, Zoology
-
-*This skill can't be used untrained.*
+{{< specialty attr="INT" untrained="yes" cost="3" >}}
 
 These specialty skills must be purchased separately.
 - **Biology:** The study of organisms and biochemical processes.
@@ -27,31 +23,30 @@ These specialty skills must be purchased separately.
 ---
 
 ## Psionics
-
-*This skill can't be used untrained.*
+{{< specialty attr="INT" untrained="yes" cost="3" >}}
 
 This specialty skill represents the scientific study of the biological and biochemical nature of psionic abilities.
 
 ⊗ **Increased Effect:** A character receives a **-1 bonus** at rank 3, **-2** at rank 6, **-3** at rank 9, and **-4** at rank 12 on certain other skill checks that can be assisted by this specialty. These skills include Telepathy—drain, Bio-Kinesis—bioluminescent, and Bio-Kinesis—bioweapon.
 
+---
+
 ## Biology
-### (INT)
+{{< specialty attr="INT" untrained="yes" cost="3" >}}
 
 
 
 ---
 
 ## Botany
-### (INT)
+{{< specialty attr="INT" untrained="yes" cost="3" >}}
 
 
 
 ---
 
 ## Genetics
-### (INT)
-
-*This skill can't be used untrained.*
+{{< specialty attr="INT" untrained="yes" cost="3" >}}
 
 Genetics is the study of heredity and genes, forming the basis of genetic engineering and cloning.
 
@@ -62,9 +57,7 @@ Genetics is the study of heredity and genes, forming the basis of genetic engine
 ---
 
 ## Xenology
-### (INT)
-
-*This skill can't be used untrained.*
+{{< specialty attr="INT" untrained="yes" cost="3" >}}
 
 Xenology is the study of animal life forms of an alien nature and can be used to identify or classify such life forms, including alien plant life. It allows a character to make educated guesses as to the nature, behavior, and abilities of alien life forms.
 
@@ -74,7 +67,7 @@ Xenology is the study of animal life forms of an alien nature and can be used to
 ---
 
 ## Zoology
-### (INT)
+{{< specialty attr="INT" untrained="yes" cost="3" >}}
 
 
 

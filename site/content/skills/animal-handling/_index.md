@@ -22,10 +22,8 @@ Someone with the Animal Handling skill may be able to get a wild animal or an un
 
 The broad skill also enables a character to ride any animal that can be used for basic ground transportation—generally meaning horses, mules, and other large quadrupeds. When an animal is being ridden, the creature moves in every phase. During a phase in which the character has an action, he can use this skill in an attempt to maneuver the animal. See page 198 in Chapter 12: Vehicles for information on the types of maneuvers—Routine, Moderate, and Extreme—a rider may attempt. (Although an animal is not normally thought of as a vehicle, the same general rules apply to riders of animals and drivers of vehicles.)
 
-
 ## Animal Handling Situation Modifiers
-
-### Modifier Complexity
+{{< specialty attr="WIL" untrained="yes" cost="3" >}}
 
 <div class="table-wrapper">
 <table>
@@ -132,7 +130,7 @@ The broad skill also enables a character to ride any animal that can be used for
 ---
 
 ## Animal riding
-### (WIL)
+{{< specialty attr="WIL" untrained="yes" cost="1" >}}
 
 This specialty skill enables a character to improve this aspect of the Animal Handling broad skill. A character with this skill can attempt racing over dangerous terrain, making jumps or performing other stunts, and engaging in mounted combat.
 
@@ -172,7 +170,7 @@ Trick riding can’t be combined with any other action; for instance, it's not p
 ---
 
 ## Animal training
-### (WIL)
+{{< specialty attr="WIL" untrained="yes" cost="3" >}}
 
 This skill allows a character to become able to handle, ride, and train a specific type of animal. He must purchase and improve this specialty skill separately for each type of animal he wants to train. Types of animals include riding animals, pack animals, attack animals, and guard animals. Your Gamemaster has the final say on how animals are classified, and which ones require separate applications of this skill.
 

@@ -32,12 +32,8 @@ The check is modified by the attitude of the targets, plus any other factors det
 
 ---
 
-# Specialty Skills
-
 ## Command
-### (PER)
-
-**Cost: 4**
+{{< specialty attr="PER" untrained="yes" cost="4" >}}
 
 This specialty skill represents the character's ability to lead others by virtue of sheer authoritativeness and persuasive ability. This is the skill used by military officers, elected officials, and law enforcers to issue orders and see that they're carried out.
 
@@ -50,11 +46,7 @@ This specialty skill represents the character's ability to lead others by virtue
 ---
 
 ## Inspire
-### (PER)
-
-**Cost: 3**
-
-*This skill can't be used untrained.*
+{{< specialty attr="PER" untrained="yes" cost="3" >}}
 
 This specialty skill represents the ability to command by example. This skill can be used by military officers, elected officials, and law enforcers who also have the command specialty, but inspire is more often used by those who are trying to lead civil disobedience movements and other types of nonviolent activities.
 

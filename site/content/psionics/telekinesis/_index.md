@@ -9,13 +9,12 @@ type = "skill"
 layout = "list"
 +++
 
-
 Telekinesis represents a character's ability to affect the physical world through mental effort.
 
 ---
 
 ## Cryokinetics
-### (WIL)
+{{< specialty attr="WIL" untrained="no" cost="3" >}}
 
 Absorb thermal energy from an object or area (up to 30 meters), causing it to freeze. Success inflicts energy damage and can potentially freeze mechanisms or targets.
 
@@ -25,7 +24,7 @@ Absorb thermal energy from an object or area (up to 30 meters), causing it to fr
 ---
 
 ## Electrokinetics
-### (WIL)
+{{< specialty attr="WIL" untrained="no" cost="3" >}}
 
 Control and generate electrical energy (range 30 meters). Can be used to power devices or attack targets. Success inflicts energy damage and can short-circuit electronics.
 
@@ -35,7 +34,7 @@ Control and generate electrical energy (range 30 meters). Can be used to power d
 ---
 
 ## Kinetic Blow
-### (WIL)
+{{< specialty attr="WIL" untrained="no" cost="3" >}}
 
 Focus kinetic energy into a single physical strike. This adds to the damage of an unarmed attack.
 - **Ordinary:** +d4s damage
@@ -45,8 +44,7 @@ Focus kinetic energy into a single physical strike. This adds to the damage of a
 ---
 
 ## Kinetic Shield
-### (WIL)
-*Extended duration.*
+{{< specialty attr="WIL" untrained="no" cost="3" extended="true" >}}
 
 Create a field of force to deflect physical and energy attacks (but not psionic ones). The shield acts as armor.
 
@@ -56,8 +54,7 @@ Create a field of force to deflect physical and energy attacks (but not psionic 
 ---
 
 ## Levitation
-### (WIL)
-*Extended duration.*
+{{< specialty attr="WIL" untrained="yes" cost="3" extended="true" >}}
 
 Defy gravity to lift oneself or others. The character can move vertically at a specified rate (initially 2 meters/phase).
 
@@ -67,7 +64,7 @@ Defy gravity to lift oneself or others. The character can move vertically at a s
 ---
 
 ## Photokinetics
-### (WIL)
+{{< specialty attr="WIL" untrained="yes" cost="1" extended="true" >}}
 
 Manipulate light to create flashes, illuminate areas, or even create laser-like bolts (range 100 meters).
 
@@ -78,7 +75,7 @@ Manipulate light to create flashes, illuminate areas, or even create laser-like 
 ---
 
 ## Psychokinetics
-### (WIL)
+{{< specialty attr="WIL" untrained="yes" cost="3" extended="true" >}}
 
 Move and manipulate solid objects at a distance. Can also be used to throw objects for damage.
 
@@ -91,7 +88,7 @@ Move and manipulate solid objects at a distance. Can also be used to throw objec
 ---
 
 ## Pyrokinesis
-### (WIL)
+{{< specialty attr="WIL" untrained="no" cost="3" >}}
 
 Excite molecules to generate heat and fire (range 30 meters). Targets burst into flames, taking energy damage over time.
 
@@ -101,7 +98,7 @@ Excite molecules to generate heat and fire (range 30 meters). Targets burst into
 ---
 
 ## Sheya's Clutch
-### (WIL - Sesheyan Trained)
+{{< specialty attr="WIL" untrained="no" cost="4" extended="true" >}}
 
 Mentally crush the heart or internal organs of a living being (range 40 meters). Bypasses all non-psionic armor. This is physically draining for the user, who also takes damage.
 

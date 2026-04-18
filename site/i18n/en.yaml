@@ -22,3 +22,7 @@ yes:
   other: "Yes"
 no:
   other: "No"
+cost:
+  other: "Cost"
+extendedDuration:
+  other: "Extended Dur."

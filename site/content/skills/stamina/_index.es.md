@@ -21,7 +21,7 @@ Cuando un personaje realiza ciertas actividades que provocan fatiga, debe realiz
 - **Éxito:** No sufre daño por fatiga.
 
 ## Resistencia
-### (CON)
+{{< specialty attr="CON" untrained="yes" cost="4" >}}
 
 {{% list %}}
 
@@ -45,9 +45,7 @@ Resistir el dolor solo disminuye o elimina las penalizaciones de situación caus
 ---
 
 ## Resist pain
-### (CON)
-
-*This skill can’t be used untrained.*
+{{< specialty attr="CON" untrained="yes" cost="5" >}}
 
 Resist pain allows a Personaje to function normally and ignore some or all of the situation penalties for suffering large amounts of Aturdimiento, Herida, or Mortal (but not Fatiga) damage.
 

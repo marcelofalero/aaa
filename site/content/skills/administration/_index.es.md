@@ -19,7 +19,7 @@ La habilidad de Administración de un personaje también se puede usar para obst
 ---
 
 ## Burocracia
-### (INT)
+{{< specialty attr="INT" untrained="yes" cost="3" >}}
 
 Esta especialización mide la capacidad de un personaje para engrasar (o atascar) los engranajes de la burocracia. Las solicitudes importantes, permisos, autorizaciones, informes u otras solicitudes burocráticas se pueden procesar más rápido y de manera más eficiente CON el uso de esta habilidad. Por el contrario, esta habilidad se puede utilizar para hacer que los mismos procesos burocráticos sean más lentos para otros.
 
@@ -28,7 +28,7 @@ Esta especialización mide la capacidad de un personaje para engrasar (o atascar
 ---
 
 ## Gestión
-### (INT)
+{{< specialty attr="INT" untrained="yes" cost="3" >}}
 
 Esta habilidad indica la capacidad de un personaje para gestionar tanto al personal como las tareas administrativas. Un gerente capacitado puede aumentar la productividad, inspirar a los trabajadores y supervisar el funcionamiento de un negocio u oficina.
 

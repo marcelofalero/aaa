@@ -14,7 +14,7 @@ The **Covert Ops** broad skill focuses on remaining undetected and bypassing phy
 ---
 
 ## Conceal
-### (DEX)
+{{< specialty attr="DEX" untrained="yes" cost="3" >}}
 
 This specialty skill represents the ability to hide objects from view or sensors. While **Stealth** is used to hide oneself, **Conceal** is used to hide items, such as weapons on one's person, contraband in a vehicle, or a secret compartment in a room.
 
@@ -34,7 +34,7 @@ A concealed weapon is worn in a place not normally searched or not subject to ea
 ---
 
 ## Disguise
-### (CHA)
+{{< specialty attr="CHA" untrained="yes" cost="3" >}}
 
 Disguise is the ability to change your appearance to look like someone else or to blend into a crowd.
 
@@ -47,9 +47,7 @@ A character's Disguise situation die is modified by the observer's Awareness-per
 ---
 
 ## Pickpocket
-### (DEX)
-
-*This skill can't be used untrained.*
+{{< specialty attr="DEX" untrained="yes" cost="3" >}}
 
 This specialty skill allows a character to remove objects from a person (or plant something) without that person noticing. The base situation die is determined by the target's Will resistance modifier.
 
@@ -79,7 +77,7 @@ This specialty skill allows a character to remove objects from a person (or plan
 ---
 
 ## Stealth
-### (DEX)
+{{< specialty attr="DEX" untrained="yes" cost="3" >}}
 
 This specialty (also known as Unified Stealth) merges the techniques of hide, sneak, and shadow into a single field of expertise. It is the art of remaining undetected while stationary or in motion.
 

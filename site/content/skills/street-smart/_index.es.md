@@ -18,11 +18,22 @@ Los modificadores de situación dependen del objeto o servicio buscado, su legal
 - **Asombroso:** penalización de +3.
 
 ## Habilidades de Especialidad
-### (VOL)
+{{< specialty attr="VOL" untrained="yes" cost="3" >}}
 
 {{% list %}}
 - **Elementos Criminales:** Establecer contacto y tratar CON el crimen organizado, criminales profesionales y pandillas.
 - **Conocimiento de la Calle:** Familiaridad CON el funcionamiento interno de una organización o área geográfica en particular.
+
+---
+
+## Criminal elements
+{{< specialty attr="VOL" untrained="yes" cost="5" >}}
+
+This Especialidad represents a Personaje's ability to make contact with and deal with those who are considered part of the criminal element—organized crime, professional criminals, street gangs, and underworld organizations.
+
+Whenever a Personaje tries to locate or interact with these groups, he uses this skill.
+
+---
 
 ---
 

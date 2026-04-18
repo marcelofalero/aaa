@@ -6,20 +6,14 @@ type = "skill"
 layout = "list"
 +++
 
-*This skill can't be used untrained.*
-
 This broad skill provides a character with the training needed to perform medical procedures, including diagnosing ailments and researching medical information.
 
 A character with just the broad skill cannot treat damage; **Treatment** or **Surgery** specialties (or the **First Aid** specialty from the Knowledge broad skill) are required for those tasks.
 
 ---
 
-# Specialty Skills
-
-
 ## Forensic Science
-
-*This skill can't be used untrained.*
+{{< specialty attr="INT" untrained="yes" cost="3" >}}
 
 Forensic science is the application of medical and scientific knowledge to legal problems and criminal investigations. It is used to determine cause of death, identify remains, and analyze evidence from a crime scene.
 
@@ -28,8 +22,7 @@ Forensic science is the application of medical and scientific knowledge to legal
 ---
 
 ## Medical Knowledge
-
-*This skill can't be used untrained.*
+{{< specialty attr="INT" untrained="yes" cost="3" >}}
 
 This specialty skill represents a character's deep academic and practical understanding of medical principles, history, and advanced theory.
 
@@ -37,30 +30,22 @@ This specialty skill represents a character's deep academic and practical unders
 
 ---
 
-## Xenomedicine [Specific]
+## Xenomedicine
+{{< specialty attr="INT" untrained="yes" cost="3" >}}
 
-*This skill can't be used untrained.*
 
-This specialty skill involves the medical study of a specific alien species, allowing a character to use his other medical skills on members of that species. Initially, a **+3 step penalty** is applied to healing alien characters if this skill is not known.
-In this context, "alien species" refers to any species not well known to you. For a Human a Weren is not considered alien as their are easily recognizable and their biology is well known.
 
-⊗ **Improved Treatment:** The penalty for treating the specific alien species is reduced as follows:
-- **Rank 3:** Penalty reduced to +2 steps.
-- **Rank 6:** Penalty reduced to +1 step.
-- **Rank 9:** Penalty eliminated.
-- **Rank 12:** Character receives a -1 step bonus.
+---
 
 ## Forensics
-### (INT)
+{{< specialty attr="INT" untrained="yes" cost="3" >}}
 
 
 
 ---
 
 ## Psychology
-### (INT)
-
-*This skill can't be used untrained.*
+{{< specialty attr="INT" untrained="yes" cost="5" >}}
 
 Psychology is the study of the mind and behavior. It can be used to diagnose mental disorders, understand motivations, or predict behavioral patterns.
 
@@ -71,9 +56,7 @@ Psychology is the study of the mind and behavior. It can be used to diagnose men
 ---
 
 ## Surgery
-### (INT)
-
-*This skill can't be used untrained.*
+{{< specialty attr="INT" untrained="yes" cost="5" >}}
 
 Surgery involves the treatment of injuries or disorders of the body by incision or manipulation. It is used to repair internal damage, remove foreign objects, or perform organ transplants.
 
@@ -84,9 +67,7 @@ Surgery involves the treatment of injuries or disorders of the body by incision 
 ---
 
 ## Treatment
-### (INT)
-
-*This skill can't be used untrained.*
+{{< specialty attr="INT" untrained="yes" cost="4" >}}
 
 The treatment specialty can be used for all tasks first aid covers, but with greater effectiveness.
 
@@ -99,13 +80,6 @@ The treatment specialty can be used for all tasks first aid covers, but with gre
 ⊗ **Improved Treatment:** A character receives a **-1 bonus** at rank 3, **-2** at rank 6, **-3** at rank 9, and **-4** at rank 12 on Treatment checks.
 
 ---
-
----
-
-## Xenomedicine [spec]
-### (INT)
-
-
 
 ---
 

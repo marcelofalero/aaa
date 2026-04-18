@@ -71,7 +71,7 @@ You have **60 points** to divide among six Abilities. Scores must meet professio
 
 ### Resistance Modifiers
 
-Higher ability scores provide a "resistance modifier" that penalizes opponents trying to act against you.
+Ability scores provide a "resistance modifier" that modifies the difficulty for opponents trying to act against you. High scores penalize opponents, while exceptionally low scores can grant them a bonus.
 
 <div style="width: max-content;">
 

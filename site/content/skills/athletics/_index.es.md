@@ -12,28 +12,8 @@ Esta habilidad amplia proporciona a un personaje las capacidades de un atleta na
 
 # Habilidades de Especialidad
 
-## Escalar
-### (FUE)
-
-Esta habilidad de especialidad permite a un personaje escalar muros, ascender montañas o trepar por encima de obstáculos.
-
-En escenas de combate, un personaje puede escalar un cierto número de metros en una fase, dependiendo del resultado de una comprobación de habilidad:
-- **Fallo Crítico:** caída (si es posible)
-- **Marginal:** sin progreso en esta acción.
-- **Ordinario:** 1 metro.
-- **Bueno:** 2 metros.
-- **Asombroso:** 3 metros.
-
-En escenas de desafío o siempre que el Director de Juego determine que se aplica una unidad de tiempo distinta a los asaltos, la comprobación de escalar es una comprobación de habilidad compleja.
-
-Si un personaje obtiene un Fallo Crítico en una comprobación de escalar, pierde el agarre y se cae (a menos que el equipo lo impida). Si le quedan acciones en el asalto, puede intentar recuperar el agarre obteniendo un éxito Ordinario o mejor en una segunda comprobación de escalar CON una penalización de +1 además de cualquier otro modificador que se aplique. Si este intento falla o si al personaje no le quedan acciones, se cae.
-
----
-
----
-
 ## Saltar
-### (FUE)
+{{< specialty attr="FUE" untrained="yes" cost="2" >}}
 
 CON la habilidad de saltar, un personaje puede intentar saltar obstáculos realizando un salto horizontal (en carrera o desde parado) o un salto vertical.
 
@@ -54,7 +34,7 @@ En cualquier intento de salto, un resultado de Fallo Crítico indica que el pers
 ---
 
 ## Nadar
-### (FUE)
+{{< specialty attr="FUE" untrained="yes" cost="1" >}}
 
 La habilidad de especialidad de Nadar representa la capacidad de un personaje para moverse a través del agua u otros entornos líquidos sin hundirse ni ahogarse.
 
@@ -65,7 +45,7 @@ La habilidad de especialidad de Nadar representa la capacidad de un personaje pa
 ---
 
 ## Lanzar
-### (FUE)
+{{< specialty attr="FUE" untrained="yes" cost="2" >}}
 
 CON la habilidad de lanzar, un personaje puede arrojar CON precisión pelotas, dardos, piedras, cuchillos arrojadizos, granadas y otros objetos pequeños a un objetivo específico.
 
@@ -80,6 +60,13 @@ La precisión de un lanzamiento depende del alcance y del grado de éxito obteni
 | **Ordinario** | En el blanco | Falla por 2m | Falla por 4m |
 | **Bueno** | En el blanco | En el blanco | Falla por 2m |
 | **Asombroso** | En el blanco | Siempre en el blanco | En el blanco |
+
+---
+
+## Throw
+{{< specialty attr="FUE" untrained="yes" cost="2" >}}
+
+
 
 ---
 

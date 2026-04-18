@@ -6,8 +6,6 @@ type = "skill"
 layout = "list"
 +++
 
-**Free to mechalus characters.**
-
 Computers are an integral part of human society, and many alien societies as well, at Progress Level 5 and higher. (For much more information on computers and related material, see Chapter 10: Computers.) Most computers and computer-assisted machines are designed to be user-friendly in routine situations. The broad skill provides a character with a basic understanding of computers and computer systems. (In comparison, the Knowledge—computer operation skill merely gives a character the ability to use a computer effectively, but does not allow any understanding of how the machine does what it does.)
 
 The three primary uses for the Computer Science broad skill are information retrieval, computer repair, and programming. These uses are described below.
@@ -26,10 +24,8 @@ For more information on how the Computer Science specialty skills are used, see 
 
 ---
 
-# Specialty Skills
-
 ## Hacking
-### (INT)
+{{< specialty attr="INT" untrained="yes" cost="4" >}}
 
 Hacking is the ability to break computer codes and bypass computer security for the purposes of gaining access to restricted data or secure computer systems. Hacking can be performed at a computer station that’s physically connected to the data stores in question, or it can be performed from a distant location by creating a link via a network of some kind. It's most often used to retrieve secured data, to enter and take control of a computer system, or to perform some type of sabotage such as erasing files or introducing a virus of some kind.
 
@@ -42,7 +38,7 @@ This specialty skill allows a character equipped with a computer to perform the 
 ---
 
 ## Hardware
-### (INT)
+{{< specialty attr="INT" untrained="yes" cost="3" >}}
 
 This specialty represents a character's knowledge of and proficiency with the physical components that make up a computer. Understanding how a computer system works, being able to set one up quickly, designing and building your own computer, and repairing computer equipment are some of the tasks covered by this skill.
 
@@ -53,7 +49,7 @@ This specialty represents a character's knowledge of and proficiency with the ph
 ---
 
 ## Programming
-### (INT)
+{{< specialty attr="INT" untrained="yes" cost="3" >}}
 
 This specialty skill enables a character to improve her ability to analyze computer programs, modify existing programs, and (at higher ranks) create programs by writing her own code. Having rank 1 in this skill enables a character to modify the source code of programs of Ordinary quality and Ordinary complexity.
 

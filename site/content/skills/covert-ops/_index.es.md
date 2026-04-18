@@ -14,7 +14,7 @@ La habilidad general de **Operaciones Encubiertas** (anteriormente Sigilo y Mani
 ---
 
 ## Ocultar
-### (DES)
+{{< specialty attr="DES" untrained="yes" cost="3" >}}
 
 Esta especialización representa la habilidad de esconder objetos de la vista o de los sensores. Mientras que **Sigilo** se usa para esconderse a uno mismo, **Ocultar** se usa para esconder objetos, como armas en el cuerpo, contrabando en un vehículo o un compartimento secreto en una habitación.
 
@@ -32,7 +32,7 @@ Un arma oculta se lleva en un lugar que normalmente no se registra o que no es f
 ---
 
 ## Disfraz
-### (CAR)
+{{< specialty attr="CAR" untrained="yes" cost="3" >}}
 
 Disfraz es la habilidad de cambiar tu apariencia para parecerte a otra persona o para mezclarte CON la multitud.
 
@@ -45,9 +45,7 @@ El dado de situación de Disfraz de un personaje se modifica por el modificador 
 ---
 
 ## Abrir Cerraduras
-### (DES)
-
-*Esta habilidad no se puede usar sin entrenamiento.*
+{{< specialty attr="DES" untrained="yes" cost="3" >}}
 
 Esta especialización permite a un personaje abrir cerraduras físicas (puertas, cajas fuertes, vehículos, etc.). Generalmente se emplea CON herramientas que proporcionan una bonificación al dado de situación.
 
@@ -58,9 +56,7 @@ La habilidad de abrir cerraduras es inútil contra una cerradura asistida por co
 ---
 
 ## Carterear
-### (DES)
-
-*Esta habilidad no se puede usar sin entrenamiento.*
+{{< specialty attr="DES" untrained="yes" cost="3" >}}
 
 Esta especialización permite a un personaje quitar objetos de una persona (o colocar algo) sin que esa persona se dé cuenta. El dado de situación base se determina por el modificador de resistencia de Voluntad del objetivo.
 

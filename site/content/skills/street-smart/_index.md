@@ -27,17 +27,17 @@ This broad skill provides a character with general knowledge in the protocols of
 
 ---
 
-# Specialty Skills
-
-
 ## Street Knowledge
+{{< specialty attr="WIL" untrained="yes" cost="3" >}}
 
 This skill enables a character to improve his familiarity with the inner workings of a particular organization or geographical area. Unlike other specialties, it must be purchased separately for each organization or area (e.g., **Street Knowledge—Alpha Colony** or **Street Knowledge—The Void Syndicate**).
 
 A character needs to buy this specialty twice in order to become familiar with how things get done in a specific interstellar organization or interstellar trade union.
 
+---
+
 ## Criminal elements
-### (WIL)
+{{< specialty attr="WIL" untrained="yes" cost="5" >}}
 
 This specialty skill represents a character's ability to make contact with and deal with those who are considered part of the criminal element—organized crime, professional criminals, street gangs, and underworld organizations.
 

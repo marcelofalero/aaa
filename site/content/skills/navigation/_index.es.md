@@ -12,10 +12,8 @@ El tiempo óptimo para un intento de Navegación es de 5 minutos. Cada minuto me
 
 ---
 
-# Especialidades
-
 ## Astrohabilidad—sistema
-### (INT)
+{{< specialty attr="INT" untrained="yes" cost="3" >}}
 
 Esta habilidad de especialidad cubre la navegación en un entorno planetario, utilizando mapas, accidentes del terreno, brújulas y sistemas GPS para desplazarse de un punto a otro.
 
@@ -26,11 +24,22 @@ Esta habilidad de especialidad cubre la navegación en un entorno planetario, ut
 ---
 
 ## Navegación—superficie
-### (INT)
+{{< specialty attr="INT" untrained="yes" cost="3" >}}
 
 La habilidad de pionero implica identificar y crear nuevos caminos a través de tierras salvajes o terrenos inexplorados donde no existen mapas.
 
 ▶ **Explorador:** En el rango 4, el personaje puede guiar a un grupo a través de un terreno difícil a velocidad normal. En el rango 8, el personaje puede encontrar pasajes ocultos o atajos que reduzcan el tiempo de viaje en un 25%.
+
+---
+
+---
+
+## Navigation—surface
+{{< specialty attr="INT" untrained="yes" cost="3" >}}
+
+This Especialidad covers Navegación in a planetary environment, utilizing maps, terrain features, compasses, and GPS systems to move from one point to another.
+
+⊗ **Increased Effect:** A Personaje receives a **-1 bonus** at rank 3, **-2** at rank 6, **-3** at rank 9, and **-4** at rank 12 on Navegación—superficie checks when using maps and Navegación sensors.
 
 ---
 

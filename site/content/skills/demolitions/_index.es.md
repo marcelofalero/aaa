@@ -19,7 +19,7 @@ Además, completar una tirada de habilidad compleja de complejidad [Buena] indic
 ---
 
 ## Desarmar
-### (INT)
+{{< specialty attr="INT" untrained="yes" cost="4" >}}
 
 La habilidad de desarmar le permite a un personaje intentar inutilizar bombas, minas y otros paquetes de demolición antes de que exploten. Un personaje no necesita hacer una tirada de habilidad para desarmar su propio trabajo o cualquier explosivo común. Se requiere una tirada de habilidad cuando el tiempo es esencial, si el explosivo es de fabricación inusual o si ha sido manipulado CON dispositivos de seguridad o trampas explosivas. Excepto en los casos más simples, se trata de una tirada de habilidad compleja (ver página 62).
 
@@ -28,7 +28,7 @@ La habilidad de desarmar le permite a un personaje intentar inutilizar bombas, m
 ---
 
 ## Explosivos improvisados
-### (INT)
+{{< specialty attr="INT" untrained="yes" cost="3" >}}
 
 Esta habilidad no se puede usar sin entrenamiento. Esta habilidad le permite a un personaje intentar construir un paquete de demolición desde cero, o manipular municiones militares como un proyectil de mortero para que sea utilizable como una carga de demolición. El uso de la habilidad supone que el personaje tiene los materiales y herramientas adecuados a mano; la tirada de habilidad recibe una penalización de +2 si el personaje se ve obligado a usar artículos comunes (como cosas que se encuentran en una casa).
 
@@ -41,7 +41,7 @@ Luego se realiza una tirada de habilidad para determinar el grado de éxito, que
 ---
 
 ## Colocar Explosivos
-### (INT)
+{{< specialty attr="INT" untrained="yes" cost="3" >}}
 
 Esta especialización permite a un personaje mejorar su habilidad para colocar cargas explosivas fabricadas. Consulte la descripción de la habilidad general de Demoliciones para obtener información sobre cómo se emplea esta habilidad.
 

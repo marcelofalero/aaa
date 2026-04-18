@@ -30,3 +30,7 @@ social:
   other: "Social"
 other:
   other: "Otros"
+cost:
+  other: "Costo"
+extendedDuration:
+  other: "Dur. Ext."

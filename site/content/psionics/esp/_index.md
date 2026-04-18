@@ -9,14 +9,12 @@ type = "skill"
 layout = "list"
 +++
 
-
 This skill allows a character to experience his environment through an agency beyond normal senses (Extrasensory Perception).
 
 ---
 
 ## Battle Mind
-### (INT)
-*Extended duration.*
+{{< specialty attr="INT" untrained="no" cost="4" extended="true" >}}
 
 This skill allows a character to focus the mind on the battle around him or her, thereby increasing the character's reaction time and accuracy. Each success with this skill grants a bonus to the character's [Action Checks](/core-mechanics/characters-in-action/#action-check).
 
@@ -32,8 +30,7 @@ This skill allows a character to focus the mind on the battle around him or her,
 ---
 
 ## Clairaudience
-### (INT)
-*Extended duration.*
+{{< specialty attr="INT" untrained="yes" cost="2" extended="true" >}}
 
 With this skill, a character selects a location and projects his or her mind to that spot, hearing sounds as though physically present.
 
@@ -69,8 +66,7 @@ This duration can be extended by spending 1 psionic energy point for every addit
 ---
 
 ## Clairvoyance
-### (INT)
-*Extended duration.*
+{{< specialty attr="INT" untrained="yes" cost="2" extended="true" >}}
 
 To employ this skill, a character selects a location and projects his or her mind to that spot, seeing everything going on around that spot as though physically there. This projection must be to an unobstructed location, not (for instance) to a place inside a solid object.
 
@@ -86,7 +82,7 @@ The better the result of the skill check, the longer the ability lasts:
 ---
 
 ## Dream Hunt
-### (INT - Sesheyan Trained)
+{{< specialty attr="INT" untrained="no" cost="3" >}}
 
 Mindwalkers take the role of mystics and shamans in sesheyan society. Though originally developed for hunting animals, the technique works on any living being. The sesheyan (or sesheyan-trained) psion concentrates on the subject and mentally engages in a hunt. The better the subject's habits are known, the easier the hunt. If the skill check is successful, the psion determines the place where the quarry will be at any single locale in the next 24 hours, though not when the prey will be there.
 
@@ -104,8 +100,7 @@ The degree of success determines how accurately the psion can pinpoint the locat
 ---
 
 ## Empathy
-### (INT)
-*Extended duration.*
+{{< specialty attr="INT" untrained="yes" cost="1" >}}
 
 This skill allows a psion to "read" the surface emotions of another character in visual range. A successful use of empathy provides a bonus when using encounter skills upon that target character:
 - **Ordinary:** –1 step
@@ -120,8 +115,7 @@ This skill allows a psion to "read" the surface emotions of another character in
 ---
 
 ## Mind Reading
-### (INT)
-*Extended duration.*
+{{< specialty attr="INT" untrained="yes" cost="3" >}}
 
 This skill allows a psion to "read" the surface thoughts of another character within 500 meters. The contact lasts for a limited time:
 - **Ordinary:** 1 phase (random thoughts)
@@ -136,7 +130,7 @@ This skill allows a psion to "read" the surface thoughts of another character wi
 ---
 
 ## Navcognition
-### (INT - Trained Only)
+{{< specialty attr="INT" untrained="no" cost="3" >}}
 
 This specialty skill represents a psion's innate ability to know exactly where he or she is in relation to a fixed location. This allows for astrogation and mapping without specialized equipment.
 
@@ -148,7 +142,8 @@ This specialty skill represents a psion's innate ability to know exactly where h
 ---
 
 ## Postcognition
-### (INT)
+{{< specialty attr="INT" untrained="yes" cost="3" >}}
+
 The character can sense the psychic residue of an area or object to see past events:
 - **Ordinary:** sensing general emotions.
 - **Good:** brief flashes of events.
@@ -162,7 +157,7 @@ In general, a character can see a number of days into the past equal to his or h
 ---
 
 ## Precognition
-### (INT - Trained Only)
+{{< specialty attr="INT" untrained="no" cost="4" >}}
 
 Receive impressions about possible future events. Usually triggered by the Gamemaster, but can be forced at double PP cost and a +3 step penalty. Success grants a "last resort point" usable only in that scene.
 
@@ -172,7 +167,8 @@ Receive impressions about possible future events. Usually triggered by the Gamem
 ---
 
 ## Psychometry
-### (INT)
+{{< specialty attr="INT" untrained="yes" cost="3" >}}
+
 Read psychic impressions from inanimate objects through touch:
 - **Ordinary:** receive simple emotions.
 - **Good:** receive simple images.

@@ -15,9 +15,7 @@ Las comprobaciones de habilidad realizadas para determinar si un personaje conoc
 # Habilidades de Especialidad
 
 ## Invención
-### (INT)
-
-*Esta habilidad no puede usarse sin entrenamiento.*
+{{< specialty attr="INT" untrained="yes" cost="3" >}}
 
 La invención permite a un personaje construir un componente o sistema electrónico o mecánico desde cero, o modificar un dispositivo existente para que realice una nueva función.
 
@@ -30,9 +28,7 @@ El uso de esta habilidad requiere tiempo; las comprobaciones de Invención son s
 ---
 
 ## Remendar
-### (INT)
-
-*Esta habilidad no puede usarse sin entrenamiento.*
+{{< specialty attr="INT" untrained="yes" cost="3" >}}
 
 Esta habilidad permite a un personaje realizar reparaciones rápidas y provisionales para poner en funcionamiento un dispositivo o sistema electrónico o mecánico durante un corto período de tiempo. Una reparación de remiendo, incluso cuando tiene éxito, añade dificultad a las reparaciones completas que deben realizarse más adelante, pero puede ayudar a un personaje a salir de una situación difícil.
 
@@ -53,9 +49,7 @@ La cantidad de dificultad añadida a las reparaciones completas depende del resu
 ---
 
 ## Reparación
-### (INT)
-
-*Esta habilidad no puede usarse sin entrenamiento.*
+{{< specialty attr="INT" untrained="yes" cost="3" >}}
 
 Esta habilidad proporciona a un personaje entrenamiento en la reparación y el mantenimiento de varios tipos de tecnología mecánica y electrónica.
 
@@ -65,6 +59,29 @@ Cualquier uso de la habilidad de reparación requiere una comprobación de habil
 - **Daño Mortal:** Arreglar un objeto CON cualquier cantidad de daño Mortal es de complejidad **Asombrosa** (y puede requerir más de 10 éxitos).
 
 ⊗ **Efecto Incrementado:** A medida que aumenta el rango de habilidad de especialidad de un personaje, este recibe un bono a cualquier comprobación de habilidad que involucre Ciencia Técnica o las otras tres habilidades de especialidad: **bono de -1 paso al rango 3**, **-2 al rango 6**, **-3 al rango 9** y **-4 al rango 12**.
+
+---
+
+---
+
+## Jury-rig
+{{< specialty attr="INT" untrained="yes" cost="3" >}}
+
+
+
+---
+
+## Repair
+{{< specialty attr="INT" untrained="yes" cost="3" >}}
+
+This skill provides a Personaje with training in the repair and maintenance of various types of mechanical and electronic technology.
+
+Any use of the repair skill requires a complex skill check and takes a period of time determined by the Gamemaster (minutes, hours, days, or weeks). The complexity of a repair skill check is related to the amount of damage that must be repaired:
+- **Aturdimiento Damage:** Fix an object with only Aturdimiento damage is **Ordinario** complexity.
+- **Herida Damage:** Fix an object with Herida damage is **Bueno** complexity.
+- **Mortal Damage:** Fixing an object with any amount of Mortal damage is **Asombroso** complexity (and may require 10+ successes).
+
+⊗ **Increased Effect:** As a Personaje’s Especialidad rank increases, he receives a bonus to any skill checks involving Ciencia técnica or the Otros three specialty skills: **-1 step at rank 3**, **-2 at rank 6**, **-3 at rank 9**, and **-4 at rank 12**.
 
 ---
 

@@ -23,10 +23,7 @@ Alguien CON la habilidad de Manejo de Animales puede lograr que un animal salvaj
 La habilidad general también permite a un personaje montar cualquier animal que pueda usarse para el transporte terrestre básico, lo que generalmente significa caballos, mulas y otros grandes cuadrúpedos. Cuando se monta un animal, la criatura se mueve en cada fase. Durante una fase en la que el personaje tiene una acción, puede usar esta habilidad para intentar maniobrar al animal. Consulte la página 198 del Capítulo 12: Vehículos para obtener información sobre los tipos de maniobras (Rutinaria, Moderada y Extrema) que un jinete puede intentar. (Aunque normalmente no se piensa en un animal como un vehículo, las mismas reglas generales se aplican a los jinetes de animales y a los conductores de vehículos).
 
 ## Modificadores de Situación de Manejo de Animales
-### (VOL)
-
-### Complejidad del Modificador
-
+{{< specialty attr="VOL" untrained="yes" cost="3" >}}
 
 | Categoría       | Tipo        | Modificador | Complejidad |
 | :--------------- | :---------- | :---------: | :---------- |
@@ -55,12 +52,19 @@ La habilidad general también permite a un personaje montar cualquier animal que
 ---
 
 ## Montar Animales
-### (VOL)
+{{< specialty attr="VOL" untrained="yes" cost="1" >}}
 
 Esta especialización permite a un personaje mejorar este aspecto de la habilidad general de Manejo de Animales. Un personaje CON esta habilidad puede intentar correr por terrenos peligrosos, hacer saltos o realizar otras acrobacias, y participar en combate montado.
 
 » **Equitación de Acrobacias:** Cuando un personaje alcanza el rango 3 en esta especialidad, se vuelve capaz de realizar equitación de acrobacias. Esto le permite dirigir a su montura para saltar vallas, saltar abismos o moverse hacia atrás. CON un resultado de Fallo Crítico, el animal tropieza
 ---
+
+---
+
+## Animal training
+{{< specialty attr="VOL" untrained="yes" cost="3" >}}
+
+This skill allows a Personaje to become able to handle, ride, and train a specific type of animal. He must purchase and improve this Especialidad separately for each type of animal he wants to train. Types of animals include riding animals, pack animals, attack animals, and guard animals. Your Gamemaster has the final say on how animals are classified, and which ones require separate applications of this skill.
 
 ---
 

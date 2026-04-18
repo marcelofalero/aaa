@@ -18,7 +18,7 @@ La tirada de acción de un líder proporciona una bonificación a todas las acci
 - **Asombroso:** Hasta seis seguidores reciben la bonificación de liderazgo.
 
 ## Habilidades de Especialidad
-### (PER)
+{{< specialty attr="PER" untrained="yes" cost="4" >}}
 
 {{% list %}}
 - **Mando
@@ -32,11 +32,7 @@ La tirada de acción de un líder proporciona una bonificación a todas las acci
 ---
 
 ## Inspirar
-### (PER)
-
-**Cost: 3**
-
-*This skill can't be used untrained.*
+{{< specialty attr="PER" untrained="yes" cost="3" >}}
 
 This Especialidad represents the ability to command by example. This skill can be used by military officers, elected officials, and law enforcers who also have the command specialty, but Inspirar is more often used by those who are trying to lead civil disobedience movements and Otros types of nonviolent activities.
 

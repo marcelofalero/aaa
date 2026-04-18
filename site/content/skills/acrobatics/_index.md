@@ -18,7 +18,7 @@ Vaulting is a vertical leap enhanced by assistance (springing off an object or u
 ---
 
 ## Aerobatics
-### (DEX)
+{{< specialty attr="DEX" untrained="yes" cost="3" >}}
 
 This specialty skill represents a character's mastery of complex maneuvers during personal flight, whether through natural wings, specialized jump-packs, or gravitic personal flight devices (GADS). While basic locomotion is covered by the Acrobatics broad skill, Aerobatics is required for high-speed turns, precise landing, evasive maneuvers, and aerial acrobatics. At **Rank 4** in **Armor Operation—Propulsion Systems**, this skill can also be used for complex maneuvers using a powered suit's integrated thrusters.
 
@@ -40,7 +40,7 @@ This specialty skill represents a character's mastery of complex maneuvers durin
 ---
 
 ## Daredevil
-### (DEX)
+{{< specialty attr="DEX" untrained="yes" cost="3" >}}
 
 This specialty skill enables a character to perform high-risk activities such as skydiving, scuba diving, hang gliding, surfing, bungee jumping, and whitewater rafting.
 
@@ -57,7 +57,7 @@ This specialty skill enables a character to perform high-risk activities such as
 ---
 
 ## Dodge
-### (DEX)
+{{< specialty attr="DEX" untrained="yes" cost="3" >}}
 
 This specialty skill allows a character to use acrobatics as a defense in combat situations. It's also used when a character dives for cover or hits the deck when an area-effect attack targets him. Dodge lets a character tumble, roll, duck, dive, or spring out of the way of an attack.
 
@@ -81,7 +81,7 @@ One skill check (requiring an action) is made at the beginning of the first phas
 ---
 
 ## Fall
-### (DEX)
+{{< specialty attr="DEX" untrained="yes" cost="3" >}}
 
 This specialty skill allows a character to improve his ability to survive a fall by twisting his body, catching nearby protrusions, or otherwise slowing his descent, thereby decreasing the damage he sustains from an impact.
 
@@ -92,9 +92,7 @@ A character with the fall specialty skill adds his rank in the specialty to his 
 ---
 
 ## Zero-g Training
-### (DEX)
-
-*This skill can’t be used untrained.*
+{{< specialty attr="DEX" untrained="yes" cost="3" >}}
 
 A character with the zero-g training skill can function in weightless or near-weightless conditions better than someone who doesn't have this skill. An untrained character has a +3 step penalty in zero gravity and a +1 step penalty in light gravity. Purchasing this skill immediately reduces the zero-g penalty to +2 steps and eliminates the penalty for light gravity.
 

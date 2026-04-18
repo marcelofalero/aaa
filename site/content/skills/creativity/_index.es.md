@@ -1,9 +1,7 @@
 +++
 title = "Creatividad"
-description = "Formación y talento en la expresión estética y emocional."
-weight = 4
-attribute = "WIL"
-category = "Other"
+attribute = "VOL"
+category = "Otros"
 type = "skill"
 layout = "list"
 +++
@@ -16,8 +14,12 @@ Usar esta habilidad implica una tirada de habilidad compleja. El modificador de 
 - **Resultados:** Un Fallo Crítico o tres resultados de Fallo significan que el trabajo se desecha.
 
 ## Habilidades de Especialidad
+{{< specialty attr="VOL" untrained="yes" cost="3" >}}
 
 {{% list %}}
 - **Escritura:** Facilidad para comunicarse con la palabra escrita.
 - **Expresión Artística:** Talento para un medio artístico elegido.
 - **Creatividad, Habilidad Específica:** Un aspecto específico de esta habilidad, como gráficos por computadora o arte holográfico.
+
+---
+

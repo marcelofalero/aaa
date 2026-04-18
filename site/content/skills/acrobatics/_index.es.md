@@ -20,7 +20,7 @@ Saltar es un salto vertical mejorado por asistencia (impulsarse en un objeto o u
 # Habilidades de Especialidad
 
 ## Acrobacia aérea
-### (DES)
+{{< specialty attr="DES" untrained="yes" cost="3" >}}
 
 Esta habilidad de especialidad permite a un personaje usar acrobacias como defensa en situaciones de combate. También se usa cuando un personaje se lanza a cubierto o se tira al suelo cuando un ataque de área lo tiene como objetivo. Esquivar permite a un personaje dar volteretas, rodar, agacharse, lanzarse o saltar para apartarse de un ataque.
 
@@ -43,7 +43,7 @@ Se realiza una comprobación de habilidad (que requiere una acción) al comienzo
 ---
 
 ## Temerario
-### (DES)
+{{< specialty attr="DES" untrained="yes" cost="3" >}}
 
 Esta habilidad de especialidad permite a un personaje mejorar su capacidad para sobrevivir a una caída girando su cuerpo, agarrando protuberancias cercanas o frenando de otra manera su descenso, disminuyendo así el daño que sufre por un impacto.
 
@@ -54,7 +54,7 @@ Un personaje CON la especialidad de caída suma su rango en la especialidad a su
 ---
 
 ## Esquivar
-### (DES)
+{{< specialty attr="DES" untrained="yes" cost="3" >}}
 
 Esta habilidad de especialidad permite a un personaje realizar actividades de alto riesgo como paracaidismo, submarinismo (buceo), ala delta, surf, puenting y rafting.
 
@@ -70,9 +70,7 @@ Esta habilidad de especialidad permite a un personaje realizar actividades de al
 ---
 
 ## Caída
-### (DES)
-
-*Esta habilidad no puede usarse sin entrenamiento.*
+{{< specialty attr="DES" untrained="yes" cost="3" >}}
 
 Un personaje CON la habilidad de entrenamiento en gravedad cero puede funcionar en condiciones de ingravidez o casi ingravidez mejor que alguien que no tenga esta habilidad. Un personaje no entrenado tiene una penalización de **+3 pasos** en gravedad cero y una penalización de **+1 paso** en gravedad ligera. Comprar esta habilidad reduce inmediatamente la penalización de gravedad cero a **+2 pasos** y elimina la penalización por gravedad ligera.
 
@@ -88,7 +86,7 @@ Un personaje CON la habilidad de entrenamiento en gravedad cero puede funcionar 
 ---
 
 ## Entrenamiento en gravedad cero
-### (DES)
+{{< specialty attr="DES" untrained="yes" cost="3" >}}
 
 Esta habilidad de especialidad representa la maestría de un personaje en maniobras complejas durante el vuelo personal, ya sea a través de alas naturales, jump-packs especializados o dispositivos de vuelo personal gravíticos (GADS). Mientras que la locomoción básica está cubierta por la habilidad amplia de **Acrobacia**, la Acrobacia Aérea es necesaria para giros a alta velocidad, aterrizajes precisos, maniobras evasivas y acrobacias aéreas. En el **Rango 4** de **Operación de Armadura—Sistemas de Propulsión**, esta habilidad también se puede usar para maniobras complejas utilizando los propulsores integrados de un traje potenciado.
 

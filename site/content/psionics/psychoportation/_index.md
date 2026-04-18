@@ -9,13 +9,12 @@ type = "skill"
 layout = "list"
 +++
 
-
 Psychoportation allows a character to manipulate the fabric of space and time.
 
 ---
 
 ## Alter Speed
-### (WIL)
+{{< specialty attr="WIL" untrained="no" cost="4" extended="true" >}}
 
 This skill allows a character to accelerate or decelerate an object or living being within a limited range (25/50/100 meters). The result of the skill check determines the percentage of the target's current speed that is affected:
 - **Ordinary:** 10%
@@ -30,7 +29,7 @@ This skill allows a character to accelerate or decelerate an object or living be
 ---
 
 ## Apportation
-### (WIL)
+{{< specialty attr="WIL" untrained="no" cost="6" >}}
 
 The psion can mentally transport objects or living beings from one location to another within limited range (25/50/100 meters). This differs from Teleportation in that the psion does not travel with the target.
 
@@ -41,7 +40,7 @@ The psion can mentally transport objects or living beings from one location to a
 ---
 
 ## Duplicate
-### (WIL)
+{{< specialty attr="WIL" untrained="no" cost="6" >}}
 
 The character can reach into an alternate timeline and bring a future version of himself or herself into the present. This future self acts as an independent entity and can assist the character.
 
@@ -54,7 +53,7 @@ The character can reach into an alternate timeline and bring a future version of
 ---
 
 ## Teleportation
-### (WIL)
+{{< specialty attr="WIL" untrained="no" cost="5" >}}
 
 Instantly travel from one location to another within 100 meters. The psion must be familiar with the target location.
 
@@ -65,7 +64,7 @@ Instantly travel from one location to another within 100 meters. The psion must 
 ---
 
 ## Timeslip
-### (WIL)
+{{< specialty attr="WIL" untrained="no" cost="6" >}}
 
 Jump forward in time by moments, minutes, or even hours. The character disappears and reappears at the same local coordinates at the specified future time.
 
@@ -80,6 +79,5 @@ Jump forward in time by moments, minutes, or even hours. The character disappear
 ---
 
 ## Dimension Walk
-### (WIL - Trained Only)
 
 Jump between parallel dimensions or tangent timelines. Note that this skill requires special permission from the Gamemaster if the character doesn't have it already.

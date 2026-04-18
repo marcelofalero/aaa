@@ -32,12 +32,8 @@ The benefit of a teacher depends on the result of the teacher's skill check:
 
 ---
 
-# Specialty Skills
-
-
 ## Teach, Specific Field
-
-*This skill can’t be used untrained.*
+{{< specialty attr="WIL" untrained="yes" cost="3" >}}
 
 This specialty skill allows a character to expand their teaching ability to specialized profession groups. For each separate purchase of this specialty skill, the character selects a profession group: **Combat Spec**, **Diplomat**, **Free Agent**, or **Tech Op**. 
 
@@ -59,8 +55,10 @@ The character then becomes able to teach all skills associated with that profess
 | **Student is learning a Professional skill** | -1 step |
 | **Student is learning an Out-of-Profession skill** | +2 steps |
 
+---
+
 ## Specific field
-### (WIL)
+{{< specialty attr="WIL" untrained="yes" cost="2" >}}
 
 
 

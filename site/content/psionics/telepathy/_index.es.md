@@ -9,16 +9,12 @@ type = "skill"
 layout = "list"
 +++
 
-
 La telepatía es la disciplina psíquica basada en el contacto mental directo.
 
 ---
 
 ## Contacto
-### (Contact)
-### (PER)
-
-*Duración extendida.*
+{{< specialty attr="PER" untrained="yes" cost="3" extended="true" >}}
 
 Establece un vínculo mental con otro personaje en el rango visual. Permite comunicación bidireccional y es requisito para otros poderes.
 
@@ -30,10 +26,7 @@ Establece un vínculo mental con otro personaje en el rango visual. Permite comu
 ---
 
 ## Enlace de Datos
-### (Datalink)
-### (PER - Entrenado por Fraal)
-
-*Duración extendida.*
+{{< specialty attr="PER" untrained="no" cost="4" extended="true" >}}
 
 Interfaz directa con sistemas informáticos. Realiza tareas de computación (Acceso, Hackeo, etc.) a distancia sin terminal física.
 
@@ -44,9 +37,7 @@ Interfaz directa con sistemas informáticos. Realiza tareas de computación (Acc
 ---
 
 ## Drenar
-### (Drain)
-### (PER)
-
+{{< specialty attr="PER" untrained="no" cost="4" >}}
 
 Sapa la salud de otro personaje (rango 30 metros). El éxito inflige daño de heridas y puede curar al usuario.
 
@@ -57,10 +48,7 @@ Sapa la salud de otro personaje (rango 30 metros). El éxito inflige daño de he
 ---
 
 ## Proyección Empática
-### (Empathic Projection)
-### (PER)
-
-*Duración extendida.*
+{{< specialty attr="PER" untrained="yes" cost="3" >}}
 
 Proyecta emociones en la mente de otro para influir en su actitud (Amistoso, Hostil, etc.).
 
@@ -70,8 +58,7 @@ Proyecta emociones en la mente de otro para influir en su actitud (Amistoso, Hos
 ---
 
 ## Guía
-### (Guidance)
-### (PER)
+{{< specialty attr="PER" untrained="no" cost="4" extended="true" >}}
 
 Los fraal se dieron cuenta hace mucho tiempo de que la telepatía era una excelente manera de poner las habilidades adecuadas en el lugar correcto. A menudo, los trabajadores fraal se encontraban con un obstáculo en algún proyecto y requerían la experiencia de un supervisor, quien desafortunadamente estaba demasiado lejos para ser de ayuda. Telepatía-contacto superó en parte el problema, pero el supervisor solo podía aconsejar, e incluso entonces tenía que confiar en la comprensión de la situación por parte del trabajador. Así que los fraal desarrollaron una forma de otorgar temporalmente a un trabajador la habilidad necesaria para hacer el trabajo correctamente.
 
@@ -91,10 +78,7 @@ Si la habilidad a aprender es una habilidad de especialidad y el sujeto aún no 
 ---
 
 ## Ilusión
-### (Illusion)
-### (PER)
-
-*Duración extendida.*
+{{< specialty attr="PER" untrained="yes" cost="3" extended="true" >}}
 
 Crea imágenes y sensaciones mentales que engañan la percepción del objetivo. Solo existe en la mente del objetivo.
 
@@ -105,82 +89,60 @@ Crea imágenes y sensaciones mentales que engañan la percepción del objetivo. 
 ---
 
 ## Explosión Mental
-### (Mind Blast)
-### (PER)
-
+{{< specialty attr="PER" untrained="no" cost="4" >}}
 
 Ataque telepático para aturdir a un oponente (rango 30 metros). Ignora armadura física.
 
 ---
 
 ## Escudo Mental
-### (Mind Shield)
-### (PER)
-
-*Duración extendida.*
+{{< specialty attr="PER" untrained="yes" cost="2" >}}
 
 Protege la mente contra intrusiones y ataques psíquicos. Otorga bonificación a la resistencia de Voluntad.
 
 ---
 
 ## Borrado Mental
-### (Mind Wipe)
-### (PER)
-
+{{< specialty attr="PER" untrained="no" cost="5" >}}
 
 Borra o altera recuerdos en la mente del objetivo. La complejidad depende del nivel de éxito.
 
 ---
 
 ## Armadura Psíquica
-### (Psychic Armor)
-### (PER)
-
-*Duración extendida.*
+{{< specialty attr="PER" untrained="yes" cost="2" >}}
 
 Refuerza la mente contra el daño psíquico. Otorga puntos de "protección psíquica".
 
 ---
 
 ## Proyección Psíquica
-### (Psychic Projection)
-### (PER)
-
-*Duración extendida.*
+{{< specialty attr="PER" untrained="yes" cost="5" >}}
 
 Proyecta la psique a un lugar distante. El personaje puede ver y oír pero no interactuar físicamente.
 
 ---
 
 ## Sometimiento
-### (Subdual)
-### (PER - Entrenado por Aleerin)
-
+{{< specialty attr="PER" untrained="no" cost="3" >}}
 
 Calma y pacifica las mentes para evitar la violencia. Los objetivos sufren penalizaciones en combate.
 
 ---
 
 ## Sugestión
-### (Suggest)
-### (PER)
 
 Planta pensamientos en la mente de otro, convenciéndolo de que son suyos.
 
 ---
 
 ## Cansancio
-### (Tire)
-### (PER)
-
 
 Induce fatiga y agotamiento mental (rango 30 metros).
 
 ---
 
 ## Deshacer
-### (Undo)
-### (PER - Entrenado por Fraal)
-
+{{< specialty attr="PER" untrained="yes" cost="3" >}}
 
 Revierte o neutraliza efectos telepáticos duraderos como Ilusión, Borrado Mental o Sugestión.

@@ -6,8 +6,6 @@ type = "skill"
 layout = "list"
 +++
 
-**Gratis para los personajes mechalus.**
-
 Las computadoras son una parte integral de la sociedad humana, y también de muchas sociedades alienígenas en el Nivel de Progreso 5 o superior. (Para mucha más información sobre computadoras y material relacionado, consulta el Capítulo 10: Computadoras). La mayoría de las computadoras y máquinas asistidas por computadora están diseñadas para ser fáciles de usar en situaciones rutinarias. La habilidad general proporciona a un personaje una comprensión básica de las computadoras y los sistemas informáticos. (En comparación, la habilidad Uso de Computadora bajo Conocimiento simplemente le da a un personaje la capacidad de usar una computadora de manera efectiva, pero no le permite comprender cómo la máquina hace lo que hace).
 
 Los tres usos principales para la habilidad general Ciencias de la Computación son la recuperación de información, la reparación de computadoras y la programación. Estos usos se describen a continuación.
@@ -29,7 +27,7 @@ Para obtener más información sobre cómo se utilizan las especializaciones de 
 # Especializaciones
 
 ## Hacking
-### (INT)
+{{< specialty attr="INT" untrained="yes" cost="4" >}}
 
 El Hacking es la habilidad de romper códigos informáticos y eludir la seguridad informática CON el fin de obtener acceso a datos restringidos o sistemas informáticos seguros. El Hacking se puede realizar en una estación de computadora que esté conectada físicamente a las tiendas de datos en cuestión, o se puede realizar desde una ubicación distante creando un enlace a través de una red de algún tipo. Se utiliza CON mayor frecuencia para recuperar datos protegidos, entrar y tomar el control de un sistema informático, o para realizar algún tipo de sabotaje como borrar archivos o introducir un virus de algún tipo.
 
@@ -42,7 +40,7 @@ Esta especialidad le permite a un personaje equipado CON una computadora realiza
 ---
 
 ## Hardware
-### (INT)
+{{< specialty attr="INT" untrained="yes" cost="3" >}}
 
 Esta especialidad representa el conocimiento y la competencia de un personaje CON los componentes físicos que conforman una computadora. Comprender cómo funciona un sistema informático, poder configurarlo rápidamente, diseñar y construir su propia computadora y reparar el equipo informático son algunas de las tareas cubiertas por esta habilidad.
 
@@ -53,7 +51,7 @@ Esta especialidad representa el conocimiento y la competencia de un personaje CO
 ---
 
 ## Programación
-### (INT)
+{{< specialty attr="INT" untrained="yes" cost="3" >}}
 
 Esta especialidad le permite a un personaje mejorar su capacidad para analizar programas informáticos, modificar programas existentes y (en rangos superiores) crear programas escribiendo su propio código. Tener el rango 1 en esta habilidad permite a un personaje modificar el código fuente de programas de calidad Ordinaria y complejidad Ordinaria.
 

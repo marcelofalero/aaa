@@ -50,66 +50,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Transform (ATTR - Trained only) lines into grids similar to the broad skill header
-    const attrLines = document.querySelectorAll('.skill-content h2 + h3, .skill-content h3 + h4, .skill-content h3 + h3');
-    attrLines.forEach(line => {
-        const text = line.textContent.trim();
-        if (text.startsWith('(') && text.endsWith(')')) {
-            const inner = text.substring(1, text.length - 1);
-            const parts = inner.split(' - ');
-            
-            const grid = document.createElement('div');
-            grid.className = 'specialty-info-grid';
-            
-            parts.forEach(part => {
-                const item = document.createElement('div');
-                item.className = 'specialty-info-item';
-                
-                const label = document.createElement('span');
-                label.className = 'specialty-info-label';
-                
-                const value = document.createElement('span');
-                value.className = 'specialty-info-value';
-                
-                // Smart label detection
-                const p = part.trim();
-                const pLower = p.toLowerCase();
-                const isSpanish = document.documentElement.lang === 'es';
-                
-                if (p.length <= 3 && p === p.toUpperCase()) {
-                   label.textContent = isSpanish ? 'Atributo' : 'Attribute';
-                   value.textContent = p;
-                } else if (pLower.includes('train') || pLower.includes('entren')) {
-                   label.textContent = isSpanish ? 'Sin entrenar' : 'Untrained';
-                   value.textContent = isSpanish ? 'No' : 'No';
-                } else {
-                   label.textContent = isSpanish ? 'Nota' : 'Note';
-                   value.textContent = p;
-                }
-                
-                item.appendChild(label);
-                item.appendChild(value);
-                grid.appendChild(item);
-            });
 
-            // If only attribute is present, add Untrained: Yes
-            if (grid.children.length === 1 && grid.firstChild.querySelector('.specialty-info-label').textContent.includes(isSpanish ? 'Atributo' : 'Attribute')) {
-                const item = document.createElement('div');
-                item.className = 'specialty-info-item';
-                const label = document.createElement('span');
-                label.className = 'specialty-info-label';
-                label.textContent = isSpanish ? 'Sin entrenar' : 'Untrained';
-                const value = document.createElement('span');
-                value.className = 'specialty-info-value';
-                value.textContent = isSpanish ? 'Sí' : 'Yes';
-                item.appendChild(label);
-                item.appendChild(value);
-                grid.appendChild(item);
-            }
-            
-            line.parentNode.replaceChild(grid, line);
-        }
-    });
 
     // If no headings found, hide the nav
     if (headings.length === 0) {

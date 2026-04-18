@@ -9,15 +9,12 @@ type = "skill"
 layout = "list"
 +++
 
-
 La telequinesia representa la capacidad de un personaje para afectar el mundo físico mediante el esfuerzo mental.
 
 ---
 
 ## Crioquinesis
-### (Cryokinetics)
-### (WIL)
-
+{{< specialty attr="WIL" untrained="no" cost="3" >}}
 
 Absorbe la energía térmica de un objeto o zona (hasta 30 metros), haciendo que se congele. El éxito inflige daño de energía y puede congelar mecanismos.
 
@@ -27,9 +24,7 @@ Absorbe la energía térmica de un objeto o zona (hasta 30 metros), haciendo que
 ---
 
 ## Electroquinesis
-### (Electrokinetics)
-### (WIL)
-
+{{< specialty attr="WIL" untrained="no" cost="3" >}}
 
 Controla y genera energía eléctrica (rango 30 metros). Puede usarse para alimentar dispositivos o atacar. El éxito inflige daño de energía y puede cortocircuitar la electrónica.
 
@@ -39,9 +34,6 @@ Controla y genera energía eléctrica (rango 30 metros). Puede usarse para alime
 ---
 
 ## Golpe Kinético
-### (Kinetic Blow)
-### (WIL)
-
 
 Enfoca la energía cinética en un único golpe físico que se añade al daño de un ataque sin armas.
 - **Ordinario:** +d4s de daño.
@@ -51,10 +43,6 @@ Enfoca la energía cinética en un único golpe físico que se añade al daño d
 ---
 
 ## Escudo Kinético
-### (Kinetic Shield)
-### (WIL)
-
-*Duración extendida.*
 
 Crea un campo de fuerza para desviar ataques físicos y de energía (pero no psiónicos). El escudo actúa como armadura.
 
@@ -64,10 +52,7 @@ Crea un campo de fuerza para desviar ataques físicos y de energía (pero no psi
 ---
 
 ## Levitación
-### (Levitation)
-### (WIL)
-
-*Duración extendida.*
+{{< specialty attr="WIL" untrained="yes" cost="3" extended="true" >}}
 
 Desafía la gravedad para elevarse a sí mismo o a otros. El personaje se mueve verticalmente a una velocidad inicial de 2 metros por fase.
 
@@ -77,9 +62,7 @@ Desafía la gravedad para elevarse a sí mismo o a otros. El personaje se mueve 
 ---
 
 ## Fotoquinesis
-### (Photokinetics)
-### (WIL)
-
+{{< specialty attr="WIL" untrained="yes" cost="1" extended="true" >}}
 
 Manipula la luz para crear destellos, iluminar áreas o lanzar rayos láser (rango 100 metros).
 
@@ -90,9 +73,6 @@ Manipula la luz para crear destellos, iluminar áreas o lanzar rayos láser (ran
 ---
 
 ## Psicoquinesis
-### (Psychokinetics)
-### (WIL)
-
 
 Mueve y manipula objetos sólidos a distancia. Puede usarse para lanzar objetos y causar daño.
 
@@ -105,9 +85,7 @@ Mueve y manipula objetos sólidos a distancia. Puede usarse para lanzar objetos 
 ---
 
 ## Piroquinesis
-### (Pyrokinesis)
-### (WIL)
-
+{{< specialty attr="WIL" untrained="no" cost="3" >}}
 
 Excita las moléculas para generar calor y fuego (rango 30 metros). Los objetivos estallan en llamas, sufriendo daños de energía con el tiempo.
 
@@ -117,9 +95,6 @@ Excita las moléculas para generar calor y fuego (rango 30 metros). Los objetivo
 ---
 
 ## Presa de Sheya
-### (Sheya's Clutch)
-### (WIL - Entrenado por Sesheyan)
-
 
 Aplasta mentalmente el corazón u órganos internos de un ser vivo (rango 40 metros). Ignora toda armadura no psiónica. Es agotador para el usuario, que también recibe daño.
 

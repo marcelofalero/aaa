@@ -30,9 +30,7 @@ Para una comprobación de la habilidad de Conocimiento, el Director de Juego det
 # Habilidades de Especialidad
 
 ## Operación de Computadoras
-### (INT)
-
-*Esta habilidad no puede usarse sin entrenamiento.*
+{{< specialty attr="INT" untrained="yes" cost="3" >}}
 
 Esta habilidad de especialidad permite a un personaje mejorar su capacidad para hacer que las computadoras funcionen, específicamente su capacidad para obtener el máximo provecho del software (incluido el sistema operativo) que está instalado en una computadora. El grado de éxito se relaciona CON la calidad o cantidad de información accedida o recuperada, o la velocidad CON la que el operador es capaz de realizar una tarea.
 
@@ -41,7 +39,7 @@ Esta habilidad de especialidad permite a un personaje mejorar su capacidad para 
 ---
 
 ## Deducir
-### (INT)
+{{< specialty attr="INT" untrained="yes" cost="3" >}}
 
 CON esta habilidad de especialidad, un personaje puede perfeccionar sus habilidades para usar la razón y la lógica para llegar a una conclusión. Los detectives e investigadores utilizan Deducir para armar pistas, o los científicos e ingenieros para descubrir la respuesta a un problema relacionado CON sus habilidades.
 
@@ -52,9 +50,7 @@ CON esta habilidad de especialidad, un personaje puede perfeccionar sus habilida
 ---
 
 ## Primeros Auxilios
-### (INT)
-
-*Esta habilidad no puede usarse sin entrenamiento.*
+{{< specialty attr="INT" untrained="yes" cost="2" >}}
 
 Esta habilidad de especialidad representa el entrenamiento básico en técnicas de primeros auxilios, incluyendo el uso de paquetes de traumatología, kits de primeros auxilios y otros artículos médicos de uso general. No proporciona al personaje la capacidad de usar herramientas quirúrgicas especializadas o equipo médico avanzado.
 
@@ -81,9 +77,7 @@ Un personaje CON cualquier cantidad de daño Mortal se considera agonizante. Un 
 ---
 
 ## Idioma, Habilidad Específica
-### (INT)
-
-*Esta habilidad no puede usarse sin entrenamiento.*
+{{< specialty attr="INT" untrained="yes" cost="2" >}}
 
 Esta habilidad de especialidad le da a un personaje cierta fluidez en un idioma específico. Cada personaje comienza CON el **rango 3** en su idioma nativo. Los rangos más bajos indican una familiaridad rudimentaria; los rangos más altos mejoran el vocabulario del personaje y la comprensión de pasajes oscuros o complicados.
 
@@ -94,23 +88,35 @@ Esta habilidad de especialidad le da a un personaje cierta fluidez en un idioma 
 ---
 
 ## Psiónica
-### (INT)
-
-*Esta habilidad no puede usarse sin entrenamiento.*
+{{< specialty attr="INT" untrained="yes" cost="3" >}}
 
 Esta habilidad le da a un personaje un conocimiento práctico de las habilidades psiónicas, tal vez incluso más allá de lo que entiende su cultura como un todo. El grado de éxito logrado en una comprobación de habilidad se relaciona CON la calidad o cantidad de información disponible o comprendida por el personaje.
 
 ---
 
 ## Street knowledge
-### (VOL)
+{{< specialty attr="INT" untrained="yes" cost="2" >}}
 
 
 
 ---
 
 ## Técnico Knowledge
-### (INT)
+{{< specialty attr="INT" untrained="yes" cost="3" >}}
+
+
+
+---
+
+## Street knowledge
+{{< specialty attr="VOL" untrained="yes" cost="3" >}}
+
+
+
+---
+
+## Technical Knowledge
+{{< specialty attr="INT" untrained="yes" cost="3" >}}
 
 
 

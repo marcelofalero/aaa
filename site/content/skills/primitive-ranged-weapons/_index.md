@@ -24,10 +24,8 @@ Other factors that can influence the situation die used in a primitive ranged we
 
 ---
 
-# Specialty Skills
-
 ## Bow
-### (DEX)
+{{< specialty attr="DEX" untrained="yes" cost="3" >}}
 
 With the bow skill, a character can become proficient with long bows and short bows. Although there are significant differences between them (see Chapter 11: Weapons & Armor for more information), all primitive weapons have the same modifiers for range (see TABLE P22: WEAPON TYPE on this page).
 
@@ -38,7 +36,7 @@ As a character achieves higher ranks in this specialty, he gains additional abil
 ---
 
 ## Crossbow
-### (DEX)
+{{< specialty attr="DEX" untrained="yes" cost="3" >}}
 
 With the crossbow skill, a character can become increasingly more proficient with this type of primitive weapon. This same action to load a crossbow, and it takes one action to fire it. A character obtains higher ranks in this specialty he gains additional abilities as described in "Ranged Weapons Rank Benefits" on the next page.
 
@@ -47,7 +45,7 @@ With the crossbow skill, a character can become increasingly more proficient wit
 ---
 
 ## Flintlock
-### (DEX)
+{{< specialty attr="DEX" untrained="yes" cost="3" >}}
 
 This specialty skill covers the use of all types of flintlocks, including both pistols and muskets.
 
@@ -60,7 +58,7 @@ It takes one action to load a flintlock pistol and a separate action to fire the
 ---
 
 ## Sling
-### (DEX)
+{{< specialty attr="DEX" untrained="yes" cost="3" >}}
 
 With the sling skill, a character can become increasingly more proficient with this type of primitive weapon. A sling can be loaded and fired in this same action by any character. As a character achieves higher ranks in this specialty, he gains additional abilities as described in "Ranged Weapons Rank Benefits" on the next page.
 

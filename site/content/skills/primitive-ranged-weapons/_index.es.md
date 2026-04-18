@@ -27,7 +27,7 @@ Otros factores que pueden influir en el dado de situación en un ataque CON arma
 # Habilidades de especialidad
 
 ## Arco
-### (DES)
+{{< specialty attr="DES" untrained="yes" cost="3" >}}
 
 CON la habilidad de arco, un personaje puede llegar a ser competente CON arcos largos y arcos cortos. Aunque existen diferencias significativas entre ellos (véase el Capítulo 11: Armas y Armaduras para más información), todas las armas primitivas tienen los mismos modificadores de distancia (véase la TABLA P22 en esta página).
 
@@ -38,7 +38,7 @@ A medida que un personaje alcanza rangos superiores en esta especialidad, adquie
 ---
 
 ## Ballesta
-### (DES)
+{{< specialty attr="DES" untrained="yes" cost="3" >}}
 
 CON la habilidad de ballesta, un personaje puede ser cada vez más competente CON este tipo de arma primitiva. Se requiere una acción para cargar una ballesta y una acción para dispararla. A medida que un personaje obtiene rangos superiores en esta especialidad, adquiere capacidades adicionales según se describe en "Beneficios de rango de armas a distancia".
 
@@ -47,7 +47,7 @@ CON la habilidad de ballesta, un personaje puede ser cada vez más competente CO
 ---
 
 ## Arma de chispa
-### (DES)
+{{< specialty attr="DES" untrained="yes" cost="3" >}}
 
 Esta habilidad de especialidad cubre el uso de todos los tipos de armas de chispa, incluyendo tanto pistolas como mosquetes.
 
@@ -60,7 +60,7 @@ Se requiere una acción para cargar una pistola de chispa y una acción separada
 ---
 
 ## Honda
-### (DES)
+{{< specialty attr="DES" untrained="yes" cost="3" >}}
 
 CON la habilidad de honda, un personaje puede ser cada vez más competente CON este tipo de arma primitiva. Una honda puede ser cargada y disparada en la misma acción por cualquier personaje entrenado. A medida que un personaje alcanza rangos superiores en esta especialidad, obtiene capacidades adicionales según se describe en "Beneficios de rango de armas a distancia".
 
