@@ -103,7 +103,7 @@ When a character makes a skill check, there are five possible results of his act
 
 ### Character vs. Character
 
-In almost every case, only the acting character makes a skill check to determine the result of his or her attempt to do something. But sometimes the outcome of a situation may depend on what happens when characters compete with one another. The [Rules of Play](/rules/) section has more details on this, but in general here's how it works:
+In almost every case, only the acting character makes a skill check to determine the result of his or her attempt to do something. But sometimes the outcome of a situation may depend on what happens when characters compete with one another. The [Core Mechanics](/core-mechanics/) section has more details on this, but in general here's how it works:
 
 Each character involved in direct competition (except for combat) makes an appropriate skill check. Any situation die modifiers that apply should be figured into the check. **The character who achieves the greater level of success**—Amazing beats Good, Good beats Ordinary, Ordinary beats Failure or Marginal, and a Critical Failure indicates an immediate and significant loss—**wins the competition**. If the contestants tie (both roll a Good, for example), then another check must be made.
 
