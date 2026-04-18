@@ -59,13 +59,12 @@
         {{/* Default section layout */}}
         <ul>
           {{ range .Pages.ByWeight }}
-          <li class="flex items-center">
+          <li class="flex items-center mb1">
             <span class="mr2 neon-cyan">›</span>
-            <a href="{{ .RelPermalink }}" class="link silver hover-white f5 whitespace-nowrap">{{ .Title }}</a>
+            <a href="{{ .RelPermalink }}" class="link silver hover-white f5 flex-shrink-0 whitespace-nowrap">{{ .Title }}</a>
             {{ with .Description }}
-            <div class="toc-leader flex-auto mx2 toc-dotted-line">
-            </div>
-            <span class="toc-description dn db-ns f7 o-50 truncate toc-max-width">{{ . }}</span>
+            <div class="toc-dotted-line flex-auto mx2"></div>
+            <span class="toc-description dn db-ns f7 o-50 truncate" style="max-width: 60%;">{{ . }}</span>
             {{ end }}
           </li>
           {{ end }}

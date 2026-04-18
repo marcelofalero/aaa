@@ -364,12 +364,9 @@ h3 {
 }
 
 .toc-dotted-line {
-    border-bottom: 1px dotted rgba(255,255,255,0.2); 
-    margin: 0 10px; 
-    position:relative; 
-    top:-2px;
+    flex: 1 1 auto;
+    border-bottom: 2px dotted rgba(255, 255, 255, 0.15);
+    height: 0.8em; /* Aligns dots with line center */
+    margin: 0 8px;
 }
 
-.toc-max-width {
-    max-width: 50%;
-}
