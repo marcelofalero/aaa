@@ -10,12 +10,8 @@ This broad skill represents a character's training in the physical sciences. Ski
 
 ---
 
-# Specialty Skills
-
 ## Astronomy
-### (INT)
-
-*This skill can't be used untrained.*
+{{< specialty attr="INT" untrained="yes" cost="3" >}}
 
 Astronomy is the study of celestial objects and phenomena that originate outside planet atmospheres. It allows a character to identify stars, planets, and other celestial bodies, and to calculate orbits and trajectories.
 
@@ -26,9 +22,7 @@ Astronomy is the study of celestial objects and phenomena that originate outside
 ---
 
 ## Chemistry
-### (INT)
-
-*This skill can't be used untrained.*
+{{< specialty attr="INT" untrained="yes" cost="3" >}}
 
 Chemistry is the study of matter, its properties, and how and why substances combine or separate to form other substances.
 
@@ -39,9 +33,7 @@ Chemistry is the study of matter, its properties, and how and why substances com
 ---
 
 ## Physics
-### (INT)
-
-*This skill can't be used untrained.*
+{{< specialty attr="INT" untrained="yes" cost="3" >}}
 
 Physics is the study of matter, energy, and the fundamental forces of nature.
 
@@ -52,9 +44,7 @@ Physics is the study of matter, energy, and the fundamental forces of nature.
 ---
 
 ## Planetology
-### (INT)
-
-*This skill can't be used untrained.*
+{{< specialty attr="INT" untrained="yes" cost="3" >}}
 
 Planetology is the study of celestial bodies, specifically when attempting to classify, log, and scan for useful information.
 

@@ -34,23 +34,15 @@ The complexity of the ideas that are being communicated during a use of the Cult
 
 ---
 
-# Specialty Skills
+## Etiquette
+{{< specialty attr="PER" untrained="yes" cost="3" >}}
 
 
-## Etiquette [Specific]
-
-*This skill can't be used untrained.*
-
-For each separate purchase of this specialty skill, a character selects a specific culture. As the specialty skill is improved, the character gains a progressively stronger grasp on the customs, attitudes, and beliefs of that culture.
-
-⊗ Increased Effect: Gaining ranks in Culture—etiquette as it pertains to a certain culture translates into a bonus to the use of Culture—diplomacy when that skill is used on a member of the culture in question. Having the etiquette skill at rank 3 provides a **-1 bonus to diplomacy skill checks**. The bonus improves to **-2 at rank 6**, to **-3 at rank 9**, and to **-4 at rank 12**.
-
-The Gamemaster will decide what constitutes a "specific culture," taking the campaign setting into account. In a campaign that takes place entirely on Earth, different countries may represent specific cultures; in a starfaring campaign, each planet, star system, or alien species could be a different culture.
 
 ---
 
 ## Diplomacy
-### (PER)
+{{< specialty attr="PER" untrained="yes" cost="3" >}}
 
 This specialty skill allows a character to improve his ability to reach agreements and understandings with representatives of different nations, cultures, subcultures and species.
 
@@ -64,17 +56,8 @@ Depending on the nature of the issue to be resolved, the diplomacy skill check m
 
 ---
 
-## Etiquette [spec]
-### (PER)
-
-
-
----
-
 ## First Encounter
-### (PER)
-
-*This skill can't be used untrained.*
+{{< specialty attr="PER" untrained="yes" cost="3" >}}
 
 This specialty skill represents a character's training in the theories and protocols of making first contact with a previously unknown culture. With this skill, a character can assess the mental, physical, and technological capabilities of an unfamiliar species, begin the process of establishing communications and learning each other's language, and make a preliminary study of the strangers' cultural and societal habits.
 

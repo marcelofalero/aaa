@@ -32,10 +32,8 @@ When a character engages in certain fatigue-causing activities, he must make a S
 
 ---
 
-# Specialty Skills
-
 ## Endurance
-### (CON)
+{{< specialty attr="CON" untrained="yes" cost="4" >}}
 
 As a character acquires ranks in the endurance skill, he becomes more able to withstand the effects of damage. For a character who has this specialty, endurance checks take the place of Stamina checks for damage and fatigue.
 
@@ -46,9 +44,7 @@ As a character acquires ranks in the endurance skill, he becomes more able to wi
 ---
 
 ## Resist pain
-### (CON)
-
-*This skill can’t be used untrained.*
+{{< specialty attr="CON" untrained="yes" cost="5" >}}
 
 Resist pain allows a character to function normally and ignore some or all of the situation penalties for suffering large amounts of stun, wound, or mortal (but not fatigue) damage.
 

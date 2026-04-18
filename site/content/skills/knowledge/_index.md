@@ -27,29 +27,25 @@ For a Knowledge skill check, the Gamemaster determines which category the inform
 
 ---
 
-# Specialty Skills
-
-
 ## Language, Specific Skill
-
-*This skill can't be used untrained.*
+{{< specialty attr="INT" untrained="yes" cost="3" >}}
 
 This specialty skill gives a character a certain amount of fluency in a specific language. Every character begins with **Rank 3** in his or her native language. Lower ranks indicate a crude familiarity; higher ranks improve the character's vocabulary and comprehension of obscure or complicated passages.
 
 ### Rank Benefits
 ⊗ **Improved Communication:** As a character achieves higher skill ranks in a specific language, he or she gets better at employing other skills that involve language use (such as encounter skills and some Creativity specialties).  This benefit provides a reduction to situation die penalties: **1 step at rank 4**, **2 steps at rank 8**, and **3 steps at rank 12**. This benefit only reduces a penalty; it never provides a bonus.
+
 ---
 
 ## Psionics
-
-*This skill can't be used untrained.*
+{{< specialty attr="INT" untrained="yes" cost="3" >}}
 
 This skill gives a character a working knowledge of psionic abilities, perhaps even beyond what the character's culture understands as a whole. The degree of success achieved on a skill check relates to the quality or quantity of information that is available to or understood by the character.
 
-## Computer Operation
-### (INT)
+---
 
-*This skill can't be used untrained.*
+## Computer Operation
+{{< specialty attr="INT" untrained="yes" cost="2" >}}
 
 This specialty skill allows a character to improve his ability to make computers perform, specifically his ability to get the most out of the software (including the operating system) that is installed in a computer. The degree of success relates to the quality or quantity of information accessed or retrieved, or the speed with which the operator is able to perform a task.
 
@@ -58,7 +54,7 @@ This specialty skill allows a character to improve his ability to make computers
 ---
 
 ## Deduce
-### (INT)
+{{< specialty attr="INT" untrained="yes" cost="2" >}}
 
 With this specialty skill, a character can hone his abilities to use reason and logic to reach a conclusion. Deduce is used by detectives and investigators to piece together clues, or by scientists and engineers to discover the answer to a skill-related problem.
 
@@ -69,9 +65,7 @@ With this specialty skill, a character can hone his abilities to use reason and 
 ---
 
 ## First Aid
-### (INT)
-
-*This skill can't be used untrained.*
+{{< specialty attr="INT" untrained="yes" cost="3" >}}
 
 This specialty skill represents basic training in first aid techniques, including the use of trauma packs, first aid kits, and other general-use medical items. It doesn't provide a character with the ability to use specialized surgical tools or advanced medical gear.
 
@@ -98,28 +92,28 @@ A character with any amount of mortal damage is considered to be dying. A charac
 ---
 
 ## Language
-### (INT)
+{{< specialty attr="INT" untrained="yes" cost="2" >}}
 
 
 
 ---
 
 ## Medical Knowledge
-### (INT)
+{{< specialty attr="INT" untrained="yes" cost="3" >}}
 
 
 
 ---
 
 ## Street knowledge
-### (WIL)
+{{< specialty attr="WIL" untrained="yes" cost="3" >}}
 
 
 
 ---
 
 ## Technical Knowledge
-### (INT)
+{{< specialty attr="INT" untrained="yes" cost="3" >}}
 
 
 

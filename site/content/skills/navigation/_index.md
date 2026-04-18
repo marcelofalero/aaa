@@ -13,12 +13,8 @@ The optimum time for a Navigation attempt is 5 minutes. Every minute less than 5
 
 ---
 
-# Specialty Skills
-
-
 ## Astrogation—drivespace
-
-*This skill can't be used untrained.*
+{{< specialty attr="INT" untrained="yes" cost="3" >}}
 
 This specialty skill involves navigation through drivespace, usually movement between star systems.
 
@@ -28,10 +24,10 @@ This specialty skill involves navigation through drivespace, usually movement be
 - **Good:** Arrive inside destination star system, d12+2 AUs from target.
 - **Amazing:** Arrive inside destination system, d4 AUs from target.
 
-## Astrogation—system
-### (INT)
+---
 
-*This skill can't be used untrained.*
+## Astrogation—system
+{{< specialty attr="INT" untrained="yes" cost="3" >}}
 
 This specialty skill covers navigation through a star system, usually movements between planets, moons, and stations.
 
@@ -45,7 +41,7 @@ This specialty skill covers navigation through a star system, usually movements 
 ---
 
 ## Navigation—surface
-### (INT)
+{{< specialty attr="INT" untrained="yes" cost="3" >}}
 
 This specialty skill covers navigation in a planetary environment, utilizing maps, terrain features, compasses, and GPS systems to move from one point to another.
 

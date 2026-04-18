@@ -35,9 +35,7 @@ El beneficio de un profesor depende del resultado de la comprobación de habilid
 # Habilidades de Especialidad
 
 ## Campo Específico
-### (VOL)
-
-*Esta habilidad no puede usarse sin entrenamiento.*
+{{< specialty attr="VOL" untrained="yes" cost="3" >}}
 
 Esta habilidad de especialidad permite a un personaje ampliar su capacidad de enseñanza a grupos de profesiones especializados. Por cada compra separada de esta habilidad de especialidad, el personaje selecciona un grupo de profesión: **Espec. en Combate**, **Diplomático**, **Agente Libre** o **Espec. Técnico**.
 
@@ -58,6 +56,13 @@ El personaje entonces puede enseñar todas las habilidades asociadas CON ese gru
 | **Enseñar al Rango 6** | +3 pasos |
 | **El estudiante está aprendiendo una habilidad de Profesión** | -1 paso |
 | **El estudiante está aprendiendo una habilidad "Fuera de Profesión"** | +2 pasos |
+
+---
+
+## Specific field
+{{< specialty attr="VOL" untrained="yes" cost="2" >}}
+
+
 
 ---
 

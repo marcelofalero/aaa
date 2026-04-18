@@ -9,14 +9,12 @@ type = "skill"
 layout = "list"
 +++
 
-
 Telepathy is the psychic discipline of direct mental contact.
 
 ---
 
 ## Contact
-### (PER)
-*Extended duration.*
+{{< specialty attr="PER" untrained="yes" cost="3" extended="true" >}}
 
 Establish a mental link with another character within visual range. This link allows for two-way communication and is often a prerequisite for other telepathic powers.
 
@@ -28,8 +26,7 @@ Establish a mental link with another character within visual range. This link al
 ---
 
 ## Datalink
-### (PER - Fraal Trained)
-*Extended duration.*
+{{< specialty attr="PER" untrained="no" cost="4" extended="true" >}}
 
 Interface directly with computer systems using the mind. Perform computer-related tasks (Access, Hacking, etc.) at a distance without a physical terminal.
 
@@ -40,7 +37,7 @@ Interface directly with computer systems using the mind. Perform computer-relate
 ---
 
 ## Drain
-### (PER)
+{{< specialty attr="PER" untrained="no" cost="4" >}}
 
 Mentally sap the health of another character (range 30 meters). Success inflicts wound damage while potentially healing the user.
 
@@ -51,8 +48,7 @@ Mentally sap the health of another character (range 30 meters). Success inflicts
 ---
 
 ## Empathic Projection
-### (PER)
-*Extended duration.*
+{{< specialty attr="PER" untrained="yes" cost="3" >}}
 
 Project emotions into the mind of another character to influence their attitude (Friendly, Hostile, etc.).
 
@@ -62,8 +58,7 @@ Project emotions into the mind of another character to influence their attitude 
 ---
 
 ## Guidance
-### (PER)
-*Extended duration.*
+{{< specialty attr="PER" untrained="no" cost="4" extended="true" >}}
 
 The fraal long ago realized that telepathy was an excellent way of putting the right skills in the right place. Often, fraal workers would hit a stumbling block on some project and require the expertise of a supervisor—who unfortunately was too far away to be helpful. Telepathy-contact somewhat overcame the problem, but the supervisor could only advise, and even then had to rely on the worker’s understanding of the situation. So the fraal developed a way of temporarily granting a worker the skill needed to do the job right.
 
@@ -82,8 +77,7 @@ If the skill to be learned is a specialty skill and the subject did not already 
 ---
 
 ## Illusion
-### (PER)
-*Extended duration.*
+{{< specialty attr="PER" untrained="yes" cost="3" extended="true" >}}
 
 Create mental images and sensations that trick the target's perception. The illusion exists only in the target's mind.
 
@@ -94,64 +88,62 @@ Create mental images and sensations that trick the target's perception. The illu
 ---
 
 ## Mind Blast
-### (PER)
+{{< specialty attr="PER" untrained="no" cost="4" >}}
 
 Deliver a powerful telepathic strike to stun an opponent (range 30 meters). Bypasses physical armor.
 
 ---
 
 ## Mind Shield
-### (PER)
-*Extended duration.*
+{{< specialty attr="PER" untrained="yes" cost="2" >}}
 
 Protect the mind against telepathic intrusion and psychic attacks. Provides a bonus to Willpower resistance.
 
 ---
 
 ## Mind Wipe
-### (PER)
+{{< specialty attr="PER" untrained="no" cost="5" >}}
 
 Erase or alter memories in the target's mind. The complexity of the wipe depends on the success level.
 
 ---
 
 ## Psychic Armor
-### (PER)
-*Extended duration.*
+{{< specialty attr="PER" untrained="yes" cost="2" >}}
 
 Bolster the mind specifically against psychic damage. Provides "psychic protection" points.
 
 ---
 
 ## Psychic Projection
-### (PER)
-*Extended duration.*
+{{< specialty attr="PER" untrained="yes" cost="5" >}}
 
 Project the psyche to a distant location. The character can see and hear but cannot physically interact with the environment.
 
 ---
 
 ## Subdual
-### (PER - Aleerin Trained)
+{{< specialty attr="PER" untrained="no" cost="3" >}}
 
 Calm and pacify the minds of others to prevent violence. Targets suffer penalties to combat actions.
 
 ---
 
 ## Suggest
-### (PER)
+{{< specialty attr="PER" untrained="yes" cost="3" >}}
+
 Implant thoughts or ideas into another person's mind. The target believes the thought is their own and may act upon it.
 
 ---
 
 ## Tire
-### (PER)
+{{< specialty attr="PER" untrained="yes" cost="2" >}}
 
 Mentally induce fatigue and exhaustion in a target (range 30 meters).
 
 ---
 
 ## Undo
-### (PER - Fraal Trained)
+{{< specialty attr="PER" untrained="yes" cost="3" >}}
 
 Reverse or neutralize the lasting effects of other telepathic powers like Illusion, Mind Wipe, or Suggestion.

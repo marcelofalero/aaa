@@ -35,10 +35,8 @@ This broad skill provides a character with the training and ability to examine t
 
 ---
 
-# Specialty Skills
-
 ## Interrogate
-### (WIL)
+{{< specialty attr="WIL" untrained="yes" cost="3" >}}
 
 The Interrogate skill represents a character's ability to ask the right questions in order to gain information from a specific target character. That character's Will resistance modifier is his protection from the probing questions of a skilled interrogator.
 
@@ -49,7 +47,7 @@ The skill covers the sort of interrogation that might be conducted by a seasoned
 ---
 
 ## Search
-### (WIL)
+{{< specialty attr="WIL" untrained="yes" cost="1" >}}
 
 This specialty skill enables a character to develop his eye for detail and his ability to spot hidden objects. Search is used when a character wants to look for clues in a specific area, find a particular object or person he knows is in the area, or hunt for important objects in as fast and systematic a fashion as possible.
 
@@ -60,7 +58,7 @@ The degree of success achieved on a skill check determines what the character sp
 ---
 
 ## Track
-### (WIL)
+{{< specialty attr="WIL" untrained="yes" cost="3" >}}
 
 This specialty skill allows a character to improve his ability to follow a person, creature, or land vehicle by noting the tracks it leaves in its wake. 
 

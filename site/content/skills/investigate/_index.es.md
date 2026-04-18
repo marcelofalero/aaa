@@ -38,7 +38,7 @@ Esta habilidad general proporciona a un personaje el entrenamiento y la capacida
 # Habilidades de Especialidad
 
 ## Interrogar
-### (VOL)
+{{< specialty attr="VOL" untrained="yes" cost="3" >}}
 
 La habilidad de Interrogar representa la capacidad de un personaje para hacer las preguntas correctas CON el fin de obtener información de un personaje objetivo específico. El modificador de resistencia de Voluntad de ese personaje es su protección frente a las preguntas incisivas de un interrogador experto.
 
@@ -49,7 +49,7 @@ La habilidad cubre el tipo de interrogatorio que podría llevar a cabo un period
 ---
 
 ## Buscar
-### (VOL)
+{{< specialty attr="VOL" untrained="yes" cost="1" >}}
 
 Esta habilidad de especialidad permite a un personaje desarrollar su ojo para los detalles y su capacidad para detectar objetos ocultos. Buscar se utiliza cuando un personaje quiere buscar pistas en un área específica, encontrar un objeto o persona en particular que sabe que está en el área, o buscar objetos importantes de la manera más rápida y sistemática posible.
 
@@ -60,7 +60,7 @@ El grado de éxito alcanzado en una tirada de habilidad determina lo que el pers
 ---
 
 ## Rastrear
-### (VOL)
+{{< specialty attr="VOL" untrained="yes" cost="3" >}}
 
 Esta habilidad de especialidad permite a un personaje mejorar su capacidad para seguir a una persona, criatura o vehículo terrestre observando los rastros que deja a su paso.
 

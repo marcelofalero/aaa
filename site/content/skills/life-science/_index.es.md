@@ -10,12 +10,8 @@ Esta habilidad amplia representa la formación de un personaje en las ciencias d
 
 ---
 
-# Especialidades
-
 ## Biología, Botánica, Zoología
-### (INT)
-
-*Esta habilidad no se puede usar sin entrenamiento.*
+{{< specialty attr="INT" untrained="yes" cost="3" >}}
 
 Estas habilidades de especialidad deben comprarse por separado.
 - **Biología:** El estudio de los organismos y sus procesos bioquímicos.
@@ -29,9 +25,7 @@ Estas habilidades de especialidad deben comprarse por separado.
 ---
 
 ## Genética
-### (INT)
-
-*Esta habilidad no se puede usar sin entrenamiento.*
+{{< specialty attr="INT" untrained="yes" cost="3" >}}
 
 La genética es el estudio de la herencia y los genes, formando la base de la ingeniería genética y la clonación.
 
@@ -42,9 +36,7 @@ La genética es el estudio de la herencia y los genes, formando la base de la in
 ---
 
 ## Xenología
-### (INT)
-
-*Esta habilidad no se puede usar sin entrenamiento.*
+{{< specialty attr="INT" untrained="yes" cost="3" >}}
 
 La xenología es el estudio de formas de vida animal de naturaleza alienígena y puede usarse para identificar o clasificar dichas formas de vida, incluida la vida vegetal alienígena. Permite a un personaje realizar suposiciones educadas sobre la naturaleza, el comportamiento y las capacidades de las formas de vida alienígenas.
 
@@ -54,9 +46,7 @@ La xenología es el estudio de formas de vida animal de naturaleza alienígena y
 ---
 
 ## Psiónica
-### (INT)
-
-*Esta habilidad no se puede usar sin entrenamiento.*
+{{< specialty attr="INT" untrained="yes" cost="3" >}}
 
 Esta habilidad de especialidad representa el estudio científico de la naturaleza biológica y bioquímica de las habilidades psiónicas.
 
@@ -65,7 +55,24 @@ Esta habilidad de especialidad representa el estudio científico de la naturalez
 ---
 
 ## Zoology
-### (INT)
+{{< specialty attr="INT" untrained="yes" cost="3" >}}
+
+
+
+---
+
+## Xenology
+{{< specialty attr="INT" untrained="yes" cost="3" >}}
+
+Xenology is the study of animal life forms of an alien nature and can be used to identify or classify such life forms, including alien plant life. It allows a Personaje to make educated guesses as to the nature, behavior, and abilities of alien life forms.
+
+⊗ **Increased Effect:** A Personaje receives a **-1 bonus** at rank 3, **-2** at rank 6, **-3** at rank 9, and **-4** at rank 12 on certain Otros skill checks that can be assisted by this specialty. These skills include Survival (in alien environments), Animal Handling (with alien creatures), and Ciencias médicas—xenomedicine.
+---
+
+---
+
+## Zoology
+{{< specialty attr="INT" untrained="yes" cost="3" >}}
 
 
 

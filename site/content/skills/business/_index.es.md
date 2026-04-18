@@ -19,7 +19,7 @@ Se aplicaría una bonificación al dado de situación si el personaje tiene info
 ---
 
 ## Corporativo
-### (INT)
+{{< specialty attr="INT" untrained="yes" cost="3" >}}
 
 Esta especialización permite a un personaje mejorar su capacidad para funcionar en el ámbito del comercio y el comercio a gran escala, y para tratar CON los mercados de valores, fusiones, adquisiciones corporativas, negocios especulativos y los empresarios que operan en estos círculos. También proporciona a un personaje una comprensión de cómo operan las grandes empresas y corporaciones. Los presidentes de corporaciones y los señores del comercio que mueven bienes y servicios a escala global o galáctica usan esta habilidad para determinar el éxito de sus actividades comerciales.
 
@@ -28,7 +28,7 @@ Esta especialización permite a un personaje mejorar su capacidad para funcionar
 ---
 
 ## Negocios Ilícitos
-### (INT)
+{{< specialty attr="INT" untrained="yes" cost="3" >}}
 
 Esta especialización permite a un personaje mejorar su capacidad para funcionar en el lado oscuro del mundo de los negocios. La extorsión, el contrabando, la venta de bienes robados y el trato CON el mercado negro se encuentran entre las prácticas comerciales cuestionables en las que esta habilidad proporciona conocimiento. Comprar rangos en esta habilidad no conduce necesariamente a una carrera criminal exitosa; simplemente le proporciona al personaje el conocimiento para interactuar CON el lado equivocado de la ley. Esta es la habilidad utilizada por el criminal de cuello blanco: el malversador, el que comercia CON información privilegiada, el espía corporativo, etc.
 
@@ -43,7 +43,7 @@ Además, tener esta habilidad reduce la penalización por intentar una transacci
 ---
 
 ## Pequeños Negocios
-### (INT)
+{{< specialty attr="INT" untrained="yes" cost="3" >}}
 
 Esta especialización permite a un personaje mejorar su capacidad para funcionar en la búsqueda del comercio y el comercio a pequeña escala. Los propietarios de pequeñas empresas y los comerciantes usan esta habilidad para determinar el éxito de sus actividades comerciales. Esta habilidad mejora la capacidad de un personaje para regatear a nivel de consumidor, determinar el valor de los bienes y servicios, y encontrar compradores y vendedores en un área específica.
 

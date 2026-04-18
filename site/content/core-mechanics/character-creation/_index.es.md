@@ -71,7 +71,7 @@ Tienes **60 puntos** para dividir entre seis Habilidades. Las puntuaciones deben
 
 ### Modificadores de Resistencia
 
-Las puntuaciones de habilidad más altas proporcionan un "modificador de resistencia" que penaliza a los oponentes que intentan actuar en tu contra.
+Las puntuaciones de habilidad proporcionan un "modificador de resistencia" que modifica la dificultad para los oponentes que intentan actuar en tu contra. Las puntuaciones altas penalizan a los oponentes, mientras que las puntuaciones excepcionalmente bajas pueden otorgarles una bonificación.
 
 <div style="width: max-content;">
 

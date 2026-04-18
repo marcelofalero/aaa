@@ -9,15 +9,12 @@ type = "skill"
 layout = "list"
 +++
 
-
 La psicoportación permite a un personaje manipular el tejido del espacio y el tiempo.
 
 ---
 
 ## Alterar Velocidad
-### (Alter Speed)
-### (WIL)
-
+{{< specialty attr="WIL" untrained="no" cost="4" extended="true" >}}
 
 Permite acelerar o desacelerar un objeto o ser vivo dentro de un rango limitado (25/50/100 metros). El éxito determina el porcentaje de cambio de velocidad:
 - **Ordinario:** 10%
@@ -32,9 +29,7 @@ Permite acelerar o desacelerar un objeto o ser vivo dentro de un rango limitado 
 ---
 
 ## Aportación
-### (Apportation)
-### (WIL)
-
+{{< specialty attr="WIL" untrained="no" cost="6" >}}
 
 El psiónico puede transportar mentalmente objetos o seres vivos de un lugar a otro dentro de un rango de 100 metros. A diferencia de la Teletransportación, el psiónico no viaja con el objetivo.
 
@@ -45,9 +40,7 @@ El psiónico puede transportar mentalmente objetos o seres vivos de un lugar a o
 ---
 
 ## Duplicado
-### (Duplicate)
-### (WIL)
-
+{{< specialty attr="WIL" untrained="no" cost="6" >}}
 
 El personaje trae una versión futura de sí mismo desde una línea temporal alternativa al presente para que le ayude.
 
@@ -60,9 +53,7 @@ El personaje trae una versión futura de sí mismo desde una línea temporal alt
 ---
 
 ## Teletransportación
-### (Teleportation)
-### (WIL)
-
+{{< specialty attr="WIL" untrained="no" cost="5" >}}
 
 Viaje instantáneo a una ubicación conocida en un radio de 100 metros.
 
@@ -73,9 +64,7 @@ Viaje instantáneo a una ubicación conocida en un radio de 100 metros.
 ---
 
 ## Salto Temporal
-### (Timeslip)
-### (WIL)
-
+{{< specialty attr="WIL" untrained="no" cost="6" >}}
 
 "Salta" hacia adelante en el tiempo momentos, minutos u horas. El personaje desaparece y reaparece en las mismas coordenadas locales en el momento futuro elegido.
 
@@ -90,7 +79,5 @@ Viaje instantáneo a una ubicación conocida en un radio de 100 metros.
 ---
 
 ## Caminar entre Dimensiones
-### (Dimension Walk)
-### (WIL - Solo con Entrenamiento)
 
 Salto entre dimensiones paralelas o líneas temporales tangentes. Ten en cuenta que esta habilidad requiere un permiso especial del Director de Juego si el personaje no la tiene ya.

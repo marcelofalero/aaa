@@ -12,12 +12,8 @@ Skill checks made to determine if a character knows a certain piece of technical
 
 ---
 
-# Specialty Skills
-
-
 ## Juryrig
-
-*This skill can't be used untrained.*
+{{< specialty attr="INT" untrained="yes" cost="3" >}}
 
 This skill enables a character to make fast, patchwork repairs in order to get an electronic or mechanical device or system up and running for a short period of time. A juryrig repair, even when successful, adds difficulty to the full repairs that must be made later, but it can get a character through a sticky situation.
 
@@ -36,8 +32,7 @@ The amount of difficulty added to the full repairs depends on the result of the 
 ---
 
 ## Technical Knowledge
-
-*This skill can't be used untrained.*
+{{< specialty attr="INT" untrained="yes" cost="3" >}}
 
 This skill represents the study of technology and indicates how up-to-date a character is on techniques or procedures that help him manipulate tools and other devices. It is necessary for a character to use certain sophisticated or potentially dangerous tools, such as a cutting torch, without risking personal injury or damage to the tool.
 
@@ -62,10 +57,10 @@ This skill represents the study of technology and indicates how up-to-date a cha
 | **Tight deadline** | +1 step |
 | **Unreasonable deadline** | +3 steps |
 
-## Invention
-### (INT)
+---
 
-*This skill can't be used untrained.*
+## Invention
+{{< specialty attr="INT" untrained="yes" cost="3" >}}
 
 Invention lets a character build an electronic or mechanical component or system from scratch, or to modify an existing device to perform a new function. 
 
@@ -78,16 +73,14 @@ Using this skill requires time; Invention checks are always complex skill checks
 ---
 
 ## Jury-rig
-### (INT)
+{{< specialty attr="INT" untrained="yes" cost="3" >}}
 
 
 
 ---
 
 ## Repair
-### (INT)
-
-*This skill can't be used untrained.*
+{{< specialty attr="INT" untrained="yes" cost="3" >}}
 
 This skill provides a character with training in the repair and maintenance of various types of mechanical and electronic technology.
 

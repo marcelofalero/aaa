@@ -11,9 +11,8 @@ Esta habilidad general proporciona a un personaje conocimientos generales sobre 
 En una acción legal, el personaje y el oponente realizan tiradas de habilidad alternas hasta que alguien obtiene un Fallo Crítico o un resultado Asombroso.
 
 ## Habilidades de Especialidad
-### (INT)
+{{< specialty attr="INT" untrained="yes" cost="3" >}}
 
-### Procedimientos judiciales
 Abogados, jueces y otros utilizan esta habilidad para interactuar en un entorno judicial. Esta especialidad se usa para defender un caso o punto de vista en un procedimiento oficial.
 
 ### Ley [Específica]
@@ -34,7 +33,7 @@ Los abogados, jueces y otros utilizan esta habilidad para interactuar en salas d
 ---
 
 ## Law enforcement procedures
-### (INT)
+{{< specialty attr="INT" untrained="yes" cost="3" >}}
 
 Police officers, detectives, bounty hunters, and others use this skill to follow (or bend) legal law enforcement procedures. Topics covered include:
 - Knowing laws concerning surveillance, search, and seizure.
@@ -48,9 +47,21 @@ This specialty is also used to determine how "Bueno" an arrest is (providing amm
 ---
 
 ## Law, specific skill
-### (INT)
+{{< specialty attr="INT" untrained="yes" cost="3" >}}
 
-*This skill can't be used untrained.*
+For each separate purchase of this specialty, a Personaje selects a specific Cultura or a specific type of law (maritime law, salvage law, etc.). As the Especialidad is improved, the Personaje gains a progressively stronger grasp on the laws and legal systems of that Cultura or specialty.
+
+⊗ **Increased Effect:** At higher ranks, the Personaje becomes more proficient within the legal system of the Cultura in question. Using the specific skill provides a reduction to the Dado de Situación:
+- **-1 bonus at Rank 3**
+- **-2 bonus at Rank 6**
+- **-3 bonus at Rank 9**
+- **-4 bonus at Rank 12**
+---
+
+---
+
+## Law, specific skill
+{{< specialty attr="INT" untrained="yes" cost="2" >}}
 
 For each separate purchase of this specialty, a Personaje selects a specific Cultura or a specific type of law (maritime law, salvage law, etc.). As the Especialidad is improved, the Personaje gains a progressively stronger grasp on the laws and legal systems of that Cultura or specialty.
 

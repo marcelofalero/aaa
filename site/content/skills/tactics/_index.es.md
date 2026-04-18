@@ -22,7 +22,7 @@ El uso exitoso de la habilidad proporciona una penalización a la siguiente comp
 # Habilidades de Especialidad
 
 ## Táctica de Infantería
-### (INT)
+{{< specialty attr="INT" untrained="yes" cost="3" >}}
 
 Esta habilidad de especialidad cubre las estrategias de campo de batalla cuando el componente principal de la batalla son las tropas individuales.
 
@@ -33,7 +33,7 @@ Esta habilidad de especialidad cubre las estrategias de campo de batalla cuando 
 ---
 
 ## Táctica Espacial
-### (INT)
+{{< specialty attr="INT" untrained="yes" cost="3" >}}
 
 Estrategias de campo de batalla que involucran el combate entre naves espaciales.
 
@@ -44,7 +44,7 @@ Estrategias de campo de batalla que involucran el combate entre naves espaciales
 ---
 
 ## Táctica de Vehículos
-### (INT)
+{{< specialty attr="INT" untrained="yes" cost="3" >}}
 
 Estrategias de campo de batalla que involucran combate donde los vehículos que no son naves espaciales (aire, tierra o agua) son el componente principal.
 

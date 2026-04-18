@@ -46,7 +46,7 @@ Cuando un personaje usa cualquier arma a distancia, ya sea primitiva o moderna, 
 # Habilidades de especialidad
 
 ## Fusil de asalto
-### (DES)
+{{< specialty attr="DES" untrained="yes" cost="3" >}}
 
 Esta habilidad de especialidad permite a un personaje mejorar su competencia CON pistolas modernas de todo tipo, incluyendo armas de proyectiles y de energía.
 
@@ -57,7 +57,7 @@ Esta habilidad de especialidad permite a un personaje mejorar su competencia CON
 ---
 
 ## Pistola
-### (DES)
+{{< specialty attr="DES" untrained="yes" cost="3" >}}
 
 Esta habilidad de especialidad permite a un personaje mejorar su competencia CON subfusiles modernos de todo tipo (armas automáticas pequeñas que disparan cartuchos de tamaño de pistola), así como subfusiles equivalentes de energía.
 
@@ -76,7 +76,7 @@ Los subfusiles (y los fusiles de asalto) proporcionan a un personaje hasta tres 
 ---
 
 ## Fusil de asalto
-### (DES)
+{{< specialty attr="DES" untrained="yes" cost="3" >}}
 
 Esta habilidad de especialidad cubre los fusiles automáticos: armas de infantería estándar capaces de fuego selectivo y modos automáticos usando cartuchos de calibre de fusil.
 
@@ -95,7 +95,7 @@ Los fusiles de asalto proporcionan a un personaje hasta tres opciones de ataque 
 ---
 
 ## Subfusil
-### (DES)
+{{< specialty attr="DES" untrained="yes" cost="3" >}}
 
 Esta habilidad de especialidad cubre todos los tipos de escopetas modernas, desde las tradicionales armas de proyectiles de corredera y semiautomáticas hasta los emisores especializados de energía de dispersión. Las escopetas se definen por su amplia gama de tipos de munición especializada (postat, balas sólidas, proyectiles de brecha, etc.) o sus configuraciones de energía de modo múltiple.
 
@@ -106,7 +106,7 @@ Esta habilidad de especialidad cubre todos los tipos de escopetas modernas, desd
 ---
 
 ## Escopeta
-### (DES)
+{{< specialty attr="DES" untrained="yes" cost="3" >}}
 
 Esta habilidad de especialidad permite a un personaje mejorar su competencia CON fusiles modernos de un solo disparo, fusiles de precisión (sniper) y fusiles de caza.
 

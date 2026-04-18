@@ -36,27 +36,15 @@ The type of terrain or environment where the character is located can provide a 
 
 ---
 
-# Specialty Skills
+## Survival training
+{{< specialty attr="CON" untrained="yes" cost="3" >}}
 
 
-## Survival Training
-
-This specialty skill enables a character to improve his ability to use the Survival broad skill in a certain type of terrain. This normally includes all terrain types common to his **home world**, plus any others purchased separately.
-
-### Discern Dangers
-While in a terrain he is familiar with, a character is able to quickly identify environmental risks—from collapsing buildings in urban slums to poisonous spores in a fungal jungle.
-- **Ordinary:** The character senses a vague possible danger but cannot identify its nature.
-- **Good or better:** Success allows the character to identify the danger with enough time to react appropriately.
-
-> [!NOTE]
-> The situation modifiers given in the table always apply, even for someone with a high rank in the specialty, but the high rank itself means the character is more likely to succeed.
 
 ---
 
 ## Adaptability
-### (CON)
-
-*This skill can’t be used untrained.*
+{{< specialty attr="CON" untrained="yes" cost="3" >}}
 
 This specialty improves a character’s ability to adapt to alien environments. The character is resourceful enough to grasp unknown survival mechanics through observation and study.
 
@@ -72,15 +60,8 @@ A character can perform a **Survival—Adaptability** challenge, spend studying 
 
 ---
 
-## Survival training [spec]
-### (CON)
-
-
-
----
-
 ## Trailblazing
-### (CON)
+{{< specialty attr="CON" untrained="yes" cost="3" >}}
 
 With trailblazing, a character learns to find paths through rough terrain or create paths that others can use to move faster and cover more ground during a full day's travel. The successful use of this skill reduces the adverse effects of traveling in conditions of Good or Amazing difficulty for the character and any companions who are traveling with him.
 

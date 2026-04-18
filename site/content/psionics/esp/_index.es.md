@@ -9,16 +9,12 @@ type = "skill"
 layout = "list"
 +++
 
-
 Esta habilidad permite a un personaje experimentar su entorno a través de una agencia más allá de los sentidos normales (Percepción Extrasensorial).
 
 ---
 
 ## Mente de Batalla
-### (Battle Mind)
-### (INT)
-
-*Duración extendida.*
+{{< specialty attr="INT" untrained="no" cost="4" extended="true" >}}
 
 Esta habilidad permite a un personaje enfocar su mente en la batalla que le rodea, aumentando así su tiempo de reacción y su precisión. Cada éxito con esta habilidad otorga una bonificación a las [Tiradas de Acción](/core-mechanics/characters-in-action/#action-check) del personaje.
 
@@ -34,10 +30,7 @@ Esta habilidad permite a un personaje enfocar su mente en la batalla que le rode
 ---
 
 ## Clariaudiencia
-### (Clairaudience)
-### (INT)
-
-*Duración extendida.*
+{{< specialty attr="INT" untrained="yes" cost="2" extended="true" >}}
 
 Con esta habilidad, un personaje selecciona una ubicación y proyecta su mente hacia ese lugar, escuchando los sonidos como si estuviera físicamente presente.
 
@@ -73,10 +66,7 @@ Esta duración puede extenderse gastando 1 punto de energía psiónica por cada 
 ---
 
 ## Clarividencia
-### (Clairvoyance)
-### (INT)
-
-*Duración extendida.*
+{{< specialty attr="INT" untrained="yes" cost="2" extended="true" >}}
 
 A través de esta habilidad, un personaje proyecta su mente a un lugar distante para ver lo que sucede allí.
 
@@ -88,8 +78,7 @@ La duración es:
 ---
 
 ## Caza Onírica
-### (Dream Hunt)
-### (INT - Entrenado por Sesheyan)
+{{< specialty attr="INT" untrained="no" cost="3" >}}
 
 Los Mindwalkers asumen el papel de místicos y chamanes en la sociedad sesheyan. Aunque se desarrolló originalmente para la caza de animales, la técnica funciona sobre cualquier ser vivo. El psiónico sesheyan (o entrenado por sesheyan) se concentra en el objetivo y se involucra mentalmente en una caza. Cuanto mejor se conozcan los hábitos del objetivo, más fácil será la caza. Si la tirada de habilidad tiene éxito, el psiónico determina el lugar donde estará la presa en cualquier lugar único en las próximas 24 horas, aunque no cuándo estará allí la presa.
 
@@ -107,10 +96,7 @@ El grado de éxito determina con qué precisión el psiónico puede señalar la 
 ---
 
 ## Empatía
-### (Empathy)
-### (INT)
-
-*Duración extendida.*
+{{< specialty attr="INT" untrained="yes" cost="1" >}}
 
 Permite "leer" las emociones superficiales de otro personaje en el rango visual. Otorga una bonificación a las habilidades de encuentro:
 - **Ordinario:** –1 paso.
@@ -124,8 +110,6 @@ Permite "leer" las emociones superficiales de otro personaje en el rango visual.
 ---
 
 ## Lectura de Mente
-### (Mind Reading)
-### (INT)
 
 Permite leer pensamientos superficiales a menos de 500 metros. La duración es:
 - **Ordinario:** 1 fase (pensamientos inconexos).
@@ -139,9 +123,7 @@ Permite leer pensamientos superficiales a menos de 500 metros. La duración es:
 ---
 
 ## Navcognición
-### (Navcognition)
-### (INT - Solo con Entrenamiento)
-
+{{< specialty attr="INT" untrained="no" cost="3" >}}
 
 Capacidad innata para conocer la posición exacta respecto a un punto fijo. Permite astrografía y cartografía sin equipo.
 
@@ -153,8 +135,7 @@ Capacidad innata para conocer la posición exacta respecto a un punto fijo. Perm
 ---
 
 ## Postcognición
-### (Postcognition)
-### (INT)
+{{< specialty attr="INT" untrained="yes" cost="3" >}}
 
 Siente la resonancia psíquica de un área u objeto:
 - **Ordinario:** emociones generales.
@@ -169,9 +150,7 @@ Se puede ver hacia el pasado tantos días como el rango de habilidad.
 ---
 
 ## Precognición
-### (Precognition)
-### (INT - Solo con Entrenamiento)
-
+{{< specialty attr="INT" untrained="no" cost="4" >}}
 
 Recibe impresiones sobre sucesos futuros. Suele ser activada por el Director de Juego. El éxito otorga un "punto de último recurso" para la escena.
 
@@ -181,8 +160,7 @@ Recibe impresiones sobre sucesos futuros. Suele ser activada por el Director de 
 ---
 
 ## Psicometría
-### (Psychometry)
-### (INT)
+{{< specialty attr="INT" untrained="yes" cost="3" >}}
 
 Lee impresiones psíquicas de objetos inanimados mediante el tacto:
 - **Ordinario:** emociones simples.

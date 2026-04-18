@@ -6,8 +6,6 @@ type = "skill"
 layout = "list"
 +++
 
-**Free to fraal, human, mechalus, sesheyan, t'sa, and weren characters.**
-
 This broad skill represents a character's powers of observation, perception, and intuition. Skill checks are called for when the Gamemaster needs to determine if a character notices something—characters themselves never call for a use of this skill.
 
 Noticing something could be as simple as providing a hint that the character missed in the normal course of play, or help when the character appears totally lost or confused. On a Failure, the character doesn't notice a thing. Otherwise, any success provides the character with at least a small clue. The Gamemaster can decide that the better the level of success achieved, the more details the character becomes aware of. Situation die modifiers are listed in the Gamemaster Guide. Note, too, that another character’s use of certain skills (such as Stealth and Security-protection protocols) can add modifiers to a character's Awareness check.
@@ -19,7 +17,7 @@ Some pieces of sensor equipment may provide benefits to a character’s Awarenes
 ---
 
 ## Intuition
-### (WIL)
+{{< specialty attr="WIL" untrained="yes" cost="1" >}}
 
 This specialty skill represents a character's natural instincts—his ability to sense danger when no obvious signs are evident, to avoid surprise, or to make an intuitive leap of logic without the support of hard facts. It's the ability to make a best guess in a given situation.
 
@@ -32,7 +30,7 @@ When a character wants to make an intuitive "best guess,” the Gamemaster may a
 ---
 
 ## Perception
-### (WIL)
+{{< specialty attr="WIL" untrained="yes" cost="3" >}}
 
 This specialty skill represents a character's alertness and powers of observation—the character notices something either consciously or on a subliminal level. While intuition is a feeling or unexplainable sense, perception works on signs that can be spotted by normal senses—a broken twig lying in a path, the click of a gun’s safety being released, the scent of familiar perfume in a crowded bar, a whisper in the wind. This skill can help determine a character’s ability to spot signs of trouble, perceive the true meaning in an authority figure's comment, or notice a subtle clue poking out of a pile of leaves.
 
@@ -75,14 +73,7 @@ Characters capable of using the **Clairvoyance** power can use it to trace the s
 ---
 
 ## Psionic Sense
-### (WIL)
-
-
-
----
-
-## Psionic Sense
-### (WIL)
+{{< specialty attr="WIL" untrained="yes" cost="4" >}}
 
 
 

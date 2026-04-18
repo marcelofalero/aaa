@@ -259,7 +259,8 @@ def process_psionics(psionics_list, mapping):
                 "attribute": d_attr,
                 "url": d_url,
                 "cost": d.get('cost', 6),
-                "type": "Broad"
+                "type": "Broad",
+                "css_class": "trained-only" if d.get('trained_only', False) else ""
             }
             
             powers = []
@@ -326,7 +327,7 @@ def process_psionics(psionics_list, mapping):
 
 def process_skills(skills_list, mapping):
     for broad in skills_list:
-        url = broad.get('skill_url', '')
+        url = broad.get('url') or broad.get('skill_url', '')
         if not url: continue
         slug = url.strip('/').split('/')[-1]
         out_dir = f'site/content/skills/{slug}'
@@ -361,7 +362,9 @@ def process_skills(skills_list, mapping):
                     elif lang == 'es':
                         s_desc = apply_mapping(s_desc, mapping)
                         
-                    f.write(f'## {s_title}\n### ({s_attr})\n\n{s_desc}\n\n---\n\n')
+                    s_untrained = "no" if spec.get('trained_only', False) else "yes"
+                    s_cost = spec.get('cost', 5)
+                    f.write(f'## {s_title}\n{{{{< specialty attr="{s_attr}" untrained="{s_untrained}" cost="{s_cost}" >}}}}\n\n{s_desc}\n\n---\n\n')
 
     def build_nested_skills_table(lang):
         fields = [

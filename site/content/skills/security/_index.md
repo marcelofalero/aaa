@@ -14,12 +14,8 @@ The complexity of a system relates to how time-consuming it is to get through an
 
 ---
 
-# Specialty Skills
-
 ## Protection protocols
-### (INT)
-
-**Cost: 3**
+{{< specialty attr="INT" untrained="yes" cost="3" >}}
 
 This skill represents a character's training in protection procedures of all types. It has two principal uses:
 
@@ -57,9 +53,7 @@ The analysis check is modified by how well the area is secured:
 ---
 
 ## Security devices
-### (INT)
-
-**Cost: 4**
+{{< specialty attr="INT" untrained="yes" cost="4" >}}
 
 Using this skill, a character can attempt to bypass all types of mechanical or electronic security. This includes everything from traditional pin-tumbler locks and mechanical safes (picking) to high-tech motion sensors, trip wires, and electronic maglocks. It's also used to set traps, both electronic and mechanical in nature.
 

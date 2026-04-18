@@ -22,17 +22,15 @@ When a legal battle is played out "off camera," the GM may call for Law skill ch
 
 ---
 
-# Specialty Skills
-
-
 ## Psionic Law
-
-*This skill can't be used untrained.*
+{{< specialty attr="INT" untrained="yes" cost="3" >}}
 
 Lawyers, judges, and others use this skill to interact in courtrooms and in legislative meetings. This aspect of the Law broad skill is used to argue a case or a point of view in an official proceeding.
 
+---
+
 ## Court procedures
-### (INT)
+{{< specialty attr="INT" untrained="yes" cost="3" >}}
 
 Lawyers, judges, and others use this skill to interact in a courtroom setting. This specialty is used to argue a case or point of view in an official proceeding.
 
@@ -41,7 +39,7 @@ Lawyers, judges, and others use this skill to interact in a courtroom setting. T
 ---
 
 ## Law enforcement procedures
-### (INT)
+{{< specialty attr="INT" untrained="yes" cost="3" >}}
 
 Police officers, detectives, bounty hunters, and others use this skill to follow (or bend) legal law enforcement procedures. Topics covered include:
 - Knowing laws concerning surveillance, search, and seizure.
@@ -55,9 +53,7 @@ This specialty is also used to determine how "good" an arrest is (providing ammu
 ---
 
 ## Law, specific skill
-### (INT)
-
-*This skill can't be used untrained.*
+{{< specialty attr="INT" untrained="yes" cost="2" >}}
 
 For each separate purchase of this specialty, a character selects a specific culture or a specific type of law (maritime law, salvage law, etc.). As the specialty skill is improved, the character gains a progressively stronger grasp on the laws and legal systems of that culture or specialty.
 

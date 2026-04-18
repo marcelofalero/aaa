@@ -11,7 +11,7 @@ Esta habilidad general representa la competencia de un personaje para engañar a
 El dado de situación de un personaje se ve modificado por el modificador de resistencia de Inteligencia del objetivo.
 
 ## Mentir
-### (PER)
+{{< specialty attr="PER" untrained="yes" cost="3" >}}
 
 {{% list %}}
 - **Mentir:** Talento para despistar o engañar mediante una falsa bravuconería o mentiras descaradas.
@@ -21,7 +21,7 @@ El dado de situación de un personaje se ve modificado por el modificador de res
 ---
 
 ## Soborno
-### (PER)
+{{< specialty attr="PER" untrained="yes" cost="3" >}}
 
 Whenever a Personaje wants to offer another Personaje money, goods, information, or services to get that Personaje to do what the Personaje wants, a Soborno check is called for.
 
@@ -40,7 +40,7 @@ On an **Asombroso** result, the Soborno is accepted, and the target's attitude i
 ---
 
 ## Juego
-### (PER)
+{{< specialty attr="PER" untrained="yes" cost="4" >}}
 
 This Especialidad represents a Personaje's proficiency at various games of chance. With each purchase of the Especialidad, the player selects a different game (subject to the approval of the Gamemaster) for his Personaje to be skilled in.
 

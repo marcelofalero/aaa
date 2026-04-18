@@ -9,14 +9,12 @@ type = "skill"
 layout = "list"
 +++
 
-
 This broad skill allows a character to manipulate his or her own biology and physiology, or the biology and physiology of another living being.
 
 ---
 
 ## Bio-armor
-### (CON)
-*Extended duration.*
+{{< specialty attr="CON" untrained="yes" cost="3" extended="true" >}}
 
 This skill psionically reinforces a character's skin, helping to protect from damage. This "body armor" provides protection against physical and energy damage, but does not protect against psionic attacks. (See Telepathy for ways to avoid psionic attacks.)
 
@@ -37,8 +35,7 @@ The protection afforded by bio-armor is based on the user's skill check:
 ---
 
 ## Bioweapon
-### (CON)
-*Extended duration.*
+{{< specialty attr="CON" untrained="yes" cost="3" extended="true" >}}
 
 When employing this skill, a character generates a field of kinetic energy emanating from his or her hands. This energy manifests in one of two ways, to be chosen by the player at the time the character makes a successful skill check: a staff or a sword.
 
@@ -69,8 +66,7 @@ This bonus lasts until the character chooses not to maintain the bioweapon.
 ---
 
 ## Clamber
-### (CON)
-*Extended duration.*
+{{< specialty attr="CON" untrained="yes" cost="2" extended="true" >}}
 
 In the distant past, certain t'sa psions developed the **clamber** skill—usually those who dwelled in the mountainous regions of the t'sa homeworld. With it, the psionic t'sa (or a psion trained by t'sa) generates thousands of tiny suckers on the palms of his hands and the soles of his or her feet. The character can then move up and down nearly vertical surfaces with ease, and can even move across inverted surfaces for short distances. In the steep mountains of the t'sa homeworld, this often meant survival.
 
@@ -84,8 +80,7 @@ The degree of success with this skill determines the modifier to a psion's **Ath
 ---
 
 ## Control Metabolism
-### (CON)
-*Extended duration.*
+{{< specialty attr="CON" untrained="yes" cost="2" extended="true" >}}
 
 Through the use of this skill, a character can regulate his or her metabolic processes. This allows longer survival without food and water, in extreme climates, and in other hostile conditions. The character can also slow bodily functions to the point of pretending to be dead, should he or she need to fool others in some situation.
 
@@ -100,7 +95,7 @@ In the case of a hostile environment, the result of a skill check determines the
 After the initial use of the skill, the level of protection can be maintained thereafter for a cost of 1 psionic energy point per hour.
 
 #### Adrenal boost
-*Extended duration.*
+
 The character can mentally boost adrenaline output, giving an action check bonus. 
 - **Ordinary:** +1 to action check score.
 - **Good:** +2 to action check score.
@@ -109,7 +104,7 @@ The character can mentally boost adrenaline output, giving an action check bonus
 This bonus lasts for the duration of the round in which the power is activated and through all of the next round. A character may extend the duration 1 round for every psionic energy point spent to do so.
 
 #### Endorphin release
-*Extended duration.*
+
 The character can mentally stimulate the production of endorphins, increasing his or her resistance to pain and fatigue.
 - **Ordinary:** -1 step bonus to Stamina checks.
 - **Good:** -2 step bonus to Stamina checks.
@@ -120,7 +115,7 @@ The duration is one hour; the duration may be extended by one hour per extra psi
 ---
 
 ## Heal
-### (CON)
+{{< specialty attr="CON" untrained="no" cost="4" >}}
 
 By concentrating, a character using this skill can heal wounds or disease. How much damage can be healed depends on the result of a skill check:
 - **Ordinary:** 1 wound point
@@ -146,8 +141,7 @@ Psionic healing requires time. The results are immediate, but the body's reactio
 ---
 
 ## Intangibility
-### (CON)
-*Extended duration.*
+{{< specialty attr="CON" untrained="no" cost="4" >}}
 
 By mentally reordering the molecules of his or her body, the character can concentrate and become immaterial and thus pass through solid objects. This ability affects the character's clothing (including light armor—any armor that does not require the Armor Operation skill) and up to one kilogram per skill rank of additional equipment carried in the hands.
 
@@ -168,7 +162,7 @@ While intangible, the character falls at a greatly reduced rate: roughly three m
 ---
 
 ## Morph
-### (CON)
+{{< specialty attr="CON" untrained="no" cost="4" >}}
 
 By using this skill, a character can alter his or her physical features so as to be disguised or to accomplish something otherwise impossible, such as squeeze into a small hole, reach higher than his or her height normally allows, or slip loose of bonds.
 
@@ -201,7 +195,8 @@ A morphed body part retains its original characteristics; no game statistics cha
 ---
 
 ## Rejuvenate
-### (CON)
+{{< specialty attr="CON" untrained="yes" cost="3" >}}
+
 When using this skill, a character can offset fatigue or stun damage, or some of each, that he or she has suffered. The skill does nothing to alleviate psionic energy loss.
 
 A successful skill check provides the character with a certain number of "rejuvenation points." It costs 2 of these points to restore 1 point of fatigue damage, and 1 of these points to restore 1 point of stun damage. On an Ordinary success, the character receives 2 "rejuvenation points"; on a Good success, 4 points; and on an Amazing success, 6 points. The character can use these points in any combination to restore stun points, fatigue points, or some of each. "Rejuvenation points" that can't be used immediately are lost.
@@ -216,7 +211,8 @@ Psionic rejuvenation requires time. The results are immediate, but the body's re
 ---
 
 ## Shatter
-### (CON)
+{{< specialty attr="CON" untrained="yes" cost="3" >}}
+
 Weren history tells of a clan that used armor to conquer the other clans. Having fashioned plates of crude armor from boiled marrizhe hide, this clan was despised by the other clans—but they were also unstoppable. Then came a great character—posthumously claimed by every other clan—who dueled the warlord of the armored clan for all his land, herds, and wives. In the midst of the duel, the mystery weren suddenly brought both fists down on his opponent's armored chest, and the leather plates shattered. At best an average fighter without his armor, the warlord quickly succumbed, and the weren warrior mysteriously vanished—though not, of course, without claiming his prizes.
 
 Weren warriors have long attempted to emulate that legendary fighter, though the only successes have been by psionics-users gifted with Biokinesis. They are able to direct bio-energy at solid surfaces—usually armor—in such a way that the surface breaks. To use this ability, the weren psion must first attempt a Biokinesis—shatter skill check. If the check is successful, the next bare-fisted blow the weren lands inflicts damage to the opponent's armor, if any, rather than than to the opponent. If the weren fails to strike armor before the end of the next round, the effect dissipates, though the character can try again.
@@ -231,7 +227,8 @@ If the shatter skill check yielded an Ordinary result, the armor he strikes abso
 ---
 
 ## Transfer Damage
-### (CON)
+{{< specialty attr="CON" untrained="yes" cost="2" >}}
+
 By laying hands upon another character and making a successful skill check, the psion alleviates that character's damage or disease by absorbing it.
 
 The damage that can be absorbed is tied to the result of a skill check:

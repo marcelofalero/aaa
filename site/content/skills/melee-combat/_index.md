@@ -16,10 +16,8 @@ The base damage for an unarmed attack depends on the size of the character; for 
 
 ---
 
-# Specialty Skills
-
 ## Blade
-### (STR)
+{{< specialty attr="STR" untrained="yes" cost="3" >}}
 
 As a character improves his ability in the blade specialty skill, he gains rank benefits as described below. Note: These benefits only apply when the character is using a weapon covered by this skill.
 
@@ -36,7 +34,7 @@ As a character improves his ability in the blade specialty skill, he gains rank 
 ---
 
 ## Blunt
-### (STR)
+{{< specialty attr="STR" untrained="yes" cost="3" >}}
 
 As a character improves his ability in the blunt specialty skill, he gains rank benefits as described below. Note: These benefits only apply when the character is using a weapon covered by this skill.
 
@@ -53,7 +51,7 @@ As a character improves his ability in the blunt specialty skill, he gains rank 
 ---
 
 ## Defensive Martial Arts
-### (STR)
+{{< specialty attr="STR" untrained="yes" cost="3" >}}
 
 As a character improves his ability in the defensive martial arts specialty skill, he gains rank benefits as described below. Note: These benefits only apply when the character is fighting unarmed or with appropriate martial arts implements.
 
@@ -80,7 +78,7 @@ How we do things reaches rank 10, All Out Attacks that miss him can be redirecte
 ---
 
 ## Power Martial Arts
-### (STR)
+{{< specialty attr="STR" untrained="yes" cost="3" >}}
 
 As a character improves his ability in the power martial arts specialty skill, he gains rank benefits as described below. Note: These benefits only apply when the character is fighting unarmed or with appropriate martial arts implements.
 
@@ -111,7 +109,7 @@ Every additional attacker who takes part in the same overpowering attempt provid
 ---
 
 ## Powered
-### (STR)
+{{< specialty attr="STR" untrained="yes" cost="3" >}}
 
 As a character improves his ability in the powered specialty skill, he gains rank benefits as described below. Note: These benefits only apply when the character is using a weapon covered by this skill.
 

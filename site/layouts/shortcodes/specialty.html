@@ -1,0 +1,22 @@
+<div class="specialty-info-grid">
+    <div class="specialty-info-item">
+        <span class="specialty-info-label">{{ T "attribute" | default "Attribute" }}</span>
+        <span class="specialty-info-value">{{ .Get "attr" | default "N/A" }}</span>
+    </div>
+    <div class="specialty-info-item">
+        <span class="specialty-info-label">{{ T "cost" | default "Cost" }}</span>
+        <span class="specialty-info-value">{{ .Get "cost" | default "N/A" }}</span>
+    </div>
+    <div class="specialty-info-item">
+        <span class="specialty-info-label">{{ T "untrained" | default "Untrained" }}</span>
+        <span class="specialty-info-value">
+            {{ if eq (lower (.Get "untrained" | default "no")) "no" }}{{ T "no" | default "No" }}{{ else }}{{ T "yes" | default "Yes" }}{{ end }}
+        </span>
+    </div>
+    {{ if eq (lower (.Get "extended" | default "no")) "yes" }}
+    <div class="specialty-info-item">
+        <span class="specialty-info-label">{{ T "extendedDuration" | default "Extended Duration" }}</span>
+        <span class="specialty-info-value">{{ T "yes" | default "Yes" }}</span>
+    </div>
+    {{ end }}
+</div>

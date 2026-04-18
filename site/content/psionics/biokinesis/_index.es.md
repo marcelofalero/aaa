@@ -9,14 +9,12 @@ type = "skill"
 layout = "list"
 +++
 
-
 Esta amplia habilidad permite a un personaje manipular su propia biología y fisiología, o la biología y fisiología de otro ser vivo.
 
 ---
 
 ## Bioarmadura
-### (CON)
-*Duración extendida.*
+{{< specialty attr="CON" untrained="yes" cost="3" extended="true" >}}
 
 Esta habilidad refuerza psiónicamente la piel de un personaje, ayudando a protegerlo del daño. Esta "armadura corporal" proporciona protección contra daños físicos y de energía, pero no protege contra ataques psiónicos. (Consulta Telepatía para conocer formas de evitar los ataques psiónicos).
 
@@ -37,8 +35,7 @@ La protección proporcionada por la bioarmadura se basa en la tirada de habilida
 ---
 
 ## Bioarma
-### (CON)
-*Duración extendida.*
+{{< specialty attr="CON" untrained="yes" cost="3" extended="true" >}}
 
 Al emplear esta habilidad, un personaje genera un campo de energía cinética que emana de sus manos. Esta energía se manifiesta de una de dos maneras, que el jugador debe elegir en el momento en que el personaje realiza con éxito una prueba de habilidad: una vara o una espada.
 
@@ -69,10 +66,6 @@ Esta bonificación dura hasta que el personaje decida no seguir manteniendo la b
 ---
 
 ## Trepado
-### (Clamber)
-### (CON)
-
-*Duración extendida.*
 
 En un pasado lejano, ciertos psiónicos t'sa desarrollaron la habilidad de **trepado**, normalmente los que vivían en las regiones montañosas del planeta de origen de los t'sa. Con ella, el t'sa psiónico (o un psiónico entrenado por los t'sa) genera miles de minúsculas ventosas en las palmas de sus manos y en las plantas de sus pies. El personaje puede entonces subir y bajar por superficies casi verticales con facilidad, e incluso desplazarse por superficies invertidas en distancias cortas. En las escarpadas montañas del planeta t'sa, esto significaba a menudo la supervivencia.
 
@@ -86,8 +79,7 @@ El grado de éxito con esta habilidad determina el modificador de un intento de 
 ---
 
 ## Control del Metabolismo
-### (CON)
-*Duración extendida.*
+{{< specialty attr="CON" untrained="yes" cost="2" extended="true" >}}
 
 A través del uso de esta habilidad, un personaje puede regular sus procesos metabólicos. Esto permite una supervivencia más prolongada sin comida ni agua, en climas extremos y en otras condiciones hostiles. El personaje también puede ralentizar sus funciones corporales hasta el punto de fingir que está muerto, si necesita engañar a otros en alguna situación.
 
@@ -102,7 +94,7 @@ En el caso de un entorno hostil, el resultado de una tirada de habilidad determi
 Después del uso inicial de la habilidad, el nivel de protección se puede mantener posteriormente a un coste de 1 punto de energía psiónica por hora.
 
 #### Impulso de adrenalina (Adrenal boost)
-*Duración extendida.*
+
 El personaje puede aumentar mentalmente la producción de adrenalina, otorgando una bonificación a las tiradas de acción.
 - **Ordinario:** +1 a la puntuación de la tirada de acción.
 - **Bueno:** +2 a la puntuación de la tirada de acción.
@@ -111,7 +103,7 @@ El personaje puede aumentar mentalmente la producción de adrenalina, otorgando 
 Esta bonificación dura lo que reste del asalto en el que se activó el poder y todo el asalto siguiente. Un personaje puede extender la duración 1 asalto por cada punto de energía psiónica gastado para ello.
 
 #### Liberación de endorfinas (Endorphin release)
-*Duración extendida.*
+
 El personaje puede estimular mentalmente la producción de endorfinas, aumentando su resistencia al dolor y la fatiga.
 - **Ordinario:** bonificación de –1 paso a las tiradas de Firmeza (Stamina).
 - **Bueno:** bonificación de –2 pasos a las tiradas de Firmeza (Stamina).
@@ -122,7 +114,7 @@ La duración es de una hora; la duración puede extenderse una hora más por cad
 ---
 
 ## Sanar
-### (CON)
+{{< specialty attr="CON" untrained="no" cost="4" >}}
 
 Al concentrarse, un personaje puede curarse a sí mismo el daño por heridas o una enfermedad. La cantidad de daño que puede curarse depende del resultado de una tirada de habilidad:
 - **Ordinario:** 1 punto de herida
@@ -148,8 +140,7 @@ La curación psiónica requiere tiempo. Los resultados son inmediatos, pero la r
 ---
 
 ## Intangibilidad
-### (CON)
-*Duración extendida.*
+{{< specialty attr="CON" untrained="no" cost="4" >}}
 
 Al reordenar mentalmente las moléculas de su cuerpo, el personaje puede concentrarse y volverse inmaterial, y así atravesar objetos sólidos. Esta habilidad afecta a la ropa del personaje (incluyendo la armadura ligera—cualquier armadura que no requiera la habilidad de Operación de Armaduras) y hasta un kilogramo por rango de habilidad de equipo adicional que se lleve en las manos.
 
@@ -170,9 +161,7 @@ Mientras sea intangible, el personaje cae a un ritmo muy reducido: aproximadamen
 ---
 
 ## Metamorfosis
-### (Morph)
-### (CON)
-
+{{< specialty attr="CON" untrained="no" cost="4" >}}
 
 Mediante el uso de esta habilidad, un personaje puede alterar sus rasgos físicos para disfrazarse o para lograr algo que de otro modo sería imposible, como apretujarse en un agujero pequeño, llegar más alto de lo que su estatura permite normalmente o soltarse de unas ataduras.
 
@@ -205,7 +194,8 @@ Una parte del cuerpo metamorfoseada conserva sus características originales; no
 ---
 
 ## Rejuvenecer
-### (CON)
+{{< specialty attr="CON" untrained="yes" cost="3" >}}
+
 Al usar esta habilidad, un personaje puede compensar la fatiga o el daño por aturdimiento, o una parte de cada uno, que haya sufrido. La habilidad no hace nada para aliviar la pérdida de energía psiónica.
 
 Una tirada de habilidad de éxito proporciona al personaje un cierto número de "puntos de rejuvenecimiento". Cuesta 2 de estos puntos restaurar 1 punto de daño por fatiga y 1 de estos puntos para restaurar 1 punto de daño por aturdimiento. En un éxito Ordinario, el personaje recibe 2 "puntos de rejuvenecimiento"; en un éxito Bueno, 4 puntos; y en un éxito Asombroso, 6 puntos. El personaje puede usar estos puntos en cualquier combinación para restaurar puntos de aturdimiento, puntos de fatiga o parte de cada uno. Los "puntos de rejuvenecimiento" que no puedan usarse inmediatamente se perderán.
@@ -220,8 +210,6 @@ El rejuvenecimiento psiónico requiere tiempo. Los resultados son inmediatos, pe
 ---
 
 ## Destrozar
-### (Shatter)
-### (CON)
 
 La historia weren habla de un clan que utilizó la armadura para conquistar a los demás clanes. Habiendo fabricado placas de armadura rudimentaria con piel de marrizhe hervida, este clan era despreciado por los demás clanes, pero también era imparable. Entonces llegó un gran personaje —reclamado póstumamente por todos los demás clanes— que se batió en duelo con el señor de la guerra del clan acorazado por todas sus tierras, rebaños y esposas. En medio del duelo, el misterioso weren descargó de repente ambos puños sobre el pecho acorazado de su oponente, y las placas de cuero se destrozaron. El señor de la guerra, que en el mejor de los casos era un luchador mediocre sin su armadura, sucumbió rápidamente, y el guerrero weren desapareció misteriosamente, aunque no, por supuesto, sin reclamar sus premios.
 
@@ -237,8 +225,7 @@ Si la tirada de la habilidad destrozar arrojó un resultado Ordinario, la armadu
 ---
 
 ## Transferir Daño
-### (Transfer Damage)
-### (CON)
+{{< specialty attr="CON" untrained="yes" cost="2" >}}
 
 Al imponer las manos sobre otro personaje y realizar con éxito una tirada de habilidad, el psiónico alivia el daño o la enfermedad de ese personaje absorbiéndolos.
 
