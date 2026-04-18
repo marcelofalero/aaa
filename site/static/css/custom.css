@@ -366,7 +366,7 @@ h3 {
 
 @media screen and (min-width: 768px) {
     .index-card-content {
-        max-height: 350px;
+        max-height: 700px;
     }
 }
 
