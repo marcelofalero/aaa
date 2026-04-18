@@ -1,7 +1,7 @@
 [{{ $first := true }}
 {{ range $page := .Site.RegularPages }}
   {{ $section := index (split $page.File.Dir "/") 0 }}
-  {{ if not (in (slice "backgrounds" "equipment" "skills" "perks_and_flaws" "species" "professions") $section) }}
+  {{ if not (in (slice "backgrounds" "equipment" "skills" "perks_and_flaws") $section) }}
     {{ if not $first }}, {{ end }}
     {
       "title": {{ $page.Title | plainify | jsonify }},
