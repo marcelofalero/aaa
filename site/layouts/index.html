@@ -11,7 +11,7 @@
         </h2>
       </div>
 
-      <div class="flex-auto">
+      <div class="flex-auto overflow-y-auto" style="max-height: 350px;">
         {{ if eq .Section "skills" }}
         {{ $groups := .Pages.GroupByParam "category" }}
         {{ $categoryOrder := slice "Combat" "Psionics" "Social" "Technical" "Other" }}

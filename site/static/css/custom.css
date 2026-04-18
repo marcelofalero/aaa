@@ -319,3 +319,22 @@ h3 {
   border-radius: 2px;
   text-shadow: 0 0 5px var(--accent-cyan);
 }
+
+/* Themed Scrollbars for auto-overflow containers */
+.overflow-y-auto {
+  scrollbar-width: thin;
+  scrollbar-color: var(--accent-cyan) transparent;
+}
+
+.overflow-y-auto::-webkit-scrollbar {
+  width: 6px;
+}
+
+.overflow-y-auto::-webkit-scrollbar-thumb {
+  background-color: var(--accent-cyan);
+  border-radius: 10px;
+}
+
+.overflow-y-auto::-webkit-scrollbar-track {
+  background: transparent;
+}
