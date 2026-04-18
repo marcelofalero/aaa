@@ -5,30 +5,32 @@
         "section": "rules"
     },
     "perks": {
-        "columns": [
-            {
-                "name": "Ventaja",
-                "key": "name",
-                "link": true
-            },
-            {
-                "name": "Costo",
-                "key": "cost"
-            },
-            {
-                "name": "Capacidad",
-                "key": "ability"
-            },
-            {
-                "name": "Tipo",
-                "key": "type"
-            },
-            {
-                "name": "Descripción",
-                "key": "description",
-                "hidden": true
-            }
-        ],
+        "config": {
+            "columns": [
+                {
+                    "name": "Ventaja",
+                    "key": "name",
+                    "link": true
+                },
+                {
+                    "name": "Costo",
+                    "key": "cost"
+                },
+                {
+                    "name": "Capacidad",
+                    "key": "ability"
+                },
+                {
+                    "name": "Tipo",
+                    "key": "type"
+                },
+                {
+                    "name": "Descripción",
+                    "key": "description",
+                    "hidden": true
+                }
+            ]
+        },
         "items": [
             {
                 "name": "Ventajas",
@@ -230,26 +232,28 @@
         ]
     },
     "flaws": {
-        "columns": [
-            {
-                "name": "Defecto",
-                "key": "name",
-                "link": true
-            },
-            {
-                "name": "Puntos de bonificación",
-                "key": "bonus_points"
-            },
-            {
-                "name": "Capacidad",
-                "key": "ability"
-            },
-            {
-                "name": "Descripción",
-                "key": "description",
-                "hidden": true
-            }
-        ],
+        "config": {
+            "columns": [
+                {
+                    "name": "Defecto",
+                    "key": "name",
+                    "link": true
+                },
+                {
+                    "name": "Puntos de bonificación",
+                    "key": "bonus_points"
+                },
+                {
+                    "name": "Capacidad",
+                    "key": "ability"
+                },
+                {
+                    "name": "Descripción",
+                    "key": "description",
+                    "hidden": true
+                }
+            ]
+        },
         "items": [
             {
                 "name": "Defectos",

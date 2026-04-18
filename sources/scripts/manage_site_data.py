@@ -412,11 +412,11 @@ def process_perks_flaws(perks_list, flaws_list, mapping):
                 "section": "rules"
             },
             "perks": {
-                "columns": perk_columns,
+                "config": { "columns": perk_columns },
                 "items": [{"name": "Perks" if lang == 'en' else "Ventajas", "items": processed_perks}]
             },
             "flaws": {
-                "columns": flaw_columns,
+                "config": { "columns": flaw_columns },
                 "items": [{"name": "Flaws" if lang == 'en' else "Defectos", "items": processed_flaws}]
             }
         }

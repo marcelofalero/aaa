@@ -5,30 +5,32 @@
         "section": "rules"
     },
     "perks": {
-        "columns": [
-            {
-                "name": "Perk",
-                "key": "name",
-                "link": true
-            },
-            {
-                "name": "Cost",
-                "key": "cost"
-            },
-            {
-                "name": "Ability",
-                "key": "ability"
-            },
-            {
-                "name": "Type",
-                "key": "type"
-            },
-            {
-                "name": "Description",
-                "key": "description",
-                "hidden": true
-            }
-        ],
+        "config": {
+            "columns": [
+                {
+                    "name": "Perk",
+                    "key": "name",
+                    "link": true
+                },
+                {
+                    "name": "Cost",
+                    "key": "cost"
+                },
+                {
+                    "name": "Ability",
+                    "key": "ability"
+                },
+                {
+                    "name": "Type",
+                    "key": "type"
+                },
+                {
+                    "name": "Description",
+                    "key": "description",
+                    "hidden": true
+                }
+            ]
+        },
         "items": [
             {
                 "name": "Perks",
@@ -230,26 +232,28 @@
         ]
     },
     "flaws": {
-        "columns": [
-            {
-                "name": "Flaw",
-                "key": "name",
-                "link": true
-            },
-            {
-                "name": "Bonus Points",
-                "key": "bonus_points"
-            },
-            {
-                "name": "Ability",
-                "key": "ability"
-            },
-            {
-                "name": "Description",
-                "key": "description",
-                "hidden": true
-            }
-        ],
+        "config": {
+            "columns": [
+                {
+                    "name": "Flaw",
+                    "key": "name",
+                    "link": true
+                },
+                {
+                    "name": "Bonus Points",
+                    "key": "bonus_points"
+                },
+                {
+                    "name": "Ability",
+                    "key": "ability"
+                },
+                {
+                    "name": "Description",
+                    "key": "description",
+                    "hidden": true
+                }
+            ]
+        },
         "items": [
             {
                 "name": "Flaws",
