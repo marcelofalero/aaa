@@ -44,10 +44,10 @@
         {{ end }}
         {{ else if eq .Section "perks_flaws" }}
         <div class="mb3">
-          <h3 class="f6 ttu tracked neon-cyan mb2 o-80">{{ if eq .Site.Language.Lang "es" }}Beneficios{{ else }}Perks{{
+          <h3 class="f6 ttu tracked neon-cyan mb2 o-80">{{ if eq .Site.Language.Lang "es" }}Ventajas{{ else }}Perks{{
             end }}</h3>
           <p class="f6 lh-copy">
-            {{ $perks := where .Site.RegularPages "Section" "perks_flaws" }}
+            {{ $perks := (where .Site.RegularPages "Section" "perks").ByTitle }}
             {{ range $index, $perk := $perks }}
             <a href="{{ .RelPermalink }}" class="link silver hover-white">{{ .Title }}</a>{{ if ne $index (sub (len
             $perks) 1) }}, {{ end }}
@@ -58,7 +58,7 @@
           <h3 class="f6 ttu tracked neon-cyan mb2 o-80">{{ if eq .Site.Language.Lang "es" }}Defectos{{ else }}Flaws{{
             end }}</h3>
           <p class="f6 lh-copy">
-            {{ $flaws := where .Site.RegularPages "Section" "flaws" }}
+            {{ $flaws := (where .Site.RegularPages "Section" "flaws").ByTitle }}
             {{ range $index, $flaw := $flaws }}
             <a href="{{ .RelPermalink }}" class="link silver hover-white">{{ .Title }}</a>{{ if ne $index (sub (len
             $flaws) 1) }}, {{ end }}

@@ -14,6 +14,8 @@ This page provides a mapping of common game terms from English to Spanish to ens
 | Specialty Skill | Especialidad |
 | Character | Personaje |
 | Gamemaster (GM) | Director de Juego (DJ) |
+| Perk | Ventaja |
+| Flaw | Defecto |
 | Action Check | Tirada de Acción |
 | Success Check | Tirada de Éxito |
 | Situation Die | Dado de Situación |

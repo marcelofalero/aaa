@@ -1,82 +1,401 @@
 {
-  "search_config": {
-    "display_name": "PERKS & FLAWS",
-    "base_url": "/character-creation/perks-and-flaws/",
-    "section": "rules"
-  },
-  "perks": {
-    "columns": [
-      { "name": "Perk", "key": "name" },
-      { "name": "Cost", "key": "cost" },
-      { "name": "Ability", "key": "ability" },
-      { "name": "Type", "key": "type" },
-      { "name": "Description", "key": "description", "hidden": true }
-    ],
-    "groups": [
-      {
-        "name": "Perks",
-        "items": [
-          { "name": "Alien Artifact", "cost": "8", "ability": "—", "type": "Special", "description": "An alien artifact is a strange device or relic that the hero doesn't know anything about. It could be an object of alien origin, a one-of-a-kind experimental gadget, or even an experimental process used on the character at some point in the past. Somewhere in his travels, the hero came to possess the artifact. Any alien artifact that is an item is small enough to be easily carried around or worn. The hero doesn't know his item’s function or purpose; he has to discover exactly what the artifact does as the campaign progresses. As a perk, an alien artifact provides mostly advantages—but every artifact also has its negative side. Some provide a constant benefit; others require that the hero make a perk check to activate the artifact.<br><br>An artifact’s negative side can be a flaw that manifests when the hero least expects it; the downside can also be the simple fact that alien artifacts are extremely rare, exceedingly valuable, and highly coveted. Someone wants the one your hero possesses, and will stop at nothing to get it.<br><br>Alien artifacts are listed and described in the Gamemaster Guide. After you select this perk, the Gamemaster will design an alien artifact for your hero." },
-          { "name": "Ambidextrous", "cost": "4", "ability": "DEX", "type": "Active", "description": "A hero with this perk can use both hands at the same time with more ease than someone who is not ambidextrous. A hero without this perk suffers penalties when using his off hand or when attempting to use two weapons in combat. (See “Attacking with Two Weapons\" on page 57 in Chapter 3: Heroes in Action.) With this perk, the penalty for the action using the off hand is reduced to +2 steps, and the penalty for the primary hand is eliminated." },
-          { "name": "Animal Friend", "cost": "4", "ability": "WIL", "type": "Conscious", "description": "Animals of all kinds innately trust a hero who has this perk. The hero can easily befriend animals, and he makes all encounter rolls involving normal animals with a -2 bonus (use the situation modifiers for the Animal Handling skill, page 91). The hero makes Animal Handling skill checks with a -1 bonus, in addition to other modifiers that may apply. This bonus has the effect of making it possible for the hero to train an animal in less time than would be needed by a hero who does not have this perk. The perk has no effect on sentient or unintelligent creatures." },
-          { "name": "Celebrity", "cost": "3", "ability": "PER", "type": "Conscious", "description": "This perk indicates that the hero is famous in certain circles, as chosen by the player and Gamemaster. The character can be an entertainment celebrity, a renowned scientist, doctor, or war hero, or he can enjoy celebrity status for another reason that the Gamemaster approves.<br><br>In a circumstance when a hero’s Celebrity might have an effect, the Gamemaster may call for a perk check at the start of a scene to determine if the perk makes any difference in what's about to happen. A movie star may be adored by those who watch his films, but his celebrity status means nothing to those who have never seen a movie or read a personality profile of the star.<br><br>Check results: Critical Failure, celebrity status backfires and the hero is mobbed by the crowd; Failure, +2 penalty to any Personality-based skill checks made by the hero during the upcoming scene; Marginal, no modifier; Ordinary, -1 bonus; Good, -2 bonus; Amazing, -3 bonus.<br><br>As a celebrity’s achievement level improves, so does the bonus applied to the perk check: At level 5, the base situation die for any Celebrity check becomes -d4; at level 10 it becomes -d6; and at level 15 it becomes -d8." },
-          { "name": "Concentration", "cost": "3", "ability": "INT", "type": "Conscious", "description": "This perk provides a hero with the ability to concentrate on the task at hand. By using it as an action, the hero makes a Concentration check to improve a stated task that he wants to attempt as his next action. On a Failure result, the hero's next action is made with no modifier for Concentration. On an Ordinary, his ability to concentrate provides him a -1 bonus; Good, -2 bonus; Amazing, -3 bonus. If a hero is disturbed in any way prior to attempting the stated task, the Concentration perk bonus is lost." },
-          { "name": "Danger Sense", "cost": "4", "ability": "WIL", "type": "Active", "description": "This perk provides a hero with the innate ability to anticipate danger. This translates as a -2 bonus to all Awareness—intuition checks." },
-          { "name": "Faith", "cost": "5", "ability": "WIL", "type": "Conscious", "description": "This perk provides a hero with belief in either himself or a power or agency greater than himself. The player must select what the hero has faith in and the basic tenets of that faith. Examples include a nation, a religion, or a specific organization. This faith must be strong and all-encompassing. The hero must truly be fervent in his belief in this faith, not just be a casual observer of form and ritual. A hero with this perk who doesn't show extreme devotion loses the benefits it provides.<br><br>The first time the Faith perk is called upon during an adventure, the hero’s base situation die for the perk check is -d4. Each additional use of this perk in the same adventure receives a cumulative +1 penalty. The moment a hero fails a perk check, he can't call upon the benefits of this perk until the next adventure or the next game session, as determined by the Gamemaster.<br><br>With the Faith perk, a hero can appear to perform miracles when the perk is used in conjunction with a skill that doesn't go against the tenets of the hero's faith. For example, a member of the clergy can call on Faith to help him solve a problem, apply medical aid to a character, or settle a dispute, but the benefits can't be applied to firing a weapon at a living foe.<br><br>The benefits of Faith depend on a perk check: On a Critical Failure, the hero fails not only the perk check but the skill check that follows it, and this perk can't be used again until the next adventure or game session (as the Gamemaster determines). On a Failure, the perk provides no benefit and it can't be used again until the next adventure or game session (as the Gamemaster determines). On an Ordinary, the result of the hero’s subsequent skill check is improved by one degree of success. On a Good, the next skill check result is improved by two degrees of success. On an Amazing, the next skill check result is improved by three degrees of success. (Of course, a result can never be improved to any degree greater than Amazing.)<br><br>**Example:** The weren shaman Gorrarl must apply first aid to a badly wounded companion. He calls on his Faith perk first, achieving a Good on the perk check. This grants him an improvement of two degrees of success on his first aid check result. The dice indicate that his first aid check is a Critical Failure, but because of his perk it instead becomes an Ordinary." },
-          { "name": "Filthy Rich", "cost": "6", "ability": "PER", "type": "Conscious", "description": "This perk suggests a lot about a hero’s background and usually indicates a connection to a wealthy (and perhaps influential) family. This perk influences a hero's starting funds, as described in Chapter 9: Goods & Services. If the hero ever needs to acquire funds, he can make a Filthy Rich check (with the permission of the Gamemaster). Failure indicates that the funds aren't forthcoming; an Ordinary or better indicates that the funds he needs are available. The more the hero asks for, however, the greater the situation die penalty.<br><br>Finally, Filthy Rich heroes have other advantages due to their social and financial status. This translates into a bonus to Personality-based skills when the hero decides to reveal his status. A perk check is made at the start of a scene. Results follow: On a Critical Failure, the hero’s status backfires, resulting in a +1 penalty to all checks related to Personality skills; Failure, no effect; Ordinary, -1 bonus; Good, -2 bonus; Amazing, -3 bonus.<br><br>The Gamemaster can determine that in some situations the Filthy Rich perk can operate as a flaw—especially among those who have a strong dislike for the wealthy and the upper classes. If a hero reveals his status in such a situation, perk check results become penalties instead of bonuses (or vice versa)." },
-          { "name": "Fists of Iron", "cost": "2/5", "ability": "STR", "type": "Active", "description": "This perk provides a hero with a 1-point increase to the damage he inflicts on a successful Unarmed Attack skill check. The use of this perk requires a perk check at the start of a combat scene. This check requires the hero to spend one action concentrating to increase the power of his punches.<br><br>A hero with the power martial arts specialty skill can spend 5 skill points for Improved Fists of Iron. The result of the check determines his bonus for the scene: Critical Failure, no benefit; Marginal, 1-point increase to damage; Ordinary, 2-point increase; Good, 3-point increase; Amazing, 4-point increase.<br><br>**Example:** A hero normally dishes out d4s/d4+2s/d6+2s in damage when he makes an Unarmed Attack. If that same hero has Fists of Iron, he inflicts d4+1s/d4+3s/d6+3s. With Improved Fists of Iron, the damage can be as high as d4+4s/d4+6s/ d6+6s on an Amazing perk check result." },
-          { "name": "Fortitude", "cost": "4", "ability": "CON", "type": "Active", "description": "A hero with Fortitude receives a -1 bonus whenever he is required to make a Stamina-endurance check." },
-          { "name": "Good Luck", "cost": "3", "ability": "WIL", "type": "Conscious", "description": "A hero with the Good Luck perk can make use of this benefit once during a scene. Immediately before attempting some other type of action (usually a skill check, an action check, or a feat check), the hero can make a Good Luck perk check. The result of this check provides a modifier to the next activity the hero undertakes: On a Critical Failure, bad luck occurs instead, and the hero takes a +3 penalty. On a Marginal success, his next activity receives a -1 bonus; Ordinary, -2 bonus; Good, -3 bonus; and Amazing, -4 bonus." },
-          { "name": "Great Looks", "cost": "3", "ability": "PER", "type": "Active", "description": "A hero with the Great Looks perk receives a -1 bonus to any Personality-based skill check made when his appearance could have a positive effect on an encounter. Bear in mind that a human hero's great looks might not impress an alien, and even some other human cultures may have a different idea of what Great Looks are—it's a very subjective perk. The Gamemaster determines when the perk's bonus is applied and when it isn't." },
-          { "name": "Heightened Ability", "cost": "10", "ability": "Special", "type": "Active", "description": "This perk provides a hero with 1 extra point in the Ability Score of his choice. It can't be used to increase any Ability Score beyond the hero’s species maximum. When this perk is purchased, the player raises the hero’s Ability Score by 1 point, adjusting the Ability’s resistance modifier and any bonuses if necessary." },
-          { "name": "Observant", "cost": "3", "ability": "WIL", "type": "Active", "description": "This perk provides a hero with exceptional powers of observation, giving him a -1 bonus to any Awareness-perception check." },
-          { "name": "Photo Memory", "cost": "3", "ability": "INT", "type": "Conscious", "description": "This perk gives a hero an extraordinary memory. When a player wants to determine what his hero remembers, or if he wants his hero to remember a specific detail (such as a license plate number or details of a document he glanced at), then a perk check is made. An Ordinary is usually enough to provide some of the details the hero wants. The Gamemaster sets the situation die according to the type of detail and memory the hero is trying to recall. For example, an attempt to remember something the hero knows extremely well might receive a -3 bonus or might not even require a check at all, while recalling the image of a face glimpsed briefly in the dark might receive a +3 penalty." },
-          { "name": "Powerful Ally", "cost": "4", "ability": "PER", "type": "Conscious", "description": "When this perk is selected, the Gamemaster and the player should discuss the nature and identity of this ally. There might also be some sort of cost involved for the continued assistance of an ally—the ally might be the hero's patron, who can call on the hero for help as often as the hero calls on him, or the ally might just collect favors and call them in at some future time.<br><br>When in trouble, a hero can call on his Powerful Ally for favors or help. A perk check determines what kind of aid the ally provides. Bear in mind that the hero needs a way to contact his ally, and the ally needs a way to respond.<br><br>Check results: Failure, no aid is forthcoming; Ordinary, Ordinary help; Good, Good help; Amazing, Amazing help. (These terms are defined in the Gamemaster Guide.)" },
-          { "name": "Psionic Awareness", "cost": "3", "ability": "INT", "type": "Active", "description": "A hero with Psionic Awareness is entitled to an Intelligence feat check to determine whether he realizes that a psionic power is being used in his vicinity. (Heroes without this perk are not normally allowed checks to determine whether they can detect psionic activity.) The Gamemaster will determine when such a check should be made, and will roll the check secretly, only giving the player of the hero any information when the check is successful. This perk can only be selected if the Gamemaster allows the use of psionics (see Chapter 14)." },
-          { "name": "Reflexes", "cost": "4", "ability": "DEX", "type": "Active", "description": "A hero with the Reflexes perk receives a +1 increase to his Dexterity resistance modifier. So, a hero with a Dexterity score of 11 who has a resistance modifier of +1 step increases the modifier to +2 steps with this perk." },
-          { "name": "Reputation", "cost": "3", "ability": "WIL", "type": "Active", "description": "This perk provides a hero with a reputation that's known far and wide. Unlike the Celebrity, perk, which indicates a positive reaction due to the influence of a hero’s Personality, the Reputation perk helps a hero by making others fearful of or impressed by his supposed accomplishments. In game terms, this perk provides a situation die bonus whenever the hero attempts to use certain encounter skills. The player and the Gamemaster need to work out just what the hero's reputation is, and which encounter skills it provides a bonus to.<br><br>As a character’s achievement level improves, he becomes better able to take advantage of his reputation: At level 5, the base situation die for any Reputation perk check becomes -d4; at level 10 it becomes -d6; and at level 15 it becomes -d8." },
-          { "name": "Specialty Skill Focus (Skill)", "cost": "5", "ability": "—", "type": "Special", "description": "This perk alters how rank benefits are earned for a specific specialty skill. A character with this perk is always one rank benefit ahead in their chosen skill. For example, if a skill provides benefits at ranks 2, 5, and 7, and the character has 3 ranks in that skill, they already enjoy the benefits for both rank 2 and rank 5. If they later increase the skill to rank 5, they instead gain the rank 7 benefit. If no further benefits can be earned, the character instead receives a permanent -1 step bonus to all checks with that skill. Not all rank benefits can be earned ahead of time; those that are restricted are typically marked with a hollow bullet convention ○ instead of the standard ⊗ or a specific rank-based header. This perk costs 5 points, requires 3 ranks in the chosen specialty skill, Seasoned rank, and is considered favored if the chosen specialty skill is favored by the character's profession." },
-          { "name": "Tough as Nails", "cost": "4", "ability": "STR", "type": "Active", "description": "This perk provide a hero with a +1 step increase to his Strength resistance modifier. So, a hero with a Strength score of 11 who has a resistance modifier of +1 step (the penalty to his opponent's rolls) increases the modifier to +2 steps with this perk." },
-          { "name": "Vigor", "cost": "2/3/4", "ability": "CON", "type": "Active", "description": "This perk allows a hero to increase the amount of damage he can sustain.<br>* For 2 skill points, a hero can increase his stun rating by 1 point.<br>* For 3 skill points, a hero can increase his wound rating by 1 point.<br>* For 4 skill points, a hero can increase his mortal rating and his fatigue rating by 1 point each.<br><br>Each of these benefits may be purchased once. So, if a hero spends 9 skill points, he can increase all of his durability ratings (stun, wound, mortal, and fatigue) by 1 point each." },
-          { "name": "Willpower", "cost": "4", "ability": "WIL", "type": "Active", "description": "This perk provides a hero with a +1 step increase to his Will resistance modifier. So, a hero with a Will score of 11 who has a resistance modifier of +1 step (the penalty to his opponent’s rolls) increases the modifier to +2 steps with this perk." },
-          { "name": "Extra Psionic Energy", "cost": "3", "ability": "WIL", "type": "Active", "description": "This perk provides a hero with 2 extra Psionic Energy Points (PP). This perk can only be purchased once." }
+    "search_config": {
+        "display_name": "PERKS & FLAWS",
+        "base_url": "/perks_flaws/",
+        "section": "rules"
+    },
+    "perks": {
+        "columns": [
+            {
+                "name": "Perk",
+                "key": "name",
+                "link": true
+            },
+            {
+                "name": "Cost",
+                "key": "cost"
+            },
+            {
+                "name": "Ability",
+                "key": "ability"
+            },
+            {
+                "name": "Type",
+                "key": "type"
+            },
+            {
+                "name": "Description",
+                "key": "description",
+                "hidden": true
+            }
+        ],
+        "groups": [
+            {
+                "name": "Perks",
+                "items": [
+                    {
+                        "name": "Alien Artifact",
+                        "cost": "8",
+                        "ability": "—",
+                        "type": "Special",
+                        "description": "An alien artifact is a strange device or relic that the character doesn't know anything about. It could be an object of alien origin, a one-of-a-kind experimental gadget, or even an experimental process used on the character at some point in the past. Somewhere in his travels, the character came to possess the artifact. Any alien artifact that is an item is small enough to be easily carried around or worn. The character doesn't know his item’s function or purpose; he has to discover exactly what the artifact does as the campaign progresses. As a perk, an alien artifact provides mostly advantages—but every artifact also has its negative side. Some provide a constant benefit; others require that the character make a perk check to activate the artifact.\n\nAn artifact’s negative side can be a flaw that manifests when the character least expects it; the downside can also be the simple fact that alien artifacts are extremely rare, exceedingly valuable, and highly coveted. Someone wants the one your character possesses, and will stop at nothing to get it.\n\nAlien artifacts are listed and described in the Gamemaster Guide. After you select this perk, the Gamemaster will design an alien artifact for your character.",
+                        "url": "/perks/alien-artifact/"
+                    },
+                    {
+                        "name": "Ambidextrous",
+                        "cost": "4",
+                        "ability": "DEX",
+                        "type": "Active",
+                        "description": "A character with this perk can use both hands at the same time with more ease than someone who is not ambidextrous. A character without this perk suffers penalties when using his off hand or when attempting to use two weapons in combat. (See “Attacking with Two Weapons\" on page 57 in Chapter 3: characters in Action.) With this perk, the penalty for the action using the off hand is reduced to +2 steps, and the penalty for the primary hand is eliminated.",
+                        "url": "/perks/ambidextrous/"
+                    },
+                    {
+                        "name": "Animal Friend",
+                        "cost": "4",
+                        "ability": "WIL",
+                        "type": "Conscious",
+                        "description": "Animals of all kinds innately trust a character who has this perk. The character can easily befriend animals, and he makes all encounter rolls involving normal animals with a -2 bonus (use the situation modifiers for the Animal Handling skill, page 91). The character makes Animal Handling skill checks with a -1 bonus, in addition to other modifiers that may apply. This bonus has the effect of making it possible for the character to train an animal in less time than would be needed by a character who does not have this perk. The perk has no effect on sentient or unintelligent creatures.",
+                        "url": "/perks/animal-friend/"
+                    },
+                    {
+                        "name": "Celebrity",
+                        "cost": "3",
+                        "ability": "PER",
+                        "type": "Conscious",
+                        "description": "This perk indicates that the character is famous in certain circles, as chosen by the player and Gamemaster. The character can be an entertainment celebrity, a renowned scientist, doctor, or war character, or he can enjoy celebrity status for another reason that the Gamemaster approves.\n\nIn a circumstance when a character’s Celebrity might have an effect, the Gamemaster may call for a perk check at the start of a scene to determine if the perk makes any difference in what's about to happen. A movie star may be adored by those who watch his films, but his celebrity status means nothing to those who have never seen a movie or read a personality profile of the star.\n\nCheck results: Critical Failure, celebrity status backfires and the character is mobbed by the crowd; Failure, +2 penalty to any Personality-based skill checks made by the character during the upcoming scene; Marginal, no modifier; Ordinary, -1 bonus; Good, -2 bonus; Amazing, -3 bonus.\n\nAs a celebrity’s achievement level improves, so does the bonus applied to the perk check: At level 5, the base situation die for any Celebrity check becomes -d4; at level 10 it becomes -d6; and at level 15 it becomes -d8.",
+                        "url": "/perks/celebrity/"
+                    },
+                    {
+                        "name": "Concentration",
+                        "cost": "3",
+                        "ability": "INT",
+                        "type": "Conscious",
+                        "description": "This perk provides a character with the ability to concentrate on the task at hand. By using it as an action, the character makes a Concentration check to improve a stated task that he wants to attempt as his next action. On a Failure result, the character's next action is made with no modifier for Concentration. On an Ordinary, his ability to concentrate provides him a -1 bonus; Good, -2 bonus; Amazing, -3 bonus. If a character is disturbed in any way prior to attempting the stated task, the Concentration perk bonus is lost.",
+                        "url": "/perks/concentration/"
+                    },
+                    {
+                        "name": "Danger Sense",
+                        "cost": "4",
+                        "ability": "WIL",
+                        "type": "Active",
+                        "description": "This perk provides a character with the innate ability to anticipate danger. This translates as a -2 bonus to all Awareness—intuition checks.",
+                        "url": "/perks/danger-sense/"
+                    },
+                    {
+                        "name": "Faith",
+                        "cost": "5",
+                        "ability": "WIL",
+                        "type": "Conscious",
+                        "description": "This perk provides a character with belief in either himself or a power or agency greater than himself. The player must select what the character has faith in and the basic tenets of that faith. Examples include a nation, a religion, or a specific organization. This faith must be strong and all-encompassing. The character must truly be fervent in his belief in this faith, not just be a casual observer of form and ritual. A character with this perk who doesn't show extreme devotion loses the benefits it provides.\n\nThe first time the Faith perk is called upon during an adventure, the character’s base situation die for the perk check is -d4. Each additional use of this perk in the same adventure receives a cumulative +1 penalty. The moment a character fails a perk check, he can't call upon the benefits of this perk until the next adventure or the next game session, as determined by the Gamemaster.\n\nWith the Faith perk, a character can appear to perform miracles when the perk is used in conjunction with a skill that doesn't go against the tenets of the character's faith. For example, a member of the clergy can call on Faith to help him solve a problem, apply medical aid to a character, or settle a dispute, but the benefits can't be applied to firing a weapon at a living foe.\n\nThe benefits of Faith depend on a perk check: On a Critical Failure, the character fails not only the perk check but the skill check that follows it, and this perk can't be used again until the next adventure or game session (as the Gamemaster determines). On a Failure, the perk provides no benefit and it can't be used again until the next adventure or game session (as the Gamemaster determines). On an Ordinary, the result of the character’s subsequent skill check is improved by one degree of success. On a Good, the next skill check result is improved by two degrees of success. On an Amazing, the next skill check result is improved by three degrees of success. (Of course, a result can never be improved to any degree greater than Amazing.)\n\n**Example:** The weren shaman Gorrarl must apply first aid to a badly wounded companion. He calls on his Faith perk first, achieving a Good on the perk check. This grants him an improvement of two degrees of success on his first aid check result. The dice indicate that his first aid check is a Critical Failure, but because of his perk it instead becomes an Ordinary.",
+                        "url": "/perks/faith/"
+                    },
+                    {
+                        "name": "Filthy Rich",
+                        "cost": "6",
+                        "ability": "PER",
+                        "type": "Conscious",
+                        "description": "This perk suggests a lot about a character’s background and usually indicates a connection to a wealthy (and perhaps influential) family. This perk influences a character's starting funds, as described in Chapter 9: Goods & Services. If the character ever needs to acquire funds, he can make a Filthy Rich check (with the permission of the Gamemaster). Failure indicates that the funds aren't forthcoming; an Ordinary or better indicates that the funds he needs are available. The more the character asks for, however, the greater the situation die penalty.\n\nFinally, Filthy Rich characters have other advantages due to their social and financial status. This translates into a bonus to Personality-based skills when the character decides to reveal his status. A perk check is made at the start of a scene. Results follow: On a Critical Failure, the character’s status backfires, resulting in a +1 penalty to all checks related to Personality skills; Failure, no effect; Ordinary, -1 bonus; Good, -2 bonus; Amazing, -3 bonus.\n\nThe Gamemaster can determine that in some situations the Filthy Rich perk can operate as a flaw—especially among those who have a strong dislike for the wealthy and the upper classes. If a character reveals his status in such a situation, perk check results become penalties instead of bonuses (or vice versa).",
+                        "url": "/perks/filthy-rich/"
+                    },
+                    {
+                        "name": "Fists of Iron",
+                        "cost": "2/5",
+                        "ability": "STR",
+                        "type": "Active",
+                        "description": "This perk provides a character with a 1-point increase to the damage he inflicts on a successful Unarmed Attack skill check. The use of this perk requires a perk check at the start of a combat scene. This check requires the character to spend one action concentrating to increase the power of his punches.\n\nA character with the power martial arts specialty skill can spend 5 skill points for Improved Fists of Iron. The result of the check determines his bonus for the scene: Critical Failure, no benefit; Marginal, 1-point increase to damage; Ordinary, 2-point increase; Good, 3-point increase; Amazing, 4-point increase.\n\n**Example:** A character normally dishes out d4s/d4+2s/d6+2s in damage when he makes an Unarmed Attack. If that same character has Fists of Iron, he inflicts d4+1s/d4+3s/d6+3s. With Improved Fists of Iron, the damage can be as high as d4+4s/d4+6s/ d6+6s on an Amazing perk check result.",
+                        "url": "/perks/fists-of-iron/"
+                    },
+                    {
+                        "name": "Fortitude",
+                        "cost": "4",
+                        "ability": "CON",
+                        "type": "Active",
+                        "description": "A character with Fortitude receives a -1 bonus whenever he is required to make a Stamina-endurance check.",
+                        "url": "/perks/fortitude/"
+                    },
+                    {
+                        "name": "Good Luck",
+                        "cost": "3",
+                        "ability": "WIL",
+                        "type": "Conscious",
+                        "description": "A character with the Good Luck perk can make use of this benefit once during a scene. Immediately before attempting some other type of action (usually a skill check, an action check, or a feat check), the character can make a Good Luck perk check. The result of this check provides a modifier to the next activity the character undertakes: On a Critical Failure, bad luck occurs instead, and the character takes a +3 penalty. On a Marginal success, his next activity receives a -1 bonus; Ordinary, -2 bonus; Good, -3 bonus; and Amazing, -4 bonus.",
+                        "url": "/perks/good-luck/"
+                    },
+                    {
+                        "name": "Great Looks",
+                        "cost": "3",
+                        "ability": "PER",
+                        "type": "Active",
+                        "description": "A character with the Great Looks perk receives a -1 bonus to any Personality-based skill check made when his appearance could have a positive effect on an encounter. Bear in mind that a human character's great looks might not impress an alien, and even some other human cultures may have a different idea of what Great Looks are—it's a very subjective perk. The Gamemaster determines when the perk's bonus is applied and when it isn't.",
+                        "url": "/perks/great-looks/"
+                    },
+                    {
+                        "name": "Heightened Ability",
+                        "cost": "10",
+                        "ability": "Special",
+                        "type": "Active",
+                        "description": "This perk provides a character with 1 extra point in the Ability Score of his choice. It can't be used to increase any Ability Score beyond the character’s species maximum. When this perk is purchased, the player raises the character’s Ability Score by 1 point, adjusting the Ability’s resistance modifier and any bonuses if necessary.",
+                        "url": "/perks/heightened-ability/"
+                    },
+                    {
+                        "name": "Observant",
+                        "cost": "3",
+                        "ability": "WIL",
+                        "type": "Active",
+                        "description": "This perk provides a character with exceptional powers of observation, giving him a -1 bonus to any Awareness-perception check.",
+                        "url": "/perks/observant/"
+                    },
+                    {
+                        "name": "Photo Memory",
+                        "cost": "3",
+                        "ability": "INT",
+                        "type": "Conscious",
+                        "description": "This perk gives a character an extraordinary memory. When a player wants to determine what his character remembers, or if he wants his character to remember a specific detail (such as a license plate number or details of a document he glanced at), then a perk check is made. An Ordinary is usually enough to provide some of the details the character wants. The Gamemaster sets the situation die according to the type of detail and memory the character is trying to recall. For example, an attempt to remember something the character knows extremely well might receive a -3 bonus or might not even require a check at all, while recalling the image of a face glimpsed briefly in the dark might receive a +3 penalty.",
+                        "url": "/perks/photo-memory/"
+                    },
+                    {
+                        "name": "Powerful Ally",
+                        "cost": "4",
+                        "ability": "PER",
+                        "type": "Conscious",
+                        "description": "When this perk is selected, the Gamemaster and the player should discuss the nature and identity of this ally. There might also be some sort of cost involved for the continued assistance of an ally—the ally might be the character's patron, who can call on the character for help as often as the character calls on him, or the ally might just collect favors and call them in at some future time.\n\nWhen in trouble, a character can call on his Powerful Ally for favors or help. A perk check determines what kind of aid the ally provides. Bear in mind that the character needs a way to contact his ally, and the ally needs a way to respond.\n\nCheck results: Failure, no aid is forthcoming; Ordinary, Ordinary help; Good, Good help; Amazing, Amazing help. (These terms are defined in the Gamemaster Guide.)",
+                        "url": "/perks/powerful-ally/"
+                    },
+                    {
+                        "name": "Psionic Awareness",
+                        "cost": "3",
+                        "ability": "INT",
+                        "type": "Active",
+                        "description": "A character with Psionic Awareness is entitled to an Intelligence feat check to determine whether he realizes that a psionic power is being used in his vicinity. (characters without this perk are not normally allowed checks to determine whether they can detect psionic activity.) The Gamemaster will determine when such a check should be made, and will roll the check secretly, only giving the player of the character any information when the check is successful. This perk can only be selected if the Gamemaster allows the use of psionics (see Chapter 14).",
+                        "url": "/perks/psionic-awareness/"
+                    },
+                    {
+                        "name": "Reflexes",
+                        "cost": "4",
+                        "ability": "DEX",
+                        "type": "Active",
+                        "description": "A character with the Reflexes perk receives a +1 increase to his Dexterity resistance modifier. So, a character with a Dexterity score of 11 who has a resistance modifier of +1 step increases the modifier to +2 steps with this perk.",
+                        "url": "/perks/reflexes/"
+                    },
+                    {
+                        "name": "Reputation",
+                        "cost": "3",
+                        "ability": "WIL",
+                        "type": "Active",
+                        "description": "This perk provides a character with a reputation that's known far and wide. Unlike the Celebrity, perk, which indicates a positive reaction due to the influence of a character’s Personality, the Reputation perk helps a character by making others fearful of or impressed by his supposed accomplishments. In game terms, this perk provides a situation die bonus whenever the character attempts to use certain encounter skills. The player and the Gamemaster need to work out just what the character's reputation is, and which encounter skills it provides a bonus to.\n\nAs a character’s achievement level improves, he becomes better able to take advantage of his reputation: At level 5, the base situation die for any Reputation perk check becomes -d4; at level 10 it becomes -d6; and at level 15 it becomes -d8.",
+                        "url": "/perks/reputation/"
+                    },
+                    {
+                        "name": "Specialty Skill Focus (Skill)",
+                        "cost": "5",
+                        "ability": "—",
+                        "type": "Special",
+                        "description": "This perk alters how rank benefits are earned for a specific specialty skill. A character with this perk is always one rank benefit ahead in their chosen skill. For example, if a skill provides benefits at ranks 2, 5, and 7, and the character has 3 ranks in that skill, they already enjoy the benefits for both rank 2 and rank 5. If they later increase the skill to rank 5, they instead gain the rank 7 benefit. If no further benefits can be earned, the character instead receives a permanent -1 step bonus to all checks with that skill. Not all rank benefits can be earned ahead of time; those that are restricted are typically marked with a hollow bullet convention ○ instead of the standard ⊗ or a specific rank-based header. This perk costs 5 points, requires 3 ranks in the chosen specialty skill, Seasoned rank, and is considered favored if the chosen specialty skill is favored by the character's profession.",
+                        "url": "/perks/specialty-skill-focus-skill/"
+                    },
+                    {
+                        "name": "Tough as Nails",
+                        "cost": "4",
+                        "ability": "STR",
+                        "type": "Active",
+                        "description": "This perk provide a character with a +1 step increase to his Strength resistance modifier. So, a character with a Strength score of 11 who has a resistance modifier of +1 step (the penalty to his opponent's rolls) increases the modifier to +2 steps with this perk.",
+                        "url": "/perks/tough-as-nails/"
+                    },
+                    {
+                        "name": "Vigor",
+                        "cost": "2/3/4",
+                        "ability": "CON",
+                        "type": "Active",
+                        "description": "This perk allows a character to increase the amount of damage he can sustain.\n* For 2 skill points, a character can increase his stun rating by 1 point.\n* For 3 skill points, a character can increase his wound rating by 1 point.\n* For 4 skill points, a character can increase his mortal rating and his fatigue rating by 1 point each.\n\nEach of these benefits may be purchased once. So, if a character spends 9 skill points, he can increase all of his durability ratings (stun, wound, mortal, and fatigue) by 1 point each.",
+                        "url": "/perks/vigor/"
+                    },
+                    {
+                        "name": "Willpower",
+                        "cost": "4",
+                        "ability": "WIL",
+                        "type": "Active",
+                        "description": "This perk provides a character with a +1 step increase to his Will resistance modifier. So, a character with a Will score of 11 who has a resistance modifier of +1 step (the penalty to his opponent’s rolls) increases the modifier to +2 steps with this perk.",
+                        "url": "/perks/willpower/"
+                    },
+                    {
+                        "name": "Extra Psionic Energy",
+                        "cost": "3",
+                        "ability": "WIL",
+                        "type": "Active",
+                        "description": "This perk provides a character with 2 extra Psionic Energy Points (PP). This perk can only be purchased once.",
+                        "url": "/perks/extra-psionic-energy/"
+                    }
+                ]
+            }
         ]
-      }
-    ]
-  },
-  "flaws": {
-    "columns": [
-      { "name": "Flaw", "key": "name" },
-      { "name": "Bonus Points", "key": "bonus_points" },
-      { "name": "Ability", "key": "ability" },
-      { "name": "Description", "key": "description", "hidden": true }
-    ],
-    "groups": [
-      {
-        "name": "Flaws",
-        "items": [
-          { "name": "Alien Artifact", "bonus_points": "+5", "ability": "-", "description": "An alien artifact is a strange device or relic that the hero doesn't know anything about. It could be an object of alien origin, or a one-of-a-kind experimental gadget, or even an experimental process used on the character at some point in the past. Somewhere in his travels, the hero came to possess the artifact or the abilities it provides. Any alien artifact that is an item is small enough to be easily carried around or worn as an accessory to a hero's outfit. The hero doesn't know his item’s function or purpose; he has to discover exactly what the artifact does as the campaign progresses.<br><br>As a flaw, an alien artifact provides mostly disadvantages to a hero—but every artifact also has its positive side. Some artifacts provide a constant penalty; others require that the hero make a check to activate the artifact. All artifacts, perk or flaw, have the same distinguishing trait: they are extremely rare, exceedingly valuable, and highly coveted—someone wants the one your hero possesses, and that someone will stop at nothing to get it.<br><br>As for an artifact’s positive side, that can range from an unknown perk that manifests when the hero least expects it to a simple bonus that is constantly in play even while the artifact is penalizing the hero in some manner. Note that a benefit will never cancel out a penalty—the two aspects of an artifact will always be unrelated. (So, you won't find an artifact that provides a hero with a +1 penalty to the use of Dexterity-based skills and a -1 bonus to the use of Dexterity-based skills at the same time.)<br><br>Alien artifacts are listed and described in the Gamemaster Guide. After you select this flaw, the Gamemaster will design an alien artifact for your hero." },
-          { "name": "Bad Luck", "bonus_points": "+6", "ability": "WIL", "description": "A hero with this flaw suffers a Critical Failure result whenever a 19 or 20 comes up on the control die." },
-          { "name": "Clueless", "bonus_points": "+2/4/6", "ability": "INT", "description": "A hero with the Clueless flaw thinks he's proficient in a particular specialty skill, when in fact he's not as good as he thinks he is. The specialty skill is chosen by the Gamemaster secretly—the hero must discover the fact that he's clueless over the course of the campaign, and he may not ever realize it at all. The chosen specialty skill is never one that’s associated with a hero's profession; it will either be a skill from the Open group or from one of the other profession groups.<br>* For 2 bonus skill points, the hero receives a +1 penalty to the skill in question.<br>* For 4 bonus skill points, the hero receives a +2 penalty to the skill in question.<br>* For 6 bonus skill points, the hero receives a +3 penalty to the skill in question." },
-          { "name": "Clumsy", "bonus_points": "+6", "ability": "DEX", "description": "A hero with the Clumsy flaw has poor coordination and an unsteady hand. He receives a +1 penalty to all Dexterity-based skill checks." },
-          { "name": "Code of Honor", "bonus_points": "+3", "ability": "WIL", "description": "The Code of Honor flaw represents a standard the hero decides to live by. A Code of Honor must have real consequences to the life of the hero and the campaign in general, and living up to the code shouldn't always be easy or even the right decision. A Code of Honor that requires a hero to attack any evil aliens he meets isn't that much of a burden, but defending all aliens in a human-dominated galaxy is.<br><br>The player and the Gamemaster need to work out the hero's Code of Honor when this flaw is selected. They should also discuss the types of events that might trigger the hero's overblown sense of duty, honor, and commitment.<br><br>Examples of characters who have codes of honor that could be flaws include clergymen, law enforcers, government officials, business administrators, and doctors. The achievement points a hero receives for participating in an adventure can be reduced if this flaw isn't roleplayed as part of the hero's basic makeup." },
-          { "name": "Delicate", "bonus_points": "+3", "ability": "STR", "description": "A hero with the Delicate flaw suffers 1 point of stun damage whenever he makes a successful Unarmed Attack against an opponent. If the hero suffers enough stun damage to leave him with less than half of his stun points, he can't attempt an Unarmed Attack—he must regain a number of stun points sufficient to bring him back to the halfway mark (at least) before he can use the skill again." },
-          { "name": "Dirt Poor", "bonus_points": "+5", "ability": "PER", "description": "The Dirt Poor flaw suggests a lot about a hero's background and usually indicates an impoverished upbringing. This flaw influences a hero’s starting funds, as detailed in Chapter 9: Goods & Services. In addition, it adds a +1 penalty to any use of the hero's Personality-based skills when he tries to deal with situations involving characters from a higher social or financial standing.<br><br>The Gamemaster also determines a character (not another hero) to whom the hero owes money. As the campaign progresses, the hero must make payments to this character to remain in good standing. How this works in a particular campaign is left to the Gamemaster." },
-          { "name": "Forgetful", "bonus_points": "+5", "ability": "INT", "description": "A hero with the Forgetful flaw has trouble remembering details—his recollection of a name, face, or fact has a tendency to slip away when the hero needs it most. A Forgetful character receives a +1 penalty to all Intelligence-based skill checks." },
-          { "name": "Fragile", "bonus_points": "+3", "ability": "CON", "description": "A hero with the Fragile flaw is hampered by a +1 penalty to all Stamina-endurance skill checks he makes as a result of damage he has suffered." },
-          { "name": "Infamy", "bonus_points": "+2/4/6", "ability": "PER", "description": "Infamy is a state of being publicly known for an evil or criminal act. The player and the Gamemaster need to agree on what the hero is infamous for (it could be trumped-up charges, or the hero can have a genuinely shady past) and what triggers the flaw. It could be a phrase the hero always says, or the weapon he uses, or when he’s in the presence of a particular alien species or a member of a particular nation. Once recognized for his Infamy, a hero suffers penalties to the use of Personality-based skills and may even wind up hunted or in a battle.<br>* For 2 bonus skill points, a hero is infamous for a minor crime or is known throughout a small area of the campaign setting. He receives a +1 penalty to all Personality-based skill checks.<br>* For 4 bonus skill points, a hero is infamous for a moderate crime or is known throughout a moderate-sized area of the campaign setting. He receives a +2 penalty to all Personality-based skill checks.<br>* For 6 bonus skill points, a hero is infamous for a severe crime or is known throughout a large area of the campaign setting. He receives a +3 penalty to all Personality-based skill checks when this flaw is triggered." },
-          { "name": "Oblivious", "bonus_points": "+4", "ability": "WIL", "description": "A hero with the Oblivious flaw has trouble noticing things, suffering a +1 penalty to all Awareness-perception skill checks." },
-          { "name": "Obsessed", "bonus_points": "+2/4/6", "ability": "INT", "description": "This flaw indicates that a hero is obsessed with a particular person, place, or thing, which is known as the trigger for the flaw. An Obsessed hero may forget what he's doing or turn his attention to the object of his obsession even in the middle of a tense situation. The player and the Gamemaster need to decide on a trigger when this flaw is selected. The trigger should somehow be tied to the hero's background or personality. For example, a scientist might be obsessed with exotic insects, or an engineer with new and interesting technology. Less cerebral heroes might be Obsessed with another character, a fast vehicle, or a type of food.<br>* For 2 bonus skill points, a hero is moderately distracted by the triggering event. He receives a +1 penalty to any actions not related to the obsession.<br>* For 4 points, a hero is substantially distracted by the triggering event. He receives a +2 penalty to any actions not related to the obsession.<br>* For 6 points, the hero is almost completely distracted. He receives a +3 penalty to any actions not related to the obsession." },
-          { "name": "Old Injury", "bonus_points": "+2/4/6", "ability": "STR", "description": "Sometime in the past, the hero suffered an injury. Now that Old Injury acts up every so often, inflicting wounds on the hero. The player and the Gamemaster should agree on a triggering event, but in general it should be something physical: An attempt to run or jump, getting involved in a close-quarters attack, and an attempt to dodge are all acceptable triggers. An Old Injury can be triggered once per scene, though the effects remain until the character is healed. (Note that if a character wants to remove this flaw, a medical procedure must be included as part of the removal process. See Chapter 8: Achievements for more details.)<br>* For 2 bonus skill points, a hero suffers 1 point of wound damage when this flaw is triggered.<br>* For 4 bonus skill points, a hero suffers 2 points of wound damage plus 1 point of secondary stun damage when this flaw is triggered.<br>* For 6 bonus skill points, a hero suffers 3 points of wound damage plus 1 point of secondary stun damage when this flaw is triggered.<br>**Note:** Wearing armor does not offset or reduce this damage." },
-          { "name": "Phobia", "bonus_points": "+2/4/6", "ability": "WIL", "description": "This flaw represents an irrational fear that hampers the hero in some way. The hero selects a specific fear that may or may not come into play in any given adventure. It should be a general fear (moving vehicles), not a specific one (moving green taxicabs with purple dots and yellow flags), to qualify as a flaw. When the hero is confronted by his Phobia, he suffers a penalty.<br>* For 2 bonus skill points, a hero suffers a +1 penalty to all actions while this flaw is in effect.<br>* For 4 bonus skill points, a hero suffers a +2 penalty to all actions while this flaw is in effect.<br>* For 6 bonus skill points, a hero freezes or flees as appropriate while this flaw is in effect." },
-          { "name": "Poor Looks", "bonus_points": "+3", "ability": "PER", "description": "A hero with the Poor Looks flaw suffers a +1 penalty to all Personality-based skill checks when appearance could have a negative effect. Poor Looks isn't just a measure of physical beauty; it includes manners, grooming, and overall appearance. Bear in mind that a human hero's Poor Looks might not be seen as such by an alien, and even some other human cultures may have a different idea of what Poor Looks are. The Gamemaster determines when the flaw's penalty is applied and when it isn't, depending on the situation." },
-          { "name": "Powerful Enemy", "bonus_points": "+2/4/6", "ability": "PER", "description": "A hero with this flaw begins play with a Powerful Enemy who's out to make his life terrible. This enemy must have a long reach, lots of subordinates, and the ability to affect the hero wherever he may be. How close the enemy’s base of operations is and how often he can affect the hero are determined by the number of skill points the flaw provides. Examples of powerful enemies include a specific law enforcement agency (especially if the hero is a fugitive), a corporation, a government, a criminal organization, or an alien conspiracy. In all cases the true enemy should remain unknown for a long time, and direct contact between the enemy and the hero shouldn't occur while the hero is at low achievement levels." },
-          { "name": "Primitive", "bonus_points": "+2/4/6", "ability": "INT", "description": "This flaw indicates that a hero has come from a primitive culture and upbringing, which causes problems for him when dealing with modern technology.<br>* For 2 bonus skill points, a hero receives a +1 penalty whenever he uses modern technology.<br>* For 4 bonus skill points, a hero receives a +2 penalty whenever he uses modern technology.<br>* For 6 bonus skill points, a hero receives a +3 penalty whenever he uses modern technology, and he is either awed into inactivity or flees in terror for d4+1 time units in the face of some technological wonder he hasn’t seen before." },
-          { "name": "Slow", "bonus_points": "+6", "ability": "DEX", "description": "A hero with the Slow flaw has reduced reaction time, which manifests as a +1 penalty to his action checks." },
-          { "name": "Spineless", "bonus_points": "+2/4/6", "ability": "WIL", "description": "The Spineless flaw hampers a hero by weakening his will, making him fearful, indecisive, and easier to manipulate. This is reflected in a reduction to the hero's Will resistance modifier.<br>* For 2 bonus skill points, a hero's Will resistance modifier is reduced by 1 step.<br>* For 4 points, a hero's Will resistance modifier is reduced by 2 steps.<br>* For 6 points, a hero's Will resistance modifier is reduced by 3 steps." },
-          { "name": "Temper", "bonus_points": "+2/4/6", "ability": "WIL", "description": "A hero with this flaw has a short fuse. The player and the Gamemaster must agree on what type of event triggers the hero's Temper flaw.<br>* For 2 bonus skill points, the hero becomes gruff and mean, suffering a +1 penalty to all actions until the triggering event ends and he calms down.<br>* For 4 bonus skill points, the hero reacts without thinking, suffering a +2 penalty to all actions until the triggering event ends and he calms down.<br>* For 6 bonus skill points, the hero flies into a berserk rage, suffering a +3 penalty until the triggering event ends and he calms down." }
+    },
+    "flaws": {
+        "columns": [
+            {
+                "name": "Flaw",
+                "key": "name",
+                "link": true
+            },
+            {
+                "name": "Bonus Points",
+                "key": "bonus_points"
+            },
+            {
+                "name": "Ability",
+                "key": "ability"
+            },
+            {
+                "name": "Description",
+                "key": "description",
+                "hidden": true
+            }
+        ],
+        "groups": [
+            {
+                "name": "Flaws",
+                "items": [
+                    {
+                        "name": "Alien Artifact",
+                        "bonus_points": "+5",
+                        "ability": "-",
+                        "description": "An alien artifact is a strange device or relic that the character doesn't know anything about. It could be an object of alien origin, or a one-of-a-kind experimental gadget, or even an experimental process used on the character at some point in the past. Somewhere in his travels, the character came to possess the artifact or the abilities it provides. Any alien artifact that is an item is small enough to be easily carried around or worn as an accessory to a character's outfit. The character doesn't know his item’s function or purpose; he has to discover exactly what the artifact does as the campaign progresses.\n\nAs a flaw, an alien artifact provides mostly disadvantages to a character—but every artifact also has its positive side. Some artifacts provide a constant penalty; others require that the character make a check to activate the artifact. All artifacts, perk or flaw, have the same distinguishing trait: they are extremely rare, exceedingly valuable, and highly coveted—someone wants the one your character possesses, and that someone will stop at nothing to get it.\n\nAs for an artifact’s positive side, that can range from an unknown perk that manifests when the character least expects it to a simple bonus that is constantly in play even while the artifact is penalizing the character in some manner. Note that a benefit will never cancel out a penalty—the two aspects of an artifact will always be unrelated. (So, you won't find an artifact that provides a character with a +1 penalty to the use of Dexterity-based skills and a -1 bonus to the use of Dexterity-based skills at the same time.)\n\nAlien artifacts are listed and described in the Gamemaster Guide. After you select this flaw, the Gamemaster will design an alien artifact for your character.",
+                        "url": "/flaws/alien-artifact/"
+                    },
+                    {
+                        "name": "Bad Luck",
+                        "bonus_points": "+6",
+                        "ability": "WIL",
+                        "description": "A character with this flaw suffers a Critical Failure result whenever a 19 or 20 comes up on the control die.",
+                        "url": "/flaws/bad-luck/"
+                    },
+                    {
+                        "name": "Clueless",
+                        "bonus_points": "+2/4/6",
+                        "ability": "INT",
+                        "description": "A character with the Clueless flaw thinks he's proficient in a particular specialty skill, when in fact he's not as good as he thinks he is. The specialty skill is chosen by the Gamemaster secretly—the character must discover the fact that he's clueless over the course of the campaign, and he may not ever realize it at all. The chosen specialty skill is never one that’s associated with a character's profession; it will either be a skill from the Open group or from one of the other profession groups.\n* For 2 bonus skill points, the character receives a +1 penalty to the skill in question.\n* For 4 bonus skill points, the character receives a +2 penalty to the skill in question.\n* For 6 bonus skill points, the character receives a +3 penalty to the skill in question.",
+                        "url": "/flaws/clueless/"
+                    },
+                    {
+                        "name": "Clumsy",
+                        "bonus_points": "+6",
+                        "ability": "DEX",
+                        "description": "A character with the Clumsy flaw has poor coordination and an unsteady hand. He receives a +1 penalty to all Dexterity-based skill checks.",
+                        "url": "/flaws/clumsy/"
+                    },
+                    {
+                        "name": "Code of Honor",
+                        "bonus_points": "+3",
+                        "ability": "WIL",
+                        "description": "The Code of Honor flaw represents a standard the character decides to live by. A Code of Honor must have real consequences to the life of the character and the campaign in general, and living up to the code shouldn't always be easy or even the right decision. A Code of Honor that requires a character to attack any evil aliens he meets isn't that much of a burden, but defending all aliens in a human-dominated galaxy is.\n\nThe player and the Gamemaster need to work out the character's Code of Honor when this flaw is selected. They should also discuss the types of events that might trigger the character's overblown sense of duty, honor, and commitment.\n\nExamples of characters who have codes of honor that could be flaws include clergymen, law enforcers, government officials, business administrators, and doctors. The achievement points a character receives for participating in an adventure can be reduced if this flaw isn't roleplayed as part of the character's basic makeup.",
+                        "url": "/flaws/code-of-honor/"
+                    },
+                    {
+                        "name": "Delicate",
+                        "bonus_points": "+3",
+                        "ability": "STR",
+                        "description": "A character with the Delicate flaw suffers 1 point of stun damage whenever he makes a successful Unarmed Attack against an opponent. If the character suffers enough stun damage to leave him with less than half of his stun points, he can't attempt an Unarmed Attack—he must regain a number of stun points sufficient to bring him back to the halfway mark (at least) before he can use the skill again.",
+                        "url": "/flaws/delicate/"
+                    },
+                    {
+                        "name": "Dirt Poor",
+                        "bonus_points": "+5",
+                        "ability": "PER",
+                        "description": "The Dirt Poor flaw suggests a lot about a character's background and usually indicates an impoverished upbringing. This flaw influences a character’s starting funds, as detailed in Chapter 9: Goods & Services. In addition, it adds a +1 penalty to any use of the character's Personality-based skills when he tries to deal with situations involving characters from a higher social or financial standing.\n\nThe Gamemaster also determines a character (not another character) to whom the character owes money. As the campaign progresses, the character must make payments to this character to remain in good standing. How this works in a particular campaign is left to the Gamemaster.",
+                        "url": "/flaws/dirt-poor/"
+                    },
+                    {
+                        "name": "Forgetful",
+                        "bonus_points": "+5",
+                        "ability": "INT",
+                        "description": "A character with the Forgetful flaw has trouble remembering details—his recollection of a name, face, or fact has a tendency to slip away when the character needs it most. A Forgetful character receives a +1 penalty to all Intelligence-based skill checks.",
+                        "url": "/flaws/forgetful/"
+                    },
+                    {
+                        "name": "Fragile",
+                        "bonus_points": "+3",
+                        "ability": "CON",
+                        "description": "A character with the Fragile flaw is hampered by a +1 penalty to all Stamina-endurance skill checks he makes as a result of damage he has suffered.",
+                        "url": "/flaws/fragile/"
+                    },
+                    {
+                        "name": "Infamy",
+                        "bonus_points": "+2/4/6",
+                        "ability": "PER",
+                        "description": "Infamy is a state of being publicly known for an evil or criminal act. The player and the Gamemaster need to agree on what the character is infamous for (it could be trumped-up charges, or the character can have a genuinely shady past) and what triggers the flaw. It could be a phrase the character always says, or the weapon he uses, or when he’s in the presence of a particular alien species or a member of a particular nation. Once recognized for his Infamy, a character suffers penalties to the use of Personality-based skills and may even wind up hunted or in a battle.\n* For 2 bonus skill points, a character is infamous for a minor crime or is known throughout a small area of the campaign setting. He receives a +1 penalty to all Personality-based skill checks.\n* For 4 bonus skill points, a character is infamous for a moderate crime or is known throughout a moderate-sized area of the campaign setting. He receives a +2 penalty to all Personality-based skill checks.\n* For 6 bonus skill points, a character is infamous for a severe crime or is known throughout a large area of the campaign setting. He receives a +3 penalty to all Personality-based skill checks when this flaw is triggered.",
+                        "url": "/flaws/infamy/"
+                    },
+                    {
+                        "name": "Oblivious",
+                        "bonus_points": "+4",
+                        "ability": "WIL",
+                        "description": "A character with the Oblivious flaw has trouble noticing things, suffering a +1 penalty to all Awareness-perception skill checks.",
+                        "url": "/flaws/oblivious/"
+                    },
+                    {
+                        "name": "Obsessed",
+                        "bonus_points": "+2/4/6",
+                        "ability": "INT",
+                        "description": "This flaw indicates that a character is obsessed with a particular person, place, or thing, which is known as the trigger for the flaw. An Obsessed character may forget what he's doing or turn his attention to the object of his obsession even in the middle of a tense situation. The player and the Gamemaster need to decide on a trigger when this flaw is selected. The trigger should somehow be tied to the character's background or personality. For example, a scientist might be obsessed with exotic insects, or an engineer with new and interesting technology. Less cerebral characters might be Obsessed with another character, a fast vehicle, or a type of food.\n* For 2 bonus skill points, a character is moderately distracted by the triggering event. He receives a +1 penalty to any actions not related to the obsession.\n* For 4 points, a character is substantially distracted by the triggering event. He receives a +2 penalty to any actions not related to the obsession.\n* For 6 points, the character is almost completely distracted. He receives a +3 penalty to any actions not related to the obsession.",
+                        "url": "/flaws/obsessed/"
+                    },
+                    {
+                        "name": "Old Injury",
+                        "bonus_points": "+2/4/6",
+                        "ability": "STR",
+                        "description": "Sometime in the past, the character suffered an injury. Now that Old Injury acts up every so often, inflicting wounds on the character. The player and the Gamemaster should agree on a triggering event, but in general it should be something physical: An attempt to run or jump, getting involved in a close-quarters attack, and an attempt to dodge are all acceptable triggers. An Old Injury can be triggered once per scene, though the effects remain until the character is healed. (Note that if a character wants to remove this flaw, a medical procedure must be included as part of the removal process. See Chapter 8: Achievements for more details.)\n* For 2 bonus skill points, a character suffers 1 point of wound damage when this flaw is triggered.\n* For 4 bonus skill points, a character suffers 2 points of wound damage plus 1 point of secondary stun damage when this flaw is triggered.\n* For 6 bonus skill points, a character suffers 3 points of wound damage plus 1 point of secondary stun damage when this flaw is triggered.\n**Note:** Wearing armor does not offset or reduce this damage.",
+                        "url": "/flaws/old-injury/"
+                    },
+                    {
+                        "name": "Phobia",
+                        "bonus_points": "+2/4/6",
+                        "ability": "WIL",
+                        "description": "This flaw represents an irrational fear that hampers the character in some way. The character selects a specific fear that may or may not come into play in any given adventure. It should be a general fear (moving vehicles), not a specific one (moving green taxicabs with purple dots and yellow flags), to qualify as a flaw. When the character is confronted by his Phobia, he suffers a penalty.\n* For 2 bonus skill points, a character suffers a +1 penalty to all actions while this flaw is in effect.\n* For 4 bonus skill points, a character suffers a +2 penalty to all actions while this flaw is in effect.\n* For 6 bonus skill points, a character freezes or flees as appropriate while this flaw is in effect.",
+                        "url": "/flaws/phobia/"
+                    },
+                    {
+                        "name": "Poor Looks",
+                        "bonus_points": "+3",
+                        "ability": "PER",
+                        "description": "A character with the Poor Looks flaw suffers a +1 penalty to all Personality-based skill checks when appearance could have a negative effect. Poor Looks isn't just a measure of physical beauty; it includes manners, grooming, and overall appearance. Bear in mind that a human character's Poor Looks might not be seen as such by an alien, and even some other human cultures may have a different idea of what Poor Looks are. The Gamemaster determines when the flaw's penalty is applied and when it isn't, depending on the situation.",
+                        "url": "/flaws/poor-looks/"
+                    },
+                    {
+                        "name": "Powerful Enemy",
+                        "bonus_points": "+2/4/6",
+                        "ability": "PER",
+                        "description": "A character with this flaw begins play with a Powerful Enemy who's out to make his life terrible. This enemy must have a long reach, lots of subordinates, and the ability to affect the character wherever he may be. How close the enemy’s base of operations is and how often he can affect the character are determined by the number of skill points the flaw provides. Examples of powerful enemies include a specific law enforcement agency (especially if the character is a fugitive), a corporation, a government, a criminal organization, or an alien conspiracy. In all cases the true enemy should remain unknown for a long time, and direct contact between the enemy and the character shouldn't occur while the character is at low achievement levels.",
+                        "url": "/flaws/powerful-enemy/"
+                    },
+                    {
+                        "name": "Primitive",
+                        "bonus_points": "+2/4/6",
+                        "ability": "INT",
+                        "description": "This flaw indicates that a character has come from a primitive culture and upbringing, which causes problems for him when dealing with modern technology.\n* For 2 bonus skill points, a character receives a +1 penalty whenever he uses modern technology.\n* For 4 bonus skill points, a character receives a +2 penalty whenever he uses modern technology.\n* For 6 bonus skill points, a character receives a +3 penalty whenever he uses modern technology, and he is either awed into inactivity or flees in terror for d4+1 time units in the face of some technological wonder he hasn’t seen before.",
+                        "url": "/flaws/primitive/"
+                    },
+                    {
+                        "name": "Slow",
+                        "bonus_points": "+6",
+                        "ability": "DEX",
+                        "description": "A character with the Slow flaw has reduced reaction time, which manifests as a +1 penalty to his action checks.",
+                        "url": "/flaws/slow/"
+                    },
+                    {
+                        "name": "Spineless",
+                        "bonus_points": "+2/4/6",
+                        "ability": "WIL",
+                        "description": "The Spineless flaw hampers a character by weakening his will, making him fearful, indecisive, and easier to manipulate. This is reflected in a reduction to the character's Will resistance modifier.\n* For 2 bonus skill points, a character's Will resistance modifier is reduced by 1 step.\n* For 4 points, a character's Will resistance modifier is reduced by 2 steps.\n* For 6 points, a character's Will resistance modifier is reduced by 3 steps.",
+                        "url": "/flaws/spineless/"
+                    },
+                    {
+                        "name": "Temper",
+                        "bonus_points": "+2/4/6",
+                        "ability": "WIL",
+                        "description": "A character with this flaw has a short fuse. The player and the Gamemaster must agree on what type of event triggers the character's Temper flaw.\n* For 2 bonus skill points, the character becomes gruff and mean, suffering a +1 penalty to all actions until the triggering event ends and he calms down.\n* For 4 bonus skill points, the character reacts without thinking, suffering a +2 penalty to all actions until the triggering event ends and he calms down.\n* For 6 bonus skill points, the character flies into a berserk rage, suffering a +3 penalty until the triggering event ends and he calms down.",
+                        "url": "/flaws/temper/"
+                    }
+                ]
+            }
         ]
-      }
-    ]
-  }
+    }
 }

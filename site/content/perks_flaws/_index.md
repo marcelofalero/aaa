@@ -4,9 +4,7 @@ description = "Advantages and disadvantages that define your character."
 weight = 7
 +++
 
-Perks and flaws provide a hero with advantages and disadvantages. A perk is usually good for the hero, while a flaw is usually negative in its effect. No hero is required to purchase a perk or select a flaw, though he can have a perk or flaw assigned to him as the campaign progresses.
-
-Perks not only present heroes with advantages, but good roleplaying of a perk can sometimes earn a hero an extra achievement point at the end of an adventure. Such awards are given at the discretion of the Gamemaster and won't be awarded all the time.
+Perks and flaws provide a character with an extra layer of customization. A perk is usually good for the character, while a flaw is usually negative in its effect. No character is required to purchase a perk or select a flaw, though he can have a perk or flaw assigned to him as the campaign progresses. Good roleplaying of a perk or flaw can sometimes earn the group an extra achievement point at the end of an adventure, particularly if it involves several players. Such awards are given at the discretion of the Gamemaster and won't be awarded all the time.
 
 ## Perks
 
@@ -14,8 +12,8 @@ Perks not only present heroes with advantages, but good roleplaying of a perk ca
 
 ## Flaws
 
-Flaws are disadvantages you can select for your hero that provide additional points for the purchase of skills. A player can never select more than three flaws for his character, but additional flaws may be assigned to a hero over the course of a campaign.
+Flaws are disadvantages you can select for your character that provide additional points for the purchase of skills, and can only be selected at character creation. A player can never select more than three flaws for his character, but additional flaws may be assigned to a character over the course of a campaign. In the case of the Gamemaster assigning a flaw during the campaign (or increasing the level of one), the player will earn the proper amount of XP for the experience.
 
-Unlike perks, all flaws provide a hero with a constant penalty of some sort. Flaws can be removed when a hero attains achievement level 6; see Chapter 8: Achievements for details.
+Unlike perks, all flaws provide a character with a constant penalty of some sort. Flaws can be removed at certain progress levels; see the [Character Advancement]({{< relref "core-mechanics/character-advancement" >}}) section for details.
 
 {{< json-table "perks_and_flaws" "flaws" >}}

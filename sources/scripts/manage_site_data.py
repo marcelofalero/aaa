@@ -156,6 +156,17 @@ def rebuild_all():
             with open(os.path.join(SITE_DATA_DIR, base_name + suffix), 'w', encoding='utf-8') as f:
                 json.dump(processed, f, indent=4, ensure_ascii=False)
 
+    # Perks & Flaws
+    perks_yaml = os.path.join(DATA_SOURCES_DIR, 'perks.yaml')
+    flaws_yaml = os.path.join(DATA_SOURCES_DIR, 'flaws.yaml')
+    if os.path.exists(perks_yaml) and os.path.exists(flaws_yaml):
+        print('Processing Perks & Flaws...')
+        with open(perks_yaml, 'r', encoding='utf-8') as f:
+            perks_raw = yaml.load(f, Loader=yaml.FullLoader)
+        with open(flaws_yaml, 'r', encoding='utf-8') as f:
+            flaws_raw = yaml.load(f, Loader=yaml.FullLoader)
+        process_perks_flaws(to_list(perks_raw.get('items', [])), to_list(flaws_raw.get('items', [])), mapping)
+
 def apply_rules_to_node(node, mapping, lang='en'):
     if isinstance(node, dict):
         new_node = {}
@@ -324,6 +335,95 @@ def process_psionics(psionics_list, mapping):
         }
         with open(os.path.join(SITE_DATA_DIR, 'psionics' + suffix), 'w', encoding='utf-8') as f:
             json.dump(search_data, f, indent=4, ensure_ascii=False)
+
+def process_perks_flaws(perks_list, flaws_list, mapping):
+    for lang in ['en', 'es']:
+        processed_perks = []
+        processed_flaws = []
+        
+        perk_columns = [
+            {"name": "Perk" if lang == "en" else "Ventaja", "key": "name", "link": True},
+            {"name": "Cost" if lang == "en" else "Costo", "key": "cost"},
+            {"name": "Ability" if lang == "en" else "Capacidad", "key": "ability"},
+            {"name": "Type" if lang == "en" else "Tipo", "key": "type"},
+            {"name": "Description" if lang == "en" else "Descripción", "key": "description", "hidden": True}
+        ]
+        
+        flaw_columns = [
+            {"name": "Flaw" if lang == "en" else "Defecto", "key": "name", "link": True},
+            {"name": "Bonus Points" if lang == "en" else "Puntos de bonificación", "key": "bonus_points"},
+            {"name": "Ability" if lang == "en" else "Capacidad", "key": "ability"},
+            {"name": "Description" if lang == "en" else "Descripción", "key": "description", "hidden": True}
+        ]
+
+        for item in perks_list:
+            loc = get_localized(item, lang)
+            title = loc.get('name') or item.get('id', 'unknown')
+            slug = slugify(item.get('id') or title)
+            url = f"/perks/{slug}/"
+            if lang == 'es': url = f"/es{url}"
+            
+            desc = loc.get('description') or ""
+            if lang == 'es': desc = apply_mapping(desc, mapping)
+            
+            processed_perks.append({
+                "name": title,
+                "cost": item.get('cost'),
+                "ability": translate_field(item.get('ability', '—'), None, mapping, lang),
+                "type": translate_field(item.get('type', '—'), None, mapping, lang),
+                "description": desc,
+                "url": url
+            })
+            
+            out_dir = f'site/content/perks/{slug}'
+            os.makedirs(out_dir, exist_ok=True)
+            suffix = '.es.md' if lang == 'es' else '.md'
+            with open(os.path.join(out_dir, '_index' + suffix), 'w', encoding='utf-8') as f:
+                f.write(f'+++\ntitle = "{title}"\ncost = "{item.get("cost")}"\nability = "{item.get("ability")}"\ntype = "perk"\nlayout = "list"\nomit_automatic_list = true\n+++\n\n{desc}\n')
+
+        for item in flaws_list:
+            loc = get_localized(item, lang)
+            title = loc.get('name') or item.get('id', 'unknown')
+            slug = slugify(item.get('id') or title)
+            url = f"/flaws/{slug}/"
+            if lang == 'es': url = f"/es{url}"
+            
+            desc = loc.get('description') or ""
+            if lang == 'es': desc = apply_mapping(desc, mapping)
+            
+            processed_flaws.append({
+                "name": title,
+                "bonus_points": item.get('bonus_points'),
+                "ability": translate_field(item.get('ability', '—'), None, mapping, lang),
+                "description": desc,
+                "url": url
+            })
+            
+            out_dir = f'site/content/flaws/{slug}'
+            os.makedirs(out_dir, exist_ok=True)
+            suffix = '.es.md' if lang == 'es' else '.md'
+            with open(os.path.join(out_dir, '_index' + suffix), 'w', encoding='utf-8') as f:
+                f.write(f'+++\ntitle = "{title}"\nbonus_points = "{item.get("bonus_points")}"\nability = "{item.get("ability")}"\ntype = "flaw"\nlayout = "list"\nomit_automatic_list = true\n+++\n\n{desc}\n')
+
+        combined = {
+            "search_config": {
+                "display_name": "PERKS & FLAWS" if lang == 'en' else "VENTAJAS Y DEFECTOS",
+                "base_url": "/perks_flaws/",
+                "section": "rules"
+            },
+            "perks": {
+                "columns": perk_columns,
+                "groups": [{"name": "Perks" if lang == 'en' else "Ventajas", "items": processed_perks}]
+            },
+            "flaws": {
+                "columns": flaw_columns,
+                "groups": [{"name": "Flaws" if lang == 'en' else "Defectos", "items": processed_flaws}]
+            }
+        }
+        
+        json_suffix = '.es.json' if lang == 'es' else '.json'
+        with open(os.path.join(SITE_DATA_DIR, 'perks_and_flaws' + json_suffix), 'w', encoding='utf-8') as f:
+            json.dump(combined, f, indent=4, ensure_ascii=False)
 
 def process_skills(skills_list, mapping):
     for broad in skills_list:
