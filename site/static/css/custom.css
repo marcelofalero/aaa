@@ -353,8 +353,15 @@ h3 {
 }
 
 /* Index Card Responsive Height */
-.index-card-content {
-    /* Full height on mobile */
+.sci-fi-card {
+  background-color: #ffffff;
+  border: 1px solid var(--border-color);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  overflow-x: hidden; /* Prevent horizontal overflow from content */
 }
 
 @media screen and (min-width: 768px) {
@@ -366,14 +373,21 @@ h3 {
 .toc-dotted-line {
     flex: 1 1 auto;
     border-bottom: 2px dotted rgba(56, 158, 189, 0.4);
-    height: 12px;
+    height: 1.1em;
     margin: 0 10px;
     min-width: 15px;
 }
 
 .toc-description {
-    display: inline-block;
+    flex-shrink: 1;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    margin-left: auto;
+    max-width: 70%;
+    min-width: 0; /* Enable shrinking/truncation in flexbox */
+}
+
+.index-card-content li {
+    min-width: 0; /* Allow children to shrink below their content size */
 }
