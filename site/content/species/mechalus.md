@@ -43,3 +43,7 @@ In a tense or dangerous situation, mechalus are likely to remain calm and logica
 
 ### Contemporary or Near-Future Campaign
 If the mechalus are introduced into one of these types of campaigns, then it should be in the form of first contact—the mechalus travel to Earth or one of the solar-system colonies. After an initial relationship between humans and mechalus is established, the aliens will either join humanity's quest to explore and understand the galaxy (providing technological help along the way), or become an enemy of the aggressive human expansion. In the latter case, mechalus characters could be involved in helping human characters find a way to bring the two species together.
+
+### Far-Future Campaign
+The mechalus are among the first alien species encountered as the humans explore the stars. They align themselves with the human community and accept the name bestowed upon them as a gift from their new friends. Mechalus computers and space vessels are among the best in the galaxy, and their in-system explorer ships, transports, and small battle craft are state of the art. The mechalus can easily be considered equal partners in humanity's push to expand the galactic community.
+
