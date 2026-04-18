@@ -7,11 +7,11 @@ weight = 1
 
 # Human
 
-In the AAA game, members of the human species come in a variety of shades, sizes, and body types, but they all look like the people around us.
+In the Alternity game, members of the human species come in a variety of shades, sizes, and body types, but they all look like the people around us.
 
 ## History
 
-The history of humanity is well documented. For the purposes of AAA, two events define the species' future: the development of the means to expand beyond Earth to colonize the solar system, and the eventual achievement of interstellar travel to establish communities in other star systems.
+The history of humanity is well documented and doesn't need to be repeated here. For the purposes of this science fiction roleplaying game, two events will come to pass in humanity's future: The species will develop the means to expand beyond its homeworld and colonize the solar system. And eventually it will become capable of traveling beyond the solar system and establishing communities of humans in other star systems.
 
 ## Special Abilities
 
