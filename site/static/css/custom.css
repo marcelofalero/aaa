@@ -8,28 +8,41 @@
 }
 
 .nav-flex-container {
-  display: flex !important;
-  align-items: flex-start !important;
-  justify-content: space-between !important;
-  width: 100% !important;
-  flex-wrap: nowrap !important;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: nowrap;
+}
+
+.search-container-fixed {
+  position: absolute;
+  top: 4px;
+  right: 2rem;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+}
+
+.search-input-inner {
+  width: 364px;
 }
 
 @media screen and (max-width: 768px) {
   .nav-flex-container {
-    flex-direction: column !important;
-    align-items: flex-start !important;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
   }
   .search-container-fixed {
+    position: static !important;
+    width: 100% !important;
     margin-top: 1rem;
+    margin-left: 0 !important;
+  }
+  .search-input-inner {
     width: 100% !important;
   }
-}
-
-.search-container-fixed {
-  margin-left: auto !important;
-  display: flex !important;
-  align-items: center !important;
 }
 
 .main-container {
@@ -318,4 +331,63 @@ h3 {
   padding: 0 2px;
   border-radius: 2px;
   text-shadow: 0 0 5px var(--accent-cyan);
+}
+
+/* Themed Scrollbars for auto-overflow containers */
+.overflow-y-auto {
+  scrollbar-width: thin;
+  scrollbar-color: var(--accent-cyan) transparent;
+}
+
+.overflow-y-auto::-webkit-scrollbar {
+  width: 6px;
+}
+
+.overflow-y-auto::-webkit-scrollbar-thumb {
+  background-color: var(--accent-cyan);
+  border-radius: 10px;
+}
+
+.overflow-y-auto::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Index Card Responsive Height */
+.sci-fi-card {
+  background-color: #ffffff;
+  border: 1px solid var(--border-color);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  overflow-x: hidden; /* Prevent horizontal overflow from content */
+}
+
+@media screen and (min-width: 768px) {
+    .index-card-content {
+        max-height: 700px;
+    }
+}
+
+.toc-dotted-line {
+    flex: 1 1 auto;
+    border-bottom: 2px dotted rgba(56, 158, 189, 0.4);
+    height: 1.1em;
+    margin: 0 10px;
+    min-width: 15px;
+}
+
+.toc-description {
+    flex-shrink: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-left: auto;
+    max-width: 70%;
+    min-width: 0; /* Enable shrinking/truncation in flexbox */
+}
+
+.index-card-content li {
+    min-width: 0; /* Allow children to shrink below their content size */
 }

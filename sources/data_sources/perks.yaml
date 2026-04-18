@@ -63,7 +63,7 @@ items:
           As a celebrity’s achievement level improves, so does the bonus applied to the perk check: At level 5, the base situation die for any Celebrity check becomes -d4; at level 10 it becomes -d6; and at level 15 it becomes -d8.'
     - es:
         name: Celebridad
-        description: 'esta ventaja indica que el personaje es famoso en ciertos círculos, según lo elegido por el jugador y el Gamemaster. El personaje puede ser una celebridad del entretenimiento, un científico de renombre, un médico o un personaje de guerra, o puede disfrutar del estatus de celebridad por otra razón que el Gamemaster apruebe.
+        description: 'Esta ventaja indica que el personaje es famoso en ciertos círculos, según lo elegido por el jugador y el Gamemaster. El personaje puede ser una celebridad del entretenimiento, un científico de renombre, un médico o un personaje de guerra, o puede disfrutar del estatus de celebridad por otra razón que el Gamemaster apruebe.
 
 
           En una circunstancia en la que la celebridad de un personaje pueda tener un efecto, el Gamemaster puede solicitar una verificación de ventajas al comienzo de una escena para determinar si la ventaja hace alguna diferencia en lo que está a punto de suceder. Una estrella de cine puede ser adorada por quienes ven sus películas, pero su estatus de celebridad no significa nada para aquellos que nunca han visto una película o leído el perfil de personalidad de la estrella.
@@ -145,8 +145,8 @@ items:
 
           The Gamemaster can determine that in some situations the Filthy Rich perk can operate as a flaw—especially among those who have a strong dislike for the wealthy and the upper classes. If a character reveals his status in such a situation, perk check results become penalties instead of bonuses (or vice versa).'
     - es:
-        name: asquerosamente rico
-        description: 'esta ventaja sugiere mucho sobre los antecedentes de un personaje y generalmente indica una conexión con una familia rica (y quizás influyente). esta ventaja influye en los fondos iniciales de un personaje, como se describe en el Capítulo 9: Bienes y servicios. Si el personaje alguna vez necesita adquirir fondos, puede realizar una prueba de Asquerosamente Rico (con el permiso del Director de Juego). El fracaso indica que los fondos no llegan; un Ordinario o mejor indica que los fondos que necesita están disponibles. Sin embargo, cuanto más pide el personaje, mayor será la penalización de la situación.
+        name: Asquerosamente rico
+        description: 'Esta ventaja sugiere mucho sobre los antecedentes de un personaje y generalmente indica una conexión con una familia rica (y quizás influyente). Esta ventaja influye en los fondos iniciales de un personaje, como se describe en el Capítulo 9: Bienes y servicios. Si el personaje alguna vez necesita adquirir fondos, puede realizar una prueba de Asquerosamente Rico (con el permiso del Director de Juego). El fracaso indica que los fondos no llegan; un Ordinario o mejor indica que los fondos que necesita están disponibles. Sin embargo, cuanto más pide el personaje, mayor será la penalización de la situación.
 
 
           Finalmente, los personajes Filthy Rich tienen otras ventajas debido a su estatus social y financiero. Esto se traduce en una bonificación a las habilidades basadas en la personalidad cuando el personaje decide revelar su estado. Se realiza una verificación de ventajas al comienzo de una escena. A continuación se muestran los resultados: ante un fallo crítico, el estado del personaje resulta contraproducente, lo que resulta en una penalización de +1 a todas las pruebas relacionadas con las habilidades de personalidad; Fracaso, ningún efecto; Ordinario, bonificación -1; Bien, bonificación -2; Increíble, bonificación -3.
@@ -300,7 +300,7 @@ items:
           As a character’s achievement level improves, he becomes better able to take advantage of his reputation: At level 5, the base situation die for any Reputation perk check becomes -d4; at level 10 it becomes -d6; and at level 15 it becomes -d8.'
     - es:
         name: Reputación
-        description: 'esta ventaja proporciona al personaje una reputación conocida en todas partes. A diferencia de la ventaja Celebridad, que indica una reacción positiva debido a la influencia de la Personalidad de un personaje, la ventaja Reputación ayuda al personaje al hacer que otros teman o se impresionen por sus supuestos logros. En términos de juego, esta ventaja proporciona una bonificación de dado de situación cada vez que el personaje intenta usar ciertas habilidades de encuentro. El jugador y el director de juego deben determinar cuál es la reputación del personaje y a qué habilidades de encuentro proporciona una bonificación.
+        description: 'Esta ventaja proporciona al personaje una reputación conocida en todas partes. A diferencia de la ventaja Celebridad, que indica una reacción positiva debido a la influencia de la Personalidad de un personaje, la ventaja Reputación ayuda al personaje al hacer que otros teman o se impresionen por sus supuestos logros. En términos de juego, esta ventaja proporciona una bonificación de dado de situación cada vez que el personaje intenta usar ciertas habilidades de encuentro. El jugador y el director de juego deben determinar cuál es la reputación del personaje y a qué habilidades de encuentro proporciona una bonificación.
 
 
           A medida que mejora el nivel de logro de un personaje, éste se vuelve más capaz de aprovechar su reputación: en el nivel 5, el dado de situación base para cualquier prueba de ventaja de reputación se convierte en -d4; en el nivel 10 pasa a ser -d6; y en el nivel 15 se convierte en -d8.'
@@ -346,7 +346,7 @@ items:
           Each of these benefits may be purchased once. So, if a character spends 9 skill points, he can increase all of his durability ratings (stun, wound, mortal, and fatigue) by 1 point each.'
     - es:
         name: Vigor
-        description: 'esta ventaja permite a un personaje aumentar la cantidad de daño que puede soportar.
+        description: 'Esta ventaja permite a un personaje aumentar la cantidad de daño que puede soportar.
 
           * Por 2 puntos de habilidad, un personaje puede aumentar su índice de aturdimiento en 1 punto.
 

@@ -64,7 +64,7 @@ Esta especialización permite a un personaje mejorar este aspecto de la habilida
 ## Animal training
 {{< specialty attr="VOL" untrained="yes" cost="3" >}}
 
-This skill allows a Personaje to become able to handle, ride, and train a specific type of animal. He must purchase and improve this Especialidad separately for each type of animal he wants to train. Types of animals include riding animals, pack animals, attack animals, and guard animals. Your Gamemaster has the final say on how animals are classified, and which ones require separate applications of this skill.
+This skill allows a Personaje to become able to handle, ride, and train a specific type of animal. He must purchase and improve this Especialidad separately for each type of animal he wants to train. Types of animals include riding animals, pack animals, attack animals, and guard animals. Your Director de Juego has the final say on how animals are classified, and which ones require separate applications of this skill.
 
 ---
 

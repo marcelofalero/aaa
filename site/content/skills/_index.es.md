@@ -101,7 +101,7 @@ Cuando un personaje realiza una tirada de habilidad, hay cinco resultados posibl
 
 ### Personaje vs. Personaje
 
-Cada personaje involucrado en una competición directa (excepto en el combate) realiza una tirada de habilidad apropiada. Cualquier modificador al dado de situación que se aplique debe figurar en la tirada. La [sección de Reglas de Juego](/rules/) tiene más detalles al respecto, pero en general así es como funciona:
+Cada personaje involucrado en una competición directa (excepto en el combate) realiza una tirada de habilidad apropiada. Cualquier modificador al dado de situación que se aplique debe figurar en la tirada. La [sección de Mecánicas Centrales]({{< relref "core-mechanics" >}}) tiene más detalles al respecto, pero en general así es como funciona:
 
 Cada personaje involucrado en una competición directa (excepto en el combate) realiza una tirada de habilidad apropiada. Cualquier modificador al dado de situación que se aplique debe figurar en la tirada. **El personaje que consiga el mayor nivel de éxito** —Asombroso vence a Bueno, Bueno vence a Ordinario, Ordinario vence a Fallo o Marginal, y un Fallo Crítico indica una pérdida inmediata y significativa— **gana la competición**. Si los contendientes empatan (ambos sacan un Bueno, por ejemplo), se debe realizar otra tirada.
 
