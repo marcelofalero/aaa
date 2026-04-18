@@ -365,12 +365,15 @@ h3 {
 
 .toc-dotted-line {
     flex: 1 1 auto;
-    border-bottom: 2px dotted rgba(0, 0, 0, 0.1);
-    height: 0.9em;
-    margin: 0 8px;
-    min-width: 20px;
+    border-bottom: 2px dotted rgba(56, 158, 189, 0.4);
+    height: 12px;
+    margin: 0 10px;
+    min-width: 15px;
 }
 
 .toc-description {
+    display: inline-block;
     white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
