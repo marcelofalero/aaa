@@ -1,5 +1,5 @@
 +++
-title = "pobre apariencia"
+title = "Mala apariencia"
 bonus_points = "+3"
 ability = "PER"
 type = "flaw"

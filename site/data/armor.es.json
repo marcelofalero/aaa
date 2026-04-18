@@ -129,7 +129,7 @@
                     "avail": "Común",
                     "cost": "200",
                     "id": "helm",
-                    "description": "El centro de los órganos sensoriales recibe protección adicional. Un yelmo no puede usarse con otra armadura si la armadura contiene un casco o capucha integral. El Gamemaster puede determinar que la protección del yelmo no es significativa en algunas situaciones, especialmente si es la única armadura que se lleva."
+                    "description": "El centro de los órganos sensoriales recibe protección adicional. Un yelmo no puede usarse con otra armadura si la armadura contiene un casco o capucha integral. El Director de Juego puede determinar que la protección del yelmo no es significativa en algunas situaciones, especialmente si es la única armadura que se lleva."
                 },
                 {
                     "name": "Escudo pequeño",

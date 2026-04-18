@@ -29,7 +29,7 @@
                 "hidden": true
             }
         ],
-        "groups": [
+        "items": [
             {
                 "name": "Perks",
                 "items": [
@@ -250,7 +250,7 @@
                 "hidden": true
             }
         ],
-        "groups": [
+        "items": [
             {
                 "name": "Flaws",
                 "items": [

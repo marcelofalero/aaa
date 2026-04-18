@@ -76,7 +76,7 @@ Cualquier uso de la habilidad de reparación requiere una comprobación de habil
 
 This skill provides a Personaje with training in the repair and maintenance of various types of mechanical and electronic technology.
 
-Any use of the repair skill requires a complex skill check and takes a period of time determined by the Gamemaster (minutes, hours, days, or weeks). The complexity of a repair skill check is related to the amount of damage that must be repaired:
+Any use of the repair skill requires a complex skill check and takes a period of time determined by the Director de Juego (minutes, hours, days, or weeks). The complexity of a repair skill check is related to the amount of damage that must be repaired:
 - **Aturdimiento Damage:** Fix an object with only Aturdimiento damage is **Ordinario** complexity.
 - **Herida Damage:** Fix an object with Herida damage is **Bueno** complexity.
 - **Mortal Damage:** Fixing an object with any amount of Mortal damage is **Asombroso** complexity (and may require 10+ successes).

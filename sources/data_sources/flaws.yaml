@@ -207,7 +207,7 @@ items:
 
           **Note:** Wearing armor does not offset or reduce this damage.'
     - es:
-        name: vieja herida
+        name: Vieja herida
         description: 'En algún momento del pasado, el personaje sufrió una lesión. Ahora, Old Injury actúa de vez en cuando, infligiendo heridas al personaje. El jugador y el Gamemaster deben acordar un evento desencadenante, pero en general debe ser algo físico: un intento de correr o saltar, involucrarse en un ataque cuerpo a cuerpo y un intento de esquivar son todos desencadenantes aceptables. Se puede activar una antigua herida una vez por escena, aunque los efectos permanecen hasta que el personaje se cura. (Tenga en cuenta que si un personaje quiere eliminar este defecto, se debe incluir un procedimiento médico como parte del proceso de eliminación. Consulte el Capítulo 8: Logros para obtener más detalles).
 
           * Por 2 puntos de habilidad adicionales, un personaje sufre 1 punto de daño por herida cuando se activa este defecto.
@@ -247,7 +247,7 @@ items:
         name: Poor Looks
         description: A character with the Poor Looks flaw suffers a +1 penalty to all Personality-based skill checks when appearance could have a negative effect. Poor Looks isn't just a measure of physical beauty; it includes manners, grooming, and overall appearance. Bear in mind that a human character's Poor Looks might not be seen as such by an alien, and even some other human cultures may have a different idea of what Poor Looks are. The Gamemaster determines when the flaw's penalty is applied and when it isn't, depending on the situation.
     - es:
-        name: pobre apariencia
+        name: Mala apariencia
         description: Un personaje con el defecto de Mala Apariencia sufre una penalización de +1 a todas las pruebas de habilidad basadas en Personalidad cuando la apariencia podría tener un efecto negativo. La mala apariencia no es sólo una medida de belleza física; incluye modales, arreglo personal y apariencia general. Tenga en cuenta que es posible que un extraterrestre no vea la mala apariencia de un personaje humano, e incluso algunas otras culturas humanas pueden tener una idea diferente de lo que es la mala apariencia. El Director de Juego determina cuándo se aplica la penalización por falla y cuándo no, dependiendo de la situación.
   powerful-enemy:
     bonus_points: +2/4/6

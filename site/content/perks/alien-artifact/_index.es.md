@@ -11,4 +11,4 @@ Un artefacto alienígena es un dispositivo o reliquia extraño del que el person
 
 El lado negativo de un artefacto puede ser un defecto que se manifiesta cuando el personaje menos lo espera; La desventaja también puede ser el simple hecho de que los artefactos alienígenas son extremadamente raros, sumamente valiosos y muy codiciados. Alguien quiere el que posee tu personaje y no se detendrá ante nada para conseguirlo.
 
-Los artefactos alienígenas se enumeran y describen en la Guía del Gamemaster. Después de seleccionar esta ventaja, el Gamemaster diseñará un artefacto alienígena para tu personaje.
+Los artefactos alienígenas se enumeran y describen en la Guía del Director de Juego. Después de seleccionar esta ventaja, el Director de Juego diseñará un artefacto alienígena para tu personaje.

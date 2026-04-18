@@ -13,4 +13,4 @@ Como defecto, un artefacto alienígena proporciona principalmente desventajas a 
 
 En cuanto al lado positivo de un artefacto, puede variar desde una ventaja desconocido que se manifiesta cuando el personaje menos lo espera hasta una simple bonificación que está constantemente en juego incluso cuando el artefacto está penalizando al personaje de alguna manera. Tenga en cuenta que una ventaja nunca cancelará una penalización: los dos aspectos de un artefacto siempre no estarán relacionados. (Por lo tanto, no encontrarás un artefacto que proporcione a un personaje una penalización de +1 al uso de habilidades basadas en Destreza y una bonificación de -1 al uso de habilidades basadas en Destreza al mismo tiempo).
 
-Los artefactos alienígenas se enumeran y describen en la Guía del Gamemaster. Después de seleccionar este defecto, el Gamemaster diseñará un artefacto alienígena para tu personaje.
+Los artefactos alienígenas se enumeran y describen en la Guía del Director de Juego. Después de seleccionar este defecto, el Director de Juego diseñará un artefacto alienígena para tu personaje.

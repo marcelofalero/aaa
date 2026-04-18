@@ -42,7 +42,7 @@ On an **Asombroso** result, the Soborno is accepted, and the target's attitude i
 ## Juego
 {{< specialty attr="PER" untrained="yes" cost="4" >}}
 
-This Especialidad represents a Personaje's proficiency at various games of chance. With each purchase of the Especialidad, the player selects a different game (subject to the approval of the Gamemaster) for his Personaje to be skilled in.
+This Especialidad represents a Personaje's proficiency at various games of chance. With each purchase of the Especialidad, the player selects a different game (subject to the approval of the Director de Juego) for his Personaje to be skilled in.
 
 With a successful Juego check, a Personaje can estimate the odds, determine if a particular game has been rigged, count cards, spot a cheater or another skilled gambler, and increase his own odds of winning.
 
