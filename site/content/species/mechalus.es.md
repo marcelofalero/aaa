@@ -1,22 +1,37 @@
 +++
 title = "Mechalus"
-description = "Humanoides lógicos nacidos con tecnología cibernética integrada."
+description = "Humanoides cibernéticos con una profunda conexión con la tecnología."
 image = "/images/species/mechalus.jpg"
 weight = 3
 +++
 
 # Mechalus
 
-Los mechalus tienen mentes muy ordenadas, lo que se traduce en una sociedad estrictamente estructurada y una perspectiva de la vida igualmente organizada. Piensan con la precisión y la lógica de una máquina, pero siguen siendo personas muy emocionales que trabajan duro para promover emociones positivas.
+Los mechalus (pronunciado "mek-a-lus") son humanoides esbeltos cuya apariencia física está dominada por una serie de implantes cibernéticos e inserciones mecánicas. Estos dispositivos forman parte de su cuerpo desde el nacimiento y se integran perfectamente con sus sistemas biológicos.
 
 ## Historia
-Provenientes del mundo similar a la Tierra de Aleer, la historia de los Aleerins divergió de la de la humanidad con su fascinación por la mecánica y las computadoras. Bioingenierizaron su propia especie, produciendo una síntesis de carne y circuitos que impregna a toda la especie: nacen con ciberbiónica. Después de un período vergonzoso de conquista planetaria, los Aleerins experimentaron un cambio cultural unánime hacia el pacifismo y la serenidad lógica, uniéndose finalmente a la comunidad galáctica humana.
+
+Los mechalus son originarios del planeta Aleer. Originalmente, Aleer era un mundo rico en vida biológica, pero los antepasados de los mechalus, impulsados por una curiosidad insaciable y un deseo de perfección, comenzaron a reemplazar partes de sus cuerpos con componentes mecánicos. Este proceso, que duró milenios, transformó su especie en lo que son hoy.
+
+Durante su historia, los mechalus cometieron un error trágico que moldeó su cultura actual: por accidente, borraron por completo a otra especie inteligente de su planeta durante sus primeros experimentos con la nanotecnología. Este acto de destrucción accidental los dejó con una profunda sensación de vergüenza colectiva y un deseo de mantenerse moderados y cautos en sus interacciones con otros.
 
 ## Habilidades Especiales
-- **Bonificación de Habilidad de Operación de Computadoras:** Los mechalus reciben una **bonificación de dado de situación de -1 paso** para las habilidades [Conocimiento-operación de computadoras](/es/skills/knowledge/computer-operation) o [Ciencia de la Computación-hacking](/es/skills/computer-science/hacking) cuando se fusionan con una computadora a través de filamentos en los dedos.
-- **Mejoras Cibernéticas:** Nacen con ranuras de datos neuronales, un procesador interno (equivalente a un nanocomputador Bueno) y un dispositivo de reflejos.
-- **Tolerancia Cibernética:** Los mechalus no están sujetos al rechazo cibernético, y su límite cibernético se basa en **Constitución +4** en lugar de solo Constitución.
-- **Habilidades Generales Gratuitas:** [Atletismo](/es/skills/athletics) (FUE), [Op. de Vehículos](/es/skills/vehicle-operation) (DES), [Resistencia](/es/skills/stamina) (CON), [Conocimiento](/es/skills/knowledge) (INT), [Percepción](/es/skills/awareness) (VOL), [Ciencia de la Computación](/es/skills/computer-science) (INT).
+
+- **Interfaz Directa:** Pueden conectarse directamente a cualquier puerto de datos estándar. Reciben una bonificación de **-1 paso** en todas las pruebas de [**informática**](/es/skills/technical-science/computer-science) cuando están conectados físicamente.
+- **Resistencia al Aturdimiento:** Su sistema nervioso cibernéticamente mejorado les otorga una bonificación de **-2 pasos** en las pruebas de [**resistencia al aturdimiento**](/es/rules/combat/#stun-damage).
+- **Visión Mejorada:** Sus implantes oculares les permiten ver en el espectro infrarrojo, ignorando las penalizaciones por oscuridad total.
+- **Habilidades Generales Gratuitas:** Ciencia Técnica (INT), Operación de Sistemas (INT), Conocimiento (INT), Atletismo (FUE), Percepción (VOL), Interacción (PER).
 
 ## Cultura e Interpretación
-Los mechalus son tranquilos y lógicos ante el peligro, pero pueden parecer jubilosamente alegres en la celebración, un esfuerzo por demostrar que son más que simples máquinas. Sus computadoras y naves espaciales se encuentran entre las mejores de la galaxia, y son socios iguales en la expansión galáctica.
+
+Debido a su historia, los mechalus suelen ser reservados y deliberados. Rara vez actúan impulsivamente y prefieren analizar todas las opciones antes de tomar una decisión. Su conexión con la tecnología es profunda y natural; a través de filamentos en sus dedos, pueden fusionarse directamente con sistemas informáticos y redes de datos centrales.
+
+Aunque muchos los ven como seres fríos y lógicos, los mechalus tienen una vida emocional compleja, aunque está altamente regulada por sus componentes mecánicos para evitar arrebatos destructivos como los que marcaron su pasado.
+
+## Variaciones de Campaña
+
+### Campaña Contemporánea o de Futuro Próximo
+Si los mechalus son introducidos en este tipo de campañas, debería ser en forma de primer contacto: los mechalus viajan a la Tierra o a una de las colonias del sistema solar. Tras establecerse una relación inicial, los alienígenas se unirán a la búsqueda de la humanidad para explorar la galaxia o se convertirán en enemigos de la agresiva expansión humana. En este último caso, los personajes mechalus podrían estar involucrados en ayudar a los personajes humanos a encontrar una forma de unir a las dos especies.
+
+### Campaña de Futuro Lejano
+Los mechalus se encuentran entre las primeras especies alienígenas encontradas mientras los humanos exploran las estrellas. Se alinean con la comunidad humana y aceptan el nombre que se les otorga como un regalo de sus nuevos amigos. Los ordenadores y naves espaciales mechalus están entre los mejores de la galaxia, y sus naves exploradoras, transportes y pequeñas naves de combate son de última generación. Los mechalus pueden considerarse socios iguales en el impulso de la humanidad para expandir la comunidad galáctica.
