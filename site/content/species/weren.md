@@ -41,6 +41,6 @@ As weren join the galactic community, they take the roles of soldiers, mercenari
 
 Weren approach life with amazing intensity. When they embrace a new idea or belief, they become zealots. They profess the tenets of those beliefs with word, deed, claw, and war mace. Though they're built for battle, weren also love to talk and share ideas. Not every discussion leads to a fight, and most weren won't battle those weaker than themselves unless they are left with no choice. They have strict codes concerning honor, combat etiquette, and noble acts.
 
-Most weren are fierce warriors, embracing the Combat Spec profession, though a few make strides as Diplomats of one sort or another, especially as clergy of a human faith or shamans of their own culture.
+Most weren are fierce warriors, embracing the Combat Spec profession, though a few make strides as clergy of a human faith or shamans of their own culture.
 
 They have no extraordinary talent as Free Agents, Mindwalkers, or Tech Ops, however, and few weren characters pursue those professions. Indeed, weren just can't get the hang of any technology beyond their own level of advancement, and even most of those living in an advanced society can't use such items without penalty.

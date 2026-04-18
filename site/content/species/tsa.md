@@ -29,7 +29,7 @@ T'sa companions are a boon to any adventuring group. Their cheerfulness and good
 
 Everything a t'sa does, he does quickly. He's always on the move, always asking questions, always seeking answers. Although he's often misunderstood, a t'sa is nonetheless eager to please and make friends.
 
-T'sa make great Tech Ops, doing especially well as engineers and inventors. This species can also be found in fair abundance within the Free Agent, Diplomat, and Mindwalker professions, but t'sa very seldom aspire to be Combat Specs, because it isn't in their nature to be violent or physically forceful.
+T'sa make great Tech Ops, doing especially well as engineers and inventors. This species can also be found in fair abundance within the Free Agent and Mindwalker professions, but t'sa very seldom aspire to be Combat Specs, because it isn't in their nature to be violent or physically forceful.
 
 ## Campaign Settings
 

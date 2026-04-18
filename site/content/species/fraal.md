@@ -28,7 +28,7 @@ At some later point in human history, however, a meeting of the minds finally to
 
 ## Culture & Roleplaying
 
-Fraal aren't physically inclined. They tend to develop their minds instead of their bodies, working as Mindwalkers, Tech Ops, or Diplomats rather than in the Free Agent or Combat Spec professions. They are thinkers and philosophers with a deeply spiritual nature. Because they are a long-lived species, the fraal have a patient attitude that sometimes annoys humans. Their spirituality centers around mind-walking, the study and application of psionics. To them, the powers of the mind have almost religious significance; they feel that all species can find common ground by touching thoughts and sharing inner peace.
+Fraal aren't physically inclined. They tend to develop their minds instead of their bodies, working as Mindwalkers or Tech Ops rather than in the Free Agent or Combat Spec professions. They are thinkers and philosophers with a deeply spiritual nature. Because they are a long-lived species, the fraal have a patient attitude that sometimes annoys humans. Their spirituality centers around mind-walking, the study and application of psionics. To them, the powers of the mind have almost religious significance; they feel that all species can find common ground by touching thoughts and sharing inner peace.
 
 Fraal aren't pacifists, but they believe that violence should be the last resort of an intelligent, civilized species. They can seem cold and distant, but that's because they don't have as wide a range of emotions as humans do—and the emotional range they do possess doesn't shift as rapidly or unpredictably as humans' emotions do.
 

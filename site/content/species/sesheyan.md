@@ -44,4 +44,4 @@ Most humans can't help feeling uneasy in the presence of a sesheyan. This attitu
 
 Technology is new and alien to sesheyans. They can learn to use high-tech equipment, but many of them never become completely comfortable with it, and some deeply religious sesheyans refuse to have anything to do with it. Sesheyan characters belong to the small group of sesheyans who have overcome their disinclination toward using high-tech equipment—they'll operate a computer, or a station on a spaceship, if they have to, but that doesn't mean they have to like it.
 
-Sesheyans make excellent Free Agents, serving as spies, scouts, or even bounty hunters when they enter galactic society. A smaller number take up the profession of Combat Spec, and fewer still are Diplomats. Except for characters who have overcome their natural distrust of technology, sesheyan Tech Ops are almost unheard of.
+Sesheyans make excellent Free Agents, serving as spies, scouts, or even bounty hunters when they enter galactic society. A smaller number take up the profession of Combat Spec. Except for characters who have overcome their natural distrust of technology, sesheyan Tech Ops are almost unheard of.

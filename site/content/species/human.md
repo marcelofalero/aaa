@@ -7,7 +7,7 @@ weight = 1
 
 # Human
 
-In the Alternity game, members of the human species come in a variety of shades, sizes, and body types, but they all look like the people around us.
+In the AAA game, members of the human species come in a variety of shades, sizes, and body types, but they all look like the people around us.
 
 ## History
 
