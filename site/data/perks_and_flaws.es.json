@@ -41,7 +41,7 @@
                         "ability": "—",
                         "type": "Special",
                         "description": "Un artefacto alienígena es un dispositivo o reliquia extraño del que el personaje no sabe nada. Podría ser un objeto de origen extraterrestre, un dispositivo experimental único en su tipo o incluso un proceso experimental utilizado en el personaje en algún momento del pasado. En algún momento de sus viajes, el personaje llegó a poseer el artefacto. Cualquier artefacto alienígena que sea un objeto es lo suficientemente pequeño como para transportarlo o usarlo fácilmente. El personaje no conoce la función o el propósito de su objeto; tiene que descubrir exactamente qué hace el artefacto a medida que avanza la campaña. Como ventaja, un artefacto alienígena ofrece principalmente beneficios, pero cada artefacto también tiene su lado negativo. Algunos proporcionan una ventaja constante; otros requieren que el personaje haga una prueba de ventaja para activar el artefacto.\n\nEl lado negativo de un artefacto puede ser un defecto que se manifiesta cuando el personaje menos lo espera; La desventaja también puede ser el simple hecho de que los artefactos alienígenas son extremadamente raros, sumamente valiosos y muy codiciados. Alguien quiere el que posee tu personaje y no se detendrá ante nada para conseguirlo.\n\nLos artefactos alienígenas se enumeran y describen en la Guía del Director de Juego. Después de seleccionar esta ventaja, el Director de Juego diseñará un artefacto alienígena para tu personaje.",
-                        "url": "/es/perks/alien-artifact/"
+                        "url": "/es/perks_flaws/perks/alien-artifact/"
                     },
                     {
                         "name": "Ambidextro",
@@ -49,7 +49,7 @@
                         "ability": "DES",
                         "type": "Active",
                         "description": "Un personaje con esta ventaja puede usar ambas manos al mismo tiempo con más facilidad que alguien que no sea ambidiestro. Un personaje sin esta ventaja sufre penalizaciones cuando usa su mano izquierda o cuando intenta usar dos armas en combate. (Consulta “Atacar con dos armas\" en la página 57 en el Capítulo 3: personajes en acción). Con esta ventaja, la penalización por la acción con la mano torpe se reduce a +2 pasos y la penalización por la mano principal se elimina.",
-                        "url": "/es/perks/ambidextrous/"
+                        "url": "/es/perks_flaws/perks/ambidextrous/"
                     },
                     {
                         "name": "Amigo animal",
@@ -57,7 +57,7 @@
                         "ability": "VOL",
                         "type": "Conscious",
                         "description": "Los animales de todo tipo confían de forma innata en un personaje que tiene esta ventaja. El personaje puede hacerse amigo de los animales fácilmente y realiza todas las tiradas de encuentro que involucren animales normales con una bonificación de -2 (usa los modificadores de situación para la habilidad Manejo de animales, página 91). El personaje realiza pruebas de habilidad de Manejo de animales con una bonificación de -1, además de otros modificadores que puedan aplicarse. Esta bonificación tiene el efecto de hacer posible que el personaje entrene a un animal en menos tiempo del que necesitaría un personaje que no tiene esta ventaja. la ventaja no tiene ningún efecto sobre criaturas sensibles o poco inteligentes.",
-                        "url": "/es/perks/animal-friend/"
+                        "url": "/es/perks_flaws/perks/animal-friend/"
                     },
                     {
                         "name": "Celebridad",
@@ -65,7 +65,7 @@
                         "ability": "PER",
                         "type": "Conscious",
                         "description": "Esta ventaja indica que el personaje es famoso en ciertos círculos, según lo elegido por el jugador y el Director de Juego. El personaje puede ser una celebridad del entretenimiento, un científico de renombre, un médico o un personaje de guerra, o puede disfrutar del estatus de celebridad por otra razón que el Director de Juego apruebe.\n\nEn una circunstancia en la que la celebridad de un personaje pueda tener un efecto, el Director de Juego puede solicitar una verificación de ventajas al comienzo de una escena para determinar si la ventaja hace alguna diferencia en lo que está a punto de suceder. Una estrella de cine puede ser adorada por quienes ven sus películas, pero su estatus de celebridad no significa nada para aquellos que nunca han visto una película o leído el perfil de personalidad de la estrella.\n\nCompruebe los resultados: fracaso crítico, el estatus de celebridad resulta contraproducente y el personaje es acosado por la multitud; Fallo, penalización de +2 a cualquier prueba de habilidad basada en la Personalidad realizada por el personaje durante la siguiente escena; Marginal, sin modificador; Ordinario, bonificación -1; Bien, bonificación -2; Increíble, bonificación de -3.\n\nA medida que mejora el nivel de logros de una celebridad, también mejora la bonificación aplicada a la prueba de ventajas: en el nivel 5, el dado de situación base para cualquier prueba de Celebridad se convierte en -d4; en el nivel 10 pasa a ser -d6; y en el nivel 15 se convierte en -d8.",
-                        "url": "/es/perks/celebrity/"
+                        "url": "/es/perks_flaws/perks/celebrity/"
                     },
                     {
                         "name": "Concentración",
@@ -73,7 +73,7 @@
                         "ability": "INT",
                         "type": "Conscious",
                         "description": "Esta ventaja proporciona al personaje la capacidad de concentrarse en la tarea que tiene entre manos. Al usarlo como acción, el personaje realiza una prueba de Concentración para mejorar una tarea establecida que quiere intentar como su próxima acción. Con un resultado de Fracaso, la siguiente acción del personaje se realiza sin modificador de Concentración. En un Ordinario, su capacidad de concentración le proporciona una bonificación de -1; Bien, bonificación -2; Increíble, bonificación -3. Si un personaje es molestado de alguna manera antes de intentar la tarea indicada, la bonificación de concentración se pierde.",
-                        "url": "/es/perks/concentration/"
+                        "url": "/es/perks_flaws/perks/concentration/"
                     },
                     {
                         "name": "Sentido de peligro",
@@ -81,7 +81,7 @@
                         "ability": "VOL",
                         "type": "Active",
                         "description": "Esta ventaja proporciona al personaje la capacidad innata de anticipar el peligro. Esto se traduce en un bonificador -2 a todas las pruebas de Conciencia e intuición.",
-                        "url": "/es/perks/danger-sense/"
+                        "url": "/es/perks_flaws/perks/danger-sense/"
                     },
                     {
                         "name": "Fe",
@@ -89,7 +89,7 @@
                         "ability": "VOL",
                         "type": "Conscious",
                         "description": "Esta ventaja le proporciona al personaje la confianza en sí mismo o en un poder o agencia mayor que él mismo. El jugador debe seleccionar en qué tiene fe el personaje y los principios básicos de esa fe. Los ejemplos incluyen una nación, una religión o una organización específica. Esta fe debe ser fuerte y abarcadora. El personaje debe ser verdaderamente ferviente en su creencia en esta fe, no ser simplemente un observador casual de las formas y los rituales. Un personaje con esta ventaja que no muestra una devoción extrema pierde las ventajas que proporciona.\n\nLa primera vez que se invoca la ventaja Fe durante una aventura, la situación base del personaje para la prueba de ventaja es -d4. Cada uso adicional de esta ventaja en la misma aventura recibe una penalización acumulativa de +1. En el momento en que un personaje falla una prueba de ventaja, no puede recurrir a los beneficios de esta ventaja hasta la siguiente aventura o la siguiente sesión de juego, según lo determine el director del juego.\n\nCon la ventaja Fe, un personaje puede parecer que realiza milagros cuando la ventaja se usa junto con una habilidad que no va en contra de los principios de la fe del personaje. Por ejemplo, un miembro del clero puede recurrir a Faith para que le ayude a resolver un problema, aplicar ayuda médica a un personaje o resolver una disputa, pero las ventajas no se pueden aplicar a disparar un arma contra un enemigo vivo.\n\nlas ventajas de Faith dependen de una prueba de ventaja: en un fallo crítico, el personaje no sólo falla la prueba de ventaja sino también la prueba de habilidad que le sigue, y esta ventaja no se puede volver a utilizar hasta la siguiente aventura o sesión de juego (según lo determine el Director de Juego). En caso de fallo, la ventaja no proporciona ninguna ventaja y no se puede volver a utilizar hasta la siguiente aventura o sesión de juego (según lo determine el director del juego). En un Ordinario, el resultado de la siguiente prueba de habilidad del personaje mejora en un grado de éxito. Si es Bueno, el resultado de la siguiente prueba de habilidad mejora en dos grados de éxito. En un Asombroso, el resultado de la siguiente prueba de habilidad mejora en tres grados de éxito. (Por supuesto, un resultado nunca puede mejorarse en ningún grado mayor que Asombroso.)\n\n**Ejemplo:** El chamán hombre Gorrarl debe aplicar primeros auxilios a un compañero gravemente herido. Primero recurre a su ventaja Fe y logra un Bien en la prueba de ventaja. Esto le otorga una mejora de dos grados de éxito en el resultado de su prueba de primeros auxilios. Los dados indican que su prueba de primeros auxilios es un Fallo Crítico, pero debido a su ventaja se convierte en Ordinaria.",
-                        "url": "/es/perks/faith/"
+                        "url": "/es/perks_flaws/perks/faith/"
                     },
                     {
                         "name": "Asquerosamente rico",
@@ -97,7 +97,7 @@
                         "ability": "PER",
                         "type": "Conscious",
                         "description": "Esta ventaja sugiere mucho sobre los antecedentes de un personaje y generalmente indica una conexión con una familia rica (y quizás influyente). Esta ventaja influye en los fondos iniciales de un personaje, como se describe en el Capítulo 9: Bienes y servicios. Si el personaje alguna vez necesita adquirir fondos, puede realizar una prueba de Asquerosamente Rico (con el permiso del Director de Juego). El fracaso indica que los fondos no llegan; un Ordinario o mejor indica que los fondos que necesita están disponibles. Sin embargo, cuanto más pide el personaje, mayor será la penalización de la situación.\n\nFinalmente, los personajes Filthy Rich tienen otras ventajas debido a su estatus Social y financiero. Esto se traduce en una bonificación a las habilidades basadas en la personalidad cuando el personaje decide revelar su estado. Se realiza una verificación de ventajas al comienzo de una escena. A continuación se muestran los resultados: ante un fallo crítico, el estado del personaje resulta contraproducente, lo que resulta en una penalización de +1 a todas las pruebas relacionadas con las habilidades de personalidad; Fracaso, ningún efecto; Ordinario, bonificación -1; Bien, bonificación -2; Increíble, bonificación -3.\n\nEl Director de Juego puede determinar que en algunas situaciones la ventaja Asquerosamente rico puede funcionar como un defecto, especialmente entre aquellos que sienten una fuerte aversión por los ricos y las clases altas. Si un personaje revela su estado en tal situación, los resultados de la prueba de ventajas se convierten en penalizaciones en lugar de bonificaciones (o viceversa).",
-                        "url": "/es/perks/filthy-rich/"
+                        "url": "/es/perks_flaws/perks/filthy-rich/"
                     },
                     {
                         "name": "Puños de hierro",
@@ -105,7 +105,7 @@
                         "ability": "FUE",
                         "type": "Active",
                         "description": "Esta ventaja proporciona al personaje un aumento de 1 punto en el daño que inflige al superar con éxito una prueba de habilidad de Ataque desarmado. El uso de esta ventaja requiere una verificación de ventaja al comienzo de una escena de combate. Esta prueba requiere que el personaje gaste una acción concentrándose para aumentar el poder de sus golpes.\n\nUn personaje con la habilidad especializada en artes marciales de poder puede gastar 5 puntos de habilidad en Puños de Hierro mejorados. El resultado de la prueba determina su bonificación para la escena: Fallo crítico, sin ventaja; Marginal, aumento de 1 punto al daño; Ordinario, aumento de 2 puntos; Bueno, aumento de 3 puntos; Increíble aumento de 4 puntos.\n\n**Ejemplo:** Un personaje normalmente inflige daño d4s/d4+2s/d6+2s cuando realiza un ataque sin armas. Si ese mismo personaje tiene Puños de Hierro, inflige d4+1s/d4+3s/d6+3s. Con Puños de Hierro mejorados, el daño puede ser tan alto como d4+4s/d4+6s/ d6+6s con un resultado de prueba de ventaja Increíble.",
-                        "url": "/es/perks/fists-of-iron/"
+                        "url": "/es/perks_flaws/perks/fists-of-iron/"
                     },
                     {
                         "name": "Fortaleza",
@@ -113,7 +113,7 @@
                         "ability": "CON",
                         "type": "Active",
                         "description": "Un personaje con Fortaleza recibe una bonificación de -1 cada vez que se le pide que realice una prueba de resistencia.",
-                        "url": "/es/perks/fortitude/"
+                        "url": "/es/perks_flaws/perks/fortitude/"
                     },
                     {
                         "name": "Buena suerte",
@@ -121,7 +121,7 @@
                         "ability": "VOL",
                         "type": "Conscious",
                         "description": "Un personaje con la ventaja Buena Suerte puede hacer uso de esta ventaja una vez durante una escena. Inmediatamente antes de intentar algún otro tipo de acción (normalmente una prueba de habilidad, una prueba de acción o una prueba de hazaña), el personaje puede realizar una prueba de la ventaja de Buena Suerte. El resultado de esta prueba proporciona un modificador a la siguiente actividad que emprende el personaje: en caso de un Fallo Crítico, ocurre mala suerte y el personaje sufre una penalización de +3. Con un éxito marginal, su siguiente actividad recibe una bonificación de -1; Ordinario, bonificación -2; Bien, bonificación -3; y Sorprendente, bonificación -4.",
-                        "url": "/es/perks/good-luck/"
+                        "url": "/es/perks_flaws/perks/good-luck/"
                     },
                     {
                         "name": "Gran apariencia",
@@ -129,7 +129,7 @@
                         "ability": "PER",
                         "type": "Active",
                         "description": "Un personaje con la ventaja Gran apariencia recibe una bonificación de -1 a cualquier prueba de habilidad basada en la personalidad realizada cuando su apariencia podría tener un efecto positivo en un encuentro. Tenga en cuenta que la gran apariencia de un personaje humano puede no impresionar a un extraterrestre, e incluso algunas otras culturas humanas pueden tener una idea diferente de lo que es la gran apariencia; es una ventaja muy subjetiva. El Director de Juego determina cuándo se aplica la bonificación de la ventaja y cuándo no.",
-                        "url": "/es/perks/great-looks/"
+                        "url": "/es/perks_flaws/perks/great-looks/"
                     },
                     {
                         "name": "Mayor capacidad",
@@ -137,7 +137,7 @@
                         "ability": "Special",
                         "type": "Active",
                         "description": "Esta ventaja proporciona al personaje 1 punto extra en la puntuación de habilidad de su elección. No se puede utilizar para aumentar ninguna puntuación de habilidad más allá del máximo de especie del personaje. Cuando se compra esta ventaja, el jugador aumenta la puntuación de habilidad del personaje en 1 punto, ajustando el modificador de resistencia de la habilidad y cualquier bonificación si es necesario.",
-                        "url": "/es/perks/heightened-ability/"
+                        "url": "/es/perks_flaws/perks/heightened-ability/"
                     },
                     {
                         "name": "Observante",
@@ -145,7 +145,7 @@
                         "ability": "VOL",
                         "type": "Active",
                         "description": "Esta ventaja proporciona al personaje poderes excepcionales de observación, lo que le otorga un bono de -1 a cualquier prueba de percepción de Conciencia.",
-                        "url": "/es/perks/observant/"
+                        "url": "/es/perks_flaws/perks/observant/"
                     },
                     {
                         "name": "Memoria fotográfica",
@@ -153,7 +153,7 @@
                         "ability": "INT",
                         "type": "Conscious",
                         "description": "Esta ventaja le da al personaje un recuerdo extraordinario. Cuando un jugador quiere determinar qué recuerda su personaje, o si quiere que su personaje recuerde un detalle específico (como el número de placa o los detalles de un documento que miró), se realiza una verificación de ventajas. Un Ordinario suele ser suficiente para proporcionar algunos de los detalles que desea el personaje. El director de juego establece la situación de acuerdo con el tipo de detalle y recuerdo que el personaje intenta recordar. Por ejemplo, un intento de recordar algo que el personaje sabe muy bien puede recibir una bonificación de -3 o puede que ni siquiera requiera ninguna prueba, mientras que recordar la imagen de una cara vislumbrada brevemente en la oscuridad puede recibir una penalización de +3.",
-                        "url": "/es/perks/photo-memory/"
+                        "url": "/es/perks_flaws/perks/photo-memory/"
                     },
                     {
                         "name": "Poderoso aliado",
@@ -161,7 +161,7 @@
                         "ability": "PER",
                         "type": "Conscious",
                         "description": "Cuando se selecciona esta ventaja, el Director de Juego y el jugador deben discutir la naturaleza y la identidad de este aliado. También puede haber algún tipo de costo involucrado por la asistencia continua de un aliado: el aliado podría ser el patrón del personaje, quien puede pedir ayuda al personaje tan a menudo como el personaje lo pide, o el aliado podría simplemente recolectar favores y llamarlos en algún momento futuro.\n\nCuando está en problemas, un personaje puede pedir favores o ayuda a su poderoso aliado. Una verificación de ventajas determina qué tipo de ayuda proporciona el aliado. Tenga en cuenta que el personaje necesita una manera de contactar a su aliado, y el aliado necesita una manera de responder.\n\nCompruebe los resultados: Fallo, no llega ayuda; Ayuda ordinaria, ordinaria; Bien, buena ayuda; Increíble, increíble ayuda. (Estos términos están definidos en la Guía del Director de Juego).",
-                        "url": "/es/perks/powerful-ally/"
+                        "url": "/es/perks_flaws/perks/powerful-ally/"
                     },
                     {
                         "name": "Conciencia psiónica",
@@ -169,7 +169,7 @@
                         "ability": "INT",
                         "type": "Active",
                         "description": "Un personaje con Conciencia psiónica tiene derecho a una prueba de dote de Inteligencia para determinar si se da cuenta de que se está utilizando un poder psiónico en sus proximidades. (A los personajes sin esta ventaja normalmente no se les permiten pruebas para determinar si pueden detectar actividad psiónica). El Director de Juego determinará cuándo se debe realizar dicha prueba y la realizará en secreto, dándole al jugador del personaje información solo cuando la prueba tenga éxito. esta ventaja sólo se puede seleccionar si el Director de Juego permite el uso de psiónicos (ver Capítulo 14).",
-                        "url": "/es/perks/psionic-awareness/"
+                        "url": "/es/perks_flaws/perks/psionic-awareness/"
                     },
                     {
                         "name": "Reflejos",
@@ -177,7 +177,7 @@
                         "ability": "DES",
                         "type": "Active",
                         "description": "Un personaje con la ventaja Reflejos recibe un aumento de +1 en su modificador de resistencia a Destreza. Entonces, un personaje con una puntuación de Destreza de 11 que tiene un modificador de resistencia de +1 paso aumenta el modificador a +2 pasos con esta ventaja.",
-                        "url": "/es/perks/reflexes/"
+                        "url": "/es/perks_flaws/perks/reflexes/"
                     },
                     {
                         "name": "Reputación",
@@ -185,7 +185,7 @@
                         "ability": "VOL",
                         "type": "Active",
                         "description": "Esta ventaja proporciona al personaje una reputación conocida en todas partes. A diferencia de la ventaja Celebridad, que indica una reacción positiva debido a la influencia de la Personalidad de un personaje, la ventaja Reputación ayuda al personaje al hacer que otros teman o se impresionen por sus supuestos logros. En términos de juego, esta ventaja proporciona una bonificación de dado de situación cada vez que el personaje intenta usar ciertas habilidades de encuentro. El jugador y el director de juego deben determinar cuál es la reputación del personaje y a qué habilidades de encuentro proporciona una bonificación.\n\nA medida que mejora el nivel de logro de un personaje, éste se vuelve más capaz de aprovechar su reputación: en el nivel 5, el dado de situación base para cualquier prueba de ventaja de reputación se convierte en -d4; en el nivel 10 pasa a ser -d6; y en el nivel 15 se convierte en -d8.",
-                        "url": "/es/perks/reputation/"
+                        "url": "/es/perks_flaws/perks/reputation/"
                     },
                     {
                         "name": "Enfoque en Habilidad de Especialidad (Habilidad)",
@@ -193,7 +193,7 @@
                         "ability": "—",
                         "type": "Special",
                         "description": "Esta ventaja altera cómo se obtienen las ventajas de rango para una habilidad de especialidad específica. Un personaje con esta ventaja siempre está una ventaja de rango por delante en su habilidad elegida. Por ejemplo, si una habilidad ofrece ventajas en los rangos 2, 5 y 7, y el personaje tiene rango 3, ya disfruta de las ventajas de los rangos 2 y 5. Si luego aumenta la habilidad al rango 5, en su lugar obtiene la ventaja del rango 7. Si no quedan más ventajas por obtener, el personaje recibe una bonificación permanente de -1 paso a todas las tiradas con esa habilidad. No todos las ventajas de rango pueden obtenerse por adelantado; aquellos que están restringidos suelen estar marcados con una convención de bala hueca ○ en lugar de la estándar ⊗ o un encabezado de rango específico. Esta ventaja cuesta 5 puntos, requiere 3 rangos en la habilidad de especialidad elegida, el rango de Experimentado (Seasoned), y se considera favorecida si la habilidad de especialidad elegida es favorecida por la profesión del personaje.",
-                        "url": "/es/perks/specialty-skill-focus-skill/"
+                        "url": "/es/perks_flaws/perks/specialty-skill-focus-skill/"
                     },
                     {
                         "name": "Duro como las uñas",
@@ -201,7 +201,7 @@
                         "ability": "FUE",
                         "type": "Active",
                         "description": "Esta ventaja proporciona al personaje un aumento de +1 paso en su modificador de resistencia a la Fuerza. Entonces, un personaje con una puntuación de Fuerza de 11 que tiene un modificador de resistencia de +1 paso (la penalización a las tiradas de su oponente) aumenta el modificador a +2 pasos con esta ventaja.",
-                        "url": "/es/perks/tough-as-nails/"
+                        "url": "/es/perks_flaws/perks/tough-as-nails/"
                     },
                     {
                         "name": "Vigor",
@@ -209,7 +209,7 @@
                         "ability": "CON",
                         "type": "Active",
                         "description": "Esta ventaja permite a un personaje aumentar la cantidad de daño que puede soportar.\n* Por 2 puntos de habilidad, un personaje puede aumentar su índice de aturdimiento en 1 punto.\n* Por 3 puntos de habilidad, un personaje puede aumentar su índice de heridas en 1 punto.\n* Por 4 puntos de habilidad, un personaje puede aumentar su índice Mortal y su índice de fatiga en 1 punto cada uno.\n\nCada uno de estos ventajas se puede comprar una vez. Entonces, si un personaje gasta 9 puntos de habilidad, puede aumentar todos sus índices de durabilidad (aturdimiento, herida, Mortal y fatiga) en 1 punto cada uno.",
-                        "url": "/es/perks/vigor/"
+                        "url": "/es/perks_flaws/perks/vigor/"
                     },
                     {
                         "name": "Fuerza de voluntad",
@@ -217,7 +217,7 @@
                         "ability": "VOL",
                         "type": "Active",
                         "description": "Esta ventaja proporciona al personaje un aumento de +1 paso en su modificador de resistencia a la voluntad. Entonces, un personaje con una puntuación de Voluntad de 11 que tiene un modificador de resistencia de +1 paso (la penalización a las tiradas de su oponente) aumenta el modificador a +2 pasos con esta ventaja.",
-                        "url": "/es/perks/willpower/"
+                        "url": "/es/perks_flaws/perks/willpower/"
                     },
                     {
                         "name": "Energía Psiónica Extra",
@@ -225,7 +225,7 @@
                         "ability": "VOL",
                         "type": "Active",
                         "description": "Esta ventaja proporciona al personaje 2 Puntos de Energía Psiónica (PP) adicionales. Esta ventaja solo puede comprarse una vez.",
-                        "url": "/es/perks/extra-psionic-energy/"
+                        "url": "/es/perks_flaws/perks/extra-psionic-energy/"
                     }
                 ]
             }
@@ -263,140 +263,140 @@
                         "bonus_points": "+5",
                         "ability": "-",
                         "description": "Un artefacto alienígena es un dispositivo o reliquia extraño del que el personaje no sabe nada. Podría ser un objeto de origen extraterrestre, un dispositivo experimental único en su tipo o incluso un proceso experimental utilizado en el personaje en algún momento del pasado. En algún momento de sus viajes, el personaje llegó a poseer el artefacto o las habilidades que este proporciona. Cualquier artefacto alienígena que sea un objeto es lo suficientemente pequeño como para transportarlo fácilmente o usarlo como accesorio del atuendo de un personaje. El personaje no conoce la función o el propósito de su objeto; tiene que descubrir exactamente qué hace el artefacto a medida que avanza la campaña.\n\nComo defecto, un artefacto alienígena proporciona principalmente desventajas a un personaje, pero cada artefacto también tiene su lado positivo. Algunos artefactos imponen una penalización constante; otros requieren que el personaje haga una prueba para activar el artefacto. Todos los artefactos, ventajas o defectos, tienen el mismo rasgo distintivo: son extremadamente raros, extremadamente valiosos y muy codiciados: alguien quiere el que posee su personaje y no se detendrá ante nada para conseguirlo.\n\nEn cuanto al lado positivo de un artefacto, puede variar desde una ventaja desconocido que se manifiesta cuando el personaje menos lo espera hasta una simple bonificación que está constantemente en juego incluso cuando el artefacto está penalizando al personaje de alguna manera. Tenga en cuenta que una ventaja nunca cancelará una penalización: los dos aspectos de un artefacto siempre no estarán relacionados. (Por lo tanto, no encontrarás un artefacto que proporcione a un personaje una penalización de +1 al uso de habilidades basadas en Destreza y una bonificación de -1 al uso de habilidades basadas en Destreza al mismo tiempo).\n\nLos artefactos alienígenas se enumeran y describen en la Guía del Director de Juego. Después de seleccionar este defecto, el Director de Juego diseñará un artefacto alienígena para tu personaje.",
-                        "url": "/es/flaws/alien-artifact/"
+                        "url": "/es/perks_flaws/flaws/alien-artifact/"
                     },
                     {
                         "name": "Mala suerte",
                         "bonus_points": "+6",
                         "ability": "VOL",
                         "description": "Un personaje con este defecto sufre un resultado de Fallo Crítico cada vez que sale un 19 o 20 en el dado de control.",
-                        "url": "/es/flaws/bad-luck/"
+                        "url": "/es/perks_flaws/flaws/bad-luck/"
                     },
                     {
                         "name": "Despistado",
                         "bonus_points": "+2/4/6",
                         "ability": "INT",
                         "description": "Un personaje con el defecto Clueless cree que es competente en una habilidad especial en particular, cuando en realidad no es tan bueno como cree. La habilidad especial la elige el Director de Juego en secreto: el personaje debe descubrir el hecho de que no tiene ni idea durante el transcurso de la campaña, y es posible que nunca se dé cuenta. La habilidad especializada elegida nunca está asociada con la profesión de un personaje; será una habilidad del grupo Abierto o de uno de los otros grupos de profesión.\n* Por 2 puntos de habilidad adicionales, el personaje recibe una penalización de +1 a la habilidad en cuestión.\n* Por 4 puntos de habilidad adicionales, el personaje recibe una penalización de +2 a la habilidad en cuestión.\n* Por 6 puntos de habilidad adicionales, el personaje recibe una penalización de +3 a la habilidad en cuestión.",
-                        "url": "/es/flaws/clueless/"
+                        "url": "/es/perks_flaws/flaws/clueless/"
                     },
                     {
                         "name": "Torpe",
                         "bonus_points": "+6",
                         "ability": "DES",
                         "description": "Un personaje con el defecto de Torpe tiene poca coordinación y mano inestable. Recibe una penalización de +1 a todas las pruebas de habilidad basadas en Destreza.",
-                        "url": "/es/flaws/clumsy/"
+                        "url": "/es/perks_flaws/flaws/clumsy/"
                     },
                     {
                         "name": "Código de honor",
                         "bonus_points": "+3",
                         "ability": "VOL",
                         "description": "El defecto del Código de Honor representa un estándar según el cual el personaje decide vivir. Un Código de Honor debe tener consecuencias reales para la vida del personaje y la campaña en general, y cumplir con el código no siempre debería ser fácil o incluso la decisión correcta. Un Código de Honor que requiere que un personaje ataque a cualquier alienígena malvado que encuentre no es una gran carga, pero defender a todos los alienígenas en una galaxia dominada por humanos sí lo es.\n\nEl jugador y el Director de Juego deben elaborar el Código de Honor del personaje cuando se selecciona este defecto. También deben discutir los tipos de eventos que podrían desencadenar el exagerado sentido del deber, el honor y el compromiso del personaje.\n\nEjemplos de personajes que tienen códigos de honor que podrían ser defectos incluyen clérigos, agentes de la ley, funcionarios gubernamentales, administradores de empresas y médicos. Los puntos de logro que recibe un personaje por participar en una aventura se pueden reducir si este defecto no se interpreta como parte de la composición básica del personaje.",
-                        "url": "/es/flaws/code-of-honor/"
+                        "url": "/es/perks_flaws/flaws/code-of-honor/"
                     },
                     {
                         "name": "Delicado",
                         "bonus_points": "+3",
                         "ability": "FUE",
                         "description": "Un personaje con el defecto Delicado sufre 1 punto de daño por aturdimiento cada vez que realiza un ataque desarmado exitoso contra un oponente. Si el personaje sufre suficiente daño por aturdimiento como para dejarlo con menos de la mitad de sus puntos de aturdimiento, no puede intentar un ataque sin armas; debe recuperar una cantidad de puntos de aturdimiento suficiente para regresar a la mitad del camino (al menos) antes de que pueda usar la habilidad nuevamente.",
-                        "url": "/es/flaws/delicate/"
+                        "url": "/es/perks_flaws/flaws/delicate/"
                     },
                     {
                         "name": "Muy pobre",
                         "bonus_points": "+5",
                         "ability": "PER",
                         "description": "El defecto Dirt Poor sugiere mucho sobre los antecedentes de un personaje y generalmente indica una educación empobrecida. Este defecto influye en los fondos iniciales de un personaje, como se detalla en el Capítulo 9: Bienes y servicios. Además, añade una penalización de +1 a cualquier uso de las habilidades basadas en la personalidad del personaje cuando intenta lidiar con situaciones que involucran personajes de una posición Social o financiera más alta.\n\nEl director de juego también determina un personaje (no otro personaje) a quien el personaje le debe dinero. A medida que avanza la campaña, el personaje debe realizar pagos a este personaje para mantenerse al día. Cómo funciona esto en una campaña particular queda en manos del Director de Juego.",
-                        "url": "/es/flaws/dirt-poor/"
+                        "url": "/es/perks_flaws/flaws/dirt-poor/"
                     },
                     {
                         "name": "Olvidadizo",
                         "bonus_points": "+5",
                         "ability": "INT",
                         "description": "Un personaje con el defecto Olvidadizo tiene problemas para recordar detalles: su recuerdo de un nombre, rostro o hecho tiende a desaparecer cuando el personaje más lo necesita. Un personaje olvidadizo recibe una penalización de +1 a todas las pruebas de habilidades basadas en Inteligencia.",
-                        "url": "/es/flaws/forgetful/"
+                        "url": "/es/perks_flaws/flaws/forgetful/"
                     },
                     {
                         "name": "Frágil",
                         "bonus_points": "+3",
                         "ability": "CON",
                         "description": "Un personaje con el defecto Frágil se ve obstaculizado por una penalización de +1 a todas las pruebas de habilidad de resistencia que realice como resultado del daño que ha sufrido.",
-                        "url": "/es/flaws/fragile/"
+                        "url": "/es/perks_flaws/flaws/fragile/"
                     },
                     {
                         "name": "Infamia",
                         "bonus_points": "+2/4/6",
                         "ability": "PER",
                         "description": "La infamia es el estado de ser conocido públicamente por un acto malvado o criminal. El jugador y el director de juego deben ponerse de acuerdo sobre por qué el personaje es famoso (podrían ser cargos falsos o el personaje puede tener un pasado genuinamente turbio) y qué desencadena el defecto. Podría ser una frase que el personaje siempre dice, o el arma que usa, o cuando está en presencia de una especie alienígena en particular o un miembro de una nación en particular. Una vez reconocido por su infamia, un personaje sufre penalizaciones por el uso de habilidades basadas en la personalidad e incluso puede terminar perseguido o en una batalla.\n* Por 2 puntos de habilidad adicionales, un personaje es infame por un delito menor o es conocido en una pequeña área del escenario de la campaña. Recibe una penalización de +1 a todas las pruebas de habilidades basadas en la personalidad.\n* Por 4 puntos de habilidad adicionales, un personaje es infame por un delito moderado o es conocido en un área de tamaño moderado del escenario de la campaña. Recibe una penalización de +2 a todas las pruebas de habilidades basadas en la personalidad.\n* Por 6 puntos de habilidad adicionales, un personaje es famoso por un crimen grave o es conocido en una gran área del escenario de la campaña. Recibe una penalización de +3 a todas las pruebas de habilidades basadas en la Personalidad cuando se activa este defecto.",
-                        "url": "/es/flaws/infamy/"
+                        "url": "/es/perks_flaws/flaws/infamy/"
                     },
                     {
                         "name": "Inconsciente de",
                         "bonus_points": "+4",
                         "ability": "VOL",
                         "description": "Un personaje con el defecto Inconsciente tiene problemas para darse cuenta de las cosas y sufre una penalización de +1 en todas las pruebas de habilidad de Percepción de Conciencia.",
-                        "url": "/es/flaws/oblivious/"
+                        "url": "/es/perks_flaws/flaws/oblivious/"
                     },
                     {
                         "name": "Obsesionado",
                         "bonus_points": "+2/4/6",
                         "ability": "INT",
                         "description": "Este defecto indica que un personaje está obsesionado con una persona, lugar o cosa en particular, lo que se conoce como el desencadenante del defecto. Un personaje obsesionado puede olvidar lo que está haciendo o centrar su atención en el objeto de su obsesión incluso en medio de una situación tensa. El jugador y el Director de Juego deben decidir el desencadenante cuando se selecciona este defecto. El desencadenante debería estar ligado de alguna manera a los antecedentes o la personalidad del personaje. Por ejemplo, un científico podría estar obsesionado con los insectos exóticos o un ingeniero con una tecnología nueva e interesante. Los personajes menos cerebrales pueden estar obsesionados con otro personaje, un vehículo rápido o un tipo de comida.\n* Por 2 puntos de habilidad adicionales, un personaje se distrae moderadamente con el evento desencadenante. Recibe una penalización de +1 a cualquier acción no relacionada con la obsesión.\n* Por 4 puntos, un personaje se distrae sustancialmente por el evento desencadenante. Recibe una penalización de +2 por cualquier acción no relacionada con la obsesión.\n* Por 6 puntos, el personaje está casi completamente distraído. Recibe una penalización de +3 por cualquier acción no relacionada con la obsesión.",
-                        "url": "/es/flaws/obsessed/"
+                        "url": "/es/perks_flaws/flaws/obsessed/"
                     },
                     {
                         "name": "Vieja herida",
                         "bonus_points": "+2/4/6",
                         "ability": "FUE",
                         "description": "En algún momento del pasado, el personaje sufrió una lesión. Ahora, Old Injury actúa de vez en cuando, infligiendo heridas al personaje. El jugador y el Director de Juego deben acordar un evento desencadenante, pero en general debe ser algo físico: un intento de correr o saltar, involucrarse en un ataque cuerpo a cuerpo y un intento de esquivar son todos desencadenantes aceptables. Se puede activar una antigua herida una vez por escena, aunque los efectos permanecen hasta que el personaje se cura. (Tenga en cuenta que si un personaje quiere eliminar este defecto, se debe incluir un procedimiento médico como parte del proceso de eliminación. Consulte el Capítulo 8: Logros para obtener más detalles).\n* Por 2 puntos de habilidad adicionales, un personaje sufre 1 punto de daño por herida cuando se activa este defecto.\n* Por 4 puntos de habilidad adicionales, un personaje sufre 2 puntos de daño por herida más 1 punto de daño por aturdimiento secundario cuando se activa este defecto.\n* Por 6 puntos de habilidad adicionales, un personaje sufre 3 puntos de daño por herida más 1 punto de daño por aturdimiento secundario cuando se activa este defecto.\n**Nota:** El uso de armadura no compensa ni reduce este daño.",
-                        "url": "/es/flaws/old-injury/"
+                        "url": "/es/perks_flaws/flaws/old-injury/"
                     },
                     {
                         "name": "Fobia",
                         "bonus_points": "+2/4/6",
                         "ability": "VOL",
                         "description": "Este defecto representa un miedo irracional que obstaculiza al personaje de alguna manera. El personaje selecciona un miedo específico que puede entrar en juego o no en una aventura determinada. Debería ser un miedo general (vehículos en movimiento), no específico (taxis verdes en movimiento con puntos violetas y banderas amarillas), para calificarlo como un defecto. Cuando el personaje se enfrenta a su fobia, sufre una penalización.\n* Por 2 puntos de habilidad adicionales, un personaje sufre una penalización de +1 en todas las acciones mientras este defecto esté vigente.\n* Por 4 puntos de habilidad adicionales, un personaje sufre una penalización de +2 en todas las acciones mientras este defecto esté vigente.\n* Por 6 puntos de habilidad adicionales, un personaje se congela o huye según corresponda mientras este defecto esté vigente.",
-                        "url": "/es/flaws/phobia/"
+                        "url": "/es/perks_flaws/flaws/phobia/"
                     },
                     {
                         "name": "Mala apariencia",
                         "bonus_points": "+3",
                         "ability": "PER",
                         "description": "Un personaje con el defecto de Mala Apariencia sufre una penalización de +1 a todas las pruebas de habilidad basadas en Personalidad cuando la apariencia podría tener un efecto negativo. La mala apariencia no es sólo una medida de belleza física; incluye modales, arreglo personal y apariencia general. Tenga en cuenta que es posible que un extraterrestre no vea la mala apariencia de un personaje humano, e incluso algunas otras culturas humanas pueden tener una idea diferente de lo que es la mala apariencia. El Director de Juego determina cuándo se aplica la penalización por falla y cuándo no, dependiendo de la situación.",
-                        "url": "/es/flaws/poor-looks/"
+                        "url": "/es/perks_flaws/flaws/poor-looks/"
                     },
                     {
                         "name": "Enemigo poderoso",
                         "bonus_points": "+2/4/6",
                         "ability": "PER",
                         "description": "Un personaje con este defecto comienza a jugar con un enemigo poderoso que quiere hacerle la vida terrible. Este enemigo debe tener un largo alcance, muchos subordinados y la capacidad de afectar al personaje dondequiera que esté. Qué tan cerca está la base de operaciones del enemigo y con qué frecuencia puede afectar al personaje están determinados por la cantidad de puntos de habilidad que proporciona la falla. Ejemplos de enemigos poderosos incluyen una agencia policial específica (especialmente si el personaje es un fugitivo), una corporación, un gobierno, una organización criminal o una conspiración alienígena. En todos los casos, el verdadero enemigo debe permanecer desconocido durante mucho tiempo, y el contacto directo entre el enemigo y el personaje no debe ocurrir mientras el personaje se encuentre en niveles bajos de logros.",
-                        "url": "/es/flaws/powerful-enemy/"
+                        "url": "/es/perks_flaws/flaws/powerful-enemy/"
                     },
                     {
                         "name": "Primitivo",
                         "bonus_points": "+2/4/6",
                         "ability": "INT",
                         "description": "Este defecto indica que un personaje proviene de una cultura y educación primitivas, lo que le causa problemas cuando se trata de tecnología moderna.\n* Por 2 puntos de habilidad adicionales, un personaje recibe una penalización de +1 cada vez que usa tecnología moderna.\n* Por 4 puntos de habilidad adicionales, un personaje recibe una penalización de +2 cada vez que usa tecnología moderna.\n* Por 6 puntos de habilidad adicionales, un personaje recibe una penalización de +3 cada vez que usa tecnología moderna, y se siente asombrado hasta quedar inactivo o huye. terror durante d4+1 unidades de tiempo frente a alguna maravilla tecnológica que no ha visto antes.",
-                        "url": "/es/flaws/primitive/"
+                        "url": "/es/perks_flaws/flaws/primitive/"
                     },
                     {
                         "name": "Lento",
                         "bonus_points": "+6",
                         "ability": "DES",
                         "description": "Un personaje con el defecto de Lento tiene un tiempo de reacción reducido, lo que se manifiesta como una penalización de +1 a sus pruebas de acción.",
-                        "url": "/es/flaws/slow/"
+                        "url": "/es/perks_flaws/flaws/slow/"
                     },
                     {
                         "name": "Sin carácter",
                         "bonus_points": "+2/4/6",
                         "ability": "VOL",
                         "description": "El defecto Spineless obstaculiza al personaje al debilitar su voluntad, haciéndolo temeroso, indeciso y más fácil de manipular. Esto se refleja en una reducción del modificador de resistencia a la Voluntad del personaje.\n* Por 2 puntos de habilidad adicionales, el modificador de resistencia a la Voluntad de un personaje se reduce en 1 paso.\n* Por 4 puntos, el modificador de resistencia a la Voluntad de un personaje se reduce en 2 pasos.\n* Por 6 puntos, el modificador de resistencia a la Voluntad de un personaje se reduce en 3 pasos.",
-                        "url": "/es/flaws/spineless/"
+                        "url": "/es/perks_flaws/flaws/spineless/"
                     },
                     {
                         "name": "Temperamento",
                         "bonus_points": "+2/4/6",
                         "ability": "VOL",
                         "description": "Un personaje con este defecto tiene poca mecha. El jugador y el Director de Juego deben acordar qué tipo de evento desencadena el defecto de Temperamento del personaje.\n* Por 2 puntos de habilidad adicionales, el personaje se vuelve brusco y mezquino, sufriendo una penalización de +1 en todas las acciones hasta que el evento desencadenante termina y se calma.\n* Por 4 puntos de habilidad adicionales, el personaje reacciona sin pensar, sufriendo una penalización de +2 en todas las acciones hasta que el evento desencadenante termina y se calma.\n* Por 6 puntos de habilidad adicionales, el personaje vuela hacia un rabia enloquecida, sufriendo una penalización de +3 hasta que el evento desencadenante finalice y se calme.",
-                        "url": "/es/flaws/temper/"
+                        "url": "/es/perks_flaws/flaws/temper/"
                     }
                 ]
             }

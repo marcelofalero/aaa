@@ -360,7 +360,7 @@ def process_perks_flaws(perks_list, flaws_list, mapping):
             loc = get_localized(item, lang)
             title = loc.get('name') or item.get('id', 'unknown')
             slug = slugify(item.get('id') or title)
-            url = f"/perks/{slug}/"
+            url = f"/perks_flaws/perks/{slug}/"
             if lang == 'es': url = f"/es{url}"
             
             desc = loc.get('description') or ""
@@ -375,7 +375,7 @@ def process_perks_flaws(perks_list, flaws_list, mapping):
                 "url": url
             })
             
-            out_dir = f'site/content/perks/{slug}'
+            out_dir = f'site/content/perks_flaws/perks/{slug}'
             os.makedirs(out_dir, exist_ok=True)
             suffix = '.es.md' if lang == 'es' else '.md'
             with open(os.path.join(out_dir, '_index' + suffix), 'w', encoding='utf-8') as f:
@@ -385,7 +385,7 @@ def process_perks_flaws(perks_list, flaws_list, mapping):
             loc = get_localized(item, lang)
             title = loc.get('name') or item.get('id', 'unknown')
             slug = slugify(item.get('id') or title)
-            url = f"/flaws/{slug}/"
+            url = f"/perks_flaws/flaws/{slug}/"
             if lang == 'es': url = f"/es{url}"
             
             desc = loc.get('description') or ""
@@ -399,7 +399,7 @@ def process_perks_flaws(perks_list, flaws_list, mapping):
                 "url": url
             })
             
-            out_dir = f'site/content/flaws/{slug}'
+            out_dir = f'site/content/perks_flaws/flaws/{slug}'
             os.makedirs(out_dir, exist_ok=True)
             suffix = '.es.md' if lang == 'es' else '.md'
             with open(os.path.join(out_dir, '_index' + suffix), 'w', encoding='utf-8') as f:
