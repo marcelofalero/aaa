@@ -250,7 +250,7 @@
             "name": "El Psíquico Certificado",
             "description": "Eres una entidad legal autónoma, con la rara autoridad de usar poderes psiónicos abiertamente. Actúas como árbitro en negociaciones de alto riesgo y posees el derecho legal de sondear mentes in situ si determinas que hay una causa razonable.",
             "favored_broad_skill": "",
-            "favored_specialty_skills": "[Telepatía-Lectura Mental](/skills/telepathy/#mind-reading)<br>[Ley-Procedimientos Judiciales](/skills/law/#court-procedures)<br>[Interacción-Entrevista](/skills/interaction/#interview)<br>[Resolución-Resolución Mental](/skills/resolve-con/#mental-resolve)",
+            "favored_specialty_skills": "[Telepatía-Lectura Mental](/psionics/telepathy/#mind-reading)<br>[Ley-Procedimientos Judiciales](/skills/law/#court-procedures)<br>[Interacción-Entrevista](/skills/interaction/#interview)<br>[Resolución-Resolución Mental](/skills/resolve-con/#mental-resolve)",
             "favored_perks": "[Reputación](/perks_flaws/#reputation)",
             "flaw": "[Código de Honor](/perks_flaws/#code-of-honor) (Neutralidad absoluta y adhesión a las estrictas pautas éticas de tu certificación autónoma).",
             "equipment": "Una insignia/orden de árbitro oficial, un dispositivo de grabación portátil, vestimenta profesional formal y sedantes/estimulantes suaves para la tensión psíquica.",

@@ -1,11 +1,17 @@
+{{/* 
+  DATA AGNOSTIC SHORTCODE
+  This component must remain data-agnostic. All field names, labels, 
+  and hierarchical structures must be driven by the input data file.
+  Avoid hardcoding specific system references (e.g., "skills", "psionics").
+*/}}
 {{ $file := .Get "file" }}
 {{ $data := index .Site.Data (replace $file ".json" "") }}
 {{ if not $data }}
-  {{ $parts := split $file "." }}
-  {{ $data = .Site.Data }}
-  {{ range $parts }}
-    {{ $data = index $data . }}
-  {{ end }}
+{{ $parts := split $file "." }}
+{{ $data = .Site.Data }}
+{{ range $parts }}
+{{ $data = index $data . }}
+{{ end }}
 {{ end }}
 
 {{ if $data }}
@@ -13,7 +19,8 @@
   <div class="table-controls mb3">
     <div class="filter-container">
       <span class="neon-amber mr2">›</span>
-      <input type="text" class="table-filter-input nested-table-search" placeholder="{{ if eq .Page.Lang "es" }}Buscar...{{ else }}Search...{{ end }}" aria-label="Search table">
+      <input type="text" class="table-filter-input nested-table-search" placeholder="{{ if eq .Page.Lang " es"
+        }}Buscar...{{ else }}Search...{{ end }}" aria-label="Search table">
     </div>
   </div>
 
@@ -26,217 +33,236 @@
       </tr>
     </thead>
     <tbody class="nested-table-body">
-      {{ range $data.data }}
-        {{ partial "nested-table-row.html" (dict "item" . "fields" $data.fields "level" 1 "Page" $.Page) }}
+      {{ range $data.items }}
+      {{ partial "nested-table-row.html" (dict "item" . "fields" $data.fields "level" 1 "Page" $.Page) }}
       {{ end }}
     </tbody>
   </table>
 </div>
 
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-  const container = document.getElementById('nested-table-{{ .Ordinal }}');
-  const searchInput = container.querySelector('.nested-table-search');
-  const rows = container.querySelectorAll('.nested-table-row');
+  document.addEventListener('DOMContentLoaded', function () {
+    const container = document.getElementById('nested-table-{{ .Ordinal }}');
+    const searchInput = container.querySelector('.nested-table-search');
+    const rows = container.querySelectorAll('.nested-table-row');
 
-  // Search Logic
-  searchInput.addEventListener('input', function() {
-    const query = this.value.toLowerCase().trim();
-    
-    rows.forEach(row => { row.style.display = 'none'; row.classList.remove('hidden-by-search'); });
+    // Search Logic
+    searchInput.addEventListener('input', function () {
+      const query = this.value.toLowerCase().trim();
 
-    rows.forEach(row => {
-      const text = row.textContent.toLowerCase();
-      if (query === '' || text.includes(query)) {
-        if (query !== '') {
-          row.style.display = '';
-          // Show ancestors
-          let level = parseInt(row.getAttribute('data-level'));
-          let current = row.previousElementSibling;
-          while (current && level > 1) {
-            let currentLevel = parseInt(current.getAttribute('data-level'));
-            if (currentLevel < level) {
-              current.style.display = '';
-              level = currentLevel;
+      rows.forEach(row => { row.style.display = 'none'; row.classList.remove('hidden-by-search'); });
+
+      rows.forEach(row => {
+        const text = row.textContent.toLowerCase();
+        if (query === '' || text.includes(query)) {
+          if (query !== '') {
+            row.style.display = '';
+            // Show ancestors
+            let level = parseInt(row.getAttribute('data-level'));
+            let current = row.previousElementSibling;
+            while (current && level > 1) {
+              let currentLevel = parseInt(current.getAttribute('data-level'));
+              if (currentLevel < level) {
+                current.style.display = '';
+                level = currentLevel;
+              }
+              current = current.previousElementSibling;
             }
-            current = current.previousElementSibling;
+          } else {
+            row.style.display = '';
+            // If searching is cleared, respect collapsed state
+            checkCollapsedState();
           }
         } else {
-          row.style.display = '';
-          // If searching is cleared, respect collapsed state
-          checkCollapsedState();
+          row.classList.add('hidden-by-search');
         }
-      } else {
-        row.classList.add('hidden-by-search');
-      }
+      });
     });
-  });
 
-  // Branch Toggle Logic
-  container.addEventListener('click', function(e) {
-    const row = e.target.closest('.nested-table-row.has-children');
-    if (!row) return;
-    
-    // Don't toggle if clicking a link
-    if (e.target.tagName === 'A' || e.target.closest('a')) return;
+    // Branch Toggle Logic
+    container.addEventListener('click', function (e) {
+      const row = e.target.closest('.nested-table-row.has-children');
+      if (!row) return;
 
-    row.classList.toggle('collapsed');
-    checkCollapsedState();
-  });
+      // Don't toggle if clicking a link
+      if (e.target.tagName === 'A' || e.target.closest('a')) return;
 
-  function checkCollapsedState() {
-    if (searchInput.value.trim() !== '') return; // Don't hide items while searching
-
-    let collapsedLevels = [];
-
-    rows.forEach(row => {
-      const level = parseInt(row.getAttribute('data-level'));
-      
-      // Remove any previously set collapse-hiding
-      row.style.display = '';
-
-      // Check if any ancestor level is collapsed
-      const isHiddenByAncestor = collapsedLevels.some(l => level > l);
-      if (isHiddenByAncestor) {
-        row.style.display = 'none';
-      }
-
-      // Update collapsed levels stack
-      // 1. Remove levels deeper than current
-      collapsedLevels = collapsedLevels.filter(l => l < level);
-      
-      // 2. If this row is collapsed, add its level to stack
-      if (row.classList.contains('collapsed')) {
-        collapsedLevels.push(level);
-      }
+      row.classList.toggle('collapsed');
+      checkCollapsedState();
     });
-  }
-});
+
+    function checkCollapsedState() {
+      if (searchInput.value.trim() !== '') return; // Don't hide items while searching
+
+      let collapsedLevels = [];
+
+      rows.forEach(row => {
+        const level = parseInt(row.getAttribute('data-level'));
+
+        // Remove any previously set collapse-hiding
+        row.style.display = '';
+
+        // Check if any ancestor level is collapsed
+        const isHiddenByAncestor = collapsedLevels.some(l => level > l);
+        if (isHiddenByAncestor) {
+          row.style.display = 'none';
+        }
+
+        // Update collapsed levels stack
+        // 1. Remove levels deeper than current
+        collapsedLevels = collapsedLevels.filter(l => l < level);
+
+        // 2. If this row is collapsed, add its level to stack
+        if (row.classList.contains('collapsed')) {
+          collapsedLevels.push(level);
+        }
+      });
+    }
+  });
 </script>
 
 <style>
-.nested-table {
-  border-collapse: collapse;
-  width: 100%;
-  font-family: 'Michroma', sans-serif;
-  font-size: 0.9rem;
-  color: var(--table-text-light);
-}
+  .nested-table {
+    border-collapse: collapse;
+    width: 100%;
+    font-family: 'Michroma', sans-serif;
+    font-size: 0.9rem;
+    color: var(--table-text-light);
+  }
 
-.nested-table th {
-  color: var(--accent-cyan);
-  text-align: center;
-  padding: 0.75rem 1rem;
-  border-bottom: 2px solid var(--accent-cyan);
-  text-transform: uppercase;
-  font-weight: 400;
-  letter-spacing: 0.1em;
-}
+  .nested-table th {
+    color: var(--accent-cyan);
+    text-align: center;
+    padding: 0.75rem 1rem;
+    border-bottom: 2px solid var(--accent-cyan);
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+  }
 
-.nested-table th:first-child {
-  text-align: left;
-}
+  .nested-table th:first-child {
+    text-align: left;
+  }
 
-.nested-table td {
-  padding: 0.5rem 1rem;
-  border-bottom: 1px solid rgba(75, 181, 193, 0.3);
-  text-align: center;
-}
+  .nested-table td {
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid rgba(75, 181, 193, 0.3);
+    text-align: center;
+  }
 
-.nested-table td:first-child {
-  text-align: left;
-}
+  .nested-table td:first-child {
+    text-align: left;
+  }
 
-/* Branch Toggle Visuals */
-.has-children {
-  cursor: pointer;
-}
+  /* Branch Toggle Visuals */
+  .has-children {
+    cursor: pointer;
+  }
 
-.has-children td:first-child::after {
-  content: '▼';
-  font-size: 0.6rem;
-  margin-left: 8px;
-  opacity: 0.5;
-  display: inline-block;
-  transition: transform 0.2s ease;
-  vertical-align: middle;
-}
+  .has-children td:first-child::after {
+    content: '▼';
+    font-size: 0.6rem;
+    margin-left: 8px;
+    opacity: 0.5;
+    display: inline-block;
+    transition: transform 0.2s ease;
+    vertical-align: middle;
+  }
 
-.has-children.collapsed td:first-child::after {
-  transform: rotate(-90deg);
-}
+  .has-children.collapsed td:first-child::after {
+    transform: rotate(-90deg);
+  }
 
-/* Tier 1 - Categories */
-.nested-table-row.level-1 td {
-  background-color: transparent !important;
-  color: var(--neon-green, #A6C12E) !important;
-  font-weight: 400;
-  text-align: center;
-  border-bottom: 2px solid var(--neon-green, #A6C12E);
-  padding: 1.5rem 1rem 0.5rem 1rem !important;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  font-size: 1.1rem;
-}
+  /* Tier 1 - Categories */
+  .nested-table-row.level-1 td {
+    background-color: transparent !important;
+    color: var(--neon-green, #A6C12E) !important;
+    font-weight: 400;
+    text-align: center;
+    border-bottom: 2px solid var(--neon-green, #A6C12E);
+    padding: 1.5rem 1rem 0.5rem 1rem !important;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+  }
 
-.nested-table-row.level-1 td:first-child {
-  text-align: left;
-}
+  .nested-table-row.level-1 td:first-child {
+    text-align: left;
+  }
 
-/* Tier 2 - Primary Items (Broad Skills) */
-.nested-table-row.level-2 td {
-  background-color: rgba(56, 158, 189, 0.1) !important;
-  color: var(--accent-cyan) !important;
-  font-weight: 600;
-  border-bottom: 2px solid rgba(56, 158, 189, 0.2);
-  font-size: 0.95rem;
-  padding-top: 0.75rem !important;
-  padding-bottom: 0.75rem !important;
-}
+  /* Tier 2 - Primary Items (Broad Skills) */
+  .nested-table-row.level-2 td {
+    background-color: rgba(56, 158, 189, 0.1) !important;
+    color: var(--accent-cyan) !important;
+    font-weight: 600;
+    border-bottom: 2px solid rgba(56, 158, 189, 0.2);
+    font-size: 0.95rem;
+    padding-top: 0.75rem !important;
+    padding-bottom: 0.75rem !important;
+  }
 
-/* Tier 3 - Sub Items (Specialty Skills) */
-.nested-table-row.level-3 td {
-  background-color: transparent !important;
-  font-size: 0.85rem;
-  color: var(--table-text-light) !important;
-  opacity: 0.75;
-  border-bottom: 1px solid rgba(128, 153, 172, 0.1);
-}
+  /* Tier 3 - Sub Items (Specialty Skills) */
+  .nested-table-row.level-3 td {
+    background-color: transparent !important;
+    font-size: 0.85rem;
+    color: var(--table-text-light) !important;
+    opacity: 0.75;
+    border-bottom: 1px solid rgba(128, 153, 172, 0.1);
+  }
 
-.nested-table-row.level-3:hover td {
-  opacity: 1;
-}
+  .nested-table-row.level-3:hover td {
+    opacity: 1;
+  }
 
-/* Indentation Logic */
-.nested-table td.indent-1 { padding-left: 12px !important; }
-.nested-table td.indent-2 { padding-left: 20px !important; }
-.nested-table td.indent-3 { padding-left: 45px !important; }
+  /* Trained Only Highlight */
+  .nested-table-row.trained-only td {
+    color: #00CEFF !important; /* Neon Blue */
+    text-shadow: 0 0 5px rgba(0, 206, 255, 0.5);
+  }
 
-.nested-table td.indent-2::before {
-  content: '› ';
-  color: var(--accent-cyan);
-  font-weight: bold;
-  margin-right: 8px;
-}
+  .nested-table-row.trained-only td:first-child::before {
+    color: #00CEFF !important;
+    opacity: 1;
+  }
 
-.nested-table td.indent-3::before {
-  content: '└ ';
-  opacity: 0.4;
-  margin-right: 8px;
-}
+  /* Indentation Logic */
+  .nested-table td.indent-1 {
+    padding-left: 12px !important;
+  }
 
-/* Hover effect for data rows (Tier 2 and 3) */
-.nested-table-row:not(.level-1):hover td {
-  background-color: rgba(75, 181, 193, 0.15) !important;
-}
+  .nested-table td.indent-2 {
+    padding-left: 20px !important;
+  }
 
-/* Custom Table Wrapper Override for consistency */
-#nested-table-{{ .Ordinal }}.table-wrapper {
+  .nested-table td.indent-3 {
+    padding-left: 45px !important;
+  }
+
+  .nested-table td.indent-2::before {
+    content: '› ';
+    color: var(--accent-cyan);
+    font-weight: bold;
+    margin-right: 8px;
+  }
+
+  .nested-table td.indent-3::before {
+    content: '└ ';
+    opacity: 0.4;
+    margin-right: 8px;
+  }
+
+  /* Hover effect for data rows (Tier 2 and 3) */
+  .nested-table-row:not(.level-1):hover td {
+    background-color: rgba(75, 181, 193, 0.15) !important;
+  }
+
+  /* Custom Table Wrapper Override for consistency */
+  #nested-table-{{ .Ordinal }} .table-wrapper {
     background: radial-gradient(circle, var(--center-glow) 0%, var(--bg-dark) 100%);
     border: 2px solid var(--accent-cyan);
     border-radius: 15px;
     box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.5);
-}
+  }
 </style>
 {{ else }}
 <p class="red">Error: Data file '{{ $file }}' not found.</p>

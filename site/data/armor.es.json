@@ -1,497 +1,602 @@
 {
-    "search_config": {
-        "display_name": "ARMADURAS",
-        "base_url": "/equipment/armor/",
-        "section": "equipment"
-    },
-    "config": {
-        "columns": [
-            {
-                "name": "Armadura",
-                "key": "name"
-            },
-            {
-                "name": "Masa",
-                "key": "mass"
-            },
-            {
-                "name": "Pena.",
-                "key": "ap"
-            },
-            {
-                "name": "IL/IP/En",
-                "key": "lhe"
-            },
-            {
-                "name": "Tipo",
-                "key": "type"
-            },
-            {
-                "name": "Ocult.",
-                "key": "hide"
-            },
-            {
-                "name": "Disp.",
-                "key": "avail"
-            },
-            {
-                "name": "Coste ($)",
-                "key": "cost"
-            },
-            {
-                "name": "Descripción",
-                "key": "description",
-                "hidden": true
-            }
-        ]
-    },
-    "categories": {
-        "all": {
-            "groups": {
-                "PL 0 - Stone Age": [
+    "config": [
+        {
+            "name": "Default",
+            "columns": {
+                "en": [
                     {
-                        "name": "Armadura de piel",
-                        "mass": "10",
-                        "ap": "+1",
-                        "lhe": "d6-3/d4-3/d6-4",
-                        "type": "O",
-                        "hide": "-",
-                        "avail": "Any",
-                        "cost": "100",
-                        "description": "Esta armadura utiliza pieles de animales, que se cosen o sujetan para ajustarse aproximadamente al cuerpo del individuo que la lleva. La protección que proporciona es mínima y su uso durante esta era es poco común. Esta categoría también incluye tejidos de vegetación espesa confeccionados como prendas protectoras."
+                        "name": "Armor",
+                        "key": "name"
+                    },
+                    {
+                        "name": "Mass",
+                        "key": "mass"
+                    },
+                    {
+                        "name": "Pen.",
+                        "key": "ap"
+                    },
+                    {
+                        "name": "LI/HI/En",
+                        "key": "lhe"
+                    },
+                    {
+                        "name": "Type",
+                        "key": "type"
+                    },
+                    {
+                        "name": "Hide",
+                        "key": "hide"
+                    },
+                    {
+                        "name": "Avail.",
+                        "key": "avail"
+                    },
+                    {
+                        "name": "Cost ($)",
+                        "key": "cost"
+                    },
+                    {
+                        "name": "Description",
+                        "key": "description",
+                        "hidden": true
                     }
                 ],
-                "PL 1 - Bronze/Iron Age": [
+                "es": [
                     {
-                        "name": "Armadura de cuero",
-                        "mass": "7",
-                        "ap": "+1",
-                        "lhe": "d6-2/d6-4/d6-4",
-                        "type": "O",
-                        "hide": "+2",
-                        "avail": "Any",
-                        "cost": "350",
-                        "description": "Esta protección es fácil de fabricar y mantener, y hace un trabajo decente protegiendo al portador de las armas de la época."
+                        "name": "Armadura",
+                        "key": "name"
                     },
                     {
-                        "name": "Yelmo",
-                        "mass": "4",
-                        "ap": "+1",
-                        "lhe": "+1/0/0",
-                        "type": "O",
-                        "hide": "-",
-                        "avail": "Com",
-                        "cost": "200",
-                        "description": "El centro de los órganos sensoriales recibe protección adicional. Un yelmo no puede usarse CON otra armadura si la armadura contiene un casco o capucha integral. El Gamemaster puede determinar que la protección del yelmo no es significativa en algunas situaciones, especialmente si es la única armadura que se lleva."
+                        "name": "Masa",
+                        "key": "mass"
                     },
                     {
-                        "name": "Escudo pequeño",
-                        "mass": "4",
-                        "ap": "0",
-                        "lhe": "+1/0/0",
-                        "type": "O",
-                        "hide": "+1",
-                        "avail": "Any",
-                        "cost": "75",
-                        "description": "Un escudo pequeño suele ser redondo, de unos 50 cm de diámetro, y se lleva en el antebrazo de la mano secundaria."
-                    }
-                ],
-                "PL 2 - Middle Ages": [
-                    {
-                        "name": "Cota de malla",
-                        "mass": "15",
-                        "ap": "+1",
-                        "lhe": "d6-1/d6-4/d6-4",
-                        "type": "O",
-                        "hide": "+1",
-                        "avail": "Com",
-                        "cost": "750",
-                        "description": "Varios tipos de armaduras laminadas, de escamas, bergandinas y de tablillas entran en la categoría general de cota de malla. Formada por eslabones o cosiendo anillos de metal a un respaldo de cuero, la cota de malla proporciona una excelente protección contra ataques de tajo (bajo impacto). El traje de cota de malla incluye una cofia para proteger la cabeza."
+                        "name": "Pena.",
+                        "key": "ap"
                     },
                     {
-                        "name": "Armadura de placas",
-                        "mass": "25",
-                        "ap": "+3",
-                        "lhe": "d6+1/d6-3/d6-3",
-                        "type": "O",
-                        "hide": "-",
-                        "avail": "CON",
-                        "cost": "2000",
-                        "description": "La armadura de placas completa está hecha de placas de metal moldeadas y ajustadas, remachadas y entrelazadas de tal manera que cubren todo el cuerpo. Se incluyen guanteletes, botas y un casco CON visera, así como una capa de acolchado grueso debajo de la armadura."
+                        "name": "IL/IP/En",
+                        "key": "lhe"
                     },
                     {
-                        "name": "Placas parciales",
-                        "mass": "20",
-                        "ap": "+2",
-                        "lhe": "d6/d8-5/d6-4",
-                        "type": "O",
-                        "hide": "+1",
-                        "avail": "Com",
-                        "cost": "1000",
-                        "description": "Esta armadura combina un peto de metal CON armadura de malla o bergandina. Unas pocas placas de metal protegen las partes vitales del cuerpo, pero no se usan tantas como en la armadura de placas completa."
+                        "name": "Tipo",
+                        "key": "type"
                     },
                     {
-                        "name": "Escudo mediano",
-                        "mass": "7",
-                        "ap": "0",
-                        "lhe": "+2/+1/0",
-                        "type": "O",
-                        "hide": "-",
-                        "avail": "Any",
-                        "cost": "300",
-                        "description": "Un escudo mediano es más pesado que uno pequeño y suele tener un metro o más de diámetro. Puede ser redondo o cuadrado, aunque la mayoría parece triángulos redondeados."
-                    }
-                ],
-                "PL 3 - Age of Reason": [
-                    {
-                        "name": "Abrigo de cuero",
-                        "mass": "5",
-                        "ap": "0",
-                        "lhe": "d6-3/d4-3/d4-2",
-                        "type": "O",
-                        "hide": "+3",
-                        "avail": "Any",
-                        "cost": "500",
-                        "description": "El abrigo de cuero no es la mejor armadura, pero es mejor que nada en la batalla. Los abrigos de cuero tienen la ventaja de ser naturalmente ocultables; en muchas sociedades, el abrigo resistente es un artículo de estilo."
-                    }
-                ],
-                "PL 4 - Industrial Age": [
-                    {
-                        "name": "Chaleco antiflac",
-                        "mass": "15",
-                        "ap": "+2",
-                        "lhe": "d6-2/d4-1/d6-3",
-                        "type": "O",
-                        "hide": "-",
-                        "avail": "CON",
-                        "cost": "800",
-                        "description": "Aunque no puede absorber completamente los golpes de las armas del periodo, el chaleco antiflac es la primera armadura que inhibe seriamente el paso de daños de alto impacto a su portador. El volumen y la masa de la armadura son sus desventajas."
-                    }
-                ],
-                "PL 5 - Information Age": [
-                    {
-                        "name": "Equipo de asalto",
-                        "mass": "10",
-                        "ap": "+3",
-                        "lhe": "d6-1/d6-1/d6-1",
-                        "type": "O",
-                        "hide": "-",
-                        "avail": "CON",
-                        "cost": "1500",
-                        "description": "Este es un traje de armadura moderna, compuesto de acolchado pesado, kevlar y placas de plástico. En eras posteriores, el kevlar es reemplazado por fibra de carbonato."
+                        "name": "Ocult.",
+                        "key": "hide"
                     },
                     {
-                        "name": "Chaleco de batalla",
-                        "mass": "5",
-                        "ap": "+1",
-                        "lhe": "d6-3/d6-2/d4-2",
-                        "type": "O",
-                        "hide": "+2",
-                        "avail": "CON",
-                        "cost": "600",
-                        "description": "Esta categoría incluye todas las variedades de chalecos antibalas que entran en uso durante la segunda mitad del siglo XX. Un chaleco de batalla normal puede usarse debajo de ropa muy voluminosa, pero generalmente está destinado a ponerse sobre cualquier otra cosa que una persona pueda llevar. El chaleco utiliza placas de aleación cerámica fuertes emparedadas en un tejido de kevlar o fibra de carbonato para proteger el torso del portador."
+                        "name": "Disp.",
+                        "key": "avail"
                     },
                     {
-                        "name": "Casco antidisturbios",
-                        "mass": "2",
-                        "ap": "+1",
-                        "lhe": "+1/+1/0",
-                        "type": "O",
-                        "hide": "-",
-                        "avail": "CON",
-                        "cost": "300",
-                        "description": "El casco antidisturbios tiene una visera de plástico transparente, que ofrece protección al tiempo que preserva la visión."
+                        "name": "Coste ($)",
+                        "key": "cost"
                     },
                     {
-                        "name": "Escudo antidisturbios",
-                        "mass": "4",
-                        "ap": "+2",
-                        "lhe": "+1/+1/+1",
-                        "type": "O",
-                        "hide": "-",
-                        "avail": "CON",
-                        "cost": "500",
-                        "description": "Este es un escudo de cuerpo completo de plástico transparente de alta tecnología, generalmente utilizado junto CON equipo antidisturbios."
-                    }
-                ],
-                "PL 6 - Fusion Age": [
-                    {
-                        "name": "Equipo de asalto pesado",
-                        "mass": "12",
-                        "ap": "+2",
-                        "lhe": "d6-1/d6/d6-1",
-                        "type": "O",
-                        "hide": "-",
-                        "avail": "Mil",
-                        "cost": "2500",
-                        "description": "Esta armadura se asemeja al equipo de asalto de PL 5 en su apariencia general, pero el tejido de fibra de carbonato (CF) a prueba de balas y las placas de polímero reemplazan gran parte del acolchado. Incluye una capucha protectora y acoples para un respirador opcional de cadera. Las fuerzas de seguridad y los grupos paramilitares suelen usar este tipo de armadura."
-                    },
-                    {
-                        "name": "Armadura de ataque",
-                        "mass": "15",
-                        "ap": "+3",
-                        "lhe": "d4+1/d6+1/d6-1",
-                        "type": "O",
-                        "hide": "-",
-                        "avail": "CON",
-                        "cost": "3000",
-                        "description": "Las primeras formas de verdadera armadura de ataque son mejoras del equipo de asalto típico. Un peto y un casco de polímero ligero protegen las áreas vitales del usuario, mientras que tejidos de CF flexibles cubren sus extremidades."
-                    },
-                    {
-                        "name": "Armadura de ataque motorizada",
-                        "mass": "25",
-                        "ap": "+4",
-                        "lhe": "d6+1/d6+2/d6",
-                        "type": "G",
-                        "avail": "Mil",
-                        "cost": "8000",
-                        "description": "La armadura de ataque motorizada incluye una computadora pequeña pero potente para gestionar un conjunto simple de sensores y comunicaciones. Los dispositivos adicionales integrados incluyen:\nSistema de puntería: Los binoculares reducen las penalizaciones por largo alcance en 1 paso.\nSistema de mejora de imagen: Las gafas de visión nocturna e infrarrojos reducen las penalizaciones debidas a la mala iluminación o condiciones visuales en 1 paso.\nSuite de comunicación: El láser de señalización y el equipo de comunicaciones permiten la comunicación a largas distancias y la supervisión de dispositivos sensores remotos.\nTrauma pack tipo I: Dos paquetes de trauma están unidos en el bolsillo del muslo y en la parte baja de la espalda."
-                    },
-                    {
-                        "name": "Chaqueta de batalla",
-                        "mass": "8",
-                        "ap": "+1",
-                        "lhe": "d6-1/d4+1/d4-1",
-                        "type": "O",
-                        "hide": "+1",
-                        "avail": "CON",
-                        "cost": "1500",
-                        "description": "Una versión más completa del chaleco de batalla, esta prenda incluye paneles para los muslos y los brazos, así como una capucha de cara abierta. Ofrece significativamente más cobertura que el chaleco, pero es correspondientemente más pesada y torpe. La mayoría de las chaquetas de batalla cuentan CON sellos faciales y acoples para respiradores o elementos calefactores."
-                    },
-                    {
-                        "name": "Abrigo largo CF",
-                        "mass": "4",
-                        "ap": "0",
-                        "lhe": "d4/d4/d6-2",
-                        "type": "O",
-                        "hide": "+3",
-                        "avail": "Com",
-                        "cost": "1000",
-                        "description": "En situaciones en las que no es prudente mostrar una armadura pesada, un abrigo a prueba de balas puede ser un salvavidas. Diseñado para parecerse a un guardapolvo o chaqueta bien confeccionada, el abrigo de CF utiliza tejidos extensos de fibras de carbonato resistentes para derrotar armas de tajo y proyectiles. El abrigo largo casi toca el suelo y puede pasar por un guardapolvo o sobretodo."
-                    },
-                    {
-                        "name": "Abrigo corto CF",
-                        "mass": "3",
-                        "ap": "0",
-                        "lhe": "d4-1/d4-1/d6-3",
-                        "type": "O",
-                        "hide": "+3",
-                        "avail": "Com",
-                        "cost": "750",
-                        "description": "El abrigo corto de CF está diseñado para situaciones donde se necesita protección discreta. Utiliza tejidos extensos de fibras de carbonato resistentes para derrotar armas de tajo y proyectiles. El abrigo corto llega hasta la cintura y se puede usar como parte de un traje o como una simple chaqueta."
-                    }
-                ],
-                "PL 7 - Gravity Age": [
-                    {
-                        "name": "Tanque de cuerpo",
-                        "mass": "60",
-                        "ap": "+6",
-                        "lhe": "2d4+1/2d4+1/2d4",
-                        "type": "G",
-                        "hide": "-",
-                        "avail": "Res",
-                        "cost": "25000",
-                        "description": "La invención de servos robustos, pequeños y potentes hace posible la armadura motorizada \"tanque de cuerpo\". La mayor parte de la armadura consiste en placas de aleación de neutronita, CON solo unas pocas articulaciones torpes de fibra de carbonato flexible. Los sistemas incluidos en un tanque de cuerpo son:\nSistema de puntería: Los binoculares reducen las penalizaciones por largo alcance en 1 paso.\nSistema de mejora de imagen: Las gafas de visión nocturna e infrarrojos reducen las penalizaciones debidas a la mala iluminación o condiciones visuales en 1 paso.\nSuite de comunicación: El láser de señalización y el equipo de comunicaciones permiten la comunicación a largas distancias y la supervisión de dispositivos sensores remotos.\nTrauma pack tipo II: Uno de los dos paquetes de trauma se activa cuando el ocupante del traje sufre daños; el otro es de repuesto. Las heridas mortales se detienen automáticamente; el portador no necesita realizar un chequeo de Aguante-Resistencia.\nThreat receiver: Un sensor electromagnético/infrarrojo detecta los sistemas activos de control de fuego y telemetría dirigidos al portador, quien gana un bono de -2 en los chequeos de Alerta para detectar tales amenazas.\nSmart display: El sistema de geomapeo proporciona una vista del área circundante, otorgando al usuario un bono de -1 en los chequeos de Tactics.\nDesignador láser: El dispositivo montado en el casco permite al soldado transmitir instantáneamente solicitudes de apoyo de fuego o ataques aéreos a través de su enlace de datos.\nLanzador Bantam: Un lanzador bantam incorporado contiene un cargador de cuatro proyectiles."
-                    },
-                    {
-                        "name": "Tanque de cuerpo, recon",
-                        "mass": "45",
-                        "ap": "+5",
-                        "lhe": "2d4/2d4/d6+2",
-                        "type": "G",
-                        "hide": "-",
-                        "avail": "Mil",
-                        "cost": "30000",
-                        "description": "El tanque de cuerpo de reconocimiento es más ligero y costoso que la versión regular, pero algo más común. El tanque de cuerpo de reconocimiento cuenta CON los mismos sistemas a bordo que el tanque de cuerpo estándar."
-                    },
-                    {
-                        "name": "Tanque de cuerpo, gravedad-0",
-                        "mass": "80",
-                        "ap": "+7",
-                        "lhe": "3d4/3d4/2d4+1",
-                        "type": "G",
-                        "hide": "-",
-                        "avail": "Res",
-                        "cost": "50000",
-                        "description": "La armadura más pesada disponible en PL 7 está equipada CON todas las características del tanque de cuerpo estándar en un traje ligeramente más grande. También incluye:\nRadar aéreo/espacial: Un sistema de radar pequeño pero potente permite al soldado vigilar los movimientos de aeronaves o naves espaciales enemigas.\nEn lugar de un lanzador bantam, el comprador puede incluir uno de los siguientes:\nLanzagranadas: Dos cargadores de seis granadas cada uno.\nArma pesada de fuego directo: A elegir entre ametralladora de carga pesada, cañón de arco, cañón de riel o pistola de plasma.\nArma de combate cercano: A elegir entre espada sierra, maza de gravedad, pistola de masa o escopeta de autoflechette."
-                    },
-                    {
-                        "name": "Ropa de infiltración CF",
-                        "mass": "3",
-                        "ap": "0",
-                        "lhe": "d6/d6/d6-1",
-                        "type": "O",
-                        "hide": "+4",
-                        "avail": "CON",
-                        "cost": "2000",
-                        "description": "El softsuit de CF representa el nivel más alto de avance en fibra de carbonato. Se puede tejer en estilos de ropa ligera, proporcionando una protección que no parece protección en absoluto."
-                    },
-                    {
-                        "name": "Arnés de deflexión",
-                        "mass": "2",
-                        "ap": "0",
-                        "lhe": "see description",
-                        "type": "O",
-                        "hide": "+3",
-                        "avail": "CON",
-                        "cost": "2500",
-                        "description": "El arnés de deflexión crea un potente campo de gravitones no direccional alrededor del portador. Los objetos físicos son desviados y los ataques de energía pueden curvarse hasta fallar. No se puede combinar CON otra armadura. El arnés mejora el modificador de resistencia aplicable (Fuerza o Destreza) en +2 pasos, pero el portador sufre una penalización de +2 en ataques fuera del campo. Una batería dura 10 asaltos."
-                    },
-                    {
-                        "name": "Chaleco balístico BodyGuard",
-                        "mass": "3",
-                        "ap": "0",
-                        "lhe": "d6-1/d6/d6-2",
-                        "type": "O",
-                        "hide": "+3",
-                        "avail": "Com",
-                        "cost": "750",
-                        "description": "Es una de las protecciones personales más populares. Significativamente más ligera y duradera que sus predecesoras, se ajusta perfectamente bajo la ropa de calle sin señales externas."
-                    },
-                    {
-                        "name": "Chaqueta balística Landsknecht 34",
-                        "mass": "6",
-                        "ap": "+1",
-                        "lhe": "d6-1/d4+1/d4-1",
-                        "type": "O",
-                        "hide": "+1",
-                        "avail": "CON",
-                        "cost": "1650",
-                        "description": "Es la armadura más pesada que se puede llevar en un puerto espacial agitado sin atraer atención no deseada. Incluye capucha CON sellado facial y máscara de vacío."
-                    },
-                    {
-                        "name": "Abrigo largo Haramaki",
-                        "mass": "3",
-                        "ap": "0",
-                        "lhe": "d4/d4/d6-2",
-                        "type": "O",
-                        "hide": "+3",
-                        "avail": "Com",
-                        "cost": "800",
-                        "description": "Diseñada para un uso cómodo durante todo el día, proporciona un aumento modesto en protección al cubrir una mayor parte del cuerpo."
-                    },
-                    {
-                        "name": "Armadura de asalto Battlehawk Zero-G",
-                        "mass": "8",
-                        "ap": "+2",
-                        "lhe": "d6-1/d6/d6-1",
-                        "type": "G",
-                        "hide": "-",
-                        "avail": "CON",
-                        "cost": "3250",
-                        "description": "Diseñada para gravedad baja, se ajusta ceñida e incluye máscara de vacío CON 8 horas de reserva y propulsores de bota."
-                    },
-                    {
-                        "name": "Armadura de explorador Scout 230 AET",
-                        "mass": "12",
-                        "ap": "+2",
-                        "lhe": "d6/d8/d6-1",
-                        "type": "G",
-                        "hide": "-",
-                        "avail": "Mil",
-                        "cost": "3250",
-                        "description": "Versión blindada de un traje ambiental suave (e-suit), diseñada para uso prolongado en entornos peligrosos."
-                    },
-                    {
-                        "name": "Armadura de cerametal ACN 4",
-                        "mass": "10",
-                        "ap": "+2",
-                        "lhe": "d6+1/d8+1/d6",
-                        "type": "G",
-                        "hide": "-",
-                        "avail": "Mil",
-                        "cost": "2000",
-                        "description": "El ACN-4 ha sido adoptado como la armadura estándar para los Marines de la Concordia..."
-                    },
-                    {
-                        "name": "Servoarmadura Tiger Mod 6",
-                        "mass": "25",
-                        "ap": "+2",
-                        "lhe": "d6+1/d6+2/d6",
-                        "type": "G",
-                        "avail": "Mil",
-                        "cost": "9000",
-                        "description": "Incluye sistemas de puntería, mejora de imagen, comunicaciones, láser de señalización y dos trauma packs."
-                    },
-                    {
-                        "name": "Armadura de batalla ABM-5 Paladin",
-                        "mass": "60",
-                        "ap": "+4",
-                        "lhe": "2d4+1/2d4+1/2d4",
-                        "type": "G",
-                        "avail": "Res",
-                        "cost": "25000",
-                        "description": "Traje estándar de los Marines de la Concordia. Sus baterías permiten 12 horas de acción intensa o 72 de actividad intermitente."
-                    },
-                    {
-                        "name": "Armadura de reconocimiento Dragoon ABS-11",
-                        "mass": "50",
-                        "ap": "+3",
-                        "lhe": "2d4+2/2d4+2/2d4+1",
-                        "type": "G",
-                        "avail": "Res",
-                        "cost": "35000",
-                        "description": "También conocido como tanque de cuerpo de reconocimiento o exploración, el Dragoon es un traje motorizado más ligero y móvil. Tiene todas las funciones integradas de los tanques de cuerpo estándar, CON una adición clave—un impulso de inducción por gravedad, que proporciona capacidad de vuelo a una velocidad máxima de 180 km/h."
-                    }
-                ],
-                "PL 8 - Energy Age": [
-                    {
-                        "name": "Arnés ablativo",
-                        "mass": "2",
-                        "ap": "0",
-                        "lhe": "see description",
-                        "type": "O",
-                        "hide": "+3",
-                        "avail": "Mil",
-                        "cost": "5000",
-                        "description": "El arnés ablativo utiliza un campo de partículas cuánticas que responden a la fuerza o la energía transformándose espontáneamente en materia virtual semitangible. El arnés proporciona 50 puntos de energía protectora cuando está completamente cargado. Cada punto de daño Mortal reduce el campo en 3 puntos; cada punto de daño de herida lo reduce en 2 puntos; y cada punto de daño de aturdimiento lo reduce en 1 punto. La recarga requiere 1 hora por cada 10 puntos de energía de campo. Puede usarse CON otra protección, excepto tanques de cuerpo, armaduras de ataque motorizadas, arneses de deflexión o cualquier otra armadura de PL 8."
-                    },
-                    {
-                        "name": "Tanque de cuerpo terrestre",
-                        "mass": "40",
-                        "ap": "+5",
-                        "lhe": "2d6+1/2d6+1/2d6",
-                        "type": "G",
-                        "hide": "-",
-                        "avail": "Res",
-                        "cost": "70000",
-                        "description": "El tanque de cuerpo terrestre representa el mayor logro en armaduras motorizadas pesadas. Tiene todas las características de un tanque de cuerpo de gravedad cero CON mayores valores de protección, pero mantiene un aspecto ligero y aerodinámico. Añade un motor basado en gravedad CON capacidad de vuelo, lo que permite al usuario elevarse sobre el suelo hasta a 100 kilómetros por hora durante 8 horas."
-                    },
-                    {
-                        "name": "Softsuit desplazador",
-                        "mass": "3",
-                        "ap": "0",
-                        "lhe": "see description",
-                        "type": "O",
-                        "hide": "+4",
-                        "avail": "Res",
-                        "cost": "7500",
-                        "description": "Este es un softsuit de CF CON circuitería gravitónica que hace que la imagen del usuario se vea borrosa y se desplace. Esto proporciona protección contra armas que requieren un objetivo directo, pero no contra armas de área de efecto. Proporciona un aumento de +3 pasos a los modificadores de resistencia de Fuerza y Destreza del portador. Después de 10 asaltos, la batería debe ser reemplazada (las baterías adicionales cuestan $100). No se puede usar CON otra armadura."
-                    },
-                    {
-                        "name": "Red de energía",
-                        "mass": "2",
-                        "ap": "0",
-                        "lhe": "d6-1/d6-1/d6+2",
-                        "type": "O",
-                        "hide": "+3",
-                        "avail": "Mil",
-                        "cost": "4000",
-                        "description": "La red de energía es un softsuit de CF CON una red de dispersión de energía entrelazada. Aunque es en gran medida ineficaz contra ataques físicos, proporciona una excelente protección contra armas de energía al dispersar la energía y dirigirla de forma inofensiva. No requiere una fuente de alimentación, actuando como un pararrayos para conectar a tierra y dispersar la energía. No se puede usar CON otra armadura."
-                    },
-                    {
-                        "name": "Softsuit de sigilo",
-                        "mass": "2",
-                        "ap": "0",
-                        "lhe": "see description",
-                        "type": "O",
-                        "hide": "+4",
-                        "avail": "Res",
-                        "cost": "10000",
-                        "description": "El softsuit de sigilo vuelve al portador casi invisible. Los observadores sufren una penalización de +3 para detectar al usuario. Si es detectado, el portador todavía recibe un aumento de +1 en su modificador de resistencia contra ataques dirigidos a él. La batería dura 2 horas (las baterías adicionales cuestan $100). El traje debe estar cerca del cuerpo y expuesto para funcionar, por lo que no se puede usar CON otra armadura."
+                        "name": "Descripción",
+                        "key": "description",
+                        "hidden": true
                     }
                 ]
-            }
+            },
+            "id": "default"
         }
-    }
+    ],
+    "items": [
+        {
+            "name": "NP 0 - Edad de Piedra",
+            "items": [
+                {
+                    "name": "Armadura de piel",
+                    "mass": "10",
+                    "ap": "+1",
+                    "lhe": "d6-3/d4-3/d6-4",
+                    "type": "O",
+                    "hide": "-",
+                    "avail": "Cualquiera",
+                    "cost": "100",
+                    "id": "hide-armor",
+                    "description": "Esta armadura utiliza pieles de animales, que se cosen o sujetan para ajustarse aproximadamente al cuerpo del individuo que la lleva. La protección que proporciona es mínima y su uso durante esta era es poco común. Esta categoría también incluye tejidos de vegetación espesa confeccionados como prendas protectoras."
+                }
+            ],
+            "id": "pl-0-stone-age"
+        },
+        {
+            "name": "NP 1 - Edad de Bronce/Hierro",
+            "items": [
+                {
+                    "name": "Armadura de cuero",
+                    "mass": "7",
+                    "ap": "+1",
+                    "lhe": "d6-2/d6-4/d6-4",
+                    "type": "O",
+                    "hide": "+2",
+                    "avail": "Cualquiera",
+                    "cost": "350",
+                    "id": "leather-armor",
+                    "description": "Esta protección es fácil de fabricar y mantener, y hace un trabajo decente protegiendo al portador de las armas de la época."
+                },
+                {
+                    "name": "Yelmo",
+                    "mass": "4",
+                    "ap": "+1",
+                    "lhe": "+1/0/0",
+                    "type": "O",
+                    "hide": "-",
+                    "avail": "Común",
+                    "cost": "200",
+                    "id": "helm",
+                    "description": "El centro de los órganos sensoriales recibe protección adicional. Un yelmo no puede usarse con otra armadura si la armadura contiene un casco o capucha integral. El Gamemaster puede determinar que la protección del yelmo no es significativa en algunas situaciones, especialmente si es la única armadura que se lleva."
+                },
+                {
+                    "name": "Escudo pequeño",
+                    "mass": "4",
+                    "ap": "0",
+                    "lhe": "+1/0/0",
+                    "type": "O",
+                    "hide": "+1",
+                    "avail": "Cualquiera",
+                    "cost": "75",
+                    "id": "shield-small",
+                    "description": "Un escudo pequeño suele ser redondo, de unos 50 cm de diámetro, y se lleva en el antebrazo de la mano secundaria."
+                }
+            ],
+            "id": "pl-1-bronze-iron-age"
+        },
+        {
+            "name": "NP 2 - Edad Media",
+            "items": [
+                {
+                    "name": "Cota de malla",
+                    "mass": "15",
+                    "ap": "+1",
+                    "lhe": "d6-1/d6-4/d6-4",
+                    "type": "O",
+                    "hide": "+1",
+                    "avail": "Común",
+                    "cost": "750",
+                    "id": "chain-mail",
+                    "description": "Varios tipos de armaduras laminadas, de escamas, bergandinas y de tablillas entran en la categoría general de cota de malla. Formada por eslabones o cosiendo anillos de metal a un respaldo de cuero, la cota de malla proporciona una excelente protección contra ataques de tajo (bajo impacto). El traje de cota de malla incluye una cofia para proteger la cabeza."
+                },
+                {
+                    "name": "Armadura de placas",
+                    "mass": "25",
+                    "ap": "+3",
+                    "lhe": "d6+1/d6-3/d6-3",
+                    "type": "O",
+                    "hide": "-",
+                    "avail": "Controlada",
+                    "cost": "2000",
+                    "id": "plate-full",
+                    "description": "La armadura de placas completa está hecha de placas de metal moldeadas y ajustadas, remachadas y entrelazadas de tal manera que cubren todo el cuerpo. Se incluyen guanteletes, botas y un casco con visera, así como una capa de acolchado grueso debajo de la armadura."
+                },
+                {
+                    "name": "Placas parciales",
+                    "mass": "20",
+                    "ap": "+2",
+                    "lhe": "d6/d8-5/d6-4",
+                    "type": "O",
+                    "hide": "+1",
+                    "avail": "Común",
+                    "cost": "1000",
+                    "id": "plate-partial",
+                    "description": "Esta armadura combina un peto de metal con armadura de malla o bergandina. Unas pocas placas de metal protegen las partes vitales del cuerpo, pero no se usan tantas como en la armadura de placas completa."
+                },
+                {
+                    "name": "Escudo mediano",
+                    "mass": "7",
+                    "ap": "0",
+                    "lhe": "+2/+1/0",
+                    "type": "O",
+                    "hide": "-",
+                    "avail": "Cualquiera",
+                    "cost": "300",
+                    "id": "shield-medium",
+                    "description": "Un escudo mediano es más pesado que uno pequeño y suele tener un metro o más de diámetro. Puede ser redondo o cuadrado, aunque la mayoría parece triángulos redondeados."
+                }
+            ],
+            "id": "pl-2-middle-ages"
+        },
+        {
+            "items": [
+                {
+                    "name": "Abrigo de cuero",
+                    "mass": "5",
+                    "ap": "0",
+                    "lhe": "d6-3/d4-3/d4-2",
+                    "type": "O",
+                    "hide": "+3",
+                    "avail": "Cualquiera",
+                    "cost": "500",
+                    "id": "leather-coat",
+                    "description": "El abrigo de cuero no es la mejor armadura, pero es mejor que nada en la batalla. Los abrigos de cuero tienen la ventaja de ser naturalmente ocultables; en muchas sociedades, el abrigo resistente es un artículo de estilo."
+                }
+            ],
+            "id": "pl-3-age-of-reason"
+        },
+        {
+            "items": [
+                {
+                    "name": "Chaleco antiflac",
+                    "mass": "15",
+                    "ap": "+2",
+                    "lhe": "d6-2/d4-1/d6-3",
+                    "type": "O",
+                    "hide": "-",
+                    "avail": "Controlada",
+                    "cost": "800",
+                    "id": "flak-jacket",
+                    "description": "Aunque no puede absorber completamente los golpes de las armas del periodo, el chaleco antiflac es la primera armadura que inhibe seriamente el paso de daños de alto impacto a su portador. El volumen y la masa de la armadura son sus desventajas."
+                }
+            ],
+            "id": "pl-4-industrial-age"
+        },
+        {
+            "items": [
+                {
+                    "name": "Equipo de asalto",
+                    "mass": "10",
+                    "ap": "+3",
+                    "lhe": "d6-1/d6-1/d6-1",
+                    "type": "O",
+                    "hide": "-",
+                    "avail": "Controlada",
+                    "cost": "1500",
+                    "id": "assault-gear",
+                    "description": "Este es un traje de armadura moderna, compuesto de acolchado pesado, kevlar y placas de plástico. En eras posteriores, el kevlar es reemplazado por fibra de carbonato."
+                },
+                {
+                    "name": "Chaleco de batalla",
+                    "mass": "5",
+                    "ap": "+1",
+                    "lhe": "d6-3/d6-2/d4-2",
+                    "type": "O",
+                    "hide": "+2",
+                    "avail": "Controlada",
+                    "cost": "600",
+                    "id": "battle-vest",
+                    "description": "Esta categoría incluye todas las variedades de chalecos antibalas que entran en uso durante la segunda mitad del siglo XX. Un chaleco de batalla normal puede usarse debajo de ropa muy voluminosa, pero generalmente está destinado a ponerse sobre cualquier otra cosa que una persona pueda llevar. El chaleco utiliza placas de aleación cerámica fuertes emparedadas en un tejido de kevlar o fibra de carbonato para proteger el torso del portador."
+                },
+                {
+                    "name": "Casco antidisturbios",
+                    "mass": "2",
+                    "ap": "+1",
+                    "lhe": "+1/+1/0",
+                    "type": "O",
+                    "hide": "-",
+                    "avail": "Controlada",
+                    "cost": "300",
+                    "id": "riot-helmet",
+                    "description": "El casco antidisturbios tiene una visera de plástico transparente, que ofrece protección al tiempo que preserva la visión."
+                },
+                {
+                    "name": "Escudo antidisturbios",
+                    "mass": "4",
+                    "ap": "+2",
+                    "lhe": "+1/+1/+1",
+                    "type": "O",
+                    "hide": "-",
+                    "avail": "Controlada",
+                    "cost": "500",
+                    "id": "riot-shield",
+                    "description": "Este es un escudo de cuerpo completo de plástico transparente de alta tecnología, generalmente utilizado junto con equipo antidisturbios."
+                }
+            ],
+            "id": "pl-5-information-age"
+        },
+        {
+            "items": [
+                {
+                    "name": "Equipo de asalto pesado",
+                    "mass": "12",
+                    "ap": "+2",
+                    "lhe": "d6-1/d6/d6-1",
+                    "type": "O",
+                    "hide": "-",
+                    "avail": "Militar",
+                    "cost": "2500",
+                    "id": "assault-gear-hvy",
+                    "description": "Esta armadura se asemeja al equipo de asalto de PL 5 en su apariencia general, pero el tejido de fibra de carbonato (CF) a prueba de balas y las placas de polímero reemplazan gran parte del acolchado. Incluye una capucha protectora y acoples para un respirador opcional de cadera. Las fuerzas de seguridad y los grupos paramilitares suelen usar este tipo de armadura."
+                },
+                {
+                    "name": "Armadura de ataque",
+                    "mass": "15",
+                    "ap": "+3",
+                    "lhe": "d4+1/d6+1/d6-1",
+                    "type": "O",
+                    "hide": "-",
+                    "avail": "Controlada",
+                    "cost": "3000",
+                    "id": "attack-armor",
+                    "description": "Las primeras formas de verdadera armadura de ataque son mejoras del equipo de asalto típico. Un peto y un casco de polímero ligero protegen las áreas vitales del usuario, mientras que tejidos de CF flexibles cubren sus extremidades."
+                },
+                {
+                    "name": "Armadura de ataque motorizada",
+                    "mass": "25",
+                    "ap": "+4",
+                    "lhe": "d6+1/d6+2/d6",
+                    "type": "G",
+                    "avail": "Militar",
+                    "cost": "8000",
+                    "id": "attack-armor-pow",
+                    "description": "La armadura de ataque motorizada incluye una computadora pequeña pero potente para gestionar un conjunto simple de sensores y comunicaciones. Los dispositivos adicionales integrados incluyen:\nSistema de puntería: Los binoculares reducen las penalizaciones por largo alcance en 1 paso.\nSistema de mejora de imagen: Las gafas de visión nocturna e infrarrojos reducen las penalizaciones debidas a la mala iluminación o condiciones visuales en 1 paso.\nSuite de comunicación: El láser de señalización y el equipo de comunicaciones permiten la comunicación a largas distancias y la supervisión de dispositivos sensores remotos.\nTrauma pack tipo I: Dos paquetes de trauma están unidos en el bolsillo del muslo y en la parte baja de la espalda."
+                },
+                {
+                    "name": "Chaqueta de batalla",
+                    "mass": "8",
+                    "ap": "+1",
+                    "lhe": "d6-1/d4+1/d4-1",
+                    "type": "O",
+                    "hide": "+1",
+                    "avail": "Controlada",
+                    "cost": "1500",
+                    "id": "battle-jacket",
+                    "description": "Una versión más completa del chaleco de batalla, esta prenda incluye paneles para los muslos y los brazos, así como una capucha de cara abierta. Ofrece significativamente más cobertura que el chaleco, pero es correspondientemente más pesada y torpe. La mayoría de las chaquetas de batalla cuentan con sellos faciales y acoples para respiradores o elementos calefactores."
+                },
+                {
+                    "name": "Abrigo largo CF",
+                    "mass": "4",
+                    "ap": "0",
+                    "lhe": "d4/d4/d6-2",
+                    "type": "O",
+                    "hide": "+3",
+                    "avail": "Común",
+                    "cost": "1000",
+                    "id": "cf-long-coat",
+                    "description": "En situaciones en las que no es prudente mostrar una armadura pesada, un abrigo a prueba de balas puede ser un salvavidas. Diseñado para parecerse a un guardapolvo o chaqueta bien confeccionada, el abrigo de CF utiliza tejidos extensos de fibras de carbonato resistentes para derrotar armas de tajo y proyectiles. El abrigo largo casi toca el suelo y puede pasar por un guardapolvo o sobretodo."
+                },
+                {
+                    "name": "Abrigo corto CF",
+                    "mass": "3",
+                    "ap": "0",
+                    "lhe": "d4-1/d4-1/d6-3",
+                    "type": "O",
+                    "hide": "+3",
+                    "avail": "Común",
+                    "cost": "750",
+                    "id": "cf-short-coat",
+                    "description": "El abrigo corto de CF está diseñado para situaciones donde se necesita protección discreta. Utiliza tejidos extensos de fibras de carbonato resistentes para derrotar armas de tajo y proyectiles. El abrigo corto llega hasta la cintura y se puede usar como parte de un traje o como una simple chaqueta."
+                }
+            ],
+            "id": "pl-6-fusion-age"
+        },
+        {
+            "items": [
+                {
+                    "name": "Tanque de cuerpo",
+                    "mass": "60",
+                    "ap": "+6",
+                    "lhe": "2d4+1/2d4+1/2d4",
+                    "type": "G",
+                    "hide": "-",
+                    "avail": "Restringida",
+                    "cost": "25000",
+                    "id": "body-tank",
+                    "description": "La invención de servos robustos, pequeños y potentes hace posible la armadura motorizada \"tanque de cuerpo\". La mayor parte de la armadura consiste en placas de aleación de neutronita, con solo unas pocas articulaciones torpes de fibra de carbonato flexible. Los sistemas incluidos en un tanque de cuerpo son:\nSistema de puntería: Los binoculares reducen las penalizaciones por largo alcance en 1 paso.\nSistema de mejora de imagen: Las gafas de visión nocturna e infrarrojos reducen las penalizaciones debidas a la mala iluminación o condiciones visuales en 1 paso.\nSuite de comunicación: El láser de señalización y el equipo de comunicaciones permiten la comunicación a largas distancias y la supervisión de dispositivos sensores remotos.\nTrauma pack tipo II: Uno de los dos paquetes de trauma se activa cuando el ocupante del traje sufre daños; el otro es de repuesto. Las heridas mortales se detienen automáticamente; el portador no necesita realizar un chequeo de Aguante-Resistencia.\nThreat receiver: Un sensor electromagnético/infrarrojo detecta los sistemas activos de control de fuego y telemetría dirigidos al portador, quien gana un bono de -2 en los chequeos de Alerta para detectar tales amenazas.\nSmart display: El sistema de geomapeo proporciona una vista del área circundante, otorgando al usuario un bono de -1 en los chequeos de Tactics.\nDesignador láser: El dispositivo montado en el casco permite al soldado transmitir instantáneamente solicitudes de apoyo de fuego o ataques aéreos a través de su enlace de datos.\nLanzador Bantam: Un lanzador bantam incorporado contiene un cargador de cuatro proyectiles."
+                },
+                {
+                    "name": "Tanque de cuerpo, recon",
+                    "mass": "45",
+                    "ap": "+5",
+                    "lhe": "2d4/2d4/d6+2",
+                    "type": "G",
+                    "hide": "-",
+                    "avail": "Militar",
+                    "cost": "30000",
+                    "id": "body-tank-recon",
+                    "description": "El tanque de cuerpo de reconocimiento es más ligero y costoso que la versión regular, pero algo más común. El tanque de cuerpo de reconocimiento cuenta con los mismos sistemas a bordo que el tanque de cuerpo estándar."
+                },
+                {
+                    "name": "Tanque de cuerpo, gravedad-0",
+                    "mass": "80",
+                    "ap": "+7",
+                    "lhe": "3d4/3d4/2d4+1",
+                    "type": "G",
+                    "hide": "-",
+                    "avail": "Restringida",
+                    "cost": "50000",
+                    "id": "body-tank-zero-g",
+                    "description": "La armadura más pesada disponible en PL 7 está equipada con todas las características del tanque de cuerpo estándar en un traje ligeramente más grande. También incluye:\nRadar aéreo/espacial: Un sistema de radar pequeño pero potente permite al soldado vigilar los movimientos de aeronaves o naves espaciales enemigas.\nEn lugar de un lanzador bantam, el comprador puede incluir uno de los siguientes:\nLanzagranadas: Dos cargadores de seis granadas cada uno.\nArma pesada de fuego directo: A elegir entre ametralladora de carga pesada, cañón de arco, cañón de riel o pistola de plasma.\nArma de combate cercano: A elegir entre espada sierra, maza de gravedad, pistola de masa o escopeta de autoflechette."
+                },
+                {
+                    "name": "Ropa de infiltración CF",
+                    "mass": "3",
+                    "ap": "0",
+                    "lhe": "d6/d6/d6-1",
+                    "type": "O",
+                    "hide": "+4",
+                    "avail": "Controlada",
+                    "cost": "2000",
+                    "id": "cf-softsuit",
+                    "description": "El softsuit de CF representa el nivel más alto de avance en fibra de carbonato. Se puede tejer en estilos de ropa ligera, proporcionando una protección que no parece protección en absoluto."
+                },
+                {
+                    "name": "Arnés de deflexión",
+                    "mass": "2",
+                    "ap": "0",
+                    "lhe": "see description",
+                    "type": "O",
+                    "hide": "+3",
+                    "avail": "Controlada",
+                    "cost": "2500",
+                    "id": "deflection-harness",
+                    "description": "El arnés de deflexión crea un potente campo de gravitones no direccional alrededor del portador. Los objetos físicos son desviados y los ataques de energía pueden curvarse hasta fallar. No se puede combinar con otra armadura. El arnés mejora el modificador de resistencia aplicable (Fuerza o Destreza) en +2 pasos, pero el portador sufre una penalización de +2 en ataques fuera del campo. Una batería dura 10 asaltos."
+                },
+                {
+                    "name": "Chaleco balístico BodyGuard",
+                    "mass": "3",
+                    "ap": "0",
+                    "lhe": "d6-1/d6/d6-2",
+                    "type": "O",
+                    "hide": "+3",
+                    "avail": "Común",
+                    "cost": "750",
+                    "id": "bodyguard-ballistic-vest",
+                    "description": "Es una de las protecciones personales más populares. Significativamente más ligera y duradera que sus predecesoras, se ajusta perfectamente bajo la ropa de calle sin señales externas."
+                },
+                {
+                    "name": "Chaqueta balística Landsknecht 34",
+                    "mass": "6",
+                    "ap": "+1",
+                    "lhe": "d6-1/d4+1/d4-1",
+                    "type": "O",
+                    "hide": "+1",
+                    "avail": "Controlada",
+                    "cost": "1650",
+                    "id": "landsknecht-34-ballistic-jacket",
+                    "description": "Es la armadura más pesada que se puede llevar en un puerto espacial agitado sin atraer atención no deseada. Incluye capucha con sellado facial y máscara de vacío."
+                },
+                {
+                    "name": "Abrigo largo Haramaki",
+                    "mass": "3",
+                    "ap": "0",
+                    "lhe": "d4/d4/d6-2",
+                    "type": "O",
+                    "hide": "+3",
+                    "avail": "Común",
+                    "cost": "800",
+                    "id": "haramaki-long-coat",
+                    "description": "Diseñada para un uso cómodo durante todo el día, proporciona un aumento modesto en protección al cubrir una mayor parte del cuerpo."
+                },
+                {
+                    "name": "Armadura de asalto Battlehawk Zero-G",
+                    "mass": "8",
+                    "ap": "+2",
+                    "lhe": "d6-1/d6/d6-1",
+                    "type": "G",
+                    "hide": "-",
+                    "avail": "Controlada",
+                    "cost": "3250",
+                    "id": "battlehawk-zero-g-assault-gear",
+                    "description": "Diseñada para gravedad baja, se ajusta ceñida e incluye máscara de vacío con 8 horas de reserva y propulsores de bota."
+                },
+                {
+                    "name": "Armadura de explorador Scout 230 AET",
+                    "mass": "12",
+                    "ap": "+2",
+                    "lhe": "d6/d8/d6-1",
+                    "type": "G",
+                    "hide": "-",
+                    "avail": "Militar",
+                    "cost": "3250",
+                    "id": "scout-230-aet-assault-gear",
+                    "description": "Versión blindada de un traje ambiental suave (e-suit), diseñada para uso prolongado en entornos peligrosos."
+                },
+                {
+                    "name": "Armadura de cerametal ACN 4",
+                    "mass": "10",
+                    "ap": "+2",
+                    "lhe": "d6+1/d8+1/d6",
+                    "type": "G",
+                    "hide": "-",
+                    "avail": "Militar",
+                    "cost": "2000",
+                    "id": "acn-4-cerametal-armor",
+                    "description": "El ACN-4 ha sido adoptado como la armadura estándar para los Marines de la Concordia..."
+                },
+                {
+                    "name": "Servoarmadura Tiger Mod 6",
+                    "mass": "25",
+                    "ap": "+2",
+                    "lhe": "d6+1/d6+2/d6",
+                    "type": "G",
+                    "avail": "Militar",
+                    "cost": "9000",
+                    "id": "tiger-mod-6-powered-armor",
+                    "description": "Incluye sistemas de puntería, mejora de imagen, comunicaciones, láser de señalización y dos trauma packs."
+                },
+                {
+                    "name": "Armadura de batalla ABM-5 Paladin",
+                    "mass": "60",
+                    "ap": "+4",
+                    "lhe": "2d4+1/2d4+1/2d4",
+                    "type": "G",
+                    "avail": "Restringida",
+                    "cost": "25000",
+                    "id": "abm-5-paladin-battle-armor",
+                    "description": "Traje estándar de los Marines de la Concordia. Sus baterías permiten 12 horas de acción intensa o 72 de actividad intermitente."
+                },
+                {
+                    "name": "Armadura de reconocimiento Dragoon ABS-11",
+                    "mass": "50",
+                    "ap": "+3",
+                    "lhe": "2d4+2/2d4+2/2d4+1",
+                    "type": "G",
+                    "avail": "Restringida",
+                    "cost": "35000",
+                    "id": "abs-11-dragoon-recon-armor",
+                    "description": "También conocido como tanque de cuerpo de reconocimiento o exploración, el Dragoon es un traje motorizado más ligero y móvil. Tiene todas las funciones integradas de los tanques de cuerpo estándar, con una adición clave—un impulso de inducción por gravedad, que proporciona capacidad de vuelo a una velocidad máxima de 180 km/h."
+                }
+            ],
+            "id": "pl-7-gravity-age"
+        },
+        {
+            "items": [
+                {
+                    "name": "Arnés ablativo",
+                    "mass": "2",
+                    "ap": "0",
+                    "lhe": "see description",
+                    "type": "O",
+                    "hide": "+3",
+                    "avail": "Militar",
+                    "cost": "5000",
+                    "id": "ablative-harness",
+                    "description": "El arnés ablativo utiliza un campo de partículas cuánticas que responden a la fuerza o la energía transformándose espontáneamente en materia virtual semitangible. El arnés proporciona 50 puntos de energía protectora cuando está completamente cargado. Cada punto de daño Mortal reduce el campo en 3 puntos; cada punto de daño de herida lo reduce en 2 puntos; y cada punto de daño de aturdimiento lo reduce en 1 punto. La recarga requiere 1 hora por cada 10 puntos de energía de campo. Puede usarse con otra protección, excepto tanques de cuerpo, armaduras de ataque motorizadas, arneses de deflexión o cualquier otra armadura de PL 8."
+                },
+                {
+                    "name": "Tanque de cuerpo terrestre",
+                    "mass": "40",
+                    "ap": "+5",
+                    "lhe": "2d6+1/2d6+1/2d6",
+                    "type": "G",
+                    "hide": "-",
+                    "avail": "Restringida",
+                    "cost": "70000",
+                    "id": "body-tank-over",
+                    "description": "El tanque de cuerpo terrestre representa el mayor logro en armaduras motorizadas pesadas. Tiene todas las características de un tanque de cuerpo de gravedad cero con mayores valores de protección, pero mantiene un aspecto ligero y aerodinámico. Añade un motor basado en gravedad con capacidad de vuelo, lo que permite al usuario elevarse sobre el suelo hasta a 100 kilómetros por hora durante 8 horas."
+                },
+                {
+                    "name": "Softsuit desplazador",
+                    "mass": "3",
+                    "ap": "0",
+                    "lhe": "see description",
+                    "type": "O",
+                    "hide": "+4",
+                    "avail": "Restringida",
+                    "cost": "7500",
+                    "id": "displacer-softsuit",
+                    "description": "Este es un softsuit de CF con circuitería gravitónica que hace que la imagen del usuario se vea borrosa y se desplace. Esto proporciona protección contra armas que requieren un objetivo directo, pero no contra armas de área de efecto. Proporciona un aumento de +3 pasos a los modificadores de resistencia de Fuerza y Destreza del portador. Después de 10 asaltos, la batería debe ser reemplazada (las baterías adicionales cuestan $100). No se puede usar con otra armadura."
+                },
+                {
+                    "name": "Red de energía",
+                    "mass": "2",
+                    "ap": "0",
+                    "lhe": "d6-1/d6-1/d6+2",
+                    "type": "O",
+                    "hide": "+3",
+                    "avail": "Militar",
+                    "cost": "4000",
+                    "id": "energy-web",
+                    "description": "La red de energía es un softsuit de CF con una red de dispersión de energía entrelazada. Aunque es en gran medida ineficaz contra ataques físicos, proporciona una excelente protección contra armas de energía al dispersar la energía y dirigirla de forma inofensiva. No requiere una fuente de alimentación, actuando como un pararrayos para conectar a tierra y dispersar la energía. No se puede usar con otra armadura."
+                },
+                {
+                    "name": "Softsuit de sigilo",
+                    "mass": "2",
+                    "ap": "0",
+                    "lhe": "see description",
+                    "type": "O",
+                    "hide": "+4",
+                    "avail": "Restringida",
+                    "cost": "10000",
+                    "id": "stealth-softsuit",
+                    "description": "El softsuit de sigilo vuelve al portador casi invisible. Los observadores sufren una penalización de +3 para detectar al usuario. Si es detectado, el portador todavía recibe un aumento de +1 en su modificador de resistencia contra ataques dirigidos a él. La batería dura 2 horas (las baterías adicionales cuestan $100). El traje debe estar cerca del cuerpo y expuesto para funcionar, por lo que no se puede usar con otra armadura."
+                }
+            ],
+            "id": "pl-8-energy-age"
+        }
+    ]
 }

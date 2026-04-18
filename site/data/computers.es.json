@@ -1,125 +1,162 @@
 {
-    "config": {
-        "columns": [
-            {
-                "name": "Objeto",
-                "key": "name"
-            },
-            {
-                "name": "Calidad",
-                "key": "quality"
-            },
-            {
-                "name": "Ranuras",
-                "key": "slots"
-            },
-            {
-                "name": "Coste ($)",
-                "key": "cost"
-            },
-            {
-                "name": "Descripción",
-                "key": "description",
-                "hidden": true
-            }
-        ]
-    },
-    "categories": {
-        "hardware": {
-            "groups": {
-                "Expansion": [
+    "config": [
+        {
+            "name": "Default",
+            "columns": {
+                "en": [
                     {
-                        "name": "Baul de Al",
-                        "pl": "7",
-                        "mass": "Mass (kg): 100 g",
-                        "cost": "Cost ($ or #): (A) $15,000; (B) $3,500; (C) 4,000+",
-                        "avail": "Availability: Restricted",
-                        "description": "El 'Al board' es una tarjeta de computadora que permite a un núcleo principal de calidad Buena o mejorada soportar la inteligencia artificial verdadera. Requiere compra separada."
+                        "name": "Item",
+                        "key": "name"
                     },
                     {
-                        "name": "Emulador de armas Al",
-                        "pl": "7",
-                        "mass": "Mass (kg): 2 kg",
-                        "cost": "Cost ($ or #): 4 slots of active memory",
-                        "avail": "Availability: Restricted",
-                        "description": "El Emulador Al es una interfaz de usuario sencilla y práctica que utiliza una biblioteca de respuestas preprogramadas para simular un personaje y la intuición separados."
+                        "name": "Quality",
+                        "key": "quality"
                     },
                     {
-                        "name": "Parche de Memoria",
-                        "pl": "7",
-                        "mass": "Mass (kg): 2 kg",
-                        "cost": "Cost ($ or #): +3 steps for a Marginal (¥4,000) harness, +2 for an Ordinario (¥5,000) harness, +1 for a Bueno (%6,000), and no penalty for an Asombroso (¥8,000) harness",
-                        "avail": "Availability: Restricted",
-                        "description": "Un sistema informático portátil equivalente a un puente de equipo similar al mismo nivel. Está equipado CON bancos especializados de logica difusa."
+                        "name": "Slots",
+                        "key": "slots"
                     },
                     {
-                        "name": "Maquinaria principal",
-                        "pl": "7",
-                        "mass": "Mass (kg): 6 kg; 500 g",
-                        "cost": "Cost ($ or #): #1,500+ (see helow)",
-                        "avail": "Availability: Controlled",
-                        "description": "Un ordenador potente que puede manejar casi cualquier tarea empresarial. Incluye un monitor de vídeo integrado en alta definición y un disco 3D."
+                        "name": "Cost ($)",
+                        "key": "cost"
                     },
                     {
-                        "name": "Ordenador Microelectrónico",
-                        "pl": "7",
-                        "mass": "Mass (kg): 2 kg",
-                        "cost": "Cost ($ or #): %4,500 9 slots; %3000 12 slots; %14,000 15 slots; $20,000 unlimited",
-                        "avail": "Availability: Controlled",
-                        "description": "El ordenador del viajero del negociante es más pequeño, ligero y potente que las computadoras portátiles."
+                        "name": "Description",
+                        "key": "description",
+                        "hidden": true
+                    }
+                ],
+                "es": [
+                    {
+                        "name": "Objeto",
+                        "key": "name"
                     },
                     {
-                        "name": "Computadora Personal (L-R): Plaqueta de Datos, Escritorio, Mazo",
-                        "pl": "7",
-                        "mass": "Mass (kg): 300 g; 3 kg; 2 kg",
-                        "cost": "Cost ($ or #): $84,500; %3000 12 slots; %14,000 15 slots; $20,000 unlimited",
-                        "avail": "Availability: Controlled",
-                        "description": {
-                            "es": "Estos son diferentes tipos de computadores personales con precios y potencias variadas."
-                        }
+                        "name": "Calidad",
+                        "key": "quality"
                     },
                     {
-                        "name": "Guante de la Memoria Activa Microcomputadora de Calidad",
-                        "pl": 7,
-                        "mass": "Mass (kg): A) 300 g; (B) 3 kg; (C) 2 kg",
-                        "cost": "Cost ($ or #): Marginal ~ #1,500 $2,000 3 slots, Ordinario %2,500 $3,000 5 slots, Bueno %3500 %4000 7 slots, Asombroso ¥4,500 %5000 9 slots",
-                        "avail": "Availability: Controlled",
-                        "description": "El Quality MicroComp Gauntlet Active Memory es un dispositivo de almacenamiento de alto rendimiento y capacidad máxima. Está diseñado para ofrecer una velocidad, confiabilidad y capacidad inigualables que superan a los mejores microcomputadores existentes.\n\nCaracterísticas:\n1. Procesador: Un procesador Intel Xeon E5 V3.0 de alto nivel ofrece una eficiencia energética y desempeño óptimos.\n2. Tarjeta de Memoria: El uso de un chip de memoria ultragrande de estado de la artesanía garantiza velocidades de almacenamiento y tiempos de recuperación de datos impensables.\n3. Interfaz: Este dispositivo cuenta CON una interfaz USB 3.0 para fácil integración en cualquier sistema que soporte ella.\n\nMecanismos:\n1. Eficiencia energética: CON su potente CPU y tecnología de almacenamiento avanzada, este objeto es uno de los más eficientes a la hora de la energía que dispone.\n2. Velocidad & Desempeño: El dispositivo empaque un puñado CON tiempos de procesamiento de datos impensables y ofrece alto desempeño, ráfagas de velocidad inolvidable.\n\nSabor:\nEste dispositivo de memoria es una hermosa pieza que se ajusta perfectamente a cualquier sistema, pero cuenta CON un gran poder procesamiento que lo hace parecer como un microordenador de última generación.\n\nEstadísticas:\n1. Velocidad: Excelente\n2. Capacidad: Excepcional\n3. Eficiencia: Óptimo"
+                        "name": "Ranuras",
+                        "key": "slots"
                     },
                     {
-                        "name": "Guante de Gridcaster",
-                        "pl": "7",
-                        "mass": "(A) 35 cm X 12 cm X 10 cm (approx.) or (B) 20 cm diameter X 15 cm tall or (C)10cm X Scm X 2 cm. Mass: (A, B) 2 kg; (C) 500 g.",
-                        "cost": "Marginal $1,500 - 4 slots, Ordinario $2,550 - 7 slots, Bueno $4,500 - 10 slots, Asombroso $6,500 - 12 slots",
-                        "avail": "Available for purchase.",
-                        "description": "El Guante Gridcaster es una arma de gántula computacional potente CON una interfaz neuronal especialmente diseñada para integrarse CON la circuitería cítrica del portador. Proporciona un bónus de -1, -2 o -3 pasos en las pruebas de habilidades de Ciencias de la Computación."
+                        "name": "Coste ($)",
+                        "key": "cost"
                     },
                     {
-                        "name": "Ciberarma",
-                        "pl": "7",
-                        "mass": "Varies",
-                        "cost": "See below",
-                        "avail": "Controlled",
-                        "description": "El ciberequipamiento, también conocido como ciencias cibernéticas, consiste en la aplicación de la tecnología para mejorar las capacidades humanas. Forma parte de una amplia gama de dispositivos y sistemas que se pueden instalar en el cuerpo o mente de una persona."
-                    },
-                    {
-                        "name": "Bomba de Córtex",
-                        "pl": "7",
-                        "mass": "100 g",
-                        "cost": "#3,500",
-                        "avail": "Controlled",
-                        "description": "La bomba de cortex es una de las formas más brutales para asegurar la adhesión. Es un pequeño explosivo radioactivo o temporizado, implantado en el cerebro del sujeto. Si se activa, destruye al víctima de manera horrendemente rápida. Los detonadores radios deben estar a menos de 200 metros para funcionar; las desorganizaciones de la tierra o los muros interiores pueden afectar este cercamiento."
-                    },
-                    {
-                        "name": "Puerto de Comunicación",
-                        "pl": "7",
-                        "mass": "Mass not provided",
-                        "cost": "Cost not provided",
-                        "avail": "Availability not provided",
-                        "description": "Un dispositivo para comunicar señales, transmitir y recibir flujos de video (si está equipado CON un Sistema Óptico), o datos. Usando el puerto común para una conversación de radio aumenta en uno la penalización de acciones por distracción."
+                        "name": "Descripción",
+                        "key": "description",
+                        "hidden": true
                     }
                 ]
-            }
+            },
+            "id": "default"
         }
-    }
+    ],
+    "items": [
+        {
+            "items": [
+                {
+                    "name": "Baul de Al",
+                    "pl": "7",
+                    "mass": "Mass (kg): 100 g",
+                    "cost": "Cost ($ or #): (A) $15,000; (B) $3,500; (C) 4,000+",
+                    "avail": "Disponibilidad: Restringida",
+                    "id": "al-board",
+                    "description": "El 'Al board' es una tarjeta de computadora que permite a un núcleo principal de calidad Buena o mejorada soportar la inteligencia artificial verdadera. Requiere compra separada."
+                },
+                {
+                    "name": "Emulador de armas Al",
+                    "pl": "7",
+                    "mass": "Mass (kg): 2 kg",
+                    "cost": "Cost ($ or #): 4 slots of active memory",
+                    "avail": "Disponibilidad: Restringida",
+                    "id": "al-emulator-program",
+                    "description": "El Emulador Al es una interfaz de usuario sencilla y práctica que utiliza una biblioteca de respuestas preprogramadas para simular un personaje y la intuición separados."
+                },
+                {
+                    "name": "Parche de Memoria",
+                    "pl": "7",
+                    "mass": "Mass (kg): 2 kg",
+                    "cost": "Cost ($ or #): +3 steps for a Marginal (¥4,000) harness, +2 for an Ordinary (¥5,000) harness, +1 for a Good (%6,000), and no penalty for an Amazing (¥8,000) harness",
+                    "avail": "Disponibilidad: Restringida",
+                    "id": "memory-harness",
+                    "description": "Un sistema informático portátil equivalente a un puente de equipo similar al mismo nivel. Está equipado con bancos especializados de logica difusa."
+                },
+                {
+                    "name": "Maquinaria principal",
+                    "pl": "7",
+                    "mass": "Mass (kg): 6 kg; 500 g",
+                    "cost": "Cost ($ or #): #1,500+ (see helow)",
+                    "avail": "Disponibilidad: Controlada",
+                    "id": "mainframe",
+                    "description": "Un ordenador potente que puede manejar casi cualquier tarea empresarial. Incluye un monitor de vídeo integrado en alta definición y un disco 3D."
+                },
+                {
+                    "name": "Ordenador Microelectrónico",
+                    "pl": "7",
+                    "mass": "Mass (kg): 2 kg",
+                    "cost": "Cost ($ or #): %4,500 9 slots; %3000 12 slots; %14,000 15 slots; $20,000 unlimited",
+                    "avail": "Disponibilidad: Controlada",
+                    "id": "microcomputer",
+                    "description": "El ordenador del viajero del negociante es más pequeño, ligero y potente que las computadoras portátiles."
+                },
+                {
+                    "name": "Computadora Personal (L-R): Plaqueta de Datos, Escritorio, Mazo",
+                    "pl": "7",
+                    "mass": "Mass (kg): 300 g; 3 kg; 2 kg",
+                    "cost": "Cost ($ or #): $84,500; %3000 12 slots; %14,000 15 slots; $20,000 unlimited",
+                    "avail": "Disponibilidad: Controlada",
+                    "id": "personal-computer-l-r-data-slate-desktop-gauntlet",
+                    "description": "Estos son diferentes tipos de computadores personales con precios y potencias variadas."
+                },
+                {
+                    "name": "Guante de la Memoria Activa Microcomputadora de Calidad",
+                    "pl": 7,
+                    "mass": "Mass (kg): A) 300 g; (B) 3 kg; (C) 2 kg",
+                    "cost": "Cost ($ or #): Marginal ~ #1,500 $2,000 3 slots, Ordinary %2,500 $3,000 5 slots, Good %3500 %4000 7 slots, Amazing ¥4,500 %5000 9 slots",
+                    "avail": "Disponibilidad: Controlada",
+                    "id": "quality-microcomp-gauntlet-active-memory",
+                    "description": "El Quality MicroComp Gauntlet Active Memory es un dispositivo de almacenamiento de alto rendimiento y capacidad máxima. Está diseñado para ofrecer una velocidad, confiabilidad y capacidad inigualables que superan a los mejores microcomputadores existentes.\n\nCaracterísticas:\n1. Procesador: Un procesador Intel Xeon E5 V3.0 de alto nivel ofrece una eficiencia energética y desempeño óptimos.\n2. Tarjeta de Memoria: El uso de un chip de memoria ultragrande de estado de la artesanía garantiza velocidades de almacenamiento y tiempos de recuperación de datos impensables.\n3. Interfaz: Este dispositivo cuenta con una interfaz USB 3.0 para fácil integración en cualquier sistema que soporte ella.\n\nMecanismos:\n1. Eficiencia energética: Con su potente CPU y tecnología de almacenamiento avanzada, este objeto es uno de los más eficientes a la hora de la energía que dispone.\n2. Velocidad & Desempeño: El dispositivo empaque un puñado con tiempos de procesamiento de datos impensables y ofrece alto desempeño, ráfagas de velocidad inolvidable.\n\nSabor:\nEste dispositivo de memoria es una hermosa pieza que se ajusta perfectamente a cualquier sistema, pero cuenta con un gran poder procesamiento que lo hace parecer como un microordenador de última generación.\n\nEstadísticas:\n1. Velocidad: Excelente\n2. Capacidad: Excepcional\n3. Eficiencia: Óptimo"
+                },
+                {
+                    "name": "Guante de Gridcaster",
+                    "pl": "7",
+                    "mass": "(A) 35 cm X 12 cm X 10 cm (approx.) or (B) 20 cm diameter X 15 cm tall or (C)10cm X Scm X 2 cm. Mass: (A, B) 2 kg; (C) 500 g.",
+                    "cost": "Marginal $1,500 - 4 slots, Ordinary $2,550 - 7 slots, Good $4,500 - 10 slots, Amazing $6,500 - 12 slots",
+                    "avail": "Available for purchase.",
+                    "id": "gridcaster-gauntlet",
+                    "description": "El Guante Gridcaster es una arma de gántula computacional potente con una interfaz neuronal especialmente diseñada para integrarse con la circuitería cítrica del portador. Proporciona un bónus de -1, -2 o -3 pasos en las pruebas de habilidades de Ciencias de la Computación."
+                },
+                {
+                    "name": "Ciberarma",
+                    "pl": "7",
+                    "mass": "Varies",
+                    "cost": "See below",
+                    "avail": "Controlled",
+                    "id": "cyberware",
+                    "description": "El ciberequipamiento, también conocido como ciencias cibernéticas, consiste en la aplicación de la tecnología para mejorar las capacidades humanas. Forma parte de una amplia gama de dispositivos y sistemas que se pueden instalar en el cuerpo o mente de una persona."
+                },
+                {
+                    "name": "Bomba de Córtex",
+                    "pl": "7",
+                    "mass": "100 g",
+                    "cost": "#3,500",
+                    "avail": "Controlled",
+                    "id": "cortex-bomb",
+                    "description": "La bomba de cortex es una de las formas más brutales para asegurar la adhesión. Es un pequeño explosivo radioactivo o temporizado, implantado en el cerebro del sujeto. Si se activa, destruye al víctima de manera horrendemente rápida. Los detonadores radios deben estar a menos de 200 metros para funcionar; las desorganizaciones de la tierra o los muros interiores pueden afectar este cercamiento."
+                },
+                {
+                    "name": "Puerto de Comunicación",
+                    "pl": "7",
+                    "mass": "Mass not provided",
+                    "cost": "Cost not provided",
+                    "avail": "Availability not provided",
+                    "id": "comm-port",
+                    "description": "Un dispositivo para comunicar señales, transmitir y recibir flujos de video (si está equipado con un Sistema Óptico), o datos. Usando el puerto común para una conversación de radio aumenta en uno la penalización de acciones por distracción."
+                }
+            ],
+            "id": "expansion"
+        }
+    ]
 }

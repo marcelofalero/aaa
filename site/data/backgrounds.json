@@ -81,7 +81,7 @@
             "name": "The Certified Psychic",
             "description": "You are an autonomous legal entity, granted the rare authority to use psionic powers openly. You act as an arbiter in high-stakes negotiations and possess the legal right to probe minds in situ if you determine there is reasonable cause.",
             "favored_broad_skill": "",
-            "favored_specialty_skills": "[Telepathy-Mind Reading](/skills/telepathy/#mind-reading)<br>[Law-Court Procedures](/skills/law/#court-procedures)<br>[Interaction-Interview](/skills/interaction/#interview)<br>[Resolve-Mental Resolve](/skills/resolve-con/#mental-resolve)",
+            "favored_specialty_skills": "[Telepathy-Mind Reading](/psionics/telepathy/#mind-reading)<br>[Law-Court Procedures](/skills/law/#court-procedures)<br>[Interaction-Interview](/skills/interaction/#interview)<br>[Resolve-Mental Resolve](/skills/resolve-con/#mental-resolve)",
             "favored_perks": "[Reputation](/perks_flaws/#reputation)",
             "flaw": "[Code of Honor](/perks_flaws/#code-of-honor) (Absolute neutrality and adherence to the strict ethical guidelines of your autonomous certification).",
             "equipment": "An official arbiter's badge/warrant, a portable recording device, formal professional wear, and mild sedatives/stimulants for psychic strain.",

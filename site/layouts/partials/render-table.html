@@ -1,11 +1,28 @@
+{{/* 
+  DATA AGNOSTIC PARTIAL
+  This component must remain data-agnostic. It renders a table from a 
+  generic data structure (groups/columns/items) without hardcoded 
+  system context.
+*/}}
 {{ $file := .file }}
 {{ $key := .key }}
 {{ $data := .data }}
 {{ $hidden_fields := .hidden_fields }}
 
 {{ if (reflect.IsMap $data) }}
-{{ $root := .root }}
-{{ $columns := $data.columns | default $root.config.columns | default $root.columns }}
+{{ $root := .root | default $data }}
+{{ $config := $data.config | default $root.config }}
+{{ $columns := slice }}
+
+{{ if (reflect.IsSlice $config) }}
+  {{/* Use the first config by default */}}
+  {{ $firstConfig := index $config 0 }}
+  {{ $columns = $firstConfig.columns | default slice }}
+  {{ if (reflect.IsMap $columns) }}{{ $columns = index $columns .Page.Lang | default $columns.en }}{{ end }}
+{{ else }}
+  {{ $columns = $config.columns | default $root.columns }}
+  {{ if (reflect.IsMap $columns) }}{{ $columns = index $columns .Page.Lang | default $columns.en }}{{ end }}
+{{ end }}
 
 {{/* Calculate visible columns count, excluding 'description' */}}
 {{ $colCount := 0 }}
@@ -17,7 +34,7 @@
   <div class="table-controls mb3">
     <div class="filter-container">
       <span class="neon-amber mr2">›</span>
-      <input type="text" class="table-filter-input" placeholder="{{ if eq .Page.Lang " es" }}Filtrar resultados...{{
+      <input type="text" class="table-filter-input" placeholder="{{ if eq .Page.Lang "es" }}Filtrar resultados...{{
         else }}Filter results...{{ end }}" aria-label="Filter table">
     </div>
   </div>
@@ -34,87 +51,24 @@
     </thead>
     <tbody>
       {{ $expandPattern := .expand }}
-      {{ range $g_key, $g_val := $data.groups }}
-      {{ $groupName := "" }}
-      {{ $groupItems := slice }}
-      {{ if (reflect.IsMap $g_val) }}
-        {{/* Format A: { "name": "...", "items": [...] } */}}
-        {{ $groupName = $g_val.name }}
-        {{ $groupItems = $g_val.items }}
-      {{ else if (reflect.IsSlice $g_val) }}
-        {{/* Format B: "Group Name": [ {item1}, {item2} ] */}}
-        {{ $groupName = $g_key }}
-        {{ $groupItems = $g_val }}
-      {{ end }}
-
-      {{ $isExpanded := false }}
-      {{ if and $expandPattern (findRE $expandPattern $groupName) }}{{ $isExpanded = true }}{{ end }}
-      <tr class="table-separator accordion-toggle" data-group-name="{{ $groupName }}" {{ if $isExpanded
-        }}data-expanded="true" {{ end }}>
-        <td colspan="{{ $colCount }}">
-          <span class="chevron mr2">{{ if $isExpanded }}▼{{ else }}▶{{ end }}</span>
-          {{ $groupName }}
-        </td>
-      </tr>
-      {{ range $index, $item := $groupItems }}
-      {{ $rowId := printf "desc-%s-%s-%s-%d" $file $key ($item.name | urlize) $index }}
-
-      {{/* Check if there are ANY displayable fields in expansion */}}
-      {{ $hasVisibleDetails := false }}
-      {{ if $item.description }}{{ $hasVisibleDetails = true }}{{ end }}
-      {{ if not $hasVisibleDetails }}
-      {{ range $field_key := $hidden_fields }}
-      {{ if index $item $field_key }}{{ $hasVisibleDetails = true }}{{ end }}
-      {{ end }}
-      {{ end }}
-
-      <tr id="{{ $item.name | urlize }}" class="data-row {{ if $hasVisibleDetails }}has-description{{ end }}"
-        data-target="{{ $rowId }}" data-type="{{ $item.type }}">
-        {{ range $columns }}
-        {{ if and (not (in $hidden_fields .key)) (ne .key "description") }}
-        <td class="cell-{{ .key }}">
-          {{ if .link }}
-          <a href="{{ index $item "skill_url" }}">{{ index $item .key | safeHTML }}</a>
-          {{ else if and (eq .key "skill") (index $item "skill_url") }}
-          <a href="{{ index $item "skill_url" }}">{{ index $item .key | safeHTML }}</a>
-          {{ else }}
-          {{ index $item .key | safeHTML }}
+      {{ range $index, $item := $data.items }}
+        {{ if $item.items }}
+          {{/* This is a category/separator row */}}
+          {{ $isExpanded := false }}
+          {{ if and $expandPattern (findRE $expandPattern $item.name) }}{{ $isExpanded = true }}{{ end }}
+          <tr class="table-separator accordion-toggle" data-group-name="{{ $item.name }}" {{ if $isExpanded }}data-expanded="true" {{ end }}>
+            <td colspan="{{ $colCount }}">
+              <span class="chevron mr2">{{ if $isExpanded }}▼{{ else }}▶{{ end }}</span>
+              {{ $item.name }}
+            </td>
+          </tr>
+          {{ range $subIndex, $subItem := $item.items }}
+             {{ partial "render-table-row.html" (dict "item" $subItem "columns" $columns "colCount" $colCount "file" $file "key" $key "index" $subIndex "hidden_fields" $hidden_fields) }}
           {{ end }}
-        </td>
+        {{ else }}
+          {{/* Top level item */}}
+          {{ partial "render-table-row.html" (dict "item" $item "columns" $columns "colCount" $colCount "file" $file "key" $key "index" $index "hidden_fields" $hidden_fields) }}
         {{ end }}
-        {{ end }}
-      </tr>
-      {{ if $hasVisibleDetails }}
-      <tr id="{{ $rowId }}" class="description-row" style="display: none;">
-        <td colspan="{{ $colCount }}" class="pa3 bg-panel-alt silver i" style="border-top: none;">
-          <div>
-            <div class="mb2">
-              {{ range $field_key := $hidden_fields }}
-              {{ $column_slice := where $columns "key" $field_key }}
-              {{ if $column_slice }}
-              {{ $column := index $column_slice 0 }}
-              {{ $val := index $item $field_key }}
-              {{ if $val }}
-              <div class="hidden-field-item">
-                <span class="neon-green mr2">{{ $column.name }}:</span>
-                <span class="silver">{{ $val }}</span>
-              </div>
-              {{ end }}
-              {{ end }}
-              {{ end }}
-            </div>
-
-            {{ if $item.description }}
-            <div class="flex items-start">
-              <span class="neon-amber mr2">›</span>
-              <span>{{ $item.description | safeHTML }}</span>
-            </div>
-            {{ end }}
-          </div>
-        </td>
-      </tr>
-      {{ end }}
-      {{ end }}
       {{ end }}
     </tbody>
   </table>

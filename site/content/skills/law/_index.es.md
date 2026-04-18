@@ -6,9 +6,9 @@ type = "skill"
 layout = "list"
 +++
 
-Esta habilidad general proporciona a un héroe conocimientos generales sobre las leyes y sistemas legales de su sociedad nativa. También puede tratarse como una habilidad de encuentro para cambiar la actitud de un individuo.
+Esta habilidad general proporciona a un personaje conocimientos generales sobre las leyes y sistemas legales de su sociedad nativa. También puede tratarse como una habilidad de encuentro para cambiar la actitud de un individuo.
 
-En una acción legal, el héroe y el oponente realizan tiradas de habilidad alternas hasta que alguien obtiene un Fallo Crítico o un resultado Asombroso.
+En una acción legal, el personaje y el oponente realizan tiradas de habilidad alternas hasta que alguien obtiene un Fallo Crítico o un resultado Asombroso.
 
 ## Habilidades de Especialidad
 ### (INT)
@@ -19,7 +19,7 @@ Abogados, jueces y otros utilizan esta habilidad para interactuar en un entorno 
 ### Ley [Específica]
 *No se puede usar sin estar entrenado.*
 
-Para cada compra por separado de esta especialidad, un héroe selecciona una cultura o tipo de ley específico
+Para cada compra por separado de esta especialidad, un personaje selecciona una cultura o tipo de ley específico
 ### Beneficios de Rango
 - **Efecto Mejorado:** Bonificación de -1 en el rango 3, -2 en el rango 6, -3 en el rango 9 y -4 en el rango 12.
 

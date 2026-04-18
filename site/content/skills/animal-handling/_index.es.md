@@ -6,9 +6,9 @@ type = "skill"
 layout = "list"
 +++
 
-Esta habilidad general proporciona a un héroe la habilidad básica para entrenar animales para realizar una variedad de tareas, incluyendo trabajo, aceptar jinetes, rastrear y atacar. También se usa para determinar si un héroe puede hacer que un animal entrenado realice una tarea, para montar un animal, o para calmar, capturar o manejar de otra manera un animal salvaje o un animal doméstico desconocido. Tenga en cuenta que los métodos de entrenamiento y los comandos utilizados CON diferentes especies de animales pueden variar ampliamente.
+Esta habilidad general proporciona a un personaje la habilidad básica para entrenar animales para realizar una variedad de tareas, incluyendo trabajo, aceptar jinetes, rastrear y atacar. También se usa para determinar si un personaje puede hacer que un animal entrenado realice una tarea, para montar un animal, o para calmar, capturar o manejar de otra manera un animal salvaje o un animal doméstico desconocido. Tenga en cuenta que los métodos de entrenamiento y los comandos utilizados CON diferentes especies de animales pueden variar ampliamente.
 
-La compra de la habilidad general le da derecho a un héroe a seleccionar un tipo de animal que puede entrenar, sujeto a la aprobación del Director de Juego. Por ejemplo, puede ser posible que un héroe seleccione "caballo", o el Director de Juego puede dictar que se necesitan aplicaciones separadas de la habilidad para entrenar caballos de cuarto de milla y caballos de tiro. En tal caso, el héroe necesitaría tener la especialización de entrenamiento de animales para poder entrenar y manejar más de un tipo de caballo.
+La compra de la habilidad general le da derecho a un personaje a seleccionar un tipo de animal que puede entrenar, sujeto a la aprobación del Director de Juego. Por ejemplo, puede ser posible que un personaje seleccione "caballo", o el Director de Juego puede dictar que se necesitan aplicaciones separadas de la habilidad para entrenar caballos de cuarto de milla y caballos de tiro. En tal caso, el personaje necesitaría tener la especialización de entrenamiento de animales para poder entrenar y manejar más de un tipo de caballo.
 
 Cualquier uso de la habilidad general de Manejo de Animales para entrenar a una criatura requiere una tirada de habilidad compleja. Dependiendo del tipo de animal CON el que se trabaje, se aplica un modificador a cada segmento de la tirada de habilidad compleja, y ciertos tipos de animales tardan más en entrenarse (se necesitan más éxitos) que otros tipos.
 
@@ -20,7 +20,7 @@ Después de que un animal ha sido entrenado, se aplican otros modificadores de s
 
 Alguien CON la habilidad de Manejo de Animales puede lograr que un animal salvaje o un animal doméstico no entrenado haga algo, pero en ningún caso dicho animal realizará una tarea de dificultad mayor que [Ordinaria]. Las tareas [Ordinarias] incluyen actividades en respuesta a comandos simples de una palabra como "Atacar", "Ven", "Siéntate", "Quieto", "Trae", "Habla" y "Silencio". Una tarea [Buena] podría ser una combinación de dos tareas [Ordinarias] (en sucesión o simultáneamente), o podría ser algo más difícil, como un perro empujando una palanca CON su pata cuando se le ordena hacerlo. Una tarea Asombrosa es solo eso: algo que muy pocos animales pueden o harán bajo comando, como correr hacia un edificio en llamas para rescatar a un niño. Por supuesto, el Director de Juego tiene la última palabra sobre si una tarea o truco es Ordinario, Bueno o Asombroso.
 
-La habilidad general también permite a un personaje montar cualquier animal que pueda usarse para el transporte terrestre básico, lo que generalmente significa caballos, mulas y otros grandes cuadrúpedos. Cuando se monta un animal, la criatura se mueve en cada fase. Durante una fase en la que el héroe tiene una acción, puede usar esta habilidad para intentar maniobrar al animal. Consulte la página 198 del Capítulo 12: Vehículos para obtener información sobre los tipos de maniobras (Rutinaria, Moderada y Extrema) que un jinete puede intentar. (Aunque normalmente no se piensa en un animal como un vehículo, las mismas reglas generales se aplican a los jinetes de animales y a los conductores de vehículos).
+La habilidad general también permite a un personaje montar cualquier animal que pueda usarse para el transporte terrestre básico, lo que generalmente significa caballos, mulas y otros grandes cuadrúpedos. Cuando se monta un animal, la criatura se mueve en cada fase. Durante una fase en la que el personaje tiene una acción, puede usar esta habilidad para intentar maniobrar al animal. Consulte la página 198 del Capítulo 12: Vehículos para obtener información sobre los tipos de maniobras (Rutinaria, Moderada y Extrema) que un jinete puede intentar. (Aunque normalmente no se piensa en un animal como un vehículo, las mismas reglas generales se aplican a los jinetes de animales y a los conductores de vehículos).
 
 ## Modificadores de Situación de Manejo de Animales
 ### (VOL)
@@ -57,9 +57,9 @@ La habilidad general también permite a un personaje montar cualquier animal que
 ## Montar Animales
 ### (VOL)
 
-Esta especialización permite a un héroe mejorar este aspecto de la habilidad general de Manejo de Animales. Un personaje CON esta habilidad puede intentar correr por terrenos peligrosos, hacer saltos o realizar otras acrobacias, y participar en combate montado.
+Esta especialización permite a un personaje mejorar este aspecto de la habilidad general de Manejo de Animales. Un personaje CON esta habilidad puede intentar correr por terrenos peligrosos, hacer saltos o realizar otras acrobacias, y participar en combate montado.
 
-» **Equitación de Acrobacias:** Cuando un héroe alcanza el rango 3 en esta especialidad, se vuelve capaz de realizar equitación de acrobacias. Esto le permite dirigir a su montura para saltar vallas, saltar abismos o moverse hacia atrás. CON un resultado de Fallo Crítico, el animal tropieza
+» **Equitación de Acrobacias:** Cuando un personaje alcanza el rango 3 en esta especialidad, se vuelve capaz de realizar equitación de acrobacias. Esto le permite dirigir a su montura para saltar vallas, saltar abismos o moverse hacia atrás. CON un resultado de Fallo Crítico, el animal tropieza
 ---
 
 ---

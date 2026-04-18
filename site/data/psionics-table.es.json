@@ -1,0 +1,493 @@
+{
+    "fields": [
+        {
+            "key": "skill",
+            "name": "Disciplina/Poder",
+            "link": true
+        },
+        {
+            "key": "attribute",
+            "name": "Atrib."
+        },
+        {
+            "key": "cost",
+            "name": "Costo"
+        }
+    ],
+    "items": [
+        {
+            "skill": "PSIÓNICA",
+            "type": "Category",
+            "items": [
+                {
+                    "skill": "Biokinesis",
+                    "attribute": "CON",
+                    "url": "/es/psionics/biokinesis/",
+                    "cost": 6,
+                    "type": "Broad",
+                    "items": [
+                        {
+                            "skill": "Bioarmadura",
+                            "attribute": "CON",
+                            "url": "/es/psionics/biokinesis/#bioarmadura",
+                            "cost": 3,
+                            "type": "Specialty",
+                            "css_class": "",
+                            "description": "Esta habilidad refuerza psiónicamente la piel de un personaje, ayudando a protegerlo del daño. Esta \"armadura corporal\" proporciona protección contra daños físicos y de energía, pero no protege contra ataques psiónicos. (Ver Telepatía para formas de evitar ataques psiónicos).\n\nLa protección proporcionada por la bioarmadura se basa en la tirada de habilidad del usuario:\n- **Ordinario:** 1 punto de armadura.\n- **Bueno:** 2 puntos de armadura.\n- **Asombroso:** 3 puntos de armadura.\n\n**Beneficios de Rango:**\n- **Al rango 3 [Efecto Incrementado]:** la protección proporcionada por la bioarmadura aumenta en 1 punto (añade 1 a lo que se obtenga en la tabla anterior).\n- **Al rango 6 [Efecto Incrementado]:** este valor aumenta en otro punto (un total de +2).\n- **Al rango 9 [Dureza Incrementada]:** la armadura se considera de dureza Buena.\n- **Al rango 12 [Efecto Incrementado]:** aumenta en otro punto adicional (un total de +3).\n"
+                        },
+                        {
+                            "skill": "Bioarma",
+                            "attribute": "CON",
+                            "url": "/es/psionics/biokinesis/#bioarma",
+                            "cost": 3,
+                            "type": "Specialty",
+                            "css_class": "",
+                            "description": "Un psiónico con esta habilidad puede usar energía psiónica para alterar la forma de sus manos o pies, o partes de ellos, en algún tipo de arma. El arma puede tener cualquier forma que el personaje desee, dentro de los límites de su propia masa, aunque la mayoría de los personajes encuentran que una hoja larga y afilada o una porra pesada y contundente son las formas más efectivas.\n\nMientras la habilidad está activa, el personaje puede usar el bioarma como un arma de melé. El éxito logrado en la tirada de habilidad indica un bonificador a las tiradas de habilidad de armas de melé del personaje mientras dure la habilidad: Ordinario, sin bonificador; Bueno, bonificador de -1 paso; Asombroso, bonificador de -2 pasos.\n\nEl daño infligido por el bioarma depende de la forma del arma. Un arma contundente tipo porra inflige d8s/d8+2s/d12+2s de daño (usando la habilidad de Armas de Melé—contusión). Un arma tipo hoja inflige d4w/d6+2w/d6m de daño (usando la habilidad de Armas de Melé—filo).\n\n**Beneficios de Rango:**\n- **Al rango 3 [Daño Incrementado]:** el daño infligido por el bioarma aumenta en 1 punto (añade 1 punto a cualquier daño que se obtenga).\n- **Al rango 6 [Daño Incrementado]:** el daño aumenta en otro punto (un total de +2).\n- **Al rango 9 [Daño Incrementado]:** el daño aumenta en otro punto (un total de +3).\n- **Al rango 12 [Daño Mejorado]:** cualquier éxito Ordinario con el arma se trata como un éxito Bueno a efectos de determinar el daño infligido.\n"
+                        },
+                        {
+                            "skill": "Control del Metabolismo",
+                            "attribute": "CON",
+                            "url": "/es/psionics/biokinesis/#control-del-metabolismo",
+                            "cost": 2,
+                            "type": "Specialty",
+                            "css_class": "",
+                            "description": "Esta habilidad permite a un psiónico asumir el control de sus propios procesos metabólicos. El personaje puede usar esto para sobrevivir en un entorno hostil o para mejorar su rendimiento físico.\n\nUn psiónico que use esta habilidad debe decidir cuál de los siguientes tres tipos de efectos está intentando antes de realizar la tirada de habilidad:\n\n**Supervivencia:** El personaje puede sobrevivir en un entorno que normalmente sería fatal (calor o frío extremos, o la falta de una atmósfera respirable). Una tirada con éxito indica que el psiónico puede simular la protección de una máscara de vacío (éxito Ordinario), un traje de vacío (éxito Bueno) o un e-suit ligero (éxito Asombroso). Para permanecer en este estado, el personaje debe gastar 1 punto de energía psiónica por hora.\n\n**Impulso de Adrenalina:** El psiónico puede desencadenar una liberación de adrenalina, otorgando una bonificación a su puntuación de tirada de acción. Un éxito Ordinario otorga un bonificador de +1; un éxito Bueno, un bonificador de +2; y un éxito Asombroso, un bonificador de +3. Esta habilidad dura el asalto en el que se usa y el siguiente; puede extenderse gastando 1 punto de energía psiónica por cada asalto extra.\n\n**Liberación de Endorfinas:** El psiónico puede desencadenar una liberación de endorfinas para ayudar a resistir los efectos del dolor. Esto proporciona una bonificación de pasos a sus tiradas de la habilidad de Resistencia: Ordinario, -1 paso; Bueno, -2 pasos; Asombroso, -3 pasos. Este efecto dura una hora y puede extenderse gastando 1 punto de energía psiónica por cada hora extra.\n"
+                        },
+                        {
+                            "skill": "Sanar",
+                            "attribute": "CON",
+                            "url": "/es/psionics/biokinesis/#sanar",
+                            "cost": 4,
+                            "type": "Specialty",
+                            "css_class": "trained-only",
+                            "description": "Esta habilidad de especialidad permite a un personaje sanar heridas o ayudar al cuerpo del personaje a combatir una enfermedad. Para usar la habilidad, el personaje se concentra en las heridas que desea sanar. Los resultados de la tirada de habilidad son inmediatos, aunque la reacción del cuerpo al proceso de curación tarda aproximadamente una hora. Durante esa hora, el personaje no puede ser sanado de nuevo usando la habilidad de especialidad de sanar.\n\nPor cada éxito logrado, el personaje puede sanar puntos de herida o reducir el grado de una enfermedad: éxito Ordinario, 1 punto de herida o reducir el grado de una enfermedad en uno; éxito Bueno, 2 puntos de herida o reducir el grado de una enfermedad en dos; éxito Asombroso, 3 puntos de herida o reducir el grado de una enfermedad en tres.\n\n**Beneficios de Rango:**\n- **Al rango 4 [Tratar Veneno]:** el psiónico puede usar sanar para ayudar a un cuerpo a contrarrestar los efectos de un veneno. El objetivo de la tirada de habilidad recibe un bonificador a su tirada de proeza de Constitución para resistir el veneno: Ordinario, -2 pasos; Bueno, -3 pasos; Asombroso, -4 pasos.\n- **Al rango 6 [Sanar Mortal]:** el psiónico puede sanar daño Mortal. Con un éxito Ordinario, se sanan 2 puntos de herida; con un éxito Bueno, se sanan 3 puntos de herida y 1 punto Mortal; con un éxito Asombroso, se sanan 4 puntos de herida y 2 puntos mortales.\n- **Al rango 8 [Imposición de Manos]:** el psiónico puede usar la habilidad de sanar en otros personajes a través del contacto físico.\n- **Al rango 12 [Maestro Sanador]:** la cantidad de daño que el psiónico puede sanar aumenta: Ordinario, 3 puntos de herida y 1 punto Mortal; Bueno, 4 puntos de herida y 2 puntos mortales; Asombroso, 6 puntos de herida y 3 puntos mortales.\n"
+                        },
+                        {
+                            "skill": "Intangibilidad",
+                            "attribute": "CON",
+                            "url": "/es/psionics/biokinesis/#intangibilidad",
+                            "cost": 4,
+                            "type": "Specialty",
+                            "css_class": "trained-only",
+                            "description": "Al reordenar mentalmente las moléculas de su propio cuerpo, un psiónico puede volverse inmaterial. Entonces puede atravesar objetos sólidos (excepto otros seres vivos). La ropa del personaje y hasta 1 kilogramo por rango de equipo también se vuelven intangibles.\n\nLa habilidad dura una fase, aunque la duración puede extenderse gastando 1 punto de energía psiónica por cada fase adicional. El movimiento vertical no es posible mientras se es intangible; el psiónico simplemente se hunde a través de cualquier objeto sólido a una velocidad de 3 metros por fase. El movimiento horizontal a través de objetos sólidos es posible a una velocidad igual a un \"nado fácil\".\n\n**Beneficios de Rango:**\n- **Al rango 4 [Bonificador de Movimiento]:** el psiónico puede moverse a través de objetos sólidos a su ritmo de caminata.\n- **Al rango 6 [Esquiva]:** un personaje puede usar la habilidad de intangibilidad para esquivar un ataque. Esto se trata como una parada de reacción; el psiónico debe tener una fase disponible y debe decidir usar la habilidad cuando se anuncia el ataque.\n- **Al rango 8 [Bonificador de Movimiento]:** el psiónico puede moverse a través de objetos sólidos a su ritmo de carrera.\n- **Al rango 12 [Intangibilidad Selectiva]:** el psiónico puede volver intangible solo una parte de su cuerpo. Esto permite al personaje atravesar un objeto sólido para manipular algo al otro lado. Tal intento conlleva un penalizador de +2 pasos a la tirada de habilidad de intangibilidad, y un penalizador de +4 pasos a cualquier habilidad usada para manipular el objeto al otro lado.\n"
+                        },
+                        {
+                            "skill": "Metamorfosis",
+                            "attribute": "CON",
+                            "url": "/es/psionics/biokinesis/#metamorfosis",
+                            "cost": 4,
+                            "type": "Specialty",
+                            "css_class": "trained-only",
+                            "description": "Mediante el uso de esta habilidad, un psiónico puede alterar sus rasgos físicos. Esta capacidad se usa con mayor frecuencia para crear un disfraz, aunque también puede usarse para permitir que un personaje alcance o se escurra en áreas que normalmente son inaccesibles. El personaje debe pasar un asalto (4 fases) concentrándose y realizando la tirada de habilidad para activar la capacidad.\n\nLa metamorfosis no permite que un personaje cambie su masa, solo que la reorganice. La duración de la transformación depende del resultado de la tirada de habilidad: éxito Ordinario, 1 asalto; éxito Bueno, 2 asaltos; éxito Asombroso, 3 asaltos. La duración puede extenderse gastando 1 punto de energía psiónica por cada asalto extra.\n\n**Beneficios de Rango:**\nUn personaje puede elegir obtener uno de los siguientes beneficios en el rango indicado:\n- **Rango 1 o 3:** Elongar dedos (proporciona un alcance de +0,5 metros), Elongar brazos (proporciona un alcance de +1 metro) o Elongar piernas (proporciona +1 metro de altura).\n- **Rango 5 o 7:** Disfraz (cualquiera que intente reconocer al psiónico sufre un penalizador de +2 pasos en las tiradas de Percepción), Elongar brazos y piernas simultáneamente, o alteraciones del esqueleto (permite al personaje pasar por una abertura de tan solo 0,5 metros de diámetro).\n- **Rango 10 o 12:** Disfraz mejorado (cualquiera que intente reconocer al psiónico sufre un penalizador de +4 pasos en las tiradas de Percepción, o +2 si el examinador usa psiónica), o reducir daño (el psiónico puede reorganizar sus órganos internos para evitar lesiones graves; reduce cualquier daño infligido al psiónico: éxito Ordinario, d4; éxito Bueno, d4+2; éxito Asombroso, d6+2).\n- **Al rango 12 [Control de Forma]:** un psiónico es capaz de tener dos formas de metamorfosis activas al mismo tiempo.\n"
+                        },
+                        {
+                            "skill": "Rejuvenecer",
+                            "attribute": "CON",
+                            "url": "/es/psionics/biokinesis/#rejuvenecer",
+                            "cost": 3,
+                            "type": "Specialty",
+                            "css_class": "",
+                            "description": "Para usar esta habilidad, un psiónico se concentra en su propio cuerpo para ayudarlo a compensar los efectos del daño por fatiga o aturdimiento (no proporciona ayuda para recuperar la energía psiónica perdida). Los resultados de la tirada son inmediatos, aunque la reacción del cuerpo al rejuvenecimiento tarda aproximadamente una hora. Durante esa hora, el psiónico no puede volver a usar la habilidad de rejuvenecer.\n\nEl éxito de la tirada de habilidad determina cuántos \"puntos de rejuvenecimiento\" recibe el personaje: éxito Ordinario, 2 puntos; éxito Bueno, 4 puntos; éxito Asombroso, 6 puntos. Cuesta 2 puntos de rejuvenecimiento por cada punto de daño de fatiga a recuperar, y 1 punto de rejuvenecimiento por cada punto de daño de aturdimiento.\n\n**Beneficios de Rango:**\n- **Al rango 4 [Efecto Mejorado]:** los puntos de rejuvenecimiento recibidos aumentan: Ordinario, 4 puntos; Bueno, 6 puntos; Asombroso, 8 puntos.\n- **Al rango 8 [Imposición de Manos]:** el psiónico puede usar la habilidad de rejuvenecer en otros personajes a través del contacto físico.\n- **Al rango 12 [Dos Destinatarios]:** el psiónico puede afectar a dos individuos simultáneamente.\n"
+                        },
+                        {
+                            "skill": "Transferir Daño",
+                            "attribute": "CON",
+                            "url": "/es/psionics/biokinesis/#transferir-dano",
+                            "cost": 2,
+                            "type": "Specialty",
+                            "css_class": "",
+                            "description": "Al usar esta habilidad, un psiónico puede absorber las heridas o la enfermedad de otro personaje. Para usar la habilidad, el psiónico debe tocar al personaje que recibirá la ayuda.\n\nEl éxito de la tirada de habilidad determina la cantidad de daño transferido:\n- **Ordinario:** el psiónico puede absorber 1 punto de herida del sujeto, o reducir el grado de una enfermedad en uno. El psiónico se infecta con la enfermedad, pero en un grado inferior al que ya sufre el sujeto.\n- **Bueno:** el psiónico puede absorber 2 puntos de herida o reducir el grado de una enfermedad en dos.\n- **Asombroso:** el psiónico puede absorber 3 puntos de herida o 1 punto Mortal. En el caso de una enfermedad, el psiónico puede transferirse automáticamente toda la enfermedad (de cualquier grado) a sí mismo.\n\nEn un Fallo Crítico, el psiónico sufre 1 punto de herida al no canalizar correctamente la energía.\n\n**Beneficios de Rango:**\n- **Al rango 6 [Desplazar Daño]:** el psiónico puede transferir el daño de un personaje a otro (ambos deben estar en contacto físico con el psiónico). El objetivo de la transferencia debe estar dispuesto.\n- **Al rango 12 [Transferencia Involuntaria]:** el psiónico puede transferir el daño de un personaje a otro destinatario vivo que esté en contacto con el psiónico, incluso si el destinatario no está dispuesto. Esto requiere una tirada de habilidad de contacto con éxito contra el destinatario involuntario.\n"
+                        }
+                    ]
+                },
+                {
+                    "skill": "ESP",
+                    "attribute": "INT",
+                    "url": "/es/psionics/esp/",
+                    "cost": 5,
+                    "type": "Broad",
+                    "items": [
+                        {
+                            "skill": "Mente de Batalla",
+                            "attribute": "INT",
+                            "url": "/es/psionics/esp/#mente-de-batalla",
+                            "cost": 4,
+                            "type": "Specialty",
+                            "css_class": "trained-only",
+                            "description": "Para usar esta habilidad, un psiónico se concentra en la batalla actual y realiza una tirada de habilidad. El éxito logrado indica el beneficio mientras la aplicación actual de la habilidad permanezca activa.\n\nUna tirada con éxito otorga al usuario un bonificador a sus tiradas de acción:\n- **Ordinario:** bonificador de -1 paso.\n- **Bueno:** bonificador de -2 pasos.\n- **Asombroso:** bonificador de -3 pasos.\n\nA efectos del uso de esta habilidad, \"batalla\" se define como cualquier situación en la que el personaje haya realizado una tirada de acción en el mismo asalto en que usa la habilidad de mente de batalla.\n\n**Beneficios de Rango:**\n- **Al rango 4 [Efecto Incrementado]:** el bonificador a las tiradas de acción mejora: Ordinario, -2 pasos; Bueno, -3 pasos; Asombroso, -4 pasos.\n- **Al rango 8 [Moverse como el Agua]:** el personaje que emplea esta capacidad gana un punto de último recurso temporal, que debe usar antes de que termine la duración de la capacidad o lo perderá. Este punto solo puede usarse para compensar daño.\n- **Al rango 12 [Precisión Infalible]:** el personaje gana un punto de último recurso temporal, que debe usarse antes de que termine la duración de la capacidad o se perderá. Este punto solo puede usarse para aumentar el éxito de un ataque realizado por el personaje que usa esta capacidad.\n"
+                        },
+                        {
+                            "skill": "Clariaudiencia",
+                            "attribute": "INT",
+                            "url": "/es/psionics/esp/#clariaudiencia",
+                            "cost": 2,
+                            "type": "Specialty",
+                            "css_class": "",
+                            "description": "Con esta habilidad, un personaje selecciona una ubicación y proyecta su mente a ese lugar, escuchando sonidos como si estuviera físicamente presente.\n\nLa clariaudiencia no filtra el ruido ambiental, por lo que el usuario puede tener problemas para discernir sonidos particulares. No proporciona ayuda para interpretar idiomas desconocidos o reconocer sonidos no familiares, y el oído Mental no puede moverse del lugar al que se proyecta. La ubicación en sí puede estar en movimiento (un vehículo, por ejemplo), pero tal objetivo requiere tiradas de habilidad adicionales si el rango al objetivo aumenta.\n\nCuanto mejor sea el resultado de la tirada de habilidad, más tiempo durará la capacidad: Ordinario, 1 asalto; Bueno, 2 asaltos; Asombroso, 3 asaltos. Esta duración se puede extender gastando 1 punto de energía psiónica por cada asalto adicional.\n\n| Distancia | Modificador |\n| :--- | :---: |\n| 1–10 metros | +0 |\n| 11–100 metros | +1 |\n| 101 m–1 km | +2 |\n| 2–10 km | +3 |\n| 11–100 km | +4 |\n| 101–1,000 km (órbita baja) | +5 |\n| 1,001–10,000 km (órbita alta) | +6 |\n\n**Beneficios de Rango:**\n- **Al rango 4 [Duración Incrementada]:** el incremento de tiempo aumenta a minutos (Ordinario, 1 minuto; Bueno, 2 minutos, Asombroso, 3 minutos).\n- **Al rango 6 [Cambio de Perspectiva]:** el personaje puede intentar otra tirada para mover la ubicación del oído Mental. La nueva tirada se modifica por la distancia desde la ubicación actual que se está escuchando.\n- **Al rango 8 [Duración Incrementada]:** el incremento de tiempo pasa a ser de 5 minutos (Ordinario, 5 minutos; Bueno, 10 minutos; Asombroso, 15 minutos).\n- **Al rango 12 [Duración Incrementada]:** el incremento pasa a ser de 30 minutos (Ordinario, 30 minutos; Bueno, 60 minutos; Asombroso, 90 minutos).\n"
+                        },
+                        {
+                            "skill": "Clarividencia",
+                            "attribute": "INT",
+                            "url": "/es/psionics/esp/#clarividencia",
+                            "cost": 2,
+                            "type": "Specialty",
+                            "css_class": "",
+                            "description": "Para emplear esta habilidad, un personaje selecciona una ubicación y proyecta su mente a ese lugar, viendo todo lo que sucede alrededor de ese punto como si estuviera físicamente allí.\n\nLa clarividencia no bloquea la visión normal, por lo que el usuario ve imágenes dobles a menos que tenga los ojos cerrados. Tampoco proporciona ayuda para ver a través de elementos que oscurezcan la visión, como paredes, puertas cerradas o oscuridad, y el ojo Mental no puede moverse del lugar seleccionado. La ubicación en sí puede estar en movimiento (un vehículo, por ejemplo), pero tal objetivo requiere tiradas de habilidad adicionales si el rango al objetivo aumenta.\n\nCuanto mejor sea el resultado de la tirada de habilidad, más tiempo durará la capacidad: Ordinario, 1 asalto; Bueno, 2 asaltos; Asombroso, 3 asaltos. Esta duración se puede extender gastando 1 punto de energía psiónica por cada asalto adicional.\n\nLos modificadores de situación por distancia y familiaridad son los mismos que para la Clariaudiencia.\n\n**Beneficios de Rango:**\n- **Al rango 4 [Duración Incrementada]:** el incremento de tiempo aumenta a minutos (Ordinario, 1 minuto; Bueno, 2 minutos, Asombroso, 3 minutos).\n- **Al rango 6 [Cambio de Perspectiva]:** el personaje puede intentar otra tirada para mover la ubicación del ojo Mental. La nueva tirada se modifica por la distancia desde la ubicación actual que se está viendo.\n- **Al rango 8 [Duración Incrementada]:** el incremento de tiempo pasa a ser de 5 minutos (Ordinario, 5 minutos; Bueno, 10 minutos; Asombroso, 15 minutos).\n- **Al rango 12 [Duración Incrementada]:** el incremento pasa a ser de 30 minutos (Ordinario, 30 minutos; Bueno, 60 minutos; Asombroso, 90 minutos).\n"
+                        },
+                        {
+                            "skill": "Caza Onírica",
+                            "attribute": "INT",
+                            "url": "/es/psionics/esp/#caza-onirica",
+                            "cost": 3,
+                            "type": "Specialty",
+                            "css_class": "trained-only",
+                            "description": "Aunque originalmente desarrollada para cazar animales, esta técnica funciona en cualquier ser vivo. El psiónico se concentra en el sujeto y se involucra mentalmente en una caza. Si la tirada de habilidad tiene éxito, el psiónico determina el lugar donde estará la presa en cualquier ubicación única en las próximas 24 horas (aunque no cuándo).\n\nCuanto mejor se conozcan los hábitos del objetivo, más fácil será la caza:\n- **Objetivo / territorio familiar:** bonificador de -2 / -1 pasos.\n- **Objetivo descrito / desconocido:** penalizador de +1 / +2 pasos.\n\nEl grado de éxito determina con qué precisión el psiónico puede identificar la ubicación:\n- **Ordinario:** dentro de 1000 metros.\n- **Bueno:** dentro de 500 metros.\n- **Asombroso:** dentro de 100 metros.\n\nLos personajes que reciben esta información pueden realizar tiradas de Percepción-avistar o Investigar-buscar con un bonificador de -1, -2 o -3 pasos para localizar o evitar ser sorprendidos por la presa.\n\n**Beneficios de Rango:**\n- **Al rango 3 [Precisión Mejorada]:** el psiónico reduce el tiempo en que la presa estará en un lugar a un margen de 3 horas.\n- **Al rango 6 [Precisión Mejorada]:** identificación mejorada: Ordinario 500m; Bueno 100m; Asombroso 50m.\n- **Al rango 9 [Sincronización Mejorada]:** el psiónico determina cuándo estará la presa en un lugar con un margen de 30 minutos.\n- **Al rango 12 [Precisión Mejorada]:** identificación mejorada: Ordinario 100m; Bueno 50m; Asombroso 10m.\n"
+                        },
+                        {
+                            "skill": "Empatía",
+                            "attribute": "INT",
+                            "url": "/es/psionics/esp/#empatia",
+                            "cost": 1,
+                            "type": "Specialty",
+                            "css_class": "",
+                            "description": "Esta habilidad permite a un psiónico \"leer\" las emociones superficiales de otro personaje. Esta capacidad ayuda al usuario en situaciones de encuentro. El objetivo debe estar dentro del rango visual.\n\nUn uso exitoso de la empatía proporciona una comprensión del estado emocional del objetivo (Combativo, Hostil, Neutral, Amistoso, Encantado o Fanático) y otorga un bonificador al usar habilidades de encuentro sobre ese personaje objetivo:\n- **Ordinario:** bonificador de -1 paso.\n- **Bueno:** bonificador de -2 pasos.\n- **Asombroso:** bonificador de -3 pasos.\n\n**Beneficios de Rango:**\n- **Al rango 4 [Relación]:** el empático puede sentir las emociones superficiales de otros dos personajes entre sí.\n- **Al rango 6 [Lectura de Aura]:** evalúa el estado de salud (sano, herido, enfermo, moribundo, demente, etc.). Otorga un bonificador de -1 a -3 pasos a las tiradas de Ciencia Médica, Conocimiento-primeros auxilios o Biokinesis-transferir daño (o curar si tiene rango 8+) usadas para tratar al objetivo. Los intentos sobre especies distintas sufren un penalizador de +1 paso.\n- **Al rango 8 [Relación]:** el empático puede aplicar esta habilidad a otros tres personajes.\n- **Al rango 9 [Conexión]:** desarrolla una conexión con un individuo para sentir sus emociones incluso cuando no está en el rango visual, a una distancia de hasta 1,5 km por rango.\n- **Al rango 12 [Relación]:** el empático puede aplicar esta habilidad a otros cuatro personajes.\n"
+                        },
+                        {
+                            "skill": "Lectura Mental",
+                            "attribute": "INT",
+                            "url": "/es/psionics/esp/#lectura-mental",
+                            "cost": 3,
+                            "type": "Specialty",
+                            "css_class": "",
+                            "description": "Esta habilidad permite a un psiónico \"leer\" los pensamientos superficiales de otro personaje. El objetivo debe estar dentro de los 500 metros (100m/200m/500m) del usuario. El contacto Mental permanece en vigor por un tiempo limitado y no puede extenderse mediante el uso de puntos de energía psiónica.\n\n- **Ordinario:** el contacto dura 1 fase después de realizar la tirada. Solo se perciben pensamientos aleatorios e inconexos.\n- **Bueno:** el contacto dura 2 fases. Además de los pensamientos aleatorios, se recibe más detalle y coherencia, como por qué el objetivo piensa en algo o alguien.\n- **Asombroso:** el contacto dura 3 fases. Se pueden leer los pensamientos superficiales completos, además de algún dato clave relacionado con lo que el usuario esperaba descubrir.\n\n**Beneficios de Rango:**\n- **Al rango 3 [Tiempo Extra]:** el personaje puede añadir una fase adicional a la duración: Ordinario, 2 fases; Bueno, 3 fases; Asombroso, 4 fases.\n- **Al rango 6 [Sonda]:** búsqueda enfocada en la mente de un objetivo para obtener una pieza específica de información (+2 pasos de penalización para alienígenas). Se aplican modificadores de resistencia de Voluntad.\n- **Al rango 9 [Tiempo Extra]:** la duración aumenta: Ordinario, 1 asalto; Bueno, 2 asaltos; Asombroso, 3 asaltos.\n- **Al rango 12 [Tiempo Extra]:** la duración aumenta: Ordinario, 1 minuto; Bueno, 2 minutos; Asombroso, 3 minutos.\n"
+                        },
+                        {
+                            "skill": "Navcognición",
+                            "attribute": "INT",
+                            "url": "/es/psionics/esp/#navcognicion",
+                            "cost": 3,
+                            "type": "Specialty",
+                            "css_class": "trained-only",
+                            "description": "Un personaje que usa esta habilidad puede determinar instintivamente su ubicación actual y trazar mentalmente un curso. Esto puede lograrse en una superficie planetaria, en el espacio normal e incluso a través del espacio de curvatura. Esta capacidad Mental sustituye al uso de la habilidad de Navegación.\n\nAl rango 1, el personaje selecciona una especialidad: navegación de superficie, astrografía de sistema o astrografía de motores de curvatura.\n\n| Situación/Condición | Modificador |\n| :--- | :---: |\n| Condiciones de combate / hostiles | +4 / +2 |\n| Territorio inexplorado / parcialmente explorado | +4 / +2 |\n| Menos de 5 minutos trazando | +1 por min. |\n| Más de 5 minutos trazando | -1 por min. |\n\n**Beneficios de Rango:**\n- **Al rango 4 [Tiempo de Viaje]:** capaz de determinar el camino más claro. Reduce el tiempo de viaje (superficie/sistema): Ordinario 75%; Bueno 50%; Asombroso 25% del normal.\n- **Al rango 4 [Distancia de Viaje]:** para espacio de curvatura, la distancia de viaje se multiplica: Ordinario x2; Bueno x5; Asombroso x10.\n- **Al rango 5 [Especialidades Extra]:** se puede seleccionar una segunda especialidad de Navegación.\n- **Al rango 6 [Claridad Mental]:** permite un bonificador de -4 pasos durante persecuciones, carreras o combate de vehículos para reducir penalizadores circunstanciales.\n- **Al rango 9 [Especialidades Extra]:** la especialidad restante de Navegación queda disponible.\n- **Al rango 12 [Rastreo]:** intenta rastrear el destino más probable de un sujeto, incluso a través del espacio de curvatura (+2 si fue visto, +4 si fue presenciado por otro/grabado).\n"
+                        },
+                        {
+                            "skill": "Postcognición",
+                            "attribute": "INT",
+                            "url": "/es/psionics/esp/#postcognicion",
+                            "cost": 3,
+                            "type": "Specialty",
+                            "css_class": "",
+                            "description": "Con esta habilidad, un personaje puede sentir el ambiente de un área e incluso \"ver\" eventos que ocurrieron allí en el pasado reciente. El personaje debe estar en la ubicación real para sentir la resonancia psíquica. En general, un personaje puede ver tantos días en el pasado como su rango de habilidad.\n\n- **Ordinario:** el personaje siente emociones generales que han quedado en un área.\n- **Bueno:** el psiónico también recibe breves destellos de eventos que pueden o no tener sentido.\n- **Asombroso:** el personaje experimenta realmente un breve encuentro como si estuviera en la escena cuando ocurrieron los hechos.\n\n**Beneficios de Rango:**\n- **Al rango 3 [Alcance Extendido]:** el personaje puede ver tantas semanas en el pasado como su rango de habilidad.\n- **Al rango 6 [Alcance Extendido]:** ve meses en el pasado por rango.\n- **Al rango 9 [Alcance Extendido]:** ve años en el pasado por rango.\n- **Al rango 12 [Alcance Extendido]:** ve décadas en el pasado por rango.\n"
+                        },
+                        {
+                            "skill": "Precognición",
+                            "attribute": "INT",
+                            "url": "/es/psionics/esp/#precognicion",
+                            "cost": 4,
+                            "type": "Specialty",
+                            "css_class": "trained-only",
+                            "description": "Esta habilidad es la capacidad de recibir impresiones sobre posibles eventos futuros: lo que el psiónico ve probablemente sucederá si nadie toma medidas para cambiarlo. En general, un personaje puede ver tantas horas en el futuro como su rango de habilidad.\n\nEn una tirada de habilidad exitosa, el personaje gana información sobre el evento, así como un punto de último recurso (LRP) gratuito, que solo puede usarse durante la escena.\n\n- **Ordinario:** percepciones de imágenes vagas. El LRP solo puede usarse para modificar una tirada que afecte directamente al psiónico (por ejemplo, reducir la tirada de ataque de un oponente).\n- **Bueno:** breves destellos de eventos venideros. El LRP puede usarse para modificar el resultado de cualquier acción realizada contra él/ella o por él/ella durante la escena.\n- **Asombroso:** experimenta mentalmente un breve encuentro como si viera los hechos transcurrir. El LRP puede aplicarse a cualquier tirada de habilidad realizada por cualquier personaje involucrado en la escena.\n\nForzar un destello dobla el coste en puntos de energía, aplica un penalizador de +3 pasos, y la habilidad no podrá volver a usarse conscientemente durante 2d6 días.\n\n**Beneficios de Rango:**\n- **Al rango 3 [Tiempo Incrementado]:** extiende la capacidad precognitiva a un número de días igual al rango de habilidad.\n- **Al rango 6 [Tiempo Incrementado]:** extiende a semanas igual al rango.\n- **Al rango 9 [Tiempo Incrementado]:** extiende a meses igual al rango.\n- **Al rango 12 [Tiempo Incrementado]:** extiende a años igual al rango.\n"
+                        },
+                        {
+                            "skill": "Psicometría",
+                            "attribute": "INT",
+                            "url": "/es/psionics/esp/#psicometria",
+                            "cost": 3,
+                            "type": "Specialty",
+                            "css_class": "",
+                            "description": "Esta habilidad otorga a su usuario la capacidad de leer impresiones psíquicas de objetos inanimados. El personaje debe tocar el objeto para obtener información sobre quién lo ha usado y en qué contexto. Se pueden estudiar herramientas, armas, ropa, joyas, libros, otros artículos personales e incluso cadáveres. Las personas y criaturas vivas no pueden ser estudiadas con esta habilidad.\n\n- **Ordinario:** el personaje recibe emociones simples asociadas al objeto.\n- **Bueno:** recibe imágenes simples asociadas al objeto.\n- **Asombroso:** el personaje experimenta un breve encuentro como si fuera la persona que usa el objeto o su dueño.\n\n**Beneficios de Rango:**\n- **Al rango 1 [Tesoros]:** el objeto en cuestión debe ser algo especial para el dueño (por ejemplo, un anillo de bodas).\n- **Al rango 4 [Uso Regular]:** el objeto puede ser simplemente algo que el dueño usaba regularmente (por ejemplo, un reloj).\n- **Al rango 8 [Uso Frecuente]:** algo que el dueño simplemente usaba con frecuencia (por ejemplo, un bolígrafo o llaves).\n- **Al rango 12 [Uso Mínimo]:** casi cualquier cosa perteneciente al dueño, siempre que la haya usado durante al menos una hora en total.\n"
+                        }
+                    ]
+                },
+                {
+                    "skill": "Psicoportación",
+                    "attribute": "VOL",
+                    "url": "/es/psionics/psychoportation/",
+                    "cost": 7,
+                    "type": "Broad",
+                    "items": [
+                        {
+                            "skill": "Alterar Velocidad",
+                            "attribute": "VOL",
+                            "url": "/es/psionics/psychoportation/#alterar-velocidad",
+                            "cost": 4,
+                            "type": "Specialty",
+                            "css_class": "trained-only",
+                            "description": "Esta habilidad no puede usarse sin entrenamiento. Al concentrarse, el personaje puede acelerar o desacelerar a sí mismo o a otro objetivo vivo dentro de un radio de 8 metros. El psiónico debe decidir si está acelerando o desacelerando antes de realizar la tirada de habilidad.\n\nEl efecto sobre la puntuación de la tirada de acción del objetivo depende del éxito:\n- **Ordinario:** +1 o -1 a la puntuación de la tirada de acción.\n- **Bueno:** +2 o -2 a la puntuación de la tirada de acción.\n- **Asombroso:** +3 o -3 a la puntuación de la tirada de acción.\n\nLa capacidad dura un asalto, pero la duración puede extenderse gastando 1 punto de energía psiónica por cada asalto adicional.\n\n**Beneficios de Rango:**\n- **Al rango 6 [Puntos de Acción]:** el objetivo gana o pierde una acción por asalto (hasta un máximo de 4 acciones) mientras dure el efecto.\n- **Al rango 12 [Parar/Arrancar Instantáneo]:** el objetivo gana o pierde otra acción (hasta un máximo de 4, mínimo de 0).\n"
+                        },
+                        {
+                            "skill": "Aportación",
+                            "attribute": "VOL",
+                            "url": "/es/psionics/psychoportation/#aportacion",
+                            "cost": 6,
+                            "type": "Specialty",
+                            "css_class": "trained-only",
+                            "description": "Esta habilidad no puede usarse sin entrenamiento. Esta capacidad permite a un personaje invocar un objeto inanimado desde una ubicación distante o desterrar un objeto a otra ubicación. El psiónico debe haber visto el objeto que intenta aportar.\n\nEl peso del objeto que se puede aportar depende del rango de habilidad y del éxito:\n- **Ordinario:** 1 kilogramo por rango.\n- **Bueno:** 2 kilogramos por rango.\n- **Asombroso:** 5 kilogramos por rango.\n\nEl objeto aparece o desaparece instantáneamente.\n\n**Beneficios de Rango:**\n- **Al rango 3 [Materia Viva]:** el psiónico puede aportar materia viva.\n- **Al rango 4 [Peso Incrementado]:** el límite de peso aumenta: Ordinario, 2kg/rango; Bueno, 5kg/rango; Asombroso, 10kg/rango.\n- **Al rango 6 [Aportación Precisa]:** el psiónico puede aportar un objeto exactamente a una ubicación específica sin desviación.\n- **Al rango 8 [Peso Incrementado]:** el límite de peso aumenta: Ordinario, 5kg/rango; Bueno, 10kg/rango; Asombroso, 20kg/rango.\n- **Al rango 9 [Aportaciones Grandes]:** el psiónico puede aportar objetos de hasta 1 metro cúbico de volumen.\n- **Al rango 12 [Peso Incrementado]:** el límite de peso aumenta: Ordinario, 10kg/rango; Bueno, 20kg/rango; Asombroso, 40kg/rango.\n- **Al rango 12 [Aportaciones Distantes]:** el psiónico puede aportar objetos de lugares que nunca ha visto, siempre que tenga una descripción clara.\n"
+                        },
+                        {
+                            "skill": "Duplicado",
+                            "attribute": "VOL",
+                            "url": "/es/psionics/psychoportation/#duplicado",
+                            "cost": 6,
+                            "type": "Specialty",
+                            "css_class": "trained-only",
+                            "description": "Esta habilidad no puede usarse sin entrenamiento. Esta capacidad permite a un personaje convocar un duplicado de sí mismo desde otra ubicación del multiverso. El duplicado es idéntico en todos los sentidos y posee las mismas habilidades y atributos que el psiónico.\n\nLa duración que persiste el duplicado depende del éxito:\n- **Ordinario:** 1 asalto.\n- **Bueno:** 2 asaltos.\n- **Asombroso:** 5 asaltos.\n\n**Beneficios de Rango:**\n- **Al rango 4 [Duración]:** la duración de la existencia del duplicado aumenta en 2 asaltos.\n- **Al rango 8 [Acción Independiente]:** el duplicado puede actuar independientemente del psiónico, aunque siguen compartiendo la misma reserva de energía psiónica.\n- **Al rango 12 [Duplicados Múltiples]:** el psiónico puede convocar hasta tres duplicados a la vez.\n"
+                        },
+                        {
+                            "skill": "Teletransportación",
+                            "attribute": "VOL",
+                            "url": "/es/psionics/psychoportation/#teletransportacion",
+                            "cost": 5,
+                            "type": "Specialty",
+                            "css_class": "trained-only",
+                            "description": "Esta habilidad no puede usarse sin entrenamiento. La teletransportación permite a un psiónico moverse instantáneamente desde su ubicación actual a otra. El psiónico también puede teletransportar objetos u otros personajes.\n\nEl rango y el límite de peso dependen del rango de habilidad y del éxito:\n- **Rango:** 10/100/1000 metros.\n- **Peso:** 10 kilogramos por rango (éxito Ordinario), 20 kilogramos por rango (éxito Bueno) o 40 kilogramos por rango (éxito Asombroso).\n\n**Beneficios de Rango:**\n- **Al rango 4 [Distancia Incrementada]:** el rango aumenta: 1km/10km/100km.\n- **Al rango 8 [Distancia Incrementada]:** el rango aumenta: 100km/1000km/Mundo.\n- **Al rango 12 [Distancia Incrementada]:** el rango aumenta: Mundo/Galaxia/Universo.\n"
+                        },
+                        {
+                            "skill": "Salto Temporal",
+                            "attribute": "VOL",
+                            "url": "/es/psionics/psychoportation/#salto-temporal",
+                            "cost": 6,
+                            "type": "Specialty",
+                            "css_class": "trained-only",
+                            "description": "Esta habilidad no puede usarse sin entrenamiento. Esta capacidad permite a un psiónico desplazarse a sí mismo hacia adelante en el tiempo. Para todos los demás, el psiónico parece desaparecer instantáneamente y reaparecer más tarde.\n\nLa duración del salto depende del éxito:\n- **Ordinario:** 1 fase.\n- **Bueno:** 1 asalto.\n- **Asombroso:** 2 asaltos.\n\n**Beneficios de Rango:**\n- **Al rango 4 [éxito Asombroso]:** el salto aumenta a 1 minuto.\n- **Al rango 8 [éxito Asombroso]:** el salto aumenta a 1 hora.\n- **Al rango 12 [éxito Asombroso]:** el salto aumenta a 1 día.\n"
+                        }
+                    ]
+                },
+                {
+                    "skill": "Telequinesis",
+                    "attribute": "VOL",
+                    "url": "/es/psionics/telekinesis/",
+                    "cost": 5,
+                    "type": "Broad",
+                    "items": [
+                        {
+                            "skill": "Crioquinesis",
+                            "attribute": "VOL",
+                            "url": "/es/psionics/telekinesis/#crioquinesis",
+                            "cost": 3,
+                            "type": "Specialty",
+                            "css_class": "trained-only",
+                            "description": "Esta habilidad no puede usarse sin entrenamiento. Al concentrarse, el personaje puede generar campos de frío intenso, congelando la mayoría de los líquidos y dañando el tejido vivo. El rango efectivo es de 24 metros (rango 6/12/24), y el frío afecta a todos los materiales dentro de un diámetro de 2 metros.\n\nEl daño de energía infligido a los seres vivos por este poder depende del resultado de la tirada de habilidad. Cuando un personaje adquiere por primera vez esta habilidad, es capaz de causar un daño de d4s/d4+2s/d4w.\n\n**Beneficios de Rango:**\n- **Al rango 5 [Daño Incrementado]:** el daño pasa a ser d4+2s/d6+2s/d4+2w.\n- **Al rango 6 [Encapsulamiento]:** el personaje es capaz de generar frío tan rápidamente que los objetos o criaturas en un ambiente húmedo o mojado se vuelven incapaces de moverse. La tirada de habilidad del personaje tiene un bonificador de -2 pasos si el objetivo está completamente mojado (sumergido en agua, por ejemplo). La tirada de habilidad determina la dificultad de la proeza de Fuerza requerida para liberarse.\n- **Al rango 9 [Daño Incrementado]:** el daño aumenta a d6+2s/d4+2w/d6+2w.\n- **Al rango 9 [Suspensión Criogénica]:** el personaje puede congelar a los seres vivos tan rápida y completamente que entran efectivamente en un estado temporal de animación suspendida. El objetivo puede usar su modificador de resistencia de Destreza para evitar ser el blanco de esta capacidad.\n"
+                        },
+                        {
+                            "skill": "Electroquinesis",
+                            "attribute": "VOL",
+                            "url": "/es/psionics/telekinesis/#electroquinesis",
+                            "cost": 3,
+                            "type": "Specialty",
+                            "css_class": "trained-only",
+                            "description": "Esta habilidad no puede usarse sin entrenamiento. Al concentrarse, el personaje puede generar y dirigir una descarga eléctrica a un objetivo dentro de un rango de 16 metros (rango 4/8/16). La carga persiste en el asalto posterior a su aplicación, lo que permite al psiónico descargar la energía en cualquier momento durante esos dos asaltos.\n\nEl daño de energía infligido a los seres vivos depende del éxito de la tirada de habilidad. Cuando se adquiere la habilidad por primera vez, causa un daño de d4+2s/d6+2s/d4w.\n\n**Beneficios de Rango:**\n- **Al rango 3 [Borrado de Datos]:** el personaje puede borrar masivamente soportes informáticos. A menos que el psiónico esté tocando el soporte, hay un penalizador a la tirada de habilidad basado en la distancia: a menos de 1 metro, +1 paso; a menos de 2 metros, +2 pasos; a menos de 3 metros, +3 pasos.\n- **Al rango 5 [Daño Incrementado]:** el daño aumenta a d6+2s/d4w/d4+2w.\n- **Al rango 6 [Sabotaje]:** el personaje puede usar la habilidad para engañar a sensores electrónicos y cámaras dentro de su línea de visión.\n- **Al rango 9 [Daño Incrementado]:** el daño aumenta a d4+2w/d6+2w/d8+2w.\n- **Al rango 9 [Bypass]:** el personaje puede anular cerraduras electrónicas sobrecargando o redirigiendo su circuitería.\n- **Al rango 12 [Interferencia]:** el personaje puede interferir señales de radio o sensores en un radio de 20 metros. Este radio puede extenderse 20 metros por cada punto de energía psiónica adicional gastado.\n"
+                        },
+                        {
+                            "skill": "Golpe Cinético",
+                            "attribute": "VOL",
+                            "url": "/es/psionics/telekinesis/#golpe-cinetico",
+                            "cost": 3,
+                            "type": "Specialty",
+                            "css_class": "trained-only",
+                            "description": "Esta habilidad no puede usarse sin entrenamiento. Esta capacidad permite a un psiónico proyectar una onda de energía cinética hacia un objetivo. El rango efectivo es de 16 metros (rango 4/8/16).\n\nEl impacto de la onda de energía puede causar un daño físico significativo. Cuando se adquiere por primera vez, Golpe Cinético inflige un daño de d4s/d4+2s/d4w.\n\n**Beneficios de Rango:**\n- **Al rango 4 [Daño Incrementado]:** el daño aumenta a d4+2s/d6+2s/d4+2w.\n- **Al rango 8 [Derribo]:** si el psiónico logra un éxito Bueno o Asombroso, el objetivo debe realizar una tirada de proeza de Fuerza o quedará derribado.\n- **Al rango 12 [Daño Incrementado]:** el daño aumenta a d6+2s/d4+2w/d6+2w.\n"
+                        },
+                        {
+                            "skill": "Escudo Cinético",
+                            "attribute": "VOL",
+                            "url": "/es/psionics/telekinesis/#escudo-cinetico",
+                            "cost": 3,
+                            "type": "Specialty",
+                            "css_class": "trained-only",
+                            "description": "Esta habilidad no puede usarse sin entrenamiento. Al concentrarse, el personaje puede crear un campo de energía cinética que rodea su cuerpo, protegiéndolo de ataques físicos. El escudo refleja o absorbe la energía cinética de los ataques entrantes.\n\nLa efectividad del escudo depende del éxito de la tirada de habilidad:\n- **Ordinario:** el escudo proporciona 1 punto de protección contra todos los ataques físicos.\n- **Bueno:** el escudo proporciona 2 puntos de protección contra todos los ataques físicos.\n- **Asombroso:** el escudo proporciona 3 puntos de protección contra todos los ataques físicos.\n\nEl escudo dura un asalto, pero la duración puede extenderse gastando 1 punto de energía psiónica por cada asalto adicional.\n\n**Beneficios de Rango:**\n- **Al rango 4 [Protección Mejorada]:** la protección proporcionada por el escudo aumenta: Ordinario, 2 puntos; Bueno, 3 puntos; Asombroso, 4 puntos.\n- **Al rango 8 [Escudo Amplio]:** el psiónico puede extender el escudo para proteger a un personaje adicional que esté a menos de 2 metros.\n- **Al rango 12 [Reflejar Ataques]:** el psiónico puede usar el escudo para reflejar los ataques físicos entrantes hacia el atacante. Esto requiere un éxito Asombroso en la tirada de habilidad. El ataque reflejado inflige la misma cantidad de daño que se le habría infligido al psiónico.\n"
+                        },
+                        {
+                            "skill": "Levitación",
+                            "attribute": "VOL",
+                            "url": "/es/psionics/telekinesis/#levitacion",
+                            "cost": 3,
+                            "type": "Specialty",
+                            "css_class": "",
+                            "description": "Con esta habilidad, un psiónico puede elevarse mentalmente del suelo y moverse por el aire. La velocidad de movimiento depende del resultado de la tirada de habilidad:\n- **Ordinario:** el personaje puede moverse a una cuarta parte de su ritmo normal de caminata.\n- **Bueno:** el personaje puede moverse a la mitad de su ritmo normal de caminata.\n- **Asombroso:** el personaje puede moverse a su ritmo normal de caminata.\n\nLa capacidad dura un minuto, pero la duración puede extenderse gastando 1 punto de energía psiónica por cada minuto adicional.\n\n**Beneficios de Rango:**\n- **Al rango 4 [Velocidad Incrementada]:** el ritmo de movimiento mientras levita aumenta: Ordinario, media caminata; Bueno, caminata completa; Asombroso, carrera completa.\n- **Al rango 8 [Levantar Objeto]:** el psiónico puede usar la levitación para levantar y mover un objeto que pese hasta 10 kilogramos por rango.\n- **Al rango 12 [Vuelo]:** el psiónico puede moverse por el aire tan fácilmente como si caminara por el suelo, sin penalizaciones ni pérdida de acciones.\n"
+                        },
+                        {
+                            "skill": "Fotoquinesis",
+                            "attribute": "VOL",
+                            "url": "/es/psionics/telekinesis/#fotoquinesis",
+                            "cost": 1,
+                            "type": "Specialty",
+                            "css_class": "",
+                            "description": "Con esta habilidad, un personaje puede excitar o reducir la cantidad de luz en un área específica. El área afectada tiene un diámetro de 2 metros (éxito Ordinario), 4 metros (éxito Bueno) o 6 metros (éxito Asombroso).\n\nLa duración del efecto depende del éxito de la tirada de habilidad: éxito Marginal, 1 fase; éxito Ordinario, 1 asalto; éxito Bueno, 2 asaltos; éxito Asombroso, 1 minuto. La duración puede extenderse gastando 1 punto de energía psiónica por cada unidad de duración adicional.\n\n**Beneficios de Rango:**\n- **Al rango 3 [Ilusión Simple]:** el psiónico puede crear ilusiones visuales de tamaño pequeño.\n- **Al rango 4 [Duración Extendida]:** la unidad de duración pasa a ser de 5 minutos.\n- **Al rango 6 [Destello]:** el personaje puede activar un destello repentino de luz que ciega a cualquiera que mire en esa dirección durante d4 fases (éxito Ordinario), d4+1 fases (éxito Bueno) o d6+1 fases (éxito Asombroso).\n- **Al rango 8 [Duración Extendida]:** la unidad de duración pasa a ser de 30 minutos.\n- **Al rango 9 [Ilusión Gigantesca]:** el psiónico puede crear una ilusión en cualquier lugar dentro de su línea de visión, siempre que quepa en un cubo de 2 metros por rango de habilidad.\n- **Al rango 12 [Duración Extendida]:** la unidad de duración pasa a ser de 1 hora.\n- **Al rango 12 [Ilusión Mejorada]:** cualquiera que intente reconocer que la ilusión es falsa sufre un penalizador en sus tiradas de Intuición: éxito Ordinario, +2 pasos; éxito Bueno, +3 pasos; éxito Asombroso, +4 pasos.\n"
+                        },
+                        {
+                            "skill": "Psicocinesis",
+                            "attribute": "VOL",
+                            "url": "/es/psionics/telekinesis/#psicocinesis",
+                            "cost": 3,
+                            "type": "Specialty",
+                            "css_class": "",
+                            "description": "La psicocinesis es la capacidad de mover objetos. Antes de realizar la tirada de habilidad, el psiónico debe elegir si está intentando mover un objeto o atacar con uno. La cantidad de peso que se puede mover depende del rango de habilidad y del éxito:\n- **Ordinario:** 10 kilogramos por rango.\n- **Bueno:** 20 kilogramos por rango.\n- **Asombroso:** 40 kilogramos por rango.\n\nEl rango efectivo es de 10/20/50 metros. La capacidad dura un asalto, pero la duración puede extenderse gastando 1 punto de energía psiónica por cada asalto adicional.\n\nCuando se usa para atacar, el daño infligido depende del éxito: Ordinario, d4s; Bueno, d4+2s; Asombroso, d4w.\n\n**Beneficios de Rango:**\n- **Al rango 4 [Ritmo de Movimiento]:** el psiónico puede mover un objeto a su ritmo de caminata.\n- **Al rango 5 [Daño Incrementado]:** el daño aumenta a d4w/d4+1w/d6w.\n- **Al rango 8 [Ritmo de Movimiento]:** el psiónico puede mover un objeto a su ritmo de carrera.\n- **Al rango 9 [Daño Incrementado]:** el daño aumenta a d4+1w/d6w/d4m.\n- **Al rango 12 [Manipulación Fina]:** el psiónico puede realizar tareas delicadas (por ejemplo, hacer un nudo) sin penalizaciones.\n"
+                        },
+                        {
+                            "skill": "Piroquinesis",
+                            "attribute": "VOL",
+                            "url": "/es/psionics/telekinesis/#piroquinesis",
+                            "cost": 3,
+                            "type": "Specialty",
+                            "css_class": "trained-only",
+                            "description": "Esta habilidad no puede usarse sin entrenamiento. Al concentrarse, el personaje puede excitar las moléculas de un objeto, haciendo que estalle en llamas o infligiendo daño a una criatura viva. El rango efectivo es de 24 metros (rango 6/12/24).\n\nEl daño de energía infligido al tejido vivo depende del éxito de la tirada de habilidad. Cuando se adquiere por primera vez, Piroquinesis inflige un daño de d4s/d4+2s/d4w.\n\n**Beneficios de Rango:**\n- **Al rango 4 [Daño Incrementado]:** el daño aumenta a d4+2s/d6+2s/d4+2w.\n- **Al rango 8 [Daño Incrementado]:** el daño aumenta a d6+2s/d4+2w/d6+2w.\n- **Al rango 12 [Bola de Fuego]:** el psiónico puede provocar una explosión de fuego que afecta a todos los objetivos en un diámetro de 4 metros.\n"
+                        },
+                        {
+                            "skill": "El Abrazo de Sheya",
+                            "attribute": "VOL",
+                            "url": "/es/psionics/telekinesis/#el-abrazo-de-sheya",
+                            "cost": 4,
+                            "type": "Specialty",
+                            "css_class": "trained-only",
+                            "description": "Esta habilidad no puede usarse sin entrenamiento. Esta capacidad permite a un personaje asfixiar telequinéticamente a un objetivo. El personaje debe tener una línea de visión clara hacia el objetivo, y este debe estar a menos de 24 metros.\n\nUna tirada de habilidad exitosa indica que el psiónico ha agarrado con éxito la garganta del objetivo. El objetivo sufre un penalizador de +2 pasos en todas las acciones y sufre daño por aturdimiento cada asalto: éxito Ordinario, d4s; éxito Bueno, d4+2s; éxito Asombroso, d4w.\n\nLa capacidad dura un asalto, pero la duración puede extenderse gastando 1 punto de energía psiónica por cada asalto adicional.\n\n**Beneficios de Rango:**\n- **Al rango 4 [Daño Incrementado]:** el daño aumenta a d4+2s/d6+2s/d4w.\n- **Al rango 8 [Daño Incrementado]:** el daño aumenta a d6+2s/d4w/d4+2w.\n- **Al rango 12 [Objetivos Múltiples]:** el psiónico puede afectar a un número de personajes igual a su rango de habilidad.\n"
+                        }
+                    ]
+                },
+                {
+                    "skill": "Telepatía",
+                    "attribute": "PER",
+                    "url": "/es/psionics/telepathy/",
+                    "cost": 5,
+                    "type": "Broad",
+                    "items": [
+                        {
+                            "skill": "Contacto",
+                            "attribute": "PER",
+                            "url": "/es/psionics/telepathy/#contacto",
+                            "cost": 3,
+                            "type": "Specialty",
+                            "css_class": "",
+                            "description": "Con esta habilidad, un personaje puede enviar y recibir pensamientos de otro personaje, generalmente con el propósito de intercambiar información. Se pueden aplicar modificadores, dependiendo de la distancia, la familiaridad y la disposición de la mente objetivo a ser contactada.\n\nEl tipo de pensamientos que se pueden intercambiar depende del resultado de una tirada de habilidad:\n- **Ordinario:** se pueden intercambiar conceptos simples (preguntas breves y respuestas de una palabra).\n- **Bueno:** puede haber una discusión moderada (intercambiar notas, una nota cada 2 fases).\n- **Asombroso:** los personajes que se comunican pueden tener una discusión detallada, como si estuvieran conversando vocalmente.\n\nSi el objetivo previsto por el usuario psiónico no está dispuesto a comunicarse, el modificador de resistencia de Voluntad del objetivo se aplica como un penalizador a la tirada de habilidad, además de cualquier otro modificador de situación. Si se establece contacto de todos modos, una mente involuntaria puede expulsar al usuario realizando una proeza de Voluntad exitosa o una tirada de la habilidad Resolución Mental, con un penalizador (+1, +2 o +3 pasos) dependiendo del grado de éxito del usuario psiónico.\n\n**Beneficios de Rango:**\n- **Al rango 4 [Duración Incrementada]:** la unidad de duración es de 1 minuto, más un minuto adicional por cada punto de energía psiónica gastado para extenderla. Al rango 8, esta duración se convierte en 5 minutos, y al rango 12, la unidad base de duración se convierte en 30 minutos.\n- **Al rango 6 [Idioma]:** un telépata aprende a comprender el significado subyacente de ideas expresadas incluso en idiomas que no entiende. El personaje puede intentar una tirada de proeza de Inteligencia para comprender la idea general del concepto que se comunica, o para aclarar sus propios pensamientos al objetivo. A discreción del Director de Juego, se aplica un penalizador de +2 pasos al intentar comunicarse con mentes alienígenas.\n- **Al rango 12 [Intercambio]:** Un telépata que alcanza el rango 12 en contacto puede intentar intercambiar su conciencia con la del objetivo, intercambiando cuerpos de manera efectiva.\n"
+                        },
+                        {
+                            "skill": "Enlace de Datos",
+                            "attribute": "PER",
+                            "url": "/es/psionics/telepathy/#enlace-de-datos",
+                            "cost": 4,
+                            "type": "Specialty",
+                            "css_class": "trained-only",
+                            "description": "Esta habilidad no puede usarse sin entrenamiento. Esta habilidad es la capacidad de vincular la propia mente con un ordenador (o una máquina cibernética, si se usan las reglas opcionales para cibertecnología) sin usar una conexión física de ningún tipo.\n\nLa habilidad enlace de datos se puede utilizar para operar ordenadores o maquinaria cibernética con órdenes mentales, para proyectar la propia mente en el flujo de datos sin utilizar un conector de interfaz neuronal (NIJack) o integrador de red, o para examinar los datos de un ordenador explorando mentalmente la unidad de almacenamiento.\n\nEn términos de juego, el personaje puede usar las mismas funciones proporcionadas por un sistema operativo de ordenador: copiar, eliminar, reconocimiento de errores, gestión de archivos, protección, protocolo y guardar.\n\n**Beneficios de Rango:**\n- **Al rango 3 [Distancia Incrementada]:** la distancia a la que el personaje puede usar la habilidad de enlace de datos aumenta a 4 (sin penalizador) / 8 (penalizador de +1 paso) / 12 (penalizador de +2 pasos) metros. Al rango 6, esto se convierte en 8/16/25 metros. Al rango 9, aumenta nuevamente a 15/30/50 metros, y al rango 12, mejora a 30/60/100 metros.\n- **Al rango 3 [Ranuras de Memoria]:** el personaje tiene efectivamente 1 ranura de memoria activa, que puede usarse para almacenar datos o programas. Al rango 6, la memoria activa aumenta a 2 ranuras, a 3 ranuras al rango 9 y a 4 ranuras al rango 12.\n- **Al rango 4 [Duración Incrementada]:** la unidad de duración base aumenta a 1 minuto, más un minuto adicional por punto de energía psiónica gastado para mantenerla. Al rango 8, esta unidad de duración pasa a ser de 5 minutos, y al rango 12, aumenta a 30 minutos.\n- **Al rango 4 [Editar]:** el personaje puede editar la información almacenada en los ordenadores, borrando, resecuenciando o cambiando la apariencia de los datos.\n- **Al rango 6 [Roboenlace]:** el personaje puede tomar el control temporal de los robots. Con una tirada de habilidad exitosa, el personaje puede implantar comandos en un solo robot, que luego se comporta como si hubiera sido afectado por una Sugerencia de Telepatía.\n"
+                        },
+                        {
+                            "skill": "Drenar",
+                            "attribute": "PER",
+                            "url": "/es/psionics/telepathy/#drenar",
+                            "cost": 4,
+                            "type": "Specialty",
+                            "css_class": "trained-only",
+                            "description": "Esta habilidad no puede usarse sin entrenamiento. El personaje se vuelve capaz de absorber la energía de otro ser vivo desde una corta distancia (rango 1/2/4). Cuando el psiónico adquiere la habilidad, selecciona una de las características del objetivo (FUE, DES, CON, INT o VOL) para gobernar el tipo de efecto.\n\nCualquier éxito en la tirada de habilidad da como resultado que el objetivo pierda 1 punto de la característica relacionada. Si el objetivo llega a una puntuación de 0 en la capacidad afectada, queda indefenso e incapaz de hacer nada hasta que su puntuación mejore al menos a 1.\n\n**Beneficios de Rango:**\n- **Al rango 1 [Selección de Característica]:** Al rango 1, 4, 8 y 12, el personaje puede elegir una nueva característica para absorber. La característica específica afectada se elige antes de realizar la tirada de habilidad.\n- **Al rango 6 [Transferencia]:** el usuario puede obtener temporalmente el uso de los puntos de característica drenados. El beneficio dura hasta que la víctima recupera los puntos perdidos (hasta un máximo de 24 horas).\n"
+                        },
+                        {
+                            "skill": "Proyección Empática",
+                            "attribute": "PER",
+                            "url": "/es/psionics/telepathy/#proyeccion-empatica",
+                            "cost": 3,
+                            "type": "Specialty",
+                            "css_class": "",
+                            "description": "Con esta habilidad, un personaje puede alterar el estado de ánimo de otros seres, incluso de aquellos con quienes no comparte un idioma, como extranjeros, alienígenas o animales. En términos de juego, esto cambia el estado emocional del objetivo (Combativo, Hostil, Neutral, Amistoso, Encantado o Fanático) en uno, dos o tres pasos, dependiendo del éxito (Ordinario, Bueno o Asombroso). En caso de un Fallo Crítico, el estado emocional del objetivo cambia dos pasos en la dirección opuesta a la deseada.\n\nEl objetivo debe estar dentro del rango visual del psiónico. La duración mínima es de d4 fases; añada un número adicional de fases igual al rango de habilidad del usuario. Se pueden seleccionar múltiples objetivos, pero cada objetivo adicional más allá del primero proporciona un penalizador acumulativo de +1 paso a la tirada de habilidad.\n\n**Beneficios de Rango:**\n- **Al rango 4 [Duración Incrementada]:** la duración es en asaltos (modificada por un número adicional de asaltos igual al rango de habilidad del usuario). Al rango 8, la duración aumenta a minutos. Finalmente, al rango 12, la duración es en intervalos de 5 minutos.\n- **Al rango 4 [Ignorar penalizador]:** el usuario puede ignorar un paso de penalizador, ya sea por el estado emocional actual del objetivo o por el número de objetivos previstos. Al rango 8, el personaje puede ignorar dos pasos de penalizador, y al rango 12, el personaje puede ignorar tres.\n"
+                        },
+                        {
+                            "skill": "Ilusión",
+                            "attribute": "PER",
+                            "url": "/es/psionics/telepathy/#ilusion",
+                            "cost": 3,
+                            "type": "Specialty",
+                            "css_class": "",
+                            "description": "Esta habilidad permite a un personaje engañar la mente de un objetivo proyectando una ilusión en ella. Una ilusión puede ser visual o sonora, pero no puede afectar ningún otro sentido. Una ilusión no es capaz de causar daño directamente, pero puede hacerlo indirectamente. La habilidad solo se puede usar contra objetivos que el personaje pueda ver, y tiene un rango máximo de 5 metros por rango de habilidad del usuario. Cualquier acción que intente el usuario mientras mantiene una ilusión recibe un penalizador de +1 paso.\n\nEl resultado de la tirada de habilidad del personaje determina cuán poderosa es la ilusión, lo que proporciona un penalizador a la tirada de Percepción-intuición del objetivo para reconocer la ilusión: Ordinario, +1 paso; Bueno, +2 pasos; Asombroso, +3 pasos.\n\nSe pueden seleccionar múltiples objetivos para recibir una sola ilusión, pero cada objetivo adicional más allá del primero proporciona un penalizador acumulativo de +1 paso a la tirada de habilidad del usuario psiónico. Cada objetivo tiene derecho a hacer una tirada de Percepción-intuición para ver si la ilusión es efectiva contra ese individuo.\n\n**Beneficios de Rango:**\n- **Al rango 5 [Desaparecer]:** un personaje que alcanza el rango 5 puede ocultar su presencia, haciéndose efectivamente invisible. La habilidad afecta a un número de observadores igual al rango del usuario psiónico en Ilusión sin penalizador a la tirada de habilidad; cada objetivo adicional proporciona un penalizador acumulativo de +1 paso a la tirada de habilidad del usuario.\n- **Al rango 9 [Delirio]:** el usuario se vuelve capaz de proyectar una ilusión que el objetivo ayuda a crear. El usuario proporciona el esquema más básico de una sugerencia, y la mente del objetivo completa los detalles. (Trátelo como una tirada de habilidad de Telepatía-sugerencia, aunque conlleva un bonificador de +1 en lugar de un penalizador). Si el delirio surte efecto, el objetivo responde como si se tratara de estímulos físicos.\n"
+                        },
+                        {
+                            "skill": "Explosión Mental",
+                            "attribute": "PER",
+                            "url": "/es/psionics/telepathy/#explosion-mental",
+                            "cost": 4,
+                            "type": "Specialty",
+                            "css_class": "trained-only",
+                            "description": "Esta habilidad no puede usarse sin entrenamiento. Esta habilidad permite al usuario dirigir una poderosa explosión de energía Mental pura a otra mente. El objetivo debe estar dentro del contacto visual y a no más de 40 metros de distancia (rango 10/20/40). Los penalizadores para el rango medio y largo son +1 y +2, respectivamente.\n\nEl daño depende del resultado de una tirada de habilidad y del rango del usuario en la habilidad. La armadura no protege contra una explosión Mental.\n\nCuando un personaje adquiere esta habilidad por primera vez, es capaz de causar un daño de d4+1s/d4+2s/d8+2s.\n\n**Beneficios de Rango:**\n- **Al rango 5 [Daño Incrementado]:** el daño pasa a ser d4+2s/d6+2s/d8+2s. Al rango 9, el daño causado por la habilidad aumenta a 2d4+2s/2d6+2s/2d8+2s.\n- **Al rango 12 [Objetivos Adicionales]:** el telépata puede afectar a un objetivo adicional, que también debe estar dentro del rango. El modificador de rango para el uso de la habilidad se basa en el rango del objetivo más lejano.\n"
+                        },
+                        {
+                            "skill": "Escudo Mental",
+                            "attribute": "PER",
+                            "url": "/es/psionics/telepathy/#escudo-mental",
+                            "cost": 2,
+                            "type": "Specialty",
+                            "css_class": "",
+                            "description": "Esta habilidad permite a un personaje establecer una defensa Mental contra los poderes psiónicos. Escudo Mental protege contra estas habilidades psiónicas: Contacto, Drenar, Empatía, Ilusión, Leer la mente, Explosión Mental, Borrado Mental, Sugerencia y Agotar.\n\nEscudo Mental proporciona un penalizador a la tirada de habilidad de otro personaje psiónico que intenta usar cualquiera de las habilidades mencionadas anteriormente. La cantidad del penalizador depende del resultado de la tirada de habilidad del usuario: Ordinario, +1 paso; Bueno, +2 pasos; Asombroso, +3 pasos. Estos penalizadores son acumulativos con cualquier otra resistencia o protección que pueda tener un personaje.\n\nEl escudo creado por esta habilidad permanece en su lugar durante 5-8 horas (d4+4) o hasta que no logra detener un poder psiónico dirigido contra él, momento en el que colapsa.\n\n**Beneficios de Rango:**\n- **Al rango 4 [Parada]:** puede intentar desviar mentalmente el uso de Contacto, Ilusión, Leer la mente, Explosión Mental, Borrado Mental, Sugerencia o Agotar en su contra. El intento de parada consume la próxima acción disponible del personaje, pero si la tirada de habilidad de Telepatía-escudo Mental tiene éxito, la habilidad contraria falla automáticamente. Además, con un éxito Asombroso al usar esta habilidad, el intento de parada no le cuesta puntos de energía psiónica al personaje.\n- **Al rango 8 [Defender]:** el personaje puede extender el escudo Mental para proteger a otros a 10 metros. Por cada persona adicional, el psiónico debe gastar 1 punto de energía psiónica, a cambio de lo cual puede aplicar su propio modificador de escudo Mental a los ataques psiónicos dirigidos al sujeto. Al rango 12, el psiónico también puede intentar desviar dichos ataques dirigidos a cualquiera de los sujetos protegidos.\n- **Al rango 12 [Redirigir]:** el personaje puede usar escudo Mental para devolver un ataque a un atacante. El defensor debe hacer una tirada de habilidad de escudo Mental (modificada por el modificador de resistencia de Voluntad del atacante) para determinar el efecto de la redirección. Esto requiere que el usuario gaste 1 punto de energía psiónica; un resultado Asombroso elimina la necesidad de gastar este punto. Un psiónico no puede redirigir un ataque dirigido a otro personaje.\n"
+                        },
+                        {
+                            "skill": "Borrado Mental",
+                            "attribute": "PER",
+                            "url": "/es/psionics/telepathy/#borrado-mental",
+                            "cost": 5,
+                            "type": "Specialty",
+                            "css_class": "trained-only",
+                            "description": "Esta habilidad no puede usarse sin entrenamiento. Con esta habilidad, un personaje psiónico puede borrar recuerdos de la mente de un objetivo. Se pueden borrar los recuerdos de un minuto por cada rango que el personaje tenga en Borrado Mental. El objetivo debe estar dentro del rango visual, y a no más de 10 metros de distancia (rango 2/5/10). Los recuerdos no deben tener más de 1 día por rango del usuario psiónico.\n\nEl resultado de la tirada de habilidad del personaje determina lo difícil que es para el objetivo recordar eventos durante el tiempo \"borrado\". En un éxito Ordinario, el objetivo recibe un penalizador de +1 paso en las proezas de Inteligencia para recordar lo que sucedió durante ese tiempo. En un éxito Bueno, recibe un penalizador de +2 pasos. Y en un éxito Asombroso, recibe un penalizador de +3 pasos.\n\nEn cualquier caso, los personajes con recuerdos borrados sabrán que algo anda mal. Simplemente no recordarán exactamente cómo sucedieron las cosas.\n\n**Beneficios de Rango:**\n- **Al rango 3 [Alcance Extendido]:** el personaje puede \"ver\" en el pasado un número de semanas igual a su rango de habilidad. Al rango 6, esto se convierte en meses; al 9 en años; y al 12 aumenta a décadas.\n- **Al rango 6 [Editar]:** el personaje puede proporcionar recuerdos falsos para llenar los vacíos en la mente del objetivo. El éxito de la tirada de habilidad determina el modificador para los intentos de identificar los recuerdos falsos: Ordinario, +1, Bueno, +2, Asombroso, +3.\n- **Al rango 12 [Desaprender]:** un personaje que alcanza el rango 12 con esta habilidad puede eliminar conocimientos específicos de la mente del objetivo. Una tirada de habilidad exitosa (resistida por el modificador de Voluntad del objetivo) elimina 1, 2 o 3 rangos de habilidad (con un éxito Ordinario, Bueno o Asombroso) de la mente del objetivo.\n"
+                        },
+                        {
+                            "skill": "Armadura Psíquica",
+                            "attribute": "PER",
+                            "url": "/es/psionics/telepathy/#armadura-psiquica",
+                            "cost": 2,
+                            "type": "Specialty",
+                            "css_class": "",
+                            "description": "Esta habilidad crea una \"zona de amortiguamiento\" psíquica alrededor del personaje, que ayuda a disminuir el efecto de los ataques de Drenar, Explosión Mental y Agotar dirigidos hacia él.\n\nLa armadura psíquica le proporciona al personaje una serie de \"puntos de defensa psiónica\". Un éxito Ordinario le da al personaje d6 puntos de defensa; uno Bueno le da d6+2 puntos de defensa; y uno Asombroso le da d8+2. Los puntos de defensa se mantienen durante d4+4 horas o hasta que se usan. Un personaje no puede usar esta habilidad para ganar más puntos de defensa hasta que se pierdan los anteriores.\n\nEstos puntos se usan para reducir la cantidad de daño sufrido por Explosión Mntal (uno a uno) o para darle al personaje otra opción para resistirse a los ataques de Agotar, Drenar o Proyección empática. Dos puntos de defensa reducen un punto de fatiga causado por Telepatía-agotar, y tres puntos de defensa reducen un punto de pérdida de característica causado por Telepatía-drenar. Cuatro puntos de defensa reducen en un grado la medida en la que el estado emocional de un personaje ha sido alterado por Telepatía-proyección empática.\n\n**Beneficios de Rango:**\n- **Al rango 4 [Efecto Incrementado]:** el personaje gana d6+2 puntos de defensa en un éxito Ordinario, d8+2 en un éxito Bueno, y d8+4 en un éxito Asombroso. Al rango 8, el personaje gana d8+2 puntos de defensa en un éxito Ordinario, d8+4 en un éxito Bueno, y d12+4 en un éxito Asombroso. Al rango 12, el personaje gana d8+4 puntos de defensa en un éxito Ordinario, d12+4 en un éxito Bueno, y d12+6 en un éxito Asombroso.\n"
+                        },
+                        {
+                            "skill": "Proyección Psíquica",
+                            "attribute": "PER",
+                            "url": "/es/psionics/telepathy/#proyeccion-psiquica",
+                            "cost": 5,
+                            "type": "Specialty",
+                            "css_class": "",
+                            "description": "Con esta habilidad, un personaje puede separar la mente del cuerpo y viajar a donde desee, dejando atrás su forma física. La conciencia del psiónico es capaz de volar y atravesar objetos sólidos. La forma Mental del personaje es invisible e intangible, aunque su cuerpo físico sigue siendo vulnerable.\n\nAl viajar psíquicamente, la velocidad de movimiento del personaje es igual a (INT + VOL) x 2. El personaje está efectivamente desnudo, siendo incapaz de llevar consigo objetos físicos como ropa o armas, aunque puede aparecer como desee. Solo otros seres proyectados psíquicamente pueden percibir al personaje de alguna manera, aunque el personaje puede percibir el mundo real a través de la vista y el oído.\n\nUn individuo proyectado puede regresar a su cuerpo físico en cualquier momento deseado, simplemente viajando de regreso a él y realizando con éxito otra tirada de habilidad de Telepatía-proyección psíquica.\n\n**Beneficios de Rango:**\n- **Al rango 12 [Posesión de Cuerpos]:** el personaje puede intentar tomar el control de un cuerpo que ya está ocupado haciendo una tirada de habilidad de Telepatía-proyección psíquica, modificada por el modificador de resistencia de Voluntad del objetivo. El resultado determina cuánto control tiene el personaje sobre la nueva forma.\n"
+                        },
+                        {
+                            "skill": "Sugerir",
+                            "attribute": "PER",
+                            "url": "/es/psionics/telepathy/#sugerir",
+                            "cost": 3,
+                            "type": "Specialty",
+                            "css_class": "",
+                            "description": "Esta habilidad especializada permite al personaje hipnotizar a otra persona. Si tiene éxito, sugiere implantar un pensamiento en la mente de otra persona y convencer a esa persona de que el pensamiento es propio. El objetivo debe estar dentro del rango visual del psiónico.\n\nNinguna sugerencia puede tener un efecto permanente o inmediatamente perjudicial en el personaje al que está dirigida. Una sugerencia dura 1, 2 o 3 horas, dependiendo del grado de éxito de la tirada de habilidad del usuario (Ordinario, Bueno o Asombroso). Puede expirar antes de que se alcance su límite de tiempo, pero no se puede extender sin otra aplicación exitosa de la habilidad exactamente en el momento en que la sugerencia original debe terminar.\n\nEl Director de Juego asignará una bonificación o penalizador a la tirada de habilidad del usuario para reflejar lo extrema que es la sugerencia (p. ej., oponerse a la naturaleza del personaje proporcionaría un penalizador de +3 pasos o más).\n\n**Beneficios de Rango:**\n- **Al rango 6 [Sugerencia Programada]:** el personaje puede implantar una sugerencia que no hace efecto de inmediato. En cambio, cuando el sujeto experimenta algún tipo de señal sensorial, actúa según la sugerencia. El evento desencadenante puede ser hasta 1 hora, 1 día o 1 mes después, dependiendo del resultado de la tirada de habilidad.\n"
+                        },
+                        {
+                            "skill": "Agotar",
+                            "attribute": "PER",
+                            "url": "/es/psionics/telepathy/#agotar",
+                            "cost": 2,
+                            "type": "Specialty",
+                            "css_class": "",
+                            "description": "Esta habilidad inflige daño por fatiga al objetivo, quizás provocando que decida que necesita descansar. El objetivo debe estar a la vista y a no más de 30 metros de distancia (rango 10/20/30). Los penalizadores a medio y largo alcance son de +1 y +2 respectivamente.\n\nLa cantidad de daño infligido depende del resultado de una tirada de habilidad: Ordinario, 1 punto de fatiga; Bueno, 2 puntos; Asombroso, 3 puntos.\n\n**Beneficios de Rango:**\n- **Al rango 4 [Efecto Incrementado]:** el alcance se incrementa a 15/30/50 metros. Al rango 8, un éxito Ordinario inflige 2 puntos de fatiga, 3 si es Bueno y 4 si es Asombroso. Al rango 12, el alcance aumenta de nuevo a 20/40/60 metros.\n- **Al rango 9 [Transferencia]:** el personaje puede tomar los puntos de fatiga extraídos del objetivo y usarlos. Los puntos de fatiga pueden exceder el total de fatiga normal del personaje, y permanecen hasta perderse por la actividad normal, o han pasado 24 horas, lo que ocurra primero.\n"
+                        },
+                        {
+                            "skill": "Deshacer",
+                            "attribute": "PER",
+                            "url": "/es/psionics/telepathy/#deshacer",
+                            "cost": 3,
+                            "type": "Specialty",
+                            "css_class": "",
+                            "description": "Con esta habilidad, un telépata puede revertir los efectos de un uso exitoso de Telepatía-ilusión, borrado Mental o sugerir. El telépata debe lograr un mejor resultado que el usuario de la habilidad telepática original, con un modificador de +1 paso por rango de diferencia si el rango del usuario original es mayor, o un modificador de -1 paso por rango de diferencia si el rango del usuario original es menor. Solo se permite un intento por día.\n"
+                        },
+                        {
+                            "skill": "Guía",
+                            "attribute": "PER",
+                            "url": "/es/psionics/telepathy/#guia",
+                            "cost": 4,
+                            "type": "Specialty",
+                            "css_class": "trained-only",
+                            "description": "Esta habilidad no puede usarse sin entrenamiento. Con una tirada de habilidad exitosa, el telépata puede implantar una de sus habilidades no psiónicas en la mente de un objetivo durante el tiempo que continúe gastando puntos de energía psiónica. El intento conlleva los mismos modificadores situacionales que la habilidad Contacto. El objetivo debe estar dentro del rango visual del psiónico.\n\nEl sujeto adquiere acceso a la habilidad general apropiada en un éxito Ordinario, la mitad del rango del telépata (redondeado hacia abajo) en la habilidad especializada con un éxito Bueno, o el rango del telépata -1 en un éxito Asombroso. Está claro que el telépata no puede conferir habilidades que no posee él mismo, y no puede conferir habilidades adquiridas a través de la Guía de otra persona.\n\n**Beneficios de Rango:**\n- **Al rango 6 [Tiempo Extendido]:** el usuario solo necesita gastar puntos de energía psiónica cada 5 asaltos para poder seguir concediendo la habilidad al objetivo.\n- **Al rango 12 [Conducto]:** el usuario puede transferir una habilidad no psiónica que no posee sacándola de la mente de un donante dispuesto.\n"
+                        },
+                        {
+                            "skill": "Sometimiento",
+                            "attribute": "PER",
+                            "url": "/es/psionics/telepathy/#sometimiento",
+                            "cost": 3,
+                            "type": "Specialty",
+                            "css_class": "trained-only",
+                            "description": "Esta habilidad permite al usuario engendrar sentimientos de calma o incluso distanciamiento en cualquier especie inteligente. El objetivo debe encontrarse dentro del alcance visual.\n\nCon un resultado Ordinario, el objetivo se vuelve menos violento y recibe un penalizador de +1 a las tiradas de combate, incluyendo las de acción. En un éxito Bueno, la reacción es aún mayor, otorgando un penalizador de +3 a las tiradas de combate y de acción. Y en un éxito Asombroso, el objetivo se vuelve incapaz de iniciar un ataque contra otro ser vivo y dudará una fase antes de atacar objetos, estructuras o elementos inanimados.\n\nDicho sea de paso, la mayoría de los Aleerin nunca soñarían con usar esta habilidad para aprovecharse de otro ser. Para hacerlo, es necesario que el Aleerin supere una tirada de Resolución Mental.\n\n**Beneficios de Rango:**\n- **Al rango 4 [Efecto Incrementado]:** el usuario puede afectar a dos objetivos con la misma tirada de habilidad. Al rango 8, puede afectar a cuatro objetivos, y a ocho objetivos al rango 12.\n"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

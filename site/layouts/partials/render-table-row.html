@@ -1,0 +1,64 @@
+{{ $item := .item }}
+{{ $columns := .columns }}
+{{ $colCount := .colCount }}
+{{ $file := .file }}
+{{ $key := .key }}
+{{ $index := .index }}
+{{ $hidden_fields := .hidden_fields }}
+
+{{ $rowId := printf "desc-%s-%s-%s-%d" $file $key ((or $item.name $item.skill $item.id) | urlize) $index }}
+
+{{/* Check if there are ANY displayable fields in expansion */}}
+{{ $hasVisibleDetails := false }}
+{{ if $item.description }}{{ $hasVisibleDetails = true }}{{ end }}
+{{ if not $hasVisibleDetails }}
+  {{ range $field_key := $hidden_fields }}
+    {{ if index $item $field_key }}{{ $hasVisibleDetails = true }}{{ end }}
+  {{ end }}
+{{ end }}
+
+{{ $itemUrl := $item.url }}
+<tr id="{{ (or $item.name $item.skill $item.model $item.id) | urlize }}" class="data-row {{ if $hasVisibleDetails }}has-description{{ end }}"
+  data-target="{{ $rowId }}" data-type="{{ $item.type }}">
+  {{ range $columns }}
+  {{ if and (not (in $hidden_fields .key)) (ne .key "description") }}
+  <td class="cell-{{ .key }}">
+    {{ if and .link $itemUrl }}
+    <a href="{{ $itemUrl }}">{{ index $item .key | safeHTML }}</a>
+    {{ else }}
+    {{ index $item .key | safeHTML }}
+    {{ end }}
+  </td>
+  {{ end }}
+  {{ end }}
+</tr>
+{{ if $hasVisibleDetails }}
+<tr id="{{ $rowId }}" class="description-row" style="display: none;">
+  <td colspan="{{ $colCount }}" class="pa3 bg-panel-alt silver i" style="border-top: none;">
+    <div>
+      <div class="mb2">
+        {{ range $field_key := $hidden_fields }}
+        {{ $column_slice := where $columns "key" $field_key }}
+        {{ if $column_slice }}
+        {{ $column := index $column_slice 0 }}
+        {{ $val := index $item $field_key }}
+        {{ if $val }}
+        <div class="hidden-field-item">
+          <span class="neon-green mr2">{{ $column.name }}:</span>
+          <span class="silver">{{ $val }}</span>
+        </div>
+        {{ end }}
+        {{ end }}
+        {{ end }}
+      </div>
+
+      {{ if $item.description }}
+      <div class="flex items-start">
+        <span class="neon-amber mr2">›</span>
+        <span>{{ $item.description | safeHTML }}</span>
+      </div>
+      {{ end }}
+    </div>
+  </td>
+</tr>
+{{ end }}
