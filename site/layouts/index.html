@@ -11,7 +11,7 @@
         </h2>
       </div>
 
-      <div class="flex-auto overflow-y-auto" style="max-height: 350px;">
+      <div class="flex-auto overflow-y-auto index-card-content">
         {{ if eq .Section "skills" }}
         {{ $groups := .Pages.GroupByParam "category" }}
         {{ $categoryOrder := slice "Combat" "Psionics" "Social" "Technical" "Other" }}
@@ -63,10 +63,9 @@
             <span class="mr2 neon-cyan">›</span>
             <a href="{{ .RelPermalink }}" class="link silver hover-white f5 whitespace-nowrap">{{ .Title }}</a>
             {{ with .Description }}
-            <div class="toc-leader flex-auto mx2"
-              style="border-bottom: 1px dotted rgba(255,255,255,0.2); margin: 0 10px; position:relative; top:-2px;">
+            <div class="toc-leader flex-auto mx2 toc-dotted-line">
             </div>
-            <span class="toc-description dn db-ns f7 o-50 truncate" style="max-width: 50%;">{{ . }}</span>
+            <span class="toc-description dn db-ns f7 o-50 truncate toc-max-width">{{ . }}</span>
             {{ end }}
           </li>
           {{ end }}
