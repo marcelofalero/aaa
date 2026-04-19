@@ -65,21 +65,42 @@ def load_mapping():
 
 def apply_mapping(text, mapping):
     if not text or not isinstance(text, str): return text
+    
+    # Identify blocks to skip: Markdown links [text](url) and Hugo shortcodes {{< ... >}}
+    # We replace them with placeholders, apply mapping, and then restore them.
+    placeholders = []
+    
+    def store_block(match):
+        placeholders.append(match.group(0))
+        return f"__BLOCK_PLACEHOLDER_{len(placeholders)-1}__"
+    
+    # Combined pattern for Markdown links and Hugo shortcodes
+    # Handles multiline links: [text]\s*({{< relref ... >}}) or [text]\s*(URL)
+    block_pattern = r'(\[[\s\S]*?\]\s*\([\s\S]*?\)|{{<[\s\S]*?>}})'
+    text_with_placeholders = re.sub(block_pattern, store_block, text, flags=re.DOTALL)
+    
     # Soft mapping using terminology rules
     sorted_en_terms = sorted(mapping.keys(), key=len, reverse=True)
     for en in sorted_en_terms:
         # Avoid clobbering common Spanish words like 'con' or 'mil' with short game terms like 'CON' (attribute)
-        # We do this by making short terms (length <= 3) case-sensitive.
         is_short = len(en) <= 3
         flags = 0 if is_short else re.IGNORECASE
         
         # Use a regex that respects word boundaries for alphanumeric terms
         if re.match(r'^\w', en):
-            pattern = r'\b' + re.escape(en) + r'\b'
+            pattern = f"\\b{re.escape(en)}\\b"
         else:
             pattern = re.escape(en)
-        text = re.sub(pattern, mapping[en], text, flags=flags)
-    return text
+        
+        text_with_placeholders = re.sub(pattern, mapping[en], text_with_placeholders, flags=flags)
+    
+    # Restore blocks
+    def restore_block(match):
+        idx = int(match.group(1))
+        return placeholders[idx]
+    
+    final_text = re.sub(r'__BLOCK_PLACEHOLDER_(\d+)__', restore_block, text_with_placeholders)
+    return final_text
 
 def get_localized(node, lang):
     """Extracts the language-specific block from the 'localized' list."""
@@ -167,6 +188,14 @@ def rebuild_all():
             flaws_raw = yaml.load(f, Loader=yaml.FullLoader)
         process_perks_flaws(to_list(perks_raw.get('items', [])), to_list(flaws_raw.get('items', [])), mapping)
 
+    # Backgrounds
+    backgrounds_yaml = os.path.join(DATA_SOURCES_DIR, 'backgrounds.yaml')
+    if os.path.exists(backgrounds_yaml):
+        print('Processing Backgrounds...')
+        with open(backgrounds_yaml, 'r', encoding='utf-8') as f:
+            backgrounds_raw = yaml.load(f, Loader=yaml.FullLoader)
+        process_backgrounds(to_list(backgrounds_raw.get('items', [])), mapping)
+
 def apply_rules_to_node(node, mapping, lang='en'):
     if isinstance(node, dict):
         new_node = {}
@@ -205,6 +234,22 @@ def apply_rules_to_node(node, mapping, lang='en'):
             
             if k in ['items', 'config'] and isinstance(v, dict):
                 # Optimize for Humans (YAML Map) -> Optimize for Machines (JSON List)
+                # Create a simplified index structure for the list page
+                index_data = {
+                    'config': {
+                        'columns': {
+                            'en': [
+                                {'name': 'Background', 'key': 'name', 'link': True},
+                                {'name': 'Description', 'key': 'summary'}
+                            ],
+                            'es': [
+                                {'name': 'Trasfondo', 'key': 'name', 'link': True},
+                                {'name': 'Descripción', 'key': 'summary'}
+                            ]
+                        }
+                    },
+                    'items': []
+                }
                 item_list = []
                 for item_id, item_data in v.items():
                     # Ensure it's a dict
@@ -423,6 +468,118 @@ def process_perks_flaws(perks_list, flaws_list, mapping):
         
         json_suffix = '.es.json' if lang == 'es' else '.json'
         with open(os.path.join(SITE_DATA_DIR, 'perks_and_flaws' + json_suffix), 'w', encoding='utf-8') as f:
+            json.dump(combined, f, indent=4, ensure_ascii=False)
+
+def process_backgrounds(backgrounds_list, mapping):
+    for lang in ['en', 'es']:
+        processed_items = []
+        columns = [
+            {"name": "Background" if lang == "en" else "Antecedente", "key": "name", "link": True},
+            {"name": "Summary" if lang == "en" else "Resumen", "key": "summary"},
+            {"name": "Favored Broad Skill" if lang == "en" else "Habilidad Amplia", "key": "favored_broad_skill"},
+            {"name": "Favored Specialty Skills" if lang == "en" else "Especialidades", "key": "favored_specialty_skills"},
+            {"name": "Favored Perks" if lang == "en" else "Ventajas", "key": "favored_perks"},
+            {"name": "Flaw" if lang == "en" else "Defecto", "key": "flaw"}
+        ]
+
+        for item in backgrounds_list:
+            loc = get_localized(item, lang)
+            title = loc.get('name') or item.get('id', 'unknown')
+            slug = slugify(item.get('id') or title)
+            url = f"/backgrounds/{slug}/"
+            if lang == 'es': url = f"/es{url}"
+
+            # Full description for Markdown content
+            full_description = loc.get('description', "")
+            if lang == 'es':
+                full_description = apply_mapping(full_description, mapping)
+
+            # Extract summary for table column (first sentence)
+            summary = full_description.split('.')[0].strip()
+            if summary and not summary.endswith('.'):
+                summary += '.'
+
+            # Process all fields
+            processed_item = {
+                "name": title,
+                "summary": summary,
+                "favored_broad_skill": translate_field(item.get('favored_broad_skill', ''), None, mapping, lang),
+                "url": url,
+                "skill_url": url # Backward compatibility for some layouts
+            }
+
+            # Map remaining visible fields
+            for field in ['favored_specialty_skills', 'favored_perks', 'flaw', 'equipment', 'special_ability', 'tendencies']:
+                val = loc.get(field, "")
+                if lang == 'es':
+                    val = apply_mapping(val, mapping)
+                processed_item[field] = val
+            
+            processed_items.append(processed_item)
+
+            # Generate Markdown
+            out_dir = f'site/content/backgrounds/{slug}'
+            os.makedirs(out_dir, exist_ok=True)
+            suffix = '.es.md' if lang == 'es' else '.md'
+            
+            content = f'+++\ntitle = "{title}"\ntype = "background"\nlayout = "background"\n+++\n\n'
+            content += f'{full_description}\n\n'
+            
+            # Use specific headers matching the existing structure
+            headers = {
+                "favored_broad_skill": "Favored Broad Skill" if lang == "en" else "Paquete de Habilidades",
+                "favored_specialty_skills": "Favored Specialty Skills" if lang == "en" else "Habilidades de Especialidad Favorecidas",
+                "favored_perks": "Favored Perks" if lang == "en" else "Ventajas Favorecidas",
+                "flaw": "Automatic Flaw" if lang == "en" else "Defecto Automático",
+                "equipment": "Starting Equipment" if lang == "en" else "Equipo Inicial",
+                "special_ability": "Special Ability" if lang == "en" else "Capacidad Especial",
+                "tendencies": "Tendencies (Pick 2)" if lang == "en" else "Tendencias (Elige 2)"
+            }
+
+            content += f'## {headers["favored_broad_skill"]}:\n* {processed_item["favored_broad_skill"] or ("None." if lang == "en" else "Ninguna.")}\n\n'
+            
+            skills_val = processed_item["favored_specialty_skills"]
+            if '<br>' in skills_val:
+                skills_val = "\n".join([f"* {s.strip()}" for s in skills_val.split('<br>')])
+            
+            content += f'## {headers["favored_specialty_skills"]}:\n{skills_val}\n\n'
+            content += f'## {headers["favored_perks"]}:\n* {processed_item["favored_perks"]}\n\n'
+            content += f'## {headers["flaw"]}:\n* {processed_item["flaw"]}\n\n'
+            content += f'## {headers["equipment"]}:\n{processed_item["equipment"]}\n\n'
+            content += f'## {headers["special_ability"]}:\n{processed_item["special_ability"]}\n\n'
+            
+            if processed_item.get("tendencies"):
+                tend_val = processed_item["tendencies"]
+                if '<br>' in tend_val:
+                    tend_val = "\n".join([f"* {s.strip()}" for s in tend_val.split('<br>')])
+                content += f'## {headers["tendencies"]}:\n{tend_val}\n\n'
+            
+            if loc.get('footnote'):
+                content += f'---\n\n{loc["footnote"]}\n'
+            
+            with open(os.path.join(out_dir, '_index' + suffix), 'w', encoding='utf-8') as f:
+                f.write(content)
+
+        # Build final JSON with minimalist columns
+        minimal_columns = [
+            {"key": "name", "name": "Background" if lang == 'en' else "Procedencia", "link": True},
+            {"key": "summary", "name": "Description" if lang == 'en' else "Descripción"}
+        ]
+        
+        combined = {
+            "search_config": {
+                "display_name": "BACKGROUNDS" if lang == 'en' else "PROCEDENCIA",
+                "base_url": "/backgrounds/",
+                "section": "rules"
+            },
+            "columns": minimal_columns,
+            "all": {
+                "items": [{"name": "Backgrounds" if lang == "en" else "Antecedentes", "items": processed_items}]
+            }
+        }
+        
+        json_suffix = '.es.json' if lang == 'es' else '.json'
+        with open(os.path.join(SITE_DATA_DIR, 'backgrounds' + json_suffix), 'w', encoding='utf-8') as f:
             json.dump(combined, f, indent=4, ensure_ascii=False)
 
 def process_skills(skills_list, mapping):

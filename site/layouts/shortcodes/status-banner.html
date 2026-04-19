@@ -1,0 +1,39 @@
+<div class="status-banner banner-{{ .Get 0 | lower }}">
+    <div class="status-icon">
+        {{ if eq (.Get 0 | lower) "wip" }}
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+        {{ end }}
+    </div>
+    <div class="status-text">
+        <strong>{{ .Get 0 | upper }}</strong>: This content is currently under development and may change.
+    </div>
+</div>
+
+<style>
+.status-banner {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    background: rgba(var(--accent-color-rgb), 0.1);
+    border: 1px solid rgba(var(--accent-color-rgb), 0.3);
+    color: var(--text-color);
+}
+
+.status-banner.banner-wip {
+    background: rgba(255, 165, 0, 0.1);
+    border-color: rgba(255, 165, 0, 0.5);
+}
+
+.status-icon svg {
+    width: 24px;
+    height: 24px;
+    color: orange;
+}
+
+.status-text strong {
+    color: orange;
+}
+</style>
