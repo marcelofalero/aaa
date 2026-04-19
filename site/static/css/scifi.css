@@ -269,11 +269,7 @@ td {
   padding: 0.5rem 1rem;
   border-bottom: 1px solid rgba(75, 181, 193, 0.3);
   /* subtle table border */
-  text-align: center;
-}
-
-td:first-child {
-  text-align: left;
+  text-align: left !important;
 }
 
 tr:not(.table-separator):not(.description-row).has-description:hover td {
