@@ -267,7 +267,7 @@
                             "url": "/skills/acrobatics#zero-g-training",
                             "cost": 3,
                             "type": "Specialty",
-                            "css_class": ""
+                            "css_class": "trained-only"
                         }
                     ]
                 },
@@ -382,7 +382,7 @@
                             "url": "/skills/athletics#swim",
                             "cost": 2,
                             "type": "Specialty",
-                            "css_class": ""
+                            "css_class": "trained-only"
                         },
                         {
                             "skill": "Throw",
@@ -457,7 +457,7 @@
                             "url": "/skills/entertainment#musical-instrument",
                             "cost": 2,
                             "type": "Specialty",
-                            "css_class": ""
+                            "css_class": "trained-only"
                         },
                         {
                             "skill": "Sing",
@@ -498,7 +498,7 @@
                             "url": "/skills/navigation#astrogationdrivespace",
                             "cost": 3,
                             "type": "Specialty",
-                            "css_class": ""
+                            "css_class": "trained-only"
                         },
                         {
                             "skill": "Astrogation—system",
@@ -589,7 +589,7 @@
                             "url": "/skills/stamina#resist-pain",
                             "cost": 5,
                             "type": "Specialty",
-                            "css_class": ""
+                            "css_class": "trained-only"
                         }
                     ]
                 },
@@ -719,7 +719,7 @@
                             "url": "/skills/culture#etiquette",
                             "cost": 3,
                             "type": "Specialty",
-                            "css_class": ""
+                            "css_class": "trained-only"
                         },
                         {
                             "skill": "Diplomacy",
@@ -735,7 +735,7 @@
                             "url": "/skills/culture#first-encounter",
                             "cost": 3,
                             "type": "Specialty",
-                            "css_class": ""
+                            "css_class": "trained-only"
                         }
                     ]
                 },
@@ -870,14 +870,6 @@
                     "type": "Broad",
                     "items": [
                         {
-                            "skill": "Psionic Law",
-                            "attribute": "INT",
-                            "url": "/skills/law#psionic-law",
-                            "cost": 3,
-                            "type": "Specialty",
-                            "css_class": ""
-                        },
-                        {
                             "skill": "Court procedures",
                             "attribute": "INT",
                             "url": "/skills/law#court-procedures",
@@ -899,7 +891,15 @@
                             "url": "/skills/law#law-specific-skill",
                             "cost": 2,
                             "type": "Specialty",
-                            "css_class": ""
+                            "css_class": "trained-only"
+                        },
+                        {
+                            "skill": "Psionics",
+                            "attribute": "INT",
+                            "url": "/skills/law#psionics",
+                            "cost": 3,
+                            "type": "Specialty",
+                            "css_class": "trained-only"
                         }
                     ]
                 },
@@ -924,7 +924,7 @@
                             "url": "/skills/leadership#inspire",
                             "cost": 3,
                             "type": "Specialty",
-                            "css_class": ""
+                            "css_class": "trained-only"
                         }
                     ]
                 },
@@ -1022,7 +1022,7 @@
                             "url": "/skills/computer-science#hacking",
                             "cost": 4,
                             "type": "Specialty",
-                            "css_class": ""
+                            "css_class": "trained-only"
                         },
                         {
                             "skill": "Hardware",
@@ -1063,7 +1063,7 @@
                             "url": "/skills/demolitions#scratch-built-explosives",
                             "cost": 3,
                             "type": "Specialty",
-                            "css_class": ""
+                            "css_class": "trained-only"
                         },
                         {
                             "skill": "Set explosives",
@@ -1088,7 +1088,7 @@
                             "url": "/skills/knowledge#language-specific-skill",
                             "cost": 3,
                             "type": "Specialty",
-                            "css_class": ""
+                            "css_class": "trained-only"
                         },
                         {
                             "skill": "Psionics",
@@ -1096,7 +1096,7 @@
                             "url": "/skills/knowledge#psionics",
                             "cost": 3,
                             "type": "Specialty",
-                            "css_class": ""
+                            "css_class": "trained-only"
                         },
                         {
                             "skill": "Computer Operation",
@@ -1104,7 +1104,7 @@
                             "url": "/skills/knowledge#computer-operation",
                             "cost": 2,
                             "type": "Specialty",
-                            "css_class": ""
+                            "css_class": "trained-only"
                         },
                         {
                             "skill": "Deduce",
@@ -1120,37 +1120,13 @@
                             "url": "/skills/knowledge#first-aid",
                             "cost": 3,
                             "type": "Specialty",
-                            "css_class": ""
+                            "css_class": "trained-only"
                         },
                         {
-                            "skill": "Language",
+                            "skill": "Research",
                             "attribute": "INT",
-                            "url": "/skills/knowledge#language",
+                            "url": "/skills/knowledge#research",
                             "cost": 2,
-                            "type": "Specialty",
-                            "css_class": ""
-                        },
-                        {
-                            "skill": "Medical Knowledge",
-                            "attribute": "INT",
-                            "url": "/skills/knowledge#medical-knowledge",
-                            "cost": 3,
-                            "type": "Specialty",
-                            "css_class": ""
-                        },
-                        {
-                            "skill": "Street knowledge",
-                            "attribute": "WIL",
-                            "url": "/skills/knowledge#street-knowledge",
-                            "cost": 3,
-                            "type": "Specialty",
-                            "css_class": ""
-                        },
-                        {
-                            "skill": "Technical Knowledge",
-                            "attribute": "INT",
-                            "url": "/skills/knowledge#technical-knowledge",
-                            "cost": 3,
                             "type": "Specialty",
                             "css_class": ""
                         }
@@ -1177,7 +1153,7 @@
                             "url": "/skills/life-science#psionics",
                             "cost": 3,
                             "type": "Specialty",
-                            "css_class": ""
+                            "css_class": "trained-only"
                         },
                         {
                             "skill": "Biology",
@@ -1209,7 +1185,7 @@
                             "url": "/skills/life-science#xenology",
                             "cost": 3,
                             "type": "Specialty",
-                            "css_class": ""
+                            "css_class": "trained-only"
                         },
                         {
                             "skill": "Zoology",
@@ -1250,7 +1226,7 @@
                             "url": "/skills/medical-science#xenomedicine-specific",
                             "cost": 3,
                             "type": "Specialty",
-                            "css_class": ""
+                            "css_class": "trained-only"
                         },
                         {
                             "skill": "Forensics",
@@ -1274,7 +1250,7 @@
                             "url": "/skills/medical-science#surgery",
                             "cost": 5,
                             "type": "Specialty",
-                            "css_class": ""
+                            "css_class": "trained-only"
                         },
                         {
                             "skill": "Treatment",
@@ -1282,7 +1258,7 @@
                             "url": "/skills/medical-science#treatment",
                             "cost": 4,
                             "type": "Specialty",
-                            "css_class": ""
+                            "css_class": "trained-only"
                         }
                     ]
                 },
@@ -1438,7 +1414,7 @@
                             "url": "/skills/vehicle-operation#air-vehicle",
                             "cost": 5,
                             "type": "Specialty",
-                            "css_class": ""
+                            "css_class": "trained-only"
                         },
                         {
                             "skill": "Land vehicle",
@@ -1454,7 +1430,7 @@
                             "url": "/skills/vehicle-operation#space-vehicle",
                             "cost": 5,
                             "type": "Specialty",
-                            "css_class": ""
+                            "css_class": "trained-only"
                         },
                         {
                             "skill": "Water vehicle",

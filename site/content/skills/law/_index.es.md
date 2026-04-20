@@ -6,71 +6,135 @@ type = "skill"
 layout = "list"
 +++
 
-Esta habilidad general proporciona a un personaje conocimientos generales sobre las leyes y sistemas legales de su sociedad nativa. También puede tratarse como una habilidad de encuentro para cambiar la actitud de un individuo.
+Esta habilidad general proporciona a un personaje conocimientos
 
-En una acción legal, el personaje y el oponente realizan tiradas de habilidad alternas hasta que alguien obtiene un Fallo Crítico o un resultado Asombroso.
+generales sobre las leyes y sistemas legales de su sociedad nativa.
 
-## Habilidades de Especialidad
+También puede tratarse como una habilidad de encuentro para cambiar la
+
+actitud de un individuo.
+
+
+En una acción legal, el personaje y el oponente realizan tiradas de
+
+habilidad alternas hasta que alguien obtiene un Fallo Crítico o un
+
+resultado Asombroso.
+
+
+## Procedimientos judiciales
 {{< specialty attr="INT" untrained="yes" cost="3" >}}
 
-Abogados, jueces y otros utilizan esta habilidad para interactuar en un entorno judicial. Esta especialidad se usa para defender un caso o punto de vista en un procedimiento oficial.
+Abogados, jueces y otros utilizan esta habilidad para interactuar
 
-### Ley [Específica]
-*No se puede usar sin estar entrenado.*
+en un
 
-Para cada compra por separado de esta especialidad, un personaje selecciona una cultura o tipo de ley específico
-### Beneficios de Rango
-- **Efecto Mejorado:** Bonificación de -1 en el rango 3, -2 en el rango 6, -3 en el rango 9 y -4 en el rango 12.
+entorno de sala de tribunal. Esta especialidad se utiliza para
 
-### Procedimientos de aplicación de la ley
-Oficiales de policía, detectives, cazarrecompensas y otros utilizan esta habilidad para seguir (o eludir) los procedimientos legales de aplicación de la ley. Los temas incluyen vigilancia, registro e incautación, arresto y detención, y redacción de informes.
-Esta especialidad también se utiliza para determinar qué tan "legal" o sólido es un arresto.
-### Ley psiónica
-*No se puede usar sin estar entrenado.*
+argumentar
 
-Los abogados, jueces y otros utilizan esta habilidad para interactuar en salas de tribunales y en reuniones legislativas. Este aspecto de la habilidad amplia de Ley se utiliza para argumentar un caso o un punto de vista en un procedimiento oficial.
+un caso o punto de vista en un procedimiento oficial.
+
 
 ---
 
-## Law enforcement procedures
+## Procedimientos policiales
 {{< specialty attr="INT" untrained="yes" cost="3" >}}
 
-Police officers, detectives, bounty hunters, and others use this skill to follow (or bend) legal law enforcement procedures. Topics covered include:
-- Knowing laws concerning surveillance, search, and seizure.
-- Proper arrest and detainment procedures.
-- Filling out reports and Otros official paperwork.
+Oficiales de policía, detectives, cazarrecompensas y otros
 
-This specialty is also used to determine how "Bueno" an arrest is (providing ammunition to the lawyers who will try to make the arrest stick).
+utilizan esta
+
+habilidad para seguir (o eludir) los procedimientos legales de
+
+aplicación
+
+de la ley. Los temas cubiertos incluyen:
+
+- Conocer las leyes relativas a la vigilancia, el registro y la
+
+incautación.
+
+- Procedimientos adecuados de detención y arresto.
+
+- Completar informes y otros trámites oficiales.
+
+
+Esta especialidad también se utiliza para determinar qué tan
+
+"bueno" es un
+
+arresto (proporcionando munición a los abogados que intentarán que
+
+el
+
+arresto se mantenga).
+
 
 ---
 
+## Ley, habilidad específica
+{{< specialty attr="INT" untrained="no" cost="2" >}}
+
+Por cada compra separada de esta especialidad, un personaje
+
+selecciona
+
+una cultura específica o un tipo específico de ley (ley marítima,
+
+ley de
+
+salvamento, etc.). A medida que se mejora la habilidad de
+
+especialidad,
+
+el personaje adquiere un conocimiento progresivamente más sólido
+
+de las
+
+leyas y sistemas legales de esa cultura o especialidad.
+
+
+⊗ **Efecto incrementado:** En rangos más altos, el personaje se vuelve
+
+más competente dentro del sistema legal de la cultura en cuestión.
+
+El uso
+
+de la habilidad específica proporciona una reducción al dado de
+
+situación:
+
+- **bonificación de -1 al rango 3**
+
+- **bonificación de -2 al rango 6**
+
+- **bonificación de -3 al rango 9**
+
+- **bonificación de -4 al rango 12**
+
+
 ---
 
-## Law, specific skill
-{{< specialty attr="INT" untrained="yes" cost="3" >}}
+## Psiónica
+{{< specialty attr="INT" untrained="no" cost="3" >}}
 
-For each separate purchase of this specialty, a Personaje selects a specific Cultura or a specific type of law (maritime law, salvage law, etc.). As the Especialidad is improved, the Personaje gains a progressively stronger grasp on the laws and legal systems of that Cultura or specialty.
+Abogados, jueces y otros utilizan esta habilidad para interactuar
 
-⊗ **Increased Effect:** At higher ranks, the Personaje becomes more proficient within the legal system of the Cultura in question. Using the specific skill provides a reduction to the Dado de Situación:
-- **-1 bonus at Rank 3**
-- **-2 bonus at Rank 6**
-- **-3 bonus at Rank 9**
-- **-4 bonus at Rank 12**
----
+en
 
----
+salas de justicia y en reuniones legislativas. Este aspecto de la
 
-## Law, specific skill
-{{< specialty attr="INT" untrained="yes" cost="2" >}}
+habilidad amplia de Ley se utiliza para argumentar un caso o un
 
-For each separate purchase of this specialty, a Personaje selects a specific Cultura or a specific type of law (maritime law, salvage law, etc.). As the Especialidad is improved, the Personaje gains a progressively stronger grasp on the laws and legal systems of that Cultura or specialty.
+punto de
 
-⊗ **Increased Effect:** At higher ranks, the Personaje becomes more proficient within the legal system of the Cultura in question. Using the specific skill provides a reduction to the Dado de Situación:
-- **-1 bonus at Rank 3**
-- **-2 bonus at Rank 6**
-- **-3 bonus at Rank 9**
-- **-4 bonus at Rank 12**
----
+vista en un procedimiento oficial relacionado CON las leyes,
+
+derechos y
+
+regulaciones psiónicas.
+
 
 ---
 

@@ -6,49 +6,103 @@ type = "skill"
 layout = "list"
 +++
 
-Esta habilidad amplia representa la formación de un personaje en las ciencias físicas. Las tiradas de habilidad que involucran esta habilidad se realizan de la misma manera que las tiradas de la habilidad de Conocimiento.
+Esta habilidad amplia representa la formación de un personaje
+en las
 
----
+ciencias físicas. Las tiradas de habilidad que involucran esta
+
+habilidad se realizan de la misma manera que las tiradas de la
+
+habilidad de Conocimiento.
+
 
 ## Astronomía
 {{< specialty attr="INT" untrained="yes" cost="3" >}}
 
-La astronomía es el estudio de los objetos celestes y los fenómenos que se originan fuera de las atmósferas planetarias. Permite a un personaje identificar estrellas, planetas y otros cuerpos celestes, y calcular órbitas y trayectorias.
+La astronomía es el estudio de los objetos celestes y los
 
-⊗ **Efecto incrementado:** Un personaje recibe una **bonificación de -1 paso** en el rango 3, **-2** en el rango 6, **-3** en el rango 9 y **-4** en el rango 12 en ciertas otras tiradas de habilidad que puedan ser asistidas por esta especialidad (por ejemplo, Navegación—sistema, Navegación—espacial).
+fenómenos que se originan fuera de las atmósferas planetarias.
 
----
+Permite a un personaje identificar estrellas, planetas y otros
+
+cuerpos celestes, y calcular órbitas y trayectorias.
+
+
+⊗ **Efecto incrementado:** Un personaje recibe una **bonificación de
+-1 paso** en el rango 3, **-2** en el rango 6, **-3** en el rango
+9
+y **-4** en el rango 12 en ciertas otras tiradas de habilidad que
+puedan
+ser asistidas por esta especialidad (por ejemplo,
+Navegación—sistema,
+Navegación—espacial).
+
 
 ---
 
 ## Química
 {{< specialty attr="INT" untrained="yes" cost="3" >}}
 
-La química es el estudio de la materia, sus propiedades y cómo y por qué las sustancias se combinan o separan para formar otras sustancias.
+La química es el estudio de la materia, sus propiedades
+y cómo y
 
-⊗ **Efecto incrementado:** Un personaje recibe una **bonificación de -1 paso** en el rango 3, **-2** en el rango 6, **-3** en el rango 9 y **-4** en el rango 12 en ciertas otras tiradas de habilidad que puedan ser asistidas por esta especialidad (por ejemplo, Ciencias forenses, Ciencias médicas—tratamiento/farmacología).
+por qué las sustancias se combinan o separan para formar otras
 
----
+sustancias.
+
+
+⊗ **Efecto incrementado:** Un personaje recibe una **bonificación de
+-1 paso** en el rango 3, **-2** en el rango 6, **-3** en el rango
+9
+y **-4** en el rango 12 en ciertas otras tiradas de habilidad que
+puedan
+ser asistidas por esta especialidad (por ejemplo, Ciencias
+forenses,
+Ciencias médicas—tratamiento/farmacología).
+
 
 ---
 
 ## Física
 {{< specialty attr="INT" untrained="yes" cost="3" >}}
 
-La física es el estudio de la materia, la energía y las fuerzas fundamentales de la naturaleza.
+La física es el estudio de la materia, la energía y las
+fuerzas
 
-⊗ **Efecto incrementado:** Un personaje recibe una **bonificación de -1 paso** en el rango 3, **-2** en el rango 6, **-3** en el rango 9 y **-4** en el rango 12 en ciertas otras tiradas de habilidad que puedan ser asistidas por esta especialidad (por ejemplo, Ciencia técnica—ingeniería, Operación de sistemas—sensores).
+fundamentales de la naturaleza.
 
----
+
+⊗ **Efecto incrementado:** Un personaje recibe una **bonificación de
+-1 paso** en el rango 3, **-2** en el rango 6, **-3** en el rango
+9
+y **-4** en el rango 12 en ciertas otras tiradas de habilidad que
+puedan
+ser asistidas por esta especialidad (por ejemplo, Ciencia
+técnica—ingeniería,
+Operación de sistemas—sensores).
+
 
 ---
 
 ## Planetología
 {{< specialty attr="INT" untrained="yes" cost="3" >}}
 
-La planetología es el estudio de los cuerpos celestes, específicamente cuando se intenta clasificar, registrar y escanear en busca de información útil.
+La planetología es el estudio de los cuerpos celestes,
 
-⊗ **Efecto incrementado:** Un personaje recibe una **bonificación de -1 paso** en el rango 3, **-2** en el rango 6, **-3** en el rango 9 y **-4** en el rango 12 en ciertas otras tiradas de habilidad que puedan ser asistidas por esta especialidad (por ejemplo, Navegación—sistema, Supervivencia).
+específicamente cuando se intenta clasificar, registrar y escanear
+
+en busca de información útil.
+
+
+⊗ **Efecto incrementado:** Un personaje recibe una **bonificación de
+-1 paso** en el rango 3, **-2** en el rango 6, **-3** en el rango
+9
+y **-4** en el rango 12 en ciertas otras tiradas de habilidad que
+puedan
+ser asistidas por esta especialidad (por ejemplo,
+Navegación—sistema,
+Supervivencia).
+
 
 ---
 

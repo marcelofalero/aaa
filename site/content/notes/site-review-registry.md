@@ -157,7 +157,6 @@ This registry tracks the review status of every granular element of the site. St
 - [PENDING] **Resolve** (Mental, Physical resolve)
 - [PENDING] **Investigate** (Interrogate, Search, Track)
 - [PENDING] **Street Smart** (Criminal elements, Street knowledge)
-- [PENDING] **Teach** (Specific field)
 
 ### **Psionic Disciplines**
 - [PENDING] **Biokinesis**

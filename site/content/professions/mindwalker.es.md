@@ -31,6 +31,9 @@ Los Caminantes Mentales son individuos que han desbloqueado el potencial latente
 - **Cultura:** Cultura alienígena, Primer contacto
 - **ESP:** (Todas)
 - **Interacción:** Carisma, Seducir
+- **Conocimiento:** Psiónica
+- **Ley:** Psiónica
+- **Ciencias de la vida:** Psiónica
 - **Resolución:** Resolución mental
 - **Telequinesis:** (Todas)
 - **Telepatía:** (Todas)
