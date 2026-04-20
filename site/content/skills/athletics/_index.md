@@ -6,7 +6,17 @@ type = "skill"
 layout = "list"
 +++
 
-This broad skill provides a character with the abilities of a natural athlete—a competent level of strength, grace, and physical prowess. This skill is used to determine the success of physical actions such as climbing a tree, jumping over a large hole, or throwing an object at a target.
+This broad skill provides a character with the abilities of
+a natural
+
+athlete—a competent level of strength, grace, and physical prowess.
+
+This skill is used to determine the success
+
+of physical actions such as climbing a tree, jumping over a large
+hole,
+or throwing an object at a target.
+
 
 ## Climb
 {{< specialty attr="STR" untrained="yes" cost="2" >}}
@@ -23,7 +33,7 @@ This broad skill provides a character with the abilities of a natural athlete—
 ---
 
 ## Swim
-{{< specialty attr="STR" untrained="yes" cost="2" >}}
+{{< specialty attr="STR" untrained="no" cost="2" >}}
 
 
 

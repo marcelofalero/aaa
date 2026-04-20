@@ -161,21 +161,29 @@ on('change:repeating_attackforms sheet:opened', function() {
 			</div>
 
 			<div class="sheet-field">
-				<label data-i18n="xp-stored-effective">Stored / Effective XP</label>
-				<div class="sheet-field-row">
-					<input type="number" name="attr_xp_stored" class="sheet-ability" data-i18n-placeholder="xp-stored"
-						placeholder="Stored" title="Stored XP (available to use)">
-					<span class="sheet-label-span">/</span>
-					<input type="number" name="attr_xp_effective" class="sheet-ability"
-						data-i18n-placeholder="xp-effective" placeholder="Effective" title="Effective XP">
-				</div>
+				<label data-i18n="faction">Faction</label>
+				<input type="text" name="attr_faction" data-i18n-placeholder="faction-placeholder"
+					placeholder="Faction Name">
 			</div>
-			<div class="sheet-field">
-				<label data-i18n="last-resorts">Last Resorts</label>
-				<div class="sheet-field-row">
-					<input type="number" name="attr_lastresorts" class="sheet-ability" value="1">
-					<span class="sheet-label-span">/</span>
-					<input type="number" name="attr_lastresortsmax" class="sheet-ability" value="1">
+
+			<div class="sheet-header-right-group">
+				<div class="sheet-field">
+					<label data-i18n="xp-stored-effective">Stored / Effective XP</label>
+					<div class="sheet-field-row">
+						<input type="number" name="attr_xp_stored" class="sheet-ability" data-i18n-placeholder="xp-stored"
+							placeholder="Stored" title="Stored XP (available to use)">
+						<span class="sheet-label-span">/</span>
+						<input type="number" name="attr_xp_effective" class="sheet-ability"
+							data-i18n-placeholder="xp-effective" placeholder="Effective" title="Effective XP">
+					</div>
+				</div>
+				<div class="sheet-field">
+					<label data-i18n="last-resorts">Last Resorts</label>
+					<div class="sheet-field-row">
+						<input type="number" name="attr_lastresorts" class="sheet-ability" value="1">
+						<span class="sheet-label-span">/</span>
+						<input type="number" name="attr_lastresortsmax" class="sheet-ability" value="1">
+					</div>
 				</div>
 			</div>
 		</div>

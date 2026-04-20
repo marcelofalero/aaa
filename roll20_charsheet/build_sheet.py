@@ -10,6 +10,39 @@ from skills_data import SKILLS_DATA, PSIONICS_DATA, ABILITY_MAP
 def clean_id(n):
     return n.replace(' ','').replace('-','').replace('.','').replace(',','').replace('—','')
 
+def build_tooltip_html(cost, is_untrained="YES", rank_benefits=None):
+    """Build the tooltip content HTML including cost and rank benefits."""
+    lines = []
+    
+    # Training Requirement
+    if is_untrained == "NO":
+        lines.append('<span class="sheet-tooltip-trained">Trained Only</span>')
+        lines.append('<span class="sheet-tooltip-separator"></span>')
+    
+    lines.append(f'<span class="sheet-tooltip-cost">Base cost: {cost}</span>')
+    
+    if rank_benefits:
+        lines.append('<span class="sheet-tooltip-separator"></span>')
+        for rb in rank_benefits:
+            rank = rb.get('rank', '?')
+            title = rb.get('title', '')
+            lines.append(
+                f'<span class="sheet-tooltip-rank">'
+                f'<b>R{rank}</b> {title}'
+                f'</span>'
+            )
+    return ''.join(lines)
+
+def build_info_icon(cost, is_untrained="YES", rank_benefits=None):
+    """Build the full info icon + tooltip HTML."""
+    tooltip_content = build_tooltip_html(cost, is_untrained, rank_benefits)
+    return (
+        f'<div class="sheet-skill-info">'
+        f'<span class="sheet-info-icon">i</span>'
+        f'<div class="sheet-tooltip">{tooltip_content}</div>'
+        f'</div>'
+    )
+
 def get_skill_urls():
     """Loads skill URLs from the site's skills.json."""
     urls = {}
@@ -106,6 +139,9 @@ def generate_skills_html(data_list, indent_level=3, is_psionics=False):
             formula = f"(floor(@{{{attr_full}}}/(2-@{{{id_name}}})))"
             
         # Broad Skill Row (Simplified, removed collapse/expand)
+        cost = skill.get("c", 0)
+        trained_only_class = " sheet-trained-only" if is_untrained == "NO" else ""
+        info_icon = build_info_icon(cost, is_untrained)
         h = f'{indent}<div class="sheet-skill-group-box">\n'
         h += f'{indent}\t<div class="sheet-skill-header-row">\n'
         h += f'{indent}\t\t<div></div><div class="sheet-skill-name">{name.upper()}</div><div></div>\n'
@@ -114,7 +150,7 @@ def generate_skills_html(data_list, indent_level=3, is_psionics=False):
         h += f'{indent}\t</div>\n'
         h += f'{indent}\t<div class="sheet-skill-row">\n'
         h += f'{indent}\t\t<button type="roll" name="roll_{id_name}" value="&{{template:default}} {{{{name= @{{character_name}} - {name}}}}} {roll_scores} {roll_results} {wiki_link}"></button>\n'
-        h += f'{indent}\t\t<div class="sheet-skill-name">{name} <button type="roll" name="roll_{id_name}_link" class="sheet-skill-link" value="[{name} Wiki]({url})">&#x2197;</button></div>\n'
+        h += f'{indent}\t\t<div class="sheet-skill-name{trained_only_class}">{name} <button type="roll" name="roll_{id_name}_link" class="sheet-skill-link" value="[{name} Wiki]({url})">&#x2197;</button>{info_icon}</div>\n'
         h += f'{indent}\t\t<div class="sheet-skill-ability-label">{attr_short}</div>\n'
         h += f'{indent}\t\t<input type="checkbox" name="attr_{id_name}" value="1" />\n'
         h += f'{indent}\t\t<div class="sheet-skill-score-cell">\n'
@@ -154,9 +190,13 @@ def generate_skills_html(data_list, indent_level=3, is_psionics=False):
                 spec_formula = f"(floor(((@{{{spec_id}Rank}}*@{{{id_name}}})+@{{{spec_attr_full}}})/(2-@{{{id_name}}})))"
                 trained_only_class = ""
                 
+            spec_cost = spec.get("c", 0)
+            spec_rank_benefits = spec.get("rb", None)
+            spec_info_icon = build_info_icon(spec_cost, spec_untrained, spec_rank_benefits)
+            
             h += f'{indent}\t\t<div class="sheet-skill-row sheet-spec">\n'
             h += f'{indent}\t\t\t<button type="roll" name="roll_{spec_id}" value="&{{template:default}} {{{{name= @{{character_name}} - {spec_name}}}}} {{{{score= [[@{{{spec_id}O}}]]/[[@{{{spec_id}G}}]]/[[@{{{spec_id}A}}]]}}}} {roll_results} {spec_wiki_link}"></button>\n'
-            h += f'{indent}\t\t\t<div class="sheet-skill-name{trained_only_class}">{spec_name} <button type="roll" name="roll_{spec_id}_link" class="sheet-skill-link" value="[{spec_name} Wiki]({spec_url})">&#x2197;</button></div>\n'
+            h += f'{indent}\t\t\t<div class="sheet-skill-name{trained_only_class}">{spec_name} <button type="roll" name="roll_{spec_id}_link" class="sheet-skill-link" value="[{spec_name} Wiki]({spec_url})">&#x2197;</button>{spec_info_icon}</div>\n'
             h += f'{indent}\t\t\t<div class="sheet-skill-ability-label">{spec_attr}</div>\n'
             h += f'{indent}\t\t\t<input type="number" name="attr_{spec_id}Rank" class="sheet-score" value="0">\n'
             h += f'{indent}\t\t\t<div class="sheet-skill-score-cell">\n'

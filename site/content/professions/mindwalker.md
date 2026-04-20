@@ -31,6 +31,9 @@ Mindwalkers are individuals who have unlocked the latent potential of their mind
 - **Culture:** Alien culture, First encounter
 - **ESP:** (All)
 - **Interaction:** Charm, Seduce
+- **Knowledge:** Psionics
+- **Law:** Psionics
+- **Life Science:** Psionics
 - **Resolve:** Mental resolve
 - **Telekinesis:** (All)
 - **Telepathy:** (All)

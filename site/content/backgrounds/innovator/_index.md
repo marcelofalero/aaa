@@ -11,21 +11,26 @@ impossible problems.
 * None.
 
 ## Favored Specialty Skills:
-* [Technical Science-Invention]({{< relref "/skills/technical-science/#invention" >}})
-* [Technical Science-Juryrig]({{< relref "/skills/technical-science/#juryrig" >}})
-* [Computer Science-Hardware]({{< relref "/skills/computer-science/#hardware" >}})
-* [Technical Science-Repair]({{< relref "/skills/technical-science/#repair" >}})
+* [Technical Science-Invention]
+({{< relref "/skills/technical-science/#invention" >}})
+* [Technical Science-Juryrig]
+({{< relref "/skills/technical-science/#juryrig" >}})
+* [Computer Science-Hardware]
+({{< relref "/skills/computer-science/#hardware" >}})
+* [Technical Science-Repair]
+({{< relref "/skills/technical-science/#repair" >}})
 
 ## Favored Perks:
-* [Stable Hands]({{< relref "/perks_flaws/#stable-hands" >}})
+* [Stable Hands]
+({{< relref "/perks_flaws/#stable-hands" >}})
 
 ## Automatic Flaw:
-* [Obsessed]({{< relref "/perks_flaws/#obsessed" >}})
+* [Obsessed] ({{< relref "/perks_flaws/#obsessed" >}})
 
 ## Starting Equipment:
 Multi-tool kit, diagnostic screen, salvage parts.
 
 ## Special Ability:
-**MacGyver Instinct:** Create temporary tools or fixes with -2 step
-bonus once per session.
+**MacGyver Instinct:** Create temporary tools or fixes
+with -2 step bonus once per session.
 

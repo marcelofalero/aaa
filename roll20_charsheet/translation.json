@@ -10,6 +10,8 @@
     "background": "Background",
     "background-placeholder": "Background",
     "title": "Title",
+    "faction": "Faction",
+    "faction-placeholder": "Faction Name",
     "xp-stored-effective": "Stored / Effective XP",
     "xp-stored": "Stored",
     "xp-effective": "Effective",
