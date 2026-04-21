@@ -1,0 +1,1120 @@
+melee:
+  config:
+    default:
+      columns:
+        en:
+        - name: Weapon
+          key: name
+        - name: Accuracy
+          key: acc
+        - name: Range
+          key: range
+        - name: Damage (O/G/A)
+          key: damage
+        - name: Mass (kg)
+          key: mass
+        - name: Hide
+          key: hide
+        - name: Avail
+          key: avail
+        - name: Cost ($)
+          key: cost
+        - name: Description
+          key: description
+          hidden: true
+        es:
+        - name: Arma
+          key: name
+        - name: Acc
+          key: acc
+        - name: Rango
+          key: range
+        - name: Daño (O/B/I)
+          key: damage
+        - name: Masa (kg)
+          key: mass
+        - name: Ocultar
+          key: hide
+        - name: Disponibilidad
+          key: avail
+        - name: Costo ($)
+          key: cost
+        - name: Descripción
+          key: description
+          hidden: true
+  items:
+    pl-0-stone-age:
+      localized:
+      - en:
+          name: "PL 0: Stone Age"
+      - es:
+          name: "PL 0: Edad de Piedra"
+      items:
+        club:
+          acc: '0'
+          range: '—'
+          damage: d4s/d4+1s/d4+2s
+          mass: '1'
+          hide: '0'
+          avail: Com
+          cost: '—'
+          localized:
+          - en:
+              name: Club
+              description: |-
+                A simple club made of wood or bone. Useful for personal defense and
+                hunting animals.
+          - es:
+              name: Garrote
+              description: |-
+                Un simple garrote de madera o hueso. Útil para defensa personal y caza
+                de animales.
+        knife-stone:
+          acc: '0'
+          range: '—'
+          damage: d4-1w/d4w/d4+1w
+          mass: '0.5'
+          hide: '+2'
+          avail: Com
+          cost: '10'
+          localized:
+          - en:
+              name: Knife, stone
+              description: |-
+                A primitive knife made of flint or obsidian. Effective for cutting and
+                basic combat.
+          - es:
+              name: Cuchillo de piedra
+              description: |-
+                Un cuchillo primitivo hecho de sílex u obsidiana. Eficaz para cortar y
+                combate básico.
+        spear-stone:
+          acc: '0'
+          range: '—'
+          damage: d4w/d6w/d4+1w
+          mass: '2'
+          hide: '-1'
+          avail: Com
+          cost: '15'
+          localized:
+          - en:
+              name: Spear, stone
+              description: |-
+                A long shaft with a stone head. Offers reach and lethal potential in
+                primitive societies.
+          - es:
+              name: Lanza de piedra
+              description: |-
+                Un eje largo con una cabeza de piedra. Ofrece alcance y potencial letal
+                en sociedades primitivas.
+    pl-1-agricultural-age:
+      localized:
+      - en:
+          name: "PL 1: Agricultural Age"
+      - es:
+          name: "PL 1: Edad Agrícola"
+      items:
+        dagger:
+          acc: '0'
+          range: '—'
+          damage: d4w/d4+1w/d4+2w
+          mass: '0.5'
+          hide: '+2'
+          avail: Com
+          cost: '25'
+          localized:
+          - en:
+              name: Dagger
+              description: |-
+                A small, double-edged blade. Easily concealed and quick to draw.
+          - es:
+              name: Daga
+              description: |-
+                Una hoja pequeña de doble filo. Fácilmente ocultable y rápida de
+                desenvainar.
+        spear:
+          acc: '0'
+          range: '—'
+          damage: d6w/d8w/d4+1m
+          mass: '2'
+          hide: '-1'
+          avail: Com
+          cost: '30'
+          localized:
+          - en:
+              name: Spear
+              description: |-
+                A more advanced spear with a metal head. Standard infantry equipment
+                in ancient warfare.
+          - es:
+              name: Lanza
+              description: |-
+                Una lanza más avanzada con una cabeza de metal. Equipo estándar de
+                infantería en la guerra antigua.
+        sword-short:
+          acc: '0'
+          range: '—'
+          damage: d6w/d6+1w/d6+2w
+          mass: '1'
+          hide: '0'
+          avail: Com
+          cost: '100'
+          localized:
+          - en:
+              name: Sword, short
+              description: |-
+                A versatile close-quarters weapon. Reliable for both thrusting and
+                slashing.
+          - es:
+              name: Espada corta
+              description: |-
+                Un arma versátil para espacios cerrados. Fiable tanto para estocadas
+                como para tajos.
+    pl-3-renaissance:
+      localized:
+      - en:
+          name: "PL 3: Renaissance"
+      - es:
+          name: "PL 3: Renacimiento"
+      items:
+        sword-long:
+          acc: '0'
+          range: '—'
+          damage: d8w/d8+1w/d8+2w
+          mass: '2'
+          hide: '-1'
+          avail: Com
+          cost: '200'
+          localized:
+          - en:
+              name: Sword, long
+              description: |-
+                A powerful one-handed or two-handed blade. Requires proper training to
+                master.
+          - es:
+              name: Espada larga
+              description: |-
+                Una poderosa hoja de una o dos manos. Requiere entrenamiento adecuado
+                para dominarla.
+        rapier:
+          acc: '+1'
+          range: '—'
+          damage: d6w/d6+1w/d6+2w
+          mass: '1'
+          hide: '0'
+          avail: Com
+          cost: '150'
+          localized:
+          - en:
+              name: Rapier
+              description: |-
+                A light, thin sword designed for dueling. Emphasizes accuracy and
+                fencing technique.
+          - es:
+              name: Rapier
+              description: |-
+                Una espada ligera y delgada diseñada para el duelo. Enfatiza la
+                precisión y la técnica de esgrima.
+    pl-4-industrial-age:
+      localized:
+      - en:
+          name: "PL 4: Industrial Age"
+      - es:
+          name: "PL 4: Era Industrial"
+      items:
+        bayonet:
+          acc: '0'
+          range: '—'
+          damage: d6w/d6+1w/d4+1m
+          mass: '0.5'
+          hide: '+1'
+          avail: Com
+          cost: '30'
+          localized:
+          - en:
+              name: Bayonet
+              description: |-
+                A blade attached to the muzzle of a rifle. Allows ranged combatants to
+                fight effectively in melee.
+          - es:
+              name: Bayoneta
+              description: |-
+                Una hoja unida a la boca de un rifle. Permite a los combatientes a
+                distancia luchar eficazmente en el cuerpo a cuerpo.
+        combat-knife:
+          acc: '0'
+          range: '—'
+          damage: d4+1w/d4+2w/d4+3w
+          mass: '0.5'
+          hide: '+2'
+          avail: Com
+          cost: '40'
+          localized:
+          - en:
+              name: Combat knife
+              description: |-
+                A sturdy knife designed for tactical use. A reliable fallback for any
+                soldier.
+          - es:
+              name: Cuchillo de combate
+              description: |-
+                Un cuchillo robusto diseñado para uso táctico. Un recurso fiable para
+                cualquier soldado.
+    pl-5-information-age:
+      localized:
+      - en:
+          name: "PL 5: Information Age"
+      - es:
+          name: "PL 5: Era de la Información"
+      items:
+        stun-baton:
+          acc: '0'
+          range: '—'
+          damage: d6s/d8s/d6+1w
+          mass: '1'
+          hide: '0'
+          avail: Res
+          cost: '150'
+          localized:
+          - en:
+              name: Stun baton
+              description: |-
+                A non-lethal compliance tool. Delivers an electrical discharge to
+                incapacitate targets.
+          - es:
+              name: Porra aturdidora
+              description: |-
+                Una herramienta de cumplimiento no letal. Emite una descarga eléctrica
+                para incapacitar a los objetivos.
+    pl-6-fusion-age:
+      localized:
+      - en:
+          name: "PL 6: Fusion Age"
+      - es:
+          name: "PL 6: Era de la Fusión"
+      items:
+        charge-knife:
+          acc: '0'
+          range: '—'
+          damage: d4+1w/d6+2w/d8+2w
+          mass: '0.5'
+          hide: '+2'
+          avail: Res
+          cost: '250'
+          localized:
+          - en:
+              name: Charge knife
+              description: |-
+                A high-tech blade with a localized energy charge. Slices through most
+                personal armor.
+          - es:
+              name: Cuchillo de carga
+              description: |-
+                Una hoja de alta tecnología con una carga de energía localizada. Corta
+                la mayoría de las armaduras personales.
+        charge-sword:
+          acc: '0'
+          range: '—'
+          damage: d8w/d8+2w/d4+2m
+          mass: '1'
+          hide: '0'
+          avail: Mil
+          cost: '1000'
+          localized:
+          - en:
+              name: Charge sword
+              description: |-
+                A formidable energy weapon. The vibrating blade tears through dense
+                materials with ease.
+          - es:
+              name: Espada de carga
+              description: |-
+                Una formidable arma de energía. La hoja vibrante atraviesa materiales
+                densos con facilidad.
+    pl-7-gravity-age:
+      localized:
+      - en:
+          name: "PL 7: Gravity Age"
+      - es:
+          name: "PL 7: Era de la Gravedad"
+      items:
+        gravity-mace:
+          acc: '0'
+          range: '—'
+          damage: d6w/d12w/d8m
+          mass: '2'
+          hide: '-1'
+          avail: Mil
+          cost: '2500'
+          localized:
+          - en:
+              name: Gravity mace
+              description: |-
+                A heavy mace that utilizes gravity pulses. Capable of crushing even the
+                heaviest armor.
+          - es:
+              name: Maza de gravedad
+              description: |-
+                Una maza pesada que utiliza pulsos de gravedad. Capaz de aplastar
+                incluso la armadura más pesada.
+        mass-blade:
+          acc: '+1'
+          range: '—'
+          damage: d8w/d8+3w/d12+3w
+          mass: '1.5'
+          hide: '0'
+          avail: Mil
+          cost: '4000'
+          localized:
+          - en:
+              name: Mass blade
+              description: |-
+                An advanced gravity weapon. The localized field ensures maximum damage
+                on every impact.
+          - es:
+              name: Hoja de masa
+              description: |-
+                Un arma de gravedad avanzada. El campo localizado garantiza el máximo
+                daño en cada impacto.
+        v-blade:
+          acc: '+2'
+          range: '—'
+          damage: d4+1w/d8+1w/d8+3w
+          mass: '0.5'
+          hide: '+2'
+          avail: Mil
+          cost: '1200'
+          localized:
+          - en:
+              name: V-blade
+              description: |-
+                A small, high-frequency vibratory knife. Extremely lethal in close
+                combat.
+          - es:
+              name: V-blade
+              description: |-
+                Un pequeño cuchillo vibratorio de alta frecuencia. Extremadamente letal
+                en combate cercano.
+        monofilament-sword-orion-v:
+          acc: '+1'
+          range: '—'
+          damage: d8w/2d6w/d8m
+          mass: '1'
+          hide: '-1'
+          avail: Res
+          cost: '2500'
+          localized:
+          - en:
+              name: "Monofilament Sword \"Orion V\""
+              description: |-
+                The edge is molecule-thin, held in place by a containment field. It
+                bypasses 2 steps of armor.
+          - es:
+              name: "Espada Monofilamento \"Orion V\""
+              description: |-
+                El filo tiene el grosor de una molécula, mantenido en su lugar por un
+                campo de contención. Ignora 2 pasos de armadura.
+        combat-hammer-kh-12:
+          acc: '-1'
+          range: '—'
+          damage: d6+2w/d8+3w/2d6+2w
+          mass: '4.5'
+          hide: '-'
+          avail: Mil
+          cost: '1200'
+          localized:
+          - en:
+              name: Combat Hammer KH-12
+              description: |-
+                A kinetic impact hammer. Used by assault troops to breach doors and
+                crustoskins alike.
+          - es:
+              name: Martillo de Combate KH-12
+              description: |-
+                Un martillo de impacto cinético. Utilizado por las tropas de asalto
+                para romper puertas y caparazones por igual.
+        cryo-axe-thrym-7:
+          acc: '0'
+          range: '—'
+          damage: d8w/d8+2w/d4+1m
+          mass: '3'
+          hide: '-'
+          avail: Mil
+          cost: '5000'
+          localized:
+          - en:
+              name: Cryo-Axe Thrym-7
+              description: |-
+                Releases a flash-freeze charge on impact. Targets suffer -1 step
+                penalty to DEX for d4 rounds.
+          - es:
+              name: Criohacha Thrym-7
+              description: |-
+                Libera una carga de congelación instantánea al impactar. Los objetivos
+                sufren una penalización de -1 paso a DEX durante d4 asaltos.
+ranged:
+  config:
+    default:
+      columns:
+        en:
+        - name: Weapon
+          key: name
+        - name: Skill
+          key: skill
+        - name: Accuracy
+          key: acc
+        - name: Range (S/M/L)
+          key: range
+        - name: Damage (O/G/A)
+          key: damage
+        - name: Action
+          key: act
+        - name: Clip
+          key: clip
+        - name: Mass (kg)
+          key: mass
+        - name: Hide
+          key: hide
+        - name: Avail
+          key: avail
+        - name: Cost ($)
+          key: cost
+        - name: Description
+          key: description
+          hidden: true
+        es:
+        - name: Arma
+          key: name
+        - name: Habilidad
+          key: skill
+        - name: Acc
+          key: acc
+        - name: Rango (C/M/L)
+          key: range
+        - name: Daño (O/B/I)
+          key: damage
+        - name: Acción
+          key: act
+        - name: Cargador
+          key: clip
+        - name: Masa (kg)
+          key: mass
+        - name: Ocultar
+          key: hide
+        - name: Disponibilidad
+          key: avail
+        - name: Costo ($)
+          key: cost
+        - name: Descripción
+          key: description
+          hidden: true
+  items:
+    pl-4-industrial-age:
+      localized:
+      - en:
+          name: "PL 4: Industrial Age"
+      - es:
+          name: "PL 4: Era Industrial"
+      items:
+        pistol-auto:
+          skill: Pistol
+          acc: '0'
+          range: 6/12/30
+          damage: d4+1w/d4+2w/d4+3w
+          act: '2'
+          clip: '12'
+          mass: '1.5'
+          hide: '+1'
+          avail: Com
+          cost: '400'
+          localized:
+          - en:
+              name: Pistol, auto
+              description: |-
+                A standard semi-automatic handgun. Reliable and widely used by police
+                and civilians.
+          - es:
+              name: Pistola automática
+              description: |-
+                Una pistola semiautomática estándar. Fiable y ampliamente utilizada por
+                la policía y civiles.
+        rifle:
+          skill: Rifle
+          acc: '0'
+          range: 40/100/300
+          damage: d6w/d8w/d4+1m
+          act: '1'
+          clip: '10'
+          mass: '4'
+          hide: '-'
+          avail: Com
+          cost: '600'
+          localized:
+          - en:
+              name: Rifle
+              description: |-
+                A bolt-action or semi-auto rifle. Offers excellent accuracy and range
+                for hunting or warfare.
+          - es:
+              name: Rifle
+              description: |-
+                Un rifle de cerrojo o semiautomático. Ofrece una excelente precisión y
+                alcance para la caza o la guerra.
+        shotgun:
+          skill: Rifle
+          acc: '+1'
+          range: 4/8/20
+          damage: d4+1w/d4+3w/d6+3w
+          act: '1'
+          clip: '5'
+          mass: '3.5'
+          hide: '-'
+          avail: Com
+          cost: '500'
+          localized:
+          - en:
+              name: Shotgun
+              description: |-
+                Effective at close range. Spreads lead shot to ensure a hit, but loses
+                potency quickly over distance.
+          - es:
+              name: Escopeta
+              description: |-
+                Efectiva a corta distancia. Dispersa perdigones de plomo para asegurar
+                el impacto, pero pierde potencia rápidamente con la distancia.
+        smg:
+          skill: SMG
+          acc: '-1'
+          range: 10/20/60
+          damage: d4w/d4+1w/d4+2w
+          act: '3'
+          clip: '30'
+          mass: '3'
+          hide: '0'
+          avail: Res
+          cost: '800'
+          localized:
+          - en:
+              name: SMG
+              description: |-
+                Submachine gun designed for rapid fire. Ideal for close-quarters battle
+                and security work.
+          - es:
+              name: Subfusil (SMG)
+              description: |-
+                Subfusil diseñado para fuego rápido. Ideal para el combate en espacios
+                cerrados y trabajos de seguridad.
+    pl-5-information-age:
+      localized:
+      - en:
+          name: "PL 5: Information Age"
+      - es:
+          name: "PL 5: Era de la Información"
+      items:
+        heavy-pistol:
+          skill: Pistol
+          acc: '0'
+          range: 8/16/40
+          damage: d6w/d6+2w/d4+1m
+          act: '2'
+          clip: '10'
+          mass: '2'
+          hide: '0'
+          avail: Res
+          cost: '600'
+          localized:
+          - en:
+              name: Heavy pistol
+              description: |-
+                A high-caliber handgun with significant stopping power. Favored by
+                law enforcement special units.
+          - es:
+              name: Pistola pesada
+              description: |-
+                Una pistola de gran calibre con un poder de parada significativo.
+                Favorecida por las unidades especiales de las fuerzas del orden.
+        assault-rifle:
+          skill: Rifle
+          acc: '0'
+          range: 50/120/400
+          damage: d6w/d8w/d4+1m
+          act: '3'
+          clip: '30'
+          mass: '4.5'
+          hide: '-'
+          avail: Mil
+          cost: '1000'
+          localized:
+          - en:
+              name: Assault rifle
+              description: |-
+                Standard military rifle with selective fire. Versatile and deadly at
+                most combat ranges.
+          - es:
+              name: Rifle de asalto
+              description: |-
+                Rifle militar estándar con fuego selectivo. Versátil y letal en la
+                mayoría de los rangos de combate.
+        sniper-rifle:
+          skill: Rifle
+          acc: '+1'
+          range: 100/300/1000
+          damage: d6w/d8+2w/d6+1m
+          act: '1'
+          clip: '5'
+          mass: '6'
+          hide: '-'
+          avail: Mil
+          cost: '1500'
+          localized:
+          - en:
+              name: Sniper rifle
+              description: |-
+                Long-range precision tool. Designed to take down targets from extreme
+                distances with optics.
+          - es:
+              name: Rifle de francotirador
+              description: |-
+                Herramienta de precisión de largo alcance. Diseñada para abatir
+                objetivos desde distancias extremas con óptica.
+    pl-6-fusion-age:
+      localized:
+      - en:
+          name: "PL 6: Fusion Age"
+      - es:
+          name: "PL 6: Era de la Fusión"
+      items:
+        laser-pistol:
+          skill: Pistol
+          acc: '+1'
+          range: 15/40/100
+          damage: d4+1w/d6+1w/d8+1w
+          act: '2'
+          clip: '20'
+          mass: '1'
+          hide: '+1'
+          avail: Res
+          cost: '1200'
+          localized:
+          - en:
+              name: Laser pistol
+              description: |-
+                Fires a concentrated beam of light. No recoil and extremely accurate,
+                though affected by atmosphere.
+          - es:
+              name: Pistola láser
+              description: |-
+                Dispara un haz concentrado de luz. Sin retroceso y extremadamente
+                precisa, aunque afectada por la atmósfera.
+        laser-rifle:
+          skill: Rifle
+          acc: '+2'
+          range: 60/150/600
+          damage: d6+1w/d8+1w/d10+1w
+          act: '2'
+          clip: '40'
+          mass: '3.5'
+          hide: '-'
+          avail: Mil
+          cost: '2000'
+          localized:
+          - en:
+              name: Laser rifle
+              description: |-
+                A high-precision energy weapon. Ideal for vacuum and long-range orbital
+                defense.
+          - es:
+              name: Rifle láser
+              description: |-
+                Un arma de energía de alta precisión. Ideal para el vacío y la defensa
+                orbital de largo alcance.
+    pl-7-gravity-age:
+      localized:
+      - en:
+          name: "PL 7: Gravity Age"
+      - es:
+          name: "PL 7: Era de la Gravedad"
+      items:
+        mass-pistol:
+          skill: Pistol
+          acc: '0'
+          range: 10/25/60
+          damage: d6w/d8+2w/d4+1m
+          act: '2'
+          clip: '15'
+          mass: '1.5'
+          hide: '0'
+          avail: Mil
+          cost: '3000'
+          localized:
+          - en:
+              name: Mass pistol
+              description: |-
+                Utilizes gravity pulses to accelerate projectiles. High penetration
+                and impact force.
+          - es:
+              name: Pistola de masa
+              description: |-
+                Utiliza pulsos de gravedad para acelerar los proyectiles. Alta
+                penetración y fuerza de impacto.
+        mag-carbine-falcata:
+          skill: Ranged-SMG
+          acc: '0'
+          range: 30/80/200
+          damage: d4+1w/d6+1w/d8w
+          act: '3'
+          clip: '40 dispa.'
+          mass: '3.5'
+          hide: '0'
+          avail: Mil
+          cost: '2200'
+          localized:
+          - en:
+              name: MAG Carbine "Falcata"
+              description: |-
+                Magnetic pulse rifle with high fire rate. Its recoil is almost
+                negated by gravity compensators.
+          - es:
+              name: Carabina MAG "Falcata"
+              description: |-
+                Rifle de pulso magnético con alta cadencia de fuego. Su retroceso es
+                casi anulado por compensadores de gravedad.
+        pulse-rifle-blue-bolt:
+          skill: Ranged-rifle
+          acc: '-1'
+          range: 20/40/100
+          damage: d8+1s/d8w/d6+3w
+          act: '2'
+          clip: '12 dispa.'
+          mass: '10'
+          hide: '-'
+          avail: Mil
+          cost: '2750'
+          localized:
+          - en:
+              name: Pulse Rifle "Blue Bolt"
+              description: |-
+                Can switch between lethal and non-lethal modes. Includes a wireless
+                taser mode for crowd control.
+          - es:
+              name: Rifle de Pulso "Blue Bolt"
+              description: |-
+                Tanto las pistolas de arco como los lanzallamas son de alto peligro de
+                cerca. El Blue Bolt tiene una curiosidad inusual y es un modo taser
+                inalámbrico. Una vez activado un láser mide la densidad protectora del
+                objetivo y calcula un aturdimiento. Cambiar de letal/no letal gasta una
+                acción.
+heavy:
+  config:
+    default:
+      columns:
+        en:
+        - name: Weapon
+          key: name
+        - name: Skill
+          key: skill
+        - name: Accuracy
+          key: acc
+        - name: Range (S/M/L)
+          key: range
+        - name: Damage (O/G/A)
+          key: damage
+        - name: Action
+          key: act
+        - name: Clip
+          key: clip
+        - name: Mass (kg)
+          key: mass
+        - name: Hide
+          key: hide
+        - name: Avail
+          key: avail
+        - name: Cost ($)
+          key: cost
+        - name: Description
+          key: description
+          hidden: true
+        es:
+        - name: Arma
+          key: name
+        - name: Habilidad
+          key: skill
+        - name: Acc
+          key: acc
+        - name: Rango (C/M/L)
+          key: range
+        - name: Daño (O/B/I)
+          key: damage
+        - name: Acción
+          key: act
+        - name: Cargador
+          key: clip
+        - name: Masa (kg)
+          key: mass
+        - name: Ocultar
+          key: hide
+        - name: Disponibilidad
+          key: avail
+        - name: Costo ($)
+          key: cost
+        - name: Descripción
+          key: description
+          hidden: true
+  items:
+    pl-4-industrial-age:
+      localized:
+      - en:
+          name: "PL 4: Industrial Age"
+      - es:
+          name: "PL 4: Era Industrial"
+      items:
+        flamethrower:
+          skill: Direct fire
+          acc: '+2'
+          range: 10/20/40
+          damage: d6w/d8w/d12w
+          act: '1'
+          clip: '10'
+          mass: '15'
+          hide: '-'
+          avail: Mil
+          cost: '600'
+          localized:
+          - en:
+              name: Flamethrower
+              description: |-
+                Projects a stream of ignited flammable liquid. Terrifying and effective
+                at clearing bunkers.
+          - es:
+              name: Lanzallamas
+              description: |-
+                Proyecta una corriente de líquido inflamable encendido. Aterrador y
+                eficaz para limpiar búnkeres.
+        rocket-launcher:
+          skill: Direct fire
+          acc: '+1'
+          range: 50/200/350
+          damage: d8w/d4+1m/d6+1m
+          act: '2'
+          clip: '1'
+          mass: '8'
+          hide: '-'
+          avail: Mil
+          cost: '1000'
+          localized:
+          - en:
+              name: Rocket launcher
+              description: |-
+                Portable weapon capable of firing unguided rockets. Essential for
+                anti-tank operations.
+          - es:
+              name: Lanzacohetes
+              description: |-
+                Arma portátil capaz de disparar cohetes no guiados. Esencial para
+                operaciones antitanque.
+    pl-7-gravity-age:
+      localized:
+      - en:
+          name: "PL 7: Gravity Age"
+      - es:
+          name: "PL 7: Era de la Gravedad"
+      items:
+        plasma-cannon-d16:
+          skill: Direct fire
+          acc: '0'
+          range: 50/100/400
+          damage: d8w/d8+2w/d8+4w
+          act: '2'
+          clip: '8 dispa.'
+          mass: '6'
+          hide: '-'
+          avail: Mil
+          cost: '12000'
+          localized:
+          - en:
+              name: Plasma Cannon D16
+              description: |-
+                Stellar impact weapon that expands its discharge in a circular area of
+                2 meters.
+          - es:
+              name: Cañón de Plasma D16
+              description: |-
+                Armamento de impacto estelar que expande su descarga en un área circular
+                de 2 metros.
+        quantum-minigun-hak-59:
+          skill: Direct fire
+          acc: '0'
+          range: 40/80/200
+          damage: d8+1w/d8+3w/d6m
+          act: '4'
+          clip: '90 dispa.'
+          mass: '10'
+          hide: '-'
+          avail: Res
+          cost: '15000'
+          localized:
+          - en:
+              name: Quantum Minigun HAK-59
+              description: |-
+                Also known as a proton weapon. Produces heavy laser bursts of
+                subparticles that disintegrate a front.
+          - es:
+              name: Minigun Cuántica HAK-59
+              description: |-
+                También conocida como arma protónica. Produce chorros láser pesados de
+                subpartículas que desintegran un frente.
+        kz-160-hvy-machine-gun:
+          skill: Direct fire
+          acc: '-1'
+          range: 200/600/1200
+          damage: d8w/2d6w/d8m
+          act: '4'
+          clip: 50 ráfagas
+          mass: '22.5'
+          hide: '-'
+          avail: Res
+          cost: '9500'
+          localized:
+          - en:
+              name: KZ 160 13mm Heavy Machine Gun
+              description: |-
+                The KZ 160 is a heavy machine gun used for ground or vehicle assault.
+                A character with sufficient strength can fire it from the hip with
+                severe recoil.
+          - es:
+              name: Ametralladora de Carga KZ 160 13mm
+              description: |-
+                La KZ 160 es una ametralladora pesada en uso para un escuadrón completo
+                o asalto en movimiento de vehículos. Un personaje que consiga una prueba
+                de condición atlética en Fuerza podría poder sostener este arma.
+ammunition:
+  config:
+    default:
+      columns:
+        en:
+        - name: Item
+          key: name
+        - name: Platform
+          key: platform
+        - name: Payload
+          key: payload
+        - name: Cost ($)
+          key: cost
+        - name: Description
+          key: description
+          hidden: true
+        es:
+        - name: Objeto
+          key: name
+        - name: Plataforma
+          key: platform
+        - name: Carga
+          key: payload
+        - name: Coste ($)
+          key: cost
+        - name: Descripción
+          key: description
+          hidden: true
+  items:
+    pl-7-gravity-age:
+      localized:
+      - en:
+          name: "PL 7: Gravity Age"
+      - es:
+          name: "PL 7: Era de la Gravedad"
+      items:
+        thunder-ap-rounds:
+          platform: Assault Weapons
+          payload: Sabot Penetrator
+          cost: Mag x2
+          localized:
+          - en:
+              name: Thunder AP Rounds
+              description: |-
+                Classic Teflon assault penetrator designed to slice through armor.
+                Reduces target armor by half.
+          - es:
+              name: Munición Perforante Trueno
+              description: |-
+                Clásico penetrador de asalto de teflón diseñado para atravesar armaduras.
+                Reduce la armadura del objetivo a la mitad.
+        mighty-mite-he-rounds:
+          platform: Assault Weapons
+          payload: Explosive Warhead
+          cost: Mag x4
+          localized:
+          - en:
+              name: MightyMite HE Rounds
+              description: |-
+                Filled with Detonex shards that explode on impact. Causes severe bleeding
+                and shrapnel damage.
+          - es:
+              name: Munición Explosiva MightyMite
+              description: |-
+                Rellena con fragmentos de Detonex que explotan al impactar. Causa
+                sangrado severo y daños por metralla.
+accessories:
+  config:
+    default:
+      columns:
+        en:
+        - name: Item
+          key: name
+        - name: Platform
+          key: platform
+        - name: Mass (kg)
+          key: mass
+        - name: Cost ($)
+          key: cost
+        - name: Description
+          key: description
+          hidden: true
+        es:
+        - name: Objeto
+          key: name
+        - name: Plataforma
+          key: platform
+        - name: Masa (kg)
+          key: mass
+        - name: Coste ($)
+          key: cost
+        - name: Descripción
+          key: description
+          hidden: true
+  items:
+    pl-7-gravity-age:
+      localized:
+      - en:
+          name: "PL 7: Gravity Age"
+      - es:
+          name: "PL 7: Era de la Gravedad"
+      items:
+        falcon-x-guidance:
+          platform: Any projectile weapon
+          mass: '0.1'
+          cost: '1250'
+          localized:
+          - en:
+              name: Falcon X Guidance System
+              description: |-
+                Uses guided ammunition. Grants a -3 step bonus to accuracy after
+                preparing for one round.
+          - es:
+              name: Sistema de Guía Falcon X
+              description: |-
+                Utiliza munición guiada. Otorga un bono de -3 pasos a la precisión tras
+                prepararse durante un asalto.
+        target-x-holo-sights:
+          platform: Any ranged weapon
+          mass: '0.1'
+          cost: '850'
+          localized:
+          - en:
+              name: Target X Holo Sights
+              description: |-
+                High precision optics. Negates long-range penalties by 2 steps.
+          - es:
+              name: Mirillas Holo Target X
+              description: |-
+                Óptica de alta precisión. Anula las penalizaciones por larga distancia
+                en 2 pasos.

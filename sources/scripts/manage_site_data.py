@@ -36,17 +36,31 @@ CATEGORY_MAP = {
     'Other': 'Otros'
 }
 
-AVAIL_MAP = {
-    'Any': 'Cualquiera',
-    'Com': 'Común',
-    'Con': 'Controlada',
-    'Mil': 'Militar',
-    'Res': 'Restringida',
-    'Availability: Any': 'Disponibilidad: Cualquiera',
-    'Availability: Common': 'Disponibilidad: Común',
-    'Availability: Controlled': 'Disponibilidad: Controlada',
-    'Availability: Military': 'Disponibilidad: Militar',
-    'Availability: Restricted': 'Disponibilidad: Restringida'
+AVAIL_MAPS = {
+    'en': {
+        'Any': 'Any',
+        'Com': 'Common',
+        'Con': 'Controlled',
+        'Mil': 'Military',
+        'Res': 'Restricted',
+        'Availability: Any': 'Availability: Any',
+        'Availability: Common': 'Availability: Common',
+        'Availability: Controlled': 'Availability: Controlled',
+        'Availability: Military': 'Availability: Military',
+        'Availability: Restricted': 'Availability: Restricted'
+    },
+    'es': {
+        'Any': 'Cualquiera',
+        'Com': 'Común',
+        'Con': 'Controlada',
+        'Mil': 'Militar',
+        'Res': 'Restringida',
+        'Availability: Any': 'Disponibilidad: Cualquiera',
+        'Availability: Common': 'Disponibilidad: Común',
+        'Availability: Controlled': 'Disponibilidad: Controlada',
+        'Availability: Military': 'Disponibilidad: Militar',
+        'Availability: Restricted': 'Disponibilidad: Restringida'
+    }
 }
 
 def load_mapping():
@@ -203,34 +217,27 @@ def apply_rules_to_node(node, mapping, lang='en'):
         # Get localized data if present
         loc_data = get_localized(node, lang)
         
-        # Determine title for URL localization
-        # 1. From localized block
-        # 2. From root 'name' or 'skill' (common for categories or generic items)
-        loc_title = loc_data.get('name') or loc_data.get('skill') or loc_data.get('title')
-        if not loc_title:
-             loc_title = node.get('name') or node.get('skill') or node.get('discipline')
+        # 1. First, handle core identity fields (name, skill, etc., and ID)
+        for k in ['id', 'name', 'skill', 'discipline', 'title']:
+            # Try explicit localization in the same-lang block
+            lo_val = loc_data.get(k)
+            if not lo_val and lang == 'es':
+                # Fallback to general mapping/translation of the English root value
+                en_val = node.get(k)
+                if en_val:
+                    lo_val = translate_field(en_val, node.get(f"{k}_es"), mapping, 'es')
+            
+            # If we found a value (either explicit or translated fallback), use it
+            if lo_val:
+                new_node[k] = lo_val
+            elif k in node:
+                # Keep original English if no localization found
+                new_node[k] = node[k]
 
-        if not loc_title and lang == 'es':
-             # Fallback translation if root field exists but no Spanish localized version yet
-             orig_title = node.get('name') or node.get('skill') or node.get('discipline')
-             if orig_title:
-                 loc_title = translate_field(orig_title, node.get(f"{'name' if 'name' in node else 'skill'}_es"), mapping, 'es')
-
-        # Inject localized title if root field is missing (new standardized format)
-        if loc_title:
-            if 'name' in loc_data or 'name' in node:
-                new_node['name'] = loc_title
-            elif 'skill' in loc_data or 'skill' in node:
-                new_node['skill'] = loc_title
-            elif 'title' in loc_data or 'title' in node:
-                new_node['title'] = loc_title
-            else:
-                # Default to 'name' for category headers or if ambiguous
-                new_node['name'] = loc_title
-
-        # Process all root-level attributes
+        # 2. Process all other attributes
         for k, v in node.items():
-            if k == 'localized' or k.endswith('_es'): continue
+            if k in ['localized', 'id', 'name', 'skill', 'discipline', 'title'] or k.endswith('_es'):
+                continue
             
             if k in ['items', 'config'] and isinstance(v, dict):
                 # Optimize for Humans (YAML Map) -> Optimize for Machines (JSON List)
@@ -264,24 +271,28 @@ def apply_rules_to_node(node, mapping, lang='en'):
                     
                     item_list.append(apply_rules_to_node(item_data, mapping, lang))
                 new_node[k] = item_list
-            elif k in ['name', 'skill', 'discipline']:
-                # Prefer localized version but keep original if unavailable
-                new_node[k] = loc_title if loc_title else v
             elif k == 'avail':
-                # Use specific availability map for this field to avoid global clobbering
-                new_node[k] = AVAIL_MAP.get(v, translate_field(v, None, mapping, lang))
-            elif k == 'attribute':
-                new_node[k] = translate_field(v, None, mapping, lang)
-            elif k.endswith('url') and isinstance(v, str):
+                # Use language-aware availability map
+                new_node[k] = AVAIL_MAPS[lang].get(v, translate_field(v, None, mapping, lang))
+            elif k != 'id':
+                new_node[k] = apply_rules_to_node(v, mapping, lang)
+            else:
+                new_node[k] = v
+
+        # loc_title for URL mapping (slugging)
+        loc_title = new_node.get('name') or new_node.get('skill') or new_node.get('title')
+        if not loc_title:
+             loc_title = node.get('name') or node.get('skill') or node.get('discipline')
+
+        # Fix URL and link logic
+        for k, v in list(new_node.items()):
+            if k.endswith('url') and isinstance(v, str):
                 loc_url = localize_url(v, lang, loc_title)
                 new_node[k] = loc_url
-            else:
-                new_node[k] = apply_rules_to_node(v, mapping, lang)
 
-        # Merge in all other localized attributes (description, etc.)
+        # Merge in description and other non-field localized strings
         for k, v in loc_data.items():
-            if k in ['name', 'skill', 'title']: continue # handled above
-            # Apply mapping rules to localized strings if in Spanish
+            if k in ['name', 'skill', 'discipline', 'title', 'id']: continue
             processed_v = v
             if isinstance(v, str) and lang == 'es':
                 processed_v = apply_mapping(v, mapping)

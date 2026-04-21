@@ -51,8 +51,10 @@
     </thead>
     <tbody>
       {{ $expandPattern := .expand }}
-      {{ range $index, $item := $data.items }}
-        {{ if $item.items }}
+      {{ $items := $data.items | default $data.groups }}
+      {{ range $index, $item := $items }}
+        {{ $subItems := $item.items | default $item.groups }}
+        {{ if $subItems }}
           {{/* This is a category/separator row */}}
           {{ $isExpanded := false }}
           {{ if and $expandPattern (findRE $expandPattern $item.name) }}{{ $isExpanded = true }}{{ end }}
@@ -62,7 +64,7 @@
               {{ $item.name }}
             </td>
           </tr>
-          {{ range $subIndex, $subItem := $item.items }}
+          {{ range $subIndex, $subItem := $subItems }}
              {{ partial "render-table-row.html" (dict "item" $subItem "columns" $columns "colCount" $colCount "file" $file "key" $key "index" $subIndex "hidden_fields" $hidden_fields) }}
           {{ end }}
         {{ else }}

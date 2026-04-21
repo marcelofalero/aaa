@@ -58,6 +58,8 @@ This page provides a mapping of common game terms from English to Spanish to ens
 | Melee Combat | Combate cuerpo a cuerpo |
 | Modern Ranged Weapons | Armas a distancia modernas |
 | Heavy Weapons | Armas pesadas |
+| Direct fire | Fuego directo |
+| Indirect fire | Fuego indirecto |
 | Primitive Ranged Weapons | Armas a distancia primitivas |
 | Technical Science | Ciencia técnica |
 | Life Science | Ciencias de la vida |
