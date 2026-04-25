@@ -33,7 +33,7 @@ As entries are reviewed, the following files serve as a comparison log:
 - **Animal Handling:** COMPLETED (English reviewed/fixed).
 - **Awareness:** COMPLETED (English reviewed/fixed).
 - **Business:** COMPLETED (English reviewed/fixed).
-- **Armor Operation:** DRAFTED (Pending Review).
+- **Armor Operation:** COMPLETED (English and Spanish reviewed/fixed).
 - **Athletics:** DRAFTED (Pending Review).
 - **Computer Science:** DRAFTED (Pending Review).
 - **Next Up:** Review drafted skills, then Covert Ops.

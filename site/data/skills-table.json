@@ -185,14 +185,14 @@
                 },
                 {
                     "skill": "Tactics",
-                    "attribute": "INT",
+                    "attribute": "WIL",
                     "url": "/skills/tactics",
                     "cost": 6,
                     "type": "Broad",
                     "items": [
                         {
                             "skill": "Infantry tactics",
-                            "attribute": "INT",
+                            "attribute": "WIL",
                             "url": "/skills/tactics#infantry-tactics",
                             "cost": 3,
                             "type": "Specialty",
@@ -200,7 +200,7 @@
                         },
                         {
                             "skill": "Space tactics",
-                            "attribute": "INT",
+                            "attribute": "WIL",
                             "url": "/skills/tactics#space-tactics",
                             "cost": 3,
                             "type": "Specialty",
@@ -208,7 +208,7 @@
                         },
                         {
                             "skill": "Vehicle tactics",
-                            "attribute": "INT",
+                            "attribute": "WIL",
                             "url": "/skills/tactics#vehicle-tactics",
                             "cost": 3,
                             "type": "Specialty",
@@ -279,14 +279,6 @@
                     "type": "Broad",
                     "items": [
                         {
-                            "skill": "Animal Handling Situation Modifiers",
-                            "attribute": "WIL",
-                            "url": "/skills/animal-handling#animal-handling-situation-modifiers",
-                            "cost": 3,
-                            "type": "Specialty",
-                            "css_class": ""
-                        },
-                        {
                             "skill": "Animal riding",
                             "attribute": "WIL",
                             "url": "/skills/animal-handling#animal-riding",
@@ -320,10 +312,10 @@
                             "css_class": ""
                         },
                         {
-                            "skill": "Powered armor",
-                            "attribute": "STR",
-                            "url": "/skills/armor-operation#powered-armor",
-                            "cost": 4,
+                            "skill": "Tactical armor",
+                            "attribute": "INT",
+                            "url": "/skills/armor-operation#tactical-armor",
+                            "cost": 3,
                             "type": "Specialty",
                             "css_class": ""
                         },
@@ -339,14 +331,6 @@
                             "skill": "Shields",
                             "attribute": "STR",
                             "url": "/skills/armor-operation#shields",
-                            "cost": 3,
-                            "type": "Specialty",
-                            "css_class": ""
-                        },
-                        {
-                            "skill": "Tactical armor",
-                            "attribute": "INT",
-                            "url": "/skills/armor-operation#tactical-armor",
                             "cost": 3,
                             "type": "Specialty",
                             "css_class": ""
@@ -423,7 +407,7 @@
                             "url": "/skills/awareness#psionic-sense",
                             "cost": 4,
                             "type": "Specialty",
-                            "css_class": ""
+                            "css_class": "trained-only"
                         }
                     ]
                 },
@@ -487,14 +471,14 @@
                 },
                 {
                     "skill": "Navigation",
-                    "attribute": "INT",
+                    "attribute": "WIL",
                     "url": "/skills/navigation",
                     "cost": 3,
                     "type": "Broad",
                     "items": [
                         {
                             "skill": "Astrogation—drivespace",
-                            "attribute": "INT",
+                            "attribute": "WIL",
                             "url": "/skills/navigation#astrogationdrivespace",
                             "cost": 3,
                             "type": "Specialty",
@@ -502,7 +486,7 @@
                         },
                         {
                             "skill": "Astrogation—system",
-                            "attribute": "INT",
+                            "attribute": "WIL",
                             "url": "/skills/navigation#astrogationsystem",
                             "cost": 3,
                             "type": "Specialty",
@@ -510,7 +494,7 @@
                         },
                         {
                             "skill": "Navigation—surface",
-                            "attribute": "INT",
+                            "attribute": "WIL",
                             "url": "/skills/navigation#navigationsurface",
                             "cost": 3,
                             "type": "Specialty",
@@ -545,14 +529,14 @@
                 },
                 {
                     "skill": "Security",
-                    "attribute": "INT",
+                    "attribute": "WIL",
                     "url": "/skills/security",
                     "cost": 3,
                     "type": "Broad",
                     "items": [
                         {
                             "skill": "Protection protocols",
-                            "attribute": "INT",
+                            "attribute": "WIL",
                             "url": "/skills/security#protection-protocols",
                             "cost": 3,
                             "type": "Specialty",
@@ -560,7 +544,7 @@
                         },
                         {
                             "skill": "Security devices",
-                            "attribute": "INT",
+                            "attribute": "WIL",
                             "url": "/skills/security#security-devices",
                             "cost": 4,
                             "type": "Specialty",
@@ -864,14 +848,14 @@
                 },
                 {
                     "skill": "Law",
-                    "attribute": "INT",
+                    "attribute": "WIL",
                     "url": "/skills/law",
                     "cost": 0,
                     "type": "Broad",
                     "items": [
                         {
                             "skill": "Court procedures",
-                            "attribute": "INT",
+                            "attribute": "WIL",
                             "url": "/skills/law#court-procedures",
                             "cost": 3,
                             "type": "Specialty",
@@ -879,7 +863,7 @@
                         },
                         {
                             "skill": "Law enforcement procedures",
-                            "attribute": "INT",
+                            "attribute": "WIL",
                             "url": "/skills/law#law-enforcement-procedures",
                             "cost": 3,
                             "type": "Specialty",
@@ -887,7 +871,7 @@
                         },
                         {
                             "skill": "Law, specific skill",
-                            "attribute": "INT",
+                            "attribute": "WIL",
                             "url": "/skills/law#law-specific-skill",
                             "cost": 2,
                             "type": "Specialty",
@@ -895,7 +879,7 @@
                         },
                         {
                             "skill": "Psionics",
-                            "attribute": "INT",
+                            "attribute": "WIL",
                             "url": "/skills/law#psionics",
                             "cost": 3,
                             "type": "Specialty",
@@ -986,14 +970,14 @@
             "items": [
                 {
                     "skill": "Administration",
-                    "attribute": "INT",
+                    "attribute": "WIL",
                     "url": "/skills/administration",
                     "cost": 4,
                     "type": "Broad",
                     "items": [
                         {
                             "skill": "Bureaucracy",
-                            "attribute": "INT",
+                            "attribute": "WIL",
                             "url": "/skills/administration#bureaucracy",
                             "cost": 3,
                             "type": "Specialty",
@@ -1001,7 +985,7 @@
                         },
                         {
                             "skill": "Management",
-                            "attribute": "INT",
+                            "attribute": "WIL",
                             "url": "/skills/administration#management",
                             "cost": 3,
                             "type": "Specialty",
@@ -1044,14 +1028,14 @@
                 },
                 {
                     "skill": "Demolitions",
-                    "attribute": "INT",
+                    "attribute": "WIL",
                     "url": "/skills/demolitions",
                     "cost": 6,
                     "type": "Broad",
                     "items": [
                         {
                             "skill": "Disarm",
-                            "attribute": "INT",
+                            "attribute": "WIL",
                             "url": "/skills/demolitions#disarm",
                             "cost": 4,
                             "type": "Specialty",
@@ -1059,7 +1043,7 @@
                         },
                         {
                             "skill": "Scratch-Built Explosives",
-                            "attribute": "INT",
+                            "attribute": "WIL",
                             "url": "/skills/demolitions#scratch-built-explosives",
                             "cost": 3,
                             "type": "Specialty",
@@ -1067,7 +1051,7 @@
                         },
                         {
                             "skill": "Set explosives",
-                            "attribute": "INT",
+                            "attribute": "WIL",
                             "url": "/skills/demolitions#set-explosives",
                             "cost": 3,
                             "type": "Specialty",
@@ -1077,14 +1061,14 @@
                 },
                 {
                     "skill": "Knowledge",
-                    "attribute": "INT",
+                    "attribute": "WIL",
                     "url": "/skills/knowledge",
                     "cost": 4,
                     "type": "Broad",
                     "items": [
                         {
                             "skill": "Language, Specific Skill",
-                            "attribute": "INT",
+                            "attribute": "WIL",
                             "url": "/skills/knowledge#language-specific-skill",
                             "cost": 3,
                             "type": "Specialty",
@@ -1092,7 +1076,7 @@
                         },
                         {
                             "skill": "Psionics",
-                            "attribute": "INT",
+                            "attribute": "WIL",
                             "url": "/skills/knowledge#psionics",
                             "cost": 3,
                             "type": "Specialty",
@@ -1100,7 +1084,7 @@
                         },
                         {
                             "skill": "Computer Operation",
-                            "attribute": "INT",
+                            "attribute": "WIL",
                             "url": "/skills/knowledge#computer-operation",
                             "cost": 2,
                             "type": "Specialty",
@@ -1108,7 +1092,7 @@
                         },
                         {
                             "skill": "Deduce",
-                            "attribute": "INT",
+                            "attribute": "WIL",
                             "url": "/skills/knowledge#deduce",
                             "cost": 2,
                             "type": "Specialty",
@@ -1116,7 +1100,7 @@
                         },
                         {
                             "skill": "First Aid",
-                            "attribute": "INT",
+                            "attribute": "WIL",
                             "url": "/skills/knowledge#first-aid",
                             "cost": 3,
                             "type": "Specialty",
@@ -1124,7 +1108,7 @@
                         },
                         {
                             "skill": "Research",
-                            "attribute": "INT",
+                            "attribute": "WIL",
                             "url": "/skills/knowledge#research",
                             "cost": 2,
                             "type": "Specialty",
@@ -1134,14 +1118,14 @@
                 },
                 {
                     "skill": "Life Science",
-                    "attribute": "INT",
+                    "attribute": "WIL",
                     "url": "/skills/life-science",
                     "cost": 7,
                     "type": "Broad",
                     "items": [
                         {
                             "skill": "Biology, Botany, Zoology",
-                            "attribute": "INT",
+                            "attribute": "WIL",
                             "url": "/skills/life-science#biology-botany-zoology",
                             "cost": 3,
                             "type": "Specialty",
@@ -1149,7 +1133,7 @@
                         },
                         {
                             "skill": "Psionics",
-                            "attribute": "INT",
+                            "attribute": "WIL",
                             "url": "/skills/life-science#psionics",
                             "cost": 3,
                             "type": "Specialty",
@@ -1157,7 +1141,7 @@
                         },
                         {
                             "skill": "Biology",
-                            "attribute": "INT",
+                            "attribute": "WIL",
                             "url": "/skills/life-science#biology",
                             "cost": 3,
                             "type": "Specialty",
@@ -1165,7 +1149,7 @@
                         },
                         {
                             "skill": "Botany",
-                            "attribute": "INT",
+                            "attribute": "WIL",
                             "url": "/skills/life-science#botany",
                             "cost": 3,
                             "type": "Specialty",
@@ -1173,7 +1157,7 @@
                         },
                         {
                             "skill": "Genetics",
-                            "attribute": "INT",
+                            "attribute": "WIL",
                             "url": "/skills/life-science#genetics",
                             "cost": 3,
                             "type": "Specialty",
@@ -1181,7 +1165,7 @@
                         },
                         {
                             "skill": "Xenology",
-                            "attribute": "INT",
+                            "attribute": "WIL",
                             "url": "/skills/life-science#xenology",
                             "cost": 3,
                             "type": "Specialty",
@@ -1189,7 +1173,7 @@
                         },
                         {
                             "skill": "Zoology",
-                            "attribute": "INT",
+                            "attribute": "WIL",
                             "url": "/skills/life-science#zoology",
                             "cost": 3,
                             "type": "Specialty",
@@ -1199,14 +1183,14 @@
                 },
                 {
                     "skill": "Medical Science",
-                    "attribute": "INT",
+                    "attribute": "WIL",
                     "url": "/skills/medical-science",
                     "cost": 7,
                     "type": "Broad",
                     "items": [
                         {
                             "skill": "Forensic Science",
-                            "attribute": "INT",
+                            "attribute": "WIL",
                             "url": "/skills/medical-science#forensic-science",
                             "cost": 3,
                             "type": "Specialty",
@@ -1214,7 +1198,7 @@
                         },
                         {
                             "skill": "Medical Knowledge",
-                            "attribute": "INT",
+                            "attribute": "WIL",
                             "url": "/skills/medical-science#medical-knowledge",
                             "cost": 3,
                             "type": "Specialty",
@@ -1222,7 +1206,7 @@
                         },
                         {
                             "skill": "Xenomedicine",
-                            "attribute": "INT",
+                            "attribute": "WIL",
                             "url": "/skills/medical-science#xenomedicine-specific",
                             "cost": 3,
                             "type": "Specialty",
@@ -1230,7 +1214,7 @@
                         },
                         {
                             "skill": "Forensics",
-                            "attribute": "INT",
+                            "attribute": "WIL",
                             "url": "/skills/medical-science#forensics",
                             "cost": 3,
                             "type": "Specialty",
@@ -1238,7 +1222,7 @@
                         },
                         {
                             "skill": "Psychology",
-                            "attribute": "INT",
+                            "attribute": "WIL",
                             "url": "/skills/medical-science#psychology",
                             "cost": 5,
                             "type": "Specialty",
@@ -1246,7 +1230,7 @@
                         },
                         {
                             "skill": "Surgery",
-                            "attribute": "INT",
+                            "attribute": "WIL",
                             "url": "/skills/medical-science#surgery",
                             "cost": 5,
                             "type": "Specialty",
@@ -1254,7 +1238,7 @@
                         },
                         {
                             "skill": "Treatment",
-                            "attribute": "INT",
+                            "attribute": "WIL",
                             "url": "/skills/medical-science#treatment",
                             "cost": 4,
                             "type": "Specialty",
@@ -1264,14 +1248,14 @@
                 },
                 {
                     "skill": "Physical Science",
-                    "attribute": "INT",
+                    "attribute": "WIL",
                     "url": "/skills/physical-science",
                     "cost": 7,
                     "type": "Broad",
                     "items": [
                         {
                             "skill": "Astronomy",
-                            "attribute": "INT",
+                            "attribute": "WIL",
                             "url": "/skills/physical-science#astronomy",
                             "cost": 3,
                             "type": "Specialty",
@@ -1279,7 +1263,7 @@
                         },
                         {
                             "skill": "Chemistry",
-                            "attribute": "INT",
+                            "attribute": "WIL",
                             "url": "/skills/physical-science#chemistry",
                             "cost": 3,
                             "type": "Specialty",
@@ -1287,7 +1271,7 @@
                         },
                         {
                             "skill": "Physics",
-                            "attribute": "INT",
+                            "attribute": "WIL",
                             "url": "/skills/physical-science#physics",
                             "cost": 3,
                             "type": "Specialty",
@@ -1295,7 +1279,7 @@
                         },
                         {
                             "skill": "Planetology",
-                            "attribute": "INT",
+                            "attribute": "WIL",
                             "url": "/skills/physical-science#planetology",
                             "cost": 3,
                             "type": "Specialty",
@@ -1305,14 +1289,14 @@
                 },
                 {
                     "skill": "System Operation",
-                    "attribute": "INT",
+                    "attribute": "WIL",
                     "url": "/skills/system-operation",
                     "cost": 3,
                     "type": "Broad",
                     "items": [
                         {
                             "skill": "Communications",
-                            "attribute": "INT",
+                            "attribute": "WIL",
                             "url": "/skills/system-operation#communications",
                             "cost": 3,
                             "type": "Specialty",
@@ -1320,7 +1304,7 @@
                         },
                         {
                             "skill": "Defenses",
-                            "attribute": "INT",
+                            "attribute": "WIL",
                             "url": "/skills/system-operation#defenses",
                             "cost": 3,
                             "type": "Specialty",
@@ -1328,7 +1312,7 @@
                         },
                         {
                             "skill": "Engineering",
-                            "attribute": "INT",
+                            "attribute": "WIL",
                             "url": "/skills/system-operation#engineering",
                             "cost": 3,
                             "type": "Specialty",
@@ -1336,7 +1320,7 @@
                         },
                         {
                             "skill": "Sensors",
-                            "attribute": "INT",
+                            "attribute": "WIL",
                             "url": "/skills/system-operation#sensors",
                             "cost": 3,
                             "type": "Specialty",
@@ -1344,7 +1328,7 @@
                         },
                         {
                             "skill": "Weapons",
-                            "attribute": "INT",
+                            "attribute": "WIL",
                             "url": "/skills/system-operation#weapons",
                             "cost": 6,
                             "type": "Specialty",
@@ -1354,14 +1338,14 @@
                 },
                 {
                     "skill": "Technical Science",
-                    "attribute": "INT",
+                    "attribute": "WIL",
                     "url": "/skills/technical-science",
                     "cost": 7,
                     "type": "Broad",
                     "items": [
                         {
                             "skill": "Juryrig",
-                            "attribute": "INT",
+                            "attribute": "WIL",
                             "url": "/skills/technical-science#juryrig",
                             "cost": 3,
                             "type": "Specialty",
@@ -1369,7 +1353,7 @@
                         },
                         {
                             "skill": "Technical Knowledge",
-                            "attribute": "INT",
+                            "attribute": "WIL",
                             "url": "/skills/technical-science#technical-knowledge",
                             "cost": 3,
                             "type": "Specialty",
@@ -1377,7 +1361,7 @@
                         },
                         {
                             "skill": "Invention",
-                            "attribute": "INT",
+                            "attribute": "WIL",
                             "url": "/skills/technical-science#invention",
                             "cost": 3,
                             "type": "Specialty",
@@ -1385,7 +1369,7 @@
                         },
                         {
                             "skill": "Jury-rig",
-                            "attribute": "INT",
+                            "attribute": "WIL",
                             "url": "/skills/technical-science#jury-rig",
                             "cost": 3,
                             "type": "Specialty",
@@ -1393,7 +1377,7 @@
                         },
                         {
                             "skill": "Repair",
-                            "attribute": "INT",
+                            "attribute": "WIL",
                             "url": "/skills/technical-science#repair",
                             "cost": 3,
                             "type": "Specialty",

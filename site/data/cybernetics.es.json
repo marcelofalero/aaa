@@ -71,7 +71,7 @@
                     "size": "2",
                     "cost": "300 / 600 / 900",
                     "id": "battleklaw",
-                    "description": "Un BattleKlaw es un arma cibernética que mejora el daño que un personaje puede infligir en un Ataque Desarmado normal. Aparece como una sola garra de metal que termina en una punta afilada. Un BattleKlaw Normal está fijo en su posición, ya sea unido al hueso vivo o a un cibermiembro. Un BattleKlaw Bueno es retráctil, ya sea unido al hueso vivo o a un cibermiembro. Un BattleKlaw Asombroso requiere un exoesqueleto y un cibermiembro para su uso. El coste, la masa y el tamaño son para un solo BattleKlaw. Si un personaje añade un segundo BattleKlaw a su cuerpo, el coste, la masa y el tamaño se duplican.\n"
+                    "description": "Un BattleKlaw es un arma cibernética que mejora el daño que un personaje puede infligir en un Ataque Desarmado normal. Aparece como una sola garra de metal que termina en una punta afilada. Un BattleKlaw Normal está fijo en su posición, ya sea unido al hueso vivo o a un cibermiembro. Un BattleKlaw Bueno es retráctil, ya sea unido al hueso vivo o a un cibermiembro. Un BattleKlaw Asombroso requiere un exoesqueleto y un cibermiembro para su uso. El coste, la masa y el tamaño son para un solo BattleKlaw. Si un personaje añade un segundo BattleKlaw a su cuerpo, el coste, la masa y el tamaño se duplican."
                 },
                 {
                     "name": "BioArt**",
@@ -80,7 +80,7 @@
                     "size": "-",
                     "cost": "50 / 100 / 200",
                     "id": "bioart",
-                    "description": "El BioArt es un implante de neón subdérmico que produce un tatuaje brillante en la superficie de la piel (está iluminado desde abajo). También puede presentarse en forma de filamentos de fibra óptica en el cabello, las pestañas o la barba. El BioArt es puramente decorativo. Cuanto mejor sea la calidad, más llamativo será el diseño. El BioArt no requiere gasto de puntos de habilidad ni nanocomputadora, y no puede ser rechazado por el receptor (no es necesaria una prueba de dote de Constitución).\n"
+                    "description": "El BioArt es un implante de neón subdérmico que produce un tatuaje brillante en la superficie de la piel (está iluminado desde abajo). También puede presentarse en forma de filamentos de fibra óptica en el cabello, las pestañas o la barba. El BioArt es puramente decorativo. Cuanto mejor sea la calidad, más llamativo será el diseño. El BioArt no requiere gasto de puntos de habilidad ni nanocomputadora, y no puede ser rechazado por el receptor (no es necesaria una prueba de dote de Constitución)."
                 },
                 {
                     "name": "BioWatch**",
@@ -89,7 +89,7 @@
                     "size": "-",
                     "cost": "50 / 100 / 300",
                     "id": "biowatch",
-                    "description": "Un BioWatch es un reloj subdérmico, ya sea analógico o digital, que muestra la hora actual y tiene una variedad de otras funciones. Un BioWatch está oculto bajo la carne, invisible hasta que se toca con la punta de un dedo o algún otro objeto pequeño. Entonces el brillo resplandece a través de la carne, mostrando la hora y otra información en la superficie de la piel durante unos segundos. Un BioWatch no requiere el gasto de puntos de habilidad ni nanocomputadora, y no puede ser rechazado (no es necesaria una prueba de dote de Constitución).\n"
+                    "description": "Un BioWatch es un reloj subdérmico, ya sea analógico o digital, que muestra la hora actual y tiene una variedad de otras funciones. Un BioWatch está oculto bajo la carne, invisible hasta que se toca con la punta de un dedo o algún otro objeto pequeño. Entonces el brillo resplandece a través de la carne, mostrando la hora y otra información en la superficie de la piel durante unos segundos. Un BioWatch no requiere el gasto de puntos de habilidad ni nanocomputadora, y no puede ser rechazado (no es necesaria una prueba de dote de Constitución)."
                 },
                 {
                     "name": "Body Plating: Ordinary",
@@ -98,7 +98,7 @@
                     "size": "2",
                     "cost": "1500 / - / -",
                     "id": "body-plating-ordinary",
-                    "description": "El blindaje corporal combina armadura de metal y plástico, que luego se adhiere al cuerpo del personaje. Incluso el blindaje corporal mejor camuflado es obvio tras una inspección cercana. El blindaje corporal no requiere una nanocomputadora, pero se deben gastar puntos de habilidad para aprender a moverse con la cubierta protectora. El blindaje corporal Normal proporciona una protección de d4 (LI), d4 (HI), d4-1 (En).\n"
+                    "description": "El blindaje corporal combina armadura de metal y plástico, que luego se adhiere al cuerpo del personaje. Incluso el blindaje corporal mejor camuflado es obvio tras una inspección cercana. El blindaje corporal no requiere una nanocomputadora, pero se deben gastar puntos de habilidad para aprender a moverse con la cubierta protectora. El blindaje corporal Normal proporciona una protección de d4 (LI), d4 (HI), d4-1 (En)."
                 },
                 {
                     "name": "Body Plating: Good",
@@ -125,7 +125,7 @@
                     "size": "2",
                     "cost": "500 / 1000 / 2000",
                     "id": "cyberlimb",
-                    "description": "Un cibermiembro reemplaza una extremidad perdida por daño o enfermedad, o se instala simplemente como una \"mejora\" de la carne y el hueso originales. Los cibermiembros pueden tener otros equipos instalados en su interior. Un cibermiembro Normal añade +1 a la Fuerza; un cibermiembro Bueno añade +2 a la Fuerza y requiere un exoesqueleto; un cibermiembro Asombroso añade +3 a la Fuerza y también requiere un exoesqueleto. El aumento de Fuerza se aplica solo al cibermiembro que se está utilizando.\n"
+                    "description": "Un cibermiembro reemplaza una extremidad perdida por daño o enfermedad, o se instala simplemente como una \"mejora\" de la carne y el hueso originales. Los cibermiembros pueden tener otros equipos instalados en su interior. Un cibermiembro Normal añade +1 a la Fuerza; un cibermiembro Bueno añade +2 a la Fuerza y requiere un exoesqueleto; un cibermiembro Asombroso añade +3 a la Fuerza y también requiere un exoesqueleto. El aumento de Fuerza se aplica solo al cibermiembro que se está utilizando."
                 },
                 {
                     "name": "Cyberoptics",
@@ -134,7 +134,7 @@
                     "size": "1",
                     "cost": "1000 / 1500 / 2000",
                     "id": "cyberoptics",
-                    "description": "La ciberóptica reemplaza un globo ocular vivo o añade un dispositivo sensorial adicional a un personaje. Puede fijarse en otra parte del cuerpo, como la mano, la frente o la nuca, o montarse en el lateral de la cabeza en lugar de colocarse en la cuenca del ojo. La versión Normal proporciona visión normal y también funciona como cámara digital. Una ciberóptica Buena funciona como una lente de zoom de 50 aumentos y proporciona visión extendida. Una ciberóptica Asombrosa funciona como una lente de zoom de 300 aumentos.\n"
+                    "description": "La ciberóptica reemplaza un globo ocular vivo o añade un dispositivo sensorial adicional a un personaje. Puede fijarse en otra parte del cuerpo, como la mano, la frente o la nuca, o montarse en el lateral de la cabeza en lugar de colocarse en la cuenca del ojo. La versión Normal proporciona visión normal y también funciona como cámara digital. Una ciberóptica Buena funciona como una lente de zoom de 50 aumentos y proporciona visión extendida. Una ciberóptica Asombrosa funciona como una lente de zoom de 300 aumentos."
                 },
                 {
                     "name": "Fast chip",
@@ -143,7 +143,7 @@
                     "size": "1",
                     "cost": "500 / - / 3000",
                     "id": "fast-chip",
-                    "description": "Un chip rápido es un dispositivo que ha sido prohibido en la mayoría de los lugares civilizados debido a los peligros asociados con su uso. Un personaje equipado con una nanocomputadora, un chip rápido y reflejos opera a un nivel superior al de la mayoría de las personas. El chip rápido proporciona un bono a las pruebas de acción del personaje. El chip rápido debe activarse; permanece activo durante un número de asaltos relacionado con la calidad de la nanocomputadora del personaje (Marginal, 1; Normal, 2; Bueno, 3; Asombroso, 4), o hasta que el personaje lo apague, lo que ocurra primero. Al final de un período de uso, el personaje sufre 1 punto de daño por fatiga. El uso de un chip rápido conduce a la condición conocida como cykosis.\n"
+                    "description": "Un chip rápido es un dispositivo que ha sido prohibido en la mayoría de los lugares civilizados debido a los peligros asociados con su uso. Un personaje equipado con una nanocomputadora, un chip rápido y reflejos opera a un nivel superior al de la mayoría de las personas. El chip rápido proporciona un bono a las pruebas de acción del personaje. El chip rápido debe activarse; permanece activo durante un número de asaltos relacionado con la calidad de la nanocomputadora del personaje (Marginal, 1; Normal, 2; Bueno, 3; Asombroso, 4), o hasta que el personaje lo apague, lo que ocurra primero. Al final de un período de uso, el personaje sufre 1 punto de daño por fatiga. El uso de un chip rápido conduce a la condición conocida como cykosis."
                 },
                 {
                     "name": "MusclePlus",
@@ -152,7 +152,7 @@
                     "size": "2",
                     "cost": "1000 / 2000 / 3000",
                     "id": "muscleplus",
-                    "description": "MusclePlus sustituye el músculo vivo por un material sintético resistente y muy duradero que aumenta la puntuación normal de Fuerza de un personaje en aquellas extremidades que reciben el tratamiento. MusclePlus Normal proporciona un aumento de Fuerza de +1; el Bueno proporciona un aumento de Fuerza de +2 pero requiere un exoesqueleto; el Asombroso proporciona un aumento de Fuerza de +3 pero requiere tanto un exoesqueleto como un cibermiembro.\n"
+                    "description": "MusclePlus sustituye el músculo vivo por un material sintético resistente y muy duradero que aumenta la puntuación normal de Fuerza de un personaje en aquellas extremidades que reciben el tratamiento. MusclePlus Normal proporciona un aumento de Fuerza de +1; el Bueno proporciona un aumento de Fuerza de +2 pero requiere un exoesqueleto; el Asombroso proporciona un aumento de Fuerza de +3 pero requiere tanto un exoesqueleto como un cibermiembro."
                 },
                 {
                     "name": "Nanocomputer",
@@ -161,7 +161,7 @@
                     "size": "1",
                     "cost": "1000 / 2000 / 3000 / 4000",
                     "id": "nanocomputer",
-                    "description": "Sin una nanocomputadora y su circuito cytrónico, la mayoría de las demás piezas de equipo cibernético son inútiles. La nanocomputadora proporciona una interfaz entre el sistema nervioso central del sujeto y su equipo cibernético, permitiéndole controlar cibermiembros, desplegar armamento, etc. Cada sistema cibernético que requiere control consciente ocupa 1 de las ranuras de memoria activa de la nanocomputadora, por lo que un personaje con dos cibermiembros y un BattleKlaw debe asignar 3 de las ranuras de su nanocomputadora a la dirección de su equipo cibernético. Las nanocomputadoras no pueden leer 3Ds, descargar datos ni interactuar de otro modo con el mundo que rodea al personaje a menos que se adquiera e instale algún tipo de dispositivo de interfaz: un NIJack, una unidad 3D o un puerto de comunicaciones. Marginal: $1.000, 3 ranuras, Ninguna bonificación del procesador. Normal: $2.000, 4 ranuras, -1 paso de bonificación del procesador. Buena: $3.000, 5 ranuras, -2 pasos de bonificación del procesador. Asombrosa: $4.000, 6 ranuras, -3 pasos de bonificación del procesador.\n"
+                    "description": "Sin una nanocomputadora y su circuito cytrónico, la mayoría de las demás piezas de equipo cibernético son inútiles. La nanocomputadora proporciona una interfaz entre el sistema nervioso central del sujeto y su equipo cibernético, permitiéndole controlar cibermiembros, desplegar armamento, etc. Cada sistema cibernético que requiere control consciente ocupa 1 de las ranuras de memoria activa de la nanocomputadora, por lo que un personaje con dos cibermiembros y un BattleKlaw debe asignar 3 de las ranuras de su nanocomputadora a la dirección de su equipo cibernético. Las nanocomputadoras no pueden leer 3Ds, descargar datos ni interactuar de otro modo con el mundo que rodea al personaje a menos que se adquiera e instale algún tipo de dispositivo de interfaz: un NIJack, una unidad 3D o un puerto de comunicaciones. Marginal: $1.000, 3 ranuras, Ninguna bonificación del procesador. Normal: $2.000, 4 ranuras, -1 paso de bonificación del procesador. Buena: $3.000, 5 ranuras, -2 pasos de bonificación del procesador. Asombrosa: $4.000, 6 ranuras, -3 pasos de bonificación del procesador."
                 },
                 {
                     "name": "NIJack",
@@ -170,7 +170,7 @@
                     "size": "1",
                     "cost": "500 / - / -",
                     "id": "nijack",
-                    "description": "Un conector de interfaz neural, o NIJack, es un enchufe situado en el cuello o la cabeza que permite conectar cables de datos al sistema de circuitos cytrónicos de un personaje. Se requiere un NIJack para utilizar un gridcaster. Todos los NIJacks son de calidad Normal.\n"
+                    "description": "Un conector de interfaz neural, o NIJack, es un enchufe situado en el cuello o la cabeza que permite conectar cables de datos al sistema de circuitos cytrónicos de un personaje. Se requiere un NIJack para utilizar un gridcaster. Todos los NIJacks son de calidad Normal."
                 },
                 {
                     "name": "Optic screen",
@@ -179,7 +179,7 @@
                     "size": "-",
                     "cost": "250 / - / -",
                     "id": "optic-screen",
-                    "description": "Una pantalla óptica es una lente acoplada a un globo ocular vivo o a un equipo ciberóptico. Actúa como una pantalla de visualización frontal (HUD), mostrando datos de una nanocomputadora u otra fuente informática. La pantalla óptica no interfiere con la visión normal del personaje (o la visión proporcionada por la ciberóptica); las imágenes que proyecta son translúcidas y se sitúan fuera del campo de visión directo. Todas las pantallas ópticas son de calidad Normal.\n"
+                    "description": "Una pantalla óptica es una lente acoplada a un globo ocular vivo o a un equipo ciberóptico. Actúa como una pantalla de visualización frontal (HUD), mostrando datos de una nanocomputadora u otra fuente informática. La pantalla óptica no interfiere con la visión normal del personaje (o la visión proporcionada por la ciberóptica); las imágenes que proyecta son translúcidas y se sitúan fuera del campo de visión directo. Todas las pantallas ópticas son de calidad Normal."
                 },
                 {
                     "name": "Self-repair unit",
@@ -188,7 +188,7 @@
                     "size": "2",
                     "cost": "1000 / 2000 / 3000",
                     "id": "self-repair-unit",
-                    "description": "La unidad cibernética de autorreparación es una pieza interna de equipo que incluye un suministro de materia prima y una horda de robots nanites. Requiere una nanocomputadora. Cuando se ordena a través de la nanocomputadora, los nanites convierten la materia prima en componentes y comienzan a reparar el equipo cibernético dañado. Se tarda 1 hora en reparar cada punto de herida y 2 horas por cada punto Mortal. Una unidad Normal repara hasta 4 heridas o 2 mortales; una Buena puede arreglar 6 heridas o 3 mortales; una Asombrosa puede reparar 8 heridas o 4 mortales. El material de repuesto cuesta $1000/$2000/$3000.\n"
+                    "description": "La unidad cibernética de autorreparación es una pieza interna de equipo que incluye un suministro de materia prima y una horda de robots nanites. Requiere una nanocomputadora. Cuando se ordena a través de la nanocomputadora, los nanites convierten la materia prima en componentes y comienzan a reparar el equipo cibernético dañado. Se tarda 1 hora en reparar cada punto de herida y 2 horas por cada punto Mortal. Una unidad Normal repara hasta 4 heridas o 2 mortales; una Buena puede arreglar 6 heridas o 3 mortales; una Asombrosa puede reparar 8 heridas o 4 mortales. El material de repuesto cuesta $1000/$2000/$3000."
                 },
                 {
                     "name": "Subdermal comm",
@@ -197,7 +197,7 @@
                     "size": "1",
                     "cost": "- / 500 / -",
                     "id": "subdermal-comm",
-                    "description": "Se trata de un equipo de comunicaciones estándar que se instala en la garganta y la cabeza, proporcionando al personaje un sistema de comunicaciones oculto. Nadie puede oír las llamadas entrantes y basta un susurro para devolver el mensaje. El equipo de comunicación subdérmica tiene un alcance de 1.000 kilómetros para las comunicaciones de superficie, y puede llegar hasta la órbita planetaria alta para contactar con una nave o estación espacial, siempre que exista un camino sin obstáculos entre el receptor y el emisor. Todo este equipo es de calidad Buena.\n"
+                    "description": "Se trata de un equipo de comunicaciones estándar que se instala en la garganta y la cabeza, proporcionando al personaje un sistema de comunicaciones oculto. Nadie puede oír las llamadas entrantes y basta un susurro para devolver el mensaje. El equipo de comunicación subdérmica tiene un alcance de 1.000 kilómetros para las comunicaciones de superficie, y puede llegar hasta la órbita planetaria alta para contactar con una nave o estación espacial, siempre que exista un camino sin obstáculos entre el receptor y el emisor. Todo este equipo es de calidad Buena."
                 },
                 {
                     "name": "Subdermal weapon mount: Ordinary",
@@ -206,7 +206,7 @@
                     "size": "2",
                     "cost": "250 / - / -",
                     "id": "subdermal-weapon-mount-ordinary",
-                    "description": "Las armas subdérmicas son dispositivos ofensivos ocultos en el cuerpo de un personaje que pueden exponerse para infligir daño. Las armas que pesan 1 kg o menos requieren monturas Normales. Pueden instalarse en extremidades naturales o en cibermiembros.\n"
+                    "description": "Las armas subdérmicas son dispositivos ofensivos ocultos en el cuerpo de un personaje que pueden exponerse para infligir daño. Las armas que pesan 1 kg o menos requieren monturas Normales. Pueden instalarse en extremidades naturales o en cibermiembros."
                 },
                 {
                     "name": "Subdermal weapon mount: Good",
@@ -215,7 +215,7 @@
                     "size": "3",
                     "cost": "- / 500 / -",
                     "id": "subdermal-weapon-mount-good",
-                    "description": "Las armas que pesan hasta 3 kg requieren monturas Buenas. Éstas deben instalarse en cibermiembros.\n"
+                    "description": "Las armas que pesan hasta 3 kg requieren monturas Buenas. Éstas deben instalarse en cibermiembros."
                 },
                 {
                     "name": "Subdermal weapon mount: Amazing",
@@ -224,7 +224,7 @@
                     "size": "4",
                     "cost": "- / - / 750",
                     "id": "subdermal-weapon-mount-amazing",
-                    "description": "Las armas que pesan más de 3 kg y hasta 6 kg requieren monturas Asombrosas. Éstas deben instalarse en cibermiembros que estén unidos a exoesqueletos. Las armas que pesen más de 6 kg no pueden convertirse en equipo subdérmico.\n"
+                    "description": "Las armas que pesan más de 3 kg y hasta 6 kg requieren monturas Asombrosas. Éstas deben instalarse en cibermiembros que estén unidos a exoesqueletos. Las armas que pesen más de 6 kg no pueden convertirse en equipo subdérmico."
                 },
                 {
                     "name": "Artificial Ear",
@@ -233,7 +233,7 @@
                     "size": "1",
                     "cost": "1000 / 2000 / 4000",
                     "id": "artificial-ear",
-                    "description": "El oído artificial es un micrófono sensible capaz de detectar sonidos de frecuencia extremadamente baja y alta, normalmente fuera del rango de audición humana, como transmisiones de sonar o silbatos para perros. Su audición se ve \"magnificada\" (Normal x10, Bueno x25, Asombroso x50), y obtiene una bonificación a las pruebas de habilidad que implican la capacidad de detectar sonido, como las pruebas de Conciencia-intuición para evitar sorpresas, las pruebas de Seguridad-dispositivos de seguridad contra cerraduras con tambores, etc. Si el sujeto tiene dos oídos artificiales, puede usar la bonificación de la prueba de habilidad (-1/-2/-3 pasos) para compensar las penalizaciones de combate relacionadas con la oscuridad debido a su capacidad para localizar a su enemigo a través del sonido.\n"
+                    "description": "El oído artificial es un micrófono sensible capaz de detectar sonidos de frecuencia extremadamente baja y alta, normalmente fuera del rango de audición humana, como transmisiones de sonar o silbatos para perros. Su audición se ve \"magnificada\" (Normal x10, Bueno x25, Asombroso x50), y obtiene una bonificación a las pruebas de habilidad que implican la capacidad de detectar sonido, como las pruebas de Conciencia-intuición para evitar sorpresas, las pruebas de Seguridad-dispositivos de seguridad contra cerraduras con tambores, etc. Si el sujeto tiene dos oídos artificiales, puede usar la bonificación de la prueba de habilidad (-1/-2/-3 pasos) para compensar las penalizaciones de combate relacionadas con la oscuridad debido a su capacidad para localizar a su enemigo a través del sonido."
                 },
                 {
                     "name": "Artificial Eye",
@@ -242,7 +242,7 @@
                     "size": "1",
                     "cost": "1000 / 2000 / 4000",
                     "id": "artificial-eye",
-                    "description": "Este dispositivo es un sistema de imagen de vídeo que sustituye a uno de los ojos del propio usuario. Proporciona aumento (Normal x10, Bueno x25, Asombroso x50) y una bonificación a las pruebas de habilidad en las que la agudeza visual puede ser importante, como Investigar-búsqueda o Conciencia-percepción (-1/-2/-3 pasos). Por el doble del coste indicado, un ojo artificial incluye tecnología de mejora de imagen o térmica, lo que confiere los beneficios de las gafas de imagen o las gafas térmicas además del simple aumento.\n"
+                    "description": "Este dispositivo es un sistema de imagen de vídeo que sustituye a uno de los ojos del propio usuario. Proporciona aumento (Normal x10, Bueno x25, Asombroso x50) y una bonificación a las pruebas de habilidad en las que la agudeza visual puede ser importante, como Investigar-búsqueda o Conciencia-percepción (-1/-2/-3 pasos). Por el doble del coste indicado, un ojo artificial incluye tecnología de mejora de imagen o térmica, lo que confiere los beneficios de las gafas de imagen o las gafas térmicas además del simple aumento."
                 }
             ],
             "id": "progress-level-6"
@@ -256,7 +256,7 @@
                     "size": "1",
                     "cost": "1000 / 2000 / 3000",
                     "id": "cf-skinweave",
-                    "description": "El tejido de piel CF es fibra de carbonato tejida junto con carne viva para proporcionar una protección oculta contra el daño. El nivel de protección viene determinado por la calidad del tejido: Normal, añade 2 puntos de aturdimiento a la clasificación de durabilidad; Bueno, añade 2 puntos de aturdimiento y 1 punto de herida; Asombroso, añade 2 puntos de aturdimiento, 1 punto de herida y 1 punto Mortal. No se requiere nanocomputadora para el tejido de piel CF, y no es necesario gastar puntos de habilidad para que se instale.\n"
+                    "description": "El tejido de piel CF es fibra de carbonato tejida junto con carne viva para proporcionar una protección oculta contra el daño. El nivel de protección viene determinado por la calidad del tejido: Normal, añade 2 puntos de aturdimiento a la clasificación de durabilidad; Bueno, añade 2 puntos de aturdimiento y 1 punto de herida; Asombroso, añade 2 puntos de aturdimiento, 1 punto de herida y 1 punto Mortal. No se requiere nanocomputadora para el tejido de piel CF, y no es necesario gastar puntos de habilidad para que se instale."
                 },
                 {
                     "name": "Data slot, passive**",
@@ -265,7 +265,7 @@
                     "size": "1",
                     "cost": "500 / 700 / 900",
                     "id": "data-slot-passive",
-                    "description": "Una ranura de datos pasiva es una instalación de almacenamiento externa para un soporte de datos 3D u otro. La mayoría están diseñadas para estar ocultas, y son utilizadas por mensajeros y otras personas que buscan mover datos sin el conocimiento de otros. Una ranura de datos se considera pasiva porque no está conectada a una nanocomputadora: el personaje no puede acceder a los datos almacenados en su interior, sino que solo puede transportarlos a su destino. No es necesaria una nanocomputadora para añadir este equipo y no es necesario gastar puntos de habilidad.\n"
+                    "description": "Una ranura de datos pasiva es una instalación de almacenamiento externa para un soporte de datos 3D u otro. La mayoría están diseñadas para estar ocultas, y son utilizadas por mensajeros y otras personas que buscan mover datos sin el conocimiento de otros. Una ranura de datos se considera pasiva porque no está conectada a una nanocomputadora: el personaje no puede acceder a los datos almacenados en su interior, sino que solo puede transportarlos a su destino. No es necesaria una nanocomputadora para añadir este equipo y no es necesario gastar puntos de habilidad."
                 },
                 {
                     "name": "ER slot",
@@ -274,7 +274,7 @@
                     "size": "1",
                     "cost": "500 / 1000 / 1500",
                     "id": "er-slot",
-                    "description": "Una ranura ER (abreviatura de \"sala de emergencias\") es un accesorio diseñado para contener un paquete de trauma II. Con el paquete y la ranura ER, el contenido del paquete se inyecta automáticamente en el personaje cuando este queda inconsciente debido a un aturdimiento. La ranura ER también puede ser activada manualmente por el personaje en cualquier momento.\n"
+                    "description": "Una ranura ER (abreviatura de \"sala de emergencias\") es un accesorio diseñado para contener un paquete de trauma II. Con el paquete y la ranura ER, el contenido del paquete se inyecta automáticamente en el personaje cuando este queda inconsciente debido a un aturdimiento. La ranura ER también puede ser activada manualmente por el personaje en cualquier momento."
                 },
                 {
                     "name": "ER slot, passive**",
@@ -283,7 +283,7 @@
                     "size": "1",
                     "cost": "500 / 1000 / 1500",
                     "id": "er-slot-passive",
-                    "description": "La ranura ER pasiva funciona igual que la ranura ER normal, excepto que no puede ser activada manualmente por el personaje.\n"
+                    "description": "La ranura ER pasiva funciona igual que la ranura ER normal, excepto que no puede ser activada manualmente por el personaje."
                 },
                 {
                     "name": "Exoskeleton",
@@ -292,7 +292,7 @@
                     "size": "3",
                     "cost": "2000 / 3000 / 4000",
                     "id": "exoskeleton",
-                    "description": "Un exoesqueleto proporciona refuerzo e integridad estructural al esqueleto natural de un personaje. El equipo cibernético que permite al cuerpo rendir más allá de sus límites normales requiere un exoesqueleto; sin este refuerzo, el cuerpo equipado con cibernética puede desgarrarse cuando los potentes servomúsculos interactúan con el equipo natural, relativamente frágil. Además de anclar los potentes equipos cibernéticos, un exoesqueleto aumenta la durabilidad del personaje, dependiendo de la calidad del implante: Normal, añade 2 puntos de aturdimiento; Bueno, añade 2 puntos de aturdimiento y 2 puntos de herida; Asombroso, añade 2 puntos de aturdimiento, 2 puntos de herida y 2 puntos mortales.\n"
+                    "description": "Un exoesqueleto proporciona refuerzo e integridad estructural al esqueleto natural de un personaje. El equipo cibernético que permite al cuerpo rendir más allá de sus límites normales requiere un exoesqueleto; sin este refuerzo, el cuerpo equipado con cibernética puede desgarrarse cuando los potentes servomúsculos interactúan con el equipo natural, relativamente frágil. Además de anclar los potentes equipos cibernéticos, un exoesqueleto aumenta la durabilidad del personaje, dependiendo de la calidad del implante: Normal, añade 2 puntos de aturdimiento; Bueno, añade 2 puntos de aturdimiento y 2 puntos de herida; Asombroso, añade 2 puntos de aturdimiento, 2 puntos de herida y 2 puntos mortales."
                 },
                 {
                     "name": "Neural 3D, ext.",
@@ -301,7 +301,7 @@
                     "size": "1",
                     "cost": "500 / 750 / 1000",
                     "id": "neural-3d-ext",
-                    "description": "Un neural 3D externo es un equipo cibernético que puede añadirse a un personaje que ya tenga instalada una nanocomputadora y circuitos cytrónicos. Una ranura de datos neurales externa proporciona una unidad de entrada a la que se puede acceder desde fuera del cuerpo; una ranura abierta es visible donde se puede colocar un 3D u otro soporte de almacenamiento de datos. Una ranura de datos Normal puede utilizar 3Ds; una ranura Buena o Asombrosa puede utilizar tanto 3Ds como X3Ds.\n"
+                    "description": "Un neural 3D externo es un equipo cibernético que puede añadirse a un personaje que ya tenga instalada una nanocomputadora y circuitos cytrónicos. Una ranura de datos neurales externa proporciona una unidad de entrada a la que se puede acceder desde fuera del cuerpo; una ranura abierta es visible donde se puede colocar un 3D u otro soporte de almacenamiento de datos. Una ranura de datos Normal puede utilizar 3Ds; una ranura Buena o Asombrosa puede utilizar tanto 3Ds como X3Ds."
                 },
                 {
                     "name": "Reflex",
@@ -319,7 +319,7 @@
                     "size": "-",
                     "cost": "2500 / 5000 / 10000",
                     "id": "accelerator",
-                    "description": "El acelerador utiliza los sistemas de control cibernético del sujeto para mejorar drásticamente su velocidad de reacción. El receptor debe tener biocableado de reflejos y una nanocomputadora para soportar el acelerador, o el dispositivo es inútil. El acelerador proporciona los siguientes beneficios: Normal: +2 de aumento de la puntuación de la Prueba de Acción, Ninguna Acciones/Asalto, $2.500. Buena: +3 de aumento de la puntuación de la Prueba de Acción, +1 Acción/Asalto, $5.000. Asombrosa: +4 de aumento de la puntuación de la Prueba de Acción, +2 Acciones/Asalto, $10.000. Para recibir la bonificación del acelerador, la nanocomputadora y el biocableado de reflejos del personaje deben ser de igual o mejor calidad. De lo contrario, el acelerador ve limitado su efecto al más débil de los tres sistemas. El uso de un acelerador duplica el daño por aturdimiento infligido al activar un programa de mejora.\n"
+                    "description": "El acelerador utiliza los sistemas de control cibernético del sujeto para mejorar drásticamente su velocidad de reacción. El receptor debe tener biocableado de reflejos y una nanocomputadora para soportar el acelerador, o el dispositivo es inútil. El acelerador proporciona los siguientes beneficios: Normal: +2 de aumento de la puntuación de la Prueba de Acción, Ninguna Acciones/Asalto, $2.500. Buena: +3 de aumento de la puntuación de la Prueba de Acción, +1 Acción/Asalto, $5.000. Asombrosa: +4 de aumento de la puntuación de la Prueba de Acción, +2 Acciones/Asalto, $10.000. Para recibir la bonificación del acelerador, la nanocomputadora y el biocableado de reflejos del personaje deben ser de igual o mejor calidad. De lo contrario, el acelerador ve limitado su efecto al más débil de los tres sistemas. El uso de un acelerador duplica el daño por aturdimiento infligido al activar un programa de mejora."
                 },
                 {
                     "name": "Subdermal NIJack",
@@ -328,7 +328,7 @@
                     "size": "1",
                     "cost": "- / 700 / -",
                     "id": "subdermal-nijack",
-                    "description": "Estos NIJacks, casi ocultos, se instalan en la muñeca o el antebrazo para que se pueda enchufar un guantelete gridcaster en el brazo sin necesidad de pasar cables expuestos al cuello y la cabeza. Todos los NIJacks subdérmicos son de calidad Buena.\n"
+                    "description": "Estos NIJacks, casi ocultos, se instalan en la muñeca o el antebrazo para que se pueda enchufar un guantelete gridcaster en el brazo sin necesidad de pasar cables expuestos al cuello y la cabeza. Todos los NIJacks subdérmicos son de calidad Buena."
                 },
                 {
                     "name": "Wireless NIJack",
@@ -337,7 +337,7 @@
                     "size": "1",
                     "cost": "- / 1000 / -",
                     "id": "wireless-nijack",
-                    "description": "El conector de interfaz neural inalámbrico es un sensor situado en la parte exterior de la cabeza del personaje, normalmente en la parte superior del lateral o en la parte posterior del cuello, donde puede ocultarse con el pelo. Cuando se activa, completa un enlace de datos con una computadora o un gridcaster que tenga un sensor similar. Un NIJack inalámbrico realiza todas las funciones de un NIJack normal pero transfiere datos mediante emisiones de radio. El personaje debe estar en línea de visión y a no más de 10 metros del sistema conectado.\n"
+                    "description": "El conector de interfaz neural inalámbrico es un sensor situado en la parte exterior de la cabeza del personaje, normalmente en la parte superior del lateral o en la parte posterior del cuello, donde puede ocultarse con el pelo. Cuando se activa, completa un enlace de datos con una computadora o un gridcaster que tenga un sensor similar. Un NIJack inalámbrico realiza todas las funciones de un NIJack normal pero transfiere datos mediante emisiones de radio. El personaje debe estar en línea de visión y a no más de 10 metros del sistema conectado."
                 },
                 {
                     "name": "Scanner Implant",
@@ -346,7 +346,7 @@
                     "size": "2 / 1 / -",
                     "cost": "1250 / 2500 / 3750",
                     "id": "scanner-implant",
-                    "description": "El implante de escáner es un dispositivo de resonancia magnética que puede instalarse en el ojo o la mano del usuario. Proporciona al personaje cibernético la capacidad de ver dentro o a través de paredes u objetos, siempre que se encuentre a menos de 1 metro del objeto a escanear. (Normal tamaño 2, Bueno tamaño 1, Asombroso tamaño -).\n"
+                    "description": "El implante de escáner es un dispositivo de resonancia magnética que puede instalarse en el ojo o la mano del usuario. Proporciona al personaje cibernético la capacidad de ver dentro o a través de paredes u objetos, siempre que se encuentre a menos de 1 metro del objeto a escanear. (Normal tamaño 2, Bueno tamaño 1, Asombroso tamaño -)."
                 },
                 {
                     "name": "Endoskeleton",
@@ -355,7 +355,7 @@
                     "size": "3",
                     "cost": "4000 / 6000 / 8000",
                     "id": "endoskeleton",
-                    "description": "El endoesqueleto, una de las piezas de equipo cibernético más difíciles de instalar, proporciona todos los beneficios de un exoesqueleto cibernético, pero está oculto dentro del cuerpo del usuario. Grandes porciones del esqueleto natural del usuario se sustituyen o refuerzan con miembros estructurales de aleación de carbonida. El endoesqueleto puede anclar cibermiembros, MusclePlus y sistemas similares al igual que el exoesqueleto, y proporciona al usuario 3 puntos extra de aturdimiento/herida/Mortal para implantes de calidad Normal, Buena o Asombrosa.\n"
+                    "description": "El endoesqueleto, una de las piezas de equipo cibernético más difíciles de instalar, proporciona todos los beneficios de un exoesqueleto cibernético, pero está oculto dentro del cuerpo del usuario. Grandes porciones del esqueleto natural del usuario se sustituyen o refuerzan con miembros estructurales de aleación de carbonida. El endoesqueleto puede anclar cibermiembros, MusclePlus y sistemas similares al igual que el exoesqueleto, y proporciona al usuario 3 puntos extra de aturdimiento/herida/Mortal para implantes de calidad Normal, Buena o Asombrosa."
                 },
                 {
                     "name": "Subdermal Armor",
@@ -364,7 +364,7 @@
                     "size": "2",
                     "cost": "1500 / 3000 / 6000",
                     "id": "subdermal-armor",
-                    "description": "Compuesta por bandas flexibles de FC insertadas sobre las partes vitales del cuerpo, la armadura subdérmica es mucho menos evidente que el blindaje corporal. No tiene el poder de parada de la armadura externa, pero no afecta a la agilidad del usuario ni anuncia su ventaja especial. La armadura Normal detiene d4-1 (LI), d6-2 (HI), d6-2 (En); la armadura Buena detiene d6-1 (LI), d8-3 (HI), d8-2 (En); y la armadura Asombrosa detiene d6+1 (LI), d6 (HI), d6 (En).\n"
+                    "description": "Compuesta por bandas flexibles de FC insertadas sobre las partes vitales del cuerpo, la armadura subdérmica es mucho menos evidente que el blindaje corporal. No tiene el poder de parada de la armadura externa, pero no afecta a la agilidad del usuario ni anuncia su ventaja especial. La armadura Normal detiene d4-1 (LI), d6-2 (HI), d6-2 (En); la armadura Buena detiene d6-1 (LI), d8-3 (HI), d8-2 (En); y la armadura Asombrosa detiene d6+1 (LI), d6 (HI), d6 (En)."
                 },
                 {
                     "name": "Systemic Reinforcement",
@@ -373,7 +373,7 @@
                     "size": "-",
                     "cost": "5000 / 10000 / 15000",
                     "id": "systemic-reinforcement",
-                    "description": "Esta pieza de equipo cibernético sirve para aumentar eficazmente la puntuación de tolerancia cibernética de un personaje. Las funciones vitales del sujeto -respiración, circulación, respuestas inmunitarias, etc.- se complementan con sistemas sintéticos no intrusivos. El refuerzo sistémico añade 1, 2 o 3 puntos a la puntuación de tolerancia cibernética del sujeto para un equipo de calidad Normal, Buena o Asombrosa.\n"
+                    "description": "Esta pieza de equipo cibernético sirve para aumentar eficazmente la puntuación de tolerancia cibernética de un personaje. Las funciones vitales del sujeto -respiración, circulación, respuestas inmunitarias, etc.- se complementan con sistemas sintéticos no intrusivos. El refuerzo sistémico añade 1, 2 o 3 puntos a la puntuación de tolerancia cibernética del sujeto para un equipo de calidad Normal, Buena o Asombrosa."
                 },
                 {
                     "name": "Cortex Bomb",
@@ -382,7 +382,7 @@
                     "size": "1",
                     "cost": 1500,
                     "id": "cortex-bomb",
-                    "description": "La bomba de córtex es uno de los medios más brutales disponibles para garantizar un comportamiento complaciente. Se trata de una pequeña carga explosiva temporizada o activada por radio, implantada en el cráneo del sujeto. Si detona, la bomba mata a la víctima en una macabra exhibición. Los detonadores de radio deben estar a menos de 200 metros para funcionar; el terreno desordenado o las paredes interiores pueden reducir esto sustancialmente. Es posible retirar una bomba de córtex, pero si el cirujano comete un Fallo Crítico, la bomba estalla, causando d4m de daño al cirujano y a cualquier otra persona en un radio de 5 metros de la víctima.\n"
+                    "description": "La bomba de córtex es uno de los medios más brutales disponibles para garantizar un comportamiento complaciente. Se trata de una pequeña carga explosiva temporizada o activada por radio, implantada en el cráneo del sujeto. Si detona, la bomba mata a la víctima en una macabra exhibición. Los detonadores de radio deben estar a menos de 200 metros para funcionar; el terreno desordenado o las paredes interiores pueden reducir esto sustancialmente. Es posible retirar una bomba de córtex, pero si el cirujano comete un Fallo Crítico, la bomba estalla, causando d4m de daño al cirujano y a cualquier otra persona en un radio de 5 metros de la víctima."
                 },
                 {
                     "name": "Deflection Web",
@@ -391,7 +391,7 @@
                     "size": "2",
                     "cost": 3500,
                     "id": "deflection-web",
-                    "description": "Se trata simplemente de un inductor de deflexión instalado en el cuerpo del sujeto. Cuando se activa, aumenta el modificador de resistencia del sujeto contra ataques físicos o de energía en +2, pero dificulta los propios ataques del sujeto con una penalización de +1 paso. La resistencia de la red es de sólo 5 asaltos; el paquete de carga suele estar oculto en la pantorrilla o en la parte superior del brazo, y cambiarlo requiere un asalto completo.\n"
+                    "description": "Se trata simplemente de un inductor de deflexión instalado en el cuerpo del sujeto. Cuando se activa, aumenta el modificador de resistencia del sujeto contra ataques físicos o de energía en +2, pero dificulta los propios ataques del sujeto con una penalización de +1 paso. La resistencia de la red es de sólo 5 asaltos; el paquete de carga suele estar oculto en la pantorrilla o en la parte superior del brazo, y cambiarlo requiere un asalto completo."
                 },
                 {
                     "name": "GP (General Purpose) Implant",
@@ -400,7 +400,7 @@
                     "size": "2 / 3 / 4",
                     "cost": "500 / 1000 / 2000",
                     "id": "gp-general-purpose-implant",
-                    "description": "Casi cualquier pieza de equipo imaginable puede instalarse en un módulo de uso general. Los artículos que pesan 1 kg o menos pueden instalarse con implantes Normales; los artículos que pesan hasta 3 kg son implantes Buenos; y los artículos que pesan hasta 10 kg son implantes Asombrosos. Los artículos potenciados incluyen cables de alimentación que el personaje puede utilizar para recargar sus baterías internas. Los elementos comunes elegidos para los implantes GP incluyen guanteletes, sopletes de corte, videocámaras, linternas, redes de gravedad cero y garfios potenciados. Los implantes de uso general cuestan 500, 1.000 o 2.000 dólares para los módulos Normales, Buenos o Asombrosos, más el doble del coste del equipo que se vaya a instalar.\n"
+                    "description": "Casi cualquier pieza de equipo imaginable puede instalarse en un módulo de uso general. Los artículos que pesan 1 kg o menos pueden instalarse con implantes Normales; los artículos que pesan hasta 3 kg son implantes Buenos; y los artículos que pesan hasta 10 kg son implantes Asombrosos. Los artículos potenciados incluyen cables de alimentación que el personaje puede utilizar para recargar sus baterías internas. Los elementos comunes elegidos para los implantes GP incluyen guanteletes, sopletes de corte, videocámaras, linternas, redes de gravedad cero y garfios potenciados. Los implantes de uso general cuestan 500, 1.000 o 2.000 dólares para los módulos Normales, Buenos o Asombrosos, más el doble del coste del equipo que se vaya a instalar."
                 },
                 {
                     "name": "Comm Port",
@@ -409,7 +409,7 @@
                     "size": "-",
                     "cost": "500 / 1500 / 2500",
                     "id": "comm-port",
-                    "description": "Se trata de un transceptor hardwired a la nanocomputadora del usuario. A través del puerto, el usuario puede recibir y transmitir señales de comunicación, alimentación de vídeo (si tiene un sistema óptico) o transmisión de datos. El uso de un puerto de comunicaciones para una conversación por radio es una distracción, por lo que el personaje sufre una penalización de +1 paso por las acciones que realice mientras se comunica. A diferencia del transceptor subdérmico (que utiliza subvocalizaciones), el puerto de comunicaciones se controla directamente a través de la mente del usuario utilizando su nanocomputadora. Alcance de 20/50/200 km.\n"
+                    "description": "Se trata de un transceptor hardwired a la nanocomputadora del usuario. A través del puerto, el usuario puede recibir y transmitir señales de comunicación, alimentación de vídeo (si tiene un sistema óptico) o transmisión de datos. El uso de un puerto de comunicaciones para una conversación por radio es una distracción, por lo que el personaje sufre una penalización de +1 paso por las acciones que realice mientras se comunica. A diferencia del transceptor subdérmico (que utiliza subvocalizaciones), el puerto de comunicaciones se controla directamente a través de la mente del usuario utilizando su nanocomputadora. Alcance de 20/50/200 km."
                 },
                 {
                     "name": "Gunsight",
@@ -418,7 +418,7 @@
                     "size": "-",
                     "cost": "1500 / 2500 / 4500",
                     "id": "gunsight",
-                    "description": "Requiere una pantalla óptica o un sistema ciberóptico para funcionar. Una videocámara montada en el arma proyecta una retícula en el campo de visión del usuario, mostrando exactamente hacia dónde apunta el arma. Proporciona una bonificación de -1/-2/-3 pasos a las pruebas de habilidad de ataque con el arma a distancia en cuestión.\n"
+                    "description": "Requiere una pantalla óptica o un sistema ciberóptico para funcionar. Una videocámara montada en el arma proyecta una retícula en el campo de visión del usuario, mostrando exactamente hacia dónde apunta el arma. Proporciona una bonificación de -1/-2/-3 pasos a las pruebas de habilidad de ataque con el arma a distancia en cuestión."
                 },
                 {
                     "name": "System Link",
@@ -427,7 +427,7 @@
                     "size": "1",
                     "cost": "1000 / 2000 / 4000",
                     "id": "system-link",
-                    "description": "Permite al usuario conectarse directamente con vehículos o hardware informático, puenteando los controles manuales. Proporciona una bonificación de -1/-2/-3 pasos a una habilidad de especialidad bajo Operación de vehículos u Operación de sistemas. Esta bonificación no es acumulativa con las bonificaciones por la calidad de la computadora de a bordo del vehículo. Se pueden adquirir módulos de especialidad adicionales por $500 cada uno.\n"
+                    "description": "Permite al usuario conectarse directamente con vehículos o hardware informático, puenteando los controles manuales. Proporciona una bonificación de -1/-2/-3 pasos a una habilidad de especialidad bajo Operación de vehículos u Operación de sistemas. Esta bonificación no es acumulativa con las bonificaciones por la calidad de la computadora de a bordo del vehículo. Se pueden adquirir módulos de especialidad adicionales por $500 cada uno."
                 }
             ],
             "id": "progress-level-7"

@@ -2669,7 +2669,7 @@
                         "avail": "Restringida",
                         "cost": "9500",
                         "id": "kz-160-13mm-charge-mg",
-                        "description": "La KZ 160 es una ametralladora pesada en uso para un escuadrón completo o asalto en movimiento de vehículos. Un héroe que consiga una prueba de condición atlética en Fuerza podría poder sostener este arma con disparo a la cadencia base asumiendo un malus severo de retroceso de daño de zona. Es mucho más ligera y fiable que prototipos previos. (Carga: bala de 13mm)"
+                        "description": "La KZ 160 es una ametralladora pesada en uso para un escuadrón completo o asalto en movimiento de vehículos. Un personaje que consiga una prueba de condición atlética en Fuerza podría poder sostener este arma con disparo a la cadencia base asumiendo un malus severo de retroceso de daño de zona. Es mucho más ligera y fiable que prototipos previos. (Carga: bala de 13mm)"
                     },
                     {
                         "name": "Cañón Sabot de 25mm Ronin 900",
@@ -3233,7 +3233,7 @@
                         "description": "La mayor precisión óptica del siglo y los mejores visores en venta, cuenta con unas lentes de rastreo que miden telemetría con crucetas de fijación sin perder nada de visión o perimetral del arma. Su uso anula cualquier penalizador de larga distancia o disparos lejanos rebajándolo 2 pasos. Solo una de las miras puede ser acoplada al cañón."
                     },
                     {
-                        "name": "Visor IFF  700 Reaper",
+                        "name": "Visor IFF 700 Reaper",
                         "platform": "Any ranged weapon",
                         "mass": "0.1",
                         "cost": "850",

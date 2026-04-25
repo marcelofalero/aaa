@@ -967,7 +967,7 @@
                         "mass": "1",
                         "cost": "-",
                         "id": "candle",
-                        "description": " combustible cylinder providing light in a 2-3 meter radius. High PL versions burn for 1-2 days."
+                        "description": "combustible cylinder providing light in a 2-3 meter radius. High PL versions burn for 1-2 days."
                     },
                     {
                         "name": "Climate weave",

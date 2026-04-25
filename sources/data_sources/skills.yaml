@@ -408,8 +408,24 @@ items:
       - en:
           name: Armor Operation
           description: |-
-            Armor that''s bulky, heavy, and cumbersome hinders the character using it. This is reflected by a penalty to the character''s action check and the lessening or negating of a character''s Dexterity resistance modifier. The Armor Operation broad skill and its specialty skills help to alleviate these penalties. The Table in the [Armor Section](/equipment/armor) lists the various types of armor available and indicates which ones require the user to take an action check and Dexterity resistance modifier penalty. Under the "AP” column on that table, an entry of "0" means that the Armor Operation skill is not needed to use the armor effectively, and no action check or Dexterity resistance modifier penalty is associated with it. Having just the broad skill allows a character to reduce the action check and Dexterity resistance modifier penalty of any type of armor by 1 step. An action check penalty can be reduced from +1 to 0, or from +2 to +1, and so on—but this benefit never provides a bonus. A Dexterity resistance modifier penalty can be similarly offset, perhaps returning the character''s resistance modifier to its original value. If the value under **AP** is greater than **+1** then ranks in **armor operation-combat** are needed to completely cancel the penalties (refer to the [armor operation-combat armor](/skills/armor-operation/combat-armor) for more details). A character with the broad skill who is decked out in armor can attempt any actions he wants, though some strenuous physical activities (jumping, running, climbing, etc.) may require an Armor Operation check. In general, an Ordinary result on this skill check indicates a half effect (run at one-half the normal rate, for example), while a Good result or better indicates a full effect (run at the normal rate). For a character **untrained** in Armor Operation, an action check and Dexterity resistance modifier penalty associated with any type of armor always applies. An untrained character can''t do anything but walk and make simple attacks while using any armor that carries an action check and resistance modifier penalty. Simple attacks are just that—no rank benefits, such as the double-strike benefit related to the Melee Weapons specialty skills, can be employed by an untrained character who is wearing cumbersome armor. Also, an untrained character can''t use any type of powered armor.
-            *Note: the AP penalty of armors and shields is cumulative.*
+            Armor that's bulky, heavy, and cumbersome hinders the character using it. This is reflected by a penalty to the character's action check (AP) and the lessening or negating of a character's **Dexterity** resistance modifier. The Armor Operation broad skill and its specialty skills help to alleviate these penalties.
+
+            ### Base Effect
+            Having just the broad skill allows a character to reduce the action check and Dexterity resistance modifier penalty of any type of armor by 1 step.
+            - **Example:** A +1 AP penalty is reduced to 0.
+            - **Limitation:** This benefit never provides a bonus.
+
+            ### Strenuous Activity
+            Some strenuous physical activities (jumping, running, climbing, etc.) while armored may require an **Armor Operation** check.
+            - **Ordinary:** Half effect (e.g., run at one-half the normal rate).
+            - **Good or better:** Full effect (e.g., run at the normal rate).
+
+            ### Untrained
+            Characters **untrained** in Armor Operation suffer the full penalty of any armor.
+            - **Restrictions:** They can only walk and make simple attacks (no rank benefits allowed).
+            - **Powered Armor:** Untrained characters cannot use powered armor.
+
+            *Note: The AP penalty of armors and shields is cumulative.*
       - es:
           name: Operación de armadura
           description: |-
@@ -424,35 +440,98 @@ items:
         localized:
           - en:
               name: Combat armor
-              description: ''
+              description: |-
+                This specialty represents the level of mastery in the use of armor, as well as the specialized training needed to use powered armors, allowing the character to obtain the most of any armor.
+
+                - **Rank 1 [Improved Operation]:** The reduction to action check and Dexterity resistance modifier penalties becomes 2 steps. This improves to 3 steps at **Rank 4**, 4 steps at **Rank 6**, and 5 steps at **Rank 10**.
+                - **Rank 2 [Shaking Off Stuns]:** Stun damage (including secondary) is reduced by 1 point. This increases by 1 for every 2 ranks attained (max 6 points at **Rank 12**).
+                - **Rank 7 [Powered Armor Operation]:** The character has mastered the synchronization required to operate Powered Armor suits.
           - es:
-              name: Armadura potenciada
-              description: ''
+              name: Armadura de Combate
+              description: |-
+                Esta especialidad representa el nivel de maestría en el uso de la armadura, así como el entrenamiento especializado necesario para usar armaduras potenciadas, permitiendo al personaje obtener el máximo de cualquier armadura.
+
+                - **Rango 1 [Operación Mejorada]:** La reducción de las penalizaciones a la tirada de acción y al modificador de resistencia de Destreza pasa a ser de 2 pasos. Mejora a 3 pasos en el **Rango 4**, 4 pasos en el **Rango 6** y 5 pasos en el **Rango 10**.
+                - **Rango 2 [Sacudirse Aturdimientos]:** El daño por aturdimiento (incluido el secundario) se reduce en 1 punto. Aumenta en 1 por cada 2 rangos alcanzados (máximo 6 puntos en el **Rango 12**).
+                - **Rango 7 [Operación de Armadura Potenciada]:** El personaje ha dominado la sincronización necesaria para operar trajes de Armadura Potenciada.
         trained_only: false
-      powered-armor:
-        attribute: STR
-        cost: 4
-        url: /skills/armor-operation#powered-armor
+        rank_benefits:
+          - rank: 1
+            title: Improved Operation
+          - rank: 2
+            title: Shaking Off Stuns
+          - rank: 4
+            title: Improved Operation
+          - rank: 6
+            title: Improved Operation
+          - rank: 7
+            title: Powered Armor Operation
+          - rank: 10
+            title: Improved Operation
+      tactical-armor:
+        attribute: INT
+        cost: 3
+        url: /skills/armor-operation#tactical-armor
         localized:
           - en:
-              name: Powered armor
-              description: ''
+              name: Tactical armor
+              description: |-
+                This specialty skill enters into play when armors with integrated equipment are used (sensors, communications, etc.). It does not apply to mounted weaponry, which uses its own specific skill. It can also be used to resist electronic attacks like sensor hacking or jamming.
+
+                - **Rank 2 [Tactical Multi-tasking]:** The character can perform one operation with integrated suit equipment (cycling sensors, changing frequencies) without spending an action. One additional free operation is gained at **Rank 6** and **Rank 10**.
+                - **Rank 5 [Sensor Proficiency]:** Receive a **-1 step bonus** to checks involving the operation or interpretation of integrated suit sensors.
+                - **Rank 7 [Counter-Intrusion]:** Gain a **-1 step bonus** to resist electronic warfare or hacking attempts directed at the suit. This improves to **-2 steps** at **Rank 11**.
           - es:
-              name: Sistemas de propulsión
-              description: ''
+              name: Armadura Táctica
+              description: |-
+                Esta habilidad de especialidad entra en juego cuando se utilizan armaduras CON equipo integrado (sensores, comunicaciones, etc.). No se aplica al armamento montado, que utiliza su propia habilidad específica. También se puede usar para resistir ataques electrónicos como el pirateo de sensores o las interferencias.
+
+                - **Rango 2 [Multitarea Táctica]:** El personaje puede realizar una operación CON el equipo integrado del traje (ciclar sensores, cambiar frecuencias) sin gastar una acción. Se gana una operación gratuita adicional en el **Rango 6** y el **Rango 10**.
+                - **Rango 5 [Competencia en Sensores]:** Recibe una **bonificación de -1 paso** en las tiradas que impliquen la operación o interpretación de los sensores integrados del traje.
+                - **Rango 7 [Contraintrusión]:** Gana una **bonificación de -1 paso** para resistir intentos de guerra electrónica o pirateo dirigidos al traje. Esto mejora a **-2 pasos** en el **Rango 11**.
         trained_only: false
+        rank_benefits:
+          - rank: 2
+            title: Tactical Multi-tasking
+          - rank: 5
+            title: Sensor Proficiency
+          - rank: 6
+            title: Tactical Multi-tasking
+          - rank: 7
+            title: Counter-Intrusion
+          - rank: 10
+            title: Tactical Multi-tasking
+          - rank: 11
+            title: Counter-Intrusion
       propulsion-systems:
-        attribute: WIL
+        attribute: INT
         cost: 3
         url: /skills/armor-operation#propulsion-systems
         localized:
           - en:
               name: Propulsion systems
-              description: ''
+              description: |-
+                This specialty skill represents mastery in the use of integrated propulsion systems, such as jetpacks, underwater drives, or gravitic assisted deceleration systems (GADS).
+
+                - **Rank 2 [Thermal/Fuel Management]:** Optimize fuel or heat dissipation, extending operational time of propulsion units by 50%.
+                - **Rank 4 [Vector Calibration & Aerobatics Integration]:** Adjust thrust nozzles for specific tasks, providing a **-1 step bonus** to maneuvering checks. Additionally, the character is sufficiently familiarized with armor propulsion systems to use the **Aerobatics** specialty skill for complex maneuvers while wearing the suit.
+                - **Rank 7 [Maximum Burn]:** Make a Propulsion Systems check to increase speed for the round: Ordinary (+25%), Good (+50%), or Amazing (+100%). Each consecutive round of forcing the engine incurs a cumulative +1 step penalty. The penalty is reduced by 1 for each round the propulsion is not used.
           - es:
-              name: Escudos
-              description: ''
+              name: Sistemas de propulsión
+              description: |-
+                Esta habilidad de especialidad representa la maestría en el uso de sistemas de propulsión integrados, como mochilas cohete, propulsores subacuáticos o incluso sistemas de deceleración asistida por gravedad (GADS).
+
+                - **Rango 2 [Gestión Térmica/Combustible]:** Optimiza el combustible o la disipación de calor, extendiendo el tiempo operativo de las unidades de propulsión en un 50%.
+                - **Rango 4 [Calibración Vectorial e Integración Aeróbica]:** Ajusta las toberas de empuje para tareas específicas, proporcionando una **bonificación de -1 paso** a las tiradas de maniobra. Además, el personaje está suficientemente familiarizado CON los sistemas de propulsión de la armadura para usar la habilidad de especialidad **Acrobacia** para maniobras complejas mientras usa el traje.
+                - **Rango 7 [Empuje Máximo]:** Realiza una tirada de Sistemas de Propulsión para aumentar la velocidad durante el asalto: Ordinario (+25%), Bueno (+50%) o Asombroso (+100%). Cada asalto consecutivo de forzar el motor incurre en una penalización acumulativa de +1 paso a la tirada. La penalización se reduce en 1 por cada asalto que no se use la propulsión.
         trained_only: false
+        rank_benefits:
+          - rank: 2
+            title: Thermal/Fuel Management
+          - rank: 4
+            title: Vector Calibration & Aerobatics Integration
+          - rank: 7
+            title: Maximum Burn
       shields:
         attribute: STR
         cost: 3
@@ -460,23 +539,36 @@ items:
         localized:
           - en:
               name: Shields
-              description: ''
+              description: |-
+                Focuses on the tactical use of physical, energy, or ballistic shields.
+
+                - **Rank 3 [Reactive Block]:** Spend the next available action to perform an opposed check against an attacker. If successful, the attack is negated. (Note: Only Ballistic or Large shields of the appropriate PL can block ranged fire).
+                - **Rank 4 [Resistance Modifier]:** Provides a **+1 improvement** to the **Strength** resistance modifier. This does not stack with Melee Weapons benefits.
+                - **Rank 6 [Tactical Charge]:** Negates the standard +2 step bonus opponents receive to hit a charging target.
+                - **Rank 8 [Recoil Anchor]:** Reduce the situation die penalty for Burst or Autofire by 1 step when using one-handed weapons with a shield.
+                - **Rank 12 [Overlapping Coverage]:** Share the shield's resistance modifier bonus with an ally within 2 meters against one ranged attack per round.
           - es:
-              name: Armadura táctica
-              description: ''
+              name: Escudos
+              description: |-
+                Se centra en el uso táctico de escudos físicos, de energía o balísticos.
+
+                - **Rango 3 [Bloqueo Reactivo]:** Gasta la siguiente acción disponible para realizar una tirada enfrentada contra un atacante. Si tiene éxito, el ataque queda anulado. (Nota: Solo los escudos balísticos o grandes de materiales del mismo PL pueden bloquear fuego a distancia).
+                - **Rango 4 [Modificador de Resistencia]:** Proporciona una mejora de **+1** al modificador de resistencia de **Fuerza**. No se acumula CON los beneficios de Armas Cuerpo a Cuerpo.
+                - **Rango 6 [Carga Táctica]:** Anula la bonificación estándar de +2 pasos que reciben los oponentes para golpear a un objetivo que carga.
+                - **Rango 8 [Anclaje de Retroceso]:** Reduce en 1 paso la penalización del dado de situación por ráfaga (Burst) o fuego automático (Autofire) cuando se usan armas de una mano CON un escudo.
+                - **Rango 12 [Cobertura Solapada]:** Comparte la bonificación del modificador de resistencia del escudo CON un aliado a menos de 2 metros contra un ataque a distancia por asalto.
         trained_only: false
-      tactical-armor:
-        attribute: WIL
-        cost: 3
-        url: /skills/armor-operation#tactical-armor
-        localized:
-          - en:
-              name: Tactical armor
-              description: ''
-          - es:
-              name: Tactical armor
-              description: ''
-        trained_only: false
+        rank_benefits:
+          - rank: 3
+            title: Reactive Block
+          - rank: 4
+            title: Resistance Modifier
+          - rank: 6
+            title: Tactical Charge
+          - rank: 8
+            title: Recoil Anchor
+          - rank: 12
+            title: Overlapping Coverage
     trained_only: false
   athletics:
     attribute: STR
@@ -567,7 +659,7 @@ items:
             Noticing something could be as simple as providing a hint that the character missed in the normal course of play, or help when the character appears totally lost or confused. On a Failure, the character doesn't notice a thing. Otherwise, any success provides the character with at least a small clue. The Gamemaster can decide that the better the level of success achieved, the more details the character becomes aware of.
 
             ### Guidelines for Use
-            The Awareness broad skill and its specialties are examples of how the general rule on dice rolling applies: Dice should only be rolled on a skill check in a situation when the Gamemaster needs to determine if a character is capable of doing something difficult or out of the **Ordinary**. 
+            The Awareness broad skill and its specialties are examples of how the general rule on dice rolling applies: Dice should only be rolled on a skill check in a situation when the Gamemaster needs to determine if a character is capable of doing something difficult or out of the **Ordinary**.
 
             More often than not, characters with respectable scores in Awareness or its specialties will automatically succeed when something exists that can be noticed or perceived (e.g., seeing a fallen tree blocking a path). A skill check is called for to see if the character notices subtle details (e.g., a hole in the trunk where an object is concealed).
 
@@ -591,12 +683,12 @@ items:
                 This specialty skill represents a character's natural instincts—the ability to sense danger when no obvious signs are evident, to avoid surprise, or to make an intuitive leap of logic without the support of hard facts. It is the ability to make a "best guess" in a given situation.
 
                 ### Avoiding Surprise
-                When no obvious signs of danger are evident, a character’s subconscious use of this skill can enable them to avoid being caught by surprise. The Gamemaster calls for intuition checks; players do not request them. 
+                When no obvious signs of danger are evident, a character’s subconscious use of this skill can enable them to avoid being caught by surprise. The Gamemaster calls for intuition checks; players do not request them.
                 - **Success:** The character isn't surprised and can act in the surprise phase of the upcoming round.
 
                 ### The "Best Guess"
-                When a character wants to make an intuitive "best guess," the Gamemaster may allow a player to call for an intuition skill check on their character’s behalf. 
-                - **Success:** Yields a beneficial result; the greater the level of success, the more accurate and complete the conclusion. 
+                When a character wants to make an intuitive "best guess," the Gamemaster may allow a player to call for an intuition skill check on their character’s behalf.
+                - **Success:** Yields a beneficial result; the greater the level of success, the more accurate and complete the conclusion.
                 *Note: This use is only permitted to characters who have purchased the specialty skill and should not be allowed more than once or twice in an adventure.*
           - es:
               name: Intuición
@@ -653,7 +745,7 @@ items:
         trained_only: true
     trained_only: false
   business:
-    attribute: WIL
+    attribute: INT
     cost: 4
     category: Social
     url: /skills/business
@@ -661,7 +753,7 @@ items:
       - en:
           name: Business
           description: |-
-            This broad skill provides a character with basic knowledge of the theories of production, distribution, supply and demand, advertising, inventory control, and business planning. 
+            This broad skill provides a character with basic knowledge of the theories of production, distribution, supply and demand, advertising, inventory control, and business planning.
 
             ### Uses
             Skill checks are called for when a character wants to:
@@ -686,7 +778,7 @@ items:
             Esta habilidad general proporciona un conocimiento básico de las teorías de producción, distribución, oferta y demanda, publicidad, control de inventario y planificación empresarial. Se solicitan tiradas de habilidad cuando un personaje quiere jugar en el mercado de valores, aplicar sus conocimientos de negocios para cerrar un trato, intentar una transacción comercial ilegal, determinar el valor de los bienes en su propia sociedad, localizar mercados de productos básicos y calcular el valor justo de mercado local de bienes y servicios. El Director de Juego asignará modificadores al dado de situación, teniendo en cuenta las circunstancias que existen cuando se solicita una tirada de habilidad. Si un personaje usa algún aspecto de la habilidad de Negocios para regatear CON alguien sobre la compra o venta de un producto, se aplica el modificador de resistencia de Inteligencia de la otra parte al dado de situación. Si la otra parte también tiene la habilidad de Negocios, el Director de Juego puede optar por manejar la confrontación como una situación de "Personaje contra Personaje"; ver página 63. Opcionalmente, en tal caso, la habilidad de Negocios puede tratarse como una [habilidad de encuentro](/es/core-mechanics/characters-in-action/#encounter-scene). Si el uso de esta habilidad da como resultado que la actitud de un objetivo cambie a Amistosa o mejor, esto puede proporcionar una bonificación en cualquier tirada de habilidad posterior para que la otra parte coopere. Por lo general, se aplicará una penalización de dado de situación cuando un personaje intente negociar CON bienes exóticos, raros o desconocidos; intente realizar una transacción ilegal; o intente cerrar un trato CON un miembro de una cultura desconocida. Cualquiera de estas penalizaciones puede ser Ordinaria, Buena o Asombrosa, dependiendo de la situación específica. Se aplicaría una bonificación al dado de situación si el personaje tiene información privilegiada que le da una ventaja al realizar una transacción, o si está tratando CON un producto o cultura familiar.
     items:
       corporate:
-        attribute: WIL
+        attribute: INT
         cost: 3
         url: /skills/business#corporate
         localized:
@@ -700,7 +792,7 @@ items:
                 Esta especialización permite a un personaje mejorar su capacidad para funcionar en el ámbito del comercio y el comercio a gran escala, y para tratar CON los mercados de valores, fusiones, adquisiciones corporativas, negocios especulativos y los empresarios que operan en estos círculos. También proporciona a un personaje una comprensión de cómo operan las grandes empresas y corporaciones. Los presidentes de corporaciones y los señores del comercio que mueven bienes y servicios a escala global o galáctica usan esta habilidad para determinar el éxito de sus actividades comerciales.
         trained_only: false
       illicit-business:
-        attribute: WIL
+        attribute: INT
         cost: 3
         url: /skills/business#illicit-business
         localized:
@@ -731,7 +823,7 @@ items:
           - rank: 10
             title: Increased Effect
       small-business:
-        attribute: WIL
+        attribute: INT
         cost: 3
         url: /skills/business#small-business
         localized:
@@ -762,7 +854,7 @@ items:
             title: Increased Effect
     trained_only: false
   computer-science:
-    attribute: WIL
+    attribute: INT
     cost: 7
     category: Technical
     url: /skills/computer-science
@@ -771,7 +863,7 @@ items:
           name: Computer Science
           description: |-
             Computers are an integral part of human society, and many alien societies as well, at Progress Level 5 and higher. (For much more information on computers and related material, see Chapter 10: Computers.) Most computers and computer-assisted machines are designed to be user-friendly in routine situations. The broad skill provides a character with a basic understanding of computers and computer systems. (In comparison, the Knowledge—computer operation skill merely gives a character the ability to use a computer effectively, but does not allow any understanding of how the machine does what it does.) The three primary uses for the Computer Science broad skill are information retrieval, computer repair, and programming. These uses are described below.
-            **Note:** Some computer systems allow users who don''t have the broad skill to make skill checks at their base Intelligence score instead of at the untrained score. If such an assist program is installed in a particular piece of equipment, your Gamemaster will let you know.
+            **Note:** Some computer systems allow users who don't have the broad skill to make skill checks at their base Intelligence score instead of at the untrained score. If such an assist program is installed in a particular piece of equipment, your Gamemaster will let you know.
             ▶ Information Retrieval: Most computers are connected to some storehouse of raw data—a large network, a centralized storage system, or the unit’s own drives. Using the Computer Science skill to search for specific information requires a skill check only if that information is protected in some way (user password, encoded data, etc.) or if the information is obscure and hard to locate. In all but the most straightforward of situations, a complex skill check (see page 62) is used to determine the result of a retrieval attempt. The broad skill is useful when a character wants to retrieve information from any unprotected system—but if the system is protected, only programs of Marginal quality and Marginal complexity can be accessed with the broad skill. In order to retrieve information from a protected system of higher quality or greater complexity, the specialty skill hacking is needed. A Critical Failure result on the skill check usually means that safeguards or alarms have been triggered, an unretrievable computer error occurs, or the character makes some other monumental mistake that aborts this computer run.
             ▶ Computer Repair: A character with this skill has the ability to fix a damaged computer system, either by replacing defective parts or by rewiring a component or a system to bypass a problem spot. Repairing a computer system is always a complex skill check. For information on how attempts to repair a device are made, see the repair specialty under the Technical Science broad skill (page 89).
             ▶ Programming: Computer programs exist to handle almost any task imaginable. Without training in the use of these high-tech tools, the wealth of options and accessories available can be overwhelming to a character trying to employ them. As with information retrieval (above), using Computer Science to navigate and utilize a program almost always involves a complex skill check. A character with just the broad skill can only manipulate the source code of programs of Marginal quality and Marginal complexity. Manipulating programs of better quality and greater complexity requires the programming specialty skill. For more information on how the Computer Science specialty skills are used, see Chapter 10: Computers. Brief descriptions of the specialty skills are given below.
@@ -786,14 +878,14 @@ items:
             # Especializaciones
     items:
       hacking:
-        attribute: WIL
+        attribute: INT
         cost: 4
         url: /skills/computer-science#hacking
         localized:
           - en:
               name: Hacking
               description: |-
-                Hacking is the ability to break computer codes and bypass computer security for the purposes of gaining access to restricted data or secure computer systems. Hacking can be performed at a computer station that’s physically connected to the data stores in question, or it can be performed from a distant location by creating a link via a network of some kind. It''s most often used to retrieve secured data, to enter and take control of a computer system, or to perform some type of sabotage such as erasing files or introducing a virus of some kind. This specialty skill allows a character equipped with a computer to perform the previously mentioned tasks. The character''s own skill and any programs being used can help the character navigate computer systems, overcome security, and even defend against other operators hooked into a system.
+                Hacking is the ability to break computer codes and bypass computer security for the purposes of gaining access to restricted data or secure computer systems. Hacking can be performed at a computer station that’s physically connected to the data stores in question, or it can be performed from a distant location by creating a link via a network of some kind. It's most often used to retrieve secured data, to enter and take control of a computer system, or to perform some type of sabotage such as erasing files or introducing a virus of some kind. This specialty skill allows a character equipped with a computer to perform the previously mentioned tasks. The character's own skill and any programs being used can help the character navigate computer systems, overcome security, and even defend against other operators hooked into a system.
                 ▶ Increased Effect: As a character gains ranks in this specialty skill, his ability to perform actions related to hacking improves. This is reflected by a **-1 situation die bonus at rank 4**, a **-2 bonus at rank 8**, and a **-3 bonus at rank 12**.
           - es:
               name: Hacking
@@ -804,14 +896,14 @@ items:
                 **bonificador de -3 en el rango 12**.
         trained_only: true
       hardware:
-        attribute: WIL
+        attribute: INT
         cost: 3
         url: /skills/computer-science#hardware
         localized:
           - en:
               name: Hardware
               description: |-
-                This specialty represents a character''s knowledge of and proficiency with the physical components that make up a computer. Understanding how a computer system works, being able to set one up quickly, designing and building your own computer, and repairing computer equipment are some of the tasks covered by this skill.
+                This specialty represents a character's knowledge of and proficiency with the physical components that make up a computer. Understanding how a computer system works, being able to set one up quickly, designing and building your own computer, and repairing computer equipment are some of the tasks covered by this skill.
                 ▶ Increased Effect: As a character gains ranks in this specialty skill, his ability to repair computer systems and work with computer hardware in other ways improves. This is reflected by a **-1 situation die bonus at rank 4**, a **-2 bonus at rank 8**, and a **-3 bonus at rank 12**.
           - es:
               name: Hardware
@@ -821,7 +913,7 @@ items:
                 **bonificador de -2 en el rango 8**, y un **bonificador de -3 en el rango 12**.
         trained_only: false
       programming:
-        attribute: WIL
+        attribute: INT
         cost: 3
         url: /skills/computer-science#programming
         localized:
