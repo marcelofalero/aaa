@@ -1,0 +1,40 @@
+# Data Review and Processing Guide
+
+## Objective
+The goal is to manually review all data sources (currently focusing on **Skills**) to ensure absolute accuracy, eliminate hallucinations, and maintain consistent formatting between the English source material and the Spanish translation.
+
+## Reference Materials
+- **Source Text:** `sources/chapters/page_XXX.md` (OCR/Markdown extracts from the original books).
+- **Target Data:** `sources/data_sources/*.yaml` (The files used to generate the site).
+- **Terminology Mapping:** `site/content/notes/terminology-mapping.md` (Must be followed strictly for all translations).
+
+## Workflow per Entry
+1. **Source Research:** Locate the original text in `sources/chapters/`.
+2. **English Review:**
+   - Compare the YAML `en` entry with the source.
+   - Remove any text not present in the original (hallucinations).
+   - Ensure Markdown formatting is clean and consistent.
+   - Use "character" instead of "hero" per project mandates.
+3. **Spanish Translation:**
+   - Translate the *fixed* English version into Spanish.
+   - Use the **Terminology Mapping** for all game-specific terms (e.g., "Check" -> "Tirada", "Ordinary" -> "Ordinario").
+4. **Validation:**
+   - Run the linter: `python3 sources/scripts/data_linter.py sources/data_sources/<file>.yaml`
+   - Run the formatter: `python3 sources/scripts/data_formatter.py sources/data_sources/<file>.yaml`
+
+## Tracking Progress
+As entries are reviewed, the following files serve as a comparison log:
+- `sources/source-skills.md`: Contains the raw text from the source pages.
+- `sources/processed-skills.md`: Contains the current YAML-formatted version for easy side-by-side review.
+
+## Current Status
+- **Acrobatics:** COMPLETED (EN and ES reviewed/fixed).
+- **Administration:** COMPLETED (English reviewed/fixed).
+- **Animal Handling:** COMPLETED (English reviewed/fixed).
+- **Awareness:** COMPLETED (English reviewed/fixed).
+- **Business:** COMPLETED (English reviewed/fixed).
+- **Armor Operation:** DRAFTED (Pending Review).
+- **Athletics:** DRAFTED (Pending Review).
+- **Computer Science:** DRAFTED (Pending Review).
+- **Next Up:** Review drafted skills, then Covert Ops.
+.

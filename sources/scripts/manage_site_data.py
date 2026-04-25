@@ -164,7 +164,7 @@ def rebuild_all():
         process_psionics(to_list(psionics_raw.get('items', [])), mapping)
     
     # Generic gear data (Armor, weapons, etc)
-    gear_sources = ['armor', 'computers', 'cybernetics', 'survival_gear', 'weapons']
+    gear_sources = ['armor', 'computers', 'cybernetics', 'goods_and_services', 'survival_gear', 'weapons']
     for base_name in gear_sources:
         yaml_path = os.path.join(DATA_SOURCES_DIR, f'{base_name}.yaml')
         if not os.path.exists(yaml_path): continue
@@ -203,20 +203,18 @@ def apply_rules_to_node(node, mapping, lang='en'):
         # Get localized data if present
         loc_data = get_localized(node, lang)
         
-        # Determine title for URL localization
-        # 1. From localized block
-        # 2. From root 'name' or 'skill' (common for categories or generic items)
+        # Determine title for URL localization and field injection
         loc_title = loc_data.get('name') or loc_data.get('skill') or loc_data.get('title')
         if not loc_title:
              loc_title = node.get('name') or node.get('skill') or node.get('discipline')
 
         if not loc_title and lang == 'es':
-             # Fallback translation if root field exists but no Spanish localized version yet
+             # Fallback translation for generic names
              orig_title = node.get('name') or node.get('skill') or node.get('discipline')
              if orig_title:
                  loc_title = translate_field(orig_title, node.get(f"{'name' if 'name' in node else 'skill'}_es"), mapping, 'es')
 
-        # Inject localized title if root field is missing (new standardized format)
+        # Inject localized title into primary field
         if loc_title:
             if 'name' in loc_data or 'name' in node:
                 new_node['name'] = loc_title
@@ -225,7 +223,6 @@ def apply_rules_to_node(node, mapping, lang='en'):
             elif 'title' in loc_data or 'title' in node:
                 new_node['title'] = loc_title
             else:
-                # Default to 'name' for category headers or if ambiguous
                 new_node['name'] = loc_title
 
         # Process all root-level attributes
@@ -233,32 +230,14 @@ def apply_rules_to_node(node, mapping, lang='en'):
             if k == 'localized' or k.endswith('_es'): continue
             
             if k in ['items', 'config'] and isinstance(v, dict):
-                # Optimize for Humans (YAML Map) -> Optimize for Machines (JSON List)
-                # Create a simplified index structure for the list page
-                index_data = {
-                    'config': {
-                        'columns': {
-                            'en': [
-                                {'name': 'Background', 'key': 'name', 'link': True},
-                                {'name': 'Description', 'key': 'summary'}
-                            ],
-                            'es': [
-                                {'name': 'Trasfondo', 'key': 'name', 'link': True},
-                                {'name': 'Descripción', 'key': 'summary'}
-                            ]
-                        }
-                    },
-                    'items': []
-                }
+                # Standardized recursive processing for items/subgroups
                 item_list = []
                 for item_id, item_data in v.items():
-                    # Ensure it's a dict
                     if not isinstance(item_data, dict):
                         item_data = {'name': item_data}
                     
-                    # Inject Key as ID (item_id)
+                    # Inject ID from key if not present
                     item_data = item_data.copy()
-                    # For config, we use 'id' or 'name' if not present
                     if 'id' not in item_data:
                         item_data['id'] = item_id
                     
