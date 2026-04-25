@@ -1205,9 +1205,9 @@
                     "type": "Broad",
                     "items": [
                         {
-                            "skill": "Forensic Science",
+                            "skill": "Forensics",
                             "attribute": "INT",
-                            "url": "/skills/medical-science#forensic-science",
+                            "url": "/skills/medical-science#forensics",
                             "cost": 3,
                             "type": "Specialty",
                             "css_class": ""
@@ -1216,22 +1216,6 @@
                             "skill": "Medical Knowledge",
                             "attribute": "INT",
                             "url": "/skills/medical-science#medical-knowledge",
-                            "cost": 3,
-                            "type": "Specialty",
-                            "css_class": ""
-                        },
-                        {
-                            "skill": "Xenomedicine",
-                            "attribute": "INT",
-                            "url": "/skills/medical-science#xenomedicine-specific",
-                            "cost": 3,
-                            "type": "Specialty",
-                            "css_class": "trained-only"
-                        },
-                        {
-                            "skill": "Forensics",
-                            "attribute": "INT",
-                            "url": "/skills/medical-science#forensics",
                             "cost": 3,
                             "type": "Specialty",
                             "css_class": ""
@@ -1257,6 +1241,14 @@
                             "attribute": "INT",
                             "url": "/skills/medical-science#treatment",
                             "cost": 4,
+                            "type": "Specialty",
+                            "css_class": "trained-only"
+                        },
+                        {
+                            "skill": "Xenomedicine",
+                            "attribute": "INT",
+                            "url": "/skills/medical-science#xenomedicine",
+                            "cost": 3,
                             "type": "Specialty",
                             "css_class": "trained-only"
                         }

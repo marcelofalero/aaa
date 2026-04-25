@@ -1221,42 +1221,34 @@
                             "css_class": ""
                         },
                         {
-                            "skill": "Xenomedicine",
+                            "skill": "Psicología",
                             "attribute": "INT",
-                            "url": "/es/skills/medical-science#xenomedicine",
-                            "cost": 3,
+                            "url": "/es/skills/medical-science#psicologia",
+                            "cost": 5,
                             "type": "Specialty",
-                            "css_class": "trained-only"
+                            "css_class": ""
                         },
                         {
                             "skill": "Cirugía",
                             "attribute": "INT",
                             "url": "/es/skills/medical-science#cirugia",
-                            "cost": 3,
-                            "type": "Specialty",
-                            "css_class": ""
-                        },
-                        {
-                            "skill": "Tratamiento",
-                            "attribute": "INT",
-                            "url": "/es/skills/medical-science#tratamiento",
-                            "cost": 5,
-                            "type": "Specialty",
-                            "css_class": ""
-                        },
-                        {
-                            "skill": "Surgery",
-                            "attribute": "INT",
-                            "url": "/es/skills/medical-science#surgery",
                             "cost": 5,
                             "type": "Specialty",
                             "css_class": "trained-only"
                         },
                         {
-                            "skill": "Treatment",
+                            "skill": "Tratamiento",
                             "attribute": "INT",
-                            "url": "/es/skills/medical-science#treatment",
+                            "url": "/es/skills/medical-science#tratamiento",
                             "cost": 4,
+                            "type": "Specialty",
+                            "css_class": "trained-only"
+                        },
+                        {
+                            "skill": "Xenomedicina",
+                            "attribute": "INT",
+                            "url": "/es/skills/medical-science#xenomedicina",
+                            "cost": 3,
                             "type": "Specialty",
                             "css_class": "trained-only"
                         }
