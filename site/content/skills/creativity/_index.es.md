@@ -12,13 +12,24 @@ Usar esta habilidad implica una tirada de habilidad compleja. El modificador de 
 - **Complejidad:** Ordinaria: tarea sencilla; Asombrosa: tarea de calidad/dificultad extrema.
 - **Resultados:** Un Fallo Crítico o tres resultados de Fallo significan que el trabajo se desecha.
 
-## Habilidades de Especialidad
+## The Intangible
 {{< specialty attr="VOL" untrained="yes" cost="3" >}}
 
-{{% list %}}
-- **Escritura:** Facilidad para comunicarse con la palabra escrita.
-- **Expresión Artística:** Talento para un medio artístico elegido.
-- **Creatividad, Habilidad Específica:** Un aspecto específico de esta habilidad, como gráficos por computadora o arte holográfico.
+
+
+---
+
+## The Shape
+{{< specialty attr="VOL" untrained="yes" cost="3" >}}
+
+
+
+---
+
+## The Word
+{{< specialty attr="VOL" untrained="yes" cost="3" >}}
+
+
 
 ---
 

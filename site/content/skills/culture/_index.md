@@ -6,31 +6,52 @@ type = "skill"
 layout = "list"
 +++
 
-This broad skill represents a character''s ability to understand and interact with cultures that are different from his own. Areas of knowledge covered by the skill include the customs, philosophy, and way of life of a particular culture, as well as a basic familiarity with major historical figures, events, and trends important to that culture. In the use of the broad skill, a character applies what he knows about cultural trends and studies to make an educated guess about how to interact with a member of another culture. The broad skill provides at least a working knowledge of what to do when dealing with any alien culture. When Culture or any of its specialty skills is used in an interactive context with one or more other characters, it is considered an encounter skill (see the sidebar). A Critical Failure result on a skill check indicates that the character has thoroughly insulted the individual or group he''s trying to deal with. Other skill check results change the target''s attitude as shown on **TABLE P25: ENCOUNTER SKILL EFFECTS**. The greater the degree of success, the more endearing and flattering the character appears to the member(s) of the culture he''s dealing with. The complexity of the ideas that are being communicated during a use of the Culture skill (or the use of one of its specialty skills) may provide a modifier to the skill check:
-▶ Simple concepts—basic messages such as exchanging names, conveying friendly intentions, and offering help—give a -1 bonus to the skill check.
-▶ Everyday concepts—information that is somewhat more difficult to convey, such as explaining one''s place of origin or occupation—provide no modifier.
-▶ Complex concepts—describing what the character expects to gain from this contact, or conveying a threat or an opportunity that the character wants to make known—provide a penalty of at least +1 and possibly more, if the Gamemaster rules that the concept being conveyed is exceedingly complicated or esoteric.
-### Culture Situation Modifiers
-| Condition | Modifier | | :--- | :--- | | Simple concepts | -1 | | Everyday concepts | 0 | | Complex concepts | +1 | | Etiquette ranks 3-5 | -1 | | Etiquette ranks 6-8 | -2 | | Etiquette ranks 9-11 | -3 | | Etiquette rank 12 | -4 |
+This broad skill represents a character’s ability to understand and interact with cultures different from their own. It covers customs, philosophy, history, and social trends.
+
+### Encounter Skill
+Culture is treated as an [encounter skill](/core-mechanics/characters-in-action/#encounter-scene).
+- **Success:** Improves the target's attitude.
+- **Critical Failure:** The character thoroughly insults the target individual or group.
+
+### Communication Complexity
+The difficulty of the ideas being communicated modifies the check:
+- **Simple (-1 bonus):** Names, friendly intentions, offering help.
+- **Everyday (+0):** Origin, occupation, common information.
+- **Complex (+1 or more):** Threatening, esoteric ideas, or complex negotiations.
 
 ## Etiquette
 {{< specialty attr="PER" untrained="no" cost="3" >}}
 
+**Trained Only.** Must be purchased separately for each specific culture (e.g., *Human-Sol*, *Mechalus-Prime*, *Weren-Tribal*). This skill represents a deep grasp of a culture's specific customs and beliefs.
 
+### Rank Benefits (Interaction Synergy)
+Ranks in Etiquette provide a bonus to **Diplomacy** checks made within that specific culture:
+- **Rank 3:** -1 situation die bonus.
+- **Rank 6:** -2 steps bonus.
+- **Rank 9:** -3 steps bonus.
+- **Rank 12:** -4 steps bonus.
 
 ---
 
 ## Diplomacy
 {{< specialty attr="PER" untrained="yes" cost="3" >}}
 
-This specialty skill allows a character to improve his ability to reach agreements and understandings with representatives of different nations, cultures, subcultures and species. In general, diplomacy will come into play when a character wants to reach an accord with a member of a different culture. The skill can only be used on a particular target if the character has at least rank 1 in the specific Culture—etiquette skill that pertains to the target''s culture. Interaction and its specialty skills are usually used for interpersonal dealings between members of the same culture, but the Gamemaster may decide that Culture—diplomacy is also useful in such cases. (If so, it''s not necessary for a character to have the etiquette skill that pertains to his or her culture in order to use diplomacy on other members of that culture.) Depending on the nature of the issue to be resolved, the diplomacy skill check may be a single dice roll, or it may be a complex skill check requiring an extended period of time to complete.
+The ability to reach formal agreements with representatives of different nations or species.
+- **Requirement:** To use Diplomacy on a member of a specific culture, the character must usually possess at least **Rank 1** in the corresponding **Culture—Etiquette** skill.
+- **Applications:** Can be a single check or a complex check for long-term negotiations.
 
 ---
 
 ## First Encounter
 {{< specialty attr="PER" untrained="no" cost="3" >}}
 
-This specialty skill represents a character''s training in the theories and protocols of making first contact with a previously unknown culture. With this skill, a character can assess the mental, physical, and technological capabilities of an unfamiliar species, begin the process of establishing communications and learning each other''s language, and make a preliminary study of the strangers'' cultural and societal habits. A first encounter skill check is always a complex chore, and may take days, weeks, or even months to successfully complete. The Gamemaster will assign the number of successes necessary to complete the skill check based on the extent of difference between the two cultures involved. Also, the Gamemaster will determine the initial attitude of the target creature(s) toward the character, and may inform the character of changes in that attitude that take place while the complex skill check is under way. Upon the successful completion of the first encounter skill check, the character immediately gains rank 1 in the Knowledge—language and Culture—etiquette skills that relate to the formerly unknown culture.
+**Trained Only.** Specialized training in making contact with previously unknown species or cultures.
+- **Assessment:** Determine mental, physical, and technological capabilities of an unknown species.
+- **Establishment:** Begin the process of establishing a common language and understanding.
+
+### First Contact Resolution
+First encounter checks are always **complex skill checks** (taking days, weeks, or months).
+- **Completion:** Upon success, the character automatically gains **Rank 1** in both **Knowledge—Language** and **Culture—Etiquette** for that specific culture.
 
 ---
 

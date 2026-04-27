@@ -419,9 +419,25 @@
                     "type": "Broad",
                     "items": [
                         {
-                            "skill": "Creativity, Specific Skill",
+                            "skill": "The Intangible",
                             "attribute": "WIL",
-                            "url": "/skills/creativity#creativity-specific-skill",
+                            "url": "/skills/creativity#the-intangible",
+                            "cost": 3,
+                            "type": "Specialty",
+                            "css_class": ""
+                        },
+                        {
+                            "skill": "The Shape",
+                            "attribute": "WIL",
+                            "url": "/skills/creativity#the-shape",
+                            "cost": 3,
+                            "type": "Specialty",
+                            "css_class": ""
+                        },
+                        {
+                            "skill": "The Word",
+                            "attribute": "WIL",
+                            "url": "/skills/creativity#the-word",
                             "cost": 3,
                             "type": "Specialty",
                             "css_class": ""

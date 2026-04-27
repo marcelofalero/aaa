@@ -111,6 +111,75 @@ A hero with the trick riding ability can also use his mount for cover. This prov
 ## Animal Training (Specialty)
 This skill allows a hero to become able to handle, ride, and train a specific type of animal. He must purchase and improve this specialty skill separately for each type of animal he wants to train. Types of animals include riding animals, pack animals, attack animals, and guard animals. Your Gamemaster has the final say on how animals are classified, and which ones require separate applications of this skill.
 
+# Source Material: Armor Operation (from Pages 65-67)
+
+## ARMOR OPERATION (Broad Skill)
+Having just the broad skill allows a hero to reduce the action check and Dexterity resistance modifier penalty of any type of armor by 1 step. An action check penalty can be reduced from +1 to 0, or from +2 to +1, and so on—but this benefit never provides a bonus. A Dexterity resistance modifier penalty can be similarly offset, perhaps returning the character’s resistance modifier to its original value.
+
+A character with the broad skill who is decked out in armor can attempt any actions he wants, though some strenuous physical activities (jumping, running, climbing, etc.) may require an Armor Operation check. In general, an [Ordinary] result on this skill check indicates a half effect (run at one-half the normal rate, for example), while a [Good] result or better indicates a full effect (run at the normal rate).
+
+For a hero untrained in Armor Operation, an action check and Dexterity resistance modifier penalty associated with any type of armor always applies. An untrained hero can’t do anything but walk and make simple attacks while using any armor that carries an action check and resistance modifier penalty. Simple attacks are just that—no rank benefits, such as the double-strike benefit related to the Melee Weapons specialty skills, can be employed by an untrained character who is wearing cumbersome armor. Also, an untrained character can't use any type of powered armor.
+
+## Combat Armor (Specialty)
+This specialty skill allows a hero to improve his ability to perform actions, including parrying with a shield, while wearing standard combat armor, by a gradual process of learning to compensate for the weight and awkwardness of the heavy armor. A character with this skill at rank 1, 2, or 3 is allowed to reduce the action check and Dexterity resistance modifier penalty associated with combat armor (not powered armor) by 1 additional step.
+- **Parrying with a Shield:** The Armor Operation-combat armor skill applies when a hero tries to parry an Unarmed Attack or Melee Weapons attack. For rules on parrying, see page 69.
+
+## Powered Armor (Specialty)
+This skill can't be used untrained. This specialty skill allows a hero to improve his proficiency with powered combat armor, becoming able to efficiently employ the strength enhancements built into powered armor. A character with this skill at rank 1, 2, or 3 is allowed to reduce the action check and Dexterity resistance modifier penalty associated with powered armor by 1 additional step.
+
+## Armor Operation Rank Benefits
+- **Improved Operation:** Reduce the action check and Dexterity resistance modifier penalty associated with the appropriate type of armor (combat or powered) by 1 additional step at ranks 4, 7, and 10.
+- **Shaking Off Stuns:** [TBD - Need to find full text, likely allows ignoring stun results]
+
+# Source Material: Athletics (from Pages 67-68)
+
+## ATHLETICS (Broad Skill)
+Free to human, mechalus, t’sa, and weren heroes. This broad skill provides a hero with the abilities of a natural athlete—a competent level of strength, grace, and physical prowess. This skill is used to determine the success of physical actions such as climbing a tree, jumping over a large hole, or throwing an object at a target.
+
+## Climb (Specialty)
+This specialty skill allows a hero to improve this aspect of the Athletics broad skill. With the climb skill, a hero can scale walls, ascend mountains, or otherwise climb up or over obstacles.
+
+In combat scenes, a hero can climb a certain number of meters in a phase, depending on the result of a skill check:
+- **Critical Failure:** Fall (if possible).
+- **Marginal:** No progress this action.
+- **Ordinary:** 1 meter.
+- **Good:** 2 meters.
+- **Amazing:** 3 meters.
+
+In challenge scenes or whenever the Gamemaster determines that a time unit other than rounds applies, a climb check is a complex skill check.
+
+If a hero gets a Critical Failure on a climb check, he loses his grip and falls (unless equipment prevents it). If he has any actions left in the round, he can attempt to regain his hold by getting an [Ordinary] or better on a second climb check with a +1 penalty. If this attempt fails or if the hero has no remaining actions, he falls. Damage from the fall is lessened if the hero makes a successful untrained Dexterity check or an Acrobatics-fall skill check.
+
+## Jump (Specialty)
+This specialty skill allows a hero to improve this aspect of the Athletics broad skill. With the jump skill, a hero can attempt to leap over obstacles by performing a horizontal running or standing jump, or a vertical leap.
+
+In combat scenes, a hero can jump a certain number of meters depending on the result of a skill check.
+- **Critical Failure:** Hero trips and takes a hard fall, suffering d6 points of stun damage.
+- **Marginal:** Hero makes a leap of [Ordinary] distance but suffers d4 points of stun damage because of a poor landing.
+
+**Standing Jump:**
+- **Ordinary:** 1 meter.
+- **Good:** 2 meters.
+- **Amazing:** 3 meters.
+
+**Running Jump (Requires 4m start):**
+- **Ordinary:** 2 meters.
+- **Good:** 4 meters.
+- **Amazing:** 6 meters.
+
+**Vertical Leap:**
+- **Ordinary:** 1 meter.
+- **Good:** 1.5 meters.
+- **Amazing:** 2 meters.
+
+**Rank Benefits - Increased Distance:**
+- **Running Jump:** Improves by 1 meter at ranks 3, 6, 9, and 12.
+- **Standing Jump:** Improves by 1 meter at ranks 4, 7, and 10.
+- **Vertical Leap:** Improves by 0.5 meters at ranks 5, 8, and 11.
+
+## Throw (Specialty)
+This specialty skill allows a hero to improve this aspect of the Athletics broad skill. With the throw skill, a hero can accurately toss balls, darts, or other objects at a target.
+
 # Source Material: Awareness (from Page 93)
 
 ## AWARENESS (Broad Skill)
@@ -203,71 +272,77 @@ A character with rank 3 in this skill is able to modify the code of existing pro
 ### Create New Programs
 A character with rank 3 in this skill is able to create new programs of Marginal quality and Marginal complexity. [Ordinary] programs can be created at rank 6, [Good] programs at rank 9, and [Amazing] programs at rank 12.
 
-# Source Material: Armor Operation (from Pages 65-67)
+# Source Material: Covert Ops (Consolidated from Manipulation and Stealth)
 
-## ARMOR OPERATION (Broad Skill)
-Having just the broad skill allows a hero to reduce the action check and Dexterity resistance modifier penalty of any type of armor by 1 step. An action check penalty can be reduced from +1 to 0, or from +2 to +1, and so on—but this benefit never provides a bonus. A Dexterity resistance modifier penalty can be similarly offset, perhaps returning the character’s resistance modifier to its original value.
+## MANIPULATION (Broad Skill - from Page 73)
+Free to t'sa heroes. This broad skill provides a hero with a natural proficiency in manual dexterity and control. This proficiency allows a hero to attempt such actions as picking a pocket without being noticed, performing a sleight-of-hand feat, picking a lock, or doing anything else that requires a steady hand, a sharp eye, and plenty of coordination.
 
-A character with the broad skill who is decked out in armor can attempt any actions he wants, though some strenuous physical activities (jumping, running, climbing, etc.) may require an Armor Operation check. In general, an [Ordinary] result on this skill check indicates a half effect (run at one-half the normal rate, for example), while a [Good] result or better indicates a full effect (run at the normal rate).
+### Lockpick (Specialty)
+This specialty skill allows a hero to improve his proficiency at opening physical locks. The skill is usually employed with the assistance of tools of some kind. Locks that can be affected by this skill include those protecting doors, safes, and vehicles, as well as handcuffs and any other physical locking mechanisms. The lockpick skill is useless against a computer-assisted lock unless it has a physical mechanism the hero can manipulate. Almost always, the use of lockpick requires a complex skill check.
 
-For a hero untrained in Armor Operation, an action check and Dexterity resistance modifier penalty associated with any type of armor always applies. An untrained hero can’t do anything but walk and make simple attacks while using any armor that carries an action check and resistance modifier penalty. Simple attacks are just that—no rank benefits, such as the double-strike benefit related to the Melee Weapons specialty skills, can be employed by an untrained character who is wearing cumbersome armor. Also, an untrained character can't use any type of powered armor.
+### Pickpocket (Specialty)
+This specialty skill allows a hero to improve his proficiency at picking pockets or otherwise removing objects from a person (or planting something on a person) without that person noticing. The base situation die is determined by the target's Will resistance modifier.
+- **It Takes One to Know One:** As a character improves this specialty skill, he becomes more familiar with the tricks of the trade, thus making it harder for others to pickpocket him. This is shown as an increase to the character's Will resistance modifier—only for the purpose of spotting a pickpocket attempt. At rank 3, the benefit is a +1 penalty to the foe's attempt. At rank 6, the penalty to the foe is +2 steps, at rank 9 the penalty becomes +3 steps, and at rank 12 it is +4 steps.
 
-## Combat Armor (Specialty)
-This specialty skill allows a hero to improve his ability to perform actions, including parrying with a shield, while wearing standard combat armor, by a gradual process of learning to compensate for the weight and awkwardness of the heavy armor. A character with this skill at rank 1, 2, or 3 is allowed to reduce the action check and Dexterity resistance modifier penalty associated with combat armor (not powered armor) by 1 additional step.
-- **Parrying with a Shield:** The Armor Operation-combat armor skill applies when a hero tries to parry an Unarmed Attack or Melee Weapons attack. For rules on parrying, see page 69.
+### Prestidigitation (Specialty)
+This specialty skill allows a hero to become proficient in stage magic, also known as prestidigitation. In addition to entertaining others, the skill can also be used to slip small objects out of sight.
 
-## Powered Armor (Specialty)
-This skill can't be used untrained. This specialty skill allows a hero to improve his proficiency with powered combat armor, becoming able to efficiently employ the strength enhancements built into powered armor. A character with this skill at rank 1, 2, or 3 is allowed to reduce the action check and Dexterity resistance modifier penalty associated with powered armor by 1 additional step.
+## STEALTH (Broad Skill - from Pages 75-77)
+This broad skill provides a hero with the ability to hide, sneak, or otherwise move about without attracting attention. The base situation die for a skill check is usually altered by the opponent’s Will resistance modifier. Success translates into a modifier that applies to an observer's chance of noticing the hero.
 
-## Armor Operation Rank Benefits
-- **Improved Operation:** Reduce the action check and Dexterity resistance modifier penalty associated with the appropriate type of armor (combat or powered) by 1 additional step at ranks 4, 7, and 10.
-- **Shaking Off Stuns:** [TBD - Need to find full text, likely allows ignoring stun results]
+### Hide (Specialty)
+Hiding is the ability to stay unnoticed by keeping quiet, by taking advantage of cover or darkness, and by remaining totally still. Awareness-perception is the detection skill used by an opponent who isn't actively searching for the hero; Investigate-search is used if the opponent is specifically looking for the hero.
 
-# Source Material: Athletics (from Pages 67-68)
+### Shadow (Specialty)
+Shadowing is the ability to follow a target without being noticed by that target. The skill used by the target to detect the shadowing character is Awareness-intuition.
 
-## ATHLETICS (Broad Skill)
-Free to human, mechalus, t’sa, and weren heroes. This broad skill provides a hero with the abilities of a natural athlete—a competent level of strength, grace, and physical prowess. This skill is used to determine the success of physical actions such as climbing a tree, jumping over a large hole, or throwing an object at a target.
+### Sneak (Specialty)
+Sneaking is the ability to move silently so as to avoid being observed. While a hero is sneaking, he can move at up to one-half of his walk movement rate. The skill used by an observer to detect a sneaking hero is Awareness—perception if the observer is expecting trouble, or Awareness-intuition if he is not.
+- **Surprise Phase:** If a hero succeeds in using the sneak skill to get adjacent to an opponent, he can make an attack in the same phase—and the hero receives a situation die bonus to that attack: [Ordinary], -1 step; [Good], -2 steps; [Amazing], -3 steps.
 
-## Climb (Specialty)
-This specialty skill allows a hero to improve this aspect of the Athletics broad skill. With the climb skill, a hero can scale walls, ascend mountains, or otherwise climb up or over obstacles.
+# Source Material: Creativity (from Pages 93-94)
 
-In combat scenes, a hero can climb a certain number of meters in a phase, depending on the result of a skill check: 
-- **Critical Failure:** Fall (if possible).
-- **Marginal:** No progress this action.
-- **Ordinary:** 1 meter.
-- **Good:** 2 meters.
-- **Amazing:** 3 meters.
+## CREATIVITY (Broad Skill)
+This skill provides a hero with training and talent (or knowledge) in a variety of creative endeavors. A hero with the Creativity skill has a well-developed sense for the aesthetically pleasing, a facility for communicating with the written word, and the ability to convey and evoke powerful emotions through a chosen medium.
 
-In challenge scenes or whenever the Gamemaster determines that a time unit other than rounds applies, a climb check is a complex skill check.
+A character with just the broad skill possesses all of these characteristics, but not to such a degree that he’s able to make a living as an artist, writer, or photographer. Turning the Creativity skill into the basis of a career (or being able to produce work of professional quality, if a character has another career) requires that the character pursue a specialty skill in his chosen field(s).
 
-If a hero gets a Critical Failure on a climb check, he loses his grip and falls (unless equipment prevents it). If he has any actions left in the round, he can attempt to regain his hold by getting an [Ordinary] or better on a second climb check with a +1 penalty. If this attempt fails or if the hero has no remaining actions, he falls. Damage from the fall is lessened if the hero makes a successful untrained Dexterity check or an Acrobatics-fall skill check.
+Using the Creativity skill involves a complex skill check, with a situation modifier based on the conditions under which the work is being done and a number of successes required related to the complexity of the task at hand. (Dashing off a cute, four-line poem might be merely an [Ordinary] accomplishment, but composing a lyrical, Shakespearean-quality sonnet would be [Amazing].) Some of the situations that can affect a Creativity skill check are listed in the accompanying sidebar.
 
-## Jump (Specialty)
-This specialty skill allows a hero to improve this aspect of the Athletics broad skill. With the jump skill, a hero can attempt to leap over obstacles by performing a horizontal running or standing jump, or a vertical leap.
+If the complex skill check ends in a Critical Failure, or three Failure results are obtained before the check is completed, whatever the character was trying to produce is scrapped (it just wasn't turning out right).
 
-In combat scenes, a hero can jump a certain number of meters depending on the result of a skill check.
-- **Critical Failure:** Hero trips and takes a hard fall, suffering d6 points of stun damage.
-- **Marginal:** Hero makes a leap of [Ordinary] distance but suffers d4 points of stun damage because of a poor landing.
+## Creativity, Specific Skill (Specialty)
+A blank line is provided under the Creativity skill on the hero sheet for a player to use if his hero specializes in some aspect of this skill. The Gamemaster will determine if a certain specialty skill is allowable, usually based on whether it defines a narrow enough field of interest. For instance, illustration might be allowed as a Creativity specialty, or it might be necessary for a hero to be more specific by singling out computer graphics or holo art as his area of expertise.
 
-**Standing Jump:**
-- **Ordinary:** 1 meter.
-- **Good:** 2 meters.
-- **Amazing:** 3 meters.
+# Source Material: Culture (from Pages 94, 97-98)
 
-**Running Jump (Requires 4m start):**
-- **Ordinary:** 2 meters.
-- **Good:** 4 meters.
-- **Amazing:** 6 meters.
+## CULTURE (Broad Skill)
+This broad skill represents a hero’s ability to understand and interact with cultures that are different from his own. Areas of knowledge covered by the skill include the customs, philosophy, and way of life of a particular culture, as well as a basic familiarity with major historical figures, events, and trends important to that culture.
 
-**Vertical Leap:**
-- **Ordinary:** 1 meter.
-- **Good:** 1.5 meters.
-- **Amazing:** 2 meters.
+In the use of the broad skill, a hero applies what he knows about cultural trends and studies to make an educated guess about how to interact with a member of another culture. The broad skill provides at least a working knowledge of what to do when dealing with any alien culture.
 
-**Rank Benefits - Increased Distance:**
-- **Running Jump:** Improves by 1 meter at ranks 3, 6, 9, and 12.
-- **Standing Jump:** Improves by 1 meter at ranks 4, 7, and 10.
-- **Vertical Leap:** Improves by 0.5 meters at ranks 5, 8, and 11.
+When Culture or any of its specialty skills is used in an interactive context with one or more other characters, it is considered an encounter skill. A Critical Failure result on a skill check indicates that the character has thoroughly insulted the individual or group he's trying to deal with. Other skill check results change the target’s attitude as shown on TABLE P25: ENCOUNTER SKILL EFFECTS. The greater the degree of success, the more endearing and flattering the hero appears to the member(s) of the culture he’s dealing with.
 
-## Throw (Specialty)
-This specialty skill allows a hero to improve this aspect of the Athletics broad skill. With the throw skill, a hero can accurately toss balls, darts, or other objects at a target.
+The complexity of the ideas that are being communicated during a use of the Culture skill (or the use of one of its specialty skills) may provide a modifier to the skill check:
+- **Simple concepts**—basic messages such as exchanging names, conveying friendly intentions, and offering help—give a -1 bonus to the skill check.
+- **Everyday concepts**—information that is somewhat more difficult to convey, such as explaining one's place of origin or occupation—provide no modifier.
+- **Complex concepts**—describing what the hero expects to gain from this contact, or conveying a threat or an opportunity that the character wants to make known—provide a penalty of at least +1 and possibly more, if the Gamemaster rules that the concept being conveyed is exceedingly complicated or esoteric.
+
+## Diplomacy (Specialty)
+This specialty skill allows a hero to improve his ability to reach agreements and understandings with representatives of different nations, cultures, subcultures and species. In general, diplomacy will come into play when a hero wants to reach an accord with a member of a different culture. The skill can only be used on a particular target if the hero has at least rank 1 in the specific Culture-etiquette skill that pertains to the target's culture.
+
+Interaction and its specialty skills are usually used for interpersonal dealings between members of the same culture, but the Gamemaster may decide that Culture-diplomacy is also useful in such cases. (If so, it's not necessary for a hero to have the etiquette skill that pertains to his or her culture in order to use diplomacy on other members of that culture.) Depending on the nature of the issue to be resolved, the diplomacy skill check may be a single dice roll, or it may be a complex skill check requiring an extended period of time to complete.
+
+## Etiquette (Specialty)
+This skill can't be used untrained. For each separate purchase of this specialty skill, a hero selects a specific culture. As the specialty skill is improved, the hero gains a progressively stronger grasp on the customs, attitudes, and beliefs of that culture.
+- **Increased Effect:** Gaining ranks in Culture—etiquette as it pertains to a certain culture translates into a bonus to the use of Culture-diplomacy when that skill is used on a member of the culture in question. Having the etiquette skill at rank 3 provides a -1 bonus to diplomacy skill checks. The bonus improves to -2 at rank 6, to -3 at rank 9, and to —4 at rank 12.
+
+The Gamemaster will decide what constitutes a “specific culture,” taking the campaign setting into account. In a campaign that takes place entirely on Earth, different countries may represent specific cultures; in a starfaring campaign, each planet, star system, or alien species could be a different culture.
+
+## First Encounter (Specialty)
+This skill can’t be used untrained. This specialty skill represents a hero's training in the theories and protocols of making first contact with a previously unknown culture. With this skill, a hero can assess the mental, physical, and technological capabilities of an unfamiliar species, begin the process of establishing communications and learning each other's language, and make a preliminary study of the strangers’ cultural and societal habits.
+
+A first encounter skill check is always a complex chore, and may take days, weeks, or even months to successfully complete. The Gamemaster will assign the number of successes necessary to complete the skill check based on the extent of difference between the two cultures involved. Also, the Gamemaster will determine the initial attitude of the target creature(s) toward the hero, and may inform the hero of changes in that attitude that take place while the complex skill check is under way.
+
+Upon the successful completion of the first encounter skill check, the hero immediately gains rank 1 in the Knowledge-language and Culture-etiquette skills that relate to the formerly unknown culture.
+

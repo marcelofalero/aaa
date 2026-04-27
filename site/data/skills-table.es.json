@@ -419,9 +419,25 @@
                     "type": "Broad",
                     "items": [
                         {
-                            "skill": "Habilidades de Especialidad",
+                            "skill": "The Intangible",
                             "attribute": "VOL",
-                            "url": "/es/skills/creativity#habilidades-de-especialidad",
+                            "url": "/es/skills/creativity#the-intangible",
+                            "cost": 3,
+                            "type": "Specialty",
+                            "css_class": ""
+                        },
+                        {
+                            "skill": "The Shape",
+                            "attribute": "VOL",
+                            "url": "/es/skills/creativity#the-shape",
+                            "cost": 3,
+                            "type": "Specialty",
+                            "css_class": ""
+                        },
+                        {
+                            "skill": "The Word",
+                            "attribute": "VOL",
+                            "url": "/es/skills/creativity#the-word",
                             "cost": 3,
                             "type": "Specialty",
                             "css_class": ""

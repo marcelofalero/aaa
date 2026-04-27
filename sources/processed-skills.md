@@ -9,34 +9,27 @@ Vaulting is a vertical leap enhanced by assistance (springing off an object or u
 
 ## Aerobatics (Specialty)
 This specialty skill represents a character's mastery of complex maneuvers during personal flight, whether through natural wings, specialized jump-packs, or gravitic personal flight devices (GADS). While basic locomotion is covered by the Acrobatics broad skill, Aerobatics is required for high-speed turns, precise landing, evasive maneuvers, and aerial acrobatics. At **Rank 4** in **Armor Operation—Propulsion Systems**, this skill can also be used for complex maneuvers using a powered suit''s integrated thrusters.
-
 **Note:** This skill covers *personal* locomotion and complex maneuvers. Operating a larger vehicle through the air or space requires [Vehicle Operation—air](/skills/vehicle-operation/#air-vehicle) or [Vehicle Operation—space](/skills/vehicle-operation/#space-vehicle).
-
 ### Results
 - **Critical Failure:** Loss of control, potential stall or collision.
 - **Ordinary:** Basic controlled flight; can perform simple maneuvers. Like sincronized flying, or boarding a high speed moving vehicle (assuming it can reach it and enter)
 - **Good:** Increased control; can perform evasive maneuvers. (He can use the dodge skill)
 - **Amazing:** Perfect control; can perform complex aerial or orbital acrobatics.
-
 ### Rank Progression
-
 ⊗ **Rank 4 (Stealthy Descent):** When using a jump-pack or GADS, the character can descend with minimal noise, receiving a **-2 step bonus** to Stealth checks.
-
 ⊗ **Rank 6 (Endurance Flight):** The character can fly for extended periods, receiving a **-2 step bonus** to Stamina checks for long-distance travel with with natural means or **-2 step bonus** to Armor Operation-Propulsion Systems with armor mounted propulsion.
+
+### YAML Rank Benefits (Mechanical Triggers)
+- **Rank 4:** Stealthy Descent
+- **Rank 6:** Endurance Flight
 
 ## Daredevil (Specialty)
 This specialty skill enables a character to perform high-risk activities such as skydiving, scuba diving, hang gliding, surfing, bungee jumping, and whitewater rafting.
-
 **Results**
-
 On a Critical Failure, the attempted action fails and the character could suffer stun or wound damage at the Gamemaster's discretion. This outcome generally involves bad luck concerning some aspect of the equipment being used—scuba diving gear springs a leak, a parachute fails to open properly, and so forth.
-
 On a Failure, the attempted action doesn't succeed, but the character does not necessarily suffer damage—a parachutist goes drastically off course and lands a long distance from his target, perhaps taking damage as well.
-
 On an Ordinary, the character is basically able to perform the action—he can manipulate a hang glider so that he stays aloft, but he has no control over his direction of travel.
-
 On a Good, the character has limited control of the action—he opens his parachute at just the right time, and also is able to use it to maneuver so that he lands only a short distance from his target.
-
 On an Amazing, everything goes right—he rides the raft all the way through the rapids without damage to himself or his equipment.
 
 ## Dodge (Specialty)
@@ -59,21 +52,28 @@ _(This skill can’t be combined with the parry or block rank benefits described
 
 ▶ **Rank 7 [Reaction Dodge]:** Perform a reaction dodge, allowing the character to defend earlier in the round. In a round when a character makes a reaction dodge, he can only dodge; all other actions are lost for the round.
 
+### YAML Rank Benefits (Mechanical Triggers)
+- **Rank 3:** Action Benefit
+- **Rank 4:** Resistance Modifier
+- **Rank 7:** Reaction Dodge
+- **Rank 8:** Resistance Modifier
+- **Rank 12:** Resistance Modifier
+
 ## Fall (Specialty)
 This specialty skill allows a character to improve his ability to survive a fall by twisting his body, catching nearby protrusions, or otherwise slowing his descent, thereby decreasing the damage he sustains from an impact. A character with the fall specialty skill adds his rank in the specialty to his Acrobatics score and uses that number to make the skill check, with a +d0 base situation die.
 
 ## Zero-g Training (Specialty)
 A character with the zero-g training skill can function in weightless or near-weightless conditions better than someone who doesn''t have this skill. An untrained character has a +3 step penalty in zero gravity and a +1 step penalty in light gravity. Purchasing this skill immediately reduces the zero-g penalty to +2 steps and eliminates the penalty for light gravity.
-
 **Rank Progression**
-
 ⊗ **Rank 4:** Zero-g penalty is reduced to +1 step, and light gravity actions receive a -1 step bonus.
-
 ⊗ **Rank 7:** Zero-g penalty is eliminated.
-
 ⊗ **Rank 10:** Physical actions in zero-g receive a -1 step bonus. (Light gravity bonus never improves beyond -1 step.)
-
 **Sesheyan Advantage** Sesheyan characters without the zero-g training skill function as though they have it at rank 1. If a sesheyan purchases this skill, penalties are reduced by 1 step and bonuses are improved by the same amount (max bonus -2 in light gravity).
+
+### YAML Rank Benefits (Mechanical Triggers)
+- **Rank 4:** Zero-g penalty is reduced to +1
+- **Rank 7:** Zero-g penalty is eliminated
+- **Rank 10:** Physical actions in zero-g receive a -1 step bonus
 
 # Administration (Broad Skill)
 This broad skill provides a character with knowledge concerning the forms and procedures that go into running an office or organization of almost any kind. With this skill, a character understands scheduling, personnel and equipment management, and the regulations and laws that apply to such endeavors. Any large organizations, including governments, agencies, and corporations, have some type of administrational bureaucracy that a character may someday be called upon to interact with. This skill allows him to attempt to identify the proper administrators to deal with in a particular situation, the proper procedures to follow, and the best way to cut through red tape.
@@ -108,10 +108,10 @@ A character's Administration skill can also be used to hinder someone else’s a
 Likewise, complexity works the other way around: slowing down an extremely easy request in a small system is a feat of **Amazing** complexity.
 
 ## Bureaucracy (Specialty)
-This specialty skill measures a character's ability to grease (or clog up) the wheels of bureaucracy. Important applications, permits, clearances, reports, or other bureaucratic requests can be processed faster and more efficiently with the use of this skill. Conversely, this skill can be used to make the same bureaucratic processes slower for others.
+This specialty skill measures a character''s ability to grease (or clog up) the wheels of bureaucracy. Important applications, permits, clearances, reports, or other bureaucratic requests can be processed faster and more efficiently with the use of this skill. Conversely, this skill can be used to make the same bureaucratic processes slower for others.
 
 ## Management (Specialty)
-This skill indicates a character's ability to manage both personnel and administrative duties. A skilled manager can increase productivity, inspire workers, and supervise the workings of a business or office.
+This skill indicates a character''s ability to manage both personnel and administrative duties. A skilled manager can increase productivity, inspire workers, and supervise the workings of a business or office.
 
 # Animal Handling (Broad Skill)
 This broad skill provides a character with the basic ability to train animals to perform a variety of tasks, including doing labor, accepting riders, tracking, and attacking. It's also used to determine if a character can get a trained animal to perform a task, to ride an animal, or to calm, capture, or otherwise handle a wild animal or an unfamiliar domestic animal. Note that the methods of training and the commands used with different animal species can vary widely.
@@ -135,18 +135,7 @@ Untrained animals (wild or domestic) can only perform tasks of up to **Ordinary*
 - **Amazing:** Tasks very few animals can or will do on command (e.g., rescuing someone from a burning building).
 
 ### Animal Handling Situation Modifiers
-*Note: This table was restored based on standard rules as the source OCR was incomplete.*
-
-| Type | Modifier | Complexity |
-| :--- | :--- | :--- |
-| **Herbivores** | | |
-| Alien | +2 | Amazing |
-| Domestic | -1 | Good |
-| Wild | +1 | Amazing |
-| **Carnivores** | | |
-| Alien | +5 | Amazing |
-| Domestic | -2 | Ordinary |
-| Wild | +4 | Good |
+<div class="table-wrapper"> <table> <thead> <tr> <th>Type</th> <th>Modifier</th> <th>Complexity</th> </tr> </thead> <tbody> <tr class="table-category"> <td colspan="3"><strong>Herbivores</strong></td> </tr> <tr> <td>Alien</td> <td>+2</td> <td>Amazing</td> </tr> <tr> <td>Domestic</td> <td>-1</td> <td>Good</td> </tr> <tr> <td>Wild</td> <td>+1</td> <td>Amazing</td> </tr> <tr class="table-category"> <td colspan="3"><strong>Carnivores</strong></td> </tr> <tr> <td>Alien</td> <td>+5</td> <td>Amazing</td> </tr> <tr> <td>Domestic</td> <td>-2</td> <td>Ordinary</td> </tr> <tr> <td>Wild</td> <td>+4</td> <td>Good</td> </tr> </tbody> </table> </div>
 
 **Other Modifiers:**
 - **Unfamiliar animal:** +1 penalty (cumulative with others).
@@ -160,8 +149,8 @@ The broad skill enables a character to ride any animal used for basic ground tra
 - **Movement:** When ridden, the creature moves in every phase.
 - **Maneuvers:** During a character's action, they can attempt maneuvers (Routine, Moderate, or Extreme) as described in [Vehicle Maneuvers](/core-mechanics/vehicles-and-vessels/#maneuvers).
 
-## Animal Riding (Specialty)
-This specialty skill allows a character to attempt racing over dangerous terrain, making jumps, performing stunts, and engaging in mounted combat.
+## Animal riding (Specialty)
+This specialty skill enables a character to improve this aspect of the Animal Handling broad skill. A character with this skill can attempt racing over dangerous terrain, making jumps or performing other stunts, and engaging in mounted combat.
 
 ### Trick Riding (Rank 3 Benefit)
 The character can direct their mount to jump fences, leap chasms, or move backward.
@@ -189,7 +178,10 @@ The character can direct their mount to jump fences, leap chasms, or move backwa
 - **Amazing:** +3 steps.
 *Note: This does not protect the mount. Trick riding cannot be combined with other actions (e.g., attacking while leaping).*
 
-## Animal Training (Specialty)
+### YAML Rank Benefits (Mechanical Triggers)
+- **Rank 3:** Trick Riding
+
+## Animal training (Specialty)
 This skill allows a character to handle, ride, and train a specific type of animal (the "Primary Animal" selected when purchasing the broad skill). A character can also use their **Animal Training** rank to interact with animals other than their Primary Animal, but they suffer a penalty to the skill check based on the biological or behavioral distance from their specialty:
 
 *   **Identical Type (+0 penalty):** Different breeds or closely related species (e.g., Quarter Horse vs. Thoroughbred).
@@ -197,9 +189,97 @@ This skill allows a character to handle, ride, and train a specific type of anim
 *   **Different Family (+2 penalty):** Significant biological or behavioral differences (e.g., Mammal vs. Reptile, or Herbivore vs. Carnivore).
 *   **Alien/Xeno-creature (+3 or more penalty):** Completely foreign biology or instincts.
 
-**Rank Benefit - Versatility:**
-⊗ **Rank 3, 6, 9, 12:** The character is a master of diverse animal behaviors. At each of these ranks, reduce all similarity penalties by 1 step (to a minimum of +0).
+# Armor Operation (Broad Skill)
+Armor that's bulky, heavy, and cumbersome hinders the character using it. This is reflected by a penalty to the character's action check (AP) and the lessening or negating of a character's **Dexterity** resistance modifier. The Armor Operation broad skill and its specialty skills help to alleviate these penalties.
 
+### Base Effect
+Having just the broad skill allows a character to reduce the action check and Dexterity resistance modifier penalty of any type of armor by 1 step.
+- **Example:** A +1 AP penalty is reduced to 0.
+- **Limitation:** This benefit never provides a bonus.
+
+### Strenuous Activity
+Some strenuous physical activities (jumping, running, climbing, etc.) while armored may require an **Armor Operation** check.
+- **Ordinary:** Half effect (e.g., run at one-half the normal rate).
+- **Good or better:** Full effect (e.g., run at the normal rate).
+
+### Untrained
+Characters **untrained** in Armor Operation suffer the full penalty of any armor.
+- **Restrictions:** They can only walk and make simple attacks (no rank benefits allowed).
+- **Powered Armor:** Untrained characters cannot use powered armor.
+
+*Note: The AP penalty of armors and shields is cumulative.*
+
+## Combat armor (Specialty)
+This specialty represents the level of mastery in the use of armor, as well as the specialized training needed to use powered armors, allowing the character to obtain the most of any armor.
+
+- **Rank 1 [Improved Operation]:** The reduction to action check and Dexterity resistance modifier penalties becomes 2 steps. This improves to 3 steps at **Rank 4**, 4 steps at **Rank 6**, and 5 steps at **Rank 10**.
+- **Rank 2 [Shaking Off Stuns]:** Stun damage (including secondary) is reduced by 1 point. This increases by 1 for every 2 ranks attained (max 6 points at **Rank 12**).
+- **Rank 7 [Powered Armor Operation]:** The character has mastered the synchronization required to operate Powered Armor suits.
+
+### YAML Rank Benefits (Mechanical Triggers)
+- **Rank 1:** Improved Operation
+- **Rank 2:** Shaking Off Stuns
+- **Rank 4:** Improved Operation
+- **Rank 6:** Improved Operation
+- **Rank 7:** Powered Armor Operation
+- **Rank 10:** Improved Operation
+
+## Propulsion systems (Specialty)
+This specialty skill represents mastery in the use of integrated propulsion systems, such as jetpacks, underwater drives, or gravitic assisted deceleration systems (GADS).
+
+- **Rank 2 [Thermal/Fuel Management]:** Optimize fuel or heat dissipation, extending operational time of propulsion units by 50%.
+- **Rank 4 [Vector Calibration & Aerobatics Integration]:** Adjust thrust nozzles for specific tasks, providing a **-1 step bonus** to maneuvering checks. Additionally, the character is sufficiently familiarized with armor propulsion systems to use the **Aerobatics** specialty skill for complex maneuvers while wearing the suit.
+- **Rank 7 [Maximum Burn]:** Make a Propulsion Systems check to increase speed for the round: Ordinary (+25%), Good (+50%), or Amazing (+100%). Each consecutive round of forcing the engine incurs a cumulative +1 step penalty. The penalty is reduced by 1 for each round the propulsion is not used.
+
+### YAML Rank Benefits (Mechanical Triggers)
+- **Rank 2:** Thermal/Fuel Management
+- **Rank 4:** Vector Calibration & Aerobatics Integration
+- **Rank 7:** Maximum Burn
+
+## Shields (Specialty)
+Focuses on the tactical use of physical, energy, or ballistic shields.
+
+- **Rank 3 [Reactive Block]:** Spend the next available action to perform an opposed check against an attacker. If successful, the attack is negated. (Note: Only Ballistic or Large shields of the appropriate PL can block ranged fire).
+- **Rank 4 [Resistance Modifier]:** Provides a **+1 improvement** to the **Strength** resistance modifier. This does not stack with Melee Weapons benefits.
+- **Rank 6 [Tactical Charge]:** Negates the standard +2 step bonus opponents receive to hit a charging target.
+- **Rank 8 [Recoil Anchor]:** Reduce the situation die penalty for Burst or Autofire by 1 step when using one-handed weapons with a shield.
+- **Rank 12 [Overlapping Coverage]:** Share the shield's resistance modifier bonus with an ally within 2 meters against one ranged attack per round.
+
+### YAML Rank Benefits (Mechanical Triggers)
+- **Rank 3:** Reactive Block
+- **Rank 4:** Resistance Modifier
+- **Rank 6:** Tactical Charge
+- **Rank 8:** Recoil Anchor
+- **Rank 12:** Overlapping Coverage
+
+## Tactical armor (Specialty)
+This specialty skill enters into play when armors with integrated equipment are used (sensors, communications, etc.). It does not apply to mounted weaponry, which uses its own specific skill. It can also be used to resist electronic attacks like sensor hacking or jamming.
+
+- **Rank 2 [Tactical Multi-tasking]:** The character can perform one operation with integrated suit equipment (cycling sensors, changing frequencies) without spending an action. One additional free operation is gained at **Rank 6** and **Rank 10**.
+- **Rank 5 [Sensor Proficiency]:** Receive a **-1 step bonus** to checks involving the operation or interpretation of integrated suit sensors.
+- **Rank 7 [Counter-Intrusion]:** Gain a **-1 step bonus** to resist electronic warfare or hacking attempts directed at the suit. This improves to **-2 steps** at **Rank 11**.
+
+### YAML Rank Benefits (Mechanical Triggers)
+- **Rank 2:** Tactical Multi-tasking
+- **Rank 5:** Sensor Proficiency
+- **Rank 6:** Tactical Multi-tasking
+- **Rank 7:** Counter-Intrusion
+- **Rank 10:** Tactical Multi-tasking
+- **Rank 11:** Counter-Intrusion
+
+# Athletics (Broad Skill)
+This broad skill provides a character with the abilities of a natural athlete—a competent level of strength, grace, and physical prowess. This skill is used to determine the success of physical actions such as climbing a tree, jumping over a large hole, or throwing an object at a target.
+
+## Climb (Specialty)
+
+
+## Jump (Specialty)
+
+
+## Swim (Specialty)
+
+
+## Throw (Specialty)
 
 # Awareness (Broad Skill)
 Free to fraal, human, mechalus, sesheyan, t'sa, and weren characters. This broad skill represents a character's powers of observation, perception, and intuition. Skill checks are called for when the Gamemaster needs to determine if a character notices something—characters themselves never call for a use of this skill.
@@ -275,10 +355,10 @@ If a character uses Business to haggle over the buying or selling of a commodity
 - **Bonuses:** Apply if the character has inside information or is dealing with a familiar commodity or culture.
 
 ## Corporate (Specialty)
-This specialty skill enables a character to improve his ability to function in the realm of large-scale trade and commerce, and to deal with stock markets, mergers, corporate acquisitions, speculative business, and the businesspeople who operate in these circles. It also provides a character with an understanding of how big businesses and corporations operate. Corporate presidents and trade lords who move goods and services on a global or galactic scale use this skill to determine the success of their business activities.
+This specialty skill improves a character's ability to function in the realm of large-scale trade and commerce. It covers stock markets, mergers, corporate acquisitions, and speculative business. It also provides an understanding of how large organizations and corporations operate.
 
-## Illicit Business (Specialty)
-This specialty skill allows a character to improve his ability to function in the underside of the business world. Extortion, smuggling, fencing stolen goods, and dealing with the black market are among the questionable trade practices this skill provides knowledge in. Purchasing ranks in this skill doesn't necessarily lead to a successful criminal career; it merely provides the character with the knowledge to interact with the wrong side of the law. This is the skill used by the white-collar criminal—the embezzler, the insider trader, the corporate spy, and so forth.
+## Illicit business (Specialty)
+This specialty skill allows a character to function in the underside of the business world, providing knowledge of extortion, smuggling, fencing stolen goods, and the black market. It is the primary skill of white-collar criminals (embezzlers, insider traders, corporate spies).
 
 ### Illegal Transactions
 This skill reduces the penalty for attempting illegal transactions.
@@ -286,9 +366,14 @@ This skill reduces the penalty for attempting illegal transactions.
 - **Rank 4:** Penalty reduction of -2 steps.
 - **Rank 7:** Penalty reduction of -3 steps.
 - **Rank 10:** Penalty reduction of -4 steps.
-*Note: This benefit only reduces or eliminates penalties; it never provides a bonus.*
+*Note: This benefit only reduces or eliminates penalties; it never provides a bonus.
 
-## Small Business (Specialty)
+### YAML Rank Benefits (Mechanical Triggers)
+- **Rank 4:** Increased Effect
+- **Rank 7:** Increased Effect
+- **Rank 10:** Increased Effect
+
+## Small business (Specialty)
 This specialty skill allows a character to function in small-scale trade and commerce. It improves the ability to haggle on the consumer level, determine the value of goods and services, and find buyers and sellers in a local area.
 
 ### Financial Bargaining
@@ -298,129 +383,180 @@ This skill provides a situation die bonus when making deals, haggling, or bargai
 - **Rank 8:** -3 step bonus.
 - **Rank 12:** -4 step bonus.
 
+### YAML Rank Benefits (Mechanical Triggers)
+- **Rank 4:** Increased Effect
+- **Rank 8:** Increased Effect
+- **Rank 12:** Increased Effect
+
 # Computer Science (Broad Skill)
-Free to mechalus characters. This broad skill provides a basic understanding of computers and computer systems. (In comparison, **Knowledge—Computer Operation** merely gives the ability to use a computer without understanding its internal workings.) 
+Computers are an integral part of human society, and many alien societies as well, at Progress Level 5 and higher. (For much more information on computers and related material, see Chapter 10: Computers.) Most computers and computer-assisted machines are designed to be user-friendly in routine situations. The broad skill provides a character with a basic understanding of computers and computer systems. (In comparison, the Knowledge—computer operation skill merely gives a character the ability to use a computer effectively, but does not allow any understanding of how the machine does what it does.) The three primary uses for the Computer Science broad skill are information retrieval, computer repair, and programming. These uses are described below.
 
-### Primary Uses
-- **Information Retrieval:** Searching for specific information in databases or networks. Protected systems require complex skill checks.
-- **Computer Repair:** Fixing damaged computer systems (always a complex skill check). See [Technical Science—Repair](/skills/technical-science/#repair).
-- **Programming:** Navigating and utilizing complex programs. Manipulating source code for programs above Marginal quality/complexity requires the **Programming** specialty.
+**Note:** Some computer systems allow users who don't have the broad skill to make skill checks at their base Intelligence score instead of at the untrained score. If such an assist program is installed in a particular piece of equipment, your Gamemaster will let you know.
 
-**Note:** Some systems with "assist programs" allow characters to use their base **Intelligence** score for checks instead of the untrained score.
+▶ Information Retrieval: Most computers are connected to some storehouse of raw data—a large network, a centralized storage system, or the unit’s own drives. Using the Computer Science skill to search for specific information requires a skill check only if that information is protected in some way (user password, encoded data, etc.) or if the information is obscure and hard to locate. In all but the most straightforward of situations, a complex skill check is used to determine the result of a retrieval attempt. The broad skill is useful when a character wants to retrieve information from any unprotected system—but if the system is protected, only programs of Marginal quality and Marginal complexity can be accessed with the broad skill. In order to retrieve information from a protected system of higher quality or greater complexity, the specialty skill hacking is needed. A Critical Failure result on the skill check usually means that safeguards or alarms have been triggered, an unretrievable computer error occurs, or the character makes some other monumental mistake that aborts this computer run.
+
+▶ Computer Repair: A character with this skill has the ability to fix a damaged computer system, either by replacing defective parts or by rewiring a component or a system to bypass a problem spot. Repairing a computer system is always a complex skill check. For information on how attempts to repair a device are made, see the repair specialty under the Technical Science broad skill (page 89).
+
+▶ Programming: Computer programs exist to handle almost any task imaginable. Without training in the use of these high-tech tools, the wealth of options and accessories available can be overwhelming to a character trying to employ them. As with information retrieval (above), using Computer Science to navigate and utilize a program almost always involves a complex skill check. A character with just the broad skill can only manipulate the source code of programs of Marginal quality and Marginal complexity. Manipulating programs of better quality and greater complexity requires the programming specialty skill. For more information on how the Computer Science specialty skills are used, see Chapter 10: Computers. Brief descriptions of the specialty skills are given below.
 
 ## Hacking (Specialty)
-**Trained Only.** The ability to break computer codes and bypass security to gain access to restricted data or systems. It can be used for sabotage (erasing files, introducing viruses) or taking control of systems.
+Hacking is the ability to break computer codes and bypass computer security for the purposes of gaining access to restricted data or secure computer systems. Hacking can be performed at a computer station that’s physically connected to the data stores in question, or it can be performed from a distant location by creating a link via a network of some kind. It's most often used to retrieve secured data, to enter and take control of a computer system, or to perform some type of sabotage such as erasing files or introducing a virus of some kind. This specialty skill allows a character equipped with a computer to perform the previously mentioned tasks. The character's own skill and any programs being used can help the character navigate computer systems, overcome security, and even defend against other operators hooked into a system.
 
-- **Rank 4:** -1 situation die bonus.
-- **Rank 8:** -2 situation die bonus.
-- **Rank 12:** -3 situation die bonus.
+▶ Increased Effect: As a character gains ranks in this specialty skill, his ability to perform actions related to hacking improves. This is reflected by a **-1 situation die bonus at rank 4**, a **-2 bonus at rank 8**, and a **-3 bonus at rank 12**.
 
 ## Hardware (Specialty)
-Knowledge of and proficiency with the physical components of computer systems. Covers setup, design, building, and repair of computer equipment.
+This specialty represents a character's knowledge of and proficiency with the physical components that make up a computer. Understanding how a computer system works, being able to set one up quickly, designing and building your own computer, and repairing computer equipment are some of the tasks covered by this skill.
 
-- **Rank 4:** -1 situation die bonus.
-- **Rank 8:** -2 situation die bonus.
-- **Rank 12:** -3 situation die bonus.
+▶ Increased Effect: As a character gains ranks in this specialty skill, his ability to repair computer systems and work with computer hardware in other ways improves. This is reflected by a **-1 situation die bonus at rank 4**, a **-2 bonus at rank 8**, and a **-3 bonus at rank 12**.
 
 ## Programming (Specialty)
-The ability to analyze, modify, and create computer programs.
-- **Rank 1:** Can modify source code of **Ordinary** quality and complexity.
+This specialty skill enables a character to improve her ability to analyze computer programs, modify existing programs, and (at higher ranks) create programs by writing her own code. Having rank 1 in this skill enables a character to modify the source code of programs of Ordinary quality and Ordinary complexity.
 
-### Modify Existing Programs
-- **Rank 3:** Modify programs of **Good** quality and complexity.
-- **Rank 6:** Modify any existing program.
+▶ Modify Existing Programs: A character with rank 3 in this skill is able to modify the code of existing programs of Good quality and Good complexity. When the character achieves rank 6, she can modify any existing program.
 
-### Create New Programs
-- **Rank 3:** Create programs of Marginal quality and complexity.
-- **Rank 6:** Create **Ordinary** programs.
-- **Rank 9:** Create **Good** programs.
-- **Rank 12:** Create **Amazing** programs.
+▶ Create New Programs: A character with rank 3 in this skill is able to create new programs of Marginal quality and Marginal complexity. Ordinary programs can be created at rank 6, Good programs at rank 9, and Amazing programs at rank 12.
 
-# Armor Operation (Broad Skill)
-Armor that's bulky, heavy, and cumbersome hinders the character using it. This is reflected by a penalty to the character's action check (AP) and the lessening or negating of a character's **Dexterity** resistance modifier. The Armor Operation broad skill and its specialty skills help to alleviate these penalties.
+# Covert Ops (Broad Skill)
+The **Covert Ops** broad skill focuses on remaining undetected and bypassing physical security. It consolidates the arts of stealth with the practical skills needed to blend in or pick pockets.
+- **Unified Stealth:** Merging hide, sneak, and shadowing into a single Stealth specialty.
+- **Physical Bypassing:** Including Pickpocket and Conceal.
 
-### Base Effect
-Having just the broad skill allows a character to reduce the action check and Dexterity resistance modifier penalty of any type of armor by 1 step. 
-- **Example:** A +1 AP penalty is reduced to 0. 
-- **Limitation:** This benefit never provides a bonus.
+## Conceal (Specialty)
+This specialty skill represents the ability to hide objects from view or sensors. While **Stealth** is used to hide oneself,
+**Conceal** is used to hide items, such as weapons on one''s person, contraband in a vehicle, or a secret compartment in a room.
 
-### Strenuous Activity
-Some strenuous physical activities (jumping, running, climbing, etc.) while armored may require an **Armor Operation** check.
-- **Ordinary:** Half effect (e.g., run at one-half the normal rate).
-- **Good or better:** Full effect (e.g., run at the normal rate).
+### Results
+The degree of success on a Conceal check provides a penalty to an observer''s Awareness-perception or Investigate-search check to find the hidden object:
+- **Ordinary:** +1 penalty to observer
+- **Good:** +2 penalty to observer
+- **Amazing:** +3 penalty to observer
 
-### Untrained
-Characters **untrained** in Armor Operation suffer the full penalty of any armor.
-- **Restrictions:** They can only walk and make simple attacks (no rank benefits allowed). 
-- **Powered Armor:** Untrained characters cannot use powered armor.
+### Hiding Weapons
+A concealed weapon is worn in a place not normally searched or not subject to easy spotting (the small of the back, inside of the forearm, etc.). The concealed weapon must be either a small handgun or a blade. Concealment provides a +2 penalty to all but the most intrusive searches.
 
-*Note: The AP penalty of armors and shields is cumulative.*
+## Disguise (Specialty)
+Disguise is the ability to change your appearance to look like someone else or to blend into a crowd. While the **Entertainment-act** skill is used for professional makeup and performance, this specialty covers more immediate and practical applications of disguise, such as changing clothes, wearing a wig, or using simple props to avoid recognition. A character''s Disguise situation die is modified by the observer''s Awareness-perception modifier.
 
-## Combat Armor (Specialty)
-This specialty represents the level of mastery in the use of armor, as well as the specialized training needed to use powered armors, allowing the character to obtain the most of any armor.
+## Pickpocket (Specialty)
+This specialty skill allows a character to remove objects from a person (or plant something) without that person noticing. The base situation die is determined by the target''s Will resistance modifier.
 
-- **Rank 1 [Improved Operation]:** The reduction to action check and Dexterity resistance modifier penalties becomes 2 steps. This improves to 3 steps at **Rank 4**, 4 steps at **Rank 6**, and 5 steps at **Rank 10**.
-- **Rank 2 [Shaking Off Stuns]:** Stun damage (including secondary) is reduced by 1 point. This increases by 1 for every 2 ranks attained (max 6 points at **Rank 12**).
-- **Rank 7 [Powered Armor Operation]:** The character has mastered the synchronization required to operate Powered Armor suits.
+### Pickpocket Situation Modifiers
+| Condition | Modifier | | :--- | :--- | | Object is in direct contact with target''s skin | +3 | | Object is heavy | +2 | | Object is kept in inner pocket of garment | +1 | | Object is light in weight | -1 | | Object is kept in exposed pocket or pack | -1 | | Victim is distracted | -1 to -3 |
 
-## Tactical Armor (Specialty)
-This specialty skill enters into play when armors with integrated equipment are used (sensors, communications, etc.). It does not apply to mounted weaponry, which uses its own specific skill. It can also be used to resist electronic attacks like sensor hacking or jamming.
+### Results
+- **Failure/Critical Failure:** The attempt fails and the pickpocketer is noticed.
+- **Ordinary:** The attempt succeeds.
+- **Good/Amazing:** The attempt succeeds and may offset penalties for repeated attempts against the same target.
 
-- **Rank 2 [Tactical Multi-tasking]:** The character can perform one operation with integrated suit equipment (cycling sensors, changing frequencies) without spending an action. One additional free operation is gained at **Rank 6** and **Rank 10**.
-- **Rank 5 [Sensor Proficiency]:** Receive a **-1 step bonus** to checks involving the operation or interpretation of integrated suit sensors.
-- **Rank 7 [Counter-Intrusion]:** Gain a **-1 step bonus** to resist electronic warfare or hacking attempts directed at the suit. This improves to **-2 steps** at **Rank 11**.
+### Rank Benefits
+- **Rank 3, 6, 9, 12 [It Takes One to Know One]:** The character''s Will resistance modifier (only for spotting a pickpocket attempt) improves by +1 penalty to the foe''s attempt at rank 3, +2 steps at rank 6, +3 steps at rank 9, and +4 steps at rank 12.
 
-## Propulsion Systems (Specialty)
-This specialty skill represents mastery in the use of integrated propulsion systems, such as jetpacks, underwater drives, or gravitic assisted deceleration systems (GADS).
+## Stealth (Specialty)
+This specialty (also known as Unified Stealth) merges the techniques of hide, sneak, and shadow into a single field of expertise. It is the art of remaining undetected while stationary or in motion.
 
-- **Rank 2 [Thermal/Fuel Management]:** Optimize fuel or heat dissipation, extending operational time of propulsion units by 50%.
-- **Rank 4 [Vector Calibration & Aerobatics Integration]:** Adjust thrust nozzles for specific tasks, providing a **-1 step bonus** to maneuvering checks. Additionally, the character is sufficiently familiarized with armor propulsion systems to use the **Aerobatics** specialty skill for complex maneuvers while wearing the suit.
-- **Rank 7 [Maximum Burn]:** Make a Propulsion Systems check to increase speed for the round: Ordinary (+25%), Good (+50%), or Amazing (+100%). Each consecutive round of forcing the engine incurs a cumulative +1 step penalty. The penalty is reduced by 1 for each round the propulsion is not used.
+### Hide (Stationary)
+Ability to stay unnoticed by keeping quiet and still using cover or darkness.
+- **Results:** Degree of success gives observer penalty: Ordinary (+1), Good (+2), Amazing (+3).
 
-## Shields (Specialty)
-Focuses on the tactical use of physical, energy, or ballistic shields.
+### Sneak (In Motion)
+Ability to move silently (up to one-half walk rate).
+- **Surprise:** If successful adjacent to an opponent, receive attack bonus: Ordinary (-1), Good (-2), Amazing (-3).
 
-- **Rank 3 [Reactive Block]:** Spend the next available action to perform an opposed check against an attacker. If successful, the attack is negated. (Note: Only Ballistic or Large shields of the appropriate PL can block ranged fire).
-- **Rank 4 [Resistance Modifier]:** Provides a **+1 improvement** to the **Strength** resistance modifier. This does not stack with Melee Weapons benefits.
-- **Rank 6 [Tactical Charge]:** Negates the standard +2 step bonus opponents receive to hit a charging target.
-- **Rank 8 [Recoil Anchor]:** Reduce the situation die penalty for Burst or Autofire by 1 step when using one-handed weapons with a shield.
-- **Rank 12 [Overlapping Coverage]:** Share the shield's resistance modifier bonus with an ally within 2 meters against one ranged attack per round.
+### Shadow (Following)
+Ability to follow a target without being noticed. Modified by target''s Will resistance modifier and detected by Awareness-intuition.
 
----
+# Creativity (Broad Skill)
+This skill provides a character with training and talent (or knowledge) in a variety of creative endeavors. A character with the Creativity skill has a well-developed sense for the aesthetically pleasing, a facility for communicating with the written word, and the ability to convey and evoke powerful emotions through a chosen medium.
 
-# Athletics (Broad Skill)
-Free to human, mechalus, t’sa, and weren characters. This broad skill represents natural physical prowess and is used for physical actions such as climbing, jumping, or throwing.
+A character with just the broad skill possesses all of these characteristics, but not to such a degree that he’s able to make a living as an artist, writer, or photographer. Turning the Creativity skill into the basis of a career (or being able to produce work of professional quality, if a character has another career) requires that the character pursue a specialty skill in his chosen field(s).
 
-## Climb (Specialty)
-The ability to scale walls, mountains, or obstacles.
+### Creative Synergy
+Creativity can be used as a support check to enhance other skills by providing unique solutions, emotional depth, or unorthodox methods. Possible uses are, but are not limited to the follow:
+- **Creativity + Inspire (Leadership):** Use a creative medium (speech, song, manifesto) to stir followers. A successful check adds a step bonus to the **Inspire** check (-1 for Ordinary, -2 for Good, -3 for Amazing).
+- **Creativity + Invention (Technical Science):** Use lateral thinking to find elegant shortcuts in design. A successful check reduces the successes required for an **Invention** complex check (-1 for Ordinary, -2 for Good, -3 for Amazing).
+- **Creativity + Deception (Bluff/Seduce):** Weave a rich, emotionally resonant narrative. On a successful support check, the target’s **Intelligence or Will resistance modifier** is reduced by 1 step.
 
-### Combat Climbing
-Distance climbed in one phase:
-- **Critical Failure:** Fall.
-- **Marginal:** No progress.
-- **Ordinary:** 1 meter.
-- **Good:** 2 meters.
-- **Amazing:** 3 meters.
+_The Gamemaster has the last word on which specialty skill provide synergy on a particular task_
 
-### Falls
-On a Critical Failure, the character falls. If they have actions left, they can attempt to regain their grip with an **Ordinary** success at a +1 penalty.
+### Using Creativity (Production)
+Creating a work of art or literature involves a **complex skill check**.
+- **Situation Modifiers:** Based on conditions (materials, inspiration, distractions).
+- **Complexity (Successes Required):** Ordinary (2), Good (4-6), Amazing (8+).
+- **Project Failure:** If the check ends in a **Critical Failure** or **three Failure results**, the project is scrapped.
 
-## Jump (Specialty)
-The ability to leap over obstacles or jump for distance/height.
+## The Intangible (Specialty)
+Focuses on abstract, digital, and ethereal expression, such as grid-sculpting (virtual environments), psionic illusions, and the aesthetics of complex algorithms. This specialty is the primary support for digital infiltration, mental powers, and ephemeral constructs.
+- **Rank 3 [Artistic Flourish]:** The character can add a "signature" to their work. Any creativity skill check made to support another skill that results in an **Amazing** success grants the character an extra **Last Resort** point that must be used in the supported skill.
 
-### Combat Jumps
-- **Critical Failure:** Trip and fall, suffering d6 stun damage.
-- **Marginal:** Leap Ordinary distance but suffer d4 stun damage from poor landing.
+## The Shape (Specialty)
+Focuses on physical, structural, and visual expression, such as sculpting, painting, blueprint design, and technical prototyping. This specialty is the primary support for engineering, physical craftsmanship, and "things with defined structure."
+- **Rank 3 [Artistic Flourish]:** The character can add a "signature" to their work. Any creativity skill check made to support another skill that results in an **Amazing** success grants the character an extra **Last Resort** point that must be used in the supported skill.
 
-**Distance/Height:**
-- **Standing Jump:** Ordinary: 1m, Good: 2m, Amazing: 3m.
-- **Running Jump (4m start):** Ordinary: 2m, Good: 4m, Amazing: 6m.
-- **Vertical Leap:** Ordinary: 1m, Good: 1.5m, Amazing: 2m.
+## The Word (Specialty)
+Focuses on linguistic and auditory expression, such as writing, oratory, and singing. This specialty is the primary support for social, performance, and leadership endeavors.
+- **Rank 3 [Artistic Flourish]:** The character can add a "signature" to their work. Any creativity skill check made to support another skill that results in an **Amazing** success grants the character an extra **Last Resort** point that must be used in the supported skill.
 
-### Rank Benefits - Increased Distance
-- **Running Jump:** +1m at ranks 3, 6, 9, 12.
-- **Standing Jump:** +1m at ranks 4, 7, 10.
-- **Vertical Leap:** +0.5m at ranks 5, 8, 11.
+# Culture (Broad Skill)
+This broad skill represents a character''s ability to understand and interact with cultures that are different from his own. Areas of knowledge covered by the skill include the customs, philosophy, and way of life of a particular culture, as well as a basic familiarity with major historical figures, events, and trends important to that culture. In the use of the broad skill, a character applies what he knows about cultural trends and studies to make an educated guess about how to interact with a member of another culture. The broad skill provides at least a working knowledge of what to do when dealing with any alien culture. When Culture or any of its specialty skills is used in an interactive context with one or more other characters, it is considered an encounter skill (see the sidebar). A Critical Failure result on a skill check indicates that the character has thoroughly insulted the individual or group he''s trying to deal with. Other skill check results change the target''s attitude as shown on **TABLE P25: ENCOUNTER SKILL EFFECTS**. The greater the degree of success, the more endearing and flattering the character appears to the member(s) of the culture he''s dealing with. The complexity of the ideas that are being communicated during a use of the Culture skill (or the use of one of its specialty skills) may provide a modifier to the skill check:
 
-## Throw (Specialty)
-The ability to accurately toss objects (balls, darts, etc.) at a target.
+▶ Simple concepts—basic messages such as exchanging names, conveying friendly intentions, and offering help—give a -1 bonus to the skill check.
+
+▶ Everyday concepts—information that is somewhat more difficult to convey, such as explaining one''s place of origin or occupation—provide no modifier.
+
+▶ Complex concepts—describing what the character expects to gain from this contact, or conveying a threat or an opportunity that the character wants to make known—provide a penalty of at least +1 and possibly more, if the Gamemaster rules that the concept being conveyed is exceedingly complicated or esoteric.
+
+### Culture Situation Modifiers
+| Condition | Modifier | | :--- | :--- | | Simple concepts | -1 | | Everyday concepts | 0 | | Complex concepts | +1 | | Etiquette ranks 3-5 | -1 | | Etiquette ranks 6-8 | -2 | | Etiquette ranks 9-11 | -3 | | Etiquette rank 12 | -4 |
+
+## Diplomacy (Specialty)
+This specialty skill allows a character to improve his ability to reach agreements and understandings with representatives of different nations, cultures, subcultures and species. In general, diplomacy will come into play when a character wants to reach an accord with a member of a different culture. The skill can only be used on a particular target if the character has at least rank 1 in the specific Culture—etiquette skill that pertains to the target''s culture. Interaction and its specialty skills are usually used for interpersonal dealings between members of the same culture, but the Gamemaster may decide that Culture—diplomacy is also useful in such cases. (If so, it''s not necessary for a character to have the etiquette skill that pertains to his or her culture in order to use diplomacy on other members of that culture.) Depending on the nature of the issue to be resolved, the diplomacy skill check may be a single dice roll, or it may be a complex skill check requiring an extended period of time to complete.
+
+## Etiquette (Specialty)
+
+
+## First Encounter (Specialty)
+This specialty skill represents a character''s training in the theories and protocols of making first contact with a previously unknown culture. With this skill, a character can assess the mental, physical, and technological capabilities of an unfamiliar species, begin the process of establishing communications and learning each other''s language, and make a preliminary study of the strangers'' cultural and societal habits. A first encounter skill check is always a complex chore, and may take days, weeks, or even months to successfully complete. The Gamemaster will assign the number of successes necessary to complete the skill check based on the extent of difference between the two cultures involved. Also, the Gamemaster will determine the initial attitude of the target creature(s) toward the character, and may inform the character of changes in that attitude that take place while the complex skill check is under way. Upon the successful completion of the first encounter skill check, the character immediately gains rank 1 in the Knowledge—language and Culture—etiquette skills that relate to the formerly unknown culture.
+
+# Culture (Broad Skill)
+This broad skill represents a character’s ability to understand and interact with cultures different from their own. It covers customs, philosophy, history, and social trends.
+Areas of knowledge covered by the skill include the customs, philosophy, and way of life of a particular culture, as well as a basic familiarity with major historical figures, events, and trends important to that culture.
+
+In the use of the broad skill, a character applies what he knows about cultural trends and studies to make an educated guess about how to interact with a member of another culture. The broad skill provides at least a working knowledge of what to do when dealing with any alien culture.
+
+### Encounter Skill
+When Culture or any of its specialty skills is used in an interactive context with one or more other characters, it is considered an [Encounter skills effect Table]{{< relref "core-mechanics/useful-tables#table-p25-encounter-skill-effects" >}}.
+
+- **Success:** Improves the target's attitude(See table).
+- **Critical Failure:** The character thoroughly insults the target individual or group.
+
+### Communication Complexity
+The complexity of the ideas that are being communicated during a use of the Culture skill (or the use of one of its specialty skills) may provide a modifier to the skill check:
+- **Simple concepts**—basic messages such as exchanging names, conveying friendly intentions, and offering help—give a -1 bonus to the skill check.
+- **Everyday concepts**—information that is somewhat more difficult to convey, such as explaining one's place of origin or occupation—provide no modifier.
+- **Complex concepts**—describing what the hero expects to gain from this contact, or conveying a threat or an opportunity that the character wants to make known—provide a penalty of at least +1 and possibly more, if the Gamemaster rules that the concept being conveyed is exceedingly complicated or esoteric.
+
+## Diplomacy (Specialty)
+The ability to reach formal agreements with representatives of different nations or species.
+- **Requirement:** To use Diplomacy on a member of a specific culture, the character must usually possess at least **Rank 1** in the corresponding **Culture—Etiquette** skill.
+- **Applications:** Can be a single check or a complex check for long-term negotiations.
+
+## Etiquette (Specialty)
+This skill can't be used untrained. For each separate purchase of this specialty skill, a hero selects a specific culture. As the specialty skill is improved, the hero gains a progressively stronger grasp on the customs, attitudes, and beliefs of that culture.
+- **Increased Effect:** Gaining ranks in Culture—etiquette as it pertains to a certain culture translates into a bonus to the use of Culture-diplomacy when that skill is used on a member of the culture in question. Having the etiquette skill at rank 3 provides a -1 bonus to diplomacy skill checks. The bonus improves to -2 at rank 6, to -3 at rank 9, and to —4 at rank 12.
+
+The Gamemaster will decide what constitutes a “specific culture,” taking the campaign setting into account. In a campaign that takes place entirely on Earth, different countries may represent specific cultures; in a starfaring campaign, each planet, star system, or alien species could be a different culture.
+
+### Rank Benefits (Interaction Synergy)
+Ranks in Etiquette provide a bonus to **Diplomacy** checks made within that specific culture:
+- **Rank 3:** -1 situation die bonus.
+- **Rank 6:** -2 steps bonus.
+- **Rank 9:** -3 steps bonus.
+- **Rank 12:** -4 steps bonus.
+
+## First Encounter (Specialty)
+This skill can’t be used untrained. This specialty skill represents a hero's training in the theories and protocols of making first contact with a previously unknown culture. With this skill, a hero can assess the mental, physical, and technological capabilities of an unfamiliar species, begin the process of establishing communications and learning each other's language, and make a preliminary study of the strangers’ cultural and societal habits.
+
+A first encounter skill check is always a complex chore, and may take days, weeks, or even months to successfully complete. The Gamemaster will assign the number of successes necessary to complete the skill check based on the extent of difference between the two cultures involved. Also, the Gamemaster will determine the initial attitude of the target creature(s) toward the hero, and may inform the hero of changes in that attitude that take place while the complex skill check is under way.
+
+Upon the successful completion of the first encounter skill check, the hero immediately gains rank 1 in the Knowledge-language and Culture-etiquette skills that relate to the formerly unknown culture.
+
