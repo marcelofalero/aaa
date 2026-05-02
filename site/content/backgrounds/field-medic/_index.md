@@ -10,10 +10,10 @@ Combat-ready healer trained to save lives under fire.
 * None.
 
 ## Favored Specialty Skills:
-* [Knowledge-First Aid] ({{< relref "/skills/knowledge/#first-aid" >}})
-* [Medical Science-Treatment] ({{< relref "/skills/medical-science/#treatment" >}})
-* [Athletics-Run] ({{< relref "/skills/athletics/#run" >}})
-* [Resolve- Physical Resolve] ({{< relref "/skills/resolve/#physical-resolve" >}})
+- [Knowledge-First Aid] ({{< relref "/skills/knowledge/#first-aid" >}})
+- [Medical Science-Treatment] ({{< relref "/skills/medical-science/#treatment" >}})
+- [Athletics-Run] ({{< relref "/skills/athletics/#run" >}})
+- [Resolve- Physical Resolve] ({{< relref "/skills/resolve/#physical-resolve" >}})
 
 ## Favored Perks:
 * [Reflexes] ({{< relref "/perks_flaws/#reflexes" >}})

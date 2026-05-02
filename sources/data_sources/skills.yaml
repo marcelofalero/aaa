@@ -42,8 +42,9 @@ items:
                 - **Good:** Increased control; can perform evasive maneuvers. (He can use the dodge skill)
                 - **Amazing:** Perfect control; can perform complex aerial or orbital acrobatics.
                 ### Rank Progression
-                ⊗ **Rank 4 (Stealthy Descent):** When using a jump-pack or GADS, the character can descend with minimal noise, receiving a **-2 step bonus** to Stealth checks.
-                ⊗ **Rank 6 (Endurance Flight):** The character can fly for extended periods, receiving a **-2 step bonus** to Stamina checks for long-distance travel with with natural means or **-2 step bonus** to Armor Operation-Propulsion Systems with armor mounted propulsion.
+                ▶ **Rank 4 (Stealthy Descent):** When using a jump-pack or GADS, the character can descend with minimal noise, receiving a **-2 step bonus** to Stealth checks.
+
+                ▶ **Rank 6 (Endurance Flight):** The character can fly for extended periods, receiving a **-2 step bonus** to Stamina checks for long-distance travel with with natural means or **-2 step bonus** to Armor Operation-Propulsion Systems with armor mounted propulsion.
           - es:
               name: Acrobacia aérea
               description: |-
@@ -75,12 +76,14 @@ items:
               name: Daredevil
               description: |-
                 This specialty skill enables a character to perform high-risk activities such as skydiving, scuba diving, hang gliding, surfing, bungee jumping, and whitewater rafting.
+
                 **Results**
-                On a Critical Failure, the attempted action fails and the character could suffer stun or wound damage at the Gamemaster's discretion. This outcome generally involves bad luck concerning some aspect of the equipment being used—scuba diving gear springs a leak, a parachute fails to open properly, and so forth.
-                On a Failure, the attempted action doesn't succeed, but the character does not necessarily suffer damage—a parachutist goes drastically off course and lands a long distance from his target, perhaps taking damage as well.
-                On an Ordinary, the character is basically able to perform the action—he can manipulate a hang glider so that he stays aloft, but he has no control over his direction of travel.
-                On a Good, the character has limited control of the action—he opens his parachute at just the right time, and also is able to use it to maneuver so that he lands only a short distance from his target.
-                On an Amazing, everything goes right—he rides the raft all the way through the rapids without damage to himself or his equipment.
+
+                - On a **Critical Failure**, the attempted action fails and the character could suffer stun or wound damage at the Gamemaster's discretion. This outcome generally involves bad luck concerning some aspect of the equipment being used—scuba diving gear springs a leak, a parachute fails to open properly, and so forth.
+                - On a **Failure**, the attempted action doesn't succeed, but the character does not necessarily suffer damage—a parachutist goes drastically off course and lands a long distance from his target, perhaps taking damage as well.
+                - On an **Ordinary**, the character is basically able to perform the action—he can manipulate a hang glider so that he stays aloft, but he has no control over his direction of travel.
+                - On a **Good**, the character has limited control of the action—he opens his parachute at just the right time, and also is able to use it to maneuver so that he lands only a short distance from his target.
+                - On an **Amazing**, everything goes right—he rides the raft all the way through the rapids without damage to himself or his equipment.
           - es:
               name: Temerario
               description: |-
@@ -149,14 +152,8 @@ items:
         rank_benefits:
           - rank: 3
             title: Action Benefit
-          - rank: 4
-            title: Resistance Modifier
           - rank: 7
             title: Reaction Dodge
-          - rank: 8
-            title: Resistance Modifier
-          - rank: 12
-            title: Resistance Modifier
       fall:
         attribute: DEX
         cost: 3
@@ -180,10 +177,15 @@ items:
               name: Zero-g Training
               description: |-
                 A character with the zero-g training skill can function in weightless or near-weightless conditions better than someone who doesn''t have this skill. An untrained character has a +3 step penalty in zero gravity and a +1 step penalty in light gravity. Purchasing this skill immediately reduces the zero-g penalty to +2 steps and eliminates the penalty for light gravity.
+
                 **Rank Progression**
-                ⊗ **Rank 4:** Zero-g penalty is reduced to +1 step, and light gravity actions receive a -1 step bonus.
-                ⊗ **Rank 7:** Zero-g penalty is eliminated.
-                ⊗ **Rank 10:** Physical actions in zero-g receive a -1 step bonus. (Light gravity bonus never improves beyond -1 step.)
+
+                ▶ **Rank 4:** Zero-g penalty is reduced to +1 step, and light gravity actions receive a -1 step bonus.
+
+                ▶ **Rank 7:** Zero-g penalty is eliminated.
+
+                ▶ **Rank 10:** Physical actions in zero-g receive a -1 step bonus. (Light gravity bonus never improves beyond -1 step.)
+
                 **Sesheyan Advantage** Sesheyan characters without the zero-g training skill function as though they have it at rank 1. If a sesheyan purchases this skill, penalties are reduced by 1 step and bonuses are improved by the same amount (max bonus -2 in light gravity).
           - es:
               name: Entrenamiento en gravedad cero
@@ -199,11 +201,11 @@ items:
         trained_only: true
         rank_benefits:
           - rank: 4
-            title: Zero-g penalty is reduced to +1
+            title: Benefit
           - rank: 7
-            title: Zero-g penalty is eliminated
+            title: Benefit
           - rank: 10
-            title: Physical actions in zero-g receive a -1 step bonus
+            title: Benefit
     trained_only: false
   administration:
     attribute: WIL
@@ -336,7 +338,9 @@ items:
               description: |-
                 This specialty skill enables a character to improve this aspect of the Animal Handling broad skill. A character with this skill can attempt racing over dangerous terrain, making jumps or performing other stunts, and engaging in mounted combat.
 
-                ### Trick Riding (Rank 3 Benefit)
+                ▶ At rank 3 the character learns to perform special stunts or tricks while mounted. See trick riding bellow.
+
+                ### Trick Riding
                 The character can direct their mount to jump fences, leap chasms, or move backward.
                 - **Critical Failure:** The animal trips (damage as an Extremely Short fall for both).
                 - **Failure:** The animal refuses to perform.
@@ -360,6 +364,7 @@ items:
                 - **Ordinary:** +1 step.
                 - **Good:** +2 steps.
                 - **Amazing:** +3 steps.
+
                 *Note: This does not protect the mount. Trick riding cannot be combined with other actions (e.g., attacking while leaping).*
           - es:
               name: Montar Animales
@@ -443,9 +448,11 @@ items:
               description: |-
                 This specialty represents the level of mastery in the use of armor, as well as the specialized training needed to use powered armors, allowing the character to obtain the most of any armor.
 
-                - **Rank 1 [Improved Operation]:** The reduction to action check and Dexterity resistance modifier penalties becomes 2 steps. This improves to 3 steps at **Rank 4**, 4 steps at **Rank 6**, and 5 steps at **Rank 10**.
-                - **Rank 2 [Shaking Off Stuns]:** Stun damage (including secondary) is reduced by 1 point. This increases by 1 for every 2 ranks attained (max 6 points at **Rank 12**).
-                - **Rank 7 [Powered Armor Operation]:** The character has mastered the synchronization required to operate Powered Armor suits.
+                ⊗ **Rank 1 [Improved Operation]:** The reduction to action check and Dexterity resistance modifier penalties becomes 2 steps. This improves to 3 steps at **Rank 4**, 4 steps at **Rank 6**, and 5 steps at **Rank 10**.
+
+                ⊗ **Rank 2 [Shaking Off Stuns]:** Stun damage (including secondary) is reduced by 1 point. This increases by 1 for every 2 ranks attained (max 6 points at **Rank 12**).
+
+                ▶ **Rank 7 [Powered Armor Operation]:** The character has mastered the synchronization required to operate Powered Armor suits.
           - es:
               name: Armadura de Combate
               description: |-
@@ -460,14 +467,8 @@ items:
             title: Improved Operation
           - rank: 2
             title: Shaking Off Stuns
-          - rank: 4
-            title: Improved Operation
-          - rank: 6
-            title: Improved Operation
           - rank: 7
             title: Powered Armor Operation
-          - rank: 10
-            title: Improved Operation
       tactical-armor:
         attribute: INT
         cost: 3
@@ -478,9 +479,9 @@ items:
               description: |-
                 This specialty skill enters into play when armors with integrated equipment are used (sensors, communications, etc.). It does not apply to mounted weaponry, which uses its own specific skill. It can also be used to resist electronic attacks like sensor hacking or jamming.
 
-                - **Rank 2 [Tactical Multi-tasking]:** The character can perform one operation with integrated suit equipment (cycling sensors, changing frequencies) without spending an action. One additional free operation is gained at **Rank 6** and **Rank 10**.
-                - **Rank 5 [Sensor Proficiency]:** Receive a **-1 step bonus** to checks involving the operation or interpretation of integrated suit sensors.
-                - **Rank 7 [Counter-Intrusion]:** Gain a **-1 step bonus** to resist electronic warfare or hacking attempts directed at the suit. This improves to **-2 steps** at **Rank 11**.
+                ▶ **Rank 2 [Tactical Multi-tasking]:** The character can perform one operation with integrated suit equipment (cycling sensors, changing frequencies) without spending an action. One additional free operation is gained at **Rank 6** and **Rank 10**.
+                ▶ **Rank 5 [Sensor Proficiency]:** Receive a **-1 step bonus** to checks involving the operation or interpretation of integrated suit sensors.
+                ▶ **Rank 7 [Counter-Intrusion]:** Gain a **-1 step bonus** to resist electronic warfare or hacking attempts directed at the suit. This improves to **-2 steps** at **Rank 11**.
           - es:
               name: Armadura Táctica
               description: |-
@@ -495,13 +496,7 @@ items:
             title: Tactical Multi-tasking
           - rank: 5
             title: Sensor Proficiency
-          - rank: 6
-            title: Tactical Multi-tasking
           - rank: 7
-            title: Counter-Intrusion
-          - rank: 10
-            title: Tactical Multi-tasking
-          - rank: 11
             title: Counter-Intrusion
       propulsion-systems:
         attribute: INT
@@ -513,9 +508,11 @@ items:
               description: |-
                 This specialty skill represents mastery in the use of integrated propulsion systems, such as jetpacks, underwater drives, or gravitic assisted deceleration systems (GADS).
 
-                - **Rank 2 [Thermal/Fuel Management]:** Optimize fuel or heat dissipation, extending operational time of propulsion units by 50%.
-                - **Rank 4 [Vector Calibration & Aerobatics Integration]:** Adjust thrust nozzles for specific tasks, providing a **-1 step bonus** to maneuvering checks. Additionally, the character is sufficiently familiarized with armor propulsion systems to use the **Aerobatics** specialty skill for complex maneuvers while wearing the suit.
-                - **Rank 7 [Maximum Burn]:** Make a Propulsion Systems check to increase speed for the round: Ordinary (+25%), Good (+50%), or Amazing (+100%). Each consecutive round of forcing the engine incurs a cumulative +1 step penalty. The penalty is reduced by 1 for each round the propulsion is not used.
+                ▶ **Rank 2 [Thermal/Fuel Management]:** Optimize fuel or heat dissipation, extending operational time of propulsion units by 50%.
+
+                ▶ **Rank 4 [Vector Calibration & Aerobatics Integration]:** Adjust thrust nozzles for specific tasks, providing a **-1 step bonus** to maneuvering checks. Additionally, the character is sufficiently familiarized with armor propulsion systems to use the **Aerobatics** specialty skill for complex maneuvers while wearing the suit.
+
+                ▶ **Rank 7 [Maximum Burn]:** Make a Propulsion Systems check to increase speed for the round: Ordinary (+25%), Good (+50%), or Amazing (+100%). Each consecutive round of forcing the engine incurs a cumulative +1 step penalty. The penalty is reduced by 1 for each round the propulsion is not used.
           - es:
               name: Sistemas de propulsión
               description: |-
@@ -542,11 +539,11 @@ items:
               description: |-
                 Focuses on the tactical use of physical, energy, or ballistic shields.
 
-                - **Rank 3 [Reactive Block]:** Spend the next available action to perform an opposed check against an attacker. If successful, the attack is negated. (Note: Only Ballistic or Large shields of the appropriate PL can block ranged fire).
-                - **Rank 4 [Resistance Modifier]:** Provides a **+1 improvement** to the **Strength** resistance modifier. This does not stack with Melee Weapons benefits.
-                - **Rank 6 [Tactical Charge]:** Negates the standard +2 step bonus opponents receive to hit a charging target.
-                - **Rank 8 [Recoil Anchor]:** Reduce the situation die penalty for Burst or Autofire by 1 step when using one-handed weapons with a shield.
-                - **Rank 12 [Overlapping Coverage]:** Share the shield's resistance modifier bonus with an ally within 2 meters against one ranged attack per round.
+                ▶ **Rank 3 [Reactive Block]:** Spend the next available action to perform an opposed check against an attacker. If successful, the attack is negated. (Note: Only Ballistic or Large shields of the appropriate PL can block ranged fire).
+                ⊗ **Rank 4 [Resistance Modifier]:** Provides a **+1 improvement** to the **Strength** resistance modifier. This does not stack with Melee Weapons benefits.
+                ▶ **Rank 6 [Tactical Charge]:** Negates the standard +2 step bonus opponents receive to hit a charging target.
+                ▶ **Rank 8 [Recoil Anchor]:** Reduce the situation die penalty for Burst or Autofire by 1 step when using one-handed weapons with a shield.
+                ▶ **Rank 12 [Overlapping Coverage]:** Share the shield's resistance modifier bonus with an ally within 2 meters against one ranged attack per round.
           - es:
               name: Escudos
               description: |-
@@ -593,7 +590,10 @@ items:
         localized:
           - en:
               name: Climb
-              description: ''
+              description: |-
+                The ability to scale vertical surfaces and navigate difficult terrain.
+                ▶ **Combat Climbing:** Movement per phase based on check: Ordinary (1m), Good (2m), Amazing (3m). Critical Failure results in a fall.
+                ▶ **Challenge Climbing:** Outside of rounds, climbing is resolved as a **complex skill check**.
           - es:
               name: Trepar
               description: |-
@@ -606,7 +606,16 @@ items:
         localized:
           - en:
               name: Jump
-              description: ''
+              description: |-
+                The ability to leap over obstacles or across gaps.
+                **Types of Jump:**
+                - **Standing:** Ordinary 1m; Good 2m; Amazing 3m.
+                - **Running:** Ordinary 2m; Good 4m; Amazing 6m.
+                - **Vertical:** Ordinary 1m; Good 1.5m; Amazing 2m.
+
+                **Vaulting:** Vertical leap enhanced by a pole or object. Adds +1m (object) or +2m (pole) to the jump.
+
+                ▶ **Increased Distance:** Ranks provide distance bonuses: Running (+1m at Rank 3, 6, 9, 12), Standing (+1m at Rank 4, 7, 10), Vertical (+0.5m at Rank 5, 8, 11).
           - es:
               name: Saltar
               description: |-
@@ -623,7 +632,13 @@ items:
         localized:
           - en:
               name: Swim
-              description: ''
+              description: |-
+                **Trained Only.**
+                Proficiency in moving through liquid environments. Without this skill, a character can only tread water and paddle crudely.
+
+                ▶ **Improved Breathing:** Situation die bonus to Stamina checks for holding breath: Rank 1 (-1), Rank 4 (-2), Rank 8 (-3), Rank 12 (-4).
+
+                ▶ **Movement Rate:** Swim speed increases by 1m at Ranks 4, 8, and 12.
           - es:
               name: Nadar
               description: |-
@@ -638,7 +653,18 @@ items:
         localized:
           - en:
               name: Throw
-              description: ''
+              description: |-
+                Proficiency in hurling objects (knives, grenades, rocks) at targets. Accuracy is governed by [Table P20: Accuracy by Range]({{< relref "core-mechanics/useful-tables#table-p20-accuracy-by-range" >}}).
+
+                ### Trajectory Control
+                A character can attempt advanced maneuvers with a base **+2 step penalty**:
+                - **Magnus Curve:** Throw around one piece of cover (ignore +1 cover penalty).
+                - **Ricochet:** Bounce off a surface to hit a target (ignore LOS requirements if the path is known).
+                - **Sub-Orbital Arc:** Throw over large obstacles.
+
+                ▶ **Trajectory Mastery:** Ranks in this specialty reduce the penalty for Trajectory Control maneuvers: **Rank 3 (-1)**, **Rank 6 (-2)**, **Rank 9 (-3)**, **Rank 12 (-4)**.
+
+                ▶ **Kinetic Reversal (Rank 12):** Once per round, the character can attempt to catch a thrown projectile (like a grenade or knife) with an **Amazing** Athletics-throw check. If successful, they can immediately throw it back as a free action.
           - es:
               name: Lanzar
               description: |-
@@ -803,10 +829,15 @@ items:
 
                 ### Illegal Transactions
                 This skill reduces the penalty for attempting illegal transactions.
-                - **Initial Purchase:** Penalty reduced by -1 step.
-                - **Rank 4:** Penalty reduction of -2 steps.
-                - **Rank 7:** Penalty reduction of -3 steps.
-                - **Rank 10:** Penalty reduction of -4 steps.
+
+                ⊗ **Rank 1:** Penalty reduced by -1 step.
+
+                ⊗ **Rank 4:** Penalty reduction of -2 steps.
+
+                ⊗ **Rank 7:** Penalty reduction of -3 steps.
+
+                ⊗ **Rank 10:** Penalty reduction of -4 steps.
+
                 *Note: This benefit only reduces or eliminates penalties; it never provides a bonus.
           - es:
               name: Negocios Ilícitos
@@ -816,12 +847,14 @@ items:
                 ⊗ **Efecto Aumentado:** A medida que un personaje alcanza rangos más altos en negocios ilícitos, puede ignorar penalizaciones más severas: en el rango 4, la reducción de la penalización es de -2 pasos; en el rango 7 es de -3 pasos; y en el rango 10 se convierte en -4 pasos. Este beneficio solo reduce o elimina una penalización; nunca proporciona una bonificación.
         trained_only: false
         rank_benefits:
+          - rank: 1
+            title: Benefit
           - rank: 4
-            title: Increased Effect
+            title: Benefit
           - rank: 7
-            title: Increased Effect
+            title: Benefit
           - rank: 10
-            title: Increased Effect
+            title: Benefit
       small-business:
         attribute: INT
         cost: 3
@@ -834,10 +867,14 @@ items:
 
                 ### Financial Bargaining
                 This skill provides a situation die bonus when making deals, haggling, or bargaining in small-business finance.
-                - **Initial Purchase:** -1 step bonus.
-                - **Rank 4:** -2 step bonus.
-                - **Rank 8:** -3 step bonus.
-                - **Rank 12:** -4 step bonus.
+
+                ⊗ **Rank 1:** -1 step bonus.
+
+                ⊗ **Rank 4:** -2 step bonus.
+
+                ⊗ **Rank 8:** -3 step bonus.
+
+                ⊗ **Rank 12:** -4 step bonus.
           - es:
               name: Pequeños Negocios
               description: |-
@@ -846,12 +883,14 @@ items:
                 ⊗ **Efecto Aumentado:** A medida que un personaje alcanza rangos más altos en pequeños negocios, recibe una mayor bonificación de dado de situación: -2 pasos en el rango 4, -3 pasos en el rango 8 y -4 pasos en el rango 12.
         trained_only: false
         rank_benefits:
+          - rank: 1
+            title: Benefit
           - rank: 4
-            title: Increased Effect
+            title: Benefit
           - rank: 8
-            title: Increased Effect
+            title: Benefit
           - rank: 12
-            title: Increased Effect
+            title: Benefit
     trained_only: false
   computer-science:
     attribute: INT
@@ -866,11 +905,11 @@ items:
 
             **Note:** Some computer systems allow users who don't have the broad skill to make skill checks at their base Intelligence score instead of at the untrained score. If such an assist program is installed in a particular piece of equipment, your Gamemaster will let you know.
 
-            ▶ Information Retrieval: Most computers are connected to some storehouse of raw data—a large network, a centralized storage system, or the unit’s own drives. Using the Computer Science skill to search for specific information requires a skill check only if that information is protected in some way (user password, encoded data, etc.) or if the information is obscure and hard to locate. In all but the most straightforward of situations, a complex skill check is used to determine the result of a retrieval attempt. The broad skill is useful when a character wants to retrieve information from any unprotected system—but if the system is protected, only programs of Marginal quality and Marginal complexity can be accessed with the broad skill. In order to retrieve information from a protected system of higher quality or greater complexity, the specialty skill hacking is needed. A Critical Failure result on the skill check usually means that safeguards or alarms have been triggered, an unretrievable computer error occurs, or the character makes some other monumental mistake that aborts this computer run.
+            **Information Retrieval:** Most computers are connected to some storehouse of raw data—a large network, a centralized storage system, or the unit’s own drives. Using the Computer Science skill to search for specific information requires a skill check only if that information is protected in some way (user password, encoded data, etc.) or if the information is obscure and hard to locate. In all but the most straightforward of situations, a complex skill check is used to determine the result of a retrieval attempt. The broad skill is useful when a character wants to retrieve information from any unprotected system—but if the system is protected, only programs of Marginal quality and Marginal complexity can be accessed with the broad skill. In order to retrieve information from a protected system of higher quality or greater complexity, the specialty skill hacking is needed. A Critical Failure result on the skill check usually means that safeguards or alarms have been triggered, an unretrievable computer error occurs, or the character makes some other monumental mistake that aborts this computer run.
 
-            ▶ Computer Repair: A character with this skill has the ability to fix a damaged computer system, either by replacing defective parts or by rewiring a component or a system to bypass a problem spot. Repairing a computer system is always a complex skill check. For information on how attempts to repair a device are made, see the repair specialty under the Technical Science broad skill (page 89).
+            **Computer Repair:** A character with this skill has the ability to fix a damaged computer system, either by replacing defective parts or by rewiring a component or a system to bypass a problem spot. Repairing a computer system is always a complex skill check. For information on how attempts to repair a device are made, see the repair specialty under the Technical Science broad skill (page 89).
 
-            ▶ Programming: Computer programs exist to handle almost any task imaginable. Without training in the use of these high-tech tools, the wealth of options and accessories available can be overwhelming to a character trying to employ them. As with information retrieval (above), using Computer Science to navigate and utilize a program almost always involves a complex skill check. A character with just the broad skill can only manipulate the source code of programs of Marginal quality and Marginal complexity. Manipulating programs of better quality and greater complexity requires the programming specialty skill. For more information on how the Computer Science specialty skills are used, see Chapter 10: Computers. Brief descriptions of the specialty skills are given below.
+            **Programming:** Computer programs exist to handle almost any task imaginable. Without training in the use of these high-tech tools, the wealth of options and accessories available can be overwhelming to a character trying to employ them. As with information retrieval (above), using Computer Science to navigate and utilize a program almost always involves a complex skill check. A character with just the broad skill can only manipulate the source code of programs of Marginal quality and Marginal complexity. Manipulating programs of better quality and greater complexity requires the programming specialty skill. For more information on how the Computer Science specialty skills are used, see Chapter 10: Computers. Brief descriptions of the specialty skills are given below.
       - es:
           name: Ciencias de la Computación
           description: |-
@@ -1022,7 +1061,7 @@ items:
                 - **Good/Amazing:** The attempt succeeds and may offset penalties for repeated attempts against the same target.
 
                 ### Rank Benefits
-                - **Rank 3, 6, 9, 12 [It Takes One to Know One]:** The character''s Will resistance modifier (only for spotting a pickpocket attempt) improves by +1 penalty to the foe''s attempt at rank 3, +2 steps at rank 6, +3 steps at rank 9, and +4 steps at rank 12.
+                ⊗ **Rank 3, 6, 9, 12 [It Takes One to Know One]:** The character's Will resistance modifier (only for spotting a pickpocket attempt) improves by +1 penalty to the foe''s attempt at rank 3, +2 steps at rank 6, +3 steps at rank 9, and +4 steps at rank 12.
           - es:
               name: Abrir Cerraduras
               description: |-
@@ -1104,7 +1143,7 @@ items:
               name: The Intangible
               description: |-
                 Focuses on abstract, digital, and ethereal expression, such as grid-sculpting (virtual environments), psionic illusions, and the aesthetics of complex algorithms. This specialty is the primary support for digital infiltration, mental powers, and ephemeral constructs.
-                - **Rank 3 [Artistic Flourish]:** The character can add a "signature" to their work. Any creativity skill check made to support another skill that results in an **Amazing** success grants the character an extra **Last Resort** point that must be used in the supported skill.
+                ▶ **Rank 3 [Artistic Flourish]:** The character can add a "signature" to their work. Any creativity skill check made to support another skill that results in an **Amazing** success grants the character an extra **Last Resort** point that must be used in the supported skill.
           - es:
               name: The Intangible
               description: ''
@@ -1121,7 +1160,7 @@ items:
               name: The Shape
               description: |-
                 Focuses on physical, structural, and visual expression, such as sculpting, painting, blueprint design, and technical prototyping. This specialty is the primary support for engineering, physical craftsmanship, and "things with defined structure."
-                - **Rank 3 [Artistic Flourish]:** The character can add a "signature" to their work. Any creativity skill check made to support another skill that results in an **Amazing** success grants the character an extra **Last Resort** point that must be used in the supported skill.
+                ▶ **Rank 3 [Artistic Flourish]:** The character can add a "signature" to their work. Any creativity skill check made to support another skill that results in an **Amazing** success grants the character an extra **Last Resort** point that must be used in the supported skill.
           - es:
               name: The Shape
               description: ''
@@ -1138,7 +1177,7 @@ items:
               name: The Word
               description: |-
                 Focuses on linguistic and auditory expression, such as writing, oratory, and singing. This specialty is the primary support for social, performance, and leadership endeavors.
-                - **Rank 3 [Artistic Flourish]:** The character can add a "signature" to their work. Any creativity skill check made to support another skill that results in an **Amazing** success grants the character an extra **Last Resort** point that must be used in the supported skill.
+                ▶ **Rank 3 [Artistic Flourish]:** The character can add a "signature" to their work. Any creativity skill check made to support another skill that results in an **Amazing** success grants the character an extra **Last Resort** point that must be used in the supported skill.
           - es:
               name: The Word
               description: ''
@@ -1157,17 +1196,21 @@ items:
           name: Culture
           description: |-
             This broad skill represents a character’s ability to understand and interact with cultures different from their own. It covers customs, philosophy, history, and social trends.
+            Areas of knowledge covered by the skill include the customs, philosophy, and way of life of a particular culture, as well as a basic familiarity with major historical figures, events, and trends important to that culture.
+
+            In the use of the broad skill, a character applies what he knows about cultural trends and studies to make an educated guess about how to interact with a member of another culture. The broad skill provides at least a working knowledge of what to do when dealing with any alien culture.
 
             ### Encounter Skill
-            Culture is treated as an [encounter skill](/core-mechanics/characters-in-action/#encounter-scene).
-            - **Success:** Improves the target's attitude.
+            When Culture or any of its specialty skills is used in an interactive context with one or more other characters, it is considered an [Encounter skills effect Table]{{< relref "core-mechanics/useful-tables#table-p25-encounter-skill-effects" >}}.
+
+            - **Success:** Improves the target's attitude(See table).
             - **Critical Failure:** The character thoroughly insults the target individual or group.
 
             ### Communication Complexity
-            The difficulty of the ideas being communicated modifies the check:
-            - **Simple (-1 bonus):** Names, friendly intentions, offering help.
-            - **Everyday (+0):** Origin, occupation, common information.
-            - **Complex (+1 or more):** Threatening, esoteric ideas, or complex negotiations.
+            The complexity of the ideas that are being communicated during a use of the Culture skill (or the use of one of its specialty skills) may provide a modifier to the skill check:
+            - **Simple concepts**—basic messages such as exchanging names, conveying friendly intentions, and offering help—give a -1 bonus to the skill check.
+            - **Everyday concepts**—information that is somewhat more difficult to convey, such as explaining one's place of origin or occupation—provide no modifier.
+            - **Complex concepts**—describing what the hero expects to gain from this contact, or conveying a threat or an opportunity that the character wants to make known—provide a penalty of at least +1 and possibly more, if the Gamemaster rules that the concept being conveyed is exceedingly complicated or esoteric.
       - es:
           name: Cultura
           description: |-
@@ -1185,19 +1228,35 @@ items:
           - en:
               name: Etiquette
               description: |-
-                **Trained Only.** Must be purchased separately for each specific culture (e.g., *Human-Sol*, *Mechalus-Prime*, *Weren-Tribal*). This skill represents a deep grasp of a culture's specific customs and beliefs.
+                This skill can't be used untrained. For each separate purchase of this specialty skill, a hero selects a specific culture. As the specialty skill is improved, the hero gains a progressively stronger grasp on the customs, attitudes, and beliefs of that culture.
+                - **Increased Effect:** Gaining ranks in Culture—etiquette as it pertains to a certain culture translates into a bonus to the use of Culture-diplomacy when that skill is used on a member of the culture in question. Having the etiquette skill at rank 3 provides a -1 bonus to diplomacy skill checks. The bonus improves to -2 at rank 6, to -3 at rank 9, and to —4 at rank 12.
+
+                The Gamemaster will decide what constitutes a “specific culture,” taking the campaign setting into account. In a campaign that takes place entirely on Earth, different countries may represent specific cultures; in a starfaring campaign, each planet, star system, or alien species could be a different culture.
 
                 ### Rank Benefits (Interaction Synergy)
                 Ranks in Etiquette provide a bonus to **Diplomacy** checks made within that specific culture:
-                - **Rank 3:** -1 situation die bonus.
-                - **Rank 6:** -2 steps bonus.
-                - **Rank 9:** -3 steps bonus.
-                - **Rank 12:** -4 steps bonus.
+
+                ⊗ **Rank 3:** -1 situation die bonus.
+
+                ⊗ **Rank 6:** -2 steps bonus.
+
+                ⊗ **Rank 9:** -3 steps bonus.
+
+                ⊗ **Rank 12:** -4 steps bonus.
           - es:
               name: First Encounter
               description: |-
                 This Especialidad represents a Personaje''s training in the theories and protocols of making first contact with a previously unknown Cultura. With this skill, a Personaje can assess the Mental, Físico, and technological capabilities of an unfamiliar species, begin the process of establishing communications and learning each Otros''s language, and make a preliminary study of the strangers'' cultural and societal habits. A first encounter skill check is always a complex chore, and may take days, weeks, or even months to successfully complete. The Gamemaster will assign the number of successes necessary to complete the skill check based on the extent of difference between the two cultures involved. Also, the Gamemaster will determine the initial attitude of the target creature(s) toward the Personaje, and may inform the Personaje of changes in that attitude that take place while the complex skill check is under way. Upon the successful completion of the first encounter skill check, the Personaje immediately gains rank 1 in the Knowledge—language and Cultura—Etiqueta skills that relate to the formerly unknown Cultura.
         trained_only: true
+        rank_benefits:
+          - rank: 3
+            title: Benefit
+          - rank: 6
+            title: Benefit
+          - rank: 9
+            title: Benefit
+          - rank: 12
+            title: Benefit
       diplomacy:
         attribute: PER
         cost: 3
@@ -1221,13 +1280,11 @@ items:
           - en:
               name: First Encounter
               description: |-
-                **Trained Only.** Specialized training in making contact with previously unknown species or cultures.
-                - **Assessment:** Determine mental, physical, and technological capabilities of an unknown species.
-                - **Establishment:** Begin the process of establishing a common language and understanding.
+                This skill can’t be used untrained. This specialty skill represents a hero's training in the theories and protocols of making first contact with a previously unknown culture. With this skill, a hero can assess the mental, physical, and technological capabilities of an unfamiliar species, begin the process of establishing communications and learning each other's language, and make a preliminary study of the strangers’ cultural and societal habits.
 
-                ### First Contact Resolution
-                First encounter checks are always **complex skill checks** (taking days, weeks, or months).
-                - **Completion:** Upon success, the character automatically gains **Rank 1** in both **Knowledge—Language** and **Culture—Etiquette** for that specific culture.
+                A first encounter skill check is always a complex chore, and may take days, weeks, or even months to successfully complete. The Gamemaster will assign the number of successes necessary to complete the skill check based on the extent of difference between the two cultures involved. Also, the Gamemaster will determine the initial attitude of the target creature(s) toward the hero, and may inform the hero of changes in that attitude that take place while the complex skill check is under way.
+
+                Upon the successful completion of the first encounter skill check, the hero immediately gains rank 1 in the Knowledge-language and Culture-etiquette skills that relate to the formerly unknown culture.
           - es:
               name: First Encounter
               description: |-
@@ -1243,7 +1300,22 @@ items:
       - en:
           name: Deception
           description: |-
-            This broad skill represents a character''s proficiency at deceiving others through conversation and face-to-face interaction. Whether a character tries to bluff his way out of trouble, bribe a suspicious official, fast-talk dim-witted thugs into confusion, or gamble his way into a small fortune, this broad skill covers all verbal tricks and subterfuges. Although the use of Deception or any of its specialty skills can affect the attitude of someone who is victimized by the skill, this shift in attitude is not necessarily long-lasting. Sometimes even the slightest change in a situation will spoil a character''s ruse, or perhaps require another skill check to see if he succeeds in perpetuating his trickery. A character''s Deception situation die is modified by his target''s Intelligence resistance modifier. In addition, the Gamemaster may award bonuses or penalties depending on past dealings or other details that may come into play. The greater the level of success the character achieves, the more convincing his deception appears to be.
+            The proficiency at deceiving others through conversation and face-to-face interaction. It covers all verbal tricks and subterfuges.
+
+            ### Resolution
+            - **Opposed Check:** Modified by the target’s **Intelligence** resistance modifier.
+            - **Encounter Skill:** Used to shift attitudes as per [Table P25: Encounter Skill Effects]({{< relref "core-mechanics/useful-tables#table-p25-encounter-skill-effects" >}}).
+
+            ### Gambling Rules
+            Gambling is an opposed check against the opponent's **Intelligence** (for Logic Games) or **Will** (for Nerve Games) resistance modifier.
+
+            **The Sitting:** One check represents a "session" or high-stakes moment.
+            - **Ordinary Success:** Win 1.5x stake.
+            - **Good Success:** Win 2x stake.
+            - **Amazing Success:** Win 5x stake.
+            - **Failure:** Lose stake.
+            - **Critical Failure:** Significant loss (lose 2x stake/debt) or social disaster.
+            ▶ **Cheating:** Declare before rolling. Gain a **-3 step bonus**, but any **Failure** result is treated as a **Critical Failure (Caught)**.
       - es:
           name: Engaño
           description: |-
@@ -1257,15 +1329,17 @@ items:
           - en:
               name: Bluff
               description: |-
-                This specialty skill represents a talent for misleading or deceiving through false bravado or outright lies, or deterring a character by displaying extreme (and probably unwarranted) confidence. Bluff is used to determine the result of a character''s trick, con, or bold-faced lie. No matter what other props a character may use in a bluff attempt, the most important component is the character''s attitude and verbal interaction. This is the ability to make another character believe something that isn''t true. On a **Critical Failure**, the bluff is seen for what it is, and the target becomes Hostile or Combative. On a **Failure**, instead of having a positive effect, the character''s patter is considered to be annoying and condescending. On an **Ordinary** success, the bluff works for the immediate scene, although no change in attitude occurs in the affected character(s). On a **Good** result, the target''s attitude toward the bluffer improves by one grade (Neutral to Friendly, Friendly to Charmed, etc.) for d8+1 time units before he figures out that he was tricked. On an
-                **Amazing** success, the target''s attitude improves by two grades for d12+2 time units before he figures out that he was tricked.
+                The talent for misleading through false bravado, outright lies, or deterring others by displaying unwarranted confidence.
+                - **Ordinary:** The bluff works for the immediate scene.
+                - **Good:** Target's attitude improves by one grade for d8+1 time units.
+                - **Amazing:** Target's attitude improves by two grades for d12+2 time units.
+                - **Failure:** The character's patter is considered annoying/condescending.
+                - **Critical Failure:** The bluff is exposed; target becomes **Hostile** or **Combative**.
+
+                _As always the time unit is decided by the Gamemaster based on the situation_
           - es:
-              name: Mentir
-              description: |-
-                {{% list %}}
-                - **Mentir:** Talento para despistar o engañar mediante una falsa bravuconería o mentiras descaradas.
-                - **Sobornar:** Ofrecer dinero, bienes, información o servicios para obtener lo que se desea.
-                - **Apostar:** Competencia en varios juegos de azar.
+              name: Bluff
+              description: ''
         trained_only: false
       bribe:
         attribute: PER
@@ -1275,28 +1349,28 @@ items:
           - en:
               name: Bribe
               description: |-
-                Whenever a character wants to offer another character money, goods, information, or services to get that character to do what the character wants, a bribe check is called for. On a **Critical Failure**, not only is the bribe refused, but the target becomes Hostile or even Combative. In all cases, there''s no way he''s going to accept the bribe. A **Failure** result means that the bribe is refused, and if the character wants to try again he must raise the value of the bribe being offered. Each subsequent Failure result adds to the size of the bribe until the character either rolls a Critical Failure (with effects as described above) or achieves some degree of success. An **Ordinary** success indicates that the bribe is accepted, but the attitude of the target is unchanged—a Hostile guard will accept your money and let you pass, but if he sees you again he''ll still be Hostile. On a **Good** success, the bribe is accepted, and the target''s attitude improves by one grade for 2d6 hours or until the character does something to change the relationship. (Bought friendships only last until the money runs out and usually require a steady flow of cash or favors.) On an **Amazing** result, the bribe is accepted, and the target''s attitude improves by two grades for 4d6 hours or until the character does something to change the relationship.
+                The ability to offer money, goods, or services to influence a target.
+
+                ### The Assessment
+                Before making an offer, a character can make a separate **Bribe** check to "size up" the target. On a success, the Gamemaster reveals the "Proper Bribe" (the baseline value required for an Ordinary success).
+
+                ### Sweetening the Deal
+                Offering more than the Proper Bribe provides a bonus to the actual Bribe check:
+                - **+25% Value:** -1 step bonus.
+                - **+50% Value:** -2 steps bonus.
+                - **+100% Value:** -3 steps bonus.
+
+                **The Greed Trap:** Offering over **200%** of the Proper Bribe makes the target nervous or suspicious. The target may take the bribe and still betray the character, or report the attempt to authorities.
+
+                **Results:**
+                - **Ordinary:** Bribe accepted, but attitude is unchanged.
+                - **Good:** Bribe accepted; attitude improves by one grade for 2d6 hours or until the character does something to change the relationship.
+                - **Amazing:** Bribe accepted; attitude improves by two grades for 4d6 hours or until the character does something to change the relationship.
+                - **Failure:** Bribe refused. Subsequent attempts require a higher value.
+                - **Critical Failure:** Bribe refused; target becomes **Hostile** or **Combative**.
           - es:
-              name: Soborno
-              description: |-
-                Whenever a Personaje wants to offer another Personaje money, goods, information, or services to get that Personaje to do what the Personaje wants, a Soborno check is called for. On a **Fallo Crítico**, not only is the Soborno refused, but the target becomes Hostile or even Combative. In all cases, there''s no way he''s going to accept the Soborno. A **Failure** result means that the Soborno is refused, and if the Personaje wants to try again he must raise the value of the Soborno being offered. Each subsequent Failure result adds to the size of the Soborno until the Personaje either rolls a Fallo Crítico (with effects as described above) or achieves some degree of success. An **Ordinario** success indicates that the Soborno is accepted, but the attitude of the target is unchanged—a Hostile guard will accept your money and let you pass, but if he sees you again he''ll still be Hostile. On a **Bueno** success, the Soborno is accepted, and the target''s attitude improves by one grade for 2d6 hours or until the Personaje does something to change the relationship. (Bought friendships only last until the money runs out and usually require a steady flow of cash or favors.) On an **Asombroso** result, the Soborno is accepted, and the target''s attitude improves by two grades for 4d6 hours or until the Personaje does something to change the relationship.
-        trained_only: false
-      gamble:
-        attribute: PER
-        cost: 4
-        url: /skills/deception#gamble
-        localized:
-          - en:
-              name: Gamble
-              description: |-
-                This specialty skill represents a character''s proficiency at various games of chance. With each purchase of the specialty skill, the player selects a different game (subject to the approval of the Gamemaster) for his character to be skilled in. With a successful gamble check, a character can estimate the odds, determine if a particular game has been rigged, count cards, spot a cheater or another skilled gambler, and increase his own odds of winning. A gambler can improve his odds of winning either by playing skillfully and honestly—or by cheating. If a character plays honestly, the winner in a gambling contest is the one who achieves the highest success level, with each tie representing an increase in the stakes. A gambler''s skill check is made with a **-2 bonus** if he is playing against an **untrained opponent** (someone who does not have the Deception broad skill), with **no modifier** if playing against a **trained opponent** (someone who has Deception and perhaps also gamble, but at the same or a lower rank), or with a **+2 penalty** if playing against a **trained opponent of a higher skill rank**. If a character decides to cheat, different modifiers apply: a **-3 bonus** if playing against an **untrained opponent**, a **+1 penalty** if playing against a **trained opponent**, and a **+3 penalty** if playing against a **trained opponent of a higher skill rank**. Payoffs are better, however, depending on the check result that ends the contest: On any **Critical Failure**, the character is caught cheating. On a **Marginal** success, he wins the pot; on an **Ordinary** success, he wins the pot plus a side bet equal to half of the pot; On a **Good**, he wins the pot plus a side bet of an equal amount;
-                **Amazing**, he wins the pot plus a side bet of twice that amount. As an option, you may use the "Character vs. Character" rules on page 63 to determine the outcome when characters gamble against one another. In this case, however, the size of the pot is agreed upon before any dice are rolled.
-          - es:
-              name: Juego
-              description: |-
-                This Especialidad represents a Personaje''s proficiency at various games of chance. With each purchase of the Especialidad, the player selects a different game (subject to the approval of the Gamemaster) for his Personaje to be skilled in. With a successful Juego check, a Personaje can estimate the odds, determine if a particular game has been rigged, count cards, spot a cheater or another skilled gambler, and increase his own odds of winning. A gambler can improve his odds of winning either by playing skillfully and honestly—or by cheating. If a Personaje plays honestly, the winner in a gambling contest is the one who achieves the highest success level, with each tie representing an increase in the stakes. A gambler''s skill check is made with a **-2 bonus** if he is playing against an **untrained opponent** (someone who does not have the Engaño broad skill), with **no modifier** if playing against a **trained opponent** (someone who has Engaño and perhaps also Juego, but at the same or a lower rank), or with a
-                **+2 penalty** if playing against a **trained opponent of a higher skill rank**. If a Personaje decides to cheat, different modifiers apply: a **-3 bonus** if playing against an **untrained opponent**, a **+1 penalty** if playing against a **trained opponent**, and a **+3 penalty** if playing against a **trained opponent of a higher skill rank**. Payoffs are better, however, depending on the check result that ends the contest: On any **Fallo Crítico**, the Personaje is caught cheating. On a
-                **Marginal** success, he wins the pot; on an **Ordinario** success, he wins the pot plus a side bet equal to half of the pot; On a **Bueno**, he wins the pot plus a side bet of an equal amount; **Asombroso**, he wins the pot plus a side bet of twice that amount. As an option, you may use the "Personaje vs. Personaje" rules on page 63 to determine the outcome when characters Juego against one another. In this case, however, the size of the pot is agreed upon before any dice are rolled.
+              name: Bribe
+              description: ''
         trained_only: false
     trained_only: false
   demolitions:

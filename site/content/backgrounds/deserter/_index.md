@@ -10,9 +10,9 @@ You are a ghost in the machine. You have the reflexes of a soldier but the soul 
 * None.
 
 ## Favored Specialty Skills:
-* [Survival-Survival Training] ({{< relref "/skills/survival/#survival-training" >}})
-* [Deception-Bluff] ({{< relref "/skills/deception/#bluff" >}})
-* [Covert Ops-Conceal] ({{< relref "/skills/covert-ops/#conceal" >}})
+- [Survival-Survival Training] ({{< relref "/skills/survival/#survival-training" >}})
+- [Deception-Bluff] ({{< relref "/skills/deception/#bluff" >}})
+- [Covert Ops-Conceal] ({{< relref "/skills/covert-ops/#conceal" >}})
 
 ## Favored Perks:
 * [Reflexes] ({{< relref "/perks_flaws/#reflexes" >}})
@@ -27,6 +27,6 @@ A military-grade weapon (with filed-off serial numbers), a rugged survival tent 
 **Safehouse Intuition:** You have a -1 step bonus to find makeshift shelter, black-market supplies, or sympathetic contacts in hostile territory.
 
 ## Tendencies (Pick 2):
-* **The Pragmatic Escape:** Abandon a cause when the risks become "unacceptable" to ensure your survival.
-* **The Hidden Hand:** Pass up fame or reward to ensure your identity remains undiscovered.
+- **The Pragmatic Escape:** Abandon a cause when the risks become "unacceptable" to ensure your survival.
+- **The Hidden Hand:** Pass up fame or reward to ensure your identity remains undiscovered.
 

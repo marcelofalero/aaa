@@ -747,26 +747,18 @@
                     "type": "Broad",
                     "items": [
                         {
-                            "skill": "Mentir",
+                            "skill": "Bluff",
                             "attribute": "PER",
-                            "url": "/es/skills/deception#mentir",
+                            "url": "/es/skills/deception#bluff",
                             "cost": 3,
                             "type": "Specialty",
                             "css_class": ""
                         },
                         {
-                            "skill": "Soborno",
+                            "skill": "Bribe",
                             "attribute": "PER",
-                            "url": "/es/skills/deception#soborno",
+                            "url": "/es/skills/deception#bribe",
                             "cost": 3,
-                            "type": "Specialty",
-                            "css_class": ""
-                        },
-                        {
-                            "skill": "Juego",
-                            "attribute": "PER",
-                            "url": "/es/skills/deception#juego",
-                            "cost": 4,
                             "type": "Specialty",
                             "css_class": ""
                         }

@@ -10,10 +10,10 @@ Trabajador de la frontera industrial acostumbrado a maquinaria pesada y entornos
 * Ninguna.
 
 ## Habilidades de Especialidad Favorecidas:
-* [Atletismo-Escalar] ({{< relref "/skills/athletics/#climb" >}})
-* [Ataque Sin Armas-Pelea] ({{< relref "/skills/melee-combat/#power-martial-arts" >}})
-* [Ciencia Técnica-Reparar] ({{< relref "/skills/technical-science/#repair" >}})
-* [Resistencia-Aguante] ({{< relref "/skills/stamina/#endurance" >}})
+- [Atletismo-Escalar] ({{< relref "/skills/athletics/#climb" >}})
+- [Ataque Sin Armas-Pelea] ({{< relref "/skills/melee-combat/#power-martial-arts" >}})
+- [Ciencia Técnica-Reparar] ({{< relref "/skills/technical-science/#repair" >}})
+- [Resistencia-Aguante] ({{< relref "/skills/stamina/#endurance" >}})
 
 ## Ventajas Favorecidas:
 * [Duro como un Clavo] ({{< relref "/perks_flaws/#tough-as-nails" >}})

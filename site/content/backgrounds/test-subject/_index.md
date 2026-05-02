@@ -10,10 +10,10 @@ Survivor of experimental laboratory procedures with unique physiological insight
 * None.
 
 ## Favored Specialty Skills:
-* [Resolve-Physical Resolve] ({{< relref "/skills/resolve/#physical-resolve" >}})
-* [Stamina-Endurance] ({{< relref "/skills/stamina/#endurance" >}})
-* [Awareness-Intuition] ({{< relref "/skills/awareness/#intuition" >}})
-* [Life Science-Medical Science] ({{< relref "/skills/life-science/#medical-science" >}})
+- [Resolve-Physical Resolve] ({{< relref "/skills/resolve/#physical-resolve" >}})
+- [Stamina-Endurance] ({{< relref "/skills/stamina/#endurance" >}})
+- [Awareness-Intuition] ({{< relref "/skills/awareness/#intuition" >}})
+- [Life Science-Medical Science] ({{< relref "/skills/life-science/#medical-science" >}})
 
 ## Favored Perks:
 * [Tough as Nails] ({{< relref "/perks_flaws/#tough-as-nails" >}})

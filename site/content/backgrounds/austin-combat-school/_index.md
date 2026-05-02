@@ -10,10 +10,10 @@ A graduate of a premier military academy known for producing disciplined and tac
 * [Tactics]({{< relref "/skills/tactics/" >}})
 
 ## Favored Specialty Skills:
-* [Leadership-Command] ({{< relref "/skills/leadership/#command" >}})
-* [Armor Operation] ({{< relref "/skills/armor-operation/" >}})
-* [Heavy Weapons-Direct Fire] ({{< relref "/skills/heavy-weapons/#direct-fire" >}})
-* [Resolve-Mental Resolve] ({{< relref "/skills/resolve/#mental-resolve" >}})
+- [Leadership-Command] ({{< relref "/skills/leadership/#command" >}})
+- [Armor Operation] ({{< relref "/skills/armor-operation/" >}})
+- [Heavy Weapons-Direct Fire] ({{< relref "/skills/heavy-weapons/#direct-fire" >}})
+- [Resolve-Mental Resolve] ({{< relref "/skills/resolve/#mental-resolve" >}})
 
 ## Favored Perks:
 * [Reputation] ({{< relref "/perks_flaws/#reputation" >}})

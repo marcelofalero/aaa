@@ -10,10 +10,10 @@ A survivalist combatant who has seen the grim realities of the battlefield.
 * [Survival]({{< relref "/skills/survival/" >}})
 
 ## Favored Specialty Skills:
-* [Modern Ranged Weapons] ({{< relref "/skills/modern-ranged-weapons/" >}})
-* [Melee Weapons] ({{< relref "/skills/melee-combat/" >}})
-* [Stamina- Endurance] ({{< relref "/skills/stamina/#endurance" >}})
-* [Interaction-Bargain] ({{< relref "/skills/interaction/#bargain" >}})
+- [Modern Ranged Weapons] ({{< relref "/skills/modern-ranged-weapons/" >}})
+- [Melee Weapons] ({{< relref "/skills/melee-combat/" >}})
+- [Stamina- Endurance] ({{< relref "/skills/stamina/#endurance" >}})
+- [Interaction-Bargain] ({{< relref "/skills/interaction/#bargain" >}})
 
 ## Favored Perks:
 * [Tough as Nails] ({{< relref "/perks_flaws/#tough-as-nails" >}})

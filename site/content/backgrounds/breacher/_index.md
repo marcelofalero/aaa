@@ -10,10 +10,10 @@ Specialist in bypassing physical barriers and initiating tactical entries.
 * None.
 
 ## Favored Specialty Skills:
-* [Security-Security Devices] ({{< relref "/skills/security/#security-devices" >}})
-* [Tactics-Infantry Tactics] ({{< relref "/skills/tactics/#infantry-tactics" >}})
-* [Modern Ranged Weapons] ({{< relref "/skills/modern-ranged-weapons/" >}})
-* [Athletics-Climb] ({{< relref "/skills/athletics/#climb" >}})
+- [Security-Security Devices] ({{< relref "/skills/security/#security-devices" >}})
+- [Tactics-Infantry Tactics] ({{< relref "/skills/tactics/#infantry-tactics" >}})
+- [Modern Ranged Weapons] ({{< relref "/skills/modern-ranged-weapons/" >}})
+- [Athletics-Climb] ({{< relref "/skills/athletics/#climb" >}})
 
 ## Favored Perks:
 * [Tough as Nails] ({{< relref "/perks_flaws/#tough-as-nails" >}})

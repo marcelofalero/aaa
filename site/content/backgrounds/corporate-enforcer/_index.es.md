@@ -10,10 +10,10 @@ Músculo para megacorporaciones, especializado en protección de activos y resol
 * Ninguna.
 
 ## Habilidades de Especialidad Favorecidas:
-* [Seguridad-Protocolos de Protección] ({{< relref "/skills/security/#protection-protocols" >}})
-* [Derecho-Procedimientos de Aplicación de la Ley] ({{< relref "/skills/law/#law-enforcement-procedures" >}})
-* [Interacción-Intimidar] ({{< relref "/skills/interaction/#intimidate" >}})
-* [Armas a Distancia Modernas- Pistola] ({{< relref "/skills/modern-ranged-weapons/#pistol" >}})
+- [Seguridad-Protocolos de Protección] ({{< relref "/skills/security/#protection-protocols" >}})
+- [Derecho-Procedimientos de Aplicación de la Ley] ({{< relref "/skills/law/#law-enforcement-procedures" >}})
+- [Interacción-Intimidar] ({{< relref "/skills/interaction/#intimidate" >}})
+- [Armas a Distancia Modernas- Pistola] ({{< relref "/skills/modern-ranged-weapons/#pistol" >}})
 
 ## Ventajas Favorecidas:
 * [Reputación] ({{< relref "/perks_flaws/#reputation" >}})

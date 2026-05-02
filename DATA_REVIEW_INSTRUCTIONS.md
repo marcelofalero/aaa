@@ -38,5 +38,14 @@ As entries are reviewed, the following files serve as a comparison log:
 - **Computer Science:** COMPLETED (English reviewed/fixed).
 - **Covert Ops:** COMPLETED (English reviewed/fixed).
 - **Creativity:** COMPLETED (English reviewed/fixed).
-- **Next Up:** Deception (Broad Skill).
+- **Deception:** COMPLETED (English reviewed/fixed).
+- **Demolitions:** DRAFTED (Pending Review).
+- **Entertainment:** DRAFTED (Pending Review).
+- **Heavy Weapons:** DRAFTED (Pending Review).
+- **Interaction:** DRAFTED (Pending Review).
+- **Investigate:** DRAFTED (Pending Review).
+- **Knowledge:** DRAFTED (Pending Review).
+- **Law:** DRAFTED (Pending Review).
+- **Leadership:** DRAFTED (Pending Review).
+- **Next Up:** Life Science (Broad Skill).
 .

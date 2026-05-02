@@ -10,10 +10,10 @@ Deep-cover operative specialized in non-combat subversion and infiltration.
 * None.
 
 ## Favored Specialty Skills:
-* [Stealth-Sneak] ({{< relref "/skills/covert-ops/#sneak" >}})
-* [Covert Ops-Conceal] ({{< relref "/skills/covert-ops/#conceal" >}})
-* [Deception-Bluff] ({{< relref "/skills/deception/#bluff" >}})
-* [Security- Security Devices] ({{< relref "/skills/security/#security-devices" >}})
+- [Stealth-Sneak] ({{< relref "/skills/covert-ops/#sneak" >}})
+- [Covert Ops-Conceal] ({{< relref "/skills/covert-ops/#conceal" >}})
+- [Deception-Bluff] ({{< relref "/skills/deception/#bluff" >}})
+- [Security- Security Devices] ({{< relref "/skills/security/#security-devices" >}})
 
 ## Favored Perks:
 * [Reflexes] ({{< relref "/perks_flaws/#reflexes" >}})

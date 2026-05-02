@@ -10,10 +10,10 @@ No te entrenaste en una academia prestigiosa ni luchaste bajo una bandera planet
 * Ninguna.
 
 ## Habilidades de Especialidad Favorecidas:
-* [Liderazgo-Mando] ({{< relref "/skills/leadership/#command" >}})
-* [Tácticas-Tácticas de Infantería] ({{< relref "/skills/tactics/#infantry-tactics" >}})
-* [Negocios-Pequeños Negocios] ({{< relref "/skills/business/#small-business" >}})
-* [Armas de Fuego Modernas-Rifle de Asalto] ({{< relref "/skills/modern-ranged-weapons/#rifle" >}})
+- [Liderazgo-Mando] ({{< relref "/skills/leadership/#command" >}})
+- [Tácticas-Tácticas de Infantería] ({{< relref "/skills/tactics/#infantry-tactics" >}})
+- [Negocios-Pequeños Negocios] ({{< relref "/skills/business/#small-business" >}})
+- [Armas de Fuego Modernas-Rifle de Asalto] ({{< relref "/skills/modern-ranged-weapons/#rifle" >}})
 
 ## Ventajas Favorecidas:
 * [Reputación] ({{< relref "/perks_flaws/#reputation" >}})
@@ -28,6 +28,6 @@ Un traje de armadura táctica personalizado y no estándar, un rifle de asalto f
 **Guerra Asimétrica:** Recibes una bonificación de -1 paso a las tiradas de [Tácticas-Tácticas de Infantería] ({{< relref "/skills/tactics/#infantry-tactics" >}}) o [Supervivencia-Entrenamiento de Supervivencia] ({{< relref "/skills/survival/#survival-training" >}}) al ejecutar una emboscada, librar una campaña de guerrilla u operar completamente aislado de las líneas de suministro oficiales.
 
 ## Tendencias (Elige 2):
-* **El Mercenario:** Exige renegociación, pago por riesgo o una clara ventaja táctica antes de comprometerse en un peligroso tiroteo que no estaba en el plan original.
-* **El Pragmatista:** Ignora las reglas de enfrentamiento tradicionales o la doctrina "honorable" en favor de trampas, sabotajes o una fuerza desproporcionada abrumadora.
+- **El Mercenario:** Exige renegociación, pago por riesgo o una clara ventaja táctica antes de comprometerse en un peligroso tiroteo que no estaba en el plan original.
+- **El Pragmatista:** Ignora las reglas de enfrentamiento tradicionales o la doctrina "honorable" en favor de trampas, sabotajes o una fuerza desproporcionada abrumadora.
 

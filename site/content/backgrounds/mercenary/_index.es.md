@@ -10,10 +10,10 @@ Un combatiente de supervivencia que ha visto las sombrías realidades del campo 
 * [Survival]({{< relref "/skills/survival/" >}})
 
 ## Habilidades de Especialidad Favorecidas:
-* [Armas a Distancia Modernas] ({{< relref "/skills/modern-ranged-weapons/" >}})
-* [Armas Cuerpo a Cuerpo] ({{< relref "/skills/melee-combat/" >}})
-* [Resistencia- Aguante] ({{< relref "/skills/stamina/#endurance" >}})
-* [Interacción-Negociar] ({{< relref "/skills/interaction/#bargain" >}})
+- [Armas a Distancia Modernas] ({{< relref "/skills/modern-ranged-weapons/" >}})
+- [Armas Cuerpo a Cuerpo] ({{< relref "/skills/melee-combat/" >}})
+- [Resistencia- Aguante] ({{< relref "/skills/stamina/#endurance" >}})
+- [Interacción-Negociar] ({{< relref "/skills/interaction/#bargain" >}})
 
 ## Ventajas Favorecidas:
 * [Duro como un Clavo] ({{< relref "/perks_flaws/#tough-as-nails" >}})

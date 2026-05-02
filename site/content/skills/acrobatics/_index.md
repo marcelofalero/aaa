@@ -25,8 +25,9 @@ This specialty skill represents a character's mastery of complex maneuvers durin
 - **Good:** Increased control; can perform evasive maneuvers. (He can use the dodge skill)
 - **Amazing:** Perfect control; can perform complex aerial or orbital acrobatics.
 ### Rank Progression
-⊗ **Rank 4 (Stealthy Descent):** When using a jump-pack or GADS, the character can descend with minimal noise, receiving a **-2 step bonus** to Stealth checks.
-⊗ **Rank 6 (Endurance Flight):** The character can fly for extended periods, receiving a **-2 step bonus** to Stamina checks for long-distance travel with with natural means or **-2 step bonus** to Armor Operation-Propulsion Systems with armor mounted propulsion.
+▶ **Rank 4 (Stealthy Descent):** When using a jump-pack or GADS, the character can descend with minimal noise, receiving a **-2 step bonus** to Stealth checks.
+
+▶ **Rank 6 (Endurance Flight):** The character can fly for extended periods, receiving a **-2 step bonus** to Stamina checks for long-distance travel with with natural means or **-2 step bonus** to Armor Operation-Propulsion Systems with armor mounted propulsion.
 
 ---
 
@@ -34,12 +35,14 @@ This specialty skill represents a character's mastery of complex maneuvers durin
 {{< specialty attr="DEX" untrained="yes" cost="3" >}}
 
 This specialty skill enables a character to perform high-risk activities such as skydiving, scuba diving, hang gliding, surfing, bungee jumping, and whitewater rafting.
+
 **Results**
-On a Critical Failure, the attempted action fails and the character could suffer stun or wound damage at the Gamemaster's discretion. This outcome generally involves bad luck concerning some aspect of the equipment being used—scuba diving gear springs a leak, a parachute fails to open properly, and so forth.
-On a Failure, the attempted action doesn't succeed, but the character does not necessarily suffer damage—a parachutist goes drastically off course and lands a long distance from his target, perhaps taking damage as well.
-On an Ordinary, the character is basically able to perform the action—he can manipulate a hang glider so that he stays aloft, but he has no control over his direction of travel.
-On a Good, the character has limited control of the action—he opens his parachute at just the right time, and also is able to use it to maneuver so that he lands only a short distance from his target.
-On an Amazing, everything goes right—he rides the raft all the way through the rapids without damage to himself or his equipment.
+
+- On a **Critical Failure**, the attempted action fails and the character could suffer stun or wound damage at the Gamemaster's discretion. This outcome generally involves bad luck concerning some aspect of the equipment being used—scuba diving gear springs a leak, a parachute fails to open properly, and so forth.
+- On a **Failure**, the attempted action doesn't succeed, but the character does not necessarily suffer damage—a parachutist goes drastically off course and lands a long distance from his target, perhaps taking damage as well.
+- On an **Ordinary**, the character is basically able to perform the action—he can manipulate a hang glider so that he stays aloft, but he has no control over his direction of travel.
+- On a **Good**, the character has limited control of the action—he opens his parachute at just the right time, and also is able to use it to maneuver so that he lands only a short distance from his target.
+- On an **Amazing**, everything goes right—he rides the raft all the way through the rapids without damage to himself or his equipment.
 
 ---
 
@@ -78,10 +81,15 @@ This specialty skill allows a character to improve his ability to survive a fall
 {{< specialty attr="DEX" untrained="no" cost="3" >}}
 
 A character with the zero-g training skill can function in weightless or near-weightless conditions better than someone who doesn''t have this skill. An untrained character has a +3 step penalty in zero gravity and a +1 step penalty in light gravity. Purchasing this skill immediately reduces the zero-g penalty to +2 steps and eliminates the penalty for light gravity.
+
 **Rank Progression**
-⊗ **Rank 4:** Zero-g penalty is reduced to +1 step, and light gravity actions receive a -1 step bonus.
-⊗ **Rank 7:** Zero-g penalty is eliminated.
-⊗ **Rank 10:** Physical actions in zero-g receive a -1 step bonus. (Light gravity bonus never improves beyond -1 step.)
+
+▶ **Rank 4:** Zero-g penalty is reduced to +1 step, and light gravity actions receive a -1 step bonus.
+
+▶ **Rank 7:** Zero-g penalty is eliminated.
+
+▶ **Rank 10:** Physical actions in zero-g receive a -1 step bonus. (Light gravity bonus never improves beyond -1 step.)
+
 **Sesheyan Advantage** Sesheyan characters without the zero-g training skill function as though they have it at rank 1. If a sesheyan purchases this skill, penalties are reduced by 1 step and bonuses are improved by the same amount (max bonus -2 in light gravity).
 
 ---

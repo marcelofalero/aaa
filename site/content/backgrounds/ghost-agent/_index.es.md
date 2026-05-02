@@ -10,10 +10,10 @@ Operativo de cobertura profunda especializado en subversión e infiltración no 
 * Ninguna.
 
 ## Habilidades de Especialidad Favorecidas:
-* [Sigilo-Esconderse] ({{< relref "/skills/covert-ops/#sneak" >}})
-* [Operaciones Encubiertas-Ocultar] ({{< relref "/skills/covert-ops/#conceal" >}})
-* [Engaño-Engañar] ({{< relref "/skills/deception/#bluff" >}})
-* [Seguridad- Dispositivos de Seguridad] ({{< relref "/skills/security/#security-devices" >}})
+- [Sigilo-Esconderse] ({{< relref "/skills/covert-ops/#sneak" >}})
+- [Operaciones Encubiertas-Ocultar] ({{< relref "/skills/covert-ops/#conceal" >}})
+- [Engaño-Engañar] ({{< relref "/skills/deception/#bluff" >}})
+- [Seguridad- Dispositivos de Seguridad] ({{< relref "/skills/security/#security-devices" >}})
 
 ## Ventajas Favorecidas:
 * [Reflejos] ({{< relref "/perks_flaws/#reflexes" >}})

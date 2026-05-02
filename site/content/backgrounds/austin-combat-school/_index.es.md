@@ -10,10 +10,10 @@ Un graduado de una academia militar de élite conocida por producir soldados dis
 * [Tactics]({{< relref "/skills/tactics/" >}})
 
 ## Habilidades de Especialidad Favorecidas:
-* [Liderazgo-Mando] ({{< relref "/skills/leadership/#command" >}})
-* [Operación de Armadura] ({{< relref "/skills/armor-operation/" >}})
-* [Armas Pesadas-Fuego Directo] ({{< relref "/skills/heavy-weapons/#direct-fire" >}})
-* [Voluntad-Voluntad Mental] ({{< relref "/skills/resolve/#mental-resolve" >}})
+- [Liderazgo-Mando] ({{< relref "/skills/leadership/#command" >}})
+- [Operación de Armadura] ({{< relref "/skills/armor-operation/" >}})
+- [Armas Pesadas-Fuego Directo] ({{< relref "/skills/heavy-weapons/#direct-fire" >}})
+- [Voluntad-Voluntad Mental] ({{< relref "/skills/resolve/#mental-resolve" >}})
 
 ## Ventajas Favorecidas:
 * [Reputación] ({{< relref "/perks_flaws/#reputation" >}})

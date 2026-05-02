@@ -10,11 +10,11 @@ You come from a place where technology is magic and survival is the only law.
 * None.
 
 ## Favored Specialty Skills:
-* [Survival-Survival Training] ({{< relref "/skills/survival/#survival-training" >}})
-* [Athletics-Climb] ({{< relref "/skills/athletics/#climb" >}})
-* [Athletics- Throw] ({{< relref "/skills/athletics/#throw" >}})
-* [Awareness-Perception] ({{< relref "/skills/awareness/#perception" >}})
-* [Covert Ops-Stealth] ({{< relref "/skills/covert-ops/#stealth" >}})
+- [Survival-Survival Training] ({{< relref "/skills/survival/#survival-training" >}})
+- [Athletics-Climb] ({{< relref "/skills/athletics/#climb" >}})
+- [Athletics- Throw] ({{< relref "/skills/athletics/#throw" >}})
+- [Awareness-Perception] ({{< relref "/skills/awareness/#perception" >}})
+- [Covert Ops-Stealth] ({{< relref "/skills/covert-ops/#stealth" >}})
 
 ## Favored Perks:
 * None.
@@ -29,6 +29,6 @@ A sturdy archaic weapon (like a spear, bow, or heavy blade), a survival knife, t
 None. (Your survival is bought with a wide array of raw, physical skills).
 
 ## Tendencies (Pick 2):
-* **The Traditionalist:** Solve a modern problem using an ancient, low-tech, or ritualistic method.
-* **The Loner:** Take a disadvantage to handle a task entirely on your own, refusing the help of "soft" technology or teammates.
+- **The Traditionalist:** Solve a modern problem using an ancient, low-tech, or ritualistic method.
+- **The Loner:** Take a disadvantage to handle a task entirely on your own, refusing the help of "soft" technology or teammates.
 

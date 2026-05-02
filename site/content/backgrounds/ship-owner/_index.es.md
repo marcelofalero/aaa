@@ -10,10 +10,10 @@ Tienes las llaves del activo más valioso de la galaxia: una nave estelar. Sin e
 * Ninguna.
 
 ## Habilidades de Especialidad Favorecidas:
-* [Operación de Vehículos-Vehículo Espacial] ({{< relref "/skills/vehicle-operation/#space-vehicle" >}})
-* [Negocios-Pequeños Negocios] ({{< relref "/skills/business/#small-business" >}})
-* [Liderazgo-Mando] ({{< relref "/skills/leadership/#command" >}})
-* [Administración-Gestión] ({{< relref "/skills/administration/#management" >}})
+- [Operación de Vehículos-Vehículo Espacial] ({{< relref "/skills/vehicle-operation/#space-vehicle" >}})
+- [Negocios-Pequeños Negocios] ({{< relref "/skills/business/#small-business" >}})
+- [Liderazgo-Mando] ({{< relref "/skills/leadership/#command" >}})
+- [Administración-Gestión] ({{< relref "/skills/administration/#management" >}})
 
 ## Ventajas Favorecidas:
 * Ninguna.
@@ -28,6 +28,6 @@ Un abrigo de capitán, una llave inglesa pesada o multiherramienta, y una baliza
 **Capitán y Comandante:** Comienzas el juego en posesión de una nave estelar capaz de viajes interestelares y de acomodar a todo el grupo.
 
 ## Tendencias (Elige 2):
-* **El Resultado Final:** Toma una decisión táctica o narrativa estrictamente basada en la ganancia financiera o la preservación física de tu nave, ignorando súplicas morales o riesgos personales.
-* **Mi Nave, Mis Reglas:** Afirma tu autoridad absoluta sobre una situación o pasajero a bordo de tu nave, incluso cuando ceder ante un aliado o experto sería significativamente más seguro.
+- **El Resultado Final:** Toma una decisión táctica o narrativa estrictamente basada en la ganancia financiera o la preservación física de tu nave, ignorando súplicas morales o riesgos personales.
+- **Mi Nave, Mis Reglas:** Afirma tu autoridad absoluta sobre una situación o pasajero a bordo de tu nave, incluso cuando ceder ante un aliado o experto sería significativamente más seguro.
 

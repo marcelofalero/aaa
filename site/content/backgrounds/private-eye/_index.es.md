@@ -10,10 +10,10 @@ Investigador urbano curtido que descubre verdades ocultas en rincones oscuros.
 * Ninguna.
 
 ## Habilidades de Especialidad Favorecidas:
-* [Investigar-Buscar] ({{< relref "/skills/investigate/#search" >}})
-* [Conciencia-Percepción] ({{< relref "/skills/awareness/#perception" >}})
-* [Pillería-Conocimiento Callejero] ({{< relref "/skills/street-smart/#street-knowledge" >}})
-* [Interacción- Entrevistar] ({{< relref "/skills/interaction/#interview" >}})
+- [Investigar-Buscar] ({{< relref "/skills/investigate/#search" >}})
+- [Conciencia-Percepción] ({{< relref "/skills/awareness/#perception" >}})
+- [Pillería-Conocimiento Callejero] ({{< relref "/skills/street-smart/#street-knowledge" >}})
+- [Interacción- Entrevistar] ({{< relref "/skills/interaction/#interview" >}})
 
 ## Ventajas Favorecidas:
 * [Observador] ({{< relref "/perks_flaws/#observant" >}})

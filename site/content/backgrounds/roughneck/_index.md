@@ -10,10 +10,10 @@ Industrial frontier worker accustomed to heavy machinery and harsh environments.
 * None.
 
 ## Favored Specialty Skills:
-* [Athletics-Climb] ({{< relref "/skills/athletics/#climb" >}})
-* [Unarmed Attack-Brawl] ({{< relref "/skills/melee-combat/#power-martial-arts" >}})
-* [Technical Science-Repair] ({{< relref "/skills/technical-science/#repair" >}})
-* [Stamina- Endurance] ({{< relref "/skills/stamina/#endurance" >}})
+- [Athletics-Climb] ({{< relref "/skills/athletics/#climb" >}})
+- [Unarmed Attack-Brawl] ({{< relref "/skills/melee-combat/#power-martial-arts" >}})
+- [Technical Science-Repair] ({{< relref "/skills/technical-science/#repair" >}})
+- [Stamina- Endurance] ({{< relref "/skills/stamina/#endurance" >}})
 
 ## Favored Perks:
 * [Tough as Nails] ({{< relref "/perks_flaws/#tough-as-nails" >}})

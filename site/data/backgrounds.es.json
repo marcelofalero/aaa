@@ -26,12 +26,12 @@
                         "favored_broad_skill": "",
                         "url": "/es/backgrounds/academy-graduate/",
                         "skill_url": "/es/backgrounds/academy-graduate/",
-                        "favored_specialty_skills": "[Liderazgo-Mando] ({{< relref \"/skills/leadership/#command\" >}}) <br> [Tácticas-Tácticas de Infantería] ({{< relref \"/skills/tactics/#infantry-tactics\" >}}) <br> [Administración-Gestión] ({{< relref \"/skills/administration/#management\" >}}) <br> [Cultura-Etiqueta] ({{< relref \"/skills/culture/#etiquette-specific\" >}})",
+                        "favored_specialty_skills": "- [Liderazgo-Mando] ({{< relref \"/skills/leadership/#command\" >}})\n- [Tácticas-Tácticas de Infantería] ({{< relref \"/skills/tactics/#infantry-tactics\" >}})\n- [Administración-Gestión] ({{< relref \"/skills/administration/#management\" >}})\n- [Cultura-Etiqueta] ({{< relref \"/skills/culture/#etiquette-specific\" >}})",
                         "favored_perks": "[Reputación] ({{< relref \"/perks_flaws/#reputation\" >}})",
                         "flaw": "[Código de Honor] ({{< relref \"/perks_flaws/#code-of-honor\" >}})",
                         "equipment": "Un uniforme de gala impecable, un arma de fuego de oficial estándar, un proyector de holomapa táctico y una credencial de autorización de bajo nivel.",
                         "special_ability": "**Evaluación Táctica:** Tienes una bonificación de -1 paso a las tiradas de [Conciencia-Percepción] ({{< relref \"/skills/awareness/#perception\" >}}) o [Tácticas-Tácticas de Infantería] ({{< relref \"/skills/tactics/#infantry-tactics\" >}}) realizadas específicamente para evaluar la formación de combate de un oponente, sus debilidades defensivas o la calidad de su equipo antes de que comience un enfrentamiento.",
-                        "tendencies": "**El Oficial al Mando:** Afirma tu rango o autoridad para tomar el control de una situación caótica, incluso cuando hacerlo te convierte en el objetivo principal de enemigos o del escrutinio Social.<br>**El Estratega:** Se niega a desviarse de un plan táctico sofisticado o \"correcto\" incluso cuando una solución más simple y \"ruda\" está disponible, priorizando la doctrina que le enseñaron."
+                        "tendencies": "- **El Oficial al Mando:** Afirma tu rango o autoridad para tomar el control de una situación caótica, incluso cuando hacerlo te convierte en el objetivo principal de enemigos o del escrutinio Social.\n- **El Estratega:** Se niega a desviarse de un plan táctico sofisticado o \"correcto\" incluso cuando una solución más simple y \"ruda\" está disponible, priorizando la doctrina que le enseñaron."
                     },
                     {
                         "name": "Graduado de la Escuela de Combate Austin",
@@ -39,7 +39,7 @@
                         "favored_broad_skill": "[Tactics]({{< relref \"/skills/tactics/\" >}})",
                         "url": "/es/backgrounds/austin-combat-school/",
                         "skill_url": "/es/backgrounds/austin-combat-school/",
-                        "favored_specialty_skills": "[Liderazgo-Mando] ({{< relref \"/skills/leadership/#command\" >}}) <br> [Operación de Armadura] ({{< relref \"/skills/armor-operation/\" >}}) <br> [Armas Pesadas-Fuego Directo] ({{< relref \"/skills/heavy-weapons/#direct-fire\" >}}) <br> [Voluntad-Voluntad Mental] ({{< relref \"/skills/resolve/#mental-resolve\" >}})",
+                        "favored_specialty_skills": "- [Liderazgo-Mando] ({{< relref \"/skills/leadership/#command\" >}})\n- [Operación de Armadura] ({{< relref \"/skills/armor-operation/\" >}})\n- [Armas Pesadas-Fuego Directo] ({{< relref \"/skills/heavy-weapons/#direct-fire\" >}})\n- [Voluntad-Voluntad Mental] ({{< relref \"/skills/resolve/#mental-resolve\" >}})",
                         "favored_perks": "[Reputación] ({{< relref \"/perks_flaws/#reputation\" >}})",
                         "flaw": "[Código de Honor] ({{< relref \"/perks_flaws/#code-of-honor\" >}})",
                         "equipment": "Un uniforme de gala, un anillo de graduación o medalla.",
@@ -52,12 +52,12 @@
                         "favored_broad_skill": "",
                         "url": "/es/backgrounds/bounty-hunter/",
                         "skill_url": "/es/backgrounds/bounty-hunter/",
-                        "favored_specialty_skills": "[Investigar-Rastrear] ({{< relref \"/skills/investigate/#track\" >}}) <br> [Ley- Procedimientos de Aplicación de la Ley] ({{< relref \"/skills/law/#law-enforcement-procedures\" >}}) <br> [Conciencia- Percepción] ({{< relref \"/skills/awareness/#perception\" >}}) <br> [Pillería-Conocimiento Callejero] ({{< relref \"/skills/street-smart/#street-knowledge\" >}})",
+                        "favored_specialty_skills": "- [Investigar-Rastrear] ({{< relref \"/skills/investigate/#track\" >}})\n- [Ley- Procedimientos de Aplicación de la Ley] ({{< relref \"/skills/law/#law-enforcement-procedures\" >}})\n- [Conciencia- Percepción] ({{< relref \"/skills/awareness/#perception\" >}})\n- [Pillería-Conocimiento Callejero] ({{< relref \"/skills/street-smart/#street-knowledge\" >}})",
                         "favored_perks": "[Observador] ({{< relref \"/perks_flaws/#observant\" >}})",
                         "flaw": "[Enemigo Poderoso] ({{< relref \"/perks_flaws/#powerful-enemy\" >}}) (Alguien a quien atrapaste, o alguien a quien estás cazando actualmente y tiene la ventaja).",
                         "equipment": "Un abrigo blindado, dos juegos de ataduras de alta resistencia, un localizador/escáner de rastreo y una pistola pesada o porra aturdidora.",
                         "special_ability": "**Rastreador de Fugitivos:** Tienes una bonificación de\n-1 paso a las tiradas de [Investigar-Buscar] ({{< relref \"/skills/investigate/#search\" >}}) al buscar información sobre la ubicación actual o el historial reciente de un individuo específico.",
-                        "tendencies": "**El Obsesivo:** Persigue un objetivo o una pista en una situación claramente peligrosa o desventajosa en lugar de elegir un camino más seguro y lento.<br>**El Profesional:** Honra la letra específica de un contrato incluso cuando se le ofrece un \"trato secundario\" más rentable o una salida moral más fácil."
+                        "tendencies": "- **El Obsesivo:** Persigue un objetivo o una pista en una situación claramente peligrosa o desventajosa en lugar de elegir un camino más seguro y lento.\n- **El Profesional:** Honra la letra específica de un contrato incluso cuando se le ofrece un \"trato secundario\" más rentable o una salida moral más fácil."
                     },
                     {
                         "name": "El Especialista en Brechas",
@@ -65,7 +65,7 @@
                         "favored_broad_skill": "",
                         "url": "/es/backgrounds/breacher/",
                         "skill_url": "/es/backgrounds/breacher/",
-                        "favored_specialty_skills": "[Seguridad-Dispositivos de Seguridad] ({{< relref \"/skills/security/#security-devices\" >}}) <br> [Táctica-Táctica de Infantería] ({{< relref \"/skills/tactics/#infantry-tactics\" >}}) <br> [Armas a Distancia Modernas] ({{< relref \"/skills/modern-ranged-weapons/\" >}}) <br> [Atletismo-Escalar] ({{< relref \"/skills/athletics/#climb\" >}})",
+                        "favored_specialty_skills": "- [Seguridad-Dispositivos de Seguridad] ({{< relref \"/skills/security/#security-devices\" >}})\n- [Táctica-Táctica de Infantería] ({{< relref \"/skills/tactics/#infantry-tactics\" >}})\n- [Armas a Distancia Modernas] ({{< relref \"/skills/modern-ranged-weapons/\" >}})\n- [Atletismo-Escalar] ({{< relref \"/skills/athletics/#climb\" >}})",
                         "favored_perks": "[Duro como un Clavo] ({{< relref \"/perks_flaws/#tough-as-nails\" >}})",
                         "flaw": "[Vieja Herida] ({{< relref \"/perks_flaws/#old-injury\" >}})",
                         "equipment": "Kit de entrada, carga de brecha, escopeta táctica.",
@@ -78,12 +78,12 @@
                         "favored_broad_skill": "",
                         "url": "/es/backgrounds/certified-psychic/",
                         "skill_url": "/es/backgrounds/certified-psychic/",
-                        "favored_specialty_skills": "[Telepatía-Lectura Mental] ({{< relref \"/psionics/telepathy/#mind-reading\" >}}) <br> [Ley-Procedimientos Judiciales] ({{< relref \"/skills/law/#court-procedures\" >}}) <br> [Interacción-Entrevista] ({{< relref \"/skills/interaction/#interview\" >}}) <br> [Resolución-Resolución Mental] ({{< relref \"/skills/resolve/#mental-resolve\" >}})",
+                        "favored_specialty_skills": "- [Telepatía-Lectura Mental] ({{< relref \"/psionics/telepathy/#mind-reading\" >}})\n- [Ley-Procedimientos Judiciales] ({{< relref \"/skills/law/#court-procedures\" >}})\n- [Interacción-Entrevista] ({{< relref \"/skills/interaction/#interview\" >}})\n- [Resolución-Resolución Mental] ({{< relref \"/skills/resolve/#mental-resolve\" >}})",
                         "favored_perks": "[Reputación] ({{< relref \"/perks_flaws/#reputation\" >}})",
                         "flaw": "[Código de Honor] ({{< relref \"/perks_flaws/#code-of-honor\" >}}) (Neutralidad absoluta y adhesión a las estrictas pautas éticas de tu certificación autónoma).",
                         "equipment": "Una insignia/orden de árbitro oficial, un dispositivo de grabación portátil, vestimenta profesional formal y sedantes/estimulantes suaves para la tensión psíquica.",
                         "special_ability": "**Árbitro Autónomo:** Tu verificación psiónica es legalmente vinculante. Recibes una bonificación de -1 paso a las tiradas de [Interacción] ({{< relref \"/skills/interaction/\" >}}) o [Ley] ({{< relref \"/skills/law/\" >}}) al actuar como tercero neutral en negociaciones o al hacer valer tu derecho legal a verificar la veracidad de una declaración en el campo.",
-                        "tendencies": "**La Verdad Absoluta:** Fuerza una verdad dura o peligrosa a la luz para mantener tu neutralidad absoluta, incluso cuando una mentira educada o un engaño habrían facilitado las cosas para la parte.<br>**El Juez No Deseado:** Complica una situación actuando sobre un crimen o un secreto oscuro que obtuviste de la mente de alguien, usando tu autoridad autónoma para intervenir cuando no era tu lucha."
+                        "tendencies": "- **La Verdad Absoluta:** Fuerza una verdad dura o peligrosa a la luz para mantener tu neutralidad absoluta, incluso cuando una mentira educada o un engaño habrían facilitado las cosas para la parte.\n- **El Juez No Deseado:** Complica una situación actuando sobre un crimen o un secreto oscuro que obtuviste de la mente de alguien, usando tu autoridad autónoma para intervenir cuando no era tu lucha."
                     },
                     {
                         "name": "El Ejecutor Corporativo",
@@ -91,7 +91,7 @@
                         "favored_broad_skill": "",
                         "url": "/es/backgrounds/corporate-enforcer/",
                         "skill_url": "/es/backgrounds/corporate-enforcer/",
-                        "favored_specialty_skills": "[Seguridad-Protocolos de Protección] ({{< relref \"/skills/security/#protection-protocols\" >}}) <br> [Derecho-Procedimientos de Aplicación de la Ley] ({{< relref \"/skills/law/#law-enforcement-procedures\" >}}) <br> [Interacción-Intimidar] ({{< relref \"/skills/interaction/#intimidate\" >}}) <br> [Armas a Distancia Modernas- Pistola] ({{< relref \"/skills/modern-ranged-weapons/#pistol\" >}})",
+                        "favored_specialty_skills": "- [Seguridad-Protocolos de Protección] ({{< relref \"/skills/security/#protection-protocols\" >}})\n- [Derecho-Procedimientos de Aplicación de la Ley] ({{< relref \"/skills/law/#law-enforcement-procedures\" >}})\n- [Interacción-Intimidar] ({{< relref \"/skills/interaction/#intimidate\" >}})\n- [Armas a Distancia Modernas- Pistola] ({{< relref \"/skills/modern-ranged-weapons/#pistol\" >}})",
                         "favored_perks": "[Reputación] ({{< relref \"/perks_flaws/#reputation\" >}})",
                         "flaw": "[Enemigo Poderoso] ({{< relref \"/perks_flaws/#powerful-enemy\" >}})",
                         "equipment": "Traje de negocios blindado, arma de mano de alto calibre.",
@@ -104,12 +104,12 @@
                         "favored_broad_skill": "[Street Smart] ({{< relref \"/skills/street-smart/\" >}})",
                         "url": "/es/backgrounds/criminal-urchin/",
                         "skill_url": "/es/backgrounds/criminal-urchin/",
-                        "favored_specialty_skills": "[Pillería-Conocimiento Callejero] ({{< relref \"/skills/street-smart/#street-knowledge\" >}}) <br> [Operaciones Encubiertas- Carterista] ({{< relref \"/skills/covert-ops/#pickpocket\" >}}) <br> [Operaciones Encubiertas-Sigilo] ({{< relref \"/skills/covert-ops/#stealth\" >}}) <br> [Engaño- Soborno] ({{< relref \"/skills/deception/#bribe\" >}}) <br> [Seguridad-Dispositivos de Seguridad] ({{< relref \"/skills/security/#security-devices\" >}})",
+                        "favored_specialty_skills": "- [Pillería-Conocimiento Callejero] ({{< relref \"/skills/street-smart/#street-knowledge\" >}})\n- [Operaciones Encubiertas- Carterista] ({{< relref \"/skills/covert-ops/#pickpocket\" >}})\n- [Operaciones Encubiertas-Sigilo] ({{< relref \"/skills/covert-ops/#stealth\" >}})\n- [Engaño- Soborno] ({{< relref \"/skills/deception/#bribe\" >}})\n- [Seguridad-Dispositivos de Seguridad] ({{< relref \"/skills/security/#security-devices\" >}})",
                         "favored_perks": "Ninguna.",
                         "flaw": "[Infamia]({{< relref \"/perks_flaws/#infamy\" >}})",
                         "equipment": "Un kit de entrada físico o electrónico muy usado, un comunicador desechable, una identificación de bajo nivel falsificada y un arma de fabricación callejera fiable (como una navaja o una pistola de bolsillo).",
                         "special_ability": "Ninguna. (Tus instintos de supervivencia brutos se reflejan mecánicamente al recibir una habilidad amplia gratuita para representar tu formación fundamental en la calle).",
-                        "tendencies": "**El Oportunista:** Asume un riesgo innecesario para asegurar un beneficio personal o una \"ventaja\".<br>**El Paranoico:** Compromete un plan para asegurar una ruta de escape clara."
+                        "tendencies": "- **El Oportunista:** Asume un riesgo innecesario para asegurar un beneficio personal o una \"ventaja\".\n- **El Paranoico:** Compromete un plan para asegurar una ruta de escape clara."
                     },
                     {
                         "name": "El Desertor",
@@ -117,12 +117,12 @@
                         "favored_broad_skill": "",
                         "url": "/es/backgrounds/deserter/",
                         "skill_url": "/es/backgrounds/deserter/",
-                        "favored_specialty_skills": "[Supervivencia-Supervivencia en el Desierto] ({{< relref \"/skills/survival/#wilderness-survival\" >}}) <br> [Operaciones Encubiertas-Sigilo] ({{< relref \"/skills/covert-ops/#stealth\" >}}) <br> [Resolución-Resolución Física] ({{< relref \"/skills/resolve/#physical-resolve\" >}}) <br> [Conciencia-Intuición] ({{< relref \"/skills/awareness/#intuition\" >}})",
+                        "favored_specialty_skills": "- [Supervivencia-Supervivencia en el Desierto] ({{< relref \"/skills/survival/#wilderness-survival\" >}})\n- [Operaciones Encubiertas-Sigilo] ({{< relref \"/skills/covert-ops/#stealth\" >}})\n- [Resolución-Resolución Física] ({{< relref \"/skills/resolve/#physical-resolve\" >}})\n- [Conciencia-Intuición] ({{< relref \"/skills/awareness/#intuition\" >}})",
                         "favored_perks": "[Observador] ({{< relref \"/perks_flaws/#observant\" >}})",
                         "flaw": "[Infamia] ({{< relref \"/perks_flaws/#infamy\" >}}) (Desertor)",
                         "equipment": "Partes de un uniforme militar despojado de insignias, un arma de autodefensa básica, una identificación falsa de baja calidad y un pequeño recuerdo personal de tu antigua unidad.",
                         "special_ability": "**Instinto de Supervivencia:** Bono de -1 paso en tiradas de Supervivencia o Sigilo cuando eres perseguido activamente por autoridades.",
-                        "tendencies": "**La Fuga Pragmática:** Abandona una causa cuando los riesgos se vuelven \"inaceptables\" para asegurar tu supervivencia.<br>**La Mano Oculta:** Renuncia a la fama o la recompensa para asegurar que tu identidad permanezca sin descubrir."
+                        "tendencies": "- **La Fuga Pragmática:** Abandona una causa cuando los riesgos se vuelven \"inaceptables\" para asegurar tu supervivencia.\n- **La Mano Oculta:** Renuncia a la fama o la recompensa para asegurar que tu identidad permanezca sin descubrir."
                     },
                     {
                         "name": "El Diplomático",
@@ -130,12 +130,12 @@
                         "favored_broad_skill": "",
                         "url": "/es/backgrounds/diplomat/",
                         "skill_url": "/es/backgrounds/diplomat/",
-                        "favored_specialty_skills": "[Interacción-Diplomacia] ({{< relref \"/skills/interaction/#diplomacy\" >}}) <br> [Cultura-Etiqueta] ({{< relref \"/skills/culture/#etiquette-specific\" >}}) <br> [Decepción-Mentir] ({{< relref \"/skills/deception/#lie\" >}}) <br> [Ley-Leyes Galácticas] ({{< relref \"/skills/law/#galactic-laws\" >}})",
+                        "favored_specialty_skills": "- [Interacción-Diplomacia] ({{< relref \"/skills/interaction/#diplomacy\" >}})\n- [Cultura-Etiqueta] ({{< relref \"/skills/culture/#etiquette-specific\" >}})\n- [Decepción-Mentir] ({{< relref \"/skills/deception/#lie\" >}})\n- [Ley-Leyes Galácticas] ({{< relref \"/skills/law/#galactic-laws\" >}})",
                         "favored_perks": "[Contactos] ({{< relref \"/perks_flaws/#contacts\" >}})",
                         "flaw": "[Enemigo Poderoso] ({{< relref \"/perks_flaws/#powerful-enemy\" >}}) (Rival Político)",
                         "equipment": "Ropa de negocios de alta calidad, un datapad con protocolos diplomáticos galácticos, un sello oficial de tu organización y un pequeño estuche de regalos culturales para \"romper el hielo\".",
                         "special_ability": "**Inmunidad Diplomática:** Bono de -1 paso en tiradas de Interacción en entornos formales o diplomáticos.",
-                        "tendencies": "**El Mediador:** Intenta resolver una situación hostil mediante la negociación, incluso cuando el combate sea más fácil.<br>**El Arquitecto:** Retrasa la acción para asegurar que cada variable Social o consecuencia sea considerada."
+                        "tendencies": "- **El Mediador:** Intenta resolver una situación hostil mediante la negociación, incluso cuando el combate sea más fácil.\n- **El Arquitecto:** Retrasa la acción para asegurar que cada variable Social o consecuencia sea considerada."
                     },
                     {
                         "name": "La Cara",
@@ -143,12 +143,12 @@
                         "favored_broad_skill": "",
                         "url": "/es/backgrounds/face/",
                         "skill_url": "/es/backgrounds/face/",
-                        "favored_specialty_skills": "[Entretenimiento-Actuar] ({{< relref \"/skills/entertainment/#act\" >}}) <br> [Engaño- Farolear] ({{< relref \"/skills/deception/#bluff\" >}}) <br> [Interacción-Negociar] ({{< relref \"/skills/interaction/#bargain\" >}}) <br> [Interacción-Encanto] ({{< relref \"/skills/interaction/#charm\" >}})",
+                        "favored_specialty_skills": "- [Entretenimiento-Actuar] ({{< relref \"/skills/entertainment/#act\" >}})\n- [Engaño- Farolear] ({{< relref \"/skills/deception/#bluff\" >}})\n- [Interacción-Negociar] ({{< relref \"/skills/interaction/#bargain\" >}})\n- [Interacción-Encanto] ({{< relref \"/skills/interaction/#charm\" >}})",
                         "favored_perks": "[Gran Apariencia] ({{< relref \"/perks_flaws/#great-looks\" >}})",
                         "flaw": "[Obsesionado] ({{< relref \"/perks_flaws/#obsessed\" >}}) (Con su Imagen)",
                         "equipment": "Un vestuario extravagante adecuado para eventos de alto nivel, un kit de disfraz cosmético y un arma de fuego llamativa pero de bajo calibre.",
                         "special_ability": "**El Rebuscador:** Recibes una bonificación de -1 paso a las tiradas de [Interacción- Negociar] ({{< relref \"/skills/interaction/#bargain\" >}}) o [Pillería-Conocimiento Callejero] ({{< relref \"/skills/street-smart/#street-knowledge\" >}}) al intentar adquirir equipo específico o artículos restringidos por medios no monetarios (engaños, favores o \"préstamos\").",
-                        "tendencies": "**El Buscador de Atención:** Intencionalmente llama la atención sobre sí mismo en un entorno Social para crear una distracción, incluso cuando pasar desapercibido es más seguro.<br>**El Estafador:** Intenta \"estafar\" o salir de un problema o entrar en un área restringida usando su atractivo personal, incluso cuando existe un método más directo (pero menos elegante)."
+                        "tendencies": "- **El Buscador de Atención:** Intencionalmente llama la atención sobre sí mismo en un entorno Social para crear una distracción, incluso cuando pasar desapercibido es más seguro.\n- **El Estafador:** Intenta \"estafar\" o salir de un problema o entrar en un área restringida usando su atractivo personal, incluso cuando existe un método más directo (pero menos elegante)."
                     },
                     {
                         "name": "El Médico de Campo",
@@ -156,7 +156,7 @@
                         "favored_broad_skill": "",
                         "url": "/es/backgrounds/field-medic/",
                         "skill_url": "/es/backgrounds/field-medic/",
-                        "favored_specialty_skills": "[Conocimiento-Primeros Auxilios] ({{< relref \"/skills/knowledge/#first-aid\" >}}) <br> [Ciencia Médica-Tratamiento] ({{< relref \"/skills/medical-science/#treatment\" >}}) <br> [Atletismo-Correr] ({{< relref \"/skills/athletics/#run\" >}}) <br> [Voluntad- Voluntad Física] ({{< relref \"/skills/resolve/#physical-resolve\" >}})",
+                        "favored_specialty_skills": "- [Conocimiento-Primeros Auxilios] ({{< relref \"/skills/knowledge/#first-aid\" >}})\n- [Ciencia Médica-Tratamiento] ({{< relref \"/skills/medical-science/#treatment\" >}})\n- [Atletismo-Correr] ({{< relref \"/skills/athletics/#run\" >}})\n- [Voluntad- Voluntad Física] ({{< relref \"/skills/resolve/#physical-resolve\" >}})",
                         "favored_perks": "[Reflejos] ({{< relref \"/perks_flaws/#reflexes\" >}})",
                         "flaw": "[Código de Honor] ({{< relref \"/perks_flaws/#code-of-honor\" >}}) (Juramento Médico) o [Vieja Herida] ({{< relref \"/perks_flaws/#old-injury\" >}})",
                         "equipment": "Kit de trauma, láser quirúrgico, vendajes avanzados.",
@@ -169,7 +169,7 @@
                         "favored_broad_skill": "",
                         "url": "/es/backgrounds/field-researcher/",
                         "skill_url": "/es/backgrounds/field-researcher/",
-                        "favored_specialty_skills": "[Conocimiento-Deducir] ({{< relref \"/skills/knowledge/#deduce\" >}}) <br> [Investigar-Buscar] ({{< relref \"/skills/investigate/#search\" >}}) <br> [Ciencia de la Vida-Xenología] ({{< relref \"/skills/life-science/#xenology\" >}}) <br> [Conciencia-Percepción] ({{< relref \"/skills/awareness/#perception\" >}})",
+                        "favored_specialty_skills": "- [Conocimiento-Deducir] ({{< relref \"/skills/knowledge/#deduce\" >}})\n- [Investigar-Buscar] ({{< relref \"/skills/investigate/#search\" >}})\n- [Ciencia de la Vida-Xenología] ({{< relref \"/skills/life-science/#xenology\" >}})\n- [Conciencia-Percepción] ({{< relref \"/skills/awareness/#perception\" >}})",
                         "favored_perks": "[Observador] ({{< relref \"/perks_flaws/#observant\" >}})",
                         "flaw": "[Obsesionado] ({{< relref \"/perks_flaws/#obsessed\" >}})",
                         "equipment": "Escáner de campo, kits de muestreo, traje ambiental.",
@@ -182,7 +182,7 @@
                         "favored_broad_skill": "",
                         "url": "/es/backgrounds/fixer/",
                         "skill_url": "/es/backgrounds/fixer/",
-                        "favored_specialty_skills": "[Interacción-Negociar] ({{< relref \"/skills/interaction/#bargain\" >}}) <br> [Pillería-Conocimiento Callejero] ({{< relref \"/skills/street-smart/#street-knowledge\" >}}) <br> [Negocios-Negocios Ilícitos] ({{< relref \"/skills/business/#illicit-business\" >}}) <br> [Administración-Contabilidad] ({{< relref \"/skills/administration/#accounting\" >}})",
+                        "favored_specialty_skills": "- [Interacción-Negociar] ({{< relref \"/skills/interaction/#bargain\" >}})\n- [Pillería-Conocimiento Callejero] ({{< relref \"/skills/street-smart/#street-knowledge\" >}})\n- [Negocios-Negocios Ilícitos] ({{< relref \"/skills/business/#illicit-business\" >}})\n- [Administración-Contabilidad] ({{< relref \"/skills/administration/#accounting\" >}})",
                         "favored_perks": "[Contactos] ({{< relref \"/perks_flaws/#contacts\" >}})",
                         "flaw": "[Endeudado] ({{< relref \"/perks_flaws/#debt-ridden\" >}})",
                         "equipment": "Un comunicador de múltiples frecuencias, un pequeño bloc de notas digital encriptado con una lista de contactos y una pequeña suma de moneda de crédito física (50 créditos).",
@@ -195,12 +195,12 @@
                         "favored_broad_skill": "",
                         "url": "/es/backgrounds/fleet-officer/",
                         "skill_url": "/es/backgrounds/fleet-officer/",
-                        "favored_specialty_skills": "[Tácticas-Tácticas Espaciales] ({{< relref \"/skills/tactics/#space-tactics\" >}}) <br> [Navegación-Astrogación de Sistemas] ({{< relref \"/skills/navigation/#astrogation-system\" >}}) <br> [Operación de Sistemas-Sensores] ({{< relref \"/skills/system-operation/#sensors\" >}}) <br> [Liderazgo-Mando] ({{< relref \"/skills/leadership/#command\" >}})",
+                        "favored_specialty_skills": "- [Tácticas-Tácticas Espaciales] ({{< relref \"/skills/tactics/#space-tactics\" >}})\n- [Navegación-Astrogación de Sistemas] ({{< relref \"/skills/navigation/#astrogation-system\" >}})\n- [Operación de Sistemas-Sensores] ({{< relref \"/skills/system-operation/#sensors\" >}})\n- [Liderazgo-Mando] ({{< relref \"/skills/leadership/#command\" >}})",
                         "favored_perks": "[Reputación] ({{< relref \"/perks_flaws/#reputation\" >}})",
                         "flaw": "[Enemigo Poderoso] ({{< relref \"/perks_flaws/#powerful-enemy\" >}}) (Comandante Rival)",
                         "equipment": "Un uniforme naval, un traje espacial personal (traje de vacío) diseñado para emergencias en gravedad cero y un arma de fuego de oficial.",
                         "special_ability": "**Intuición de Puente:** Bono de -1 paso en Operación de Sistemas mientras estás en el puente de una nave estelar.",
-                        "tendencies": "**El Alma de la Nave:** Prioriza la integridad estructural y el mantenimiento a largo plazo de la nave sobre el equipo personal o los objetivos de la misión.<br>**El Purista del Protocolo:** Insiste en seguir los protocolos estándar de comunicación y combate naval incluso cuando opera en la \"naturaleza\" o con tripulaciones civiles, lo que podría causar fricción Social."
+                        "tendencies": "- **El Alma de la Nave:** Prioriza la integridad estructural y el mantenimiento a largo plazo de la nave sobre el equipo personal o los objetivos de la misión.\n- **El Purista del Protocolo:** Insiste en seguir los protocolos estándar de comunicación y combate naval incluso cuando opera en la \"naturaleza\" o con tripulaciones civiles, lo que podría causar fricción Social."
                     },
                     {
                         "name": "El Capitán Freelance",
@@ -208,7 +208,7 @@
                         "favored_broad_skill": "",
                         "url": "/es/backgrounds/freelance-captain/",
                         "skill_url": "/es/backgrounds/freelance-captain/",
-                        "favored_specialty_skills": "[Operación de Vehículos-Nave Espacial] ({{< relref \"/skills/vehicle-operation/#space-vehicle\" >}}) <br> [Navegación-Sistema de Astrogación] ({{< relref \"/skills/navigation/#astrogation-system\" >}}) <br> [Negocios-Pequeña Empresa] ({{< relref \"/skills/business/#small-business\" >}}) <br> [Liderazgo-Mando] ({{< relref \"/skills/leadership/#command\" >}})",
+                        "favored_specialty_skills": "- [Operación de Vehículos-Nave Espacial] ({{< relref \"/skills/vehicle-operation/#space-vehicle\" >}})\n- [Navegación-Sistema de Astrogación] ({{< relref \"/skills/navigation/#astrogation-system\" >}})\n- [Negocios-Pequeña Empresa] ({{< relref \"/skills/business/#small-business\" >}})\n- [Liderazgo-Mando] ({{< relref \"/skills/leadership/#command\" >}})",
                         "favored_perks": "[Buena Suerte] ({{< relref \"/perks_flaws/#good-luck\" >}})",
                         "flaw": "[Endeudado] ({{< relref \"/perks_flaws/#debt-ridden\" >}})",
                         "equipment": "Abrigo de piloto, computadora de navegación, arma de mano.",
@@ -221,7 +221,7 @@
                         "favored_broad_skill": "",
                         "url": "/es/backgrounds/ghost-agent/",
                         "skill_url": "/es/backgrounds/ghost-agent/",
-                        "favored_specialty_skills": "[Sigilo-Esconderse] ({{< relref \"/skills/covert-ops/#sneak\" >}}) <br> [Operaciones Encubiertas-Ocultar] ({{< relref \"/skills/covert-ops/#conceal\" >}}) <br> [Engaño-Engañar] ({{< relref \"/skills/deception/#bluff\" >}}) <br> [Seguridad- Dispositivos de Seguridad] ({{< relref \"/skills/security/#security-devices\" >}})",
+                        "favored_specialty_skills": "- [Sigilo-Esconderse] ({{< relref \"/skills/covert-ops/#sneak\" >}})\n- [Operaciones Encubiertas-Ocultar] ({{< relref \"/skills/covert-ops/#conceal\" >}})\n- [Engaño-Engañar] ({{< relref \"/skills/deception/#bluff\" >}})\n- [Seguridad- Dispositivos de Seguridad] ({{< relref \"/skills/security/#security-devices\" >}})",
                         "favored_perks": "[Reflejos] ({{< relref \"/perks_flaws/#reflexes\" >}})",
                         "flaw": "[Enemigo Poderoso] ({{< relref \"/perks_flaws/#powerful-enemy\" >}})",
                         "equipment": "Falsificador biométrico, ropa camaleónica, codificador de datos.",
@@ -234,7 +234,7 @@
                         "favored_broad_skill": "",
                         "url": "/es/backgrounds/grifter/",
                         "skill_url": "/es/backgrounds/grifter/",
-                        "favored_specialty_skills": "[Engaño-Engañar] ({{< relref \"/skills/deception/#bluff\" >}}) <br> [Interacción-Persuadir] ({{< relref \"/skills/interaction/#charm\" >}}) <br> [Manipulación-Robar Bolsillos] ({{< relref \"/skills/covert-ops/#pickpocket\" >}}) <br> [Engaño-Sobornar] ({{< relref \"/skills/deception/#bribe\" >}})",
+                        "favored_specialty_skills": "- [Engaño-Engañar] ({{< relref \"/skills/deception/#bluff\" >}})\n- [Interacción-Persuadir] ({{< relref \"/skills/interaction/#charm\" >}})\n- [Manipulación-Robar Bolsillos] ({{< relref \"/skills/covert-ops/#pickpocket\" >}})\n- [Engaño-Sobornar] ({{< relref \"/skills/deception/#bribe\" >}})",
                         "favored_perks": "[Buen Aspecto] ({{< relref \"/perks_flaws/#great-looks\" >}})",
                         "flaw": "[Enemigo Poderoso] ({{< relref \"/perks_flaws/#powerful-enemy\" >}})",
                         "equipment": "Ropa de diseño, IDs falsas, kit de fixer.",
@@ -247,7 +247,7 @@
                         "favored_broad_skill": "",
                         "url": "/es/backgrounds/hacker/",
                         "skill_url": "/es/backgrounds/hacker/",
-                        "favored_specialty_skills": "[Computación-Hacking] ({{< relref \"/skills/computer-science/#hacking\" >}}) <br> [Computación-Programación] ({{< relref \"/skills/computer-science/#programming\" >}}) <br> [Operación de Sistemas- Comunicaciones] ({{< relref \"/skills/system-operation/#communications\" >}}) <br> [Investigar-Búsqueda de Datos] ({{< relref \"/skills/investigate/#data-retrieval\" >}})",
+                        "favored_specialty_skills": "- [Computación-Hacking] ({{< relref \"/skills/computer-science/#hacking\" >}})\n- [Computación-Programación] ({{< relref \"/skills/computer-science/#programming\" >}})\n- [Operación de Sistemas- Comunicaciones] ({{< relref \"/skills/system-operation/#communications\" >}})\n- [Investigar-Búsqueda de Datos] ({{< relref \"/skills/investigate/#data-retrieval\" >}})",
                         "favored_perks": "[Sentido Común] ({{< relref \"/perks_flaws/#common-sense\" >}})",
                         "flaw": "[Obsesionado] ({{< relref \"/perks_flaws/#obsessed\" >}}) (Con la Eficiencia)",
                         "equipment": "Un mazo cibernético personalizado, una suscripción de por vida a un servicio de proxy de datos y un par de gafas de realidad aumentada para visualización de red.",
@@ -260,7 +260,7 @@
                         "favored_broad_skill": "",
                         "url": "/es/backgrounds/innovator/",
                         "skill_url": "/es/backgrounds/innovator/",
-                        "favored_specialty_skills": "[Ciencia Técnica-Invención] ({{< relref \"/skills/technical-science/#invention\" >}}) <br> [Ciencia Técnica-Arreglo de Fortuna] ({{< relref \"/skills/technical-science/#juryrig\" >}}) <br> [Informática- Hardware] ({{< relref \"/skills/computer-science/#hardware\" >}}) <br> [Ciencia Técnica- Reparar] ({{< relref \"/skills/technical-science/#repair\" >}})",
+                        "favored_specialty_skills": "- [Ciencia Técnica-Invención] ({{< relref \"/skills/technical-science/#invention\" >}})\n- [Ciencia Técnica-Arreglo de Fortuna] ({{< relref \"/skills/technical-science/#juryrig\" >}})\n- [Informática- Hardware] ({{< relref \"/skills/computer-science/#hardware\" >}})\n- [Ciencia Técnica- Reparar] ({{< relref \"/skills/technical-science/#repair\" >}})",
                         "favored_perks": "[Manos Firmes] ({{< relref \"/perks_flaws/#stable-hands\" >}})",
                         "flaw": "[Obsesionado] ({{< relref \"/perks_flaws/#obsessed\" >}})",
                         "equipment": "Kit multi-herramienta, pantalla de diagnóstico, piezas de salvamento.",
@@ -273,7 +273,7 @@
                         "favored_broad_skill": "[Survival]({{< relref \"/skills/survival/\" >}})",
                         "url": "/es/backgrounds/mercenary/",
                         "skill_url": "/es/backgrounds/mercenary/",
-                        "favored_specialty_skills": "[Armas a Distancia Modernas] ({{< relref \"/skills/modern-ranged-weapons/\" >}}) <br> [Armas Cuerpo a Cuerpo] ({{< relref \"/skills/melee-combat/\" >}}) <br> [Resistencia- Aguante] ({{< relref \"/skills/stamina/#endurance\" >}}) <br> [Interacción-Negociar] ({{< relref \"/skills/interaction/#bargain\" >}})",
+                        "favored_specialty_skills": "- [Armas a Distancia Modernas] ({{< relref \"/skills/modern-ranged-weapons/\" >}})\n- [Armas Cuerpo a Cuerpo] ({{< relref \"/skills/melee-combat/\" >}})\n- [Resistencia- Aguante] ({{< relref \"/skills/stamina/#endurance\" >}})\n- [Interacción-Negociar] ({{< relref \"/skills/interaction/#bargain\" >}})",
                         "favored_perks": "[Duro como un Clavo] ({{< relref \"/perks_flaws/#tough-as-nails\" >}})",
                         "flaw": "[Código de Honor] ({{< relref \"/perks_flaws/#code-of-honor\" >}}) o [Vieja Herida] ({{< relref \"/perks_flaws/#old-injury\" >}})",
                         "equipment": "Un arma confiable, un juego de placas de identificación.",
@@ -286,12 +286,12 @@
                         "favored_broad_skill": "",
                         "url": "/es/backgrounds/military-brat/",
                         "skill_url": "/es/backgrounds/military-brat/",
-                        "favored_specialty_skills": "[Tácticas-Tácticas de Infantería] ({{< relref \"/skills/tactics/#infantry-tactics\" >}}) <br> [Resolución-Resolución Física] ({{< relref \"/skills/resolve/#physical-resolve\" >}}) <br> [Conocimiento-Primeros Auxilios] ({{< relref \"/skills/knowledge/#first-aid\" >}})",
+                        "favored_specialty_skills": "- [Tácticas-Tácticas de Infantería] ({{< relref \"/skills/tactics/#infantry-tactics\" >}})\n- [Resolución-Resolución Física] ({{< relref \"/skills/resolve/#physical-resolve\" >}})\n- [Conocimiento-Primeros Auxilios] ({{< relref \"/skills/knowledge/#first-aid\" >}})",
                         "favored_perks": "Ninguna.",
                         "flaw": "[Código de Honor] ({{< relref \"/perks_flaws/#code-of-honor\" >}})",
                         "equipment": "Una pieza de equipo militar excedente (como una chaqueta de fatiga resistente o botas de combate), un botiquín básico de campo y un arma de fuego de dotación estándar.",
                         "special_ability": "**Procedimiento Estándar:** Tienes una bonificación de\n-1 paso a las tiradas de [Resolución-Resolución Mental] ({{< relref \"/skills/resolve/#mental-resolve\" >}}) o [Resolución-Resolución Física] ({{< relref \"/skills/resolve/#physical-resolve\" >}}) durante situaciones de alto estrés, siempre y cuando sigas un plan u orden claro y preestablecido.",
-                        "tendencies": "**El Seguidor de Órdenes:** Se adhiere a un plan o instrucción incluso cuando las circunstancias han cambiado.<br>**El Protector:** Se pone en riesgo para cubrir el flanco de un aliado."
+                        "tendencies": "- **El Seguidor de Órdenes:** Se adhiere a un plan o instrucción incluso cuando las circunstancias han cambiado.\n- **El Protector:** Se pone en riesgo para cubrir el flanco de un aliado."
                     },
                     {
                         "name": "El Operativo",
@@ -299,7 +299,7 @@
                         "favored_broad_skill": "",
                         "url": "/es/backgrounds/operative/",
                         "skill_url": "/es/backgrounds/operative/",
-                        "favored_specialty_skills": "[Armas a Distancia Modernas-SMG] ({{< relref \"/skills/modern-ranged-weapons/#smg\" >}}) <br> [Resistencia-Aguante] ({{< relref \"/skills/stamina/#endurance\" >}}) <br> [Táctica- Táctica de Infantería] ({{< relref \"/skills/tactics/#infantry-tactics\" >}}) <br> [Atletismo-Correr] ({{< relref \"/skills/athletics/#run\" >}})",
+                        "favored_specialty_skills": "- [Armas a Distancia Modernas-SMG] ({{< relref \"/skills/modern-ranged-weapons/#smg\" >}})\n- [Resistencia-Aguante] ({{< relref \"/skills/stamina/#endurance\" >}})\n- [Táctica- Táctica de Infantería] ({{< relref \"/skills/tactics/#infantry-tactics\" >}})\n- [Atletismo-Correr] ({{< relref \"/skills/athletics/#run\" >}})",
                         "favored_perks": "[Reflejos] ({{< relref \"/perks_flaws/#reflexes\" >}})",
                         "flaw": "[Código de Honor] ({{< relref \"/perks_flaws/#code-of-honor\" >}})",
                         "equipment": "Subfusil, ropa de combate, enlace de comunicaciones.",
@@ -312,8 +312,8 @@
                         "favored_broad_skill": "[Resolve]({{< relref \"/skills/resolve/\" >}})",
                         "url": "/es/backgrounds/orlamu-clergy/",
                         "skill_url": "/es/backgrounds/orlamu-clergy/",
-                        "favored_specialty_skills": "[Telepatía-Contacto] ({{< relref \"/psionics/telepathy/#contact\" >}}) <br> [ESP- Empatía] ({{< relref \"/psionics/esp/#empathy\" >}}) <br> [Bioquinesis-Curar] ({{< relref \"/psionics/biokinesis/#heal\" >}}) <br> [Telequinesis-Escudo Cinético] ({{< relref \"/psionics/telekinesis/#kinetic-shield\" >}})",
-                        "favored_perks": "[Fe] ({{< relref \"/perks_flaws/#faith\" >}}) <br> [Conciencia Psiónica] ({{< relref \"/perks_flaws/#psionic-awareness\" >}})",
+                        "favored_specialty_skills": "- [Telepatía-Contacto] ({{< relref \"/psionics/telepathy/#contact\" >}})\n- [ESP- Empatía] ({{< relref \"/psionics/esp/#empathy\" >}})\n- [Bioquinesis-Curar] ({{< relref \"/psionics/biokinesis/#heal\" >}})\n- [Telequinesis-Escudo Cinético] ({{< relref \"/psionics/telekinesis/#kinetic-shield\" >}})",
+                        "favored_perks": "- [Fe] ({{< relref \"/perks_flaws/#faith\" >}})\n- [Conciencia Psiónica] ({{< relref \"/perks_flaws/#psionic-awareness\" >}})",
                         "flaw": "[Código de Honor] ({{< relref \"/perks_flaws/#code-of-honor\" >}})",
                         "equipment": "Túnicas sencillas de clero, un símbolo sagrado o foco meditativo.",
                         "special_ability": "**Foco Psíquico:** Recibe un bono de -1 paso en todos los chequeos de [Voluntad] ({{< relref \"/skills/resolve/\" >}}) al resistir el estrés Mental no psiónico.",
@@ -325,12 +325,12 @@
                         "favored_broad_skill": "",
                         "url": "/es/backgrounds/outcast/",
                         "skill_url": "/es/backgrounds/outcast/",
-                        "favored_specialty_skills": "[Supervivencia-Supervivencia Urbana] ({{< relref \"/skills/survival/#urban-survival\" >}}) <br> [Operaciones Encubiertas-Ocultar] ({{< relref \"/skills/covert-ops/#conceal\" >}}) <br> [Pillería-Conocimiento Callejero] ({{< relref \"/skills/street-smart/#street-knowledge\" >}}) <br> [Voluntad-Voluntad Mental] ({{< relref \"/skills/resolve/#mental-resolve\" >}})",
+                        "favored_specialty_skills": "- [Supervivencia-Supervivencia Urbana] ({{< relref \"/skills/survival/#urban-survival\" >}})\n- [Operaciones Encubiertas-Ocultar] ({{< relref \"/skills/covert-ops/#conceal\" >}})\n- [Pillería-Conocimiento Callejero] ({{< relref \"/skills/street-smart/#street-knowledge\" >}})\n- [Voluntad-Voluntad Mental] ({{< relref \"/skills/resolve/#mental-resolve\" >}})",
                         "favored_perks": "[Buena Suerte] ({{< relref \"/perks_flaws/#good-luck\" >}})",
                         "flaw": "[Infamia] ({{< relref \"/perks_flaws/#infamy\" >}}) (Marginado)",
                         "equipment": "Ropa de calle raída pero funcional, una máscara de respirador básica y un pequeño objeto tecnológico robado o recuperado.",
                         "special_ability": "**Invisibilidad Social:** Bono de -1 paso en Sigilo o Pillería cuando intentas pasar desapercibido en zonas urbanas pobres.",
-                        "tendencies": "**El Tradicionalista:** Resuelve un problema moderno utilizando un método antiguo, de baja tecnología o ritualista.<br>**El Solitario:** Asume una desventaja para realizar una tarea completamente solo, rechazando la ayuda de la tecnología \"blanda\" o de sus compañeros de equipo."
+                        "tendencies": "- **El Tradicionalista:** Resuelve un problema moderno utilizando un método antiguo, de baja tecnología o ritualista.\n- **El Solitario:** Asume una desventaja para realizar una tarea completamente solo, rechazando la ayuda de la tecnología \"blanda\" o de sus compañeros de equipo."
                     },
                     {
                         "name": "El Oficial Paramilitar",
@@ -338,12 +338,12 @@
                         "favored_broad_skill": "",
                         "url": "/es/backgrounds/paramilitary-officer/",
                         "skill_url": "/es/backgrounds/paramilitary-officer/",
-                        "favored_specialty_skills": "[Liderazgo-Mando] ({{< relref \"/skills/leadership/#command\" >}}) <br> [Tácticas-Tácticas de Infantería] ({{< relref \"/skills/tactics/#infantry-tactics\" >}}) <br> [Negocios-Pequeños Negocios] ({{< relref \"/skills/business/#small-business\" >}}) <br> [Armas de Fuego Modernas-Rifle de Asalto] ({{< relref \"/skills/modern-ranged-weapons/#rifle\" >}})",
+                        "favored_specialty_skills": "- [Liderazgo-Mando] ({{< relref \"/skills/leadership/#command\" >}})\n- [Tácticas-Tácticas de Infantería] ({{< relref \"/skills/tactics/#infantry-tactics\" >}})\n- [Negocios-Pequeños Negocios] ({{< relref \"/skills/business/#small-business\" >}})\n- [Armas de Fuego Modernas-Rifle de Asalto] ({{< relref \"/skills/modern-ranged-weapons/#rifle\" >}})",
                         "favored_perks": "[Reputación] ({{< relref \"/perks_flaws/#reputation\" >}})",
                         "flaw": "[Código de Honor] ({{< relref \"/perks_flaws/#code-of-honor\" >}}) (El Código del Mercenario: Nunca rompes un contrato firmado, nunca traicionas a un cliente que ha pagado en su totalidad, y esperas que tus subordinados sigan tus órdenes sin cuestionar).",
                         "equipment": "Un traje de armadura táctica personalizado y no estándar, un rifle de asalto fuertemente modificado, un libro de contabilidad digital de contratos y una unidad de comunicaciones encriptada a nivel de escuadrón.",
                         "special_ability": "**Guerra Asimétrica:** Recibes una bonificación de -1 paso a las tiradas de [Tácticas-Tácticas de Infantería] ({{< relref \"/skills/tactics/#infantry-tactics\" >}}) o [Supervivencia-Entrenamiento de Supervivencia] ({{< relref \"/skills/survival/#survival-training\" >}}) al ejecutar una emboscada, librar una campaña de guerrilla u operar completamente aislado de las líneas de suministro oficiales.",
-                        "tendencies": "**El Mercenario:** Exige renegociación, pago por riesgo o una clara ventaja táctica antes de comprometerse en un peligroso tiroteo que no estaba en el plan original.<br>**El Pragmatista:** Ignora las reglas de enfrentamiento tradicionales o la doctrina \"honorable\" en favor de trampas, sabotajes o una fuerza desproporcionada abrumadora."
+                        "tendencies": "- **El Mercenario:** Exige renegociación, pago por riesgo o una clara ventaja táctica antes de comprometerse en un peligroso tiroteo que no estaba en el plan original.\n- **El Pragmatista:** Ignora las reglas de enfrentamiento tradicionales o la doctrina \"honorable\" en favor de trampas, sabotajes o una fuerza desproporcionada abrumadora."
                     },
                     {
                         "name": "El Detective Privado",
@@ -351,7 +351,7 @@
                         "favored_broad_skill": "",
                         "url": "/es/backgrounds/private-eye/",
                         "skill_url": "/es/backgrounds/private-eye/",
-                        "favored_specialty_skills": "[Investigar-Buscar] ({{< relref \"/skills/investigate/#search\" >}}) <br> [Conciencia-Percepción] ({{< relref \"/skills/awareness/#perception\" >}}) <br> [Pillería-Conocimiento Callejero] ({{< relref \"/skills/street-smart/#street-knowledge\" >}}) <br> [Interacción- Entrevistar] ({{< relref \"/skills/interaction/#interview\" >}})",
+                        "favored_specialty_skills": "- [Investigar-Buscar] ({{< relref \"/skills/investigate/#search\" >}})\n- [Conciencia-Percepción] ({{< relref \"/skills/awareness/#perception\" >}})\n- [Pillería-Conocimiento Callejero] ({{< relref \"/skills/street-smart/#street-knowledge\" >}})\n- [Interacción- Entrevistar] ({{< relref \"/skills/interaction/#interview\" >}})",
                         "favored_perks": "[Observador] ({{< relref \"/perks_flaws/#observant\" >}})",
                         "flaw": "[Vieja Herida] ({{< relref \"/perks_flaws/#old-injury\" >}})",
                         "equipment": "Micro-cámara, grabadora de voz, gabardina.",
@@ -364,7 +364,7 @@
                         "favored_broad_skill": "",
                         "url": "/es/backgrounds/roughneck/",
                         "skill_url": "/es/backgrounds/roughneck/",
-                        "favored_specialty_skills": "[Atletismo-Escalar] ({{< relref \"/skills/athletics/#climb\" >}}) <br> [Ataque Sin Armas-Pelea] ({{< relref \"/skills/melee-combat/#power-martial-arts\" >}}) <br> [Ciencia Técnica-Reparar] ({{< relref \"/skills/technical-science/#repair\" >}}) <br> [Resistencia-Aguante] ({{< relref \"/skills/stamina/#endurance\" >}})",
+                        "favored_specialty_skills": "- [Atletismo-Escalar] ({{< relref \"/skills/athletics/#climb\" >}})\n- [Ataque Sin Armas-Pelea] ({{< relref \"/skills/melee-combat/#power-martial-arts\" >}})\n- [Ciencia Técnica-Reparar] ({{< relref \"/skills/technical-science/#repair\" >}})\n- [Resistencia-Aguante] ({{< relref \"/skills/stamina/#endurance\" >}})",
                         "favored_perks": "[Duro como un Clavo] ({{< relref \"/perks_flaws/#tough-as-nails\" >}})",
                         "flaw": "[Vieja Herida] ({{< relref \"/perks_flaws/#old-injury\" >}})",
                         "equipment": "Multi-herramienta, mono industrial, guantes imantados.",
@@ -377,7 +377,7 @@
                         "favored_broad_skill": "",
                         "url": "/es/backgrounds/sapper/",
                         "skill_url": "/es/backgrounds/sapper/",
-                        "favored_specialty_skills": "[Demoliciones-Colocar Explosivos] ({{< relref \"/skills/demolitions/#set-explosives\" >}}) <br> [Armas Pesadas-Fuego Directo] ({{< relref \"/skills/heavy-weapons/#direct-fire\" >}}) <br> [Ciencia Técnica-Arreglo de Fortuna] ({{< relref \"/skills/technical-science/#juryrig\" >}}) <br> [Armas a Distancia Modernas] ({{< relref \"/skills/modern-ranged-weapons/\" >}})",
+                        "favored_specialty_skills": "- [Demoliciones-Colocar Explosivos] ({{< relref \"/skills/demolitions/#set-explosives\" >}})\n- [Armas Pesadas-Fuego Directo] ({{< relref \"/skills/heavy-weapons/#direct-fire\" >}})\n- [Ciencia Técnica-Arreglo de Fortuna] ({{< relref \"/skills/technical-science/#juryrig\" >}})\n- [Armas a Distancia Modernas] ({{< relref \"/skills/modern-ranged-weapons/\" >}})",
                         "favored_perks": "[Manos Firmes] ({{< relref \"/perks_flaws/#stable-hands\" >}})",
                         "flaw": "[Vieja Herida] ({{< relref \"/perks_flaws/#old-injury\" >}})",
                         "equipment": "Bloques explosivos, detonador, chaqueta táctica.",
@@ -390,7 +390,7 @@
                         "favored_broad_skill": "",
                         "url": "/es/backgrounds/scavenger/",
                         "skill_url": "/es/backgrounds/scavenger/",
-                        "favored_specialty_skills": "[Ciencia Técnica-Arreglo de Fortuna] ({{< relref \"/skills/technical-science/#juryrig\" >}}) <br> [Pillería-Conocimiento Callejero] ({{< relref \"/skills/street-smart/#street-knowledge\" >}}) <br> [Interacción-Negociar] ({{< relref \"/skills/interaction/#bargain\" >}}) <br> [Investigar-Buscar] ({{< relref \"/skills/investigate/#search\" >}})",
+                        "favored_specialty_skills": "- [Ciencia Técnica-Arreglo de Fortuna] ({{< relref \"/skills/technical-science/#juryrig\" >}})\n- [Pillería-Conocimiento Callejero] ({{< relref \"/skills/street-smart/#street-knowledge\" >}})\n- [Interacción-Negociar] ({{< relref \"/skills/interaction/#bargain\" >}})\n- [Investigar-Buscar] ({{< relref \"/skills/investigate/#search\" >}})",
                         "favored_perks": "[Buena Suerte] ({{< relref \"/perks_flaws/#good-luck\" >}})",
                         "flaw": "[Primitivo] ({{< relref \"/perks_flaws/#primitive\" >}}) or [Endeudado] ({{< relref \"/perks_flaws/#debt-ridden\" >}})",
                         "equipment": "Pinzas de salvamento, piezas de repuesto, sensor de radiación.",
@@ -403,12 +403,12 @@
                         "favored_broad_skill": "",
                         "url": "/es/backgrounds/ship-owner/",
                         "skill_url": "/es/backgrounds/ship-owner/",
-                        "favored_specialty_skills": "[Operación de Vehículos-Vehículo Espacial] ({{< relref \"/skills/vehicle-operation/#space-vehicle\" >}}) <br> [Negocios-Pequeños Negocios] ({{< relref \"/skills/business/#small-business\" >}}) <br> [Liderazgo-Mando] ({{< relref \"/skills/leadership/#command\" >}}) <br> [Administración-Gestión] ({{< relref \"/skills/administration/#management\" >}})",
+                        "favored_specialty_skills": "- [Operación de Vehículos-Vehículo Espacial] ({{< relref \"/skills/vehicle-operation/#space-vehicle\" >}})\n- [Negocios-Pequeños Negocios] ({{< relref \"/skills/business/#small-business\" >}})\n- [Liderazgo-Mando] ({{< relref \"/skills/leadership/#command\" >}})\n- [Administración-Gestión] ({{< relref \"/skills/administration/#management\" >}})",
                         "favored_perks": "Ninguna.",
                         "flaw": "[Endeudado] ({{< relref \"/perks_flaws/#debt-ridden\" >}}) (Debes una deuda masiva por tu nave. A diferencia de otras desventajas, esta no se puede comprar con XP durante el avance del personaje; solo se puede eliminar pagando físicamente al acreedor en el juego. Además, si no realizas un pago, el acreedor puede hacer demandas, obligándote a aceptar trabajos peligrosos o a favorecer sus intereses para conservar la nave).",
                         "equipment": "Un abrigo de capitán, una llave inglesa pesada o multiherramienta, y una baliza de socorro personal vinculada a tu nave.",
                         "special_ability": "**Capitán y Comandante:** Comienzas el juego en posesión de una nave estelar capaz de viajes interestelares y de acomodar a todo el grupo.",
-                        "tendencies": "**El Resultado Final:** Toma una decisión táctica o narrativa estrictamente basada en la ganancia financiera o la preservación física de tu nave, ignorando súplicas morales o riesgos personales.<br>**Mi Nave, Mis Reglas:** Afirma tu autoridad absoluta sobre una situación o pasajero a bordo de tu nave, incluso cuando ceder ante un aliado o experto sería significativamente más seguro."
+                        "tendencies": "- **El Resultado Final:** Toma una decisión táctica o narrativa estrictamente basada en la ganancia financiera o la preservación física de tu nave, ignorando súplicas morales o riesgos personales.\n- **Mi Nave, Mis Reglas:** Afirma tu autoridad absoluta sobre una situación o pasajero a bordo de tu nave, incluso cuando ceder ante un aliado o experto sería significativamente más seguro."
                     },
                     {
                         "name": "El Contrabandista",
@@ -416,12 +416,12 @@
                         "favored_broad_skill": "",
                         "url": "/es/backgrounds/smuggler/",
                         "skill_url": "/es/backgrounds/smuggler/",
-                        "favored_specialty_skills": "[Negocios-Negocios Ilícitos] ({{< relref \"/skills/business/#illicit-business\" >}}) <br> [Operaciones Encubiertas-Ocultar] ({{< relref \"/skills/covert-ops/#conceal\" >}}) <br> [Engaño-Soborno] ({{< relref \"/skills/deception/#bribe\" >}}) <br> [Pillería- Elementos Criminales] ({{< relref \"/skills/street-smart/#criminal-elements\" >}})",
+                        "favored_specialty_skills": "- [Negocios-Negocios Ilícitos] ({{< relref \"/skills/business/#illicit-business\" >}})\n- [Operaciones Encubiertas-Ocultar] ({{< relref \"/skills/covert-ops/#conceal\" >}})\n- [Engaño-Soborno] ({{< relref \"/skills/deception/#bribe\" >}})\n- [Pillería- Elementos Criminales] ({{< relref \"/skills/street-smart/#criminal-elements\" >}})",
                         "favored_perks": "[Buena Suerte] ({{< relref \"/perks_flaws/#good-luck\" >}})",
                         "flaw": "[Enemigo Poderoso] ({{< relref \"/perks_flaws/#powerful-enemy\" >}}) (Un implacable inspector de aduanas o un jefe de sindicato al que traicionaste).",
                         "equipment": "Un abrigo grande con bolsillos ocultos a prueba de sensores, un bláster de bolsillo, un libro de contabilidad físico y un juego de códigos de transpondedor o identificaciones falsas.",
                         "special_ability": "**Escondite del Contrabandista:** Recibes una bonificación de -1 paso a las tiradas de [Operaciones Encubiertas-Ocultar] ({{< relref \"/skills/covert-ops/#conceal\" >}}) al esconder objetos, datos o personas de inspecciones físicas o barridos de sensores rutinarios.",
-                        "tendencies": "**El Contrabandista:** Asume un riesgo narrativo o táctico para introducir algo ilegal o restringido en un área segura, incluso si la misión actual no lo requiere estrictamente.<br>**El Quemador:** Desecha carga valiosa, abandona un trato lucrativo o rompe lazos con un contacto útil a la primera señal de escrutinio oficial para asegurar tu propia libertad."
+                        "tendencies": "- **El Contrabandista:** Asume un riesgo narrativo o táctico para introducir algo ilegal o restringido en un área segura, incluso si la misión actual no lo requiere estrictamente.\n- **El Quemador:** Desecha carga valiosa, abandona un trato lucrativo o rompe lazos con un contacto útil a la primera señal de escrutinio oficial para asegurar tu propia libertad."
                     },
                     {
                         "name": "El Subversor",
@@ -429,12 +429,12 @@
                         "favored_broad_skill": "[Creativity]({{< relref \"/skills/creativity/\" >}})",
                         "url": "/es/backgrounds/subverter/",
                         "skill_url": "/es/backgrounds/subverter/",
-                        "favored_specialty_skills": "[Creatividad-Habilidad Específica] ({{< relref \"/skills/creativity/#creativity-specific-skill\" >}}) (ej. arte holográfico, graffiti público o diseño de propaganda)<br> [Engaño- Farolear] ({{< relref \"/skills/deception/#bluff\" >}}) <br> [Operaciones Encubiertas-Sigilo] ({{< relref \"/skills/covert-ops/#stealth\" >}}) <br> [Liderazgo-Inspirar] ({{< relref \"/skills/leadership/#inspire\" >}})",
+                        "favored_specialty_skills": "- [Creatividad-Habilidad Específica] ({{< relref \"/skills/creativity/#creativity-specific-skill\" >}}) (ej. arte holográfico, graffiti público o diseño de propaganda)\n- [Engaño- Farolear] ({{< relref \"/skills/deception/#bluff\" >}})\n- [Operaciones Encubiertas-Sigilo] ({{< relref \"/skills/covert-ops/#stealth\" >}})\n- [Liderazgo-Inspirar] ({{< relref \"/skills/leadership/#inspire\" >}})",
                         "favored_perks": "[Aliado Poderoso] ({{< relref \"/perks_flaws/#powerful-ally\" >}}) (Un movimiento de resistencia clandestino, un colectivo anarquista o un grupo de hackers descentralizado).",
                         "flaw": "[Infamia] ({{< relref \"/perks_flaws/#infamy\" >}}) (Conocido por las autoridades locales o megacorporaciones como un vándalo y agitador peligroso).",
                         "equipment": "Un secuestrador de señales portátil o tecnología de pulverización de alto rendimiento, una unidad de datos encriptada llena de propaganda, una máscara de respiración para ocultar tu rostro y ropa de calle resistente.",
                         "special_ability": "**Mensajes Subliminales:** Tienes una bonificación de\n-1 paso a las tiradas de [Liderazgo-Inspirar] ({{< relref \"/skills/leadership/#inspire\" >}}) o [Engaño- Farolear] ({{< relref \"/skills/deception/#bluff\" >}}) cuando usas tu arte para incitar a una multitud, causar una distracción pública o influir rápidamente en la opinión pública.",
-                        "tendencies": "**La Tarjeta de Visita:** Deja una pieza reconocible de tu arte o propaganda en la escena de una misión, llamando intencionalmente la atención sobre ti mismo y arriesgando el descubrimiento inmediato.<br>**El Agitador:** Provoca abiertamente a figuras de autoridad o a la seguridad corporativa, utilizando el caos resultante para hacer una declaración política incluso si pone en peligro la operación actual."
+                        "tendencies": "- **La Tarjeta de Visita:** Deja una pieza reconocible de tu arte o propaganda en la escena de una misión, llamando intencionalmente la atención sobre ti mismo y arriesgando el descubrimiento inmediato.\n- **El Agitador:** Provoca abiertamente a figuras de autoridad o a la seguridad corporativa, utilizando el caos resultante para hacer una declaración política incluso si pone en peligro la operación actual."
                     },
                     {
                         "name": "El Sujeto de Pruebas",
@@ -442,7 +442,7 @@
                         "favored_broad_skill": "",
                         "url": "/es/backgrounds/test-subject/",
                         "skill_url": "/es/backgrounds/test-subject/",
-                        "favored_specialty_skills": "[Voluntad-Voluntad Física] ({{< relref \"/skills/resolve/#physical-resolve\" >}}) <br> [Resistencia-Aguante] ({{< relref \"/skills/stamina/#endurance\" >}}) <br> [Conciencia-Intuición] ({{< relref \"/skills/awareness/#intuition\" >}}) <br> [Ciencia de la Vida-Ciencia Médica] ({{< relref \"/skills/life-science/#medical-science\" >}})",
+                        "favored_specialty_skills": "- [Voluntad-Voluntad Física] ({{< relref \"/skills/resolve/#physical-resolve\" >}})\n- [Resistencia-Aguante] ({{< relref \"/skills/stamina/#endurance\" >}})\n- [Conciencia-Intuición] ({{< relref \"/skills/awareness/#intuition\" >}})\n- [Ciencia de la Vida-Ciencia Médica] ({{< relref \"/skills/life-science/#medical-science\" >}})",
                         "favored_perks": "[Duro como un Clavo] ({{< relref \"/perks_flaws/#tough-as-nails\" >}})",
                         "flaw": "[Enemigo Poderoso] ({{< relref \"/perks_flaws/#powerful-enemy\" >}})",
                         "equipment": "Monitores de recuperación, cicatrices quirúrgicas, estabilizadores.",
@@ -455,12 +455,12 @@
                         "favored_broad_skill": "[Creativity]({{< relref \"/skills/creativity/\" >}})",
                         "url": "/es/backgrounds/virtuoso/",
                         "skill_url": "/es/backgrounds/virtuoso/",
-                        "favored_specialty_skills": "[Creatividad-Expresión Artística] ({{< relref \"/skills/creativity/#artistic-expression\" >}}) <br> [Cultura-Etiqueta] ({{< relref \"/skills/culture/#etiquette-specific\" >}}) <br> [Entretenimiento-Actuar] ({{< relref \"/skills/entertainment/#act\" >}}) <br> [Interacción-Encanto] ({{< relref \"/skills/interaction/#charm\" >}})",
+                        "favored_specialty_skills": "- [Creatividad-Expresión Artística] ({{< relref \"/skills/creativity/#artistic-expression\" >}})\n- [Cultura-Etiqueta] ({{< relref \"/skills/culture/#etiquette-specific\" >}})\n- [Entretenimiento-Actuar] ({{< relref \"/skills/entertainment/#act\" >}})\n- [Interacción-Encanto] ({{< relref \"/skills/interaction/#charm\" >}})",
                         "favored_perks": "[Celebridad] ({{< relref \"/perks_flaws/#celebrity\" >}})",
                         "flaw": "[Temperamento] ({{< relref \"/perks_flaws/#temper\" >}}) (Un ego artístico volátil que estalla impredeciblemente cuando su trabajo, visión o estatus es criticado o interrumpido).",
                         "equipment": "Herramientas de creación personalizadas de alta gama (un holo-estilete a medida o medios físicos), atuendo de lujo y un portafolio digital portátil.",
                         "special_ability": "**Favor del Patrón y Catarsis:** Puedes aprovechar tu prestigio artístico para obtener acceso a eventos exclusivos o asegurar financiación. Recibes una bonificación de -1 paso a las tiradas de habilidad de [Interacción-Encanto] ({{< relref \"/skills/interaction/#charm\" >}}) o [Cultura- Etiqueta] ({{< relref \"/skills/culture/#etiquette-specific\" >}}) al tratar con patrones de la alta sociedad o entusiastas del arte (esta bonificación mejora a -2 pasos si posees la ventaja [Asquerosamente Rico] ({{< relref \"/perks_flaws/#filthy-rich\" >}}) ). Además, participar en tu arte proporciona alivio psicológico: si se utilizan las reglas opcionales de Estrés Persistente, una tirada exitosa de [Creatividad-Expresión Artística] ({{< relref \"/skills/creativity/#artistic-expression\" >}}) otorga una bonificación de +1 (Ordinario), +2 (Bueno) o +3 (Asombroso) pasos a las proezas de Personalidad realizadas para resistir las penalizaciones por estrés.",
-                        "tendencies": "**El Esteta:** Elige un curso de acción basado puramente en su atractivo estético o estilo dramático en lugar de su solidez táctica o eficiencia.<br>**La Diva:** Se niega a cooperar o transigir con el grupo hasta que se cumplan sus demandas específicas, a menudo insignificantes, con respecto a la comodidad o la integridad artística."
+                        "tendencies": "- **El Esteta:** Elige un curso de acción basado puramente en su atractivo estético o estilo dramático en lugar de su solidez táctica o eficiencia.\n- **La Diva:** Se niega a cooperar o transigir con el grupo hasta que se cumplan sus demandas específicas, a menudo insignificantes, con respecto a la comodidad o la integridad artística."
                     },
                     {
                         "name": "El Esclavo del Salario",
@@ -468,7 +468,7 @@
                         "favored_broad_skill": "",
                         "url": "/es/backgrounds/wage-slave/",
                         "skill_url": "/es/backgrounds/wage-slave/",
-                        "favored_specialty_skills": "[Administración-Burocracia] ({{< relref \"/skills/administration/#bureaucracy\" >}}) <br> [Conocimiento-Operación de Computadoras] ({{< relref \"/skills/knowledge/#computer-operation\" >}}) <br> [Negocios-Corporativo] ({{< relref \"/skills/business/#corporate\" >}}) <br> [Administración-Gestión] ({{< relref \"/skills/administration/#management\" >}})",
+                        "favored_specialty_skills": "- [Administración-Burocracia] ({{< relref \"/skills/administration/#bureaucracy\" >}})\n- [Conocimiento-Operación de Computadoras] ({{< relref \"/skills/knowledge/#computer-operation\" >}})\n- [Negocios-Corporativo] ({{< relref \"/skills/business/#corporate\" >}})\n- [Administración-Gestión] ({{< relref \"/skills/administration/#management\" >}})",
                         "favored_perks": "[Sentido Común] ({{< relref \"/perks_flaws/#common-sense\" >}})",
                         "flaw": "[Distraído] ({{< relref \"/perks_flaws/#oblivious\" >}})",
                         "equipment": "Traje de negocios, datapad corporativo, formularios.",
@@ -481,12 +481,12 @@
                         "favored_broad_skill": "",
                         "url": "/es/backgrounds/war-hero/",
                         "skill_url": "/es/backgrounds/war-hero/",
-                        "favored_specialty_skills": "[Liderazgo-Inspirar] ({{< relref \"/skills/leadership/#inspire\" >}}) <br> [Resistencia-Aguante] ({{< relref \"/skills/stamina/#endurance\" >}}) <br> [Voluntad-Voluntad Mental] ({{< relref \"/skills/resolve/#mental-resolve\" >}})",
+                        "favored_specialty_skills": "- [Liderazgo-Inspirar] ({{< relref \"/skills/leadership/#inspire\" >}})\n- [Resistencia-Aguante] ({{< relref \"/skills/stamina/#endurance\" >}})\n- [Voluntad-Voluntad Mental] ({{< relref \"/skills/resolve/#mental-resolve\" >}})",
                         "favored_perks": "[Celebridad] ({{< relref \"/perks_flaws/#celebrity\" >}})",
                         "flaw": "[Vieja Herida] ({{< relref \"/perks_flaws/#old-injury\" >}}) (Un recordatorio físico duradero del evento que te hizo famoso).",
                         "equipment": "Un arma personalizada con cicatrices de batalla, medallas de combate oficiales, una chaqueta militar resistente y un suministro de analgésicos médicos.",
                         "special_ability": "**Carga de Gloria:** Recibes una bonificación de -1 paso a las tiradas de habilidad de [Interacción] ({{< relref \"/skills/interaction/\" >}}) o [Liderazgo] ({{< relref \"/skills/leadership/\" >}}) al tratar con veteranos, personal militar activo o ciudadanos patrióticos que reconocen tu servicio.",
-                        "tendencies": "**La Leyenda Viviente:** Acepta voluntariamente una desventaja significativa o soporta el peso de un ataque para proteger a civiles o aliados, impulsado por la necesidad de estar a la altura de tu reputación imposible.<br>**El Fantasma del Pasado:** Reacciona a una situación actual utilizando el contexto obsoleto o traumático de tu guerra pasada, complicando una simple negociación o infiltración al tratarla como un campo de batalla."
+                        "tendencies": "- **La Leyenda Viviente:** Acepta voluntariamente una desventaja significativa o soporta el peso de un ataque para proteger a civiles o aliados, impulsado por la necesidad de estar a la altura de tu reputación imposible.\n- **El Fantasma del Pasado:** Reacciona a una situación actual utilizando el contexto obsoleto o traumático de tu guerra pasada, complicando una simple negociación o infiltración al tratarla como un campo de batalla."
                     },
                     {
                         "name": "Informante",
@@ -494,12 +494,12 @@
                         "favored_broad_skill": "[Creativity]({{< relref \"/skills/creativity/\" >}})",
                         "url": "/es/backgrounds/whistleblower/",
                         "skill_url": "/es/backgrounds/whistleblower/",
-                        "favored_specialty_skills": "[Creatividad-Escritura] ({{< relref \"/skills/creativity/#writing\" >}}) <br> [Investigar-Buscar] ({{< relref \"/skills/investigate/#search\" >}}) <br> [Interacción-Entrevistar] ({{< relref \"/skills/interaction/#interview\" >}}) <br> [Pillería-Conocimiento Callejero] ({{< relref \"/skills/street-smart/#street-knowledge\" >}})",
+                        "favored_specialty_skills": "- [Creatividad-Escritura] ({{< relref \"/skills/creativity/#writing\" >}})\n- [Investigar-Buscar] ({{< relref \"/skills/investigate/#search\" >}})\n- [Interacción-Entrevistar] ({{< relref \"/skills/interaction/#interview\" >}})\n- [Pillería-Conocimiento Callejero] ({{< relref \"/skills/street-smart/#street-knowledge\" >}})",
                         "favored_perks": "Ninguna.",
                         "flaw": "[Obsesionado] ({{< relref \"/perks_flaws/#obsessed\" >}}) (Con descubrir la verdad absoluta de una situación, independientemente del peligro que represente para ti o tus aliados).",
                         "equipment": "Un equipo de micrograbación de alta gama, un pase de prensa oficial (o una falsificación muy precisa), un comunicador desechable y un depurador de datos portátil.",
                         "special_ability": "**Extraoficialmente:** Recibes una bonificación de -1 paso a las tiradas de [Interacción-Entrevistar] ({{< relref \"/skills/interaction/#interview\" >}}) o [Pillería-Conocimiento Callejero] ({{< relref \"/skills/street-smart/#street-knowledge\" >}}) al intentar sonsacar rumores, información clasificada o declaraciones no oficiales de una fuente reacia.",
-                        "tendencies": "**La Exposición:** Prioriza documentar un crimen, una conspiración o un evento antes que detenerlo, poniéndote en peligro táctico para asegurar que el metraje o la historia sobrevivan.<br>**La Pregunta Difícil:** Interroga o provoca agresivamente a un individuo poderoso en un entorno Social, destruyendo el progreso diplomático para evaluar su reacción."
+                        "tendencies": "- **La Exposición:** Prioriza documentar un crimen, una conspiración o un evento antes que detenerlo, poniéndote en peligro táctico para asegurar que el metraje o la historia sobrevivan.\n- **La Pregunta Difícil:** Interroga o provoca agresivamente a un individuo poderoso en un entorno Social, destruyendo el progreso diplomático para evaluar su reacción."
                     }
                 ]
             }

@@ -10,10 +10,10 @@ Estás entrenado para hablar el lenguaje del poder y el protocolo. Ya sea repres
 * Ninguna.
 
 ## Habilidades de Especialidad Favorecidas:
-* [Interacción-Diplomacia] ({{< relref "/skills/interaction/#diplomacy" >}})
-* [Cultura-Etiqueta] ({{< relref "/skills/culture/#etiquette-specific" >}})
-* [Decepción-Mentir] ({{< relref "/skills/deception/#lie" >}})
-* [Ley-Leyes Galácticas] ({{< relref "/skills/law/#galactic-laws" >}})
+- [Interacción-Diplomacia] ({{< relref "/skills/interaction/#diplomacy" >}})
+- [Cultura-Etiqueta] ({{< relref "/skills/culture/#etiquette-specific" >}})
+- [Decepción-Mentir] ({{< relref "/skills/deception/#lie" >}})
+- [Ley-Leyes Galácticas] ({{< relref "/skills/law/#galactic-laws" >}})
 
 ## Ventajas Favorecidas:
 * [Contactos] ({{< relref "/perks_flaws/#contacts" >}})
@@ -28,6 +28,6 @@ Ropa de negocios de alta calidad, un datapad con protocolos diplomáticos galác
 **Inmunidad Diplomática:** Bono de -1 paso en tiradas de Interacción en entornos formales o diplomáticos.
 
 ## Tendencias (Elige 2):
-* **El Mediador:** Intenta resolver una situación hostil mediante la negociación, incluso cuando el combate sea más fácil.
-* **El Arquitecto:** Retrasa la acción para asegurar que cada variable Social o consecuencia sea considerada.
+- **El Mediador:** Intenta resolver una situación hostil mediante la negociación, incluso cuando el combate sea más fácil.
+- **El Arquitecto:** Retrasa la acción para asegurar que cada variable Social o consecuencia sea considerada.
 

@@ -10,10 +10,10 @@ Fringe survivor finding and fixing value in planetary junk and derelicts.
 * None.
 
 ## Favored Specialty Skills:
-* [Technical Science-Juryrig] ({{< relref "/skills/technical-science/#juryrig" >}})
-* [Street Smart-Street Knowledge] ({{< relref "/skills/street-smart/#street-knowledge" >}})
-* [Interaction-Bargain] ({{< relref "/skills/interaction/#bargain" >}})
-* [Investigate-Search] ({{< relref "/skills/investigate/#search" >}})
+- [Technical Science-Juryrig] ({{< relref "/skills/technical-science/#juryrig" >}})
+- [Street Smart-Street Knowledge] ({{< relref "/skills/street-smart/#street-knowledge" >}})
+- [Interaction-Bargain] ({{< relref "/skills/interaction/#bargain" >}})
+- [Investigate-Search] ({{< relref "/skills/investigate/#search" >}})
 
 ## Favored Perks:
 * [Good Luck] ({{< relref "/perks_flaws/#good-luck" >}})

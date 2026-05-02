@@ -10,10 +10,10 @@ Científico especializado en catalogar y analizar datos en entornos peligrosos.
 * Ninguna.
 
 ## Habilidades de Especialidad Favorecidas:
-* [Conocimiento-Deducir] ({{< relref "/skills/knowledge/#deduce" >}})
-* [Investigar-Buscar] ({{< relref "/skills/investigate/#search" >}})
-* [Ciencia de la Vida-Xenología] ({{< relref "/skills/life-science/#xenology" >}})
-* [Conciencia-Percepción] ({{< relref "/skills/awareness/#perception" >}})
+- [Conocimiento-Deducir] ({{< relref "/skills/knowledge/#deduce" >}})
+- [Investigar-Buscar] ({{< relref "/skills/investigate/#search" >}})
+- [Ciencia de la Vida-Xenología] ({{< relref "/skills/life-science/#xenology" >}})
+- [Conciencia-Percepción] ({{< relref "/skills/awareness/#perception" >}})
 
 ## Ventajas Favorecidas:
 * [Observador] ({{< relref "/perks_flaws/#observant" >}})

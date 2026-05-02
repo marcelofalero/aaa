@@ -346,3 +346,271 @@ A first encounter skill check is always a complex chore, and may take days, week
 
 Upon the successful completion of the first encounter skill check, the hero immediately gains rank 1 in the Knowledge-language and Culture-etiquette skills that relate to the formerly unknown culture.
 
+
+# Source Material: Deception (from Page 99-100)
+
+## DECEPTION (Broad Skill)
+This broad skill represents a hero's proficiency at deceiving others through conversation and face-toface interaction. Whether a hero tries to bluff his way out of trouble, bribe a suspicious official, fast-talk dimwitted thugs into confusion, or gamble his way into a small fortune, this broad skill covers all verbal tricks and subterfuges. 
+
+Although the use of Deception or any of its specialty skills can affect the attitude of someone who is victimized by the skill, this shift in attitude is not necessarily long-lasting. Sometimes even the slightest change in a situation will spoil a character’s ruse, or perhaps require another skill check to see if he succeeds in perpetuating his trickery. 
+
+A hero's Deception situation die is modified by his target’s Intelligence resistance modifier. In addition, the Gamemaster may award bonuses or penalties depending on past dealings or other details that may come into play. The greater the level of success the hero achieves, the more convincing his deception appears to be.
+
+## Bluff (Specialty)
+This specialty skill represents a talent for misleading or deceiving through false bravado or outright lies, or deterring a character by displaying extreme (and probably unwarranted) confidence. Bluff is used to determine the result of a hero's trick, con, or boldfaced lie. No matter what other props a hero may use in a bluff attempt, the most important component is the hero's attitude and verbal interaction. This is the ability to make another character believe something that isn't true. 
+
+On a Critical Failure, the bluff is seen for what it is, and the target becomes Hostile or Combative. On a Failure, instead of having a positive effect, the hero’s patter is considered to be annoying and condescending. On an [Ordinary], the bluff works for the immediate scene, although no change in attitude occurs in the affected character(s). On a [Good] result, the target's attitude toward the bluffer improves by one grade (Neutral to Friendly, Friendly to Charmed, etc.) for d8+1 time units before he figures out that he was tricked. On an [Amazing], the target’s attitude improves by two grades for d12+2 time units before he figures out that he was tricked.
+
+## Bribe (Specialty)
+Whenever a hero wants to offer another character money, goods, information, or services to get that character to do what the hero wants, a bribe check is called for. 
+
+On a Critical Failure, not only is the bribe refused, but the target becomes Hostile or even Combative. In all cases, there's no way he's going to accept the bribe. A Failure result means that the bribe is refused, and if the hero wants to try again he must raise the value of the bribe being offered. Each subsequent Failure result adds to the size of the bribe until the hero either rolls a Critical Failure (with effects as described above) or achieves some degree of success. 
+
+An [Ordinary] indicates that the bribe is accepted, but the attitude of the target is unchanged—a Hostile guard will accept your money and let you pass, but if he sees you again he'll still be Hostile. On a [Good], the bribe is accepted, and the target’s attitude improves by one grade for 2d6 hours or until the hero does something to change the relationship. (Bought friendships only last until the money runs out and usually require a steady flow of cash or favors.) On an [Amazing] result, the bribe is accepted, and the target's attitude improves by two grades for 4d6 hours or until the hero does something to change the relationship.
+
+## Gamble (Specialty)
+This specialty skill represents a hero's proficiency at various games of chance. With each purchase of the specialty skill, the player selects a different game (subject to the approval of the Gamemaster) for his hero to be skilled in. 
+
+With a successful gamble check, a hero can estimate the odds, determine if a particular game has been rigged, count cards, spot a cheater or another skilled gambler, and increase his own odds of winning. 
+
+A gambler can improve his odds of winning either by playing skillfully and honestly—or by cheating. If a hero plays honestly, the winner in a gambling contest is the one who achieves the highest success level, with each tie representing an increase in the stakes. A gambler's skill check is made with a -2 bonus if he is playing against an untrained opponent (someone who does not have the Deception broad skill), with no modifier if playing against a trained opponent (someone who has Deception and perhaps also gamble, but at the same or a lower rank), or with a +2 penalty if playing against a trained opponent of a higher skill rank. 
+
+If a hero decides to cheat, different modifiers apply: a -3 bonus if playing against an untrained opponent, a +1 penalty if playing against a trained opponent, and a +3 penalty if playing against a trained opponent of a higher skill rank. Payoffs are better, however, depending on the check result that ends the contest: On any Critical Failure, the hero is caught cheating. On a Marginal success, he wins the pot; on an [Ordinary], he wins the pot plus a side bet equal to half of the pot; [Good], he wins the pot plus a side bet of an equal amount; [Amazing], he wins the pot plus a side bet of twice that amount. As an option, you may use the “Character vs. Character” rules on page 63 to determine the outcome when heroes gamble against one another. In this case, however, the size of the pot is agreed upon before any dice are rolled.
+
+# Source Material: Demolitions (from Pages 81-82)
+
+## DEMOLITIONS (Broad Skill)
+This broad skill provides a hero with training in the basics of setting explosive charges to demolish a specific target. A skilled hero has a working knowledge of handling explosives, using primers and timing devices, and placing charges for maximum effect. 
+
+Prepared charges come in several forms—satchel bombs, mines, and objects using plastic explosive. A prepared charge inflicts a specific type and amount of damage on objects within its explosive radius, as detailed in “Prepared Explosives” on page 180 in Chapter 11: Weapons & Armor. 
+
+Setting a prepared charge can be a simple activity, requiring only one skill check if a hero merely wants to place an explosive in a readily accessible area. A Failure result on this skill check means the device is a dud and won't explode as planned. A Critical Failure result could mean that the device explodes prematurely, depending on the type of explosive being used. 
+
+If a hero wants to set a charge so that it won't be easily discovered, a complex skill check (see page 62) is necessary. The complexity of that check (how many successes are needed) is related to how well the character wants the device to be hidden: 
+- **Marginal (2 successes):** Hidden well enough that any opponents’ Awareness checks to spot the device are made at a +1 penalty. 
+- **Ordinary (4 successes):** +2 penalty to observer.
+- **Good (6 successes):** +3 penalty to observer.
+- **Amazing (8 successes):** +4 penalty to observer.
+
+In addition, completing a complex skill check of [Good] complexity indicates that the charge has been set in a spot that's not only well concealed but vulnerable—when the explosive is detonated, it causes damage of one grade better than normal ([Ordinary] damage becomes [Good] damage, for example). For a successful complex skill check of [Amazing] complexity, the damage done by the blast improves by two grades (from [Ordinary] to [Amazing]). 
+
+## Disarm (Specialty)
+The disarm skill lets a hero attempt to render bombs, mines, and other demolition packages inoperative before they explode. A hero does not need to make a skill check to disarm his own work or any common explosives. A skill check is required when time is of the essence, if the explosive is of unusual make, or if it has been rigged with security devices or booby traps. Except in the very simplest of cases, a complex skill check is involved.
+
+## Scratch-Built Explosives (Specialty)
+This skill can't be used untrained. This skill lets a hero attempt to build a demolition package from scratch, or tamper with military ordnance such as a mortar shell to make it usable as a demolition charge. The use of the skill assumes that the hero has the proper materials and tools on hand; the skill check receives a +2 penalty if the hero is forced to use common items (such as things found around a house). 
+
+Making a scratch-built explosive device takes some time. When the maker of a device declares his job to be finished, the Gamemaster will assign a situation die modifier to the upcoming skill check, ranging from a substantial bonus if the hero spent a lot of time on the job to a sizable penalty if the job was done in extreme haste. 
+
+A skill check is then made to determine the degree of success, which is directly related to the potency of the charge. Table P23 lists the three types of scratch-built explosive devices and the amount of damage each one causes. On a Critical Failure, the bomb explodes right at the end of the creation process, injuring the maker. A skill check result of [Ordinary], [Good], or [Amazing] also defines the complexity of the explosive for any subsequent disarm checks by other characters.
+
+## Set Explosives (Specialty)
+This specialty skill allows a hero to improve his ability to set manufactured explosive charges. See the description of the Demolitions broad skill for information on how this skill is employed.
+
+# Source Material: Entertainment (from Pages 100-101)
+
+## ENTERTAINMENT (Broad Skill)
+This broad skill represents a hero's proficiency in the performing arts. A hero with this skill is competent enough to perform amateur theater or play at the equivalent of a high school dance, while the specialty skills allow a hero to become a firstrate performer—or even a star. 
+
+Technical knowledge and training are an important part of this skill, but it also represents a hero's stage or screen presence, his magnetism in front of an audience, and his ability to play to that audience and elicit an emotional response. Skill checks are modified by the target's Will resistance modifier if the hero tries to fool or alter the emotions of his audience by entertaining them; or by the target's Personality resistance modifier if he tries to impress or otherwise alter attitudes toward him. 
+
+The greater the level of success the hero achieves, the more powerful his performance (the better the improvement in the audience's attitude). A Critical Failure indicates some bit of bad luck has occurred—a microphone or speaker goes out, a set collapses, an instrument breaks, and so forth. 
+
+As with other similar uses of encounter skills, the beginning attitude of an audience toward a performer is either Hostile, Neutral, or Friendly. In addition to any modifier for the audience’s attitude (see TABLE P25: ENCOUNTER SKILL EFFECTS), other factors can affect an Entertainment skill check. 
+- **Show a good time:** -1 bonus. 
+- **Make a name for himself:** +1 penalty. 
+- **Ulterior motive (stun/shock/divert):** +3 penalty. 
+
+## Act (Specialty)
+This specialty skill represents a talent for playing a part or assuming a dramatic role. It also covers impersonation and the skills and techniques of the stage and screen. In most cases, act is used to entertain. 
+- **Disguise:** When a hero achieves rank 4 in the act skill, he becomes able to employ stage and film makeup and techniques to change his appearance or even to look like someone else. Applying a disguise requires a complex skill check (Ordinary, Good, or Amazing). If the disguise is applied successfully, other characters who later observe the hero receive a penalty to any Awareness-perception skill checks to see through the disguise: a +1 penalty for an Ordinary disguise, +2 for a [Good] disguise, and +3 for an [Amazing] disguise. 
+
+## Dance (Specialty)
+The dance skill represents a talent for moving rhythmically to music by following set steps and gestures or by improvisation. It also covers the technical aspects of performance dance. An [Amazing] result indicates that the dancer is poetry in motion. 
+
+## Musical Instrument (Specialty)
+This skill can’t be used untrained. The musical instrument skill represents a talent for playing a particular musical instrument and reading music. When a hero purchases this skill, he selects a specific musical instrument. 
+
+## Sing (Specialty)
+Sing represents a talent for carrying a note and singing songs. A hero with this skill is a trained vocalist with a strong and melodious voice. 
+
+## Entertainment Skill Rank Benefit: Enhance Another Skill
+Entertainment specialty skills can be combined with certain other skills for greater effect. The higher a hero's skill rank in the Entertainment skill, the better his chance of succeeding at using another skill in combination: 
+- **Rank 1:** -1 bonus to the check for the other skill.
+- **Rank 4:** -2 bonus.
+- **Rank 8:** -3 bonus.
+- **Rank 12:** -4 bonus.
+Possible combinations include act or dance with Interaction—seduce; dance with Covert Ops—pickpocket or Acrobatics; sing with Interaction—taunt; and musical instrument with Leadership—inspire.
+
+# Source Material: Heavy Weapons (from Page 69)
+
+## HEAVY WEAPONS (Broad Skill)
+This broad skill provides a hero with training in the use of heavy weaponry that isn't part of a ship or a vehicle, including mortars, grenade and rocket launchers, shoulder-fired missiles, and heavy firearms. Weapons that are part of a large ship or a single-operator vehicle require the use of System Operation or Vehicle Operation, respectively. 
+
+Heavy weapons are listed on TABLE P40: HEAVY WEAPONS on pages 182-183 in Chapter 11: Weapons & Armor. Each one is designated as either a direct fire weapon or an indirect fire weapon. The Heavy Weapons broad skill allows a hero to use any heavy weapon at the trained level. 
+
+### Range Modifiers (Table P21)
+- **Short:** Direct (-1 step), Indirect (+2 steps).
+- **Medium:** Direct (None), Indirect (-2 steps).
+- **Long:** Direct (+1 step), Indirect (None).
+
+In addition, the accuracy of an indirect-fire weapon depends on the range between the shooter and the target location as well as the type of success achieved, as shown on TABLE P20: Accuracy By RANGE. 
+
+## Direct Fire (Specialty)
+This specialty skill allows a hero to improve his proficiency with direct-fire heavy weapons. These weapons work just like normal firearms, requiring the user to aim them at a target. Direct-fire heavy weapons include heavy-caliber firearms, plasma guns, and renders. 
+
+## Indirect Fire (Specialty)
+This specialty skill allows a hero to improve his proficiency with indirect-fire heavy weapons. These weapons can fire over or around obstacles; they deliver an area effect attack instead of an attack against a specific target. Indirect-fire heavy weapons include grenade launchers, rocket launchers, shoulder-fired missiles, and mortars.
+
+# Source Material: Interaction (from Pages 101-103)
+
+## INTERACTION (Broad Skill)
+This broad skill provides a hero with the basics of interpersonal contact with members of the same species and native culture. Interaction includes such specific areas as making bargains, knowing how to question, charm, seduce, or intimidate another character, and being able to taunt and trade insults with the best of them. 
+
+Interaction is an encounter skill, meaning that any skill check takes into account the target's attitude (see TaBLE P25: ENCOUNTER SKILL EFFECTS). However, neither a Combative character nor a Fanatic character can be influenced by Interaction. The target's Will resistance modifier also applies. In general, the changes in attitude that can be brought about by the use of Interaction are longer-lasting than the changes achieved through the use of Deception or Entertainment skills. Otherwise, a target’s change in attitude lasts until the hero does something to alter that attitude in either a positive or negative way. 
+
+## Bargain (Specialty)
+This specialty skill represents a hero’s ability to make and close deals of all kinds. It provides a hero with the skills to haggle, negotiate, and bluster his way through a deal. Bargain situation modifiers include supply and demand of the item in question, as well as the Will resistance modifier of the person on the other end of the deal. The greater the degree of success, the better the deal turns out to be for the hero making it. 
+
+## Charm (Specialty)
+This specialty skill represents a hero's ability to change the attitudes of those he interacts with by presenting himself in a likable, friendly manner. Note that charm can only be used on targets whose attitude is Neutral or Friendly. A character can’t charm a Hostile or Combative target. 
+
+## Interview (Specialty)
+The interview skill represents a hero’s ability to get information from another character. It differs from Investigate-interrogate in the amount of aggressiveness applied by the questioner and the inclination of the interviewee to cooperate. Interview can't be used on someone with a Hostile or Combative attitude toward the questioner. 
+
+## Intimidate (Specialty)
+This skill represents a hero's ability to threaten another character, either by physical presence or the weight of authority. Intimidate enables a hero to force an opponent to back down, reveal information, or cooperate in some other way due to fear. It's not possible to intimidate a Fanatic or Combative character. 
+
+## Seduce (Specialty)
+The seduce skill represents the ability to entice or beguile another character through the use of opening lines, witty exchanges, playful conversation, and intimate behavior. Note that seduce can only be used on targets whose attitude is Friendly or better. To actually accomplish the seduction, the hero must achieve an [Ordinary] result or better. 
+
+Every time the seducer asks for a favor of any sort, the seduced character makes a Will feat check with a modifier based on his or her attitude (Charmed, +1 penalty; Fanatic, +2 penalty). A success on this feat check indicates that the seduced character’s attitude is altered by one grade toward Neutral. Once the seduced character's attitude shifts to Friendly, he or she no longer behaves as though seduced. 
+
+## Taunt (Specialty)
+A successful taunt can cause an opponent to become rattled or even attempt an action he knows is against his best interest. The skill has no effect on a target whose attitude is Charmed or Fanatic. 
+- **Ordinary:** +1 penalty to the target's next action. 
+- **Good:** +2 penalty to his next action. 
+- **Amazing:** +3 penalty to his next action and shifts one grade in attitude toward Combative.
+- **Critical Failure:** Target receives a -2 bonus to his next action if it is meant to directly affect the user of the taunt skill.
+
+# Source Material: Investigate (from Page 94, 96)
+
+## INVESTIGATE (Broad Skill)
+This broad skill provides a hero with the training and ability to examine things systematically through observation, inquiry, and attention to detail. Unlike the Awareness skills, which handle the processing of immediate observations, Investigate takes time. In fact, the more time a hero spends in the act of an investigation, the better the chance of a successful skill check. 
+
+The broad skill can be used when a hero tries to apply logic and reason to reach a conclusion or deduce the solution to a problem; when a hero wants to search a specific area to turn up clues or other information; or when he tries to track a quarry that has left a detectable trail. 
+
+Situation modifiers for Investigate depend on the time spent and the nature of the clues. Note that the definition of “time units” depends on the type of scene being run (phases in combat, or minutes, hours, or days in other scenes). Any type of success on a skill check reveals a significant bit of information, but the accuracy and level of detail of that information are tied to the degree of success. 
+
+## Interrogate (Specialty)
+The interrogate skill represents a hero's ability to ask the right questions in order to gain information from a specific target character. That character’s Will resistance modifier is his protection from the probing questions of a skilled interrogator. The skill covers the sort of interrogation that might be conducted by a seasoned journalist, a law officer, a lawyer, or a trained torturer. It may include a hint of violence or actual pain-inducing techniques, but it usually just involves calm and reasonable debate, rhetoric, and trick questions to cause the target to slip up. 
+
+## Search (Specialty)
+This specialty skill enables a hero to develop his eye for detail and his ability to spot hidden objects. Search is used when a hero wants to look for clues in a specific area, find a particular object or person he knows is in the area, or hunt for important objects in as fast and systematic a fashion as possible. The degree of success achieved on a skill check determines what the hero spots after a certain amount of time spent searching, ranging from a single small item or piece of information on a short search to several small items or a major piece of information on a long search. 
+
+## Track (Specialty)
+This specialty skill allows a hero to improve his ability to follow a person, creature, or land vehicle by noting the tracks it leaves in its wake. Tracks can be anything from actual footprints to telltale signs such as broken branches, discarded litter, obvious waste material, or other evidence of passage. A tracker may not necessarily be following physical evidence; he may be using detective skills, interview techniques, sensors, or other special equipment. 
+
+# Source Material: Knowledge (from Pages 82-84)
+
+## KNOWLEDGE (Broad Skill)
+This broad skill represents a hero's ability to know at least a little bit about any particular subject. It represents the hero's ability to recall a class he took, an article he read, or a documentary he saw on the topic in question. 
+
+### Knowledge Categories (Table P24)
+- **Trivial:** Deals with simple, obvious information. Modifier: +1 step bonus; Complexity: Marginal. 
+- **General:** Involves key features of a topic. Modifier: None; Complexity: Ordinary. 
+- **Specific:** Covers special features, details intimate to the topic. Modifier: +2 steps penalty; Complexity: Good. 
+- **Expert:** Involves detail acquired through experience or research. Modifier: +3 steps penalty; Complexity: Amazing. 
+
+## Computer Operation (Specialty)
+This skill can't be used untrained. This skill allows a character to improve his ability to make computers perform, specifically his ability to get the most out of the software. The degree of success achieved on a skill check relates to the quality or quantity of information accessed or the speed of the task.
+
+## Deduce (Specialty)
+With this specialty skill, a hero can hone his abilities to use reason and logic to reach a conclusion. 
+- **Resistance Modifier:** At higher ranks, provides an improvement to a hero’s Intelligence resistance modifier: +1 at rank 4, +2 at rank 8, and +3 at rank 12. 
+
+## First Aid (Specialty)
+This skill can't be used untrained. Basic training in first aid techniques, kits, and trauma packs. 
+- **Heal Stun Damage:** Restore 2, 3, or 4 stun points (Ordinary, Good, or Amazing). 
+- **Knockout Recovery:** Brings character back to consciousness and recovers 1, 2, or 3 stun points. 
+- **Heal Wound Damage:** Requires a complex skill check (Good with kit, Ordinary with trauma pack). Success heals 1 wound (kit) or 2 wounds (trauma pack). Can be used once per set of wounds. 
+- **Dying:** Stabilize mortal damage, removing the need for a Stamina-endurance check at end of scene. 
+- **Improved First Aid:** Reduces situation die penalties by 1 step at rank 4, 2 steps at rank 8, and 3 steps at rank 12. 
+
+## Language, Specific Skill (Specialty)
+This skill can’t be used untrained. Fluency in a specific language. 
+- **Fluency:** Rank 3 represents native fluency. 
+- **Improved Communication:** High ranks provide a bonus to other skills involving language: Rank 6 (-1 bonus), Rank 9 (-2), Rank 12 (-3). 
+
+## Knowledge, Specific Skill (Specialty)
+A blank line provided for academic disciplines (history, math) or hobbies. 
+
+# Source Material: Law (from Pages 84-85)
+
+## LAaw (Broad Skill)
+This broad skill provides a hero with general knowledge of the laws and legal systems of her native society, making it possible for the hero to function as an advocate in a courtroom situation or to perform the basic duties of a law enforcement professional. With a successful skill check, a hero can avoid legal entanglements, understand court procedures, and have a working knowledge of the techniques used by a specific society's law enforcers. 
+
+The Law skill can be used in an attempt to change the attitude of an individual. In such a case, it is treated as an encounter skill. 
+
+### Courtroom Resolution
+If a legal issue is resolved "off-camera," alternating skill checks are used until someone gets a Critical Failure or an Amazing result. 
+- **Amazing:** Opponent takes a +3 penalty, or the hero wins the case outright. 
+- **Good:** Opponent takes a +1 penalty. 
+- **Ordinary:** Opponent's check is made with no modifier. 
+- **Failure:** Opponent receives a -1 bonus. 
+- **Critical Failure:** Opponent receives a -3 bonus, or the hero loses the case outright. 
+
+## Court Procedures (Specialty)
+Lawyers, judges, and others use this skill to interact in a courtroom setting. This aspect of the broad skill is used to argue a case or a point of view in an official proceeding. 
+
+## Law Enforcement Procedures (Specialty)
+Used by police officers, detectives, and bounty hunters to follow (or bend) legal procedures. Topics include surveillance, search and seizure, arrest and detainment procedures, and report filing. This skill determines how "Good" an arrest is, providing ammunition to the lawyers. 
+
+## Law, Specific Skill (Specialty)
+This skill can't be used untrained. For each separate purchase, a hero selects a specific culture or type of law (maritime, salvage, etc.). Familiarity translates into a bonus to the Law broad skill or other specialties when practiced within that jurisdiction: 
+- **Rank 3:** -1 bonus. 
+- **Rank 6:** -2 bonus. 
+- **Rank 9:** -3 bonus. 
+- **Rank 12:** -4 bonus. 
+
+# Source Material: Leadership (from Page 102)
+
+## LEADERSHIP (Broad Skill)
+This broad skill provides a hero with the abilities and talents of a leader. With leadership training, a hero can coordinate a group to get it to perform better or to work as a team. Only one character can assume the role of leader at a time. 
+
+A leader, by using an action to attempt a Leadership skill check, provides a -1 bonus to all actions performed in the remainder of the current round and all of the following round by a certain number of followers. The check is modified by the attitude of the targets. The Leadership broad skill can’t be used on targets who are Combative. 
+
+### Skill check results: 
+- **Ordinary:** As many as two followers receive the leadership bonus. 
+- **Good:** As many as four followers receive the leadership bonus. 
+- **Amazing:** As many as six followers receive the leadership bonus. 
+- **Failure:** Followers receive no bonus; the leader can try again next round. 
+- **Critical Failure:** Leader confuses followers, who receive a +1 penalty for the remainder of the current round and all of the following round. No further Leadership checks can be made in this scene. 
+
+## Command (Specialty)
+This specialty skill represents the hero's ability to lead others by virtue of sheer authoritativeness and persuasive ability. Used by military officers, elected officials, and law enforcers to issue orders and see that they're carried out. Can’t be used on targets who are Combative. 
+
+## Inspire (Specialty)
+This skill can’t be used untrained. This specialty skill represents the ability to command by example. Used to favorably alter the attitude of the target(s). One major difference is that inspire can be used on targets who are Hostile or Combative. 
+
+### Rank Benefit: Increased Effect
+- **Rank 4:** -1 situation die bonus. 
+- **Rank 8:** -2 bonus. 
+- **Rank 12:** -3 bonus. 
+
+# Source Material: Life Science (from Pages 85-86)
+
+## LiFE SCIENCE (Broad Skill)
+This broad skill represents a hero’s training in the life sciences, including biology, botany, genetics, and zoology. Skill checks involving this skill and its associated specialties are made in the same way as Knowledge skill checks (Simple for recall, Complex for research). 
+
+## Biology, Botany, Genetics, Zoology (Specialties)
+These specialty skills must be purchased separately. Useful for explorers, scientists, or doctors. 
+- **Biology:** Study of organisms and biochemical processes. 
+- **Botany:** Study of plants. 
+- **Genetics:** Study of heredity and genes, basis of genetic engineering and cloning. 
+- **Zoology:** Study of animals and animal life. 
+- **Increased Effect:** As a character attains higher ranks, he receives a situation die bonus on skill checks assisted by that specialty: -1 step at rank 3, -2 steps at rank 6, -3 steps at rank 9, and -4 steps at rank 12. 
+
+## Xenology (Specialty)
+This skill can’t be used untrained. This specialty skill is the study of animal life forms of an alien nature. It allows a character to make educated guesses as to the nature, behavior, and abilities of alien life forms. 
+- **Increased Effect:** As a character attains higher ranks, he receives a situation die bonus on skill checks assisted by this skill: -1 step at rank 3, -2 steps at rank 6, -3 steps at rank 9, and -4 steps at rank 12. 

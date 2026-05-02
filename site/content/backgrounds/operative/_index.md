@@ -10,10 +10,10 @@ Paramilitary professional specialized in direct action and tactical missions.
 * None.
 
 ## Favored Specialty Skills:
-* [Modern Ranged Weapons-SMG] ({{< relref "/skills/modern-ranged-weapons/#smg" >}})
-* [Stamina-Endurance] ({{< relref "/skills/stamina/#endurance" >}})
-* [Tactics- Infantry Tactics] ({{< relref "/skills/tactics/#infantry-tactics" >}})
-* [Athletics-Run] ({{< relref "/skills/athletics/#run" >}})
+- [Modern Ranged Weapons-SMG] ({{< relref "/skills/modern-ranged-weapons/#smg" >}})
+- [Stamina-Endurance] ({{< relref "/skills/stamina/#endurance" >}})
+- [Tactics- Infantry Tactics] ({{< relref "/skills/tactics/#infantry-tactics" >}})
+- [Athletics-Run] ({{< relref "/skills/athletics/#run" >}})
 
 ## Favored Perks:
 * [Reflexes] ({{< relref "/perks_flaws/#reflexes" >}})

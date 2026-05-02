@@ -10,10 +10,10 @@ Superviviente de procedimientos de laboratorio experimentales con percepciones f
 * Ninguna.
 
 ## Habilidades de Especialidad Favorecidas:
-* [Voluntad-Voluntad Física] ({{< relref "/skills/resolve/#physical-resolve" >}})
-* [Resistencia-Aguante] ({{< relref "/skills/stamina/#endurance" >}})
-* [Conciencia-Intuición] ({{< relref "/skills/awareness/#intuition" >}})
-* [Ciencia de la Vida-Ciencia Médica] ({{< relref "/skills/life-science/#medical-science" >}})
+- [Voluntad-Voluntad Física] ({{< relref "/skills/resolve/#physical-resolve" >}})
+- [Resistencia-Aguante] ({{< relref "/skills/stamina/#endurance" >}})
+- [Conciencia-Intuición] ({{< relref "/skills/awareness/#intuition" >}})
+- [Ciencia de la Vida-Ciencia Médica] ({{< relref "/skills/life-science/#medical-science" >}})
 
 ## Ventajas Favorecidas:
 * [Duro como un Clavo] ({{< relref "/perks_flaws/#tough-as-nails" >}})

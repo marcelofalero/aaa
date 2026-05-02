@@ -10,10 +10,10 @@ Healer listo para el combate entrenado para salvar vidas bajo fuego.
 * Ninguna.
 
 ## Habilidades de Especialidad Favorecidas:
-* [Conocimiento-Primeros Auxilios] ({{< relref "/skills/knowledge/#first-aid" >}})
-* [Ciencia Médica-Tratamiento] ({{< relref "/skills/medical-science/#treatment" >}})
-* [Atletismo-Correr] ({{< relref "/skills/athletics/#run" >}})
-* [Voluntad- Voluntad Física] ({{< relref "/skills/resolve/#physical-resolve" >}})
+- [Conocimiento-Primeros Auxilios] ({{< relref "/skills/knowledge/#first-aid" >}})
+- [Ciencia Médica-Tratamiento] ({{< relref "/skills/medical-science/#treatment" >}})
+- [Atletismo-Correr] ({{< relref "/skills/athletics/#run" >}})
+- [Voluntad- Voluntad Física] ({{< relref "/skills/resolve/#physical-resolve" >}})
 
 ## Ventajas Favorecidas:
 * [Reflejos] ({{< relref "/perks_flaws/#reflexes" >}})

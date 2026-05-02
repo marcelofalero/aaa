@@ -10,10 +10,10 @@ Mente técnica que encuentra soluciones no estándar a problemas imposibles.
 * Ninguna.
 
 ## Habilidades de Especialidad Favorecidas:
-* [Ciencia Técnica-Invención] ({{< relref "/skills/technical-science/#invention" >}})
-* [Ciencia Técnica-Arreglo de Fortuna] ({{< relref "/skills/technical-science/#juryrig" >}})
-* [Informática- Hardware] ({{< relref "/skills/computer-science/#hardware" >}})
-* [Ciencia Técnica- Reparar] ({{< relref "/skills/technical-science/#repair" >}})
+- [Ciencia Técnica-Invención] ({{< relref "/skills/technical-science/#invention" >}})
+- [Ciencia Técnica-Arreglo de Fortuna] ({{< relref "/skills/technical-science/#juryrig" >}})
+- [Informática- Hardware] ({{< relref "/skills/computer-science/#hardware" >}})
+- [Ciencia Técnica- Reparar] ({{< relref "/skills/technical-science/#repair" >}})
 
 ## Ventajas Favorecidas:
 * [Manos Firmes] ({{< relref "/perks_flaws/#stable-hands" >}})

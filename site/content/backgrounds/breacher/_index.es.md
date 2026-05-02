@@ -10,10 +10,10 @@ Especialista en sortear barreras físicas e iniciar entradas tácticas.
 * Ninguna.
 
 ## Habilidades de Especialidad Favorecidas:
-* [Seguridad-Dispositivos de Seguridad] ({{< relref "/skills/security/#security-devices" >}})
-* [Táctica-Táctica de Infantería] ({{< relref "/skills/tactics/#infantry-tactics" >}})
-* [Armas a Distancia Modernas] ({{< relref "/skills/modern-ranged-weapons/" >}})
-* [Atletismo-Escalar] ({{< relref "/skills/athletics/#climb" >}})
+- [Seguridad-Dispositivos de Seguridad] ({{< relref "/skills/security/#security-devices" >}})
+- [Táctica-Táctica de Infantería] ({{< relref "/skills/tactics/#infantry-tactics" >}})
+- [Armas a Distancia Modernas] ({{< relref "/skills/modern-ranged-weapons/" >}})
+- [Atletismo-Escalar] ({{< relref "/skills/athletics/#climb" >}})
 
 ## Ventajas Favorecidas:
 * [Duro como un Clavo] ({{< relref "/perks_flaws/#tough-as-nails" >}})

@@ -10,10 +10,10 @@ Eres el pegamento que mantiene unidos los bajos fondos. Sabes quién está vendi
 * Ninguna.
 
 ## Habilidades de Especialidad Favorecidas:
-* [Interacción-Negociar] ({{< relref "/skills/interaction/#bargain" >}})
-* [Pillería-Conocimiento Callejero] ({{< relref "/skills/street-smart/#street-knowledge" >}})
-* [Negocios-Negocios Ilícitos] ({{< relref "/skills/business/#illicit-business" >}})
-* [Administración-Contabilidad] ({{< relref "/skills/administration/#accounting" >}})
+- [Interacción-Negociar] ({{< relref "/skills/interaction/#bargain" >}})
+- [Pillería-Conocimiento Callejero] ({{< relref "/skills/street-smart/#street-knowledge" >}})
+- [Negocios-Negocios Ilícitos] ({{< relref "/skills/business/#illicit-business" >}})
+- [Administración-Contabilidad] ({{< relref "/skills/administration/#accounting" >}})
 
 ## Ventajas Favorecidas:
 * [Contactos] ({{< relref "/perks_flaws/#contacts" >}})

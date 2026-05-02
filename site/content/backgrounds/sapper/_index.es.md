@@ -10,10 +10,10 @@ Experto en demoliciones especializado en destrucción estructural y entrada tác
 * Ninguna.
 
 ## Habilidades de Especialidad Favorecidas:
-* [Demoliciones-Colocar Explosivos] ({{< relref "/skills/demolitions/#set-explosives" >}})
-* [Armas Pesadas-Fuego Directo] ({{< relref "/skills/heavy-weapons/#direct-fire" >}})
-* [Ciencia Técnica-Arreglo de Fortuna] ({{< relref "/skills/technical-science/#juryrig" >}})
-* [Armas a Distancia Modernas] ({{< relref "/skills/modern-ranged-weapons/" >}})
+- [Demoliciones-Colocar Explosivos] ({{< relref "/skills/demolitions/#set-explosives" >}})
+- [Armas Pesadas-Fuego Directo] ({{< relref "/skills/heavy-weapons/#direct-fire" >}})
+- [Ciencia Técnica-Arreglo de Fortuna] ({{< relref "/skills/technical-science/#juryrig" >}})
+- [Armas a Distancia Modernas] ({{< relref "/skills/modern-ranged-weapons/" >}})
 
 ## Ventajas Favorecidas:
 * [Manos Firmes] ({{< relref "/perks_flaws/#stable-hands" >}})

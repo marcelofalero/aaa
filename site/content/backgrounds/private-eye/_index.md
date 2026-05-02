@@ -10,10 +10,10 @@ Hardboiled urban investigator uncovering hidden truths in dark corners.
 * None.
 
 ## Favored Specialty Skills:
-* [Investigate-Search] ({{< relref "/skills/investigate/#search" >}})
-* [Awareness-Perception] ({{< relref "/skills/awareness/#perception" >}})
-* [Street Smart-Street Knowledge] ({{< relref "/skills/street-smart/#street-knowledge" >}})
-* [Interaction-Interview] ({{< relref "/skills/interaction/#interview" >}})
+- [Investigate-Search] ({{< relref "/skills/investigate/#search" >}})
+- [Awareness-Perception] ({{< relref "/skills/awareness/#perception" >}})
+- [Street Smart-Street Knowledge] ({{< relref "/skills/street-smart/#street-knowledge" >}})
+- [Interaction-Interview] ({{< relref "/skills/interaction/#interview" >}})
 
 ## Favored Perks:
 * [Observant] ({{< relref "/perks_flaws/#observant" >}})

@@ -10,10 +10,10 @@ Mientras las fuerzas terrestres luchan por metros, tú luchas por sistemas. Enti
 * Ninguna.
 
 ## Habilidades de Especialidad Favorecidas:
-* [Tácticas-Tácticas Espaciales] ({{< relref "/skills/tactics/#space-tactics" >}})
-* [Navegación-Astrogación de Sistemas] ({{< relref "/skills/navigation/#astrogation-system" >}})
-* [Operación de Sistemas-Sensores] ({{< relref "/skills/system-operation/#sensors" >}})
-* [Liderazgo-Mando] ({{< relref "/skills/leadership/#command" >}})
+- [Tácticas-Tácticas Espaciales] ({{< relref "/skills/tactics/#space-tactics" >}})
+- [Navegación-Astrogación de Sistemas] ({{< relref "/skills/navigation/#astrogation-system" >}})
+- [Operación de Sistemas-Sensores] ({{< relref "/skills/system-operation/#sensors" >}})
+- [Liderazgo-Mando] ({{< relref "/skills/leadership/#command" >}})
 
 ## Ventajas Favorecidas:
 * [Reputación] ({{< relref "/perks_flaws/#reputation" >}})
@@ -28,6 +28,6 @@ Un uniforme naval, un traje espacial personal (traje de vacío) diseñado para e
 **Intuición de Puente:** Bono de -1 paso en Operación de Sistemas mientras estás en el puente de una nave estelar.
 
 ## Tendencias (Elige 2):
-* **El Alma de la Nave:** Prioriza la integridad estructural y el mantenimiento a largo plazo de la nave sobre el equipo personal o los objetivos de la misión.
-* **El Purista del Protocolo:** Insiste en seguir los protocolos estándar de comunicación y combate naval incluso cuando opera en la "naturaleza" o con tripulaciones civiles, lo que podría causar fricción Social.
+- **El Alma de la Nave:** Prioriza la integridad estructural y el mantenimiento a largo plazo de la nave sobre el equipo personal o los objetivos de la misión.
+- **El Purista del Protocolo:** Insiste en seguir los protocolos estándar de comunicación y combate naval incluso cuando opera en la "naturaleza" o con tripulaciones civiles, lo que podría causar fricción Social.
 

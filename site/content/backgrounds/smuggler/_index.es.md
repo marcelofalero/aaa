@@ -10,10 +10,10 @@ Te ganas la vida en las zonas grises entre fronteras y leyes. Mover carga ilíci
 * Ninguna.
 
 ## Habilidades de Especialidad Favorecidas:
-* [Negocios-Negocios Ilícitos] ({{< relref "/skills/business/#illicit-business" >}})
-* [Operaciones Encubiertas-Ocultar] ({{< relref "/skills/covert-ops/#conceal" >}})
-* [Engaño-Soborno] ({{< relref "/skills/deception/#bribe" >}})
-* [Pillería- Elementos Criminales] ({{< relref "/skills/street-smart/#criminal-elements" >}})
+- [Negocios-Negocios Ilícitos] ({{< relref "/skills/business/#illicit-business" >}})
+- [Operaciones Encubiertas-Ocultar] ({{< relref "/skills/covert-ops/#conceal" >}})
+- [Engaño-Soborno] ({{< relref "/skills/deception/#bribe" >}})
+- [Pillería- Elementos Criminales] ({{< relref "/skills/street-smart/#criminal-elements" >}})
 
 ## Ventajas Favorecidas:
 * [Buena Suerte] ({{< relref "/perks_flaws/#good-luck" >}})
@@ -28,6 +28,6 @@ Un abrigo grande con bolsillos ocultos a prueba de sensores, un bláster de bols
 **Escondite del Contrabandista:** Recibes una bonificación de -1 paso a las tiradas de [Operaciones Encubiertas-Ocultar] ({{< relref "/skills/covert-ops/#conceal" >}}) al esconder objetos, datos o personas de inspecciones físicas o barridos de sensores rutinarios.
 
 ## Tendencias (Elige 2):
-* **El Contrabandista:** Asume un riesgo narrativo o táctico para introducir algo ilegal o restringido en un área segura, incluso si la misión actual no lo requiere estrictamente.
-* **El Quemador:** Desecha carga valiosa, abandona un trato lucrativo o rompe lazos con un contacto útil a la primera señal de escrutinio oficial para asegurar tu propia libertad.
+- **El Contrabandista:** Asume un riesgo narrativo o táctico para introducir algo ilegal o restringido en un área segura, incluso si la misión actual no lo requiere estrictamente.
+- **El Quemador:** Desecha carga valiosa, abandona un trato lucrativo o rompe lazos con un contacto útil a la primera señal de escrutinio oficial para asegurar tu propia libertad.
 

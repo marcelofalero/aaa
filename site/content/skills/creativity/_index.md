@@ -28,7 +28,7 @@ Creating a work of art or literature involves a **complex skill check**.
 {{< specialty attr="WIL" untrained="yes" cost="3" >}}
 
 Focuses on abstract, digital, and ethereal expression, such as grid-sculpting (virtual environments), psionic illusions, and the aesthetics of complex algorithms. This specialty is the primary support for digital infiltration, mental powers, and ephemeral constructs.
-- **Rank 3 [Artistic Flourish]:** The character can add a "signature" to their work. Any creativity skill check made to support another skill that results in an **Amazing** success grants the character an extra **Last Resort** point that must be used in the supported skill.
+▶ **Rank 3 [Artistic Flourish]:** The character can add a "signature" to their work. Any creativity skill check made to support another skill that results in an **Amazing** success grants the character an extra **Last Resort** point that must be used in the supported skill.
 
 ---
 
@@ -36,7 +36,7 @@ Focuses on abstract, digital, and ethereal expression, such as grid-sculpting (v
 {{< specialty attr="WIL" untrained="yes" cost="3" >}}
 
 Focuses on physical, structural, and visual expression, such as sculpting, painting, blueprint design, and technical prototyping. This specialty is the primary support for engineering, physical craftsmanship, and "things with defined structure."
-- **Rank 3 [Artistic Flourish]:** The character can add a "signature" to their work. Any creativity skill check made to support another skill that results in an **Amazing** success grants the character an extra **Last Resort** point that must be used in the supported skill.
+▶ **Rank 3 [Artistic Flourish]:** The character can add a "signature" to their work. Any creativity skill check made to support another skill that results in an **Amazing** success grants the character an extra **Last Resort** point that must be used in the supported skill.
 
 ---
 
@@ -44,7 +44,7 @@ Focuses on physical, structural, and visual expression, such as sculpting, paint
 {{< specialty attr="WIL" untrained="yes" cost="3" >}}
 
 Focuses on linguistic and auditory expression, such as writing, oratory, and singing. This specialty is the primary support for social, performance, and leadership endeavors.
-- **Rank 3 [Artistic Flourish]:** The character can add a "signature" to their work. Any creativity skill check made to support another skill that results in an **Amazing** success grants the character an extra **Last Resort** point that must be used in the supported skill.
+▶ **Rank 3 [Artistic Flourish]:** The character can add a "signature" to their work. Any creativity skill check made to support another skill that results in an **Amazing** success grants the character an extra **Last Resort** point that must be used in the supported skill.
 
 ---
 

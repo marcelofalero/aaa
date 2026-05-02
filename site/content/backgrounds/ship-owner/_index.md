@@ -10,10 +10,10 @@ You hold the keys to the most valuable asset in the galaxy: a starship. However,
 * None.
 
 ## Favored Specialty Skills:
-* [Vehicle Operation-Space Vehicle] ({{< relref "/skills/vehicle-operation/#space-vehicle" >}})
-* [Business-Small Business] ({{< relref "/skills/business/#small-business" >}})
-* [Leadership-Command] ({{< relref "/skills/leadership/#command" >}})
-* [Administration-Management] ({{< relref "/skills/administration/#management" >}})
+- [Vehicle Operation-Space Vehicle] ({{< relref "/skills/vehicle-operation/#space-vehicle" >}})
+- [Business-Small Business] ({{< relref "/skills/business/#small-business" >}})
+- [Leadership-Command] ({{< relref "/skills/leadership/#command" >}})
+- [Administration-Management] ({{< relref "/skills/administration/#management" >}})
 
 ## Favored Perks:
 * None.
@@ -28,6 +28,6 @@ A captain's coat, a heavy spanner or multi- tool, and a personal distress beacon
 **Captain and Commander:** You begin the game in possession of a starship capable of interstellar travel and accommodating the entire party.
 
 ## Tendencies (Pick 2):
-* **The Bottom Line:** Make a tactical or narrative decision strictly based on financial gain or the physical preservation of your ship, ignoring moral pleas or personal risks.
-* **My Ship, My Rules:** Assert your absolute authority over a situation or passenger while aboard your vessel, even when deferring to an ally or expert would be significantly safer.
+- **The Bottom Line:** Make a tactical or narrative decision strictly based on financial gain or the physical preservation of your ship, ignoring moral pleas or personal risks.
+- **My Ship, My Rules:** Assert your absolute authority over a situation or passenger while aboard your vessel, even when deferring to an ally or expert would be significantly safer.
 

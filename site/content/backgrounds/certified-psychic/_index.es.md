@@ -10,10 +10,10 @@ Eres una entidad legal autónoma, con la rara autoridad de usar poderes psiónic
 * Ninguna.
 
 ## Habilidades de Especialidad Favorecidas:
-* [Telepatía-Lectura Mental] ({{< relref "/psionics/telepathy/#mind-reading" >}})
-* [Ley-Procedimientos Judiciales] ({{< relref "/skills/law/#court-procedures" >}})
-* [Interacción-Entrevista] ({{< relref "/skills/interaction/#interview" >}})
-* [Resolución-Resolución Mental] ({{< relref "/skills/resolve/#mental-resolve" >}})
+- [Telepatía-Lectura Mental] ({{< relref "/psionics/telepathy/#mind-reading" >}})
+- [Ley-Procedimientos Judiciales] ({{< relref "/skills/law/#court-procedures" >}})
+- [Interacción-Entrevista] ({{< relref "/skills/interaction/#interview" >}})
+- [Resolución-Resolución Mental] ({{< relref "/skills/resolve/#mental-resolve" >}})
 
 ## Ventajas Favorecidas:
 * [Reputación] ({{< relref "/perks_flaws/#reputation" >}})
@@ -28,6 +28,6 @@ Una insignia/orden de árbitro oficial, un dispositivo de grabación portátil, 
 **Árbitro Autónomo:** Tu verificación psiónica es legalmente vinculante. Recibes una bonificación de -1 paso a las tiradas de [Interacción] ({{< relref "/skills/interaction/" >}}) o [Ley] ({{< relref "/skills/law/" >}}) al actuar como tercero neutral en negociaciones o al hacer valer tu derecho legal a verificar la veracidad de una declaración en el campo.
 
 ## Tendencias (Elige 2):
-* **La Verdad Absoluta:** Fuerza una verdad dura o peligrosa a la luz para mantener tu neutralidad absoluta, incluso cuando una mentira educada o un engaño habrían facilitado las cosas para la parte.
-* **El Juez No Deseado:** Complica una situación actuando sobre un crimen o un secreto oscuro que obtuviste de la mente de alguien, usando tu autoridad autónoma para intervenir cuando no era tu lucha.
+- **La Verdad Absoluta:** Fuerza una verdad dura o peligrosa a la luz para mantener tu neutralidad absoluta, incluso cuando una mentira educada o un engaño habrían facilitado las cosas para la parte.
+- **El Juez No Deseado:** Complica una situación actuando sobre un crimen o un secreto oscuro que obtuviste de la mente de alguien, usando tu autoridad autónoma para intervenir cuando no era tu lucha.
 

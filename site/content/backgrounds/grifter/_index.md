@@ -10,10 +10,10 @@ Master of deception and social engineering, flourishing on the greed of others.
 * None.
 
 ## Favored Specialty Skills:
-* [Deception-Bluff] ({{< relref "/skills/deception/#bluff" >}})
-* [Interaction-Charm] ({{< relref "/skills/interaction/#charm" >}})
-* [Manipulation-Pickpocket] ({{< relref "/skills/covert-ops/#pickpocket" >}})
-* [Deception-Bribe] ({{< relref "/skills/deception/#bribe" >}})
+- [Deception-Bluff] ({{< relref "/skills/deception/#bluff" >}})
+- [Interaction-Charm] ({{< relref "/skills/interaction/#charm" >}})
+- [Manipulation-Pickpocket] ({{< relref "/skills/covert-ops/#pickpocket" >}})
+- [Deception-Bribe] ({{< relref "/skills/deception/#bribe" >}})
 
 ## Favored Perks:
 * [Great Looks] ({{< relref "/perks_flaws/#great-looks" >}})
