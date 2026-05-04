@@ -1,6 +1,6 @@
 +++
 title = "Ciencias médicas"
-attribute = "INT"
+attribute = "VOL"
 category = "Técnica"
 type = "skill"
 layout = "list"

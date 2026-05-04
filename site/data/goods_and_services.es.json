@@ -1,1097 +1,1224 @@
 {
-  "clothing_and_accessories": {
-    "columns": [
-      {
-        "name": "Artículo",
-        "key": "name"
-      },
-      {
-        "name": "PL",
-        "key": "pl"
-      },
-      {
-        "name": "Masa (kg)",
-        "key": "mass"
-      },
-      {
-        "name": "Costo ($)",
-        "key": "cost"
-      },
-      {
-        "name": "Descripción",
-        "key": "description",
-        "hidden": true
-      }
-    ],
-    "groups": [
-      {
-        "name": "Ropa y Accesorios",
+    "search_config": {
+        "display_name": "GOODS & SERVICES",
+        "base_url": "/es/equipment/goods-and-services/",
+        "section": "equipment"
+    },
+    "medical_gear": {
+        "config": [
+            {
+                "columns": {
+                    "en": [
+                        {
+                            "name": "Item",
+                            "key": "name"
+                        },
+                        {
+                            "name": "PL",
+                            "key": "pl"
+                        },
+                        {
+                            "name": "Mass (kg)",
+                            "key": "mass"
+                        },
+                        {
+                            "name": "Cost ($)",
+                            "key": "cost"
+                        },
+                        {
+                            "name": "Description",
+                            "key": "description",
+                            "hidden": true
+                        }
+                    ],
+                    "es": [
+                        {
+                            "name": "Artículo",
+                            "key": "name"
+                        },
+                        {
+                            "name": "PL",
+                            "key": "pl"
+                        },
+                        {
+                            "name": "Masa (kg)",
+                            "key": "mass"
+                        },
+                        {
+                            "name": "Costo ($)",
+                            "key": "cost"
+                        },
+                        {
+                            "name": "Descripción",
+                            "key": "description",
+                            "hidden": true
+                        }
+                    ]
+                },
+                "id": "default"
+            }
+        ],
         "items": [
-          {
-            "name": "Tejido antiescaneo",
-            "pl": "7",
-            "mass": "-",
-            "cost": "Costo x3",
-            "description": "Las fibras de microcircuitos se pueden combinar con tela ordinaria o CF (fibra de carbonato) para crear una tela que obstaculiza varios tipos de tecnología de escaneo, incluidos detectores de infrarrojos, radar, magnéticos, rayos X y detectores de armas. Cualquier prueba de detección utilizando dicho equipo se realiza con una penalización de +3 cuando el objetivo es alguien que lleva tejido antiescaneo. El precio de cualquiera de estos artículos es tres veces el costo base de la versión ordinaria del artículo."
-          },
-          {
-            "name": "Mochila",
-            "pl": "4",
-            "mass": "2",
-            "cost": "100",
-            "description": ""
-          },
-          {
-            "name": "Biofunda",
-            "pl": "6",
-            "mass": "1",
-            "cost": "150",
-            "description": "También conocido como funda inteligente, se trata de un dispositivo que se coloca en la cadera y que está conectado al campo bioeléctrico de su propietario. Cuando alguien que no sea el propietario del arma intenta sacar el arma de la funda, la funda bloquea el arma en su lugar. La biofunda incluye un sistema de liberación por detección de movimiento que ayuda a dibujar rápidamente; niega la penalización de +1 por sacar y usar un arma en la misma fase."
-          },
-          {
-            "name": "Botas",
-            "pl": "2",
-            "mass": "2",
-            "cost": "100",
-            "description": ""
-          },
-          {
-            "name": "Maletín",
-            "pl": "3",
-            "mass": "2",
-            "cost": "60",
-            "description": ""
-          },
-          {
-            "name": "vestimenta de negocios",
-            "pl": "3",
-            "mass": "2",
-            "cost": "300",
-            "description": ""
-          },
-          {
-            "name": "vestido informal",
-            "pl": "3",
-            "mass": "1",
-            "cost": "50",
-            "description": ""
-          },
-          {
-            "name": "Abrigo",
-            "pl": "1",
-            "mass": "3",
-            "cost": "100",
-            "description": ""
-          },
-          {
-            "name": "fatigas",
-            "pl": "5",
-            "mass": "2",
-            "cost": "50",
-            "description": ""
-          },
-          {
-            "name": "vestido formal",
-            "pl": "3",
-            "mass": "2",
-            "cost": "500",
-            "description": ""
-          },
-          {
-            "name": "Anteojos",
-            "pl": "3",
-            "mass": "-",
-            "cost": "150",
-            "description": ""
-          },
-          {
-            "name": "Gafas protectoras",
-            "pl": "5",
-            "mass": "1",
-            "cost": "250",
-            "description": ""
-          },
-          {
-            "name": "Holster/scabbard",
-            "pl": "1",
-            "mass": "1",
-            "cost": "25",
-            "description": ""
-          },
-          {
-            "name": "Joyas",
-            "pl": "1",
-            "mass": "-",
-            "cost": "varía",
-            "description": ""
-          },
-          {
-            "name": "Bolsa",
-            "pl": "2",
-            "mass": "-",
-            "cost": "25",
-            "description": ""
-          },
-          {
-            "name": "Zapatos deportivos",
-            "pl": "5",
-            "mass": "1",
-            "cost": "75",
-            "description": ""
-          },
-          {
-            "name": "zapatos, negocios",
-            "pl": "4",
-            "mass": "1",
-            "cost": "50",
-            "description": ""
-          },
-          {
-            "name": "Zapatos formales",
-            "pl": "3",
-            "mass": "1",
-            "cost": "250",
-            "description": ""
-          },
-          {
-            "name": "capa sigilosa",
-            "pl": "8",
-            "mass": "4",
-            "cost": "7500",
-            "description": "Este gran poncho con capucha hecho de un tejido antiescaneo con fibras conductoras es un estándar para muchas fuerzas militares. Cuando se activa, la prenda proporciona al usuario una bonificación de +3 en cualquier prueba de habilidad que implique Sigilo. Una celda de carga tiene una duración de 6 horas de funcionamiento y cuesta 100 dólares."
-          },
-          {
-            "name": "Arnés utilitario",
-            "pl": "4",
-            "mass": "1",
-            "cost": "75",
-            "description": ""
-          },
-          {
-            "name": "Mirar",
-            "pl": "4",
-            "mass": "-",
-            "cost": "50",
-            "description": ""
-          }
+            {
+                "name": "Equipo médico",
+                "items": [
+                    {
+                        "name": "botiquín de primeros auxilios",
+                        "pl": "4",
+                        "mass": "2",
+                        "cost": "50",
+                        "id": "first-aid-kit",
+                        "description": ""
+                    },
+                    {
+                        "name": "kit forense",
+                        "pl": "5",
+                        "mass": "5",
+                        "cost": "250",
+                        "id": "forensics-kit",
+                        "description": ""
+                    },
+                    {
+                        "name": "Paquete de soporte vital",
+                        "pl": "7",
+                        "mass": "3",
+                        "cost": "500",
+                        "id": "life-support-pack",
+                        "description": ""
+                    },
+                    {
+                        "name": "guante medico",
+                        "pl": "7",
+                        "mass": "2",
+                        "cost": "1250",
+                        "id": "medical-gauntlet",
+                        "description": ""
+                    },
+                    {
+                        "name": "Escáner médico",
+                        "pl": "6",
+                        "mass": "10",
+                        "cost": "3000",
+                        "id": "medical-scanner",
+                        "description": ""
+                    },
+                    {
+                        "name": "Anestésico",
+                        "pl": "4",
+                        "mass": "-",
+                        "cost": "50",
+                        "id": "anesthetic",
+                        "description": ""
+                    },
+                    {
+                        "name": "Antibiótico",
+                        "pl": "5",
+                        "mass": "-",
+                        "cost": "50",
+                        "id": "antibiotic",
+                        "description": ""
+                    },
+                    {
+                        "name": "Antiradiación",
+                        "pl": "6",
+                        "mass": "-",
+                        "cost": "100",
+                        "id": "antiradiation",
+                        "description": ""
+                    },
+                    {
+                        "name": "Antiveneno",
+                        "pl": "5",
+                        "mass": "-",
+                        "cost": "75",
+                        "id": "antivenom",
+                        "description": ""
+                    },
+                    {
+                        "name": "Coagulante",
+                        "pl": "6",
+                        "mass": "-",
+                        "cost": "50",
+                        "id": "coagulant",
+                        "description": ""
+                    },
+                    {
+                        "name": "potenciador psi",
+                        "pl": "7",
+                        "mass": "-",
+                        "cost": "150",
+                        "id": "psi-enhancer",
+                        "description": ""
+                    },
+                    {
+                        "name": "Sedante",
+                        "pl": "5",
+                        "mass": "-",
+                        "cost": "25",
+                        "id": "sedative",
+                        "description": "Los sedantes (PL 5) se utilizan para calmar a personas que podrían resultar peligrosas para ellas mismas o para quienes las rodean. Los individuos sedados sufren una penalización de +3 a todas las pruebas y acciones de acción. Esa penalización se reduce en 1 paso por hora (o alguna otra unidad de tiempo, según lo determine el Director de Juego) hasta que el efecto de la droga desaparezca. Usar un sedante contra un objetivo reacio en combate requiere una tirada exitosa de Ataque sin armas, y la víctima tiene derecho a una prueba de dote de Constitución para luchar contra los efectos: Ordinario, penalización reducida a +2; [Bien], penalización reducida a +1; Asombroso, la droga no tiene ningún efecto."
+                    },
+                    {
+                        "name": "Estimulante",
+                        "pl": "5",
+                        "mass": "-",
+                        "cost": "25",
+                        "id": "stimulant",
+                        "description": ""
+                    },
+                    {
+                        "name": "kit quirurgico",
+                        "pl": "6",
+                        "mass": "15",
+                        "cost": "1250",
+                        "id": "surgical-kit",
+                        "description": ""
+                    },
+                    {
+                        "name": "Paquete de trauma I",
+                        "pl": "6",
+                        "mass": "1",
+                        "cost": "200",
+                        "id": "trauma-pack-i",
+                        "description": ""
+                    },
+                    {
+                        "name": "Paquete de trauma II",
+                        "pl": "7",
+                        "mass": "2",
+                        "cost": "400",
+                        "id": "trauma-pack-ii",
+                        "description": ""
+                    }
+                ],
+                "id": "medical-gear"
+            }
         ]
-      }
-    ]
-  },
-  "communications": {
-    "columns": [
-      {
-        "name": "Artículo",
-        "key": "name"
-      },
-      {
-        "name": "PL",
-        "key": "pl"
-      },
-      {
-        "name": "Masa (kg)",
-        "key": "mass"
-      },
-      {
-        "name": "Costo ($)",
-        "key": "cost"
-      },
-      {
-        "name": "Descripción",
-        "key": "description",
-        "hidden": true
-      }
-    ],
-    "groups": [
-      {
-        "name": "Comunicaciones",
+    },
+    "clothing_and_accessories": {
+        "config": [
+            {
+                "columns": {
+                    "en": [
+                        {
+                            "name": "Item",
+                            "key": "name"
+                        },
+                        {
+                            "name": "PL",
+                            "key": "pl"
+                        },
+                        {
+                            "name": "Mass (kg)",
+                            "key": "mass"
+                        },
+                        {
+                            "name": "Cost ($)",
+                            "key": "cost"
+                        },
+                        {
+                            "name": "Description",
+                            "key": "description",
+                            "hidden": true
+                        }
+                    ],
+                    "es": [
+                        {
+                            "name": "Artículo",
+                            "key": "name"
+                        },
+                        {
+                            "name": "PL",
+                            "key": "pl"
+                        },
+                        {
+                            "name": "Masa (kg)",
+                            "key": "mass"
+                        },
+                        {
+                            "name": "Costo ($)",
+                            "key": "cost"
+                        },
+                        {
+                            "name": "Descripción",
+                            "key": "description",
+                            "hidden": true
+                        }
+                    ]
+                },
+                "id": "default"
+            }
+        ],
         "items": [
-          {
-            "name": "teléfono celular",
-            "pl": "5",
-            "mass": "1",
-            "cost": "100",
-            "description": ""
-          },
-          {
-            "name": "equipo de comunicaciones",
-            "pl": "7",
-            "mass": "-",
-            "cost": "175",
-            "description": ""
-          },
-          {
-            "name": "Enlace de comando",
-            "pl": "5",
-            "mass": "-",
-            "cost": "250",
-            "description": ""
-          },
-          {
-            "name": "transceptor masivo",
-            "pl": "7",
-            "mass": "200",
-            "cost": "40000",
-            "description": ""
-          },
-          {
-            "name": "enlace ascendente orbital",
-            "pl": "5",
-            "mass": "2",
-            "cost": "200",
-            "description": ""
-          },
-          {
-            "name": "radio personal",
-            "pl": "5",
-            "mass": "1",
-            "cost": "175",
-            "description": ""
-          }
+            {
+                "name": "Ropa y Accesorios",
+                "items": [
+                    {
+                        "name": "Tejido antiescaneo",
+                        "pl": "7",
+                        "mass": "-",
+                        "cost": "Cost x 3",
+                        "id": "antiscan-weave",
+                        "description": "Las fibras de microcircuitos se pueden combinar con tela ordinaria o CF (fibra de carbonato) para crear una tela que obstaculiza varios tipos de tecnología de escaneo, incluidos detectores de infrarrojos, radar, magnéticos, rayos X y detectores de armas. Cualquier prueba de detección utilizando dicho equipo se realiza con una penalización de +3 cuando el objetivo es alguien que lleva tejido antiescaneo. El precio de cualquiera de estos artículos es tres veces el costo base de la versión ordinaria del artículo."
+                    },
+                    {
+                        "name": "Mochila",
+                        "pl": "4",
+                        "mass": "-",
+                        "cost": "100",
+                        "id": "backpack",
+                        "description": ""
+                    },
+                    {
+                        "name": "Biofunda",
+                        "pl": "6",
+                        "mass": "1",
+                        "cost": "150",
+                        "id": "bioholster",
+                        "description": "También conocido como funda inteligente, se trata de un dispositivo que se coloca en la cadera y que está conectado al campo bioeléctrico de su propietario. Cuando alguien que no sea el propietario del arma intenta sacar el arma de la funda, la funda bloquea el arma en su lugar. La biofunda incluye un sistema de liberación por detección de movimiento que ayuda a dibujar rápidamente; niega la penalización de +1 por sacar y usar un arma en la misma fase."
+                    },
+                    {
+                        "name": "Botas",
+                        "pl": "2",
+                        "mass": "1",
+                        "cost": "100",
+                        "id": "boots",
+                        "description": ""
+                    },
+                    {
+                        "name": "Maletín",
+                        "pl": "3",
+                        "mass": "1",
+                        "cost": "60",
+                        "id": "briefcase",
+                        "description": ""
+                    },
+                    {
+                        "name": "vestimenta de negocios",
+                        "pl": "3",
+                        "mass": "-",
+                        "cost": "300",
+                        "id": "business-dress",
+                        "description": ""
+                    },
+                    {
+                        "name": "vestido informal",
+                        "pl": "3",
+                        "mass": "-",
+                        "cost": "50",
+                        "id": "casual-dress",
+                        "description": ""
+                    },
+                    {
+                        "name": "Abrigo",
+                        "pl": "1",
+                        "mass": "1",
+                        "cost": "100",
+                        "id": "coat",
+                        "description": ""
+                    },
+                    {
+                        "name": "fatigas",
+                        "pl": "5",
+                        "mass": "-",
+                        "cost": "50",
+                        "id": "fatigues",
+                        "description": ""
+                    },
+                    {
+                        "name": "vestido formal",
+                        "pl": "3",
+                        "mass": "-",
+                        "cost": "500",
+                        "id": "formal-dress",
+                        "description": ""
+                    },
+                    {
+                        "name": "Anteojos",
+                        "pl": "3",
+                        "mass": "-",
+                        "cost": "50",
+                        "id": "glasses",
+                        "description": ""
+                    },
+                    {
+                        "name": "Gafas protectoras",
+                        "pl": "4",
+                        "mass": "-",
+                        "cost": "25",
+                        "id": "goggles-protective",
+                        "description": ""
+                    },
+                    {
+                        "name": "Holster/scabbard",
+                        "pl": "1",
+                        "mass": "1",
+                        "cost": "25",
+                        "id": "holster-scabbard",
+                        "description": ""
+                    },
+                    {
+                        "name": "Joyas",
+                        "pl": "1",
+                        "mass": "-",
+                        "cost": "100",
+                        "id": "jewelry",
+                        "description": ""
+                    },
+                    {
+                        "name": "Bolsa",
+                        "pl": "2",
+                        "mass": "-",
+                        "cost": "50",
+                        "id": "pouch",
+                        "description": ""
+                    },
+                    {
+                        "name": "Zapatos deportivos",
+                        "pl": "5",
+                        "mass": "-",
+                        "cost": "150",
+                        "id": "shoes-athletic",
+                        "description": ""
+                    },
+                    {
+                        "name": "zapatos, negocios",
+                        "pl": "4",
+                        "mass": "-",
+                        "cost": "50",
+                        "id": "shoes-business",
+                        "description": ""
+                    },
+                    {
+                        "name": "Zapatos formales",
+                        "pl": "4",
+                        "mass": "-",
+                        "cost": "100",
+                        "id": "shoes-formal",
+                        "description": ""
+                    },
+                    {
+                        "name": "capa sigilosa",
+                        "pl": "8",
+                        "mass": "1",
+                        "cost": "750",
+                        "id": "stealth-cloak",
+                        "description": "Este gran poncho con capucha hecho de un tejido antiescaneo con fibras conductoras es un estándar para muchas fuerzas militares. Cuando se activa, la prenda proporciona al usuario una bonificación de +3 en cualquier prueba de habilidad que implique Sigilo. Una celda de carga tiene una duración de 6 horas de funcionamiento y cuesta 100 dólares."
+                    },
+                    {
+                        "name": "Arnés utilitario",
+                        "pl": "4",
+                        "mass": "-",
+                        "cost": "25",
+                        "id": "utility-harness",
+                        "description": ""
+                    },
+                    {
+                        "name": "Mirar",
+                        "pl": "4",
+                        "mass": "-",
+                        "cost": "50",
+                        "id": "watch",
+                        "description": ""
+                    }
+                ],
+                "id": "clothing-and-accessories"
+            }
         ]
-      }
-    ]
-  },
-  "medical_gear": {
-    "columns": [
-      {
-        "name": "Artículo",
-        "key": "name"
-      },
-      {
-        "name": "PL",
-        "key": "pl"
-      },
-      {
-        "name": "Masa (kg)",
-        "key": "mass"
-      },
-      {
-        "name": "Costo ($)",
-        "key": "cost"
-      },
-      {
-        "name": "Descripción",
-        "key": "description",
-        "hidden": true
-      }
-    ],
-    "groups": [
-      {
-        "name": "Equipo médico",
+    },
+    "tools_and_electronics": {
+        "config": [
+            {
+                "columns": {
+                    "en": [
+                        {
+                            "name": "Item",
+                            "key": "name"
+                        },
+                        {
+                            "name": "PL",
+                            "key": "pl"
+                        },
+                        {
+                            "name": "Mass (kg)",
+                            "key": "mass"
+                        },
+                        {
+                            "name": "Cost ($)",
+                            "key": "cost"
+                        },
+                        {
+                            "name": "Description",
+                            "key": "description",
+                            "hidden": true
+                        }
+                    ],
+                    "es": [
+                        {
+                            "name": "Artículo",
+                            "key": "name"
+                        },
+                        {
+                            "name": "PL",
+                            "key": "pl"
+                        },
+                        {
+                            "name": "Masa (kg)",
+                            "key": "mass"
+                        },
+                        {
+                            "name": "Costo ($)",
+                            "key": "cost"
+                        },
+                        {
+                            "name": "Descripción",
+                            "key": "description",
+                            "hidden": true
+                        }
+                    ]
+                },
+                "id": "default"
+            }
+        ],
         "items": [
-          {
-            "name": "botiquín de primeros auxilios",
-            "pl": "4",
-            "mass": "1",
-            "cost": "100",
-            "description": ""
-          },
-          {
-            "name": "kit forense",
-            "pl": "5",
-            "mass": "5",
-            "cost": "250",
-            "description": ""
-          },
-          {
-            "name": "Paquete de soporte vital",
-            "pl": "7",
-            "mass": "10",
-            "cost": "5000",
-            "description": ""
-          },
-          {
-            "name": "guante medico",
-            "pl": "7",
-            "mass": "2",
-            "cost": "1250",
-            "description": ""
-          },
-          {
-            "name": "Escáner médico",
-            "pl": "6",
-            "mass": "10",
-            "cost": "3000",
-            "description": ""
-          },
-          {
-            "name": "Anestésico",
-            "pl": "4",
-            "mass": "-",
-            "cost": "50",
-            "description": ""
-          },
-          {
-            "name": "Antibiótico",
-            "pl": "5",
-            "mass": "-",
-            "cost": "50",
-            "description": ""
-          },
-          {
-            "name": "Antiradiación",
-            "pl": "6",
-            "mass": "-",
-            "cost": "500",
-            "description": ""
-          },
-          {
-            "name": "Antiveneno",
-            "pl": "5",
-            "mass": "-",
-            "cost": "50",
-            "description": ""
-          },
-          {
-            "name": "Coagulante",
-            "pl": "6",
-            "mass": "-",
-            "cost": "75",
-            "description": ""
-          },
-          {
-            "name": "potenciador psi",
-            "pl": "7",
-            "mass": "-",
-            "cost": "50",
-            "description": ""
-          },
-          {
-            "name": "Sedante",
-            "pl": "5",
-            "mass": "-",
-            "cost": "25",
-            "description": "Los sedantes (PL 5) se utilizan para calmar a personas que podrían resultar peligrosas para ellas mismas o para quienes las rodean. Los individuos sedados sufren una penalización de +3 a todas las pruebas y acciones de acción. Esa penalización se reduce en 1 paso por hora (o alguna otra unidad de tiempo, según lo determine el Director de Juego) hasta que el efecto de la droga desaparezca. Usar un sedante contra un objetivo reacio en combate requiere una tirada exitosa de Ataque sin armas, y la víctima tiene derecho a una prueba de dote de Constitución para luchar contra los efectos: Ordinario, penalización reducida a +2; [Bien], penalización reducida a +1; Asombroso, la droga no tiene ningún efecto."
-          },
-          {
-            "name": "Estimulante",
-            "pl": "5",
-            "mass": "-",
-            "cost": "50",
-            "description": ""
-          },
-          {
-            "name": "kit quirurgico",
-            "pl": "6",
-            "mass": "15",
-            "cost": "2500",
-            "description": ""
-          },
-          {
-            "name": "Paquete de trauma I",
-            "pl": "6",
-            "mass": "1",
-            "cost": "750",
-            "description": ""
-          },
-          {
-            "name": "Paquete de trauma II",
-            "pl": "7",
-            "mass": "1",
-            "cost": "1500",
-            "description": ""
-          }
+            {
+                "name": "Herramientas y Electrónica",
+                "items": [
+                    {
+                        "name": "polipasto de cadena",
+                        "pl": "4",
+                        "mass": "20",
+                        "cost": "150",
+                        "id": "chain-hoist",
+                        "description": ""
+                    },
+                    {
+                        "name": "Antorcha de corte",
+                        "pl": "5",
+                        "mass": "10",
+                        "cost": "250",
+                        "id": "cutting-torch",
+                        "description": ""
+                    },
+                    {
+                        "name": "Pack demoliciones",
+                        "pl": "5",
+                        "mass": "25",
+                        "cost": "750",
+                        "id": "demolitions-pack",
+                        "description": ""
+                    },
+                    {
+                        "name": "Generador portátil",
+                        "pl": "5",
+                        "mass": "25",
+                        "cost": "500",
+                        "id": "generator-portable",
+                        "description": ""
+                    },
+                    {
+                        "name": "Paquete de instrumentos",
+                        "pl": "6",
+                        "mass": "15",
+                        "cost": "500",
+                        "id": "instrument-pack",
+                        "description": ""
+                    },
+                    {
+                        "name": "paquete de rescate",
+                        "pl": "5",
+                        "mass": "20",
+                        "cost": "500",
+                        "id": "rescue-pack",
+                        "description": ""
+                    },
+                    {
+                        "name": "Kit de herramientas",
+                        "pl": "4",
+                        "mass": "10",
+                        "cost": "100",
+                        "id": "toolkit",
+                        "description": ""
+                    },
+                    {
+                        "name": "Kit de herramientas, especial",
+                        "pl": "5",
+                        "mass": "10",
+                        "cost": "300",
+                        "id": "toolkit-special",
+                        "description": ""
+                    },
+                    {
+                        "name": "Caminante",
+                        "pl": "6",
+                        "mass": "200",
+                        "cost": "2000",
+                        "id": "walker",
+                        "description": ""
+                    },
+                    {
+                        "name": "Neutralizador de peso",
+                        "pl": "7",
+                        "mass": "4",
+                        "cost": "300",
+                        "id": "weight-neutralizer",
+                        "description": ""
+                    },
+                    {
+                        "name": "Taller, portátil",
+                        "pl": "6",
+                        "mass": "100",
+                        "cost": "1000",
+                        "id": "workshop-portable",
+                        "description": ""
+                    }
+                ],
+                "id": "professional-equipment"
+            }
         ]
-      }
-    ]
-  },
-  "tools_and_electronics": {
-    "columns": [
-      {
-        "name": "Artículo",
-        "key": "name"
-      },
-      {
-        "name": "PL",
-        "key": "pl"
-      },
-      {
-        "name": "Masa (kg)",
-        "key": "mass"
-      },
-      {
-        "name": "Costo ($)",
-        "key": "cost"
-      },
-      {
-        "name": "Descripción",
-        "key": "description",
-        "hidden": true
-      }
-    ],
-    "groups": [
-      {
-        "name": "Herramientas y Electrónica",
+    },
+    "communications": {
+        "config": [
+            {
+                "columns": {
+                    "en": [
+                        {
+                            "name": "Item",
+                            "key": "name"
+                        },
+                        {
+                            "name": "PL",
+                            "key": "pl"
+                        },
+                        {
+                            "name": "Mass (kg)",
+                            "key": "mass"
+                        },
+                        {
+                            "name": "Cost ($)",
+                            "key": "cost"
+                        },
+                        {
+                            "name": "Description",
+                            "key": "description",
+                            "hidden": true
+                        }
+                    ],
+                    "es": [
+                        {
+                            "name": "Artículo",
+                            "key": "name"
+                        },
+                        {
+                            "name": "PL",
+                            "key": "pl"
+                        },
+                        {
+                            "name": "Masa (kg)",
+                            "key": "mass"
+                        },
+                        {
+                            "name": "Costo ($)",
+                            "key": "cost"
+                        },
+                        {
+                            "name": "Descripción",
+                            "key": "description",
+                            "hidden": true
+                        }
+                    ]
+                },
+                "id": "default"
+            }
+        ],
         "items": [
-          {
-            "name": "polipasto de cadena",
-            "pl": "3",
-            "mass": "50",
-            "cost": "500",
-            "description": ""
-          },
-          {
-            "name": "Antorcha de corte",
-            "pl": "4",
-            "mass": "15",
-            "cost": "500",
-            "description": ""
-          },
-          {
-            "name": "Pack demoliciones",
-            "pl": "5",
-            "mass": "20",
-            "cost": "500",
-            "description": ""
-          },
-          {
-            "name": "Generador portátil",
-            "pl": "5",
-            "mass": "50",
-            "cost": "1000",
-            "description": ""
-          },
-          {
-            "name": "Paquete de instrumentos",
-            "pl": "5",
-            "mass": "10",
-            "cost": "400",
-            "description": ""
-          },
-          {
-            "name": "paquete de rescate",
-            "pl": "5",
-            "mass": "25",
-            "cost": "1000",
-            "description": ""
-          },
-          {
-            "name": "Kit de herramientas",
-            "pl": "4",
-            "mass": "10",
-            "cost": "300",
-            "description": ""
-          },
-          {
-            "name": "Kit de herramientas, especial",
-            "pl": "4",
-            "mass": "10",
-            "cost": "500",
-            "description": ""
-          },
-          {
-            "name": "Caminante",
-            "pl": "6",
-            "mass": "200",
-            "cost": "2000",
-            "description": ""
-          },
-          {
-            "name": "Neutralizador de peso",
-            "pl": "7",
-            "mass": "20",
-            "cost": "300",
-            "description": ""
-          },
-          {
-            "name": "Taller, portátil",
-            "pl": "6",
-            "mass": "100",
-            "cost": "10000",
-            "description": ""
-          }
+            {
+                "name": "Comunicaciones",
+                "items": [
+                    {
+                        "name": "teléfono celular",
+                        "pl": "5",
+                        "mass": "-",
+                        "cost": "100",
+                        "id": "cellular-phone",
+                        "description": ""
+                    },
+                    {
+                        "name": "equipo de comunicaciones",
+                        "pl": "7",
+                        "mass": "-",
+                        "cost": "175",
+                        "id": "comm-gear",
+                        "description": ""
+                    },
+                    {
+                        "name": "Enlace de comando",
+                        "pl": "5",
+                        "mass": "1",
+                        "cost": "250",
+                        "id": "command-link",
+                        "description": ""
+                    },
+                    {
+                        "name": "transceptor masivo",
+                        "pl": "7",
+                        "mass": "500",
+                        "cost": "40000",
+                        "id": "mass-transceiver",
+                        "description": ""
+                    },
+                    {
+                        "name": "enlace ascendente orbital",
+                        "pl": "5",
+                        "mass": "2",
+                        "cost": "200",
+                        "id": "orbital-uplink",
+                        "description": ""
+                    },
+                    {
+                        "name": "radio personal",
+                        "pl": "5",
+                        "mass": "1",
+                        "cost": "175",
+                        "id": "radio-personal",
+                        "description": ""
+                    }
+                ],
+                "id": "communications"
+            }
         ]
-      }
-    ]
-  },
-  "sensors": {
-    "columns": [
-      {
-        "name": "Artículo",
-        "key": "name"
-      },
-      {
-        "name": "PL",
-        "key": "pl"
-      },
-      {
-        "name": "Masa (kg)",
-        "key": "mass"
-      },
-      {
-        "name": "Costo ($)",
-        "key": "cost"
-      },
-      {
-        "name": "Descripción",
-        "key": "description",
-        "hidden": true
-      }
-    ],
-    "groups": [
-      {
-        "name": "Sensores",
+    },
+    "sensors": {
+        "config": [
+            {
+                "columns": {
+                    "en": [
+                        {
+                            "name": "Item",
+                            "key": "name"
+                        },
+                        {
+                            "name": "PL",
+                            "key": "pl"
+                        },
+                        {
+                            "name": "Mass (kg)",
+                            "key": "mass"
+                        },
+                        {
+                            "name": "Cost ($)",
+                            "key": "cost"
+                        },
+                        {
+                            "name": "Description",
+                            "key": "description",
+                            "hidden": true
+                        }
+                    ],
+                    "es": [
+                        {
+                            "name": "Artículo",
+                            "key": "name"
+                        },
+                        {
+                            "name": "PL",
+                            "key": "pl"
+                        },
+                        {
+                            "name": "Masa (kg)",
+                            "key": "mass"
+                        },
+                        {
+                            "name": "Costo ($)",
+                            "key": "cost"
+                        },
+                        {
+                            "name": "Descripción",
+                            "key": "description",
+                            "hidden": true
+                        }
+                    ]
+                },
+                "id": "default"
+            }
+        ],
         "items": [
-          {
-            "name": "grabadora de audio",
-            "pl": "4",
-            "mass": "1",
-            "cost": "100",
-            "description": ""
-          },
-          {
-            "name": "Prismáticos",
-            "pl": "3",
-            "mass": "2",
-            "cost": "100",
-            "description": ""
-          },
-          {
-            "name": "Brújula",
-            "pl": "1",
-            "mass": "-",
-            "cost": "25",
-            "description": ""
-          },
-          {
-            "name": "Gafas, imágenes",
-            "pl": "6",
-            "mass": "1",
-            "cost": "1000",
-            "description": ""
-          },
-          {
-            "name": "Gafas de infrarrojos",
-            "pl": "5",
-            "mass": "1",
-            "cost": "750",
-            "description": ""
-          },
-          {
-            "name": "Receptor GPS",
-            "pl": "5",
-            "mass": "1",
-            "cost": "200",
-            "description": ""
-          },
-          {
-            "name": "holograbadora",
-            "pl": "6",
-            "mass": "2",
-            "cost": "400",
-            "description": ""
-          },
-          {
-            "name": "Micrófono, párr.",
-            "pl": "5",
-            "mass": "4",
-            "cost": "300",
-            "description": ""
-          },
-          {
-            "name": "detector psi",
-            "pl": "7",
-            "mass": "2",
-            "cost": "2000",
-            "description": ""
-          },
-          {
-            "name": "Guante de radar",
-            "pl": "7",
-            "mass": "2",
-            "cost": "1500",
-            "description": ""
-          },
-          {
-            "name": "Pluma del sensor",
-            "pl": "6",
-            "mass": "5",
-            "cost": "500",
-            "description": ""
-          },
-          {
-            "name": "Guantelete de sensores",
-            "pl": "6",
-            "mass": "2",
-            "cost": "1000",
-            "description": ""
-          },
-          {
-            "name": "Equipo de vigilancia",
-            "pl": "5",
-            "mass": "10",
-            "cost": "500",
-            "description": ""
-          },
-          {
-            "name": "Videograbadora",
-            "pl": "5",
-            "mass": "2",
-            "cost": "200",
-            "description": ""
-          },
-          {
-            "name": "detector de armas",
-            "pl": "5",
-            "mass": "100",
-            "cost": "5000",
-            "description": ""
-          }
+            {
+                "name": "Sensores",
+                "items": [
+                    {
+                        "name": "grabadora de audio",
+                        "pl": "5",
+                        "mass": "1",
+                        "cost": "50",
+                        "id": "audiorecorder",
+                        "description": ""
+                    },
+                    {
+                        "name": "Prismáticos",
+                        "pl": "4",
+                        "mass": "1",
+                        "cost": "225",
+                        "id": "binoculars",
+                        "description": ""
+                    },
+                    {
+                        "name": "Brújula",
+                        "pl": "3",
+                        "mass": "-",
+                        "cost": "25",
+                        "id": "compass",
+                        "description": ""
+                    },
+                    {
+                        "name": "Gafas, imágenes",
+                        "pl": "5",
+                        "mass": "2",
+                        "cost": "300",
+                        "id": "goggles-imaging",
+                        "description": ""
+                    },
+                    {
+                        "name": "Gafas de infrarrojos",
+                        "pl": "5",
+                        "mass": "5",
+                        "cost": "250",
+                        "id": "goggles-infrared",
+                        "description": ""
+                    },
+                    {
+                        "name": "Receptor GPS",
+                        "pl": "5",
+                        "mass": "-",
+                        "cost": "150",
+                        "id": "gps-receiver",
+                        "description": ""
+                    },
+                    {
+                        "name": "holograbadora",
+                        "pl": "7",
+                        "mass": "1",
+                        "cost": "1200",
+                        "id": "holorecorder",
+                        "description": ""
+                    },
+                    {
+                        "name": "Micrófono, párr.",
+                        "pl": "5",
+                        "mass": "3",
+                        "cost": "375",
+                        "id": "microphone-para",
+                        "description": ""
+                    },
+                    {
+                        "name": "detector psi",
+                        "pl": "6",
+                        "mass": "4",
+                        "cost": "2500",
+                        "id": "psi-detector",
+                        "description": ""
+                    },
+                    {
+                        "name": "Guante de radar",
+                        "pl": "7",
+                        "mass": "7",
+                        "cost": "350",
+                        "id": "radar-gauntlet",
+                        "description": ""
+                    },
+                    {
+                        "name": "Pluma del sensor",
+                        "pl": "5",
+                        "mass": "1",
+                        "cost": "75",
+                        "id": "sensor-boom",
+                        "description": ""
+                    },
+                    {
+                        "name": "Guantelete de sensores",
+                        "pl": "7",
+                        "mass": "7",
+                        "cost": "725",
+                        "id": "sensor-gauntlet",
+                        "description": ""
+                    },
+                    {
+                        "name": "Equipo de vigilancia",
+                        "pl": "5",
+                        "mass": "-",
+                        "cost": "250",
+                        "id": "surveillance-gear",
+                        "description": ""
+                    },
+                    {
+                        "name": "Videograbadora",
+                        "pl": "5",
+                        "mass": "-",
+                        "cost": "500",
+                        "id": "videorecorder",
+                        "description": ""
+                    },
+                    {
+                        "name": "detector de armas",
+                        "pl": "6",
+                        "mass": "-",
+                        "cost": "125",
+                        "id": "weapon-detector",
+                        "description": ""
+                    }
+                ],
+                "id": "sensors"
+            }
         ]
-      }
-    ]
-  },
-  "general_gear": {
-    "columns": [
-      {
-        "name": "Artículo",
-        "key": "name"
-      },
-      {
-        "name": "PL",
-        "key": "pl"
-      },
-      {
-        "name": "Masa (kg)",
-        "key": "mass"
-      },
-      {
-        "name": "Costo ($)",
-        "key": "cost"
-      },
-      {
-        "name": "Descripción",
-        "key": "description",
-        "hidden": true
-      }
-    ],
-    "groups": [
-      {
-        "name": "Equipo general",
+    },
+    "general_gear": {
+        "config": [
+            {
+                "columns": {
+                    "en": [
+                        {
+                            "name": "Item",
+                            "key": "name"
+                        },
+                        {
+                            "name": "PL",
+                            "key": "pl"
+                        },
+                        {
+                            "name": "Mass (kg)",
+                            "key": "mass"
+                        },
+                        {
+                            "name": "Cost ($)",
+                            "key": "cost"
+                        },
+                        {
+                            "name": "Description",
+                            "key": "description",
+                            "hidden": true
+                        }
+                    ],
+                    "es": [
+                        {
+                            "name": "Artículo",
+                            "key": "name"
+                        },
+                        {
+                            "name": "PL",
+                            "key": "pl"
+                        },
+                        {
+                            "name": "Masa (kg)",
+                            "key": "mass"
+                        },
+                        {
+                            "name": "Costo ($)",
+                            "key": "cost"
+                        },
+                        {
+                            "name": "Descripción",
+                            "key": "description",
+                            "hidden": true
+                        }
+                    ]
+                },
+                "id": "default"
+            }
+        ],
         "items": [
-          {
-            "name": "animal, guardia",
-            "pl": "1",
-            "mass": "varía",
-            "cost": "250",
-            "description": ""
-          },
-          {
-            "name": "animal, montura",
-            "pl": "1",
-            "mass": "varía",
-            "cost": "500",
-            "description": ""
-          },
-          {
-            "name": "animal, manada",
-            "pl": "1",
-            "mass": "varía",
-            "cost": "100",
-            "description": ""
-          },
-          {
-            "name": "animal, mascota",
-            "pl": "1",
-            "mass": "varía",
-            "cost": "50",
-            "description": ""
-          },
-          {
-            "name": "petate",
-            "pl": "1",
-            "mass": "4",
-            "cost": "25",
-            "description": ""
-          },
-          {
-            "name": "biobloqueo",
-            "pl": "6",
-            "mass": "1",
-            "cost": "200",
-            "description": "Una cerradura que utiliza autenticación biométrica (por ejemplo, huella digital, escaneo de retina) por seguridad."
-          },
-          {
-            "name": "Botas magnéticas",
-            "pl": "6",
-            "mass": "4",
-            "cost": "350",
-            "description": "Botas equipadas con suela magnética para caminar sobre superficies metálicas en entornos de gravedad cero o invertidos."
-          },
-          {
-            "name": "Cabina, portátil",
-            "pl": "5",
-            "mass": "50",
-            "cost": "650",
-            "description": ""
-          },
-          {
-            "name": "Unidad de campamento",
-            "pl": "5",
-            "mass": "40",
-            "cost": "300",
-            "description": ""
-          },
-          {
-            "name": "Vela",
-            "pl": "1",
-            "mass": "-",
-            "cost": "1",
-            "description": ""
-          },
-          {
-            "name": "Tejido climático",
-            "pl": "6",
-            "mass": "-",
-            "cost": "Costo x2",
-            "description": "Tejido tejido con microfilamentos que pueden regular activamente la temperatura, brindando protección contra el calor o el frío extremos."
-          },
-          {
-            "name": "Equipo de escalada",
-            "pl": "2",
-            "mass": "10",
-            "cost": "100",
-            "description": ""
-          },
-          {
-            "name": "Enfriador",
-            "pl": "4",
-            "mass": "5",
-            "cost": "50",
-            "description": ""
-          },
-          {
-            "name": "cinta adhesiva",
-            "pl": "4",
-            "mass": "1",
-            "cost": "10/roll",
-            "description": ""
-          },
-          {
-            "name": "tapones para los oidos",
-            "pl": "4",
-            "mass": "-",
-            "cost": "10",
-            "description": ""
-          },
-          {
-            "name": "Traje electrónico, suave",
-            "pl": "6",
-            "mass": "5",
-            "cost": "2500",
-            "description": "Un traje ambiental flexible para protección contra atmósferas peligrosas o vacío."
-          },
-          {
-            "name": "E-traje, duro",
-            "pl": "7",
-            "mass": "20",
-            "cost": "4000",
-            "description": "Un traje ambiental rígido y blindado para condiciones extremas, que ofrece protección mejorada y soporte vital."
-          },
-          {
-            "name": "baliza de emergencia",
-            "pl": "5",
-            "mass": "1",
-            "cost": "250",
-            "description": ""
-          },
-          {
-            "name": "Extintor de incendios",
-            "pl": "4",
-            "mass": "2",
-            "cost": "25",
-            "description": ""
-          },
-          {
-            "name": "Llamarada",
-            "pl": "3",
-            "mass": "-",
-            "cost": "5",
-            "description": ""
-          },
-          {
-            "name": "Flash",
-            "pl": "4",
-            "mass": "1",
-            "cost": "25",
-            "description": ""
-          },
-          {
-            "name": "gancho de agarre",
-            "pl": "3",
-            "mass": "2",
-            "cost": "20",
-            "description": ""
-          },
-          {
-            "name": "Domo de hábitat",
-            "pl": "6",
-            "mass": "100",
-            "cost": "2500",
-            "description": ""
-          },
-          {
-            "name": "Esposas",
-            "pl": "4",
-            "mass": "1",
-            "cost": "25",
-            "description": ""
-          },
-          {
-            "name": "Calefactor portátil",
-            "pl": "4",
-            "mass": "10",
-            "cost": "75",
-            "description": ""
-          },
-          {
-            "name": "Holovisor",
-            "pl": "6",
-            "mass": "1",
-            "cost": "500",
-            "description": ""
-          },
-          {
-            "name": "pegamento instantáneo",
-            "pl": "5",
-            "mass": "-",
-            "cost": "50",
-            "description": ""
-          },
-          {
-            "name": "Mono",
-            "pl": "5",
-            "mass": "2",
-            "cost": "50",
-            "description": ""
-          },
-          {
-            "name": "Linterna",
-            "pl": "2",
-            "mass": "2",
-            "cost": "20",
-            "description": ""
-          },
-          {
-            "name": "Encendedor",
-            "pl": "3",
-            "mass": "-",
-            "cost": "5",
-            "description": ""
-          },
-          {
-            "name": "Juego de ganzúas",
-            "pl": "3",
-            "mass": "1",
-            "cost": "250",
-            "description": ""
-          },
-          {
-            "name": "Machete",
-            "pl": "1",
-            "mass": "2",
-            "cost": "25",
-            "description": ""
-          },
-          {
-            "name": "Abrazadera magnética",
-            "pl": "6",
-            "mass": "1",
-            "cost": "50",
-            "description": ""
-          },
-          {
-            "name": "Partidos",
-            "pl": "2",
-            "mass": "-",
-            "cost": "1/box",
-            "description": ""
-          },
-          {
-            "name": "Espejo",
-            "pl": "1",
-            "mass": "-",
-            "cost": "5",
-            "description": ""
-          },
-          {
-            "name": "guantelete musical",
-            "pl": "6",
-            "mass": "1",
-            "cost": "100",
-            "description": ""
-          },
-          {
-            "name": "Instrumento musical",
-            "pl": "1",
-            "mass": "varía",
-            "cost": "varía",
-            "description": ""
-          },
-          {
-            "name": "Candado",
-            "pl": "2",
-            "mass": "1",
-            "cost": "25",
-            "description": ""
-          },
-          {
-            "name": "Paracaídas",
-            "pl": "4",
-            "mass": "10",
-            "cost": "500",
-            "description": ""
-          },
-          {
-            "name": "Timón",
-            "pl": "7",
-            "mass": "2",
-            "cost": "5000",
-            "description": "Un dispositivo que se coloca sobre la cabeza, diseñado para suprimir habilidades psiónicas. Impone una penalización de +3 a todas las pruebas de habilidades psiónicas."
-          },
-          {
-            "name": "Cuello",
-            "pl": "7",
-            "mass": "4",
-            "cost": "10000",
-            "description": "Un dispositivo que se lleva al cuello y que emite un campo disruptivo que dificulta la actividad psiónica. Impone una penalización de +5 a todas las pruebas de habilidades psiónicas."
-          },
-          {
-            "name": "Implante",
-            "pl": "8",
-            "mass": "-",
-            "cost": "25000",
-            "description": "Un dispositivo implantado quirúrgicamente que interfiere directamente con las funciones cerebrales psiónicas, neutralizando efectivamente las habilidades psiónicas. Impone una penalización de +7 a todas las pruebas de habilidades psiónicas."
-          },
-          {
-            "name": "Balsa inflable",
-            "pl": "4",
-            "mass": "10",
-            "cost": "200",
-            "description": ""
-          },
-          {
-            "name": "Raciones (1 semana)",
-            "pl": "1",
-            "mass": "5",
-            "cost": "50",
-            "description": ""
-          },
-          {
-            "name": "máscara respiratoria",
-            "pl": "5",
-            "mass": "1",
-            "cost": "100",
-            "description": ""
-          },
-          {
-            "name": "Cuerda, 50 m",
-            "pl": "1",
-            "mass": "5",
-            "cost": "25",
-            "description": ""
-          },
-          {
-            "name": "equipo de buceo",
-            "pl": "4",
-            "mass": "20",
-            "cost": "400",
-            "description": ""
-          },
-          {
-            "name": "Esquís",
-            "pl": "1",
-            "mass": "4",
-            "cost": "150",
-            "description": ""
-          },
-          {
-            "name": "Estufa, portátil",
-            "pl": "4",
-            "mass": "2",
-            "cost": "50",
-            "description": ""
-          },
-          {
-            "name": "Maleta",
-            "pl": "3",
-            "mass": "4",
-            "cost": "50",
-            "description": ""
-          },
-          {
-            "name": "Equipo de supervivencia",
-            "pl": "4",
-            "mass": "5",
-            "cost": "200",
-            "description": ""
-          },
-          {
-            "name": "Carpa",
-            "pl": "1",
-            "mass": "10",
-            "cost": "100",
-            "description": ""
-          },
-          {
-            "name": "Antorcha",
-            "pl": "1",
-            "mass": "1",
-            "cost": "1",
-            "description": ""
-          },
-          {
-            "name": "máscara de vacío",
-            "pl": "7",
-            "mass": "1",
-            "cost": "150",
-            "description": ""
-          },
-          {
-            "name": "Visor de vídeo",
-            "pl": "5",
-            "mass": "1",
-            "cost": "200",
-            "description": ""
-          },
-          {
-            "name": "Condensador de agua",
-            "pl": "6",
-            "mass": "15",
-            "cost": "300",
-            "description": ""
-          },
-          {
-            "name": "purificador de agua",
-            "pl": "5",
-            "mass": "1",
-            "cost": "100",
-            "description": ""
-          },
-          {
-            "name": "Bioclave de arma",
-            "pl": "6",
-            "mass": "-",
-            "cost": "100",
-            "description": "Una llave biométrica que permite sólo al usuario autorizado operar un arma."
-          },
-          {
-            "name": "monitor del clima",
-            "pl": "5",
-            "mass": "2",
-            "cost": "250",
-            "description": ""
-          },
-          {
-            "name": "Red de gravedad cero",
-            "pl": "6",
-            "mass": "2",
-            "cost": "100",
-            "description": ""
-          }
+            {
+                "name": "Equipo general",
+                "items": [
+                    {
+                        "name": "animal, guardia",
+                        "pl": "2",
+                        "mass": "4",
+                        "cost": "25",
+                        "id": "bedroll",
+                        "description": ""
+                    },
+                    {
+                        "name": "animal, montura",
+                        "pl": "6",
+                        "mass": "4",
+                        "cost": "350",
+                        "id": "boots-magnetic",
+                        "description": ""
+                    },
+                    {
+                        "name": "animal, manada",
+                        "pl": "7",
+                        "mass": "40",
+                        "cost": "650",
+                        "id": "cabin-portable",
+                        "description": ""
+                    },
+                    {
+                        "name": "animal, mascota",
+                        "pl": "6",
+                        "mass": "10",
+                        "cost": "300",
+                        "id": "camping-unit",
+                        "description": ""
+                    },
+                    {
+                        "name": "petate",
+                        "pl": "1",
+                        "mass": "1",
+                        "cost": "-",
+                        "id": "candle",
+                        "description": ""
+                    },
+                    {
+                        "name": "biobloqueo",
+                        "pl": "7",
+                        "mass": "-",
+                        "cost": "Cost x 2",
+                        "id": "climate-weave",
+                        "description": "Una cerradura que utiliza autenticación biométrica (por ejemplo, huella digital, escaneo de retina) por seguridad."
+                    },
+                    {
+                        "name": "Botas magnéticas",
+                        "pl": "4",
+                        "mass": "10",
+                        "cost": "100",
+                        "id": "climbing-gear",
+                        "description": "Botas equipadas con suela magnética para caminar sobre superficies metálicas en entornos de gravedad cero o invertidos."
+                    },
+                    {
+                        "name": "Cabina, portátil",
+                        "pl": "4",
+                        "mass": "5",
+                        "cost": "50",
+                        "id": "cooler",
+                        "description": ""
+                    },
+                    {
+                        "name": "Unidad de campamento",
+                        "pl": "5",
+                        "mass": "10",
+                        "cost": "200",
+                        "id": "emergency-beacon",
+                        "description": ""
+                    },
+                    {
+                        "name": "Vela",
+                        "pl": "5",
+                        "mass": "10",
+                        "cost": "2500",
+                        "id": "e-suit-soft",
+                        "description": ""
+                    },
+                    {
+                        "name": "Tejido climático",
+                        "pl": "6",
+                        "mass": "20",
+                        "cost": "4000",
+                        "id": "e-suit-hard",
+                        "description": "Tejido tejido con microfilamentos que pueden regular activamente la temperatura, brindando protección contra el calor o el frío extremos."
+                    },
+                    {
+                        "name": "Equipo de escalada",
+                        "pl": "4",
+                        "mass": "1",
+                        "cost": "25",
+                        "id": "flashlight",
+                        "description": ""
+                    },
+                    {
+                        "name": "Enfriador",
+                        "pl": "6",
+                        "mass": "50",
+                        "cost": "1500",
+                        "id": "habitat-dome",
+                        "description": ""
+                    },
+                    {
+                        "name": "cinta adhesiva",
+                        "pl": "6",
+                        "mass": "3",
+                        "cost": "750",
+                        "id": "jumpsuit",
+                        "description": ""
+                    },
+                    {
+                        "name": "tapones para los oidos",
+                        "pl": "1",
+                        "mass": "varies",
+                        "cost": "varies",
+                        "id": "animal-guard",
+                        "description": ""
+                    },
+                    {
+                        "name": "Traje electrónico, suave",
+                        "pl": "6",
+                        "mass": "-",
+                        "cost": "100",
+                        "id": "biolock",
+                        "description": "Un traje ambiental flexible para protección contra atmósferas peligrosas o vacío."
+                    },
+                    {
+                        "name": "E-traje, duro",
+                        "pl": "4",
+                        "mass": "1",
+                        "cost": "50",
+                        "id": "handcuffs",
+                        "description": "Un traje ambiental rígido y blindado para condiciones extremas, que ofrece protección mejorada y soporte vital."
+                    },
+                    {
+                        "name": "baliza de emergencia",
+                        "pl": "7",
+                        "mass": "3",
+                        "cost": "500",
+                        "id": "holoviewer",
+                        "description": ""
+                    },
+                    {
+                        "name": "Extintor de incendios",
+                        "pl": "6",
+                        "mass": "2",
+                        "cost": "1200",
+                        "id": "psi-restraint-helmet",
+                        "description": ""
+                    },
+                    {
+                        "name": "Llamarada",
+                        "pl": "6",
+                        "mass": "1",
+                        "cost": "1700",
+                        "id": "psi-restraint-collar",
+                        "description": ""
+                    },
+                    {
+                        "name": "Flash",
+                        "pl": "6",
+                        "mass": "-",
+                        "cost": "3500",
+                        "id": "psi-restraint-implant",
+                        "description": ""
+                    }
+                ],
+                "id": "survival-and-miscellaneous-gear"
+            }
         ]
-      }
-    ]
-  }
+    },
+    "services": {
+        "config": [
+            {
+                "columns": {
+                    "en": [
+                        {
+                            "name": "Item",
+                            "key": "name"
+                        },
+                        {
+                            "name": "PL",
+                            "key": "pl"
+                        },
+                        {
+                            "name": "Mass (kg)",
+                            "key": "mass"
+                        },
+                        {
+                            "name": "Cost ($)",
+                            "key": "cost"
+                        },
+                        {
+                            "name": "Description",
+                            "key": "description",
+                            "hidden": true
+                        }
+                    ],
+                    "es": [
+                        {
+                            "name": "Item",
+                            "key": "name"
+                        },
+                        {
+                            "name": "PL",
+                            "key": "pl"
+                        },
+                        {
+                            "name": "Mass (kg)",
+                            "key": "mass"
+                        },
+                        {
+                            "name": "Cost ($)",
+                            "key": "cost"
+                        },
+                        {
+                            "name": "Description",
+                            "key": "description",
+                            "hidden": true
+                        }
+                    ]
+                },
+                "id": "default"
+            }
+        ],
+        "items": [
+            {
+                "name": "Services",
+                "items": [
+                    {
+                        "name": "Ambulance",
+                        "pl": "4",
+                        "mass": "-",
+                        "cost": "300",
+                        "id": "ambulance",
+                        "description": "Emergency transport with technicians trained in first aid and Ciencias médicas to stabilize mortally wounded patients."
+                    },
+                    {
+                        "name": "Car rental",
+                        "pl": "5",
+                        "mass": "-",
+                        "cost": "50/day",
+                        "id": "car-rental",
+                        "description": "Temporary use of personal vehicles in urban centers. Surcharges for fuel and insurance apply."
+                    },
+                    {
+                        "name": "Charter driveship",
+                        "pl": "7",
+                        "mass": "-",
+                        "cost": "2000/day",
+                        "id": "charter-driveship",
+                        "description": "Hiring a stardrive-equipped vessel for custom interstellar travel. Includes the services of a pilot."
+                    },
+                    {
+                        "name": "Comm call, interstellar",
+                        "pl": "7",
+                        "mass": "-",
+                        "cost": "10000/minute",
+                        "id": "comm-call-interstellar",
+                        "description": "Communication using expensive drivesats to relay message capsules across light-years; subject to 11-hour delays."
+                    },
+                    {
+                        "name": "Lawyer",
+                        "pl": "4",
+                        "mass": "-",
+                        "cost": "300/hour",
+                        "id": "lawyer",
+                        "description": "Legal representation for criminal or civil matters. Famous lawyers charge significantly more."
+                    },
+                    {
+                        "name": "Medical, surgery",
+                        "pl": "4",
+                        "mass": "-",
+                        "cost": "5000",
+                        "id": "medical-surgery",
+                        "description": "Professional intervention for Mortal damage. State-of-the-art facilities provide a -3 bonus to skill checks."
+                    },
+                    {
+                        "name": "Travel, interstellar",
+                        "pl": "7",
+                        "mass": "-",
+                        "cost": "200 + 100/ly",
+                        "id": "travel-interstellar",
+                        "description": "Commercial cruisers linking star systems. Smaller vessels cover 5 ly; large cruisers carry 1,000+ passengers."
+                    }
+                ],
+                "id": "services"
+            }
+        ]
+    }
 }

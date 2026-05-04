@@ -1,6 +1,6 @@
 +++
 title = "Medical Science"
-attribute = "INT"
+attribute = "WIL"
 category = "Technical"
 type = "skill"
 layout = "list"

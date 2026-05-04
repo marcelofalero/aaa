@@ -162,7 +162,7 @@
                     "size": "1",
                     "cost": "1000 / 2000 / 3000 / 4000",
                     "id": "nanocomputer",
-                    "description": "Without a nanocomputer and its cytronic circuitry, most other pieces of cyberware are useless. The nanocomputer provides an interface between the subject's central nervous system and his cyberware, allowing him to control cyberlimbs, deploy weaponry, etc. Each cybernetic system requiring conscious control takes 1 of the nanocomputer's active memory slots, so a character with two cyberlimbs and a BattleKlaw must allocate 3 of his nanocomputer's slots to the direction of his cyberware. Nanocomputers cannot read 3Ds, download data, or otherwise interact with the world around the character unless some kind of interface device is purchased and installed-a NIJack, a 3D drive, or a comm port. Marginal: $1,000, 3 slots, None Processor Bonus. Ordinary: $2,000, 4 slots, -1 step Processor Bonus. Good: $3,000, 5 slots, -2 steps Processor Bonus. Amazing: $4,000, 6 slots, -3 steps Processor Bonus.\n"
+                    "description": "Without a nanocomputer and its cytronic circuitry, most other pieces of cyberware are useless. The nanocomputer provides an interface between the subject's central nervous system and his cyberware, allowing him to control cyberlimbs, deploy weaponry, etc. Each cybernetic system requiring conscious control takes 1 of the nanocomputer's active memory slots, so a character with two cyberlimbs and a BattleKlaw must allocate 3 of his nanocomputer's slots to the direction of his cyberware. Nanocomputers cannot read 3Ds, download data, or otherwise interact with the world around the character unless some kind of interface device is purchased and installed-a NIJack, a 3D drive, or a comm port. Marginal: $1,000, 3 slots, None Processor Bonus. Ordinary: $2,000, 4 slots, -1 step Processor Bonus. Good: $3,000, 5 slots, -2 steps Processor Bonus. Amazing: $4,000, 6 slots, -3 steps Processor Bonus."
                 },
                 {
                     "name": "NIJack",
@@ -234,7 +234,7 @@
                     "size": "1",
                     "cost": "1000 / 2000 / 4000",
                     "id": "artificial-ear",
-                    "description": "The artificial ear is a sensitive microphone capable of detecting extremely low and high frequency sounds, normally outside the range of human hearing, such as sonar transmissions or dog whistles. Its hearing is magnified (Ordinary x10, Good x25, Amazing x50), and it gains a bonus to skill checks involving the ability to detect sound, such as Awareness-intuition checks to avoid surprise, Security-security devices checks against tumbler-type locks, and so on. If the subject has two artificial ears, he can use the skill check bonus (-1, -2, or -3 steps) to offset darkness-related combat penalties because of his ability to locate his enemy through sound.\n"
+                    "description": "The artificial ear is a sensitive microphone capable of detecting extremely low and high frequency sounds, normally outside the range of human hearing, such as sonar transmissions or dog whistles. Its hearing is magnified (Ordinary x10, Good x25, Amazing x50), and it gains a bonus to skill checks involving the ability to detect sound, such as Awareness-intuition checks to avoid surprise, Security-security devices checks against tumbler-type locks, and so on. If the subject has two artificial ears, he can use the skill check bonus (-1, -2, or -3 steps) to offset darkness-related combat penalties because of his ability to locate his enemy through sound."
                 },
                 {
                     "name": "Artificial Eye",
@@ -243,7 +243,7 @@
                     "size": "1",
                     "cost": "1000 / 2000 / 4000",
                     "id": "artificial-eye",
-                    "description": "This device is a video imaging system that replaces one of the user's own eyes. It provides magnification (Ordinary x10, Good x25, Amazing x50) and a bonus to skill checks where visual acuity might be important, such as Investigate-search or Awareness-perception checks (-1, -2, or -3 steps). For twice the listed cost, an artificial eye includes image enhancement or thermal technology, conferring the benefits of image or thermal goggles in addition to the simple magnification.\n"
+                    "description": "This device is a video imaging system that replaces one of the user's own eyes. It provides magnification (Ordinary x10, Good x25, Amazing x50) and a bonus to skill checks where visual acuity might be important, such as Investigate-search or Awareness-perception checks (-1, -2, or -3 steps). For twice the listed cost, an artificial eye includes image enhancement or thermal technology, conferring the benefits of image or thermal goggles in addition to the simple magnification."
                 }
             ],
             "id": "progress-level-6"
@@ -312,7 +312,7 @@
                     "size": "2",
                     "cost": "- / 2000 / -",
                     "id": "reflex",
-                    "description": "Reflex is specialized cytronic circuitry that can be added to a body's cytronic circuitry system for the express purpose of allowing that body to make use of enhance programs. Enhance programs utilize the reflex wiring to allow the body to perform faster, more accurately, and with better control. All reflex is of Good quality.\n\nEnhance programs are a special kind of computer software that can only be used by cyber-equipped characters. For a character who has a nanocomputer and reflex wiring installed in his or her body, each different type of enhance program provides a bonus to the character's use of a particular physical skill or physical characteristic, as the program and the reflex wiring work together to augment the character's physical skill.\n\nThe use of an enhance program inflicts stun damage on the user for every round or portion of a round that the program is running. The amount of damage depends on the quality of the program: Ordinary, 1 stun; Good, 2 stuns; Amazing, 3 stuns. (There are no enhance programs of Marginal quality.) Stun damage from multiple enhance programs running in the same round is cumulative.\n\nEach enhance program provides a -1, -2, or -3 bonus, depending on its quality (Ordinary, Good, or Amazing). Physical skills that can be stored on an enhance program include Athletics, Melee Weapons, Unarmed Attack, Acrobatics, Manipulation, Primitive Ranged Weapons, and Modern Ranged Weapons. On a Critical Failure, the GM may call for a cykosis check.\n\nAn enhance program takes up 3 slots of active memory. The standard cost of such a program is $1000 for Ordinary quality, $2000 for Good quality, and $3000 for an Amazing program. Each specific type of enhance program must be purchased separately. It does no good for a character to have two copies of the same specific program running in the same round, because the benefit provided by the second program is not cumulative—but the stun damage is.\n\nCharacters must be careful about how they acquire enhance programs, because some aren't what they appear to be. Enhance programs can be rigged to inflict wounds instead or stuns, or they can be designed to give penalties instead of bonuses, and some might even do both types of harm to an unsuspecting user.\n"
+                    "description": "Reflex is specialized cytronic circuitry that can be added to a body's cytronic circuitry system for the express purpose of allowing that body to make use of enhance programs. Enhance programs utilize the reflex wiring to allow the body to perform faster, more accurately, and with better control. All reflex is of Good quality. Enhance programs are a special kind of computer software that can only be used by cyber-equipped characters. For a character who has a nanocomputer and reflex wiring installed in his or her body, each different type of enhance program provides a bonus to the character's use of a particular physical skill or physical characteristic, as the program and the reflex wiring work together to augment the character's physical skill. The use of an enhance program inflicts stun damage on the user for every round or portion of a round that the program is running. The amount of damage depends on the quality of the program: Ordinary, 1 stun; Good, 2 stuns; Amazing, 3 stuns. (There are no enhance programs of Marginal quality.) Stun damage from multiple enhance programs running in the same round is cumulative. Each enhance program provides a -1, -2, or -3 bonus, depending on its quality (Ordinary, Good, or Amazing). Physical skills that can be stored on an enhance program include Athletics, Melee Weapons, Unarmed Attack, Acrobatics, Manipulation, Primitive Ranged Weapons, and Modern Ranged Weapons. On a Critical Failure, the GM may call for a cykosis check. An enhance program takes up 3 slots of active memory. The standard cost of such a program is $1000 for Ordinary quality, $2000 for Good quality, and $3000 for an Amazing program. Each specific type of enhance program must be purchased separately. It does no good for a character to have two copies of the same specific program running in the same round, because the benefit provided by the second program is not cumulative—but the stun damage is. Characters must be careful about how they acquire enhance programs, because some aren't what they appear to be. Enhance programs can be rigged to inflict wounds instead or stuns, or they can be designed to give penalties instead of bonuses, and some might even do both types of harm to an unsuspecting user."
                 },
                 {
                     "name": "Accelerator",
@@ -321,7 +321,7 @@
                     "size": "-",
                     "cost": "2500 / 5000 / 10000",
                     "id": "accelerator",
-                    "description": "The accelerator uses the subject's cybernetic control systems to drastically enhance his reaction speed. The recipient must have reflex wiring and a nanocomputer to support the accelerator, or the device is useless. The accelerator provides the following benefits: Ordinary: +2 Action Check Score Increase, None Actions/Rd Increase, $2,500. Good: +3 Action Check Score Increase, +1 Actions/Rd Increase, $5,000. Amazing: +4 Action Check Score Increase, +2 Actions/Rd Increase, $10,000. In order to receive the accelerator bonus, the character's nanocomputer and reflex wiring must be of equal or better quality. Otherwise, the accelerator is limited in its effect to the weakest of the three systems. Using an accelerator doubles the stun damage inflicted by triggering an enhance program.\n"
+                    "description": "The accelerator uses the subject's cybernetic control systems to drastically enhance his reaction speed. The recipient must have reflex wiring and a nanocomputer to support the accelerator, or the device is useless. The accelerator provides the following benefits: Ordinary: +2 Action Check Score Increase, None Actions/Rd Increase, $2,500. Good: +3 Action Check Score Increase, +1 Actions/Rd Increase, $5,000. Amazing: +4 Action Check Score Increase, +2 Actions/Rd Increase, $10,000. In order to receive the accelerator bonus, the character's nanocomputer and reflex wiring must be of equal or better quality. Otherwise, the accelerator is limited in its effect to the weakest of the three systems. Using an accelerator doubles the stun damage inflicted by triggering an enhance program."
                 },
                 {
                     "name": "Subdermal NIJack",
@@ -348,7 +348,7 @@
                     "size": "2 / 1 / -",
                     "cost": "1250 / 2500 / 3750",
                     "id": "scanner-implant",
-                    "description": "The scanner implant is a magnetic resonance device that can be installed in the user's eye or hand. It provides the cybernetic character with the ability to see into or through walls or objects, as long as he is within 1 meter of the object to be scanned. (Ordinary size 2, Good size 1, Amazing size -).\n"
+                    "description": "The scanner implant is a magnetic resonance device that can be installed in the user's eye or hand. It provides the cybernetic character with the ability to see into or through walls or objects, as long as he is within 1 meter of the object to be scanned. (Ordinary size 2, Good size 1, Amazing size -)."
                 },
                 {
                     "name": "Endoskeleton",
@@ -357,7 +357,7 @@
                     "size": "3",
                     "cost": "4000 / 6000 / 8000",
                     "id": "endoskeleton",
-                    "description": "One of the most difficult pieces of cyberware to install, the endoskeleton provides all of the benefits of a cybernetic exoskeleton-but it's hidden inside the user's body. Large portions of the user's natural skeleton are replaced or reinforced with carbonide alloy structural members. The endoskeleton can anchor cybernetic limbs, MusclePlus, and similar systems just like the exoskeleton, and it provides the user with 3 extra stun/wound/mortal points for Ordinary, Good, or Amazing quality implants.\n"
+                    "description": "One of the most difficult pieces of cyberware to install, the endoskeleton provides all of the benefits of a cybernetic exoskeleton-but it's hidden inside the user's body. Large portions of the user's natural skeleton are replaced or reinforced with carbonide alloy structural members. The endoskeleton can anchor cybernetic limbs, MusclePlus, and similar systems just like the exoskeleton, and it provides the user with 3 extra stun/wound/mortal points for Ordinary, Good, or Amazing quality implants."
                 },
                 {
                     "name": "Subdermal Armor",
@@ -366,7 +366,7 @@
                     "size": "2",
                     "cost": "1500 / 3000 / 6000",
                     "id": "subdermal-armor",
-                    "description": "Consisting of flexible CF bands inserted over the vital portions of the body, subdermal armor is much less obvious than body plating. It doesn't have the stopping power of external armor, but it doesn't affect the user's agility and doesn't advertise his special edge. Ordinary armor stops d4-1 (LI), d6-2 (HI), d6-2 (En); Good armor stops d6-1 (LI), d8-3 (HI), d8-2 (En); and Amazing armor stops d6+1 (LI), d6 (HI), d6 (En).\n"
+                    "description": "Consisting of flexible CF bands inserted over the vital portions of the body, subdermal armor is much less obvious than body plating. It doesn't have the stopping power of external armor, but it doesn't affect the user's agility and doesn't advertise his special edge. Ordinary armor stops d4-1 (LI), d6-2 (HI), d6-2 (En); Good armor stops d6-1 (LI), d8-3 (HI), d8-2 (En); and Amazing armor stops d6+1 (LI), d6 (HI), d6 (En)."
                 },
                 {
                     "name": "Systemic Reinforcement",
@@ -375,7 +375,7 @@
                     "size": "-",
                     "cost": "5000 / 10000 / 15000",
                     "id": "systemic-reinforcement",
-                    "description": "This piece of cyberware serves to effectively increase a character's cyber tolerance score. The subject's vital functions-breathing, circulation, immune responses, etc.-are supplemented by nonintrusive synthetic systems. Systemic reinforcement adds 1, 2, or 3 points to the subject's cyber tolerance score for an Ordinary, Good, or Amazing piece of equipment.\n"
+                    "description": "This piece of cyberware serves to effectively increase a character's cyber tolerance score. The subject's vital functions-breathing, circulation, immune responses, etc.-are supplemented by nonintrusive synthetic systems. Systemic reinforcement adds 1, 2, or 3 points to the subject's cyber tolerance score for an Ordinary, Good, or Amazing piece of equipment."
                 },
                 {
                     "name": "Cortex Bomb",
@@ -384,7 +384,7 @@
                     "size": "1",
                     "cost": 1500,
                     "id": "cortex-bomb",
-                    "description": "The cortex bomb is one of the most brutal means available of ensuring compliant behavior. It's a small radio-activated or timed explosive charge, implanted in the subject's skull. If detonated, the bomb kills the victim in a grisly display. Radio detonators must be within 200 meters to function; cluttered terrain or interior walls may reduce this substantially. Removing a cortex bomb is possible, but if the surgeon achieves a Critical Failure, the bomb goes off, causing d4m to the surgeon and anyone else within 5 meters of the victim.\n"
+                    "description": "The cortex bomb is one of the most brutal means available of ensuring compliant behavior. It's a small radio-activated or timed explosive charge, implanted in the subject's skull. If detonated, the bomb kills the victim in a grisly display. Radio detonators must be within 200 meters to function; cluttered terrain or interior walls may reduce this substantially. Removing a cortex bomb is possible, but if the surgeon achieves a Critical Failure, the bomb goes off, causing d4m to the surgeon and anyone else within 5 meters of the victim."
                 },
                 {
                     "name": "Deflection Web",
@@ -393,7 +393,7 @@
                     "size": "2",
                     "cost": 3500,
                     "id": "deflection-web",
-                    "description": "This is simply a deflection inducer installed in the subject's body. When activated, it increases the subject's resistance modifier against physical or energy attacks by +2, but hinders the subject's own attacks with a +1 step penalty. The web's endurance is only 5 rounds; the charge pack is usually hidden on the calf or upper arm, and changing it requires an entire round.\n"
+                    "description": "This is simply a deflection inducer installed in the subject's body. When activated, it increases the subject's resistance modifier against physical or energy attacks by +2, but hinders the subject's own attacks with a +1 step penalty. The web's endurance is only 5 rounds; the charge pack is usually hidden on the calf or upper arm, and changing it requires an entire round."
                 },
                 {
                     "name": "GP (General Purpose) Implant",
@@ -402,7 +402,7 @@
                     "size": "2 / 3 / 4",
                     "cost": "500 / 1000 / 2000",
                     "id": "gp-general-purpose-implant",
-                    "description": "Almost any piece of gear imaginable can be installed in a general purpose module. Items weighing 1 kg or less can be installed with Ordinary implants; items weighing up to 3 kg are Good implants; and items weighing up to 10 kg are Amazing implants. Powered items include power leads that the character can use to recharge his internal batteries. Common items chosen for GP implants include gauntlets, cutting torches, vidcams, flashlights, zero-g webs, and powered grapnels. General purpose implants cost $500, $1,000, or $2,000 for Ordinary, Good, or Amazing modules, plus twice the cost of the equipment to be installed.\n"
+                    "description": "Almost any piece of gear imaginable can be installed in a general purpose module. Items weighing 1 kg or less can be installed with Ordinary implants; items weighing up to 3 kg are Good implants; and items weighing up to 10 kg are Amazing implants. Powered items include power leads that the character can use to recharge his internal batteries. Common items chosen for GP implants include gauntlets, cutting torches, vidcams, flashlights, zero-g webs, and powered grapnels. General purpose implants cost $500, $1,000, or $2,000 for Ordinary, Good, or Amazing modules, plus twice the cost of the equipment to be installed."
                 },
                 {
                     "name": "Comm Port",
@@ -411,7 +411,7 @@
                     "size": "-",
                     "cost": "500 / 1500 / 2500",
                     "id": "comm-port",
-                    "description": "This is a frequency-agile transceiver hardwired to the user's nanocomputer. Through the port, the user can receive and transmit comm signals, video feed (if he has an optic system), or datastream feed. Using a comm port for a radio conversation is distracting, so the character suffers a +1 step penalty to actions he takes while communicating. Unlike the subdermal transceiver, which takes its cues from subvocalizations, the comm port is controlled directly by the wearer's mind through his nanocomputer. The comm port has a range of 20/50/200 km for an Ordinary, Good, or Amazing installation.\n"
+                    "description": "This is a frequency-agile transceiver hardwired to the user's nanocomputer. Through the port, the user can receive and transmit comm signals, video feed (if he has an optic system), or datastream feed. Using a comm port for a radio conversation is distracting, so the character suffers a +1 step penalty to actions he takes while communicating. Unlike the subdermal transceiver, which takes its cues from subvocalizations, the comm port is controlled directly by the wearer's mind through his nanocomputer. The comm port has a range of 20/50/200 km for an Ordinary, Good, or Amazing installation."
                 },
                 {
                     "name": "Gunsight",
@@ -420,7 +420,7 @@
                     "size": "-",
                     "cost": "1500 / 2500 / 4500",
                     "id": "gunsight",
-                    "description": "There are three components in this system: a vidcam mounted on the wearer's weapon, a wire lead from the vidcam to the wearer's cytronic circuitry, and an optic screen, artificial eye, or cyberoptic system in the user's head (not included in the package). When activated, the vidcam projects crosshairs in the user's field of vision, showing exactly where the gun is pointing. The system provides a -1, -2, or -3 step bonus to the user's attack skill checks with the ranged weapon in question. The cybernetic gunsight is especially deadly when used in conjunction with an enhance program.\n"
+                    "description": "There are three components in this system: a vidcam mounted on the wearer's weapon, a wire lead from the vidcam to the wearer's cytronic circuitry, and an optic screen, artificial eye, or cyberoptic system in the user's head (not included in the package). When activated, the vidcam projects crosshairs in the user's field of vision, showing exactly where the gun is pointing. The system provides a -1, -2, or -3 step bonus to the user's attack skill checks with the ranged weapon in question. The cybernetic gunsight is especially deadly when used in conjunction with an enhance program."
                 },
                 {
                     "name": "System Link",
@@ -429,7 +429,7 @@
                     "size": "1",
                     "cost": "1000 / 2000 / 4000",
                     "id": "system-link",
-                    "description": "Resembling the innate mechalus ability to directly interface with computer hardware, the system link is an extension of the user's cytronic circuitry net that can bypass manual controls, keyboards, or displays. The user delivers commands to the vehicle or system in question through a direct neural link, speeding his reactions and increasing his precision. The link provides a -1, -2, or -3 step bonus to one specialty skill under Vehicle Operation or System Operation. This bonus is not cumulative with any bonus for the quality of a vehicle's onboard computer. Additional specialty modules can be purchased for $500 each.\n"
+                    "description": "Resembling the innate mechalus ability to directly interface with computer hardware, the system link is an extension of the user's cytronic circuitry net that can bypass manual controls, keyboards, or displays. The user delivers commands to the vehicle or system in question through a direct neural link, speeding his reactions and increasing his precision. The link provides a -1, -2, or -3 step bonus to one specialty skill under Vehicle Operation or System Operation. This bonus is not cumulative with any bonus for the quality of a vehicle's onboard computer. Additional specialty modules can be purchased for $500 each."
                 }
             ],
             "id": "progress-level-7"

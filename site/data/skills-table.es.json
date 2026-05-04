@@ -185,14 +185,14 @@
                 },
                 {
                     "skill": "Táctica",
-                    "attribute": "INT",
+                    "attribute": "VOL",
                     "url": "/es/skills/tactics",
                     "cost": 6,
                     "type": "Broad",
                     "items": [
                         {
                             "skill": "Táctica de Infantería",
-                            "attribute": "INT",
+                            "attribute": "VOL",
                             "url": "/es/skills/tactics#tactica-de-infanteria",
                             "cost": 3,
                             "type": "Specialty",
@@ -200,7 +200,7 @@
                         },
                         {
                             "skill": "Táctica Espacial",
-                            "attribute": "INT",
+                            "attribute": "VOL",
                             "url": "/es/skills/tactics#tactica-espacial",
                             "cost": 3,
                             "type": "Specialty",
@@ -208,7 +208,7 @@
                         },
                         {
                             "skill": "Táctica de Vehículos",
-                            "attribute": "INT",
+                            "attribute": "VOL",
                             "url": "/es/skills/tactics#tactica-de-vehiculos",
                             "cost": 3,
                             "type": "Specialty",
@@ -279,14 +279,6 @@
                     "type": "Broad",
                     "items": [
                         {
-                            "skill": "Modificadores de Situación de Manejo de Animales",
-                            "attribute": "VOL",
-                            "url": "/es/skills/animal-handling#modificadores-de-situacion-de-manejo-de-animales",
-                            "cost": 3,
-                            "type": "Specialty",
-                            "css_class": ""
-                        },
-                        {
                             "skill": "Montar Animales",
                             "attribute": "VOL",
                             "url": "/es/skills/animal-handling#montar-animales",
@@ -295,9 +287,9 @@
                             "css_class": ""
                         },
                         {
-                            "skill": "Animal training",
+                            "skill": "Entrenamiento de animales",
                             "attribute": "VOL",
-                            "url": "/es/skills/animal-handling#animal-training",
+                            "url": "/es/skills/animal-handling#entrenamiento-de-animales",
                             "cost": 3,
                             "type": "Specialty",
                             "css_class": ""
@@ -312,41 +304,33 @@
                     "type": "Broad",
                     "items": [
                         {
-                            "skill": "Armadura potenciada",
+                            "skill": "Armadura de Combate",
                             "attribute": "FUE",
-                            "url": "/es/skills/armor-operation#armadura-potenciada",
+                            "url": "/es/skills/armor-operation#armadura-de-combate",
                             "cost": 3,
                             "type": "Specialty",
                             "css_class": ""
                         },
                         {
-                            "skill": "Sistemas de propulsión",
-                            "attribute": "FUE",
-                            "url": "/es/skills/armor-operation#sistemas-de-propulsion",
-                            "cost": 4,
-                            "type": "Specialty",
-                            "css_class": ""
-                        },
-                        {
-                            "skill": "Escudos",
+                            "skill": "Armadura Táctica",
                             "attribute": "INT",
-                            "url": "/es/skills/armor-operation#escudos",
-                            "cost": 3,
-                            "type": "Specialty",
-                            "css_class": ""
-                        },
-                        {
-                            "skill": "Armadura táctica",
-                            "attribute": "FUE",
                             "url": "/es/skills/armor-operation#armadura-tactica",
                             "cost": 3,
                             "type": "Specialty",
                             "css_class": ""
                         },
                         {
-                            "skill": "Tactical armor",
+                            "skill": "Sistemas de propulsión",
                             "attribute": "INT",
-                            "url": "/es/skills/armor-operation#tactical-armor",
+                            "url": "/es/skills/armor-operation#sistemas-de-propulsion",
+                            "cost": 3,
+                            "type": "Specialty",
+                            "css_class": ""
+                        },
+                        {
+                            "skill": "Escudos",
+                            "attribute": "FUE",
+                            "url": "/es/skills/armor-operation#escudos",
                             "cost": 3,
                             "type": "Specialty",
                             "css_class": ""
@@ -423,7 +407,7 @@
                             "url": "/es/skills/awareness#sentido-psionico",
                             "cost": 4,
                             "type": "Specialty",
-                            "css_class": ""
+                            "css_class": "trained-only"
                         }
                     ]
                 },
@@ -487,14 +471,14 @@
                 },
                 {
                     "skill": "Navegación",
-                    "attribute": "INT",
+                    "attribute": "VOL",
                     "url": "/es/skills/navigation",
                     "cost": 3,
                     "type": "Broad",
                     "items": [
                         {
                             "skill": "Astrohabilidad—sistema",
-                            "attribute": "INT",
+                            "attribute": "VOL",
                             "url": "/es/skills/navigation#astrohabilidad-sistema",
                             "cost": 3,
                             "type": "Specialty",
@@ -502,7 +486,7 @@
                         },
                         {
                             "skill": "Navegación—superficie",
-                            "attribute": "INT",
+                            "attribute": "VOL",
                             "url": "/es/skills/navigation#navegacion-superficie",
                             "cost": 3,
                             "type": "Specialty",
@@ -510,7 +494,7 @@
                         },
                         {
                             "skill": "Navigation—surface",
-                            "attribute": "INT",
+                            "attribute": "VOL",
                             "url": "/es/skills/navigation#navigation-surface",
                             "cost": 3,
                             "type": "Specialty",
@@ -545,14 +529,14 @@
                 },
                 {
                     "skill": "Seguridad",
-                    "attribute": "INT",
+                    "attribute": "VOL",
                     "url": "/es/skills/security",
                     "cost": 3,
                     "type": "Broad",
                     "items": [
                         {
                             "skill": "Protocolos de Protección",
-                            "attribute": "INT",
+                            "attribute": "VOL",
                             "url": "/es/skills/security#protocolos-de-proteccion",
                             "cost": 3,
                             "type": "Specialty",
@@ -560,7 +544,7 @@
                         },
                         {
                             "skill": "Dispositivos de Seguridad",
-                            "attribute": "INT",
+                            "attribute": "VOL",
                             "url": "/es/skills/security#dispositivos-de-seguridad",
                             "cost": 4,
                             "type": "Specialty",
@@ -864,14 +848,14 @@
                 },
                 {
                     "skill": "Ley",
-                    "attribute": "INT",
+                    "attribute": "VOL",
                     "url": "/es/skills/law",
                     "cost": 0,
                     "type": "Broad",
                     "items": [
                         {
                             "skill": "Procedimientos judiciales",
-                            "attribute": "INT",
+                            "attribute": "VOL",
                             "url": "/es/skills/law#procedimientos-judiciales",
                             "cost": 3,
                             "type": "Specialty",
@@ -879,7 +863,7 @@
                         },
                         {
                             "skill": "Procedimientos policiales",
-                            "attribute": "INT",
+                            "attribute": "VOL",
                             "url": "/es/skills/law#procedimientos-policiales",
                             "cost": 3,
                             "type": "Specialty",
@@ -887,7 +871,7 @@
                         },
                         {
                             "skill": "Ley, habilidad específica",
-                            "attribute": "INT",
+                            "attribute": "VOL",
                             "url": "/es/skills/law#ley-habilidad-especifica",
                             "cost": 2,
                             "type": "Specialty",
@@ -895,7 +879,7 @@
                         },
                         {
                             "skill": "Psiónica",
-                            "attribute": "INT",
+                            "attribute": "VOL",
                             "url": "/es/skills/law#psionica",
                             "cost": 3,
                             "type": "Specialty",
@@ -986,14 +970,14 @@
             "items": [
                 {
                     "skill": "Administración",
-                    "attribute": "INT",
+                    "attribute": "VOL",
                     "url": "/es/skills/administration",
                     "cost": 4,
                     "type": "Broad",
                     "items": [
                         {
                             "skill": "Burocracia",
-                            "attribute": "INT",
+                            "attribute": "VOL",
                             "url": "/es/skills/administration#burocracia",
                             "cost": 3,
                             "type": "Specialty",
@@ -1001,7 +985,7 @@
                         },
                         {
                             "skill": "Gestión",
-                            "attribute": "INT",
+                            "attribute": "VOL",
                             "url": "/es/skills/administration#gestion",
                             "cost": 3,
                             "type": "Specialty",
@@ -1044,14 +1028,14 @@
                 },
                 {
                     "skill": "Demoliciones",
-                    "attribute": "INT",
+                    "attribute": "VOL",
                     "url": "/es/skills/demolitions",
                     "cost": 6,
                     "type": "Broad",
                     "items": [
                         {
                             "skill": "Desarmar",
-                            "attribute": "INT",
+                            "attribute": "VOL",
                             "url": "/es/skills/demolitions#desarmar",
                             "cost": 4,
                             "type": "Specialty",
@@ -1059,7 +1043,7 @@
                         },
                         {
                             "skill": "Explosivos improvisados",
-                            "attribute": "INT",
+                            "attribute": "VOL",
                             "url": "/es/skills/demolitions#explosivos-improvisados",
                             "cost": 3,
                             "type": "Specialty",
@@ -1067,7 +1051,7 @@
                         },
                         {
                             "skill": "Colocar Explosivos",
-                            "attribute": "INT",
+                            "attribute": "VOL",
                             "url": "/es/skills/demolitions#colocar-explosivos",
                             "cost": 3,
                             "type": "Specialty",
@@ -1077,14 +1061,14 @@
                 },
                 {
                     "skill": "Conocimiento",
-                    "attribute": "INT",
+                    "attribute": "VOL",
                     "url": "/es/skills/knowledge",
                     "cost": 4,
                     "type": "Broad",
                     "items": [
                         {
                             "skill": "Idioma, Habilidad Específica",
-                            "attribute": "INT",
+                            "attribute": "VOL",
                             "url": "/es/skills/knowledge#idioma-habilidad-especifica",
                             "cost": 3,
                             "type": "Specialty",
@@ -1092,7 +1076,7 @@
                         },
                         {
                             "skill": "Psiónica",
-                            "attribute": "INT",
+                            "attribute": "VOL",
                             "url": "/es/skills/knowledge#psionica",
                             "cost": 3,
                             "type": "Specialty",
@@ -1100,7 +1084,7 @@
                         },
                         {
                             "skill": "Operación de Computadoras",
-                            "attribute": "INT",
+                            "attribute": "VOL",
                             "url": "/es/skills/knowledge#operacion-de-computadoras",
                             "cost": 2,
                             "type": "Specialty",
@@ -1108,7 +1092,7 @@
                         },
                         {
                             "skill": "Deducir",
-                            "attribute": "INT",
+                            "attribute": "VOL",
                             "url": "/es/skills/knowledge#deducir",
                             "cost": 2,
                             "type": "Specialty",
@@ -1116,7 +1100,7 @@
                         },
                         {
                             "skill": "Primeros Auxilios",
-                            "attribute": "INT",
+                            "attribute": "VOL",
                             "url": "/es/skills/knowledge#primeros-auxilios",
                             "cost": 3,
                             "type": "Specialty",
@@ -1124,7 +1108,7 @@
                         },
                         {
                             "skill": "Investigación",
-                            "attribute": "INT",
+                            "attribute": "VOL",
                             "url": "/es/skills/knowledge#investigacion",
                             "cost": 2,
                             "type": "Specialty",
@@ -1134,14 +1118,14 @@
                 },
                 {
                     "skill": "Ciencias de la vida",
-                    "attribute": "INT",
+                    "attribute": "VOL",
                     "url": "/es/skills/life-science",
                     "cost": 7,
                     "type": "Broad",
                     "items": [
                         {
                             "skill": "Biología, Botánica, Zoología",
-                            "attribute": "INT",
+                            "attribute": "VOL",
                             "url": "/es/skills/life-science#biologia-botanica-zoologia",
                             "cost": 3,
                             "type": "Specialty",
@@ -1149,7 +1133,7 @@
                         },
                         {
                             "skill": "Psiónica",
-                            "attribute": "INT",
+                            "attribute": "VOL",
                             "url": "/es/skills/life-science#psionica",
                             "cost": 3,
                             "type": "Specialty",
@@ -1157,7 +1141,7 @@
                         },
                         {
                             "skill": "Biología",
-                            "attribute": "INT",
+                            "attribute": "VOL",
                             "url": "/es/skills/life-science#biologia",
                             "cost": 3,
                             "type": "Specialty",
@@ -1165,7 +1149,7 @@
                         },
                         {
                             "skill": "Botánica",
-                            "attribute": "INT",
+                            "attribute": "VOL",
                             "url": "/es/skills/life-science#botanica",
                             "cost": 3,
                             "type": "Specialty",
@@ -1173,7 +1157,7 @@
                         },
                         {
                             "skill": "Genética",
-                            "attribute": "INT",
+                            "attribute": "VOL",
                             "url": "/es/skills/life-science#genetica",
                             "cost": 3,
                             "type": "Specialty",
@@ -1181,7 +1165,7 @@
                         },
                         {
                             "skill": "Xenología",
-                            "attribute": "INT",
+                            "attribute": "VOL",
                             "url": "/es/skills/life-science#xenologia",
                             "cost": 3,
                             "type": "Specialty",
@@ -1189,7 +1173,7 @@
                         },
                         {
                             "skill": "Zoología",
-                            "attribute": "INT",
+                            "attribute": "VOL",
                             "url": "/es/skills/life-science#zoologia",
                             "cost": 3,
                             "type": "Specialty",
@@ -1199,14 +1183,14 @@
                 },
                 {
                     "skill": "Ciencias médicas",
-                    "attribute": "INT",
+                    "attribute": "VOL",
                     "url": "/es/skills/medical-science",
                     "cost": 7,
                     "type": "Broad",
                     "items": [
                         {
                             "skill": "Ciencias forenses",
-                            "attribute": "INT",
+                            "attribute": "VOL",
                             "url": "/es/skills/medical-science#ciencias-forenses",
                             "cost": 3,
                             "type": "Specialty",
@@ -1214,7 +1198,7 @@
                         },
                         {
                             "skill": "Conocimiento médico",
-                            "attribute": "INT",
+                            "attribute": "VOL",
                             "url": "/es/skills/medical-science#conocimiento-medico",
                             "cost": 3,
                             "type": "Specialty",
@@ -1230,7 +1214,7 @@
                         },
                         {
                             "skill": "Cirugía",
-                            "attribute": "INT",
+                            "attribute": "VOL",
                             "url": "/es/skills/medical-science#cirugia",
                             "cost": 5,
                             "type": "Specialty",
@@ -1238,7 +1222,7 @@
                         },
                         {
                             "skill": "Tratamiento",
-                            "attribute": "INT",
+                            "attribute": "VOL",
                             "url": "/es/skills/medical-science#tratamiento",
                             "cost": 4,
                             "type": "Specialty",
@@ -1256,14 +1240,14 @@
                 },
                 {
                     "skill": "Ciencias físicas",
-                    "attribute": "INT",
+                    "attribute": "VOL",
                     "url": "/es/skills/physical-science",
                     "cost": 7,
                     "type": "Broad",
                     "items": [
                         {
                             "skill": "Astronomía",
-                            "attribute": "INT",
+                            "attribute": "VOL",
                             "url": "/es/skills/physical-science#astronomia",
                             "cost": 3,
                             "type": "Specialty",
@@ -1271,7 +1255,7 @@
                         },
                         {
                             "skill": "Química",
-                            "attribute": "INT",
+                            "attribute": "VOL",
                             "url": "/es/skills/physical-science#quimica",
                             "cost": 3,
                             "type": "Specialty",
@@ -1279,7 +1263,7 @@
                         },
                         {
                             "skill": "Física",
-                            "attribute": "INT",
+                            "attribute": "VOL",
                             "url": "/es/skills/physical-science#fisica",
                             "cost": 3,
                             "type": "Specialty",
@@ -1287,7 +1271,7 @@
                         },
                         {
                             "skill": "Planetología",
-                            "attribute": "INT",
+                            "attribute": "VOL",
                             "url": "/es/skills/physical-science#planetologia",
                             "cost": 3,
                             "type": "Specialty",
@@ -1297,14 +1281,14 @@
                 },
                 {
                     "skill": "Operación de Sistemas",
-                    "attribute": "INT",
+                    "attribute": "VOL",
                     "url": "/es/skills/system-operation",
                     "cost": 3,
                     "type": "Broad",
                     "items": [
                         {
                             "skill": "Comunicaciones",
-                            "attribute": "INT",
+                            "attribute": "VOL",
                             "url": "/es/skills/system-operation#comunicaciones",
                             "cost": 3,
                             "type": "Specialty",
@@ -1312,7 +1296,7 @@
                         },
                         {
                             "skill": "Defensas",
-                            "attribute": "INT",
+                            "attribute": "VOL",
                             "url": "/es/skills/system-operation#defensas",
                             "cost": 3,
                             "type": "Specialty",
@@ -1320,7 +1304,7 @@
                         },
                         {
                             "skill": "Ingeniería",
-                            "attribute": "INT",
+                            "attribute": "VOL",
                             "url": "/es/skills/system-operation#ingenieria",
                             "cost": 3,
                             "type": "Specialty",
@@ -1328,7 +1312,7 @@
                         },
                         {
                             "skill": "Sensores",
-                            "attribute": "INT",
+                            "attribute": "VOL",
                             "url": "/es/skills/system-operation#sensores",
                             "cost": 3,
                             "type": "Specialty",
@@ -1336,7 +1320,7 @@
                         },
                         {
                             "skill": "Armas",
-                            "attribute": "INT",
+                            "attribute": "VOL",
                             "url": "/es/skills/system-operation#armas",
                             "cost": 6,
                             "type": "Specialty",
@@ -1346,14 +1330,14 @@
                 },
                 {
                     "skill": "Ciencia técnica",
-                    "attribute": "INT",
+                    "attribute": "VOL",
                     "url": "/es/skills/technical-science",
                     "cost": 7,
                     "type": "Broad",
                     "items": [
                         {
                             "skill": "Invención",
-                            "attribute": "INT",
+                            "attribute": "VOL",
                             "url": "/es/skills/technical-science#invencion",
                             "cost": 3,
                             "type": "Specialty",
@@ -1361,7 +1345,7 @@
                         },
                         {
                             "skill": "Remendar",
-                            "attribute": "INT",
+                            "attribute": "VOL",
                             "url": "/es/skills/technical-science#remendar",
                             "cost": 3,
                             "type": "Specialty",
@@ -1369,7 +1353,7 @@
                         },
                         {
                             "skill": "Reparación",
-                            "attribute": "INT",
+                            "attribute": "VOL",
                             "url": "/es/skills/technical-science#reparacion",
                             "cost": 3,
                             "type": "Specialty",
@@ -1377,7 +1361,7 @@
                         },
                         {
                             "skill": "Jury-rig",
-                            "attribute": "INT",
+                            "attribute": "VOL",
                             "url": "/es/skills/technical-science#jury-rig",
                             "cost": 3,
                             "type": "Specialty",
@@ -1385,7 +1369,7 @@
                         },
                         {
                             "skill": "Repair",
-                            "attribute": "INT",
+                            "attribute": "VOL",
                             "url": "/es/skills/technical-science#repair",
                             "cost": 3,
                             "type": "Specialty",
