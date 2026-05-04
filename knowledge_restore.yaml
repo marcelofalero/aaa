@@ -1,0 +1,861 @@
+  knowledge:
+    attribute: INT
+    cost: 4
+    category: Technical
+    url: /skills/knowledge
+    localized:
+    - en:
+        name: Knowledge
+        description: "This broad skill represents a character's ability to know at least a little bit about any particular subject. With just the broad skill, a character isn't considered an expert, but it represents the ability to logically recall a class he took, an article he read, or a documentary he saw on the topic in question.\n\nKnowledge skill checks are usually made in secret so the players don't even know the check is being made. Once a character is determined to have knowledge concerning a particular topic, a note can be made on the character sheet.\n\n### Table P24: Knowledge Categories\nFor a Knowledge skill check, the Gamemaster determines which category the information sought belongs to:\n\n| Category | Modifier | Complexity |\n| :--- | :--- | :--- |\n| **Trivial** | +1 step | Marginal |\n| **General** | None | Ordinary |\n| **Specific** | +2 steps | Good |\n| **Expert** | +3 steps | Amazing |\n\n- **Trivial:** Simple, obvious, or readily available information.\n- **General:**\
+          \ Key features of a topic, not details or particulars.\n- **Specific:** Special features of a topic, details known to someone intimate with the topic.\n- **Expert:** A level of detail usually only acquired through experience, research, or training.\n\n---"
+    - es:
+        name: Conocimiento
+        description: "Esta habilidad amplia representa la capacidad de un personaje para saber al menos un poco sobre cualquier tema en particular. Solo CON la habilidad amplia, un personaje no es considerado un experto, pero representa la capacidad de recordar lógicamente una clase que tomó, un artículo que leyó o un documental que vio sobre el tema en cuestión.\n\nLas comprobaciones de la habilidad de Conocimiento generalmente se realizan en secreto para que los jugadores ni siquiera sepan que se está realizando la comprobación. Una vez que se determina que un personaje tiene conocimiento sobre un tema en particular, se puede hacer una nota en la hoja del personaje.\n\n### Tabla P24: Categorías de Conocimiento\nPara una comprobación de la habilidad de Conocimiento, el Director de Juego determina a qué categoría pertenece la información buscada:\n\n| Categoría | Modificador | Complejidad |\n| :--- | :--- | :--- |\n| **Trivial** | +1 paso | Marginal |\n| **General** | Ninguno | Ordinaria\
+          \ |\n| **Específica** | +2 pasos | Buena |\n| **Experta** | +3 pasos | Asombrosa |\n\n- **Trivial:** Información simple, obvia o fácilmente disponible.\n- **General:** Características clave de un tema, no detalles ni pormenores.\n- **Específica:** Características especiales de un tema, detalles conocidos por alguien íntimamente relacionado CON el tema.\n- **Experta:** Un nivel de detalle que generalmente solo se adquiere a través de la experiencia, la investigación o el entrenamiento.\n\n---\n\n# Habilidades de Especialidad"
+    items:
+      language-specific-skill:
+        attribute: INT
+        cost: 3
+        url: /skills/knowledge#language-specific-skill
+        localized:
+        - en:
+            name: Language, Specific Skill
+            description: "This specialty skill gives a character a certain amount of fluency in a specific language. Every character begins with **Rank 3** in his or her native language. Lower ranks indicate a crude familiarity; higher ranks improve the character's vocabulary and comprehension of obscure or complicated passages.\n\n### Rank Benefits\n⊗ **Improved Communication:** As a character achieves higher skill ranks in a specific language, he or she gets better at employing other skills that involve language use (such as encounter skills and some Creativity specialties).  This benefit provides a reduction to situation die penalties: **1 step at rank 4**, **2 steps at rank 8**, and **3 steps at rank 12**. This benefit only reduces a penalty; it never provides a bonus."
+        - es:
+            name: Operación de Computadoras
+            description: "Esta habilidad de especialidad permite a un personaje mejorar su capacidad para hacer que las computadoras funcionen, específicamente su capacidad para obtener el máximo provecho del software (incluido el sistema operativo) que está instalado en una computadora. El grado de éxito se relaciona CON la calidad o cantidad de información accedida o recuperada, o la velocidad CON la que el operador es capaz de realizar una tarea.\n\n---"
+      psionics:
+        attribute: INT
+        cost: 3
+        url: /skills/knowledge#psionics
+        localized:
+        - en:
+            name: Psionics
+            description: "This skill gives a character a working knowledge of psionic abilities, perhaps even beyond what the character's culture understands as a whole. The degree of success achieved on a skill check relates to the quality or quantity of information that is available to or understood by the character."
+        - es:
+            name: Deducir
+            description: "CON esta habilidad de especialidad, un personaje puede perfeccionar sus habilidades para usar la razón y la lógica para llegar a una conclusión. Los detectives e investigadores utilizan Deducir para armar pistas, o los científicos e ingenieros para descubrir la respuesta a un problema relacionado CON sus habilidades.\n\n⊗ **Modificador de Resistencia:** En rangos más altos, la habilidad de deducir proporciona una mejora al **modificador de resistencia de Inteligencia** de un personaje, lo que hace que sea más difícil para los oponentes usar CON éxito habilidades de encuentro para engañar al personaje. El modificador mejora en **+1 al rango 4**, **+1 al rango 8** y **+1 al rango 12**.\n\n---"
+      computer-operation:
+        attribute: INT
+        cost: 2
+        url: /skills/knowledge#computer-operation
+        localized:
+        - en:
+            name: Computer Operation
+            description: "This specialty skill allows a character to improve his ability to make computers perform, specifically his ability to get the most out of the software (including the operating system) that is installed in a computer. The degree of success relates to the quality or quantity of information accessed or retrieved, or the speed with which the operator is able to perform a task.\n\n---"
+        - es:
+            name: Primeros Auxilios
+            description: "Esta habilidad de especialidad representa el entrenamiento básico en técnicas de primeros auxilios, incluyendo el uso de paquetes de traumatología, kits de primeros auxilios y otros artículos médicos de uso general. No proporciona al personaje la capacidad de usar herramientas quirúrgicas especializadas o equipo médico avanzado.\n\n### Curar Daño de Aturdimiento\nUn personaje puede usar los primeros auxilios para eliminar el daño de aturdimiento de sí mismo o de otra persona. Una comprobación de habilidad exitosa restaura **2, 3 o 4 puntos de aturdimiento** dependiendo del éxito (Ordinario, Bueno o Asombroso). Esto solo funciona en alguien que está consciente.\n\n### Recuperación de Desmayo (Knockout)\nUn desmayo ocurre cuando se agotan los puntos de aturdimiento de un personaje. Una comprobación de habilidad exitosa devuelve la conciencia a un personaje y restaura **1, 2 o 3 puntos de aturdimiento**, según el grado de éxito.\n\n### Curar Daño de Herida\nLa habilidad\
+              \ de primeros auxilios se puede usar para curar heridas, aunque se requiere un kit de primeros auxilios o un paquete de traumatología.\n- **Kit de Primeros Auxilios:** Se requiere una comprobación de habilidad compleja de **Complejidad Buena** (1 herida curada al finalizar).\n- **Paquete de Traumatología:** Se requiere una comprobación de habilidad compleja de **Complejidad Ordinaria** (2 heridas curadas al finalizar).\n- **Fallo Crítico:** Si se usa un paquete de traumatología, el paciente sufre 1 herida en lugar de curarse, y el paquete se arruina.\n\n### Agonizante (Dying)\nUn personaje CON cualquier cantidad de daño Mortal se considera agonizante. Un personaje que usa un kit de primeros auxilios o un paquete de traumatología y realiza una comprobación de habilidad de primeros auxilios exitosa puede **estabilizar el daño Mortal**, eliminando la necesidad de que el personaje realice una comprobación de Resistencia–aguante al final de la escena actual. (Nota: la cirugía sigue\
+              \ siendo necesaria para restaurar la salud de un personaje agonizante).\n\n### Beneficios de Rango\n⊗ **Primeros Auxilios Mejorados:** A medida que un personaje alcanza rangos de habilidad más altos, se vuelve más competente al brindar ayuda a los pacientes lesionados. Esto reduce la penalización por dado de situación en **1 paso al rango 4**, **2 pasos al rango 8** y **3 pasos al rango 12**.\n\n---"
+      deduce:
+        attribute: INT
+        cost: 2
+        url: /skills/knowledge#deduce
+        localized:
+        - en:
+            name: Deduce
+            description: "With this specialty skill, a character can hone his abilities to use reason and logic to reach a conclusion. Deduce is used by detectives and investigators to piece together clues, or by scientists and engineers to discover the answer to a skill-related problem.\n\n⊗ **Resistance Modifier:** At higher ranks, the deduce skill provides an improvement to a character's **Intelligence resistance modifier**, which makes it more difficult for opponents to successfully use encounter skills to deceive the character. The modifier improves by **+1 at Rank 4**, **+1 at Rank 8**, and **+1 at Rank 12**.\n\n---"
+        - es:
+            name: Idioma, Habilidad Específica
+            description: "Esta habilidad de especialidad le da a un personaje cierta fluidez en un idioma específico. Cada personaje comienza CON el **rango 3** en su idioma nativo. Los rangos más bajos indican una familiaridad rudimentaria; los rangos más altos mejoran el vocabulario del personaje y la comprensión de pasajes oscuros o complicados.\n\n### Beneficios de Rango\n⊗ **Comunicación Mejorada:** A medida que un personaje alcanza rangos de habilidad más altos en un idioma específico, mejora en el empleo de otras habilidades que involucran el uso del lenguaje (como las habilidades de encuentro y algunas especialidades de Creatividad). Este beneficio proporciona una reducción a las penalizaciones por dado de situación: **1 paso al rango 4**, **2 pasos al rango 8** y **3 pasos al rango 12**. Este beneficio solo reduce una penalización; nunca proporciona un bono.\n---"
+      first-aid:
+        attribute: INT
+        cost: 3
+        url: /skills/knowledge#first-aid
+        localized:
+        - en:
+            name: First Aid
+            description: "This specialty skill represents basic training in first aid techniques, including the use of trauma packs, first aid kits, and other general-use medical items. It doesn't provide a character with the ability to use specialized surgical tools or advanced medical gear.\n\n### Heal Stun Damage\nA character can use first aid to remove stun damage from himself or someone else. A successful skill check restores **2, 3, or 4 stun points** depending on success (Ordinary, Good, or Amazing). This only works on someone who is conscious.\n\n### Knockout Recovery\nA knockout occurs when a character's stun points are used up. A successful skill check brings a character back to consciousness and restores **1, 2, or 3 stun points**, depending on the degree of success.\n\n### Heal Wound Damage\nThe first aid skill can be used to heal wounds, though a first aid kit or trauma pack is required.\n- **First Aid Kit:** A complex skill check of **Good complexity** is required (1 wound\
+              \ healed on completion).\n- **Trauma Pack:** A complex skill check of **Ordinary complexity** is required (2 wounds healed on completion).\n- **Critical Failure:** If a trauma pack is used, the patient suffers 1 wound instead of having any wounds healed, and the pack is ruined.\n\n### Dying\nA character with any amount of mortal damage is considered to be dying. A character who uses either a first aid kit or a trauma pack and makes a successful first aid skill check can **stabilize mortal damage**, removing the need for the character to make a Stamina–endurance check at the end of the current scene. (Note: surgery is still necessary to restore a dying character to health).\n\n### Rank Benefits\n⊗ **Improved First Aid:** As a character achieves higher skill ranks, he becomes more proficient at providing aid to injured patients. This reduces the situation die penalty by **1 step at rank 4**, **2 steps at rank 8**, and **3 steps at rank 12**.\n\n---"
+        - es:
+            name: Psiónica
+            description: "Esta habilidad le da a un personaje un conocimiento práctico de las habilidades psiónicas, tal vez incluso más allá de lo que entiende su cultura como un todo. El grado de éxito logrado en una comprobación de habilidad se relaciona CON la calidad o cantidad de información disponible o comprendida por el personaje."
+      language:
+        attribute: INT
+        cost: 2
+        url: /skills/knowledge#language
+        localized:
+        - en:
+            name: Language
+            description: ''
+        - es:
+            name: Street knowledge
+            description: ''
+      medical-knowledge:
+        attribute: INT
+        cost: 3
+        url: /skills/knowledge#medical-knowledge
+        localized:
+        - en:
+            name: Medical Knowledge
+            description: ''
+        - es:
+            name: Técnico Knowledge
+            description: ''
+      street-knowledge:
+        attribute: WIL
+        cost: 3
+        url: /skills/knowledge#street-knowledge
+        localized:
+        - en:
+            name: Street knowledge
+            description: ''
+        - es:
+            name: Street knowledge
+            description: ''
+      technical-knowledge:
+        attribute: INT
+        cost: 3
+        url: /skills/knowledge#technical-knowledge
+        localized:
+        - en:
+            name: Technical Knowledge
+            description: ''
+        - es:
+            name: Technical Knowledge
+            description: ''
+  law:
+    attribute: INT
+    cost: 0
+    category: Social
+    url: /skills/law
+    localized:
+    - en:
+        name: Law
+        description: "This broad skill provides a character with general knowledge of the laws and legal systems of her native society. It can be a branch of human civilization on Earth or a colony planet; it could also be a specific alien society or culture.\n\nThe Law skill can be used as an encounter skill to change the attitude of an individual. If this results in an attitude of **Friendly** or better, it provides a **-1 step bonus** on subsequent skill checks to get information or cooperation out of that individual.\n\nWith a successful skill check, a character can avoid legal entanglements, understand court procedures, and have a working knowledge of the techniques used by a specific society's law enforcers. In a courtroom drama or legal issue, a Law skill check can be used to determine the outcome.\n\n### Courtroom Resolution\nWhen a legal battle is played out \"off camera,\" the GM may call for Law skill checks. In a competing check:\n- **Critical Failure:** Opposing lawyer receives\
+          \ a -3 bonus; or the character loses the case outright.\n- **Failure:** Opposing lawyer receives a -1 bonus to his skill check.\n- **Ordinary:** Success made with no modifier.\n- **Good:** Opponent takes a +1 penalty.\n- **Amazing:** Opponent takes a +3 penalty, or the character wins the case outright.\n\n---"
+    - es:
+        name: Ley
+        description: "Esta habilidad general proporciona a un personaje conocimientos generales sobre las leyes y sistemas legales de su sociedad nativa. También puede tratarse como una habilidad de encuentro para cambiar la actitud de un individuo.\n\nEn una acción legal, el personaje y el oponente realizan tiradas de habilidad alternas hasta que alguien obtiene un Fallo Crítico o un resultado Asombroso."
+    items:
+      psionic-law:
+        attribute: INT
+        cost: 3
+        url: /skills/law#psionic-law
+        localized:
+        - en:
+            name: Psionic Law
+            description: "Lawyers, judges, and others use this skill to interact in courtrooms and in legislative meetings. This aspect of the Law broad skill is used to argue a case or a point of view in an official proceeding."
+        - es:
+            name: Habilidades de Especialidad
+            description: "Abogados, jueces y otros utilizan esta habilidad para interactuar en un entorno judicial. Esta especialidad se usa para defender un caso o punto de vista en un procedimiento oficial.\n\n### Ley [Específica]\n*No se puede usar sin estar entrenado.*\n\nPara cada compra por separado de esta especialidad, un personaje selecciona una cultura o tipo de ley específico\n### Beneficios de Rango\n- **Efecto Mejorado:** Bonificación de -1 en el rango 3, -2 en el rango 6, -3 en el rango 9 y -4 en el rango 12.\n\n### Procedimientos de aplicación de la ley\nOficiales de policía, detectives, cazarrecompensas y otros utilizan esta habilidad para seguir (o eludir) los procedimientos legales de aplicación de la ley. Los temas incluyen vigilancia, registro e incautación, arresto y detención, y redacción de informes.\nEsta especialidad también se utiliza para determinar qué tan \"legal\" o sólido es un arresto.\n### Ley psiónica\n*No se puede usar sin estar entrenado.*\n\nLos abogados,\
+              \ jueces y otros utilizan esta habilidad para interactuar en salas de tribunales y en reuniones legislativas. Este aspecto de la habilidad amplia de Ley se utiliza para argumentar un caso o un punto de vista en un procedimiento oficial."
+      court-procedures:
+        attribute: INT
+        cost: 3
+        url: /skills/law#court-procedures
+        localized:
+        - en:
+            name: Court procedures
+            description: "Lawyers, judges, and others use this skill to interact in a courtroom setting. This specialty is used to argue a case or point of view in an official proceeding.\n\n---"
+        - es:
+            name: Law enforcement procedures
+            description: "Police officers, detectives, bounty hunters, and others use this skill to follow (or bend) legal law enforcement procedures. Topics covered include:\n- Knowing laws concerning surveillance, search, and seizure.\n- Proper arrest and detainment procedures.\n- Filling out reports and Otros official paperwork.\n\nThis specialty is also used to determine how \"Bueno\" an arrest is (providing ammunition to the lawyers who will try to make the arrest stick).\n\n---"
+      law-enforcement-procedures:
+        attribute: INT
+        cost: 3
+        url: /skills/law#law-enforcement-procedures
+        localized:
+        - en:
+            name: Law enforcement procedures
+            description: "Police officers, detectives, bounty hunters, and others use this skill to follow (or bend) legal law enforcement procedures. Topics covered include:\n- Knowing laws concerning surveillance, search, and seizure.\n- Proper arrest and detainment procedures.\n- Filling out reports and other official paperwork.\n\nThis specialty is also used to determine how \"good\" an arrest is (providing ammunition to the lawyers who will try to make the arrest stick).\n\n---"
+        - es:
+            name: Law, specific skill
+            description: "For each separate purchase of this specialty, a Personaje selects a specific Cultura or a specific type of law (maritime law, salvage law, etc.). As the Especialidad is improved, the Personaje gains a progressively stronger grasp on the laws and legal systems of that Cultura or specialty.\n\n⊗ **Increased Effect:** At higher ranks, the Personaje becomes more proficient within the legal system of the Cultura in question. Using the specific skill provides a reduction to the Dado de Situación:\n- **-1 bonus at Rank 3**\n- **-2 bonus at Rank 6**\n- **-3 bonus at Rank 9**\n- **-4 bonus at Rank 12**\n---"
+      law-specific-skill:
+        attribute: INT
+        cost: 2
+        url: /skills/law#law-specific-skill
+        localized:
+        - en:
+            name: Law, specific skill
+            description: "For each separate purchase of this specialty, a character selects a specific culture or a specific type of law (maritime law, salvage law, etc.). As the specialty skill is improved, the character gains a progressively stronger grasp on the laws and legal systems of that culture or specialty.\n\n⊗ **Increased Effect:** At higher ranks, the character becomes more proficient within the legal system of the culture in question. Using the specific skill provides a reduction to the situation die:\n- **-1 bonus at Rank 3**\n- **-2 bonus at Rank 6**\n- **-3 bonus at Rank 9**\n- **-4 bonus at Rank 12**\n---"
+        - es:
+            name: Law, specific skill
+            description: "For each separate purchase of this specialty, a character selects a specific culture or a specific type of law (maritime law, salvage law, etc.). As the specialty skill is improved, the character gains a progressively stronger grasp on the laws and legal systems of that culture or specialty.\n\n⊗ **Increased Effect:** At higher ranks, the character becomes more proficient within the legal system of the culture in question. Using the specific skill provides a reduction to the situation die:\n- **-1 bonus at Rank 3**\n- **-2 bonus at Rank 6**\n- **-3 bonus at Rank 9**\n- **-4 bonus at Rank 12**\n---"
+  leadership:
+    attribute: PER
+    cost: 4
+    category: Social
+    url: /skills/leadership
+    localized:
+    - en:
+        name: Leadership
+        description: "This broad skill provides a character with the abilities and talents of a leader. With leadership training, a character can coordinate a group to get it to perform better or work as a team. Only one character can assume the role of leader at a time, and conflicting orders cancel each other out.\n\nA leader, by using an action to attempt a Leadership skill check and then achieving a degree of success on the check, provides a **-1 bonus** to all actions performed in the remainder of the current round and all of the following round by a certain number of followers.\n\n### Leadership Situation Modifiers\nThe check is modified by the attitude of the targets, plus any other factors determined by the GM:\n\n| Situation | Modifier |\n| :--- | :--- |\n| **Targets are accustomed to being led** | -2 steps |\n| **Targets recognize leader's authority** | 0 |\n| **Targets don't recognize leader's authority** | +2 steps |\n\n- **Note:** Leadership broad skill can't be used on targets\
+          \ who are **Combative**.\n\n---\n\n### Results\n- **Critical Failure:** The leader confuses his followers, who receive a **+1 penalty** for the remainder of the current round and all of the following round. No further Leadership checks can be made in this scene.\n- **Failure:** The followers receive no bonus in the current round, but the leader can make another check in the next round.\n- **Ordinary:** As many as **two followers** receive the leadership bonus.\n- **Good:** As many as **four followers** receive the leadership bonus.\n- **Amazing:** As many as **six followers** receive the leadership bonus.\n\n---"
+    - es:
+        name: Liderazgo
+        description: "Esta habilidad general proporciona a un personaje las capacidades y talentos de un líder. Un líder puede coordinar a un grupo para rendir mejor o trabajar en equipo. Solo un personaje puede asumir el papel de líder a la vez.\n\nLa tirada de acción de un líder proporciona una bonificación a todas las acciones realizadas en el resto del asalto y en todos los asaltos siguientes por parte de sus seguidores. No se puede usar sobre objetivos que estén Combativos.\n\n### Resultados\n- **Fallo Crítico:** El líder confunde a sus seguidores, quienes reciben una penalización de +1 para el resto del asalto.\n- **Fallo:** Los seguidores no reciben bonificación; el líder puede realizar otra tirada en el siguiente asalto.\n- **Ordinario:** Hasta dos seguidores reciben la bonificación de liderazgo.\n- **Bueno:** Hasta cuatro seguidores reciben la bonificación de liderazgo.\n- **Asombroso:** Hasta seis seguidores reciben la bonificación de liderazgo."
+    items:
+      command:
+        attribute: PER
+        cost: 4
+        url: /skills/leadership#command
+        localized:
+        - en:
+            name: Command
+            description: "This specialty skill represents the character's ability to lead others by virtue of sheer authoritativeness and persuasive ability. This is the skill used by military officers, elected officials, and law enforcers to issue orders and see that they're carried out.\n\n**Note:** Command can't be used on targets who are Hostile or Combative; before such targets can be led, their attitude must be shifted (perhaps by the use of the Inspire skill).\n\n⊗ **Increased Effect:** As a character achieves higher ranks in this specialty, the bonus to his or her Leadership skill checks improves to **-1 at rank 4**, **-2 at rank 8**, and **-3 at rank 12**. (Note: This bonus is not cumulative.)\n\n---"
+        - es:
+            name: Habilidades de Especialidad
+            description: "{{% list %}}\n- **Mando\n- **Inspirar:** Liderar mediante el ejemplo; puede usarse sobre objetivos Hostiles o Combativos.\n| Resultados | Descripción |\n| :--- | :--- |\n| **Ordinario** | El éxito indica que hasta dos seguidores reciben la bonificación de liderazgo. |\n| **Bueno** | El éxito indica que hasta cuatro seguidores reciben la bonificación de liderazgo. |\n| **Asombroso** | El éxito indica que hasta seis seguidores reciben la bonificación de liderazgo. |"
+      inspire:
+        attribute: PER
+        cost: 3
+        url: /skills/leadership#inspire
+        localized:
+        - en:
+            name: Inspire
+            description: "This specialty skill represents the ability to command by example. This skill can be used by military officers, elected officials, and law enforcers who also have the command specialty, but inspire is more often used by those who are trying to lead civil disobedience movements and other types of nonviolent activities.\n\nOne major difference is that **Inspire can be used on targets who are Hostile or Combative**, favorably altering the attitude of the target(s) toward the user of the skill.\n\n⊗ **Increased Effect:** As a character achieves higher ranks in this specialty, the bonus to his or her Leadership skill checks improves to **-1 at rank 4**, **-2 at rank 8**, and **-3 at rank 12**. (Note: This bonus is not cumulative.)\n\n---"
+        - es:
+            name: Inspirar
+            description: "This Especialidad represents the ability to command by example. This skill can be used by military officers, elected officials, and law enforcers who also have the command specialty, but Inspirar is more often used by those who are trying to lead civil disobedience movements and Otros types of nonviolent activities.\n\nOne major difference is that **Inspirar can be used on targets who are Hostile or Combative**, favorably altering the attitude of the target(s) toward the user of the skill.\n\n⊗ **Increased Effect:** As a Personaje achieves higher ranks in this specialty, the bonus to his or her Liderazgo skill checks improves to **-1 at rank 4**, **-2 at rank 8**, and **-3 at rank 12**. (Note: This bonus is not cumulative.)\n\n---"
+  life-science:
+    attribute: INT
+    cost: 7
+    category: Technical
+    url: /skills/life-science
+    localized:
+    - en:
+        name: Life Science
+        description: "This broad skill represents a character's training in the life sciences. Skill checks involving this skill are made the same as Knowledge skill checks.\n\n---"
+    - es:
+        name: Ciencias de la vida
+        description: "Esta habilidad amplia representa la formación de un personaje en las ciencias de la vida. Las tiradas de habilidad que involucran esta habilidad se realizan de la misma manera que las tiradas de la habilidad de Conocimiento.\n\n---"
+    items:
+      biology-botany-zoology:
+        attribute: INT
+        cost: 3
+        url: /skills/life-science#biology-botany-zoology
+        localized:
+        - en:
+            name: Biology, Botany, Zoology
+            description: "These specialty skills must be purchased separately.\n- **Biology:** The study of organisms and biochemical processes.\n- **Botany:** The study of plants and identification.\n- **Zoology:** The study of animals and animal life.\n\n⊗ **Increased Effect:** A character receives a **-1 bonus** at rank 3, **-2** at rank 6, **-3** at rank 9, and **-4** at rank 12 on certain other skill checks that can be assisted by this specialty. These skills include Survival, Animal Handling, and Medical Science—treatment."
+        - es:
+            name: Biología, Botánica, Zoología
+            description: "Estas habilidades de especialidad deben comprarse por separado.\n- **Biología:** El estudio de los organismos y sus procesos bioquímicos.\n- **Botánica:** El estudio e identificación de las plantas.\n- **Zoología:** El estudio de los animales y la vida animal.\n\n⊗ **Efecto incrementado:** Un personaje recibe una **bonificación de -1 paso** en el rango 3, **-2** en el rango 6, **-3** en el rango 9 y **-4** en el rango 12 en ciertas otras tiradas de habilidad que puedan ser asistidas por esta especialidad. Estas habilidades incluyen Supervivencia, Manejo de animales y Ciencias médicas—tratamiento.\n\n---"
+      psionics:
+        attribute: INT
+        cost: 3
+        url: /skills/life-science#psionics
+        localized:
+        - en:
+            name: Psionics
+            description: "This specialty skill represents the scientific study of the biological and biochemical nature of psionic abilities.\n\n⊗ **Increased Effect:** A character receives a **-1 bonus** at rank 3, **-2** at rank 6, **-3** at rank 9, and **-4** at rank 12 on certain other skill checks that can be assisted by this specialty. These skills include Telepathy—drain, Bio-Kinesis—bioluminescent, and Bio-Kinesis—bioweapon."
+        - es:
+            name: Genética
+            description: "La genética es el estudio de la herencia y los genes, formando la base de la ingeniería genética y la clonación.\n\n⊗ **Efecto incrementado:** Un personaje recibe una **bonificación de -1 paso** en el rango 3, **-2** en el rango 6, **-3** en el rango 9 y **-4** en el rango 12 en ciertas otras tiradas de habilidad que puedan ser asistidas por esta especialidad. Estas habilidades incluyen Ciencias médicas—tratamiento, Ciencias forenses y ciertas tiradas de Biocinesis o Mutación.\n\n---"
+      biology:
+        attribute: INT
+        cost: 3
+        url: /skills/life-science#biology
+        localized:
+        - en:
+            name: Biology
+            description: ''
+        - es:
+            name: Xenología
+            description: "La xenología es el estudio de formas de vida animal de naturaleza alienígena y puede usarse para identificar o clasificar dichas formas de vida, incluida la vida vegetal alienígena. Permite a un personaje realizar suposiciones educadas sobre la naturaleza, el comportamiento y las capacidades de las formas de vida alienígenas.\n\n⊗ **Efecto incrementado:** Un personaje recibe una **bonificación de -1 paso** en el rango 3, **-2** en el rango 6, **-3** en el rango 9 y **-4** en el rango 12 en ciertas otras tiradas de habilidad que puedan ser asistidas por esta especialidad. Estas habilidades incluyen Supervivencia (en entornos alienígenas), Manejo de animales (CON criaturas alienígenas) y Ciencias médicas—xenomedicina.\n---"
+      botany:
+        attribute: INT
+        cost: 3
+        url: /skills/life-science#botany
+        localized:
+        - en:
+            name: Botany
+            description: ''
+        - es:
+            name: Psiónica
+            description: "Esta habilidad de especialidad representa el estudio científico de la naturaleza biológica y bioquímica de las habilidades psiónicas.\n\n⊗ **Efecto incrementado:** Un personaje recibe una **bonificación de -1 paso** en el rango 3, **-2** en el rango 6, **-3** en el rango 9 y **-4** en el rango 12 en ciertas otras tiradas de habilidad que puedan ser asistidas por esta especialidad. Estas habilidades incluyen Telepatía—drenaje, Biocinesis—bioluminiscente y Biocinesis—bioarma."
+      genetics:
+        attribute: INT
+        cost: 3
+        url: /skills/life-science#genetics
+        localized:
+        - en:
+            name: Genetics
+            description: "Genetics is the study of heredity and genes, forming the basis of genetic engineering and cloning.\n\n⊗ **Increased Effect:** A character receives a **-1 bonus** at rank 3, **-2** at rank 6, **-3** at rank 9, and **-4** at rank 12 on certain other skill checks that can be assisted by this specialty. These skills include Medical Science—treatment, Forensic Science, and certain Bio-Kinesis or Mutation checks.\n\n---"
+        - es:
+            name: Zoology
+            description: ''
+      xenology:
+        attribute: INT
+        cost: 3
+        url: /skills/life-science#xenology
+        localized:
+        - en:
+            name: Xenology
+            description: "Xenology is the study of animal life forms of an alien nature and can be used to identify or classify such life forms, including alien plant life. It allows a character to make educated guesses as to the nature, behavior, and abilities of alien life forms.\n\n⊗ **Increased Effect:** A character receives a **-1 bonus** at rank 3, **-2** at rank 6, **-3** at rank 9, and **-4** at rank 12 on certain other skill checks that can be assisted by this specialty. These skills include Survival (in alien environments), Animal Handling (with alien creatures), and Medical Science—xenomedicine.\n---"
+        - es:
+            name: Xenology
+            description: "Xenology is the study of animal life forms of an alien nature and can be used to identify or classify such life forms, including alien plant life. It allows a character to make educated guesses as to the nature, behavior, and abilities of alien life forms.\n\n⊗ **Increased Effect:** A character receives a **-1 bonus** at rank 3, **-2** at rank 6, **-3** at rank 9, and **-4** at rank 12 on certain other skill checks that can be assisted by this specialty. These skills include Survival (in alien environments), Animal Handling (with alien creatures), and Medical Science—xenomedicine.\n---"
+      zoology:
+        attribute: INT
+        cost: 3
+        url: /skills/life-science#zoology
+        localized:
+        - en:
+            name: Zoology
+            description: ''
+        - es:
+            name: Zoology
+            description: ''
+  medical-science:
+    attribute: INT
+    cost: 7
+    category: Technical
+    url: /skills/medical-science
+    localized:
+      - en:
+          name: Medical Science
+          description: |-
+            Medical Science is the broad study of the biological and chemical
+            processes of the body, applied to healing, diagnosis, and surgical
+            intervention. It requires a deep understanding of anatomy,
+            physiology, and pathology.
+      - es:
+          name: Ciencia Médica
+          description: |-
+            La Ciencia Médica es el estudio amplio de los procesos biológicos y
+            químicos del cuerpo, aplicado a la curación, el diagnóstico y la
+            intervención quirúrgica. Requiere una comprensión profunda de la
+            anatomía, la fisiología y la patología.
+    items:
+      forensics:
+        attribute: INT
+        cost: 3
+        url: /skills/medical-science#forensics
+        localized:
+          - en:
+              name: Forensics
+              description: |-
+                The character uses medical knowledge and scientific techniques
+                to investigate crimes or analyze biological evidence.
+          - es:
+              name: Forense
+              description: |-
+                El personaje utiliza conocimientos médicos y técnicas
+                científicas para investigar crímenes o analizar pruebas
+                biológicas.
+      medical-knowledge:
+        attribute: INT
+        cost: 3
+        url: /skills/medical-science#medical-knowledge
+        localized:
+          - en:
+              name: Medical Knowledge
+              description: |-
+                Academic and theoretical understanding of medicine, including
+                pharmacology, pathology, and history.
+          - es:
+              name: Conocimiento Médico
+              description: |-
+                Comprensión académica y teórica de la medicina, incluyendo
+                farmacología, patología e historia.
+      psychology:
+        attribute: INT
+        cost: 3
+        url: /skills/medical-science#psychology
+        localized:
+          - en:
+              name: Psychology
+              description: |-
+                The study of the mind and behavior, used for diagnosis and
+                treatment of mental disorders or behavioral analysis.
+          - es:
+              name: Psicología
+              description: |-
+                El estudio de la mente y el comportamiento, utilizado para el
+                diagnóstico y tratamiento de trastornos mentales o análisis de
+                comportamiento.
+      surgery:
+        attribute: INT
+        cost: 5
+        url: /skills/medical-science#surgery
+        localized:
+          - en:
+              name: Surgery
+              description: |-
+                The practice of treating injuries or diseases through invasive
+                physical intervention and operation.
+          - es:
+              name: Cirugía
+              description: |-
+                La práctica de tratar lesiones o enfermedades mediante
+                intervención física invasiva y operación.
+      treatment:
+        attribute: INT
+        cost: 4
+        url: /skills/medical-science#treatment
+        localized:
+          - en:
+              name: Treatment
+              description: |-
+                The application of medical care to treat injuries, stabilize
+                patients, and manage recovery.
+          - es:
+              name: Tratamiento
+              description: |-
+                La aplicación de cuidados médicos para tratar lesiones,
+                estabilizar pacientes y gestionar la recuperación.
+      xenomedicine-specific:
+        attribute: INT
+        cost: 4
+        url: /skills/medical-science#xenomedicine-specific
+        localized:
+          - en:
+              name: Xenomedicine
+              description: |-
+                The specialized study and treatment of non-human or alien
+                physiology.
+          - es:
+              name: Xenomedicina
+              description: |-
+                El estudio y tratamiento especializado de la fisiología no
+                humana o alienígena.
+  melee-combat:
+    attribute: STR
+    cost: 6
+    category: Combat
+    url: /skills/melee-combat
+    localized:
+    - en:
+        name: Melee Combat
+        description: "Melee Combat represents the baseline proficiency of any physical combatant engaging in a struggle at personal range. It covers the essential understanding of reach, timing, and the efficient transfer of kinetic force through the body or a handheld tool. A character trained in this broad skill possesses an inherent grasp of spatial awareness and targeting, allowing them to identify vulnerabilities in an opponent while maintaining their own center of gravity and weapon posture during an exchange.\n\nProfessional training in this field also facilitates the use of firearms in the middle of a struggle. This training removes the +1 step penalties from pistols and SMGs when used against a melee opponent, and removes the +2 steps bonus to disarm an opponent have against you when you are wielding an assault rifle, sniper rifle, or any form of equipped heavy weapon. Furthermore, pistols and SMGs are handled with the same ease as a one-handed melee weapons would; they can be drawn\
+          \ and fired in any circumstance where a knife or baton would be permitted.\n\n### Unarmed Damage\n\nThe base damage for an unarmed attack depends on the size of the character; for a medium-sized character, the baseline damage is **d4s/d4+1s/d4+2s**, plus the character's Strength bonus. Certain implements can be used to augment this damage, though some require specialized training to unlock their full potential. The skill entry in the weapon table indicates if the weapon requires ranks in a particular specialty skill to use it effectively; each rank below the indicated requirement results in a +1 step penalty to any attack made with such weapons.\n\n---"
+    - es:
+        name: Combate cuerpo a cuerpo
+        description: "El Combate Cuerpo a Cuerpo representa la competencia básica de cualquier combatiente físico que participa en una lucha a corta distancia. Abarca la comprensión esencial del alcance, el tiempo y la transferencia eficiente de la fuerza cinética a través del cuerpo o una herramienta de mano. Un personaje entrenado en esta habilidad general posee una comprensión inherente de la conciencia espacial y la puntería, lo que le permite identificar vulnerabilidades en un oponente mientras mantiene su propio centro de gravedad y postura CON el arma durante un intercambio.\n\nEl entrenamiento profesional en este campo también facilita el uso de armas de fuego en medio de una lucha. Este entrenamiento elimina las penalizaciones de +1 paso de las pistolas y subfusiles cuando se usan contra un oponente en cuerpo a cuerpo, y elimina la bonificación de +2 pasos para desarmar que un oponente tiene contra ti cuando empuñas un rifle de asalto, un rifle de francotirador o cualquier forma\
+          \ de arma pesada equipada. Además, las pistolas y los subfusiles se manejan CON la misma facilidad que las armas cuerpo a cuerpo de una mano; se pueden desenfundar y disparar en cualquier circunstancia en la que se permitiría un cuchillo o una porra.\n\n### Daño sin Armas\n\nEl daño base de un ataque sin armas depende del tamaño del personaje; para un personaje de tamaño mediano, el daño base es **d4s/d4+1s/d4+2s**, más la bonificación de Fuerza del personaje. Ciertos implementos pueden usarse para aumentar este daño, aunque algunos requieren un entrenamiento especializado para desbloquear todo su potencial. La entrada de la habilidad en la tabla de armas indica si el arma requiere rangos en una habilidad de especialidad particular para usarla de manera efectiva; cada rango por debajo del requisito indicado resulta en una penalización de +1 paso a cualquier ataque realizado CON tales armas.\n\n----------------------"
+    items:
+      blade:
+        attribute: STR
+        cost: 3
+        url: /skills/melee-combat#blade
+        localized:
+        - en:
+            name: Blade
+            description: "As a character improves his ability in the blade specialty skill, he gains rank benefits as described below. Note: These benefits only apply when the character is using a weapon covered by this skill.\n\n⊗ Resistance Modifier: At higher ranks, the skill provides an improvement to a character's Strength resistance modifier. It improves by +1 at rank 4, by +1 again at rank 8, and by +1 again at rank 12. This increase doesn't stack with similar bonuses provided by other melee combat specialty skills.\n\n▶ Reaction Parry: When a character reaches rank 4, he can attempt to parry whenever a melee or unarmed attack is used against him. The parry attempt uses up the character's next available action.\n\n▶ Double-Strike: When a character reaches skill rank 6, he learns to make a double-strike against a target with a successful skill check. The player rolls one control die and two situation dice to make his double-strike attack. The first situation die is the base modifier\
+              \ needed to make an attack with a +1 step penalty; the second situation die is the base modifier with a +2 step penalty.\n\n▶ Multistrike: When a character reaches skill rank 9, he learns to make multiple attacks in a single phase. The character can strike with a melee weapon three times in a phase. These attacks can be directed at a single target or at up to three separate targets within two meters of the character.\n\n---"
+        - es:
+            name: Arma blanca
+            description: "La esencia de las artes marciales defensivas y basadas en la destreza radica en la no resistencia y la manipulación sofisticada de los vectores cinéticos. En lugar de enfrentar la fuerza CON la fuerza, estos estilos utilizan movimientos fluidos y esféricos para redirigir el impulso de un atacante, convirtiendo efectivamente su propia masa y aceleración en su contra. Al priorizar la elasticidad estructural y la propiocepción de alto nivel, un practicante permanece inasible, utilizando un juego de pies preciso y un cambio de peso dinámico para abandonar la línea de ataque mientras realiza una transición simultánea a una posición de contra-apalancamiento.\n\n**Rango 1: Línea de Base Táctica.** El practicante aprende a mantener el equilibrio mientras identifica las aberturas. Aumenta el daño base sin armas a **d4s/d6s/d6w**.\n\n**Rango 3: Juego de Pies Fluido.** Al aprovechar su velocidad y flexibilidad, el movimiento reactivo del practicante proporciona un aumento\
+              \ de paso en su resistencia de Fuerza, y otro paso en los Rangos 7 y 11.\n\n**Rango 4: Contraataque Fluido.** Cuando un oponente falla un ataque cuerpo a cuerpo contra el practicante, el siguiente ataque del practicante contra ese oponente específico antes del final del siguiente asalto puede usar su modificador de fuerza o el de su oponente para el daño.\n\n**Rango 7: Redirección de la fuerza sobre-comprometida.** Si un oponente realiza un ataque total contra ti, recibe todas las penalizaciones pero ningún beneficio.\n\n**Rango 10: Flujo Persistente.** Todos los ataques totales que te fallen pueden ser redirigidos contra cualquier otro objetivo adyacente al atacante. El atacante debe realizar una nueva tirada de ataque normal contra el nuevo objetivo para determinar el resultado.\n\n**Rango 12: Maestro sin Forma.** El practicante puede ignorar 1 paso de la defensa de fuerza debido a la imprevisibilidad de sus ataques.\n\n----------------------------"
+      blunt:
+        attribute: STR
+        cost: 3
+        url: /skills/melee-combat#blunt
+        localized:
+        - en:
+            name: Blunt
+            description: "As a character improves his ability in the blunt specialty skill, he gains rank benefits as described below. Note: These benefits only apply when the character is using a weapon covered by this skill.\n\n⊗ Resistance Modifier: At higher ranks, the skill provides an improvement to a character's Strength resistance modifier. It improves by +1 at rank 4, by +1 again at rank 8, and by +1 again at rank 12. This increase doesn't stack with similar bonuses provided by other melee combat specialty skills.\n\n▶ Reaction Parry: When a character reaches rank 4, he can attempt to parry whenever a melee or unarmed attack is used against him. The parry attempt uses up the character's next available action.\n\n▶ Double-Strike: When a character reaches skill rank 6, he learns to make a double-strike against a target with a successful skill check. The player rolls one control die and two situation dice. The first situation die is the base modifier with a +1 step penalty; the second\
+              \ situation die is the base modifier with a +2 step penalty.\n\n▶ Multistrike: When a character reaches skill rank 9, he learns to make multiple attacks in a single phase. The character can strike with a melee weapon three times in a phase. These attacks can be directed at a single target or at up to three separate targets within two meters of the character.\n\n---"
+        - es:
+            name: Arma contundente
+            description: "La esencia de las artes marciales orientadas al poder radica en la movilización eficiente de la masa corporal total a través de la alineación estructural y la secuenciación cinética explosiva. En lugar de depender de la fuerza muscular aislada, estos estilos tratan el cuerpo como una unidad única y rígida en el momento del impacto, utilizando el suelo como punto de apoyo para canalizar la energía de las piernas y las caderas giratorias hacia un punto de entrega enfocado. Al sincronizar la respiración, el apilamiento esquelético y el \"peso que cae\", el practicante maximiza la física del impulso para superar la resistencia de un oponente a través de la pura integridad estructural y la fuerza calculada.\n\n**Rango 1: El practicante aprende a aprovechar adecuadamente su masa.** Aumenta el daño base sin armas a **d4s/d4w/d6+1w**.\n\n**Rango 3: Entrega de fuerza CON alto impulso.** Un éxito Asombroso en un ataque obliga al objetivo a realizar una prueba de noqueo (Resolución\
+              \ o Resistencia) CON una penalización de +1 paso. Esta penalización aumenta a +2 en el Rango 6, +3 en el Rango 9 y +4 en el Rango 12.\n\n**Rango 4: La eficiencia estructural aumenta el daño.** Todo el daño sin armas aumenta en 1. Esta bonificación aumenta en 1 adicional en el Rango 8 y el Rango 12.\n\n**Rango 4: Aumenta la resistencia cuerpo a cuerpo del personaje en un paso, y otro paso en el Rango 8 y el Rango 12.\n\n**Rango 5: Poder de corto alcance (Fajin).** El practicante puede golpear eficazmente incluso si sus manos están atadas o inutilizables (usando hombros, rodillas o cabezazos).\n\n**Rango 8: Destrucción Estructural.** Cuando el practicante usa un Ataque Total, el objetivo debe tirar los dados de su Armadura dos veces y tomar el peor resultado. Esto se aplica a las armaduras estándar.\n\n**Rango 12: Maestro de la Fuerza.** La penalización de armadura \"tirar dos veces/tomar el peor\" ahora se aplica a las Armaduras de Poder y las defensas sobrenaturales.\n\n**Nota:**\
+              \ Los practicantes que utilizan CON frecuencia las opciones de Ataque Total en combate suelen ser llamados luchadores.\n\n-------------------------------\n\n⊗ Modificador de Resistencia: En rangos superiores, cualquier habilidad de especialidad de Armas Cuerpo a Cuerpo proporciona una mejora al modificador de resistencia de Fuerza de un personaje. Mejora en +1 en el rango 4, en +1 de nuevo en el rango 8 y en +1 de nuevo en el rango 12.\n\n▶ Parada de Reacción: Cuando un personaje alcanza el rango 4, puede intentar parar siempre que se utilice un ataque cuerpo a cuerpo o sin armas contra él. El intento de parada gasta la siguiente acción disponible del personaje. Por ejemplo, un personaje que logra un resultado de chequeo de acción Ordinario y tiene 2 acciones por ronda podría intentar parar ataques dirigidos contra él en las fases Asombrosa y Buena, pero luego no le quedarían acciones para las fases Ordinaria y Marginal.\n\n▶ Doble Golpe: Cuando un personaje alcanza el rango\
+              \ de habilidad 6, aprende a realizar un doble golpe contra un objetivo CON un chequeo de habilidad exitoso. Un doble golpe funciona de la siguiente manera: El jugador tira un dado de control y dos dados de situación para realizar su ataque de doble golpe. El primer dado de situación es el modificador base necesario para realizar un ataque CON una penalización de +1 paso; el segundo dado de situación es el modificador base CON una penalización de +2 pasos.\n\n▶ Multigolpe: Cuando un personaje alcanza el rango de habilidad 9, aprende a realizar múltiples ataques en una sola fase. El personaje puede golpear CON un arma cuerpo a cuerpo tres veces en una fase. Estos ataques pueden dirigirse a un solo objetivo o a hasta tres blancos separados a menos de dos metros del personaje.\n\nPara resolver un ataque de multigolpe, el jugador del personaje tira un dado de control y tres dados de situación al mismo tiempo. Todos los resultados se leen en el dado de control, según lo modificado\
+              \ por los tres dados de situación. En un ataque de multigolpe, el primero dado de situación es el dado base para el ataque CON una penalización de +1 paso. El segundo dado es el dado base CON una penalización de +2 pasos. El tercero dado es el dado base CON una penalización de +3 pasos. Al calcular el dado de situación base, utiliza el objetivo que sea más difícil de golpear."
+      defensive-martial-arts:
+        attribute: STR
+        cost: 3
+        url: /skills/melee-combat#defensive-martial-arts
+        localized:
+        - en:
+            name: Defensive Martial Arts
+            description: "As a character improves his ability in the defensive martial arts specialty skill, he gains rank benefits as described below. Note: These benefits only apply when the character is fighting unarmed or with appropriate martial arts implements.\n\nThe essence of defensive and dexterity-based martial arts lies in non-resistance and the sophisticated manipulation of kinetic vectors. Rather than meeting force with force, these styles utilize fluid, spherical movements to redirect an attacker's momentum, effectively turning their own mass and acceleration against them.\n\n▶ Overpowering: This skill can be used to determine the success of an attempt to overpower an opponent. Briefly, overpowering is a form of unarmed attack made simultaneously by one or more allies trying to grab and restrain a single opponent. If a single attacker tries to overpower another character, his Melee Combat skill check is made at a +1 penalty.\n\nEvery additional attacker who takes part in the\
+              \ same overpowering attempt provides a cumulative –1 bonus to the skill check. Overpowering does not cause damage, but it immobilizes an opponent for as long as one of the attackers continues to maintain a tight hold on that opponent.\n\n▶ Base Damage: When a character reaches skill rank 1, he learns to maintain balance while identifying openings. This increases his base unarmed damage to **d4s/d6s/d6w**.\n\n⊗ Resistance Modifier: At higher ranks, the skill provides an improvement to a character's Strength resistance modifier. By leveraging his speed and flexibility, the practitioner’s reactive movement provides a +1 step increase at rank 3, an additional +1 at rank 7, and a final +1 at rank 11. This increase doesn't stack with similar bonuses provided by other melee combat specialty skills.\n\nHow we do things reaches rank 4, if an opponent misses him with a melee attack, the character's next attack against that specific opponent before the end of the next round can use either\
+              \ his own or his opponent's Strength modifier for damage.\n\n▶ Redirection of Force: When a character reaches rank 7, if an opponent performs an All Out Attack against him, the attacker receives all the penalties of that maneuver but gains none of the benefits.\n\nHow we do things reaches rank 10, All Out Attacks that miss him can be redirected against any other target adjacent to the attacker. The attacker must make a new normal attack roll against the new target to determine the result.\n\n▶ Formless Master: When a character reaches rank 12, he may ignore 1 step of an opponent's Strength defense due to the unpredictability of his attacks.\n\n---"
+        - es:
+            name: Artes marciales defensivas
+            description: "As a Personaje improves his ability in the Artes marciales defensivas Especialidad, he gains rank benefits as described below. Note: These benefits only apply when the Personaje is fighting unarmed or with appropriate martial arts implements.\n\nThe essence of defensive and dexterity-based martial arts lies in non-resistance and the sophisticated manipulation of kinetic vectors. Rather than meeting force with force, these styles utilize fluid, spherical movements to redirect an attacker's momentum, effectively turning their own mass and acceleration against them.\n\n▶ Overpowering: This skill can be used to determine the success of an attempt to overpower an opponent. Briefly, overpowering is a form of unarmed attack made simultaneously by one or more allies trying to grab and restrain a single opponent. If a single attacker tries to overpower another Personaje, his Combate cuerpo a cuerpo skill check is made at a +1 penalty.\n\nEvery additional attacker who takes\
+              \ part in the same overpowering attempt provides a cumulative –1 bonus to the skill check. Overpowering does not cause damage, but it immobilizes an opponent for as long as one of the attackers continues to maintain a tight hold on that opponent.\n\n▶ Base Damage: When a Personaje reaches skill rank 1, he learns to maintain balance while identifying openings. This increases his base unarmed damage to **d4s/d6s/d6w**.\n\n⊗ Resistance Modifier: At higher ranks, the skill provides an improvement to a Personaje's Strength resistance modifier. By leveraging his speed and flexibility, the practitioner’s reactive movement provides a +1 step increase at rank 3, an additional +1 at rank 7, and a final +1 at rank 11. This increase doesn't stack with similar bonuses provided by Otros Combate cuerpo a cuerpo specialty skills.\n\nHow we do things reaches rank 4, if an opponent misses him with a melee attack, the Personaje's next attack against that specific opponent before the end of the\
+              \ next round can use either his own or his opponent's Strength modifier for damage.\n\n▶ Redirection of Force: When a Personaje reaches rank 7, if an opponent performs an All Out Attack against him, the attacker receives all the penalties of that maneuver but gains none of the benefits.\n\nHow we do things reaches rank 10, All Out Attacks that miss him can be redirected against any Otros target adjacent to the attacker. The attacker must make a new normal attack roll against the new target to determine the result.\n\n▶ Formless Master: When a Personaje reaches rank 12, he may ignore 1 step of an opponent's Strength defense due to the unpredictability of his attacks.\n\n---"
+      power-martial-arts:
+        attribute: STR
+        cost: 3
+        url: /skills/melee-combat#power-martial-arts
+        localized:
+        - en:
+            name: Power Martial Arts
+            description: "As a character improves his ability in the power martial arts specialty skill, he gains rank benefits as described below. Note: These benefits only apply when the character is fighting unarmed or with appropriate martial arts implements.\n\nThe essence of power-oriented martial arts lies in the efficient mobilization of total body mass through structural alignment and explosive kinetic sequencing. These styles treat the body as a single, rigid unit at the moment of impact, using the ground as a fulcrum to funnel energy.\n\n▶ Overpowering: This skill can be used to determine the success of an attempt to overpower an opponent. Briefly, overpowering is a form of unarmed attack made simultaneously by one or more allies trying to grab and restrain a single opponent. If a single attacker tries to overpower another character, his Melee Combat skill check is made at a +1 penalty.\n\nEvery additional attacker who takes part in the same overpowering attempt provides a cumulative\
+              \ –1 bonus to the skill check. Overpowering does not cause damage, but it immobilizes an opponent for as long as one of the attackers continues to maintain a tight hold on that opponent.\n\n▶ Mass Leverage: When a character reaches skill rank 1, he learns to properly leverage his mass. This increases his base unarmed damage to **d4s/d4w/d6+1w**.\n\n▶ High Impulse: When a character reaches rank 3, an Amazing success on an attack forces the target to make a knockout check (Resolve or Stamina) with a +1 step penalty. This penalty increases to +2 at rank 6, +3 at rank 9, and +4 at rank 12.\n\n▶ Structural Efficiency: When a character reaches rank 4, all unarmed damage increases by +1. This bonus increases by an additional +1 at rank 8 and again at rank 12.\n\n⊗ Resistance Modifier: At higher ranks, the skill provides an improvement to a character's Strength resistance modifier. It improves by +1 at rank 4, by +1 again at rank 8, and by +1 again at rank 12. This increase doesn't\
+              \ stack with similar bonuses provided by other melee combat specialty skills.\n\n▶ Short-range Power (Fajin): When a character reaches rank 5, he learns to strike effectively even if his hands are bound or unusable by utilizing his shoulders, knees, or head.\n\n▶ Structural Destruction: When a character reaches rank 8, if he utilizes an All Out Attack, the target must roll their Armor dice twice and take the worse result. This applies to standard armors.\n\n▶ Master of Force: When a character reaches rank 12, the \"roll twice/take worse\" armor penalty now applies to Powered Armors and supernatural defenses.\n\n**Note:** Practitioners that frequently utilize the All Out Attack option in combat are usually called brawlers.\n\n---"
+        - es:
+            name: Artes marciales de poder
+            description: "As a Personaje improves his ability in the Artes marciales de poder Especialidad, he gains rank benefits as described below. Note: These benefits only apply when the Personaje is fighting unarmed or with appropriate martial arts implements.\n\nThe essence of power-oriented martial arts lies in the efficient mobilization of total body mass through structural alignment and explosive kinetic sequencing. These styles treat the body as a single, rigid unit at the moment of impact, using the ground as a fulcrum to funnel energy.\n\n▶ Overpowering: This skill can be used to determine the success of an attempt to overpower an opponent. Briefly, overpowering is a form of unarmed attack made simultaneously by one or more allies trying to grab and restrain a single opponent. If a single attacker tries to overpower another Personaje, his Combate cuerpo a cuerpo skill check is made at a +1 penalty.\n\nEvery additional attacker who takes part in the same overpowering attempt\
+              \ provides a cumulative –1 bonus to the skill check. Overpowering does not cause damage, but it immobilizes an opponent for as long as one of the attackers continues to maintain a tight hold on that opponent.\n\n▶ Mass Leverage: When a Personaje reaches skill rank 1, he learns to properly leverage his mass. This increases his base unarmed damage to **d4s/d4w/d6+1w**.\n\n▶ High Impulse: When a Personaje reaches rank 3, an Asombroso success on an attack forces the target to make a knockout check (Firmeza or Aguante) with a +1 step penalty. This penalty increases to +2 at rank 6, +3 at rank 9, and +4 at rank 12.\n\n▶ Structural Efficiency: When a Personaje reaches rank 4, all unarmed damage increases by +1. This bonus increases by an additional +1 at rank 8 and again at rank 12.\n\n⊗ Resistance Modifier: At higher ranks, the skill provides an improvement to a Personaje's Strength resistance modifier. It improves by +1 at rank 4, by +1 again at rank 8, and by +1 again at rank 12.\
+              \ This increase doesn't stack with similar bonuses provided by Otros Combate cuerpo a cuerpo specialty skills.\n\n▶ Short-range Power (Fajin): When a Personaje reaches rank 5, he learns to strike effectively even if his hands are bound or unusable by utilizing his shoulders, knees, or head.\n\n▶ Structural Destruction: When a Personaje reaches rank 8, if he utilizes an All Out Attack, the target must roll their Armor dice twice and take the worse result. This applies to standard armors.\n\n▶ Master of Force: When a Personaje reaches rank 12, the \"roll twice/take worse\" armor penalty now applies to Armas de energía Armors and supernatural defenses.\n\n**Note:** Practitioners that frequently utilize the All Out Attack option in Combate are usually called brawlers.\n\n---"
+      powered-weapons:
+        attribute: STR
+        cost: 3
+        url: /skills/melee-combat#powered-weapons
+        localized:
+        - en:
+            name: Powered
+            description: "As a character improves his ability in the powered specialty skill, he gains rank benefits as described below. Note: These benefits only apply when the character is using a weapon covered by this skill.\n\nDue to the inherent complexity of powered weapons they are more fragile than their counterparts; this requires the user to be more careful when parrying, resulting in a +2 step penalty on parry checks.\n\n⊗ Resistance Modifier: At higher ranks, the skill provides an improvement to a character's Strength resistance modifier. It improves by +1 at rank 4, by +1 again at rank 8, and by +1 again at rank 12. This increase doesn't stack with similar bonuses provided by other melee combat specialty skills.\n\n▶ Reaction Parry: When a character reaches rank 4, he can attempt to parry whenever a melee or unarmed attack is used against him. The parry attempt uses up the character's next available action.\n\n▶ Double-Strike: When a character reaches skill rank 6, he learns\
+              \ to make a double-strike against a target with a successful skill check. The player rolls one control die and two situation dice. The first situation die is the base modifier with a +1 step penalty; the second situation die is the base modifier with a +2 step penalty.\n\n▶ Multistrike: When a character reaches skill rank 9, he learns to make multiple attacks in a single phase. The character can strike with a melee weapon three times in a phase. These attacks can be directed at a single target or at up to three separate targets within two meters of the character."
+        - es:
+            name: Armas de energía
+            description: "As a Personaje improves his ability in the Armas de energía Especialidad, he gains rank benefits as described below. Note: These benefits only apply when the Personaje is using a weapon covered by this skill.\n\nDue to the inherent complexity of Armas de energía weapons they are more fragile than their counterparts; this requires the user to be more careful when parrying, resulting in a +2 step penalty on parry checks.\n\n⊗ Resistance Modifier: At higher ranks, the skill provides an improvement to a Personaje's Strength resistance modifier. It improves by +1 at rank 4, by +1 again at rank 8, and by +1 again at rank 12. This increase doesn't stack with similar bonuses provided by Otros Combate cuerpo a cuerpo specialty skills.\n\n▶ Reaction Parry: When a Personaje reaches rank 4, he can attempt to parry whenever a melee or unarmed attack is used against him. The parry attempt uses up the Personaje's next available action.\n\n▶ Double-Strike: When a Personaje reaches\
+              \ skill rank 6, he learns to make a double-strike against a target with a successful skill check. The player rolls one Dado de Control and two situation dice. The first Dado de Situación is the base modifier with a +1 step penalty; the second Dado de Situación is the base modifier with a +2 step penalty.\n\n▶ Multistrike: When a Personaje reaches skill rank 9, he learns to make multiple attacks in a single phase. The Personaje can strike with a melee weapon three times in a phase. These attacks can be directed at a single target or at up to three separate targets within two meters of the Personaje."
+  modern-ranged-weapons:
+    attribute: DEX
+    cost: 6
+    category: Combat
+    url: /skills/modern-ranged-weapons
+    localized:
+    - en:
+        name: Modern Ranged Weapons
+        description: "This broad skill provides a character with training in the use of modern ranged weapons. This skill covers pistols, rifles, shotguns, and submachine guns of all types, including projectile and energy weapons.\n\nAll modern weapons have ammunition clips. To change a clip during a combat scene, a character must use an available action. If he wants to change a clip and shoot in the same phase, a +2 penalty applies to the attack action.\n\nOther factors that can influence the situation die used in a modern ranged weapon attack are listed under **Ranged Weapon Attack Modifiers** on this page.\n\n**Weapon Technical Knowledge**: Characters who train seriously with firearms — whether soldiers, mercenaries, or dedicated enthusiasts — inevitably absorb a working technical understanding of their weapons. They learn how their weapons function internally, what can go wrong, how to prevent it, and how to fix it in the field. As well as keep informed of what the market has to offer.\
+          \ A character with the **Technical Science** broad skill can use the appropriate Modern Ranged Weapons specialty skill for checks that involve knowing the existence of a particular weapon, customizing weapons and ammo, as well as recognizing, repairing, and maintaining weapons in the field.\n\n\n\n### Ranged Weapon Attack Modifiers\n\nWhen a character uses any ranged weapon, either primitive or modern, a number of factors must be considered to determine the situation die for the skill check:\n- The base situation die of the weapon (either +4 for a broad skill or +0 for a specialty).\n- The weapon's range modifier (see **TABLE P22: RANGE MODIFIERS BY WEAPON TYPE** below).\n- Any modifier for a target's Dexterity resistance (–1 step bonus for DEX 11–12, –2 steps for DEX 13–14, –3 steps for DEX 15–16, –4 steps for DEX 17–18, and –5 steps for DEX 19 or higher).\n\n#### TABLE: COMMON RANGED ATTACK MODIFIERS\n\n| Condition | Modifier | Weapon Types | Note |\n| :--- | :--- | :--- | :---\
+          \ |\n| **Zero Range** (0–1m) | **-3 steps** | Pistol, SMG, Shotgun | Weapons must be short enough to tuck into a grapple. |\n| **Point Blank** (1–4m) | **-1 step** | All | See Specialty Rank benefits for improvements. |\n| **In a Melee Struggle** | **+1 step** | All | Canceled by **Melee Combat** Broad Skill training. |\n| **Moving & Shooting** | **+1 step** | All | For firing while running or moving fast. |\n| **Changing Clips** | **+2 steps** | All | To change a clip and fire in the same phase. |\n\n#### TABLE P22: RANGE MODIFIERS BY WEAPON TYPE\n\n| Weapon | Short | Medium | Long |\n| :--- | :--- | :--- | :--- |\n| Submachine gun | -1 step | +1 step | +2 steps |\n| Pistol | -1 step | +1 step | +2 steps |\n| Rifle | -1 step | None | +1 step |\n\n---"
+    - es:
+        name: Armas a distancia modernas
+        description: "Esta habilidad amplia proporciona a un personaje entrenamiento en el uso de armas a distancia modernas. Esta habilidad cubre pistolas, fusiles, escopetas y subfusiles de todos los tipos, incluyendo armas de proyectiles y de energía.\n\nTodas las armas modernas tienen cargadores de munición. Para cambiar un cargador durante una escena de combate, un personaje debe usar una acción disponible. Si quiere cambiar el cargador y disparar en el mismo asalto (fase), se aplica una penalización de +2 pasos a la acción de ataque.\n\nOtros factores que pueden influir en el dado de situación utilizado en un ataque CON armas modernas a distancia se detallan bajo **Modificadores de ataque de armas a distancia** en esta página.\n\n**Conocimiento técnico de armas**: Los personajes que se entrenan seriamente CON armas de fuego — ya sean soldados, mercenarios o entusiastas dedicados — inevitablemente absorben una comprensión técnica funcional de sus armas. Aprenden cómo funcionan internamente,\
+          \ qué puede fallar, cómo prevenirlo y cómo repararlo en el campo. Así como mantenerse informados de lo que el mercado tiene para ofrecer. Un personaje CON la habilidad amplia de **Ciencia técnica** puede usar la habilidad de especialidad de Armas a distancia modernas apropiada para las tiradas que impliquen conocer la existencia de un arma concreta, personalizar armas y munición, así como reconocer, reparar y mantener armas en el campo.\n\n\n\n### Modificadores de ataque de armas a distancia\n\nCuando un personaje usa cualquier arma a distancia, ya sea primitiva o moderna, se deben considerar varios factores para determinar el dado de situación de la tirada de habilidad:\n- El dado de situación base del arma (+4 para la habilidad amplia o +0 para la especialidad).\n- El modificador de distancia del arma (véase la **TABLA P22: MODIFICADORES DE DISTANCIA POR TIPO DE ARMA** abajo).\n- Cualquier modificador por la resistencia de Destreza del objetivo (bonificación de –1 paso para DES\
+          \ 11–12, –2 pasos para DES 13–14, –3 pasos para DES 15–16, –4 pasos para DES 17–18 y –5 pasos para DES 19 o más).\n\n#### TABLA: MODIFICADORES COMUNES DE ATAQUE A DISTANCIA\n\n| Condición | Modificador | Tipos de Arma | Nota |\n| :--- | :--- | :--- | :--- |\n| **Alcance Cero** (0–1m) | **-3 pasos** | Pistola, Subfusil, Escopeta | El arma debe ser lo suficientemente corta para un forcejeo. |\n| **A bocajarro** (1–4m) | **-1 paso** | Todas | Véase beneficios de rango de especialidad para mejoras. |\n| **En lucha cuerpo a cuerpo** | **+1 paso** | Todas | Cancelado por el entrenamiento de la habilidad de **Combate cuerpo a cuerpo**. |\n| **En movimiento** | **+1 paso** | Todas | Para disparar mientras se corre o se mueve rápido. |\n| **Cambiar cargador** | **+2 pasos** | Todas | Para cambiar el cargador y disparar en la misma fase. |\n\n#### TABLA P22: MODIFICADORES DE DISTANCIA POR TIPO DE ARMA\n\n| Arma | Corta | Media | Larga |\n| :--- | :--- | :--- | :--- |\n| Subfusil | -1 paso\
+          \ | +1 paso | +2 pasos |\n| Pistola | -1 paso | +1 paso | +2 pasos |\n| Fusil | -1 paso | Nada | +1 paso |\n\n---\n\n# Habilidades de especialidad"
+    items:
+      assault-rifle:
+        attribute: DEX
+        cost: 3
+        url: /skills/modern-ranged-weapons#assault-rifle
+        localized:
+        - en:
+            name: Assault Rifle
+            description: "This specialty skill covers automatic rifles—standard infantry weapons capable of selective fire and automatic modes using rifle-caliber cartridges.\n\n### Automatic Weapon Attack Modes\nAssault rifles provide a character with up to three attack options per action phase:\n- **Fire:** A single attack at a single target. (Standard control + situation die).\n- **Burst:** A hail of ammunition aimed at a single target. The character receives a **-1 step bonus** to his skill check. On a Critical Failure, the weapon jams and requires a Technical Science—repair check to unjam.\n- **Autofire:** A spray of ammunition walked across a wide area. Up to three different targets within 6 meters of each other can be affected. \n  - To resolve autofire, the player rolls one control die and three situation dice at once. \n  - The results are read off the control die, modified by the individual situation dice: **+1 step** for the first target, **+2 steps** for the second, and **+3\
+              \ steps** for the third. \n\n▶ **Rock-n-Roll:** When a character reaches rank 3 in this specialty, he learns to change clips more efficiently. The penalty for changing a clip and firing in the same action is reduced to +1 step.\n\n---"
+        - es:
+            name: Fusil de asalto
+            description: "Esta habilidad de especialidad permite a un personaje mejorar su competencia CON pistolas modernas de todo tipo, incluyendo armas de proyectiles y de energía.\n\n▶ **Desenfundado rápido:** Después de que un personaje alcanza el rango 3 en esta especialidad, puede realizar un desenfundado rápido CON su pistola. Esto le permite desenfundar su arma y dispararla en el mismo asalto CON solo una penalización de +1. Al alcanzar el rango 4, puede desenfundar y disparar en el mismo asalto sin ninguna penalización.\n\n---"
+      pistol:
+        attribute: DEX
+        cost: 3
+        url: /skills/modern-ranged-weapons#pistol
+        localized:
+        - en:
+            name: Pistol
+            description: "This specialty skill allows a character to improve his proficiency with modern pistols of all types, including projectile and energy weapons.\n\n▶ **Quick Draw:** After a character reaches rank 3 in this specialty, he can perform a quick draw with his pistol. This allows him to draw his weapon and fire it in the same phase with only a +1 penalty. As a character reaches rank 4, he can draw and fire in the same phase without any penalty.\n\n---"
+        - es:
+            name: Pistola
+            description: "Esta habilidad de especialidad permite a un personaje mejorar su competencia CON subfusiles modernos de todo tipo (armas automáticas pequeñas que disparan cartuchos de tamaño de pistola), así como subfusiles equivalentes de energía.\n\n### Modos de ataque de armas automáticas\nLos subfusiles (y los fusiles de asalto) proporcionan a un personaje hasta tres opciones de ataque por fase de acción:\n- **Disparar:** Un solo ataque a un solo objetivo. (Control estándar + dado de situación).\n- **Ráfaga:** Una lluvia de munición dirigida a un solo objetivo. El personaje recibe una **bonificación de –1 paso** a su tirada de habilidad. En caso de fallo crítico, el arma se encasquilla y requiere una prueba de Ciencia técnica—reparación para desatascarla.\n- **Fuego automático:** Una ráfaga de munición barrida sobre un área amplia. Se pueden ver afectados hasta tres objetivos diferentes a menos de 6 metros entre sí.\n- Para resolver el fuego automático, el jugador tira un dado\
+              \ de control y tres dados de situación a la vez.\n- Los resultados se leen del dado de control, modificados por los dados de situación individuales: **+1 paso** para el primer objetivo, **+2 pasos** para el segundo y **+3 pasos** para el tercero.\n\n▶ **Rock-n-Roll:** Cuando un personaje alcanza el rango 3 en esta especialidad, aprende a cambiar los cargadores CON mayor eficiencia. La penalización por cambiar un cargador y disparar en la misma acción se reduce a +1 paso.\n\n---"
+      rifle:
+        attribute: DEX
+        cost: 3
+        url: /skills/modern-ranged-weapons#rifle
+        localized:
+        - en:
+--
+      street-knowledge:
+        attribute: WIL
+        cost: 3
+        url: /skills/street-smart#street-knowledge
+        localized:
+        - en:
+            name: Street Knowledge
+            description: "This skill enables a character to improve his familiarity with the inner workings of a particular organization or geographical area. Unlike other specialties, it must be purchased separately for each organization or area (e.g., **Street Knowledge—Alpha Colony** or **Street Knowledge—The Void Syndicate**).\n\nA character needs to buy this specialty twice in order to become familiar with how things get done in a specific interstellar organization or interstellar trade union."
+        - es:
+            name: Habilidades de Especialidad
+            description: "{{% list %}}\n- **Elementos Criminales:** Establecer contacto y tratar CON el crimen organizado, criminales profesionales y pandillas.\n- **Conocimiento de la Calle:** Familiaridad CON el funcionamiento interno de una organización o área geográfica en particular."
+      criminal-elements:
+        attribute: WIL
+        cost: 5
+        url: /skills/street-smart#criminal-elements
+        localized:
+        - en:
+            name: Criminal elements
+            description: "This specialty skill represents a character's ability to make contact with and deal with those who are considered part of the criminal element—organized crime, professional criminals, street gangs, and underworld organizations.\n\nWhenever a character tries to locate or interact with these groups, he uses this skill.\n\n---"
+        - es:
+            name: Criminal elements
+            description: "This specialty skill represents a character's ability to make contact with and deal with those who are considered part of the criminal element—organized crime, professional criminals, street gangs, and underworld organizations.\n\nWhenever a character tries to locate or interact with these groups, he uses this skill.\n\n---"
+  survival:
+    attribute: CON
+    cost: 3
+    category: Other
+    url: /skills/survival
+    localized:
+    - en:
+        name: Survival
+        description: "This broad skill provides a character with training in survival across wilderness, ruined/hostile urban landscapes, and alien biospheres. It covers procuring necessities (food, water, shelter), avoiding environmental hazards, and systematic ecological study.\n\nChecks are made **once each day** unless the GM determines otherwise.\n\n### Survival Results\n- **Failure:** The character can't acquire basic necessities for this day.\n- **Ordinary:** The character acquires enough basic necessities to sustain himself for this day.\n- **Good:** The character acquires enough basic necessities for himself and up to **six others** for this day.\n- **Amazing:** The character becomes so familiar with the locale that survival is no longer an issue unless the situation changes.\n\n---\n\n### Survival Situation Modifiers\nThe type of terrain or environment where the character is located can provide a modifier to the skill check:\n\n| Terrain / Situation | Modifier |\n| :--- | :---\
+          \ |\n| **Arctic terrain** | +4 |\n| **Arid or wasteland terrain** | +3 |\n| **Mountainous terrain** | +2 |\n| **Swamp or ocean** | +1 |\n| **Forest or grassland** | 0 |\n| **Dense vegetation** | -1 |\n| **Jungle terrain** | -2 |\n| **Small settlement** | -1 |\n| **Small city or space station** | -2 |\n| **Large city or space station** | -3 |\n\n---"
+    - es:
+        name: Supervivencia
+        description: "Esta habilidad amplia proporciona a un personaje entrenamiento en supervivencia a través de áreas salvajes, paisajes urbanos hostiles o en ruinas, y biosferas alienígenas. Cubre la obtención de necesidades básicas (comida, agua, refugio), la evitación de peligros ambientales y el estudio ecológico sistemático.\n\nLas comprobaciones se realizan **una vez al día**, a menos que el Director de Juego determine lo contrario.\n\n### Resultados de Supervivencia\n- **Fallo:** El personaje no puede adquirir las necesidades básicas para este día.\n- **Ordinario:** El personaje adquiere suficientes necesidades básicas para mantenerse a sí mismo durante este día.\n- **Bueno:** El personaje adquiere suficientes necesidades básicas para sí mismo y hasta **seis más** para este día.\n- **Asombroso:** El personaje se familiariza tanto CON el lugar que la supervivencia ya no es un problema a menos que la situación cambie.\n\n---\n\n### Modificadores de Situación de Supervivencia\nEl tipo\
+          \ de terreno o entorno donde se encuentra el personaje puede proporcionar un modificador a la comprobación de habilidad:\n\n| Terreno / Situación | Modificador |\n| :--- | :--- |\n| **Terreno Ártico** | +4 |\n| **Terreno Árido o Yermo** | +3 |\n| **Terreno Montañoso** | +2 |\n| **Pantano u Océano** | +1 |\n| **Bosque o Pradera** | 0 |\n| **Vegetación Densa** | -1 |\n| **Terreno de Selva** | -2 |\n| **Asentamiento Pequeño** | -1 |\n| **Ciudad Pequeña o Estación Espacial** | -2 |\n| **Ciudad Grande o Estación Espacial** | -3 |\n\n---\n\n# Habilidades de Especialidad"
+    items:
+      survival-training:
+        attribute: CON
+        cost: 3
+        url: /skills/survival#survival-training
+        localized:
+        - en:
+            name: Survival training
+            description: ''
+        - es:
+            name: Apertura de Sendas
+            description: "CON la apertura de sendas, un personaje aprende a encontrar caminos a través de terreno difícil o a crear caminos que otros puedan usar para moverse más rápido y cubrir más terreno durante un día completo de viaje. El uso exitoso de esta habilidad reduce los efectos adversos de viajar en condiciones de dificultad Buena o Asombrosa para el personaje y cualquier compañero que viaje CON él.\n\nEsta comprobación de habilidad se realiza una vez al día, al comienzo de un día de viaje.\n\n### Resultados\n- **Fallo Crítico:** El personaje elige una ruta que es peor de lo que los otros viajeros podrían haber encontrado por sí mismos, causando que todos en el grupo sufran una **penalización adicional de +1 a sus comprobaciones de fatiga**, además de cualquier otra penalización.\n- **Fallo:** No se proporciona ayuda.\n- **Éxito Ordinario:** Proporciona una **reducción de 1 paso** a cualquier penalización que se aplique.\n- **Éxito Bueno:** Reduce las penalizaciones en **2\
+              \ pasos**.\n- **Éxito Asombroso:** Reduce las penalizaciones en **3 pasos**.\n\nNota: Esta reducción no puede usarse para convertir una penalización en un bono; el mejor resultado posible es anular una penalización por completo.\n\n---\n\n### Notas y Aclaraciones de Supervivencia\n\n*   **Supervivencia Urbana:** Se aplica a entornos urbanos hostiles o en ruinas (zonas de guerra, estaciones espaciales abandonadas) donde las habilidades sociales normales como **Negocios** o **Callejeo** ya no son efectivas para encontrar recursos básicos.\n*   **Deducción Ecológica:** \"Discernir Peligros\" no es solo detectar una trampa; es entender el ecosistema (p. ej., \"La ausencia de los bichos verdes locales indica que un depredador superior está cerca\").\n*   **Ecosistemas Similares:** Los directores de juego pueden reducir la penalización inicial de Adaptabilidad de **+5 pasos a +3 pasos** si el personaje está estudiando un ecosistema sorprendentemente similar a uno que ya ha dominado.\n\
+              *   **Interacción CON Equipo:** El equipo especializado de supervivencia o soporte vital (descrito en la sección de Equipo) puede proporcionar bonos de dado de situación a las comprobaciones de supervivencia y adaptabilidad al reducir el estrés ambiental. Barnices, purificadores de agua y domos ambientales pueden satisfacer automáticamente necesidades de refugio o agua.\n*   **Requisitos Biológicos:** La maestría es una comprensión del entorno, no una transformación física. Los mundos sin aire o venenosos aún requieren equipo de protección y fuentes de oxígeno.\n\n---\n\n### Supervivencia en Otros Mundos\nLa habilidad de Supervivencia está diseñada principalmente para entornos similares a la Tierra. Si un personaje está en un mundo alienígena, los modificadores de situación dados aún podrían aplicarse (asumiendo que la flora/fauna local sea comestible). Si un entorno es drásticamente diferente de la experiencia nativa de un personaje, este debe usar la especialidad de **[Adaptabilidad](#adaptabilidad-CON---solo-entrenados)**\
+              \ para cerrar la brecha.\n\nEl uso de la habilidad de Supervivencia aún podría ser **imposible** en ciertas situaciones extremas — por ejemplo, un asteroide estéril y sin aire sin el equipo de protección adecuado."
+      adaptability:
+        attribute: CON
+        cost: 3
+        url: /skills/survival#adaptability
+        localized:
+        - en:
+            name: Adaptability
+            description: "This specialty improves a character’s ability to adapt to alien environments. The character is resourceful enough to grasp unknown survival mechanics through observation and study.\n\n### Mastering Alien Environments\nA character can perform a **Survival—Adaptability** challenge, spend studying the environment (one check per day).\n- **Initial Success:** Allows the character to use their **Survival Training** specialty in the alien environment, but with an **additional +5 step penalty**.\n- **Progression:** For every **3 additional successes** achieved in the challenge, this penalty is reduced by one step (to a minimum of the base terrain modifier).\n- **Mastery:** Once the character reduces the penalty entirely, they have **mastered the terrain** and automatically receive **one rank** in a new **Survival Training** specialty for that specific environment.\n \n A character **cannot buy** or increase their rank in a new terrain type through experience points until\
+              \ they have fully mastered it through the Adaptability challenge.\n\n---"
+        - es:
+            name: Adaptabilidad
+            description: "Esta especialidad mejora la capacidad del personaje para adaptarse a entornos alienígenas. El personaje es lo suficientemente ingenioso como para comprender mecánicas de supervivencia desconocidas a través de la observación y el estudio.\n\n### Dominio de Entornos Alienígenas\nUn personaje puede realizar un desafío de **Supervivencia—Adaptabilidad**, pasando tiempo estudiando el entorno (una comprobación por día).\n- **Éxito Inicial:** Permite al personaje usar su especialidad de **Entrenamiento en Supervivencia** en el entorno alienígena, pero CON una **penalización adicional de +5 pasos**.\n- **Progresión:** Por cada **3 éxitos adicionales** logrados en el desafío, esta penalización se reduce en un paso (hasta un mínimo del modificador de terreno base).\n- **Maestría:** Una vez que el personaje reduce la penalización por completo, ha **dominado el terreno** y recibe automáticamente **un rango** en una nueva especialidad de **Entrenamiento en Supervivencia** para\
+              \ ese entorno específico.\n\nUn personaje **no puede comprar** o aumentar su rango en un nuevo tipo de terreno a través de puntos de experiencia hasta que lo haya dominado por completo a través del desafío de Adaptabilidad.\n\n---"
+      trailblazing:
+        attribute: CON
+        cost: 3
+        url: /skills/survival#trailblazing
+        localized:
+        - en:
+            name: Trailblazing
+            description: "With trailblazing, a character learns to find paths through rough terrain or create paths that others can use to move faster and cover more ground during a full day's travel. The successful use of this skill reduces the adverse effects of traveling in conditions of Good or Amazing difficulty for the character and any companions who are traveling with him.\n\nThis skill check is made once per day, at the beginning of a day of travel. \n\n### Results\n- **Critical Failure:** The character picks a route that is worse than the other travelers could have found for themselves, causing everyone in the group to suffer an **additional +1 penalty to their fatigue checks**, on top of any other penalties.\n- **Failure:** No help is provided.\n- **Ordinary success:** Provides a **reduction of 1 step** to any penalties that apply.\n- **Good success:** Reduces penalties by **2 steps**.\n- **Amazing success:** Reduces penalties by **3 steps**.\n\nNote: This reduction can't be used\
+              \ to turn a penalty into a bonus; the best possible result is negating a penalty altogether.\n\n---\n\n### Survival on Other Worlds\nThe Survival skill is primarily designed for Earth-like environments. If a character is on an alien world, the given situation modifiers might still apply (assuming local flora/fauna are edible). If an environment is drastically different from a character's native experience, the character should use the **[Adaptability](#adaptability-con---trained-only)** specialty to bridge the gap.\n\nThe use of the Survival skill might still be **impossible** in certain extreme situations—for instance, a barren/airless asteroid without existing protective gear."
+        - es:
+            name: Trailblazing
+            description: "With trailblazing, a character learns to find paths through rough terrain or create paths that others can use to move faster and cover more ground during a full day's travel. The successful use of this skill reduces the adverse effects of traveling in conditions of Good or Amazing difficulty for the character and any companions who are traveling with him.\n\nThis skill check is made once per day, at the beginning of a day of travel. \n\n### Results\n- **Critical Failure:** The character picks a route that is worse than the other travelers could have found for themselves, causing everyone in the group to suffer an **additional +1 penalty to their fatigue checks**, on top of any other penalties.\n- **Failure:** No help is provided.\n- **Ordinary success:** Provides a **reduction of 1 step** to any penalties that apply.\n- **Good success:** Reduces penalties by **2 steps**.\n- **Amazing success:** Reduces penalties by **3 steps**.\n\nNote: This reduction can't be used\
+              \ to turn a penalty into a bonus; the best possible result is negating a penalty altogether.\n\n---\n\n### Survival on Other Worlds\nThe Survival skill is primarily designed for Earth-like environments. If a character is on an alien world, the given situation modifiers might still apply (assuming local flora/fauna are edible). If an environment is drastically different from a character's native experience, the character should use the **[Adaptability](#adaptability-con---trained-only)** specialty to bridge the gap.\n\nThe use of the Survival skill might still be **impossible** in certain extreme situations—for instance, a barren/airless asteroid without existing protective gear."
+  system-operation:
+    attribute: INT
+    cost: 3
+    category: Technical
+    url: /skills/system-operation
+    localized:
+    - en:
+        name: System Operation
+        description: "This broad skill provides a character with basic training in the use of spaceship systems other than the helm or piloting systems. (Vehicle Operation covers the actual piloting of a spaceship.) It also applies to other types of vehicles or ground-based installations that use one or more of the specific systems described below in the Specialty Skills section. \n\nThese other vehicles and installations include (but are not limited to) large water vessels such as battleships, military submarines, and cargo ships; jet fighters and large commercial aircraft; and radar outposts and gun emplacements.\n\nFor full details on how **System Operation** skills are used, see the sections on [\"What's in a Spaceship?\"](/core-mechanics/vehicles-and-vessels/) and [\"Space Vehicle Combat\"](/core-mechanics/vehicles-and-vessels#space-vehicle-combat).\n\n---"
+    - es:
+        name: Operación de Sistemas
+        description: "Esta habilidad amplia proporciona a un personaje entrenamiento básico en el uso de sistemas de naves espaciales que no sean el timón o los sistemas de pilotaje. (La Operación de Vehículos cubre el pilotaje real de una nave espacial). También se aplica a otros tipos de vehículos o instalaciones terrestres que utilizan uno o más de los sistemas específicos descritos a continuación en la sección de Habilidades de Especialidad.\n\nEstos otros vehículos e instalaciones incluyen (pero no se limitan a) grandes embarcaciones de agua como acorazados, submarinos militares y buques de carga; aviones de combate y grandes aeronaves comerciales; y puestos de radar y emplazamientos de armas.\n\nPara obtener detalles completos sobre cómo se usan las habilidades de **Operación de Sistemas**, consulte las secciones sobre [\"¿Qué hay en una Nave Espacial?\"](/core-mechanics/vehicles-and-vessels/) y [\"Combate de Vehículos Espaciales\"](/core-mechanics/vehicles-and-vessels#space-vehicle-Combate).\n\
+          \n---\n\n# Habilidades de Especialidad"
+    items:
+      communications:
+        attribute: INT
+        cost: 3
+        url: /skills/system-operation#communications
+        localized:
+        - en:
+            name: Communications
+            description: "A communications specialist can operate all shipboard and personal communication gear with precision, attempt to decipher coded communication signals, code outgoing messages, jam external communication and sensor signals, and try to overcome jamming from an outside source.\n\n---"
+        - es:
+            name: Comunicaciones
+            description: "Un especialista en comunicaciones puede operar todos los equipos de comunicación personales y de la nave CON precisión, intentar descifrar señales de comunicación codificadas, codificar mensajes salientes, interferir (jam) señales de comunicación y sensores externos, e intentar superar las interferencias de una fuente externa.\n\n---"
+      defenses:
+        attribute: INT
+        cost: 3
+        url: /skills/system-operation#defenses
+        localized:
+        - en:
+            name: Defenses
+            description: "A defenses specialist can operate all shipboard defensive systems with precision, attempt to direct defenses to parts of the ship where they're most needed, and analyze attack patterns to make best use of the defenses his ship possesses. In space vehicle combat, the defenses operator can provide a penalty to an opponent's weapons or sensors during any given attack.\n\n---"
+        - es:
+            name: Defensas
+            description: "Un especialista en defensas puede operar todos los sistemas defensivos de la nave CON precisión, intentar dirigir las defensas a las partes de la nave donde son más necesarias, y analizar patrones de ataque para hacer el mejor uso de las defensas que posee su nave. En el combate de vehículos espaciales, el operador de defensas puede proporcionar una penalización a las armas o sensores de un oponente durante cualquier ataque dado.\n\n---"
+      engineering:
+        attribute: INT
+        cost: 3
+        url: /skills/system-operation#engineering
+        localized:
+        - en:
+            name: Engineering
+            description: "An engineering specialist monitors a ship's electronic and mechanical systems as a whole, watching for fluctuations and other signs that a component is breaking down. He can institute repairs to damaged systems from his station, route power to specific systems, and direct hands-on repairs at remote locations.\n\n---"
+        - es:
+            name: Ingeniería
+            description: "Un especialista en ingeniería monitorea los sistemas electrónicos y mecánicos de una nave en su conjunto, buscando fluctuaciones y otras señales de que un componente se está averiando. Puede realizar reparaciones en sistemas dañados desde su estación, dirigir energía a sistemas específicos y dirigir reparaciones prácticas en ubicaciones remotas.\n\n---"
+      sensors:
+        attribute: INT
+        cost: 3
+        url: /skills/system-operation#sensors
+        localized:
+        - en:
+            name: Sensors
+            description: "A sensors specialist can operate all shipboard and personal sensor gear with precision, attempt to scan ships or planets, and analyze those readings in a short period of time. He can use the data to provide bonuses to a weapons or defenses operator.\n\n---"
+        - es:
+            name: Sensores
+            description: "Un especialista en sensores puede operar CON precisión todos los equipos de sensores personales y de la nave, intentar escanear naves o planetas, y analizar esas lecturas en un corto período de tiempo. Puede usar los datos para proporcionar bonificaciones a un operador de armas o defensas.\n\n---"
+      weapons:
+        attribute: INT
+        cost: 6
+        url: /skills/system-operation#weapons
+        localized:
+        - en:
+            name: Weapons
+            description: "A weapons specialist can operate all shipboard weapons systems with precision. In starship combat, the weapons operator picks targets and makes attacks."
+        - es:
+            name: Armas
+            description: "Un especialista en armas puede operar CON precisión todos los sistemas de armas de la nave. En el combate de naves espaciales, el operador de armas elige objetivos y realiza ataques."
+  tactics:
+    attribute: INT
+    cost: 6
+    category: Combat
+    url: /skills/tactics
+    localized:
+    - en:
+        name: Tactics
+        description: "This broad skill provides a character with basic training in and an understanding of tactics and tactical situations. While tactics may come into play in many types of situations, it's most commonly used during infantry combat, space combat, and vehicle combat. \n\nA successful use of the skill provides a penalty to the opponent's next skill check, indicating that you developed a tactical plan and successfully employed it against him.\n\n### Tactics Check Results\n- **Critical Failure:** The opponent sees through your intentions and receives a **-1 bonus** on their next skill check.\n- **Failure:** No modifier to the opponent's next skill check.\n- **Ordinary:** **+1 penalty** to the opponent's next skill check.\n- **Good:** **+2 penalty** to the opponent's next skill check.\n- **Amazing:** **+3 penalty** to the opponent's next skill check.\n\n---"
+    - es:
+        name: Táctica
+        description: "Esta habilidad amplia proporciona a un personaje entrenamiento básico y una comprensión de las tácticas y las situaciones tácticas. Si bien las tácticas pueden entrar en juego en muchos tipos de situaciones, se utilizan más comúnmente durante el combate de infantería, el combate espacial y el combate de vehículos.\n\nEl uso exitoso de la habilidad proporciona una penalización a la siguiente comprobación de habilidad del oponente, lo que indica que desarrollaste un plan táctico y lo empleaste CON éxito contra él.\n\n### Resultados de la Comprobación de Táctica\n- **Fallo Crítico:** El oponente ve a través de tus intenciones y recibe un **bono de -1** en su próxima comprobación de habilidad.\n- **Fallo:** Sin modificador para la próxima comprobación de habilidad del oponente.\n- **Ordinario:** **Penalización de +1** a la siguiente comprobación de habilidad del oponente.\n- **Bueno:** **Penalización de +2** a la siguiente comprobación de habilidad del oponente.\n- **Asombroso:**\
+          \ **Penalización de +3** a la siguiente comprobación de habilidad del oponente.\n\n---\n\n# Habilidades de Especialidad"
+    items:
+      infantry-tactics:
+        attribute: INT
+        cost: 3
+        url: /skills/tactics#infantry-tactics
+        localized:
+        - en:
+            name: Infantry tactics
+            description: "The specialty skill covers battlefield strategies when the main component of the battle is individual troops.\n\n⊗ **Increased Effect:** As a character achieves higher ranks in a Tactics specialty skill, he receives a situation die bonus for dealing with opposing forces (infantry, space vessels, or vehicles). The bonus is **-1 step at rank 4**, **-2 steps at rank 8**, and **-3 steps at rank 12**.\n\n---"
+        - es:
+            name: Táctica de Infantería
+            description: "Esta habilidad de especialidad cubre las estrategias de campo de batalla cuando el componente principal de la batalla son las tropas individuales.\n\n⊗ **Efecto Incrementado:** A medida que un personaje alcanza rangos más altos en una especialidad de Táctica, recibe un bono de dado de situación para tratar CON las fuerzas opuestas (infantería, naves espaciales o vehículos). El bono es de **-1 paso al rango 4**, **-2 pasos al rango 8** y **-3 pasos al rango 12**.\n\n---"
+      space-tactics:
+        attribute: INT
+        cost: 3
+        url: /skills/tactics#space-tactics
+        localized:
+        - en:
+            name: Space tactics
+            description: "Battlefield strategies involving combat between spaceships.\n\n⊗ **Increased Effect:** As a character achieves higher ranks in a Tactics specialty skill, he receives a situation die bonus for dealing with opposing forces. The bonus is **-1 step at rank 4**, **-2 steps at rank 8**, and **-3 steps at rank 12**.\n\n---"
+        - es:
+            name: Táctica Espacial
+            description: "Estrategias de campo de batalla que involucran el combate entre naves espaciales.\n\n⊗ **Efecto Incrementado:** A medida que un personaje alcanza rangos más altos en una especialidad de Táctica, recibe un bono de dado de situación para tratar CON las fuerzas opuestas. El bono es de **-1 paso al rango 4**, **-2 pasos al rango 8** y **-3 pasos al rango 12**.\n\n---"
+      vehicle-tactics:
+        attribute: INT
+        cost: 3
+        url: /skills/tactics#vehicle-tactics
+        localized:
+        - en:
+            name: Vehicle tactics
+            description: "Battlefield strategies involving combat where vehicles other than starships (air, land, or water) are the main component.\n\n⊗ **Increased Effect:** As a character achieves higher ranks in a Tactics specialty skill, he receives a situation die bonus for dealing with opposing forces. The bonus is **-1 step at rank 4**, **-2 steps at rank 8**, and **-3 steps at rank 12**."
+        - es:
+            name: Táctica de Vehículos
+            description: "Estrategias de campo de batalla que involucran combate donde los vehículos que no son naves espaciales (aire, tierra o agua) son el componente principal.\n\n⊗ **Efecto Incrementado:** A medida que un personaje alcanza rangos más altos en una especialidad de Táctica, recibe un bono de dado de situación para tratar CON las fuerzas opuestas. El bono es de **-1 paso al rango 4**, **-2 pasos al rango 8** y **-3 pasos al rango 12**.\n\n---\n\n### Modificadores de Situación de Táctica\n\n| Situación | Modificador |\n| :--- | :--- |\n| **Usuario de la habilidad involucrado en combate** | +1 paso |\n| **Usuario de la habilidad observando el combate** | 0 |\n| **Oponente familiar** | -1 paso |\n| **Oponente desconocido (misma especie)** | +1 paso |\n| **Oponente desconocido (especie diferente)** | +2 pasos |"
+  teach:
+    attribute: WIL
+    cost: 3
+    category: Social
+    url: /skills/teach
+    localized:
+    - en:
+        name: Teach
+--
+      technical-knowledge:
+        attribute: INT
+        cost: 3
+        url: /skills/technical-science#technical-knowledge
+        localized:
+        - en:
+            name: Technical Knowledge
+            description: "This skill represents the study of technology and indicates how up-to-date a character is on techniques or procedures that help him manipulate tools and other devices. It is necessary for a character to use certain sophisticated or potentially dangerous tools, such as a cutting torch, without risking personal injury or damage to the tool.\n\n⊗ **Increased Effect:** As a character’s specialty skill rank increases, he receives a bonus to any skill checks involving Technical Science or the other three specialty skills: **-1 step at rank 3**, **-2 at rank 6**, **-3 at rank 9**, and **-4 at rank 12**.\n\n---\n\n### Technical Science Situation Modifiers\n\n| Situation | Modifier |\n| :--- | :--- |\n| **No tools** | +3 steps |\n| **Minimal tools** | 0 |\n| **Standard toolkit** | -1 step |\n| **Specialized toolkit** | -2 steps |\n| **Darkness** | +3 steps |\n| **Marginal illumination** | +1 step |\n| **Ordinary illumination** | 0 |\n| **Good illumination** | -1 step |\n\
+              | **No deadline** | -2 steps |\n| **Reasonable deadline** | 0 |\n| **Tight deadline** | +1 step |\n| **Unreasonable deadline** | +3 steps |"
+        - es:
+            name: Remendar
+            description: "Esta habilidad permite a un personaje realizar reparaciones rápidas y provisionales para poner en funcionamiento un dispositivo o sistema electrónico o mecánico durante un corto período de tiempo. Una reparación de remiendo, incluso cuando tiene éxito, añade dificultad a las reparaciones completas que deben realizarse más adelante, pero puede ayudar a un personaje a salir de una situación difícil.\n\nUna reparación de remiendo se puede realizar CON éxito **una vez** en un sistema u objeto específico. Si se avería después de haber sido remendado, el sistema u objeto no volverá a funcionar hasta que esté completamente arreglado (utilizando Ciencia Técnica—reparación). Realizar una comprobación de habilidad de remiendo es una acción única, pero un personaje que intenta usar esta habilidad debe hacerlo en su primera acción disponible en un asalto, y no puede intentar ninguna otra acción durante el resto del asalto.\n\n### Resultados de Remendar\nLa cantidad de dificultad\
+              \ añadida a las reparaciones completas depende del resultado de la comprobación de remiendo:\n- **Fallo Crítico:** El sistema u objeto se vuelve inutilizable y no puede volver a funcionar sin reparaciones completas.\n- **Fallo:** El intento de remiendo no funciona pero se puede intentar de nuevo.\n- **Éxito Ordinario:** El sistema u objeto entra en funcionamiento durante **d6+1 unidades de tiempo**, y se necesitan **3 éxitos más** para las reparaciones completas (además de los que ya se requerían).\n- **Éxito Bueno:** El sistema u objeto entra en funcionamiento durante **2d4+2 unidades de tiempo**, y se necesitan **2 éxitos más** para las reparaciones completas.\n- **Éxito Asombroso:** El sistema u objeto entra en funcionamiento durante **3d4+2 unidades de tiempo**, y se necesita **1 éxito más** para realizar las reparaciones completas.\n\n⊗ **Remendar Mejorado:** Cuando un personaje alcanza el **Rango 6**, su capacidad mejora de la siguiente manera: un éxito Ordinario produce\
+              \ un resultado Bueno, un éxito Bueno produce un resultado Asombroso, y un éxito Asombroso significa que el remiendo funciona tan bien que el sistema u objeto se considera reparado y en estado de funcionamiento normal.\n\n---"
+      invention:
+        attribute: INT
+        cost: 3
+        url: /skills/technical-science#invention
+        localized:
+        - en:
+            name: Invention
+            description: "Invention lets a character build an electronic or mechanical component or system from scratch, or to modify an existing device to perform a new function. \n\nUsing this skill requires time; Invention checks are always complex skill checks. Modifying an existing item may be able to be done in rounds, but all other aspects of invention require hours, days, weeks, or months, depending on the determination of the Gamemaster. \n\n⊗ **Increased Effect:** As a character’s specialty skill rank increases, he receives a bonus to any skill checks involving Technical Science or the other three specialty skills: **-1 step at rank 3**, **-2 at rank 6**, **-3 at rank 9**, and **-4 at rank 12**.\n\n---"
+        - es:
+            name: Reparación
+            description: "Esta habilidad proporciona a un personaje entrenamiento en la reparación y el mantenimiento de varios tipos de tecnología mecánica y electrónica.\n\nCualquier uso de la habilidad de reparación requiere una comprobación de habilidad compleja y toma un período de tiempo determinado por el Director del Juego (minutos, horas, días o semanas). La complejidad de una comprobación de habilidad de reparación está relacionada CON la cantidad de daño que debe repararse:\n- **Daño de Aturdimiento:** Arreglar un objeto CON solo daño de aturdimiento es de complejidad **Ordinaria**.\n- **Daño de Herida:** Arreglar un objeto CON daño de herida es de complejidad **Buena**.\n- **Daño Mortal:** Arreglar un objeto CON cualquier cantidad de daño Mortal es de complejidad **Asombrosa** (y puede requerir más de 10 éxitos).\n\n⊗ **Efecto Incrementado:** A medida que aumenta el rango de habilidad de especialidad de un personaje, este recibe un bono a cualquier comprobación de habilidad que\
+              \ involucre Ciencia Técnica o las otras tres habilidades de especialidad: **bono de -1 paso al rango 3**, **-2 al rango 6**, **-3 al rango 9** y **-4 al rango 12**.\n\n---"
+      jury-rig:
+        attribute: INT
+        cost: 3
+        url: /skills/technical-science#jury-rig
+        localized:
+        - en:
+            name: Jury-rig
+            description: ''
+        - es:
+            name: Jury-rig
+            description: ''
+      repair:
+        attribute: INT
+        cost: 3
+        url: /skills/technical-science#repair
+        localized:
+        - en:
+            name: Repair
+            description: "This skill provides a character with training in the repair and maintenance of various types of mechanical and electronic technology.\n\nAny use of the repair skill requires a complex skill check and takes a period of time determined by the Gamemaster (minutes, hours, days, or weeks). The complexity of a repair skill check is related to the amount of damage that must be repaired:\n- **Stun Damage:** Fix an object with only stun damage is **Ordinary** complexity.\n- **Wound Damage:** Fix an object with wound damage is **Good** complexity.\n- **Mortal Damage:** Fixing an object with any amount of mortal damage is **Amazing** complexity (and may require 10+ successes).\n\n⊗ **Increased Effect:** As a character’s specialty skill rank increases, he receives a bonus to any skill checks involving Technical Science or the other three specialty skills: **-1 step at rank 3**, **-2 at rank 6**, **-3 at rank 9**, and **-4 at rank 12**.\n\n---"
+        - es:
+            name: Repair
+            description: "This skill provides a character with training in the repair and maintenance of various types of mechanical and electronic technology.\n\nAny use of the repair skill requires a complex skill check and takes a period of time determined by the Gamemaster (minutes, hours, days, or weeks). The complexity of a repair skill check is related to the amount of damage that must be repaired:\n- **Stun Damage:** Fix an object with only stun damage is **Ordinary** complexity.\n- **Wound Damage:** Fix an object with wound damage is **Good** complexity.\n- **Mortal Damage:** Fixing an object with any amount of mortal damage is **Amazing** complexity (and may require 10+ successes).\n\n⊗ **Increased Effect:** As a character’s specialty skill rank increases, he receives a bonus to any skill checks involving Technical Science or the other three specialty skills: **-1 step at rank 3**, **-2 at rank 6**, **-3 at rank 9**, and **-4 at rank 12**.\n\n---"
+  vehicle-operation:
+    attribute: DEX
+    cost: 3
+    category: Technical
+    url: /skills/vehicle-operation
+    localized:
+    - en:
+        name: Vehicle Operation
+        description: "This broad skill provides a character with a basic understanding of and proficiency with modern vehicles. Using this skill, a character can attempt to operate most normal land and water vehicles. Some military or specialized land and water vehicles may have controls that are too complex for the broad skill to cover, requiring at least some level of specialization before a character is able to operate them successfully.\n\nThe ordinary operation of any normal land or water vehicle doesn't require a skill check. During chases, races, or vehicle combat, or when navigating through challenging obstacles, skill checks may be called for.\n\nWhen a character purchases any of the **Vehicle Operation** specialty skills, he selects a specific type of vehicle.\n\nFor more details on vehicles, see the section on [Vehicles and Vessels](/core-mechanics/vehicles-and-vessels/).\n\n---"
+    - es:
+        name: Operación de Vehículos
+        description: "Esta habilidad amplia proporciona a un personaje una comprensión básica y competencia CON los vehículos modernos. Usando esta habilidad, un personaje puede intentar operar la mayoría de los vehículos terrestres y acuáticos normales. Algunos vehículos terrestres y acuáticos militares o especializados pueden tener controles que son demasiado complejos para que la habilidad amplia los cubra, requiriendo al menos algún nivel de especialización antes de que un personaje sea capaz de operarlos CON éxito.\n\nLa operación ordinaria de cualquier vehículo terrestre o acuático normal no requiere una comprobación de habilidad. Durante persecuciones, carreras o combate de vehículos, o cuando se navega a través de obstáculos heroicos, se pueden solicitar comprobaciones de habilidad.\n\nCuando un personaje adquiere cualquiera de las habilidades de especialidad de **Operación de Vehículos**, selecciona un tipo específico de vehículo.\n\nPara más detalles sobre vehículos, consulte la\
+          \ sección de [Vehículos y Naves](/core-mechanics/vehicles-and-vessels/).\n\n---\n\n# Habilidades de Especialidad"
+    items:
+      air-vehicle:
+        attribute: DEX
+        cost: 5
+        url: /skills/vehicle-operation#air-vehicle
+        localized:
+        - en:
+            name: Air vehicle
+            description: "This specialty skill enables a character to become trained in the use of a specific type of air vehicle. If he wants to be skilled in the operation of more than one type of air vehicle, he must purchase and improve each specialty skill separately.\n\nTypes of air vehicles include propeller planes, helicopters, private jets, commercial jets, and jet fighters.\n\n---"
+        - es:
+            name: Vehículo Aéreo
+            description: "Esta habilidad de especialidad permite a un personaje estar entrenado en el uso de un tipo específico de vehículo aéreo. Si desea ser experto en la operación de más de un tipo de vehículo aéreo, debe comprar y mejorar cada habilidad de especialidad por separado.\n\nLos tipos de vehículos aéreos incluyen aviones de hélice, helicópteros, jets privados, jets comerciales y aviones de combate.\n\n---"
+      land-vehicle:
+        attribute: DEX
+        cost: 3
+        url: /skills/vehicle-operation#land-vehicle
+        localized:
+        - en:
+            name: Land vehicle
+            description: "This specialty skill enables a character to become trained in the use of a specific type of land vehicle. If he wants to be skilled in the operation of more than one type of land vehicle, he must purchase and improve each specialty skill separately.\n\nTypes of land vehicles include automobiles, motorcycles, race cars, large trucks, and tanks and other heavy military vehicles.\n\n---"
+        - es:
+            name: Vehículo Terrestre
+            description: "Esta habilidad de especialidad permite a un personaje estar entrenado en el uso de un tipo específico de vehículo terrestre. Si desea ser experto en la operación de más de un tipo de vehículo terrestre, debe comprar y mejorar cada habilidad de especialidad por separado.\n\nLos tipos de vehículos terrestres incluyen automóviles, motocicletas, coches de carreras, camiones grandes y tanques y otros vehículos militares pesados.\n\n---"
+      space-vehicle:
+        attribute: DEX
+        cost: 5
+        url: /skills/vehicle-operation#space-vehicle
+        localized:
+        - en:
+            name: Space vehicle
+            description: "This specialty skill enables a character to become trained in the use of a specific type of space vehicle. If he wants to be skilled in the operation of more than one type of space vehicle, he must purchase and improve each specialty skill separately. \n\nThis skill is also used to operate the helm of large, multicrewed space vessels. Other systems on space vessels require the specialized functions of the **[System Operation](/skills/system-operation/)** broad skill.\n\nTypes of space vehicles include:\n- **Space fighters:** ships of 10 durability or less.\n- **Scouts and light freighters:** ships of 11–32 durability.\n- **Medium freighters and corvettes:** ships of 33–60 durability.\n- **Capital ships:** ships of 60+ durability.\n\n---"
+        - es:
+            name: Vehículo Espacial
+            description: "Esta habilidad de especialidad permite a un personaje estar entrenado en el uso de un tipo específico de vehículo espacial. Si desea ser experto en la operación de más de un tipo de vehículo espacial, debe comprar y mejorar cada habilidad de especialidad por separado.\n\nEsta habilidad también se usa para operar el timón de naves espaciales grandes CON tripulación múltiple. Otros sistemas en naves espaciales requieren las funciones especializadas de la habilidad amplia de **[Operación de Sistemas](/skills/system-operation/)**.\n\nLos tipos de vehículos espaciales incluyen:\n- **Cazas espaciales:** naves de 10 de durabilidad o menos.\n- **Exploradores y cargueros ligeros:** naves de 11–32 de durabilidad.\n- **Cargueros medios y corbetas:** naves de 33–60 de durabilidad.\n- **Naves capitales:** naves de más de 60 de durabilidad.\n\n---"
+      water-vehicle:
+        attribute: DEX
+        cost: 3
+        url: /skills/vehicle-operation#water-vehicle
+        localized:
+        - en:
+            name: Water vehicle
+            description: "This specialty skill enables a character to become trained in the use of a specific type of water vehicle. If he wants to be skilled in the operation of more than one type of water vehicle, he must purchase and improve each specialty skill separately. \n\nThis skill is also used to operate the helm of large, multicrewed water vessels (such as battleships, submarines, and oil tankers); these require a version of the specialized functions of the **[System Operation](/skills/system-operation/)** broad skill.\n\nTypes of water vehicles include canoes, rafts and rowboats, powerboats, jet skis, sailboats, large commercial vessels, large military vessels, and submersible craft.\n\n---\n\n### Rank Benefits: Improved Proficiency\n\nAs a character achieves higher ranks in one or more of the **Vehicle Operation** specialty skills, he becomes even more adept at operating the specific types of vehicles he has specialized in. \n\n⊗ **Rank Benefit:** The character receives a situation\
+              \ die bonus to checks involving the specialized craft: \n- **-1 step** at rank 4.\n- **-2 step** at rank 8.\n- **-3 step** at rank 12."
+        - es:
+            name: Vehículo Acuático
+            description: "Esta habilidad de especialidad permite a un personaje estar entrenado en el uso de un tipo específico de vehículo acuático. Si desea ser experto en la operación de más de un tipo de vehículo acuático, debe comprar y mejorar cada habilidad de especialidad por separado.\n\nEsta habilidad también se usa para operar el timón de naves acuáticas grandes CON tripulación múltiple (como acorazados, submarinos y petroleros); estos requieren una versión de las funciones especializadas de la habilidad amplia de **[Operación de Sistemas](/skills/system-operation/)**.\n\nLos tipos de vehículos acuáticos incluyen canoas, balsas y botes de remos, lanchas motoras, motos de agua, veleros, grandes barcos comerciales, grandes barcos militares y embarcaciones sumergibles.\n\n---\n\n### Beneficios de Rango: Competencia Mejorada\n\nA medida que un personaje alcanza rangos más altos en una o más de las habilidades de especialidad de **Operación de Vehículos**, se vuelve aún más adepto\
+              \ a operar los tipos específicos de vehículos en los que se ha especializado.\n\n⊗ **Beneficio de Rango:** El personaje recibe un bono de dado de situación a las comprobaciones que involucran el vehículo especializado:\n- **-1 paso** al rango 4.\n- **-2 pasos** al rango 8.\n- **-3 pasos** al rango 12."

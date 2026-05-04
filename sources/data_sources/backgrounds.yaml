@@ -1344,42 +1344,50 @@ items:
   test-subject:
     favored_broad_skill: ''
     localized:
-    - en:
-        description: |-
-          Survivor of experimental laboratory procedures with unique physiological insights.
-        equipment: |-
-          Recovery monitors, surgical scars, stabilizers.
-        favored_perks: |-
-          [Tough as Nails] ({{< relref "/perks_flaws/#tough-as-nails" >}})
-        favored_specialty_skills: |-
-          - [Resolve-Physical Resolve] ({{< relref "/skills/resolve/#physical-resolve" >}})
-          - [Stamina-Endurance] ({{< relref "/skills/stamina/#endurance" >}})
-          - [Awareness-Intuition] ({{< relref "/skills/awareness/#intuition" >}})
-          - [Life Science-Medical Science] ({{< relref "/skills/life-science/#medical-science" >}})
-        flaw: |-
-          [Powerful Enemy] ({{< relref "/perks_flaws/#powerful-enemy" >}})
-        name: The Test Subject
-        special_ability: |-
-          **Hyper-Awareness:** -1 step bonus to physical resolve or intuition when resisting toxins or threats.
-        tendencies: ''
-    - es:
-        description: |-
-          Superviviente de procedimientos de laboratorio experimentales con percepciones fisiológicas únicas.
-        equipment: |-
-          Monitores de recuperación, cicatrices quirúrgicas, estabilizadores.
-        favored_perks: |-
-          [Duro como un Clavo] ({{< relref "/perks_flaws/#tough-as-nails" >}})
-        favored_specialty_skills: |-
-          - [Voluntad-Voluntad Física] ({{< relref "/skills/resolve/#physical-resolve" >}})
-          - [Resistencia-Aguante] ({{< relref "/skills/stamina/#endurance" >}})
-          - [Conciencia-Intuición] ({{< relref "/skills/awareness/#intuition" >}})
-          - [Ciencia de la Vida-Ciencia Médica] ({{< relref "/skills/life-science/#medical-science" >}})
-        flaw: |-
-          [Enemigo Poderoso] ({{< relref "/perks_flaws/#powerful-enemy" >}})
-        name: El Sujeto de Pruebas
-        special_ability: |-
-          **Hiper-Conciencia:** Bono de -1 paso en voluntad física o intuición.
-        tendencies: ''
+      - en:
+          description: |-
+            Survivor of experimental laboratory procedures with unique
+            physiological insights.
+          equipment: |-
+            Recovery monitors, surgical scars, stabilizers.
+          favored_perks: |-
+            [Tough as Nails] ({{< relref "/perks_flaws/#tough-as-nails" >}})
+          favored_specialty_skills: |-
+            [Resolve-Physical Resolve]
+            ({{< relref "/skills/resolve/#physical-resolve" >}}) <br>
+            [Stamina-Endurance] ({{< relref "/skills/stamina/#endurance" >}})
+            <br> [Awareness-Intuition]
+            ({{< relref "/skills/awareness/#intuition" >}}) <br>
+            [Medical Science] ({{< relref "/skills/medical-science/" >}})
+          flaw: |-
+            [Powerful Enemy] ({{< relref "/perks_flaws/#powerful-enemy" >}})
+          name: The Test Subject
+          special_ability: |-
+            **Hyper-Awareness:** -1 step bonus to physical resolve or
+            intuition when resisting toxins or threats.
+          tendencies: ''
+      - es:
+          description: |-
+            Superviviente de procedimientos de laboratorio experimentales con
+            percepciones fisiológicas únicas.
+          equipment: |-
+            Monitores de recuperación, cicatrices quirúrgicas, estabilizadores.
+          favored_perks: |-
+            [Duro como un Clavo] ({{< relref "/perks_flaws/#tough-as-nails" >}})
+          favored_specialty_skills: |-
+            [Voluntad-Voluntad Física]
+            ({{< relref "/skills/resolve/#physical-resolve" >}}) <br>
+            [Resistencia-Aguante] ({{< relref "/skills/stamina/#endurance" >}})
+            <br> [Conciencia-Intuición]
+            ({{< relref "/skills/awareness/#intuition" >}}) <br>
+            [Ciencia Médica] ({{< relref "/skills/medical-science/" >}})
+          flaw: |-
+            [Enemigo Poderoso] ({{< relref "/perks_flaws/#powerful-enemy" >}})
+          name: El Sujeto de Pruebas
+          special_ability: |-
+            **Hiper-Conciencia:** Bono de -1 paso en voluntad física o
+            intuición.
+          tendencies: ''
     url: /backgrounds/test-subject/
   virtuoso:
     favored_broad_skill: |-
@@ -1466,48 +1474,82 @@ items:
           **Supervivencia Corporativa:** Bono de -1 paso en burocracia o negocios.
         tendencies: ''
     url: /backgrounds/wage-slave/
-  war-hero:
+  war-veteran:
     favored_broad_skill: ''
     localized:
-    - en:
-        description: |-
-          You are defined by a single, highly publicized conflict. Whether you were an ace pilot, a combat medic, or the sole survivor of a doomed squad, the galaxy knows your face—and expects you to live up to the legend.
-        equipment: |-
-          A personalized or heavily battle-scarred signature weapon, official combat medals, a rugged military jacket, and a supply of medical painkillers.
-        favored_perks: |-
-          [Celebrity] ({{< relref "/perks_flaws/#celebrity" >}})
-        favored_specialty_skills: |-
-          - [Leadership-Inspire] ({{< relref "/skills/leadership/#inspire" >}})
-          - [Stamina-Endurance] ({{< relref "/skills/stamina/#endurance" >}})
-          - [Resolve- Mental Resolve] ({{< relref "/skills/resolve/#mental-resolve" >}})
-        flaw: |-
-          [Old Injury] ({{< relref "/perks_flaws/#old-injury" >}}) (A lasting physical reminder of the event that made you famous).
-        name: The War Hero
-        special_ability: |-
-          **Burden of Glory:** You receive a -1 step bonus to [Interaction] ({{< relref "/skills/interaction/" >}}) or [Leadership] ({{< relref "/skills/leadership/" >}}) skill checks when dealing with veterans, active military personnel, or patriotic citizens who recognize your service.
-        tendencies: |-
-          - **The Living Legend:** Voluntarily accept a significant disadvantage or take the brunt of an attack to protect civilians or allies, driven by the need to live up to your impossible reputation.
-          - **The Ghost of the Past:** React to a current situation using the outdated or traumatic context of your past war, complicating a simple negotiation or infiltration by treating it like a battlefield.
-    - es:
-        description: |-
-          Te defines por un solo conflicto muy publicitado. Ya hayas sido un piloto experto, un médico de combate o el único superviviente de un pelotón condenado, la galaxia conoce tu rostro y espera que estés a la altura de la leyenda.
-        equipment: |-
-          Un arma personalizada con cicatrices de batalla, medallas de combate oficiales, una chaqueta militar resistente y un suministro de analgésicos médicos.
-        favored_perks: |-
-          [Celebridad] ({{< relref "/perks_flaws/#celebrity" >}})
-        favored_specialty_skills: |-
-          - [Liderazgo-Inspirar] ({{< relref "/skills/leadership/#inspire" >}})
-          - [Resistencia-Aguante] ({{< relref "/skills/stamina/#endurance" >}})
-          - [Voluntad-Voluntad Mental] ({{< relref "/skills/resolve/#mental-resolve" >}})
-        flaw: |-
-          [Vieja Herida] ({{< relref "/perks_flaws/#old-injury" >}}) (Un recordatorio físico duradero del evento que te hizo famoso).
-        name: El Héroe de Guerra
-        special_ability: |-
-          **Carga de Gloria:** Recibes una bonificación de -1 paso a las tiradas de habilidad de [Interacción] ({{< relref "/skills/interaction/" >}}) o [Liderazgo] ({{< relref "/skills/leadership/" >}}) al tratar con veteranos, personal militar activo o ciudadanos patrióticos que reconocen tu servicio.
-        tendencies: |-
-          - **La Leyenda Viviente:** Acepta voluntariamente una desventaja significativa o soporta el peso de un ataque para proteger a civiles o aliados, impulsado por la necesidad de estar a la altura de tu reputación imposible.
-          - **El Fantasma del Pasado:** Reacciona a una situación actual utilizando el contexto obsoleto o traumático de tu guerra pasada, complicando una simple negociación o infiltración al tratarla como un campo de batalla.
-    url: /backgrounds/war-hero/
+      - en:
+          description: |-
+            You are defined by a single, highly publicized conflict. Whether
+            you were an ace pilot, a combat medic, or the sole survivor of a
+            doomed squad, the galaxy knows your face—and expects you to live up
+            to the legend.
+          equipment: |-
+            A personalized or heavily battle-scarred signature weapon, official
+            combat medals, a rugged military jacket, and a supply of medical
+            painkillers.
+          favored_perks: |-
+            [Celebrity] ({{< relref "/perks_flaws/#celebrity" >}})
+          favored_specialty_skills: |-
+            [Leadership-Inspire] ({{< relref "/skills/leadership/#inspire" >}})
+            <br> [Stamina-Endurance]
+            ({{< relref "/skills/stamina/#endurance" >}})
+            <br> [Resolve- Mental Resolve]
+            ({{< relref "/skills/resolve/#mental-resolve" >}})
+          flaw: |-
+            [Old Injury] ({{< relref "/perks_flaws/#old-injury" >}}) (A lasting
+            physical reminder of the event that made you famous).
+          name: The War Veteran
+          special_ability: |-
+            **Burden of Glory:** You receive a -1 step bonus to [Interaction]
+            ({{< relref "/skills/interaction/" >}}) or [Leadership]
+            ({{< relref "/skills/leadership/" >}}) skill checks when dealing
+            with veterans, active military personnel, or patriotic citizens who
+            recognize your service.
+          tendencies: |-
+            **The Living Legend:** Voluntarily accept a significant disadvantage
+            or take the brunt of an attack to protect civilians or allies,
+            driven by the need to live up to your impossible reputation.
+            <br>**The Ghost of the Past:** React to a current situation using
+            the outdated or traumatic context of your past war, complicating a
+            simple negotiation or infiltration by treating it like a
+            battlefield.
+      - es:
+          description: |-
+            Te defines por un solo conflicto muy publicitado. Ya hayas sido un
+            piloto experto, un médico de combate o el único superviviente de un
+            pelotón condenado, la galaxia conoce tu rostro y espera que estés a
+            la altura de la leyenda.
+          equipment: |-
+            Un arma personalizada con cicatrices de batalla, medallas de
+            combate oficiales, una chaqueta militar resistente y un suministro
+            de analgésicos médicos.
+          favored_perks: |-
+            [Celebridad] ({{< relref "/perks_flaws/#celebrity" >}})
+          favored_specialty_skills: |-
+            [Liderazgo-Inspirar] ({{< relref "/skills/leadership/#inspire" >}})
+            <br> [Resistencia-Aguante]
+            ({{< relref "/skills/stamina/#endurance" >}})
+            <br> [Voluntad-Voluntad Mental]
+            ({{< relref "/skills/resolve/#mental-resolve" >}})
+          flaw: |-
+            [Vieja Herida] ({{< relref "/perks_flaws/#old-injury" >}}) (Un
+            recordatorio físico duradero del evento que te hizo famoso).
+          name: El Veterano de Guerra
+          special_ability: |-
+            **Carga de Gloria:** Recibes una bonificación de -1 paso a las
+            tiradas de habilidad de [Interacción] ({{< relref
+            "/skills/interaction/" >}}) o [Liderazgo] ({{< relref
+            "/skills/leadership/" >}}) al tratar con veteranos, personal
+            militar activo o ciudadanos patrióticos que reconocen tu servicio.
+          tendencies: |-
+            **La Leyenda Viviente:** Acepta voluntariamente una desventaja
+            significativa o soporta el peso de un ataque para proteger a
+            civiles o aliados, impulsado por la necesidad de estar a la altura
+            de tu reputación imposible.<br>**El Fantasma del Pasado:**
+            Reacciona a una situación actual utilizando el contexto obsoleto o
+            traumático de tu guerra pasada, complicando una simple negociación
+            o infiltración al tratarla como un campo de batalla.
+    url: /backgrounds/war-veteran/
   whistleblower:
     favored_broad_skill: |-
       [Creativity]({{< relref "/skills/creativity/" >}})
