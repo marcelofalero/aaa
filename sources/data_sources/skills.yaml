@@ -2175,106 +2175,149 @@ items:
     category: Technical
     url: /skills/medical-science
     localized:
-      - en:
-          name: Medical Science
-          description: |-
-            This broad skill provides a character with the training needed to perform medical procedures, including diagnosing ailments and researching medical information. A character with just the broad skill cannot treat damage;
-            **Treatment** or **Surgery** specialties (or the **First Aid** specialty from the Knowledge broad skill) are required for those tasks.
-      - es:
-          name: Ciencias médicas
-          description: |-
-            Esta habilidad amplia proporciona al personaje el entrenamiento necesario para realizar procedimientos médicos, incluyendo el diagnóstico de dolencias y la investigación de información médica. Un personaje CON solo la habilidad amplia no puede tratar daños; se requieren las especialidades de **Tratamiento** o **Cirugía** (o la especialidad de **Primeros auxilios** de la habilidad amplia de Conocimiento) para esas tareas.
+    - en:
+        name: Medical Science
+        description: |-
+          This skill provides a character with the training needed to perform
+          certain medical procedures, including the ability to diagnose common
+          ailments, diseases, and wounds. Skill checks made to determine if a
+          character knows a certain piece of medical information, or if he's
+          able to research a question and discover an answer, are made the same
+          way as Knowledge skill checks.
+          ---
+          A character with just the Medical Science broad skill can't treat
+          characters who have suffered damage, however. The *treatment*
+          specialty skill is necessary to heal stun or wound damage, and
+          reducing a patient's mortal damage requires the *surgery* specialty
+          skill.
+          
+    - es:
+        name: Ciencias médicas
+        description: |-
+          Esta habilidad proporciona a un personaje el entrenamiento necesario
+          para realizar ciertos procedimientos médicos, incluyendo la capacidad
+          de diagnosticar dolencias comunes, enfermedades y heridas. Las
+          tiradas de habilidad realizadas para determinar si un personaje
+          conoce una determinada pieza de información médica, o si es capaz de
+          investigar una pregunta y descubrir una respuesta, se realizan de la
+          misma manera que las tiradas de habilidad de Conocimiento.
+          ---
+          Sin embargo, un personaje con solo la habilidad amplia de Ciencias
+          Médicas no puede tratar a personajes que hayan sufrido daños. La
+          especialidad de *tratamiento* es necesaria para curar el daño por
+          aturdimiento o heridas, y reducir el daño mortal de un paciente
+          requiere la especialidad de *cirugía*.
+          
     items:
-      forensic-science:
-        attribute: WIL
+      forensics:
+        attribute: INT
         cost: 3
-        url: /skills/medical-science#forensic-science
+        url: /skills/medical-science#forensics
         localized:
-          - en:
-              name: Forensic Science
-              description: |-
-                Forensic science is the application of medical and scientific knowledge to legal problems and criminal investigations. It is used to determine cause of death, identify remains, and analyze evidence from a crime scene.
-                ⊗ **Increased Effect:** A character receives a **-1 bonus** at rank 3, **-2** at rank 6, **-3** at rank 9, and **-4** at rank 12 on certain other skill checks that can be assisted by this specialty (e.g., Investigate, Law).
-          - es:
-              name: Ciencias forenses
-              description: |-
-                La ciencia forense es la aplicación del conocimiento médico y científico a problemas legales e investigaciones criminales. Se utiliza para determinar la causa de la muerte, identificar restos y analizar pruebas de la escena de un crimen.
-                ⊗ **Efecto incrementado:** Un personaje recibe una **bonificación de
-                -1 paso** en el rango 3, **-2** en el rango 6, **-3** en el rango 9 y **-4** en el rango 12 en ciertas otras tiradas de habilidad que puedan ser asistidas por esta especialidad (por ejemplo, Investigar, Ley).
+        - en:
+            name: Forensics
+            description: |-
+              Forensics is the study of causes of death and physical evidence at
+              the scene of a crime or accident.
+              ---
+              ⊗ **Increased Effect:** As a character attains higher ranks in
+              forensics, he receives a situation die bonus on skill checks that
+              can be assisted by this specialty. The bonus is -1 step at rank 3,
+              -2 steps at rank 6, -3 steps at rank 9, and -4 steps at rank 12.
+              
+        - es:
+            name: Ciencias forenses
+            description: |-
+              La ciencia forense es el estudio de las causas de la muerte y la
+              evidencia física en la escena de un crimen o accidente.
+              ---
+              ⊗ **Efecto incrementado:** A medida que un personaje alcanza
+              rangos más altos en ciencias forenses, recibe una bonificación de
+              dado de situación en las tiradas de habilidad que puedan ser
+              asistidas por esta especialidad. La bonificación es de -1 paso en
+              el rango 3, -2 pasos en el rango 6, -3 pasos en el rango 9 y -4
+              pasos en el rango 12.
+              
         trained_only: false
+        rank_benefits:
+        - rank: 3
+          title: Increased Effect
+        - rank: 6
+          title: Increased Effect
+        - rank: 9
+          title: Increased Effect
+        - rank: 12
+          title: Increased Effect
       medical-knowledge:
         attribute: WIL
         cost: 3
         url: /skills/medical-science#medical-knowledge
         localized:
-          - en:
-              name: Medical Knowledge
-              description: |-
-                This specialty skill represents a character''s deep academic and practical understanding of medical principles, history, and advanced theory.
-                ⊗ **Increased Effect:** A character receives a **-1 bonus** at rank 3, **-2** at rank 6, **-3** at rank 9, and **-4** at rank 12 on other Medical Science checks (e.g., diagnosis, research).
-          - es:
-              name: Conocimiento médico
-              description: |-
-                Esta habilidad de especialidad representa la profunda comprensión académica y práctica de los principios médicos, la historia y la teoría avanzada del personaje.
-                ⊗ **Efecto incrementado:** Un personaje recibe una **bonificación de
-                -1 paso** en el rango 3, **-2** en el rango 6, **-3** en el rango 9 y **-4** en el rango 12 en otras tiradas de Ciencias médicas (por ejemplo, diagnóstico, investigación).
+        - en:
+            name: Medical Knowledge
+            description: |-
+              Medical knowledge is the study of medicine and represents how
+              up-to-date a character is on a particular medical technique or a
+              technique outside his usual field of practice.
+              ---
+              ⊗ **Increased Effect:** As a character's rank in this specialty
+              increases, he receives a situation die bonus to any Medical
+              Science—treatment skill checks: -1 step at rank 2; -2 at rank 5;
+              -3 at rank 8; and -4 at rank 12.
+              
+        - es:
+            name: Conocimiento médico
+            description: |-
+              El conocimiento médico es el estudio de la medicina y representa
+              qué tan actualizado está un personaje sobre una técnica médica en
+              particular o una técnica fuera de su campo de práctica habitual.
+              ---
+              ⊗ **Efecto incrementado:** A medida que aumenta el rango de un
+              personaje en esta especialidad, recibe una bonificación de dado de
+              situación para cualquier tirada de habilidad de Ciencias
+              Médicas—tratamiento: -1 paso en el rango 2; -2 en el rango 5; -3
+              en el rango 8; y -4 en el rango 12.
+              
         trained_only: false
         rank_benefits:
-          - rank: 3
-            title: Increased Effect
-          - rank: 6
-            title: Increased Effect
-          - rank: 9
-            title: Increased Effect
-          - rank: 12
-            title: Increased Effect
-      xenomedicine-specific:
-        attribute: WIL
-        cost: 3
-        url: /skills/medical-science#xenomedicine-specific
-        localized:
-          - en:
-              name: Xenomedicine
-              description: ''
-          - es:
-              name: Xenomedicine
-              description: ''
-        trained_only: true
-      forensics:
-        attribute: WIL
-        cost: 3
-        url: /skills/medical-science#forensics
-        localized:
-          - en:
-              name: Forensics
-              description: ''
-          - es:
-              name: Cirugía
-              description: |-
-                La cirugía implica el tratamiento de lesiones o trastornos del cuerpo mediante incisiones o manipulación. Se utiliza para reparar daños internos, extraer objetos extraños o realizar trasplantes de órganos.
-                ▶ **Competencia quirúrgica:** En el rango 3, el personaje puede reparar o curar organismos CON implantes cibernéticos. En el rango 6, el personaje puede instalar implantes cibernéticos.
-        trained_only: false
+        - rank: 2
+          title: Increased Effect
+        - rank: 5
+          title: Increased Effect
+        - rank: 8
+          title: Increased Effect
+        - rank: 12
+          title: Increased Effect
       psychology:
         attribute: WIL
         cost: 5
         url: /skills/medical-science#psychology
         localized:
-          - en:
-              name: Psychology
-              description: |-
-                Psychology is the study of the mind and behavior. It can be used to diagnose mental disorders, understand motivations, or predict behavioral patterns.
-                ⊗ **Increased Effect:** A character receives a **-1 bonus** at rank 3, **-2** at rank 6, **-3** at rank 9, and **-4** at rank 12 on certain Interaction checks (e.g., Interview, Persuade, Bluff).
-          - es:
-              name: Tratamiento
-              description: |-
-                La especialidad de tratamiento puede utilizarse para todas las tareas que cubren los primeros auxilios, pero CON mayor eficacia.
-                ### Curar Daño
-                - **Daño por aturdimiento:** Restaura 2, 3 o 4 puntos a un paciente consciente.
-                - **Recuperación de inconsciencia:** Recupera 2, 3 o 4 puntos de aturdimiento.
-                - **Daño por heridas:** Tirada de habilidad compleja utilizando un botiquín de primeros auxilios (complejidad Ordinaria, 2 heridas curadas) o un paquete de traumatología (complejidad Marginal, 4 heridas curadas).
-                - **Moribundo:** Estabiliza el daño Mortal, aumentando el tiempo entre las tiradas de Resistencia-aguante de una por hora a una por día.
-                ⊗ **Tratamiento mejorado:** Un personaje recibe una **bonificación de
-                -1 paso** en el rango 3, **-2** en el rango 6, **-3** en el rango 9 y **-4** en el rango 12 en las tiradas de Tratamiento.
+        - en:
+            name: Psychology
+            description: |-
+              Psychology is the study of mental processes and behavior, and the
+              treatment of mental aberrations and disease.
+              ---
+              ⊗ **Increased Effect:** As a character attains higher ranks in
+              psychology, he receives a situation die bonus on skill checks that
+              can be assisted by this specialty. The bonus is -1 step at rank 3,
+              -2 steps at rank 6, -3 steps at rank 9, and -4 steps at rank 12.
+              
+        - es:
+            name: Psicología
+            description: |-
+              La psicología es el estudio de los procesos mentales y el
+              comportamiento, y el tratamiento de las aberraciones mentales y la
+              enfermedad.
+              ---
+              ⊗ **Efecto incrementado:** A medida que un personaje alcanza
+              rangos más altos en psicología, recibe una bonificación de dado de
+              situación en las tiradas de habilidad que puedan ser asistidas por
+              esta especialidad. La bonificación es de -1 paso en el rango 3, -2
+              pasos en el rango 6, -3 pasos en el rango 9 y -4 pasos en el rango
+              12.
+              
         trained_only: false
         rank_benefits:
           - rank: 3
@@ -2290,47 +2333,219 @@ items:
         cost: 5
         url: /skills/medical-science#surgery
         localized:
-          - en:
-              name: Surgery
-              description: |-
-                Surgery involves the treatment of injuries or disorders of the body by incision or manipulation. It is used to repair internal damage, remove foreign objects, or perform organ transplants.
-                ▶ **Surgical Proficiency:** At rank 3, the character can repair or heal organisms with cybernetic implants. At rank 6, the character can install cybernetic implants.
-          - es:
-              name: Surgery
-              description: |-
-                Surgery involves the treatment of injuries or disorders of the body by incision or manipulation. It is used to repair internal damage, remove foreign objects, or perform organ transplants.
-                ▶ **Surgical Proficiency:** At rank 3, the character can repair or heal organisms with cybernetic implants. At rank 6, the character can install cybernetic implants.
+        - en:
+            name: Surgery
+            description: |-
+              The Medical Science specialty skill *surgery* is used to heal
+              mortal damage and perform other invasive medical procedures. Any
+              application of this skill requires a complex skill check. Surgery
+              can't be performed during a combat scene. It almost always takes
+              much more time than mere rounds or minutes, and successful surgery
+              is extremely difficult to perform in conditions such as those
+              found on the typical battlefield.
+              ### Surgical Conditions
+              The conditions for surgery are considered **Critical (+4 step
+              penalty)** when the procedure must be performed with poor
+              lighting, primitive tools (or no surgical tools at all), and no
+              trained assistance. **Marginal conditions (no modifier)** are
+              better than Critical, but still below what's necessary for
+              success. A **Good situation (-2 step bonus)** is similar to a
+              modern ambulance or spaceship sick bay. **Amazing conditions (-3
+              step bonus)** are found in a standard hospital. **Optimal
+              conditions (-4 step bonus)** include high-tech tools, trained
+              support staff, and the most advanced medical procedures available.
+              ### Procedure and Recovery
+              The complexity of a surgery check depends on the amount of mortal
+              damage the patient is suffering from when the procedure is begun:
+              1 point of damage is Marginal, 2 is Ordinary, 3 is Good, and 4 or
+              more is Amazing. If the patient is suffering only from wound
+              damage, then 2 points of damage is Marginal, 4 is Ordinary, 6 is
+              Good, and 8 or more is Amazing.
+              For every two successes achieved during the complex skill check,
+              the patient is healed of 1 point of mortal damage and 2 points of
+              wound damage.
+              ---
+              ▶ **Cybernetic Surgery:** A character who has achieved at least
+              rank 3 in surgery can use this skill to repair or heal an organism
+              with existing cybernetic implants. At rank 6, the character
+              becomes able to install cybernetic implants.
+              
+        - es:
+            name: Cirugía
+            description: |-
+              La especialidad de *cirugía* se utiliza para curar daños mortales
+              y realizar otros procedimientos médicos invasivos. Cualquier
+              aplicación de esta habilidad requiere una tirada de habilidad
+              compleja. La cirugía no se puede realizar durante una escena de
+              combate. Casi siempre requiere mucho más tiempo que rondas o
+              minutos, y la cirugía exitosa es extremadamente difícil de
+              realizar en condiciones como las que se encuentran en el campo de
+              batalla típico.
+              ### Condiciones Quirúrgicas
+              Las condiciones para la cirugía se consideran **Críticas (+4 pasos
+              de penalización)** cuando el procedimiento debe realizarse con
+              mala iluminación, herramientas primitivas (o sin herramientas
+              quirúrgicas en absoluto) y sin asistencia capacitada. Las
+              **condiciones marginales (sin modificador)** son mejores que las
+              Críticas, pero aún están por debajo de lo necesario para el éxito.
+              Una **situación buena (-2 pasos de bonificación)** es similar a
+              una ambulancia moderna o a la enfermería de una nave espacial. Las
+              **condiciones asombrosas (-3 pasos de bonificación)** se encuentran
+              en un hospital estándar. Las **condiciones óptimas (-4 pasos de
+              bonificación)** incluyen herramientas de alta tecnología, personal
+              de apoyo capacitado y los procedimientos médicos más avanzados
+              disponibles.
+              ### Procedimiento y Recuperación
+              La complejidad de una tirada de cirugía depende de la cantidad de
+              daño mortal que sufra el paciente cuando se inicia el
+              procedimiento: 1 punto de daño es Marginal, 2 es Ordinario, 3 es
+              Bueno y 4 o más es Asombroso. Si el paciente sufre solo daño por
+              heridas, entonces 2 puntos de daño es Marginal, 4 es Ordinario, 6
+              es Bueno y 8 o más es Asombroso.
+              Por cada dos éxitos logrados durante la tirada de habilidad
+              compleja, el paciente se cura de 1 punto de daño mortal y 2 puntos
+              de daño por heridas.
+              ---
+              ▶ **Cirugía cibernética:** Un personaje que haya alcanzado al
+              menos el rango 3 en cirugía puede usar esta habilidad para reparar
+              o curar un organismo con implantes cibernéticos existentes. En el
+              rango 6, el personaje se vuelve capaz de instalar implantes
+              cibernéticos.
+              
         trained_only: true
         rank_benefits:
-          - rank: 3
-            title: Surgical Proficiency
-          - rank: 6
-            title: Surgical Proficiency
+        - rank: 3
+          title: Cybernetic Surgery
+        - rank: 6
+          title: Cybernetic Surgery
       treatment:
         attribute: WIL
         cost: 4
         url: /skills/medical-science#treatment
         localized:
-          - en:
-              name: Treatment
-              description: |-
-                The treatment specialty can be used for all tasks first aid covers, but with greater effectiveness.
-                ### Heal Damage
-                - **Stun Damage:** Restores 2, 3, or 4 points to a conscious patient.
-                - **Knockout Recovery:** Recovers 2, 3, or 4 stun points.
-                - **Wound Damage:** Complex skill check using a first aid kit (Ordinary complexity, 2 wounds healed) or trauma pack (Marginal complexity, 4 wounds healed).
-                - **Dying:** Stabilizes mortal damage, increasing the time between Stamina-endurance checks from one per hour to one per day.
-                ⊗ **Improved Treatment:** A character receives a **-1 bonus** at rank 3, **-2** at rank 6, **-3** at rank 9, and **-4** at rank 12 on Treatment checks.
-          - es:
-              name: Treatment
-              description: |-
-                The treatment specialty can be used for all tasks first aid covers, but with greater effectiveness.
-                ### Heal Damage
-                - **Stun Damage:** Restores 2, 3, or 4 points to a conscious patient.
-                - **Knockout Recovery:** Recovers 2, 3, or 4 stun points.
-                - **Wound Damage:** Complex skill check using a first aid kit (Ordinary complexity, 2 wounds healed) or trauma pack (Marginal complexity, 4 wounds healed).
-                - **Dying:** Stabilizes mortal damage, increasing the time between Stamina-endurance checks from one per hour to one per day.
-                ⊗ **Improved Treatment:** A character receives a **-1 bonus** at rank 3, **-2** at rank 6, **-3** at rank 9, and **-4** at rank 12 on Treatment checks.
+        - en:
+            name: Treatment
+            description: |-
+              The *treatment* specialty skill can be used to accomplish all the
+              same tasks that the *first aid* skill is used for (healing stun
+              damage, knockout recovery).
+              ### Treatment Procedures
+              ▶ **Heal Wound Damage:** When *treatment* is used to heal wounds,
+              the character must be using either a first aid kit or a trauma
+              pack, and a complex skill check is required. The task is Ordinary
+              with a first aid kit, or Marginal if a trauma pack is used. If the
+              check is successful, 2 wounds are healed with a first aid kit, and
+              4 wounds are healed with a trauma pack.
+              ▶ **Dying:** A character with any amount of mortal damage is
+              considered to be dying. A character with *treatment* and either a
+              first aid kit or a trauma pack can stabilize mortal damage,
+              increasing the time between Stamina-endurance checks from one per
+              hour to one per day.
+              ▶ **Treating Disease:** The *treatment* specialty can be used to
+              identify and treat debilitating diseases, with situation die
+              modifiers dependent on the difficulty and virulence.
+              ---
+              ⊗ **Improved Treatment:** As a character achieves higher skill
+              ranks, he becomes more proficient at providing aid to injured
+              patients. This is reflected by a reduction in situation die
+              penalties: -1 step at rank 3, -2 steps at rank 6, -3 steps at rank
+              9, and -4 at rank 12. Note that this benefit only reduces a
+              penalty; it never provides a bonus.
+              
+        - es:
+            name: Tratamiento
+            description: |-
+              La especialidad de *tratamiento* se puede utilizar para realizar
+              todas las mismas tareas para las que se utiliza la habilidad de
+              *primeros auxilios* (curar daño por aturdimiento, recuperación de
+              inconsciencia).
+              ### Procedimientos de Tratamiento
+              ▶ **Curar daño por heridas:** Cuando se utiliza el *tratamiento*
+              para curar heridas, el personaje debe estar usando un botiquín de
+              primeros auxilios o un paquete de traumatología, y se requiere una
+              tirada de habilidad compleja. La tarea es Ordinaria con un
+              botiquín de primeros auxilios, o Marginal si se utiliza un paquete
+              de traumatología. Si la tirada tiene éxito, se curan 2 heridas con
+              un botiquín de primeros auxilios y 4 heridas con un paquete de
+              traumatología.
+              ▶ **Moribundo:** Un personaje con cualquier cantidad de daño
+              mortal se considera moribundo. Un personaje con *tratamiento* y un
+              botiquín de primeros auxilios o un paquete de traumatología puede
+              estabilizar el daño mortal, aumentando el tiempo entre las tiradas
+              de Resistencia-aguante de una por hora a una por día.
+              ▶ **Tratamiento de enfermedades:** La especialidad de *tratamiento*
+              se puede utilizar para identificar y tratar enfermedades
+              debilitantes, con modificadores de dado de situación que dependen
+              de la dificultad y la virulencia.
+              ---
+              ⊗ **Tratamiento mejorado:** A medida que un personaje alcanza
+              rangos de habilidad más altos, se vuelve más competente en la
+              prestación de ayuda a los pacientes heridos. Esto se refleja en
+              una reducción de las penalizaciones de los dados de situación: -1
+              paso en el rango 3, -2 pasos en el rango 6, -3 pasos en el rango
+              9 y -4 en el rango 12. Tenga en cuenta que este beneficio solo
+              reduce una penalización; nunca proporciona una bonificación.
+              
+        trained_only: true
+        rank_benefits:
+        - rank: 3
+          title: Improved Treatment
+        - rank: 6
+          title: Improved Treatment
+        - rank: 9
+          title: Improved Treatment
+        - rank: 12
+          title: Improved Treatment
+      xenomedicine:
+        attribute: INT
+        cost: 3
+        url: /skills/medical-science#xenomedicine
+        localized:
+        - en:
+            name: Xenomedicine
+            description: |-
+              This specialty skill involves the medical study of a specific
+              alien species, allowing a character to use his other medical
+              skills on members of that species. The skill must be purchased
+              separately for each alien species a character wants to know
+              about.
+              A character with at least rank 1 in this skill, as well as rank 1
+              or higher in Knowledge—first aid, Medical Science—treatment, and/or
+              Medical Science—surgery, can administer aid to an alien character
+              or creature of the appropriate species. Initially, the +3 step
+              penalty associated with healing alien characters is applied.
+              ---
+              ⊗ **Improved Treatment:** As a character achieves higher ranks in
+              a specific application of xenomedicine, she becomes more proficient
+              at providing aid to patients of the appropriate species. When the
+              character reaches rank 3 in xenomedicine, the initial +3 penalty is
+              reduced to +2; at rank 6, the penalty is +1; at rank 9, the
+              penalty is eliminated; and at rank 12, the doctor receives a -1
+              bonus.
+              
+        - es:
+            name: Xenomedicina
+            description: |-
+              Esta especialidad implica el estudio médico de una especie
+              alienígena específica, lo que permite a un personaje utilizar sus
+              otras habilidades médicas en miembros de esa especie. La habilidad
+              debe comprarse por separado para cada especie alienígena sobre la
+              que un personaje quiera saber.
+              Un personaje con al menos rango 1 en esta habilidad, así como
+              rango 1 o superior en Conocimiento—primeros auxilios, Ciencias
+              Médicas—tratamiento y/o Ciencias Médicas—cirugía, puede administrar
+              ayuda a un personaje o criatura alienígena de la especie
+              apropiada. Inicialmente, se aplica la penalización de +3 pasos
+              asociada con la curación de personajes alienígenas.
+              ---
+              ⊗ **Tratamiento mejorado:** A medida que un personaje alcanza
+              rangos más altos en una aplicación específica de xenomedicina, se
+              vuelve más competente en la prestación de ayuda a los pacientes de
+              la especie apropiada. Cuando el personaje alcanza el rango 3 en
+              xenomedicina, la penalización inicial de +3 se reduce a +2; en el
+              rango 6, la penalización es +1; en el rango 9, se elimina la
+              penalización; y en el rango 12, el médico recibe una bonificación
+              de -1.
         trained_only: true
         rank_benefits:
           - rank: 3
