@@ -1336,14 +1336,6 @@
                     "type": "Broad",
                     "items": [
                         {
-                            "skill": "Invención",
-                            "attribute": "VOL",
-                            "url": "/es/skills/technical-science#invencion",
-                            "cost": 3,
-                            "type": "Specialty",
-                            "css_class": ""
-                        },
-                        {
                             "skill": "Remendar",
                             "attribute": "VOL",
                             "url": "/es/skills/technical-science#remendar",

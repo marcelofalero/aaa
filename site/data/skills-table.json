@@ -1336,14 +1336,6 @@
                     "type": "Broad",
                     "items": [
                         {
-                            "skill": "Juryrig",
-                            "attribute": "WIL",
-                            "url": "/skills/technical-science#juryrig",
-                            "cost": 3,
-                            "type": "Specialty",
-                            "css_class": ""
-                        },
-                        {
                             "skill": "Technical Knowledge",
                             "attribute": "WIL",
                             "url": "/skills/technical-science#technical-knowledge",

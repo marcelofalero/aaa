@@ -16,7 +16,15 @@ Esta amplia habilidad representa la competencia de un personaje en las artes esc
 ## Musical instrument
 {{< specialty attr="PER" untrained="no" cost="2" >}}
 
+**Solo capacitado.** Dominio de un instrumento específico seleccionado al momento de la compra.
 
+### Beneficio de rango: sinergia de habilidades (mejora otra habilidad)
+⊗ **Sinergia de habilidades:** Las especialidades de entretenimiento se pueden combinar CON otras habilidades para lograr un mayor efecto. El personaje recibe una bonificación de dado de situación para la habilidad admitida:
+- **Rango 1:** -Bono de 1 paso.
+- **Rango 4:** -Bono de 2 pasos.
+- **Rango 8:** -Bonificación de 3 pasos.
+- **Rango 12:** -Bono de 4 pasos.
+*Ejemplos: Actuar + Seducir; Danza + Carterista; Cantar + Burlarse; Instrumento + Inspiración.*
 
 ---
 

@@ -688,11 +688,21 @@ items:
         localized:
           - en:
               name: Climb
-              description: ''
+              description: 'The ability to scale vertical surfaces and navigate difficult terrain.
+
+
+                **Combat Climbing:** Movement per phase based on check: Ordinary (1m), Good (2m), Amazing (3m). Critical Failure results in a fall.
+
+
+                **Challenge Climbing:** Outside of rounds, climbing is resolved as a **complex skill check**.'
           - es:
               name: Trepar
               description: |-
-                CON la habilidad de trepar, un personaje puede ascender o descender por superficies verticales, como muros, acantilados o árboles. Se utiliza para determinar si el personaje puede encontrar puntos de apoyo y mantener el equilibrio mientras sube.
+                La capacidad de escalar superficies verticales y navegar por terrenos difíciles.
+
+                **Escalada de combate:** Movimiento por fase según verificación: Ordinario (1 m), Bueno (2 m), Increíble (3 m). La falla crítica resulta en una caída.
+
+                **Desafío de escalada:** Fuera de las rondas, la escalada se resuelve como una **prueba de habilidad compleja**.
         trained_only: false
       jump:
         attribute: STR
@@ -701,15 +711,33 @@ items:
         localized:
           - en:
               name: Jump
-              description: ''
+              description: 'The ability to leap over obstacles or across gaps.
+
+                **Types of Jump:**
+
+                - **Standing:** Ordinary 1m; Good 2m; Amazing 3m.
+
+                - **Running:** Ordinary 2m; Good 4m; Amazing 6m.
+
+                - **Vertical:** Ordinary 1m; Good 1.5m; Amazing 2m.
+
+
+                **Vaulting:** Vertical leap enhanced by a pole or object. Adds +1m (object) or +2m (pole) to the jump.
+
+
+                ▶ **Increased Distance:** Ranks provide distance bonuses: Running (+1m at Rank 3, 6, 9, 12), Standing (+1m at Rank 4, 7, 10), Vertical (+0.5m at Rank 5, 8, 11).'
           - es:
               name: Saltar
               description: |-
-                CON la habilidad de saltar, un personaje puede intentar saltar obstáculos realizando un salto horizontal (en carrera o desde parado) o un salto vertical. En cualquier intento de salto, un resultado de Fallo Crítico indica que el personaje tropieza y sufre una caída dura, recibiendo d6 puntos de daño de aturdimiento. Un resultado Marginal indica que el personaje realiza un salto de distancia Ordinaria pero sufre d4 puntos de daño de aturdimiento debido a un mal aterrizaje.
-                ### Tipos de Salto
-                - **Salto desde parado:** Ordinario 1m; Bueno 2m; Asombroso 3m.
-                - **Salto en carrera:** Ordinario 2m; Bueno 4m; Asombroso 6m.
-                - **Salto vertical:** Ordinario 1m; Bueno 1,5m; Asombroso 2m.
+                La capacidad de saltar obstáculos o atravesar brechas.
+                **Tipos de Salto:**
+                - **De pie:** Ordinario 1m; Bueno 2m; Increíble 3m.
+                - **Corriendo:** Ordinario 2m; Bueno 4m; Increíbles 6m.
+                - **Vertical:** Ordinario 1m; Bueno 1,5 m; Increíble 2m.
+
+                **Salto:** Salto vertical potenciado por un palo u objeto. Añade +1m (objeto) o +2m (poste) al salto.
+
+                ▶ **Distancia aumentada:** Los rangos proporcionan bonificaciones de distancia: correr (+1 m en los rangos 3, 6, 9, 12), de pie (+1 m en los rangos 4, 7, 10), vertical (+0,5 m en los rangos 5, 8, 11).
         trained_only: false
       swim:
         attribute: STR
@@ -718,13 +746,24 @@ items:
         localized:
           - en:
               name: Swim
-              description: ''
+              description: '**Trained Only.**
+
+                Proficiency in moving through liquid environments. Without this skill, a character can only tread water and paddle crudely.
+
+
+                ▶ **Improved Breathing:** Situation die bonus to Stamina checks for holding breath: Rank 1 (-1), Rank 4 (-2), Rank 8 (-3), Rank 12 (-4).
+
+
+                ▶ **Movement Rate:** Swim speed increases by 1m at Ranks 4, 8, and 12.'
           - es:
               name: Nadar
               description: |-
-                La habilidad de especialidad de Nadar representa la capacidad de un personaje para moverse a través del agua u otros entornos líquidos sin hundirse ni ahogarse.
-                ⊗ **Aumento de la Velocidad de Movimiento:** A medida que un personaje alcanza rangos más altos en la especialidad de nadar, mejora sus velocidades de movimiento de nado y nado suave. Ambas velocidades aumentan en
-                **1 metro** al rango 4, de nuevo al rango 8, y de nuevo al rango 12.
+                **Solo entrenado.**
+                Competencia para moverse a través de ambientes líquidos. Sin esta habilidad, un personaje sólo puede flotar en el agua y remar toscamente.
+
+                ▶ **Respiración mejorada:** Bonificación del dado de situación a las pruebas de resistencia por contener la respiración: rango 1 (-1), rango 4 (-2), rango 8 (-3), rango 12 (-4).
+
+                ▶ **Tasa de movimiento:** La velocidad de nado aumenta en 1 m en los rangos 4, 8 y 12.
         trained_only: true
       throw:
         attribute: STR
@@ -733,11 +772,38 @@ items:
         localized:
           - en:
               name: Throw
-              description: ''
+              description: 'Proficiency in hurling objects (knives, grenades, rocks) at targets. Accuracy is governed by [Table P20: Accuracy by Range]({{< relref "core-mechanics/useful-tables#table-p20-accuracy-by-range" >}}).
+
+
+                ### Trajectory Control
+
+                A character can attempt advanced maneuvers with a base **+2 step penalty**:
+
+                - **Magnus Curve:** Throw around one piece of cover (ignore +1 cover penalty).
+
+                - **Ricochet:** Bounce off a surface to hit a target (ignore LOS requirements if the path is known).
+
+                - **Sub-Orbital Arc:** Throw over large obstacles.
+
+
+                ▶ **Trajectory Mastery:** Ranks in this specialty reduce the penalty for Trajectory Control maneuvers: **Rank 3 (-1)**, **Rank 6 (-2)**, **Rank 9 (-3)**, **Rank 12 (-4)**.
+
+
+                ▶ **Kinetic Reversal (Rank 12):** Once per round, the character can attempt to catch a thrown projectile (like a grenade or knife) with an **Amazing** Athletics-throw check. If successful, they can immediately throw it back as a free action.'
           - es:
               name: Lanzar
               description: |-
-                CON la habilidad de lanzar, un personaje puede arrojar CON precisión pelotas, dardos, piedras, cuchillos arrojadizos, granadas y otros objetos pequeños a un objetivo específico. La precisión de un lanzamiento depende del alcance y del grado de éxito obtenido en una comprobación de habilidad.
+                Competencia en lanzar objetos (cuchillos, granadas, piedras) a los objetivos. La precisión se rige por la [Tabla P20: Precisión por rango]({{< relref "core-mechanics/useful-tables#table-p20-accuracy-by-range" >}}).
+
+                ### Control de trayectoria
+                Un personaje puede intentar maniobras avanzadas CON una base **penalización de +2 pasos**:
+                - **Curva Magnus:** Lanza una pieza de cobertura (ignora la penalización de cobertura +1).
+                - **Rebote:** Rebota en una superficie para alcanzar un objetivo (ignora los requisitos de LOS si conoces el camino).
+                - **Arco suborbital:** Lanza grandes obstáculos.
+
+                ▶ **Dominio de la trayectoria:** Los rangos en esta especialidad reducen la penalización por las maniobras de control de trayectoria: **Rango 3 (-1)**, **Rango 6 (-2)**, **Rango 9 (-3)**, **Rango 12 (-4)**.
+
+                ▶ **Inversión cinética (rango 12):** Una vez por ronda, el personaje puede intentar atrapar un proyectil lanzado (como una granada o un cuchillo) CON una prueba de lanzamiento atlético **Asombroso**. Si tiene éxito, puede devolverlo inmediatamente como acción gratuita.
         trained_only: false
     trained_only: false
   awareness:
@@ -1276,11 +1342,47 @@ items:
         localized:
           - en:
               name: Etiquette
-              description: ''
+              description: 'This skill can''t be used untrained. For each separate purchase of this specialty skill, a character selects a specific culture. As the specialty skill is improved, the character gains a progressively stronger grasp on the customs, attitudes, and beliefs of that culture.
+
+                - **Increased Effect:** Gaining ranks in Culture—etiquette as it pertains to a certain culture translates into a bonus to the use of Culture-diplomacy when that skill is used on a member of the culture in question. Having the etiquette skill at rank 3 provides a -1 bonus to diplomacy skill checks. The bonus improves to -2 at rank 6, to -3 at rank 9, and to —4 at rank 12.
+
+
+                The Gamemaster will decide what constitutes a “specific culture,” taking the campaign setting into account. In a campaign that takes place entirely on Earth, different countries may represent specific cultures; in a starfaring campaign, each planet, star system, or alien species could be a different culture.
+
+
+                ### Rank Benefits (Interaction Synergy)
+
+                Ranks in Etiquette provide a bonus to **Diplomacy** checks made within that specific culture:
+
+
+                ⊗ **Rank 3:** -1 situation die bonus.
+
+
+                ⊗ **Rank 6:** -2 steps bonus.
+
+
+                ⊗ **Rank 9:** -3 steps bonus.
+
+
+                ⊗ **Rank 12:** -4 steps bonus.'
           - es:
               name: First Encounter
               description: |-
-                This Especialidad represents a Personaje''s training in the theories and protocols of making first contact with a previously unknown Cultura. With this skill, a Personaje can assess the Mental, Físico, and technological capabilities of an unfamiliar species, begin the process of establishing communications and learning each Otros''s language, and make a preliminary study of the strangers'' cultural and societal habits. A first encounter skill check is always a complex chore, and may take days, weeks, or even months to successfully complete. The Gamemaster will assign the number of successes necessary to complete the skill check based on the extent of difference between the two cultures involved. Also, the Gamemaster will determine the initial attitude of the target creature(s) toward the Personaje, and may inform the Personaje of changes in that attitude that take place while the complex skill check is under way. Upon the successful completion of the first encounter skill check, the Personaje immediately gains rank 1 in the Knowledge—language and Cultura—Etiqueta skills that relate to the formerly unknown Cultura.
+                Esta habilidad no se puede utilizar sin entrenamiento. Por cada compra por separado de esta habilidad especializada, un personaje selecciona una cultura específica. A medida que se mejora la habilidad especial, el personaje adquiere progresivamente una mayor comprensión de las costumbres, actitudes y creencias de esa cultura.
+                - **Efecto aumentado:** Ganar rangos en Cultura: la etiqueta en lo que respecta a una determinada cultura se traduce en una bonificación al uso de Diplomacia cultural cuando esa habilidad se usa en un miembro de la cultura en cuestión. Tener la habilidad de etiqueta en el rango 3 proporciona una bonificación de -1 a las pruebas de habilidad de diplomacia. La bonificación mejora a -2 en el rango 6, a -3 en el rango 9 y a -4 en el rango 12.
+
+                El Director de Juego decidirá qué constituye una “cultura específica”, teniendo en cuenta el entorno de la campaña. En una campaña que se desarrolla íntegramente en la Tierra, diferentes países pueden representar culturas específicas; En una campaña espacial, cada planeta, sistema estelar o especie alienígena podría ser una cultura diferente.
+
+                ### Beneficios de rango (sinergia de interacción)
+                Los rangos en Etiqueta proporcionan una bonificación a las pruebas de **Diplomacia** realizadas dentro de esa cultura específica:
+
+                ⊗ **Rango 3:** -1 bonificación por dado de situación.
+
+                ⊗ **Rango 6:** -Bonificación de 2 pasos.
+
+                ⊗ **Rango 9:** -Bonificación de 3 pasos.
+
+                ⊗ **Rango 12:** -Bono de 4 pasos.
         trained_only: true
       diplomacy:
         attribute: PER
@@ -1467,10 +1569,40 @@ items:
         localized:
           - en:
               name: Musical instrument
-              description: ''
+              description: '**Trained Only.** Proficiency in a specific instrument selected upon purchase.
+
+
+                ### Rank Benefit - Skill Synergy (Enhance Another Skill)
+
+                ⊗ **Skill Synergy:** Entertainment specialties can be combined with other skills for greater effect. The character receives a situation die bonus to the supported skill:
+
+                - **Rank 1:** -1 step bonus.
+
+                - **Rank 4:** -2 steps bonus.
+
+                - **Rank 8:** -3 steps bonus.
+
+                - **Rank 12:** -4 steps bonus.
+
+                *Examples: Act + Seduce; Dance + Pickpocket; Sing + Taunt; Instrument + Inspire.*'
           - es:
               name: Musical instrument
-              description: ''
+              description: '**Solo capacitado.** Dominio de un instrumento específico seleccionado al momento de la compra.
+
+
+                ### Beneficio de rango: sinergia de habilidades (mejora otra habilidad)
+
+                ⊗ **Sinergia de habilidades:** Las especialidades de entretenimiento se pueden combinar CON otras habilidades para lograr un mayor efecto. El personaje recibe una bonificación de dado de situación para la habilidad admitida:
+
+                - **Rango 1:** -Bono de 1 paso.
+
+                - **Rango 4:** -Bono de 2 pasos.
+
+                - **Rango 8:** -Bonificación de 3 pasos.
+
+                - **Rango 12:** -Bono de 4 pasos.
+
+                *Ejemplos: Actuar + Seducir; Danza + Carterista; Cantar + Burlarse; Instrumento + Inspiración.*'
         trained_only: true
       sing:
         attribute: PER
@@ -4058,36 +4190,6 @@ items:
           description: |-
             Esta amplia habilidad representa la formación de un personaje en las ciencias técnicas, incluido el mantenimiento, reparación e invención de dispositivos mecánicos y electrónicos (sin incluir computadoras), y el conocimiento técnico general. Las pruebas de habilidad realizadas para determinar si un personaje conoce cierta información técnica, o si es capaz de investigar una pregunta y descubrir una respuesta, se realizan de la misma manera que las pruebas de habilidad de **Conocimiento**.
     items:
-      juryrig:
-        attribute: WIL
-        cost: 3
-        url: /skills/technical-science#juryrig
-        localized:
-          - en:
-              name: Juryrig
-              description: |-
-                This skill enables a character to make fast, patchwork repairs in order to get an electronic or mechanical device or system up and running for a short period of time. A juryrig repair, even when successful, adds difficulty to the full repairs that must be made later, but it can get a character through a sticky situation. A juryrig repair can be made successfully **once** on a specific system or item. If it breaks down after being juryrigged, the system or item won't work again until it's completely fixed (using Technical Science—repair). Making a juryrig skill check is a single action, but a character who tries to use this skill must do so on his first available action in a round, and he can't attempt any other actions for the rest of the round.
-                ### Juryrig Results
-                The amount of difficulty added to the full repairs depends on the result of the juryrig check:
-                - **Critical Failure:** The system or item becomes unusable and can't be made functional again without full repairs.
-                - **Failure:** The juryrig attempt doesn't work but can be tried again.
-                - **Ordinary success:** The system or item becomes operational for **d6+1 time units**, and **3 more successes** are needed for full repairs (in addition to those already required).
-                - **Good success:** The system or item becomes operational for **2d4+2 time units**, and **2 more successes** are needed for full repairs.
-                - **Amazing success:** The system or item becomes operational for **3d4+2 time units**, and **1 more success** is needed to make full repairs.
-                ⊗ **Improved Juryrig:** When a character reaches **Rank 6**, his ability improves as follows: an Ordinary success produces a Good result, a Good success produces an Amazing result, and an Amazing success means the juryrig works so well that the system or item is considered repaired and in regular working order.
-          - es:
-              name: Invención
-              description: |-
-                Esta habilidad permite a un personaje realizar reparaciones rápidas y fragmentadas para que un dispositivo o sistema electrónico o mecánico esté en funcionamiento durante un corto período de tiempo. Una reparación CON jurado, incluso cuando tiene éxito, añade dificultad a las reparaciones completas que deben realizarse más adelante, pero puede ayudar a un personaje a superar una situación difícil. Una reparación juryrig se puede realizar exitosamente **una vez** en un sistema o elemento específico. Si se estropea después de haber sido arreglado, el sistema o elemento no volverá a funcionar hasta que esté completamente reparado (usando Ciencia Técnica: reparación). Realizar una prueba de habilidad de jurado es una acción única, pero un personaje que intenta usar esta habilidad debe hacerlo en su primera acción disponible en una ronda, y no puede intentar ninguna otra acción durante el resto de la ronda.
-                ### Resultados del jurado
-                La cantidad de dificultad agregada a las reparaciones completas depende del resultado de la verificación del jurado:
-                - **Falla crítica:** El sistema o elemento queda inutilizable y no puede volver a funcionar sin una reparación completa.
-                - **Fallo:** El intento de jurado no funciona pero se puede intentar nuevamente.
-                - **Éxito normal:** El sistema o elemento entra en funcionamiento durante **d6+1 unidades de tiempo**, y se necesitan **3 éxitos más** para reparaciones completas (además de los ya necesarios).
-                - **Buen éxito:** El sistema o elemento vuelve a estar operativo durante **2d4+2 unidades de tiempo**, y se necesitan **2 éxitos más** para realizar reparaciones completas.
-                - **Éxito asombroso:** El sistema o elemento vuelve a estar operativo durante **3d4+2 unidades de tiempo**, y se necesita **1 éxito más** para realizar reparaciones completas.
-                ⊗ **Juryrig mejorado:** Cuando un personaje alcanza el **rango 6**, su habilidad mejora de la siguiente manera: un éxito ordinario produce un buen resultado, un buen éxito produce un resultado asombroso y un éxito sorprendente significa que el juryrig funciona tan bien que el sistema o elemento se considera reparado y en condiciones normales de funcionamiento.
-        trained_only: false
       technical-knowledge:
         attribute: WIL
         cost: 3
@@ -4149,10 +4251,35 @@ items:
         localized:
           - en:
               name: Jury-rig
-              description: ''
+              description: |-
+                This skill enables a character to make fast, patchwork repairs in order to get an electronic or mechanical device or system up and running for a short period of time. A juryrig repair, even when successful, adds difficulty to the full repairs that must be made later, but it can get a character through a sticky situation. A juryrig repair can be made successfully **once** on a specific system or item. If it breaks down after being juryrigged, the system or item won't work again until it's completely fixed (using Technical Science—repair). Making a juryrig skill check is a single action, but a character who tries to use this skill must do so on his first available action in a round, and he can't attempt any other actions for the rest of the round.
+                ### Juryrig Results
+                The amount of difficulty added to the full repairs depends on the result of the juryrig check:
+                - **Critical Failure:** The system or item becomes unusable and can't be made functional again without full repairs.
+                - **Failure:** The juryrig attempt doesn't work but can be tried again.
+                - **Ordinary success:** The system or item becomes operational for **d6+1 time units**, and **3 more successes** are needed for full repairs (in addition to those already required).
+                - **Good success:** The system or item becomes operational for **2d4+2 time units**, and **2 more successes** are needed for full repairs.
+                - **Amazing success:** The system or item becomes operational for **3d4+2 time units**, and **1 more success** is needed to make full repairs.
+                ⊗ **Improved Juryrig:** When a character reaches **Rank 6**, his ability improves as follows: an Ordinary success produces a Good result, a Good success produces an Amazing result, and an Amazing success means the juryrig works so well that the system or item is considered repaired and in regular working order.
           - es:
               name: Jury-rig
-              description: ''
+              description: 'Esta habilidad permite a un personaje realizar reparaciones rápidas y fragmentadas para que un dispositivo o sistema electrónico o mecánico esté en funcionamiento durante un corto período de tiempo. Una reparación CON jurado, incluso cuando tiene éxito, añade dificultad a las reparaciones completas que deben realizarse más adelante, pero puede ayudar a un personaje a superar una situación difícil. Una reparación juryrig se puede realizar exitosamente **una vez** en un sistema o elemento específico. Si se estropea después de haber sido arreglado, el sistema o elemento no volverá a funcionar hasta que esté completamente reparado (usando Ciencia Técnica: reparación). Realizar una prueba de habilidad de jurado es una acción única, pero un personaje que intenta usar esta habilidad debe hacerlo en su primera acción disponible en una ronda, y no puede intentar ninguna otra acción durante el resto de la ronda.
+
+                ### Resultados del jurado
+
+                La cantidad de dificultad agregada a las reparaciones completas depende del resultado de la verificación del jurado:
+
+                - **Falla crítica:** El sistema o elemento queda inutilizable y no puede volver a funcionar sin una reparación completa.
+
+                - **Fallo:** El intento de jurado no funciona pero se puede intentar nuevamente.
+
+                - **Éxito normal:** El sistema o elemento entra en funcionamiento durante **d6+1 unidades de tiempo**, y se necesitan **3 éxitos más** para reparaciones completas (además de los ya necesarios).
+
+                - **Buen éxito:** El sistema o elemento vuelve a estar operativo durante **2d4+2 unidades de tiempo**, y se necesitan **2 éxitos más** para realizar reparaciones completas.
+
+                - **Éxito asombroso:** El sistema o elemento vuelve a estar operativo durante **3d4+2 unidades de tiempo**, y se necesita **1 éxito más** para realizar reparaciones completas.
+
+                ⊗ **Juryrig mejorado:** Cuando un personaje alcanza el **rango 6**, su habilidad mejora de la siguiente manera: un éxito ordinario produce un buen resultado, un buen éxito produce un resultado asombroso y un éxito sorprendente significa que el juryrig funciona tan bien que el sistema o elemento se considera reparado y en condiciones normales de funcionamiento.'
         trained_only: false
       repair:
         attribute: WIL

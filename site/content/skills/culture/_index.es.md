@@ -16,7 +16,21 @@ Esta amplia habilidad representa la capacidad de un personaje para comprender e 
 ## First Encounter
 {{< specialty attr="PER" untrained="no" cost="3" >}}
 
-This Especialidad represents a Personaje''s training in the theories and protocols of making first contact with a previously unknown Cultura. With this skill, a Personaje can assess the Mental, Físico, and technological capabilities of an unfamiliar species, begin the process of establishing communications and learning each Otros''s language, and make a preliminary study of the strangers'' cultural and societal habits. A first encounter skill check is always a complex chore, and may take days, weeks, or even months to successfully complete. The Director de Juego will assign the number of successes necessary to complete the skill check based on the extent of difference between the two cultures involved. Also, the Director de Juego will determine the initial attitude of the target creature(s) toward the Personaje, and may inform the Personaje of changes in that attitude that take place while the complex skill check is under way. Upon the successful completion of the first encounter skill check, the Personaje immediately gains rank 1 in the Knowledge—language and Cultura—Etiqueta skills that relate to the formerly unknown Cultura.
+Esta habilidad no se puede utilizar sin entrenamiento. Por cada compra por separado de esta habilidad especializada, un personaje selecciona una cultura específica. A medida que se mejora la habilidad especial, el personaje adquiere progresivamente una mayor comprensión de las costumbres, actitudes y creencias de esa cultura.
+- **Efecto aumentado:** Ganar rangos en Cultura: la etiqueta en lo que respecta a una determinada cultura se traduce en una bonificación al uso de Diplomacia cultural cuando esa habilidad se usa en un miembro de la cultura en cuestión. Tener la habilidad de etiqueta en el rango 3 proporciona una bonificación de -1 a las pruebas de habilidad de diplomacia. La bonificación mejora a -2 en el rango 6, a -3 en el rango 9 y a -4 en el rango 12.
+
+El Director de Juego decidirá qué constituye una “cultura específica”, teniendo en cuenta el entorno de la campaña. En una campaña que se desarrolla íntegramente en la Tierra, diferentes países pueden representar culturas específicas; En una campaña espacial, cada planeta, sistema estelar o especie alienígena podría ser una cultura diferente.
+
+### Beneficios de rango (sinergia de interacción)
+Los rangos en Etiqueta proporcionan una bonificación a las pruebas de **Diplomacia** realizadas dentro de esa cultura específica:
+
+⊗ **Rango 3:** -1 bonificación por dado de situación.
+
+⊗ **Rango 6:** -Bonificación de 2 pasos.
+
+⊗ **Rango 9:** -Bonificación de 3 pasos.
+
+⊗ **Rango 12:** -Bono de 4 pasos.
 
 ---
 

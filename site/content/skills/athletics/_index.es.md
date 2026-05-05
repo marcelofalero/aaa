@@ -11,34 +11,55 @@ Esta amplia habilidad proporciona al personaje las habilidades de un atleta natu
 ## Trepar
 {{< specialty attr="FUE" untrained="yes" cost="2" >}}
 
-CON la habilidad de trepar, un personaje puede ascender o descender por superficies verticales, como muros, acantilados o árboles. Se utiliza para determinar si el personaje puede encontrar puntos de apoyo y mantener el equilibrio mientras sube.
+La capacidad de escalar superficies verticales y navegar por terrenos difíciles.
+
+**Escalada de combate:** Movimiento por fase según verificación: Ordinario (1 m), Bueno (2 m), Increíble (3 m). La falla crítica resulta en una caída.
+
+**Desafío de escalada:** Fuera de las rondas, la escalada se resuelve como una **prueba de habilidad compleja**.
 
 ---
 
 ## Saltar
 {{< specialty attr="FUE" untrained="yes" cost="1" >}}
 
-CON la habilidad de saltar, un personaje puede intentar saltar obstáculos realizando un salto horizontal (en carrera o desde parado) o un salto vertical. En cualquier intento de salto, un resultado de Fallo Crítico indica que el personaje tropieza y sufre una caída dura, recibiendo d6 puntos de daño de aturdimiento. Un resultado Marginal indica que el personaje realiza un salto de distancia Ordinaria pero sufre d4 puntos de daño de aturdimiento debido a un mal aterrizaje.
-### Tipos de Salto
-- **Salto desde parado:** Ordinario 1m; Bueno 2m; Asombroso 3m.
-- **Salto en carrera:** Ordinario 2m; Bueno 4m; Asombroso 6m.
-- **Salto vertical:** Ordinario 1m; Bueno 1,5m; Asombroso 2m.
+La capacidad de saltar obstáculos o atravesar brechas.
+**Tipos de Salto:**
+- **De pie:** Ordinario 1m; Bueno 2m; Increíble 3m.
+- **Corriendo:** Ordinario 2m; Bueno 4m; Increíbles 6m.
+- **Vertical:** Ordinario 1m; Bueno 1,5 m; Increíble 2m.
+
+**Salto:** Salto vertical potenciado por un palo u objeto. Añade +1m (objeto) o +2m (poste) al salto.
+
+▶ **Distancia aumentada:** Los rangos proporcionan bonificaciones de distancia: correr (+1 m en los rangos 3, 6, 9, 12), de pie (+1 m en los rangos 4, 7, 10), vertical (+0,5 m en los rangos 5, 8, 11).
 
 ---
 
 ## Nadar
 {{< specialty attr="FUE" untrained="no" cost="2" >}}
 
-La habilidad de especialidad de Nadar representa la capacidad de un personaje para moverse a través del agua u otros entornos líquidos sin hundirse ni ahogarse.
-⊗ **Aumento de la Velocidad de Movimiento:** A medida que un personaje alcanza rangos más altos en la especialidad de nadar, mejora sus velocidades de movimiento de nado y nado suave. Ambas velocidades aumentan en
-**1 metro** al rango 4, de nuevo al rango 8, y de nuevo al rango 12.
+**Solo entrenado.**
+Competencia para moverse a través de ambientes líquidos. Sin esta habilidad, un personaje sólo puede flotar en el agua y remar toscamente.
+
+▶ **Respiración mejorada:** Bonificación del dado de situación a las pruebas de resistencia por contener la respiración: rango 1 (-1), rango 4 (-2), rango 8 (-3), rango 12 (-4).
+
+▶ **Tasa de movimiento:** La velocidad de nado aumenta en 1 m en los rangos 4, 8 y 12.
 
 ---
 
 ## Lanzar
 {{< specialty attr="FUE" untrained="yes" cost="2" >}}
 
-CON la habilidad de lanzar, un personaje puede arrojar CON precisión pelotas, dardos, piedras, cuchillos arrojadizos, granadas y otros objetos pequeños a un objetivo específico. La precisión de un lanzamiento depende del alcance y del grado de éxito obtenido en una comprobación de habilidad.
+Competencia en lanzar objetos (cuchillos, granadas, piedras) a los objetivos. La precisión se rige por la [Tabla P20: Precisión por rango]({{< relref "core-mechanics/useful-tables#table-p20-accuracy-by-range" >}}).
+
+### Control de trayectoria
+Un personaje puede intentar maniobras avanzadas CON una base **penalización de +2 pasos**:
+- **Curva Magnus:** Lanza una pieza de cobertura (ignora la penalización de cobertura +1).
+- **Rebote:** Rebota en una superficie para alcanzar un objetivo (ignora los requisitos de LOS si conoces el camino).
+- **Arco suborbital:** Lanza grandes obstáculos.
+
+▶ **Dominio de la trayectoria:** Los rangos en esta especialidad reducen la penalización por las maniobras de control de trayectoria: **Rango 3 (-1)**, **Rango 6 (-2)**, **Rango 9 (-3)**, **Rango 12 (-4)**.
+
+▶ **Inversión cinética (rango 12):** Una vez por ronda, el personaje puede intentar atrapar un proyectil lanzado (como una granada o un cuchillo) CON una prueba de lanzamiento atlético **Asombroso**. Si tiene éxito, puede devolverlo inmediatamente como acción gratuita.
 
 ---
 
