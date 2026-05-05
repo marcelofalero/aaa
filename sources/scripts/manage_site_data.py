@@ -648,5 +648,65 @@ def process_skills(skills_list, mapping):
     with open(os.path.join(SITE_DATA_DIR, 'skills-table.es.json'), 'w', encoding='utf-8') as f:
         json.dump(build_nested_skills_table('es'), f, indent=4, ensure_ascii=False)
 
+    def build_search_index(lang):
+        columns = [
+            {"key": "skill", "name": "Skill" if lang == 'en' else "Habilidad", "link": True},
+            {"key": "attribute", "name": "Attr." if lang == 'en' else "Atrib."},
+            {"key": "cost", "name": "Cost" if lang == 'en' else "Costo"}
+        ]
+        
+        search_groups = []
+        for b in skills_list:
+            loc_b = get_localized(b, lang)
+            b_title = loc_b.get('name') or loc_b.get('skill') or translate_field(b.get('skill', ''), b.get('skill_es'), mapping, lang)
+            
+            b_desc = loc_b.get('description')
+            if not b_desc:
+                b_desc = b.get('description', '') if lang == 'en' else apply_mapping(b.get('description_es', b.get('description', '')), mapping)
+            elif lang == 'es':
+                b_desc = apply_mapping(b_desc, mapping)
+
+            search_items = []
+            # Broad skill itself
+            search_items.append({
+                "skill": b_title,
+                "attribute": translate_field(b['attribute'], None, mapping, lang),
+                "skill_url": localize_url(b.get('url') or b.get('skill_url'), lang, b_title),
+                "description": b_desc
+            })
+            
+            # Specialties
+            for s in to_list(b.get('items', [])):
+                loc_s = get_localized(s, lang)
+                s_title = loc_s.get('name') or loc_s.get('skill') or translate_field(s.get('skill', ''), s.get('skill_es'), mapping, lang)
+                s_desc = loc_s.get('description')
+                if not s_desc:
+                    s_desc = s.get('description', '') if lang == 'en' else apply_mapping(s.get('description_es', s.get('description', '')), mapping)
+                elif lang == 'es':
+                    s_desc = apply_mapping(s_desc, mapping)
+                
+                search_items.append({
+                    "skill": s_title,
+                    "attribute": translate_field(s['attribute'], None, mapping, lang),
+                    "skill_url": localize_url(s.get('url') or s.get('skill_url'), lang, s_title),
+                    "description": s_desc
+                })
+            search_groups.append({"name": b_title, "items": search_items})
+
+        return {
+            "search_config": {
+                "display_name": "SKILLS" if lang == 'en' else "HABILIDADES",
+                "base_url": "/skills/",
+                "section": "skills"
+            },
+            "columns": columns,
+            "groups": search_groups
+        }
+
+    with open(os.path.join(SITE_DATA_DIR, 'skills.json'), 'w', encoding='utf-8') as f:
+        json.dump(build_search_index('en'), f, indent=4, ensure_ascii=False)
+    with open(os.path.join(SITE_DATA_DIR, 'skills.es.json'), 'w', encoding='utf-8') as f:
+        json.dump(build_search_index('es'), f, indent=4, ensure_ascii=False)
+
 if __name__ == '__main__':
     rebuild_all()

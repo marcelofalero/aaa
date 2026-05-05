@@ -21,7 +21,8 @@ Gambling is an opposed check against the opponent's **Intelligence** (for Logic 
 - **Amazing Success:** Win 5x stake.
 - **Failure:** Lose stake.
 - **Critical Failure:** Significant loss (lose 2x stake/debt) or social disaster.
-▶ **Cheating:** Declare before rolling. Gain a **-3 step bonus**, but any **Failure** result is treated as a **Critical Failure (Caught)**.
+
+**Cheating:** Declare before rolling. Gain a **-3 step bonus**, but any **Failure** result is treated as a **Critical Failure (Caught)**.
 
 ## Bluff
 {{< specialty attr="PER" untrained="yes" cost="3" >}}
@@ -59,6 +60,26 @@ Offering more than the Proper Bribe provides a bonus to the actual Bribe check:
 - **Amazing:** Bribe accepted; attitude improves by two grades for 4d6 hours or until the character does something to change the relationship.
 - **Failure:** Bribe refused. Subsequent attempts require a higher value.
 - **Critical Failure:** Bribe refused; target becomes **Hostile** or **Combative**.
+
+---
+
+## Gamble-Logic-Games
+{{< specialty attr="INT" untrained="yes" cost="3" >}}
+
+**Attribute: INT.**
+Proficiency at games of strategy, counting, and probability (e.g., Blackjack, Chess, and other complex strategy games).
+### Rank Benefits
+▶ **Rank 3, 6, 9, 12 [Pro Advantage]:** The character receives a situation die bonus to gambling checks: **Rank 3 (-1)**, **Rank 6 (-2)**, **Rank 9 (-3)**, **Rank 12 (-4)**.
+
+---
+
+## Gamble-Nerve-Games
+{{< specialty attr="PER" untrained="yes" cost="3" >}}
+
+**Attribute: PER.**
+Proficiency at games of bluffing, reading tells, and psychology (e.g., Poker, Liar's Dice).
+### Rank Benefits
+▶ **Rank 3, 6, 9, 12 [Pro Advantage]:** The character receives a situation die bonus to gambling checks: **Rank 3 (-1)**, **Rank 6 (-2)**, **Rank 9 (-3)**, **Rank 12 (-4)**.
 
 ---
 

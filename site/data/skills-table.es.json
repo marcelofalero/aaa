@@ -489,7 +489,7 @@
                     "skill": "Navegación",
                     "attribute": "VOL",
                     "url": "/es/skills/navigation",
-                    "cost": 3,
+                    "cost": 6,
                     "type": "Broad",
                     "items": [
                         {
@@ -758,6 +758,22 @@
                             "skill": "Bribe",
                             "attribute": "PER",
                             "url": "/es/skills/deception#bribe",
+                            "cost": 3,
+                            "type": "Specialty",
+                            "css_class": ""
+                        },
+                        {
+                            "skill": "Gamble-Logic-Games",
+                            "attribute": "INT",
+                            "url": "/es/skills/deception#gamble-logic-games",
+                            "cost": 3,
+                            "type": "Specialty",
+                            "css_class": ""
+                        },
+                        {
+                            "skill": "Gamble-Nerve-Games",
+                            "attribute": "PER",
+                            "url": "/es/skills/deception#gamble-nerve-games",
                             "cost": 3,
                             "type": "Specialty",
                             "css_class": ""

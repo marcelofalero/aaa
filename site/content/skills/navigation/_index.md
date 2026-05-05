@@ -35,7 +35,8 @@ This specialty skill covers navigation through a star system, usually movements 
 {{< specialty attr="WIL" untrained="yes" cost="3" >}}
 
 This specialty skill covers navigation in a planetary environment, utilizing maps, terrain features, compasses, and GPS systems to move from one point to another.
-⊗ **Increased Effect:** A character receives a **-1 bonus** at rank 3, **-2** at rank 6, **-3** at rank 9, and **-4** at rank 12 on Navigation—surface checks when using maps and navigation sensors.
+### Rank Benefits
+⊗ **Rank 3, 6, 9, 12 [Increased Effect]:** A character receives a **-1 bonus** at rank 3, **-2** at rank 6, **-3** at rank 9, and **-4** at rank 12 on Navigation—surface checks when using maps and navigation sensors.
 
 ---
 

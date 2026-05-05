@@ -32,7 +32,8 @@ A character can study a secured area (anything from a vehicle to a building to a
 - **Ordinary security:** +2 penalty.
 - **Good security:** +3 penalty.
 - **Amazing security:** +4 penalty.
-⊗ **Increased Effect:** As a character achieves higher ranks in this specialty, he receives a situation die bonus on skill checks assisted by it: **-1 step at rank 3**, **-2 steps at rank 6**, **-3 steps at rank 9**, and **-4 steps at rank 12**.
+### Rank Benefits
+⊗ **Rank 3, 6, 9, 12 [Increased Effect]:** As a character achieves higher ranks in this specialty, he receives a situation die bonus on skill checks assisted by it: **-1 step at rank 3**, **-2 steps at rank 6**, **-3 steps at rank 9**, and **-4 steps at rank 12**.
 
 ---
 
@@ -40,7 +41,8 @@ A character can study a secured area (anything from a vehicle to a building to a
 {{< specialty attr="WIL" untrained="yes" cost="4" >}}
 
 Using this skill, a character can attempt to bypass all types of mechanical or electronic security. This includes everything from traditional pin-tumbler locks and mechanical safes (picking) to high-tech motion sensors, trip wires, and electronic maglocks. It''s also used to set traps, both electronic and mechanical in nature. One check can be made per round, and the character making the check is busy for the entire round (no other actions possible). In a situation that isn''t taking place in rounds, the time unit changes from rounds to minutes.
-⊗ **Increased Effect:** As a character achieves higher ranks in this specialty, he receives a situation die bonus on skill checks assisted by it: **-1 step at rank 3**, **-2 steps at rank 6**, **-3 steps at rank 9**, and **-4 steps at rank 12**.
+### Rank Benefits
+⊗ **Rank 3, 6, 9, 12 [Increased Effect]:** As a character achieves higher ranks in this specialty, he receives a situation die bonus on skill checks assisted by it: **-1 step at rank 3**, **-2 steps at rank 6**, **-3 steps at rank 9**, and **-4 steps at rank 12**.
 
 ---
 

@@ -20,8 +20,8 @@ Computers are an integral part of human society, and many alien societies as wel
 {{< specialty attr="INT" untrained="no" cost="4" >}}
 
 Hacking is the ability to break computer codes and bypass computer security for the purposes of gaining access to restricted data or secure computer systems. Hacking can be performed at a computer station that’s physically connected to the data stores in question, or it can be performed from a distant location by creating a link via a network of some kind. It's most often used to retrieve secured data, to enter and take control of a computer system, or to perform some type of sabotage such as erasing files or introducing a virus of some kind. This specialty skill allows a character equipped with a computer to perform the previously mentioned tasks. The character's own skill and any programs being used can help the character navigate computer systems, overcome security, and even defend against other operators hooked into a system.
-
-▶ Increased Effect: As a character gains ranks in this specialty skill, his ability to perform actions related to hacking improves. This is reflected by a **-1 situation die bonus at rank 4**, a **-2 bonus at rank 8**, and a **-3 bonus at rank 12**.
+### Rank Benefits
+▶ **Rank 4, 8, 12 [-1 situation die bonus at rank 4]:** , a **-2 bonus at rank 8**, and a **-3 bonus at rank 12**.
 
 ---
 
@@ -29,8 +29,8 @@ Hacking is the ability to break computer codes and bypass computer security for 
 {{< specialty attr="INT" untrained="yes" cost="3" >}}
 
 This specialty represents a character's knowledge of and proficiency with the physical components that make up a computer. Understanding how a computer system works, being able to set one up quickly, designing and building your own computer, and repairing computer equipment are some of the tasks covered by this skill.
-
-▶ Increased Effect: As a character gains ranks in this specialty skill, his ability to repair computer systems and work with computer hardware in other ways improves. This is reflected by a **-1 situation die bonus at rank 4**, a **-2 bonus at rank 8**, and a **-3 bonus at rank 12**.
+### Rank Benefits
+▶ **Rank 4, 8, 12 [-1 situation die bonus at rank 4]:** , a **-2 bonus at rank 8**, and a **-3 bonus at rank 12**.
 
 ---
 
@@ -39,9 +39,9 @@ This specialty represents a character's knowledge of and proficiency with the ph
 
 This specialty skill enables a character to improve her ability to analyze computer programs, modify existing programs, and (at higher ranks) create programs by writing her own code. Having rank 1 in this skill enables a character to modify the source code of programs of Ordinary quality and Ordinary complexity.
 
-▶ Modify Existing Programs: A character with rank 3 in this skill is able to modify the code of existing programs of Good quality and Good complexity. When the character achieves rank 6, she can modify any existing program.
+Modify Existing Programs: A character with rank 3 in this skill is able to modify the code of existing programs of Good quality and Good complexity. When the character achieves rank 6, she can modify any existing program.
 
-▶ Create New Programs: A character with rank 3 in this skill is able to create new programs of Marginal quality and Marginal complexity. Ordinary programs can be created at rank 6, Good programs at rank 9, and Amazing programs at rank 12.
+Create New Programs: A character with rank 3 in this skill is able to create new programs of Marginal quality and Marginal complexity. Ordinary programs can be created at rank 6, Good programs at rank 9, and Amazing programs at rank 12.
 
 ---
 

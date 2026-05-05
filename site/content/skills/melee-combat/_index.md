@@ -15,10 +15,14 @@ The base damage for an unarmed attack depends on the size of the character; for 
 {{< specialty attr="STR" untrained="yes" cost="3" >}}
 
 As a character improves his ability in the blade specialty skill, he gains rank benefits as described below. Note: These benefits only apply when the character is using a weapon covered by this skill.
-⊗ Resistance Modifier: At higher ranks, the skill provides an improvement to a character''s Strength resistance modifier. It improves by +1 at rank 4, by +1 again at rank 8, and by +1 again at rank 12. This increase doesn''t stack with similar bonuses provided by other melee combat specialty skills.
-▶ Reaction Parry: When a character reaches rank 4, he can attempt to parry whenever a melee or unarmed attack is used against him. The parry attempt uses up the character''s next available action.
-▶ Double-Strike: When a character reaches skill rank 6, he learns to make a double-strike against a target with a successful skill check. The player rolls one control die and two situation dice to make his double-strike attack. The first situation die is the base modifier needed to make an attack with a +1 step penalty; the second situation die is the base modifier with a +2 step penalty.
-▶ Multistrike: When a character reaches skill rank 9, he learns to make multiple attacks in a single phase. The character can strike with a melee weapon three times in a phase. These attacks can be directed at a single target or at up to three separate targets within two meters of the character.
+### Rank Benefits
+⊗ **Rank 4, 8, 12 [Benefit]:** Resistance Modifier: At higher ranks, the skill provides an improvement to a character''s Strength resistance modifier. It improves by +1 at rank 4, by +1 again at rank 8, and by +1 again at rank 12. This increase doesn''t stack with similar bonuses provided by other melee combat specialty skills.
+
+▶ **Rank 4 [Benefit]:** Reaction Parry: When a character reaches rank 4, he can attempt to parry whenever a melee or unarmed attack is used against him. The parry attempt uses up the character''s next available action.
+
+▶ **Rank 6 [Benefit]:** Double-Strike: When a character reaches skill rank 6, he learns to make a double-strike against a target with a successful skill check. The player rolls one control die and two situation dice to make his double-strike attack. The first situation die is the base modifier needed to make an attack with a +1 step penalty; the second situation die is the base modifier with a +2 step penalty.
+
+▶ **Rank 9 [Benefit]:** Multistrike: When a character reaches skill rank 9, he learns to make multiple attacks in a single phase. The character can strike with a melee weapon three times in a phase. These attacks can be directed at a single target or at up to three separate targets within two meters of the character.
 
 ---
 
@@ -26,10 +30,14 @@ As a character improves his ability in the blade specialty skill, he gains rank 
 {{< specialty attr="STR" untrained="yes" cost="3" >}}
 
 As a character improves his ability in the blunt specialty skill, he gains rank benefits as described below. Note: These benefits only apply when the character is using a weapon covered by this skill.
-⊗ Resistance Modifier: At higher ranks, the skill provides an improvement to a character''s Strength resistance modifier. It improves by +1 at rank 4, by +1 again at rank 8, and by +1 again at rank 12. This increase doesn''t stack with similar bonuses provided by other melee combat specialty skills.
-▶ Reaction Parry: When a character reaches rank 4, he can attempt to parry whenever a melee or unarmed attack is used against him. The parry attempt uses up the character''s next available action.
-▶ Double-Strike: When a character reaches skill rank 6, he learns to make a double-strike against a target with a successful skill check. The player rolls one control die and two situation dice. The first situation die is the base modifier with a +1 step penalty; the second situation die is the base modifier with a +2 step penalty.
-▶ Multistrike: When a character reaches skill rank 9, he learns to make multiple attacks in a single phase. The character can strike with a melee weapon three times in a phase. These attacks can be directed at a single target or at up to three separate targets within two meters of the character.
+### Rank Benefits
+⊗ **Rank 4, 8, 12 [Benefit]:** Resistance Modifier: At higher ranks, the skill provides an improvement to a character''s Strength resistance modifier. It improves by +1 at rank 4, by +1 again at rank 8, and by +1 again at rank 12. This increase doesn''t stack with similar bonuses provided by other melee combat specialty skills.
+
+▶ **Rank 4 [Benefit]:** Reaction Parry: When a character reaches rank 4, he can attempt to parry whenever a melee or unarmed attack is used against him. The parry attempt uses up the character''s next available action.
+
+▶ **Rank 6 [Benefit]:** Double-Strike: When a character reaches skill rank 6, he learns to make a double-strike against a target with a successful skill check. The player rolls one control die and two situation dice. The first situation die is the base modifier with a +1 step penalty; the second situation die is the base modifier with a +2 step penalty.
+
+▶ **Rank 9 [Benefit]:** Multistrike: When a character reaches skill rank 9, he learns to make multiple attacks in a single phase. The character can strike with a melee weapon three times in a phase. These attacks can be directed at a single target or at up to three separate targets within two meters of the character.
 
 ---
 
@@ -37,11 +45,16 @@ As a character improves his ability in the blunt specialty skill, he gains rank 
 {{< specialty attr="STR" untrained="yes" cost="3" >}}
 
 As a character improves his ability in the defensive martial arts specialty skill, he gains rank benefits as described below. Note: These benefits only apply when the character is fighting unarmed or with appropriate martial arts implements. The essence of defensive and dexterity-based martial arts lies in non-resistance and the sophisticated manipulation of kinetic vectors. Rather than meeting force with force, these styles utilize fluid, spherical movements to redirect an attacker''s momentum, effectively turning their own mass and acceleration against them.
-▶ Overpowering: This skill can be used to determine the success of an attempt to overpower an opponent. Briefly, overpowering is a form of unarmed attack made simultaneously by one or more allies trying to grab and restrain a single opponent. If a single attacker tries to overpower another character, his Melee Combat skill check is made at a +1 penalty. Every additional attacker who takes part in the same overpowering attempt provides a cumulative –1 bonus to the skill check. Overpowering does not cause damage, but it immobilizes an opponent for as long as one of the attackers continues to maintain a tight hold on that opponent.
-▶ Base Damage: When a character reaches skill rank 1, he learns to maintain balance while identifying openings. This increases his base unarmed damage to **d4s/d6s/d6w**.
-⊗ Resistance Modifier: At higher ranks, the skill provides an improvement to a character''s Strength resistance modifier. By leveraging his speed and flexibility, the practitioner’s reactive movement provides a +1 step increase at rank 3, an additional +1 at rank 7, and a final +1 at rank 11. This increase doesn''t stack with similar bonuses provided by other melee combat specialty skills. How we do things reaches rank 4, if an opponent misses him with a melee attack, the character''s next attack against that specific opponent before the end of the next round can use either his own or his opponent''s Strength modifier for damage.
-▶ Redirection of Force: When a character reaches rank 7, if an opponent performs an All Out Attack against him, the attacker receives all the penalties of that maneuver but gains none of the benefits. How we do things reaches rank 10, All Out Attacks that miss him can be redirected against any other target adjacent to the attacker. The attacker must make a new normal attack roll against the new target to determine the result.
-▶ Formless Master: When a character reaches rank 12, he may ignore 1 step of an opponent''s Strength defense due to the unpredictability of his attacks.
+### Rank Benefits
+▶ **Rank 3 [Benefit]:** Overpowering: This skill can be used to determine the success of an attempt to overpower an opponent. Briefly, overpowering is a form of unarmed attack made simultaneously by one or more allies trying to grab and restrain a single opponent. If a single attacker tries to overpower another character, his Melee Combat skill check is made at a +1 penalty. Every additional attacker who takes part in the same overpowering attempt provides a cumulative –1 bonus to the skill check. Overpowering does not cause damage, but it immobilizes an opponent for as long as one of the attackers continues to maintain a tight hold on that opponent.
+
+▶ **Rank 1 [d4s/d6s/d6w]:** .
+
+⊗ **Rank 3, 4, 7, 11 [Benefit]:** Resistance Modifier: At higher ranks, the skill provides an improvement to a character''s Strength resistance modifier. By leveraging his speed and flexibility, the practitioner’s reactive movement provides a +1 step increase at rank 3, an additional +1 at rank 7, and a final +1 at rank 11. This increase doesn''t stack with similar bonuses provided by other melee combat specialty skills. How we do things reaches rank 4, if an opponent misses him with a melee attack, the character''s next attack against that specific opponent before the end of the next round can use either his own or his opponent''s Strength modifier for damage.
+
+▶ **Rank 7, 10 [Benefit]:** Redirection of Force: When a character reaches rank 7, if an opponent performs an All Out Attack against him, the attacker receives all the penalties of that maneuver but gains none of the benefits. How we do things reaches rank 10, All Out Attacks that miss him can be redirected against any other target adjacent to the attacker. The attacker must make a new normal attack roll against the new target to determine the result.
+
+▶ **Rank 12 [Benefit]:** Formless Master: When a character reaches rank 12, he may ignore 1 step of an opponent''s Strength defense due to the unpredictability of his attacks.
 
 ---
 
@@ -49,16 +62,22 @@ As a character improves his ability in the defensive martial arts specialty skil
 {{< specialty attr="STR" untrained="yes" cost="3" >}}
 
 As a character improves his ability in the power martial arts specialty skill, he gains rank benefits as described below. Note: These benefits only apply when the character is fighting unarmed or with appropriate martial arts implements. The essence of power-oriented martial arts lies in the efficient mobilization of total body mass through structural alignment and explosive kinetic sequencing. These styles treat the body as a single, rigid unit at the moment of impact, using the ground as a fulcrum to funnel energy.
-▶ Overpowering: This skill can be used to determine the success of an attempt to overpower an opponent. Briefly, overpowering is a form of unarmed attack made simultaneously by one or more allies trying to grab and restrain a single opponent. If a single attacker tries to overpower another character, his Melee Combat skill check is made at a +1 penalty. Every additional attacker who takes part in the same overpowering attempt provides a cumulative –1 bonus to the skill check. Overpowering does not cause damage, but it immobilizes an opponent for as long as one of the attackers continues to maintain a tight hold on that opponent.
-▶ Mass Leverage: When a character reaches skill rank 1, he learns to properly leverage his mass. This increases his base unarmed damage to
-**d4s/d4w/d6+1w**.
-▶ High Impulse: When a character reaches rank 3, an Amazing success on an attack forces the target to make a knockout check (Resolve or Stamina) with a +1 step penalty. This penalty increases to +2 at rank 6, +3 at rank 9, and +4 at rank 12.
-▶ Structural Efficiency: When a character reaches rank 4, all unarmed damage increases by +1. This bonus increases by an additional +1 at rank 8 and again at rank 12.
-⊗ Resistance Modifier: At higher ranks, the skill provides an improvement to a character''s Strength resistance modifier. It improves by +1 at rank 4, by +1 again at rank 8, and by +1 again at rank 12. This increase doesn''t stack with similar bonuses provided by other melee combat specialty skills.
-▶ Short-range Power (Fajin): When a character reaches rank 5, he learns to strike effectively even if his hands are bound or unusable by utilizing his shoulders, knees, or head.
-▶ Structural Destruction: When a character reaches rank 8, if he utilizes an All Out Attack, the target must roll their Armor dice twice and take the worse result. This applies to standard armors.
-▶ Master of Force: When a character reaches rank 12, the "roll twice/take worse" armor penalty now applies to Powered Armors and supernatural defenses.
-**Note:** Practitioners that frequently utilize the All Out Attack option in combat are usually called brawlers.
+### Rank Benefits
+▶ **Rank 3 [Benefit]:** Overpowering: This skill can be used to determine the success of an attempt to overpower an opponent. Briefly, overpowering is a form of unarmed attack made simultaneously by one or more allies trying to grab and restrain a single opponent. If a single attacker tries to overpower another character, his Melee Combat skill check is made at a +1 penalty. Every additional attacker who takes part in the same overpowering attempt provides a cumulative –1 bonus to the skill check. Overpowering does not cause damage, but it immobilizes an opponent for as long as one of the attackers continues to maintain a tight hold on that opponent.
+
+▶ **Rank 1 [d4s/d4w/d6+1w]:** .
+
+▶ **Rank 3, 6, 9, 12 [Benefit]:** High Impulse: When a character reaches rank 3, an Amazing success on an attack forces the target to make a knockout check (Resolve or Stamina) with a +1 step penalty. This penalty increases to +2 at rank 6, +3 at rank 9, and +4 at rank 12.
+
+▶ **Rank 4, 8, 12 [Benefit]:** Structural Efficiency: When a character reaches rank 4, all unarmed damage increases by +1. This bonus increases by an additional +1 at rank 8 and again at rank 12.
+
+⊗ **Rank 4, 8, 12 [Benefit]:** Resistance Modifier: At higher ranks, the skill provides an improvement to a character''s Strength resistance modifier. It improves by +1 at rank 4, by +1 again at rank 8, and by +1 again at rank 12. This increase doesn''t stack with similar bonuses provided by other melee combat specialty skills.
+
+▶ **Rank 5 [Benefit]:** Short-range Power (Fajin): When a character reaches rank 5, he learns to strike effectively even if his hands are bound or unusable by utilizing his shoulders, knees, or head.
+
+▶ **Rank 8 [Benefit]:** Structural Destruction: When a character reaches rank 8, if he utilizes an All Out Attack, the target must roll their Armor dice twice and take the worse result. This applies to standard armors.
+
+▶ **Rank 12 [Note]:** Practitioners that frequently utilize the All Out Attack option in combat are usually called brawlers.
 
 ---
 
@@ -66,10 +85,14 @@ As a character improves his ability in the power martial arts specialty skill, h
 {{< specialty attr="STR" untrained="yes" cost="3" >}}
 
 As a character improves his ability in the powered specialty skill, he gains rank benefits as described below. Note: These benefits only apply when the character is using a weapon covered by this skill. Due to the inherent complexity of powered weapons they are more fragile than their counterparts; this requires the user to be more careful when parrying, resulting in a +2 step penalty on parry checks.
-⊗ Resistance Modifier: At higher ranks, the skill provides an improvement to a character''s Strength resistance modifier. It improves by +1 at rank 4, by +1 again at rank 8, and by +1 again at rank 12. This increase doesn''t stack with similar bonuses provided by other melee combat specialty skills.
-▶ Reaction Parry: When a character reaches rank 4, he can attempt to parry whenever a melee or unarmed attack is used against him. The parry attempt uses up the character''s next available action.
-▶ Double-Strike: When a character reaches skill rank 6, he learns to make a double-strike against a target with a successful skill check. The player rolls one control die and two situation dice. The first situation die is the base modifier with a +1 step penalty; the second situation die is the base modifier with a +2 step penalty.
-▶ Multistrike: When a character reaches skill rank 9, he learns to make multiple attacks in a single phase. The character can strike with a melee weapon three times in a phase. These attacks can be directed at a single target or at up to three separate targets within two meters of the character.
+### Rank Benefits
+⊗ **Rank 4, 8, 12 [Benefit]:** Resistance Modifier: At higher ranks, the skill provides an improvement to a character''s Strength resistance modifier. It improves by +1 at rank 4, by +1 again at rank 8, and by +1 again at rank 12. This increase doesn''t stack with similar bonuses provided by other melee combat specialty skills.
+
+▶ **Rank 4 [Benefit]:** Reaction Parry: When a character reaches rank 4, he can attempt to parry whenever a melee or unarmed attack is used against him. The parry attempt uses up the character''s next available action.
+
+▶ **Rank 6 [Benefit]:** Double-Strike: When a character reaches skill rank 6, he learns to make a double-strike against a target with a successful skill check. The player rolls one control die and two situation dice. The first situation die is the base modifier with a +1 step penalty; the second situation die is the base modifier with a +2 step penalty.
+
+▶ **Rank 9 [Benefit]:** Multistrike: When a character reaches skill rank 9, he learns to make multiple attacks in a single phase. The character can strike with a melee weapon three times in a phase. These attacks can be directed at a single target or at up to three separate targets within two meters of the character.
 
 ---
 

@@ -6,59 +6,66 @@ type = "skill"
 layout = "list"
 +++
 
-Interaction skills are used by characters to directly influence others. These include bargaining, charming, interviewing, intimidating, seducing, and taunting.
-### Interaction Situation Modifiers
-| Relation / Condition | Modifier | | :--- | :--- | | Target is different species | +2 steps | | Target is different culture | +2 steps | | Strangers | +1 step | | Known to each other | 0 | | Acquainted | -1 step | Interaction includes specific areas such as making bargains, knowing how to question, charm, seduce, or intimidate another character, and being able to taunt and trade insults with the best of them. An encounter skill check takes into account the target''s starting attitude. Combative or Fanatic characters cannot be influenced by Interaction. The target''s **Will resistance modifier** also applies. In general, changes in attitude brought about through Interaction are longer-lasting than changes from Deception or Entertainment. Once attitude shifts, it remains until the character does something to alter it. | Results | Description | | :--- | :--- | | **Ordinary** | Success indicates that the character produced a quality interaction. | | **Good** | Success indicates that the character produced a very quality interaction. | | **Amazing** | Success indicates that the character produced a masterpiece interaction. |
+Basics of interpersonal contact, used to influence others directly.
+
+### Encounter Skill
+Interaction uses [Table P25: Encounter Skill Effects]({{< relref "core-mechanics/useful-tables#table-p25-encounter-skill-effects" >}}).
+- **Target Modifier:** Modified by the target's **Will** resistance modifier.
+- **Restrictions:** Cannot influence **Combative** or **Fanatic** characters.
+- **Persistence:** Shifts in attitude from Interaction are long-lasting, remaining until the character acts to change them.
 
 ## Bargain
 {{< specialty attr="PER" untrained="yes" cost="3" >}}
 
-Bargain represents a character''s ability to negotiate a cheaper price for an object he wants to buy or a better price for one he''s selling. It also covers more formal business negotiations. A successful check improves the character''s position at the bargaining table. The degree of success determines who gets the better outcome.
-#### Bargain Situation Modifiers
-| Condition | Modifier | | :--- | :--- | | Opponent has no ranks in bargain | -2 steps | | Opponent has ranks in bargain | 0 | | Supply is low | +2 steps | | Supply is moderate | 0 | | Supply is high | -1 step | | Demand is low | -2 steps | | Demand is moderate | 0 | | Demand is high | +2 steps |
+The ability to negotiate deals and trade terms.
+- **Modifiers:** Supply and demand, and the opponent's **Will** resistance modifier.
 
 ---
 
 ## Charm
 {{< specialty attr="PER" untrained="yes" cost="3" >}}
 
-This specialty skill represents a character''s ability to change the attitudes of those he interacts with by presenting himself in a likable, friendly manner. A character with this skill seeks to charm others into giving up something with kind words, a winning smile, and a personable attitude—whether it''s material goods or simply a change of attitude.
-**Note:** Charm can only be used on targets whose attitude is
-**Neutral** or **Friendly**. A character cannot charm a Hostile or Combative target.
+Presentation of self in a likable, friendly manner to win allies.
+- **Restriction:** Can only be used on **Neutral** or **Friendly** targets.
 
 ---
 
 ## Interview
 {{< specialty attr="PER" untrained="yes" cost="3" >}}
 
-The interview skill represents a character''s ability to get information from another character in a non-aggressive way. Interviews are often used by reporters, investigators, and officials conducting standard administrative procedures. It differs from **Investigate—interrogate** (a Will-based skill) in the amount of aggressiveness and fear applied by the questioner.
+Obtaining information in a non-aggressive way.
+- **Restriction:** Cannot be used on **Hostile** or **Combative** targets.
 
 ---
 
 ## Intimidate
 {{< specialty attr="PER" untrained="yes" cost="3" >}}
 
-This specialty represents a character''s ability to threaten another, either by physical presence or weight of authority. Intimidate enables a character to force an opponent to back down, reveal information, or cooperate in some other way due to fear. The target''s **Will resistance modifier** applies to the skill check, along with other Interaction modifiers. It is not possible to intimidate a Fanatic or Combative character. The greater the degree of success, the more cooperation the character can elicit.
+Threatening others through presence or authority to force cooperation.
+- **Restriction:** Cannot be used on **Fanatic** or **Combative** characters.
 
 ---
 
 ## Seduce
 {{< specialty attr="PER" untrained="yes" cost="3" >}}
 
-Seduce represents the ability to entice or beguile another character through opening lines, witty exchanges, playful conversation, and intimate behavior. The goal is to gain the seduced character’s trust through romantic overtures.
-**Note:** Seduce can only be used on targets whose attitude is
-**Neutral**, **Friendly**, or better. A character cannot seduce a Hostile or Combative target. A seduced character doesn''t stay that way forever. How long the character remains seduced depends on the result of the check. If the target becomes Charmed, the seduction works well enough to lead to serious feelings. If the target becomes Fanatic, they become obsessed with the seducer. Whenever the seducer asks for a favor, the target makes a **Will feat check** (with modifiers based on attitude: Charmed +1, Fanatic +2). Once the seduced character’s attitude shifts to Friendly, they are no longer seduced.
+The ability to beguile another through emotional and romantic overtures.
+- **Restriction:** Can only be used on **Friendly** or better targets.
+### Rank Benefits
+▶ **Rank 3 [Favor Check]:** When a favor is asked, the target makes a **Will feat check** (Charmed +1 penalty, Fanatic +2 penalty). Success shifts the attitude one grade back toward Neutral.
 
 ---
 
 ## Taunt
 {{< specialty attr="PER" untrained="yes" cost="3" >}}
 
-Taunt represents a character''s ability to trade insults in order to rattle or enrage an opponent. A character who taunts his opponent tries to force him into making an error in judgment.
-#### Taunt Situation Modifiers
-| Target Attitude | Modifier | | :--- | :--- | | Combative | -2 steps | | Hostile | -1 step | | Neutral | 0 | | Friendly | +1 step | On an **Ordinary** success, the taunt is effective, providing a
-**+1 penalty** to the target''s next action. On a **Good** success, the penalty is **+2**; on an **Amazing** success, the penalty is
-**+3**. Success also enrages the target and shifts their attitude toward **Combative** (Neutral to Hostile, for example). After a Critical Failure or a Failure result, a character can make another attempt to taunt someone else. However, only one successful taunt can be directed at a target in a scene.
+Trading insults to rattle or enrage an opponent.
+- **Results:** Success provides a penalty to the target's next action: Ordinary (+1), Good (+2), Amazing (+3).
+### Rank Benefits
+▶ **Rank 3 [Enrage]:** An **Amazing** success shifts the target's attitude one grade toward **Combative**.
+
+▶ **Rank 3 [Backfire]:** A **Critical Failure** grants the target a -2 step bonus to their next action against the taunter.
+- **Restriction:** No effect on **Charmed** or **Fanatic** targets.
 
 ---
 

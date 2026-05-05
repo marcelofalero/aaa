@@ -6,28 +6,89 @@ type = "skill"
 layout = "list"
 +++
 
-This broad skill provides a character with training in the basics of setting explosive charges to demolish a specific target. A skilled character has a working knowledge of handling explosives, using primers and timing devices, and placing charges for maximum effect. Prepared charges come in several forms—satchel bombs, mines, and objects using plastic explosive, to name some typical ones. A prepared charge inflicts a specific type and amount of damage on objects within its explosive radius, as detailed in “Prepared Explosives” on page 180 in Chapter 11: Weapons & Armor. Setting a prepared charge can be a simple activity, requiring only one skill check if a character merely wants to place an explosive in a readily accessible area. A Failure result on this skill check means the device is a dud and won''t explode as planned. (This is a case when the Gamemaster might elect to roll a skill check secretly, to prevent a player from knowing something that his character would not have found out.) A Critical Failure result could mean that the device explodes prematurely, depending on the type of explosive being used. If a character wants to set a charge so that it won''t be easily discovered, a complex skill check (see page 62) is necessary. The complexity of that check (how many successes are needed) is related to how well the character wants the device to be hidden: If he attempts and succeeds at a task of Marginal complexity, the explosive charge is hidden well enough that any opponents'' Awareness checks to spot the device are made at a +1 penalty. That penalty increases for each succeeding level of complexity, up to a +4 penalty at the Amazing level. In addition, completing a complex skill check of Good complexity indicates that the charge has been set in a spot that''s not only well concealed but vulnerable—when the explosive is detonated, it causes damage of one grade better than normal (Ordinary damage becomes Good damage, for example). For a successful complex skill check of Amazing complexity, the damage done by the blast improves by two grades (from Ordinary to Amazing). More information about grades of damage appears on page 174 in Chapter 11: Weapons & Armor and also in the Gamemaster Guide.
+This broad skill provides training in the basics of setting explosive charges to demolish specific targets. It covers the safe handling of materials, primers, timing devices, and strategic placement for maximum structural impact.
+
+### . Structural
+This application targets stationary structures (buildings, bridges, bunkers) or massive vessels (starships, orbital platforms, land-dreadnoughts). This is a two-stage process.
+
+#### Stage A: Installation
+The character identifies load-bearing points or critical bulkheads and secures the charges. This is a **complex skill check**. A **Critical Failure** during this stage means the device explodes immediately, dealing Ordinary damage (normal armor rules apply).
+- **Complexity:** 4 successes for simple structures; 8+ successes for reinforced bunkers or capital ships.
+- **Difficulty:** Ordinary (or as determined by the GM based on environmental hazards).
+
+#### Stage B: Detonation (The Trigger Check)
+Once the installation is complete and the explosives are triggered, the character makes a final **Demolitions--Set Explosives** check to determine the efficacy of the placement.
+- **Critical Failure:** The device is a dud (it fails to explode).
+- **Failure:** The explosion is delayed; check every 5 minutes until a different result is achieved.
+- **Ordinary Success:** The explosion deals **Ordinary damage** to the structure or section.
+- **Good Success:** The explosion deals **Good damage** to the structure or section.
+- **Amazing Success:** The explosion deals **Amazing damage** to the structure or section.
+
+**Synergy:** **Physical Science--Physics** can be used as an auxiliary skill. A success provides a **-1 step bonus** to both installation and detonation checks as the character is better prepared to understand the materials strengths and weaknesses.
+
+### 2. Anti-Vehicular Mines and Traps
+These devices often do focused damage instead of having a blast radius. This is a two-stage process.
+
+#### Stage A: Installation
+The character identifies the optimal placement and fine-tunes the trigger mechanism. This is a **complex skill check**. A **Critical Failure** means the device explodes, dealing Ordinary damage.
+- **Complexity:** 2 successes for mines/simple traps; 4 successes for complex traps.
+- **Difficulty:** Ordinary (or as determined by the GM).
+
+#### Stage B: Detonation (The Trigger Check)
+Once triggered, make a final **Demolitions--Set Explosives** check to determine efficacy.
+- **Critical Failure:** The device is a dud.
+- **Failure:** The device fails to trigger but remains armed.
+- **Ordinary Success:** The explosion deals **Ordinary damage** to the vehicle.
+- **Good Success:** The explosion deals **Good damage** to the vehicle.
+- **Amazing Success:** The explosion deals **Amazing damage** to the vehicle.
+
+### 3. Anti-Personnel Mines and Traps
+These devices are designed to do damage in an area. Once triggered, they deal damage based on the distance from the device center.
+
+#### Installation
+The character identifies the best placement and fine-tunes the trigger. This is a **complex skill check**. A **Critical Failure** means the device explodes, dealing Ordinary damage.
+- **Complexity:** 2 successes for mines/simple traps; 4 successes for complex traps.
+- **Difficulty:** Ordinary.
+
+### Concealing
+The installation process only places the device. To properly hide it, a **Covert Ops--Conceal** check must be made by the installer or an ally as part of the installation process.
 
 ## Disarm
 {{< specialty attr="WIL" untrained="yes" cost="4" >}}
 
-The disarm skill lets a character attempt to render bombs, mines, and other demolition packages inoperative before they explode. A character does not need to make a skill check to disarm his own work or any common explosives. A skill check is required when time is of the essence, if the explosive is of unusual make, or if it has been rigged with security devices or booby traps. Except in the very simplest of cases, a complex skill check (see page 62) is involved.
+The ability to render bombs, mines, and demolition packages inoperative.
+- **Requirement:** Automatic success when disarming your own work or simple, common explosives. A check is required for unusual makes, rigged devices, or under extreme time pressure.
+- **Resolution:** A **complex skill check** with a complexity equal to what was required to set the device. A **Critical Failure** means the device explodes, dealing Ordinary damage.
+### Rank Benefits
+▶ **Rank 3, 9 [Improved Handling]:** The character gains a **-1 step bonus** to all checks with this skill at Rank 3, increasing to **-2 steps** at Rank 9, and **-3 steps** at Level 12.
+
+▶ **Rank 6 [Disaster Avoidance]:** When the character rolls a **Critical Failure** while disarming for the first time during a complex check, the result is treated as a simple **Failure** instead.
 
 ---
 
 ## Scratch-Built Explosives
 {{< specialty attr="WIL" untrained="no" cost="3" >}}
 
-This skill lets a character attempt to build a demolition package from scratch, or tamper with military ordnance such as a mortar shell to make it usable as a demolition charge. The use of the skill assumes that the character has the proper materials and tools on hand; the skill check receives a +2 penalty if the character is forced to use common items (such as things found around a house). Making a scratch-built explosive device takes some time—at least a few minutes and perhaps as long as several hours, depending on the working conditions and the amount of time a character wants to invest in the process. When the maker of a device declares his job to be finished, the Gamemaster will assign a situation die modifier to the upcoming skill check, ranging from a substantial bonus if the character spent a lot of time on the job to a sizable penalty if the job was done in extreme haste. A skill check is then made to determine the degree of success, which is directly related to the potency of the charge. **TABLE P23** lists the three types of scratch-built explosive devices and the amount of damage each one causes. On a Critical Failure, the bomb explodes right at the end of the creation process, injuring the maker. A skill check result of Ordinary, Good, or Amazing also defines the complexity of the explosive for any subsequent disarm checks by other characters. (The character who built a device can always disarm it without needing a skill check.)
-### TABLE P23: SCRATCH-BUILT EXPLOSIVES
-| Skill Check Result | Concussive | Type of Device: Fragmentation | Incendiary | | :--- | :--- | :--- | :--- | | **Crit. Failure** | d4w | Dud | Dud | | **Failure** | Dud | d4+3m | d6+2w | | **Ordinary** | d6+2s | Dud | Dud | | **Good** | d8+2s | d4+2w | d4w | | **Amazing** | d4w | d6+3w | d4+2w | | | | d4+3m | d6+2w |
+**Trained Only.**
+The ability to build demolition packages from scratch or repurposing military ordnance (e.g., turning a mortar shell into a satchel charge).
+
+**Improvised Tools:** Using common household items instead of a proper toolkit imposes a **+2 step penalty**.
+
+**Potency:** Determined by a skill check as per [Table P23: Scratch-Built Explosives].
+- **Critical Failure:** The device explodes during assembly, damaging the maker.
+
+**Synergy [Physical Science—Chemistry]:** A character with Chemistry knowledge can optimize the mixture. A successful auxiliary check provides a bonus to the Scratch-Build check: **Ordinary (-1 step)**, **Good (-2 steps)**, or **Amazing (-3 steps)**.
 
 ---
 
 ## Set explosives
 {{< specialty attr="WIL" untrained="yes" cost="3" >}}
 
-This specialty skill allows a character to improve his ability to set manufactured explosive charges. See the description of the Demolitions broad skill for information on how this skill is employed.
+Advanced proficiency in deploying manufactured charges.
+### Rank Benefits
+▶ **Rank 3, 9, 12 [Improved Handling]:** The character gains a **-1 step bonus** to all checks with this skill at Rank 3, increasing to **-2 steps** at Rank 9, and **-3 steps** at Rank 12.
+
+▶ **Rank 6 [Disaster Avoidance]:** When the character rolls a **Critical Failure** while installing for the first time during a complex check, the result is treated as a simple **Failure** instead.
 
 ---
 

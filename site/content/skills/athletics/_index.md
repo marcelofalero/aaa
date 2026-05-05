@@ -12,8 +12,10 @@ This broad skill provides a character with the abilities of a natural athlete—
 {{< specialty attr="STR" untrained="yes" cost="2" >}}
 
 The ability to scale vertical surfaces and navigate difficult terrain.
-▶ **Combat Climbing:** Movement per phase based on check: Ordinary (1m), Good (2m), Amazing (3m). Critical Failure results in a fall.
-▶ **Challenge Climbing:** Outside of rounds, climbing is resolved as a **complex skill check**.
+
+**Combat Climbing:** Movement per phase based on check: Ordinary (1m), Good (2m), Amazing (3m). Critical Failure results in a fall.
+
+**Challenge Climbing:** Outside of rounds, climbing is resolved as a **complex skill check**.
 
 ---
 
@@ -27,8 +29,8 @@ The ability to leap over obstacles or across gaps.
 - **Vertical:** Ordinary 1m; Good 1.5m; Amazing 2m.
 
 **Vaulting:** Vertical leap enhanced by a pole or object. Adds +1m (object) or +2m (pole) to the jump.
-
-▶ **Increased Distance:** Ranks provide distance bonuses: Running (+1m at Rank 3, 6, 9, 12), Standing (+1m at Rank 4, 7, 10), Vertical (+0.5m at Rank 5, 8, 11).
+### Rank Benefits
+▶ **Rank 3, 4, 5 [Increased Distance]:** Ranks provide distance bonuses: Running (+1m at Rank 3, 6, 9, 12), Standing (+1m at Rank 4, 7, 10), Vertical (+0.5m at Rank 5, 8, 11).
 
 ---
 
@@ -37,10 +39,10 @@ The ability to leap over obstacles or across gaps.
 
 **Trained Only.**
 Proficiency in moving through liquid environments. Without this skill, a character can only tread water and paddle crudely.
+### Rank Benefits
+▶ **Rank 1, 4, 8, 12 [Improved Breathing]:** Situation die bonus to Stamina checks for holding breath: Rank 1 (-1), Rank 4 (-2), Rank 8 (-3), Rank 12 (-4).
 
-▶ **Improved Breathing:** Situation die bonus to Stamina checks for holding breath: Rank 1 (-1), Rank 4 (-2), Rank 8 (-3), Rank 12 (-4).
-
-▶ **Movement Rate:** Swim speed increases by 1m at Ranks 4, 8, and 12.
+▶ **Rank 3 [Movement Rate]:** Swim speed increases by 1m at Ranks 4, 8, and 12.
 
 ---
 
@@ -54,10 +56,10 @@ A character can attempt advanced maneuvers with a base **+2 step penalty**:
 - **Magnus Curve:** Throw around one piece of cover (ignore +1 cover penalty).
 - **Ricochet:** Bounce off a surface to hit a target (ignore LOS requirements if the path is known).
 - **Sub-Orbital Arc:** Throw over large obstacles.
+### Rank Benefits
+▶ **Rank 3, 6, 9, 12 [Trajectory Mastery]:** Ranks in this specialty reduce the penalty for Trajectory Control maneuvers: **Rank 3 (-1)**, **Rank 6 (-2)**, **Rank 9 (-3)**, **Rank 12 (-4)**.
 
-▶ **Trajectory Mastery:** Ranks in this specialty reduce the penalty for Trajectory Control maneuvers: **Rank 3 (-1)**, **Rank 6 (-2)**, **Rank 9 (-3)**, **Rank 12 (-4)**.
-
-▶ **Kinetic Reversal (Rank 12):** Once per round, the character can attempt to catch a thrown projectile (like a grenade or knife) with an **Amazing** Athletics-throw check. If successful, they can immediately throw it back as a free action.
+▶ **Rank 12 [Kinetic Reversal (Rank 12]:** Once per round, the character can attempt to catch a thrown projectile (like a grenade or knife) with an **Amazing** Athletics-throw check. If successful, they can immediately throw it back as a free action.
 
 ---
 

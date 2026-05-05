@@ -40,14 +40,14 @@ Likewise, complexity works the other way around: slowing down an extremely easy 
 ## Bureaucracy
 {{< specialty attr="WIL" untrained="yes" cost="3" >}}
 
-This specialty skill measures a character''s ability to grease (or clog up) the wheels of bureaucracy. Important applications, permits, clearances, reports, or other bureaucratic requests can be processed faster and more efficiently with the use of this skill. Conversely, this skill can be used to make the same bureaucratic processes slower for others.
+This specialty skill measures a character's ability to grease (or clog up) the wheels of bureaucracy. Important applications, permits, clearances, reports, or other bureaucratic requests can be processed faster and more efficiently with the use of this skill. Conversely, this skill can be used to make the same bureaucratic processes slower for others.
 
 ---
 
 ## Management
 {{< specialty attr="WIL" untrained="yes" cost="3" >}}
 
-This skill indicates a character''s ability to manage both personnel and administrative duties. A skilled manager can increase productivity, inspire workers, and supervise the workings of a business or office.
+This skill indicates a character's ability to manage both personnel and administrative duties. A skilled manager can increase productivity, inspire workers, and supervise the workings of a business or office.
 
 ---
 

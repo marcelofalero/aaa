@@ -30,7 +30,8 @@ Assault rifles provide a character with up to three attack options per action ph
 - **Autofire:** A spray of ammunition walked across a wide area. Up to three different targets within 6 meters of each other can be affected.
   - To resolve autofire, the player rolls one control die and three situation dice at once.
   - The results are read off the control die, modified by the individual situation dice: **+1 step** for the first target, **+2 steps** for the second, and **+3 steps** for the third.
-▶ **Rock-n-Roll:** When a character reaches rank 3 in this specialty, he learns to change clips more efficiently. The penalty for changing a clip and firing in the same action is reduced to +1 step.
+### Rank Benefits
+▶ **Rank 3 [Rock-n-Roll]:** When a character reaches rank 3 in this specialty, he learns to change clips more efficiently. The penalty for changing a clip and firing in the same action is reduced to +1 step.
 
 ---
 
@@ -38,7 +39,8 @@ Assault rifles provide a character with up to three attack options per action ph
 {{< specialty attr="DEX" untrained="yes" cost="3" >}}
 
 This specialty skill allows a character to improve his proficiency with modern pistols of all types, including projectile and energy weapons.
-▶ **Quick Draw:** After a character reaches rank 3 in this specialty, he can perform a quick draw with his pistol. This allows him to draw his weapon and fire it in the same phase with only a +1 penalty. As a character reaches rank 4, he can draw and fire in the same phase without any penalty.
+### Rank Benefits
+▶ **Rank 3, 4 [Quick Draw]:** After a character reaches rank 3 in this specialty, he can perform a quick draw with his pistol. This allows him to draw his weapon and fire it in the same phase with only a +1 penalty. As a character reaches rank 4, he can draw and fire in the same phase without any penalty.
 
 ---
 
@@ -46,7 +48,8 @@ This specialty skill allows a character to improve his proficiency with modern p
 {{< specialty attr="DEX" untrained="yes" cost="3" >}}
 
 This specialty skill allows a character to improve his proficiency with modern single-fire rifles, sniper rifles, and hunting rifles.
-▶ **Improved Aim:** When a character reaches rank 3 in this specialty, he becomes able to hit a target with more dependability. This improvement in accuracy translates to a
+### Rank Benefits
+▶ **Rank 3 [Improved Aim]:** When a character reaches rank 3 in this specialty, he becomes able to hit a target with more dependability. This improvement in accuracy translates to a
 **-1 bonus** to the situation die for any single-fire rifle attack the character makes.
 
 ---
@@ -63,7 +66,8 @@ Submachine guns (and assault rifles) provide a character with up to three attack
 - **Autofire:** A spray of ammunition walked across a wide area. Up to three different targets within 6 meters of each other can be affected.
   - To resolve autofire, the player rolls one control die and three situation dice at once.
   - The results are read off the control die, modified by the individual situation dice: **+1 step** for the first target, **+2 steps** for the second, and **+3 steps** for the third.
-▶ **Rock-n-Roll:** When a character reaches rank 3 in this specialty, he learns to change clips more efficiently. The penalty for changing a clip and firing in the same action is reduced to +1 step.
+### Rank Benefits
+▶ **Rank 3 [Rock-n-Roll]:** When a character reaches rank 3 in this specialty, he learns to change clips more efficiently. The penalty for changing a clip and firing in the same action is reduced to +1 step.
 
 ---
 
@@ -71,7 +75,8 @@ Submachine guns (and assault rifles) provide a character with up to three attack
 {{< specialty attr="DEX" untrained="yes" cost="3" >}}
 
 This specialty skill covers all types of modern shotguns, from traditional pump-action and semi-automatic projectile weapons to specialized energy spread-emitters. Shotguns are defined by their wide range of specialized ammunition types (Buckshot, Slugs, Breaching rounds, etc.) or multi-mode energy settings.
-▶ **Tactical Load / Selection:** When a character reaches rank 3 in this specialty, they have mastered the mechanics of their weapon. They can **Select/Switch Ammo types** or reconfigure weapon energy settings as a **Free Action** instead of an auxiliary action. This allows them to instantly adapt their weapon’s profile to the immediate tactical situation (e.g., swapping to a slug for a precision shot or buckshot for hallway clearing) during a combat phase.
+### Rank Benefits
+▶ **Rank 3 [Tactical Load / Selection]:** When a character reaches rank 3 in this specialty, they have mastered the mechanics of their weapon. They can **Select/Switch Ammo types** or reconfigure weapon energy settings as a **Free Action** instead of an auxiliary action. This allows them to instantly adapt their weapon’s profile to the immediate tactical situation (e.g., swapping to a slug for a precision shot or buckshot for hallway clearing) during a combat phase.
 
 ---
 

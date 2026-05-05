@@ -6,48 +6,103 @@ type = "skill"
 layout = "list"
 +++
 
-La habilidad general de **Operaciones Encubiertas** (anteriormente Sigilo y Manipulación) se centra en permanecer sin ser detectado y eludir la seguridad física. Consolida las artes del sigilo CON las habilidades técnicas necesarias para abrir cerraduras y carterear.
-- **Sigilo Unificado:** Fusiona esconderse, moverse sigilosamente y seguir en la sombra en una única especialización de Sigilo.
-- **Elusión Física:** Incluye Abrir Cerraduras y Carterear.
+La habilidad amplia **Operaciones encubiertas** se centra en permanecer sin ser detectado. Consolida las artes del sigilo CON las habilidades prácticas necesarias para camuflarse, ocultar objetos o robar bolsillos.
+
+---
 
 ## Ocultar
 {{< specialty attr="DES" untrained="yes" cost="3" >}}
 
-Esta especialización representa la habilidad de esconder objetos de la vista o de los sensores. Mientras que **Sigilo** se usa para esconderse a uno mismo, **Ocultar** se usa para esconder objetos, como armas en el cuerpo, contrabando en un vehículo o un compartimento secreto en una habitación.
+Esta especialidad representa la capacidad de ocultar objetos de la vista o de los sensores. Mientras que **Stealth** se usa para esconderse, **Ocultar** se usa para ocultar elementos, como armas en la propia persona, contrabando en un vehículo o compartimentos secretos.
+
 ### Resultados
-El grado de éxito en una tirada de Ocultar proporciona una penalización a la tirada de Percepción-percepción o Investigación-búsqueda de un observador para encontrar el objeto oculto:
-- **Ordinario:** +1 de penalización para el observador
-- **Bueno:** +2 de penalización para el observador
-- **Asombroso:** +3 de penalización para el observador
-### Ocultar Armas
-Un arma oculta se lleva en un lugar que normalmente no se registra o que no es fácil de detectar (la parte baja de la espalda, el interior del antebrazo, etc.). El arma oculta debe ser una pistola pequeña o una hoja. La ocultación proporciona una penalización de +2 a todas las búsquedas, excepto a las más intrusivas.
+El grado de éxito en una prueba de Ocultar proporciona una penalización a la prueba de **Conciencia-Percepción** o **Investigar-Buscar** de un observador:
+- **Ordinario:** Penalización +1 al observador
+- **Bueno:** Penalización +2 al observador
+- **Increíble:** Penalización +3 al observador
+
+### Esconder armas
+Un arma oculta se usa donde no es fácil de detectar (parte baja de la espalda, dentro del antebrazo, etc.). Esto se limita a pistolas o cuchillas pequeñas. El ocultamiento proporciona una **penalización de +2** para todas las búsquedas físicas excepto las más intrusivas.
+
+---
 
 ---
 
 ## Disfraz
 {{< specialty attr="CAR" untrained="yes" cost="3" >}}
 
-Disfraz es la habilidad de cambiar tu apariencia para parecerte a otra persona o para mezclarte CON la multitud. Mientras que la habilidad de **Entretenimiento-actuar** se usa para el maquillaje y la actuación profesional, esta especialización cubre aplicaciones más inmediatas y prácticas del disfraz, como cambiarse de ropa, usar una peluca o usar accesorios simples para evitar ser reconocido. El dado de situación de Disfraz de un personaje se modifica por el modificador de Percepción-percepción del observador.
+El disfraz es la capacidad de cambiar tu apariencia para parecerte a otra persona o mezclarte CON una multitud. Esto cubre aplicaciones prácticas e inmediatas como cambiarse de ropa, usar una peluca o utilizar accesorios sencillos. El dado de situación de Disfraz de un personaje es modificado por el modificador **Conciencia-Percepción** del observador.
+### Beneficios de rango
+▶ **Rango 4, 8, 12 [Disfraz mejorado]:** Obtienes una bonificación en todos los intentos de disfrazarte: -1 paso en el rango 4, -2 en el rango 8 y -3 en el rango 12.
+
+---
 
 ---
 
 ## Abrir Cerraduras
 {{< specialty attr="DES" untrained="yes" cost="3" >}}
 
-Esta especialización permite a un personaje abrir cerraduras físicas (puertas, cajas fuertes, vehículos, etc.). Generalmente se emplea CON herramientas que proporcionan una bonificación al dado de situación. La habilidad de abrir cerraduras es inútil contra una cerradura asistida por computadora a menos que tenga un mecanismo físico que el personaje pueda manipular. Casi siempre, el uso de abrir cerraduras requiere una tirada de habilidad compleja.
+Esta habilidad permite a un personaje quitar o colocar objetos sobre una persona sin ser detectado. El dado de situación base está determinado por el modificador de resistencia **Voluntad** del objetivo.
+
+### Modificadores de situación de carterista
+| Condición | Modificador |
+| :--- | :--- |
+| El objeto está en contacto directo CON la piel del objetivo | +3 |
+| El objeto es pesado | +2 |
+| El objeto se guarda en un bolsillo interior | +1 |
+| El objeto es liviano | -1 |
+| El objeto se guarda en un bolsillo o mochila expuesta | -1 |
+| La víctima está distraída | -1 a -3 |
+
+### Resultados
+- **Fallo/Fallo Crítico:** El intento falla y se advierte al carterista.
+- **Ordinario:** El intento tiene éxito.
+- **Bueno / Increíble:** El intento tiene éxito y puede compensar las penalizaciones por intentos repetidos contra el mismo objetivo.
+
+### Beneficios de rango
+⊗ **Rango 3, 6, 9, 12 [Se necesita uno para conocer uno]:** Tu modificador de resistencia de **Voluntad** (específicamente para detectar intentos de carterista) mejora: +1 penalización al enemigo en el rango 3, +2 pasos en el rango 6, +3 pasos en el rango 9 y +4 pasos en el rango 12.
+
+---
 
 ---
 
 ## Carterear
 {{< specialty attr="DES" untrained="yes" cost="3" >}}
 
-Esta especialización permite a un personaje quitar objetos de una persona (o colocar algo) sin que esa persona se dé cuenta. El dado de situación base se determina por el modificador de resistencia de Voluntad del objetivo.
-### Resultados
-- **Fracaso/Fallo Crítico:** El intento falla y el carterista es descubierto.
-- **Ordinario:** El intento tiene éxito.
-- **Bueno/Asombroso:** El intento tiene éxito y puede compensar las penalizaciones por intentos repetidos contra el mismo objetivo.
-### Beneficios de Rango
-- **Rango 3, 6, 9, 12 [Ladrón que roba a ladrón]:** El modificador de resistencia de Voluntad del personaje (solo para detectar un intento de carterear) mejora en +1 de penalización al intento del enemigo en el rango 3, +2 pasos en el rango 6, +3 pasos en el rango 9 y +4 pasos en el rango 12.
+Stealth (o Unified Stealth) fusiona las técnicas de esconderse, escabullirse y seguir. Es el arte de pasar desapercibido mientras está parado o en movimiento.
+### Beneficios de rango
+▶ **Rango 3 [Ataque furtivo]:** Si te mueves CON éxito junto a un oponente sin ser detectado mientras **escapas**, recibes una **bonificación de -2 pasos** para tu próximo ataque cuerpo a cuerpo. Incluso si otros enemigos te detectan, no pueden alertar a tu objetivo a tiempo para evitar el ataque furtivo a menos que tengan medios especiales.
+
+⊗ **Rango 4, 8, 12 [Sigilo mejorado]:** Obtienes una bonificación a todos los intentos de sigilo: -1 paso en el rango 4, -2 en el rango 8 y -3 en el rango 12.
+
+### Ocultar (estacionario)
+La capacidad de pasar desapercibido permaneciendo en silencio y a cubierto o en la oscuridad.
+
+#### Resultados
+- **Fallo crítico:** Haces ruido o llamas la atención de alguna otra manera.
+- **Fallo:** Cualquier persona en el área puede realizar controles de **Conciencia-Percepción** o **Investigar-Buscar** para verte.
+- **Ordinario o mejor:** Los observadores solo reciben un control si están buscando activamente o haciendo guardia. La penalización a su cheque es: Ordinario (+1), Bueno (+2), Sorprendente (+3).
+
+### Furtivo (en movimiento)
+La capacidad de moverse sin ser detectado. Moverse a más de la mitad de la velocidad impone una **penalización+2** a la prueba.
+
+#### Resultados
+- **Fallo Crítico:** Haces ruido o llamas la atención sobre ti mismo.
+- **Fallo:** Cualquier persona en el área puede realizar una prueba de **Conciencia-Percepción** para detectarte.
+- **Ordinario o mejor:** Los observadores pueden intentar una prueba de **Conciencia-Percepción** CON una penalización basada en tu éxito: Ordinario (+1), Bueno (+2), Asombroso (+3).
+
+### Sombra (cola)
+La capacidad de seguir a un objetivo o grupo a través de la multitud. Finges indiferencia y ajustas tu vestimenta sin perder la marca.
+
+#### Resultados
+- **Fallo crítico:** Uno o más objetivos te notan inmediatamente; Tu tapadera está descubierta.
+- **Fallo:** Los objetivos se vuelven sospechosos. Continúe CON el **Protocolo de detección**.
+- **Ordinario o mejor:** Los objetivos pueden intentar pruebas de **Conciencia-Intuición** para sentir que están siendo seguidos. La penalización a su cheque es: Ordinario (+1), Bueno (+2), Sorprendente (+3). Si algún objetivo tiene éxito, continúe CON el **Protocolo de detección**.
+
+#### Protocolo de detección
+Cada miembro que esté en condiciones de verte realiza una prueba de **Conciencia-Percepción** (aplicando penalizaciones por el resultado de la Sombra).
+- **Si te descubren:** Tu tapadera ha sido descubierta.
+- **Si no está manchado:** Puedes intentar una **nueva prueba** para reanudar el seguimiento, pero esta prueba de recuperación incurre en una **penalización de +3 pasos**.
 
 ---
 

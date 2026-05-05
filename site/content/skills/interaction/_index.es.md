@@ -6,49 +6,66 @@ type = "skill"
 layout = "list"
 +++
 
-Las habilidades de interacción son utilizadas por los personajes para influir directamente en los demás. Estas incluyen regatear, encantar, entrevistar, intimidar, seducir y provocar. Los personajes combativos o fanáticos no pueden ser influenciados por Interacción. También se aplican el **modificador de resistencia de Voluntad** del objetivo y otros factores relevantes. | Resultados | Descripción | | :--- | :--- | | **Ordinario** | El éxito indica que el personaje produjo una interacción de calidad. | | **Bueno** | El éxito indica que el personaje produjo una interacción de muy buena calidad. | | **Asombroso** | El éxito indica que el personaje produjo una interacción magistral. |
+Conceptos básicos del contacto interpersonal, utilizados para influir directamente en los demás.
+
+### Habilidad de encuentro
+Usos de interacción [Tabla P25: Efectos de las habilidades de encuentro]({{< relref "core-mechanics/useful-tables#table-p25-encounter-skill-effects" >}}).
+- **Modificador de objetivo:** Modificado por el modificador de resistencia de **Voluntad** del objetivo.
+- **Restricciones:** No se puede influir en personajes **combativos** o **fanáticos**.
+- **Persistencia:** Los cambios de actitud debido a la interacción son duraderos y permanecen hasta que el personaje actúa para cambiarlos.
 
 ## Regatear
 {{< specialty attr="PER" untrained="yes" cost="3" >}}
 
-Regatear representa la capacidad de un personaje para pactar un precio más barato por un objeto que quiere comprar o un precio mejor por uno que está vendiendo. También cubre negociaciones comerciales más formales. Una tirada exitosa mejora la posición del personaje en la mesa de negociación, mientras que un éxito Asombroso le otorga una bonificación de -3 pasos (o a su oponente una penalización de +3) en cualquier tirada de Interacción posterior realizada durante el encuentro.
+La capacidad de negociar acuerdos y términos comerciales.
+- **Modificadores:** Oferta y demanda, y el modificador de resistencia de **Voluntad** del oponente.
 
 ---
 
 ## Encantar
 {{< specialty attr="PER" untrained="yes" cost="3" >}}
 
-Un personaje CON la habilidad de especialidad de encantar tiene talento para ser agradable y para convertir a los demás en sus amigos y aliados. Encantar se utiliza a menudo para modificar la actitud inicial de un público hacia un artista. Una tirada exitosa mejora la actitud del público en un paso (Neutral se vuelve Amistoso, Amistoso se vuelve Fanático).
+Presentación de uno mismo de una manera agradable y amigable para ganar aliados.
+- **Restricción:** Solo se puede usar en objetivos **Neutrales** o **Amigables**.
 
 ---
 
 ## Entrevistar
 {{< specialty attr="PER" untrained="yes" cost="3" >}}
 
-La habilidad de especialidad de entrevistar representa el talento para obtener información de otro personaje de forma no agresiva. Las entrevistas son utilizadas a menudo por reporteros, investigadores y funcionarios que llevan a cabo procedimientos administrativos estándar.
+Obtener información de forma no agresiva.
+- **Restricción:** No se puede usar en objetivos **Hostiles** o **Combativos**.
 
 ---
 
 ## Intimidar
 {{< specialty attr="PER" untrained="yes" cost="3" >}}
 
-Intimidar se utiliza para influir en las acciones de otros mediante la presencia, la amenaza verbal o alguna muestra de autoridad. Un personaje que intimida a su oponente intenta desconcertarlo, lo que suele provocar que este retroceda ante una amenaza inmediata o se vuelva más cooperativo.
+Amenazar a otros mediante la presencia o la autoridad para forzar la cooperación.
+- **Restricción:** No se puede usar CON personajes **fanáticos** o **combativos**.
 
 ---
 
 ## Seducir
 {{< specialty attr="PER" untrained="yes" cost="3" >}}
 
-Seducir es la habilidad que permite a un personaje atraer o cautivar a otro personaje mediante el comportamiento íntimo y la manipulación emocional. La utilizan los personajes que quieren encandilar a alguien, ya sea para obtener información o simplemente para aprovecharse de los sentimientos de ese personaje.
-⊗ **Rango 3, 6, 12 [Modificador de resistencia]:** El modificador de resistencia de Voluntad del personaje mejora (contra seducción/interacción) en estos rangos.
+La capacidad de seducir a otro mediante propuestas emocionales y románticas.
+- **Restricción:** Solo se puede usar en objetivos **Amigables** o mejores.
+### Beneficios de rango
+▶ **Rango 3 [Verificación de favor]:** Cuando se pide un favor, el objetivo realiza una **Verificación de hazaña de voluntad** (penalización de +1 de Encantado, penalización de +2 de Fanático). El éxito cambia la actitud un grado hacia Neutral.
 
 ---
 
 ## Provocar
 {{< specialty attr="PER" untrained="yes" cost="3" >}}
 
-La habilidad de especialidad de provocar representa el talento para intercambiar insultos CON el fin de desconcertar o enfurecer a un oponente. Un personaje que provoca a su oponente intenta forzarle a cometer un error de juicio o a realizar una acción que normalmente no llevaría a cabo.
-▶ **Distracción:** En el rango 4, si una tirada de provocar tiene éxito, el objetivo recibe una penalización de +1 paso en cualquier tirada de habilidad realizada durante el asalto siguiente.
+Intercambiar insultos para inquietar o enfurecer a un oponente.
+- **Resultados:** El éxito proporciona una penalización a la siguiente acción del objetivo: Ordinaria (+1), Buena (+2), Asombrosa (+3).
+### Beneficios de rango
+▶ **Rango 3 [Enfurecer]:** Un éxito **Sorprendente** cambia la actitud del objetivo un grado hacia **Combativo**.
+
+▶ **Rango 3 [contraproducente]:** Un **Fallo crítico** otorga al objetivo una bonificación de -2 pasos a su siguiente acción contra el provocador.
+- **Restricción:** Sin efecto en objetivos **Encantados** o **Fanáticos**.
 
 ---
 

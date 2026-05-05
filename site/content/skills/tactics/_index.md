@@ -18,7 +18,8 @@ This broad skill provides a character with basic training in and an understandin
 {{< specialty attr="WIL" untrained="yes" cost="3" >}}
 
 The specialty skill covers battlefield strategies when the main component of the battle is individual troops.
-⊗ **Increased Effect:** As a character achieves higher ranks in a Tactics specialty skill, he receives a situation die bonus for dealing with opposing forces (infantry, space vessels, or vehicles). The bonus is
+### Rank Benefits
+⊗ **Rank 4, 8, 12 [Increased Effect]:** As a character achieves higher ranks in a Tactics specialty skill, he receives a situation die bonus for dealing with opposing forces (infantry, space vessels, or vehicles). The bonus is
 **-1 step at rank 4**, **-2 steps at rank 8**, and **-3 steps at rank 12**.
 
 ---
@@ -27,7 +28,8 @@ The specialty skill covers battlefield strategies when the main component of the
 {{< specialty attr="WIL" untrained="yes" cost="3" >}}
 
 Battlefield strategies involving combat between spaceships.
-⊗ **Increased Effect:** As a character achieves higher ranks in a Tactics specialty skill, he receives a situation die bonus for dealing with opposing forces. The bonus is **-1 step at rank 4**, **-2 steps at rank 8**, and **-3 steps at rank 12**.
+### Rank Benefits
+⊗ **Rank 4, 8, 12 [Increased Effect]:** As a character achieves higher ranks in a Tactics specialty skill, he receives a situation die bonus for dealing with opposing forces. The bonus is **-1 step at rank 4**, **-2 steps at rank 8**, and **-3 steps at rank 12**.
 
 ---
 
@@ -35,7 +37,8 @@ Battlefield strategies involving combat between spaceships.
 {{< specialty attr="WIL" untrained="yes" cost="3" >}}
 
 Battlefield strategies involving combat where vehicles other than starships (air, land, or water) are the main component.
-⊗ **Increased Effect:** As a character achieves higher ranks in a Tactics specialty skill, he receives a situation die bonus for dealing with opposing forces. The bonus is **-1 step at rank 4**, **-2 steps at rank 8**, and **-3 steps at rank 12**.
+### Rank Benefits
+⊗ **Rank 4, 8, 12 [Increased Effect]:** As a character achieves higher ranks in a Tactics specialty skill, he receives a situation die bonus for dealing with opposing forces. The bonus is **-1 step at rank 4**, **-2 steps at rank 8**, and **-3 steps at rank 12**.
 
 ---
 

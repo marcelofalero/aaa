@@ -6,44 +6,72 @@ type = "skill"
 layout = "list"
 +++
 
-Esta habilidad general representa la competencia de un personaje en las artes escénicas. Los conocimientos técnicos y el entrenamiento son parte de esta habilidad, al igual que la capacidad del personaje para actuar ante un público y provocar una respuesta emocional. Las tiradas de habilidad se ven modificadas por el modificador de resistencia de Voluntad del objetivo (para alterar las emociones) o por el modificador de resistencia de Personalidad (para impresionar).
-### Resultados de Entretenimiento
-Cuanto mayor sea el nivel de éxito, más potente será la actuación.
-- **Fallo Crítico:** Ocurre mala suerte (el micrófono se apaga, el decorado se derrumba, etc.).
+Competencia en las artes escénicas, que abarca la presencia en el escenario, el magnetismo y la capacidad de provocar respuestas emocionales.
+
+### Habilidad de encuentro
+El entretenimiento se utiliza para alterar las emociones o impresionar a una audiencia según la [Tabla P25: Efectos de las habilidades de encuentro] ({{< relref "core-mechanics/useful-tables#table-p25-encounter-skill-effects" >}}).
+- **Modificador de objetivo:** Modificado por el modificador de resistencia de **Voluntad** (para alterar las emociones) o **Personalidad** (para impresionar) del objetivo.
+### Beneficios de rango
+▶ **Rango 3 [Modificadores de objetivos]:** **Entretener (mostrar un buen momento):** -Bono de 1 paso.
+- **Actuar (Hacerse un nombre):** +1 paso de penalización.
+- **Desviar (aturdir, electrocutar o distraer):** +3 pasos de penalización.
+- **Falla crítica:** Desencadena un incidente de mala suerte (p. ej., falla del equipo, colapso del set).
 
 ## Musical instrument
 {{< specialty attr="PER" untrained="no" cost="2" >}}
 
-
+**Solo capacitado.** Dominio de un instrumento específico seleccionado al momento de la compra.
+### Beneficios de rango
+⊗ **Rango 1, 4, 8, 12 [Sinergia de habilidades]:** Las especialidades de entretenimiento se pueden combinar CON otras habilidades para lograr un mayor efecto. El personaje recibe una bonificación de dado de situación para la habilidad admitida:
+- **Rango 1:** -Bono de 1 paso.
+- **Rango 4:** -Bono de 2 pasos.
+- **Rango 8:** -Bonificación de 3 pasos.
+- **Rango 12:** -Bono de 4 pasos.
+*Ejemplos: Actuar + Seducir; Danza + Carterista; Cantar + Burlarse; Instrumento + Inspiración.*
 
 ---
 
 ## Dance
 {{< specialty attr="PER" untrained="yes" cost="3" >}}
 
-The dance skill represents a talent for moving rhythmically to music by following set steps and gestures or by improvisation. It also covers the Técnico aspects of performance dance, such as choreography and the knowledge of various popular and cultural dance techniques. Dance can be used to entertain, tell a story, or impress an audience. The greater the level of success, the more impressive and inspiring the dance performance—an Asombroso result indicates that the dancer is poetry in motion.
-#### Entertainment Skill Rank Benefit
-⊗ **Enhance Another Skill:** Entertainment specialty skills can be combined with certain Otros skills for greater effect. The higher a Personaje''s skill rank in the Entertainment skill, the better his chance of succeeding at using another skill in combination: At rank 1, he receives a
-**-1 bonus** to the check for the Otros skill; at rank 4 the bonus is
-**-2**; at rank 8 the bonus is **-3**; and at rank 12 the bonus is **-4**. Possible combinations of skills to which this benefit could apply include act or dance with Interacción—seduce; dance with **Covert Ops—pickpocket** or Acrobacia; sing with Interacción—taunt; and musical instrument with Liderazgo—Inspirar. If you have Otros ideas for how an Entertainment skill can be used in this way, talk them over with your Director de Juego.
+Interpretación vocal entrenada. Los rangos más altos indican un mayor calibre vocal y calidad de interpretación.
+### Beneficios de rango
+⊗ **Rango 1, 4, 8, 12 [Sinergia de habilidades]:** Las especialidades de entretenimiento se pueden combinar CON otras habilidades para lograr un mayor efecto. El personaje recibe una bonificación de dado de situación para la habilidad admitida:
+- **Rango 1:** -Bono de 1 paso.
+- **Rango 4:** -Bono de 2 pasos.
+- **Rango 8:** -Bonificación de 3 pasos.
+- **Rango 12:** -Bono de 4 pasos.
+*Ejemplos: Actuar + Seducir; Danza + Carterista; Cantar + Burlarse; Instrumento + Inspiración.*
 
 ---
 
 ## Musical instrument
 {{< specialty attr="PER" untrained="yes" cost="2" >}}
 
+El talento para interpretar papeles y personificar.
+### Beneficios de rango
+▶ **Rango 4 [Disfraz (Rango 4):** La capacidad de usar maquillaje y técnicas para cambiar la apariencia. Aplicar un disfraz es una **prueba de habilidad compleja**. El éxito determina la penalización (+1 a +3) a las pruebas de Conciencia de los observadores para ver a través de él.
 
+⊗ **Rango 1, 4, 8, 12 [Sinergia de habilidades]:** Las especialidades de entretenimiento se pueden combinar CON otras habilidades para lograr un mayor efecto. El personaje recibe una bonificación de dado de situación para la habilidad admitida:
+- **Rango 1:** -Bono de 1 paso.
+- **Rango 4:** -Bono de 2 pasos.
+- **Rango 8:** -Bonificación de 3 pasos.
+- **Rango 12:** -Bono de 4 pasos.
+*Ejemplos: Actuar + Seducir; Danza + Carterista; Cantar + Burlarse; Instrumento + Inspiración.*
 
 ---
 
 ## Dance
 {{< specialty attr="PER" untrained="yes" cost="2" >}}
 
-The dance skill represents a talent for moving rhythmically to music by following set steps and gestures or by improvisation. It also covers the Técnico aspects of performance dance, such as choreography and the knowledge of various popular and cultural dance techniques. Dance can be used to entertain, tell a story, or impress an audience. The greater the level of success, the more impressive and inspiring the dance performance—an Asombroso result indicates that the dancer is poetry in motion.
-#### Entertainment Skill Rank Benefit
-⊗ **Enhance Another Skill:** Entertainment specialty skills can be combined with certain Otros skills for greater effect. The higher a Personaje''s skill rank in the Entertainment skill, the better his chance of succeeding at using another skill in combination: At rank 1, he receives a
-**-1 bonus** to the check for the Otros skill; at rank 4 the bonus is
-**-2**; at rank 8 the bonus is **-3**; and at rank 12 the bonus is **-4**. Possible combinations of skills to which this benefit could apply include act or dance with Interacción—seduce; dance with **Covert Ops—pickpocket** or Acrobacia; sing with Interacción—taunt; and musical instrument with Liderazgo—Inspirar. If you have Otros ideas for how an Entertainment skill can be used in this way, talk them over with your Director de Juego.
+Movimiento rítmico y coreografía. Un resultado **Asombroso** indica que el bailarín es "poesía en movimiento".
+### Beneficios de rango
+⊗ **Rango 1, 4, 8, 12 [Sinergia de habilidades]:** Las especialidades de entretenimiento se pueden combinar CON otras habilidades para lograr un mayor efecto. El personaje recibe una bonificación de dado de situación para la habilidad admitida:
+- **Rango 1:** -Bono de 1 paso.
+- **Rango 4:** -Bono de 2 pasos.
+- **Rango 8:** -Bonificación de 3 pasos.
+- **Rango 12:** -Bono de 4 pasos.
+*Ejemplos: Actuar + Seducir; Danza + Carterista; Cantar + Burlarse; Instrumento + Inspiración.*
 
 ---
 

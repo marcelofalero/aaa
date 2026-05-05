@@ -40,14 +40,14 @@ This specialty skill allows a character to function in the underside of the busi
 
 ### Illegal Transactions
 This skill reduces the penalty for attempting illegal transactions.
+### Rank Benefits
+▶ **Rank 1 [Benefit]:** Penalty reduced by -1 step.
 
-⊗ **Rank 1:** Penalty reduced by -1 step.
+▶ **Rank 4 [Benefit]:** Penalty reduction of -2 steps.
 
-⊗ **Rank 4:** Penalty reduction of -2 steps.
+▶ **Rank 7 [Benefit]:** Penalty reduction of -3 steps.
 
-⊗ **Rank 7:** Penalty reduction of -3 steps.
-
-⊗ **Rank 10:** Penalty reduction of -4 steps.
+▶ **Rank 10 [Benefit]:** Penalty reduction of -4 steps.
 
 *Note: This benefit only reduces or eliminates penalties; it never provides a bonus.
 
@@ -60,14 +60,14 @@ This specialty skill allows a character to function in small-scale trade and com
 
 ### Financial Bargaining
 This skill provides a situation die bonus when making deals, haggling, or bargaining in small-business finance.
+### Rank Benefits
+▶ **Rank 1 [Benefit]:** 1 step bonus.
 
-⊗ **Rank 1:** -1 step bonus.
+▶ **Rank 4 [Benefit]:** 2 step bonus.
 
-⊗ **Rank 4:** -2 step bonus.
+▶ **Rank 8 [Benefit]:** 3 step bonus.
 
-⊗ **Rank 8:** -3 step bonus.
-
-⊗ **Rank 12:** -4 step bonus.
+▶ **Rank 12 [Benefit]:** 4 step bonus.
 
 ---
 

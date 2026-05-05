@@ -45,12 +45,8 @@ The broad skill enables a character to ride any animal used for basic ground tra
 {{< specialty attr="WIL" untrained="yes" cost="1" >}}
 
 This specialty skill enables a character to improve this aspect of the Animal Handling broad skill. A character with this skill can attempt racing over dangerous terrain, making jumps or performing other stunts, and engaging in mounted combat.
-
-▶ At rank 3 the character learns to perform special stunts or tricks while mounted. See trick riding bellow.
-
-### Trick Riding
-The character can direct their mount to jump fences, leap chasms, or move backward.
-- **Critical Failure:** The animal trips (damage as an Extremely Short fall for both).
+### Rank Benefits
+▶ **Rank 3 [Critical Failure]:** The animal trips (damage as an Extremely Short fall for both).
 - **Failure:** The animal refuses to perform.
 
 **Horizontal Leaps:**
