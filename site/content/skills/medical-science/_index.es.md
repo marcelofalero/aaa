@@ -1,7 +1,7 @@
 +++
 title = "Ciencias médicas"
-attribute = "VOL"
-category = "Técnica"
+attribute = "WIL"
+category = "Technical"
 type = "skill"
 layout = "list"
 +++
@@ -13,7 +13,7 @@ personaje conoce cierta información médica, o si está
 capaces de investigar una pregunta y descubrir una respuesta, se hacen lo mismo
 forma como las pruebas de habilidad de Conocimiento.
 ---
-Un personaje CON sólo la habilidad amplia de Ciencias Médicas no puede tratar
+Un personaje con sólo la habilidad amplia de Ciencias Médicas no puede tratar
 personajes que han sufrido daños, sin embargo. El *tratamiento*
 Se necesita una habilidad especial para curar el daño por aturdimiento o herida, y
 reducir el daño Mortal de un paciente requiere la especialidad de *cirugía*
@@ -33,7 +33,7 @@ puede ser asistido por esta especialidad. La bonificación es -1 paso en el rang
 ---
 
 ## Conocimiento médico
-{{< specialty attr="VOL" untrained="yes" cost="3" >}}
+{{< specialty attr="WIL" untrained="yes" cost="3" >}}
 
 El conocimiento médico es el estudio de la medicina y representa cómo
 actualizado un personaje está sobre una técnica médica particular o un
@@ -47,7 +47,7 @@ Comprobaciones de habilidades de tratamiento de ciencias: -1 paso en el rango 2;
 ---
 
 ## Psicología
-{{< specialty attr="VOL" untrained="yes" cost="5" >}}
+{{< specialty attr="WIL" untrained="yes" cost="5" >}}
 
 La psicología es el estudio de los procesos mentales y del comportamiento, y la
 Tratamiento de aberraciones y enfermedades mentales.
@@ -60,7 +60,7 @@ puede ser asistido por esta especialidad. La bonificación es -1 paso en el rang
 ---
 
 ## Cirugía
-{{< specialty attr="VOL" untrained="no" cost="5" >}}
+{{< specialty attr="WIL" untrained="no" cost="5" >}}
 
 La habilidad de especialidad de Ciencias Médicas *cirugía* se utiliza para curar.
 causar daños mortales y realizar otros procedimientos médicos invasivos. Cualquiera
@@ -71,7 +71,7 @@ Es extremadamente difícil de realizar en condiciones como las
 encontrado en el típico campo de batalla.
 ### Condiciones quirúrgicas
 Las condiciones para la cirugía se consideran **Críticas (+4 paso
-penalización)** cuando el procedimiento debe realizarse CON mala
+penalización)** cuando el procedimiento debe realizarse con mala
 iluminación, herramientas primitivas (o ninguna herramienta quirúrgica) y ningún
 asistencia capacitada. **Las condiciones marginales (sin modificador)** son
 mejor que Critical, pero aún por debajo de lo necesario para
@@ -93,13 +93,13 @@ daño de la herida.
 ---
 ▶ **Cirugía Cibernética:** Un personaje que haya logrado al menos
 El rango 3 en cirugía puede usar esta habilidad para reparar o curar un organismo.
-CON implantes cibernéticos existentes. En el rango 6, el personaje
+con implantes cibernéticos existentes. En el rango 6, el personaje
 se vuelve capaz de instalar implantes cibernéticos.
 
 ---
 
 ## Tratamiento
-{{< specialty attr="VOL" untrained="no" cost="4" >}}
+{{< specialty attr="WIL" untrained="no" cost="4" >}}
 
 La habilidad de especialidad *tratamiento* se puede utilizar para lograr todos los
 mismas tareas para las que se usa la habilidad *primeros auxilios* (aturdimiento curativo)
@@ -107,17 +107,16 @@ daño, recuperación por nocaut).
 ### Procedimientos de tratamiento
 ▶ **Curar daños en heridas:** Cuando el *tratamiento* se utiliza para curar heridas,
 el personaje debe estar usando un botiquín de primeros auxilios o un trauma
-paquete, y se requiere una prueba de habilidad compleja. La tarea es ordinaria
-CON un botiquín de primeros auxilios, o Marginal si se utiliza un paquete de trauma. si el
-La prueba tiene éxito, se curan 2 heridas CON un botiquín de primeros auxilios y
-Se curan 4 heridas CON una compresa traumatológica.
-▶ **Morir:** Un personaje CON cualquier cantidad de daño Mortal es
-considerado como moribundo. Un personaje CON *tratamiento* y ya sea un
+paquete, y se requiere una prueba de habilidad compleja. La tarea es ordinaria con un botiquín de primeros auxilios, o Marginal si se utiliza un paquete de trauma. si el
+La prueba tiene éxito, se curan 2 heridas con un botiquín de primeros auxilios y
+Se curan 4 heridas con una compresa traumatológica.
+▶ **Morir:** Un personaje con cualquier cantidad de daño Mortal es
+considerado como moribundo. Un personaje con *tratamiento* y ya sea un
 un botiquín de primeros auxilios o un paquete de traumatología pueden estabilizar daños mortales,
 aumentando el tiempo entre controles de resistencia y resistencia de uno por
 hora a uno por día.
 ▶ **Tratamiento de enfermedades:** La especialidad de *tratamiento* se puede utilizar para
-Identificar y tratar enfermedades debilitantes, CON situación de muerte.
+Identificar y tratar enfermedades debilitantes, con situación de muerte.
 modificadores que dependen de la dificultad y la virulencia.
 ---
 ⊗ **Tratamiento mejorado:** A medida que un personaje alcanza una mayor habilidad
@@ -137,11 +136,11 @@ especies alienígenas, lo que permite a un personaje utilizar sus otros servicio
 habilidades en miembros de esa especie. La habilidad debe ser comprada.
 por separado para cada especie exótica que un personaje quiere saber
 acerca de.
-Un personaje CON al menos rango 1 en esta habilidad, así como rango 1
+Un personaje con al menos rango 1 en esta habilidad, así como rango 1
 o superior en Conocimiento (primeros auxilios), Ciencias Médicas (tratamiento y/o
 Ciencia médica: cirugía, puede administrar ayuda a un personaje alienígena.
 o criatura de la especie apropiada. Inicialmente, el paso +3
-Se aplica la penalización asociada CON la curación de personajes alienígenas.
+Se aplica la penalización asociada con la curación de personajes alienígenas.
 ---
 ⊗ **Tratamiento mejorado:** A medida que un personaje alcanza rangos más altos en
 una aplicación específica de xenomedicina, se vuelve más competente

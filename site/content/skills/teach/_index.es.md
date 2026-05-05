@@ -1,6 +1,6 @@
 +++
 title = "Enseñanza"
-attribute = "VOL"
+attribute = "WIL"
 category = "Social"
 type = "skill"
 layout = "list"
@@ -22,12 +22,12 @@ El beneficio de un profesor depende del resultado de la prueba de habilidades de
 ### Límites de tutoría
 - **Uno a la vez:** Un profesor no puede enseñar a más de un estudiante a la vez.
 - **Uno por sesión:** Un estudiante solo puede obtener una nueva habilidad o un rango de mejora durante cualquier sesión de enseñanza (que generalmente ocurre entre aventuras).
-- **Límite de dominio:** Un maestro solo puede enseñar una habilidad especializada hasta **la mitad de su rango actual** en esa habilidad. Por ejemplo, un profesor CON Manejo de animales (entrenamiento de animales) en el rango 4 solo puede enseñarle a otra persona esa habilidad hasta el rango 2.
+- **Límite de dominio:** Un maestro solo puede enseñar una habilidad especializada hasta **la mitad de su rango actual** en esa habilidad. Por ejemplo, un profesor con Manejo de animales (entrenamiento de animales) en el rango 4 solo puede enseñarle a otra persona esa habilidad hasta el rango 2.
 
 ## Campo Específico
-{{< specialty attr="VOL" untrained="yes" cost="3" >}}
+{{< specialty attr="WIL" untrained="yes" cost="3" >}}
 
-Esta habilidad especializada permite a un personaje ampliar su capacidad de enseñanza a grupos profesionales especializados. Por cada compra por separado de esta habilidad especializada, el personaje selecciona un grupo de profesión: **Especialidad de combate**, **Diplomático**, **Agente libre** o **Operación técnica**. Luego, el personaje podrá enseñar todas las habilidades asociadas CON ese grupo de profesión además de las que pertenecen al grupo Abierto. (por ejemplo, un profesor especializado en Combate Spec puede ayudar a otro personaje a aprender o mejorar una habilidad de Combate Spec).
+Esta habilidad especializada permite a un personaje ampliar su capacidad de enseñanza a grupos profesionales especializados. Por cada compra por separado de esta habilidad especializada, el personaje selecciona un grupo de profesión: **Especialidad de combate**, **Diplomático**, **Agente libre** o **Operación técnica**. Luego, el personaje podrá enseñar todas las habilidades asociadas con ese grupo de profesión además de las que pertenecen al grupo Abierto. (por ejemplo, un profesor especializado en Combate Spec puede ayudar a otro personaje a aprender o mejorar una habilidad de Combate Spec).
 ⊗ **Entrenamiento de Mindwalker:** Si se utilizan las reglas opcionales para Psionics, un maestro que también tiene habilidades psiónicas puede enseñar habilidades psiónicas a otro personaje que también tiene habilidades psiónicas.
 ---
 ### Enseñar modificadores de situaciones
@@ -36,7 +36,7 @@ Esta habilidad especializada permite a un personaje ampliar su capacidad de ense
 ---
 
 ## Specific field
-{{< specialty attr="VOL" untrained="yes" cost="2" >}}
+{{< specialty attr="WIL" untrained="yes" cost="2" >}}
 
 
 

@@ -29,5 +29,5 @@ Ropa de negocios de alta calidad, un datapad con protocolos diplomáticos galác
 
 ## Tendencias (Elige 2):
 * **El Mediador:** Intenta resolver una situación hostil mediante la negociación, incluso cuando el combate sea más fácil.
-* **El Arquitecto:** Retrasa la acción para asegurar que cada variable Social o consecuencia sea considerada.
+* **El Arquitecto:** Retrasa la acción para asegurar que cada variable social o consecuencia sea considerada.
 

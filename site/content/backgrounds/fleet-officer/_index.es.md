@@ -29,5 +29,5 @@ Un uniforme naval, un traje espacial personal (traje de vacío) diseñado para e
 
 ## Tendencias (Elige 2):
 * **El Alma de la Nave:** Prioriza la integridad estructural y el mantenimiento a largo plazo de la nave sobre el equipo personal o los objetivos de la misión.
-* **El Purista del Protocolo:** Insiste en seguir los protocolos estándar de comunicación y combate naval incluso cuando opera en la "naturaleza" o con tripulaciones civiles, lo que podría causar fricción Social.
+* **El Purista del Protocolo:** Insiste en seguir los protocolos estándar de comunicación y combate naval incluso cuando opera en la "naturaleza" o con tripulaciones civiles, lo que podría causar fricción social.
 

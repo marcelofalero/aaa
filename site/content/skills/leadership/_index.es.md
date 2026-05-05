@@ -6,7 +6,7 @@ type = "skill"
 layout = "list"
 +++
 
-Esta amplia habilidad proporciona al personaje las habilidades y talentos de un líder. CON entrenamiento de liderazgo, un personaje puede coordinar un grupo para lograr que se desempeñe mejor o trabaje en equipo. Sólo un personaje puede asumir el papel de líder a la vez, y las órdenes en conflicto se anulan entre sí. Un líder, al utilizar una acción para intentar una prueba de habilidad de Liderazgo y luego lograr cierto grado de éxito en la prueba, proporciona una **bonificación -1** a todas las acciones realizadas en el resto de la ronda actual y en toda la ronda siguiente por un cierto número de seguidores.
+Esta amplia habilidad proporciona al personaje las habilidades y talentos de un líder. con entrenamiento de liderazgo, un personaje puede coordinar un grupo para lograr que se desempeñe mejor o trabaje en equipo. Sólo un personaje puede asumir el papel de líder a la vez, y las órdenes en conflicto se anulan entre sí. Un líder, al utilizar una acción para intentar una prueba de habilidad de Liderazgo y luego lograr cierto grado de éxito en la prueba, proporciona una **bonificación -1** a todas las acciones realizadas en el resto de la ronda actual y en toda la ronda siguiente por un cierto número de seguidores.
 ### Modificadores de la situación de liderazgo
 La prueba se modifica por la actitud de los objetivos, más cualquier otro factor determinado por el DJ: | Situación | Modificador | | :--- | :--- | | **Los objetivos están acostumbrados a ser guiados** | -2 pasos | | **Los objetivos reconocen la autoridad del líder** | 0 | | **Los objetivos no reconocen la autoridad del líder** | +2 pasos |
 - **Nota:** La habilidad amplia de liderazgo no se puede utilizar en objetivos que sean **Combativos**.
@@ -30,7 +30,7 @@ Esta habilidad especial representa la capacidad del personaje para liderar a otr
 ## Inspirar
 {{< specialty attr="PER" untrained="no" cost="3" >}}
 
-Esta habilidad especializada representa la capacidad de mandar CON el ejemplo. Esta habilidad puede ser utilizada por oficiales militares, funcionarios electos y agentes del orden que también tienen la especialidad de mando, pero inspirar es más utilizada por aquellos que intentan liderar movimientos de desobediencia civil y otros tipos de actividades no violentas. Una diferencia importante es que **Inspirar se puede usar en objetivos que son hostiles o combativos**, alterando favorablemente la actitud del objetivo hacia el usuario de la habilidad.
+Esta habilidad especializada representa la capacidad de mandar con el ejemplo. Esta habilidad puede ser utilizada por oficiales militares, funcionarios electos y agentes del orden que también tienen la especialidad de mando, pero inspirar es más utilizada por aquellos que intentan liderar movimientos de desobediencia civil y otros tipos de actividades no violentas. Una diferencia importante es que **Inspirar se puede usar en objetivos que son hostiles o combativos**, alterando favorablemente la actitud del objetivo hacia el usuario de la habilidad.
 ⊗ **Efecto aumentado:** A medida que un personaje alcanza rangos más altos en esta especialidad, la bonificación a sus pruebas de habilidades de Liderazgo mejora a **-1 en el rango 4**, **-2 en el rango 8** y **-3 en el rango 12**. (Nota: este bono no es acumulable).
 
 ---

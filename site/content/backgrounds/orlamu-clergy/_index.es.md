@@ -25,5 +25,5 @@ Fuiste criado en los serenos templos de los Fraal, estudiando la conexión entre
 Túnicas sencillas de clero, un símbolo sagrado o foco meditativo.
 
 ## Capacidad Especial:
-**Foco Psíquico:** Recibe un bono de -1 paso en todos los chequeos de [Voluntad] ({{< relref "/skills/resolve/" >}}) al resistir el estrés Mental no psiónico.
+**Foco Psíquico:** Recibe un bono de -1 paso en todos los chequeos de [Voluntad] ({{< relref "/skills/resolve/" >}}) al resistir el estrés mental no psiónico.
 

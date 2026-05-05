@@ -1,141 +1,133 @@
 {
-    "config": [
-        {
-            "name": "Default",
-            "columns": {
-                "en": [
-                    {
-                        "name": "Armor",
-                        "key": "name"
-                    },
-                    {
-                        "name": "Mass",
-                        "key": "mass"
-                    },
-                    {
-                        "name": "Pen.",
-                        "key": "ap"
-                    },
-                    {
-                        "name": "LI/HI/En",
-                        "key": "lhe"
-                    },
-                    {
-                        "name": "Type",
-                        "key": "type"
-                    },
-                    {
-                        "name": "Hide",
-                        "key": "hide"
-                    },
-                    {
-                        "name": "Avail.",
-                        "key": "avail"
-                    },
-                    {
-                        "name": "Cost ($)",
-                        "key": "cost"
-                    },
-                    {
-                        "name": "Description",
-                        "key": "description",
-                        "hidden": true
-                    }
-                ],
-                "es": [
-                    {
-                        "name": "Armadura",
-                        "key": "name"
-                    },
-                    {
-                        "name": "Masa",
-                        "key": "mass"
-                    },
-                    {
-                        "name": "Pena.",
-                        "key": "ap"
-                    },
-                    {
-                        "name": "LI/HI/En",
-                        "key": "lhe"
-                    },
-                    {
-                        "name": "Tipo",
-                        "key": "type"
-                    },
-                    {
-                        "name": "Ocult.",
-                        "key": "hide"
-                    },
-                    {
-                        "name": "Disp.",
-                        "key": "avail"
-                    },
-                    {
-                        "name": "Coste ($)",
-                        "key": "cost"
-                    },
-                    {
-                        "name": "Descripción",
-                        "key": "description",
-                        "hidden": true
-                    }
-                ]
-            },
-            "id": "default"
+    "config": {
+        "name": "Default",
+        "columns": {
+            "en": [
+                {
+                    "name": "Armor",
+                    "key": "name"
+                },
+                {
+                    "name": "Mass",
+                    "key": "mass"
+                },
+                {
+                    "name": "Pen.",
+                    "key": "ap"
+                },
+                {
+                    "name": "LI/HI/En",
+                    "key": "lhe"
+                },
+                {
+                    "name": "Type",
+                    "key": "type"
+                },
+                {
+                    "name": "Hide",
+                    "key": "hide"
+                },
+                {
+                    "name": "Avail.",
+                    "key": "avail"
+                },
+                {
+                    "name": "Cost ($)",
+                    "key": "cost"
+                },
+                {
+                    "name": "Description",
+                    "key": "description",
+                    "hidden": true
+                }
+            ],
+            "es": [
+                {
+                    "name": "Armadura",
+                    "key": "name"
+                },
+                {
+                    "name": "Masa",
+                    "key": "mass"
+                },
+                {
+                    "name": "Pena.",
+                    "key": "ap"
+                },
+                {
+                    "name": "LI/HI/En",
+                    "key": "lhe"
+                },
+                {
+                    "name": "Tipo",
+                    "key": "type"
+                },
+                {
+                    "name": "Ocult.",
+                    "key": "hide"
+                },
+                {
+                    "name": "Disp.",
+                    "key": "avail"
+                },
+                {
+                    "name": "Coste ($)",
+                    "key": "cost"
+                },
+                {
+                    "name": "Descripción",
+                    "key": "description",
+                    "hidden": true
+                }
+            ]
         }
-    ],
+    },
     "items": [
         {
-            "name": "PL 7 Survival Gear",
+            "id": "pl-7-survival-gear",
+            "name": "Pl 7 Survival Gear",
             "items": [
                 {
-                    "name": "TerrainMaster 5§ Portable Cabin",
-                    "pl": "7",
-                    "mass": "30 kg",
-                    "cost": "117580",
-                    "avail": "Común",
-                    "id": "terrainmaster-5-portable-cabin",
-                    "description": "The TerrainMaster stows in a convenient backpack frame. While it is a serious load for one hiker, the stowage frame includes a built-in mass neutralizer that reduces its mass to 5 kilograms when activated. The neutralizer has an endurance of 20 hours at this setting or 50 hours if set to reduce to 15 kg."
-                },
-                {
-                    "name": "Gliese 300 habitat dome",
-                    "pl": "7",
-                    "mass": "50 kg",
-                    "cost": "1750",
-                    "avail": "Común",
-                    "id": "gliese-300-habitat-dome",
-                    "description": "The Gliese 300 habitat dome is made of microengineered numaplas—a tough, heavy plastic fabric chambered with self-inflating pneumatic bladders. A single standard COg cartridge (two are included) can deploy the dome in moments. When inflated, the dome is 2 meters tall and 5 meters in diameter."
-                },
-                {
-                    "name": "ARMADILLO MPT Two-MAN TENT",
                     "pl": "7",
                     "mass": "1 kg",
                     "cost": "135",
-                    "avail": "Común",
+                    "avail": "Com",
                     "id": "armadillo-mpt-two-man-tent",
-                    "description": "The ARMADILLO MPT Two-MAN TENT is a lightweight, easy to use tent that offers comfort and durability. It provides support for two people with a single numaplas support matrix, which inflates with a handy foot-pedal providing it with a structure lighter and stronger than aluminum. The tent weighs 1 kg and costs $135. It's available in any location."
+                    "name": "Armadillo Mpt Two Man Tent"
                 },
                 {
-                    "name": "Unner 60 CLIMATE SuIT",
+                    "pl": "7",
+                    "mass": "5 kg",
+                    "cost": "2550",
+                    "avail": "Com",
+                    "id": "explorer-d9-armored-e-suit",
+                    "name": "Explorer D9 Armored E Suit"
+                },
+                {
+                    "pl": "7",
+                    "mass": "50 kg",
+                    "cost": "1750",
+                    "avail": "Com",
+                    "id": "gliese-300-habitat-dome",
+                    "name": "Gliese 300 Habitat Dome"
+                },
+                {
+                    "pl": "7",
+                    "mass": "30 kg",
+                    "cost": "117580",
+                    "avail": "Com",
+                    "id": "terrainmaster-5-portable-cabin",
+                    "name": "Terrainmaster 5 Portable Cabin"
+                },
+                {
                     "pl": "7",
                     "mass": "1 kg",
                     "cost": "825",
                     "avail": "Common",
                     "id": "unner-60-climate-suit",
-                    "description": "The Unner 60 Climate Suit is a versatile, lightweight and comfortable suit designed to keep you safe and cool in non-vacuum extraterrestrial environments. Its heating/cooling elements allow for long-endurance work and travel in environments with toxic, thin, dense, or mildly corrosive atmospheres."
-                },
-                {
-                    "name": "Explorer D9 Armored E-Suit",
-                    "pl": "7",
-                    "mass": "5 kg",
-                    "cost": "2550",
-                    "avail": "Común",
-                    "id": "explorer-d9-armored-e-suit",
-                    "description": "The Explorer's armored E-Suit is lined with a self-sealing, puncture-resistant inner layer. It provides protection against environmental hazards like vacuum, gravity, radiation, and atmospheric pressure changes. The suit loses its integrity if the wearer suffers 4 points or more of primary wound or mortal damage."
+                    "name": "Unner 60 Climate Suit"
                 }
-            ],
-            "id": "pl-7-survival-gear"
+            ]
         }
     ]
 }

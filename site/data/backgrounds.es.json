@@ -31,7 +31,7 @@
                         "flaw": "[Código de Honor] ({{< relref \"/perks_flaws/#code-of-honor\" >}})",
                         "equipment": "Un uniforme de gala impecable, un arma de fuego de oficial estándar, un proyector de holomapa táctico y una credencial de autorización de bajo nivel.",
                         "special_ability": "**Evaluación Táctica:** Tienes una bonificación de -1 paso a las tiradas de [Conciencia-Percepción] ({{< relref \"/skills/awareness/#perception\" >}}) o [Tácticas-Tácticas de Infantería] ({{< relref \"/skills/tactics/#infantry-tactics\" >}}) realizadas específicamente para evaluar la formación de combate de un oponente, sus debilidades defensivas o la calidad de su equipo antes de que comience un enfrentamiento.",
-                        "tendencies": "**El Oficial al Mando:** Afirma tu rango o autoridad para tomar el control de una situación caótica, incluso cuando hacerlo te convierte en el objetivo principal de enemigos o del escrutinio Social.<br>**El Estratega:** Se niega a desviarse de un plan táctico sofisticado o \"correcto\" incluso cuando una solución más simple y \"ruda\" está disponible, priorizando la doctrina que le enseñaron."
+                        "tendencies": "**El Oficial al Mando:** Afirma tu rango o autoridad para tomar el control de una situación caótica, incluso cuando hacerlo te convierte en el objetivo principal de enemigos o del escrutinio social.<br>**El Estratega:** Se niega a desviarse de un plan táctico sofisticado o \"correcto\" incluso cuando una solución más simple y \"ruda\" está disponible, priorizando la doctrina que le enseñaron."
                     },
                     {
                         "name": "Graduado de la Escuela de Combate Austin",
@@ -135,7 +135,7 @@
                         "flaw": "[Enemigo Poderoso] ({{< relref \"/perks_flaws/#powerful-enemy\" >}}) (Rival Político)",
                         "equipment": "Ropa de negocios de alta calidad, un datapad con protocolos diplomáticos galácticos, un sello oficial de tu organización y un pequeño estuche de regalos culturales para \"romper el hielo\".",
                         "special_ability": "**Inmunidad Diplomática:** Bono de -1 paso en tiradas de Interacción en entornos formales o diplomáticos.",
-                        "tendencies": "**El Mediador:** Intenta resolver una situación hostil mediante la negociación, incluso cuando el combate sea más fácil.<br>**El Arquitecto:** Retrasa la acción para asegurar que cada variable Social o consecuencia sea considerada."
+                        "tendencies": "**El Mediador:** Intenta resolver una situación hostil mediante la negociación, incluso cuando el combate sea más fácil.<br>**El Arquitecto:** Retrasa la acción para asegurar que cada variable social o consecuencia sea considerada."
                     },
                     {
                         "name": "La Cara",
@@ -148,7 +148,7 @@
                         "flaw": "[Obsesionado] ({{< relref \"/perks_flaws/#obsessed\" >}}) (Con su Imagen)",
                         "equipment": "Un vestuario extravagante adecuado para eventos de alto nivel, un kit de disfraz cosmético y un arma de fuego llamativa pero de bajo calibre.",
                         "special_ability": "**El Rebuscador:** Recibes una bonificación de -1 paso a las tiradas de [Interacción- Negociar] ({{< relref \"/skills/interaction/#bargain\" >}}) o [Pillería-Conocimiento Callejero] ({{< relref \"/skills/street-smart/#street-knowledge\" >}}) al intentar adquirir equipo específico o artículos restringidos por medios no monetarios (engaños, favores o \"préstamos\").",
-                        "tendencies": "**El Buscador de Atención:** Intencionalmente llama la atención sobre sí mismo en un entorno Social para crear una distracción, incluso cuando pasar desapercibido es más seguro.<br>**El Estafador:** Intenta \"estafar\" o salir de un problema o entrar en un área restringida usando su atractivo personal, incluso cuando existe un método más directo (pero menos elegante)."
+                        "tendencies": "**El Buscador de Atención:** Intencionalmente llama la atención sobre sí mismo en un entorno social para crear una distracción, incluso cuando pasar desapercibido es más seguro.<br>**El Estafador:** Intenta \"estafar\" o salir de un problema o entrar en un área restringida usando su atractivo personal, incluso cuando existe un método más directo (pero menos elegante)."
                     },
                     {
                         "name": "El Médico de Campo",
@@ -187,7 +187,7 @@
                         "flaw": "[Endeudado] ({{< relref \"/perks_flaws/#debt-ridden\" >}})",
                         "equipment": "Un comunicador de múltiples frecuencias, un pequeño bloc de notas digital encriptado con una lista de contactos y una pequeña suma de moneda de crédito física (50 créditos).",
                         "special_ability": "**Tengo un Tipo para Eso:** Bono de -1 paso al intentar localizar equipo raro o información restringida en un puerto espacial o centro urbano.",
-                        "tendencies": ""
+                        "tendencies": "**The Negotiator:** Solve a conflict by brokering a deal that moves the plot forward.<br>**The Asset Manager:** Risk an objective to preserve a useful contact or piece of equipment."
                     },
                     {
                         "name": "El Oficial de Flota",
@@ -200,7 +200,7 @@
                         "flaw": "[Enemigo Poderoso] ({{< relref \"/perks_flaws/#powerful-enemy\" >}}) (Comandante Rival)",
                         "equipment": "Un uniforme naval, un traje espacial personal (traje de vacío) diseñado para emergencias en gravedad cero y un arma de fuego de oficial.",
                         "special_ability": "**Intuición de Puente:** Bono de -1 paso en Operación de Sistemas mientras estás en el puente de una nave estelar.",
-                        "tendencies": "**El Alma de la Nave:** Prioriza la integridad estructural y el mantenimiento a largo plazo de la nave sobre el equipo personal o los objetivos de la misión.<br>**El Purista del Protocolo:** Insiste en seguir los protocolos estándar de comunicación y combate naval incluso cuando opera en la \"naturaleza\" o con tripulaciones civiles, lo que podría causar fricción Social."
+                        "tendencies": "**El Alma de la Nave:** Prioriza la integridad estructural y el mantenimiento a largo plazo de la nave sobre el equipo personal o los objetivos de la misión.<br>**El Purista del Protocolo:** Insiste en seguir los protocolos estándar de comunicación y combate naval incluso cuando opera en la \"naturaleza\" o con tripulaciones civiles, lo que podría causar fricción social."
                     },
                     {
                         "name": "El Capitán Freelance",
@@ -230,7 +230,7 @@
                     },
                     {
                         "name": "El Estafador",
-                        "summary": "Maestro del engaño y la ingeniería Social, prosperando gracias a la codicia ajena.",
+                        "summary": "Maestro del engaño y la ingeniería social, prosperando gracias a la codicia ajena.",
                         "favored_broad_skill": "",
                         "url": "/es/backgrounds/grifter/",
                         "skill_url": "/es/backgrounds/grifter/",
@@ -238,7 +238,7 @@
                         "favored_perks": "[Buen Aspecto] ({{< relref \"/perks_flaws/#great-looks\" >}})",
                         "flaw": "[Enemigo Poderoso] ({{< relref \"/perks_flaws/#powerful-enemy\" >}})",
                         "equipment": "Ropa de diseño, IDs falsas, kit de fixer.",
-                        "special_ability": "**El Largo Engaño:** Bono de -1 paso a manipulación Social de más de 24 horas.",
+                        "special_ability": "**El Largo Engaño:** Bono de -1 paso a manipulación social de más de 24 horas.",
                         "tendencies": ""
                     },
                     {
@@ -252,7 +252,7 @@
                         "flaw": "[Obsesionado] ({{< relref \"/perks_flaws/#obsessed\" >}}) (Con la Eficiencia)",
                         "equipment": "Un mazo cibernético personalizado, una suscripción de por vida a un servicio de proxy de datos y un par de gafas de realidad aumentada para visualización de red.",
                         "special_ability": "**Mente Maestra de la Red:** Bono de -1 paso en Computación al intentar saltarse medidas de seguridad digitales.",
-                        "tendencies": ""
+                        "tendencies": "**The Digital Ghost:** Prioritize erasing your digital footprint or stealing secondary data over the Físico safety or immediate tactical needs of the party.<br>**The Curious Intruder:** Cannot resist poking into a secure system or locked file even when it has nothing to do with the current mission and risks triggering alarms."
                     },
                     {
                         "name": "El Innovador",
@@ -302,7 +302,7 @@
                         "favored_specialty_skills": "[Armas a Distancia Modernas-SMG] ({{< relref \"/skills/modern-ranged-weapons/#smg\" >}}) <br> [Resistencia-Aguante] ({{< relref \"/skills/stamina/#endurance\" >}}) <br> [Táctica- Táctica de Infantería] ({{< relref \"/skills/tactics/#infantry-tactics\" >}}) <br> [Atletismo-Correr] ({{< relref \"/skills/athletics/#run\" >}})",
                         "favored_perks": "[Reflejos] ({{< relref \"/perks_flaws/#reflexes\" >}})",
                         "flaw": "[Código de Honor] ({{< relref \"/perks_flaws/#code-of-honor\" >}})",
-                        "equipment": "Subfusil, ropa de combate, enlace de comunicaciones.",
+                        "equipment": "SMG, ropa de combate, enlace de comunicaciones.",
                         "special_ability": "**Especialista en Misiones:** Bono de -1 paso en táctica o combate para objetivos planificados.",
                         "tendencies": ""
                     },
@@ -316,7 +316,7 @@
                         "favored_perks": "[Fe] ({{< relref \"/perks_flaws/#faith\" >}}) <br> [Conciencia Psiónica] ({{< relref \"/perks_flaws/#psionic-awareness\" >}})",
                         "flaw": "[Código de Honor] ({{< relref \"/perks_flaws/#code-of-honor\" >}})",
                         "equipment": "Túnicas sencillas de clero, un símbolo sagrado o foco meditativo.",
-                        "special_ability": "**Foco Psíquico:** Recibe un bono de -1 paso en todos los chequeos de [Voluntad] ({{< relref \"/skills/resolve/\" >}}) al resistir el estrés Mental no psiónico.",
+                        "special_ability": "**Foco Psíquico:** Recibe un bono de -1 paso en todos los chequeos de [Voluntad] ({{< relref \"/skills/resolve/\" >}}) al resistir el estrés mental no psiónico.",
                         "tendencies": ""
                     },
                     {
@@ -499,7 +499,7 @@
                         "flaw": "[Obsesionado] ({{< relref \"/perks_flaws/#obsessed\" >}}) (Con descubrir la verdad absoluta de una situación, independientemente del peligro que represente para ti o tus aliados).",
                         "equipment": "Un equipo de micrograbación de alta gama, un pase de prensa oficial (o una falsificación muy precisa), un comunicador desechable y un depurador de datos portátil.",
                         "special_ability": "**Extraoficialmente:** Recibes una bonificación de -1 paso a las tiradas de [Interacción-Entrevistar] ({{< relref \"/skills/interaction/#interview\" >}}) o [Pillería-Conocimiento Callejero] ({{< relref \"/skills/street-smart/#street-knowledge\" >}}) al intentar sonsacar rumores, información clasificada o declaraciones no oficiales de una fuente reacia.",
-                        "tendencies": "**La Exposición:** Prioriza documentar un crimen, una conspiración o un evento antes que detenerlo, poniéndote en peligro táctico para asegurar que el metraje o la historia sobrevivan.<br>**La Pregunta Difícil:** Interroga o provoca agresivamente a un individuo poderoso en un entorno Social, destruyendo el progreso diplomático para evaluar su reacción."
+                        "tendencies": "**La Exposición:** Prioriza documentar un crimen, una conspiración o un evento antes que detenerlo, poniéndote en peligro táctico para asegurar que el metraje o la historia sobrevivan.<br>**La Pregunta Difícil:** Interroga o provoca agresivamente a un individuo poderoso en un entorno social, destruyendo el progreso diplomático para evaluar su reacción."
                     }
                 ]
             }

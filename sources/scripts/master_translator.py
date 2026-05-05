@@ -34,13 +34,20 @@ def load_mapping():
     return mapping
 
 def apply_mapping(text, mapping):
-    if not text: return ''
-    # Sort by length descending to avoid partial matches
-    sorted_terms = sorted(mapping.keys(), key=len, reverse=True)
-    for en in sorted_terms:
-        es = mapping[en]
-        pattern = re.compile(r'\b' + re.escape(en) + r'\b', re.IGNORECASE)
-        text = pattern.sub(es, text)
+    if not text or not isinstance(text, str): return text
+    
+    # Sort terms by length descending to avoid partial matches
+    sorted_en_terms = sorted(mapping.keys(), key=len, reverse=True)
+    
+    # We use a similar logic to manage_site_data.py to avoid clobbering short words
+    for en in sorted_en_terms:
+        is_short = len(en) <= 3
+        flags = 0 if is_short else re.IGNORECASE
+        
+        # Word boundary check
+        pattern = f"\\b{re.escape(en)}\\b"
+        text = re.sub(pattern, mapping[en], text, flags=flags)
+        
     return text
 
 def translate_text(text, translator):
@@ -94,13 +101,23 @@ def process_node(node, translator, mapping, processed_count):
                 if 'es' in loc:
                     es_loc = loc['es']
             
+            # If Spanish block is missing but English exists, create it
+            if not es_loc and (en_desc or en_name):
+                es_loc = {}
+                node['localized'].append({'es': es_loc})
+            
             if en_desc and es_loc:
-                print(f"Translating: {en_name}...")
-                translated = translate_text(en_desc, translator)
-                final_text = apply_mapping(translated, mapping)
-                final_text = normalize_formatting(final_text)
-                es_loc['description'] = final_text
+                # Only translate if Spanish description is missing or much shorter (likely placeholder)
+                current_es_desc = es_loc.get('description', '')
+                if not current_es_desc or len(current_es_desc) < len(en_desc) * 0.2:
+                    print(f"Translating description: {en_name or 'unnamed'}...")
+                    translated = translate_text(en_desc, translator)
+                    final_text = apply_mapping(translated, mapping)
+                    final_text = normalize_formatting(final_text)
+                    es_loc['description'] = final_text
+                
                 if en_name and ('name' not in es_loc or not es_loc['name']):
+                    print(f"Translating name: {en_name}...")
                     es_loc['name'] = translator.translate(en_name)
                 processed_count[0] += 1
         
