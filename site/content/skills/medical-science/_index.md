@@ -33,7 +33,7 @@ can be assisted by this specialty. The bonus is -1 step at rank 3,
 ---
 
 ## Medical Knowledge
-{{< specialty attr="INT" untrained="yes" cost="3" >}}
+{{< specialty attr="WIL" untrained="yes" cost="3" >}}
 
 Medical knowledge is the study of medicine and represents how
 up-to-date a character is on a particular medical technique or a
@@ -47,7 +47,7 @@ Science—treatment skill checks: -1 step at rank 2; -2 at rank 5;
 ---
 
 ## Psychology
-{{< specialty attr="INT" untrained="yes" cost="5" >}}
+{{< specialty attr="WIL" untrained="yes" cost="5" >}}
 
 Psychology is the study of mental processes and behavior, and the
 treatment of mental aberrations and disease.
@@ -60,7 +60,7 @@ can be assisted by this specialty. The bonus is -1 step at rank 3,
 ---
 
 ## Surgery
-{{< specialty attr="INT" untrained="no" cost="5" >}}
+{{< specialty attr="WIL" untrained="no" cost="5" >}}
 
 The Medical Science specialty skill *surgery* is used to heal
 mortal damage and perform other invasive medical procedures. Any
@@ -99,7 +99,7 @@ becomes able to install cybernetic implants.
 ---
 
 ## Treatment
-{{< specialty attr="INT" untrained="no" cost="4" >}}
+{{< specialty attr="WIL" untrained="no" cost="4" >}}
 
 The *treatment* specialty skill can be used to accomplish all the
 same tasks that the *first aid* skill is used for (healing stun

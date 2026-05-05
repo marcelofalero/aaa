@@ -6,20 +6,83 @@ type = "skill"
 layout = "list"
 +++
 
-Esta habilidad general proporciona a un personaje la habilidad básica para entrenar animales para realizar una variedad de tareas, incluyendo trabajo, aceptar jinetes, rastrear y atacar. También se usa para determinar si un personaje puede hacer que un animal entrenado realice una tarea, para montar un animal, o para calmar, capturar o manejar de otra manera un animal salvaje o un animal doméstico desconocido. Tenga en cuenta que los métodos de entrenamiento y los comandos utilizados CON diferentes especies de animales pueden variar ampliamente. La compra de la habilidad general le da derecho a un personaje a seleccionar un tipo de animal que puede entrenar, sujeto a la aprobación del Director de Juego. Por ejemplo, puede ser posible que un personaje seleccione "caballo", o el Director de Juego puede dictar que se necesitan aplicaciones separadas de la habilidad para entrenar caballos de cuarto de milla y caballos de tiro. En tal caso, el personaje necesitaría tener la especialización de entrenamiento de animales para poder entrenar y manejar más de un tipo de caballo. Cualquier uso de la habilidad general de Manejo de Animales para entrenar a una criatura requiere una tirada de habilidad compleja. Dependiendo del tipo de animal CON el que se trabaje, se aplica un modificador a cada segmento de la tirada de habilidad compleja, y ciertos tipos de animales tardan más en entrenarse (se necesitan más éxitos) que otros tipos. Para tener la oportunidad de entrenar CON éxito a un animal, un personaje debe pasar al menos 4 horas al día trabajando CON la criatura. Al final de cada semana de trabajo continuo, una tirada de habilidad indica cuántos éxitos se lograron hacia el objetivo durante esa semana. Si el programa de entrenamiento se interrumpe por uno o más días sin trabajo, se pierden los días de trabajo desde la última tirada de habilidad. A discreción del Director de Juego, una interrupción de una semana o más podría significar que el entrenamiento de ese animal falla automáticamente y se pierden todos los éxitos que se habían acumulado. Si la tirada de habilidad compleja termina en un Fallo Crítico, el animal se vuelve loco y ataca a su entrenador. Si la tirada se aborta debido a tres resultados de Fracaso, el animal simplemente se niega a ser entrenado (pero un personaje diferente podría tener mejores resultados). Después de que un animal ha sido entrenado, se aplican otros modificadores de situación (enumerados en la sección inferior de la barra lateral) a cualquier intento de que el animal realice una determinada tarea. "Animal desconocido" se refiere a una criatura que ha sido entrenada por alguien que no es el personaje que intenta hacer que actúe. Este modificador es acumulativo CON los enumerados en "Animal entrenado", de modo que intentar que un animal entrenado desconocido realice una tarea [Buena] conlleva una penalización de +3. Alguien CON la habilidad de Manejo de Animales puede lograr que un animal salvaje o un animal doméstico no entrenado haga algo, pero en ningún caso dicho animal realizará una tarea de dificultad mayor que [Ordinaria]. Las tareas [Ordinarias] incluyen actividades en respuesta a comandos simples de una palabra como "Atacar", "Ven", "Siéntate", "Quieto", "Trae", "Habla" y "Silencio". Una tarea [Buena] podría ser una combinación de dos tareas [Ordinarias] (en sucesión o simultáneamente), o podría ser algo más difícil, como un perro empujando una palanca CON su pata cuando se le ordena hacerlo. Una tarea Asombrosa es solo eso: algo que muy pocos animales pueden o harán bajo comando, como correr hacia un edificio en llamas para rescatar a un niño. Por supuesto, el Director de Juego tiene la última palabra sobre si una tarea o truco es Ordinario, Bueno o Asombroso. La habilidad general también permite a un personaje montar cualquier animal que pueda usarse para el transporte terrestre básico, lo que generalmente significa caballos, mulas y otros grandes cuadrúpedos. Cuando se monta un animal, la criatura se mueve en cada fase. Durante una fase en la que el personaje tiene una acción, puede usar esta habilidad para intentar maniobrar al animal. Consulte la página 198 del Capítulo 12: Vehículos para obtener información sobre los tipos de maniobras (Rutinaria, Moderada y Extrema) que un jinete puede intentar. (Aunque normalmente no se piensa en un animal como un vehículo, las mismas reglas generales se aplican a los jinetes de animales y a los conductores de vehículos).
+Esta amplia habilidad proporciona al personaje la capacidad básica de entrenar animales para realizar una variedad de tareas, que incluyen trabajar, aceptar jinetes, rastrear y atacar. También se utiliza para determinar si un personaje puede conseguir que un animal entrenado realice una tarea, monte un animal o calme, capture o maneje de otro modo a un animal salvaje o un animal doméstico desconocido. Tenga en cuenta que los métodos de entrenamiento y las órdenes utilizadas CON diferentes especies animales pueden variar ampliamente.
+
+La adquisición de la habilidad amplia da derecho al personaje a seleccionar un tipo de animal que pueda entrenar, sujeto a la aprobación del Director de Juego. (por ejemplo, "caballo" o razas más específicas si es necesario). Para manejar más de un tipo de animal, el personaje debe poseer la habilidad especial **Entrenamiento de animales**.
+
+### Entrenando animales
+Cualquier uso de la habilidad amplia de Manejo de animales para entrenar una criatura requiere una **prueba de habilidad compleja**.
+- **Compromiso de tiempo:** El personaje debe pasar al menos 4 horas al día trabajando CON la criatura.
+- **Frecuencia de verificación:** Se realiza una verificación de habilidades al final de cada semana de trabajo continuo.
+- **Interrupciones:** Si la formación se interrumpe por uno o más días, se pierden los días trabajados desde el último control. Una interrupción de una semana o más puede hacer que fracase todo el intento de entrenamiento.
+
+**Resultados de la capacitación:**
+- **Fallo crítico:** El animal se vuelve loco y ataca a su entrenador.
+- **Tres Fallos:** El animal se niega a ser entrenado por este personaje.
+
+### Dificultad de la tarea
+Los animales no entrenados (salvajes o domésticos) solo pueden realizar tareas de dificultad **ordinaria**.
+- **Ordinario:** Comandos simples de una palabra (atacar, venir, sentarse, quedarse, buscar, hablar, callar).
+- **Bueno:** Combinaciones de dos tareas ordinarias o acciones más difíciles (por ejemplo, empujar una palanca).
+- **Increíble:** Tareas que muy pocos animales pueden o harán cuando se les ordena (por ejemplo, rescatar a alguien de un edificio en llamas).
+
+### Modificadores de situaciones de manejo de animales
+<div class="table-wrapper"> <table> <thead> <tr> <th>Tipo</th> <th>Modificador</th> <th>Complejidad</th> </tr> </thead> <tbody> <tr class="table-category"> <td colspan="3"><strong>Herbivoros</strong></td> </tr> <tr> <td>Extraterrestre</td> <td>+2</td> <td>Increíble</td> </tr> <tr> <td>Nacional</td> <td>-1</td> <td>Bueno</td> </tr> <tr> <td>Salvaje</td> <td>+1</td> <td>Increíble</td> </tr> <tr class="table-category"> <td colspan="3"><strong>Carnívoros</strong></td> </tr> <tr> <td>Extraterrestre</td> <td>+5</td> <td>Sorprendente</td> </tr> <tr> <td>Nacional</td> <td>-2</td> <td>Ordinario</td> </tr> <tr> <td>Salvaje</td> <td>+4</td> <td>Bueno</td> </tr> </tbody> </table> </div>
+
+**Otros modificadores:**
+- **Animal desconocido:** +1 de penalización (acumulable CON otros).
+- **Animal entrenado:**
+    - Tarea ordinaria: +0
+    - Buena tarea: +2
+    - Tarea increíble: +4
+
+### Montar animales
+La habilidad amplia permite a un personaje montar cualquier animal utilizado para el transporte terrestre básico (caballos, mulas, etc.).
+- **Movimiento:** Cuando se la monta, la criatura se mueve en cada fase.
+- **Maniobras:** Durante la acción de un personaje, puede intentar maniobras (de rutina, moderadas o extremas) como se describe en [Maniobras de vehículos](/core-mechanics/vehicles-and-vessels/#maneuvers).
 
 ## Montar Animales
 {{< specialty attr="VOL" untrained="yes" cost="1" >}}
 
-Esta especialización permite a un personaje mejorar este aspecto de la habilidad general de Manejo de Animales. Un personaje CON esta habilidad puede intentar correr por terrenos peligrosos, hacer saltos o realizar otras acrobacias, y participar en combate montado.
-» **Equitación de Acrobacias:** Cuando un personaje alcanza el rango 3 en esta especialidad, se vuelve capaz de realizar equitación de acrobacias. Esto le permite dirigir a su montura para saltar vallas, saltar abismos o moverse hacia atrás. CON un resultado de Fallo Crítico, el animal tropieza
+Esta habilidad especial permite a un personaje mejorar este aspecto de la habilidad amplia de Manejo de animales. Un personaje CON esta habilidad puede intentar correr sobre terrenos peligrosos, realizar saltos o realizar otras acrobacias y participar en combates montados.
+
+### Montar CON trucos (beneficio de rango 3)
+El personaje puede dirigir su montura para saltar vallas, saltar abismos o retroceder.
+- **Fallo crítico:** El animal tropieza (el daño es una caída extremadamente corta para ambos).
+- **Fallo:** El animal se niega a actuar.
+
+**Saltos Horizontales:**
+- **Ordinario:** Distancia normal + 1 metro.
+- **Bueno:** Distancia normal + 2 metros.
+- **Increíble:** Distancia normal + 3 metros.
+
+**Saltar Obstrucciones:**
+- **Ordinario:** Distancia normal + 1 metro.
+- **Bueno:** Distancia normal + 1,5 metros.
+- **Increíble:** Distancia normal + 2 metros.
+
+**Moviéndose hacia atrás:**
+- **Ordinario:** Tasa de movimiento de media caminata.
+- **Bueno:** Velocidad de movimiento de caminata completa.
+- **Increíble:** Velocidad de movimiento al caminar 1,5 veces mayor.
+
+**Cubierta montada:** El personaje puede usar su montura para cubrirse. Esto proporciona una penalización a la posibilidad de que un oponente golpee al ciclista:
+- **Ordinario:** +1 paso.
+- **Bueno:** +2 pasos.
+- **Increíble:** +3 pasos.
+*Nota: Esto no protege el soporte. Los trucos no se pueden combinar CON otras acciones (por ejemplo, atacar mientras se salta).*
 
 ---
 
 ## Entrenamiento de animales
 {{< specialty attr="VOL" untrained="yes" cost="3" >}}
 
-Esta habilidad permite que un héroe sea capaz de manejar, montar y entrenar un tipo específico de animal. Debe comprar y mejorar esta habilidad de especialidad por separado para cada tipo de animal que quiera entrenar. Los tipos de animales incluyen animales de montar, animales de carga, animales de ataque y animales de guardia. Tu Director de Juego tiene la última palabra sobre cómo se clasifican los animales y acuerdan qué animales requieren aplicaciones separadas de esta habilidad.
+Esta habilidad permite a un personaje manejar, montar y entrenar un tipo específico de animal (el "Animal principal" seleccionado al comprar la habilidad general). Un personaje también puede usar su rango **Entrenamiento de animales** para interactuar CON animales distintos de su animal principal, pero sufre una penalización en la prueba de habilidad según la distancia biológica o de comportamiento de su especialidad:
+
+* **Tipo idéntico (penalización +0):** Razas diferentes o especies estrechamente relacionadas (por ejemplo, cuarto de milla frente a pura sangre).
+* **Tipo relacionado (penalización +1):** Anatomía o comportamiento similar (p. ej., caballo contra mula, o lobo contra perro doméstico).
+* **Familia diferente (penalización +2):** Diferencias biológicas o de comportamiento significativas (p. ej., mamífero versus reptil, o herbívoro versus carnívoro).
+* **Alien/Xeno-criatura (penalización +3 o más):** Biología o instintos completamente extraños.
 
 ---
 

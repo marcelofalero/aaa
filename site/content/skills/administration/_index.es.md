@@ -6,19 +6,48 @@ type = "skill"
 layout = "list"
 +++
 
-Esta habilidad general proporciona a un personaje el conocimiento de los formularios y procedimientos para dirigir una oficina u organización de casi cualquier tipo. CON esta habilidad, un personaje comprende la programación, la gestión de personal y equipos, y las regulaciones y leyes que se aplican a tales empresas. Cualquier organización grande, incluidos gobiernos, agencias y corporaciones, tiene algún tipo de burocracia administrativa CON la que un personaje puede tener que interactuar algún día. Esta habilidad le permite intentar identificar a los administradores adecuados CON los que tratar en una situación particular, los procedimientos adecuados a seguir y la mejor manera de eliminar la burocracia. La habilidad de Administración se puede usar en un intento de cambiar la actitud de un empleado individual de alguna corporación u organización. En tal caso, se trata como una [habilidad de encuentro](/es/core-mechanics/characters-in-action/#encounter-scene). Si el uso de esta habilidad da como resultado que la actitud de un objetivo cambie a Amistosa o mejor, esto puede proporcionar una bonificación en cualquier tirada de habilidad posterior para obtener información o cooperación de la organización que es el empleador del objetivo. Usar esta habilidad, o cualquiera de sus especialidades, para obtener resultados de una organización burocrática requiere una tirada de habilidad compleja. En este caso, el modificador de situación para las condiciones se relaciona CON la rapidez CON la que el personaje que usa la habilidad quiere producir resultados: es una condición de dificultad Asombrosa (penalización de +3) si necesita una respuesta en 1 día; Bueno, se conformará CON d4+1 días; Ordinario, puede permitirse esperar d4+2 días; Marginal, está resignado a no obtener una respuesta durante d6+3 días. La complejidad de esta tirada de habilidad se relaciona CON el tamaño del sistema burocrático y la facilidad CON la que el sistema podría procesar la solicitud: Marginal, sistema pequeño/solicitud extremadamente fácil; Ordinario, sistema de tamaño mediano/solicitud rutinaria; Bueno, sistema grande/solicitud compleja; Asombroso, sistema extremadamente grande/solicitud restringida o ilegal. (Estos dos factores pueden compensarse hasta cierto punto; por ejemplo, intentar que una burocracia extremadamente grande procese una solicitud de rutina sería una proeza de complejidad Buena u Ordinaria, según el juicio del Director de Juego). La habilidad de Administración de un personaje también se puede usar para obstaculizar el intento de otra persona de obtener información. En tal caso, los modificadores de las condiciones se transponen: es una tarea de dificultad Asombrosa (penalización de +3) para ralentizar el proceso durante d6+3 días; Bueno, si estás tratando de atascar los engranajes durante d4+2 días; Ordinario, d4+1 días; o Marginal, si solo quieres causar un retraso de 1 día. Del mismo modo, la complejidad funciona a la inversa: por ejemplo, ralentizar una solicitud extremadamente fácil que se procesa a través de un sistema pequeño es una proeza de complejidad Asombrosa, que requiere una gran cantidad de éxitos en un tiempo relativamente corto.
+Esta amplia habilidad proporciona al personaje conocimiento sobre los formularios y procedimientos necesarios para administrar una oficina u organización de casi cualquier tipo. CON esta habilidad, un personaje comprende la programación, la gestión de personal y equipos, y las regulaciones y leyes que se aplican a tales esfuerzos. Cualquier organización grande, incluidos gobiernos, agencias y corporaciones, tiene algún tipo de burocracia administrativa CON la que algún día un personaje tendrá que interactuar. Esta habilidad le permite intentar identificar a los administradores adecuados CON los que lidiar en una situación particular, los procedimientos adecuados a seguir y la mejor manera de eliminar la burocracia.
+
+### Interacción organizacional
+La habilidad de Administración se puede utilizar en un intento de cambiar la actitud de un empleado individual de alguna corporación u organización. En tal caso, se trata como una [habilidad de encuentro](/core-mechanics/characters-in-action/#encounter-scene). Si el uso de esta habilidad da como resultado que la actitud del objetivo cambie a Amistosa o mejor, esto puede proporcionar una bonificación en cualquier prueba de habilidad posterior para obtener información o cooperación de la organización que es la empleadora del objetivo.
+
+### Obteniendo resultados
+Usar esta habilidad, o cualquiera de sus especialidades, para obtener resultados en una organización burocrática requiere una prueba de habilidad compleja.
+
+**Restricciones de tiempo (modificadores de situación):**
+- **Increíble (penalización +3):** Se necesita respuesta en 1 día.
+- **Bueno (penalización +2):** Respuesta en d4+1 días.
+- **Ordinario (+1 penalización):** Respuesta en d4+2 días.
+- **Marginal (sin penalización):** Respuesta en d6+3 días.
+
+**Complejidad burocrática:**
+- **Marginal:** Sistema pequeño/solicitud extremadamente fácil.
+- **Ordinario:** Sistema de tamaño mediano/solicitud de rutina.
+- **Bueno:** Sistema grande/solicitud compleja.
+- **Increíble:** Sistema extremadamente grande/solicitud restringida o ilegal.
+
+*Nota: Estos factores pueden compensarse entre sí. Por ejemplo, una solicitud de rutina en una burocracia extremadamente grande podría tener una complejidad Buena u Ordinaria.*
+
+### Obstaculizando a otros
+La habilidad de Administración de un personaje también se puede utilizar para obstaculizar el intento de otra persona de obtener información. Los modificadores de condiciones se transponen:
+- **Increíble (penalización +3):** Disminución de velocidad durante d6+3 días.
+- **Bueno (penalización +2):** Disminución de velocidad durante d4+2 días.
+- **Ordinario (penalización +1):** Disminución de velocidad durante d4+1 días.
+- **Marginal (sin penalización):** Retraso de 1 día.
+
+Del mismo modo, la complejidad funciona al revés: ralentizar una solicitud extremadamente sencilla en un sistema pequeño es una hazaña de complejidad **increíble**.
 
 ## Burocracia
 {{< specialty attr="VOL" untrained="yes" cost="3" >}}
 
-Esta especialización mide la capacidad de un personaje para engrasar (o atascar) los engranajes de la burocracia. Las solicitudes importantes, permisos, autorizaciones, informes u otras solicitudes burocráticas se pueden procesar más rápido y de manera más eficiente CON el uso de esta habilidad. Por el contrario, esta habilidad se puede utilizar para hacer que los mismos procesos burocráticos sean más lentos para otros.
+Esta habilidad especializada mide la capacidad de un personaje para engrasar (u obstruir) las ruedas de la burocracia. Las solicitudes, permisos, autorizaciones, informes u otras solicitudes burocráticas importantes se pueden procesar de forma más rápida y eficiente CON el uso de esta habilidad. Por el contrario, esta habilidad se puede utilizar para hacer que los mismos procesos burocráticos sean más lentos para otros.
 
 ---
 
 ## Gestión
 {{< specialty attr="VOL" untrained="yes" cost="3" >}}
 
-Esta habilidad indica la capacidad de un personaje para gestionar tanto al personal como las tareas administrativas. Un gerente capacitado puede aumentar la productividad, inspirar a los trabajadores y supervisar el funcionamiento de un negocio u oficina.
+Esta habilidad indica la capacidad de un personaje para gestionar tareas administrativas y de personal. Un gerente calificado puede aumentar la productividad, inspirar a los trabajadores y supervisar el funcionamiento de una empresa u oficina.
 
 ---
 

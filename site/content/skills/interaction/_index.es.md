@@ -6,49 +6,59 @@ type = "skill"
 layout = "list"
 +++
 
-Las habilidades de interacción son utilizadas por los personajes para influir directamente en los demás. Estas incluyen regatear, encantar, entrevistar, intimidar, seducir y provocar. Los personajes combativos o fanáticos no pueden ser influenciados por Interacción. También se aplican el **modificador de resistencia de Voluntad** del objetivo y otros factores relevantes. | Resultados | Descripción | | :--- | :--- | | **Ordinario** | El éxito indica que el personaje produjo una interacción de calidad. | | **Bueno** | El éxito indica que el personaje produjo una interacción de muy buena calidad. | | **Asombroso** | El éxito indica que el personaje produjo una interacción magistral. |
+Los personajes utilizan las habilidades de interacción para influir directamente en los demás. Estos incluyen negociar, encantar, entrevistar, intimidar, seducir y burlarse.
+### Modificadores de situación de interacción
+| Relación / Condición | Modificador | | :--- | :--- | | El objetivo son especies diferentes | +2 pasos | | El objetivo es una cultura diferente | +2 pasos | | Extraños | +1 paso | | Conocidos entre sí | 0 | | Conocido | -1 paso | La interacción incluye áreas específicas como hacer tratos, saber cómo cuestionar, encantar, seducir o intimidar a otro personaje y ser capaz de burlarse e intercambiar insultos CON los mejores. Una prueba de habilidad de encuentro tiene en cuenta la actitud inicial del objetivo. Los personajes combativos o fanáticos no pueden ser influenciados por la interacción. También se aplica el **modificador de resistencia a la voluntad** del objetivo. En general, los cambios de actitud provocados por la interacción son más duraderos que los cambios provocados por el engaño o el entretenimiento. Una vez que la actitud cambia, permanece hasta que el personaje hace algo para alterarla. | Resultados | Descripción | | :--- | :--- | | **Ordinario** | El éxito indica que el personaje produjo una interacción de calidad. | | **Bueno** | El éxito indica que el personaje produjo una interacción de muy calidad. | | **Increíble** | El éxito indica que el personaje produjo una interacción de obra maestra. |
 
 ## Regatear
 {{< specialty attr="PER" untrained="yes" cost="3" >}}
 
-Regatear representa la capacidad de un personaje para pactar un precio más barato por un objeto que quiere comprar o un precio mejor por uno que está vendiendo. También cubre negociaciones comerciales más formales. Una tirada exitosa mejora la posición del personaje en la mesa de negociación, mientras que un éxito Asombroso le otorga una bonificación de -3 pasos (o a su oponente una penalización de +3) en cualquier tirada de Interacción posterior realizada durante el encuentro.
+Negociar representa la capacidad de un personaje para negociar un precio más barato por un objeto que quiere comprar o un mejor precio por uno que está vendiendo. También cubre negociaciones comerciales más formales. Una prueba exitosa mejora la posición del personaje en la mesa de negociaciones. El grado de éxito determina quién obtiene el mejor resultado.
+#### Modificadores de situación de negociación
+| Condición | Modificador | | :--- | :--- | | El oponente no tiene filas en el trato | -2 pasos | | El oponente tiene filas en la negociación | 0 | | La oferta es baja | +2 pasos | | La oferta es moderada | 0 | | La oferta es alta | -1 paso | | La demanda es baja | -2 pasos | | La demanda es moderada | 0 | | La demanda es alta | +2 pasos |
 
 ---
 
 ## Encantar
 {{< specialty attr="PER" untrained="yes" cost="3" >}}
 
-Un personaje CON la habilidad de especialidad de encantar tiene talento para ser agradable y para convertir a los demás en sus amigos y aliados. Encantar se utiliza a menudo para modificar la actitud inicial de un público hacia un artista. Una tirada exitosa mejora la actitud del público en un paso (Neutral se vuelve Amistoso, Amistoso se vuelve Fanático).
+Esta habilidad especial representa la capacidad de un personaje para cambiar las actitudes de aquellos CON quienes interactúa presentándose de una manera agradable y amigable. Un personaje CON esta habilidad busca seducir a los demás para que renuncien a algo CON palabras amables, una sonrisa ganadora y una actitud afable, ya sea bienes materiales o simplemente un cambio de actitud.
+**Nota:** El hechizo sólo se puede utilizar en objetivos cuya actitud sea
+**Neutral** o **Amistoso**. Un personaje no puede encantar a un objetivo hostil o combativo.
 
 ---
 
 ## Entrevistar
 {{< specialty attr="PER" untrained="yes" cost="3" >}}
 
-La habilidad de especialidad de entrevistar representa el talento para obtener información de otro personaje de forma no agresiva. Las entrevistas son utilizadas a menudo por reporteros, investigadores y funcionarios que llevan a cabo procedimientos administrativos estándar.
+La habilidad de entrevista representa la capacidad de un personaje para obtener información de otro personaje de forma no agresiva. Los periodistas, investigadores y funcionarios que llevan a cabo procedimientos administrativos estándar suelen utilizar las entrevistas. Se diferencia de **Investigar—interrogar** (una habilidad basada en la voluntad) en la cantidad de agresividad y miedo que aplica el interrogador.
 
 ---
 
 ## Intimidar
 {{< specialty attr="PER" untrained="yes" cost="3" >}}
 
-Intimidar se utiliza para influir en las acciones de otros mediante la presencia, la amenaza verbal o alguna muestra de autoridad. Un personaje que intimida a su oponente intenta desconcertarlo, lo que suele provocar que este retroceda ante una amenaza inmediata o se vuelva más cooperativo.
+Esta especialidad representa la capacidad de un personaje para amenazar a otro, ya sea mediante presencia física o peso de autoridad. Intimidar permite a un personaje obligar a un oponente a retroceder, revelar información o cooperar de alguna otra manera debido al miedo. El **modificador de resistencia a la voluntad** del objetivo se aplica a la prueba de habilidad, junto CON otros modificadores de interacción. No es posible intimidar a un personaje Fanático o Combativo. Cuanto mayor sea el grado de éxito, más cooperación podrá provocar el personaje.
 
 ---
 
 ## Seducir
 {{< specialty attr="PER" untrained="yes" cost="3" >}}
 
-Seducir es la habilidad que permite a un personaje atraer o cautivar a otro personaje mediante el comportamiento íntimo y la manipulación emocional. La utilizan los personajes que quieren encandilar a alguien, ya sea para obtener información o simplemente para aprovecharse de los sentimientos de ese personaje.
-⊗ **Rango 3, 6, 12 [Modificador de resistencia]:** El modificador de resistencia de Voluntad del personaje mejora (contra seducción/interacción) en estos rangos.
+Seducir representa la capacidad de atraer o seducir a otro personaje a través de líneas iniciales, intercambios ingeniosos, conversaciones divertidas y comportamiento íntimo. El objetivo es ganarse la confianza del personaje seducido a través de propuestas románticas.
+**Nota:** Seducir sólo se puede utilizar en objetivos cuya actitud sea
+**Neutral**, **Amigable** o mejor. Un personaje no puede seducir a un objetivo hostil o combativo. Un personaje seducido no permanece así para siempre. El tiempo que el personaje permanece seducido depende del resultado de la prueba. Si el objetivo queda encantado, la seducción funciona lo suficientemente bien como para provocar sentimientos serios. Si el objetivo se vuelve fanático, se obsesiona CON el seductor. Siempre que el seductor pide un favor, el objetivo realiza una **prueba de dote de Voluntad** (CON modificadores basados ​​en la actitud: Encantado +1, Fanático +2). Una vez que la actitud del personaje seducido cambia a Amistosa, ya no está seducido.
 
 ---
 
 ## Provocar
 {{< specialty attr="PER" untrained="yes" cost="3" >}}
 
-La habilidad de especialidad de provocar representa el talento para intercambiar insultos CON el fin de desconcertar o enfurecer a un oponente. Un personaje que provoca a su oponente intenta forzarle a cometer un error de juicio o a realizar una acción que normalmente no llevaría a cabo.
-▶ **Distracción:** En el rango 4, si una tirada de provocar tiene éxito, el objetivo recibe una penalización de +1 paso en cualquier tirada de habilidad realizada durante el asalto siguiente.
+La burla representa la capacidad de un personaje de intercambiar insultos para sacudir o enfurecer a un oponente. Un personaje que se burla de su oponente intenta obligarlo a cometer un error de juicio.
+#### Modificadores de situación de burla
+| Actitud objetivo | Modificador | | :--- | :--- | | Combativo | -2 pasos | | Hostil | -1 paso | | Neutro | 0 | | Amistoso | +1 paso | CON un éxito **ordinario**, la burla es efectiva y proporciona una
+**+1 penalización** a la siguiente acción del objetivo. En caso de éxito **Bueno**, la penalización es **+2**; en caso de éxito **increíble**, la penalización es
+**+3**. El éxito también enfurece al objetivo y cambia su actitud hacia **Combativo** (de Neutral a Hostil, por ejemplo). Después de un Fallo Crítico o un resultado de Fallo, un personaje puede hacer otro intento de burlarse de otra persona. Sin embargo, sólo se puede dirigir una burla exitosa a un objetivo en una escena.
 
 ---
 

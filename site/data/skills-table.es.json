@@ -1190,7 +1190,7 @@
                     "items": [
                         {
                             "skill": "Ciencias forenses",
-                            "attribute": "VOL",
+                            "attribute": "INT",
                             "url": "/es/skills/medical-science#ciencias-forenses",
                             "cost": 3,
                             "type": "Specialty",
@@ -1206,7 +1206,7 @@
                         },
                         {
                             "skill": "Psicología",
-                            "attribute": "INT",
+                            "attribute": "VOL",
                             "url": "/es/skills/medical-science#psicologia",
                             "cost": 5,
                             "type": "Specialty",

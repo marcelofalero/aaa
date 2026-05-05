@@ -6,29 +6,32 @@ type = "skill"
 layout = "list"
 +++
 
-Esta habilidad general proporciona a un personaje las capacidades y talentos de un líder. Un líder puede coordinar a un grupo para rendir mejor o trabajar en equipo. Solo un personaje puede asumir el papel de líder a la vez. La tirada de acción de un líder proporciona una bonificación a todas las acciones realizadas en el resto del asalto y en todos los asaltos siguientes por parte de sus seguidores. No se puede usar sobre objetivos que estén Combativos.
+Esta amplia habilidad proporciona al personaje las habilidades y talentos de un líder. CON entrenamiento de liderazgo, un personaje puede coordinar un grupo para lograr que se desempeñe mejor o trabaje en equipo. Sólo un personaje puede asumir el papel de líder a la vez, y las órdenes en conflicto se anulan entre sí. Un líder, al utilizar una acción para intentar una prueba de habilidad de Liderazgo y luego lograr cierto grado de éxito en la prueba, proporciona una **bonificación -1** a todas las acciones realizadas en el resto de la ronda actual y en toda la ronda siguiente por un cierto número de seguidores.
+### Modificadores de la situación de liderazgo
+La prueba se modifica por la actitud de los objetivos, más cualquier otro factor determinado por el DJ: | Situación | Modificador | | :--- | :--- | | **Los objetivos están acostumbrados a ser guiados** | -2 pasos | | **Los objetivos reconocen la autoridad del líder** | 0 | | **Los objetivos no reconocen la autoridad del líder** | +2 pasos |
+- **Nota:** La habilidad amplia de liderazgo no se puede utilizar en objetivos que sean **Combativos**.
 ### Resultados
-- **Fallo Crítico:** El líder confunde a sus seguidores, quienes reciben una penalización de +1 para el resto del asalto.
-- **Fallo:** Los seguidores no reciben bonificación; el líder puede realizar otra tirada en el siguiente asalto.
-- **Ordinario:** Hasta dos seguidores reciben la bonificación de liderazgo.
-- **Bueno:** Hasta cuatro seguidores reciben la bonificación de liderazgo.
-- **Asombroso:** Hasta seis seguidores reciben la bonificación de liderazgo.
+- **Fallo Crítico:** El líder confunde a sus seguidores, quienes reciben un
+**+1 penalización** por el resto de la ronda actual y toda la ronda siguiente. No se pueden realizar más controles de Liderazgo en esta escena.
+- **Fallo:** Los seguidores no reciben bonificación en la ronda actual, pero el líder puede realizar otra verificación en la siguiente ronda.
+- **Ordinario:** Hasta **dos seguidores** reciben el bono de liderazgo.
+- **Bien:** Hasta **cuatro seguidores** reciben el bono de liderazgo.
+- **Increíble:** Hasta **seis seguidores** reciben el bono de liderazgo.
 
 ## Habilidades de Especialidad
 {{< specialty attr="PER" untrained="yes" cost="4" >}}
 
-{{% list %}}
-- **Mando
-- **Inspirar:** Liderar mediante el ejemplo; puede usarse sobre objetivos Hostiles o Combativos. | Resultados | Descripción | | :--- | :--- | | **Ordinario** | El éxito indica que hasta dos seguidores reciben la bonificación de liderazgo. | | **Bueno** | El éxito indica que hasta cuatro seguidores reciben la bonificación de liderazgo. | | **Asombroso** | El éxito indica que hasta seis seguidores reciben la bonificación de liderazgo. |
+Esta habilidad especial representa la capacidad del personaje para liderar a otros en virtud de pura autoridad y capacidad de persuasión. Esta es la habilidad que utilizan los oficiales militares, los funcionarios electos y los agentes del orden para emitir órdenes y velar por que se cumplan.
+**Nota:** El comando no se puede utilizar en objetivos que sean hostiles o combativos; Antes de que dichos objetivos puedan ser guiados, se debe cambiar su actitud (quizás mediante el uso de la habilidad Inspirar).
+⊗ **Efecto aumentado:** A medida que un personaje alcanza rangos más altos en esta especialidad, la bonificación a sus pruebas de habilidades de Liderazgo mejora a **-1 en el rango 4**, **-2 en el rango 8** y **-3 en el rango 12**. (Nota: este bono no es acumulable).
 
 ---
 
 ## Inspirar
 {{< specialty attr="PER" untrained="no" cost="3" >}}
 
-This Especialidad represents the ability to command by example. This skill can be used by military officers, elected officials, and law enforcers who also have the command specialty, but Inspirar is more often used by those who are trying to lead civil disobedience movements and Otros types of nonviolent activities. One major difference is that **Inspirar can be used on targets who are Hostile or Combative**, favorably altering the attitude of the target(s) toward the user of the skill.
-⊗ **Increased Effect:** As a Personaje achieves higher ranks in this specialty, the bonus to his or her Liderazgo skill checks improves to
-**-1 at rank 4**, **-2 at rank 8**, and **-3 at rank 12**. (Note: This bonus is not cumulative.)
+Esta habilidad especializada representa la capacidad de mandar CON el ejemplo. Esta habilidad puede ser utilizada por oficiales militares, funcionarios electos y agentes del orden que también tienen la especialidad de mando, pero inspirar es más utilizada por aquellos que intentan liderar movimientos de desobediencia civil y otros tipos de actividades no violentas. Una diferencia importante es que **Inspirar se puede usar en objetivos que son hostiles o combativos**, alterando favorablemente la actitud del objetivo hacia el usuario de la habilidad.
+⊗ **Efecto aumentado:** A medida que un personaje alcanza rangos más altos en esta especialidad, la bonificación a sus pruebas de habilidades de Liderazgo mejora a **-1 en el rango 4**, **-2 en el rango 8** y **-3 en el rango 12**. (Nota: este bono no es acumulable).
 
 ---
 
