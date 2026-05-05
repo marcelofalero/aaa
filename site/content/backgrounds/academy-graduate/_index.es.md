@@ -28,6 +28,6 @@ Un uniforme de gala impecable, un arma de fuego de oficial estándar, un proyect
 **Evaluación Táctica:** Tienes una bonificación de -1 paso a las tiradas de [Conciencia-Percepción] ({{< relref "/skills/awareness/#perception" >}}) o [Tácticas-Tácticas de Infantería] ({{< relref "/skills/tactics/#infantry-tactics" >}}) realizadas específicamente para evaluar la formación de combate de un oponente, sus debilidades defensivas o la calidad de su equipo antes de que comience un enfrentamiento.
 
 ## Tendencias (Elige 2):
-* **El Oficial al Mando:** Afirma tu rango o autoridad para tomar el control de una situación caótica, incluso cuando hacerlo te convierte en el objetivo principal de enemigos o del escrutinio Social.
+* **El Oficial al Mando:** Afirma tu rango o autoridad para tomar el control de una situación caótica, incluso cuando hacerlo te convierte en el objetivo principal de enemigos o del escrutinio social.
 * **El Estratega:** Se niega a desviarse de un plan táctico sofisticado o "correcto" incluso cuando una solución más simple y "ruda" está disponible, priorizando la doctrina que le enseñaron.
 

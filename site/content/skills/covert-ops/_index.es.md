@@ -1,17 +1,17 @@
 +++
 title = "Operaciones Encubiertas"
-attribute = "DES"
+attribute = "DEX"
 category = "Social"
 type = "skill"
 layout = "list"
 +++
 
-La habilidad general **Operaciones encubiertas** se centra en permanecer sin ser detectado y eludir la seguridad física. Consolida las artes del sigilo CON las habilidades prácticas necesarias para camuflarse o robar bolsillos.
+La habilidad general **Operaciones encubiertas** se centra en permanecer sin ser detectado y eludir la seguridad física. Consolida las artes del sigilo con las habilidades prácticas necesarias para camuflarse o robar bolsillos.
 - **Sigilo unificado:** Combina ocultar, sigilo y vigilancia en una única especialidad de Sigilo.
 - **Eludición física:** Incluye carterista y ocultamiento.
 
 ## Ocultar
-{{< specialty attr="DES" untrained="yes" cost="3" >}}
+{{< specialty attr="DEX" untrained="yes" cost="3" >}}
 
 Esta habilidad especial representa la capacidad de ocultar objetos de la vista o de los sensores. Mientras que **Stealth** se usa para esconderse,
 **Ocultar** se utiliza para ocultar elementos, como armas en la persona, contrabando en un vehículo o un compartimento secreto en una habitación.
@@ -26,18 +26,18 @@ Un arma oculta se lleva en un lugar que normalmente no se registra o que no es f
 ---
 
 ## Disfraz
-{{< specialty attr="CAR" untrained="yes" cost="3" >}}
+{{< specialty attr="CHA" untrained="yes" cost="3" >}}
 
-El disfraz es la capacidad de cambiar tu apariencia para parecerte a otra persona o mezclarte CON una multitud. Si bien la habilidad **Acto de entretenimiento** se utiliza para maquillaje y actuación profesional, esta especialidad cubre aplicaciones de disfraz más inmediatas y prácticas, como cambiarse de ropa, usar una peluca o usar accesorios simples para evitar el reconocimiento. El dado de situación de Disfraz de un personaje es modificado por el modificador de Conciencia-percepción del observador.
+El disfraz es la capacidad de cambiar tu apariencia para parecerte a otra persona o mezclarte con una multitud. Si bien la habilidad **Acto de entretenimiento** se utiliza para maquillaje y actuación profesional, esta especialidad cubre aplicaciones de disfraz más inmediatas y prácticas, como cambiarse de ropa, usar una peluca o usar accesorios simples para evitar el reconocimiento. El dado de situación de Disfraz de un personaje es modificado por el modificador de Conciencia-percepción del observador.
 
 ---
 
 ## Abrir Cerraduras
-{{< specialty attr="DES" untrained="yes" cost="3" >}}
+{{< specialty attr="DEX" untrained="yes" cost="3" >}}
 
 Esta habilidad especial permite a un personaje quitarle objetos a una persona (o plantar algo) sin que esa persona se dé cuenta. El dado de situación base está determinado por el modificador de resistencia a la voluntad del objetivo.
 ### Modificadores de situación de carterista
-| Condición | Modificador | | :--- | :--- | | El objeto está en contacto directo CON la piel del objetivo | +3 | | El objeto es pesado | +2 | | El objeto se guarda en el bolsillo interior de la prenda | +1 | | El objeto es liviano | -1 | | El objeto se guarda en un bolsillo o mochila expuesta | -1 | | La víctima está distraída | -1 a -3 |
+| Condición | Modificador | | :--- | :--- | | El objeto está en contacto directo con la piel del objetivo | +3 | | El objeto es pesado | +2 | | El objeto se guarda en el bolsillo interior de la prenda | +1 | | El objeto es liviano | -1 | | El objeto se guarda en un bolsillo o mochila expuesta | -1 | | La víctima está distraída | -1 a -3 |
 ### Resultados
 - **Fallo/Fallo crítico:** El intento falla y se detecta al carterista.
 - **Ordinario:** El intento tiene éxito.
@@ -48,7 +48,7 @@ Esta habilidad especial permite a un personaje quitarle objetos a una persona (o
 ---
 
 ## Carterear
-{{< specialty attr="DES" untrained="yes" cost="3" >}}
+{{< specialty attr="DEX" untrained="yes" cost="3" >}}
 
 Esta especialidad (también conocida como Sigilo Unificado) fusiona las técnicas de esconderse, sigilo y sombra en un solo campo de especialización. Es el arte de pasar desapercibido mientras está parado o en movimiento.
 ### Ocultar (estacionario)

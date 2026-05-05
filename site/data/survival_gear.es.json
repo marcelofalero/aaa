@@ -1,6 +1,6 @@
 {
-    "config": [
-        {
+    "config": {
+        "default": {
             "name": "Default",
             "columns": {
                 "en": [
@@ -81,60 +81,43 @@
                         "hidden": true
                     }
                 ]
-            },
-            "id": "default"
+            }
         }
-    ],
-    "items": [
-        {
-            "items": [
-                {
-                    "name": "Cabina Portátil Master 5§",
+    },
+    "items": {
+        "pl-7-survival-gear": {
+            "items": {
+                "terrainmaster-5-portable-cabin": {
                     "pl": "7",
                     "mass": "30 kg",
                     "cost": "117580",
-                    "avail": "Común",
-                    "id": "terrainmaster-5-portable-cabin",
-                    "description": "El TerrainMaster se acopla en un marco de maletín cómodo. Mientras que es una carga importante para uno senderista, el marco de almacenamiento incluye un desenrollador de masa incorporado que reduce su masa a 5 kilogramos cuando está activado. El desenrollador tiene una duración de 20 horas en este ajuste o 50 horas si se lo establece para reducirlo a 15 kg."
+                    "avail": "Com"
                 },
-                {
-                    "name": "Conjunto de habitación Gliese 300",
+                "gliese-300-habitat-dome": {
                     "pl": "7",
                     "mass": "50 kg",
                     "cost": "1750",
-                    "avail": "Común",
-                    "id": "gliese-300-habitat-dome",
-                    "description": "El domo de habitat Gliese 300 está hecho de numaplas micromejorados—un plástico pesado y denso con cierres de tejido forjados y cámaras pneumétricas de inflación automática. Un solo cartucho estándar COg (dos están incluidos) puede desplegar el domo en momentos. Cuando se infla, el domo mide 2 metros de altura y 5 metros de diámetro."
+                    "avail": "Com"
                 },
-                {
-                    "name": "CUERDA DE GUARDAMORTE DOS-PERSONAS ALBERGUE CALIENTE",
+                "armadillo-mpt-two-man-tent": {
                     "pl": "7",
                     "mass": "1 kg",
                     "cost": "135",
-                    "avail": "Común",
-                    "id": "armadillo-mpt-two-man-tent",
-                    "description": "El ARMADILLO MPT Two-MAN TENT es un toldo ligero, fácil de usar que ofrece comodidad y durabilidad. Proporciona apoyo para dos personas con una sola matriz de soporte numaplas, la cual inflama con un pedal pie útil para darle una estructura más ligera y más robusta que el aluminio. El tentáculo pesa 1 kg y cuesta $135. Está disponible en cualquier lugar."
+                    "avail": "Com"
                 },
-                {
-                    "name": "Botas de Unner 60 CLIMATE SuIT",
+                "unner-60-climate-suit": {
                     "pl": "7",
                     "mass": "1 kg",
                     "cost": "825",
-                    "avail": "Common",
-                    "id": "unner-60-climate-suit",
-                    "description": "El Unner 60 Climate Suit es una chaqueta versátil, ligera y cómoda diseñada para mantenerte saludable y fresco en entornos extraterrestres sin vacío. Sus elementos de calentamiento/cooling permiten trabajar y viajar durante longitudes de tiempo en ambientes con atmósfera tóxica, delgado, densa o moderadamente corrosiva."
+                    "avail": "Common"
                 },
-                {
-                    "name": "Cinturón de armadura E-Suit Explorador D9",
+                "explorer-d9-armored-e-suit": {
                     "pl": "7",
                     "mass": "5 kg",
                     "cost": "2550",
-                    "avail": "Común",
-                    "id": "explorer-d9-armored-e-suit",
-                    "description": "El traje armado E-Suit del Explorador está llevado por un capa de aire aire, puntuada con resistencia al agujero y algodón. Proporciona protección contra los peligros ambientales como el vacío, la gravedad, la radiación y las alteraciones de presión atmosférica. Deja de ser útil si el portador sufre 4 puntos o más de heridas primarias o mortales."
+                    "avail": "Com"
                 }
-            ],
-            "id": "pl-7-survival-gear"
+            }
         }
-    ]
+    }
 }

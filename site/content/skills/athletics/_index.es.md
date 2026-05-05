@@ -1,7 +1,7 @@
 +++
 title = "Atletismo"
-attribute = "FUE"
-category = "Otros"
+attribute = "STR"
+category = "Other"
 type = "skill"
 layout = "list"
 +++
@@ -9,7 +9,7 @@ layout = "list"
 Esta amplia habilidad proporciona al personaje las habilidades de un atleta natural: un nivel competente de fuerza, gracia y destreza física. Esta habilidad se utiliza para determinar el éxito de acciones físicas como trepar a un árbol, saltar sobre un gran agujero o lanzar un objeto a un objetivo.
 
 ## Trepar
-{{< specialty attr="FUE" untrained="yes" cost="2" >}}
+{{< specialty attr="STR" untrained="yes" cost="2" >}}
 
 La capacidad de escalar superficies verticales y navegar por terrenos difíciles.
 
@@ -20,7 +20,7 @@ La capacidad de escalar superficies verticales y navegar por terrenos difíciles
 ---
 
 ## Saltar
-{{< specialty attr="FUE" untrained="yes" cost="1" >}}
+{{< specialty attr="STR" untrained="yes" cost="1" >}}
 
 La capacidad de saltar obstáculos o atravesar brechas.
 **Tipos de Salto:**
@@ -35,7 +35,7 @@ La capacidad de saltar obstáculos o atravesar brechas.
 ---
 
 ## Nadar
-{{< specialty attr="FUE" untrained="no" cost="2" >}}
+{{< specialty attr="STR" untrained="no" cost="2" >}}
 
 **Solo entrenado.**
 Competencia para moverse a través de ambientes líquidos. Sin esta habilidad, un personaje sólo puede flotar en el agua y remar toscamente.
@@ -47,19 +47,19 @@ Competencia para moverse a través de ambientes líquidos. Sin esta habilidad, u
 ---
 
 ## Lanzar
-{{< specialty attr="FUE" untrained="yes" cost="2" >}}
+{{< specialty attr="STR" untrained="yes" cost="2" >}}
 
 Competencia en lanzar objetos (cuchillos, granadas, piedras) a los objetivos. La precisión se rige por la [Tabla P20: Precisión por rango]({{< relref "core-mechanics/useful-tables#table-p20-accuracy-by-range" >}}).
 
 ### Control de trayectoria
-Un personaje puede intentar maniobras avanzadas CON una base **penalización de +2 pasos**:
+Un personaje puede intentar maniobras avanzadas con una base **penalización de +2 pasos**:
 - **Curva Magnus:** Lanza una pieza de cobertura (ignora la penalización de cobertura +1).
 - **Rebote:** Rebota en una superficie para alcanzar un objetivo (ignora los requisitos de LOS si conoces el camino).
 - **Arco suborbital:** Lanza grandes obstáculos.
 
 ▶ **Dominio de la trayectoria:** Los rangos en esta especialidad reducen la penalización por las maniobras de control de trayectoria: **Rango 3 (-1)**, **Rango 6 (-2)**, **Rango 9 (-3)**, **Rango 12 (-4)**.
 
-▶ **Inversión cinética (rango 12):** Una vez por ronda, el personaje puede intentar atrapar un proyectil lanzado (como una granada o un cuchillo) CON una prueba de lanzamiento atlético **Asombroso**. Si tiene éxito, puede devolverlo inmediatamente como acción gratuita.
+▶ **Inversión cinética (rango 12):** Una vez por ronda, el personaje puede intentar atrapar un proyectil lanzado (como una granada o un cuchillo) con una prueba de lanzamiento atlético **Asombroso**. Si tiene éxito, puede devolverlo inmediatamente como acción gratuita.
 
 ---
 

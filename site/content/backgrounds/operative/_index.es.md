@@ -22,7 +22,7 @@ Profesional paramilitar especializado en acción directa y misiones tácticas.
 * [Código de Honor] ({{< relref "/perks_flaws/#code-of-honor" >}})
 
 ## Equipo Inicial:
-Subfusil, ropa de combate, enlace de comunicaciones.
+SMG, ropa de combate, enlace de comunicaciones.
 
 ## Capacidad Especial:
 **Especialista en Misiones:** Bono de -1 paso en táctica o combate para objetivos planificados.

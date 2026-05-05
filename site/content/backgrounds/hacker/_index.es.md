@@ -27,3 +27,7 @@ Un mazo cibernético personalizado, una suscripción de por vida a un servicio d
 ## Capacidad Especial:
 **Mente Maestra de la Red:** Bono de -1 paso en Computación al intentar saltarse medidas de seguridad digitales.
 
+## Tendencias (Elige 2):
+* **The Digital Ghost:** Prioritize erasing your digital footprint or stealing secondary data over the Físico safety or immediate tactical needs of the party.
+* **The Curious Intruder:** Cannot resist poking into a secure system or locked file even when it has nothing to do with the current mission and risks triggering alarms.
+

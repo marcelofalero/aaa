@@ -4,7 +4,7 @@ type = "background"
 layout = "background"
 +++
 
-Maestro del engaño y la ingeniería Social, prosperando gracias a la codicia ajena.
+Maestro del engaño y la ingeniería social, prosperando gracias a la codicia ajena.
 
 ## Paquete de Habilidades:
 * Ninguna.
@@ -25,5 +25,5 @@ Maestro del engaño y la ingeniería Social, prosperando gracias a la codicia aj
 Ropa de diseño, IDs falsas, kit de fixer.
 
 ## Capacidad Especial:
-**El Largo Engaño:** Bono de -1 paso a manipulación Social de más de 24 horas.
+**El Largo Engaño:** Bono de -1 paso a manipulación social de más de 24 horas.
 

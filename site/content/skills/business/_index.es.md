@@ -23,8 +23,8 @@ Si un personaje usa Negocios para regatear la compra o venta de un bien, el modi
 - **Habilidad de encuentro:** Los negocios se pueden tratar como una [habilidad de encuentro](/core-mechanics/characters-in-action/#encounter-scene). Si la actitud del objetivo se vuelve Amistosa o mejor, proporciona una bonificación a las pruebas de cooperación posteriores.
 
 ### Modificadores
-- **Sanciones:** Generalmente se aplican cuando se trata de bienes exóticos, raros o desconocidos; intentar transacciones ilegales; o lidiar CON una cultura desconocida.
-- **Bonificaciones:** Se aplica si el personaje tiene información privilegiada o está tratando CON un producto o cultura familiar.
+- **Sanciones:** Generalmente se aplican cuando se trata de bienes exóticos, raros o desconocidos; intentar transacciones ilegales; o lidiar con una cultura desconocida.
+- **Bonificaciones:** Se aplica si el personaje tiene información privilegiada o está tratando con un producto o cultura familiar.
 
 ## Corporativo
 {{< specialty attr="INT" untrained="yes" cost="3" >}}

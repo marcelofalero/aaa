@@ -1,6 +1,6 @@
 {
-    "config": [
-        {
+    "config": {
+        "default": {
             "name": "Default",
             "columns": {
                 "en": [
@@ -81,528 +81,392 @@
                         "hidden": true
                     }
                 ]
-            },
-            "id": "default"
+            }
         }
-    ],
-    "items": [
-        {
-            "name": "PL 0 - Stone Age",
-            "items": [
-                {
-                    "name": "Hide armor",
+    },
+    "items": {
+        "pl-0-stone-age": {
+            "items": {
+                "hide-armor": {
                     "mass": "10",
                     "ap": "+1",
                     "lhe": "d6-3/d4-3/d6-4",
                     "type": "O",
                     "hide": "-",
-                    "avail": "Cualquiera",
-                    "cost": "100",
-                    "id": "hide-armor",
-                    "description": "This armor utilizes the furs and skins of animals, which are stitched or fastened together to roughly fit the body of the individual wearing it. The protection it provides is minimal, and its use during the era is uncommon. This category also includes weaves of thick vegetation made into protective garments."
+                    "avail": "Any",
+                    "cost": "100"
                 }
-            ],
-            "id": "pl-0-stone-age"
+            }
         },
-        {
-            "name": "PL 1 - Bronze/Iron Age",
-            "items": [
-                {
-                    "name": "Leather armor",
+        "pl-1-bronze-iron-age": {
+            "items": {
+                "leather-armor": {
                     "mass": "7",
                     "ap": "+1",
                     "lhe": "d6-2/d6-4/d6-4",
                     "type": "O",
                     "hide": "+2",
-                    "avail": "Cualquiera",
-                    "cost": "350",
-                    "id": "leather-armor",
-                    "description": "This protection is easy to craft and maintain, and does a decent job of protecting the wearer from the weapons of the day."
+                    "avail": "Any",
+                    "cost": "350"
                 },
-                {
-                    "name": "Helm",
+                "helm": {
                     "mass": "4",
                     "ap": "+1",
                     "lhe": "+1/0/0",
                     "type": "O",
                     "hide": "-",
-                    "avail": "Común",
-                    "cost": "200",
-                    "id": "helm",
-                    "description": "The center of the sensory organs is treated to extra protection. A helm can't be used with other armor if the armor contains an integral helmet or hood. The Gamemaster can determine that a helm's protection isn't significant in some situations, especially if it is the only armor being worn."
+                    "avail": "Com",
+                    "cost": "200"
                 },
-                {
-                    "name": "Shield, small",
+                "shield-small": {
                     "mass": "4",
                     "ap": "0",
                     "lhe": "+1/0/0",
                     "type": "O",
                     "hide": "+1",
-                    "avail": "Cualquiera",
-                    "cost": "75",
-                    "id": "shield-small",
-                    "description": "A small shield is usually round, about a half-meter in diameter, and worn on the forearm of the secondary hand."
+                    "avail": "Any",
+                    "cost": "75"
                 }
-            ],
-            "id": "pl-1-bronze-iron-age"
+            }
         },
-        {
-            "name": "PL 2 - Middle Ages",
-            "items": [
-                {
-                    "name": "Chain mail",
+        "pl-2-middle-ages": {
+            "items": {
+                "chain-mail": {
                     "mass": "15",
                     "ap": "+1",
                     "lhe": "d6-1/d6-4/d6-4",
                     "type": "O",
                     "hide": "+1",
-                    "avail": "Común",
-                    "cost": "750",
-                    "id": "chain-mail",
-                    "description": "Various types of laminated, scale, brigandine, splint, and banded armor fall under the broad category of chain mail. Formed by linking or sewing metal rings to a plain leather backing, chain mail provides excellent protection against slashing (low impact) attacks. The chain mail suit includes a coif to protect the head."
+                    "avail": "Com",
+                    "cost": "750"
                 },
-                {
-                    "name": "Plate, full",
+                "plate-full": {
                     "mass": "25",
                     "ap": "+3",
                     "lhe": "d6+1/d6-3/d6-3",
                     "type": "O",
                     "hide": "-",
-                    "avail": "Controlada",
-                    "cost": "2000",
-                    "id": "plate-full",
-                    "description": "Full plate mail is made from shaped and fitted metal plates riveted and interlocked in such a way as to cover the entire body. Gauntlets, boots, and a visored helmet are included, as well as a layer of thick padding under the armor."
+                    "avail": "Con",
+                    "cost": "2000"
                 },
-                {
-                    "name": "Plate, partial",
+                "plate-partial": {
                     "mass": "20",
                     "ap": "+2",
                     "lhe": "d6/d8-5/d6-4",
                     "type": "O",
                     "hide": "+1",
-                    "avail": "Común",
-                    "cost": "1000",
-                    "id": "plate-partial",
-                    "description": "This armor combines a metal breastplate with either chain or brigandine armor. A few metal plates protect vital parts of the body, but not as many are used as in full plate armor."
+                    "avail": "Com",
+                    "cost": "1000"
                 },
-                {
-                    "name": "Shield, medium",
+                "shield-medium": {
                     "mass": "7",
                     "ap": "0",
                     "lhe": "+2/+1/0",
                     "type": "O",
                     "hide": "-",
-                    "avail": "Cualquiera",
-                    "cost": "300",
-                    "id": "shield-medium",
-                    "description": "A medium shield is heavier than a small shield, and is usually a meter or more in diameter. It can be round or square, though most looked like rounded triangles."
+                    "avail": "Any",
+                    "cost": "300"
                 }
-            ],
-            "id": "pl-2-middle-ages"
+            }
         },
-        {
-            "name": "PL 3 - Age of Reason",
-            "items": [
-                {
-                    "name": "Leather coat",
+        "pl-3-age-of-reason": {
+            "items": {
+                "leather-coat": {
                     "mass": "5",
                     "ap": "0",
                     "lhe": "d6-3/d4-3/d4-2",
                     "type": "O",
                     "hide": "+3",
-                    "avail": "Cualquiera",
-                    "cost": "500",
-                    "id": "leather-coat",
-                    "description": "The cuir bouilli (\"boiled leather\") coat isn't the best armor, but it's better than nothing in battle. Leather coats have an advantage in being innately concealable; in many societies, the rugged coat is an item of style."
+                    "avail": "Any",
+                    "cost": "500"
                 }
-            ],
-            "id": "pl-3-age-of-reason"
+            }
         },
-        {
-            "name": "PL 4 - Industrial Age",
-            "items": [
-                {
-                    "name": "Flak jacket",
+        "pl-4-industrial-age": {
+            "items": {
+                "flak-jacket": {
                     "mass": "15",
                     "ap": "+2",
                     "lhe": "d6-2/d4-1/d6-3",
                     "type": "O",
                     "hide": "-",
-                    "avail": "Controlada",
-                    "cost": "800",
-                    "id": "flak-jacket",
-                    "description": "While unable to fully absorb the blows of the weapons of the period, the flak jacket is the first armor to seriously inhibit the passage of high impact damage to its wearer. The armor's bulk and mass are its disadvantages."
+                    "avail": "Con",
+                    "cost": "800"
                 }
-            ],
-            "id": "pl-4-industrial-age"
+            }
         },
-        {
-            "name": "PL 5 - Information Age",
-            "items": [
-                {
-                    "name": "Assault gear",
+        "pl-5-information-age": {
+            "items": {
+                "assault-gear": {
                     "mass": "10",
                     "ap": "+3",
                     "lhe": "d6-1/d6-1/d6-1",
                     "type": "O",
                     "hide": "-",
-                    "avail": "Controlada",
-                    "cost": "1500",
-                    "id": "assault-gear",
-                    "description": "This is a suit of modern armor, made up of heavy padding, kevlar, and plastic plates. In later ages, kevlar is replaced by carbonate fiber."
+                    "avail": "Con",
+                    "cost": "1500"
                 },
-                {
-                    "name": "Battle vest",
+                "battle-vest": {
                     "mass": "5",
                     "ap": "+1",
                     "lhe": "d6-3/d6-2/d4-2",
                     "type": "O",
                     "hide": "+2",
-                    "avail": "Controlada",
-                    "cost": "600",
-                    "id": "battle-vest",
-                    "description": "This category includes all the varieties of bulletproof vests that come into use during the latter half of the 20th century. A normal battle vest can be worn under very bulky clothing, but generally it's meant to be pulled over anything else a person might happen to be wearing. Light versions are designed with concealability and comfort in mind. The vest uses strong ceramic-alloy plates sandwiched in a weave of kevlar or (at a higher PL) carbonate fiber to protect the wearer's torso."
+                    "avail": "Con",
+                    "cost": "600"
                 },
-                {
-                    "name": "Riot helmet",
+                "riot-helmet": {
                     "mass": "2",
                     "ap": "+1",
                     "lhe": "+1/+1/0",
                     "type": "O",
                     "hide": "-",
-                    "avail": "Controlada",
-                    "cost": "300",
-                    "id": "riot-helmet",
-                    "description": "The riot helmet has a clear plastic visor, offering protection while preserving vision."
+                    "avail": "Con",
+                    "cost": "300"
                 },
-                {
-                    "name": "Riot shield",
+                "riot-shield": {
                     "mass": "4",
                     "ap": "+2",
                     "lhe": "+1/+1/+1",
                     "type": "O",
                     "hide": "-",
-                    "avail": "Controlada",
-                    "cost": "500",
-                    "id": "riot-shield",
-                    "description": "This is a high-tech, clear plastic, full-body shield, usually used in conjunction with riot gear."
+                    "avail": "Con",
+                    "cost": "500"
                 }
-            ],
-            "id": "pl-5-information-age"
+            }
         },
-        {
-            "name": "PL 6 - Fusion Age",
-            "items": [
-                {
-                    "name": "Assault gear, hvy",
+        "pl-6-fusion-age": {
+            "items": {
+                "assault-gear-hvy": {
                     "mass": "12",
                     "ap": "+2",
                     "lhe": "d6-1/d6/d6-1",
                     "type": "O",
                     "hide": "-",
-                    "avail": "Militar",
-                    "cost": "2500",
-                    "id": "assault-gear-hvy",
-                    "description": "This armor resembles PL 5 assault gear in general appearance, but bulletproof CF weave and polymere plates replace much of the padding. It includes a protective hood and attachments for an optional hip-worn respirator. Security forces and paramilitary groups often wear armor of this type."
+                    "avail": "Mil",
+                    "cost": "2500"
                 },
-                {
-                    "name": "Attack armor",
+                "attack-armor": {
                     "mass": "15",
                     "ap": "+3",
                     "lhe": "d4+1/d6+1/d6-1",
                     "type": "O",
                     "hide": "-",
-                    "avail": "Controlada",
-                    "cost": "3000",
-                    "id": "attack-armor",
-                    "description": "The earliest forms of true attack armor are improvements of typical assault gear. A breastplate and helmet of lightweight polymere guards the user's vital areas, while flexible CF weaves cover his limbs."
+                    "avail": "Con",
+                    "cost": "3000"
                 },
-                {
-                    "name": "Attack armor, pow",
+                "attack-armor-pow": {
                     "mass": "25",
                     "ap": "+4",
                     "lhe": "d6+1/d6+2/d6",
                     "type": "G",
-                    "avail": "Militar",
-                    "cost": "8000",
-                    "id": "attack-armor-pow",
-                    "description": "Powered attack armor includes a small but powerful computer to manage a simple sensor and communication suite. Built-in extra devices include: Targeting system: Binoculars reduce long range penalties by 1 step. Image enhancement system: Night-vision and infrared goggles reduce penalties due to poor lighting or visual conditions by 1 step. Communication suite: Signal laser and comm gear allow communication over long distances and supervision of remote sensor devices. Trauma pack type I: Two trauma packs are attached at the thigh pocket and in the small of the back."
+                    "avail": "Mil",
+                    "cost": "8000"
                 },
-                {
-                    "name": "Battle jacket",
+                "battle-jacket": {
                     "mass": "8",
                     "ap": "+1",
                     "lhe": "d6-1/d4+1/d4-1",
                     "type": "O",
                     "hide": "+1",
-                    "avail": "Controlada",
-                    "cost": "1500",
-                    "id": "battle-jacket",
-                    "description": "A more complete version of the battle vest, this garment includes panels for the thighs and arms, as well as an open-faced hood. It offers significantly more coverage than the vest, but is correspondingly heavier and more awkward. Most battle jackets feature face-seals and attachments for respirators or heating elements."
+                    "avail": "Con",
+                    "cost": "1500"
                 },
-                {
-                    "name": "CF long coat",
+                "cf-long-coat": {
                     "mass": "4",
                     "ap": "0",
                     "lhe": "d4/d4/d6-2",
                     "type": "O",
                     "hide": "+3",
-                    "avail": "Común",
-                    "cost": "1000",
-                    "id": "cf-long-coat",
-                    "description": "In situations when it isn't wise to display heavy armor, a bulletproof coat can be a lifesaver. Designed to resemble a well-made duster or jacket, the CF coat uses extensive weaves of resistant carbonate fibers to defeat slashing weapons and projectiles. The long coat almost touches the ground, and it can pass for a duster or overcoat of some kind."
+                    "avail": "Com",
+                    "cost": "1000"
                 },
-                {
-                    "name": "CF short coat",
+                "cf-short-coat": {
                     "mass": "3",
                     "ap": "0",
                     "lhe": "d4-1/d4-1/d6-3",
                     "type": "O",
                     "hide": "+3",
-                    "avail": "Común",
-                    "cost": "750",
-                    "id": "cf-short-coat",
-                    "description": "The CF short coat is designed for situations where discreet protection is needed. It uses extensive weaves of resistant carbonate fibers to defeat slashing weapons and projectiles. The short coat comes down to the waist and can be worn as part of a suit, or as a simple jacket."
+                    "avail": "Com",
+                    "cost": "750"
                 }
-            ],
-            "id": "pl-6-fusion-age"
+            }
         },
-        {
-            "name": "PL 7 - Gravity Age",
-            "items": [
-                {
-                    "name": "Body tank",
+        "pl-7-gravity-age": {
+            "items": {
+                "body-tank": {
                     "mass": "60",
                     "ap": "+6",
                     "lhe": "2d4+1/2d4+1/2d4",
                     "type": "G",
                     "hide": "-",
-                    "avail": "Restringida",
-                    "cost": "25000",
-                    "id": "body-tank",
-                    "description": "The invention of sturdy, small, and powerful servos makes the powered 'body tank' armor possible. Most of the armor consists of neutronite alloy plate, with only a few awkward joints made of flexible carbonate fiber. Systems included in a body tank are: Targeting system: Binoculars reduce long range penalties by 1 step. Image enhancement system: Night-vision and infrared goggles reduce penalties due to poor lighting or visual conditions by 1 step. Communication suite: Signal laser and comm gear allow communication over long distances and supervision of remote sensor devices. Trauma pack type II: One of two trauma packs activates when the suit's occupant suffers damage; the other one is a spare. Mortal wounds are automatically staunched; the wearer doesn't need to make a Stamina–endurance check. Threat receiver: An electromagnetic/infrared sensor detects active fire control and rangefinding systems directed at the wearer, who gains a –2 bonus to Awareness checks to detect such threats. Smart display: Geomapping system provides a view of the surrounding area, granting the user a –1 bonus to Tactics checks. Laser designator: Helmet-mounted device allows the soldier to instantly relay requests for fire support or air strikes through his data uplink. Bantam launcher: A built-in bantam launcher contains a magazine of four loads."
+                    "avail": "Res",
+                    "cost": "25000"
                 },
-                {
-                    "name": "Body tank, recon",
+                "body-tank-recon": {
                     "mass": "45",
                     "ap": "+5",
                     "lhe": "2d4/2d4/d6+2",
                     "type": "G",
                     "hide": "-",
-                    "avail": "Militar",
-                    "cost": "30000",
-                    "id": "body-tank-recon",
-                    "description": "The recon body tank is lighter and more expensive than the regular version, but somewhat more common. The recon body tank features the same onboard systems as the standard body tank."
+                    "avail": "Mil",
+                    "cost": "30000"
                 },
-                {
-                    "name": "Body tank, zero-g",
+                "body-tank-zero-g": {
                     "mass": "80",
                     "ap": "+7",
                     "lhe": "3d4/3d4/2d4+1",
                     "type": "G",
                     "hide": "-",
-                    "avail": "Restringida",
-                    "cost": "50000",
-                    "id": "body-tank-zero-g",
-                    "description": "The heaviest armor available at PL 7 is equipped with all the features of the standard body tank in a suit slightly larger than the normal body tank. It also includes the following features: Air/space radar: A small but powerful radar system allows a soldier to keep an eye on enemy aircraft or spacecraft movements. Instead of a bantam launcher, the purchaser of a zero-g body tank can include any one of the following: Grenade launcher: Two magazines hold six grenades each. Direct fire heavy weapon: Choice of heavy charge machine gun, arc gun, rail cannon, or plasma gun. Close-combat weapon: Choice of chainsword, gravmace, mass pistol, or autoflechette shotgun."
+                    "avail": "Res",
+                    "cost": "50000"
                 },
-                {
-                    "name": "CF softsuit",
+                "cf-softsuit": {
                     "mass": "3",
                     "ap": "0",
                     "lhe": "d6/d6/d6-1",
                     "type": "O",
                     "hide": "+4",
-                    "avail": "Controlada",
-                    "cost": "2000",
-                    "id": "cf-softsuit",
-                    "description": "The CF softsuit represents the highest level of carbonate fiber advancement. It can be woven into lightweight clothing styles, providing protection that doesn't look like protection at all."
+                    "avail": "Con",
+                    "cost": "2000"
                 },
-                {
-                    "name": "Deflection harness",
+                "deflection-harness": {
                     "mass": "2",
                     "ap": "0",
                     "lhe": "see description",
                     "type": "O",
                     "hide": "+3",
-                    "avail": "Controlada",
-                    "cost": "2500",
-                    "id": "deflection-harness",
-                    "description": "The deflection harness creates a powerful nondirectional graviton field around the wearer. Physical objects are deflected away, and even energy-based attacks may be bent enough to miss the user. It cannot be combined with other armor. The harness improves the user's applicable resistance modifier (Strength or Dexterity) by +2 steps, but the wearer suffers a +2 penalty to attacks outside the field. A charge pack lasts for 10 rounds."
+                    "avail": "Con",
+                    "cost": "2500"
                 },
-                {
-                    "name": "BodyGuard Ballistic Vest",
+                "bodyguard-ballistic-vest": {
                     "mass": "3",
                     "ap": "0",
                     "lhe": "d6-1/d6/d6-2",
                     "type": "O",
                     "hide": "+3",
-                    "avail": "Común",
-                    "cost": "750",
-                    "id": "bodyguard-ballistic-vest",
-                    "description": "The BodyGuard vest is one of the most popular personal armors available. It is significantly lighter and more durable than its predecessors..."
+                    "avail": "Com",
+                    "cost": "750"
                 },
-                {
-                    "name": "Landsknecht 34 Ballistic Jacket",
+                "landsknecht-34-ballistic-jacket": {
                     "mass": "6",
                     "ap": "+1",
                     "lhe": "d6-1/d4+1/d4-1",
                     "type": "O",
                     "hide": "+1",
-                    "avail": "Controlada",
-                    "cost": "1650",
-                    "id": "landsknecht-34-ballistic-jacket",
-                    "description": "The Landsknecht is about the heaviest armor that could be worn in a rough-and-tumble spaceport without inviting unwelcome attention..."
+                    "avail": "Con",
+                    "cost": "1650"
                 },
-                {
-                    "name": "Haramaki long coat",
+                "haramaki-long-coat": {
                     "mass": "3",
                     "ap": "0",
                     "lhe": "d4/d4/d6-2",
                     "type": "O",
                     "hide": "+3",
-                    "avail": "Común",
-                    "cost": "800",
-                    "id": "haramaki-long-coat",
-                    "description": "Designed for comfortable wear all day long, the Haramaki long coat provides a modest increase in protective value..."
+                    "avail": "Com",
+                    "cost": "800"
                 },
-                {
-                    "name": "Battlehawk Zero-G Assault Gear",
+                "battlehawk-zero-g-assault-gear": {
                     "mass": "8",
                     "ap": "+2",
                     "lhe": "d6-1/d6/d6-1",
                     "type": "G",
                     "hide": "-",
-                    "avail": "Controlada",
-                    "cost": "3250",
-                    "id": "battlehawk-zero-g-assault-gear",
-                    "description": "Designed especially for use in low-gravity situations..."
+                    "avail": "Con",
+                    "cost": "3250"
                 },
-                {
-                    "name": "Scout 230 AET Assault Gear",
+                "scout-230-aet-assault-gear": {
                     "mass": "12",
                     "ap": "+2",
                     "lhe": "d6/d8/d6-1",
                     "type": "G",
                     "hide": "-",
-                    "avail": "Militar",
-                    "cost": "3250",
-                    "id": "scout-230-aet-assault-gear",
-                    "description": "The Scout 230 is basically an armored version of a soft e-suit..."
+                    "avail": "Mil",
+                    "cost": "3250"
                 },
-                {
-                    "name": "ACN 4 Cerametal Armor",
+                "acn-4-cerametal-armor": {
                     "mass": "10",
                     "ap": "+2",
                     "lhe": "d6+1/d8+1/d6",
                     "type": "G",
                     "hide": "-",
-                    "avail": "Militar",
-                    "cost": "2000",
-                    "id": "acn-4-cerametal-armor",
-                    "description": "The ACN-4 has been adopted as the standard armor for the Concord Marines..."
+                    "avail": "Mil",
+                    "cost": "2000"
                 },
-                {
-                    "name": "Tiger Mod 6 Powered Armor",
+                "tiger-mod-6-powered-armor": {
                     "mass": "25",
                     "ap": "+2",
                     "lhe": "d6+1/d6+2/d6",
                     "type": "G",
-                    "avail": "Militar",
-                    "cost": "9000",
-                    "id": "tiger-mod-6-powered-armor",
-                    "description": "The Tiger's systems include a targeting system, image enhancement system, comm gear..."
+                    "avail": "Mil",
+                    "cost": "9000"
                 },
-                {
-                    "name": "ABM-5 Paladin Battle Armor",
+                "abm-5-paladin-battle-armor": {
                     "mass": "60",
                     "ap": "+4",
                     "lhe": "2d4+1/2d4+1/2d4",
                     "type": "G",
-                    "avail": "Restringida",
-                    "cost": "25000",
-                    "id": "abm-5-paladin-battle-armor",
-                    "description": "The Paladin is the standard powered armor suit of the Concord Marines..."
+                    "avail": "Res",
+                    "cost": "25000"
                 },
-                {
-                    "name": "ABS-11 Dragoon Recon Armor",
+                "abs-11-dragoon-recon-armor": {
                     "mass": "50",
                     "ap": "+3",
                     "lhe": "2d4+2/2d4+2/2d4+1",
                     "type": "G",
-                    "avail": "Restringida",
-                    "cost": "35000",
-                    "id": "abs-11-dragoon-recon-armor",
-                    "description": "Also known as a recon or scout body tank..."
+                    "avail": "Res",
+                    "cost": "35000"
                 }
-            ],
-            "id": "pl-7-gravity-age"
+            }
         },
-        {
-            "name": "PL 8 - Energy Age",
-            "items": [
-                {
-                    "name": "Ablative harness",
+        "pl-8-energy-age": {
+            "items": {
+                "ablative-harness": {
                     "mass": "2",
                     "ap": "0",
                     "lhe": "see description",
                     "type": "O",
                     "hide": "+3",
-                    "avail": "Militar",
-                    "cost": "5000",
-                    "id": "ablative-harness",
-                    "description": "The ablative harness makes use of a field of quantum particles that respond to force or energy by spontaneously transforming into semitangible virtual matter. The harness provides 50 points of protective energy when fully charged. Every point of mortal damage reduces the field by 3 points; every point of wound damage reduces the field by 2 points; and every point of stun damage reduces the field by 1 point. Recharging requires 1 hour per 10 points of field energy. It can be worn with other protection, except body tanks, powered attack armor, deflection harnesses, or any other PL 8 armor."
+                    "avail": "Mil",
+                    "cost": "5000"
                 },
-                {
-                    "name": "Body tank, over.",
+                "body-tank-over": {
                     "mass": "40",
                     "ap": "+5",
                     "lhe": "2d6+1/2d6+1/2d6",
                     "type": "G",
                     "hide": "-",
-                    "avail": "Restringida",
-                    "cost": "70000",
-                    "id": "body-tank-over",
-                    "description": "The overland body tank represents the highest achievement in heavy powered armor. It has all the features of a zero-g body tank with higher protection values, but retains a light and streamlined look. It adds a flight-capable, gravity-based engine, allowing its user to soar meters over the ground at up to 100 kilometers per hour for as long as 8 hours."
+                    "avail": "Res",
+                    "cost": "70000"
                 },
-                {
-                    "name": "Displacer softsuit",
+                "displacer-softsuit": {
                     "mass": "3",
                     "ap": "0",
                     "lhe": "see description",
                     "type": "O",
                     "hide": "+4",
-                    "avail": "Restringida",
-                    "cost": "7500",
-                    "id": "displacer-softsuit",
-                    "description": "This is a CF softsuit with gravitonic circuitry that makes the image of the user appear to blur and shift. This provides protection from weapons that require a direct target, but not against blast radius weapons. It provides a +3 step increase to the wearer's Strength and Dexterity resistance modifiers. After 10 rounds, the charge cell must be replaced (extra cells cost $100). Cannot be used with other armor."
+                    "avail": "Res",
+                    "cost": "7500"
                 },
-                {
-                    "name": "Energy web",
+                "energy-web": {
                     "mass": "2",
                     "ap": "0",
                     "lhe": "d6-1/d6-1/d6+2",
                     "type": "O",
                     "hide": "+3",
-                    "avail": "Militar",
-                    "cost": "4000",
-                    "id": "energy-web",
-                    "description": "The energy web is a CF softsuit with an interwoven energy dispersement web. While largely ineffective against physical attacks, it provides excellent protection from energy weapons by dispersing the energy and directing it harmlessly away. It doesn't require a power source, acting like a lightning rod to ground and disperse energy. It cannot be used with other armor."
+                    "avail": "Mil",
+                    "cost": "4000"
                 },
-                {
-                    "name": "Stealth softsuit",
+                "stealth-softsuit": {
                     "mass": "2",
                     "ap": "0",
                     "lhe": "see description",
                     "type": "O",
                     "hide": "+4",
-                    "avail": "Restringida",
-                    "cost": "10000",
-                    "id": "stealth-softsuit",
-                    "description": "The stealth softsuit renders its wearer almost invisible. Observers suffer a +3 penalty to spot the user. If noticed, the wearer still receives a +1 resistance modifier increase on attacks directed against them. The charge cell lasts for 2 hours (extra cells cost $100). The suit must be near the body and exposed to operate, so it cannot be used with other armor."
+                    "avail": "Res",
+                    "cost": "10000"
                 }
-            ],
-            "id": "pl-8-energy-age"
+            }
         }
-    ]
+    }
 }

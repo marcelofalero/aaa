@@ -1,12 +1,12 @@
 +++
 title = "Aguante"
 attribute = "CON"
-category = "Otros"
+category = "Other"
 type = "skill"
 layout = "list"
 +++
 
-Esta amplia habilidad mide la fortaleza física de un personaje CON respecto a los efectos del daño Mortal y la fatiga.
+Esta amplia habilidad mide la fortaleza física de un personaje con respecto a los efectos del daño Mortal y la fatiga.
 **Nota:** Esta habilidad es gratuita para personajes humanos, mechatus, sesheyan, t'sa y weren.
 ---
 ### Morir
@@ -33,7 +33,7 @@ A medida que un personaje adquiere rangos en la habilidad de resistencia, se vue
 ## Resist pain
 {{< specialty attr="CON" untrained="no" cost="5" >}}
 
-Resistir el dolor permite a un personaje funcionar normalmente e ignorar algunas o todas las penalizaciones de la situación por sufrir grandes cantidades de daño por aturdimiento, herida o Mortal (pero no por fatiga). Un personaje CON esta especialidad puede tener la oportunidad **una vez por escena de combate** de comprobar la eficacia de su capacidad para resistir el dolor. La primera vez durante una escena de combate cuando el personaje ha recibido puntos de aturdimiento o puntos de herida, o cuando recibe al menos 1 punto de daño Mortal, realiza una prueba de habilidad de resistir el dolor.
+Resistir el dolor permite a un personaje funcionar normalmente e ignorar algunas o todas las penalizaciones de la situación por sufrir grandes cantidades de daño por aturdimiento, herida o Mortal (pero no por fatiga). Un personaje con esta especialidad puede tener la oportunidad **una vez por escena de combate** de comprobar la eficacia de su capacidad para resistir el dolor. La primera vez durante una escena de combate cuando el personaje ha recibido puntos de aturdimiento o puntos de herida, o cuando recibe al menos 1 punto de daño Mortal, realiza una prueba de habilidad de resistir el dolor.
 **Nota:** Esta prueba no cuenta como una acción y se lleva a cabo antes de que cualquier personaje intente realizar alguna acción. El resultado de la prueba de resistencia al dolor dura el resto de la escena del combate.
 ### Resultados
 - **Fallo crítico:** El personaje sucumbió al dolor y **no puede actuar durante 2d4 fases**.

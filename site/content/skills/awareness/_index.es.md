@@ -1,7 +1,7 @@
 +++
 title = "Alerta"
-attribute = "VOL"
-category = "Otros"
+attribute = "WIL"
+category = "Other"
 type = "skill"
 layout = "list"
 +++
@@ -13,14 +13,14 @@ Notar algo podría ser tan simple como dar una pista que el personaje se perdió
 ### Pautas de uso
 La habilidad amplia Conciencia y sus especialidades son ejemplos de cómo se aplica la regla general sobre la tirada de dados: los dados sólo deben tirarse en una prueba de habilidad en una situación en la que el director del juego necesita determinar si un personaje es capaz de hacer algo difícil o fuera de lo **ordinario**.
 
-La mayoría de las veces, los personajes CON puntuaciones respetables en Conciencia o sus especialidades tendrán éxito automáticamente cuando exista algo que pueda notarse o percibirse (por ejemplo, ver un árbol caído bloqueando un camino). Se requiere una prueba de habilidad para ver si el personaje nota detalles sutiles (por ejemplo, un agujero en el baúl donde se esconde un objeto).
+La mayoría de las veces, los personajes con puntuaciones respetables en Conciencia o sus especialidades tendrán éxito automáticamente cuando exista algo que pueda notarse o percibirse (por ejemplo, ver un árbol caído bloqueando un camino). Se requiere una prueba de habilidad para ver si el personaje nota detalles sutiles (por ejemplo, un agujero en el baúl donde se esconde un objeto).
 
 ### Modificadores
 - **Sensores:** Algunos equipos de sensores pueden proporcionar beneficios para las pruebas de Conciencia.
 - **Habilidades del oponente:** El uso de ciertas habilidades por parte de otro personaje (como Sigilo o Seguridad) puede agregar modificadores a una prueba de Conciencia.
 
 ## Intuición
-{{< specialty attr="VOL" untrained="yes" cost="1" >}}
+{{< specialty attr="WIL" untrained="yes" cost="1" >}}
 
 Esta habilidad especial representa los instintos naturales de un personaje: la capacidad de sentir el peligro cuando no hay signos evidentes, evitar la sorpresa o dar un salto lógico intuitivo sin el apoyo de hechos concretos. Es la capacidad de hacer una "mejor suposición" en una situación determinada.
 
@@ -36,9 +36,9 @@ Cuando un personaje quiere hacer una "mejor suposición" intuitiva, el Director 
 ---
 
 ## Percepción
-{{< specialty attr="VOL" untrained="yes" cost="3" >}}
+{{< specialty attr="WIL" untrained="yes" cost="3" >}}
 
-Esta habilidad especial representa el estado de alerta y los poderes de observación de un personaje: el personaje nota algo ya sea conscientemente o en un nivel subliminal. Si bien la intuición es un sentimiento o un sentido inexplicable, la percepción funciona CON signos que pueden ser detectados por los sentidos normales (por ejemplo, una ramita rota, el clic del seguro de un arma, un susurro en el viento).
+Esta habilidad especial representa el estado de alerta y los poderes de observación de un personaje: el personaje nota algo ya sea conscientemente o en un nivel subliminal. Si bien la intuición es un sentimiento o un sentido inexplicable, la percepción funciona con signos que pueden ser detectados por los sentidos normales (por ejemplo, una ramita rota, el clic del seguro de un arma, un susurro en el viento).
 
 ### Detectar problemas
 Cuando obviamente existe un peligro potencial en una situación, el uso subconsciente de esta habilidad por parte de un personaje puede ayudarlo a evitar ser tomado por sorpresa. El Director de Juego exige controles de percepción; los jugadores no los solicitan.
@@ -47,9 +47,9 @@ Cuando obviamente existe un peligro potencial en una situación, el uso subconsc
 ---
 
 ## Sentido psiónico
-{{< specialty attr="VOL" untrained="no" cost="4" >}}
+{{< specialty attr="WIL" untrained="no" cost="4" >}}
 
-**Solo entrenado.** Solo los personajes capaces de usar poderes psiónicos (como Mindwalkers) o aquellos CON la ventaja "Conciencia psiónica" pueden comprar y usar esta habilidad.
+**Solo entrenado.** Solo los personajes capaces de usar poderes psiónicos (como Mindwalkers) o aquellos con la ventaja "Conciencia psiónica" pueden comprar y usar esta habilidad.
 
 Esta habilidad especial permite a un personaje detectar la activación de poderes psiónicos y la presencia de fenómenos psiónicos. Puede ayudar a identificar el tipo de poder, la dirección de su fuente y la intensidad aproximada del usuario psiónico.
 

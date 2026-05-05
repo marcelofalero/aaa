@@ -1,12 +1,12 @@
 +++
 title = "Administración"
-attribute = "VOL"
-category = "Técnica"
+attribute = "WIL"
+category = "Technical"
 type = "skill"
 layout = "list"
 +++
 
-Esta amplia habilidad proporciona al personaje conocimiento sobre los formularios y procedimientos necesarios para administrar una oficina u organización de casi cualquier tipo. CON esta habilidad, un personaje comprende la programación, la gestión de personal y equipos, y las regulaciones y leyes que se aplican a tales esfuerzos. Cualquier organización grande, incluidos gobiernos, agencias y corporaciones, tiene algún tipo de burocracia administrativa CON la que algún día un personaje tendrá que interactuar. Esta habilidad le permite intentar identificar a los administradores adecuados CON los que lidiar en una situación particular, los procedimientos adecuados a seguir y la mejor manera de eliminar la burocracia.
+Esta amplia habilidad proporciona al personaje conocimiento sobre los formularios y procedimientos necesarios para administrar una oficina u organización de casi cualquier tipo. con esta habilidad, un personaje comprende la programación, la gestión de personal y equipos, y las regulaciones y leyes que se aplican a tales esfuerzos. Cualquier organización grande, incluidos gobiernos, agencias y corporaciones, tiene algún tipo de burocracia administrativa con la que algún día un personaje tendrá que interactuar. Esta habilidad le permite intentar identificar a los administradores adecuados con los que lidiar en una situación particular, los procedimientos adecuados a seguir y la mejor manera de eliminar la burocracia.
 
 ### Interacción organizacional
 La habilidad de Administración se puede utilizar en un intento de cambiar la actitud de un empleado individual de alguna corporación u organización. En tal caso, se trata como una [habilidad de encuentro](/core-mechanics/characters-in-action/#encounter-scene). Si el uso de esta habilidad da como resultado que la actitud del objetivo cambie a Amistosa o mejor, esto puede proporcionar una bonificación en cualquier prueba de habilidad posterior para obtener información o cooperación de la organización que es la empleadora del objetivo.
@@ -38,14 +38,14 @@ La habilidad de Administración de un personaje también se puede utilizar para 
 Del mismo modo, la complejidad funciona al revés: ralentizar una solicitud extremadamente sencilla en un sistema pequeño es una hazaña de complejidad **increíble**.
 
 ## Burocracia
-{{< specialty attr="VOL" untrained="yes" cost="3" >}}
+{{< specialty attr="WIL" untrained="yes" cost="3" >}}
 
-Esta habilidad especializada mide la capacidad de un personaje para engrasar (u obstruir) las ruedas de la burocracia. Las solicitudes, permisos, autorizaciones, informes u otras solicitudes burocráticas importantes se pueden procesar de forma más rápida y eficiente CON el uso de esta habilidad. Por el contrario, esta habilidad se puede utilizar para hacer que los mismos procesos burocráticos sean más lentos para otros.
+Esta habilidad especializada mide la capacidad de un personaje para engrasar (u obstruir) las ruedas de la burocracia. Las solicitudes, permisos, autorizaciones, informes u otras solicitudes burocráticas importantes se pueden procesar de forma más rápida y eficiente con el uso de esta habilidad. Por el contrario, esta habilidad se puede utilizar para hacer que los mismos procesos burocráticos sean más lentos para otros.
 
 ---
 
 ## Gestión
-{{< specialty attr="VOL" untrained="yes" cost="3" >}}
+{{< specialty attr="WIL" untrained="yes" cost="3" >}}
 
 Esta habilidad indica la capacidad de un personaje para gestionar tareas administrativas y de personal. Un gerente calificado puede aumentar la productividad, inspirar a los trabajadores y supervisar el funcionamiento de una empresa u oficina.
 

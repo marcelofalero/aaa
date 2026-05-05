@@ -29,5 +29,5 @@ Un equipo de micrograbación de alta gama, un pase de prensa oficial (o una fals
 
 ## Tendencias (Elige 2):
 * **La Exposición:** Prioriza documentar un crimen, una conspiración o un evento antes que detenerlo, poniéndote en peligro táctico para asegurar que el metraje o la historia sobrevivan.
-* **La Pregunta Difícil:** Interroga o provoca agresivamente a un individuo poderoso en un entorno Social, destruyendo el progreso diplomático para evaluar su reacción.
+* **La Pregunta Difícil:** Interroga o provoca agresivamente a un individuo poderoso en un entorno social, destruyendo el progreso diplomático para evaluar su reacción.
 

@@ -27,3 +27,7 @@ Un comunicador de múltiples frecuencias, un pequeño bloc de notas digital encr
 ## Capacidad Especial:
 **Tengo un Tipo para Eso:** Bono de -1 paso al intentar localizar equipo raro o información restringida en un puerto espacial o centro urbano.
 
+## Tendencias (Elige 2):
+* **The Negotiator:** Solve a conflict by brokering a deal that moves the plot forward.
+* **The Asset Manager:** Risk an objective to preserve a useful contact or piece of equipment.
+
