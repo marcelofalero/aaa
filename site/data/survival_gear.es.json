@@ -1,123 +1,133 @@
 {
     "config": {
-        "default": {
-            "name": "Default",
-            "columns": {
-                "en": [
-                    {
-                        "name": "Armor",
-                        "key": "name"
-                    },
-                    {
-                        "name": "Mass",
-                        "key": "mass"
-                    },
-                    {
-                        "name": "Pen.",
-                        "key": "ap"
-                    },
-                    {
-                        "name": "LI/HI/En",
-                        "key": "lhe"
-                    },
-                    {
-                        "name": "Type",
-                        "key": "type"
-                    },
-                    {
-                        "name": "Hide",
-                        "key": "hide"
-                    },
-                    {
-                        "name": "Avail.",
-                        "key": "avail"
-                    },
-                    {
-                        "name": "Cost ($)",
-                        "key": "cost"
-                    },
-                    {
-                        "name": "Description",
-                        "key": "description",
-                        "hidden": true
-                    }
-                ],
-                "es": [
-                    {
-                        "name": "Armadura",
-                        "key": "name"
-                    },
-                    {
-                        "name": "Masa",
-                        "key": "mass"
-                    },
-                    {
-                        "name": "Pena.",
-                        "key": "ap"
-                    },
-                    {
-                        "name": "LI/HI/En",
-                        "key": "lhe"
-                    },
-                    {
-                        "name": "Tipo",
-                        "key": "type"
-                    },
-                    {
-                        "name": "Ocult.",
-                        "key": "hide"
-                    },
-                    {
-                        "name": "Disp.",
-                        "key": "avail"
-                    },
-                    {
-                        "name": "Coste ($)",
-                        "key": "cost"
-                    },
-                    {
-                        "name": "Descripción",
-                        "key": "description",
-                        "hidden": true
-                    }
-                ]
-            }
+        "name": "Default",
+        "columns": {
+            "en": [
+                {
+                    "name": "Armor",
+                    "key": "name"
+                },
+                {
+                    "name": "Mass",
+                    "key": "mass"
+                },
+                {
+                    "name": "Pen.",
+                    "key": "ap"
+                },
+                {
+                    "name": "LI/HI/En",
+                    "key": "lhe"
+                },
+                {
+                    "name": "Type",
+                    "key": "type"
+                },
+                {
+                    "name": "Hide",
+                    "key": "hide"
+                },
+                {
+                    "name": "Avail.",
+                    "key": "avail"
+                },
+                {
+                    "name": "Cost ($)",
+                    "key": "cost"
+                },
+                {
+                    "name": "Description",
+                    "key": "description",
+                    "hidden": true
+                }
+            ],
+            "es": [
+                {
+                    "name": "Armadura",
+                    "key": "name"
+                },
+                {
+                    "name": "Masa",
+                    "key": "mass"
+                },
+                {
+                    "name": "Pena.",
+                    "key": "ap"
+                },
+                {
+                    "name": "LI/HI/En",
+                    "key": "lhe"
+                },
+                {
+                    "name": "Tipo",
+                    "key": "type"
+                },
+                {
+                    "name": "Ocult.",
+                    "key": "hide"
+                },
+                {
+                    "name": "Disp.",
+                    "key": "avail"
+                },
+                {
+                    "name": "Coste ($)",
+                    "key": "cost"
+                },
+                {
+                    "name": "Descripción",
+                    "key": "description",
+                    "hidden": true
+                }
+            ]
         }
     },
-    "items": {
-        "pl-7-survival-gear": {
-            "items": {
-                "terrainmaster-5-portable-cabin": {
-                    "pl": "7",
-                    "mass": "30 kg",
-                    "cost": "117580",
-                    "avail": "Com"
-                },
-                "gliese-300-habitat-dome": {
-                    "pl": "7",
-                    "mass": "50 kg",
-                    "cost": "1750",
-                    "avail": "Com"
-                },
-                "armadillo-mpt-two-man-tent": {
+    "items": [
+        {
+            "id": "pl-7-survival-gear",
+            "name": "Pl 7 Survival Gear",
+            "items": [
+                {
                     "pl": "7",
                     "mass": "1 kg",
                     "cost": "135",
-                    "avail": "Com"
+                    "avail": "Com",
+                    "id": "armadillo-mpt-two-man-tent",
+                    "name": "Armadillo Mpt Two Man Tent"
                 },
-                "unner-60-climate-suit": {
-                    "pl": "7",
-                    "mass": "1 kg",
-                    "cost": "825",
-                    "avail": "Common"
-                },
-                "explorer-d9-armored-e-suit": {
+                {
                     "pl": "7",
                     "mass": "5 kg",
                     "cost": "2550",
-                    "avail": "Com"
+                    "avail": "Com",
+                    "id": "explorer-d9-armored-e-suit",
+                    "name": "Explorer D9 Armored E Suit"
+                },
+                {
+                    "pl": "7",
+                    "mass": "50 kg",
+                    "cost": "1750",
+                    "avail": "Com",
+                    "id": "gliese-300-habitat-dome",
+                    "name": "Gliese 300 Habitat Dome"
+                },
+                {
+                    "pl": "7",
+                    "mass": "30 kg",
+                    "cost": "117580",
+                    "avail": "Com",
+                    "id": "terrainmaster-5-portable-cabin",
+                    "name": "Terrainmaster 5 Portable Cabin"
+                },
+                {
+                    "pl": "7",
+                    "mass": "1 kg",
+                    "cost": "825",
+                    "avail": "Common",
+                    "id": "unner-60-climate-suit",
+                    "name": "Unner 60 Climate Suit"
                 }
-            }
+            ]
         }
-    }
+    ]
 }

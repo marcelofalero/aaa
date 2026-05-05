@@ -1,313 +1,395 @@
 {
     "config": {
-        "default": {
-            "name": "Default",
-            "columns": {
-                "en": [
-                    {
-                        "name": "Gear",
-                        "key": "name"
-                    },
-                    {
-                        "name": "Nanocomp.",
-                        "key": "nanocomp"
-                    },
-                    {
-                        "name": "Mass",
-                        "key": "mass"
-                    },
-                    {
-                        "name": "Size",
-                        "key": "size"
-                    },
-                    {
-                        "name": "Cost",
-                        "key": "cost"
-                    },
-                    {
-                        "name": "Description",
-                        "key": "description",
-                        "hidden": true
-                    }
-                ],
-                "es": [
-                    {
-                        "name": "Equipo",
-                        "key": "name"
-                    },
-                    {
-                        "name": "Nanocomp.",
-                        "key": "nanocomp"
-                    },
-                    {
-                        "name": "Masa",
-                        "key": "mass"
-                    },
-                    {
-                        "name": "Tamaño",
-                        "key": "size"
-                    },
-                    {
-                        "name": "Coste",
-                        "key": "cost"
-                    },
-                    {
-                        "name": "Descripción",
-                        "key": "description",
-                        "hidden": true
-                    }
-                ]
-            }
+        "name": "Default",
+        "columns": {
+            "en": [
+                {
+                    "name": "Gear",
+                    "key": "name"
+                },
+                {
+                    "name": "Nanocomp.",
+                    "key": "nanocomp"
+                },
+                {
+                    "name": "Mass",
+                    "key": "mass"
+                },
+                {
+                    "name": "Size",
+                    "key": "size"
+                },
+                {
+                    "name": "Cost",
+                    "key": "cost"
+                },
+                {
+                    "name": "Description",
+                    "key": "description",
+                    "hidden": true
+                }
+            ],
+            "es": [
+                {
+                    "name": "Equipo",
+                    "key": "name"
+                },
+                {
+                    "name": "Nanocomp.",
+                    "key": "nanocomp"
+                },
+                {
+                    "name": "Masa",
+                    "key": "mass"
+                },
+                {
+                    "name": "Tamaño",
+                    "key": "size"
+                },
+                {
+                    "name": "Coste",
+                    "key": "cost"
+                },
+                {
+                    "name": "Descripción",
+                    "key": "description",
+                    "hidden": true
+                }
+            ]
         }
     },
-    "items": {
-        "progress-level-6": {
-            "items": {
-                "battleklaw": {
+    "items": [
+        {
+            "id": "progress-level-6",
+            "name": "Progress Level 6",
+            "items": [
+                {
+                    "nanocomp": "Yes",
+                    "mass": "0.1",
+                    "size": "1",
+                    "cost": "1000 / 2000 / 4000",
+                    "id": "artificial-ear",
+                    "name": "Artificial Ear"
+                },
+                {
+                    "nanocomp": "Yes",
+                    "mass": "0.1",
+                    "size": "1",
+                    "cost": "1000 / 2000 / 4000",
+                    "id": "artificial-eye",
+                    "name": "Artificial Eye"
+                },
+                {
                     "nanocomp": "Yes",
                     "mass": "1",
                     "size": "2",
-                    "cost": "300 / 600 / 900"
+                    "cost": "300 / 600 / 900",
+                    "id": "battleklaw",
+                    "name": "Battleklaw"
                 },
-                "bioart": {
+                {
                     "nanocomp": "-",
                     "mass": "-",
                     "size": "-",
-                    "cost": "50 / 100 / 200"
+                    "cost": "50 / 100 / 200",
+                    "id": "bioart",
+                    "name": "Bioart"
                 },
-                "biowatch": {
+                {
                     "nanocomp": "-",
                     "mass": "-",
                     "size": "-",
-                    "cost": "50 / 100 / 300"
+                    "cost": "50 / 100 / 300",
+                    "id": "biowatch",
+                    "name": "Biowatch"
                 },
-                "body-plating-ordinary": {
-                    "nanocomp": "-",
-                    "mass": "20",
-                    "size": "2",
-                    "cost": "1500 / - / -"
-                },
-                "body-plating-good": {
-                    "nanocomp": "-",
-                    "mass": "40",
-                    "size": "3",
-                    "cost": "- / 3000 / 4500"
-                },
-                "body-plating-amazing": {
+                {
                     "nanocomp": "-",
                     "mass": "60",
                     "size": "4",
-                    "cost": "- / - / 3000"
+                    "cost": "- / - / 3000",
+                    "id": "body-plating-amazing",
+                    "name": "Body Plating Amazing"
                 },
-                "cyberlimb": {
+                {
+                    "nanocomp": "-",
+                    "mass": "40",
+                    "size": "3",
+                    "cost": "- / 3000 / 4500",
+                    "id": "body-plating-good",
+                    "name": "Body Plating Good"
+                },
+                {
+                    "nanocomp": "-",
+                    "mass": "20",
+                    "size": "2",
+                    "cost": "1500 / - / -",
+                    "id": "body-plating-ordinary",
+                    "name": "Body Plating Ordinary"
+                },
+                {
                     "nanocomp": "Yes",
                     "mass": "10",
                     "size": "2",
-                    "cost": "500 / 1000 / 2000"
+                    "cost": "500 / 1000 / 2000",
+                    "id": "cyberlimb",
+                    "name": "Cyberlimb"
                 },
-                "cyberoptics": {
+                {
                     "nanocomp": "Yes",
                     "mass": "-",
                     "size": "1",
-                    "cost": "1000 / 1500 / 2000"
+                    "cost": "1000 / 1500 / 2000",
+                    "id": "cyberoptics",
+                    "name": "Cyberoptics"
                 },
-                "fast-chip": {
+                {
                     "nanocomp": "Yes",
                     "mass": "-",
                     "size": "1",
-                    "cost": "500 / - / 3000"
+                    "cost": "500 / - / 3000",
+                    "id": "fast-chip",
+                    "name": "Fast Chip"
                 },
-                "muscleplus": {
+                {
                     "nanocomp": "Yes",
                     "mass": "2",
                     "size": "2",
-                    "cost": "1000 / 2000 / 3000"
+                    "cost": "1000 / 2000 / 3000",
+                    "id": "muscleplus",
+                    "name": "Muscleplus"
                 },
-                "nanocomputer": {
+                {
                     "nanocomp": "-",
                     "mass": "-",
                     "size": "1",
-                    "cost": "1000 / 2000 / 3000 / 4000"
+                    "cost": "1000 / 2000 / 3000 / 4000",
+                    "id": "nanocomputer",
+                    "name": "Nanocomputer"
                 },
-                "nijack": {
+                {
                     "nanocomp": "Yes",
                     "mass": "-",
                     "size": "1",
-                    "cost": "500 / - / -"
+                    "cost": "500 / - / -",
+                    "id": "nijack",
+                    "name": "Nijack"
                 },
-                "optic-screen": {
+                {
                     "nanocomp": "Yes",
                     "mass": "2",
                     "size": "-",
-                    "cost": "250 / - / -"
+                    "cost": "250 / - / -",
+                    "id": "optic-screen",
+                    "name": "Optic Screen"
                 },
-                "self-repair-unit": {
+                {
                     "nanocomp": "Yes",
                     "mass": "2",
                     "size": "2",
-                    "cost": "1000 / 2000 / 3000"
+                    "cost": "1000 / 2000 / 3000",
+                    "id": "self-repair-unit",
+                    "name": "Self Repair Unit"
                 },
-                "subdermal-comm": {
+                {
                     "nanocomp": "-",
                     "mass": "-",
                     "size": "1",
-                    "cost": "- / 500 / -"
+                    "cost": "- / 500 / -",
+                    "id": "subdermal-comm",
+                    "name": "Subdermal Comm"
                 },
-                "subdermal-weapon-mount-ordinary": {
-                    "nanocomp": "Yes",
-                    "mass": "2",
-                    "size": "2",
-                    "cost": "250 / - / -"
-                },
-                "subdermal-weapon-mount-good": {
-                    "nanocomp": "Yes",
-                    "mass": "2",
-                    "size": "3",
-                    "cost": "- / 500 / -"
-                },
-                "subdermal-weapon-mount-amazing": {
+                {
                     "nanocomp": "Yes",
                     "mass": "2",
                     "size": "4",
-                    "cost": "- / - / 750"
+                    "cost": "- / - / 750",
+                    "id": "subdermal-weapon-mount-amazing",
+                    "name": "Subdermal Weapon Mount Amazing"
                 },
-                "artificial-ear": {
+                {
                     "nanocomp": "Yes",
-                    "mass": "0.1",
-                    "size": "1",
-                    "cost": "1000 / 2000 / 4000"
-                },
-                "artificial-eye": {
-                    "nanocomp": "Yes",
-                    "mass": "0.1",
-                    "size": "1",
-                    "cost": "1000 / 2000 / 4000"
-                }
-            }
-        },
-        "progress-level-7": {
-            "items": {
-                "cf-skinweave": {
-                    "nanocomp": "-",
-                    "mass": "1",
-                    "size": "1",
-                    "cost": "1000 / 2000 / 3000"
-                },
-                "data-slot-passive": {
-                    "nanocomp": "-",
-                    "mass": "1",
-                    "size": "1",
-                    "cost": "500 / 700 / 900"
-                },
-                "er-slot": {
-                    "nanocomp": "Yes",
-                    "mass": "1",
-                    "size": "1",
-                    "cost": "500 / 1000 / 1500"
-                },
-                "er-slot-passive": {
-                    "nanocomp": "-",
-                    "mass": "1",
-                    "size": "1",
-                    "cost": "500 / 1000 / 1500"
-                },
-                "exoskeleton": {
-                    "nanocomp": "Yes",
-                    "mass": "30",
+                    "mass": "2",
                     "size": "3",
-                    "cost": "2000 / 3000 / 4000"
+                    "cost": "- / 500 / -",
+                    "id": "subdermal-weapon-mount-good",
+                    "name": "Subdermal Weapon Mount Good"
                 },
-                "neural-3d-ext": {
+                {
                     "nanocomp": "Yes",
-                    "mass": "1",
-                    "size": "1",
-                    "cost": "500 / 750 / 1000"
-                },
-                "reflex": {
-                    "nanocomp": "Yes",
-                    "mass": "-",
+                    "mass": "2",
                     "size": "2",
-                    "cost": "- / 2000 / -"
-                },
-                "accelerator": {
+                    "cost": "250 / - / -",
+                    "id": "subdermal-weapon-mount-ordinary",
+                    "name": "Subdermal Weapon Mount Ordinary"
+                }
+            ]
+        },
+        {
+            "id": "progress-level-7",
+            "name": "Progress Level 7",
+            "items": [
+                {
                     "nanocomp": "Yes",
                     "mass": "0.075",
                     "size": "-",
-                    "cost": "2500 / 5000 / 10000"
+                    "cost": "2500 / 5000 / 10000",
+                    "id": "accelerator",
+                    "name": "Accelerator"
                 },
-                "subdermal-nijack": {
-                    "nanocomp": "Yes",
-                    "mass": "-",
+                {
+                    "nanocomp": "-",
+                    "mass": "1",
                     "size": "1",
-                    "cost": "- / 700 / -"
+                    "cost": "1000 / 2000 / 3000",
+                    "id": "cf-skinweave",
+                    "name": "Cf Skinweave"
                 },
-                "wireless-nijack": {
+                {
                     "nanocomp": "Yes",
-                    "mass": "-",
-                    "size": "1",
-                    "cost": "- / 1000 / -"
-                },
-                "scanner-implant": {
-                    "nanocomp": "Yes",
-                    "mass": "0.35",
-                    "size": "2 / 1 / -",
-                    "cost": "1250 / 2500 / 3750"
-                },
-                "endoskeleton": {
-                    "nanocomp": "Yes",
-                    "mass": "15",
-                    "size": "3",
-                    "cost": "4000 / 6000 / 8000"
-                },
-                "subdermal-armor": {
-                    "nanocomp": "Yes",
-                    "mass": "15",
-                    "size": "2",
-                    "cost": "1500 / 3000 / 6000"
-                },
-                "systemic-reinforcement": {
-                    "nanocomp": "Yes",
-                    "mass": "4",
+                    "mass": "0.1",
                     "size": "-",
-                    "cost": "5000 / 10000 / 15000"
+                    "cost": "500 / 1500 / 2500",
+                    "id": "comm-port",
+                    "name": "Comm Port"
                 },
-                "cortex-bomb": {
+                {
                     "nanocomp": "-",
                     "mass": "0.1",
                     "size": "1",
-                    "cost": 1500
+                    "cost": 1500,
+                    "id": "cortex-bomb",
+                    "name": "Cortex Bomb"
                 },
-                "deflection-web": {
+                {
+                    "nanocomp": "-",
+                    "mass": "1",
+                    "size": "1",
+                    "cost": "500 / 700 / 900",
+                    "id": "data-slot-passive",
+                    "name": "Data Slot Passive"
+                },
+                {
                     "nanocomp": "Yes",
                     "mass": "3",
                     "size": "2",
-                    "cost": 3500
+                    "cost": 3500,
+                    "id": "deflection-web",
+                    "name": "Deflection Web"
                 },
-                "gp-general-purpose-implant": {
+                {
+                    "nanocomp": "Yes",
+                    "mass": "15",
+                    "size": "3",
+                    "cost": "4000 / 6000 / 8000",
+                    "id": "endoskeleton",
+                    "name": "Endoskeleton"
+                },
+                {
+                    "nanocomp": "Yes",
+                    "mass": "1",
+                    "size": "1",
+                    "cost": "500 / 1000 / 1500",
+                    "id": "er-slot",
+                    "name": "Er Slot"
+                },
+                {
+                    "nanocomp": "-",
+                    "mass": "1",
+                    "size": "1",
+                    "cost": "500 / 1000 / 1500",
+                    "id": "er-slot-passive",
+                    "name": "Er Slot Passive"
+                },
+                {
+                    "nanocomp": "Yes",
+                    "mass": "30",
+                    "size": "3",
+                    "cost": "2000 / 3000 / 4000",
+                    "id": "exoskeleton",
+                    "name": "Exoskeleton"
+                },
+                {
                     "nanocomp": "Yes",
                     "mass": "-",
                     "size": "2 / 3 / 4",
-                    "cost": "500 / 1000 / 2000"
+                    "cost": "500 / 1000 / 2000",
+                    "id": "gp-general-purpose-implant",
+                    "name": "Gp General Purpose Implant"
                 },
-                "comm-port": {
-                    "nanocomp": "Yes",
-                    "mass": "0.1",
-                    "size": "-",
-                    "cost": "500 / 1500 / 2500"
-                },
-                "gunsight": {
+                {
                     "nanocomp": "Yes",
                     "mass": "0.3",
                     "size": "-",
-                    "cost": "1500 / 2500 / 4500"
+                    "cost": "1500 / 2500 / 4500",
+                    "id": "gunsight",
+                    "name": "Gunsight"
                 },
-                "system-link": {
+                {
+                    "nanocomp": "Yes",
+                    "mass": "1",
+                    "size": "1",
+                    "cost": "500 / 750 / 1000",
+                    "id": "neural-3d-ext",
+                    "name": "Neural 3D Ext"
+                },
+                {
+                    "nanocomp": "Yes",
+                    "mass": "-",
+                    "size": "2",
+                    "cost": "- / 2000 / -",
+                    "id": "reflex",
+                    "name": "Reflex"
+                },
+                {
+                    "nanocomp": "Yes",
+                    "mass": "0.35",
+                    "size": "2 / 1 / -",
+                    "cost": "1250 / 2500 / 3750",
+                    "id": "scanner-implant",
+                    "name": "Scanner Implant"
+                },
+                {
+                    "nanocomp": "Yes",
+                    "mass": "15",
+                    "size": "2",
+                    "cost": "1500 / 3000 / 6000",
+                    "id": "subdermal-armor",
+                    "name": "Subdermal Armor"
+                },
+                {
+                    "nanocomp": "Yes",
+                    "mass": "-",
+                    "size": "1",
+                    "cost": "- / 700 / -",
+                    "id": "subdermal-nijack",
+                    "name": "Subdermal Nijack"
+                },
+                {
                     "nanocomp": "Yes",
                     "mass": "0.3",
                     "size": "1",
-                    "cost": "1000 / 2000 / 4000"
+                    "cost": "1000 / 2000 / 4000",
+                    "id": "system-link",
+                    "name": "System Link"
+                },
+                {
+                    "nanocomp": "Yes",
+                    "mass": "4",
+                    "size": "-",
+                    "cost": "5000 / 10000 / 15000",
+                    "id": "systemic-reinforcement",
+                    "name": "Systemic Reinforcement"
+                },
+                {
+                    "nanocomp": "Yes",
+                    "mass": "-",
+                    "size": "1",
+                    "cost": "- / 1000 / -",
+                    "id": "wireless-nijack",
+                    "name": "Wireless Nijack"
                 }
-            }
+            ]
         }
-    }
+    ]
 }

@@ -1,472 +1,566 @@
 {
     "config": {
-        "default": {
-            "name": "Default",
-            "columns": {
-                "en": [
-                    {
-                        "name": "Armor",
-                        "key": "name"
-                    },
-                    {
-                        "name": "Mass",
-                        "key": "mass"
-                    },
-                    {
-                        "name": "Pen.",
-                        "key": "ap"
-                    },
-                    {
-                        "name": "LI/HI/En",
-                        "key": "lhe"
-                    },
-                    {
-                        "name": "Type",
-                        "key": "type"
-                    },
-                    {
-                        "name": "Hide",
-                        "key": "hide"
-                    },
-                    {
-                        "name": "Avail.",
-                        "key": "avail"
-                    },
-                    {
-                        "name": "Cost ($)",
-                        "key": "cost"
-                    },
-                    {
-                        "name": "Description",
-                        "key": "description",
-                        "hidden": true
-                    }
-                ],
-                "es": [
-                    {
-                        "name": "Armadura",
-                        "key": "name"
-                    },
-                    {
-                        "name": "Masa",
-                        "key": "mass"
-                    },
-                    {
-                        "name": "Pena.",
-                        "key": "ap"
-                    },
-                    {
-                        "name": "IL/IP/En",
-                        "key": "lhe"
-                    },
-                    {
-                        "name": "Tipo",
-                        "key": "type"
-                    },
-                    {
-                        "name": "Ocult.",
-                        "key": "hide"
-                    },
-                    {
-                        "name": "Disp.",
-                        "key": "avail"
-                    },
-                    {
-                        "name": "Coste ($)",
-                        "key": "cost"
-                    },
-                    {
-                        "name": "Descripción",
-                        "key": "description",
-                        "hidden": true
-                    }
-                ]
-            }
+        "name": "Default",
+        "columns": {
+            "en": [
+                {
+                    "name": "Armor",
+                    "key": "name"
+                },
+                {
+                    "name": "Mass",
+                    "key": "mass"
+                },
+                {
+                    "name": "Pen.",
+                    "key": "ap"
+                },
+                {
+                    "name": "LI/HI/En",
+                    "key": "lhe"
+                },
+                {
+                    "name": "Type",
+                    "key": "type"
+                },
+                {
+                    "name": "Hide",
+                    "key": "hide"
+                },
+                {
+                    "name": "Avail.",
+                    "key": "avail"
+                },
+                {
+                    "name": "Cost ($)",
+                    "key": "cost"
+                },
+                {
+                    "name": "Description",
+                    "key": "description",
+                    "hidden": true
+                }
+            ],
+            "es": [
+                {
+                    "name": "Armadura",
+                    "key": "name"
+                },
+                {
+                    "name": "Masa",
+                    "key": "mass"
+                },
+                {
+                    "name": "Pena.",
+                    "key": "ap"
+                },
+                {
+                    "name": "IL/IP/En",
+                    "key": "lhe"
+                },
+                {
+                    "name": "Tipo",
+                    "key": "type"
+                },
+                {
+                    "name": "Ocult.",
+                    "key": "hide"
+                },
+                {
+                    "name": "Disp.",
+                    "key": "avail"
+                },
+                {
+                    "name": "Coste ($)",
+                    "key": "cost"
+                },
+                {
+                    "name": "Descripción",
+                    "key": "description",
+                    "hidden": true
+                }
+            ]
         }
     },
-    "items": {
-        "pl-0-stone-age": {
-            "items": {
-                "hide-armor": {
+    "items": [
+        {
+            "id": "pl-0-stone-age",
+            "name": "Pl 0 Stone Age",
+            "items": [
+                {
                     "mass": "10",
                     "ap": "+1",
                     "lhe": "d6-3/d4-3/d6-4",
                     "type": "O",
                     "hide": "-",
                     "avail": "Any",
-                    "cost": "100"
+                    "cost": "100",
+                    "id": "hide-armor",
+                    "name": "Hide Armor"
                 }
-            }
+            ]
         },
-        "pl-1-bronze-iron-age": {
-            "items": {
-                "leather-armor": {
+        {
+            "id": "pl-1-bronze-iron-age",
+            "name": "Pl 1 Bronze Iron Age",
+            "items": [
+                {
+                    "mass": "4",
+                    "ap": "+1",
+                    "lhe": "+1/0/0",
+                    "type": "O",
+                    "hide": "-",
+                    "avail": "Com",
+                    "cost": "200",
+                    "id": "helm",
+                    "name": "Helm"
+                },
+                {
                     "mass": "7",
                     "ap": "+1",
                     "lhe": "d6-2/d6-4/d6-4",
                     "type": "O",
                     "hide": "+2",
                     "avail": "Any",
-                    "cost": "350"
+                    "cost": "350",
+                    "id": "leather-armor",
+                    "name": "Leather Armor"
                 },
-                "helm": {
-                    "mass": "4",
-                    "ap": "+1",
-                    "lhe": "+1/0/0",
-                    "type": "O",
-                    "hide": "-",
-                    "avail": "Com",
-                    "cost": "200"
-                },
-                "shield-small": {
+                {
                     "mass": "4",
                     "ap": "0",
                     "lhe": "+1/0/0",
                     "type": "O",
                     "hide": "+1",
                     "avail": "Any",
-                    "cost": "75"
+                    "cost": "75",
+                    "id": "shield-small",
+                    "name": "Shield Small"
                 }
-            }
+            ]
         },
-        "pl-2-middle-ages": {
-            "items": {
-                "chain-mail": {
+        {
+            "id": "pl-2-middle-ages",
+            "name": "Pl 2 Middle Ages",
+            "items": [
+                {
                     "mass": "15",
                     "ap": "+1",
                     "lhe": "d6-1/d6-4/d6-4",
                     "type": "O",
                     "hide": "+1",
                     "avail": "Com",
-                    "cost": "750"
+                    "cost": "750",
+                    "id": "chain-mail",
+                    "name": "Chain Mail"
                 },
-                "plate-full": {
+                {
                     "mass": "25",
                     "ap": "+3",
                     "lhe": "d6+1/d6-3/d6-3",
                     "type": "O",
                     "hide": "-",
                     "avail": "Con",
-                    "cost": "2000"
+                    "cost": "2000",
+                    "id": "plate-full",
+                    "name": "Plate Full"
                 },
-                "plate-partial": {
+                {
                     "mass": "20",
                     "ap": "+2",
                     "lhe": "d6/d8-5/d6-4",
                     "type": "O",
                     "hide": "+1",
                     "avail": "Com",
-                    "cost": "1000"
+                    "cost": "1000",
+                    "id": "plate-partial",
+                    "name": "Plate Partial"
                 },
-                "shield-medium": {
+                {
                     "mass": "7",
                     "ap": "0",
                     "lhe": "+2/+1/0",
                     "type": "O",
                     "hide": "-",
                     "avail": "Any",
-                    "cost": "300"
+                    "cost": "300",
+                    "id": "shield-medium",
+                    "name": "Shield Medium"
                 }
-            }
+            ]
         },
-        "pl-3-age-of-reason": {
-            "items": {
-                "leather-coat": {
+        {
+            "id": "pl-3-age-of-reason",
+            "name": "Pl 3 Age Of Reason",
+            "items": [
+                {
                     "mass": "5",
                     "ap": "0",
                     "lhe": "d6-3/d4-3/d4-2",
                     "type": "O",
                     "hide": "+3",
                     "avail": "Any",
-                    "cost": "500"
+                    "cost": "500",
+                    "id": "leather-coat",
+                    "name": "Leather Coat"
                 }
-            }
+            ]
         },
-        "pl-4-industrial-age": {
-            "items": {
-                "flak-jacket": {
+        {
+            "id": "pl-4-industrial-age",
+            "name": "Pl 4 Industrial Age",
+            "items": [
+                {
                     "mass": "15",
                     "ap": "+2",
                     "lhe": "d6-2/d4-1/d6-3",
                     "type": "O",
                     "hide": "-",
                     "avail": "Con",
-                    "cost": "800"
+                    "cost": "800",
+                    "id": "flak-jacket",
+                    "name": "Flak Jacket"
                 }
-            }
+            ]
         },
-        "pl-5-information-age": {
-            "items": {
-                "assault-gear": {
+        {
+            "id": "pl-5-information-age",
+            "name": "Pl 5 Information Age",
+            "items": [
+                {
                     "mass": "10",
                     "ap": "+3",
                     "lhe": "d6-1/d6-1/d6-1",
                     "type": "O",
                     "hide": "-",
                     "avail": "Con",
-                    "cost": "1500"
+                    "cost": "1500",
+                    "id": "assault-gear",
+                    "name": "Assault Gear"
                 },
-                "battle-vest": {
+                {
                     "mass": "5",
                     "ap": "+1",
                     "lhe": "d6-3/d6-2/d4-2",
                     "type": "O",
                     "hide": "+2",
                     "avail": "Con",
-                    "cost": "600"
+                    "cost": "600",
+                    "id": "battle-vest",
+                    "name": "Battle Vest"
                 },
-                "riot-helmet": {
+                {
                     "mass": "2",
                     "ap": "+1",
                     "lhe": "+1/+1/0",
                     "type": "O",
                     "hide": "-",
                     "avail": "Con",
-                    "cost": "300"
+                    "cost": "300",
+                    "id": "riot-helmet",
+                    "name": "Riot Helmet"
                 },
-                "riot-shield": {
+                {
                     "mass": "4",
                     "ap": "+2",
                     "lhe": "+1/+1/+1",
                     "type": "O",
                     "hide": "-",
                     "avail": "Con",
-                    "cost": "500"
+                    "cost": "500",
+                    "id": "riot-shield",
+                    "name": "Riot Shield"
                 }
-            }
+            ]
         },
-        "pl-6-fusion-age": {
-            "items": {
-                "assault-gear-hvy": {
+        {
+            "id": "pl-6-fusion-age",
+            "name": "Pl 6 Fusion Age",
+            "items": [
+                {
                     "mass": "12",
                     "ap": "+2",
                     "lhe": "d6-1/d6/d6-1",
                     "type": "O",
                     "hide": "-",
                     "avail": "Mil",
-                    "cost": "2500"
+                    "cost": "2500",
+                    "id": "assault-gear-hvy",
+                    "name": "Assault Gear Hvy"
                 },
-                "attack-armor": {
+                {
                     "mass": "15",
                     "ap": "+3",
                     "lhe": "d4+1/d6+1/d6-1",
                     "type": "O",
                     "hide": "-",
                     "avail": "Con",
-                    "cost": "3000"
+                    "cost": "3000",
+                    "id": "attack-armor",
+                    "name": "Attack Armor"
                 },
-                "attack-armor-pow": {
+                {
                     "mass": "25",
                     "ap": "+4",
                     "lhe": "d6+1/d6+2/d6",
                     "type": "G",
                     "avail": "Mil",
-                    "cost": "8000"
+                    "cost": "8000",
+                    "id": "attack-armor-pow",
+                    "name": "Attack Armor Pow"
                 },
-                "battle-jacket": {
+                {
                     "mass": "8",
                     "ap": "+1",
                     "lhe": "d6-1/d4+1/d4-1",
                     "type": "O",
                     "hide": "+1",
                     "avail": "Con",
-                    "cost": "1500"
+                    "cost": "1500",
+                    "id": "battle-jacket",
+                    "name": "Battle Jacket"
                 },
-                "cf-long-coat": {
+                {
                     "mass": "4",
                     "ap": "0",
                     "lhe": "d4/d4/d6-2",
                     "type": "O",
                     "hide": "+3",
                     "avail": "Com",
-                    "cost": "1000"
+                    "cost": "1000",
+                    "id": "cf-long-coat",
+                    "name": "Cf Long Coat"
                 },
-                "cf-short-coat": {
+                {
                     "mass": "3",
                     "ap": "0",
                     "lhe": "d4-1/d4-1/d6-3",
                     "type": "O",
                     "hide": "+3",
                     "avail": "Com",
-                    "cost": "750"
+                    "cost": "750",
+                    "id": "cf-short-coat",
+                    "name": "Cf Short Coat"
                 }
-            }
+            ]
         },
-        "pl-7-gravity-age": {
-            "items": {
-                "body-tank": {
+        {
+            "id": "pl-7-gravity-age",
+            "name": "Pl 7 Gravity Age",
+            "items": [
+                {
                     "mass": "60",
-                    "ap": "+6",
+                    "ap": "+4",
                     "lhe": "2d4+1/2d4+1/2d4",
                     "type": "G",
-                    "hide": "-",
                     "avail": "Res",
-                    "cost": "25000"
+                    "cost": "25000",
+                    "id": "abm-5-paladin-battle-armor",
+                    "name": "Abm 5 Paladin Battle Armor"
                 },
-                "body-tank-recon": {
-                    "mass": "45",
-                    "ap": "+5",
-                    "lhe": "2d4/2d4/d6+2",
+                {
+                    "mass": "50",
+                    "ap": "+3",
+                    "lhe": "2d4+2/2d4+2/2d4+1",
                     "type": "G",
-                    "hide": "-",
-                    "avail": "Mil",
-                    "cost": "30000"
-                },
-                "body-tank-zero-g": {
-                    "mass": "80",
-                    "ap": "+7",
-                    "lhe": "3d4/3d4/2d4+1",
-                    "type": "G",
-                    "hide": "-",
                     "avail": "Res",
-                    "cost": "50000"
+                    "cost": "35000",
+                    "id": "abs-11-dragoon-recon-armor",
+                    "name": "Abs 11 Dragoon Recon Armor"
                 },
-                "cf-softsuit": {
-                    "mass": "3",
-                    "ap": "0",
-                    "lhe": "d6/d6/d6-1",
-                    "type": "O",
-                    "hide": "+4",
-                    "avail": "Con",
-                    "cost": "2000"
-                },
-                "deflection-harness": {
-                    "mass": "2",
-                    "ap": "0",
-                    "lhe": "see description",
-                    "type": "O",
-                    "hide": "+3",
-                    "avail": "Con",
-                    "cost": "2500"
-                },
-                "bodyguard-ballistic-vest": {
-                    "mass": "3",
-                    "ap": "0",
-                    "lhe": "d6-1/d6/d6-2",
-                    "type": "O",
-                    "hide": "+3",
-                    "avail": "Com",
-                    "cost": "750"
-                },
-                "landsknecht-34-ballistic-jacket": {
-                    "mass": "6",
-                    "ap": "+1",
-                    "lhe": "d6-1/d4+1/d4-1",
-                    "type": "O",
-                    "hide": "+1",
-                    "avail": "Con",
-                    "cost": "1650"
-                },
-                "haramaki-long-coat": {
-                    "mass": "3",
-                    "ap": "0",
-                    "lhe": "d4/d4/d6-2",
-                    "type": "O",
-                    "hide": "+3",
-                    "avail": "Com",
-                    "cost": "800"
-                },
-                "battlehawk-zero-g-assault-gear": {
-                    "mass": "8",
-                    "ap": "+2",
-                    "lhe": "d6-1/d6/d6-1",
-                    "type": "G",
-                    "hide": "-",
-                    "avail": "Con",
-                    "cost": "3250"
-                },
-                "scout-230-aet-assault-gear": {
-                    "mass": "12",
-                    "ap": "+2",
-                    "lhe": "d6/d8/d6-1",
-                    "type": "G",
-                    "hide": "-",
-                    "avail": "Mil",
-                    "cost": "3250"
-                },
-                "acn-4-cerametal-armor": {
+                {
                     "mass": "10",
                     "ap": "+2",
                     "lhe": "d6+1/d8+1/d6",
                     "type": "G",
                     "hide": "-",
                     "avail": "Mil",
-                    "cost": "2000"
+                    "cost": "2000",
+                    "id": "acn-4-cerametal-armor",
+                    "name": "Acn 4 Cerametal Armor"
                 },
-                "tiger-mod-6-powered-armor": {
+                {
+                    "mass": "8",
+                    "ap": "+2",
+                    "lhe": "d6-1/d6/d6-1",
+                    "type": "G",
+                    "hide": "-",
+                    "avail": "Con",
+                    "cost": "3250",
+                    "id": "battlehawk-zero-g-assault-gear",
+                    "name": "Battlehawk Zero G Assault Gear"
+                },
+                {
+                    "mass": "60",
+                    "ap": "+6",
+                    "lhe": "2d4+1/2d4+1/2d4",
+                    "type": "G",
+                    "hide": "-",
+                    "avail": "Res",
+                    "cost": "25000",
+                    "id": "body-tank",
+                    "name": "Body Tank"
+                },
+                {
+                    "mass": "45",
+                    "ap": "+5",
+                    "lhe": "2d4/2d4/d6+2",
+                    "type": "G",
+                    "hide": "-",
+                    "avail": "Mil",
+                    "cost": "30000",
+                    "id": "body-tank-recon",
+                    "name": "Body Tank Recon"
+                },
+                {
+                    "mass": "80",
+                    "ap": "+7",
+                    "lhe": "3d4/3d4/2d4+1",
+                    "type": "G",
+                    "hide": "-",
+                    "avail": "Res",
+                    "cost": "50000",
+                    "id": "body-tank-zero-g",
+                    "name": "Body Tank Zero G"
+                },
+                {
+                    "mass": "3",
+                    "ap": "0",
+                    "lhe": "d6-1/d6/d6-2",
+                    "type": "O",
+                    "hide": "+3",
+                    "avail": "Com",
+                    "cost": "750",
+                    "id": "bodyguard-ballistic-vest",
+                    "name": "Bodyguard Ballistic Vest"
+                },
+                {
+                    "mass": "3",
+                    "ap": "0",
+                    "lhe": "d6/d6/d6-1",
+                    "type": "O",
+                    "hide": "+4",
+                    "avail": "Con",
+                    "cost": "2000",
+                    "id": "cf-softsuit",
+                    "name": "Cf Softsuit"
+                },
+                {
+                    "mass": "2",
+                    "ap": "0",
+                    "lhe": "see description",
+                    "type": "O",
+                    "hide": "+3",
+                    "avail": "Con",
+                    "cost": "2500",
+                    "id": "deflection-harness",
+                    "name": "Deflection Harness"
+                },
+                {
+                    "mass": "3",
+                    "ap": "0",
+                    "lhe": "d4/d4/d6-2",
+                    "type": "O",
+                    "hide": "+3",
+                    "avail": "Com",
+                    "cost": "800",
+                    "id": "haramaki-long-coat",
+                    "name": "Haramaki Long Coat"
+                },
+                {
+                    "mass": "6",
+                    "ap": "+1",
+                    "lhe": "d6-1/d4+1/d4-1",
+                    "type": "O",
+                    "hide": "+1",
+                    "avail": "Con",
+                    "cost": "1650",
+                    "id": "landsknecht-34-ballistic-jacket",
+                    "name": "Landsknecht 34 Ballistic Jacket"
+                },
+                {
+                    "mass": "12",
+                    "ap": "+2",
+                    "lhe": "d6/d8/d6-1",
+                    "type": "G",
+                    "hide": "-",
+                    "avail": "Mil",
+                    "cost": "3250",
+                    "id": "scout-230-aet-assault-gear",
+                    "name": "Scout 230 Aet Assault Gear"
+                },
+                {
                     "mass": "25",
                     "ap": "+2",
                     "lhe": "d6+1/d6+2/d6",
                     "type": "G",
                     "avail": "Mil",
-                    "cost": "9000"
-                },
-                "abm-5-paladin-battle-armor": {
-                    "mass": "60",
-                    "ap": "+4",
-                    "lhe": "2d4+1/2d4+1/2d4",
-                    "type": "G",
-                    "avail": "Res",
-                    "cost": "25000"
-                },
-                "abs-11-dragoon-recon-armor": {
-                    "mass": "50",
-                    "ap": "+3",
-                    "lhe": "2d4+2/2d4+2/2d4+1",
-                    "type": "G",
-                    "avail": "Res",
-                    "cost": "35000"
+                    "cost": "9000",
+                    "id": "tiger-mod-6-powered-armor",
+                    "name": "Tiger Mod 6 Powered Armor"
                 }
-            }
+            ]
         },
-        "pl-8-energy-age": {
-            "items": {
-                "ablative-harness": {
+        {
+            "id": "pl-8-energy-age",
+            "name": "Pl 8 Energy Age",
+            "items": [
+                {
                     "mass": "2",
                     "ap": "0",
                     "lhe": "see description",
                     "type": "O",
                     "hide": "+3",
                     "avail": "Mil",
-                    "cost": "5000"
+                    "cost": "5000",
+                    "id": "ablative-harness",
+                    "name": "Ablative Harness"
                 },
-                "body-tank-over": {
+                {
                     "mass": "40",
                     "ap": "+5",
                     "lhe": "2d6+1/2d6+1/2d6",
                     "type": "G",
                     "hide": "-",
                     "avail": "Res",
-                    "cost": "70000"
+                    "cost": "70000",
+                    "id": "body-tank-over",
+                    "name": "Body Tank Over"
                 },
-                "displacer-softsuit": {
+                {
                     "mass": "3",
                     "ap": "0",
                     "lhe": "see description",
                     "type": "O",
                     "hide": "+4",
                     "avail": "Res",
-                    "cost": "7500"
+                    "cost": "7500",
+                    "id": "displacer-softsuit",
+                    "name": "Displacer Softsuit"
                 },
-                "energy-web": {
+                {
                     "mass": "2",
                     "ap": "0",
                     "lhe": "d6-1/d6-1/d6+2",
                     "type": "O",
                     "hide": "+3",
                     "avail": "Mil",
-                    "cost": "4000"
+                    "cost": "4000",
+                    "id": "energy-web",
+                    "name": "Energy Web"
                 },
-                "stealth-softsuit": {
+                {
                     "mass": "2",
                     "ap": "0",
                     "lhe": "see description",
                     "type": "O",
                     "hide": "+4",
                     "avail": "Res",
-                    "cost": "10000"
+                    "cost": "10000",
+                    "id": "stealth-softsuit",
+                    "name": "Stealth Softsuit"
                 }
-            }
+            ]
         }
-    }
+    ]
 }

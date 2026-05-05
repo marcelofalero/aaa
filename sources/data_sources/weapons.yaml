@@ -1,0 +1,3848 @@
+search_config:
+  display_name: WEAPONS
+  base_url: /equipment/weapons/
+  section: equipment
+melee:
+  config:
+    default:
+      columns:
+        en:
+          - name: Weapon
+            key: name
+          - name: Skill
+            key: skill
+          - name: Acc
+            key: acc
+          - name: Type
+            key: type
+          - name: Damage (O/G/A)
+            key: damage
+          - name: Actions
+            key: actions
+          - name: Mass
+            key: mass
+          - name: Hide
+            key: hide
+          - name: Avail
+            key: avail
+          - name: Cost ($)
+            key: cost
+          - name: Description
+            key: description
+            hidden: true
+        es:
+          - name: Arma
+            key: name
+          - name: Habilidad
+            key: skill
+          - name: Acc
+            key: acc
+          - name: Daño (O/G/A)
+            key: damage
+          - name: Comportamiento
+            key: actions
+          - name: Masa
+            key: mass
+          - name: Aprovechar
+            key: avail
+          - name: Costo ($)
+            key: cost
+          - name: Descripción
+            key: description
+            hidden: true
+          - name: Costo del clip
+            key: clip_cost
+            hidden: true
+          - name: Esconder
+            key: hide_modifier
+            hidden: true
+  items:
+    pl-0-stone-age:
+      localized:
+        - en:
+            name: 'PL 0: Stone Age'
+        - es:
+            name: 'PL 0: Edad de Piedra'
+      items:
+        club:
+          skill: Melee-bludgeon
+          acc: '0'
+          type: LI/O
+          damage: d4+1s/d4w/d4+1w
+          actions: '3'
+          mass: '2'
+          hide: '+12'
+          avail: Any
+          cost: '10'
+          localized:
+            - en:
+                name: Club
+                description: A heavy stick or cudgel, simple but effective.
+            - es:
+                name: Club
+                description: Un palo o garrote pesado, sencillo pero eficaz.
+        dagger:
+          skill: Melee-blade
+          acc: '0'
+          type: LI/O
+          damage: d4w/d4w+1/d4+2w
+          actions: '4'
+          mass: '1'
+          hide: '+3'
+          avail: Any
+          cost: '20'
+          localized:
+            - en:
+                name: Dagger
+                description: A short, double-edged blade used for stabbing or thrusting.
+            - es:
+                name: Daga
+                description: |-
+                  Una hoja corta de doble filo que se utiliza para apuñalar o empujar.
+        quarterstaff:
+          skill: Melee-bludgeon
+          acc: '-1'
+          type: LI/O
+          damage: d4+1s/d4+3s/d6w
+          actions: '3'
+          mass: '2'
+          hide: '-'
+          avail: Any
+          cost: '15'
+          localized:
+            - en:
+                name: Quarterstaff
+                description: A long, sturdy pole of wood, often shod with iron.
+            - es:
+                name: Barra
+                description: |-
+                  Un poste de madera largo y resistente, a menudo forrado con hierro.
+        spear:
+          skill: Melee-blade
+          acc: '0'
+          type: LI/O
+          damage: d4w/d4+2w/d4m
+          actions: '3'
+          mass: '2'
+          hide: '-'
+          avail: Any
+          cost: '15'
+          localized:
+            - en:
+                name: Spear
+                description: A pole weapon with a sharp point, designed for thrusting.
+            - es:
+                name: Lanza
+                description: |-
+                  Un arma de asta con una punta afilada, diseñada para empujar.
+        unarmed:
+          skill: Unarmed Attack
+          acc: '0'
+          type: LI/O
+          damage: d4s/d4+1s/d4+2s
+          actions: '4'
+          mass: '-'
+          hide: '-'
+          avail: Any
+          cost: '35'
+          localized:
+            - en:
+                name: Unarmed
+                description: Fighting with bare hands, feet, or other natural weapons.
+            - es:
+                name: Desarmado
+                description: |-
+                  Pelear con las manos, los pies u otras armas naturales desnudos.
+    pl-1-bronze-iron-age:
+      localized:
+        - en:
+            name: 'PL 1: Bronze/Iron Age'
+        - es:
+            name: 'PL 1: Bronce/Edad del Hierro'
+      items:
+        gauntlet:
+          skill: Unarmed Attack
+          acc: '0'
+          type: LI/O
+          damage: d4+1s/d4+2s/d4-1w
+          actions: '4'
+          mass: '1'
+          hide: '+3'
+          avail: Com
+          cost: '10'
+          localized:
+            - en:
+                name: Gauntlet
+                description: |-
+                  Armored glove that protects the hand and adds weight to punches.
+            - es:
+                name: Guantelete
+                description: |-
+                  Guante blindado que protege la mano y añade peso a los golpes.
+        hand-ax:
+          skill: Melee-blade
+          acc: '0'
+          type: LI/O
+          damage: d4+1w/d4+2w/d4+3w
+          actions: '3'
+          mass: '2'
+          hide: '+2'
+          avail: Any
+          cost: '50'
+          localized:
+            - en:
+                name: Hand ax
+                description: A small axe that can be used in melee or thrown.
+            - es:
+                name: hacha de mano
+                description: |-
+                  Un hacha pequeña que puede usarse en combate cuerpo a cuerpo o arrojarse.
+        mace:
+          skill: Melee-bludgeon
+          acc: '0'
+          type: LI/O
+          damage: d6+1s/d4+1w/d6+1w
+          actions: '2'
+          mass: '4'
+          hide: '+1'
+          avail: Com
+          cost: '75'
+          localized:
+            - en:
+                name: Mace
+                description: A heavy club with a metal head, designed to crush armor.
+            - es:
+                name: Maza
+                description: |-
+                  Un garrote pesado con cabeza de metal, diseñado para aplastar armaduras.
+        short-sword:
+          skill: Melee-blade
+          acc: '0'
+          type: LI/O
+          damage: d4w/d6w/d6+2w
+          actions: '3'
+          mass: '1'
+          hide: '+1'
+          avail: Com
+          cost: '100'
+          localized:
+            - en:
+                name: Short sword
+                description: |-
+                  A sword with a blade length between a dagger and a longsword.
+            - es:
+                name: espada corta
+                description: |-
+                  Una espada con una longitud de hoja entre una daga y una espada larga.
+    pl-2-middle-ages:
+      localized:
+        - en:
+            name: 'PL 2: Middle Ages'
+        - es:
+            name: 'PL 2: Edad Media'
+      items:
+        broad-sword:
+          skill: Melee-blade
+          acc: '0'
+          type: LI/O
+          damage: d4+2w/d6+2w/d4m
+          actions: '2'
+          mass: '3'
+          hide: '-'
+          avail: Con
+          cost: '200'
+          localized:
+            - en:
+                name: Broad sword
+                description: A heavy, double-edged sword designed for cutting.
+            - es:
+                name: espada ancha
+                description: Una espada pesada de doble filo diseñada para cortar.
+        flail:
+          skill: Melee-bludgeon
+          acc: '+1'
+          type: LI/O
+          damage: d6+2s/d4+2w/d6+2w
+          actions: '2'
+          mass: '4'
+          hide: '-'
+          avail: Com
+          cost: '150'
+          localized:
+            - en:
+                name: Flail
+                description: |-
+                  A striking weapon consisting of a stick with a swinging metal head.
+            - es:
+                name: Mayal
+                description: |-
+                  Arma de golpe que consta de un palo con una cabeza de metal oscilante.
+        great-ax:
+          skill: Melee-blade
+          acc: '+1'
+          type: LI/O
+          damage: d6+1w/d6+2w/d4+1m
+          actions: '2'
+          mass: '5'
+          hide: '-'
+          avail: Com
+          cost: '100'
+          localized:
+            - en:
+                name: Great ax
+                description: A massive two-handed axe capable of devastating strikes.
+            - es:
+                name: gran hacha
+                description: |-
+                  Un enorme hacha a dos manos capaz de realizar golpes devastadores.
+        nunchaku:
+          skill: Melee-bludgeon
+          acc: '0'
+          type: LI/O
+          damage: d6s/d6+2s/d8+3s
+          actions: '3'
+          mass: '1'
+          hide: '+2'
+          avail: Com
+          cost: '75'
+          localized:
+            - en:
+                name: Nunchaku
+                description: Two sticks connected by a short chain or rope.
+            - es:
+                name: Nunchaku
+                description: Dos palos conectados por una cadena o cuerda corta.
+        polearm:
+          skill: Melee-blade
+          acc: '+1'
+          type: LI/O
+          damage: d6+1w/d4+3w/d4+1m
+          actions: '1'
+          mass: '5'
+          hide: '-'
+          avail: Com
+          cost: '50'
+          localized:
+            - en:
+                name: Polearm
+                description: A weapon with a long shaft and a cutting or thrusting head.
+            - es:
+                name: arma de asta
+                description: Arma con un mango largo y una cabeza cortante o punzante.
+    pl-3-age-of-reason:
+      localized:
+        - en:
+            name: 'PL 3: Age of Reason'
+        - es:
+            name: 'PL 3: Edad de la Razón'
+      items:
+        cutlass:
+          skill: Melee-blade
+          acc: '+1'
+          type: LI/O
+          damage: d4+1w/d6+1w/d6+3w
+          actions: '3'
+          mass: '3'
+          hide: '-'
+          avail: Com
+          cost: '100'
+          localized:
+            - en:
+                name: Cutlass
+                description: |-
+                  A short, broad sabre or slashing sword, with a straight or slightly curved blade.
+            - es:
+                name: Chafarote
+                description: |-
+                  Sable o espada cortante, corta y ancha, de hoja recta o ligeramente curvada.
+        katana:
+          skill: Melee-blade
+          acc: '-1'
+          type: LI/O
+          damage: d4+2w/d6+2w/d4+1m
+          actions: '3'
+          mass: '2'
+          hide: '+1'
+          avail: Con
+          cost: '1000'
+          localized:
+            - en:
+                name: Katana
+                description: |-
+                  A traditional Japanese sword with a curved, single-edged blade.
+            - es:
+                name: Katana
+                description: |-
+                  Una espada tradicional japonesa con una hoja curva y de un solo filo.
+        rapier:
+          skill: Melee-blade
+          acc: '-1'
+          type: LI/O
+          damage: d4w/d4+1w/d4+2w
+          actions: '3'
+          mass: '2'
+          hide: '+2'
+          avail: Com
+          cost: '300'
+          localized:
+            - en:
+                name: Rapier
+                description: |-
+                  A slender, sharply pointed sword, ideally used for thrusting attacks.
+            - es:
+                name: Estoque
+                description: |-
+                  Una espada delgada y puntiaguda, ideal para ataques de estocada.
+        saber:
+          skill: Melee-blade
+          acc: '0'
+          type: LI/O
+          damage: d4w/d4+2w/2d4+1w
+          actions: '3'
+          mass: '2'
+          hide: '+1'
+          avail: Com
+          cost: '250'
+          localized:
+            - en:
+                name: Saber
+                description: A sword with a curved blade, associated with light cavalry.
+            - es:
+                name: Sable
+                description: Espada de hoja curva, asociada a la caballería ligera.
+    pl-4-industrial-age:
+      localized:
+        - en:
+            name: 'PL 4: Industrial Age'
+        - es:
+            name: 'PL 4: Era industrial'
+      items:
+        bayonet:
+          skill: Melee-blade
+          acc: '+1'
+          type: LI/O
+          damage: d4w/d4+2w/d4m
+          actions: '3'
+          mass: '2'
+          hide: '-'
+          avail: Com
+          cost: '50'
+          localized:
+            - en:
+                name: Bayonet
+                description: |-
+                  Originally a dagger crudely attached to a rifle's muzzle, the bayonet eventually becomes a standard attachment.<br />In effect, a bayonet turns a rifle into a spear.
+            - es:
+                name: Bayoneta
+                description: |-
+                  Un cuchillo, daga, espada o arma con forma de púa diseñada para caber en el extremo del cañón de un rifle.
+    pl-5-information-age:
+      localized:
+        - en:
+            name: 'PL 5: Information Age'
+        - es:
+            name: 'PL 5: Era de la información'
+      items:
+        combat-knife:
+          skill: Melee-blade
+          acc: '0'
+          type: LI/O
+          damage: d4+1w/d4+2w/d4+3w
+          actions: '4'
+          mass: '1'
+          hide: '+3'
+          avail: Any
+          cost: '35'
+          localized:
+            - en:
+                name: Combat knife
+                description: |-
+                  This weapon is a high-tech version of the standard dagger or knife, composed of tempered steel, sophisticated polymers, or ceramic blends. A combat knife is typically equipped with additional features:<br />A small compass can be inlaid in the handle, or a hollow handle can contain several meters of fishing line and a hook, a dozen matches, or some other suitably sized piece of survival gear.
+            - es:
+                name: cuchillo de combate
+                description: |-
+                  Un cuchillo duradero diseñado para uso militar, a menudo con un borde dentado.
+        stun-baton:
+          skill: Melee-powered
+          acc: '0'
+          type: En/O
+          damage: d4+1s/d4+3s/d6+4s
+          actions: '3'
+          mass: '2'
+          hide: '+2'
+          avail: Com
+          cost: '300'
+          localized:
+            - en:
+                name: Stun baton
+                description: |-
+                  This low-powered version of the pulse baton is sometimes known as a taser. Above the insulated handle, its surface crackles with a high-voltage, low-current electrical charge that can temporarily short-circuit the human nervous system.<br />Insulated gloves are necessary to prevent the user from accidentally shocking himself. Without gloves, the user suffers Ordinary damage (d4+1s) if his Melee Attack-powered weapon skill check result is a Critical Failure.
+            - es:
+                name: bastón paralizante
+                description: |-
+                  Un bastón que aplica una descarga eléctrica de alto voltaje al impactar.
+    pl-6-fusion-age:
+      localized:
+        - en:
+            name: 'PL 6: Fusion Age'
+        - es:
+            name: 'PL 6: Era de la fusión'
+      items:
+        chainsword:
+          skill: Melee-powered
+          acc: '+1'
+          type: LI/O
+          damage: d8+1w/d8+2w/d4+1m
+          actions: '2'
+          mass: '5'
+          hide: '-'
+          avail: Mil
+          cost: '1500'
+          localized:
+            - en:
+                name: Chainsword
+                description: |-
+                  This device consists of a meter-long blade either built into a heavy forearm gauntlet and power supply or a standard weapon hilt. The blade is edged with a molecule-thin razor of super-tough artificial crystals, driven in chainsaw fashion along the weapon's edge.<br />This provides a powerful cutting edge and a particularly lethal melee weapon.
+            - es:
+                name: Espada sierra
+                description: |-
+                  Una espada con dientes motorizados que giran como una motosierra.
+        pulse-baton:
+          skill: Melee-powered
+          acc: '0'
+          type: En/O
+          damage: d8s/d4+2w/d6+2w
+          actions: '3'
+          mass: '2'
+          hide: '+2'
+          avail: Con
+          cost: '500'
+          localized:
+            - en:
+                name: Pulse baton
+                description: |-
+                  The first powered melee weapon capable of inflicting lethal damage, the pulse baton is a half-meter-long rod that delivers a concentrated energy discharge when it hits a target.<br />While the baton appears to be a simple flashlight, the operator must wear a pair of insulated gloves to prevent an accidental discharge.
+            - es:
+                name: Bastón de pulso
+                description: |-
+                  Un bastón que emite un pulso cinético al impactar, causando daños internos.
+    pl-7-gravity-age:
+      localized:
+        - en:
+            name: 'PL 7: Gravity Age'
+        - es:
+            name: 'PL 7: Era de la gravedad'
+      items:
+        gravmace:
+          skill: Melee-powered
+          acc: '0'
+          type: LI/O
+          damage: d8+2s/d6+2w/d8+2w
+          actions: '3'
+          mass: '3'
+          hide: '-'
+          avail: Con
+          cost: '850'
+          localized:
+            - en:
+                name: Gravmace
+                description: |-
+                  The gravmace consists of a meter-long handle with a gravitonic capacitor inside a striking head. Powerful capacitors manipulate the weapon's mass, making it strike like a sledgehammer while being swung like a willow switch.
+            - es:
+                name: Gravmace
+                description: |-
+                  Una maza que utiliza generadores de gravedad para aumentar la fuerza del impacto.
+        power-cestus:
+          skill: Unarmed-brawl
+          acc: '0'
+          type: LI/O
+          damage: d4+2s/d4w/d4+1w
+          actions: '4'
+          mass: '3'
+          hide: '+1'
+          avail: Con
+          cost: '500'
+          localized:
+            - en:
+                name: Power cestus
+                description: |-
+                  The power cestus consists of an elbow-length gauntlet of CF (carbonate fiber) weave, ending in a heavy fighting glove that covers the user's hand. Gravity technology allows the wielder to strike blows of astonishing power with a gloved hand.
+            - es:
+                name: Cestus de poder
+                description: Un guantelete motorizado que mejora los ataques sin armas.
+        samurai-300-ion-blade:
+          skill: Melee-powered
+          acc: '0'
+          type: En/O
+          damage: d4+3s/d6+4s/d4+3w
+          actions: '4'
+          mass: '2.25'
+          hide: '+2'
+          avail: Mil
+          cost: '750'
+          localized:
+            - en:
+                name: Samurai 300 Ion Blade
+                description: |-
+                  The ion blade delivers a discharge of electromagnetic energy on contact. While it's moderately effective against unarmored targets, its primary purpose is to neutralize heavy body armor, robots, and cybernetics. A target that relies on electronic control systems or computers suffers a +2 step penalty to any Stamina-endurance checks he (or it) must make after being struck by an ion blade.
+            - es:
+                name: Hoja Iónica Samurai 300
+                description: |-
+                  La hoja iónica emite una descarga de energía electromagnética al contacto. Aunque es moderadamente efectiva contra objetivos sin armadura, su propósito principal es neutralizar armaduras pesadas, robots y equipo cibernético. Un objetivo que dependa de sistemas de control electrónico o computadoras sufre un penalizador de +2 pasos a cualquier control de Destreza y Resistencia que deba hacer tras ser impactado.
+        nighthawk-a5-pulse-baton:
+          skill: Melee-powered
+          acc: '0'
+          type: En/O
+          damage: d8s/d4+2w/d6+2w
+          actions: '3'
+          mass: '1.15'
+          hide: '+4'
+          avail: Con
+          cost: '500'
+          localized:
+            - en:
+                name: Nighthawk A5 Pulse Baton
+                description: |-
+                  Pulse batons have been in use for more than a century. Few unarmored targets can stand up to more than one or two shocks from its powerful capacitors. The Nighthawk is a telescoping stealth model made from low-density plastics. It's extremely concealable and does not show up on most weapon detectors, allowing the user to smuggle it into places he might not normally be armed.
+            - es:
+                name: Bastón de Pulsos Nighthawk A5
+                description: |-
+                  Los bastones de pulsos se han usado por más de un siglo. Pocos objetivos sin armadura pueden resistir más de uno o dos choques de sus potentes capacitores. El Nighthawk es un modelo sigiloso telescópico hecho de plástico de baja densidad. Es muy fácil de ocultar y no aparece en la mayoría de detectores de armas, permitiendo al usuario introducirlo de contrabando en lugares donde normalmente no podría ir armado.
+        punkthumper-6000-stun-baton:
+          skill: Melee-powered
+          acc: '0'
+          type: En/O
+          damage: d6+1s/d8+2s/d12+3s
+          actions: '3'
+          mass: '2'
+          hide: '+2'
+          avail: Com
+          cost: '425'
+          localized:
+            - en:
+                name: PunkThumper 6000 Stun Baton
+                description: |-
+                  Hundreds of models of stun batons are available, but Merrick's awards its prestigious Triple-Bullseye rating to the PunkThumper 6000 as the best of its class. Intended for serious restraint work, the PT 6K uses an extra-heavy pulse baton battery to deliver the biggest stun-sized jolt around. It doesn't last as long as a standard stun baton's charge, but with the PunkThumper each hit counts.
+            - es:
+                name: Bastón Aturdidor PunkThumper 6000
+                description: |-
+                  Existen cientos de modelos de bastones aturdidores, pero Merrick otorga su máxima calificación al PunkThumper 6000 como el mejor de su clase. Destinado a trabajos de restricción en serio, usa una batería extrapesada para dar la mayor sacudida posible. No dura tanto como una carga normal de bastón aturdidor, pero con este bastón cada golpe cuenta.
+        ax2-chainsword:
+          skill: Melee-powered
+          acc: '+1'
+          type: LI/G
+          damage: d8+1w/d8+2w/d4+1m
+          actions: '2'
+          mass: '7'
+          hide: '-'
+          avail: Mil
+          cost: '1250'
+          localized:
+            - en:
+                name: AX2 Chainsword
+                description: |-
+                  The chainsword is heavy and unwieldy, but it delivers outstanding damage in hand-to-hand combat. Its fighting edge is a chain-driven array of serrated, microengineered teeth, capable of cutting through almost any normal material. (In fact, the chainsword serves as a decent concrete saw in a pinch.) The AX2 is a heavy-duty model designed for use against heavily armored targets.
+            - es:
+                name: Espada Sierra AX2
+                description: |-
+                  La espada sierra es pesada y torpe, pero causa un daño extremo cuerpo a cuerpo. Su filo es una cadena dentada microingenierizada capaz de aserrar casi cualquier material normal. El AX2 es un modelo diseñado para usarse contra objetivos muy blindados.
+        viper-d-filament-blade:
+          skill: Melee-powered
+          acc: '0'
+          type: LI/O
+          damage: d8-1w/d8w/d12-1w
+          actions: '3'
+          mass: '1.75'
+          hide: '+2'
+          avail: Con
+          cost: '1500'
+          localized:
+            - en:
+                name: Viper D Filament Blade
+                description: |-
+                  A filament blade's fighting edge is a single strand of monomolecular carbonate fiber. The weapon consists of a hilt and a small, free-floating lead module, between which the monofilament is stretched. The lead module senses the user's swings and maneuvers accordingly, keeping the filament taut at all times. The weapon can be set for a length of up to 4 meters for melee attacks against distant targets.
+            - es:
+                name: Hoja de Filamento Viper D
+                description: |-
+                  El arma consta de una empuñadura y un pequeño módulo de plomo con una hebra continua de carbonato monomolecular conectándolos. El módulo detecta el balanceo del usuario y mantiene el filamento tenso en todo momento. Puede ajustarse a una longitud de hasta 4 metros para ataques cuerpo a cuerpo contra objetivos distantes.
+        t-bar-tn-blade:
+          skill: Melee-blade
+          acc: '0'
+          type: LI/G
+          damage: d6w/d6+1w/d4m
+          actions: '4'
+          mass: '4'
+          hide: '+3'
+          avail: Com
+          cost: '500'
+          localized:
+            - en:
+                name: T-Bar TN Blade
+                description: |-
+                  TN stands for tungsten-neutronite. It's the toughest conventional alloy known, capable of punching through cerametal or vanadium steel like an iron crowbar through tin foil. This weapon is a large combat knife, but it's far denser (and heavier) than a conventional blade. The TN knife is the only nonpowered weapon capable of piercing powered attack armors such as the body tank.
+            - es:
+                name: Hoja TN T-Bar
+                description: |-
+                  TN significa tungsteno-neutronita. Es la aleación más dura conocida, capaz de perforar cerametal como palanca a través de aluminio. Esta arma es un gran cuchillo de combate, pero mucho más densa (y pesada) que una cuchilla convencional. Es la única arma no energizada capaz de penetrar armaduras como el tanque corporal.
+        thunder-150-gravmace:
+          skill: Melee-powered
+          acc: '0'
+          type: LI/O
+          damage: d8+2s/d6+2w/d8+2w
+          actions: '3'
+          mass: '3'
+          hide: '+1'
+          avail: Con
+          cost: '850'
+          localized:
+            - en:
+                name: Thunder 150 Gravmace
+                description: |-
+                  The gravity mace (or gravmace, as it's more commonly known) is a popular weapon among many front-line assault troops. It's lighter and faster than the chainsword, and even if it lacks the chainsword's hitting power, the gravmace's combat battery lasts twice as long. The Thunder 150 is a standard model found in the inventory of several stellar nations and a number of private security firms.
+            - es:
+                name: Gravimaza Thunder 150
+                description: |-
+                  La maza de gravedad es un arma popular entre tropas de asalto de primera línea. Es más ligera y rápida que una turbosierra, y aunque carece de su impacto destructor, su batería dura el doble. El Thunder 150 es el modelo estándar en varias naciones estelares y firmas de seguridad privada.
+        headbuster-power-cestus:
+          skill: Unarmed Attack
+          acc: '0'
+          type: LI/O
+          damage: d4+2s/d4w/d4+2w
+          actions: '4'
+          mass: '2'
+          hide: '+3'
+          avail: Con
+          cost: '625'
+          localized:
+            - en:
+                name: HeadBuster Power Cestus
+                description: |-
+                  Winner of the Merrick's Triple-Bullseye, the HeadBuster is the best power cestus available. It's lighter and more concealable than most power cesti, but provides the same hitting power. The HeadBuster is so easy to use that most wielders require no formal training in powered weapons; the wielder can choose to use either his Melee Weapons or Unarmed Attack skill when attacking with the HeadBuster.
+            - es:
+                name: Cestus de Energía HeadBuster
+                description: |-
+                  Ganador del premio de Triple-Bullseye de Merrick, es el mejor cestus de energía disponible. Es más ligero y ocultable que sus rivales, pero da el mismo poder de impacto. Es tan fácil de usar que puedes elegir usar tu habilidad de Armas Cuerpo a Cuerpo o Ataques Desarmados al golpear con el HeadBuster.
+        k-3-zero-g-axe:
+          skill: Melee-powered
+          acc: '+1'
+          type: LI/O
+          damage: d6+2w/d4+4w/d4+2m
+          actions: '3'
+          mass: '4'
+          hide: '-'
+          avail: Mil
+          cost: '950'
+          localized:
+            - en:
+                name: K-3 Zero-G Axe
+                description: |-
+                  The zero-g axe is a powered weapon specialized for use in boarding actions and microgravity situations. At the bottom of its haft, a counterweight compensates perfectly for the variable mass of its deadly carbonite blade. The weapon negates two steps of light-gravity or zero-g combat penalties, allowing a user with magnetic boots or the Acrobatics-zero-g training skill to make melee attacks with no penalty.
+            - es:
+                name: Hacha Gravedad Cero K-3
+                description: |-
+                  El hacha de gravedad cero es un arma energizada especializada para acciones de abordaje y situaciones de microgravedad. En la base de su mango, un contrapeso compensa la masa variable de su letal hoja. Anula dos niveles de penalizadores de combate de gravedad cero o ligera, permitiendo el combate cuerpo a cuerpo libre de penalizaciones para alguien entrenado.
+        chuurkhna:
+          skill: Melee-blade
+          acc: '0'
+          type: LI/O
+          damage: d4+3w/d6+3w/d6m
+          actions: '3'
+          mass: '7'
+          hide: '-'
+          avail: Com
+          cost: '350'
+          localized:
+            - en:
+                name: Chuurkhna
+                description: |-
+                  An ancient weren design, the chuurkhna is still favored by members of that race. It's a glaive or halberd with a haft about a meter and a half long. Its blade is large and heavy, intended for chopping rather than thrusting. A weren can wield it one- or two-handed, but most humans would have to use both hands to control it. Weren have been known to drive chuurkhnas through the heaviest body armor.
+            - es:
+                name: Chuurkhna
+                description: |-
+                  Un antiguo diseño weren, aún preferida por miembros de la raza. Es una guja o alabarda con un mango de metro y medio. Su hoja es grande y pesada, diseñada para cortar en lugar de apuñalar. Los weren la blanden a 1 o 2 manos pero la mayoría de los humanos necesitarían ambas manos. Tienen la fama de perforar la armadura más pesada.
+        dait-sya:
+          skill: Melee-blade
+          acc: '0'
+          type: LI/O
+          damage: d4+1w/d4+2w/d4+3w
+          actions: '4'
+          mass: '1'
+          hide: '+2'
+          avail: Com
+          cost: '250'
+          localized:
+            - en:
+                name: Dait'sya
+                description: |-
+                  The dait'sya is a traditional t'sa weapon, a double-bladed dagger held in the wielder's closed fist. They're always used in pairs (the listed cost, mass, and damage is for two weapons). Combined with the lightning speed of most t'sa, the dait'sya is especially dangerous in close-quarters combat. Because of the dait'sya's light design, any penalties for fighting with a weapon in each hand are reduced by 1 step.
+            - es:
+                name: Dait'sya
+                description: |-
+                  El dait'sya es un arma tradicional t'sa de doble cuchilla empuñada a puño cerrado y siempre usadas en pares (precio, masa y estadísticas representan las dos). En combinación con la velocidad t'sa, la dait'sya es muy peligrosa en distancias cortas. Su ligereza disminuye cualquier penalización de pelear con un arma a cada mano en 1 paso.
+        tong-fe:
+          skill: Melee-bludgeon / Unarmed Attack
+          acc: '-1'
+          type: LI/O
+          damage: d6s/d6+2s/d4+1w
+          actions: '4'
+          mass: '1'
+          hide: '+2'
+          avail: Com
+          cost: '60'
+          localized:
+            - en:
+                name: Tong Fe
+                description: |-
+                  The tong fe is a martial arts weapon that has become the fighting stick of choice for many police and security forces. Designed specifically for parrying, the tong fe adds a -2 step bonus to any parrying effort the user attempts. As with the dait'sya, experts often wield two of these weapons at once; the tong fe reduces the penalties for attacking with two weapons at once by 1 step.
+            - es:
+                name: Tong Fe
+                description: |-
+                  El tong fe es un arma de artes marciales popular entre patrullaje policial. Hecha para reflejar ataques, otorga un bonus de -2 pasos a cualquier intento de parada (parry). Al igual que con la dait'sya, a menudo son blandidos en equipo; el tong fe disminuye las penalizaciones por atacar con armas a dos manos un total de 1 paso.
+    pl-8-energy-age:
+      localized:
+        - en:
+            name: 'PL 8: Energy Age'
+        - es:
+            name: 'PL 8: Era Energética'
+      items:
+        star-sword:
+          skill: Melee-powered
+          acc: '0'
+          type: En/G
+          damage: d6+1w/2d6w/d4+3m
+          actions: '3'
+          mass: '2'
+          hide: '+2'
+          avail: Res
+          cost: '7000'
+          localized:
+            - en:
+                name: Star sword
+                description: |-
+                  The star sword generates a complex, phased magnetic field in the rough shape of a sword blade, and then fills the interior of this field with white-hot plasma.<br />On contact, the containment field releases a stream of plasma that can burn or cut through almost anything.
+            - es:
+                name: espada estrella
+                description: Una espada con una hoja de energía de plasma contenida.
+        tri-staff:
+          skill: Melee-powered
+          acc: '-1'
+          type: En/O
+          damage: d8+2w/3d4+1w/d6m
+          actions: '3'
+          mass: '3'
+          hide: '-'
+          avail: Res
+          cost: '4000'
+          localized:
+            - en:
+                name: Tri-staff
+                description: |-
+                  This 2-meter-long staff is topped by a three-pronged blade. When the staff is activated, an internal power source suffuses it with a soft glow. This aura acts as a defensive force field that improves the Strength and Dexterity resistance modifiers of its wielder by 1 step.
+            - es:
+                name: triple personal
+                description: |-
+                  Un bastón de tres secciones con emisores de energía en cada extremo.
+ranged:
+  config:
+    default:
+      columns:
+        en:
+          - name: Weapon
+            key: name
+          - name: Skill
+            key: skill
+          - name: Acc
+            key: acc
+          - name: Md
+            key: md
+          - name: Range (S/M/L)
+            key: range
+          - name: Type
+            key: type
+          - name: Damage (O/G/A)
+            key: damage
+          - name: Act.
+            key: act
+          - name: Clip
+            key: clip
+          - name: Mass
+            key: mass
+          - name: Hide
+            key: hide
+          - name: Avail
+            key: avail
+          - name: Cost ($)
+            key: cost
+          - name: Description
+            key: description
+            hidden: true
+        es:
+          - name: Arma
+            key: name
+          - name: Habilidad
+            key: skill
+          - name: Acc
+            key: acc
+          - name: Rango (P/M/L)
+            key: range
+          - name: Daño (O/G/A)
+            key: damage
+          - name: Acto.
+            key: act
+          - name: Acortar
+            key: clip
+          - name: Costo ($)
+            key: cost
+          - name: Descripción
+            key: description
+            hidden: true
+          - name: Costo del clip
+            key: clip_cost
+            hidden: true
+          - name: Esconder
+            key: hide_modifier
+            hidden: true
+  items:
+    pl-0-stone-age:
+      localized:
+        - en:
+            name: 'PL 0: Stone Age'
+        - es:
+            name: 'PL 0: Edad de Piedra'
+      items:
+        bow-short:
+          skill: Prim-bow
+          acc: '+1'
+          md: F
+          range: 20/40/100
+          type: LI/O
+          damage: d4w/d4+2w/d4+3w
+          act: '3'
+          clip: '10'
+          mass: '1'
+          hide: '-'
+          avail: Any
+          cost: '100'
+          localized:
+            - en:
+                name: Bow, short
+                description: |-
+                  This is a simple bow made from a single piece of wood. Because archery and bowhunting exist as sports, short bows made of high-tech materials may be readily available at higher Progress Levels.
+            - es:
+                name: Arco, corto
+                description: |-
+                  Un arco sencillo fabricado a partir de una sola pieza de madera.
+        sling:
+          skill: Prim-sling
+          acc: '+1'
+          md: F
+          range: 10/20/60
+          type: LI/O
+          damage: d4s/d4+2s/d4w
+          act: '2'
+          clip: '10'
+          mass: '0.1'
+          hide: '-'
+          avail: Any
+          cost: '25'
+          localized:
+            - en:
+                name: Sling
+                description: |-
+                  This weapon is a simple looped strap in which a stone is whirled and then let fly. Small stones originally serve as ammunition, but the sling at PL 2 and higher uses metal bullets, whose aerodynamic shape increases the sling's range by 10 meters in each category.
+            - es:
+                name: Honda
+                description: |-
+                  Correa con bucle que se utiliza para arrojar piedras o balas de plomo.
+    pl-1-bronze-iron-age:
+      localized:
+        - en:
+            name: 'PL 1: Bronze/Iron Age'
+        - es:
+            name: 'PL 1: Bronce/Edad del Hierro'
+      items:
+        javelin:
+          skill: Athl-throw
+          acc: '0'
+          md: F
+          range: Per STR
+          type: LI/O
+          damage: d4w/d4+1w/d4+2w
+          act: '1'
+          clip: '1'
+          mass: '1'
+          hide: '-'
+          avail: Com
+          cost: '50'
+          localized:
+            - en:
+                name: Javelin
+                description: |-
+                  A light throwing spear, sometimes fashioned from metal, the javelin was often used in hunting. Its balance and mass make it an ideal throwing weapon, increasing the wielder's normal throwing range by 50 percent.
+            - es:
+                name: Jabalina
+                description: Una lanza ligera diseñada principalmente para ser arrojada.
+    pl-2-middle-ages:
+      localized:
+        - en:
+            name: 'PL 2: Middle Ages'
+        - es:
+            name: 'PL 2: Edad Media'
+      items:
+        bow-long:
+          skill: Prim-bow
+          acc: '+1'
+          md: F
+          range: 40/80/200
+          type: LI/O
+          damage: d4+1w/d6+1w/d4m
+          act: '2'
+          clip: '10'
+          mass: '1'
+          hide: '-'
+          avail: Com
+          cost: '200'
+          localized:
+            - en:
+                name: Bow, long
+                description: |-
+                  A famous weapon, the long bow actually exceeds the PL 3 flintlock rifle in range, accuracy, and rate of fire and does nearly as much damage. The long bow remained the weapon of choice for many soldiers long after the advent of firearms.
+            - es:
+                name: Arco, largo
+                description: Un arco alto aproximadamente igual a la altura del usuario.
+        crossbow:
+          skill: Prim-bow
+          acc: '0'
+          md: F
+          range: 50/100/250
+          type: LI/O
+          damage: d4+2w/d6+2w/d4+1m
+          act: '1'
+          clip: '1'
+          mass: '2'
+          hide: '-'
+          avail: Con
+          cost: '400'
+          localized:
+            - en:
+                name: Crossbow
+                description: |-
+                  Consisting of a bow mounted crosswise on a wooden or metal stock, the crossbow is fired much like a gun. Although slower and clumsier than a long bow, it outranges the bow and has superior striking power.
+            - es:
+                name: Ballesta
+                description: Arco montado sobre una culata que dispara virotes o virotes.
+        shuriken:
+          skill: Athl-throw
+          acc: '+2'
+          md: F
+          range: Per STR
+          type: LI/O
+          damage: d4s/d4w/d4+1w
+          act: '4'
+          clip: '1'
+          mass: '0.1'
+          hide: '+4'
+          avail: Com
+          cost: '10'
+          localized:
+            - en:
+                name: Shuriken
+                description: |-
+                  Though these "throwing stars" are not extremely lethal, the metal, sharp-pointed disks are easy to conceal.
+            - es:
+                name: shuriken
+                description: Arma oculta que generalmente se arroja.
+    pl-3-age-of-reason:
+      localized:
+        - en:
+            name: 'PL 3: Age of Reason'
+        - es:
+            name: 'PL 3: Edad de la Razón'
+      items:
+        musket-flintlock:
+          skill: Prim-flint
+          acc: '+2'
+          md: F
+          range: 20/40/100
+          type: HI/O
+          damage: d6+1w/d6+3w/d6+1m
+          act: '1'
+          clip: '1'
+          mass: '4'
+          hide: '-'
+          avail: Com
+          cost: '350'
+          localized:
+            - en:
+                name: Musket, flintlock
+                description: |-
+                  The musket was the most successful of the black powder weapons. By later standards it is inaccurate and unreliable, but its 50 to 60 caliber bullet deserves respect.
+            - es:
+                name: Mosquete, llave de chispa
+                description: |-
+                  Un arma larga con avancarga que utiliza un mecanismo de chispa.
+        pistol-flintlock:
+          skill: Prim-flint
+          acc: '+2'
+          md: F
+          range: 4/8/16
+          type: HI/O
+          damage: d4+2w/d6+2w/d4+1m
+          act: '2'
+          clip: '1'
+          mass: '2'
+          hide: '+2'
+          avail: Com
+          cost: '200'
+          localized:
+            - en:
+                name: Pistol, flintlock
+                description: |-
+                  The flintlock pistol employs the same mechanism and muzzle-loading powder and shot as the flintlock musket.
+            - es:
+                name: Pistola, llave de chispa
+                description: |-
+                  Una pistola con avancarga que utiliza un mecanismo de chispa.
+        rifle-long:
+          skill: Prim-flint
+          acc: '+1'
+          md: F
+          range: 30/60/150
+          type: HI/O
+          damage: d6w/d6+2w/d6m
+          act: '1'
+          clip: '1'
+          mass: '5'
+          hide: '-'
+          avail: Com
+          cost: '500'
+          localized:
+            - en:
+                name: Rifle, long
+                description: |-
+                  Also known as a Kentucky rifle, this flintlock weapon was more accurate than the musket, but fired a smaller ball.
+            - es:
+                name: Rifle, largo
+                description: |-
+                  Un arma larga con un cañón estriado para mejorar la precisión.
+    pl-4-industrial-age:
+      localized:
+        - en:
+            name: 'PL 4: Industrial Age'
+        - es:
+            name: 'PL 4: Era industrial'
+      items:
+        derringer:
+          skill: Mod-pistol
+          acc: '+1'
+          md: F
+          range: 2/6/12
+          type: HI/O
+          damage: d4-1w/d6w/d6+2w
+          act: '2'
+          clip: '2'
+          mass: '0.25'
+          hide: '+4'
+          avail: Com
+          cost: '100'
+          localized:
+            - en:
+                name: Derringer
+                description: |-
+                  The smallest pistols ever made, these weapons appeared with flintlock actions early in the 19th century but didn't become popular until the 1870s.
+            - es:
+                name: derringer
+                description: Una pistola pequeña y fácilmente ocultable.
+        pistol-32-rev:
+          skill: Mod-pistol
+          acc: '+1'
+          md: F
+          range: 4/8/30
+          type: HI/O
+          damage: d4w/d6w/d4m
+          act: '3'
+          clip: '6'
+          mass: '1'
+          hide: '+3'
+          avail: Com
+          cost: '200'
+          localized:
+            - en:
+                name: Pistol, .32 rev.
+                description: |-
+                  Light revolvers and small handguns are in common use for centuries after their invention. The small size of the .32 caliber makes it ideal for concealment in a hidden holster or pocket.
+            - es:
+                name: Pistola, .38 rev
+                description: |-
+                  Un revólver confiable de seis tiros con recámara de calibre .38.
+        pistol-45-rev:
+          skill: Mod-pistol
+          acc: '+1'
+          md: F
+          range: 4/10/40
+          type: HI/O
+          damage: d4+1w/d4+2w/d6m
+          act: '3'
+          clip: '6'
+          mass: '1'
+          hide: '+2'
+          avail: Com
+          cost: '250'
+          localized:
+            - en:
+                name: Pistol, .45 rev.
+                description: |-
+                  A heavier pistol, it's not quite as easy to conceal as the .32, but delivers greater damage and has longer range.
+            - es:
+                name: Pistola, .44 magnum
+                description: Un poderoso revólver conocido por su poder de detención.
+        rifle-30-bolt:
+          skill: Mod-rifle
+          acc: '0'
+          md: F
+          range: 50/100/300
+          type: HI/O
+          damage: d4+2w/d6+2w/d4+1m
+          act: '1'
+          clip: '10'
+          mass: '3'
+          hide: '-'
+          avail: Mil
+          cost: '500'
+          localized:
+            - en:
+                name: Rifle, .30 bolt
+                description: |-
+                  A common infantry weapon, the bolt-action rifle is accurate, but tends to be slow-firing and heavy.
+            - es:
+                name: Rifle, 7,62 mm
+                description: |-
+                  Un rifle de cerrojo o semiautomático que dispara un cartucho pesado.
+        rifle-44-lever:
+          skill: Mod-rifle
+          acc: '+1'
+          md: F
+          range: 40/80/240
+          type: HI/O
+          damage: d6w/d8+1w/d6m
+          act: '2'
+          clip: '12'
+          mass: '3'
+          hide: '-'
+          avail: Com
+          cost: '400'
+          localized:
+            - en:
+                name: Rifle, .44 lever
+                description: |-
+                  Introduced early in the Industrial Age, repeating rifles such as this weapon were common in the Old West, mainly among hunters and frontiersmen.
+            - es:
+                name: fusil, asalto
+                description: |-
+                  Un rifle de fuego selectivo que utiliza un cartucho intermedio.
+        shotgun-12-gauge:
+          skill: Mod-rifle
+          acc: '0'
+          md: F
+          range: 6/12/30
+          type: HI/O
+          damage: d4w/d6w/d4m
+          act: '2'
+          clip: '5'
+          mass: '4'
+          hide: '+7'
+          avail: Com
+          cost: '500'
+          localized:
+            - en:
+                name: Shotgun, 12 gauge
+                description: |-
+                  Shotguns come in several different forms, including pump-action, bolt-action, single-shot, and double-barrel. The 12 gauge is a fairly typical pump-action shotgun.<br />Damage from a shotgun is highly dependent on range. At short range, damage is doubled. At long range, all damage results are halved (round down, to a minimum of 1 point).
+            - es:
+                name: Subfusil, 9 mm
+                description: Una metralleta que dispara munición de pistola de 9 mm.
+        smg-45-cal:
+          skill: Mod-SMG
+          acc: '+2'
+          md: B/A
+          range: 8/16/40
+          type: HI/O
+          damage: d4+1w/d4+2w/d6m
+          act: '4'
+          clip: -/8
+          mass: '4'
+          hide: '-'
+          avail: Con
+          cost: '600'
+          localized:
+            - en:
+                name: SMG, .45 cal
+                description: |-
+                  Popularly known as the "tommy gun," this weapon came into use near the end of the Industrial Age. It was the first of the personal automatic weapons, with the ability to damage more than one target in a single attack. That property made it a highly desirable firearm despite its relatively poor accuracy.
+            - es:
+                name: SMG, .45 cal
+                description: |-
+                  Popularly known as the "tommy gun," this weapon came into use near the end of the Industrial Age. It was the first of the personal automatic weapons, with the ability to damage more than one target in a single attack. That property made it a highly desirable firearm despite its relatively poor accuracy.
+    pl-5-information-age:
+      localized:
+        - en:
+            name: 'PL 5: Information Age'
+        - es:
+            name: 'PL 6: Era de la fusión'
+      items:
+        pistol-38-rev:
+          skill: Mod-pistol
+          acc: '0'
+          md: F
+          range: 6/12/40
+          type: HI/O
+          damage: d4w/d4+1w/d4m
+          act: '3'
+          clip: '6'
+          mass: '1'
+          hide: '+2'
+          avail: Com
+          cost: '100'
+          localized:
+            - en:
+                name: Pistol, .38 rev
+                description: |-
+                  This medium revolver comes into widespread use because of its relatively low cost as well as its slightly improved range.
+            - es:
+                name: Pistola, canal de 9 mm.
+                description: |-
+                  Una pistola que utiliza munición cargada eléctricamente para aumentar la velocidad.
+        pistol-44-magnum:
+          skill: Mod-pistol
+          acc: '0'
+          md: F
+          range: 6/12/50
+          type: HI/O
+          damage: d4+2w/d4+3w/d4+2m
+          act: '3'
+          clip: '6'
+          mass: '1'
+          hide: '+1'
+          avail: Com
+          cost: '450'
+          localized:
+            - en:
+                name: Pistol, .44 magnum
+                description: |-
+                  The most powerful handgun of the 20th century, this formidable weapon is renowned for its hitting power.
+            - es:
+                name: Pistola, 9 mm de gravedad cero
+                description: |-
+                  Una pistola sin retroceso diseñada para usar en entornos de gravedad cero.
+        pistol-9mm:
+          skill: Mod-pistol
+          acc: '0'
+          md: F
+          range: 6/12/50
+          type: HI/O
+          damage: d4+1w/d4+2w/d4m
+          act: '4'
+          clip: '15'
+          mass: '1'
+          hide: '+3'
+          avail: Com
+          cost: '300'
+          localized:
+            - en:
+                name: Pistol, 9mm
+                description: |-
+                  Smaller but deadlier than the .38, the 9mm is an extremely popular handgun in the second half of the Information Age. A high-capacity ammo clip and a rapid rate of fire combine to produce an approximation of autofire, although the pistol is incapable of fully automatic action.
+            - es:
+                name: Pistola, canal de 11 mm.
+                description: Un disparo de pistola pesada cargó balas de 11 mm.
+        rifle-7-62mm:
+          skill: Mod-rifle
+          acc: '0'
+          md: F
+          range: 70/140/350
+          type: HI/O
+          damage: d6+1w/2d4+1w/d4+1m
+          act: '3'
+          clip: '10'
+          mass: '4'
+          hide: '-'
+          avail: Con
+          cost: '1000'
+          localized:
+            - en:
+                name: Rifle, 7.62mm
+                description: |-
+                  The main battle rifle of the mid-20th century, the 7.62 remains a favorite of marksmen long after lighter, full-automatic weapons supersede it on the battlefield.
+            - es:
+                name: Rifle, canal de 11 mm
+                description: |-
+                  Un rifle militar estándar que disparaba balas cargadas de 11 mm.
+        rifle-assault:
+          skill: Mod-rifle
+          acc: '0'
+          md: F/B/A
+          range: 60/120/300
+          type: HI/O
+          damage: d4+2w/d6+3w/d4+1m
+          act: '4'
+          clip: 30/10
+          mass: '3'
+          hide: '-'
+          avail: Mil
+          cost: '1500'
+          localized:
+            - en:
+                name: Rifle, assault
+                description: |-
+                  The assault rifle—the first firearm capable of both burst mode and autofire—is the standard military weapon of the era. Its range and damage are superior to anything that has come before it.
+            - es:
+                name: Rifle, 11 mm de gravedad cero
+                description: |-
+                  Un rifle sin retroceso diseñado para combates en gravedad cero.
+        smg-9mm:
+          skill: Mod-SMG
+          acc: '+1'
+          md: B/A
+          range: 10/20/80
+          type: HI/O
+          damage: d4+1w/d4+2w/d4m
+          act: '4'
+          clip: -/10
+          mass: '3'
+          hide: '+1'
+          avail: Con
+          cost: '1200'
+          localized:
+            - en:
+                name: SMG, 9mm
+                description: |-
+                  A whole family of small but deadly automatic weapons with astounding rates of fire fall into this category. The submachine gun is an outstanding weapon in a close-in fight, but can't match a rifle for range or accuracy.
+            - es:
+                name: Escopeta, autoflec
+                description: |-
+                  Una escopeta que dispara balas de flechette para causar daños en áreas amplias.
+    pl-6-fusion-age:
+      localized:
+        - en:
+            name: 'PL 6: Fusion Age'
+        - es:
+            name: 'PL 7: Era de la gravedad'
+      items:
+        pistol-9mm-ch:
+          skill: Mod-pistol
+          acc: '0'
+          md: F
+          range: 8/16/60
+          type: HI/O
+          damage: d4+1w/d6+1w/d4m
+          act: '4'
+          clip: '15'
+          mass: '1'
+          hide: '+3'
+          avail: Com
+          cost: '400'
+          localized:
+            - en:
+                name: Pistol, 9mm ch
+                description: |-
+                  In this weapon, the firing pin and chemical explosive combination of a PL 5 firearm is replaced by a powerful contact delivering a massive shock to the cartridge, which is powered by an electrochemical propellant. On firing, the propellant is converted into a white-hot plasma that expands more powerfully and smoothly than a chemical explosive. The result is a weapon that fires a slug with much higher muzzle velocity than earlier firearms.
+            - es:
+                name: Pistola, sabot de 15 mm
+                description: Una pistola pesada que dispara balas de sabot perforantes.
+        pistol-9mm-zero-g:
+          skill: Mod-pistol
+          acc: '0'
+          md: F
+          range: 4/10/40
+          type: HI/O
+          damage: d4+1w/d6+1w/d4m
+          act: '2'
+          clip: '15'
+          mass: '1'
+          hide: '+3'
+          avail: Com
+          cost: '500'
+          localized:
+            - en:
+                name: Pistol, 9mm zero-g
+                description: |-
+                  This charge pistol has a sophisticated anti-recoil system to neutralize the gun's movement. It allows the user to fire the weapon in weightless conditions without throwing himself into awkward tumbles or turns.
+            - es:
+                name: Pistola, láser
+                description: Una pistola que dispara un rayo de luz enfocado.
+        pistol-11mm-ch:
+          skill: Mod-pistol
+          acc: '0'
+          md: F
+          range: 10/20/80
+          type: HI/O
+          damage: d4+2w/d6+2w/d4+1m
+          act: '4'
+          clip: '10'
+          mass: '1.2'
+          hide: '+2'
+          avail: Con
+          cost: '800'
+          localized:
+            - en:
+                name: Pistol, 11mm ch
+                description: |-
+                  This is a heavier version of the 9mm charge pistol, firing a larger round.
+            - es:
+                name: Pistola, masa
+                description: |-
+                  Una pistola que utiliza campos de gravedad para acelerar proyectiles.
+        rifle-11mm-ch:
+          skill: Mod-rifle
+          acc: '0'
+          md: F/B/A
+          range: 80/160/400
+          type: HI/O
+          damage: d6+1w/d6+3w/d6+1m
+          act: '4'
+          clip: 30/10
+          mass: '4'
+          hide: '-'
+          avail: Mil
+          cost: '1500'
+          localized:
+            - en:
+                name: Rifle, 11mm ch
+                description: |-
+                  The standard 11mm charge rifle features the electrochemical firing system described above for the charge pistol, but includes an automatic mode.
+            - es:
+                name: Pistola, tartamudeo
+                description: Una pistola no letal que altera el sistema nervioso.
+        rifle-11mm-zero-g:
+          skill: Mod-rifle
+          acc: '0'
+          md: F
+          range: 30/60/200
+          type: HI/O
+          damage: d6+1w/d6+3w/d6+1m
+          act: '4'
+          clip: '15'
+          mass: '4'
+          hide: '-'
+          avail: Mil
+          cost: '1800'
+          localized:
+            - en:
+                name: Rifle, 11mm zero-g
+                description: |-
+                  Like the zero-g pistol, this rifle fires standard charge rounds with a special anti-recoil system to neutralize its kick.
+            - es:
+                name: rifle, láser
+                description: Un rifle que dispara un rayo láser de alta potencia.
+        shotgun-autoflec:
+          skill: Mod-rifle
+          acc: '0'
+          md: F/B/A
+          range: 10/20/40
+          type: HI/O
+          damage: d4w/d6w/d4m
+          act: '4'
+          clip: 15/5
+          mass: '3'
+          hide: '+1'
+          avail: Mil
+          cost: '2500'
+          localized:
+            - en:
+                name: Shotgun, autoflec
+                description: |-
+                  The autoflechette gun fires a 25mm round that contains a bundle of tiny, razor-sharp aerofoils. A single hit can carve an unarmored person to ribbons, but the autoflechette gun can also be used in full automatic mode with a rate of fire equal to that of most submachine guns—thus, it can clean out a roomful of targets with a few bursts.<br />Like the standard shotgun, damage from the autoflechette is highly dependent on range. At short range, damage is doubled. At long range, damage rolls are halved (round down, to a minimum of 1 point).
+            - es:
+                name: fusil, masa
+                description: |-
+                  Un rifle que utiliza campos de gravedad para acelerar proyectiles.
+        smg-9mm-ch:
+          skill: Mod-SMG
+          acc: '+1'
+          md: B/A
+          range: 20/40/100
+          type: HI/O
+          damage: d4+1w/d6+1w/d4m
+          act: '4'
+          clip: -/10
+          mass: '3'
+          hide: '+1'
+          avail: Mil
+          cost: '1500'
+          localized:
+            - en:
+                name: SMG, 9mm ch
+                description: |-
+                  This weapon combines electrochemical charge technology with full automatic action.
+            - es:
+                name: Rifle, cuántico
+                description: Un rifle que manipula estados cuánticos para causar daño.
+    pl-7-gravity-age:
+      localized:
+        - en:
+            name: 'PL 7: Gravity Age'
+        - es:
+            name: 'PL 8: Era Energética'
+      items:
+        pistol-15mm-sabot:
+          skill: Mod-pistol
+          acc: '0'
+          md: F
+          range: 10/20/100
+          type: HI/O
+          damage: 2d4w/2d4+1w/d4+3m
+          act: '3'
+          clip: '6'
+          mass: '2'
+          hide: '-'
+          avail: Con
+          cost: '900'
+          localized:
+            - en:
+                name: Pistol, 15mm sabot
+                description: |-
+                  This small, handheld electromagnetic accelerator hurls a special, discarding-rocket slug at hypersonic velocities.<br />The round fired by this weapon is a miniature scramjet that ignites soon after leaving the muzzle and quickly accelerates to incredible speed. Due to its extremely high velocity, the rocket round is designed to splatter against any appreciable resistance to transfer as much kinetic energy as possible to the target.
+            - es:
+                name: Automaser
+                description: Un arma máser de fuego rápido.
+        pistol-laser:
+          skill: Mod-pistol
+          acc: '-1'
+          md: F
+          range: 20/40/200
+          type: En/O
+          damage: d4+1w/d6+1w/d4m
+          act: '4'
+          clip: '20'
+          mass: '1'
+          hide: '+3'
+          avail: Con
+          cost: '1000'
+          localized:
+            - en:
+                name: Pistol, laser
+                description: |-
+                  Another application of electrochemical technology, the laser weapon uses an electrical charge to raise a chemical mass to brilliant fluorescence. This light is focused through precisely machined artificial crystals and expelled from the weapon as a white-hot beam.
+            - es:
+                name: Pistola, máser hvy
+                description: Una pistola pesada que dispara un láser de microondas.
+        pistol-mass:
+          skill: Mod-pistol
+          acc: '0'
+          md: F
+          range: 2/6/12
+          type: En/G
+          damage: d6w/d6+2w/d6m
+          act: '4'
+          clip: '2'
+          mass: '1'
+          hide: '+2'
+          avail: Mil
+          cost: '1200'
+          localized:
+            - en:
+                name: Pistol, mass
+                description: |-
+                  Utilizing the gravity induction technology also employed in shipboard weapons systems, the mass pistol throws an artificial, short-lived mass singularity at its target. This gravity point causes horrible damage through tidal effects to both animate and inanimate objects, but it is short-ranged and consumes an enormous amount of energy.
+            - es:
+                name: Pistola, máser
+                description: Una pistola que dispara un láser de microondas.
+        pistol-stutter:
+          skill: Mod-pistol
+          acc: '0'
+          md: F
+          range: 6/12/30
+          type: LI/O
+          damage: d6+2s/d8+2s/d8+4s
+          act: '4'
+          clip: '10'
+          mass: '1.5'
+          hide: '+2'
+          avail: Com
+          cost: '500'
+          localized:
+            - en:
+                name: Pistol, stutter
+                description: |-
+                  This handheld weapon uses sonic energy—audible as a loud, low-frequency rumble—to incapacitate a target. Since the stutter pistol delivers stun damage, it is favored by riot response teams and those who seek to pacify rather than terminate opponents. The stutter pistol doesn't function in a vacuum.
+            - es:
+                name: Rifle, máser hvy
+                description: Un rifle pesado que dispara un láser de microondas.
+        rifle-laser:
+          skill: Mod-rifle
+          acc: '-1'
+          md: F
+          range: 100/400/1000
+          type: En/O
+          damage: d6+1w/d6+3w/d4+1m
+          act: '3'
+          clip: '12'
+          mass: '4'
+          hide: '-'
+          avail: Mil
+          cost: '1500'
+          localized:
+            - en:
+                name: Rifle, laser
+                description: |-
+                  The laser rifle is a larger, heavier, improved version of the laser pistol—every bit as accurate as the smaller weapon, and able to hit a target from as far away as a full kilometer.
+            - es:
+                name: fusil, máser
+                description: Un rifle que dispara un láser de microondas.
+        rifle-mass:
+          skill: Mod-rifle
+          acc: '0'
+          md: F
+          range: 4/12/30
+          type: En/G
+          damage: d6w/d8+1w/d6+1m
+          act: '4'
+          clip: '2'
+          mass: '4'
+          hide: '-'
+          avail: Mil
+          cost: '2000'
+          localized:
+            - en:
+                name: Rifle, mass
+                description: |-
+                  The mass rifle works on the same principle as the mass pistol, but is heavier and has a longer range.
+            - es:
+                name: Rifle, mass
+                description: |-
+                  The mass rifle works on the same principle as the mass pistol, but is heavier and has a longer range.
+        rifle-quantum:
+          skill: Mod-rifle
+          acc: '0'
+          md: F/B/A
+          range: 80/200/500
+          type: En/O
+          damage: d4+3w/d6+4w/d6+1m
+          act: '3'
+          clip: 15/5
+          mass: '8'
+          hide: '-'
+          avail: Res
+          cost: '8000'
+          localized:
+            - en:
+                name: Rifle, quantum
+                description: |-
+                  This weapon is a personal version of the ship-mounted particle beam. It uses a small accelerator to fire subatomic particles at a target. All personal quantum weapons are extremely expensive and highly restricted, making them rare and often illegal to own and operate.
+            - es:
+                name: Rifle, quantum
+                description: |-
+                  This weapon is a personal version of the ship-mounted particle beam. It uses a small accelerator to fire subatomic particles at a target. All personal quantum weapons are extremely expensive and highly restricted, making them rare and often illegal to own and operate.
+        rifle-render:
+          skill: Mod-rifle
+          acc: '0'
+          md: F
+          range: 50/100/250
+          type: En/O
+          damage: d6+1s/d6+1w/d4+1m
+          act: '3'
+          clip: '8'
+          mass: '4'
+          hide: '+1'
+          avail: Res
+          cost: '2000'
+          localized:
+            - en:
+                name: Rifle, render
+                description: |-
+                  This weapon utilizes gravity induction technology to strobe through a lightning-quick cycle of attraction and repulsion against the target. This action causes matter to literally tear itself to pieces. A lucky target may escape with bad bruises, surface abrasions, and a thorough battering, but a well-centered hit by the render creates massive body trauma.
+            - es:
+                name: Rifle, render
+                description: |-
+                  This weapon utilizes gravity induction technology to strobe through a lightning-quick cycle of attraction and repulsion against the target. This action causes matter to literally tear itself to pieces. A lucky target may escape with bad bruises, surface abrasions, and a thorough battering, but a well-centered hit by the render creates massive body trauma.
+        smg-laser:
+          skill: Mod-SMG
+          acc: '0'
+          md: B/A
+          range: 20/80/200
+          type: En/O
+          damage: d6w/d6+2w/d4m
+          act: '4'
+          clip: -/10
+          mass: '3'
+          hide: '-'
+          avail: Con
+          cost: '1500'
+          localized:
+            - en:
+                name: SMG, laser
+                description: |-
+                  The laser SMG does more damage, has greater accuracy, and fires more shots per clip than previous SMGs.
+            - es:
+                name: SMG, laser
+                description: |-
+                  The laser SMG does more damage, has greater accuracy, and fires more shots per clip than previous SMGs.
+        smg-stutter:
+          skill: Mod-SMG
+          acc: '0'
+          md: B/A
+          range: 10/20/80
+          type: LI/O
+          damage: d6+2s/d8+2s/d8+4s
+          act: '4'
+          clip: -/20
+          mass: '3'
+          hide: '+1'
+          avail: Con
+          cost: '1000'
+          localized:
+            - en:
+                name: SMG, stutter
+                description: |-
+                  The automatic version of the stutter pistol is a favored weapon of riot-control police and others who need to knock out a large number of people without inflicting lethal injuries. The stutter SMG doesn't function in a vacuum.
+            - es:
+                name: SMG, stutter
+                description: |-
+                  The automatic version of the stutter pistol is a favored weapon of riot-control police and others who need to knock out a large number of people without inflicting lethal injuries. The stutter SMG doesn't function in a vacuum.
+        m9-9mm-charge-pistol:
+          skill: Ranged-pistol
+          acc: '-1'
+          md: F
+          range: 8/16/60
+          type: HI/O
+          damage: d4+1w/d6+1w/d4m
+          act: '4'
+          clip: '15'
+          mass: '1'
+          hide: '+3'
+          avail: Com
+          cost: '500'
+          localized:
+            - en:
+                name: M9 9mm Charge Pistol
+                description: |-
+                  The M9 charge pistol has been the standard sidearm of the Orion Star Service for more than eighty years. More than two million M9s have been produced by A.M. Industries. It's a good example of a light charge pistol, equipped with a baffled suppressor to hide the weapon's characteristic muzzle flash. In recent years, the Star Service has begun a design competition in search of a replacement for this model. (Payload: 9mm bullet)
+            - es:
+                name: M9 9mm Charge Pistol
+                description: |-
+                  The M9 charge pistol has been the standard sidearm of the Orion Star Service for more than eighty years. More than two million M9s have been produced by A.M. Industries. It's a good example of a light charge pistol, equipped with a baffled suppressor to hide the weapon's characteristic muzzle flash. In recent years, the Star Service has begun a design competition in search of a replacement for this model. (Payload: 9mm bullet)
+        hammer-5-11mm-charge-pistol:
+          skill: Ranged-pistol
+          acc: '-1'
+          md: F
+          range: 10/20/80
+          type: HI/O
+          damage: d4+2w/d6+2w/d4+1m
+          act: '3'
+          clip: '12'
+          mass: '1.2'
+          hide: '+2'
+          avail: Com
+          cost: '1000'
+          localized:
+            - en:
+                name: Hammer 5 11mm Charge Pistol
+                description: |-
+                  One of the finest 11mm pistols on the market, the Soze Hammer 5 is an unusually steady and accurate heavy pistol. It's a little large to fit comfortably in many handgun holsters, but many enthusiasts think that the weapon's legendary accuracy is worth the extra cost and trouble. Numerous models of "standard" 11mm pistols exist, generally priced around $800 for a new gun. (Payload: 11mm bullet)
+            - es:
+                name: Hammer 5 11mm Charge Pistol
+                description: |-
+                  One of the finest 11mm pistols on the market, the Soze Hammer 5 is an unusually steady and accurate heavy pistol. It's a little large to fit comfortably in many handgun holsters, but many enthusiasts think that the weapon's legendary accuracy is worth the extra cost and trouble. Numerous models of "standard" 11mm pistols exist, generally priced around $800 for a new gun. (Payload: 11mm bullet)
+        k-sat-100-9mm-zero-g-pistol:
+          skill: Ranged-pistol
+          acc: '0'
+          md: F
+          range: 4/10/40
+          type: HI/O
+          damage: d4+1w/d6+1w/d4m
+          act: '3'
+          clip: '15'
+          mass: '1'
+          hide: '+3'
+          avail: Com
+          cost: '400'
+          localized:
+            - en:
+                name: K-SAT 100 9mm Zero-G Pistol
+                description: |-
+                  The Karadnya is a vintage design that's been around for more than fifty years. A muzzle brake and recoil cylinder surrounding the weapon's action make it virtually recoil-free. Although its low muzzle velocity limits its range, the K-SAT reduces any penalties for firing in zero-g conditions by 1 step. Today, energy weapons such as the laser pistol are beginning to replace the old zero-g firearms. (Payload: 9mm bullet)
+            - es:
+                name: K-SAT 100 9mm Zero-G Pistol
+                description: |-
+                  The Karadnya is a vintage design that's been around for more than fifty years. A muzzle brake and recoil cylinder surrounding the weapon's action make it virtually recoil-free. Although its low muzzle velocity limits its range, the K-SAT reduces any penalties for firing in zero-g conditions by 1 step. Today, energy weapons such as the laser pistol are beginning to replace the old zero-g firearms. (Payload: 9mm bullet)
+        arz-6mm-charge-autorifle:
+          skill: Ranged-rifle
+          acc: '-1'
+          md: B/A
+          range: 60/150/400
+          type: HI/O
+          damage: d6w/2d4w/d4+1m
+          act: '3'
+          clip: 30 bursts
+          mass: '2.75'
+          hide: '-'
+          avail: Mil
+          cost: '2000'
+          localized:
+            - en:
+                name: ARZ 6mm Charge Autorifle
+                description: |-
+                  Autorifles are light weapons with a very high rate of fire, intended for assault or support roles. The ARZ is one of the most popular of these designs; originally produced by Karadnya-Brusilev of Nariac, it's now manufactured under license in the Thuldan Empire and the Solar Union. The model shown here is fitted with the standard 100-round magazine, which provides the soldier with plenty of ammo. (Payload: 6mm bullet)
+            - es:
+                name: ARZ 6mm Charge Autorifle
+                description: |-
+                  Autorifles are light weapons with a very high rate of fire, intended for assault or support roles. The ARZ is one of the most popular of these designs; originally produced by Karadnya-Brusilev of Nariac, it's now manufactured under license in the Thuldan Empire and the Solar Union. The model shown here is fitted with the standard 100-round magazine, which provides the soldier with plenty of ammo. (Payload: 6mm bullet)
+        if-3-11mm-charge-rifle:
+          skill: Ranged-rifle
+          acc: '0'
+          md: F/B/A
+          range: 90/180/600
+          type: HI/O
+          damage: d6+1w/d6+3w/d6+1m
+          act: '4'
+          clip: 30 rounds/10 bursts
+          mass: '3'
+          hide: '-'
+          avail: Mil
+          cost: '1600'
+          localized:
+            - en:
+                name: IF-3 11mm Charge Rifle
+                description: |-
+                  IF-3 has been the standard infantry weapon of the Concord Defense Corps and the Concord Marines. Adopted from Austrin-Ontis as the best combat rifle available at the time, the IF-3 is light, rugged, and long-ranged. With the addition of a $50 conversion kit, the IF-3 can be configured for zero-g combat. This halves all range figures, but reduces zero-g penalties by 1 step. (Payload: 11mm bullet)
+            - es:
+                name: IF-3 11mm Charge Rifle
+                description: |-
+                  IF-3 has been the standard infantry weapon of the Concord Defense Corps and the Concord Marines. Adopted from Austrin-Ontis as the best combat rifle available at the time, the IF-3 is light, rugged, and long-ranged. With the addition of a $50 conversion kit, the IF-3 can be configured for zero-g combat. This halves all range figures, but reduces zero-g penalties by 1 step. (Payload: 11mm bullet)
+        bulldog-9mm-charge-smg:
+          skill: Ranged-SMG
+          acc: '0'
+          md: B/A
+          range: 20/50/100
+          type: HI/O
+          damage: d4+1w/d6+1w/d4m
+          act: '4'
+          clip: 8 bursts
+          mass: '2.25'
+          hide: '+1'
+          avail: Mil
+          cost: '1750'
+          localized:
+            - en:
+                name: Bulldog 9mm Charge SMG
+                description: |-
+                  The Bulldog is a fine example of a second-generation weapon. Many of the flaws of earlier charge SMGs were corrected in this design. It's compact and sturdy, standing up to the worst field conditions. The most innovative feature is a recoil suppression system that controls the natural tendency of an automatic weapon to "walk" when fired in full auto-the Bulldog's accuracy is legendary. (Payload: 9mm bullet)
+            - es:
+                name: Bulldog 9mm Charge SMG
+                description: |-
+                  The Bulldog is a fine example of a second-generation weapon. Many of the flaws of earlier charge SMGs were corrected in this design. It's compact and sturdy, standing up to the worst field conditions. The most innovative feature is a recoil suppression system that controls the natural tendency of an automatic weapon to "walk" when fired in full auto-the Bulldog's accuracy is legendary. (Payload: 9mm bullet)
+        agc-7-autoflechette-shotgun:
+          skill: Ranged-rifle
+          acc: '0'
+          md: F/B/A
+          range: 10/20/50
+          type: HI/O
+          damage: d4w/d6w/d4m
+          act: '4'
+          clip: 15 rounds/5 bursts
+          mass: '3.25'
+          hide: '+1'
+          avail: Mil
+          cost: '2750'
+          localized:
+            - en:
+                name: AGC-7 Autoflechette Shotgun
+                description: |-
+                  The AGC-7 (or "Aggie," as it's affectionately known) is one of the most fearsome close assault weapons in existence. It's a fully automatic charge weapon firing 20mm flechette rounds-bundles of razor-sharp needles that shred anything they hit. Like other shotguns, it inflicts double damage to targets within short range (10 meters), and only half damage (minimum of 1 point) to targets at long range. (Payload: 25mm flechette round)
+            - es:
+                name: AGC-7 Autoflechette Shotgun
+                description: |-
+                  The AGC-7 (or "Aggie," as it's affectionately known) is one of the most fearsome close assault weapons in existence. It's a fully automatic charge weapon firing 20mm flechette rounds-bundles of razor-sharp needles that shred anything they hit. Like other shotguns, it inflicts double damage to targets within short range (10 meters), and only half damage (minimum of 1 point) to targets at long range. (Payload: 25mm flechette round)
+        devastator-flechette-pistol:
+          skill: Ranged-pistol
+          acc: '-1'
+          md: F
+          range: 8/16/40
+          type: HI/O
+          damage: d4w/d6w/d4m
+          act: '3'
+          clip: '6'
+          mass: '1.5'
+          hide: '+2'
+          avail: Mil
+          cost: '1450'
+          localized:
+            - en:
+                name: Devastator Flechette Pistol
+                description: |-
+                  The Devastator is a succinct statement of the Soze Arms design philosophy-overkill is the way to go. This pistol fires a wide-pattern flechette round, shredding anything in the general vicinity. It inflicts double the listed damage at close range (8 meters or less), but only half damage for shots at long range (16 to 40 meters). The flechette pistol doesn't have the full-auto capability of the autoflechette shotgun. (Payload: 25mm flechette round)
+            - es:
+                name: Devastator Flechette Pistol
+                description: |-
+                  The Devastator is a succinct statement of the Soze Arms design philosophy-overkill is the way to go. This pistol fires a wide-pattern flechette round, shredding anything in the general vicinity. It inflicts double the listed damage at close range (8 meters or less), but only half damage for shots at long range (16 to 40 meters). The flechette pistol doesn't have the full-auto capability of the autoflechette shotgun. (Payload: 25mm flechette round)
+        tornado-600-15mm-sabot-pistol:
+          skill: Ranged-pistol
+          acc: '0'
+          md: F
+          range: 10/20/100
+          type: HI/O
+          damage: 2d4w/2d4+1w/d4+3m
+          act: '3'
+          clip: '6'
+          mass: '2'
+          hide: '+1'
+          avail: Con
+          cost: '900'
+          localized:
+            - en:
+                name: Tornado 600 15mm Sabot Pistol
+                description: |-
+                  Sabot pistols are big and heavy, but they're the most powerful handguns produced in any numbers. The weapon has great range for a pistol, and almost no kick-the accelerator pushes the slug out of the barrel with a smooth, nonexplosive action. The sabot pistol's lanthanide cell provides enough energy to fire four clips of ammo before it's exhausted; the cell can be recharged for $10 or replaced for $200. (Payload: 10mm sabot ramjet)
+            - es:
+                name: Tornado 600 15mm Sabot Pistol
+                description: |-
+                  Sabot pistols are big and heavy, but they're the most powerful handguns produced in any numbers. The weapon has great range for a pistol, and almost no kick-the accelerator pushes the slug out of the barrel with a smooth, nonexplosive action. The sabot pistol's lanthanide cell provides enough energy to fire four clips of ammo before it's exhausted; the cell can be recharged for $10 or replaced for $200. (Payload: 10mm sabot ramjet)
+        ms-15mm-sabot-rifle:
+          skill: Ranged-rifle
+          acc: '0'
+          md: F
+          range: 80/200/800
+          type: HI/O
+          damage: d4+4w/2d4+2w/d6+3m
+          act: '2'
+          clip: '12'
+          mass: '4'
+          hide: '-'
+          avail: Mil
+          cost: '4500'
+          localized:
+            - en:
+                name: MS 15mm Sabot Rifle
+                description: |-
+                  While no one questions the sabot rifle's range or hitting power, its lack of automatic-fire capability has limited its appeal. Other combat rifles of the day provide a greater volume of fire, longer range, or better armor penetration. Despite this, the sabot rifle is popular with scouts and colonial militias who want one-shot stopping power at range for dealing with dangerous native creatures. (Payload: 10mm sabot ramjet)
+            - es:
+                name: MS 15mm Sabot Rifle
+                description: |-
+                  While no one questions the sabot rifle's range or hitting power, its lack of automatic-fire capability has limited its appeal. Other combat rifles of the day provide a greater volume of fire, longer range, or better armor penetration. Despite this, the sabot rifle is popular with scouts and colonial militias who want one-shot stopping power at range for dealing with dangerous native creatures. (Payload: 10mm sabot ramjet)
+        nova-6-mass-pistol:
+          skill: Ranged-pistol
+          acc: '0'
+          md: F
+          range: 2/6/12
+          type: En/G
+          damage: d6w/d6+2w/d6m
+          act: '3'
+          clip: '6'
+          mass: '1'
+          hide: '+2'
+          avail: Mil
+          cost: '1475'
+          localized:
+            - en:
+                name: Nova 6 Mass Pistol
+                description: |-
+                  Made famous by the action holomovies of Jack Everstar, the Nova 6 is a top-of-the-line mass pistol. Slightly more efficient than most mass pistols, the charge cells of a Nova 6 can power up to six shots before exhausting the weapon's energy reserves. Mass pistols are virtually useless in open terrain, but there aren't many weapons better for close-quarters combat against armored foes. (Payload: Gravity point-source)
+            - es:
+                name: Nova 6 Mass Pistol
+                description: |-
+                  Made famous by the action holomovies of Jack Everstar, the Nova 6 is a top-of-the-line mass pistol. Slightly more efficient than most mass pistols, the charge cells of a Nova 6 can power up to six shots before exhausting the weapon's energy reserves. Mass pistols are virtually useless in open terrain, but there aren't many weapons better for close-quarters combat against armored foes. (Payload: Gravity point-source)
+        aamg-12-mass-rifle:
+          skill: Ranged-rifle
+          acc: '-1'
+          md: F
+          range: 4/12/30
+          type: En/G
+          damage: d6+1w/d8+1w/d6+1m
+          act: '2'
+          clip: 8 shots
+          mass: '4'
+          hide: '-'
+          avail: Mil
+          cost: '2450'
+          localized:
+            - en:
+                name: AAMG-12 Mass Rifle
+                description: |-
+                  A larger and more powerful version of the mass pistol, the mass rifle sacrifices range and rate of fire for unbeatable armor penetration. The AAMG is a brand-new design from Karadnya-Brusilev. It's the most accurate mass rifle on the market today, and its new charge cell technology doubles its magazine capacity compared to others of its type. (Payload: Gravity point-source)
+            - es:
+                name: AAMG-12 Mass Rifle
+                description: |-
+                  A larger and more powerful version of the mass pistol, the mass rifle sacrifices range and rate of fire for unbeatable armor penetration. The AAMG is a brand-new design from Karadnya-Brusilev. It's the most accurate mass rifle on the market today, and its new charge cell technology doubles its magazine capacity compared to others of its type. (Payload: Gravity point-source)
+        ninja-600-laser-pistol:
+          skill: Ranged-pistol
+          acc: '-1'
+          md: F
+          range: 20/40/150
+          type: En/O
+          damage: d4+1w/d6+1w/d4m
+          act: '4'
+          clip: 20 shots
+          mass: '0.5'
+          hide: '+4'
+          avail: Con
+          cost: '1225'
+          localized:
+            - en:
+                name: Ninja 600 Laser Pistol
+                description: |-
+                  The Ninja 600 is a small and easily concealable laser pistol built to the flush-front design. Like all lasers, it's extremely accurate and offers the best range characteristics of any handgun. The Ninja line is very popular with corporate execs and other affluent celebrities who want to carry a weapon for self-defense without advertising the fact that they're armed. Most combat specs prefer a heavier weapon. (Payload: Coherent light)
+            - es:
+                name: Ninja 600 Laser Pistol
+                description: |-
+                  The Ninja 600 is a small and easily concealable laser pistol built to the flush-front design. Like all lasers, it's extremely accurate and offers the best range characteristics of any handgun. The Ninja line is very popular with corporate execs and other affluent celebrities who want to carry a weapon for self-defense without advertising the fact that they're armed. Most combat specs prefer a heavier weapon. (Payload: Coherent light)
+        clr-19-laser-rifle:
+          skill: Ranged-rifle
+          acc: '-1'
+          md: F
+          range: 100/600/1500
+          type: En/O
+          damage: d6+1w/d6+3w/d4+1m
+          act: '3'
+          clip: 12 shots
+          mass: '4'
+          hide: '-'
+          avail: Mil
+          cost: '1800'
+          localized:
+            - en:
+                name: CLR-19 Laser Rifle
+                description: |-
+                  The standard infantry firearm of the Orion League, CLR-19 (Combat Laser Rifle-19) is a weapon of extraordinary range and accuracy. It's proven its value in numerous engagements against older charge weapons, especially in relatively open terrain. In close quarters, the weapon's length and low rate of fire are distinct drawbacks compared to the faster-firing and harder-hitting 11mm charge rifle. (Payload: Coherent light)
+            - es:
+                name: CLR-19 Laser Rifle
+                description: |-
+                  The standard infantry firearm of the Orion League, CLR-19 (Combat Laser Rifle-19) is a weapon of extraordinary range and accuracy. It's proven its value in numerous engagements against older charge weapons, especially in relatively open terrain. In close quarters, the weapon's length and low rate of fire are distinct drawbacks compared to the faster-firing and harder-hitting 11mm charge rifle. (Payload: Coherent light)
+        valkyrie-9-autolaser:
+          skill: Ranged-SMG
+          acc: '0'
+          md: B/A
+          range: 20/80/200
+          type: En/O
+          damage: d6+1w/d6+3w/d4+1m
+          act: '4'
+          clip: 10 bursts
+          mass: '3.25'
+          hide: '-'
+          avail: Con
+          cost: '1725'
+          localized:
+            - en:
+                name: Valkyrie 9 Autolaser
+                description: |-
+                  The largest and most powerful autolaser available, the Valkyrie offers damage equal to a laser rifle with full automatic fire. While many people refer to the autolaser as a laser submachine gun, this is a misnomer-the device is not a machine gun and has little in common with any conventional firearm. Bursts or full-auto attacks with this weapon are actually sweeps and slashes of its white-hot beam. (Payload: Coherent light)
+            - es:
+                name: Valkyrie 9 Autolaser
+                description: |-
+                  The largest and most powerful autolaser available, the Valkyrie offers damage equal to a laser rifle with full automatic fire. While many people refer to the autolaser as a laser submachine gun, this is a misnomer-the device is not a machine gun and has little in common with any conventional firearm. Bursts or full-auto attacks with this weapon are actually sweeps and slashes of its white-hot beam. (Payload: Coherent light)
+        falcon-t9-stutter-pistol:
+          skill: Ranged-pistol
+          acc: '0'
+          md: F
+          range: 4/8/20
+          type: LI/O
+          damage: d6+2s/d8+2s/d8+4s
+          act: '3'
+          clip: 10 shots
+          mass: '0.75'
+          hide: '+4'
+          avail: Com
+          cost: '375'
+          localized:
+            - en:
+                name: Falcon T9 Stutter Pistol
+                description: |-
+                  One of the most popular handguns in human space, the Falcon T9 is synonymous with reasonably priced, nonlethal personal defense. It's lighter and slimmer than the standard stutter pistol, trading range and clip capacity for easy concealment and use by people who aren't highly trained. 'Point and say good-night' is the tag line for SekureTek's Falcon ads, and it's just about that easy. (Payload: Compressed air)
+            - es:
+                name: Falcon T9 Stutter Pistol
+                description: |-
+                  One of the most popular handguns in human space, the Falcon T9 is synonymous with reasonably priced, nonlethal personal defense. It's lighter and slimmer than the standard stutter pistol, trading range and clip capacity for easy concealment and use by people who aren't highly trained. 'Point and say good-night' is the tag line for SekureTek's Falcon ads, and it's just about that easy. (Payload: Compressed air)
+        condor-x7-stutter-pistol:
+          skill: Ranged-pistol
+          acc: '0'
+          md: F
+          range: 8/16/40
+          type: LI/O
+          damage: d6+3s/d8+3s/d12+3s
+          act: '3'
+          clip: 8 shots
+          mass: '1.25'
+          hide: '+1'
+          avail: Com
+          cost: '850'
+          localized:
+            - en:
+                name: Condor X7 Stutter Pistol
+                description: |-
+                  Professional peacekeepers prefer a more capable weapon than the light stutter pistols favored for personal defense. The Condor is an example of the heavy stutter pistol, a weapon designed for the subdual of armed, dangerous criminals. One hit almost always dazes or knocks out an unarmored opponent, and even armored targets can be brought down with accurate and sustained fire. (Payload: Compressed air)
+            - es:
+                name: Condor X7 Stutter Pistol
+                description: |-
+                  Professional peacekeepers prefer a more capable weapon than the light stutter pistols favored for personal defense. The Condor is an example of the heavy stutter pistol, a weapon designed for the subdual of armed, dangerous criminals. One hit almost always dazes or knocks out an unarmored opponent, and even armored targets can be brought down with accurate and sustained fire. (Payload: Compressed air)
+        cyclone-700-stutter-smg:
+          skill: Ranged-SMG
+          acc: '0'
+          md: B/A
+          range: 10/20/80
+          type: LI/O
+          damage: d6+2s/d8+2s/d8+4s
+          act: '4'
+          clip: 20 bursts
+          mass: '3'
+          hide: '+1'
+          avail: Con
+          cost: '1000'
+          localized:
+            - en:
+                name: Cyclone 700 Stutter SMG
+                description: |-
+                  The stutter SMG isn't a real submachine gun, of course; it's referred to as an SMG because of its high cyclic rate of fire. It's intended for use in close-quarters riot control or police raid situations in which the authorities must subdue a large number of people in a very short time. Stutter SMGs are also favored by special forces teams attempting to take prisoners instead of simply killing their enemies. (Payload: Compressed air)
+            - es:
+                name: Cyclone 700 Stutter SMG
+                description: |-
+                  The stutter SMG isn't a real submachine gun, of course; it's referred to as an SMG because of its high cyclic rate of fire. It's intended for use in close-quarters riot control or police raid situations in which the authorities must subdue a large number of people in a very short time. Stutter SMGs are also favored by special forces teams attempting to take prisoners instead of simply killing their enemies. (Payload: Compressed air)
+        sirocco-100-stutter-rifle:
+          skill: Ranged-rifle
+          acc: '-1'
+          md: F
+          range: 20/40/200
+          type: LI/O
+          damage: d6+3s/d8+3s/d12+3s
+          act: '2'
+          clip: 12 shots
+          mass: '3.5'
+          hide: '-'
+          avail: Con
+          cost: '750'
+          localized:
+            - en:
+                name: Sirocco 100 Stutter Rifle
+                description: |-
+                  In situations where you're only going to get one chance to stun an opponent, the stutter rifle's a good choice. It offers a longer range, more hitting power, and better accuracy than any other stutter weapon, making it perfect for taking out a problem with one clean shot at distance. The Sirocco is renowned as a scout's weapon, durable and effective; last year it won Merrick's Triple-Bullseye for best in class. (Payload: Compressed air)
+            - es:
+                name: Sirocco 100 Stutter Rifle
+                description: |-
+                  In situations where you're only going to get one chance to stun an opponent, the stutter rifle's a good choice. It offers a longer range, more hitting power, and better accuracy than any other stutter weapon, making it perfect for taking out a problem with one clean shot at distance. The Sirocco is renowned as a scout's weapon, durable and effective; last year it won Merrick's Triple-Bullseye for best in class. (Payload: Compressed air)
+        tauri-9-impact-pistol:
+          skill: Ranged-pistol
+          acc: '0'
+          md: F/B
+          range: 4/12/36
+          type: LI/O
+          damage: 2d4s/d6+1w/d6+3w
+          act: '4'
+          clip: 12 shots/4 bursts
+          mass: '1'
+          hide: '+2'
+          avail: Con
+          cost: '1150'
+          localized:
+            - en:
+                name: Tauri 9 Impact Pistol
+                description: |-
+                  A deadly refinement of stutter weapon technology, the impact pistol fires an even more powerful blast of compressed air that can powder concrete at close range. It can be set for a high-speed mode that allows burst fire (but not full automatic), or for low-speed, single-shot mode. Like any stutter weapon, the impact pistol doesn't work in vacuum due to the lack of air to compress. (Payload: Compressed air)
+            - es:
+                name: Tauri 9 Impact Pistol
+                description: |-
+                  A deadly refinement of stutter weapon technology, the impact pistol fires an even more powerful blast of compressed air that can powder concrete at close range. It can be set for a high-speed mode that allows burst fire (but not full automatic), or for low-speed, single-shot mode. Like any stutter weapon, the impact pistol doesn't work in vacuum due to the lack of air to compress. (Payload: Compressed air)
+        apache-lx-reflex-bow:
+          skill: Ranged-bow
+          acc: '0'
+          md: F
+          range: 50/100/250
+          type: LI/O
+          damage: d4+2w/d6+2w/d4+1m
+          act: '2'
+          clip: 1 shot
+          mass: '1'
+          hide: '-'
+          avail: Com
+          cost: '650'
+          localized:
+            - en:
+                name: Apache LX Reflex Bow
+                description: |-
+                  The bow's greatest advantage is silence and stealth. It has no muzzle flash or loud report to give away the user's location, making it perfect for dense terrain such as jungle or heavy brush. Its disadvantage is the low rate of fire (after each 'shot', the user must waste an action to ready another arrow, or shoot with a +2 step penalty) and its size, which prevents it from being fired from a prone position. (Payload: Razor-tipped arrow)
+            - es:
+                name: Apache LX Reflex Bow
+                description: |-
+                  The bow's greatest advantage is silence and stealth. It has no muzzle flash or loud report to give away the user's location, making it perfect for dense terrain such as jungle or heavy brush. Its disadvantage is the low rate of fire (after each 'shot', the user must waste an action to ready another arrow, or shoot with a +2 step penalty) and its size, which prevents it from being fired from a prone position. (Payload: Razor-tipped arrow)
+        commando-3000-crossbow:
+          skill: Ranged-bow
+          acc: '0'
+          md: F
+          range: 60/120/300
+          type: HI/O
+          damage: d6+1w/d8+1w/d6m
+          act: '2'
+          clip: 1 shot
+          mass: '2'
+          hide: '-'
+          avail: Con
+          cost: '950'
+          localized:
+            - en:
+                name: Commando 3000 Crossbow
+                description: |-
+                  Modern crossbows are extremely dangerous weapons, with hitting power comparable to a high-powered rifle. Like the bow, it's silent and dark, perfect for stealthy missions. On the downside, it's slow; after each shot, the marksman must spend an action to cock the weapon and ready another quarrel. However, crossbows can be carried cocked and can be fired from a prone position. (Payload: Razor-tipped bolt)
+            - es:
+                name: Commando 3000 Crossbow
+                description: |-
+                  Modern crossbows are extremely dangerous weapons, with hitting power comparable to a high-powered rifle. Like the bow, it's silent and dark, perfect for stealthy missions. On the downside, it's slow; after each shot, the marksman must spend an action to cock the weapon and ready another quarrel. However, crossbows can be carried cocked and can be fired from a prone position. (Payload: Razor-tipped bolt)
+        cobra-f77-dart-gun:
+          skill: Ranged-pistol
+          acc: '0'
+          md: F
+          range: 4/8/16
+          type: LI/O
+          damage: d4-1w/d4w/d4+1w
+          act: '2'
+          clip: 6 shots
+          mass: '1.5'
+          hide: '+2'
+          avail: Com
+          cost: '450'
+          localized:
+            - en:
+                name: Cobra F77 Dart Gun
+                description: |-
+                  The dart gun is a pneumatic pistol designed to fire a large, hollow dart. One popular version of this gun (pictured) is a specially designed, pocket-sized weapon (Hide value +4, cost $300). While the dart can inflict serious injury by itself, it's usually used as a delivery system for an insinuative venom. The typical dart is filled with neurotoxin (+1 step penalty to the victim's Constitution feat check, onset time d4 rounds) or a paralytic agent (+2 step penalty, onset time d4-1 rounds). (Payload: Poison-tipped dart)
+            - es:
+                name: Cobra F77 Dart Gun
+                description: |-
+                  The dart gun is a pneumatic pistol designed to fire a large, hollow dart. One popular version of this gun (pictured) is a specially designed, pocket-sized weapon (Hide value +4, cost $300). While the dart can inflict serious injury by itself, it's usually used as a delivery system for an insinuative venom. The typical dart is filled with neurotoxin (+1 step penalty to the victim's Constitution feat check, onset time d4 rounds) or a paralytic agent (+2 step penalty, onset time d4-1 rounds). (Payload: Poison-tipped dart)
+        blue-bolt-arc-gun:
+          skill: Ranged-rifle
+          acc: '-1'
+          md: F
+          range: 20/40/100
+          type: En/G
+          damage: d8+1s/d8w/d6+3w
+          act: '2'
+          clip: 12 shots
+          mass: '10'
+          hide: '-'
+          avail: Mil
+          cost: '2750'
+          localized:
+            - en:
+                name: Blue Bolt Arc Gun
+                description: |-
+                  Designed for close assault, both arc guns and flamers are accurate weapons at short ranges. The Blue Bolt has an unusual feature not found on many arc guns-a wireless taser setting. When it's activated, the gun's laser marker measures the target's surface resistance and calculates an appropriate stun charge. In taser mode, the Blue Bolt inflicts d8+1s/2d6s/2d6+2s for an Ordinary, Good, or Amazing success on the attack skill check. Switching from taser mode to normal operation requires an action. (Payload: Electrical arc)
+            - es:
+                name: Blue Bolt Arc Gun
+                description: |-
+                  Designed for close assault, both arc guns and flamers are accurate weapons at short ranges. The Blue Bolt has an unusual feature not found on many arc guns-a wireless taser setting. When it's activated, the gun's laser marker measures the target's surface resistance and calculates an appropriate stun charge. In taser mode, the Blue Bolt inflicts d8+1s/2d6s/2d6+2s for an Ordinary, Good, or Amazing success on the attack skill check. Switching from taser mode to normal operation requires an action. (Payload: Electrical arc)
+        demon-9-hand-flamer:
+          skill: Ranged-SMG
+          acc: '-1'
+          md: F/B/A
+          range: 6/12/24
+          type: En/O
+          damage: d6w/d6+2w/d8+3w
+          act: '3'
+          clip: 10 shots/3 bursts
+          mass: '4.5'
+          hide: '-1'
+          avail: Con
+          cost: '1200'
+          localized:
+            - en:
+                name: Demon 9 Hand Flamer
+                description: |-
+                  The Gravity Age successors to the venerable flamethrower, flamers are vicious weapons that spew a tight aerosol spray of self-oxidizing fuel gel at the target. Its broad pattern ensures great accuracy at close range, and the flame spray inflicts terrible wounds. By holding down the trigger and fanning the weapon from side to side, the user can achieve an autofirelike effect, but this rapidly exhausts his fuel. (Payload: Incendiary stream)
+            - es:
+                name: Demon 9 Hand Flamer
+                description: |-
+                  The Gravity Age successors to the venerable flamethrower, flamers are vicious weapons that spew a tight aerosol spray of self-oxidizing fuel gel at the target. Its broad pattern ensures great accuracy at close range, and the flame spray inflicts terrible wounds. By holding down the trigger and fanning the weapon from side to side, the user can achieve an autofirelike effect, but this rapidly exhausts his fuel. (Payload: Incendiary stream)
+        z-lok-render-rifle:
+          skill: Ranged-rifle
+          acc: '0'
+          md: F
+          range: 50/100/250
+          type: En/O
+          damage: d6+1s/d6+1w/d4+1m
+          act: '3'
+          clip: 8 shots
+          mass: '4'
+          hide: '-'
+          avail: Res
+          cost: '2000'
+          localized:
+            - en:
+                name: Z-LOK Render Rifle
+                description: |-
+                  The Z-LOK render rifle projects a graviton beam that creates destructive tidal attractions within the target's structure. While it's not particularly lethal compared to other Gravity Age rifles, it offers one big advantage-the target's armor is reduced to its minimal protection value against the beam. For example, cerametal armor normally stops d6 points of energy damage, but against a render rifle it only stops 1 point, the minimum possible (no roll allowed). (Payload: Graviton beam)
+            - es:
+                name: Z-LOK Render Rifle
+                description: |-
+                  The Z-LOK render rifle projects a graviton beam that creates destructive tidal attractions within the target's structure. While it's not particularly lethal compared to other Gravity Age rifles, it offers one big advantage-the target's armor is reduced to its minimal protection value against the beam. For example, cerametal armor normally stops d6 points of energy damage, but against a render rifle it only stops 1 point, the minimum possible (no roll allowed). (Payload: Graviton beam)
+        bloodhound-f3-smart-grenade:
+          skill: Athletics-throw
+          acc: '-1'
+          md: F
+          range: per STR or 30/60/120
+          type: by warhead
+          damage: by warhead
+          act: '2'
+          clip: n/a
+          mass: '0.5'
+          hide: '+3'
+          avail: Mil
+          cost: '300'
+          localized:
+            - en:
+                name: Bloodhound F3 Smart Grenade
+                description: |-
+                  The Bloodhound smart grenade is a delivery system attached to any other grenade warhead. The thrower can spend an action to lock its image targeting system onto a target. When he throws the grenade in a subsequent action, its rocket motor guides it to the target. In guided flight, the grenade has a range of 30/60/120 meters and an accuracy of -1; in unguided mode, it's treated like any other thrown grenade. (Payload: Various grenades)
+            - es:
+                name: Bloodhound F3 Smart Grenade
+                description: |-
+                  The Bloodhound smart grenade is a delivery system attached to any other grenade warhead. The thrower can spend an action to lock its image targeting system onto a target. When he throws the grenade in a subsequent action, its rocket motor guides it to the target. In guided flight, the grenade has a range of 30/60/120 meters and an accuracy of -1; in unguided mode, it's treated like any other thrown grenade. (Payload: Various grenades)
+    pl-8-energy-age:
+      localized:
+        - en:
+            name: 'PL 8: Energy Age'
+        - es:
+            name: 'PL 8: Energy Age'
+      items:
+        automaser:
+          skill: Mod-SMG
+          acc: '-1'
+          md: B/A
+          range: 20/60/120
+          type: En/O
+          damage: d6w/d6+2w/d4m
+          act: '4'
+          clip: -/20
+          mass: '3'
+          hide: '-'
+          avail: Mil
+          cost: '20000'
+          localized:
+            - en:
+                name: Automaser
+                description: |-
+                  This submachine gun is a heavy maser pistol (see below) capable of full automatic fire. It uses a small mass reactor and an internal antenna array to create a broadband blast of electromagnetic energy, combining the nastier features of a laser and a microwave beam.
+            - es:
+                name: Automaser
+                description: |-
+                  This submachine gun is a heavy maser pistol (see below) capable of full automatic fire. It uses a small mass reactor and an internal antenna array to create a broadband blast of electromagnetic energy, combining the nastier features of a laser and a microwave beam.
+        pistol-hvy-maser:
+          skill: Mod-pistol
+          acc: '-1'
+          md: F
+          range: 20/40/80
+          type: En/G
+          damage: d6+1w/2d4+1w/d4+1m
+          act: '3'
+          clip: '30'
+          mass: '2'
+          hide: '+1'
+          avail: Mil
+          cost: '12000'
+          localized:
+            - en:
+                name: Pistol, hvy maser
+                description: |-
+                  The heavy maser pistol harnesses the power of a miniature mass reactor to create destructive bolts of broadband electromagnetic radiation. This results in a beam with the cutting or penetrating power of a high-grade laser, coupled with the scorching and charring of a microwave burst.
+            - es:
+                name: Pistol, hvy maser
+                description: |-
+                  The heavy maser pistol harnesses the power of a miniature mass reactor to create destructive bolts of broadband electromagnetic radiation. This results in a beam with the cutting or penetrating power of a high-grade laser, coupled with the scorching and charring of a microwave burst.
+        pistol-maser:
+          skill: Mod-pistol
+          acc: '-2'
+          md: F
+          range: 10/20/60
+          type: En/O
+          damage: d6w/d6+2w/d4m
+          act: '4'
+          clip: '40'
+          mass: '1'
+          hide: '+2'
+          avail: Con
+          cost: '8000'
+          localized:
+            - en:
+                name: Pistol, maser
+                description: |-
+                  The maser pistol—one of the most accurate weapons ever produced—is a less powerful version of the heavy maser pistol.
+            - es:
+                name: Pistol, maser
+                description: |-
+                  The maser pistol—one of the most accurate weapons ever produced—is a less powerful version of the heavy maser pistol.
+        rifle-hvy-maser:
+          skill: Mod-rifle
+          acc: '-1'
+          md: F/B/A
+          range: 40/200/500
+          type: En/G
+          damage: d8+1w/d12w/d6+1m
+          act: '3'
+          clip: 60/20
+          mass: '5'
+          hide: '-'
+          avail: Mil
+          cost: '18000'
+          localized:
+            - en:
+                name: Rifle, hvy maser
+                description: |-
+                  This weapon works on the same principles as the maser pistol, but adds greater range and full auto capability.
+            - es:
+                name: Rifle, hvy maser
+                description: |-
+                  This weapon works on the same principles as the maser pistol, but adds greater range and full auto capability.
+        rifle-maser:
+          skill: Mod-rifle
+          acc: '-2'
+          md: F/B/A
+          range: 60/120/400
+          type: En/O
+          damage: d6+2w/2d4+2w/d4+2m
+          act: '4'
+          clip: 90/30
+          mass: '4'
+          hide: '-'
+          avail: Mil
+          cost: '15000'
+          localized:
+            - en:
+                name: Rifle, maser
+                description: |-
+                  This is a smaller, more accurate, and less powerful version of the heavy maser rifle.
+            - es:
+                name: Rifle, maser
+                description: |-
+                  This is a smaller, more accurate, and less powerful version of the heavy maser rifle.
+heavy:
+  config:
+    default:
+      columns:
+        en:
+          - name: Weapon
+            key: name
+          - name: Skill
+            key: skill
+          - name: Acc
+            key: acc
+          - name: Md
+            key: md
+          - name: Range (S/M/L)
+            key: range
+          - name: Type
+            key: type
+          - name: Damage (O/G/A)
+            key: damage
+          - name: Act.
+            key: act
+          - name: Clip
+            key: clip
+          - name: Mass
+            key: mass
+          - name: Hide
+            key: hide
+          - name: Avail
+            key: avail
+          - name: Cost ($)
+            key: cost
+          - name: Description
+            key: description
+            hidden: true
+        es:
+          - name: Arma
+            key: name
+          - name: Habilidad
+            key: skill
+          - name: Acc
+            key: acc
+          - name: Rango (P/M/L)
+            key: range
+          - name: Daño (O/G/A)
+            key: damage
+          - name: Acto.
+            key: act
+          - name: Acortar
+            key: clip
+          - name: Costo ($)
+            key: cost
+          - name: Descripción
+            key: description
+            hidden: true
+          - name: Costo del clip
+            key: clip_cost
+            hidden: true
+          - name: Esconder
+            key: hide_modifier
+            hidden: true
+  items:
+    pl-4-industrial-age:
+      localized:
+        - en:
+            name: 'PL 4: Industrial Age'
+        - es:
+            name: 'PL 4: Era industrial'
+      items:
+        flamethrower:
+          skill: Hvy-direct
+          acc: '0'
+          md: F
+          range: 6/12/30
+          type: En/O
+          damage: d6w/d6+3w/d8+3w
+          act: '2'
+          clip: '12'
+          mass: '22'
+          hide: '-'
+          avail: Mil
+          cost: '500'
+          localized:
+            - en:
+                name: Flamethrower
+                description: |-
+                  This device consists of an incendiary fuel tank (worn slung across the back) and a gunlike nozzle and hose. The weapon projects a stream of ignited fuel that can hit a target as far away as 30 meters.<br />Fireproof or heat-shielded objects suffer half or no damage depending on the level of their protection. Flammable objects ignite and continue to burn for d6 rounds, suffering d4-2 points of wound damage each round or until the fire is extinguished. A flamethrower weighs 6 kg when its tank is empty.
+            - es:
+                name: Echador de llama
+                description: |-
+                  Arma que proyecta una corriente de líquido inflamable encendido.
+        grenade-frag:
+          skill: Athl-throw
+          acc: '+1'
+          md: F
+          range: Per STR
+          type: HI/G
+          damage: d4w/d4+2w/d6+2w
+          act: '2'
+          clip: '1'
+          mass: '1'
+          hide: '+2'
+          avail: Mil
+          cost: '75'
+          localized:
+            - en:
+                name: Grenade, frag.
+                description: |-
+                  The earliest version of this explosive device is difficult to throw accurately, but it can do formidable damage to anything that's nearby when it goes off. All targets within 2 meters of a frag grenade's explosion suffer Amazing damage (d6+2w); targets within 6 meters suffer Good damage (d4+2w); and targets within 10 meters suffer Ordinary damage (d4w). Anything farther than 10 meters away isn't affected by the blast.
+            - es:
+                name: Granada, fragmentación
+                description: |-
+                  Granada de fragmentación diseñada para matar o herir al personal.
+        machine-gun-30:
+          skill: Hvy-direct
+          acc: '0'
+          md: A
+          range: 60/200/600
+          type: HI/O
+          damage: d6w/d6+3w/d6m
+          act: '4'
+          clip: '50'
+          mass: '10'
+          hide: '-'
+          avail: Mil
+          cost: '2000'
+          localized:
+            - en:
+                name: Machine gun, .30
+                description: |-
+                  This fairly light, air-cooled machine gun came to prominence on battlefields of the era. The mechanism behind the machine gun is brilliant and simple: propellant and energy left over from expending a round of ammunition is used to load the next round into the chamber. It fires its bullets in rapid succession—much faster than a character could empty a single-shot gun.
+            - es:
+                name: Ametralladora, .30
+                description: |-
+                  Un arma de fuego totalmente automática que dispara munición calibre .30.
+        rocket-launcher:
+          skill: Hvy-direct
+          acc: '+1'
+          md: F
+          range: 30/60/150
+          type: HI/G
+          damage: d6w/d4+3w/d4m
+          act: '1'
+          clip: '1'
+          mass: '5'
+          hide: '-'
+          avail: Mil
+          cost: '1200'
+          localized:
+            - en:
+                name: Rocket launcher
+                description: |-
+                  Introduced as an infantryman's antitank weapon, the shoulder-fired rocket launcher is also useful for busting bunkers and heavy fire support. Many PL 5 variations of this weapon (the LAW rocket, the RPG-7, etc.) also exist.
+            - es:
+                name: Lanzacohetes
+                description: Un arma portátil capaz de disparar cohetes no guiados.
+    pl-5-information-age:
+      localized:
+        - en:
+            name: 'PL 5: Information Age'
+        - es:
+            name: 'PL 5: Era de la información'
+      items:
+        grenade-launcher:
+          skill: Hvy-indirect
+          acc: '0'
+          md: F
+          range: 50/200/350
+          type: As load
+          damage: As load
+          act: '3'
+          clip: '1'
+          mass: '2'
+          hide: '-'
+          avail: Mil
+          cost: '1000'
+          localized:
+            - en:
+                name: Grenade launcher
+                description: |-
+                  While there are grenade launchers that mount on rifles, this item is a separate weapon specifically designed to fire small, explosive shells. The standard launcher can accommodate a variety of loads. The two basic types of launchers are the 40mm hand mortar and the 6x40mm six-shot launcher.<br />The hand mortar resembles a simple breech-loading, single-barreled shotgun. The six-shot looks like an oversized revolver mounted on a shotgun stock. Unlike the hand mortar, the six-shot can hold six grenades at once (but can only fire them one at a time). It also costs four times the listed price. In other ways, it's identical to the hand mortar.
+            - es:
+                name: lanzagranadas
+                description: Un arma diseñada para disparar granadas.
+        grenade-concus:
+          skill: Athl-throw
+          acc: '+1'
+          md: F
+          range: Per STR
+          type: LI/O
+          damage: d6+2s/d4w/d4+1w
+          act: '2'
+          clip: '1'
+          mass: '0.5'
+          hide: '+3'
+          avail: Mil
+          cost: '75'
+          localized:
+            - en:
+                name: Grenade, concus.
+                description: |-
+                  The concussion grenade is basically a half-kilogram block of TNT in a cardboard wrapper. It has a pin and arm mechanism, but no fragmentation material. The concussion grenade is considered an offensive weapon, since it can be thrown by troops in open terrain without fear of causing themselves shrapnel damage.<br />All targets within 2 meters of a concussion grenade's explosion suffer Amazing damage (d4+1w); targets from 2 to 4 meters away suffer Good damage (d4w); targets from 4 to 6 meters away suffer Ordinary damage (d6+2s); and targets beyond 6 meters aren't damaged by the blast.
+            - es:
+                name: Granada, conmoción cerebral.
+                description: |-
+                  Una granada que produce una poderosa onda de choque para aturdir o desorientar.
+        grenade-incend:
+          skill: Athl-throw
+          acc: '+1'
+          md: F
+          range: Per STR
+          type: En/G
+          damage: d4w/d4+2w/d4+3w
+          act: '2'
+          clip: '1'
+          mass: '0.5'
+          hide: '+3'
+          avail: Mil
+          cost: '150'
+          localized:
+            - en:
+                name: Grenade, incend.
+                description: |-
+                  This grenade releases a highly combustible chemical that ignites and throws shrapnel within a 6-meter radius.<br />All targets within 2 meters of an incendiary grenade's explosion suffer Amazing damage (d4+3w); those from 2 to 4 meters away receive Good damage (d4+2w); and those from 4 to 6 meters away receive Ordinary damage (d4w). Fireproof or heat-shielded objects suffer half or no damage depending on the level of their protection. Flammable objects ignite and continue to burn for d6+1 rounds, suffering d4-1 points of wound damage each round or until the fire is extinguished.
+            - es:
+                name: Granada, incendio.
+                description: Una granada que inicia incendios y quema objetivos.
+        grenade-smoke:
+          skill: Athl-throw
+          acc: '+1'
+          md: F
+          range: Per STR
+          type: Special
+          damage: Special
+          act: '2'
+          clip: '1'
+          mass: '0.5'
+          hide: '+3'
+          avail: Con
+          cost: '50'
+          localized:
+            - en:
+                name: Grenade, smoke
+                description: |-
+                  This grenade releases a thick cloud of smoke that fills an area in a 6-meter radius around the explosion site. The smoke lasts for d8+4 rounds. It provides Good cover (+2 penalty to opponents' attempts to attack) and applies a +2 penalty to Awareness checks for all characters within the area of effect.<br />Some smoke grenades are filled with tear gas. Tear gas works just like smoke with the added benefit of partially incapacitating unprotected characters. Each individual in the area of effect makes a Constitution feat check to try to counter the effect of the gas: Critical Failure, helpless for 2d4 rounds; Failure, +3 penalty to all action checks and actions for 2d4 rounds; Ordinary, +2 penalty; Good, +1 penalty; Amazing, gas has no effect. Characters wearing e-suits or using respirator masks or oxygen tanks are unaffected by tear gas.
+            - es:
+                name: Granada, humo
+                description: Una granada que crea una nube de humo para ocultarse.
+        hvy-machine-gun:
+          skill: Hvy-direct
+          acc: '0'
+          md: A
+          range: 100/400/1000
+          type: HI/G
+          damage: d6+1w/2d4+2w/d8m
+          act: '4'
+          clip: '50'
+          mass: '12'
+          hide: '-'
+          avail: Mil
+          cost: '5000'
+          localized:
+            - en:
+                name: Hvy machine gun
+                description: |-
+                  This weapon type includes any of the large automatic weapons that use large-caliber rounds and require a mount to control the recoil. Without the use of such a mount, penalties for using automatic fire are doubled (+2/+4/+6 instead of the usual +1/+2/+3), the user must take an additional +1 penalty for lack of accuracy, and must make a successful Strength feat check to keep from being knocked down.
+            - es:
+                name: ametralladora hvy
+                description: Una ametralladora de gran calibre.
+        sam-handheld:
+          skill: Hvy-indirect
+          acc: '0'
+          md: F
+          range: 1000/2000/4000
+          type: HI/G
+          damage: d4w/d6w/d6+4w
+          act: '1'
+          clip: '1'
+          mass: '8'
+          hide: '-'
+          avail: Res
+          cost: '3500'
+          localized:
+            - en:
+                name: SAM, handheld
+                description: |-
+                  This is a shoulder-fired surface-to-air missile with a heat-seeking head. When used against an airborne target that's giving off a significant amount of heat, the missile will circle around for a second attack one round later if it misses the target on its first pass.
+            - es:
+                name: SAM, portátil
+                description: Un lanzador portátil de misiles tierra-aire.
+    pl-6-fusion-age:
+      localized:
+        - en:
+            name: 'PL 6: Fusion Age'
+        - es:
+            name: 'PL 6: Era de la fusión'
+      items:
+        bantam-launcher:
+          skill: Hvy-indirect
+          acc: '0'
+          md: F
+          range: 100/800/4000
+          type: As load
+          damage: As load
+          act: '2'
+          clip: '4'
+          mass: '7'
+          hide: '-'
+          avail: Mil
+          cost: '4000'
+          localized:
+            - en:
+                name: Bantam launcher
+                description: |-
+                  This portable launcher fires miniature bantam rockets. Braced on the shoulder and fired like a bazooka, the bantam launcher is light and easy to use. It has four chambers that can hold a variety of bantam rocket loads. The pistol grip has four triggers, one to activate each of the four load chambers, though only one trigger can be depressed at a time. The built-in guidance system makes this weapon accurate to extreme ranges.
+            - es:
+                name: lanzador gallo
+                description: Un lanzador de misiles compacto.
+        bantam-antiair:
+          skill: Hvy-indirect
+          acc: '-2'
+          md: F
+          range: As launcher
+          type: HI/G
+          damage: d4w/d4+2w/d4m
+          act: '2'
+          clip: '1'
+          mass: '3'
+          hide: '+1'
+          avail: Res
+          cost: '1000'
+          localized:
+            - en:
+                name: Bantam, antiair
+                description: |-
+                  This projectile, about 0.5 meter long, has additional lift and guidance systems to lock onto and track low-flying aircraft. It can be triggered to seek a heat source such as a jet engine or to follow the commands of its user, who can direct it with a laser sight. The blast inflicts Amazing damage (d4m) within 4 meters of the explosion; Good damage (d4+2w) up to 8 meters away and Ordinary damage (d4w) out to 12 meters.
+            - es:
+                name: Gallo, antiaéreo
+                description: Un misil gallo diseñado para apuntar a aviones.
+        bantam-antiper:
+          skill: Hvy-indirect
+          acc: '0'
+          md: F
+          range: As launcher
+          type: En/O
+          damage: d6w/d6+2w/d8+2w
+          act: '2'
+          clip: '1'
+          mass: '3'
+          hide: '+1'
+          avail: Mil
+          cost: '500'
+          localized:
+            - en:
+                name: Bantam, antiper.
+                description: |-
+                  This rocket delivers a low-level radiation burst designed to inflict maximum damage on people while leaving vehicles and buildings intact. Amazing damage (d8+2w) is inflicted within 4 meters of impact; Good damage (d6+2w) up to 8 meters; and Ordinary damage (d6w) out to 12 meters.
+            - es:
+                name: Gallo, antiper.
+                description: Un misil gallo diseñado para apuntar al personal.
+        bantam-antiveh:
+          skill: Hvy-indirect
+          acc: '-2'
+          md: F
+          range: As launcher
+          type: HI/G
+          damage: d4+2w/d4+4w/d4+1m
+          act: '2'
+          clip: '1'
+          mass: '3'
+          hide: '+1'
+          avail: Mil
+          cost: '1000'
+          localized:
+            - en:
+                name: Bantam, antiveh.
+                description: |-
+                  This weapon is designed to hinder or destroy armored vehicles, but can also be used against bunkers and other hardened installations. It causes Amazing damage (d4+1m) to the target it impacts; Good damage (d4+4w) within 2 meters; and Ordinary damage (d4+2w) out to 4 meters away.
+            - es:
+                name: Bantam, antiveh.
+                description: Un misil gallo diseñado para apuntar a vehículos.
+        grenade-plasma:
+          skill: Athl-throw
+          acc: '+1'
+          md: F
+          range: Per STR
+          type: En/G
+          damage: d4+2w/d6+2w/d4m
+          act: '2'
+          clip: '1'
+          mass: '0.5'
+          hide: '+3'
+          avail: Res
+          cost: '400'
+          localized:
+            - en:
+                name: Grenade, plasma
+                description: |-
+                  This is a more powerful version of the incendiary grenade. All targets within 2 meters of a plasma grenade's explosion suffer Amazing damage (d4m); those from 2 to 4 meters away suffer Good damage (d6+2w); and those from 4 to 8 meters away take Ordinary damage (d4+2w). Fireproof or heat-shielded objects suffer half or no damage, depending on the level of their protection. Flammable objects ignite and burn for d6+1 rounds, taking d4 points of wound damage per round or until the fire is extinguished.
+            - es:
+                name: granada, plasma
+                description: Una granada que libera una ráfaga de plasma sobrecalentado.
+        grenade-stun:
+          skill: Athl-throw
+          acc: '+1'
+          md: F
+          range: Per STR
+          type: En/O
+          damage: d6s/d8s/d8+2s
+          act: '2'
+          clip: '1'
+          mass: '0.5'
+          hide: '+3'
+          avail: Mil
+          cost: '250'
+          localized:
+            - en:
+                name: Grenade, stun
+                description: |-
+                  The stun grenade creates a concussive wave that stuns those within the blast radius. All targets within 2 meters of the impact suffer Amazing damage (d8+2s); Good damage (d8s) is inflicted out to a distance of 4 meters; and Ordinary damage (d6s) extends to those up to 10 meters away.
+            - es:
+                name: Granada, aturdimiento
+                description: |-
+                  Una granada diseñada para incapacitar objetivos sin matarlos.
+        hvy-mach-gun-ch:
+          skill: Hvy-direct
+          acc: '-1'
+          md: A
+          range: 200/600/1200
+          type: HI/G
+          damage: d8w/2d6w/2d4m
+          act: '4'
+          clip: -/50
+          mass: '45'
+          hide: '-'
+          avail: Res
+          cost: '10000'
+          localized:
+            - en:
+                name: Hvy mach gun, ch
+                description: |-
+                  This heavy machine gun makes use of charge technology to substantially improve upon the heavy machine gun of the previous era; this weapon has better range, stopping power, and accuracy. Without the use of a mount, penalties for automatic fire are doubled (+2/+4/+6), the user must take an additional +1 penalty for lack of accuracy (or disregard the weapon's accuracy bonus, if the optional rule is being used), and must make a successful Strength feat check to avoid being knocked down.
+            - es:
+                name: Hvy ametralladora, ch
+                description: Una ametralladora pesada que dispara munición cargada.
+        rail-gun:
+          skill: Hvy-direct
+          acc: '-1'
+          md: B/A
+          range: 150/500/1500
+          type: HI/G
+          damage: d6w/d6+2w/d6m
+          act: '4'
+          clip: -/30
+          mass: '20'
+          hide: '-'
+          avail: Res
+          cost: '20000'
+          localized:
+            - en:
+                name: Rail gun
+                description: |-
+                  This weapon consists of a powerful electromagnetic accelerator that fires a stream of small projectiles at extremely high velocity.
+            - es:
+                name: Pistola de riel
+                description: |-
+                  Un arma que utiliza rieles electromagnéticos para acelerar proyectiles a altas velocidades.
+    pl-7-gravity-age:
+      localized:
+        - en:
+            name: 'PL 7: Gravity Age'
+        - es:
+            name: 'PL 7: Era de la gravedad'
+      items:
+        arc-gun:
+          skill: Hvy-direct
+          acc: '-1'
+          md: F
+          range: 20/40/100
+          type: En/G
+          damage: d8+1s/d8w/d6+3w
+          act: '2'
+          clip: '6'
+          mass: '10'
+          hide: '-'
+          avail: Mil
+          cost: '2000'
+          localized:
+            - en:
+                name: Arc gun
+                description: |-
+                  This is a weapon capable of delivering a powerful electrical shock in the form of a lightning bolt. The arc gun uses a built-in, low-powered laser beam to ionize the air between the weapon and its target, creating a path for the electrical arc. Because it requires air to operate, the weapon is useless in a vacuum.
+            - es:
+                name: pistola de arco
+                description: Un arma que dispara un rayo de electricidad.
+        cannon-stutter:
+          skill: Hvy-direct
+          acc: '-1'
+          md: F
+          range: 20/40/80
+          type: LI/O
+          damage: d6+2s/d8+3s/2d6+3s
+          act: '1'
+          clip: '2'
+          mass: '15'
+          hide: '-'
+          avail: Con
+          cost: '2500'
+          localized:
+            - en:
+                name: Cannon, stutter
+                description: |-
+                  A stutter cannon is a heavy weapon that consists of a backpack and attached gun. It is designed to disperse or otherwise handle a crowd without the use of lethal force. The stutter cannon produces compressed sonic waves that deliver hammerlike blows against targets. Each pulse affects all targets in a 3-meter radius.
+            - es:
+                name: Cañón, tartamudeo
+                description: Un arma pesada no letal que altera el sistema nervioso.
+        cannon-25mm-sabot:
+          skill: Hvy-direct
+          acc: '0'
+          md: F
+          range: 100/200/2000
+          type: HI/G
+          damage: d8w/d4+1m/d6+2m
+          act: '2'
+          clip: '20'
+          mass: '10'
+          hide: '-'
+          avail: Mil
+          cost: '10000'
+          localized:
+            - en:
+                name: Cannon, 25mm sabot
+                description: |-
+                  The backpack contains an electromagnetic accelerator that releases a powered 25mm projectile with amazing speed and force. The cannon's energy cell must be replaced after the weapon has fired two clips.
+            - es:
+                name: Cañón, zueco de 25 mm
+                description: |-
+                  Un cañón pesado que dispara balas de sabot perforantes de 25 mm.
+        grenade-pulse:
+          skill: Athl-throw
+          acc: '+1'
+          md: F
+          range: Per STR
+          type: En/G
+          damage: d4+2s/d6+2s/d8+2s
+          act: '2'
+          clip: '1'
+          mass: '0.5'
+          hide: '+3'
+          avail: Res
+          cost: '350'
+          localized:
+            - en:
+                name: Grenade, pulse
+                description: |-
+                  This grenade consists of a powerful capacitor and a special ceramic shell that functions as a spherical antenna array. When it detonates, the capacitor releases a pulse of electromagnetic energy in the immediate area. This pulse can stun unprotected humans, but it's more useful for damaging electronic equipment—computers, sensors, vehicle control systems, servomotors, and the like. The discharge causes Amazing damage (d8+2s) within 2 meters; Good damage (d6+2s) out to 4 meters; and Ordinary damage (d4+2s) out to 10 meters.
+            - es:
+                name: Granada, pulso
+                description: Una granada que emite un pulso cinético.
+        grenade-tracer:
+          skill: Athl-throw
+          acc: '+1'
+          md: F
+          range: Per STR
+          type: HI/G
+          damage: d4+2w/d6+2w/d4+2m
+          act: '2'
+          clip: '1'
+          mass: '0.5'
+          hide: '+3'
+          avail: Mil
+          cost: '350'
+          localized:
+            - en:
+                name: Grenade, tracer
+                description: |-
+                  This is a smart shaped-charge grenade. Though it can be manually tossed or hurled by a launcher, once it reaches its target area it searches for a moving target to make contact with. Upon impact, the grenade explodes and releases its razor-sharp fragments. Amazing damage (d4+2m) is suffered by the target it impacts with (if any); Good damage (d6+2w) extends out to 2 meters; and Ordinary damage (d4+2w) extends to 4 meters. If no target is within 2 meters of its landing point, the grenade falls to the ground and waits up to 2 rounds for a target to approach within its detection range of 2 meters. If those 2 rounds go by without it being approached by a target the tracer grenade automatically deactivates. In such a case, it can be salvaged and reused.
+            - es:
+                name: Granada, trazador
+                description: Una granada que marca objetivos para su seguimiento.
+        plasma-gun:
+          skill: Hvy-direct
+          acc: '0'
+          md: F
+          range: 40/80/200
+          type: En/G
+          damage: d8w/d8+3w/d12+3w
+          act: '2'
+          clip: '8'
+          mass: '6'
+          hide: '-'
+          avail: Mil
+          cost: '12000'
+          localized:
+            - en:
+                name: Plasma gun
+                description: |-
+                  The plasma gun consists of a backpack and attached gun. Using a powerful electromagnetic accelerator, it throws blasts of superheated plasma generated by the delivery of an electrical shock to a large electrochemical shell.
+            - es:
+                name: pistola de plasma
+                description: Un arma pesada que dispara rayos de plasma.
+        quantum-mini:
+          skill: Hvy-direct
+          acc: '0'
+          md: F/B/A
+          range: 100/250/800
+          type: En/G
+          damage: d8+1w/d8+3w/d6m
+          act: '4'
+          clip: 90/30
+          mass: '10'
+          hide: '+1'
+          avail: Res
+          cost: '15000'
+          localized:
+            - en:
+                name: Quantum mini
+                description: |-
+                  This weapon adds a backpack accelerator to the quantum rifle, producing particle beams with longer range and more lethal force. All personal quantum weapons are extremely expensive and highly restricted, making them rare and often illegal to own and operate. Like the rifle, the minigun is capable of burst mode and autofire.
+            - es:
+                name: minicuántico
+                description: Un arma cuántica miniaturizada.
+        kz-160-13mm-charge-mg:
+          skill: Heavy-direct fire
+          acc: '-1'
+          md: A
+          range: 200/600/1200
+          type: HI/G
+          damage: d8w/2d6w/d8m
+          act: '4'
+          clip: 50 bursts
+          mass: '22.5'
+          hide: '-'
+          avail: Res
+          cost: '9500'
+          localized:
+            - en:
+                name: KZ 160 13mm Charge MG
+                description: |-
+                  The KZ 160 is a typical heavy charge machine gun, usually employed as a crew-served or vehicle-mounted weapon. Heroes who succeed on a Strength feat check can fire the KZ 160 from the hip at a +1 step penalty, but the double-autofire penalty doesn't apply to this weapon-the KZ 160 is a much lighter and steadier weapon than the standard heavy charge machine gun. (Payload: 13mm bullet)
+            - es:
+                name: Ametralladora de Carga KZ 160 13mm
+                description: |-
+                  La KZ 160 es una ametralladora pesada en uso para un escuadrón completo o asalto en movimiento de vehículos. Un héroe que consiga una prueba de condición atlética en Fuerza podría poder sostener este arma con disparo a la cadencia base asumiendo un malus severo de retroceso de daño de zona. Es mucho más ligera y fiable que prototipos previos. (Carga: bala de 13mm)
+        ronin-900-25mm-sabot-cannon:
+          skill: Heavy-direct fire
+          acc: '+1'
+          md: F
+          range: 100/200/500
+          type: HI/G
+          damage: d8w/d4+1m/d6+2m
+          act: '2'
+          clip: '20'
+          mass: '10'
+          hide: '-'
+          avail: Res
+          cost: '10000'
+          localized:
+            - en:
+                name: Ronin 900 25mm Sabot Cannon
+                description: |-
+                  Designed to defeat vehicles and the best personal armor, the sabot cannon is the embodiment of raw firepower. Its oversized slug can punch gaping holes in almost anything. Its only weakness is its lack of accuracy compared to other heavy weapons-the sabot cannon's round has to make hard contact to inflict damage, and doesn't offer the wide beam of a plasma cannon or the fire volume of a machine gun. (Payload: 20mm sabot ramjet)
+            - es:
+                name: Cañón Sabot de 25mm Ronin 900
+                description: |-
+                  Diseñado para destruir vehículos y los blindajes pesados; el cañón Sabot es el infierno volador para un regimiento de infantería común. Es capaz de dejar agujeros con estatuas en hormigón armado, sin embargo, debe hacer contacto directo de impacto para efectuar cualquier daño perjudicial, sin poseer ningún radio o foco de ráfagas expansivas. (Carga: estatorreactor sabot de 20mm)
+        supernova-xi-mass-cannon:
+          skill: Heavy-direct fire
+          acc: '0'
+          md: F
+          range: 6/20/60
+          type: En/G
+          damage: d8+1w/d12+1w/d8+1m
+          act: '2'
+          clip: 8 shots
+          mass: '8.75'
+          hide: '-'
+          avail: Res
+          cost: '6825'
+          localized:
+            - en:
+                name: Supernova XI Mass Cannon
+                description: |-
+                  The mass cannon is something of a white elephant. While it's a powerful, hard-hitting gun, other heavy weapons hit just as hard with better range characteristics. The weapon's designers hoped to follow up on the success of its smaller cousins by designing a true man-portable antivehicular mass weapon, but they weren't able to achieve the kind of armor penetration increase they had hoped for. (Payload: Gravity point-source)
+            - es:
+                name: Cañón de Masa Supernova XI
+                description: |-
+                  El cañón de masa es un arma estruendosa en el campo de batalla. Poderoso y demoledor pero su poco avance es innegable. Los diseñadores intentaban replicar una versión antílope de la armadura ligera en algo antivehicular portátil, pero sacrificando muchísimas características para ello dejándola en nicho. (Carga: Fuente puntual gravedad)
+        roc-z1-stutter-cannon:
+          skill: Heavy-direct fire
+          acc: '-1'
+          md: F
+          range: 20/40/80
+          type: LI/O
+          damage: d6+2s/d8+3s/2d6+3s
+          act: '2'
+          clip: 10 shots
+          mass: '15'
+          hide: '-'
+          avail: Con
+          cost: '2500'
+          localized:
+            - en:
+                name: Roc Z1 Stutter Cannon
+                description: |-
+                  When it's important to subdue a number of people in a hurry, the stutter cannon is the best tool for the job. The cannon affects all targets in a 3-meter radius, inflicting damage one category less than the damage inflicted to the primary target. For example, if the user scores a Good hit (d8+3s) against one rioter, all other people within 3 meters suffer Ordinary damage (d6+2s). Ordinary hits inflict no damage to nearby targets. (Payload: Compressed air)
+            - es:
+                name: Cañón Stutter Roc Z1
+                description: |-
+                  Herramienta definitiva de control de masas por repulsión. Afectando en un radio de 3 metros, sus ráfagas rebotan causando dolor secundario a cualquiera a merced. Los alcanzados en impacto de grado Bueno (d8+3s) salpicarán un impacto indirecto grado Ordinario de (d6+2s) a todos a 3m. El caso inferior no produce daño indirecto del todo. (Carga: Aire comprimido)
+        dragon-3-heavy-flamer:
+          skill: Heavy-direct fire
+          acc: '-1'
+          md: F/B/A
+          range: 8/16/40
+          type: En/G
+          damage: d6+1w/d8+2w/2d6+1w
+          act: '2'
+          clip: 15 shots/5 bursts
+          mass: '8.5'
+          hide: '-'
+          avail: Mil
+          cost: '2400'
+          localized:
+            - en:
+                name: Dragon 3 Heavy Flamer
+                description: |-
+                  A larger and more powerful version of the hand flamer, the heavy flamer's fuel tank is worn as a backpack unit. Its high-volume, high-pressure discharge can ignite even the most flame-resistant objects and personal armor. While it doesn't have the range of many other heavy weapons, in close quarters there are few weapons that match the sheer terror and destructiveness of a heavy flamer. (Payload: Incendiary stream)
+            - es:
+                name: Lanzallamas Pesado Dragon 3
+                description: |-
+                  La versión enorme y brutal de un flamer. Su pesado tanque extra de mochila le otorga un volumen abismal, que puede ignorar chalecos ignífugos o armaduras personales inmolando a sus presas. Aunque no dispone del rango kilométrico de otras armas de su talla, la destrucción y purga en los pasillos de un crucero se vuelve un puro terror absoluto. (Carga: Chorro incendiario)
+        d16-plasma-gun:
+          skill: Heavy-direct fire
+          acc: '0'
+          md: F
+          range: 50/100/400
+          type: En/G
+          damage: d8w/d8+2w/d8+4w
+          act: '2'
+          clip: 8 shots
+          mass: '6'
+          hide: '-'
+          avail: Mil
+          cost: '12000'
+          localized:
+            - en:
+                name: D16 Plasma Gun
+                description: |-
+                  The standard assault weapon of Orion League armored infantry, the D16 plasma gun is a spectacular weapon. Its massive energy discharge has a 2-meter area of effect. Anything in this area sustains damage one success grade lower than the damage inflicted to the point target, so if a plasma gun scores an Amazing hit, the target suffers d12+3w and anything else within 2 meters suffers a Good hit (d8+3w). (Payload: Incandescent plasma)
+            - es:
+                name: Cañón de Plasma D16
+                description: |-
+                  Armamento de impacto estelar de la Liga armada de Orion, es espectacular. Expande su gran descarga unos 2 metros de asimilación circular. Quien esté dentro de esa zona recibe una herida que pendería ser el grado anterior al blanco. Si acierta a grado Increíble (d12+3w), su blanco lo asume per los compañeros sufren un ataque derivado grado Bueno (d8+3w). (Carga: Plasma)
+        hak-59-quantum-minigun:
+          skill: Heavy-direct fire
+          acc: '0'
+          md: F/B/A
+          range: 40/80/200
+          type: En/O
+          damage: d8+1w/d8+3w/d6m
+          act: '4'
+          clip: 90 shots/30 bursts
+          mass: '10'
+          hide: '-'
+          avail: Res
+          cost: '15000'
+          localized:
+            - en:
+                name: HAK-59 Quantum Minigun
+                description: |-
+                  Also known as a particle gun or neutron gun, the quantum minigun produces beams of heavy, fast-moving subatomic particles that slag anything they hit. The minigun doesn't have the armor penetration capability of other heavy weapons, but its high rate of fire and high damage potential merit respect. The HAK-59 is currently in service in the Nariac Domain and with some VoidCorp troop formations. (Payload: Particle beam)
+            - es:
+                name: Minigun Cuántica HAK-59
+                description: |-
+                  Conocida como arma protónica o de ráfaga cuántica, produce chorros láser pesados de subpartículas que desintegran un frente. Carece de la perforación de blindajes densos de otros rifles, pero su ratio de tiro salvaje lo soluciona escupiendo fuego hasta licuar formaciones tropas de élite en segundos y obligar al asedio Nariac a huir de contención. (Carga: Haz de partículas)
+        zk5-grenade-launcher:
+          skill: Heavy-indirect fire
+          acc: '-1'
+          md: F
+          range: 40/240/480
+          type: by warhead
+          damage: by warhead
+          act: '3'
+          clip: 10 shots
+          mass: '2'
+          hide: '-2'
+          avail: Mil
+          cost: '1500'
+          localized:
+            - en:
+                name: ZK5 Grenade Launcher
+                description: |-
+                  The ZK5 (or 'Zeke 5' as it's known by the Concord Marines) is a modern version of the old grenade launcher. Its drum-style magazine holds ten 30mm grenades, smaller but more powerful than their historical counterparts. The Zeke launches its fin-stabilized warheads by means of a low-powered linear accelerator, a simple sabot gun with much better range and accuracy than the old hand mortars. (Payload: Various grenades)
+            - es:
+                name: Lanzagranadas ZK5
+                description: |-
+                  El ZK5 (o cariñosamente "Zeke 5" por los Concord) es el pináculo de la lluvia de mortero portátil. Su cargador tambor tiene 10 depósitos de 30mm muy letales. Estabiliza ojivas finas de desaceleración lineal con un percutor base de disparo logrando unas arcas de trayectoria altísimas y lejanas mucho mejores a los lanzadores antiguos u obsoletos. (Carga: Granadas varias)
+        bantam-5-rocket-launcher:
+          skill: Heavy-indirect fire
+          acc: '-2'
+          md: F
+          range: 40/400/2000
+          type: by warhead
+          damage: by warhead
+          act: '2'
+          clip: 4 shots
+          mass: '7'
+          hide: '-'
+          avail: Mil
+          cost: '4000'
+          localized:
+            - en:
+                name: Bantam 5 Rocket Launcher
+                description: |-
+                  The Bantam 5 handheld rocket launcher is basically a hollow tube with laser-designating sights for the guidance of bantam rocket rounds. The rockets can be guided by the launcher's sights, or a remote observer can use a separate laser designator to mark targets out of the firer's line of sight, allowing attacks over hills or around corners. (Payload: Various rockets)
+            - es:
+                name: Lanzacohetes Bantam 5
+                description: |-
+                  El cohete lanza misiles Bantam 5 portátil es un tubo hueco pero con un inmenso designador de rastreo lateral y una mirilla inteligente guiada. El artillero designa su presa acorralándola a la condena, apuntando para rodear esquinas, colinas y saltar barreras. Incluso un observador remoto pasará láser de fijación a la ojiva para darle un trazo limpio. (Carga: Misiles varios)
+        antiair-rocket:
+          skill: n/a
+          acc: n/a
+          md: n/a
+          range: por lanzador
+          type: HI/G
+          damage: d4w/d4+2w/d4m
+          act: '-'
+          clip: n/a
+          mass: '3'
+          hide: '-'
+          avail: Res
+          cost: '1000'
+          localized:
+            - en:
+                name: Antiair Rocket
+                description: |-
+                  This bantam rocket features an IR guidance system and a fragmentation warhead to knock down enemy aircraft. (Payload: Serrated rod warhead) (Area of Effect: 4m/8m/12m)
+            - es:
+                name: Cohete Antiaéreo
+                description: |-
+                  El cohete ligero cuenta con sistema infrarrojo guiado y una cabeza de fragmentación para tumbar aeronaves enemigas. (Carga: Varilla dentada) (Área de efecto: 4m/8m/12m)
+        antipersonnel-rocket:
+          skill: n/a
+          acc: n/a
+          md: n/a
+          range: por lanzador
+          type: En/O
+          damage: d6w/d6+2w/d8+2w
+          act: '-'
+          clip: n/a
+          mass: '3'
+          hide: '-'
+          avail: Mil
+          cost: '500'
+          localized:
+            - en:
+                name: Antipersonnel Rocket
+                description: |-
+                  Designed to knock out personnel without damaging vital equipment, the antipersonnel rocket delivers a deadly blast of neutron radiation on detonation. Like the antiair rocket, it's an area-effect weapon. (Payload: Neutron radiation) (Area of Effect: 4m/8m/12m)
+            - es:
+                name: Cohete Antipersonal
+                description: |-
+                  Diseñado para aniquilar gente sin afectar al valioso equipo, asolando una mortífera onda de radiación a los que estén dentro de su detonación. Al igual que el antiaéreo, inflige en área. (Carga: Radiación de neutrones) (Área de efecto: 4m/8m/12m)
+        antivehicle-rocket:
+          skill: n/a
+          acc: n/a
+          md: n/a
+          range: por lanzador
+          type: HI/G
+          damage: d4+2w/d4+4w/d4+1m
+          act: '-'
+          clip: n/a
+          mass: '3'
+          hide: '-'
+          avail: Mil
+          cost: '1000'
+          localized:
+            - en:
+                name: Antivehicle Rocket
+                description: |-
+                  This rocket delivers a discarding-sabot booster stage that can pierce very heavy armor. It's designed for use against light vehicles and heavy powered infantry. (Payload: Kinetic penetrator) (Area of Effect: contact/2m/4m)
+            - es:
+                name: Cohete Antivehículos
+                description: |-
+                  Libera un disparador perforante sabot en fase capaz de cruzar las armaduras acorazadas de vehículos blindados o servos de infantería pesada con gran potencia. (Carga: Penetrador cinético) (Área de efecto: contacto/2m/4m)
+        che-rocket:
+          skill: n/a
+          acc: n/a
+          md: n/a
+          range: por lanzador
+          type: En/O or En/G
+          damage: d8-2w/d8w/d4m
+          act: '-'
+          clip: n/a
+          mass: '3'
+          hide: '-'
+          avail: Mil
+          cost: '250'
+          localized:
+            - en:
+                name: CHE Rocket
+                description: |-
+                  This rocket is packed with a kilo of Detonex, one of the most powerful conventional explosives around. Its firepower is considered to be Good within 6 meters of the detonation point. (Payload: Detonex warhead) (Area of Effect: 6m/10m/16m)
+            - es:
+                name: Cohete CHE
+                description: |-
+                  Empacado con Detonex. De los más populares y destructivos explosivos convencionales del cosmos. Su poder ardiente asolará a todo el que se le cruce a 6 metros redondos. (Carga: Ojiva de detonex) (Área de efecto: 6m/10m/16m)
+        ap-grenade:
+          skill: Athl-throw
+          acc: '0'
+          md: F
+          range: Per STR
+          type: En/G
+          damage: d6-1w/d4m/d4+2m
+          act: '2'
+          clip: n/a
+          mass: '0.5'
+          hide: '+2'
+          avail: Mil
+          cost: '400'
+          localized:
+            - en:
+                name: AP Grenade
+                description: |-
+                  This grenade's radar fuse senses its orientation to the target and creates a shaped-charge blast on contact. It is designed for piercing vehicular and body armor. (Payload: Directional charge) (Area of Effect: contact/1m/2m)
+            - es:
+                name: Granada AP
+                description: |-
+                  Su espoleta de radar detecta dónde ubica a la víctima y asesta una carga concentrada sobre ella, ideada para destrozar armadura o armazones de vehículo. (Carga: Carga focalizada) (Área de efecto: contacto/1m/2m)
+        concussion-grenade:
+          skill: Athl-throw
+          acc: '0'
+          md: F
+          range: Per STR
+          type: LI/O
+          damage: d6+3s/d6w/d6+2w
+          act: '2'
+          clip: n/a
+          mass: '0.5'
+          hide: '+2'
+          avail: Mil
+          cost: '150'
+          localized:
+            - en:
+                name: Concussion Grenade
+                description: |-
+                  This grenade is a block of explosive in a nonfragmenting case. It's designed to incapacitate instead of kill. (Payload: Caseless explosive) (Area of Effect: 2m/4m/6m)
+            - es:
+                name: Granada de Concusión
+                description: |-
+                  Este cubo de bloque explosivo detona envuelto de un estuche no esparcible incapacitando e hiriendo al personal por impacto cinético sónico, limitando la limpieza de cadáveres letales. (Carga: Explosivo sin vaina) (Área de efecto: 2m/4m/6m)
+        frag-grenade:
+          skill: Athl-throw
+          acc: '0'
+          md: F
+          range: Per STR
+          type: HI/G
+          damage: d8w/d8+1w/d4+1m
+          act: '2'
+          clip: n/a
+          mass: '0.5'
+          hide: '+2'
+          avail: Mil
+          cost: '100'
+          localized:
+            - en:
+                name: Frag Grenade
+                description: |-
+                  The fragmentation grenade is a very dangerous weapon, capable of hurling deadly shrapnel a great distance. Targets behind hard cover reduce the damage by one category, as if they'd hit the deck (see page 47 of the Alternity Gamemaster Guide). (Payload: Shrapnel) (Area of Effect: 2m/6m/10m)
+            - es:
+                name: Granada de Frag
+                description: |-
+                  Peligrosa metralla punzante despedida desde escombros giratorios a gran distancia. Los protegidos tras una cobertura contundente restan el daño una categoría para simular que se tumban frente al daño y caen bajo suelo. (Carga: Metralla) (Área de efecto: 2m/6m/10m)
+        gas-grenade:
+          skill: Athl-throw
+          acc: '0'
+          md: F
+          range: Per STR
+          type: II/O
+          damage: d4s/d4+2s/d4w
+          act: '2'
+          clip: n/a
+          mass: '0.5'
+          hide: '+2'
+          avail: Mil
+          cost: '300'
+          localized:
+            - en:
+                name: Gas Grenade
+                description: |-
+                  This weapon explodes in a cloud of poison gas 8 meters in diameter. This is a hemotoxin with an onset time of d4+1 rounds, and no modifier to the victim's Constitution feat check to resist its effects. See 'Poison' in Chapter 3 of the Alternity Gamemaster Guide for details. (Payload: Poison gas) (Area of Effect: contact/2m/4m)
+            - es:
+                name: Granada de Gas
+                description: |-
+                  Estalla creando una nube a presión de gas paralizante hemotóxico a 8 metros. La toxina demora de media unos d4+1 asaltos en actuar, y no existe escudo a la Fortaleza de quien la respira. (Carga: Gas venenoso) (Área de efecto: contacto/2m/4m)
+        pulse-grenade:
+          skill: Athl-throw
+          acc: '0'
+          md: F
+          range: Per STR
+          type: En/G
+          damage: d4+2s/d6+2s/d8+2s
+          act: '2'
+          clip: n/a
+          mass: '0.5'
+          hide: '+2'
+          avail: Mil
+          cost: '350'
+          localized:
+            - en:
+                name: Pulse Grenade
+                description: |-
+                  The pulse grenade radiates a magnetic pulse on detonation, ionizing delicate electronics and interfering with victims' nervous systems. Against electronics, cybernetic targets, or powered armor, it inflicts maximum damage (6 stuns for an Ordinary hit, etc.). (Payload: Electromagnetic pulse) (Area of Effect: 2m/4m/10m)
+            - es:
+                name: Granada de Pulso
+                description: |-
+                  La granada irradia impulsos magnéticos resecando e interfiriendo en el sistema nervioso humano y fundiendo material tecnológico. Máximo daño contra implantes cibernéticos, armas de energía y servomotores acoplados o armadura robótica (Impacto ordinario causa 6 de aturdimiento). (Carga: Pulso Electromagnético) (Área: 2m/4m/10m)
+    pl-8-energy-age:
+      localized:
+        - en:
+            name: 'PL 8: Energy Age'
+        - es:
+            name: 'PL 8: Era Energética'
+      items:
+        bantam-starload:
+          skill: Hvy-indirect
+          acc: '-2'
+          md: F
+          range: As launcher
+          type: En/A
+          damage: d8+2w/d4+1m/d6+1m
+          act: '2'
+          clip: '1'
+          mass: '3'
+          hide: '+1'
+          avail: Res
+          cost: '2000'
+          localized:
+            - en:
+                name: Bantam, starload
+                description: |-
+                  This projectile uses a miniature mass reactor to power an explosion, creating a blast that targets people and vehicles with ferocious punishment. The blast does Amazing damage (d6+1m) to anything within 6 meters; Good damage (d4+1m) out to 12 meters; and Ordinary damage (d8+2w) out to 20 meters.
+            - es:
+                name: Gallo, carga de estrellas
+                description: Un misil gallo con una ojiva de alto rendimiento.
+        cannon-maser:
+          skill: Hvy-direct
+          acc: '-1'
+          md: F
+          range: 80/200/600
+          type: En/G
+          damage: d8w/d4+1m/d6+2m
+          act: '2'
+          clip: '12'
+          mass: '10'
+          hide: '-'
+          avail: Res
+          cost: '25000'
+          localized:
+            - en:
+                name: Cannon, maser
+                description: |-
+                  The maser cannon employs a miniature mass reactor and requires the use of a heavy backpack accelerator to supply the energy for maser blasts.
+            - es:
+                name: Cañón, máser
+                description: Un cañón máser pesado.
+        grenade-mass:
+          skill: Athl-throw
+          acc: '+1'
+          md: F
+          range: Per STR
+          type: En/G
+          damage: d6+2s/d6+2w/d6m
+          act: '2'
+          clip: '1'
+          mass: '2'
+          hide: '-'
+          avail: Res
+          cost: '1000'
+          localized:
+            - en:
+                name: Grenade, mass
+                description: |-
+                  This grenade detonates a tiny mass reactor, resulting in a few cubic meters of cosmic catastrophe. Heat, light, and all forms of broadband electromagnetic radiation slag anything in the general vicinity of the grenade. All targets within 2 meters of the explosion suffer Amazing damage (d6m); Good damage (d6+2w) is inflicted on those within 4 meters; and Ordinary damage (d6+2s) is suffered by those within 10 meters of the blast.
+            - es:
+                name: granada, masa
+                description: Una granada que utiliza campos de gravedad para causar daño.
+        mass-launcher:
+          skill: Hvy-indirect
+          acc: '-1'
+          md: F
+          range: 20/300/1000
+          type: En/G
+          damage: d6+1w/d6+3w/d4+1m
+          act: '1'
+          clip: '4'
+          mass: '15'
+          hide: '-'
+          avail: Res
+          cost: '8000'
+          localized:
+            - en:
+                name: Mass launcher
+                description: |-
+                  This indirect-fire weapon can only be used on a planetary surface, or in an artificial environment with at least light gravity. It launches a wave of gravity energy into the air and relies on the gravity well of a planet to both return the energy to the ground and magnify its power.<br />All targets within 4 meters of the blast suffer Amazing damage (d4+1m); targets within 8 meters suffer Good damage (d6+3w); and targets within 12 meters suffer Ordinary damage (d6+1w).
+            - es:
+                name: lanzador masivo
+                description: Un lanzador que dispara proyectiles de masa.
+ammunition:
+  config:
+    default:
+      columns:
+        en:
+          - name: Item
+            key: name
+          - name: Platform
+            key: platform
+          - name: Payload
+            key: payload
+          - name: Cost ($)
+            key: cost
+          - name: Description
+            key: description
+            hidden: true
+        es:
+          - name: Objeto
+            key: name
+          - name: Plataforma
+            key: platform
+          - name: Carga
+            key: payload
+          - name: Coste ($)
+            key: cost
+          - name: Description
+            key: description
+            hidden: true
+  items:
+    pl-7-gravity-age:
+      localized:
+        - en:
+            name: 'PL 7: Gravity Age'
+        - es:
+            name: 'PL 7: Era de la gravedad'
+      items:
+        black-thunder-ap-round:
+          platform: Any charge weapon
+          payload: Sabot penetrator
+          cost: 2x clip
+          localized:
+            - en:
+                name: Black Thunder AP Round
+                description: |-
+                  The Black Thunder bullet is a discarding-sabot Teflon penetrator designed to pierce armor. This high-impact round halves the effect of any armor it strikes (round up). For example, attack armor normally stops d6+1 points of HI damage. If the d6 result is a 4, the armor stops a total of 5 points of primary damage against standard ammunition, but it only stops 3 points of damage (one-half of 5, rounded up) from a Black Thunder round. The damage roll of a sabot weapon using this round is reduced by 1 point, to a minimum of 1. Clips of AP ammo are twice as expensive as clips of normal ammo.
+            - es:
+                name: Muni. Perforante Trueno Oscuro
+                description: |-
+                  El clásico penetrador de asalto de teflón para rajar armaduras. Cualquier blanco atravesado ve su coraza reducida a la mitad (Redondeando a su alza más próxima). Por poner ejemplo: Un blindaje medio detiene unos de bloque d6+1 impactos. Si sacamos 4 al d6 daría 5 contra municiones normales, que gracias al Trueno queda reducida a salvacargas de 3 en blindajes. Si el atacante que acerta portaba trueno oscuro el daño recibido al final resta 1 de golpe, minimizando su daño inicial pero destrozando gran armadura de una bala si el sujeto era blindado puro de pie a cabeza.
+        mightymite-explosive-round:
+          platform: Charge and sabot guns
+          payload: Detonex warhead
+          cost: 4x clip
+          localized:
+            - en:
+                name: MightyMite Explosive Round
+                description: |-
+                  Tipped with a Detonex-filled slug, the MightyMite explodes a split second after impact, causing ghastly wounds. If the bullet penetrates the target's armor (i.e., the target suffers primary wound or mortal damage from the attack), the exploding bullet inflicts d6-3 additional wound points that the victim's armor does not block.
+            - es:
+                name: Muni. Explosiva Potente MightyMite
+                description: |-
+                  Forrado de esquirlas Detonex con explosión al chasquear impacto. El cuerpo abre una herida brutal de esquirla sangrante inminente de metrallas punzantes incrustadas en el riego. Si se perforó armadura el impacto sufre unos d6-3 de letalidad y herida extra que asimilan en carne ajena sin que la armadura lo proteja el añadido destructivo que se diseminará en sangre.
+        archer-aa-stabilized-round:
+          platform: Charge and sabot guns
+          payload: Fin-stabilized sabot
+          cost: 3x clip
+          localized:
+            - en:
+                name: Archer AA Stabilized Round
+                description: |-
+                  This round is not rifled for spin-stabilization as most conventional slugs are; instead, it resembles a small aerodynamic dart, deploying small fins after leaving the barrel. It's extremely accurate, reducing penalties for medium- and long-range fire by 1 step.
+            - es:
+                name: Muni. Estabilizada AA
+                description: |-
+                  No traza círculos ni derrape circular como cualquier proyectil clásico; se alinea asemejando a una flecha minúscula abriendo alas y engranaje estabilizante desde el interior. Precisión enorme y sublime restando penalización mediana ni larga a un único paso al que dispare.
+        shredder-c5-flechette-ammo:
+          platform: Charge guns
+          payload: Flechette bundle
+          cost: 2x clip
+          localized:
+            - en:
+                name: Shredder C5 Flechette Ammo
+                description: |-
+                  This round converts a standard charge pistol or rifle into a flechette weapon. The weapon's range is reduced to 6/12/30 meters, and its damage to d4w/d6w/d4m, but its damage doubles for short-range shots. The Shredder C5 is popular for close-quarters fights, naturally; damage for long-range shots is reduced to one-half normal.
+            - es:
+                name: Munición de Flecha C5 Shredder
+                description: |-
+                  Convertirá el arma que usas al de flechas de lluvia. Talla las variables limitándote de Rango corto, a de 6/12/30 y un daño fijo de d4w/d6w/d4m pero DUPLICA asertos e impactos cercanos. La flecha C5 es perfecta para pasillos navales estrechos y melé; mientras que las tiradas largas mermarán tu daño a la mitad ante esparcimiento.
+        b-mace-gel-round:
+          platform: Charge or sabot guns
+          payload: Soft gel capsule
+          cost: 2x clip
+          localized:
+            - en:
+                name: B-Mace Gel Round
+                description: |-
+                  Intended for nonlethal target subdual, the gel round converts any wound damage normally inflicted by the weapon to stun points, and any mortal damage to twice that number of stun points. The B-Mace suffers a +1 step penalty to long-range fire.
+            - es:
+                name: Bala de Gel A-Mace
+                description: |-
+                  Gel de control letal civil. Asimila cualquier herida y absorbe su sangrado o muerte, pasando todos los restos de letal daño a doble impacto sumado aturdimiento de anestesia durmiente. El arma con Gel A-Mace pierde algo de aerodinámica e incuba maldad con retraso penalizador para impactables largos.
+        talon-x-guided-round:
+          platform: Charge or sabot guns
+          payload: Laser-guided slug
+          cost: 5x clip
+          localized:
+            - en:
+                name: Talon X Guided Round
+                description: |-
+                  The Talon X guided round is necessary in order to take advantage of the Falcon X weapon guidance system (see previous section). A Talon X round is fitted with a laser-seeking head and aerofoils for in-flight course correction. Without guided ammo, the guidance system is useless.
+            - es:
+                name: Muni. Guiada X
+                description: |-
+                  Balas guiadas de letal persecución unidas al sistema inteligente del sensor visual de miras X o rastreo manual. La Talon incorpora en puntera corrección telemétrica si ha fallado buscando su fin y redirigiéndose. Sin un guiado no resultará letal frente a nada y no funciona.
+        snake-eyes-ir-homing-round:
+          platform: Charge or sabot guns
+          payload: Infrared-guided slug
+          cost: 4x clip
+          localized:
+            - en:
+                name: Snake Eyes IR Homing Round
+                description: |-
+                  The infrared homing bullet is fitted with a tiny heat-seeking sensor in its head, adjusting its path to strike likely heat sources. It offers a -2 step bonus to medium- and long-range attacks, or a -1 step bonus to long-range attacks. If the attack skill check fails, the bullet locks on to some other likely heat source, and the user must then make a normal attack skill check against the alternate target. Sometimes this is another enemy nearby, but the Snake Eyes can't distinguish between friend and foe. (It's not a good round to fire into a area where friendlies are mixed up with hostiles.) If the second attack misses, too, the bullet doesn't endanger anyone else.
+            - es:
+                name: Casquillos Infrarrojo Snake Eyes
+                description: |-
+                  Caza una presa buscándole el calor del motor de vehículos o de armadura del cuerpo orgánico. Da penalizador salvavidas -2 extra en mediana ni tan distante e invierte restando en rango extremo a un bono si se usa y un solo -1 lejano. Sus fallos no se dispersan ni erran: rastrea un segundo radar ajeno saltando de nuevo al compañero, o si atacas colisiona a otro calor cercano del que esté en esa sala. No distingue amigos de terroristas, pero si la segunda vez su tirada es fallo... el ojo de la serpiente errará ya del todo al fin colisionando estancado a tierra y suelo libre.
+accessories:
+  config:
+    default:
+      columns:
+        en:
+          - name: Item
+            key: name
+          - name: Platform
+            key: platform
+          - name: Mass
+            key: mass
+          - name: Cost ($)
+            key: cost
+          - name: Description
+            key: description
+            hidden: true
+        es:
+          - name: Objeto
+            key: name
+          - name: Plataforma
+            key: platform
+          - name: Masa (kg)
+            key: mass
+          - name: Coste ($)
+            key: cost
+          - name: Description
+            key: description
+            hidden: true
+  items:
+    pl-7-gravity-age:
+      localized:
+        - en:
+            name: 'PL 7: Gravity Age'
+        - es:
+            name: 'PL 7: Era de la gravedad'
+      items:
+        falcon-x-guidance-system:
+          platform: Any projectile (type HI) weapon
+          mass: '0.1'
+          cost: '1250'
+          localized:
+            - en:
+                name: Falcon X Guidance System
+                description: |-
+                  This sighting system uses guided ammunition (see next page). It consists of a low-powered laser target designator on the weapon's barrel. Firing the weapon takes two actions—one to set up the shot, and the following to make the attack skill check. When the weapon is fired, the guided ammo homes in on the laser signal with pinpoint accuracy, conferring a -3 step bonus to the attack skill check. Naturally, the guidance system can be turned off to allow fire in the normal unguided mode.
+            - es:
+                name: Sistema Guía Falcon X
+                description: |-
+                  El sistema fijador usa munición guiada. Incorpora una franja láser de baja densidad al barril y gastar un turno prepara su disparo para que, bajo su misma designación de puntería, trace y otorgue un bonificador extra de -3 nivel al disparo guiado infalible exacto. Este sistema puede apagarse para funcionar con normalidad.
+        target-x-holo-sights:
+          platform: Any ranged weapon
+          mass: '0.1'
+          cost: '850'
+          localized:
+            - en:
+                name: Target X Holo Sights
+                description: |-
+                  The best long-range sights in production today, the Target X unit uses a sophisticated binocular apparatus to project a virtual crosshair. It works much like a telescopic sight, but with automatic rangefinding and no loss of peripheral vision. Holo sights reduce any range penalties for long-range fire by two steps. Note that a weapon can only have one set of sights installed.
+            - es:
+                name: Mirillas Holo Target X
+                description: |-
+                  La mayor precisión óptica del siglo y los mejores visores en venta, cuenta con unas lentes de rastreo que miden telemetría con crucetas de fijación sin perder nada de visión o perimetral del arma. Su uso anula cualquier penalizador de larga distancia o disparos lejanos rebajándolo 2 pasos. Solo una de las miras puede ser acoplada al cañón.
+        reaper-700-iff-sights:
+          platform: Any ranged weapon
+          mass: '0.1'
+          cost: '850'
+          localized:
+            - en:
+                name: Reaper 700 IFF Sights
+                description: |-
+                  IFF stands for Identify Friend or Foe, a system for preventing friendly casualties in combat. The user's allies must wear IFF transponders (a comm gear option costing $50) keyed to the right frequency in order for the system to function. If an ally is standing in the line of fire, the IFF sight prevents the gun from firing. It's extremely useful in close-quarters assaults, since a gunman can hose down a crowded room without fear of hitting his friends-ignore the normal risks of firing into a melee if the gunman's allies are wearing transponders.
+            - es:
+                name: Visor IFF  700 Reaper
+                description: |-
+                  IFF sirve de Identificación Aliada / Enemiga, una capa protectora inteligente. Los miembros del pelotón emiten traspondedor IFF (Una de frecuencias comprada por 50$) ajustado al sistema en misma sintonía para que sea funcional. Si tu colega cruza la franja de combate, el arma de IFF bloquea el disparo al vuelo e imposibilita la muerte colateral accidental. Ideal asaltos confusos de cuartos donde se rocía pánico omitiendo miedo y penas al fuego general en área de melés y combate de cercanía ciega.
+        mongoose-imaging-sights:
+          platform: Any ranged weapon
+          mass: '0.1'
+          cost: '300'
+          localized:
+            - en:
+                name: Mongoose Imaging Sights
+                description: |-
+                  This device is simply a light-intensifying scope mounted over the weapon's barrel. It reduces penalties for darkness by 2 steps, and penalties for long range by 1 step.
+            - es:
+                name: Mira Mongoose Imaging
+                description: |-
+                  Lupa de barril muy sencilla y acoplable a cualquier ranura superior de fuego táctico que purifica la captación nocturna u opaca de luz redimiendo penalizaciones por ceguera y oscuridad en 2 puntos, y lejana de 1 rango extra.
+        stealth-holster:
+          platform: Any pistol or SMG
+          mass: '1'
+          cost: '400'
+          localized:
+            - en:
+                name: Stealth Holster
+                description: |-
+                  The stealth holster is made with antiscan material and molded to the user's body contours. It adds +3 steps to a weapon's Hide modifier, making it much less likely to be detected. Because the holster is often hidden in a hard-to-reach spot, the user suffers a +1 step penalty to his action check if he is attempting to draw his weapon in a hurry.
+            - es:
+                name: Funda de Sigilo Stealth
+                description: |-
+                  Forjado con blindaje elástico material antiscáner se funde invisible con el trazo de cuerpo y forma anatómica para despistar miradas dando un modificador pasivo sigiloso de Ocultación de +3 al cuerpo y escurrir al cacheo y sensores de guardias, pero desenfundar desde ahí exige un pericia un engorro logrando +1 paso la penalización por desenfunde acelerado de saque instantánea.

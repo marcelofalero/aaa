@@ -1,7 +1,9 @@
-import yaml, os, re, sys, json, copy
+import os
+import json
+import yaml
+import re
 from collections import defaultdict
 
-# Custom representer for block scalar (|) strings to ensure clean YAML output
 def str_presenter(dumper, data):
     if len(data) > 60 or '\n' in data:
         return dumper.represent_scalar('tag:yaml.org,2002:str', data, style='|')
@@ -109,7 +111,6 @@ def get_localized(node, lang):
             return item[lang]
     return {}
 
-
 def translate_field_robust(node, field, lang, mapping):
     """Robustly extracts and translates a field with fallbacks."""
     if not isinstance(node, dict): return ""
@@ -176,6 +177,46 @@ def localize_url(url, lang, localized_title=None):
             url = f"{path_part}#{slugify(localized_title)}"
     return url
 
+def transform_gear_category(cat_node, mapping, lang):
+    """Flattens gear categories for Hugo shortcodes."""
+    if not isinstance(cat_node, dict): return cat_node
+    result = cat_node.copy()
+    
+    # 1. Flatten config if it only has default
+    if "config" in result and isinstance(result["config"], dict):
+        
+        if "default" in result["config"] and len(result["config"]) == 1:
+            result["config"] = result["config"]["default"]
+            
+    # 2. Transform items map-of-maps into a list of groups
+    if "items" in result and isinstance(result["items"], dict):
+        new_groups = []
+        sorted_keys = sorted(result["items"].keys())
+        for group_id in sorted_keys:
+            group = result["items"][group_id]
+            if isinstance(group, dict) and "items" in group:
+                group_name = group.get("name") or group_id.replace("-", " ").title()
+                
+                items_list = []
+                sorted_item_keys = sorted(group["items"].keys())
+                for item_id in sorted_item_keys:
+                    item = group["items"][item_id]
+                    if isinstance(item, dict):
+                        # Ensure item has id and name
+                        item["id"] = item_id
+                        if "name" not in item:
+                            item["name"] = item_id.replace("-", " ").title()
+                        
+                        items_list.append(item)
+                
+                new_groups.append({
+                    "id": group_id,
+                    "name": group_name,
+                    "items": items_list
+                })
+        result["items"] = new_groups
+    return result
+
 def rebuild_all():
     mapping = load_mapping()
     print(f'Applying {len(mapping)} terminology rules...')
@@ -196,18 +237,37 @@ def rebuild_all():
         process_psionics(to_list(psionics_raw.get('items', [])), mapping)
     
     # Generic gear data (Armor, weapons, etc)
-    gear_sources = ['armor', 'computers', 'cybernetics', 'goods_and_services', 'survival_gear', 'weapons']
+    gear_sources = ["armor", "computers", "cybernetics", "goods_and_services", "survival_gear", "weapons"]
     for base_name in gear_sources:
-        yaml_path = os.path.join(DATA_SOURCES_DIR, f'{base_name}.yaml')
+        yaml_path = os.path.join(DATA_SOURCES_DIR, f"{base_name}.yaml")
         if not os.path.exists(yaml_path): continue
-        print(f'Processing {base_name}...')
-        with open(yaml_path, 'r', encoding='utf-8') as f:
+        print(f"Processing {base_name}...")
+        with open(yaml_path, "r", encoding="utf-8") as f:
             data = yaml.load(f, Loader=yaml.FullLoader)
-        for lang in ['en', 'es']:
+        
+        for lang in ["en", "es"]:
+            # Process the entire structure recursively first (localization and terminology)
             processed = apply_rules_to_node(data, mapping, lang)
-            suffix = '.es.json' if lang == 'es' else '.json'
-            with open(os.path.join(SITE_DATA_DIR, base_name + suffix), 'w', encoding='utf-8') as f:
-                json.dump(processed, f, indent=4, ensure_ascii=False)
+            
+            # Post-process for structural requirements (Hugo templates)
+            final_data = {}
+            if "search_config" in processed:
+                final_data["search_config"] = processed["search_config"]
+            
+            if "items" in processed or "config" in processed:
+                final_data.update(transform_gear_category(processed, mapping, lang))
+            else:
+                # Handle multiple categories (e.g., weapons.yaml has melee, ranged, etc.)
+                for key, value in processed.items():
+                    if isinstance(value, dict) and ("items" in value or "config" in value):
+                        final_data[key] = transform_gear_category(value, mapping, lang)
+                    elif key != "search_config":
+                        final_data[key] = value
+            
+            suffix = ".es.json" if lang == "es" else ".json"
+            with open(os.path.join(SITE_DATA_DIR, base_name + suffix), "w", encoding="utf-8") as f:
+                
+                json.dump(final_data, f, indent=4, ensure_ascii=False)
 
     # Perks & Flaws
     perks_yaml = os.path.join(DATA_SOURCES_DIR, 'perks.yaml')
@@ -234,7 +294,9 @@ def apply_rules_to_node(node, mapping, lang='en'):
         new_node = {}
         # 1. Handle all fields using robust translation
         for k, v in node.items():
-            if k == 'localized' or k.endswith('_es'): continue
+            if k == 'localized':
+                continue
+            if k.endswith('_es'): continue
             
             if k == 'url' or k == 'skill_url':
                 title = translate_field_robust(node, 'name', lang, mapping) or translate_field_robust(node, 'skill', lang, mapping) or translate_field_robust(node, 'title', lang, mapping)
@@ -243,7 +305,8 @@ def apply_rules_to_node(node, mapping, lang='en'):
                 new_node[k] = translate_field_robust(node, k, lang, mapping)
             elif isinstance(v, dict):
                 # If it's a map (like 'items' or 'config'), process values recursively
-                new_node[k] = {ik: apply_rules_to_node(iv, mapping, lang) if isinstance(iv, (dict, list)) else iv for ik, iv in v.items()}
+                new_node[k] = {ik: apply_rules_to_node(iv, mapping, lang) if isinstance(iv, (dict, list)) else iv 
+                               for ik, iv in v.items() if ik != 'localized' and not ik.endswith('_es')}
             elif isinstance(v, list):
                 new_node[k] = [apply_rules_to_node(item, mapping, lang) if isinstance(item, (dict, list)) else item for item in v]
             else:

@@ -5,1219 +5,1101 @@
         "section": "equipment"
     },
     "medical_gear": {
-        "config": [
-            {
-                "columns": {
-                    "en": [
-                        {
-                            "name": "Item",
-                            "key": "name"
-                        },
-                        {
-                            "name": "PL",
-                            "key": "pl"
-                        },
-                        {
-                            "name": "Mass (kg)",
-                            "key": "mass"
-                        },
-                        {
-                            "name": "Cost ($)",
-                            "key": "cost"
-                        },
-                        {
-                            "name": "Description",
-                            "key": "description",
-                            "hidden": true
-                        }
-                    ],
-                    "es": [
-                        {
-                            "name": "Artículo",
-                            "key": "name"
-                        },
-                        {
-                            "name": "PL",
-                            "key": "pl"
-                        },
-                        {
-                            "name": "Masa (kg)",
-                            "key": "mass"
-                        },
-                        {
-                            "name": "Costo ($)",
-                            "key": "cost"
-                        },
-                        {
-                            "name": "Descripción",
-                            "key": "description",
-                            "hidden": true
-                        }
-                    ]
-                },
-                "id": "default"
+        "config": {
+            "columns": {
+                "en": [
+                    {
+                        "name": "Item",
+                        "key": "name"
+                    },
+                    {
+                        "name": "PL",
+                        "key": "pl"
+                    },
+                    {
+                        "name": "Mass (kg)",
+                        "key": "mass"
+                    },
+                    {
+                        "name": "Cost ($)",
+                        "key": "cost"
+                    },
+                    {
+                        "name": "Description",
+                        "key": "description",
+                        "hidden": true
+                    }
+                ],
+                "es": [
+                    {
+                        "name": "Artículo",
+                        "key": "name"
+                    },
+                    {
+                        "name": "PL",
+                        "key": "pl"
+                    },
+                    {
+                        "name": "Masa (kg)",
+                        "key": "mass"
+                    },
+                    {
+                        "name": "Costo ($)",
+                        "key": "cost"
+                    },
+                    {
+                        "name": "Descripción",
+                        "key": "description",
+                        "hidden": true
+                    }
+                ]
             }
-        ],
+        },
         "items": [
             {
+                "id": "medical-gear",
                 "name": "Medical Gear",
                 "items": [
                     {
-                        "name": "First aid kit",
-                        "pl": "4",
-                        "mass": "2",
-                        "cost": "50",
-                        "id": "first-aid-kit",
-                        "description": "No soldier or outdoorsman should be without a first aid kit. Bandages, gauze, surgical thread and needles, and more advanced medical supplies are included.<br />A first aid kit confers a -1 bonus to a user's Knowledge-first aid skill check, or a -2 bonus on a skill check involving Medical Science-treatment.<br />A first aid kit (or a trauma pack, described below) is necessary if a character wants to use the first aid skill or the Medical Science-treatment skill to heal wounds or stabilize mortal damage.<br />A character who is conscious can use a first aid kit on himself, but the Gamemaster might apply a penalty if he uses the kit to heal wounds or stabilize mortal damage. Typically, a first aid kit is used by a character to treat someone else.<br />A first aid kit contains enough material to provide a bonus on three attempts to heal wounds and up to six attempts to heal stun damage or awaken someone who has been knocked out. It can be used once to stabilize mortal damage. After all of its contents have been exhausted, it must be replaced."
-                    },
-                    {
-                        "name": "Forensics kit",
-                        "pl": "5",
-                        "mass": "5",
-                        "cost": "250",
-                        "id": "forensics-kit",
-                        "description": "Medical examiners and investigators are often required to take samples from bodies or perform autopsies. The forensics kit is an indispensable tool for these operations.<br />It confers a -2 bonus to a character's skill checks involving Investigate and Medical Science in matters of forensic medicine."
-                    },
-                    {
-                        "name": "Life support pack",
-                        "pl": "7",
-                        "mass": "3",
-                        "cost": "500",
-                        "id": "life-support-pack",
-                        "description": "This emergency device can save the life of a dying patient. A successful Knowledge-first aid or Medical Science-treatment skill check is required to apply the life support pack.<br />It prevents the patient from losing any more mortal points (by eliminating the need for him to make Stamina-endurance checks) for as long as the pack's power supply lasts.<br />The device has an internal power cell (rechargeable but not replaceable) that lasts for 5 days. If a life support pack runs out of power, the patient's condition will immediately begin deteriorating: he must make a Stamina-endurance check immediately, and once per hour thereafter, to determine if he continues to suffer an increasing amount of mortal damage, unless he is treated by some other means."
-                    },
-                    {
-                        "name": "Medical gauntlet",
-                        "pl": "7",
-                        "mass": "2",
-                        "cost": "1250",
-                        "id": "medical-gauntlet",
-                        "description": "This device contains a variety of medical sensors and samplers that can accurately diagnose almost any medical condition known by means of a blood sample and an ultrasonic scan.<br />The gauntlet provides a -1 bonus to Medical Science-treatment skill checks when its user is attempting to diagnose or treat known diseases or wounds."
-                    },
-                    {
-                        "name": "Medical scanner",
-                        "pl": "6",
-                        "mass": "10",
-                        "cost": "3000",
-                        "id": "medical-scanner",
-                        "description": "The forerunner of the PL 7 medical gauntlet, this briefcase-sized machine has inputs and detectors, along with the components necessary for some basic chemical tests, to help a doctor assess a patient's condition and diagnose an illness or determine the severity of the patient's injuries.<br />The scanner provides a -1 bonus to Medical Science-treatment skill checks when its user is attempting to diagnose a known disease or gauge the severity of obvious (visible or detectable) wounds. However, it provides no bonus to the actual treatment of an injury or some other malady."
-                    },
-                    {
-                        "name": "Anesthetic",
                         "pl": "4",
                         "mass": "-",
                         "cost": "50",
                         "id": "anesthetic",
-                        "description": "Anesthetics (PL 4) are used to prepare a person for surgery. One injection of anesthetic renders a patient unconscious.<br />Using anesthetic against an unwilling target in combat requires a successful Unarmed Attack, and the victim is entitled to a Constitution feat check to determine the exact effect: Critical Failure, opponent is knocked out (all stun points lost); Failure, opponent suffers d6+2s; Ordinary, d6s; Good, d6-1s; Amazing, d4-1s."
+                        "name": "Anesthetic"
                     },
                     {
-                        "name": "Antibiotic",
                         "pl": "5",
                         "mass": "-",
                         "cost": "50",
                         "id": "antibiotic",
-                        "description": "Antibiotics (PL 5) are used to fight various types of microbial infection. A person suffering from any one of a variety of diseases can be treated with an antibiotic, which is administered either orally or by injection.<br />The drug gives the patient a better chance of making a successful Constitution feat check in order to fight off the disease, with a bonus dependent on the progress level: -1 at PL 4, -2 at PL 5, -3 at PL 6, and -4 at PL 7. Treatment with antibiotics usually takes 1 to 8 days, and a patient may need several days thereafter to recover full strength. Antibiotics may not be effective against rare or new alien or domestic microbes."
+                        "name": "Antibiotic"
                     },
                     {
-                        "name": "Antiradiation",
                         "pl": "6",
                         "mass": "-",
                         "cost": "100",
                         "id": "antiradiation",
-                        "description": "Antiradiation serum (PL 6) is a plasmalike solution administered intravenously. Electrolytic solutions help to prevent cell death.<br />A patient gains a -2 bonus to his Constitution feat checks when fighting off the effects of any form of radiation."
+                        "name": "Antiradiation"
                     },
                     {
-                        "name": "Antivenom",
                         "pl": "5",
                         "mass": "-",
                         "cost": "75",
                         "id": "antivenom",
-                        "description": "Antivenom (PL 5) is an antidote for a natural poison, such as a snake bite or a scorpion sting.<br />If the victim receives a dose of antivenom within the poison's onset time, he gains a -4 bonus to his Constitution feat check. This bonus is halved if the antivenom is administered after the poison begins to affect the victim. Antivenom may be ineffective on some alien toxins or unusual venoms."
+                        "name": "Antivenom"
                     },
                     {
-                        "name": "Coagulant",
                         "pl": "6",
                         "mass": "-",
                         "cost": "50",
                         "id": "coagulant",
-                        "description": "Coagulant (PL 6) causes clotting at the point of injury without thickening blood throughout the body.<br />A dose of coagulant gives a dying character a -3 bonus to his next Stamina-endurance check, making it much more likely that his condition will not worsen for at least the next 24 hours. Coagulant can be administered by any character who makes a successful Knowledge-first aid skill check."
+                        "name": "Coagulant"
                     },
                     {
-                        "name": "Psi-enhancer",
+                        "pl": "4",
+                        "mass": "2",
+                        "cost": "50",
+                        "id": "first-aid-kit",
+                        "name": "First Aid Kit"
+                    },
+                    {
+                        "pl": "5",
+                        "mass": "5",
+                        "cost": "250",
+                        "id": "forensics-kit",
+                        "name": "Forensics Kit"
+                    },
+                    {
+                        "pl": "7",
+                        "mass": "3",
+                        "cost": "500",
+                        "id": "life-support-pack",
+                        "name": "Life Support Pack"
+                    },
+                    {
+                        "pl": "7",
+                        "mass": "2",
+                        "cost": "1250",
+                        "id": "medical-gauntlet",
+                        "name": "Medical Gauntlet"
+                    },
+                    {
+                        "pl": "6",
+                        "mass": "10",
+                        "cost": "3000",
+                        "id": "medical-scanner",
+                        "name": "Medical Scanner"
+                    },
+                    {
                         "pl": "7",
                         "mass": "-",
                         "cost": "150",
                         "id": "psi-enhancer",
-                        "description": "These substances help Mindwalkers and talents to perform better by reducing accumulated psionic energy loss due to the use of mental powers.<br />One dose of psi-enhancer restores 2d4 lost psionic energy points, but also gives the patient a +1 penalty on the use of all psionic skills for d6 hours after the drug is administered.<br />If a patient receives a second dose within 24 hours after the first one, the drug's effectiveness is reduced by 2 points (to 2d4-2) and the patient suffers a +2 penalty on all psionic use for d6+1 hours after the second dose is administered."
+                        "name": "Psi Enhancer"
                     },
                     {
-                        "name": "Sedative",
                         "pl": "5",
                         "mass": "-",
                         "cost": "25",
                         "id": "sedative",
-                        "description": "Sedatives (PL 5) are used to calm people who might be dangerous to themselves or those around them. Sedated individuals suffer a +3 penalty to all action checks and actions. That penalty is reduced by 1 step per hour until the effect of the drug wears off.<br />Using a sedative against an unwilling target in combat requires a successful Unarmed Attack roll, and the victim is entitled to a Constitution feat check to fight off the effects: Ordinary, penalty reduced to +2; Good, penalty reduced to +1; Amazing, drug has no effect."
+                        "name": "Sedative"
                     },
                     {
-                        "name": "Stimulant",
                         "pl": "5",
                         "mass": "-",
                         "cost": "25",
                         "id": "stimulant",
-                        "description": "Stimulants (PL 5) heighten awareness and alertness, temporarily offsetting the effect of fatigue damage or stun damage or both. Any character, including the one receiving the drug, may administer a dose of stimulant.<br />Each dose of stimulant counteracts some damage, depending on the result of a Constitution feat check by the character receiving the treatment: Critical Failure, 10 points; Marginal, 8 points; Ordinary, 6 points; Good, 4 points; Amazing, 2 points. The damage offset is first applied to fatigue, and then to stuns if any points are left unaccounted for.<br />After d4+1 hours the stimulant wears off, and the amount of damage points indicated by the patient's Constitution feat check are immediately applied to the patient, half as stuns and half as fatigue points. If this leaves the character with no stun points or no fatigue points to spare, he loses consciousness and must recover by resting.<br />The use of a stimulant more often than once every 48 hours is dangerous. Every additional dose of stimulant that a character receives in any 48-hour period provides a cumulative +1 penalty to his Constitution feat check. Also, the first additional dose causes nausea and disorientation that provides a +2 penalty to any action the character attempts in the following 24 hours. Extra doses beyond the second one cause wound damage: d4+1 for the third dose, 2d4+2 for the fourth dose, and so on."
+                        "name": "Stimulant"
                     },
                     {
-                        "name": "Surgical kit",
                         "pl": "6",
                         "mass": "15",
                         "cost": "1250",
                         "id": "surgical-kit",
-                        "description": "A backpack is required to contain this portable operating theater. It includes all the equipment necessary to perform any surgical procedure short of a cybernetic graft.<br />The kit is necessary if a character wants to attempt a Medical Science-surgery skill check on a mortally injured character without a full medical facility."
+                        "name": "Surgical Kit"
                     },
                     {
-                        "name": "Trauma pack I",
                         "pl": "6",
                         "mass": "1",
                         "cost": "200",
                         "id": "trauma-pack-i",
-                        "description": "A trauma pack is the size of a paperback book. A dedicated computer program, medicine injectors, applicators, synthetic drugs, and artificial blood and skin combine to create a portable emergency treatment center.<br />The device provides a -2 bonus to the user's Knowledge-first aid skill check or a -3 bonus to a Medical Science-treatment skill check involving any attempt to heal wounds or stun damage.<br />A trauma pack (or a first aid kit, described above) is necessary if a character wants to use the first aid skill or the Medical Science-treatment skill to heal wounds or stabilize mortal damage.<br />Typically, a trauma pack is used by a character to treat someone else. A trauma pack contains enough material to provide a bonus on six attempts to heal wounds and six attempts to heal stun damage or awaken someone who has been knocked out. It can be used twice to stabilize mortal damage. After all of its medicinal contents have been exhausted, they must be replenished by installing a refill, which costs $100."
+                        "name": "Trauma Pack I"
                     },
                     {
-                        "name": "Trauma pack II",
                         "pl": "7",
                         "mass": "2",
                         "cost": "400",
                         "id": "trauma-pack-ii",
-                        "description": "Basically an intelligent, autonomous version of the trauma pack I, this device is designed to be used with body tank armor and some cybernetic body enhancements.<br />When installed, the pack monitors the vital signs of its user and activates at the first sign of damage. When activated, it provides one of the following benefits:<br />Knockout recovery: When the wearer suffers enough damage to use up the last of his stun points, the pack dispenses a drug that immediately restores enough stun points to leave the wearer with damage equal to only half, or one less than half, of his total stun points.<br />Wound recovery: The moment the wearer suffers enough wound damage to use up more than half of his wound points, the pack dispenses a drug that immediately restores d4+2 wound points to the character.<br />Mortal damage: The moment the wearer suffers any mortal damage, the pack dispenses a drug that immediately stabilizes the damage, removing the need for the wearer to make a Stamina-endurance check. All actions attempted by the wearer after receiving the stabilizing drug are made with a +3 penalty until his mortal damage is healed.<br />Each pack contains drugs sufficient for two applications of each function; no more than one of these packs can be rigged on an individual at a time."
+                        "name": "Trauma Pack Ii"
                     }
-                ],
-                "id": "medical-gear"
+                ]
             }
         ]
     },
     "clothing_and_accessories": {
-        "config": [
-            {
-                "columns": {
-                    "en": [
-                        {
-                            "name": "Item",
-                            "key": "name"
-                        },
-                        {
-                            "name": "PL",
-                            "key": "pl"
-                        },
-                        {
-                            "name": "Mass (kg)",
-                            "key": "mass"
-                        },
-                        {
-                            "name": "Cost ($)",
-                            "key": "cost"
-                        },
-                        {
-                            "name": "Description",
-                            "key": "description",
-                            "hidden": true
-                        }
-                    ],
-                    "es": [
-                        {
-                            "name": "Artículo",
-                            "key": "name"
-                        },
-                        {
-                            "name": "PL",
-                            "key": "pl"
-                        },
-                        {
-                            "name": "Masa (kg)",
-                            "key": "mass"
-                        },
-                        {
-                            "name": "Costo ($)",
-                            "key": "cost"
-                        },
-                        {
-                            "name": "Descripción",
-                            "key": "description",
-                            "hidden": true
-                        }
-                    ]
-                },
-                "id": "default"
+        "config": {
+            "columns": {
+                "en": [
+                    {
+                        "name": "Item",
+                        "key": "name"
+                    },
+                    {
+                        "name": "PL",
+                        "key": "pl"
+                    },
+                    {
+                        "name": "Mass (kg)",
+                        "key": "mass"
+                    },
+                    {
+                        "name": "Cost ($)",
+                        "key": "cost"
+                    },
+                    {
+                        "name": "Description",
+                        "key": "description",
+                        "hidden": true
+                    }
+                ],
+                "es": [
+                    {
+                        "name": "Artículo",
+                        "key": "name"
+                    },
+                    {
+                        "name": "PL",
+                        "key": "pl"
+                    },
+                    {
+                        "name": "Masa (kg)",
+                        "key": "mass"
+                    },
+                    {
+                        "name": "Costo ($)",
+                        "key": "cost"
+                    },
+                    {
+                        "name": "Descripción",
+                        "key": "description",
+                        "hidden": true
+                    }
+                ]
             }
-        ],
+        },
         "items": [
             {
-                "name": "Clothing and Accessories",
+                "id": "clothing-and-accessories",
+                "name": "Clothing And Accessories",
                 "items": [
                     {
-                        "name": "Antiscan weave",
                         "pl": "7",
                         "mass": "-",
                         "cost": "Cost x 3",
                         "id": "antiscan-weave",
-                        "description": "Microcircuit fibers can be combined with either ordinary or CF (carbonate fiber) fabric to create a cloth that hampers several types of scanning technology, including infrared, radar, magnetic detectors, X-rays, and weapon detectors.<br />Any detection check using such equipment is made at a +3 penalty when someone wearing antiscan weave is being targeted.<br />Antiscan weave can be used in clothing, backpacks, suitcases, and other items composed partly or entirely of fabric. The price of any such item is three times the base cost of the ordinary version of the item."
+                        "name": "Antiscan Weave"
                     },
                     {
-                        "name": "Backpack",
                         "pl": "4",
                         "mass": "-",
                         "cost": "100",
                         "id": "backpack",
-                        "description": "This item can be a simple sack, a high-tech pack with many compartments mounted on a frame, or a \"designer\" version made of some sort of expensive animal hide. The largest packs can hold up to 25 kilos of supplies and other gear."
+                        "name": "Backpack"
                     },
                     {
-                        "name": "Bioholster",
                         "pl": "6",
                         "mass": "1",
                         "cost": "150",
                         "id": "bioholster",
-                        "description": "Also known as a smart holster, this is a hip-worn device that is keyed to its owner's bioelectric field. When someone other than the weapon's owner tries to take the weapon from the holster, the holster locks the weapon in place, making it impossible to remove.<br />The bioholster includes a motion-detection release system that aids fast draws; when the user's hand approaches in the characteristic draw motion, the holster releases the weapon just in time for the user to catch and aim it without breaking his motion. The holster thus negates the +1 penalty for drawing and using a weapon in the same phase.<br />Smart holsters can be modified to carry melee weapons, but the fast-draw feature only works with small weapons such as pistols, knives, and daggers."
+                        "name": "Bioholster"
                     },
                     {
-                        "name": "Boots",
                         "pl": "2",
                         "mass": "1",
                         "cost": "100",
                         "id": "boots",
-                        "description": "This type of footgear comes in a variety of styles."
+                        "name": "Boots"
                     },
                     {
-                        "name": "Briefcase",
                         "pl": "3",
                         "mass": "1",
                         "cost": "60",
                         "id": "briefcase",
-                        "description": "A portable container often used for carrying papers, books, small personal items, and office supplies. At PL 5 and higher, briefcases can have special locking mechanisms, secret compartments, hidden cameras and recording devices, and other high-tech additions for the corporate climber on the go."
+                        "name": "Briefcase"
                     },
                     {
-                        "name": "Business dress",
                         "pl": "3",
                         "mass": "-",
                         "cost": "300",
                         "id": "business-dress",
-                        "description": "The clothes an executive wears. For men, this includes the equivalent of a business suit, collared shirt, tie, and dress socks. For women, this includes the equivalent of a woman's business suit or dress with matching accessories.<br />For the true fashion-conscious elite, business dress of superior make and style can be 2 to 10 times more expensive than the listed cost. This sort of indulgence marks the character as a potential member of certain power circles."
+                        "name": "Business Dress"
                     },
                     {
-                        "name": "Casual dress",
                         "pl": "3",
                         "mass": "-",
                         "cost": "50",
                         "id": "casual-dress",
-                        "description": "Clothes worn for comfort, play, or relaxation. Casual wear includes jeans, sweat pants, t-shirts, sweaters, sweatshirts, and similar garb. Fashionable, designer casual dress costs 2 times the listed price."
+                        "name": "Casual Dress"
                     },
                     {
-                        "name": "Coat",
                         "pl": "1",
                         "mass": "1",
                         "cost": "100",
                         "id": "coat",
-                        "description": "A heavy outer garment covering the body from the shoulders to below the waist. Sometimes a coat includes a hood."
+                        "name": "Coat"
                     },
                     {
-                        "name": "Fatigues",
                         "pl": "5",
                         "mass": "-",
                         "cost": "50",
                         "id": "fatigues",
-                        "description": "These are garments designed for manual labor or worn by the standard soldier of the age."
+                        "name": "Fatigues"
                     },
                     {
-                        "name": "Formal dress",
                         "pl": "3",
                         "mass": "-",
                         "cost": "500",
                         "id": "formal-dress",
-                        "description": "Clothes worn by men or women for formal occasions, elegant parties, or a night on the town. Fashion-conscious characters can purchase expensive designer garments that cost up to 10 times the listed price but virtually guarantee that onlookers will be impressed (possibly granting the wearer a bonus on any Personality-based skill checks)."
+                        "name": "Formal Dress"
                     },
                     {
-                        "name": "Glasses",
                         "pl": "3",
                         "mass": "-",
                         "cost": "50",
                         "id": "glasses",
-                        "description": "In their simplest form, glasses consist of a pair of lenses mounted in a frame. They are worn to improve vision, to make a fashion statement, or to do both. Designer models are 2 to 3 times more expensive than the listed price.<br />At PL 5, contact lenses become available; cost is $50 for a six-month supply."
+                        "name": "Glasses"
                     },
                     {
-                        "name": "Goggles, protective",
                         "pl": "4",
                         "mass": "-",
                         "cost": "25",
                         "id": "goggles-protective",
-                        "description": "These come in various forms for different purposes, the most common being a set of eyepieces that protect the wearer from extremely bright light. The standard model reduces any penalty for operating in bright light by 1 step.<br />At PL 7 a special variety of protective goggles comes into existence for sesheyans. They completely negate any penalty for bright light, and adjust instantly to changes in illumination."
+                        "name": "Goggles Protective"
                     },
                     {
-                        "name": "Holster/scabbard",
                         "pl": "1",
                         "mass": "1",
                         "cost": "25",
                         "id": "holster-scabbard",
-                        "description": "A holster is a case of leather or similar material shaped to hold a pistol. A scabbard is a sheath of leather or similar material used to hold a sword, dagger, or knife.<br />A concealed holster or scabbard is worn in a place not usually searched and not subject to easy spotting—the forearm, inside of the thigh or calf, the small of the back, or the ankle. The concealment provides a +2 penalty to all but the most intrusive of searches."
+                        "name": "Holster Scabbard"
                     },
                     {
-                        "name": "Jewelry",
                         "pl": "1",
                         "mass": "-",
                         "cost": "100",
                         "id": "jewelry",
-                        "description": "The listed cost is for high-quality costume jewelry. The price for top-quality jewelry can be many times the listed cost, as directed by the Gamemaster. For example, a gold ring might cost as much as $500, while a diamond ring could go for $1000 to $5000 or more."
+                        "name": "Jewelry"
                     },
                     {
-                        "name": "Pouch",
                         "pl": "2",
                         "mass": "-",
                         "cost": "50",
                         "id": "pouch",
-                        "description": "This is a flexible or hard-covered case worn on a belt at the hip. It includes a few compartments and zippered pockets."
+                        "name": "Pouch"
                     },
                     {
-                        "name": "Shoes, athletic",
                         "pl": "5",
                         "mass": "-",
                         "cost": "150",
                         "id": "shoes-athletic",
-                        "description": "Athletic shoes (PL 5) have canvas or leather uppers and flexible soles heavily treaded for good traction. The base price is for high-quality \"designer\" footwear, manufactured to provide maximum support for the foot and ankle."
+                        "name": "Shoes Athletic"
                     },
                     {
-                        "name": "Shoes, business",
                         "pl": "4",
                         "mass": "-",
                         "cost": "50",
                         "id": "shoes-business",
-                        "description": "Business shoes (PL 4) are generally stiffer and less sculptured than athletic shoes, with an emphasis on style at least as much as function."
+                        "name": "Shoes Business"
                     },
                     {
-                        "name": "Shoes, formal",
                         "pl": "4",
                         "mass": "-",
                         "cost": "100",
                         "id": "shoes-formal",
-                        "description": "Formal shoes (PL 4) sometimes emphasize style much more than comfort, but are often \"required\" to complete an outfit of formal attire."
+                        "name": "Shoes Formal"
                     },
                     {
-                        "name": "Stealth cloak",
                         "pl": "8",
                         "mass": "1",
                         "cost": "750",
                         "id": "stealth-cloak",
-                        "description": "This is a large hooded poncho made from antiscan weave with conductive fibers. In many military forces, the stealth cloak is standard issue for scouts and snipers. When activated, the garment provides the wearer with a +3 bonus on any skill checks involving Stealth. If an observer notices the wearer anyway, the wearer still receives a +1 improvement to his Resistance Modifier against a ranged weapon attack.<br />The cloak uses a charge cell that is good for 6 hours of operation. Extra charge cells cost $100 apiece."
+                        "name": "Stealth Cloak"
                     },
                     {
-                        "name": "Utility harness",
                         "pl": "4",
                         "mass": "-",
                         "cost": "25",
                         "id": "utility-harness",
-                        "description": "This is a light, strong utility belt that provides several places to attach packs, toolkits, or similar small devices."
+                        "name": "Utility Harness"
                     },
                     {
-                        "name": "Watch",
                         "pl": "4",
                         "mass": "-",
                         "cost": "50",
                         "id": "watch",
-                        "description": "The listed cost is for a sturdy, well-crafted, water-resistant timepiece with a lighted display and a built-in stopwatch and alarm. More expensive versions costing up to 10 times the listed price can be adorned with jewels and precious metals."
+                        "name": "Watch"
                     }
-                ],
-                "id": "clothing-and-accessories"
+                ]
             }
         ]
     },
     "tools_and_electronics": {
-        "config": [
-            {
-                "columns": {
-                    "en": [
-                        {
-                            "name": "Item",
-                            "key": "name"
-                        },
-                        {
-                            "name": "PL",
-                            "key": "pl"
-                        },
-                        {
-                            "name": "Mass (kg)",
-                            "key": "mass"
-                        },
-                        {
-                            "name": "Cost ($)",
-                            "key": "cost"
-                        },
-                        {
-                            "name": "Description",
-                            "key": "description",
-                            "hidden": true
-                        }
-                    ],
-                    "es": [
-                        {
-                            "name": "Artículo",
-                            "key": "name"
-                        },
-                        {
-                            "name": "PL",
-                            "key": "pl"
-                        },
-                        {
-                            "name": "Masa (kg)",
-                            "key": "mass"
-                        },
-                        {
-                            "name": "Costo ($)",
-                            "key": "cost"
-                        },
-                        {
-                            "name": "Descripción",
-                            "key": "description",
-                            "hidden": true
-                        }
-                    ]
-                },
-                "id": "default"
+        "config": {
+            "columns": {
+                "en": [
+                    {
+                        "name": "Item",
+                        "key": "name"
+                    },
+                    {
+                        "name": "PL",
+                        "key": "pl"
+                    },
+                    {
+                        "name": "Mass (kg)",
+                        "key": "mass"
+                    },
+                    {
+                        "name": "Cost ($)",
+                        "key": "cost"
+                    },
+                    {
+                        "name": "Description",
+                        "key": "description",
+                        "hidden": true
+                    }
+                ],
+                "es": [
+                    {
+                        "name": "Artículo",
+                        "key": "name"
+                    },
+                    {
+                        "name": "PL",
+                        "key": "pl"
+                    },
+                    {
+                        "name": "Masa (kg)",
+                        "key": "mass"
+                    },
+                    {
+                        "name": "Costo ($)",
+                        "key": "cost"
+                    },
+                    {
+                        "name": "Descripción",
+                        "key": "description",
+                        "hidden": true
+                    }
+                ]
             }
-        ],
+        },
         "items": [
             {
+                "id": "professional-equipment",
                 "name": "Professional Equipment",
                 "items": [
                     {
-                        "name": "Chain hoist",
                         "pl": "4",
                         "mass": "20",
                         "cost": "150",
                         "id": "chain-hoist",
-                        "description": "This is a heavy-duty lifting device that uses pulleys, hooks, and clamps. It needs a strong anchor point overhead, and when properly set up can lift as much as 1000 kg."
+                        "name": "Chain Hoist"
                     },
                     {
-                        "name": "Cutting torch",
                         "pl": "5",
                         "mass": "10",
                         "cost": "250",
                         "id": "cutting-torch",
-                        "description": "This high-powered, self-oxidizing torch can slice through steel up to 10 centimeters thick. The Technical Science broad skill is necessary for a character to use a cutting torch correctly."
+                        "name": "Cutting Torch"
                     },
                     {
-                        "name": "Demolitions pack",
                         "pl": "5",
                         "mass": "25",
                         "cost": "750",
                         "id": "demolitions-pack",
-                        "description": "Everything a character needs to blow something up is included in the demolitions pack. The major feature is a pair of 10-kg satchel charges, but 20 meters of primer cord, radio detonators, and wire detonators are also included. This is enough material to bring down an average-size building or bridge, if set up correctly. Additional satchel charges cost $200 each."
+                        "name": "Demolitions Pack"
                     },
                     {
-                        "name": "Generator, portable",
                         "pl": "5",
                         "mass": "25",
                         "cost": "500",
                         "id": "generator-portable",
-                        "description": "The portable generator uses an efficient, self-oxidizing chemical fuel to drive a combustion engine and produce electricity. At PL 7, the generator can produce enough power to meet the needs of an outpost containing 10 people. At PL 8, it is a mass reactor capable of providing power for a group of 100 people."
+                        "name": "Generator Portable"
                     },
                     {
-                        "name": "Instrument pack",
                         "pl": "6",
                         "mass": "15",
                         "cost": "500",
                         "id": "instrument-pack",
-                        "description": "This item comes in several versions, each designed for use with a particular scientific skill. When a scientist is engaged in field work and needs to make a complex skill check to determine if he uncovers a piece of knowledge, having an instrument pack lessens the complexity of the skill check by one grade."
+                        "name": "Instrument Pack"
                     },
                     {
-                        "name": "Rescue pack",
                         "pl": "5",
                         "mass": "20",
                         "cost": "500",
                         "id": "rescue-pack",
-                        "description": "This backpack-sized unit includes a number of useful devices, including two 50-meter nylon ropes, a general toolkit, a first aid kit, two doses of coagulant, a folding stretcher, two insulating blankets, a light-duty cutting torch, a powered grapnel launcher, and a half-dozen pitons."
+                        "name": "Rescue Pack"
                     },
                     {
-                        "name": "Toolkit",
                         "pl": "4",
                         "mass": "10",
                         "cost": "100",
                         "id": "toolkit",
-                        "description": "This collection of implements contains a hammer, pliers, adjustable wrench, screwdrivers, nails, bolts and screws, small clamps, and any other common tool. A toolkit provides a -1 step modifier to Technical Science, invention, juryrig, or repair checks."
+                        "name": "Toolkit"
                     },
                     {
-                        "name": "Toolkit, special",
                         "pl": "5",
                         "mass": "10",
                         "cost": "300",
                         "id": "toolkit-special",
-                        "description": "This is a toolkit designed to support one specific specialty skill under Technical Science, either invention, juryrig, or repair. The specialized toolkit gives the user a -2 bonus to skill checks in that specific field."
+                        "name": "Toolkit Special"
                     },
                     {
-                        "name": "Walker",
                         "pl": "6",
                         "mass": "200",
                         "cost": "2000",
                         "id": "walker",
-                        "description": "The precursor of powered armor, a walker is a heavy-duty construction and cargo handling machine worn by its user like a huge exoskeleton. Its servos and pistons raise the wearer's effective Strength to 18 for purposes of lifting, carrying, or performing heavy labor.<br />The walker is so clumsy and awkward that action checks and combat actions are made with a +3 penalty. The walker's power supply allows 8 hours of heavy work or 16 hours of light work before it needs to be recharged (which takes 4 hours)."
+                        "name": "Walker"
                     },
                     {
-                        "name": "Weight neutralizer",
                         "pl": "7",
                         "mass": "4",
                         "cost": "300",
                         "id": "weight-neutralizer",
-                        "description": "This is a handheld gravity inducer about the size of a hardcover book. It measures the weight of an object it is attached to—which must be made of a substance that is attracted by a magnet—and then generates a perfect counter-field. Under the neutralizer's influence, objects become gravity-neutral.<br />The neutralizer's endurance is 10,000 kg-hours. When its power is depleted, it must be fully recharged (requiring 6 hours) before it can be used again."
+                        "name": "Weight Neutralizer"
                     },
                     {
-                        "name": "Workshop, portable",
                         "pl": "6",
                         "mass": "100",
                         "cost": "1000",
                         "id": "workshop-portable",
-                        "description": "At a mass of 100 kg, the workshop can be stowed in many vehicles. It includes heavy work surfaces, a multipurpose mill and press, a powered table saw and miter, and a variety of other tools. Its principal purpose is to allow a character in a remote area to perform major vehicular repairs.<br />Any complex skill check involving Technical Science or repair is considered to be of Ordinary complexity if the workshop is being used. It takes 1 hour to set up or take down the workshop."
+                        "name": "Workshop Portable"
                     }
-                ],
-                "id": "professional-equipment"
+                ]
             }
         ]
     },
     "communications": {
-        "config": [
-            {
-                "columns": {
-                    "en": [
-                        {
-                            "name": "Item",
-                            "key": "name"
-                        },
-                        {
-                            "name": "PL",
-                            "key": "pl"
-                        },
-                        {
-                            "name": "Mass (kg)",
-                            "key": "mass"
-                        },
-                        {
-                            "name": "Cost ($)",
-                            "key": "cost"
-                        },
-                        {
-                            "name": "Description",
-                            "key": "description",
-                            "hidden": true
-                        }
-                    ],
-                    "es": [
-                        {
-                            "name": "Artículo",
-                            "key": "name"
-                        },
-                        {
-                            "name": "PL",
-                            "key": "pl"
-                        },
-                        {
-                            "name": "Masa (kg)",
-                            "key": "mass"
-                        },
-                        {
-                            "name": "Costo ($)",
-                            "key": "cost"
-                        },
-                        {
-                            "name": "Descripción",
-                            "key": "description",
-                            "hidden": true
-                        }
-                    ]
-                },
-                "id": "default"
+        "config": {
+            "columns": {
+                "en": [
+                    {
+                        "name": "Item",
+                        "key": "name"
+                    },
+                    {
+                        "name": "PL",
+                        "key": "pl"
+                    },
+                    {
+                        "name": "Mass (kg)",
+                        "key": "mass"
+                    },
+                    {
+                        "name": "Cost ($)",
+                        "key": "cost"
+                    },
+                    {
+                        "name": "Description",
+                        "key": "description",
+                        "hidden": true
+                    }
+                ],
+                "es": [
+                    {
+                        "name": "Artículo",
+                        "key": "name"
+                    },
+                    {
+                        "name": "PL",
+                        "key": "pl"
+                    },
+                    {
+                        "name": "Masa (kg)",
+                        "key": "mass"
+                    },
+                    {
+                        "name": "Costo ($)",
+                        "key": "cost"
+                    },
+                    {
+                        "name": "Descripción",
+                        "key": "description",
+                        "hidden": true
+                    }
+                ]
             }
-        ],
+        },
         "items": [
             {
+                "id": "communications",
                 "name": "Communications",
                 "items": [
                     {
-                        "name": "Cellular phone",
                         "pl": "5",
                         "mass": "-",
                         "cost": "100",
                         "id": "cellular-phone",
-                        "description": "This is a low-power transmitter and receiver that sends radio signals to a nearby relay tower. At PL 5, the phone is a large handset with a 100 km range. At PL 6, it is the size of a credit card (500 km range). At PL 7, it is a pin or patch (1,000 km range).<br />Cell phone batteries are rechargeable and last for 1 day of use at PL 5 plus 2 days for each PL beyond that."
+                        "name": "Cellular Phone"
                     },
                     {
-                        "name": "Comm gear",
                         "pl": "7",
                         "mass": "-",
                         "cost": "175",
                         "id": "comm-gear",
-                        "description": "The special frequency-agile transceiver inside this micro-thin headset can cover the entire lower part of the electromagnetic spectrum below microwaves. Comm gear has a 1,000 km range for surface communications and can reach high planetary orbit.<br />A charge cell costs $25 and lasts for 30 days."
+                        "name": "Comm Gear"
                     },
                     {
-                        "name": "Command link",
                         "pl": "5",
                         "mass": "1",
                         "cost": "250",
                         "id": "command-link",
-                        "description": "This is a radio transmitter used to interface with a computer that has a matching receiver."
+                        "name": "Command Link"
                     },
                     {
-                        "name": "Mass transceiver",
                         "pl": "7",
                         "mass": "500",
                         "cost": "40000",
                         "id": "mass-transceiver",
-                        "description": "The ultimate in star system communication, the mass transceiver uses gravity lines to transport cohesive graviton packets. These packets provide instantaneous communication without signal delay or lag.<br />A mass transceiver cannot be used to send signals outside a star system. It requires a portable generator to be functional."
+                        "name": "Mass Transceiver"
                     },
                     {
-                        "name": "Orbital uplink",
                         "pl": "5",
                         "mass": "2",
                         "cost": "200",
                         "id": "orbital-uplink",
-                        "description": "About the size of a dinner plate, this antenna can be trained on orbiting satellites or ships from a planetary surface. It permits a planetwide communication link, even if the user is not in range of ground-based stations."
+                        "name": "Orbital Uplink"
                     },
                     {
-                        "name": "Radio, personal",
                         "pl": "5",
                         "mass": "1",
                         "cost": "175",
                         "id": "radio-personal",
-                        "description": "Also known as a walkie-talkie, this is a durable transceiver with a range of 50 km at PL 5 and 200 km at PL 6. No phone circuits or relay towers are necessary."
+                        "name": "Radio Personal"
                     }
-                ],
-                "id": "communications"
+                ]
             }
         ]
     },
     "sensors": {
-        "config": [
-            {
-                "columns": {
-                    "en": [
-                        {
-                            "name": "Item",
-                            "key": "name"
-                        },
-                        {
-                            "name": "PL",
-                            "key": "pl"
-                        },
-                        {
-                            "name": "Mass (kg)",
-                            "key": "mass"
-                        },
-                        {
-                            "name": "Cost ($)",
-                            "key": "cost"
-                        },
-                        {
-                            "name": "Description",
-                            "key": "description",
-                            "hidden": true
-                        }
-                    ],
-                    "es": [
-                        {
-                            "name": "Artículo",
-                            "key": "name"
-                        },
-                        {
-                            "name": "PL",
-                            "key": "pl"
-                        },
-                        {
-                            "name": "Masa (kg)",
-                            "key": "mass"
-                        },
-                        {
-                            "name": "Costo ($)",
-                            "key": "cost"
-                        },
-                        {
-                            "name": "Descripción",
-                            "key": "description",
-                            "hidden": true
-                        }
-                    ]
-                },
-                "id": "default"
+        "config": {
+            "columns": {
+                "en": [
+                    {
+                        "name": "Item",
+                        "key": "name"
+                    },
+                    {
+                        "name": "PL",
+                        "key": "pl"
+                    },
+                    {
+                        "name": "Mass (kg)",
+                        "key": "mass"
+                    },
+                    {
+                        "name": "Cost ($)",
+                        "key": "cost"
+                    },
+                    {
+                        "name": "Description",
+                        "key": "description",
+                        "hidden": true
+                    }
+                ],
+                "es": [
+                    {
+                        "name": "Artículo",
+                        "key": "name"
+                    },
+                    {
+                        "name": "PL",
+                        "key": "pl"
+                    },
+                    {
+                        "name": "Masa (kg)",
+                        "key": "mass"
+                    },
+                    {
+                        "name": "Costo ($)",
+                        "key": "cost"
+                    },
+                    {
+                        "name": "Descripción",
+                        "key": "description",
+                        "hidden": true
+                    }
+                ]
             }
-        ],
+        },
         "items": [
             {
+                "id": "sensors",
                 "name": "Sensors",
                 "items": [
                     {
-                        "name": "Audiorecorder",
                         "pl": "5",
                         "mass": "1",
                         "cost": "50",
                         "id": "audiorecorder",
-                        "description": "A device for recording sound waves on various media. Sizes range from Man-sized units to pocket microrecorders."
+                        "name": "Audiorecorder"
                     },
                     {
-                        "name": "Binoculars",
                         "pl": "4",
                         "mass": "1",
                         "cost": "225",
                         "id": "binoculars",
-                        "description": "Magnifies distant images 25 times. An object 500 meters away examined as if it were only 20 meters away."
+                        "name": "Binoculars"
                     },
                     {
-                        "name": "Compass",
                         "pl": "3",
                         "mass": "-",
                         "cost": "25",
                         "id": "compass",
-                        "description": "A magnetic compass points to the planetary magnetic poles. The inertial compass developed at PL 6 ($100) uses a gyroscope to indicate true north. Using a compass provides a -1 bonus to surface navigation checks."
+                        "name": "Compass"
                     },
                     {
-                        "name": "Goggles, imaging",
                         "pl": "5",
                         "mass": "2",
                         "cost": "300",
                         "id": "goggles-imaging",
-                        "description": "Gathers and intensifies existing light to improve night vision. Reduces penalties for low illumination by 2 steps. Imposes a +1 penalty on Awareness checks due to limited field of vision."
+                        "name": "Goggles Imaging"
                     },
                     {
-                        "name": "Goggles, infrared",
                         "pl": "5",
                         "mass": "5",
                         "cost": "250",
                         "id": "goggles-infrared",
-                        "description": "Converts infrared light to visible light. Provides a 3-step penalty reduction in darkness and a -1 bonus to spot targets by their temperature signature."
+                        "name": "Goggles Infrared"
                     },
                     {
-                        "name": "GPS receiver",
                         "pl": "5",
                         "mass": "-",
                         "cost": "150",
                         "id": "gps-receiver",
-                        "description": "Uses satellite signals to compute exact position and elevation. Provides a -2 bonus on surface navigation checks."
+                        "name": "Gps Receiver"
                     },
                     {
-                        "name": "Holorecorder",
                         "pl": "7",
                         "mass": "1",
                         "cost": "1200",
                         "id": "holorecorder",
-                        "description": "Records holographic images on disks. At least two devices are needed to record a full scene. Range from shoulder-mounted to optical implants."
+                        "name": "Holorecorder"
                     },
                     {
-                        "name": "Microphone, para.",
                         "pl": "5",
                         "mass": "3",
                         "cost": "375",
                         "id": "microphone-para",
-                        "description": "A parabolic dish that amplifies distant sounds by a factor of 25. Provides a -2 bonus to sound-based Awareness checks."
+                        "name": "Microphone Para"
                     },
                     {
-                        "name": "Psi-detector",
                         "pl": "6",
                         "mass": "4",
                         "cost": "2500",
                         "id": "psi-detector",
-                        "description": "Concealable and portable device capable of pinpointing psionic activity within 100 meters. Requires a successful System Operation-sensors skill check to operate."
+                        "name": "Psi Detector"
                     },
                     {
-                        "name": "Radar gauntlet",
                         "pl": "7",
                         "mass": "7",
                         "cost": "350",
                         "id": "radar-gauntlet",
-                        "description": "A small phased-array radar system. Can detect metallic or rocky objects (vehicles, aircraft, powered armor) within 5 km on the surface or 100 km in the air."
+                        "name": "Radar Gauntlet"
                     },
                     {
-                        "name": "Sensor boom",
                         "pl": "5",
                         "mass": "1",
                         "cost": "75",
                         "id": "sensor-boom",
-                        "description": "A telescoping pole (1 to 5 meters) for scouting small spaces or peering around corners without risking life and limb."
+                        "name": "Sensor Boom"
                     },
                     {
-                        "name": "Sensor gauntlet",
                         "pl": "7",
                         "mass": "7",
                         "cost": "725",
                         "id": "sensor-gauntlet",
-                        "description": "Combines a broadband electromagnetic scanner, a spectrometer, and a chemical sniffer. Provides a -1 bonus to Life Science, Physical Science, Awareness, and Investigate checks."
+                        "name": "Sensor Gauntlet"
                     },
                     {
-                        "name": "Surveillance gear",
                         "pl": "5",
                         "mass": "-",
                         "cost": "250",
                         "id": "surveillance-gear",
-                        "description": "Includes contact, tubular, and wireless microphones, radio scramblers, sonic trackers (-1 bonus to Awareness), and signal tracers (12 km range)."
+                        "name": "Surveillance Gear"
                     },
                     {
-                        "name": "Videorecorder",
                         "pl": "5",
                         "mass": "-",
                         "cost": "500",
                         "id": "videorecorder",
-                        "description": "Device for recording video images. Ranges from shoulder-steadied to microrecorders for helmet mounting."
+                        "name": "Videorecorder"
                     },
                     {
-                        "name": "Weapon detector",
                         "pl": "6",
                         "mass": "-",
                         "cost": "125",
                         "id": "weapon-detector",
-                        "description": "Handheld device using a magnetic resonating field and chemical sniffer to detect weapons or explosives at 1 meter range. Provides a -2 bonus to spot dense objects."
+                        "name": "Weapon Detector"
                     }
-                ],
-                "id": "sensors"
+                ]
             }
         ]
     },
     "general_gear": {
-        "config": [
-            {
-                "columns": {
-                    "en": [
-                        {
-                            "name": "Item",
-                            "key": "name"
-                        },
-                        {
-                            "name": "PL",
-                            "key": "pl"
-                        },
-                        {
-                            "name": "Mass (kg)",
-                            "key": "mass"
-                        },
-                        {
-                            "name": "Cost ($)",
-                            "key": "cost"
-                        },
-                        {
-                            "name": "Description",
-                            "key": "description",
-                            "hidden": true
-                        }
-                    ],
-                    "es": [
-                        {
-                            "name": "Artículo",
-                            "key": "name"
-                        },
-                        {
-                            "name": "PL",
-                            "key": "pl"
-                        },
-                        {
-                            "name": "Masa (kg)",
-                            "key": "mass"
-                        },
-                        {
-                            "name": "Costo ($)",
-                            "key": "cost"
-                        },
-                        {
-                            "name": "Descripción",
-                            "key": "description",
-                            "hidden": true
-                        }
-                    ]
-                },
-                "id": "default"
+        "config": {
+            "columns": {
+                "en": [
+                    {
+                        "name": "Item",
+                        "key": "name"
+                    },
+                    {
+                        "name": "PL",
+                        "key": "pl"
+                    },
+                    {
+                        "name": "Mass (kg)",
+                        "key": "mass"
+                    },
+                    {
+                        "name": "Cost ($)",
+                        "key": "cost"
+                    },
+                    {
+                        "name": "Description",
+                        "key": "description",
+                        "hidden": true
+                    }
+                ],
+                "es": [
+                    {
+                        "name": "Artículo",
+                        "key": "name"
+                    },
+                    {
+                        "name": "PL",
+                        "key": "pl"
+                    },
+                    {
+                        "name": "Masa (kg)",
+                        "key": "mass"
+                    },
+                    {
+                        "name": "Costo ($)",
+                        "key": "cost"
+                    },
+                    {
+                        "name": "Descripción",
+                        "key": "description",
+                        "hidden": true
+                    }
+                ]
             }
-        ],
+        },
         "items": [
             {
-                "name": "Survival and Miscellaneous Gear",
+                "id": "survival-and-miscellaneous-gear",
+                "name": "Survival And Miscellaneous Gear",
                 "items": [
                     {
-                        "name": "Bedroll",
-                        "pl": "2",
-                        "mass": "4",
-                        "cost": "25",
-                        "id": "bedroll",
-                        "description": "Range from simple blankets to inflatable, battery-warmed beds depending on Progress Level."
-                    },
-                    {
-                        "name": "Boots, magnetic",
-                        "pl": "6",
-                        "mass": "4",
-                        "cost": "350",
-                        "id": "boots-magnetic",
-                        "description": "Allows walking on magnetic surfaces in zero gravity. Magnets can hold a mass of 200 kg. Battery lasts 24 hours."
-                    },
-                    {
-                        "name": "Cabin, portable",
-                        "pl": "7",
-                        "mass": "40",
-                        "cost": "650",
-                        "id": "cabin-portable",
-                        "description": "Backpack-sized unit that deploys into a 4m x 3m cabin. Includes camping unit and bedrolls. Not airtight."
-                    },
-                    {
-                        "name": "Camping unit",
-                        "pl": "6",
-                        "mass": "10",
-                        "cost": "300",
-                        "id": "camping-unit",
-                        "description": "Combines a portable stove, heater, air conditioner, and refrigerator. Power lasts 2 weeks."
-                    },
-                    {
-                        "name": "Candle",
-                        "pl": "1",
-                        "mass": "1",
-                        "cost": "-",
-                        "id": "candle",
-                        "description": "combustible cylinder providing light in a 2-3 meter radius. High PL versions burn for 1-2 days."
-                    },
-                    {
-                        "name": "Climate weave",
-                        "pl": "7",
-                        "mass": "-",
-                        "cost": "Cost x 2",
-                        "id": "climate-weave",
-                        "description": "Fabric containing passive heating and cooling elements. Keeps wearer comfortable from -40°C to 60°C without power."
-                    },
-                    {
-                        "name": "Climbing gear",
-                        "pl": "4",
-                        "mass": "10",
-                        "cost": "100",
-                        "id": "climbing-gear",
-                        "description": "Includes 50m rope, piton hammer, 20 pitons, rappelling belt, and ax. Provides a -3 bonus to climbing checks."
-                    },
-                    {
-                        "name": "Cooler",
-                        "pl": "4",
-                        "mass": "5",
-                        "cost": "50",
-                        "id": "cooler",
-                        "description": "Portable refrigerant unit for medical supplies or perishables. Battery lasts 48 hours."
-                    },
-                    {
-                        "name": "Emergency beacon",
-                        "pl": "5",
-                        "mass": "10",
-                        "cost": "200",
-                        "id": "emergency-beacon",
-                        "description": "Transmitter that broadcasts a homing signal detectable from orbit. Battery lasts 3 months."
-                    },
-                    {
-                        "name": "E-suit, soft",
-                        "pl": "5",
-                        "mass": "10",
-                        "cost": "2500",
-                        "id": "e-suit-soft",
-                        "description": "Bulky suit with life-support for spacers. Protects in H3 heat and P4 pressure. Armor equivalent to a battle vest."
-                    },
-                    {
-                        "name": "E-suit, hard",
-                        "pl": "6",
-                        "mass": "20",
-                        "cost": "4000",
-                        "id": "e-suit-hard",
-                        "description": "Environment suit with polymere plates for H4 heat and P4 pressure. Armor equivalent to heavy assault gear."
-                    },
-                    {
-                        "name": "Flashlight",
-                        "pl": "4",
-                        "mass": "1",
-                        "cost": "25",
-                        "id": "flashlight",
-                        "description": "Battery-powered light. PL 5+ models include pinpoint beams or ultraviolet rays. Battery lasts 1 week."
-                    },
-                    {
-                        "name": "Habitat dome",
-                        "pl": "6",
-                        "mass": "50",
-                        "cost": "1500",
-                        "id": "habitat-dome",
-                        "description": "Airtight, insulated 4m dome for sparse atmospheres. Includes beacon, rations, and water purifier."
-                    },
-                    {
-                        "name": "Jumpsuit",
-                        "pl": "6",
-                        "mass": "3",
-                        "cost": "750",
-                        "id": "jumpsuit",
-                        "description": "Shipboard coverall with vacuum mask and seals. Protects against decompression for 1 hour in open space."
-                    },
-                    {
-                        "name": "Animal, guard",
                         "pl": "1",
                         "mass": "varies",
                         "cost": "varies",
                         "id": "animal-guard",
-                        "description": "Trained attack dogs or similar. Requires Animal Handling skill to control effectively."
+                        "name": "Animal Guard"
                     },
                     {
-                        "name": "Biolock",
+                        "pl": "2",
+                        "mass": "4",
+                        "cost": "25",
+                        "id": "bedroll",
+                        "name": "Bedroll"
+                    },
+                    {
                         "pl": "6",
                         "mass": "-",
                         "cost": "100",
                         "id": "biolock",
-                        "description": "Keyless padlock recognizing bioelectric signatures. Extremely difficult to pick. Has armor rating and durability."
+                        "name": "Biolock"
                     },
                     {
-                        "name": "Handcuffs",
+                        "pl": "6",
+                        "mass": "4",
+                        "cost": "350",
+                        "id": "boots-magnetic",
+                        "name": "Boots Magnetic"
+                    },
+                    {
+                        "pl": "7",
+                        "mass": "40",
+                        "cost": "650",
+                        "id": "cabin-portable",
+                        "name": "Cabin Portable"
+                    },
+                    {
+                        "pl": "6",
+                        "mass": "10",
+                        "cost": "300",
+                        "id": "camping-unit",
+                        "name": "Camping Unit"
+                    },
+                    {
+                        "pl": "1",
+                        "mass": "1",
+                        "cost": "-",
+                        "id": "candle",
+                        "name": "Candle"
+                    },
+                    {
+                        "pl": "7",
+                        "mass": "-",
+                        "cost": "Cost x 2",
+                        "id": "climate-weave",
+                        "name": "Climate Weave"
+                    },
+                    {
+                        "pl": "4",
+                        "mass": "10",
+                        "cost": "100",
+                        "id": "climbing-gear",
+                        "name": "Climbing Gear"
+                    },
+                    {
+                        "pl": "4",
+                        "mass": "5",
+                        "cost": "50",
+                        "id": "cooler",
+                        "name": "Cooler"
+                    },
+                    {
+                        "pl": "6",
+                        "mass": "20",
+                        "cost": "4000",
+                        "id": "e-suit-hard",
+                        "name": "E Suit Hard"
+                    },
+                    {
+                        "pl": "5",
+                        "mass": "10",
+                        "cost": "2500",
+                        "id": "e-suit-soft",
+                        "name": "E Suit Soft"
+                    },
+                    {
+                        "pl": "5",
+                        "mass": "10",
+                        "cost": "200",
+                        "id": "emergency-beacon",
+                        "name": "Emergency Beacon"
+                    },
+                    {
+                        "pl": "4",
+                        "mass": "1",
+                        "cost": "25",
+                        "id": "flashlight",
+                        "name": "Flashlight"
+                    },
+                    {
+                        "pl": "6",
+                        "mass": "50",
+                        "cost": "1500",
+                        "id": "habitat-dome",
+                        "name": "Habitat Dome"
+                    },
+                    {
                         "pl": "4",
                         "mass": "1",
                         "cost": "50",
                         "id": "handcuffs",
-                        "description": "Restraints that impose a +3 penalty to actions. PL 6 binders impose a +3 to +5 penalty and cost significantly more."
+                        "name": "Handcuffs"
                     },
                     {
-                        "name": "Holoviewer",
                         "pl": "7",
                         "mass": "3",
                         "cost": "500",
                         "id": "holoviewer",
-                        "description": "Projector for high-quality 3D holographic images using force field technology. Includes audio and odor emitters."
+                        "name": "Holoviewer"
                     },
                     {
-                        "name": "Psi-restraint (Helmet)",
                         "pl": "6",
-                        "mass": "2",
-                        "cost": "1200",
-                        "id": "psi-restraint-helmet",
-                        "description": "fitted with neural interference circuits that add a +4 penalty to psionic powers and a +1 penalty to Intelligence checks."
+                        "mass": "3",
+                        "cost": "750",
+                        "id": "jumpsuit",
+                        "name": "Jumpsuit"
                     },
                     {
-                        "name": "Psi-restraint (Collar)",
                         "pl": "6",
                         "mass": "1",
                         "cost": "1700",
                         "id": "psi-restraint-collar",
-                        "description": "Necklace restraint with same penalties as helmet; explodes or signals if tampered with."
+                        "name": "Psi Restraint Collar"
                     },
                     {
-                        "name": "Psi-restraint (Implant)",
+                        "pl": "6",
+                        "mass": "2",
+                        "cost": "1200",
+                        "id": "psi-restraint-helmet",
+                        "name": "Psi Restraint Helmet"
+                    },
+                    {
                         "pl": "6",
                         "mass": "-",
                         "cost": "3500",
                         "id": "psi-restraint-implant",
-                        "description": "Base-of-skull implant regulating psionic power with settings up to a +5 penalty."
+                        "name": "Psi Restraint Implant"
                     }
-                ],
-                "id": "survival-and-miscellaneous-gear"
+                ]
             }
         ]
     },
     "services": {
-        "config": [
-            {
-                "columns": {
-                    "en": [
-                        {
-                            "name": "Item",
-                            "key": "name"
-                        },
-                        {
-                            "name": "PL",
-                            "key": "pl"
-                        },
-                        {
-                            "name": "Mass (kg)",
-                            "key": "mass"
-                        },
-                        {
-                            "name": "Cost ($)",
-                            "key": "cost"
-                        },
-                        {
-                            "name": "Description",
-                            "key": "description",
-                            "hidden": true
-                        }
-                    ],
-                    "es": [
-                        {
-                            "name": "Item",
-                            "key": "name"
-                        },
-                        {
-                            "name": "PL",
-                            "key": "pl"
-                        },
-                        {
-                            "name": "Mass (kg)",
-                            "key": "mass"
-                        },
-                        {
-                            "name": "Cost ($)",
-                            "key": "cost"
-                        },
-                        {
-                            "name": "Description",
-                            "key": "description",
-                            "hidden": true
-                        }
-                    ]
-                },
-                "id": "default"
+        "config": {
+            "columns": {
+                "en": [
+                    {
+                        "name": "Item",
+                        "key": "name"
+                    },
+                    {
+                        "name": "PL",
+                        "key": "pl"
+                    },
+                    {
+                        "name": "Mass (kg)",
+                        "key": "mass"
+                    },
+                    {
+                        "name": "Cost ($)",
+                        "key": "cost"
+                    },
+                    {
+                        "name": "Description",
+                        "key": "description",
+                        "hidden": true
+                    }
+                ],
+                "es": [
+                    {
+                        "name": "Item",
+                        "key": "name"
+                    },
+                    {
+                        "name": "PL",
+                        "key": "pl"
+                    },
+                    {
+                        "name": "Mass (kg)",
+                        "key": "mass"
+                    },
+                    {
+                        "name": "Cost ($)",
+                        "key": "cost"
+                    },
+                    {
+                        "name": "Description",
+                        "key": "description",
+                        "hidden": true
+                    }
+                ]
             }
-        ],
+        },
         "items": [
             {
+                "id": "services",
                 "name": "Services",
                 "items": [
                     {
-                        "name": "Ambulance",
                         "pl": "4",
                         "mass": "-",
                         "cost": "300",
                         "id": "ambulance",
-                        "description": "Emergency transport with technicians trained in first aid and Medical Science to stabilize mortally wounded patients."
+                        "name": "Ambulance"
                     },
                     {
-                        "name": "Car rental",
                         "pl": "5",
                         "mass": "-",
                         "cost": "50/day",
                         "id": "car-rental",
-                        "description": "Temporary use of personal vehicles in urban centers. Surcharges for fuel and insurance apply."
+                        "name": "Car Rental"
                     },
                     {
-                        "name": "Charter driveship",
                         "pl": "7",
                         "mass": "-",
                         "cost": "2000/day",
                         "id": "charter-driveship",
-                        "description": "Hiring a stardrive-equipped vessel for custom interstellar travel. Includes the services of a pilot."
+                        "name": "Charter Driveship"
                     },
                     {
-                        "name": "Comm call, interstellar",
                         "pl": "7",
                         "mass": "-",
                         "cost": "10000/minute",
                         "id": "comm-call-interstellar",
-                        "description": "Communication using expensive drivesats to relay message capsules across light-years; subject to 11-hour delays."
+                        "name": "Comm Call Interstellar"
                     },
                     {
-                        "name": "Lawyer",
                         "pl": "4",
                         "mass": "-",
                         "cost": "300/hour",
                         "id": "lawyer",
-                        "description": "Legal representation for criminal or civil matters. Famous lawyers charge significantly more."
+                        "name": "Lawyer"
                     },
                     {
-                        "name": "Medical, surgery",
                         "pl": "4",
                         "mass": "-",
                         "cost": "5000",
                         "id": "medical-surgery",
-                        "description": "Professional intervention for mortal damage. State-of-the-art facilities provide a -3 bonus to skill checks."
+                        "name": "Medical Surgery"
                     },
                     {
-                        "name": "Travel, interstellar",
                         "pl": "7",
                         "mass": "-",
                         "cost": "200 + 100/ly",
                         "id": "travel-interstellar",
-                        "description": "Commercial cruisers linking star systems. Smaller vessels cover 5 ly; large cruisers carry 1,000+ passengers."
+                        "name": "Travel Interstellar"
                     }
-                ],
-                "id": "services"
+                ]
             }
         ]
     }
