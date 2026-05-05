@@ -6,27 +6,22 @@ type = "skill"
 layout = "list"
 +++
 
-Esta habilidad general proporciona a un personaje conocimiento de los protocolos para tratar CON pandillas, gente de la calle y organizaciones criminales. Mide la capacidad de un personaje para negociar y establecer contacto CON el reino del criminal de "cuello azul" (delincuencia común). Callejeo y sus especialidades son habilidades de encuentro.
-### Escasez y Legalidad
-Los modificadores de situación dependen del objeto o servicio buscado, su legalidad y la conexión CON grupos ilegales:
-- **Marginal:** sin penalización.
-- **Ordinario:** penalización de +1.
-- **Bueno:** penalización de +2.
-- **Asombroso:** penalización de +3.
+Esta amplia habilidad proporciona al personaje un conocimiento general de los protocolos de "la calle". Mide la capacidad de un personaje para negociar y establecer contacto CON el ámbito del crimen obrero, las pandillas y los traficantes ilícitos. Callejeo y sus especialidades son las habilidades de encuentro.
+### Modificadores de situación de Callejeo
+| Condición | Modificador | | :--- | :--- | | La sociedad no tiene ley | -3 pasos | | La sociedad tiene buena ley | +2 pasos | | La sociedad tiene una ley asombrosa | +3 pasos | | Pertenece a un grupo similar | -1 paso | | Pertenece al mismo grupo | -2 pasos | | Pertenece al grupo opuesto | +3 pasos | | Tiene contacto local | -1 paso | | Tiene ventaja de reputación | -1 paso | | Es un obvio extraño | +1 paso | | Tiene defecto de infamia | +1 paso | | Busca asistencia ordinaria | -1 paso | | Busca buena asistencia | +2 pasos | | Busca asistencia increíble | +4 pasos |
 
 ## Habilidades de Especialidad
 {{< specialty attr="VOL" untrained="yes" cost="3" >}}
 
-{{% list %}}
-- **Elementos Criminales:** Establecer contacto y tratar CON el crimen organizado, criminales profesionales y pandillas.
-- **Conocimiento de la Calle:** Familiaridad CON el funcionamiento interno de una organización o área geográfica en particular.
+Esta habilidad permite al personaje mejorar su familiaridad CON el funcionamiento interno de una organización o área geográfica en particular. A diferencia de otras especialidades, se debe comprar por separado para cada organización o área (por ejemplo, **Street Knowledge—Alpha Colony** o
+**Conocimiento callejero: The Void Syndicate**). Un personaje necesita comprar esta especialidad dos veces para familiarizarse CON cómo se hacen las cosas en una organización interestelar o sindicato interestelar específico.
 
 ---
 
 ## Criminal elements
 {{< specialty attr="VOL" untrained="yes" cost="5" >}}
 
-This Especialidad represents a Personaje''s ability to make contact with and deal with those who are considered part of the criminal element—organized crime, professional criminals, street gangs, and underworld organizations. Whenever a Personaje tries to locate or interact with these groups, he uses this skill.
+Esta habilidad especial representa la capacidad de un personaje para establecer contacto y tratar CON aquellos que se consideran parte del elemento criminal: crimen organizado, delincuentes profesionales, pandillas callejeras y organizaciones del hampa. Siempre que un personaje intenta localizar o interactuar CON estos grupos, utiliza esta habilidad.
 
 ---
 

@@ -1,0 +1,337 @@
+items:
+  alien-artifact:
+    bonus_points: '+5'
+    ability: '-'
+    localized:
+    - en:
+        name: Alien Artifact
+        description: 'An alien artifact is a strange device or relic that the character doesn''t know anything about. It could be an object of alien origin, or a one-of-a-kind experimental gadget, or even an experimental process used on the character at some point in the past. Somewhere in his travels, the character came to possess the artifact or the abilities it provides. Any alien artifact that is an item is small enough to be easily carried around or worn as an accessory to a character''s outfit. The character doesn''t know his item’s function or purpose; he has to discover exactly what the artifact does as the campaign progresses.
+
+
+          As a flaw, an alien artifact provides mostly disadvantages to a character—but every artifact also has its positive side. Some artifacts provide a constant penalty; others require that the character make a check to activate the artifact. All artifacts, perk or flaw, have the same distinguishing trait: they are extremely rare, exceedingly valuable, and highly coveted—someone wants the one your character possesses, and that someone will stop at nothing to get it.
+
+
+          As for an artifact’s positive side, that can range from an unknown perk that manifests when the character least expects it to a simple bonus that is constantly in play even while the artifact is penalizing the character in some manner. Note that a benefit will never cancel out a penalty—the two aspects of an artifact will always be unrelated. (So, you won''t find an artifact that provides a character with a +1 penalty to the use of Dexterity-based skills and a -1 bonus to the use of Dexterity-based skills at the same time.)
+
+
+          Alien artifacts are listed and described in the Gamemaster Guide. After you select this flaw, the Gamemaster will design an alien artifact for your character.'
+    - es:
+        name: Artefacto alienígena
+        description: 'Un artefacto alienígena es un dispositivo o reliquia extraño del que el personaje no sabe nada. Podría ser un objeto de origen extraterrestre, un dispositivo experimental único en su tipo o incluso un proceso experimental utilizado en el personaje en algún momento del pasado. En algún momento de sus viajes, el personaje llegó a poseer el artefacto o las habilidades que este proporciona. Cualquier artefacto alienígena que sea un objeto es lo suficientemente pequeño como para transportarlo fácilmente o usarlo como accesorio del atuendo de un personaje. El personaje no conoce la función o el propósito de su objeto; tiene que descubrir exactamente qué hace el artefacto a medida que avanza la campaña.
+
+
+          Como defecto, un artefacto alienígena proporciona principalmente desventajas a un personaje, pero cada artefacto también tiene su lado positivo. Algunos artefactos imponen una penalización constante; otros requieren que el personaje haga una prueba para activar el artefacto. Todos los artefactos, ventajas o defectos, tienen el mismo rasgo distintivo: son extremadamente raros, extremadamente valiosos y muy codiciados: alguien quiere el que posee su personaje y no se detendrá ante nada para conseguirlo.
+
+
+          En cuanto al lado positivo de un artefacto, puede variar desde una ventaja desconocido que se manifiesta cuando el personaje menos lo espera hasta una simple bonificación que está constantemente en juego incluso cuando el artefacto está penalizando al personaje de alguna manera. Tenga en cuenta que una ventaja nunca cancelará una penalización: los dos aspectos de un artefacto siempre no estarán relacionados. (Por lo tanto, no encontrarás un artefacto que proporcione a un personaje una penalización de +1 al uso de habilidades basadas en Destreza y una bonificación de -1 al uso de habilidades basadas en Destreza al mismo tiempo).
+
+
+          Los artefactos alienígenas se enumeran y describen en la Guía del Gamemaster. Después de seleccionar este defecto, el Gamemaster diseñará un artefacto alienígena para tu personaje.'
+  bad-luck:
+    bonus_points: '+6'
+    ability: WIL
+    localized:
+    - en:
+        name: Bad Luck
+        description: A character with this flaw suffers a Critical Failure result whenever a 19 or 20 comes up on the control die.
+    - es:
+        name: Mala suerte
+        description: Un personaje con este defecto sufre un resultado de Fallo Crítico cada vez que sale un 19 o 20 en el dado de control.
+  clueless:
+    bonus_points: +2/4/6
+    ability: INT
+    localized:
+    - en:
+        name: Clueless
+        description: 'A character with the Clueless flaw thinks he''s proficient in a particular specialty skill, when in fact he''s not as good as he thinks he is. The specialty skill is chosen by the Gamemaster secretly—the character must discover the fact that he''s clueless over the course of the campaign, and he may not ever realize it at all. The chosen specialty skill is never one that’s associated with a character''s profession; it will either be a skill from the Open group or from one of the other profession groups.
+
+          * For 2 bonus skill points, the character receives a +1 penalty to the skill in question.
+
+          * For 4 bonus skill points, the character receives a +2 penalty to the skill in question.
+
+          * For 6 bonus skill points, the character receives a +3 penalty to the skill in question.'
+    - es:
+        name: Despistado
+        description: 'Un personaje con el defecto Clueless cree que es competente en una habilidad especial en particular, cuando en realidad no es tan bueno como cree. La habilidad especial la elige el Gamemaster en secreto: el personaje debe descubrir el hecho de que no tiene ni idea durante el transcurso de la campaña, y es posible que nunca se dé cuenta. La habilidad especializada elegida nunca está asociada con la profesión de un personaje; será una habilidad del grupo Abierto o de uno de los otros grupos de profesión.
+
+          * Por 2 puntos de habilidad adicionales, el personaje recibe una penalización de +1 a la habilidad en cuestión.
+
+          * Por 4 puntos de habilidad adicionales, el personaje recibe una penalización de +2 a la habilidad en cuestión.
+
+          * Por 6 puntos de habilidad adicionales, el personaje recibe una penalización de +3 a la habilidad en cuestión.'
+  clumsy:
+    bonus_points: '+6'
+    ability: DEX
+    localized:
+    - en:
+        name: Clumsy
+        description: A character with the Clumsy flaw has poor coordination and an unsteady hand. He receives a +1 penalty to all Dexterity-based skill checks.
+    - es:
+        name: Torpe
+        description: Un personaje con el defecto de Torpe tiene poca coordinación y mano inestable. Recibe una penalización de +1 a todas las pruebas de habilidad basadas en Destreza.
+  code-of-honor:
+    bonus_points: '+3'
+    ability: WIL
+    localized:
+    - en:
+        name: Code of Honor
+        description: 'The Code of Honor flaw represents a standard the character decides to live by. A Code of Honor must have real consequences to the life of the character and the campaign in general, and living up to the code shouldn''t always be easy or even the right decision. A Code of Honor that requires a character to attack any evil aliens he meets isn''t that much of a burden, but defending all aliens in a human-dominated galaxy is.
+
+
+          The player and the Gamemaster need to work out the character''s Code of Honor when this flaw is selected. They should also discuss the types of events that might trigger the character''s overblown sense of duty, honor, and commitment.
+
+
+          Examples of characters who have codes of honor that could be flaws include clergymen, law enforcers, government officials, business administrators, and doctors. The achievement points a character receives for participating in an adventure can be reduced if this flaw isn''t roleplayed as part of the character''s basic makeup.'
+    - es:
+        name: Código de honor
+        description: 'El defecto del Código de Honor representa un estándar según el cual el personaje decide vivir. Un Código de Honor debe tener consecuencias reales para la vida del personaje y la campaña en general, y cumplir con el código no siempre debería ser fácil o incluso la decisión correcta. Un Código de Honor que requiere que un personaje ataque a cualquier alienígena malvado que encuentre no es una gran carga, pero defender a todos los alienígenas en una galaxia dominada por humanos sí lo es.
+
+
+          El jugador y el Gamemaster deben elaborar el Código de Honor del personaje cuando se selecciona este defecto. También deben discutir los tipos de eventos que podrían desencadenar el exagerado sentido del deber, el honor y el compromiso del personaje.
+
+
+          Ejemplos de personajes que tienen códigos de honor que podrían ser defectos incluyen clérigos, agentes de la ley, funcionarios gubernamentales, administradores de empresas y médicos. Los puntos de logro que recibe un personaje por participar en una aventura se pueden reducir si este defecto no se interpreta como parte de la composición básica del personaje.'
+  delicate:
+    bonus_points: '+3'
+    ability: STR
+    localized:
+    - en:
+        name: Delicate
+        description: A character with the Delicate flaw suffers 1 point of stun damage whenever he makes a successful Unarmed Attack against an opponent. If the character suffers enough stun damage to leave him with less than half of his stun points, he can't attempt an Unarmed Attack—he must regain a number of stun points sufficient to bring him back to the halfway mark (at least) before he can use the skill again.
+    - es:
+        name: Delicado
+        description: Un personaje con el defecto Delicado sufre 1 punto de daño por aturdimiento cada vez que realiza un ataque desarmado exitoso contra un oponente. Si el personaje sufre suficiente daño por aturdimiento como para dejarlo con menos de la mitad de sus puntos de aturdimiento, no puede intentar un ataque sin armas; debe recuperar una cantidad de puntos de aturdimiento suficiente para regresar a la mitad del camino (al menos) antes de que pueda usar la habilidad nuevamente.
+  dirt-poor:
+    bonus_points: '+5'
+    ability: PER
+    localized:
+    - en:
+        name: Dirt Poor
+        description: 'The Dirt Poor flaw suggests a lot about a character''s background and usually indicates an impoverished upbringing. This flaw influences a character’s starting funds, as detailed in Chapter 9: Goods & Services. In addition, it adds a +1 penalty to any use of the character''s Personality-based skills when he tries to deal with situations involving characters from a higher social or financial standing.
+
+
+          The Gamemaster also determines a character (not another character) to whom the character owes money. As the campaign progresses, the character must make payments to this character to remain in good standing. How this works in a particular campaign is left to the Gamemaster.'
+    - es:
+        name: Muy pobre
+        description: 'El defecto Dirt Poor sugiere mucho sobre los antecedentes de un personaje y generalmente indica una educación empobrecida. Este defecto influye en los fondos iniciales de un personaje, como se detalla en el Capítulo 9: Bienes y servicios. Además, añade una penalización de +1 a cualquier uso de las habilidades basadas en la personalidad del personaje cuando intenta lidiar con situaciones que involucran personajes de una posición social o financiera más alta.
+
+
+          El director de juego también determina un personaje (no otro personaje) a quien el personaje le debe dinero. A medida que avanza la campaña, el personaje debe realizar pagos a este personaje para mantenerse al día. Cómo funciona esto en una campaña particular queda en manos del Director de Juego.'
+  forgetful:
+    bonus_points: '+5'
+    ability: INT
+    localized:
+    - en:
+        name: Forgetful
+        description: A character with the Forgetful flaw has trouble remembering details—his recollection of a name, face, or fact has a tendency to slip away when the character needs it most. A Forgetful character receives a +1 penalty to all Intelligence-based skill checks.
+    - es:
+        name: Olvidadizo
+        description: 'Un personaje con el defecto Olvidadizo tiene problemas para recordar detalles: su recuerdo de un nombre, rostro o hecho tiende a desaparecer cuando el personaje más lo necesita. Un personaje olvidadizo recibe una penalización de +1 a todas las pruebas de habilidades basadas en Inteligencia.'
+  fragile:
+    bonus_points: '+3'
+    ability: CON
+    localized:
+    - en:
+        name: Fragile
+        description: A character with the Fragile flaw is hampered by a +1 penalty to all Stamina-endurance skill checks he makes as a result of damage he has suffered.
+    - es:
+        name: Frágil
+        description: Un personaje con el defecto Frágil se ve obstaculizado por una penalización de +1 a todas las pruebas de habilidad de resistencia que realice como resultado del daño que ha sufrido.
+  infamy:
+    bonus_points: +2/4/6
+    ability: PER
+    localized:
+    - en:
+        name: Infamy
+        description: 'Infamy is a state of being publicly known for an evil or criminal act. The player and the Gamemaster need to agree on what the character is infamous for (it could be trumped-up charges, or the character can have a genuinely shady past) and what triggers the flaw. It could be a phrase the character always says, or the weapon he uses, or when he’s in the presence of a particular alien species or a member of a particular nation. Once recognized for his Infamy, a character suffers penalties to the use of Personality-based skills and may even wind up hunted or in a battle.
+
+          * For 2 bonus skill points, a character is infamous for a minor crime or is known throughout a small area of the campaign setting. He receives a +1 penalty to all Personality-based skill checks.
+
+          * For 4 bonus skill points, a character is infamous for a moderate crime or is known throughout a moderate-sized area of the campaign setting. He receives a +2 penalty to all Personality-based skill checks.
+
+          * For 6 bonus skill points, a character is infamous for a severe crime or is known throughout a large area of the campaign setting. He receives a +3 penalty to all Personality-based skill checks when this flaw is triggered.'
+    - es:
+        name: Infamia
+        description: 'La infamia es el estado de ser conocido públicamente por un acto malvado o criminal. El jugador y el director de juego deben ponerse de acuerdo sobre por qué el personaje es famoso (podrían ser cargos falsos o el personaje puede tener un pasado genuinamente turbio) y qué desencadena el defecto. Podría ser una frase que el personaje siempre dice, o el arma que usa, o cuando está en presencia de una especie alienígena en particular o un miembro de una nación en particular. Una vez reconocido por su infamia, un personaje sufre penalizaciones por el uso de habilidades basadas en la personalidad e incluso puede terminar perseguido o en una batalla.
+
+          * Por 2 puntos de habilidad adicionales, un personaje es infame por un delito menor o es conocido en una pequeña área del escenario de la campaña. Recibe una penalización de +1 a todas las pruebas de habilidades basadas en la personalidad.
+
+          * Por 4 puntos de habilidad adicionales, un personaje es infame por un delito moderado o es conocido en un área de tamaño moderado del escenario de la campaña. Recibe una penalización de +2 a todas las pruebas de habilidades basadas en la personalidad.
+
+          * Por 6 puntos de habilidad adicionales, un personaje es famoso por un crimen grave o es conocido en una gran área del escenario de la campaña. Recibe una penalización de +3 a todas las pruebas de habilidades basadas en la Personalidad cuando se activa este defecto.'
+  oblivious:
+    bonus_points: '+4'
+    ability: WIL
+    localized:
+    - en:
+        name: Oblivious
+        description: A character with the Oblivious flaw has trouble noticing things, suffering a +1 penalty to all Awareness-perception skill checks.
+    - es:
+        name: Inconsciente de
+        description: Un personaje con el defecto Inconsciente tiene problemas para darse cuenta de las cosas y sufre una penalización de +1 en todas las pruebas de habilidad de Percepción de Conciencia.
+  obsessed:
+    bonus_points: +2/4/6
+    ability: INT
+    localized:
+    - en:
+        name: Obsessed
+        description: 'This flaw indicates that a character is obsessed with a particular person, place, or thing, which is known as the trigger for the flaw. An Obsessed character may forget what he''s doing or turn his attention to the object of his obsession even in the middle of a tense situation. The player and the Gamemaster need to decide on a trigger when this flaw is selected. The trigger should somehow be tied to the character''s background or personality. For example, a scientist might be obsessed with exotic insects, or an engineer with new and interesting technology. Less cerebral characters might be Obsessed with another character, a fast vehicle, or a type of food.
+
+          * For 2 bonus skill points, a character is moderately distracted by the triggering event. He receives a +1 penalty to any actions not related to the obsession.
+
+          * For 4 points, a character is substantially distracted by the triggering event. He receives a +2 penalty to any actions not related to the obsession.
+
+          * For 6 points, the character is almost completely distracted. He receives a +3 penalty to any actions not related to the obsession.'
+    - es:
+        name: Obsesionado
+        description: 'Este defecto indica que un personaje está obsesionado con una persona, lugar o cosa en particular, lo que se conoce como el desencadenante del defecto. Un personaje obsesionado puede olvidar lo que está haciendo o centrar su atención en el objeto de su obsesión incluso en medio de una situación tensa. El jugador y el Gamemaster deben decidir el desencadenante cuando se selecciona este defecto. El desencadenante debería estar ligado de alguna manera a los antecedentes o la personalidad del personaje. Por ejemplo, un científico podría estar obsesionado con los insectos exóticos o un ingeniero con una tecnología nueva e interesante. Los personajes menos cerebrales pueden estar obsesionados con otro personaje, un vehículo rápido o un tipo de comida.
+
+          * Por 2 puntos de habilidad adicionales, un personaje se distrae moderadamente con el evento desencadenante. Recibe una penalización de +1 a cualquier acción no relacionada con la obsesión.
+
+          * Por 4 puntos, un personaje se distrae sustancialmente por el evento desencadenante. Recibe una penalización de +2 por cualquier acción no relacionada con la obsesión.
+
+          * Por 6 puntos, el personaje está casi completamente distraído. Recibe una penalización de +3 por cualquier acción no relacionada con la obsesión.'
+  old-injury:
+    bonus_points: +2/4/6
+    ability: STR
+    localized:
+    - en:
+        name: Old Injury
+        description: 'Sometime in the past, the character suffered an injury. Now that Old Injury acts up every so often, inflicting wounds on the character. The player and the Gamemaster should agree on a triggering event, but in general it should be something physical: An attempt to run or jump, getting involved in a close-quarters attack, and an attempt to dodge are all acceptable triggers. An Old Injury can be triggered once per scene, though the effects remain until the character is healed. (Note that if a character wants to remove this flaw, a medical procedure must be included as part of the removal process. See Chapter 8: Achievements for more details.)
+
+          * For 2 bonus skill points, a character suffers 1 point of wound damage when this flaw is triggered.
+
+          * For 4 bonus skill points, a character suffers 2 points of wound damage plus 1 point of secondary stun damage when this flaw is triggered.
+
+          * For 6 bonus skill points, a character suffers 3 points of wound damage plus 1 point of secondary stun damage when this flaw is triggered.
+
+          **Note:** Wearing armor does not offset or reduce this damage.'
+    - es:
+        name: Vieja herida
+        description: 'En algún momento del pasado, el personaje sufrió una lesión. Ahora, Old Injury actúa de vez en cuando, infligiendo heridas al personaje. El jugador y el Gamemaster deben acordar un evento desencadenante, pero en general debe ser algo físico: un intento de correr o saltar, involucrarse en un ataque cuerpo a cuerpo y un intento de esquivar son todos desencadenantes aceptables. Se puede activar una antigua herida una vez por escena, aunque los efectos permanecen hasta que el personaje se cura. (Tenga en cuenta que si un personaje quiere eliminar este defecto, se debe incluir un procedimiento médico como parte del proceso de eliminación. Consulte el Capítulo 8: Logros para obtener más detalles).
+
+          * Por 2 puntos de habilidad adicionales, un personaje sufre 1 punto de daño por herida cuando se activa este defecto.
+
+          * Por 4 puntos de habilidad adicionales, un personaje sufre 2 puntos de daño por herida más 1 punto de daño por aturdimiento secundario cuando se activa este defecto.
+
+          * Por 6 puntos de habilidad adicionales, un personaje sufre 3 puntos de daño por herida más 1 punto de daño por aturdimiento secundario cuando se activa este defecto.
+
+          **Nota:** El uso de armadura no compensa ni reduce este daño.'
+  phobia:
+    bonus_points: +2/4/6
+    ability: WIL
+    localized:
+    - en:
+        name: Phobia
+        description: 'This flaw represents an irrational fear that hampers the character in some way. The character selects a specific fear that may or may not come into play in any given adventure. It should be a general fear (moving vehicles), not a specific one (moving green taxicabs with purple dots and yellow flags), to qualify as a flaw. When the character is confronted by his Phobia, he suffers a penalty.
+
+          * For 2 bonus skill points, a character suffers a +1 penalty to all actions while this flaw is in effect.
+
+          * For 4 bonus skill points, a character suffers a +2 penalty to all actions while this flaw is in effect.
+
+          * For 6 bonus skill points, a character freezes or flees as appropriate while this flaw is in effect.'
+    - es:
+        name: Fobia
+        description: 'Este defecto representa un miedo irracional que obstaculiza al personaje de alguna manera. El personaje selecciona un miedo específico que puede entrar en juego o no en una aventura determinada. Debería ser un miedo general (vehículos en movimiento), no específico (taxis verdes en movimiento con puntos violetas y banderas amarillas), para calificarlo como un defecto. Cuando el personaje se enfrenta a su fobia, sufre una penalización.
+
+          * Por 2 puntos de habilidad adicionales, un personaje sufre una penalización de +1 en todas las acciones mientras este defecto esté vigente.
+
+          * Por 4 puntos de habilidad adicionales, un personaje sufre una penalización de +2 en todas las acciones mientras este defecto esté vigente.
+
+          * Por 6 puntos de habilidad adicionales, un personaje se congela o huye según corresponda mientras este defecto esté vigente.'
+  poor-looks:
+    bonus_points: '+3'
+    ability: PER
+    localized:
+    - en:
+        name: Poor Looks
+        description: A character with the Poor Looks flaw suffers a +1 penalty to all Personality-based skill checks when appearance could have a negative effect. Poor Looks isn't just a measure of physical beauty; it includes manners, grooming, and overall appearance. Bear in mind that a human character's Poor Looks might not be seen as such by an alien, and even some other human cultures may have a different idea of what Poor Looks are. The Gamemaster determines when the flaw's penalty is applied and when it isn't, depending on the situation.
+    - es:
+        name: Mala apariencia
+        description: Un personaje con el defecto de Mala Apariencia sufre una penalización de +1 a todas las pruebas de habilidad basadas en Personalidad cuando la apariencia podría tener un efecto negativo. La mala apariencia no es sólo una medida de belleza física; incluye modales, arreglo personal y apariencia general. Tenga en cuenta que es posible que un extraterrestre no vea la mala apariencia de un personaje humano, e incluso algunas otras culturas humanas pueden tener una idea diferente de lo que es la mala apariencia. El Director de Juego determina cuándo se aplica la penalización por falla y cuándo no, dependiendo de la situación.
+  powerful-enemy:
+    bonus_points: +2/4/6
+    ability: PER
+    localized:
+    - en:
+        name: Powerful Enemy
+        description: A character with this flaw begins play with a Powerful Enemy who's out to make his life terrible. This enemy must have a long reach, lots of subordinates, and the ability to affect the character wherever he may be. How close the enemy’s base of operations is and how often he can affect the character are determined by the number of skill points the flaw provides. Examples of powerful enemies include a specific law enforcement agency (especially if the character is a fugitive), a corporation, a government, a criminal organization, or an alien conspiracy. In all cases the true enemy should remain unknown for a long time, and direct contact between the enemy and the character shouldn't occur while the character is at low achievement levels.
+    - es:
+        name: Enemigo poderoso
+        description: Un personaje con este defecto comienza a jugar con un enemigo poderoso que quiere hacerle la vida terrible. Este enemigo debe tener un largo alcance, muchos subordinados y la capacidad de afectar al personaje dondequiera que esté. Qué tan cerca está la base de operaciones del enemigo y con qué frecuencia puede afectar al personaje están determinados por la cantidad de puntos de habilidad que proporciona la falla. Ejemplos de enemigos poderosos incluyen una agencia policial específica (especialmente si el personaje es un fugitivo), una corporación, un gobierno, una organización criminal o una conspiración alienígena. En todos los casos, el verdadero enemigo debe permanecer desconocido durante mucho tiempo, y el contacto directo entre el enemigo y el personaje no debe ocurrir mientras el personaje se encuentre en niveles bajos de logros.
+  primitive:
+    bonus_points: +2/4/6
+    ability: INT
+    localized:
+    - en:
+        name: Primitive
+        description: 'This flaw indicates that a character has come from a primitive culture and upbringing, which causes problems for him when dealing with modern technology.
+
+          * For 2 bonus skill points, a character receives a +1 penalty whenever he uses modern technology.
+
+          * For 4 bonus skill points, a character receives a +2 penalty whenever he uses modern technology.
+
+          * For 6 bonus skill points, a character receives a +3 penalty whenever he uses modern technology, and he is either awed into inactivity or flees in terror for d4+1 time units in the face of some technological wonder he hasn’t seen before.'
+    - es:
+        name: Primitivo
+        description: 'Este defecto indica que un personaje proviene de una cultura y educación primitivas, lo que le causa problemas cuando se trata de tecnología moderna.
+
+          * Por 2 puntos de habilidad adicionales, un personaje recibe una penalización de +1 cada vez que usa tecnología moderna.
+
+          * Por 4 puntos de habilidad adicionales, un personaje recibe una penalización de +2 cada vez que usa tecnología moderna.
+
+          * Por 6 puntos de habilidad adicionales, un personaje recibe una penalización de +3 cada vez que usa tecnología moderna, y se siente asombrado hasta quedar inactivo o huye. terror durante d4+1 unidades de tiempo frente a alguna maravilla tecnológica que no ha visto antes.'
+  slow:
+    bonus_points: '+6'
+    ability: DEX
+    localized:
+    - en:
+        name: Slow
+        description: A character with the Slow flaw has reduced reaction time, which manifests as a +1 penalty to his action checks.
+    - es:
+        name: Lento
+        description: Un personaje con el defecto de Lento tiene un tiempo de reacción reducido, lo que se manifiesta como una penalización de +1 a sus pruebas de acción.
+  spineless:
+    bonus_points: +2/4/6
+    ability: WIL
+    localized:
+    - en:
+        name: Spineless
+        description: 'The Spineless flaw hampers a character by weakening his will, making him fearful, indecisive, and easier to manipulate. This is reflected in a reduction to the character''s Will resistance modifier.
+
+          * For 2 bonus skill points, a character''s Will resistance modifier is reduced by 1 step.
+
+          * For 4 points, a character''s Will resistance modifier is reduced by 2 steps.
+
+          * For 6 points, a character''s Will resistance modifier is reduced by 3 steps.'
+    - es:
+        name: Sin carácter
+        description: 'El defecto Spineless obstaculiza al personaje al debilitar su voluntad, haciéndolo temeroso, indeciso y más fácil de manipular. Esto se refleja en una reducción del modificador de resistencia a la Voluntad del personaje.
+
+          * Por 2 puntos de habilidad adicionales, el modificador de resistencia a la Voluntad de un personaje se reduce en 1 paso.
+
+          * Por 4 puntos, el modificador de resistencia a la Voluntad de un personaje se reduce en 2 pasos.
+
+          * Por 6 puntos, el modificador de resistencia a la Voluntad de un personaje se reduce en 3 pasos.'
+  temper:
+    bonus_points: +2/4/6
+    ability: WIL
+    localized:
+    - en:
+        name: Temper
+        description: 'A character with this flaw has a short fuse. The player and the Gamemaster must agree on what type of event triggers the character''s Temper flaw.
+
+          * For 2 bonus skill points, the character becomes gruff and mean, suffering a +1 penalty to all actions until the triggering event ends and he calms down.
+
+          * For 4 bonus skill points, the character reacts without thinking, suffering a +2 penalty to all actions until the triggering event ends and he calms down.
+
+          * For 6 bonus skill points, the character flies into a berserk rage, suffering a +3 penalty until the triggering event ends and he calms down.'
+    - es:
+        name: Temperamento
+        description: 'Un personaje con este defecto tiene poca mecha. El jugador y el Gamemaster deben acordar qué tipo de evento desencadena el defecto de Temperamento del personaje.
+
+          * Por 2 puntos de habilidad adicionales, el personaje se vuelve brusco y mezquino, sufriendo una penalización de +1 en todas las acciones hasta que el evento desencadenante termina y se calma.
+
+          * Por 4 puntos de habilidad adicionales, el personaje reacciona sin pensar, sufriendo una penalización de +2 en todas las acciones hasta que el evento desencadenante termina y se calma.
+
+          * Por 6 puntos de habilidad adicionales, el personaje vuela hacia un rabia enloquecida, sufriendo una penalización de +3 hasta que el evento desencadenante finalice y se calme.'

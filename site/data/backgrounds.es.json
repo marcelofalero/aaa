@@ -438,15 +438,15 @@
                     },
                     {
                         "name": "El Sujeto de Pruebas",
-                        "summary": "Superviviente de procedimientos de laboratorio experimentales con percepciones fisiológicas únicas.",
+                        "summary": "Superviviente de procedimientos de laboratorio experimentales con\npercepciones fisiológicas únicas.",
                         "favored_broad_skill": "",
                         "url": "/es/backgrounds/test-subject/",
                         "skill_url": "/es/backgrounds/test-subject/",
-                        "favored_specialty_skills": "[Voluntad-Voluntad Física] ({{< relref \"/skills/resolve/#physical-resolve\" >}}) <br> [Resistencia-Aguante] ({{< relref \"/skills/stamina/#endurance\" >}}) <br> [Conciencia-Intuición] ({{< relref \"/skills/awareness/#intuition\" >}}) <br> [Ciencia de la Vida-Ciencia Médica] ({{< relref \"/skills/life-science/#medical-science\" >}})",
+                        "favored_specialty_skills": "[Voluntad-Voluntad Física]\n({{< relref \"/skills/resolve/#physical-resolve\" >}}) <br>\n[Resistencia-Aguante] ({{< relref \"/skills/stamina/#endurance\" >}})\n<br> [Conciencia-Intuición]\n({{< relref \"/skills/awareness/#intuition\" >}}) <br>\n[Ciencia Médica] ({{< relref \"/skills/medical-science/\" >}})",
                         "favored_perks": "[Duro como un Clavo] ({{< relref \"/perks_flaws/#tough-as-nails\" >}})",
                         "flaw": "[Enemigo Poderoso] ({{< relref \"/perks_flaws/#powerful-enemy\" >}})",
                         "equipment": "Monitores de recuperación, cicatrices quirúrgicas, estabilizadores.",
-                        "special_ability": "**Hiper-Conciencia:** Bono de -1 paso en voluntad física o intuición.",
+                        "special_ability": "**Hiper-Conciencia:** Bono de -1 paso en voluntad física o\nintuición.",
                         "tendencies": ""
                     },
                     {
@@ -476,17 +476,17 @@
                         "tendencies": ""
                     },
                     {
-                        "name": "El Héroe de Guerra",
+                        "name": "El Veterano de Guerra",
                         "summary": "Te defines por un solo conflicto muy publicitado.",
                         "favored_broad_skill": "",
-                        "url": "/es/backgrounds/war-hero/",
-                        "skill_url": "/es/backgrounds/war-hero/",
-                        "favored_specialty_skills": "[Liderazgo-Inspirar] ({{< relref \"/skills/leadership/#inspire\" >}}) <br> [Resistencia-Aguante] ({{< relref \"/skills/stamina/#endurance\" >}}) <br> [Voluntad-Voluntad Mental] ({{< relref \"/skills/resolve/#mental-resolve\" >}})",
+                        "url": "/es/backgrounds/war-veteran/",
+                        "skill_url": "/es/backgrounds/war-veteran/",
+                        "favored_specialty_skills": "[Liderazgo-Inspirar] ({{< relref \"/skills/leadership/#inspire\" >}})\n<br> [Resistencia-Aguante]\n({{< relref \"/skills/stamina/#endurance\" >}})\n<br> [Voluntad-Voluntad Mental]\n({{< relref \"/skills/resolve/#mental-resolve\" >}})",
                         "favored_perks": "[Celebridad] ({{< relref \"/perks_flaws/#celebrity\" >}})",
-                        "flaw": "[Vieja Herida] ({{< relref \"/perks_flaws/#old-injury\" >}}) (Un recordatorio físico duradero del evento que te hizo famoso).",
-                        "equipment": "Un arma personalizada con cicatrices de batalla, medallas de combate oficiales, una chaqueta militar resistente y un suministro de analgésicos médicos.",
-                        "special_ability": "**Carga de Gloria:** Recibes una bonificación de -1 paso a las tiradas de habilidad de [Interacción] ({{< relref \"/skills/interaction/\" >}}) o [Liderazgo] ({{< relref \"/skills/leadership/\" >}}) al tratar con veteranos, personal militar activo o ciudadanos patrióticos que reconocen tu servicio.",
-                        "tendencies": "**La Leyenda Viviente:** Acepta voluntariamente una desventaja significativa o soporta el peso de un ataque para proteger a civiles o aliados, impulsado por la necesidad de estar a la altura de tu reputación imposible.<br>**El Fantasma del Pasado:** Reacciona a una situación actual utilizando el contexto obsoleto o traumático de tu guerra pasada, complicando una simple negociación o infiltración al tratarla como un campo de batalla."
+                        "flaw": "[Vieja Herida] ({{< relref \"/perks_flaws/#old-injury\" >}}) (Un\nrecordatorio físico duradero del evento que te hizo famoso).",
+                        "equipment": "Un arma personalizada con cicatrices de batalla, medallas de\ncombate oficiales, una chaqueta militar resistente y un suministro\nde analgésicos médicos.",
+                        "special_ability": "**Carga de Gloria:** Recibes una bonificación de -1 paso a las\ntiradas de habilidad de [Interacción] ({{< relref\n\"/skills/interaction/\" >}}) o [Liderazgo] ({{< relref\n\"/skills/leadership/\" >}}) al tratar con veteranos, personal\nmilitar activo o ciudadanos patrióticos que reconocen tu servicio.",
+                        "tendencies": "**La Leyenda Viviente:** Acepta voluntariamente una desventaja\nsignificativa o soporta el peso de un ataque para proteger a\nciviles o aliados, impulsado por la necesidad de estar a la altura\nde tu reputación imposible.<br>**El Fantasma del Pasado:**\nReacciona a una situación actual utilizando el contexto obsoleto o\ntraumático de tu guerra pasada, complicando una simple negociación\no infiltración al tratarla como un campo de batalla."
                     },
                     {
                         "name": "Informante",

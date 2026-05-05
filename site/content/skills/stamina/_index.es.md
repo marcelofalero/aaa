@@ -6,47 +6,42 @@ type = "skill"
 layout = "list"
 +++
 
-Esta habilidad amplia mide la fortaleza física de un personaje CON respecto a los efectos del daño Mortal y el agotamiento (fatiga).
-### Moribundo
-Un personaje que ha sufrido daño Mortal debe realizar una tirada de Aguante al final de una escena y una vez por hora.
-- **Fallo Crítico:** 2 puntos adicionales de daño Mortal.
-- **Fallo:** 1 punto adicional de daño Mortal.
-- **Ordinario o mejor:** Su estado no cambia.
-### Agotamiento (Fatiga)
-Cuando un personaje realiza ciertas actividades que provocan fatiga, debe realizar una tirada de Aguante.
-- **Fallo Crítico:** 2 puntos de daño por fatiga.
-- **Fallo:** 1 punto de daño por fatiga.
-- **Éxito:** No sufre daño por fatiga.
+Esta amplia habilidad mide la fortaleza física de un personaje CON respecto a los efectos del daño Mortal y la fatiga.
+**Nota:** Esta habilidad es gratuita para personajes humanos, mechatus, sesheyan, t'sa y weren.
+---
+### Morir
+Se considera que un personaje que ha sufrido cualquier cantidad de daño Mortal está muriendo. Al final de una escena, un personaje moribundo (ya sea consciente o inconsciente) realiza una prueba de Resistencia.
+- **Fallo Crítico:** El personaje sufre **2 puntos adicionales** de daño Mortal.
+- **Fallo:** El personaje sufre **1 punto adicional** de daño Mortal.
+- **Ordinario o mejor:** La condición del personaje no cambia. El personaje moribundo realiza pruebas adicionales de resistencia **una vez por hora**, hasta que recibe ayuda médica (consulte las descripciones de Ciencias médicas—cirugía o Ciencias médicas—tratamientos para obtener más detalles). El tiempo entre estas pruebas de Resistencia se puede alargar a una vez por día si el personaje recibe ayuda mediante la aplicación del tratamiento de Conocimiento (primeros auxilios o Ciencias Médicas).
+---
+### Fatiga
+Cuando un personaje se involucra en ciertas actividades que le causan fatiga, debe realizar una prueba de Resistencia. Esta verificación se realiza después de que se lleva a cabo la actividad, o a intervalos establecidos para ciertos tipos de actividad (ver "Daño por fatiga" en el libro de reglas).
+- **Fallo Crítico:** El personaje sufre **2 puntos** de daño por fatiga.
+- **Fallo:** Indica **1 punto** de daño.
+- **Éxito:** Indica que no se produce ningún daño por fatiga como resultado de la actividad recién completada.
 
 ## Resistencia
 {{< specialty attr="CON" untrained="yes" cost="4" >}}
 
-{{% list %}}
-### Resistencia
-A medida que un personaje adquiere rangos en la habilidad de resistencia, se vuelve más capaz de soportar los efectos del daño. Para un personaje que tiene esta especialidad, las tiradas de resistencia sustituyen a las tiradas de Aguante.
-### Resistir el dolor
-*No se puede usar sin estar entrenado.* Resistir el dolor permite a un personaje funcionar CON normalidad e ignorar algunas o todas las penalizaciones de situación por sufrir daño por aturdimiento, heridas o daño Mortal. Una tirada no cuenta como acción.
-### Resultados
-- **Fallo Crítico:** El personaje sucumbe al dolor y no puede actuar durante 2d4 fases.
-- **Fallo:** El personaje sufre las penalizaciones por daño.
-- **Ordinario:** El personaje ignora 1 paso de penalización.
-- **Bueno:** El personaje ignora 2 pasos de penalización.
-- **Asombroso:** El personaje ignora 3 pasos de penalización. Resistir el dolor solo disminuye o elimina las penalizaciones de situación causadas por el daño acumulado. No convierte una penalización en una bonificación ni evita quedar moribundo o la muerte.
+A medida que un personaje adquiere rangos en la habilidad de resistencia, se vuelve más capaz de resistir los efectos del daño. Para un personaje que tiene esta especialidad, las pruebas de resistencia reemplazan las pruebas de resistencia para detectar daño y fatiga.
+⊗ **Respiración mejorada:** La bonificación a la prueba de resistencia de un personaje mientras contiene la respiración mejora a **-2 en el rango 4**.
+**-3 en el rango 8** y **-4 en el rango 12**.
 
 ---
 
 ## Resist pain
 {{< specialty attr="CON" untrained="no" cost="5" >}}
 
-Resist pain allows a Personaje to function normally and ignore some or all of the situation penalties for suffering large amounts of Aturdimiento, Herida, or Mortal (but not Fatiga) damage. A Personaje with this specialty may get an opportunity **once PER Combate scene** to check the effectiveness of his ability to resist pain. The first time during a Combate scene when the Personaje has received Aturdimiento points or Herida points, or when he receives at least 1 point of Mortal damage, he makes a resist pain skill check.
-**Note:** This check does not count as an action, and takes place before any characters attempt any actions. The result of the resist pain check lasts for the rest of the Combate scene.
-### Results
-- **Fallo Crítico:** The Personaje succumbed to the pain and **can''t act for 2d4 phases**.
-- **Failure:** The Personaje succumbs to the pain and suffers the normal damage penalties.
-- **Ordinario:** The Personaje ignores **1 step** of penalty.
-- **Bueno:** The Personaje ignores **2 steps** of penalty.
-- **Asombroso:** The Personaje ignores **3 steps** of penalty.
-**Benefit Consolidation:** Resist pain only helps to lessen or eliminate situation penalties caused by cumulative damage. The benefit a Personaje receives from a successful skill check can''t be used to turn a penalty into a bonus. (If a Personaje only has a +1 penalty due to damage when the check is made but the result indicates a reduction of 2 points of penalty, the Personaje gets no immediate benefit from the extra reduction—but it might come into play if he suffers damage later in the scene). Having this skill doesn''t help a Personaje stave off dying or death results.
+Resistir el dolor permite a un personaje funcionar normalmente e ignorar algunas o todas las penalizaciones de la situación por sufrir grandes cantidades de daño por aturdimiento, herida o Mortal (pero no por fatiga). Un personaje CON esta especialidad puede tener la oportunidad **una vez por escena de combate** de comprobar la eficacia de su capacidad para resistir el dolor. La primera vez durante una escena de combate cuando el personaje ha recibido puntos de aturdimiento o puntos de herida, o cuando recibe al menos 1 punto de daño Mortal, realiza una prueba de habilidad de resistir el dolor.
+**Nota:** Esta prueba no cuenta como una acción y se lleva a cabo antes de que cualquier personaje intente realizar alguna acción. El resultado de la prueba de resistencia al dolor dura el resto de la escena del combate.
+### Resultados
+- **Fallo crítico:** El personaje sucumbió al dolor y **no puede actuar durante 2d4 fases**.
+- **Fallo:** El personaje sucumbe al dolor y sufre las penalizaciones de daño normales.
+- **Ordinario:** El personaje ignora **1 paso** de penalización.
+- **Bien:** El personaje ignora **2 pasos** de penalización.
+- **Asombroso:** El personaje ignora **3 pasos** de penalización.
+**Consolidación de beneficios:** Resistir el dolor solo ayuda a disminuir o eliminar las penalizaciones de la situación causadas por el daño acumulativo. El beneficio que recibe un personaje de una prueba de habilidad exitosa no puede usarse para convertir una penalización en una bonificación. (Si un personaje sólo tiene una penalización de +1 debido al daño cuando se realiza la prueba pero el resultado indica una reducción de 2 puntos de penalización, el personaje no obtiene ningún beneficio inmediato de la reducción adicional, pero podría entrar en juego si sufre daño más adelante en la escena). Tener esta habilidad no ayuda al personaje a evitar la muerte o los resultados de la muerte.
 
 ---
 

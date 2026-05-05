@@ -438,15 +438,15 @@
                     },
                     {
                         "name": "The Test Subject",
-                        "summary": "Survivor of experimental laboratory procedures with unique physiological insights.",
+                        "summary": "Survivor of experimental laboratory procedures with unique\nphysiological insights.",
                         "favored_broad_skill": "",
                         "url": "/backgrounds/test-subject/",
                         "skill_url": "/backgrounds/test-subject/",
-                        "favored_specialty_skills": "[Resolve-Physical Resolve] ({{< relref \"/skills/resolve/#physical-resolve\" >}}) <br> [Stamina-Endurance] ({{< relref \"/skills/stamina/#endurance\" >}}) <br> [Awareness-Intuition] ({{< relref \"/skills/awareness/#intuition\" >}}) <br> [Life Science-Medical Science] ({{< relref \"/skills/life-science/#medical-science\" >}})",
+                        "favored_specialty_skills": "[Resolve-Physical Resolve]\n({{< relref \"/skills/resolve/#physical-resolve\" >}}) <br>\n[Stamina-Endurance] ({{< relref \"/skills/stamina/#endurance\" >}})\n<br> [Awareness-Intuition]\n({{< relref \"/skills/awareness/#intuition\" >}}) <br>\n[Medical Science] ({{< relref \"/skills/medical-science/\" >}})",
                         "favored_perks": "[Tough as Nails] ({{< relref \"/perks_flaws/#tough-as-nails\" >}})",
                         "flaw": "[Powerful Enemy] ({{< relref \"/perks_flaws/#powerful-enemy\" >}})",
                         "equipment": "Recovery monitors, surgical scars, stabilizers.",
-                        "special_ability": "**Hyper-Awareness:** -1 step bonus to physical resolve or intuition when resisting toxins or threats.",
+                        "special_ability": "**Hyper-Awareness:** -1 step bonus to physical resolve or\nintuition when resisting toxins or threats.",
                         "tendencies": ""
                     },
                     {
@@ -476,17 +476,17 @@
                         "tendencies": ""
                     },
                     {
-                        "name": "The War Hero",
+                        "name": "The War Veteran",
                         "summary": "You are defined by a single, highly publicized conflict.",
                         "favored_broad_skill": "",
-                        "url": "/backgrounds/war-hero/",
-                        "skill_url": "/backgrounds/war-hero/",
-                        "favored_specialty_skills": "[Leadership-Inspire] ({{< relref \"/skills/leadership/#inspire\" >}}) <br> [Stamina-Endurance] ({{< relref \"/skills/stamina/#endurance\" >}}) <br> [Resolve- Mental Resolve] ({{< relref \"/skills/resolve/#mental-resolve\" >}})",
+                        "url": "/backgrounds/war-veteran/",
+                        "skill_url": "/backgrounds/war-veteran/",
+                        "favored_specialty_skills": "[Leadership-Inspire] ({{< relref \"/skills/leadership/#inspire\" >}})\n<br> [Stamina-Endurance]\n({{< relref \"/skills/stamina/#endurance\" >}})\n<br> [Resolve- Mental Resolve]\n({{< relref \"/skills/resolve/#mental-resolve\" >}})",
                         "favored_perks": "[Celebrity] ({{< relref \"/perks_flaws/#celebrity\" >}})",
-                        "flaw": "[Old Injury] ({{< relref \"/perks_flaws/#old-injury\" >}}) (A lasting physical reminder of the event that made you famous).",
-                        "equipment": "A personalized or heavily battle-scarred signature weapon, official combat medals, a rugged military jacket, and a supply of medical painkillers.",
-                        "special_ability": "**Burden of Glory:** You receive a -1 step bonus to [Interaction] ({{< relref \"/skills/interaction/\" >}}) or [Leadership] ({{< relref \"/skills/leadership/\" >}}) skill checks when dealing with veterans, active military personnel, or patriotic citizens who recognize your service.",
-                        "tendencies": "**The Living Legend:** Voluntarily accept a significant disadvantage or take the brunt of an attack to protect civilians or allies, driven by the need to live up to your impossible reputation.<br>**The Ghost of the Past:** React to a current situation using the outdated or traumatic context of your past war, complicating a simple negotiation or infiltration by treating it like a battlefield."
+                        "flaw": "[Old Injury] ({{< relref \"/perks_flaws/#old-injury\" >}}) (A lasting\nphysical reminder of the event that made you famous).",
+                        "equipment": "A personalized or heavily battle-scarred signature weapon, official\ncombat medals, a rugged military jacket, and a supply of medical\npainkillers.",
+                        "special_ability": "**Burden of Glory:** You receive a -1 step bonus to [Interaction]\n({{< relref \"/skills/interaction/\" >}}) or [Leadership]\n({{< relref \"/skills/leadership/\" >}}) skill checks when dealing\nwith veterans, active military personnel, or patriotic citizens who\nrecognize your service.",
+                        "tendencies": "**The Living Legend:** Voluntarily accept a significant disadvantage\nor take the brunt of an attack to protect civilians or allies,\ndriven by the need to live up to your impossible reputation.\n<br>**The Ghost of the Past:** React to a current situation using\nthe outdated or traumatic context of your past war, complicating a\nsimple negotiation or infiltration by treating it like a\nbattlefield."
                     },
                     {
                         "name": "The Whistleblower",

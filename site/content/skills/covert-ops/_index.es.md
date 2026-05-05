@@ -6,48 +6,59 @@ type = "skill"
 layout = "list"
 +++
 
-La habilidad general de **Operaciones Encubiertas** (anteriormente Sigilo y Manipulación) se centra en permanecer sin ser detectado y eludir la seguridad física. Consolida las artes del sigilo CON las habilidades técnicas necesarias para abrir cerraduras y carterear.
-- **Sigilo Unificado:** Fusiona esconderse, moverse sigilosamente y seguir en la sombra en una única especialización de Sigilo.
-- **Elusión Física:** Incluye Abrir Cerraduras y Carterear.
+La habilidad general **Operaciones encubiertas** se centra en permanecer sin ser detectado y eludir la seguridad física. Consolida las artes del sigilo CON las habilidades prácticas necesarias para camuflarse o robar bolsillos.
+- **Sigilo unificado:** Combina ocultar, sigilo y vigilancia en una única especialidad de Sigilo.
+- **Eludición física:** Incluye carterista y ocultamiento.
 
 ## Ocultar
 {{< specialty attr="DES" untrained="yes" cost="3" >}}
 
-Esta especialización representa la habilidad de esconder objetos de la vista o de los sensores. Mientras que **Sigilo** se usa para esconderse a uno mismo, **Ocultar** se usa para esconder objetos, como armas en el cuerpo, contrabando en un vehículo o un compartimento secreto en una habitación.
+Esta habilidad especial representa la capacidad de ocultar objetos de la vista o de los sensores. Mientras que **Stealth** se usa para esconderse,
+**Ocultar** se utiliza para ocultar elementos, como armas en la persona, contrabando en un vehículo o un compartimento secreto en una habitación.
 ### Resultados
-El grado de éxito en una tirada de Ocultar proporciona una penalización a la tirada de Percepción-percepción o Investigación-búsqueda de un observador para encontrar el objeto oculto:
-- **Ordinario:** +1 de penalización para el observador
-- **Bueno:** +2 de penalización para el observador
-- **Asombroso:** +3 de penalización para el observador
-### Ocultar Armas
-Un arma oculta se lleva en un lugar que normalmente no se registra o que no es fácil de detectar (la parte baja de la espalda, el interior del antebrazo, etc.). El arma oculta debe ser una pistola pequeña o una hoja. La ocultación proporciona una penalización de +2 a todas las búsquedas, excepto a las más intrusivas.
+El grado de éxito en una prueba de Ocultar proporciona una penalización a la prueba de Conciencia-percepción o Investigación-búsqueda de un observador para encontrar el objeto oculto:
+- **Ordinario:** Penalización +1 al observador
+- **Bueno:** Penalización +2 al observador
+- **Increíble:** Penalización +3 al observador
+### Esconder armas
+Un arma oculta se lleva en un lugar que normalmente no se registra o que no es fácil de detectar (la parte baja de la espalda, la parte interior del antebrazo, etc.). El arma oculta debe ser una pistola pequeña o una espada. El ocultamiento proporciona una penalización de +2 a todas las búsquedas excepto a las más intrusivas.
 
 ---
 
 ## Disfraz
 {{< specialty attr="CAR" untrained="yes" cost="3" >}}
 
-Disfraz es la habilidad de cambiar tu apariencia para parecerte a otra persona o para mezclarte CON la multitud. Mientras que la habilidad de **Entretenimiento-actuar** se usa para el maquillaje y la actuación profesional, esta especialización cubre aplicaciones más inmediatas y prácticas del disfraz, como cambiarse de ropa, usar una peluca o usar accesorios simples para evitar ser reconocido. El dado de situación de Disfraz de un personaje se modifica por el modificador de Percepción-percepción del observador.
+El disfraz es la capacidad de cambiar tu apariencia para parecerte a otra persona o mezclarte CON una multitud. Si bien la habilidad **Acto de entretenimiento** se utiliza para maquillaje y actuación profesional, esta especialidad cubre aplicaciones de disfraz más inmediatas y prácticas, como cambiarse de ropa, usar una peluca o usar accesorios simples para evitar el reconocimiento. El dado de situación de Disfraz de un personaje es modificado por el modificador de Conciencia-percepción del observador.
 
 ---
 
 ## Abrir Cerraduras
 {{< specialty attr="DES" untrained="yes" cost="3" >}}
 
-Esta especialización permite a un personaje abrir cerraduras físicas (puertas, cajas fuertes, vehículos, etc.). Generalmente se emplea CON herramientas que proporcionan una bonificación al dado de situación. La habilidad de abrir cerraduras es inútil contra una cerradura asistida por computadora a menos que tenga un mecanismo físico que el personaje pueda manipular. Casi siempre, el uso de abrir cerraduras requiere una tirada de habilidad compleja.
+Esta habilidad especial permite a un personaje quitarle objetos a una persona (o plantar algo) sin que esa persona se dé cuenta. El dado de situación base está determinado por el modificador de resistencia a la voluntad del objetivo.
+### Modificadores de situación de carterista
+| Condición | Modificador | | :--- | :--- | | El objeto está en contacto directo CON la piel del objetivo | +3 | | El objeto es pesado | +2 | | El objeto se guarda en el bolsillo interior de la prenda | +1 | | El objeto es liviano | -1 | | El objeto se guarda en un bolsillo o mochila expuesta | -1 | | La víctima está distraída | -1 a -3 |
+### Resultados
+- **Fallo/Fallo crítico:** El intento falla y se detecta al carterista.
+- **Ordinario:** El intento tiene éxito.
+- **Bueno/Increíble:** El intento tiene éxito y puede compensar las penalizaciones por intentos repetidos contra el mismo objetivo.
+### Beneficios de rango
+- **Rango 3, 6, 9, 12 [Se necesita uno para conocer uno]:** El modificador de resistencia a la voluntad del personaje (solo para detectar un intento de carterista) mejora en una penalización de +1 al intento del enemigo en el rango 3, +2 pasos en el rango 6, +3 pasos en el rango 9 y +4 pasos en el rango 12.
 
 ---
 
 ## Carterear
 {{< specialty attr="DES" untrained="yes" cost="3" >}}
 
-Esta especialización permite a un personaje quitar objetos de una persona (o colocar algo) sin que esa persona se dé cuenta. El dado de situación base se determina por el modificador de resistencia de Voluntad del objetivo.
-### Resultados
-- **Fracaso/Fallo Crítico:** El intento falla y el carterista es descubierto.
-- **Ordinario:** El intento tiene éxito.
-- **Bueno/Asombroso:** El intento tiene éxito y puede compensar las penalizaciones por intentos repetidos contra el mismo objetivo.
-### Beneficios de Rango
-- **Rango 3, 6, 9, 12 [Ladrón que roba a ladrón]:** El modificador de resistencia de Voluntad del personaje (solo para detectar un intento de carterear) mejora en +1 de penalización al intento del enemigo en el rango 3, +2 pasos en el rango 6, +3 pasos en el rango 9 y +4 pasos en el rango 12.
+Esta especialidad (también conocida como Sigilo Unificado) fusiona las técnicas de esconderse, sigilo y sombra en un solo campo de especialización. Es el arte de pasar desapercibido mientras está parado o en movimiento.
+### Ocultar (estacionario)
+Capacidad de pasar desapercibido manteniéndose en silencio y aún usando cobertura u oscuridad.
+- **Resultados:** El grado de éxito otorga una penalización al observador: Ordinario (+1), Bueno (+2), Sorprendente (+3).
+### Furtivo (en movimiento)
+Capacidad para moverse en silencio (hasta media velocidad de caminata).
+- **Sorpresa:** Si tienes éxito junto a un oponente, recibes una bonificación de ataque: Ordinario (-1), Bueno (-2), Increíble (-3).
+### Sombra (Siguiendo)
+Capacidad de seguir un objetivo sin ser notado. Modificado por el modificador de resistencia a la Voluntad del objetivo y detectado por Conciencia-intuición.
 
 ---
 

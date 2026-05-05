@@ -6,53 +6,68 @@ type = "skill"
 layout = "list"
 +++
 
-La armadura que es voluminosa, pesada y engorrosa dificulta al personaje que la usa. Esto se refleja en una penalización a la tirada de acción del personaje y la disminución o anulación del modificador de resistencia de Destreza del personaje. La habilidad amplia de Operación de Armadura y sus habilidades de especialidad ayudan a aliviar estas penalizaciones. La tabla en la [sección de Armadura](/es/equipment/armor) enumera los diversos tipos de armadura disponibles e indica cuáles requieren que el usuario reciba una penalización en su tirada de acción y en su modificador de resistencia de Destreza. En la columna "AP" de esa tabla, una entrada de "0" significa que la habilidad de Operación de Armadura no es necesaria para usar la armadura de manera efectiva, y no se asocia a ella ninguna penalización en la tirada de acción ni en el modificador de resistencia de Destreza. Tener solo la habilidad amplia permite a un personaje reducir en 1 paso la penalización de la tirada de acción y del modificador de resistencia de Destreza de cualquier tipo de armadura. Una penalización en la tirada de acción puede reducirse de +1 a 0, o de +2 a +1, y así sucesivamente; pero este beneficio nunca proporciona una bonificación. Un modificador de resistencia de Destreza puede compensarse de manera similar, devolviendo quizás el modificador de resistencia del personaje a su valor original. Si el valor bajo **AP** es superior a **+1**, se necesitan rangos en
-**Operación de Armadura-Combate** para cancelar completamente las penalizaciones (consulta la [Armadura de Combate](/es/skills/armor-operation/Combate-armor) para más detalles). Un personaje CON la habilidad amplia que esté equipado CON armadura puede intentar cualquier acción que desee, aunque algunas actividades físicas extenuantes (saltar, correr, escalar, etc.) pueden requerir una tirada de Operación de Armadura. En general, un resultado Ordinario en esta tirada de habilidad indica un efecto a medias (correr a la mitad de la velocidad normal, por ejemplo), mientras que un resultado Bueno o mejor indica un efecto completo (correr a la velocidad normal). Para un personaje **no entrenado** en Operación de Armadura, siempre se aplica la penalización a la tirada de acción y al modificador de resistencia de Destreza asociada a cualquier tipo de armadura. Un personaje no entrenado no puede hacer nada más que caminar y realizar ataques simples mientras usa cualquier armadura que conlleve una penalización en la tirada de acción y en el modificador de resistencia. Los ataques simples son solo eso: un personaje no entrenado que lleve una armadura engorrosa no puede emplear ningún beneficio de rango, como el beneficio de doble ataque relacionado CON las habilidades de especialidad de Armas Cuerpo a Cuerpo. Además, un personaje no entrenado no puede usar ningún tipo de armadura potenciada.
-*Nota: la penalización AP de las armaduras y escudos es acumulativa.*
+La armadura que es voluminosa, pesada y engorrosa dificulta que el personaje la use. Esto se refleja en una penalización a la prueba de acción (AP) del personaje y en la disminución o negación del modificador de resistencia **Destreza** del personaje. La habilidad general Operación Armadura y sus habilidades especiales ayudan a aliviar estas penalizaciones.
+
+### Efecto base
+Tener solo la habilidad amplia permite a un personaje reducir la prueba de acción y la penalización del modificador de resistencia a la Destreza de cualquier tipo de armadura en 1 paso.
+- **Ejemplo:** Una penalización de +1 AP se reduce a 0.
+- **Limitación:** Este beneficio nunca proporciona una bonificación.
+
+### Actividad extenuante
+Algunas actividades físicas extenuantes (saltar, correr, escalar, etc.) mientras se lleva armadura pueden requerir una prueba de **Operación de armadura**.
+- **Ordinario:** Medio efecto (p. ej., ejecutar a la mitad del ritmo normal).
+- **Bueno o mejor:** Efecto completo (p. ej., correr al ritmo normal).
+
+### Sin entrenamiento
+Los personajes **no entrenados** en Operación Armadura sufren la penalización total de cualquier armadura.
+- **Restricciones:** Solo pueden caminar y realizar ataques simples (no se permiten beneficios de rango).
+- **Armadura potenciada:** Los personajes no entrenados no pueden usar armaduras potenciadas.
+
+*Nota: La penalización de AP de armaduras y escudos es acumulativa.*
 
 ## Armadura de Combate
 {{< specialty attr="FUE" untrained="yes" cost="3" >}}
 
-Esta especialidad representa el nivel de maestría en el uso de la armadura, así como el entrenamiento especializado necesario para usar armaduras potenciadas, permitiendo al personaje obtener el máximo de cualquier armadura.
+Esta especialidad representa el nivel de dominio en el uso de armaduras, así como el entrenamiento especializado necesario para usar armaduras potenciadas, permitiendo al personaje obtener el máximo provecho de cualquier armadura.
 
-- **Rango 1 [Operación Mejorada]:** La reducción de las penalizaciones a la tirada de acción y al modificador de resistencia de Destreza pasa a ser de 2 pasos. Mejora a 3 pasos en el **Rango 4**, 4 pasos en el **Rango 6** y 5 pasos en el **Rango 10**.
-- **Rango 2 [Sacudirse Aturdimientos]:** El daño por aturdimiento (incluido el secundario) se reduce en 1 punto. Aumenta en 1 por cada 2 rangos alcanzados (máximo 6 puntos en el **Rango 12**).
-- **Rango 7 [Operación de Armadura Potenciada]:** El personaje ha dominado la sincronización necesaria para operar trajes de Armadura Potenciada.
+- **Rango 1 [Operación mejorada]:** La reducción de la prueba de acción y las penalizaciones del modificador de resistencia a la Destreza se convierten en 2 pasos. Esto mejora a 3 pasos en **Rango 4**, 4 pasos en **Rango 6** y 5 pasos en **Rango 10**.
+- **Rango 2 [Liberarse del aturdimiento]:** El daño del aturdimiento (incluido el secundario) se reduce en 1 punto. Esto aumenta en 1 por cada 2 rangos alcanzados (máximo 6 puntos en **Rango 12**).
+- **Rango 7 [Operación de Armadura potenciada]:** El personaje ha dominado la sincronización necesaria para operar los trajes Armadura potenciada.
 
 ---
 
 ## Armadura Táctica
 {{< specialty attr="INT" untrained="yes" cost="3" >}}
 
-Esta habilidad de especialidad entra en juego cuando se utilizan armaduras CON equipo integrado (sensores, comunicaciones, etc.). No se aplica al armamento montado, que utiliza su propia habilidad específica. También se puede usar para resistir ataques electrónicos como el pirateo de sensores o las interferencias.
+Esta habilidad especial entra en juego cuando se utilizan armaduras CON equipos integrados (sensores, comunicaciones, etc.). No se aplica al armamento montado, que utiliza su propia habilidad específica. También se puede utilizar para resistir ataques electrónicos como piratería o interferencia de sensores.
 
-- **Rango 2 [Multitarea Táctica]:** El personaje puede realizar una operación CON el equipo integrado del traje (ciclar sensores, cambiar frecuencias) sin gastar una acción. Se gana una operación gratuita adicional en el **Rango 6** y el **Rango 10**.
-- **Rango 5 [Competencia en Sensores]:** Recibe una **bonificación de -1 paso** en las tiradas que impliquen la operación o interpretación de los sensores integrados del traje.
-- **Rango 7 [Contraintrusión]:** Gana una **bonificación de -1 paso** para resistir intentos de guerra electrónica o pirateo dirigidos al traje. Esto mejora a **-2 pasos** en el **Rango 11**.
+- **Rango 2 [Multitarea táctica]:** El personaje puede realizar una operación CON el equipo integrado del traje (sensores de ciclismo, cambio de frecuencias) sin gastar una acción. Se obtiene una operación gratuita adicional en **Rango 6** y **Rango 10**.
+- **Rango 5 [Competencia CON sensores]:** Reciba una **bonificación de -1 paso** en las comprobaciones que involucren el funcionamiento o la interpretación de los sensores integrados del traje.
+- **Rango 7 [Contraintrusión]:** Obtén una **bonificación de -1 paso** para resistir la guerra electrónica o los intentos de piratería dirigidos al traje. Esto mejora a **-2 pasos** en **Rango 11**.
 
 ---
 
 ## Sistemas de propulsión
 {{< specialty attr="INT" untrained="yes" cost="3" >}}
 
-Esta habilidad de especialidad representa la maestría en el uso de sistemas de propulsión integrados, como mochilas cohete, propulsores subacuáticos o incluso sistemas de deceleración asistida por gravedad (GADS).
+Esta habilidad especializada representa el dominio en el uso de sistemas de propulsión integrados, como mochilas propulsoras, propulsores submarinos o sistemas de desaceleración asistida por gravedad (GADS).
 
-- **Rango 2 [Gestión Térmica/Combustible]:** Optimiza el combustible o la disipación de calor, extendiendo el tiempo operativo de las unidades de propulsión en un 50%.
-- **Rango 4 [Calibración Vectorial e Integración Aeróbica]:** Ajusta las toberas de empuje para tareas específicas, proporcionando una **bonificación de -1 paso** a las tiradas de maniobra. Además, el personaje está suficientemente familiarizado CON los sistemas de propulsión de la armadura para usar la habilidad de especialidad **Acrobacia** para maniobras complejas mientras usa el traje.
-- **Rango 7 [Empuje Máximo]:** Realiza una tirada de Sistemas de Propulsión para aumentar la velocidad durante el asalto: Ordinario (+25%), Bueno (+50%) o Asombroso (+100%). Cada asalto consecutivo de forzar el motor incurre en una penalización acumulativa de +1 paso a la tirada. La penalización se reduce en 1 por cada asalto que no se use la propulsión.
+- **Rango 2 [Gestión térmica/combustible]:** Optimiza la disipación de combustible o calor, ampliando el tiempo operativo de las unidades de propulsión en un 50 %.
+- **Rango 4 [Calibración vectorial e integración de acrobacias aéreas]:** Ajusta las boquillas de empuje para tareas específicas, lo que proporciona una **bonificación de -1 paso** en las comprobaciones de maniobra. Además, el personaje está lo suficientemente familiarizado CON los sistemas de propulsión de armaduras como para usar la habilidad especial **Acrobacias aéreas** para maniobras complejas mientras usa el traje.
+- **Rango 7 [Consumo máximo]:** Haz una prueba de Sistemas de propulsión para aumentar la velocidad de la ronda: Ordinario (+25%), Bueno (+50%) o Increíble (+100%). Cada ronda consecutiva de forzar el motor conlleva una penalización acumulativa de +1 paso. La penalización se reduce en 1 por cada ronda en la que no se utiliza la propulsión.
 
 ---
 
 ## Escudos
 {{< specialty attr="FUE" untrained="yes" cost="3" >}}
 
-Se centra en el uso táctico de escudos físicos, de energía o balísticos.
+Se centra en el uso táctico de escudos físicos, energéticos o balísticos.
 
-- **Rango 3 [Bloqueo Reactivo]:** Gasta la siguiente acción disponible para realizar una tirada enfrentada contra un atacante. Si tiene éxito, el ataque queda anulado. (Nota: Solo los escudos balísticos o grandes de materiales del mismo PL pueden bloquear fuego a distancia).
-- **Rango 4 [Modificador de Resistencia]:** Proporciona una mejora de **+1** al modificador de resistencia de **Fuerza**. No se acumula CON los beneficios de Armas Cuerpo a Cuerpo.
-- **Rango 6 [Carga Táctica]:** Anula la bonificación estándar de +2 pasos que reciben los oponentes para golpear a un objetivo que carga.
-- **Rango 8 [Anclaje de Retroceso]:** Reduce en 1 paso la penalización del dado de situación por ráfaga (Burst) o fuego automático (Autofire) cuando se usan armas de una mano CON un escudo.
-- **Rango 12 [Cobertura Solapada]:** Comparte la bonificación del modificador de resistencia del escudo CON un aliado a menos de 2 metros contra un ataque a distancia por asalto.
+- **Rango 3 [Bloqueo reactivo]:** Gasta la siguiente acción disponible para realizar una prueba enfrentada contra un atacante. Si tiene éxito, el ataque es negado. (Nota: Sólo los escudos balísticos o grandes del PL apropiado pueden bloquear el fuego a distancia).
+- **Rango 4 [Modificador de resistencia]:** Proporciona una **mejora de +1** al modificador de resistencia de **Fuerza**. Esto no se acumula CON los beneficios de las armas cuerpo a cuerpo.
+- **Rango 6 [Carga táctica]:** Anula la bonificación estándar de +2 pasos que reciben los oponentes al golpear a un objetivo que carga.
+- **Rango 8 [Ancla de retroceso]:** Reduce la penalización del dado de situación por Explosión o Autodisparo en 1 paso cuando se usan armas de una mano CON escudo.
+- **Rango 12 [Cobertura superpuesta]:** Comparte la bonificación del modificador de resistencia del escudo CON un aliado en un radio de 2 metros contra un ataque a distancia por ronda.
 
 ---
 
