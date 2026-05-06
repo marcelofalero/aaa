@@ -497,7 +497,7 @@
                     "skill": "Navigation",
                     "attribute": "WIL",
                     "url": "/skills/navigation",
-                    "cost": 3,
+                    "cost": 6,
                     "type": "Broad",
                     "items": [
                         {

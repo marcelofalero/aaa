@@ -497,7 +497,7 @@
                     "skill": "Navegación",
                     "attribute": "VOL",
                     "url": "/es/skills/navigation",
-                    "cost": 3,
+                    "cost": 6,
                     "type": "Broad",
                     "items": [
                         {
