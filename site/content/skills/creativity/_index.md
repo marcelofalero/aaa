@@ -15,3 +15,30 @@ A blank line is provided under the Creativity skill on the character sheet for a
 
 ---
 
+## The Intangible
+{{< specialty attr="WIL" untrained="yes" cost="3" >}}
+
+Focuses on abstract, digital, and ethereal expression, such as grid-sculpting (virtual environments), psionic illusions, and the aesthetics of complex algorithms. This specialty is the primary support for digital infiltration, mental powers, and ephemeral constructs.
+### Rank Benefits
+▶ **Rank 3 [Artistic Flourish]:** The character can add a "signature" to their work. Any creativity skill check made to support another skill that results in an **Amazing** success grants the character an extra **Last Resort** point that must be used in the supported skill.
+
+---
+
+## The Shape
+{{< specialty attr="WIL" untrained="yes" cost="3" >}}
+
+Focuses on physical, structural, and visual expression, such as sculpting, painting, blueprint design, and technical prototyping. This specialty is the primary support for engineering, physical craftsmanship, and "things with defined structure."
+### Rank Benefits
+▶ **Rank 3 [Artistic Flourish]:** The character can add a "signature" to their work. Any creativity skill check made to support another skill that results in an **Amazing** success grants the character an extra **Last Resort** point that must be used in the supported skill.
+
+---
+
+## The Word
+{{< specialty attr="WIL" untrained="yes" cost="3" >}}
+
+Focuses on linguistic and auditory expression, such as writing, oratory, and singing. This specialty is the primary support for social, performance, and leadership endeavors.
+### Rank Benefits
+▶ **Rank 3 [Artistic Flourish]:** The character can add a "signature" to their work. Any creativity skill check made to support another skill that results in an **Amazing** success grants the character an extra **Last Resort** point that must be used in the supported skill.
+
+---
+

@@ -152,3 +152,19 @@ bonificación.
 
 ---
 
+## Ciencias forenses
+{{< specialty attr="WIL" untrained="yes" cost="3" >}}
+
+La ciencia forense es la aplicación del conocimiento médico y científico a problemas legales e investigaciones criminales. Se utiliza para determinar la causa de la muerte, identificar restos y analizar pruebas de la escena de un crimen.
+⊗ **Efecto incrementado:** Un personaje recibe una **bonificación de
+-1 paso** en el rango 3, **-2** en el rango 6, **-3** en el rango 9 y **-4** en el rango 12 en ciertas otras tiradas de habilidad que puedan ser asistidas por esta especialidad (por ejemplo, Investigar, Ley).
+
+---
+
+## Xenomedicine
+{{< specialty attr="WIL" untrained="no" cost="3" >}}
+
+
+
+---
+

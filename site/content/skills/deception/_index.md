@@ -31,3 +31,23 @@ This specialty skill represents a character''s proficiency at various games of c
 
 ---
 
+## Gamble-Logic-Games
+{{< specialty attr="INT" untrained="yes" cost="3" >}}
+
+**Attribute: INT.**
+Proficiency at games of strategy, counting, and probability (e.g., Blackjack, Chess, and other complex strategy games).
+### Rank Benefits
+▶ **Rank 3, 6, 9, 12 [Pro Advantage]:** The character receives a situation die bonus to gambling checks: **Rank 3 (-1)**, **Rank 6 (-2)**, **Rank 9 (-3)**, **Rank 12 (-4)**.
+
+---
+
+## Gamble-Nerve-Games
+{{< specialty attr="PER" untrained="yes" cost="3" >}}
+
+**Attribute: PER.**
+Proficiency at games of bluffing, reading tells, and psychology (e.g., Poker, Liar's Dice).
+### Rank Benefits
+▶ **Rank 3, 6, 9, 12 [Pro Advantage]:** The character receives a situation die bonus to gambling checks: **Rank 3 (-1)**, **Rank 6 (-2)**, **Rank 9 (-3)**, **Rank 12 (-4)**.
+
+---
+

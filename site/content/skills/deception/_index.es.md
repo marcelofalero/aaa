@@ -31,3 +31,23 @@ Esta habilidad especial representa la competencia de un personaje en varios jueg
 
 ---
 
+## Gamble-Logic-Games
+{{< specialty attr="INT" untrained="yes" cost="3" >}}
+
+**Attribute: INT.**
+Proficiency at games of strategy, counting, and probability (e.g., Blackjack, Chess, and Otros complex strategy games).
+### Rank Benefits
+▶ **Rank 3, 6, 9, 12 [Pro Advantage]:** The Personaje receives a Dado de Situación bonus to gambling checks: **Rank 3 (-1)**, **Rank 6 (-2)**, **Rank 9 (-3)**, **Rank 12 (-4)**.
+
+---
+
+## Gamble-Nerve-Games
+{{< specialty attr="PER" untrained="yes" cost="3" >}}
+
+**Attribute: PER.**
+Proficiency at games of bluffing, reading tells, and psychology (e.g., Poker, Liar's Dice).
+### Rank Benefits
+▶ **Rank 3, 6, 9, 12 [Pro Advantage]:** The Personaje receives a Dado de Situación bonus to gambling checks: **Rank 3 (-1)**, **Rank 6 (-2)**, **Rank 9 (-3)**, **Rank 12 (-4)**.
+
+---
+

@@ -425,6 +425,30 @@
                             "cost": 3,
                             "type": "Specialty",
                             "css_class": ""
+                        },
+                        {
+                            "skill": "The Intangible",
+                            "attribute": "VOL",
+                            "url": "/es/skills/creativity#the-intangible",
+                            "cost": 3,
+                            "type": "Specialty",
+                            "css_class": ""
+                        },
+                        {
+                            "skill": "The Shape",
+                            "attribute": "VOL",
+                            "url": "/es/skills/creativity#the-shape",
+                            "cost": 3,
+                            "type": "Specialty",
+                            "css_class": ""
+                        },
+                        {
+                            "skill": "The Word",
+                            "attribute": "VOL",
+                            "url": "/es/skills/creativity#the-word",
+                            "cost": 3,
+                            "type": "Specialty",
+                            "css_class": ""
                         }
                     ]
                 },
@@ -751,6 +775,22 @@
                             "attribute": "PER",
                             "url": "/es/skills/deception#juego",
                             "cost": 4,
+                            "type": "Specialty",
+                            "css_class": ""
+                        },
+                        {
+                            "skill": "Gamble-Logic-Games",
+                            "attribute": "INT",
+                            "url": "/es/skills/deception#gamble-logic-games",
+                            "cost": 3,
+                            "type": "Specialty",
+                            "css_class": ""
+                        },
+                        {
+                            "skill": "Gamble-Nerve-Games",
+                            "attribute": "PER",
+                            "url": "/es/skills/deception#gamble-nerve-games",
+                            "cost": 3,
                             "type": "Specialty",
                             "css_class": ""
                         }
@@ -1235,6 +1275,22 @@
                             "cost": 3,
                             "type": "Specialty",
                             "css_class": "trained-only"
+                        },
+                        {
+                            "skill": "Ciencias forenses",
+                            "attribute": "VOL",
+                            "url": "/es/skills/medical-science#ciencias-forenses",
+                            "cost": 3,
+                            "type": "Specialty",
+                            "css_class": ""
+                        },
+                        {
+                            "skill": "Xenomedicine",
+                            "attribute": "VOL",
+                            "url": "/es/skills/medical-science#xenomedicine",
+                            "cost": 3,
+                            "type": "Specialty",
+                            "css_class": "trained-only"
                         }
                     ]
                 },
@@ -1363,6 +1419,14 @@
                             "skill": "Repair",
                             "attribute": "VOL",
                             "url": "/es/skills/technical-science#repair",
+                            "cost": 3,
+                            "type": "Specialty",
+                            "css_class": ""
+                        },
+                        {
+                            "skill": "Invención",
+                            "attribute": "VOL",
+                            "url": "/es/skills/technical-science#invencion",
                             "cost": 3,
                             "type": "Specialty",
                             "css_class": ""

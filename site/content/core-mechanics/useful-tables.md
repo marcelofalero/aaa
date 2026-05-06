@@ -570,3 +570,30 @@ For a Knowledge skill check, the Gamemaster determines which category the inform
 | **Good** | d8+2s | d4+2w | d4w |
 | **Amazing** | d4w | d6+3w | d4+2w |
 | | | d4+3m | d6+2w |
+---
+
+### TABLE P25: ENCOUNTER SKILL EFFECTS
+
+| Starting Attitude | Ordinary Success | Good Success | Amazing Success |
+| :---------------- | :--------------- | :----------- | :-------------- |
+| **Hostile**       | Hostile (Passable) | Neutral      | Friendly        |
+| **Neutral**       | Neutral (Passable) | Friendly     | Charmed         |
+| **Friendly**      | Friendly (Passable)| Charmed      | Fanatic         |
+| **Charmed**       | Charmed (Passable) | Fanatic      | Fanatic         |
+
+**Notes on Failures:**
+*   **Failure:** The target's attitude remains unchanged.
+*   **Critical Failure:** The character has caused a severe offense. The attitude worsens by one or two grades (e.g., Neutral to Hostile), and the target may become **Combative**.
+
+---
+
+### ATTITUDE MODIFIERS (The Situation Die)
+
+| Target Attitude | Situation Die Modifier |
+| :-------------- | :--------------------- |
+| **Combative**   | +3 steps               |
+| **Hostile**     | +2 steps               |
+| **Neutral**     | +0 (No modifier)       |
+| **Friendly**    | -1 step (Bonus)        |
+| **Charmed**     | -2 steps (Bonus)       |
+| **Fanatic**     | -3 steps (Bonus)       |

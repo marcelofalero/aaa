@@ -500,6 +500,19 @@
                         "equipment": "A high-end micro-recording rig, an official (or highly accurate forged) press pass, a burner comm-link, and a portable data- scrubber.",
                         "special_ability": "**Off the Record:** You receive a -1 step bonus to [Interaction-Interview] ({{< relref \"/skills/interaction/#interview\" >}}) or [Street Smart-Street Knowledge] ({{< relref \"/skills/street-smart/#street-knowledge\" >}}) checks when trying to coax rumors, classified information, or unofficial statements out of a reluctant source.",
                         "tendencies": "**The Exposé:** Prioritize documenting a crime, conspiracy, or event over stopping it, putting yourself in tactical danger to ensure the footage or story survives.<br>**The Hard Question:** Aggressively interrogate or provoke a powerful individual in a social setting, destroying diplomatic progress in order to gauge their reaction."
+                    },
+                    {
+                        "name": "The War Hero",
+                        "summary": "You are defined by a single, highly publicized conflict.",
+                        "favored_broad_skill": "",
+                        "url": "/backgrounds/war-hero/",
+                        "skill_url": "/backgrounds/war-hero/",
+                        "favored_specialty_skills": "- [Leadership-Inspire] ({{< relref \"/skills/leadership/#inspire\" >}})\n- [Stamina-Endurance] ({{< relref \"/skills/stamina/#endurance\" >}})\n- [Resolve- Mental Resolve] ({{< relref \"/skills/resolve/#mental-resolve\" >}})",
+                        "favored_perks": "[Celebrity] ({{< relref \"/perks_flaws/#celebrity\" >}})",
+                        "flaw": "[Old Injury] ({{< relref \"/perks_flaws/#old-injury\" >}}) (A lasting physical reminder of the event that made you famous).",
+                        "equipment": "A personalized or heavily battle-scarred signature weapon, official combat medals, a rugged military jacket, and a supply of medical painkillers.",
+                        "special_ability": "**Burden of Glory:** You receive a -1 step bonus to [Interaction] ({{< relref \"/skills/interaction/\" >}}) or [Leadership] ({{< relref \"/skills/leadership/\" >}}) skill checks when dealing with veterans, active military personnel, or patriotic citizens who recognize your service.",
+                        "tendencies": "- **The Living Legend:** Voluntarily accept a significant disadvantage or take the brunt of an attack to protect civilians or allies, driven by the need to live up to your impossible reputation.\n- **The Ghost of the Past:** React to a current situation using the outdated or traumatic context of your past war, complicating a simple negotiation or infiltration by treating it like a battlefield."
                     }
                 ]
             }

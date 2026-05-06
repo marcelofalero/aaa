@@ -186,13 +186,7 @@ items:
                 ⊗ **Rango 10:** Las acciones físicas en gravedad cero reciben una bonificación de -1 paso. (La bonificación de gravedad ligera nunca mejora más allá de -1 paso).
                 **Ventaja de Sesheyan** Los personajes Sesheyan sin la habilidad de entrenamiento de gravedad cero funcionan como si la tuvieran en el rango 1. Si un sesheyan compra esta habilidad, las penalizaciones se reducen en 1 paso y las bonificaciones mejoran en la misma cantidad (bonificación máxima -2 en gravedad ligera).
         trained_only: true
-        rank_benefits:
-          - rank: 4
-            title: Zero-g penalty is reduced to +1
-          - rank: 7
-            title: Zero-g penalty is eliminated
-          - rank: 10
-            title: Physical actions in zero-g receive a -1 step bonus
+        rank_benefits: []
     trained_only: false
   administration:
     attribute: WIL
@@ -443,9 +437,7 @@ items:
                 - **Increíble:** +3 pasos.
                 *Nota: Esto no protege el soporte. Los trucos no se pueden combinar con otras acciones (por ejemplo, atacar mientras se salta).*
         trained_only: false
-        rank_benefits:
-          - rank: 3
-            title: Trick Riding
+        rank_benefits: []
       animal-training:
         attribute: WIL
         cost: 3
@@ -556,14 +548,8 @@ items:
             title: Improved Operation
           - rank: 2
             title: Shaking Off Stuns
-          - rank: 4
-            title: Improved Operation
-          - rank: 6
-            title: Improved Operation
           - rank: 7
             title: Powered Armor Operation
-          - rank: 10
-            title: Improved Operation
       tactical-armor:
         attribute: INT
         cost: 3
@@ -591,13 +577,7 @@ items:
             title: Tactical Multi-tasking
           - rank: 5
             title: Sensor Proficiency
-          - rank: 6
-            title: Tactical Multi-tasking
           - rank: 7
-            title: Counter-Intrusion
-          - rank: 10
-            title: Tactical Multi-tasking
-          - rank: 11
             title: Counter-Intrusion
       propulsion-systems:
         attribute: INT
@@ -1039,13 +1019,7 @@ items:
                 - **Rango 10:** Reducción de penalización de -4 pasos.
                 *Nota: Este beneficio sólo reduce o elimina sanciones; nunca proporciona una bonificación.
         trained_only: false
-        rank_benefits:
-          - rank: 4
-            title: Increased Effect
-          - rank: 7
-            title: Increased Effect
-          - rank: 10
-            title: Increased Effect
+        rank_benefits: []
       small-business:
         attribute: INT
         cost: 3
@@ -1074,13 +1048,7 @@ items:
                 - **Rango 8:** -Bonificación de 3 pasos.
                 - **Rango 12:** -Bonificación de 4 pasos.
         trained_only: false
-        rank_benefits:
-          - rank: 4
-            title: Increased Effect
-          - rank: 8
-            title: Increased Effect
-          - rank: 12
-            title: Increased Effect
+        rank_benefits: []
     trained_only: false
   computer-science:
     attribute: INT
@@ -1219,6 +1187,13 @@ items:
               description: |-
                 El disfraz es la capacidad de cambiar tu apariencia para parecerte a otra persona o mezclarte con una multitud. Si bien la habilidad **Acto de entretenimiento** se utiliza para maquillaje y actuación profesional, esta especialidad cubre aplicaciones de disfraz más inmediatas y prácticas, como cambiarse de ropa, usar una peluca o usar accesorios simples para evitar el reconocimiento. El dado de situación de Disfraz de un personaje es modificado por el modificador de Conciencia-percepción del observador.
         trained_only: false
+        rank_benefits:
+          - rank: 4
+            title: Improved Disguise
+          - rank: 8
+            title: Improved Disguise
+          - rank: 12
+            title: Improved Disguise
       pickpocket:
         attribute: DEX
         cost: 3
@@ -1249,6 +1224,15 @@ items:
                 ### Beneficios de rango
                 - **Rango 3, 6, 9, 12 [Se necesita uno para conocer uno]:** El modificador de resistencia a la voluntad del personaje (solo para detectar un intento de carterista) mejora en una penalización de +1 al intento del enemigo en el rango 3, +2 pasos en el rango 6, +3 pasos en el rango 9 y +4 pasos en el rango 12.
         trained_only: false
+        rank_benefits:
+          - rank: 3
+            title: It Takes One to Know One
+          - rank: 6
+            title: It Takes One to Know One
+          - rank: 9
+            title: It Takes One to Know One
+          - rank: 12
+            title: It Takes One to Know One
       stealth:
         attribute: DEX
         cost: 3
@@ -1279,6 +1263,15 @@ items:
                 ### Sombra (Siguiendo)
                 Capacidad de seguir un objetivo sin ser notado. Modificado por el modificador de resistencia a la Voluntad del objetivo y detectado por Conciencia-intuición.
         trained_only: false
+        rank_benefits:
+          - rank: 3
+            title: Sneak Attack
+          - rank: 4
+            title: Improved Stealth
+          - rank: 8
+            title: Improved Stealth
+          - rank: 12
+            title: Improved Stealth
     trained_only: false
   creativity:
     attribute: WIL
@@ -1309,6 +1302,66 @@ items:
               description: |-
                 Se proporciona una línea en blanco debajo de la habilidad Creatividad en la hoja de personaje para que la use un jugador si su personaje se especializa en algún aspecto de esta habilidad. El Director de Juego determinará si una determinada habilidad especializada está permitida, generalmente basándose en si define un campo de interés lo suficientemente limitado. Por ejemplo, la ilustración podría permitirse como especialidad de la creatividad, o podría ser necesario que un personaje sea más específico destacando los gráficos por computadora o el arte holográfico como su área de especialización.
         trained_only: false
+      the-intangible:
+        attribute: WIL
+        cost: 3
+        url: /skills/creativity#the-intangible
+        localized:
+          - en:
+              name: The Intangible
+              description: |-
+                Focuses on abstract, digital, and ethereal expression, such as grid-sculpting (virtual environments), psionic illusions, and the aesthetics of complex algorithms. This specialty is the primary support for digital infiltration, mental powers, and ephemeral constructs.
+                ### Rank Benefits
+                ▶ **Rank 3 [Artistic Flourish]:** The character can add a "signature" to their work. Any creativity skill check made to support another skill that results in an **Amazing** success grants the character an extra **Last Resort** point that must be used in the supported skill.
+          - es:
+              name: The Intangible
+              description: 'Focuses on abstract, digital, and ethereal expression, such as grid-sculpting (virtual environments), psionic illusions, and the aesthetics of complex algorithms. This specialty is the primary support for digital infiltration, mental powers, and ephemeral constructs.
+
+                ▶ **Rango 3 [Artistic Flourish]:** The personaje can add a "signature" to their work. Any creativity skill check made to support another skill that results in an **Asombroso** success grants the personaje an extra **Last Resort** point that must be used in the supported skill.'
+        trained_only: false
+        rank_benefits:
+          - rank: 3
+            title: Artistic Flourish
+      the-shape:
+        attribute: WIL
+        cost: 3
+        url: /skills/creativity#the-shape
+        localized:
+          - en:
+              name: The Shape
+              description: |-
+                Focuses on physical, structural, and visual expression, such as sculpting, painting, blueprint design, and technical prototyping. This specialty is the primary support for engineering, physical craftsmanship, and "things with defined structure."
+                ### Rank Benefits
+                ▶ **Rank 3 [Artistic Flourish]:** The character can add a "signature" to their work. Any creativity skill check made to support another skill that results in an **Amazing** success grants the character an extra **Last Resort** point that must be used in the supported skill.
+          - es:
+              name: The Shape
+              description: 'Focuses on physical, structural, and visual expression, such as sculpting, painting, blueprint design, and technical prototyping. This specialty is the primary support for engineering, physical craftsmanship, and "things with defined structure."
+
+                ▶ **Rango 3 [Artistic Flourish]:** The personaje can add a "signature" to their work. Any creativity skill check made to support another skill that results in an **Asombroso** success grants the personaje an extra **Last Resort** point that must be used in the supported skill.'
+        trained_only: false
+        rank_benefits:
+          - rank: 3
+            title: Artistic Flourish
+      the-word:
+        attribute: WIL
+        cost: 3
+        url: /skills/creativity#the-word
+        localized:
+          - en:
+              name: The Word
+              description: |-
+                Focuses on linguistic and auditory expression, such as writing, oratory, and singing. This specialty is the primary support for social, performance, and leadership endeavors.
+                ### Rank Benefits
+                ▶ **Rank 3 [Artistic Flourish]:** The character can add a "signature" to their work. Any creativity skill check made to support another skill that results in an **Amazing** success grants the character an extra **Last Resort** point that must be used in the supported skill.
+          - es:
+              name: The Word
+              description: 'Focuses on linguistic and auditory expression, such as writing, oratory, and singing. This specialty is the primary support for social, performance, and leadership endeavors.
+
+                ▶ **Rango 3 [Artistic Flourish]:** The personaje can add a "signature" to their work. Any creativity skill check made to support another skill that results in an **Asombroso** success grants the personaje an extra **Last Resort** point that must be used in the supported skill.'
+        trained_only: false
+        rank_benefits:
+          - rank: 3
+            title: Artistic Flourish
     trained_only: false
   culture:
     attribute: PER
@@ -1384,6 +1437,7 @@ items:
 
                 ⊗ **Rango 12:** -Bono de 4 pasos.
         trained_only: true
+        rank_benefits: []
       diplomacy:
         attribute: PER
         cost: 3
@@ -1395,8 +1449,7 @@ items:
                 This specialty skill allows a character to improve his ability to reach agreements and understandings with representatives of different nations, cultures, subcultures and species. In general, diplomacy will come into play when a character wants to reach an accord with a member of a different culture. The skill can only be used on a particular target if the character has at least rank 1 in the specific Culture—etiquette skill that pertains to the target''s culture. Interaction and its specialty skills are usually used for interpersonal dealings between members of the same culture, but the Gamemaster may decide that Culture—diplomacy is also useful in such cases. (If so, it''s not necessary for a character to have the etiquette skill that pertains to his or her culture in order to use diplomacy on other members of that culture.) Depending on the nature of the issue to be resolved, the diplomacy skill check may be a single dice roll, or it may be a complex skill check requiring an extended period of time to complete.
           - es:
               name: Etiqueta
-              description: 'Esta habilidad especial permite al personaje mejorar su capacidad para llegar a acuerdos y entendimientos con representantes de diferentes naciones, culturas, subculturas y especies. En general, la diplomacia entrará en juego cuando un personaje quiera llegar a un acuerdo con un miembro de una cultura diferente. La habilidad solo se puede usar en un objetivo en particular si el personaje tiene al menos el rango 1 en la Cultura específica: habilidad de etiqueta que pertenece a la cultura del objetivo. La interacción y sus habilidades especiales se utilizan normalmente para tratos interpersonales entre miembros de la misma cultura, pero el Director de Juego puede decidir que la diplomacia cultural también sea útil en tales casos. (Si es así, no es necesario que un personaje tenga la habilidad de etiqueta que pertenece a su cultura para poder usar la diplomacia con otros miembros de esa cultura). Dependiendo de la naturaleza del problema a resolver, la prueba de
-                habilidad de diplomacia puede ser una sola tirada de dados, o puede ser una prueba de habilidad compleja que requiera un período prolongado de tiempo para completarse.'
+              description: 'Esta habilidad especial permite al personaje mejorar su capacidad para llegar a acuerdos y entendimientos con representantes de diferentes naciones, culturas, subculturas y especies. En general, la diplomacia entrará en juego cuando un personaje quiera llegar a un acuerdo con un miembro de una cultura diferente. La habilidad solo se puede usar en un objetivo en particular si el personaje tiene al menos el rango 1 en la Cultura específica: habilidad de etiqueta que pertenece a la cultura del objetivo. La interacción y sus habilidades especiales se utilizan normalmente para tratos interpersonales entre miembros de la misma cultura, pero el Director de Juego puede decidir que la diplomacia cultural también sea útil en tales casos. (Si es así, no es necesario que un personaje tenga la habilidad de etiqueta que pertenece a su cultura para poder usar la diplomacia con otros miembros de esa cultura). Dependiendo de la naturaleza del problema a resolver, la prueba de habilidad de diplomacia puede ser una sola tirada de dados, o puede ser una prueba de habilidad compleja que requiera un período prolongado de tiempo para completarse.'
         trained_only: false
       first-encounter:
         attribute: PER
@@ -1474,6 +1527,28 @@ items:
                 Esta habilidad especial representa la competencia de un personaje en varios juegos de azar. con cada compra de la habilidad especial, el jugador selecciona un juego diferente (sujeto a la aprobación del Director de Juego) para que su personaje adquiera habilidades. con una prueba de apuesta exitosa, un personaje puede estimar las probabilidades, determinar si un juego en particular ha sido manipulado, contar cartas, detectar a un tramposo u otro jugador experto y aumentar sus propias probabilidades de ganar. Un jugador puede mejorar sus probabilidades de ganar jugando con habilidad y honestidad o haciendo trampa. Si un personaje juega honestamente, el ganador en un concurso de apuestas es aquel que logra el mayor nivel de éxito, y cada empate representa un aumento en las apuestas. La prueba de habilidad de un jugador se realiza con una **bonificación de -2** si juega contra un **oponente no entrenado** (alguien que no tiene la habilidad general de Engaño), sin **ningún modificador** si juega contra un **oponente entrenado** (alguien que tiene Engaño y tal vez también apuesta, pero en el mismo rango o en uno inferior), o con una **penalización de +2** si juega contra un **oponente entrenado con un rango de habilidad superior**. Si un personaje decide hacer trampa, se aplican diferentes modificadores: una **bonificación -3** si juega contra un **oponente no entrenado**, una **penalización +1** si juega contra un **oponente entrenado** y una **penalización +3** si juega contra un **oponente entrenado con un rango de habilidad superior**. Sin embargo, los pagos son mejores dependiendo del resultado de la prueba que finaliza el concurso: en cualquier **Fallo Crítico**, el personaje es sorprendido haciendo trampa. con un éxito **Marginal**, gana el bote; con un éxito **ordinario**, gana el bote más una apuesta adicional igual a la mitad del bote; con un **Bueno**, gana el bote más una apuesta adicional de igual cantidad;
                 **Increíble**, gana el bote más una apuesta adicional del doble de esa cantidad. Como opción, puedes usar las reglas "Personaje contra Personaje" de la página 63 para determinar el resultado cuando los personajes juegan entre sí. En este caso, sin embargo, el tamaño del bote se acuerda antes de tirar los dados.
         trained_only: false
+      gamble-logic-games:
+        attribute: INT
+        cost: 3
+        url: /skills/deception#gamble-logic-games
+        localized:
+          - en:
+              name: Gamble-Logic-Games
+              description: "**Attribute: INT.**\nProficiency at games of strategy, counting, and probability (e.g., Blackjack, Chess, and other complex strategy games).\n### Rank Benefits\n▶ **Rank 3, 6, 9, 12 [Pro Advantage]:** The character receives a situation die bonus to gambling checks: **Rank 3 (-1)**, **Rank 6 (-2)**, **Rank 9 (-3)**, **Rank 12 (-4)**."
+          - es:
+              name: Gamble-Logic-Games
+              description: ''
+      gamble-nerve-games:
+        attribute: PER
+        cost: 3
+        url: /skills/deception#gamble-nerve-games
+        localized:
+          - en:
+              name: Gamble-Nerve-Games
+              description: "**Attribute: PER.**\nProficiency at games of bluffing, reading tells, and psychology (e.g., Poker, Liar's Dice).\n### Rank Benefits\n▶ **Rank 3, 6, 9, 12 [Pro Advantage]:** The character receives a situation die bonus to gambling checks: **Rank 3 (-1)**, **Rank 6 (-2)**, **Rank 9 (-3)**, **Rank 12 (-4)**."
+          - es:
+              name: Gamble-Nerve-Games
+              description: ''
     trained_only: false
   demolitions:
     attribute: WIL
@@ -1504,6 +1579,15 @@ items:
               description: |-
                 La habilidad de desarmar permite a un personaje intentar inutilizar bombas, minas y otros paquetes de demolición antes de que exploten. Un personaje no necesita realizar una prueba de habilidad para desarmar su propio trabajo o cualquier explosivo común. Se requiere una prueba de habilidad cuando el tiempo es esencial, si el explosivo es de una fabricación inusual o si ha sido equipado con dispositivos de seguridad o trampas explosivas. Excepto en los casos más simples, se trata de una prueba de habilidad compleja (consulte la página 62).
         trained_only: false
+        rank_benefits:
+          - rank: 3
+            title: Improved Handling
+          - rank: 6
+            title: Disaster Avoidance
+          - rank: 9
+            title: Improved Handling
+          - rank: 12
+            title: Improved Handling
       scratch-built-explosives:
         attribute: WIL
         cost: 3
@@ -1536,6 +1620,15 @@ items:
               description: |-
                 Esta habilidad especial permite al personaje mejorar su capacidad para colocar cargas explosivas fabricadas. Consulta la descripción de la habilidad amplia Demoliciones para obtener información sobre cómo se emplea esta habilidad.
         trained_only: false
+        rank_benefits:
+          - rank: 3
+            title: Improved Handling
+          - rank: 6
+            title: Disaster Avoidance
+          - rank: 9
+            title: Improved Handling
+          - rank: 12
+            title: Improved Handling
     trained_only: false
   entertainment:
     attribute: PER
@@ -1604,6 +1697,15 @@ items:
 
                 *Ejemplos: Actuar + Seducir; Danza + Carterista; Cantar + Burlarse; Instrumento + Inspiración.*'
         trained_only: true
+        rank_benefits:
+          - rank: 1
+            title: Skill Synergy
+          - rank: 4
+            title: Skill Synergy
+          - rank: 8
+            title: Skill Synergy
+          - rank: 12
+            title: Skill Synergy
       sing:
         attribute: PER
         cost: 3
@@ -1626,6 +1728,15 @@ items:
                 **-1 bonificación** a la prueba de la otra habilidad; en el rango 4 la bonificación es
                 **-2**; en el rango 8 la bonificación es **-3**; y en el rango 12 la bonificación es **-4**. Las posibles combinaciones de habilidades a las que podría aplicarse este beneficio incluyen actuar o bailar con Interacción: seducir; bailar con Covert Ops: carteristas o acrobacias; cantar con interacción: burlarse; e instrumento musical con Liderazgo: inspirar. Si tienes otras ideas sobre cómo se puede utilizar una habilidad de Entretenimiento de esta manera, habla con tu Director de Juego.
         trained_only: false
+        rank_benefits:
+          - rank: 1
+            title: Skill Synergy
+          - rank: 4
+            title: Skill Synergy
+          - rank: 8
+            title: Skill Synergy
+          - rank: 12
+            title: Skill Synergy
       act:
         attribute: PER
         cost: 2
@@ -1656,13 +1767,13 @@ items:
         trained_only: false
         rank_benefits:
           - rank: 1
-            title: Disguise
+            title: Skill Synergy
           - rank: 4
-            title: Disguise
+            title: Skill Synergy
           - rank: 8
-            title: Disguise
+            title: Skill Synergy
           - rank: 12
-            title: Disguise
+            title: Skill Synergy
       dance:
         attribute: PER
         cost: 2
@@ -1687,13 +1798,13 @@ items:
         trained_only: false
         rank_benefits:
           - rank: 1
-            title: Enhance Another Skill
+            title: Skill Synergy
           - rank: 4
-            title: Enhance Another Skill
+            title: Skill Synergy
           - rank: 8
-            title: Enhance Another Skill
+            title: Skill Synergy
           - rank: 12
-            title: Enhance Another Skill
+            title: Skill Synergy
     trained_only: false
   heavy-weapons:
     attribute: STR
@@ -2038,13 +2149,7 @@ items:
                 con esta habilidad especial, un personaje puede perfeccionar sus habilidades para usar la razón y la lógica para llegar a una conclusión. Deducir lo utilizan detectives e investigadores para reunir pistas, o científicos e ingenieros para descubrir la respuesta a un problema relacionado con una habilidad.
                 ⊗ **Modificador de resistencia:** En rangos más altos, la habilidad deducir proporciona una mejora al **modificador de resistencia de inteligencia** de un personaje, lo que hace que sea más difícil para los oponentes usar con éxito habilidades de encuentro para engañar al personaje. El modificador mejora en **+1 en el rango 4**, **+1 en el rango 8** y **+1 en el rango 12**.
         trained_only: false
-        rank_benefits:
-          - rank: 4
-            title: Resistance Modifier
-          - rank: 8
-            title: Resistance Modifier
-          - rank: 12
-            title: Resistance Modifier
+        rank_benefits: []
       first-aid:
         attribute: WIL
         cost: 3
@@ -2087,13 +2192,7 @@ items:
                 ### Beneficios de rango
                 ⊗ **Primeros auxilios mejorados:** A medida que un personaje alcanza niveles de habilidad más altos, se vuelve más competente para brindar ayuda a pacientes heridos. Esto reduce la penalización del dado de situación en **1 paso en el rango 4**, **2 pasos en el rango 8** y **3 pasos en el rango 12**.
         trained_only: true
-        rank_benefits:
-          - rank: 4
-            title: Improved First Aid
-          - rank: 8
-            title: Improved First Aid
-          - rank: 12
-            title: Improved First Aid
+        rank_benefits: []
       research:
         attribute: WIL
         cost: 2
@@ -2296,13 +2395,7 @@ items:
                 **Nota:** El comando no se puede utilizar en objetivos que sean hostiles o combativos; Antes de que dichos objetivos puedan ser guiados, se debe cambiar su actitud (quizás mediante el uso de la habilidad Inspirar).
                 ⊗ **Efecto aumentado:** A medida que un personaje alcanza rangos más altos en esta especialidad, la bonificación a sus pruebas de habilidades de Liderazgo mejora a **-1 en el rango 4**, **-2 en el rango 8** y **-3 en el rango 12**. (Nota: este bono no es acumulable).
         trained_only: false
-        rank_benefits:
-          - rank: 4
-            title: Increased Effect
-          - rank: 8
-            title: Increased Effect
-          - rank: 12
-            title: Increased Effect
+        rank_benefits: []
       inspire:
         attribute: PER
         cost: 3
@@ -2319,13 +2412,7 @@ items:
                 Esta habilidad especializada representa la capacidad de mandar con el ejemplo. Esta habilidad puede ser utilizada por oficiales militares, funcionarios electos y agentes del orden que también tienen la especialidad de mando, pero inspirar es más utilizada por aquellos que intentan liderar movimientos de desobediencia civil y otros tipos de actividades no violentas. Una diferencia importante es que **Inspirar se puede usar en objetivos que son hostiles o combativos**, alterando favorablemente la actitud del objetivo hacia el usuario de la habilidad.
                 ⊗ **Efecto aumentado:** A medida que un personaje alcanza rangos más altos en esta especialidad, la bonificación a sus pruebas de habilidades de Liderazgo mejora a **-1 en el rango 4**, **-2 en el rango 8** y **-3 en el rango 12**. (Nota: este bono no es acumulable).
         trained_only: true
-        rank_benefits:
-          - rank: 4
-            title: Increased Effect
-          - rank: 8
-            title: Increased Effect
-          - rank: 12
-            title: Increased Effect
+        rank_benefits: []
     trained_only: false
   life-science:
     attribute: WIL
@@ -2597,11 +2684,11 @@ items:
 
         trained_only: false
         rank_benefits:
-          - rank: 2
+          - rank: 3
             title: Increased Effect
-          - rank: 5
+          - rank: 6
             title: Increased Effect
-          - rank: 8
+          - rank: 9
             title: Increased Effect
           - rank: 12
             title: Increased Effect
@@ -2724,9 +2811,9 @@ items:
         trained_only: true
         rank_benefits:
           - rank: 3
-            title: Cybernetic Surgery
+            title: Surgical Proficiency
           - rank: 6
-            title: Cybernetic Surgery
+            title: Surgical Proficiency
       treatment:
         attribute: WIL
         cost: 4
@@ -2857,6 +2944,36 @@ items:
             title: Improved Treatment
           - rank: 12
             title: Improved Treatment
+      forensic-science:
+        attribute: WIL
+        cost: 3
+        url: /skills/medical-science#forensic-science
+        localized:
+          - en:
+              name: Forensic Science
+              description: |-
+                Forensic science is the application of medical and scientific knowledge to legal problems and criminal investigations. It is used to determine cause of death, identify remains, and analyze evidence from a crime scene.
+                ### Rank Benefits
+                ⊗ **Rank 3, 6, 9, 12 [Increased Effect]:** A character receives a **-1 bonus** at rank 3, **-2** at rank 6, **-3** at rank 9, and **-4** at rank 12 on certain other skill checks that can be assisted by this specialty (e.g., Investigate, Law).
+          - es:
+              name: Ciencias forenses
+              description: |-
+                La ciencia forense es la aplicación del conocimiento médico y científico a problemas legales e investigaciones criminales. Se utiliza para determinar la causa de la muerte, identificar restos y analizar pruebas de la escena de un crimen.
+                ⊗ **Efecto incrementado:** Un personaje recibe una **bonificación de
+                -1 paso** en el rango 3, **-2** en el rango 6, **-3** en el rango 9 y **-4** en el rango 12 en ciertas otras tiradas de habilidad que puedan ser asistidas por esta especialidad (por ejemplo, Investigar, Ley).
+        trained_only: false
+      xenomedicine-specific:
+        attribute: WIL
+        cost: 3
+        url: /skills/medical-science#xenomedicine-specific
+        localized:
+          - en:
+              name: Xenomedicine
+              description: ''
+          - es:
+              name: Xenomedicine
+              description: ''
+        trained_only: true
     trained_only: false
   melee-combat:
     attribute: STR
@@ -4310,6 +4427,31 @@ items:
             title: Increased Effect
           - rank: 12
             title: Increased Effect
+      juryrig:
+        attribute: WIL
+        cost: 3
+        url: /skills/technical-science#juryrig
+        localized:
+          - en:
+              name: Juryrig
+              description: |-
+                This skill enables a character to make fast, patchwork repairs in order to get an electronic or mechanical device or system up and running for a short period of time. A juryrig repair, even when successful, adds difficulty to the full repairs that must be made later, but it can get a character through a sticky situation. A juryrig repair can be made successfully **once** on a specific system or item. If it breaks down after being juryrigged, the system or item won't work again until it's completely fixed (using Technical Science—repair). Making a juryrig skill check is a single action, but a character who tries to use this skill must do so on his first available action in a round, and he can't attempt any other actions for the rest of the round.
+                ### Juryrig Results
+                The amount of difficulty added to the full repairs depends on the result of the juryrig check:
+                - **Critical Failure:** The system or item becomes unusable and can't be made functional again without full repairs.
+                - **Failure:** The juryrig attempt doesn't work but can be tried again.
+                - **Ordinary success:** The system or item becomes operational for **d6+1 time units**, and **3 more successes** are needed for full repairs (in addition to those already required).
+                - **Good success:** The system or item becomes operational for **2d4+2 time units**, and **2 more successes** are needed for full repairs.
+                - **Amazing success:** The system or item becomes operational for **3d4+2 time units**, and **1 more success** is needed to make full repairs.
+                ### Rank Benefits
+                ▶ **Rank 6 [Improved Juryrig]:** When a character reaches **Rank 6**, his ability improves as follows: an Ordinary success produces a Good result, a Good success produces an Amazing result, and an Amazing success means the juryrig works so well that the system or item is considered repaired and in regular working order.
+          - es:
+              name: Invención
+              description: |-
+                La invención permite a un personaje construir un componente o sistema electrónico o mecánico desde cero, o modificar un dispositivo existente para que realice una nueva función. El uso de esta habilidad requiere tiempo; las comprobaciones de Invención son siempre comprobaciones de habilidad complejas. Modificar un objeto existente puede hacerse en asaltos, pero todos los demás aspectos de la invención requieren horas, días, semanas o meses, según la determinación del Director del Juego.
+                ⊗ **Efecto Incrementado:** A medida que aumenta el rango de habilidad de especialidad de un personaje, este recibe un bono a cualquier comprobación de habilidad que involucre Ciencia Técnica o las otras tres habilidades de especialidad: **bono de -1 paso al rango 3**, **-2 al rango 6**,
+                **-3 al rango 9** y **-4 al rango 12**.
+        trained_only: false
     trained_only: false
   vehicle-operation:
     attribute: DEX

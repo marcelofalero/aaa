@@ -500,6 +500,19 @@
                         "equipment": "Un equipo de micrograbación de alta gama, un pase de prensa oficial (o una falsificación muy precisa), un comunicador desechable y un depurador de datos portátil.",
                         "special_ability": "**Extraoficialmente:** Recibes una bonificación de -1 paso a las tiradas de [Interacción-Entrevistar] ({{< relref \"/skills/interaction/#interview\" >}}) o [Pillería-Conocimiento Callejero] ({{< relref \"/skills/street-smart/#street-knowledge\" >}}) al intentar sonsacar rumores, información clasificada o declaraciones no oficiales de una fuente reacia.",
                         "tendencies": "**La Exposición:** Prioriza documentar un crimen, una conspiración o un evento antes que detenerlo, poniéndote en peligro táctico para asegurar que el metraje o la historia sobrevivan.<br>**La Pregunta Difícil:** Interroga o provoca agresivamente a un individuo poderoso en un entorno social, destruyendo el progreso diplomático para evaluar su reacción."
+                    },
+                    {
+                        "name": "El Héroe de Guerra",
+                        "summary": "Te defines por un solo conflicto muy publicitado.",
+                        "favored_broad_skill": "",
+                        "url": "/es/backgrounds/war-hero/",
+                        "skill_url": "/es/backgrounds/war-hero/",
+                        "favored_specialty_skills": "- [Liderazgo-Inspirar] ({{< relref \"/skills/leadership/#inspire\" >}})\n- [Resistencia-Aguante] ({{< relref \"/skills/stamina/#endurance\" >}})\n- [Voluntad-Voluntad Mental] ({{< relref \"/skills/resolve/#mental-resolve\" >}})",
+                        "favored_perks": "[Celebridad] ({{< relref \"/perks_flaws/#celebrity\" >}})",
+                        "flaw": "[Vieja Herida] ({{< relref \"/perks_flaws/#old-injury\" >}}) (Un recordatorio físico duradero del evento que te hizo famoso).",
+                        "equipment": "Un arma personalizada con cicatrices de batalla, medallas de combate oficiales, una chaqueta militar resistente y un suministro de analgésicos médicos.",
+                        "special_ability": "**Carga de Gloria:** Recibes una bonificación de -1 paso a las tiradas de habilidad de [Interacción] ({{< relref \"/skills/interaction/\" >}}) o [Liderazgo] ({{< relref \"/skills/leadership/\" >}}) al tratar con veteranos, personal militar activo o ciudadanos patrióticos que reconocen tu servicio.",
+                        "tendencies": "- **La Leyenda Viviente:** Acepta voluntariamente una desventaja significativa o soporta el peso de un ataque para proteger a civiles o aliados, impulsado por la necesidad de estar a la altura de tu reputación imposible.\n- **El Fantasma del Pasado:** Reacciona a una situación actual utilizando el contexto obsoleto o traumático de tu guerra pasada, complicando una simple negociación o infiltración al tratarla como un campo de batalla."
                     }
                 ]
             }
