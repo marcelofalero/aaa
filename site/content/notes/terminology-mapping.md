@@ -38,8 +38,9 @@ This page provides a mapping of common game terms from English to Spanish to ens
 | Technical | Técnico |
 | Social | Social |
 | Physical | Físico |
-| Mental | Mental |
+| mental | Mental |
 | Other | Otros |
+| Weapon | Armamento |
 
 ## Attributes
 | English | Spanish |
@@ -56,14 +57,14 @@ This page provides a mapping of common game terms from English to Spanish to ens
 | English | Spanish |
 | :--- | :--- |
 | Melee Combat | Combate cuerpo a cuerpo |
-| Modern Ranged Weapons | Armas a distancia modernas |
-| Heavy Weapons | Armas pesadas |
-| Primitive Ranged Weapons | Armas a distancia primitivas |
+| Modern Ranged Weapons | Armamento a distancia moderno |
+| Heavy Weapons | Armamento pesado |
+| Primitive Ranged Weapons | Armamento a distancia primitivo |
 | Technical Science | Ciencia técnica |
 | Life Science | Ciencias de la vida |
 | Physical Science | Ciencias físicas |
 | Medical Science | Ciencias médicas |
-| Weapon Technical Knowledge | Conocimiento técnico de armas |
+| Weapon Technical Knowledge | Conocimiento técnico de armamento |
 | Flintlock Pistol | Pistola de chispa |
 | Musket | Mosquete |
 | Assault Rifle | Fusil de asalto |
@@ -78,7 +79,7 @@ This page provides a mapping of common game terms from English to Spanish to ens
 | Bow | Arco |
 | Crossbow | Ballesta |
 | Sling | Honda |
-| Flintlock | Arma de chispa |
+| Flintlock | Armamento de chispa |
 | Brawl | Pelea |
 | Scratch-Built Explosives | Explosivos improvisados |
 | Psionic Sense | Sentido psiónico |
