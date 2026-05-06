@@ -14,6 +14,7 @@ With trailblazing, a character learns to find paths through rough terrain or cre
 - **Ordinary success:** Provides a **reduction of 1 step** to any penalties that apply.
 - **Good success:** Reduces penalties by **2 steps**.
 - **Amazing success:** Reduces penalties by **3 steps**. Note: This reduction can''t be used to turn a penalty into a bonus; the best possible result is negating a penalty altogether.
+---
 ### Survival on Other Worlds
 The Survival skill is primarily designed for Earth-like environments. If a character is on an alien world, the given situation modifiers might still apply (assuming local flora/fauna are edible). If an environment is drastically different from a character''s native experience, the character should use the
 **[Adaptability](#adaptability-con---trained-only)** specialty to bridge the gap. The use of the Survival skill might still be **impossible** in certain extreme situations—for instance, a barren/airless asteroid without existing protective gear.

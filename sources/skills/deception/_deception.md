@@ -7,20 +7,4 @@ trained_only: false
 name: Deception
 ---
 
-The proficiency at deceiving others through conversation and face-to-face interaction. It covers all verbal tricks and subterfuges.
-
-### Resolution
-- **Opposed Check:** Modified by the target’s **Intelligence** resistance modifier.
-- **Encounter Skill:** Used to shift attitudes as per [Table P25: Encounter Skill Effects]({{< relref "core-mechanics/useful-tables#table-p25-encounter-skill-effects" >}}).
-
-### Gambling Rules
-Gambling is an opposed check against the opponent's **Intelligence** (for Logic Games) or **Will** (for Nerve Games) resistance modifier.
-
-**The Sitting:** One check represents a "session" or high-stakes moment.
-- **Ordinary Success:** Win 1.5x stake.
-- **Good Success:** Win 2x stake.
-- **Amazing Success:** Win 5x stake.
-- **Failure:** Lose stake.
-- **Critical Failure:** Significant loss (lose 2x stake/debt) or social disaster.
-
-**Cheating:** Declare before rolling. Gain a **-3 step bonus**, but any **Failure** result is treated as a **Critical Failure (Caught)**.
+This broad skill represents a character''s proficiency at deceiving others through conversation and face-to-face interaction. Whether a character tries to bluff his way out of trouble, bribe a suspicious official, fast-talk dim-witted thugs into confusion, or gamble his way into a small fortune, this broad skill covers all verbal tricks and subterfuges. Although the use of Deception or any of its specialty skills can affect the attitude of someone who is victimized by the skill, this shift in attitude is not necessarily long-lasting. Sometimes even the slightest change in a situation will spoil a character''s ruse, or perhaps require another skill check to see if he succeeds in perpetuating his trickery. A character''s Deception situation die is modified by his target''s Intelligence resistance modifier. In addition, the Gamemaster may award bonuses or penalties depending on past dealings or other details that may come into play. The greater the level of success the character achieves, the more convincing his deception appears to be.

@@ -11,6 +11,36 @@ rank_benefits:
 name: Surgery
 ---
 
-Surgery involves the treatment of injuries or disorders of the body by incision or manipulation. It is used to repair internal damage, remove foreign objects, or perform organ transplants.
-### Rank Benefits
-▶ **Rank 3, 6 [Surgical Proficiency]:** At rank 3, the character can repair or heal organisms with cybernetic implants. At rank 6, the character can install cybernetic implants.
+The Medical Science specialty skill *surgery* is used to heal
+mortal damage and perform other invasive medical procedures. Any
+application of this skill requires a complex skill check. Surgery
+can't be performed during a combat scene. It almost always takes
+much more time than mere rounds or minutes, and successful surgery
+is extremely difficult to perform in conditions such as those
+found on the typical battlefield.
+### Surgical Conditions
+The conditions for surgery are considered **Critical (+4 step
+penalty)** when the procedure must be performed with poor
+lighting, primitive tools (or no surgical tools at all), and no
+trained assistance. **Marginal conditions (no modifier)** are
+better than Critical, but still below what's necessary for
+success. A **Good situation (-2 step bonus)** is similar to a
+modern ambulance or spaceship sick bay. **Amazing conditions (-3
+step bonus)** are found in a standard hospital. **Optimal
+conditions (-4 step bonus)** include high-tech tools, trained
+support staff, and the most advanced medical procedures available.
+### Procedure and Recovery
+The complexity of a surgery check depends on the amount of mortal
+damage the patient is suffering from when the procedure is begun:
+1 point of damage is Marginal, 2 is Ordinary, 3 is Good, and 4 or
+more is Amazing. If the patient is suffering only from wound
+damage, then 2 points of damage is Marginal, 4 is Ordinary, 6 is
+Good, and 8 or more is Amazing.
+For every two successes achieved during the complex skill check,
+the patient is healed of 1 point of mortal damage and 2 points of
+wound damage.
+---
+▶ **Cybernetic Surgery:** A character who has achieved at least
+rank 3 in surgery can use this skill to repair or heal an organism
+with existing cybernetic implants. At rank 6, the character
+becomes able to install cybernetic implants.

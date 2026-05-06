@@ -6,4 +6,4 @@ trained_only: false
 name: Management
 ---
 
-This skill indicates a character's ability to manage both personnel and administrative duties. A skilled manager can increase productivity, inspire workers, and supervise the workings of a business or office.
+This skill indicates a character''s ability to manage both personnel and administrative duties. A skilled manager can increase productivity, inspire workers, and supervise the workings of a business or office.

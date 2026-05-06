@@ -2,7 +2,7 @@
 attribute: PER
 cost: 3
 url: /skills/deception#gamble-nerve-games
-name: Gamble (Nerve Games)
+name: Gamble-Nerve-Games
 ---
 
 **Attribute: PER.**

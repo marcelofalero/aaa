@@ -15,6 +15,10 @@ rank_benefits:
 name: Psychology
 ---
 
-Psychology is the study of the mind and behavior. It can be used to diagnose mental disorders, understand motivations, or predict behavioral patterns.
-### Rank Benefits
-⊗ **Rank 3, 6, 9, 12 [Increased Effect]:** A character receives a **-1 bonus** at rank 3, **-2** at rank 6, **-3** at rank 9, and **-4** at rank 12 on certain Interaction checks (e.g., Interview, Persuade, Bluff).
+Psychology is the study of mental processes and behavior, and the
+treatment of mental aberrations and disease.
+---
+⊗ **Increased Effect:** As a character attains higher ranks in
+psychology, he receives a situation die bonus on skill checks that
+can be assisted by this specialty. The bonus is -1 step at rank 3,
+-2 steps at rank 6, -3 steps at rank 9, and -4 steps at rank 12.

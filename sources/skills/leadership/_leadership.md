@@ -7,14 +7,14 @@ trained_only: false
 name: Leadership
 ---
 
-Training in group coordination and tactical oversight. A leader provides a **-1 step bonus** to all actions performed by a set number of followers for the remainder of the round and the entire following round.
-
-### Coordination Rules
-### Rank Benefits
-▶ **Rank 3 [Unity of Command]:** Only one character can assume the leader role per group; conflicting orders negate the bonus.
-- **Restriction:** The broad skill cannot be used to coordinate targets with a **Combative** attitude.
-
-▶ **Rank 3 [Resolution]:** **Ordinary Success:** Bonus applies to up to 2 followers.
-    - **Good Success:** Bonus applies to up to 4 followers.
-    - **Amazing Success:** Bonus applies to up to 6 followers.
-    - **Critical Failure:** Followers suffer a +1 step penalty for the duration; no further checks allowed this scene.
+This broad skill provides a character with the abilities and talents of a leader. With leadership training, a character can coordinate a group to get it to perform better or work as a team. Only one character can assume the role of leader at a time, and conflicting orders cancel each other out. A leader, by using an action to attempt a Leadership skill check and then achieving a degree of success on the check, provides a **-1 bonus** to all actions performed in the remainder of the current round and all of the following round by a certain number of followers.
+### Leadership Situation Modifiers
+The check is modified by the attitude of the targets, plus any other factors determined by the GM: | Situation | Modifier | | :--- | :--- | | **Targets are accustomed to being led** | -2 steps | | **Targets recognize leader''s authority** | 0 | | **Targets don''t recognize leader''s authority** | +2 steps |
+- **Note:** Leadership broad skill can''t be used on targets who are **Combative**.
+### Results
+- **Critical Failure:** The leader confuses his followers, who receive a
+**+1 penalty** for the remainder of the current round and all of the following round. No further Leadership checks can be made in this scene.
+- **Failure:** The followers receive no bonus in the current round, but the leader can make another check in the next round.
+- **Ordinary:** As many as **two followers** receive the leadership bonus.
+- **Good:** As many as **four followers** receive the leadership bonus.
+- **Amazing:** As many as **six followers** receive the leadership bonus.

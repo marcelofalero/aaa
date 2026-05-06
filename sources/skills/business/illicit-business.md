@@ -11,13 +11,8 @@ This specialty skill allows a character to function in the underside of the busi
 
 ### Illegal Transactions
 This skill reduces the penalty for attempting illegal transactions.
-### Rank Benefits
-▶ **Rank 1 [Benefit]:** Penalty reduced by -1 step.
-
-▶ **Rank 4 [Benefit]:** Penalty reduction of -2 steps.
-
-▶ **Rank 7 [Benefit]:** Penalty reduction of -3 steps.
-
-▶ **Rank 10 [Benefit]:** Penalty reduction of -4 steps.
-
+- **Initial Purchase:** Penalty reduced by -1 step.
+- **Rank 4:** Penalty reduction of -2 steps.
+- **Rank 7:** Penalty reduction of -3 steps.
+- **Rank 10:** Penalty reduction of -4 steps.
 *Note: This benefit only reduces or eliminates penalties; it never provides a bonus.

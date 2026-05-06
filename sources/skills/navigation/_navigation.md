@@ -1,6 +1,6 @@
 ---
 attribute: WIL
-cost: 6
+cost: 3
 category: Other
 url: /skills/navigation
 trained_only: false

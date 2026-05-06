@@ -10,6 +10,5 @@ name: Rifle
 ---
 
 This specialty skill allows a character to improve his proficiency with modern single-fire rifles, sniper rifles, and hunting rifles.
-### Rank Benefits
-▶ **Rank 3 [Improved Aim]:** When a character reaches rank 3 in this specialty, he becomes able to hit a target with more dependability. This improvement in accuracy translates to a
+▶ **Improved Aim:** When a character reaches rank 3 in this specialty, he becomes able to hit a target with more dependability. This improvement in accuracy translates to a
 **-1 bonus** to the situation die for any single-fire rifle attack the character makes.

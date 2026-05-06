@@ -21,6 +21,5 @@ A character can use research to assist another character (or himself) in learnin
 - **Ordinary:** half the learning time required.
 - **Good:** one-quarter the learning time required.
 - **Amazing:** one-eighth the learning time required.
-### Rank Benefits
-▶ **Rank 3, 6, 9, 12 [Efficient Investigation]:** As a character achieves higher ranks in this specialty, he becomes more efficient at digging through data. He receives a **-1 step bonus** to research checks at **rank 3**,
+⊗ **Efficient Investigation:** As a character achieves higher ranks in this specialty, he becomes more efficient at digging through data. He receives a **-1 step bonus** to research checks at **rank 3**,
 **-2 at rank 6**, **-3 at rank 9**, and **-4 at rank 12**.

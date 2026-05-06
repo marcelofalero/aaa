@@ -11,13 +11,14 @@ This skill can't be used untrained. For each separate purchase of this specialty
 - **Increased Effect:** Gaining ranks in Culture—etiquette as it pertains to a certain culture translates into a bonus to the use of Culture-diplomacy when that skill is used on a member of the culture in question. Having the etiquette skill at rank 3 provides a -1 bonus to diplomacy skill checks. The bonus improves to -2 at rank 6, to -3 at rank 9, and to —4 at rank 12.
 
 The Gamemaster will decide what constitutes a “specific culture,” taking the campaign setting into account. In a campaign that takes place entirely on Earth, different countries may represent specific cultures; in a starfaring campaign, each planet, star system, or alien species could be a different culture.
-### Rank Benefits
-▶ **Rank 3 [Diplomacy]:** checks made within that specific culture:
 
-▶ **Rank 3 [Benefit]:** 1 situation die bonus.
+### Rank Benefits (Interaction Synergy)
+Ranks in Etiquette provide a bonus to **Diplomacy** checks made within that specific culture:
 
-▶ **Rank 6 [Benefit]:** 2 steps bonus.
+⊗ **Rank 3:** -1 situation die bonus.
 
-▶ **Rank 9 [Benefit]:** 3 steps bonus.
+⊗ **Rank 6:** -2 steps bonus.
 
-▶ **Rank 12 [Benefit]:** 4 steps bonus.
+⊗ **Rank 9:** -3 steps bonus.
+
+⊗ **Rank 12:** -4 steps bonus.

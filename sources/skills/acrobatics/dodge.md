@@ -27,9 +27,11 @@ This specialty skill allows a character to move in ways that make hard for the a
 - **Amazing:** +3 steps
 
 _(This skill can’t be combined with the parry or block rank benefits described under Melee Combat Specialty skills)_
-### Rank Benefits
+
+**Rank Progression**
+
 ▶ **Rank 3 [Action Benefit]:** Dodge and perform an action in the same phase (+2 penalty on the both checks), this only uses up 1 of the character actions.
 
-⊗ **Rank 4 [Resistance Modifier]:** The character’s Dexterity resistance modifier improves by +1 at each of these ranks.
+⊗ **Rank 4, 8, 12 [Resistance Modifier]:** The character’s Dexterity resistance modifier improves by +1 at each of these ranks.
 
 ▶ **Rank 7 [Reaction Dodge]:** Perform a reaction dodge, allowing the character to defend earlier in the round. In a round when a character makes a reaction dodge, he can only dodge; all other actions are lost for the round.

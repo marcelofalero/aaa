@@ -7,23 +7,6 @@ trained_only: false
 name: Investigate
 ---
 
-Systematic examination through observation, inquiry, and logical deduction. Unlike **Awareness**, which handles immediate observations, **Investigate** is a time-intensive process.
-
-### Methodology
-### Rank Benefits
-▶ **Rank 3 [Time Units]:** In rounds, a unit is one phase. In other scenes, it is usually minutes or hours.
-
-▶ **Rank 3 [Resolution]:** Success reveals information. The degree of success determines the accuracy and depth of detail.
-
-▶ **Rank 3 [Time Bonus]:** The more time spent on an investigation, the better the chance of success.
-
+This broad skill provides a character with the training and ability to examine things systematically through observation and inquiry. Unlike Awareness skills, Investigate takes time. It can be used when a character tries to apply logic and reason to reach a conclusion or deduce the solution to a problem.
 ### Investigate Situation Modifiers
-| Task | Modifier |
-| :--- | :--- |
-| Fast investigation (1 time unit) | +3 step penalty |
-| Moderate investigation (2-3 units) | +1 step penalty |
-| Careful investigation (4+ units) | -2 step bonus |
-| Fresh investigation site | -2 step bonus |
-| Old or "cold" site | +2 to +4 steps penalty |
-| Related skill (e.g., Medicine, Science) | -1 to -3 steps bonus |
-| Small or hidden clue | +3 steps penalty |
+| Task | Modifier | | :--- | :--- | | Using just the broad skill | +1 step | | Fast investigation (1 time unit) | +3 steps | | Moderate investigation (2-3 time units) | +1 step | | Careful investigation (4+ time units) | -2 steps | | Fresh investigation site | -2 steps | | Recent investigation site | 0 steps | | Cold investigation site | +2 steps | | Old investigation site | +4 steps | | Character has a related skill: | | | &nbsp;&nbsp;&nbsp;at rank 1-4 | -1 step | | &nbsp;&nbsp;&nbsp;at rank 5-8 | -2 steps | | &nbsp;&nbsp;&nbsp;at rank 9-12 | -3 steps | | Hidden or concealed clue | +3 steps | | Small clue | +3 steps | | Large clue | -1 step | | Character knows what he''s looking for | -1 step | | Tracking a single target | 0 steps | | Tracking a group of characters/creatures | -2 steps | | Tracking on soft ground | -1 step | | Tracking on hard ground | +1 step | | Tracking in urban setting | +3 steps |

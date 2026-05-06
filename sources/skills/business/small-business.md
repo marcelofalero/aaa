@@ -11,11 +11,7 @@ This specialty skill allows a character to function in small-scale trade and com
 
 ### Financial Bargaining
 This skill provides a situation die bonus when making deals, haggling, or bargaining in small-business finance.
-### Rank Benefits
-▶ **Rank 1 [Benefit]:** 1 step bonus.
-
-▶ **Rank 4 [Benefit]:** 2 step bonus.
-
-▶ **Rank 8 [Benefit]:** 3 step bonus.
-
-▶ **Rank 12 [Benefit]:** 4 step bonus.
+- **Initial Purchase:** -1 step bonus.
+- **Rank 4:** -2 step bonus.
+- **Rank 8:** -3 step bonus.
+- **Rank 12:** -4 step bonus.

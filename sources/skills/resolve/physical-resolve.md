@@ -17,12 +17,10 @@ When a character is confronted with physical torture, he can make a Physical Res
 - **Ordinary:** The character withstands the torture for **d4 time units** (then makes another check).
 - **Good:** The character withstands for **d6+2 time units**.
 - **Amazing:** The character withstands for **2d4+3 time units**.
-### Rank Benefits
-⊗ **Rank 3 [Knockout Recovery]:** A character who falls unconscious due to knockout remains in that state for all of the round in which it occurred and all of the next round. After that, he makes a Physical Resolve check to regain consciousness once per round. Success indicates he awakens with an amount of stun damage recovered depending on success (Ordinary: 2, Good: 4, Amazing: 6).
-
-▶ **Rank 3 [Avoiding Exhaustion]:** When all of a character''s fatigue points are used up, he can attempt a Physical Resolve check to stay conscious. If the check succeeds, he can perform actions for a number of rounds (Ordinary: 1, Good: 2, Amazing: 3).
-
-⊗ **Rank 3 [Fatigue Recovery]:** The result of a Physical Resolve check determines how many fatigue points a character recovers after a sufficient amount of rest.
+### Recovery & Resilience Rank Benefits
+⊗ **Knockout Recovery:** A character who falls unconscious due to knockout remains in that state for all of the round in which it occurred and all of the next round. After that, he makes a Physical Resolve check to regain consciousness once per round. Success indicates he awakens with an amount of stun damage recovered depending on success (Ordinary: 2, Good: 4, Amazing: 6).
+⊗ **Avoiding Exhaustion:** When all of a character''s fatigue points are used up, he can attempt a Physical Resolve check to stay conscious. If the check succeeds, he can perform actions for a number of rounds (Ordinary: 1, Good: 2, Amazing: 3).
+⊗ **Fatigue Recovery:** The result of a Physical Resolve check determines how many fatigue points a character recovers after a sufficient amount of rest.
 - **Ordinary:** 1 point.
 - **Good:** 2 points.
 - **Amazing:** 3 points.

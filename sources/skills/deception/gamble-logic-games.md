@@ -2,7 +2,7 @@
 attribute: INT
 cost: 3
 url: /skills/deception#gamble-logic-games
-name: Gamble (Logic Games)
+name: Gamble-Logic-Games
 ---
 
 **Attribute: INT.**

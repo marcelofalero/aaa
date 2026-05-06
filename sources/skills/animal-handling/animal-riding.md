@@ -8,8 +8,10 @@ name: Animal riding
 ---
 
 This specialty skill enables a character to improve this aspect of the Animal Handling broad skill. A character with this skill can attempt racing over dangerous terrain, making jumps or performing other stunts, and engaging in mounted combat.
-### Rank Benefits
-▶ **Rank 3 [Critical Failure]:** The animal trips (damage as an Extremely Short fall for both).
+
+### Trick Riding (Rank 3 Benefit)
+The character can direct their mount to jump fences, leap chasms, or move backward.
+- **Critical Failure:** The animal trips (damage as an Extremely Short fall for both).
 - **Failure:** The animal refuses to perform.
 
 **Horizontal Leaps:**
@@ -31,5 +33,4 @@ This specialty skill enables a character to improve this aspect of the Animal Ha
 - **Ordinary:** +1 step.
 - **Good:** +2 steps.
 - **Amazing:** +3 steps.
-
 *Note: This does not protect the mount. Trick riding cannot be combined with other actions (e.g., attacking while leaping).*

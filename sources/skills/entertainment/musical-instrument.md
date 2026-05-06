@@ -16,8 +16,9 @@ name: Musical instrument
 ---
 
 **Trained Only.** Proficiency in a specific instrument selected upon purchase.
-### Rank Benefits
-⊗ **Rank 1, 4, 8, 12 [Skill Synergy]:** Entertainment specialties can be combined with other skills for greater effect. The character receives a situation die bonus to the supported skill:
+
+### Rank Benefit - Skill Synergy (Enhance Another Skill)
+⊗ **Skill Synergy:** Entertainment specialties can be combined with other skills for greater effect. The character receives a situation die bonus to the supported skill:
 - **Rank 1:** -1 step bonus.
 - **Rank 4:** -2 steps bonus.
 - **Rank 8:** -3 steps bonus.

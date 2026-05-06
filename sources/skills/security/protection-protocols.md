@@ -34,5 +34,4 @@ A character can study a secured area (anything from a vehicle to a building to a
 - **Ordinary security:** +2 penalty.
 - **Good security:** +3 penalty.
 - **Amazing security:** +4 penalty.
-### Rank Benefits
-⊗ **Rank 3, 6, 9, 12 [Increased Effect]:** As a character achieves higher ranks in this specialty, he receives a situation die bonus on skill checks assisted by it: **-1 step at rank 3**, **-2 steps at rank 6**, **-3 steps at rank 9**, and **-4 steps at rank 12**.
+⊗ **Increased Effect:** As a character achieves higher ranks in this specialty, he receives a situation die bonus on skill checks assisted by it: **-1 step at rank 3**, **-2 steps at rank 6**, **-3 steps at rank 9**, and **-4 steps at rank 12**.
