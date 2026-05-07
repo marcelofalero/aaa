@@ -3,6 +3,13 @@ attribute: INT
 cost: 4
 url: /skills/computer-science#hacking
 trained_only: true
+rank_benefits:
+- rank: 4
+  title: Increased Effect
+- rank: 8
+  title: Increased Effect
+- rank: 12
+  title: Increased Effect
 name: Hacking
 ---
 

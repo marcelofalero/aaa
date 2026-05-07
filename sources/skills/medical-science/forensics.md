@@ -17,4 +17,5 @@ name: Forensics
 
 Forensics is the study of causes of death and physical evidence at the scene of a crime or accident.
 
-⊗ **Increased Effect:** As a character attains higher ranks in forensics, he receives a situation die bonus on skill checks that can be assisted by this specialty. The bonus is -1 step at rank 3, -2 steps at rank 6, -3 steps at rank 9, and -4 steps at rank 12.
+### Rank Benefits
+⊗ **Rank 3, 6, 9, 12 [Increased Effect]** As a character attains higher ranks in forensics, he receives a **situation die bonus** on forensics checks. The bonus is **-1 step at rank 3**, **-2 steps at rank 6**, **-3 steps at rank 9**, and **-4 steps at rank 12**.

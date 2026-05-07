@@ -1101,14 +1101,14 @@
                 },
                 {
                     "skill": "Knowledge",
-                    "attribute": "WIL",
+                    "attribute": "INT",
                     "url": "/skills/knowledge",
                     "cost": 4,
                     "type": "Broad",
                     "items": [
                         {
                             "skill": "Language, Specific Skill",
-                            "attribute": "WIL",
+                            "attribute": "INT",
                             "url": "/skills/knowledge#language-specific-skill",
                             "cost": 3,
                             "type": "Specialty",
@@ -1116,7 +1116,7 @@
                         },
                         {
                             "skill": "Psionics",
-                            "attribute": "WIL",
+                            "attribute": "INT",
                             "url": "/skills/knowledge#psionics",
                             "cost": 3,
                             "type": "Specialty",
@@ -1132,7 +1132,7 @@
                         },
                         {
                             "skill": "Deduce",
-                            "attribute": "WIL",
+                            "attribute": "INT",
                             "url": "/skills/knowledge#deduce",
                             "cost": 2,
                             "type": "Specialty",
@@ -1140,7 +1140,7 @@
                         },
                         {
                             "skill": "First Aid",
-                            "attribute": "WIL",
+                            "attribute": "INT",
                             "url": "/skills/knowledge#first-aid",
                             "cost": 3,
                             "type": "Specialty",
@@ -1148,7 +1148,7 @@
                         },
                         {
                             "skill": "Research",
-                            "attribute": "WIL",
+                            "attribute": "INT",
                             "url": "/skills/knowledge#research",
                             "cost": 2,
                             "type": "Specialty",
@@ -1158,7 +1158,7 @@
                 },
                 {
                     "skill": "Life Science",
-                    "attribute": "WIL",
+                    "attribute": "INT",
                     "url": "/skills/life-science",
                     "cost": 7,
                     "type": "Broad",
@@ -1173,7 +1173,7 @@
                         },
                         {
                             "skill": "Psionics",
-                            "attribute": "WIL",
+                            "attribute": "INT",
                             "url": "/skills/life-science#psionics",
                             "cost": 3,
                             "type": "Specialty",
@@ -1181,7 +1181,7 @@
                         },
                         {
                             "skill": "Biology",
-                            "attribute": "WIL",
+                            "attribute": "INT",
                             "url": "/skills/life-science#biology",
                             "cost": 3,
                             "type": "Specialty",
@@ -1189,7 +1189,7 @@
                         },
                         {
                             "skill": "Botany",
-                            "attribute": "WIL",
+                            "attribute": "INT",
                             "url": "/skills/life-science#botany",
                             "cost": 3,
                             "type": "Specialty",
@@ -1197,7 +1197,7 @@
                         },
                         {
                             "skill": "Genetics",
-                            "attribute": "WIL",
+                            "attribute": "INT",
                             "url": "/skills/life-science#genetics",
                             "cost": 3,
                             "type": "Specialty",
@@ -1205,7 +1205,7 @@
                         },
                         {
                             "skill": "Xenology",
-                            "attribute": "WIL",
+                            "attribute": "INT",
                             "url": "/skills/life-science#xenology",
                             "cost": 3,
                             "type": "Specialty",
@@ -1213,7 +1213,7 @@
                         },
                         {
                             "skill": "Zoology",
-                            "attribute": "WIL",
+                            "attribute": "INT",
                             "url": "/skills/life-science#zoology",
                             "cost": 3,
                             "type": "Specialty",
@@ -1223,7 +1223,7 @@
                 },
                 {
                     "skill": "Medical Science",
-                    "attribute": "WIL",
+                    "attribute": "INT",
                     "url": "/skills/medical-science",
                     "cost": 7,
                     "type": "Broad",

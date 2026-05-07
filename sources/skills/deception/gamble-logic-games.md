@@ -2,6 +2,16 @@
 attribute: INT
 cost: 3
 url: /skills/deception#gamble-logic-games
+trained_only: false
+rank_benefits:
+- rank: 3
+  title: Pro Advantage
+- rank: 6
+  title: Pro Advantage
+- rank: 9
+  title: Pro Advantage
+- rank: 12
+  title: Pro Advantage
 name: Gamble-Logic-Games
 ---
 Proficiency at games of strategy, counting, and probability (e.g., Blackjack, Chess, and other complex strategy games).
