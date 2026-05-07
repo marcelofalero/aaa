@@ -40,10 +40,9 @@ Esta habilidad especializada permite al personaje funcionar en la parte oculta d
 
 ### Transacciones ilegales
 Esta habilidad reduce la pena por intentar transacciones ilegales.
-- **Compra inicial:** Penalización reducida en -1 paso.
-- **Rango 4:** Reducción de penalización de -2 pasos.
-- **Rango 7:** Reducción de penalización de -3 pasos.
-- **Rango 10:** Reducción de penalización de -4 pasos.
+
+⊗ **Rango 1, 4, 7, 10 [Arte del trato]** Penalización reducida en -1 paso en el rango uno más un paso adicional en los rangos 4, 7 y 10.
+
 *Nota: Este beneficio sólo reduce o elimina sanciones; nunca proporciona una bonificación.
 
 ---
@@ -55,10 +54,8 @@ Esta habilidad especial permite a un personaje funcionar en el comercio y el com
 
 ### Negociación financiera
 Esta habilidad proporciona una bonificación de situación al hacer tratos, regatear o negociar en las finanzas de pequeñas empresas.
-- **Compra Inicial:** -Bono de 1 paso.
-- **Rango 4:** -Bono de 2 pasos.
-- **Rango 8:** -Bonificación de 3 pasos.
-- **Rango 12:** -Bonificación de 4 pasos.
+
+⊗ **Rango 1, 4, 7, 10 [Arte del trato]** Penalización reducida en -1 paso en el rango uno más un paso adicional en los rangos 4, 7 y 10.
 
 ---
 

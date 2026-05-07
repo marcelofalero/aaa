@@ -10,7 +10,6 @@ This broad skill provides a character with basic knowledge of the theories of pr
 
 ### Uses
 Skill checks are called for when a character wants to:
-- Play the stock market.
 - Apply business knowledge to conclude a trade.
 - Attempt an illegal business transaction.
 - Determine the value of goods in their own society.
@@ -31,6 +30,9 @@ If a character uses Business to haggle over the buying or selling of a commodity
 
 This specialty skill improves a character's ability to function in the realm of large-scale trade and commerce. It covers stock markets, mergers, corporate acquisitions, and speculative business. It also provides an understanding of how large organizations and corporations operate.
 
+### Rank Benefits
+⊗ **Rank 1, 4, 7, 10 [Art of the deal]** Gains a number of situation bonus steps based on the ranks in this specialty skill (-1 step at Rank 1, -2 steps at Rank 4, -3 steps at Rank 7, and -4 steps at Rank 10) when making deals, haggling, or bargaining within the scope of corporate finance.
+
 ---
 
 ## Illicit business
@@ -38,12 +40,8 @@ This specialty skill improves a character's ability to function in the realm of 
 
 This specialty skill allows a character to function in the underside of the business world, providing knowledge of extortion, smuggling, fencing stolen goods, and the black market. It is the primary skill of white-collar criminals (embezzlers, insider traders, corporate spies).
 
-### Illegal Transactions
-This skill reduces the penalty for attempting illegal transactions.
-
-⊗ **Rank 1, 4, 7, 10 [Art of the deal]** Penalty reduced by -1 step at rank one plus and additional step at rank 4, 7, and 10.
-
-*Note: This benefit only reduces or eliminates penalties; it never provides a bonus.
+### Rank Benefits
+⊗ **Rank 1, 4, 7, 10 [Art of the deal]** Gains a number of situation bonus steps based on the ranks in this specialty skill (-1 step at Rank 1, -2 steps at Rank 4, -3 steps at Rank 7, and -4 steps at Rank 10) when making deals, haggling, or bargaining within the scope of illicit business.
 
 ---
 
@@ -52,10 +50,8 @@ This skill reduces the penalty for attempting illegal transactions.
 
 This specialty skill allows a character to function in small-scale trade and commerce. It improves the ability to haggle on the consumer level, determine the value of goods and services, and find buyers and sellers in a local area.
 
-### Financial Bargaining
-This skill provides a situation die bonus when making deals, haggling, or bargaining in small-business finance.
-
-⊗ **Rank 1, 4, 7, 10 [Art of the deal]** Penalty reduced by -1 step at rank one plus and additional step at rank 4, 7, and 10.
+### Rank Benefits
+⊗ **Rank 1, 4, 7, 10 [Art of the deal]** Gains a number of situation bonus steps based on the ranks in this specialty skill (-1 step at Rank 1, -2 steps at Rank 4, -3 steps at Rank 7, and -4 steps at Rank 10) when making deals, haggling, or bargaining within the scope of  small-business finance.
 
 ---
 

@@ -7,7 +7,18 @@ trained_only: false
 name: Interaction
 ---
 
-Interaction skills are used by characters to directly influence others. These include bargaining, charming, interviewing, intimidating, seducing, and taunting.
+Interaction provides a character with the basics of interpersonal contact with members of the same species and native culture. Through the use of the associated specialty skills, a character can become an expert in the arts of interaction and communication. 
+
+While everyone who grows up around other people has some skill at interacting with others, those who purchase any of the specialty skills are either trained or naturally proficient at winning friends and influencing people. 
+
+### Specialties
+Interaction includes specific areas such as:
+- [Bargain]({{< relref "bargain" >}})
+- [Charm]({{< relref "charm" >}})
+- [Interview]({{< relref "interview" >}})
+- [Intimidate]({{< relref "intimidate" >}})
+- [Seduce]({{< relref "seduce" >}})
+- [Taunt]({{< relref "taunt" >}})
 
 ### Interaction Situation Modifiers
 
@@ -19,4 +30,12 @@ Interaction skills are used by characters to directly influence others. These in
 | Known to each other | 0 |
 | Acquainted | -1 step |
 
-Interaction includes specific areas such as making bargains, knowing how to question, charm, seduce, or intimidate another character, and being able to taunt and trade insults with the best of them. An encounter skill check takes into account the target''s starting attitude. Combative or Fanatic characters cannot be influenced by Interaction. The target''s **Will resistance modifier** also applies. In general, changes in attitude brought about through Interaction are longer-lasting than changes from Deception or Entertainment. Once attitude shifts, it remains until the character does something to alter it. | Results | Description | | :--- | :--- | | **Ordinary** | Success indicates that the character produced a quality interaction. | | **Good** | Success indicates that the character produced a very quality interaction. | | **Amazing** | Success indicates that the character produced a masterpiece interaction.
+### Mechanics
+Interaction is an **encounter skill**, meaning that any skill check takes into account the target's starting attitude (see [Table P25: Encounter Skill Effects]({{< relref "core-mechanics/useful-tables#table-p25-encounter-skill-effects" >}})). 
+
+- **Target Restrictions:** Neither a **Combative** character nor a **Fanatic** character can be influenced by Interaction.
+- **Resistance:** The target's **Will resistance modifier** also applies. 
+- **Cumulative Modifiers:** The modifiers listed above are cumulative. 
+- **Longevity:** In general, the changes in attitude that can be brought about by the use of Interaction are longer-lasting than the changes achieved through the use of Deception or Entertainment skills. Otherwise, a target’s change in attitude lasts until the character does something to alter that attitude in either a positive or negative way. 
+
+> When possible, it's better to roleplay an Interaction encounter than simply rolling dice and deciding an outcome.

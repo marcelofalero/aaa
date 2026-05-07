@@ -60,6 +60,7 @@ The ability to render bombs, mines, and demolition packages inoperative.
 - **Requirement:** Automatic success when disarming your own work or simple, common explosives. A check is required for unusual makes, rigged devices, or under extreme time pressure.
 - **Resolution:** A **complex skill check** with a complexity equal to what was required to set the device. A **Critical Failure** means the device explodes, dealing Ordinary damage.
 
+### Rank Benefits
 ▶ **Rank 3, 9, 12 [Improved Handling]** The character gains a **-1 step bonus** to all checks with this skill at Rank 3, increasing to **-2 steps** at Rank 9, and **-3 steps** at Level 12.
 
 ▶ **Rank 6 [Disaster Avoidance]** When the character rolls a **Critical Failure** while disarming for the first time during a complex check, the result is treated as a simple **Failure** instead.
@@ -69,15 +70,14 @@ The ability to render bombs, mines, and demolition packages inoperative.
 ## Scratch-Built Explosives
 {{< specialty attr="WIL" untrained="no" cost="3" >}}
 
-**Trained Only.**
 The ability to build demolition packages from scratch or repurposing military ordnance (e.g., turning a mortar shell into a satchel charge).
 
 **Improvised Tools:** Using common household items instead of a proper toolkit imposes a **+2 step penalty**.
 
 **Potency:** Determined by a skill check as per [Table P23: Scratch-Built Explosives].
-- **Critical Failure:** The device explodes during assembly, damaging the maker.
 
-**Synergy [Physical Science—Chemistry]:** A character with Chemistry knowledge can optimize the mixture. A successful auxiliary check provides a bonus to the Scratch-Build check: **Ordinary (-1 step)**, **Good (-2 steps)**, or **Amazing (-3 steps)**.
+### Synergy [Physical Science—Chemistry]
+A character with Chemistry knowledge can further optimize an explosive mixture by selecting the best ingredients. A successful auxiliary check provides a bonus to the Scratch-Build check: **Ordinary (-1 step)**, **Good (-2 steps)**, or **Amazing (-3 steps)**.
 
 ---
 

@@ -56,7 +56,7 @@ Esta habilidad especial permite a un personaje detectar la activación de podere
 ### Detectando poderes psiónicos
 El Director de Juego solicitará una verificación cuando se active un poder psiónico en las proximidades del personaje.
 - **Ordinario:** El personaje siente que *algún* poder psiónico fue activado cerca.
-- **Bueno:** Si la fuente está en la línea de visión, el personaje puede identificar al usuario. De lo contrario, obtienen una idea general de la dirección y la distancia.
+- **Bien:** Si la fuente está en la línea de visión, el personaje puede identificar al usuario. De lo contrario, obtienen una idea general de la dirección y la distancia.
 - **Asombroso:** El personaje puede detectar efectos sutiles y continuos (por ejemplo, manipulación Mental o ilusiones psiónicas).
 
 ### Identificación y rastreo

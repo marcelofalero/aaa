@@ -7,8 +7,18 @@ layout = "list"
 +++
 
 Esta amplia habilidad proporciona al personaje la formación y la capacidad de examinar las cosas sistemáticamente a través de la observación y la investigación. A diferencia de las habilidades de Conciencia, Investigar lleva tiempo. Puede usarse cuando un personaje intenta aplicar la lógica y la razón para llegar a una conclusión o deducir la solución a un problema.
+
 ### Investigar modificadores de situación
-| Tarea | Modificador | | :--- | :--- | | Usando solo la habilidad amplia | +1 paso | | Investigación rápida (1 unidad de tiempo) | +3 pasos | | Investigación moderada (2-3 unidades de tiempo) | +1 paso | | Investigación cuidadosa (4+ unidades de tiempo) | -2 pasos | | Nuevo sitio de investigación | -2 pasos | | Sitio de investigación reciente | 0 pasos | | Sitio de investigación en frío | +2 pasos | | Antiguo sitio de investigación | +4 pasos | | El personaje tiene una habilidad relacionada: | | | &nbsp;&nbsp;&nbsp;en el rango 1-4 | -1 paso | | &nbsp;&nbsp;&nbsp;en el rango 5-8 | -2 pasos | | &nbsp;&nbsp;&nbsp;en el rango 9-12 | -3 pasos | | Pista oculta u oculta | +3 pasos | | Pequeña pista | +3 pasos | | Gran pista | -1 paso | | El personaje sabe lo que busca | -1 paso | | Seguimiento de un único objetivo | 0 pasos | | Seguimiento de un grupo de personajes/criaturas | -2 pasos | | Seguimiento en terreno blando | -1 paso | | Seguimiento en terreno duro | +1 paso | | Seguimiento en entorno urbano | +3 pasos |
+
+| Tarea | Modificador |
+| :--- | :--- |
+| Investigación rápida (1 unidad de tiempo) | +3 pasos de penalización |
+| Investigación moderada (2-3 unidades) | +1 paso de penalización |
+| Investigación cuidadosa (4+ unidades) | -Bono de 2 pasos |
+| Nuevo sitio de investigación | -Bono de 2 pasos |
+| Sitio antiguo o "frío" | Penalización de +2 a +4 pasos |
+| Habilidad relacionada (por ejemplo, Medicina, Ciencias) | Bonificación de -1 a -3 pasos |
+| Pista pequeña u oculta | +3 pasos de penalización |
 
 ## Interrogar
 {{< specialty attr="WIL" untrained="yes" cost="3" >}}

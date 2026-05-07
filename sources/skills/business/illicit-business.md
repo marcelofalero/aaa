@@ -17,9 +17,5 @@ name: Illicit business
 
 This specialty skill allows a character to function in the underside of the business world, providing knowledge of extortion, smuggling, fencing stolen goods, and the black market. It is the primary skill of white-collar criminals (embezzlers, insider traders, corporate spies).
 
-### Illegal Transactions
-This skill reduces the penalty for attempting illegal transactions.
-
-⊗ **Rank 1, 4, 7, 10 [Art of the deal]** Penalty reduced by -1 step at rank one plus and additional step at rank 4, 7, and 10.
-
-*Note: This benefit only reduces or eliminates penalties; it never provides a bonus.
+### Rank Benefits
+⊗ **Rank 1, 4, 7, 10 [Art of the deal]** Gains a number of situation bonus steps based on the ranks in this specialty skill (-1 step at Rank 1, -2 steps at Rank 4, -3 steps at Rank 7, and -4 steps at Rank 10) when making deals, haggling, or bargaining within the scope of illicit business.

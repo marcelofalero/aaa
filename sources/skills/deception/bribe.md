@@ -3,6 +3,15 @@ attribute: PER
 cost: 3
 url: /skills/deception#bribe
 trained_only: false
+rank_benefits:
+- rank: 1
+  title: Increased Effect
+- rank: 4
+  title: Increased Effect
+- rank: 7
+  title: Increased Effect
+- rank: 10
+  title: Increased Effect
 name: Bribe
 ---
 
