@@ -41,6 +41,11 @@ This page provides a mapping of common game terms from English to Spanish to ens
 | Mental | Mental |
 | Other | Otros |
 | Vaulting | Salto con apoyo |
+| Rank | Rango |
+| Ranks | Rangos |
+| Successes | Éxitos |
+| Step bonus | Bonificación de paso |
+| Step penalty | Penalización de paso |
 
 ## Attributes
 | English | Spanish |
