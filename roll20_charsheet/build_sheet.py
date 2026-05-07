@@ -2,10 +2,18 @@
 import os
 import sys
 import json
+import yaml
 
-# Add src to the path so we can import skills_data
-sys.path.append(os.path.join(os.path.dirname(__file__), 'src'))
-from skills_data import SKILLS_DATA, PSIONICS_DATA, ABILITY_MAP
+# Ability name mapping for formulas
+ABILITY_MAP = {
+    'STR': 'Strength',
+    'DEX': 'Dexterity',
+    'CON': 'Constitution',
+    'INT': 'Intelligence',
+    'WIL': 'Will',
+    'PER': 'Personality',
+    'CHA': 'Personality',
+}
 
 def clean_id(n):
     return n.replace(' ','').replace('-','').replace('.','').replace(',','').replace('—','')
@@ -62,41 +70,9 @@ def get_skill_urls():
     except Exception as e:
         print(f"Error loading skill URLs: {e}")
         
-    # Psionics might not be in the same JSON or format, adding fallback for them if needed
-    # But usually broad skills follow the pattern
     return urls
 
 SKILL_URL_MAP = get_skill_urls()
-
-def get_smart_anchor(item):
-    """Generates a Hugo-compatible anchor based on the user's website patterns."""
-    name = item.get("n", "").replace('[Specific]', '').replace('[spec]', '').strip()
-    attr = item.get("at", "")
-    pr = item.get("u", "") # In the sheet data, 'u' is "YES" or "NO"
-    
-    # Mapping sheet terminology to website terminology
-    # Note: Medical Science is 'u': 'NO', which means "Requires training"
-    pr_label = ""
-    if pr == "NO":
-        pr_label = "Trained Only"
-    
-    parts = []
-    if attr: parts.append(attr)
-    if pr_label: parts.append(pr_label)
-    
-    if parts:
-        heading = f"{name} ({' - '.join(parts)})"
-    else:
-        heading = name
-        
-    # Hugo-like anchorize logic derived from user example "surgery-int---trained-only"
-    import re
-    anchor = heading.lower()
-    anchor = anchor.replace(" - ", "---")
-    anchor = anchor.replace(" (", "-")
-    anchor = anchor.replace(" ", "-")
-    anchor = anchor.replace(")", "")
-    return anchor
 
 def get_alternity_roll_query(default_step=0):
     """Generates the Roll20 roll query for situation modifiers from -10 to +10."""
@@ -124,19 +100,64 @@ def get_alternity_roll_query(default_step=0):
         else: d = f"{val-4}d20"
         return f"1d20cs<1cf>20{sign}{d}cs<0cf<0"
 
-    # The default option must be the first one after the label in a Roll20 query
     all_steps = list(range(-10, 11))
     if default_step in all_steps:
         all_steps.remove(default_step)
     
-    # Sort the rest and put default first
     ordered_steps = [default_step] + sorted(all_steps)
-    
     options = []
     for s in ordered_steps:
         options.append(f"{get_step_label(s)}, {get_step_value(s)}")
     
     return f"?{{Situation Modifier|{'|'.join(options)}}}"
+
+def parse_yaml_skills(file_path):
+    """Parses the YAML skill source and returns the structured data for the sheet."""
+    with open(file_path, 'r', encoding='utf-8') as f:
+        data = yaml.safe_load(f)
+
+    items = data.get('items', data)
+    attributes = ['STR', 'DEX', 'CON', 'INT', 'WIL', 'PER']
+    skills_by_attr = {attr: [] for attr in attributes}
+
+    for broad_key, broad_val in items.items():
+        attr = broad_val.get('attribute', 'INT')
+        if attr not in skills_by_attr:
+            attr = 'INT'
+            
+        en_loc = next((loc['en'] for loc in broad_val.get('localized', []) if 'en' in loc), None)
+        name = en_loc.get('name', broad_key.replace('-', ' ').title()) if en_loc else broad_key.replace('-', ' ').title()
+        untrained = 'YES' if not broad_val.get('trained_only', False) else 'NO'
+        cost = broad_val.get('cost', 0)
+        
+        specialties = []
+        specs_data = broad_val.get('items', {})
+        for spec_key, spec_val in specs_data.items():
+            spec_en_loc = next((loc['en'] for loc in spec_val.get('localized', []) if 'en' in loc), None)
+            spec_name = spec_en_loc.get('name', spec_key.replace('-', ' ').title()) if spec_en_loc else spec_key.replace('-', ' ').title()
+            spec_attr = spec_val.get('attribute', attr)
+            spec_untrained = 'YES' if not spec_val.get('trained_only', False) else 'NO'
+            spec_cost = spec_val.get('cost', 0)
+            
+            rb = [{'rank': str(b.get('rank')), 'title': b.get('title')} for b in spec_val.get('rank_benefits', [])]
+            
+            spec_entry = {'n': spec_name, 'at': spec_attr, 'u': spec_untrained, 'c': spec_cost}
+            if rb: spec_entry['rb'] = rb
+            specialties.append(spec_entry)
+
+        broad_entry = {
+            'n': name, 'u': untrained, 'at': attr,
+            'sp': sorted(specialties, key=lambda x: x['n']),
+            'c': cost
+        }
+        skills_by_attr[attr].append(broad_entry)
+
+    skills_data = []
+    for attr in attributes:
+        if skills_by_attr[attr]:
+            sorted_skills = sorted(skills_by_attr[attr], key=lambda x: x['n'])
+            skills_data.append({'a': attr, 's': sorted_skills})
+    return skills_data
 
 def generate_skills_html(data_list, indent_level=3, is_psionics=False):
     """Generates the HTML for broad and specialty skills based on the provided data."""
@@ -150,7 +171,6 @@ def generate_skills_html(data_list, indent_level=3, is_psionics=False):
     skill_ids = []
     indent = "\t" * indent_level
 
-    # Generate roll result strings
     broad_roll_results = f"{{{{results= [[{get_alternity_roll_query(default_step=1)}]]}}}}"
     spec_roll_results = f"{{{{results= [[{get_alternity_roll_query(default_step=0)}]]}}}}"
 
@@ -161,7 +181,6 @@ def generate_skills_html(data_list, indent_level=3, is_psionics=False):
         attr_full = ABILITY_MAP[attr_short]
         id_name = clean_id(name)
         
-        # Base URL for the broad skill
         fallback_path = "psionics" if is_psionics else "skills"
         default_url = f"https://aaa.dimble.net/{fallback_path}/{name.lower().replace(' ', '-')}"
         url = SKILL_URL_MAP.get(name, default_url)
@@ -172,13 +191,11 @@ def generate_skills_html(data_list, indent_level=3, is_psionics=False):
         roll_scores = f"{{{{score= [[@{{{id_name}O}}]]/[[@{{{id_name}G}}]]/[[@{{{id_name}A}}]]}}}}"
         wiki_link = f"{{{{wiki= [↗ Wiki Documentation]({url})}}}}"
 
-        # Broad skill formula
         if is_untrained == "NO":
             formula = f"(floor(@{{{attr_full}}}*@{{{id_name}}}))"
         else:
             formula = f"(floor(@{{{attr_full}}}/(2-@{{{id_name}}})))"
             
-        # Broad Skill Row
         cost = skill.get("c", 0)
         trained_only_class = " sheet-trained-only" if is_untrained == "NO" else ""
         info_icon = build_info_icon(cost, is_untrained)
@@ -201,7 +218,6 @@ def generate_skills_html(data_list, indent_level=3, is_psionics=False):
         h += f'{indent}\t</div>\n'
         h += f'{indent}\t<div class="sheet-specialties-container">\n'
         
-        # Specialty Skill Rows
         for spec in skill.get("sp", []):
             spec_name = spec["n"]
             spec_attr = spec["at"]
@@ -249,27 +265,28 @@ def generate_skills_html(data_list, indent_level=3, is_psionics=False):
     return "".join(output_html), skill_ids
 
 def build():
-    src_dir = 'src/tabs'
-    output_file = 'Alternity_RPG.html'
+    root_dir = os.path.dirname(os.path.dirname(__file__))
+    src_dir = os.path.join(os.path.dirname(__file__), 'src/tabs')
+    output_file = os.path.join(os.path.dirname(__file__), 'Alternity_RPG.html')
     
+    skills_yaml = os.path.join(root_dir, 'sources/data_sources/skills.yaml')
+    psionics_yaml = os.path.join(root_dir, 'sources/data_sources/psionics.yaml')
+    
+    print(f"Loading skills from {skills_yaml}...")
+    skills_data = parse_yaml_skills(skills_yaml)
+    print(f"Loading psionics from {psionics_yaml}...")
+    psionics_data = parse_yaml_skills(psionics_yaml)
+
     # Files to join in order
     files = [
-        'header.html',
-        'core.html',
-        'skills.html',
-        'psionics.html',
-        'cybermutations.html',
-        'wealthequipment.html',
-        'customskills.html',
-        'options.html',
-        'starship.html',
-        'footer.html'
+        'header.html', 'core.html', 'skills.html', 'psionics.html',
+        'cybermutations.html', 'wealthequipment.html', 'customskills.html',
+        'options.html', 'starship.html', 'footer.html'
     ]
     
     final_html = []
     all_skill_ids = []
 
-    # Pre-generate the common roll queries
     roll_query_0 = get_alternity_roll_query(default_step=0)
     roll_query_1 = get_alternity_roll_query(default_step=1)
     
@@ -282,17 +299,15 @@ def build():
         with open(path, 'r', encoding='utf-8') as f:
             content = f.read()
             
-        # Handle dynamic skill placeholders
         if filename == 'skills.html':
-            skills_html, skill_ids = generate_skills_html(SKILLS_DATA, indent_level=3)
+            skills_html, skill_ids = generate_skills_html(skills_data, indent_level=3)
             content = content.replace('<!-- SKILLS_PLACEHOLDER -->', skills_html)
             all_skill_ids.extend(skill_ids)
         elif filename == 'psionics.html':
-            psionics_html, skill_ids = generate_skills_html(PSIONICS_DATA, indent_level=3, is_psionics=True)
+            psionics_html, skill_ids = generate_skills_html(psionics_data, indent_level=3, is_psionics=True)
             content = content.replace('<!-- PSIONICS_PLACEHOLDER -->', psionics_html)
             all_skill_ids.extend(skill_ids)
             
-        # Replace global roll placeholders in all files
         content = content.replace('<!-- ROLL_QUERY_DEFAULT_0 -->', roll_query_0)
         content = content.replace('<!-- ROLL_QUERY_DEFAULT_1 -->', roll_query_1)
             
@@ -300,14 +315,10 @@ def build():
         
     combined_html = "".join(final_html)
     
-    # Write to final file
     with open(output_file, 'w', encoding='utf-8') as f:
         f.write(combined_html)
         
     print(f"Successfully built {output_file} from modular source files.")
-
-if __name__ == "__main__":
-    build()
 
 if __name__ == "__main__":
     build()
