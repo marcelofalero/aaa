@@ -13,10 +13,12 @@ This skill automates the end-to-end workflow for updating the Alternity RPG rule
 
 ## Workflow
 1.  **Sync Site Data**: Run `python3 ../../../sources/scripts/manage_site_data.py` to ensure Markdown edits are synced to `skills.yaml`.
-2.  **Automated Translation**: Execute the master translation script to ensure Spanish parity with terminology mapping.
-3.  **Site & Sheet Build**: Rebuild the JSON search index and the Roll20 character sheet.
-4.  **Git Automation**: Create a timestamped feature branch, commit all changes, and push to origin.
-5.  **PR Lifecycle**: Create a Pull Request using `gh pr create` and merge it using `gh pr merge`.
+2.  **Ensure all search indexes are updated**: Verify that the hugo search indexes are updated.
+3.  **Automated Translation**: Execute the master translation script to ensure Spanish parity with terminology mapping.
+4.  **Site Test Build**: Test if that site can be build using hugo. If not, fix it.
+5.  **Roll20 Sheet Build**: Rebuild the Roll20 character sheet.
+6.  **Git Automation**: Create a timestamped feature branch, commit all changes, and push to origin.
+7.  **PR Lifecycle**: Create a Pull Request using `gh pr create` and merge it using `gh pr merge`.
 
 ## Scripts
 This skill relies on the following scripts in the `scripts/` directory:
