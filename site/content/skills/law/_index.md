@@ -1,6 +1,6 @@
 +++
 title = "Law"
-attribute = "WIL"
+attribute = "INT"
 category = "Social"
 type = "skill"
 layout = "list"
@@ -16,14 +16,14 @@ When a legal battle is played out "off camera," the GM may call for Law skill ch
 - **Amazing:** Opponent takes a +3 penalty, or the character wins the case outright.
 
 ## Court procedures
-{{< specialty attr="WIL" untrained="yes" cost="3" >}}
+{{< specialty attr="INT" untrained="yes" cost="3" >}}
 
 Lawyers, judges, and others use this skill to interact in a courtroom setting. This specialty is used to argue a case or point of view in an official proceeding.
 
 ---
 
 ## Law enforcement procedures
-{{< specialty attr="WIL" untrained="yes" cost="3" >}}
+{{< specialty attr="INT" untrained="yes" cost="3" >}}
 
 Police officers, detectives, bounty hunters, and others use this skill to follow (or bend) legal law enforcement procedures. Topics covered include:
 - Knowing laws concerning surveillance, search, and seizure.

@@ -10,9 +10,9 @@ You are defined by a single, highly publicized conflict. Whether you were an ace
 * None.
 
 ## Favored Specialty Skills:
-* [Leadership-Inspire] ({{< relref "/skills/leadership/#inspire" >}})
-* [Stamina-Endurance] ({{< relref "/skills/stamina/#endurance" >}})
-* [Resolve- Mental Resolve] ({{< relref "/skills/resolve/#mental-resolve" >}})
+- [Leadership-Inspire] ({{< relref "/skills/leadership/#inspire" >}})
+- [Stamina-Endurance] ({{< relref "/skills/stamina/#endurance" >}})
+- [Resolve- Mental Resolve] ({{< relref "/skills/resolve/#mental-resolve" >}})
 
 ## Favored Perks:
 * [Celebrity] ({{< relref "/perks_flaws/#celebrity" >}})
@@ -27,6 +27,6 @@ A personalized or heavily battle-scarred signature weapon, official combat medal
 **Burden of Glory:** You receive a -1 step bonus to [Interaction] ({{< relref "/skills/interaction/" >}}) or [Leadership] ({{< relref "/skills/leadership/" >}}) skill checks when dealing with veterans, active military personnel, or patriotic citizens who recognize your service.
 
 ## Tendencies (Pick 2):
-* **The Living Legend:** Voluntarily accept a significant disadvantage or take the brunt of an attack to protect civilians or allies, driven by the need to live up to your impossible reputation.
-* **The Ghost of the Past:** React to a current situation using the outdated or traumatic context of your past war, complicating a simple negotiation or infiltration by treating it like a battlefield.
+- **The Living Legend:** Voluntarily accept a significant disadvantage or take the brunt of an attack to protect civilians or allies, driven by the need to live up to your impossible reputation.
+- **The Ghost of the Past:** React to a current situation using the outdated or traumatic context of your past war, complicating a simple negotiation or infiltration by treating it like a battlefield.
 

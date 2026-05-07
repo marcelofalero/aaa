@@ -34,7 +34,18 @@ As entries are reviewed, the following files serve as a comparison log:
 - **Awareness:** COMPLETED (English reviewed/fixed).
 - **Business:** COMPLETED (English reviewed/fixed).
 - **Armor Operation:** COMPLETED (English and Spanish reviewed/fixed).
-- **Athletics:** DRAFTED (Pending Review).
-- **Computer Science:** DRAFTED (Pending Review).
-- **Next Up:** Review drafted skills, then Covert Ops.
+- **Athletics:** COMPLETED (English reviewed/fixed).
+- **Computer Science:** COMPLETED (English reviewed/fixed).
+- **Covert Ops:** COMPLETED (English reviewed/fixed).
+- **Creativity:** COMPLETED (English reviewed/fixed).
+- **Deception:** COMPLETED (English reviewed/fixed).
+- **Demolitions:** DRAFTED (Pending Review).
+- **Entertainment:** DRAFTED (Pending Review).
+- **Heavy Weapons:** DRAFTED (Pending Review).
+- **Interaction:** DRAFTED (Pending Review).
+- **Investigate:** DRAFTED (Pending Review).
+- **Knowledge:** DRAFTED (Pending Review).
+- **Law:** DRAFTED (Pending Review).
+- **Leadership:** DRAFTED (Pending Review).
+- **Next Up:** Life Science (Broad Skill).
 .

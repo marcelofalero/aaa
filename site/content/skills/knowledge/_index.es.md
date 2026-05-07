@@ -31,7 +31,7 @@ Esta habilidad le da al personaje un conocimiento práctico de las habilidades p
 ---
 
 ## Operación de Computadoras
-{{< specialty attr="WIL" untrained="no" cost="2" >}}
+{{< specialty attr="INT" untrained="no" cost="2" >}}
 
 Esta habilidad especial permite a un personaje mejorar su capacidad para hacer que las computadoras funcionen, específicamente su capacidad para aprovechar al máximo el software (incluido el sistema operativo) que está instalado en una computadora. El grado de éxito se relaciona con la calidad o cantidad de información a la que se accede o recupera, o la velocidad con la que el operador puede realizar una tarea.
 

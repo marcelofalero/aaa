@@ -52,3 +52,12 @@ Esta habilidad proporciona al personaje capacitación en la reparación y manten
 
 ---
 
+## Invención
+{{< specialty attr="INT" untrained="yes" cost="3" >}}
+
+La invención permite a un personaje construir un componente o sistema electrónico o mecánico desde cero, o modificar un dispositivo existente para que realice una nueva función. El uso de esta habilidad requiere tiempo; las comprobaciones de Invención son siempre comprobaciones de habilidad complejas. Modificar un objeto existente puede hacerse en asaltos, pero todos los demás aspectos de la invención requieren horas, días, semanas o meses, según la determinación del Director del Juego.
+⊗ **Efecto Incrementado:** A medida que aumenta el rango de habilidad de especialidad de un personaje, este recibe un bono a cualquier comprobación de habilidad que involucre Ciencia Técnica o las otras tres habilidades de especialidad: **bono de -1 paso al rango 3**, **-2 al rango 6**,
+**-3 al rango 9** y **-4 al rango 12**.
+
+---
+

@@ -33,7 +33,7 @@ puede ser asistido por esta especialidad. La bonificación es -1 paso en el rang
 ---
 
 ## Conocimiento médico
-{{< specialty attr="WIL" untrained="yes" cost="3" >}}
+{{< specialty attr="INT" untrained="yes" cost="3" >}}
 
 El conocimiento médico es el estudio de la medicina y representa cómo
 actualizado un personaje está sobre una técnica médica particular o un
@@ -47,7 +47,7 @@ Comprobaciones de habilidades de tratamiento de ciencias: -1 paso en el rango 2;
 ---
 
 ## Psicología
-{{< specialty attr="WIL" untrained="yes" cost="5" >}}
+{{< specialty attr="INT" untrained="yes" cost="5" >}}
 
 La psicología es el estudio de los procesos mentales y del comportamiento, y la
 Tratamiento de aberraciones y enfermedades mentales.
@@ -60,7 +60,7 @@ puede ser asistido por esta especialidad. La bonificación es -1 paso en el rang
 ---
 
 ## Cirugía
-{{< specialty attr="WIL" untrained="no" cost="5" >}}
+{{< specialty attr="INT" untrained="no" cost="5" >}}
 
 La habilidad de especialidad de Ciencias Médicas *cirugía* se utiliza para curar.
 causar daños mortales y realizar otros procedimientos médicos invasivos. Cualquiera
@@ -99,7 +99,7 @@ se vuelve capaz de instalar implantes cibernéticos.
 ---
 
 ## Tratamiento
-{{< specialty attr="WIL" untrained="no" cost="4" >}}
+{{< specialty attr="INT" untrained="no" cost="4" >}}
 
 La habilidad de especialidad *tratamiento* se puede utilizar para lograr todos los
 mismas tareas para las que se usa la habilidad *primeros auxilios* (aturdimiento curativo)
@@ -149,6 +149,22 @@ El personaje alcanza el rango 3 en xenomedicina, la penalización inicial de +3 
 reducido a +2; en el rango 6, la penalización es +1; en el puesto 9, el
 se elimina la pena; y en el rango 12, el médico recibe un -1
 bonificación.
+
+---
+
+## Ciencias forenses
+{{< specialty attr="WIL" untrained="yes" cost="3" >}}
+
+La ciencia forense es la aplicación del conocimiento médico y científico a problemas legales e investigaciones criminales. Se utiliza para determinar la causa de la muerte, identificar restos y analizar pruebas de la escena de un crimen.
+⊗ **Efecto incrementado:** Un personaje recibe una **bonificación de
+-1 paso** en el rango 3, **-2** en el rango 6, **-3** en el rango 9 y **-4** en el rango 12 en ciertas otras tiradas de habilidad que puedan ser asistidas por esta especialidad (por ejemplo, Investigar, Ley).
+
+---
+
+## Xenomedicine
+{{< specialty attr="WIL" untrained="no" cost="3" >}}
+
+
 
 ---
 

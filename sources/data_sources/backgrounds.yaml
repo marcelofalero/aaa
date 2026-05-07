@@ -1347,3 +1347,45 @@ items:
           tendencies: |-
             **La Exposición:** Prioriza documentar un crimen, una conspiración o un evento antes que detenerlo, poniéndote en peligro táctico para asegurar que el metraje o la historia sobrevivan.<br>**La Pregunta Difícil:** Interroga o provoca agresivamente a un individuo poderoso en un entorno social, destruyendo el progreso diplomático para evaluar su reacción.
     url: /backgrounds/whistleblower/
+  war-hero:
+    favored_broad_skill: ''
+    localized:
+      - en:
+          description: |-
+            You are defined by a single, highly publicized conflict. Whether you were an ace pilot, a combat medic, or the sole survivor of a doomed squad, the galaxy knows your face—and expects you to live up to the legend.
+          equipment: |-
+            A personalized or heavily battle-scarred signature weapon, official combat medals, a rugged military jacket, and a supply of medical painkillers.
+          favored_perks: |-
+            [Celebrity] ({{< relref "/perks_flaws/#celebrity" >}})
+          favored_specialty_skills: |-
+            - [Leadership-Inspire] ({{< relref "/skills/leadership/#inspire" >}})
+            - [Stamina-Endurance] ({{< relref "/skills/stamina/#endurance" >}})
+            - [Resolve- Mental Resolve] ({{< relref "/skills/resolve/#mental-resolve" >}})
+          flaw: |-
+            [Old Injury] ({{< relref "/perks_flaws/#old-injury" >}}) (A lasting physical reminder of the event that made you famous).
+          name: The War Hero
+          special_ability: |-
+            **Burden of Glory:** You receive a -1 step bonus to [Interaction] ({{< relref "/skills/interaction/" >}}) or [Leadership] ({{< relref "/skills/leadership/" >}}) skill checks when dealing with veterans, active military personnel, or patriotic citizens who recognize your service.
+          tendencies: |-
+            - **The Living Legend:** Voluntarily accept a significant disadvantage or take the brunt of an attack to protect civilians or allies, driven by the need to live up to your impossible reputation.
+            - **The Ghost of the Past:** React to a current situation using the outdated or traumatic context of your past war, complicating a simple negotiation or infiltration by treating it like a battlefield.
+      - es:
+          description: |-
+            Te defines por un solo conflicto muy publicitado. Ya hayas sido un piloto experto, un médico de combate o el único superviviente de un pelotón condenado, la galaxia conoce tu rostro y espera que estés a la altura de la leyenda.
+          equipment: |-
+            Un arma personalizada con cicatrices de batalla, medallas de combate oficiales, una chaqueta militar resistente y un suministro de analgésicos médicos.
+          favored_perks: |-
+            [Celebridad] ({{< relref "/perks_flaws/#celebrity" >}})
+          favored_specialty_skills: |-
+            - [Liderazgo-Inspirar] ({{< relref "/skills/leadership/#inspire" >}})
+            - [Resistencia-Aguante] ({{< relref "/skills/stamina/#endurance" >}})
+            - [Voluntad-Voluntad Mental] ({{< relref "/skills/resolve/#mental-resolve" >}})
+          flaw: |-
+            [Vieja Herida] ({{< relref "/perks_flaws/#old-injury" >}}) (Un recordatorio físico duradero del evento que te hizo famoso).
+          name: El Héroe de Guerra
+          special_ability: |-
+            **Carga de Gloria:** Recibes una bonificación de -1 paso a las tiradas de habilidad de [Interacción] ({{< relref "/skills/interaction/" >}}) o [Liderazgo] ({{< relref "/skills/leadership/" >}}) al tratar con veteranos, personal militar activo o ciudadanos patrióticos que reconocen tu servicio.
+          tendencies: |-
+            - **La Leyenda Viviente:** Acepta voluntariamente una desventaja significativa o soporta el peso de un ataque para proteger a civiles o aliados, impulsado por la necesidad de estar a la altura de tu reputación imposible.
+            - **El Fantasma del Pasado:** Reacciona a una situación actual utilizando el contexto obsoleto o traumático de tu guerra pasada, complicando una simple negociación o infiltración al tratarla como un campo de batalla.
+    url: /backgrounds/war-hero/

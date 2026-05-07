@@ -425,6 +425,30 @@
                             "cost": 3,
                             "type": "Specialty",
                             "css_class": ""
+                        },
+                        {
+                            "skill": "The Intangible",
+                            "attribute": "WIL",
+                            "url": "/skills/creativity#the-intangible",
+                            "cost": 3,
+                            "type": "Specialty",
+                            "css_class": ""
+                        },
+                        {
+                            "skill": "The Shape",
+                            "attribute": "WIL",
+                            "url": "/skills/creativity#the-shape",
+                            "cost": 3,
+                            "type": "Specialty",
+                            "css_class": ""
+                        },
+                        {
+                            "skill": "The Word",
+                            "attribute": "WIL",
+                            "url": "/skills/creativity#the-word",
+                            "cost": 3,
+                            "type": "Specialty",
+                            "css_class": ""
                         }
                     ]
                 },
@@ -432,7 +456,7 @@
                     "skill": "Entertainment",
                     "attribute": "PER",
                     "url": "/skills/entertainment",
-                    "cost": 4,
+                    "cost": 3,
                     "type": "Broad",
                     "items": [
                         {
@@ -473,7 +497,7 @@
                     "skill": "Navigation",
                     "attribute": "WIL",
                     "url": "/skills/navigation",
-                    "cost": 3,
+                    "cost": 6,
                     "type": "Broad",
                     "items": [
                         {
@@ -753,6 +777,22 @@
                             "cost": 4,
                             "type": "Specialty",
                             "css_class": ""
+                        },
+                        {
+                            "skill": "Gamble-Logic-Games",
+                            "attribute": "INT",
+                            "url": "/skills/deception#gamble-logic-games",
+                            "cost": 3,
+                            "type": "Specialty",
+                            "css_class": ""
+                        },
+                        {
+                            "skill": "Gamble-Nerve-Games",
+                            "attribute": "PER",
+                            "url": "/skills/deception#gamble-nerve-games",
+                            "cost": 3,
+                            "type": "Specialty",
+                            "css_class": ""
                         }
                     ]
                 },
@@ -848,14 +888,14 @@
                 },
                 {
                     "skill": "Law",
-                    "attribute": "WIL",
+                    "attribute": "INT",
                     "url": "/skills/law",
                     "cost": 0,
                     "type": "Broad",
                     "items": [
                         {
                             "skill": "Court procedures",
-                            "attribute": "WIL",
+                            "attribute": "INT",
                             "url": "/skills/law#court-procedures",
                             "cost": 3,
                             "type": "Specialty",
@@ -863,7 +903,7 @@
                         },
                         {
                             "skill": "Law enforcement procedures",
-                            "attribute": "WIL",
+                            "attribute": "INT",
                             "url": "/skills/law#law-enforcement-procedures",
                             "cost": 3,
                             "type": "Specialty",
@@ -1084,7 +1124,7 @@
                         },
                         {
                             "skill": "Computer Operation",
-                            "attribute": "WIL",
+                            "attribute": "INT",
                             "url": "/skills/knowledge#computer-operation",
                             "cost": 2,
                             "type": "Specialty",
@@ -1198,7 +1238,7 @@
                         },
                         {
                             "skill": "Medical Knowledge",
-                            "attribute": "WIL",
+                            "attribute": "INT",
                             "url": "/skills/medical-science#medical-knowledge",
                             "cost": 3,
                             "type": "Specialty",
@@ -1206,7 +1246,7 @@
                         },
                         {
                             "skill": "Psychology",
-                            "attribute": "WIL",
+                            "attribute": "INT",
                             "url": "/skills/medical-science#psychology",
                             "cost": 5,
                             "type": "Specialty",
@@ -1214,7 +1254,7 @@
                         },
                         {
                             "skill": "Surgery",
-                            "attribute": "WIL",
+                            "attribute": "INT",
                             "url": "/skills/medical-science#surgery",
                             "cost": 5,
                             "type": "Specialty",
@@ -1222,7 +1262,7 @@
                         },
                         {
                             "skill": "Treatment",
-                            "attribute": "WIL",
+                            "attribute": "INT",
                             "url": "/skills/medical-science#treatment",
                             "cost": 4,
                             "type": "Specialty",
@@ -1232,6 +1272,22 @@
                             "skill": "Xenomedicine",
                             "attribute": "INT",
                             "url": "/skills/medical-science#xenomedicine",
+                            "cost": 3,
+                            "type": "Specialty",
+                            "css_class": "trained-only"
+                        },
+                        {
+                            "skill": "Forensic Science",
+                            "attribute": "WIL",
+                            "url": "/skills/medical-science#forensic-science",
+                            "cost": 3,
+                            "type": "Specialty",
+                            "css_class": ""
+                        },
+                        {
+                            "skill": "Xenomedicine",
+                            "attribute": "WIL",
+                            "url": "/skills/medical-science#xenomedicine-specific",
                             "cost": 3,
                             "type": "Specialty",
                             "css_class": "trained-only"
@@ -1363,6 +1419,14 @@
                             "skill": "Repair",
                             "attribute": "WIL",
                             "url": "/skills/technical-science#repair",
+                            "cost": 3,
+                            "type": "Specialty",
+                            "css_class": ""
+                        },
+                        {
+                            "skill": "Juryrig",
+                            "attribute": "INT",
+                            "url": "/skills/technical-science#juryrig",
                             "cost": 3,
                             "type": "Specialty",
                             "css_class": ""

@@ -6,34 +6,67 @@ url: /skills/administration
 trained_only: false
 name: Administration
 ---
+## ADMINISTRATION (Broad Skill)
 
-This broad skill provides a character with knowledge concerning the forms and procedures that go into running an office or organization of almost any kind. With this skill, a character understands scheduling, personnel and equipment management, and the regulations and laws that apply to such endeavors. Any large organizations, including governments, agencies, and corporations, have some type of administrational bureaucracy that a character may someday be called upon to interact with. This skill allows him to attempt to identify the proper administrators to deal with in a particular situation, the proper procedures to follow, and the best way to cut through red tape.
+This skill provides a character with the knowledge and institutional literacy required to navigate, manipulate, or weaponize bureaucratic systems. It covers scheduling, personnel management, and the legal regulations governing organizations ranging from local offices to interstellar empires.
 
 ### Organizational Interaction
-The Administration skill can be used in an attempt to change the attitude of an individual employee of some corporation or organization. In such a case, it is treated as an [encounter skill](/core-mechanics/characters-in-action/#encounter-scene). If the use of this skill results in a target's attitude being changed to Friendly or better, this can provide a bonus on any subsequent skill check to get information or cooperation out of the organization that is the employer of the target.
 
-### Getting Results
-Using this skill, or either of its specialties, to get results out of a bureaucratic organization requires a complex skill check.
+The Administration skill can be used in an attempt to change the attitude of an individual employee of some corporation or organization. In such a case, it is treated as an encounter skill. If the use of this skill results in a target's attitude being changed to Friendly or better, this can provide a bonus on any subsequent skill check to get information or cooperation out of the organization that is the employer of the target.
 
-**Time Constraints (Situation Modifiers):**
-- **Amazing (+3 penalty):** Answer needed in 1 day.
-- **Good (+2 penalty):** Answer in d4+1 days.
-- **Ordinary (+1 penalty):** Answer in d4+2 days.
-- **Marginal (no penalty):** Answer in d6+3 days.
+### Navigating Bureaucracy (Progressive Track)
 
-**Bureaucratic Complexity:**
-- **Marginal:** Small system/extremely easy request.
-- **Ordinary:** Medium-sized system/routine request.
-- **Good:** Large system/complex request.
-- **Amazing:** Extremely large system/restricted or illegal request.
+Bureaucratic tasks are handled as a Progressive Track in daily intervals, but the GM can adjust it if needed.
+The GM determines a hidden number of successes required based on the nature of the request.
+Every day, the character rolls to generate successes until the hidden threshold is met.
 
-*Note: These factors can offset one another. For instance, a routine request in an extremely large bureaucracy might be Good or Ordinary complexity.*
+#### 1. Baseline Difficulty (Organization Size)
 
-### Hindering Others
-A character's Administration skill can also be used to hinder someone else’s attempt to gain information. The modifiers for conditions are transposed:
-- **Amazing (+3 penalty):** Slow down for d6+3 days.
-- **Good (+2 penalty):** Slow down for d4+2 days.
-- **Ordinary (+1 penalty):** Slow down for d4+1 days.
-- **Marginal (no penalty):** Delay of 1 day.
+The size of the system determines the base difficulty for the daily roll:
 
-Likewise, complexity works the other way around: slowing down an extremely easy request in a small system is a feat of **Amazing** complexity.
+* **Small (-1 step bonus):** A local organization with loose rule, a small-town government, a small business.
+* **Medium (No modifier):** A regional corporate headquarters, a city government agency, or a planetary spaceport.
+* **Large(+1 step penalty):** A national ministry, a sector-wide trade guild, or a planetary military.
+* **Huge (+2 step penalty):** An interstellar nation, a large corporation with strict rules, or an intelligence agency.
+
+#### 2. Difficulty Modifiers
+
+Once the baseline is set, apply the following modifiers to the Difficulty:
+
+- **Familiarity (-1 Step):** The administrator has done this before.
+- **Access (-1 Steps):** The administrator is a member of the organization, have clearance or otherwise have the right qualification.
+- **+2 Steps (Rushing):** The hero attempts to bypass standard protocols to get a result in record time. This increases the success yield (see below).
+
+*Familiarity or Access can be obtained by hiring a local paralegal or bribing the right people*
+
+#### 3. Daily Success Yield
+
+The result of the daily roll determines how much progress is made toward the hidden target.
+
+* **Critical Failure:** **-3 Successes.** (A major blunder, an audit is triggered, or the file is "lost" indefinitely).
+* **Failure / Marginal:** **1 Success.** (A day of slow, grinding red tape. Progress is made despite the roll).
+* **Ordinary:** **2 Successes.**
+* **Good / Amazing:** **3 Successes.**
+
+**If Rushing (+2 Step Difficulty):**
+
+* **Critical Failure:** **-3 Successes.**
+* **Failure / Marginal:** **2 Successes.** (The aggressive push forces movement despite poor execution).
+* **Ordinary:** **3 Successes.**
+* **Good / Amazing:** **4 Successes.**
+
+### Narrative Roadblocks & Interference
+
+Until the target successes are met, the GM presents the remaining "work" as physical or social obstacles:
+
+#### The Come-and-Go
+
+As the character accrues successes day by day the character can give feedback, in the form of tangible events.
+
+> The docking is already approved by port control, but there are still some maintainence results that need to be processed, after that you can bring the ship in for inspection. While a critical failure can mean the you skipped an important paper work and need to start again with a previous request.
+
+**Sabotage:** An opponent using Administration to hinder the character, this subtract a success from the character's for each success on his opponet roll.
+
+> The opponent arrange an immediate "vacations" for the ship inspector de day before he had to sign your docking bay approval he just inspected. You will need to redo the same step again.
+
+**Detection:** An **[Amazing]** success reveals the interference and offer some clues of the *method* of sabotage (e.g., a rerouted digital request). Unmasking the culprit requires some other skills, allowing the party to show their worth (Investigation, Hacking, Stealth). A critical failure while interfering leave the opponent's identity exposed.Organizational Interaction
