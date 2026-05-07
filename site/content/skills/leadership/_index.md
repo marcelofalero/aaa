@@ -30,8 +30,12 @@ This specialty skill represents the character''s ability to lead others by virtu
 ## Inspire
 {{< specialty attr="PER" untrained="no" cost="3" >}}
 
-This specialty skill represents the ability to command by example. This skill can be used by military officers, elected officials, and law enforcers who also have the command specialty, but inspire is more often used by those who are trying to lead civil disobedience movements and other types of nonviolent activities. One major difference is that **Inspire can be used on targets who are Hostile or Combative**, favorably altering the attitude of the target(s) toward the user of the skill.
-⊗ **Increased Effect:** As a character achieves higher ranks in this specialty, the bonus to his or her Leadership skill checks improves to **-1 at rank 4**, **-2 at rank 8**, and **-3 at rank 12**. (Note: This bonus is not cumulative.)
+Leading by example and shifting the morale of a group.
+
+### Rank Benefits
+▶ **Morale Pivot:** Unlike the broad skill, **Inspire** can be used on **Hostile** or **Combative** targets to shift their attitude as per [Table P25: Encounter Skill Effects]({{< relref "core-mechanics/useful-tables#table-p25-encounter-skill-effects" >}}).
+
+⊗ **Increased Effect:** Ranks provide a situation die bonus to the check: Rank 4 (-1), Rank 8 (-2), Rank 12 (-3).
 
 ---
 

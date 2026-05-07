@@ -7,6 +7,9 @@ rank_benefits: []
 name: Inspire
 ---
 
-**Trained Only.** Leading by example and shifting the morale of a group.
+Leading by example and shifting the morale of a group.
+
+### Rank Benefits
 ▶ **Morale Pivot:** Unlike the broad skill, **Inspire** can be used on **Hostile** or **Combative** targets to shift their attitude as per [Table P25: Encounter Skill Effects]({{< relref "core-mechanics/useful-tables#table-p25-encounter-skill-effects" >}}).
+
 ⊗ **Increased Effect:** Ranks provide a situation die bonus to the check: Rank 4 (-1), Rank 8 (-2), Rank 12 (-3).

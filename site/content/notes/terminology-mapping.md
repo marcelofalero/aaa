@@ -40,6 +40,7 @@ This page provides a mapping of common game terms from English to Spanish to ens
 | Physical | Físico |
 | Mental | Mental |
 | Other | Otros |
+| Vaulting | Salto con apoyo |
 
 ## Attributes
 | English | Spanish |

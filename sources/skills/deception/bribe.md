@@ -6,4 +6,22 @@ trained_only: false
 name: Bribe
 ---
 
-Whenever a character wants to offer another character money, goods, information, or services to get that character to do what the character wants, a bribe check is called for. On a **Critical Failure**, not only is the bribe refused, but the target becomes Hostile or even Combative. In all cases, there''s no way he''s going to accept the bribe. A **Failure** result means that the bribe is refused, and if the character wants to try again he must raise the value of the bribe being offered. Each subsequent Failure result adds to the size of the bribe until the character either rolls a Critical Failure (with effects as described above) or achieves some degree of success. An **Ordinary** success indicates that the bribe is accepted, but the attitude of the target is unchanged—a Hostile guard will accept your money and let you pass, but if he sees you again he''ll still be Hostile. On a **Good** success, the bribe is accepted, and the target''s attitude improves by one grade for 2d6 hours or until the character does something to change the relationship. (Bought friendships only last until the money runs out and usually require a steady flow of cash or favors.) On an **Amazing** result, the bribe is accepted, and the target''s attitude improves by two grades for 4d6 hours or until the character does something to change the relationship.
+The ability to offer money, goods, or services to influence a target.
+
+### The Assessment
+Before making an offer, a character can make a separate **Bribe** check to "size up" the target. On a success, the Gamemaster reveals the "Proper Bribe" (the baseline value required for an Ordinary success).
+
+### Sweetening the Deal
+Offering more than the Proper Bribe provides a bonus to the actual Bribe check:
+- **+25% Value:** -1 step bonus.
+- **+50% Value:** -2 steps bonus.
+- **+100% Value:** -3 steps bonus.
+
+**The Greed Trap:** Offering over **200%** of the Proper Bribe makes the target nervous or suspicious. The target may take the bribe and still betray the character, or report the attempt to authorities.
+
+**Results:**
+- **Ordinary:** Bribe accepted, but attitude is unchanged.
+- **Good:** Bribe accepted; attitude improves by one grade for 2d6 hours or until the character does something to change the relationship.
+- **Amazing:** Bribe accepted; attitude improves by two grades for 4d6 hours or until the character does something to change the relationship.
+- **Failure:** Bribe refused. Subsequent attempts require a higher value.
+- **Critical Failure:** Bribe refused; target becomes **Hostile** or **Combative**.

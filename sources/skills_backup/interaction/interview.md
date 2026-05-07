@@ -6,5 +6,4 @@ trained_only: false
 name: Interview
 ---
 
-Obtaining information in a non-aggressive way.
-- **Restriction:** Cannot be used on **Hostile** or **Combative** targets.
+The interview skill represents a character''s ability to get information from another character in a non-aggressive way. Interviews are often used by reporters, investigators, and officials conducting standard administrative procedures. It differs from **Investigate—interrogate** (a Will-based skill) in the amount of aggressiveness and fear applied by the questioner.

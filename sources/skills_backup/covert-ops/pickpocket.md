@@ -34,5 +34,3 @@ This skill allows a character to remove or plant objects on a person undetected.
 
 ### Rank Benefits
 ⊗ **Rank 3, 6, 9, 12 [It Takes One to Know One]:** Your **Will** resistance modifier (specifically for spotting pickpocket attempts) improves: +1 penalty to the foe at Rank 3, +2 steps at Rank 6, +3 steps at Rank 9, and +4 steps at Rank 12.
-
----

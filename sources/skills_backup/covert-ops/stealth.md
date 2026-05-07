@@ -15,7 +15,7 @@ rank_benefits:
 name: Stealth
 ---
 
-Stealth (or Unified Stealth) merges the techniques of hiding, sneaking, and shadowing. It is the art of remaining undetected while stationary or in motion.
+Stealth merges the techniques of hiding, sneaking, and shadowing. It is the art of remaining undetected while stationary or in motion.
 
 ▶ **Rank 3 [Sneak Attack]:** If you successfully move adjacent to an opponent undetected while **sneaking**, you receive a **-2 step bonus** to your next melee attack. Even if other enemies detect you, they cannot alert your target in time to avoid the sneak attack unless they have special means.
 

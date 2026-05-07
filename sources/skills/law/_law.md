@@ -1,5 +1,5 @@
 ---
-attribute: WIL
+attribute: INT
 cost: 0
 category: Social
 url: /skills/law

@@ -1,5 +1,5 @@
 ---
-attribute: WIL
+attribute: INT
 cost: 3
 url: /skills/medical-science#medical-knowledge
 trained_only: false
@@ -15,11 +15,7 @@ rank_benefits:
 name: Medical Knowledge
 ---
 
-Medical knowledge is the study of medicine and represents how
-up-to-date a character is on a particular medical technique or a
-technique outside his usual field of practice.
----
-⊗ **Increased Effect:** As a character's rank in this specialty
-increases, he receives a situation die bonus to any Medical
-Science—treatment skill checks: -1 step at rank 2; -2 at rank 5;
--3 at rank 8; and -4 at rank 12.
+This specialty skill represents a character''s deep academic and practical understanding of medical principles, history, and advanced theory.
+
+### Rank Benefits
+⊗ **Increased Effect:** A character receives a **-1 bonus** at rank 3, **-2** at rank 6, **-3** at rank 9, and **-4** at rank 12 on other Medical Science checks (e.g., diagnosis, research).

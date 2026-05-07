@@ -9,7 +9,7 @@ name: Zero-g Training
 
 A character with the zero-g training skill can function in weightless or near-weightless conditions better than someone who doesn't have this skill. An untrained character has a +3 step penalty in zero gravity and a +1 step penalty in light gravity. Purchasing this skill immediately reduces the zero-g penalty to +2 steps and eliminates the penalty for light gravity.
 
-**Rank Progression**
+**Rank Benefits**
 
 ▶ **Rank 4:** Zero-g penalty is reduced to +1 step, and light gravity actions receive a -1 step bonus.
 

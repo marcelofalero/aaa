@@ -7,9 +7,9 @@ trained_only: false
 name: Knowledge
 ---
 
-The ability to recall, research, and apply information. It represents a character's general education and ability to access data.
-
+This broad skill represents a character''s ability to know at least a little bit about any particular subject. With just the broad skill, a character isn''t considered an expert, but it represents the ability to logically recall a class he took, an article he read, or a documentary he saw on the topic in question. Knowledge skill checks are usually made in secret so the players don''t even know the check is being made. Once a character is determined to have knowledge concerning a particular topic, a note can be made on the character sheet.
 ### Table P24: Knowledge Categories
+
 | Category | Modifier | Complexity |
 | :--- | :--- | :--- |
 | **Trivial** | -1 step bonus | Marginal (1-2) |

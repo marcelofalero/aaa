@@ -53,7 +53,7 @@ This skill provides a character with training in the repair and maintenance of v
 ---
 
 ## Juryrig
-{{< specialty attr="WIL" untrained="yes" cost="3" >}}
+{{< specialty attr="INT" untrained="yes" cost="3" >}}
 
 This skill enables a character to make fast, patchwork repairs in order to get an electronic or mechanical device or system up and running for a short period of time. A juryrig repair, even when successful, adds difficulty to the full repairs that must be made later, but it can get a character through a sticky situation. A juryrig repair can be made successfully **once** on a specific system or item. If it breaks down after being juryrigged, the system or item won't work again until it's completely fixed (using Technical Science—repair). Making a juryrig skill check is a single action, but a character who tries to use this skill must do so on his first available action in a round, and he can't attempt any other actions for the rest of the round.
 ### Juryrig Results

@@ -6,20 +6,60 @@ type = "skill"
 layout = "list"
 +++
 
-This broad skill represents a character''s proficiency at deceiving others through conversation and face-to-face interaction. Whether a character tries to bluff his way out of trouble, bribe a suspicious official, fast-talk dim-witted thugs into confusion, or gamble his way into a small fortune, this broad skill covers all verbal tricks and subterfuges. Although the use of Deception or any of its specialty skills can affect the attitude of someone who is victimized by the skill, this shift in attitude is not necessarily long-lasting. Sometimes even the slightest change in a situation will spoil a character''s ruse, or perhaps require another skill check to see if he succeeds in perpetuating his trickery. A character''s Deception situation die is modified by his target''s Intelligence resistance modifier. In addition, the Gamemaster may award bonuses or penalties depending on past dealings or other details that may come into play. The greater the level of success the character achieves, the more convincing his deception appears to be.
+The proficiency at deceiving others through conversation and face-to-face interaction. It covers all verbal tricks and subterfuges.
+
+### Resolution
+- **Opposed Check:** Modified by the target’s **Intelligence** resistance modifier.
+- **Encounter Skill:** Used to shift attitudes as per [Table P25: Encounter Skill Effects]({{< relref "core-mechanics/useful-tables#table-p25-encounter-skill-effects" >}}).
+
+### Gambling Rules
+Gambling is an opposed check against the opponent's **Intelligence** (for Logic Games) or **Will** (for Nerve Games) resistance modifier.
+
+**The Sitting:** One check represents a "session" or high-stakes moment.
+- **Ordinary Success:** Win 1.5x stake.
+- **Good Success:** Win 2x stake.
+- **Amazing Success:** Win 5x stake.
+- **Failure:** Lose stake.
+- **Critical Failure:** Significant loss (lose 2x stake/debt) or social disaster.
+
+**Cheating:** Declare before rolling. Gain a **-3 step bonus**, but any **Failure** result is treated as a **Critical Failure (Caught)**.
 
 ## Bluff
 {{< specialty attr="PER" untrained="yes" cost="3" >}}
 
-This specialty skill represents a talent for misleading or deceiving through false bravado or outright lies, or deterring a character by displaying extreme (and probably unwarranted) confidence. Bluff is used to determine the result of a character''s trick, con, or bold-faced lie. No matter what other props a character may use in a bluff attempt, the most important component is the character''s attitude and verbal interaction. This is the ability to make another character believe something that isn''t true. On a **Critical Failure**, the bluff is seen for what it is, and the target becomes Hostile or Combative. On a **Failure**, instead of having a positive effect, the character''s patter is considered to be annoying and condescending. On an **Ordinary** success, the bluff works for the immediate scene, although no change in attitude occurs in the affected character(s). On a **Good** result, the target''s attitude toward the bluffer improves by one grade (Neutral to Friendly, Friendly to Charmed, etc.) for d8+1 time units before he figures out that he was tricked. On an
-**Amazing** success, the target''s attitude improves by two grades for d12+2 time units before he figures out that he was tricked.
+The talent for misleading through false bravado, outright lies, or deterring others by displaying unwarranted confidence.
+- **Ordinary:** The bluff works for the immediate scene.
+- **Good:** Target's attitude improves by one grade for d8+1 time units.
+- **Amazing:** Target's attitude improves by two grades for d12+2 time units.
+- **Failure:** The character's patter is considered annoying/condescending.
+- **Critical Failure:** The bluff is exposed; target becomes **Hostile** or **Combative**.
+
+_As always the time unit is decided by the Gamemaster based on the situation_
 
 ---
 
 ## Bribe
 {{< specialty attr="PER" untrained="yes" cost="3" >}}
 
-Whenever a character wants to offer another character money, goods, information, or services to get that character to do what the character wants, a bribe check is called for. On a **Critical Failure**, not only is the bribe refused, but the target becomes Hostile or even Combative. In all cases, there''s no way he''s going to accept the bribe. A **Failure** result means that the bribe is refused, and if the character wants to try again he must raise the value of the bribe being offered. Each subsequent Failure result adds to the size of the bribe until the character either rolls a Critical Failure (with effects as described above) or achieves some degree of success. An **Ordinary** success indicates that the bribe is accepted, but the attitude of the target is unchanged—a Hostile guard will accept your money and let you pass, but if he sees you again he''ll still be Hostile. On a **Good** success, the bribe is accepted, and the target''s attitude improves by one grade for 2d6 hours or until the character does something to change the relationship. (Bought friendships only last until the money runs out and usually require a steady flow of cash or favors.) On an **Amazing** result, the bribe is accepted, and the target''s attitude improves by two grades for 4d6 hours or until the character does something to change the relationship.
+The ability to offer money, goods, or services to influence a target.
+
+### The Assessment
+Before making an offer, a character can make a separate **Bribe** check to "size up" the target. On a success, the Gamemaster reveals the "Proper Bribe" (the baseline value required for an Ordinary success).
+
+### Sweetening the Deal
+Offering more than the Proper Bribe provides a bonus to the actual Bribe check:
+- **+25% Value:** -1 step bonus.
+- **+50% Value:** -2 steps bonus.
+- **+100% Value:** -3 steps bonus.
+
+**The Greed Trap:** Offering over **200%** of the Proper Bribe makes the target nervous or suspicious. The target may take the bribe and still betray the character, or report the attempt to authorities.
+
+**Results:**
+- **Ordinary:** Bribe accepted, but attitude is unchanged.
+- **Good:** Bribe accepted; attitude improves by one grade for 2d6 hours or until the character does something to change the relationship.
+- **Amazing:** Bribe accepted; attitude improves by two grades for 4d6 hours or until the character does something to change the relationship.
+- **Failure:** Bribe refused. Subsequent attempts require a higher value.
+- **Critical Failure:** Bribe refused; target becomes **Hostile** or **Combative**.
 
 ---
 
@@ -34,9 +74,10 @@ This specialty skill represents a character''s proficiency at various games of c
 ## Gamble-Logic-Games
 {{< specialty attr="INT" untrained="yes" cost="3" >}}
 
-**Attribute: INT.**
 Proficiency at games of strategy, counting, and probability (e.g., Blackjack, Chess, and other complex strategy games).
+
 ### Rank Benefits
+
 ▶ **Rank 3, 6, 9, 12 [Pro Advantage]:** The character receives a situation die bonus to gambling checks: **Rank 3 (-1)**, **Rank 6 (-2)**, **Rank 9 (-3)**, **Rank 12 (-4)**.
 
 ---
@@ -44,9 +85,10 @@ Proficiency at games of strategy, counting, and probability (e.g., Blackjack, Ch
 ## Gamble-Nerve-Games
 {{< specialty attr="PER" untrained="yes" cost="3" >}}
 
-**Attribute: PER.**
 Proficiency at games of bluffing, reading tells, and psychology (e.g., Poker, Liar's Dice).
+
 ### Rank Benefits
+
 ▶ **Rank 3, 6, 9, 12 [Pro Advantage]:** The character receives a situation die bonus to gambling checks: **Rank 3 (-1)**, **Rank 6 (-2)**, **Rank 9 (-3)**, **Rank 12 (-4)**.
 
 ---

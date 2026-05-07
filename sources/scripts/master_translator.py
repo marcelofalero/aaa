@@ -3,6 +3,7 @@ import re
 import yaml
 import time
 from ruamel.yaml import YAML
+from ruamel.yaml.scalarstring import LiteralScalarString
 from deep_translator import GoogleTranslator
 
 # Config
@@ -33,21 +34,33 @@ def load_mapping():
             mapping[en_clean] = es_clean
     return mapping
 
-def apply_mapping(text, mapping):
-    if not text or not isinstance(text, str): return text
+def protect_terms(text, mapping):
+    if not text or not isinstance(text, str): return text, {}
     
+    placeholders = {}
     # Sort terms by length descending to avoid partial matches
     sorted_en_terms = sorted(mapping.keys(), key=len, reverse=True)
+    counter = 0
     
-    # We use a similar logic to manage_site_data.py to avoid clobbering short words
     for en in sorted_en_terms:
         is_short = len(en) <= 3
         flags = 0 if is_short else re.IGNORECASE
         
         # Word boundary check
         pattern = f"\\b{re.escape(en)}\\b"
-        text = re.sub(pattern, mapping[en], text, flags=flags)
         
+        if re.search(pattern, text, flags=flags):
+            placeholder = f"ZTERM{counter}Z"
+            placeholders[placeholder] = mapping[en]
+            text = re.sub(pattern, placeholder, text, flags=flags)
+            counter += 1
+            
+    return text, placeholders
+
+def restore_terms(text, placeholders):
+    if not text or not isinstance(text, str): return text
+    for placeholder, es_term in placeholders.items():
+        text = text.replace(placeholder, es_term)
     return text
 
 def translate_text(text, translator):
@@ -111,10 +124,11 @@ def process_node(node, translator, mapping, processed_count):
                 current_es_desc = es_loc.get('description', '')
                 if not current_es_desc or len(current_es_desc) < len(en_desc) * 0.2:
                     print(f"Translating description: {en_name or 'unnamed'}...")
-                    translated = translate_text(en_desc, translator)
-                    final_text = apply_mapping(translated, mapping)
+                    protected_text, placeholders = protect_terms(en_desc, mapping)
+                    translated = translate_text(protected_text, translator)
+                    final_text = restore_terms(translated, placeholders)
                     final_text = normalize_formatting(final_text)
-                    es_loc['description'] = final_text
+                    es_loc['description'] = LiteralScalarString(final_text)
                 
                 if en_name and ('name' not in es_loc or not es_loc['name']):
                     print(f"Translating name: {en_name}...")

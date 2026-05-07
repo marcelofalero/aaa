@@ -9,7 +9,7 @@ name: Demolitions
 
 This broad skill provides training in the basics of setting explosive charges to demolish specific targets. It covers the safe handling of materials, primers, timing devices, and strategic placement for maximum structural impact.
 
-### . Structural
+### Structural
 This application targets stationary structures (buildings, bridges, bunkers) or massive vessels (starships, orbital platforms, land-dreadnoughts). This is a two-stage process.
 
 #### Stage A: Installation
@@ -27,7 +27,7 @@ Once the installation is complete and the explosives are triggered, the characte
 
 **Synergy:** **Physical Science--Physics** can be used as an auxiliary skill. A success provides a **-1 step bonus** to both installation and detonation checks as the character is better prepared to understand the materials strengths and weaknesses.
 
-### 2. Anti-Vehicular Mines and Traps
+### Anti-Vehicular Mines and Traps
 These devices often do focused damage instead of having a blast radius. This is a two-stage process.
 
 #### Stage A: Installation
@@ -43,7 +43,7 @@ Once triggered, make a final **Demolitions--Set Explosives** check to determine 
 - **Good Success:** The explosion deals **Good damage** to the vehicle.
 - **Amazing Success:** The explosion deals **Amazing damage** to the vehicle.
 
-### 3. Anti-Personnel Mines and Traps
+### Anti-Personnel Mines and Traps
 These devices are designed to do damage in an area. Once triggered, they deal damage based on the distance from the device center.
 
 #### Installation

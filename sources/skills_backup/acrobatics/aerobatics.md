@@ -18,7 +18,8 @@ This specialty skill represents a character's mastery of complex maneuvers durin
 - **Ordinary:** Basic controlled flight; can perform simple maneuvers. Like synchronized flying, or boarding a high speed moving vehicle (assuming it can reach it and enter)
 - **Good:** Increased control; can perform evasive maneuvers. (He can use the dodge skill)
 - **Amazing:** Perfect control; can perform complex aerial or orbital acrobatics.
-### Rank Progression
-▶ **Rank 4 (Stealthy Descent):** When using a jump-pack or GADS, the character can descend with minimal noise, receiving a **-2 step bonus** to Stealth checks.
 
-▶ **Rank 6 (Endurance Flight):** The character can fly for extended periods, receiving a **-2 step bonus** to Stamina checks for long-distance travel with with natural means or **-2 step bonus** to Armor Operation-Propulsion Systems with armor mounted propulsion.
+### Rank Benefits
+▶ **Rank 4 [Stealthy Descent]** When using a jump-pack or GADS, the character can descend with minimal noise, receiving a **-2 step bonus** to Stealth checks.
+
+▶ **Rank 6 [Endurance Flight]** The character can fly for extended periods, receiving a **-2 step bonus** to Stamina checks for long-distance travel with with natural means or **-2 step bonus** to Armor Operation-Propulsion Systems with armor mounted propulsion.

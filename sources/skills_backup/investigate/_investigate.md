@@ -7,14 +7,10 @@ trained_only: false
 name: Investigate
 ---
 
-Systematic examination through observation, inquiry, and logical deduction. Unlike **Awareness**, which handles immediate observations, **Investigate** is a time-intensive process.
-
-### Methodology
-▶ **Time Units:** In rounds, a unit is one phase. In other scenes, it is usually minutes or hours.
-▶ **Resolution:** Success reveals information. The degree of success determines the accuracy and depth of detail.
-▶ **Time Bonus:** The more time spent on an investigation, the better the chance of success.
+This broad skill provides a character with the training and ability to examine things systematically through observation and inquiry. Unlike Awareness skills, Investigate takes time. It can be used when a character tries to apply logic and reason to reach a conclusion or deduce the solution to a problem.
 
 ### Investigate Situation Modifiers
+
 | Task | Modifier |
 | :--- | :--- |
 | Fast investigation (1 time unit) | +3 step penalty |

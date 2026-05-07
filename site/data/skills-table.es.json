@@ -456,7 +456,7 @@
                     "skill": "Entretenimiento",
                     "attribute": "PER",
                     "url": "/es/skills/entertainment",
-                    "cost": 4,
+                    "cost": 3,
                     "type": "Broad",
                     "items": [
                         {
@@ -888,14 +888,14 @@
                 },
                 {
                     "skill": "Ley",
-                    "attribute": "VOL",
+                    "attribute": "INT",
                     "url": "/es/skills/law",
                     "cost": 0,
                     "type": "Broad",
                     "items": [
                         {
                             "skill": "Procedimientos judiciales",
-                            "attribute": "VOL",
+                            "attribute": "INT",
                             "url": "/es/skills/law#procedimientos-judiciales",
                             "cost": 3,
                             "type": "Specialty",
@@ -903,7 +903,7 @@
                         },
                         {
                             "skill": "Procedimientos policiales",
-                            "attribute": "VOL",
+                            "attribute": "INT",
                             "url": "/es/skills/law#procedimientos-policiales",
                             "cost": 3,
                             "type": "Specialty",
@@ -1124,7 +1124,7 @@
                         },
                         {
                             "skill": "Operación de Computadoras",
-                            "attribute": "VOL",
+                            "attribute": "INT",
                             "url": "/es/skills/knowledge#operacion-de-computadoras",
                             "cost": 2,
                             "type": "Specialty",
@@ -1238,7 +1238,7 @@
                         },
                         {
                             "skill": "Conocimiento médico",
-                            "attribute": "VOL",
+                            "attribute": "INT",
                             "url": "/es/skills/medical-science#conocimiento-medico",
                             "cost": 3,
                             "type": "Specialty",
@@ -1246,7 +1246,7 @@
                         },
                         {
                             "skill": "Psicología",
-                            "attribute": "VOL",
+                            "attribute": "INT",
                             "url": "/es/skills/medical-science#psicologia",
                             "cost": 5,
                             "type": "Specialty",
@@ -1254,7 +1254,7 @@
                         },
                         {
                             "skill": "Cirugía",
-                            "attribute": "VOL",
+                            "attribute": "INT",
                             "url": "/es/skills/medical-science#cirugia",
                             "cost": 5,
                             "type": "Specialty",
@@ -1262,7 +1262,7 @@
                         },
                         {
                             "skill": "Tratamiento",
-                            "attribute": "VOL",
+                            "attribute": "INT",
                             "url": "/es/skills/medical-science#tratamiento",
                             "cost": 4,
                             "type": "Specialty",
@@ -1425,7 +1425,7 @@
                         },
                         {
                             "skill": "Invención",
-                            "attribute": "VOL",
+                            "attribute": "INT",
                             "url": "/es/skills/technical-science#invencion",
                             "cost": 3,
                             "type": "Specialty",

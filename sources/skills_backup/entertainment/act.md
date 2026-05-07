@@ -16,10 +16,11 @@ name: Act
 ---
 
 The talent for playing roles and impersonation.
-▶ **Disguise (Rank 4):** The ability to use makeup and techniques to change appearance. Applying a disguise is a **complex skill check**. Success determines the penalty (+1 to +3) to observers' Awareness checks to see through it.
 
-### Rank Benefit - Skill Synergy (Enhance Another Skill)
-⊗ **Skill Synergy:** Entertainment specialties can be combined with other skills for greater effect. The character receives a situation die bonus to the supported skill:
+### Rank Benefits
+▶ **Rank 4 [Disguise]** The ability to use makeup and techniques to change appearance. Applying a disguise is a **complex skill check**. Success determines the penalty (+1 to +3) to observers' Awareness checks to see through it. Contrary to the Deception-Disguise this skill allows to impersonate someone, copying mannerism and voice. Not just look different to not be recognized.
+
+⊗ **Rank 1, 4, 8, 12 [Skill Synergy]** Entertainment specialties can be combined with other skills for greater effect. The character receives a situation die bonus to the supported skill:
 - **Rank 1:** -1 step bonus.
 - **Rank 4:** -2 steps bonus.
 - **Rank 8:** -3 steps bonus.

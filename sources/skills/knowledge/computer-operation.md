@@ -1,5 +1,5 @@
 ---
-attribute: WIL
+attribute: INT
 cost: 2
 url: /skills/knowledge#computer-operation
 trained_only: true

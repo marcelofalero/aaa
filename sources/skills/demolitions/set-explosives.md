@@ -15,4 +15,8 @@ rank_benefits:
 name: Set explosives
 ---
 
-This specialty skill allows a character to improve his ability to set manufactured explosive charges. See the description of the Demolitions broad skill for information on how this skill is employed.
+Advanced proficiency in deploying manufactured charges.
+
+▶ **Rank 3, 9, 12 [Improved Handling]** The character gains a **-1 step bonus** to all checks with this skill at Rank 3, increasing to **-2 steps** at Rank 9, and **-3 steps** at Rank 12.
+
+▶ **Rank 6 [Disaster Avoidance]** When the character rolls a **Critical Failure** while installing for the first time during a complex check, the result is treated as a simple **Failure** instead.

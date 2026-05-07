@@ -1,5 +1,5 @@
 ---
-attribute: WIL
+attribute: INT
 cost: 3
 url: /skills/technical-science#juryrig
 trained_only: false
@@ -14,5 +14,6 @@ The amount of difficulty added to the full repairs depends on the result of the 
 - **Ordinary success:** The system or item becomes operational for **d6+1 time units**, and **3 more successes** are needed for full repairs (in addition to those already required).
 - **Good success:** The system or item becomes operational for **2d4+2 time units**, and **2 more successes** are needed for full repairs.
 - **Amazing success:** The system or item becomes operational for **3d4+2 time units**, and **1 more success** is needed to make full repairs.
+
 ### Rank Benefits
 ▶ **Rank 6 [Improved Juryrig]:** When a character reaches **Rank 6**, his ability improves as follows: an Ordinary success produces a Good result, a Good success produces an Amazing result, and an Amazing success means the juryrig works so well that the system or item is considered repaired and in regular working order.

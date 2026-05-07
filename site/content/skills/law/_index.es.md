@@ -1,6 +1,6 @@
 +++
 title = "Ley"
-attribute = "WIL"
+attribute = "INT"
 category = "Social"
 type = "skill"
 layout = "list"
@@ -16,14 +16,14 @@ Cuando una batalla legal se desarrolla "fuera de cámara", el DJ puede solicitar
 - **Increíble:** El oponente recibe una penalización de +3 o el personaje gana el caso directamente.
 
 ## Procedimientos judiciales
-{{< specialty attr="WIL" untrained="yes" cost="3" >}}
+{{< specialty attr="INT" untrained="yes" cost="3" >}}
 
 Los abogados, jueces y otras personas utilizan esta habilidad para interactuar en la sala del tribunal. Esta especialidad se utiliza para argumentar un caso o punto de vista en un procedimiento oficial.
 
 ---
 
 ## Procedimientos policiales
-{{< specialty attr="WIL" untrained="yes" cost="3" >}}
+{{< specialty attr="INT" untrained="yes" cost="3" >}}
 
 Los agentes de policía, detectives, cazarrecompensas y otros utilizan esta habilidad para seguir (o doblar) los procedimientos legales de aplicación de la ley. Los temas cubiertos incluyen:
 - Conocer las leyes relativas a vigilancia, registro e incautación.
