@@ -12,7 +12,7 @@
 							<div class="sheet-broadskill" data-i18n="strength">Strength</div>
 							<div class="sheet-field-row">
 								<button type="roll" name="roll_Strength"
-									value="&{template:default} {{name= @{character_name} - Strength Feat Check}} {{score= [[@{Strength}]]/[[floor(@{Strength}/2)]]/[[floor(@{Strength}/4)]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}}"></button>
+									value="&{template:default} {{name= @{character_name} - Strength Feat Check}} {{score= [[@{Strength}]]/[[floor(@{Strength}/2)]]/[[floor(@{Strength}/4)]]}} {{results= [[<!-- ROLL_QUERY_DEFAULT_1 -->]]}}"></button>
 								<input type="number" name="attr_Strength" class="sheet-ability" value="0">
 							</div>
 							<input type="number" name="attr_StrRes" class="sheet-ability">
@@ -20,7 +20,7 @@
 							<div class="sheet-broadskill" data-i18n="dexterity">Dexterity</div>
 							<div class="sheet-field-row">
 								<button type="roll" name="roll_Dexterity"
-									value="&{template:default} {{name= @{character_name} - Dexterity Feat Check}} {{score= [[@{Dexterity}]]/[[floor(@{Dexterity}/2)]]/[[floor(@{Dexterity}/4)]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}}"></button>
+									value="&{template:default} {{name= @{character_name} - Dexterity Feat Check}} {{score= [[@{Dexterity}]]/[[floor(@{Dexterity}/2)]]/[[floor(@{Dexterity}/4)]]}} {{results= [[<!-- ROLL_QUERY_DEFAULT_1 -->]]}}"></button>
 								<input type="number" name="attr_Dexterity" class="sheet-ability" value="0">
 							</div>
 							<input type="number" name="attr_DexRes" class="sheet-ability">
@@ -28,7 +28,7 @@
 							<div class="sheet-broadskill" data-i18n="constitution">Constitution</div>
 							<div class="sheet-field-row">
 								<button type="roll" name="roll_Constitution"
-									value="&{template:default} {{name= @{character_name} - Constitution Feat Check}} {{score= [[@{Constitution}]]/[[floor(@{Constitution}/2)]]/[[floor(@{Constitution}/4)]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}}"></button>
+									value="&{template:default} {{name= @{character_name} - Constitution Feat Check}} {{score= [[@{Constitution}]]/[[floor(@{Constitution}/2)]]/[[floor(@{Constitution}/4)]]}} {{results= [[<!-- ROLL_QUERY_DEFAULT_1 -->]]}}"></button>
 								<input type="number" name="attr_Constitution" class="sheet-ability" value="0">
 							</div>
 							<div style="text-align: center;">-</div>
@@ -36,7 +36,7 @@
 							<div class="sheet-broadskill" data-i18n="intelligence">Intelligence</div>
 							<div class="sheet-field-row">
 								<button type="roll" name="roll_Intelligence"
-									value="&{template:default} {{name= @{character_name} - Intelligence Feat Check}} {{score= [[@{Intelligence}]]/[[floor(@{Intelligence}/2)]]/[[floor(@{Intelligence}/4)]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}}"></button>
+									value="&{template:default} {{name= @{character_name} - Intelligence Feat Check}} {{score= [[@{Intelligence}]]/[[floor(@{Intelligence}/2)]]/[[floor(@{Intelligence}/4)]]}} {{results= [[<!-- ROLL_QUERY_DEFAULT_1 -->]]}}"></button>
 								<input type="number" name="attr_Intelligence" class="sheet-ability" value="0">
 							</div>
 							<input type="number" name="attr_IntRes" class="sheet-ability">
@@ -44,7 +44,7 @@
 							<div class="sheet-broadskill" data-i18n="will">Will</div>
 							<div class="sheet-field-row">
 								<button type="roll" name="roll_Will"
-									value="&{template:default} {{name= @{character_name} - Will Feat Check}} {{score= [[@{Will}]]/[[floor(@{Will}/2)]]/[[floor(@{Will}/4)]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}}"></button>
+									value="&{template:default} {{name= @{character_name} - Will Feat Check}} {{score= [[@{Will}]]/[[floor(@{Will}/2)]]/[[floor(@{Will}/4)]]}} {{results= [[<!-- ROLL_QUERY_DEFAULT_1 -->]]}}"></button>
 								<input type="number" name="attr_Will" class="sheet-ability" value="0">
 							</div>
 							<input type="number" name="attr_WillRes" class="sheet-ability">
@@ -52,7 +52,7 @@
 							<div class="sheet-broadskill" data-i18n="personality">Personality</div>
 							<div class="sheet-field-row">
 								<button type="roll" name="roll_Personality"
-									value="&{template:default} {{name= @{character_name} - Personality Feat Check}} {{score= [[@{Personality}]]/[[floor(@{Personality}/2)]]/[[floor(@{Personality}/4)]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}}"></button>
+									value="&{template:default} {{name= @{character_name} - Personality Feat Check}} {{score= [[@{Personality}]]/[[floor(@{Personality}/2)]]/[[floor(@{Personality}/4)]]}} {{results= [[<!-- ROLL_QUERY_DEFAULT_1 -->]]}}"></button>
 								<input type="number" name="attr_Personality" class="sheet-ability" value="0">
 							</div>
 							<div style="text-align: center;">-</div>

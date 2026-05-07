@@ -98,6 +98,46 @@ def get_smart_anchor(item):
     anchor = anchor.replace(")", "")
     return anchor
 
+def get_alternity_roll_query(default_step=0):
+    """Generates the Roll20 roll query for situation modifiers from -10 to +10."""
+    def get_step_label(s):
+        if s == 0: return "None"
+        sign = "+" if s > 0 else "-"
+        val = abs(s)
+        if val == 1: d = "d4"
+        elif val == 2: d = "d6"
+        elif val == 3: d = "d8"
+        elif val == 4: d = "d12"
+        elif val == 5: d = "d20"
+        else: d = f"{val-4}d20"
+        return f"{s:+d} Steps ({sign}{d})"
+
+    def get_step_value(s):
+        if s == 0: return "1d20cs<1cf>20"
+        sign = "+" if s > 0 else "-"
+        val = abs(s)
+        if val == 1: d = "1d4"
+        elif val == 2: d = "1d6"
+        elif val == 3: d = "1d8"
+        elif val == 4: d = "1d12"
+        elif val == 5: d = "1d20"
+        else: d = f"{val-4}d20"
+        return f"1d20cs<1cf>20{sign}{d}cs<0cf<0"
+
+    # The default option must be the first one after the label in a Roll20 query
+    all_steps = list(range(-10, 11))
+    if default_step in all_steps:
+        all_steps.remove(default_step)
+    
+    # Sort the rest and put default first
+    ordered_steps = [default_step] + sorted(all_steps)
+    
+    options = []
+    for s in ordered_steps:
+        options.append(f"{get_step_label(s)}, {get_step_value(s)}")
+    
+    return f"?{{Situation Modifier|{'|'.join(options)}}}"
+
 def generate_skills_html(data_list, indent_level=3, is_psionics=False):
     """Generates the HTML for broad and specialty skills based on the provided data."""
     all_broad_skills = []
@@ -110,6 +150,10 @@ def generate_skills_html(data_list, indent_level=3, is_psionics=False):
     skill_ids = []
     indent = "\t" * indent_level
 
+    # Generate roll result strings
+    broad_roll_results = f"{{{{results= [[{get_alternity_roll_query(default_step=1)}]]}}}}"
+    spec_roll_results = f"{{{{results= [[{get_alternity_roll_query(default_step=0)}]]}}}}"
+
     for skill in all_broad_skills:
         name = skill["n"]
         attr_short = skill["at"]
@@ -118,18 +162,14 @@ def generate_skills_html(data_list, indent_level=3, is_psionics=False):
         id_name = clean_id(name)
         
         # Base URL for the broad skill
-        # Try to get from map, otherwise fallback to guessed URL
         fallback_path = "psionics" if is_psionics else "skills"
         default_url = f"https://aaa.dimble.net/{fallback_path}/{name.lower().replace(' ', '-')}"
         url = SKILL_URL_MAP.get(name, default_url)
         
-        # Correct psionics path if it's the simplified version from skills.json
         if "https://aaa.dimble.net/psionics/" in url:
             url = url.replace("/psionics/", "/core-mechanics/psionics/")
 
-        # Common roll value partials
         roll_scores = f"{{{{score= [[@{{{id_name}O}}]]/[[@{{{id_name}G}}]]/[[@{{{id_name}A}}]]}}}}"
-        roll_results = "{{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0}]]}}"
         wiki_link = f"{{{{wiki= [↗ Wiki Documentation]({url})}}}}"
 
         # Broad skill formula
@@ -138,7 +178,7 @@ def generate_skills_html(data_list, indent_level=3, is_psionics=False):
         else:
             formula = f"(floor(@{{{attr_full}}}/(2-@{{{id_name}}})))"
             
-        # Broad Skill Row (Simplified, removed collapse/expand)
+        # Broad Skill Row
         cost = skill.get("c", 0)
         trained_only_class = " sheet-trained-only" if is_untrained == "NO" else ""
         info_icon = build_info_icon(cost, is_untrained)
@@ -149,7 +189,7 @@ def generate_skills_html(data_list, indent_level=3, is_psionics=False):
         h += f'{indent}\t\t<div class="sheet-skill-ability-label">SCORE</div>\n'
         h += f'{indent}\t</div>\n'
         h += f'{indent}\t<div class="sheet-skill-row">\n'
-        h += f'{indent}\t\t<button type="roll" name="roll_{id_name}" value="&{{template:default}} {{{{name= @{{character_name}} - {name}}}}} {roll_scores} {roll_results} {wiki_link}"></button>\n'
+        h += f'{indent}\t\t<button type="roll" name="roll_{id_name}" value="&{{template:default}} {{{{name= @{{character_name}} - {name}}}}} {roll_scores} {broad_roll_results} {wiki_link}"></button>\n'
         h += f'{indent}\t\t<div class="sheet-skill-name{trained_only_class}">{name} <button type="roll" name="roll_{id_name}_link" class="sheet-skill-link" value="[{name} Wiki]({url})">&#x2197;</button>{info_icon}</div>\n'
         h += f'{indent}\t\t<div class="sheet-skill-ability-label">{attr_short}</div>\n'
         h += f'{indent}\t\t<input type="checkbox" name="attr_{id_name}" value="1" />\n'
@@ -169,15 +209,11 @@ def generate_skills_html(data_list, indent_level=3, is_psionics=False):
             spec_attr_full = ABILITY_MAP[spec_attr]
             spec_id = clean_id(spec_name)
             
-            # Specialty URL from map or fallback
             spec_url = SKILL_URL_MAP.get(spec_name)
-            
             if spec_url:
-                # Correct psionics path if needed
                 if "https://aaa.dimble.net/psionics/" in spec_url:
                     spec_url = spec_url.replace("/psionics/", "/core-mechanics/psionics/")
             else:
-                # Fallback: Broad skill URL + slugified specialty name
                 anchor = spec_name.lower().replace(' ', '-').replace('\'', '').replace('(', '').replace(')', '')
                 spec_url = f"{url}#{anchor}"
             
@@ -195,7 +231,7 @@ def generate_skills_html(data_list, indent_level=3, is_psionics=False):
             spec_info_icon = build_info_icon(spec_cost, spec_untrained, spec_rank_benefits)
             
             h += f'{indent}\t\t<div class="sheet-skill-row sheet-spec">\n'
-            h += f'{indent}\t\t\t<button type="roll" name="roll_{spec_id}" value="&{{template:default}} {{{{name= @{{character_name}} - {spec_name}}}}} {{{{score= [[@{{{spec_id}O}}]]/[[@{{{spec_id}G}}]]/[[@{{{spec_id}A}}]]}}}} {roll_results} {spec_wiki_link}"></button>\n'
+            h += f'{indent}\t\t\t<button type="roll" name="roll_{spec_id}" value="&{{template:default}} {{{{name= @{{character_name}} - {spec_name}}}}} {{{{score= [[@{{{spec_id}O}}]]/[[@{{{spec_id}G}}]]/[[@{{{spec_id}A}}]]}}}} {spec_roll_results} {spec_wiki_link}"></button>\n'
             h += f'{indent}\t\t\t<div class="sheet-skill-name{trained_only_class}">{spec_name} <button type="roll" name="roll_{spec_id}_link" class="sheet-skill-link" value="[{spec_name} Wiki]({spec_url})">&#x2197;</button>{spec_info_icon}</div>\n'
             h += f'{indent}\t\t\t<div class="sheet-skill-ability-label">{spec_attr}</div>\n'
             h += f'{indent}\t\t\t<input type="number" name="attr_{spec_id}Rank" class="sheet-score" value="0">\n'
@@ -232,6 +268,10 @@ def build():
     
     final_html = []
     all_skill_ids = []
+
+    # Pre-generate the common roll queries
+    roll_query_0 = get_alternity_roll_query(default_step=0)
+    roll_query_1 = get_alternity_roll_query(default_step=1)
     
     for filename in files:
         path = os.path.join(src_dir, filename)
@@ -242,7 +282,7 @@ def build():
         with open(path, 'r', encoding='utf-8') as f:
             content = f.read()
             
-        # Handle dynamic content
+        # Handle dynamic skill placeholders
         if filename == 'skills.html':
             skills_html, skill_ids = generate_skills_html(SKILLS_DATA, indent_level=3)
             content = content.replace('<!-- SKILLS_PLACEHOLDER -->', skills_html)
@@ -251,6 +291,10 @@ def build():
             psionics_html, skill_ids = generate_skills_html(PSIONICS_DATA, indent_level=3, is_psionics=True)
             content = content.replace('<!-- PSIONICS_PLACEHOLDER -->', psionics_html)
             all_skill_ids.extend(skill_ids)
+            
+        # Replace global roll placeholders in all files
+        content = content.replace('<!-- ROLL_QUERY_DEFAULT_0 -->', roll_query_0)
+        content = content.replace('<!-- ROLL_QUERY_DEFAULT_1 -->', roll_query_1)
             
         final_html.append(content)
         
@@ -261,6 +305,9 @@ def build():
         f.write(combined_html)
         
     print(f"Successfully built {output_file} from modular source files.")
+
+if __name__ == "__main__":
+    build()
 
 if __name__ == "__main__":
     build()
