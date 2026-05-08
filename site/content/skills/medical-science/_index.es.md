@@ -6,18 +6,9 @@ type = "skill"
 layout = "list"
 +++
 
-Esta habilidad proporciona al personaje el entrenamiento necesario para realizar
-ciertos procedimientos médicos, incluida la capacidad de diagnosticar enfermedades comunes
-dolencias, enfermedades y heridas. Se realizan comprobaciones de habilidad para determinar si un
-personaje conoce cierta información médica, o si está
-capaces de investigar una pregunta y descubrir una respuesta, se hacen lo mismo
-forma como las pruebas de habilidad de Conocimiento.
----
-Un personaje con sólo la habilidad amplia de Ciencias Médicas no puede tratar
-personajes que han sufrido daños, sin embargo. El *tratamiento*
-Se necesita una habilidad especial para curar el daño por aturdimiento o herida, y
-reducir el daño Mortal de un paciente requiere la especialidad de *cirugía*
-habilidad.
+Esta habilidad proporciona al personaje el entrenamiento necesario para realizar ciertos procedimientos médicos, incluida la capacidad de diagnosticar dolencias, enfermedades y heridas comunes. Las pruebas de habilidad realizadas para determinar si un personaje conoce cierta información médica, o si es capaz de investigar una pregunta y descubrir una respuesta, se realizan de la misma manera que las pruebas de habilidad de Conocimiento.
+
+Sin embargo, un personaje con sólo la habilidad amplia de Ciencias Médicas no puede tratar a personajes que hayan sufrido daños. La habilidad especializada de *tratamiento* es necesaria para curar el aturdimiento o el daño de las heridas, y reducir el daño Mortal de un paciente requiere la habilidad especializada de *cirugía*.
 
 ## Ciencias forenses
 {{< specialty attr="INT" untrained="yes" cost="3" >}}

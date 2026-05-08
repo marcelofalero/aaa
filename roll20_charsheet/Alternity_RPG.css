@@ -1002,8 +1002,63 @@ button[type="roll"] {
 
 button[type="roll"]:hover {
     color: var(--color-accent-yellow) !important;
-    text-shadow: 0 0 8px rgba(248, 204, 58, 0.6) !important;
-    transform: translateY(-1px) scale(1.1);
+    text-shadow: 0 0 8px rgba(248, 204, 58, 0.4);
+    transform: scale(1.1);
+}
+
+/* --- DUAL ROLL BUTTONS (Trained/Untrained) --- */
+.sheet-roll-container {
+    display: inline-block;
+    position: relative;
+    width: 28px;
+    height: 24px;
+    vertical-align: middle;
+}
+
+.sheet-roll-container button[type="roll"] {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 !important;
+}
+
+/* Toggle Logic */
+.sheet-trained-check:checked ~ .sheet-roll-container .sheet-roll-untrained,
+.sheet-trained-check:not(:checked) ~ .sheet-roll-container .sheet-roll-trained {
+    display: none;
+}
+
+/* Visual feedback for untrained buttons */
+.sheet-roll-untrained {
+    color: var(--color-text-dim) !important;
+    opacity: 0.6;
+}
+
+.sheet-roll-untrained:hover {
+    opacity: 1;
+    color: var(--color-accent-teal) !important;
+}
+
+/* Trained Only Warning */
+.sheet-trained-only-msg {
+    color: #ef4444 !important; /* Red */
+}
+
+.sheet-trained-only-msg:hover::after {
+    content: "Trained Only";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #ef4444;
+    color: white;
+    font-size: 0.7rem;
+    padding: 2px 6px;
+    border-radius: 4px;
+    white-space: nowrap;
+    pointer-events: none;
+    z-index: 100;
 }
 
 button[type="roll"]::before {

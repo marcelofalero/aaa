@@ -27,7 +27,7 @@ Los animales no entrenados (salvajes o domésticos) solo pueden realizar tareas 
 - **Increíble:** Tareas que muy pocos animales pueden o harán cuando se les ordena (por ejemplo, rescatar a alguien de un edificio en llamas).
 
 ### Modificadores de situaciones de manejo de animales
-<div class="table-wrapper"> <table> <thead> <tr> <th>Tipo</th> <th>Modificador</th> <th>Complejidad</th> </tr> </thead> <tbody> <tr class="table-category"> <td colspan="3"><strong>Herbivoros</strong></td> </tr> <tr> <td>Extraterrestre</td> <td>+2</td> <td>Increíble</td> </tr> <tr> <td>Nacional</td> <td>-1</td> <td>Bueno</td> </tr> <tr> <td>Salvaje</td> <td>+1</td> <td>Increíble</td> </tr> <tr class="table-category"> <td colspan="3"><strong>Carnívoros</strong></td> </tr> <tr> <td>Extraterrestre</td> <td>+5</td> <td>Sorprendente</td> </tr> <tr> <td>Nacional</td> <td>-2</td> <td>Ordinario</td> </tr> <tr> <td>Salvaje</td> <td>+4</td> <td>Bueno</td> </tr> </tbody> </table> </div>
+<div class="table-wrapper"> <table> <thead> <tr> <th>Tipo</th> <th>Modificador</th> <th>Complejidad</th> </tr> </thead> <tbody> <tr class="table-category"> <td colspan="3"><strong>Herbivoros</strong></td> </tr> <tr> <td>Alien</td> <td>+2</td> <td>Increíble</td> </tr> <tr> <td>Nacional</td> <td>-1</td> <td>Bueno</td> </tr> <tr> <td>Salvaje</td> <td>+1</td> <td>Increíble</td> </tr> <tr class="table-category"> <td colspan="3"><strong>Carnívoros</strong></td> </tr> <tr> <td>Extraterrestre</td> <td>+5</td> <td>Sorprendente</td> </tr> <tr> <td>Nacional</td> <td>-2</td> <td>Ordinario</td> </tr> <tr> <td>Salvaje</td> <td>+4</td> <td>Bueno</td> </tr> </tbody> </table> </div>
 
 **Otros modificadores:**
 - **Animal desconocido:** +1 de penalización (acumulable con otros).
@@ -38,7 +38,7 @@ Los animales no entrenados (salvajes o domésticos) solo pueden realizar tareas 
 
 ### Montar animales
 La habilidad amplia permite a un personaje montar cualquier animal utilizado para el transporte terrestre básico (caballos, mulas, etc.).
-- **Movimiento:** Cuando se la monta, la criatura se mueve en cada fase.
+- **Movimiento:** Cuando es montada, la criatura se mueve en cada fase.
 - **Maniobras:** Durante la acción de un personaje, puede intentar maniobras (de rutina, moderadas o extremas) como se describe en [Maniobras de vehículos](/core-mechanics/vehicles-and-vessels/#maneuvers).
 
 ## Montar Animales
@@ -46,7 +46,9 @@ La habilidad amplia permite a un personaje montar cualquier animal utilizado par
 
 Esta habilidad especial permite a un personaje mejorar este aspecto de la habilidad amplia de Manejo de animales. Un personaje con esta habilidad puede intentar correr sobre terrenos peligrosos, realizar saltos o realizar otras acrobacias y participar en combates montados.
 
-### Montar con trucos (beneficio de rango 3)
+▶ En el rango 3, el personaje aprende a realizar acrobacias o trucos especiales mientras está montado. Ver trucos.
+
+### Truco de montar
 El personaje puede dirigir su montura para saltar vallas, saltar abismos o retroceder.
 - **Fallo crítico:** El animal tropieza (el daño es una caída extremadamente corta para ambos).
 - **Fallo:** El animal se niega a actuar.
@@ -70,6 +72,7 @@ El personaje puede dirigir su montura para saltar vallas, saltar abismos o retro
 - **Ordinario:** +1 paso.
 - **Bueno:** +2 pasos.
 - **Increíble:** +3 pasos.
+
 *Nota: Esto no protege el soporte. Los trucos no se pueden combinar con otras acciones (por ejemplo, atacar mientras se salta).*
 
 ---

@@ -10,7 +10,7 @@ Training in the use of heavy weaponry (man-portable or tripod-mounted) that is n
 
 ### Fire Modes
 ▶ **Direct Fire:** Aimed weapons (firearms, plasma guns). Standard resolution.
-▶ **Indirect Fire:** Weapons that fire over or around obstacles (mortars, grenades). Delivers area-effect attacks. Accuracy is governed by [Table P20: Accuracy by Range]({{< relref "core-mechanics/useful-tables#table-p20-accuracy-by-range" >}}).
+▶ **Indirect Fire:** Weapons that fire over or around obstacles (mortars, grenades). Delivers area-effect attacks. Accuracy is governed by [Table P20: Accuracy by Range]({{< relref "/core-mechanics/useful-tables#table-p20-accuracy-by-range" >}}).
 
 ### TABLE P21: HEAVY WEAPONS RANGE MODIFIERS
 

@@ -234,10 +234,16 @@ def generate_skills_html(data_list, indent_level=3, is_psionics=False):
         roll_scores = f"{{{{score= [[@{{{id_name}O}}]]/[[@{{{id_name}G}}]]/[[@{{{id_name}A}}]]}}}}"
         wiki_link = f"{{{{wiki= [↗ Wiki Documentation]({url})}}}}"
 
+        # Dual buttons for trained/untrained
+        roll_trained = f"&{{template:default}} {{{{name= @{{character_name}} - {name}}}}} {roll_scores} {{{{results= [[{get_alternity_roll_query(default_step=0)}]]}}}} {wiki_link}"
+        roll_untrained = f"&{{template:default}} {{{{name= @{{character_name}} - {name} (Untrained)}}}} {roll_scores} {{{{results= [[{get_alternity_roll_query(default_step=1)}]]}}}} {wiki_link}"
+
         if is_untrained == "NO":
             formula = f"(floor(@{{{attr_full}}}*@{{{id_name}}}))"
+            untrained_button = f'<button type="roll" name="roll_{id_name}_untrained" class="sheet-roll-untrained sheet-trained-only-msg" value="/w gm @{{character_name}} attempts to use {name} untrained, but it is a Trained Only skill."></button>'
         else:
             formula = f"(floor(@{{{attr_full}}}/(2-@{{{id_name}}})))"
+            untrained_button = f'<button type="roll" name="roll_{id_name}_untrained" class="sheet-roll-untrained" value="{roll_untrained}"></button>'
             
         cost = skill.get("c", 0)
         trained_only_class = " sheet-trained-only" if is_untrained == "NO" else ""
@@ -249,10 +255,13 @@ def generate_skills_html(data_list, indent_level=3, is_psionics=False):
         h += f'{indent}\t\t<div class="sheet-skill-ability-label">SCORE</div>\n'
         h += f'{indent}\t</div>\n'
         h += f'{indent}\t<div class="sheet-skill-row">\n'
-        h += f'{indent}\t\t<button type="roll" name="roll_{id_name}" value="&{{template:default}} {{{{name= @{{character_name}} - {name}}}}} {roll_scores} {broad_roll_results} {wiki_link}"></button>\n'
+        h += f'{indent}\t\t<div class="sheet-roll-container">\n'
+        h += f'{indent}\t\t\t<button type="roll" name="roll_{id_name}" class="sheet-roll-trained" value="{roll_trained}"></button>\n'
+        h += f'{indent}\t\t\t{untrained_button}\n'
+        h += f'{indent}\t\t</div>\n'
         h += f'{indent}\t\t<div class="sheet-skill-name{trained_only_class}">{name} <button type="roll" name="roll_{id_name}_link" class="sheet-skill-link" value="[{name} Wiki]({url})">&#x2197;</button>{info_icon}</div>\n'
         h += f'{indent}\t\t<div class="sheet-skill-ability-label">{attr_short}</div>\n'
-        h += f'{indent}\t\t<input type="checkbox" name="attr_{id_name}" value="1" />\n'
+        h += f'{indent}\t\t<input type="checkbox" name="attr_{id_name}" class="sheet-trained-check" value="1" />\n'
         h += f'{indent}\t\t<div class="sheet-skill-score-cell">\n'
         h += f'{indent}\t\t\t<input type="text" name="attr_{id_name}O" class="sheet-scoredisabled" disabled="true" value="{formula}">/\n'
         h += f'{indent}\t\t\t<input type="text" name="attr_{id_name}G" class="sheet-scoredisabled" disabled="true" value="(floor(@{{{id_name}O}}/2))">/\n'
@@ -281,19 +290,29 @@ def generate_skills_html(data_list, indent_level=3, is_psionics=False):
             
             spec_wiki_link = f"{{{{wiki= [↗ Wiki Documentation]({spec_url})}}}}"
 
+            # Dual buttons for specialties
+            roll_spec_trained = f"&{{template:default}} {{{{name= @{{character_name}} - {spec_name}}}}} {{{{score= [[@{{{spec_id}O}}]]/[[@{{{spec_id}G}}]]/[[@{{{spec_id}A}}]]}}}} {{{{results= [[{get_alternity_roll_query(default_step=0)}]]}}}} {spec_wiki_link}"
+            roll_spec_untrained = f"&{{template:default}} {{{{name= @{{character_name}} - {spec_name} (Untrained)}}}} {{{{score= [[@{{{spec_id}O}}]]/[[@{{{spec_id}G}}]]/[[@{{{spec_id}A}}]]}}}} {{{{results= [[{get_alternity_roll_query(default_step=1)}]]}}}} {spec_wiki_link}"
+
             if spec_untrained == "NO":
                 spec_formula = f"(floor(((@{{{spec_id}Rank}}+@{{{spec_attr_full}}})*@{{{id_name}}}) * (@{{{spec_id}Rank}}/(@{{{spec_id}Rank}}+0.001)) + 0.5))"
                 trained_only_class = " sheet-trained-only"
+                spec_untrained_button = f'<button type="roll" name="roll_{spec_id}_untrained" class="sheet-roll-untrained sheet-trained-only-msg" value="/w gm @{{character_name}} attempts to use {spec_name} untrained, but it is a Trained Only skill."></button>'
             else:
                 spec_formula = f"(floor(((@{{{spec_id}Rank}}*@{{{id_name}}})+@{{{spec_attr_full}}})/(2-@{{{id_name}}})))"
                 trained_only_class = ""
+                spec_untrained_button = f'<button type="roll" name="roll_{spec_id}_untrained" class="sheet-roll-untrained" value="{roll_spec_untrained}"></button>'
                 
             spec_cost = spec.get("c", 0)
             spec_rank_benefits = spec.get("rb", None)
             spec_info_icon = build_info_icon(spec_cost, spec_untrained, spec_rank_benefits)
             
             h += f'{indent}\t\t<div class="sheet-skill-row sheet-spec">\n'
-            h += f'{indent}\t\t\t<button type="roll" name="roll_{spec_id}" value="&{{template:default}} {{{{name= @{{character_name}} - {spec_name}}}}} {{{{score= [[@{{{spec_id}O}}]]/[[@{{{spec_id}G}}]]/[[@{{{spec_id}A}}]]}}}} {spec_roll_results} {spec_wiki_link}"></button>\n'
+            h += f'{indent}\t\t\t<input type="hidden" name="attr_{spec_id}_is_trained" class="sheet-trained-check" value="0">\n'
+            h += f'{indent}\t\t\t<div class="sheet-roll-container">\n'
+            h += f'{indent}\t\t\t\t<button type="roll" name="roll_{spec_id}" class="sheet-roll-trained" value="{roll_spec_trained}"></button>\n'
+            h += f'{indent}\t\t\t\t{spec_untrained_button}\n'
+            h += f'{indent}\t\t\t</div>\n'
             h += f'{indent}\t\t\t<div class="sheet-skill-name{trained_only_class}">{spec_name} <button type="roll" name="roll_{spec_id}_link" class="sheet-skill-link" value="[{spec_name} Wiki]({spec_url})">&#x2197;</button>{spec_info_icon}</div>\n'
             h += f'{indent}\t\t\t<div class="sheet-skill-ability-label">{spec_attr}</div>\n'
             h += f'{indent}\t\t\t<input type="number" name="attr_{spec_id}Rank" class="sheet-score" value="0">\n'
@@ -306,7 +325,7 @@ def generate_skills_html(data_list, indent_level=3, is_psionics=False):
         h += f'{indent}\t</div>\n'
         h += f'{indent}</div>\n'
         output_html.append(h)
-        skill_ids.append(id_name)
+        skill_ids.append({'id': id_name, 'specs': [clean_id(s['n']) for s in skill.get('sp', [])]})
 
     return "".join(output_html), skill_ids
 
@@ -336,6 +355,12 @@ def build():
     roll_query_0 = get_alternity_roll_query(default_step=0)
     roll_query_1 = get_alternity_roll_query(default_step=1)
     
+    skills_html, skill_ids = generate_skills_html(skills_data, indent_level=3)
+    all_skill_ids.extend(skill_ids)
+    
+    psionics_html, psionic_skill_ids = generate_skills_html(psionics_data, indent_level=3, is_psionics=True)
+    all_skill_ids.extend(psionic_skill_ids)
+
     for filename in files:
         path = os.path.join(src_dir, filename)
         if not os.path.exists(path):
@@ -346,13 +371,18 @@ def build():
             content = f.read()
             
         if filename == 'skills.html':
-            skills_html, skill_ids = generate_skills_html(skills_data, indent_level=3)
             content = content.replace('<!-- SKILLS_PLACEHOLDER -->', skills_html)
-            all_skill_ids.extend(skill_ids)
         elif filename == 'psionics.html':
-            psionics_html, skill_ids = generate_skills_html(psionics_data, indent_level=3, is_psionics=True)
             content = content.replace('<!-- PSIONICS_PLACEHOLDER -->', psionics_html)
-            all_skill_ids.extend(skill_ids)
+        
+        if filename == 'header.html':
+            # Generate specialty training workers
+            spec_workers = []
+            for skill_entry in all_skill_ids:
+                for spec_id in skill_entry['specs']:
+                    spec_workers.append(f"on('change:{spec_id.lower()}rank', function() {{ getAttrs(['{spec_id}Rank'], function(v) {{ setAttrs({{ '{spec_id}_is_trained': (parseInt(v.{spec_id}Rank) > 0 ? 1 : 0) }}); }}); }});")
+            
+            content = content.replace('<!-- SPECIALTY_WORKERS_PLACEHOLDER -->', "\n".join(spec_workers))
             
         content = content.replace('<!-- ROLL_QUERY_DEFAULT_0 -->', roll_query_0)
         content = content.replace('<!-- ROLL_QUERY_DEFAULT_1 -->', roll_query_1)

@@ -49,7 +49,7 @@ Proficiency in moving through liquid environments. Without this skill, a charact
 ## Throw
 {{< specialty attr="STR" untrained="yes" cost="2" >}}
 
-Proficiency in hurling objects (knives, grenades, rocks) at targets. Accuracy is governed by [Table P20: Accuracy by Range]({{< relref "core-mechanics/useful-tables#table-p20-accuracy-by-range" >}}).
+Proficiency in hurling objects (knives, grenades, rocks) at targets. Accuracy is governed by [Table P20: Accuracy by Range]({{< relref "/core-mechanics/useful-tables#table-p20-accuracy-by-range" >}}).
 
 ### Trajectory Control
 A character can attempt advanced maneuvers with a base **+2 step penalty**:
