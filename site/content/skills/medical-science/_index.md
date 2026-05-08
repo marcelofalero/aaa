@@ -126,12 +126,13 @@ alien species, allowing a character to use his other medical
 skills on members of that species. The skill must be purchased
 separately for each alien species a character wants to know
 about.
+
 A character with at least rank 1 in this skill, as well as rank 1
 or higher in Knowledge—first aid, Medical Science—treatment, and/or
 Medical Science—surgery, can administer aid to an alien character
 or creature of the appropriate species. Initially, the +3 step
 penalty associated with healing alien characters is applied.
----
+
 ⊗ **Improved Treatment:** As a character achieves higher ranks in
 a specific application of xenomedicine, she becomes more proficient
 at providing aid to patients of the appropriate species. When the
