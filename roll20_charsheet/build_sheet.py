@@ -52,24 +52,58 @@ def build_info_icon(cost, is_untrained="YES", rank_benefits=None):
     )
 
 def get_skill_urls():
-    """Loads skill URLs from the site's skills.json."""
+    """Loads skill URLs from the site's skills.json and psionics.json."""
     urls = {}
-    json_path = os.path.join(os.path.dirname(__file__), '..', 'site', 'data', 'skills.json')
-    if not os.path.exists(json_path):
-        print(f"Warning: {json_path} not found. Links will be disabled.")
-        return urls
-        
-    try:
-        with open(json_path, 'r', encoding='utf-8') as f:
-            data = json.load(f)
-            for group in data.get("groups", []):
-                for item in group.get("items", []):
-                    # Normalize name for matching
-                    name = item["skill"].replace('**', '').replace('&nbsp;', '').replace('—', '-').replace('[spec]', '').strip()
-                    urls[name] = item["skill_url"]
-    except Exception as e:
-        print(f"Error loading skill URLs: {e}")
-        
+    data_dir = os.path.join(os.path.dirname(__file__), '..', 'site', 'data')
+    
+    files_to_load = ['skills.json', 'psionics.json']
+    base_domain = "https://aaa.dimble.net"
+    
+    for filename in files_to_load:
+        json_path = os.path.join(data_dir, filename)
+        if not os.path.exists(json_path):
+            print(f"Warning: {json_path} not found.")
+            continue
+            
+        try:
+            with open(json_path, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+                
+                # Case 1: Flat dictionary (e.g., current skills.json)
+                if isinstance(data, dict) and "groups" not in data and "items" not in data:
+                    for name, url in data.items():
+                        # Normalize key: "Acrobatics" -> "acrobatics"
+                        # But wait, skills.json keys are already slugs. 
+                        # We should store both if possible or normalize lookups.
+                        full_url = url if url.startswith('http') else base_domain + url
+                        urls[name.lower()] = full_url
+                        # Also handle space-separated versions of slugs if they exist
+                        urls[name.replace('-', ' ').lower()] = full_url
+                
+                # Case 2: Nested groups (e.g., current psionics.json)
+                elif isinstance(data, dict) and "groups" in data:
+                    groups = data["groups"]
+                    if isinstance(groups, dict):
+                        for group_name, items in groups.items():
+                            for item in items:
+                                if isinstance(item, dict) and "name" in item:
+                                    item_name = item["name"]
+                                    item_url = item.get("skill_url", "")
+                                    if item_url:
+                                        full_url = item_url if item_url.startswith('http') else base_domain + item_url
+                                        urls[item_name.lower()] = full_url
+                    elif isinstance(groups, list):
+                        # Legacy list format
+                        for group in groups:
+                            for item in group.get("items", []):
+                                item_name = item.get("skill", item.get("name", ""))
+                                item_url = item.get("skill_url", "")
+                                if item_name and item_url:
+                                    full_url = item_url if item_url.startswith('http') else base_domain + item_url
+                                    urls[item_name.lower()] = full_url
+        except Exception as e:
+            print(f"Error loading {filename}: {e}")
+            
     return urls
 
 SKILL_URL_MAP = get_skill_urls()
@@ -182,9 +216,18 @@ def generate_skills_html(data_list, indent_level=3, is_psionics=False):
         id_name = clean_id(name)
         
         fallback_path = "psionics" if is_psionics else "skills"
-        default_url = f"https://aaa.dimble.net/{fallback_path}/{name.lower().replace(' ', '-')}"
-        url = SKILL_URL_MAP.get(name, default_url)
+        name_lower = name.lower()
+        url = SKILL_URL_MAP.get(name_lower)
         
+        if not url:
+            # Try with hyphens if it was a multi-word skill name
+            url = SKILL_URL_MAP.get(name_lower.replace(' ', '-'))
+            
+        if not url:
+            # Fallback to hardcoded logic if not found in map
+            url = f"https://aaa.dimble.net/{fallback_path}/{name_lower.replace(' ', '-')}"
+        
+        # Post-processing for psionics path change if needed
         if "https://aaa.dimble.net/psionics/" in url:
             url = url.replace("/psionics/", "/core-mechanics/psionics/")
 
@@ -225,7 +268,10 @@ def generate_skills_html(data_list, indent_level=3, is_psionics=False):
             spec_attr_full = ABILITY_MAP[spec_attr]
             spec_id = clean_id(spec_name)
             
-            spec_url = SKILL_URL_MAP.get(spec_name)
+            spec_url = SKILL_URL_MAP.get(spec_name.lower())
+            if not spec_url:
+                spec_url = SKILL_URL_MAP.get(spec_name.lower().replace(' ', '-'))
+                
             if spec_url:
                 if "https://aaa.dimble.net/psionics/" in spec_url:
                     spec_url = spec_url.replace("/psionics/", "/core-mechanics/psionics/")
