@@ -976,31 +976,6 @@
                             "css_class": ""
                         }
                     ]
-                },
-                {
-                    "skill": "Teach",
-                    "attribute": "WIL",
-                    "url": "/skills/teach",
-                    "cost": 3,
-                    "type": "Broad",
-                    "items": [
-                        {
-                            "skill": "Teach, Specific Field",
-                            "attribute": "WIL",
-                            "url": "/skills/teach#teach-specific-field",
-                            "cost": 3,
-                            "type": "Specialty",
-                            "css_class": ""
-                        },
-                        {
-                            "skill": "Specific field",
-                            "attribute": "WIL",
-                            "url": "/skills/teach#specific-field",
-                            "cost": 2,
-                            "type": "Specialty",
-                            "css_class": ""
-                        }
-                    ]
                 }
             ]
         },
@@ -1164,14 +1139,6 @@
                     "type": "Broad",
                     "items": [
                         {
-                            "skill": "Biology, Botany, Zoology",
-                            "attribute": "WIL",
-                            "url": "/skills/life-science#biology-botany-zoology",
-                            "cost": 3,
-                            "type": "Specialty",
-                            "css_class": ""
-                        },
-                        {
                             "skill": "Psionics",
                             "attribute": "WIL",
                             "url": "/skills/life-science#psionics",
@@ -1202,14 +1169,6 @@
                             "cost": 3,
                             "type": "Specialty",
                             "css_class": ""
-                        },
-                        {
-                            "skill": "Xenology",
-                            "attribute": "WIL",
-                            "url": "/skills/life-science#xenology",
-                            "cost": 3,
-                            "type": "Specialty",
-                            "css_class": "trained-only"
                         },
                         {
                             "skill": "Zoology",
@@ -1283,14 +1242,6 @@
                             "cost": 3,
                             "type": "Specialty",
                             "css_class": ""
-                        },
-                        {
-                            "skill": "Xenomedicine",
-                            "attribute": "WIL",
-                            "url": "/skills/medical-science#xenomedicine-specific",
-                            "cost": 3,
-                            "type": "Specialty",
-                            "css_class": "trained-only"
                         }
                     ]
                 },
@@ -1403,14 +1354,6 @@
                             "skill": "Invention",
                             "attribute": "WIL",
                             "url": "/skills/technical-science#invention",
-                            "cost": 3,
-                            "type": "Specialty",
-                            "css_class": ""
-                        },
-                        {
-                            "skill": "Jury-rig",
-                            "attribute": "WIL",
-                            "url": "/skills/technical-science#jury-rig",
                             "cost": 3,
                             "type": "Specialty",
                             "css_class": ""

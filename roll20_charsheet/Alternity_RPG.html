@@ -189,11 +189,9 @@ on('change:psionicsrank', function() { getAttrs(['PsionicsRank'], function(v) { 
 on('change:commandrank', function() { getAttrs(['CommandRank'], function(v) { setAttrs({ 'Command_is_trained': (parseInt(v.CommandRank) > 0 ? 1 : 0) }); }); });
 on('change:inspirerank', function() { getAttrs(['InspireRank'], function(v) { setAttrs({ 'Inspire_is_trained': (parseInt(v.InspireRank) > 0 ? 1 : 0) }); }); });
 on('change:biologyrank', function() { getAttrs(['BiologyRank'], function(v) { setAttrs({ 'Biology_is_trained': (parseInt(v.BiologyRank) > 0 ? 1 : 0) }); }); });
-on('change:biologybotanyzoologyrank', function() { getAttrs(['BiologyBotanyZoologyRank'], function(v) { setAttrs({ 'BiologyBotanyZoology_is_trained': (parseInt(v.BiologyBotanyZoologyRank) > 0 ? 1 : 0) }); }); });
 on('change:botanyrank', function() { getAttrs(['BotanyRank'], function(v) { setAttrs({ 'Botany_is_trained': (parseInt(v.BotanyRank) > 0 ? 1 : 0) }); }); });
 on('change:geneticsrank', function() { getAttrs(['GeneticsRank'], function(v) { setAttrs({ 'Genetics_is_trained': (parseInt(v.GeneticsRank) > 0 ? 1 : 0) }); }); });
 on('change:psionicsrank', function() { getAttrs(['PsionicsRank'], function(v) { setAttrs({ 'Psionics_is_trained': (parseInt(v.PsionicsRank) > 0 ? 1 : 0) }); }); });
-on('change:xenologyrank', function() { getAttrs(['XenologyRank'], function(v) { setAttrs({ 'Xenology_is_trained': (parseInt(v.XenologyRank) > 0 ? 1 : 0) }); }); });
 on('change:zoologyrank', function() { getAttrs(['ZoologyRank'], function(v) { setAttrs({ 'Zoology_is_trained': (parseInt(v.ZoologyRank) > 0 ? 1 : 0) }); }); });
 on('change:forensicsciencerank', function() { getAttrs(['ForensicScienceRank'], function(v) { setAttrs({ 'ForensicScience_is_trained': (parseInt(v.ForensicScienceRank) > 0 ? 1 : 0) }); }); });
 on('change:forensicsrank', function() { getAttrs(['ForensicsRank'], function(v) { setAttrs({ 'Forensics_is_trained': (parseInt(v.ForensicsRank) > 0 ? 1 : 0) }); }); });
@@ -201,7 +199,6 @@ on('change:medicalknowledgerank', function() { getAttrs(['MedicalKnowledgeRank']
 on('change:psychologyrank', function() { getAttrs(['PsychologyRank'], function(v) { setAttrs({ 'Psychology_is_trained': (parseInt(v.PsychologyRank) > 0 ? 1 : 0) }); }); });
 on('change:surgeryrank', function() { getAttrs(['SurgeryRank'], function(v) { setAttrs({ 'Surgery_is_trained': (parseInt(v.SurgeryRank) > 0 ? 1 : 0) }); }); });
 on('change:treatmentrank', function() { getAttrs(['TreatmentRank'], function(v) { setAttrs({ 'Treatment_is_trained': (parseInt(v.TreatmentRank) > 0 ? 1 : 0) }); }); });
-on('change:xenomedicinerank', function() { getAttrs(['XenomedicineRank'], function(v) { setAttrs({ 'Xenomedicine_is_trained': (parseInt(v.XenomedicineRank) > 0 ? 1 : 0) }); }); });
 on('change:xenomedicinerank', function() { getAttrs(['XenomedicineRank'], function(v) { setAttrs({ 'Xenomedicine_is_trained': (parseInt(v.XenomedicineRank) > 0 ? 1 : 0) }); }); });
 on('change:bladerank', function() { getAttrs(['BladeRank'], function(v) { setAttrs({ 'Blade_is_trained': (parseInt(v.BladeRank) > 0 ? 1 : 0) }); }); });
 on('change:bluntrank', function() { getAttrs(['BluntRank'], function(v) { setAttrs({ 'Blunt_is_trained': (parseInt(v.BluntRank) > 0 ? 1 : 0) }); }); });
@@ -243,8 +240,6 @@ on('change:weaponsrank', function() { getAttrs(['WeaponsRank'], function(v) { se
 on('change:infantrytacticsrank', function() { getAttrs(['InfantrytacticsRank'], function(v) { setAttrs({ 'Infantrytactics_is_trained': (parseInt(v.InfantrytacticsRank) > 0 ? 1 : 0) }); }); });
 on('change:spacetacticsrank', function() { getAttrs(['SpacetacticsRank'], function(v) { setAttrs({ 'Spacetactics_is_trained': (parseInt(v.SpacetacticsRank) > 0 ? 1 : 0) }); }); });
 on('change:vehicletacticsrank', function() { getAttrs(['VehicletacticsRank'], function(v) { setAttrs({ 'Vehicletactics_is_trained': (parseInt(v.VehicletacticsRank) > 0 ? 1 : 0) }); }); });
-on('change:specificfieldrank', function() { getAttrs(['SpecificfieldRank'], function(v) { setAttrs({ 'Specificfield_is_trained': (parseInt(v.SpecificfieldRank) > 0 ? 1 : 0) }); }); });
-on('change:teachspecificfieldrank', function() { getAttrs(['TeachSpecificFieldRank'], function(v) { setAttrs({ 'TeachSpecificField_is_trained': (parseInt(v.TeachSpecificFieldRank) > 0 ? 1 : 0) }); }); });
 on('change:inventionrank', function() { getAttrs(['InventionRank'], function(v) { setAttrs({ 'Invention_is_trained': (parseInt(v.InventionRank) > 0 ? 1 : 0) }); }); });
 on('change:juryrigrank', function() { getAttrs(['JuryrigRank'], function(v) { setAttrs({ 'Juryrig_is_trained': (parseInt(v.JuryrigRank) > 0 ? 1 : 0) }); }); });
 on('change:repairrank', function() { getAttrs(['RepairRank'], function(v) { setAttrs({ 'Repair_is_trained': (parseInt(v.RepairRank) > 0 ? 1 : 0) }); }); });
@@ -2501,21 +2496,6 @@ on('change:undorank', function() { getAttrs(['UndoRank'], function(v) { setAttrs
 						</div>
 					</div>
 					<div class="sheet-skill-row sheet-spec">
-						<input type="hidden" name="attr_BiologyBotanyZoology_is_trained" class="sheet-trained-check" value="0">
-						<div class="sheet-roll-container">
-							<button type="roll" name="roll_BiologyBotanyZoology" class="sheet-roll-trained" value="&{template:default} {{name= @{character_name} - Biology, Botany, Zoology}} {{score= [[@{BiologyBotanyZoologyO}]]/[[@{BiologyBotanyZoologyG}]]/[[@{BiologyBotanyZoologyA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-10 Steps (-6d20), 1d20cs<1cf>20-6d20cs<0cf<0|-9 Steps (-5d20), 1d20cs<1cf>20-5d20cs<0cf<0|-8 Steps (-4d20), 1d20cs<1cf>20-4d20cs<0cf<0|-7 Steps (-3d20), 1d20cs<1cf>20-3d20cs<0cf<0|-6 Steps (-2d20), 1d20cs<1cf>20-2d20cs<0cf<0|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0|+8 Steps (+4d20), 1d20cs<1cf>20+4d20cs<0cf<0|+9 Steps (+5d20), 1d20cs<1cf>20+5d20cs<0cf<0|+10 Steps (+6d20), 1d20cs<1cf>20+6d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/life-science#biology,-botany,-zoology)}}"></button>
-							<button type="roll" name="roll_BiologyBotanyZoology_untrained" class="sheet-roll-untrained" value="&{template:default} {{name= @{character_name} - Biology, Botany, Zoology (Untrained)}} {{score= [[@{BiologyBotanyZoologyO}]]/[[@{BiologyBotanyZoologyG}]]/[[@{BiologyBotanyZoologyA}]]}} {{results= [[?{Situation Modifier|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|-10 Steps (-6d20), 1d20cs<1cf>20-6d20cs<0cf<0|-9 Steps (-5d20), 1d20cs<1cf>20-5d20cs<0cf<0|-8 Steps (-4d20), 1d20cs<1cf>20-4d20cs<0cf<0|-7 Steps (-3d20), 1d20cs<1cf>20-3d20cs<0cf<0|-6 Steps (-2d20), 1d20cs<1cf>20-2d20cs<0cf<0|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|None, 1d20cs<1cf>20|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0|+8 Steps (+4d20), 1d20cs<1cf>20+4d20cs<0cf<0|+9 Steps (+5d20), 1d20cs<1cf>20+5d20cs<0cf<0|+10 Steps (+6d20), 1d20cs<1cf>20+6d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/life-science#biology,-botany,-zoology)}}"></button>
-						</div>
-						<div class="sheet-skill-name">Biology, Botany, Zoology <button type="roll" name="roll_BiologyBotanyZoology_link" class="sheet-skill-link" value="[Biology, Botany, Zoology Wiki](https://aaa.dimble.net/skills/life-science#biology,-botany,-zoology)">&#x2197;</button><div class="sheet-skill-info"><span class="sheet-info-icon">i</span><div class="sheet-tooltip"><span class="sheet-tooltip-cost">Base cost: 3</span><span class="sheet-tooltip-separator"></span><span class="sheet-tooltip-rank"><b>R3</b> Increased Effect</span><span class="sheet-tooltip-rank"><b>R6</b> Increased Effect</span><span class="sheet-tooltip-rank"><b>R9</b> Increased Effect</span><span class="sheet-tooltip-rank"><b>R12</b> Increased Effect</span></div></div></div>
-						<div class="sheet-skill-ability-label">WIL</div>
-						<input type="number" name="attr_BiologyBotanyZoologyRank" class="sheet-score" value="0">
-						<div class="sheet-skill-score-cell">
-							<input type="text" name="attr_BiologyBotanyZoologyO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{BiologyBotanyZoologyRank}*@{LifeScience})+@{Will})/(2-@{LifeScience})))">/
-							<input type="text" name="attr_BiologyBotanyZoologyG" class="sheet-scoredisabled" disabled="true" value="(floor(@{BiologyBotanyZoologyO}/2))">/
-							<input type="text" name="attr_BiologyBotanyZoologyA" class="sheet-scoredisabled" disabled="true" value="(floor(@{BiologyBotanyZoologyO}/4))">
-						</div>
-					</div>
-					<div class="sheet-skill-row sheet-spec">
 						<input type="hidden" name="attr_Botany_is_trained" class="sheet-trained-check" value="0">
 						<div class="sheet-roll-container">
 							<button type="roll" name="roll_Botany" class="sheet-roll-trained" value="&{template:default} {{name= @{character_name} - Botany}} {{score= [[@{BotanyO}]]/[[@{BotanyG}]]/[[@{BotanyA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-10 Steps (-6d20), 1d20cs<1cf>20-6d20cs<0cf<0|-9 Steps (-5d20), 1d20cs<1cf>20-5d20cs<0cf<0|-8 Steps (-4d20), 1d20cs<1cf>20-4d20cs<0cf<0|-7 Steps (-3d20), 1d20cs<1cf>20-3d20cs<0cf<0|-6 Steps (-2d20), 1d20cs<1cf>20-2d20cs<0cf<0|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0|+8 Steps (+4d20), 1d20cs<1cf>20+4d20cs<0cf<0|+9 Steps (+5d20), 1d20cs<1cf>20+5d20cs<0cf<0|+10 Steps (+6d20), 1d20cs<1cf>20+6d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/life-science#botany)}}"></button>
@@ -2558,21 +2538,6 @@ on('change:undorank', function() { getAttrs(['UndoRank'], function(v) { setAttrs
 							<input type="text" name="attr_PsionicsO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{PsionicsRank}+@{Will})*@{LifeScience}) * (@{PsionicsRank}/(@{PsionicsRank}+0.001)) + 0.5))">/
 							<input type="text" name="attr_PsionicsG" class="sheet-scoredisabled" disabled="true" value="(floor(@{PsionicsO}/2))">/
 							<input type="text" name="attr_PsionicsA" class="sheet-scoredisabled" disabled="true" value="(floor(@{PsionicsO}/4))">
-						</div>
-					</div>
-					<div class="sheet-skill-row sheet-spec">
-						<input type="hidden" name="attr_Xenology_is_trained" class="sheet-trained-check" value="0">
-						<div class="sheet-roll-container">
-							<button type="roll" name="roll_Xenology" class="sheet-roll-trained" value="&{template:default} {{name= @{character_name} - Xenology}} {{score= [[@{XenologyO}]]/[[@{XenologyG}]]/[[@{XenologyA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-10 Steps (-6d20), 1d20cs<1cf>20-6d20cs<0cf<0|-9 Steps (-5d20), 1d20cs<1cf>20-5d20cs<0cf<0|-8 Steps (-4d20), 1d20cs<1cf>20-4d20cs<0cf<0|-7 Steps (-3d20), 1d20cs<1cf>20-3d20cs<0cf<0|-6 Steps (-2d20), 1d20cs<1cf>20-2d20cs<0cf<0|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0|+8 Steps (+4d20), 1d20cs<1cf>20+4d20cs<0cf<0|+9 Steps (+5d20), 1d20cs<1cf>20+5d20cs<0cf<0|+10 Steps (+6d20), 1d20cs<1cf>20+6d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/life-science#xenology)}}"></button>
-							<button type="roll" name="roll_Xenology_untrained" class="sheet-roll-untrained sheet-trained-only-msg" value="/w gm @{character_name} attempts to use Xenology untrained, but it is a Trained Only skill."></button>
-						</div>
-						<div class="sheet-skill-name sheet-trained-only">Xenology <button type="roll" name="roll_Xenology_link" class="sheet-skill-link" value="[Xenology Wiki](https://aaa.dimble.net/skills/life-science#xenology)">&#x2197;</button><div class="sheet-skill-info"><span class="sheet-info-icon">i</span><div class="sheet-tooltip"><span class="sheet-tooltip-trained">Trained Only</span><span class="sheet-tooltip-separator"></span><span class="sheet-tooltip-cost">Base cost: 3</span><span class="sheet-tooltip-separator"></span><span class="sheet-tooltip-rank"><b>R3</b> Increased Effect</span><span class="sheet-tooltip-rank"><b>R6</b> Increased Effect</span><span class="sheet-tooltip-rank"><b>R9</b> Increased Effect</span><span class="sheet-tooltip-rank"><b>R12</b> Increased Effect</span></div></div></div>
-						<div class="sheet-skill-ability-label">WIL</div>
-						<input type="number" name="attr_XenologyRank" class="sheet-score" value="0">
-						<div class="sheet-skill-score-cell">
-							<input type="text" name="attr_XenologyO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{XenologyRank}+@{Will})*@{LifeScience}) * (@{XenologyRank}/(@{XenologyRank}+0.001)) + 0.5))">/
-							<input type="text" name="attr_XenologyG" class="sheet-scoredisabled" disabled="true" value="(floor(@{XenologyO}/2))">/
-							<input type="text" name="attr_XenologyA" class="sheet-scoredisabled" disabled="true" value="(floor(@{XenologyO}/4))">
 						</div>
 					</div>
 					<div class="sheet-skill-row sheet-spec">
@@ -2714,21 +2679,6 @@ on('change:undorank', function() { getAttrs(['UndoRank'], function(v) { setAttrs
 						<input type="number" name="attr_XenomedicineRank" class="sheet-score" value="0">
 						<div class="sheet-skill-score-cell">
 							<input type="text" name="attr_XenomedicineO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{XenomedicineRank}+@{Intelligence})*@{MedicalScience}) * (@{XenomedicineRank}/(@{XenomedicineRank}+0.001)) + 0.5))">/
-							<input type="text" name="attr_XenomedicineG" class="sheet-scoredisabled" disabled="true" value="(floor(@{XenomedicineO}/2))">/
-							<input type="text" name="attr_XenomedicineA" class="sheet-scoredisabled" disabled="true" value="(floor(@{XenomedicineO}/4))">
-						</div>
-					</div>
-					<div class="sheet-skill-row sheet-spec">
-						<input type="hidden" name="attr_Xenomedicine_is_trained" class="sheet-trained-check" value="0">
-						<div class="sheet-roll-container">
-							<button type="roll" name="roll_Xenomedicine" class="sheet-roll-trained" value="&{template:default} {{name= @{character_name} - Xenomedicine}} {{score= [[@{XenomedicineO}]]/[[@{XenomedicineG}]]/[[@{XenomedicineA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-10 Steps (-6d20), 1d20cs<1cf>20-6d20cs<0cf<0|-9 Steps (-5d20), 1d20cs<1cf>20-5d20cs<0cf<0|-8 Steps (-4d20), 1d20cs<1cf>20-4d20cs<0cf<0|-7 Steps (-3d20), 1d20cs<1cf>20-3d20cs<0cf<0|-6 Steps (-2d20), 1d20cs<1cf>20-2d20cs<0cf<0|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0|+8 Steps (+4d20), 1d20cs<1cf>20+4d20cs<0cf<0|+9 Steps (+5d20), 1d20cs<1cf>20+5d20cs<0cf<0|+10 Steps (+6d20), 1d20cs<1cf>20+6d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/medical-science#xenomedicine)}}"></button>
-							<button type="roll" name="roll_Xenomedicine_untrained" class="sheet-roll-untrained sheet-trained-only-msg" value="/w gm @{character_name} attempts to use Xenomedicine untrained, but it is a Trained Only skill."></button>
-						</div>
-						<div class="sheet-skill-name sheet-trained-only">Xenomedicine <button type="roll" name="roll_Xenomedicine_link" class="sheet-skill-link" value="[Xenomedicine Wiki](https://aaa.dimble.net/skills/medical-science#xenomedicine)">&#x2197;</button><div class="sheet-skill-info"><span class="sheet-info-icon">i</span><div class="sheet-tooltip"><span class="sheet-tooltip-trained">Trained Only</span><span class="sheet-tooltip-separator"></span><span class="sheet-tooltip-cost">Base cost: 3</span></div></div></div>
-						<div class="sheet-skill-ability-label">WIL</div>
-						<input type="number" name="attr_XenomedicineRank" class="sheet-score" value="0">
-						<div class="sheet-skill-score-cell">
-							<input type="text" name="attr_XenomedicineO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{XenomedicineRank}+@{Will})*@{MedicalScience}) * (@{XenomedicineRank}/(@{XenomedicineRank}+0.001)) + 0.5))">/
 							<input type="text" name="attr_XenomedicineG" class="sheet-scoredisabled" disabled="true" value="(floor(@{XenomedicineO}/2))">/
 							<input type="text" name="attr_XenomedicineA" class="sheet-scoredisabled" disabled="true" value="(floor(@{XenomedicineO}/4))">
 						</div>
@@ -3607,59 +3557,6 @@ on('change:undorank', function() { getAttrs(['UndoRank'], function(v) { setAttrs
 							<input type="text" name="attr_VehicletacticsO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{VehicletacticsRank}*@{Tactics})+@{Will})/(2-@{Tactics})))">/
 							<input type="text" name="attr_VehicletacticsG" class="sheet-scoredisabled" disabled="true" value="(floor(@{VehicletacticsO}/2))">/
 							<input type="text" name="attr_VehicletacticsA" class="sheet-scoredisabled" disabled="true" value="(floor(@{VehicletacticsO}/4))">
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="sheet-skill-group-box">
-				<div class="sheet-skill-header-row">
-					<div></div><div class="sheet-skill-name">TEACH</div><div></div>
-					<div class="sheet-skill-ability-label">RANKS</div>
-					<div class="sheet-skill-ability-label">SCORE</div>
-				</div>
-				<div class="sheet-skill-row">
-					<div class="sheet-roll-container">
-						<button type="roll" name="roll_Teach" class="sheet-roll-trained" value="&{template:default} {{name= @{character_name} - Teach}} {{score= [[@{TeachO}]]/[[@{TeachG}]]/[[@{TeachA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-10 Steps (-6d20), 1d20cs<1cf>20-6d20cs<0cf<0|-9 Steps (-5d20), 1d20cs<1cf>20-5d20cs<0cf<0|-8 Steps (-4d20), 1d20cs<1cf>20-4d20cs<0cf<0|-7 Steps (-3d20), 1d20cs<1cf>20-3d20cs<0cf<0|-6 Steps (-2d20), 1d20cs<1cf>20-2d20cs<0cf<0|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0|+8 Steps (+4d20), 1d20cs<1cf>20+4d20cs<0cf<0|+9 Steps (+5d20), 1d20cs<1cf>20+5d20cs<0cf<0|+10 Steps (+6d20), 1d20cs<1cf>20+6d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/teach)}}"></button>
-						<button type="roll" name="roll_Teach_untrained" class="sheet-roll-untrained" value="&{template:default} {{name= @{character_name} - Teach (Untrained)}} {{score= [[@{TeachO}]]/[[@{TeachG}]]/[[@{TeachA}]]}} {{results= [[?{Situation Modifier|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|-10 Steps (-6d20), 1d20cs<1cf>20-6d20cs<0cf<0|-9 Steps (-5d20), 1d20cs<1cf>20-5d20cs<0cf<0|-8 Steps (-4d20), 1d20cs<1cf>20-4d20cs<0cf<0|-7 Steps (-3d20), 1d20cs<1cf>20-3d20cs<0cf<0|-6 Steps (-2d20), 1d20cs<1cf>20-2d20cs<0cf<0|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|None, 1d20cs<1cf>20|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0|+8 Steps (+4d20), 1d20cs<1cf>20+4d20cs<0cf<0|+9 Steps (+5d20), 1d20cs<1cf>20+5d20cs<0cf<0|+10 Steps (+6d20), 1d20cs<1cf>20+6d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/teach)}}"></button>
-					</div>
-					<div class="sheet-skill-name">Teach <button type="roll" name="roll_Teach_link" class="sheet-skill-link" value="[Teach Wiki](https://aaa.dimble.net/skills/teach)">&#x2197;</button><div class="sheet-skill-info"><span class="sheet-info-icon">i</span><div class="sheet-tooltip"><span class="sheet-tooltip-cost">Base cost: 3</span></div></div></div>
-					<div class="sheet-skill-ability-label">WIL</div>
-					<input type="checkbox" name="attr_Teach" class="sheet-trained-check" value="1" />
-					<div class="sheet-skill-score-cell">
-						<input type="text" name="attr_TeachO" class="sheet-scoredisabled" disabled="true" value="(floor(@{Will}/(2-@{Teach})))">/
-						<input type="text" name="attr_TeachG" class="sheet-scoredisabled" disabled="true" value="(floor(@{TeachO}/2))">/
-						<input type="text" name="attr_TeachA" class="sheet-scoredisabled" disabled="true" value="(floor(@{TeachO}/4))">
-					</div>
-				</div>
-				<div class="sheet-specialties-container">
-					<div class="sheet-skill-row sheet-spec">
-						<input type="hidden" name="attr_Specificfield_is_trained" class="sheet-trained-check" value="0">
-						<div class="sheet-roll-container">
-							<button type="roll" name="roll_Specificfield" class="sheet-roll-trained" value="&{template:default} {{name= @{character_name} - Specific field}} {{score= [[@{SpecificfieldO}]]/[[@{SpecificfieldG}]]/[[@{SpecificfieldA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-10 Steps (-6d20), 1d20cs<1cf>20-6d20cs<0cf<0|-9 Steps (-5d20), 1d20cs<1cf>20-5d20cs<0cf<0|-8 Steps (-4d20), 1d20cs<1cf>20-4d20cs<0cf<0|-7 Steps (-3d20), 1d20cs<1cf>20-3d20cs<0cf<0|-6 Steps (-2d20), 1d20cs<1cf>20-2d20cs<0cf<0|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0|+8 Steps (+4d20), 1d20cs<1cf>20+4d20cs<0cf<0|+9 Steps (+5d20), 1d20cs<1cf>20+5d20cs<0cf<0|+10 Steps (+6d20), 1d20cs<1cf>20+6d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/teach#specific-field)}}"></button>
-							<button type="roll" name="roll_Specificfield_untrained" class="sheet-roll-untrained" value="&{template:default} {{name= @{character_name} - Specific field (Untrained)}} {{score= [[@{SpecificfieldO}]]/[[@{SpecificfieldG}]]/[[@{SpecificfieldA}]]}} {{results= [[?{Situation Modifier|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|-10 Steps (-6d20), 1d20cs<1cf>20-6d20cs<0cf<0|-9 Steps (-5d20), 1d20cs<1cf>20-5d20cs<0cf<0|-8 Steps (-4d20), 1d20cs<1cf>20-4d20cs<0cf<0|-7 Steps (-3d20), 1d20cs<1cf>20-3d20cs<0cf<0|-6 Steps (-2d20), 1d20cs<1cf>20-2d20cs<0cf<0|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|None, 1d20cs<1cf>20|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0|+8 Steps (+4d20), 1d20cs<1cf>20+4d20cs<0cf<0|+9 Steps (+5d20), 1d20cs<1cf>20+5d20cs<0cf<0|+10 Steps (+6d20), 1d20cs<1cf>20+6d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/teach#specific-field)}}"></button>
-						</div>
-						<div class="sheet-skill-name">Specific field <button type="roll" name="roll_Specificfield_link" class="sheet-skill-link" value="[Specific field Wiki](https://aaa.dimble.net/skills/teach#specific-field)">&#x2197;</button><div class="sheet-skill-info"><span class="sheet-info-icon">i</span><div class="sheet-tooltip"><span class="sheet-tooltip-cost">Base cost: 2</span></div></div></div>
-						<div class="sheet-skill-ability-label">WIL</div>
-						<input type="number" name="attr_SpecificfieldRank" class="sheet-score" value="0">
-						<div class="sheet-skill-score-cell">
-							<input type="text" name="attr_SpecificfieldO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{SpecificfieldRank}*@{Teach})+@{Will})/(2-@{Teach})))">/
-							<input type="text" name="attr_SpecificfieldG" class="sheet-scoredisabled" disabled="true" value="(floor(@{SpecificfieldO}/2))">/
-							<input type="text" name="attr_SpecificfieldA" class="sheet-scoredisabled" disabled="true" value="(floor(@{SpecificfieldO}/4))">
-						</div>
-					</div>
-					<div class="sheet-skill-row sheet-spec">
-						<input type="hidden" name="attr_TeachSpecificField_is_trained" class="sheet-trained-check" value="0">
-						<div class="sheet-roll-container">
-							<button type="roll" name="roll_TeachSpecificField" class="sheet-roll-trained" value="&{template:default} {{name= @{character_name} - Teach, Specific Field}} {{score= [[@{TeachSpecificFieldO}]]/[[@{TeachSpecificFieldG}]]/[[@{TeachSpecificFieldA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-10 Steps (-6d20), 1d20cs<1cf>20-6d20cs<0cf<0|-9 Steps (-5d20), 1d20cs<1cf>20-5d20cs<0cf<0|-8 Steps (-4d20), 1d20cs<1cf>20-4d20cs<0cf<0|-7 Steps (-3d20), 1d20cs<1cf>20-3d20cs<0cf<0|-6 Steps (-2d20), 1d20cs<1cf>20-2d20cs<0cf<0|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0|+8 Steps (+4d20), 1d20cs<1cf>20+4d20cs<0cf<0|+9 Steps (+5d20), 1d20cs<1cf>20+5d20cs<0cf<0|+10 Steps (+6d20), 1d20cs<1cf>20+6d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/teach#teach,-specific-field)}}"></button>
-							<button type="roll" name="roll_TeachSpecificField_untrained" class="sheet-roll-untrained" value="&{template:default} {{name= @{character_name} - Teach, Specific Field (Untrained)}} {{score= [[@{TeachSpecificFieldO}]]/[[@{TeachSpecificFieldG}]]/[[@{TeachSpecificFieldA}]]}} {{results= [[?{Situation Modifier|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|-10 Steps (-6d20), 1d20cs<1cf>20-6d20cs<0cf<0|-9 Steps (-5d20), 1d20cs<1cf>20-5d20cs<0cf<0|-8 Steps (-4d20), 1d20cs<1cf>20-4d20cs<0cf<0|-7 Steps (-3d20), 1d20cs<1cf>20-3d20cs<0cf<0|-6 Steps (-2d20), 1d20cs<1cf>20-2d20cs<0cf<0|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|None, 1d20cs<1cf>20|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0|+8 Steps (+4d20), 1d20cs<1cf>20+4d20cs<0cf<0|+9 Steps (+5d20), 1d20cs<1cf>20+5d20cs<0cf<0|+10 Steps (+6d20), 1d20cs<1cf>20+6d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/skills/teach#teach,-specific-field)}}"></button>
-						</div>
-						<div class="sheet-skill-name">Teach, Specific Field <button type="roll" name="roll_TeachSpecificField_link" class="sheet-skill-link" value="[Teach, Specific Field Wiki](https://aaa.dimble.net/skills/teach#teach,-specific-field)">&#x2197;</button><div class="sheet-skill-info"><span class="sheet-info-icon">i</span><div class="sheet-tooltip"><span class="sheet-tooltip-cost">Base cost: 3</span></div></div></div>
-						<div class="sheet-skill-ability-label">WIL</div>
-						<input type="number" name="attr_TeachSpecificFieldRank" class="sheet-score" value="0">
-						<div class="sheet-skill-score-cell">
-							<input type="text" name="attr_TeachSpecificFieldO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{TeachSpecificFieldRank}*@{Teach})+@{Will})/(2-@{Teach})))">/
-							<input type="text" name="attr_TeachSpecificFieldG" class="sheet-scoredisabled" disabled="true" value="(floor(@{TeachSpecificFieldO}/2))">/
-							<input type="text" name="attr_TeachSpecificFieldA" class="sheet-scoredisabled" disabled="true" value="(floor(@{TeachSpecificFieldO}/4))">
 						</div>
 					</div>
 				</div>

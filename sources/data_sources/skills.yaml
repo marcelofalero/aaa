@@ -3126,39 +3126,6 @@ items:
           description: |-
             Esta amplia habilidad representa la formación de un personaje en las ciencias de la vida. Las pruebas de habilidad que involucran esta habilidad se realizan de la misma manera que las pruebas de habilidad de Conocimiento.
     items:
-      biology-botany-zoology:
-        attribute: WIL
-        cost: 3
-        url: /skills/life-science#biology-botany-zoology
-        localized:
-          - en:
-              name: Biology, Botany, Zoology
-              description: |-
-                These specialty skills must be purchased separately.
-                - **Biology:** The study of organisms and biochemical processes.
-                - **Botany:** The study of plants and identification.
-                - **Zoology:** The study of animals and animal life.
-                ⊗ **Increased Effect:** A character receives a **-1 bonus** at rank 3,
-                **-2** at rank 6, **-3** at rank 9, and **-4** at rank 12 on certain other skill checks that can be assisted by this specialty. These skills include Survival, Animal Handling, and Medical Science—treatment.
-          - es:
-              name: Biología, Botánica, Zoología
-              description: |-
-                Estas habilidades especiales deben adquirirse por separado.
-                - **Biología:** El estudio de los organismos y los procesos bioquímicos.
-                - **Botánica:** El estudio de las plantas y su identificación.
-                - **Zoología:** El estudio de los animales y la vida animal.
-                ⊗ **Efecto aumentado:** Un personaje recibe una **bonificación -1** en el rango 3,
-                **-2** en el rango 6, **-3** en el rango 9 y **-4** en el rango 12 en otras pruebas de habilidades que pueden ser asistidas por esta especialidad. Estas habilidades incluyen supervivencia, manejo de animales y ciencias médicas: tratamiento.
-        trained_only: false
-        rank_benefits:
-          - rank: 3
-            title: Increased Effect
-          - rank: 6
-            title: Increased Effect
-          - rank: 9
-            title: Increased Effect
-          - rank: 12
-            title: Increased Effect
       psionics:
         attribute: WIL
         cost: 3
@@ -3223,33 +3190,6 @@ items:
                 ⊗ **Efecto aumentado:** Un personaje recibe una **bonificación -1** en el rango 3,
                 **-2** en el rango 6, **-3** en el rango 9 y **-4** en el rango 12 en otras pruebas de habilidades que pueden ser asistidas por esta especialidad. Estas habilidades incluyen ciencia médica: tratamiento, ciencia forense y ciertas comprobaciones de biokinesis o mutaciones.
         trained_only: false
-        rank_benefits:
-          - rank: 3
-            title: Increased Effect
-          - rank: 6
-            title: Increased Effect
-          - rank: 9
-            title: Increased Effect
-          - rank: 12
-            title: Increased Effect
-      xenology:
-        attribute: WIL
-        cost: 3
-        url: /skills/life-science#xenology
-        localized:
-          - en:
-              name: Xenology
-              description: |-
-                Xenology is the study of animal life forms of an alien nature and can be used to identify or classify such life forms, including alien plant life. It allows a character to make educated guesses as to the nature, behavior, and abilities of alien life forms.
-                ⊗ **Increased Effect:** A character receives a **-1 bonus** at rank 3,
-                **-2** at rank 6, **-3** at rank 9, and **-4** at rank 12 on certain other skill checks that can be assisted by this specialty. These skills include Survival (in alien environments), Animal Handling (with alien creatures), and Medical Science—xenomedicine.
-          - es:
-              name: Xenología
-              description: |-
-                La xenología es el estudio de formas de vida animal de naturaleza exótica y puede utilizarse para identificar o clasificar dichas formas de vida, incluida la vida vegetal exótica. Permite al personaje hacer conjeturas fundamentadas sobre la naturaleza, el comportamiento y las habilidades de las formas de vida extraterrestres.
-                ⊗ **Efecto aumentado:** Un personaje recibe una **bonificación -1** en el rango 3,
-                **-2** en el rango 6, **-3** en el rango 9 y **-4** en el rango 12 en otras pruebas de habilidades que pueden ser asistidas por esta especialidad. Estas habilidades incluyen Supervivencia (en entornos alienígenas), Manejo de animales (con criaturas alienígenas) y Ciencias Médicas: xenomedicina.
-        trained_only: true
         rank_benefits:
           - rank: 3
             title: Increased Effect
@@ -3636,19 +3576,6 @@ items:
                 ⊗ **Efecto incrementado:** Un personaje recibe una **bonificación de
                 -1 paso** en el rango 3, **-2** en el rango 6, **-3** en el rango 9 y **-4** en el rango 12 en ciertas otras tiradas de habilidad que puedan ser asistidas por esta especialidad (por ejemplo, Investigar, Ley).
         trained_only: false
-      xenomedicine-specific:
-        attribute: WIL
-        cost: 3
-        url: /skills/medical-science#xenomedicine-specific
-        localized:
-          - en:
-              name: Xenomedicine
-              description: ''
-          - es:
-              name: Xenomedicine
-              description: ''
-        trained_only: true
-    trained_only: false
   melee-combat:
     attribute: STR
     cost: 6
@@ -4882,88 +4809,6 @@ items:
           - rank: 12
             title: Increased Effect
     trained_only: false
-  teach:
-    attribute: WIL
-    cost: 3
-    category: Social
-    url: /skills/teach
-    localized:
-      - en:
-          name: Teach
-          description: |-
-            This broad skill represents a character''s ability to instruct others in the use of a skill belonging to the Open group. A skill check is required whenever a character wants to teach a skill to another character.
-            ### Guidance and Costs
-            Getting instruction from a teacher can decrease the cost for another character when that character wants to buy or improve a skill.
-            - **Teacher Limitation:** A teacher **cannot teach himself** or herself.
-            - **Cost Floor:** The cost to buy or improve a skill can **never be decreased to less than 1** skill point.
-            - **Student Resource:** The character to be taught must have enough skill points (XP) to purchase the skill at its (possibly reduced) cost.
-            ### The Teaching Check
-            The benefit of a teacher depends on the result of the teacher''s skill check:
-            - **Critical Failure:** The student doesn''t learn or improve the skill at this time.
-            - **Failure:** The student must pay the **full skill cost**.
-            - **Ordinary:** The student pays **cost -1**.
-            - **Good:** The student pays **cost -2**.
-            - **Amazing:** The student pays **cost -3**.
-            ### Mentorship Limits
-            - **One at a Time:** A teacher can''t teach more than one student at a time.
-            - **One per Session:** Only one new skill or one rank of improvement can be gained by a student during any teaching session (usually occurring between adventures).
-            - **Mastery Limit:** A teacher can only teach a specialty skill up to **one-half of his or her current rank** in that skill. For example, a teacher with Animal Handling—animal training at rank 4 can only teach someone else that skill up to rank 2.
-      - es:
-          name: Enseñanza
-          description: |-
-            Esta habilidad amplia representa la capacidad de un personaje para instruir a otros en el uso de una habilidad perteneciente al grupo Abierto. Se requiere una prueba de habilidad cada vez que un personaje quiere enseñar una habilidad a otro personaje.
-            ### Orientación y costos
-            Recibir instrucciones de un maestro puede disminuir el costo para otro personaje cuando ese personaje quiere comprar o mejorar una habilidad.
-            - **Limitación del maestro:** Un maestro **no puede enseñarse a sí mismo**.
-            - **Costo mínimo:** El costo para comprar o mejorar una habilidad **nunca se puede reducir a menos de 1** punto de habilidad.
-            - **Recurso para estudiantes:** El personaje al que se le enseñará debe tener suficientes puntos de habilidad (XP) para comprar la habilidad a su costo (posiblemente reducido).
-            ### El control de la enseñanza
-            El beneficio de un profesor depende del resultado de la prueba de habilidades del profesor:
-            - **Fallo Crítico:** El estudiante no aprende ni mejora la habilidad en este momento.
-            - **Reprobado:** El estudiante deberá pagar el **coste total de la habilidad**.
-            - **Ordinario:** El estudiante paga **coste -1**.
-            - **Bien:** El estudiante paga **coste -2**.
-            - **Increíble:** El estudiante paga **coste -3**.
-            ### Límites de tutoría
-            - **Uno a la vez:** Un profesor no puede enseñar a más de un estudiante a la vez.
-            - **Uno por sesión:** Un estudiante solo puede obtener una nueva habilidad o un rango de mejora durante cualquier sesión de enseñanza (que generalmente ocurre entre aventuras).
-            - **Límite de dominio:** Un maestro solo puede enseñar una habilidad especializada hasta **la mitad de su rango actual** en esa habilidad. Por ejemplo, un profesor con Manejo de animales (entrenamiento de animales) en el rango 4 solo puede enseñarle a otra persona esa habilidad hasta el rango 2.
-    items:
-      teach-specific-field:
-        attribute: WIL
-        cost: 3
-        url: /skills/teach#teach-specific-field
-        localized:
-          - en:
-              name: Teach, Specific Field
-              description: |-
-                This specialty skill allows a character to expand their teaching ability to specialized profession groups. For each separate purchase of this specialty skill, the character selects a profession group: **Combat Spec**, **Diplomat**, **Free Agent**, or **Tech Op**. The character then becomes able to teach all skills associated with that profession group in addition to those belonging to the Open group. (e.g., a teacher specialized in Combat Spec can help another character learn or improve a Combat Spec skill).
-                ⊗ **Mindwalker Training:** If the optional rules for Psionics are being used, a teacher who also has psionic abilities can teach psionic skills to another character who also has psionic abilities.
-                ---
-                ### Teach Situation Modifiers
-                | Task / Situation | Modifier | | :--- | :--- | | **Teaching a broad skill** | +2 steps | | **Teaching a specialty skill (to Rank 1-3)** | 0 | | **Teaching to Rank 4** | +1 step | | **Teaching to Rank 5** | +2 steps | | **Teaching to Rank 6** | +3 steps | | **Student is learning a Professional skill** | -1 step | | **Student is learning an Out-of-Profession skill** | +2 steps |
-          - es:
-              name: Campo Específico
-              description: |-
-                Esta habilidad especializada permite a un personaje ampliar su capacidad de enseñanza a grupos profesionales especializados. Por cada compra por separado de esta habilidad especializada, el personaje selecciona un grupo de profesión: **Especialidad de combate**, **Diplomático**, **Agente libre** o **Operación técnica**. Luego, el personaje podrá enseñar todas las habilidades asociadas con ese grupo de profesión además de las que pertenecen al grupo Abierto. (por ejemplo, un profesor especializado en Combate Spec puede ayudar a otro personaje a aprender o mejorar una habilidad de Combate Spec).
-                ⊗ **Entrenamiento de Mindwalker:** Si se utilizan las reglas opcionales para Psionics, un maestro que también tiene habilidades psiónicas puede enseñar habilidades psiónicas a otro personaje que también tiene habilidades psiónicas.
-                ---
-                ### Enseñar modificadores de situaciones
-                | Tarea/Situación | Modificador | | :--- | :--- | | **Enseñar una habilidad amplia** | +2 pasos | | **Enseñar una habilidad especializada (hasta el rango 1-3)** | 0 | | **Enseñando al rango 4** | +1 paso | | **Enseñanza hasta el rango 5** | +2 pasos | | **Enseñando al rango 6** | +3 pasos | | **El estudiante está aprendiendo una habilidad profesional** | -1 paso | | **El estudiante está aprendiendo una habilidad fuera de la profesión** | +2 pasos |
-        trained_only: false
-      specific-field:
-        attribute: WIL
-        cost: 2
-        url: /skills/teach#specific-field
-        localized:
-          - en:
-              name: Specific field
-              description: ''
-          - es:
-              name: Specific field
-              description: ''
-        trained_only: false
-    trained_only: false
   technical-science:
     attribute: WIL
     cost: 7
@@ -5085,6 +4930,16 @@ items:
           - es:
               name: Juryrig
               description: |-
+                Esta habilidad permite a un Personaje realizar reparaciones rápidas y parciales para que un dispositivo o sistema electrónico o mecánico esté en funcionamiento durante un corto período de tiempo. Una reparación por jurado, incluso cuando tiene éxito, agrega dificultad a las reparaciones completas que deben realizarse más adelante, pero puede hacer que un Personaje supere una situación difícil. Una reparación juryrig se puede realizar exitosamente **una vez** en un sistema o elemento específico. Si se estropea después de haber sido arreglado, el sistema o elemento no volverá a funcionar hasta que esté completamente reparado (usando Ciencia técnica—reparación). Hacer una prueba de habilidad de jurado es una acción única, pero un Personaje que intenta usar esta habilidad debe hacerlo en su primera acción disponible en una ronda, y no puede intentar ninguna acción de Otros durante el resto de la ronda.
+                ### Resultados del jurado
+                La cantidad de dificultad agregada a las reparaciones completas depende del resultado de la verificación del jurado:
+                - **Fallo Crítico:** El sistema o elemento queda inutilizable y no puede volver a funcionar sin una reparación completa.
+                - **Fallo:** El intento de jurado no funciona pero se puede intentar nuevamente.
+                - **Éxito Ordinario:** El sistema o elemento entra en funcionamiento durante **d6+1 unidades de tiempo**, y se necesitan **3 éxitos más** para reparaciones completas (además de los ya necesarios).
+                - **Éxito Bueno:** El sistema o elemento vuelve a estar operativo durante **2d4+2 unidades de tiempo**, y se necesitan **2 éxitos más** para realizar reparaciones completas.
+                - **Éxito Asombroso:** El sistema o elemento vuelve a estar operativo durante **3d4+2 unidades de tiempo**, y se necesita **1 éxito más** para realizar reparaciones completas.
+                ### Beneficios de rango
+                ▶ **Rango 6 (Juryrig mejorado):** Cuando un Personaje alcanza el **Rango 6**, su habilidad mejora de la siguiente manera: un éxito de Ordinario produce un resultado de Bueno, un éxito de Bueno produce un resultado de Asombroso y un éxito de Asombroso significa que el jurado funciona tan bien que el sistema o elemento se considera reparado y en buenas condiciones de funcionamiento.
         trained_only: false
     trained_only: false
   vehicle-operation:

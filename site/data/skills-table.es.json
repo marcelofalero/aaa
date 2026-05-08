@@ -976,31 +976,6 @@
                             "css_class": ""
                         }
                     ]
-                },
-                {
-                    "skill": "Enseñanza",
-                    "attribute": "VOL",
-                    "url": "/es/skills/teach",
-                    "cost": 3,
-                    "type": "Broad",
-                    "items": [
-                        {
-                            "skill": "Campo Específico",
-                            "attribute": "VOL",
-                            "url": "/es/skills/teach#campo-especifico",
-                            "cost": 3,
-                            "type": "Specialty",
-                            "css_class": ""
-                        },
-                        {
-                            "skill": "Specific field",
-                            "attribute": "VOL",
-                            "url": "/es/skills/teach#specific-field",
-                            "cost": 2,
-                            "type": "Specialty",
-                            "css_class": ""
-                        }
-                    ]
                 }
             ]
         },
@@ -1164,14 +1139,6 @@
                     "type": "Broad",
                     "items": [
                         {
-                            "skill": "Biología, Botánica, Zoología",
-                            "attribute": "VOL",
-                            "url": "/es/skills/life-science#biologia-botanica-zoologia",
-                            "cost": 3,
-                            "type": "Specialty",
-                            "css_class": ""
-                        },
-                        {
                             "skill": "Psiónica",
                             "attribute": "VOL",
                             "url": "/es/skills/life-science#psionica",
@@ -1202,14 +1169,6 @@
                             "cost": 3,
                             "type": "Specialty",
                             "css_class": ""
-                        },
-                        {
-                            "skill": "Xenología",
-                            "attribute": "VOL",
-                            "url": "/es/skills/life-science#xenologia",
-                            "cost": 3,
-                            "type": "Specialty",
-                            "css_class": "trained-only"
                         },
                         {
                             "skill": "Zoología",
@@ -1283,14 +1242,6 @@
                             "cost": 3,
                             "type": "Specialty",
                             "css_class": ""
-                        },
-                        {
-                            "skill": "Xenomedicine",
-                            "attribute": "VOL",
-                            "url": "/es/skills/medical-science#xenomedicine",
-                            "cost": 3,
-                            "type": "Specialty",
-                            "css_class": "trained-only"
                         }
                     ]
                 },
@@ -1408,14 +1359,6 @@
                             "css_class": ""
                         },
                         {
-                            "skill": "Jury-rig",
-                            "attribute": "VOL",
-                            "url": "/es/skills/technical-science#jury-rig",
-                            "cost": 3,
-                            "type": "Specialty",
-                            "css_class": ""
-                        },
-                        {
                             "skill": "Repair",
                             "attribute": "VOL",
                             "url": "/es/skills/technical-science#repair",
@@ -1424,9 +1367,9 @@
                             "css_class": ""
                         },
                         {
-                            "skill": "Invención",
+                            "skill": "Juryrig",
                             "attribute": "INT",
-                            "url": "/es/skills/technical-science#invencion",
+                            "url": "/es/skills/technical-science#juryrig",
                             "cost": 3,
                             "type": "Specialty",
                             "css_class": ""

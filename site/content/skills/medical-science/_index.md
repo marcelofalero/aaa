@@ -148,10 +148,3 @@ Forensic science is the application of medical and scientific knowledge to legal
 
 ---
 
-## Xenomedicine
-{{< specialty attr="WIL" untrained="no" cost="3" >}}
-
-
-
----
-

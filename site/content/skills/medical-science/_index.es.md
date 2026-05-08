@@ -152,10 +152,3 @@ La ciencia forense es la aplicación del conocimiento médico y científico a pr
 
 ---
 
-## Xenomedicine
-{{< specialty attr="WIL" untrained="no" cost="3" >}}
-
-
-
----
-

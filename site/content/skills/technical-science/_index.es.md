@@ -26,21 +26,6 @@ La invención permite a un personaje construir un componente o sistema electrón
 
 ---
 
-## Jury-rig
-{{< specialty attr="WIL" untrained="yes" cost="3" >}}
-
-Esta habilidad permite a un personaje realizar reparaciones rápidas y fragmentadas para que un dispositivo o sistema electrónico o mecánico esté en funcionamiento durante un corto período de tiempo. Una reparación con jurado, incluso cuando tiene éxito, añade dificultad a las reparaciones completas que deben realizarse más adelante, pero puede ayudar a un personaje a superar una situación difícil. Una reparación juryrig se puede realizar exitosamente **una vez** en un sistema o elemento específico. Si se estropea después de haber sido arreglado, el sistema o elemento no volverá a funcionar hasta que esté completamente reparado (usando Ciencia Técnica: reparación). Realizar una prueba de habilidad de jurado es una acción única, pero un personaje que intenta usar esta habilidad debe hacerlo en su primera acción disponible en una ronda, y no puede intentar ninguna otra acción durante el resto de la ronda.
-### Resultados del jurado
-La cantidad de dificultad agregada a las reparaciones completas depende del resultado de la verificación del jurado:
-- **Falla crítica:** El sistema o elemento queda inutilizable y no puede volver a funcionar sin una reparación completa.
-- **Fallo:** El intento de jurado no funciona pero se puede intentar nuevamente.
-- **Éxito normal:** El sistema o elemento entra en funcionamiento durante **d6+1 unidades de tiempo**, y se necesitan **3 éxitos más** para reparaciones completas (además de los ya necesarios).
-- **Buen éxito:** El sistema o elemento vuelve a estar operativo durante **2d4+2 unidades de tiempo**, y se necesitan **2 éxitos más** para realizar reparaciones completas.
-- **Éxito asombroso:** El sistema o elemento vuelve a estar operativo durante **3d4+2 unidades de tiempo**, y se necesita **1 éxito más** para realizar reparaciones completas.
-⊗ **Juryrig mejorado:** Cuando un personaje alcanza el **rango 6**, su habilidad mejora de la siguiente manera: un éxito ordinario produce un buen resultado, un buen éxito produce un resultado asombroso y un éxito sorprendente significa que el juryrig funciona tan bien que el sistema o elemento se considera reparado y en condiciones normales de funcionamiento.
-
----
-
 ## Repair
 {{< specialty attr="WIL" untrained="yes" cost="3" >}}
 
@@ -52,12 +37,19 @@ Esta habilidad proporciona al personaje capacitación en la reparación y manten
 
 ---
 
-## Invención
+## Juryrig
 {{< specialty attr="INT" untrained="yes" cost="3" >}}
 
-La invención permite a un personaje construir un componente o sistema electrónico o mecánico desde cero, o modificar un dispositivo existente para que realice una nueva función. El uso de esta habilidad requiere tiempo; las comprobaciones de Invención son siempre comprobaciones de habilidad complejas. Modificar un objeto existente puede hacerse en asaltos, pero todos los demás aspectos de la invención requieren horas, días, semanas o meses, según la determinación del Director del Juego.
-⊗ **Efecto Incrementado:** A medida que aumenta el rango de habilidad de especialidad de un personaje, este recibe un bono a cualquier comprobación de habilidad que involucre Ciencia Técnica o las otras tres habilidades de especialidad: **bono de -1 paso al rango 3**, **-2 al rango 6**,
-**-3 al rango 9** y **-4 al rango 12**.
+This skill enables a Personaje to make fast, patchwork repairs in order to get an electronic or mechanical device or system up and running for a short period of time. A juryrig repair, even when successful, adds difficulty to the full repairs that must be made later, but it can get a Personaje through a sticky situation. A juryrig repair can be made successfully **once** on a specific system or item. If it breaks down after being juryrigged, the system or item won't work again until it's completely fixed (using Ciencia técnica—repair). Making a juryrig skill check is a single action, but a Personaje who tries to use this skill must do so on his first available action in a round, and he can't attempt any Otros actions for the rest of the round.
+### Juryrig Results
+The amount of difficulty added to the full repairs depends on the result of the juryrig check:
+- **Fallo Crítico:** The system or item becomes unusable and can't be made functional again without full repairs.
+- **Failure:** The juryrig attempt doesn't work but can be tried again.
+- **Ordinario success:** The system or item becomes operational for **d6+1 time units**, and **3 more successes** are needed for full repairs (in addition to those already required).
+- **Bueno success:** The system or item becomes operational for **2d4+2 time units**, and **2 more successes** are needed for full repairs.
+- **Asombroso success:** The system or item becomes operational for **3d4+2 time units**, and **1 more success** is needed to make full repairs.
+### Rank Benefits
+▶ **Rank 6 [Improved Juryrig]:** When a Personaje reaches **Rank 6**, his ability improves as follows: an Ordinario success produces a Bueno result, a Bueno success produces an Asombroso result, and an Asombroso success means the juryrig works so well that the system or item is considered repaired and in regular working order.
 
 ---
 

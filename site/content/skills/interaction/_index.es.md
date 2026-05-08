@@ -12,12 +12,12 @@ Si bien todos los que crecen rodeados de otras personas tienen cierta habilidad 
 
 ### Especialidades
 La interacción incluye áreas específicas como:
-- [Regatear](#bargain)
-- [Encantar](#charm)
-- [Entrevistar](#interview)
-- [Intimidar](#intimidate)
-- [Seducir](#seduce)
-- [Provocar](#taunt)
+- [Regatear](#regatear)
+- [Encantar](#encantar)
+- [Entrevistar](#entrevistar)
+- [Intimidar](#intimidar)
+- [Seducir](#seducir)
+- [Provocar](#provocar)
 
 ### Modificadores de situación de interacción
 

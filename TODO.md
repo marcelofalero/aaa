@@ -2,7 +2,7 @@
 
 ## Character Sheet
 - [x] Review character sheet to ensure links work.
-- [ ] Review character sheet skills are updated.
+- [x] Review character sheet skills are updated (Trained/Untrained logic).
 - [ ] Add multi-attack option to weapons.
 
 ## Site & Infrastructure
