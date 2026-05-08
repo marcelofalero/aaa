@@ -103,10 +103,6 @@
   "treatment": "/skills/medical-science#treatment",
   "xenomedicine": "/skills/medical-science#xenomedicine",
   "forensic-science": "/skills/medical-science#forensic-science",
-<<<<<<< HEAD
-=======
-  "xenomedicine-specific": "/skills/medical-science#xenomedicine-specific",
->>>>>>> origin/main
   "melee-combat": "/skills/melee-combat",
   "blade": "/skills/melee-combat#blade",
   "blunt": "/skills/melee-combat#blunt",
