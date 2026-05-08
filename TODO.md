@@ -1,7 +1,7 @@
 # Project TODO List
 
 ## Character Sheet
-- [ ] Review character sheet to ensure links work.
+- [x] Review character sheet to ensure links work.
 - [ ] Review character sheet skills are updated.
 - [ ] Add multi-attack option to weapons.
 
