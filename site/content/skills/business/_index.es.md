@@ -40,8 +40,17 @@ Este Especialidad mejora la capacidad de un Personaje para funcionar en el ámbi
 
 Este Especialidad permite que un Personaje funcione en la parte inferior del mundo Negocios, proporcionando conocimientos sobre extorsión, contrabando, vallado de bienes robados y el mercado negro. Es la habilidad principal de los delincuentes de cuello blanco (malversadores, comerciantes de información privilegiada, espías corporativos).
 
+<<<<<<< HEAD
+### Transacciones ilegales
+Esta habilidad reduce la pena por intentar transacciones ilegales.
+
+⊗ **Rango 1, 4, 7, 10 [Arte del trato]** Penalización reducida en -1 paso en el rango uno más un paso adicional en los rangos 4, 7 y 10.
+
+*Nota: Este beneficio sólo reduce o elimina sanciones; nunca proporciona una bonificación.
+=======
 ### Beneficios de Rango
 ⊗ **Rango 1, 4, 7, 10 [Arte del trato]** Obtiene una cantidad de pasos de bonificación de situación basados en el Rangos en este Especialidad (-1 paso en Rango 1, -2 pasos en Rango 4, -3 pasos en Rango 7 y -4 pasos en Rango 10) al hacer tratos, regatear o negociar dentro del alcance. de Negocios ilícito.
+>>>>>>> origin/main
 
 ---
 
@@ -50,8 +59,15 @@ Este Especialidad permite que un Personaje funcione en la parte inferior del mun
 
 Este Especialidad permite que un Personaje funcione en el comercio y el comercio a pequeña escala. Mejora la capacidad de regatear a nivel del consumidor, determinar el valor de bienes y servicios y encontrar compradores y vendedores en un área local.
 
+<<<<<<< HEAD
+### Negociación financiera
+Esta habilidad proporciona una bonificación de situación al hacer tratos, regatear o negociar en las finanzas de pequeñas empresas.
+
+⊗ **Rango 1, 4, 7, 10 [Arte del trato]** Penalización reducida en -1 paso en el rango uno más un paso adicional en los rangos 4, 7 y 10.
+=======
 ### Beneficios de Rango
 ⊗ **Rango 1, 4, 7, 10 [Arte del trato]** Obtiene una cantidad de pasos de bonificación de situación basados en el Rangos en este Especialidad (-1 paso en Rango 1, -2 pasos en Rango 4, -3 pasos en Rango 7 y -4 pasos en Rango 10) al hacer tratos, regatear o negociar dentro del alcance. de las pequeñas finanzas Negocios.
+>>>>>>> origin/main
 
 ---
 

@@ -27,7 +27,11 @@ Los animales no entrenados (salvajes o domésticos) solo pueden realizar tareas 
 - **Asombroso:** Tareas que muy pocos animales pueden o harán cuando se les ordena (por ejemplo, rescatar a alguien de un edificio en llamas).
 
 ### Modificadores de situaciones de manejo de animales
+<<<<<<< HEAD
+<div class="table-wrapper"> <table> <thead> <tr> <th>Tipo</th> <th>Modificador</th> <th>Complejidad</th> </tr> </thead> <tbody> <tr class="table-category"> <td colspan="3"><strong>Herbivoros</strong></td> </tr> <tr> <td>Alien</td> <td>+2</td> <td>Increíble</td> </tr> <tr> <td>Nacional</td> <td>-1</td> <td>Bueno</td> </tr> <tr> <td>Salvaje</td> <td>+1</td> <td>Increíble</td> </tr> <tr class="table-category"> <td colspan="3"><strong>Carnívoros</strong></td> </tr> <tr> <td>Extraterrestre</td> <td>+5</td> <td>Sorprendente</td> </tr> <tr> <td>Nacional</td> <td>-2</td> <td>Ordinario</td> </tr> <tr> <td>Salvaje</td> <td>+4</td> <td>Bueno</td> </tr> </tbody> </table> </div>
+=======
 <div class="table-wrapper"> <table> <thead> <tr> <th>Tipo</th> <th>Modificador</th> <th>Complejidad</th> </tr> </thead> <tbody> <tr class="table-category"> <td colspan="3"><strong>Herbivoros</strong></td> </tr> <tr> <td>Alien</td> <td>+2</td> <td>Asombroso</td> </tr> <tr> <td>Nacional</td> <td>-1</td> <td>Bueno</td> </tr> <tr> <td>Salvaje</td> <td>+1</td> <td>Asombroso</td> </tr> <tr class="table-category"> <td colspan="3"><strong>Carnívoros</strong></td> </tr> <tr> <td>Extranjero</td> <td>+5</td> <td>Asombroso</td> </tr> <tr> <td>Nacional</td> <td>-2</td> <td>Ordinario</td> </tr> <tr> <td>Salvaje</td> <td>+4</td> <td>Bueno</td> </tr> </tbody> </table> </div>
+>>>>>>> origin/main
 
 ### Modificadores Otros
 - **Animal desconocido:** +1 de penalización (acumulable con otros).
@@ -37,20 +41,34 @@ Los animales no entrenados (salvajes o domésticos) solo pueden realizar tareas 
     - Tarea Asombroso: +4
 
 ### Montar animales
+<<<<<<< HEAD
+La habilidad amplia permite a un personaje montar cualquier animal utilizado para el transporte terrestre básico (caballos, mulas, etc.).
+- **Movimiento:** Cuando es montada, la criatura se mueve en cada fase.
+- **Maniobras:** Durante la acción de un personaje, puede intentar maniobras (de rutina, moderadas o extremas) como se describe en [Maniobras de vehículos](/core-mechanics/vehicles-and-vessels/#maneuvers).
+=======
 Esta amplia habilidad permite a un Personaje montar cualquier animal utilizado para el transporte terrestre básico (caballos, mulas, etc.).
 - **Movimiento:** Cuando es montada, la criatura se mueve en cada fase.
 - **Maniobras:** Durante la acción de un Personaje, puede intentar maniobras (de rutina, moderadas o extremas) como se describe en [Maniobras del vehículo](/core-mechanics/vehicles-and-vessels/#maneuvers).
+>>>>>>> origin/main
 
 ## Montar Animales
 {{< specialty attr="WIL" untrained="yes" cost="1" >}}
 
 Este Especialidad permite que un Personaje mejore este aspecto de la habilidad amplia de Manejo de animales. Un Personaje con esta habilidad puede intentar correr sobre terreno peligroso, hacer saltos o realizar acrobacias Otros y participar en Combate montado.
 
+<<<<<<< HEAD
+▶ En el rango 3, el personaje aprende a realizar acrobacias o trucos especiales mientras está montado. Ver trucos.
+
+### Truco de montar
+El personaje puede dirigir su montura para saltar vallas, saltar abismos o retroceder.
+- **Fallo crítico:** El animal tropieza (el daño es una caída extremadamente corta para ambos).
+=======
 ▶ **Rango 3[Trick Riding]:** El Personaje aprende a realizar acrobacias o trucos especiales mientras está montado. Ver trucos.
 
 ### Truco de montar
 El Personaje puede dirigir su montura para saltar vallas, saltar abismos o retroceder.
 - **Fallo Crítico:** Los viajes del animal (daño como Caída Extremadamente Corto para ambos).
+>>>>>>> origin/main
 - **Fallo:** El animal se niega a actuar.
 
 #### Saltos horizontales
@@ -72,9 +90,15 @@ El Personaje puede dirigir su montura para saltar vallas, saltar abismos o retro
 El Personaje puede utilizar su soporte como cobertura. Esto proporciona una penalización a la posibilidad de que un oponente golpee al ciclista:
 - **Ordinario:** +1 paso.
 - **Bueno:** +2 pasos.
+<<<<<<< HEAD
+- **Increíble:** +3 pasos.
+
+*Nota: Esto no protege el soporte. Los trucos no se pueden combinar con otras acciones (por ejemplo, atacar mientras se salta).*
+=======
 - **Asombroso:** +3 pasos.
 
 *Nota: Esto no protege el soporte. Los trucos no se pueden combinar con acciones Otros (por ejemplo, atacar mientras se salta).*
+>>>>>>> origin/main
 
 ---
 

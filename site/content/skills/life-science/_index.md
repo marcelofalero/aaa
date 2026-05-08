@@ -12,18 +12,6 @@ Some of the specialties under this broad skill can be used as complementary skil
 
 > For example, a character has the Medical Science-Surgery and Life Science-Genetics skills. If the character is treating a genetic-related condition, the character can receive a bonus depending on his Life Science-Genetics skill level.
 
-## Biology, Botany, Zoology
-{{< specialty attr="WIL" untrained="yes" cost="3" >}}
-
-These specialty skills must be purchased separately.
-- **Biology:** The study of organisms and biochemical processes.
-- **Botany:** The study of plants and identification.
-- **Zoology:** The study of animals and animal life.
-⊗ **Increased Effect:** A character receives a **-1 bonus** at rank 3,
-**-2** at rank 6, **-3** at rank 9, and **-4** at rank 12 on certain other skill checks that can be assisted by this specialty. These skills include Survival, Animal Handling, and Medical Science—treatment.
-
----
-
 ## Psionics
 {{< specialty attr="INT" untrained="no" cost="3" >}}
 
@@ -68,6 +56,8 @@ Genetics is the study of heredity and genes, forming the basis of genetic engine
 
 ---
 
+<<<<<<< HEAD
+=======
 ## Xenology
 {{< specialty attr="INT" untrained="no" cost="3" >}}
 
@@ -78,6 +68,7 @@ Xenology is the study of animal life forms of an alien nature and can be used to
 
 ---
 
+>>>>>>> origin/main
 ## Zoology
 {{< specialty attr="INT" untrained="yes" cost="3" >}}
 

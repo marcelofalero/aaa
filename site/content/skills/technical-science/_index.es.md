@@ -26,6 +26,8 @@ La invención permite a un Personaje construir un componente o sistema electrón
 
 ---
 
+<<<<<<< HEAD
+=======
 ## Jury-rig
 {{< specialty attr="WIL" untrained="yes" cost="3" >}}
 
@@ -41,6 +43,7 @@ La cantidad de dificultad agregada a las reparaciones completas depende del resu
 
 ---
 
+>>>>>>> origin/main
 ## Repair
 {{< specialty attr="WIL" untrained="yes" cost="3" >}}
 
@@ -52,9 +55,21 @@ Esta habilidad proporciona al Personaje capacitación en la reparación y manten
 
 ---
 
-## Invención
+## Juryrig
 {{< specialty attr="INT" untrained="yes" cost="3" >}}
 
+<<<<<<< HEAD
+This skill enables a Personaje to make fast, patchwork repairs in order to get an electronic or mechanical device or system up and running for a short period of time. A juryrig repair, even when successful, adds difficulty to the full repairs that must be made later, but it can get a Personaje through a sticky situation. A juryrig repair can be made successfully **once** on a specific system or item. If it breaks down after being juryrigged, the system or item won't work again until it's completely fixed (using Ciencia técnica—repair). Making a juryrig skill check is a single action, but a Personaje who tries to use this skill must do so on his first available action in a round, and he can't attempt any Otros actions for the rest of the round.
+### Juryrig Results
+The amount of difficulty added to the full repairs depends on the result of the juryrig check:
+- **Fallo Crítico:** The system or item becomes unusable and can't be made functional again without full repairs.
+- **Failure:** The juryrig attempt doesn't work but can be tried again.
+- **Ordinario success:** The system or item becomes operational for **d6+1 time units**, and **3 more successes** are needed for full repairs (in addition to those already required).
+- **Bueno success:** The system or item becomes operational for **2d4+2 time units**, and **2 more successes** are needed for full repairs.
+- **Asombroso success:** The system or item becomes operational for **3d4+2 time units**, and **1 more success** is needed to make full repairs.
+### Rank Benefits
+▶ **Rank 6 [Improved Juryrig]:** When a Personaje reaches **Rank 6**, his ability improves as follows: an Ordinario success produces a Bueno result, a Bueno success produces an Asombroso result, and an Asombroso success means the juryrig works so well that the system or item is considered repaired and in regular working order.
+=======
 Esta habilidad permite a un Personaje realizar reparaciones rápidas y parciales para que un dispositivo o sistema electrónico o mecánico esté en funcionamiento durante un corto período de tiempo. Una reparación por jurado, incluso cuando tiene éxito, agrega dificultad a las reparaciones completas que deben realizarse más adelante, pero puede hacer que un Personaje supere una situación difícil. Una reparación juryrig se puede realizar exitosamente **una vez** en un sistema o elemento específico. Si se estropea después de haber sido arreglado, el sistema o elemento no volverá a funcionar hasta que esté completamente reparado (usando Ciencia técnica—reparación). Hacer una prueba de habilidad de jurado es una acción única, pero un Personaje que intenta usar esta habilidad debe hacerlo en su primera acción disponible en una ronda, y no puede intentar ninguna acción de Otros durante el resto de la ronda.
 ### Resultados del jurado
 La cantidad de dificultad agregada a las reparaciones completas depende del resultado de la verificación del jurado:
@@ -65,6 +80,7 @@ La cantidad de dificultad agregada a las reparaciones completas depende del resu
 - **Éxito Asombroso:** El sistema o elemento vuelve a estar operativo durante **3d4+2 unidades de tiempo** y se necesita **1 éxito más** para realizar reparaciones completas.
 ### Beneficios de Rango
 ▶ **Rango 6 (Juryrig mejorado):** Cuando un Personaje alcanza **Rango 6**, su habilidad mejora de la siguiente manera: un éxito Ordinario produce un resultado Bueno, un éxito Bueno produce un resultado Asombroso y un éxito Asombroso significa que el jurado funciona tan bien que el sistema o elemento se considera reparado y en condiciones normales de funcionamiento.
+>>>>>>> origin/main
 
 ---
 

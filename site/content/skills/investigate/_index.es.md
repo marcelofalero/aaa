@@ -6,16 +6,27 @@ type = "skill"
 layout = "list"
 +++
 
+<<<<<<< HEAD
+Esta amplia habilidad proporciona al personaje la formación y la capacidad de examinar las cosas sistemáticamente a través de la observación y la investigación. A diferencia de las habilidades de Conciencia, Investigar lleva tiempo. Puede usarse cuando un personaje intenta aplicar la lógica y la razón para llegar a una conclusión o deducir la solución a un problema.
+=======
 Esta amplia habilidad proporciona a Personaje la capacitación y la capacidad de examinar las cosas sistemáticamente a través de la observación y la investigación. A diferencia de las habilidades Alerta, Investigar lleva tiempo. Se puede utilizar cuando un Personaje intenta aplicar la lógica y la razón para llegar a una conclusión o deducir la solución a un problema.
+>>>>>>> origin/main
 
 ### Investigar modificadores de situación
 
 | Tarea | Modificador |
 | :--- | :--- |
+<<<<<<< HEAD
+| Investigación rápida (1 unidad de tiempo) | +3 pasos de penalización |
+| Investigación moderada (2-3 unidades) | +1 paso de penalización |
+| Investigación cuidadosa (4+ unidades) | -Bono de 2 pasos |
+| Nuevo sitio de investigación | -Bono de 2 pasos |
+=======
 | Rápido Investigar (1 unidad de tiempo) | +3 Penalización de paso |
 | Moderado Investigar (2-3 unidades) | +1 Penalización de paso |
 | Cuidadoso Investigar (4+ unidades) | -2 Bonificación de paso |
 | Nuevo sitio Investigar | -2 Bonificación de paso |
+>>>>>>> origin/main
 | Sitio antiguo o "frío" | Penalización de +2 a +4 pasos |
 | Habilidad relacionada (por ejemplo, Medicina, Ciencias) | Bonificación de -1 a -3 pasos |
 | Pista pequeña u oculta | +3 pasos de penalización |

@@ -12,6 +12,8 @@ Algunas de las especialidades de esta amplia habilidad se pueden utilizar como h
 
 > Por ejemplo, un Personaje tiene las habilidades Ciencias médicas-Surgery y Ciencias de la vida-Genetics. Si el Personaje está tratando una condición relacionada con la genética, el Personaje puede recibir una bonificación dependiendo de su nivel de habilidad en Ciencias de la vida-Genetics.
 
+<<<<<<< HEAD
+=======
 ## Biología, Botánica, Zoología
 {{< specialty attr="WIL" untrained="yes" cost="3" >}}
 
@@ -24,13 +26,20 @@ Estas habilidades especiales deben adquirirse por separado.
 
 ---
 
+>>>>>>> origin/main
 ## Psiónica
 {{< specialty attr="INT" untrained="no" cost="3" >}}
 
+<<<<<<< HEAD
+Esta habilidad especializada representa el estudio científico de la naturaleza biológica y bioquímica de las habilidades psiónicas.
+⊗ **Efecto aumentado:** Un personaje recibe una **bonificación -1** en el rango 3,
+**-2** en el rango 6, **-3** en el rango 9 y **-4** en el rango 12 en otras pruebas de habilidades que pueden ser asistidas por esta especialidad. Estas habilidades incluyen Telepatía (drenaje), Biokinesis (bioluminiscente) y Biokinesis (arma biológica).
+=======
 Este Especialidad representa el estudio científico de la naturaleza biológica y bioquímica de las habilidades psiónicas.
 
 ### Beneficios de Rango
 ⊗ **Rango 3, 6, 9, 12 [Efecto aumentado]** Un Personaje recibe una bonificación **-1** en Rango 3, **-2** en Rango 6, **-3** en Rango 9 y **-4** en Rango 12 en ciertas pruebas de habilidad de Otros que pueden ser asistidas por esta especialidad. Estas habilidades incluyen Telepatía (drenaje), Biokinesis (bioluminiscente) y Biokinesis (arma biológica).
+>>>>>>> origin/main
 
 ---
 
@@ -62,6 +71,10 @@ Puede utilizarse para identificar, clasificar y comprender plantas. También se 
 {{< specialty attr="INT" untrained="yes" cost="3" >}}
 
 La genética es el estudio de la herencia y los genes, formando la base de la ingeniería genética y la clonación.
+<<<<<<< HEAD
+⊗ **Efecto aumentado:** Un personaje recibe una **bonificación -1** en el rango 3,
+**-2** en el rango 6, **-3** en el rango 9 y **-4** en el rango 12 en otras pruebas de habilidades que pueden ser asistidas por esta especialidad. Estas habilidades incluyen ciencia médica: tratamiento, ciencia forense y ciertas comprobaciones de biokinesis o mutaciones.
+=======
 
 ### Beneficios de Rango
 ⊗ **Rango 3, 6, 9, 12 [Efecto aumentado]** Un Personaje recibe una bonificación **-1** en Rango 3, **-2** en Rango 6, **-3** en Rango 9 y **-4** en Rango 12 en ciertas pruebas de habilidad de Otros que pueden ser asistidas por esta especialidad. Estas habilidades incluyen Ciencias médicas: tratamiento, ciencia forense y ciertas comprobaciones de biokinesis o mutaciones.
@@ -75,6 +88,7 @@ La xenología es el estudio de formas de vida animal de naturaleza exótica y pu
 
 ### Beneficios de Rango
 ⊗ **Rango 3, 6, 9, 12 [Efecto aumentado]** Un Personaje recibe una bonificación **-1** en Rango 3, **-2** en Rango 6, **-3** en Rango 9 y **-4** en Rango 12 en ciertas pruebas de habilidad de Otros que pueden ser asistidas por esta especialidad. Estas habilidades incluyen Supervivencia (en entornos alienígenas), Manejo de animales (con criaturas alienígenas) y Ciencias médicas: xenomedicina.
+>>>>>>> origin/main
 
 ---
 

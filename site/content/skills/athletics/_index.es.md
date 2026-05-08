@@ -57,7 +57,11 @@ Competencia para moverse a través de ambientes líquidos. Sin esta habilidad, u
 ## Lanzar
 {{< specialty attr="STR" untrained="yes" cost="2" >}}
 
+<<<<<<< HEAD
+Competencia en lanzar objetos (cuchillos, granadas, piedras) a los objetivos. La precisión se rige por la [Tabla P20: Precisión por rango]({{< relref "/core-mechanics/useful-tables#table-p20-accuracy-by-range" >}}).
+=======
 Competencia en lanzar objetos (cuchillos, granadas, piedras) a los objetivos. La precisión se rige por la [Tabla P20: Precisión por rango]({{< relref "core-mechanics/useful-tables#table-p20-accuracy-by-range" >}}).
+>>>>>>> origin/main
 
 ### Control de trayectoria
 Un Personaje puede intentar maniobras avanzadas con una base **+2 Penalización de paso**:

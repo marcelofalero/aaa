@@ -52,24 +52,58 @@ def build_info_icon(cost, is_untrained="YES", rank_benefits=None):
     )
 
 def get_skill_urls():
-    """Loads skill URLs from the site's skills.json."""
+    """Loads skill URLs from the site's skills.json and psionics.json."""
     urls = {}
-    json_path = os.path.join(os.path.dirname(__file__), '..', 'site', 'data', 'skills.json')
-    if not os.path.exists(json_path):
-        print(f"Warning: {json_path} not found. Links will be disabled.")
-        return urls
-        
-    try:
-        with open(json_path, 'r', encoding='utf-8') as f:
-            data = json.load(f)
-            for group in data.get("groups", []):
-                for item in group.get("items", []):
-                    # Normalize name for matching
-                    name = item["skill"].replace('**', '').replace('&nbsp;', '').replace('—', '-').replace('[spec]', '').strip()
-                    urls[name] = item["skill_url"]
-    except Exception as e:
-        print(f"Error loading skill URLs: {e}")
-        
+    data_dir = os.path.join(os.path.dirname(__file__), '..', 'site', 'data')
+    
+    files_to_load = ['skills.json', 'psionics.json']
+    base_domain = "https://aaa.dimble.net"
+    
+    for filename in files_to_load:
+        json_path = os.path.join(data_dir, filename)
+        if not os.path.exists(json_path):
+            print(f"Warning: {json_path} not found.")
+            continue
+            
+        try:
+            with open(json_path, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+                
+                # Case 1: Flat dictionary (e.g., current skills.json)
+                if isinstance(data, dict) and "groups" not in data and "items" not in data:
+                    for name, url in data.items():
+                        # Normalize key: "Acrobatics" -> "acrobatics"
+                        # But wait, skills.json keys are already slugs. 
+                        # We should store both if possible or normalize lookups.
+                        full_url = url if url.startswith('http') else base_domain + url
+                        urls[name.lower()] = full_url
+                        # Also handle space-separated versions of slugs if they exist
+                        urls[name.replace('-', ' ').lower()] = full_url
+                
+                # Case 2: Nested groups (e.g., current psionics.json)
+                elif isinstance(data, dict) and "groups" in data:
+                    groups = data["groups"]
+                    if isinstance(groups, dict):
+                        for group_name, items in groups.items():
+                            for item in items:
+                                if isinstance(item, dict) and "name" in item:
+                                    item_name = item["name"]
+                                    item_url = item.get("skill_url", "")
+                                    if item_url:
+                                        full_url = item_url if item_url.startswith('http') else base_domain + item_url
+                                        urls[item_name.lower()] = full_url
+                    elif isinstance(groups, list):
+                        # Legacy list format
+                        for group in groups:
+                            for item in group.get("items", []):
+                                item_name = item.get("skill", item.get("name", ""))
+                                item_url = item.get("skill_url", "")
+                                if item_name and item_url:
+                                    full_url = item_url if item_url.startswith('http') else base_domain + item_url
+                                    urls[item_name.lower()] = full_url
+        except Exception as e:
+            print(f"Error loading {filename}: {e}")
+            
     return urls
 
 SKILL_URL_MAP = get_skill_urls()
@@ -182,19 +216,34 @@ def generate_skills_html(data_list, indent_level=3, is_psionics=False):
         id_name = clean_id(name)
         
         fallback_path = "psionics" if is_psionics else "skills"
-        default_url = f"https://aaa.dimble.net/{fallback_path}/{name.lower().replace(' ', '-')}"
-        url = SKILL_URL_MAP.get(name, default_url)
+        name_lower = name.lower()
+        url = SKILL_URL_MAP.get(name_lower)
         
+        if not url:
+            # Try with hyphens if it was a multi-word skill name
+            url = SKILL_URL_MAP.get(name_lower.replace(' ', '-'))
+            
+        if not url:
+            # Fallback to hardcoded logic if not found in map
+            url = f"https://aaa.dimble.net/{fallback_path}/{name_lower.replace(' ', '-')}"
+        
+        # Post-processing for psionics path change if needed
         if "https://aaa.dimble.net/psionics/" in url:
             url = url.replace("/psionics/", "/core-mechanics/psionics/")
 
         roll_scores = f"{{{{score= [[@{{{id_name}O}}]]/[[@{{{id_name}G}}]]/[[@{{{id_name}A}}]]}}}}"
         wiki_link = f"{{{{wiki= [↗ Wiki Documentation]({url})}}}}"
 
+        # Dual buttons for trained/untrained
+        roll_trained = f"&{{template:default}} {{{{name= @{{character_name}} - {name}}}}} {roll_scores} {{{{results= [[{get_alternity_roll_query(default_step=0)}]]}}}} {wiki_link}"
+        roll_untrained = f"&{{template:default}} {{{{name= @{{character_name}} - {name} (Untrained)}}}} {roll_scores} {{{{results= [[{get_alternity_roll_query(default_step=1)}]]}}}} {wiki_link}"
+
         if is_untrained == "NO":
             formula = f"(floor(@{{{attr_full}}}*@{{{id_name}}}))"
+            untrained_button = f'<button type="roll" name="roll_{id_name}_untrained" class="sheet-roll-untrained sheet-trained-only-msg" value="/w gm @{{character_name}} attempts to use {name} untrained, but it is a Trained Only skill."></button>'
         else:
             formula = f"(floor(@{{{attr_full}}}/(2-@{{{id_name}}})))"
+            untrained_button = f'<button type="roll" name="roll_{id_name}_untrained" class="sheet-roll-untrained" value="{roll_untrained}"></button>'
             
         cost = skill.get("c", 0)
         trained_only_class = " sheet-trained-only" if is_untrained == "NO" else ""
@@ -206,10 +255,13 @@ def generate_skills_html(data_list, indent_level=3, is_psionics=False):
         h += f'{indent}\t\t<div class="sheet-skill-ability-label">SCORE</div>\n'
         h += f'{indent}\t</div>\n'
         h += f'{indent}\t<div class="sheet-skill-row">\n'
-        h += f'{indent}\t\t<button type="roll" name="roll_{id_name}" value="&{{template:default}} {{{{name= @{{character_name}} - {name}}}}} {roll_scores} {broad_roll_results} {wiki_link}"></button>\n'
+        h += f'{indent}\t\t<div class="sheet-roll-container">\n'
+        h += f'{indent}\t\t\t<button type="roll" name="roll_{id_name}" class="sheet-roll-trained" value="{roll_trained}"></button>\n'
+        h += f'{indent}\t\t\t{untrained_button}\n'
+        h += f'{indent}\t\t</div>\n'
         h += f'{indent}\t\t<div class="sheet-skill-name{trained_only_class}">{name} <button type="roll" name="roll_{id_name}_link" class="sheet-skill-link" value="[{name} Wiki]({url})">&#x2197;</button>{info_icon}</div>\n'
         h += f'{indent}\t\t<div class="sheet-skill-ability-label">{attr_short}</div>\n'
-        h += f'{indent}\t\t<input type="checkbox" name="attr_{id_name}" value="1" />\n'
+        h += f'{indent}\t\t<input type="checkbox" name="attr_{id_name}" class="sheet-trained-check" value="1" />\n'
         h += f'{indent}\t\t<div class="sheet-skill-score-cell">\n'
         h += f'{indent}\t\t\t<input type="text" name="attr_{id_name}O" class="sheet-scoredisabled" disabled="true" value="{formula}">/\n'
         h += f'{indent}\t\t\t<input type="text" name="attr_{id_name}G" class="sheet-scoredisabled" disabled="true" value="(floor(@{{{id_name}O}}/2))">/\n'
@@ -225,7 +277,10 @@ def generate_skills_html(data_list, indent_level=3, is_psionics=False):
             spec_attr_full = ABILITY_MAP[spec_attr]
             spec_id = clean_id(spec_name)
             
-            spec_url = SKILL_URL_MAP.get(spec_name)
+            spec_url = SKILL_URL_MAP.get(spec_name.lower())
+            if not spec_url:
+                spec_url = SKILL_URL_MAP.get(spec_name.lower().replace(' ', '-'))
+                
             if spec_url:
                 if "https://aaa.dimble.net/psionics/" in spec_url:
                     spec_url = spec_url.replace("/psionics/", "/core-mechanics/psionics/")
@@ -235,19 +290,29 @@ def generate_skills_html(data_list, indent_level=3, is_psionics=False):
             
             spec_wiki_link = f"{{{{wiki= [↗ Wiki Documentation]({spec_url})}}}}"
 
+            # Dual buttons for specialties
+            roll_spec_trained = f"&{{template:default}} {{{{name= @{{character_name}} - {spec_name}}}}} {{{{score= [[@{{{spec_id}O}}]]/[[@{{{spec_id}G}}]]/[[@{{{spec_id}A}}]]}}}} {{{{results= [[{get_alternity_roll_query(default_step=0)}]]}}}} {spec_wiki_link}"
+            roll_spec_untrained = f"&{{template:default}} {{{{name= @{{character_name}} - {spec_name} (Untrained)}}}} {{{{score= [[@{{{spec_id}O}}]]/[[@{{{spec_id}G}}]]/[[@{{{spec_id}A}}]]}}}} {{{{results= [[{get_alternity_roll_query(default_step=1)}]]}}}} {spec_wiki_link}"
+
             if spec_untrained == "NO":
                 spec_formula = f"(floor(((@{{{spec_id}Rank}}+@{{{spec_attr_full}}})*@{{{id_name}}}) * (@{{{spec_id}Rank}}/(@{{{spec_id}Rank}}+0.001)) + 0.5))"
                 trained_only_class = " sheet-trained-only"
+                spec_untrained_button = f'<button type="roll" name="roll_{spec_id}_untrained" class="sheet-roll-untrained sheet-trained-only-msg" value="/w gm @{{character_name}} attempts to use {spec_name} untrained, but it is a Trained Only skill."></button>'
             else:
                 spec_formula = f"(floor(((@{{{spec_id}Rank}}*@{{{id_name}}})+@{{{spec_attr_full}}})/(2-@{{{id_name}}})))"
                 trained_only_class = ""
+                spec_untrained_button = f'<button type="roll" name="roll_{spec_id}_untrained" class="sheet-roll-untrained" value="{roll_spec_untrained}"></button>'
                 
             spec_cost = spec.get("c", 0)
             spec_rank_benefits = spec.get("rb", None)
             spec_info_icon = build_info_icon(spec_cost, spec_untrained, spec_rank_benefits)
             
             h += f'{indent}\t\t<div class="sheet-skill-row sheet-spec">\n'
-            h += f'{indent}\t\t\t<button type="roll" name="roll_{spec_id}" value="&{{template:default}} {{{{name= @{{character_name}} - {spec_name}}}}} {{{{score= [[@{{{spec_id}O}}]]/[[@{{{spec_id}G}}]]/[[@{{{spec_id}A}}]]}}}} {spec_roll_results} {spec_wiki_link}"></button>\n'
+            h += f'{indent}\t\t\t<input type="hidden" name="attr_{spec_id}_is_trained" class="sheet-trained-check" value="0">\n'
+            h += f'{indent}\t\t\t<div class="sheet-roll-container">\n'
+            h += f'{indent}\t\t\t\t<button type="roll" name="roll_{spec_id}" class="sheet-roll-trained" value="{roll_spec_trained}"></button>\n'
+            h += f'{indent}\t\t\t\t{spec_untrained_button}\n'
+            h += f'{indent}\t\t\t</div>\n'
             h += f'{indent}\t\t\t<div class="sheet-skill-name{trained_only_class}">{spec_name} <button type="roll" name="roll_{spec_id}_link" class="sheet-skill-link" value="[{spec_name} Wiki]({spec_url})">&#x2197;</button>{spec_info_icon}</div>\n'
             h += f'{indent}\t\t\t<div class="sheet-skill-ability-label">{spec_attr}</div>\n'
             h += f'{indent}\t\t\t<input type="number" name="attr_{spec_id}Rank" class="sheet-score" value="0">\n'
@@ -260,7 +325,7 @@ def generate_skills_html(data_list, indent_level=3, is_psionics=False):
         h += f'{indent}\t</div>\n'
         h += f'{indent}</div>\n'
         output_html.append(h)
-        skill_ids.append(id_name)
+        skill_ids.append({'id': id_name, 'specs': [clean_id(s['n']) for s in skill.get('sp', [])]})
 
     return "".join(output_html), skill_ids
 
@@ -290,6 +355,12 @@ def build():
     roll_query_0 = get_alternity_roll_query(default_step=0)
     roll_query_1 = get_alternity_roll_query(default_step=1)
     
+    skills_html, skill_ids = generate_skills_html(skills_data, indent_level=3)
+    all_skill_ids.extend(skill_ids)
+    
+    psionics_html, psionic_skill_ids = generate_skills_html(psionics_data, indent_level=3, is_psionics=True)
+    all_skill_ids.extend(psionic_skill_ids)
+
     for filename in files:
         path = os.path.join(src_dir, filename)
         if not os.path.exists(path):
@@ -300,13 +371,18 @@ def build():
             content = f.read()
             
         if filename == 'skills.html':
-            skills_html, skill_ids = generate_skills_html(skills_data, indent_level=3)
             content = content.replace('<!-- SKILLS_PLACEHOLDER -->', skills_html)
-            all_skill_ids.extend(skill_ids)
         elif filename == 'psionics.html':
-            psionics_html, skill_ids = generate_skills_html(psionics_data, indent_level=3, is_psionics=True)
             content = content.replace('<!-- PSIONICS_PLACEHOLDER -->', psionics_html)
-            all_skill_ids.extend(skill_ids)
+        
+        if filename == 'header.html':
+            # Generate specialty training workers
+            spec_workers = []
+            for skill_entry in all_skill_ids:
+                for spec_id in skill_entry['specs']:
+                    spec_workers.append(f"on('change:{spec_id.lower()}rank', function() {{ getAttrs(['{spec_id}Rank'], function(v) {{ setAttrs({{ '{spec_id}_is_trained': (parseInt(v.{spec_id}Rank) > 0 ? 1 : 0) }}); }}); }});")
+            
+            content = content.replace('<!-- SPECIALTY_WORKERS_PLACEHOLDER -->', "\n".join(spec_workers))
             
         content = content.replace('<!-- ROLL_QUERY_DEFAULT_0 -->', roll_query_0)
         content = content.replace('<!-- ROLL_QUERY_DEFAULT_1 -->', roll_query_1)

@@ -12,12 +12,21 @@ While everyone who grows up around other people has some skill at interacting wi
 
 ### Specialties
 Interaction includes specific areas such as:
+<<<<<<< HEAD
+- [Bargain](#bargain)
+- [Charm](#charm)
+- [Interview](#interview)
+- [Intimidate](#intimidate)
+- [Seduce](#seduce)
+- [Taunt](#taunt)
+=======
 - [Bargain]({{< relref "bargain" >}})
 - [Charm]({{< relref "charm" >}})
 - [Interview]({{< relref "interview" >}})
 - [Intimidate]({{< relref "intimidate" >}})
 - [Seduce]({{< relref "seduce" >}})
 - [Taunt]({{< relref "taunt" >}})
+>>>>>>> origin/main
 
 ### Interaction Situation Modifiers
 
@@ -30,7 +39,11 @@ Interaction includes specific areas such as:
 | Acquainted | -1 step |
 
 ### Mechanics
+<<<<<<< HEAD
+Interaction is an **encounter skill**, meaning that any skill check takes into account the target's starting attitude (see [Table P25: Encounter Skill Effects]({{< relref "/core-mechanics/useful-tables#table-p25-encounter-skill-effects" >}})). 
+=======
 Interaction is an **encounter skill**, meaning that any skill check takes into account the target's starting attitude (see [Table P25: Encounter Skill Effects]({{< relref "core-mechanics/useful-tables#table-p25-encounter-skill-effects" >}})). 
+>>>>>>> origin/main
 
 - **Target Restrictions:** Neither a **Combative** character nor a **Fanatic** character can be influenced by Interaction.
 - **Resistance:** The target's **Will resistance modifier** also applies. 

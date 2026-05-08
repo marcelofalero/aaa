@@ -54,10 +54,17 @@ Sólo los personajes capaces de usar poderes psiónicos (como Mindwalkers) o aqu
 Este Especialidad permite que un Personaje detecte la activación de poderes psiónicos y la presencia de fenómenos psiónicos. Puede ayudar a identificar el tipo de poder, la dirección de su fuente y la intensidad aproximada del usuario psiónico.
 
 ### Detectando poderes psiónicos
+<<<<<<< HEAD
+El Director de Juego solicitará una verificación cuando se active un poder psiónico en las proximidades del personaje.
+- **Ordinario:** El personaje siente que *algún* poder psiónico fue activado cerca.
+- **Bien:** Si la fuente está en la línea de visión, el personaje puede identificar al usuario. De lo contrario, obtienen una idea general de la dirección y la distancia.
+- **Asombroso:** El personaje puede detectar efectos sutiles y continuos (por ejemplo, manipulación Mental o ilusiones psiónicas).
+=======
 El Director de Juego solicitará una verificación cuando se active un poder psiónico en las proximidades del Personaje o afecte al Personaje o sus proximidades.
 - **Ordinario:** El Personaje siente que *algún* poder psiónico fue activado cerca.
 - **Bueno:** Si la fuente está en la línea de visión, el Personaje puede identificar al usuario. De lo contrario, obtienen una idea general de la dirección y la distancia.
 - **Asombroso:** El Personaje puede detectar efectos sutiles y continuos (por ejemplo, manipulación de Mental o ilusiones psiónicas).
+>>>>>>> origin/main
 
 ### Identificación y rastreo
 Si el Personaje intenta una prueba de **Conocimiento—Psiónica** para identificar el tipo de poder psiónico o un poder ESP para rastrear un poder detectado, recibe una bonificación basada en su resultado Sentido psiónico:
