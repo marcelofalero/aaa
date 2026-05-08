@@ -29,7 +29,7 @@ Untrained animals (wild or domestic) can only perform tasks of up to **Ordinary*
 ### Animal Handling Situation Modifiers
 <div class="table-wrapper"> <table> <thead> <tr> <th>Type</th> <th>Modifier</th> <th>Complexity</th> </tr> </thead> <tbody> <tr class="table-category"> <td colspan="3"><strong>Herbivores</strong></td> </tr> <tr> <td>Alien</td> <td>+2</td> <td>Amazing</td> </tr> <tr> <td>Domestic</td> <td>-1</td> <td>Good</td> </tr> <tr> <td>Wild</td> <td>+1</td> <td>Amazing</td> </tr> <tr class="table-category"> <td colspan="3"><strong>Carnivores</strong></td> </tr> <tr> <td>Alien</td> <td>+5</td> <td>Amazing</td> </tr> <tr> <td>Domestic</td> <td>-2</td> <td>Ordinary</td> </tr> <tr> <td>Wild</td> <td>+4</td> <td>Good</td> </tr> </tbody> </table> </div>
 
-**Other Modifiers:**
+### Other Modifiers
 - **Unfamiliar animal:** +1 penalty (cumulative with others).
 - **Trained animal:**
     - Ordinary task: +0
@@ -46,29 +46,30 @@ The broad skill enables a character to ride any animal used for basic ground tra
 
 This specialty skill enables a character to improve this aspect of the Animal Handling broad skill. A character with this skill can attempt racing over dangerous terrain, making jumps or performing other stunts, and engaging in mounted combat.
 
-▶ At rank 3 the character learns to perform special stunts or tricks while mounted. See trick riding.
+▶ **Rank 3[Trick Riding]:** The character learns to perform special stunts or tricks while mounted. See trick riding.
 
 ### Trick Riding
 The character can direct their mount to jump fences, leap chasms, or move backward.
 - **Critical Failure:** The animal trips (damage as an Extremely Short fall for both).
 - **Failure:** The animal refuses to perform.
 
-**Horizontal Leaps:**
+#### Horizontal Leaps
 - **Ordinary:** Normal distance + 1 meter.
 - **Good:** Normal distance + 2 meters.
 - **Amazing:** Normal distance + 3 meters.
 
-**Jumping Obstructions:**
+#### Jumping Obstructions
 - **Ordinary:** Normal distance + 1 meter.
 - **Good:** Normal distance + 1.5 meters.
 - **Amazing:** Normal distance + 2 meters.
 
-**Moving Backward:**
+#### Moving Backward:
 - **Ordinary:** Half walk movement rate.
 - **Good:** Full walk movement rate.
 - **Amazing:** 1.5x walk movement rate.
 
-**Mounted Cover:** The character can use their mount for cover. This provides a penalty to an opponent's chance to hit the rider:
+#### Mounted Cover
+The character can use their mount for cover. This provides a penalty to an opponent's chance to hit the rider:
 - **Ordinary:** +1 step.
 - **Good:** +2 steps.
 - **Amazing:** +3 steps.
@@ -82,10 +83,12 @@ The character can direct their mount to jump fences, leap chasms, or move backwa
 
 This skill allows a character to handle, ride, and train a specific type of animal (the "Primary Animal" selected when purchasing the broad skill). A character can also use their **Animal Training** rank to interact with animals other than their Primary Animal, but they suffer a penalty to the skill check based on the biological or behavioral distance from their specialty:
 
-*   **Identical Type (+0 penalty):** Different breeds or closely related species (e.g., Quarter Horse vs. Thoroughbred).
-*   **Related Type (+1 penalty):** Similar anatomy or behavior (e.g., Horse vs. Mule, or a Wolf vs. a Domestic Dog).
-*   **Different Family (+2 penalty):** Significant biological or behavioral differences (e.g., Mammal vs. Reptile, or Herbivore vs. Carnivore).
-*   **Alien/Xeno-creature (+3 or more penalty):** Completely foreign biology or instincts.
+| Relationship | Modifier | Description |
+| :--- | :--- | :--- |
+| **Identical Type** | +0 | Different breeds or closely related species (e.g., Quarter Horse vs. Thoroughbred). |
+| **Related Type** | +1 | Similar anatomy or behavior (e.g., Horse vs. Mule, or a Wolf vs. a Domestic Dog). |
+| **Different Family** | +2 | Significant biological or behavioral differences (e.g., Mammal vs. Reptile, or Herbivore vs. Carnivore). |
+| **Alien/Xeno-creature** | +3 or more | Completely foreign biology or instincts. |
 
 ---
 

@@ -11,7 +11,6 @@ This broad skill provides a character with basic knowledge of the theories of pr
 
 ### Uses
 Skill checks are called for when a character wants to:
-- Play the stock market.
 - Apply business knowledge to conclude a trade.
 - Attempt an illegal business transaction.
 - Determine the value of goods in their own society.

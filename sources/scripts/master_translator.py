@@ -2,6 +2,7 @@ import os
 import re
 import yaml
 import time
+import sys
 from ruamel.yaml import YAML
 from ruamel.yaml.scalarstring import LiteralScalarString
 from deep_translator import GoogleTranslator
@@ -120,9 +121,10 @@ def process_node(node, translator, mapping, processed_count):
                 node['localized'].append({'es': es_loc})
             
             if en_desc and es_loc:
-                # Only translate if Spanish description is missing or much shorter (likely placeholder)
+                # Always translate if es description is significantly shorter than English
+                # or if the user forces it
                 current_es_desc = es_loc.get('description', '')
-                if not current_es_desc or len(current_es_desc) < len(en_desc) * 0.2:
+                if not current_es_desc or len(current_es_desc) < len(en_desc) * 0.8 or '--force' in sys.argv:
                     print(f"Translating description: {en_name or 'unnamed'}...")
                     protected_text, placeholders = protect_terms(en_desc, mapping)
                     translated = translate_text(protected_text, translator)

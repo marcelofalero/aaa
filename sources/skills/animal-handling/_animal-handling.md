@@ -30,7 +30,7 @@ Untrained animals (wild or domestic) can only perform tasks of up to **Ordinary*
 ### Animal Handling Situation Modifiers
 <div class="table-wrapper"> <table> <thead> <tr> <th>Type</th> <th>Modifier</th> <th>Complexity</th> </tr> </thead> <tbody> <tr class="table-category"> <td colspan="3"><strong>Herbivores</strong></td> </tr> <tr> <td>Alien</td> <td>+2</td> <td>Amazing</td> </tr> <tr> <td>Domestic</td> <td>-1</td> <td>Good</td> </tr> <tr> <td>Wild</td> <td>+1</td> <td>Amazing</td> </tr> <tr class="table-category"> <td colspan="3"><strong>Carnivores</strong></td> </tr> <tr> <td>Alien</td> <td>+5</td> <td>Amazing</td> </tr> <tr> <td>Domestic</td> <td>-2</td> <td>Ordinary</td> </tr> <tr> <td>Wild</td> <td>+4</td> <td>Good</td> </tr> </tbody> </table> </div>
 
-**Other Modifiers:**
+### Other Modifiers
 - **Unfamiliar animal:** +1 penalty (cumulative with others).
 - **Trained animal:**
     - Ordinary task: +0

@@ -1,6 +1,6 @@
 +++
 title = "Medical Science"
-attribute = "WIL"
+attribute = "INT"
 category = "Technical"
 type = "skill"
 layout = "list"
@@ -15,7 +15,8 @@ A character with just the Medical Science broad skill can't treat characters who
 
 Forensics is the study of causes of death and physical evidence at the scene of a crime or accident.
 
-⊗ **Increased Effect:** As a character attains higher ranks in forensics, he receives a situation die bonus on skill checks that can be assisted by this specialty. The bonus is -1 step at rank 3, -2 steps at rank 6, -3 steps at rank 9, and -4 steps at rank 12.
+### Rank Benefits
+⊗ **Rank 3, 6, 9, 12 [Increased Effect]** As a character attains higher ranks in forensics, he receives a **situation die bonus** on forensics checks. The bonus is **-1 step at rank 3**, **-2 steps at rank 6**, **-3 steps at rank 9**, and **-4 steps at rank 12**.
 
 ---
 
@@ -25,7 +26,7 @@ Forensics is the study of causes of death and physical evidence at the scene of 
 This specialty skill represents a character''s deep academic and practical understanding of medical principles, history, and advanced theory.
 
 ### Rank Benefits
-⊗ **Increased Effect:** A character receives a **-1 bonus** at rank 3, **-2** at rank 6, **-3** at rank 9, and **-4** at rank 12 on other Medical Science checks (e.g., diagnosis, research).
+⊗ **Rank 3, 6, 9, 12 [Increased Effect]** A character receives a **-1 bonus** at rank 3, **-2** at rank 6, **-3** at rank 9, and **-4** at rank 12 on other Medical Science checks (e.g., diagnosis, research).
 
 ---
 
@@ -35,7 +36,10 @@ This specialty skill represents a character''s deep academic and practical under
 Psychology is the study of the mind and behavior. It can be used to diagnose mental disorders, understand motivations, or predict behavioral patterns.
 
 ### Rank Benefits
-⊗ **Increased Effect:** A character receives a **-1 bonus** at rank 3, **-2** at rank 6, **-3** at rank 9, and **-4** at rank 12 on certain Interaction checks (e.g., Interview, Persuade, Bluff).
+⊗ **Rank 3, 6, 9, 12 [Increased Effect]** A character receives a **-1 bonus** at rank 3, **-2** at rank 6, **-3** at rank 9, and **-4** at rank 12 on certain Interaction checks (e.g., Interview, Persuade, Bluff).
+
+### Stress Management
+When the persistent stress rules are being used, a character with the Psychology skill may use it to provide psychological support to themselves or others, which may help to resist the effects of stress. A successful skill check may provides up to 12 characters with a bonus based the weekly check result. Granting a bonus of -1 (Ordinary), +2 (Good), or +3 (Amazing) to the weekly resolve-mental resolve check to avoid gaining stress levels.
 
 ---
 
@@ -51,32 +55,31 @@ is extremely difficult to perform in conditions such as those
 found on the typical battlefield.
 
 ### Surgical Conditions
-The conditions for surgery are considered **Critical (+4 step
-penalty)** when the procedure must be performed with poor
-lighting, primitive tools (or no surgical tools at all), and no
-trained assistance. **Marginal conditions (no modifier)** are
-better than Critical, but still below what's necessary for
-success. A **Good situation (-2 step bonus)** is similar to a
-modern ambulance or spaceship sick bay. **Amazing conditions (-3
-step bonus)** are found in a standard hospital. **Optimal
-conditions (-4 step bonus)** include high-tech tools, trained
-support staff, and the most advanced medical procedures available.
+The conditions for surgery are considered:
+- **Critical (+4 step penalty)** when the procedure must be performed with poor lighting, primitive tools (or no surgical tools at all), and no trained assistance.
+- **Marginal conditions (no modifier)** are better than Critical, but still below what's necessary for success.
+- **Good situation (-2 step bonus)** is similar to a modern ambulance or spaceship sick bay.
+- **Amazing conditions (-3 step bonus)** are found in a standard hospital.
+- **Optimal conditions (-4 step bonus)** include high-tech tools, trained support staff, and the most advanced medical procedures available.
 
 ### Procedure and Recovery
 The complexity of a surgery check depends on the amount of mortal
 damage the patient is suffering from when the procedure is begun:
 1 point of damage is Marginal, 2 is Ordinary, 3 is Good, and 4 or
-more is Amazing. If the patient is suffering only from wound
+more is Amazing. 
+
+If the patient is suffering only from wound
 damage, then 2 points of damage is Marginal, 4 is Ordinary, 6 is
 Good, and 8 or more is Amazing.
+
 For every two successes achieved during the complex skill check,
 the patient is healed of 1 point of mortal damage and 2 points of
 wound damage.
 
-▶ **Cybernetic Surgery:** A character who has achieved at least
-rank 3 in surgery can use this skill to repair or heal an organism
-with existing cybernetic implants. At rank 6, the character
-becomes able to install cybernetic implants.
+### Rank Benefits
+⊗ **Rank 3 [Cybernetic Surgery]** A character who has achieved at least rank 3 in surgery can use this skill to treat patients with existing cybernetic implants.
+
+⊗ **Rank 6 [Cybernetic Surgery, Install]** A character who has achieved at least rank 6 in surgery can use this skill to install cybernetic implants.
 
 ---
 
@@ -123,12 +126,13 @@ alien species, allowing a character to use his other medical
 skills on members of that species. The skill must be purchased
 separately for each alien species a character wants to know
 about.
+
 A character with at least rank 1 in this skill, as well as rank 1
 or higher in Knowledge—first aid, Medical Science—treatment, and/or
 Medical Science—surgery, can administer aid to an alien character
 or creature of the appropriate species. Initially, the +3 step
 penalty associated with healing alien characters is applied.
----
+
 ⊗ **Improved Treatment:** As a character achieves higher ranks in
 a specific application of xenomedicine, she becomes more proficient
 at providing aid to patients of the appropriate species. When the
