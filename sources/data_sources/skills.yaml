@@ -3768,12 +3768,13 @@ items:
                 skills on members of that species. The skill must be purchased
                 separately for each alien species a character wants to know
                 about.
+
                 A character with at least rank 1 in this skill, as well as rank 1
                 or higher in Knowledge—first aid, Medical Science—treatment, and/or
                 Medical Science—surgery, can administer aid to an alien character
                 or creature of the appropriate species. Initially, the +3 step
                 penalty associated with healing alien characters is applied.
-                ---
+
                 ⊗ **Improved Treatment:** As a character achieves higher ranks in
                 a specific application of xenomedicine, she becomes more proficient
                 at providing aid to patients of the appropriate species. When the
@@ -3790,12 +3791,13 @@ items:
                 habilidades en miembros de esa especie. La habilidad debe ser comprada.
                 por separado para cada especie exótica un Personaje quiere saber
                 acerca de.
+
                 Un Personaje con al menos Rango 1 en esta habilidad, así como Rango 1
                 o superior en Conocimiento: primeros auxilios, Ciencias médicas: tratamiento y/o
                 Ciencias médicas: cirugía, puede administrar ayuda a un extraterrestre Personaje
                 o criatura de la especie apropiada. Inicialmente, el paso +3
                 Se aplica la penalización asociada con la curación de personajes alienígenas.
-                ---
+
                 ⊗ **Tratamiento mejorado:** A medida que Personaje logra un Rangos más alto en
                 una aplicación específica de xenomedicina, se vuelve más competente
                 a proporcionar ayuda a los pacientes de la especie apropiada. cuando el
@@ -3873,19 +3875,33 @@ items:
           - en:
               name: Blade
               description: |-
-                As a character improves his ability in the blade specialty skill, he gains rank benefits as described below. Note: These benefits only apply when the character is using a weapon covered by this skill.
-                ⊗ Resistance Modifier: At higher ranks, the skill provides an improvement to a character''s Strength resistance modifier. It improves by +1 at rank 4, by +1 again at rank 8, and by +1 again at rank 12. This increase doesn''t stack with similar bonuses provided by other melee combat specialty skills.
-                ▶ Reaction Parry: When a character reaches rank 4, he can attempt to parry whenever a melee or unarmed attack is used against him. The parry attempt uses up the character''s next available action.
-                ▶ Double-Strike: When a character reaches skill rank 6, he learns to make a double-strike against a target with a successful skill check. The player rolls one control die and two situation dice to make his double-strike attack. The first situation die is the base modifier needed to make an attack with a +1 step penalty; the second situation die is the base modifier with a +2 step penalty.
-                ▶ Multistrike: When a character reaches skill rank 9, he learns to make multiple attacks in a single phase. The character can strike with a melee weapon three times in a phase. These attacks can be directed at a single target or at up to three separate targets within two meters of the character.
+                As a character improves his ability in the blade specialty skill, he gains rank benefits as described below.
+
+                ### Rank Benefits
+                ⊗ **Ranks 4, 8, 12 [Resistance Modifier]** At higher ranks, the skill provides an improvement to a character's Strength resistance modifier. It improves by +1 at rank 4, by +1 again at rank 8, and by +1 again at rank 12. This increase doesn't stack with similar bonuses provided by other melee combat specialty skills.
+
+                ▶ **Rank 4 [Reaction Parry]** When a character reaches rank 4, he can attempt to parry whenever a melee or unarmed attack is used against him. The parry attempt uses up the character's next available action.
+
+                ▶ **Rank 6 [Double-Strike]** When a character reaches skill rank 6, he learns to make a double-strike against a target with a successful skill check. The player rolls one control die and two situation dice to make his double-strike attack. The first situation die is the base modifier needed to make an attack with a +1 step penalty; the second situation die is the base modifier with a +2 step penalty.
+
+                ▶ **Rank 9 [Multistrike]** When a character reaches skill rank 9, he learns to make multiple attacks in a single phase. The character can strike with a melee weapon three times in a phase. These attacks can be directed at a single target or at up to three separate targets within two meters of the character.
+
+                > These benefits only apply when the character is using a weapon covered by this skill.
           - es:
               name: Arma blanca
               description: |-
-                A medida que un Personaje mejora su habilidad en el Arma blanca Especialidad, obtiene los beneficios de Rango como se describe a continuación. Nota: Estos beneficios solo se aplican cuando el Personaje usa un arma cubierta por esta habilidad.
-                ⊗ Modificador de resistencia: en Rangos más alto, la habilidad proporciona una mejora al modificador de resistencia de fuerza de Personaje. Mejora en +1 en Rango 4, en +1 nuevamente en Rango 8 y en +1 nuevamente en Rango 12. Este aumento no se acumula con bonificaciones similares proporcionadas por las habilidades especiales de Otros Combate cuerpo a cuerpo.
-                ▶ Parada de reacción: cuando un Personaje alcanza Rango 4, puede intentar parar cada vez que se usa un ataque cuerpo a cuerpo o desarmado contra él. El intento de parada consume la siguiente acción disponible del Personaje.
-                ▶ Doble golpe: cuando un Personaje alcanza la habilidad Rango 6, aprende a realizar un doble golpe contra un objetivo con una prueba de habilidad exitosa. El jugador tira un Dado de Control y dos dados de situación para realizar su ataque de doble golpe. El primer Dado de Situación es el modificador base necesario para realizar un ataque con +1 Penalización de paso; el segundo Dado de Situación es el modificador base con un +2 Penalización de paso.
-                ▶ Multigolpe: Cuando un Personaje alcanza la habilidad Rango 9, aprende a realizar múltiples ataques en una sola fase. El Personaje puede atacar con un arma cuerpo a cuerpo tres veces en una fase. Estos ataques pueden dirigirse a un solo objetivo o hasta a tres objetivos separados dentro de dos metros del Personaje.
+                A medida que un Personaje mejora su habilidad en el Arma blanca Especialidad, obtiene los beneficios de Rango como se describe a continuación.
+
+                ### Beneficios de Rango
+                ⊗ **Rangos 4, 8, 12 [Modificador de resistencia]** En Rangos más alto, la habilidad proporciona una mejora al modificador de resistencia a Fuerza de Personaje. Mejora en +1 en Rango 4, en +1 nuevamente en Rango 8 y en +1 nuevamente en Rango 12. Este aumento no se acumula con bonificaciones similares proporcionadas por las habilidades especiales de Otros Combate cuerpo a cuerpo.
+
+                ▶ **Rango 4 [Parada de reacción]** Cuando un Personaje alcanza Rango 4, puede intentar parar siempre que se use un ataque cuerpo a cuerpo o desarmado contra él. El intento de parada consume la siguiente acción disponible del Personaje.
+
+                ▶ **Rango 6 [Double-Strike]** Cuando un Personaje alcanza la habilidad Rango 6, aprende a realizar un doble golpe contra un objetivo con una prueba de habilidad exitosa. El jugador tira un Dado de Control y dos dados de situación para realizar su ataque de doble golpe. El primer Dado de Situación es el modificador base necesario para realizar un ataque con +1 Penalización de paso; el segundo Dado de Situación es el modificador base con un +2 Penalización de paso.
+
+                ▶ **Rango 9 [Multistrike]** Cuando un Personaje alcanza la habilidad Rango 9, aprende a realizar múltiples ataques en una sola fase. El Personaje puede atacar con un arma cuerpo a cuerpo tres veces en una fase. Estos ataques pueden dirigirse a un solo objetivo o hasta a tres objetivos separados dentro de dos metros del Personaje.
+
+                > Estos beneficios solo se aplican cuando el Personaje usa un arma cubierta por esta habilidad.
         trained_only: false
       blunt:
         attribute: STR
@@ -3895,19 +3911,33 @@ items:
           - en:
               name: Blunt
               description: |-
-                As a character improves his ability in the blunt specialty skill, he gains rank benefits as described below. Note: These benefits only apply when the character is using a weapon covered by this skill.
-                ⊗ Resistance Modifier: At higher ranks, the skill provides an improvement to a character''s Strength resistance modifier. It improves by +1 at rank 4, by +1 again at rank 8, and by +1 again at rank 12. This increase doesn''t stack with similar bonuses provided by other melee combat specialty skills.
-                ▶ Reaction Parry: When a character reaches rank 4, he can attempt to parry whenever a melee or unarmed attack is used against him. The parry attempt uses up the character''s next available action.
-                ▶ Double-Strike: When a character reaches skill rank 6, he learns to make a double-strike against a target with a successful skill check. The player rolls one control die and two situation dice. The first situation die is the base modifier with a +1 step penalty; the second situation die is the base modifier with a +2 step penalty.
-                ▶ Multistrike: When a character reaches skill rank 9, he learns to make multiple attacks in a single phase. The character can strike with a melee weapon three times in a phase. These attacks can be directed at a single target or at up to three separate targets within two meters of the character.
+                As a character improves his ability in the blunt specialty skill, he gains rank benefits as described below.
+
+                ### Rank Benefits
+                ⊗ **Ranks 4, 8, 12 [Resistance Modifier]** At higher ranks, the skill provides an improvement to a character''s Strength resistance modifier. It improves by +1 at rank 4, by +1 again at rank 8, and by +1 again at rank 12. This increase doesn''t stack with similar bonuses provided by other melee combat specialty skills.
+
+                ▶ **Rank 4 [Reaction Parry]** When a character reaches rank 4, he can attempt to parry whenever a melee or unarmed attack is used against him. The parry attempt uses up the character''s next available action.
+
+                ▶ **Rank 6 [Double-Strike]** When a character reaches skill rank 6, he learns to make a double-strike against a target with a successful skill check. The player rolls one control die and two situation dice. The first situation die is the base modifier with a +1 step penalty; the second situation die is the base modifier with a +2 step penalty.
+
+                ▶ **Rank 9 [Multistrike]** When a character reaches skill rank 9, he learns to make multiple attacks in a single phase. The character can strike with a melee weapon three times in a phase. These attacks can be directed at a single target or at up to three separate targets within two meters of the character.
+
+                > These benefits only apply when the character is using a weapon covered by this skill.
           - es:
               name: Arma contundente
               description: |-
-                A medida que un Personaje mejora su habilidad en el Arma contundente Especialidad, obtiene los beneficios de Rango como se describe a continuación. Nota: Estos beneficios solo se aplican cuando el Personaje usa un arma cubierta por esta habilidad.
-                ⊗ Modificador de resistencia: en Rangos más alto, la habilidad proporciona una mejora al modificador de resistencia de fuerza de Personaje. Mejora en +1 en Rango 4, en +1 nuevamente en Rango 8 y en +1 nuevamente en Rango 12. Este aumento no se acumula con bonificaciones similares proporcionadas por las habilidades especiales de Otros Combate cuerpo a cuerpo.
-                ▶ Parada de reacción: cuando un Personaje alcanza Rango 4, puede intentar parar cada vez que se usa un ataque cuerpo a cuerpo o desarmado contra él. El intento de parada consume la siguiente acción disponible del Personaje.
-                ▶ Doble golpe: cuando un Personaje alcanza la habilidad Rango 6, aprende a realizar un doble golpe contra un objetivo con una prueba de habilidad exitosa. El jugador tira un Dado de Control y dos dados de situación. El primer Dado de Situación es el modificador base con un +1 Penalización de paso; el segundo Dado de Situación es el modificador base con un +2 Penalización de paso.
-                ▶ Multigolpe: Cuando un Personaje alcanza la habilidad Rango 9, aprende a realizar múltiples ataques en una sola fase. El Personaje puede atacar con un arma cuerpo a cuerpo tres veces en una fase. Estos ataques pueden dirigirse a un solo objetivo o hasta a tres objetivos separados dentro de dos metros del Personaje.
+                A medida que un Personaje mejora su habilidad en el Arma contundente Especialidad, obtiene los beneficios de Rango como se describe a continuación.
+
+                ### Beneficios de Rango
+                ⊗ **Rangos 4, 8, 12 [Modificador de resistencia]** En Rangos más alto, la habilidad proporciona una mejora al modificador de resistencia a Fuerza de Personaje. Mejora en +1 en Rango 4, en +1 nuevamente en Rango 8 y en +1 nuevamente en Rango 12. Este aumento no se acumula con bonificaciones similares proporcionadas por las habilidades especiales de Otros Combate cuerpo a cuerpo.
+
+                ▶ **Rango 4 [Parada de reacción]** Cuando un Personaje alcanza Rango 4, puede intentar parar siempre que se use un ataque cuerpo a cuerpo o desarmado contra él. El intento de parada consume la siguiente acción disponible del Personaje.
+
+                ▶ **Rango 6 [Double-Strike]** Cuando un Personaje alcanza la habilidad Rango 6, aprende a realizar un doble golpe contra un objetivo con una prueba de habilidad exitosa. El jugador tira un Dado de Control y dos dados de situación. El primer Dado de Situación es el modificador base con un +1 Penalización de paso; el segundo Dado de Situación es el modificador base con un +2 Penalización de paso.
+
+                ▶ **Rango 9 [Multistrike]** Cuando un Personaje alcanza la habilidad Rango 9, aprende a realizar múltiples ataques en una sola fase. El Personaje puede atacar con un arma cuerpo a cuerpo tres veces en una fase. Estos ataques pueden dirigirse a un solo objetivo o hasta a tres objetivos separados dentro de dos metros del Personaje.
+
+                > Estos beneficios solo se aplican cuando el Personaje usa un arma cubierta por esta habilidad.
         trained_only: false
       defensive-martial-arts:
         attribute: STR
@@ -3918,20 +3948,38 @@ items:
               name: Defensive Martial Arts
               description: |-
                 As a character improves his ability in the defensive martial arts specialty skill, he gains rank benefits as described below. Note: These benefits only apply when the character is fighting unarmed or with appropriate martial arts implements. The essence of defensive and dexterity-based martial arts lies in non-resistance and the sophisticated manipulation of kinetic vectors. Rather than meeting force with force, these styles utilize fluid, spherical movements to redirect an attacker''s momentum, effectively turning their own mass and acceleration against them.
-                ▶ Overpowering: This skill can be used to determine the success of an attempt to overpower an opponent. Briefly, overpowering is a form of unarmed attack made simultaneously by one or more allies trying to grab and restrain a single opponent. If a single attacker tries to overpower another character, his Melee Combat skill check is made at a +1 penalty. Every additional attacker who takes part in the same overpowering attempt provides a cumulative –1 bonus to the skill check. Overpowering does not cause damage, but it immobilizes an opponent for as long as one of the attackers continues to maintain a tight hold on that opponent.
-                ▶ Base Damage: When a character reaches skill rank 1, he learns to maintain balance while identifying openings. This increases his base unarmed damage to **d4s/d6s/d6w**.
-                ⊗ Resistance Modifier: At higher ranks, the skill provides an improvement to a character''s Strength resistance modifier. By leveraging his speed and flexibility, the practitioner’s reactive movement provides a +1 step increase at rank 3, an additional +1 at rank 7, and a final +1 at rank 11. This increase doesn''t stack with similar bonuses provided by other melee combat specialty skills. How we do things reaches rank 4, if an opponent misses him with a melee attack, the character''s next attack against that specific opponent before the end of the next round can use either his own or his opponent''s Strength modifier for damage.
-                ▶ Redirection of Force: When a character reaches rank 7, if an opponent performs an All Out Attack against him, the attacker receives all the penalties of that maneuver but gains none of the benefits. How we do things reaches rank 10, All Out Attacks that miss him can be redirected against any other target adjacent to the attacker. The attacker must make a new normal attack roll against the new target to determine the result.
-                ▶ Formless Master: When a character reaches rank 12, he may ignore 1 step of an opponent''s Strength defense due to the unpredictability of his attacks.
+
+                ### Overpowering
+                This skill can be used to determine the success of an attempt to overpower an opponent. Briefly, overpowering is a form of unarmed attack made simultaneously by one or more allies trying to grab and restrain a single opponent. If a single attacker tries to overpower another character, his Melee Combat skill check is made at a +1 penalty. Every additional attacker who takes part in the same overpowering attempt provides a cumulative –1 bonus to the skill check. Overpowering does not cause damage, but it immobilizes an opponent for as long as one of the attackers continues to maintain a tight hold on that opponent.
+
+                ### Rank Benefits
+                ⊗ **Rank 1 [Base Damage]** When a character reaches skill rank 1, he learns to maintain balance while identifying openings. This increases his base unarmed damage to **d4s/d6s/d6w**.
+
+                ⊗ **Rank 3, 7, 11 [Resistance Modifier]** At higher ranks, the skill provides an improvement to a character's Strength resistance modifier. By leveraging his speed and flexibility, the practitioner’s reactive movement provides a +1 step increase at rank 3, an additional +1 at rank 7, and a final +1 at rank 11. This increase doesn't stack with similar bonuses provided by other melee combat specialty skills.
+
+                ▶ **Rank 4 [Counterstrike]** If an opponent misses him with a melee attack, the character's next attack against that specific opponent before the end of the next round can use either his own or his opponent's Strength modifier for damage.
+
+                ▶ **Rank 8 [Redirection of Force]** When a character reaches rank 7, if an opponent performs an All Out Attack against him, the attacker receives all the penalties of that maneuver but gains none of the benefits. At rank 10, All Out Attacks that miss him can be redirected against any other target adjacent to the attacker. The attacker must make a new normal attack roll against the new target to determine the result.
+
+                 ▶ **Rank 12 [Formless Master]** When a character reaches rank 12, he may ignore 1 step of an opponent's Strength defense due to the unpredictability of his attacks.
           - es:
               name: Artes marciales defensivas
               description: |-
                 A medida que un Personaje mejora su habilidad en el Artes marciales defensivas Especialidad, obtiene los beneficios de Rango como se describe a continuación. Nota: Estos beneficios solo se aplican cuando el Personaje pelea desarmado o con implementos de artes marciales adecuados. La esencia de las artes marciales defensivas y basadas en la destreza radica en la no resistencia y la manipulación sofisticada de los vectores cinéticos. En lugar de enfrentar fuerza con fuerza, estos estilos utilizan movimientos fluidos y esféricos para redirigir el impulso de un atacante, volviendo efectivamente su propia masa y aceleración en su contra.
-                ▶ Abrumador: esta habilidad se puede utilizar para determinar el éxito de un intento de dominar a un oponente. Brevemente, dominar es una forma de ataque desarmado realizado simultáneamente por uno o más aliados que intentan agarrar y contener a un solo oponente. Si un solo atacante intenta dominar a otro Personaje, su prueba de habilidad Combate cuerpo a cuerpo se realiza con una penalización de +1. Cada atacante adicional que participe en el mismo intento abrumador proporciona una bonificación acumulativa de -1 a la prueba de habilidad. Abrumar no causa daño, pero inmoviliza a un oponente mientras uno de los atacantes continúe manteniendo un fuerte control sobre ese oponente.
-                ▶ Daño base: cuando un Personaje alcanza la habilidad Rango 1, aprende a mantener el equilibrio mientras identifica aberturas. Esto aumenta su daño base sin armas a **d4s/d6s/d6w**.
-                ⊗ Modificador de resistencia: en Rangos más alto, la habilidad proporciona una mejora al modificador de resistencia de fuerza de Personaje. Al aprovechar su velocidad y flexibilidad, el movimiento reactivo del practicante proporciona un aumento de paso de +1 en Rango 3, un +1 adicional en Rango 7 y un +1 final en Rango 11. Este aumento no se acumula con bonificaciones similares proporcionadas por las habilidades especiales de Otros Combate cuerpo a cuerpo. Cómo hacemos las cosas llega a Rango 4, si un oponente falla con un ataque cuerpo a cuerpo, el próximo ataque de Personaje contra ese oponente específico antes del final de la siguiente ronda puede usar su propio modificador de Fuerza o el de su oponente para causar daño.
-                ▶ Redirección de la Fuerza: Cuando un Personaje alcanza Rango 7, si un oponente realiza un Ataque Total contra él, el atacante recibe todas las penalizaciones de esa maniobra pero no obtiene ninguno de los beneficios. Cómo hacemos las cosas llega a Rango 10, los ataques totales que no lo alcanzan pueden redirigirse contra cualquier objetivo Otros adyacente al atacante. El atacante debe realizar una nueva tirada de ataque normal contra el nuevo objetivo para determinar el resultado.
-                ▶ Maestro sin forma: cuando un Personaje alcanza Rango 12, puede ignorar 1 paso de la defensa de Fuerza de un oponente debido a la imprevisibilidad de sus ataques.
+
+                ### abrumador
+                Esta habilidad se puede utilizar para determinar el éxito de un intento de dominar a un oponente. Brevemente, dominar es una forma de ataque desarmado realizado simultáneamente por uno o más aliados que intentan agarrar y contener a un solo oponente. Si un solo atacante intenta dominar a otro Personaje, su prueba de habilidad Combate cuerpo a cuerpo se realiza con una penalización de +1. Cada atacante adicional que participe en el mismo intento abrumador proporciona una bonificación acumulativa de -1 a la prueba de habilidad. Abrumar no causa daño, pero inmoviliza a un oponente mientras uno de los atacantes continúe manteniendo un fuerte control sobre ese oponente.
+
+                ### Beneficios de Rango
+                ⊗ **Rango 1 [Daño base]** Cuando un Personaje alcanza la habilidad Rango 1, aprende a mantener el equilibrio mientras identifica aberturas. Esto aumenta su daño base sin armas a **d4s/d6s/d6w**.
+
+                ⊗ **Rango 3, 7, 11 [Modificador de resistencia]** En Rangos más alto, la habilidad proporciona una mejora al modificador de resistencia a Fuerza de Personaje. Al aprovechar su velocidad y flexibilidad, el movimiento reactivo del practicante proporciona un aumento de paso de +1 en Rango 3, un +1 adicional en Rango 7 y un +1 final en Rango 11. Este aumento no se acumula con bonificaciones similares proporcionadas por las habilidades especiales de Otros Combate cuerpo a cuerpo.
+
+                ▶ **Rango 4 [Contraataque]** Si un oponente falla en un ataque cuerpo a cuerpo, el siguiente ataque del Personaje contra ese oponente específico antes del final de la siguiente ronda puede usar su propio modificador de Fuerza o el de su oponente para causar daño.
+
+                ▶ **Rango 8 [Redirección de fuerza]** Cuando un Personaje alcanza Rango 7, si un oponente realiza un ataque total contra él, el atacante recibe todas las penalizaciones de esa maniobra pero no obtiene ninguno de los beneficios. En Rango 10, los ataques totales que no lo alcancen pueden redirigirse contra cualquier objetivo Otros adyacente al atacante. El atacante debe realizar una nueva tirada de ataque normal contra el nuevo objetivo para determinar el resultado.
+
+                ▶ **Rango 12 [Maestro sin forma]** Cuando un Personaje alcanza Rango 12, puede ignorar 1 paso de la defensa de Fuerza de un oponente debido a la imprevisibilidad de sus ataques.
         trained_only: false
       power-martial-arts:
         attribute: STR
@@ -3942,30 +3990,52 @@ items:
               name: Power Martial Arts
               description: |-
                 As a character improves his ability in the power martial arts specialty skill, he gains rank benefits as described below. Note: These benefits only apply when the character is fighting unarmed or with appropriate martial arts implements. The essence of power-oriented martial arts lies in the efficient mobilization of total body mass through structural alignment and explosive kinetic sequencing. These styles treat the body as a single, rigid unit at the moment of impact, using the ground as a fulcrum to funnel energy.
-                ▶ Overpowering: This skill can be used to determine the success of an attempt to overpower an opponent. Briefly, overpowering is a form of unarmed attack made simultaneously by one or more allies trying to grab and restrain a single opponent. If a single attacker tries to overpower another character, his Melee Combat skill check is made at a +1 penalty. Every additional attacker who takes part in the same overpowering attempt provides a cumulative –1 bonus to the skill check. Overpowering does not cause damage, but it immobilizes an opponent for as long as one of the attackers continues to maintain a tight hold on that opponent.
-                ▶ Mass Leverage: When a character reaches skill rank 1, he learns to properly leverage his mass. This increases his base unarmed damage to
-                **d4s/d4w/d6+1w**.
-                ▶ High Impulse: When a character reaches rank 3, an Amazing success on an attack forces the target to make a knockout check (Resolve or Stamina) with a +1 step penalty. This penalty increases to +2 at rank 6, +3 at rank 9, and +4 at rank 12.
-                ▶ Structural Efficiency: When a character reaches rank 4, all unarmed damage increases by +1. This bonus increases by an additional +1 at rank 8 and again at rank 12.
-                ⊗ Resistance Modifier: At higher ranks, the skill provides an improvement to a character''s Strength resistance modifier. It improves by +1 at rank 4, by +1 again at rank 8, and by +1 again at rank 12. This increase doesn''t stack with similar bonuses provided by other melee combat specialty skills.
-                ▶ Short-range Power (Fajin): When a character reaches rank 5, he learns to strike effectively even if his hands are bound or unusable by utilizing his shoulders, knees, or head.
-                ▶ Structural Destruction: When a character reaches rank 8, if he utilizes an All Out Attack, the target must roll their Armor dice twice and take the worse result. This applies to standard armors.
-                ▶ Master of Force: When a character reaches rank 12, the "roll twice/take worse" armor penalty now applies to Powered Armors and supernatural defenses.
-                **Note:** Practitioners that frequently utilize the All Out Attack option in combat are usually called brawlers.
+
+                ### Overpowering
+
+                This skill can be used to determine the success of an attempt to overpower an opponent. Briefly, overpowering is a form of unarmed attack made simultaneously by one or more allies trying to grab and restrain a single opponent. If a single attacker tries to overpower another character, his Melee Combat skill check is made at a +1 penalty. Every additional attacker who takes part in the same overpowering attempt provides a cumulative –1 bonus to the skill check. Overpowering does not cause damage, but it immobilizes an opponent for as long as one of the attackers continues to maintain a tight hold on that opponent.
+
+                ### Rank Benefits
+                ⊗ **Rank 1 [Mass Leverage]** When a character reaches skill rank 1, he learns to properly leverage his mass. This increases his base unarmed damage to **d4s/d4w/d6+1w**.
+
+                ▶ **Rank 3 [High Impulse]** When a character reaches rank 3, an Amazing success on an attack forces the target to make a knockout check (Resolve or Stamina) with a +1 step penalty. This penalty increases to +2 at rank 6, +3 at rank 9, and +4 at rank 12.
+
+                ▶ **Ranks 4, 8, 12 [Structural Efficiency]** When a character reaches rank 4, all unarmed damage increases by +1. This bonus increases by an additional +1 at rank 8 and again at rank 12.
+
+                ⊗ **Ranks 4, 8, 12 [Resistance Modifier]** At higher ranks, the skill provides an improvement to a character's Strength resistance modifier. It improves by +1 at rank 4, by +1 again at rank 8, and by +1 again at rank 12. This increase doesn''t stack with similar bonuses provided by other melee combat specialty skills.
+
+                ▶ **Rank 5 [Short-range Power (Fajin)]** When a character reaches rank 5, he learns to strike effectively even if his hands are bound or unusable by utilizing his shoulders, knees, or head.
+
+                ▶ **Rank 8 [Structural Destruction]** When a character reaches rank 8, if he utilizes an All Out Attack, the target must roll their Armor dice twice and take the worse result. This applies only to non-powered armors.
+
+                ▶ **Rank 12 [Master of Force]** When a character reaches rank 12, the "roll twice/take worse" armor penalty now applies to Powered Armors, bio-armors and all form of personal defenses that translate as an armor roll.
+
+                > Practitioners that frequently utilize the All Out Attack option in combat are usually refered as **brawlers**.
           - es:
               name: Artes marciales de poder
               description: |-
                 A medida que un Personaje mejora su habilidad en el Artes marciales de poder Especialidad, obtiene los beneficios del Rango como se describe a continuación. Nota: Estos beneficios solo se aplican cuando el Personaje pelea desarmado o con implementos de artes marciales adecuados. La esencia de las artes marciales orientadas al poder radica en la movilización eficiente de la masa corporal total mediante la alineación estructural y la secuencia cinética explosiva. Estos estilos tratan el cuerpo como una unidad única y rígida en el momento del impacto, utilizando el suelo como punto de apoyo para canalizar la energía.
-                ▶ Abrumador: esta habilidad se puede utilizar para determinar el éxito de un intento de dominar a un oponente. Brevemente, dominar es una forma de ataque desarmado realizado simultáneamente por uno o más aliados que intentan agarrar y contener a un solo oponente. Si un solo atacante intenta dominar a otro Personaje, su prueba de habilidad Combate cuerpo a cuerpo se realiza con una penalización de +1. Cada atacante adicional que participe en el mismo intento abrumador proporciona una bonificación acumulativa de -1 a la prueba de habilidad. Abrumar no causa daño, pero inmoviliza a un oponente mientras uno de los atacantes continúe manteniendo un fuerte control sobre ese oponente.
-                ▶ Apalancamiento masivo: cuando un Personaje alcanza la habilidad Rango 1, aprende a aprovechar adecuadamente su masa. Esto aumenta su daño base sin armas a
-                **d4s/d4w/d6+1w**.
-                ▶ Alto Impulso: Cuando un Personaje alcanza Rango 3, un éxito de Asombroso en un ataque obliga al objetivo a realizar una prueba de nocaut (Firmeza o Aguante) con un +1 Penalización de paso. Esta penalización aumenta a +2 en Rango 6, +3 en Rango 9 y +4 en Rango 12.
-                ▶ Eficiencia estructural: cuando un Personaje alcanza Rango 4, todo el daño sin armas aumenta en +1. Esta bonificación aumenta en un +1 adicional en Rango 8 y nuevamente en Rango 12.
-                ⊗ Modificador de resistencia: en Rangos más alto, la habilidad proporciona una mejora al modificador de resistencia de fuerza de Personaje. Mejora en +1 en Rango 4, en +1 nuevamente en Rango 8 y en +1 nuevamente en Rango 12. Este aumento no se acumula con bonificaciones similares proporcionadas por las habilidades especiales de Otros Combate cuerpo a cuerpo.
-                ▶ Poder de corto alcance (Fajin): cuando un Personaje alcanza Rango 5, aprende a golpear de manera efectiva incluso si sus manos están atadas o inutilizables utilizando sus hombros, rodillas o cabeza.
-                ▶ Destrucción estructural: cuando un Personaje alcanza Rango 8, si utiliza un ataque total, el objetivo debe tirar sus dados de armadura dos veces y obtener el peor resultado. Esto se aplica a las armaduras estándar.
-                ▶ Maestro de la Fuerza: Cuando un Personaje alcanza Rango 12, la penalización de armadura "tirar dos veces/tomar peor" ahora se aplica a las armaduras Armas de energía y a las defensas sobrenaturales.
-                **Nota:** Los practicantes que utilizan con frecuencia la opción All Out Attack en Combate generalmente se llaman luchadores.
+
+                ### abrumador
+
+                Esta habilidad se puede utilizar para determinar el éxito de un intento de dominar a un oponente. Brevemente, dominar es una forma de ataque desarmado realizado simultáneamente por uno o más aliados que intentan agarrar y contener a un solo oponente. Si un solo atacante intenta dominar a otro Personaje, su prueba de habilidad Combate cuerpo a cuerpo se realiza con una penalización de +1. Cada atacante adicional que participe en el mismo intento abrumador proporciona una bonificación acumulativa de -1 a la prueba de habilidad. Abrumar no causa daño, pero inmoviliza a un oponente mientras uno de los atacantes continúe manteniendo un fuerte control sobre ese oponente.
+
+                ### Beneficios de Rango
+                ⊗ **Rango 1 [Apalancamiento masivo]** Cuando un Personaje alcanza la habilidad Rango 1, aprende a aprovechar adecuadamente su masa. Esto aumenta su daño base sin armas a **d4s/d4w/d6+1w**.
+
+                ▶ **Rango 3 [Alto Impulso]** Cuando un Personaje alcanza Rango 3, un éxito de Asombroso en un ataque obliga al objetivo a realizar una prueba de nocaut (Firmeza o Aguante) con un +1 Penalización de paso. Esta penalización aumenta a +2 en Rango 6, +3 en Rango 9 y +4 en Rango 12.
+
+                ▶ **Rangos 4, 8, 12 [Eficiencia estructural]** Cuando un Personaje alcanza Rango 4, todo el daño sin armas aumenta en +1. Esta bonificación aumenta en un +1 adicional en Rango 8 y nuevamente en Rango 12.
+
+                ⊗ **Rangos 4, 8, 12 [Modificador de resistencia]** En un Rangos más alto, la habilidad proporciona una mejora al modificador de resistencia a la fuerza de un Personaje. Mejora en +1 en Rango 4, en +1 nuevamente en Rango 8 y en +1 nuevamente en Rango 12. Este aumento no se acumula con bonificaciones similares proporcionadas por las habilidades especiales de Otros Combate cuerpo a cuerpo.
+
+                ▶ **Rango 5 [Poder de corto alcance (Fajin)]** Cuando un Personaje alcanza Rango 5, aprende a golpear de manera efectiva incluso si sus manos están atadas o inutilizables utilizando sus hombros, rodillas o cabeza.
+
+                ▶ **Rango 8 [Destrucción estructural]** Cuando un Personaje alcanza Rango 8, si utiliza un ataque total, el objetivo debe tirar sus dados de armadura dos veces y obtener el peor resultado. Esto se aplica sólo a armaduras que no son Armas de energía.
+
+                ▶ **Rango 12 [Master of Force]** Cuando un Personaje alcanza Rango 12, la penalización de armadura "tirar dos veces/tomar peor" ahora se aplica a las armaduras Armas de energía, bioarmaduras y todo tipo de defensas personales que se traducen como una tirada de armadura.
+
+                > Los practicantes que utilizan con frecuencia la opción All Out Attack en Combate generalmente se denominan **brawlers**.
         trained_only: false
       powered-weapons:
         attribute: STR
@@ -3975,19 +4045,29 @@ items:
           - en:
               name: Powered
               description: |-
-                As a character improves his ability in the powered specialty skill, he gains rank benefits as described below. Note: These benefits only apply when the character is using a weapon covered by this skill. Due to the inherent complexity of powered weapons they are more fragile than their counterparts; this requires the user to be more careful when parrying, resulting in a +2 step penalty on parry checks.
-                ⊗ Resistance Modifier: At higher ranks, the skill provides an improvement to a character''s Strength resistance modifier. It improves by +1 at rank 4, by +1 again at rank 8, and by +1 again at rank 12. This increase doesn''t stack with similar bonuses provided by other melee combat specialty skills.
-                ▶ Reaction Parry: When a character reaches rank 4, he can attempt to parry whenever a melee or unarmed attack is used against him. The parry attempt uses up the character''s next available action.
-                ▶ Double-Strike: When a character reaches skill rank 6, he learns to make a double-strike against a target with a successful skill check. The player rolls one control die and two situation dice. The first situation die is the base modifier with a +1 step penalty; the second situation die is the base modifier with a +2 step penalty.
-                ▶ Multistrike: When a character reaches skill rank 9, he learns to make multiple attacks in a single phase. The character can strike with a melee weapon three times in a phase. These attacks can be directed at a single target or at up to three separate targets within two meters of the character.
+                As a character improves his ability in the powered specialty skill, he gains rank benefits as described below. Note: These benefits only apply when the character is using a weapon covered by this skill. Due to the inherent complexity of powered weapons they are more fragile than their counterparts; this requires the user to be more careful when parrying, resulting in a +2 step penalty on parry checks. This penalty do not apply to bioweapons.
+
+                ### Rank Benefits
+                ⊗ **Ranks 4, 8, 12 [Resistance Modifier]** At higher ranks, the skill provides an improvement to a character's Strength resistance modifier. It improves by +1 at rank 4, by +1 again at rank 8, and by +1 again at rank 12. This increase doesn't stack with similar bonuses provided by other melee combat specialty skills.
+
+                ▶ **Rank 4 [Reaction Parry]** When a character reaches rank 4, he can attempt to parry whenever a melee or unarmed attack is used against him. The parry attempt uses up the character's next available action.
+
+                ▶ **Rank 6 [Double-Strike]** When a character reaches skill rank 6, he learns to make a double-strike against a target with a successful skill check. The player rolls one control die and two situation dice. The first situation die is the base modifier with a +1 step penalty; the second situation die is the base modifier with a +2 step penalty.
+
+                ▶ **Rank 9 [Multistrike]** When a character reaches skill rank 9, he learns to make multiple attacks in a single phase. The character can strike with a melee weapon three times in a phase. These attacks can be directed at a single target or at up to three separate targets within two meters of the character.
           - es:
               name: Armas de energía
               description: |-
-                A medida que un Personaje mejora su habilidad en el Armas de energía Especialidad, obtiene los beneficios de Rango como se describe a continuación. Nota: Estos beneficios solo se aplican cuando el Personaje usa un arma cubierta por esta habilidad. Debido a la complejidad inherente de las armas Armas de energía, son más frágiles que sus contrapartes; esto requiere que el usuario tenga más cuidado al parar, lo que resulta en un +2 Penalización de paso en las pruebas de parada.
-                ⊗ Modificador de resistencia: en Rangos más alto, la habilidad proporciona una mejora al modificador de resistencia de fuerza de Personaje. Mejora en +1 en Rango 4, en +1 nuevamente en Rango 8 y en +1 nuevamente en Rango 12. Este aumento no se acumula con bonificaciones similares proporcionadas por las habilidades especiales de Otros Combate cuerpo a cuerpo.
-                ▶ Parada de reacción: cuando un Personaje alcanza Rango 4, puede intentar parar cada vez que se usa un ataque cuerpo a cuerpo o desarmado contra él. El intento de parada consume la siguiente acción disponible del Personaje.
-                ▶ Doble golpe: cuando un Personaje alcanza la habilidad Rango 6, aprende a realizar un doble golpe contra un objetivo con una prueba de habilidad exitosa. El jugador tira un Dado de Control y dos dados de situación. El primer Dado de Situación es el modificador base con un +1 Penalización de paso; el segundo Dado de Situación es el modificador base con un +2 Penalización de paso.
-                ▶ Multigolpe: Cuando un Personaje alcanza la habilidad Rango 9, aprende a realizar múltiples ataques en una sola fase. El Personaje puede atacar con un arma cuerpo a cuerpo tres veces en una fase. Estos ataques pueden dirigirse a un solo objetivo o hasta a tres objetivos separados dentro de dos metros del Personaje.
+                A medida que un Personaje mejora su habilidad en el Armas de energía Especialidad, obtiene los beneficios de Rango como se describe a continuación. Nota: Estos beneficios solo se aplican cuando el Personaje usa un arma cubierta por esta habilidad. Debido a la complejidad inherente de las armas Armas de energía, son más frágiles que sus contrapartes; esto requiere que el usuario tenga más cuidado al parar, lo que resulta en un +2 Penalización de paso en las pruebas de parada. Esta penalización no se aplica a las armas biológicas.
+
+                ### Beneficios de Rango
+                ⊗ **Rangos 4, 8, 12 [Modificador de resistencia]** En Rangos más alto, la habilidad proporciona una mejora al modificador de resistencia a Fuerza de Personaje. Mejora en +1 en Rango 4, en +1 nuevamente en Rango 8 y en +1 nuevamente en Rango 12. Este aumento no se acumula con bonificaciones similares proporcionadas por las habilidades especiales de Otros Combate cuerpo a cuerpo.
+
+                ▶ **Rango 4 [Parada de reacción]** Cuando un Personaje alcanza Rango 4, puede intentar parar siempre que se use un ataque cuerpo a cuerpo o desarmado contra él. El intento de parada consume la siguiente acción disponible del Personaje.
+
+                ▶ **Rango 6 [Double-Strike]** Cuando un Personaje alcanza la habilidad Rango 6, aprende a realizar un doble golpe contra un objetivo con una prueba de habilidad exitosa. El jugador tira un Dado de Control y dos dados de situación. El primer Dado de Situación es el modificador base con un +1 Penalización de paso; el segundo Dado de Situación es el modificador base con un +2 Penalización de paso.
+
+                ▶ **Rango 9 [Multistrike]** Cuando un Personaje alcanza la habilidad Rango 9, aprende a realizar múltiples ataques en una sola fase. El Personaje puede atacar con un arma cuerpo a cuerpo tres veces en una fase. Estos ataques pueden dirigirse a un solo objetivo o hasta a tres objetivos separados dentro de dos metros del Personaje.
         trained_only: false
     trained_only: false
   modern-ranged-weapons:

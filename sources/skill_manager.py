@@ -92,11 +92,15 @@ def cmd_push(args):
                     changes += 1
 
             # Update Description (Using comparison-safe cleaning)
-            en_loc = target['localized'][0]['en']
-            if clean_text(en_loc.get('description')) != clean_text(raw_desc):
+            en_loc = next((loc['en'] for loc in target['localized'] if 'en' in loc), None)
+            es_loc = next((loc['es'] for loc in target['localized'] if 'es' in loc), None)
+
+            if en_loc and clean_text(en_loc.get('description')) != clean_text(raw_desc):
                 # We save the raw description to preserve paragraph breaks, 
                 # but only if the actual content is different.
                 en_loc['description'] = raw_desc
+                if es_loc:
+                    es_loc['description'] = "" # Clear translation to trigger re-translation
                 changes += 1
                 print(f"[UPDATE DESC] {broad_key}{'' if name.startswith('_') else '/' + name}")
 
@@ -122,15 +126,17 @@ def cmd_pull(args):
         broad_folder.mkdir(exist_ok=True)
         try:
             meta = {k: v for k, v in broad_val.items() if k not in ['items', 'localized']}
-            meta['name'] = broad_val['localized'][0]['en'].get('name', broad_key)
-            desc = broad_val['localized'][0]['en'].get('description', '')
+            en_loc = next((loc['en'] for loc in broad_val['localized'] if 'en' in loc), {})
+            meta['name'] = en_loc.get('name', broad_key)
+            desc = en_loc.get('description', '')
             save_file_with_frontmatter(broad_folder / f"_{broad_key}.md", meta, desc, args.overwrite)
             for spec_key, spec_val in broad_val.get('items', {}).items():
                 s_meta = {k: v for k, v in spec_val.items() if k not in ['localized']}
-                s_meta['name'] = spec_val['localized'][0]['en'].get('name', spec_key)
-                s_desc = spec_val['localized'][0]['en'].get('description', '')
+                s_en_loc = next((loc['en'] for loc in spec_val['localized'] if 'en' in loc), {})
+                s_meta['name'] = s_en_loc.get('name', spec_key)
+                s_desc = s_en_loc.get('description', '')
                 save_file_with_frontmatter(broad_folder / f"{spec_key}.md", s_meta, s_desc, args.overwrite)
-        except (KeyError, IndexError): pass
+        except (KeyError, StopIteration): pass
 
 def cmd_diff(args):
     yaml_engine = get_yaml_engine()
@@ -149,7 +155,8 @@ def cmd_diff(args):
                 if 'items' not in data['items'][broad_key] or name not in data['items'][broad_key]['items']: continue
                 target = data['items'][broad_key]['items'][name]
             
-            yaml_text = clean_text(target['localized'][0]['en'].get('description', ''))
+            en_loc = next((loc['en'] for loc in target['localized'] if 'en' in loc), {})
+            yaml_text = clean_text(en_loc.get('description', ''))
             file_text = clean_text(file_raw)
             
             diff_found = False
