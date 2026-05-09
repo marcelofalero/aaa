@@ -30,14 +30,14 @@ Este Especialidad le da a un Personaje cierta fluidez en un idioma específico. 
 ## Psiónica
 {{< specialty attr="INT" untrained="no" cost="3" >}}
 
-Esta habilidad le da al personaje un conocimiento práctico de las habilidades psiónicas, quizás incluso más allá de lo que la cultura del personaje entiende en su conjunto. El grado de éxito alcanzado en una prueba de habilidad se relaciona con la calidad o cantidad de información disponible o comprendida por el personaje.
+Esta habilidad le da al Personaje un conocimiento práctico de las habilidades psiónicas, quizás incluso más allá de lo que el Cultura del Personaje entiende en su conjunto. El grado de éxito alcanzado en una prueba de habilidad se relaciona con la calidad o cantidad de información disponible o comprendida por el Personaje.
 
 ---
 
 ## Operación de Computadoras
 {{< specialty attr="INT" untrained="no" cost="2" >}}
 
-Esta habilidad especial permite a un personaje mejorar su capacidad para hacer que las computadoras funcionen, específicamente su capacidad para aprovechar al máximo el software (incluido el sistema operativo) que está instalado en una computadora. El grado de éxito se relaciona con la calidad o cantidad de información a la que se accede o recupera, o la velocidad con la que el operador puede realizar una tarea.
+Este Especialidad permite que un Personaje mejore su capacidad para hacer que las computadoras funcionen, específicamente su capacidad para aprovechar al máximo el software (incluido el sistema operativo) que está instalado en una computadora. El grado de éxito se relaciona con la calidad o cantidad de información a la que se accede o recupera, o la velocidad con la que el operador puede realizar una tarea.
 
 ---
 
@@ -54,26 +54,26 @@ Con este Especialidad, un Personaje puede perfeccionar sus habilidades para usar
 ## Primeros Auxilios
 {{< specialty attr="INT" untrained="no" cost="3" >}}
 
-Esta habilidad especializada representa capacitación básica en técnicas de primeros auxilios, incluido el uso de paquetes de trauma, botiquines de primeros auxilios y otros artículos médicos de uso general. No proporciona al personaje la capacidad de utilizar herramientas quirúrgicas especializadas o equipo médico avanzado.
+Este Especialidad representa capacitación básica en técnicas de primeros auxilios, incluido el uso de paquetes de trauma, botiquines de primeros auxilios y artículos médicos de uso general Otros. No proporciona al Personaje la capacidad de utilizar herramientas quirúrgicas especializadas o equipo médico avanzado.
 
-### Curar el daño por aturdimiento
-Un personaje puede utilizar primeros auxilios para eliminar el daño por aturdimiento de sí mismo o de otra persona. Una prueba de habilidad exitosa restaura **2, 3 o 4 puntos de aturdimiento** dependiendo del éxito (ordinario, bueno o sorprendente). Esto sólo funciona en alguien que está consciente.
+### Curar el daño de Aturdimiento
+Un Personaje puede usar primeros auxilios para eliminar el daño del Aturdimiento a sí mismo o a otra persona. Una prueba de habilidad exitosa restaura **2, 3 o 4 puntos Aturdimiento** dependiendo del éxito (Ordinario, Bueno o Asombroso). Esto sólo funciona en alguien que está consciente.
 
 ### Recuperación por nocaut
-Un nocaut ocurre cuando los puntos de aturdimiento de un personaje se agotan. Una prueba de habilidad exitosa devuelve al personaje la conciencia y lo restaura.
-**1, 2 o 3 puntos de aturdimiento**, según el grado de éxito.
+Un nocaut se produce cuando se agotan los puntos Aturdimiento de un Personaje. Una prueba de habilidad exitosa devuelve la conciencia a un Personaje y lo restaura.
+**1, 2 o 3 puntos Aturdimiento**, según el grado de éxito.
 
-### Curar daños por heridas
+### Curar el daño de Herida
 La habilidad de primeros auxilios se puede utilizar para curar heridas, aunque se requiere un botiquín de primeros auxilios o un paquete de traumatología.
-- **Botiquín de primeros auxilios:** Se requiere una prueba de habilidad compleja de **Buena complejidad** (1 herida curada al finalizar).
-- **Paquete de Trauma:** Se requiere una prueba de habilidad compleja de **complejidad ordinaria** (2 heridas curadas al finalizar).
-- **Fallo crítico:** Si se utiliza un paquete de trauma, el paciente sufre 1 herida en lugar de que se curen las heridas y el paquete se arruina.
+- **Botiquín de primeros auxilios:** Se requiere una prueba de habilidad compleja de **complejidad Bueno** (1 Herida curado al finalizar).
+- **Paquete de Trauma:** Se requiere una prueba de habilidad compleja de **complejidad Ordinario** (2 heridas curadas al finalizar).
+- **Fallo Crítico:** Si se utiliza un paquete de trauma, el paciente sufre 1 Herida en lugar de que se curen las heridas y el paquete se arruina.
 
 ### Morir
-Se considera que un personaje con cualquier cantidad de daño Mortal está muriendo. Un personaje que usa un botiquín de primeros auxilios o un paquete de trauma y realiza una prueba exitosa de habilidad de primeros auxilios puede **estabilizar el daño Mortal**, eliminando la necesidad de que el personaje realice una prueba de resistencia al final de la escena actual. (Nota: la cirugía aún es necesaria para restaurar la salud de un personaje moribundo).
+Se considera que un Personaje con cualquier cantidad de daño Mortal está muriendo. Un Personaje que usa un botiquín de primeros auxilios o un paquete de trauma y realiza una prueba de habilidad de primeros auxilios exitosa puede **estabilizar el daño del Mortal**, eliminando la necesidad de que el Personaje realice una prueba de Aguante-Resistencia al final de la escena actual. (Nota: la cirugía aún es necesaria para restaurar la salud de un Personaje moribundo).
 
-### Beneficios de rango
-⊗ **Rango 4, 8, 12 [Primeros auxilios mejorados]** A medida que un personaje alcanza rangos de habilidad más altos, se vuelve más competente para brindar ayuda a pacientes heridos. Esto reduce la penalización del dado de situación en **1 paso en el rango 4**, **2 pasos en el rango 8** y **3 pasos en el rango 12**.
+### Beneficios de Rango
+⊗ **Rango 4, 8, 12 [Primeros auxilios mejorados]** A medida que Personaje alcanza una mayor habilidad Rangos, se vuelve más competente para brindar ayuda a pacientes lesionados. Esto reduce la penalización de Dado de Situación en **1 paso en Rango 4**, **2 pasos en Rango 8** y **3 pasos en Rango 12**.
 
 ---
 

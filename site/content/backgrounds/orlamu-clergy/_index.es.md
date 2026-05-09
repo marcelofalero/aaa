@@ -7,7 +7,7 @@ layout = "background"
 Fuiste criado en los serenos templos de los Fraal, estudiando la conexión entre la mente y el cosmos.
 
 ## Paquete de Habilidades:
-* [Resolve]({{< relref "/skills/resolve/" >}})
+* [Firmeza]({{< relref "/skills/resolve/" >}})
 
 ## Habilidades de Especialidad Favorecidas:
 * [Telepatía-Contacto] ({{< relref "/psionics/telepathy/#contact" >}})

@@ -12,43 +12,43 @@ Esta amplia habilidad brinda capacitación en los conceptos básicos de cómo co
 Esta aplicación apunta a estructuras estacionarias (edificios, puentes, búnkeres) o naves masivas (naves espaciales, plataformas orbitales, acorazados terrestres). Este es un proceso de dos etapas.
 
 #### Etapa A: Instalación
-El personaje identifica puntos de carga o mamparos críticos y asegura las cargas. Esta es una **prueba de habilidad compleja**. Una **Falla crítica** durante esta etapa significa que el dispositivo explota inmediatamente, causando daño ordinario (se aplican las reglas de armadura normales).
-- **Complejidad:** 4 éxitos para estructuras simples; Más de 8 éxitos para búnkeres reforzados o naves capitales.
-- **Dificultad:** Ordinaria (o según lo determine el DJ en función de los peligros ambientales).
+El Personaje identifica puntos de carga o mamparos críticos y asegura las cargas. Esta es una **prueba de habilidad compleja**. Un **Fallo Crítico** durante esta etapa significa que el dispositivo explota inmediatamente, causando daño Ordinario (se aplican las reglas de armadura normales).
+- **Complejidad:** 4 Éxitos para estructuras simples; 8+ Éxitos para búnkeres reforzados o naves capitales.
+- **Dificultad:** Ordinario (o según lo determine el DJ en función de los peligros ambientales).
 
 #### Etapa B: Detonación (La verificación del gatillo)
-Una vez que se completa la instalación y se activan los explosivos, el personaje realiza una prueba final de **Demoliciones - Colocar explosivos** para determinar la eficacia de la colocación.
-- **Falla crítica:** El dispositivo no funciona (no explota).
+Una vez que se completa la instalación y se activan los explosivos, el Personaje realiza una verificación final de **Demoliciones: colocación de explosivos** para determinar la eficacia de la colocación.
+- **Fallo Crítico:** El dispositivo no funciona (no explota).
 - **Fallo:** La explosión se retrasa; verifique cada 5 minutos hasta lograr un resultado diferente.
-- **Éxito ordinario:** La explosión causa **Daño ordinario** a la estructura o sección.
-- **Buen éxito:** La explosión causa **Buen daño** a la estructura o sección.
-- **Éxito asombroso:** La explosión causa **Daño asombroso** a la estructura o sección.
+- **Éxito Ordinario:** La explosión causa **daño Ordinario** a la estructura o sección.
+- **Éxito Bueno:** La explosión causa **daño Bueno** a la estructura o sección.
+- **Éxito Asombroso:** La explosión causa **daño Asombroso** a la estructura o sección.
 
-**Sinergia:** **Ciencias físicas: física** se puede utilizar como habilidad auxiliar. Un éxito proporciona una **bonificación de -1 paso** a las pruebas de instalación y detonación, ya que el personaje está mejor preparado para comprender las fortalezas y debilidades de los materiales.
+**Sinergia:** **Ciencias Físicas--Física** se puede utilizar como habilidad auxiliar. Un éxito proporciona un **-1 Bonificación de paso** para las comprobaciones de instalación y detonación, ya que el Personaje está mejor preparado para comprender las fortalezas y debilidades de los materiales.
 
 ### Minas y trampas antivehiculares
 Estos dispositivos suelen causar daños concentrados en lugar de tener un radio de explosión. Este es un proceso de dos etapas.
 
 #### Etapa A: Instalación
-El personaje identifica la ubicación óptima y afina el mecanismo de disparo. Esta es una **prueba de habilidad compleja**. Una **Falla crítica** significa que el dispositivo explota y causa daño normal.
-- **Complejidad:** 2 éxitos para minas/trampas simples; 4 éxitos para trampas complejas.
-- **Dificultad:** Ordinaria (o según lo determine el DJ).
+El Personaje identifica la ubicación óptima y afina el mecanismo de disparo. Esta es una **prueba de habilidad compleja**. Un **Fallo Crítico** significa que el dispositivo explota, causando daño Ordinario.
+- **Complejidad:** 2 Éxitos para minas/trampas simples; 4 Éxitos para trampas complejas.
+- **Dificultad:** Ordinario (o según lo determine el DJ).
 
 #### Etapa B: Detonación (La verificación del gatillo)
 Una vez activado, haz una prueba final de **Demoliciones - Colocar explosivos** para determinar la eficacia.
-- **Fallo crítico:** El dispositivo es un fracaso.
+- **Fallo Crítico:** El dispositivo es un fracaso.
 - **Falla:** El dispositivo no se activa pero permanece armado.
-- **Éxito ordinario:** La explosión causa **Daño ordinario** al vehículo.
-- **Buen éxito:** La explosión causa **Buen daño** al vehículo.
-- **Éxito asombroso:** La explosión causa **Daño asombroso** al vehículo.
+- **Éxito Ordinario:** La explosión causa **daño Ordinario** al vehículo.
+- **Éxito Bueno:** La explosión causa **daño Bueno** al vehículo.
+- **Éxito Asombroso:** La explosión causa **daño Asombroso** al vehículo.
 
 ### Minas y trampas antipersonal
 Estos dispositivos están diseñados para causar daños en un área. Una vez activados, causan daño según la distancia desde el centro del dispositivo.
 
 #### Instalación
-El personaje identifica la mejor ubicación y afina el disparador. Esta es una **prueba de habilidad compleja**. Una **Falla crítica** significa que el dispositivo explota y causa daño normal.
-- **Complejidad:** 2 éxitos para minas/trampas simples; 4 éxitos para trampas complejas.
-- **Dificultad:** Ordinaria.
+El Personaje identifica la mejor ubicación y afina el disparador. Esta es una **prueba de habilidad compleja**. Un **Fallo Crítico** significa que el dispositivo explota, causando daño Ordinario.
+- **Complejidad:** 2 Éxitos para minas/trampas simples; 4 Éxitos para trampas complejas.
+- **Dificultad:** Ordinario.
 
 ### Ocultando
 El proceso de instalación sólo coloca el dispositivo. Para ocultarlo correctamente, el instalador o un aliado debe realizar una verificación de **Operaciones encubiertas--Ocultar** como parte del proceso de instalación.
@@ -76,8 +76,8 @@ La capacidad de construir paquetes de demolición desde cero o reutilizar artill
 
 **Potencia:** Determinada mediante una prueba de habilidad según la [Tabla P23: Explosivos improvisados].
 
-### Sinergia [Ciencias físicas—Química]
-Un Personaje con conocimientos de Química puede optimizar aún más una mezcla explosiva seleccionando los mejores ingredientes. Consulte [Ciencias físicas—Química]({{< relref "skills/Físico-science#chemistry" >}}) para obtener más información.
+### Sinergia [Ciencias Físicas—Química]
+Un Personaje con conocimientos de Química puede optimizar aún más una mezcla explosiva seleccionando los mejores ingredientes. Consulte [Ciencias Físicas—Química]({{< relref "skills/physical-science#chemistry" >}}) para obtener más información.
 
 ---
 
@@ -90,8 +90,8 @@ Competencia avanzada en el despliegue de cargas fabricadas.
 
 ▶ **Rango 6 [Evitación de desastres]** Cuando el Personaje obtiene un **Fallo Crítico** durante la instalación por primera vez durante una verificación compleja, el resultado se trata como un simple **Fallo**.
 
-### Sinergia [Ciencias físicas—Física]
-Un Personaje con conocimientos de Física puede optimizar aún más una mezcla explosiva seleccionando los mejores ingredientes. Consulte [Ciencias físicas—Física]({{< relref "skills/Físico-science#physics" >}}) para obtener más información.
+### Sinergia [Ciencias Físicas—Física]
+Un Personaje con conocimientos de Física puede optimizar aún más una mezcla explosiva seleccionando los mejores ingredientes. Consulte [Ciencias Físicas—Física]({{< relref "skills/physical-science#physics" >}}) para obtener más información.
 
 ---
 

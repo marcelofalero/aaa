@@ -74,10 +74,10 @@ def apply_mapping(text, mapping):
     placeholders = []
     def store_block(match):
         placeholders.append(match.group(0))
-        return f"__BLOCK_PLACEHOLDER_{len(placeholders)-1}__"
+        return f"@BLOCK_PLACEHOLDER_{len(placeholders)-1}@"
     
-    # Protect Markdown links and Hugo shortcodes
-    block_pattern = r'(\[[\s\S]*?\]\s*\([\s\S]*?\)|{{<[\s\S]*?>}})'
+    # Protect Markdown URLs and Hugo shortcodes
+    block_pattern = r'(\]\s*\([\s\S]*?\)|{{<[\s\S]*?>}})'
     text_with_placeholders = re.sub(block_pattern, store_block, text, flags=re.DOTALL)
     
     # Sort terms by length descending to avoid partial matches
@@ -100,7 +100,7 @@ def apply_mapping(text, mapping):
         idx = int(match.group(1))
         return placeholders[idx]
     
-    return re.sub(r'__BLOCK_PLACEHOLDER_(\d+)__', restore_block, text_with_placeholders)
+    return re.sub(r'@BLOCK_PLACEHOLDER_(\d+)@', restore_block, text_with_placeholders)
 
 def get_localized(node, lang):
     """Extracts the language-specific block from the 'localized' list."""

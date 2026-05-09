@@ -50,7 +50,7 @@ Este Especialidad representa la capacidad del Personaje para liderar a otros en 
 
 Liderar con el ejemplo y cambiar la moral de un grupo.
 
-**Pivote de moral:** A diferencia de la habilidad general, **Inspirar** se puede usar en objetivos **Hostiles** o **Combativos** para cambiar su actitud según la [Tabla P25: Efectos de las habilidades de encuentro]({{< relref "core-mechanics/useful-tables#table-p25-encounter-skill-effects" >}}).
+**Pivote de moral:** A diferencia de la habilidad general, **Inspirar** se puede usar en objetivos **hostiles** o **combativos** para cambiar su actitud según la [Tabla P25: Efectos de habilidades de encuentro]({{< relref "core-mechanics/useful-tables#table-p25-encounter-skill-effects" >}}).
 
 ### Beneficios de Rango
 ⊗ **Efecto aumentado:** Rangos proporciona una bonificación Dado de Situación a la prueba: Rango 4 (-1), Rango 8 (-2), Rango 12 (-3).

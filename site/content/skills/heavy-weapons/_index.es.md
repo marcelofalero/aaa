@@ -24,14 +24,14 @@ Capacitación en el uso de armamento pesado (portátil o montado en trípode) qu
 ## Fuego directo
 {{< specialty attr="STR" untrained="yes" cost="4" >}}
 
-Esta habilidad especial permite al personaje mejorar su competencia con armas pesadas de fuego directo. Estas armas funcionan igual que las armas de fuego normales, lo que requiere que el usuario apunte a un objetivo. Las armas pesadas de fuego directo incluyen armas de fuego de gran calibre, pistolas de plasma y asaltantes.
+Este Especialidad permite a un Personaje mejorar su competencia con Armas pesadas de fuego directo. Estas armas funcionan igual que las armas de fuego normales, lo que requiere que el usuario apunte a un objetivo. Los Armas pesadas de fuego directo incluyen armas de fuego de gran calibre, pistolas de plasma y asaltantes.
 
 ---
 
 ## Fuego indirecto
 {{< specialty attr="STR" untrained="yes" cost="4" >}}
 
-Esta habilidad especial permite al personaje mejorar su competencia con armas pesadas de fuego indirecto. Estas armas pueden disparar por encima o alrededor de obstáculos; Ofrecen un ataque de efecto de área en lugar de un ataque contra un objetivo específico. Las armas pesadas de fuego indirecto incluyen lanzagranadas, lanzacohetes, misiles de hombro y morteros.
+Este Especialidad permite a un Personaje mejorar su competencia con Armas pesadas de fuego indirecto. Estas armas pueden disparar por encima o alrededor de obstáculos; Ofrecen un ataque de efecto de área en lugar de un ataque contra un objetivo específico. Los Armas pesadas de fuego indirecto incluyen lanzagranadas, lanzacohetes, misiles de hombro y morteros.
 
 ---
 

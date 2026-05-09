@@ -6,7 +6,7 @@ type = "skill"
 layout = "list"
 +++
 
-Esta amplia habilidad representa la fuerza de voluntad interna de un personaje. Es la capacidad de soportar dificultades físicas, resistir la tensión Mental y mantenerse firme en sus convicciones independientemente de la presión o la tentación. Entrenar en Firmeza permite a un personaje estabilizar su mente durante situaciones de alto estrés y recuperarse más eficientemente del impacto inicial del trauma corporal. Se utiliza para defenderse del estrés o ataques mentales, para resistir daños físicos y para apegarse a su propia mente y convicciones.
+Esta amplia habilidad representa la fuerza de voluntad interna de un Personaje. Es la capacidad de soportar las dificultades, resistir la tensión y permanecer firme en las propias convicciones sin importar la presión o la tentación. El entrenamiento en Firmeza permite a un Personaje estabilizar su mente durante situaciones de alto estrés y recuperarse más eficientemente del shock inicial del trauma corporal. Se utiliza para defenderse del estrés o los ataques de Mental, para resistir el daño de Físico y para apegarse a su propia mente y convicciones.
 
 ## Firmeza Mental
 {{< specialty attr="WIL" untrained="yes" cost="3" >}}

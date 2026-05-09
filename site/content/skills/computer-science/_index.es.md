@@ -22,18 +22,18 @@ Existen programas informáticos para realizar casi cualquier tarea imaginable. S
 ## Hacking
 {{< specialty attr="INT" untrained="no" cost="4" >}}
 
-La piratería es la capacidad de descifrar códigos informáticos y eludir la seguridad informática con el fin de obtener acceso a datos restringidos o sistemas informáticos seguros. El hackeo se puede realizar en una estación de computadora que esté físicamente conectada a los almacenes de datos en cuestión, o se puede realizar desde una ubicación distante creando un vínculo a través de una red de algún tipo. Se utiliza con mayor frecuencia para recuperar datos seguros, para ingresar y tomar el control de un sistema informático o para realizar algún tipo de sabotaje, como borrar archivos o introducir algún tipo de virus. Esta habilidad especial permite a un personaje equipado con una computadora realizar las tareas mencionadas anteriormente. La propia habilidad del personaje y cualquier programa que se utilice pueden ayudarlo a navegar por los sistemas informáticos, superar la seguridad e incluso defenderse de otros operadores conectados a un sistema.
+La piratería es la capacidad de descifrar códigos informáticos y eludir la seguridad informática con el fin de obtener acceso a datos restringidos o sistemas informáticos seguros. El hackeo se puede realizar en una estación de computadora que esté físicamente conectada a los almacenes de datos en cuestión, o se puede realizar desde una ubicación distante creando un vínculo a través de una red de algún tipo. Se utiliza con mayor frecuencia para recuperar datos seguros, para ingresar y tomar el control de un sistema informático o para realizar algún tipo de sabotaje, como borrar archivos o introducir algún tipo de virus. Este Especialidad permite que un Personaje equipado con una computadora realice las tareas mencionadas anteriormente. La propia habilidad del Personaje y cualquier programa que se utilice pueden ayudar al Personaje a navegar por los sistemas informáticos, superar la seguridad e incluso defenderse contra los operadores del Otros conectados a un sistema.
 
-▶ Rango 4, 8, 12 [Efecto aumentado]: A medida que un personaje gana rangos en esta habilidad especializada, mejora su capacidad para realizar acciones relacionadas con la piratería. Esto se refleja en una **bonificación de dado de situación de -1 en el rango 4**, una bonificación de **-2 en el rango 8** y una bonificación de **-3 en el rango 12**.
+▶ Rango 4, 8, 12 [Efecto aumentado]: A medida que un Personaje gana Rangos en este Especialidad, mejora su capacidad para realizar acciones relacionadas con la piratería. Esto se refleja en una bonificación de **-1 Dado de Situación en Rango 4**, una bonificación de **-2 en Rango 8** y una bonificación de **-3 en Rango 12**.
 
 ---
 
 ## Hardware
 {{< specialty attr="INT" untrained="yes" cost="3" >}}
 
-Esta especialidad representa el conocimiento y la competencia de un personaje con los componentes físicos que componen una computadora. Comprender cómo funciona un sistema informático, poder configurar uno rápidamente, diseñar y construir su propia computadora y reparar equipos informáticos son algunas de las tareas que cubre esta habilidad.
+Esta especialidad representa el conocimiento y la competencia de un Personaje con los componentes Físico que componen una computadora. Comprender cómo funciona un sistema informático, poder configurar uno rápidamente, diseñar y construir su propia computadora y reparar equipos informáticos son algunas de las tareas que cubre esta habilidad.
 
-▶ Rango 4, 8, 12 [Efecto aumentado]: A medida que un personaje gana rangos en esta habilidad especializada, mejora su capacidad para reparar sistemas informáticos y trabajar con hardware informático de otras maneras. Esto se refleja en una **bonificación de dado de situación de -1 en el rango 4**, una bonificación de **-2 en el rango 8** y una bonificación de **-3 en el rango 12**.
+▶ Rango 4, 8, 12 [Efecto aumentado]: A medida que un Personaje gana Rangos en este Especialidad, mejora su capacidad para reparar sistemas informáticos y trabajar con hardware informático en forma Otros. Esto se refleja en una bonificación de **-1 Dado de Situación en Rango 4**, una bonificación de **-2 en Rango 8** y una bonificación de **-3 en Rango 12**.
 
 ---
 

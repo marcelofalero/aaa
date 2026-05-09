@@ -12,12 +12,12 @@ Si bien todos los que crecen alrededor de personas de Otros tienen alguna habili
 
 ### Especialidades
 Interacción incluye áreas específicas como:
-- [Regatear]({{< relref "#Regatear" >}})
+- [Regatear]({{< relref "#bargain" >}})
 - [Encanto]({{< relref "#charm" >}})
-- [Entrevista]({{< relref "#entrevista" >}})
-- [Intimidar]({{< relref "#intimidar" >}})
-- [Seducir]({{< relref "#seducir" >}})
-- [Burla]({{< relref "#burla" >}})
+- [Entrevista]({{< relref "#interview" >}})
+- [Intimidar]({{< relref "#intimidate" >}})
+- [Seducir]({{< relref "#seduce" >}})
+- [Burla]({{< relref "#taunt" >}})
 
 ### Modificadores de situación Interacción
 
@@ -30,7 +30,7 @@ Interacción incluye áreas específicas como:
 | Conocido | -1 paso |
 
 ### Mecánica
-Interacción es una **habilidad de encuentro**, lo que significa que cualquier prueba de habilidad tiene en cuenta la actitud inicial del objetivo (ver [Tabla P25: Efectos de las habilidades de encuentro]({{< relref "core-mechanics/useful-tables#table-p25-encounter-skill-effects" >}})).
+Interacción es una **habilidad de encuentro**, lo que significa que cualquier prueba de habilidad tiene en cuenta la actitud inicial del objetivo (consulte la [Tabla P25: Efectos de las habilidades de encuentro]({{< relref "core-mechanics/useful-tables#table-p25-encounter-skill-effects" >}})).
 
 - **Restricciones de objetivos:** Ni un Personaje **Combativo** ni un Personaje **Fanático** pueden verse influenciados por Interacción.
 - **Resistencia:** También se aplica el **modificador de resistencia a la voluntad** del objetivo. 
@@ -44,7 +44,7 @@ Interacción es una **habilidad de encuentro**, lo que significa que cualquier p
 
 Regatear representa la capacidad de Personaje para negociar un precio más barato por un objeto que quiere comprar o un mejor precio por uno que está vendiendo. También cubre negociaciones Negocios más formales. Una verificación exitosa mejora la posición del Personaje en la mesa de negociaciones.
 
-El grado de éxito determina quién obtiene el mejor resultado. Un éxito también cambia la actitud del objetivo como se muestra en la [Tabla P25: Efectos de las habilidades de encuentro] ({{< relref "core-mechanics/useful-tables#table-p25-encounter-skill-effects" >}}).
+El grado de éxito determina quién obtiene el mejor resultado. Un éxito también cambia la actitud del objetivo como se muestra en la [Tabla P25: Efectos de las habilidades de encuentro]({{< relref "core-mechanics/useful-tables#table-p25-encounter-skill-effects" >}}).
 
 ### Modificadores de situación Regatear
 
@@ -76,7 +76,7 @@ El grado de éxito determina quién obtiene el mejor resultado. Un éxito tambi�
 
 La habilidad de encantar representa la capacidad de Personaje para cambiar las actitudes de aquellos con quienes interactúa presentándose de una manera agradable y amigable. Un Personaje con esta habilidad busca seducir a otros para que renuncien a algo (ya sean bienes materiales o simplemente un cambio de actitud) con palabras amables, una sonrisa ganadora y una actitud afable.
 
-Para realmente encantar a alguien, el Personaje debe lograr un resultado **Ordinario** o mejor. El resultado de la verificación determina cuánto mejora la actitud del objetivo, como se muestra en la [Tabla P25: Efectos de las habilidades de encuentro] ({{< relref "core-mechanics/useful-tables#table-p25-encounter-skill-effects" >}}).
+Para realmente encantar a alguien, el Personaje debe lograr un resultado **Ordinario** o mejor. El resultado de la verificación determina cuánto mejora la actitud del objetivo, como se muestra en la [Tabla P25: Efectos de las habilidades de encuentro]({{< relref "core-mechanics/useful-tables#table-p25-encounter-skill-effects" >}}).
 
 > [!IMPORTANTE]
 > El encanto solo se puede usar en objetivos cuya actitud sea **Neutral** o **Amistosa**. Un Personaje no puede encantar a un objetivo **Hostil** o **Combativo**. Es posible que un Personaje necesite usar **Regatear**, **Entrevista** o **Intimidar** para cambiar la actitud de un Personaje a Neutral antes de intentar usar Encanto.
@@ -88,7 +88,7 @@ Para realmente encantar a alguien, el Personaje debe lograr un resultado **Ordin
 
 La habilidad de entrevista representa la capacidad de un Personaje para obtener información de otro Personaje de forma no agresiva. Los periodistas, investigadores y funcionarios que llevan a cabo procedimientos administrativos estándar suelen utilizar las entrevistas. Se diferencia de **Investigar—Interrogar** (una habilidad basada en **Voluntad**) en la cantidad de agresividad y miedo que aplica el interrogador.
 
-El resultado de la verificación determina la cantidad de información que el Personaje puede obtener. Un éxito también cambia la actitud del objetivo como se muestra en la [Tabla P25: Efectos de las habilidades de encuentro] ({{< relref "core-mechanics/useful-tables#table-p25-encounter-skill-effects" >}}).
+El resultado de la verificación determina la cantidad de información que el Personaje puede obtener. Un éxito también cambia la actitud del objetivo como se muestra en la [Tabla P25: Efectos de las habilidades de encuentro]({{< relref "core-mechanics/useful-tables#table-p25-encounter-skill-effects" >}}).
 
 > [!IMPORTANTE]
 > La entrevista solo se puede utilizar con objetivos cuya actitud sea **Neutral**, **Amistosa** o mejor. Un Personaje no puede entrevistar a un objetivo **Hostil** o **Combativo**. Es posible que un Personaje necesite usar **Intimidar** o **Regatear** para cambiar su actitud a Neutral antes de intentar una entrevista.
@@ -100,7 +100,7 @@ El resultado de la verificación determina la cantidad de información que el Pe
 
 La habilidad de intimidar representa la capacidad de Personaje para amenazar a otro, ya sea por la presencia de Físico o por el peso de la autoridad. Intimidar permite a Personaje obligar a un oponente a retroceder, revelar información o cooperar de alguna manera debido al miedo.
 
-El **modificador de resistencia a la voluntad** del objetivo se aplica a la prueba de habilidad, junto con los modificadores Otros Interacción. Cuanto mayor sea el grado de éxito, más cooperación podrá generar el Personaje. Un éxito también cambia la actitud del objetivo como se muestra en la [Tabla P25: Efectos de las habilidades de encuentro] ({{< relref "core-mechanics/useful-tables#table-p25-encounter-skill-effects" >}}).
+El **modificador de resistencia a la voluntad** del objetivo se aplica a la prueba de habilidad, junto con los modificadores Otros Interacción. Cuanto mayor sea el grado de éxito, más cooperación podrá generar el Personaje. Un éxito también cambia la actitud del objetivo como se muestra en la [Tabla P25: Efectos de las habilidades de encuentro]({{< relref "core-mechanics/useful-tables#table-p25-encounter-skill-effects" >}}).
 
 > [!IMPORTANTE]
 > Intimidar se puede utilizar en objetivos de cualquier actitud **excepto** **Fanático** o **Combativo**. Un Personaje puede ser intimidado para que adopte una actitud Neutral o incluso Amistosa, dependiendo del resultado de la prueba de habilidad.
@@ -134,7 +134,7 @@ Un éxito en esta prueba de dote indica que la actitud del Personaje seducido se
 ## Provocar
 {{< specialty attr="PER" untrained="yes" cost="3" >}}
 
-La burla representa la capacidad de un personaje de intercambiar insultos para sacudir o enfurecer a un oponente. Un personaje que se burla de su oponente intenta obligarlo a cometer un error de juicio.
+La burla representa la capacidad de un Personaje de intercambiar insultos para sacudir o enfurecer a un oponente. Un Personaje que se burla de su oponente intenta obligarlo a cometer un error de juicio.
 
 ### Modificadores de situación de burla
 
@@ -145,11 +145,11 @@ La burla representa la capacidad de un personaje de intercambiar insultos para s
 | Neutro | 0 |
 | Amistoso | +1 paso |
 
-- Con un éxito **ordinario**, la provocación es efectiva y proporciona una **penalización +1** a la siguiente acción del objetivo.
+- Con un éxito **Ordinario**, la burla es efectiva y proporciona una **penalización +1** a la siguiente acción del objetivo.
 - En caso de éxito **Bueno**, la penalización es **+2**
 - En caso de éxito **Asombroso**, la penalización es **+3**.
 
-El éxito también enfurece al objetivo y cambia su actitud hacia **Combativo** (de Neutral a Hostil, por ejemplo). Después de un Fallo Crítico o un resultado de Fallo, un personaje puede hacer otro intento de burlarse de otra persona. Sin embargo, sólo se puede dirigir una burla exitosa a un objetivo en una escena.
+El éxito también enfurece al objetivo y cambia su actitud hacia **Combativo** (de Neutral a Hostil, por ejemplo). Después de un resultado de Fallo Crítico o Fallo, un Personaje puede hacer otro intento de burlarse de otra persona. Sin embargo, sólo se puede dirigir una burla exitosa a un objetivo en una escena.
 
 ---
 

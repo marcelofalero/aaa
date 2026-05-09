@@ -6,9 +6,9 @@ type = "skill"
 layout = "list"
 +++
 
-Esta habilidad proporciona al personaje el entrenamiento necesario para realizar ciertos procedimientos médicos, incluida la capacidad de diagnosticar dolencias, enfermedades y heridas comunes. Las pruebas de habilidad realizadas para determinar si un personaje conoce cierta información médica, o si es capaz de investigar una pregunta y descubrir una respuesta, se realizan de la misma manera que las pruebas de habilidad de Conocimiento.
+Esta habilidad proporciona a Personaje la capacitación necesaria para realizar ciertos procedimientos médicos, incluida la capacidad de diagnosticar dolencias, enfermedades y heridas comunes. Las comprobaciones de habilidades realizadas para determinar si un Personaje conoce cierta información médica, o si es capaz de investigar una pregunta y descubrir una respuesta, se realizan de la misma manera que las comprobaciones de habilidades de conocimiento.
 
-Sin embargo, un personaje con sólo la habilidad amplia de Ciencias Médicas no puede tratar a personajes que hayan sufrido daños. La habilidad especializada de *tratamiento* es necesaria para curar el aturdimiento o el daño de las heridas, y reducir el daño Mortal de un paciente requiere la habilidad especializada de *cirugía*.
+Sin embargo, un Personaje con solo la habilidad amplia Ciencias médicas no puede tratar a personajes que hayan sufrido daños. El *tratamiento* Especialidad es necesario para curar el daño Aturdimiento o Herida, y reducir el daño Mortal de un paciente requiere la *cirugía* Especialidad.
 
 ## Ciencias forenses
 {{< specialty attr="INT" untrained="yes" cost="3" >}}
@@ -139,9 +139,9 @@ Se aplica la penalización asociada con la curación de personajes alienígenas.
 ## Ciencias forenses
 {{< specialty attr="WIL" untrained="yes" cost="3" >}}
 
-La ciencia forense es la aplicación del conocimiento médico y científico a problemas legales e investigaciones criminales. Se utiliza para determinar la causa de la muerte, identificar restos y analizar pruebas de la escena de un crimen.
-⊗ **Efecto incrementado:** Un personaje recibe una **bonificación de
--1 paso** en el rango 3, **-2** en el rango 6, **-3** en el rango 9 y **-4** en el rango 12 en ciertas otras tiradas de habilidad que puedan ser asistidas por esta especialidad (por ejemplo, Investigar, Ley).
+La ciencia forense es la aplicación del conocimiento médico y científico a problemas legales e investigaciones criminales. Se utiliza para determinar la causa de la muerte, identificar restos y analizar pruebas de la escena del crimen.
+### Beneficios de Rango
+⊗ **Rango 3, 6, 9, 12 [Efecto aumentado]:** Un Personaje recibe una bonificación **-1** en Rango 3, **-2** en Rango 6, **-3** en Rango 9 y **-4** en Rango 12 en ciertas pruebas de habilidad de Otros que pueden ser asistidas por esta especialidad (por ejemplo, Investigar, Ley).
 
 ---
 

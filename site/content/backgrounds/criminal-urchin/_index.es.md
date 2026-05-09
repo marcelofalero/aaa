@@ -7,7 +7,7 @@ layout = "background"
 La vida en las calles te enseñó a sobrevivir, pero te dejó con un nombre que las autoridades no olvidarán.
 
 ## Paquete de Habilidades:
-* [Street Smart] ({{< relref "/skills/street-smart/" >}})
+* [Callejeo] ({{< relref "/skills/street-smart/" >}})
 
 ## Habilidades de Especialidad Favorecidas:
 * [Pillería-Conocimiento Callejero] ({{< relref "/skills/street-smart/#street-knowledge" >}})
