@@ -13,4 +13,4 @@ The ability to build demolition packages from scratch or repurposing military or
 **Potency:** Determined by a skill check as per [Table P23: Scratch-Built Explosives].
 
 ### Synergy [Physical Science—Chemistry]
-A character with Chemistry knowledge can further optimize an explosive mixture by selecting the best ingredients. A successful auxiliary check provides a bonus to the Scratch-Build check: **Ordinary (-1 step)**, **Good (-2 steps)**, or **Amazing (-3 steps)**.
+A character with Chemistry knowledge can further optimize an explosive mixture by selecting the best ingredients. See the [Physical Science—Chemistry]({{< relref "skills/physical-science#chemistry" >}}) for more information.

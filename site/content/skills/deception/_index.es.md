@@ -6,23 +6,23 @@ type = "skill"
 layout = "list"
 +++
 
-La habilidad para engañar a otros a través de la conversación y la interacción cara a cara. Cubre todos los trucos y subterfugios verbales.
+La habilidad para engañar a otros a través de la conversación y Interacción cara a cara. Cubre todos los trucos y subterfugios verbales.
 
 ### Resolución
 - **Verificación opuesta:** Modificado por el modificador de resistencia de **Inteligencia** del objetivo.
-- **Habilidad de encuentro:** Se utiliza para cambiar actitudes según la [Tabla P25: Efectos de las habilidades de encuentro]({{< relref "/core-mechanics/useful-tables#table-p25-encounter-skill-effects" >}}).
+- **Habilidad de encuentro:** Se utiliza para cambiar actitudes según la [Tabla P25: Efectos de las habilidades de encuentro]({{< relref "core-mechanics/useful-tables#table-p25-encounter-skill-effects" >}}).
 
 ### Reglas de juego
 El juego es una prueba opuesta contra el modificador de resistencia de **Inteligencia** (para juegos de lógica) o **Voluntad** (para juegos de nervios) del oponente.
 
 **La sesión:** Un cheque representa una "sesión" o un momento de alto riesgo.
-- **Éxito ordinario:** Gana 1,5 veces tu apuesta.
-- **Buen éxito:** Gana el doble de tu apuesta.
-- **Éxito increíble:** Gana 5x tu apuesta.
+- **Éxito de Ordinario:** Gana 1,5x tu apuesta.
+- **Éxito de Bueno:** Gana el doble de tu apuesta.
+- **Éxito de Asombroso:** Gana 5x tu apuesta.
 - **Fallo:** Pierde la apuesta.
-- **Falla crítica:** Pérdida significativa (pérdida del doble de la participación/deuda) o desastre Social.
+- **Fallo Crítico:** Pérdida significativa (pérdida 2x participación/deuda) o desastre Social.
 
-**Hacer trampa:** Declarar antes de rodar. Obtienes una **bonificación de -3 pasos**, pero cualquier resultado de **Falla** se trata como una **Falla crítica (detectada)**.
+**Hacer trampa:** Declarar antes de rodar. Obtiene un **-3 Bonificación de paso**, pero cualquier resultado de **Fallo** se trata como un **Fallo Crítico (detectado)**.
 
 ## Mentir
 {{< specialty attr="PER" untrained="yes" cost="3" >}}

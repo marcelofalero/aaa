@@ -18,6 +18,6 @@ This specialty skill is used to determine a character''s ability to cope with em
 - **Critical Failure:** Character collapses in mental anguish; cannot act or flees for d4 rounds.
 - **Failure:** Character freezes and loses 1 action; receives a +1 penalty to all actions for 1 round.
 - **Ordinary / Good / Amazing:** Character can act without penalty. (Still may have to deal with trauma later).
-### Mental Rank Benefits
-⊗ **Resistance Modifier:** At higher ranks, the Mental Resolve skill provides an improvement to a character''s **Will resistance modifier**, which makes it more difficult for opponents to successfully use encounter skills or mental powers against the character. The modifier improves by **+1 at Rank 4**, **+1 at Rank 8**, and **+1 at Rank 12**.
-▶ **Extreme Focus:** At rank 4, a character can ignore any penalty to a complex skill check caused by a single distraction (e.g., loud noise, minor pain) per encounter.
+
+### Rank Benefits
+⊗ **Rank 4, 8, 12 [Resistance Modifier]** At higher ranks, the Mental Resolve skill provides an improvement to a character's **Will resistance modifier**, which makes it more difficult for opponents to successfully use encounter skills or mental powers against the character. The modifier improves by **+1 at Rank 4**, **+1 at Rank 8**, and **+1 at Rank 12**.

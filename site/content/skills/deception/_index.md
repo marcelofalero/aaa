@@ -10,7 +10,7 @@ The proficiency at deceiving others through conversation and face-to-face intera
 
 ### Resolution
 - **Opposed Check:** Modified by the target’s **Intelligence** resistance modifier.
-- **Encounter Skill:** Used to shift attitudes as per [Table P25: Encounter Skill Effects]({{< relref "/core-mechanics/useful-tables#table-p25-encounter-skill-effects" >}}).
+- **Encounter Skill:** Used to shift attitudes as per [Table P25: Encounter Skill Effects]({{< relref "core-mechanics/useful-tables#table-p25-encounter-skill-effects" >}}).
 
 ### Gambling Rules
 Gambling is an opposed check against the opponent's **Intelligence** (for Logic Games) or **Will** (for Nerve Games) resistance modifier.

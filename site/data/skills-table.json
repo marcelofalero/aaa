@@ -16,6 +16,53 @@
     ],
     "items": [
         {
+            "skill": "Academic",
+            "type": "Category",
+            "items": [
+                {
+                    "skill": "Physical Science",
+                    "attribute": "INT",
+                    "url": "/skills/physical-science",
+                    "cost": 5,
+                    "type": "Broad",
+                    "items": [
+                        {
+                            "skill": "Astronomy",
+                            "attribute": "INT",
+                            "url": "/skills/physical-science#astronomy",
+                            "cost": 3,
+                            "type": "Specialty",
+                            "css_class": ""
+                        },
+                        {
+                            "skill": "Chemistry",
+                            "attribute": "INT",
+                            "url": "/skills/physical-science#chemistry",
+                            "cost": 3,
+                            "type": "Specialty",
+                            "css_class": ""
+                        },
+                        {
+                            "skill": "Physics",
+                            "attribute": "WIL",
+                            "url": "/skills/physical-science#physics",
+                            "cost": 3,
+                            "type": "Specialty",
+                            "css_class": ""
+                        },
+                        {
+                            "skill": "Planetology",
+                            "attribute": "WIL",
+                            "url": "/skills/physical-science#planetology",
+                            "cost": 3,
+                            "type": "Specialty",
+                            "css_class": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
             "skill": "Combat",
             "type": "Category",
             "items": [
@@ -495,14 +542,14 @@
                 },
                 {
                     "skill": "Navigation",
-                    "attribute": "WIL",
+                    "attribute": "INT",
                     "url": "/skills/navigation",
                     "cost": 6,
                     "type": "Broad",
                     "items": [
                         {
                             "skill": "Astrogation—drivespace",
-                            "attribute": "WIL",
+                            "attribute": "INT",
                             "url": "/skills/navigation#astrogationdrivespace",
                             "cost": 3,
                             "type": "Specialty",
@@ -510,7 +557,7 @@
                         },
                         {
                             "skill": "Astrogation—system",
-                            "attribute": "WIL",
+                            "attribute": "INT",
                             "url": "/skills/navigation#astrogationsystem",
                             "cost": 3,
                             "type": "Specialty",
@@ -518,7 +565,7 @@
                         },
                         {
                             "skill": "Navigation—surface",
-                            "attribute": "WIL",
+                            "attribute": "INT",
                             "url": "/skills/navigation#navigationsurface",
                             "cost": 3,
                             "type": "Specialty",
@@ -1076,14 +1123,14 @@
                 },
                 {
                     "skill": "Knowledge",
-                    "attribute": "WIL",
+                    "attribute": "INT",
                     "url": "/skills/knowledge",
                     "cost": 4,
                     "type": "Broad",
                     "items": [
                         {
                             "skill": "Language, Specific Skill",
-                            "attribute": "WIL",
+                            "attribute": "INT",
                             "url": "/skills/knowledge#language-specific-skill",
                             "cost": 3,
                             "type": "Specialty",
@@ -1091,7 +1138,7 @@
                         },
                         {
                             "skill": "Psionics",
-                            "attribute": "WIL",
+                            "attribute": "INT",
                             "url": "/skills/knowledge#psionics",
                             "cost": 3,
                             "type": "Specialty",
@@ -1107,7 +1154,7 @@
                         },
                         {
                             "skill": "Deduce",
-                            "attribute": "WIL",
+                            "attribute": "INT",
                             "url": "/skills/knowledge#deduce",
                             "cost": 2,
                             "type": "Specialty",
@@ -1115,7 +1162,7 @@
                         },
                         {
                             "skill": "First Aid",
-                            "attribute": "WIL",
+                            "attribute": "INT",
                             "url": "/skills/knowledge#first-aid",
                             "cost": 3,
                             "type": "Specialty",
@@ -1123,7 +1170,7 @@
                         },
                         {
                             "skill": "Research",
-                            "attribute": "WIL",
+                            "attribute": "INT",
                             "url": "/skills/knowledge#research",
                             "cost": 2,
                             "type": "Specialty",
@@ -1133,14 +1180,14 @@
                 },
                 {
                     "skill": "Life Science",
-                    "attribute": "WIL",
+                    "attribute": "INT",
                     "url": "/skills/life-science",
                     "cost": 7,
                     "type": "Broad",
                     "items": [
                         {
                             "skill": "Psionics",
-                            "attribute": "WIL",
+                            "attribute": "INT",
                             "url": "/skills/life-science#psionics",
                             "cost": 3,
                             "type": "Specialty",
@@ -1148,7 +1195,7 @@
                         },
                         {
                             "skill": "Biology",
-                            "attribute": "WIL",
+                            "attribute": "INT",
                             "url": "/skills/life-science#biology",
                             "cost": 3,
                             "type": "Specialty",
@@ -1156,7 +1203,7 @@
                         },
                         {
                             "skill": "Botany",
-                            "attribute": "WIL",
+                            "attribute": "INT",
                             "url": "/skills/life-science#botany",
                             "cost": 3,
                             "type": "Specialty",
@@ -1164,7 +1211,7 @@
                         },
                         {
                             "skill": "Genetics",
-                            "attribute": "WIL",
+                            "attribute": "INT",
                             "url": "/skills/life-science#genetics",
                             "cost": 3,
                             "type": "Specialty",
@@ -1172,7 +1219,7 @@
                         },
                         {
                             "skill": "Zoology",
-                            "attribute": "WIL",
+                            "attribute": "INT",
                             "url": "/skills/life-science#zoology",
                             "cost": 3,
                             "type": "Specialty",
@@ -1182,7 +1229,7 @@
                 },
                 {
                     "skill": "Medical Science",
-                    "attribute": "WIL",
+                    "attribute": "INT",
                     "url": "/skills/medical-science",
                     "cost": 7,
                     "type": "Broad",
@@ -1239,47 +1286,6 @@
                             "skill": "Forensic Science",
                             "attribute": "WIL",
                             "url": "/skills/medical-science#forensic-science",
-                            "cost": 3,
-                            "type": "Specialty",
-                            "css_class": ""
-                        }
-                    ]
-                },
-                {
-                    "skill": "Physical Science",
-                    "attribute": "WIL",
-                    "url": "/skills/physical-science",
-                    "cost": 7,
-                    "type": "Broad",
-                    "items": [
-                        {
-                            "skill": "Astronomy",
-                            "attribute": "WIL",
-                            "url": "/skills/physical-science#astronomy",
-                            "cost": 3,
-                            "type": "Specialty",
-                            "css_class": ""
-                        },
-                        {
-                            "skill": "Chemistry",
-                            "attribute": "WIL",
-                            "url": "/skills/physical-science#chemistry",
-                            "cost": 3,
-                            "type": "Specialty",
-                            "css_class": ""
-                        },
-                        {
-                            "skill": "Physics",
-                            "attribute": "WIL",
-                            "url": "/skills/physical-science#physics",
-                            "cost": 3,
-                            "type": "Specialty",
-                            "css_class": ""
-                        },
-                        {
-                            "skill": "Planetology",
-                            "attribute": "WIL",
-                            "url": "/skills/physical-science#planetology",
                             "cost": 3,
                             "type": "Specialty",
                             "css_class": ""

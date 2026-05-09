@@ -1,13 +1,14 @@
 +++
 title = "Knowledge"
-attribute = "WIL"
+attribute = "INT"
 category = "Technical"
 type = "skill"
 layout = "list"
 +++
 
-This broad skill represents a character''s ability to know at least a little bit about any particular subject. With just the broad skill, a character isn''t considered an expert, but it represents the ability to logically recall a class he took, an article he read, or a documentary he saw on the topic in question. Knowledge skill checks are usually made in secret so the players don''t even know the check is being made. Once a character is determined to have knowledge concerning a particular topic, a note can be made on the character sheet.
-### Table P24: Knowledge Categories
+This broad skill represents a character's ability to know at least a little bit about any particular subject. With just the broad skill, a character isn't considered an expert, but it represents the ability to logically recall a class he took, an article he read, or a documentary he saw on the topic in question. Knowledge skill checks are usually made in secret so the players don't even know the check is being made. Once a character is determined to have knowledge concerning a particular topic, a note can be made on the character sheet.
+
+## Knowledge Categories
 
 | Category | Modifier | Complexity |
 | :--- | :--- | :--- |
@@ -17,16 +18,17 @@ This broad skill represents a character''s ability to know at least a little bit
 | **Expert** | +3 step penalty | Amazing (10+) |
 
 ## Language, Specific Skill
-{{< specialty attr="WIL" untrained="no" cost="3" >}}
+{{< specialty attr="INT" untrained="no" cost="3" >}}
 
-This specialty skill gives a character a certain amount of fluency in a specific language. Every character begins with **Rank 3** in his or her native language. Lower ranks indicate a crude familiarity; higher ranks improve the character''s vocabulary and comprehension of obscure or complicated passages.
+This specialty skill gives a character a certain amount of fluency in a specific language. Every character begins with **Rank 3** in his or her native language. Lower ranks indicate a crude familiarity; higher ranks improve the character's vocabulary and comprehension of obscure or complicated passages.
+
 ### Rank Benefits
-⊗ **Improved Communication:** As a character achieves higher skill ranks in a specific language, he or she gets better at employing other skills that involve language use (such as encounter skills and some Creativity specialties). This benefit provides a reduction to situation die penalties: **1 step at rank 4**, **2 steps at rank 8**, and **3 steps at rank 12**. This benefit only reduces a penalty; it never provides a bonus.
+⊗ **Rank 4, 8, 12 [Improved Communication]** As a character achieves higher skill ranks in a specific language, he or she gets better at employing other skills that involve language use (such as encounter skills and some Creativity specialties). This benefit provides a reduction to situation die penalties: **1 step at rank 4**, **2 steps at rank 8**, and **3 steps at rank 12**. This benefit only reduces a penalty; it never provides a bonus.
 
 ---
 
 ## Psionics
-{{< specialty attr="WIL" untrained="no" cost="3" >}}
+{{< specialty attr="INT" untrained="no" cost="3" >}}
 
 This skill gives a character a working knowledge of psionic abilities, perhaps even beyond what the character''s culture understands as a whole. The degree of success achieved on a skill check relates to the quality or quantity of information that is available to or understood by the character.
 
@@ -40,17 +42,17 @@ This specialty skill allows a character to improve his ability to make computers
 ---
 
 ## Deduce
-{{< specialty attr="WIL" untrained="yes" cost="2" >}}
+{{< specialty attr="INT" untrained="yes" cost="2" >}}
 
 With this specialty skill, a character can hone his abilities to use reason and logic to reach a conclusion. Deduce is used by detectives and investigators to piece together clues, or by scientists and engineers to discover the answer to a skill-related problem.
 
-### Rank Benefits
-⊗ **Resistance Modifier:** At higher ranks, the deduce skill provides an improvement to a character''s **Intelligence resistance modifier**, which makes it more difficult for opponents to successfully use encounter skills to deceive the character. The modifier improves by **+1 at Rank 4**, **+1 at Rank 8**, and **+1 at Rank 12**.
+## Rank Benefits
+⊗ **Rank 4, 8, 12 [Resistance Modifier]** At higher ranks, the deduce skill provides an improvement to a character's **Intelligence resistance modifier**, which makes it more difficult for opponents to successfully use encounter skills to deceive the character. The modifier improves by **+1 at Rank 4**, **+1 at Rank 8**, and **+1 at Rank 12**.
 
 ---
 
 ## First Aid
-{{< specialty attr="WIL" untrained="no" cost="3" >}}
+{{< specialty attr="INT" untrained="no" cost="3" >}}
 
 This specialty skill represents basic training in first aid techniques, including the use of trauma packs, first aid kits, and other general-use medical items. It doesn''t provide a character with the ability to use specialized surgical tools or advanced medical gear.
 
@@ -76,16 +78,18 @@ A character with any amount of mortal damage is considered to be dying. A charac
 ---
 
 ## Research
-{{< specialty attr="WIL" untrained="yes" cost="2" >}}
+{{< specialty attr="INT" untrained="yes" cost="2" >}}
 
-The research specialty covers the techniques used to find, verify, and organize information from diverse sources, including physical archives, electronic databanks, and the Grid. It is also used to represent a character''s ability to learn and improve skills through study and mentorship.
+The research specialty covers the techniques used to find, verify, and organize information from diverse sources, including physical archives, electronic databanks, and the Grid. It is also used to represent a character's ability to learn and improve skills through study and mentorship.
+
 ### Mentorship and Learning
 A character can use research to assist another character (or himself) in learning a new skill or improving an existing one. A successful research check provides a bonus to the learning time required:
 - **Ordinary:** half the learning time required.
 - **Good:** one-quarter the learning time required.
 - **Amazing:** one-eighth the learning time required.
-⊗ **Efficient Investigation:** As a character achieves higher ranks in this specialty, he becomes more efficient at digging through data. He receives a **-1 step bonus** to research checks at **rank 3**,
-**-2 at rank 6**, **-3 at rank 9**, and **-4 at rank 12**.
+
+### Rank Benefits
+⊗ **Rank 3, 6, 9, 12 [Efficient Research]** As a character achieves higher ranks in this specialty, he becomes more efficient at digging through data. He receives a **-1 step bonus** to research checks at **rank 3**, **-2 at rank 6**, **-3 at rank 9**, and **-4 at rank 12**.
 
 ---
 

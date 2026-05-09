@@ -28,13 +28,13 @@ Los personajes **no entrenados** en Operación Armadura sufren la penalización 
 ## Armadura de Combate
 {{< specialty attr="STR" untrained="yes" cost="3" >}}
 
-Esta especialidad representa el nivel de dominio en el uso de armaduras, así como el entrenamiento especializado necesario para usar armaduras potenciadas, permitiendo al personaje obtener el máximo provecho de cualquier armadura.
+Esta especialidad representa el nivel de dominio en el uso de armaduras, así como el entrenamiento especializado necesario para usar armaduras Armas de energía, permitiendo al Personaje obtener el máximo rendimiento de cualquier armadura.
 
-⊗ **Rango 1 (Operación mejorada):** La reducción de la prueba de acción y las penalizaciones del modificador de resistencia a la Destreza se convierten en 2 pasos. Esto mejora a 3 pasos en **Rango 4**, 4 pasos en **Rango 6** y 5 pasos en **Rango 10**.
+⊗ **Rango 1, 4, 6, 10 [Operación mejorada]:** La reducción a Tirada de Acción y las penalizaciones del modificador de resistencia a la Destreza se convierten en 2 pasos. Esto mejora a 3 pasos en **Rango 4**, 4 pasos en **Rango 6** y 5 pasos en **Rango 10**.
 
-⊗ **Rango 2 (Liberarse del aturdimiento):** El daño del aturdimiento (incluido el secundario) se reduce en 1 punto. Esto aumenta en 1 por cada 2 rangos alcanzados (máximo 6 puntos en **Rango 12**).
+⊗ **Rango 2, 4, 6, 8, 10, 12 [Sacudir los aturdimientos]:** El daño de Aturdimiento (incluido el secundario) se reduce en 1 punto. Esto aumenta en 1 por cada 2 Rangos obtenidos (máximo 6 puntos en **Rango 12**).
 
-▶ **Rango 7 (Operación de Armadura potenciada):** El personaje ha dominado la sincronización necesaria para operar los trajes Armadura potenciada.
+▶ **Rango 7 (Armas de energía Operación de armadura):** El Personaje ha dominado la sincronización necesaria para operar los trajes Armadura potenciada.
 
 ---
 
