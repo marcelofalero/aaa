@@ -96,15 +96,15 @@ const combatStepMap = {
 
 function updateAttackForm(rowId) {
     const prefix = rowId ? 'repeating_attackforms_' + rowId + '_' : 'repeating_attackforms_';
-    getAttrs([prefix + 'attackformdie', prefix + 'attackformaccuracy', prefix + 'attackformsit'], function(v) {
-        const total = (parseInt(v[prefix + 'attackformdie']) || 0) + (parseInt(v[prefix + 'attackformaccuracy']) || 0) + (parseInt(v[prefix + 'attackformsit']) || 0);
+    getAttrs([prefix + 'attackformdie', prefix + 'attackformaccuracy', prefix + 'attackformsit', prefix + 'attackformmulti'], function(v) {
+        const total = (parseInt(v[prefix + 'attackformdie']) || 0) + (parseInt(v[prefix + 'attackformaccuracy']) || 0) + (parseInt(v[prefix + 'attackformsit']) || 0) + (parseInt(v[prefix + 'attackformmulti']) || 0);
         const clamped = Math.max(-15, Math.min(15, total));
         const step = combatStepMap[String(clamped)] || '+0';
         setAttrs({ [prefix + 'attackformstepdie']: step });
     });
 }
 
-on('change:repeating_attackforms:attackformdie change:repeating_attackforms:attackformaccuracy change:repeating_attackforms:attackformsit', function(eventInfo) {
+on('change:repeating_attackforms:attackformdie change:repeating_attackforms:attackformaccuracy change:repeating_attackforms:attackformsit change:repeating_attackforms:attackformmulti', function(eventInfo) {
     const rowMatch = eventInfo.sourceAttribute.match(/repeating_attackforms_([-\w]+)_/);
     if (rowMatch) updateAttackForm(rowMatch[1]);
 });
