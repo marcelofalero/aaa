@@ -9,7 +9,7 @@ layout = "list"
 Competencia en las artes escénicas, que abarca la presencia en el escenario, el magnetismo y la capacidad de provocar respuestas emocionales.
 
 ### Habilidad de encuentro
-El entretenimiento se utiliza para alterar las emociones o impresionar a una audiencia según la [Tabla P25: Efectos de las habilidades de encuentro] ({{< relref "/core-mechanics/useful-tables#table-p25-encounter-skill-effects" >}}).
+El entretenimiento se utiliza para alterar las emociones o impresionar a una audiencia según la [Tabla P25: Efectos de las habilidades de encuentro] ({{< relref "core-mechanics/useful-tables#table-p25-encounter-skill-effects" >}}).
 
 #### Modificador de objetivo
 Modificado por el modificador de resistencia de **Voluntad** (para alterar las emociones) o **Personalidad** (para impresionar) del objetivo.
@@ -17,12 +17,12 @@ Modificado por el modificador de resistencia de **Voluntad** (para alterar las e
 #### Modificadores de objetivos
 | Gol | Modificador/Efecto |
 | :--- | :--- |
-| **Entretener** (Mostrar un buen momento) | -Bono de 1 paso |
-| **Actuar** (Hacerse un nombre) | +1 paso de penalización |
-| **Desviar** (Aturdir, electrocutar o distraer) | +3 pasos de penalización |
-| **Fallo crítico** | Desencadena un incidente de mala suerte (por ejemplo, falla del equipo, colapso del set) |
+| **Entretener** (Mostrar una hora Bueno) | -1 Bonificación de paso |
+| **Actuar** (Hacerse un nombre) | +1 Penalización de paso |
+| **Desviar** (Aturdimiento, sorprender o distraer) | +3 Penalización de paso |
+| **Fallo Crítico** | Desencadena un incidente de mala suerte (por ejemplo, falla del equipo, colapso del set) |
 
-> Cuando se introducen mecánicas de estrés persistente, esta habilidad se puede utilizar para recuperarse del estrés o evitar daños emocionales. Al proporcionar entretenimiento de calidad, el personaje obtiene una bonificación a las pruebas de Resolución-Resolución Mental para evitar aumentar el nivel de estrés; el intérprete recibe una bonificación similar por catarsis (siempre que tenga una audiencia receptiva). Un resultado sorprendente puede reducir el nivel actual en un paso, tanto para el intérprete como para quienes escuchan/miran.
+> Cuando se introducen mecánicas de estrés persistente, esta habilidad se puede utilizar para recuperarse del estrés o evitar daños emocionales. Al proporcionar entretenimiento de calidad, el Personaje obtiene una bonificación a las pruebas de Firmeza-Mental Firmeza para evitar aumentar el nivel de estrés, el artista recibe una bonificación similar por catarsis (siempre que tenga una audiencia receptiva). Un resultado Asombroso puede reducir el nivel actual en un paso, para el intérprete y para quienes escuchan/miran.
 
 ## Musical instrument
 {{< specialty attr="PER" untrained="no" cost="2" >}}

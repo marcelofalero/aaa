@@ -49,23 +49,23 @@ Cuando obviamente existe un peligro potencial en una situación, el uso subconsc
 ## Sentido psiónico
 {{< specialty attr="WIL" untrained="no" cost="4" >}}
 
-**Solo entrenado.** Solo los personajes capaces de usar poderes psiónicos (como Mindwalkers) o aquellos con la ventaja "Conciencia psiónica" pueden comprar y usar esta habilidad.
+Sólo los personajes capaces de usar poderes psiónicos (como Mindwalkers) o aquellos con el Ventaja "Psionic Alerta" pueden comprar y usar esta habilidad.
 
-Esta habilidad especial permite a un personaje detectar la activación de poderes psiónicos y la presencia de fenómenos psiónicos. Puede ayudar a identificar el tipo de poder, la dirección de su fuente y la intensidad aproximada del usuario psiónico.
+Este Especialidad permite que un Personaje detecte la activación de poderes psiónicos y la presencia de fenómenos psiónicos. Puede ayudar a identificar el tipo de poder, la dirección de su fuente y la intensidad aproximada del usuario psiónico.
 
 ### Detectando poderes psiónicos
-El Director de Juego solicitará una verificación cuando se active un poder psiónico en las proximidades del personaje.
-- **Ordinario:** El personaje siente que *algún* poder psiónico fue activado cerca.
-- **Bien:** Si la fuente está en la línea de visión, el personaje puede identificar al usuario. De lo contrario, obtienen una idea general de la dirección y la distancia.
-- **Asombroso:** El personaje puede detectar efectos sutiles y continuos (por ejemplo, manipulación Mental o ilusiones psiónicas).
+El Director de Juego solicitará una verificación cuando se active un poder psiónico en las proximidades del Personaje o afecte al Personaje o sus proximidades.
+- **Ordinario:** El Personaje siente que *algún* poder psiónico fue activado cerca.
+- **Bueno:** Si la fuente está en la línea de visión, el Personaje puede identificar al usuario. De lo contrario, obtienen una idea general de la dirección y la distancia.
+- **Asombroso:** El Personaje puede detectar efectos sutiles y continuos (por ejemplo, manipulación de Mental o ilusiones psiónicas).
 
 ### Identificación y rastreo
-Si el personaje intenta una prueba de **Conocimiento—Psiónica** para identificar o rastrear un poder detectado, recibe una bonificación basada en su resultado de Sentido psiónico:
+Si el Personaje intenta una prueba de **Conocimiento—Psiónica** para identificar el tipo de poder psiónico o un poder ESP para rastrear un poder detectado, recibe una bonificación basada en su resultado Sentido psiónico:
 - **Ordinario:** Sin bonificación.
-- **Bueno:** -Bono de 1 paso.
-- **Increíble:** -Bonificación de 3 pasos.
+- **Bueno:** -1 Bonificación de paso.
+- **Asombroso:** -Bono de 3 pasos.
 
-Los personajes capaces de usar el poder de **Clarividencia** también pueden aplicar esta bonificación a su prueba de habilidad al rastrear la fuente de un evento psiónico.
+Los personajes capaces de usar **Clarividencia** o un poder ESP similar también pueden aplicar esta bonificación a su prueba de habilidad al rastrear la fuente de un evento psiónico.
 
 ---
 

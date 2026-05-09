@@ -38,8 +38,7 @@ identify and treat debilitating diseases, with situation die
 modifiers dependent on the difficulty and virulence.
 
 ### Rank Benefits
-⊗ **Improved Treatment:** As a character achieves higher skill
-ranks, he becomes more proficient at providing aid to injured
+⊗ **Rank 3, 6, 9, 12 [Improved Treatment]** As a character achieves higher skill ranks, he becomes more proficient at providing aid to injured
 patients. This is reflected by a reduction in situation die
 penalties: -1 step at rank 3, -2 steps at rank 6, -3 steps at rank
 9, and -4 at rank 12. Note that this benefit only reduces a

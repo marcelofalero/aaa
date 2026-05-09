@@ -13,12 +13,12 @@ While everyone who grows up around other people has some skill at interacting wi
 
 ### Specialties
 Interaction includes specific areas such as:
-- [Bargain]({{< relref "bargain" >}})
-- [Charm]({{< relref "charm" >}})
-- [Interview]({{< relref "interview" >}})
-- [Intimidate]({{< relref "intimidate" >}})
-- [Seduce]({{< relref "seduce" >}})
-- [Taunt]({{< relref "taunt" >}})
+- [Bargain]({{< relref "#bargain" >}})
+- [Charm]({{< relref "#charm" >}})
+- [Interview]({{< relref "#interview" >}})
+- [Intimidate]({{< relref "#intimidate" >}})
+- [Seduce]({{< relref "#seduce" >}})
+- [Taunt]({{< relref "#taunt" >}})
 
 ### Interaction Situation Modifiers
 

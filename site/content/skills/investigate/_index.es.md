@@ -37,7 +37,9 @@ Esta habilidad especial permite al personaje desarrollar su ojo para los detalle
 ## Rastrear
 {{< specialty attr="WIL" untrained="yes" cost="3" >}}
 
-Esta habilidad especial permite a un personaje mejorar su capacidad para seguir a una persona, criatura o vehículo terrestre al notar las huellas que deja a su paso. Las huellas pueden ser cualquier cosa, desde huellas reales hasta señales reveladoras como ramas rotas, basura desechada, material de desecho obvio u otra evidencia de paso. Es posible que un rastreador no necesariamente esté siguiendo evidencia física; puede que esté utilizando habilidades de detective, técnicas de entrevista, sensores u otro equipo especial. Rastrear se utiliza para localizar y seguir un rastro, ya sea físico o de información. Una vez que un personaje detecta a su presa, se puede utilizar Sigilo-Sombra para seguirla de cerca sin ser detectado.
+Este Especialidad permite a un Personaje mejorar su capacidad para seguir a una persona, criatura o vehículo terrestre al notar las huellas que deja a su paso. Las huellas pueden ser cualquier cosa, desde huellas reales hasta signos reveladores como ramas rotas, basura desechada, material de desecho obvio o evidencia de paso.
+
+Es posible que un rastreador no necesariamente esté siguiendo la evidencia de Físico; puede que esté utilizando habilidades de detective, técnicas de entrevista, sensores o equipo especial Otros. Rastrear se utiliza para localizar y seguir un rastro, ya sea Físico o un rastro de información. Una vez que un Personaje detecta a su presa, se puede utilizar Cover Ops-Stealth para seguirla de cerca sin ser detectado.
 
 ---
 

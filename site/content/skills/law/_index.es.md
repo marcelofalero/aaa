@@ -35,12 +35,14 @@ Los agentes de policía, detectives, cazarrecompensas y otros utilizan esta habi
 ## Ley, habilidad específica
 {{< specialty attr="WIL" untrained="no" cost="2" >}}
 
-Para cada compra separada de esta especialidad, un personaje selecciona una cultura específica o un tipo de ley específico (derecho marítimo, derecho de salvamento, etc.). A medida que se mejora la habilidad de la especialidad, el personaje adquiere progresivamente una mayor comprensión de las leyes y sistemas legales de esa cultura o especialidad.
-⊗ **Efecto aumentado:** En rangos más altos, el personaje se vuelve más competente dentro del sistema legal de la cultura en cuestión. Usar la habilidad específica proporciona una reducción al dado de situación:
-- **-1 bonificación en el rango 3**
-- **Bono -2 en el rango 6**
-- **Bono -3 en el rango 9**
-- **Bono -4 en el rango 12**
+Para cada compra por separado de esta especialidad, un Personaje selecciona un Cultura específico o un tipo de ley específico (derecho marítimo, derecho de salvamento, etc.). A medida que se mejora el Especialidad, el Personaje adquiere progresivamente una mayor comprensión de las leyes y sistemas legales de ese Cultura o especialidad.
+
+### Beneficios de Rango
+⊗ **Rango 3, 6, 9, 12 [Efecto aumentado]** A mayor Rangos, el Personaje se vuelve más competente dentro del sistema legal del Cultura en cuestión. Usar la habilidad específica proporciona una reducción al Dado de Situación:
+- **-1 bonificación en Rango 3**
+- **Bono -2 en Rango 6**
+- **Bono -3 en Rango 9**
+- **Bono -4 en Rango 12**
 
 ---
 

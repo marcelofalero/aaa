@@ -16,6 +16,53 @@
     ],
     "items": [
         {
+            "skill": "Academic",
+            "type": "Category",
+            "items": [
+                {
+                    "skill": "Ciencias físicas",
+                    "attribute": "INT",
+                    "url": "/es/skills/physical-science",
+                    "cost": 5,
+                    "type": "Broad",
+                    "items": [
+                        {
+                            "skill": "Astronomía",
+                            "attribute": "INT",
+                            "url": "/es/skills/physical-science#astronomia",
+                            "cost": 3,
+                            "type": "Specialty",
+                            "css_class": ""
+                        },
+                        {
+                            "skill": "Química",
+                            "attribute": "INT",
+                            "url": "/es/skills/physical-science#quimica",
+                            "cost": 3,
+                            "type": "Specialty",
+                            "css_class": ""
+                        },
+                        {
+                            "skill": "Física",
+                            "attribute": "VOL",
+                            "url": "/es/skills/physical-science#fisica",
+                            "cost": 3,
+                            "type": "Specialty",
+                            "css_class": ""
+                        },
+                        {
+                            "skill": "Planetología",
+                            "attribute": "VOL",
+                            "url": "/es/skills/physical-science#planetologia",
+                            "cost": 3,
+                            "type": "Specialty",
+                            "css_class": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
             "skill": "Combate",
             "type": "Category",
             "items": [
@@ -495,14 +542,14 @@
                 },
                 {
                     "skill": "Navegación",
-                    "attribute": "VOL",
+                    "attribute": "INT",
                     "url": "/es/skills/navigation",
                     "cost": 6,
                     "type": "Broad",
                     "items": [
                         {
                             "skill": "Astrohabilidad—sistema",
-                            "attribute": "VOL",
+                            "attribute": "INT",
                             "url": "/es/skills/navigation#astrohabilidad-sistema",
                             "cost": 3,
                             "type": "Specialty",
@@ -510,7 +557,7 @@
                         },
                         {
                             "skill": "Navegación—superficie",
-                            "attribute": "VOL",
+                            "attribute": "INT",
                             "url": "/es/skills/navigation#navegacion-superficie",
                             "cost": 3,
                             "type": "Specialty",
@@ -518,7 +565,7 @@
                         },
                         {
                             "skill": "Navigation—surface",
-                            "attribute": "VOL",
+                            "attribute": "INT",
                             "url": "/es/skills/navigation#navigation-surface",
                             "cost": 3,
                             "type": "Specialty",
@@ -1076,14 +1123,14 @@
                 },
                 {
                     "skill": "Conocimiento",
-                    "attribute": "VOL",
+                    "attribute": "INT",
                     "url": "/es/skills/knowledge",
                     "cost": 4,
                     "type": "Broad",
                     "items": [
                         {
                             "skill": "Idioma, Habilidad Específica",
-                            "attribute": "VOL",
+                            "attribute": "INT",
                             "url": "/es/skills/knowledge#idioma-habilidad-especifica",
                             "cost": 3,
                             "type": "Specialty",
@@ -1091,7 +1138,7 @@
                         },
                         {
                             "skill": "Psiónica",
-                            "attribute": "VOL",
+                            "attribute": "INT",
                             "url": "/es/skills/knowledge#psionica",
                             "cost": 3,
                             "type": "Specialty",
@@ -1107,7 +1154,7 @@
                         },
                         {
                             "skill": "Deducir",
-                            "attribute": "VOL",
+                            "attribute": "INT",
                             "url": "/es/skills/knowledge#deducir",
                             "cost": 2,
                             "type": "Specialty",
@@ -1115,7 +1162,7 @@
                         },
                         {
                             "skill": "Primeros Auxilios",
-                            "attribute": "VOL",
+                            "attribute": "INT",
                             "url": "/es/skills/knowledge#primeros-auxilios",
                             "cost": 3,
                             "type": "Specialty",
@@ -1123,7 +1170,7 @@
                         },
                         {
                             "skill": "Investigación",
-                            "attribute": "VOL",
+                            "attribute": "INT",
                             "url": "/es/skills/knowledge#investigacion",
                             "cost": 2,
                             "type": "Specialty",
@@ -1133,14 +1180,14 @@
                 },
                 {
                     "skill": "Ciencias de la vida",
-                    "attribute": "VOL",
+                    "attribute": "INT",
                     "url": "/es/skills/life-science",
                     "cost": 7,
                     "type": "Broad",
                     "items": [
                         {
                             "skill": "Psiónica",
-                            "attribute": "VOL",
+                            "attribute": "INT",
                             "url": "/es/skills/life-science#psionica",
                             "cost": 3,
                             "type": "Specialty",
@@ -1148,7 +1195,7 @@
                         },
                         {
                             "skill": "Biología",
-                            "attribute": "VOL",
+                            "attribute": "INT",
                             "url": "/es/skills/life-science#biologia",
                             "cost": 3,
                             "type": "Specialty",
@@ -1156,7 +1203,7 @@
                         },
                         {
                             "skill": "Botánica",
-                            "attribute": "VOL",
+                            "attribute": "INT",
                             "url": "/es/skills/life-science#botanica",
                             "cost": 3,
                             "type": "Specialty",
@@ -1164,7 +1211,7 @@
                         },
                         {
                             "skill": "Genética",
-                            "attribute": "VOL",
+                            "attribute": "INT",
                             "url": "/es/skills/life-science#genetica",
                             "cost": 3,
                             "type": "Specialty",
@@ -1172,7 +1219,7 @@
                         },
                         {
                             "skill": "Zoología",
-                            "attribute": "VOL",
+                            "attribute": "INT",
                             "url": "/es/skills/life-science#zoologia",
                             "cost": 3,
                             "type": "Specialty",
@@ -1182,7 +1229,7 @@
                 },
                 {
                     "skill": "Ciencias médicas",
-                    "attribute": "VOL",
+                    "attribute": "INT",
                     "url": "/es/skills/medical-science",
                     "cost": 7,
                     "type": "Broad",
@@ -1239,47 +1286,6 @@
                             "skill": "Ciencias forenses",
                             "attribute": "VOL",
                             "url": "/es/skills/medical-science#ciencias-forenses",
-                            "cost": 3,
-                            "type": "Specialty",
-                            "css_class": ""
-                        }
-                    ]
-                },
-                {
-                    "skill": "Ciencias físicas",
-                    "attribute": "VOL",
-                    "url": "/es/skills/physical-science",
-                    "cost": 7,
-                    "type": "Broad",
-                    "items": [
-                        {
-                            "skill": "Astronomía",
-                            "attribute": "VOL",
-                            "url": "/es/skills/physical-science#astronomia",
-                            "cost": 3,
-                            "type": "Specialty",
-                            "css_class": ""
-                        },
-                        {
-                            "skill": "Química",
-                            "attribute": "VOL",
-                            "url": "/es/skills/physical-science#quimica",
-                            "cost": 3,
-                            "type": "Specialty",
-                            "css_class": ""
-                        },
-                        {
-                            "skill": "Física",
-                            "attribute": "VOL",
-                            "url": "/es/skills/physical-science#fisica",
-                            "cost": 3,
-                            "type": "Specialty",
-                            "css_class": ""
-                        },
-                        {
-                            "skill": "Planetología",
-                            "attribute": "VOL",
-                            "url": "/es/skills/physical-science#planetologia",
                             "cost": 3,
                             "type": "Specialty",
                             "css_class": ""
