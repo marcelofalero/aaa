@@ -255,9 +255,10 @@
 					<!-- Row 1: Name, Type, Range, Notes -->
 					<div class="sheet-attackform-row">
 						<button type="roll" name="roll_attackform"
-							value="&{template:default} {{name= @{character_name} - @{attackformname}}} {{score= [[@{attackformscore}]]/[[@{attackformscoregood}]]/[[@{attackformscoreamazing}]]}} {{type= @{attackformtype}}} {{range= @{attackformrange}}} {{damage= [[@{attackformdamageordinary}]]@{attackformdamageordinarytype}/[[@{attackformdamagegood}]]@{attackformdamagegoodtype}/[[@{attackformdamageamazing}]]@{attackformdamageamazingtype}}} {{notes= @{attackformnotes}}} {{results= [[1d20cs<1cf>20 @{attackformstepdie}]]}}"></button>
+							value="&{template:default} {{name= @{character_name} - @{attackformname}}} {{score= [[@{attackformscore}]]/[[@{attackformscoregood}]]/[[@{attackformscoreamazing}]]}} {{type= @{attackformtype}}} {{range= @{attackformrange}}} {{damage= [[@{attackformdamageordinary}]]@{attackformdamageordinarytype}/[[@{attackformdamagegood}]]@{attackformdamagegoodtype}/[[@{attackformdamageamazing}]]@{attackformdamageamazingtype}}} {{notes= @{attackformnotes}}} {{results= @{attackformresults}}}"></button>
 
 						<input type="hidden" name="attr_attackformstepdie" value="+0">
+						<input type="hidden" name="attr_attackformresults" value="[[1d20cs<1cf>20 +0]]">
 						<input type="hidden" name="attr_attackformwarning" value="">
 
 						<div class="sheet-attackform-field" style="flex: 6; min-width: 200px;">
@@ -411,12 +412,28 @@
 						</div>
 						
 						<div class="sheet-attackform-field">
-							<div class="sheet-attackform-label" data-i18n="multi">Multi</div>
+							<div class="sheet-attackform-label" data-i18n="mode">Mode</div>
+							<select name="attr_attackformmode" style="width: 8em !important;">
+								<option value="1" data-i18n="mode-1" selected>1 Attack</option>
+								<option value="2" data-i18n="mode-2">2 Attacks</option>
+								<option value="3" data-i18n="mode-3">3 Attacks (Auto)</option>
+							</select>
+						</div>
+
+						<div class="sheet-attackform-field">
+							<div class="sheet-attackform-label" data-i18n="multi">Multi Mod</div>
 							<select name="attr_attackformmulti" style="width: 4.5em !important;">
+								<option value="-5">-5</option>
+								<option value="-4">-4</option>
+								<option value="-3">-3</option>
+								<option value="-2">-2</option>
+								<option value="-1">-1</option>
 								<option value="0" selected>0</option>
 								<option value="1">+1</option>
 								<option value="2">+2</option>
 								<option value="3">+3</option>
+								<option value="4">+4</option>
+								<option value="5">+5</option>
 							</select>
 						</div>
 

@@ -105,5 +105,9 @@
     "important-contacts": "IMPORTANT CONTACTS",
     "tendencies": "Tendencies",
     "tendency-placeholder": "Choose Tendency",
-    "multi": "Multi"
+    "multi": "Multi Mod",
+    "mode": "Mode",
+    "mode-1": "1 Attack",
+    "mode-2": "2 Attacks",
+    "mode-3": "3 Attacks (Auto)"
 }
