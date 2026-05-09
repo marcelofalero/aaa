@@ -6,43 +6,43 @@ type = "skill"
 layout = "list"
 +++
 
-Gratis para personajes fraal, humanos, mechalus, sesheyan, t'sa y weren. Esta amplia habilidad representa los poderes de observación, percepción e intuición de un personaje. Las pruebas de habilidad se realizan cuando el director de juego necesita determinar si un personaje nota algo; los personajes en sí nunca requieren el uso de esta habilidad.
+Gratis para personajes fraal, humanos, mechalus, sesheyan, t'sa y weren. Esta amplia habilidad representa los poderes de observación de Personaje, Percepción y Intuición. Se requieren pruebas de habilidad cuando Director de Juego necesita determinar si un Personaje nota algo; los personajes en sí nunca requieren el uso de esta habilidad.
 
-Notar algo podría ser tan simple como dar una pista que el personaje se perdió en el curso normal del juego, o ayudar cuando el personaje parece totalmente perdido o confundido. En caso de Fallo, el personaje no nota nada. De lo contrario, cualquier éxito proporciona al personaje al menos una pequeña pista. El Director de Juego puede decidir que cuanto mejor sea el nivel de éxito alcanzado, más detalles conocerá el personaje.
+Notar algo podría ser tan simple como dar una pista de que el Personaje se perdió en el curso normal del juego, o ayudar cuando el Personaje parece totalmente perdido o confundido. En caso de fallo, el Personaje no nota nada. De lo contrario, cualquier éxito proporciona al Personaje al menos una pequeña pista. El Director de Juego puede decidir que cuanto mejor sea el nivel de éxito alcanzado, más detalles conocerá el Personaje.
 
 ### Pautas de uso
-La habilidad amplia Conciencia y sus especialidades son ejemplos de cómo se aplica la regla general sobre la tirada de dados: los dados sólo deben tirarse en una prueba de habilidad en una situación en la que el director del juego necesita determinar si un personaje es capaz de hacer algo difícil o fuera de lo **ordinario**.
+La habilidad amplia de Alerta y sus especialidades son ejemplos de cómo se aplica la regla general sobre la tirada de dados: los dados solo deben tirarse en una prueba de habilidad en una situación en la que Director de Juego necesita determinar si un Personaje es capaz de hacer algo difícil o fuera de **Ordinario**.
 
-La mayoría de las veces, los personajes con puntuaciones respetables en Conciencia o sus especialidades tendrán éxito automáticamente cuando exista algo que pueda notarse o percibirse (por ejemplo, ver un árbol caído bloqueando un camino). Se requiere una prueba de habilidad para ver si el personaje nota detalles sutiles (por ejemplo, un agujero en el baúl donde se esconde un objeto).
+La mayoría de las veces, los personajes con puntuaciones respetables en Alerta o sus especialidades tendrán éxito automáticamente cuando exista algo que pueda notarse o percibirse (por ejemplo, ver un árbol caído bloqueando un camino). Se requiere una prueba de habilidad para ver si el Personaje nota detalles sutiles (por ejemplo, un agujero en el maletero donde se esconde un objeto).
 
 ### Modificadores
-- **Sensores:** Algunos equipos de sensores pueden proporcionar beneficios para las pruebas de Conciencia.
-- **Habilidades del oponente:** El uso de ciertas habilidades por parte de otro personaje (como Sigilo o Seguridad) puede agregar modificadores a una prueba de Conciencia.
+- **Sensores:** Algunos equipos de sensores pueden brindar beneficios a las comprobaciones Alerta.
+- **Habilidades del oponente:** El uso de ciertas habilidades por parte de otro Personaje (como Sigilo o Seguridad) puede agregar modificadores a una prueba de Alerta.
 
 ## Intuición
 {{< specialty attr="WIL" untrained="yes" cost="1" >}}
 
-Esta habilidad especial representa los instintos naturales de un personaje: la capacidad de sentir el peligro cuando no hay signos evidentes, evitar la sorpresa o dar un salto lógico intuitivo sin el apoyo de hechos concretos. Es la capacidad de hacer una "mejor suposición" en una situación determinada.
+Este Especialidad representa los instintos naturales de un Personaje: la capacidad de sentir el peligro cuando no hay signos evidentes, evitar la sorpresa o dar un salto lógico intuitivo sin el apoyo de hechos concretos. Es la capacidad de hacer una "mejor suposición" en una situación determinada.
 
 ### Evitar sorpresas
-Cuando no hay señales obvias de peligro, el uso subconsciente de esta habilidad por parte de un personaje puede permitirle evitar ser tomado por sorpresa. El Director de Juego exige pruebas de intuición; los jugadores no los solicitan.
-- **Éxito:** El personaje no se sorprende y puede actuar en la fase sorpresa de la siguiente ronda.
+Cuando no hay signos evidentes de peligro, el uso subconsciente de esta habilidad por parte de un Personaje puede permitirle evitar ser tomado por sorpresa. El Director de Juego requiere comprobaciones Intuición; los jugadores no los solicitan.
+- **Éxito:** El Personaje no se sorprende y puede actuar en la fase sorpresa de la próxima ronda.
 
 ### La "mejor suposición"
-Cuando un personaje quiere hacer una "mejor suposición" intuitiva, el Director de Juego puede permitir que un jugador solicite una prueba de habilidad de intuición en nombre de su personaje.
+Cuando un Personaje quiere hacer una "mejor suposición" intuitiva, el Director de Juego puede permitir que un jugador solicite una prueba de habilidad de Intuición en nombre de su Personaje.
 - **Éxito:** Produce un resultado beneficioso; cuanto mayor sea el nivel de éxito, más precisa y completa será la conclusión.
-*Nota: este uso solo está permitido a personajes que hayan adquirido la habilidad especial y no debe permitirse más de una o dos veces en una aventura.*
+*Nota: Este uso solo está permitido a personajes que hayan comprado el Especialidad y no debe permitirse más de una o dos veces en una aventura.*
 
 ---
 
 ## Percepción
 {{< specialty attr="WIL" untrained="yes" cost="3" >}}
 
-Esta habilidad especial representa el estado de alerta y los poderes de observación de un personaje: el personaje nota algo ya sea conscientemente o en un nivel subliminal. Si bien la intuición es un sentimiento o un sentido inexplicable, la percepción funciona con signos que pueden ser detectados por los sentidos normales (por ejemplo, una ramita rota, el clic del seguro de un arma, un susurro en el viento).
+Este Especialidad representa el estado de alerta y los poderes de observación de un Personaje: el Personaje nota algo ya sea conscientemente o en un nivel subliminal. Si bien Intuición es un sentimiento o sensación inexplicable, Percepción funciona con señales que pueden detectarse con los sentidos normales (por ejemplo, una ramita rota, el clic del seguro de un arma, un susurro en el viento).
 
 ### Detectar problemas
-Cuando obviamente existe un peligro potencial en una situación, el uso subconsciente de esta habilidad por parte de un personaje puede ayudarlo a evitar ser tomado por sorpresa. El Director de Juego exige controles de percepción; los jugadores no los solicitan.
-- **Éxito:** El personaje no se sorprende y puede actuar en la fase sorpresa de la siguiente ronda.
+Cuando obviamente existe un peligro potencial en una situación, el uso subconsciente de esta habilidad por parte de un Personaje puede ayudarlo a evitar ser tomado por sorpresa. El Director de Juego requiere comprobaciones Percepción; los jugadores no los solicitan.
+- **Éxito:** El Personaje no se sorprende y puede actuar en la fase sorpresa de la próxima ronda.
 
 ---
 

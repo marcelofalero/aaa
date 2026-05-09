@@ -20,7 +20,7 @@ Esta amplia habilidad proporciona a un Personaje entrenamiento en el uso de Arma
 ## Arco
 {{< specialty attr="DEX" untrained="yes" cost="3" >}}
 
-Con la habilidad con el arco, un Personaje puede volverse competente con arcos largos y cortos. Aunque existen diferencias significativas entre ellos. Consulta la sección [Armas]({{< relref "equipment/weapons" >}}) para obtener más información.
+Con la habilidad con el arco, un Personaje puede volverse competente con arcos largos y cortos. Aunque existen diferencias significativas entre ellos. Consulta la sección [Weapons]({{< relref "equipment/weapons" >}})] para obtener más información.
 
 ### Beneficios de Rango
 ⊗ **Rango 3 [Precisión de distancia]** Cuando un Personaje alcanza Rango 3 en esta especialidad, sabe cómo compensar la distancia. Se elimina el Penalización de paso por un tiro de media distancia y la penalización por un tiro de larga distancia se reduce en 1 paso.

@@ -101,7 +101,7 @@
                     {
                         "name": "El Criminal / Golfillo",
                         "summary": "La vida en las calles te enseñó a sobrevivir, pero te dejó con un nombre que las autoridades no olvidarán.",
-                        "favored_broad_skill": "[Street Smart] ({{< relref \"/skills/street-smart/\" >}})",
+                        "favored_broad_skill": "[Callejeo] ({{< relref \"/skills/street-smart/\" >}})",
                         "url": "/es/backgrounds/criminal-urchin/",
                         "skill_url": "/es/backgrounds/criminal-urchin/",
                         "favored_specialty_skills": "[Pillería-Conocimiento Callejero] ({{< relref \"/skills/street-smart/#street-knowledge\" >}}) <br> [Operaciones Encubiertas- Carterista] ({{< relref \"/skills/covert-ops/#pickpocket\" >}}) <br> [Operaciones Encubiertas-Sigilo] ({{< relref \"/skills/covert-ops/#stealth\" >}}) <br> [Engaño- Soborno] ({{< relref \"/skills/deception/#bribe\" >}}) <br> [Seguridad-Dispositivos de Seguridad] ({{< relref \"/skills/security/#security-devices\" >}})",
@@ -309,7 +309,7 @@
                     {
                         "name": "Miembro del Clero Orlamu",
                         "summary": "Fuiste criado en los serenos templos de los Fraal, estudiando la conexión entre la mente y el cosmos.",
-                        "favored_broad_skill": "[Resolve]({{< relref \"/skills/resolve/\" >}})",
+                        "favored_broad_skill": "[Firmeza]({{< relref \"/skills/resolve/\" >}})",
                         "url": "/es/backgrounds/orlamu-clergy/",
                         "skill_url": "/es/backgrounds/orlamu-clergy/",
                         "favored_specialty_skills": "[Telepatía-Contacto] ({{< relref \"/psionics/telepathy/#contact\" >}}) <br> [ESP- Empatía] ({{< relref \"/psionics/esp/#empathy\" >}}) <br> [Bioquinesis-Curar] ({{< relref \"/psionics/biokinesis/#heal\" >}}) <br> [Telequinesis-Escudo Cinético] ({{< relref \"/psionics/telekinesis/#kinetic-shield\" >}})",

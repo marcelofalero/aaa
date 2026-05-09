@@ -6,14 +6,14 @@ type = "skill"
 layout = "list"
 +++
 
-Esta amplia habilidad proporciona al personaje un conocimiento general de las leyes y sistemas legales de su sociedad nativa. Puede ser una rama de la civilización humana en la Tierra o un planeta colonia; También podría ser una sociedad o cultura alienígena específica. La habilidad Ley se puede utilizar como una habilidad de encuentro para cambiar la actitud de un individuo. Si esto resulta en una actitud **Amistosa** o mejor, proporciona una **bonificación de -1 paso** en pruebas de habilidad posteriores para obtener información o cooperación de ese individuo. Con una prueba de habilidad exitosa, un personaje puede evitar enredos legales, comprender los procedimientos judiciales y tener un conocimiento práctico de las técnicas utilizadas por los agentes del orden de una sociedad específica. En un drama judicial o una cuestión legal, se puede utilizar una prueba de habilidad en Derecho para determinar el resultado.
+Esta amplia habilidad proporciona a Personaje un conocimiento general de las leyes y sistemas legales de su sociedad nativa. Puede ser una rama de la civilización humana en la Tierra o un planeta colonia; También podría ser una sociedad alienígena específica o Cultura. La habilidad Ley se puede utilizar como una habilidad de encuentro para cambiar la actitud de un individuo. Si esto resulta en una actitud **Amistosa** o mejor, proporciona un **-1 Bonificación de paso** en pruebas de habilidad posteriores para obtener información o cooperación de ese individuo. Con una prueba de habilidad exitosa, un Personaje puede evitar enredos legales, comprender los procedimientos judiciales y tener un conocimiento práctico de las técnicas utilizadas por los agentes del orden de una sociedad específica. En un drama judicial o una cuestión legal, se puede utilizar una prueba de habilidad en Derecho para determinar el resultado.
 ### Resolución de la sala del tribunal
 Cuando una batalla legal se desarrolla "fuera de cámara", el DJ puede solicitar pruebas de habilidades de Ley. En un cheque competitivo:
-- **Fallo crítico:** El abogado oponente recibe una bonificación de -3; o el personaje pierde el caso por completo.
+- **Fallo Crítico:** El abogado oponente recibe una bonificación de -3; o el Personaje pierde el caso por completo.
 - **Fallo:** El abogado contrario recibe una bonificación de -1 a su prueba de habilidad.
 - **Ordinario:** Éxito realizado sin modificador.
 - **Bueno:** El oponente recibe una penalización de +1.
-- **Increíble:** El oponente recibe una penalización de +3 o el personaje gana el caso directamente.
+- **Asombroso:** El oponente recibe una penalización de +3 o el Personaje gana el caso directamente.
 
 ## Procedimientos judiciales
 {{< specialty attr="INT" untrained="yes" cost="3" >}}
@@ -28,7 +28,7 @@ Los abogados, jueces y otras personas utilizan esta habilidad para interactuar e
 Los agentes de policía, detectives, cazarrecompensas y otros utilizan esta habilidad para seguir (o doblar) los procedimientos legales de aplicación de la ley. Los temas cubiertos incluyen:
 - Conocer las leyes relativas a vigilancia, registro e incautación.
 - Procedimientos adecuados de arresto y detención.
-- Realización de informes y otros trámites oficiales. Esta especialidad también se utiliza para determinar qué tan "bueno" es un arresto (proporcionando municiones a los abogados que intentarán que el arresto se lleve a cabo).
+- Realización de informes y trámites oficiales Otros. Esta especialidad también se utiliza para determinar qué tan "Bueno" es un arresto (dando munición a los abogados que intentarán que el arresto se mantenga).
 
 ---
 

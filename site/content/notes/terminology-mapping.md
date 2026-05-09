@@ -67,8 +67,10 @@ This page provides a mapping of common game terms from English to Spanish to ens
 | Primitive Ranged Weapons | Armas a distancia primitivas |
 | Technical Science | Ciencia técnica |
 | Life Science | Ciencias de la vida |
-| Physical Science | Ciencias físicas |
+| Physical Science | Ciencias Físicas |
 | Medical Science | Ciencias médicas |
+| Physics | Física |
+| Chemistry | Química |
 | Weapon Technical Knowledge | Conocimiento técnico de armas |
 | Flintlock Pistol | Pistola de chispa |
 | Musket | Mosquete |

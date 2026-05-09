@@ -6,7 +6,7 @@ type = "skill"
 layout = "list"
 +++
 
-Esta amplia habilidad proporciona al personaje las habilidades de un atleta natural: un nivel competente de fuerza, gracia y destreza física. Esta habilidad se utiliza para determinar el éxito de acciones físicas como trepar a un árbol, saltar sobre un gran agujero o lanzar un objeto a un objetivo.
+Esta amplia habilidad proporciona a Personaje las habilidades de un atleta natural: un nivel competente de fuerza, gracia y destreza Físico. Esta habilidad se utiliza para determinar el éxito de las acciones de Físico, como trepar a un árbol, saltar sobre un agujero grande o lanzar un objeto a un objetivo.
 
 ## Trepar
 {{< specialty attr="STR" untrained="yes" cost="2" >}}

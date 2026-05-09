@@ -35,6 +35,25 @@ def load_mapping():
             mapping[en_clean] = es_clean
     return mapping
 
+def protect_blocks(text):
+    if not text or not isinstance(text, str): return text, []
+    
+    placeholders = []
+    def store_block(match):
+        placeholders.append(match.group(0))
+        return f"@BLOCK_PLACEHOLDER_{len(placeholders)-1}@"
+    
+    # Protect Markdown URLs and Hugo shortcodes
+    block_pattern = r'(\]\s*\([\s\S]*?\)|{{<[\s\S]*?>}})'
+    text_with_placeholders = re.sub(block_pattern, store_block, text, flags=re.DOTALL)
+    return text_with_placeholders, placeholders
+
+def restore_blocks(text, placeholders):
+    if not text or not isinstance(text, str): return text
+    for i, block in enumerate(placeholders):
+        text = text.replace(f"@BLOCK_PLACEHOLDER_{i}@", block)
+    return text
+
 def protect_terms(text, mapping):
     if not text or not isinstance(text, str): return text, {}
     
@@ -126,9 +145,20 @@ def process_node(node, translator, mapping, processed_count):
                 current_es_desc = es_loc.get('description', '')
                 if not current_es_desc or len(current_es_desc) < len(en_desc) * 0.8 or '--force' in sys.argv:
                     print(f"Translating description: {en_name or 'unnamed'}...")
-                    protected_text, placeholders = protect_terms(en_desc, mapping)
+                    
+                    # 1. Protect Markdown links and Hugo shortcodes
+                    text_no_blocks, blocks = protect_blocks(en_desc)
+                    
+                    # 2. Protect specific terms from mapping
+                    protected_text, term_placeholders = protect_terms(text_no_blocks, mapping)
+                    
+                    # 3. Translate the remaining text
                     translated = translate_text(protected_text, translator)
-                    final_text = restore_terms(translated, placeholders)
+                    
+                    # 4. Restore terms and blocks
+                    restored_terms = restore_terms(translated, term_placeholders)
+                    final_text = restore_blocks(restored_terms, blocks)
+                    
                     final_text = normalize_formatting(final_text)
                     es_loc['description'] = LiteralScalarString(final_text)
                 
