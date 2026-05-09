@@ -255,10 +255,10 @@
 					<!-- Row 1: Name, Type, Range, Notes -->
 					<div class="sheet-attackform-row">
 						<button type="roll" name="roll_attackform"
-							value="&{template:default} {{name= @{character_name} - @{attackformname}}} {{score= [[@{attackformscore}]]/[[@{attackformscoregood}]]/[[@{attackformscoreamazing}]]}} {{type= @{attackformtype}}} {{range= @{attackformrange}}} {{damage= [[@{attackformdamageordinary}]]@{attackformdamageordinarytype}/[[@{attackformdamagegood}]]@{attackformdamagegoodtype}/[[@{attackformdamageamazing}]]@{attackformdamageamazingtype}}} {{notes= @{attackformnotes}}} {{results= @{attackformresults}}}"></button>
+							value="@{attackformmacro}"></button>
 
 						<input type="hidden" name="attr_attackformstepdie" value="+0">
-						<input type="hidden" name="attr_attackformresults" value="[[1d20cs<1cf>20 +0]]">
+						<input type="hidden" name="attr_attackformmacro" value="">
 						<input type="hidden" name="attr_attackformwarning" value="">
 
 						<div class="sheet-attackform-field" style="flex: 6; min-width: 200px;">

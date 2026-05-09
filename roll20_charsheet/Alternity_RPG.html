@@ -96,34 +96,54 @@ const combatStepMap = {
 
 function updateAttackForm(rowId) {
     const prefix = rowId ? 'repeating_attackforms_' + rowId + '_' : 'repeating_attackforms_';
-    getAttrs([prefix + 'attackformdie', prefix + 'attackformaccuracy', prefix + 'attackformsit', prefix + 'attackformmulti', prefix + 'attackformmode'], function(v) {
+    getAttrs([
+        prefix + 'attackformname', prefix + 'attackformscore', prefix + 'attackformtype', prefix + 'attackformrange', prefix + 'attackformnotes',
+        prefix + 'attackformdie', prefix + 'attackformaccuracy', prefix + 'attackformsit', prefix + 'attackformmulti', prefix + 'attackformmode',
+        prefix + 'attackformdamageordinary', prefix + 'attackformdamageordinarytype',
+        prefix + 'attackformdamagegood', prefix + 'attackformdamagegoodtype',
+        prefix + 'attackformdamageamazing', prefix + 'attackformdamageamazingtype'
+    ], function(v) {
         const baseMod = (parseInt(v[prefix + 'attackformdie']) || 0) + (parseInt(v[prefix + 'attackformaccuracy']) || 0) + (parseInt(v[prefix + 'attackformsit']) || 0);
         const multiMod = (parseInt(v[prefix + 'attackformmulti']) || 0);
         const mode = v[prefix + 'attackformmode'] || '1';
         
+        const dmgOrd = v[prefix + 'attackformdamageordinary'] || '0';
+        const dmgOrdT = v[prefix + 'attackformdamageordinarytype'] || '';
+        const dmgGoo = v[prefix + 'attackformdamagegood'] || '0';
+        const dmgGooT = v[prefix + 'attackformdamagegoodtype'] || '';
+        const dmgAma = v[prefix + 'attackformdamageamazing'] || '0';
+        const dmgAmaT = v[prefix + 'attackformdamageamazingtype'] || '';
+        
+        const dmgUnit = `[[${dmgOrd}]]${dmgOrdT}/[[${dmgGoo}]]${dmgGooT}/[[${dmgAma}]]${dmgAmaT}`;
+        
         let resultsStr = "";
+        let damageStr = "";
+        
         if (mode === '1') {
             const total = baseMod + multiMod;
             const step = combatStepMap[String(Math.max(-15, Math.min(15, total)))] || '+0';
             resultsStr = `[[1d20cs<1cf>20 ${step}]]`;
-            // Also update the hidden stepdie for other uses if needed
-            setAttrs({ [prefix + 'attackformstepdie']: step, [prefix + 'attackformresults']: resultsStr });
+            damageStr = `{{damage= ${dmgUnit}}}`;
+            setAttrs({ [prefix + 'attackformstepdie']: step });
         } else if (mode === '2') {
             const step1 = combatStepMap[String(Math.max(-15, Math.min(15, baseMod + multiMod + 1)))] || '+0';
             const step2 = combatStepMap[String(Math.max(-15, Math.min(15, baseMod + multiMod + 2)))] || '+0';
             resultsStr = `Control: [[1d20cs<1cf>20]] | 1st: [[$[[0]] ${step1}]] | 2nd: [[$[[0]] ${step2}]]`;
-            setAttrs({ [prefix + 'attackformresults']: resultsStr });
+            damageStr = `{{damage 1= ${dmgUnit}}} {{damage 2= ${dmgUnit}}}`;
         } else if (mode === '3') {
             const step1 = combatStepMap[String(Math.max(-15, Math.min(15, baseMod + multiMod + 1)))] || '+0';
             const step2 = combatStepMap[String(Math.max(-15, Math.min(15, baseMod + multiMod + 2)))] || '+0';
             const step3 = combatStepMap[String(Math.max(-15, Math.min(15, baseMod + multiMod + 3)))] || '+0';
             resultsStr = `Control: [[1d20cs<1cf>20]] | 1st: [[$[[0]] ${step1}]] | 2nd: [[$[[0]] ${step2}]] | 3rd: [[$[[0]] ${step3}]]`;
-            setAttrs({ [prefix + 'attackformresults']: resultsStr });
+            damageStr = `{{damage 1= ${dmgUnit}}} {{damage 2= ${dmgUnit}}} {{damage 3= ${dmgUnit}}}`;
         }
+        
+        const macro = `&{template:default} {{name=@{character_name} - ${v[prefix + 'attackformname']}}} {{score= [[@{attackformscore}]]/[[@{attackformscoregood}]]/[[@{attackformscoreamazing}]]}} {{type= @{attackformtype}}} {{range= @{attackformrange}}} {{notes= @{attackformnotes}}} {{results= ${resultsStr}}} ${damageStr}`;
+        setAttrs({ [prefix + 'attackformmacro']: macro });
     });
 }
 
-on('change:repeating_attackforms:attackformdie change:repeating_attackforms:attackformaccuracy change:repeating_attackforms:attackformsit change:repeating_attackforms:attackformmulti change:repeating_attackforms:attackformmode', function(eventInfo) {
+on('change:repeating_attackforms:attackformname change:repeating_attackforms:attackformscore change:repeating_attackforms:attackformtype change:repeating_attackforms:attackformrange change:repeating_attackforms:attackformnotes change:repeating_attackforms:attackformdie change:repeating_attackforms:attackformaccuracy change:repeating_attackforms:attackformsit change:repeating_attackforms:attackformmulti change:repeating_attackforms:attackformmode change:repeating_attackforms:attackformdamageordinary change:repeating_attackforms:attackformdamageordinarytype change:repeating_attackforms:attackformdamagegood change:repeating_attackforms:attackformdamagegoodtype change:repeating_attackforms:attackformdamageamazing change:repeating_attackforms:attackformdamageamazingtype', function(eventInfo) {
     const rowMatch = eventInfo.sourceAttribute.match(/repeating_attackforms_([-\w]+)_/);
     if (rowMatch) updateAttackForm(rowMatch[1]);
 });
@@ -669,10 +689,10 @@ on('change:undorank', function() { getAttrs(['UndoRank'], function(v) { setAttrs
 					<!-- Row 1: Name, Type, Range, Notes -->
 					<div class="sheet-attackform-row">
 						<button type="roll" name="roll_attackform"
-							value="&{template:default} {{name= @{character_name} - @{attackformname}}} {{score= [[@{attackformscore}]]/[[@{attackformscoregood}]]/[[@{attackformscoreamazing}]]}} {{type= @{attackformtype}}} {{range= @{attackformrange}}} {{damage= [[@{attackformdamageordinary}]]@{attackformdamageordinarytype}/[[@{attackformdamagegood}]]@{attackformdamagegoodtype}/[[@{attackformdamageamazing}]]@{attackformdamageamazingtype}}} {{notes= @{attackformnotes}}} {{results= @{attackformresults}}}"></button>
+							value="@{attackformmacro}"></button>
 
 						<input type="hidden" name="attr_attackformstepdie" value="+0">
-						<input type="hidden" name="attr_attackformresults" value="[[1d20cs<1cf>20 +0]]">
+						<input type="hidden" name="attr_attackformmacro" value="">
 						<input type="hidden" name="attr_attackformwarning" value="">
 
 						<div class="sheet-attackform-field" style="flex: 6; min-width: 200px;">
