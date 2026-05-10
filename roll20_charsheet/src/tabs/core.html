@@ -469,8 +469,11 @@
 			<div class="sheet-skilltitle sheet-row" style="margin-top: 25px; margin-bottom: 4px;"
 				data-i18n="weapon-data">WEAPON DATA</div>
 			<div class="sheet-header-weapons">
+				<div></div>
 				<div data-i18n="weapon">Weapon</div>
 				<div data-i18n="acc" style="text-align: center;">Acc</div>
+				<div data-i18n="mode" style="text-align: center;">Mode</div>
+				<div data-i18n="multi" style="text-align: center;">Multi</div>
 				<div data-i18n="actions" style="text-align: center;">Actions</div>
 				<div data-i18n="clipsize-ammo" style="text-align: center;">Clip / Ammo</div>
 				<div data-i18n="hide" style="text-align: center;">Hide</div>
@@ -478,8 +481,27 @@
 			</div>
 			<fieldset class="repeating_weapons">
 				<div class="sheet-grid-weapon-row">
+					<button type="roll" name="roll_weapon" value="&{template:default} {{name=@{character_name} - @{weaponname}}} {{Accuracy=[[@{weaponaccuracy}]]}} {{Actions=@{weaponactions}}} {{Multi=[[@{weaponmulti}]]}} {{Mode=@{weaponmode}}}"></button>
 					<input type="text" name="attr_weaponname" class="sheet-weapon-name" data-i18n-placeholder="weapon-name-placeholder" placeholder="Weapon Name">
 					<input type="number" name="attr_weaponaccuracy" value="0">
+					<select name="attr_weaponmode" style="width: 5em !important;">
+						<option value="1" data-i18n="mode-1" selected>1 Attack</option>
+						<option value="2" data-i18n="mode-2">2 Attacks</option>
+						<option value="3" data-i18n="mode-3">3 Attacks (Auto)</option>
+					</select>
+					<select name="attr_weaponmulti" style="width: 4em !important;">
+						<option value="-5">-5</option>
+						<option value="-4">-4</option>
+						<option value="-3">-3</option>
+						<option value="-2">-2</option>
+						<option value="-1">-1</option>
+						<option value="0" selected>0</option>
+						<option value="1">+1</option>
+						<option value="2">+2</option>
+						<option value="3">+3</option>
+						<option value="4">+4</option>
+						<option value="5">+5</option>
+					</select>
 					<input type="text" name="attr_weaponactions">
 					<div class="sheet-triplet">
 						<input type="text" name="attr_weaponclipsize">
@@ -639,4 +661,3 @@
 			{{#notes}}<div class="sheet-template-notes"><span>Notes:</span> {{notes}}</div>{{/notes}}
 		</div>
 	</rolltemplate>
-

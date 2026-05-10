@@ -346,7 +346,7 @@ def build():
     files = [
         'header.html', 'core.html', 'skills.html', 'psionics.html',
         'cybermutations.html', 'wealthequipment.html', 'customskills.html',
-        'options.html', 'starship.html', 'footer.html'
+        'options.html', 'starship.html', 'footer.html', 'templates.html'
     ]
     
     final_html = []

@@ -212,33 +212,76 @@
 		</div>
 	</div>
 	<div class="sheet-row">
-		<div class="sheet-col" style="width:2em;"></div>
-		<div class="sheet-col sheet-broadskill sheet-16emwidth">Weapon Name</div>
-		<div class="sheet-col sheet-broadskill" style="width:3em;">Acc</div>
-		<div class="sheet-col sheet-8emwidth sheet-broadskill">Range</div>
-		<div class="sheet-col sheet-4emwidth sheet-broadskill">Type</div>
-		<div class="sheet-col sheet-20emwidth sheet-broadskill">Damage</div>
-		<div class="sheet-col sheet-broadskill">Actions</div>
+		<div class="sheet-col" style="width:24px;"></div>
+		<div class="sheet-col sheet-broadskill" style="width: 200px;">Weapon Name</div>
+		<div class="sheet-col sheet-broadskill" style="width: 60px; text-align: center;">Acc</div>
+		<div class="sheet-col sheet-broadskill" style="width: 80px; text-align: center;">Mode</div>
+		<div class="sheet-col sheet-broadskill" style="width: 50px; text-align: center;">Multi</div>
+		<div class="sheet-col sheet-broadskill" style="width: 100px; text-align: center;">Range</div>
+		<div class="sheet-col sheet-broadskill" style="width: 50px; text-align: center;">Type</div>
 	</div>
 	<fieldset class="repeating_starshipweapons">
-		<div class="sheet-row">
-			<div class="sheet-col"><button type="roll" name="roll_StarshipWeapon"
-					value="&{template:default} {{name= @{character_name} - @{StarshipWeaponName}}} {{Operator=@{WeaponStationOperator}}} {{Operator's Score= [[@{WeaponStationO}]]/[[@{WeaponStationG}]]/[[@{WeaponStationA}]]}} {{type= @{StarshipWeapontype}}} {{range= @{StarshipWeaponrange}}} {{damage= [[@{StarshipWeapondamageordinary}]]@{StarshipWeapondamageordinarytype}/[[@{StarshipWeapondamagegood}]]@{StarshipWeapondamagegoodtype}/[[@{StarshipWeapondamageamazing}]]@{StarshipWeapondamageamazingtype}}} {{results= [[<!-- ROLL_QUERY_DEFAULT_0 -->]]}}"></button><input
-					type="text" name="attr_StarshipWeaponName" class="sheet-16emwidth"
-					placeholder="Enter Starship Weapon"></div>
-			<div class="sheet-col"><input type="text" name="attr_StarshipWeaponAcc" class="sheet-score" value="0">
+		<div class="sheet-attackform-container" style="margin-bottom: 10px; border-bottom: 1px solid var(--color-border); padding-bottom: 5px;">
+			<div class="sheet-attackform-row">
+				<button type="roll" name="roll_StarshipWeapon" value="@{StarshipWeaponMacro}"></button>
+				<input type="hidden" name="attr_StarshipWeaponMacro" value="">
+				
+				<div class="sheet-attackform-field" style="flex: 6; min-width: 200px;">
+					<input type="text" name="attr_StarshipWeaponName" placeholder="Weapon Name" style="width: 100% !important;">
+				</div>
+				<div class="sheet-attackform-field" style="width: 60px;">
+					<input type="number" name="attr_StarshipWeaponAcc" value="0" style="width: 100% !important;">
+				</div>
+				<div class="sheet-attackform-field" style="width: 80px;">
+					<select name="attr_StarshipWeaponMode" style="width: 100% !important;">
+						<option value="1" data-i18n="mode-1" selected>1 Attack</option>
+						<option value="2" data-i18n="mode-2">2 Attacks</option>
+						<option value="3" data-i18n="mode-3">3 Attacks (Auto)</option>
+					</select>
+				</div>
+				<div class="sheet-attackform-field" style="width: 50px;">
+					<select name="attr_StarshipWeaponMulti" style="width: 100% !important;">
+						<option value="-5">-5</option><option value="-4">-4</option><option value="-3">-3</option><option value="-2">-2</option><option value="-1">-1</option><option value="0" selected>0</option><option value="1">+1</option><option value="2">+2</option><option value="3">+3</option><option value="4">+4</option><option value="5">+5</option>
+					</select>
+				</div>
+				<div class="sheet-attackform-field" style="width: 100px;">
+					<input type="text" name="attr_StarshipWeaponRange" placeholder="S/M/L" style="width: 100% !important;">
+				</div>
+				<div class="sheet-attackform-field" style="width: 50px;">
+					<input type="text" name="attr_StarshipWeaponType" style="width: 100% !important;">
+				</div>
 			</div>
-			<div class="sheet-col"><input type="text" name="attr_StarshipWeaponRange" class="sheet-range"
-					placeholder="Weapon Range"></div>
-			<div class="sheet-col"><input type="text" name="attr_StarshipWeaponType" class="sheet-dicetype"></div>
-			<div class="sheet-col"><input type="text" name="attr_StarshipWeapondamageordinary"
-					class="sheet-dicetype"><input type="text" name="attr_StarshipWeapondamageordinarytype"
-					class="sheet-dmgtype">/<input type="text" name="attr_StarshipWeapondamagegood"
-					class="sheet-dicetype"><input type="text" name="attr_StarshipWeapondamagegoodtype"
-					class="sheet-dmgtype">/<input type="text" name="attr_StarshipWeapondamageamazing"
-					class="sheet-dicetype"><input type="text" name="attr_StarshipWeapondamageamazingtype"
-					class="sheet-dmgtype"></div>
-			<div class="sheet-col"><input type="text" name="attr_StarshipWeaponActions" class="sheet-dmgtype"></div>
+			<div class="sheet-attackform-row" style="padding-left: 34px; margin-top: 4px;">
+				<div class="sheet-attackform-field">
+					<div class="sheet-attackform-label" data-i18n="base-die">Base Die</div>
+					<select name="attr_StarshipWeaponDie" style="width: 4.5em !important;">
+						<option value="-15">-15</option><option value="-10">-10</option><option value="-5">-5</option><option value="0" selected>0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option>
+					</select>
+				</div>
+				<div class="sheet-attackform-field">
+					<div class="sheet-attackform-label" data-i18n="sit">Situation</div>
+					<select name="attr_StarshipWeaponSit" style="width: 4.5em !important;">
+						<option value="-5">-5</option><option value="0" selected>0</option><option value="5">5</option>
+					</select>
+				</div>
+				<div class="sheet-attackform-field">
+					<div class="sheet-attackform-label" data-i18n="damage-oga">Damage (O / G / A)</div>
+					<div class="sheet-triplet sheet-damage-triplet">
+						<input type="text" name="attr_StarshipWeapondamageordinary" placeholder="d4">
+						<input type="text" name="attr_StarshipWeapondamageordinarytype" class="sheet-damage-type" placeholder="s">
+						<span>/</span>
+						<input type="text" name="attr_StarshipWeapondamagegood" placeholder="d4+1">
+						<input type="text" name="attr_StarshipWeapondamagegoodtype" class="sheet-damage-type" placeholder="s">
+						<span>/</span>
+						<input type="text" name="attr_StarshipWeapondamageamazing" placeholder="d4+2">
+						<input type="text" name="attr_StarshipWeapondamageamazingtype" class="sheet-damage-type" placeholder="s">
+					</div>
+				</div>
+				<div class="sheet-attackform-field" style="width: 60px;">
+					<div class="sheet-attackform-label" data-i18n="actions">Actions</div>
+					<input type="text" name="attr_StarshipWeaponActions" style="width: 100% !important;">
+				</div>
+			</div>
 		</div>
 	</fieldset>
 

@@ -94,27 +94,57 @@ const combatStepMap = {
     '11':  '+7d20cs<0cf<0',  '12':  '+8d20cs<0cf<0',  '13':  '+9d20cs<0cf<0',  '14':  '+10d20cs<0cf<0', '15':  '+11d20cs<0cf<0'
 };
 
-function updateAttackForm(rowId) {
-    const prefix = rowId ? 'repeating_attackforms_' + rowId + '_' : 'repeating_attackforms_';
-    getAttrs([
-        prefix + 'attackformname', prefix + 'attackformscore', prefix + 'attackformtype', prefix + 'attackformrange', prefix + 'attackformnotes',
-        prefix + 'attackformdie', prefix + 'attackformaccuracy', prefix + 'attackformsit', prefix + 'attackformmulti', prefix + 'attackformmode'
-    ], function(v) {
-        const baseMod = (parseInt(v[prefix + 'attackformdie']) || 0) + (parseInt(v[prefix + 'attackformaccuracy']) || 0) + (parseInt(v[prefix + 'attackformsit']) || 0);
-        const multiMod = (parseInt(v[prefix + 'attackformmulti']) || 0);
-        const mode = parseInt(v[prefix + 'attackformmode']) || 1;
-        
-        const score = parseInt(v[prefix + 'attackformscore']) || 0;
-        const scoreG = Math.floor(score / 2);
-        const scoreA = Math.floor(score / 4);
-        
-        let params = `{{name=${v[prefix + 'attackformname']}}} {{rowid=${rowId}}} `;
-        if (v[prefix + 'attackformtype']) params += `{{type=${v[prefix + 'attackformtype']}}} `;
-        if (v[prefix + 'attackformrange']) params += `{{range=${v[prefix + 'attackformrange']}}} `;
-        if (v[prefix + 'attackformnotes']) params += `{{notes=${v[prefix + 'attackformnotes']}}} `;
+function updateAttackMacro(section, rowId) {
+    const prefix = `repeating_${section}_${rowId}_`;
+    const isStarship = section === 'starshipweapons';
+    const s = isStarship ? 'StarshipWeapon' : 'attackform';
+    
+    const nameSuffix = isStarship ? 'Name' : 'name';
+    const scoreSuffix = isStarship ? 'Score' : 'score';
+    const typeSuffix = isStarship ? 'Type' : 'type';
+    const rangeSuffix = isStarship ? 'Range' : 'range';
+    const notesSuffix = isStarship ? 'Notes' : 'notes';
+    const dieSuffix = isStarship ? 'Die' : 'die';
+    const accSuffix = isStarship ? 'Acc' : (section === 'attackforms' ? 'accuracy' : 'acc');
+    const sitSuffix = isStarship ? 'Sit' : 'sit';
+    const multiSuffix = isStarship ? 'Multi' : 'multi';
+    const modeSuffix = isStarship ? 'Mode' : 'mode';
+    const macroSuffix = isStarship ? 'Macro' : 'macro';
 
-        // Dice Pool: [[ [[d20]] + [[step1]] + [[step2]] + [[step3]] ]]
-        // Index mapping: 0=total, 1=d20, 2=step1, 3=step2, 4=step3
+    const fields = [
+        prefix + s + nameSuffix, prefix + s + scoreSuffix, prefix + s + typeSuffix, 
+        prefix + s + rangeSuffix, prefix + s + notesSuffix, prefix + s + dieSuffix, 
+        prefix + s + accSuffix, prefix + s + sitSuffix, prefix + s + multiSuffix, 
+        prefix + s + modeSuffix
+    ];
+    
+    // For starships, some fields are named differently or come from the station
+    const extraFields = isStarship ? ['WeaponStationO', 'WeaponStationG', 'WeaponStationA'] : [];
+    
+    getAttrs([...fields, ...extraFields], function(v) {
+        const name = v[prefix + s + nameSuffix] || '';
+        const mode = parseInt(v[prefix + s + modeSuffix]) || 1;
+        const multiMod = parseInt(v[prefix + s + multiSuffix]) || 0;
+        const baseDie = parseInt(v[prefix + s + dieSuffix]) || 0;
+        const accuracy = parseInt(v[prefix + s + accSuffix]) || 0;
+        const sit = parseInt(v[prefix + s + sitSuffix]) || 0;
+        const baseMod = baseDie + accuracy + sit;
+        
+        let score = parseInt(v[prefix + s + scoreSuffix]) || 0;
+        let scoreG = Math.floor(score / 2);
+        let scoreA = Math.floor(score / 4);
+        
+        if (isStarship && !score) {
+            score = parseInt(v['WeaponStationO']) || 0;
+            scoreG = parseInt(v['WeaponStationG']) || 0;
+            scoreA = parseInt(v['WeaponStationA']) || 0;
+        }
+        
+        let params = `{{name=${name}}} {{rowid=${rowId}}} `;
+        if (v[prefix + s + typeSuffix]) params += `{{type=${v[prefix + s + typeSuffix]}}} `;
+        if (v[prefix + s + rangeSuffix]) params += `{{range=${v[prefix + s + rangeSuffix]}}} `;
+        if (v[prefix + s + notesSuffix]) params += `{{notes=${v[prefix + s + notesSuffix]}}} `;
+
         let dicePool = "[[ [[1d20cs<1cf>20]] ";
         let attackParams = "";
         
@@ -122,10 +152,8 @@ function updateAttackForm(rowId) {
             const penalty = (mode > 1) ? i : 0;
             const total = baseMod + multiMod + penalty;
             const stepDie = combatStepMap[String(Math.max(-15, Math.min(15, total)))] || '+0';
-            
             dicePool += `+ [[${stepDie}]] `;
             
-            // attack result: [[ $[[1.computed]] + $[[(i+1).computed]] ]]
             const attackRes = `[[ $[[1.computed]] + $[[${i + 1}.computed]] ]]`;
             attackParams += `{{attack${i}=${attackRes}}} `;
             attackParams += `{{scores${i}=[${score}/${scoreG}/${scoreA}]}} `;
@@ -134,25 +162,34 @@ function updateAttackForm(rowId) {
             attackParams += `{{amazing${i}=${scoreA}}} `;
             attackParams += `{{amazing${i}_p1=${scoreA + 1}}} `;
             attackParams += `{{good${i}_p1=${scoreG + 1}}} `;
-            
-            if (i === 1) setAttrs({ [prefix + 'attackformstepdie']: stepDie });
         }
         dicePool += "]]";
         
         const macro = `&{template:alternity-attack} {{dicepool=${dicePool}}} ${params} ${attackParams}`;
-        setAttrs({ [prefix + 'attackformmacro']: macro });
+        setAttrs({ [prefix + s + macroSuffix]: macro });
     });
 }
 
-on('change:repeating_attackforms:attackformname change:repeating_attackforms:attackformscore change:repeating_attackforms:attackformtype change:repeating_attackforms:attackformrange change:repeating_attackforms:attackformnotes change:repeating_attackforms:attackformdie change:repeating_attackforms:attackformaccuracy change:repeating_attackforms:attackformsit change:repeating_attackforms:attackformmulti change:repeating_attackforms:attackformmode change:repeating_attackforms:attackformdamageordinary change:repeating_attackforms:attackformdamageordinarytype change:repeating_attackforms:attackformdamagegood change:repeating_attackforms:attackformdamagegoodtype change:repeating_attackforms:attackformdamageamazing change:repeating_attackforms:attackformdamageamazingtype', function(eventInfo) {
+// Attack Forms Listeners
+const attackFormFields = ['name', 'score', 'type', 'range', 'notes', 'die', 'accuracy', 'sit', 'multi', 'mode', 'damageordinary', 'damageordinarytype', 'damagegood', 'damagegoodtype', 'damageamazing', 'damageamazingtype'];
+on(attackFormFields.map(f => `change:repeating_attackforms:attackform${f}`).join(' '), function(eventInfo) {
     const rowMatch = eventInfo.sourceAttribute.match(/repeating_attackforms_([-\w]+)_/);
-    if (rowMatch) updateAttackForm(rowMatch[1]);
+    if (rowMatch) updateAttackMacro('attackforms', rowMatch[1]);
 });
 
-on('change:repeating_attackforms sheet:opened', function() {
-    getSectionIDs('repeating_attackforms', function(idarray) {
-        idarray.forEach(rowId => updateAttackForm(rowId));
-    });
+on('change:repeating_attackforms remove:repeating_attackforms sheet:opened', function() {
+    getSectionIDs('repeating_attackforms', ids => ids.forEach(id => updateAttackMacro('attackforms', id)));
+});
+
+// Starship Weapons Listeners
+const starshipFields = ['Name', 'Acc', 'Mode', 'Multi', 'Range', 'Type', 'Die', 'Sit', 'damageordinary', 'damageordinarytype', 'damagegood', 'damagegoodtype', 'damageamazing', 'damageamazingtype'];
+on(starshipFields.map(f => `change:repeating_starshipweapons:starshipweapon${f.toLowerCase()}`).join(' '), function(eventInfo) {
+    const rowMatch = eventInfo.sourceAttribute.match(/repeating_starshipweapons_([-\w]+)_/);
+    if (rowMatch) updateAttackMacro('starshipweapons', rowMatch[1]);
+});
+
+on('change:repeating_starshipweapons remove:repeating_starshipweapons sheet:opened', function() {
+    getSectionIDs('repeating_starshipweapons', ids => ids.forEach(id => updateAttackMacro('starshipweapons', id)));
 });
 
 /* ===== SPECIALTY TRAINING WORKERS ===== */
