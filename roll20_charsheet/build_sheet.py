@@ -163,7 +163,14 @@ def parse_yaml_skills(file_path):
         name = en_loc.get('name', broad_key.replace('-', ' ').title()) if en_loc else broad_key.replace('-', ' ').title()
         untrained = 'YES' if not broad_val.get('trained_only', False) else 'NO'
         cost = broad_val.get('cost', 0)
+        broad_rb_data = broad_val.get('rank_benefits')
+        if not broad_rb_data and en_loc:
+            broad_rb_data = en_loc.get('rank_benefits')
         
+        broad_rb = []
+        if broad_rb_data:
+            broad_rb = [{'rank': str(b.get('rank')), 'title': b.get('title')} for b in broad_rb_data]
+
         specialties = []
         specs_data = broad_val.get('items', {})
         for spec_key, spec_val in specs_data.items():
@@ -173,7 +180,13 @@ def parse_yaml_skills(file_path):
             spec_untrained = 'YES' if not spec_val.get('trained_only', False) else 'NO'
             spec_cost = spec_val.get('cost', 0)
             
-            rb = [{'rank': str(b.get('rank')), 'title': b.get('title')} for b in spec_val.get('rank_benefits', [])]
+            spec_rb_data = spec_val.get('rank_benefits')
+            if not spec_rb_data and spec_en_loc:
+                spec_rb_data = spec_en_loc.get('rank_benefits')
+            
+            rb = []
+            if spec_rb_data:
+                rb = [{'rank': str(b.get('rank')), 'title': b.get('title')} for b in spec_rb_data]
             
             spec_entry = {'n': spec_name, 'at': spec_attr, 'u': spec_untrained, 'c': spec_cost}
             if rb: spec_entry['rb'] = rb
@@ -184,6 +197,7 @@ def parse_yaml_skills(file_path):
             'sp': sorted(specialties, key=lambda x: x['n']),
             'c': cost
         }
+        if broad_rb: broad_entry['rb'] = broad_rb
         skills_by_attr[attr].append(broad_entry)
 
     skills_data = []
@@ -247,7 +261,8 @@ def generate_skills_html(data_list, indent_level=3, is_psionics=False):
             
         cost = skill.get("c", 0)
         trained_only_class = " sheet-trained-only" if is_untrained == "NO" else ""
-        info_icon = build_info_icon(cost, is_untrained)
+        broad_rb = skill.get("rb", None)
+        info_icon = build_info_icon(cost, is_untrained, broad_rb)
         h = f'{indent}<div class="sheet-skill-group-box">\n'
         h += f'{indent}\t<div class="sheet-skill-header-row">\n'
         h += f'{indent}\t\t<div></div><div class="sheet-skill-name">{name.upper()}</div><div></div>\n'

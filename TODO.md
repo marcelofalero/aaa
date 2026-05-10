@@ -10,4 +10,4 @@
 - [x] Fix broken link references reported by Hugo.
 
 ## Content Review
-- [ ] Continue reviewing skills starting with **Modern Ranged Weapons**.
+- [ ] Continue reviewing skills starting with **Security**.
