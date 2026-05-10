@@ -3,7 +3,7 @@
 ## Character Sheet
 - [x] Review character sheet to ensure links work.
 - [x] Review character sheet skills are updated (Trained/Untrained logic).
-- [ ] Add multi-attack option to weapons.
+- [x] Add multi-attack option to weapons.
 
 ## Site & Infrastructure
 - [ ] Review site search indexes and add some sort of automated test to check during publication.
