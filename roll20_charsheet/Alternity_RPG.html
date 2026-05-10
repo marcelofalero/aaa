@@ -96,15 +96,55 @@ const combatStepMap = {
 
 function updateAttackForm(rowId) {
     const prefix = rowId ? 'repeating_attackforms_' + rowId + '_' : 'repeating_attackforms_';
-    getAttrs([prefix + 'attackformdie', prefix + 'attackformaccuracy', prefix + 'attackformsit'], function(v) {
-        const total = (parseInt(v[prefix + 'attackformdie']) || 0) + (parseInt(v[prefix + 'attackformaccuracy']) || 0) + (parseInt(v[prefix + 'attackformsit']) || 0);
-        const clamped = Math.max(-15, Math.min(15, total));
-        const step = combatStepMap[String(clamped)] || '+0';
-        setAttrs({ [prefix + 'attackformstepdie']: step });
+    getAttrs([
+        prefix + 'attackformname', prefix + 'attackformscore', prefix + 'attackformtype', prefix + 'attackformrange', prefix + 'attackformnotes',
+        prefix + 'attackformdie', prefix + 'attackformaccuracy', prefix + 'attackformsit', prefix + 'attackformmulti', prefix + 'attackformmode'
+    ], function(v) {
+        const baseMod = (parseInt(v[prefix + 'attackformdie']) || 0) + (parseInt(v[prefix + 'attackformaccuracy']) || 0) + (parseInt(v[prefix + 'attackformsit']) || 0);
+        const multiMod = (parseInt(v[prefix + 'attackformmulti']) || 0);
+        const mode = parseInt(v[prefix + 'attackformmode']) || 1;
+        
+        const score = parseInt(v[prefix + 'attackformscore']) || 0;
+        const scoreG = Math.floor(score / 2);
+        const scoreA = Math.floor(score / 4);
+        
+        let params = `{{name=${v[prefix + 'attackformname']}}} {{rowid=${rowId}}} `;
+        if (v[prefix + 'attackformtype']) params += `{{type=${v[prefix + 'attackformtype']}}} `;
+        if (v[prefix + 'attackformrange']) params += `{{range=${v[prefix + 'attackformrange']}}} `;
+        if (v[prefix + 'attackformnotes']) params += `{{notes=${v[prefix + 'attackformnotes']}}} `;
+
+        // Dice Pool: [[ [[d20]] + [[step1]] + [[step2]] + [[step3]] ]]
+        // Index mapping: 0=total, 1=d20, 2=step1, 3=step2, 4=step3
+        let dicePool = "[[ [[1d20cs<1cf>20]] ";
+        let attackParams = "";
+        
+        for (let i = 1; i <= mode; i++) {
+            const penalty = (mode > 1) ? i : 0;
+            const total = baseMod + multiMod + penalty;
+            const stepDie = combatStepMap[String(Math.max(-15, Math.min(15, total)))] || '+0';
+            
+            dicePool += `+ [[${stepDie}]] `;
+            
+            // attack result: [[ $[[1.computed]] + $[[(i+1).computed]] ]]
+            const attackRes = `[[ $[[1.computed]] + $[[${i + 1}.computed]] ]]`;
+            attackParams += `{{attack${i}=${attackRes}}} `;
+            attackParams += `{{scores${i}=[${score}/${scoreG}/${scoreA}]}} `;
+            attackParams += `{{ordinary${i}=${score}}} `;
+            attackParams += `{{good${i}=${scoreG}}} `;
+            attackParams += `{{amazing${i}=${scoreA}}} `;
+            attackParams += `{{amazing${i}_p1=${scoreA + 1}}} `;
+            attackParams += `{{good${i}_p1=${scoreG + 1}}} `;
+            
+            if (i === 1) setAttrs({ [prefix + 'attackformstepdie']: stepDie });
+        }
+        dicePool += "]]";
+        
+        const macro = `&{template:alternity-attack} {{dicepool=${dicePool}}} ${params} ${attackParams}`;
+        setAttrs({ [prefix + 'attackformmacro']: macro });
     });
 }
 
-on('change:repeating_attackforms:attackformdie change:repeating_attackforms:attackformaccuracy change:repeating_attackforms:attackformsit', function(eventInfo) {
+on('change:repeating_attackforms:attackformname change:repeating_attackforms:attackformscore change:repeating_attackforms:attackformtype change:repeating_attackforms:attackformrange change:repeating_attackforms:attackformnotes change:repeating_attackforms:attackformdie change:repeating_attackforms:attackformaccuracy change:repeating_attackforms:attackformsit change:repeating_attackforms:attackformmulti change:repeating_attackforms:attackformmode change:repeating_attackforms:attackformdamageordinary change:repeating_attackforms:attackformdamageordinarytype change:repeating_attackforms:attackformdamagegood change:repeating_attackforms:attackformdamagegoodtype change:repeating_attackforms:attackformdamageamazing change:repeating_attackforms:attackformdamageamazingtype', function(eventInfo) {
     const rowMatch = eventInfo.sourceAttribute.match(/repeating_attackforms_([-\w]+)_/);
     if (rowMatch) updateAttackForm(rowMatch[1]);
 });
@@ -650,9 +690,19 @@ on('change:undorank', function() { getAttrs(['UndoRank'], function(v) { setAttrs
 					<!-- Row 1: Name, Type, Range, Notes -->
 					<div class="sheet-attackform-row">
 						<button type="roll" name="roll_attackform"
-							value="&{template:default} {{name= @{character_name} - @{attackformname}}} {{score= [[@{attackformscore}]]/[[@{attackformscoregood}]]/[[@{attackformscoreamazing}]]}} {{type= @{attackformtype}}} {{range= @{attackformrange}}} {{damage= [[@{attackformdamageordinary}]]@{attackformdamageordinarytype}/[[@{attackformdamagegood}]]@{attackformdamagegoodtype}/[[@{attackformdamageamazing}]]@{attackformdamageamazingtype}}} {{notes= @{attackformnotes}}} {{results= [[1d20cs<1cf>20 @{attackformstepdie}]]}}"></button>
+							value="@{attackformmacro}"></button>
+
+						<div class="sheet-hidden">
+							<button type="roll" name="roll_attackformdamageord"
+								value="&{template:default} {{name=@{character_name} - @{attackformname}}} {{Ordinary Damage= [[@{attackformdamageordinary}]]@{attackformdamageordinarytype}}}"></button>
+							<button type="roll" name="roll_attackformdamagegoo"
+								value="&{template:default} {{name=@{character_name} - @{attackformname}}} {{Good Damage= [[@{attackformdamagegood}]]@{attackformdamagegoodtype}}}"></button>
+							<button type="roll" name="roll_attackformdamageama"
+								value="&{template:default} {{name=@{character_name} - @{attackformname}}} {{Amazing Damage= [[@{attackformdamageamazing}]]@{attackformdamageamazingtype}}}"></button>
+						</div>
 
 						<input type="hidden" name="attr_attackformstepdie" value="+0">
+						<input type="hidden" name="attr_attackformmacro" value="">
 						<input type="hidden" name="attr_attackformwarning" value="">
 
 						<div class="sheet-attackform-field" style="flex: 6; min-width: 200px;">
@@ -804,6 +854,32 @@ on('change:undorank', function() { getAttrs(['UndoRank'], function(v) { setAttrs
 								<option value="15">15</option>
 							</select>
 						</div>
+						
+						<div class="sheet-attackform-field">
+							<div class="sheet-attackform-label" data-i18n="mode">Mode</div>
+							<select name="attr_attackformmode" style="width: 8em !important;">
+								<option value="1" data-i18n="mode-1" selected>1 Attack</option>
+								<option value="2" data-i18n="mode-2">2 Attacks</option>
+								<option value="3" data-i18n="mode-3">3 Attacks (Auto)</option>
+							</select>
+						</div>
+
+						<div class="sheet-attackform-field">
+							<div class="sheet-attackform-label" data-i18n="multi">Multi Mod</div>
+							<select name="attr_attackformmulti" style="width: 4.5em !important;">
+								<option value="-5">-5</option>
+								<option value="-4">-4</option>
+								<option value="-3">-3</option>
+								<option value="-2">-2</option>
+								<option value="-1">-1</option>
+								<option value="0" selected>0</option>
+								<option value="1">+1</option>
+								<option value="2">+2</option>
+								<option value="3">+3</option>
+								<option value="4">+4</option>
+								<option value="5">+5</option>
+							</select>
+						</div>
 
 
 
@@ -916,7 +992,89 @@ on('change:undorank', function() { getAttrs(['UndoRank'], function(v) { setAttrs
 				</div>
 			</div>
 		</div>
+	</div>
+
+	<rolltemplate class="sheet-rolltemplate-alternity-attack">
+		<div class="sheet-template-container">
+			<div class="sheet-template-header">
+				<span class="sheet-template-title">{{name}}</span>
+				{{#dicepool}}<span class="sheet-template-control">Control: {{dicepool}}</span>{{/dicepool}}
+			</div>
+			{{#type}}<div class="sheet-template-row"><span>Type:</span> {{type}}</div>{{/type}}
+			{{#range}}<div class="sheet-template-row"><span>Range:</span> {{range}}</div>{{/range}}
+			
+			<div class="sheet-template-body">
+				{{#attack1}}
+				<div class="sheet-template-attack-row">
+					<span class="sheet-template-label">Att. 1 {{scores1}}:</span> 
+					<span class="sheet-template-result">{{attack1}}</span>
+					
+					<div class="sheet-template-action">
+						{{#rollBetween() attack1 1 amazing1}}
+							<span class="sheet-template-hit-ama">[Dmg](~repeating_attackforms_{{rowid}}_attackformdamageama)</span>
+						{{/rollBetween()}}
+						{{#rollBetween() attack1 amazing1_p1 good1}}
+							<span class="sheet-template-hit-goo">[Dmg](~repeating_attackforms_{{rowid}}_attackformdamagegoo)</span>
+						{{/rollBetween()}}
+						{{#rollBetween() attack1 good1_p1 ordinary1}}
+							<span class="sheet-template-hit-ord">[Dmg](~repeating_attackforms_{{rowid}}_attackformdamageord)</span>
+						{{/rollBetween()}}
+						{{#rollGreater() attack1 ordinary1}}
+							<span class="sheet-template-miss">(Miss)</span>
+						{{/rollGreater()}}
+					</div>
+				</div>
+				{{/attack1}}
+
+				{{#attack2}}
+				<div class="sheet-template-attack-row">
+					<span class="sheet-template-label">Att. 2 {{scores2}}:</span> 
+					<span class="sheet-template-result">{{attack2}}</span>
+					
+					<div class="sheet-template-action">
+						{{#rollBetween() attack2 1 amazing2}}
+							<span class="sheet-template-hit-ama">[Dmg](~repeating_attackforms_{{rowid}}_attackformdamageama)</span>
+						{{/rollBetween()}}
+						{{#rollBetween() attack2 amazing2_p1 good2}}
+							<span class="sheet-template-hit-goo">[Dmg](~repeating_attackforms_{{rowid}}_attackformdamagegoo)</span>
+						{{/rollBetween()}}
+						{{#rollBetween() attack2 good2_p1 ordinary2}}
+							<span class="sheet-template-hit-ord">[Dmg](~repeating_attackforms_{{rowid}}_attackformdamageord)</span>
+						{{/rollBetween()}}
+						{{#rollGreater() attack2 ordinary2}}
+							<span class="sheet-template-miss">(Miss)</span>
+						{{/rollGreater()}}
+					</div>
+				</div>
+				{{/attack2}}
+
+				{{#attack3}}
+				<div class="sheet-template-attack-row">
+					<span class="sheet-template-label">Att. 3 {{scores3}}:</span> 
+					<span class="sheet-template-result">{{attack3}}</span>
+					
+					<div class="sheet-template-action">
+						{{#rollBetween() attack3 1 amazing3}}
+							<span class="sheet-template-hit-ama">[Dmg](~repeating_attackforms_{{rowid}}_attackformdamageama)</span>
+						{{/rollBetween()}}
+						{{#rollBetween() attack3 amazing3_p1 good3}}
+							<span class="sheet-template-hit-goo">[Dmg](~repeating_attackforms_{{rowid}}_attackformdamagegoo)</span>
+						{{/rollBetween()}}
+						{{#rollBetween() attack3 good3_p1 ordinary3}}
+							<span class="sheet-template-hit-ord">[Dmg](~repeating_attackforms_{{rowid}}_attackformdamageord)</span>
+						{{/rollBetween()}}
+						{{#rollGreater() attack3 ordinary3}}
+							<span class="sheet-template-miss">(Miss)</span>
+						{{/rollGreater()}}
+					</div>
+				</div>
+				{{/attack3}}
+			</div>
+
+			{{#notes}}<div class="sheet-template-notes"><span>Notes:</span> {{notes}}</div>{{/notes}}
 		</div>
+	</rolltemplate>
+
 		<div class="sheet-section-skills">
 			<div class="sheet-skills-grid-wrapper">
 							<div class="sheet-skill-group-box">

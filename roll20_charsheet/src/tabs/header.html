@@ -96,15 +96,55 @@ const combatStepMap = {
 
 function updateAttackForm(rowId) {
     const prefix = rowId ? 'repeating_attackforms_' + rowId + '_' : 'repeating_attackforms_';
-    getAttrs([prefix + 'attackformdie', prefix + 'attackformaccuracy', prefix + 'attackformsit'], function(v) {
-        const total = (parseInt(v[prefix + 'attackformdie']) || 0) + (parseInt(v[prefix + 'attackformaccuracy']) || 0) + (parseInt(v[prefix + 'attackformsit']) || 0);
-        const clamped = Math.max(-15, Math.min(15, total));
-        const step = combatStepMap[String(clamped)] || '+0';
-        setAttrs({ [prefix + 'attackformstepdie']: step });
+    getAttrs([
+        prefix + 'attackformname', prefix + 'attackformscore', prefix + 'attackformtype', prefix + 'attackformrange', prefix + 'attackformnotes',
+        prefix + 'attackformdie', prefix + 'attackformaccuracy', prefix + 'attackformsit', prefix + 'attackformmulti', prefix + 'attackformmode'
+    ], function(v) {
+        const baseMod = (parseInt(v[prefix + 'attackformdie']) || 0) + (parseInt(v[prefix + 'attackformaccuracy']) || 0) + (parseInt(v[prefix + 'attackformsit']) || 0);
+        const multiMod = (parseInt(v[prefix + 'attackformmulti']) || 0);
+        const mode = parseInt(v[prefix + 'attackformmode']) || 1;
+        
+        const score = parseInt(v[prefix + 'attackformscore']) || 0;
+        const scoreG = Math.floor(score / 2);
+        const scoreA = Math.floor(score / 4);
+        
+        let params = `{{name=${v[prefix + 'attackformname']}}} {{rowid=${rowId}}} `;
+        if (v[prefix + 'attackformtype']) params += `{{type=${v[prefix + 'attackformtype']}}} `;
+        if (v[prefix + 'attackformrange']) params += `{{range=${v[prefix + 'attackformrange']}}} `;
+        if (v[prefix + 'attackformnotes']) params += `{{notes=${v[prefix + 'attackformnotes']}}} `;
+
+        // Dice Pool: [[ [[d20]] + [[step1]] + [[step2]] + [[step3]] ]]
+        // Index mapping: 0=total, 1=d20, 2=step1, 3=step2, 4=step3
+        let dicePool = "[[ [[1d20cs<1cf>20]] ";
+        let attackParams = "";
+        
+        for (let i = 1; i <= mode; i++) {
+            const penalty = (mode > 1) ? i : 0;
+            const total = baseMod + multiMod + penalty;
+            const stepDie = combatStepMap[String(Math.max(-15, Math.min(15, total)))] || '+0';
+            
+            dicePool += `+ [[${stepDie}]] `;
+            
+            // attack result: [[ $[[1.computed]] + $[[(i+1).computed]] ]]
+            const attackRes = `[[ $[[1.computed]] + $[[${i + 1}.computed]] ]]`;
+            attackParams += `{{attack${i}=${attackRes}}} `;
+            attackParams += `{{scores${i}=[${score}/${scoreG}/${scoreA}]}} `;
+            attackParams += `{{ordinary${i}=${score}}} `;
+            attackParams += `{{good${i}=${scoreG}}} `;
+            attackParams += `{{amazing${i}=${scoreA}}} `;
+            attackParams += `{{amazing${i}_p1=${scoreA + 1}}} `;
+            attackParams += `{{good${i}_p1=${scoreG + 1}}} `;
+            
+            if (i === 1) setAttrs({ [prefix + 'attackformstepdie']: stepDie });
+        }
+        dicePool += "]]";
+        
+        const macro = `&{template:alternity-attack} {{dicepool=${dicePool}}} ${params} ${attackParams}`;
+        setAttrs({ [prefix + 'attackformmacro']: macro });
     });
 }
 
-on('change:repeating_attackforms:attackformdie change:repeating_attackforms:attackformaccuracy change:repeating_attackforms:attackformsit', function(eventInfo) {
+on('change:repeating_attackforms:attackformname change:repeating_attackforms:attackformscore change:repeating_attackforms:attackformtype change:repeating_attackforms:attackformrange change:repeating_attackforms:attackformnotes change:repeating_attackforms:attackformdie change:repeating_attackforms:attackformaccuracy change:repeating_attackforms:attackformsit change:repeating_attackforms:attackformmulti change:repeating_attackforms:attackformmode change:repeating_attackforms:attackformdamageordinary change:repeating_attackforms:attackformdamageordinarytype change:repeating_attackforms:attackformdamagegood change:repeating_attackforms:attackformdamagegoodtype change:repeating_attackforms:attackformdamageamazing change:repeating_attackforms:attackformdamageamazingtype', function(eventInfo) {
     const rowMatch = eventInfo.sourceAttribute.match(/repeating_attackforms_([-\w]+)_/);
     if (rowMatch) updateAttackForm(rowMatch[1]);
 });

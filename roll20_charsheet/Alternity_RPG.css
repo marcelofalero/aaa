@@ -1889,3 +1889,143 @@ fieldset.repeating_weapons {
     border-style: solid;
     border-color: var(--color-border) transparent transparent transparent;
 }
+
+/* ===== ROLL TEMPLATE: ALTERNITY ATTACK ===== */
+.sheet-rolltemplate-alternity-attack .sheet-template-container {
+    border: 1px solid #1e293b;
+    background-color: #f9f7f2;
+    padding: 6px;
+    border-radius: 4px;
+    color: #1e293b;
+    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    min-width: 200px;
+}
+
+.sheet-rolltemplate-alternity-attack .sheet-template-header {
+    background-color: #1e293b;
+    color: white;
+    padding: 6px 10px;
+    font-weight: bold;
+    border-radius: 4px 4px 0 0;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+    font-size: 0.95em;
+    letter-spacing: 0.05em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sheet-rolltemplate-alternity-attack .sheet-template-control {
+    font-size: 0.8em;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 2px 6px;
+    border-radius: 3px;
+    text-transform: none;
+    font-weight: normal;
+}
+
+.sheet-rolltemplate-alternity-attack .sheet-template-row {
+    padding: 2px 4px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: 0.85em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sheet-rolltemplate-alternity-attack .sheet-template-row span {
+    font-weight: bold;
+    color: #475569;
+}
+
+.sheet-rolltemplate-alternity-attack .sheet-template-body {
+    padding: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.sheet-rolltemplate-alternity-attack .sheet-template-attack-row {
+    padding: 6px 8px;
+    background-color: rgba(0, 0, 0, 0.03);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.02);
+}
+
+.sheet-rolltemplate-alternity-attack .sheet-template-label {
+    font-weight: bold;
+    font-size: 0.8em;
+    flex: 1;
+    color: #334155;
+}
+
+.sheet-rolltemplate-alternity-attack .sheet-template-result {
+    font-weight: 900;
+    background-color: #1e293b;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 50%;
+    min-width: 1.8em;
+    height: 1.8em;
+    line-height: 1.8em;
+    text-align: center;
+    font-size: 1.1em;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+.sheet-rolltemplate-alternity-attack .sheet-template-action {
+    flex: 0 0 auto;
+    min-width: 60px;
+    text-align: right;
+}
+
+.sheet-rolltemplate-alternity-attack .sheet-template-miss {
+    color: #94a3b8;
+    font-style: italic;
+    font-size: 0.85em;
+    font-weight: bold;
+}
+
+.sheet-rolltemplate-alternity-attack .sheet-template-notes {
+    font-size: 0.8em;
+    margin-top: 6px;
+    padding: 4px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    font-style: italic;
+    color: #475569;
+}
+
+.sheet-rolltemplate-alternity-attack .sheet-template-notes span {
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* Style the buttons in the template to look like professional UI buttons */
+.sheet-rolltemplate-alternity-attack a[href^="~"] {
+    background-color: #0d9488; /* Teal */
+    color: white !important;
+    border: 1px solid #0f766e;
+    padding: 1px 8px;
+    border-radius: 4px;
+    font-size: 0.85em;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    transition: background-color 0.2s;
+    line-height: 1.4;
+}
+
+.sheet-rolltemplate-alternity-attack a[href^="~"]:hover {
+    background-color: #0f766e;
+    border-color: #115e59;
+}
+
+/* Specific hit level colors for damage buttons */
+.sheet-rolltemplate-alternity-attack .sheet-template-hit-ord a[href^="~"] { background-color: #0d9488; }
+.sheet-rolltemplate-alternity-attack .sheet-template-hit-goo a[href^="~"] { background-color: #2563eb; }
+.sheet-rolltemplate-alternity-attack .sheet-template-hit-ama a[href^="~"] { background-color: #7c3aed; }
+

@@ -255,9 +255,19 @@
 					<!-- Row 1: Name, Type, Range, Notes -->
 					<div class="sheet-attackform-row">
 						<button type="roll" name="roll_attackform"
-							value="&{template:default} {{name= @{character_name} - @{attackformname}}} {{score= [[@{attackformscore}]]/[[@{attackformscoregood}]]/[[@{attackformscoreamazing}]]}} {{type= @{attackformtype}}} {{range= @{attackformrange}}} {{damage= [[@{attackformdamageordinary}]]@{attackformdamageordinarytype}/[[@{attackformdamagegood}]]@{attackformdamagegoodtype}/[[@{attackformdamageamazing}]]@{attackformdamageamazingtype}}} {{notes= @{attackformnotes}}} {{results= [[1d20cs<1cf>20 @{attackformstepdie}]]}}"></button>
+							value="@{attackformmacro}"></button>
+
+						<div class="sheet-hidden">
+							<button type="roll" name="roll_attackformdamageord"
+								value="&{template:default} {{name=@{character_name} - @{attackformname}}} {{Ordinary Damage= [[@{attackformdamageordinary}]]@{attackformdamageordinarytype}}}"></button>
+							<button type="roll" name="roll_attackformdamagegoo"
+								value="&{template:default} {{name=@{character_name} - @{attackformname}}} {{Good Damage= [[@{attackformdamagegood}]]@{attackformdamagegoodtype}}}"></button>
+							<button type="roll" name="roll_attackformdamageama"
+								value="&{template:default} {{name=@{character_name} - @{attackformname}}} {{Amazing Damage= [[@{attackformdamageamazing}]]@{attackformdamageamazingtype}}}"></button>
+						</div>
 
 						<input type="hidden" name="attr_attackformstepdie" value="+0">
+						<input type="hidden" name="attr_attackformmacro" value="">
 						<input type="hidden" name="attr_attackformwarning" value="">
 
 						<div class="sheet-attackform-field" style="flex: 6; min-width: 200px;">
@@ -409,6 +419,32 @@
 								<option value="15">15</option>
 							</select>
 						</div>
+						
+						<div class="sheet-attackform-field">
+							<div class="sheet-attackform-label" data-i18n="mode">Mode</div>
+							<select name="attr_attackformmode" style="width: 8em !important;">
+								<option value="1" data-i18n="mode-1" selected>1 Attack</option>
+								<option value="2" data-i18n="mode-2">2 Attacks</option>
+								<option value="3" data-i18n="mode-3">3 Attacks (Auto)</option>
+							</select>
+						</div>
+
+						<div class="sheet-attackform-field">
+							<div class="sheet-attackform-label" data-i18n="multi">Multi Mod</div>
+							<select name="attr_attackformmulti" style="width: 4.5em !important;">
+								<option value="-5">-5</option>
+								<option value="-4">-4</option>
+								<option value="-3">-3</option>
+								<option value="-2">-2</option>
+								<option value="-1">-1</option>
+								<option value="0" selected>0</option>
+								<option value="1">+1</option>
+								<option value="2">+2</option>
+								<option value="3">+3</option>
+								<option value="4">+4</option>
+								<option value="5">+5</option>
+							</select>
+						</div>
 
 
 
@@ -521,4 +557,86 @@
 				</div>
 			</div>
 		</div>
+	</div>
+
+	<rolltemplate class="sheet-rolltemplate-alternity-attack">
+		<div class="sheet-template-container">
+			<div class="sheet-template-header">
+				<span class="sheet-template-title">{{name}}</span>
+				{{#dicepool}}<span class="sheet-template-control">Control: {{dicepool}}</span>{{/dicepool}}
+			</div>
+			{{#type}}<div class="sheet-template-row"><span>Type:</span> {{type}}</div>{{/type}}
+			{{#range}}<div class="sheet-template-row"><span>Range:</span> {{range}}</div>{{/range}}
+			
+			<div class="sheet-template-body">
+				{{#attack1}}
+				<div class="sheet-template-attack-row">
+					<span class="sheet-template-label">Att. 1 {{scores1}}:</span> 
+					<span class="sheet-template-result">{{attack1}}</span>
+					
+					<div class="sheet-template-action">
+						{{#rollBetween() attack1 1 amazing1}}
+							<span class="sheet-template-hit-ama">[Dmg](~repeating_attackforms_{{rowid}}_attackformdamageama)</span>
+						{{/rollBetween()}}
+						{{#rollBetween() attack1 amazing1_p1 good1}}
+							<span class="sheet-template-hit-goo">[Dmg](~repeating_attackforms_{{rowid}}_attackformdamagegoo)</span>
+						{{/rollBetween()}}
+						{{#rollBetween() attack1 good1_p1 ordinary1}}
+							<span class="sheet-template-hit-ord">[Dmg](~repeating_attackforms_{{rowid}}_attackformdamageord)</span>
+						{{/rollBetween()}}
+						{{#rollGreater() attack1 ordinary1}}
+							<span class="sheet-template-miss">(Miss)</span>
+						{{/rollGreater()}}
+					</div>
+				</div>
+				{{/attack1}}
+
+				{{#attack2}}
+				<div class="sheet-template-attack-row">
+					<span class="sheet-template-label">Att. 2 {{scores2}}:</span> 
+					<span class="sheet-template-result">{{attack2}}</span>
+					
+					<div class="sheet-template-action">
+						{{#rollBetween() attack2 1 amazing2}}
+							<span class="sheet-template-hit-ama">[Dmg](~repeating_attackforms_{{rowid}}_attackformdamageama)</span>
+						{{/rollBetween()}}
+						{{#rollBetween() attack2 amazing2_p1 good2}}
+							<span class="sheet-template-hit-goo">[Dmg](~repeating_attackforms_{{rowid}}_attackformdamagegoo)</span>
+						{{/rollBetween()}}
+						{{#rollBetween() attack2 good2_p1 ordinary2}}
+							<span class="sheet-template-hit-ord">[Dmg](~repeating_attackforms_{{rowid}}_attackformdamageord)</span>
+						{{/rollBetween()}}
+						{{#rollGreater() attack2 ordinary2}}
+							<span class="sheet-template-miss">(Miss)</span>
+						{{/rollGreater()}}
+					</div>
+				</div>
+				{{/attack2}}
+
+				{{#attack3}}
+				<div class="sheet-template-attack-row">
+					<span class="sheet-template-label">Att. 3 {{scores3}}:</span> 
+					<span class="sheet-template-result">{{attack3}}</span>
+					
+					<div class="sheet-template-action">
+						{{#rollBetween() attack3 1 amazing3}}
+							<span class="sheet-template-hit-ama">[Dmg](~repeating_attackforms_{{rowid}}_attackformdamageama)</span>
+						{{/rollBetween()}}
+						{{#rollBetween() attack3 amazing3_p1 good3}}
+							<span class="sheet-template-hit-goo">[Dmg](~repeating_attackforms_{{rowid}}_attackformdamagegoo)</span>
+						{{/rollBetween()}}
+						{{#rollBetween() attack3 good3_p1 ordinary3}}
+							<span class="sheet-template-hit-ord">[Dmg](~repeating_attackforms_{{rowid}}_attackformdamageord)</span>
+						{{/rollBetween()}}
+						{{#rollGreater() attack3 ordinary3}}
+							<span class="sheet-template-miss">(Miss)</span>
+						{{/rollGreater()}}
+					</div>
+				</div>
+				{{/attack3}}
+			</div>
+
+			{{#notes}}<div class="sheet-template-notes"><span>Notes:</span> {{notes}}</div>{{/notes}}
 		</div>
+	</rolltemplate>
+
