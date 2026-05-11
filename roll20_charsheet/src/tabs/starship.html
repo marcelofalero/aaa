@@ -224,6 +224,16 @@
 		<div class="sheet-attackform-container" style="margin-bottom: 10px; border-bottom: 1px solid var(--color-border); padding-bottom: 5px;">
 			<div class="sheet-attackform-row">
 				<button type="roll" name="roll_StarshipWeapon" value="@{StarshipWeaponMacro}"></button>
+				
+				<div class="sheet-hidden">
+					<button type="roll" name="roll_StarshipWeapondamageord"
+						value="&{template:default} {{name=@{character_name} - @{StarshipWeaponName}}} {{Ordinary Damage= [[@{StarshipWeapondamageordinary}]]@{StarshipWeapondamageordinarytype}}}"></button>
+					<button type="roll" name="roll_StarshipWeapondamagegoo"
+						value="&{template:default} {{name=@{character_name} - @{StarshipWeaponName}}} {{Good Damage= [[@{StarshipWeapondamagegood}]]@{StarshipWeapondamagegoodtype}}}"></button>
+					<button type="roll" name="roll_StarshipWeapondamageama"
+						value="&{template:default} {{name=@{character_name} - @{StarshipWeaponName}}} {{Amazing Damage= [[@{StarshipWeapondamageamazing}]]@{StarshipWeapondamageamazingtype}}}"></button>
+				</div>
+
 				<input type="hidden" name="attr_StarshipWeaponMacro" value="">
 				
 				<div class="sheet-attackform-field" style="flex: 6; min-width: 200px;">

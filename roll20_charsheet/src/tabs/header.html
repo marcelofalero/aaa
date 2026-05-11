@@ -145,28 +145,52 @@ function updateAttackMacro(section, rowId) {
         if (v[prefix + s + rangeSuffix]) params += `{{range=${v[prefix + s + rangeSuffix]}}} `;
         if (v[prefix + s + notesSuffix]) params += `{{notes=${v[prefix + s + notesSuffix]}}} `;
 
-        let dicePool = "[[ [[1d20cs<1cf>20]] ";
-        let attackParams = "";
+        let script = "!script {{ \n";
+        script += `  --#title|${name}\n`;
+        script += `  --#whisper|gm\n`;
+        
+        if (v[prefix + s + typeSuffix]) script += `  --+Type|${v[prefix + s + typeSuffix]}\n`;
+        if (v[prefix + s + rangeSuffix]) script += `  --+Range|${v[prefix + s + rangeSuffix]}\n`;
+
+        script += `  --=a|1d20cs<1cf>20\n`;
+        script += `  --+Control Die|**[$a]**\n`;
+        script += `  --+---\n`;
+        
+        script += `  --=ord|${score}\n`;
+        script += `  --=goo|{calc(floor([$ord]/2))}\n`;
+        script += `  --=ama|{calc(floor([$ord]/4))}\n`;
         
         for (let i = 1; i <= mode; i++) {
             const penalty = (mode > 1) ? i : 0;
             const total = baseMod + multiMod + penalty;
             const stepDie = combatStepMap[String(Math.max(-15, Math.min(15, total)))] || '+0';
-            dicePool += `+ [[${stepDie}]] `;
             
-            const attackRes = `[[ $[[1.computed]] + $[[${i + 1}.computed]] ]]`;
-            attackParams += `{{attack${i}=${attackRes}}} `;
-            attackParams += `{{scores${i}=[${score}/${scoreG}/${scoreA}]}} `;
-            attackParams += `{{ordinary${i}=${score}}} `;
-            attackParams += `{{good${i}=${scoreG}}} `;
-            attackParams += `{{amazing${i}=${scoreA}}} `;
-            attackParams += `{{amazing${i}_p1=${scoreA + 1}}} `;
-            attackParams += `{{good${i}_p1=${scoreG + 1}}} `;
+            script += `  --/ Attack ${i}\n`;
+            script += `  --=s${i}|${stepDie}\n`;
+            script += `  --=res${i}|{calc([$a] + [$s${i}])}\n`;
+            
+            // Success Logic
+            script += `  --? [$a] -eq 20 | --+Attack ${i}|Natural 20 - **Automatic Miss** ([$res${i}])\n`;
+            script += `  --? [$a] -eq 20 | [goto:skip${i}]\n`;
+            
+            script += `  --? [$a] -eq 1 | --+Attack ${i}|Natural 1 - **Automatic Hit** ([$res${i}]) [Dmg](~repeating_${section}_${rowId}_${s}damageama)\n`;
+            script += `  --? [$a] -eq 1 | [goto:skip${i}]\n`;
+            
+            script += `  --? [$res${i}] -le [$ama] | --+Attack ${i}|Amazing Hit ([$res${i}]) [Dmg](~repeating_${section}_${rowId}_${s}damageama)\n`;
+            script += `  --? [$res${i}] -le [$ama] | [goto:skip${i}]\n`;
+            
+            script += `  --? [$res${i}] -le [$goo] | --+Attack ${i}|Good Hit ([$res${i}]) [Dmg](~repeating_${section}_${rowId}_${s}damagegoo)\n`;
+            script += `  --? [$res${i}] -le [$goo] | [goto:skip${i}]\n`;
+            
+            script += `  --? [$res${i}] -le [$ord] | --+Attack ${i}|Ordinary Hit ([$res${i}]) [Dmg](~repeating_${section}_${rowId}_${s}damageord)\n`;
+            script += `  --? [$res${i}] -le [$ord] | [goto:skip${i}]\n`;
+            
+            script += `  --+Attack ${i}|**Miss** ([$res${i}])\n`;
+            script += `  --:skip${i}|\n`;
         }
-        dicePool += "]]";
         
-        const macro = `&{template:alternity-attack} {{dicepool=${dicePool}}} ${params} ${attackParams}`;
-        setAttrs({ [prefix + s + macroSuffix]: macro });
+        script += "}}";
+        setAttrs({ [prefix + s + macroSuffix]: script });
     });
 }
 
