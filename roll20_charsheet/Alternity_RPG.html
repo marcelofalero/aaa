@@ -14,6 +14,32 @@ destinations = the name of the attribute that stores the total quantity
           destination and fields both can be a single attribute: 'weight'
           or an array of attributes: ['weight','number','equipped']
 */
+
+const generateUUID = (function() {
+    let a = 0, b = [];
+    return function() {
+        let c = (new Date()).getTime(), d = c === a;
+        a = c;
+        let e = new Array(8);
+        for (let f = 7; 0 <= f; f--) {
+            e[f] = "-0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ_abcdefghijklmnopqrstuvwxyz".charAt(c % 64);
+            c = Math.floor(c / 64);
+        }
+        c = e.join("");
+        if (d) {
+            for (f = 11; 0 <= f && 63 === b[f]; f--) b[f] = 0;
+            b[f]++;
+        } else {
+            for (f = 0; 12 > f; f++) b[f] = Math.floor(64 * Math.random());
+        }
+        for (f = 0; 12 > f; f++) c += "-0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ_abcdefghijklmnopqrstuvwxyz".charAt(b[f]);
+        return c;
+    };
+})();
+
+const generateRowID = () => generateUUID().replace(/_/g, "Z");
+
+console.log("Alternity RPG Sheet Workers Loading...");
 const repeatingSum = (destinations, section, fields) => {
     if (!Array.isArray(destinations)) destinations = [destinations.replace(/\s/g, '').split(',')];
     if (!Array.isArray(fields)) fields = [fields.replace(/\s/g, '').split(',')];
@@ -85,52 +111,72 @@ on("change:actioncheck", function() {
 
 /* ===== COMBAT STEP DIE CALCULATION ===== */
 const combatStepMap = {
-    '-15': '-11d20cs<0cf<0', '-14': '-10d20cs<0cf<0', '-13': '-9d20cs<0cf<0', '-12': '-8d20cs<0cf<0', '-11': '-7d20cs<0cf<0',
-    '-10': '-6d20cs<0cf<0',  '-9':  '-5d20cs<0cf<0',  '-8':  '-4d20cs<0cf<0',  '-7':  '-3d20cs<0cf<0',  '-6':  '-2d20cs<0cf<0',
-    '-5':  '-1d20cs<0cf<0',  '-4':  '-1d12cs<0cf<0',  '-3':  '-1d8cs<0cf<0',   '-2':  '-1d6cs<0cf<0',   '-1':  '-1d4cs<0cf<0',
+    '-15': '-11d20', '-14': '-10d20', '-13': '-9d20', '-12': '-8d20', '-11': '-7d20',
+    '-10': '-6d20',  '-9':  '-5d20',  '-8':  '-4d20',  '-7':  '-3d20',  '-6':  '-2d20',
+    '-5':  '-1d20',  '-4':  '-1d12',  '-3':  '-1d8',   '-2':  '-1d6',   '-1':  '-1d4',
     '0':   '+0',
-    '1':   '+1d4cs<0cf<0',   '2':   '+1d6cs<0cf<0',   '3':   '+1d8cs<0cf<0',   '4':   '+1d12cs<0cf<0',  '5':   '+1d20cs<0cf<0',
-    '6':   '+2d20cs<0cf<0',  '7':   '+3d20cs<0cf<0',  '8':   '+4d20cs<0cf<0',  '9':   '+5d20cs<0cf<0',  '10':  '+6d20cs<0cf<0',
-    '11':  '+7d20cs<0cf<0',  '12':  '+8d20cs<0cf<0',  '13':  '+9d20cs<0cf<0',  '14':  '+10d20cs<0cf<0', '15':  '+11d20cs<0cf<0'
+    '1':   '+1d4',   '2':   '+1d6',   '3':   '+1d8',   '4':   '+1d12',  '5':   '+1d20',
+    '6':   '+2d20',  '7':   '+3d20',  '8':   '+4d20',  '9':   '+5d20',  '10':  '+6d20',
+    '11':  '+7d20',  '12':  '+8d20',  '13':  '+9d20',  '14':  '+10d20', '15':  '+11d20'
 };
 
 function updateAttackMacro(section, rowId) {
-    const prefix = `repeating_${section}_${rowId}_`;
     const isStarship = section === 'starshipweapons';
+    const prefix = `repeating_${section}_${rowId}_`;
     const s = isStarship ? 'StarshipWeapon' : 'attackform';
     
-    const nameSuffix = isStarship ? 'Name' : 'name';
-    const scoreSuffix = isStarship ? 'Score' : 'score';
-    const typeSuffix = isStarship ? 'Type' : 'type';
-    const rangeSuffix = isStarship ? 'Range' : 'range';
-    const notesSuffix = isStarship ? 'Notes' : 'notes';
-    const dieSuffix = isStarship ? 'Die' : 'die';
-    const accSuffix = isStarship ? 'Acc' : (section === 'attackforms' ? 'accuracy' : 'acc');
-    const sitSuffix = isStarship ? 'Sit' : 'sit';
-    const multiSuffix = isStarship ? 'Multi' : 'multi';
-    const modeSuffix = isStarship ? 'Mode' : 'mode';
-    const macroSuffix = isStarship ? 'Macro' : 'macro';
-
-    const fields = [
-        prefix + s + nameSuffix, prefix + s + scoreSuffix, prefix + s + typeSuffix, 
-        prefix + s + rangeSuffix, prefix + s + notesSuffix, prefix + s + dieSuffix, 
-        prefix + s + accSuffix, prefix + s + sitSuffix, prefix + s + multiSuffix, 
-        prefix + s + modeSuffix
+    // Core attributes to fetch
+    const coreAttrs = [
+        'name', 'score', 'type', 'range', 'die', 'accuracy', 'sit', 'multi',
+        'damageordinary', 'damagegood', 'damageamazing'
     ];
     
-    // For starships, some fields are named differently or come from the station
+    // Map to actual Roll20 attribute names
+    const fields = coreAttrs.map(attr => {
+        let suffix = attr;
+        if (isStarship) {
+            // Starship specific camelCase
+            if (attr === 'name') suffix = 'Name';
+            if (attr === 'score') suffix = 'Score';
+            if (attr === 'type') suffix = 'Type';
+            if (attr === 'range') suffix = 'Range';
+            if (attr === 'die') suffix = 'Die';
+            if (attr === 'accuracy') suffix = 'Acc';
+            if (attr === 'sit') suffix = 'Sit';
+            if (attr === 'multi') suffix = 'Multi';
+            // Damage suffixes are lowercase in both
+        }
+        return prefix + s + suffix;
+    });
+
     const extraFields = isStarship ? ['WeaponStationO', 'WeaponStationG', 'WeaponStationA'] : [];
     
-    getAttrs([...fields, ...extraFields], function(v) {
-        const name = v[prefix + s + nameSuffix] || '';
-        const mode = parseInt(v[prefix + s + modeSuffix]) || 1;
-        const multiMod = parseInt(v[prefix + s + multiSuffix]) || 0;
-        const baseDie = parseInt(v[prefix + s + dieSuffix]) || 0;
-        const accuracy = parseInt(v[prefix + s + accSuffix]) || 0;
-        const sit = parseInt(v[prefix + s + sitSuffix]) || 0;
+    getAttrs(['character_id', ...fields, ...extraFields], function(v) {
+        console.log(`DEBUG: updateAttackMacro values for ${rowId}:`, v);
+        const charId = v.character_id;
+        
+        const getVal = (suffix) => {
+            let actualSuffix = suffix;
+            if (isStarship) {
+                if (suffix === 'accuracy') actualSuffix = 'Acc';
+                else if (suffix === 'name' || suffix === 'score' || suffix === 'type' || suffix === 'range' || suffix === 'die' || suffix === 'sit' || suffix === 'multi') {
+                    actualSuffix = suffix.charAt(0).toUpperCase() + suffix.slice(1);
+                }
+            }
+            return v[prefix + s + actualSuffix];
+        };
+
+        const name = getVal('name') || 'Weapon';
+        const baseDie = parseInt(getVal('die')) || 0;
+        const accuracy = parseInt(getVal('accuracy')) || 0;
+        const sit = parseInt(getVal('sit')) || 0;
         const baseMod = baseDie + accuracy + sit;
         
-        let score = parseInt(v[prefix + s + scoreSuffix]) || 0;
+        const dmgO = getVal('damageordinary') || '-';
+        const dmgG = getVal('damagegood') || '-';
+        const dmgA = getVal('damageamazing') || '-';
+
+        let score = parseInt(getVal('score')) || 0;
         let scoreG = Math.floor(score / 2);
         let scoreA = Math.floor(score / 4);
         
@@ -140,264 +186,252 @@ function updateAttackMacro(section, rowId) {
             scoreA = parseInt(v['WeaponStationA']) || 0;
         }
         
-        let params = `{{name=${name}}} {{rowid=${rowId}}} `;
-        if (v[prefix + s + typeSuffix]) params += `{{type=${v[prefix + s + typeSuffix]}}} `;
-        if (v[prefix + s + rangeSuffix]) params += `{{range=${v[prefix + s + rangeSuffix]}}} `;
-        if (v[prefix + s + notesSuffix]) params += `{{notes=${v[prefix + s + notesSuffix]}}} `;
+        const generateMacro = (mode) => {
+            let script = "!script {{";
+            script += `\n--#title|${name}\n`;
+            script += `--#titlecardbackground|#1e293b\n`;
+            script += `--#titlecardfontcolor|#ffffff\n`;
+            script += `--#commandcardborder|1px solid #1e293b\n`;
+            script += `--#commandcardboxshadow|0 2px 5px rgba(0,0,0,0.2)\n`;
+            script += `--#titlecardstyle|border-radius: 4px 4px 0 0; padding: 6px 10px;\n`;
+            script += `--#bodycardstyle|border-top: none; border-radius: 0 0 4px 4px;\n`;
+            script += `--#bodyfontsize|12px\n`;
+            script += `--#oddrowbackground|#111827\n`;
+            script += `--#evenrowbackground|#030712\n`;
+            script += `--#oddrowfontcolor|#f9fafb\n`;
+            script += `--#evenrowfontcolor|#f9fafb\n`;
+            script += `--#whisper|gm\n`;
+            
+            const type = getVal('type');
+            const range = getVal('range');
+            if (type) script += `--+Type|${type}\n`;
+            if (range) script += `--+Range|${range}\n`;
 
-        let script = "!script {{ \n";
-        script += `  --#title|${name}\n`;
-        script += `  --#whisper|gm\n`;
-        
-        if (v[prefix + s + typeSuffix]) script += `  --+Type|${v[prefix + s + typeSuffix]}\n`;
-        if (v[prefix + s + rangeSuffix]) script += `  --+Range|${v[prefix + s + rangeSuffix]}\n`;
+            script += `--+Scores|**${score}** / **${scoreG}** / **${scoreA}**\n`;
+            script += `--+Damage Reference|**${dmgO}** / **${dmgG}** / **${dmgA}**\n`;
+            script += `--+---\n`;
 
-        script += `  --=a|1d20cs<1cf>20\n`;
-        script += `  --+Control Die|**[$a]**\n`;
-        script += `  --+---\n`;
+            script += `--=a|1d20\n`;
+            script += `--+Control Die|**[$a]**\n`;
+            
+            for (let i = 1; i <= mode; i++) {
+                const penalty = (mode > 1) ? i : 0;
+                const total = baseMod + penalty;
+                const stepDie = combatStepMap[String(Math.max(-15, Math.min(15, total)))] || '+0';
+                
+                script += `--=s${i}|0${stepDie}\n`;
+                script += `--=res${i}|[$a] + [$s${i}]\n`;
+                script += `--+Attack ${i} ([$a] ${stepDie})|**[$res${i}]**\n`;
+            }
+            
+            script += "}}";
+            return script;
+        };
         
-        script += `  --=ord|${score}\n`;
-        script += `  --=goo|{calc(floor([$ord]/2))}\n`;
-        script += `  --=ama|{calc(floor([$ord]/4))}\n`;
-        
-        for (let i = 1; i <= mode; i++) {
-            const penalty = (mode > 1) ? i : 0;
-            const total = baseMod + multiMod + penalty;
-            const stepDie = combatStepMap[String(Math.max(-15, Math.min(15, total)))] || '+0';
-            
-            script += `  --/ Attack ${i}\n`;
-            script += `  --=s${i}|${stepDie}\n`;
-            script += `  --=res${i}|{calc([$a] + [$s${i}])}\n`;
-            
-            // Success Logic
-            script += `  --? [$a] -eq 20 | --+Attack ${i}|Natural 20 - **Automatic Miss** ([$res${i}])\n`;
-            script += `  --? [$a] -eq 20 | [goto:skip${i}]\n`;
-            
-            script += `  --? [$a] -eq 1 | --+Attack ${i}|Natural 1 - **Automatic Hit** ([$res${i}]) [Dmg](~repeating_${section}_${rowId}_${s}damageama)\n`;
-            script += `  --? [$a] -eq 1 | [goto:skip${i}]\n`;
-            
-            script += `  --? [$res${i}] -le [$ama] | --+Attack ${i}|Amazing Hit ([$res${i}]) [Dmg](~repeating_${section}_${rowId}_${s}damageama)\n`;
-            script += `  --? [$res${i}] -le [$ama] | [goto:skip${i}]\n`;
-            
-            script += `  --? [$res${i}] -le [$goo] | --+Attack ${i}|Good Hit ([$res${i}]) [Dmg](~repeating_${section}_${rowId}_${s}damagegoo)\n`;
-            script += `  --? [$res${i}] -le [$goo] | [goto:skip${i}]\n`;
-            
-            script += `  --? [$res${i}] -le [$ord] | --+Attack ${i}|Ordinary Hit ([$res${i}]) [Dmg](~repeating_${section}_${rowId}_${s}damageord)\n`;
-            script += `  --? [$res${i}] -le [$ord] | [goto:skip${i}]\n`;
-            
-            script += `  --+Attack ${i}|**Miss** ([$res${i}])\n`;
-            script += `  --:skip${i}|\n`;
-        }
-        
-        script += "}}";
-        setAttrs({ [prefix + s + macroSuffix]: script });
+        const update = {};
+        update[prefix + s + 'macro1'] = generateMacro(1);
+        update[prefix + s + 'macro2'] = generateMacro(2);
+        update[prefix + s + 'macro3'] = generateMacro(3);
+        setAttrs(update);
     });
 }
 
 // Attack Forms Listeners
-const attackFormFields = ['name', 'score', 'type', 'range', 'notes', 'die', 'accuracy', 'sit', 'multi', 'mode', 'damageordinary', 'damageordinarytype', 'damagegood', 'damagegoodtype', 'damageamazing', 'damageamazingtype'];
-on(attackFormFields.map(f => `change:repeating_attackforms:attackform${f}`).join(' '), function(eventInfo) {
-    const rowMatch = eventInfo.sourceAttribute.match(/repeating_attackforms_([-\w]+)_/);
-    if (rowMatch) updateAttackMacro('attackforms', rowMatch[1]);
-});
-
-on('change:repeating_attackforms remove:repeating_attackforms sheet:opened', function() {
+on('change:repeating_attackforms:attackformname change:repeating_attackforms:attackformscore change:repeating_attackforms:attackformdie change:repeating_attackforms:attackformaccuracy change:repeating_attackforms:attackformsit change:repeating_attackforms:attackformmulti remove:repeating_attackforms sheet:opened', function() {
+    console.log("DEBUG: attackforms listener triggered");
     getSectionIDs('repeating_attackforms', ids => ids.forEach(id => updateAttackMacro('attackforms', id)));
 });
 
 // Starship Weapons Listeners
-const starshipFields = ['Name', 'Acc', 'Mode', 'Multi', 'Range', 'Type', 'Die', 'Sit', 'damageordinary', 'damageordinarytype', 'damagegood', 'damagegoodtype', 'damageamazing', 'damageamazingtype'];
-on(starshipFields.map(f => `change:repeating_starshipweapons:starshipweapon${f.toLowerCase()}`).join(' '), function(eventInfo) {
-    const rowMatch = eventInfo.sourceAttribute.match(/repeating_starshipweapons_([-\w]+)_/);
-    if (rowMatch) updateAttackMacro('starshipweapons', rowMatch[1]);
-});
-
-on('change:repeating_starshipweapons remove:repeating_starshipweapons sheet:opened', function() {
+on('change:repeating_starshipweapons:StarshipWeaponName change:repeating_starshipweapons:StarshipWeaponScore change:repeating_starshipweapons:StarshipWeaponDie change:repeating_starshipweapons:StarshipWeaponAcc change:repeating_starshipweapons:StarshipWeaponSit change:repeating_starshipweapons:StarshipWeaponMulti remove:repeating_starshipweapons sheet:opened', function() {
+    console.log("DEBUG: starshipweapons listener triggered");
     getSectionIDs('repeating_starshipweapons', ids => ids.forEach(id => updateAttackMacro('starshipweapons', id)));
 });
 
+
+
 /* ===== SPECIALTY TRAINING WORKERS ===== */
-on('change:aerobaticsrank', function() { getAttrs(['AerobaticsRank'], function(v) { setAttrs({ 'Aerobatics_is_trained': (parseInt(v.AerobaticsRank) > 0 ? 1 : 0) }); }); });
-on('change:daredevilrank', function() { getAttrs(['DaredevilRank'], function(v) { setAttrs({ 'Daredevil_is_trained': (parseInt(v.DaredevilRank) > 0 ? 1 : 0) }); }); });
-on('change:dodgerank', function() { getAttrs(['DodgeRank'], function(v) { setAttrs({ 'Dodge_is_trained': (parseInt(v.DodgeRank) > 0 ? 1 : 0) }); }); });
-on('change:fallrank', function() { getAttrs(['FallRank'], function(v) { setAttrs({ 'Fall_is_trained': (parseInt(v.FallRank) > 0 ? 1 : 0) }); }); });
-on('change:zerogtrainingrank', function() { getAttrs(['ZerogTrainingRank'], function(v) { setAttrs({ 'ZerogTraining_is_trained': (parseInt(v.ZerogTrainingRank) > 0 ? 1 : 0) }); }); });
-on('change:bureaucracyrank', function() { getAttrs(['BureaucracyRank'], function(v) { setAttrs({ 'Bureaucracy_is_trained': (parseInt(v.BureaucracyRank) > 0 ? 1 : 0) }); }); });
-on('change:managementrank', function() { getAttrs(['ManagementRank'], function(v) { setAttrs({ 'Management_is_trained': (parseInt(v.ManagementRank) > 0 ? 1 : 0) }); }); });
-on('change:animalridingrank', function() { getAttrs(['AnimalridingRank'], function(v) { setAttrs({ 'Animalriding_is_trained': (parseInt(v.AnimalridingRank) > 0 ? 1 : 0) }); }); });
-on('change:animaltrainingrank', function() { getAttrs(['AnimaltrainingRank'], function(v) { setAttrs({ 'Animaltraining_is_trained': (parseInt(v.AnimaltrainingRank) > 0 ? 1 : 0) }); }); });
-on('change:combatarmorrank', function() { getAttrs(['CombatarmorRank'], function(v) { setAttrs({ 'Combatarmor_is_trained': (parseInt(v.CombatarmorRank) > 0 ? 1 : 0) }); }); });
-on('change:propulsionsystemsrank', function() { getAttrs(['PropulsionsystemsRank'], function(v) { setAttrs({ 'Propulsionsystems_is_trained': (parseInt(v.PropulsionsystemsRank) > 0 ? 1 : 0) }); }); });
-on('change:shieldsrank', function() { getAttrs(['ShieldsRank'], function(v) { setAttrs({ 'Shields_is_trained': (parseInt(v.ShieldsRank) > 0 ? 1 : 0) }); }); });
-on('change:tacticalarmorrank', function() { getAttrs(['TacticalarmorRank'], function(v) { setAttrs({ 'Tacticalarmor_is_trained': (parseInt(v.TacticalarmorRank) > 0 ? 1 : 0) }); }); });
-on('change:climbrank', function() { getAttrs(['ClimbRank'], function(v) { setAttrs({ 'Climb_is_trained': (parseInt(v.ClimbRank) > 0 ? 1 : 0) }); }); });
-on('change:jumprank', function() { getAttrs(['JumpRank'], function(v) { setAttrs({ 'Jump_is_trained': (parseInt(v.JumpRank) > 0 ? 1 : 0) }); }); });
-on('change:swimrank', function() { getAttrs(['SwimRank'], function(v) { setAttrs({ 'Swim_is_trained': (parseInt(v.SwimRank) > 0 ? 1 : 0) }); }); });
-on('change:throwrank', function() { getAttrs(['ThrowRank'], function(v) { setAttrs({ 'Throw_is_trained': (parseInt(v.ThrowRank) > 0 ? 1 : 0) }); }); });
-on('change:intuitionrank', function() { getAttrs(['IntuitionRank'], function(v) { setAttrs({ 'Intuition_is_trained': (parseInt(v.IntuitionRank) > 0 ? 1 : 0) }); }); });
-on('change:perceptionrank', function() { getAttrs(['PerceptionRank'], function(v) { setAttrs({ 'Perception_is_trained': (parseInt(v.PerceptionRank) > 0 ? 1 : 0) }); }); });
-on('change:psionicsenserank', function() { getAttrs(['PsionicSenseRank'], function(v) { setAttrs({ 'PsionicSense_is_trained': (parseInt(v.PsionicSenseRank) > 0 ? 1 : 0) }); }); });
-on('change:corporaterank', function() { getAttrs(['CorporateRank'], function(v) { setAttrs({ 'Corporate_is_trained': (parseInt(v.CorporateRank) > 0 ? 1 : 0) }); }); });
-on('change:illicitbusinessrank', function() { getAttrs(['IllicitbusinessRank'], function(v) { setAttrs({ 'Illicitbusiness_is_trained': (parseInt(v.IllicitbusinessRank) > 0 ? 1 : 0) }); }); });
-on('change:smallbusinessrank', function() { getAttrs(['SmallbusinessRank'], function(v) { setAttrs({ 'Smallbusiness_is_trained': (parseInt(v.SmallbusinessRank) > 0 ? 1 : 0) }); }); });
-on('change:hackingrank', function() { getAttrs(['HackingRank'], function(v) { setAttrs({ 'Hacking_is_trained': (parseInt(v.HackingRank) > 0 ? 1 : 0) }); }); });
-on('change:hardwarerank', function() { getAttrs(['HardwareRank'], function(v) { setAttrs({ 'Hardware_is_trained': (parseInt(v.HardwareRank) > 0 ? 1 : 0) }); }); });
-on('change:programmingrank', function() { getAttrs(['ProgrammingRank'], function(v) { setAttrs({ 'Programming_is_trained': (parseInt(v.ProgrammingRank) > 0 ? 1 : 0) }); }); });
-on('change:concealrank', function() { getAttrs(['ConcealRank'], function(v) { setAttrs({ 'Conceal_is_trained': (parseInt(v.ConcealRank) > 0 ? 1 : 0) }); }); });
-on('change:disguiserank', function() { getAttrs(['DisguiseRank'], function(v) { setAttrs({ 'Disguise_is_trained': (parseInt(v.DisguiseRank) > 0 ? 1 : 0) }); }); });
-on('change:pickpocketrank', function() { getAttrs(['PickpocketRank'], function(v) { setAttrs({ 'Pickpocket_is_trained': (parseInt(v.PickpocketRank) > 0 ? 1 : 0) }); }); });
-on('change:stealthrank', function() { getAttrs(['StealthRank'], function(v) { setAttrs({ 'Stealth_is_trained': (parseInt(v.StealthRank) > 0 ? 1 : 0) }); }); });
-on('change:creativityspecificskillrank', function() { getAttrs(['CreativitySpecificSkillRank'], function(v) { setAttrs({ 'CreativitySpecificSkill_is_trained': (parseInt(v.CreativitySpecificSkillRank) > 0 ? 1 : 0) }); }); });
-on('change:theintangiblerank', function() { getAttrs(['TheIntangibleRank'], function(v) { setAttrs({ 'TheIntangible_is_trained': (parseInt(v.TheIntangibleRank) > 0 ? 1 : 0) }); }); });
-on('change:theshaperank', function() { getAttrs(['TheShapeRank'], function(v) { setAttrs({ 'TheShape_is_trained': (parseInt(v.TheShapeRank) > 0 ? 1 : 0) }); }); });
-on('change:thewordrank', function() { getAttrs(['TheWordRank'], function(v) { setAttrs({ 'TheWord_is_trained': (parseInt(v.TheWordRank) > 0 ? 1 : 0) }); }); });
-on('change:diplomacyrank', function() { getAttrs(['DiplomacyRank'], function(v) { setAttrs({ 'Diplomacy_is_trained': (parseInt(v.DiplomacyRank) > 0 ? 1 : 0) }); }); });
-on('change:etiquetterank', function() { getAttrs(['EtiquetteRank'], function(v) { setAttrs({ 'Etiquette_is_trained': (parseInt(v.EtiquetteRank) > 0 ? 1 : 0) }); }); });
-on('change:firstencounterrank', function() { getAttrs(['FirstEncounterRank'], function(v) { setAttrs({ 'FirstEncounter_is_trained': (parseInt(v.FirstEncounterRank) > 0 ? 1 : 0) }); }); });
-on('change:bluffrank', function() { getAttrs(['BluffRank'], function(v) { setAttrs({ 'Bluff_is_trained': (parseInt(v.BluffRank) > 0 ? 1 : 0) }); }); });
-on('change:briberank', function() { getAttrs(['BribeRank'], function(v) { setAttrs({ 'Bribe_is_trained': (parseInt(v.BribeRank) > 0 ? 1 : 0) }); }); });
-on('change:gamblerank', function() { getAttrs(['GambleRank'], function(v) { setAttrs({ 'Gamble_is_trained': (parseInt(v.GambleRank) > 0 ? 1 : 0) }); }); });
-on('change:gamblelogicgamesrank', function() { getAttrs(['GambleLogicGamesRank'], function(v) { setAttrs({ 'GambleLogicGames_is_trained': (parseInt(v.GambleLogicGamesRank) > 0 ? 1 : 0) }); }); });
-on('change:gamblenervegamesrank', function() { getAttrs(['GambleNerveGamesRank'], function(v) { setAttrs({ 'GambleNerveGames_is_trained': (parseInt(v.GambleNerveGamesRank) > 0 ? 1 : 0) }); }); });
-on('change:disarmrank', function() { getAttrs(['DisarmRank'], function(v) { setAttrs({ 'Disarm_is_trained': (parseInt(v.DisarmRank) > 0 ? 1 : 0) }); }); });
-on('change:scratchbuiltexplosivesrank', function() { getAttrs(['ScratchBuiltExplosivesRank'], function(v) { setAttrs({ 'ScratchBuiltExplosives_is_trained': (parseInt(v.ScratchBuiltExplosivesRank) > 0 ? 1 : 0) }); }); });
-on('change:setexplosivesrank', function() { getAttrs(['SetexplosivesRank'], function(v) { setAttrs({ 'Setexplosives_is_trained': (parseInt(v.SetexplosivesRank) > 0 ? 1 : 0) }); }); });
-on('change:actrank', function() { getAttrs(['ActRank'], function(v) { setAttrs({ 'Act_is_trained': (parseInt(v.ActRank) > 0 ? 1 : 0) }); }); });
-on('change:dancerank', function() { getAttrs(['DanceRank'], function(v) { setAttrs({ 'Dance_is_trained': (parseInt(v.DanceRank) > 0 ? 1 : 0) }); }); });
-on('change:musicalinstrumentrank', function() { getAttrs(['MusicalinstrumentRank'], function(v) { setAttrs({ 'Musicalinstrument_is_trained': (parseInt(v.MusicalinstrumentRank) > 0 ? 1 : 0) }); }); });
-on('change:singrank', function() { getAttrs(['SingRank'], function(v) { setAttrs({ 'Sing_is_trained': (parseInt(v.SingRank) > 0 ? 1 : 0) }); }); });
-on('change:directfirerank', function() { getAttrs(['DirectfireRank'], function(v) { setAttrs({ 'Directfire_is_trained': (parseInt(v.DirectfireRank) > 0 ? 1 : 0) }); }); });
-on('change:indirectfirerank', function() { getAttrs(['IndirectfireRank'], function(v) { setAttrs({ 'Indirectfire_is_trained': (parseInt(v.IndirectfireRank) > 0 ? 1 : 0) }); }); });
-on('change:bargainrank', function() { getAttrs(['BargainRank'], function(v) { setAttrs({ 'Bargain_is_trained': (parseInt(v.BargainRank) > 0 ? 1 : 0) }); }); });
-on('change:charmrank', function() { getAttrs(['CharmRank'], function(v) { setAttrs({ 'Charm_is_trained': (parseInt(v.CharmRank) > 0 ? 1 : 0) }); }); });
-on('change:interviewrank', function() { getAttrs(['InterviewRank'], function(v) { setAttrs({ 'Interview_is_trained': (parseInt(v.InterviewRank) > 0 ? 1 : 0) }); }); });
-on('change:intimidaterank', function() { getAttrs(['IntimidateRank'], function(v) { setAttrs({ 'Intimidate_is_trained': (parseInt(v.IntimidateRank) > 0 ? 1 : 0) }); }); });
-on('change:seducerank', function() { getAttrs(['SeduceRank'], function(v) { setAttrs({ 'Seduce_is_trained': (parseInt(v.SeduceRank) > 0 ? 1 : 0) }); }); });
-on('change:tauntrank', function() { getAttrs(['TauntRank'], function(v) { setAttrs({ 'Taunt_is_trained': (parseInt(v.TauntRank) > 0 ? 1 : 0) }); }); });
-on('change:interrogaterank', function() { getAttrs(['InterrogateRank'], function(v) { setAttrs({ 'Interrogate_is_trained': (parseInt(v.InterrogateRank) > 0 ? 1 : 0) }); }); });
-on('change:searchrank', function() { getAttrs(['SearchRank'], function(v) { setAttrs({ 'Search_is_trained': (parseInt(v.SearchRank) > 0 ? 1 : 0) }); }); });
-on('change:trackrank', function() { getAttrs(['TrackRank'], function(v) { setAttrs({ 'Track_is_trained': (parseInt(v.TrackRank) > 0 ? 1 : 0) }); }); });
-on('change:computeroperationrank', function() { getAttrs(['ComputerOperationRank'], function(v) { setAttrs({ 'ComputerOperation_is_trained': (parseInt(v.ComputerOperationRank) > 0 ? 1 : 0) }); }); });
-on('change:deducerank', function() { getAttrs(['DeduceRank'], function(v) { setAttrs({ 'Deduce_is_trained': (parseInt(v.DeduceRank) > 0 ? 1 : 0) }); }); });
-on('change:firstaidrank', function() { getAttrs(['FirstAidRank'], function(v) { setAttrs({ 'FirstAid_is_trained': (parseInt(v.FirstAidRank) > 0 ? 1 : 0) }); }); });
-on('change:languagespecificskillrank', function() { getAttrs(['LanguageSpecificSkillRank'], function(v) { setAttrs({ 'LanguageSpecificSkill_is_trained': (parseInt(v.LanguageSpecificSkillRank) > 0 ? 1 : 0) }); }); });
-on('change:psionicsrank', function() { getAttrs(['PsionicsRank'], function(v) { setAttrs({ 'Psionics_is_trained': (parseInt(v.PsionicsRank) > 0 ? 1 : 0) }); }); });
-on('change:researchrank', function() { getAttrs(['ResearchRank'], function(v) { setAttrs({ 'Research_is_trained': (parseInt(v.ResearchRank) > 0 ? 1 : 0) }); }); });
-on('change:courtproceduresrank', function() { getAttrs(['CourtproceduresRank'], function(v) { setAttrs({ 'Courtprocedures_is_trained': (parseInt(v.CourtproceduresRank) > 0 ? 1 : 0) }); }); });
-on('change:lawenforcementproceduresrank', function() { getAttrs(['LawenforcementproceduresRank'], function(v) { setAttrs({ 'Lawenforcementprocedures_is_trained': (parseInt(v.LawenforcementproceduresRank) > 0 ? 1 : 0) }); }); });
-on('change:lawspecificskillrank', function() { getAttrs(['LawspecificskillRank'], function(v) { setAttrs({ 'Lawspecificskill_is_trained': (parseInt(v.LawspecificskillRank) > 0 ? 1 : 0) }); }); });
-on('change:psionicsrank', function() { getAttrs(['PsionicsRank'], function(v) { setAttrs({ 'Psionics_is_trained': (parseInt(v.PsionicsRank) > 0 ? 1 : 0) }); }); });
-on('change:commandrank', function() { getAttrs(['CommandRank'], function(v) { setAttrs({ 'Command_is_trained': (parseInt(v.CommandRank) > 0 ? 1 : 0) }); }); });
-on('change:inspirerank', function() { getAttrs(['InspireRank'], function(v) { setAttrs({ 'Inspire_is_trained': (parseInt(v.InspireRank) > 0 ? 1 : 0) }); }); });
-on('change:biologyrank', function() { getAttrs(['BiologyRank'], function(v) { setAttrs({ 'Biology_is_trained': (parseInt(v.BiologyRank) > 0 ? 1 : 0) }); }); });
-on('change:botanyrank', function() { getAttrs(['BotanyRank'], function(v) { setAttrs({ 'Botany_is_trained': (parseInt(v.BotanyRank) > 0 ? 1 : 0) }); }); });
-on('change:geneticsrank', function() { getAttrs(['GeneticsRank'], function(v) { setAttrs({ 'Genetics_is_trained': (parseInt(v.GeneticsRank) > 0 ? 1 : 0) }); }); });
-on('change:psionicsrank', function() { getAttrs(['PsionicsRank'], function(v) { setAttrs({ 'Psionics_is_trained': (parseInt(v.PsionicsRank) > 0 ? 1 : 0) }); }); });
-on('change:zoologyrank', function() { getAttrs(['ZoologyRank'], function(v) { setAttrs({ 'Zoology_is_trained': (parseInt(v.ZoologyRank) > 0 ? 1 : 0) }); }); });
-on('change:forensicsciencerank', function() { getAttrs(['ForensicScienceRank'], function(v) { setAttrs({ 'ForensicScience_is_trained': (parseInt(v.ForensicScienceRank) > 0 ? 1 : 0) }); }); });
-on('change:forensicsrank', function() { getAttrs(['ForensicsRank'], function(v) { setAttrs({ 'Forensics_is_trained': (parseInt(v.ForensicsRank) > 0 ? 1 : 0) }); }); });
-on('change:medicalknowledgerank', function() { getAttrs(['MedicalKnowledgeRank'], function(v) { setAttrs({ 'MedicalKnowledge_is_trained': (parseInt(v.MedicalKnowledgeRank) > 0 ? 1 : 0) }); }); });
-on('change:psychologyrank', function() { getAttrs(['PsychologyRank'], function(v) { setAttrs({ 'Psychology_is_trained': (parseInt(v.PsychologyRank) > 0 ? 1 : 0) }); }); });
-on('change:surgeryrank', function() { getAttrs(['SurgeryRank'], function(v) { setAttrs({ 'Surgery_is_trained': (parseInt(v.SurgeryRank) > 0 ? 1 : 0) }); }); });
-on('change:treatmentrank', function() { getAttrs(['TreatmentRank'], function(v) { setAttrs({ 'Treatment_is_trained': (parseInt(v.TreatmentRank) > 0 ? 1 : 0) }); }); });
-on('change:xenomedicinerank', function() { getAttrs(['XenomedicineRank'], function(v) { setAttrs({ 'Xenomedicine_is_trained': (parseInt(v.XenomedicineRank) > 0 ? 1 : 0) }); }); });
-on('change:bladerank', function() { getAttrs(['BladeRank'], function(v) { setAttrs({ 'Blade_is_trained': (parseInt(v.BladeRank) > 0 ? 1 : 0) }); }); });
-on('change:bluntrank', function() { getAttrs(['BluntRank'], function(v) { setAttrs({ 'Blunt_is_trained': (parseInt(v.BluntRank) > 0 ? 1 : 0) }); }); });
-on('change:defensivemartialartsrank', function() { getAttrs(['DefensiveMartialArtsRank'], function(v) { setAttrs({ 'DefensiveMartialArts_is_trained': (parseInt(v.DefensiveMartialArtsRank) > 0 ? 1 : 0) }); }); });
-on('change:powermartialartsrank', function() { getAttrs(['PowerMartialArtsRank'], function(v) { setAttrs({ 'PowerMartialArts_is_trained': (parseInt(v.PowerMartialArtsRank) > 0 ? 1 : 0) }); }); });
-on('change:poweredrank', function() { getAttrs(['PoweredRank'], function(v) { setAttrs({ 'Powered_is_trained': (parseInt(v.PoweredRank) > 0 ? 1 : 0) }); }); });
-on('change:assaultriflerank', function() { getAttrs(['AssaultRifleRank'], function(v) { setAttrs({ 'AssaultRifle_is_trained': (parseInt(v.AssaultRifleRank) > 0 ? 1 : 0) }); }); });
-on('change:pistolrank', function() { getAttrs(['PistolRank'], function(v) { setAttrs({ 'Pistol_is_trained': (parseInt(v.PistolRank) > 0 ? 1 : 0) }); }); });
-on('change:riflerank', function() { getAttrs(['RifleRank'], function(v) { setAttrs({ 'Rifle_is_trained': (parseInt(v.RifleRank) > 0 ? 1 : 0) }); }); });
-on('change:smgrank', function() { getAttrs(['SMGRank'], function(v) { setAttrs({ 'SMG_is_trained': (parseInt(v.SMGRank) > 0 ? 1 : 0) }); }); });
-on('change:shotgunrank', function() { getAttrs(['ShotgunRank'], function(v) { setAttrs({ 'Shotgun_is_trained': (parseInt(v.ShotgunRank) > 0 ? 1 : 0) }); }); });
-on('change:astrogationdrivespacerank', function() { getAttrs(['AstrogationdrivespaceRank'], function(v) { setAttrs({ 'Astrogationdrivespace_is_trained': (parseInt(v.AstrogationdrivespaceRank) > 0 ? 1 : 0) }); }); });
-on('change:astrogationsystemrank', function() { getAttrs(['AstrogationsystemRank'], function(v) { setAttrs({ 'Astrogationsystem_is_trained': (parseInt(v.AstrogationsystemRank) > 0 ? 1 : 0) }); }); });
-on('change:navigationsurfacerank', function() { getAttrs(['NavigationsurfaceRank'], function(v) { setAttrs({ 'Navigationsurface_is_trained': (parseInt(v.NavigationsurfaceRank) > 0 ? 1 : 0) }); }); });
-on('change:astronomyrank', function() { getAttrs(['AstronomyRank'], function(v) { setAttrs({ 'Astronomy_is_trained': (parseInt(v.AstronomyRank) > 0 ? 1 : 0) }); }); });
-on('change:chemistryrank', function() { getAttrs(['ChemistryRank'], function(v) { setAttrs({ 'Chemistry_is_trained': (parseInt(v.ChemistryRank) > 0 ? 1 : 0) }); }); });
-on('change:physicsrank', function() { getAttrs(['PhysicsRank'], function(v) { setAttrs({ 'Physics_is_trained': (parseInt(v.PhysicsRank) > 0 ? 1 : 0) }); }); });
-on('change:planetologyrank', function() { getAttrs(['PlanetologyRank'], function(v) { setAttrs({ 'Planetology_is_trained': (parseInt(v.PlanetologyRank) > 0 ? 1 : 0) }); }); });
-on('change:bowrank', function() { getAttrs(['BowRank'], function(v) { setAttrs({ 'Bow_is_trained': (parseInt(v.BowRank) > 0 ? 1 : 0) }); }); });
-on('change:crossbowrank', function() { getAttrs(['CrossbowRank'], function(v) { setAttrs({ 'Crossbow_is_trained': (parseInt(v.CrossbowRank) > 0 ? 1 : 0) }); }); });
-on('change:flintlockrank', function() { getAttrs(['FlintlockRank'], function(v) { setAttrs({ 'Flintlock_is_trained': (parseInt(v.FlintlockRank) > 0 ? 1 : 0) }); }); });
-on('change:slingrank', function() { getAttrs(['SlingRank'], function(v) { setAttrs({ 'Sling_is_trained': (parseInt(v.SlingRank) > 0 ? 1 : 0) }); }); });
-on('change:mentalresolverank', function() { getAttrs(['MentalresolveRank'], function(v) { setAttrs({ 'Mentalresolve_is_trained': (parseInt(v.MentalresolveRank) > 0 ? 1 : 0) }); }); });
-on('change:physicalresolverank', function() { getAttrs(['PhysicalresolveRank'], function(v) { setAttrs({ 'Physicalresolve_is_trained': (parseInt(v.PhysicalresolveRank) > 0 ? 1 : 0) }); }); });
-on('change:protectionprotocolsrank', function() { getAttrs(['ProtectionprotocolsRank'], function(v) { setAttrs({ 'Protectionprotocols_is_trained': (parseInt(v.ProtectionprotocolsRank) > 0 ? 1 : 0) }); }); });
-on('change:securitydevicesrank', function() { getAttrs(['SecuritydevicesRank'], function(v) { setAttrs({ 'Securitydevices_is_trained': (parseInt(v.SecuritydevicesRank) > 0 ? 1 : 0) }); }); });
-on('change:endurancerank', function() { getAttrs(['EnduranceRank'], function(v) { setAttrs({ 'Endurance_is_trained': (parseInt(v.EnduranceRank) > 0 ? 1 : 0) }); }); });
-on('change:resistpainrank', function() { getAttrs(['ResistpainRank'], function(v) { setAttrs({ 'Resistpain_is_trained': (parseInt(v.ResistpainRank) > 0 ? 1 : 0) }); }); });
-on('change:criminalelementsrank', function() { getAttrs(['CriminalelementsRank'], function(v) { setAttrs({ 'Criminalelements_is_trained': (parseInt(v.CriminalelementsRank) > 0 ? 1 : 0) }); }); });
-on('change:streetknowledgerank', function() { getAttrs(['StreetKnowledgeRank'], function(v) { setAttrs({ 'StreetKnowledge_is_trained': (parseInt(v.StreetKnowledgeRank) > 0 ? 1 : 0) }); }); });
-on('change:adaptabilityrank', function() { getAttrs(['AdaptabilityRank'], function(v) { setAttrs({ 'Adaptability_is_trained': (parseInt(v.AdaptabilityRank) > 0 ? 1 : 0) }); }); });
-on('change:survivaltrainingrank', function() { getAttrs(['SurvivaltrainingRank'], function(v) { setAttrs({ 'Survivaltraining_is_trained': (parseInt(v.SurvivaltrainingRank) > 0 ? 1 : 0) }); }); });
-on('change:trailblazingrank', function() { getAttrs(['TrailblazingRank'], function(v) { setAttrs({ 'Trailblazing_is_trained': (parseInt(v.TrailblazingRank) > 0 ? 1 : 0) }); }); });
-on('change:communicationsrank', function() { getAttrs(['CommunicationsRank'], function(v) { setAttrs({ 'Communications_is_trained': (parseInt(v.CommunicationsRank) > 0 ? 1 : 0) }); }); });
-on('change:defensesrank', function() { getAttrs(['DefensesRank'], function(v) { setAttrs({ 'Defenses_is_trained': (parseInt(v.DefensesRank) > 0 ? 1 : 0) }); }); });
-on('change:engineeringrank', function() { getAttrs(['EngineeringRank'], function(v) { setAttrs({ 'Engineering_is_trained': (parseInt(v.EngineeringRank) > 0 ? 1 : 0) }); }); });
-on('change:sensorsrank', function() { getAttrs(['SensorsRank'], function(v) { setAttrs({ 'Sensors_is_trained': (parseInt(v.SensorsRank) > 0 ? 1 : 0) }); }); });
-on('change:weaponsrank', function() { getAttrs(['WeaponsRank'], function(v) { setAttrs({ 'Weapons_is_trained': (parseInt(v.WeaponsRank) > 0 ? 1 : 0) }); }); });
-on('change:infantrytacticsrank', function() { getAttrs(['InfantrytacticsRank'], function(v) { setAttrs({ 'Infantrytactics_is_trained': (parseInt(v.InfantrytacticsRank) > 0 ? 1 : 0) }); }); });
-on('change:spacetacticsrank', function() { getAttrs(['SpacetacticsRank'], function(v) { setAttrs({ 'Spacetactics_is_trained': (parseInt(v.SpacetacticsRank) > 0 ? 1 : 0) }); }); });
-on('change:vehicletacticsrank', function() { getAttrs(['VehicletacticsRank'], function(v) { setAttrs({ 'Vehicletactics_is_trained': (parseInt(v.VehicletacticsRank) > 0 ? 1 : 0) }); }); });
-on('change:inventionrank', function() { getAttrs(['InventionRank'], function(v) { setAttrs({ 'Invention_is_trained': (parseInt(v.InventionRank) > 0 ? 1 : 0) }); }); });
-on('change:juryrigrank', function() { getAttrs(['JuryrigRank'], function(v) { setAttrs({ 'Juryrig_is_trained': (parseInt(v.JuryrigRank) > 0 ? 1 : 0) }); }); });
-on('change:repairrank', function() { getAttrs(['RepairRank'], function(v) { setAttrs({ 'Repair_is_trained': (parseInt(v.RepairRank) > 0 ? 1 : 0) }); }); });
-on('change:technicalknowledgerank', function() { getAttrs(['TechnicalKnowledgeRank'], function(v) { setAttrs({ 'TechnicalKnowledge_is_trained': (parseInt(v.TechnicalKnowledgeRank) > 0 ? 1 : 0) }); }); });
-on('change:airvehiclerank', function() { getAttrs(['AirvehicleRank'], function(v) { setAttrs({ 'Airvehicle_is_trained': (parseInt(v.AirvehicleRank) > 0 ? 1 : 0) }); }); });
-on('change:landvehiclerank', function() { getAttrs(['LandvehicleRank'], function(v) { setAttrs({ 'Landvehicle_is_trained': (parseInt(v.LandvehicleRank) > 0 ? 1 : 0) }); }); });
-on('change:spacevehiclerank', function() { getAttrs(['SpacevehicleRank'], function(v) { setAttrs({ 'Spacevehicle_is_trained': (parseInt(v.SpacevehicleRank) > 0 ? 1 : 0) }); }); });
-on('change:watervehiclerank', function() { getAttrs(['WatervehicleRank'], function(v) { setAttrs({ 'Watervehicle_is_trained': (parseInt(v.WatervehicleRank) > 0 ? 1 : 0) }); }); });
-on('change:bioarmorrank', function() { getAttrs(['BioarmorRank'], function(v) { setAttrs({ 'Bioarmor_is_trained': (parseInt(v.BioarmorRank) > 0 ? 1 : 0) }); }); });
-on('change:bioweaponrank', function() { getAttrs(['BioweaponRank'], function(v) { setAttrs({ 'Bioweapon_is_trained': (parseInt(v.BioweaponRank) > 0 ? 1 : 0) }); }); });
-on('change:clamberrank', function() { getAttrs(['ClamberRank'], function(v) { setAttrs({ 'Clamber_is_trained': (parseInt(v.ClamberRank) > 0 ? 1 : 0) }); }); });
-on('change:controlmetabolismrank', function() { getAttrs(['ControlMetabolismRank'], function(v) { setAttrs({ 'ControlMetabolism_is_trained': (parseInt(v.ControlMetabolismRank) > 0 ? 1 : 0) }); }); });
-on('change:healrank', function() { getAttrs(['HealRank'], function(v) { setAttrs({ 'Heal_is_trained': (parseInt(v.HealRank) > 0 ? 1 : 0) }); }); });
-on('change:intangibilityrank', function() { getAttrs(['IntangibilityRank'], function(v) { setAttrs({ 'Intangibility_is_trained': (parseInt(v.IntangibilityRank) > 0 ? 1 : 0) }); }); });
-on('change:morphrank', function() { getAttrs(['MorphRank'], function(v) { setAttrs({ 'Morph_is_trained': (parseInt(v.MorphRank) > 0 ? 1 : 0) }); }); });
-on('change:rejuvenaterank', function() { getAttrs(['RejuvenateRank'], function(v) { setAttrs({ 'Rejuvenate_is_trained': (parseInt(v.RejuvenateRank) > 0 ? 1 : 0) }); }); });
-on('change:shatterrank', function() { getAttrs(['ShatterRank'], function(v) { setAttrs({ 'Shatter_is_trained': (parseInt(v.ShatterRank) > 0 ? 1 : 0) }); }); });
-on('change:transferdamagerank', function() { getAttrs(['TransferDamageRank'], function(v) { setAttrs({ 'TransferDamage_is_trained': (parseInt(v.TransferDamageRank) > 0 ? 1 : 0) }); }); });
-on('change:battlemindrank', function() { getAttrs(['BattleMindRank'], function(v) { setAttrs({ 'BattleMind_is_trained': (parseInt(v.BattleMindRank) > 0 ? 1 : 0) }); }); });
-on('change:clairaudiencerank', function() { getAttrs(['ClairaudienceRank'], function(v) { setAttrs({ 'Clairaudience_is_trained': (parseInt(v.ClairaudienceRank) > 0 ? 1 : 0) }); }); });
-on('change:clairvoyancerank', function() { getAttrs(['ClairvoyanceRank'], function(v) { setAttrs({ 'Clairvoyance_is_trained': (parseInt(v.ClairvoyanceRank) > 0 ? 1 : 0) }); }); });
-on('change:dreamhuntrank', function() { getAttrs(['DreamHuntRank'], function(v) { setAttrs({ 'DreamHunt_is_trained': (parseInt(v.DreamHuntRank) > 0 ? 1 : 0) }); }); });
-on('change:empathyrank', function() { getAttrs(['EmpathyRank'], function(v) { setAttrs({ 'Empathy_is_trained': (parseInt(v.EmpathyRank) > 0 ? 1 : 0) }); }); });
-on('change:mindreadingrank', function() { getAttrs(['MindReadingRank'], function(v) { setAttrs({ 'MindReading_is_trained': (parseInt(v.MindReadingRank) > 0 ? 1 : 0) }); }); });
-on('change:navcognitionrank', function() { getAttrs(['NavcognitionRank'], function(v) { setAttrs({ 'Navcognition_is_trained': (parseInt(v.NavcognitionRank) > 0 ? 1 : 0) }); }); });
-on('change:postcognitionrank', function() { getAttrs(['PostcognitionRank'], function(v) { setAttrs({ 'Postcognition_is_trained': (parseInt(v.PostcognitionRank) > 0 ? 1 : 0) }); }); });
-on('change:precognitionrank', function() { getAttrs(['PrecognitionRank'], function(v) { setAttrs({ 'Precognition_is_trained': (parseInt(v.PrecognitionRank) > 0 ? 1 : 0) }); }); });
-on('change:psychometryrank', function() { getAttrs(['PsychometryRank'], function(v) { setAttrs({ 'Psychometry_is_trained': (parseInt(v.PsychometryRank) > 0 ? 1 : 0) }); }); });
-on('change:alterspeedrank', function() { getAttrs(['AlterSpeedRank'], function(v) { setAttrs({ 'AlterSpeed_is_trained': (parseInt(v.AlterSpeedRank) > 0 ? 1 : 0) }); }); });
-on('change:apportationrank', function() { getAttrs(['ApportationRank'], function(v) { setAttrs({ 'Apportation_is_trained': (parseInt(v.ApportationRank) > 0 ? 1 : 0) }); }); });
-on('change:duplicaterank', function() { getAttrs(['DuplicateRank'], function(v) { setAttrs({ 'Duplicate_is_trained': (parseInt(v.DuplicateRank) > 0 ? 1 : 0) }); }); });
-on('change:teleportationrank', function() { getAttrs(['TeleportationRank'], function(v) { setAttrs({ 'Teleportation_is_trained': (parseInt(v.TeleportationRank) > 0 ? 1 : 0) }); }); });
-on('change:timesliprank', function() { getAttrs(['TimeslipRank'], function(v) { setAttrs({ 'Timeslip_is_trained': (parseInt(v.TimeslipRank) > 0 ? 1 : 0) }); }); });
-on('change:cryokineticsrank', function() { getAttrs(['CryokineticsRank'], function(v) { setAttrs({ 'Cryokinetics_is_trained': (parseInt(v.CryokineticsRank) > 0 ? 1 : 0) }); }); });
-on('change:electrokineticsrank', function() { getAttrs(['ElectrokineticsRank'], function(v) { setAttrs({ 'Electrokinetics_is_trained': (parseInt(v.ElectrokineticsRank) > 0 ? 1 : 0) }); }); });
-on('change:kineticblowrank', function() { getAttrs(['KineticBlowRank'], function(v) { setAttrs({ 'KineticBlow_is_trained': (parseInt(v.KineticBlowRank) > 0 ? 1 : 0) }); }); });
-on('change:kineticshieldrank', function() { getAttrs(['KineticShieldRank'], function(v) { setAttrs({ 'KineticShield_is_trained': (parseInt(v.KineticShieldRank) > 0 ? 1 : 0) }); }); });
-on('change:levitationrank', function() { getAttrs(['LevitationRank'], function(v) { setAttrs({ 'Levitation_is_trained': (parseInt(v.LevitationRank) > 0 ? 1 : 0) }); }); });
-on('change:photokineticsrank', function() { getAttrs(['PhotokineticsRank'], function(v) { setAttrs({ 'Photokinetics_is_trained': (parseInt(v.PhotokineticsRank) > 0 ? 1 : 0) }); }); });
-on('change:psychokineticsrank', function() { getAttrs(['PsychokineticsRank'], function(v) { setAttrs({ 'Psychokinetics_is_trained': (parseInt(v.PsychokineticsRank) > 0 ? 1 : 0) }); }); });
-on('change:pyrokinesisrank', function() { getAttrs(['PyrokinesisRank'], function(v) { setAttrs({ 'Pyrokinesis_is_trained': (parseInt(v.PyrokinesisRank) > 0 ? 1 : 0) }); }); });
-on('change:sheya'sclutchrank', function() { getAttrs(['Sheya'sClutchRank'], function(v) { setAttrs({ 'Sheya'sClutch_is_trained': (parseInt(v.Sheya'sClutchRank) > 0 ? 1 : 0) }); }); });
-on('change:contactrank', function() { getAttrs(['ContactRank'], function(v) { setAttrs({ 'Contact_is_trained': (parseInt(v.ContactRank) > 0 ? 1 : 0) }); }); });
-on('change:datalinkrank', function() { getAttrs(['DatalinkRank'], function(v) { setAttrs({ 'Datalink_is_trained': (parseInt(v.DatalinkRank) > 0 ? 1 : 0) }); }); });
-on('change:drainrank', function() { getAttrs(['DrainRank'], function(v) { setAttrs({ 'Drain_is_trained': (parseInt(v.DrainRank) > 0 ? 1 : 0) }); }); });
-on('change:empathicprojectionrank', function() { getAttrs(['EmpathicProjectionRank'], function(v) { setAttrs({ 'EmpathicProjection_is_trained': (parseInt(v.EmpathicProjectionRank) > 0 ? 1 : 0) }); }); });
-on('change:guidancerank', function() { getAttrs(['GuidanceRank'], function(v) { setAttrs({ 'Guidance_is_trained': (parseInt(v.GuidanceRank) > 0 ? 1 : 0) }); }); });
-on('change:illusionrank', function() { getAttrs(['IllusionRank'], function(v) { setAttrs({ 'Illusion_is_trained': (parseInt(v.IllusionRank) > 0 ? 1 : 0) }); }); });
-on('change:mindblastrank', function() { getAttrs(['MindBlastRank'], function(v) { setAttrs({ 'MindBlast_is_trained': (parseInt(v.MindBlastRank) > 0 ? 1 : 0) }); }); });
-on('change:mindshieldrank', function() { getAttrs(['MindShieldRank'], function(v) { setAttrs({ 'MindShield_is_trained': (parseInt(v.MindShieldRank) > 0 ? 1 : 0) }); }); });
-on('change:mindwiperank', function() { getAttrs(['MindWipeRank'], function(v) { setAttrs({ 'MindWipe_is_trained': (parseInt(v.MindWipeRank) > 0 ? 1 : 0) }); }); });
-on('change:psychicarmorrank', function() { getAttrs(['PsychicArmorRank'], function(v) { setAttrs({ 'PsychicArmor_is_trained': (parseInt(v.PsychicArmorRank) > 0 ? 1 : 0) }); }); });
-on('change:psychicprojectionrank', function() { getAttrs(['PsychicProjectionRank'], function(v) { setAttrs({ 'PsychicProjection_is_trained': (parseInt(v.PsychicProjectionRank) > 0 ? 1 : 0) }); }); });
-on('change:subdualrank', function() { getAttrs(['SubdualRank'], function(v) { setAttrs({ 'Subdual_is_trained': (parseInt(v.SubdualRank) > 0 ? 1 : 0) }); }); });
-on('change:suggestrank', function() { getAttrs(['SuggestRank'], function(v) { setAttrs({ 'Suggest_is_trained': (parseInt(v.SuggestRank) > 0 ? 1 : 0) }); }); });
-on('change:tirerank', function() { getAttrs(['TireRank'], function(v) { setAttrs({ 'Tire_is_trained': (parseInt(v.TireRank) > 0 ? 1 : 0) }); }); });
-on('change:undorank', function() { getAttrs(['UndoRank'], function(v) { setAttrs({ 'Undo_is_trained': (parseInt(v.UndoRank) > 0 ? 1 : 0) }); }); });
+on("change:aerobaticsrank", function() { getAttrs(["AerobaticsRank"], function(v) { setAttrs({ "Aerobatics_is_trained": (parseInt(v["AerobaticsRank"]) > 0 ? 1 : 0) }); }); });
+on("change:daredevilrank", function() { getAttrs(["DaredevilRank"], function(v) { setAttrs({ "Daredevil_is_trained": (parseInt(v["DaredevilRank"]) > 0 ? 1 : 0) }); }); });
+on("change:dodgerank", function() { getAttrs(["DodgeRank"], function(v) { setAttrs({ "Dodge_is_trained": (parseInt(v["DodgeRank"]) > 0 ? 1 : 0) }); }); });
+on("change:fallrank", function() { getAttrs(["FallRank"], function(v) { setAttrs({ "Fall_is_trained": (parseInt(v["FallRank"]) > 0 ? 1 : 0) }); }); });
+on("change:zerogtrainingrank", function() { getAttrs(["ZerogTrainingRank"], function(v) { setAttrs({ "ZerogTraining_is_trained": (parseInt(v["ZerogTrainingRank"]) > 0 ? 1 : 0) }); }); });
+on("change:bureaucracyrank", function() { getAttrs(["BureaucracyRank"], function(v) { setAttrs({ "Bureaucracy_is_trained": (parseInt(v["BureaucracyRank"]) > 0 ? 1 : 0) }); }); });
+on("change:managementrank", function() { getAttrs(["ManagementRank"], function(v) { setAttrs({ "Management_is_trained": (parseInt(v["ManagementRank"]) > 0 ? 1 : 0) }); }); });
+on("change:animalridingrank", function() { getAttrs(["AnimalridingRank"], function(v) { setAttrs({ "Animalriding_is_trained": (parseInt(v["AnimalridingRank"]) > 0 ? 1 : 0) }); }); });
+on("change:animaltrainingrank", function() { getAttrs(["AnimaltrainingRank"], function(v) { setAttrs({ "Animaltraining_is_trained": (parseInt(v["AnimaltrainingRank"]) > 0 ? 1 : 0) }); }); });
+on("change:combatarmorrank", function() { getAttrs(["CombatarmorRank"], function(v) { setAttrs({ "Combatarmor_is_trained": (parseInt(v["CombatarmorRank"]) > 0 ? 1 : 0) }); }); });
+on("change:propulsionsystemsrank", function() { getAttrs(["PropulsionsystemsRank"], function(v) { setAttrs({ "Propulsionsystems_is_trained": (parseInt(v["PropulsionsystemsRank"]) > 0 ? 1 : 0) }); }); });
+on("change:shieldsrank", function() { getAttrs(["ShieldsRank"], function(v) { setAttrs({ "Shields_is_trained": (parseInt(v["ShieldsRank"]) > 0 ? 1 : 0) }); }); });
+on("change:tacticalarmorrank", function() { getAttrs(["TacticalarmorRank"], function(v) { setAttrs({ "Tacticalarmor_is_trained": (parseInt(v["TacticalarmorRank"]) > 0 ? 1 : 0) }); }); });
+on("change:climbrank", function() { getAttrs(["ClimbRank"], function(v) { setAttrs({ "Climb_is_trained": (parseInt(v["ClimbRank"]) > 0 ? 1 : 0) }); }); });
+on("change:jumprank", function() { getAttrs(["JumpRank"], function(v) { setAttrs({ "Jump_is_trained": (parseInt(v["JumpRank"]) > 0 ? 1 : 0) }); }); });
+on("change:swimrank", function() { getAttrs(["SwimRank"], function(v) { setAttrs({ "Swim_is_trained": (parseInt(v["SwimRank"]) > 0 ? 1 : 0) }); }); });
+on("change:throwrank", function() { getAttrs(["ThrowRank"], function(v) { setAttrs({ "Throw_is_trained": (parseInt(v["ThrowRank"]) > 0 ? 1 : 0) }); }); });
+on("change:intuitionrank", function() { getAttrs(["IntuitionRank"], function(v) { setAttrs({ "Intuition_is_trained": (parseInt(v["IntuitionRank"]) > 0 ? 1 : 0) }); }); });
+on("change:perceptionrank", function() { getAttrs(["PerceptionRank"], function(v) { setAttrs({ "Perception_is_trained": (parseInt(v["PerceptionRank"]) > 0 ? 1 : 0) }); }); });
+on("change:psionicsenserank", function() { getAttrs(["PsionicSenseRank"], function(v) { setAttrs({ "PsionicSense_is_trained": (parseInt(v["PsionicSenseRank"]) > 0 ? 1 : 0) }); }); });
+on("change:corporaterank", function() { getAttrs(["CorporateRank"], function(v) { setAttrs({ "Corporate_is_trained": (parseInt(v["CorporateRank"]) > 0 ? 1 : 0) }); }); });
+on("change:illicitbusinessrank", function() { getAttrs(["IllicitbusinessRank"], function(v) { setAttrs({ "Illicitbusiness_is_trained": (parseInt(v["IllicitbusinessRank"]) > 0 ? 1 : 0) }); }); });
+on("change:smallbusinessrank", function() { getAttrs(["SmallbusinessRank"], function(v) { setAttrs({ "Smallbusiness_is_trained": (parseInt(v["SmallbusinessRank"]) > 0 ? 1 : 0) }); }); });
+on("change:hackingrank", function() { getAttrs(["HackingRank"], function(v) { setAttrs({ "Hacking_is_trained": (parseInt(v["HackingRank"]) > 0 ? 1 : 0) }); }); });
+on("change:hardwarerank", function() { getAttrs(["HardwareRank"], function(v) { setAttrs({ "Hardware_is_trained": (parseInt(v["HardwareRank"]) > 0 ? 1 : 0) }); }); });
+on("change:programmingrank", function() { getAttrs(["ProgrammingRank"], function(v) { setAttrs({ "Programming_is_trained": (parseInt(v["ProgrammingRank"]) > 0 ? 1 : 0) }); }); });
+on("change:concealrank", function() { getAttrs(["ConcealRank"], function(v) { setAttrs({ "Conceal_is_trained": (parseInt(v["ConcealRank"]) > 0 ? 1 : 0) }); }); });
+on("change:disguiserank", function() { getAttrs(["DisguiseRank"], function(v) { setAttrs({ "Disguise_is_trained": (parseInt(v["DisguiseRank"]) > 0 ? 1 : 0) }); }); });
+on("change:pickpocketrank", function() { getAttrs(["PickpocketRank"], function(v) { setAttrs({ "Pickpocket_is_trained": (parseInt(v["PickpocketRank"]) > 0 ? 1 : 0) }); }); });
+on("change:stealthrank", function() { getAttrs(["StealthRank"], function(v) { setAttrs({ "Stealth_is_trained": (parseInt(v["StealthRank"]) > 0 ? 1 : 0) }); }); });
+on("change:creativityspecificskillrank", function() { getAttrs(["CreativitySpecificSkillRank"], function(v) { setAttrs({ "CreativitySpecificSkill_is_trained": (parseInt(v["CreativitySpecificSkillRank"]) > 0 ? 1 : 0) }); }); });
+on("change:theintangiblerank", function() { getAttrs(["TheIntangibleRank"], function(v) { setAttrs({ "TheIntangible_is_trained": (parseInt(v["TheIntangibleRank"]) > 0 ? 1 : 0) }); }); });
+on("change:theshaperank", function() { getAttrs(["TheShapeRank"], function(v) { setAttrs({ "TheShape_is_trained": (parseInt(v["TheShapeRank"]) > 0 ? 1 : 0) }); }); });
+on("change:thewordrank", function() { getAttrs(["TheWordRank"], function(v) { setAttrs({ "TheWord_is_trained": (parseInt(v["TheWordRank"]) > 0 ? 1 : 0) }); }); });
+on("change:diplomacyrank", function() { getAttrs(["DiplomacyRank"], function(v) { setAttrs({ "Diplomacy_is_trained": (parseInt(v["DiplomacyRank"]) > 0 ? 1 : 0) }); }); });
+on("change:etiquetterank", function() { getAttrs(["EtiquetteRank"], function(v) { setAttrs({ "Etiquette_is_trained": (parseInt(v["EtiquetteRank"]) > 0 ? 1 : 0) }); }); });
+on("change:firstencounterrank", function() { getAttrs(["FirstEncounterRank"], function(v) { setAttrs({ "FirstEncounter_is_trained": (parseInt(v["FirstEncounterRank"]) > 0 ? 1 : 0) }); }); });
+on("change:bluffrank", function() { getAttrs(["BluffRank"], function(v) { setAttrs({ "Bluff_is_trained": (parseInt(v["BluffRank"]) > 0 ? 1 : 0) }); }); });
+on("change:briberank", function() { getAttrs(["BribeRank"], function(v) { setAttrs({ "Bribe_is_trained": (parseInt(v["BribeRank"]) > 0 ? 1 : 0) }); }); });
+on("change:gamblerank", function() { getAttrs(["GambleRank"], function(v) { setAttrs({ "Gamble_is_trained": (parseInt(v["GambleRank"]) > 0 ? 1 : 0) }); }); });
+on("change:gamblelogicgamesrank", function() { getAttrs(["GambleLogicGamesRank"], function(v) { setAttrs({ "GambleLogicGames_is_trained": (parseInt(v["GambleLogicGamesRank"]) > 0 ? 1 : 0) }); }); });
+on("change:gamblenervegamesrank", function() { getAttrs(["GambleNerveGamesRank"], function(v) { setAttrs({ "GambleNerveGames_is_trained": (parseInt(v["GambleNerveGamesRank"]) > 0 ? 1 : 0) }); }); });
+on("change:disarmrank", function() { getAttrs(["DisarmRank"], function(v) { setAttrs({ "Disarm_is_trained": (parseInt(v["DisarmRank"]) > 0 ? 1 : 0) }); }); });
+on("change:scratchbuiltexplosivesrank", function() { getAttrs(["ScratchBuiltExplosivesRank"], function(v) { setAttrs({ "ScratchBuiltExplosives_is_trained": (parseInt(v["ScratchBuiltExplosivesRank"]) > 0 ? 1 : 0) }); }); });
+on("change:setexplosivesrank", function() { getAttrs(["SetexplosivesRank"], function(v) { setAttrs({ "Setexplosives_is_trained": (parseInt(v["SetexplosivesRank"]) > 0 ? 1 : 0) }); }); });
+on("change:actrank", function() { getAttrs(["ActRank"], function(v) { setAttrs({ "Act_is_trained": (parseInt(v["ActRank"]) > 0 ? 1 : 0) }); }); });
+on("change:dancerank", function() { getAttrs(["DanceRank"], function(v) { setAttrs({ "Dance_is_trained": (parseInt(v["DanceRank"]) > 0 ? 1 : 0) }); }); });
+on("change:musicalinstrumentrank", function() { getAttrs(["MusicalinstrumentRank"], function(v) { setAttrs({ "Musicalinstrument_is_trained": (parseInt(v["MusicalinstrumentRank"]) > 0 ? 1 : 0) }); }); });
+on("change:singrank", function() { getAttrs(["SingRank"], function(v) { setAttrs({ "Sing_is_trained": (parseInt(v["SingRank"]) > 0 ? 1 : 0) }); }); });
+on("change:directfirerank", function() { getAttrs(["DirectfireRank"], function(v) { setAttrs({ "Directfire_is_trained": (parseInt(v["DirectfireRank"]) > 0 ? 1 : 0) }); }); });
+on("change:indirectfirerank", function() { getAttrs(["IndirectfireRank"], function(v) { setAttrs({ "Indirectfire_is_trained": (parseInt(v["IndirectfireRank"]) > 0 ? 1 : 0) }); }); });
+on("change:bargainrank", function() { getAttrs(["BargainRank"], function(v) { setAttrs({ "Bargain_is_trained": (parseInt(v["BargainRank"]) > 0 ? 1 : 0) }); }); });
+on("change:charmrank", function() { getAttrs(["CharmRank"], function(v) { setAttrs({ "Charm_is_trained": (parseInt(v["CharmRank"]) > 0 ? 1 : 0) }); }); });
+on("change:interviewrank", function() { getAttrs(["InterviewRank"], function(v) { setAttrs({ "Interview_is_trained": (parseInt(v["InterviewRank"]) > 0 ? 1 : 0) }); }); });
+on("change:intimidaterank", function() { getAttrs(["IntimidateRank"], function(v) { setAttrs({ "Intimidate_is_trained": (parseInt(v["IntimidateRank"]) > 0 ? 1 : 0) }); }); });
+on("change:seducerank", function() { getAttrs(["SeduceRank"], function(v) { setAttrs({ "Seduce_is_trained": (parseInt(v["SeduceRank"]) > 0 ? 1 : 0) }); }); });
+on("change:tauntrank", function() { getAttrs(["TauntRank"], function(v) { setAttrs({ "Taunt_is_trained": (parseInt(v["TauntRank"]) > 0 ? 1 : 0) }); }); });
+on("change:interrogaterank", function() { getAttrs(["InterrogateRank"], function(v) { setAttrs({ "Interrogate_is_trained": (parseInt(v["InterrogateRank"]) > 0 ? 1 : 0) }); }); });
+on("change:searchrank", function() { getAttrs(["SearchRank"], function(v) { setAttrs({ "Search_is_trained": (parseInt(v["SearchRank"]) > 0 ? 1 : 0) }); }); });
+on("change:trackrank", function() { getAttrs(["TrackRank"], function(v) { setAttrs({ "Track_is_trained": (parseInt(v["TrackRank"]) > 0 ? 1 : 0) }); }); });
+on("change:computeroperationrank", function() { getAttrs(["ComputerOperationRank"], function(v) { setAttrs({ "ComputerOperation_is_trained": (parseInt(v["ComputerOperationRank"]) > 0 ? 1 : 0) }); }); });
+on("change:deducerank", function() { getAttrs(["DeduceRank"], function(v) { setAttrs({ "Deduce_is_trained": (parseInt(v["DeduceRank"]) > 0 ? 1 : 0) }); }); });
+on("change:firstaidrank", function() { getAttrs(["FirstAidRank"], function(v) { setAttrs({ "FirstAid_is_trained": (parseInt(v["FirstAidRank"]) > 0 ? 1 : 0) }); }); });
+on("change:languagespecificskillrank", function() { getAttrs(["LanguageSpecificSkillRank"], function(v) { setAttrs({ "LanguageSpecificSkill_is_trained": (parseInt(v["LanguageSpecificSkillRank"]) > 0 ? 1 : 0) }); }); });
+on("change:psionicsrank", function() { getAttrs(["PsionicsRank"], function(v) { setAttrs({ "Psionics_is_trained": (parseInt(v["PsionicsRank"]) > 0 ? 1 : 0) }); }); });
+on("change:researchrank", function() { getAttrs(["ResearchRank"], function(v) { setAttrs({ "Research_is_trained": (parseInt(v["ResearchRank"]) > 0 ? 1 : 0) }); }); });
+on("change:courtproceduresrank", function() { getAttrs(["CourtproceduresRank"], function(v) { setAttrs({ "Courtprocedures_is_trained": (parseInt(v["CourtproceduresRank"]) > 0 ? 1 : 0) }); }); });
+on("change:lawenforcementproceduresrank", function() { getAttrs(["LawenforcementproceduresRank"], function(v) { setAttrs({ "Lawenforcementprocedures_is_trained": (parseInt(v["LawenforcementproceduresRank"]) > 0 ? 1 : 0) }); }); });
+on("change:lawspecificskillrank", function() { getAttrs(["LawspecificskillRank"], function(v) { setAttrs({ "Lawspecificskill_is_trained": (parseInt(v["LawspecificskillRank"]) > 0 ? 1 : 0) }); }); });
+on("change:psionicsrank", function() { getAttrs(["PsionicsRank"], function(v) { setAttrs({ "Psionics_is_trained": (parseInt(v["PsionicsRank"]) > 0 ? 1 : 0) }); }); });
+on("change:commandrank", function() { getAttrs(["CommandRank"], function(v) { setAttrs({ "Command_is_trained": (parseInt(v["CommandRank"]) > 0 ? 1 : 0) }); }); });
+on("change:inspirerank", function() { getAttrs(["InspireRank"], function(v) { setAttrs({ "Inspire_is_trained": (parseInt(v["InspireRank"]) > 0 ? 1 : 0) }); }); });
+on("change:biologyrank", function() { getAttrs(["BiologyRank"], function(v) { setAttrs({ "Biology_is_trained": (parseInt(v["BiologyRank"]) > 0 ? 1 : 0) }); }); });
+on("change:botanyrank", function() { getAttrs(["BotanyRank"], function(v) { setAttrs({ "Botany_is_trained": (parseInt(v["BotanyRank"]) > 0 ? 1 : 0) }); }); });
+on("change:geneticsrank", function() { getAttrs(["GeneticsRank"], function(v) { setAttrs({ "Genetics_is_trained": (parseInt(v["GeneticsRank"]) > 0 ? 1 : 0) }); }); });
+on("change:psionicsrank", function() { getAttrs(["PsionicsRank"], function(v) { setAttrs({ "Psionics_is_trained": (parseInt(v["PsionicsRank"]) > 0 ? 1 : 0) }); }); });
+on("change:zoologyrank", function() { getAttrs(["ZoologyRank"], function(v) { setAttrs({ "Zoology_is_trained": (parseInt(v["ZoologyRank"]) > 0 ? 1 : 0) }); }); });
+on("change:forensicsciencerank", function() { getAttrs(["ForensicScienceRank"], function(v) { setAttrs({ "ForensicScience_is_trained": (parseInt(v["ForensicScienceRank"]) > 0 ? 1 : 0) }); }); });
+on("change:forensicsrank", function() { getAttrs(["ForensicsRank"], function(v) { setAttrs({ "Forensics_is_trained": (parseInt(v["ForensicsRank"]) > 0 ? 1 : 0) }); }); });
+on("change:medicalknowledgerank", function() { getAttrs(["MedicalKnowledgeRank"], function(v) { setAttrs({ "MedicalKnowledge_is_trained": (parseInt(v["MedicalKnowledgeRank"]) > 0 ? 1 : 0) }); }); });
+on("change:psychologyrank", function() { getAttrs(["PsychologyRank"], function(v) { setAttrs({ "Psychology_is_trained": (parseInt(v["PsychologyRank"]) > 0 ? 1 : 0) }); }); });
+on("change:surgeryrank", function() { getAttrs(["SurgeryRank"], function(v) { setAttrs({ "Surgery_is_trained": (parseInt(v["SurgeryRank"]) > 0 ? 1 : 0) }); }); });
+on("change:treatmentrank", function() { getAttrs(["TreatmentRank"], function(v) { setAttrs({ "Treatment_is_trained": (parseInt(v["TreatmentRank"]) > 0 ? 1 : 0) }); }); });
+on("change:xenomedicinerank", function() { getAttrs(["XenomedicineRank"], function(v) { setAttrs({ "Xenomedicine_is_trained": (parseInt(v["XenomedicineRank"]) > 0 ? 1 : 0) }); }); });
+on("change:bladerank", function() { getAttrs(["BladeRank"], function(v) { setAttrs({ "Blade_is_trained": (parseInt(v["BladeRank"]) > 0 ? 1 : 0) }); }); });
+on("change:bluntrank", function() { getAttrs(["BluntRank"], function(v) { setAttrs({ "Blunt_is_trained": (parseInt(v["BluntRank"]) > 0 ? 1 : 0) }); }); });
+on("change:defensivemartialartsrank", function() { getAttrs(["DefensiveMartialArtsRank"], function(v) { setAttrs({ "DefensiveMartialArts_is_trained": (parseInt(v["DefensiveMartialArtsRank"]) > 0 ? 1 : 0) }); }); });
+on("change:powermartialartsrank", function() { getAttrs(["PowerMartialArtsRank"], function(v) { setAttrs({ "PowerMartialArts_is_trained": (parseInt(v["PowerMartialArtsRank"]) > 0 ? 1 : 0) }); }); });
+on("change:poweredrank", function() { getAttrs(["PoweredRank"], function(v) { setAttrs({ "Powered_is_trained": (parseInt(v["PoweredRank"]) > 0 ? 1 : 0) }); }); });
+on("change:assaultriflerank", function() { getAttrs(["AssaultRifleRank"], function(v) { setAttrs({ "AssaultRifle_is_trained": (parseInt(v["AssaultRifleRank"]) > 0 ? 1 : 0) }); }); });
+on("change:pistolrank", function() { getAttrs(["PistolRank"], function(v) { setAttrs({ "Pistol_is_trained": (parseInt(v["PistolRank"]) > 0 ? 1 : 0) }); }); });
+on("change:riflerank", function() { getAttrs(["RifleRank"], function(v) { setAttrs({ "Rifle_is_trained": (parseInt(v["RifleRank"]) > 0 ? 1 : 0) }); }); });
+on("change:smgrank", function() { getAttrs(["SMGRank"], function(v) { setAttrs({ "SMG_is_trained": (parseInt(v["SMGRank"]) > 0 ? 1 : 0) }); }); });
+on("change:shotgunrank", function() { getAttrs(["ShotgunRank"], function(v) { setAttrs({ "Shotgun_is_trained": (parseInt(v["ShotgunRank"]) > 0 ? 1 : 0) }); }); });
+on("change:astrogationdrivespacerank", function() { getAttrs(["AstrogationdrivespaceRank"], function(v) { setAttrs({ "Astrogationdrivespace_is_trained": (parseInt(v["AstrogationdrivespaceRank"]) > 0 ? 1 : 0) }); }); });
+on("change:astrogationsystemrank", function() { getAttrs(["AstrogationsystemRank"], function(v) { setAttrs({ "Astrogationsystem_is_trained": (parseInt(v["AstrogationsystemRank"]) > 0 ? 1 : 0) }); }); });
+on("change:navigationsurfacerank", function() { getAttrs(["NavigationsurfaceRank"], function(v) { setAttrs({ "Navigationsurface_is_trained": (parseInt(v["NavigationsurfaceRank"]) > 0 ? 1 : 0) }); }); });
+on("change:astronomyrank", function() { getAttrs(["AstronomyRank"], function(v) { setAttrs({ "Astronomy_is_trained": (parseInt(v["AstronomyRank"]) > 0 ? 1 : 0) }); }); });
+on("change:chemistryrank", function() { getAttrs(["ChemistryRank"], function(v) { setAttrs({ "Chemistry_is_trained": (parseInt(v["ChemistryRank"]) > 0 ? 1 : 0) }); }); });
+on("change:physicsrank", function() { getAttrs(["PhysicsRank"], function(v) { setAttrs({ "Physics_is_trained": (parseInt(v["PhysicsRank"]) > 0 ? 1 : 0) }); }); });
+on("change:planetologyrank", function() { getAttrs(["PlanetologyRank"], function(v) { setAttrs({ "Planetology_is_trained": (parseInt(v["PlanetologyRank"]) > 0 ? 1 : 0) }); }); });
+on("change:bowrank", function() { getAttrs(["BowRank"], function(v) { setAttrs({ "Bow_is_trained": (parseInt(v["BowRank"]) > 0 ? 1 : 0) }); }); });
+on("change:crossbowrank", function() { getAttrs(["CrossbowRank"], function(v) { setAttrs({ "Crossbow_is_trained": (parseInt(v["CrossbowRank"]) > 0 ? 1 : 0) }); }); });
+on("change:flintlockrank", function() { getAttrs(["FlintlockRank"], function(v) { setAttrs({ "Flintlock_is_trained": (parseInt(v["FlintlockRank"]) > 0 ? 1 : 0) }); }); });
+on("change:slingrank", function() { getAttrs(["SlingRank"], function(v) { setAttrs({ "Sling_is_trained": (parseInt(v["SlingRank"]) > 0 ? 1 : 0) }); }); });
+on("change:mentalresolverank", function() { getAttrs(["MentalresolveRank"], function(v) { setAttrs({ "Mentalresolve_is_trained": (parseInt(v["MentalresolveRank"]) > 0 ? 1 : 0) }); }); });
+on("change:physicalresolverank", function() { getAttrs(["PhysicalresolveRank"], function(v) { setAttrs({ "Physicalresolve_is_trained": (parseInt(v["PhysicalresolveRank"]) > 0 ? 1 : 0) }); }); });
+on("change:protectionprotocolsrank", function() { getAttrs(["ProtectionprotocolsRank"], function(v) { setAttrs({ "Protectionprotocols_is_trained": (parseInt(v["ProtectionprotocolsRank"]) > 0 ? 1 : 0) }); }); });
+on("change:securitydevicesrank", function() { getAttrs(["SecuritydevicesRank"], function(v) { setAttrs({ "Securitydevices_is_trained": (parseInt(v["SecuritydevicesRank"]) > 0 ? 1 : 0) }); }); });
+on("change:endurancerank", function() { getAttrs(["EnduranceRank"], function(v) { setAttrs({ "Endurance_is_trained": (parseInt(v["EnduranceRank"]) > 0 ? 1 : 0) }); }); });
+on("change:resistpainrank", function() { getAttrs(["ResistpainRank"], function(v) { setAttrs({ "Resistpain_is_trained": (parseInt(v["ResistpainRank"]) > 0 ? 1 : 0) }); }); });
+on("change:criminalelementsrank", function() { getAttrs(["CriminalelementsRank"], function(v) { setAttrs({ "Criminalelements_is_trained": (parseInt(v["CriminalelementsRank"]) > 0 ? 1 : 0) }); }); });
+on("change:streetknowledgerank", function() { getAttrs(["StreetKnowledgeRank"], function(v) { setAttrs({ "StreetKnowledge_is_trained": (parseInt(v["StreetKnowledgeRank"]) > 0 ? 1 : 0) }); }); });
+on("change:adaptabilityrank", function() { getAttrs(["AdaptabilityRank"], function(v) { setAttrs({ "Adaptability_is_trained": (parseInt(v["AdaptabilityRank"]) > 0 ? 1 : 0) }); }); });
+on("change:survivaltrainingrank", function() { getAttrs(["SurvivaltrainingRank"], function(v) { setAttrs({ "Survivaltraining_is_trained": (parseInt(v["SurvivaltrainingRank"]) > 0 ? 1 : 0) }); }); });
+on("change:trailblazingrank", function() { getAttrs(["TrailblazingRank"], function(v) { setAttrs({ "Trailblazing_is_trained": (parseInt(v["TrailblazingRank"]) > 0 ? 1 : 0) }); }); });
+on("change:communicationsrank", function() { getAttrs(["CommunicationsRank"], function(v) { setAttrs({ "Communications_is_trained": (parseInt(v["CommunicationsRank"]) > 0 ? 1 : 0) }); }); });
+on("change:defensesrank", function() { getAttrs(["DefensesRank"], function(v) { setAttrs({ "Defenses_is_trained": (parseInt(v["DefensesRank"]) > 0 ? 1 : 0) }); }); });
+on("change:engineeringrank", function() { getAttrs(["EngineeringRank"], function(v) { setAttrs({ "Engineering_is_trained": (parseInt(v["EngineeringRank"]) > 0 ? 1 : 0) }); }); });
+on("change:sensorsrank", function() { getAttrs(["SensorsRank"], function(v) { setAttrs({ "Sensors_is_trained": (parseInt(v["SensorsRank"]) > 0 ? 1 : 0) }); }); });
+on("change:weaponsrank", function() { getAttrs(["WeaponsRank"], function(v) { setAttrs({ "Weapons_is_trained": (parseInt(v["WeaponsRank"]) > 0 ? 1 : 0) }); }); });
+on("change:infantrytacticsrank", function() { getAttrs(["InfantrytacticsRank"], function(v) { setAttrs({ "Infantrytactics_is_trained": (parseInt(v["InfantrytacticsRank"]) > 0 ? 1 : 0) }); }); });
+on("change:spacetacticsrank", function() { getAttrs(["SpacetacticsRank"], function(v) { setAttrs({ "Spacetactics_is_trained": (parseInt(v["SpacetacticsRank"]) > 0 ? 1 : 0) }); }); });
+on("change:vehicletacticsrank", function() { getAttrs(["VehicletacticsRank"], function(v) { setAttrs({ "Vehicletactics_is_trained": (parseInt(v["VehicletacticsRank"]) > 0 ? 1 : 0) }); }); });
+on("change:inventionrank", function() { getAttrs(["InventionRank"], function(v) { setAttrs({ "Invention_is_trained": (parseInt(v["InventionRank"]) > 0 ? 1 : 0) }); }); });
+on("change:juryrigrank", function() { getAttrs(["JuryrigRank"], function(v) { setAttrs({ "Juryrig_is_trained": (parseInt(v["JuryrigRank"]) > 0 ? 1 : 0) }); }); });
+on("change:repairrank", function() { getAttrs(["RepairRank"], function(v) { setAttrs({ "Repair_is_trained": (parseInt(v["RepairRank"]) > 0 ? 1 : 0) }); }); });
+on("change:technicalknowledgerank", function() { getAttrs(["TechnicalKnowledgeRank"], function(v) { setAttrs({ "TechnicalKnowledge_is_trained": (parseInt(v["TechnicalKnowledgeRank"]) > 0 ? 1 : 0) }); }); });
+on("change:airvehiclerank", function() { getAttrs(["AirvehicleRank"], function(v) { setAttrs({ "Airvehicle_is_trained": (parseInt(v["AirvehicleRank"]) > 0 ? 1 : 0) }); }); });
+on("change:landvehiclerank", function() { getAttrs(["LandvehicleRank"], function(v) { setAttrs({ "Landvehicle_is_trained": (parseInt(v["LandvehicleRank"]) > 0 ? 1 : 0) }); }); });
+on("change:spacevehiclerank", function() { getAttrs(["SpacevehicleRank"], function(v) { setAttrs({ "Spacevehicle_is_trained": (parseInt(v["SpacevehicleRank"]) > 0 ? 1 : 0) }); }); });
+on("change:watervehiclerank", function() { getAttrs(["WatervehicleRank"], function(v) { setAttrs({ "Watervehicle_is_trained": (parseInt(v["WatervehicleRank"]) > 0 ? 1 : 0) }); }); });
+on("change:bioarmorrank", function() { getAttrs(["BioarmorRank"], function(v) { setAttrs({ "Bioarmor_is_trained": (parseInt(v["BioarmorRank"]) > 0 ? 1 : 0) }); }); });
+on("change:bioweaponrank", function() { getAttrs(["BioweaponRank"], function(v) { setAttrs({ "Bioweapon_is_trained": (parseInt(v["BioweaponRank"]) > 0 ? 1 : 0) }); }); });
+on("change:clamberrank", function() { getAttrs(["ClamberRank"], function(v) { setAttrs({ "Clamber_is_trained": (parseInt(v["ClamberRank"]) > 0 ? 1 : 0) }); }); });
+on("change:controlmetabolismrank", function() { getAttrs(["ControlMetabolismRank"], function(v) { setAttrs({ "ControlMetabolism_is_trained": (parseInt(v["ControlMetabolismRank"]) > 0 ? 1 : 0) }); }); });
+on("change:healrank", function() { getAttrs(["HealRank"], function(v) { setAttrs({ "Heal_is_trained": (parseInt(v["HealRank"]) > 0 ? 1 : 0) }); }); });
+on("change:intangibilityrank", function() { getAttrs(["IntangibilityRank"], function(v) { setAttrs({ "Intangibility_is_trained": (parseInt(v["IntangibilityRank"]) > 0 ? 1 : 0) }); }); });
+on("change:morphrank", function() { getAttrs(["MorphRank"], function(v) { setAttrs({ "Morph_is_trained": (parseInt(v["MorphRank"]) > 0 ? 1 : 0) }); }); });
+on("change:rejuvenaterank", function() { getAttrs(["RejuvenateRank"], function(v) { setAttrs({ "Rejuvenate_is_trained": (parseInt(v["RejuvenateRank"]) > 0 ? 1 : 0) }); }); });
+on("change:shatterrank", function() { getAttrs(["ShatterRank"], function(v) { setAttrs({ "Shatter_is_trained": (parseInt(v["ShatterRank"]) > 0 ? 1 : 0) }); }); });
+on("change:transferdamagerank", function() { getAttrs(["TransferDamageRank"], function(v) { setAttrs({ "TransferDamage_is_trained": (parseInt(v["TransferDamageRank"]) > 0 ? 1 : 0) }); }); });
+on("change:battlemindrank", function() { getAttrs(["BattleMindRank"], function(v) { setAttrs({ "BattleMind_is_trained": (parseInt(v["BattleMindRank"]) > 0 ? 1 : 0) }); }); });
+on("change:clairaudiencerank", function() { getAttrs(["ClairaudienceRank"], function(v) { setAttrs({ "Clairaudience_is_trained": (parseInt(v["ClairaudienceRank"]) > 0 ? 1 : 0) }); }); });
+on("change:clairvoyancerank", function() { getAttrs(["ClairvoyanceRank"], function(v) { setAttrs({ "Clairvoyance_is_trained": (parseInt(v["ClairvoyanceRank"]) > 0 ? 1 : 0) }); }); });
+on("change:dreamhuntrank", function() { getAttrs(["DreamHuntRank"], function(v) { setAttrs({ "DreamHunt_is_trained": (parseInt(v["DreamHuntRank"]) > 0 ? 1 : 0) }); }); });
+on("change:empathyrank", function() { getAttrs(["EmpathyRank"], function(v) { setAttrs({ "Empathy_is_trained": (parseInt(v["EmpathyRank"]) > 0 ? 1 : 0) }); }); });
+on("change:mindreadingrank", function() { getAttrs(["MindReadingRank"], function(v) { setAttrs({ "MindReading_is_trained": (parseInt(v["MindReadingRank"]) > 0 ? 1 : 0) }); }); });
+on("change:navcognitionrank", function() { getAttrs(["NavcognitionRank"], function(v) { setAttrs({ "Navcognition_is_trained": (parseInt(v["NavcognitionRank"]) > 0 ? 1 : 0) }); }); });
+on("change:postcognitionrank", function() { getAttrs(["PostcognitionRank"], function(v) { setAttrs({ "Postcognition_is_trained": (parseInt(v["PostcognitionRank"]) > 0 ? 1 : 0) }); }); });
+on("change:precognitionrank", function() { getAttrs(["PrecognitionRank"], function(v) { setAttrs({ "Precognition_is_trained": (parseInt(v["PrecognitionRank"]) > 0 ? 1 : 0) }); }); });
+on("change:psychometryrank", function() { getAttrs(["PsychometryRank"], function(v) { setAttrs({ "Psychometry_is_trained": (parseInt(v["PsychometryRank"]) > 0 ? 1 : 0) }); }); });
+on("change:alterspeedrank", function() { getAttrs(["AlterSpeedRank"], function(v) { setAttrs({ "AlterSpeed_is_trained": (parseInt(v["AlterSpeedRank"]) > 0 ? 1 : 0) }); }); });
+on("change:apportationrank", function() { getAttrs(["ApportationRank"], function(v) { setAttrs({ "Apportation_is_trained": (parseInt(v["ApportationRank"]) > 0 ? 1 : 0) }); }); });
+on("change:duplicaterank", function() { getAttrs(["DuplicateRank"], function(v) { setAttrs({ "Duplicate_is_trained": (parseInt(v["DuplicateRank"]) > 0 ? 1 : 0) }); }); });
+on("change:teleportationrank", function() { getAttrs(["TeleportationRank"], function(v) { setAttrs({ "Teleportation_is_trained": (parseInt(v["TeleportationRank"]) > 0 ? 1 : 0) }); }); });
+on("change:timesliprank", function() { getAttrs(["TimeslipRank"], function(v) { setAttrs({ "Timeslip_is_trained": (parseInt(v["TimeslipRank"]) > 0 ? 1 : 0) }); }); });
+on("change:cryokineticsrank", function() { getAttrs(["CryokineticsRank"], function(v) { setAttrs({ "Cryokinetics_is_trained": (parseInt(v["CryokineticsRank"]) > 0 ? 1 : 0) }); }); });
+on("change:electrokineticsrank", function() { getAttrs(["ElectrokineticsRank"], function(v) { setAttrs({ "Electrokinetics_is_trained": (parseInt(v["ElectrokineticsRank"]) > 0 ? 1 : 0) }); }); });
+on("change:kineticblowrank", function() { getAttrs(["KineticBlowRank"], function(v) { setAttrs({ "KineticBlow_is_trained": (parseInt(v["KineticBlowRank"]) > 0 ? 1 : 0) }); }); });
+on("change:kineticshieldrank", function() { getAttrs(["KineticShieldRank"], function(v) { setAttrs({ "KineticShield_is_trained": (parseInt(v["KineticShieldRank"]) > 0 ? 1 : 0) }); }); });
+on("change:levitationrank", function() { getAttrs(["LevitationRank"], function(v) { setAttrs({ "Levitation_is_trained": (parseInt(v["LevitationRank"]) > 0 ? 1 : 0) }); }); });
+on("change:photokineticsrank", function() { getAttrs(["PhotokineticsRank"], function(v) { setAttrs({ "Photokinetics_is_trained": (parseInt(v["PhotokineticsRank"]) > 0 ? 1 : 0) }); }); });
+on("change:psychokineticsrank", function() { getAttrs(["PsychokineticsRank"], function(v) { setAttrs({ "Psychokinetics_is_trained": (parseInt(v["PsychokineticsRank"]) > 0 ? 1 : 0) }); }); });
+on("change:pyrokinesisrank", function() { getAttrs(["PyrokinesisRank"], function(v) { setAttrs({ "Pyrokinesis_is_trained": (parseInt(v["PyrokinesisRank"]) > 0 ? 1 : 0) }); }); });
+on("change:sheyasclutchrank", function() { getAttrs(["SheyasClutchRank"], function(v) { setAttrs({ "SheyasClutch_is_trained": (parseInt(v["SheyasClutchRank"]) > 0 ? 1 : 0) }); }); });
+on("change:contactrank", function() { getAttrs(["ContactRank"], function(v) { setAttrs({ "Contact_is_trained": (parseInt(v["ContactRank"]) > 0 ? 1 : 0) }); }); });
+on("change:datalinkrank", function() { getAttrs(["DatalinkRank"], function(v) { setAttrs({ "Datalink_is_trained": (parseInt(v["DatalinkRank"]) > 0 ? 1 : 0) }); }); });
+on("change:drainrank", function() { getAttrs(["DrainRank"], function(v) { setAttrs({ "Drain_is_trained": (parseInt(v["DrainRank"]) > 0 ? 1 : 0) }); }); });
+on("change:empathicprojectionrank", function() { getAttrs(["EmpathicProjectionRank"], function(v) { setAttrs({ "EmpathicProjection_is_trained": (parseInt(v["EmpathicProjectionRank"]) > 0 ? 1 : 0) }); }); });
+on("change:guidancerank", function() { getAttrs(["GuidanceRank"], function(v) { setAttrs({ "Guidance_is_trained": (parseInt(v["GuidanceRank"]) > 0 ? 1 : 0) }); }); });
+on("change:illusionrank", function() { getAttrs(["IllusionRank"], function(v) { setAttrs({ "Illusion_is_trained": (parseInt(v["IllusionRank"]) > 0 ? 1 : 0) }); }); });
+on("change:mindblastrank", function() { getAttrs(["MindBlastRank"], function(v) { setAttrs({ "MindBlast_is_trained": (parseInt(v["MindBlastRank"]) > 0 ? 1 : 0) }); }); });
+on("change:mindshieldrank", function() { getAttrs(["MindShieldRank"], function(v) { setAttrs({ "MindShield_is_trained": (parseInt(v["MindShieldRank"]) > 0 ? 1 : 0) }); }); });
+on("change:mindwiperank", function() { getAttrs(["MindWipeRank"], function(v) { setAttrs({ "MindWipe_is_trained": (parseInt(v["MindWipeRank"]) > 0 ? 1 : 0) }); }); });
+on("change:psychicarmorrank", function() { getAttrs(["PsychicArmorRank"], function(v) { setAttrs({ "PsychicArmor_is_trained": (parseInt(v["PsychicArmorRank"]) > 0 ? 1 : 0) }); }); });
+on("change:psychicprojectionrank", function() { getAttrs(["PsychicProjectionRank"], function(v) { setAttrs({ "PsychicProjection_is_trained": (parseInt(v["PsychicProjectionRank"]) > 0 ? 1 : 0) }); }); });
+on("change:subdualrank", function() { getAttrs(["SubdualRank"], function(v) { setAttrs({ "Subdual_is_trained": (parseInt(v["SubdualRank"]) > 0 ? 1 : 0) }); }); });
+on("change:suggestrank", function() { getAttrs(["SuggestRank"], function(v) { setAttrs({ "Suggest_is_trained": (parseInt(v["SuggestRank"]) > 0 ? 1 : 0) }); }); });
+on("change:tirerank", function() { getAttrs(["TireRank"], function(v) { setAttrs({ "Tire_is_trained": (parseInt(v["TireRank"]) > 0 ? 1 : 0) }); }); });
+on("change:undorank", function() { getAttrs(["UndoRank"], function(v) { setAttrs({ "Undo_is_trained": (parseInt(v["UndoRank"]) > 0 ? 1 : 0) }); }); });
 
 	</script>
 
@@ -750,20 +784,24 @@ on('change:undorank', function() { getAttrs(['UndoRank'], function(v) { setAttrs
 				<div class="sheet-attackform-container">
 					<!-- Row 1: Name, Type, Range, Notes -->
 					<div class="sheet-attackform-row">
-						<button type="roll" name="roll_attackform"
-							value="@{attackformmacro}"></button>
-
-						<div class="sheet-hidden">
+						<div class="sheet-attackform-buttons">
+							<button type="roll" name="roll_attackform1" value="@{attackformmacro1}">Single</button>
 							<button type="roll" name="roll_attackformdamageord"
-								value="&{template:default} {{name=@{character_name} - @{attackformname}}} {{Ordinary Damage= [[@{attackformdamageordinary}]]@{attackformdamageordinarytype}}}"></button>
+								value="!script {{ --#title|@{character_name} - @{attackformname} --#titlecardbackground|#1e293b --#titlecardfontcolor|#ffffff --#commandcardborder|1px solid #1e293b --#commandcardboxshadow|0 2px 5px rgba(0,0,0,0.2) --#titlecardstyle|border-radius: 4px 4px 0 0; padding: 6px 10px; --#bodycardstyle|border-top: none; border-radius: 0 0 4px 4px; --#bodyfontsize|12px --#oddrowbackground|#111827 --#evenrowbackground|#030712 --#oddrowfontcolor|#f9fafb --#evenrowfontcolor|#f9fafb --#whisper|gm --=dmg|@{attackformdamageordinary} --+Ordinary Damage (@{attackformdamageordinary})|**[$dmg]** @{attackformdamageordinarytype} }}">Ordinary</button>
+							
+							<button type="roll" name="roll_attackform2" value="@{attackformmacro2}">Double</button>
 							<button type="roll" name="roll_attackformdamagegoo"
-								value="&{template:default} {{name=@{character_name} - @{attackformname}}} {{Good Damage= [[@{attackformdamagegood}]]@{attackformdamagegoodtype}}}"></button>
+								value="!script {{ --#title|@{character_name} - @{attackformname} --#titlecardbackground|#1e293b --#titlecardfontcolor|#ffffff --#commandcardborder|1px solid #1e293b --#commandcardboxshadow|0 2px 5px rgba(0,0,0,0.2) --#titlecardstyle|border-radius: 4px 4px 0 0; padding: 6px 10px; --#bodycardstyle|border-top: none; border-radius: 0 0 4px 4px; --#bodyfontsize|12px --#oddrowbackground|#111827 --#evenrowbackground|#030712 --#oddrowfontcolor|#f9fafb --#evenrowfontcolor|#f9fafb --#whisper|gm --=dmg|@{attackformdamagegood} --+Good Damage (@{attackformdamagegood})|**[$dmg]** @{attackformdamagegoodtype} }}">Good</button>
+							
+							<button type="roll" name="roll_attackform3" value="@{attackformmacro3}">Auto</button>
 							<button type="roll" name="roll_attackformdamageama"
-								value="&{template:default} {{name=@{character_name} - @{attackformname}}} {{Amazing Damage= [[@{attackformdamageamazing}]]@{attackformdamageamazingtype}}}"></button>
+								value="!script {{ --#title|@{character_name} - @{attackformname} --#titlecardbackground|#1e293b --#titlecardfontcolor|#ffffff --#commandcardborder|1px solid #1e293b --#commandcardboxshadow|0 2px 5px rgba(0,0,0,0.2) --#titlecardstyle|border-radius: 4px 4px 0 0; padding: 6px 10px; --#bodycardstyle|border-top: none; border-radius: 0 0 4px 4px; --#bodyfontsize|12px --#oddrowbackground|#111827 --#evenrowbackground|#030712 --#oddrowfontcolor|#f9fafb --#evenrowfontcolor|#f9fafb --#whisper|gm --=dmg|@{attackformdamageamazing} --+Amazing Damage (@{attackformdamageamazing})|**[$dmg]** @{attackformdamageamazingtype} }}">Amazing</button>
 						</div>
 
 						<input type="hidden" name="attr_attackformstepdie" value="+0">
-						<input type="hidden" name="attr_attackformmacro" value="">
+						<input type="hidden" name="attr_attackformmacro1" value="">
+						<input type="hidden" name="attr_attackformmacro2" value="">
+						<input type="hidden" name="attr_attackformmacro3" value="">
 						<input type="hidden" name="attr_attackformwarning" value="">
 
 						<div class="sheet-attackform-field" style="flex: 6; min-width: 200px;">
@@ -916,31 +954,8 @@ on('change:undorank', function() { getAttrs(['UndoRank'], function(v) { setAttrs
 							</select>
 						</div>
 						
-						<div class="sheet-attackform-field">
-							<div class="sheet-attackform-label" data-i18n="mode">Mode</div>
-							<select name="attr_attackformmode" style="width: 8em !important;">
-								<option value="1" data-i18n="mode-1" selected>1 Attack</option>
-								<option value="2" data-i18n="mode-2">2 Attacks</option>
-								<option value="3" data-i18n="mode-3">3 Attacks (Auto)</option>
-							</select>
-						</div>
 
-						<div class="sheet-attackform-field">
-							<div class="sheet-attackform-label" data-i18n="multi">Multi Mod</div>
-							<select name="attr_attackformmulti" style="width: 4.5em !important;">
-								<option value="-5">-5</option>
-								<option value="-4">-4</option>
-								<option value="-3">-3</option>
-								<option value="-2">-2</option>
-								<option value="-1">-1</option>
-								<option value="0" selected>0</option>
-								<option value="1">+1</option>
-								<option value="2">+2</option>
-								<option value="3">+3</option>
-								<option value="4">+4</option>
-								<option value="5">+5</option>
-							</select>
-						</div>
+
 
 
 
@@ -968,8 +983,6 @@ on('change:undorank', function() { getAttrs(['UndoRank'], function(v) { setAttrs
 				<div></div>
 				<div data-i18n="weapon">Weapon</div>
 				<div data-i18n="acc" style="text-align: center;">Acc</div>
-				<div data-i18n="mode" style="text-align: center;">Mode</div>
-				<div data-i18n="multi" style="text-align: center;">Multi</div>
 				<div data-i18n="actions" style="text-align: center;">Actions</div>
 				<div data-i18n="clipsize-ammo" style="text-align: center;">Clip / Ammo</div>
 				<div data-i18n="hide" style="text-align: center;">Hide</div>
@@ -977,27 +990,9 @@ on('change:undorank', function() { getAttrs(['UndoRank'], function(v) { setAttrs
 			</div>
 			<fieldset class="repeating_weapons">
 				<div class="sheet-grid-weapon-row">
-					<button type="roll" name="roll_weapon" value="&{template:default} {{name=@{character_name} - @{weaponname}}} {{Accuracy=[[@{weaponaccuracy}]]}} {{Actions=@{weaponactions}}} {{Multi=[[@{weaponmulti}]]}} {{Mode=@{weaponmode}}}"></button>
+					<button type="roll" name="roll_weapon" value="&{template:default} {{name=@{character_name} - @{weaponname}}} {{Accuracy=[[@{weaponaccuracy}]]}} {{Actions=@{weaponactions}}}"></button>
 					<input type="text" name="attr_weaponname" class="sheet-weapon-name" data-i18n-placeholder="weapon-name-placeholder" placeholder="Weapon Name">
 					<input type="number" name="attr_weaponaccuracy" value="0">
-					<select name="attr_weaponmode" style="width: 5em !important;">
-						<option value="1" data-i18n="mode-1" selected>1 Attack</option>
-						<option value="2" data-i18n="mode-2">2 Attacks</option>
-						<option value="3" data-i18n="mode-3">3 Attacks (Auto)</option>
-					</select>
-					<select name="attr_weaponmulti" style="width: 4em !important;">
-						<option value="-5">-5</option>
-						<option value="-4">-4</option>
-						<option value="-3">-3</option>
-						<option value="-2">-2</option>
-						<option value="-1">-1</option>
-						<option value="0" selected>0</option>
-						<option value="1">+1</option>
-						<option value="2">+2</option>
-						<option value="3">+3</option>
-						<option value="4">+4</option>
-						<option value="5">+5</option>
-					</select>
 					<input type="text" name="attr_weaponactions">
 					<div class="sheet-triplet">
 						<input type="text" name="attr_weaponclipsize">
@@ -4568,18 +4563,18 @@ on('change:undorank', function() { getAttrs(['UndoRank'], function(v) { setAttrs
 						</div>
 					</div>
 					<div class="sheet-skill-row sheet-spec">
-						<input type="hidden" name="attr_Sheya'sClutch_is_trained" class="sheet-trained-check" value="0">
+						<input type="hidden" name="attr_SheyasClutch_is_trained" class="sheet-trained-check" value="0">
 						<div class="sheet-roll-container">
-							<button type="roll" name="roll_Sheya'sClutch" class="sheet-roll-trained" value="&{template:default} {{name= @{character_name} - Sheya's Clutch}} {{score= [[@{Sheya'sClutchO}]]/[[@{Sheya'sClutchG}]]/[[@{Sheya'sClutchA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-10 Steps (-6d20), 1d20cs<1cf>20-6d20cs<0cf<0|-9 Steps (-5d20), 1d20cs<1cf>20-5d20cs<0cf<0|-8 Steps (-4d20), 1d20cs<1cf>20-4d20cs<0cf<0|-7 Steps (-3d20), 1d20cs<1cf>20-3d20cs<0cf<0|-6 Steps (-2d20), 1d20cs<1cf>20-2d20cs<0cf<0|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0|+8 Steps (+4d20), 1d20cs<1cf>20+4d20cs<0cf<0|+9 Steps (+5d20), 1d20cs<1cf>20+5d20cs<0cf<0|+10 Steps (+6d20), 1d20cs<1cf>20+6d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/core-mechanics/psionics/telekinesis/#sheyas-clutch)}}"></button>
-							<button type="roll" name="roll_Sheya'sClutch_untrained" class="sheet-roll-untrained sheet-trained-only-msg" value="/w gm @{character_name} attempts to use Sheya's Clutch untrained, but it is a Trained Only skill."></button>
+							<button type="roll" name="roll_SheyasClutch" class="sheet-roll-trained" value="&{template:default} {{name= @{character_name} - Sheya's Clutch}} {{score= [[@{SheyasClutchO}]]/[[@{SheyasClutchG}]]/[[@{SheyasClutchA}]]}} {{results= [[?{Situation Modifier|None, 1d20cs<1cf>20|-10 Steps (-6d20), 1d20cs<1cf>20-6d20cs<0cf<0|-9 Steps (-5d20), 1d20cs<1cf>20-5d20cs<0cf<0|-8 Steps (-4d20), 1d20cs<1cf>20-4d20cs<0cf<0|-7 Steps (-3d20), 1d20cs<1cf>20-3d20cs<0cf<0|-6 Steps (-2d20), 1d20cs<1cf>20-2d20cs<0cf<0|-5 Steps (-d20), 1d20cs<1cf>20-1d20cs<0cf<0|-4 Steps (-d12), 1d20cs<1cf>20-1d12cs<0cf<0|-3 Steps (-d8), 1d20cs<1cf>20-1d8cs<0cf<0|-2 Steps (-d6), 1d20cs<1cf>20-1d6cs<0cf<0|-1 Steps (-d4), 1d20cs<1cf>20-1d4cs<0cf<0|+1 Steps (+d4), 1d20cs<1cf>20+1d4cs<0cf<0|+2 Steps (+d6), 1d20cs<1cf>20+1d6cs<0cf<0|+3 Steps (+d8), 1d20cs<1cf>20+1d8cs<0cf<0|+4 Steps (+d12), 1d20cs<1cf>20+1d12cs<0cf<0|+5 Steps (+d20), 1d20cs<1cf>20+1d20cs<0cf<0|+6 Steps (+2d20), 1d20cs<1cf>20+2d20cs<0cf<0|+7 Steps (+3d20), 1d20cs<1cf>20+3d20cs<0cf<0|+8 Steps (+4d20), 1d20cs<1cf>20+4d20cs<0cf<0|+9 Steps (+5d20), 1d20cs<1cf>20+5d20cs<0cf<0|+10 Steps (+6d20), 1d20cs<1cf>20+6d20cs<0cf<0}]]}} {{wiki= [↗ Wiki Documentation](https://aaa.dimble.net/core-mechanics/psionics/telekinesis/#sheyas-clutch)}}"></button>
+							<button type="roll" name="roll_SheyasClutch_untrained" class="sheet-roll-untrained sheet-trained-only-msg" value="/w gm @{character_name} attempts to use Sheya's Clutch untrained, but it is a Trained Only skill."></button>
 						</div>
-						<div class="sheet-skill-name sheet-trained-only">Sheya's Clutch <button type="roll" name="roll_Sheya'sClutch_link" class="sheet-skill-link" value="[Sheya's Clutch Wiki](https://aaa.dimble.net/core-mechanics/psionics/telekinesis/#sheyas-clutch)">&#x2197;</button><div class="sheet-skill-info"><span class="sheet-info-icon">i</span><div class="sheet-tooltip"><span class="sheet-tooltip-trained">Trained Only</span><span class="sheet-tooltip-separator"></span><span class="sheet-tooltip-cost">Base cost: 4</span><span class="sheet-tooltip-separator"></span><span class="sheet-tooltip-rank"><b>R4</b> Increased Damage</span><span class="sheet-tooltip-rank"><b>R8</b> Increased Damage</span><span class="sheet-tooltip-rank"><b>R12</b> Multiple Targets</span></div></div></div>
+						<div class="sheet-skill-name sheet-trained-only">Sheya's Clutch <button type="roll" name="roll_SheyasClutch_link" class="sheet-skill-link" value="[Sheya's Clutch Wiki](https://aaa.dimble.net/core-mechanics/psionics/telekinesis/#sheyas-clutch)">&#x2197;</button><div class="sheet-skill-info"><span class="sheet-info-icon">i</span><div class="sheet-tooltip"><span class="sheet-tooltip-trained">Trained Only</span><span class="sheet-tooltip-separator"></span><span class="sheet-tooltip-cost">Base cost: 4</span><span class="sheet-tooltip-separator"></span><span class="sheet-tooltip-rank"><b>R4</b> Increased Damage</span><span class="sheet-tooltip-rank"><b>R8</b> Increased Damage</span><span class="sheet-tooltip-rank"><b>R12</b> Multiple Targets</span></div></div></div>
 						<div class="sheet-skill-ability-label">WIL</div>
-						<input type="number" name="attr_Sheya'sClutchRank" class="sheet-score" value="0">
+						<input type="number" name="attr_SheyasClutchRank" class="sheet-score" value="0">
 						<div class="sheet-skill-score-cell">
-							<input type="text" name="attr_Sheya'sClutchO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{Sheya'sClutchRank}+@{Will})*@{Telekinesis}) * (@{Sheya'sClutchRank}/(@{Sheya'sClutchRank}+0.001)) + 0.5))">/
-							<input type="text" name="attr_Sheya'sClutchG" class="sheet-scoredisabled" disabled="true" value="(floor(@{Sheya'sClutchO}/2))">/
-							<input type="text" name="attr_Sheya'sClutchA" class="sheet-scoredisabled" disabled="true" value="(floor(@{Sheya'sClutchO}/4))">
+							<input type="text" name="attr_SheyasClutchO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{SheyasClutchRank}+@{Will})*@{Telekinesis}) * (@{SheyasClutchRank}/(@{SheyasClutchRank}+0.001)) + 0.5))">/
+							<input type="text" name="attr_SheyasClutchG" class="sheet-scoredisabled" disabled="true" value="(floor(@{SheyasClutchO}/2))">/
+							<input type="text" name="attr_SheyasClutchA" class="sheet-scoredisabled" disabled="true" value="(floor(@{SheyasClutchO}/4))">
 						</div>
 					</div>
 				</div>
@@ -4918,6 +4913,10 @@ on('change:undorank', function() { getAttrs(['UndoRank'], function(v) { setAttrs
 					</fieldset>
 
 					<div class="sheet-table" style="margin-top: 10px; border-top: 2px solid var(--color-accent-teal);">
+						<div class="sheet-rowtable">
+							<div class="sheet-tablecell sheet-broadskill">Cyber Tolerance Rank</div>
+							<div class="sheet-tablecell"><input type="number" name="attr_CyberToleranceRank" value="0"></div>
+						</div>
 						<div class="sheet-rowtable">
 							<div class="sheet-tablecell sheet-broadskill">Cyber Tolerance</div>
 							<div class="sheet-tablecell" style="text-align: right;">
@@ -5396,7 +5395,7 @@ on('change:undorank', function() { getAttrs(['UndoRank'], function(v) { setAttrs
 		<div class="sheet-col" style="width:24px;"></div>
 		<div class="sheet-col sheet-broadskill" style="width: 200px;">Weapon Name</div>
 		<div class="sheet-col sheet-broadskill" style="width: 60px; text-align: center;">Acc</div>
-		<div class="sheet-col sheet-broadskill" style="width: 80px; text-align: center;">Mode</div>
+		<div class="sheet-col sheet-broadskill" style="width: 80px; text-align: center;">Attacks</div>
 		<div class="sheet-col sheet-broadskill" style="width: 50px; text-align: center;">Multi</div>
 		<div class="sheet-col sheet-broadskill" style="width: 100px; text-align: center;">Range</div>
 		<div class="sheet-col sheet-broadskill" style="width: 50px; text-align: center;">Type</div>
@@ -5404,18 +5403,23 @@ on('change:undorank', function() { getAttrs(['UndoRank'], function(v) { setAttrs
 	<fieldset class="repeating_starshipweapons">
 		<div class="sheet-attackform-container" style="margin-bottom: 10px; border-bottom: 1px solid var(--color-border); padding-bottom: 5px;">
 			<div class="sheet-attackform-row">
-				<button type="roll" name="roll_StarshipWeapon" value="@{StarshipWeaponMacro}"></button>
-				
-				<div class="sheet-hidden">
+				<div class="sheet-attackform-buttons">
+					<button type="roll" name="roll_StarshipWeapon1" value="@{StarshipWeaponMacro1}">Single</button>
 					<button type="roll" name="roll_StarshipWeapondamageord"
-						value="&{template:default} {{name=@{character_name} - @{StarshipWeaponName}}} {{Ordinary Damage= [[@{StarshipWeapondamageordinary}]]@{StarshipWeapondamageordinarytype}}}"></button>
+						value="!script {{ --#title|@{character_name} - @{StarshipWeaponName} --#titlecardbackground|#1e293b --#titlecardfontcolor|#ffffff --#commandcardborder|1px solid #1e293b --#commandcardboxshadow|0 2px 5px rgba(0,0,0,0.2) --#titlecardstyle|border-radius: 4px 4px 0 0; padding: 6px 10px; --#bodycardstyle|border-top: none; border-radius: 0 0 4px 4px; --#bodyfontsize|12px --#oddrowbackground|#111827 --#evenrowbackground|#030712 --#oddrowfontcolor|#f9fafb --#evenrowfontcolor|#f9fafb --#whisper|gm --=dmg|@{StarshipWeapondamageordinary} --+Ordinary Damage (@{StarshipWeapondamageordinary})|**[$dmg]** @{StarshipWeapondamageordinarytype} }}">Ordinary</button>
+					
+					<button type="roll" name="roll_StarshipWeapon2" value="@{StarshipWeaponMacro2}">Double</button>
 					<button type="roll" name="roll_StarshipWeapondamagegoo"
-						value="&{template:default} {{name=@{character_name} - @{StarshipWeaponName}}} {{Good Damage= [[@{StarshipWeapondamagegood}]]@{StarshipWeapondamagegoodtype}}}"></button>
+						value="!script {{ --#title|@{character_name} - @{StarshipWeaponName} --#titlecardbackground|#1e293b --#titlecardfontcolor|#ffffff --#commandcardborder|1px solid #1e293b --#commandcardboxshadow|0 2px 5px rgba(0,0,0,0.2) --#titlecardstyle|border-radius: 4px 4px 0 0; padding: 6px 10px; --#bodycardstyle|border-top: none; border-radius: 0 0 4px 4px; --#bodyfontsize|12px --#oddrowbackground|#111827 --#evenrowbackground|#030712 --#oddrowfontcolor|#f9fafb --#evenrowfontcolor|#f9fafb --#whisper|gm --=dmg|@{StarshipWeapondamagegood} --+Good Damage (@{StarshipWeapondamagegood})|**[$dmg]** @{StarshipWeapondamagegoodtype} }}">Good</button>
+					
+					<button type="roll" name="roll_StarshipWeapon3" value="@{StarshipWeaponMacro3}">Auto</button>
 					<button type="roll" name="roll_StarshipWeapondamageama"
-						value="&{template:default} {{name=@{character_name} - @{StarshipWeaponName}}} {{Amazing Damage= [[@{StarshipWeapondamageamazing}]]@{StarshipWeapondamageamazingtype}}}"></button>
+						value="!script {{ --#title|@{character_name} - @{StarshipWeaponName} --#titlecardbackground|#1e293b --#titlecardfontcolor|#ffffff --#commandcardborder|1px solid #1e293b --#commandcardboxshadow|0 2px 5px rgba(0,0,0,0.2) --#titlecardstyle|border-radius: 4px 4px 0 0; padding: 6px 10px; --#bodycardstyle|border-top: none; border-radius: 0 0 4px 4px; --#bodyfontsize|12px --#oddrowbackground|#111827 --#evenrowbackground|#030712 --#oddrowfontcolor|#f9fafb --#evenrowfontcolor|#f9fafb --#whisper|gm --=dmg|@{StarshipWeapondamageamazing} --+Amazing Damage (@{StarshipWeapondamageamazing})|**[$dmg]** @{StarshipWeapondamageamazingtype} }}">Amazing</button>
 				</div>
 
-				<input type="hidden" name="attr_StarshipWeaponMacro" value="">
+				<input type="hidden" name="attr_StarshipWeaponMacro1" value="">
+				<input type="hidden" name="attr_StarshipWeaponMacro2" value="">
+				<input type="hidden" name="attr_StarshipWeaponMacro3" value="">
 				
 				<div class="sheet-attackform-field" style="flex: 6; min-width: 200px;">
 					<input type="text" name="attr_StarshipWeaponName" placeholder="Weapon Name" style="width: 100% !important;">
@@ -5423,13 +5427,7 @@ on('change:undorank', function() { getAttrs(['UndoRank'], function(v) { setAttrs
 				<div class="sheet-attackform-field" style="width: 60px;">
 					<input type="number" name="attr_StarshipWeaponAcc" value="0" style="width: 100% !important;">
 				</div>
-				<div class="sheet-attackform-field" style="width: 80px;">
-					<select name="attr_StarshipWeaponMode" style="width: 100% !important;">
-						<option value="1" data-i18n="mode-1" selected>1 Attack</option>
-						<option value="2" data-i18n="mode-2">2 Attacks</option>
-						<option value="3" data-i18n="mode-3">3 Attacks (Auto)</option>
-					</select>
-				</div>
+
 				<div class="sheet-attackform-field" style="width: 50px;">
 					<select name="attr_StarshipWeaponMulti" style="width: 100% !important;">
 						<option value="-5">-5</option><option value="-4">-4</option><option value="-3">-3</option><option value="-2">-2</option><option value="-1">-1</option><option value="0" selected>0</option><option value="1">+1</option><option value="2">+2</option><option value="3">+3</option><option value="4">+4</option><option value="5">+5</option>
@@ -5712,6 +5710,20 @@ on('change:undorank', function() { getAttrs(['UndoRank'], function(v) { setAttrs
 			{{/attack3}}
 		</div>
 
+		{{#notes}}<div class="sheet-template-notes"><span>Notes:</span> {{notes}}</div>{{/notes}}
+	</div>
+</rolltemplate>
+<rolltemplate class="sheet-rolltemplate-alternity-damage">
+	<div class="sheet-template-container">
+		<div class="sheet-template-header">
+			<span class="sheet-template-title">{{name}}</span>
+		</div>
+		<div class="sheet-template-body">
+			<div class="sheet-template-row">
+				<span>{{label}}:</span> 
+				<span class="sheet-template-result">{{damage}}</span>
+			</div>
+		</div>
 		{{#notes}}<div class="sheet-template-notes"><span>Notes:</span> {{notes}}</div>{{/notes}}
 	</div>
 </rolltemplate>

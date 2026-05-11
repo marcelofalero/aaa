@@ -16,7 +16,7 @@ ABILITY_MAP = {
 }
 
 def clean_id(n):
-    return n.replace(' ','').replace('-','').replace('.','').replace(',','').replace('—','')
+    return n.replace(' ','').replace('-','').replace('.','').replace(',','').replace('—','').replace("'",'')
 
 def build_tooltip_html(cost, is_untrained="YES", rank_benefits=None):
     """Build the tooltip content HTML including cost and rank benefits."""
@@ -395,7 +395,7 @@ def build():
             spec_workers = []
             for skill_entry in all_skill_ids:
                 for spec_id in skill_entry['specs']:
-                    spec_workers.append(f"on('change:{spec_id.lower()}rank', function() {{ getAttrs(['{spec_id}Rank'], function(v) {{ setAttrs({{ '{spec_id}_is_trained': (parseInt(v.{spec_id}Rank) > 0 ? 1 : 0) }}); }}); }});")
+                    spec_workers.append(f'on("change:{spec_id.lower()}rank", function() {{ getAttrs(["{spec_id}Rank"], function(v) {{ setAttrs({{ "{spec_id}_is_trained": (parseInt(v["{spec_id}Rank"]) > 0 ? 1 : 0) }}); }}); }});')
             
             content = content.replace('<!-- SPECIALTY_WORKERS_PLACEHOLDER -->', "\n".join(spec_workers))
             

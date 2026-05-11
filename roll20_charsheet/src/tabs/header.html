@@ -14,6 +14,32 @@ destinations = the name of the attribute that stores the total quantity
           destination and fields both can be a single attribute: 'weight'
           or an array of attributes: ['weight','number','equipped']
 */
+
+const generateUUID = (function() {
+    let a = 0, b = [];
+    return function() {
+        let c = (new Date()).getTime(), d = c === a;
+        a = c;
+        let e = new Array(8);
+        for (let f = 7; 0 <= f; f--) {
+            e[f] = "-0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ_abcdefghijklmnopqrstuvwxyz".charAt(c % 64);
+            c = Math.floor(c / 64);
+        }
+        c = e.join("");
+        if (d) {
+            for (f = 11; 0 <= f && 63 === b[f]; f--) b[f] = 0;
+            b[f]++;
+        } else {
+            for (f = 0; 12 > f; f++) b[f] = Math.floor(64 * Math.random());
+        }
+        for (f = 0; 12 > f; f++) c += "-0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ_abcdefghijklmnopqrstuvwxyz".charAt(b[f]);
+        return c;
+    };
+})();
+
+const generateRowID = () => generateUUID().replace(/_/g, "Z");
+
+console.log("Alternity RPG Sheet Workers Loading...");
 const repeatingSum = (destinations, section, fields) => {
     if (!Array.isArray(destinations)) destinations = [destinations.replace(/\s/g, '').split(',')];
     if (!Array.isArray(fields)) fields = [fields.replace(/\s/g, '').split(',')];
@@ -85,52 +111,72 @@ on("change:actioncheck", function() {
 
 /* ===== COMBAT STEP DIE CALCULATION ===== */
 const combatStepMap = {
-    '-15': '-11d20cs<0cf<0', '-14': '-10d20cs<0cf<0', '-13': '-9d20cs<0cf<0', '-12': '-8d20cs<0cf<0', '-11': '-7d20cs<0cf<0',
-    '-10': '-6d20cs<0cf<0',  '-9':  '-5d20cs<0cf<0',  '-8':  '-4d20cs<0cf<0',  '-7':  '-3d20cs<0cf<0',  '-6':  '-2d20cs<0cf<0',
-    '-5':  '-1d20cs<0cf<0',  '-4':  '-1d12cs<0cf<0',  '-3':  '-1d8cs<0cf<0',   '-2':  '-1d6cs<0cf<0',   '-1':  '-1d4cs<0cf<0',
+    '-15': '-11d20', '-14': '-10d20', '-13': '-9d20', '-12': '-8d20', '-11': '-7d20',
+    '-10': '-6d20',  '-9':  '-5d20',  '-8':  '-4d20',  '-7':  '-3d20',  '-6':  '-2d20',
+    '-5':  '-1d20',  '-4':  '-1d12',  '-3':  '-1d8',   '-2':  '-1d6',   '-1':  '-1d4',
     '0':   '+0',
-    '1':   '+1d4cs<0cf<0',   '2':   '+1d6cs<0cf<0',   '3':   '+1d8cs<0cf<0',   '4':   '+1d12cs<0cf<0',  '5':   '+1d20cs<0cf<0',
-    '6':   '+2d20cs<0cf<0',  '7':   '+3d20cs<0cf<0',  '8':   '+4d20cs<0cf<0',  '9':   '+5d20cs<0cf<0',  '10':  '+6d20cs<0cf<0',
-    '11':  '+7d20cs<0cf<0',  '12':  '+8d20cs<0cf<0',  '13':  '+9d20cs<0cf<0',  '14':  '+10d20cs<0cf<0', '15':  '+11d20cs<0cf<0'
+    '1':   '+1d4',   '2':   '+1d6',   '3':   '+1d8',   '4':   '+1d12',  '5':   '+1d20',
+    '6':   '+2d20',  '7':   '+3d20',  '8':   '+4d20',  '9':   '+5d20',  '10':  '+6d20',
+    '11':  '+7d20',  '12':  '+8d20',  '13':  '+9d20',  '14':  '+10d20', '15':  '+11d20'
 };
 
 function updateAttackMacro(section, rowId) {
-    const prefix = `repeating_${section}_${rowId}_`;
     const isStarship = section === 'starshipweapons';
+    const prefix = `repeating_${section}_${rowId}_`;
     const s = isStarship ? 'StarshipWeapon' : 'attackform';
     
-    const nameSuffix = isStarship ? 'Name' : 'name';
-    const scoreSuffix = isStarship ? 'Score' : 'score';
-    const typeSuffix = isStarship ? 'Type' : 'type';
-    const rangeSuffix = isStarship ? 'Range' : 'range';
-    const notesSuffix = isStarship ? 'Notes' : 'notes';
-    const dieSuffix = isStarship ? 'Die' : 'die';
-    const accSuffix = isStarship ? 'Acc' : (section === 'attackforms' ? 'accuracy' : 'acc');
-    const sitSuffix = isStarship ? 'Sit' : 'sit';
-    const multiSuffix = isStarship ? 'Multi' : 'multi';
-    const modeSuffix = isStarship ? 'Mode' : 'mode';
-    const macroSuffix = isStarship ? 'Macro' : 'macro';
-
-    const fields = [
-        prefix + s + nameSuffix, prefix + s + scoreSuffix, prefix + s + typeSuffix, 
-        prefix + s + rangeSuffix, prefix + s + notesSuffix, prefix + s + dieSuffix, 
-        prefix + s + accSuffix, prefix + s + sitSuffix, prefix + s + multiSuffix, 
-        prefix + s + modeSuffix
+    // Core attributes to fetch
+    const coreAttrs = [
+        'name', 'score', 'type', 'range', 'die', 'accuracy', 'sit', 'multi',
+        'damageordinary', 'damagegood', 'damageamazing'
     ];
     
-    // For starships, some fields are named differently or come from the station
+    // Map to actual Roll20 attribute names
+    const fields = coreAttrs.map(attr => {
+        let suffix = attr;
+        if (isStarship) {
+            // Starship specific camelCase
+            if (attr === 'name') suffix = 'Name';
+            if (attr === 'score') suffix = 'Score';
+            if (attr === 'type') suffix = 'Type';
+            if (attr === 'range') suffix = 'Range';
+            if (attr === 'die') suffix = 'Die';
+            if (attr === 'accuracy') suffix = 'Acc';
+            if (attr === 'sit') suffix = 'Sit';
+            if (attr === 'multi') suffix = 'Multi';
+            // Damage suffixes are lowercase in both
+        }
+        return prefix + s + suffix;
+    });
+
     const extraFields = isStarship ? ['WeaponStationO', 'WeaponStationG', 'WeaponStationA'] : [];
     
-    getAttrs([...fields, ...extraFields], function(v) {
-        const name = v[prefix + s + nameSuffix] || '';
-        const mode = parseInt(v[prefix + s + modeSuffix]) || 1;
-        const multiMod = parseInt(v[prefix + s + multiSuffix]) || 0;
-        const baseDie = parseInt(v[prefix + s + dieSuffix]) || 0;
-        const accuracy = parseInt(v[prefix + s + accSuffix]) || 0;
-        const sit = parseInt(v[prefix + s + sitSuffix]) || 0;
+    getAttrs(['character_id', ...fields, ...extraFields], function(v) {
+        console.log(`DEBUG: updateAttackMacro values for ${rowId}:`, v);
+        const charId = v.character_id;
+        
+        const getVal = (suffix) => {
+            let actualSuffix = suffix;
+            if (isStarship) {
+                if (suffix === 'accuracy') actualSuffix = 'Acc';
+                else if (suffix === 'name' || suffix === 'score' || suffix === 'type' || suffix === 'range' || suffix === 'die' || suffix === 'sit' || suffix === 'multi') {
+                    actualSuffix = suffix.charAt(0).toUpperCase() + suffix.slice(1);
+                }
+            }
+            return v[prefix + s + actualSuffix];
+        };
+
+        const name = getVal('name') || 'Weapon';
+        const baseDie = parseInt(getVal('die')) || 0;
+        const accuracy = parseInt(getVal('accuracy')) || 0;
+        const sit = parseInt(getVal('sit')) || 0;
         const baseMod = baseDie + accuracy + sit;
         
-        let score = parseInt(v[prefix + s + scoreSuffix]) || 0;
+        const dmgO = getVal('damageordinary') || '-';
+        const dmgG = getVal('damagegood') || '-';
+        const dmgA = getVal('damageamazing') || '-';
+
+        let score = parseInt(getVal('score')) || 0;
         let scoreG = Math.floor(score / 2);
         let scoreA = Math.floor(score / 4);
         
@@ -140,81 +186,69 @@ function updateAttackMacro(section, rowId) {
             scoreA = parseInt(v['WeaponStationA']) || 0;
         }
         
-        let params = `{{name=${name}}} {{rowid=${rowId}}} `;
-        if (v[prefix + s + typeSuffix]) params += `{{type=${v[prefix + s + typeSuffix]}}} `;
-        if (v[prefix + s + rangeSuffix]) params += `{{range=${v[prefix + s + rangeSuffix]}}} `;
-        if (v[prefix + s + notesSuffix]) params += `{{notes=${v[prefix + s + notesSuffix]}}} `;
+        const generateMacro = (mode) => {
+            let script = "!script {{";
+            script += `\n--#title|${name}\n`;
+            script += `--#titlecardbackground|#1e293b\n`;
+            script += `--#titlecardfontcolor|#ffffff\n`;
+            script += `--#commandcardborder|1px solid #1e293b\n`;
+            script += `--#commandcardboxshadow|0 2px 5px rgba(0,0,0,0.2)\n`;
+            script += `--#titlecardstyle|border-radius: 4px 4px 0 0; padding: 6px 10px;\n`;
+            script += `--#bodycardstyle|border-top: none; border-radius: 0 0 4px 4px;\n`;
+            script += `--#bodyfontsize|12px\n`;
+            script += `--#oddrowbackground|#111827\n`;
+            script += `--#evenrowbackground|#030712\n`;
+            script += `--#oddrowfontcolor|#f9fafb\n`;
+            script += `--#evenrowfontcolor|#f9fafb\n`;
+            script += `--#whisper|gm\n`;
+            
+            const type = getVal('type');
+            const range = getVal('range');
+            if (type) script += `--+Type|${type}\n`;
+            if (range) script += `--+Range|${range}\n`;
 
-        let script = "!script {{ \n";
-        script += `  --#title|${name}\n`;
-        script += `  --#whisper|gm\n`;
-        
-        if (v[prefix + s + typeSuffix]) script += `  --+Type|${v[prefix + s + typeSuffix]}\n`;
-        if (v[prefix + s + rangeSuffix]) script += `  --+Range|${v[prefix + s + rangeSuffix]}\n`;
+            script += `--+Scores|**${score}** / **${scoreG}** / **${scoreA}**\n`;
+            script += `--+Damage Reference|**${dmgO}** / **${dmgG}** / **${dmgA}**\n`;
+            script += `--+---\n`;
 
-        script += `  --=a|1d20cs<1cf>20\n`;
-        script += `  --+Control Die|**[$a]**\n`;
-        script += `  --+---\n`;
+            script += `--=a|1d20\n`;
+            script += `--+Control Die|**[$a]**\n`;
+            
+            for (let i = 1; i <= mode; i++) {
+                const penalty = (mode > 1) ? i : 0;
+                const total = baseMod + penalty;
+                const stepDie = combatStepMap[String(Math.max(-15, Math.min(15, total)))] || '+0';
+                
+                script += `--=s${i}|0${stepDie}\n`;
+                script += `--=res${i}|[$a] + [$s${i}]\n`;
+                script += `--+Attack ${i} ([$a] ${stepDie})|**[$res${i}]**\n`;
+            }
+            
+            script += "}}";
+            return script;
+        };
         
-        script += `  --=ord|${score}\n`;
-        script += `  --=goo|{calc(floor([$ord]/2))}\n`;
-        script += `  --=ama|{calc(floor([$ord]/4))}\n`;
-        
-        for (let i = 1; i <= mode; i++) {
-            const penalty = (mode > 1) ? i : 0;
-            const total = baseMod + multiMod + penalty;
-            const stepDie = combatStepMap[String(Math.max(-15, Math.min(15, total)))] || '+0';
-            
-            script += `  --/ Attack ${i}\n`;
-            script += `  --=s${i}|${stepDie}\n`;
-            script += `  --=res${i}|{calc([$a] + [$s${i}])}\n`;
-            
-            // Success Logic
-            script += `  --? [$a] -eq 20 | --+Attack ${i}|Natural 20 - **Automatic Miss** ([$res${i}])\n`;
-            script += `  --? [$a] -eq 20 | [goto:skip${i}]\n`;
-            
-            script += `  --? [$a] -eq 1 | --+Attack ${i}|Natural 1 - **Automatic Hit** ([$res${i}]) [Dmg](~repeating_${section}_${rowId}_${s}damageama)\n`;
-            script += `  --? [$a] -eq 1 | [goto:skip${i}]\n`;
-            
-            script += `  --? [$res${i}] -le [$ama] | --+Attack ${i}|Amazing Hit ([$res${i}]) [Dmg](~repeating_${section}_${rowId}_${s}damageama)\n`;
-            script += `  --? [$res${i}] -le [$ama] | [goto:skip${i}]\n`;
-            
-            script += `  --? [$res${i}] -le [$goo] | --+Attack ${i}|Good Hit ([$res${i}]) [Dmg](~repeating_${section}_${rowId}_${s}damagegoo)\n`;
-            script += `  --? [$res${i}] -le [$goo] | [goto:skip${i}]\n`;
-            
-            script += `  --? [$res${i}] -le [$ord] | --+Attack ${i}|Ordinary Hit ([$res${i}]) [Dmg](~repeating_${section}_${rowId}_${s}damageord)\n`;
-            script += `  --? [$res${i}] -le [$ord] | [goto:skip${i}]\n`;
-            
-            script += `  --+Attack ${i}|**Miss** ([$res${i}])\n`;
-            script += `  --:skip${i}|\n`;
-        }
-        
-        script += "}}";
-        setAttrs({ [prefix + s + macroSuffix]: script });
+        const update = {};
+        update[prefix + s + 'macro1'] = generateMacro(1);
+        update[prefix + s + 'macro2'] = generateMacro(2);
+        update[prefix + s + 'macro3'] = generateMacro(3);
+        setAttrs(update);
     });
 }
 
 // Attack Forms Listeners
-const attackFormFields = ['name', 'score', 'type', 'range', 'notes', 'die', 'accuracy', 'sit', 'multi', 'mode', 'damageordinary', 'damageordinarytype', 'damagegood', 'damagegoodtype', 'damageamazing', 'damageamazingtype'];
-on(attackFormFields.map(f => `change:repeating_attackforms:attackform${f}`).join(' '), function(eventInfo) {
-    const rowMatch = eventInfo.sourceAttribute.match(/repeating_attackforms_([-\w]+)_/);
-    if (rowMatch) updateAttackMacro('attackforms', rowMatch[1]);
-});
-
-on('change:repeating_attackforms remove:repeating_attackforms sheet:opened', function() {
+on('change:repeating_attackforms:attackformname change:repeating_attackforms:attackformscore change:repeating_attackforms:attackformdie change:repeating_attackforms:attackformaccuracy change:repeating_attackforms:attackformsit change:repeating_attackforms:attackformmulti remove:repeating_attackforms sheet:opened', function() {
+    console.log("DEBUG: attackforms listener triggered");
     getSectionIDs('repeating_attackforms', ids => ids.forEach(id => updateAttackMacro('attackforms', id)));
 });
 
 // Starship Weapons Listeners
-const starshipFields = ['Name', 'Acc', 'Mode', 'Multi', 'Range', 'Type', 'Die', 'Sit', 'damageordinary', 'damageordinarytype', 'damagegood', 'damagegoodtype', 'damageamazing', 'damageamazingtype'];
-on(starshipFields.map(f => `change:repeating_starshipweapons:starshipweapon${f.toLowerCase()}`).join(' '), function(eventInfo) {
-    const rowMatch = eventInfo.sourceAttribute.match(/repeating_starshipweapons_([-\w]+)_/);
-    if (rowMatch) updateAttackMacro('starshipweapons', rowMatch[1]);
-});
-
-on('change:repeating_starshipweapons remove:repeating_starshipweapons sheet:opened', function() {
+on('change:repeating_starshipweapons:StarshipWeaponName change:repeating_starshipweapons:StarshipWeaponScore change:repeating_starshipweapons:StarshipWeaponDie change:repeating_starshipweapons:StarshipWeaponAcc change:repeating_starshipweapons:StarshipWeaponSit change:repeating_starshipweapons:StarshipWeaponMulti remove:repeating_starshipweapons sheet:opened', function() {
+    console.log("DEBUG: starshipweapons listener triggered");
     getSectionIDs('repeating_starshipweapons', ids => ids.forEach(id => updateAttackMacro('starshipweapons', id)));
 });
+
+
 
 /* ===== SPECIALTY TRAINING WORKERS ===== */
 <!-- SPECIALTY_WORKERS_PLACEHOLDER -->

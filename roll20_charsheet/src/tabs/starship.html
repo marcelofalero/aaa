@@ -215,7 +215,7 @@
 		<div class="sheet-col" style="width:24px;"></div>
 		<div class="sheet-col sheet-broadskill" style="width: 200px;">Weapon Name</div>
 		<div class="sheet-col sheet-broadskill" style="width: 60px; text-align: center;">Acc</div>
-		<div class="sheet-col sheet-broadskill" style="width: 80px; text-align: center;">Mode</div>
+		<div class="sheet-col sheet-broadskill" style="width: 80px; text-align: center;">Attacks</div>
 		<div class="sheet-col sheet-broadskill" style="width: 50px; text-align: center;">Multi</div>
 		<div class="sheet-col sheet-broadskill" style="width: 100px; text-align: center;">Range</div>
 		<div class="sheet-col sheet-broadskill" style="width: 50px; text-align: center;">Type</div>
@@ -223,18 +223,23 @@
 	<fieldset class="repeating_starshipweapons">
 		<div class="sheet-attackform-container" style="margin-bottom: 10px; border-bottom: 1px solid var(--color-border); padding-bottom: 5px;">
 			<div class="sheet-attackform-row">
-				<button type="roll" name="roll_StarshipWeapon" value="@{StarshipWeaponMacro}"></button>
-				
-				<div class="sheet-hidden">
+				<div class="sheet-attackform-buttons">
+					<button type="roll" name="roll_StarshipWeapon1" value="@{StarshipWeaponMacro1}">Single</button>
 					<button type="roll" name="roll_StarshipWeapondamageord"
-						value="&{template:default} {{name=@{character_name} - @{StarshipWeaponName}}} {{Ordinary Damage= [[@{StarshipWeapondamageordinary}]]@{StarshipWeapondamageordinarytype}}}"></button>
+						value="!script {{ --#title|@{character_name} - @{StarshipWeaponName} --#titlecardbackground|#1e293b --#titlecardfontcolor|#ffffff --#commandcardborder|1px solid #1e293b --#commandcardboxshadow|0 2px 5px rgba(0,0,0,0.2) --#titlecardstyle|border-radius: 4px 4px 0 0; padding: 6px 10px; --#bodycardstyle|border-top: none; border-radius: 0 0 4px 4px; --#bodyfontsize|12px --#oddrowbackground|#111827 --#evenrowbackground|#030712 --#oddrowfontcolor|#f9fafb --#evenrowfontcolor|#f9fafb --#whisper|gm --=dmg|@{StarshipWeapondamageordinary} --+Ordinary Damage (@{StarshipWeapondamageordinary})|**[$dmg]** @{StarshipWeapondamageordinarytype} }}">Ordinary</button>
+					
+					<button type="roll" name="roll_StarshipWeapon2" value="@{StarshipWeaponMacro2}">Double</button>
 					<button type="roll" name="roll_StarshipWeapondamagegoo"
-						value="&{template:default} {{name=@{character_name} - @{StarshipWeaponName}}} {{Good Damage= [[@{StarshipWeapondamagegood}]]@{StarshipWeapondamagegoodtype}}}"></button>
+						value="!script {{ --#title|@{character_name} - @{StarshipWeaponName} --#titlecardbackground|#1e293b --#titlecardfontcolor|#ffffff --#commandcardborder|1px solid #1e293b --#commandcardboxshadow|0 2px 5px rgba(0,0,0,0.2) --#titlecardstyle|border-radius: 4px 4px 0 0; padding: 6px 10px; --#bodycardstyle|border-top: none; border-radius: 0 0 4px 4px; --#bodyfontsize|12px --#oddrowbackground|#111827 --#evenrowbackground|#030712 --#oddrowfontcolor|#f9fafb --#evenrowfontcolor|#f9fafb --#whisper|gm --=dmg|@{StarshipWeapondamagegood} --+Good Damage (@{StarshipWeapondamagegood})|**[$dmg]** @{StarshipWeapondamagegoodtype} }}">Good</button>
+					
+					<button type="roll" name="roll_StarshipWeapon3" value="@{StarshipWeaponMacro3}">Auto</button>
 					<button type="roll" name="roll_StarshipWeapondamageama"
-						value="&{template:default} {{name=@{character_name} - @{StarshipWeaponName}}} {{Amazing Damage= [[@{StarshipWeapondamageamazing}]]@{StarshipWeapondamageamazingtype}}}"></button>
+						value="!script {{ --#title|@{character_name} - @{StarshipWeaponName} --#titlecardbackground|#1e293b --#titlecardfontcolor|#ffffff --#commandcardborder|1px solid #1e293b --#commandcardboxshadow|0 2px 5px rgba(0,0,0,0.2) --#titlecardstyle|border-radius: 4px 4px 0 0; padding: 6px 10px; --#bodycardstyle|border-top: none; border-radius: 0 0 4px 4px; --#bodyfontsize|12px --#oddrowbackground|#111827 --#evenrowbackground|#030712 --#oddrowfontcolor|#f9fafb --#evenrowfontcolor|#f9fafb --#whisper|gm --=dmg|@{StarshipWeapondamageamazing} --+Amazing Damage (@{StarshipWeapondamageamazing})|**[$dmg]** @{StarshipWeapondamageamazingtype} }}">Amazing</button>
 				</div>
 
-				<input type="hidden" name="attr_StarshipWeaponMacro" value="">
+				<input type="hidden" name="attr_StarshipWeaponMacro1" value="">
+				<input type="hidden" name="attr_StarshipWeaponMacro2" value="">
+				<input type="hidden" name="attr_StarshipWeaponMacro3" value="">
 				
 				<div class="sheet-attackform-field" style="flex: 6; min-width: 200px;">
 					<input type="text" name="attr_StarshipWeaponName" placeholder="Weapon Name" style="width: 100% !important;">
@@ -242,13 +247,7 @@
 				<div class="sheet-attackform-field" style="width: 60px;">
 					<input type="number" name="attr_StarshipWeaponAcc" value="0" style="width: 100% !important;">
 				</div>
-				<div class="sheet-attackform-field" style="width: 80px;">
-					<select name="attr_StarshipWeaponMode" style="width: 100% !important;">
-						<option value="1" data-i18n="mode-1" selected>1 Attack</option>
-						<option value="2" data-i18n="mode-2">2 Attacks</option>
-						<option value="3" data-i18n="mode-3">3 Attacks (Auto)</option>
-					</select>
-				</div>
+
 				<div class="sheet-attackform-field" style="width: 50px;">
 					<select name="attr_StarshipWeaponMulti" style="width: 100% !important;">
 						<option value="-5">-5</option><option value="-4">-4</option><option value="-3">-3</option><option value="-2">-2</option><option value="-1">-1</option><option value="0" selected>0</option><option value="1">+1</option><option value="2">+2</option><option value="3">+3</option><option value="4">+4</option><option value="5">+5</option>

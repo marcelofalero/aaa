@@ -254,20 +254,24 @@
 				<div class="sheet-attackform-container">
 					<!-- Row 1: Name, Type, Range, Notes -->
 					<div class="sheet-attackform-row">
-						<button type="roll" name="roll_attackform"
-							value="@{attackformmacro}"></button>
-
-						<div class="sheet-hidden">
+						<div class="sheet-attackform-buttons">
+							<button type="roll" name="roll_attackform1" value="@{attackformmacro1}">Single</button>
 							<button type="roll" name="roll_attackformdamageord"
-								value="&{template:default} {{name=@{character_name} - @{attackformname}}} {{Ordinary Damage= [[@{attackformdamageordinary}]]@{attackformdamageordinarytype}}}"></button>
+								value="!script {{ --#title|@{character_name} - @{attackformname} --#titlecardbackground|#1e293b --#titlecardfontcolor|#ffffff --#commandcardborder|1px solid #1e293b --#commandcardboxshadow|0 2px 5px rgba(0,0,0,0.2) --#titlecardstyle|border-radius: 4px 4px 0 0; padding: 6px 10px; --#bodycardstyle|border-top: none; border-radius: 0 0 4px 4px; --#bodyfontsize|12px --#oddrowbackground|#111827 --#evenrowbackground|#030712 --#oddrowfontcolor|#f9fafb --#evenrowfontcolor|#f9fafb --#whisper|gm --=dmg|@{attackformdamageordinary} --+Ordinary Damage (@{attackformdamageordinary})|**[$dmg]** @{attackformdamageordinarytype} }}">Ordinary</button>
+							
+							<button type="roll" name="roll_attackform2" value="@{attackformmacro2}">Double</button>
 							<button type="roll" name="roll_attackformdamagegoo"
-								value="&{template:default} {{name=@{character_name} - @{attackformname}}} {{Good Damage= [[@{attackformdamagegood}]]@{attackformdamagegoodtype}}}"></button>
+								value="!script {{ --#title|@{character_name} - @{attackformname} --#titlecardbackground|#1e293b --#titlecardfontcolor|#ffffff --#commandcardborder|1px solid #1e293b --#commandcardboxshadow|0 2px 5px rgba(0,0,0,0.2) --#titlecardstyle|border-radius: 4px 4px 0 0; padding: 6px 10px; --#bodycardstyle|border-top: none; border-radius: 0 0 4px 4px; --#bodyfontsize|12px --#oddrowbackground|#111827 --#evenrowbackground|#030712 --#oddrowfontcolor|#f9fafb --#evenrowfontcolor|#f9fafb --#whisper|gm --=dmg|@{attackformdamagegood} --+Good Damage (@{attackformdamagegood})|**[$dmg]** @{attackformdamagegoodtype} }}">Good</button>
+							
+							<button type="roll" name="roll_attackform3" value="@{attackformmacro3}">Auto</button>
 							<button type="roll" name="roll_attackformdamageama"
-								value="&{template:default} {{name=@{character_name} - @{attackformname}}} {{Amazing Damage= [[@{attackformdamageamazing}]]@{attackformdamageamazingtype}}}"></button>
+								value="!script {{ --#title|@{character_name} - @{attackformname} --#titlecardbackground|#1e293b --#titlecardfontcolor|#ffffff --#commandcardborder|1px solid #1e293b --#commandcardboxshadow|0 2px 5px rgba(0,0,0,0.2) --#titlecardstyle|border-radius: 4px 4px 0 0; padding: 6px 10px; --#bodycardstyle|border-top: none; border-radius: 0 0 4px 4px; --#bodyfontsize|12px --#oddrowbackground|#111827 --#evenrowbackground|#030712 --#oddrowfontcolor|#f9fafb --#evenrowfontcolor|#f9fafb --#whisper|gm --=dmg|@{attackformdamageamazing} --+Amazing Damage (@{attackformdamageamazing})|**[$dmg]** @{attackformdamageamazingtype} }}">Amazing</button>
 						</div>
 
 						<input type="hidden" name="attr_attackformstepdie" value="+0">
-						<input type="hidden" name="attr_attackformmacro" value="">
+						<input type="hidden" name="attr_attackformmacro1" value="">
+						<input type="hidden" name="attr_attackformmacro2" value="">
+						<input type="hidden" name="attr_attackformmacro3" value="">
 						<input type="hidden" name="attr_attackformwarning" value="">
 
 						<div class="sheet-attackform-field" style="flex: 6; min-width: 200px;">
@@ -420,31 +424,8 @@
 							</select>
 						</div>
 						
-						<div class="sheet-attackform-field">
-							<div class="sheet-attackform-label" data-i18n="mode">Mode</div>
-							<select name="attr_attackformmode" style="width: 8em !important;">
-								<option value="1" data-i18n="mode-1" selected>1 Attack</option>
-								<option value="2" data-i18n="mode-2">2 Attacks</option>
-								<option value="3" data-i18n="mode-3">3 Attacks (Auto)</option>
-							</select>
-						</div>
 
-						<div class="sheet-attackform-field">
-							<div class="sheet-attackform-label" data-i18n="multi">Multi Mod</div>
-							<select name="attr_attackformmulti" style="width: 4.5em !important;">
-								<option value="-5">-5</option>
-								<option value="-4">-4</option>
-								<option value="-3">-3</option>
-								<option value="-2">-2</option>
-								<option value="-1">-1</option>
-								<option value="0" selected>0</option>
-								<option value="1">+1</option>
-								<option value="2">+2</option>
-								<option value="3">+3</option>
-								<option value="4">+4</option>
-								<option value="5">+5</option>
-							</select>
-						</div>
+
 
 
 
@@ -472,8 +453,6 @@
 				<div></div>
 				<div data-i18n="weapon">Weapon</div>
 				<div data-i18n="acc" style="text-align: center;">Acc</div>
-				<div data-i18n="mode" style="text-align: center;">Mode</div>
-				<div data-i18n="multi" style="text-align: center;">Multi</div>
 				<div data-i18n="actions" style="text-align: center;">Actions</div>
 				<div data-i18n="clipsize-ammo" style="text-align: center;">Clip / Ammo</div>
 				<div data-i18n="hide" style="text-align: center;">Hide</div>
@@ -481,27 +460,9 @@
 			</div>
 			<fieldset class="repeating_weapons">
 				<div class="sheet-grid-weapon-row">
-					<button type="roll" name="roll_weapon" value="&{template:default} {{name=@{character_name} - @{weaponname}}} {{Accuracy=[[@{weaponaccuracy}]]}} {{Actions=@{weaponactions}}} {{Multi=[[@{weaponmulti}]]}} {{Mode=@{weaponmode}}}"></button>
+					<button type="roll" name="roll_weapon" value="&{template:default} {{name=@{character_name} - @{weaponname}}} {{Accuracy=[[@{weaponaccuracy}]]}} {{Actions=@{weaponactions}}}"></button>
 					<input type="text" name="attr_weaponname" class="sheet-weapon-name" data-i18n-placeholder="weapon-name-placeholder" placeholder="Weapon Name">
 					<input type="number" name="attr_weaponaccuracy" value="0">
-					<select name="attr_weaponmode" style="width: 5em !important;">
-						<option value="1" data-i18n="mode-1" selected>1 Attack</option>
-						<option value="2" data-i18n="mode-2">2 Attacks</option>
-						<option value="3" data-i18n="mode-3">3 Attacks (Auto)</option>
-					</select>
-					<select name="attr_weaponmulti" style="width: 4em !important;">
-						<option value="-5">-5</option>
-						<option value="-4">-4</option>
-						<option value="-3">-3</option>
-						<option value="-2">-2</option>
-						<option value="-1">-1</option>
-						<option value="0" selected>0</option>
-						<option value="1">+1</option>
-						<option value="2">+2</option>
-						<option value="3">+3</option>
-						<option value="4">+4</option>
-						<option value="5">+5</option>
-					</select>
 					<input type="text" name="attr_weaponactions">
 					<div class="sheet-triplet">
 						<input type="text" name="attr_weaponclipsize">
