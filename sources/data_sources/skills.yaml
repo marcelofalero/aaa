@@ -3102,7 +3102,7 @@ items:
                 - Realización de informes y trámites oficiales Otros. Esta especialidad también se utiliza para determinar qué tan "Bueno" es un arresto (dando munición a los abogados que intentarán que el arresto se mantenga).
         trained_only: false
       law-specific-skill:
-        attribute: WIL
+        attribute: INT
         cost: 2
         url: /skills/law#law-specific-skill
         localized:
@@ -3139,7 +3139,7 @@ items:
           - rank: 12
             title: Increased Effect
       psionics:
-        attribute: WIL
+        attribute: INT
         cost: 3
         url: /skills/law#psionics
         localized:
@@ -4920,7 +4920,7 @@ items:
             - **Calidad Asombroso:** Una en la que (por ejemplo) Personaje y sus aliados están involucrados en Combate o están bajo una gran presión de tiempo para lograr su objetivo.
     items:
       protection-protocols:
-        attribute: WIL
+        attribute: INT
         cost: 3
         url: /skills/security#protection-protocols
         localized:
@@ -4981,7 +4981,7 @@ items:
           - rank: 12
             title: Increased Effect
       security-devices:
-        attribute: WIL
+        attribute: INT
         cost: 4
         url: /skills/security#security-devices
         localized:
@@ -5123,7 +5123,7 @@ items:
             | Condición | Modificador | | :--- | :--- | | La sociedad no tiene ley | -3 pasos | | La sociedad tiene ley Bueno | +2 pasos | | La sociedad tiene la ley Asombroso | +3 pasos | | Pertenece a un grupo similar | -1 paso | | Pertenece al mismo grupo | -2 pasos | | Pertenece al grupo opuesto | +3 pasos | | Tiene contacto local | -1 paso | | Tiene reputación Ventaja | -1 paso | | Es un obvio extraño | +1 paso | | Tiene Infamia Defecto | +1 paso | | Busca asistencia Ordinario | -1 paso | | Busca asistencia Bueno | +2 pasos | | Busca asistencia Asombroso | +4 pasos |
     items:
       street-knowledge:
-        attribute: WIL
+        attribute: INT
         cost: 3
         url: /skills/street-smart#street-knowledge
         localized:
@@ -5274,7 +5274,7 @@ items:
         trained_only: false
     trained_only: false
   system-operation:
-    attribute: WIL
+    attribute: INT
     cost: 3
     category: Technical
     url: /skills/system-operation
@@ -5289,7 +5289,7 @@ items:
             Esta amplia habilidad proporciona a un Personaje una formación básica en el uso de sistemas de naves espaciales Otros además del timón o los sistemas de pilotaje. (La operación de vehículos cubre el pilotaje real de una nave espacial). También se aplica a los tipos de vehículos Otros o instalaciones terrestres que utilizan uno o más de los sistemas específicos que se describen a continuación en la sección Habilidades especiales. Estos vehículos e instalaciones Otros incluyen (pero no se limitan a) grandes embarcaciones como acorazados, submarinos militares y buques de carga; aviones de combate y grandes aviones comerciales; y puestos de radar y emplazamientos de armas. Para obtener detalles completos sobre cómo se utilizan las habilidades de **Operación del sistema**, consulte las secciones sobre ["¿Qué hay en una nave espacial?"](/core-mechanics/vehicles-and-vessels/) y ["Vehículo espacial Combate"](/core-mechanics/vehicles-and-vessels#space-vehicle-combat).
     items:
       communications:
-        attribute: WIL
+        attribute: INT
         cost: 3
         url: /skills/system-operation#communications
         localized:
@@ -5303,7 +5303,7 @@ items:
                 Un especialista en comunicaciones puede operar con precisión todos los equipos de comunicación personales y a bordo, intentar descifrar señales de comunicación codificadas, codificar mensajes salientes, bloquear las comunicaciones externas y las señales de los sensores, e intentar superar las interferencias de una fuente externa.
         trained_only: false
       defenses:
-        attribute: WIL
+        attribute: INT
         cost: 3
         url: /skills/system-operation#defenses
         localized:
@@ -5317,7 +5317,7 @@ items:
                 Un especialista en defensas puede operar todos los sistemas defensivos a bordo con precisión, intentar dirigir las defensas a las partes del barco donde más se necesitan y analizar patrones de ataque para aprovechar al máximo las defensas que posee su barco. En el vehículo espacial Combate, el operador de las defensas puede penalizar las armas o sensores del oponente durante cualquier ataque.
         trained_only: false
       engineering:
-        attribute: WIL
+        attribute: INT
         cost: 3
         url: /skills/system-operation#engineering
         localized:
@@ -5331,7 +5331,7 @@ items:
                 Un especialista en ingeniería monitorea los sistemas electrónicos y mecánicos de un barco en su conjunto, observando fluctuaciones y Otros señales de que un componente se está averiando. Puede realizar reparaciones de sistemas dañados desde su estación, dirigir energía a sistemas específicos y realizar reparaciones prácticas en ubicaciones remotas.
         trained_only: false
       sensors:
-        attribute: WIL
+        attribute: INT
         cost: 3
         url: /skills/system-operation#sensors
         localized:
@@ -5345,7 +5345,7 @@ items:
                 Un especialista en sensores puede operar con precisión todos los equipos de sensores personales y a bordo, intentar escanear barcos o planetas y analizar esas lecturas en un corto período de tiempo. Puede utilizar los datos para proporcionar bonificaciones a un operador de armas o defensas.
         trained_only: false
       weapons:
-        attribute: WIL
+        attribute: INT
         cost: 6
         url: /skills/system-operation#weapons
         localized:
@@ -5387,7 +5387,7 @@ items:
             - **Asombroso:** **penalización +3** a la siguiente prueba de habilidad del oponente.
     items:
       infantry-tactics:
-        attribute: WIL
+        attribute: INT
         cost: 3
         url: /skills/tactics#infantry-tactics
         localized:
@@ -5412,7 +5412,7 @@ items:
           - rank: 12
             title: Increased Effect
       space-tactics:
-        attribute: WIL
+        attribute: INT
         cost: 3
         url: /skills/tactics#space-tactics
         localized:
@@ -5435,7 +5435,7 @@ items:
           - rank: 12
             title: Increased Effect
       vehicle-tactics:
-        attribute: WIL
+        attribute: INT
         cost: 3
         url: /skills/tactics#vehicle-tactics
         localized:
@@ -5459,7 +5459,7 @@ items:
             title: Increased Effect
     trained_only: false
   technical-science:
-    attribute: WIL
+    attribute: INT
     cost: 7
     category: Technical
     url: /skills/technical-science
@@ -5474,7 +5474,7 @@ items:
             Esta amplia habilidad representa la capacitación de un Personaje en las ciencias de Técnico, incluido el mantenimiento, la reparación y la invención de dispositivos mecánicos y electrónicos (sin incluir computadoras) y el conocimiento general de Técnico. Las comprobaciones de habilidad realizadas para determinar si un Personaje conoce cierta información de Técnico, o si es capaz de investigar una pregunta y descubrir una respuesta, se realizan de la misma manera que las comprobaciones de habilidad de **Conocimiento**.
     items:
       technical-knowledge:
-        attribute: WIL
+        attribute: INT
         cost: 3
         url: /skills/technical-science#technical-knowledge
         localized:
@@ -5503,7 +5503,7 @@ items:
           - rank: 12
             title: Increased Effect
       invention:
-        attribute: WIL
+        attribute: INT
         cost: 3
         url: /skills/technical-science#invention
         localized:
@@ -5528,7 +5528,7 @@ items:
           - rank: 12
             title: Increased Effect
       repair:
-        attribute: WIL
+        attribute: INT
         cost: 3
         url: /skills/technical-science#repair
         localized:

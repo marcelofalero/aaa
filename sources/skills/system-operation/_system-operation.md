@@ -1,5 +1,5 @@
 ---
-attribute: WIL
+attribute: INT
 cost: 3
 category: Technical
 url: /skills/system-operation

@@ -1,5 +1,5 @@
 ---
-attribute: WIL
+attribute: INT
 cost: 3
 url: /skills/system-operation#communications
 trained_only: false

@@ -1,5 +1,5 @@
 ---
-attribute: WIL
+attribute: INT
 cost: 3
 url: /skills/technical-science#invention
 trained_only: false

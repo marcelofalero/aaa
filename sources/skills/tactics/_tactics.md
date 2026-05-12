@@ -1,5 +1,5 @@
 ---
-attribute: WIL
+attribute:  WIL
 cost: 6
 category: Combat
 url: /skills/tactics

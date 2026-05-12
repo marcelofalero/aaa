@@ -1,5 +1,5 @@
 ---
-attribute: WIL
+attribute: INT
 cost: 2
 url: /skills/law#law-specific-skill
 trained_only: true

@@ -50,8 +50,8 @@
 			<div class="sheet-col sheet-broadskill sheet-12emwidth">Skill Score</div>
 		</div>
 		<div class="sheet-row">
-			<div class="sheet-col sheet-broadskill sheet-12emwidth"><button type="roll" name="roll_CommandStation"
-					value="&{template:default} {{name= @{character_name} - Command Station}} {{Operator=@{CommandStationOperator}}} {{Operator's Score= [[@{CommandStationO}]]/[[@{CommandStationG}]]/[[@{CommandStationA}]]}} {{results= [[<!-- ROLL_QUERY_DEFAULT_1 -->]]}} "></button>Command
+			<div class="sheet-col sheet-broadskill sheet-12emwidth"><input type="hidden" name="attr_CommandStationMacro" value=""><div class="sheet-roll-container"><button type="roll" name="roll_CommandStation" class="sheet-roll-skill"
+					value="@{CommandStationMacro}"></button></div>Command
 			</div>
 			<div class="sheet-col sheet-broadskill sheet-12emwidth"><input type="text"
 					name="attr_CommandStationLocation"></div>
@@ -66,8 +66,8 @@
 					value="(floor(@{CommandStationO}/4))"></div>
 		</div>
 		<div class="sheet-row">
-			<div class="sheet-col sheet-broadskill sheet-12emwidth"><button type="roll" name="roll_PilotStation"
-					value="&{template:default} {{name= @{character_name} - Pilot Station}} {{Operator=@{PilotStationOperator}}} {{Operator's Score= [[@{PilotStationO}]]/[[@{PilotStationG}]]/[[@{PilotStationA}]]}} {{results= [[<!-- ROLL_QUERY_DEFAULT_1 -->]]}} "></button>Pilot
+			<div class="sheet-col sheet-broadskill sheet-12emwidth"><input type="hidden" name="attr_PilotStationMacro" value=""><div class="sheet-roll-container"><button type="roll" name="roll_PilotStation" class="sheet-roll-skill"
+					value="@{PilotStationMacro}"></button></div>Pilot
 			</div>
 			<div class="sheet-col sheet-broadskill sheet-12emwidth"><input type="text" name="attr_PilotStationLocation">
 			</div>
@@ -82,8 +82,8 @@
 					value="(floor(@{PilotStationO}/4))"></div>
 		</div>
 		<div class="sheet-row">
-			<div class="sheet-col sheet-broadskill sheet-12emwidth"><button type="roll" name="roll_CopilotStation"
-					value="&{template:default} {{name= @{character_name} - Copilot Station}} {{Operator=@{CopilotStationOperator}}} {{Operator's Score= [[@{CopilotStationO}]]/[[@{CopilotStationG}]]/[[@{CopilotStationA}]]}} {{results= [[<!-- ROLL_QUERY_DEFAULT_1 -->]]}} "></button>Copilot
+			<div class="sheet-col sheet-broadskill sheet-12emwidth"><input type="hidden" name="attr_CopilotStationMacro" value=""><div class="sheet-roll-container"><button type="roll" name="roll_CopilotStation" class="sheet-roll-skill"
+					value="@{CopilotStationMacro}"></button></div>Copilot
 			</div>
 			<div class="sheet-col sheet-broadskill sheet-12emwidth"><input type="text"
 					name="attr_CopilotStationLocation"></div>
@@ -98,8 +98,8 @@
 					value="(floor(@{CopilotStationO}/4))"></div>
 		</div>
 		<div class="sheet-row">
-			<div class="sheet-col sheet-broadskill sheet-12emwidth"><button type="roll" name="roll_CommunicationStation"
-					value="&{template:default} {{name= @{character_name} - Communications Station}} {{Operator=@{CommunicationStationOperator}}} {{Operator's Score= [[@{CommunicationStationO}]]/[[@{CommunicationStationG}]]/[[@{CommunicationStationA}]]}} {{results= [[<!-- ROLL_QUERY_DEFAULT_1 -->]]}} "></button>Communications
+			<div class="sheet-col sheet-broadskill sheet-12emwidth"><input type="hidden" name="attr_CommunicationStationMacro" value=""><div class="sheet-roll-container"><button type="roll" name="roll_CommunicationStation" class="sheet-roll-skill"
+					value="@{CommunicationStationMacro}"></button></div>Communications
 			</div>
 			<div class="sheet-col sheet-broadskill sheet-12emwidth"><input type="text"
 					name="attr_CommunicationStationLocation"></div>
@@ -114,8 +114,8 @@
 					class="sheet-scoredisabled" disabled="true" value="(floor(@{CommunicationStationO}/4))"></div>
 		</div>
 		<div class="sheet-row">
-			<div class="sheet-col sheet-broadskill sheet-12emwidth"><button type="roll" name="roll_DamageControl"
-					value="&{template:default} {{name= @{character_name} - Damage Control}} {{Operator=@{DamageControlOperator}}} {{Operator's Score= [[@{DamageControlO}]]/[[@{DamageControlG}]]/[[@{DamageControlA}]]}} {{results= [[<!-- ROLL_QUERY_DEFAULT_1 -->]]}} "></button>Damage
+			<div class="sheet-col sheet-broadskill sheet-12emwidth"><input type="hidden" name="attr_DamageControlMacro" value=""><div class="sheet-roll-container"><button type="roll" name="roll_DamageControl" class="sheet-roll-skill"
+					value="@{DamageControlMacro}"></button></div>Damage
 				Control</div>
 			<div class="sheet-col sheet-broadskill sheet-12emwidth">N/A</div>
 			<div class="sheet-col sheet-broadskill sheet-12emwidth"><input type="text"
@@ -129,8 +129,8 @@
 					value="(floor(@{DamageControlO}/4))"></div>
 		</div>
 		<div class="sheet-row">
-			<div class="sheet-col sheet-broadskill sheet-12emwidth"><button type="roll" name="roll_DefenseStation"
-					value="&{template:default} {{name= @{character_name} - Defense Station}} {{Operator=@{DefenseStationOperator}}} {{Operator's Score= [[@{DefenseStationO}]]/[[@{DefenseStationG}]]/[[@{DefenseStationA}]]}} {{results= [[<!-- ROLL_QUERY_DEFAULT_1 -->]]}} "></button>Defenses
+			<div class="sheet-col sheet-broadskill sheet-12emwidth"><input type="hidden" name="attr_DefenseStationMacro" value=""><div class="sheet-roll-container"><button type="roll" name="roll_DefenseStation" class="sheet-roll-skill"
+					value="@{DefenseStationMacro}"></button></div>Defenses
 			</div>
 			<div class="sheet-col sheet-broadskill sheet-12emwidth"><input type="text"
 					name="attr_DefenseStationLocation"></div>
@@ -145,8 +145,8 @@
 					value="(floor(@{DefenseStationO}/4))"></div>
 		</div>
 		<div class="sheet-row">
-			<div class="sheet-col sheet-broadskill sheet-12emwidth"><button type="roll" name="roll_EngineeringStation"
-					value="&{template:default} {{name= @{character_name} - Engineering Station}} {{Operator=@{EngineeringStationOperator}}} {{Operator's Score= [[@{EngineeringStationO}]]/[[@{EngineeringStationG}]]/[[@{EngineeringStationA}]]}} {{results= [[<!-- ROLL_QUERY_DEFAULT_1 -->]]}} "></button>Engineering
+			<div class="sheet-col sheet-broadskill sheet-12emwidth"><input type="hidden" name="attr_EngineeringStationMacro" value=""><div class="sheet-roll-container"><button type="roll" name="roll_EngineeringStation" class="sheet-roll-skill"
+					value="@{EngineeringStationMacro}"></button></div>Engineering
 			</div>
 			<div class="sheet-col sheet-broadskill sheet-12emwidth"><input type="text"
 					name="attr_EngineeringStationLocation"></div>
@@ -161,8 +161,8 @@
 					value="(floor(@{EngineeringStationO}/4))"></div>
 		</div>
 		<div class="sheet-row">
-			<div class="sheet-col sheet-broadskill sheet-12emwidth"><button type="roll" name="roll_SensorStation"
-					value="&{template:default} {{name= @{character_name} - Sensor Station}} {{Operator=@{SensorStationOperator}}} {{Operator's Score= [[@{SensorStationO}]]/[[@{SensorStationG}]]/[[@{SensorStationA}]]}} {{results= [[<!-- ROLL_QUERY_DEFAULT_1 -->]]}} "></button>Sensors
+			<div class="sheet-col sheet-broadskill sheet-12emwidth"><input type="hidden" name="attr_SensorStationMacro" value=""><div class="sheet-roll-container"><button type="roll" name="roll_SensorStation" class="sheet-roll-skill"
+					value="@{SensorStationMacro}"></button></div>Sensors
 			</div>
 			<div class="sheet-col sheet-broadskill sheet-12emwidth"><input type="text"
 					name="attr_SensorStationLocation"></div>
@@ -177,8 +177,8 @@
 					value="(floor(@{SensorStationO}/4))"></div>
 		</div>
 		<div class="sheet-row">
-			<div class="sheet-col sheet-broadskill sheet-12emwidth"><button type="roll" name="roll_WeaponStation"
-					value="&{template:default} {{name= @{character_name} - Weapons Station}} {{Operator=@{WeaponStationOperator}}} {{Operator's Score= [[@{WeaponStationO}]]/[[@{WeaponStationG}]]/[[@{WeaponStationA}]]}} {{results= [[<!-- ROLL_QUERY_DEFAULT_1 -->]]}} "></button>Weapons
+			<div class="sheet-col sheet-broadskill sheet-12emwidth"><input type="hidden" name="attr_WeaponStationMacro" value=""><div class="sheet-roll-container"><button type="roll" name="roll_WeaponStation" class="sheet-roll-skill"
+					value="@{WeaponStationMacro}"></button></div>Weapons
 			</div>
 			<div class="sheet-col sheet-broadskill sheet-12emwidth"><input type="text"
 					name="attr_WeaponStationLocation"></div>
@@ -212,33 +212,85 @@
 		</div>
 	</div>
 	<div class="sheet-row">
-		<div class="sheet-col" style="width:2em;"></div>
-		<div class="sheet-col sheet-broadskill sheet-16emwidth">Weapon Name</div>
-		<div class="sheet-col sheet-broadskill" style="width:3em;">Acc</div>
-		<div class="sheet-col sheet-8emwidth sheet-broadskill">Range</div>
-		<div class="sheet-col sheet-4emwidth sheet-broadskill">Type</div>
-		<div class="sheet-col sheet-20emwidth sheet-broadskill">Damage</div>
-		<div class="sheet-col sheet-broadskill">Actions</div>
+		<div class="sheet-col" style="width:24px;"></div>
+		<div class="sheet-col sheet-broadskill" style="width: 200px;">Weapon Name</div>
+		<div class="sheet-col sheet-broadskill" style="width: 60px; text-align: center;">Acc</div>
+		<div class="sheet-col sheet-broadskill" style="width: 80px; text-align: center;">Attacks</div>
+		<div class="sheet-col sheet-broadskill" style="width: 50px; text-align: center;">Multi</div>
+		<div class="sheet-col sheet-broadskill" style="width: 100px; text-align: center;">Range</div>
+		<div class="sheet-col sheet-broadskill" style="width: 50px; text-align: center;">Type</div>
 	</div>
 	<fieldset class="repeating_starshipweapons">
-		<div class="sheet-row">
-			<div class="sheet-col"><button type="roll" name="roll_StarshipWeapon"
-					value="&{template:default} {{name= @{character_name} - @{StarshipWeaponName}}} {{Operator=@{WeaponStationOperator}}} {{Operator's Score= [[@{WeaponStationO}]]/[[@{WeaponStationG}]]/[[@{WeaponStationA}]]}} {{type= @{StarshipWeapontype}}} {{range= @{StarshipWeaponrange}}} {{damage= [[@{StarshipWeapondamageordinary}]]@{StarshipWeapondamageordinarytype}/[[@{StarshipWeapondamagegood}]]@{StarshipWeapondamagegoodtype}/[[@{StarshipWeapondamageamazing}]]@{StarshipWeapondamageamazingtype}}} {{results= [[<!-- ROLL_QUERY_DEFAULT_0 -->]]}}"></button><input
-					type="text" name="attr_StarshipWeaponName" class="sheet-16emwidth"
-					placeholder="Enter Starship Weapon"></div>
-			<div class="sheet-col"><input type="text" name="attr_StarshipWeaponAcc" class="sheet-score" value="0">
+		<div class="sheet-attackform-container" style="margin-bottom: 10px; border-bottom: 1px solid var(--color-border); padding-bottom: 5px;">
+			<div class="sheet-attackform-row">
+				<div class="sheet-attackform-buttons">
+					<button type="roll" name="roll_StarshipWeapon1" value="@{StarshipWeaponMacro1}">Single</button>
+					<button type="roll" name="roll_StarshipWeapondamageord"
+						value="!script {{ --#title|@{character_name} - @{StarshipWeaponName} --#titlecardbackground|#1e293b --#titlecardfontcolor|#ffffff --#commandcardborder|1px solid #1e293b --#commandcardboxshadow|0 2px 5px rgba(0,0,0,0.2) --#titlecardstyle|border-radius: 4px 4px 0 0; padding: 6px 10px; --#bodycardstyle|border-top: none; border-radius: 0 0 4px 4px; --#bodyfontsize|12px --#oddrowbackground|#111827 --#evenrowbackground|#030712 --#oddrowfontcolor|#f9fafb --#evenrowfontcolor|#f9fafb --=dmg|@{StarshipWeapondamageordinary} --+Ordinary Damage (@{StarshipWeapondamageordinary})|**[$dmg]** @{StarshipWeapondamageordinarytype} }}">Ordinary</button>
+					
+					<button type="roll" name="roll_StarshipWeapon2" value="@{StarshipWeaponMacro2}">Double</button>
+					<button type="roll" name="roll_StarshipWeapondamagegoo"
+						value="!script {{ --#title|@{character_name} - @{StarshipWeaponName} --#titlecardbackground|#1e293b --#titlecardfontcolor|#ffffff --#commandcardborder|1px solid #1e293b --#commandcardboxshadow|0 2px 5px rgba(0,0,0,0.2) --#titlecardstyle|border-radius: 4px 4px 0 0; padding: 6px 10px; --#bodycardstyle|border-top: none; border-radius: 0 0 4px 4px; --#bodyfontsize|12px --#oddrowbackground|#111827 --#evenrowbackground|#030712 --#oddrowfontcolor|#f9fafb --#evenrowfontcolor|#f9fafb --=dmg|@{StarshipWeapondamagegood} --+Good Damage (@{StarshipWeapondamagegood})|**[$dmg]** @{StarshipWeapondamagegoodtype} }}">Good</button>
+					
+					<button type="roll" name="roll_StarshipWeapon3" value="@{StarshipWeaponMacro3}">Auto</button>
+					<button type="roll" name="roll_StarshipWeapondamageama"
+						value="!script {{ --#title|@{character_name} - @{StarshipWeaponName} --#titlecardbackground|#1e293b --#titlecardfontcolor|#ffffff --#commandcardborder|1px solid #1e293b --#commandcardboxshadow|0 2px 5px rgba(0,0,0,0.2) --#titlecardstyle|border-radius: 4px 4px 0 0; padding: 6px 10px; --#bodycardstyle|border-top: none; border-radius: 0 0 4px 4px; --#bodyfontsize|12px --#oddrowbackground|#111827 --#evenrowbackground|#030712 --#oddrowfontcolor|#f9fafb --#evenrowfontcolor|#f9fafb --=dmg|@{StarshipWeapondamageamazing} --+Amazing Damage (@{StarshipWeapondamageamazing})|**[$dmg]** @{StarshipWeapondamageamazingtype} }}">Amazing</button>
+				</div>
+
+				<input type="hidden" name="attr_StarshipWeaponMacro1" value="">
+				<input type="hidden" name="attr_StarshipWeaponMacro2" value="">
+				<input type="hidden" name="attr_StarshipWeaponMacro3" value="">
+				
+				<div class="sheet-attackform-field" style="flex: 6; min-width: 200px;">
+					<input type="text" name="attr_StarshipWeaponName" placeholder="Weapon Name" style="width: 100% !important;">
+				</div>
+				<div class="sheet-attackform-field" style="width: 60px;">
+					<input type="number" name="attr_StarshipWeaponAcc" value="0" style="width: 100% !important;">
+				</div>
+
+				<div class="sheet-attackform-field" style="width: 50px;">
+					<select name="attr_StarshipWeaponMulti" style="width: 100% !important;">
+						<option value="-5">-5</option><option value="-4">-4</option><option value="-3">-3</option><option value="-2">-2</option><option value="-1">-1</option><option value="0" selected>0</option><option value="1">+1</option><option value="2">+2</option><option value="3">+3</option><option value="4">+4</option><option value="5">+5</option>
+					</select>
+				</div>
+				<div class="sheet-attackform-field" style="width: 100px;">
+					<input type="text" name="attr_StarshipWeaponRange" placeholder="S/M/L" style="width: 100% !important;">
+				</div>
+				<div class="sheet-attackform-field" style="width: 50px;">
+					<input type="text" name="attr_StarshipWeaponType" style="width: 100% !important;">
+				</div>
 			</div>
-			<div class="sheet-col"><input type="text" name="attr_StarshipWeaponRange" class="sheet-range"
-					placeholder="Weapon Range"></div>
-			<div class="sheet-col"><input type="text" name="attr_StarshipWeaponType" class="sheet-dicetype"></div>
-			<div class="sheet-col"><input type="text" name="attr_StarshipWeapondamageordinary"
-					class="sheet-dicetype"><input type="text" name="attr_StarshipWeapondamageordinarytype"
-					class="sheet-dmgtype">/<input type="text" name="attr_StarshipWeapondamagegood"
-					class="sheet-dicetype"><input type="text" name="attr_StarshipWeapondamagegoodtype"
-					class="sheet-dmgtype">/<input type="text" name="attr_StarshipWeapondamageamazing"
-					class="sheet-dicetype"><input type="text" name="attr_StarshipWeapondamageamazingtype"
-					class="sheet-dmgtype"></div>
-			<div class="sheet-col"><input type="text" name="attr_StarshipWeaponActions" class="sheet-dmgtype"></div>
+			<div class="sheet-attackform-row" style="padding-left: 34px; margin-top: 4px;">
+				<div class="sheet-attackform-field">
+					<div class="sheet-attackform-label" data-i18n="base-die">Base Die</div>
+					<select name="attr_StarshipWeaponDie" style="width: 4.5em !important;">
+						<option value="-15">-15</option><option value="-10">-10</option><option value="-5">-5</option><option value="0" selected>0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option>
+					</select>
+				</div>
+				<div class="sheet-attackform-field">
+					<div class="sheet-attackform-label" data-i18n="sit">Situation</div>
+					<select name="attr_StarshipWeaponSit" style="width: 4.5em !important;">
+						<option value="-5">-5</option><option value="0" selected>0</option><option value="5">5</option>
+					</select>
+				</div>
+				<div class="sheet-attackform-field">
+					<div class="sheet-attackform-label" data-i18n="damage-oga">Damage (O / G / A)</div>
+					<div class="sheet-triplet sheet-damage-triplet">
+						<input type="text" name="attr_StarshipWeapondamageordinary" placeholder="d4">
+						<input type="text" name="attr_StarshipWeapondamageordinarytype" class="sheet-damage-type" placeholder="s">
+						<span>/</span>
+						<input type="text" name="attr_StarshipWeapondamagegood" placeholder="d4+1">
+						<input type="text" name="attr_StarshipWeapondamagegoodtype" class="sheet-damage-type" placeholder="s">
+						<span>/</span>
+						<input type="text" name="attr_StarshipWeapondamageamazing" placeholder="d4+2">
+						<input type="text" name="attr_StarshipWeapondamageamazingtype" class="sheet-damage-type" placeholder="s">
+					</div>
+				</div>
+				<div class="sheet-attackform-field" style="width: 60px;">
+					<div class="sheet-attackform-label" data-i18n="actions">Actions</div>
+					<input type="text" name="attr_StarshipWeaponActions" style="width: 100% !important;">
+				</div>
+			</div>
 		</div>
 	</fieldset>
 

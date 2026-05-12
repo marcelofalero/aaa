@@ -11,48 +11,42 @@
 
 							<div class="sheet-broadskill" data-i18n="strength">Strength</div>
 							<div class="sheet-field-row">
-								<button type="roll" name="roll_Strength"
-									value="&{template:default} {{name= @{character_name} - Strength Feat Check}} {{score= [[@{Strength}]]/[[floor(@{Strength}/2)]]/[[floor(@{Strength}/4)]]}} {{results= [[<!-- ROLL_QUERY_DEFAULT_1 -->]]}}"></button>
+								<input type="hidden" name="attr_StrengthMacro" value=""><div class="sheet-roll-container"><button type="roll" name="roll_Strength" class="sheet-roll-skill" value="@{StrengthMacro}"></button></div>
 								<input type="number" name="attr_Strength" class="sheet-ability" value="0">
 							</div>
 							<input type="number" name="attr_StrRes" class="sheet-ability">
 
 							<div class="sheet-broadskill" data-i18n="dexterity">Dexterity</div>
 							<div class="sheet-field-row">
-								<button type="roll" name="roll_Dexterity"
-									value="&{template:default} {{name= @{character_name} - Dexterity Feat Check}} {{score= [[@{Dexterity}]]/[[floor(@{Dexterity}/2)]]/[[floor(@{Dexterity}/4)]]}} {{results= [[<!-- ROLL_QUERY_DEFAULT_1 -->]]}}"></button>
+								<input type="hidden" name="attr_DexterityMacro" value=""><div class="sheet-roll-container"><button type="roll" name="roll_Dexterity" class="sheet-roll-skill" value="@{DexterityMacro}"></button></div>
 								<input type="number" name="attr_Dexterity" class="sheet-ability" value="0">
 							</div>
 							<input type="number" name="attr_DexRes" class="sheet-ability">
 
 							<div class="sheet-broadskill" data-i18n="constitution">Constitution</div>
 							<div class="sheet-field-row">
-								<button type="roll" name="roll_Constitution"
-									value="&{template:default} {{name= @{character_name} - Constitution Feat Check}} {{score= [[@{Constitution}]]/[[floor(@{Constitution}/2)]]/[[floor(@{Constitution}/4)]]}} {{results= [[<!-- ROLL_QUERY_DEFAULT_1 -->]]}}"></button>
+								<input type="hidden" name="attr_ConstitutionMacro" value=""><div class="sheet-roll-container"><button type="roll" name="roll_Constitution" class="sheet-roll-skill" value="@{ConstitutionMacro}"></button></div>
 								<input type="number" name="attr_Constitution" class="sheet-ability" value="0">
 							</div>
 							<div style="text-align: center;">-</div>
 
 							<div class="sheet-broadskill" data-i18n="intelligence">Intelligence</div>
 							<div class="sheet-field-row">
-								<button type="roll" name="roll_Intelligence"
-									value="&{template:default} {{name= @{character_name} - Intelligence Feat Check}} {{score= [[@{Intelligence}]]/[[floor(@{Intelligence}/2)]]/[[floor(@{Intelligence}/4)]]}} {{results= [[<!-- ROLL_QUERY_DEFAULT_1 -->]]}}"></button>
+								<input type="hidden" name="attr_IntelligenceMacro" value=""><div class="sheet-roll-container"><button type="roll" name="roll_Intelligence" class="sheet-roll-skill" value="@{IntelligenceMacro}"></button></div>
 								<input type="number" name="attr_Intelligence" class="sheet-ability" value="0">
 							</div>
 							<input type="number" name="attr_IntRes" class="sheet-ability">
 
 							<div class="sheet-broadskill" data-i18n="will">Will</div>
 							<div class="sheet-field-row">
-								<button type="roll" name="roll_Will"
-									value="&{template:default} {{name= @{character_name} - Will Feat Check}} {{score= [[@{Will}]]/[[floor(@{Will}/2)]]/[[floor(@{Will}/4)]]}} {{results= [[<!-- ROLL_QUERY_DEFAULT_1 -->]]}}"></button>
+								<input type="hidden" name="attr_WillMacro" value=""><div class="sheet-roll-container"><button type="roll" name="roll_Will" class="sheet-roll-skill" value="@{WillMacro}"></button></div>
 								<input type="number" name="attr_Will" class="sheet-ability" value="0">
 							</div>
 							<input type="number" name="attr_WillRes" class="sheet-ability">
 
 							<div class="sheet-broadskill" data-i18n="personality">Personality</div>
 							<div class="sheet-field-row">
-								<button type="roll" name="roll_Personality"
-									value="&{template:default} {{name= @{character_name} - Personality Feat Check}} {{score= [[@{Personality}]]/[[floor(@{Personality}/2)]]/[[floor(@{Personality}/4)]]}} {{results= [[<!-- ROLL_QUERY_DEFAULT_1 -->]]}}"></button>
+								<input type="hidden" name="attr_PersonalityMacro" value=""><div class="sheet-roll-container"><button type="roll" name="roll_Personality" class="sheet-roll-skill" value="@{PersonalityMacro}"></button></div>
 								<input type="number" name="attr_Personality" class="sheet-ability" value="0">
 							</div>
 							<div style="text-align: center;">-</div>
@@ -143,8 +137,7 @@
 								<div class="sheet-field-row" style="gap: 5px; align-items: center;">
 									<input type="text" name="attr_ActionCheckA" disabled="true" class="sheet-ability"
 										style="width: 4em !important;" value="(floor(@{ActionCheck}/4))">
-									<button type="roll"
-										value="&{template:default} {{name=@{character_name} - Action Check}} {{score= [[@{ActionCheckM}]]+/[[@{ActionCheck}]]/[[@{ActionCheckG}]]/[[@{ActionCheckA}]]}} {{result= [[1d20cs<1cf>20+@{ActionDie}cs<0cf<0]]}}"></button>
+									<input type="hidden" name="attr_ActionCheckMacro" value=""><div class="sheet-roll-container"><button type="roll" name="roll_ActionCheck" class="sheet-roll-skill" value="@{ActionCheckMacro}"></button></div>
 								</div>
 							</div>
 
@@ -254,10 +247,24 @@
 				<div class="sheet-attackform-container">
 					<!-- Row 1: Name, Type, Range, Notes -->
 					<div class="sheet-attackform-row">
-						<button type="roll" name="roll_attackform"
-							value="&{template:default} {{name= @{character_name} - @{attackformname}}} {{score= [[@{attackformscore}]]/[[@{attackformscoregood}]]/[[@{attackformscoreamazing}]]}} {{type= @{attackformtype}}} {{range= @{attackformrange}}} {{damage= [[@{attackformdamageordinary}]]@{attackformdamageordinarytype}/[[@{attackformdamagegood}]]@{attackformdamagegoodtype}/[[@{attackformdamageamazing}]]@{attackformdamageamazingtype}}} {{notes= @{attackformnotes}}} {{results= [[1d20cs<1cf>20 @{attackformstepdie}]]}}"></button>
+						<div class="sheet-attackform-buttons">
+							<button type="roll" name="roll_attackform1" value="@{attackformmacro1}">Single</button>
+							<button type="roll" name="roll_attackformdamageord"
+								value="!script {{ --#title|@{character_name} - @{attackformname} --#titlecardbackground|#1e293b --#titlecardfontcolor|#ffffff --#commandcardborder|1px solid #1e293b --#commandcardboxshadow|0 2px 5px rgba(0,0,0,0.2) --#titlecardstyle|border-radius: 4px 4px 0 0; padding: 6px 10px; --#bodycardstyle|border-top: none; border-radius: 0 0 4px 4px; --#bodyfontsize|12px --#oddrowbackground|#111827 --#evenrowbackground|#030712 --#oddrowfontcolor|#f9fafb --#evenrowfontcolor|#f9fafb --=dmg|@{attackformdamageordinary} --+Ordinary Damage (@{attackformdamageordinary})|**[$dmg]** @{attackformdamageordinarytype} }}">Ordinary</button>
+							
+							<button type="roll" name="roll_attackform2" value="@{attackformmacro2}">Double</button>
+							<button type="roll" name="roll_attackformdamagegoo"
+								value="!script {{ --#title|@{character_name} - @{attackformname} --#titlecardbackground|#1e293b --#titlecardfontcolor|#ffffff --#commandcardborder|1px solid #1e293b --#commandcardboxshadow|0 2px 5px rgba(0,0,0,0.2) --#titlecardstyle|border-radius: 4px 4px 0 0; padding: 6px 10px; --#bodycardstyle|border-top: none; border-radius: 0 0 4px 4px; --#bodyfontsize|12px --#oddrowbackground|#111827 --#evenrowbackground|#030712 --#oddrowfontcolor|#f9fafb --#evenrowfontcolor|#f9fafb --=dmg|@{attackformdamagegood} --+Good Damage (@{attackformdamagegood})|**[$dmg]** @{attackformdamagegoodtype} }}">Good</button>
+							
+							<button type="roll" name="roll_attackform3" value="@{attackformmacro3}">Auto</button>
+							<button type="roll" name="roll_attackformdamageama"
+								value="!script {{ --#title|@{character_name} - @{attackformname} --#titlecardbackground|#1e293b --#titlecardfontcolor|#ffffff --#commandcardborder|1px solid #1e293b --#commandcardboxshadow|0 2px 5px rgba(0,0,0,0.2) --#titlecardstyle|border-radius: 4px 4px 0 0; padding: 6px 10px; --#bodycardstyle|border-top: none; border-radius: 0 0 4px 4px; --#bodyfontsize|12px --#oddrowbackground|#111827 --#evenrowbackground|#030712 --#oddrowfontcolor|#f9fafb --#evenrowfontcolor|#f9fafb --=dmg|@{attackformdamageamazing} --+Amazing Damage (@{attackformdamageamazing})|**[$dmg]** @{attackformdamageamazingtype} }}">Amazing</button>
+						</div>
 
 						<input type="hidden" name="attr_attackformstepdie" value="+0">
+						<input type="hidden" name="attr_attackformmacro1" value="">
+						<input type="hidden" name="attr_attackformmacro2" value="">
+						<input type="hidden" name="attr_attackformmacro3" value="">
 						<input type="hidden" name="attr_attackformwarning" value="">
 
 						<div class="sheet-attackform-field" style="flex: 6; min-width: 200px;">
@@ -409,6 +416,9 @@
 								<option value="15">15</option>
 							</select>
 						</div>
+						
+
+
 
 
 
@@ -433,6 +443,7 @@
 			<div class="sheet-skilltitle sheet-row" style="margin-top: 25px; margin-bottom: 4px;"
 				data-i18n="weapon-data">WEAPON DATA</div>
 			<div class="sheet-header-weapons">
+				<div></div>
 				<div data-i18n="weapon">Weapon</div>
 				<div data-i18n="acc" style="text-align: center;">Acc</div>
 				<div data-i18n="actions" style="text-align: center;">Actions</div>
@@ -442,6 +453,7 @@
 			</div>
 			<fieldset class="repeating_weapons">
 				<div class="sheet-grid-weapon-row">
+					<button type="roll" name="roll_weapon" value="&{template:default} {{name=@{character_name} - @{weaponname}}} {{Accuracy=[[@{weaponaccuracy}]]}} {{Actions=@{weaponactions}}}"></button>
 					<input type="text" name="attr_weaponname" class="sheet-weapon-name" data-i18n-placeholder="weapon-name-placeholder" placeholder="Weapon Name">
 					<input type="number" name="attr_weaponaccuracy" value="0">
 					<input type="text" name="attr_weaponactions">
@@ -521,4 +533,85 @@
 				</div>
 			</div>
 		</div>
+	</div>
+
+	<rolltemplate class="sheet-rolltemplate-alternity-attack">
+		<div class="sheet-template-container">
+			<div class="sheet-template-header">
+				<span class="sheet-template-title">{{name}}</span>
+				{{#dicepool}}<span class="sheet-template-control">Control: {{dicepool}}</span>{{/dicepool}}
+			</div>
+			{{#type}}<div class="sheet-template-row"><span>Type:</span> {{type}}</div>{{/type}}
+			{{#range}}<div class="sheet-template-row"><span>Range:</span> {{range}}</div>{{/range}}
+			
+			<div class="sheet-template-body">
+				{{#attack1}}
+				<div class="sheet-template-attack-row">
+					<span class="sheet-template-label">Att. 1 {{scores1}}:</span> 
+					<span class="sheet-template-result">{{attack1}}</span>
+					
+					<div class="sheet-template-action">
+						{{#rollBetween() attack1 1 amazing1}}
+							<span class="sheet-template-hit-ama">[Dmg](~repeating_attackforms_{{rowid}}_attackformdamageama)</span>
+						{{/rollBetween()}}
+						{{#rollBetween() attack1 amazing1_p1 good1}}
+							<span class="sheet-template-hit-goo">[Dmg](~repeating_attackforms_{{rowid}}_attackformdamagegoo)</span>
+						{{/rollBetween()}}
+						{{#rollBetween() attack1 good1_p1 ordinary1}}
+							<span class="sheet-template-hit-ord">[Dmg](~repeating_attackforms_{{rowid}}_attackformdamageord)</span>
+						{{/rollBetween()}}
+						{{#rollGreater() attack1 ordinary1}}
+							<span class="sheet-template-miss">(Miss)</span>
+						{{/rollGreater()}}
+					</div>
+				</div>
+				{{/attack1}}
+
+				{{#attack2}}
+				<div class="sheet-template-attack-row">
+					<span class="sheet-template-label">Att. 2 {{scores2}}:</span> 
+					<span class="sheet-template-result">{{attack2}}</span>
+					
+					<div class="sheet-template-action">
+						{{#rollBetween() attack2 1 amazing2}}
+							<span class="sheet-template-hit-ama">[Dmg](~repeating_attackforms_{{rowid}}_attackformdamageama)</span>
+						{{/rollBetween()}}
+						{{#rollBetween() attack2 amazing2_p1 good2}}
+							<span class="sheet-template-hit-goo">[Dmg](~repeating_attackforms_{{rowid}}_attackformdamagegoo)</span>
+						{{/rollBetween()}}
+						{{#rollBetween() attack2 good2_p1 ordinary2}}
+							<span class="sheet-template-hit-ord">[Dmg](~repeating_attackforms_{{rowid}}_attackformdamageord)</span>
+						{{/rollBetween()}}
+						{{#rollGreater() attack2 ordinary2}}
+							<span class="sheet-template-miss">(Miss)</span>
+						{{/rollGreater()}}
+					</div>
+				</div>
+				{{/attack2}}
+
+				{{#attack3}}
+				<div class="sheet-template-attack-row">
+					<span class="sheet-template-label">Att. 3 {{scores3}}:</span> 
+					<span class="sheet-template-result">{{attack3}}</span>
+					
+					<div class="sheet-template-action">
+						{{#rollBetween() attack3 1 amazing3}}
+							<span class="sheet-template-hit-ama">[Dmg](~repeating_attackforms_{{rowid}}_attackformdamageama)</span>
+						{{/rollBetween()}}
+						{{#rollBetween() attack3 amazing3_p1 good3}}
+							<span class="sheet-template-hit-goo">[Dmg](~repeating_attackforms_{{rowid}}_attackformdamagegoo)</span>
+						{{/rollBetween()}}
+						{{#rollBetween() attack3 good3_p1 ordinary3}}
+							<span class="sheet-template-hit-ord">[Dmg](~repeating_attackforms_{{rowid}}_attackformdamageord)</span>
+						{{/rollBetween()}}
+						{{#rollGreater() attack3 ordinary3}}
+							<span class="sheet-template-miss">(Miss)</span>
+						{{/rollGreater()}}
+					</div>
+				</div>
+				{{/attack3}}
+			</div>
+
+			{{#notes}}<div class="sheet-template-notes"><span>Notes:</span> {{notes}}</div>{{/notes}}
 		</div>
+	</rolltemplate>

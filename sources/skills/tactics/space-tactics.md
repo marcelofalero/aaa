@@ -1,5 +1,5 @@
 ---
-attribute: WIL
+attribute: INT
 cost: 3
 url: /skills/tactics#space-tactics
 trained_only: false
