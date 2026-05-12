@@ -33,7 +33,7 @@ Police officers, detectives, bounty hunters, and others use this skill to follow
 ---
 
 ## Law, specific skill
-{{< specialty attr="WIL" untrained="no" cost="2" >}}
+{{< specialty attr="INT" untrained="no" cost="2" >}}
 
 For each separate purchase of this specialty, a character selects a specific culture or a specific type of law (maritime law, salvage law, etc.). As the specialty skill is improved, the character gains a progressively stronger grasp on the laws and legal systems of that culture or specialty.
 
@@ -47,7 +47,7 @@ For each separate purchase of this specialty, a character selects a specific cul
 ---
 
 ## Psionics
-{{< specialty attr="WIL" untrained="no" cost="3" >}}
+{{< specialty attr="INT" untrained="no" cost="3" >}}
 
 Lawyers, judges, and others use this skill to interact in courtrooms and in legislative meetings. This aspect of the Law broad skill is used to argue a case or a point of view in an official proceeding involving psionic laws, rights, and regulations.
 

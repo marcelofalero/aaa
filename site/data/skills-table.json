@@ -958,7 +958,7 @@
                         },
                         {
                             "skill": "Law, specific skill",
-                            "attribute": "WIL",
+                            "attribute": "INT",
                             "url": "/skills/law#law-specific-skill",
                             "cost": 2,
                             "type": "Specialty",
@@ -966,7 +966,7 @@
                         },
                         {
                             "skill": "Psionics",
-                            "attribute": "WIL",
+                            "attribute": "INT",
                             "url": "/skills/law#psionics",
                             "cost": 3,
                             "type": "Specialty",

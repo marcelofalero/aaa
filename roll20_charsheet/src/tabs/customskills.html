@@ -9,8 +9,8 @@
 			</div>
 			<fieldset class="repeating_customskills">
 				<div class="sheet-row">
-					<div class="sheet-col" style="width:185px;"><button type="roll" name="roll_CustomSkill"
-							value="&{template:default} {{name= @{character_name} - @{SkillName}}} {{score= [[@{SkillO}]]/[[@{SkillG}]]/[[@{SkillA}]]}} {{results= [[<!-- ROLL_QUERY_DEFAULT_0 -->]]}} "></button><input
+					<div class="sheet-col" style="width:185px;"><input type="hidden" name="attr_SkillMacro" value=""><div class="sheet-roll-container"><button type="roll" name="roll_CustomSkill" class="sheet-roll-skill"
+							value="@{SkillMacro}"></button></div><input
 							type="text" name="attr_SkillName" placeholder="Enter Skill"></div>
 					<div class="sheet-col" style="height: 2em;">
 						<select name="attr_SkillAbility" class="sheet-range">

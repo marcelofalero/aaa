@@ -93,3 +93,31 @@
 		{{#notes}}<div class="sheet-template-notes"><span>Notes:</span> {{notes}}</div>{{/notes}}
 	</div>
 </rolltemplate>
+
+<rolltemplate class="sheet-rolltemplate-alternity-skill">
+	<div class="sheet-template-container">
+		<div class="sheet-template-header">
+			<span class="sheet-template-title">{{name}}</span>
+		</div>
+		<div class="sheet-template-body">
+			<div class="sheet-template-row">
+				<span class="sheet-template-label">Target:</span> 
+				<span class="sheet-template-score">{{score}}</span>
+			</div>
+			<div class="sheet-template-row">
+				<span class="sheet-template-label">Result:</span> 
+				<span class="sheet-template-result">{{results}}</span>
+			</div>
+			{{#untrained}}
+			<div class="sheet-template-untrained">
+				<span class="sheet-info-icon">!</span> Untrained Penalty
+			</div>
+			{{/untrained}}
+		</div>
+		{{#wiki}}
+		<div class="sheet-template-footer">
+			{{wiki}}
+		</div>
+		{{/wiki}}
+	</div>
+</rolltemplate>

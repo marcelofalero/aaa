@@ -648,7 +648,7 @@ fieldset.sheet-section-skills {
 
 .sheet-skill-header-row {
     display: grid !important;
-    grid-template-columns: 24px 1fr 34px 38px 7em !important;
+    grid-template-columns: 24px 1fr 34px 38px 7.5em !important;
     width: 100% !important;
     padding: 2px 4px !important;
     margin: 0 !important;
@@ -696,10 +696,39 @@ fieldset.sheet-section-skills {
 
 .sheet-skill-row {
     display: grid;
-    grid-template-columns: 24px 1fr 34px 38px 7em;
+    grid-template-columns: 24px 1fr 34px 38px 7.5em;
     align-items: center;
     padding: 2px 4px;
     border-bottom: 1px solid rgba(30, 41, 59, 0.5);
+    gap: 4px;
+}
+
+.sheet-roll-container {
+    grid-column: 1;
+}
+
+.sheet-skill-name {
+    grid-column: 2;
+}
+
+.sheet-skill-ability-label {
+    grid-column: 3;
+}
+
+/* Checkbox (Broad) and Rank (Spec) both occupy col 4 */
+.sheet-trained-check {
+    grid-column: 4;
+    width: 20px;
+    height: 20px;
+    margin: 0 auto !important;
+}
+
+.sheet-skill-row.sheet-spec input[type="number"] {
+    grid-column: 4;
+}
+
+.sheet-skill-score-cell {
+    grid-column: 5;
 }
 
 .sheet-skill-row.sheet-spec {
@@ -726,6 +755,12 @@ fieldset.sheet-section-skills {
     color: var(--color-accent-teal);
     text-align: center;
     text-transform: uppercase;
+}
+
+.sheet-skill-rank-placeholder,
+.sheet-skill-rank-box-placeholder {
+    grid-column: 4;
+    width: 38px;
 }
 
 .sheet-skill-header-row .sheet-skill-name {
@@ -1036,24 +1071,40 @@ button[type="roll"]:hover {
     grid-column: 1;
 }
 
-/* Toggle Logic */
-.sheet-trained-check:checked ~ .sheet-roll-container .sheet-roll-untrained,
-.sheet-trained-check:not(:checked) ~ .sheet-roll-container .sheet-roll-trained {
-    display: none;
-}
-
-/* Visual feedback for untrained buttons */
-.sheet-roll-untrained {
-    color: var(--color-text-dim) !important;
-    opacity: 0.6;
-}
-
-.sheet-roll-untrained:hover {
-    opacity: 1;
+/* Toggle Logic for Unified Skill Button */
+.sheet-trained-check:checked ~ .sheet-roll-container .sheet-roll-skill {
     color: var(--color-accent-teal) !important;
+    opacity: 1;
+    filter: drop-shadow(0 0 2px rgba(0, 210, 223, 0.3));
 }
 
-/* Trained Only Warning */
+.sheet-trained-check:not(:checked) ~ .sheet-roll-container .sheet-roll-skill {
+    color: var(--color-text-dim) !important;
+    opacity: 0.5;
+}
+
+.sheet-roll-skill:hover {
+    transform: translate(-50%, -50%) scale(1.2) !important;
+    opacity: 1 !important;
+    filter: drop-shadow(0 0 5px var(--color-accent-teal));
+}
+
+.sheet-trained-check:checked ~ .sheet-roll-container .sheet-roll-skill:hover {
+    color: var(--color-accent-yellow) !important;
+    filter: drop-shadow(0 0 5px var(--color-accent-yellow));
+}
+
+/* Trained Only Warning (used in Workers) */
+.sheet-trained-only-msg {
+    color: #ef4444 !important; /* Red */
+}
+
+/* Highlight skill name when trained */
+.sheet-trained-check:checked ~ .sheet-skill-name {
+    color: #38bdf8 !important; /* Light blue accent */
+    font-weight: 600;
+}
+
 .sheet-trained-only-msg {
     color: #ef4444 !important; /* Red */
 }
@@ -2117,5 +2168,132 @@ fieldset.repeating_weapons {
     border-radius: 3px;
     border: 1px solid #eab308;
     box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+    font-size: 1em;
 }
 
+.sheet-rolltemplate-alternity-damage .inlinerollresult {
+    background-color: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+    font-size: 1em !important;
+    font-weight: 700 !important;
+}
+
+
+/* ===== ALTERNITY SKILL ROLL TEMPLATE ===== */
+.sheet-rolltemplate-alternity-skill .sheet-template-container {
+    border: 2px solid #334155;
+    background-color: #0f172a; /* Dark background */
+    border-radius: 6px;
+    overflow: hidden;
+    font-family: "Inter", "Segoe UI", Roboto, sans-serif;
+    color: #f8fafc; /* Light text */
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+    max-width: 280px;
+}
+
+.sheet-rolltemplate-alternity-skill .sheet-template-container {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    border: 1px solid #334155;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.1);
+    font-family: "Inter", "Roboto", sans-serif;
+    color: #f1f5f9;
+}
+
+.sheet-rolltemplate-alternity-skill .sheet-template-header {
+    background: rgba(15, 23, 42, 0.8);
+    backdrop-filter: blur(4px);
+    color: #38bdf8; /* Light Sky Blue */
+    padding: 8px 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.75em; /* Reduced from 0.9em */
+    letter-spacing: 0.05em;
+    border-bottom: 1px solid rgba(51, 65, 85, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sheet-rolltemplate-alternity-skill .sheet-template-body {
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.sheet-rolltemplate-alternity-skill .sheet-template-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 10px;
+    font-size: 0.95em;
+    border-radius: 6px;
+    background-color: rgba(30, 41, 59, 0.4);
+    border: 1px solid rgba(51, 65, 85, 0.3);
+}
+
+.sheet-rolltemplate-alternity-skill .sheet-template-row span:first-child {
+    font-weight: 700;
+    color: #94a3b8;
+    font-size: 0.75em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.sheet-rolltemplate-alternity-skill .sheet-template-result {
+    font-family: "Share Tech Mono", "Courier New", monospace;
+    font-weight: 700;
+    color: #ffffff;
+    background: #020617;
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-size: 1em; /* Reduced from 1.2em to match targets */
+    box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.8);
+    border: 1px solid #334155;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+}
+
+/* Force same font size and style for all inline rolls (Ordinary/Good/Amazing) */
+.sheet-rolltemplate-alternity-skill .inlinerollresult {
+    background-color: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+    font-size: 1em !important;
+    font-weight: 700 !important;
+    color: #ffffff !important;
+}
+
+.sheet-rolltemplate-alternity-skill .sheet-template-untrained {
+    background-color: rgba(245, 158, 11, 0.1);
+    color: #fbbf24;
+    padding: 6px 10px;
+    border-radius: 4px;
+    font-size: 0.8em;
+    font-weight: 600;
+    text-align: center;
+    border: 1px dashed rgba(245, 158, 11, 0.3);
+    margin-top: 4px;
+}
+
+.sheet-rolltemplate-alternity-skill .sheet-template-footer {
+    padding: 8px 12px;
+    background: rgba(15, 23, 42, 0.5);
+    font-size: 0.75em;
+    border-top: 1px solid rgba(51, 65, 85, 0.5);
+    text-align: right;
+}
+
+.sheet-rolltemplate-alternity-skill .sheet-template-footer a {
+    color: #38bdf8;
+    text-decoration: none;
+    font-weight: 700;
+    transition: color 0.2s, text-shadow 0.2s;
+}
+
+.sheet-rolltemplate-alternity-skill .sheet-template-footer a:hover {
+    color: #7dd3fc;
+    text-shadow: 0 0 5px rgba(56, 189, 248, 0.5);
+}

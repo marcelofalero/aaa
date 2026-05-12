@@ -50,8 +50,8 @@
 			<div class="sheet-col sheet-broadskill sheet-12emwidth">Skill Score</div>
 		</div>
 		<div class="sheet-row">
-			<div class="sheet-col sheet-broadskill sheet-12emwidth"><button type="roll" name="roll_CommandStation"
-					value="&{template:default} {{name= @{character_name} - Command Station}} {{Operator=@{CommandStationOperator}}} {{Operator's Score= [[@{CommandStationO}]]/[[@{CommandStationG}]]/[[@{CommandStationA}]]}} {{results= [[<!-- ROLL_QUERY_DEFAULT_1 -->]]}} "></button>Command
+			<div class="sheet-col sheet-broadskill sheet-12emwidth"><input type="hidden" name="attr_CommandStationMacro" value=""><div class="sheet-roll-container"><button type="roll" name="roll_CommandStation" class="sheet-roll-skill"
+					value="@{CommandStationMacro}"></button></div>Command
 			</div>
 			<div class="sheet-col sheet-broadskill sheet-12emwidth"><input type="text"
 					name="attr_CommandStationLocation"></div>
@@ -66,8 +66,8 @@
 					value="(floor(@{CommandStationO}/4))"></div>
 		</div>
 		<div class="sheet-row">
-			<div class="sheet-col sheet-broadskill sheet-12emwidth"><button type="roll" name="roll_PilotStation"
-					value="&{template:default} {{name= @{character_name} - Pilot Station}} {{Operator=@{PilotStationOperator}}} {{Operator's Score= [[@{PilotStationO}]]/[[@{PilotStationG}]]/[[@{PilotStationA}]]}} {{results= [[<!-- ROLL_QUERY_DEFAULT_1 -->]]}} "></button>Pilot
+			<div class="sheet-col sheet-broadskill sheet-12emwidth"><input type="hidden" name="attr_PilotStationMacro" value=""><div class="sheet-roll-container"><button type="roll" name="roll_PilotStation" class="sheet-roll-skill"
+					value="@{PilotStationMacro}"></button></div>Pilot
 			</div>
 			<div class="sheet-col sheet-broadskill sheet-12emwidth"><input type="text" name="attr_PilotStationLocation">
 			</div>
@@ -82,8 +82,8 @@
 					value="(floor(@{PilotStationO}/4))"></div>
 		</div>
 		<div class="sheet-row">
-			<div class="sheet-col sheet-broadskill sheet-12emwidth"><button type="roll" name="roll_CopilotStation"
-					value="&{template:default} {{name= @{character_name} - Copilot Station}} {{Operator=@{CopilotStationOperator}}} {{Operator's Score= [[@{CopilotStationO}]]/[[@{CopilotStationG}]]/[[@{CopilotStationA}]]}} {{results= [[<!-- ROLL_QUERY_DEFAULT_1 -->]]}} "></button>Copilot
+			<div class="sheet-col sheet-broadskill sheet-12emwidth"><input type="hidden" name="attr_CopilotStationMacro" value=""><div class="sheet-roll-container"><button type="roll" name="roll_CopilotStation" class="sheet-roll-skill"
+					value="@{CopilotStationMacro}"></button></div>Copilot
 			</div>
 			<div class="sheet-col sheet-broadskill sheet-12emwidth"><input type="text"
 					name="attr_CopilotStationLocation"></div>
@@ -98,8 +98,8 @@
 					value="(floor(@{CopilotStationO}/4))"></div>
 		</div>
 		<div class="sheet-row">
-			<div class="sheet-col sheet-broadskill sheet-12emwidth"><button type="roll" name="roll_CommunicationStation"
-					value="&{template:default} {{name= @{character_name} - Communications Station}} {{Operator=@{CommunicationStationOperator}}} {{Operator's Score= [[@{CommunicationStationO}]]/[[@{CommunicationStationG}]]/[[@{CommunicationStationA}]]}} {{results= [[<!-- ROLL_QUERY_DEFAULT_1 -->]]}} "></button>Communications
+			<div class="sheet-col sheet-broadskill sheet-12emwidth"><input type="hidden" name="attr_CommunicationStationMacro" value=""><div class="sheet-roll-container"><button type="roll" name="roll_CommunicationStation" class="sheet-roll-skill"
+					value="@{CommunicationStationMacro}"></button></div>Communications
 			</div>
 			<div class="sheet-col sheet-broadskill sheet-12emwidth"><input type="text"
 					name="attr_CommunicationStationLocation"></div>
@@ -114,8 +114,8 @@
 					class="sheet-scoredisabled" disabled="true" value="(floor(@{CommunicationStationO}/4))"></div>
 		</div>
 		<div class="sheet-row">
-			<div class="sheet-col sheet-broadskill sheet-12emwidth"><button type="roll" name="roll_DamageControl"
-					value="&{template:default} {{name= @{character_name} - Damage Control}} {{Operator=@{DamageControlOperator}}} {{Operator's Score= [[@{DamageControlO}]]/[[@{DamageControlG}]]/[[@{DamageControlA}]]}} {{results= [[<!-- ROLL_QUERY_DEFAULT_1 -->]]}} "></button>Damage
+			<div class="sheet-col sheet-broadskill sheet-12emwidth"><input type="hidden" name="attr_DamageControlMacro" value=""><div class="sheet-roll-container"><button type="roll" name="roll_DamageControl" class="sheet-roll-skill"
+					value="@{DamageControlMacro}"></button></div>Damage
 				Control</div>
 			<div class="sheet-col sheet-broadskill sheet-12emwidth">N/A</div>
 			<div class="sheet-col sheet-broadskill sheet-12emwidth"><input type="text"
@@ -129,8 +129,8 @@
 					value="(floor(@{DamageControlO}/4))"></div>
 		</div>
 		<div class="sheet-row">
-			<div class="sheet-col sheet-broadskill sheet-12emwidth"><button type="roll" name="roll_DefenseStation"
-					value="&{template:default} {{name= @{character_name} - Defense Station}} {{Operator=@{DefenseStationOperator}}} {{Operator's Score= [[@{DefenseStationO}]]/[[@{DefenseStationG}]]/[[@{DefenseStationA}]]}} {{results= [[<!-- ROLL_QUERY_DEFAULT_1 -->]]}} "></button>Defenses
+			<div class="sheet-col sheet-broadskill sheet-12emwidth"><input type="hidden" name="attr_DefenseStationMacro" value=""><div class="sheet-roll-container"><button type="roll" name="roll_DefenseStation" class="sheet-roll-skill"
+					value="@{DefenseStationMacro}"></button></div>Defenses
 			</div>
 			<div class="sheet-col sheet-broadskill sheet-12emwidth"><input type="text"
 					name="attr_DefenseStationLocation"></div>
@@ -145,8 +145,8 @@
 					value="(floor(@{DefenseStationO}/4))"></div>
 		</div>
 		<div class="sheet-row">
-			<div class="sheet-col sheet-broadskill sheet-12emwidth"><button type="roll" name="roll_EngineeringStation"
-					value="&{template:default} {{name= @{character_name} - Engineering Station}} {{Operator=@{EngineeringStationOperator}}} {{Operator's Score= [[@{EngineeringStationO}]]/[[@{EngineeringStationG}]]/[[@{EngineeringStationA}]]}} {{results= [[<!-- ROLL_QUERY_DEFAULT_1 -->]]}} "></button>Engineering
+			<div class="sheet-col sheet-broadskill sheet-12emwidth"><input type="hidden" name="attr_EngineeringStationMacro" value=""><div class="sheet-roll-container"><button type="roll" name="roll_EngineeringStation" class="sheet-roll-skill"
+					value="@{EngineeringStationMacro}"></button></div>Engineering
 			</div>
 			<div class="sheet-col sheet-broadskill sheet-12emwidth"><input type="text"
 					name="attr_EngineeringStationLocation"></div>
@@ -161,8 +161,8 @@
 					value="(floor(@{EngineeringStationO}/4))"></div>
 		</div>
 		<div class="sheet-row">
-			<div class="sheet-col sheet-broadskill sheet-12emwidth"><button type="roll" name="roll_SensorStation"
-					value="&{template:default} {{name= @{character_name} - Sensor Station}} {{Operator=@{SensorStationOperator}}} {{Operator's Score= [[@{SensorStationO}]]/[[@{SensorStationG}]]/[[@{SensorStationA}]]}} {{results= [[<!-- ROLL_QUERY_DEFAULT_1 -->]]}} "></button>Sensors
+			<div class="sheet-col sheet-broadskill sheet-12emwidth"><input type="hidden" name="attr_SensorStationMacro" value=""><div class="sheet-roll-container"><button type="roll" name="roll_SensorStation" class="sheet-roll-skill"
+					value="@{SensorStationMacro}"></button></div>Sensors
 			</div>
 			<div class="sheet-col sheet-broadskill sheet-12emwidth"><input type="text"
 					name="attr_SensorStationLocation"></div>
@@ -177,8 +177,8 @@
 					value="(floor(@{SensorStationO}/4))"></div>
 		</div>
 		<div class="sheet-row">
-			<div class="sheet-col sheet-broadskill sheet-12emwidth"><button type="roll" name="roll_WeaponStation"
-					value="&{template:default} {{name= @{character_name} - Weapons Station}} {{Operator=@{WeaponStationOperator}}} {{Operator's Score= [[@{WeaponStationO}]]/[[@{WeaponStationG}]]/[[@{WeaponStationA}]]}} {{results= [[<!-- ROLL_QUERY_DEFAULT_1 -->]]}} "></button>Weapons
+			<div class="sheet-col sheet-broadskill sheet-12emwidth"><input type="hidden" name="attr_WeaponStationMacro" value=""><div class="sheet-roll-container"><button type="roll" name="roll_WeaponStation" class="sheet-roll-skill"
+					value="@{WeaponStationMacro}"></button></div>Weapons
 			</div>
 			<div class="sheet-col sheet-broadskill sheet-12emwidth"><input type="text"
 					name="attr_WeaponStationLocation"></div>

@@ -33,7 +33,7 @@ Los agentes de policía, detectives, cazarrecompensas y otros utilizan esta habi
 ---
 
 ## Ley, habilidad específica
-{{< specialty attr="WIL" untrained="no" cost="2" >}}
+{{< specialty attr="INT" untrained="no" cost="2" >}}
 
 Para cada compra por separado de esta especialidad, un Personaje selecciona un Cultura específico o un tipo de ley específico (derecho marítimo, derecho de salvamento, etc.). A medida que se mejora el Especialidad, el Personaje adquiere progresivamente una mayor comprensión de las leyes y sistemas legales de ese Cultura o especialidad.
 
@@ -47,7 +47,7 @@ Para cada compra por separado de esta especialidad, un Personaje selecciona un C
 ---
 
 ## Psiónica
-{{< specialty attr="WIL" untrained="no" cost="3" >}}
+{{< specialty attr="INT" untrained="no" cost="3" >}}
 
 Los abogados, jueces y otras personas utilizan esta habilidad para interactuar en los tribunales y en las reuniones legislativas. Este aspecto de la habilidad amplia de la Ley se utiliza para argumentar un caso o un punto de vista en un procedimiento oficial que involucra leyes, derechos y regulaciones psiónicas.
 

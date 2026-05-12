@@ -98,16 +98,91 @@ attributes.forEach(attr => {
     });
 });
 
-on("change:actioncheck", function() {
-    getAttrs(["ActionCheck"], function(v) {
+on("change:actioncheck change:actiondie sheet:opened", function() {
+    getAttrs(["ActionCheck", "ActionDie", "character_name"], function(v) {
         let val = parseInt(v.ActionCheck) || 0;
+        let die = v.ActionDie || "d0";
+        let scores = `${val + 1}+ / ${val} / ${Math.floor(val / 2)} / ${Math.floor(val / 4)}`;
+        let results = `[[1d20cs<1cf>20+${die}cs<0cf<0]]`;
+        let macro = `&{template:alternity-skill} {{name=Action Check}} {{score=${scores}}} {{results=${results}}}`;
+        
         setAttrs({
             "ActionCheckM": val + 1,
             "ActionCheckG": Math.floor(val / 2),
-            "ActionCheckA": Math.floor(val / 4)
+            "ActionCheckA": Math.floor(val / 4),
+            "ActionCheckMacro": macro
         });
     });
 });
+
+/* ===== CUSTOM SKILL ROLL WORKER ===== */
+function updateCustomSkillMacro(id) {
+    const prefix = `repeating_customskills_${id}_`;
+    getAttrs([prefix + 'SkillName', prefix + 'SkillO', prefix + 'SkillG', prefix + 'SkillA', 'character_name'], function(v) {
+        const name = v[prefix + 'SkillName'] || "Custom Skill";
+        const scores = `[[@{${prefix}SkillO}]] / [[@{${prefix}SkillG}]] / [[@{${prefix}SkillA}]]`;
+        const query = getAlternityRollQuery(0);
+        const macro = `&{template:alternity-skill} {{name=${name}}} {{score=${scores}}} {{results=[[${query}]]}}`;
+        const update = {};
+        update[prefix + 'SkillMacro'] = macro;
+        setAttrs(update, {silent: true});
+    });
+}
+
+on('change:repeating_customskills:skillname change:repeating_customskills:skillrank change:repeating_customskills:broadskillknown change:repeating_customskills:skillability', function(event) {
+    updateCustomSkillMacro(event.sourceAttribute.split('_')[2]);
+});
+
+/* ===== STARSHIP STATION ROLL WORKER ===== */
+function updateStationMacro(station) {
+    const attrO = station + 'O';
+    const attrG = station + 'G';
+    const attrA = station + 'A';
+    const attrOp = station + 'Operator';
+    
+    getAttrs([attrO, attrG, attrA, attrOp, 'character_name'], function(v) {
+        let displayName = station.replace('Station', '');
+        if (displayName === 'DamageControl') displayName = 'Damage Control';
+        if (displayName === 'Communication') displayName = 'Communications';
+        
+        const operator = v[attrOp] ? ` (${v[attrOp]})` : "";
+        const scores = `[[@{${attrO}}]] / [[@{${attrG}}]] / [[@{${attrA}}]]`;
+        const query = getAlternityRollQuery(0);
+        const macro = `&{template:alternity-skill} {{name=${displayName}${operator}}} {{score=${scores}}} {{results=[[${query}]]}}`;
+        const update = {};
+        update[station + 'Macro'] = macro;
+        setAttrs(update, {silent: true});
+    });
+}
+
+const stations = ['CommandStation', 'PilotStation', 'CopilotStation', 'CommunicationStation', 'DamageControl', 'DefenseStation', 'EngineeringStation', 'SensorStation', 'WeaponStation'];
+stations.forEach(station => {
+    on(`change:${station.toLowerCase()}o change:${station.toLowerCase()}operator sheet:opened`, function() {
+        updateStationMacro(station);
+    });
+});
+
+/* ===== ATTRIBUTE ROLL WORKERS ===== */
+function updateAttributeMacro(attr) {
+    getAttrs([attr, 'character_name'], function(v) {
+        const score = parseInt(v[attr]) || 0;
+        const scores = `${score} / ${Math.floor(score/2)} / ${Math.floor(score/4)}`;
+        const query = getAlternityRollQuery(1);
+        const macro = `&{template:alternity-skill} {{name=${attr} Feat Check}} {{score=${scores}}} {{results=[[${query}]]}}`;
+        const update = {};
+        update[attr + 'Macro'] = macro;
+        setAttrs(update, {silent: true});
+    });
+}
+
+const attributesToTrack = ['Strength', 'Dexterity', 'Constitution', 'Intelligence', 'Will', 'Personality'];
+attributesToTrack.forEach(attr => {
+    on(`change:${attr.toLowerCase()} sheet:opened`, function() {
+        updateAttributeMacro(attr);
+    });
+});
+
+<!-- SKILL_MACRO_WORKERS_PLACEHOLDER -->
 
 /* ===== COMBAT STEP DIE CALCULATION ===== */
 const combatStepMap = {

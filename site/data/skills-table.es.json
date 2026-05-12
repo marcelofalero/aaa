@@ -958,7 +958,7 @@
                         },
                         {
                             "skill": "Ley, habilidad específica",
-                            "attribute": "VOL",
+                            "attribute": "INT",
                             "url": "/es/skills/law#ley-habilidad-especifica",
                             "cost": 2,
                             "type": "Specialty",
@@ -966,7 +966,7 @@
                         },
                         {
                             "skill": "Psiónica",
-                            "attribute": "VOL",
+                            "attribute": "INT",
                             "url": "/es/skills/law#psionica",
                             "cost": 3,
                             "type": "Specialty",
