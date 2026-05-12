@@ -1023,6 +1023,19 @@ button[type="roll"]:hover {
     margin: 0 !important;
 }
 
+.sheet-trained-check {
+    grid-column: 4;
+}
+
+.sheet-trained-check-placeholder {
+    grid-column: 4;
+    width: 38px;
+}
+
+.sheet-roll-container {
+    grid-column: 1;
+}
+
 /* Toggle Logic */
 .sheet-trained-check:checked ~ .sheet-roll-container .sheet-roll-untrained,
 .sheet-trained-check:not(:checked) ~ .sheet-roll-container .sheet-roll-trained {
