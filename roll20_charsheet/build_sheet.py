@@ -331,7 +331,6 @@ def generate_skills_html(data_list, indent_level=3, is_psionics=False):
             h += f'{indent}\t\t\t</div>\n'
             h += f'{indent}\t\t\t<div class="sheet-skill-name{trained_only_class}">{spec_name} <button type="roll" name="roll_{spec_id}_link" class="sheet-skill-link" value="[{spec_name} Wiki]({spec_url})">&#x2197;</button>{spec_info_icon}</div>\n'
             h += f'{indent}\t\t\t<div class="sheet-skill-ability-label">{spec_attr}</div>\n'
-            h += f'{indent}\t\t\t<div class="sheet-trained-check-placeholder"></div>\n'
             h += f'{indent}\t\t\t<input type="number" name="attr_{spec_id}Rank" class="sheet-score" value="0">\n'
             h += f'{indent}\t\t\t<div class="sheet-skill-score-cell">\n'
             h += f'{indent}\t\t\t\t<input type="text" name="attr_{spec_id}O" class="sheet-scoredisabled" disabled="true" value="{spec_formula}">/\n'
