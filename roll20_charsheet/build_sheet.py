@@ -305,9 +305,10 @@ def generate_skills_html(data_list, indent_level=3, is_psionics=False):
             
             spec_wiki_link = f"{{{{wiki= [↗ Wiki Documentation]({spec_url})}}}}"
 
-            # Dual buttons for specialties
+            # Dual buttons for specialties - both default to +0 now to avoid confusion
+            # since the broad skill rank is already included in the score.
             roll_spec_trained = f"&{{template:default}} {{{{name= @{{character_name}} - {spec_name}}}}} {{{{score= [[@{{{spec_id}O}}]]/[[@{{{spec_id}G}}]]/[[@{{{spec_id}A}}]]}}}} {{{{results= [[{get_alternity_roll_query(default_step=0)}]]}}}} {spec_wiki_link}"
-            roll_spec_untrained = f"&{{template:default}} {{{{name= @{{character_name}} - {spec_name} (Untrained)}}}} {{{{score= [[@{{{spec_id}O}}]]/[[@{{{spec_id}G}}]]/[[@{{{spec_id}A}}]]}}}} {{{{results= [[{get_alternity_roll_query(default_step=1)}]]}}}} {spec_wiki_link}"
+            roll_spec_untrained = f"&{{template:default}} {{{{name= @{{character_name}} - {spec_name} (Untrained)}}}} {{{{score= [[@{{{spec_id}O}}]]/[[@{{{spec_id}G}}]]/[[@{{{spec_id}A}}]]}}}} {{{{results= [[{get_alternity_roll_query(default_step=0)}]]}}}} {spec_wiki_link}"
 
             if spec_untrained == "NO":
                 spec_formula = f"(floor(((@{{{spec_id}Rank}}+@{{{spec_attr_full}}})*@{{{id_name}}}) * (@{{{spec_id}Rank}}/(@{{{spec_id}Rank}}+0.001)) + 0.5))"
@@ -369,7 +370,7 @@ def build():
     all_skill_ids = []
 
     roll_query_0 = get_alternity_roll_query(default_step=0)
-    roll_query_1 = get_alternity_roll_query(default_step=1)
+    roll_query_1 = get_alternity_roll_query(default_step=0)
     
     skills_html, skill_ids = generate_skills_html(skills_data, indent_level=3)
     all_skill_ids.extend(skill_ids)
@@ -396,7 +397,7 @@ def build():
             spec_workers = []
             for skill_entry in all_skill_ids:
                 for spec_id in skill_entry['specs']:
-                    spec_workers.append(f'on("change:{spec_id.lower()}rank", function() {{ getAttrs(["{spec_id}Rank"], function(v) {{ setAttrs({{ "{spec_id}_is_trained": (parseInt(v["{spec_id}Rank"]) > 0 ? 1 : 0) }}); }}); }});')
+                    spec_workers.append(f'on("change:{spec_id.lower()}rank sheet:opened", function() {{ getAttrs(["{spec_id}Rank"], function(v) {{ setAttrs({{ "{spec_id}_is_trained": ((parseInt(v["{spec_id}Rank"]) || 0) > 0 ? 1 : 0) }}); }}); }});')
             
             content = content.replace('<!-- SPECIALTY_WORKERS_PLACEHOLDER -->', "\n".join(spec_workers))
             
