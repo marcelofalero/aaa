@@ -249,7 +249,7 @@ def generate_skills_html(data_list, indent_level=3, is_psionics=False):
         wiki_link = f"{{{{wiki= [↗ Wiki Documentation]({url})}}}}"
 
         # Dual buttons for trained/untrained
-        roll_trained = f"&{{template:default}} {{{{name= @{{character_name}} - {name}}}}} {roll_scores} {{{{results= [[{get_alternity_roll_query(default_step=0)}]]}}}} {wiki_link}"
+        roll_trained = f"&{{template:default}} {{{{name= @{{character_name}} - {name}}}}} {roll_scores} {{{{results= [[{get_alternity_roll_query(default_step=1)}]]}}}} {wiki_link}"
         roll_untrained = f"&{{template:default}} {{{{name= @{{character_name}} - {name} (Untrained)}}}} {roll_scores} {{{{results= [[{get_alternity_roll_query(default_step=1)}]]}}}} {wiki_link}"
 
         if is_untrained == "NO":
@@ -308,7 +308,7 @@ def generate_skills_html(data_list, indent_level=3, is_psionics=False):
             # Dual buttons for specialties - both default to +0 now to avoid confusion
             # since the broad skill rank is already included in the score.
             roll_spec_trained = f"&{{template:default}} {{{{name= @{{character_name}} - {spec_name}}}}} {{{{score= [[@{{{spec_id}O}}]]/[[@{{{spec_id}G}}]]/[[@{{{spec_id}A}}]]}}}} {{{{results= [[{get_alternity_roll_query(default_step=0)}]]}}}} {spec_wiki_link}"
-            roll_spec_untrained = f"&{{template:default}} {{{{name= @{{character_name}} - {spec_name} (Untrained)}}}} {{{{score= [[@{{{spec_id}O}}]]/[[@{{{spec_id}G}}]]/[[@{{{spec_id}A}}]]}}}} {{{{results= [[{get_alternity_roll_query(default_step=0)}]]}}}} {spec_wiki_link}"
+            roll_spec_untrained = f"&{{template:default}} {{{{name= @{{character_name}} - {spec_name} (Untrained)}}}} {{{{score= [[@{{{spec_id}O}}]]/[[@{{{spec_id}G}}]]/[[@{{{spec_id}A}}]]}}}} {{{{results= [[{get_alternity_roll_query(default_step=1)}]]}}}} {spec_wiki_link}"
 
             if spec_untrained == "NO":
                 spec_formula = f"(floor(((@{{{spec_id}Rank}}+@{{{spec_attr_full}}})*@{{{id_name}}}) * (@{{{spec_id}Rank}}/(@{{{spec_id}Rank}}+0.001)) + 0.5))"
@@ -370,7 +370,7 @@ def build():
     all_skill_ids = []
 
     roll_query_0 = get_alternity_roll_query(default_step=0)
-    roll_query_1 = get_alternity_roll_query(default_step=0)
+    roll_query_1 = get_alternity_roll_query(default_step=1)
     
     skills_html, skill_ids = generate_skills_html(skills_data, indent_level=3)
     all_skill_ids.extend(skill_ids)
