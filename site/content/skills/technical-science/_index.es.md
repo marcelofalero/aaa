@@ -1,6 +1,6 @@
 +++
 title = "Ciencia técnica"
-attribute = "WIL"
+attribute = "INT"
 category = "Technical"
 type = "skill"
 layout = "list"
@@ -9,7 +9,7 @@ layout = "list"
 Esta amplia habilidad representa la capacitación de un Personaje en las ciencias de Técnico, incluido el mantenimiento, la reparación y la invención de dispositivos mecánicos y electrónicos (sin incluir computadoras) y el conocimiento general de Técnico. Las comprobaciones de habilidad realizadas para determinar si un Personaje conoce cierta información de Técnico, o si es capaz de investigar una pregunta y descubrir una respuesta, se realizan de la misma manera que las comprobaciones de habilidad de **Conocimiento**.
 
 ## Remendar
-{{< specialty attr="WIL" untrained="yes" cost="3" >}}
+{{< specialty attr="INT" untrained="yes" cost="3" >}}
 
 Esta habilidad representa el estudio de la tecnología e indica qué tan actualizado está un Personaje en técnicas o procedimientos que lo ayudan a manipular herramientas y dispositivos Otros. Es necesario que un Personaje utilice ciertas herramientas sofisticadas o potencialmente peligrosas, como un soplete de corte, sin correr el riesgo de sufrir lesiones personales o daños a la herramienta.
 ⊗ **Efecto aumentado:** A medida que Especialidad Rango de Personaje aumenta, recibe una bonificación a cualquier prueba de habilidad que involucre a Ciencia técnica o Otros tres habilidades especiales: **-1 paso en Rango 3**, **-2 en Rango 6**, **-3 en Rango 9** y **-4 en Rango 12**.
@@ -19,7 +19,7 @@ Esta habilidad representa el estudio de la tecnología e indica qué tan actuali
 ---
 
 ## Reparación
-{{< specialty attr="WIL" untrained="yes" cost="3" >}}
+{{< specialty attr="INT" untrained="yes" cost="3" >}}
 
 La invención permite a un Personaje construir un componente o sistema electrónico o mecánico desde cero, o modificar un dispositivo existente para realizar una nueva función. Usar esta habilidad requiere tiempo; Las pruebas de invención son siempre pruebas de habilidades complejas. Es posible que la modificación de un elemento existente se pueda realizar en rondas, pero todos los aspectos de la invención de Otros requieren horas, días, semanas o meses, según la determinación de Director de Juego.
 ⊗ **Efecto aumentado:** A medida que Especialidad Rango de Personaje aumenta, recibe una bonificación a cualquier prueba de habilidad que involucre a Ciencia técnica o Otros tres habilidades especiales: **-1 paso en Rango 3**, **-2 en Rango 6**, **-3 en Rango 9** y **-4 en Rango 12**.
@@ -27,7 +27,7 @@ La invención permite a un Personaje construir un componente o sistema electrón
 ---
 
 ## Repair
-{{< specialty attr="WIL" untrained="yes" cost="3" >}}
+{{< specialty attr="INT" untrained="yes" cost="3" >}}
 
 Esta habilidad proporciona al Personaje capacitación en la reparación y mantenimiento de diversos tipos de tecnología mecánica y electrónica. Cualquier uso de la habilidad de reparación requiere una prueba de habilidad compleja y toma un período de tiempo determinado por el Director de Juego (minutos, horas, días o semanas). La complejidad de una prueba de habilidad de reparación está relacionada con la cantidad de daño que se debe reparar:
 - **Daño Aturdimiento:** Reparar un objeto con solo daño Aturdimiento tiene complejidad **Ordinario**.

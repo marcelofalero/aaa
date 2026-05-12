@@ -1,5 +1,5 @@
 ---
-attribute: WIL
+attribute: WIL  
 cost: 3
 category: Other
 url: /skills/security

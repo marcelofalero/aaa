@@ -1,5 +1,5 @@
 ---
-attribute: WIL
+attribute: INT
 cost: 4
 url: /skills/security#security-devices
 trained_only: false

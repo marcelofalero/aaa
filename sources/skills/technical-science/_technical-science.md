@@ -1,5 +1,5 @@
 ---
-attribute: WIL
+attribute: INT
 cost: 7
 category: Technical
 url: /skills/technical-science

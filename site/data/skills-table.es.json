@@ -239,7 +239,7 @@
                     "items": [
                         {
                             "skill": "Táctica de Infantería",
-                            "attribute": "VOL",
+                            "attribute": "INT",
                             "url": "/es/skills/tactics#tactica-de-infanteria",
                             "cost": 3,
                             "type": "Specialty",
@@ -247,7 +247,7 @@
                         },
                         {
                             "skill": "Táctica Espacial",
-                            "attribute": "VOL",
+                            "attribute": "INT",
                             "url": "/es/skills/tactics#tactica-espacial",
                             "cost": 3,
                             "type": "Specialty",
@@ -255,7 +255,7 @@
                         },
                         {
                             "skill": "Táctica de Vehículos",
-                            "attribute": "VOL",
+                            "attribute": "INT",
                             "url": "/es/skills/tactics#tactica-de-vehiculos",
                             "cost": 3,
                             "type": "Specialty",
@@ -607,7 +607,7 @@
                     "items": [
                         {
                             "skill": "Protocolos de Protección",
-                            "attribute": "VOL",
+                            "attribute": "INT",
                             "url": "/es/skills/security#protocolos-de-proteccion",
                             "cost": 3,
                             "type": "Specialty",
@@ -615,7 +615,7 @@
                         },
                         {
                             "skill": "Dispositivos de Seguridad",
-                            "attribute": "VOL",
+                            "attribute": "INT",
                             "url": "/es/skills/security#dispositivos-de-seguridad",
                             "cost": 4,
                             "type": "Specialty",
@@ -1008,7 +1008,7 @@
                     "items": [
                         {
                             "skill": "Habilidades de Especialidad",
-                            "attribute": "VOL",
+                            "attribute": "INT",
                             "url": "/es/skills/street-smart#habilidades-de-especialidad",
                             "cost": 3,
                             "type": "Specialty",
@@ -1294,14 +1294,14 @@
                 },
                 {
                     "skill": "Operación de Sistemas",
-                    "attribute": "VOL",
+                    "attribute": "INT",
                     "url": "/es/skills/system-operation",
                     "cost": 3,
                     "type": "Broad",
                     "items": [
                         {
                             "skill": "Comunicaciones",
-                            "attribute": "VOL",
+                            "attribute": "INT",
                             "url": "/es/skills/system-operation#comunicaciones",
                             "cost": 3,
                             "type": "Specialty",
@@ -1309,7 +1309,7 @@
                         },
                         {
                             "skill": "Defensas",
-                            "attribute": "VOL",
+                            "attribute": "INT",
                             "url": "/es/skills/system-operation#defensas",
                             "cost": 3,
                             "type": "Specialty",
@@ -1317,7 +1317,7 @@
                         },
                         {
                             "skill": "Ingeniería",
-                            "attribute": "VOL",
+                            "attribute": "INT",
                             "url": "/es/skills/system-operation#ingenieria",
                             "cost": 3,
                             "type": "Specialty",
@@ -1325,7 +1325,7 @@
                         },
                         {
                             "skill": "Sensores",
-                            "attribute": "VOL",
+                            "attribute": "INT",
                             "url": "/es/skills/system-operation#sensores",
                             "cost": 3,
                             "type": "Specialty",
@@ -1333,7 +1333,7 @@
                         },
                         {
                             "skill": "Armas",
-                            "attribute": "VOL",
+                            "attribute": "INT",
                             "url": "/es/skills/system-operation#armas",
                             "cost": 6,
                             "type": "Specialty",
@@ -1343,14 +1343,14 @@
                 },
                 {
                     "skill": "Ciencia técnica",
-                    "attribute": "VOL",
+                    "attribute": "INT",
                     "url": "/es/skills/technical-science",
                     "cost": 7,
                     "type": "Broad",
                     "items": [
                         {
                             "skill": "Remendar",
-                            "attribute": "VOL",
+                            "attribute": "INT",
                             "url": "/es/skills/technical-science#remendar",
                             "cost": 3,
                             "type": "Specialty",
@@ -1358,7 +1358,7 @@
                         },
                         {
                             "skill": "Reparación",
-                            "attribute": "VOL",
+                            "attribute": "INT",
                             "url": "/es/skills/technical-science#reparacion",
                             "cost": 3,
                             "type": "Specialty",
@@ -1366,7 +1366,7 @@
                         },
                         {
                             "skill": "Repair",
-                            "attribute": "VOL",
+                            "attribute": "INT",
                             "url": "/es/skills/technical-science#repair",
                             "cost": 3,
                             "type": "Specialty",

@@ -11,7 +11,7 @@ This broad skill provides a character with basic knowledge of security systems a
 - **Amazing quality:** One in which (for example) the character and his allies are involved in combat or are under severe time pressure to accomplish their goal.
 
 ## Protection protocols
-{{< specialty attr="WIL" untrained="yes" cost="3" >}}
+{{< specialty attr="INT" untrained="yes" cost="3" >}}
 
 This skill represents a character''s training in protection procedures of all types. It has two principal uses:
 ### Secure an Area
@@ -37,7 +37,7 @@ A character can study a secured area (anything from a vehicle to a building to a
 ---
 
 ## Security devices
-{{< specialty attr="WIL" untrained="yes" cost="4" >}}
+{{< specialty attr="INT" untrained="yes" cost="4" >}}
 
 Using this skill, a character can attempt to bypass all types of mechanical or electronic security. This includes everything from traditional pin-tumbler locks and mechanical safes (picking) to high-tech motion sensors, trip wires, and electronic maglocks. It''s also used to set traps, both electronic and mechanical in nature. One check can be made per round, and the character making the check is busy for the entire round (no other actions possible). In a situation that isn''t taking place in rounds, the time unit changes from rounds to minutes.
 ⊗ **Increased Effect:** As a character achieves higher ranks in this specialty, he receives a situation die bonus on skill checks assisted by it: **-1 step at rank 3**, **-2 steps at rank 6**, **-3 steps at rank 9**, and **-4 steps at rank 12**.

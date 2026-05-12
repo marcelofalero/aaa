@@ -11,7 +11,7 @@ Esta amplia habilidad proporciona a Personaje conocimientos básicos de sistemas
 - **Calidad Asombroso:** Una en la que (por ejemplo) Personaje y sus aliados están involucrados en Combate o están bajo una gran presión de tiempo para lograr su objetivo.
 
 ## Protocolos de Protección
-{{< specialty attr="WIL" untrained="yes" cost="3" >}}
+{{< specialty attr="INT" untrained="yes" cost="3" >}}
 
 Esta habilidad representa la formación de un Personaje en procedimientos de protección de todo tipo. Tiene dos usos principales:
 ### Proteger un área
@@ -37,7 +37,7 @@ Un Personaje puede estudiar un área segura (cualquier cosa, desde un vehículo 
 ---
 
 ## Dispositivos de Seguridad
-{{< specialty attr="WIL" untrained="yes" cost="4" >}}
+{{< specialty attr="INT" untrained="yes" cost="4" >}}
 
 Usando esta habilidad, un Personaje puede intentar eludir todo tipo de seguridad mecánica o electrónica. Esto incluye de todo, desde cerraduras tradicionales de pasador y cajas fuertes mecánicas (ganzamiento) hasta sensores de movimiento de alta tecnología, cables trampa y cerraduras magnéticas electrónicas. También se utiliza para colocar trampas, tanto de naturaleza electrónica como mecánica. Se puede realizar una verificación por ronda y el Personaje que realiza la verificación estará ocupado durante toda la ronda (no es posible realizar acciones con Otros). En una situación que no se desarrolla en rondas, la unidad de tiempo cambia de rondas a minutos.
 ⊗ **Efecto aumentado:** A medida que un Personaje logra un Rangos más alto en esta especialidad, recibe una bonificación Dado de Situación en las pruebas de habilidad asistidas por ella: **-1 paso en Rango 3**, **-2 pasos en Rango 6**, **-3 pasos en Rango 9** y **-4 pasos en Rango 12**.

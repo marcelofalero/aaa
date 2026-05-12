@@ -1,5 +1,5 @@
 ---
-attribute: WIL
+attribute: INT
 cost: 6
 url: /skills/system-operation#weapons
 trained_only: false

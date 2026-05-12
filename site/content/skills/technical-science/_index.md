@@ -1,6 +1,6 @@
 +++
 title = "Technical Science"
-attribute = "WIL"
+attribute = "INT"
 category = "Technical"
 type = "skill"
 layout = "list"
@@ -9,7 +9,7 @@ layout = "list"
 This broad skill represents a character''s training in the technical sciences, including the maintenance, repair, and invention of mechanical and electronic devices (not including computers), and general technical knowledge. Skill checks made to determine if a character knows a certain piece of technical information, or if he''s able to research a question and discover an answer, are made the same way as **Knowledge** skill checks.
 
 ## Technical Knowledge
-{{< specialty attr="WIL" untrained="yes" cost="3" >}}
+{{< specialty attr="INT" untrained="yes" cost="3" >}}
 
 This skill represents the study of technology and indicates how up-to-date a character is on techniques or procedures that help him manipulate tools and other devices. It is necessary for a character to use certain sophisticated or potentially dangerous tools, such as a cutting torch, without risking personal injury or damage to the tool.
 ⊗ **Increased Effect:** As a character’s specialty skill rank increases, he receives a bonus to any skill checks involving Technical Science or the other three specialty skills: **-1 step at rank 3**, **-2 at rank 6**, **-3 at rank 9**, and **-4 at rank 12**.
@@ -19,7 +19,7 @@ This skill represents the study of technology and indicates how up-to-date a cha
 ---
 
 ## Invention
-{{< specialty attr="WIL" untrained="yes" cost="3" >}}
+{{< specialty attr="INT" untrained="yes" cost="3" >}}
 
 Invention lets a character build an electronic or mechanical component or system from scratch, or to modify an existing device to perform a new function. Using this skill requires time; Invention checks are always complex skill checks. Modifying an existing item may be able to be done in rounds, but all other aspects of invention require hours, days, weeks, or months, depending on the determination of the Gamemaster.
 ⊗ **Increased Effect:** As a character’s specialty skill rank increases, he receives a bonus to any skill checks involving Technical Science or the other three specialty skills: **-1 step at rank 3**, **-2 at rank 6**, **-3 at rank 9**, and **-4 at rank 12**.
@@ -27,7 +27,7 @@ Invention lets a character build an electronic or mechanical component or system
 ---
 
 ## Repair
-{{< specialty attr="WIL" untrained="yes" cost="3" >}}
+{{< specialty attr="INT" untrained="yes" cost="3" >}}
 
 This skill provides a character with training in the repair and maintenance of various types of mechanical and electronic technology. Any use of the repair skill requires a complex skill check and takes a period of time determined by the Gamemaster (minutes, hours, days, or weeks). The complexity of a repair skill check is related to the amount of damage that must be repaired:
 - **Stun Damage:** Fix an object with only stun damage is **Ordinary** complexity.
