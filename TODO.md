@@ -6,7 +6,7 @@
 - [ ] Add multi-attack option to weapons.
 
 ## Site & Infrastructure
-- [ ] Review site search indexes and add some sort of automated test to check during publication.
+- [x] Review site search indexes and add some sort of automated test to check during publication.
 - [x] Fix broken link references reported by Hugo.
 
 ## Content Review

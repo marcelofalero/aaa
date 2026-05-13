@@ -9,7 +9,12 @@ name: Climb
 The ability to scale vertical surfaces and navigate difficult terrain.
 
 ### Combat Climbing
-Movement per phase based on check: Ordinary (1m), Good (2m), Amazing (3m). Critical Failure results in a fall.
+Movement per phase based on check:
+- **Critical Failure:** Fall (if possible).
+- **Marginal:** No progress this action.
+- **Ordinary:** 1 meter.
+- **Good:** 2 meters.
+- **Amazing:** 3 meters.
 
 ### Challenge Climbing
 Outside of rounds, climbing is resolved as a **complex skill check**.
