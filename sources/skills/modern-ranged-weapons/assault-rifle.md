@@ -8,20 +8,42 @@ rank_benefits:
   title: Rock-n-Roll
 - rank: 4
   title: Distance Precision
+- rank: 6
+  title: Suppressive Angles
+- rank: 9
+  title: Absolute Recoil Control
 name: Assault Rifle
 ---
 
-This specialty skill covers automatic rifles—standard infantry weapons capable of selective fire and automatic modes using rifle-caliber cartridges.
+This specialty skill covers automatic rifles—standard infantry weapons capable of selective fire and automatic modes using rifle-caliber cartridges or standard energy cells. Each weapon's description will indicate its allowed fire modes and its specific Autofire profile.
 
 ### Automatic Weapon Attack Modes
+
 Assault rifles provide a character with up to three attack options per action phase:
-- **Fire:** A single attack at a single target. (Standard control + situation die).
-- **Burst:** A hail of ammunition aimed at a single target. The character receives a **-1 step bonus** to his skill check.
-- **Autofire:** A spray of ammunition walked across a wide area. Up to three different targets within 6 meters of each other can be affected.
-  - To resolve autofire, the player rolls one control die and three situation dice at once.
-  - The results are read off the control die, modified by the individual situation dice: **+1 step** for the first target, **+2 steps** for the second, and **+3 steps** for the third.
+
+**Fire** A single, precise attack at a single target. (Resolution: Standard control + situation die. Ammo Cost: 1 round).
+
+**Burst** A tight, controlled hail of ammunition aimed at a single target to ensure a hit before recoil shifts the barrel. (Resolution: The character receives a -1 step bonus to their skill check against the target. Ammo Cost: 3 rounds).
+
+**Autofire** A continuous barrage meant to saturate an area or cut through a vector. The weapon's description dictates whether it uses the Spread or Line profile. (Ammo Cost: 10 rounds or equivalent energy drain).
+
+**Profile A: Spread (Standard Ballistic/Energy)**
+The Area (2 Rings): The player targets a single square (Ring 1). The attack affects that center square and all 8 immediately adjacent squares (Ring 2).
+Resolution: The player makes a single attack roll with a -1 step bonus against the primary target in the center square.
+The Spread: All other entities (friend or foe) in the adjacent squares automatically take Ordinary damage.
+Reaction: Targets in the adjacent squares can avoid this damage if they succeed on a Dodge check or use their reaction to Hit the Deck (automatically dropping Prone).
+
+**Profile B: Line (Rotary Lasers/Directed Energy)**
+The Area (Linear): The player designates a straight line across the grid. The attack affects every entity occupying a square touched by that line.
+Resolution: The player makes a single attack roll to determine damage against the targets caught in the beam.
+Thermal Dissipation: The attacker applies a -1 step bonus against the nearest target in the line, standard damage (0 modifier) against the second, and a +1 step penalty against the third furthest target. The beam loses lethal coherence after the third target.
 
 ### Rank Benefits
-▶ **Rank 3 [Rock-n-Roll]** When a character reaches rank 3 in this specialty, he learns to change clips more efficiently. The penalty for changing a clip and firing in the same action is reduced to +1 step.
 
-⊗ **Rank 4 [Distance Precision]** When a character reaches rank 4 in this specialty, he knows how to compensate for distance. The step penalty for a medium-range shot is eliminated, and the penalty for a long-range shot is lessened by 1 step.
+▶ **Rank 3 [Rock-n-Roll]** When a character reaches rank 3 in this specialty, they learn to change clips more efficiently. The penalty for changing a clip and firing in the same action is reduced to a +1 step.
+
+⊗ **Rank 4 [Distance Precision]** When a character reaches rank 4 in this specialty, they know how to compensate for bullet drop and optical alignment. The step penalty for a medium-range shot is eliminated, and the penalty for a long-range shot is lessened by 1 step.
+
+▶ **Rank 6 [Suppressive Angles]** When a character reaches rank 6, they know exactly how to walk their fire to trap an enemy. When the character uses the Autofire (Spread) profile, enemies caught in the adjacent squares (Ring 2) suffer a +1 step penalty to their Dodge check or their reaction to Hit the Deck.
+
+⊗ **Rank 9 [Absolute Recoil Control]** When a character reaches rank 9 in this specialty, they achieve perfect physical mastery over the weapon's action. The step bonus for using the Burst attack mode is increased from a -1 step to a -2 step bonus, massively increasing the probability of dealing high-tier damage to a single target.
