@@ -17,6 +17,8 @@ name: Rifle
 
 This specialty skill allows a character to improve his proficiency with modern single-fire rifles, sniper rifles, and hunting rifles.
 
+**Fire** A single, precise attack at a single target. (Resolution: Standard control + situation die. Ammo Cost: 1 round).
+
 ### Rank Benefits
 
 ▶ **Rank 3 [Optic Familiarity]** When a character reaches rank 3 in this specialty, they become intimately familiar with their weapon's optics and stabilize much faster than a standard shooter. When the character uses the core Aim action, their first round of aiming grants a 2-step bonus instead of the standard 1-step bonus. (Subsequent rounds of aiming add 1 step as normal, up to the system maximum).
