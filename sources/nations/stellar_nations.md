@@ -1,0 +1,25 @@
+# Stellar Nations
+
+The Treaty of Concord (2472) recognizes thirteen distinct governments dividing explored space – the stellar nations. These rulers of the galaxy make decisions that affect all of humanity and the species it has contacted. Together, the stellar nations lay claim to thousands of colonized worlds and outpost throughout hundreds of light-years. Given their might, the only force capable of stopping a stellar nation is another stellar nation.
+
+Twelve stellar powers were the most powerful republics when the Treaty of Concord was drafted. As a group, they are sometimes called the winners of the war, simply by virtue of their survival. Without the treaty, the Second Galactic War would have continued, dragging them into an abyss of blood and fire. The twelve powers have the most to lose if war returns.
+
+* [Austrin-Ontis Unlimited]({{< relref "/nations/austrin_ontis_unlimited" >}}) - Gun dealing, hybrid corporate stellar nation. Freedom and profit are virtues.
+* [Borealis Republic]({{< relref "/nations/borealis_republic" >}}) - Philosophical aristocracy, schools of philosophy replace noble houses, educational ranks replace noble titles. The best colleges in the Concord.
+*[Galactic Concord]({{< relref "/nations/galactic_concord" >}}) - Formed from donated potions of other Stellar Nations, it is the “super-nation” that was built to prevent another galactic war. Citizens of the Concord are very politically savvy. 3 major regions make up the Concord – Conord Sagittarius, Concord Taurus, Concord Prime
+* [Hatire Community]({{< relref "/nations/hatire_community" >}}) - Religious fanatics and zealots, followers of an alien god named [Cosimir]({{< relref "/nations/cosimir" >}}). During [GW2]({{< relref "/nations/second_galactic_war" >}}), they were a little more forcible about the evangelism than they are now. Philosophy and education are their virtues. They have a disdain for cybernetics and genetic manipulation.
+*[Insight]({{< relref "/nations/insight" >}}) - Formerly a subdivision of [VoidCorp]({{< relref "/nations/voidcorp" >}}), betrayed them in the [GW2]({{< relref "/nations/second_galactic_war" >}}) by selling intelligence. They are the best [Gridpilot]({{< relref "/nations/gridpilot" >}})s and hold the free flow of information as their highest virtue.
+*[Nariac Domain]({{< relref "/nations/nariac_domain" >}}) - Communist society that evolved on harsh worlds. Cybernetics and body modification is very prominent in this society. Allegiance to the state is their primary virtue. Since the GW2, VoidCorp has been slowly making Nariac a client state, while the Nariac have been trying to become more independent.
+*[Orion League]({{< relref "/nations/orion_league" >}}) - The most diverse stellar nation, with a mixture of old earth cultures, alien cultures and cultures that were born of space travel. Diversity and multiculturalism are their virtues.
+* [Orlamu Theocracy]({{< relref "/nations/orlamu_theocracy" >}}) - Religious society of scientists who study the Drive Space. Drive space research and stardrive development are the principle focuses. Acceptance of contradiction, gaining a better understanding of the universe and seeing the divine in the scientific theory and studies are held as virtues.
+*[Rigunmor Star Consortium]({{< relref "/nations/rigunmor_star_consortium" >}}) - Life, liberty and the pursuit of profit are their virtures. Merchants and traders, business men and smugglers.
+*[StarMech Collective]({{< relref "/nations/starmech_collective" >}}) - The best ship and robot builders in the Concord. Hedonistic society, robots to much of the labor in this region. They thrive on technical advancement and are more comfortable surrounded by their own robots. Technical advancement and personal pleasure are held as virtures.
+*[Thuldan Empire]({{< relref "/nations/thuldan_empire" >}}) - Fiercely patriotic stellar nation, born of a single human’s (Gregor Kent) vision of the future for mankind. Aggressively expansionist in its early history, it is the most powerful stellar nations. They embrace genetic manipulation and breeding programs. They hold personal perfection, loyalty and patriotism to the Emperor as virtues.
+*[Union of Sol]({{< relref "/nations/union_of_sol" >}}) - Center of Old Space, caretakers of human history. Arrogant and nationalistic, Solars see themselves as the preservers of all that is human.
+*[Voidcorp]({{< relref "/nations/voidcorp" >}}) - Order is the primary virtue of VoidCorp. Nothing can be obtained before order is established. Formed from an immense corporation, it is the primary producer of computer software and hardware as well as the Grid.
+*[Independents]({{< relref "/nations/independents" >}}) - [Verge]({{< relref "/nations/verge" >}})  - Non corporate aligned
+*[Stellar Ring (Old Space)]({{< relref "/nations/stellar_ring" >}})
+
+[Open Space]({{< relref "/nations/open_space" >}})
+
+[Census of 2500]({{< relref "/nations/census_of_2500" >}})

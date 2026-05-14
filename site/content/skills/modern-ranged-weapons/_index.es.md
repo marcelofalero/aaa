@@ -40,94 +40,85 @@ Cuando un Personaje usa cualquier arma a distancia, ya sea primitiva o moderna, 
 ## Fusil de asalto
 {{< specialty attr="DEX" untrained="yes" cost="3" >}}
 
-Este Especialidad cubre rifles automáticos: armas de infantería estándar capaces de realizar disparos selectivos y modos automáticos que utilizan cartuchos de calibre de rifle.
+This Especialidad covers automatic rifles—standard infantry weapons capable of selective fire and automatic modes using rifle-caliber cartridges.
 
-### Modos de ataque automático con armas
-Los rifles de asalto brindan al Personaje hasta tres opciones de ataque por fase de acción:
-- **Fuego:** Un solo ataque a un solo objetivo. (Control estándar + Dado de Situación).
-- **Explosión:** Una lluvia de munición dirigida a un único objetivo. El Personaje recibe un **-1 Bonificación de paso** en su prueba de habilidad.
-- **Autofire:** Una ráfaga de munición recorrió un área amplia. Pueden verse afectados hasta tres objetivos diferentes dentro de un radio de 6 metros de cada Otros.
-  - Para disparar automáticamente Firmeza, el jugador tira un Dado de Control y tres dados de situación a la vez.
-  - Los resultados se leen en el Dado de Control, modificados por los dados de situación individuales: **+1 paso** para el primer objetivo, **+2 pasos** para el segundo y **+3 pasos** para el tercero.
+### Automatic Weapon Attack Modes
+Assault rifles provide a Personaje with up to three attack options per action phase:
+- **Fire:** A single attack at a single target. (Standard control + Dado de Situación).
+- **Burst:** A hail of ammunition aimed at a single target. The Personaje receives a **-1 Bonificación de paso** to his skill check.
+- **Autofire:** A spray of ammunition walked across a wide area. Up to three different targets within 6 meters of each Otros can be affected.
+  - To Firmeza autofire, the player rolls one Dado de Control and three situation dice at once.
+  - The results are read off the Dado de Control, modified by the individual situation dice: **+1 step** for the first target, **+2 steps** for the second, and **+3 steps** for the third.
 
-### Beneficios de Rango
-▶ **Rango 3 [Rock-n-Roll]** Cuando un Personaje llega a Rango 3 en esta especialidad, aprende a cambiar clips de manera más eficiente. La penalización por cambiar un cargador y disparar en la misma acción se reduce a +1 paso.
+### Rango Benefits
+▶ **Rango 3 [Rock-n-Roll]** When a Personaje reaches Rango 3 in this specialty, he learns to change clips more efficiently. The penalty for changing a clip and firing in the same action is reduced to +1 step.
 
-⊗ **Rango 3 [Precisión de distancia]** Cuando un Personaje alcanza Rango 3 en esta especialidad, sabe cómo compensar la distancia. Se elimina el Penalización de paso por un tiro de media distancia y la penalización por un tiro de larga distancia se reduce en 1 paso.
-
-▶ **Rango 6 [Doble disparo]** Cuando un Personaje alcanza Rango 6 en esta especialidad, puede disparar su arma dos veces en la misma acción. Un doble disparo funciona de la siguiente manera: primero, se determina el modificador base para el ataque. Luego, el Personaje tira el Dado de Control y dos dados de situación para realizar su ataque de doble disparo. El primer Dado de Situación es el modificador base necesario para realizar un ataque con un **+1 Penalización de paso** adicional; el segundo es el modificador base con un **+2 Penalización de paso** adicional. Cuando hay dos objetivos involucrados, el modificador base para el ataque es el del objetivo más difícil. Un Personaje que usa un arco puede apuntar a dos objetivos diferentes.
-
-* **Ejemplo de doble disparo:** Darsen tiene el beneficio de ataque especial de doble disparo y una puntuación de habilidad de 14. Su Dado de Situación base después de haber considerado todos los modificadores es +d4. Tira un Dado de Control (d20), un +d6 y un +d8. En los dados aparecen los números 11, 4 y 2. Esto le da a Darsen resultados de prueba de habilidades de 15 (11 + 4) y 13 (11 + 2). El primer disparo no da en el blanco, pero el segundo logra un impacto Ordinario.
+⊗ **Rango 4 [Distance Precision]** When a Personaje reaches Rango 4 in this specialty, he knows how to compensate for distance. The Penalización de paso for a medium-range shot is eliminated, and the penalty for a long-range shot is lessened by 1 step.
 
 ---
 
 ## Pistola
 {{< specialty attr="DEX" untrained="yes" cost="3" >}}
 
-Este Especialidad permite a un Personaje mejorar su competencia con pistolas modernas de todo tipo, incluidas armas de proyectiles y de energía.
+This Especialidad allows a Personaje to improve his proficiency with modern pistols of all types, including projectile and energy weapons.
 
-### Beneficios de Rango
-▶ **Rango 3, 4 [Quick Draw]** Después de que un Personaje alcance Rango 3 en esta especialidad, puede realizar un sorteo rápido con su Pistola. Esto le permite sacar su arma y dispararla en la misma fase con sólo una penalización de +1. Cuando un Personaje llega a Rango 4, puede desenvainar y disparar en la misma fase sin ninguna penalización.
+### Rango Benefits
+▶ **Rango 3, 4 [Quick Draw]** After a Personaje reaches Rango 3 in this specialty, he can perform a quick draw with his Pistola. This allows him to draw his weapon and fire it in the same phase with only a +1 penalty. As a Personaje reaches Rango 4, he can draw and fire in the same phase without any penalty.
 
-⊗ **Rango 3 [Precisión de distancia]** Cuando un Personaje alcanza Rango 3 en esta especialidad, sabe cómo compensar la distancia. Se elimina el Penalización de paso por un tiro de media distancia y la penalización por un tiro de larga distancia se reduce en 1 paso.
+▶ **Rango 6 [Double-Shot]** When a Personaje reaches Rango 6 in this specialty, he becomes able to fire his weapon twice in the same action. A double-shot works as follows: First, the base modifier for the attack is determined. Then the Personaje rolls the Dado de Control and two situation dice to make his double-shot attack. The first Dado de Situación is the base modifier needed to make an attack with an additional **+1 Penalización de paso**; the second is the base modifier with an additional **+2 Penalización de paso**. When two targets are involved, the base modifier for the attack is that of the more difficult target. A Personaje using a bow can aim at two different targets.
 
-▶ **Rango 6 [Doble disparo]** Cuando un Personaje alcanza Rango 6 en esta especialidad, puede disparar su arma dos veces en la misma acción. Un doble disparo funciona de la siguiente manera: primero, se determina el modificador base para el ataque. Luego, el Personaje tira el Dado de Control y dos dados de situación para realizar su ataque de doble disparo. El primer Dado de Situación es el modificador base necesario para realizar un ataque con un **+1 Penalización de paso** adicional; el segundo es el modificador base con un **+2 Penalización de paso** adicional. Cuando hay dos objetivos involucrados, el modificador base para el ataque es el del objetivo más difícil. Un Personaje que usa un arco puede apuntar a dos objetivos diferentes.
-
-* **Ejemplo de doble disparo:** Darsen tiene el beneficio de ataque especial de doble disparo y una puntuación de habilidad de 14. Su Dado de Situación base después de haber considerado todos los modificadores es +d4. Tira un Dado de Control (d20), un +d6 y un +d8. En los dados aparecen los números 11, 4 y 2. Esto le da a Darsen resultados de prueba de habilidades de 15 (11 + 4) y 13 (11 + 2). El primer disparo no da en el blanco, pero el segundo logra un impacto Ordinario.
+**Example of double-shot:** Darsen has the double-shot special attack benefit and a skill score of 14. His base Dado de Situación after all modifiers have been considered is +d4. He rolls a Dado de Control (d20), a +d6, and a +d8. The numbers 11, 4, and 2 come up on the dice. This gives Darsen skill check results of 15 (11 + 4) and 13 (11 + 2). The first shot misses its target, but the second one scores an Ordinario hit.
 
 ---
 
 ## Fusil de asalto
 {{< specialty attr="DEX" untrained="yes" cost="3" >}}
 
-Este Especialidad permite a un Personaje mejorar su competencia con rifles de tiro simple, rifles de francotirador y rifles de caza modernos.
-### Beneficios de Rango
-▶ **Rango 3 [Apunte mejorado]** Cuando un Personaje alcanza Rango 3 en esta especialidad, puede alcanzar un objetivo con más confiabilidad. Esta mejora en la precisión se traduce en una **bonificación de -1** para el Dado de Situación por cualquier ataque con rifle de un solo disparo que realice el Personaje.
+This Especialidad allows a Personaje to improve his proficiency with modern single-fire rifles, sniper rifles, and hunting rifles.
+### Rango Benefits
+▶ **Rango 3 [Improved Aim]** When a Personaje reaches Rango 3 in this specialty, he becomes able to hit a target with more dependability. This improvement in accuracy translates to a **-1 bonus** to the Dado de Situación for any single-fire rifle attack the Personaje makes.
 
-⊗ **Rango 3 [Precisión de distancia]** Cuando un Personaje alcanza Rango 3 en esta especialidad, sabe cómo compensar la distancia. Se elimina el Penalización de paso por un tiro de media distancia y la penalización por un tiro de larga distancia se reduce en 1 paso.
+⊗ **Rango 3 [Distance Precision]** When a Personaje reaches Rango 3 in this specialty, he knows how to compensate for distance. The Penalización de paso for a medium-range shot is eliminated, and the penalty for a long-range shot is lessened by 1 step.
 
-▶ **Rango 6 [Doble disparo]** Cuando un Personaje alcanza Rango 6 en esta especialidad, puede disparar su arma dos veces en la misma acción. Un doble disparo funciona de la siguiente manera: primero, se determina el modificador base para el ataque. Luego, el Personaje tira el Dado de Control y dos dados de situación para realizar su ataque de doble disparo. El primer Dado de Situación es el modificador base necesario para realizar un ataque con un **+1 Penalización de paso** adicional; el segundo es el modificador base con un **+2 Penalización de paso** adicional. Cuando hay dos objetivos involucrados, el modificador base para el ataque es el del objetivo más difícil. Un Personaje que usa un arco puede apuntar a dos objetivos diferentes.
+▶ **Rango 8 [Double-Shot]** When a Personaje reaches Rango 8 in this specialty, he becomes able to fire his weapon twice in the same action. A double-shot works as follows: First, the base modifier for the attack is determined. Then the Personaje rolls the Dado de Control and two situation dice to make his double-shot attack. The first Dado de Situación is the base modifier needed to make an attack with an additional **+1 Penalización de paso**; the second is the base modifier with an additional **+2 Penalización de paso**. When two targets are involved, the base modifier for the attack is that of the more difficult target. A Personaje using a bow can aim at two different targets.
 
-* **Ejemplo de doble disparo:** Darsen tiene el beneficio de ataque especial de doble disparo y una puntuación de habilidad de 14. Su Dado de Situación base después de haber considerado todos los modificadores es +d4. Tira un Dado de Control (d20), un +d6 y un +d8. En los dados aparecen los números 11, 4 y 2. Esto le da a Darsen resultados de prueba de habilidades de 15 (11 + 4) y 13 (11 + 2). El primer disparo no da en el blanco, pero el segundo logra un impacto Ordinario.
+
+* **Example of double-shot:** Darsen has the double-shot special attack benefit and a skill score of 14. His base Dado de Situación after all modifiers have been considered is +d4. He rolls a Dado de Control (d20), a +d6, and a +d8. The numbers 11, 4, and 2 come up on the dice. This gives Darsen skill check results of 15 (11 + 4) and 13 (11 + 2). The first shot misses its target, but the second one scores an Ordinario hit.
 
 ---
 
 ## Subfusil
 {{< specialty attr="DEX" untrained="yes" cost="3" >}}
 
-Este Especialidad permite a un Personaje mejorar su competencia con metralletas modernas de todo tipo (pequeñas armas automáticas que disparan cartuchos del tamaño de Pistola), así como con metralletas de energía equivalente.
+This Especialidad allows a Personaje to improve his proficiency with modern submachine guns of all types (small automatic weapons that fire Pistola-sized cartridges) as well as energy-equivalent submachine guns.
 
-### Modos de ataque automático con armas
-Las metralletas (y los rifles de asalto) proporcionan al Personaje hasta tres opciones de ataque por fase de acción:
-- **Explosión:** Una lluvia de munición dirigida a un único objetivo. El Personaje recibe un **-1 Bonificación de paso** en su prueba de habilidad. En un Fallo Crítico, el arma se atasca y requiere una verificación de reparación Ciencia técnica para desbloquearlo.
-- **Autofire:** Una ráfaga de munición recorrió un área amplia. Pueden verse afectados hasta tres objetivos diferentes dentro de un radio de 6 metros de cada Otros.
-  - Para disparar automáticamente Firmeza, el jugador tira un Dado de Control y tres dados de situación a la vez.
-  - Los resultados se leen en el Dado de Control, modificados por los dados de situación individuales: **+1 paso** para el primer objetivo, **+2 pasos** para el segundo y **+3 pasos** para el tercero.
+Submachine guns (SMGs) are highly effective in close-quarters Combate (CQB) due to their compact size, reduced recoil for easier control during automatic fire, lighter weight, and lower ammunition bulk compared to assault rifles. These characteristics make them ideal for police work, security details, and civilian self-defense where maneuverability and rapid target engagement are prioritized over long-range accuracy or terminal ballistics.
 
-### Beneficios de Rango
-▶ **Rango 3 (Rock-n-Roll):** Cuando un Personaje llega a Rango 3 en esta especialidad, aprende a cambiar clips de manera más eficiente. La penalización por cambiar un cargador y disparar en la misma acción se reduce a +1 paso.
+### Automatic Weapon Attack Modes
+Submachine guns (and assault rifles) provide a Personaje with up to three attack options per action phase:
+- **Burst:** A hail of ammunition aimed at a single target. The Personaje receives a **-1 Bonificación de paso** to his skill check. On a Fallo Crítico, the weapon jams and requires a Ciencia técnica—repair check to unjam.
+- **Autofire:** A spray of ammunition walked across a wide area. Up to three different targets within 6 meters of each Otros can be affected.
+  - To Firmeza autofire, the player rolls one Dado de Control and three situation dice at once.
+  - The results are read off the Dado de Control, modified by the individual situation dice: **+1 step** for the first target, **+2 steps** for the second, and **+3 steps** for the third.
 
-⊗ **Rango 3 [Precisión de distancia]** Cuando un Personaje alcanza Rango 3 en esta especialidad, sabe cómo compensar la distancia. Se elimina el Penalización de paso por un tiro de media distancia y la penalización por un tiro de larga distancia se reduce en 1 paso.
+### Rango Benefits
+▶ **Rango 3 [Rock-n-Roll]:** When a Personaje reaches Rango 3 in this specialty, he learns to change clips more efficiently. The penalty for changing a clip and firing in the same action is reduced to +1 step. The penalty disappears completely at Rango 6, but it still requires 2 actions to change a clip and fire.
 
-▶ **Rango 6 [Doble disparo]** Cuando un Personaje alcanza Rango 6 en esta especialidad, puede disparar su arma dos veces en la misma acción. Un doble disparo funciona de la siguiente manera: primero, se determina el modificador base para el ataque. Luego, el Personaje tira el Dado de Control y dos dados de situación para realizar su ataque de doble disparo. El primer Dado de Situación es el modificador base necesario para realizar un ataque con un **+1 Penalización de paso** adicional; el segundo es el modificador base con un **+2 Penalización de paso** adicional. Cuando hay dos objetivos involucrados, el modificador base para el ataque es el del objetivo más difícil. Un Personaje que usa un arco puede apuntar a dos objetivos diferentes.
+▶ **Rango 6 [Autofire Master]:** When a Personaje reaches Rango 6 in this specialty, he has mastered the use of the Subfusil. Have -1 Bonificación de paso to all autofire attacks.
 
-* **Ejemplo de doble disparo:** Darsen tiene el beneficio de ataque especial de doble disparo y una puntuación de habilidad de 14. Su Dado de Situación base después de haber considerado todos los modificadores es +d4. Tira un Dado de Control (d20), un +d6 y un +d8. En los dados aparecen los números 11, 4 y 2. Esto le da a Darsen resultados de prueba de habilidades de 15 (11 + 4) y 13 (11 + 2). El primer disparo no da en el blanco, pero el segundo logra un impacto Ordinario.
+▶ **Rango 9 [Bullet Rain]:** When a Personaje reaches Rango 9 in this specialty, he is able to make every bullet count. He adds +1 to the damage of all his attacks with SMGs.
 
 ---
 
 ## Escopeta
 {{< specialty attr="DEX" untrained="yes" cost="3" >}}
 
-Este Especialidad cubre todo tipo de escopetas modernas, desde armas tradicionales de acción de bombeo y de proyectiles semiautomáticas hasta emisores de energía especializados. Las escopetas se definen por su amplia gama de tipos de munición especializada (perdigones, balas, balas de ruptura, etc.) o configuraciones de energía multimodo.
+This Especialidad covers all types of modern shotguns, from traditional pump-action and semi-automatic projectile weapons to specialized energy spread-emitters. Shotguns are defined by their wide range of specialized ammunition types (Buckshot, Slugs, Breaching rounds, etc.) or multi-mode energy settings.
 
-### Beneficios de Rango
-▶ **Rango 3 [Carga Táctica / Selección]** Cuando un Personaje llega a Rango 3 en esta especialidad, ha dominado la mecánica de su arma. Pueden **Seleccionar/cambiar tipos de munición** o reconfigurar la configuración de energía del arma como una **Acción gratuita**. Esto les permite adaptar instantáneamente el perfil de su arma a la situación táctica inmediata (por ejemplo, cambiar a una bala para un tiro de precisión o perdigones para despejar un pasillo) durante una fase Combate. Este beneficio solo se aplica a escopetas de un solo tiro en las que se carga la bala directamente en la recámara, escopetas tácticas con cargadores de alimentación paralela y escopetas con múltiples configuraciones de disparo.
+### Rango Benefits
+▶ **Rango 3 [Tactical Load / Selection]** When a Personaje reaches Rango 3 in this specialty, they have mastered the mechanics of their weapon. They can **Select/Switch Ammo types** or reconfigure weapon energy settings as a **Free Action**. This allows them to instantly adapt their weapon’s profile to the immediate tactical situation (e.g., swapping to a slug for a precision shot or buckshot for hallway clearing) during a Combate phase. This benefit only applies to single-shot shotguns where you load the round directly into the chamber, tactical shotguns with parallel-feed magazines, and shotguns with multiple fire settings.
 
-⊗ **Rango 3 [Precisión de distancia]** Cuando un Personaje alcanza Rango 3 en esta especialidad, sabe cómo compensar la distancia. Se elimina el Penalización de paso por un tiro de media distancia y la penalización por un tiro de larga distancia se reduce en 1 paso.
-
-▶ **Rango 6 [Doble disparo]** Cuando un Personaje alcanza Rango 6 en esta especialidad, puede disparar su arma dos veces en la misma acción. Un doble disparo funciona de la siguiente manera: primero, se determina el modificador base para el ataque. Luego, el Personaje tira el Dado de Control y dos dados de situación para realizar su ataque de doble disparo. El primer Dado de Situación es el modificador base necesario para realizar un ataque con un **+1 Penalización de paso** adicional; el segundo es el modificador base con un **+2 Penalización de paso** adicional. Cuando hay dos objetivos involucrados, el modificador base para el ataque es el del objetivo más difícil. Un Personaje que usa un arco puede apuntar a dos objetivos diferentes.
-
-* **Ejemplo de doble disparo:** Darsen tiene el beneficio de ataque especial de doble disparo y una puntuación de habilidad de 14. Su Dado de Situación base después de haber considerado todos los modificadores es +d4. Tira un Dado de Control (d20), un +d6 y un +d8. En los dados aparecen los números 11, 4 y 2. Esto le da a Darsen resultados de prueba de habilidades de 15 (11 + 4) y 13 (11 + 2). El primer disparo no da en el blanco, pero el segundo logra un impacto Ordinario.
+⊗ **Rango 4 [Distance Precision]** When a Personaje reaches Rango 4 in this specialty, he knows how to compensate for distance. The Penalización de paso for a medium-range shot is eliminated, and the penalty for a long-range shot is lessened by 1 step.
 
 ---
 

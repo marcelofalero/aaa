@@ -53,11 +53,7 @@ Assault rifles provide a character with up to three attack options per action ph
 ### Rank Benefits
 ▶ **Rank 3 [Rock-n-Roll]** When a character reaches rank 3 in this specialty, he learns to change clips more efficiently. The penalty for changing a clip and firing in the same action is reduced to +1 step.
 
-⊗ **Rank 3 [Distance Precision]** When a character reaches rank 3 in this specialty, he knows how to compensate for distance. The step penalty for a medium-range shot is eliminated, and the penalty for a long-range shot is lessened by 1 step.
-
-▶ **Rank 6 [Double-Shot]** When a character reaches rank 6 in this specialty, he becomes able to fire his weapon twice in the same action. A double-shot works as follows: First, the base modifier for the attack is determined. Then the character rolls the control die and two situation dice to make his double-shot attack. The first situation die is the base modifier needed to make an attack with an additional **+1 step penalty**; the second is the base modifier with an additional **+2 step penalty**. When two targets are involved, the base modifier for the attack is that of the more difficult target. A character using a bow can aim at two different targets.
-
-* **Example of double-shot:** Darsen has the double-shot special attack benefit and a skill score of 14. His base situation die after all modifiers have been considered is +d4. He rolls a control die (d20), a +d6, and a +d8. The numbers 11, 4, and 2 come up on the dice. This gives Darsen skill check results of 15 (11 + 4) and 13 (11 + 2). The first shot misses its target, but the second one scores an Ordinary hit.
+⊗ **Rank 4 [Distance Precision]** When a character reaches rank 4 in this specialty, he knows how to compensate for distance. The step penalty for a medium-range shot is eliminated, and the penalty for a long-range shot is lessened by 1 step.
 
 ---
 
@@ -69,11 +65,9 @@ This specialty skill allows a character to improve his proficiency with modern p
 ### Rank Benefits
 ▶ **Rank 3, 4 [Quick Draw]** After a character reaches rank 3 in this specialty, he can perform a quick draw with his pistol. This allows him to draw his weapon and fire it in the same phase with only a +1 penalty. As a character reaches rank 4, he can draw and fire in the same phase without any penalty.
 
-⊗ **Rank 3 [Distance Precision]** When a character reaches rank 3 in this specialty, he knows how to compensate for distance. The step penalty for a medium-range shot is eliminated, and the penalty for a long-range shot is lessened by 1 step.
-
 ▶ **Rank 6 [Double-Shot]** When a character reaches rank 6 in this specialty, he becomes able to fire his weapon twice in the same action. A double-shot works as follows: First, the base modifier for the attack is determined. Then the character rolls the control die and two situation dice to make his double-shot attack. The first situation die is the base modifier needed to make an attack with an additional **+1 step penalty**; the second is the base modifier with an additional **+2 step penalty**. When two targets are involved, the base modifier for the attack is that of the more difficult target. A character using a bow can aim at two different targets.
 
-* **Example of double-shot:** Darsen has the double-shot special attack benefit and a skill score of 14. His base situation die after all modifiers have been considered is +d4. He rolls a control die (d20), a +d6, and a +d8. The numbers 11, 4, and 2 come up on the dice. This gives Darsen skill check results of 15 (11 + 4) and 13 (11 + 2). The first shot misses its target, but the second one scores an Ordinary hit.
+**Example of double-shot:** Darsen has the double-shot special attack benefit and a skill score of 14. His base situation die after all modifiers have been considered is +d4. He rolls a control die (d20), a +d6, and a +d8. The numbers 11, 4, and 2 come up on the dice. This gives Darsen skill check results of 15 (11 + 4) and 13 (11 + 2). The first shot misses its target, but the second one scores an Ordinary hit.
 
 ---
 
@@ -86,7 +80,8 @@ This specialty skill allows a character to improve his proficiency with modern s
 
 ⊗ **Rank 3 [Distance Precision]** When a character reaches rank 3 in this specialty, he knows how to compensate for distance. The step penalty for a medium-range shot is eliminated, and the penalty for a long-range shot is lessened by 1 step.
 
-▶ **Rank 6 [Double-Shot]** When a character reaches rank 6 in this specialty, he becomes able to fire his weapon twice in the same action. A double-shot works as follows: First, the base modifier for the attack is determined. Then the character rolls the control die and two situation dice to make his double-shot attack. The first situation die is the base modifier needed to make an attack with an additional **+1 step penalty**; the second is the base modifier with an additional **+2 step penalty**. When two targets are involved, the base modifier for the attack is that of the more difficult target. A character using a bow can aim at two different targets.
+▶ **Rank 8 [Double-Shot]** When a character reaches rank 8 in this specialty, he becomes able to fire his weapon twice in the same action. A double-shot works as follows: First, the base modifier for the attack is determined. Then the character rolls the control die and two situation dice to make his double-shot attack. The first situation die is the base modifier needed to make an attack with an additional **+1 step penalty**; the second is the base modifier with an additional **+2 step penalty**. When two targets are involved, the base modifier for the attack is that of the more difficult target. A character using a bow can aim at two different targets.
+
 
 * **Example of double-shot:** Darsen has the double-shot special attack benefit and a skill score of 14. His base situation die after all modifiers have been considered is +d4. He rolls a control die (d20), a +d6, and a +d8. The numbers 11, 4, and 2 come up on the dice. This gives Darsen skill check results of 15 (11 + 4) and 13 (11 + 2). The first shot misses its target, but the second one scores an Ordinary hit.
 
@@ -97,6 +92,8 @@ This specialty skill allows a character to improve his proficiency with modern s
 
 This specialty skill allows a character to improve his proficiency with modern submachine guns of all types (small automatic weapons that fire pistol-sized cartridges) as well as energy-equivalent submachine guns.
 
+Submachine guns (SMGs) are highly effective in close-quarters combat (CQB) due to their compact size, reduced recoil for easier control during automatic fire, lighter weight, and lower ammunition bulk compared to assault rifles. These characteristics make them ideal for police work, security details, and civilian self-defense where maneuverability and rapid target engagement are prioritized over long-range accuracy or terminal ballistics.
+
 ### Automatic Weapon Attack Modes
 Submachine guns (and assault rifles) provide a character with up to three attack options per action phase:
 - **Burst:** A hail of ammunition aimed at a single target. The character receives a **-1 step bonus** to his skill check. On a Critical Failure, the weapon jams and requires a Technical Science—repair check to unjam.
@@ -105,13 +102,11 @@ Submachine guns (and assault rifles) provide a character with up to three attack
   - The results are read off the control die, modified by the individual situation dice: **+1 step** for the first target, **+2 steps** for the second, and **+3 steps** for the third.
 
 ### Rank Benefits
-▶ **Rank 3 [Rock-n-Roll]:** When a character reaches rank 3 in this specialty, he learns to change clips more efficiently. The penalty for changing a clip and firing in the same action is reduced to +1 step.
+▶ **Rank 3 [Rock-n-Roll]:** When a character reaches rank 3 in this specialty, he learns to change clips more efficiently. The penalty for changing a clip and firing in the same action is reduced to +1 step. The penalty disappears completely at rank 6, but it still requires 2 actions to change a clip and fire.
 
-⊗ **Rank 3 [Distance Precision]** When a character reaches rank 3 in this specialty, he knows how to compensate for distance. The step penalty for a medium-range shot is eliminated, and the penalty for a long-range shot is lessened by 1 step.
+▶ **Rank 6 [Autofire Master]:** When a character reaches rank 6 in this specialty, he has mastered the use of the SMG. Have -1 step bonus to all autofire attacks.
 
-▶ **Rank 6 [Double-Shot]** When a character reaches rank 6 in this specialty, he becomes able to fire his weapon twice in the same action. A double-shot works as follows: First, the base modifier for the attack is determined. Then the character rolls the control die and two situation dice to make his double-shot attack. The first situation die is the base modifier needed to make an attack with an additional **+1 step penalty**; the second is the base modifier with an additional **+2 step penalty**. When two targets are involved, the base modifier for the attack is that of the more difficult target. A character using a bow can aim at two different targets.
-
-* **Example of double-shot:** Darsen has the double-shot special attack benefit and a skill score of 14. His base situation die after all modifiers have been considered is +d4. He rolls a control die (d20), a +d6, and a +d8. The numbers 11, 4, and 2 come up on the dice. This gives Darsen skill check results of 15 (11 + 4) and 13 (11 + 2). The first shot misses its target, but the second one scores an Ordinary hit.
+▶ **Rank 9 [Bullet Rain]:** When a character reaches rank 9 in this specialty, he is able to make every bullet count. He adds +1 to the damage of all his attacks with SMGs.
 
 ---
 
@@ -123,11 +118,7 @@ This specialty skill covers all types of modern shotguns, from traditional pump-
 ### Rank Benefits
 ▶ **Rank 3 [Tactical Load / Selection]** When a character reaches rank 3 in this specialty, they have mastered the mechanics of their weapon. They can **Select/Switch Ammo types** or reconfigure weapon energy settings as a **Free Action**. This allows them to instantly adapt their weapon’s profile to the immediate tactical situation (e.g., swapping to a slug for a precision shot or buckshot for hallway clearing) during a combat phase. This benefit only applies to single-shot shotguns where you load the round directly into the chamber, tactical shotguns with parallel-feed magazines, and shotguns with multiple fire settings.
 
-⊗ **Rank 3 [Distance Precision]** When a character reaches rank 3 in this specialty, he knows how to compensate for distance. The step penalty for a medium-range shot is eliminated, and the penalty for a long-range shot is lessened by 1 step.
-
-▶ **Rank 6 [Double-Shot]** When a character reaches rank 6 in this specialty, he becomes able to fire his weapon twice in the same action. A double-shot works as follows: First, the base modifier for the attack is determined. Then the character rolls the control die and two situation dice to make his double-shot attack. The first situation die is the base modifier needed to make an attack with an additional **+1 step penalty**; the second is the base modifier with an additional **+2 step penalty**. When two targets are involved, the base modifier for the attack is that of the more difficult target. A character using a bow can aim at two different targets.
-
-* **Example of double-shot:** Darsen has the double-shot special attack benefit and a skill score of 14. His base situation die after all modifiers have been considered is +d4. He rolls a control die (d20), a +d6, and a +d8. The numbers 11, 4, and 2 come up on the dice. This gives Darsen skill check results of 15 (11 + 4) and 13 (11 + 2). The first shot misses its target, but the second one scores an Ordinary hit.
+⊗ **Rank 4 [Distance Precision]** When a character reaches rank 4 in this specialty, he knows how to compensate for distance. The step penalty for a medium-range shot is eliminated, and the penalty for a long-range shot is lessened by 1 step.
 
 ---
 
