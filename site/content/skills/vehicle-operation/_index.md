@@ -11,7 +11,7 @@ This broad skill provides a character with a basic understanding of and proficie
 ## Air vehicle
 {{< specialty attr="DEX" untrained="no" cost="5" >}}
 
-This specialty skill enables a character to become trained in the use of a specific type of air vehicle. If he wants to be skilled in the operation of more than one type of air vehicle, he must purchase and improve each specialty skill separately. Types of air vehicles include propeller planes, helicopters, private jets, commercial jets, and jet fighters.
+This specialty skill enables a character to become trained in the use of air vehicles. Types of air vehicles include propeller planes, helicopters, private jets, commercial jets, and jet fighters.
 
 ### Rank Benefits
 ⊗ **Rank 4, 8, and 12 [Improved Proficiency]** At higher ranks, the character becomes even more adept at operating this type of vehicle, receiving a situation die bonus to checks involving this specialty skill.
@@ -24,7 +24,7 @@ This specialty skill enables a character to become trained in the use of a speci
 ## Land vehicle
 {{< specialty attr="DEX" untrained="yes" cost="3" >}}
 
-This specialty skill enables a character to become trained in the use of a specific type of land vehicle. If he wants to be skilled in the operation of more than one type of land vehicle, he must purchase and improve each specialty skill separately. Types of land vehicles include automobiles, motorcycles, race cars, large trucks, and tanks and other heavy military vehicles.
+This specialty skill enables a character to become trained in the use of land vehicles. Types of land vehicles include automobiles, motorcycles, race cars, large trucks, and tanks and other heavy military vehicles.
 
 ### Rank Benefits
 ⊗ **Rank 4, 8, and 12 [Improved Proficiency]** At higher ranks, the character becomes even more adept at operating this type of vehicle, receiving a situation die bonus to checks involving this specialty skill.
@@ -37,7 +37,7 @@ This specialty skill enables a character to become trained in the use of a speci
 ## Space vehicle
 {{< specialty attr="DEX" untrained="no" cost="5" >}}
 
-This specialty skill enables a character to become trained in the use of a specific type of space vehicle. If he wants to be skilled in the operation of more than one type of space vehicle, he must purchase and improve each specialty skill separately. This skill is also used to operate the helm of large, multicrewed space vessels. Other systems on space vessels require the specialized functions of the **[System Operation](/skills/system-operation/)** broad skill. Types of space vehicles include:
+This specialty skill enables a charact  er to become trained in the use of space vehicles. This skill is also used to operate the helm of large, multicrewed space vessels. Other systems on space vessels require the specialized functions of the **[System Operation](/skills/system-operation/)** broad skill. Types of space vehicles include:
 - **Space fighters:** ships of 10 durability or less.
 - **Scouts and light freighters:** ships of 11–32 durability.
 - **Medium freighters and corvettes:** ships of 33–60 durability.
@@ -54,7 +54,7 @@ This specialty skill enables a character to become trained in the use of a speci
 ## Water vehicle
 {{< specialty attr="DEX" untrained="yes" cost="3" >}}
 
-This specialty skill enables a character to become trained in the use of a specific type of water vehicle. If he wants to be skilled in the operation of more than one type of water vehicle, he must purchase and improve each specialty skill separately. This skill is also used to operate the helm of large, multicrewed water vessels (such as battleships, submarines, and oil tankers); these require a version of the specialized functions of the **[System Operation](/skills/system-operation/)** broad skill. Types of water vehicles include canoes, rafts and rowboats, powerboats, jet skis, sailboats, large commercial vessels, large military vessels, and submersible craft.
+This specialty skill enables a character to become trained in the use of water vehicles. This skill is also used to operate the helm of large, multicrewed water vessels (such as battleships, submarines, and oil tankers); these require a version of the specialized functions of the **[System Operation](/skills/system-operation/)** broad skill. Types of water vehicles include canoes, rafts and rowboats, powerboats, jet skis, sailboats, large commercial vessels, large military vessels, and submersible craft.
 
 ### Rank Benefits
 ⊗ **Rank 4, 8, and 12 [Improved Proficiency]** At higher ranks, the character becomes even more adept at operating this type of vehicle, receiving a situation die bonus to checks involving this specialty skill.
