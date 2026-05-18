@@ -1,0 +1,67 @@
+# Rigunmor Star Consortium
+
+### Capital System:
+
+*Bazaar
+
+#### Planets
+
+*[Aleer]({{< relref "/nations/aleer_planet" >}})
+*[Bazaar]({{< relref "/nations/bazaar_planet" >}})
+
+### Description:
+Life, liberty and the pursuit of profit are their virtues. Merchants and traders, business men and smugglers. 
+
+As an enlightened society, the Star Consortium holds that life, liberty, and the pursuit of profit are inalienable rights common to all sentients. Though many nations bear such sentiments in treaty or charter, only the perspicacious Rigunmor’s recognize that life and liberty are just necessary conditions that allow humanity to pursue its noblest goal: the [Concord]({{< relref "/nations/galactic_concord" >}}) dollar. Rigunmor financial zeal and success has brought numerous accusations and slanders; the peaceful Star Consortium faces frequent condemnation as a society of thieves, smugglers, and cheats. Rigunmor’s are a forgiving people and continue to conduct business with those who naturally envy the Star Consortium.
+
+### History
+The Rigunmor Star Consortium is the only [stellar nation]({{< relref "/nations/stellar_nations" >}}) with the audacity and ability to contest Thuldan and VoidCorp claims of supremacy routinely. In large part, Rigunmor power can be traced to the Consortium’s venerable age among the stellar nations. At the midpoint of the 21st century, long before the development of the [stardrive]({{< relref "/nations/stardrive_engine" >}}) or even the mass reactor, the Consortium was born among the superpowers of Old Earth.
+
+While the superpowers presided over an era of unprecedented peace and prosperity, Old Earth knit itself into a single economy. Trade for common and cheap goods crossed the globe, and falling freight prices allowed profit-seeking entrepreneurs to leap into international trade. Independent traders flourished. Several of Earth’s great alliances eventually considered the growth of these independents as a threat. While large corporations received coveted privileges under the aegis of the superpowers, the Rigunmor found regulations and economic restrictions intruding more and more on the success of small businesses and private individuals.
+
+The Rigunmor Consortium began as one of many trading guilds, consortiums, and organizations created by businesses to protect their interest. By banding together, smaller companies found that they could greatly increase their influence over both corporations and governments. Some of these business unions and cooperatives died when met with even tougher resistance from governments and competitive corporations. Others evolved into corporations themselves.
+
+By the 22nd century, the Rigunmor Consortium had not only survived, but had developed into the largest economic affiliation of its type. The Consortium preserved the sovereignty of its individual members and allowed unsupervised internal competition. Unlike most of its kind, the Rigunmor Consortium did not specialize in the production of a specific product. Instead, the Rigunmor’s came to be known as specialists in the art of the deal itself-traders, financiers, and sometime swindlers. Simply put, Rigunmor’s made their profits arranging for the transfer of product and finance from one party to another. The psychology of convincing both seller and buyer that they had made a good deal came naturally to the Rigunmor’s.
+
+Humanity leapt to the stars in a chaotic, disorderly rush, but this only further catalyzed Rigunmor success. Without the Terran powers to frustrate their efforts, the Rigunmor’s became a popular source of trade goods among the early colonies. Rigunmor driveships traveled between colonies exchanging the necessities of life: food, clothing, technical gear, and sometimes water. Rigunmor trade proved especially vital for independent colonies such as the [Hatire Community]({{< relref "/nations/hatire_community" >}}) and the [Nariac Domain]({{< relref "/nations/nariac_domain" >}}).
+
+In time, the Rigunmor guilders saw that their own success would be challenged in the years to come. As the fledgling [stellar nation]({{< relref "/nations/stellar_nations" >}})s gained power and became self-sufficient, the need for Rigunmor trading vessels waned, though it never vanished. Moreover, as early as 2241 they saw that the stellar governments and the Terran superpowers were destined to clash. Interstellar war, as a Rigunmor noted, could be bad for business.
+
+No longer only traders, ambitious Rigunmor vessels explored and colonized a region of space to call their own. One of the first of these systems produced the capital planet called [Bazaar]({{< relref "/nations/bazaar_planet" >}}), a center of Rigunmor trading to this day. Later, Rigunmor scouts discovered a system in 2273 that had been fully explored by an alien species, the [Mechalus]({{< relref "/nations/mechalus" >}}). Without the [stardrive]({{< relref "/nations/stardrive_engine" >}}), the [Mechalus]({{< relref "/nations/mechalus" >}}) had been limited to a single star. Despite this, many [Mechalus]({{< relref "/nations/mechalus" >}}) technologies rivaled the best humanity had. The Rigunmor deal with the [Mechalus]({{< relref "/nations/mechalus" >}}) was quite simple; the [Mechalus]({{< relref "/nations/mechalus" >}}) system joined the Star Consortium peacefully, but individual [Mechalus]({{< relref "/nations/mechalus" >}}) were free to explore the galaxy with the [stardrive]({{< relref "/nations/stardrive_engine" >}}).
+
+The [2299 Guilder Conclave]({{< relref "/nations/2299_guilder_conclave" >}}) was the largest such gathering to date. The resolution of that council created the Rigunmor Star Consortium as a [stellar nation]({{< relref "/nations/stellar_nations" >}}), joining the [Thuldan Empire]({{< relref "/nations/thuldan_empire" >}}) and [VoidCorp]({{< relref "/nations/voidcorp" >}}) in leaving the [Terran Empire]({{< relref "/nations/terran_empire" >}}). It was a risky decision, but the timing was too convenient to pass up. The Rigunmor’s were dragged into the [First Galactic War]({{< relref "/nations/first_galactic_war" >}}).
+
+#### The First Galactic War
+[GW1]({{< relref "/nations/first_galactic_war" >}}) demanded yet another division of Rigunmor labor. Joining with the [Thuldan]({{< relref "/nations/thuldan_empire" >}})’s and their allies to gain independence, Rigunmor’s took up the mantle of warriors as well as traders and explorers. Although thousands of Rigunmor’s fought valiantly, the Consortium’s supply lines were even more critical to the war efforts of the young [stellar nation]({{< relref "/nations/stellar_nations" >}})s.
+
+#### [The Second Galactic War]({{< relref "/nations/second_galactic_war" >}})
+Unlike the hawks in several other stellar nations, Rigunmor profit analysts did not advocate fomenting war. Indeed, although most historians consider the Star Consortium one of the war’s few victors, the Rigunmor’s were among the first to join Warthen Hale’s quest for peace.
+
+Rigunmor victories are easy to trace. for decades, the Star Consortium literally was the richest nation, and that reputation made enemies hesitate to attack early in the war. In addition, Rigunmor wealth made it easier to convince the [Union of Sol]({{< relref "/nations/union_of_sol" >}}), [Austrin-Ontis]({{< relref "/nations/austrin_ontis_unlimited" >}}), and [StarMech]({{< relref "/nations/starmech_collective" >}}) to join [Profit]({{< relref "/nations/profit_alliance" >}}), an alliance supporting the causes of free trade. For the Rigunmor’s, the alliance was a triumph. Large sections of their borders were secured. Division within [VoidCorp]({{< relref "/nations/voidcorp" >}}) only cemented what was clear to many: If anyone could claim victory in [GW2]({{< relref "/nations/second_galactic_war" >}}), it was the traders.
+
+#### Today
+The Rigunmor Star Consortium organizes itself on a principle of fairness. In the Consortium, background, birth, and ethnic origin are unimportant, because the [stellar nation]({{< relref "/nations/stellar_nations" >}}) measures success by a much simpler equation: “Let he with the most rule.” After all, reason the Rigunmor’s, only victors in the fields of finance and profiteering have the talents necessary to administer the Consortium. And only the wealthy can command respect and obedience from the Rigunmor masses.
+
+Auditors annually assess each Rigunmor’s net worth to determine his or her position, both within the Consortium as a whole and inside the bureaucracy, if the Rigunmor takes up government service. The plutocracy is led by the [Executive Guilder]({{< relref "/nations/executive_guilder" >}}), the richest individual in the Consortium. Today the position is held by Atha Oneagle, a post she has held for the last seven years. Alison Breel, her predecessor, held the reins of power for 31 years, until her death. The [Executive Guilder]({{< relref "/nations/executive_guilder" >}}) is backed by an Advisory Board, overseeing the mighty Rigunmor economy. The Board consists of the ten individuals whose wealth totals slightly less than that of the [Executive Guilder]({{< relref "/nations/executive_guilder" >}}).
+
+The Rigunmor military follows a similarly unusual command structure. Military rank, like everything else, is up for sale. While the practice causes occasional discipline problems, Rigunmor avarice does seem to hold its military together. Bounties, plunder, and salvage are common practice; these customs often occupy the mind of ship crews and army brigades, who divide spoils by rank.
+
+Mobility characterizes Rigunmor society. Just as interstellar markets can decide Rigunmor leadership, the culture as a whole welcomes an unmatched upward and downward social mobility. As long as he shows off his wealth, the Rigunmor treat a foreigner or immigrant with respect. Of course, yesterday’s golden child can quickly become today’s has-been.
+
+Rigunmor’s also favor physical mobility. Traveling the stars, they look for new businesses’s to finance, expeditions to exploit, and any means to make a buck. Even the [Executive Guilder]({{< relref "/nations/executive_guilder" >}}), the Advisory Board, and the upper government refuse to stay put. The Consortium’s leaders place their administration in a fortress ship, the [Oneagle]({{< relref "/nations/oneagle_ship" >}}).  Indeed the transfer of power in the Consortium is always accompanied by the transfer of the [Oneagle’]({{< relref "/nations/oneagle_ship" >}})s ownership to the new [Executive Guilder]({{< relref "/nations/executive_guilder" >}}). The largest fortress ship ever, it roams Rigunmor space issuing regulations and decrees. Reports claim that the [Oneagle]({{< relref "/nations/oneagle_ship" >}})’s [starfall]({{< relref "/nations/starfall" >}})s exceed 60 light-years.
+
+The arrangement pleases the denizens of [Bazaar]({{< relref "/nations/bazaar_planet" >}}), the Rigunmor capital. Freed from the imposition of serving as an administrative center, [Bazaar]({{< relref "/nations/bazaar_planet" >}}) can focus on the important thing: making money. Everything’s for sale in the capital, even money itself. The decentralized Rigunmor economy prevents Bazaar from assuming the role of the true heart of the Consortium.
+
+The [Mechalus]({{< relref "/nations/mechalus" >}}) hold close ties to the Consortium. The [Mechalus]({{< relref "/nations/mechalus" >}}) [homeworld]({{< relref "/nations/aleer_planet" >}}) falls officially under Rigunmor jurisdiction, and [Mechalus]({{< relref "/nations/mechalus" >}}) are as free to come and go as any other citizen of the Consortium. In truth, the [Mechalus]({{< relref "/nations/mechalus" >}}) have absorbed few Rigunmor traits, but the relationship between the Consortium and [Aleer]({{< relref "/nations/aleer_planet" >}}) – the [Mechalus]({{< relref "/nations/mechalus" >}}) [homeworld]({{< relref "/nations/aleer_planet" >}}) – is healthy. [Mechalus]({{< relref "/nations/mechalus" >}}) assistance during [GW2]({{< relref "/nations/second_galactic_war" >}}) was a decisive factor against [VoidCorp]({{< relref "/nations/voidcorp" >}}) forces.
+
+In the [Verge]({{< relref "/nations/verge" >}}), the Star Consortium was recently outmaneuvered by the [United Lison State]({{< relref "/nations/united_lison_state" >}}) in the [Oberon system]({{< relref "/nations/oberon_system" >}}), which has been one of the Consortium’s richest sources of rhodium before the war. Persistent rumors claim that the Rigunmor’s plan to retake [Oberon]({{< relref "/nations/oberon_system" >}}) by force
+
+Ringunmors are a nation of traders. Of course, simple honesty is not the approach that most Rigunmors choose to operate their business with. The Rigunmor way of life is subtle and manipulative; the law of the Rigunmor is to let the buyer beware. Ambitious young traders travel far from home seeking a chance for riches.
+
+Rigunmors gain a -1 step bonus to all uses of the Interaction and Deception broad and specialty skills. In addition, Rigunmors pay 1 point less than the listed cost for the Interaction-bargain skill. They may begin play with the Filthy Rich perk for free or they gain 6 more skill points instead.
+
+### Game Benefits:
+All Rigunmor heroes gain a -1 step bonus to all Interaction and Deception broad and specialty skill attempts
+
+### Sources
+*Star*Drive Campaign Setting - ISBN 0-7869-0738-X*

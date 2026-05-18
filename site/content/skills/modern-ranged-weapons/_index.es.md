@@ -40,55 +40,91 @@ Cuando un Personaje usa cualquier arma a distancia, ya sea primitiva o moderna, 
 ## Fusil de asalto
 {{< specialty attr="DEX" untrained="yes" cost="3" >}}
 
-Este Especialidad cubre rifles automáticos: armas de infantería estándar capaces de realizar disparos selectivos y modos automáticos que utilizan cartuchos de calibre de rifle.
+Este Especialidad cubre rifles automáticos: armas de infantería estándar capaces de realizar disparos selectivos y modos automáticos que utilizan cartuchos de calibre de rifle o celdas de energía estándar. La descripción de cada arma indicará sus modos de disparo permitidos y su perfil de Autofire específico.
 
-### Modos de ataque automático con armas
+### Modos de ataque
 Los rifles de asalto brindan al Personaje hasta tres opciones de ataque por fase de acción:
-- **Fuego:** Un solo ataque a un solo objetivo. (Control estándar + Dado de Situación).
-- **Explosión:** Una lluvia de munición dirigida a un único objetivo. El Personaje recibe un **-1 Bonificación de paso** en su prueba de habilidad.
-- **Autofire:** Una ráfaga de munición recorrió un área amplia. Pueden verse afectados hasta tres objetivos diferentes dentro de un radio de 6 metros de cada Otros.
-  - Para disparar automáticamente Firmeza, el jugador tira un Dado de Control y tres dados de situación a la vez.
-  - Los resultados se leen en el Dado de Control, modificados por los dados de situación individuales: **+1 paso** para el primer objetivo, **+2 pasos** para el segundo y **+3 pasos** para el tercero.
+
+**Disparo** Un ataque único y preciso a un único objetivo. (Resolución: control estándar + Dado de Situación. Costo de munición: 1 ronda).
+
+**Explosión** Una lluvia de munición ajustada y controlada dirigida a un solo objetivo para garantizar un impacto antes de que el retroceso desplace el cañón. (Resolución: El Personaje recibe un -1 Bonificación de paso en su prueba de habilidad contra el objetivo. Costo de munición: 3 rondas).
+
+**Autodisparo** Un bombardeo continuo destinado a saturar un área o atravesar un vector. La descripción del arma determina si utiliza el perfil Extendido o Línea. (Costo de munición: 10 rondas o drenaje de energía equivalente).
+
+**Perfil A: Distribución**
+El área (objetivo y cuadrados adyacentes): el jugador apunta a un solo cuadrado. El ataque afecta a esa casilla central y a las 8 casillas inmediatamente adyacentes.
+Resolución: El jugador realiza una única tirada de ataque con un -1 Bonificación de paso contra el objetivo principal en el cuadrado central.
+La propagación: todas las entidades Otros (amigas o enemigas) en los cuadrados adyacentes reciben automáticamente daño Ordinario.
+Reacción: Los objetivos en las casillas adyacentes pueden evitar el daño si tienen éxito en una prueba de Esquivar o usan una acción para realizar una prueba de Golpear la cubierta. Esta acción se utiliza en lugar de su acción normal del turno.
+
+**Perfil B: Línea**
+El área (lineal): el jugador designa una línea recta a lo largo de la cuadrícula. El ataque afecta a todas las entidades que ocupan una casilla tocada por esa línea.
+Resolución: el jugador realiza una única tirada de ataque para determinar el daño contra los objetivos atrapados en el rayo.
+El atacante aplica un -1 Bonificación de paso contra el objetivo más cercano en la línea, ningún modificador contra el segundo y un +1 Penalización de paso contra el tercer objetivo más lejano. El rayo pierde coherencia letal después del tercer objetivo.
 
 ### Beneficios de Rango
-▶ **Rango 3 [Rock-n-Roll]** Cuando un Personaje llega a Rango 3 en esta especialidad, aprende a cambiar clips de manera más eficiente. La penalización por cambiar un cargador y disparar en la misma acción se reduce a +1 paso.
 
-⊗ **Rango 3 [Precisión de distancia]** Cuando un Personaje alcanza Rango 3 en esta especialidad, sabe cómo compensar la distancia. Se elimina el Penalización de paso por un tiro de media distancia y la penalización por un tiro de larga distancia se reduce en 1 paso.
+▶ **Rango 3 [Rock-n-Roll]** Cuando un Personaje alcanza Rango 3 en esta especialidad, aprende a cambiar clips de manera más eficiente. La penalización por cambiar un cargador y disparar en la misma acción se reduce a un paso de +1.
 
-▶ **Rango 6 [Doble disparo]** Cuando un Personaje alcanza Rango 6 en esta especialidad, puede disparar su arma dos veces en la misma acción. Un doble disparo funciona de la siguiente manera: primero, se determina el modificador base para el ataque. Luego, el Personaje tira el Dado de Control y dos dados de situación para realizar su ataque de doble disparo. El primer Dado de Situación es el modificador base necesario para realizar un ataque con un **+1 Penalización de paso** adicional; el segundo es el modificador base con un **+2 Penalización de paso** adicional. Cuando hay dos objetivos involucrados, el modificador base para el ataque es el del objetivo más difícil. Un Personaje que usa un arco puede apuntar a dos objetivos diferentes.
+⊗ **Rango 4 [Precisión de distancia]** Cuando un Personaje alcanza Rango 4 en esta especialidad, saben cómo compensar la caída de la bala y la alineación óptica. Se elimina el Penalización de paso por un tiro de media distancia y la penalización por un tiro de larga distancia se reduce en 1 paso.
 
-* **Ejemplo de doble disparo:** Darsen tiene el beneficio de ataque especial de doble disparo y una puntuación de habilidad de 14. Su Dado de Situación base después de haber considerado todos los modificadores es +d4. Tira un Dado de Control (d20), un +d6 y un +d8. En los dados aparecen los números 11, 4 y 2. Esto le da a Darsen resultados de prueba de habilidades de 15 (11 + 4) y 13 (11 + 2). El primer disparo no da en el blanco, pero el segundo logra un impacto Ordinario.
+▶ **Rango 6 [Ángulos de supresión]** Cuando un Personaje alcanza Rango 6, sabe exactamente cómo dirigir su fuego para atrapar a un enemigo. Cuando el Personaje usa el perfil Autofire (Spread), los enemigos atrapados en los cuadrados adyacentes (Anillo 2) sufren un +1 Penalización de paso en su prueba de Esquivar o en su reacción al golpear la cubierta.
+
+⊗ **Rango 9 [Control de retroceso absoluto]** Cuando un Personaje alcanza Rango 9 en esta especialidad, logra un dominio perfecto de Físico sobre la acción del arma. El Bonificación de paso para usar el modo de ataque Burst aumenta de un paso de -1 a un Bonificación de paso -2, lo que aumenta enormemente la probabilidad de infligir daño de alto nivel a un solo objetivo.
 
 ---
 
 ## Pistola
 {{< specialty attr="DEX" untrained="yes" cost="3" >}}
 
-Este Especialidad permite a un Personaje mejorar su competencia con pistolas modernas de todo tipo, incluidas armas de proyectiles y de energía.
+Este Especialidad permite que un Personaje mejore su competencia con pistolas modernas de todo tipo. Estas armas carecen del alcance de los rifles y del volumen del Armas pesadas, pero destacan en movilidad, tiempo de reacción y economía de acción en espacios reducidos.
 
-### Beneficios de Rango
-▶ **Rango 3, 4 [Quick Draw]** Después de que un Personaje alcance Rango 3 en esta especialidad, puede realizar un sorteo rápido con su Pistola. Esto le permite sacar su arma y dispararla en la misma fase con sólo una penalización de +1. Cuando un Personaje llega a Rango 4, puede desenvainar y disparar en la misma fase sin ninguna penalización.
+## Modos de ataque
 
-⊗ **Rango 3 [Precisión de distancia]** Cuando un Personaje alcanza Rango 3 en esta especialidad, sabe cómo compensar la distancia. Se elimina el Penalización de paso por un tiro de media distancia y la penalización por un tiro de larga distancia se reduce en 1 paso.
+### Modos de ataque con pistola única
+Al empuñar un solo Pistola, un Personaje está limitado por la acción Físico del gatillo y la velocidad de ciclo del arma. Tienen dos opciones:
 
-▶ **Rango 6 [Doble disparo]** Cuando un Personaje alcanza Rango 6 en esta especialidad, puede disparar su arma dos veces en la misma acción. Un doble disparo funciona de la siguiente manera: primero, se determina el modificador base para el ataque. Luego, el Personaje tira el Dado de Control y dos dados de situación para realizar su ataque de doble disparo. El primer Dado de Situación es el modificador base necesario para realizar un ataque con un **+1 Penalización de paso** adicional; el segundo es el modificador base con un **+2 Penalización de paso** adicional. Cuando hay dos objetivos involucrados, el modificador base para el ataque es el del objetivo más difícil. Un Personaje que usa un arco puede apuntar a dos objetivos diferentes.
+**Snap Fire** Un ataque rápido a un solo objetivo. (Costo de acción: 1 fase de acción. Resolución: control estándar + Dado de Situación. Costo de munición: 1 ronda).
 
-* **Ejemplo de doble disparo:** Darsen tiene el beneficio de ataque especial de doble disparo y una puntuación de habilidad de 14. Su Dado de Situación base después de haber considerado todos los modificadores es +d4. Tira un Dado de Control (d20), un +d6 y un +d8. En los dados aparecen los números 11, 4 y 2. Esto le da a Darsen resultados de prueba de habilidades de 15 (11 + 4) y 13 (11 + 2). El primer disparo no da en el blanco, pero el segundo logra un impacto Ordinario.
+**Doble toque** El Personaje gira rápidamente el arma dos veces, ya sea en el mismo objetivo o en transición a un segundo objetivo en la misma dirección general. (Coste de acción: 2 acciones realizadas en la misma fase. Resolución: El Personaje realiza dos tiradas de ataque separadas, ambas sufriendo un +2 Penalización de paso. Costo de munición: 2 rondas).
+
+### Modos de ataque con doble empuñadura (Akimbo)
+Al empuñar dos pistolas, el Personaje combina sus reservas de municiones y desbloquea la capacidad de alterar la economía de la acción, sustituyendo el tiempo secuencial por disparos simultáneos:
+
+**Enfocar objetivo** El Personaje apunta ambas armas a un solo objetivo y dispara exactamente en el mismo momento para garantizar un impacto concentrado. (Costo de acción: 1 fase de acción. Resolución: el Personaje recibe un Bonificación de paso de -1 en su prueba de habilidad contra el objetivo. Costo de munición: 2 rondas, 1 de cada arma).
+
+**Objetivo dividido** El Personaje ataca simultáneamente dos objetivos separados. (Costo de acción: 1 fase de acción. Resolución: el Personaje realiza dos tiradas de ataque separadas. La mano principal sufre un Penalización de paso +2 y la mano secundaria sufre un Penalización de paso +4. Si el Personaje posee el rasgo Ambidestreza, la penalización de la mano secundaria se reduce, lo que hace que las tiradas sean +2 / +2. Costo de munición: 2 rondas, 1 de cada arma).
+
+## Beneficios de Rango
+⊗ **Rango 1 [Pistola CQB]** Cuando un Personaje alcanza Rango 2 en esta especialidad, la prueba recibe -3 Bonificación de paso mientras dispara a rango cero.
+
+▶ **Rango 3 [Quick Draw]** Cuando un Personaje alcanza Rango 3 en esta especialidad, puede limpiar su funda rápidamente. El Personaje puede sacar su Pistola (o pistolas) y disparar en la misma fase de acción con solo un +1 Penalización de paso.
+
+▶ **Rango 4 [Lightning Draw]** Cuando un Personaje alcanza Rango 4, el sorteo se vuelve instintivo. El Personaje puede dibujar y disparar en la misma fase de acción sin penalización alguna.
+
+▶ **Rango 6 [Coordinación de doble empuñadura]** Cuando un Personaje alcanza Rango 6, su visión periférica y control de retroceso mejoran drásticamente. Cuando se utilizan los modos de doble empuñadura de Objetivo dividido, la penalización por ambos disparos se reduce en 1 paso (por ejemplo, un Personaje con Ambidestreza que usa Objetivo dividido ahora obtiene +1 / +1).
+
+▶ **Rango 9 [Akimbo Mastery]** Cuando un Personaje alcanza Rango 9, puede operar dos armas tan perfectamente como una. Cuando se utiliza el modo de doble empuñadura de objetivo dividido, la penalización por ambos disparos se reduce en 2 pasos (el Personaje dispara a +0/+2. O +0/+0 para un Personaje con ambidestreza).
 
 ---
 
 ## Fusil de asalto
 {{< specialty attr="DEX" untrained="yes" cost="3" >}}
 
-Este Especialidad permite a un Personaje mejorar su competencia con rifles de tiro simple, rifles de francotirador y rifles de caza modernos.
+Este Especialidad cubre el dominio de rifles modernos de tiro simple, rifles de francotirador, rifles de caza y rifles láser de precisión. Estas armas carecen de capacidad de disparo automático, pero destacan en alcance y penetración de objetivos.
+
+## Modos de ataque
+**Disparo** Un ataque único y preciso a un único objetivo. (Resolución: control estándar + Dado de Situación. Costo de munición: 1 ronda).
+
 ### Beneficios de Rango
-▶ **Rango 3 [Apunte mejorado]** Cuando un Personaje alcanza Rango 3 en esta especialidad, puede alcanzar un objetivo con más confiabilidad. Esta mejora en la precisión se traduce en una **bonificación de -1** para el Dado de Situación por cualquier ataque con rifle de un solo disparo que realice el Personaje.
 
-⊗ **Rango 3 [Precisión de distancia]** Cuando un Personaje alcanza Rango 3 en esta especialidad, sabe cómo compensar la distancia. Se elimina el Penalización de paso por un tiro de media distancia y la penalización por un tiro de larga distancia se reduce en 1 paso.
+▶ **Rango 3 [Familiarizidad óptica]** Cuando un Personaje alcanza Rango 3 en esta especialidad, se familiariza íntimamente con la óptica de su arma y se estabiliza mucho más rápido que un tirador estándar. Cuando el Personaje usa la acción principal de apuntar, su primera ronda de apuntar otorga un 2-Bonificación de paso en lugar del 1-Bonificación de paso estándar. (Las rondas posteriores de apuntar añaden 1 paso como de costumbre, hasta el máximo del sistema).
 
-▶ **Rango 6 [Doble disparo]** Cuando un Personaje alcanza Rango 6 en esta especialidad, puede disparar su arma dos veces en la misma acción. Un doble disparo funciona de la siguiente manera: primero, se determina el modificador base para el ataque. Luego, el Personaje tira el Dado de Control y dos dados de situación para realizar su ataque de doble disparo. El primer Dado de Situación es el modificador base necesario para realizar un ataque con un **+1 Penalización de paso** adicional; el segundo es el modificador base con un **+2 Penalización de paso** adicional. Cuando hay dos objetivos involucrados, el modificador base para el ataque es el del objetivo más difícil. Un Personaje que usa un arco puede apuntar a dos objetivos diferentes.
+⊗ **Rango 4 [Precisión de distancia]** Cuando un Personaje alcanza Rango 4 en esta especialidad, sabe cómo compensar la caída de bala, el viento y la distancia. Se elimina el Penalización de paso por un tiro de media distancia y la penalización por un tiro de larga distancia se reduce en 1 paso.
 
-* **Ejemplo de doble disparo:** Darsen tiene el beneficio de ataque especial de doble disparo y una puntuación de habilidad de 14. Su Dado de Situación base después de haber considerado todos los modificadores es +d4. Tira un Dado de Control (d20), un +d6 y un +d8. En los dados aparecen los números 11, 4 y 2. Esto le da a Darsen resultados de prueba de habilidades de 15 (11 + 4) y 13 (11 + 2). El primer disparo no da en el blanco, pero el segundo logra un impacto Ordinario.
+▶ **Rango 8 [Disparo de francotirador]** Cuando un Personaje alcanza Rango 8, sabe cómo explotar perfectamente los huecos del blindaje y los puntos débiles estructurales con rondas de alto calibre. Si el Personaje dispara un rifle después de acumular el máximo de 3 rondas de puntería, el disparo es tan preciso que pasa por alto la mayor parte de la protección del objetivo. El objetivo debe tratar todos los dados de armadura lanzados para resistir el ataque como si hubieran obtenido su valor mínimo posible (todos los dados cuentan como 1; por ejemplo, un valor de armadura de 2d4 o 1d6+1 proporciona exactamente 2 puntos de reducción de daño).
+
+▶ **Rango 12 [Master Sniper]** Cuando el Personaje alcanza Rango 12, la letalidad de Sniper Shot aumenta. Además de la negación de armadura, el daño final infligido por un disparo completamente apuntado se trata como un nivel superior (por ejemplo, Ordinario se convierte en Bueno).
 
 ---
 
@@ -96,6 +132,8 @@ Este Especialidad permite a un Personaje mejorar su competencia con rifles de ti
 {{< specialty attr="DEX" untrained="yes" cost="3" >}}
 
 Este Especialidad permite a un Personaje mejorar su competencia con metralletas modernas de todo tipo (pequeñas armas automáticas que disparan cartuchos del tamaño de Pistola), así como con metralletas de energía equivalente.
+
+Las metralletas (SMG) son muy efectivas en espacios reducidos Combate (CQB) debido a su tamaño compacto, retroceso reducido para un control más fácil durante el disparo automático, peso más liviano y menor volumen de munición en comparación con los rifles de asalto. Estas características los hacen ideales para el trabajo policial, detalles de seguridad y autodefensa civil donde se prioriza la maniobrabilidad y el rápido ataque al objetivo sobre la precisión de largo alcance o la balística terminal.
 
 ### Modos de ataque automático con armas
 Las metralletas (y los rifles de asalto) proporcionan al Personaje hasta tres opciones de ataque por fase de acción:
@@ -105,13 +143,11 @@ Las metralletas (y los rifles de asalto) proporcionan al Personaje hasta tres op
   - Los resultados se leen en el Dado de Control, modificados por los dados de situación individuales: **+1 paso** para el primer objetivo, **+2 pasos** para el segundo y **+3 pasos** para el tercero.
 
 ### Beneficios de Rango
-▶ **Rango 3 (Rock-n-Roll):** Cuando un Personaje llega a Rango 3 en esta especialidad, aprende a cambiar clips de manera más eficiente. La penalización por cambiar un cargador y disparar en la misma acción se reduce a +1 paso.
+▶ **Rango 3 (Rock-n-Roll):** Cuando un Personaje llega a Rango 3 en esta especialidad, aprende a cambiar clips de manera más eficiente. La penalización por cambiar un cargador y disparar en la misma acción se reduce a +1 paso. La penalización desaparece por completo en Rango 6, pero aún requiere 2 acciones para cambiar un cargador y disparar.
 
-⊗ **Rango 3 [Precisión de distancia]** Cuando un Personaje alcanza Rango 3 en esta especialidad, sabe cómo compensar la distancia. Se elimina el Penalización de paso por un tiro de media distancia y la penalización por un tiro de larga distancia se reduce en 1 paso.
+▶ **Rango 6 (Autofire Master):** Cuando un Personaje alcanza Rango 6 en esta especialidad, domina el uso del Subfusil. Tienes -1 Bonificación de paso a todos los ataques de disparo automático.
 
-▶ **Rango 6 [Doble disparo]** Cuando un Personaje alcanza Rango 6 en esta especialidad, puede disparar su arma dos veces en la misma acción. Un doble disparo funciona de la siguiente manera: primero, se determina el modificador base para el ataque. Luego, el Personaje tira el Dado de Control y dos dados de situación para realizar su ataque de doble disparo. El primer Dado de Situación es el modificador base necesario para realizar un ataque con un **+1 Penalización de paso** adicional; el segundo es el modificador base con un **+2 Penalización de paso** adicional. Cuando hay dos objetivos involucrados, el modificador base para el ataque es el del objetivo más difícil. Un Personaje que usa un arco puede apuntar a dos objetivos diferentes.
-
-* **Ejemplo de doble disparo:** Darsen tiene el beneficio de ataque especial de doble disparo y una puntuación de habilidad de 14. Su Dado de Situación base después de haber considerado todos los modificadores es +d4. Tira un Dado de Control (d20), un +d6 y un +d8. En los dados aparecen los números 11, 4 y 2. Esto le da a Darsen resultados de prueba de habilidades de 15 (11 + 4) y 13 (11 + 2). El primer disparo no da en el blanco, pero el segundo logra un impacto Ordinario.
+▶ **Rango 9 (Bullet Rain):** Cuando un Personaje alcanza Rango 9 en esta especialidad, puede hacer que cada bala cuente. Agrega +1 al daño de todos sus ataques con SMG.
 
 ---
 
@@ -120,14 +156,21 @@ Las metralletas (y los rifles de asalto) proporcionan al Personaje hasta tres op
 
 Este Especialidad cubre todo tipo de escopetas modernas, desde armas tradicionales de acción de bombeo y de proyectiles semiautomáticas hasta emisores de energía especializados. Las escopetas se definen por su amplia gama de tipos de munición especializada (perdigones, balas, balas de ruptura, etc.) o configuraciones de energía multimodo.
 
+### Modos de ataque
+Los rifles de asalto brindan al Personaje hasta tres opciones de ataque por fase de acción:
+
+**Disparo** Un ataque único y preciso a un único objetivo. (Resolución: control estándar + Dado de Situación. Costo de munición: 1 ronda).
+
+**Explosión** Una lluvia de munición ajustada y controlada dirigida a un solo objetivo para garantizar un impacto antes de que el retroceso desplace el cañón. (Resolución: El Personaje recibe un -1 Bonificación de paso en su prueba de habilidad contra el objetivo. Costo de munición: 3 rondas del mismo tipo).
+
+**Cono** Una amplia dispersión a corta distancia. Por lo general, carece de poder, pero es útil en circunstancias específicas. (Resolución: el Personaje recibe un -1 Bonificación de paso en su prueba de habilidad contra el objetivo principal. Todas las entidades Otros (amigas o enemigas) en los cuadrados adyacentes reciben automáticamente daño Ordinario. Costo de munición: 1 ronda, ejemplos de este tipo de munición incluyen: aliento de dragón, microfragmentación, chem-spry, flechas escasas, etc.).
+
 ### Beneficios de Rango
-▶ **Rango 3 [Carga Táctica / Selección]** Cuando un Personaje llega a Rango 3 en esta especialidad, ha dominado la mecánica de su arma. Pueden **Seleccionar/cambiar tipos de munición** o reconfigurar la configuración de energía del arma como una **Acción gratuita**. Esto les permite adaptar instantáneamente el perfil de su arma a la situación táctica inmediata (por ejemplo, cambiar a una bala para un tiro de precisión o perdigones para despejar un pasillo) durante una fase Combate. Este beneficio solo se aplica a escopetas de un solo tiro en las que se carga la bala directamente en la recámara, escopetas tácticas con cargadores de alimentación paralela y escopetas con múltiples configuraciones de disparo.
+⊗ **Rango 2 [Manejo de Escopeta en espacios reducidos]** Cuando un Personaje alcanza Rango 2 en esta especialidad, la prueba recibe -3 Bonificación de paso mientras usa rondas tipo cono o configuraciones de disparo a rango cero, para apuntar a un solo objetivo.
 
-⊗ **Rango 3 [Precisión de distancia]** Cuando un Personaje alcanza Rango 3 en esta especialidad, sabe cómo compensar la distancia. Se elimina el Penalización de paso por un tiro de media distancia y la penalización por un tiro de larga distancia se reduce en 1 paso.
+▶ **Rango 3 [Carga Táctica / Selección]** Cuando un Personaje llega a Rango 3 en esta especialidad, ha dominado la mecánica de su arma. Pueden **Seleccionar/cambiar tipos de munición** o reconfigurar la configuración de energía del arma como una **Acción gratuita**. Esto les permite adaptar instantáneamente el perfil de su arma a la situación táctica inmediata (por ejemplo, cambiar a una bala para un tiro de precisión o perdigones para despejar un pasillo) durante una fase Combate. Este beneficio solo se aplica a escopetas con múltiples sistemas de alimentación, como escopetas de revólver, cargadores giratorios paralelos, cargadores de tambor y la mayoría de las armas similares a escopetas de energía con patrones o configuraciones de disparo seleccionables.
 
-▶ **Rango 6 [Doble disparo]** Cuando un Personaje alcanza Rango 6 en esta especialidad, puede disparar su arma dos veces en la misma acción. Un doble disparo funciona de la siguiente manera: primero, se determina el modificador base para el ataque. Luego, el Personaje tira el Dado de Control y dos dados de situación para realizar su ataque de doble disparo. El primer Dado de Situación es el modificador base necesario para realizar un ataque con un **+1 Penalización de paso** adicional; el segundo es el modificador base con un **+2 Penalización de paso** adicional. Cuando hay dos objetivos involucrados, el modificador base para el ataque es el del objetivo más difícil. Un Personaje que usa un arco puede apuntar a dos objetivos diferentes.
-
-* **Ejemplo de doble disparo:** Darsen tiene el beneficio de ataque especial de doble disparo y una puntuación de habilidad de 14. Su Dado de Situación base después de haber considerado todos los modificadores es +d4. Tira un Dado de Control (d20), un +d6 y un +d8. En los dados aparecen los números 11, 4 y 2. Esto le da a Darsen resultados de prueba de habilidades de 15 (11 + 4) y 13 (11 + 2). El primer disparo no da en el blanco, pero el segundo logra un impacto Ordinario.
+⊗ **Rango 4 [Precisión de distancia]** Cuando un Personaje alcanza Rango 4 en esta especialidad, sabe cómo compensar la distancia. Se elimina el Penalización de paso por un tiro de media distancia y la penalización por un tiro de larga distancia se reduce en 1 paso.
 
 ---
 

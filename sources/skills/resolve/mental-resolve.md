@@ -13,7 +13,8 @@ rank_benefits:
 name: Mental resolve
 ---
 
-This specialty skill is used to determine a character''s ability to cope with emotional or mental stress of all kinds. The higher the rank, the more resistant he is to emotional trauma, fear, panic, madness, insanity, mind control techniques, and mental powers. When a character is confronted with debilitating effects, he can make a Mental Resolve check to set the trauma aside and act without hindrance.
+This specialty skill is used to determine a character's ability to cope with emotional or mental stress of all kinds. The higher the rank, the more resistant the character is to emotional trauma, fear, panic, madness, insanity, mind control techniques, and mental powers. When a character is confronted with debilitating effects, they can make a Mental Resolve check to set the trauma aside and act without hindrance.
+
 ### Results
 - **Critical Failure:** Character collapses in mental anguish; cannot act or flees for d4 rounds.
 - **Failure:** Character freezes and loses 1 action; receives a +1 penalty to all actions for 1 round.

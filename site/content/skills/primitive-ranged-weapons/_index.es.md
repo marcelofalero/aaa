@@ -39,9 +39,7 @@ Con la habilidad Ballesta, un Personaje puede volverse cada vez más competente 
 ### Beneficios de Rango
 ⊗ **Rango 3 [Precisión de distancia]** Cuando un Personaje alcanza Rango 3 en esta especialidad, sabe cómo compensar la distancia. Se elimina el Penalización de paso por un tiro de media distancia y la penalización por un tiro de larga distancia se reduce en 1 paso.
 
-▶ **Rango 6 [Doble disparo]** Cuando un Personaje alcanza Rango 6 en esta especialidad, puede disparar su arma dos veces en la misma acción. Un doble disparo funciona de la siguiente manera: primero, se determina el modificador base para el ataque. Luego, el Personaje tira el Dado de Control y dos dados de situación para realizar su ataque de doble disparo. El primer Dado de Situación es el modificador base necesario para realizar un ataque con un **+1 Penalización de paso** adicional; el segundo es el modificador base con un **+2 Penalización de paso** adicional. Cuando hay dos objetivos involucrados, el modificador base para el ataque es el del objetivo más difícil. Un Personaje que usa un arco puede apuntar a dos objetivos diferentes.
-
-* **Ejemplo de doble disparo:** Darsen tiene el beneficio de ataque especial de doble disparo y una puntuación de habilidad de 14. Su Dado de Situación base después de haber considerado todos los modificadores es +d4. Tira un Dado de Control (d20), un +d6 y un +d8. En los dados aparecen los números 11, 4 y 2. Esto le da a Darsen resultados de prueba de habilidades de 15 (11 + 4) y 13 (11 + 2). El primer disparo no da en el blanco, pero el segundo logra un impacto Ordinario.
+▶ **Rango 6 [Aumento de velocidad de disparo]** Cuando un Personaje alcanza Rango 6 en esta especialidad, obtiene la capacidad de cargar y disparar su arma más rápidamente. Un Ballesta se puede cargar y disparar en la misma acción.
 
 ---
 
@@ -53,9 +51,9 @@ Este Especialidad cubre el uso de todo tipo de armas de chispa, incluidas pistol
 ### Beneficios de Rango
 ⊗ **Rango 3 [Precisión de distancia]** Cuando un Personaje alcanza Rango 3 en esta especialidad, sabe cómo compensar la distancia. Se elimina el Penalización de paso por un tiro de media distancia y la penalización por un tiro de larga distancia se reduce en 1 paso.
 
-▶ **Rango 6 [Doble disparo]** Cuando un Personaje alcanza Rango 6 en esta especialidad, puede disparar su arma dos veces en la misma acción. Un doble disparo funciona de la siguiente manera: primero, se determina el modificador base para el ataque. Luego, el Personaje tira el Dado de Control y dos dados de situación para realizar su ataque de doble disparo. El primer Dado de Situación es el modificador base necesario para realizar un ataque con un **+1 Penalización de paso** adicional; el segundo es el modificador base con un **+2 Penalización de paso** adicional. Cuando hay dos objetivos involucrados, el modificador base para el ataque es el del objetivo más difícil. Un Personaje que usa un arco puede apuntar a dos objetivos diferentes.
+▶ **Rango 6 [Aumento de velocidad de disparo]** Cuando un Personaje alcanza Rango 6 en esta especialidad, obtiene la capacidad de cargar y disparar su arma más rápidamente. Un Pistola de chispa se puede cargar y disparar en la misma acción, y un rifle Arma de chispa se puede cargar en una sola acción en lugar de dos.
 
-* **Ejemplo de doble disparo:** Darsen tiene el beneficio de ataque especial de doble disparo y una puntuación de habilidad de 14. Su Dado de Situación base después de haber considerado todos los modificadores es +d4. Tira un Dado de Control (d20), un +d6 y un +d8. En los dados aparecen los números 11, 4 y 2. Esto le da a Darsen resultados de prueba de habilidades de 15 (11 + 4) y 13 (11 + 2). El primer disparo no da en el blanco, pero el segundo logra un impacto Ordinario.
+▶ **Rango 12 [Aumento de cadencia de disparo]** Cuando un Personaje alcanza Rango 12 en esta especialidad, puede cargar y disparar un rifle Arma de chispa en la misma acción.
 
 ---
 

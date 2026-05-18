@@ -535,6 +535,42 @@ Jack can still survive if he loses 7 more wound points and 3 of his 4 mortal poi
 | Good             | 1           |
 | Amazing          | 0           |
 
+# AREA OF EFFECT (AoE)
+
+Area of effect weapons, such as grenades, rockets, and certain high-tech heavy weapons, affect all targets within a specified radius of the explosion or impact point. 
+
+## Damage Zones
+Most AoE weapons specify their effect in terms of three radii (e.g., **2m/6m/10m**). These distances correspond to the success grades of the damage rating:
+
+*   **Amazing Zone (0 to Radius 1)**: Any target within this radius suffers the **Amazing** damage rating of the weapon.
+*   **Good Zone (Radius 1 to Radius 2)**: Targets in this area suffer the **Good** damage rating.
+*   **Ordinary Zone (Radius 2 to Radius 3)**: Targets in this outer area suffer the **Ordinary** damage rating.
+
+Any target beyond the third radius is unaffected by the blast.
+
+## Direct Fire AoE
+Certain direct-fire weapons (such as the D16 Plasma Gun) have a fixed area of effect radius. For these weapons, a standard attack roll is made against a primary target. If the attack hits, the primary target suffers damage based on the success grade of the attack. Anyone else within the weapon's AoE radius sustains damage **one success grade lower** than that inflicted upon the primary target (e.g., if the primary target takes Amazing damage, others in the radius take Good damage).
+
+## Accuracy by Range
+For thrown grenades or indirect-fire heavy weapons (like mortars), the accuracy of the attack depends on the range and the success of the skill check. If the weapon is not "on target," it lands a certain distance away from the intended location, as shown on the table below.
+
+### TABLE P20: ACCURACY BY RANGE
+| Skill Check Result | Short Range | Medium Range | Long Range |
+| :----------------- | :---------- | :----------- | :--------- |
+| **Critical Failure** | 4m          | 8m           | 12m        |
+| **Failure**         | 2m          | 4m           | 8m         |
+| **Ordinary**        | On Target   | 2m           | 4m         |
+| **Good**            | On Target   | On Target    | 2m         |
+| **Amazing**         | On Target   | On Target    | On Target  |
+
+*Note: For direction of the miss, roll a d4 (1: North/Ahead, 2: East/Right, 3: South/Behind, 4: West/Left).*
+
+## Mitigation: Hit the Deck
+A character who is within the area of effect of an explosion can attempt to "Hit the Deck" to minimize damage. This typically requires a successful Dexterity feat check or a specialized skill check (such as Acrobatics-fall).
+
+*   **Success**: The character reduces the damage sustained by **one success grade** (e.g., from Amazing to Good).
+*   **Hard Cover**: Targets behind hard cover automatically receive this damage reduction, or may even be completely protected if the cover is substantial enough to block the blast entirely.
+
 # IMPACT DAMAGE
 
 Characters have a habit of getting to very high places, engaging in some kind of breathtaking fight scene, and then falling off. This usually results in a miraculous rescue or a plunge to the ground below. As the old saying goes, "It isn't the fall that gets you, but the sudden stop at the end.”

@@ -5,16 +5,27 @@ url: /skills/modern-ranged-weapons#rifle
 trained_only: false
 rank_benefits:
 - rank: 3
-  title: Improved Aim
+  title: Optic Familiarity
+- rank: 4
+  title: Distance Precision
+- rank: 8
+  title: Sniper Shot
+- rank: 12
+  title: Master Sniper
 name: Rifle
 ---
 
-This specialty skill allows a character to improve his proficiency with modern single-fire rifles, sniper rifles, and hunting rifles.
+This specialty skill covers proficiency with modern single-fire rifles, sniper rifles, hunting rifles, and precision laser rifles. These weapons lack automatic fire capabilities but excel at range and target penetration.
+
+## Attack Modes
+**Fire** A single, precise attack at a single target. (Resolution: Standard control + situation die. Ammo Cost: 1 round).
+
 ### Rank Benefits
-▶ **Rank 3 [Improved Aim]** When a character reaches rank 3 in this specialty, he becomes able to hit a target with more dependability. This improvement in accuracy translates to a **-1 bonus** to the situation die for any single-fire rifle attack the character makes.
 
-⊗ **Rank 3 [Distance Precision]** When a character reaches rank 3 in this specialty, he knows how to compensate for distance. The step penalty for a medium-range shot is eliminated, and the penalty for a long-range shot is lessened by 1 step.
+▶ **Rank 3 [Optic Familiarity]** When a character reaches rank 3 in this specialty, they become intimately familiar with their weapon's optics and stabilize much faster than a standard shooter. When the character uses the core Aim action, their first round of aiming grants a 2-step bonus instead of the standard 1-step bonus. (Subsequent rounds of aiming add 1 step as normal, up to the system maximum).
 
-▶ **Rank 6 [Double-Shot]** When a character reaches rank 6 in this specialty, he becomes able to fire his weapon twice in the same action. A double-shot works as follows: First, the base modifier for the attack is determined. Then the character rolls the control die and two situation dice to make his double-shot attack. The first situation die is the base modifier needed to make an attack with an additional **+1 step penalty**; the second is the base modifier with an additional **+2 step penalty**. When two targets are involved, the base modifier for the attack is that of the more difficult target. A character using a bow can aim at two different targets.
+⊗ **Rank 4 [Distance Precision]** When a character reaches rank 4 in this specialty, they know how to compensate for bullet drop, windage, and distance. The step penalty for a medium-range shot is eliminated, and the penalty for a long-range shot is lessened by 1 step.
 
-* **Example of double-shot:** Darsen has the double-shot special attack benefit and a skill score of 14. His base situation die after all modifiers have been considered is +d4. He rolls a control die (d20), a +d6, and a +d8. The numbers 11, 4, and 2 come up on the dice. This gives Darsen skill check results of 15 (11 + 4) and 13 (11 + 2). The first shot misses its target, but the second one scores an Ordinary hit.
+▶ **Rank 8 [Sniper Shot]** When a character reaches rank 8, they know how to perfectly exploit armor gaps and structural weak points with high-caliber rounds. If the character fires a rifle after accumulating the maximum 3 rounds of Aim, the shot is so precise it bypasses the bulk of the target's protection. The target must treat all armor dice rolled to resist the attack as having rolled their minimum possible value (all dice count as 1s; e.g., an armor rating of 2d4 or 1d6+1 provides exactly 2 points of damage reduction).
+
+▶ **Rank 12 [Master Sniper]** When the character reaches rank 12, Sniper Shot lethality increases. In addition to the armor negation, the final damage inflicted by a fully Aimed shot is treated as one tier higher (e.g., Ordinary becomes Good).

@@ -11,7 +11,8 @@ Esta amplia habilidad representa la fuerza de voluntad interna de un Personaje. 
 ## Firmeza Mental
 {{< specialty attr="WIL" untrained="yes" cost="3" >}}
 
-Este Especialidad se utiliza para determinar la capacidad de un Personaje para afrontar el estrés emocional o Mental de todo tipo. Cuanto mayor sea el Rango, más resistente será al trauma emocional, el miedo, el pánico, la locura, las técnicas de control mental y los poderes del Mental. Cuando un Personaje se enfrenta a efectos debilitantes, puede realizar una prueba de Mental Firmeza para dejar el trauma a un lado y actuar sin obstáculos.
+Este Especialidad se utiliza para determinar la capacidad de un Personaje para afrontar el estrés emocional o Mental de todo tipo. Cuanto mayor sea el Rango, más resistente será el Personaje al trauma emocional, el miedo, el pánico, la locura, las técnicas de control mental y los poderes del Mental. Cuando un Personaje se enfrenta a efectos debilitantes, puede realizar una prueba de Mental Firmeza para dejar el trauma a un lado y actuar sin obstáculos.
+
 ### Resultados
 - **Fallo Crítico:** Personaje colapsa en angustia Mental; no puede actuar o huye durante d4 asaltos.
 - **Error:** Personaje se congela y pierde 1 acción; recibe una penalización de +1 a todas las acciones durante 1 ronda.
