@@ -1,19 +1,23 @@
 +++
 title = "Security"
-attribute = "WIL"
+attribute = "INT"
 category = "Other"
 type = "skill"
 layout = "list"
 +++
 
 This broad skill provides a character with basic knowledge of security systems and procedures. This pertains to security systems that protect physical objects or specifically defined areas. (Note that systems of the sort that protect the theft or corruption of computerized data are dealt with under the Computer Science-hacking specialty). The complexity of a system relates to how time-consuming it is to get through any and all barriers that lie between an intruder and the object or area that the security system is protecting. For the purpose of determining the situation die modifier for each segment of a complex Security skill check:
-- **Marginal quality:** A situation in which (for example) the character is undisturbed while he''s examining or manipulating a type of security system with which he is familiar.
-- **Amazing quality:** One in which (for example) the character and his allies are involved in combat or are under severe time pressure to accomplish their goal.
+
+- **Marginal quality:** A situation in which (for example) the character is undisturbed while he's examining or manipulating a type of security system with which he is familiar.
+- **Ordinary quality:** A situation in which (for example) the character is occasionally disturbed, examining a new security system or one he is not familiar with, or lacks the specialized tools to deal with the security measures in place. Or is under some time pressure, but not both.
+- **Good quality:** A combination of the above circumstances that produce Ordinary quality situations.
+- **Amazing quality:** One in which (for example) the character and his allies are involved in combat or are under severe time pressure to accomplish their goal or the security system is particularly complex and difficult to bypass.
 
 ## Protection protocols
 {{< specialty attr="INT" untrained="yes" cost="3" >}}
 
-This skill represents a character''s training in protection procedures of all types. It has two principal uses:
+This skill represents a character's training in protection procedures of all types. It has two principal uses: **Secure an Area** and **Analyze Weak Points**.
+
 ### Secure an Area
 With the proper amount of time and cooperation, a character can set defenses and secure an area to a greater degree than it was before. (Some areas can''t be secured or can only be secured with great difficulty, meaning that a situation die penalty applies to the skill check). The degree of success on the skill check affects the subsequent
 **Awareness skill checks** of everyone guarding the area against intruders:
@@ -21,6 +25,7 @@ With the proper amount of time and cooperation, a character can set defenses and
 - **Ordinary:** Success causes a **-1 bonus** on the Awareness checks.
 - **Good:** A **-2 bonus**.
 - **Amazing:** A **-3 bonus**.
+
 ### Analyze Weak Points
 A character can study a secured area (anything from a vehicle to a building to a neighborhood) and look for weak points to exploit. This use of the skill can aid the character or another character who is going to force an entry point or try to sneak into the secured area by providing bonuses to those subsequent skill checks. Modifiers to subsequent skill checks are provided according to how well the character succeeds at analyzing the weak points of a secured area:
 - **Failure:** No modifier.
@@ -32,15 +37,21 @@ A character can study a secured area (anything from a vehicle to a building to a
 - **Ordinary security:** +2 penalty.
 - **Good security:** +3 penalty.
 - **Amazing security:** +4 penalty.
-⊗ **Increased Effect:** As a character achieves higher ranks in this specialty, he receives a situation die bonus on skill checks assisted by it: **-1 step at rank 3**, **-2 steps at rank 6**, **-3 steps at rank 9**, and **-4 steps at rank 12**.
+
+### Rank Benefits
+⊗ **Rank 3, 6, 9 and 12 [Increased Effect]** As a character achieves higher ranks in this specialty, the situation die bonus on skill checks related to this specialty increases: **-1 step at rank 3**, **-2 steps at rank 6**, **-3 steps at rank 9**, and **-4 steps at rank 12**.
+This benefit applies to Cover Ops-Stealth skill checks to infiltrate secure areas, Computer Science-hacking skill checks to bypass security checkpoints, and other situations the GM deems appropriate.
 
 ---
 
 ## Security devices
 {{< specialty attr="INT" untrained="yes" cost="4" >}}
 
-Using this skill, a character can attempt to bypass all types of mechanical or electronic security. This includes everything from traditional pin-tumbler locks and mechanical safes (picking) to high-tech motion sensors, trip wires, and electronic maglocks. It''s also used to set traps, both electronic and mechanical in nature. One check can be made per round, and the character making the check is busy for the entire round (no other actions possible). In a situation that isn''t taking place in rounds, the time unit changes from rounds to minutes.
-⊗ **Increased Effect:** As a character achieves higher ranks in this specialty, he receives a situation die bonus on skill checks assisted by it: **-1 step at rank 3**, **-2 steps at rank 6**, **-3 steps at rank 9**, and **-4 steps at rank 12**.
+Using this skill, a character can attempt to bypass all types of mechanical or electronic security. This includes everything from traditional pin-tumbler locks and mechanical safes (picking) to high-tech motion sensors, trip wires, and electronic maglocks.
+
+It's also used to set traps, both electronic and mechanical in nature. One check can be made per round, and the character making the check is busy for the entire round (no other actions possible). In a situation that isn't taking place in rounds, the time unit changes from rounds to minutes. The traps covered by this skill do not include explosives, which are handled under the Demolitions specialty.
+
+⊗ **Increased Effect:** As a character achieves higher ranks in this specialty, he receives a situation die bonus on this specialty skill: **-1 step at rank 3**, **-2 steps at rank 6**, **-3 steps at rank 9**, and **-4 steps at rank 12**.
 
 ---
 

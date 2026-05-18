@@ -3984,10 +3984,10 @@ on("change:undorank sheet:opened", function() { getAttrs(["UndoRank"], function(
 						<button type="roll" name="roll_Security" class="sheet-roll-skill" value="@{Security_macro}"></button>
 					</div>
 					<div class="sheet-skill-name">Security <button type="roll" name="roll_Security_link" class="sheet-skill-link" value="[Security Wiki](https://aaa.dimble.net/skills/security)">&#x2197;</button><div class="sheet-skill-info"><span class="sheet-info-icon">i</span><div class="sheet-tooltip"><span class="sheet-tooltip-cost">Base cost: 3</span></div></div></div>
-					<div class="sheet-skill-ability-label">WIL</div>
+					<div class="sheet-skill-ability-label">INT</div>
 					<div class="sheet-skill-rank-box-placeholder"></div>
 					<div class="sheet-skill-score-cell">
-						<input type="text" name="attr_SecurityO" class="sheet-scoredisabled" disabled="true" value="(floor(@{Will}/(2-@{Security})))">/
+						<input type="text" name="attr_SecurityO" class="sheet-scoredisabled" disabled="true" value="(floor(@{Intelligence}/(2-@{Security})))">/
 						<input type="text" name="attr_SecurityG" class="sheet-scoredisabled" disabled="true" value="(floor(@{SecurityO}/2))">/
 						<input type="text" name="attr_SecurityA" class="sheet-scoredisabled" disabled="true" value="(floor(@{SecurityO}/4))">
 					</div>
@@ -4135,10 +4135,10 @@ on("change:undorank sheet:opened", function() { getAttrs(["UndoRank"], function(
 							<button type="roll" name="roll_StreetKnowledge" class="sheet-roll-skill" value="@{StreetKnowledge_macro}"></button>
 						</div>
 						<div class="sheet-skill-name">Street Knowledge <button type="roll" name="roll_StreetKnowledge_link" class="sheet-skill-link" value="[Street Knowledge Wiki](https://aaa.dimble.net/skills/street-smart#street-knowledge)">&#x2197;</button><div class="sheet-skill-info"><span class="sheet-info-icon">i</span><div class="sheet-tooltip"><span class="sheet-tooltip-cost">Base cost: 3</span></div></div></div>
-						<div class="sheet-skill-ability-label">INT</div>
+						<div class="sheet-skill-ability-label">WIL</div>
 						<input type="number" name="attr_StreetKnowledgeRank" class="sheet-score" value="0">
 						<div class="sheet-skill-score-cell">
-							<input type="text" name="attr_StreetKnowledgeO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{StreetKnowledgeRank}*@{StreetSmart})+@{Intelligence})/(2-@{StreetSmart})))">/
+							<input type="text" name="attr_StreetKnowledgeO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{StreetKnowledgeRank}*@{StreetSmart})+@{Will})/(2-@{StreetSmart})))">/
 							<input type="text" name="attr_StreetKnowledgeG" class="sheet-scoredisabled" disabled="true" value="(floor(@{StreetKnowledgeO}/2))">/
 							<input type="text" name="attr_StreetKnowledgeA" class="sheet-scoredisabled" disabled="true" value="(floor(@{StreetKnowledgeO}/4))">
 						</div>
@@ -4343,10 +4343,10 @@ on("change:undorank sheet:opened", function() { getAttrs(["UndoRank"], function(
 						<button type="roll" name="roll_Tactics" class="sheet-roll-skill" value="@{Tactics_macro}"></button>
 					</div>
 					<div class="sheet-skill-name">Tactics <button type="roll" name="roll_Tactics_link" class="sheet-skill-link" value="[Tactics Wiki](https://aaa.dimble.net/skills/tactics)">&#x2197;</button><div class="sheet-skill-info"><span class="sheet-info-icon">i</span><div class="sheet-tooltip"><span class="sheet-tooltip-cost">Base cost: 6</span></div></div></div>
-					<div class="sheet-skill-ability-label">WIL</div>
+					<div class="sheet-skill-ability-label">INT</div>
 					<div class="sheet-skill-rank-box-placeholder"></div>
 					<div class="sheet-skill-score-cell">
-						<input type="text" name="attr_TacticsO" class="sheet-scoredisabled" disabled="true" value="(floor(@{Will}/(2-@{Tactics})))">/
+						<input type="text" name="attr_TacticsO" class="sheet-scoredisabled" disabled="true" value="(floor(@{Intelligence}/(2-@{Tactics})))">/
 						<input type="text" name="attr_TacticsG" class="sheet-scoredisabled" disabled="true" value="(floor(@{TacticsO}/2))">/
 						<input type="text" name="attr_TacticsA" class="sheet-scoredisabled" disabled="true" value="(floor(@{TacticsO}/4))">
 					</div>

@@ -11,7 +11,7 @@ rank_benefits:
 - rank: 6
   title: Dual-Wield Coordination
 - rank: 9
-  title: Akimbo Supremacy
+  title: Akimbo
 name: Pistol
 ---
 
@@ -29,18 +29,19 @@ When wielding a single pistol, a character is limited by the physical action of 
 ### Dual Wield Attack Modes (Akimbo)
 When wielding two pistols, the character combines their ammunition pools and unlocks the ability to bend the action economy, substituting sequential time with simultaneous fire:
 
-**Simultaneous Fire (Focus Target)** The character points both weapons at a single target and fires at the exact same moment to ensure a concentrated hit. (Action Cost: 1 Action Phase. Resolution: The character receives a -1 step bonus to their skill check against the target. Ammo Cost: 2 rounds—1 from each weapon).
+**Focus Target** The character points both weapons at a single target and fires at the exact same moment to ensure a concentrated hit. (Action Cost: 1 Action Phase. Resolution: The character receives a -1 step bonus to their skill check against the target. Ammo Cost: 2 rounds—1 from each weapon).
 
-**Parallel Fire (Split Target)** The character simultaneously engages two separate targets. (Action Cost: 1 Action Phase. Resolution: The character makes two separate attack rolls. The primary hand suffers a +2 step penalty, and the off-hand suffers a +4 step penalty. If the character possesses the Ambidexterity trait, the off-hand penalty is reduced, making the rolls +2 / +2. Ammo Cost: 2 rounds—1 from each weapon).
+**Split Target** The character simultaneously engages two separate targets. (Action Cost: 1 Action Phase. Resolution: The character makes two separate attack rolls. The primary hand suffers a +2 step penalty, and the off-hand suffers a +4 step penalty. If the character possesses the Ambidexterity trait, the off-hand penalty is reduced, making the rolls +2 / +2. Ammo Cost: 2 rounds—1 from each weapon).
 
 ## Rank Benefits
+⊗ **Rank 1 [Pistol CQB]** When a character reaches rank 2 in this specialty, the check receives -3 step bonus while firing at zero-range.
 
 ▶ **Rank 3 [Quick Draw]** When a character reaches rank 3 in this specialty, they can clear their holster rapidly. The character can draw their pistol (or pistols) and fire in the same action phase with only a +1 step penalty.
 
-⊗ **Rank 4 [Lightning Draw]** When a character reaches rank 4, the draw becomes instinctual. The character can draw and fire in the same action phase without any penalty.
+▶ **Rank 4 [Lightning Draw]** When a character reaches rank 4, the draw becomes instinctual. The character can draw and fire in the same action phase without any penalty.
 
-▶ **Rank 6 [Dual-Wield Coordination]** When a character reaches rank 6, their peripheral vision and recoil control improve drastically. When using the Parallel Fire dual-wield modes, the penalty for all attacks is reduced by 1 step (e.g., a character with Ambidexterity using Parallel Fire now rolls at +1 / +1).
+▶ **Rank 6 [Dual-Wield Coordination]** When a character reaches rank 6, their peripheral vision and recoil control improve drastically. When using the Split Target dual-wield modes, the penalty for both shots is reduced by 1 step (e.g., a character with Ambidexterity using Split Target now rolls at +1 / +1).
 
-⊗ **Rank 9 [Akimbo Supremacy]** When a character reaches rank 9, they can operate two weapons as flawlessly as one. When using the Parallel Fire dual-wield mode, a character with Ambidexterity suffers 0 penalty on either shot, allowing them to engage two separate targets in a single action phase at their full base skill level.
+▶ **Rank 9 [Akimbo Mastery]** When a character reaches rank 9, they can operate two weapons as flawlessly as one. When using the Split Target dual-wield mode, the penalty for both shots is reduced by 2 steps (the character fire at +0 / +2. Or +0 / +0 for a character with Ambidexterity).
 
 

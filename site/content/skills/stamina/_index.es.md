@@ -6,15 +6,15 @@ type = "skill"
 layout = "list"
 +++
 
-Esta amplia habilidad mide la fortaleza Físico de un Personaje con respecto a los efectos del daño Mortal y Fatiga.
+Esta amplia habilidad mide la fortaleza Físico de Personaje con respecto a los efectos del daño Mortal y Fatiga.
 **Nota:** Esta habilidad es gratuita para personajes humanos, mechatus, sesheyan, t'sa y weren.
----
+
 ### Morir
 Se considera que un Personaje que ha sufrido cualquier daño de Mortal está muriendo. Al final de una escena, un Personaje moribundo (ya sea consciente o inconsciente) realiza una prueba de Aguante.
 - **Fallo Crítico:** El Personaje sufre **2 puntos adicionales** de daño del Mortal.
 - **Fallo:** El Personaje sufre **1 punto adicional** de daño del Mortal.
 - **Ordinario o mejor:** La condición de Personaje no cambia. El Personaje moribundo realiza controles adicionales de Aguante **una vez por hora**, hasta que recibe asistencia médica (consulte las descripciones de Ciencias médicas—cirugía o Ciencias médicas—tratamiento para obtener más detalles). El tiempo entre estas comprobaciones de Aguante se puede alargar a una vez por día si el Personaje recibe ayuda de la aplicación del tratamiento de Conocimiento (primeros auxilios o Ciencias médicas).
----
+
 ### Fatiga
 Cuando un Personaje participa en ciertas actividades que causan Fatiga, debe realizar una verificación de Aguante. Esta verificación se realiza después de que se lleva a cabo la actividad, o en intervalos establecidos para ciertos tipos de actividad (consulte “Daño Fatiga” en el libro de reglas).
 - **Fallo Crítico:** El Personaje sufre **2 puntos** de daño del Fatiga.
@@ -25,8 +25,8 @@ Cuando un Personaje participa en ciertas actividades que causan Fatiga, debe rea
 {{< specialty attr="CON" untrained="yes" cost="4" >}}
 
 A medida que Personaje adquiere Rangos en la habilidad Resistencia, se vuelve más capaz de resistir los efectos del daño. Para un Personaje que tiene esta especialidad, los controles Resistencia reemplazan a los controles Aguante de daños y Fatiga.
-⊗ **Respiración mejorada:** La bonificación a la prueba Aguante-Resistencia de un Personaje mientras contiene la respiración mejora a **-2 en Rango 4**,
-**-3 en Rango 8** y **-4 en Rango 12**.
+
+⊗ **Rango 4, 8 y 12 [Respiración mejorada]** La bonificación a la prueba Aguante-Resistencia de un Personaje mientras contiene la respiración mejora a **-2 en Rango 4**, **-3 en Rango 8** y **-4 en Rango 12**.
 
 ---
 

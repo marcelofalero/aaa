@@ -232,7 +232,7 @@
                 },
                 {
                     "skill": "Tactics",
-                    "attribute": "WIL",
+                    "attribute": "INT",
                     "url": "/skills/tactics",
                     "cost": 6,
                     "type": "Broad",
@@ -600,7 +600,7 @@
                 },
                 {
                     "skill": "Security",
-                    "attribute": "WIL",
+                    "attribute": "INT",
                     "url": "/skills/security",
                     "cost": 3,
                     "type": "Broad",
@@ -1008,7 +1008,7 @@
                     "items": [
                         {
                             "skill": "Street Knowledge",
-                            "attribute": "INT",
+                            "attribute": "WIL",
                             "url": "/skills/street-smart#street-knowledge",
                             "cost": 3,
                             "type": "Specialty",

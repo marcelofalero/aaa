@@ -15,7 +15,8 @@ rank_benefits:
 name: Protection protocols
 ---
 
-This skill represents a character''s training in protection procedures of all types. It has two principal uses:
+This skill represents a character's training in protection procedures of all types. It has two principal uses: **Secure an Area** and **Analyze Weak Points**.
+
 ### Secure an Area
 With the proper amount of time and cooperation, a character can set defenses and secure an area to a greater degree than it was before. (Some areas can''t be secured or can only be secured with great difficulty, meaning that a situation die penalty applies to the skill check). The degree of success on the skill check affects the subsequent
 **Awareness skill checks** of everyone guarding the area against intruders:
@@ -23,6 +24,7 @@ With the proper amount of time and cooperation, a character can set defenses and
 - **Ordinary:** Success causes a **-1 bonus** on the Awareness checks.
 - **Good:** A **-2 bonus**.
 - **Amazing:** A **-3 bonus**.
+
 ### Analyze Weak Points
 A character can study a secured area (anything from a vehicle to a building to a neighborhood) and look for weak points to exploit. This use of the skill can aid the character or another character who is going to force an entry point or try to sneak into the secured area by providing bonuses to those subsequent skill checks. Modifiers to subsequent skill checks are provided according to how well the character succeeds at analyzing the weak points of a secured area:
 - **Failure:** No modifier.
@@ -34,4 +36,7 @@ A character can study a secured area (anything from a vehicle to a building to a
 - **Ordinary security:** +2 penalty.
 - **Good security:** +3 penalty.
 - **Amazing security:** +4 penalty.
-⊗ **Increased Effect:** As a character achieves higher ranks in this specialty, he receives a situation die bonus on skill checks assisted by it: **-1 step at rank 3**, **-2 steps at rank 6**, **-3 steps at rank 9**, and **-4 steps at rank 12**.
+
+### Rank Benefits
+⊗ **Rank 3, 6, 9 and 12 [Increased Effect]** As a character achieves higher ranks in this specialty, the situation die bonus on skill checks related to this specialty increases: **-1 step at rank 3**, **-2 steps at rank 6**, **-3 steps at rank 9**, and **-4 steps at rank 12**.
+This benefit applies to Cover Ops-Stealth skill checks to infiltrate secure areas, Computer Science-hacking skill checks to bypass security checkpoints, and other situations the GM deems appropriate.

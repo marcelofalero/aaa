@@ -6,7 +6,11 @@ type = "skill"
 layout = "list"
 +++
 
-Esta amplia habilidad proporciona a un Personaje una formación básica en el uso de sistemas de naves espaciales Otros además del timón o los sistemas de pilotaje. (La operación de vehículos cubre el pilotaje real de una nave espacial). También se aplica a los tipos de vehículos Otros o instalaciones terrestres que utilizan uno o más de los sistemas específicos que se describen a continuación en la sección Habilidades especiales. Estos vehículos e instalaciones Otros incluyen (pero no se limitan a) grandes embarcaciones como acorazados, submarinos militares y buques de carga; aviones de combate y grandes aviones comerciales; y puestos de radar y emplazamientos de armas. Para obtener detalles completos sobre cómo se utilizan las habilidades de **Operación del sistema**, consulte las secciones sobre ["¿Qué hay en una nave espacial?"](/core-mechanics/vehicles-and-vessels/) y ["Vehículo espacial Combate"](/core-mechanics/vehicles-and-vessels#space-vehicle-combat).
+Esta amplia habilidad proporciona a un Personaje una formación básica en el uso de sistemas de naves espaciales Otros además del timón o los sistemas de pilotaje. (La Operación del Vehículo cubre el pilotaje real de una nave espacial).
+
+También se aplica a los tipos de vehículos o instalaciones Otros que utilizan uno o más de los sistemas específicos que se describen a continuación en la sección de Habilidades Especiales. Estos vehículos e instalaciones Otros incluyen (pero no se limitan a) grandes embarcaciones como acorazados, submarinos militares y buques de carga; aviones de combate y grandes aviones comerciales; y puestos de avanzada de radar y emplazamientos de armas, estaciones espaciales, etc.
+
+Para obtener detalles completos sobre cómo se utilizan las habilidades de **Operación del sistema**, consulte las secciones sobre ["¿Qué hay en una nave espacial?"](/core-mechanics/vehicles-and-vessels/) y ["Vehículo espacial Combate"](/core-mechanics/vehicles-and-vessels#space-vehicle-combat).
 
 ## Comunicaciones
 {{< specialty attr="INT" untrained="yes" cost="3" >}}
