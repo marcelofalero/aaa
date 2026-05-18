@@ -94,5 +94,8 @@ help; [Good], [Good] help; [Amazing],
 Awareness Cost 3, INT, Active This perk allows a character
 to purchase ranks in the Awareness - Psionic Sense
 specialty skill, enabling them to detect and identify
-psionic powers and phenomena. This perk can only be
-selected if the Gamemaster allows the use of psionics. SMy14 3 SAt3d p < 105
+psionic powers and phenomena. The skill is also
+treated as favored, reducing its cost by one. This perk
+is only useful for characters without psionic abilities.
+This perk can only be selected if the Gamemaster allows 
+the use of psionics. SMy14 3 SAt3d p < 105
