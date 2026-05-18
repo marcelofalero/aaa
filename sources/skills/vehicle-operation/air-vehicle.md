@@ -13,7 +13,7 @@ rank_benefits:
 name: Air vehicle
 ---
 
-This specialty skill enables a character to become trained in the use of a specific type of air vehicle. If he wants to be skilled in the operation of more than one type of air vehicle, he must purchase and improve each specialty skill separately. Types of air vehicles include propeller planes, helicopters, private jets, commercial jets, and jet fighters.
+This specialty skill enables a character to become trained in the use of air vehicles. Types of air vehicles include propeller planes, helicopters, private jets, commercial jets, and jet fighters.
 
 ### Rank Benefits
 ⊗ **Rank 4, 8, and 12 [Improved Proficiency]** At higher ranks, the character becomes even more adept at operating this type of vehicle, receiving a situation die bonus to checks involving this specialty skill.

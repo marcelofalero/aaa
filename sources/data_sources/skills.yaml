@@ -5787,7 +5787,7 @@ items:
           - en:
               name: Air vehicle
               description: |-
-                This specialty skill enables a character to become trained in the use of a specific type of air vehicle. If he wants to be skilled in the operation of more than one type of air vehicle, he must purchase and improve each specialty skill separately. Types of air vehicles include propeller planes, helicopters, private jets, commercial jets, and jet fighters.
+                This specialty skill enables a character to become trained in the use of air vehicles. Types of air vehicles include propeller planes, helicopters, private jets, commercial jets, and jet fighters.
 
                 ### Rank Benefits
                 ⊗ **Rank 4, 8, and 12 [Improved Proficiency]** At higher ranks, the character becomes even more adept at operating this type of vehicle, receiving a situation die bonus to checks involving this specialty skill.
@@ -5797,7 +5797,7 @@ items:
           - es:
               name: Vehículo Aéreo
               description: |-
-                Este Especialidad permite que un Personaje se capacite en el uso de un tipo específico de vehículo aéreo. Si quiere dominar el funcionamiento de más de un tipo de vehículo aéreo, deberá comprar y mejorar cada Especialidad por separado. Los tipos de vehículos aéreos incluyen aviones de hélice, helicópteros, aviones privados, aviones comerciales y aviones de combate.
+                Este Especialidad permite que un Personaje se capacite en el uso de vehículos aéreos. Los tipos de vehículos aéreos incluyen aviones de hélice, helicópteros, aviones privados, aviones comerciales y aviones de combate.
 
                 ### Beneficios de Rango
                 ⊗ **Rango 4, 8 y 12 [Competencia mejorada]** A mayor Rangos, el Personaje se vuelve aún más hábil en la operación de este tipo de vehículo y recibe una bonificación Dado de Situación en las comprobaciones que involucran este Especialidad.
@@ -5813,7 +5813,7 @@ items:
           - en:
               name: Land vehicle
               description: |-
-                This specialty skill enables a character to become trained in the use of a specific type of land vehicle. If he wants to be skilled in the operation of more than one type of land vehicle, he must purchase and improve each specialty skill separately. Types of land vehicles include automobiles, motorcycles, race cars, large trucks, and tanks and other heavy military vehicles.
+                This specialty skill enables a character to become trained in the use of land vehicles. Types of land vehicles include automobiles, motorcycles, race cars, large trucks, and tanks and other heavy military vehicles.
 
                 ### Rank Benefits
                 ⊗ **Rank 4, 8, and 12 [Improved Proficiency]** At higher ranks, the character becomes even more adept at operating this type of vehicle, receiving a situation die bonus to checks involving this specialty skill.
@@ -5823,7 +5823,7 @@ items:
           - es:
               name: Vehículo Terrestre
               description: |-
-                Este Especialidad permite que un Personaje se capacite en el uso de un tipo específico de vehículo terrestre. Si quiere adquirir habilidades en el manejo de más de un tipo de vehículo terrestre, debe comprar y mejorar cada Especialidad por separado. Los tipos de vehículos terrestres incluyen automóviles, motocicletas, coches de carreras, camiones grandes y tanques y vehículos militares pesados ​​Otros.
+                Este Especialidad permite que un Personaje se capacite en el uso de vehículos terrestres. Los tipos de vehículos terrestres incluyen automóviles, motocicletas, coches de carreras, camiones grandes y tanques y vehículos militares pesados ​​Otros.
 
                 ### Beneficios de Rango
                 ⊗ **Rango 4, 8 y 12 [Competencia mejorada]** A mayor Rangos, el Personaje se vuelve aún más hábil en la operación de este tipo de vehículo y recibe una bonificación Dado de Situación en las comprobaciones que involucran este Especialidad.
@@ -5839,7 +5839,7 @@ items:
           - en:
               name: Space vehicle
               description: |-
-                This specialty skill enables a character to become trained in the use of a specific type of space vehicle. If he wants to be skilled in the operation of more than one type of space vehicle, he must purchase and improve each specialty skill separately. This skill is also used to operate the helm of large, multicrewed space vessels. Other systems on space vessels require the specialized functions of the **[System Operation](/skills/system-operation/)** broad skill. Types of space vehicles include:
+                This specialty skill enables a charact  er to become trained in the use of space vehicles. This skill is also used to operate the helm of large, multicrewed space vessels. Other systems on space vessels require the specialized functions of the **[System Operation](/skills/system-operation/)** broad skill. Types of space vehicles include:
                 - **Space fighters:** ships of 10 durability or less.
                 - **Scouts and light freighters:** ships of 11–32 durability.
                 - **Medium freighters and corvettes:** ships of 33–60 durability.
@@ -5853,7 +5853,7 @@ items:
           - es:
               name: Vehículo Espacial
               description: |-
-                Este Especialidad permite que un Personaje se capacite en el uso de un tipo específico de vehículo espacial. Si quiere dominar el funcionamiento de más de un tipo de vehículo espacial, deberá comprar y mejorar cada Especialidad por separado. Esta habilidad también se utiliza para operar el timón de grandes naves espaciales con múltiples tripulaciones. Los sistemas Otros en naves espaciales requieren las funciones especializadas de la amplia habilidad **[Operación del sistema](/skills/system-operation/)**. Los tipos de vehículos espaciales incluyen:
+                Este Especialidad permite que un personaje se entrene en el uso de vehículos espaciales. Esta habilidad también se utiliza para operar el timón de grandes naves espaciales con múltiples tripulaciones. Los sistemas Otros en naves espaciales requieren las funciones especializadas de la amplia habilidad **[Operación del sistema](/skills/system-operation/)**. Los tipos de vehículos espaciales incluyen:
                 - **Cazadores espaciales:** naves de 10 de durabilidad o menos.
                 - **Exploradores y cargueros ligeros:** barcos con una durabilidad de 11 a 32.
                 - **Cargueros y corbetas medianas:** barcos con una durabilidad de 33 a 60.
@@ -5873,7 +5873,7 @@ items:
           - en:
               name: Water vehicle
               description: |-
-                This specialty skill enables a character to become trained in the use of a specific type of water vehicle. If he wants to be skilled in the operation of more than one type of water vehicle, he must purchase and improve each specialty skill separately. This skill is also used to operate the helm of large, multicrewed water vessels (such as battleships, submarines, and oil tankers); these require a version of the specialized functions of the **[System Operation](/skills/system-operation/)** broad skill. Types of water vehicles include canoes, rafts and rowboats, powerboats, jet skis, sailboats, large commercial vessels, large military vessels, and submersible craft.
+                This specialty skill enables a character to become trained in the use of water vehicles. This skill is also used to operate the helm of large, multicrewed water vessels (such as battleships, submarines, and oil tankers); these require a version of the specialized functions of the **[System Operation](/skills/system-operation/)** broad skill. Types of water vehicles include canoes, rafts and rowboats, powerboats, jet skis, sailboats, large commercial vessels, large military vessels, and submersible craft.
 
                 ### Rank Benefits
                 ⊗ **Rank 4, 8, and 12 [Improved Proficiency]** At higher ranks, the character becomes even more adept at operating this type of vehicle, receiving a situation die bonus to checks involving this specialty skill.
@@ -5883,7 +5883,7 @@ items:
           - es:
               name: Vehículo Acuático
               description: |-
-                Este Especialidad permite que un Personaje se capacite en el uso de un tipo específico de vehículo acuático. Si quiere dominar el funcionamiento de más de un tipo de vehículo acuático, deberá comprar y mejorar cada Especialidad por separado. Esta habilidad también se utiliza para operar el timón de grandes embarcaciones con tripulación múltiple (como acorazados, submarinos y petroleros); estos requieren una versión de las funciones especializadas de la habilidad general **[System Operation](/skills/system-operation/)**. Los tipos de vehículos acuáticos incluyen canoas, balsas y botes de remos, lanchas a motor, motos acuáticas, veleros, grandes embarcaciones comerciales, grandes embarcaciones militares y embarcaciones sumergibles.
+                Este Especialidad permite que un Personaje se capacite en el uso de vehículos acuáticos. Esta habilidad también se utiliza para operar el timón de grandes embarcaciones con tripulación múltiple (como acorazados, submarinos y petroleros); estos requieren una versión de las funciones especializadas de la habilidad general **[System Operation](/skills/system-operation/)**. Los tipos de vehículos acuáticos incluyen canoas, balsas y botes de remos, lanchas a motor, motos acuáticas, veleros, grandes embarcaciones comerciales, grandes embarcaciones militares y embarcaciones sumergibles.
 
                 ### Beneficios de Rango
                 ⊗ **Rango 4, 8 y 12 [Competencia mejorada]** A mayor Rangos, el Personaje se vuelve aún más hábil en la operación de este tipo de vehículo y recibe una bonificación Dado de Situación en las comprobaciones que involucran este Especialidad.
