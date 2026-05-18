@@ -18,7 +18,7 @@ items:
     type: Active
     localized:
       - en:
-          name: Ambidextrous
+          name: Ambidextrous  
           description: |-
             A character with this perk can use both hands at the same time with more ease than someone who is not ambidextrous. A character without this perk suffers penalties when using his off hand or when attempting to use two weapons in combat. (See “Attacking with Two Weapons" on page 57 in Chapter 3: characters in Action.) With this perk, the penalty for the action using the off hand is reduced to +2 steps, and the penalty for the primary hand is eliminated.
       - es:
@@ -219,11 +219,11 @@ items:
       - en:
           name: Psionic Awareness
           description: |-
-            A character with Psionic Awareness is entitled to an Intelligence feat check to determine whether he realizes that a psionic power is being used in his vicinity. (characters without this perk are not normally allowed checks to determine whether they can detect psionic activity.) The Gamemaster will determine when such a check should be made, and will roll the check secretly, only giving the player of the character any information when the check is successful. This perk can only be selected if the Gamemaster allows the use of psionics (see Chapter 14).
+            This perk allows a character to purchase ranks in the Awareness - Psionic Sense specialty skill, enabling them to detect and identify psionic powers and phenomena. This perk can only be selected if the Gamemaster allows the use of psionics.
       - es:
           name: Conciencia psiónica
           description: |-
-            Un personaje con Conciencia psiónica tiene derecho a una prueba de dote de Inteligencia para determinar si se da cuenta de que se está utilizando un poder psiónico en sus proximidades. (A los personajes sin esta ventaja normalmente no se les permiten pruebas para determinar si pueden detectar actividad psiónica). El Gamemaster determinará cuándo se debe realizar dicha prueba y la realizará en secreto, dándole al jugador del personaje información solo cuando la prueba tenga éxito. esta ventaja sólo se puede seleccionar si el Gamemaster permite el uso de psiónicos (ver Capítulo 14).
+            Esta ventaja permite a un personaje comprar rangos en la habilidad de especialidad Conciencia - Sentido Psiónico, lo que le permite detectar e identificar poderes y fenómenos psiónicos. Esta ventaja solo se puede seleccionar si el Gamemaster permite el uso de psiónicos.
   reflexes:
     cost: '4'
     ability: DEX
