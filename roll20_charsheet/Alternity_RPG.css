@@ -1102,7 +1102,16 @@ button[type="roll"]:hover {
 /* Highlight skill name when trained */
 .sheet-trained-check:checked ~ .sheet-skill-name {
     color: #38bdf8 !important; /* Light blue accent */
-    font-weight: 600;
+    font-weight: bold !important;
+}
+
+/* Bold the specialty ranks and computed score when trained */
+.sheet-trained-check:checked ~ input.sheet-score {
+    font-weight: bold !important;
+}
+
+.sheet-trained-check:checked ~ .sheet-skill-score-cell input.sheet-scoredisabled {
+    font-weight: bold !important;
 }
 
 .sheet-trained-only-msg {
