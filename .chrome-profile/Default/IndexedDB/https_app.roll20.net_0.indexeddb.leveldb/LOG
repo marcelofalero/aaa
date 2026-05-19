@@ -1,6 +1,0 @@
-2026/05/19-03:15:30.324 8a87 Creating DB /home/dimble/projects/aaa/.chrome-profile/Default/IndexedDB/https_app.roll20.net_0.indexeddb.leveldb since it was missing.
-2026/05/19-03:15:30.333 8a87 Reusing MANIFEST /home/dimble/projects/aaa/.chrome-profile/Default/IndexedDB/https_app.roll20.net_0.indexeddb.leveldb/MANIFEST-000001
-2026/05/19-03:15:30.682 8a98 Level-0 table #5: started
-2026/05/19-03:15:30.683 8a98 Level-0 table #5: 1402 bytes OK
-2026/05/19-03:15:30.685 8a98 Delete type=0 #3
-2026/05/19-03:15:30.685 8a87 Manual compaction at level-0 from '\x00\x02\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x03\x00\x00\x00' @ 0 : 0; will stop at (end)
