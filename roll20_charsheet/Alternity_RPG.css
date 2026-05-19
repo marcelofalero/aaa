@@ -1101,8 +1101,12 @@ button[type="roll"]:hover {
 
 /* Highlight skill name when trained */
 .sheet-trained-check:checked ~ .sheet-skill-name {
+    font-weight: bold !important;
+}
+
+/* Light blue accent only for trained-only skills when checked */
+.sheet-trained-check:checked ~ .sheet-skill-name.sheet-trained-only {
     color: #38bdf8 !important; /* Light blue accent */
-    font-weight: 600;
 }
 
 .sheet-trained-only-msg {
