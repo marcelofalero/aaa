@@ -261,7 +261,7 @@ def generate_skills_html(data_list, indent_level=3, is_psionics=False, urls_map=
         h += f'{indent}\t\t<div class="sheet-skill-ability-label">SCORE</div>\n'
         h += f'{indent}\t</div>\n'
         h += f'{indent}\t<div class="sheet-skill-row">\n'
-        h += f'{indent}\t\t<input type="checkbox" name="attr_{id_name}" class="sheet-trained-check" value="1" style="display: none;" checked="checked" />\n'
+        h += f'{indent}\t\t<input type="checkbox" name="attr_{id_name}" class="sheet-trained-check" value="1" />\n'
         h += f'{indent}\t\t<input type="hidden" name="attr_{id_name}_macro" value="">\n'
         h += f'{indent}\t\t<input type="hidden" name="attr_{id_name}_is_trained_only" value="{is_trained_only}">\n'
         h += f'{indent}\t\t<div class="sheet-roll-container">\n'
@@ -269,7 +269,6 @@ def generate_skills_html(data_list, indent_level=3, is_psionics=False, urls_map=
         h += f'{indent}\t\t</div>\n'
         h += f'{indent}\t\t<div class="sheet-skill-name{" sheet-trained-only" if is_trained_only else ""}">{name} <button type="roll" name="roll_{id_name}_link" class="sheet-skill-link" value="[{name} Wiki]({url})">&#x2197;</button>{info_icon}</div>\n'
         h += f'{indent}\t\t<div class="sheet-skill-ability-label">{attr_short}</div>\n'
-        h += f'{indent}\t\t<div class="sheet-skill-rank-box-placeholder"></div>\n'
         h += f'{indent}\t\t<div class="sheet-skill-score-cell">\n'
         h += f'{indent}\t\t\t<input type="text" name="attr_{id_name}O" class="sheet-scoredisabled" disabled="true" value="{formula}">/\n'
         h += f'{indent}\t\t\t<input type="text" name="attr_{id_name}G" class="sheet-scoredisabled" disabled="true" value="(floor(@{{{id_name}O}}/2))">/\n'
@@ -340,14 +339,14 @@ function updateSkillMacro(skillId, name, url, isTrainedOnly, type, parentBroadId
     const trainingAttr = isSpecialty ? skillId + '_is_trained' : skillId;
     
     getAttrs([trainingAttr, skillId + 'O', skillId + 'G', skillId + 'A'], function(v) {
-        const isTrained = parseInt(v[trainingAttr]) || 0;
+        const isTrained = (v[trainingAttr] === '1' || v[trainingAttr] === 'on' || parseInt(v[trainingAttr]) === 1) ? 1 : 0;
         const scores = `[[@{${skillId}O}]] / [[@{${skillId}G}]] / [[@{${skillId}A}]]`;
         
         let macro = "";
         if (!isTrained && isTrainedOnly) {
             macro = `/w gm attempts to use ${name} untrained, but it is a Trained Only skill.`;
         } else {
-            const defaultStep = (!isTrained || !isSpecialty) ? 1 : 0;
+            const defaultStep = !isTrained ? 1 : 0;
             const query = getAlternityRollQuery(defaultStep);
             const untrainedFlag = (!isTrained) ? " {{untrained=1}}" : "";
             macro = `&{template:alternity-skill} {{name=${name}}} {{score=${scores}}} {{results=[[${query}]]}} {{wiki=[↗ Wiki Documentation](${url})}}${untrainedFlag}`;
