@@ -721,6 +721,8 @@ fieldset.sheet-section-skills {
     width: 20px;
     height: 20px;
     margin: 0 auto !important;
+    display: block !important;
+    align-self: center !important;
 }
 
 .sheet-skill-row.sheet-spec input[type="number"] {
