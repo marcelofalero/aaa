@@ -5,6 +5,14 @@ import argparse
 from pathlib import Path
 from ruamel.yaml import YAML
 
+def find_project_root():
+    current = Path.cwd().resolve()
+    for parent in [current] + list(current.parents):
+        marker = parent / '.alternity_root'
+        if marker.exists():
+            return parent
+    return Path.cwd().resolve()
+
 # Terminology & Character Normalization mapping
 REPLACEMENTS = {
     r'\bhero\b': 'character',
@@ -197,20 +205,28 @@ def cmd_diff(args):
                 print(f"    FILE (Cleaned): {file_text[:80]}...")
 
 if __name__ == "__main__":
+    root_dir = find_project_root()
+    default_yaml = str(root_dir / "sources/data_sources/survival_gear.yaml")
+    default_gear_dir = str(root_dir / "sources/survival-gear")
+
     parser = argparse.ArgumentParser(description="Alternity Gear Manager")
     subparsers = parser.add_subparsers(dest="command")
+    
     p_push = subparsers.add_parser("push", help="Push files TO YAML")
-    p_push.add_argument("--yaml", default="sources/data_sources/survival_gear.yaml")
-    p_push.add_argument("--gear-dir", default="sources/survival-gear")
+    p_push.add_argument("--yaml", default=default_yaml)
+    p_push.add_argument("--gear-dir", default=default_gear_dir)
     p_push.add_argument("--commit", action="store_true")
+    
     p_pull = subparsers.add_parser("pull", help="Pull YAML TO files")
-    p_pull.add_argument("--yaml", default="sources/data_sources/survival_gear.yaml")
-    p_pull.add_argument("--output", default="sources/survival-gear")
+    p_pull.add_argument("--yaml", default=default_yaml)
+    p_pull.add_argument("--output", default=default_gear_dir)
     p_pull.add_argument("--overwrite", action="store_true")
+    
     p_diff = subparsers.add_parser("diff", help="Compare files with YAML")
-    p_diff.add_argument("--yaml", default="sources/data_sources/survival_gear.yaml")
-    p_diff.add_argument("--gear-dir", default="sources/survival-gear")
+    p_diff.add_argument("--yaml", default=default_yaml)
+    p_diff.add_argument("--gear-dir", default=default_gear_dir)
     p_diff.add_argument("-v", "--verbose", action="store_true")
+    
     args = parser.parse_args()
     if args.command == "push": cmd_push(args)
     elif args.command == "pull": cmd_pull(args)
