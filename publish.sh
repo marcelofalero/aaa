@@ -15,7 +15,12 @@ python3 sources/scripts/generate_legacy_skills_json.py
 # 4. Build Character Sheet
 cd roll20_charsheet && python3 build_sheet.py && cd ..
 
-# 5. Execute Publication Script (Git/GitHub workflow)
+# 5. Build Site and Audit Search Index
+echo "Building site and auditing search index..."
+cd site && hugo --gc --minify && cd ..
+python3 sources/scripts/check_search_index.py || { echo "Search index audit failed! Aborting publication."; exit 1; }
+
+# 6. Execute Publication Script (Git/GitHub workflow)
 python3 sources/scripts/publish_changes.py
 
 echo "Done!"

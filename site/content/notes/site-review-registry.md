@@ -17,7 +17,7 @@ This registry tracks the review status of every granular element of the site. St
 | **Introduction** | Home, Getting Started | [PENDING] |
 | **Core Mechanics** | Attributes, Action Checks, Damage (Skills moved to /skills) | [PENDING] |
 | **Advanced Rules** | Optional systems and GM tools | [PENDING] |
-| **Site Logic** | Mapping, Design Tokens | [PENDING] |
+| **Site Logic** | Mapping, Design Tokens, Search Index | [COMPLETED] |
 
 ---
 
