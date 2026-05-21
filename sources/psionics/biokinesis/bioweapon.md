@@ -5,20 +5,52 @@ url: /psionics/biokinesis/#bioweapon
 trained_only: false
 rank_benefits:
 - rank: 3
-  title: "Increased Damage"
+  title: Increased Damage
 - rank: 6
-  title: "Increased Damage"
+  title: Increased Damage
 - rank: 9
-  title: "Increased Damage"
+  title: Increased Damage
 - rank: 12
-  title: "Improved Damage"
+  title: Improved Damage
 extended_duration: true
 name: Bioweapon
 ---
 
-A psion with this skill can use psionic energy to alter the shape of his or her hands or feet, or parts of his or her hands or feet, into some sort of weapon. The weapon can be any shape the character wishes, within the limits of his or her own mass, although most characters find a long, sharp blade or a heavy, blunt club the most effective shapes. While the ability is active, the character can use the bioweapon as a melee weapon. The success achieved on the skill check indicates a bonus to the character's melee weapon skill checks for the duration of the skill: Ordinary, no bonus; Good, -1 step bonus; Amazing, -2 step bonus. The damage delivered by the bioweapon depends on the shape of the weapon. A blunt, clublike weapon delivers d8s/d8+2s/d12+2s damage (using the Melee Weapons—bludgeon specialty skill). A blade-like weapon delivers d4w/d6+2w/d6m damage (using the Melee Weapons—blade specialty skill).
-**Rank Benefits:**
-- **At rank 3 [Increased Damage]:** the damage delivered by the bioweapon increases by 1 point (add 1 point to whatever damage is rolled).
-- **At rank 6 [Increased Damage]:** the damage increases by another point (a total of +2).
-- **At rank 9 [Increased Damage]:** the damage increases by another point (a total of +3).
-- **At rank 12 [Improved Damage]:** any Ordinary success with the weapon is treated as a Good success for purposes of determining the damage delivered.
+When employing this skill, a character generates a field of kinetic energy
+emanating from his or her hands. This energy manifests in one of two ways, to
+be chosen by the player at the time the character makes a successful skill
+check: a staff or a sword.
+
+The player may alter the shape of the staff to a club, and the sword to a
+particular type of sword (katana, saber, broadsword, and so on). These changes
+neither damage the bioweapon will do, nor do they grant any special properties
+to the weapon; they are cosmetic only.
+
+The principal difference in the two forms is in the sort of damage they do. A
+character who wishes just to knock out an opponent would be best served
+creating a staff; those who mean to inflict more serious harm on an opponent
+will likely create the sword.
+
+| Form | Base Damage | Type |
+| :--- | :--- | :---: |
+| **Staff** | d8s/d8+2s/d12+2s | LI/O |
+| **Sword** | d6w/d6+2w/d6m | LI/O |
+
+The character uses one of two skills to wield the bioweapon: **Melee
+Weapons—bludgeon** for the staff or **Melee Weapons—blade** for the sword. 
+
+The result of the bioweapon skill check may add a bonus to the appropriate
+Melee Weapon skill check as follows:
+- **Ordinary:** –1 step bonus
+- **Good:** –2 step bonus
+- **Amazing:** –3 step bonus
+
+This bonus lasts until the character chooses not to maintain the bioweapon.
+
+**Increased Damage:** 
+- **At rank 3**, the damage of the bioweapon increases by +1.
+- **At rank 6**, it increases again (to a total of +2).
+- **At rank 9**, it increases by another +1 (to a total of +3).
+- **At rank 12**, all attacks made with the bioweapon are considered to deliver **Good damage**.
+
+---

@@ -5,20 +5,23 @@ url: /psionics/telekinesis/#psychokinetics
 trained_only: false
 rank_benefits:
 - rank: 4
-  title: "Movement Rate"
+  title: Movement Rate
 - rank: 5
-  title: "Increased Damage"
+  title: Increased Damage
 - rank: 8
-  title: "Movement Rate"
+  title: Movement Rate
 - rank: 9
-  title: "Increased Damage"
+  title: Increased Damage
 - rank: 12
-  title: "Fine Manipulation"
+  title: Fine Manipulation
 extended_duration: true
 name: Psychokinetics
 ---
 
-Psychokinetics is the ability to move objects. Before making the skill check, the psion must choose whether he or she is attempting to move an object or to attack with one. The amount of weight that can be moved depends on the skill rank and the success:
+Psychokinetics is the ability to move objects. Before making the skill check,
+the psion must choose whether he or she is attempting to move an object or to
+attack with one. The amount of weight that can be moved depends on the skill
+rank and the success:
 - **Ordinary:** 10 kilograms per rank.
 - **Good:** 20 kilograms per rank.
 - **Amazing:** 40 kilograms per rank. The effective range is 10/20/50 meters. The ability lasts for one round, but the duration can be extended by spending 1 psionic energy point for each additional round. When used to attack, the damage inflicted depends on the success: Ordinary, d4s; Good, d4+2s; Amazing, d4w.

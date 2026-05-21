@@ -5,24 +5,27 @@ url: /psionics/psychoportation/#apportation
 trained_only: true
 rank_benefits:
 - rank: 3
-  title: "Living Matter"
+  title: Living Matter
 - rank: 4
-  title: "Increased weight"
+  title: Increased weight
 - rank: 6
-  title: "Precise Apportation"
+  title: Precise Apportation
 - rank: 8
-  title: "Increased weight"
+  title: Increased weight
 - rank: 9
-  title: "Large Apports"
+  title: Large Apports
 - rank: 12
-  title: "Increased weight"
+  title: Increased weight
 - rank: 12
-  title: "Distant Apports"
+  title: Distant Apports
 extended_duration: false
 name: Apportation
 ---
 
-This ability allows a character to summon an inanimate object from a distant location or to banish an object to another location. The psion must have seen the object he or she is attempting to apport. The weight of the object that can be apported depends on the skill rank and the success:
+This ability allows a character to summon an inanimate object from a distant
+location or to banish an object to another location. The psion must have seen
+the object he or she is attempting to apport. The weight of the object that
+can be apported depends on the skill rank and the success:
 - **Ordinary:** 1 kilogram per rank.
 - **Good:** 2 kilograms per rank.
 - **Amazing:** 5 kilograms per rank. The object appears or disappears instantaneously.

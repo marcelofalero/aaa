@@ -5,18 +5,22 @@ url: /psionics/esp/#psychometry
 trained_only: false
 rank_benefits:
 - rank: 1
-  title: "Treasured"
+  title: Treasured
 - rank: 4
-  title: "Regular Use"
+  title: Regular Use
 - rank: 8
-  title: "Frequent Use"
+  title: Frequent Use
 - rank: 12
-  title: "Minimal Use"
+  title: Minimal Use
 extended_duration: false
 name: Psychometry
 ---
 
-This skill gives its user the ability to read psychic impressions from inanimate objects. The character must touch the object to gain insight into who has used it and in what context. Tools, weapons, clothing, jewelry, books, other personal items, and even dead bodies can be studied. Living people and creatures can't be studied with this skill.
+This skill gives its user the ability to read psychic impressions from
+inanimate objects. The character must touch the object to gain insight into
+who has used it and in what context. Tools, weapons, clothing, jewelry, books,
+other personal items, and even dead bodies can be studied. Living people and
+creatures can't be studied with this skill.
 - **Ordinary:** the character receives simple emotions associated with the object.
 - **Good:** he or she receives simple images associated with the object.
 - **Amazing:** the character experiences a brief encounter as though he or she is the person using the object or its owner.

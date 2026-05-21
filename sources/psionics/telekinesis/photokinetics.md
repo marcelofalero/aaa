@@ -5,24 +5,30 @@ url: /psionics/telekinesis/#photokinetics
 trained_only: false
 rank_benefits:
 - rank: 3
-  title: "Simple Illusion"
+  title: Simple Illusion
 - rank: 4
-  title: ""
+  title: ''
 - rank: 6
-  title: "Flash"
+  title: Flash
 - rank: 8
-  title: ""
+  title: ''
 - rank: 9
-  title: "Gargantuan Illusion"
+  title: Gargantuan Illusion
 - rank: 12
-  title: ""
+  title: ''
 - rank: 12
-  title: "Improved Illusion"
+  title: Improved Illusion
 extended_duration: true
 name: Photokinetics
 ---
 
-With this skill, a character can excite or reduce the amount of light in a specific area. The area affected is a diameter of 2 meters (Ordinary success), 4 meters (Good success), or 6 meters (Amazing success). The duration of the effect depends on the success of the skill check: Marginal success, 1 phase; Ordinary success, 1 round; Good success, 2 rounds; Amazing success, 1 minute. The duration can be extended by spending 1 psionic energy point for each additional duration unit.
+With this skill, a character can excite or reduce the amount of light in a
+specific area. The area affected is a diameter of 2 meters (Ordinary success),
+4 meters (Good success), or 6 meters (Amazing success). The duration of the
+effect depends on the success of the skill check: Marginal success, 1 phase;
+Ordinary success, 1 round; Good success, 2 rounds; Amazing success, 1 minute.
+The duration can be extended by spending 1 psionic energy point for each
+additional duration unit.
 **Rank Benefits:**
 - **At rank 3 [Simple Illusion]:** the psion can create toy-sized visual illusions.
 - **At rank 4 []:** the unit of duration becomes 5 minutes.

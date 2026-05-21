@@ -5,20 +5,25 @@ url: /psionics/esp/#empathy
 trained_only: false
 rank_benefits:
 - rank: 4
-  title: "Relationship"
+  title: Relationship
 - rank: 6
-  title: "Aura Reading"
+  title: Aura Reading
 - rank: 8
-  title: "Relationship"
+  title: Relationship
 - rank: 9
-  title: "Connection"
+  title: Connection
 - rank: 12
-  title: "Relationship"
+  title: Relationship
 extended_duration: false
 name: Empathy
 ---
 
-This skill allows a psion to “read” the surface emotions of another character. This ability assists the user in encounter situations. The target must be within visual range. A successful use of empathy provides an understanding of the target's emotional state (Combative, Hostile, Neutral, Friendly, Charmed, or Fanatic) and provides a bonus when using encounter skills upon that target character:
+This skill allows a psion to “read” the surface emotions of another character.
+This ability assists the user in encounter situations. The target must be
+within visual range. A successful use of empathy provides an understanding of
+the target's emotional state (Combative, Hostile, Neutral, Friendly, Charmed,
+or Fanatic) and provides a bonus when using encounter skills upon that target
+character:
 - **Ordinary:** -1 step bonus.
 - **Good:** -2 step bonus.
 - **Amazing:** -3 step bonus.

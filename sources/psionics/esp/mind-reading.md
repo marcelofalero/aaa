@@ -5,18 +5,21 @@ url: /psionics/esp/#mind-reading
 trained_only: false
 rank_benefits:
 - rank: 3
-  title: "Extra Time"
+  title: Extra Time
 - rank: 6
-  title: "Probe"
+  title: Probe
 - rank: 9
-  title: "Extra Time"
+  title: Extra Time
 - rank: 12
-  title: "Extra Time"
+  title: Extra Time
 extended_duration: false
 name: Mind Reading
 ---
 
-This skill enables a psion to “read” the surface thoughts of another character. The target must be within 500 meters (100m/200m/500m) of the psionics-user. The mental contact remains in effect for a limited time and can't be extended by the use of psionic energy points.
+This skill enables a psion to “read” the surface thoughts of another
+character. The target must be within 500 meters (100m/200m/500m) of the
+psionics-user. The mental contact remains in effect for a limited time and
+can't be extended by the use of psionic energy points.
 - **Ordinary:** contact lasts for 1 phase after the skill check is made. Only random and disjointed thoughts are perceived.
 - **Good:** contact lasts for 2 phases. In addition to random thoughts, more detail and coherence is received, such as why the target is thinking about someone or something.
 - **Amazing:** contact lasts for 3 phases. Complete surface thoughts can be read, plus some key fact related to what the psionics-user hoped to discover.

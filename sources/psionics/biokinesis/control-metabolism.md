@@ -7,7 +7,46 @@ extended_duration: true
 name: Control Metabolism
 ---
 
-This skill allows a psion to assume control over his or her own metabolic processes. The character can use this to survive in a hostile environment or to enhance his or her physical performance. A psion using this skill must decide which of the following three types of effects he or she is attempting before making the skill check:
-**Survival:** The character can survive in an environment that would normally be fatal (extreme heat, cold, or the lack of a breathable atmosphere). A successful check indicates that the psion can simulate the protection of a vacuum mask (Ordinary success), a vacuum suit (Good success), or a soft e-suit (Amazing success). To remain in this state, the character must expend 1 psionic energy point per hour.
-**Adrenaline Boost:** The psion can trigger a release of adrenaline, giving a bonus to his or her action check score. An Ordinary success gives a +1 bonus; a Good success, a +2 bonus; and an Amazing success, a +3 bonus. This ability lasts for the round in which it is used and the following round; it can be extended by spending 1 psionic energy point per extra round.
-**Endorphin Release:** The psion can trigger a release of endorphins to help resist the effects of pain. This provides a step bonus to his or her Stamina specialty skill checks: Ordinary, -1 step; Good, -2 steps; Amazing, -3 steps. This effect lasts for one hour and can be extended by spending 1 psionic energy point for each extra hour.
+Through the use of this skill, a character can regulate his or her metabolic
+processes. This allows longer survival without food and water, in extreme
+climates, and in other hostile conditions. The character can also slow bodily
+functions to the point of pretending to be dead, should he or she need to fool
+others in some situation.
+
+A check is made when a character enters a hostile environment or otherwise
+wants to employ this skill.
+
+#### Hostile Environments
+In the case of a hostile environment, the result of a skill check determines
+the type of protection a character can simulate:
+- **Ordinary:** vacuum mask
+- **Good:** vacuum suit
+- **Amazing:** soft e-suit
+
+After the initial use of the skill, the level of protection can be maintained
+thereafter for a cost of 1 psionic energy point per hour.
+
+#### Adrenal boost
+*Extended duration.*
+The character can mentally boost adrenaline output, giving an action check
+bonus. 
+- **Ordinary:** +1 to action check score.
+- **Good:** +2 to action check score.
+- **Amazing:** +3 to action check score.
+
+This bonus lasts for the duration of the round in which the power is activated
+and through all of the next round. A character may extend the duration 1 round
+for every psionic energy point spent to do so.
+
+#### Endorphin release
+*Extended duration.*
+The character can mentally stimulate the production of endorphins, increasing
+his or her resistance to pain and fatigue.
+- **Ordinary:** -1 step bonus to Stamina checks.
+- **Good:** -2 step bonus to Stamina checks.
+- **Amazing:** -3 step bonus to Stamina checks.
+
+The duration is one hour; the duration may be extended by one hour per extra
+psionic energy point spent to do so.
+
+---

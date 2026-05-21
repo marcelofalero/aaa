@@ -5,16 +5,19 @@ url: /psionics/telekinesis/#kinetic-shield
 trained_only: true
 rank_benefits:
 - rank: 4
-  title: "Improved Protection"
+  title: Improved Protection
 - rank: 8
-  title: "Broad Shield"
+  title: Broad Shield
 - rank: 12
-  title: "Reflect Attacks"
+  title: Reflect Attacks
 extended_duration: true
 name: Kinetic Shield
 ---
 
-By concentrating, the character can create a field of kinetic energy that surrounds his or her body, protecting it from physical attacks. The shield reflects or absorbs kinetic energy from incoming attacks. The effectiveness of the shield depends on the success of the skill check:
+By concentrating, the character can create a field of kinetic energy that
+surrounds his or her body, protecting it from physical attacks. The shield
+reflects or absorbs kinetic energy from incoming attacks. The effectiveness of
+the shield depends on the success of the skill check:
 - **Ordinary:** the shield provides 1 point of protection against all physical attacks.
 - **Good:** the shield provides 2 points of protection against all physical attacks.
 - **Amazing:** the shield provides 3 points of protection against all physical attacks. The shield lasts for one round, but the duration can be extended by spending 1 psionic energy point for each additional round.

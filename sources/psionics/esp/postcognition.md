@@ -5,18 +5,21 @@ url: /psionics/esp/#postcognition
 trained_only: false
 rank_benefits:
 - rank: 3
-  title: "Extended Reach"
+  title: Extended Reach
 - rank: 6
-  title: "Extended Reach"
+  title: Extended Reach
 - rank: 9
-  title: "Extended Reach"
+  title: Extended Reach
 - rank: 12
-  title: "Extended Reach"
+  title: Extended Reach
 extended_duration: false
 name: Postcognition
 ---
 
-With this skill, a character can sense the mood of an area and even “see” events that happened there in the recent past. The character must be in the actual area to sense psychic resonance. In general, a character can see a number of days into the past equal to his or her skill rank.
+With this skill, a character can sense the mood of an area and even “see”
+events that happened there in the recent past. The character must be in the
+actual area to sense psychic resonance. In general, a character can see a
+number of days into the past equal to his or her skill rank.
 - **Ordinary:** the character senses general emotions that have been left in an area.
 - **Good:** the psion also receives brief flashes of events that may or may not make sense.
 - **Amazing:** the character actually experiences a brief encounter as though at the scene when the events occurred.

@@ -5,16 +5,19 @@ url: /psionics/psychoportation/#duplicate
 trained_only: true
 rank_benefits:
 - rank: 4
-  title: "Duration"
+  title: Duration
 - rank: 8
-  title: "Independent Action"
+  title: Independent Action
 - rank: 12
-  title: "Multiple Duplicates"
+  title: Multiple Duplicates
 extended_duration: false
 name: Duplicate
 ---
 
-This ability allows a character to summon a duplicate of himself or herself from another location in the multiverse. The duplicate is identical in every way and possesses the same skills and attributes as the psion. The duration that the duplicate persists depends on the success:
+This ability allows a character to summon a duplicate of himself or herself
+from another location in the multiverse. The duplicate is identical in every
+way and possesses the same skills and attributes as the psion. The duration
+that the duplicate persists depends on the success:
 - **Ordinary:** 1 round.
 - **Good:** 2 rounds.
 - **Amazing:** 5 rounds.
