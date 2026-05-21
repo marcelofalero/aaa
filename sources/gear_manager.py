@@ -99,16 +99,24 @@ def cmd_push(args):
                     target[k] = val
                     changes += 1
 
-            # Update Description
+            # Update Description and Name
             en_loc = next((loc['en'] for loc in target['localized'] if 'en' in loc), None)
             es_loc = next((loc['es'] for loc in target['localized'] if 'es' in loc), None)
 
-            if en_loc and clean_text(en_loc.get('description')) != clean_text(raw_desc):
-                en_loc['description'] = raw_desc
-                if es_loc:
-                    es_loc['description'] = "" # Clear translation to trigger re-translation
-                changes += 1
-                print(f"[UPDATE DESC] {broad_key}{'' if name.startswith('_') else '/' + name}")
+            if en_loc:
+                if 'name' in metadata and en_loc.get('name') != metadata['name']:
+                    print(f"[UPDATE NAME] {broad_key}{'' if name.startswith('_') else '/' + name} ({en_loc.get('name')} -> {metadata['name']})")
+                    en_loc['name'] = metadata['name']
+                    if es_loc:
+                        es_loc['name'] = "" # Clear to trigger translation
+                    changes += 1
+
+                if clean_text(en_loc.get('description')) != clean_text(raw_desc):
+                    en_loc['description'] = raw_desc
+                    if es_loc:
+                        es_loc['description'] = "" # Clear translation to trigger re-translation
+                    changes += 1
+                    print(f"[UPDATE DESC] {broad_key}{'' if name.startswith('_') else '/' + name}")
 
     if changes == 0:
         print("No changes needed. YAML is in sync.")
@@ -171,6 +179,11 @@ def cmd_diff(args):
             if file_text != yaml_text:
                 print(f"[DIFF CONTENT] {broad_key}{'' if name.startswith('_') else '/' + name}")
                 diff_found = True
+
+            if 'name' in metadata and en_loc.get('name') != metadata['name']:
+                print(f"[DIFF NAME] {broad_key}{'' if name.startswith('_') else '/' + name} ({en_loc.get('name')} -> {metadata['name']})")
+                diff_found = True
+
             for k, v in metadata.items():
                 if k != 'name':
                     target_val = target.get(k)
