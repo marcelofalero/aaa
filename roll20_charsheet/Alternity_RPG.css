@@ -715,12 +715,25 @@ fieldset.sheet-section-skills {
     grid-column: 3;
 }
 
+.sheet-skill-row > * {
+    grid-row: 1;
+}
+
 /* Checkbox (Broad) and Rank (Spec) both occupy col 4 */
 .sheet-trained-check {
     grid-column: 4;
     width: 20px;
     height: 20px;
     margin: 0 auto !important;
+    align-self: center !important;
+}
+
+.sheet-skill-row:not(.sheet-spec) .sheet-trained-check {
+    display: block !important;
+}
+
+.sheet-skill-row.sheet-spec .sheet-trained-check {
+    display: none !important;
 }
 
 .sheet-skill-row.sheet-spec input[type="number"] {
@@ -874,7 +887,7 @@ input.sheet-tab99:checked~div[class^="sheet-section"] {
 
 /* Main Sheet Tab Menu */
 input.sheet-tab {
-    width: 110px;
+    width: 95px;
     height: 32px;
     margin: 0;
     cursor: pointer;
@@ -885,10 +898,10 @@ input.sheet-tab {
 span.sheet-tab {
     display: inline-block;
     text-align: center;
-    width: 110px;
+    width: 95px;
     height: 32px;
     line-height: 32px;
-    margin-left: -110px;
+    margin-left: -95px;
     /* Exact overlap with the input */
     background: var(--color-row-even);
     color: var(--color-text-dim);
@@ -896,7 +909,7 @@ span.sheet-tab {
     border: 1px solid var(--color-border);
     border-bottom: none;
     border-radius: 4px 4px 0 0;
-    font-size: 0.85rem;
+    font-size: 0.78rem;
     text-transform: uppercase;
     pointer-events: none;
     /* Let the input catch the clicks */
@@ -1101,8 +1114,12 @@ button[type="roll"]:hover {
 
 /* Highlight skill name when trained */
 .sheet-trained-check:checked ~ .sheet-skill-name {
+    font-weight: bold !important;
+}
+
+/* Light blue accent only for trained-only skills when checked */
+.sheet-trained-check:checked ~ .sheet-skill-name.sheet-trained-only {
     color: #38bdf8 !important; /* Light blue accent */
-    font-weight: 600;
 }
 
 .sheet-trained-only-msg {

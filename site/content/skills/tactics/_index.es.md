@@ -1,6 +1,6 @@
 +++
 title = "Táctica"
-attribute = "WIL"
+attribute = "INT"
 category = "Combat"
 type = "skill"
 layout = "list"
@@ -18,8 +18,9 @@ Esta amplia habilidad proporciona al Personaje entrenamiento básico y comprensi
 {{< specialty attr="INT" untrained="yes" cost="3" >}}
 
 El Especialidad cubre estrategias en el campo de batalla cuando el componente principal de la batalla son tropas individuales.
-⊗ **Efecto aumentado:** A medida que un Personaje logra un Rangos más alto en una Táctica Especialidad, recibe una bonificación de Dado de Situación por lidiar con fuerzas opuestas (infantería, naves espaciales o vehículos). El bono es
-**-1 paso en Rango 4**, **-2 pasos en Rango 8** y **-3 pasos en Rango 12**.
+
+### Beneficios de Rango
+⊗ **Efecto aumentado:** A medida que un Personaje logra un Rangos más alto en una Táctica Especialidad, recibe una bonificación de Dado de Situación por lidiar con fuerzas opuestas (infantería, naves espaciales o vehículos). La bonificación es **-1 paso en Rango 4**, **-2 pasos en Rango 8** y **-3 pasos en Rango 12**.
 
 ---
 
@@ -27,6 +28,8 @@ El Especialidad cubre estrategias en el campo de batalla cuando el componente pr
 {{< specialty attr="INT" untrained="yes" cost="3" >}}
 
 Estrategias de campo de batalla que involucran Combate entre naves espaciales.
+
+### Beneficios de Rango
 ⊗ **Efecto aumentado:** A medida que un Personaje logra un Rangos más alto en una Táctica Especialidad, recibe una bonificación de Dado de Situación por lidiar con fuerzas opuestas. La bonificación es **-1 paso en Rango 4**, **-2 pasos en Rango 8** y **-3 pasos en Rango 12**.
 
 ---
@@ -35,6 +38,8 @@ Estrategias de campo de batalla que involucran Combate entre naves espaciales.
 {{< specialty attr="INT" untrained="yes" cost="3" >}}
 
 Estrategias de campo de batalla que involucran Combate donde los vehículos Otros más que las naves espaciales (aire, tierra o agua) son el componente principal.
+
+### Beneficios de Rango
 ⊗ **Efecto aumentado:** A medida que un Personaje logra un Rangos más alto en una Táctica Especialidad, recibe una bonificación de Dado de Situación por lidiar con fuerzas opuestas. La bonificación es **-1 paso en Rango 4**, **-2 pasos en Rango 8** y **-3 pasos en Rango 12**.
 
 ---

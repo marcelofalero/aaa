@@ -189,14 +189,14 @@ function updateSkillMacro(skillId, name, url, isTrainedOnly, type, parentBroadId
     const trainingAttr = isSpecialty ? skillId + '_is_trained' : skillId;
     
     getAttrs([trainingAttr, skillId + 'O', skillId + 'G', skillId + 'A'], function(v) {
-        const isTrained = parseInt(v[trainingAttr]) || 0;
+        const isTrained = (v[trainingAttr] === '1' || v[trainingAttr] === 'on' || parseInt(v[trainingAttr]) === 1) ? 1 : 0;
         const scores = `[[@{${skillId}O}]] / [[@{${skillId}G}]] / [[@{${skillId}A}]]`;
         
         let macro = "";
         if (!isTrained && isTrainedOnly) {
             macro = `/w gm attempts to use ${name} untrained, but it is a Trained Only skill.`;
         } else {
-            const defaultStep = (!isTrained || !isSpecialty) ? 1 : 0;
+            const defaultStep = !isTrained ? 1 : 0;
             const query = getAlternityRollQuery(defaultStep);
             const untrainedFlag = (!isTrained) ? " {{untrained=1}}" : "";
             macro = `&{template:alternity-skill} {{name=${name}}} {{score=${scores}}} {{results=[[${query}]]}} {{wiki=[↗ Wiki Documentation](${url})}}${untrainedFlag}`;
@@ -1509,7 +1509,7 @@ on("change:undorank sheet:opened", function() { getAttrs(["UndoRank"], function(
 					<div class="sheet-skill-ability-label">SCORE</div>
 				</div>
 				<div class="sheet-skill-row">
-					<input type="checkbox" name="attr_Acrobatics" class="sheet-trained-check" value="1" style="display: none;" checked="checked" />
+					<input type="checkbox" name="attr_Acrobatics" class="sheet-trained-check" value="1" />
 					<input type="hidden" name="attr_Acrobatics_macro" value="">
 					<input type="hidden" name="attr_Acrobatics_is_trained_only" value="0">
 					<div class="sheet-roll-container">
@@ -1517,7 +1517,6 @@ on("change:undorank sheet:opened", function() { getAttrs(["UndoRank"], function(
 					</div>
 					<div class="sheet-skill-name">Acrobatics <button type="roll" name="roll_Acrobatics_link" class="sheet-skill-link" value="[Acrobatics Wiki](https://aaa.dimble.net/skills/acrobatics)">&#x2197;</button><div class="sheet-skill-info"><span class="sheet-info-icon">i</span><div class="sheet-tooltip"><span class="sheet-tooltip-cost">Base cost: 7</span></div></div></div>
 					<div class="sheet-skill-ability-label">DEX</div>
-					<div class="sheet-skill-rank-box-placeholder"></div>
 					<div class="sheet-skill-score-cell">
 						<input type="text" name="attr_AcrobaticsO" class="sheet-scoredisabled" disabled="true" value="(floor(@{Dexterity}/(2-@{Acrobatics})))">/
 						<input type="text" name="attr_AcrobaticsG" class="sheet-scoredisabled" disabled="true" value="(floor(@{AcrobaticsO}/2))">/
@@ -1616,7 +1615,7 @@ on("change:undorank sheet:opened", function() { getAttrs(["UndoRank"], function(
 					<div class="sheet-skill-ability-label">SCORE</div>
 				</div>
 				<div class="sheet-skill-row">
-					<input type="checkbox" name="attr_Administration" class="sheet-trained-check" value="1" style="display: none;" checked="checked" />
+					<input type="checkbox" name="attr_Administration" class="sheet-trained-check" value="1" />
 					<input type="hidden" name="attr_Administration_macro" value="">
 					<input type="hidden" name="attr_Administration_is_trained_only" value="0">
 					<div class="sheet-roll-container">
@@ -1624,7 +1623,6 @@ on("change:undorank sheet:opened", function() { getAttrs(["UndoRank"], function(
 					</div>
 					<div class="sheet-skill-name">Administration <button type="roll" name="roll_Administration_link" class="sheet-skill-link" value="[Administration Wiki](https://aaa.dimble.net/skills/administration)">&#x2197;</button><div class="sheet-skill-info"><span class="sheet-info-icon">i</span><div class="sheet-tooltip"><span class="sheet-tooltip-cost">Base cost: 4</span></div></div></div>
 					<div class="sheet-skill-ability-label">WIL</div>
-					<div class="sheet-skill-rank-box-placeholder"></div>
 					<div class="sheet-skill-score-cell">
 						<input type="text" name="attr_AdministrationO" class="sheet-scoredisabled" disabled="true" value="(floor(@{Will}/(2-@{Administration})))">/
 						<input type="text" name="attr_AdministrationG" class="sheet-scoredisabled" disabled="true" value="(floor(@{AdministrationO}/2))">/
@@ -1675,7 +1673,7 @@ on("change:undorank sheet:opened", function() { getAttrs(["UndoRank"], function(
 					<div class="sheet-skill-ability-label">SCORE</div>
 				</div>
 				<div class="sheet-skill-row">
-					<input type="checkbox" name="attr_AnimalHandling" class="sheet-trained-check" value="1" style="display: none;" checked="checked" />
+					<input type="checkbox" name="attr_AnimalHandling" class="sheet-trained-check" value="1" />
 					<input type="hidden" name="attr_AnimalHandling_macro" value="">
 					<input type="hidden" name="attr_AnimalHandling_is_trained_only" value="0">
 					<div class="sheet-roll-container">
@@ -1683,7 +1681,6 @@ on("change:undorank sheet:opened", function() { getAttrs(["UndoRank"], function(
 					</div>
 					<div class="sheet-skill-name">Animal Handling <button type="roll" name="roll_AnimalHandling_link" class="sheet-skill-link" value="[Animal Handling Wiki](https://aaa.dimble.net/skills/animal-handling)">&#x2197;</button><div class="sheet-skill-info"><span class="sheet-info-icon">i</span><div class="sheet-tooltip"><span class="sheet-tooltip-cost">Base cost: 3</span></div></div></div>
 					<div class="sheet-skill-ability-label">WIL</div>
-					<div class="sheet-skill-rank-box-placeholder"></div>
 					<div class="sheet-skill-score-cell">
 						<input type="text" name="attr_AnimalHandlingO" class="sheet-scoredisabled" disabled="true" value="(floor(@{Will}/(2-@{AnimalHandling})))">/
 						<input type="text" name="attr_AnimalHandlingG" class="sheet-scoredisabled" disabled="true" value="(floor(@{AnimalHandlingO}/2))">/
@@ -1734,7 +1731,7 @@ on("change:undorank sheet:opened", function() { getAttrs(["UndoRank"], function(
 					<div class="sheet-skill-ability-label">SCORE</div>
 				</div>
 				<div class="sheet-skill-row">
-					<input type="checkbox" name="attr_ArmorOperation" class="sheet-trained-check" value="1" style="display: none;" checked="checked" />
+					<input type="checkbox" name="attr_ArmorOperation" class="sheet-trained-check" value="1" />
 					<input type="hidden" name="attr_ArmorOperation_macro" value="">
 					<input type="hidden" name="attr_ArmorOperation_is_trained_only" value="0">
 					<div class="sheet-roll-container">
@@ -1742,7 +1739,6 @@ on("change:undorank sheet:opened", function() { getAttrs(["UndoRank"], function(
 					</div>
 					<div class="sheet-skill-name">Armor Operation <button type="roll" name="roll_ArmorOperation_link" class="sheet-skill-link" value="[Armor Operation Wiki](https://aaa.dimble.net/skills/armor-operation)">&#x2197;</button><div class="sheet-skill-info"><span class="sheet-info-icon">i</span><div class="sheet-tooltip"><span class="sheet-tooltip-cost">Base cost: 7</span></div></div></div>
 					<div class="sheet-skill-ability-label">STR</div>
-					<div class="sheet-skill-rank-box-placeholder"></div>
 					<div class="sheet-skill-score-cell">
 						<input type="text" name="attr_ArmorOperationO" class="sheet-scoredisabled" disabled="true" value="(floor(@{Strength}/(2-@{ArmorOperation})))">/
 						<input type="text" name="attr_ArmorOperationG" class="sheet-scoredisabled" disabled="true" value="(floor(@{ArmorOperationO}/2))">/
@@ -1825,7 +1821,7 @@ on("change:undorank sheet:opened", function() { getAttrs(["UndoRank"], function(
 					<div class="sheet-skill-ability-label">SCORE</div>
 				</div>
 				<div class="sheet-skill-row">
-					<input type="checkbox" name="attr_Athletics" class="sheet-trained-check" value="1" style="display: none;" checked="checked" />
+					<input type="checkbox" name="attr_Athletics" class="sheet-trained-check" value="1" />
 					<input type="hidden" name="attr_Athletics_macro" value="">
 					<input type="hidden" name="attr_Athletics_is_trained_only" value="0">
 					<div class="sheet-roll-container">
@@ -1833,7 +1829,6 @@ on("change:undorank sheet:opened", function() { getAttrs(["UndoRank"], function(
 					</div>
 					<div class="sheet-skill-name">Athletics <button type="roll" name="roll_Athletics_link" class="sheet-skill-link" value="[Athletics Wiki](https://aaa.dimble.net/skills/athletics)">&#x2197;</button><div class="sheet-skill-info"><span class="sheet-info-icon">i</span><div class="sheet-tooltip"><span class="sheet-tooltip-cost">Base cost: 3</span></div></div></div>
 					<div class="sheet-skill-ability-label">STR</div>
-					<div class="sheet-skill-rank-box-placeholder"></div>
 					<div class="sheet-skill-score-cell">
 						<input type="text" name="attr_AthleticsO" class="sheet-scoredisabled" disabled="true" value="(floor(@{Strength}/(2-@{Athletics})))">/
 						<input type="text" name="attr_AthleticsG" class="sheet-scoredisabled" disabled="true" value="(floor(@{AthleticsO}/2))">/
@@ -1916,7 +1911,7 @@ on("change:undorank sheet:opened", function() { getAttrs(["UndoRank"], function(
 					<div class="sheet-skill-ability-label">SCORE</div>
 				</div>
 				<div class="sheet-skill-row">
-					<input type="checkbox" name="attr_Awareness" class="sheet-trained-check" value="1" style="display: none;" checked="checked" />
+					<input type="checkbox" name="attr_Awareness" class="sheet-trained-check" value="1" />
 					<input type="hidden" name="attr_Awareness_macro" value="">
 					<input type="hidden" name="attr_Awareness_is_trained_only" value="0">
 					<div class="sheet-roll-container">
@@ -1924,7 +1919,6 @@ on("change:undorank sheet:opened", function() { getAttrs(["UndoRank"], function(
 					</div>
 					<div class="sheet-skill-name">Awareness <button type="roll" name="roll_Awareness_link" class="sheet-skill-link" value="[Awareness Wiki](https://aaa.dimble.net/skills/awareness)">&#x2197;</button><div class="sheet-skill-info"><span class="sheet-info-icon">i</span><div class="sheet-tooltip"><span class="sheet-tooltip-cost">Base cost: 3</span></div></div></div>
 					<div class="sheet-skill-ability-label">WIL</div>
-					<div class="sheet-skill-rank-box-placeholder"></div>
 					<div class="sheet-skill-score-cell">
 						<input type="text" name="attr_AwarenessO" class="sheet-scoredisabled" disabled="true" value="(floor(@{Will}/(2-@{Awareness})))">/
 						<input type="text" name="attr_AwarenessG" class="sheet-scoredisabled" disabled="true" value="(floor(@{AwarenessO}/2))">/
@@ -1991,7 +1985,7 @@ on("change:undorank sheet:opened", function() { getAttrs(["UndoRank"], function(
 					<div class="sheet-skill-ability-label">SCORE</div>
 				</div>
 				<div class="sheet-skill-row">
-					<input type="checkbox" name="attr_Business" class="sheet-trained-check" value="1" style="display: none;" checked="checked" />
+					<input type="checkbox" name="attr_Business" class="sheet-trained-check" value="1" />
 					<input type="hidden" name="attr_Business_macro" value="">
 					<input type="hidden" name="attr_Business_is_trained_only" value="0">
 					<div class="sheet-roll-container">
@@ -1999,7 +1993,6 @@ on("change:undorank sheet:opened", function() { getAttrs(["UndoRank"], function(
 					</div>
 					<div class="sheet-skill-name">Business <button type="roll" name="roll_Business_link" class="sheet-skill-link" value="[Business Wiki](https://aaa.dimble.net/skills/business)">&#x2197;</button><div class="sheet-skill-info"><span class="sheet-info-icon">i</span><div class="sheet-tooltip"><span class="sheet-tooltip-cost">Base cost: 4</span></div></div></div>
 					<div class="sheet-skill-ability-label">INT</div>
-					<div class="sheet-skill-rank-box-placeholder"></div>
 					<div class="sheet-skill-score-cell">
 						<input type="text" name="attr_BusinessO" class="sheet-scoredisabled" disabled="true" value="(floor(@{Intelligence}/(2-@{Business})))">/
 						<input type="text" name="attr_BusinessG" class="sheet-scoredisabled" disabled="true" value="(floor(@{BusinessO}/2))">/
@@ -2066,7 +2059,7 @@ on("change:undorank sheet:opened", function() { getAttrs(["UndoRank"], function(
 					<div class="sheet-skill-ability-label">SCORE</div>
 				</div>
 				<div class="sheet-skill-row">
-					<input type="checkbox" name="attr_ComputerScience" class="sheet-trained-check" value="1" style="display: none;" checked="checked" />
+					<input type="checkbox" name="attr_ComputerScience" class="sheet-trained-check" value="1" />
 					<input type="hidden" name="attr_ComputerScience_macro" value="">
 					<input type="hidden" name="attr_ComputerScience_is_trained_only" value="0">
 					<div class="sheet-roll-container">
@@ -2074,7 +2067,6 @@ on("change:undorank sheet:opened", function() { getAttrs(["UndoRank"], function(
 					</div>
 					<div class="sheet-skill-name">Computer Science <button type="roll" name="roll_ComputerScience_link" class="sheet-skill-link" value="[Computer Science Wiki](https://aaa.dimble.net/skills/computer-science)">&#x2197;</button><div class="sheet-skill-info"><span class="sheet-info-icon">i</span><div class="sheet-tooltip"><span class="sheet-tooltip-cost">Base cost: 7</span></div></div></div>
 					<div class="sheet-skill-ability-label">INT</div>
-					<div class="sheet-skill-rank-box-placeholder"></div>
 					<div class="sheet-skill-score-cell">
 						<input type="text" name="attr_ComputerScienceO" class="sheet-scoredisabled" disabled="true" value="(floor(@{Intelligence}/(2-@{ComputerScience})))">/
 						<input type="text" name="attr_ComputerScienceG" class="sheet-scoredisabled" disabled="true" value="(floor(@{ComputerScienceO}/2))">/
@@ -2141,7 +2133,7 @@ on("change:undorank sheet:opened", function() { getAttrs(["UndoRank"], function(
 					<div class="sheet-skill-ability-label">SCORE</div>
 				</div>
 				<div class="sheet-skill-row">
-					<input type="checkbox" name="attr_CovertOps" class="sheet-trained-check" value="1" style="display: none;" checked="checked" />
+					<input type="checkbox" name="attr_CovertOps" class="sheet-trained-check" value="1" />
 					<input type="hidden" name="attr_CovertOps_macro" value="">
 					<input type="hidden" name="attr_CovertOps_is_trained_only" value="0">
 					<div class="sheet-roll-container">
@@ -2149,7 +2141,6 @@ on("change:undorank sheet:opened", function() { getAttrs(["UndoRank"], function(
 					</div>
 					<div class="sheet-skill-name">Covert Ops <button type="roll" name="roll_CovertOps_link" class="sheet-skill-link" value="[Covert Ops Wiki](https://aaa.dimble.net/skills/covert-ops)">&#x2197;</button><div class="sheet-skill-info"><span class="sheet-info-icon">i</span><div class="sheet-tooltip"><span class="sheet-tooltip-cost">Base cost: 8</span></div></div></div>
 					<div class="sheet-skill-ability-label">DEX</div>
-					<div class="sheet-skill-rank-box-placeholder"></div>
 					<div class="sheet-skill-score-cell">
 						<input type="text" name="attr_CovertOpsO" class="sheet-scoredisabled" disabled="true" value="(floor(@{Dexterity}/(2-@{CovertOps})))">/
 						<input type="text" name="attr_CovertOpsG" class="sheet-scoredisabled" disabled="true" value="(floor(@{CovertOpsO}/2))">/
@@ -2232,7 +2223,7 @@ on("change:undorank sheet:opened", function() { getAttrs(["UndoRank"], function(
 					<div class="sheet-skill-ability-label">SCORE</div>
 				</div>
 				<div class="sheet-skill-row">
-					<input type="checkbox" name="attr_Creativity" class="sheet-trained-check" value="1" style="display: none;" checked="checked" />
+					<input type="checkbox" name="attr_Creativity" class="sheet-trained-check" value="1" />
 					<input type="hidden" name="attr_Creativity_macro" value="">
 					<input type="hidden" name="attr_Creativity_is_trained_only" value="0">
 					<div class="sheet-roll-container">
@@ -2240,7 +2231,6 @@ on("change:undorank sheet:opened", function() { getAttrs(["UndoRank"], function(
 					</div>
 					<div class="sheet-skill-name">Creativity <button type="roll" name="roll_Creativity_link" class="sheet-skill-link" value="[Creativity Wiki](https://aaa.dimble.net/skills/creativity)">&#x2197;</button><div class="sheet-skill-info"><span class="sheet-info-icon">i</span><div class="sheet-tooltip"><span class="sheet-tooltip-cost">Base cost: 6</span></div></div></div>
 					<div class="sheet-skill-ability-label">WIL</div>
-					<div class="sheet-skill-rank-box-placeholder"></div>
 					<div class="sheet-skill-score-cell">
 						<input type="text" name="attr_CreativityO" class="sheet-scoredisabled" disabled="true" value="(floor(@{Will}/(2-@{Creativity})))">/
 						<input type="text" name="attr_CreativityG" class="sheet-scoredisabled" disabled="true" value="(floor(@{CreativityO}/2))">/
@@ -2323,7 +2313,7 @@ on("change:undorank sheet:opened", function() { getAttrs(["UndoRank"], function(
 					<div class="sheet-skill-ability-label">SCORE</div>
 				</div>
 				<div class="sheet-skill-row">
-					<input type="checkbox" name="attr_Culture" class="sheet-trained-check" value="1" style="display: none;" checked="checked" />
+					<input type="checkbox" name="attr_Culture" class="sheet-trained-check" value="1" />
 					<input type="hidden" name="attr_Culture_macro" value="">
 					<input type="hidden" name="attr_Culture_is_trained_only" value="0">
 					<div class="sheet-roll-container">
@@ -2331,7 +2321,6 @@ on("change:undorank sheet:opened", function() { getAttrs(["UndoRank"], function(
 					</div>
 					<div class="sheet-skill-name">Culture <button type="roll" name="roll_Culture_link" class="sheet-skill-link" value="[Culture Wiki](https://aaa.dimble.net/skills/culture)">&#x2197;</button><div class="sheet-skill-info"><span class="sheet-info-icon">i</span><div class="sheet-tooltip"><span class="sheet-tooltip-cost">Base cost: 5</span></div></div></div>
 					<div class="sheet-skill-ability-label">PER</div>
-					<div class="sheet-skill-rank-box-placeholder"></div>
 					<div class="sheet-skill-score-cell">
 						<input type="text" name="attr_CultureO" class="sheet-scoredisabled" disabled="true" value="(floor(@{Personality}/(2-@{Culture})))">/
 						<input type="text" name="attr_CultureG" class="sheet-scoredisabled" disabled="true" value="(floor(@{CultureO}/2))">/
@@ -2398,7 +2387,7 @@ on("change:undorank sheet:opened", function() { getAttrs(["UndoRank"], function(
 					<div class="sheet-skill-ability-label">SCORE</div>
 				</div>
 				<div class="sheet-skill-row">
-					<input type="checkbox" name="attr_Deception" class="sheet-trained-check" value="1" style="display: none;" checked="checked" />
+					<input type="checkbox" name="attr_Deception" class="sheet-trained-check" value="1" />
 					<input type="hidden" name="attr_Deception_macro" value="">
 					<input type="hidden" name="attr_Deception_is_trained_only" value="0">
 					<div class="sheet-roll-container">
@@ -2406,7 +2395,6 @@ on("change:undorank sheet:opened", function() { getAttrs(["UndoRank"], function(
 					</div>
 					<div class="sheet-skill-name">Deception <button type="roll" name="roll_Deception_link" class="sheet-skill-link" value="[Deception Wiki](https://aaa.dimble.net/skills/deception)">&#x2197;</button><div class="sheet-skill-info"><span class="sheet-info-icon">i</span><div class="sheet-tooltip"><span class="sheet-tooltip-cost">Base cost: 5</span></div></div></div>
 					<div class="sheet-skill-ability-label">PER</div>
-					<div class="sheet-skill-rank-box-placeholder"></div>
 					<div class="sheet-skill-score-cell">
 						<input type="text" name="attr_DeceptionO" class="sheet-scoredisabled" disabled="true" value="(floor(@{Personality}/(2-@{Deception})))">/
 						<input type="text" name="attr_DeceptionG" class="sheet-scoredisabled" disabled="true" value="(floor(@{DeceptionO}/2))">/
@@ -2505,7 +2493,7 @@ on("change:undorank sheet:opened", function() { getAttrs(["UndoRank"], function(
 					<div class="sheet-skill-ability-label">SCORE</div>
 				</div>
 				<div class="sheet-skill-row">
-					<input type="checkbox" name="attr_Demolitions" class="sheet-trained-check" value="1" style="display: none;" checked="checked" />
+					<input type="checkbox" name="attr_Demolitions" class="sheet-trained-check" value="1" />
 					<input type="hidden" name="attr_Demolitions_macro" value="">
 					<input type="hidden" name="attr_Demolitions_is_trained_only" value="0">
 					<div class="sheet-roll-container">
@@ -2513,7 +2501,6 @@ on("change:undorank sheet:opened", function() { getAttrs(["UndoRank"], function(
 					</div>
 					<div class="sheet-skill-name">Demolitions <button type="roll" name="roll_Demolitions_link" class="sheet-skill-link" value="[Demolitions Wiki](https://aaa.dimble.net/skills/demolitions)">&#x2197;</button><div class="sheet-skill-info"><span class="sheet-info-icon">i</span><div class="sheet-tooltip"><span class="sheet-tooltip-cost">Base cost: 6</span></div></div></div>
 					<div class="sheet-skill-ability-label">WIL</div>
-					<div class="sheet-skill-rank-box-placeholder"></div>
 					<div class="sheet-skill-score-cell">
 						<input type="text" name="attr_DemolitionsO" class="sheet-scoredisabled" disabled="true" value="(floor(@{Will}/(2-@{Demolitions})))">/
 						<input type="text" name="attr_DemolitionsG" class="sheet-scoredisabled" disabled="true" value="(floor(@{DemolitionsO}/2))">/
@@ -2580,7 +2567,7 @@ on("change:undorank sheet:opened", function() { getAttrs(["UndoRank"], function(
 					<div class="sheet-skill-ability-label">SCORE</div>
 				</div>
 				<div class="sheet-skill-row">
-					<input type="checkbox" name="attr_Entertainment" class="sheet-trained-check" value="1" style="display: none;" checked="checked" />
+					<input type="checkbox" name="attr_Entertainment" class="sheet-trained-check" value="1" />
 					<input type="hidden" name="attr_Entertainment_macro" value="">
 					<input type="hidden" name="attr_Entertainment_is_trained_only" value="0">
 					<div class="sheet-roll-container">
@@ -2588,7 +2575,6 @@ on("change:undorank sheet:opened", function() { getAttrs(["UndoRank"], function(
 					</div>
 					<div class="sheet-skill-name">Entertainment <button type="roll" name="roll_Entertainment_link" class="sheet-skill-link" value="[Entertainment Wiki](https://aaa.dimble.net/skills/entertainment)">&#x2197;</button><div class="sheet-skill-info"><span class="sheet-info-icon">i</span><div class="sheet-tooltip"><span class="sheet-tooltip-cost">Base cost: 3</span></div></div></div>
 					<div class="sheet-skill-ability-label">PER</div>
-					<div class="sheet-skill-rank-box-placeholder"></div>
 					<div class="sheet-skill-score-cell">
 						<input type="text" name="attr_EntertainmentO" class="sheet-scoredisabled" disabled="true" value="(floor(@{Personality}/(2-@{Entertainment})))">/
 						<input type="text" name="attr_EntertainmentG" class="sheet-scoredisabled" disabled="true" value="(floor(@{EntertainmentO}/2))">/
@@ -2671,7 +2657,7 @@ on("change:undorank sheet:opened", function() { getAttrs(["UndoRank"], function(
 					<div class="sheet-skill-ability-label">SCORE</div>
 				</div>
 				<div class="sheet-skill-row">
-					<input type="checkbox" name="attr_HeavyWeapons" class="sheet-trained-check" value="1" style="display: none;" checked="checked" />
+					<input type="checkbox" name="attr_HeavyWeapons" class="sheet-trained-check" value="1" />
 					<input type="hidden" name="attr_HeavyWeapons_macro" value="">
 					<input type="hidden" name="attr_HeavyWeapons_is_trained_only" value="0">
 					<div class="sheet-roll-container">
@@ -2679,7 +2665,6 @@ on("change:undorank sheet:opened", function() { getAttrs(["UndoRank"], function(
 					</div>
 					<div class="sheet-skill-name">Heavy Weapons <button type="roll" name="roll_HeavyWeapons_link" class="sheet-skill-link" value="[Heavy Weapons Wiki](https://aaa.dimble.net/skills/heavy-weapons)">&#x2197;</button><div class="sheet-skill-info"><span class="sheet-info-icon">i</span><div class="sheet-tooltip"><span class="sheet-tooltip-cost">Base cost: 6</span></div></div></div>
 					<div class="sheet-skill-ability-label">STR</div>
-					<div class="sheet-skill-rank-box-placeholder"></div>
 					<div class="sheet-skill-score-cell">
 						<input type="text" name="attr_HeavyWeaponsO" class="sheet-scoredisabled" disabled="true" value="(floor(@{Strength}/(2-@{HeavyWeapons})))">/
 						<input type="text" name="attr_HeavyWeaponsG" class="sheet-scoredisabled" disabled="true" value="(floor(@{HeavyWeaponsO}/2))">/
@@ -2730,7 +2715,7 @@ on("change:undorank sheet:opened", function() { getAttrs(["UndoRank"], function(
 					<div class="sheet-skill-ability-label">SCORE</div>
 				</div>
 				<div class="sheet-skill-row">
-					<input type="checkbox" name="attr_Interaction" class="sheet-trained-check" value="1" style="display: none;" checked="checked" />
+					<input type="checkbox" name="attr_Interaction" class="sheet-trained-check" value="1" />
 					<input type="hidden" name="attr_Interaction_macro" value="">
 					<input type="hidden" name="attr_Interaction_is_trained_only" value="0">
 					<div class="sheet-roll-container">
@@ -2738,7 +2723,6 @@ on("change:undorank sheet:opened", function() { getAttrs(["UndoRank"], function(
 					</div>
 					<div class="sheet-skill-name">Interaction <button type="roll" name="roll_Interaction_link" class="sheet-skill-link" value="[Interaction Wiki](https://aaa.dimble.net/skills/interaction)">&#x2197;</button><div class="sheet-skill-info"><span class="sheet-info-icon">i</span><div class="sheet-tooltip"><span class="sheet-tooltip-cost">Base cost: 3</span></div></div></div>
 					<div class="sheet-skill-ability-label">PER</div>
-					<div class="sheet-skill-rank-box-placeholder"></div>
 					<div class="sheet-skill-score-cell">
 						<input type="text" name="attr_InteractionO" class="sheet-scoredisabled" disabled="true" value="(floor(@{Personality}/(2-@{Interaction})))">/
 						<input type="text" name="attr_InteractionG" class="sheet-scoredisabled" disabled="true" value="(floor(@{InteractionO}/2))">/
@@ -2853,7 +2837,7 @@ on("change:undorank sheet:opened", function() { getAttrs(["UndoRank"], function(
 					<div class="sheet-skill-ability-label">SCORE</div>
 				</div>
 				<div class="sheet-skill-row">
-					<input type="checkbox" name="attr_Investigate" class="sheet-trained-check" value="1" style="display: none;" checked="checked" />
+					<input type="checkbox" name="attr_Investigate" class="sheet-trained-check" value="1" />
 					<input type="hidden" name="attr_Investigate_macro" value="">
 					<input type="hidden" name="attr_Investigate_is_trained_only" value="0">
 					<div class="sheet-roll-container">
@@ -2861,7 +2845,6 @@ on("change:undorank sheet:opened", function() { getAttrs(["UndoRank"], function(
 					</div>
 					<div class="sheet-skill-name">Investigate <button type="roll" name="roll_Investigate_link" class="sheet-skill-link" value="[Investigate Wiki](https://aaa.dimble.net/skills/investigate)">&#x2197;</button><div class="sheet-skill-info"><span class="sheet-info-icon">i</span><div class="sheet-tooltip"><span class="sheet-tooltip-cost">Base cost: 3</span></div></div></div>
 					<div class="sheet-skill-ability-label">WIL</div>
-					<div class="sheet-skill-rank-box-placeholder"></div>
 					<div class="sheet-skill-score-cell">
 						<input type="text" name="attr_InvestigateO" class="sheet-scoredisabled" disabled="true" value="(floor(@{Will}/(2-@{Investigate})))">/
 						<input type="text" name="attr_InvestigateG" class="sheet-scoredisabled" disabled="true" value="(floor(@{InvestigateO}/2))">/
@@ -2928,7 +2911,7 @@ on("change:undorank sheet:opened", function() { getAttrs(["UndoRank"], function(
 					<div class="sheet-skill-ability-label">SCORE</div>
 				</div>
 				<div class="sheet-skill-row">
-					<input type="checkbox" name="attr_Knowledge" class="sheet-trained-check" value="1" style="display: none;" checked="checked" />
+					<input type="checkbox" name="attr_Knowledge" class="sheet-trained-check" value="1" />
 					<input type="hidden" name="attr_Knowledge_macro" value="">
 					<input type="hidden" name="attr_Knowledge_is_trained_only" value="0">
 					<div class="sheet-roll-container">
@@ -2936,7 +2919,6 @@ on("change:undorank sheet:opened", function() { getAttrs(["UndoRank"], function(
 					</div>
 					<div class="sheet-skill-name">Knowledge <button type="roll" name="roll_Knowledge_link" class="sheet-skill-link" value="[Knowledge Wiki](https://aaa.dimble.net/skills/knowledge)">&#x2197;</button><div class="sheet-skill-info"><span class="sheet-info-icon">i</span><div class="sheet-tooltip"><span class="sheet-tooltip-cost">Base cost: 4</span></div></div></div>
 					<div class="sheet-skill-ability-label">INT</div>
-					<div class="sheet-skill-rank-box-placeholder"></div>
 					<div class="sheet-skill-score-cell">
 						<input type="text" name="attr_KnowledgeO" class="sheet-scoredisabled" disabled="true" value="(floor(@{Intelligence}/(2-@{Knowledge})))">/
 						<input type="text" name="attr_KnowledgeG" class="sheet-scoredisabled" disabled="true" value="(floor(@{KnowledgeO}/2))">/
@@ -3051,7 +3033,7 @@ on("change:undorank sheet:opened", function() { getAttrs(["UndoRank"], function(
 					<div class="sheet-skill-ability-label">SCORE</div>
 				</div>
 				<div class="sheet-skill-row">
-					<input type="checkbox" name="attr_Law" class="sheet-trained-check" value="1" style="display: none;" checked="checked" />
+					<input type="checkbox" name="attr_Law" class="sheet-trained-check" value="1" />
 					<input type="hidden" name="attr_Law_macro" value="">
 					<input type="hidden" name="attr_Law_is_trained_only" value="0">
 					<div class="sheet-roll-container">
@@ -3059,7 +3041,6 @@ on("change:undorank sheet:opened", function() { getAttrs(["UndoRank"], function(
 					</div>
 					<div class="sheet-skill-name">Law <button type="roll" name="roll_Law_link" class="sheet-skill-link" value="[Law Wiki](https://aaa.dimble.net/skills/law)">&#x2197;</button><div class="sheet-skill-info"><span class="sheet-info-icon">i</span><div class="sheet-tooltip"><span class="sheet-tooltip-cost">Base cost: 0</span></div></div></div>
 					<div class="sheet-skill-ability-label">INT</div>
-					<div class="sheet-skill-rank-box-placeholder"></div>
 					<div class="sheet-skill-score-cell">
 						<input type="text" name="attr_LawO" class="sheet-scoredisabled" disabled="true" value="(floor(@{Intelligence}/(2-@{Law})))">/
 						<input type="text" name="attr_LawG" class="sheet-scoredisabled" disabled="true" value="(floor(@{LawO}/2))">/
@@ -3142,7 +3123,7 @@ on("change:undorank sheet:opened", function() { getAttrs(["UndoRank"], function(
 					<div class="sheet-skill-ability-label">SCORE</div>
 				</div>
 				<div class="sheet-skill-row">
-					<input type="checkbox" name="attr_Leadership" class="sheet-trained-check" value="1" style="display: none;" checked="checked" />
+					<input type="checkbox" name="attr_Leadership" class="sheet-trained-check" value="1" />
 					<input type="hidden" name="attr_Leadership_macro" value="">
 					<input type="hidden" name="attr_Leadership_is_trained_only" value="0">
 					<div class="sheet-roll-container">
@@ -3150,7 +3131,6 @@ on("change:undorank sheet:opened", function() { getAttrs(["UndoRank"], function(
 					</div>
 					<div class="sheet-skill-name">Leadership <button type="roll" name="roll_Leadership_link" class="sheet-skill-link" value="[Leadership Wiki](https://aaa.dimble.net/skills/leadership)">&#x2197;</button><div class="sheet-skill-info"><span class="sheet-info-icon">i</span><div class="sheet-tooltip"><span class="sheet-tooltip-cost">Base cost: 4</span></div></div></div>
 					<div class="sheet-skill-ability-label">PER</div>
-					<div class="sheet-skill-rank-box-placeholder"></div>
 					<div class="sheet-skill-score-cell">
 						<input type="text" name="attr_LeadershipO" class="sheet-scoredisabled" disabled="true" value="(floor(@{Personality}/(2-@{Leadership})))">/
 						<input type="text" name="attr_LeadershipG" class="sheet-scoredisabled" disabled="true" value="(floor(@{LeadershipO}/2))">/
@@ -3201,7 +3181,7 @@ on("change:undorank sheet:opened", function() { getAttrs(["UndoRank"], function(
 					<div class="sheet-skill-ability-label">SCORE</div>
 				</div>
 				<div class="sheet-skill-row">
-					<input type="checkbox" name="attr_LifeScience" class="sheet-trained-check" value="1" style="display: none;" checked="checked" />
+					<input type="checkbox" name="attr_LifeScience" class="sheet-trained-check" value="1" />
 					<input type="hidden" name="attr_LifeScience_macro" value="">
 					<input type="hidden" name="attr_LifeScience_is_trained_only" value="0">
 					<div class="sheet-roll-container">
@@ -3209,7 +3189,6 @@ on("change:undorank sheet:opened", function() { getAttrs(["UndoRank"], function(
 					</div>
 					<div class="sheet-skill-name">Life Science <button type="roll" name="roll_LifeScience_link" class="sheet-skill-link" value="[Life Science Wiki](https://aaa.dimble.net/skills/life-science)">&#x2197;</button><div class="sheet-skill-info"><span class="sheet-info-icon">i</span><div class="sheet-tooltip"><span class="sheet-tooltip-cost">Base cost: 7</span></div></div></div>
 					<div class="sheet-skill-ability-label">INT</div>
-					<div class="sheet-skill-rank-box-placeholder"></div>
 					<div class="sheet-skill-score-cell">
 						<input type="text" name="attr_LifeScienceO" class="sheet-scoredisabled" disabled="true" value="(floor(@{Intelligence}/(2-@{LifeScience})))">/
 						<input type="text" name="attr_LifeScienceG" class="sheet-scoredisabled" disabled="true" value="(floor(@{LifeScienceO}/2))">/
@@ -3308,7 +3287,7 @@ on("change:undorank sheet:opened", function() { getAttrs(["UndoRank"], function(
 					<div class="sheet-skill-ability-label">SCORE</div>
 				</div>
 				<div class="sheet-skill-row">
-					<input type="checkbox" name="attr_MedicalScience" class="sheet-trained-check" value="1" style="display: none;" checked="checked" />
+					<input type="checkbox" name="attr_MedicalScience" class="sheet-trained-check" value="1" />
 					<input type="hidden" name="attr_MedicalScience_macro" value="">
 					<input type="hidden" name="attr_MedicalScience_is_trained_only" value="0">
 					<div class="sheet-roll-container">
@@ -3316,7 +3295,6 @@ on("change:undorank sheet:opened", function() { getAttrs(["UndoRank"], function(
 					</div>
 					<div class="sheet-skill-name">Medical Science <button type="roll" name="roll_MedicalScience_link" class="sheet-skill-link" value="[Medical Science Wiki](https://aaa.dimble.net/skills/medical-science)">&#x2197;</button><div class="sheet-skill-info"><span class="sheet-info-icon">i</span><div class="sheet-tooltip"><span class="sheet-tooltip-cost">Base cost: 7</span></div></div></div>
 					<div class="sheet-skill-ability-label">INT</div>
-					<div class="sheet-skill-rank-box-placeholder"></div>
 					<div class="sheet-skill-score-cell">
 						<input type="text" name="attr_MedicalScienceO" class="sheet-scoredisabled" disabled="true" value="(floor(@{Intelligence}/(2-@{MedicalScience})))">/
 						<input type="text" name="attr_MedicalScienceG" class="sheet-scoredisabled" disabled="true" value="(floor(@{MedicalScienceO}/2))">/
@@ -3447,7 +3425,7 @@ on("change:undorank sheet:opened", function() { getAttrs(["UndoRank"], function(
 					<div class="sheet-skill-ability-label">SCORE</div>
 				</div>
 				<div class="sheet-skill-row">
-					<input type="checkbox" name="attr_MeleeCombat" class="sheet-trained-check" value="1" style="display: none;" checked="checked" />
+					<input type="checkbox" name="attr_MeleeCombat" class="sheet-trained-check" value="1" />
 					<input type="hidden" name="attr_MeleeCombat_macro" value="">
 					<input type="hidden" name="attr_MeleeCombat_is_trained_only" value="0">
 					<div class="sheet-roll-container">
@@ -3455,7 +3433,6 @@ on("change:undorank sheet:opened", function() { getAttrs(["UndoRank"], function(
 					</div>
 					<div class="sheet-skill-name">Melee Combat <button type="roll" name="roll_MeleeCombat_link" class="sheet-skill-link" value="[Melee Combat Wiki](https://aaa.dimble.net/skills/melee-combat)">&#x2197;</button><div class="sheet-skill-info"><span class="sheet-info-icon">i</span><div class="sheet-tooltip"><span class="sheet-tooltip-cost">Base cost: 6</span></div></div></div>
 					<div class="sheet-skill-ability-label">STR</div>
-					<div class="sheet-skill-rank-box-placeholder"></div>
 					<div class="sheet-skill-score-cell">
 						<input type="text" name="attr_MeleeCombatO" class="sheet-scoredisabled" disabled="true" value="(floor(@{Strength}/(2-@{MeleeCombat})))">/
 						<input type="text" name="attr_MeleeCombatG" class="sheet-scoredisabled" disabled="true" value="(floor(@{MeleeCombatO}/2))">/
@@ -3554,7 +3531,7 @@ on("change:undorank sheet:opened", function() { getAttrs(["UndoRank"], function(
 					<div class="sheet-skill-ability-label">SCORE</div>
 				</div>
 				<div class="sheet-skill-row">
-					<input type="checkbox" name="attr_ModernRangedWeapons" class="sheet-trained-check" value="1" style="display: none;" checked="checked" />
+					<input type="checkbox" name="attr_ModernRangedWeapons" class="sheet-trained-check" value="1" />
 					<input type="hidden" name="attr_ModernRangedWeapons_macro" value="">
 					<input type="hidden" name="attr_ModernRangedWeapons_is_trained_only" value="0">
 					<div class="sheet-roll-container">
@@ -3562,7 +3539,6 @@ on("change:undorank sheet:opened", function() { getAttrs(["UndoRank"], function(
 					</div>
 					<div class="sheet-skill-name">Modern Ranged Weapons <button type="roll" name="roll_ModernRangedWeapons_link" class="sheet-skill-link" value="[Modern Ranged Weapons Wiki](https://aaa.dimble.net/skills/modern-ranged-weapons)">&#x2197;</button><div class="sheet-skill-info"><span class="sheet-info-icon">i</span><div class="sheet-tooltip"><span class="sheet-tooltip-cost">Base cost: 6</span></div></div></div>
 					<div class="sheet-skill-ability-label">DEX</div>
-					<div class="sheet-skill-rank-box-placeholder"></div>
 					<div class="sheet-skill-score-cell">
 						<input type="text" name="attr_ModernRangedWeaponsO" class="sheet-scoredisabled" disabled="true" value="(floor(@{Dexterity}/(2-@{ModernRangedWeapons})))">/
 						<input type="text" name="attr_ModernRangedWeaponsG" class="sheet-scoredisabled" disabled="true" value="(floor(@{ModernRangedWeaponsO}/2))">/
@@ -3661,7 +3637,7 @@ on("change:undorank sheet:opened", function() { getAttrs(["UndoRank"], function(
 					<div class="sheet-skill-ability-label">SCORE</div>
 				</div>
 				<div class="sheet-skill-row">
-					<input type="checkbox" name="attr_Navigation" class="sheet-trained-check" value="1" style="display: none;" checked="checked" />
+					<input type="checkbox" name="attr_Navigation" class="sheet-trained-check" value="1" />
 					<input type="hidden" name="attr_Navigation_macro" value="">
 					<input type="hidden" name="attr_Navigation_is_trained_only" value="0">
 					<div class="sheet-roll-container">
@@ -3669,7 +3645,6 @@ on("change:undorank sheet:opened", function() { getAttrs(["UndoRank"], function(
 					</div>
 					<div class="sheet-skill-name">Navigation <button type="roll" name="roll_Navigation_link" class="sheet-skill-link" value="[Navigation Wiki](https://aaa.dimble.net/skills/navigation)">&#x2197;</button><div class="sheet-skill-info"><span class="sheet-info-icon">i</span><div class="sheet-tooltip"><span class="sheet-tooltip-cost">Base cost: 6</span></div></div></div>
 					<div class="sheet-skill-ability-label">INT</div>
-					<div class="sheet-skill-rank-box-placeholder"></div>
 					<div class="sheet-skill-score-cell">
 						<input type="text" name="attr_NavigationO" class="sheet-scoredisabled" disabled="true" value="(floor(@{Intelligence}/(2-@{Navigation})))">/
 						<input type="text" name="attr_NavigationG" class="sheet-scoredisabled" disabled="true" value="(floor(@{NavigationO}/2))">/
@@ -3736,7 +3711,7 @@ on("change:undorank sheet:opened", function() { getAttrs(["UndoRank"], function(
 					<div class="sheet-skill-ability-label">SCORE</div>
 				</div>
 				<div class="sheet-skill-row">
-					<input type="checkbox" name="attr_PhysicalScience" class="sheet-trained-check" value="1" style="display: none;" checked="checked" />
+					<input type="checkbox" name="attr_PhysicalScience" class="sheet-trained-check" value="1" />
 					<input type="hidden" name="attr_PhysicalScience_macro" value="">
 					<input type="hidden" name="attr_PhysicalScience_is_trained_only" value="0">
 					<div class="sheet-roll-container">
@@ -3744,7 +3719,6 @@ on("change:undorank sheet:opened", function() { getAttrs(["UndoRank"], function(
 					</div>
 					<div class="sheet-skill-name">Physical Science <button type="roll" name="roll_PhysicalScience_link" class="sheet-skill-link" value="[Physical Science Wiki](https://aaa.dimble.net/skills/physical-science)">&#x2197;</button><div class="sheet-skill-info"><span class="sheet-info-icon">i</span><div class="sheet-tooltip"><span class="sheet-tooltip-cost">Base cost: 5</span></div></div></div>
 					<div class="sheet-skill-ability-label">INT</div>
-					<div class="sheet-skill-rank-box-placeholder"></div>
 					<div class="sheet-skill-score-cell">
 						<input type="text" name="attr_PhysicalScienceO" class="sheet-scoredisabled" disabled="true" value="(floor(@{Intelligence}/(2-@{PhysicalScience})))">/
 						<input type="text" name="attr_PhysicalScienceG" class="sheet-scoredisabled" disabled="true" value="(floor(@{PhysicalScienceO}/2))">/
@@ -3827,7 +3801,7 @@ on("change:undorank sheet:opened", function() { getAttrs(["UndoRank"], function(
 					<div class="sheet-skill-ability-label">SCORE</div>
 				</div>
 				<div class="sheet-skill-row">
-					<input type="checkbox" name="attr_PrimitiveRangedWeapons" class="sheet-trained-check" value="1" style="display: none;" checked="checked" />
+					<input type="checkbox" name="attr_PrimitiveRangedWeapons" class="sheet-trained-check" value="1" />
 					<input type="hidden" name="attr_PrimitiveRangedWeapons_macro" value="">
 					<input type="hidden" name="attr_PrimitiveRangedWeapons_is_trained_only" value="0">
 					<div class="sheet-roll-container">
@@ -3835,7 +3809,6 @@ on("change:undorank sheet:opened", function() { getAttrs(["UndoRank"], function(
 					</div>
 					<div class="sheet-skill-name">Primitive Ranged Weapons <button type="roll" name="roll_PrimitiveRangedWeapons_link" class="sheet-skill-link" value="[Primitive Ranged Weapons Wiki](https://aaa.dimble.net/skills/primitive-ranged-weapons)">&#x2197;</button><div class="sheet-skill-info"><span class="sheet-info-icon">i</span><div class="sheet-tooltip"><span class="sheet-tooltip-cost">Base cost: 7</span></div></div></div>
 					<div class="sheet-skill-ability-label">DEX</div>
-					<div class="sheet-skill-rank-box-placeholder"></div>
 					<div class="sheet-skill-score-cell">
 						<input type="text" name="attr_PrimitiveRangedWeaponsO" class="sheet-scoredisabled" disabled="true" value="(floor(@{Dexterity}/(2-@{PrimitiveRangedWeapons})))">/
 						<input type="text" name="attr_PrimitiveRangedWeaponsG" class="sheet-scoredisabled" disabled="true" value="(floor(@{PrimitiveRangedWeaponsO}/2))">/
@@ -3918,7 +3891,7 @@ on("change:undorank sheet:opened", function() { getAttrs(["UndoRank"], function(
 					<div class="sheet-skill-ability-label">SCORE</div>
 				</div>
 				<div class="sheet-skill-row">
-					<input type="checkbox" name="attr_Resolve" class="sheet-trained-check" value="1" style="display: none;" checked="checked" />
+					<input type="checkbox" name="attr_Resolve" class="sheet-trained-check" value="1" />
 					<input type="hidden" name="attr_Resolve_macro" value="">
 					<input type="hidden" name="attr_Resolve_is_trained_only" value="0">
 					<div class="sheet-roll-container">
@@ -3926,7 +3899,6 @@ on("change:undorank sheet:opened", function() { getAttrs(["UndoRank"], function(
 					</div>
 					<div class="sheet-skill-name">Resolve <button type="roll" name="roll_Resolve_link" class="sheet-skill-link" value="[Resolve Wiki](https://aaa.dimble.net/skills/resolve)">&#x2197;</button><div class="sheet-skill-info"><span class="sheet-info-icon">i</span><div class="sheet-tooltip"><span class="sheet-tooltip-cost">Base cost: 6</span></div></div></div>
 					<div class="sheet-skill-ability-label">WIL</div>
-					<div class="sheet-skill-rank-box-placeholder"></div>
 					<div class="sheet-skill-score-cell">
 						<input type="text" name="attr_ResolveO" class="sheet-scoredisabled" disabled="true" value="(floor(@{Will}/(2-@{Resolve})))">/
 						<input type="text" name="attr_ResolveG" class="sheet-scoredisabled" disabled="true" value="(floor(@{ResolveO}/2))">/
@@ -3977,17 +3949,16 @@ on("change:undorank sheet:opened", function() { getAttrs(["UndoRank"], function(
 					<div class="sheet-skill-ability-label">SCORE</div>
 				</div>
 				<div class="sheet-skill-row">
-					<input type="checkbox" name="attr_Security" class="sheet-trained-check" value="1" style="display: none;" checked="checked" />
+					<input type="checkbox" name="attr_Security" class="sheet-trained-check" value="1" />
 					<input type="hidden" name="attr_Security_macro" value="">
 					<input type="hidden" name="attr_Security_is_trained_only" value="0">
 					<div class="sheet-roll-container">
 						<button type="roll" name="roll_Security" class="sheet-roll-skill" value="@{Security_macro}"></button>
 					</div>
 					<div class="sheet-skill-name">Security <button type="roll" name="roll_Security_link" class="sheet-skill-link" value="[Security Wiki](https://aaa.dimble.net/skills/security)">&#x2197;</button><div class="sheet-skill-info"><span class="sheet-info-icon">i</span><div class="sheet-tooltip"><span class="sheet-tooltip-cost">Base cost: 3</span></div></div></div>
-					<div class="sheet-skill-ability-label">WIL</div>
-					<div class="sheet-skill-rank-box-placeholder"></div>
+					<div class="sheet-skill-ability-label">INT</div>
 					<div class="sheet-skill-score-cell">
-						<input type="text" name="attr_SecurityO" class="sheet-scoredisabled" disabled="true" value="(floor(@{Will}/(2-@{Security})))">/
+						<input type="text" name="attr_SecurityO" class="sheet-scoredisabled" disabled="true" value="(floor(@{Intelligence}/(2-@{Security})))">/
 						<input type="text" name="attr_SecurityG" class="sheet-scoredisabled" disabled="true" value="(floor(@{SecurityO}/2))">/
 						<input type="text" name="attr_SecurityA" class="sheet-scoredisabled" disabled="true" value="(floor(@{SecurityO}/4))">
 					</div>
@@ -4036,7 +4007,7 @@ on("change:undorank sheet:opened", function() { getAttrs(["UndoRank"], function(
 					<div class="sheet-skill-ability-label">SCORE</div>
 				</div>
 				<div class="sheet-skill-row">
-					<input type="checkbox" name="attr_Stamina" class="sheet-trained-check" value="1" style="display: none;" checked="checked" />
+					<input type="checkbox" name="attr_Stamina" class="sheet-trained-check" value="1" />
 					<input type="hidden" name="attr_Stamina_macro" value="">
 					<input type="hidden" name="attr_Stamina_is_trained_only" value="0">
 					<div class="sheet-roll-container">
@@ -4044,7 +4015,6 @@ on("change:undorank sheet:opened", function() { getAttrs(["UndoRank"], function(
 					</div>
 					<div class="sheet-skill-name">Stamina <button type="roll" name="roll_Stamina_link" class="sheet-skill-link" value="[Stamina Wiki](https://aaa.dimble.net/skills/stamina)">&#x2197;</button><div class="sheet-skill-info"><span class="sheet-info-icon">i</span><div class="sheet-tooltip"><span class="sheet-tooltip-cost">Base cost: 3</span></div></div></div>
 					<div class="sheet-skill-ability-label">CON</div>
-					<div class="sheet-skill-rank-box-placeholder"></div>
 					<div class="sheet-skill-score-cell">
 						<input type="text" name="attr_StaminaO" class="sheet-scoredisabled" disabled="true" value="(floor(@{Constitution}/(2-@{Stamina})))">/
 						<input type="text" name="attr_StaminaG" class="sheet-scoredisabled" disabled="true" value="(floor(@{StaminaO}/2))">/
@@ -4095,7 +4065,7 @@ on("change:undorank sheet:opened", function() { getAttrs(["UndoRank"], function(
 					<div class="sheet-skill-ability-label">SCORE</div>
 				</div>
 				<div class="sheet-skill-row">
-					<input type="checkbox" name="attr_StreetSmart" class="sheet-trained-check" value="1" style="display: none;" checked="checked" />
+					<input type="checkbox" name="attr_StreetSmart" class="sheet-trained-check" value="1" />
 					<input type="hidden" name="attr_StreetSmart_macro" value="">
 					<input type="hidden" name="attr_StreetSmart_is_trained_only" value="0">
 					<div class="sheet-roll-container">
@@ -4103,7 +4073,6 @@ on("change:undorank sheet:opened", function() { getAttrs(["UndoRank"], function(
 					</div>
 					<div class="sheet-skill-name">Street Smart <button type="roll" name="roll_StreetSmart_link" class="sheet-skill-link" value="[Street Smart Wiki](https://aaa.dimble.net/skills/street-smart)">&#x2197;</button><div class="sheet-skill-info"><span class="sheet-info-icon">i</span><div class="sheet-tooltip"><span class="sheet-tooltip-cost">Base cost: 3</span></div></div></div>
 					<div class="sheet-skill-ability-label">WIL</div>
-					<div class="sheet-skill-rank-box-placeholder"></div>
 					<div class="sheet-skill-score-cell">
 						<input type="text" name="attr_StreetSmartO" class="sheet-scoredisabled" disabled="true" value="(floor(@{Will}/(2-@{StreetSmart})))">/
 						<input type="text" name="attr_StreetSmartG" class="sheet-scoredisabled" disabled="true" value="(floor(@{StreetSmartO}/2))">/
@@ -4135,10 +4104,10 @@ on("change:undorank sheet:opened", function() { getAttrs(["UndoRank"], function(
 							<button type="roll" name="roll_StreetKnowledge" class="sheet-roll-skill" value="@{StreetKnowledge_macro}"></button>
 						</div>
 						<div class="sheet-skill-name">Street Knowledge <button type="roll" name="roll_StreetKnowledge_link" class="sheet-skill-link" value="[Street Knowledge Wiki](https://aaa.dimble.net/skills/street-smart#street-knowledge)">&#x2197;</button><div class="sheet-skill-info"><span class="sheet-info-icon">i</span><div class="sheet-tooltip"><span class="sheet-tooltip-cost">Base cost: 3</span></div></div></div>
-						<div class="sheet-skill-ability-label">INT</div>
+						<div class="sheet-skill-ability-label">WIL</div>
 						<input type="number" name="attr_StreetKnowledgeRank" class="sheet-score" value="0">
 						<div class="sheet-skill-score-cell">
-							<input type="text" name="attr_StreetKnowledgeO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{StreetKnowledgeRank}*@{StreetSmart})+@{Intelligence})/(2-@{StreetSmart})))">/
+							<input type="text" name="attr_StreetKnowledgeO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{StreetKnowledgeRank}*@{StreetSmart})+@{Will})/(2-@{StreetSmart})))">/
 							<input type="text" name="attr_StreetKnowledgeG" class="sheet-scoredisabled" disabled="true" value="(floor(@{StreetKnowledgeO}/2))">/
 							<input type="text" name="attr_StreetKnowledgeA" class="sheet-scoredisabled" disabled="true" value="(floor(@{StreetKnowledgeO}/4))">
 						</div>
@@ -4154,7 +4123,7 @@ on("change:undorank sheet:opened", function() { getAttrs(["UndoRank"], function(
 					<div class="sheet-skill-ability-label">SCORE</div>
 				</div>
 				<div class="sheet-skill-row">
-					<input type="checkbox" name="attr_Survival" class="sheet-trained-check" value="1" style="display: none;" checked="checked" />
+					<input type="checkbox" name="attr_Survival" class="sheet-trained-check" value="1" />
 					<input type="hidden" name="attr_Survival_macro" value="">
 					<input type="hidden" name="attr_Survival_is_trained_only" value="0">
 					<div class="sheet-roll-container">
@@ -4162,7 +4131,6 @@ on("change:undorank sheet:opened", function() { getAttrs(["UndoRank"], function(
 					</div>
 					<div class="sheet-skill-name">Survival <button type="roll" name="roll_Survival_link" class="sheet-skill-link" value="[Survival Wiki](https://aaa.dimble.net/skills/survival)">&#x2197;</button><div class="sheet-skill-info"><span class="sheet-info-icon">i</span><div class="sheet-tooltip"><span class="sheet-tooltip-cost">Base cost: 3</span></div></div></div>
 					<div class="sheet-skill-ability-label">CON</div>
-					<div class="sheet-skill-rank-box-placeholder"></div>
 					<div class="sheet-skill-score-cell">
 						<input type="text" name="attr_SurvivalO" class="sheet-scoredisabled" disabled="true" value="(floor(@{Constitution}/(2-@{Survival})))">/
 						<input type="text" name="attr_SurvivalG" class="sheet-scoredisabled" disabled="true" value="(floor(@{SurvivalO}/2))">/
@@ -4229,7 +4197,7 @@ on("change:undorank sheet:opened", function() { getAttrs(["UndoRank"], function(
 					<div class="sheet-skill-ability-label">SCORE</div>
 				</div>
 				<div class="sheet-skill-row">
-					<input type="checkbox" name="attr_SystemOperation" class="sheet-trained-check" value="1" style="display: none;" checked="checked" />
+					<input type="checkbox" name="attr_SystemOperation" class="sheet-trained-check" value="1" />
 					<input type="hidden" name="attr_SystemOperation_macro" value="">
 					<input type="hidden" name="attr_SystemOperation_is_trained_only" value="0">
 					<div class="sheet-roll-container">
@@ -4237,7 +4205,6 @@ on("change:undorank sheet:opened", function() { getAttrs(["UndoRank"], function(
 					</div>
 					<div class="sheet-skill-name">System Operation <button type="roll" name="roll_SystemOperation_link" class="sheet-skill-link" value="[System Operation Wiki](https://aaa.dimble.net/skills/system-operation)">&#x2197;</button><div class="sheet-skill-info"><span class="sheet-info-icon">i</span><div class="sheet-tooltip"><span class="sheet-tooltip-cost">Base cost: 3</span></div></div></div>
 					<div class="sheet-skill-ability-label">INT</div>
-					<div class="sheet-skill-rank-box-placeholder"></div>
 					<div class="sheet-skill-score-cell">
 						<input type="text" name="attr_SystemOperationO" class="sheet-scoredisabled" disabled="true" value="(floor(@{Intelligence}/(2-@{SystemOperation})))">/
 						<input type="text" name="attr_SystemOperationG" class="sheet-scoredisabled" disabled="true" value="(floor(@{SystemOperationO}/2))">/
@@ -4336,17 +4303,16 @@ on("change:undorank sheet:opened", function() { getAttrs(["UndoRank"], function(
 					<div class="sheet-skill-ability-label">SCORE</div>
 				</div>
 				<div class="sheet-skill-row">
-					<input type="checkbox" name="attr_Tactics" class="sheet-trained-check" value="1" style="display: none;" checked="checked" />
+					<input type="checkbox" name="attr_Tactics" class="sheet-trained-check" value="1" />
 					<input type="hidden" name="attr_Tactics_macro" value="">
 					<input type="hidden" name="attr_Tactics_is_trained_only" value="0">
 					<div class="sheet-roll-container">
 						<button type="roll" name="roll_Tactics" class="sheet-roll-skill" value="@{Tactics_macro}"></button>
 					</div>
 					<div class="sheet-skill-name">Tactics <button type="roll" name="roll_Tactics_link" class="sheet-skill-link" value="[Tactics Wiki](https://aaa.dimble.net/skills/tactics)">&#x2197;</button><div class="sheet-skill-info"><span class="sheet-info-icon">i</span><div class="sheet-tooltip"><span class="sheet-tooltip-cost">Base cost: 6</span></div></div></div>
-					<div class="sheet-skill-ability-label">WIL</div>
-					<div class="sheet-skill-rank-box-placeholder"></div>
+					<div class="sheet-skill-ability-label">INT</div>
 					<div class="sheet-skill-score-cell">
-						<input type="text" name="attr_TacticsO" class="sheet-scoredisabled" disabled="true" value="(floor(@{Will}/(2-@{Tactics})))">/
+						<input type="text" name="attr_TacticsO" class="sheet-scoredisabled" disabled="true" value="(floor(@{Intelligence}/(2-@{Tactics})))">/
 						<input type="text" name="attr_TacticsG" class="sheet-scoredisabled" disabled="true" value="(floor(@{TacticsO}/2))">/
 						<input type="text" name="attr_TacticsA" class="sheet-scoredisabled" disabled="true" value="(floor(@{TacticsO}/4))">
 					</div>
@@ -4411,7 +4377,7 @@ on("change:undorank sheet:opened", function() { getAttrs(["UndoRank"], function(
 					<div class="sheet-skill-ability-label">SCORE</div>
 				</div>
 				<div class="sheet-skill-row">
-					<input type="checkbox" name="attr_TechnicalScience" class="sheet-trained-check" value="1" style="display: none;" checked="checked" />
+					<input type="checkbox" name="attr_TechnicalScience" class="sheet-trained-check" value="1" />
 					<input type="hidden" name="attr_TechnicalScience_macro" value="">
 					<input type="hidden" name="attr_TechnicalScience_is_trained_only" value="0">
 					<div class="sheet-roll-container">
@@ -4419,7 +4385,6 @@ on("change:undorank sheet:opened", function() { getAttrs(["UndoRank"], function(
 					</div>
 					<div class="sheet-skill-name">Technical Science <button type="roll" name="roll_TechnicalScience_link" class="sheet-skill-link" value="[Technical Science Wiki](https://aaa.dimble.net/skills/technical-science)">&#x2197;</button><div class="sheet-skill-info"><span class="sheet-info-icon">i</span><div class="sheet-tooltip"><span class="sheet-tooltip-cost">Base cost: 7</span></div></div></div>
 					<div class="sheet-skill-ability-label">INT</div>
-					<div class="sheet-skill-rank-box-placeholder"></div>
 					<div class="sheet-skill-score-cell">
 						<input type="text" name="attr_TechnicalScienceO" class="sheet-scoredisabled" disabled="true" value="(floor(@{Intelligence}/(2-@{TechnicalScience})))">/
 						<input type="text" name="attr_TechnicalScienceG" class="sheet-scoredisabled" disabled="true" value="(floor(@{TechnicalScienceO}/2))">/
@@ -4502,7 +4467,7 @@ on("change:undorank sheet:opened", function() { getAttrs(["UndoRank"], function(
 					<div class="sheet-skill-ability-label">SCORE</div>
 				</div>
 				<div class="sheet-skill-row">
-					<input type="checkbox" name="attr_VehicleOperation" class="sheet-trained-check" value="1" style="display: none;" checked="checked" />
+					<input type="checkbox" name="attr_VehicleOperation" class="sheet-trained-check" value="1" />
 					<input type="hidden" name="attr_VehicleOperation_macro" value="">
 					<input type="hidden" name="attr_VehicleOperation_is_trained_only" value="0">
 					<div class="sheet-roll-container">
@@ -4510,7 +4475,6 @@ on("change:undorank sheet:opened", function() { getAttrs(["UndoRank"], function(
 					</div>
 					<div class="sheet-skill-name">Vehicle Operation <button type="roll" name="roll_VehicleOperation_link" class="sheet-skill-link" value="[Vehicle Operation Wiki](https://aaa.dimble.net/skills/vehicle-operation)">&#x2197;</button><div class="sheet-skill-info"><span class="sheet-info-icon">i</span><div class="sheet-tooltip"><span class="sheet-tooltip-cost">Base cost: 3</span></div></div></div>
 					<div class="sheet-skill-ability-label">DEX</div>
-					<div class="sheet-skill-rank-box-placeholder"></div>
 					<div class="sheet-skill-score-cell">
 						<input type="text" name="attr_VehicleOperationO" class="sheet-scoredisabled" disabled="true" value="(floor(@{Dexterity}/(2-@{VehicleOperation})))">/
 						<input type="text" name="attr_VehicleOperationG" class="sheet-scoredisabled" disabled="true" value="(floor(@{VehicleOperationO}/2))">/
@@ -4608,7 +4572,7 @@ on("change:undorank sheet:opened", function() { getAttrs(["UndoRank"], function(
 					<div class="sheet-skill-ability-label">SCORE</div>
 				</div>
 				<div class="sheet-skill-row">
-					<input type="checkbox" name="attr_Biokinesis" class="sheet-trained-check" value="1" style="display: none;" checked="checked" />
+					<input type="checkbox" name="attr_Biokinesis" class="sheet-trained-check" value="1" />
 					<input type="hidden" name="attr_Biokinesis_macro" value="">
 					<input type="hidden" name="attr_Biokinesis_is_trained_only" value="1">
 					<div class="sheet-roll-container">
@@ -4616,7 +4580,6 @@ on("change:undorank sheet:opened", function() { getAttrs(["UndoRank"], function(
 					</div>
 					<div class="sheet-skill-name sheet-trained-only">Biokinesis <button type="roll" name="roll_Biokinesis_link" class="sheet-skill-link" value="[Biokinesis Wiki](https://aaa.dimble.net/core-mechanics/psionics/biokinesis)">&#x2197;</button><div class="sheet-skill-info"><span class="sheet-info-icon">i</span><div class="sheet-tooltip"><span class="sheet-tooltip-trained">Trained Only</span><span class="sheet-tooltip-separator"></span><span class="sheet-tooltip-cost">Base cost: 6</span></div></div></div>
 					<div class="sheet-skill-ability-label">CON</div>
-					<div class="sheet-skill-rank-box-placeholder"></div>
 					<div class="sheet-skill-score-cell">
 						<input type="text" name="attr_BiokinesisO" class="sheet-scoredisabled" disabled="true" value="(floor(@{Constitution}*@{Biokinesis}))">/
 						<input type="text" name="attr_BiokinesisG" class="sheet-scoredisabled" disabled="true" value="(floor(@{BiokinesisO}/2))">/
@@ -4795,7 +4758,7 @@ on("change:undorank sheet:opened", function() { getAttrs(["UndoRank"], function(
 					<div class="sheet-skill-ability-label">SCORE</div>
 				</div>
 				<div class="sheet-skill-row">
-					<input type="checkbox" name="attr_ESP" class="sheet-trained-check" value="1" style="display: none;" checked="checked" />
+					<input type="checkbox" name="attr_ESP" class="sheet-trained-check" value="1" />
 					<input type="hidden" name="attr_ESP_macro" value="">
 					<input type="hidden" name="attr_ESP_is_trained_only" value="1">
 					<div class="sheet-roll-container">
@@ -4803,7 +4766,6 @@ on("change:undorank sheet:opened", function() { getAttrs(["UndoRank"], function(
 					</div>
 					<div class="sheet-skill-name sheet-trained-only">ESP <button type="roll" name="roll_ESP_link" class="sheet-skill-link" value="[ESP Wiki](https://aaa.dimble.net/core-mechanics/psionics/esp)">&#x2197;</button><div class="sheet-skill-info"><span class="sheet-info-icon">i</span><div class="sheet-tooltip"><span class="sheet-tooltip-trained">Trained Only</span><span class="sheet-tooltip-separator"></span><span class="sheet-tooltip-cost">Base cost: 5</span></div></div></div>
 					<div class="sheet-skill-ability-label">INT</div>
-					<div class="sheet-skill-rank-box-placeholder"></div>
 					<div class="sheet-skill-score-cell">
 						<input type="text" name="attr_ESPO" class="sheet-scoredisabled" disabled="true" value="(floor(@{Intelligence}*@{ESP}))">/
 						<input type="text" name="attr_ESPG" class="sheet-scoredisabled" disabled="true" value="(floor(@{ESPO}/2))">/
@@ -4982,7 +4944,7 @@ on("change:undorank sheet:opened", function() { getAttrs(["UndoRank"], function(
 					<div class="sheet-skill-ability-label">SCORE</div>
 				</div>
 				<div class="sheet-skill-row">
-					<input type="checkbox" name="attr_Psychoportation" class="sheet-trained-check" value="1" style="display: none;" checked="checked" />
+					<input type="checkbox" name="attr_Psychoportation" class="sheet-trained-check" value="1" />
 					<input type="hidden" name="attr_Psychoportation_macro" value="">
 					<input type="hidden" name="attr_Psychoportation_is_trained_only" value="1">
 					<div class="sheet-roll-container">
@@ -4990,7 +4952,6 @@ on("change:undorank sheet:opened", function() { getAttrs(["UndoRank"], function(
 					</div>
 					<div class="sheet-skill-name sheet-trained-only">Psychoportation <button type="roll" name="roll_Psychoportation_link" class="sheet-skill-link" value="[Psychoportation Wiki](https://aaa.dimble.net/core-mechanics/psionics/psychoportation)">&#x2197;</button><div class="sheet-skill-info"><span class="sheet-info-icon">i</span><div class="sheet-tooltip"><span class="sheet-tooltip-trained">Trained Only</span><span class="sheet-tooltip-separator"></span><span class="sheet-tooltip-cost">Base cost: 7</span></div></div></div>
 					<div class="sheet-skill-ability-label">WIL</div>
-					<div class="sheet-skill-rank-box-placeholder"></div>
 					<div class="sheet-skill-score-cell">
 						<input type="text" name="attr_PsychoportationO" class="sheet-scoredisabled" disabled="true" value="(floor(@{Will}*@{Psychoportation}))">/
 						<input type="text" name="attr_PsychoportationG" class="sheet-scoredisabled" disabled="true" value="(floor(@{PsychoportationO}/2))">/
@@ -5089,7 +5050,7 @@ on("change:undorank sheet:opened", function() { getAttrs(["UndoRank"], function(
 					<div class="sheet-skill-ability-label">SCORE</div>
 				</div>
 				<div class="sheet-skill-row">
-					<input type="checkbox" name="attr_Telekinesis" class="sheet-trained-check" value="1" style="display: none;" checked="checked" />
+					<input type="checkbox" name="attr_Telekinesis" class="sheet-trained-check" value="1" />
 					<input type="hidden" name="attr_Telekinesis_macro" value="">
 					<input type="hidden" name="attr_Telekinesis_is_trained_only" value="1">
 					<div class="sheet-roll-container">
@@ -5097,7 +5058,6 @@ on("change:undorank sheet:opened", function() { getAttrs(["UndoRank"], function(
 					</div>
 					<div class="sheet-skill-name sheet-trained-only">Telekinesis <button type="roll" name="roll_Telekinesis_link" class="sheet-skill-link" value="[Telekinesis Wiki](https://aaa.dimble.net/core-mechanics/psionics/telekinesis)">&#x2197;</button><div class="sheet-skill-info"><span class="sheet-info-icon">i</span><div class="sheet-tooltip"><span class="sheet-tooltip-trained">Trained Only</span><span class="sheet-tooltip-separator"></span><span class="sheet-tooltip-cost">Base cost: 5</span></div></div></div>
 					<div class="sheet-skill-ability-label">WIL</div>
-					<div class="sheet-skill-rank-box-placeholder"></div>
 					<div class="sheet-skill-score-cell">
 						<input type="text" name="attr_TelekinesisO" class="sheet-scoredisabled" disabled="true" value="(floor(@{Will}*@{Telekinesis}))">/
 						<input type="text" name="attr_TelekinesisG" class="sheet-scoredisabled" disabled="true" value="(floor(@{TelekinesisO}/2))">/
@@ -5260,7 +5220,7 @@ on("change:undorank sheet:opened", function() { getAttrs(["UndoRank"], function(
 					<div class="sheet-skill-ability-label">SCORE</div>
 				</div>
 				<div class="sheet-skill-row">
-					<input type="checkbox" name="attr_Telepathy" class="sheet-trained-check" value="1" style="display: none;" checked="checked" />
+					<input type="checkbox" name="attr_Telepathy" class="sheet-trained-check" value="1" />
 					<input type="hidden" name="attr_Telepathy_macro" value="">
 					<input type="hidden" name="attr_Telepathy_is_trained_only" value="1">
 					<div class="sheet-roll-container">
@@ -5268,7 +5228,6 @@ on("change:undorank sheet:opened", function() { getAttrs(["UndoRank"], function(
 					</div>
 					<div class="sheet-skill-name sheet-trained-only">Telepathy <button type="roll" name="roll_Telepathy_link" class="sheet-skill-link" value="[Telepathy Wiki](https://aaa.dimble.net/core-mechanics/psionics/telepathy)">&#x2197;</button><div class="sheet-skill-info"><span class="sheet-info-icon">i</span><div class="sheet-tooltip"><span class="sheet-tooltip-trained">Trained Only</span><span class="sheet-tooltip-separator"></span><span class="sheet-tooltip-cost">Base cost: 5</span></div></div></div>
 					<div class="sheet-skill-ability-label">PER</div>
-					<div class="sheet-skill-rank-box-placeholder"></div>
 					<div class="sheet-skill-score-cell">
 						<input type="text" name="attr_TelepathyO" class="sheet-scoredisabled" disabled="true" value="(floor(@{Personality}*@{Telepathy}))">/
 						<input type="text" name="attr_TelepathyG" class="sheet-scoredisabled" disabled="true" value="(floor(@{TelepathyO}/2))">/

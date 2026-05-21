@@ -91,18 +91,11 @@ way to respond. Check results: Failure, no aid is
 forthcoming; [Ordinary], [Ordinary]
 help; [Good], [Good] help; [Amazing],
 [Amazing] help. (These terms are defined in the Gamemaster Guide.) Psionic
-Awareness Cost 3, INT, Active A hero with Psionic Awareness is
-entitled to an Intelligence feat check
-to determine whether he realizes
-that a psionic power is being used in
-his vicinity. (Heroes without this perk
-are not normally allowed checks to
-determine whether they can detect
-psionic activity.) The Gamemaster
-will determine when such a check
-should be made, and will roll the
-check secretly, only giving the player
-of the hero any information when the
-check is successful. This perk can only be selected if
-the Gamemaster allows the use of
-psionics (see Chapter 14). SMy14 3 SAt3d p < 105
+Awareness Cost 3, INT, Active This perk allows a character
+to purchase ranks in the Awareness - Psionic Sense
+specialty skill, enabling them to detect and identify
+psionic powers and phenomena. The skill is also
+treated as favored, reducing its cost by one. This perk
+is only useful for characters without psionic abilities.
+This perk can only be selected if the Gamemaster allows 
+the use of psionics. SMy14 3 SAt3d p < 105

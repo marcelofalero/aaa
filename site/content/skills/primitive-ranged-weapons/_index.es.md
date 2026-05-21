@@ -34,34 +34,26 @@ Con la habilidad con el arco, un Personaje puede volverse competente con arcos l
 ## Ballesta
 {{< specialty attr="DEX" untrained="yes" cost="3" >}}
 
-With the Ballesta skill, a Personaje can become increasingly more proficient with this type of primitive weapon. This same action to load a Ballesta, and it takes one action to fire it. A Personaje obtains higher Rangos in this specialty he gains additional abilities as described in "Ranged Weapons Rango Benefits" on the next page.
+Con la habilidad Ballesta, un Personaje puede volverse cada vez más competente con este tipo de arma primitiva. Esta misma acción para cargar un Ballesta, y se necesita una acción para dispararlo. Un Personaje obtiene un Rangos más alto en esta especialidad y obtiene habilidades adicionales como se describe en "Beneficios de las armas a distancia Rango" en la página siguiente.
 
-### Rango Benefits
-⊗ **Rango 3 [Distance Precision]** When a Personaje reaches Rango 3 in this specialty, he knows how to compensate for distance. The Penalización de paso for a medium-range shot is eliminated, and the penalty for a long-range shot is lessened by 1 step.
+### Beneficios de Rango
+⊗ **Rango 3 [Precisión de distancia]** Cuando un Personaje alcanza Rango 3 en esta especialidad, sabe cómo compensar la distancia. Se elimina el Penalización de paso por un tiro de media distancia y la penalización por un tiro de larga distancia se reduce en 1 paso.
 
-▶ **Rango 6 [Double-Shot]** When a Personaje reaches Rango 6 in this specialty, he becomes able to fire his weapon twice in the same action. A double-shot works as follows: First, the base modifier for the attack is determined. Then the Personaje rolls the Dado de Control and two situation dice to make his double-shot attack. The first Dado de Situación is the base modifier needed to make an attack with an additional **+1 Penalización de paso**; the second is the base modifier with an additional **+2 Penalización de paso**. When two targets are involved, the base modifier for the attack is that of the more difficult target. A Personaje using a bow can aim at two different targets.
-
-▶ **Rango 6 [Rate of Fire Increase]** When a Personaje reaches Rango 6 in this specialty, he gains the ability to load and fire his weapon more quickly. A Ballesta can be loaded and fired in the same action.
-
-* **Example of double-shot:** Darsen has the double-shot special attack benefit and a skill score of 14. His base Dado de Situación after all modifiers have been considered is +d4. He rolls a Dado de Control (d20), a +d6, and a +d8. The numbers 11, 4, and 2 come up on the dice. This gives Darsen skill check results of 15 (11 + 4) and 13 (11 + 2). The first shot misses its target, but the second one scores an Ordinario hit.
+▶ **Rango 6 [Aumento de velocidad de disparo]** Cuando un Personaje alcanza Rango 6 en esta especialidad, obtiene la capacidad de cargar y disparar su arma más rápidamente. Un Ballesta se puede cargar y disparar en la misma acción.
 
 ---
 
 ## Arma de chispa
 {{< specialty attr="DEX" untrained="yes" cost="3" >}}
 
-This Especialidad covers the use of all types of flintlocks, including both pistols and muskets. As a Personaje achieves higher Rangos in this specialty, he gains additional abilities as described in "Ranged Weapons Rango Benefits" on the next page. It takes one action to load a Pistola de chispa and a separate action to fire the weapon—and it takes a Personaje two actions to load a Mosquete, plus a separate action to fire the weapon. As a Personaje achieves higher Rangos in this specialty, he gains additional abilities as described in "Ranged Weapons Rango Benefits" on the next page.
+Este Especialidad cubre el uso de todo tipo de armas de chispa, incluidas pistolas y mosquetes. A medida que un Personaje alcanza un Rangos más alto en esta especialidad, obtiene habilidades adicionales como se describe en "Beneficios de las armas a distancia Rango" en la página siguiente. Se necesita una acción para cargar un Pistola de chispa y una acción separada para disparar el arma, y ​​un Personaje necesita dos acciones para cargar un Mosquete, más una acción separada para disparar el arma. A medida que un Personaje alcanza un Rangos más alto en esta especialidad, obtiene habilidades adicionales como se describe en "Beneficios de las armas a distancia Rango" en la página siguiente.
 
-### Rango Benefits
-⊗ **Rango 3 [Distance Precision]** When a Personaje reaches Rango 3 in this specialty, he knows how to compensate for distance. The Penalización de paso for a medium-range shot is eliminated, and the penalty for a long-range shot is lessened by 1 step.
+### Beneficios de Rango
+⊗ **Rango 3 [Precisión de distancia]** Cuando un Personaje alcanza Rango 3 en esta especialidad, sabe cómo compensar la distancia. Se elimina el Penalización de paso por un tiro de media distancia y la penalización por un tiro de larga distancia se reduce en 1 paso.
 
-▶ **Rango 6 [Double-Shot]** When a Personaje reaches Rango 6 in this specialty, he becomes able to fire his weapon twice in the same action. A double-shot works as follows: First, the base modifier for the attack is determined. Then the Personaje rolls the Dado de Control and two situation dice to make his double-shot attack. The first Dado de Situación is the base modifier needed to make an attack with an additional **+1 Penalización de paso**; the second is the base modifier with an additional **+2 Penalización de paso**. When two targets are involved, the base modifier for the attack is that of the more difficult target. A Personaje using a bow can aim at two different targets.
+▶ **Rango 6 [Aumento de velocidad de disparo]** Cuando un Personaje alcanza Rango 6 en esta especialidad, obtiene la capacidad de cargar y disparar su arma más rápidamente. Un Pistola de chispa se puede cargar y disparar en la misma acción, y un rifle Arma de chispa se puede cargar en una sola acción en lugar de dos.
 
-▶ **Rango 6 [Rate of Fire Increase]** When a Personaje reaches Rango 6 in this specialty, he gains the ability to load and fire his weapon more quickly. A Pistola de chispa can be loaded and fired in the same action, and a Arma de chispa rifle can be loaded in only one action instead of two.
-
-▶ **Rango 12 [Rate of Fire Increase]** When a Personaje reaches Rango 12 in this specialty, he becomes able to load and fire a Arma de chispa rifle in the same action.
-
-* **Example of double-shot:** Darsen has the double-shot special attack benefit and a skill score of 14. His base Dado de Situación after all modifiers have been considered is +d4. He rolls a Dado de Control (d20), a +d6, and a +d8. The numbers 11, 4, and 2 come up on the dice. This gives Darsen skill check results of 15 (11 + 4) and 13 (11 + 2). The first shot misses its target, but the second one scores an Ordinario hit.
+▶ **Rango 12 [Aumento de cadencia de disparo]** Cuando un Personaje alcanza Rango 12 en esta especialidad, puede cargar y disparar un rifle Arma de chispa en la misma acción.
 
 ---
 

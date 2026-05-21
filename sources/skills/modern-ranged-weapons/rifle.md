@@ -15,7 +15,9 @@ rank_benefits:
 name: Rifle
 ---
 
-This specialty skill allows a character to improve his proficiency with modern single-fire rifles, sniper rifles, and hunting rifles.
+This specialty skill covers proficiency with modern single-fire rifles, sniper rifles, hunting rifles, and precision laser rifles. These weapons lack automatic fire capabilities but excel at range and target penetration.
+
+## Attack Modes
 
 **Fire** A single, precise attack at a single target. (Resolution: Standard control + situation die. Ammo Cost: 1 round).
 

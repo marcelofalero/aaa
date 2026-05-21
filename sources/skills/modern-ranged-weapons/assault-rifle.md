@@ -17,8 +17,7 @@ name: Assault Rifle
 
 This specialty skill covers automatic rifles—standard infantry weapons capable of selective fire and automatic modes using rifle-caliber cartridges or standard energy cells. Each weapon's description will indicate its allowed fire modes and its specific Autofire profile.
 
-### Automatic Weapon Attack Modes
-
+### Attack Modes
 Assault rifles provide a character with up to three attack options per action phase:
 
 **Fire** A single, precise attack at a single target. (Resolution: Standard control + situation die. Ammo Cost: 1 round).
@@ -27,16 +26,16 @@ Assault rifles provide a character with up to three attack options per action ph
 
 **Autofire** A continuous barrage meant to saturate an area or cut through a vector. The weapon's description dictates whether it uses the Spread or Line profile. (Ammo Cost: 10 rounds or equivalent energy drain).
 
-**Profile A: Spread (Standard Ballistic/Energy)**
-The Area (2 Rings): The player targets a single square (Ring 1). The attack affects that center square and all 8 immediately adjacent squares (Ring 2).
+**Profile A: Spread**
+The Area (Target and adjacent squares): The player targets a single square. The attack affects that center square and all 8 immediately adjacent squares.
 Resolution: The player makes a single attack roll with a -1 step bonus against the primary target in the center square.
 The Spread: All other entities (friend or foe) in the adjacent squares automatically take Ordinary damage.
-Reaction: Targets in the adjacent squares can avoid this damage if they succeed on a Dodge check or use their reaction to Hit the Deck (automatically dropping Prone).
+Reaction: Targets in the adjacent squares may avoid the damage if they succeed on a Dodge check or use an action to make a Hit the Deck check. This action is used instead of their normal action for the turn.
 
-**Profile B: Line (Rotary Lasers/Directed Energy)**
+**Profile B: Line**
 The Area (Linear): The player designates a straight line across the grid. The attack affects every entity occupying a square touched by that line.
 Resolution: The player makes a single attack roll to determine damage against the targets caught in the beam.
-Thermal Dissipation: The attacker applies a -1 step bonus against the nearest target in the line, standard damage (0 modifier) against the second, and a +1 step penalty against the third furthest target. The beam loses lethal coherence after the third target.
+The attacker applies a -1 step bonus against the nearest target in the line, no modifier against the second, and a +1 step penalty against the third furthest target. The beam loses lethal coherence after the third target.
 
 ### Rank Benefits
 

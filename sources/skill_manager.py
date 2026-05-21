@@ -5,6 +5,14 @@ import argparse
 from pathlib import Path
 from ruamel.yaml import YAML
 
+def find_project_root():
+    current = Path.cwd().resolve()
+    for parent in [current] + list(current.parents):
+        marker = parent / '.alternity_root'
+        if marker.exists():
+            return parent
+    return Path.cwd().resolve()
+
 # Terminology & Character Normalization mapping
 REPLACEMENTS = {
     r'\bhero\b': 'character',
@@ -91,18 +99,26 @@ def cmd_push(args):
                     target[k] = metadata[k]
                     changes += 1
 
-            # Update Description (Using comparison-safe cleaning)
+            # Update Description and Name
             en_loc = next((loc['en'] for loc in target['localized'] if 'en' in loc), None)
             es_loc = next((loc['es'] for loc in target['localized'] if 'es' in loc), None)
 
-            if en_loc and clean_text(en_loc.get('description')) != clean_text(raw_desc):
-                # We save the raw description to preserve paragraph breaks, 
-                # but only if the actual content is different.
-                en_loc['description'] = raw_desc
-                if es_loc:
-                    es_loc['description'] = "" # Clear translation to trigger re-translation
-                changes += 1
-                print(f"[UPDATE DESC] {broad_key}{'' if name.startswith('_') else '/' + name}")
+            if en_loc:
+                if 'name' in metadata and en_loc.get('name') != metadata['name']:
+                    print(f"[UPDATE NAME] {broad_key}{'' if name.startswith('_') else '/' + name} ({en_loc.get('name')} -> {metadata['name']})")
+                    en_loc['name'] = metadata['name']
+                    if es_loc:
+                        es_loc['name'] = ""
+                    changes += 1
+
+                if clean_text(en_loc.get('description')) != clean_text(raw_desc):
+                    # We save the raw description to preserve paragraph breaks, 
+                    # but only if the actual content is different.
+                    en_loc['description'] = raw_desc
+                    if es_loc:
+                        es_loc['description'] = "" # Clear translation to trigger re-translation
+                    changes += 1
+                    print(f"[UPDATE DESC] {broad_key}{'' if name.startswith('_') else '/' + name}")
 
     if changes == 0:
         print("No changes needed. YAML is in sync.")
@@ -163,6 +179,11 @@ def cmd_diff(args):
             if file_text != yaml_text:
                 print(f"[DIFF CONTENT] {broad_key}{'' if name.startswith('_') else '/' + name}")
                 diff_found = True
+
+            if 'name' in metadata and en_loc.get('name') != metadata['name']:
+                print(f"[DIFF NAME] {broad_key}{'' if name.startswith('_') else '/' + name} ({en_loc.get('name')} -> {metadata['name']})")
+                diff_found = True
+
             for k, v in metadata.items():
                 if k != 'name' and target.get(k) != v:
                     print(f"[DIFF META] {broad_key}{'' if name.startswith('_') else '/' + name} ({k}: {target.get(k)} -> {v})")
@@ -172,20 +193,28 @@ def cmd_diff(args):
                 print(f"    FILE (Cleaned): {file_text[:80]}...")
 
 if __name__ == "__main__":
+    root_dir = find_project_root()
+    default_yaml = str(root_dir / "sources/data_sources/skills.yaml")
+    default_skills_dir = str(root_dir / "sources/skills")
+
     parser = argparse.ArgumentParser(description="Alternity Skill Manager")
     subparsers = parser.add_subparsers(dest="command")
+    
     p_push = subparsers.add_parser("push", help="Push files TO YAML")
-    p_push.add_argument("--yaml", default="sources/data_sources/skills.yaml")
-    p_push.add_argument("--skills-dir", default="sources/skills")
+    p_push.add_argument("--yaml", default=default_yaml)
+    p_push.add_argument("--skills-dir", default=default_skills_dir)
     p_push.add_argument("--commit", action="store_true")
+    
     p_pull = subparsers.add_parser("pull", help="Pull YAML TO files")
-    p_pull.add_argument("--yaml", default="sources/data_sources/skills.yaml")
-    p_pull.add_argument("--output", default="sources/skills")
+    p_pull.add_argument("--yaml", default=default_yaml)
+    p_pull.add_argument("--output", default=default_skills_dir)
     p_pull.add_argument("--overwrite", action="store_true")
+    
     p_diff = subparsers.add_parser("diff", help="Compare files with YAML")
-    p_diff.add_argument("--yaml", default="sources/data_sources/skills.yaml")
-    p_diff.add_argument("--skills-dir", default="sources/skills")
+    p_diff.add_argument("--yaml", default=default_yaml)
+    p_diff.add_argument("--skills-dir", default=default_skills_dir)
     p_diff.add_argument("-v", "--verbose", action="store_true")
+    
     args = parser.parse_args()
     if args.command == "push": cmd_push(args)
     elif args.command == "pull": cmd_pull(args)

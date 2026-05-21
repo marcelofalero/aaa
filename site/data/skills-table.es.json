@@ -232,7 +232,7 @@
                 },
                 {
                     "skill": "Táctica",
-                    "attribute": "VOL",
+                    "attribute": "INT",
                     "url": "/es/skills/tactics",
                     "cost": 6,
                     "type": "Broad",
@@ -600,7 +600,7 @@
                 },
                 {
                     "skill": "Seguridad",
-                    "attribute": "VOL",
+                    "attribute": "INT",
                     "url": "/es/skills/security",
                     "cost": 3,
                     "type": "Broad",
@@ -1008,7 +1008,7 @@
                     "items": [
                         {
                             "skill": "Habilidades de Especialidad",
-                            "attribute": "INT",
+                            "attribute": "VOL",
                             "url": "/es/skills/street-smart#habilidades-de-especialidad",
                             "cost": 3,
                             "type": "Specialty",

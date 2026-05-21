@@ -7,7 +7,7 @@ items:
       - en:
           name: Alien Artifact
           description: |-
-            An alien artifact is a strange device or relic that the character doesn't know anything about. It could be an object of alien origin, a one-of-a-kind experimental gadget, or even an experimental process used on the character at some point in the past. Somewhere in his travels, the character came to possess the artifact. Any alien artifact that is an item is small enough to be easily carried around or worn. The character doesn't know his item’s function or purpose; he has to discover exactly what the artifact does as the campaign progresses. As a perk, an alien artifact provides mostly advantages—but every artifact also has its negative side. Some provide a constant benefit; others require that the character make a perk check to activate the artifact. An artifact’s negative side can be a flaw that manifests when the character least expects it; the downside can also be the simple fact that alien artifacts are extremely rare, exceedingly valuable, and highly coveted. Someone wants the one your character possesses, and will stop at nothing to get it. Alien artifacts are listed and described in the Gamemaster Guide. After you select this perk, the Gamemaster will design an alien artifact for your character.
+            An alien artifact is a strange device or relic that the character doesn't know anything about. It could be an object of alien origin, a one-of-a-kind experimental gadget, or even an experimental process used on the character at some point in the past. Somewhere in his travels, the character came to possess the artifact. Any alien artifact that is an item is small enough to be easily carried around or worn. The character doesn't know his item's function or purpose; he has to discover exactly what the artifact does as the campaign progresses. As a perk, an alien artifact provides mostly advantages—but every artifact also has its negative side. Some provide a constant benefit; others require that the character make a perk check to activate the artifact. An artifact’s negative side can be a flaw that manifests when the character least expects it; the downside can also be the simple fact that alien artifacts are extremely rare, exceedingly valuable, and highly coveted. Someone wants the one your character possesses, and will stop at nothing to get it. Alien artifacts are listed and described in the Gamemaster Guide. After you select this perk, the Gamemaster will design an alien artifact for your character.
       - es:
           name: Artefacto alienígena
           description: |-
@@ -18,7 +18,7 @@ items:
     type: Active
     localized:
       - en:
-          name: Ambidextrous
+          name: Ambidextrous  
           description: |-
             A character with this perk can use both hands at the same time with more ease than someone who is not ambidextrous. A character without this perk suffers penalties when using his off hand or when attempting to use two weapons in combat. (See “Attacking with Two Weapons" on page 57 in Chapter 3: characters in Action.) With this perk, the penalty for the action using the off hand is reduced to +2 steps, and the penalty for the primary hand is eliminated.
       - es:
@@ -219,11 +219,11 @@ items:
       - en:
           name: Psionic Awareness
           description: |-
-            A character with Psionic Awareness is entitled to an Intelligence feat check to determine whether he realizes that a psionic power is being used in his vicinity. (characters without this perk are not normally allowed checks to determine whether they can detect psionic activity.) The Gamemaster will determine when such a check should be made, and will roll the check secretly, only giving the player of the character any information when the check is successful. This perk can only be selected if the Gamemaster allows the use of psionics (see Chapter 14).
+            This perk allows a character to purchase ranks in the Awareness - Psionic Sense specialty skill, enabling them to detect and identify psionic powers and phenomena. The skill is also treated as favored, reducing its cost by one. This perk is only useful for characters without psionic abilities. This perk can only be selected if the Gamemaster allows the use of psionics.
       - es:
           name: Conciencia psiónica
           description: |-
-            Un personaje con Conciencia psiónica tiene derecho a una prueba de dote de Inteligencia para determinar si se da cuenta de que se está utilizando un poder psiónico en sus proximidades. (A los personajes sin esta ventaja normalmente no se les permiten pruebas para determinar si pueden detectar actividad psiónica). El Gamemaster determinará cuándo se debe realizar dicha prueba y la realizará en secreto, dándole al jugador del personaje información solo cuando la prueba tenga éxito. esta ventaja sólo se puede seleccionar si el Gamemaster permite el uso de psiónicos (ver Capítulo 14).
+            Esta ventaja permite a un personaje comprar rangos en la habilidad de especialidad Conciencia - Sentido Psiónico, lo que le permite detectar e identificar poderes y fenómenos psiónicos. La habilidad también se considera favorecida, reduciendo su costo en uno. Esta ventaja solo es útil para personajes sin habilidades psiónicas. Esta ventaja solo se puede seleccionar si el Gamemaster permite el uso de psiónicos.
   reflexes:
     cost: '4'
     ability: DEX
