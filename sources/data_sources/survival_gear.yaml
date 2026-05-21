@@ -3,51 +3,51 @@ config:
     name: Default
     columns:
       en:
-        - name: Armor
-          key: name
-        - name: Mass
-          key: mass
-        - name: Pen.
-          key: ap
-        - name: LI/HI/En
-          key: lhe
-        - name: Type
-          key: type
-        - name: Hide
-          key: hide
-        - name: Avail.
-          key: avail
-        - name: Cost ($)
-          key: cost
-        - name: Description
-          key: description
-          hidden: true
+      - name: Armor
+        key: name
+      - name: Mass
+        key: mass
+      - name: Pen.
+        key: ap
+      - name: LI/HI/En
+        key: lhe
+      - name: Type
+        key: type
+      - name: Hide
+        key: hide
+      - name: Avail.
+        key: avail
+      - name: Cost ($)
+        key: cost
+      - name: Description
+        key: description
+        hidden: true
       es:
-        - name: Armadura
-          key: name
-        - name: Masa
-          key: mass
-        - name: Pena.
-          key: ap
-        - name: LI/HI/En
-          key: lhe
-        - name: Tipo
-          key: type
-        - name: Ocult.
-          key: hide
-        - name: Disp.
-          key: avail
-        - name: Coste ($)
-          key: cost
-        - name: Descripción
-          key: description
-          hidden: true
+      - name: Armadura
+        key: name
+      - name: Masa
+        key: mass
+      - name: Pena.
+        key: ap
+      - name: LI/HI/En
+        key: lhe
+      - name: Tipo
+        key: type
+      - name: Ocult.
+        key: hide
+      - name: Disp.
+        key: avail
+      - name: Coste ($)
+        key: cost
+      - name: Descripción
+        key: description
+        hidden: true
 items:
   pl-7-survival-gear:
     localized:
-      - en:
-          name: PL 7 Survival Gear
-      - es: {}
+    - en:
+        name: PL 7 Survival Gear
+    - es: {}
     items:
       terrainmaster-5-portable-cabin:
         pl: '7'
@@ -55,67 +55,65 @@ items:
         cost: '117580'
         avail: Com
         localized:
-          - en:
-              name: TerrainMaster 5§ Portable Cabin
-              description: |-
-                The TerrainMaster stows in a convenient backpack frame. While it is a serious load for one hiker, the stowage frame includes a built-in mass neutralizer that reduces its mass to 5 kilograms when activated. The neutralizer has an endurance of 20 hours at this setting or 50 hours if set to reduce to 15 kg.
-          - es:
-              name: Cabina Portátil Master 5§
-              description: |-
-                El TerrainMaster se acopla en un marco de maletín cómodo. Mientras que es una carga importante para uno senderista, el marco de almacenamiento incluye un desenrollador de masa incorporado que reduce su masa a 5 kilogramos cuando está activado. El desenrollador tiene una duración de 20 horas en este ajuste o 50 horas si se lo establece para reducirlo a 15 kg.
+        - en:
+            name: TerrainMaster 5§ Portable Cabin
+            description: |-
+              The TerrainMaster stows in a convenient backpack frame. While it is a serious load for one hiker, the stowage frame includes a built-in mass neutralizer that reduces its mass to 5 kilograms when activated. The neutralizer has an endurance of 20 hours at this setting or 50 hours if set to reduce to 15 kg.
+        - es:
+            name: Cabina Portátil Master 5§
+            description: |-
+              El TerrainMaster se acopla en un marco de maletín cómodo. Mientras que es una carga importante para uno senderista, el marco de almacenamiento incluye un desenrollador de masa incorporado que reduce su masa a 5 kilogramos cuando está activado. El desenrollador tiene una duración de 20 horas en este ajuste o 50 horas si se lo establece para reducirlo a 15 kg.
       gliese-300-habitat-dome:
         pl: '7'
         mass: 50 kg
         cost: '1750'
         avail: Com
         localized:
-          - en:
-              name: Gliese 300 habitat dome
-              description: |-
-                The Gliese 300 habitat dome is made of microengineered numaplas—a tough, heavy plastic fabric chambered with self-inflating pneumatic bladders. A single standard COg cartridge (two are included) can deploy the dome in moments. When inflated, the dome is 2 meters tall and 5 meters in diameter.
-          - es:
-              name: Conjunto de habitación Gliese 300
-              description: |-
-                El domo de habitat Gliese 300 está hecho de numaplas micromejorados—un plástico pesado y denso con cierres de tejido forjados y cámaras pneumétricas de inflación automática. Un solo cartucho estándar COg (dos están incluidos) puede desplegar el domo en momentos. Cuando se infla, el domo mide 2 metros de altura y 5 metros de diámetro.
+        - en:
+            name: Gliese 300 habitat dome
+            description: |-
+              The Gliese 300 habitat dome is made of microengineered numaplas—a tough, heavy plastic fabric chambered with self-inflating pneumatic bladders. A single standard CO₂ cartridge (two are included) can deploy the dome in moments. When inflated, the dome is 2 meters tall and 5 meters in diameter.
+        - es:
+            name: Conjunto de habitación Gliese 300
+            description: |
       armadillo-mpt-two-man-tent:
         pl: '7'
         mass: 1 kg
         cost: '135'
         avail: Com
         localized:
-          - en:
-              name: ARMADILLO MPT Two-MAN TENT
-              description: |-
-                The ARMADILLO MPT Two-MAN TENT is a lightweight, easy to use tent that offers comfort and durability. It provides support for two people with a single numaplas support matrix, which inflates with a handy foot-pedal providing it with a structure lighter and stronger than aluminum. The tent weighs 1 kg and costs $135. It's available in any location.
-          - es:
-              name: CUERDA DE GUARDAMORTE DOS-PERSONAS ALBERGUE CALIENTE
-              description: |-
-                El ARMADILLO MPT Two-MAN TENT es un toldo ligero, fácil de usar que ofrece comodidad y durabilidad. Proporciona apoyo para dos personas con una sola matriz de soporte numaplas, la cual inflama con un pedal pie útil para darle una estructura más ligera y más robusta que el aluminio. El tentáculo pesa 1 kg y cuesta $135. Está disponible en cualquier lugar.
+        - en:
+            name: Armadillo MPT Two-Man Tent
+            description: |-
+              The Armadillo MPT Two-Man Tent is a lightweight, easy to use tent that offers comfort and durability. It provides support for two people with a single numaplas support matrix, which inflates with a handy foot-pedal providing it with a structure lighter and stronger than aluminum. It's available in any location.
+        - es:
+            name: ''
+            description: |
       unner-60-climate-suit:
         pl: '7'
         mass: 1 kg
         cost: '825'
         avail: Common
         localized:
-          - en:
-              name: Unner 60 CLIMATE SuIT
-              description: |-
-                The Unner 60 Climate Suit is a versatile, lightweight and comfortable suit designed to keep you safe and cool in non-vacuum extraterrestrial environments. Its heating/cooling elements allow for long-endurance work and travel in environments with toxic, thin, dense, or mildly corrosive atmospheres.
-          - es:
-              name: Botas de Unner 60 CLIMATE SuIT
-              description: |-
-                El Unner 60 Climate Suit es una chaqueta versátil, ligera y cómoda diseñada para mantenerte saludable y fresco en entornos extraterrestres sin vacío. Sus elementos de calentamiento/cooling permiten trabajar y viajar durante longitudes de tiempo en ambientes con atmósfera tóxica, delgado, densa o moderadamente corrosiva.
+        - en:
+            name: Unner 60 Climate Suit
+            description: |-
+              The Unner 60 Climate Suit is a versatile, lightweight and comfortable suit designed to keep you safe and cool in non-vacuum extraterrestrial environments. Its heating/cooling elements allow for long-endurance work and travel in environments with toxic, thin, dense, or mildly corrosive atmospheres.
+        - es:
+            name: ''
+            description: |-
+              El Unner 60 Climate Suit es una chaqueta versátil, ligera y cómoda diseñada para mantenerte saludable y fresco en entornos extraterrestres sin vacío. Sus elementos de calentamiento/cooling permiten trabajar y viajar durante longitudes de tiempo en ambientes con atmósfera tóxica, delgado, densa o moderadamente corrosiva.
       explorer-d9-armored-e-suit:
         pl: '7'
         mass: 5 kg
         cost: '2550'
         avail: Com
         localized:
-          - en:
-              name: Explorer D9 Armored E-Suit
-              description: |-
-                The Explorer's armored E-Suit is lined with a self-sealing, puncture-resistant inner layer. It provides protection against environmental hazards like vacuum, gravity, radiation, and atmospheric pressure changes. The suit loses its integrity if the wearer suffers 4 points or more of primary wound or mortal damage.
-          - es:
-              name: Cinturón de armadura E-Suit Explorador D9
-              description: |-
-                El traje armado E-Suit del Explorador está llevado por un capa de aire aire, puntuada con resistencia al agujero y algodón. Proporciona protección contra los peligros ambientales como el vacío, la gravedad, la radiación y las alteraciones de presión atmosférica. Deja de ser útil si el portador sufre 4 puntos o más de heridas primarias o mortales.
+        - en:
+            name: Explorer D9 Armored E-Suit
+            description: |-
+              The Explorer's armored E-Suit is lined with a self-sealing, puncture-resistant inner layer. It provides protection against environmental hazards like vacuum, gravity, radiation, and atmospheric pressure changes. The suit loses its integrity if the wearer suffers 4 points or more of primary wound or mortal damage.
+        - es:
+            name: Cinturón de armadura E-Suit Explorador D9
+            description: |-
+              El traje armado E-Suit del Explorador está llevado por un capa de aire aire, puntuada con resistencia al agujero y algodón. Proporciona protección contra los peligros ambientales como el vacío, la gravedad, la radiación y las alteraciones de presión atmosférica. Deja de ser útil si el portador sufre 4 puntos o más de heridas primarias o mortales.

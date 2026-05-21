@@ -25,15 +25,21 @@ REPLACEMENTS = {
     r'\u2014': '--',
 }
 
+# Folder and broad key mapping
+FOLDER_MAPPING = {
+    'Biokinesis': 'biokinesis',
+    'ESP': 'esp',
+    'Psychoportation': 'psychoportation',
+    'Telekinesis': 'telekinesis',
+    'Telepathy': 'telepathy'
+}
+REVERSE_MAPPING = {v: k for k, v in FOLDER_MAPPING.items()}
+
 def clean_text(text):
     if text is None: return ""
-    # 1. Standardize line endings and quotes
     text = text.replace('\r\n', '\n').replace("''", "'")
-    # 2. Apply terminology and smart quote replacements
     for pattern, replacement in REPLACEMENTS.items():
         text = re.sub(pattern, replacement, text)
-    # 3. Aggressive whitespace cleanup for comparison: 
-    # Trim lines, remove empty lines, and normalize all internal whitespace to single spaces.
     lines = [line.strip() for line in text.split('\n')]
     text = ' '.join([l for l in lines if l])
     return ' '.join(text.split()) # Normalize internal spaces
@@ -52,8 +58,6 @@ def parse_file(path):
         if len(parts) >= 3:
             yaml = get_yaml_engine()
             metadata = yaml.load(parts[1]) or {}
-            # For saving, we use the original description (trimmed)
-            # For comparison, we will use clean_text inside the cmd_diff
             return metadata, parts[2].strip()
     return {}, content.strip()
 
@@ -73,16 +77,17 @@ def cmd_push(args):
         data = yaml_engine.load(f)
     if 'items' not in data: data['items'] = {}
     
-    skills_path = Path(args.skills_dir)
+    psionics_path = Path(args.psionics_dir)
     changes = 0
     
-    for broad_folder in sorted(skills_path.iterdir()):
+    for broad_folder in sorted(psionics_path.iterdir()):
         if not broad_folder.is_dir(): continue
-        broad_key = broad_folder.name
+        folder_name = broad_folder.name
+        broad_key = REVERSE_MAPPING.get(folder_name, folder_name)
         
-        for skill_file in sorted(broad_folder.glob("*.md")):
-            name = skill_file.stem
-            metadata, raw_desc = parse_file(skill_file)
+        for p_file in sorted(broad_folder.glob("*.md")):
+            name = p_file.stem
+            metadata, raw_desc = parse_file(p_file)
             
             if name.startswith('_'):
                 if broad_key not in data['items']: continue
@@ -92,11 +97,20 @@ def cmd_push(args):
                 if name not in data['items'][broad_key]['items']: continue
                 target = data['items'][broad_key]['items'][name]
 
-            # Update Metadata
-            for k in ['attribute', 'cost', 'url', 'category', 'trained_only', 'untrained']:
-                if k in metadata and target.get(k) != metadata[k]:
-                    print(f"[UPDATE META] {broad_key}{'' if name.startswith('_') else '/' + name} ({k}: {target.get(k)} -> {metadata[k]})")
-                    target[k] = metadata[k]
+            # Update Metadata (All keys except 'name' and 'localized')
+            for k, val in metadata.items():
+                if k in ['name', 'localized']: continue
+                if k in target:
+                    target_val = target[k]
+                    if isinstance(target_val, int) and isinstance(val, str):
+                        try: val = int(val)
+                        except ValueError: pass
+                    elif isinstance(target_val, str) and isinstance(val, int):
+                        val = str(val)
+                
+                if target.get(k) != val:
+                    print(f"[UPDATE META] {broad_key}{'' if name.startswith('_') else '/' + name} ({k}: {target.get(k)} -> {val})")
+                    target[k] = val
                     changes += 1
 
             # Update Description and Name
@@ -112,11 +126,9 @@ def cmd_push(args):
                     changes += 1
 
                 if clean_text(en_loc.get('description')) != clean_text(raw_desc):
-                    # We save the raw description to preserve paragraph breaks, 
-                    # but only if the actual content is different.
                     en_loc['description'] = raw_desc
                     if es_loc:
-                        es_loc['description'] = "" # Clear translation to trigger re-translation
+                        es_loc['description'] = "" # Clear to trigger translation
                     changes += 1
                     print(f"[UPDATE DESC] {broad_key}{'' if name.startswith('_') else '/' + name}")
 
@@ -138,14 +150,15 @@ def cmd_pull(args):
     output_path = Path(args.output)
     output_path.mkdir(parents=True, exist_ok=True)
     for broad_key, broad_val in data.get('items', {}).items():
-        broad_folder = output_path / broad_key
+        folder_name = FOLDER_MAPPING.get(broad_key, broad_key)
+        broad_folder = output_path / folder_name
         broad_folder.mkdir(exist_ok=True)
         try:
             meta = {k: v for k, v in broad_val.items() if k not in ['items', 'localized']}
             en_loc = next((loc['en'] for loc in broad_val['localized'] if 'en' in loc), {})
             meta['name'] = en_loc.get('name', broad_key)
             desc = en_loc.get('description', '')
-            save_file_with_frontmatter(broad_folder / f"_{broad_key}.md", meta, desc, args.overwrite)
+            save_file_with_frontmatter(broad_folder / f"_{folder_name}.md", meta, desc, args.overwrite)
             for spec_key, spec_val in broad_val.get('items', {}).items():
                 s_meta = {k: v for k, v in spec_val.items() if k not in ['localized']}
                 s_en_loc = next((loc['en'] for loc in spec_val['localized'] if 'en' in loc), {})
@@ -158,14 +171,15 @@ def cmd_diff(args):
     yaml_engine = get_yaml_engine()
     with open(args.yaml, 'r', encoding='utf-8') as f:
         data = yaml_engine.load(f)
-    skills_path = Path(args.skills_dir)
-    for broad_folder in sorted(skills_path.iterdir()):
+    psionics_path = Path(args.psionics_dir)
+    for broad_folder in sorted(psionics_path.iterdir()):
         if not broad_folder.is_dir(): continue
-        broad_key = broad_folder.name
+        folder_name = broad_folder.name
+        broad_key = REVERSE_MAPPING.get(folder_name, folder_name)
         if broad_key not in data['items']: continue
-        for skill_file in sorted(broad_folder.glob("*.md")):
-            metadata, file_raw = parse_file(skill_file)
-            name = skill_file.stem
+        for p_file in sorted(broad_folder.glob("*.md")):
+            metadata, file_raw = parse_file(p_file)
+            name = p_file.stem
             if name.startswith('_'): target = data['items'][broad_key]
             else:
                 if 'items' not in data['items'][broad_key] or name not in data['items'][broad_key]['items']: continue
@@ -185,34 +199,39 @@ def cmd_diff(args):
                 diff_found = True
 
             for k, v in metadata.items():
-                if k != 'name' and target.get(k) != v:
-                    print(f"[DIFF META] {broad_key}{'' if name.startswith('_') else '/' + name} ({k}: {target.get(k)} -> {v})")
-                    diff_found = True
+                if k != 'name':
+                    target_val = target.get(k)
+                    if isinstance(target_val, int) and isinstance(v, str):
+                        try: v = int(v)
+                        except ValueError: pass
+                    if target_val != v:
+                        print(f"[DIFF META] {broad_key}{'' if name.startswith('_') else '/' + name} ({k}: {target_val} -> {v})")
+                        diff_found = True
             if diff_found and args.verbose:
                 print(f"    YAML (Cleaned): {yaml_text[:80]}...")
                 print(f"    FILE (Cleaned): {file_text[:80]}...")
 
 if __name__ == "__main__":
     root_dir = find_project_root()
-    default_yaml = str(root_dir / "sources/data_sources/skills.yaml")
-    default_skills_dir = str(root_dir / "sources/skills")
+    default_yaml = str(root_dir / "sources/data_sources/psionics.yaml")
+    default_psionics_dir = str(root_dir / "sources/psionics")
 
-    parser = argparse.ArgumentParser(description="Alternity Skill Manager")
+    parser = argparse.ArgumentParser(description="Alternity Psionics Manager")
     subparsers = parser.add_subparsers(dest="command")
     
     p_push = subparsers.add_parser("push", help="Push files TO YAML")
     p_push.add_argument("--yaml", default=default_yaml)
-    p_push.add_argument("--skills-dir", default=default_skills_dir)
+    p_push.add_argument("--psionics-dir", default=default_psionics_dir)
     p_push.add_argument("--commit", action="store_true")
     
     p_pull = subparsers.add_parser("pull", help="Pull YAML TO files")
     p_pull.add_argument("--yaml", default=default_yaml)
-    p_pull.add_argument("--output", default=default_skills_dir)
+    p_pull.add_argument("--output", default=default_psionics_dir)
     p_pull.add_argument("--overwrite", action="store_true")
     
     p_diff = subparsers.add_parser("diff", help="Compare files with YAML")
     p_diff.add_argument("--yaml", default=default_yaml)
-    p_diff.add_argument("--skills-dir", default=default_skills_dir)
+    p_diff.add_argument("--psionics-dir", default=default_psionics_dir)
     p_diff.add_argument("-v", "--verbose", action="store_true")
     
     args = parser.parse_args()
