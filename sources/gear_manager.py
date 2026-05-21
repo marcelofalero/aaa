@@ -17,6 +17,12 @@ REPLACEMENTS = {
     r'\u2014': '--',
 }
 
+# Folder and broad key mapping
+FOLDER_MAPPING = {
+    'pl-7-survival-gear': 'stardrive'
+}
+REVERSE_MAPPING = {v: k for k, v in FOLDER_MAPPING.items()}
+
 def clean_text(text):
     if text is None: return ""
     # 1. Standardize line endings and quotes
@@ -67,7 +73,8 @@ def cmd_push(args):
     
     for broad_folder in sorted(gear_path.iterdir()):
         if not broad_folder.is_dir(): continue
-        broad_key = broad_folder.name
+        folder_name = broad_folder.name
+        broad_key = REVERSE_MAPPING.get(folder_name, folder_name)
         
         for gear_file in sorted(broad_folder.glob("*.md")):
             name = gear_file.stem
@@ -121,14 +128,15 @@ def cmd_pull(args):
     output_path = Path(args.output)
     output_path.mkdir(parents=True, exist_ok=True)
     for broad_key, broad_val in data.get('items', {}).items():
-        broad_folder = output_path / broad_key
+        folder_name = FOLDER_MAPPING.get(broad_key, broad_key)
+        broad_folder = output_path / folder_name
         broad_folder.mkdir(exist_ok=True)
         try:
             meta = {k: v for k, v in broad_val.items() if k not in ['items', 'localized']}
             en_loc = next((loc['en'] for loc in broad_val['localized'] if 'en' in loc), {})
             meta['name'] = en_loc.get('name', broad_key)
             desc = en_loc.get('description', '')
-            save_file_with_frontmatter(broad_folder / f"_{broad_key}.md", meta, desc, args.overwrite)
+            save_file_with_frontmatter(broad_folder / f"_{folder_name}.md", meta, desc, args.overwrite)
             for spec_key, spec_val in broad_val.get('items', {}).items():
                 s_meta = {k: v for k, v in spec_val.items() if k not in ['localized']}
                 s_en_loc = next((loc['en'] for loc in spec_val['localized'] if 'en' in loc), {})
@@ -144,7 +152,8 @@ def cmd_diff(args):
     gear_path = Path(args.gear_dir)
     for broad_folder in sorted(gear_path.iterdir()):
         if not broad_folder.is_dir(): continue
-        broad_key = broad_folder.name
+        folder_name = broad_folder.name
+        broad_key = REVERSE_MAPPING.get(folder_name, folder_name)
         if broad_key not in data['items']: continue
         for gear_file in sorted(broad_folder.glob("*.md")):
             metadata, file_raw = parse_file(gear_file)
@@ -179,15 +188,15 @@ if __name__ == "__main__":
     subparsers = parser.add_subparsers(dest="command")
     p_push = subparsers.add_parser("push", help="Push files TO YAML")
     p_push.add_argument("--yaml", default="sources/data_sources/survival_gear.yaml")
-    p_push.add_argument("--gear-dir", default="sources/survival_gear")
+    p_push.add_argument("--gear-dir", default="sources/survival-gear")
     p_push.add_argument("--commit", action="store_true")
     p_pull = subparsers.add_parser("pull", help="Pull YAML TO files")
     p_pull.add_argument("--yaml", default="sources/data_sources/survival_gear.yaml")
-    p_pull.add_argument("--output", default="sources/survival_gear")
+    p_pull.add_argument("--output", default="sources/survival-gear")
     p_pull.add_argument("--overwrite", action="store_true")
     p_diff = subparsers.add_parser("diff", help="Compare files with YAML")
     p_diff.add_argument("--yaml", default="sources/data_sources/survival_gear.yaml")
-    p_diff.add_argument("--gear-dir", default="sources/survival_gear")
+    p_diff.add_argument("--gear-dir", default="sources/survival-gear")
     p_diff.add_argument("-v", "--verbose", action="store_true")
     args = parser.parse_args()
     if args.command == "push": cmd_push(args)
