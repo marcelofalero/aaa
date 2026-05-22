@@ -33,55 +33,28 @@ items:
           title: Increased Toughness
         - rank: 12
           title: Increased Effect
-        extended_duration: true
+        extended_duration: false
         localized:
         - en:
             name: Bio-armor
             description: |-
-              This skill psionically reinforces a character's skin, helping to protect from
-              damage. This "body armor" provides protection against physical and energy
-              damage, but does not protect against psionic attacks. (See Telepathy for ways
-              to avoid psionic attacks.)
+              This skill psionically reinforces a character's skin, helping to protect from damage. This "body armor" provides (LI d6/HI d6/En d4) points of protection against damage, but does not protect against psionic attacks. (See Telepathy for ways to avoid psionic attacks.)
 
-              The protection afforded by bio-armor is based on the user's skill check:
+              The result of the skill check determines the duration of the bio-armor:
+              - **Ordinary:** 10 minutes.
+              - **Good:** 1 hour.
+              - **Amazing:** 6 hours.
 
-              | Result | LI | HI | En |
-              | :--- | :---: | :---: | :---: |-
-              | **Ordinary** | d4 | d4–1 | d4–1 |
-              | **Good** | d6 | d6–1 | d6–1 |
-              | **Amazing** | d6+1 | d6 | d6 |
+              The skin hardening impairs the character's movement in the same way as worn armor with AP 1, but a lighter version can be achieved by sacrificing 1 point of armor on each category, this eliminates the armor penalty.
 
-              **Increased Effect:**
-              - **At rank 3**, the protection afforded by bio-armor increases by 1 point (add 1 to whatever is rolled on the table above).
-              - **At rank 6**, this value further increases by 1 point (a total of +2).
-              - **At rank 9**, the armor is treated as being of Good toughness.
-              - **At rank 12**, the armor value increases again by 1 point (a total of +3).
-
-              ---
+              ### Rank Benefits
+              - **Rank 3 [Increased Effect]:** the protection afforded by bio-armor increases to (LI d8 / HI d6 / En d4+1).
+              - **Rank 6 [Increased Effect]:** this value further increases to (LI d8 / HI d6+1 / En d6)b .
+              - **Rank 9 [Increased Toughness]:** the armor is treated as being of Good toughness.
+              - **Rank 12 [Increased Effect]:** the armor value increases again to (LI 2d4 / HI 2d4 / En d8).
         - es:
             name: Bioarmadura
-            description: |-
-              Esta habilidad refuerza psiónicamente la piel de un personaje, ayudando a
-              protegerlo del daño. Esta "armadura corporal" proporciona protección contra
-              daños físicos y de energía, pero no protege contra ataques psiónicos.
-              (Consulta Telepatía para conocer formas de evitar los ataques psiónicos).
-
-              La protección proporcionada por la bioarmadura se basa en la tirada de
-              habilidad del usuario:
-
-              | Resultado | LI | HI | En |
-              | :--- | :---: | :---: | :---: |-
-              | **Ordinario** | d4 | d4–1 | d4–1 |
-              | **Bueno** | d6 | d6–1 | d6–1 |
-              | **Asombroso** | d6+1 | d6 | d6 |
-
-              **Efecto Incrementado:**
-              - **Al rango 3**, la protección proporcionada por la bioarmadura aumenta en 1 punto (añade 1 a lo que se tire en la tabla anterior).
-              - **Al rango 6**, este valor aumenta de nuevo en 1 punto (un total de +2).
-              - **Al rango 9**, la armadura se trata como si tuviera Dureza Buena (Good toughness).
-              - **Al rango 12**, el valor de la armadura aumenta una vez más en 1 punto (un total de +3).
-
-              ---
+            description: |
       bioweapon:
         attribute: CON
         cost: 3
@@ -93,82 +66,17 @@ items:
         - rank: 6
           title: Increased Damage
         - rank: 9
-          title: Increased Damage
-        - rank: 12
           title: Improved Damage
+        - rank: 12
+          title: Increased Damage
         extended_duration: true
         localized:
         - en:
             name: Bioweapon
-            description: "When employing this skill, a character generates a field\
-              \ of kinetic energy\nemanating from his or her hands. This energy manifests\
-              \ in one of two ways, to\nbe chosen by the player at the time the character\
-              \ makes a successful skill\ncheck: a staff or a sword.\n\nThe player\
-              \ may alter the shape of the staff to a club, and the sword to a\nparticular\
-              \ type of sword (katana, saber, broadsword, and so on). These changes\n\
-              neither damage the bioweapon will do, nor do they grant any special\
-              \ properties\nto the weapon; they are cosmetic only.\n\nThe principal\
-              \ difference in the two forms is in the sort of damage they do. A\n\
-              character who wishes just to knock out an opponent would be best served\n\
-              creating a staff; those who mean to inflict more serious harm on an\
-              \ opponent\nwill likely create the sword.\n\n| Form | Base Damage |\
-              \ Type |\n| :--- | :--- | :---: |\n| **Staff** | d8s/d8+2s/d12+2s |\
-              \ LI/O |\n| **Sword** | d6w/d6+2w/d6m | LI/O |\n\nThe character uses\
-              \ one of two skills to wield the bioweapon: **Melee\nWeapons—bludgeon**\
-              \ for the staff or **Melee Weapons—blade** for the sword. \n\nThe result\
-              \ of the bioweapon skill check may add a bonus to the appropriate\n\
-              Melee Weapon skill check as follows:\n- **Ordinary:** –1 step bonus\n\
-              - **Good:** –2 step bonus\n- **Amazing:** –3 step bonus\n\nThis bonus\
-              \ lasts until the character chooses not to maintain the bioweapon.\n\
-              \n**Increased Damage:** \n- **At rank 3**, the damage of the bioweapon\
-              \ increases by +1.\n- **At rank 6**, it increases again (to a total\
-              \ of +2).\n- **At rank 9**, it increases by another +1 (to a total of\
-              \ +3).\n- **At rank 12**, all attacks made with the bioweapon are considered\
-              \ to deliver **Good damage**.\n\n---"
+            description: "When employing this skill, a character generates a field of kinetic energy emanating from his or her hands. This energy manifests in one of two ways, to be chosen by the player at the time the character makes a successful skill check: a staff or a sword.\n\nThe player may alter the shape of the staff to a club, and the sword to a particular type of sword (katana, saber, broadsword, and so on). These changes neither affect the damage the bioweapon will do, nor do they grant any special properties to the weapon; they are cosmetic only.\n\nThe principal difference in the two forms is in the sort of damage they do. A character who wishes just to knock out an opponent would be best served creating a staff; those who mean to inflict more serious harm on an opponent will likely create the sword.\n\n| Form | Base Damage | Type |\n| :--- | :--- | :---: |\n| **Staff** | d8s/d8+2s/d12+2s | LI/O |\n| **Sword** | d6w/d6+2w/d6m | LI/O |\n\nThe character uses the **Melee Combat—powered** specialty skill to wield the bioweapon, regardless of its form.\n\nThe result of the bioweapon skill check may add a bonus to the Melee Combat—powered skill check as follows:\n- **Ordinary:** –1 step bonus\n- **Good:** –2 step bonus\n- **Amazing:** –3 step bonus\n\nThis bonus lasts until the character chooses not to maintain the bioweapon.\n\n**Rank Benefits:**\n- **Rank 3 [Increased Damage]** the damage of the bioweapon increases by +1.\n- **Rank 6 [Increased Damage]** it increases again (to a total of +2).\n- **Rank 9 [Increased Damage]** all attacks made with the bioweapon are considered to deliver **Good damage**.\n- **Rank 12 [Improved Damage]** it increases by another +1 (to a total of +3)."
         - es:
             name: Bioarma
-            description: |-
-              Al emplear esta habilidad, un personaje genera un campo de energía cinética
-              que emana de sus manos. Esta energía se manifiesta de una de dos maneras, que
-              el jugador debe elegir en el momento en que el personaje realiza con éxito una
-              prueba de habilidad: una vara o una espada.
-
-              El jugador puede alterar la forma de la vara para que sea un mazo, y la de la
-              espada para que sea de un tipo particular (katana, sable, espada ancha, etc.).
-              Estos cambios no afectan el daño que causará la bioarma ni le otorgan ninguna
-              propiedad especial; son puramente cosméticos.
-
-              La principal diferencia entre las dos formas está en el tipo de daño que
-              causan. Un personaje que solo desee noquear a un oponente haría mejor en crear
-              una vara; aquellos que pretendan infligir un daño más serio probablemente
-              crearán la espada.
-
-              | Forma | Daño Base | Tipo |
-              | :--- | :--- | :---: |-
-              | **Vara** | d8s/d8+2s/d12+2s | LI/O |
-              | **Espada** | d6w/d6+2w/d6m | LI/O |
-
-              El personaje utiliza una de dos habilidades para blandir la bioarma: **Combate
-              cuerpo a cuerpo (Melee Weapons)—contundente** para la vara o **Combate cuerpo
-              a cuerpo (Melee Weapons)—filo** para la espada.
-
-              El resultado de la tirada de habilidad de la bioarma puede añadir una
-              bonificación a la tirada de la habilidad de armas cuerpo a cuerpo
-              correspondiente de la siguiente manera:
-              - **Ordinario:** bonificación de –1 paso
-              - **Bueno:** bonificación de –2 pasos
-              - **Asombroso:** bonificación de –3 pasos
-
-              Esta bonificación dura hasta que el personaje decida no seguir manteniendo la
-              bioarma.
-
-              **Daño Incrementado:**
-              - **Al rango 3**, el daño de la bioarma aumenta en +1.
-              - **Al rango 6**, aumenta de nuevo (hasta un total de +2).
-              - **Al rango 9**, aumenta otro +1 (hasta un total de +3).
-              - **Al rango 12**, todos los ataques realizados con la bioarma se consideran para infligir **daño Bueno** (Good damage).
-
-              ---
+            description: |
       control-metabolism:
         attribute: CON
         cost: 2
@@ -178,77 +86,10 @@ items:
         localized:
         - en:
             name: Control Metabolism
-            description: "Through the use of this skill, a character can regulate\
-              \ his or her metabolic\nprocesses. This allows longer survival without\
-              \ food and water, in extreme\nclimates, and in other hostile conditions.\
-              \ The character can also slow bodily\nfunctions to the point of pretending\
-              \ to be dead, should he or she need to fool\nothers in some situation.\n\
-              \nA check is made when a character enters a hostile environment or otherwise\n\
-              wants to employ this skill.\n\n#### Hostile Environments\nIn the case\
-              \ of a hostile environment, the result of a skill check determines\n\
-              the type of protection a character can simulate:\n- **Ordinary:** vacuum\
-              \ mask\n- **Good:** vacuum suit\n- **Amazing:** soft e-suit\n\nAfter\
-              \ the initial use of the skill, the level of protection can be maintained\n\
-              thereafter for a cost of 1 psionic energy point per hour.\n\n#### Adrenal\
-              \ boost\n*Extended duration.*\nThe character can mentally boost adrenaline\
-              \ output, giving an action check\nbonus. \n- **Ordinary:** +1 to action\
-              \ check score.\n- **Good:** +2 to action check score.\n- **Amazing:**\
-              \ +3 to action check score.\n\nThis bonus lasts for the duration of\
-              \ the round in which the power is activated\nand through all of the\
-              \ next round. A character may extend the duration 1 round\nfor every\
-              \ psionic energy point spent to do so.\n\n#### Endorphin release\n*Extended\
-              \ duration.*\nThe character can mentally stimulate the production of\
-              \ endorphins, increasing\nhis or her resistance to pain and fatigue.\n\
-              - **Ordinary:** -1 step bonus to Stamina checks.\n- **Good:** -2 step\
-              \ bonus to Stamina checks.\n- **Amazing:** -3 step bonus to Stamina\
-              \ checks.\n\nThe duration is one hour; the duration may be extended\
-              \ by one hour per extra\npsionic energy point spent to do so.\n\n---"
+            description: "Through the use of this skill, a character can regulate his or her metabolic\nprocesses. This allows longer survival without food and water, in extreme\nclimates, and in other hostile conditions. The character can also slow bodily\nfunctions to the point of pretending to be dead, should he or she need to fool\nothers in some situation.\n\nA check is made when a character enters a hostile environment or otherwise\nwants to employ this skill.\n\n#### Hostile Environments\nIn the case of a hostile environment, the result of a skill check determines\nthe type of protection a character can simulate:\n- **Ordinary:** vacuum suit\n- **Good:** soft e-suit\n- **Amazing:** hard e-suit\n\nBy spending an extra point of psionic energy, the character can treat the skill use as if he has one step better result. He can also spend an extra point of psionic energy to treat the extended duration as one step better.\n\n#### Adrenal boost\nThe character can mentally boost adrenaline output, giving an action check\nbonus. \n- **Ordinary:** +1 to action check score.\n- **Good:** +2 to action check score.\n- **Amazing:** +3 to action check score.\n\n#### Endorphin release\nThe character can mentally stimulate the production of endorphins, increasing\nhis or her resistance to pain and fatigue.\n- **Ordinary:** -1 step bonus to Stamina checks.\n- **Good:** -2 step bonus to Stamina checks.\n- **Amazing:** -3 step bonus to Stamina checks.\n\n> Only one use of the skill is allowed at the same time (hostile environments, adrenal boost, or endorphin release)."
         - es:
             name: Control del Metabolismo
-            description: |-
-              A través del uso de esta habilidad, un personaje puede regular sus procesos
-              metabólicos. Esto permite una supervivencia más prolongada sin comida ni agua,
-              en climas extremos y en otras condiciones hostiles. El personaje también puede
-              ralentizar sus funciones corporales hasta el punto de fingir que está muerto,
-              si necesita engañar a otros en alguna situación.
-
-              Se realiza una tirada cuando un personaje entra en un entorno hostil o si
-              desea emplear esta habilidad de alguna otra manera.
-
-              #### Entornos Hostiles
-              En el caso de un entorno hostil, el resultado de una tirada de habilidad
-              determina el tipo de protección que un personaje puede simular:
-              - **Ordinario:** máscara de vacío
-              - **Bueno:** traje de vacío (vacuum suit)
-              - **Asombroso:** traje electrónico ligero (soft e-suit)
-
-              Después del uso inicial de la habilidad, el nivel de protección se puede
-              mantener posteriormente a un coste de 1 punto de energía psiónica por hora.
-
-              #### Impulso de adrenalina (Adrenal boost)
-              *Duración extendida.*
-              El personaje puede aumentar mentalmente la producción de adrenalina, otorgando
-              una bonificación a las tiradas de acción.
-              - **Ordinario:** +1 a la puntuación de la tirada de acción.
-              - **Bueno:** +2 a la puntuación de la tirada de acción.
-              - **Asombroso:** +3 a la puntuación de la tirada de acción.
-
-              Esta bonificación dura lo que reste del asalto en el que se activó el poder y
-              todo el asalto siguiente. Un personaje puede extender la duración 1 asalto por
-              cada punto de energía psiónica gastado para ello.
-
-              #### Liberación de endorfinas (Endorphin release)
-              *Duración extendida.*
-              El personaje puede estimular mentalmente la producción de endorfinas,
-              aumentando su resistencia al dolor y la fatiga.
-              - **Ordinario:** bonificación de –1 paso a las tiradas de Firmeza (Stamina).
-              - **Bueno:** bonificación de –2 pasos a las tiradas de Firmeza (Stamina).
-              - **Asombroso:** bonificación de –3 pasos a las tiradas de Firmeza (Stamina).
-
-              La duración es de una hora; la duración puede extenderse una hora más por cada
-              punto de energía psiónica adicional gastado para ello.
-
-              ---
+            description: |
       heal:
         attribute: CON
         cost: 4
@@ -267,62 +108,10 @@ items:
         localized:
         - en:
             name: Heal
-            description: "By concentrating, a character using this skill can heal\
-              \ wounds or disease. How\nmuch damage can be healed depends on the result\
-              \ of a skill check:\n- **Ordinary:** 1 wound point\n- **Good:** 2 points\n\
-              - **Amazing:** 3 points\n\n#### Disease\nFor disease, the following\
-              \ results apply:\n- **Ordinary:** reduce the degree of illness by one\
-              \ grade (from Good to Ordinary, for instance).\n- **Good:** reduce by\
-              \ two grades.\n- **Amazing:** reduce by three grades. \nDiseases reduced\
-              \ below Marginal are considered cured.\n\n#### Timing\nPsionic healing\
-              \ requires time. The results are immediate, but the body's\nreaction\
-              \ to the use of the skill lasts one hour. For this reason, the heal\n\
-              skill can't be attempted more than once per hour, even if the check\
-              \ result is\na Failure.\n\n**Rank Benefits:**\n- **At rank 4 [Treating\
-              \ Poison]**, a character may counteract the effect of poisons or drugs\
-              \ in his or her system before the end of their onset time, reducing\
-              \ the impact they may have. The degree of success acts as a bonus to\
-              \ the Constitution feat check required: **Ordinary:** –2 step bonus,\
-              \ **Good:** –3 step bonus, **Amazing:** –4 step bonus.\n- **At rank\
-              \ 6 [Healing Mortal Damage]**, a character becomes able to heal mortal\
-              \ damage. Skill check results change to: **Ordinary:** 2 wounds, **Good:**\
-              \ 3 wounds or 1 mortal, **Amazing:** 4 wounds or 2 mortals.\n- **At\
-              \ rank 8 [Improved Effect]**, a character's ability to heal improves\
-              \ further: **Ordinary:** 3 wounds or 1 mortal, **Good:** 4 wounds or\
-              \ 2 mortals, **Amazing:** 6 wounds or 3 mortals.\n- **At rank 8 [Laying\
-              \ On Hands]**, a character becomes able to heal damage in others. The\
-              \ subject to be healed must be in physical contact with the character\
-              \ using this ability.\n\n---"
+            description: "By concentrating, a character using this skill can heal wounds or disease. The character can treat wounds or diseases, healing the subject a number of wound points based on the skill check result.\n\n### Wounds\n- **Ordinary:** 1 wound point\n- **Good:** 2 wound points\n- **Amazing:** 3 wound points\n\n### Disease\nFor disease, the following results apply:\n- **Ordinary:** reduce the degree of illness by one grade (from Good to Ordinary, for instance).\n- **Good:** reduce by two grades.\n- **Amazing:** reduce by three grades. \n\nDiseases reduced below Marginal are considered cured.\n\n### Timing\nPsionic healing imposes heavy strain on the body, so the skill can't be attempted more than once per hour, any attempt of using the skill more than once per hour will result in a level of exhaustion that cannot be recovered from until 24 hours have passed since the last attempt.\n\n### Rank Benefits\n- **Rank 4 [Treating Poison]**, a character may counteract the effect of poisons or drugs in his or her system before the end of their onset time, reducing the impact they may have. The degree of success acts as a bonus to the Constitution feat check required: **Ordinary:** –2 step bonus, **Good:** –3 step bonus, **Amazing:** –4 step bonus.\n- **Rank 6 [Healing Mortal Damage]**, a character becomes able to heal mortal damage. Skill check results change to: **Ordinary:** 2 wounds, **Good:** 3 wounds or 1 mortal, **Amazing:** 4 wounds or 2 mortals.\n- **Rank 8 [Improved Effect]**, a character's ability to heal improves further: **Ordinary:** 3 wounds or 1 mortal, **Good:** 4 wounds or 2 mortals, **Amazing:** 6 wounds or 3 mortals.\n- **Rank 8 [Laying On Hands]**, a character becomes able to heal damage in others. The subject to be healed must be in physical contact with the character using this ability.\n- **Rank 12 [Master Healer]**, a character reduces the strain of psionic healing, the skill can be attempted once every 10 minutes without causing exhaustion. Additionally, the character can double the number of mortals healed at the cost of 1 additional psionic energy per mortal healed and one point of exhaustion on both healer and subject."
         - es:
             name: Sanar
-            description: |-
-              Al concentrarse, un personaje puede curarse a sí mismo el daño por heridas o
-              una enfermedad. La cantidad de daño que puede curarse depende del resultado de
-              una tirada de habilidad:
-              - **Ordinario:** 1 punto de herida
-              - **Bueno:** 2 puntos de herida
-              - **Asombroso:** 3 puntos de herida
-
-              #### Enfermedad
-              Para las enfermedades, se aplican los siguientes resultados:
-              - **Ordinario:** reduce el grado de la enfermedad en un nivel (de Bueno a Ordinario, por ejemplo).
-              - **Bueno:** reduce en dos niveles.
-              - **Asombroso:** reduce en tres niveles.
-              Las enfermedades reducidas por debajo de Marginal se consideran curadas.
-
-              #### Tiempos
-              La curación psiónica requiere tiempo. Los resultados son inmediatos, pero la
-              reacción del cuerpo al uso de la habilidad dura una hora. Por esta razón, la
-              habilidad de sanar no se puede intentar más de una vez por hora, incluso si el
-              resultado de la tirada es un Fallo.
-
-              **Beneficios de Rango:**
-              - **Al rango 4 [Tratar Venenos]**, un personaje puede contrarrestar el efecto de venenos o drogas en su sistema antes de que finalice su tiempo de reacción, reduciendo el impacto que puedan tener. El grado de éxito actúa como una bonificación a la tirada de dote de Constitución requerida: **Ordinario:** bonificación de –2 pasos, **Bueno:** bonificación de –3 pasos, **Asombroso:** bonificación de –4 pasos.
-              - **Al rango 6 [Curar Daño Mortal]**, un personaje es capaz de curar el daño mortal. Los resultados de la tirada cambian a: **Ordinario:** 2 heridas, **Bueno:** 3 heridas o 1 mortal, **Asombroso:** 4 heridas o 2 mortales.
-              - **Al rango 8 [Efecto Mejorado]**, la capacidad de curación del personaje mejora aún más: **Ordinario:** 3 heridas o 1 mortal, **Bueno:** 4 heridas o 2 mortales, **Asombroso:** 6 heridas o 3 mortales.
-              - **Al rango 8 [Imposición de manos]**, un personaje se vuelve capaz de curar el daño en otros. El sujeto a ser curado debe estar en contacto físico con el personaje que utiliza esta habilidad.
-
-              ---
+            description: |
       intangibility:
         attribute: CON
         cost: 4
@@ -414,84 +203,15 @@ items:
         rank_benefits:
         - rank: 12
           title: Morph Control
+          extended_duration: true
         extended_duration: false
         localized:
         - en:
             name: Morph
-            description: "By using this skill, a character can alter his or her physical\
-              \ features so as\nto be disguised or to accomplish something otherwise\
-              \ impossible, such as\nsqueeze into a small hole, reach higher than\
-              \ his or her height normally\nallows, or slip loose of bonds.\n\nMorphing\
-              \ requires an entire round (4 phases) to complete, from the moment the\n\
-              skill is activated to the moment the alteration is finished. The character\
-              \ can\ndo nothing else while this process is taking place.\n\nThe initial\
-              \ skill check determines how long the morphed form lasts:\n- **Ordinary:**\
-              \ 1 round\n- **Good:** 2 rounds\n- **Amazing:** 3 rounds\n\nThereafter,\
-              \ a character can extend the duration by spending 1 psionic energy\n\
-              point per round (or other time unit as designated by the Gamemaster).\n\
-              \nA morphed body part retains its original characteristics; no game\
-              \ statistics\nchange, except for those directly related to the morphing.\
-              \ Morphing has no\neffect on a character's clothing or possessions.\n\
-              \n**Rank Benefits:** \n- **At rank 1 and 3**, select one of these forms:\n\
-              - **Elongate fingers:** add +0.5 meters to reach (for example, to get\
-              \ -1 step\nbonus to Manipulation-pickpocket skill checks).\n    - **Elongate\
-              \ arms:** add +1 meter to reach.\n    - **Elongate legs:** add +1 meter\
-              \ to height.\n- **At skill ranks 5 and 7**, choose one of these forms:\n\
-              - **Disguise:** alter facial features to hide identity (+2 step penalty\
-              \ to\nAwareness checks involving an attempt to recognize the character).\n\
-              \    - **Elongate arms and legs** simultaneously.\n- **Skeleton alterations:**\
-              \ alter entire body and bone construction to allow\npassage through\
-              \ small openings (as small as one-half meter wide).\n- **At skill ranks\
-              \ 10 and 12**, choose one of these forms:\n- **Improved disguise:**\
-              \ alter facial and body features to resemble a specific\nperson (+2\
-              \ step penalty to Awareness checks) or to completely hide identity\n\
-              (+4 step penalty).\n- **Lessen damage:** become so flexible and malleable\
-              \ as to reduce the effects\nof low-impact damage. A skill check determines\
-              \ how much damage is reduced (at\nno extra PP cost): **Ordinary:** d4,\
-              \ **Good:** d4+2, **Amazing:** d6+2.\n- **At rank 12**, the character\
-              \ can select one of these benefits:\n    - **Morph control:** activate\
-              \ any two forms simultaneously.\n\n---"
+            description: "By using this skill, a **character** can alter physical features to avoid recognition, impersonate, or achieve feats otherwise impossible (e.g., squeeze into a small hole, reach high places, or slip free of bonds).\n\nMorphing requires an entire round (4 phases) to complete. The character can do nothing else while this process is taking place.\n\nThe initial skill check determines how long the morphed form lasts:\n- **Ordinary:** 1 round\n- **Good:** 2 rounds\n- **Amazing:** 3 rounds\n\nA morphed body part retains its original characteristics; no game statistics change except those directly related to the morphing. Morphing has no effect on a character's clothing or possessions.\n\n### Rank Benefits\n#### Disguise (ranks 5, 7, 9, 12)\n**Rank 5** – Facial disguise: +2 step penalty to Awareness checks when trying to recognize the character.\n\n**Rank 7** – Limb‑length adaptation: alter limb length to aid impersonation.\n\n**Rank 9** – Body‑volume change: shrink or expand to fit unusually shaped spaces.\n\n**Rank 12** – Improved disguise: +4 step penalty, can mimic a specific person.\n\n#### Impersonation (ranks 5, 7, 9)\n**Rank 5** – Voice mimicry: copy another's speech patterns. -1 step bonus to Entertainment-Act checks.\n\n**Rank 7** – Mannerism replication: an additional -1 step bonus to Entertainment-Act checks due to the ability of freely replicating the subject's mannerisms.\n\n**Rank 9** – Full persona adoption: combine voice, mannerisms, and appearance for a convincing impersonation. Due to the ability to completely separate his mental state from the visible persona, the character gains an additional -1 step bonus to Interaction and Entertainment-Act checks.\n\n#### Mechanical Alteration (ranks 5, 7, 9, 12)\n**Rank 5** – Increase flexibility: +0.5 m reach for a specific limb.\n\n**Rank 7** – Reduce stun damage taken from blunt attacks and secondary damage by 1.\n\n**Rank 9** – Soft landing: halve damage from falling.\n\n**Rank 12** – Reduce stun damage taken from blunt attacks and secondary damage by 2.\n\n#### Small‑Space Passage (Ranks 5, 7, 9)\n**Rank 5** – Squeeze through cracks (up to 30 cm wide).\n\n**Rank 7** – Pass through tight spaces as if you have no bones up to 25cm diameter.\n\n**Rank 9** – Able to pass a arm through a 1 cm wide crack or space, allowing to pass the arm under a door and combine with elongate arms reach the lock from the inside.\n\n#### Reach & Height (Ranks 5, 7, 9)\n**Rank 5** – Elongate fingers: +0.5 m reach.\n\n**Rank 7** – Elongate arms: +1 m reach.\n\n**Rank 9** – Elongate legs: +1 m height.\n\n#### Contortion and Compression (Ranks 5, 7, 9)\n**Rank 5** – Fit into a container of similar \"volume\" as your body. The volume of an average human male can fit in a 50cm side cube with a limited degree of movement. \n\n**Rank 7** – Fit into a container of 3/4 the volume of your body, movement is not hindered. \n\n**Rank 9** – Fit into a container of 1/2 the volume of your body, movement is not hindered."
         - es:
             name: Metamorfosis
-            description: "Mediante el uso de esta habilidad, un personaje puede alterar\
-              \ sus rasgos\nfísicos para disfrazarse o para lograr algo que de otro\
-              \ modo sería imposible,\ncomo apretujarse en un agujero pequeño, llegar\
-              \ más alto de lo que su estatura\npermite normalmente o soltarse de\
-              \ unas ataduras.\n\nLa metamorfosis requiere un asalto entero (4 fases)\
-              \ para completarse, desde el\nmomento en que se activa la habilidad\
-              \ hasta el momento en que finaliza la\nalteración. El personaje no puede\
-              \ hacer nada más mientras se lleva a cabo este\nproceso.\n\nLa tirada\
-              \ de habilidad inicial determina cuánto tiempo dura la forma\nmetamorfoseada:\n\
-              - **Ordinario:** 1 asalto\n- **Bueno:** 2 asaltos\n- **Asombroso:**\
-              \ 3 asaltos\n\nA partir de entonces, el personaje puede ampliar la duración\
-              \ gastando 1 punto\nde energía psiónica por asalto (u otra unidad de\
-              \ tiempo designada por el\nDirector de Juego).\n\nUna parte del cuerpo\
-              \ metamorfoseada conserva sus características originales;\nno cambia\
-              \ ninguna estadística de juego, excepto las directamente relacionadas\n\
-              con la metamorfosis. La metamorfosis no tiene ningún efecto sobre la\
-              \ ropa o\nlas posesiones del personaje.\n\n**Beneficios de Rango:**\
-              \ \n- **A los rangos 1 y 3**, selecciona una de estas formas:\n- **Alargar\
-              \ dedos:** añade +0.5 metros al alcance (por ejemplo, para obtener\n\
-              una bonificación de -1 paso a las tiradas de la habilidad\nManipulación—robaperlar).\n\
-              \    - **Alargar brazos:** añade +1 metro al alcance.\n    - **Alargar\
-              \ piernas:** añade +1 metro a la altura.\n- **A los rangos de habilidad\
-              \ 5 y 7**, elige una de estas formas:\n- **Disfrazarse:** altera los\
-              \ rasgos faciales para ocultar la identidad\n(penalización de +2 pasos\
-              \ a las tiradas de Alerta que impliquen un intento de\nreconocer al\
-              \ personaje).\n    - **Alargar brazos y piernas** simultáneamente.\n\
-              - **Alteraciones del esqueleto:** altera todo el cuerpo y la estructura\
-              \ ósea\npara permitir el paso a través de aberturas pequeñas (tan pequeñas\
-              \ como medio\nmetro de ancho).\n- **A los rangos de habilidad 10 y 12**,\
-              \ elige una de estas formas:\n- **Disfraz mejorado:** altera los rasgos\
-              \ faciales y corporales para parecerse\na una persona específica (penalización\
-              \ de +2 pasos a la Alerta) o para ocultar\ncompletamente la identidad\
-              \ (penalización de +4 pasos).\n- **Reducir daño:** volverse tan flexible\
-              \ y maleable que reduzca los efectos\ndel daño de bajo impacto. Una\
-              \ tirada de habilidad determina cuánto daño se\nreduce (sin coste adicional\
-              \ de PP): **Ordinario:** d4, **Bueno:** d4+2,\n**Asombroso:** d6+2.\n\
-              - **Al rango 12**, el personaje puede seleccionar uno de estos beneficios:\n\
-              - **Control de metamorfosis:** activar dos formas cualesquiera\nsimultáneamente.\n\
-              \n---"
+            description: ""
       rejuvenate:
         attribute: CON
         cost: 3
@@ -509,8 +229,7 @@ items:
         - en:
             name: Rejuvenate
             description: |-
-              When using this skill, a character can offset fatigue or stun damage, or some
-              of each, that he or she has suffered. The skill does nothing to alleviate
+              When using this skill, a character can offset fatigue or stun damage, or some of each, that he or she has suffered. The skill does nothing to alleviate
               psionic energy loss.
 
               A successful skill check provides the character with a certain number of
@@ -525,39 +244,23 @@ items:
               reaction to the use of the skill lasts one hour. For this reason, the
               rejuvenate skill can't be attempted more than once per hour.
 
-              **Rank Benefits:**
-              - **At rank 4 [Improved Effect]**, the effect of a successful skill roll improves as follows: **Ordinary:** 4 points, **Good:** 6 points, **Amazing:** 8 points.
-              - **At rank 8 [Laying On Hands]**, a character becomes able to heal fatigue or stun damage in others. The subject to be healed must be in physical contact with the character using this ability.
-              - **At rank 12 [Two Recipients]**, a character using rejuvenate may affect two individuals with a single use of the skill. This can be on two other people or on the character and one other person. Each gains whatever benefit is determined by the Biokinesis-rejuvenate skill check.
+              ### Rank Benefits:
+
+              **Rank 3 [Improved Effect]** the effect of a successful skill roll improves as follows:
+              - **Ordinary:** 4 points
+              - **Good:** 6 points
+              - **Amazing:** 8 points
+
+              **Rank 3 [Treating Disease]** a character may counteract the effect of disease in his or her system. The result of the skill check determines how much the disease is reduced. The disease is reduced by one grade on **Good** success, and 2 grades on an **Amazing** success. An **Ordinary** success is not enough to help recover from the disease, but it eliminates all penalties the disease may be causing for a day. Only one successful check per day may be made to treat a disease.
+
+              **Rank 6 [Laying On Hands]** a character becomes able to heal fatigue or stun damage, as well as disease, in others. The subject to be healed must be in physical contact with the character using this ability.
+
+              **Rank 12 [Two Recipients]** a character using rejuvenate may affect two individuals with a single use of the skill. This can be on two other people or on the character and one other person. Each gains whatever benefit is determined by the Biokinesis-rejuvenate skill check.
 
               ---
         - es:
             name: Rejuvenecer
-            description: |-
-              Al usar esta habilidad, un personaje puede compensar la fatiga o el daño por
-              aturdimiento, o una parte de cada uno, que haya sufrido. La habilidad no hace
-              nada para aliviar la pérdida de energía psiónica.
-
-              Una tirada de habilidad de éxito proporciona al personaje un cierto número de
-              "puntos de rejuvenecimiento". Cuesta 2 de estos puntos restaurar 1 punto de
-              daño por fatiga y 1 de estos puntos para restaurar 1 punto de daño por
-              aturdimiento. En un éxito Ordinario, el personaje recibe 2 "puntos de
-              rejuvenecimiento"; en un éxito Bueno, 4 puntos; y en un éxito Asombroso, 6
-              puntos. El personaje puede usar estos puntos en cualquier combinación para
-              restaurar puntos de aturdimiento, puntos de fatiga o parte de cada uno. Los
-              "puntos de rejuvenecimiento" que no puedan usarse inmediatamente se perderán.
-
-              El rejuvenecimiento psiónico requiere tiempo. Los resultados son inmediatos,
-              pero la reacción del cuerpo al uso de la habilidad dura una hora. Por esta
-              razón, la habilidad de rejuvenecer no se puede intentar más de una vez por
-              hora.
-
-              **Beneficios de Rango:**
-              - **Al rango 4 [Efecto Mejorado]**, la eficacia de una tirada de habilidad exitosa mejora de la siguiente manera: **Ordinario:** 4 puntos, **Bueno:** 6 puntos, **Asombroso:** 8 puntos.
-              - **Al rango 8 [Imposición de manos]**, un personaje se vuelve capaz de curar la fatiga o el daño por aturdimiento en otros. El sujeto a ser curado debe estar en contacto físico con el personaje que utiliza esta habilidad.
-              - **Al rango 12 [Dos Destinatarios]**, un personaje que utilice rejuvenecer puede afectar a dos individuos con un solo uso de la habilidad. Esto puede ser en otras dos personas o en el personaje y otra persona. Cada uno gana el beneficio que determine la tirada de habilidad de bioquinesis-rejuvenecer.
-
-              ---
+            description: |
       clamber:
         attribute: CON
         cost: 2
@@ -593,37 +296,11 @@ items:
               reaching his or her destination.
 
               **Rank Benefits:**
-              - **At rank 4 [Increased Distance]**, the distance the user can travel while climbing or running across inverted surfaces is doubled.
-              - **At rank 8**, the distance is three times the base rate.
-              - **At rank 12**, the distance is four times the base rate.
-
-              ---
+              - **Rank 4 [Increased Distance]** the distance the user can travel while climbing or running across inverted surfaces is doubled.
+              - **Rank 8 [Increased Distance]** the distance is three times the base rate.
+              - **Rank 12 [Increased Distance]** the distance is four times the base rate.
         - es:
-            description: |-
-              En un pasado lejano, ciertos psiónicos t'sa desarrollaron la habilidad de
-              **trepado**, normalmente los que vivían en las regiones montañosas del planeta
-              de origen de los t'sa. Con ella, el t'sa psiónico (o un psiónico entrenado por
-              los t'sa) genera miles de minúsculas ventosas en las palmas de sus manos y en
-              las plantas de sus pies. El personaje puede entonces subir y bajar por
-              superficies casi verticales con facilidad, e incluso desplazarse por
-              superficies invertidas en distancias cortas. En las escarpadas montañas del
-              planeta t'sa, esto significaba a menudo la supervivencia.
-
-              El grado de éxito con esta habilidad determina el modificador de un intento de
-              **Atletismo—trepar** del psiónico. El psiónico obtiene una **bonificación de
-              –1, –2 ó –3 pasos**, dependiendo del grado de éxito (Ordinario, Bueno o
-              Asombroso). Además, si la distancia está dentro de la velocidad de paso del
-              usuario, el personaje puede correr por superficies invertidas, corriendo de
-              hecho por el techo. El personaje no puede detenerse ni cambiar de dirección
-              antes de recorrer toda la distancia sin caerse. Lo mismo ocurrirá si el
-              personaje no tiene nada a lo que agarrarse al llegar a su destino.
-
-              **Beneficios de Rango:**
-              - **Al rango 4 [Distancia Incrementada (Increased Distance)]**, la distancia que el usuario puede recorrer mientras trepa o corre por superficies invertidas se duplica.
-              - **Al rango 8**, la distancia es el triple de la velocidad base.
-              - **Al rango 12**, la distancia es cuatro veces la velocidad base al rango 12.
-
-              ---
+            description: |
             name: Trepado
       shatter:
         attribute: CON
@@ -631,12 +308,12 @@ items:
         url: /psionics/biokinesis/#shatter
         trained_only: false
         rank_benefits:
-        - rank: 4
-          title: Increased Effect
+        - rank: 6
+          title: Increased Quality
         - rank: 8
-          title: Increased Effect
+          title: Improved Destabilization
         - rank: 12
-          title: Increased Effect
+          title: Armor Degradation
         extended_duration: false
         localized:
         - en:
@@ -645,7 +322,7 @@ items:
               Weren history tells of a clan that used armor to conquer the other clans.
               Having fashioned plates of crude armor from boiled marrizhe hide, this clan
               was despised by the other clans—but they were also unstoppable. Then came a
-              great character—posthumously claimed by every other clan—who dueled the
+              great character—posthumously claimed by every other clan—who duelled the
               warlord of the armored clan for all his land, herds, and wives. In the midst
               of the duel, the mystery weren suddenly brought both fists down on his
               opponent's armored chest, and the leather plates shattered. At best an average
@@ -654,65 +331,25 @@ items:
               prizes.
 
               Weren warriors have long attempted to emulate that legendary fighter, though
-              the only successes have been by psionics-users gifted with Biokinesis. They
-              are able to direct bio-energy at solid surfaces—usually armor—in such a way
-              that the surface breaks. To use this ability, the weren psion must first
-              attempt a Biokinesis—shatter skill check. If the check is successful, the next
-              bare-fisted blow the weren lands inflicts damage to the opponent's armor, if
-              any, rather than than to the opponent. If the weren fails to strike armor
-              before the end of the next round, the effect dissipates, though the character
-              can try again.
+              the only successes have been by psionics‑users gifted with Biokinesis. They
+              are able to direct bio‑energy in a way that strenthens there claws, while deteriorate
+              the surfaces they hit, in such a way that the surface softens, deforms, or breaks.
 
-              If the shatter skill check yielded an Ordinary result, the armor he strikes
-              absorbs 1 fewer point of damage. On a Good result, the armor absorbs 2 fewer
-              points of damage. And on an Amazing result, the armor absorbs 3 fewer points
-              of damage. See Table G13: Object Armor in the Gamemaster Guide for information
-              on how well non-armor objects absorb damage.
+              To use this ability, the user must have some sort of cutting natural armor (e.g. claws, spurs, horns). If the check is successful, the character natural weapons get strengthened, and charged with bioenergy. This energy increases the damage dealt and on an attack result of amazing the armor of the target gets infected by bioenergy, temporarily compromising its integrity. Until the start of the next round the armor rolls include a reroll, taking the worst result. Only armors of ordinary toughness are affected by this power.
 
-              **Rank Benefits:**
-              - **At rank 4 [Increased Effect]**, this skill can only affect armor or objects of Ordinary toughness. At rank 4, the psion can affect armor or objects of Good toughness. At rank 8, the armor absorbs 2 fewer points of damage on an Ordinary success, 3 fewer on a Good result, and 4 fewer on an Amazing result.
-              - **At rank 8**, the armor absorbs 3 fewer points of damage on an Ordinary success, 4 fewer on a Good result, and 5 fewer on an Amazing result.
-              - **At rank 12**, the psion can affect objects of Amazing toughness.
+              Claw/Spur/Horn attacks are made while this power is active, inflict additional damage based on the check result:
+              - **Ordinary:** +1 damage
+              - **Good:** +2 damage
+              - **Amazing:** +3 damage
 
-              ---
+              ### Rank Benefits
+              **Rank 6 [Increased Quality]** claws/spurs/horns attacks are now considered good quality. 
+
+              **Rank 8 [Improved Destabilization]** From this onwards the good success on attacks are enough to destabilize an armor. This effect now works on good quality armors as well.
+
+              **Rank 12 [Armor Degradation]** On an amazing success the armor integrity is now so compromised that its toughness is also reduced, from Amazing to Good, from Good to Ordinary, Ordinary armor stop protecting until the effect ends.
         - es:
-            description: |-
-              La historia weren habla de un clan que utilizó la armadura para conquistar a
-              los demás clanes. Habiendo fabricado placas de armadura rudimentaria con piel
-              de marrizhe hervida, este clan era despreciado por los demás clanes, pero
-              también era imparable. Entonces llegó un gran personaje —reclamado
-              póstumamente por todos los demás clanes— que se batió en duelo con el señor de
-              la guerra del clan acorazado por todas sus tierras, rebaños y esposas. En
-              medio del duelo, el misterioso weren descargó de repente ambos puños sobre el
-              pecho acorazado de su oponente, y las placas de cuero se destrozaron. El señor
-              de la guerra, que en el mejor de los casos era un luchador mediocre sin su
-              armadura, sucumbió rápidamente, y el guerrero weren desapareció
-              misteriosamente, aunque no, por supuesto, sin reclamar sus premios.
-
-              Los guerreros weren han intentado durante mucho tiempo emular a aquel luchador
-              legendario, aunque los únicos éxitos han sido de usuarios de psiónica dotados
-              de Biocinesis. Son capaces de dirigir la bioenergía hacia superficies sólidas
-              —normalmente armaduras — de tal forma que la superficie se rompa. Para
-              utilizar esta capacidad, el psiónico weren debe intentar primero una tirada de
-              la especialidad de Biocinesis—destrozar. Si la tirada tiene éxito, el
-              siguiente golpe a puño descubierto (bare-fisted) que aseste el weren infligirá
-              daño a la armadura del oponente, si la tiene, en lugar de al oponente. Si el
-              weren no logra golpear la armadura antes del final del siguiente asalto, el
-              efecto se disipa, aunque el personaje puede volver a intentarlo.
-
-              Si la tirada de la habilidad destrozar arrojó un resultado Ordinario, la
-              armadura que golpee absorberá 1 punto menos de daño. En un resultado Bueno, la
-              armadura absorbe 2 puntos menos de daño. Y en un resultado Asombroso, la
-              armadura absorbe 3 puntos menos de daño. Consulta la Tabla G13: Armadura de
-              Objetos en la Guía del Director de Juego para obtener información sobre lo
-              bien que absorben el daño los objetos que no son armaduras.
-
-              **Beneficios de Rango:**
-              - **Al rango 4 [Efecto Incrementado (Increased Effect)]**, esta habilidad sólo puede afectar a armaduras u objetos de dureza Ordinaria. Al rango 4, el psiónico puede afectar a armaduras u objetos de dureza Buena. Con un éxito Ordinario, la armadura absorbe 2 puntos menos de daño, 3 menos con un resultado Bueno y 4 menos con un resultado Asombroso.
-              - **Al rango 8 [Efecto Incrementado (Increased Effect)]**, con un éxito Ordinario se absorben 3 puntos menos, 4 menos con un resultado Bueno y 5 menos con un resultado Asombroso.
-              - **Al rango 12 [Efecto Incrementado (Increased Effect)]**, el usuario puede afectar a objetos de dureza Asombrosa.
-
-              ---
+            description: |
             name: Destrozar
       transfer-damage:
         attribute: CON
