@@ -10,4 +10,10 @@
 - [x] Fix broken link references reported by Hugo.
 
 ## Content Review
-- [ ] Continue reviewing skills starting with **Security**.
+- [x] Skills review completed (all 34 broad skills).
+- [ ] Psionics review — **Biokinesis** done, working on **Telepathy**.
+  - [x] Biokinesis
+  - [ ] Telepathy (in progress)
+  - [ ] ESP
+  - [ ] Psychoportation
+  - [ ] Telekinesis

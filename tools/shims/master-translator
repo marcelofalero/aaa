@@ -1,0 +1,5 @@
+#!/bin/bash
+# Shim for master-translator — English → Spanish translation with terminology protection
+PROJECT_ROOT="@PROJECT_ROOT@"
+cd "$PROJECT_ROOT" || { echo "Error: project root not found at $PROJECT_ROOT" >&2; exit 1; }
+exec pipenv run python3 tools/scripts/master_translator.py "$@"

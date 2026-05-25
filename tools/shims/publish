@@ -1,0 +1,5 @@
+#!/bin/bash
+# Shim for publish — Full publication pipeline (translate → build → deploy)
+PROJECT_ROOT="@PROJECT_ROOT@"
+cd "$PROJECT_ROOT" || { echo "Error: project root not found at $PROJECT_ROOT" >&2; exit 1; }
+exec bash publish.sh "$@"

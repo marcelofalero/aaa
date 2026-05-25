@@ -22,10 +22,13 @@ The goal is to manually review all data sources (currently focusing on **Skills*
    - Run the linter: `python3 sources/scripts/data_linter.py sources/data_sources/<file>.yaml`
    - Run the formatter: `python3 sources/scripts/data_formatter.py sources/data_sources/<file>.yaml`
 
-## Tracking Progress
-As entries are reviewed, the following files serve as a comparison log:
-- `sources/source-skills.md`: Contains the raw text from the source pages.
-- `sources/processed-skills.md`: Contains the current YAML-formatted version for easy side-by-side review.
+## Review Workflow
+1. **Pull YAML to Markdown:** `python3 sources/skill_manager.py pull --overwrite`
+2. **Edit Markdown** in `sources/skills/<skill>/` (one file per broad skill + specialties)
+3. **Check drift:** `python3 sources/skill_manager.py diff -v`
+4. **Push approved changes:** `python3 sources/skill_manager.py push --commit`
+5. **Validate:** Run the linter: `python3 sources/scripts/data_linter.py sources/data_sources/skills.yaml`
+6. **Format:** `python3 sources/scripts/data_formatter.py skills`
 
 ## Current Status
 - **Acrobatics:** COMPLETED (EN and ES reviewed/fixed).
