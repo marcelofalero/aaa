@@ -1,6 +1,6 @@
 +++
-title = "Bioquinesis"
-description = "Manipula la biología y la fisiología del usuario o de otro ser vivo."
+title = "Biokinesis"
+description = "El uso de esta habilidad permite a un personaje aprovechar el poder de la mente para mejorar su rendimiento. Con solo la habilidad de base, un pers..."
 weight = 1
 attribute = "CON"
 category = "Psionics"
@@ -9,227 +9,302 @@ type = "skill"
 layout = "list"
 +++
 
-Esta amplia habilidad permite a un personaje manipular su propia biología y fisiología, o la biología y fisiología de otro ser vivo.
+El uso de esta habilidad permite a un personaje aprovechar el poder de la
+mente para mejorar su rendimiento. Con solo la habilidad de base, un personaje
+puede intentar usar cualquiera de las habilidades de especialidad
+relacionadas, excepto aquellas que no pueden usarse sin entrenamiento.
 
 ---
 
 ## Bioarmadura
-{{< specialty attr="CON" untrained="yes" cost="3" extended="true" >}}
+{{< specialty attr="CON" untrained="yes" cost="3" >}}}}
 
-Esta habilidad refuerza psiónicamente la piel de un personaje, ayudando a protegerlo del daño. Esta "armadura corporal" proporciona protección contra daños físicos y de energía, pero no protege contra ataques psiónicos. (Consulta Telepatía para conocer formas de evitar los ataques psiónicos).
+Esta habilidad refuerza psiónicamente la piel de Personaje, ayudando a protegerla del daño. Esta "armadura corporal" proporciona (LI d6/HI d6/En d4) puntos de protección contra daños, pero no protege contra ataques psiónicos. (Consulte Telepatía para conocer formas de evitar ataques psiónicos).
 
-La protección proporcionada por la bioarmadura se basa en la tirada de habilidad del usuario:
+El resultado de la prueba de habilidad determina la duración de la bioarmadura:
+- **Ordinario:** 10 minutos.
+- **Bueno:** 1 hora.
+- **Asombroso:** 6 horas.
 
-| Resultado | LI | HI | En |
-| :--- | :---: | :---: | :---: |
-| **Ordinario** | d4 | d4–1 | d4–1 |
-| **Bueno** | d6 | d6–1 | d6–1 |
-| **Asombroso** | d6+1 | d6 | d6 |
+El endurecimiento de la piel perjudica el movimiento del Personaje de la misma manera que una armadura desgastada con AP 1, pero se puede lograr una versión más ligera sacrificando 1 punto de armadura en cada categoría, esto elimina la penalización de armadura.
 
-**Efecto Incrementado:**
-- **Al rango 3**, la protección proporcionada por la bioarmadura aumenta en 1 punto (añade 1 a lo que se tire en la tabla anterior).
-- **Al rango 6**, este valor aumenta de nuevo en 1 punto (un total de +2).
-- **Al rango 9**, la armadura se trata como si tuviera Dureza Buena (Good toughness).
-- **Al rango 12**, el valor de la armadura aumenta una vez más en 1 punto (un total de +3).
+### Beneficios de Rango
+- **Rango 3 [Efecto aumentado]:** la protección brindada por la bioarmadura aumenta a (LI d8 / HI d6 / En d4+1).
+- **Rango 6 [Efecto aumentado]:** este valor aumenta aún más a (LI d8 / HI d6+1 / En d6)b.
+- **Rango 9 [Dureza aumentada]:** la armadura se trata como si tuviera dureza Bueno.
+- **Rango 12 [Efecto aumentado]:** el valor de la armadura aumenta nuevamente a (LI 2d4 / HI 2d4 / En d8).
 
 ---
 
 ## Bioarma
-{{< specialty attr="CON" untrained="yes" cost="3" extended="true" >}}
+{{< specialty attr="CON" untrained="yes" cost="3" extended="true" >}}}}
 
-Al emplear esta habilidad, un personaje genera un campo de energía cinética que emana de sus manos. Esta energía se manifiesta de una de dos maneras, que el jugador debe elegir en el momento en que el personaje realiza con éxito una prueba de habilidad: una vara o una espada.
+Al emplear esta habilidad, un Personaje genera un campo de energía cinética que emana de sus manos. Esta energía se manifiesta de dos maneras, que el jugador elegirá en el momento en que Personaje realice una prueba de habilidad exitosa: un bastón o una espada.
 
-El jugador puede alterar la forma de la vara para que sea un mazo, y la de la espada para que sea de un tipo particular (katana, sable, espada ancha, etc.). Estos cambios no afectan el daño que causará la bioarma ni le otorgan ninguna propiedad especial; son puramente cosméticos.
+El jugador puede alterar la forma del bastón a un garrote y la espada a un tipo particular de espada (katana, sable, espada ancha, etc.). Estos cambios no afectan el daño que causará el arma biológica ni le otorgan propiedades especiales; son sólo cosméticos.
 
-La principal diferencia entre las dos formas está en el tipo de daño que causan. Un personaje que solo desee noquear a un oponente haría mejor en crear una vara; aquellos que pretendan infligir un daño más serio probablemente crearán la espada.
+La principal diferencia entre las dos formas está en el tipo de daño que causan. Un Personaje que simplemente desee noquear a un oponente sería mejor si creara un bastón; aquellos que pretenden infligir un daño más grave a un oponente probablemente crearán la espada.
 
-| Forma | Daño Base | Tipo |
+| Formulario | Daño base | Tipo |
 | :--- | :--- | :---: |
-| **Vara** | d8s/d8+2s/d12+2s | LI/O |
+| **Personal** | d8s/d8+2s/d12+2s | LI/O |
 | **Espada** | d6w/d6+2w/d6m | LI/O |
 
-El personaje utiliza una de dos habilidades para blandir la bioarma: **Combate cuerpo a cuerpo (Melee Weapons)—contundente** para la vara o **Combate cuerpo a cuerpo (Melee Weapons)—filo** para la espada.
+El Personaje usa el **Combate cuerpo a cuerpo—Armas de energía** Especialidad para empuñar el arma biológica, independientemente de su forma.
 
-El resultado de la tirada de habilidad de la bioarma puede añadir una bonificación a la tirada de la habilidad de armas cuerpo a cuerpo correspondiente de la siguiente manera:
-- **Ordinario:** bonificación de –1 paso
-- **Bueno:** bonificación de –2 pasos
-- **Asombroso:** bonificación de –3 pasos
+El resultado de la prueba de habilidad con arma biológica puede agregar una bonificación a la prueba de habilidad Combate cuerpo a cuerpo—Armas de energía de la siguiente manera:
+- **Ordinario:** –1 Bonificación de paso
+- **Bueno:** –2 Bonificación de paso
+- **Asombroso:** –3 Bonificación de paso
 
-Esta bonificación dura hasta que el personaje decida no seguir manteniendo la bioarma.
-
-**Daño Incrementado:**
-- **Al rango 3**, el daño de la bioarma aumenta en +1.
-- **Al rango 6**, aumenta de nuevo (hasta un total de +2).
-- **Al rango 9**, aumenta otro +1 (hasta un total de +3).
-- **Al rango 12**, todos los ataques realizados con la bioarma se consideran para infligir **daño Bueno** (Good damage).
-
----
-
-## Trepado
-
-En un pasado lejano, ciertos psiónicos t'sa desarrollaron la habilidad de **trepado**, normalmente los que vivían en las regiones montañosas del planeta de origen de los t'sa. Con ella, el t'sa psiónico (o un psiónico entrenado por los t'sa) genera miles de minúsculas ventosas en las palmas de sus manos y en las plantas de sus pies. El personaje puede entonces subir y bajar por superficies casi verticales con facilidad, e incluso desplazarse por superficies invertidas en distancias cortas. En las escarpadas montañas del planeta t'sa, esto significaba a menudo la supervivencia.
-
-El grado de éxito con esta habilidad determina el modificador de un intento de **Atletismo—trepar** del psiónico. El psiónico obtiene una **bonificación de –1, –2 ó –3 pasos**, dependiendo del grado de éxito (Ordinario, Bueno o Asombroso). Además, si la distancia está dentro de la velocidad de paso del usuario, el personaje puede correr por superficies invertidas, corriendo de hecho por el techo. El personaje no puede detenerse ni cambiar de dirección antes de recorrer toda la distancia sin caerse. Lo mismo ocurrirá si el personaje no tiene nada a lo que agarrarse al llegar a su destino.
+Esta bonificación dura hasta que Personaje decida no mantener el arma biológica.
 
 **Beneficios de Rango:**
-- **Al rango 4 [Distancia Incrementada (Increased Distance)]**, la distancia que el usuario puede recorrer mientras trepa o corre por superficies invertidas se duplica.
-- **Al rango 8**, la distancia es el triple de la velocidad base.
-- **Al rango 12**, la distancia es cuatro veces la velocidad base al rango 12.
+- **Rango 3 [Daño aumentado]** el daño del arma biológica aumenta en +1.
+- **Rango 6 [Daño aumentado]** aumenta nuevamente (a un total de +2).
+- **Rango 9 [Daño aumentado]** se considera que todos los ataques realizados con el arma biológica causan **daño Bueno**.
+- **Rango 12 [Daño mejorado]** aumenta en otro +1 (hasta un total de +3).
 
 ---
 
 ## Control del Metabolismo
-{{< specialty attr="CON" untrained="yes" cost="2" extended="true" >}}
+{{< specialty attr="CON" untrained="yes" cost="2" extended="true" >}}}}
 
-A través del uso de esta habilidad, un personaje puede regular sus procesos metabólicos. Esto permite una supervivencia más prolongada sin comida ni agua, en climas extremos y en otras condiciones hostiles. El personaje también puede ralentizar sus funciones corporales hasta el punto de fingir que está muerto, si necesita engañar a otros en alguna situación.
+Mediante el uso de esta habilidad, un Personaje puede regular su metabolismo
+procesos. Esto permite una supervivencia más prolongada sin comida ni agua, en casos extremos.
+climas y en condiciones hostiles. El Personaje también puede ralentizar el movimiento corporal.
+funciona hasta el punto de fingir estar muerto, en caso de que necesite engañar
+otros en alguna situación.
 
-Se realiza una tirada cuando un personaje entra en un entorno hostil o si desea emplear esta habilidad de alguna otra manera.
+Se realiza una verificación cuando un Personaje ingresa a un entorno hostil o de otra manera
+quiere emplear esta habilidad.
 
-#### Entornos Hostiles
-En el caso de un entorno hostil, el resultado de una tirada de habilidad determina el tipo de protección que un personaje puede simular:
-- **Ordinario:** máscara de vacío
-- **Bueno:** traje de vacío (vacuum suit)
-- **Asombroso:** traje electrónico ligero (soft e-suit)
+#### Ambientes hostiles
+En el caso de un entorno hostil, el resultado de una prueba de habilidad determina
+El tipo de protección que un Personaje puede simular:
+- **Ordinario:** traje de vacío
+- **Bueno:** traje eléctrico suave
+- **Asombroso:** traje electrónico duro
 
-Después del uso inicial de la habilidad, el nivel de protección se puede mantener posteriormente a un coste de 1 punto de energía psiónica por hora.
+Al gastar un punto extra de energía psiónica, el Personaje puede tratar el uso de la habilidad como si tuviera un resultado un paso mejor. También puede gastar un punto extra de energía psiónica para tratar la duración extendida como un paso mejor.
 
-#### Impulso de adrenalina (Adrenal boost)
+#### Impulso suprarrenal
+El Personaje puede aumentar mentalmente la producción de adrenalina, dando un Tirada de Acción
+bonificación. 
+- **Ordinario:** +1 a la puntuación Tirada de Acción.
+- **Bueno:** +2 a la puntuación Tirada de Acción.
+- **Asombroso:** +3 a la puntuación Tirada de Acción.
 
-El personaje puede aumentar mentalmente la producción de adrenalina, otorgando una bonificación a las tiradas de acción.
-- **Ordinario:** +1 a la puntuación de la tirada de acción.
-- **Bueno:** +2 a la puntuación de la tirada de acción.
-- **Asombroso:** +3 a la puntuación de la tirada de acción.
+#### Liberación de endorfinas
+El Personaje puede estimular mentalmente la producción de endorfinas, aumentando
+su resistencia al dolor y Fatiga.
+- **Ordinario:** -1 comprobaciones de Bonificación de paso a Aguante.
+- **Bueno:** -2 comprobaciones de Bonificación de paso a Aguante.
+- **Asombroso:** -3 comprobaciones de Bonificación de paso a Aguante.
 
-Esta bonificación dura lo que reste del asalto en el que se activó el poder y todo el asalto siguiente. Un personaje puede extender la duración 1 asalto por cada punto de energía psiónica gastado para ello.
-
-#### Liberación de endorfinas (Endorphin release)
-
-El personaje puede estimular mentalmente la producción de endorfinas, aumentando su resistencia al dolor y la fatiga.
-- **Ordinario:** bonificación de –1 paso a las tiradas de Firmeza (Stamina).
-- **Bueno:** bonificación de –2 pasos a las tiradas de Firmeza (Stamina).
-- **Asombroso:** bonificación de –3 pasos a las tiradas de Firmeza (Stamina).
-
-La duración es de una hora; la duración puede extenderse una hora más por cada punto de energía psiónica adicional gastado para ello.
+> Solo se permite un uso de la habilidad al mismo tiempo (entornos hostiles, impulso suprarrenal o liberación de endorfinas).
 
 ---
 
 ## Sanar
-{{< specialty attr="CON" untrained="no" cost="4" >}}
+{{< specialty attr="CON" untrained="no" cost="4" >}}}}
 
-Al concentrarse, un personaje puede curarse a sí mismo el daño por heridas o una enfermedad. La cantidad de daño que puede curarse depende del resultado de una tirada de habilidad:
-- **Ordinario:** 1 punto de herida
-- **Bueno:** 2 puntos de herida
-- **Asombroso:** 3 puntos de herida
+Al concentrarse, un Personaje que utilice esta habilidad puede curar heridas o enfermedades. El Personaje puede tratar heridas o enfermedades, curando al sujeto una cantidad de puntos Herida según el resultado de la prueba de habilidad.
 
-#### Enfermedad
-Para las enfermedades, se aplican los siguientes resultados:
-- **Ordinario:** reduce el grado de la enfermedad en un nivel (de Bueno a Ordinario, por ejemplo).
-- **Bueno:** reduce en dos niveles.
-- **Asombroso:** reduce en tres niveles.
-Las enfermedades reducidas por debajo de Marginal se consideran curadas.
+### Heridas
+- **Ordinario:** 1 punto Herida
+- **Bueno:** 2 puntos Herida
+- **Asombroso:** 3 puntos Herida
 
-#### Tiempos
-La curación psiónica requiere tiempo. Los resultados son inmediatos, pero la reacción del cuerpo al uso de la habilidad dura una hora. Por esta razón, la habilidad de sanar no se puede intentar más de una vez por hora, incluso si el resultado de la tirada es un Fallo.
+### Enfermedad
+Para la enfermedad, se aplican los siguientes resultados:
+- **Ordinario:** reduce el grado de enfermedad en un grado (de Bueno a Ordinario, por ejemplo).
+- **Bueno:** reducir en dos grados.
+- **Asombroso:** reducir en tres grados.
 
-**Beneficios de Rango:**
-- **Al rango 4 [Tratar Venenos]**, un personaje puede contrarrestar el efecto de venenos o drogas en su sistema antes de que finalice su tiempo de reacción, reduciendo el impacto que puedan tener. El grado de éxito actúa como una bonificación a la tirada de dote de Constitución requerida: **Ordinario:** bonificación de –2 pasos, **Bueno:** bonificación de –3 pasos, **Asombroso:** bonificación de –4 pasos.
-- **Al rango 6 [Curar Daño Mortal]**, un personaje es capaz de curar el daño mortal. Los resultados de la tirada cambian a: **Ordinario:** 2 heridas, **Bueno:** 3 heridas o 1 mortal, **Asombroso:** 4 heridas o 2 mortales.
-- **Al rango 8 [Efecto Mejorado]**, la capacidad de curación del personaje mejora aún más: **Ordinario:** 3 heridas o 1 mortal, **Bueno:** 4 heridas o 2 mortales, **Asombroso:** 6 heridas o 3 mortales.
-- **Al rango 8 [Imposición de manos]**, un personaje se vuelve capaz de curar el daño en otros. El sujeto a ser curado debe estar en contacto físico con el personaje que utiliza esta habilidad.
+Las enfermedades reducidas por debajo del Marginal se consideran curadas.
 
----
+### Momento
+La curación psiónica impone una gran tensión en el cuerpo, por lo que la habilidad no se puede intentar más de una vez por hora; cualquier intento de usar la habilidad más de una vez por hora resultará en un nivel de agotamiento del que no se podrá recuperar hasta que hayan pasado 24 horas desde el último intento.
 
-## Intangibilidad
-{{< specialty attr="CON" untrained="no" cost="4" >}}
-
-Al reordenar mentalmente las moléculas de su cuerpo, el personaje puede concentrarse y volverse inmaterial, y así atravesar objetos sólidos. Esta habilidad afecta a la ropa del personaje (incluyendo la armadura ligera—cualquier armadura que no requiera la habilidad de Operación de Armaduras) y hasta un kilogramo por rango de habilidad de equipo adicional que se lleve en las manos.
-
-La intangibilidad dura una fase, más una fase adicional por cada punto de energía psiónica gastado para mantenerla.
-
-Un personaje intangible aparece como una imagen tridimensional de sí mismo, ligeramente menos vívida, que otros pueden ver pero no percibir de otra manera.
-
-El personaje puede moverse de forma normal, aunque atravesar objetos sólidos lo ralentiza a un ritmo de "nado suave" (easy swim). El personaje no puede atravesar materia viva (aunque sí materia orgánica—la madera de una puerta, por ejemplo).
-
-Mientras sea intangible, el personaje cae a un ritmo muy reducido: aproximadamente tres metros por fase. Un personaje podría saltar desde un edificio y aterrizar como si fuera una pluma. Caer 20 metros mientras se es inmaterial requiere ocho puntos de energía psiónica: uno para activarla y uno más por cada tres metros de distancia caída.
-
-**Beneficios de Rango:**
-- **Al rango 4 [Bonificación de Movimiento]**, el personaje puede moverse a través de objetos sólidos a **ritmo de caminata** (walk rate).
-- **Al rango 6 [Esquivar]**, el personaje puede "esquivar ataques" volviéndose intangible. Esto se logra de la misma manera que un desvío (parry) de reacción.
-- **Al rango 8 [Bonificación de Movimiento]**, el personaje puede moverse a través de objetos sólidos a **ritmo de carrera** (run rate).
-- **Al rango 12 [Intangibilidad Selectiva]**, el personaje puede elegir volver inmaterial solo una parte de su cuerpo. Hacerlo añade una penalización de +2 pasos a la tirada de habilidad, y si el personaje intenta tocar o manipular un objeto sólido mientras es solo parcialmente tangible, este modificador aumenta hasta +4.
+### Beneficios de Rango
+- **Rango 4 [Tratamiento del Veneno]**, un Personaje puede contrarrestar el efecto de los venenos o drogas en su sistema antes de que finalice su tiempo de aparición, reduciendo el impacto que puedan tener. El grado de éxito actúa como una bonificación a la prueba de dote de Constitución requerida: **Ordinario:** –2 Bonificación de paso, **Bueno:** –3 Bonificación de paso, **Asombroso:** –4 Bonificación de paso.
+- **Rango 6 [Curación del daño de Mortal]**, un Personaje puede curar el daño de Mortal. Los resultados de la prueba de habilidad cambian a: **Ordinario:** 2 heridas, **Bueno:** 3 heridas o 1 Mortal, **Asombroso:** 4 heridas o 2 mortales.
+- **Rango 8 [Efecto mejorado]**, la capacidad de curación de un Personaje mejora aún más: **Ordinario:** 3 heridas o 1 Mortal, **Bueno:** 4 heridas o 2 mortales, **Asombroso:** 6 heridas o 3 mortales.
+- **Rango 8 [Imposición de manos]**, un Personaje se vuelve capaz de curar el daño de otros. El sujeto a curar debe estar en contacto Físico con el Personaje usando esta habilidad.
+- **Rango 12 [Master Healer]**, un Personaje reduce la tensión de la curación psiónica, la habilidad se puede intentar una vez cada 10 minutos sin causar agotamiento. Además, el Personaje puede duplicar el número de mortales curados a costa de 1 energía psiónica adicional por cada Mortal curado y un punto de agotamiento tanto para el sanador como para el sujeto.
 
 ---
 
 ## Metamorfosis
-{{< specialty attr="CON" untrained="no" cost="4" >}}
+{{< specialty attr="CON" untrained="no" cost="4" >}}}}
 
-Mediante el uso de esta habilidad, un personaje puede alterar sus rasgos físicos para disfrazarse o para lograr algo que de otro modo sería imposible, como apretujarse en un agujero pequeño, llegar más alto de lo que su estatura permite normalmente o soltarse de unas ataduras.
+Al usar esta habilidad, un **Personaje** puede alterar las características de Físico para evitar el reconocimiento, hacerse pasar por alguien o lograr hazañas que de otro modo serían imposibles (por ejemplo, meterse en un pequeño agujero, alcanzar lugares altos o liberarse de ataduras).
 
-La metamorfosis requiere un asalto entero (4 fases) para completarse, desde el momento en que se activa la habilidad hasta el momento en que finaliza la alteración. El personaje no puede hacer nada más mientras se lleva a cabo este proceso.
+La transformación requiere una ronda completa (4 fases) para completarse. El Personaje no puede hacer nada más mientras se lleva a cabo este proceso.
 
-La tirada de habilidad inicial determina cuánto tiempo dura la forma metamorfoseada:
-- **Ordinario:** 1 asalto
-- **Bueno:** 2 asaltos
-- **Asombroso:** 3 asaltos
+La prueba de habilidad inicial determina cuánto dura la forma transformada:
+- **Ordinario:** 1 ronda
+- **Bueno:** 2 rondas
+- **Asombroso:** 3 rondas
 
-A partir de entonces, el personaje puede ampliar la duración gastando 1 punto de energía psiónica por asalto (u otra unidad de tiempo designada por el Director de Juego).
+Una parte del cuerpo transformada conserva sus características originales; No cambian las estadísticas del juego, excepto aquellas directamente relacionadas con la transformación. La transformación no tiene ningún efecto sobre la ropa o las posesiones de un Personaje.
 
-Una parte del cuerpo metamorfoseada conserva sus características originales; no cambia ninguna estadística de juego, excepto las directamente relacionadas con la metamorfosis. La metamorfosis no tiene ningún efecto sobre la ropa o las posesiones del personaje.
+### Beneficios de Rango
+#### Disfraz (Rangos 5, 7, 9, 12)
+**Rango 5** – Disfraz facial: +2 controles de Penalización de paso a Alerta al intentar reconocer el Personaje.
 
-**Beneficios de Rango:** 
-- **A los rangos 1 y 3**, selecciona una de estas formas:
-    - **Alargar dedos:** añade +0.5 metros al alcance (por ejemplo, para obtener una bonificación de -1 paso a las tiradas de la habilidad Manipulación—robaperlar).
-    - **Alargar brazos:** añade +1 metro al alcance.
-    - **Alargar piernas:** añade +1 metro a la altura.
-- **A los rangos de habilidad 5 y 7**, elige una de estas formas:
-    - **Disfrazarse:** altera los rasgos faciales para ocultar la identidad (penalización de +2 pasos a las tiradas de Alerta que impliquen un intento de reconocer al personaje).
-    - **Alargar brazos y piernas** simultáneamente.
-    - **Alteraciones del esqueleto:** altera todo el cuerpo y la estructura ósea para permitir el paso a través de aberturas pequeñas (tan pequeñas como medio metro de ancho).
-- **A los rangos de habilidad 10 y 12**, elige una de estas formas:
-    - **Disfraz mejorado:** altera los rasgos faciales y corporales para parecerse a una persona específica (penalización de +2 pasos a la Alerta) o para ocultar completamente la identidad (penalización de +4 pasos).
-    - **Reducir daño:** volverse tan flexible y maleable que reduzca los efectos del daño de bajo impacto. Una tirada de habilidad determina cuánto daño se reduce (sin coste adicional de PP): **Ordinario:** d4, **Bueno:** d4+2, **Asombroso:** d6+2.
-- **Al rango 12**, el personaje puede seleccionar uno de estos beneficios:
-    - **Control de metamorfosis:** activar dos formas cualesquiera simultáneamente.
+**Rango 7** – Adaptación de la longitud de las extremidades: modifique la longitud de las extremidades para facilitar la suplantación.
+
+**Rango 9** – Cambio de volumen corporal: encoge o expande para adaptarse a espacios con formas inusuales.
+
+**Rango 12** – Disfraz mejorado: +4 Penalización de paso, puede imitar a una persona específica.
+
+#### Suplantación (Rangos 5, 7, 9)
+**Rango 5** – Mimetismo de voz: copia los patrones de habla de otra persona. -1 Bonificación de paso a las comprobaciones de la Ley de Entretenimiento.
+
+**Rango 7** – Replicación de manierismos: -1 Bonificación de paso adicional a las pruebas de Ley de entretenimiento debido a la capacidad de replicar libremente los manierismos del sujeto.
+
+**Rango 9** – Adopción total de la persona: combina voz, gestos y apariencia para una personificación convincente. Debido a la capacidad de separar completamente su estado Mental de la persona visible, el Personaje gana -1 Bonificación de paso adicional a Interacción y controles de Ley de Entretenimiento.
+
+#### Alteración mecánica (Rangos 5, 7, 9, 12)
+**Rango 5** – Aumenta la flexibilidad: +0,5 m de alcance para una extremidad específica.
+
+**Rango 7** – Reduce en 1 el daño Aturdimiento recibido por ataques Arma contundente y el daño secundario.
+
+**Rango 9** – Aterrizaje suave: reduce a la mitad el daño por caída.
+
+**Rango 12** – Reduce el daño Aturdimiento recibido de los ataques Arma contundente y el daño secundario en 2.
+
+#### Pasaje para espacios pequeños (Rangos 5, 7, 9)
+**Rango 5** – Exprimir a través de grietas (hasta 30 cm de ancho).
+
+**Rango 7** – Pasa por espacios reducidos como si no tuvieras huesos de hasta 25 cm de diámetro.
+
+**Rango 9** – Capaz de pasar un brazo a través de una grieta o espacio de 1 cm de ancho, permitiendo pasar el brazo debajo de una puerta y combinado con brazos alargados llegar a la cerradura desde el interior.
+
+#### Alcance y altura (Rangos 5, 7, 9)
+**Rango 5** – Dedos alargados: +0,5 m de alcance.
+
+**Rango 7** – Brazos alargados: +1m de alcance.
+
+**Rango 9** – Patas alargadas: +1m de altura.
+
+#### Contorsión y Compresión (Rangos 5, 7, 9)
+**Rango 5** – Colóquelo en un recipiente de "volumen" similar al de su cuerpo. El volumen de un hombre humano promedio puede caber en un cubo de 50 cm de lado con un grado limitado de movimiento.
+
+**Rango 7** – Cabe en un recipiente de 3/4 del volumen de su cuerpo, no obstaculiza el movimiento.
+
+**Rango 9** – Cabe en un recipiente de la mitad del volumen de su cuerpo, no se obstaculiza el movimiento.
 
 ---
 
 ## Rejuvenecer
-{{< specialty attr="CON" untrained="yes" cost="3" >}}
+{{< specialty attr="CON" untrained="yes" cost="3" >}}}}
 
-Al usar esta habilidad, un personaje puede compensar la fatiga o el daño por aturdimiento, o una parte de cada uno, que haya sufrido. La habilidad no hace nada para aliviar la pérdida de energía psiónica.
+Al usar esta habilidad, un Personaje puede compensar el daño de Fatiga o Aturdimiento, o parte de cada uno, que haya sufrido. La habilidad no hace nada para aliviar
+Pérdida de energía psiónica.
 
-Una tirada de habilidad de éxito proporciona al personaje un cierto número de "puntos de rejuvenecimiento". Cuesta 2 de estos puntos restaurar 1 punto de daño por fatiga y 1 de estos puntos para restaurar 1 punto de daño por aturdimiento. En un éxito Ordinario, el personaje recibe 2 "puntos de rejuvenecimiento"; en un éxito Bueno, 4 puntos; y en un éxito Asombroso, 6 puntos. El personaje puede usar estos puntos en cualquier combinación para restaurar puntos de aturdimiento, puntos de fatiga o parte de cada uno. Los "puntos de rejuvenecimiento" que no puedan usarse inmediatamente se perderán.
+Una prueba de habilidad exitosa proporciona al Personaje una cierta cantidad de
+"puntos de rejuvenecimiento". Cuesta 2 de estos puntos restaurar 1 punto de
+Daño Fatiga, y 1 de estos puntos para restaurar 1 punto de daño Aturdimiento. en un
+Éxito de Ordinario, el Personaje recibe 2 "puntos de rejuvenecimiento"; en un Bueno
+éxito, 4 puntos; y con un éxito Asombroso, 6 puntos. El Personaje puede utilizar
+estos puntos en cualquier combinación para restaurar puntos Aturdimiento, puntos Fatiga o
+algo de cada uno. Los "puntos de rejuvenecimiento" que no se pueden utilizar inmediatamente se pierden.
 
-El rejuvenecimiento psiónico requiere tiempo. Los resultados son inmediatos, pero la reacción del cuerpo al uso de la habilidad dura una hora. Por esta razón, la habilidad de rejuvenecer no se puede intentar más de una vez por hora.
+El rejuvenecimiento psiónico requiere tiempo. Los resultados son inmediatos, pero el cuerpo
+La reacción al uso de la habilidad dura una hora. Por esta razón, el
+La habilidad de rejuvenecer no se puede intentar más de una vez por hora.
+
+### Beneficios de Rango:
+
+**Rango 3 [Efecto mejorado]** el efecto de una tirada de habilidad exitosa mejora de la siguiente manera:
+- **Ordinario:** 4 puntos
+- **Bueno:** 6 puntos
+- **Asombroso:** 8 puntos
+
+**Rango 3 [Tratamiento de enfermedades]** un Personaje puede contrarrestar el efecto de la enfermedad en su sistema. El resultado de la prueba de habilidad determina cuánto se reduce la enfermedad. La enfermedad se reduce en un grado si se logra **Bueno** y en 2 grados si se logra **Asombroso**. Un éxito **Ordinario** no es suficiente para ayudar a recuperarse de la enfermedad, pero elimina todas las penalizaciones que la enfermedad pueda estar causando durante un día. Sólo se podrá realizar un control exitoso por día para tratar una enfermedad.
+
+**Rango 6 [Imposición de manos]** un Personaje se vuelve capaz de curar daños Fatiga o Aturdimiento, así como enfermedades, en otros. El sujeto a curar debe estar en contacto Físico con el Personaje usando esta habilidad.
+
+**Rango 12 [Dos destinatarios]** un Personaje que usa rejuvenecer puede afectar a dos personas con un solo uso de la habilidad. Esto puede ser en dos personas Otros o en Personaje y una persona Otros. Cada uno obtiene el beneficio que determine la prueba de habilidad de rejuvenecimiento de Biokinesis.
+
+---
+
+---
+
+## Trepado
+{{< specialty attr="CON" untrained="yes" cost="2" extended="true" >}}}}
+
+En el pasado lejano, ciertos t'sa psions desarrollaron la **trepa**
+habilidad, generalmente aquellos que habitaban en las regiones montañosas de los t'sa
+mundo natal. Con él, el t'sa psiónico (o un psion entrenado por t'sa) genera
+miles de pequeñas ventosas en las palmas de sus manos y en las plantas de sus
+sus pies. Luego, el Personaje puede moverse hacia arriba y hacia abajo en superficies casi verticales.
+con facilidad e incluso puede moverse a través de superficies invertidas en distancias cortas. en
+En las escarpadas montañas del mundo natal de los t'sa, esto a menudo significaba supervivencia.
+
+El grado de éxito con esta habilidad determina el modificador de la habilidad de un psion.
+**Atletismo—intento de escalada**. El psion gana un **–1, –2 o –3 Bonificación de paso**,
+dependiendo del grado de éxito (Ordinario, Bueno o Asombroso). Además, si
+la distancia está dentro de la velocidad de caminata del usuario, el Personaje puede cruzar
+superficies invertidas, recorriendo efectivamente el techo. El Personaje
+No puede detenerse ni cambiar de dirección antes de recorrer la distancia completa sin
+cayendo. Lo mismo ocurrirá si el Personaje no tiene nada a qué agarrarse
+llegando a su destino.
 
 **Beneficios de Rango:**
-- **Al rango 4 [Efecto Mejorado]**, la eficacia de una tirada de habilidad exitosa mejora de la siguiente manera: **Ordinario:** 4 puntos, **Bueno:** 6 puntos, **Asombroso:** 8 puntos.
-- **Al rango 8 [Imposición de manos]**, un personaje se vuelve capaz de curar la fatiga o el daño por aturdimiento en otros. El sujeto a ser curado debe estar en contacto físico con el personaje que utiliza esta habilidad.
-- **Al rango 12 [Dos Destinatarios]**, un personaje que utilice rejuvenecer puede afectar a dos individuos con un solo uso de la habilidad. Esto puede ser en otras dos personas o en el personaje y otra persona. Cada uno gana el beneficio que determine la tirada de habilidad de bioquinesis-rejuvenecer.
+- **Rango 4 [Distancia aumentada]** se duplica la distancia que el usuario puede recorrer mientras trepa o corre por superficies invertidas.
+- **Rango 8 [Distancia aumentada]** la distancia es tres veces la tarifa base.
+- **Rango 12 [Distancia aumentada]** la distancia es cuatro veces la tarifa base.
 
 ---
 
 ## Destrozar
+{{< specialty attr="CON" untrained="yes" cost="3" >}}}}
 
-La historia weren habla de un clan que utilizó la armadura para conquistar a los demás clanes. Habiendo fabricado placas de armadura rudimentaria con piel de marrizhe hervida, este clan era despreciado por los demás clanes, pero también era imparable. Entonces llegó un gran personaje —reclamado póstumamente por todos los demás clanes— que se batió en duelo con el señor de la guerra del clan acorazado por todas sus tierras, rebaños y esposas. En medio del duelo, el misterioso weren descargó de repente ambos puños sobre el pecho acorazado de su oponente, y las placas de cuero se destrozaron. El señor de la guerra, que en el mejor de los casos era un luchador mediocre sin su armadura, sucumbió rápidamente, y el guerrero weren desapareció misteriosamente, aunque no, por supuesto, sin reclamar sus premios.
+La historia de Weren habla de un clan que usó armaduras para conquistar a los clanes Otros.
+Habiendo fabricado placas de armadura tosca con piel de marrizhe hervida, este clan
+Fue despreciado por los clanes Otros, pero también eran imparables. Luego vino un
+gran Personaje, reclamado póstumamente por cada clan Otros, que se batió en duelo
+Señor de la guerra del clan acorazado para todas sus tierras, rebaños y esposas. en medio
+del duelo, el misterio de repente cayó con ambos puños sobre su
+pecho blindado del oponente y las placas de cuero se hicieron añicos. En el mejor de los casos, un promedio
+guerrero sin su armadura, el señor de la guerra sucumbió rápidamente, y los hombres
+guerrero desapareció misteriosamente, aunque no, por supuesto, sin reclamar su
+premios.
 
-Los guerreros weren han intentado durante mucho tiempo emular a aquel luchador legendario, aunque los únicos éxitos han sido de usuarios de psiónica dotados de Bioquinesis. Son capaces de dirigir la bioenergía hacia superficies sólidas —normalmente armaduras — de tal forma que la superficie se rompa. Para utilizar esta capacidad, el psiónico weren debe intentar primero una tirada de la especialidad de Bioquinesis—destrozar. Si la tirada tiene éxito, el siguiente golpe a puño descubierto (bare-fisted) que aseste el weren infligirá daño a la armadura del oponente, si la tiene, en lugar de al oponente. Si el weren no logra golpear la armadura antes del final del siguiente asalto, el efecto se disipa, aunque el personaje puede volver a intentarlo.
+Los guerreros Weren han intentado durante mucho tiempo emular a ese luchador legendario, aunque
+los únicos Éxitos han sido realizados por usuarios de psiónica dotados de Biokinesis. ellos
+son capaces de dirigir la bioenergía de una manera que fortalece las garras, mientras se deterioran
+las superficies que golpean, de tal manera que la superficie se ablanda, se deforma o se rompe.
 
-Si la tirada de la habilidad destrozar arrojó un resultado Ordinario, la armadura que golpee absorberá 1 punto menos de daño. En un resultado Bueno, la armadura absorbe 2 puntos menos de daño. Y en un resultado Asombroso, la armadura absorbe 3 puntos menos de daño. Consulta la Tabla G13: Armadura de Objetos en la Guía del Director de Juego para obtener información sobre lo bien que absorben el daño los objetos que no son armaduras.
+Para utilizar esta habilidad, el usuario debe tener algún tipo de armadura natural cortante (por ejemplo, garras, espuelas, cuernos). Si la prueba tiene éxito, las armas naturales Personaje se fortalecen y se cargan con bioenergía. Esta energía aumenta el daño infligido y, tras un ataque de Asombroso, la armadura del objetivo se infecta con bioenergía, comprometiendo temporalmente su integridad. Hasta el inicio de la siguiente ronda, las tiradas de armadura incluyen una repetición, obteniendo el peor resultado. Sólo las armaduras de dureza Ordinario se ven afectadas por este poder.
 
-**Beneficios de Rango:**
-- **Al rango 4 [Efecto Incrementado]**, esta habilidad sólo puede afectar a armaduras u objetos de dureza Ordinaria. Al rango 4, el psiónico puede afectar a armaduras u objetos de dureza Buena. Al rango 8, la armadura absorbe 2 puntos menos de daño con un éxito Ordinario, 3 menos con un resultado Bueno y 4 menos con un resultado Asombroso.
-- **Al rango 8**, la armadura absorbe 3 puntos menos de daño con un éxito Ordinario, 4 menos con un resultado Bueno y 5 menos con un resultado Asombroso.
-- **Al rango 12**, el psiónico puede afectar a objetos de dureza Asombrosa.
+Los ataques de garra/espuela/cuerno se realizan mientras este poder está activo e infligen daño adicional según el resultado de la prueba:
+- **Ordinario:** +1 daño
+- **Bueno:** +2 de daño
+- **Asombroso:** +3 de daño
+
+### Beneficios de Rango
+**Rango 6 [Calidad aumentada]** Los ataques de garras, espuelas y cuernos ahora se consideran de calidad Bueno.
+
+**Rango 8 [Desestabilización mejorada]** A partir de ahora, el éxito de los ataques de Bueno es suficiente para desestabilizar una armadura. Este efecto ahora también funciona en armaduras de calidad Bueno.
+
+**Rango 12 [Degradación de armadura]** Con un éxito de Asombroso, la integridad de la armadura ahora está tan comprometida que su dureza también se reduce, de Asombroso a Bueno, de Bueno a Ordinario, la armadura Ordinario deja de proteger hasta que finaliza el efecto.
 
 ---
 
 ## Transferir Daño
-{{< specialty attr="CON" untrained="yes" cost="2" >}}
+{{< specialty attr="CON" untrained="yes" cost="2" >}}}}
 
-Al imponer las manos sobre otro personaje y realizar con éxito una tirada de habilidad, el psiónico alivia el daño o la enfermedad de ese personaje absorbiéndolos.
+Al imponer las manos sobre otro personaje y realizar con éxito una tirada de
+habilidad, el psiónico alivia el daño o la enfermedad de ese personaje
+absorbiéndolos.
 
-El daño que se puede absorber está ligado al resultado de una tirada de habilidad:
+El daño que se puede absorber está ligado al resultado de una tirada de
+habilidad:
 
 | Resultado | Daño Absorbido | Enfermedad Reducida |
 | :--- | :--- | :--- |
@@ -238,8 +313,42 @@ El daño que se puede absorber está ligado al resultado de una tirada de habili
 | **Bueno** | El personaje absorbe 2 heridas o 1 mortal. | Reduce la enfermedad del paciente en dos grados, transfiriendo la dolencia al psiónico. |
 | **Asombroso** | El personaje absorbe 3 heridas o 1 mortal. | Transfiere cualquier enfermedad del paciente al psiónico. |
 
-Una vez que el personaje absorbe el daño o la enfermedad, debe utilizar la especialidad de **Bioquinesis—sanar**, curarse de forma natural o recibir atención médica o psiónica para aliviar el daño o curar la enfermedad.
+Una vez que el personaje absorbe el daño o la enfermedad, debe utilizar la
+especialidad de **Bioquinesis—sanar**, curarse de forma natural o recibir
+atención médica o psiónica para aliviar el daño o curar la enfermedad.
 
 **Beneficios de Rango:**
 - **Al rango 6 [Desplazar Daño (Displace Damage)]**, el personaje psiónico puede transferir el daño a un personaje diferente, que también deba estar en contacto físico con el psiónico y que deba estar dispuesto a recibir el daño. Cualquier intento de transferir el daño a una criatura que no desee conscientemente aceptar el daño (como un personaje hostil o uno inconsciente) hace que el psiónico reciba el daño, como es normal.
 - **Al rango 12 [Transferencia Involuntaria (Unwilling Transfer)]**, el personaje puede transferir el daño a un personaje involuntario. El psiónico debe estar tocando a ambos personajes. Ambos personajes deben estar vivos tras activar la habilidad. El personaje "donante" será sanado de una cantidad de puntos de daño determinados por la tirada de habilidad de bioquinesis-transferir daño. Los puntos de daño se aplican entonces al receptor involuntario. **Ten en cuenta que este beneficio no se recibe si el psiónico lleva puesta una armadura.**
+
+---
+
+## Sintonía sensorial
+{{< specialty attr="CON" untrained="yes" cost="3" extended="true" >}}}}
+
+Al remodelar psiónicamente sus órganos visuales y reescribir las vías neuronales de la corteza visual, el Personaje puede cambiar su visión a través de diferentes bandas del espectro electromagnético y mapear entornos estructurales a través de firmas biológicas.
+
+Para activar este poder, el Personaje realiza una prueba de habilidad. Mientras dure el poder, el Personaje gana **visión en condiciones de poca luz** (equivalente al *tapetum lucidum* de un felino), lo que les permite ver en una oscuridad casi total como si fuera el crepúsculo. Además, el Personaje recibe un Bonificación de paso en todas las comprobaciones Alerta-Percepción que involucran la vista (normal o aumentada) según el nivel de éxito:
+
+* **Éxito de Ordinario:** Otorga un -1 Bonificación de paso.
+* **Éxito de Bueno:** Otorga un -2 Bonificación de paso.
+* **Éxito de Asombroso:** Otorga un -3 Bonificación de paso.
+
+**Efectos secundarios fisiológicos:** La activación de este poder provoca cambios biológicos visibles, a menudo perturbadores. Como mínimo, las pupilas del Personaje se dilatan por completo y una membrana reflectante cubre el iris, lo que hace que los ojos brillen con la luz ambiental. Los modos específicos (ver a continuación) pueden hacer que los ojos se vuelvan facetados, multilentes o que se abran fosas sensoriales en El Rostro, lo que puede afectar las interacciones de Social a discreción de Director de Juego.
+
+**Limitación operativa:** Solo se puede activar un modo de visión adicional en un momento dado. La biología ocular cambiante es mutuamente excluyente; Si los ojos están actualmente modificados para la detección de hoyos por infrarrojos, no pueden utilizar simultáneamente la estructura compuesta como los del camarón mantis.  El cambio entre modos activos requiere una nueva activación de la alimentación.
+
+Navegar mientras se escanea activamente a través de barreras sólidas ralentiza el Personaje a la velocidad de "nado fácil".
+
+**Beneficios de Rango:**
+
+* **En Rango 3 [Detección de hoyos por infrarrojos]**, modelado a partir de los hoyos reales de las víboras, el Personaje integra imágenes térmicas en su campo visual. Es posible que se abran visiblemente fosas especializadas sensibles al calor cerca de los conductos lagrimales o las sienes. El Personaje puede rastrear firmas de calor, detectar huellas térmicas y ver objetivos vivos a través de barreras de baja densidad (como paredes delgadas o follaje).
+
+* **En Rango 6 [Resolución Foveal]**, utilizando la estructura de fóvea dual y la anatomía profunda que se encuentran en aves rapaces como las águilas, los ojos del Personaje funcionan como un telescopio telescópico integrado. El Personaje ignora el primer +1 Penalización de paso para alcance (Medio o Largo). Este beneficio **no** se acumula con telescopios o binoculares. Además, la claridad de alta resolución permite al Personaje detectar microexpresiones involuntarias, otorgando un -1 Bonificación de paso a Alerta o Interacción en las comprobaciones realizadas para discernir mentiras o estados emocionales. Y comprobaciones Investigar-Search.
+
+* **En Rango 8 [Wide-Spectrum Sensorium]**, replicando los ojos avanzados del camarón mantis, los ojos del Personaje se vuelven visiblemente facetados y compuestos. Pueden percibir simultáneamente luz polarizada, radiación ultravioleta y emisiones electromagnéticas activas (ondas de radio y frecuencias de sensores). Esto les permite "ver" transmisores activos, como equipos de radio, sensores activos.
+
+* **En Rango 12 [Integración Cortical]**, el Personaje es capaz de transformar perfectamente estos órganos visuales haciendo imposible notarlos a simple vista, eliminando cualquier penalización de Social. Además, el Personaje puede cambiar entre modos como una acción.
+
+---
+

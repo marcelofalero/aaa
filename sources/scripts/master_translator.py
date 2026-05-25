@@ -180,22 +180,31 @@ def main():
     mapping = load_mapping()
     print(f"Loaded {len(mapping)} terminology rules.")
     
-    print(f"Loading {SKILLS_YAML}...")
-    with open(SKILLS_YAML, 'r', encoding='utf-8') as f:
-        data = ryaml.load(f)
+    yaml_files = [
+        'sources/data_sources/skills.yaml',
+        'sources/data_sources/psionics.yaml'
+    ]
     
     translator = GoogleTranslator(source='en', target='es')
-    processed_count = [0]
     
-    print("Starting translation process...")
-    process_node(data, translator, mapping, processed_count)
-    
-    print(f"Processed {processed_count[0]} entries.")
-    
-    print(f"Saving to {OUTPUT_YAML}...")
-    with open(OUTPUT_YAML, 'w', encoding='utf-8') as f:
-        ryaml.dump(data, f)
-    
+    for yaml_path in yaml_files:
+        if not os.path.exists(yaml_path):
+            print(f"Warning: {yaml_path} not found.")
+            continue
+            
+        print(f"Loading {yaml_path}...")
+        with open(yaml_path, 'r', encoding='utf-8') as f:
+            data = ryaml.load(f)
+            
+        processed_count = [0]
+        print(f"Starting translation process for {yaml_path}...")
+        process_node(data, translator, mapping, processed_count)
+        print(f"Processed {processed_count[0]} entries.")
+        
+        print(f"Saving to {yaml_path}...")
+        with open(yaml_path, 'w', encoding='utf-8') as f:
+            ryaml.dump(data, f)
+            
     print("Done!")
 
 if __name__ == "__main__":
