@@ -85,16 +85,72 @@ def cmd_push(args):
         folder_name = broad_folder.name
         broad_key = REVERSE_MAPPING.get(folder_name, folder_name)
         
+        if broad_key not in data['items']:
+            data['items'][broad_key] = {
+                'localized': [
+                    {'en': {'name': folder_name, 'description': ''}},
+                    {'es': {'name': '', 'description': ''}}
+                ],
+                'items': {}
+            }
+            print(f"[NEW BROAD] {broad_key}")
+            changes += 1
+
+        # Track active specialty stem names on disk
+        active_specs = set()
+        for p_file in sorted(broad_folder.glob("*.md")):
+            name = p_file.stem
+            if not name.startswith('_'):
+                active_specs.add(name)
+
+        # 1. Delete specialties in YAML that are missing from disk
+        if 'items' not in data['items'][broad_key]:
+            data['items'][broad_key]['items'] = {}
+            
+        yaml_specs = list(data['items'][broad_key]['items'].keys())
+        for spec_key in yaml_specs:
+            if spec_key not in active_specs:
+                print(f"[DELETE SPEC] {broad_key}/{spec_key}")
+                del data['items'][broad_key]['items'][spec_key]
+                changes += 1
+
+        # 2. Process all markdown files on disk
         for p_file in sorted(broad_folder.glob("*.md")):
             name = p_file.stem
             metadata, raw_desc = parse_file(p_file)
             
             if name.startswith('_'):
-                if broad_key not in data['items']: continue
                 target = data['items'][broad_key]
             else:
-                if broad_key not in data['items'] or 'items' not in data['items'][broad_key]: continue
-                if name not in data['items'][broad_key]['items']: continue
+                # If it's a new specialty, initialize it in YAML first
+                if name not in data['items'][broad_key]['items']:
+                    new_spec = {
+                        'attribute': metadata.get('attribute', data['items'][broad_key].get('attribute', 'WIL')),
+                        'cost': int(metadata.get('cost', 3)),
+                        'url': metadata.get('url', f"/psionics/{folder_name}/#{name}"),
+                        'trained_only': bool(metadata.get('trained_only', False)),
+                        'localized': [
+                            {'en': {
+                                'name': metadata.get('name', name.replace('-', ' ').title()),
+                                'description': ''
+                            }},
+                            {'es': {
+                                'name': '',
+                                'description': ''
+                            }}
+                        ]
+                    }
+                    if 'rank_benefits' in metadata:
+                        new_spec['rank_benefits'] = metadata['rank_benefits']
+                    if 'extended_duration' in metadata:
+                        new_spec['extended_duration'] = bool(metadata['extended_duration'])
+                    if 'alien_only' in metadata:
+                        new_spec['alien_only'] = bool(metadata['alien_only'])
+                        
+                    data['items'][broad_key]['items'][name] = new_spec
+                    print(f"[NEW SPEC] {broad_key}/{name}")
+                    changes += 1
+                
                 target = data['items'][broad_key]['items'][name]
 
             # Update Metadata (All keys except 'name' and 'localized')

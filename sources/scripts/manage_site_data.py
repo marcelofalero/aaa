@@ -372,6 +372,48 @@ def process_psionics(psionics_list, mapping):
             discipline_entries.append(broad_entry)
             search_groups[d_title] = powers_search
             
+            # Generate the Markdown file for the Hugo site content
+            slug = (d.get('id') or d_title.lower()).lower()
+            out_dir = f'site/content/psionics/{slug}'
+            os.makedirs(out_dir, exist_ok=True)
+            
+            suffix = '.es.md' if lang == 'es' else '.md'
+            d_desc = translate_field_robust(d, 'description', lang, mapping)
+            d_clean_desc = d_desc.replace('\n', ' ').replace('"', '\\"') if d_desc else ""
+            if len(d_clean_desc) > 150:
+                d_clean_desc = d_clean_desc[:147] + "..."
+                
+            weights = {'biokinesis': 1, 'esp': 2, 'psychoportation': 3, 'telekinesis': 4, 'telepathy': 5}
+            weight = weights.get(slug, 1)
+            
+            with open(os.path.join(out_dir, '_index' + suffix), 'w', encoding='utf-8') as f:
+                f.write('+++\n')
+                f.write(f'title = "{d_title}"\n')
+                f.write(f'description = "{d_clean_desc}"\n')
+                f.write(f'weight = {weight}\n')
+                f.write(f'attribute = "{d_attr}"\n')
+                f.write('category = "Psionics"\n')
+                f.write(f'untrained = {"true" if not d.get("trained_only", False) else "false"}\n')
+                f.write('type = "skill"\n')
+                f.write('layout = "list"\n')
+                f.write('+++\n\n')
+                f.write(f'{d_desc}\n\n')
+                f.write('---\n\n')
+                
+                for p in to_list(d.get('items', [])):
+                    p_title = translate_field_robust(p, 'name', lang, mapping) or translate_field_robust(p, 'power', lang, mapping)
+                    p_attr = translate_field(p.get('attribute', d_attr), None, mapping, lang)
+                    p_cost = p.get('cost', 5)
+                    p_untrained = 'yes' if not p.get('trained_only', False) else 'no'
+                    p_desc = translate_field_robust(p, 'description', lang, mapping)
+                    f.write(f'## {p_title}\n')
+                    f.write(f'{{{{< specialty attr="{p_attr}" untrained="{p_untrained}" cost="{p_cost}"')
+                    if p.get('extended_duration', False):
+                        f.write(' extended="true"')
+                    f.write(' >}}}}\n\n')
+                    f.write(f'{p_desc}\n\n')
+                    f.write('---\n\n')
+            
         # Nested Table Data
         table_data = {
             "fields": fields,
