@@ -7,7 +7,6 @@ name: Adaptability
 ---
 
 This specialty improves a character’s ability to adapt to alien environments. The character is resourceful enough to grasp unknown survival mechanics through observation and study.
-
 ### Mastering Alien Environments
 A character can perform a **Survival—Adaptability** challenge, spend studying the environment (one check per day).
 - **Initial Success:** Allows the character to use their **Survival Training** specialty in the alien environment, but with an **additional +5 step penalty**.

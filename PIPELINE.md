@@ -59,8 +59,6 @@ pipenv run python3 tools/data_manager.py skill push --commit
 
 | Domain | Command | YAML Source | Review Directory |
 |--------|---------|-------------|------------------|
-| Domain | Command | YAML Source | Review Directory |
-|--------|---------|-------------|------------------|
 | Skill | `data-manager skill ...` | `sources/data_sources/skills.yaml` | `sources/skills/` (34 broad skills) |
 | Psionics | `data-manager psionics ...` | `sources/data_sources/psionics.yaml` | `sources/psionics/` (5 disciplines) |
 | Weapons | `data-manager weapons ...` | `sources/data_sources/weapons.yaml` | `sources/weapons/` (melee + ranged × 9 PL categories) |

@@ -3,13 +3,6 @@ attribute: DEX
 cost: 3
 url: /skills/vehicle-operation#water-vehicle
 trained_only: false
-rank_benefits:
-  - rank: 4
-    title: Improved Proficiency
-  - rank: 8
-    title: Improved Proficiency
-  - rank: 12
-    title: Improved Proficiency
 name: Water vehicle
 ---
 

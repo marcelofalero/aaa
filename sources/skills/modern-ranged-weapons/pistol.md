@@ -7,11 +7,7 @@ rank_benefits:
 - rank: 3
   title: Quick Draw
 - rank: 4
-  title: Lightning Draw
-- rank: 6
-  title: Dual-Wield Coordination
-- rank: 9
-  title: Akimbo
+  title: Quick Draw
 name: Pistol
 ---
 
@@ -43,5 +39,3 @@ When wielding two pistols, the character combines their ammunition pools and unl
 ▶ **Rank 6 [Dual-Wield Coordination]** When a character reaches rank 6, their peripheral vision and recoil control improve drastically. When using the Split Target dual-wield modes, the penalty for both shots is reduced by 1 step (e.g., a character with Ambidexterity using Split Target now rolls at +1 / +1).
 
 ▶ **Rank 9 [Akimbo Mastery]** When a character reaches rank 9, they can operate two weapons as flawlessly as one. When using the Split Target dual-wield mode, the penalty for both shots is reduced by 2 steps (the character fire at +0 / +2. Or +0 / +0 for a character with Ambidexterity).
-
-

@@ -3,13 +3,6 @@ attribute: DEX
 cost: 5
 url: /skills/vehicle-operation#space-vehicle
 trained_only: true
-rank_benefits:
-- rank: 4
-  title: Improved Proficiency
-- rank: 8
-  title: Improved Proficiency
-- rank: 12
-  title: Improved Proficiency
 name: Space vehicle
 ---
 

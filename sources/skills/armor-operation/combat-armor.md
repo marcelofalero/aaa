@@ -4,9 +4,9 @@ cost: 3
 url: /skills/armor-operation#combat-armor
 trained_only: false
 rank_benefits:
-- rank: 1, 4, 6, 10
+- rank: 1
   title: Improved Operation
-- rank: 2, 4, 6, 8, 10, 12
+- rank: 2
   title: Shaking Off Stuns
 - rank: 7
   title: Powered Armor Operation

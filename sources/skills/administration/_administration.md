@@ -6,6 +6,7 @@ url: /skills/administration
 trained_only: false
 name: Administration
 ---
+
 This skill provides a character with the knowledge and institutional literacy required to navigate, manipulate, or weaponize bureaucratic systems. It covers scheduling, personnel management, and the legal regulations governing organizations ranging from local offices to interstellar empires.
 
 ### Organizational Interaction

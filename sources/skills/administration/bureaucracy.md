@@ -3,19 +3,9 @@ attribute: WIL
 cost: 3
 url: /skills/administration#bureaucracy
 trained_only: false
-rank_benefits:
-- rank: 2
-  title: Optimized Routing
-- rank: 4
-  title: Optimized Routing
-- rank: 6
-  title: Procedural Immunity
-- rank: 9
-  title: The Invisible Hand
-- rank: 12
-  title: Loophole Master
 name: Bureaucracy
 ---
+
 This specialty skill measures a character's ability to grease (or clog up) the wheels of bureaucracy. Important applications, permits, clearances, reports, or other bureaucratic requests can be processed faster and more efficiently with the use of this skill. Conversely, this skill can be used to make the same bureaucratic processes slower for others.
 
 ### Rank Benefits

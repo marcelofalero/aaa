@@ -3,15 +3,6 @@ attribute: INT
 cost: 3
 url: /skills/life-science#botany
 trained_only: false
-rank_benefits:
-- rank: 3
-  title: Increased Effect
-- rank: 6
-  title: Increased Effect
-- rank: 9
-  title: Increased Effect
-- rank: 12
-  title: Increased Effect
 name: Botany
 ---
 

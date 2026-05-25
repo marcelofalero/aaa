@@ -3,15 +3,6 @@ attribute: PER
 cost: 3
 url: /skills/culture#first-encounter
 trained_only: true
-rank_benefits:
-- rank: 3
-  title: Increased Effect
-- rank: 6
-  title: Increased Effect
-- rank: 9
-  title: Increased Effect
-- rank: 12
-  title: Increased Effect
 name: First Encounter
 ---
 

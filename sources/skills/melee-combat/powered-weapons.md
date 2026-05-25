@@ -3,19 +3,6 @@ attribute: STR
 cost: 3
 url: /skills/melee-combat#powered-weapons
 trained_only: false
-rank_benefits:
-- rank: 4
-  title: Reaction Parry
-- rank: 4
-  title: Resistance Modifier
-- rank: 6
-  title: Double-Strike
-- rank: 8
-  title: Resistance Modifier
-- rank: 9
-  title: Multistrike
-- rank: 12
-  title: Resistance Modifier
 name: Powered
 ---
 

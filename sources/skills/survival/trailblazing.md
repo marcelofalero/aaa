@@ -15,4 +15,3 @@ With trailblazing, a character learns to find paths through rough terrain or cre
 - **Ordinary success:** Provides a **reduction of 1 step** to any penalties that apply.
 - **Good success:** Reduces penalties by **2 steps**.
 - **Amazing success:** Reduces penalties by **3 steps**. Note: This reduction can't be used to turn a penalty into a bonus; the best possible result is negating a penalty altogether.
-

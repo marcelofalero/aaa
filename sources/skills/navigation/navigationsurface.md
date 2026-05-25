@@ -3,7 +3,6 @@ attribute: INT
 cost: 3
 url: /skills/navigation#navigationsurface
 trained_only: false
-rank_benefits: []
 name: Navigation—surface
 ---
 

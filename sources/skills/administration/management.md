@@ -3,19 +3,9 @@ attribute: WIL
 cost: 3
 url: /skills/administration#management
 trained_only: false
-rank_benefits:
-- rank: 2
-  title: Investment Portfolio
-- rank: 3
-  title: Financial Leverage
-- rank: 6
-  title: Master of Capital
-- rank: 9
-  title: Financial Leverage
-- rank: 12
-  title: Financial Leverage
 name: Management
 ---
+
 This specialty governs the acquisition of physical goods and the strategic management of capital. It is used to find rare equipment, navigate supply chains, and oversee group or corporate finances. A skilled procurer knows how to make money go further, how to find items that aren't officially for sale, and how to turn stagnant capital into a growing engine of wealth.
 
 ### Rank Benefits

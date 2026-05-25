@@ -3,13 +3,7 @@ attribute: DEX
 cost: 3
 url: /skills/acrobatics#zero-g-training
 trained_only: true
-rank_benefits:
-  - rank: 4
-    title: Improved Balance
-  - rank: 7
-    title: No Penalty in Zero-G
-  - rank: 10
-    title: Improved Locomotion
+rank_benefits: []
 name: Zero-g Training
 ---
 

@@ -25,6 +25,11 @@ SHIMS_DST = $(addprefix $(BINDIR)/,$(COMMANDS))
 
 all: install
 
+# ── Build ──────────────────────────────────────────────────────────────────
+
+build: install
+	@echo "Build complete. (Shim scripts are the build artifacts — no compilation needed.)"
+
 # ── Install ────────────────────────────────────────────────────────────────
 
 install: $(SHIMS_DST)

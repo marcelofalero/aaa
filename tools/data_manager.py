@@ -3,9 +3,9 @@
 Unified Data Manager — YAML ↔ Markdown review for all data domains.
 
 Usage:
-    python3 sources/data_manager.py <domain> pull [--overwrite]
-    python3 sources/data_manager.py <domain> push [--commit]
-    python3 sources/data_manager.py <domain> diff [-v]
+    data-manager <domain> pull [--overwrite]
+    data-manager <domain> push [--commit]
+    data-manager <domain> diff [-v]
 
 Domains: skill, psionics, gear, armor, weapons, goods, services, computers, cybernetics
 """

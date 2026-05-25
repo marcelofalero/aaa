@@ -19,16 +19,16 @@ The goal is to manually review all data sources (currently focusing on **Skills*
    - Translate the *fixed* English version into Spanish.
    - Use the **Terminology Mapping** for all game-specific terms (e.g., "Check" -> "Tirada", "Ordinary" -> "Ordinario").
 4. **Validation:**
-   - Run the linter: `python3 sources/scripts/data_linter.py sources/data_sources/<file>.yaml`
-   - Run the formatter: `python3 sources/scripts/data_formatter.py sources/data_sources/<file>.yaml`
+   - Run the linter: `pipenv run python3 tools/scripts/data_linter.py sources/data_sources/<file>.yaml`
+   - Run the formatter: `pipenv run python3 tools/scripts/data_formatter.py sources/data_sources/<file>.yaml`
 
 ## Review Workflow
-1. **Pull YAML to Markdown:** `python3 sources/skill_manager.py pull --overwrite`
+1. **Pull YAML to Markdown:** `data-manager skill pull --overwrite`
 2. **Edit Markdown** in `sources/skills/<skill>/` (one file per broad skill + specialties)
-3. **Check drift:** `python3 sources/skill_manager.py diff -v`
-4. **Push approved changes:** `python3 sources/skill_manager.py push --commit`
-5. **Validate:** Run the linter: `python3 sources/scripts/data_linter.py sources/data_sources/skills.yaml`
-6. **Format:** `python3 sources/scripts/data_formatter.py skills`
+3. **Check drift:** `data-manager skill diff -v`
+4. **Push approved changes:** `data-manager skill push --commit`
+5. **Validate:** Run the linter: `pipenv run python3 tools/scripts/data_linter.py sources/data_sources/skills.yaml`
+6. **Format:** `pipenv run python3 tools/scripts/data_formatter.py skills`
 
 ## Current Status
 - **Acrobatics:** COMPLETED (EN and ES reviewed/fixed).
