@@ -3,13 +3,6 @@ attribute: INT
 cost: 3
 url: /skills/computer-science#hardware
 trained_only: false
-rank_benefits:
-- rank: 4
-  title: Increased Effect
-- rank: 8
-  title: Increased Effect
-- rank: 12
-  title: Increased Effect
 name: Hardware
 ---
 

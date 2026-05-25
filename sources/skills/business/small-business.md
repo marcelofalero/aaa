@@ -3,15 +3,7 @@ attribute: INT
 cost: 3
 url: /skills/business#small-business
 trained_only: false
-rank_benefits:
-- rank: 1
-  title: Art of the deal
-- rank: 4
-  title: Art of the deal
-- rank: 7
-  title: Art of the deal
-- rank: 10
-  title: Art of the deal
+rank_benefits: []
 name: Small business
 ---
 

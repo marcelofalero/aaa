@@ -17,4 +17,3 @@ This broad skill provides a character with training in the use of primitive rang
 | Flintlock Pistol       | -1 step  | +1 step | +3 steps |
 | Bow, Crossbow, Sling   | -1 step  | None    | +2 step  |
 | Musket                 | -1 step  | None    | +1 step  |
-

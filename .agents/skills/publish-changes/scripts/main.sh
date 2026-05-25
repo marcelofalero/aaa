@@ -3,19 +3,19 @@
 echo "Starting publication process..."
 
 # 1. Sync Markdown to YAML (ensure latest manual edits are captured)
-python3 sources/scripts/manage_site_data.py
+pipenv run python3 tools/scripts/manage_site_data.py
 
 # 2. Run Master Translator (ensure Spanish parity)
-sources/scripts/venv/bin/python3 sources/scripts/master_translator.py
+pipenv run python3 tools/scripts/master_translator.py
 
 # 3. Final propagation to Site Data
-python3 sources/scripts/manage_site_data.py
-python3 sources/scripts/generate_legacy_skills_json.py
+pipenv run python3 tools/scripts/manage_site_data.py
+pipenv run python3 tools/scripts/generate_legacy_skills_json.py
 
 # 4. Build Character Sheet
 cd roll20_charsheet && python3 build_sheet.py && cd ..
 
 # 5. Execute Publication Script (Git/GitHub workflow)
-python3 sources/scripts/publish_changes.py
+pipenv run python3 tools/scripts/publish_changes.py
 
 echo "Done!"

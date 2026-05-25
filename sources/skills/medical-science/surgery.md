@@ -5,9 +5,9 @@ url: /skills/medical-science#surgery
 trained_only: true
 rank_benefits:
 - rank: 3
-  title: Cybernetic Surgery
+  title: Surgical Proficiency
 - rank: 6
-  title: Cybernetic Surgery, Install
+  title: Surgical Proficiency
 name: Surgery
 ---
 

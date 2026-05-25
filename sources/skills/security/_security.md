@@ -1,5 +1,5 @@
 ---
-attribute: INT  
+attribute: INT
 cost: 3
 category: Other
 url: /skills/security

@@ -12,7 +12,7 @@ This skill automates the end-to-end workflow for updating the Alternity RPG rule
 - Use this after making significant changes to the skill database (YAML or Markdown).
 
 ## Workflow
-1.  **Sync Site Data**: Run `python3 ../../../sources/scripts/manage_site_data.py` to ensure Markdown edits are synced to `skills.yaml`.
+1.  **Sync Site Data**: Run `pipenv run python3 tools/scripts/manage_site_data.py` to ensure Markdown edits are synced to `skills.yaml`.
 2.  **Ensure all search indexes are updated**: Verify that the hugo search indexes are updated.
 3.  **Automated Translation**: Execute the master translation script to ensure Spanish parity with terminology mapping.
 4.  **Site Test Build**: Test if that site can be build using hugo. If not, fix it.

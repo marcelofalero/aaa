@@ -3,9 +3,7 @@ attribute: WIL
 cost: 1
 url: /skills/animal-handling#animal-riding
 trained_only: false
-rank_benefits:
-  - rank: 3
-    title: Trick Riding
+rank_benefits: []
 name: Animal riding
 ---
 

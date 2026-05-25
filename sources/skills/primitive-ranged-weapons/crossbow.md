@@ -3,11 +3,6 @@ attribute: DEX
 cost: 3
 url: /skills/primitive-ranged-weapons#crossbow
 trained_only: false
-rank_benefits:
-- rank: 3
-  title: Distance Precision
-- rank: 6
-  title: Rate of Fire Increase
 name: Crossbow
 ---
 

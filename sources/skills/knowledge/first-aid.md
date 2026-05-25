@@ -3,9 +3,7 @@ attribute: INT
 cost: 3
 url: /skills/knowledge#first-aid
 trained_only: true
-rank_benefits: 
-- rank: 4, 8, 12
-  title: Improved First Aid
+rank_benefits: []
 name: First Aid
 ---
 

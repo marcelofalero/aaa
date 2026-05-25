@@ -3,6 +3,15 @@ attribute: INT
 cost: 3
 url: /skills/technical-science#repair
 trained_only: false
+rank_benefits:
+- rank: 3
+  title: Increased Effect
+- rank: 6
+  title: Increased Effect
+- rank: 9
+  title: Increased Effect
+- rank: 12
+  title: Increased Effect
 name: Repair
 ---
 

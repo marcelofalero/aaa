@@ -3,15 +3,7 @@ attribute: DEX
 cost: 3
 url: /skills/modern-ranged-weapons#smg
 trained_only: false
-rank_benefits:
-- rank: 3
-  title: Rock-n-Roll
-- rank: 6
-  title: Autofire Master
-- rank: 9
-  title: Bullet Rain
 name: SMG
-
 ---
 
 This specialty skill allows a character to improve his proficiency with modern submachine guns of all types (small automatic weapons that fire pistol-sized cartridges) as well as energy-equivalent submachine guns.

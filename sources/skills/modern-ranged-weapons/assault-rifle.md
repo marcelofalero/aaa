@@ -3,15 +3,6 @@ attribute: DEX
 cost: 3
 url: /skills/modern-ranged-weapons#assault-rifle
 trained_only: false
-rank_benefits:
-- rank: 3
-  title: Rock-n-Roll
-- rank: 4
-  title: Distance Precision
-- rank: 6
-  title: Suppressive Angles
-- rank: 9
-  title: Absolute Recoil Control
 name: Assault Rifle
 ---
 

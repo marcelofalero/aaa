@@ -3,21 +3,6 @@ attribute: INT
 cost: 3
 url: /skills/computer-science#programming
 trained_only: false
-rank_benefits:
-  - rank: 3
-    title: Modify/Enhance Programs
-  - rank: 3
-    title: Create Programs
-  - rank: 6
-    title: Modify/Enhance Programs
-  - rank: 6
-    title: Create Programs
-  - rank: 9
-    title: Modify/Enhance Programs
-  - rank: 9
-    title: Create Programs
-  - rank: 12
-    title: Modify/Enhance Programs
 name: Programming
 ---
 

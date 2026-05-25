@@ -3,6 +3,9 @@ attribute: WIL
 cost: 3
 url: /skills/resolve#physical-resolve
 trained_only: false
+rank_benefits:
+- rank: 0
+  title: Knockout Recovery
 name: Physical resolve
 ---
 
