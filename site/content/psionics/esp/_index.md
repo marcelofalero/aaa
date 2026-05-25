@@ -17,7 +17,7 @@ except those that can't be used untrained.
 ---
 
 ## Battle Mind
-{{< specialty attr="INT" untrained="no" cost="4" extended="true" >}}}}
+{{< specialty attr="INT" untrained="no" cost="4" extended="true" >}}
 
 To use this skill, a psion focuses on the battle at hand and makes a skill
 check. The success achieved indicates the benefit while the current
@@ -34,7 +34,7 @@ user a bonus to his or her action checks:
 ---
 
 ## Clairaudience
-{{< specialty attr="INT" untrained="yes" cost="2" extended="true" >}}}}
+{{< specialty attr="INT" untrained="yes" cost="2" extended="true" >}}
 
 With this skill, a character selects a location and projects his or her mind
 to that spot, hearing sounds as though physically present.
@@ -81,7 +81,7 @@ the distance at which clairaudience is being used are as follows:
 ---
 
 ## Clairvoyance
-{{< specialty attr="INT" untrained="yes" cost="2" extended="true" >}}}}
+{{< specialty attr="INT" untrained="yes" cost="2" extended="true" >}}
 
 To employ this skill, a character selects a location and projects his or her
 mind to that spot, seeing everything going on around that spot as though
@@ -104,7 +104,7 @@ familiarity are the same as for Clairaudience.
 ---
 
 ## Dream Hunt
-{{< specialty attr="INT" untrained="no" cost="3" >}}}}
+{{< specialty attr="INT" untrained="no" cost="3" >}}
 
 Though originally developed for hunting animals, the technique works on any
 living being. The sesheyan (or sesheyan-trained) psion concentrates on the
@@ -127,7 +127,7 @@ easier the hunt:
 ---
 
 ## Empathy
-{{< specialty attr="INT" untrained="yes" cost="1" >}}}}
+{{< specialty attr="INT" untrained="yes" cost="1" >}}
 
 This skill allows a psion to “read” the surface emotions of another character.
 This ability assists the user in encounter situations. The target must be
@@ -148,7 +148,7 @@ character:
 ---
 
 ## Mind Reading
-{{< specialty attr="INT" untrained="yes" cost="3" >}}}}
+{{< specialty attr="INT" untrained="yes" cost="3" >}}
 
 This skill enables a psion to “read” the surface thoughts of another
 character. The target must be within 500 meters (100m/200m/500m) of the
@@ -166,7 +166,7 @@ can't be extended by the use of psionic energy points.
 ---
 
 ## Navcognition
-{{< specialty attr="INT" untrained="no" cost="3" >}}}}
+{{< specialty attr="INT" untrained="no" cost="3" >}}
 
 A character who uses this skill can instinctively determine his or her present
 location and mentally plot a course. This can be accomplished on a planetary
@@ -188,7 +188,7 @@ conditions | +4 / +2 | | Unexplored / Partially explored territory | +4 / +2 |
 ---
 
 ## Postcognition
-{{< specialty attr="INT" untrained="yes" cost="3" >}}}}
+{{< specialty attr="INT" untrained="yes" cost="3" >}}
 
 With this skill, a character can sense the mood of an area and even “see”
 events that happened there in the recent past. The character must be in the
@@ -206,7 +206,7 @@ number of days into the past equal to his or her skill rank.
 ---
 
 ## Precognition
-{{< specialty attr="INT" untrained="no" cost="4" >}}}}
+{{< specialty attr="INT" untrained="no" cost="4" >}}
 
 This skill is the ability to receive impressions about possible future
 events—what the psion sees will probably happen if no one takes action to
@@ -226,7 +226,7 @@ which can only be used during the scene.
 ---
 
 ## Psychometry
-{{< specialty attr="INT" untrained="yes" cost="3" >}}}}
+{{< specialty attr="INT" untrained="yes" cost="3" >}}
 
 This skill gives its user the ability to read psychic impressions from
 inanimate objects. The character must touch the object to gain insight into

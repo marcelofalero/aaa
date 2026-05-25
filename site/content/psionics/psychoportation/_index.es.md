@@ -18,7 +18,7 @@ entrenamiento.
 ---
 
 ## Alterar Velocidad
-{{< specialty attr="VOL" untrained="no" cost="4" extended="true" >}}}}
+{{< specialty attr="VOL" untrained="no" cost="4" extended="true" >}}
 
 Al concentrarse, el personaje puede acelerar o desacelerar a sí mismo o a otro
 objetivo vivo dentro de un radio de 8 metros. El psiónico debe decidir si está
@@ -34,7 +34,7 @@ sobre la puntuación de la tirada de acción del objetivo depende del éxito:
 ---
 
 ## Aportación
-{{< specialty attr="VOL" untrained="no" cost="6" >}}}}
+{{< specialty attr="VOL" untrained="no" cost="6" >}}
 
 Esta capacidad permite a un personaje invocar un objeto inanimado desde una
 ubicación distante o desterrar un objeto a otra ubicación. El psiónico debe
@@ -55,7 +55,7 @@ aportar depende del rango de habilidad y del éxito:
 ---
 
 ## Duplicado
-{{< specialty attr="VOL" untrained="no" cost="6" >}}}}
+{{< specialty attr="VOL" untrained="no" cost="6" >}}
 
 Esta capacidad permite a un personaje convocar un duplicado de sí mismo desde
 otra ubicación del multiverso. El duplicado es idéntico en todos los sentidos
@@ -72,7 +72,7 @@ persiste el duplicado depende del éxito:
 ---
 
 ## Teletransportación
-{{< specialty attr="VOL" untrained="no" cost="5" >}}}}
+{{< specialty attr="VOL" untrained="no" cost="5" >}}
 
 La teletransportación permite a un psiónico moverse instantáneamente desde su
 ubicación actual a otra. El psiónico también puede teletransportar objetos u
@@ -88,7 +88,7 @@ y del éxito:
 ---
 
 ## Salto Temporal
-{{< specialty attr="VOL" untrained="no" cost="6" >}}}}
+{{< specialty attr="VOL" untrained="no" cost="6" >}}
 
 Esta capacidad permite a un psiónico desplazarse a sí mismo hacia adelante en
 el tiempo. Para todos los demás, el psiónico parece desaparecer
@@ -105,7 +105,7 @@ instantáneamente y reaparecer más tarde. La duración del salto depende del
 ---
 
 ## Caminar entre Dimensiones
-{{< specialty attr="VOL" untrained="no" cost="6" >}}}}
+{{< specialty attr="VOL" untrained="no" cost="6" >}}
 
 Salto entre dimensiones paralelas o líneas temporales tangentes.
 

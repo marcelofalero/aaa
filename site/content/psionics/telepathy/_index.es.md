@@ -20,7 +20,7 @@ habilidad de base.
 ---
 
 ## Contacto
-{{< specialty attr="PER" untrained="yes" cost="3" extended="true" >}}}}
+{{< specialty attr="PER" untrained="yes" cost="3" extended="true" >}}
 
 Con esta habilidad, un personaje puede enviar y recibir pensamientos de otro
 personaje, generalmente con el propósito de intercambiar información. Se
@@ -38,7 +38,7 @@ que se pueden intercambiar depende del resultado de una tirada de habilidad:
 ---
 
 ## Enlace de Datos
-{{< specialty attr="PER" untrained="no" cost="4" extended="true" >}}}}
+{{< specialty attr="PER" untrained="no" cost="4" extended="true" >}}
 
 Esta habilidad es la capacidad de vincular la propia mente con un ordenador (o
 una máquina cibernética, si se usan las reglas opcionales para
@@ -61,7 +61,7 @@ protocolo y guardar.
 ---
 
 ## Drenar
-{{< specialty attr="PER" untrained="no" cost="4" >}}}}
+{{< specialty attr="PER" untrained="no" cost="4" >}}
 
 El personaje se vuelve capaz de absorber la energía de otro ser vivo desde una
 corta distancia (rango 1/2/4). Cuando el psiónico adquiere la habilidad,
@@ -78,7 +78,7 @@ mejore al menos a 1.
 ---
 
 ## Proyección Empática
-{{< specialty attr="PER" untrained="yes" cost="3" >}}}}
+{{< specialty attr="PER" untrained="yes" cost="3" >}}
 
 Con esta habilidad, un personaje puede alterar el estado de ánimo de otros
 seres, incluso de aquellos con quienes no comparte un idioma, como
@@ -99,7 +99,7 @@ habilidad.
 ---
 
 ## Ilusión
-{{< specialty attr="PER" untrained="yes" cost="3" extended="true" >}}}}
+{{< specialty attr="PER" untrained="yes" cost="3" extended="true" >}}
 
 Esta habilidad permite a un personaje engañar la mente de un objetivo
 proyectando una ilusión en ella. Una ilusión puede ser visual o sonora, pero
@@ -123,7 +123,7 @@ Percepción-intuición para ver si la ilusión es efectiva contra ese individuo.
 ---
 
 ## Explosión Mental
-{{< specialty attr="PER" untrained="no" cost="4" >}}}}
+{{< specialty attr="PER" untrained="no" cost="4" >}}
 
 Esta habilidad permite al usuario dirigir una poderosa explosión de energía
 mental pura a otra mente. El objetivo debe estar dentro del contacto visual y
@@ -140,7 +140,7 @@ d4+1s/d4+2s/d8+2s.
 ---
 
 ## Escudo Mental
-{{< specialty attr="PER" untrained="yes" cost="2" >}}}}
+{{< specialty attr="PER" untrained="yes" cost="2" >}}
 
 Esta habilidad permite a un personaje establecer una defensa mental contra los
 poderes psiónicos. Escudo mental protege contra estas habilidades psiónicas:
@@ -162,7 +162,7 @@ momento en el que colapsa.
 ---
 
 ## Borrado Mental
-{{< specialty attr="PER" untrained="no" cost="5" >}}}}
+{{< specialty attr="PER" untrained="no" cost="5" >}}
 
 Con esta habilidad, un personaje psiónico puede borrar recuerdos de la mente
 de un objetivo. Se pueden borrar los recuerdos de un minuto por cada rango que
@@ -185,7 +185,7 @@ cosas.
 ---
 
 ## Armadura Psíquica
-{{< specialty attr="PER" untrained="yes" cost="2" >}}}}
+{{< specialty attr="PER" untrained="yes" cost="2" >}}
 
 Esta habilidad crea una "zona de amortiguamiento" psíquica alrededor del
 personaje, que ayuda a disminuir el efecto de los ataques de Drenar, Explosión
@@ -208,7 +208,7 @@ personaje ha sido alterado por Telepatía-proyección empática.
 ---
 
 ## Proyección Psíquica
-{{< specialty attr="PER" untrained="yes" cost="5" >}}}}
+{{< specialty attr="PER" untrained="yes" cost="5" >}}
 
 Con esta habilidad, un personaje puede separar la mente del cuerpo y viajar a
 donde desee, dejando atrás su forma física. La conciencia del psiónico es
@@ -228,7 +228,7 @@ con éxito otra tirada de habilidad de Telepatía-proyección psíquica.
 ---
 
 ## Sugerir
-{{< specialty attr="PER" untrained="yes" cost="3" >}}}}
+{{< specialty attr="PER" untrained="yes" cost="3" >}}
 
 Esta habilidad especializada permite al personaje hipnotizar a otra persona.
 Si tiene éxito, sugiere implantar un pensamiento en la mente de otra persona y
@@ -249,7 +249,7 @@ personaje proporcionaría un penalizador de +3 pasos o más).
 ---
 
 ## Agotar
-{{< specialty attr="PER" untrained="yes" cost="2" >}}}}
+{{< specialty attr="PER" untrained="yes" cost="2" >}}
 
 Esta habilidad inflige daño por fatiga al objetivo, quizás provocando que
 decida que necesita descansar. El objetivo debe estar a la vista y a no más de
@@ -264,7 +264,7 @@ del resultado de una tirada de habilidad: Ordinario, 1 punto de fatiga; Bueno,
 ---
 
 ## Deshacer
-{{< specialty attr="PER" untrained="yes" cost="3" >}}}}
+{{< specialty attr="PER" untrained="yes" cost="3" >}}
 
 Con esta habilidad, un telépata puede revertir los efectos de un uso exitoso
 de Telepatía-ilusión, borrado mental o sugerir. El telépata debe lograr un
@@ -276,7 +276,7 @@ rango del usuario original es menor. Solo se permite un intento por día.
 ---
 
 ## Guía
-{{< specialty attr="PER" untrained="no" cost="4" extended="true" >}}}}
+{{< specialty attr="PER" untrained="no" cost="4" extended="true" >}}
 
 Con una tirada de habilidad exitosa, el telépata puede implantar una de sus
 habilidades no psiónicas en la mente de un objetivo durante el tiempo que
@@ -295,7 +295,7 @@ habilidades adquiridas a través de la Guía de otra persona.
 ---
 
 ## Sometimiento
-{{< specialty attr="PER" untrained="no" cost="3" >}}}}
+{{< specialty attr="PER" untrained="no" cost="3" >}}
 
 Esta habilidad permite al usuario engendrar sentimientos de calma o incluso
 distanciamiento en cualquier especie inteligente. El objetivo debe encontrarse

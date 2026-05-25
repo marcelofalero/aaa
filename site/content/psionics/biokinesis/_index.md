@@ -17,7 +17,7 @@ used untrained.
 ---
 
 ## Bio-armor
-{{< specialty attr="CON" untrained="yes" cost="3" >}}}}
+{{< specialty attr="CON" untrained="yes" cost="3" >}}
 
 This skill psionically reinforces a character's skin, helping to protect from damage. This "body armor" provides (LI d6/HI d6/En d4) points of protection against damage, but does not protect against psionic attacks. (See Telepathy for ways to avoid psionic attacks.)
 
@@ -37,7 +37,7 @@ The skin hardening impairs the character's movement in the same way as worn armo
 ---
 
 ## Bioweapon
-{{< specialty attr="CON" untrained="yes" cost="3" extended="true" >}}}}
+{{< specialty attr="CON" untrained="yes" cost="3" extended="true" >}}
 
 When employing this skill, a character generates a field of kinetic energy emanating from his or her hands. This energy manifests in one of two ways, to be chosen by the player at the time the character makes a successful skill check: a staff or a sword.
 
@@ -68,7 +68,7 @@ This bonus lasts until the character chooses not to maintain the bioweapon.
 ---
 
 ## Control Metabolism
-{{< specialty attr="CON" untrained="yes" cost="2" extended="true" >}}}}
+{{< specialty attr="CON" untrained="yes" cost="2" extended="true" >}}
 
 Through the use of this skill, a character can regulate his or her metabolic
 processes. This allows longer survival without food and water, in extreme
@@ -107,7 +107,7 @@ his or her resistance to pain and fatigue.
 ---
 
 ## Heal
-{{< specialty attr="CON" untrained="no" cost="4" >}}}}
+{{< specialty attr="CON" untrained="no" cost="4" >}}
 
 By concentrating, a character using this skill can heal wounds or disease. The character can treat wounds or diseases, healing the subject a number of wound points based on the skill check result.
 
@@ -137,7 +137,7 @@ Psionic healing imposes heavy strain on the body, so the skill can't be attempte
 ---
 
 ## Morph
-{{< specialty attr="CON" untrained="no" cost="4" >}}}}
+{{< specialty attr="CON" untrained="no" cost="4" >}}
 
 By using this skill, a **character** can alter physical features to avoid recognition, impersonate, or achieve feats otherwise impossible (e.g., squeeze into a small hole, reach high places, or slip free of bonds).
 
@@ -200,7 +200,7 @@ A morphed body part retains its original characteristics; no game statistics cha
 ---
 
 ## Rejuvenate
-{{< specialty attr="CON" untrained="yes" cost="3" >}}}}
+{{< specialty attr="CON" untrained="yes" cost="3" >}}
 
 When using this skill, a character can offset fatigue or stun damage, or some of each, that he or she has suffered. The skill does nothing to alleviate
 psionic energy loss.
@@ -235,7 +235,7 @@ rejuvenate skill can't be attempted more than once per hour.
 ---
 
 ## Clamber
-{{< specialty attr="CON" untrained="yes" cost="2" extended="true" >}}}}
+{{< specialty attr="CON" untrained="yes" cost="2" extended="true" >}}
 
 In the distant past, certain t'sa psions developed the **clamber**
 skill—usually those who dwelled in the mountainous regions of the t'sa
@@ -262,7 +262,7 @@ reaching his or her destination.
 ---
 
 ## Shatter
-{{< specialty attr="CON" untrained="yes" cost="3" >}}}}
+{{< specialty attr="CON" untrained="yes" cost="3" >}}
 
 Weren history tells of a clan that used armor to conquer the other clans.
 Having fashioned plates of crude armor from boiled marrizhe hide, this clan
@@ -296,33 +296,8 @@ Claw/Spur/Horn attacks are made while this power is active, inflict additional d
 
 ---
 
-## Transfer Damage
-{{< specialty attr="CON" untrained="yes" cost="2" >}}}}
-
-By laying hands upon another character and making a successful skill check,
-the psion alleviates that character's damage or disease by absorbing it.
-
-The damage that can be absorbed is tied to the result of a skill check:
-
-| Result | Damage Absorbed | Illness Reduced |
-| :--- | :--- | :--- |
-| **Critical Failure** | Psion suffers 1 wound. | No effect. |
-| **Ordinary** | Character absorbs 1 wound. | Reduce illness by one grade (e.g., Amazing to Good), simultaneously infecting the psion with that grade. |
-| **Good** | Character absorbs 2 wounds or 1 mortal. | Reduce illness by two grades, transferring the ailment into the psion. |
-| **Amazing** | Character absorbs 3 wounds or 1 mortal. | Transfers any illness from the patient into the psion. |
-
-Once the character absorbs the damage or disease, he or she must either use
-the **Biokinesis—heal** specialty skill, heal naturally, or receive medical or
-psionic attention to alleviate the damage or cure the disease.
-
-**Rank Benefits:**
-- **At rank 6 [Displace Damage]**, the psionic character can transfer the damage to a different character, who must also be in physical contact with the psion, and who must be willing to take the damage. Any attempt to transfer the damage to a creature that does not consciously desire to accept the damage (such as a hostile character, or an unconscious one) results in the psion receiving the damage, as normal.
-- **At rank 12 [Unwilling Transfer]**, the character can transfer the damage to an unwilling character. The psion must be touching both characters. Both characters must be alive when the skill is activated. The "donor" character will be healed of a number of damage points determined by the Biokinesis—transfer damage skill check. The damage points are then applied to the unwilling recipient. **Note that this benefit isn't received if the psion is wearing armor.**
-
----
-
-## Sensory Attunement
-{{< specialty attr="CON" untrained="yes" cost="3" extended="true" >}}}}
+## Visual Enhancement
+{{< specialty attr="CON" untrained="yes" cost="3" extended="true" >}}
 
 By psionically reshaping your visual organs and rewriting the neural pathways of the visual cortex, the character can shift their vision across different bands of the electromagnetic spectrum and map structural environments through biological signatures.
 
@@ -347,6 +322,36 @@ Navigating while actively scanning through solid barriers slows the character to
 * **At rank 8 [Wide-Spectrum Sensorium]**, replicating the advanced eyes of the mantis shrimp, the character’s eyes become visibly faceted and compound. They can simultaneously perceive polarized light, ultraviolet radiation, and active electromagnetic emissions (radio waves and sensor frequencies). This allows them to "see" active transmittors, like radio equipment, active sensors.
 
 * **At rank 12 [Cortical Integration]**, the character's is able to seamlessly morph this visual organs making impossible to notice them at plain sight, eliminating any social penalty. Additionally, the character can switch between modes as an action.
+
+---
+
+## Transfer Vitality
+{{< specialty attr="CON" untrained="yes" cost="2" >}}
+
+By establishing physical contact, the psion forces a parasitic bio-electric link that violently siphons biological energy from the target. The target suffers immediate metabolic collapse while the psion experiences a temporary surge in biological efficiency.
+
+**The Drain:** To activate this power, the character must be adjacent to an organic target around the same size or bigger than themself. A successful skill check imposes a step penalty on the target's **Stamina—endurance** and **Stamina—resist pain** checks, while the psion receives a corresponding step bonus to the same specialty skills.
+
+| Result | Target Penalty | Psion Bonus |
+| :--- | :--- | :--- |
+| **Crit. Failure** | No effect. | Psion suffers a +1 step penalty to CON checks |
+| **Ordinary** | +1 step penalty. | -1 step bonus. |
+| **Good** | +2 step penalty. | -2 step bonus. |
+| **Amazing** | +3 step penalty. | -3 step bonus. |
+
+The effect lasts until the end of the next round. 
+
+### Rank Benefits
+**Rank 6 [Symbiotic Absorption]**, the psion can choose to convert the siphoned energy into raw regenerative material. Instead of taking the step bonus for themselves, the psion can heal:
+- **Good:** 2 wounds
+- **Amazing:** 3 wounds
+
+**Rank 9 [Channel Vitality]**, the psion can use this power to restore vitality to an ally instead of the psion. Both the recipient and the donor must be adjacent to the psion when the power is activated.
+
+**Rank 12 [Systemic Overdrive]**, the siphoning becomes so efficient that the psion can even use the energy to heal mortal damage:
+- **Ordinary:** 1 wound
+- **Good:** 2 wounds or 1 mortal
+- **Amazing:** 4 wounds or 2 mortals
 
 ---
 

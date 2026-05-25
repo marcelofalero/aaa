@@ -18,7 +18,7 @@ usarse sin entrenamiento.
 ---
 
 ## Mente de Batalla
-{{< specialty attr="INT" untrained="no" cost="4" extended="true" >}}}}
+{{< specialty attr="INT" untrained="no" cost="4" extended="true" >}}
 
 Para usar esta habilidad, un psiónico se concentra en la batalla actual y
 realiza una tirada de habilidad. El éxito logrado indica el beneficio mientras
@@ -35,7 +35,7 @@ otorga al usuario un bonificador a sus tiradas de acción:
 ---
 
 ## Clariaudiencia
-{{< specialty attr="INT" untrained="yes" cost="2" extended="true" >}}}}
+{{< specialty attr="INT" untrained="yes" cost="2" extended="true" >}}
 
 Con esta habilidad, un Personaje selecciona una ubicación y proyecta su mente.
 a ese lugar, escuchando sonidos como si estuvieran físicamente presentes.
@@ -82,7 +82,7 @@ La distancia a la que se utiliza la clariaudiencia es la siguiente:
 ---
 
 ## Clarividencia
-{{< specialty attr="INT" untrained="yes" cost="2" extended="true" >}}}}
+{{< specialty attr="INT" untrained="yes" cost="2" extended="true" >}}
 
 Para emplear esta habilidad, un personaje selecciona una ubicación y proyecta
 su mente a ese lugar, viendo todo lo que sucede alrededor de ese punto como si
@@ -107,7 +107,7 @@ para la Clariaudiencia.
 ---
 
 ## Caza Onírica
-{{< specialty attr="INT" untrained="no" cost="3" >}}}}
+{{< specialty attr="INT" untrained="no" cost="3" >}}
 
 Aunque originalmente desarrollada para cazar animales, esta técnica funciona
 en cualquier ser vivo. El psiónico se concentra en el sujeto y se involucra
@@ -130,7 +130,7 @@ objetivo, más fácil será la caza:
 ---
 
 ## Empatía
-{{< specialty attr="INT" untrained="yes" cost="1" >}}}}
+{{< specialty attr="INT" untrained="yes" cost="1" >}}
 
 Esta habilidad permite a un psiónico "leer" las emociones superficiales de
 otro personaje. Esta capacidad ayuda al usuario en situaciones de encuentro.
@@ -151,7 +151,7 @@ usar habilidades de encuentro sobre ese personaje objetivo:
 ---
 
 ## Lectura Mental
-{{< specialty attr="INT" untrained="yes" cost="3" >}}}}
+{{< specialty attr="INT" untrained="yes" cost="3" >}}
 
 Esta habilidad permite a un psiónico "leer" los pensamientos superficiales de
 otro personaje. El objetivo debe estar dentro de los 500 metros
@@ -170,7 +170,7 @@ psiónica.
 ---
 
 ## Navcognición
-{{< specialty attr="INT" untrained="no" cost="3" >}}}}
+{{< specialty attr="INT" untrained="no" cost="3" >}}
 
 Un personaje que usa esta habilidad puede determinar instintivamente su
 ubicación actual y trazar mentalmente un curso. Esto puede lograrse en una
@@ -194,7 +194,7 @@ trazando |
 ---
 
 ## Postcognición
-{{< specialty attr="INT" untrained="yes" cost="3" >}}}}
+{{< specialty attr="INT" untrained="yes" cost="3" >}}
 
 Con esta habilidad, un personaje puede sentir el ambiente de un área e incluso
 "ver" eventos que ocurrieron allí en el pasado reciente. El personaje debe
@@ -212,7 +212,7 @@ personaje puede ver tantos días en el pasado como su rango de habilidad.
 ---
 
 ## Precognición
-{{< specialty attr="INT" untrained="no" cost="4" >}}}}
+{{< specialty attr="INT" untrained="no" cost="4" >}}
 
 Esta habilidad es la capacidad de recibir impresiones sobre posibles eventos
 futuros: lo que el psiónico ve probablemente sucederá si nadie toma medidas
@@ -232,7 +232,7 @@ gratuito, que solo puede usarse durante la escena.
 ---
 
 ## Psicometría
-{{< specialty attr="INT" untrained="yes" cost="3" >}}}}
+{{< specialty attr="INT" untrained="yes" cost="3" >}}
 
 Esta habilidad otorga a su usuario la capacidad de leer impresiones psíquicas
 de objetos inanimados. El personaje debe tocar el objeto para obtener

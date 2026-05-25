@@ -17,7 +17,7 @@ excepto aquellas que no pueden usarse sin entrenamiento.
 ---
 
 ## Crioquinesis
-{{< specialty attr="VOL" untrained="no" cost="3" >}}}}
+{{< specialty attr="VOL" untrained="no" cost="3" >}}
 
 Al concentrarse, el personaje puede generar campos de frío intenso, congelando
 la mayoría de los líquidos y dañando el tejido vivo. El rango efectivo es de
@@ -35,7 +35,7 @@ de d4s/d4+2s/d4w.
 ---
 
 ## Electroquinesis
-{{< specialty attr="VOL" untrained="no" cost="3" >}}}}
+{{< specialty attr="VOL" untrained="no" cost="3" >}}
 
 Al concentrarse, el personaje puede generar y dirigir una descarga eléctrica a
 un objetivo dentro de un rango de 16 metros (rango 4/8/16). La carga persiste
@@ -55,7 +55,7 @@ d4+2s/d6+2s/d4w.
 ---
 
 ## Golpe Cinético
-{{< specialty attr="VOL" untrained="no" cost="3" >}}}}
+{{< specialty attr="VOL" untrained="no" cost="3" >}}
 
 Esta capacidad permite a un psiónico proyectar una onda de energía cinética
 hacia un objetivo. El rango efectivo es de 16 metros (rango 4/8/16). El
@@ -70,7 +70,7 @@ d4s/d4+2s/d4w.
 ---
 
 ## Escudo Cinético
-{{< specialty attr="VOL" untrained="no" cost="3" extended="true" >}}}}
+{{< specialty attr="VOL" untrained="no" cost="3" extended="true" >}}
 
 Al concentrarse, el personaje puede crear un campo de energía cinética que
 rodea su cuerpo, protegiéndolo de ataques físicos. El escudo refleja o absorbe
@@ -87,7 +87,7 @@ depende del éxito de la tirada de habilidad:
 ---
 
 ## Levitación
-{{< specialty attr="VOL" untrained="yes" cost="3" extended="true" >}}}}
+{{< specialty attr="VOL" untrained="yes" cost="3" extended="true" >}}
 
 Con esta habilidad, un psiónico puede elevarse mentalmente del suelo y moverse
 por el aire. La velocidad de movimiento depende del resultado de la tirada de
@@ -103,7 +103,7 @@ habilidad:
 ---
 
 ## Fotoquinesis
-{{< specialty attr="VOL" untrained="yes" cost="1" extended="true" >}}}}
+{{< specialty attr="VOL" untrained="yes" cost="1" extended="true" >}}
 
 Con esta habilidad, un personaje puede excitar o reducir la cantidad de luz en
 un área específica. El área afectada tiene un diámetro de 2 metros (éxito
@@ -124,7 +124,7 @@ cada unidad de duración adicional.
 ---
 
 ## Psicocinesis
-{{< specialty attr="VOL" untrained="yes" cost="3" extended="true" >}}}}
+{{< specialty attr="VOL" untrained="yes" cost="3" extended="true" >}}
 
 La psicocinesis es la capacidad de mover objetos. Antes de realizar la tirada
 de habilidad, el psiónico debe elegir si está intentando mover un objeto o
@@ -143,7 +143,7 @@ habilidad y del éxito:
 ---
 
 ## Piroquinesis
-{{< specialty attr="VOL" untrained="no" cost="3" >}}}}
+{{< specialty attr="VOL" untrained="no" cost="3" >}}
 
 Al concentrarse, el personaje puede excitar las moléculas de un objeto,
 haciendo que estalle en llamas o infligiendo daño a una criatura viva. El
@@ -158,7 +158,7 @@ por primera vez, Piroquinesis inflige un daño de d4s/d4+2s/d4w.
 ---
 
 ## Presa de Sheya
-{{< specialty attr="VOL" untrained="no" cost="5" >}}}}
+{{< specialty attr="VOL" untrained="no" cost="5" >}}
 
 Aplasta mentalmente el corazón u órganos internos de un ser vivo (rango 40
 metros). Ignora toda armadura no psiónica. Es agotador para el usuario, que

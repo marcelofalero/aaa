@@ -507,64 +507,6 @@ items:
 
                 **Rango 12 [Degradación de armadura]** Con un éxito de Asombroso, la integridad de la armadura ahora está tan comprometida que su dureza también se reduce, de Asombroso a Bueno, de Bueno a Ordinario, la armadura Ordinario deja de proteger hasta que finaliza el efecto.
               name: Destrozar
-      transfer-damage:
-        attribute: CON
-        cost: 2
-        url: /psionics/biokinesis/#transfer-damage
-        trained_only: false
-        rank_benefits:
-          - rank: 6
-            title: Displace Damage
-          - rank: 12
-            title: Unwilling Transfer
-        extended_duration: false
-        localized:
-          - en:
-              name: Transfer Damage
-              description: |-
-                By laying hands upon another character and making a successful skill check,
-                the psion alleviates that character's damage or disease by absorbing it.
-
-                The damage that can be absorbed is tied to the result of a skill check:
-
-                | Result | Damage Absorbed | Illness Reduced |
-                | :--- | :--- | :--- |
-                | **Critical Failure** | Psion suffers 1 wound. | No effect. |
-                | **Ordinary** | Character absorbs 1 wound. | Reduce illness by one grade (e.g., Amazing to Good), simultaneously infecting the psion with that grade. |
-                | **Good** | Character absorbs 2 wounds or 1 mortal. | Reduce illness by two grades, transferring the ailment into the psion. |
-                | **Amazing** | Character absorbs 3 wounds or 1 mortal. | Transfers any illness from the patient into the psion. |
-
-                Once the character absorbs the damage or disease, he or she must either use
-                the **Biokinesis—heal** specialty skill, heal naturally, or receive medical or
-                psionic attention to alleviate the damage or cure the disease.
-
-                **Rank Benefits:**
-                - **At rank 6 [Displace Damage]**, the psionic character can transfer the damage to a different character, who must also be in physical contact with the psion, and who must be willing to take the damage. Any attempt to transfer the damage to a creature that does not consciously desire to accept the damage (such as a hostile character, or an unconscious one) results in the psion receiving the damage, as normal.
-                - **At rank 12 [Unwilling Transfer]**, the character can transfer the damage to an unwilling character. The psion must be touching both characters. Both characters must be alive when the skill is activated. The "donor" character will be healed of a number of damage points determined by the Biokinesis—transfer damage skill check. The damage points are then applied to the unwilling recipient. **Note that this benefit isn't received if the psion is wearing armor.**
-          - es:
-              name: Transferir Daño
-              description: |-
-                Al imponer las manos sobre otro personaje y realizar con éxito una tirada de
-                habilidad, el psiónico alivia el daño o la enfermedad de ese personaje
-                absorbiéndolos.
-
-                El daño que se puede absorber está ligado al resultado de una tirada de
-                habilidad:
-
-                | Resultado | Daño Absorbido | Enfermedad Reducida |
-                | :--- | :--- | :--- |
-                | **Fallo Crítico** | El personaje sufre 1 herida. | Sin efecto sobre el paciente. |
-                | **Ordinario** | El personaje absorbe 1 herida. | Reduce la enfermedad del paciente en un grado (por ejemplo, de Asombroso a Bueno), infectando simultáneamente al psiónico con ese grado de enfermedad. |
-                | **Bueno** | El personaje absorbe 2 heridas o 1 mortal. | Reduce la enfermedad del paciente en dos grados, transfiriendo la dolencia al psiónico. |
-                | **Asombroso** | El personaje absorbe 3 heridas o 1 mortal. | Transfiere cualquier enfermedad del paciente al psiónico. |
-
-                Una vez que el personaje absorbe el daño o la enfermedad, debe utilizar la
-                especialidad de **Bioquinesis—sanar**, curarse de forma natural o recibir
-                atención médica o psiónica para aliviar el daño o curar la enfermedad.
-
-                **Beneficios de Rango:**
-                - **Al rango 6 [Desplazar Daño (Displace Damage)]**, el personaje psiónico puede transferir el daño a un personaje diferente, que también deba estar en contacto físico con el psiónico y que deba estar dispuesto a recibir el daño. Cualquier intento de transferir el daño a una criatura que no desee conscientemente aceptar el daño (como un personaje hostil o uno inconsciente) hace que el psiónico reciba el daño, como es normal.
-                - **Al rango 12 [Transferencia Involuntaria (Unwilling Transfer)]**, el personaje puede transferir el daño a un personaje involuntario. El psiónico debe estar tocando a ambos personajes. Ambos personajes deben estar vivos tras activar la habilidad. El personaje "donante" será sanado de una cantidad de puntos de daño determinados por la tirada de habilidad de bioquinesis-transferir daño. Los puntos de daño se aplican entonces al receptor involuntario. **Ten en cuenta que este beneficio no se recibe si el psiónico lleva puesta una armadura.**
       visual-enhancement:
         attribute: CON
         cost: 3
@@ -572,13 +514,13 @@ items:
         trained_only: false
         localized:
           - en:
-              name: Sensory Attunement
+              name: Visual Enhancement
               description: "By psionically reshaping your visual organs and rewriting the neural pathways of the visual cortex, the character can shift their vision across different bands of the electromagnetic spectrum and map structural environments through biological signatures.\n\nTo activate this power, the character makes a skill check. For the duration of the power, the character gains **low-light vision** (equivalent to a feline's *tapetum lucidum*), allowing them to see in near-total darkness as if it were twilight. Additionally, the character receives a step bonus to all Awareness-perception checks involving sight (normal or augmented) based on the level of success:\n\n* **Ordinary Success:** Grants a -1 step bonus.\n* **Good Success:** Grants a -2 step bonus.\n* **Amazing Success:** Grants a -3 step bonus.\n\n**Physiological Side Effects:** The activation of this power causes visible, often disturbing biological shifts. At a minimum, the character’s pupils dilate fully and a reflective
                 membrane covers the iris, making the eyes glow in ambient light. Specific modes (see below) may cause the eyes to become faceted, multi-lensed, or cause sensory pits to open on the face, which can impair social interactions at the Gamemaster's discretion.\n\n**Operational Limitation:** Only one additional sight mode can be active at any given time. Shifting ocular biology is mutually exclusive; if the eyes are currently modified for infrared pit detection, they cannot simultaneously utilize the compound structure like those of mantis shrimp.  Switching between active modes requires a new activation of the power.\n\nNavigating while actively scanning through solid barriers slows the character to the \"easy swim\" rate.\n\n**Rank Benefits:**\n\n* **At rank 3 [Infrared Pit Detection]**, modeled after the loreal pits of vipers, the character integrates thermal imaging into their visual field. Specialized heat-sensing pits may visibly open near the tear ducts or temples. The character
                 can trace heat signatures, detect thermal footprints, and see living targets through low-density barriers (such as thin walls or foliage).\n\n* **At rank 6 [Foveal Resolution]**, utilizing the dual-fovea structure and deep-pit anatomy found in raptors like eagles, the character’s eyes function as an integrated telescopic scope. The character ignores the first +1 step penalty for range (Medium or Long). This benefit does **not** stack with scopes or binoculars. Additionally, the high-resolution clarity allows the character to detect involuntary microexpressions, granting a -1 step bonus to Awareness or Interaction checks made to discern lies or emotional states. And Investigation-Search checks.\n\n* **At rank 8 [Wide-Spectrum Sensorium]**, replicating the advanced eyes of the mantis shrimp, the character’s eyes become visibly faceted and compound. They can simultaneously perceive polarized light, ultraviolet radiation, and active electromagnetic emissions (radio waves and
                 sensor frequencies). This allows them to \"see\" active transmittors, like radio equipment, active sensors.\n\n* **At rank 12 [Cortical Integration]**, the character's is able to seamlessly morph this visual organs making impossible to notice them at plain sight, eliminating any social penalty. Additionally, the character can switch between modes as an action."
           - es:
-              name: 'Sintonía sensorial'
+              name: Mejora Visual
               description: |-
                 Al remodelar psiónicamente sus órganos visuales y reescribir las vías neuronales de la corteza visual, el Personaje puede cambiar su visión a través de diferentes bandas del espectro electromagnético y mapear entornos estructurales a través de firmas biológicas.
 
@@ -613,6 +555,28 @@ items:
           - rank: 12
             title: Cortical Integration
         extended_duration: true
+      transfer-vitality:
+        attribute: CON
+        cost: 2
+        url: /psionics/biokinesis/#transfer-vitality
+        trained_only: false
+        localized:
+          - en:
+              name: Transfer Vitality
+              description: "By establishing physical contact, the psion forces a parasitic bio-electric link that violently siphons biological energy from the target. The target suffers immediate metabolic collapse while the psion experiences a temporary surge in biological efficiency.\n\n**The Drain:** To activate this power, the character must be adjacent to an organic target around the same size or bigger than themself. A successful skill check imposes a step penalty on the target's **Stamina—endurance** and **Stamina—resist pain** checks, while the psion receives a corresponding step bonus to the same specialty skills.\n\n| Result | Target Penalty | Psion Bonus |\n| :--- | :--- | :--- |\n| **Crit. Failure** | No effect. | Psion suffers a +1 step penalty to CON checks |\n| **Ordinary** | +1 step penalty. | -1 step bonus. |\n| **Good** | +2 step penalty. | -2 step bonus. |\n| **Amazing** | +3 step penalty. | -3 step bonus. |\n\nThe effect lasts until the end of the next round. \n\n###
+                Rank Benefits\n**Rank 6 [Symbiotic Absorption]**, the psion can choose to convert the siphoned energy into raw regenerative material. Instead of taking the step bonus for themselves, the psion can heal:\n- **Good:** 2 wounds\n- **Amazing:** 3 wounds\n\n**Rank 9 [Channel Vitality]**, the psion can use this power to restore vitality to an ally instead of the psion. Both the recipient and the donor must be adjacent to the psion when the power is activated.\n\n**Rank 12 [Systemic Overdrive]**, the siphoning becomes so efficient that the psion can even use the energy to heal mortal damage:\n- **Ordinary:** 1 wound\n- **Good:** 2 wounds or 1 mortal\n- **Amazing:** 4 wounds or 2 mortals"
+          - es:
+              name: "Transferir Vitalidad"
+              description: "Al establecer contacto físico, el psión fuerza un vínculo bio‑eléctrico parasitario que sifona violentamente energía biológica del objetivo. El objetivo sufre un colapso metabólico inmediato mientras el psión experimenta un impulso temporal en su eficiencia biológica.\n\n**La Drenaje:** Para activar este poder, el personaje debe estar adyacente a un objetivo orgánico de tamaño similar o mayor. Una tirada de habilidad exitosa impone una penalización de paso a los chequeos de **Resistencia—aguante** y **Resistencia—resistir dolor** del objetivo, mientras que el psión recibe un bonificador de paso correspondiente a esas mismas habilidades.\n\n| Resultado | Penalización del objetivo | Bonificación del psión |\n| :--- | :--- | :--- |\n| **Fallo crítico** | No hay efecto. | El psión sufre una penalización de +1 paso a chequeos de CON |\n| **Ordinario** | Penalización de +1 paso. | Bonificación de -1 paso. |\n| **Bueno** | Penalización de +2 pasos. | Bonificación de
+                -2 pasos. |\n| **Asombroso** | Penalización de +3 pasos. | Bonificación de -3 pasos. |\n\nEl efecto dura hasta el final del siguiente asalto.\n\n### Beneficios de Rango\n**Rango 6 [Absorción simbiótica]**, el psión puede convertir la energía sifonada en material regenerativo. En lugar de tomar el bonificador de paso, el psión puede curar:\n- **Bueno:** 2 heridas\n- **Asombroso:** 3 heridas\n\n**Rango 9 [Canalizar vitalidad]**, el psión puede usar este poder para restaurar vitalidad a un aliado en lugar del psión. Tanto el receptor como el donante deben estar adyacentes al psión al activar el poder.\n\n**Rango 12 [Sobrecarga sistémica]**, la sifonación se vuelve tan eficiente que el psión puede incluso usar la energía para curar daño mortal:\n- **Ordinario:** 1 herida\n- **Bueno:** 2 heridas o 1 mortal\n- **Asombroso:** 4 heridas o 2 mortales"
+        rank_benefits:
+          - rank: 6
+            title: Symbiotic Absorption
+          - rank: 9
+            title: Channel Vitality
+          - rank: 12
+            title: Systemic Overdrive
+        extended_duration: false
     trained_only: true
   ESP:
     attribute: INT

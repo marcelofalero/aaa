@@ -19,7 +19,7 @@ just the broad skill.
 ---
 
 ## Contact
-{{< specialty attr="PER" untrained="yes" cost="3" extended="true" >}}}}
+{{< specialty attr="PER" untrained="yes" cost="3" extended="true" >}}
 
 With this skill, a character can send and receive thoughts to and from another
 character, usually for the purpose of exchanging information. Modifiers may
@@ -37,7 +37,7 @@ result of a skill check:
 ---
 
 ## Datalink
-{{< specialty attr="PER" untrained="no" cost="4" extended="true" >}}}}
+{{< specialty attr="PER" untrained="no" cost="4" extended="true" >}}
 
 This skill is the ability to link one's mind with a computer (or a cybernetic
 machine, if the optional rules for cybertech are being used) without using a
@@ -58,7 +58,7 @@ protection, protocol, and save.
 ---
 
 ## Drain
-{{< specialty attr="PER" untrained="no" cost="4" >}}}}
+{{< specialty attr="PER" untrained="no" cost="4" >}}
 
 The character becomes able to sap the energy of another living being from a
 short distance away (range 1/2/4). When the psion purchases the skill, he or
@@ -74,7 +74,7 @@ his or her score improves to at least 1.
 ---
 
 ## Empathic Projection
-{{< specialty attr="PER" untrained="yes" cost="3" >}}}}
+{{< specialty attr="PER" untrained="yes" cost="3" >}}
 
 With this skill, a character may alter the mood of other beings—even those
 with whom the character does not share a language, such as foreigners, aliens,
@@ -94,7 +94,7 @@ to the skill check.
 ---
 
 ## Illusion
-{{< specialty attr="PER" untrained="yes" cost="3" extended="true" >}}}}
+{{< specialty attr="PER" untrained="yes" cost="3" extended="true" >}}
 
 This skill enables a character to fool a target's mind by projecting an
 illusion into it. An illusion can be a sight or a sound, but no other senses
@@ -117,7 +117,7 @@ effective against that individual.
 ---
 
 ## Mind Blast
-{{< specialty attr="PER" untrained="no" cost="4" >}}}}
+{{< specialty attr="PER" untrained="no" cost="4" >}}
 
 This skill allows the user to direct a powerful blast of pure mental energy at
 another mind. The target must be within visual contact and no more than 40
@@ -133,7 +133,7 @@ d4+1s/d4+2s/d8+2s.
 ---
 
 ## Mind Shield
-{{< specialty attr="PER" untrained="yes" cost="2" >}}}}
+{{< specialty attr="PER" untrained="yes" cost="2" >}}
 
 This skill allows a character to establish a mental defense against psionic
 powers. Mind shield protects against these psionic skills: contact, drain,
@@ -153,7 +153,7 @@ psionic power directed against it, at which point it collapses.
 ---
 
 ## Mind Wipe
-{{< specialty attr="PER" untrained="no" cost="5" >}}}}
+{{< specialty attr="PER" untrained="no" cost="5" >}}
 
 With this skill, a psionic character can erase memories from a target's mind.
 One minute's memories can be erased for every rank the character has in mind
@@ -176,7 +176,7 @@ remember how these things happened.
 ---
 
 ## Psychic Armor
-{{< specialty attr="PER" untrained="yes" cost="2" >}}}}
+{{< specialty attr="PER" untrained="yes" cost="2" >}}
 
 This skill creates a psychic "buffer zone" around the character, which helps
 to lessen the effect of drain, mind blast, and tire attacks directed at him or
@@ -199,7 +199,7 @@ projection.
 ---
 
 ## Psychic Projection
-{{< specialty attr="PER" untrained="yes" cost="5" >}}}}
+{{< specialty attr="PER" untrained="yes" cost="5" >}}
 
 With this skill, a character can separate mind from body and travel wherever
 desired, leaving his or her physical form behind. The psion's consciousness is
@@ -219,7 +219,7 @@ Telepathy-psychic projection skill check.
 ---
 
 ## Suggest
-{{< specialty attr="PER" untrained="yes" cost="3" >}}}}
+{{< specialty attr="PER" untrained="yes" cost="3" >}}
 
 This specialty skill allows a character to mesmerize another person. If
 successful, suggest plants a thought into another person's mind and convinces
@@ -239,7 +239,7 @@ character's nature would provide a severe penalty of +3 steps or more).
 ---
 
 ## Tire
-{{< specialty attr="PER" untrained="yes" cost="2" >}}}}
+{{< specialty attr="PER" untrained="yes" cost="2" >}}
 
 This skill inflicts fatigue damage upon a target, perhaps prompting that
 character to decide that he or she is in need of rest. The target must be
@@ -254,7 +254,7 @@ point; Good, 2 points; Amazing, 3 points.
 ---
 
 ## Undo
-{{< specialty attr="PER" untrained="yes" cost="3" >}}}}
+{{< specialty attr="PER" untrained="yes" cost="3" >}}
 
 With this skill, a telepath can reverse the effects of a successful use of
 Telepathy-illusion, mind wipe, or suggest. The telepath must achieve a better
@@ -265,7 +265,7 @@ per rank of difference if the original user's rank is higher, or a
 ---
 
 ## Guidance
-{{< specialty attr="PER" untrained="no" cost="4" extended="true" >}}}}
+{{< specialty attr="PER" untrained="no" cost="4" extended="true" >}}
 
 With a successful skill check, the telepath can implant one of his or her
 non-psionic skills in the mind of a subject for as long as he or she continues
@@ -284,7 +284,7 @@ telepath using guidance!
 ---
 
 ## Subdual
-{{< specialty attr="PER" untrained="no" cost="3" >}}}}
+{{< specialty attr="PER" untrained="no" cost="3" >}}
 
 This skill allows the user to engender feelings of calm, or even detachment,
 in any intelligent species. The target must be within visual range. With an

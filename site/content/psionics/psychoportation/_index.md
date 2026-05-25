@@ -17,7 +17,7 @@ others as well.
 ---
 
 ## Alter Speed
-{{< specialty attr="WIL" untrained="no" cost="4" extended="true" >}}}}
+{{< specialty attr="WIL" untrained="no" cost="4" extended="true" >}}
 
 By concentrating, the character can accelerate or decelerate himself or
 herself or another living target within 8 meters. The psion must decide
@@ -33,7 +33,7 @@ check. The effect on the target's action check score depends on the success:
 ---
 
 ## Apportation
-{{< specialty attr="WIL" untrained="no" cost="6" >}}}}
+{{< specialty attr="WIL" untrained="no" cost="6" >}}
 
 This ability allows a character to summon an inanimate object from a distant
 location or to banish an object to another location. The psion must have seen
@@ -54,7 +54,7 @@ can be apported depends on the skill rank and the success:
 ---
 
 ## Duplicate
-{{< specialty attr="WIL" untrained="no" cost="6" >}}}}
+{{< specialty attr="WIL" untrained="no" cost="6" >}}
 
 This ability allows a character to summon a duplicate of himself or herself
 from another location in the multiverse. The duplicate is identical in every
@@ -71,7 +71,7 @@ that the duplicate persists depends on the success:
 ---
 
 ## Teleportation
-{{< specialty attr="WIL" untrained="no" cost="5" >}}}}
+{{< specialty attr="WIL" untrained="no" cost="5" >}}
 
 Teleportation allows a psion to instantaneously move from his or her current
 location to another. The psion can also teleport objects or other characters.
@@ -86,7 +86,7 @@ The range and weight limit depend on the skill rank and the success:
 ---
 
 ## Timeslip
-{{< specialty attr="WIL" untrained="no" cost="6" >}}}}
+{{< specialty attr="WIL" untrained="no" cost="6" >}}
 
 This ability allows a psion to move himself or herself forward in time. To
 everyone else, the psion appears to vanish instantaneously and then reappear
@@ -102,7 +102,7 @@ later. The duration of the jump depends on the success:
 ---
 
 ## Dimension Walk
-{{< specialty attr="WIL" untrained="no" cost="6" >}}}}
+{{< specialty attr="WIL" untrained="no" cost="6" >}}
 
 Jump between parallel dimensions or tangent timelines.
 

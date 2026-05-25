@@ -414,11 +414,11 @@ on("change:bioweapon_is_trained sheet:opened", function() { updateSkillMacro("Bi
 on("change:clamber_is_trained sheet:opened", function() { updateSkillMacro("Clamber", "Biokinesis - Clamber", "https://aaa.dimble.net/core-mechanics/psionics/biokinesis/#clamber", 0, "specialty", "Biokinesis"); });
 on("change:controlmetabolism_is_trained sheet:opened", function() { updateSkillMacro("ControlMetabolism", "Biokinesis - Control Metabolism", "https://aaa.dimble.net/core-mechanics/psionics/biokinesis/#control-metabolism", 0, "specialty", "Biokinesis"); });
 on("change:heal_is_trained sheet:opened", function() { updateSkillMacro("Heal", "Biokinesis - Heal", "https://aaa.dimble.net/core-mechanics/psionics/biokinesis/#heal", 1, "specialty", "Biokinesis"); });
-on("change:intangibility_is_trained sheet:opened", function() { updateSkillMacro("Intangibility", "Biokinesis - Intangibility", "https://aaa.dimble.net/core-mechanics/psionics/biokinesis/#intangibility", 1, "specialty", "Biokinesis"); });
 on("change:morph_is_trained sheet:opened", function() { updateSkillMacro("Morph", "Biokinesis - Morph", "https://aaa.dimble.net/core-mechanics/psionics/biokinesis/#morph", 1, "specialty", "Biokinesis"); });
 on("change:rejuvenate_is_trained sheet:opened", function() { updateSkillMacro("Rejuvenate", "Biokinesis - Rejuvenate", "https://aaa.dimble.net/core-mechanics/psionics/biokinesis/#rejuvenate", 0, "specialty", "Biokinesis"); });
 on("change:shatter_is_trained sheet:opened", function() { updateSkillMacro("Shatter", "Biokinesis - Shatter", "https://aaa.dimble.net/core-mechanics/psionics/biokinesis/#shatter", 0, "specialty", "Biokinesis"); });
-on("change:transferdamage_is_trained sheet:opened", function() { updateSkillMacro("TransferDamage", "Biokinesis - Transfer Damage", "https://aaa.dimble.net/core-mechanics/psionics/biokinesis/#transfer-damage", 0, "specialty", "Biokinesis"); });
+on("change:transfervitality_is_trained sheet:opened", function() { updateSkillMacro("TransferVitality", "Biokinesis - Transfer Vitality", "https://aaa.dimble.net/core-mechanics/psionics/biokinesis/#transfer-vitality", 0, "specialty", "Biokinesis"); });
+on("change:visualenhancement_is_trained sheet:opened", function() { updateSkillMacro("VisualEnhancement", "Biokinesis - Visual Enhancement", "https://aaa.dimble.net/core-mechanics/psionics/biokinesis/#visual-enhancement", 0, "specialty", "Biokinesis"); });
 on("change:esp sheet:opened", function() { updateSkillMacro("ESP", "ESP", "https://aaa.dimble.net/core-mechanics/psionics/esp", 1, "broad", ""); });
 on("change:battlemind_is_trained sheet:opened", function() { updateSkillMacro("BattleMind", "ESP - Battle Mind", "https://aaa.dimble.net/core-mechanics/psionics/esp/#battle-mind", 1, "specialty", "ESP"); });
 on("change:clairaudience_is_trained sheet:opened", function() { updateSkillMacro("Clairaudience", "ESP - Clairaudience", "https://aaa.dimble.net/core-mechanics/psionics/esp/#clairaudience", 0, "specialty", "ESP"); });
@@ -433,6 +433,7 @@ on("change:psychometry_is_trained sheet:opened", function() { updateSkillMacro("
 on("change:psychoportation sheet:opened", function() { updateSkillMacro("Psychoportation", "Psychoportation", "https://aaa.dimble.net/core-mechanics/psionics/psychoportation", 1, "broad", ""); });
 on("change:alterspeed_is_trained sheet:opened", function() { updateSkillMacro("AlterSpeed", "Psychoportation - Alter Speed", "https://aaa.dimble.net/core-mechanics/psionics/psychoportation/#alter-speed", 1, "specialty", "Psychoportation"); });
 on("change:apportation_is_trained sheet:opened", function() { updateSkillMacro("Apportation", "Psychoportation - Apportation", "https://aaa.dimble.net/core-mechanics/psionics/psychoportation/#apportation", 1, "specialty", "Psychoportation"); });
+on("change:dimensionwalk_is_trained sheet:opened", function() { updateSkillMacro("DimensionWalk", "Psychoportation - Dimension Walk", "https://aaa.dimble.net/core-mechanics/psionics/psychoportation/#dimension-walk", 1, "specialty", "Psychoportation"); });
 on("change:duplicate_is_trained sheet:opened", function() { updateSkillMacro("Duplicate", "Psychoportation - Duplicate", "https://aaa.dimble.net/core-mechanics/psionics/psychoportation/#duplicate", 1, "specialty", "Psychoportation"); });
 on("change:teleportation_is_trained sheet:opened", function() { updateSkillMacro("Teleportation", "Psychoportation - Teleportation", "https://aaa.dimble.net/core-mechanics/psionics/psychoportation/#teleportation", 1, "specialty", "Psychoportation"); });
 on("change:timeslip_is_trained sheet:opened", function() { updateSkillMacro("Timeslip", "Psychoportation - Timeslip", "https://aaa.dimble.net/core-mechanics/psionics/psychoportation/#timeslip", 1, "specialty", "Psychoportation"); });
@@ -741,11 +742,11 @@ on("change:bioweaponrank sheet:opened", function() { getAttrs(["BioweaponRank"],
 on("change:clamberrank sheet:opened", function() { getAttrs(["ClamberRank"], function(v) { setAttrs({ "Clamber_is_trained": ((parseInt(v["ClamberRank"]) || 0) > 0 ? 1 : 0) }); }); });
 on("change:controlmetabolismrank sheet:opened", function() { getAttrs(["ControlMetabolismRank"], function(v) { setAttrs({ "ControlMetabolism_is_trained": ((parseInt(v["ControlMetabolismRank"]) || 0) > 0 ? 1 : 0) }); }); });
 on("change:healrank sheet:opened", function() { getAttrs(["HealRank"], function(v) { setAttrs({ "Heal_is_trained": ((parseInt(v["HealRank"]) || 0) > 0 ? 1 : 0) }); }); });
-on("change:intangibilityrank sheet:opened", function() { getAttrs(["IntangibilityRank"], function(v) { setAttrs({ "Intangibility_is_trained": ((parseInt(v["IntangibilityRank"]) || 0) > 0 ? 1 : 0) }); }); });
 on("change:morphrank sheet:opened", function() { getAttrs(["MorphRank"], function(v) { setAttrs({ "Morph_is_trained": ((parseInt(v["MorphRank"]) || 0) > 0 ? 1 : 0) }); }); });
 on("change:rejuvenaterank sheet:opened", function() { getAttrs(["RejuvenateRank"], function(v) { setAttrs({ "Rejuvenate_is_trained": ((parseInt(v["RejuvenateRank"]) || 0) > 0 ? 1 : 0) }); }); });
 on("change:shatterrank sheet:opened", function() { getAttrs(["ShatterRank"], function(v) { setAttrs({ "Shatter_is_trained": ((parseInt(v["ShatterRank"]) || 0) > 0 ? 1 : 0) }); }); });
-on("change:transferdamagerank sheet:opened", function() { getAttrs(["TransferDamageRank"], function(v) { setAttrs({ "TransferDamage_is_trained": ((parseInt(v["TransferDamageRank"]) || 0) > 0 ? 1 : 0) }); }); });
+on("change:transfervitalityrank sheet:opened", function() { getAttrs(["TransferVitalityRank"], function(v) { setAttrs({ "TransferVitality_is_trained": ((parseInt(v["TransferVitalityRank"]) || 0) > 0 ? 1 : 0) }); }); });
+on("change:visualenhancementrank sheet:opened", function() { getAttrs(["VisualEnhancementRank"], function(v) { setAttrs({ "VisualEnhancement_is_trained": ((parseInt(v["VisualEnhancementRank"]) || 0) > 0 ? 1 : 0) }); }); });
 on("change:battlemindrank sheet:opened", function() { getAttrs(["BattleMindRank"], function(v) { setAttrs({ "BattleMind_is_trained": ((parseInt(v["BattleMindRank"]) || 0) > 0 ? 1 : 0) }); }); });
 on("change:clairaudiencerank sheet:opened", function() { getAttrs(["ClairaudienceRank"], function(v) { setAttrs({ "Clairaudience_is_trained": ((parseInt(v["ClairaudienceRank"]) || 0) > 0 ? 1 : 0) }); }); });
 on("change:clairvoyancerank sheet:opened", function() { getAttrs(["ClairvoyanceRank"], function(v) { setAttrs({ "Clairvoyance_is_trained": ((parseInt(v["ClairvoyanceRank"]) || 0) > 0 ? 1 : 0) }); }); });
@@ -758,6 +759,7 @@ on("change:precognitionrank sheet:opened", function() { getAttrs(["PrecognitionR
 on("change:psychometryrank sheet:opened", function() { getAttrs(["PsychometryRank"], function(v) { setAttrs({ "Psychometry_is_trained": ((parseInt(v["PsychometryRank"]) || 0) > 0 ? 1 : 0) }); }); });
 on("change:alterspeedrank sheet:opened", function() { getAttrs(["AlterSpeedRank"], function(v) { setAttrs({ "AlterSpeed_is_trained": ((parseInt(v["AlterSpeedRank"]) || 0) > 0 ? 1 : 0) }); }); });
 on("change:apportationrank sheet:opened", function() { getAttrs(["ApportationRank"], function(v) { setAttrs({ "Apportation_is_trained": ((parseInt(v["ApportationRank"]) || 0) > 0 ? 1 : 0) }); }); });
+on("change:dimensionwalkrank sheet:opened", function() { getAttrs(["DimensionWalkRank"], function(v) { setAttrs({ "DimensionWalk_is_trained": ((parseInt(v["DimensionWalkRank"]) || 0) > 0 ? 1 : 0) }); }); });
 on("change:duplicaterank sheet:opened", function() { getAttrs(["DuplicateRank"], function(v) { setAttrs({ "Duplicate_is_trained": ((parseInt(v["DuplicateRank"]) || 0) > 0 ? 1 : 0) }); }); });
 on("change:teleportationrank sheet:opened", function() { getAttrs(["TeleportationRank"], function(v) { setAttrs({ "Teleportation_is_trained": ((parseInt(v["TeleportationRank"]) || 0) > 0 ? 1 : 0) }); }); });
 on("change:timesliprank sheet:opened", function() { getAttrs(["TimeslipRank"], function(v) { setAttrs({ "Timeslip_is_trained": ((parseInt(v["TimeslipRank"]) || 0) > 0 ? 1 : 0) }); }); });
@@ -4610,7 +4612,7 @@ on("change:undorank sheet:opened", function() { getAttrs(["UndoRank"], function(
 						<div class="sheet-roll-container">
 							<button type="roll" name="roll_Bioweapon" class="sheet-roll-skill" value="@{Bioweapon_macro}"></button>
 						</div>
-						<div class="sheet-skill-name">Bioweapon <button type="roll" name="roll_Bioweapon_link" class="sheet-skill-link" value="[Bioweapon Wiki](https://aaa.dimble.net/core-mechanics/psionics/biokinesis/#bioweapon)">&#x2197;</button><div class="sheet-skill-info"><span class="sheet-info-icon">i</span><div class="sheet-tooltip"><span class="sheet-tooltip-cost">Base cost: 3</span><span class="sheet-tooltip-separator"></span><span class="sheet-tooltip-rank"><b>R3</b> Increased Damage</span><span class="sheet-tooltip-rank"><b>R6</b> Increased Damage</span><span class="sheet-tooltip-rank"><b>R9</b> Increased Damage</span><span class="sheet-tooltip-rank"><b>R12</b> Improved Damage</span></div></div></div>
+						<div class="sheet-skill-name">Bioweapon <button type="roll" name="roll_Bioweapon_link" class="sheet-skill-link" value="[Bioweapon Wiki](https://aaa.dimble.net/core-mechanics/psionics/biokinesis/#bioweapon)">&#x2197;</button><div class="sheet-skill-info"><span class="sheet-info-icon">i</span><div class="sheet-tooltip"><span class="sheet-tooltip-cost">Base cost: 3</span><span class="sheet-tooltip-separator"></span><span class="sheet-tooltip-rank"><b>R3</b> Increased Damage</span><span class="sheet-tooltip-rank"><b>R6</b> Increased Damage</span><span class="sheet-tooltip-rank"><b>R9</b> Improved Damage</span><span class="sheet-tooltip-rank"><b>R12</b> Increased Damage</span></div></div></div>
 						<div class="sheet-skill-ability-label">CON</div>
 						<input type="number" name="attr_BioweaponRank" class="sheet-score" value="0">
 						<div class="sheet-skill-score-cell">
@@ -4668,22 +4670,6 @@ on("change:undorank sheet:opened", function() { getAttrs(["UndoRank"], function(
 						</div>
 					</div>
 					<div class="sheet-skill-row sheet-spec">
-						<input type="checkbox" name="attr_Intangibility_is_trained" class="sheet-trained-check" value="1" style="display: none;">
-						<input type="hidden" name="attr_Intangibility_macro" value="">
-						<input type="hidden" name="attr_Intangibility_is_trained_only" value="1">
-						<div class="sheet-roll-container">
-							<button type="roll" name="roll_Intangibility" class="sheet-roll-skill" value="@{Intangibility_macro}"></button>
-						</div>
-						<div class="sheet-skill-name sheet-trained-only">Intangibility <button type="roll" name="roll_Intangibility_link" class="sheet-skill-link" value="[Intangibility Wiki](https://aaa.dimble.net/core-mechanics/psionics/biokinesis/#intangibility)">&#x2197;</button><div class="sheet-skill-info"><span class="sheet-info-icon">i</span><div class="sheet-tooltip"><span class="sheet-tooltip-trained">Trained Only</span><span class="sheet-tooltip-separator"></span><span class="sheet-tooltip-cost">Base cost: 4</span><span class="sheet-tooltip-separator"></span><span class="sheet-tooltip-rank"><b>R4</b> Movement Bonus</span><span class="sheet-tooltip-rank"><b>R6</b> Dodge</span><span class="sheet-tooltip-rank"><b>R8</b> Movement Bonus</span><span class="sheet-tooltip-rank"><b>R12</b> Selective Intangibility</span></div></div></div>
-						<div class="sheet-skill-ability-label">CON</div>
-						<input type="number" name="attr_IntangibilityRank" class="sheet-score" value="0">
-						<div class="sheet-skill-score-cell">
-							<input type="text" name="attr_IntangibilityO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{IntangibilityRank}+@{Constitution})*@{Biokinesis}) * (@{IntangibilityRank}/(@{IntangibilityRank}+0.001)) + 0.5))">/
-							<input type="text" name="attr_IntangibilityG" class="sheet-scoredisabled" disabled="true" value="(floor(@{IntangibilityO}/2))">/
-							<input type="text" name="attr_IntangibilityA" class="sheet-scoredisabled" disabled="true" value="(floor(@{IntangibilityO}/4))">
-						</div>
-					</div>
-					<div class="sheet-skill-row sheet-spec">
 						<input type="checkbox" name="attr_Morph_is_trained" class="sheet-trained-check" value="1" style="display: none;">
 						<input type="hidden" name="attr_Morph_macro" value="">
 						<input type="hidden" name="attr_Morph_is_trained_only" value="1">
@@ -4722,7 +4708,7 @@ on("change:undorank sheet:opened", function() { getAttrs(["UndoRank"], function(
 						<div class="sheet-roll-container">
 							<button type="roll" name="roll_Shatter" class="sheet-roll-skill" value="@{Shatter_macro}"></button>
 						</div>
-						<div class="sheet-skill-name">Shatter <button type="roll" name="roll_Shatter_link" class="sheet-skill-link" value="[Shatter Wiki](https://aaa.dimble.net/core-mechanics/psionics/biokinesis/#shatter)">&#x2197;</button><div class="sheet-skill-info"><span class="sheet-info-icon">i</span><div class="sheet-tooltip"><span class="sheet-tooltip-cost">Base cost: 3</span><span class="sheet-tooltip-separator"></span><span class="sheet-tooltip-rank"><b>R4</b> Increased Effect</span><span class="sheet-tooltip-rank"><b>R8</b> Increased Effect</span><span class="sheet-tooltip-rank"><b>R12</b> Increased Effect</span></div></div></div>
+						<div class="sheet-skill-name">Shatter <button type="roll" name="roll_Shatter_link" class="sheet-skill-link" value="[Shatter Wiki](https://aaa.dimble.net/core-mechanics/psionics/biokinesis/#shatter)">&#x2197;</button><div class="sheet-skill-info"><span class="sheet-info-icon">i</span><div class="sheet-tooltip"><span class="sheet-tooltip-cost">Base cost: 3</span><span class="sheet-tooltip-separator"></span><span class="sheet-tooltip-rank"><b>R6</b> Increased Quality</span><span class="sheet-tooltip-rank"><b>R8</b> Improved Destabilization</span><span class="sheet-tooltip-rank"><b>R12</b> Armor Degradation</span></div></div></div>
 						<div class="sheet-skill-ability-label">CON</div>
 						<input type="number" name="attr_ShatterRank" class="sheet-score" value="0">
 						<div class="sheet-skill-score-cell">
@@ -4732,19 +4718,35 @@ on("change:undorank sheet:opened", function() { getAttrs(["UndoRank"], function(
 						</div>
 					</div>
 					<div class="sheet-skill-row sheet-spec">
-						<input type="checkbox" name="attr_TransferDamage_is_trained" class="sheet-trained-check" value="1" style="display: none;">
-						<input type="hidden" name="attr_TransferDamage_macro" value="">
-						<input type="hidden" name="attr_TransferDamage_is_trained_only" value="0">
+						<input type="checkbox" name="attr_TransferVitality_is_trained" class="sheet-trained-check" value="1" style="display: none;">
+						<input type="hidden" name="attr_TransferVitality_macro" value="">
+						<input type="hidden" name="attr_TransferVitality_is_trained_only" value="0">
 						<div class="sheet-roll-container">
-							<button type="roll" name="roll_TransferDamage" class="sheet-roll-skill" value="@{TransferDamage_macro}"></button>
+							<button type="roll" name="roll_TransferVitality" class="sheet-roll-skill" value="@{TransferVitality_macro}"></button>
 						</div>
-						<div class="sheet-skill-name">Transfer Damage <button type="roll" name="roll_TransferDamage_link" class="sheet-skill-link" value="[Transfer Damage Wiki](https://aaa.dimble.net/core-mechanics/psionics/biokinesis/#transfer-damage)">&#x2197;</button><div class="sheet-skill-info"><span class="sheet-info-icon">i</span><div class="sheet-tooltip"><span class="sheet-tooltip-cost">Base cost: 2</span><span class="sheet-tooltip-separator"></span><span class="sheet-tooltip-rank"><b>R6</b> Displace Damage</span><span class="sheet-tooltip-rank"><b>R12</b> Unwilling Transfer</span></div></div></div>
+						<div class="sheet-skill-name">Transfer Vitality <button type="roll" name="roll_TransferVitality_link" class="sheet-skill-link" value="[Transfer Vitality Wiki](https://aaa.dimble.net/core-mechanics/psionics/biokinesis/#transfer-vitality)">&#x2197;</button><div class="sheet-skill-info"><span class="sheet-info-icon">i</span><div class="sheet-tooltip"><span class="sheet-tooltip-cost">Base cost: 2</span><span class="sheet-tooltip-separator"></span><span class="sheet-tooltip-rank"><b>R6</b> Symbiotic Absorption</span><span class="sheet-tooltip-rank"><b>R9</b> Channel Vitality</span><span class="sheet-tooltip-rank"><b>R12</b> Systemic Overdrive</span></div></div></div>
 						<div class="sheet-skill-ability-label">CON</div>
-						<input type="number" name="attr_TransferDamageRank" class="sheet-score" value="0">
+						<input type="number" name="attr_TransferVitalityRank" class="sheet-score" value="0">
 						<div class="sheet-skill-score-cell">
-							<input type="text" name="attr_TransferDamageO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{TransferDamageRank}*@{Biokinesis})+@{Constitution})/(2-@{Biokinesis})))">/
-							<input type="text" name="attr_TransferDamageG" class="sheet-scoredisabled" disabled="true" value="(floor(@{TransferDamageO}/2))">/
-							<input type="text" name="attr_TransferDamageA" class="sheet-scoredisabled" disabled="true" value="(floor(@{TransferDamageO}/4))">
+							<input type="text" name="attr_TransferVitalityO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{TransferVitalityRank}*@{Biokinesis})+@{Constitution})/(2-@{Biokinesis})))">/
+							<input type="text" name="attr_TransferVitalityG" class="sheet-scoredisabled" disabled="true" value="(floor(@{TransferVitalityO}/2))">/
+							<input type="text" name="attr_TransferVitalityA" class="sheet-scoredisabled" disabled="true" value="(floor(@{TransferVitalityO}/4))">
+						</div>
+					</div>
+					<div class="sheet-skill-row sheet-spec">
+						<input type="checkbox" name="attr_VisualEnhancement_is_trained" class="sheet-trained-check" value="1" style="display: none;">
+						<input type="hidden" name="attr_VisualEnhancement_macro" value="">
+						<input type="hidden" name="attr_VisualEnhancement_is_trained_only" value="0">
+						<div class="sheet-roll-container">
+							<button type="roll" name="roll_VisualEnhancement" class="sheet-roll-skill" value="@{VisualEnhancement_macro}"></button>
+						</div>
+						<div class="sheet-skill-name">Visual Enhancement <button type="roll" name="roll_VisualEnhancement_link" class="sheet-skill-link" value="[Visual Enhancement Wiki](https://aaa.dimble.net/core-mechanics/psionics/biokinesis/#visual-enhancement)">&#x2197;</button><div class="sheet-skill-info"><span class="sheet-info-icon">i</span><div class="sheet-tooltip"><span class="sheet-tooltip-cost">Base cost: 3</span><span class="sheet-tooltip-separator"></span><span class="sheet-tooltip-rank"><b>R3</b> Infrared Pit Detection</span><span class="sheet-tooltip-rank"><b>R6</b> Foveal Resolution</span><span class="sheet-tooltip-rank"><b>R8</b> Wide-Spectrum Sensorium</span><span class="sheet-tooltip-rank"><b>R12</b> Cortical Integration</span></div></div></div>
+						<div class="sheet-skill-ability-label">CON</div>
+						<input type="number" name="attr_VisualEnhancementRank" class="sheet-score" value="0">
+						<div class="sheet-skill-score-cell">
+							<input type="text" name="attr_VisualEnhancementO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{VisualEnhancementRank}*@{Biokinesis})+@{Constitution})/(2-@{Biokinesis})))">/
+							<input type="text" name="attr_VisualEnhancementG" class="sheet-scoredisabled" disabled="true" value="(floor(@{VisualEnhancementO}/2))">/
+							<input type="text" name="attr_VisualEnhancementA" class="sheet-scoredisabled" disabled="true" value="(floor(@{VisualEnhancementO}/4))">
 						</div>
 					</div>
 				</div>
@@ -4992,6 +4994,22 @@ on("change:undorank sheet:opened", function() { getAttrs(["UndoRank"], function(
 						</div>
 					</div>
 					<div class="sheet-skill-row sheet-spec">
+						<input type="checkbox" name="attr_DimensionWalk_is_trained" class="sheet-trained-check" value="1" style="display: none;">
+						<input type="hidden" name="attr_DimensionWalk_macro" value="">
+						<input type="hidden" name="attr_DimensionWalk_is_trained_only" value="1">
+						<div class="sheet-roll-container">
+							<button type="roll" name="roll_DimensionWalk" class="sheet-roll-skill" value="@{DimensionWalk_macro}"></button>
+						</div>
+						<div class="sheet-skill-name sheet-trained-only">Dimension Walk <button type="roll" name="roll_DimensionWalk_link" class="sheet-skill-link" value="[Dimension Walk Wiki](https://aaa.dimble.net/core-mechanics/psionics/psychoportation/#dimension-walk)">&#x2197;</button><div class="sheet-skill-info"><span class="sheet-info-icon">i</span><div class="sheet-tooltip"><span class="sheet-tooltip-trained">Trained Only</span><span class="sheet-tooltip-separator"></span><span class="sheet-tooltip-cost">Base cost: 6</span></div></div></div>
+						<div class="sheet-skill-ability-label">WIL</div>
+						<input type="number" name="attr_DimensionWalkRank" class="sheet-score" value="0">
+						<div class="sheet-skill-score-cell">
+							<input type="text" name="attr_DimensionWalkO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{DimensionWalkRank}+@{Will})*@{Psychoportation}) * (@{DimensionWalkRank}/(@{DimensionWalkRank}+0.001)) + 0.5))">/
+							<input type="text" name="attr_DimensionWalkG" class="sheet-scoredisabled" disabled="true" value="(floor(@{DimensionWalkO}/2))">/
+							<input type="text" name="attr_DimensionWalkA" class="sheet-scoredisabled" disabled="true" value="(floor(@{DimensionWalkO}/4))">
+						</div>
+					</div>
+					<div class="sheet-skill-row sheet-spec">
 						<input type="checkbox" name="attr_Duplicate_is_trained" class="sheet-trained-check" value="1" style="display: none;">
 						<input type="hidden" name="attr_Duplicate_macro" value="">
 						<input type="hidden" name="attr_Duplicate_is_trained_only" value="1">
@@ -5200,7 +5218,7 @@ on("change:undorank sheet:opened", function() { getAttrs(["UndoRank"], function(
 						<div class="sheet-roll-container">
 							<button type="roll" name="roll_SheyasClutch" class="sheet-roll-skill" value="@{SheyasClutch_macro}"></button>
 						</div>
-						<div class="sheet-skill-name sheet-trained-only">Sheya's Clutch <button type="roll" name="roll_SheyasClutch_link" class="sheet-skill-link" value="[Sheya's Clutch Wiki](https://aaa.dimble.net/core-mechanics/psionics/telekinesis/#sheyas-clutch)">&#x2197;</button><div class="sheet-skill-info"><span class="sheet-info-icon">i</span><div class="sheet-tooltip"><span class="sheet-tooltip-trained">Trained Only</span><span class="sheet-tooltip-separator"></span><span class="sheet-tooltip-cost">Base cost: 4</span><span class="sheet-tooltip-separator"></span><span class="sheet-tooltip-rank"><b>R4</b> Increased Damage</span><span class="sheet-tooltip-rank"><b>R8</b> Increased Damage</span><span class="sheet-tooltip-rank"><b>R12</b> Multiple Targets</span></div></div></div>
+						<div class="sheet-skill-name sheet-trained-only">Sheya's Clutch <button type="roll" name="roll_SheyasClutch_link" class="sheet-skill-link" value="[Sheya's Clutch Wiki](https://aaa.dimble.net/core-mechanics/psionics/telekinesis/#sheyas-clutch)">&#x2197;</button><div class="sheet-skill-info"><span class="sheet-info-icon">i</span><div class="sheet-tooltip"><span class="sheet-tooltip-trained">Trained Only</span><span class="sheet-tooltip-separator"></span><span class="sheet-tooltip-cost">Base cost: 5</span></div></div></div>
 						<div class="sheet-skill-ability-label">WIL</div>
 						<input type="number" name="attr_SheyasClutchRank" class="sheet-score" value="0">
 						<div class="sheet-skill-score-cell">
