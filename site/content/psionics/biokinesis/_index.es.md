@@ -17,7 +17,7 @@ relacionadas, excepto aquellas que no pueden usarse sin entrenamiento.
 ---
 
 ## Bioarmadura
-{{< specialty attr="CON" untrained="yes" cost="3" >}}}}
+{{< specialty attr="CON" untrained="yes" cost="3" >}}
 
 Esta habilidad refuerza psiónicamente la piel de Personaje, ayudando a protegerla del daño. Esta "armadura corporal" proporciona (LI d6/HI d6/En d4) puntos de protección contra daños, pero no protege contra ataques psiónicos. (Consulte Telepatía para conocer formas de evitar ataques psiónicos).
 
@@ -37,7 +37,7 @@ El endurecimiento de la piel perjudica el movimiento del Personaje de la misma m
 ---
 
 ## Bioarma
-{{< specialty attr="CON" untrained="yes" cost="3" extended="true" >}}}}
+{{< specialty attr="CON" untrained="yes" cost="3" extended="true" >}}
 
 Al emplear esta habilidad, un Personaje genera un campo de energía cinética que emana de sus manos. Esta energía se manifiesta de dos maneras, que el jugador elegirá en el momento en que Personaje realice una prueba de habilidad exitosa: un bastón o una espada.
 
@@ -68,7 +68,7 @@ Esta bonificación dura hasta que Personaje decida no mantener el arma biológic
 ---
 
 ## Control del Metabolismo
-{{< specialty attr="CON" untrained="yes" cost="2" extended="true" >}}}}
+{{< specialty attr="CON" untrained="yes" cost="2" extended="true" >}}
 
 Mediante el uso de esta habilidad, un Personaje puede regular su metabolismo
 procesos. Esto permite una supervivencia más prolongada sin comida ni agua, en casos extremos.
@@ -107,7 +107,7 @@ su resistencia al dolor y Fatiga.
 ---
 
 ## Sanar
-{{< specialty attr="CON" untrained="no" cost="4" >}}}}
+{{< specialty attr="CON" untrained="no" cost="4" >}}
 
 Al concentrarse, un Personaje que utilice esta habilidad puede curar heridas o enfermedades. El Personaje puede tratar heridas o enfermedades, curando al sujeto una cantidad de puntos Herida según el resultado de la prueba de habilidad.
 
@@ -137,7 +137,7 @@ La curación psiónica impone una gran tensión en el cuerpo, por lo que la habi
 ---
 
 ## Metamorfosis
-{{< specialty attr="CON" untrained="no" cost="4" >}}}}
+{{< specialty attr="CON" untrained="no" cost="4" >}}
 
 Al usar esta habilidad, un **Personaje** puede alterar las características de Físico para evitar el reconocimiento, hacerse pasar por alguien o lograr hazañas que de otro modo serían imposibles (por ejemplo, meterse en un pequeño agujero, alcanzar lugares altos o liberarse de ataduras).
 
@@ -200,7 +200,7 @@ Una parte del cuerpo transformada conserva sus características originales; No c
 ---
 
 ## Rejuvenecer
-{{< specialty attr="CON" untrained="yes" cost="3" >}}}}
+{{< specialty attr="CON" untrained="yes" cost="3" >}}
 
 Al usar esta habilidad, un Personaje puede compensar el daño de Fatiga o Aturdimiento, o parte de cada uno, que haya sufrido. La habilidad no hace nada para aliviar
 Pérdida de energía psiónica.
@@ -235,7 +235,7 @@ La habilidad de rejuvenecer no se puede intentar más de una vez por hora.
 ---
 
 ## Trepado
-{{< specialty attr="CON" untrained="yes" cost="2" extended="true" >}}}}
+{{< specialty attr="CON" untrained="yes" cost="2" extended="true" >}}
 
 En el pasado lejano, ciertos t'sa psions desarrollaron la **trepa**
 habilidad, generalmente aquellos que habitaban en las regiones montañosas de los t'sa
@@ -262,7 +262,7 @@ llegando a su destino.
 ---
 
 ## Destrozar
-{{< specialty attr="CON" untrained="yes" cost="3" >}}}}
+{{< specialty attr="CON" untrained="yes" cost="3" >}}
 
 La historia de Weren habla de un clan que usó armaduras para conquistar a los clanes Otros.
 Habiendo fabricado placas de armadura tosca con piel de marrizhe hervida, este clan
@@ -296,35 +296,8 @@ Los ataques de garra/espuela/cuerno se realizan mientras este poder está activo
 
 ---
 
-## Transferir Daño
-{{< specialty attr="CON" untrained="yes" cost="2" >}}}}
-
-Al imponer las manos sobre otro personaje y realizar con éxito una tirada de
-habilidad, el psiónico alivia el daño o la enfermedad de ese personaje
-absorbiéndolos.
-
-El daño que se puede absorber está ligado al resultado de una tirada de
-habilidad:
-
-| Resultado | Daño Absorbido | Enfermedad Reducida |
-| :--- | :--- | :--- |
-| **Fallo Crítico** | El personaje sufre 1 herida. | Sin efecto sobre el paciente. |
-| **Ordinario** | El personaje absorbe 1 herida. | Reduce la enfermedad del paciente en un grado (por ejemplo, de Asombroso a Bueno), infectando simultáneamente al psiónico con ese grado de enfermedad. |
-| **Bueno** | El personaje absorbe 2 heridas o 1 mortal. | Reduce la enfermedad del paciente en dos grados, transfiriendo la dolencia al psiónico. |
-| **Asombroso** | El personaje absorbe 3 heridas o 1 mortal. | Transfiere cualquier enfermedad del paciente al psiónico. |
-
-Una vez que el personaje absorbe el daño o la enfermedad, debe utilizar la
-especialidad de **Bioquinesis—sanar**, curarse de forma natural o recibir
-atención médica o psiónica para aliviar el daño o curar la enfermedad.
-
-**Beneficios de Rango:**
-- **Al rango 6 [Desplazar Daño (Displace Damage)]**, el personaje psiónico puede transferir el daño a un personaje diferente, que también deba estar en contacto físico con el psiónico y que deba estar dispuesto a recibir el daño. Cualquier intento de transferir el daño a una criatura que no desee conscientemente aceptar el daño (como un personaje hostil o uno inconsciente) hace que el psiónico reciba el daño, como es normal.
-- **Al rango 12 [Transferencia Involuntaria (Unwilling Transfer)]**, el personaje puede transferir el daño a un personaje involuntario. El psiónico debe estar tocando a ambos personajes. Ambos personajes deben estar vivos tras activar la habilidad. El personaje "donante" será sanado de una cantidad de puntos de daño determinados por la tirada de habilidad de bioquinesis-transferir daño. Los puntos de daño se aplican entonces al receptor involuntario. **Ten en cuenta que este beneficio no se recibe si el psiónico lleva puesta una armadura.**
-
----
-
-## Sintonía sensorial
-{{< specialty attr="CON" untrained="yes" cost="3" extended="true" >}}}}
+## Mejora Visual
+{{< specialty attr="CON" untrained="yes" cost="3" extended="true" >}}
 
 Al remodelar psiónicamente sus órganos visuales y reescribir las vías neuronales de la corteza visual, el Personaje puede cambiar su visión a través de diferentes bandas del espectro electromagnético y mapear entornos estructurales a través de firmas biológicas.
 
@@ -349,6 +322,36 @@ Navegar mientras se escanea activamente a través de barreras sólidas ralentiza
 * **En Rango 8 [Wide-Spectrum Sensorium]**, replicando los ojos avanzados del camarón mantis, los ojos del Personaje se vuelven visiblemente facetados y compuestos. Pueden percibir simultáneamente luz polarizada, radiación ultravioleta y emisiones electromagnéticas activas (ondas de radio y frecuencias de sensores). Esto les permite "ver" transmisores activos, como equipos de radio, sensores activos.
 
 * **En Rango 12 [Integración Cortical]**, el Personaje es capaz de transformar perfectamente estos órganos visuales haciendo imposible notarlos a simple vista, eliminando cualquier penalización de Social. Además, el Personaje puede cambiar entre modos como una acción.
+
+---
+
+## Transferir Vitalidad
+{{< specialty attr="CON" untrained="yes" cost="2" >}}
+
+Al establecer contacto físico, el psión fuerza un vínculo bio‑eléctrico parasitario que sifona violentamente energía biológica del objetivo. El objetivo sufre un colapso metabólico inmediato mientras el psión experimenta un impulso temporal en su eficiencia biológica.
+
+**La Drenaje:** Para activar este poder, el personaje debe estar adyacente a un objetivo orgánico de tamaño similar o mayor. Una tirada de habilidad exitosa impone una penalización de paso a los chequeos de **Resistencia—aguante** y **Resistencia—resistir dolor** del objetivo, mientras que el psión recibe un bonificador de paso correspondiente a esas mismas habilidades.
+
+| Resultado | Penalización del objetivo | Bonificación del psión |
+| :--- | :--- | :--- |
+| **Fallo crítico** | No hay efecto. | El psión sufre una penalización de +1 paso a chequeos de CON |
+| **Ordinario** | Penalización de +1 paso. | Bonificación de -1 paso. |
+| **Bueno** | Penalización de +2 pasos. | Bonificación de -2 pasos. |
+| **Asombroso** | Penalización de +3 pasos. | Bonificación de -3 pasos. |
+
+El efecto dura hasta el final del siguiente asalto.
+
+### Beneficios de Rango
+**Rango 6 [Absorción simbiótica]**, el psión puede convertir la energía sifonada en material regenerativo. En lugar de tomar el bonificador de paso, el psión puede curar:
+- **Bueno:** 2 heridas
+- **Asombroso:** 3 heridas
+
+**Rango 9 [Canalizar vitalidad]**, el psión puede usar este poder para restaurar vitalidad a un aliado en lugar del psión. Tanto el receptor como el donante deben estar adyacentes al psión al activar el poder.
+
+**Rango 12 [Sobrecarga sistémica]**, la sifonación se vuelve tan eficiente que el psión puede incluso usar la energía para curar daño mortal:
+- **Ordinario:** 1 herida
+- **Bueno:** 2 heridas o 1 mortal
+- **Asombroso:** 4 heridas o 2 mortales
 
 ---
 

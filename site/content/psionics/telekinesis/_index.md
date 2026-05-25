@@ -16,7 +16,7 @@ any of the related specialty skills except those that can't be used untrained.
 ---
 
 ## Cryokinetics
-{{< specialty attr="WIL" untrained="no" cost="3" >}}}}
+{{< specialty attr="WIL" untrained="no" cost="3" >}}
 
 By concentrating, the character can generate fields of intense cold, freezing
 most liquids and damaging living tissue. The effective range is 24 meters
@@ -33,7 +33,7 @@ she is able to cause damage of d4s/d4+2s/d4w.
 ---
 
 ## Electrokinetics
-{{< specialty attr="WIL" untrained="no" cost="3" >}}}}
+{{< specialty attr="WIL" untrained="no" cost="3" >}}
 
 By concentrating, the character can build and direct an electrical charge to a
 target within range of 16 meters (range 4/8/16). The charge persists into the
@@ -52,7 +52,7 @@ acquired, it causes d4+2s/d6+2s/d4w damage.
 ---
 
 ## Kinetic Blow
-{{< specialty attr="WIL" untrained="no" cost="3" >}}}}
+{{< specialty attr="WIL" untrained="no" cost="3" >}}
 
 This ability allows a psion to project a wave of kinetic energy at a target.
 The effective range is 16 meters (range 4/8/16). The impact of the energy wave
@@ -66,7 +66,7 @@ inflicts d4s/d4+2s/d4w damage.
 ---
 
 ## Kinetic Shield
-{{< specialty attr="WIL" untrained="no" cost="3" extended="true" >}}}}
+{{< specialty attr="WIL" untrained="no" cost="3" extended="true" >}}
 
 By concentrating, the character can create a field of kinetic energy that
 surrounds his or her body, protecting it from physical attacks. The shield
@@ -83,7 +83,7 @@ the shield depends on the success of the skill check:
 ---
 
 ## Levitation
-{{< specialty attr="WIL" untrained="yes" cost="3" extended="true" >}}}}
+{{< specialty attr="WIL" untrained="yes" cost="3" extended="true" >}}
 
 With this skill, a psion can mentally lift himself or herself off the ground
 and move through the air. The speed of movement depends on the result of the
@@ -99,7 +99,7 @@ skill check:
 ---
 
 ## Photokinetics
-{{< specialty attr="WIL" untrained="yes" cost="1" extended="true" >}}}}
+{{< specialty attr="WIL" untrained="yes" cost="1" extended="true" >}}
 
 With this skill, a character can excite or reduce the amount of light in a
 specific area. The area affected is a diameter of 2 meters (Ordinary success),
@@ -120,7 +120,7 @@ additional duration unit.
 ---
 
 ## Psychokinetics
-{{< specialty attr="WIL" untrained="yes" cost="3" extended="true" >}}}}
+{{< specialty attr="WIL" untrained="yes" cost="3" extended="true" >}}
 
 Psychokinetics is the ability to move objects. Before making the skill check,
 the psion must choose whether he or she is attempting to move an object or to
@@ -139,7 +139,7 @@ rank and the success:
 ---
 
 ## Pyrokinesis
-{{< specialty attr="WIL" untrained="no" cost="3" >}}}}
+{{< specialty attr="WIL" untrained="no" cost="3" >}}
 
 By concentrating, the character can excite the molecules of an object, causing
 it to burst into flame or inflicting damage on a living creature. The
@@ -154,7 +154,7 @@ Pyrokinetics inflicts d4s/d4+2s/d4w damage.
 ---
 
 ## Sheya's Clutch
-{{< specialty attr="WIL" untrained="no" cost="5" >}}}}
+{{< specialty attr="WIL" untrained="no" cost="5" >}}
 
 Mentally crush the heart or internal organs of a living being (range 40
 meters). Bypasses all non-psionic armor. This is physically draining for the

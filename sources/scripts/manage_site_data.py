@@ -407,10 +407,12 @@ def process_psionics(psionics_list, mapping):
                     p_untrained = 'yes' if not p.get('trained_only', False) else 'no'
                     p_desc = translate_field_robust(p, 'description', lang, mapping)
                     f.write(f'## {p_title}\n')
-                    f.write(f'{{{{< specialty attr="{p_attr}" untrained="{p_untrained}" cost="{p_cost}"')
+                    # Build the specialty shortcode correctly
+                    shortcode = f'{{{{< specialty attr=\"{p_attr}\" untrained=\"{p_untrained}\" cost=\"{p_cost}\"'
                     if p.get('extended_duration', False):
-                        f.write(' extended="true"')
-                    f.write(' >}}}}\n\n')
+                        shortcode += ' extended=\"true\"'
+                    shortcode += ' >}}\n\n'
+                    f.write(shortcode)
                     f.write(f'{p_desc}\n\n')
                     f.write('---\n\n')
             
