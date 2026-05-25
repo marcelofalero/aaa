@@ -13,7 +13,7 @@ rank_benefits:
 - rank: 12
   title: Cortical Integration
 extended_duration: true
-name: Sensory Attunement
+name: Visual Enhancement
 ---
 
 By psionically reshaping your visual organs and rewriting the neural pathways of the visual cortex, the character can shift their vision across different bands of the electromagnetic spectrum and map structural environments through biological signatures.
