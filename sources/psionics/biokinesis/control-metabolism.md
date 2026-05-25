@@ -19,34 +19,24 @@ wants to employ this skill.
 #### Hostile Environments
 In the case of a hostile environment, the result of a skill check determines
 the type of protection a character can simulate:
-- **Ordinary:** vacuum mask
-- **Good:** vacuum suit
-- **Amazing:** soft e-suit
+- **Ordinary:** vacuum suit
+- **Good:** soft e-suit
+- **Amazing:** hard e-suit
 
-After the initial use of the skill, the level of protection can be maintained
-thereafter for a cost of 1 psionic energy point per hour.
+By spending an extra point of psionic energy, the character can treat the skill use as if he has one step better result. He can also spend an extra point of psionic energy to treat the extended duration as one step better.
 
 #### Adrenal boost
-*Extended duration.*
 The character can mentally boost adrenaline output, giving an action check
 bonus. 
 - **Ordinary:** +1 to action check score.
 - **Good:** +2 to action check score.
 - **Amazing:** +3 to action check score.
 
-This bonus lasts for the duration of the round in which the power is activated
-and through all of the next round. A character may extend the duration 1 round
-for every psionic energy point spent to do so.
-
 #### Endorphin release
-*Extended duration.*
 The character can mentally stimulate the production of endorphins, increasing
 his or her resistance to pain and fatigue.
 - **Ordinary:** -1 step bonus to Stamina checks.
 - **Good:** -2 step bonus to Stamina checks.
 - **Amazing:** -3 step bonus to Stamina checks.
 
-The duration is one hour; the duration may be extended by one hour per extra
-psionic energy point spent to do so.
-
----
+> Only one use of the skill is allowed at the same time (hostile environments, adrenal boost, or endorphin release).
