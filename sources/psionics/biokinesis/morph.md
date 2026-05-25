@@ -4,8 +4,8 @@ cost: 4
 url: /psionics/biokinesis/#morph
 trained_only: true
 rank_benefits:
-- rank: 12
-  title: Morph Control
+- rank: 1
+  title: Check Skill
   extended_duration: true
 name: Morph
 ---

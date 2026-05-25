@@ -16,7 +16,7 @@ extended_duration: false
 
 By establishing physical contact, the psion forces a parasitic bio-electric link that violently siphons biological energy from the target. The target suffers immediate metabolic collapse while the psion experiences a temporary surge in biological efficiency.
 
-**The Drain:** To activate this power, the character must be adjacent to an organic target around the same size or bigger than themself. A successful skill check imposes a step penalty on the target's **Stamina—endurance** and **Stamina—resist pain** checks, while the psion receives a corresponding step bonus to the same specialty skills.
+**The Drain:** To activate this power, the character must be adjacent to an organic target around the same size or bigger than themself. A successful skill check imposes a step penalty on the target's [[stamina—endurance]] and [[stamina—resist pain]] specialty checks, while the psion receives a corresponding step bonus to the same specialty skills.
 
 | Result | Target Penalty | Psion Bonus |
 | :--- | :--- | :--- |

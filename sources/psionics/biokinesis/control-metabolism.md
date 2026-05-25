@@ -39,4 +39,4 @@ his or her resistance to pain and fatigue.
 - **Good:** -2 step bonus to Stamina checks.
 - **Amazing:** -3 step bonus to Stamina checks.
 
-> Only one use of the skill is allowed at the same time (hostile environments, adrenal boost, or endorphin release).
+> Only one use of the skill is allowed at the same time (hostile environments, adrenal boost, or endorphin release)

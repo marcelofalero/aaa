@@ -48,10 +48,13 @@ items:
                 The skin hardening impairs the character's movement in the same way as worn armor with AP 1, but a lighter version can be achieved by sacrificing 1 point of armor on each category, this eliminates the armor penalty.
 
                 ### Rank Benefits
-                - **Rank 3 [Increased Effect]:** the protection afforded by bio-armor increases to (LI d8 / HI d6 / En d4+1).
-                - **Rank 6 [Increased Effect]:** this value further increases to (LI d8 / HI d6+1 / En d6)b .
-                - **Rank 9 [Increased Toughness]:** the armor is treated as being of Good toughness.
-                - **Rank 12 [Increased Effect]:** the armor value increases again to (LI 2d4 / HI 2d4 / En d8).
+                **Rank 3 [Increased Effect]** the protection afforded by bio-armor increases to (LI d8 / HI d6 / En d4+1).
+
+                **Rank 6 [Increased Effect]** this value further increases to (LI d8 / HI d6+1 / En d6)b .
+
+                **Rank 9 [Increased Toughness]** the armor is treated as being of Good toughness.
+
+                **Rank 12 [Increased Effect]** the armor value increases again to (LI 2d4 / HI 2d4 / En d8).
           - es:
               name: Bioarmadura
               description: |-
@@ -65,10 +68,13 @@ items:
                 El endurecimiento de la piel perjudica el movimiento del Personaje de la misma manera que una armadura desgastada con AP 1, pero se puede lograr una versión más ligera sacrificando 1 punto de armadura en cada categoría, esto elimina la penalización de armadura.
 
                 ### Beneficios de Rango
-                - **Rango 3 [Efecto aumentado]:** la protección brindada por la bioarmadura aumenta a (LI d8 / HI d6 / En d4+1).
-                - **Rango 6 [Efecto aumentado]:** este valor aumenta aún más a (LI d8 / HI d6+1 / En d6)b.
-                - **Rango 9 [Dureza aumentada]:** la armadura se trata como si tuviera dureza Bueno.
-                - **Rango 12 [Efecto aumentado]:** el valor de la armadura aumenta nuevamente a (LI 2d4 / HI 2d4 / En d8).
+                **Rango 3 [Efecto aumentado]** la protección brindada por la bioarmadura aumenta a (LI d8 / HI d6 / En d4+1).
+
+                **Rango 6 [Efecto aumentado]** este valor aumenta aún más a (LI d8 / HI d6+1 / En d6)b.
+
+                **Rango 9 [Dureza aumentada]** la armadura se trata como si tuviera dureza Bueno.
+
+                **Rango 12 [Efecto aumentado]** el valor de la armadura aumenta nuevamente a (LI 2d4 / HI 2d4 / En d8).
       bioweapon:
         attribute: CON
         cost: 3
@@ -87,8 +93,35 @@ items:
         localized:
           - en:
               name: Bioweapon
-              description: "When employing this skill, a character generates a field of kinetic energy emanating from his or her hands. This energy manifests in one of two ways, to be chosen by the player at the time the character makes a successful skill check: a staff or a sword.\n\nThe player may alter the shape of the staff to a club, and the sword to a particular type of sword (katana, saber, broadsword, and so on). These changes neither affect the damage the bioweapon will do, nor do they grant any special properties to the weapon; they are cosmetic only.\n\nThe principal difference in the two forms is in the sort of damage they do. A character who wishes just to knock out an opponent would be best served creating a staff; those who mean to inflict more serious harm on an opponent will likely create the sword.\n\n| Form | Base Damage | Type |\n| :--- | :--- | :---: |\n| **Staff** | d8s/d8+2s/d12+2s | LI/O |\n| **Sword** | d6w/d6+2w/d6m | LI/O |\n\nThe character uses the **Melee Combat—powered**
-                specialty skill to wield the bioweapon, regardless of its form.\n\nThe result of the bioweapon skill check may add a bonus to the Melee Combat—powered skill check as follows:\n- **Ordinary:** –1 step bonus\n- **Good:** –2 step bonus\n- **Amazing:** –3 step bonus\n\nThis bonus lasts until the character chooses not to maintain the bioweapon.\n\n**Rank Benefits:**\n- **Rank 3 [Increased Damage]** the damage of the bioweapon increases by +1.\n- **Rank 6 [Increased Damage]** it increases again (to a total of +2).\n- **Rank 9 [Increased Damage]** all attacks made with the bioweapon are considered to deliver **Good damage**.\n- **Rank 12 [Improved Damage]** it increases by another +1 (to a total of +3)."
+              description: |-
+                When employing this skill, a character generates a field of kinetic energy emanating from his or her hands. This energy manifests in one of two ways, to be chosen by the player at the time the character makes a successful skill check: a staff or a sword.
+
+                The player may alter the shape of the staff to a club, and the sword to a particular type of sword (katana, saber, broadsword, and so on). These changes neither affect the damage the bioweapon will do, nor do they grant any special properties to the weapon; they are cosmetic only.
+
+                The principal difference in the two forms is in the sort of damage they do. A character who wishes just to knock out an opponent would be best served creating a staff; those who mean to inflict more serious harm on an opponent will likely create the sword.
+
+                | Form | Base Damage | Type |
+                | :--- | :--- | :---: |
+                | **Staff** | d8s/d8+2s/d12+2s | LI/O |
+                | **Sword** | d6w/d6+2w/d6m | LI/O |
+
+                The character uses the [[melee combat—powered]] specialty skill to wield the bioweapon, regardless of its form.
+
+                The result of the bioweapon skill check may add a bonus to the attack check as follows:
+                - **Ordinary:** –1 step bonus
+                - **Good:** –2 step bonus
+                - **Amazing:** –3 step bonus
+
+                This bonus lasts until the character chooses not to maintain the bioweapon.
+
+                ### Rank Benefits:
+                **Rank 3 [Increased Damage]** the damage of the bioweapon increases by +1.
+
+                **Rank 6 [Increased Damage]** it increases again (to a total of +2).
+
+                **Rank 9 [Increased Damage]** all attacks made with the bioweapon are considered to deliver **Good damage**.
+
+                **Rank 12 [Improved Damage]** it increases by another +1 (to a total of +3).
           - es:
               name: Bioarma
               description: |-
@@ -103,20 +136,23 @@ items:
                 | **Personal** | d8s/d8+2s/d12+2s | LI/O |
                 | **Espada** | d6w/d6+2w/d6m | LI/O |
 
-                El Personaje usa el **Combate cuerpo a cuerpo—Armas de energía** Especialidad para empuñar el arma biológica, independientemente de su forma.
+                El Personaje usa el [[Combate cuerpo a cuerpo—Armas de energía]] Especialidad para empuñar el arma biológica, independientemente de su forma.
 
-                El resultado de la prueba de habilidad con arma biológica puede agregar una bonificación a la prueba de habilidad Combate cuerpo a cuerpo—Armas de energía de la siguiente manera:
+                El resultado de la prueba de habilidad con arma biológica puede añadir una bonificación a la prueba de ataque de la siguiente manera:
                 - **Ordinario:** –1 Bonificación de paso
                 - **Bueno:** –2 Bonificación de paso
                 - **Asombroso:** –3 Bonificación de paso
 
                 Esta bonificación dura hasta que Personaje decida no mantener el arma biológica.
 
-                **Beneficios de Rango:**
-                - **Rango 3 [Daño aumentado]** el daño del arma biológica aumenta en +1.
-                - **Rango 6 [Daño aumentado]** aumenta nuevamente (a un total de +2).
-                - **Rango 9 [Daño aumentado]** se considera que todos los ataques realizados con el arma biológica causan **daño Bueno**.
-                - **Rango 12 [Daño mejorado]** aumenta en otro +1 (hasta un total de +3).
+                ### Beneficios de Rango:
+                **Rango 3 [Daño aumentado]** el daño del arma biológica aumenta en +1.
+
+                **Rango 6 [Daño aumentado]** aumenta nuevamente (a un total de +2).
+
+                **Rango 9 [Daño aumentado]** se considera que todos los ataques realizados con el arma biológica causan **daño Bueno**.
+
+                **Rango 12 [Daño mejorado]** aumenta en otro +1 (hasta un total de +3).
       control-metabolism:
         attribute: CON
         cost: 2
@@ -126,8 +162,40 @@ items:
         localized:
           - en:
               name: Control Metabolism
-              description: "Through the use of this skill, a character can regulate his or her metabolic\nprocesses. This allows longer survival without food and water, in extreme\nclimates, and in other hostile conditions. The character can also slow bodily\nfunctions to the point of pretending to be dead, should he or she need to fool\nothers in some situation.\n\nA check is made when a character enters a hostile environment or otherwise\nwants to employ this skill.\n\n#### Hostile Environments\nIn the case of a hostile environment, the result of a skill check determines\nthe type of protection a character can simulate:\n- **Ordinary:** vacuum suit\n- **Good:** soft e-suit\n- **Amazing:** hard e-suit\n\nBy spending an extra point of psionic energy, the character can treat the skill use as if he has one step better result. He can also spend an extra point of psionic energy to treat the extended duration as one step better.\n\n#### Adrenal boost\nThe character can mentally boost adrenaline
-                output, giving an action check\nbonus. \n- **Ordinary:** +1 to action check score.\n- **Good:** +2 to action check score.\n- **Amazing:** +3 to action check score.\n\n#### Endorphin release\nThe character can mentally stimulate the production of endorphins, increasing\nhis or her resistance to pain and fatigue.\n- **Ordinary:** -1 step bonus to Stamina checks.\n- **Good:** -2 step bonus to Stamina checks.\n- **Amazing:** -3 step bonus to Stamina checks.\n\n> Only one use of the skill is allowed at the same time (hostile environments, adrenal boost, or endorphin release)."
+              description: |-
+                Through the use of this skill, a character can regulate his or her metabolic
+                processes. This allows longer survival without food and water, in extreme
+                climates, and in other hostile conditions. The character can also slow bodily
+                functions to the point of pretending to be dead, should he or she need to fool
+                others in some situation.
+
+                A check is made when a character enters a hostile environment or otherwise
+                wants to employ this skill.
+
+                #### Hostile Environments
+                In the case of a hostile environment, the result of a skill check determines
+                the type of protection a character can simulate:
+                - **Ordinary:** vacuum suit
+                - **Good:** soft e-suit
+                - **Amazing:** hard e-suit
+
+                By spending an extra point of psionic energy, the character can treat the skill use as if he has one step better result. He can also spend an extra point of psionic energy to treat the extended duration as one step better.
+
+                #### Adrenal boost
+                The character can mentally boost adrenaline output, giving an action check
+                bonus. 
+                - **Ordinary:** +1 to action check score.
+                - **Good:** +2 to action check score.
+                - **Amazing:** +3 to action check score.
+
+                #### Endorphin release
+                The character can mentally stimulate the production of endorphins, increasing
+                his or her resistance to pain and fatigue.
+                - **Ordinary:** -1 step bonus to Stamina checks.
+                - **Good:** -2 step bonus to Stamina checks.
+                - **Amazing:** -3 step bonus to Stamina checks.
+
+                > Only one use of the skill is allowed at the same time (hostile environments, adrenal boost, or endorphin release)
           - es:
               name: Control del Metabolismo
               description: |-
@@ -163,7 +231,7 @@ items:
                 - **Bueno:** -2 comprobaciones de Bonificación de paso a Aguante.
                 - **Asombroso:** -3 comprobaciones de Bonificación de paso a Aguante.
 
-                > Solo se permite un uso de la habilidad al mismo tiempo (entornos hostiles, impulso suprarrenal o liberación de endorfinas).
+                > Solo se permite un uso de la habilidad al mismo tiempo (entornos hostiles, impulso suprarrenal o liberación de endorfinas)
       heal:
         attribute: CON
         cost: 4
@@ -182,9 +250,35 @@ items:
         localized:
           - en:
               name: Heal
-              description: "By concentrating, a character using this skill can heal wounds or disease. The character can treat wounds or diseases, healing the subject a number of wound points based on the skill check result.\n\n### Wounds\n- **Ordinary:** 1 wound point\n- **Good:** 2 wound points\n- **Amazing:** 3 wound points\n\n### Disease\nFor disease, the following results apply:\n- **Ordinary:** reduce the degree of illness by one grade (from Good to Ordinary, for instance).\n- **Good:** reduce by two grades.\n- **Amazing:** reduce by three grades. \n\nDiseases reduced below Marginal are considered cured.\n\n### Timing\nPsionic healing imposes heavy strain on the body, so the skill can't be attempted more than once per hour, any attempt of using the skill more than once per hour will result in a level of exhaustion that cannot be recovered from until 24 hours have passed since the last attempt.\n\n### Rank Benefits\n- **Rank 4 [Treating Poison]**, a character may counteract the effect
-                of poisons or drugs in his or her system before the end of their onset time, reducing the impact they may have. The degree of success acts as a bonus to the Constitution feat check required: **Ordinary:** –2 step bonus, **Good:** –3 step bonus, **Amazing:** –4 step bonus.\n- **Rank 6 [Healing Mortal Damage]**, a character becomes able to heal mortal damage. Skill check results change to: **Ordinary:** 2 wounds, **Good:** 3 wounds or 1 mortal, **Amazing:** 4 wounds or 2 mortals.\n- **Rank 8 [Improved Effect]**, a character's ability to heal improves further: **Ordinary:** 3 wounds or 1 mortal, **Good:** 4 wounds or 2 mortals, **Amazing:** 6 wounds or 3 mortals.\n- **Rank 8 [Laying On Hands]**, a character becomes able to heal damage in others. The subject to be healed must be in physical contact with the character using this ability.\n- **Rank 12 [Master Healer]**, a character reduces the strain of psionic healing, the skill can be attempted once every 10 minutes without causing
-                exhaustion. Additionally, the character can double the number of mortals healed at the cost of 1 additional psionic energy per mortal healed and one point of exhaustion on both healer and subject."
+              description: |-
+                By concentrating, a character using this skill can heal wounds or disease. The character can treat wounds or diseases, healing the subject a number of wound points based on the skill check result.
+
+                ### Wounds
+                - **Ordinary:** 1 wound point
+                - **Good:** 2 wound points
+                - **Amazing:** 3 wound points
+
+                ### Disease
+                For disease, the following results apply:
+                - **Ordinary:** reduce the degree of illness by one grade (from Good to Ordinary, for instance).
+                - **Good:** reduce by two grades.
+                - **Amazing:** reduce by three grades. 
+
+                Diseases reduced below Marginal are considered cured.
+
+                ### Timing
+                Psionic healing imposes heavy strain on the body, so the skill can't be attempted more than once per hour, any attempt of using the skill more than once per hour will result in a level of exhaustion that cannot be recovered from until 24 hours have passed since the last attempt.
+
+                ### Rank Benefits
+                **Rank 4 [Treating Poison]**, a character may counteract the effect of poisons or drugs in his or her system before the end of their onset time, reducing the impact they may have. The degree of success acts as a bonus to the Constitution feat check required: **Ordinary:** –2 step bonus, **Good:** –3 step bonus, **Amazing:** –4 step bonus.
+
+                **Rank 6 [Healing Mortal Damage]**, a character becomes able to heal mortal damage. Skill check results change to: **Ordinary:** 2 wounds, **Good:** 3 wounds or 1 mortal, **Amazing:** 4 wounds or 2 mortals.
+
+                **Rank 8 [Improved Effect]**, a character's ability to heal improves further: **Ordinary:** 3 wounds or 1 mortal, **Good:** 4 wounds or 2 mortals, **Amazing:** 6 wounds or 3 mortals.
+
+                **Rank 8 [Laying On Hands]**, a character becomes able to heal damage in others. The subject to be healed must be in physical contact with the character using this ability.
+
+                **Rank 12 [Master Healer]**, a character reduces the strain of psionic healing, the skill can be attempted once every 10 minutes without causing exhaustion. Additionally, the character can double the number of mortals healed at the cost of 1 additional psionic energy per mortal healed and one point of exhaustion on both healer and subject.
           - es:
               name: Sanar
               description: |-
@@ -207,19 +301,23 @@ items:
                 La curación psiónica impone una gran tensión en el cuerpo, por lo que la habilidad no se puede intentar más de una vez por hora; cualquier intento de usar la habilidad más de una vez por hora resultará en un nivel de agotamiento del que no se podrá recuperar hasta que hayan pasado 24 horas desde el último intento.
 
                 ### Beneficios de Rango
-                - **Rango 4 [Tratamiento del Veneno]**, un Personaje puede contrarrestar el efecto de los venenos o drogas en su sistema antes de que finalice su tiempo de aparición, reduciendo el impacto que puedan tener. El grado de éxito actúa como una bonificación a la prueba de dote de Constitución requerida: **Ordinario:** –2 Bonificación de paso, **Bueno:** –3 Bonificación de paso, **Asombroso:** –4 Bonificación de paso.
-                - **Rango 6 [Curación del daño de Mortal]**, un Personaje puede curar el daño de Mortal. Los resultados de la prueba de habilidad cambian a: **Ordinario:** 2 heridas, **Bueno:** 3 heridas o 1 Mortal, **Asombroso:** 4 heridas o 2 mortales.
-                - **Rango 8 [Efecto mejorado]**, la capacidad de curación de un Personaje mejora aún más: **Ordinario:** 3 heridas o 1 Mortal, **Bueno:** 4 heridas o 2 mortales, **Asombroso:** 6 heridas o 3 mortales.
-                - **Rango 8 [Imposición de manos]**, un Personaje se vuelve capaz de curar el daño de otros. El sujeto a curar debe estar en contacto Físico con el Personaje usando esta habilidad.
-                - **Rango 12 [Master Healer]**, un Personaje reduce la tensión de la curación psiónica, la habilidad se puede intentar una vez cada 10 minutos sin causar agotamiento. Además, el Personaje puede duplicar el número de mortales curados a costa de 1 energía psiónica adicional por cada Mortal curado y un punto de agotamiento tanto para el sanador como para el sujeto.
+                **Rango 4 [Tratamiento del Veneno]**, un Personaje puede contrarrestar el efecto de los venenos o drogas en su sistema antes de que finalice su tiempo de aparición, reduciendo el impacto que puedan tener. El grado de éxito actúa como una bonificación a la prueba de dote de Constitución requerida: **Ordinario:** –2 Bonificación de paso, **Bueno:** –3 Bonificación de paso, **Asombroso:** –4 Bonificación de paso.
+
+                **Rango 6 [Curación del daño de Mortal]**, un Personaje puede curar el daño de Mortal. Los resultados de la prueba de habilidad cambian a: **Ordinario:** 2 heridas, **Bueno:** 3 heridas o 1 Mortal, **Asombroso:** 4 heridas o 2 mortales.
+
+                **Rango 8 [Efecto mejorado]**, la capacidad de curación de un Personaje mejora aún más: **Ordinario:** 3 heridas o 1 Mortal, **Bueno:** 4 heridas o 2 mortales, **Asombroso:** 6 heridas o 3 mortales.
+
+                **Rango 8 [Imposición de manos]**, un Personaje se vuelve capaz de curar el daño de otros. El sujeto a curar debe estar en contacto Físico con el Personaje usando esta habilidad.
+
+                **Rango 12 [Master Healer]**, un Personaje reduce la tensión de la curación psiónica, la habilidad se puede intentar una vez cada 10 minutos sin causar agotamiento. Además, el Personaje puede duplicar el número de mortales curados a costa de 1 energía psiónica adicional por cada Mortal curado y un punto de agotamiento tanto para el sanador como para el sujeto.
       morph:
         attribute: CON
         cost: 4
         url: /psionics/biokinesis/#morph
         trained_only: true
         rank_benefits:
-          - rank: 12
-            title: Morph Control
+          - rank: 1
+            title: Check Skill
             extended_duration: true
         extended_duration: false
         localized:
@@ -333,8 +431,6 @@ items:
                 **Rank 6 [Laying On Hands]** a character becomes able to heal fatigue or stun damage, as well as disease, in others. The subject to be healed must be in physical contact with the character using this ability.
 
                 **Rank 12 [Two Recipients]** a character using rejuvenate may affect two individuals with a single use of the skill. This can be on two other people or on the character and one other person. Each gains whatever benefit is determined by the Biokinesis-rejuvenate skill check.
-
-                ---
           - es:
               name: Rejuvenecer
               description: |-
@@ -365,8 +461,6 @@ items:
                 **Rango 6 [Imposición de manos]** un Personaje se vuelve capaz de curar daños Fatiga o Aturdimiento, así como enfermedades, en otros. El sujeto a curar debe estar en contacto Físico con el Personaje usando esta habilidad.
 
                 **Rango 12 [Dos destinatarios]** un Personaje que usa rejuvenecer puede afectar a dos personas con un solo uso de la habilidad. Esto puede ser en dos personas Otros o en Personaje y una persona Otros. Cada uno obtiene el beneficio que determine la prueba de habilidad de rejuvenecimiento de Biokinesis.
-
-                ---
       clamber:
         attribute: CON
         cost: 2
@@ -393,7 +487,7 @@ items:
                 the steep mountains of the t'sa homeworld, this often meant survival.
 
                 The degree of success with this skill determines the modifier to a psion's
-                **Athletics—climb** attempt. The psion gains a **–1, –2, or –3 step bonus**,
+                [[athletics—climb]] attempt. The psion gains a **–1, –2, or –3 step bonus**,
                 depending on the degree of success (Ordinary, Good, or Amazing). Further, if
                 the distance is within the user's walk rate, the character can dash across
                 inverted surfaces, effectively running across the ceiling. The character
@@ -401,10 +495,12 @@ items:
                 falling. The same will happen if the character has nothing to hold onto on
                 reaching his or her destination.
 
-                **Rank Benefits:**
-                - **Rank 4 [Increased Distance]** the distance the user can travel while climbing or running across inverted surfaces is doubled.
-                - **Rank 8 [Increased Distance]** the distance is three times the base rate.
-                - **Rank 12 [Increased Distance]** the distance is four times the base rate.
+                ### Rank Benefits
+                **Rank 4 [Increased Distance]** the distance the user can travel while climbing or running across inverted surfaces is doubled.
+
+                **Rank 8 [Increased Distance]** the distance is three times the base rate.
+
+                **Rank 12 [Increased Distance]** the distance is four times the base rate.
           - es:
               description: |-
                 En el pasado lejano, ciertos t'sa psions desarrollaron la **trepa**
@@ -416,7 +512,7 @@ items:
                 En las escarpadas montañas del mundo natal de los t'sa, esto a menudo significaba supervivencia.
 
                 El grado de éxito con esta habilidad determina el modificador de la habilidad de un psion.
-                **Atletismo—intento de escalada**. El psion gana un **–1, –2 o –3 Bonificación de paso**,
+                [[atletismo—escalada]] intento. El psion gana un **–1, –2 o –3 Bonificación de paso**,
                 dependiendo del grado de éxito (Ordinario, Bueno o Asombroso). Además, si
                 la distancia está dentro de la velocidad de caminata del usuario, el Personaje puede cruzar
                 superficies invertidas, recorriendo efectivamente el techo. El Personaje
@@ -424,10 +520,12 @@ items:
                 cayendo. Lo mismo ocurrirá si el Personaje no tiene nada a qué agarrarse
                 llegando a su destino.
 
-                **Beneficios de Rango:**
-                - **Rango 4 [Distancia aumentada]** se duplica la distancia que el usuario puede recorrer mientras trepa o corre por superficies invertidas.
-                - **Rango 8 [Distancia aumentada]** la distancia es tres veces la tarifa base.
-                - **Rango 12 [Distancia aumentada]** la distancia es cuatro veces la tarifa base.
+                ### Beneficios de Rango
+                **Rango 4 [Distancia aumentada]** la distancia que el usuario puede recorrer mientras trepa o corre por superficies invertidas se duplica.
+
+                **Rango 8 [Distancia aumentada]** la distancia es tres veces la tarifa base.
+
+                **Rango 12 [Distancia aumentada]** la distancia es cuatro veces la tarifa base.
               name: Trepado
       shatter:
         attribute: CON
@@ -515,10 +613,30 @@ items:
         localized:
           - en:
               name: Visual Enhancement
-              description: "By psionically reshaping your visual organs and rewriting the neural pathways of the visual cortex, the character can shift their vision across different bands of the electromagnetic spectrum and map structural environments through biological signatures.\n\nTo activate this power, the character makes a skill check. For the duration of the power, the character gains **low-light vision** (equivalent to a feline's *tapetum lucidum*), allowing them to see in near-total darkness as if it were twilight. Additionally, the character receives a step bonus to all Awareness-perception checks involving sight (normal or augmented) based on the level of success:\n\n* **Ordinary Success:** Grants a -1 step bonus.\n* **Good Success:** Grants a -2 step bonus.\n* **Amazing Success:** Grants a -3 step bonus.\n\n**Physiological Side Effects:** The activation of this power causes visible, often disturbing biological shifts. At a minimum, the character’s pupils dilate fully and a reflective
-                membrane covers the iris, making the eyes glow in ambient light. Specific modes (see below) may cause the eyes to become faceted, multi-lensed, or cause sensory pits to open on the face, which can impair social interactions at the Gamemaster's discretion.\n\n**Operational Limitation:** Only one additional sight mode can be active at any given time. Shifting ocular biology is mutually exclusive; if the eyes are currently modified for infrared pit detection, they cannot simultaneously utilize the compound structure like those of mantis shrimp.  Switching between active modes requires a new activation of the power.\n\nNavigating while actively scanning through solid barriers slows the character to the \"easy swim\" rate.\n\n**Rank Benefits:**\n\n* **At rank 3 [Infrared Pit Detection]**, modeled after the loreal pits of vipers, the character integrates thermal imaging into their visual field. Specialized heat-sensing pits may visibly open near the tear ducts or temples. The character
-                can trace heat signatures, detect thermal footprints, and see living targets through low-density barriers (such as thin walls or foliage).\n\n* **At rank 6 [Foveal Resolution]**, utilizing the dual-fovea structure and deep-pit anatomy found in raptors like eagles, the character’s eyes function as an integrated telescopic scope. The character ignores the first +1 step penalty for range (Medium or Long). This benefit does **not** stack with scopes or binoculars. Additionally, the high-resolution clarity allows the character to detect involuntary microexpressions, granting a -1 step bonus to Awareness or Interaction checks made to discern lies or emotional states. And Investigation-Search checks.\n\n* **At rank 8 [Wide-Spectrum Sensorium]**, replicating the advanced eyes of the mantis shrimp, the character’s eyes become visibly faceted and compound. They can simultaneously perceive polarized light, ultraviolet radiation, and active electromagnetic emissions (radio waves and
-                sensor frequencies). This allows them to \"see\" active transmittors, like radio equipment, active sensors.\n\n* **At rank 12 [Cortical Integration]**, the character's is able to seamlessly morph this visual organs making impossible to notice them at plain sight, eliminating any social penalty. Additionally, the character can switch between modes as an action."
+              description: |-
+                By psionically reshaping your visual organs and rewriting the neural pathways of the visual cortex, the character can shift their vision across different bands of the electromagnetic spectrum and map structural environments through biological signatures.
+
+                To activate this power, the character makes a skill check. For the duration of the power, the character gains **low-light vision** (equivalent to a feline's *tapetum lucidum*), allowing them to see in near-total darkness as if it were twilight. Additionally, the character receives a step bonus to all Awareness-perception checks involving sight (normal or augmented) based on the level of success:
+
+                * **Ordinary Success:** Grants a -1 step bonus.
+                * **Good Success:** Grants a -2 step bonus.
+                * **Amazing Success:** Grants a -3 step bonus.
+
+                **Physiological Side Effects:** The activation of this power causes visible, often disturbing biological shifts. At a minimum, the character’s pupils dilate fully and a reflective membrane covers the iris, making the eyes glow in ambient light. Specific modes (see below) may cause the eyes to become faceted, multi-lensed, or cause sensory pits to open on the face, which can impair social interactions at the Gamemaster's discretion.
+
+                **Operational Limitation:** Only one additional sight mode can be active at any given time. Shifting ocular biology is mutually exclusive; if the eyes are currently modified for infrared pit detection, they cannot simultaneously utilize the compound structure like those of mantis shrimp.  Switching between active modes requires a new activation of the power.
+
+                Navigating while actively scanning through solid barriers slows the character to the "easy swim" rate.
+
+                **Rank Benefits:**
+
+                **Rank 3 [Infrared Pit Detection]**, modeled after the loreal pits of vipers, the character integrates thermal imaging into their visual field. Specialized heat-sensing pits may visibly open near the tear ducts or temples. The character can trace heat signatures, detect thermal footprints, and see living targets through low-density barriers (such as thin walls or foliage).
+
+                **Rank 6 [Foveal Resolution]**, utilizing the dual-fovea structure and deep-pit anatomy found in raptors like eagles, the character’s eyes function as an integrated telescopic scope. The character ignores the first +1 step penalty for range (Medium or Long). This benefit does **not** stack with scopes or binoculars. Additionally, the high-resolution clarity allows the character to detect involuntary microexpressions, granting a -1 step bonus to [[awareness—perception]] or [[interaction—empathy]] checks made to discern lies or emotional states. And [[investigation—search]] checks.
+
+                **Rank 8 [Wide-Spectrum Sensorium]**, replicating the advanced eyes of the mantis shrimp, the character’s eyes become visibly faceted and compound. They can simultaneously perceive polarized light, ultraviolet radiation, and active electromagnetic emissions (radio waves and sensor frequencies). This allows them to "see" active transmittors, like radio equipment, active sensors.
+
+                **Rank 12 [Cortical Integration]**, the character's is able to seamlessly morph this visual organs making impossible to notice them at plain sight, eliminating any social penalty. Additionally, the character can switch between modes as an action.
           - es:
               name: Mejora Visual
               description: |-
@@ -538,13 +656,13 @@ items:
 
                 **Beneficios de Rango:**
 
-                * **En Rango 3 [Detección de hoyos por infrarrojos]**, modelado a partir de los hoyos reales de las víboras, el Personaje integra imágenes térmicas en su campo visual. Es posible que se abran visiblemente fosas especializadas sensibles al calor cerca de los conductos lagrimales o las sienes. El Personaje puede rastrear firmas de calor, detectar huellas térmicas y ver objetivos vivos a través de barreras de baja densidad (como paredes delgadas o follaje).
+                **Rango 3 [Detección de hoyos por infrarrojos]**, modelado a partir de los hoyos reales de las víboras, el Personaje integra imágenes térmicas en su campo visual. Es posible que se abran visiblemente fosas especializadas sensibles al calor cerca de los conductos lagrimales o las sienes. El Personaje puede rastrear firmas de calor, detectar huellas térmicas y ver objetivos vivos a través de barreras de baja densidad (como paredes delgadas o follaje).
 
-                * **En Rango 6 [Resolución Foveal]**, utilizando la estructura de fóvea dual y la anatomía profunda que se encuentran en aves rapaces como las águilas, los ojos del Personaje funcionan como un telescopio telescópico integrado. El Personaje ignora el primer +1 Penalización de paso para alcance (Medio o Largo). Este beneficio **no** se acumula con telescopios o binoculares. Además, la claridad de alta resolución permite al Personaje detectar microexpresiones involuntarias, otorgando un -1 Bonificación de paso a Alerta o Interacción en las comprobaciones realizadas para discernir mentiras o estados emocionales. Y comprobaciones Investigar-Search.
+                **Rango 6 [Resolución foveal]**, utilizando la estructura de fóvea dual y la anatomía profunda que se encuentran en aves rapaces como las águilas, los ojos del Personaje funcionan como un telescopio telescópico integrado. El Personaje ignora el primer +1 Penalización de paso para alcance (Medio o Largo). Este beneficio **no** se acumula con telescopios o binoculares. Además, la claridad de alta resolución permite que Personaje detecte microexpresiones involuntarias, otorgando un -1 Bonificación de paso a [[Alerta—Percepción]] o [[Interacción—empathy]] controles realizados para discernir mentiras o estados emocionales. Y [[Investigar—search]] comprobaciones.
 
-                * **En Rango 8 [Wide-Spectrum Sensorium]**, replicando los ojos avanzados del camarón mantis, los ojos del Personaje se vuelven visiblemente facetados y compuestos. Pueden percibir simultáneamente luz polarizada, radiación ultravioleta y emisiones electromagnéticas activas (ondas de radio y frecuencias de sensores). Esto les permite "ver" transmisores activos, como equipos de radio, sensores activos.
+                **Rango 8 [Sensor de amplio espectro]**, que replica los ojos avanzados del camarón mantis, los ojos del Personaje se vuelven visiblemente facetados y compuestos. Pueden percibir simultáneamente luz polarizada, radiación ultravioleta y emisiones electromagnéticas activas (ondas de radio y frecuencias de sensores). Esto les permite "ver" transmisores activos, como equipos de radio, sensores activos.
 
-                * **En Rango 12 [Integración Cortical]**, el Personaje es capaz de transformar perfectamente estos órganos visuales haciendo imposible notarlos a simple vista, eliminando cualquier penalización de Social. Además, el Personaje puede cambiar entre modos como una acción.
+                **Rango 12 [Integración cortical]**, el Personaje es capaz de transformar perfectamente estos órganos visuales haciendo imposible notarlos a simple vista, eliminando cualquier penalización de Social. Además, el Personaje puede cambiar entre modos como una acción.
         rank_benefits:
           - rank: 3
             title: Infrared Pit Detection
@@ -563,12 +681,58 @@ items:
         localized:
           - en:
               name: Transfer Vitality
-              description: "By establishing physical contact, the psion forces a parasitic bio-electric link that violently siphons biological energy from the target. The target suffers immediate metabolic collapse while the psion experiences a temporary surge in biological efficiency.\n\n**The Drain:** To activate this power, the character must be adjacent to an organic target around the same size or bigger than themself. A successful skill check imposes a step penalty on the target's **Stamina—endurance** and **Stamina—resist pain** checks, while the psion receives a corresponding step bonus to the same specialty skills.\n\n| Result | Target Penalty | Psion Bonus |\n| :--- | :--- | :--- |\n| **Crit. Failure** | No effect. | Psion suffers a +1 step penalty to CON checks |\n| **Ordinary** | +1 step penalty. | -1 step bonus. |\n| **Good** | +2 step penalty. | -2 step bonus. |\n| **Amazing** | +3 step penalty. | -3 step bonus. |\n\nThe effect lasts until the end of the next round. \n\n###
-                Rank Benefits\n**Rank 6 [Symbiotic Absorption]**, the psion can choose to convert the siphoned energy into raw regenerative material. Instead of taking the step bonus for themselves, the psion can heal:\n- **Good:** 2 wounds\n- **Amazing:** 3 wounds\n\n**Rank 9 [Channel Vitality]**, the psion can use this power to restore vitality to an ally instead of the psion. Both the recipient and the donor must be adjacent to the psion when the power is activated.\n\n**Rank 12 [Systemic Overdrive]**, the siphoning becomes so efficient that the psion can even use the energy to heal mortal damage:\n- **Ordinary:** 1 wound\n- **Good:** 2 wounds or 1 mortal\n- **Amazing:** 4 wounds or 2 mortals"
+              description: |-
+                By establishing physical contact, the psion forces a parasitic bio-electric link that violently siphons biological energy from the target. The target suffers immediate metabolic collapse while the psion experiences a temporary surge in biological efficiency.
+
+                **The Drain:** To activate this power, the character must be adjacent to an organic target around the same size or bigger than themself. A successful skill check imposes a step penalty on the target's [[stamina—endurance]] and [[stamina—resist pain]] specialty checks, while the psion receives a corresponding step bonus to the same specialty skills.
+
+                | Result | Target Penalty | Psion Bonus |
+                | :--- | :--- | :--- |
+                | **Crit. Failure** | No effect. | Psion suffers a +1 step penalty to CON checks |
+                | **Ordinary** | +1 step penalty. | -1 step bonus. |
+                | **Good** | +2 step penalty. | -2 step bonus. |
+                | **Amazing** | +3 step penalty. | -3 step bonus. |
+
+                The effect lasts until the end of the next round. 
+
+                ### Rank Benefits
+                **Rank 6 [Symbiotic Absorption]**, the psion can choose to convert the siphoned energy into raw regenerative material. Instead of taking the step bonus for themselves, the psion can heal:
+                - **Good:** 2 wounds
+                - **Amazing:** 3 wounds
+
+                **Rank 9 [Channel Vitality]**, the psion can use this power to restore vitality to an ally instead of the psion. Both the recipient and the donor must be adjacent to the psion when the power is activated.
+
+                **Rank 12 [Systemic Overdrive]**, the siphoning becomes so efficient that the psion can even use the energy to heal mortal damage:
+                - **Ordinary:** 1 wound
+                - **Good:** 2 wounds or 1 mortal
+                - **Amazing:** 4 wounds or 2 mortals
           - es:
               name: "Transferir Vitalidad"
-              description: "Al establecer contacto físico, el psión fuerza un vínculo bio‑eléctrico parasitario que sifona violentamente energía biológica del objetivo. El objetivo sufre un colapso metabólico inmediato mientras el psión experimenta un impulso temporal en su eficiencia biológica.\n\n**La Drenaje:** Para activar este poder, el personaje debe estar adyacente a un objetivo orgánico de tamaño similar o mayor. Una tirada de habilidad exitosa impone una penalización de paso a los chequeos de **Resistencia—aguante** y **Resistencia—resistir dolor** del objetivo, mientras que el psión recibe un bonificador de paso correspondiente a esas mismas habilidades.\n\n| Resultado | Penalización del objetivo | Bonificación del psión |\n| :--- | :--- | :--- |\n| **Fallo crítico** | No hay efecto. | El psión sufre una penalización de +1 paso a chequeos de CON |\n| **Ordinario** | Penalización de +1 paso. | Bonificación de -1 paso. |\n| **Bueno** | Penalización de +2 pasos. | Bonificación de
-                -2 pasos. |\n| **Asombroso** | Penalización de +3 pasos. | Bonificación de -3 pasos. |\n\nEl efecto dura hasta el final del siguiente asalto.\n\n### Beneficios de Rango\n**Rango 6 [Absorción simbiótica]**, el psión puede convertir la energía sifonada en material regenerativo. En lugar de tomar el bonificador de paso, el psión puede curar:\n- **Bueno:** 2 heridas\n- **Asombroso:** 3 heridas\n\n**Rango 9 [Canalizar vitalidad]**, el psión puede usar este poder para restaurar vitalidad a un aliado en lugar del psión. Tanto el receptor como el donante deben estar adyacentes al psión al activar el poder.\n\n**Rango 12 [Sobrecarga sistémica]**, la sifonación se vuelve tan eficiente que el psión puede incluso usar la energía para curar daño mortal:\n- **Ordinario:** 1 herida\n- **Bueno:** 2 heridas o 1 mortal\n- **Asombroso:** 4 heridas o 2 mortales"
+              description: |-
+                Al establecer contacto Físico, el psion fuerza un vínculo bioeléctrico parásito que extrae violentamente energía biológica del objetivo. El objetivo sufre un colapso metabólico inmediato mientras que el psion experimenta un aumento temporal en la eficiencia biológica.
+
+                **El Drenaje:** Para activar este poder, el Personaje debe estar adyacente a un objetivo orgánico aproximadamente del mismo tamaño o más grande que él. Una prueba de habilidad exitosa impone un Penalización de paso en las pruebas de especialidad [[Aguante—Resistencia]] y [[Aguante—resist dolor]] del objetivo, mientras que el psion recibe un Bonificación de paso correspondiente a las mismas habilidades especiales.
+
+                | Resultado | Penalización de objetivo | Bono Psión |
+                | :--- | :--- | :--- |
+                | **Crítico. Fracaso** | Ningún efecto. | Psion sufre un control de +1 Penalización de paso a CON |
+                | **Ordinario** | +1 Penalización de paso. | -1 Bonificación de paso. |
+                | **Bueno** | +2 Penalización de paso. | -2 Bonificación de paso. |
+                | **Asombroso** | +3 Penalización de paso. | -3 Bonificación de paso. |
+
+                El efecto dura hasta el final de la siguiente ronda.
+
+                ### Beneficios de Rango
+                **Rango 6 [Absorción simbiótica]**, el psion puede optar por convertir la energía desviada en material regenerativo en bruto. En lugar de tomar Bonificación de paso usted mismo, Psion puede curar:
+                - **Bueno:** 2 heridas
+                - **Asombroso:** 3 heridas
+
+                **Rango 9 [Channel Vitality]**, el psion puede usar este poder para restaurar la vitalidad de un aliado en lugar del psion. Tanto el receptor como el donante deben estar adyacentes al psion cuando se activa el poder.
+
+                **Rango 12 [Systemic Overdrive]**, el sifón se vuelve tan eficiente que el psion puede incluso usar la energía para curar el daño de Mortal:
+                - **Ordinario:** 1 Herida
+                - **Bueno:** 2 heridas o 1 Mortal
+                - **Asombroso:** 4 heridas o 2 mortales
         rank_benefits:
           - rank: 6
             title: Symbiotic Absorption

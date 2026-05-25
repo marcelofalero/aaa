@@ -43,3 +43,4 @@ Claw/Spur/Horn attacks are made while this power is active, inflict additional d
 **Rank 8 [Improved Destabilization]** From this onwards the good success on attacks are enough to destabilize an armor. This effect now works on good quality armors as well.
 
 **Rank 12 [Armor Degradation]** On an amazing success the armor integrity is now so compromised that its toughness is also reduced, from Amazing to Good, from Good to Ordinary, Ordinary armor stop protecting until the effect ends.
+

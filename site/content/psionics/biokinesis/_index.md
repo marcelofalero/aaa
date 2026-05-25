@@ -29,10 +29,13 @@ The result of the skill check determines the duration of the bio-armor:
 The skin hardening impairs the character's movement in the same way as worn armor with AP 1, but a lighter version can be achieved by sacrificing 1 point of armor on each category, this eliminates the armor penalty.
 
 ### Rank Benefits
-- **Rank 3 [Increased Effect]:** the protection afforded by bio-armor increases to (LI d8 / HI d6 / En d4+1).
-- **Rank 6 [Increased Effect]:** this value further increases to (LI d8 / HI d6+1 / En d6)b .
-- **Rank 9 [Increased Toughness]:** the armor is treated as being of Good toughness.
-- **Rank 12 [Increased Effect]:** the armor value increases again to (LI 2d4 / HI 2d4 / En d8).
+**Rank 3 [Increased Effect]** the protection afforded by bio-armor increases to (LI d8 / HI d6 / En d4+1).
+
+**Rank 6 [Increased Effect]** this value further increases to (LI d8 / HI d6+1 / En d6)b .
+
+**Rank 9 [Increased Toughness]** the armor is treated as being of Good toughness.
+
+**Rank 12 [Increased Effect]** the armor value increases again to (LI 2d4 / HI 2d4 / En d8).
 
 ---
 
@@ -50,20 +53,23 @@ The principal difference in the two forms is in the sort of damage they do. A ch
 | **Staff** | d8s/d8+2s/d12+2s | LI/O |
 | **Sword** | d6w/d6+2w/d6m | LI/O |
 
-The character uses the **Melee Combat—powered** specialty skill to wield the bioweapon, regardless of its form.
+The character uses the [[melee combat—powered]] specialty skill to wield the bioweapon, regardless of its form.
 
-The result of the bioweapon skill check may add a bonus to the Melee Combat—powered skill check as follows:
+The result of the bioweapon skill check may add a bonus to the attack check as follows:
 - **Ordinary:** –1 step bonus
 - **Good:** –2 step bonus
 - **Amazing:** –3 step bonus
 
 This bonus lasts until the character chooses not to maintain the bioweapon.
 
-**Rank Benefits:**
-- **Rank 3 [Increased Damage]** the damage of the bioweapon increases by +1.
-- **Rank 6 [Increased Damage]** it increases again (to a total of +2).
-- **Rank 9 [Increased Damage]** all attacks made with the bioweapon are considered to deliver **Good damage**.
-- **Rank 12 [Improved Damage]** it increases by another +1 (to a total of +3).
+### Rank Benefits:
+**Rank 3 [Increased Damage]** the damage of the bioweapon increases by +1.
+
+**Rank 6 [Increased Damage]** it increases again (to a total of +2).
+
+**Rank 9 [Increased Damage]** all attacks made with the bioweapon are considered to deliver **Good damage**.
+
+**Rank 12 [Improved Damage]** it increases by another +1 (to a total of +3).
 
 ---
 
@@ -102,7 +108,7 @@ his or her resistance to pain and fatigue.
 - **Good:** -2 step bonus to Stamina checks.
 - **Amazing:** -3 step bonus to Stamina checks.
 
-> Only one use of the skill is allowed at the same time (hostile environments, adrenal boost, or endorphin release).
+> Only one use of the skill is allowed at the same time (hostile environments, adrenal boost, or endorphin release)
 
 ---
 
@@ -128,11 +134,15 @@ Diseases reduced below Marginal are considered cured.
 Psionic healing imposes heavy strain on the body, so the skill can't be attempted more than once per hour, any attempt of using the skill more than once per hour will result in a level of exhaustion that cannot be recovered from until 24 hours have passed since the last attempt.
 
 ### Rank Benefits
-- **Rank 4 [Treating Poison]**, a character may counteract the effect of poisons or drugs in his or her system before the end of their onset time, reducing the impact they may have. The degree of success acts as a bonus to the Constitution feat check required: **Ordinary:** –2 step bonus, **Good:** –3 step bonus, **Amazing:** –4 step bonus.
-- **Rank 6 [Healing Mortal Damage]**, a character becomes able to heal mortal damage. Skill check results change to: **Ordinary:** 2 wounds, **Good:** 3 wounds or 1 mortal, **Amazing:** 4 wounds or 2 mortals.
-- **Rank 8 [Improved Effect]**, a character's ability to heal improves further: **Ordinary:** 3 wounds or 1 mortal, **Good:** 4 wounds or 2 mortals, **Amazing:** 6 wounds or 3 mortals.
-- **Rank 8 [Laying On Hands]**, a character becomes able to heal damage in others. The subject to be healed must be in physical contact with the character using this ability.
-- **Rank 12 [Master Healer]**, a character reduces the strain of psionic healing, the skill can be attempted once every 10 minutes without causing exhaustion. Additionally, the character can double the number of mortals healed at the cost of 1 additional psionic energy per mortal healed and one point of exhaustion on both healer and subject.
+**Rank 4 [Treating Poison]**, a character may counteract the effect of poisons or drugs in his or her system before the end of their onset time, reducing the impact they may have. The degree of success acts as a bonus to the Constitution feat check required: **Ordinary:** –2 step bonus, **Good:** –3 step bonus, **Amazing:** –4 step bonus.
+
+**Rank 6 [Healing Mortal Damage]**, a character becomes able to heal mortal damage. Skill check results change to: **Ordinary:** 2 wounds, **Good:** 3 wounds or 1 mortal, **Amazing:** 4 wounds or 2 mortals.
+
+**Rank 8 [Improved Effect]**, a character's ability to heal improves further: **Ordinary:** 3 wounds or 1 mortal, **Good:** 4 wounds or 2 mortals, **Amazing:** 6 wounds or 3 mortals.
+
+**Rank 8 [Laying On Hands]**, a character becomes able to heal damage in others. The subject to be healed must be in physical contact with the character using this ability.
+
+**Rank 12 [Master Healer]**, a character reduces the strain of psionic healing, the skill can be attempted once every 10 minutes without causing exhaustion. Additionally, the character can double the number of mortals healed at the cost of 1 additional psionic energy per mortal healed and one point of exhaustion on both healer and subject.
 
 ---
 
@@ -232,8 +242,6 @@ rejuvenate skill can't be attempted more than once per hour.
 
 ---
 
----
-
 ## Clamber
 {{< specialty attr="CON" untrained="yes" cost="2" extended="true" >}}
 
@@ -246,7 +254,7 @@ with ease, and can even move across inverted surfaces for short distances. In
 the steep mountains of the t'sa homeworld, this often meant survival.
 
 The degree of success with this skill determines the modifier to a psion's
-**Athletics—climb** attempt. The psion gains a **–1, –2, or –3 step bonus**,
+[[athletics—climb]] attempt. The psion gains a **–1, –2, or –3 step bonus**,
 depending on the degree of success (Ordinary, Good, or Amazing). Further, if
 the distance is within the user's walk rate, the character can dash across
 inverted surfaces, effectively running across the ceiling. The character
@@ -254,10 +262,12 @@ cannot stop or change direction before traveling the full distance without
 falling. The same will happen if the character has nothing to hold onto on
 reaching his or her destination.
 
-**Rank Benefits:**
-- **Rank 4 [Increased Distance]** the distance the user can travel while climbing or running across inverted surfaces is doubled.
-- **Rank 8 [Increased Distance]** the distance is three times the base rate.
-- **Rank 12 [Increased Distance]** the distance is four times the base rate.
+### Rank Benefits
+**Rank 4 [Increased Distance]** the distance the user can travel while climbing or running across inverted surfaces is doubled.
+
+**Rank 8 [Increased Distance]** the distance is three times the base rate.
+
+**Rank 12 [Increased Distance]** the distance is four times the base rate.
 
 ---
 
@@ -315,13 +325,13 @@ Navigating while actively scanning through solid barriers slows the character to
 
 **Rank Benefits:**
 
-* **At rank 3 [Infrared Pit Detection]**, modeled after the loreal pits of vipers, the character integrates thermal imaging into their visual field. Specialized heat-sensing pits may visibly open near the tear ducts or temples. The character can trace heat signatures, detect thermal footprints, and see living targets through low-density barriers (such as thin walls or foliage).
+**Rank 3 [Infrared Pit Detection]**, modeled after the loreal pits of vipers, the character integrates thermal imaging into their visual field. Specialized heat-sensing pits may visibly open near the tear ducts or temples. The character can trace heat signatures, detect thermal footprints, and see living targets through low-density barriers (such as thin walls or foliage).
 
-* **At rank 6 [Foveal Resolution]**, utilizing the dual-fovea structure and deep-pit anatomy found in raptors like eagles, the character’s eyes function as an integrated telescopic scope. The character ignores the first +1 step penalty for range (Medium or Long). This benefit does **not** stack with scopes or binoculars. Additionally, the high-resolution clarity allows the character to detect involuntary microexpressions, granting a -1 step bonus to Awareness or Interaction checks made to discern lies or emotional states. And Investigation-Search checks.
+**Rank 6 [Foveal Resolution]**, utilizing the dual-fovea structure and deep-pit anatomy found in raptors like eagles, the character’s eyes function as an integrated telescopic scope. The character ignores the first +1 step penalty for range (Medium or Long). This benefit does **not** stack with scopes or binoculars. Additionally, the high-resolution clarity allows the character to detect involuntary microexpressions, granting a -1 step bonus to [[awareness—perception]] or [[interaction—empathy]] checks made to discern lies or emotional states. And [[investigation—search]] checks.
 
-* **At rank 8 [Wide-Spectrum Sensorium]**, replicating the advanced eyes of the mantis shrimp, the character’s eyes become visibly faceted and compound. They can simultaneously perceive polarized light, ultraviolet radiation, and active electromagnetic emissions (radio waves and sensor frequencies). This allows them to "see" active transmittors, like radio equipment, active sensors.
+**Rank 8 [Wide-Spectrum Sensorium]**, replicating the advanced eyes of the mantis shrimp, the character’s eyes become visibly faceted and compound. They can simultaneously perceive polarized light, ultraviolet radiation, and active electromagnetic emissions (radio waves and sensor frequencies). This allows them to "see" active transmittors, like radio equipment, active sensors.
 
-* **At rank 12 [Cortical Integration]**, the character's is able to seamlessly morph this visual organs making impossible to notice them at plain sight, eliminating any social penalty. Additionally, the character can switch between modes as an action.
+**Rank 12 [Cortical Integration]**, the character's is able to seamlessly morph this visual organs making impossible to notice them at plain sight, eliminating any social penalty. Additionally, the character can switch between modes as an action.
 
 ---
 
@@ -330,7 +340,7 @@ Navigating while actively scanning through solid barriers slows the character to
 
 By establishing physical contact, the psion forces a parasitic bio-electric link that violently siphons biological energy from the target. The target suffers immediate metabolic collapse while the psion experiences a temporary surge in biological efficiency.
 
-**The Drain:** To activate this power, the character must be adjacent to an organic target around the same size or bigger than themself. A successful skill check imposes a step penalty on the target's **Stamina—endurance** and **Stamina—resist pain** checks, while the psion receives a corresponding step bonus to the same specialty skills.
+**The Drain:** To activate this power, the character must be adjacent to an organic target around the same size or bigger than themself. A successful skill check imposes a step penalty on the target's [[stamina—endurance]] and [[stamina—resist pain]] specialty checks, while the psion receives a corresponding step bonus to the same specialty skills.
 
 | Result | Target Penalty | Psion Bonus |
 | :--- | :--- | :--- |
