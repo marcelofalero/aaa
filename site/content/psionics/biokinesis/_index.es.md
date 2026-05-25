@@ -29,10 +29,13 @@ El resultado de la prueba de habilidad determina la duración de la bioarmadura:
 El endurecimiento de la piel perjudica el movimiento del Personaje de la misma manera que una armadura desgastada con AP 1, pero se puede lograr una versión más ligera sacrificando 1 punto de armadura en cada categoría, esto elimina la penalización de armadura.
 
 ### Beneficios de Rango
-- **Rango 3 [Efecto aumentado]:** la protección brindada por la bioarmadura aumenta a (LI d8 / HI d6 / En d4+1).
-- **Rango 6 [Efecto aumentado]:** este valor aumenta aún más a (LI d8 / HI d6+1 / En d6)b.
-- **Rango 9 [Dureza aumentada]:** la armadura se trata como si tuviera dureza Bueno.
-- **Rango 12 [Efecto aumentado]:** el valor de la armadura aumenta nuevamente a (LI 2d4 / HI 2d4 / En d8).
+**Rango 3 [Efecto aumentado]** la protección brindada por la bioarmadura aumenta a (LI d8 / HI d6 / En d4+1).
+
+**Rango 6 [Efecto aumentado]** este valor aumenta aún más a (LI d8 / HI d6+1 / En d6)b.
+
+**Rango 9 [Dureza aumentada]** la armadura se trata como si tuviera dureza Bueno.
+
+**Rango 12 [Efecto aumentado]** el valor de la armadura aumenta nuevamente a (LI 2d4 / HI 2d4 / En d8).
 
 ---
 
@@ -50,20 +53,23 @@ La principal diferencia entre las dos formas está en el tipo de daño que causa
 | **Personal** | d8s/d8+2s/d12+2s | LI/O |
 | **Espada** | d6w/d6+2w/d6m | LI/O |
 
-El Personaje usa el **Combate cuerpo a cuerpo—Armas de energía** Especialidad para empuñar el arma biológica, independientemente de su forma.
+El Personaje usa el [[Combate cuerpo a cuerpo—Armas de energía]] Especialidad para empuñar el arma biológica, independientemente de su forma.
 
-El resultado de la prueba de habilidad con arma biológica puede agregar una bonificación a la prueba de habilidad Combate cuerpo a cuerpo—Armas de energía de la siguiente manera:
+El resultado de la prueba de habilidad con arma biológica puede añadir una bonificación a la prueba de ataque de la siguiente manera:
 - **Ordinario:** –1 Bonificación de paso
 - **Bueno:** –2 Bonificación de paso
 - **Asombroso:** –3 Bonificación de paso
 
 Esta bonificación dura hasta que Personaje decida no mantener el arma biológica.
 
-**Beneficios de Rango:**
-- **Rango 3 [Daño aumentado]** el daño del arma biológica aumenta en +1.
-- **Rango 6 [Daño aumentado]** aumenta nuevamente (a un total de +2).
-- **Rango 9 [Daño aumentado]** se considera que todos los ataques realizados con el arma biológica causan **daño Bueno**.
-- **Rango 12 [Daño mejorado]** aumenta en otro +1 (hasta un total de +3).
+### Beneficios de Rango:
+**Rango 3 [Daño aumentado]** el daño del arma biológica aumenta en +1.
+
+**Rango 6 [Daño aumentado]** aumenta nuevamente (a un total de +2).
+
+**Rango 9 [Daño aumentado]** se considera que todos los ataques realizados con el arma biológica causan **daño Bueno**.
+
+**Rango 12 [Daño mejorado]** aumenta en otro +1 (hasta un total de +3).
 
 ---
 
@@ -102,7 +108,7 @@ su resistencia al dolor y Fatiga.
 - **Bueno:** -2 comprobaciones de Bonificación de paso a Aguante.
 - **Asombroso:** -3 comprobaciones de Bonificación de paso a Aguante.
 
-> Solo se permite un uso de la habilidad al mismo tiempo (entornos hostiles, impulso suprarrenal o liberación de endorfinas).
+> Solo se permite un uso de la habilidad al mismo tiempo (entornos hostiles, impulso suprarrenal o liberación de endorfinas)
 
 ---
 
@@ -128,11 +134,15 @@ Las enfermedades reducidas por debajo del Marginal se consideran curadas.
 La curación psiónica impone una gran tensión en el cuerpo, por lo que la habilidad no se puede intentar más de una vez por hora; cualquier intento de usar la habilidad más de una vez por hora resultará en un nivel de agotamiento del que no se podrá recuperar hasta que hayan pasado 24 horas desde el último intento.
 
 ### Beneficios de Rango
-- **Rango 4 [Tratamiento del Veneno]**, un Personaje puede contrarrestar el efecto de los venenos o drogas en su sistema antes de que finalice su tiempo de aparición, reduciendo el impacto que puedan tener. El grado de éxito actúa como una bonificación a la prueba de dote de Constitución requerida: **Ordinario:** –2 Bonificación de paso, **Bueno:** –3 Bonificación de paso, **Asombroso:** –4 Bonificación de paso.
-- **Rango 6 [Curación del daño de Mortal]**, un Personaje puede curar el daño de Mortal. Los resultados de la prueba de habilidad cambian a: **Ordinario:** 2 heridas, **Bueno:** 3 heridas o 1 Mortal, **Asombroso:** 4 heridas o 2 mortales.
-- **Rango 8 [Efecto mejorado]**, la capacidad de curación de un Personaje mejora aún más: **Ordinario:** 3 heridas o 1 Mortal, **Bueno:** 4 heridas o 2 mortales, **Asombroso:** 6 heridas o 3 mortales.
-- **Rango 8 [Imposición de manos]**, un Personaje se vuelve capaz de curar el daño de otros. El sujeto a curar debe estar en contacto Físico con el Personaje usando esta habilidad.
-- **Rango 12 [Master Healer]**, un Personaje reduce la tensión de la curación psiónica, la habilidad se puede intentar una vez cada 10 minutos sin causar agotamiento. Además, el Personaje puede duplicar el número de mortales curados a costa de 1 energía psiónica adicional por cada Mortal curado y un punto de agotamiento tanto para el sanador como para el sujeto.
+**Rango 4 [Tratamiento del Veneno]**, un Personaje puede contrarrestar el efecto de los venenos o drogas en su sistema antes de que finalice su tiempo de aparición, reduciendo el impacto que puedan tener. El grado de éxito actúa como una bonificación a la prueba de dote de Constitución requerida: **Ordinario:** –2 Bonificación de paso, **Bueno:** –3 Bonificación de paso, **Asombroso:** –4 Bonificación de paso.
+
+**Rango 6 [Curación del daño de Mortal]**, un Personaje puede curar el daño de Mortal. Los resultados de la prueba de habilidad cambian a: **Ordinario:** 2 heridas, **Bueno:** 3 heridas o 1 Mortal, **Asombroso:** 4 heridas o 2 mortales.
+
+**Rango 8 [Efecto mejorado]**, la capacidad de curación de un Personaje mejora aún más: **Ordinario:** 3 heridas o 1 Mortal, **Bueno:** 4 heridas o 2 mortales, **Asombroso:** 6 heridas o 3 mortales.
+
+**Rango 8 [Imposición de manos]**, un Personaje se vuelve capaz de curar el daño de otros. El sujeto a curar debe estar en contacto Físico con el Personaje usando esta habilidad.
+
+**Rango 12 [Master Healer]**, un Personaje reduce la tensión de la curación psiónica, la habilidad se puede intentar una vez cada 10 minutos sin causar agotamiento. Además, el Personaje puede duplicar el número de mortales curados a costa de 1 energía psiónica adicional por cada Mortal curado y un punto de agotamiento tanto para el sanador como para el sujeto.
 
 ---
 
@@ -232,8 +242,6 @@ La habilidad de rejuvenecer no se puede intentar más de una vez por hora.
 
 ---
 
----
-
 ## Trepado
 {{< specialty attr="CON" untrained="yes" cost="2" extended="true" >}}
 
@@ -246,7 +254,7 @@ con facilidad e incluso puede moverse a través de superficies invertidas en dis
 En las escarpadas montañas del mundo natal de los t'sa, esto a menudo significaba supervivencia.
 
 El grado de éxito con esta habilidad determina el modificador de la habilidad de un psion.
-**Atletismo—intento de escalada**. El psion gana un **–1, –2 o –3 Bonificación de paso**,
+[[atletismo—escalada]] intento. El psion gana un **–1, –2 o –3 Bonificación de paso**,
 dependiendo del grado de éxito (Ordinario, Bueno o Asombroso). Además, si
 la distancia está dentro de la velocidad de caminata del usuario, el Personaje puede cruzar
 superficies invertidas, recorriendo efectivamente el techo. El Personaje
@@ -254,10 +262,12 @@ No puede detenerse ni cambiar de dirección antes de recorrer la distancia compl
 cayendo. Lo mismo ocurrirá si el Personaje no tiene nada a qué agarrarse
 llegando a su destino.
 
-**Beneficios de Rango:**
-- **Rango 4 [Distancia aumentada]** se duplica la distancia que el usuario puede recorrer mientras trepa o corre por superficies invertidas.
-- **Rango 8 [Distancia aumentada]** la distancia es tres veces la tarifa base.
-- **Rango 12 [Distancia aumentada]** la distancia es cuatro veces la tarifa base.
+### Beneficios de Rango
+**Rango 4 [Distancia aumentada]** la distancia que el usuario puede recorrer mientras trepa o corre por superficies invertidas se duplica.
+
+**Rango 8 [Distancia aumentada]** la distancia es tres veces la tarifa base.
+
+**Rango 12 [Distancia aumentada]** la distancia es cuatro veces la tarifa base.
 
 ---
 
@@ -315,42 +325,42 @@ Navegar mientras se escanea activamente a través de barreras sólidas ralentiza
 
 **Beneficios de Rango:**
 
-* **En Rango 3 [Detección de hoyos por infrarrojos]**, modelado a partir de los hoyos reales de las víboras, el Personaje integra imágenes térmicas en su campo visual. Es posible que se abran visiblemente fosas especializadas sensibles al calor cerca de los conductos lagrimales o las sienes. El Personaje puede rastrear firmas de calor, detectar huellas térmicas y ver objetivos vivos a través de barreras de baja densidad (como paredes delgadas o follaje).
+**Rango 3 [Detección de hoyos por infrarrojos]**, modelado a partir de los hoyos reales de las víboras, el Personaje integra imágenes térmicas en su campo visual. Es posible que se abran visiblemente fosas especializadas sensibles al calor cerca de los conductos lagrimales o las sienes. El Personaje puede rastrear firmas de calor, detectar huellas térmicas y ver objetivos vivos a través de barreras de baja densidad (como paredes delgadas o follaje).
 
-* **En Rango 6 [Resolución Foveal]**, utilizando la estructura de fóvea dual y la anatomía profunda que se encuentran en aves rapaces como las águilas, los ojos del Personaje funcionan como un telescopio telescópico integrado. El Personaje ignora el primer +1 Penalización de paso para alcance (Medio o Largo). Este beneficio **no** se acumula con telescopios o binoculares. Además, la claridad de alta resolución permite al Personaje detectar microexpresiones involuntarias, otorgando un -1 Bonificación de paso a Alerta o Interacción en las comprobaciones realizadas para discernir mentiras o estados emocionales. Y comprobaciones Investigar-Search.
+**Rango 6 [Resolución foveal]**, utilizando la estructura de fóvea dual y la anatomía profunda que se encuentran en aves rapaces como las águilas, los ojos del Personaje funcionan como un telescopio telescópico integrado. El Personaje ignora el primer +1 Penalización de paso para alcance (Medio o Largo). Este beneficio **no** se acumula con telescopios o binoculares. Además, la claridad de alta resolución permite que Personaje detecte microexpresiones involuntarias, otorgando un -1 Bonificación de paso a [[Alerta—Percepción]] o [[Interacción—empathy]] controles realizados para discernir mentiras o estados emocionales. Y [[Investigar—search]] comprobaciones.
 
-* **En Rango 8 [Wide-Spectrum Sensorium]**, replicando los ojos avanzados del camarón mantis, los ojos del Personaje se vuelven visiblemente facetados y compuestos. Pueden percibir simultáneamente luz polarizada, radiación ultravioleta y emisiones electromagnéticas activas (ondas de radio y frecuencias de sensores). Esto les permite "ver" transmisores activos, como equipos de radio, sensores activos.
+**Rango 8 [Sensor de amplio espectro]**, que replica los ojos avanzados del camarón mantis, los ojos del Personaje se vuelven visiblemente facetados y compuestos. Pueden percibir simultáneamente luz polarizada, radiación ultravioleta y emisiones electromagnéticas activas (ondas de radio y frecuencias de sensores). Esto les permite "ver" transmisores activos, como equipos de radio, sensores activos.
 
-* **En Rango 12 [Integración Cortical]**, el Personaje es capaz de transformar perfectamente estos órganos visuales haciendo imposible notarlos a simple vista, eliminando cualquier penalización de Social. Además, el Personaje puede cambiar entre modos como una acción.
+**Rango 12 [Integración cortical]**, el Personaje es capaz de transformar perfectamente estos órganos visuales haciendo imposible notarlos a simple vista, eliminando cualquier penalización de Social. Además, el Personaje puede cambiar entre modos como una acción.
 
 ---
 
 ## Transferir Vitalidad
 {{< specialty attr="CON" untrained="yes" cost="2" >}}
 
-Al establecer contacto físico, el psión fuerza un vínculo bio‑eléctrico parasitario que sifona violentamente energía biológica del objetivo. El objetivo sufre un colapso metabólico inmediato mientras el psión experimenta un impulso temporal en su eficiencia biológica.
+Al establecer contacto Físico, el psion fuerza un vínculo bioeléctrico parásito que extrae violentamente energía biológica del objetivo. El objetivo sufre un colapso metabólico inmediato mientras que el psion experimenta un aumento temporal en la eficiencia biológica.
 
-**La Drenaje:** Para activar este poder, el personaje debe estar adyacente a un objetivo orgánico de tamaño similar o mayor. Una tirada de habilidad exitosa impone una penalización de paso a los chequeos de **Resistencia—aguante** y **Resistencia—resistir dolor** del objetivo, mientras que el psión recibe un bonificador de paso correspondiente a esas mismas habilidades.
+**El Drenaje:** Para activar este poder, el Personaje debe estar adyacente a un objetivo orgánico aproximadamente del mismo tamaño o más grande que él. Una prueba de habilidad exitosa impone un Penalización de paso en las pruebas de especialidad [[Aguante—Resistencia]] y [[Aguante—resist dolor]] del objetivo, mientras que el psion recibe un Bonificación de paso correspondiente a las mismas habilidades especiales.
 
-| Resultado | Penalización del objetivo | Bonificación del psión |
+| Resultado | Penalización de objetivo | Bono Psión |
 | :--- | :--- | :--- |
-| **Fallo crítico** | No hay efecto. | El psión sufre una penalización de +1 paso a chequeos de CON |
-| **Ordinario** | Penalización de +1 paso. | Bonificación de -1 paso. |
-| **Bueno** | Penalización de +2 pasos. | Bonificación de -2 pasos. |
-| **Asombroso** | Penalización de +3 pasos. | Bonificación de -3 pasos. |
+| **Crítico. Fracaso** | Ningún efecto. | Psion sufre un control de +1 Penalización de paso a CON |
+| **Ordinario** | +1 Penalización de paso. | -1 Bonificación de paso. |
+| **Bueno** | +2 Penalización de paso. | -2 Bonificación de paso. |
+| **Asombroso** | +3 Penalización de paso. | -3 Bonificación de paso. |
 
-El efecto dura hasta el final del siguiente asalto.
+El efecto dura hasta el final de la siguiente ronda.
 
 ### Beneficios de Rango
-**Rango 6 [Absorción simbiótica]**, el psión puede convertir la energía sifonada en material regenerativo. En lugar de tomar el bonificador de paso, el psión puede curar:
+**Rango 6 [Absorción simbiótica]**, el psion puede optar por convertir la energía desviada en material regenerativo en bruto. En lugar de tomar Bonificación de paso usted mismo, Psion puede curar:
 - **Bueno:** 2 heridas
 - **Asombroso:** 3 heridas
 
-**Rango 9 [Canalizar vitalidad]**, el psión puede usar este poder para restaurar vitalidad a un aliado en lugar del psión. Tanto el receptor como el donante deben estar adyacentes al psión al activar el poder.
+**Rango 9 [Channel Vitality]**, el psion puede usar este poder para restaurar la vitalidad de un aliado en lugar del psion. Tanto el receptor como el donante deben estar adyacentes al psion cuando se activa el poder.
 
-**Rango 12 [Sobrecarga sistémica]**, la sifonación se vuelve tan eficiente que el psión puede incluso usar la energía para curar daño mortal:
-- **Ordinario:** 1 herida
-- **Bueno:** 2 heridas o 1 mortal
+**Rango 12 [Systemic Overdrive]**, el sifón se vuelve tan eficiente que el psion puede incluso usar la energía para curar el daño de Mortal:
+- **Ordinario:** 1 Herida
+- **Bueno:** 2 heridas o 1 Mortal
 - **Asombroso:** 4 heridas o 2 mortales
 
 ---

@@ -27,17 +27,20 @@ The principal difference in the two forms is in the sort of damage they do. A ch
 | **Staff** | d8s/d8+2s/d12+2s | LI/O |
 | **Sword** | d6w/d6+2w/d6m | LI/O |
 
-The character uses the **Melee Combat—powered** specialty skill to wield the bioweapon, regardless of its form.
+The character uses the [[melee combat—powered]] specialty skill to wield the bioweapon, regardless of its form.
 
-The result of the bioweapon skill check may add a bonus to the Melee Combat—powered skill check as follows:
+The result of the bioweapon skill check may add a bonus to the attack check as follows:
 - **Ordinary:** –1 step bonus
 - **Good:** –2 step bonus
 - **Amazing:** –3 step bonus
 
 This bonus lasts until the character chooses not to maintain the bioweapon.
 
-**Rank Benefits:**
-- **Rank 3 [Increased Damage]** the damage of the bioweapon increases by +1.
-- **Rank 6 [Increased Damage]** it increases again (to a total of +2).
-- **Rank 9 [Increased Damage]** all attacks made with the bioweapon are considered to deliver **Good damage**.
-- **Rank 12 [Improved Damage]** it increases by another +1 (to a total of +3).
+### Rank Benefits:
+**Rank 3 [Increased Damage]** the damage of the bioweapon increases by +1.
+
+**Rank 6 [Increased Damage]** it increases again (to a total of +2).
+
+**Rank 9 [Increased Damage]** all attacks made with the bioweapon are considered to deliver **Good damage**.
+
+**Rank 12 [Improved Damage]** it increases by another +1 (to a total of +3). 

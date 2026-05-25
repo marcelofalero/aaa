@@ -41,5 +41,3 @@ rejuvenate skill can't be attempted more than once per hour.
 **Rank 6 [Laying On Hands]** a character becomes able to heal fatigue or stun damage, as well as disease, in others. The subject to be healed must be in physical contact with the character using this ability.
 
 **Rank 12 [Two Recipients]** a character using rejuvenate may affect two individuals with a single use of the skill. This can be on two other people or on the character and one other person. Each gains whatever benefit is determined by the Biokinesis-rejuvenate skill check.
-
----
