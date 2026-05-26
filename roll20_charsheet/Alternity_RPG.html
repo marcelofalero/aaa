@@ -6251,28 +6251,13 @@ on("change:undorank sheet:opened", function() { getAttrs(["UndoRank"], function(
 				
 				<div class="sheet-template-action">
 					{{#rollBetween() attack1 1 amazing1}}
-						{{#is_starship}}
-							<span class="sheet-template-hit-ama">[Dmg](~repeating_starshipweapons_{{rowid}}_StarshipWeapondamageama)</span>
-						{{/is_starship}}
-						{{^is_starship}}
-							<span class="sheet-template-hit-ama">[Dmg](~repeating_attackforms_{{rowid}}_attackformdamageama)</span>
-						{{/is_starship}}
+						<span class="sheet-template-hit-ama">Amazing</span>
 					{{/rollBetween() attack1 1 amazing1}}
 					{{#rollBetween() attack1 amazing1_p1 good1}}
-						{{#is_starship}}
-							<span class="sheet-template-hit-goo">[Dmg](~repeating_starshipweapons_{{rowid}}_StarshipWeapondamagegoo)</span>
-						{{/is_starship}}
-						{{^is_starship}}
-							<span class="sheet-template-hit-goo">[Dmg](~repeating_attackforms_{{rowid}}_attackformdamagegoo)</span>
-						{{/is_starship}}
+						<span class="sheet-template-hit-goo">Good</span>
 					{{/rollBetween() attack1 amazing1_p1 good1}}
 					{{#rollBetween() attack1 good1_p1 ordinary1}}
-						{{#is_starship}}
-							<span class="sheet-template-hit-ord">[Dmg](~repeating_starshipweapons_{{rowid}}_StarshipWeapondamageord)</span>
-						{{/is_starship}}
-						{{^is_starship}}
-							<span class="sheet-template-hit-ord">[Dmg](~repeating_attackforms_{{rowid}}_attackformdamageord)</span>
-						{{/is_starship}}
+						<span class="sheet-template-hit-ord">Ordinary</span>
 					{{/rollBetween() attack1 good1_p1 ordinary1}}
 					{{#rollGreater() attack1 ordinary1}}
 						<span class="sheet-template-miss">(Miss)</span>
@@ -6288,28 +6273,13 @@ on("change:undorank sheet:opened", function() { getAttrs(["UndoRank"], function(
 				
 				<div class="sheet-template-action">
 					{{#rollBetween() attack2 1 amazing2}}
-						{{#is_starship}}
-							<span class="sheet-template-hit-ama">[Dmg](~repeating_starshipweapons_{{rowid}}_StarshipWeapondamageama)</span>
-						{{/is_starship}}
-						{{^is_starship}}
-							<span class="sheet-template-hit-ama">[Dmg](~repeating_attackforms_{{rowid}}_attackformdamageama)</span>
-						{{/is_starship}}
+						<span class="sheet-template-hit-ama">Amazing</span>
 					{{/rollBetween() attack2 1 amazing2}}
 					{{#rollBetween() attack2 amazing2_p1 good2}}
-						{{#is_starship}}
-							<span class="sheet-template-hit-goo">[Dmg](~repeating_starshipweapons_{{rowid}}_StarshipWeapondamagegoo)</span>
-						{{/is_starship}}
-						{{^is_starship}}
-							<span class="sheet-template-hit-goo">[Dmg](~repeating_attackforms_{{rowid}}_attackformdamagegoo)</span>
-						{{/is_starship}}
+						<span class="sheet-template-hit-goo">Good</span>
 					{{/rollBetween() attack2 amazing2_p1 good2}}
 					{{#rollBetween() attack2 good2_p1 ordinary2}}
-						{{#is_starship}}
-							<span class="sheet-template-hit-ord">[Dmg](~repeating_starshipweapons_{{rowid}}_StarshipWeapondamageord)</span>
-						{{/is_starship}}
-						{{^is_starship}}
-							<span class="sheet-template-hit-ord">[Dmg](~repeating_attackforms_{{rowid}}_attackformdamageord)</span>
-						{{/is_starship}}
+						<span class="sheet-template-hit-ord">Ordinary</span>
 					{{/rollBetween() attack2 good2_p1 ordinary2}}
 					{{#rollGreater() attack2 ordinary2}}
 						<span class="sheet-template-miss">(Miss)</span>
@@ -6325,28 +6295,13 @@ on("change:undorank sheet:opened", function() { getAttrs(["UndoRank"], function(
 				
 				<div class="sheet-template-action">
 					{{#rollBetween() attack3 1 amazing3}}
-						{{#is_starship}}
-							<span class="sheet-template-hit-ama">[Dmg](~repeating_starshipweapons_{{rowid}}_StarshipWeapondamageama)</span>
-						{{/is_starship}}
-						{{^is_starship}}
-							<span class="sheet-template-hit-ama">[Dmg](~repeating_attackforms_{{rowid}}_attackformdamageama)</span>
-						{{/is_starship}}
+						<span class="sheet-template-hit-ama">Amazing</span>
 					{{/rollBetween() attack3 1 amazing3}}
 					{{#rollBetween() attack3 amazing3_p1 good3}}
-						{{#is_starship}}
-							<span class="sheet-template-hit-goo">[Dmg](~repeating_starshipweapons_{{rowid}}_StarshipWeapondamagegoo)</span>
-						{{/is_starship}}
-						{{^is_starship}}
-							<span class="sheet-template-hit-goo">[Dmg](~repeating_attackforms_{{rowid}}_attackformdamagegoo)</span>
-						{{/is_starship}}
+						<span class="sheet-template-hit-goo">Good</span>
 					{{/rollBetween() attack3 amazing3_p1 good3}}
 					{{#rollBetween() attack3 good3_p1 ordinary3}}
-						{{#is_starship}}
-							<span class="sheet-template-hit-ord">[Dmg](~repeating_starshipweapons_{{rowid}}_StarshipWeapondamageord)</span>
-						{{/is_starship}}
-						{{^is_starship}}
-							<span class="sheet-template-hit-ord">[Dmg](~repeating_attackforms_{{rowid}}_attackformdamageord)</span>
-						{{/is_starship}}
+						<span class="sheet-template-hit-ord">Ordinary</span>
 					{{/rollBetween() attack3 good3_p1 ordinary3}}
 					{{#rollGreater() attack3 ordinary3}}
 						<span class="sheet-template-miss">(Miss)</span>
