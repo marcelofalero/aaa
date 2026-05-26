@@ -588,11 +588,11 @@ function updateAttackMacro(section, rowId) {
                 
                 macro += ` {{attack${i}=[[ $[[0]] ${step.sign} [[${step.roll}]] ]]}}`;
                 macro += ` {{scores${i}}}=[${score}/${scoreG}/${scoreA}]`;
-                macro += ` {{ordinary${i}=${score}}}`;
-                macro += ` {{good${i}=${scoreG}}}`;
-                macro += ` {{amazing${i}=${scoreA}}}`;
-                macro += ` {{amazing${i}_p1=${scoreA + 1}}}`;
-                macro += ` {{good${i}_p1=${scoreG + 1}}}`;
+                macro += ` {{ordinary${i}=[[${score}]]}}`;
+                macro += ` {{good${i}=[[${scoreG}]]}}`;
+                macro += ` {{amazing${i}=[[${scoreA}]]}}`;
+                macro += ` {{amazing${i}_p1=[[${scoreA + 1}]]}}`;
+                macro += ` {{good${i}_p1=[[${scoreG + 1}]]}}`;
             }
             
             return macro;
