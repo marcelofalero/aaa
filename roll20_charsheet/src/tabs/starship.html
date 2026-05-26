@@ -226,15 +226,15 @@
 				<div class="sheet-attackform-buttons">
 					<button type="roll" name="roll_StarshipWeapon1" value="@{StarshipWeaponMacro1}">Single</button>
 					<button type="roll" name="roll_StarshipWeapondamageord"
-						value="!script {{ --#title|@{character_name} - @{StarshipWeaponName} --#titlecardbackground|#1e293b --#titlecardfontcolor|#ffffff --#commandcardborder|1px solid #1e293b --#commandcardboxshadow|0 2px 5px rgba(0,0,0,0.2) --#titlecardstyle|border-radius: 4px 4px 0 0; padding: 6px 10px; --#bodycardstyle|border-top: none; border-radius: 0 0 4px 4px; --#bodyfontsize|12px --#oddrowbackground|#111827 --#evenrowbackground|#030712 --#oddrowfontcolor|#f9fafb --#evenrowfontcolor|#f9fafb --=dmg|@{StarshipWeapondamageordinary} --+Ordinary Damage (@{StarshipWeapondamageordinary})|**[$dmg]** @{StarshipWeapondamageordinarytype} }}">Ordinary</button>
+						value="&{template:alternity-damage} {{name=@{character_name} - @{StarshipWeaponName}}} {{label=Ordinary Damage}} {{damage=[[@{StarshipWeapondamageordinary}]]}} {{notes=@{StarshipWeapondamageordinarytype}}}">Ordinary</button>
 					
 					<button type="roll" name="roll_StarshipWeapon2" value="@{StarshipWeaponMacro2}">Double</button>
 					<button type="roll" name="roll_StarshipWeapondamagegoo"
-						value="!script {{ --#title|@{character_name} - @{StarshipWeaponName} --#titlecardbackground|#1e293b --#titlecardfontcolor|#ffffff --#commandcardborder|1px solid #1e293b --#commandcardboxshadow|0 2px 5px rgba(0,0,0,0.2) --#titlecardstyle|border-radius: 4px 4px 0 0; padding: 6px 10px; --#bodycardstyle|border-top: none; border-radius: 0 0 4px 4px; --#bodyfontsize|12px --#oddrowbackground|#111827 --#evenrowbackground|#030712 --#oddrowfontcolor|#f9fafb --#evenrowfontcolor|#f9fafb --=dmg|@{StarshipWeapondamagegood} --+Good Damage (@{StarshipWeapondamagegood})|**[$dmg]** @{StarshipWeapondamagegoodtype} }}">Good</button>
+						value="&{template:alternity-damage} {{name=@{character_name} - @{StarshipWeaponName}}} {{label=Good Damage}} {{damage=[[@{StarshipWeapondamagegood}]]}} {{notes=@{StarshipWeapondamagegoodtype}}}">Good</button>
 					
 					<button type="roll" name="roll_StarshipWeapon3" value="@{StarshipWeaponMacro3}">Auto</button>
 					<button type="roll" name="roll_StarshipWeapondamageama"
-						value="!script {{ --#title|@{character_name} - @{StarshipWeaponName} --#titlecardbackground|#1e293b --#titlecardfontcolor|#ffffff --#commandcardborder|1px solid #1e293b --#commandcardboxshadow|0 2px 5px rgba(0,0,0,0.2) --#titlecardstyle|border-radius: 4px 4px 0 0; padding: 6px 10px; --#bodycardstyle|border-top: none; border-radius: 0 0 4px 4px; --#bodyfontsize|12px --#oddrowbackground|#111827 --#evenrowbackground|#030712 --#oddrowfontcolor|#f9fafb --#evenrowfontcolor|#f9fafb --=dmg|@{StarshipWeapondamageamazing} --+Amazing Damage (@{StarshipWeapondamageamazing})|**[$dmg]** @{StarshipWeapondamageamazingtype} }}">Amazing</button>
+						value="&{template:alternity-damage} {{name=@{character_name} - @{StarshipWeaponName}}} {{label=Amazing Damage}} {{damage=[[@{StarshipWeapondamageamazing}]]}} {{notes=@{StarshipWeapondamageamazingtype}}}">Amazing</button>
 				</div>
 
 				<input type="hidden" name="attr_StarshipWeaponMacro1" value="">

@@ -340,7 +340,7 @@ function updateSkillMacro(skillId, name, url, isTrainedOnly, type, parentBroadId
     
     getAttrs([trainingAttr], function(v) {
         const val = v[trainingAttr] !== undefined ? v[trainingAttr] : v[trainingAttr.toLowerCase()];
-        const isTrained = (val === '1' || val === 'on' || parseInt(val) === 1) ? 1 : 0;
+        const isTrained = (val === '1' || val === 'on' || val === true || val === 'true' || parseInt(val) === 1) ? 1 : 0;
         const scores = `[[@{${skillId}O}]] / [[@{${skillId}G}]] / [[@{${skillId}A}]]`;
         
         let macro = "";

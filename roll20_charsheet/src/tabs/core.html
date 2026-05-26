@@ -250,15 +250,15 @@
 						<div class="sheet-attackform-buttons">
 							<button type="roll" name="roll_attackform1" value="@{attackformmacro1}">Single</button>
 							<button type="roll" name="roll_attackformdamageord"
-								value="!script {{ --#title|@{character_name} - @{attackformname} --#titlecardbackground|#1e293b --#titlecardfontcolor|#ffffff --#commandcardborder|1px solid #1e293b --#commandcardboxshadow|0 2px 5px rgba(0,0,0,0.2) --#titlecardstyle|border-radius: 4px 4px 0 0; padding: 6px 10px; --#bodycardstyle|border-top: none; border-radius: 0 0 4px 4px; --#bodyfontsize|12px --#oddrowbackground|#111827 --#evenrowbackground|#030712 --#oddrowfontcolor|#f9fafb --#evenrowfontcolor|#f9fafb --=dmg|@{attackformdamageordinary} --+Ordinary Damage (@{attackformdamageordinary})|**[$dmg]** @{attackformdamageordinarytype} }}">Ordinary</button>
+								value="&{template:alternity-damage} {{name=@{character_name} - @{attackformname}}} {{label=Ordinary Damage}} {{damage=[[@{attackformdamageordinary}]]}} {{notes=@{attackformdamageordinarytype}}}">Ordinary</button>
 							
 							<button type="roll" name="roll_attackform2" value="@{attackformmacro2}">Double</button>
 							<button type="roll" name="roll_attackformdamagegoo"
-								value="!script {{ --#title|@{character_name} - @{attackformname} --#titlecardbackground|#1e293b --#titlecardfontcolor|#ffffff --#commandcardborder|1px solid #1e293b --#commandcardboxshadow|0 2px 5px rgba(0,0,0,0.2) --#titlecardstyle|border-radius: 4px 4px 0 0; padding: 6px 10px; --#bodycardstyle|border-top: none; border-radius: 0 0 4px 4px; --#bodyfontsize|12px --#oddrowbackground|#111827 --#evenrowbackground|#030712 --#oddrowfontcolor|#f9fafb --#evenrowfontcolor|#f9fafb --=dmg|@{attackformdamagegood} --+Good Damage (@{attackformdamagegood})|**[$dmg]** @{attackformdamagegoodtype} }}">Good</button>
+								value="&{template:alternity-damage} {{name=@{character_name} - @{attackformname}}} {{label=Good Damage}} {{damage=[[@{attackformdamagegood}]]}} {{notes=@{attackformdamagegoodtype}}}">Good</button>
 							
 							<button type="roll" name="roll_attackform3" value="@{attackformmacro3}">Auto</button>
 							<button type="roll" name="roll_attackformdamageama"
-								value="!script {{ --#title|@{character_name} - @{attackformname} --#titlecardbackground|#1e293b --#titlecardfontcolor|#ffffff --#commandcardborder|1px solid #1e293b --#commandcardboxshadow|0 2px 5px rgba(0,0,0,0.2) --#titlecardstyle|border-radius: 4px 4px 0 0; padding: 6px 10px; --#bodycardstyle|border-top: none; border-radius: 0 0 4px 4px; --#bodyfontsize|12px --#oddrowbackground|#111827 --#evenrowbackground|#030712 --#oddrowfontcolor|#f9fafb --#evenrowfontcolor|#f9fafb --=dmg|@{attackformdamageamazing} --+Amazing Damage (@{attackformdamageamazing})|**[$dmg]** @{attackformdamageamazingtype} }}">Amazing</button>
+								value="&{template:alternity-damage} {{name=@{character_name} - @{attackformname}}} {{label=Amazing Damage}} {{damage=[[@{attackformdamageamazing}]]}} {{notes=@{attackformdamageamazingtype}}}">Amazing</button>
 						</div>
 
 						<input type="hidden" name="attr_attackformstepdie" value="+0">

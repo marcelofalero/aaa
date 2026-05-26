@@ -190,7 +190,7 @@ function updateSkillMacro(skillId, name, url, isTrainedOnly, type, parentBroadId
     
     getAttrs([trainingAttr], function(v) {
         const val = v[trainingAttr] !== undefined ? v[trainingAttr] : v[trainingAttr.toLowerCase()];
-        const isTrained = (val === '1' || val === 'on' || parseInt(val) === 1) ? 1 : 0;
+        const isTrained = (val === '1' || val === 'on' || val === true || val === 'true' || parseInt(val) === 1) ? 1 : 0;
         const scores = `[[@{${skillId}O}]] / [[@{${skillId}G}]] / [[@{${skillId}A}]]`;
         
         let macro = "";
@@ -484,7 +484,7 @@ function updateAttackMacro(section, rowId) {
     // Core attributes to fetch
     const coreAttrs = [
         'name', 'score', 'type', 'range', 'die', 'accuracy', 'sit', 'multi',
-        'damageordinary', 'damagegood', 'damageamazing'
+        'damageordinary', 'damagegood', 'damageamazing', 'notes'
     ];
     
     // Map to actual Roll20 attribute names
@@ -500,22 +500,21 @@ function updateAttackMacro(section, rowId) {
             if (attr === 'accuracy') suffix = 'Acc';
             if (attr === 'sit') suffix = 'Sit';
             if (attr === 'multi') suffix = 'Multi';
-            // Damage suffixes are lowercase in both
+            if (attr === 'notes') suffix = 'Notes';
         }
         return prefix + s + suffix;
     });
 
     const extraFields = isStarship ? ['WeaponStationO', 'WeaponStationG', 'WeaponStationA'] : [];
     
-    getAttrs(['character_id', ...fields, ...extraFields], function(v) {
+    getAttrs(['character_name', 'character_id', ...fields, ...extraFields], function(v) {
         console.log(`DEBUG: updateAttackMacro values for ${rowId}:`, v);
-        const charId = v.character_id;
         
         const getVal = (suffix) => {
             let actualSuffix = suffix;
             if (isStarship) {
                 if (suffix === 'accuracy') actualSuffix = 'Acc';
-                else if (suffix === 'name' || suffix === 'score' || suffix === 'type' || suffix === 'range' || suffix === 'die' || suffix === 'sit' || suffix === 'multi') {
+                else if (suffix === 'name' || suffix === 'score' || suffix === 'type' || suffix === 'range' || suffix === 'die' || suffix === 'sit' || suffix === 'multi' || suffix === 'notes') {
                     actualSuffix = suffix.charAt(0).toUpperCase() + suffix.slice(1);
                 }
             }
@@ -542,46 +541,61 @@ function updateAttackMacro(section, rowId) {
             scoreG = parseInt(v['weaponstationg']) || 0;
             scoreA = parseInt(v['weaponstationa']) || 0;
         }
+
+        const getStepDieRoll = (stepVal) => {
+            const clamped = Math.max(-15, Math.min(15, stepVal));
+            const sign = clamped >= 0 ? '+' : '-';
+            const absStep = Math.abs(clamped);
+            if (absStep === 0) {
+                return { sign: '+', roll: '0' };
+            }
+            const dieMap = {
+                1: '1d4', 2: '1d6', 3: '1d8', 4: '1d12', 5: '1d20',
+                6: '2d20', 7: '3d20', 8: '4d20', 9: '5d20', 10: '6d20',
+                11: '7d20', 12: '8d20', 13: '9d20', 14: '10d20', 15: '11d20'
+            };
+            const die = dieMap[absStep] || '0';
+            return {
+                sign: sign,
+                roll: die === '0' ? '0' : `${die}cs<0cf<0`
+            };
+        };
         
         const generateMacro = (mode) => {
-            let script = "!script {{";
-            script += ` --#title|${name}`;
-            script += ` --#titlecardbackground|#1e293b`;
-            script += ` --#titlecardfontcolor|#ffffff`;
-            script += ` --#commandcardborder|1px solid #1e293b`;
-            script += ` --#commandcardboxshadow|0 2px 5px rgba(0,0,0,0.2)`;
-            script += ` --#titlecardstyle|border-radius: 4px 4px 0 0; padding: 6px 10px;`;
-            script += ` --#bodycardstyle|border-top: none; border-radius: 0 0 4px 4px;`;
-            script += ` --#bodyfontsize|12px`;
-            script += ` --#oddrowbackground|#111827`;
-            script += ` --#evenrowbackground|#030712`;
-            script += ` --#oddrowfontcolor|#f9fafb`;
-            script += ` --#evenrowfontcolor|#f9fafb`;
+            const weaponName = getVal('name') || 'Weapon';
+            const charName = v['character_name'] || 'Character';
+            const fullName = `${charName} - ${weaponName}`;
+            
+            let macro = `&{template:alternity-attack} {{name=${fullName}}} {{rowid=${rowId}}}`;
+            if (isStarship) {
+                macro += ` {{is_starship=1}}`;
+            }
             
             const type = getVal('type');
             const range = getVal('range');
-            if (type) script += ` --+Type|${type}`;
-            if (range) script += ` --+Range|${range}`;
-
-            script += ` --+Scores|**${score}** / **${scoreG}** / **${scoreA}**`;
-            script += ` --+Damage Reference|**${dmgO}** / **${dmgG}** / **${dmgA}**`;
-            script += ` --+---`;
-
-            script += ` --=a|1d20`;
-            script += ` --+Control Die|**[$a]**`;
+            if (type) macro += ` {{type=${type}}}`;
+            if (range) macro += ` {{range=${range}}}`;
+            
+            const notes = getVal('notes') || '';
+            if (notes) macro += ` {{notes=${notes}}}`;
+            
+            macro += ` {{dicepool=[[1d20cs<1cf>20]]}}`;
             
             for (let i = 1; i <= mode; i++) {
                 const penalty = (mode > 1) ? i : 0;
                 const total = baseMod + penalty;
-                const stepDie = combatStepMap[String(Math.max(-15, Math.min(15, total)))] || '+0';
+                const step = getStepDieRoll(total);
                 
-                script += ` --=s${i}|0${stepDie}`;
-                script += ` --=res${i}|[$a] + [$s${i}]`;
-                script += ` --+Attack ${i} ([$a] ${stepDie})|**[$res${i}]**`;
+                macro += ` {{attack${i}=[[ $[[0]] ${step.sign} [[${step.roll}]] ]]}}`;
+                macro += ` {{scores${i}}}=[${score}/${scoreG}/${scoreA}]`;
+                macro += ` {{ordinary${i}=${score}}}`;
+                macro += ` {{good${i}=${scoreG}}}`;
+                macro += ` {{amazing${i}=${scoreA}}}`;
+                macro += ` {{amazing${i}_p1=${scoreA + 1}}}`;
+                macro += ` {{good${i}_p1=${scoreG + 1}}}`;
             }
             
-            script += " }}";
-            return script;
+            return macro;
         };
         
         const update = {};
@@ -1137,15 +1151,15 @@ on("change:undorank sheet:opened", function() { getAttrs(["UndoRank"], function(
 						<div class="sheet-attackform-buttons">
 							<button type="roll" name="roll_attackform1" value="@{attackformmacro1}">Single</button>
 							<button type="roll" name="roll_attackformdamageord"
-								value="!script {{ --#title|@{character_name} - @{attackformname} --#titlecardbackground|#1e293b --#titlecardfontcolor|#ffffff --#commandcardborder|1px solid #1e293b --#commandcardboxshadow|0 2px 5px rgba(0,0,0,0.2) --#titlecardstyle|border-radius: 4px 4px 0 0; padding: 6px 10px; --#bodycardstyle|border-top: none; border-radius: 0 0 4px 4px; --#bodyfontsize|12px --#oddrowbackground|#111827 --#evenrowbackground|#030712 --#oddrowfontcolor|#f9fafb --#evenrowfontcolor|#f9fafb --=dmg|@{attackformdamageordinary} --+Ordinary Damage (@{attackformdamageordinary})|**[$dmg]** @{attackformdamageordinarytype} }}">Ordinary</button>
+								value="&{template:alternity-damage} {{name=@{character_name} - @{attackformname}}} {{label=Ordinary Damage}} {{damage=[[@{attackformdamageordinary}]]}} {{notes=@{attackformdamageordinarytype}}}">Ordinary</button>
 							
 							<button type="roll" name="roll_attackform2" value="@{attackformmacro2}">Double</button>
 							<button type="roll" name="roll_attackformdamagegoo"
-								value="!script {{ --#title|@{character_name} - @{attackformname} --#titlecardbackground|#1e293b --#titlecardfontcolor|#ffffff --#commandcardborder|1px solid #1e293b --#commandcardboxshadow|0 2px 5px rgba(0,0,0,0.2) --#titlecardstyle|border-radius: 4px 4px 0 0; padding: 6px 10px; --#bodycardstyle|border-top: none; border-radius: 0 0 4px 4px; --#bodyfontsize|12px --#oddrowbackground|#111827 --#evenrowbackground|#030712 --#oddrowfontcolor|#f9fafb --#evenrowfontcolor|#f9fafb --=dmg|@{attackformdamagegood} --+Good Damage (@{attackformdamagegood})|**[$dmg]** @{attackformdamagegoodtype} }}">Good</button>
+								value="&{template:alternity-damage} {{name=@{character_name} - @{attackformname}}} {{label=Good Damage}} {{damage=[[@{attackformdamagegood}]]}} {{notes=@{attackformdamagegoodtype}}}">Good</button>
 							
 							<button type="roll" name="roll_attackform3" value="@{attackformmacro3}">Auto</button>
 							<button type="roll" name="roll_attackformdamageama"
-								value="!script {{ --#title|@{character_name} - @{attackformname} --#titlecardbackground|#1e293b --#titlecardfontcolor|#ffffff --#commandcardborder|1px solid #1e293b --#commandcardboxshadow|0 2px 5px rgba(0,0,0,0.2) --#titlecardstyle|border-radius: 4px 4px 0 0; padding: 6px 10px; --#bodycardstyle|border-top: none; border-radius: 0 0 4px 4px; --#bodyfontsize|12px --#oddrowbackground|#111827 --#evenrowbackground|#030712 --#oddrowfontcolor|#f9fafb --#evenrowfontcolor|#f9fafb --=dmg|@{attackformdamageamazing} --+Amazing Damage (@{attackformdamageamazing})|**[$dmg]** @{attackformdamageamazingtype} }}">Amazing</button>
+								value="&{template:alternity-damage} {{name=@{character_name} - @{attackformname}}} {{label=Amazing Damage}} {{damage=[[@{attackformdamageamazing}]]}} {{notes=@{attackformdamageamazingtype}}}">Amazing</button>
 						</div>
 
 						<input type="hidden" name="attr_attackformstepdie" value="+0">
@@ -6076,15 +6090,15 @@ on("change:undorank sheet:opened", function() { getAttrs(["UndoRank"], function(
 				<div class="sheet-attackform-buttons">
 					<button type="roll" name="roll_StarshipWeapon1" value="@{StarshipWeaponMacro1}">Single</button>
 					<button type="roll" name="roll_StarshipWeapondamageord"
-						value="!script {{ --#title|@{character_name} - @{StarshipWeaponName} --#titlecardbackground|#1e293b --#titlecardfontcolor|#ffffff --#commandcardborder|1px solid #1e293b --#commandcardboxshadow|0 2px 5px rgba(0,0,0,0.2) --#titlecardstyle|border-radius: 4px 4px 0 0; padding: 6px 10px; --#bodycardstyle|border-top: none; border-radius: 0 0 4px 4px; --#bodyfontsize|12px --#oddrowbackground|#111827 --#evenrowbackground|#030712 --#oddrowfontcolor|#f9fafb --#evenrowfontcolor|#f9fafb --=dmg|@{StarshipWeapondamageordinary} --+Ordinary Damage (@{StarshipWeapondamageordinary})|**[$dmg]** @{StarshipWeapondamageordinarytype} }}">Ordinary</button>
+						value="&{template:alternity-damage} {{name=@{character_name} - @{StarshipWeaponName}}} {{label=Ordinary Damage}} {{damage=[[@{StarshipWeapondamageordinary}]]}} {{notes=@{StarshipWeapondamageordinarytype}}}">Ordinary</button>
 					
 					<button type="roll" name="roll_StarshipWeapon2" value="@{StarshipWeaponMacro2}">Double</button>
 					<button type="roll" name="roll_StarshipWeapondamagegoo"
-						value="!script {{ --#title|@{character_name} - @{StarshipWeaponName} --#titlecardbackground|#1e293b --#titlecardfontcolor|#ffffff --#commandcardborder|1px solid #1e293b --#commandcardboxshadow|0 2px 5px rgba(0,0,0,0.2) --#titlecardstyle|border-radius: 4px 4px 0 0; padding: 6px 10px; --#bodycardstyle|border-top: none; border-radius: 0 0 4px 4px; --#bodyfontsize|12px --#oddrowbackground|#111827 --#evenrowbackground|#030712 --#oddrowfontcolor|#f9fafb --#evenrowfontcolor|#f9fafb --=dmg|@{StarshipWeapondamagegood} --+Good Damage (@{StarshipWeapondamagegood})|**[$dmg]** @{StarshipWeapondamagegoodtype} }}">Good</button>
+						value="&{template:alternity-damage} {{name=@{character_name} - @{StarshipWeaponName}}} {{label=Good Damage}} {{damage=[[@{StarshipWeapondamagegood}]]}} {{notes=@{StarshipWeapondamagegoodtype}}}">Good</button>
 					
 					<button type="roll" name="roll_StarshipWeapon3" value="@{StarshipWeaponMacro3}">Auto</button>
 					<button type="roll" name="roll_StarshipWeapondamageama"
-						value="!script {{ --#title|@{character_name} - @{StarshipWeaponName} --#titlecardbackground|#1e293b --#titlecardfontcolor|#ffffff --#commandcardborder|1px solid #1e293b --#commandcardboxshadow|0 2px 5px rgba(0,0,0,0.2) --#titlecardstyle|border-radius: 4px 4px 0 0; padding: 6px 10px; --#bodycardstyle|border-top: none; border-radius: 0 0 4px 4px; --#bodyfontsize|12px --#oddrowbackground|#111827 --#evenrowbackground|#030712 --#oddrowfontcolor|#f9fafb --#evenrowfontcolor|#f9fafb --=dmg|@{StarshipWeapondamageamazing} --+Amazing Damage (@{StarshipWeapondamageamazing})|**[$dmg]** @{StarshipWeapondamageamazingtype} }}">Amazing</button>
+						value="&{template:alternity-damage} {{name=@{character_name} - @{StarshipWeaponName}}} {{label=Amazing Damage}} {{damage=[[@{StarshipWeapondamageamazing}]]}} {{notes=@{StarshipWeapondamageamazingtype}}}">Amazing</button>
 				</div>
 
 				<input type="hidden" name="attr_StarshipWeaponMacro1" value="">
@@ -6315,13 +6329,28 @@ on("change:undorank sheet:opened", function() { getAttrs(["UndoRank"], function(
 				
 				<div class="sheet-template-action">
 					{{#rollBetween() attack1 1 amazing1}}
-						<span class="sheet-template-hit-ama">[Dmg](~repeating_attackforms_{{rowid}}_attackformdamageama)</span>
+						{{#is_starship}}
+							<span class="sheet-template-hit-ama">[Dmg](~repeating_starshipweapons_{{rowid}}_StarshipWeapondamageama)</span>
+						{{/is_starship}}
+						{{^is_starship}}
+							<span class="sheet-template-hit-ama">[Dmg](~repeating_attackforms_{{rowid}}_attackformdamageama)</span>
+						{{/is_starship}}
 					{{/rollBetween()}}
 					{{#rollBetween() attack1 amazing1_p1 good1}}
-						<span class="sheet-template-hit-goo">[Dmg](~repeating_attackforms_{{rowid}}_attackformdamagegoo)</span>
+						{{#is_starship}}
+							<span class="sheet-template-hit-goo">[Dmg](~repeating_starshipweapons_{{rowid}}_StarshipWeapondamagegoo)</span>
+						{{/is_starship}}
+						{{^is_starship}}
+							<span class="sheet-template-hit-goo">[Dmg](~repeating_attackforms_{{rowid}}_attackformdamagegoo)</span>
+						{{/is_starship}}
 					{{/rollBetween()}}
 					{{#rollBetween() attack1 good1_p1 ordinary1}}
-						<span class="sheet-template-hit-ord">[Dmg](~repeating_attackforms_{{rowid}}_attackformdamageord)</span>
+						{{#is_starship}}
+							<span class="sheet-template-hit-ord">[Dmg](~repeating_starshipweapons_{{rowid}}_StarshipWeapondamageord)</span>
+						{{/is_starship}}
+						{{^is_starship}}
+							<span class="sheet-template-hit-ord">[Dmg](~repeating_attackforms_{{rowid}}_attackformdamageord)</span>
+						{{/is_starship}}
 					{{/rollBetween()}}
 					{{#rollGreater() attack1 ordinary1}}
 						<span class="sheet-template-miss">(Miss)</span>
@@ -6337,13 +6366,28 @@ on("change:undorank sheet:opened", function() { getAttrs(["UndoRank"], function(
 				
 				<div class="sheet-template-action">
 					{{#rollBetween() attack2 1 amazing2}}
-						<span class="sheet-template-hit-ama">[Dmg](~repeating_attackforms_{{rowid}}_attackformdamageama)</span>
+						{{#is_starship}}
+							<span class="sheet-template-hit-ama">[Dmg](~repeating_starshipweapons_{{rowid}}_StarshipWeapondamageama)</span>
+						{{/is_starship}}
+						{{^is_starship}}
+							<span class="sheet-template-hit-ama">[Dmg](~repeating_attackforms_{{rowid}}_attackformdamageama)</span>
+						{{/is_starship}}
 					{{/rollBetween()}}
 					{{#rollBetween() attack2 amazing2_p1 good2}}
-						<span class="sheet-template-hit-goo">[Dmg](~repeating_attackforms_{{rowid}}_attackformdamagegoo)</span>
+						{{#is_starship}}
+							<span class="sheet-template-hit-goo">[Dmg](~repeating_starshipweapons_{{rowid}}_StarshipWeapondamagegoo)</span>
+						{{/is_starship}}
+						{{^is_starship}}
+							<span class="sheet-template-hit-goo">[Dmg](~repeating_attackforms_{{rowid}}_attackformdamagegoo)</span>
+						{{/is_starship}}
 					{{/rollBetween()}}
 					{{#rollBetween() attack2 good2_p1 ordinary2}}
-						<span class="sheet-template-hit-ord">[Dmg](~repeating_attackforms_{{rowid}}_attackformdamageord)</span>
+						{{#is_starship}}
+							<span class="sheet-template-hit-ord">[Dmg](~repeating_starshipweapons_{{rowid}}_StarshipWeapondamageord)</span>
+						{{/is_starship}}
+						{{^is_starship}}
+							<span class="sheet-template-hit-ord">[Dmg](~repeating_attackforms_{{rowid}}_attackformdamageord)</span>
+						{{/is_starship}}
 					{{/rollBetween()}}
 					{{#rollGreater() attack2 ordinary2}}
 						<span class="sheet-template-miss">(Miss)</span>
@@ -6359,13 +6403,28 @@ on("change:undorank sheet:opened", function() { getAttrs(["UndoRank"], function(
 				
 				<div class="sheet-template-action">
 					{{#rollBetween() attack3 1 amazing3}}
-						<span class="sheet-template-hit-ama">[Dmg](~repeating_attackforms_{{rowid}}_attackformdamageama)</span>
+						{{#is_starship}}
+							<span class="sheet-template-hit-ama">[Dmg](~repeating_starshipweapons_{{rowid}}_StarshipWeapondamageama)</span>
+						{{/is_starship}}
+						{{^is_starship}}
+							<span class="sheet-template-hit-ama">[Dmg](~repeating_attackforms_{{rowid}}_attackformdamageama)</span>
+						{{/is_starship}}
 					{{/rollBetween()}}
 					{{#rollBetween() attack3 amazing3_p1 good3}}
-						<span class="sheet-template-hit-goo">[Dmg](~repeating_attackforms_{{rowid}}_attackformdamagegoo)</span>
+						{{#is_starship}}
+							<span class="sheet-template-hit-goo">[Dmg](~repeating_starshipweapons_{{rowid}}_StarshipWeapondamagegoo)</span>
+						{{/is_starship}}
+						{{^is_starship}}
+							<span class="sheet-template-hit-goo">[Dmg](~repeating_attackforms_{{rowid}}_attackformdamagegoo)</span>
+						{{/is_starship}}
 					{{/rollBetween()}}
 					{{#rollBetween() attack3 good3_p1 ordinary3}}
-						<span class="sheet-template-hit-ord">[Dmg](~repeating_attackforms_{{rowid}}_attackformdamageord)</span>
+						{{#is_starship}}
+							<span class="sheet-template-hit-ord">[Dmg](~repeating_starshipweapons_{{rowid}}_StarshipWeapondamageord)</span>
+						{{/is_starship}}
+						{{^is_starship}}
+							<span class="sheet-template-hit-ord">[Dmg](~repeating_attackforms_{{rowid}}_attackformdamageord)</span>
+						{{/is_starship}}
 					{{/rollBetween()}}
 					{{#rollGreater() attack3 ordinary3}}
 						<span class="sheet-template-miss">(Miss)</span>

@@ -203,7 +203,7 @@ function updateAttackMacro(section, rowId) {
     // Core attributes to fetch
     const coreAttrs = [
         'name', 'score', 'type', 'range', 'die', 'accuracy', 'sit', 'multi',
-        'damageordinary', 'damagegood', 'damageamazing'
+        'damageordinary', 'damagegood', 'damageamazing', 'notes'
     ];
     
     // Map to actual Roll20 attribute names
@@ -219,22 +219,21 @@ function updateAttackMacro(section, rowId) {
             if (attr === 'accuracy') suffix = 'Acc';
             if (attr === 'sit') suffix = 'Sit';
             if (attr === 'multi') suffix = 'Multi';
-            // Damage suffixes are lowercase in both
+            if (attr === 'notes') suffix = 'Notes';
         }
         return prefix + s + suffix;
     });
 
     const extraFields = isStarship ? ['WeaponStationO', 'WeaponStationG', 'WeaponStationA'] : [];
     
-    getAttrs(['character_id', ...fields, ...extraFields], function(v) {
+    getAttrs(['character_name', 'character_id', ...fields, ...extraFields], function(v) {
         console.log(`DEBUG: updateAttackMacro values for ${rowId}:`, v);
-        const charId = v.character_id;
         
         const getVal = (suffix) => {
             let actualSuffix = suffix;
             if (isStarship) {
                 if (suffix === 'accuracy') actualSuffix = 'Acc';
-                else if (suffix === 'name' || suffix === 'score' || suffix === 'type' || suffix === 'range' || suffix === 'die' || suffix === 'sit' || suffix === 'multi') {
+                else if (suffix === 'name' || suffix === 'score' || suffix === 'type' || suffix === 'range' || suffix === 'die' || suffix === 'sit' || suffix === 'multi' || suffix === 'notes') {
                     actualSuffix = suffix.charAt(0).toUpperCase() + suffix.slice(1);
                 }
             }
@@ -261,46 +260,61 @@ function updateAttackMacro(section, rowId) {
             scoreG = parseInt(v['weaponstationg']) || 0;
             scoreA = parseInt(v['weaponstationa']) || 0;
         }
+
+        const getStepDieRoll = (stepVal) => {
+            const clamped = Math.max(-15, Math.min(15, stepVal));
+            const sign = clamped >= 0 ? '+' : '-';
+            const absStep = Math.abs(clamped);
+            if (absStep === 0) {
+                return { sign: '+', roll: '0' };
+            }
+            const dieMap = {
+                1: '1d4', 2: '1d6', 3: '1d8', 4: '1d12', 5: '1d20',
+                6: '2d20', 7: '3d20', 8: '4d20', 9: '5d20', 10: '6d20',
+                11: '7d20', 12: '8d20', 13: '9d20', 14: '10d20', 15: '11d20'
+            };
+            const die = dieMap[absStep] || '0';
+            return {
+                sign: sign,
+                roll: die === '0' ? '0' : `${die}cs<0cf<0`
+            };
+        };
         
         const generateMacro = (mode) => {
-            let script = "!script {{";
-            script += ` --#title|${name}`;
-            script += ` --#titlecardbackground|#1e293b`;
-            script += ` --#titlecardfontcolor|#ffffff`;
-            script += ` --#commandcardborder|1px solid #1e293b`;
-            script += ` --#commandcardboxshadow|0 2px 5px rgba(0,0,0,0.2)`;
-            script += ` --#titlecardstyle|border-radius: 4px 4px 0 0; padding: 6px 10px;`;
-            script += ` --#bodycardstyle|border-top: none; border-radius: 0 0 4px 4px;`;
-            script += ` --#bodyfontsize|12px`;
-            script += ` --#oddrowbackground|#111827`;
-            script += ` --#evenrowbackground|#030712`;
-            script += ` --#oddrowfontcolor|#f9fafb`;
-            script += ` --#evenrowfontcolor|#f9fafb`;
+            const weaponName = getVal('name') || 'Weapon';
+            const charName = v['character_name'] || 'Character';
+            const fullName = `${charName} - ${weaponName}`;
+            
+            let macro = `&{template:alternity-attack} {{name=${fullName}}} {{rowid=${rowId}}}`;
+            if (isStarship) {
+                macro += ` {{is_starship=1}}`;
+            }
             
             const type = getVal('type');
             const range = getVal('range');
-            if (type) script += ` --+Type|${type}`;
-            if (range) script += ` --+Range|${range}`;
-
-            script += ` --+Scores|**${score}** / **${scoreG}** / **${scoreA}**`;
-            script += ` --+Damage Reference|**${dmgO}** / **${dmgG}** / **${dmgA}**`;
-            script += ` --+---`;
-
-            script += ` --=a|1d20`;
-            script += ` --+Control Die|**[$a]**`;
+            if (type) macro += ` {{type=${type}}}`;
+            if (range) macro += ` {{range=${range}}}`;
+            
+            const notes = getVal('notes') || '';
+            if (notes) macro += ` {{notes=${notes}}}`;
+            
+            macro += ` {{dicepool=[[1d20cs<1cf>20]]}}`;
             
             for (let i = 1; i <= mode; i++) {
                 const penalty = (mode > 1) ? i : 0;
                 const total = baseMod + penalty;
-                const stepDie = combatStepMap[String(Math.max(-15, Math.min(15, total)))] || '+0';
+                const step = getStepDieRoll(total);
                 
-                script += ` --=s${i}|0${stepDie}`;
-                script += ` --=res${i}|[$a] + [$s${i}]`;
-                script += ` --+Attack ${i} ([$a] ${stepDie})|**[$res${i}]**`;
+                macro += ` {{attack${i}=[[ $[[0]] ${step.sign} [[${step.roll}]] ]]}}`;
+                macro += ` {{scores${i}}}=[${score}/${scoreG}/${scoreA}]`;
+                macro += ` {{ordinary${i}=${score}}}`;
+                macro += ` {{good${i}=${scoreG}}}`;
+                macro += ` {{amazing${i}=${scoreA}}}`;
+                macro += ` {{amazing${i}_p1=${scoreA + 1}}}`;
+                macro += ` {{good${i}_p1=${scoreG + 1}}}`;
             }
             
-            script += " }}";
-            return script;
+            return macro;
         };
         
         const update = {};
