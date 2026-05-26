@@ -298,14 +298,16 @@ function updateAttackMacro(section, rowId) {
             const notes = getVal('notes') || '';
             if (notes) macro += ` {{notes=${notes}}}`;
             
-            macro += ` {{dicepool=[[1d20cs<1cf>20]]}}`;
-            
             for (let i = 1; i <= mode; i++) {
                 const penalty = (mode > 1) ? i : 0;
                 const total = baseMod + penalty;
                 const step = getStepDieRoll(total);
                 
-                macro += ` {{attack${i}=[[ $[[0]] ${step.sign} [[${step.roll}]] ]]}}`;
+                if (step.roll === '0') {
+                    macro += ` {{attack${i}=[[1d20cs<1cf>20]]}}`;
+                } else {
+                    macro += ` {{attack${i}=[[1d20cs<1cf>20 ${step.sign} ${step.roll}]]}}`;
+                }
                 macro += ` {{scores${i}}}=[${score}/${scoreG}/${scoreA}]`;
                 macro += ` {{ordinary${i}=[[${score}]]}}`;
                 macro += ` {{good${i}=[[${scoreG}]]}}`;
