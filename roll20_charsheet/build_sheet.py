@@ -334,17 +334,37 @@ def generate_skill_worker_code(skill_ids):
     """Generates the JavaScript code for the skill macro worker."""
     code = """
 /* ===== SMART SKILL ROLL WORKER ===== */
-function updateSkillMacro(skillId, name, url, isTrainedOnly, type, parentBroadId) {
+function updateSkillMacro(skillId, name, url, isTrainedOnly, type, parentBroadId, isParentTrainedOnly) {
     const isSpecialty = type === 'specialty';
-    const trainingAttr = isSpecialty ? skillId + '_is_trained' : skillId;
+    const attrsToGet = isSpecialty ? [skillId + 'Rank', parentBroadId] : [skillId];
     
-    getAttrs([trainingAttr], function(v) {
-        const val = v[trainingAttr] !== undefined ? v[trainingAttr] : v[trainingAttr.toLowerCase()];
-        const isTrained = (val === '1' || val === 'on' || val === true || val === 'true' || parseInt(val) === 1) ? 1 : 0;
+    getAttrs(attrsToGet, function(v) {
+        let isTrained = 0;
+        let isParentTrained = 0;
+        
+        if (isSpecialty) {
+            const rankVal = v[skillId + 'Rank'] !== undefined ? v[skillId + 'Rank'] : v[skillId.toLowerCase() + 'rank'];
+            const rank = parseInt(rankVal) || 0;
+            isTrained = rank > 0 ? 1 : 0;
+            
+            const parentVal = v[parentBroadId] !== undefined ? v[parentBroadId] : v[parentBroadId.toLowerCase()];
+            isParentTrained = (parentVal === '1' || parentVal === 'on' || parentVal === true || parentVal === 'true' || parseInt(parentVal) === 1) ? 1 : 0;
+        } else {
+            const val = v[skillId] !== undefined ? v[skillId] : v[skillId.toLowerCase()];
+            isTrained = (val === '1' || val === 'on' || val === true || val === 'true' || parseInt(val) === 1) ? 1 : 0;
+        }
+        
         const scores = `[[@{${skillId}O}]] / [[@{${skillId}G}]] / [[@{${skillId}A}]]`;
         
+        let canRoll = true;
+        if (isTrainedOnly && !isTrained) {
+            canRoll = false;
+        } else if (isSpecialty && isParentTrainedOnly && !isParentTrained && !isTrained) {
+            canRoll = false;
+        }
+        
         let macro = "";
-        if (!isTrained && isTrainedOnly) {
+        if (!canRoll) {
             macro = `/w gm attempts to use ${name} untrained, but it is a Trained Only skill.`;
         } else {
             const defaultStep = !isTrained ? 1 : 0;
@@ -355,6 +375,9 @@ function updateSkillMacro(skillId, name, url, isTrainedOnly, type, parentBroadId
         
         const update = {};
         update[skillId + '_macro'] = macro;
+        if (isSpecialty) {
+            update[skillId + '_is_trained'] = isTrained;
+        }
         setAttrs(update);
     });
 }
@@ -391,11 +414,22 @@ function getAlternityRollQuery(defaultStep) {
     return `?{Situation Modifier|${options.join('|')}}`;
 }
 """
+    broad_is_trained_only = {}
+    for s in skill_ids:
+        if s['type'] == 'broad':
+            broad_is_trained_only[s['id']] = s['is_trained_only']
+            
     listeners = []
     for s in skill_ids:
-        trigger = s['id'] if s['type'] == 'broad' else f"{s['id']}_is_trained"
-        name_param = f"{s['broad_name']} - {s['name']}" if s['type'] == 'specialty' else s['name']
-        listeners.append(f'on("change:{trigger.lower()} sheet:opened", function() {{ updateSkillMacro("{s["id"]}", "{name_param}", "{s["url"]}", {s["is_trained_only"]}, "{s["type"]}", "{s.get("parent_broad_id", "")}"); }});')
+        if s['type'] == 'broad':
+            trigger_str = f'change:{s["id"].lower()}'
+            listeners.append(f'on("{trigger_str} sheet:opened", function() {{ updateSkillMacro("{s["id"]}", "{s["name"]}", "{s["url"]}", {s["is_trained_only"]}, "broad", "", 0); }});')
+        else:
+            parent_id = s["parent_broad_id"]
+            parent_trained_only = broad_is_trained_only.get(parent_id, 0)
+            trigger_str = f'change:{s["id"].lower()}rank change:{parent_id.lower()}'
+            name_param = f"{s['broad_name']} - {s['name']}"
+            listeners.append(f'on("{trigger_str} sheet:opened", function() {{ updateSkillMacro("{s["id"]}", "{name_param}", "{s["url"]}", {s["is_trained_only"]}, "specialty", "{parent_id}", {parent_trained_only}); }});')
     
     return code + "\n" + "\n".join(listeners)
 
