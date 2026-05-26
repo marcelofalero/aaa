@@ -238,7 +238,8 @@ function updateAttackMacro(section, rowId) {
                     actualSuffix = suffix.charAt(0).toUpperCase() + suffix.slice(1);
                 }
             }
-            return v[prefix + s + actualSuffix];
+            const key = (prefix + s + actualSuffix).toLowerCase();
+            return v[key];
         };
 
         const name = getVal('name') || 'Weapon';
@@ -256,49 +257,49 @@ function updateAttackMacro(section, rowId) {
         let scoreA = Math.floor(score / 4);
         
         if (isStarship && !score) {
-            score = parseInt(v['WeaponStationO']) || 0;
-            scoreG = parseInt(v['WeaponStationG']) || 0;
-            scoreA = parseInt(v['WeaponStationA']) || 0;
+            score = parseInt(v['weaponstationo']) || 0;
+            scoreG = parseInt(v['weaponstationg']) || 0;
+            scoreA = parseInt(v['weaponstationa']) || 0;
         }
         
         const generateMacro = (mode) => {
             let script = "!script {{";
-            script += `\n--#title|${name}\n`;
-            script += `--#titlecardbackground|#1e293b\n`;
-            script += `--#titlecardfontcolor|#ffffff\n`;
-            script += `--#commandcardborder|1px solid #1e293b\n`;
-            script += `--#commandcardboxshadow|0 2px 5px rgba(0,0,0,0.2)\n`;
-            script += `--#titlecardstyle|border-radius: 4px 4px 0 0; padding: 6px 10px;\n`;
-            script += `--#bodycardstyle|border-top: none; border-radius: 0 0 4px 4px;\n`;
-            script += `--#bodyfontsize|12px\n`;
-            script += `--#oddrowbackground|#111827\n`;
-            script += `--#evenrowbackground|#030712\n`;
-            script += `--#oddrowfontcolor|#f9fafb\n`;
-            script += `--#evenrowfontcolor|#f9fafb\n`;
+            script += ` --#title|${name}`;
+            script += ` --#titlecardbackground|#1e293b`;
+            script += ` --#titlecardfontcolor|#ffffff`;
+            script += ` --#commandcardborder|1px solid #1e293b`;
+            script += ` --#commandcardboxshadow|0 2px 5px rgba(0,0,0,0.2)`;
+            script += ` --#titlecardstyle|border-radius: 4px 4px 0 0; padding: 6px 10px;`;
+            script += ` --#bodycardstyle|border-top: none; border-radius: 0 0 4px 4px;`;
+            script += ` --#bodyfontsize|12px`;
+            script += ` --#oddrowbackground|#111827`;
+            script += ` --#evenrowbackground|#030712`;
+            script += ` --#oddrowfontcolor|#f9fafb`;
+            script += ` --#evenrowfontcolor|#f9fafb`;
             
             const type = getVal('type');
             const range = getVal('range');
-            if (type) script += `--+Type|${type}\n`;
-            if (range) script += `--+Range|${range}\n`;
+            if (type) script += ` --+Type|${type}`;
+            if (range) script += ` --+Range|${range}`;
 
-            script += `--+Scores|**${score}** / **${scoreG}** / **${scoreA}**\n`;
-            script += `--+Damage Reference|**${dmgO}** / **${dmgG}** / **${dmgA}**\n`;
-            script += `--+---\n`;
+            script += ` --+Scores|**${score}** / **${scoreG}** / **${scoreA}**`;
+            script += ` --+Damage Reference|**${dmgO}** / **${dmgG}** / **${dmgA}**`;
+            script += ` --+---`;
 
-            script += `--=a|1d20\n`;
-            script += `--+Control Die|**[$a]**\n`;
+            script += ` --=a|1d20`;
+            script += ` --+Control Die|**[$a]**`;
             
             for (let i = 1; i <= mode; i++) {
                 const penalty = (mode > 1) ? i : 0;
                 const total = baseMod + penalty;
                 const stepDie = combatStepMap[String(Math.max(-15, Math.min(15, total)))] || '+0';
                 
-                script += `--=s${i}|0${stepDie}\n`;
-                script += `--=res${i}|[$a] + [$s${i}]\n`;
-                script += `--+Attack ${i} ([$a] ${stepDie})|**[$res${i}]**\n`;
+                script += ` --=s${i}|0${stepDie}`;
+                script += ` --=res${i}|[$a] + [$s${i}]`;
+                script += ` --+Attack ${i} ([$a] ${stepDie})|**[$res${i}]**`;
             }
             
-            script += "}}";
+            script += " }}";
             return script;
         };
         

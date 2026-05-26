@@ -338,8 +338,9 @@ function updateSkillMacro(skillId, name, url, isTrainedOnly, type, parentBroadId
     const isSpecialty = type === 'specialty';
     const trainingAttr = isSpecialty ? skillId + '_is_trained' : skillId;
     
-    getAttrs([trainingAttr, skillId + 'O', skillId + 'G', skillId + 'A'], function(v) {
-        const isTrained = (v[trainingAttr] === '1' || v[trainingAttr] === 'on' || parseInt(v[trainingAttr]) === 1) ? 1 : 0;
+    getAttrs([trainingAttr], function(v) {
+        const val = v[trainingAttr] !== undefined ? v[trainingAttr] : v[trainingAttr.toLowerCase()];
+        const isTrained = (val === '1' || val === 'on' || parseInt(val) === 1) ? 1 : 0;
         const scores = `[[@{${skillId}O}]] / [[@{${skillId}G}]] / [[@{${skillId}A}]]`;
         
         let macro = "";
@@ -459,7 +460,7 @@ def build():
             for s in all_skill_ids:
                 if s['type'] == 'specialty':
                     sid = s['id']
-                    spec_workers.append(f'on("change:{sid.lower()}rank sheet:opened", function() {{ getAttrs(["{sid}Rank"], function(v) {{ setAttrs({{ "{sid}_is_trained": ((parseInt(v["{sid}Rank"]) || 0) > 0 ? 1 : 0) }}); }}); }});')
+                    spec_workers.append(f'on("change:{sid.lower()}rank sheet:opened", function() {{ getAttrs(["{sid}Rank"], function(v) {{ setAttrs({{ "{sid}_is_trained": ((parseInt(v["{sid.lower()}rank"]) || 0) > 0 ? 1 : 0) }}); }}); }});')
             
             content = content.replace('<!-- SPECIALTY_WORKERS_PLACEHOLDER -->', "\n".join(spec_workers))
             content = content.replace('<!-- SKILL_MACRO_WORKERS_PLACEHOLDER -->', skill_worker_code)

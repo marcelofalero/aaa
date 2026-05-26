@@ -738,6 +738,8 @@ fieldset.sheet-section-skills {
 
 .sheet-skill-row.sheet-spec input[type="number"] {
     grid-column: 4;
+    margin: 0 auto !important;
+    align-self: center !important;
 }
 
 .sheet-skill-score-cell {
@@ -745,7 +747,11 @@ fieldset.sheet-section-skills {
 }
 
 .sheet-skill-row.sheet-spec {
-    padding-left: 15px;
+    padding-left: 0 !important;
+}
+
+.sheet-skill-row.sheet-spec .sheet-skill-name {
+    padding-left: 15px !important;
 }
 
 .sheet-skill-row:hover {
