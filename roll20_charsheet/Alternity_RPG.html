@@ -346,13 +346,13 @@ on("change:computeroperationrank change:knowledge sheet:opened", function() { up
 on("change:deducerank change:knowledge sheet:opened", function() { updateSkillMacro("Deduce", "Knowledge - Deduce", "https://aaa.dimble.net/skills/knowledge#deduce", 0, "specialty", "Knowledge", 0); });
 on("change:firstaidrank change:knowledge sheet:opened", function() { updateSkillMacro("FirstAid", "Knowledge - First Aid", "https://aaa.dimble.net/skills/knowledge#first-aid", 1, "specialty", "Knowledge", 0); });
 on("change:languagespecificskillrank change:knowledge sheet:opened", function() { updateSkillMacro("LanguageSpecificSkill", "Knowledge - Language, Specific Skill", "https://aaa.dimble.net/skills/knowledge#language,-specific-skill", 1, "specialty", "Knowledge", 0); });
-on("change:psionicsrank change:knowledge sheet:opened", function() { updateSkillMacro("Psionics", "Knowledge - Psionics", "https://aaa.dimble.net/skills/life-science#psionics", 1, "specialty", "Knowledge", 0); });
+on("change:psionicsknowledgerank change:knowledge sheet:opened", function() { updateSkillMacro("PsionicsKnowledge", "Knowledge - Psionics", "https://aaa.dimble.net/skills/life-science#psionics", 1, "specialty", "Knowledge", 0); });
 on("change:researchrank change:knowledge sheet:opened", function() { updateSkillMacro("Research", "Knowledge - Research", "https://aaa.dimble.net/skills/knowledge#research", 0, "specialty", "Knowledge", 0); });
 on("change:law sheet:opened", function() { updateSkillMacro("Law", "Law", "https://aaa.dimble.net/skills/law", 0, "broad", "", 0); });
 on("change:courtproceduresrank change:law sheet:opened", function() { updateSkillMacro("Courtprocedures", "Law - Court procedures", "https://aaa.dimble.net/skills/law#court-procedures", 0, "specialty", "Law", 0); });
 on("change:lawenforcementproceduresrank change:law sheet:opened", function() { updateSkillMacro("Lawenforcementprocedures", "Law - Law enforcement procedures", "https://aaa.dimble.net/skills/law#law-enforcement-procedures", 0, "specialty", "Law", 0); });
 on("change:lawspecificskillrank change:law sheet:opened", function() { updateSkillMacro("Lawspecificskill", "Law - Law, specific skill", "https://aaa.dimble.net/skills/law#law,-specific-skill", 1, "specialty", "Law", 0); });
-on("change:psionicsrank change:law sheet:opened", function() { updateSkillMacro("Psionics", "Law - Psionics", "https://aaa.dimble.net/skills/life-science#psionics", 1, "specialty", "Law", 0); });
+on("change:psionicslawrank change:law sheet:opened", function() { updateSkillMacro("PsionicsLaw", "Law - Psionics", "https://aaa.dimble.net/skills/life-science#psionics", 1, "specialty", "Law", 0); });
 on("change:leadership sheet:opened", function() { updateSkillMacro("Leadership", "Leadership", "https://aaa.dimble.net/skills/leadership", 0, "broad", "", 0); });
 on("change:commandrank change:leadership sheet:opened", function() { updateSkillMacro("Command", "Leadership - Command", "https://aaa.dimble.net/skills/leadership#command", 0, "specialty", "Leadership", 0); });
 on("change:inspirerank change:leadership sheet:opened", function() { updateSkillMacro("Inspire", "Leadership - Inspire", "https://aaa.dimble.net/skills/leadership#inspire", 1, "specialty", "Leadership", 0); });
@@ -360,7 +360,7 @@ on("change:lifescience sheet:opened", function() { updateSkillMacro("LifeScience
 on("change:biologyrank change:lifescience sheet:opened", function() { updateSkillMacro("Biology", "Life Science - Biology", "https://aaa.dimble.net/skills/life-science#biology", 0, "specialty", "LifeScience", 0); });
 on("change:botanyrank change:lifescience sheet:opened", function() { updateSkillMacro("Botany", "Life Science - Botany", "https://aaa.dimble.net/skills/life-science#botany", 0, "specialty", "LifeScience", 0); });
 on("change:geneticsrank change:lifescience sheet:opened", function() { updateSkillMacro("Genetics", "Life Science - Genetics", "https://aaa.dimble.net/skills/life-science#genetics", 0, "specialty", "LifeScience", 0); });
-on("change:psionicsrank change:lifescience sheet:opened", function() { updateSkillMacro("Psionics", "Life Science - Psionics", "https://aaa.dimble.net/skills/life-science#psionics", 1, "specialty", "LifeScience", 0); });
+on("change:psionicslifesciencerank change:lifescience sheet:opened", function() { updateSkillMacro("PsionicsLifeScience", "Life Science - Psionics", "https://aaa.dimble.net/skills/life-science#psionics", 1, "specialty", "LifeScience", 0); });
 on("change:zoologyrank change:lifescience sheet:opened", function() { updateSkillMacro("Zoology", "Life Science - Zoology", "https://aaa.dimble.net/skills/life-science#zoology", 0, "specialty", "LifeScience", 0); });
 on("change:medicalscience sheet:opened", function() { updateSkillMacro("MedicalScience", "Medical Science", "https://aaa.dimble.net/skills/medical-science", 0, "broad", "", 0); });
 on("change:forensicsciencerank change:medicalscience sheet:opened", function() { updateSkillMacro("ForensicScience", "Medical Science - Forensic Science", "https://aaa.dimble.net/skills/medical-science#forensic-science", 0, "specialty", "MedicalScience", 0); });
@@ -710,18 +710,18 @@ on("change:computeroperationrank sheet:opened", function() { getAttrs(["Computer
 on("change:deducerank sheet:opened", function() { getAttrs(["DeduceRank"], function(v) { setAttrs({ "Deduce_is_trained": ((parseInt(v["deducerank"]) || 0) > 0 ? 1 : 0) }); }); });
 on("change:firstaidrank sheet:opened", function() { getAttrs(["FirstAidRank"], function(v) { setAttrs({ "FirstAid_is_trained": ((parseInt(v["firstaidrank"]) || 0) > 0 ? 1 : 0) }); }); });
 on("change:languagespecificskillrank sheet:opened", function() { getAttrs(["LanguageSpecificSkillRank"], function(v) { setAttrs({ "LanguageSpecificSkill_is_trained": ((parseInt(v["languagespecificskillrank"]) || 0) > 0 ? 1 : 0) }); }); });
-on("change:psionicsrank sheet:opened", function() { getAttrs(["PsionicsRank"], function(v) { setAttrs({ "Psionics_is_trained": ((parseInt(v["psionicsrank"]) || 0) > 0 ? 1 : 0) }); }); });
+on("change:psionicsknowledgerank sheet:opened", function() { getAttrs(["PsionicsKnowledgeRank"], function(v) { setAttrs({ "PsionicsKnowledge_is_trained": ((parseInt(v["psionicsknowledgerank"]) || 0) > 0 ? 1 : 0) }); }); });
 on("change:researchrank sheet:opened", function() { getAttrs(["ResearchRank"], function(v) { setAttrs({ "Research_is_trained": ((parseInt(v["researchrank"]) || 0) > 0 ? 1 : 0) }); }); });
 on("change:courtproceduresrank sheet:opened", function() { getAttrs(["CourtproceduresRank"], function(v) { setAttrs({ "Courtprocedures_is_trained": ((parseInt(v["courtproceduresrank"]) || 0) > 0 ? 1 : 0) }); }); });
 on("change:lawenforcementproceduresrank sheet:opened", function() { getAttrs(["LawenforcementproceduresRank"], function(v) { setAttrs({ "Lawenforcementprocedures_is_trained": ((parseInt(v["lawenforcementproceduresrank"]) || 0) > 0 ? 1 : 0) }); }); });
 on("change:lawspecificskillrank sheet:opened", function() { getAttrs(["LawspecificskillRank"], function(v) { setAttrs({ "Lawspecificskill_is_trained": ((parseInt(v["lawspecificskillrank"]) || 0) > 0 ? 1 : 0) }); }); });
-on("change:psionicsrank sheet:opened", function() { getAttrs(["PsionicsRank"], function(v) { setAttrs({ "Psionics_is_trained": ((parseInt(v["psionicsrank"]) || 0) > 0 ? 1 : 0) }); }); });
+on("change:psionicslawrank sheet:opened", function() { getAttrs(["PsionicsLawRank"], function(v) { setAttrs({ "PsionicsLaw_is_trained": ((parseInt(v["psionicslawrank"]) || 0) > 0 ? 1 : 0) }); }); });
 on("change:commandrank sheet:opened", function() { getAttrs(["CommandRank"], function(v) { setAttrs({ "Command_is_trained": ((parseInt(v["commandrank"]) || 0) > 0 ? 1 : 0) }); }); });
 on("change:inspirerank sheet:opened", function() { getAttrs(["InspireRank"], function(v) { setAttrs({ "Inspire_is_trained": ((parseInt(v["inspirerank"]) || 0) > 0 ? 1 : 0) }); }); });
 on("change:biologyrank sheet:opened", function() { getAttrs(["BiologyRank"], function(v) { setAttrs({ "Biology_is_trained": ((parseInt(v["biologyrank"]) || 0) > 0 ? 1 : 0) }); }); });
 on("change:botanyrank sheet:opened", function() { getAttrs(["BotanyRank"], function(v) { setAttrs({ "Botany_is_trained": ((parseInt(v["botanyrank"]) || 0) > 0 ? 1 : 0) }); }); });
 on("change:geneticsrank sheet:opened", function() { getAttrs(["GeneticsRank"], function(v) { setAttrs({ "Genetics_is_trained": ((parseInt(v["geneticsrank"]) || 0) > 0 ? 1 : 0) }); }); });
-on("change:psionicsrank sheet:opened", function() { getAttrs(["PsionicsRank"], function(v) { setAttrs({ "Psionics_is_trained": ((parseInt(v["psionicsrank"]) || 0) > 0 ? 1 : 0) }); }); });
+on("change:psionicslifesciencerank sheet:opened", function() { getAttrs(["PsionicsLifeScienceRank"], function(v) { setAttrs({ "PsionicsLifeScience_is_trained": ((parseInt(v["psionicslifesciencerank"]) || 0) > 0 ? 1 : 0) }); }); });
 on("change:zoologyrank sheet:opened", function() { getAttrs(["ZoologyRank"], function(v) { setAttrs({ "Zoology_is_trained": ((parseInt(v["zoologyrank"]) || 0) > 0 ? 1 : 0) }); }); });
 on("change:forensicsciencerank sheet:opened", function() { getAttrs(["ForensicScienceRank"], function(v) { setAttrs({ "ForensicScience_is_trained": ((parseInt(v["forensicsciencerank"]) || 0) > 0 ? 1 : 0) }); }); });
 on("change:forensicsrank sheet:opened", function() { getAttrs(["ForensicsRank"], function(v) { setAttrs({ "Forensics_is_trained": ((parseInt(v["forensicsrank"]) || 0) > 0 ? 1 : 0) }); }); });
@@ -2954,19 +2954,19 @@ on("change:undorank sheet:opened", function() { getAttrs(["UndoRank"], function(
 						</div>
 					</div>
 					<div class="sheet-skill-row sheet-spec">
-						<input type="checkbox" name="attr_Psionics_is_trained" class="sheet-trained-check" value="1" style="display: none;">
-						<input type="hidden" name="attr_Psionics_macro" value="">
-						<input type="hidden" name="attr_Psionics_is_trained_only" value="1">
+						<input type="checkbox" name="attr_PsionicsKnowledge_is_trained" class="sheet-trained-check" value="1" style="display: none;">
+						<input type="hidden" name="attr_PsionicsKnowledge_macro" value="">
+						<input type="hidden" name="attr_PsionicsKnowledge_is_trained_only" value="1">
 						<div class="sheet-roll-container">
-							<button type="roll" name="roll_Psionics" class="sheet-roll-skill" value="@{Psionics_macro}"></button>
+							<button type="roll" name="roll_PsionicsKnowledge" class="sheet-roll-skill" value="@{PsionicsKnowledge_macro}"></button>
 						</div>
-						<div class="sheet-skill-name sheet-trained-only">Psionics <button type="roll" name="roll_Psionics_link" class="sheet-skill-link" value="[Psionics Wiki](https://aaa.dimble.net/skills/life-science#psionics)">&#x2197;</button><div class="sheet-skill-info"><span class="sheet-info-icon">i</span><div class="sheet-tooltip"><span class="sheet-tooltip-trained">Trained Only</span><span class="sheet-tooltip-separator"></span><span class="sheet-tooltip-cost">Base cost: 3</span><span class="sheet-tooltip-separator"></span><span class="sheet-tooltip-rank"><b>R3</b> Increased Effect</span><span class="sheet-tooltip-rank"><b>R6</b> Increased Effect</span><span class="sheet-tooltip-rank"><b>R9</b> Increased Effect</span><span class="sheet-tooltip-rank"><b>R12</b> Increased Effect</span></div></div></div>
+						<div class="sheet-skill-name sheet-trained-only">Psionics <button type="roll" name="roll_PsionicsKnowledge_link" class="sheet-skill-link" value="[Psionics Wiki](https://aaa.dimble.net/skills/life-science#psionics)">&#x2197;</button><div class="sheet-skill-info"><span class="sheet-info-icon">i</span><div class="sheet-tooltip"><span class="sheet-tooltip-trained">Trained Only</span><span class="sheet-tooltip-separator"></span><span class="sheet-tooltip-cost">Base cost: 3</span><span class="sheet-tooltip-separator"></span><span class="sheet-tooltip-rank"><b>R3</b> Increased Effect</span><span class="sheet-tooltip-rank"><b>R6</b> Increased Effect</span><span class="sheet-tooltip-rank"><b>R9</b> Increased Effect</span><span class="sheet-tooltip-rank"><b>R12</b> Increased Effect</span></div></div></div>
 						<div class="sheet-skill-ability-label">INT</div>
-						<input type="number" name="attr_PsionicsRank" class="sheet-score" value="0">
+						<input type="number" name="attr_PsionicsKnowledgeRank" class="sheet-score" value="0">
 						<div class="sheet-skill-score-cell">
-							<input type="text" name="attr_PsionicsO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{PsionicsRank}+@{Intelligence})*@{Knowledge}) * (@{PsionicsRank}/(@{PsionicsRank}+0.001)) + 0.5))">/
-							<input type="text" name="attr_PsionicsG" class="sheet-scoredisabled" disabled="true" value="(floor(@{PsionicsO}/2))">/
-							<input type="text" name="attr_PsionicsA" class="sheet-scoredisabled" disabled="true" value="(floor(@{PsionicsO}/4))">
+							<input type="text" name="attr_PsionicsKnowledgeO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{PsionicsKnowledgeRank}+@{Intelligence})*@{Knowledge}) * (@{PsionicsKnowledgeRank}/(@{PsionicsKnowledgeRank}+0.001)) + 0.5))">/
+							<input type="text" name="attr_PsionicsKnowledgeG" class="sheet-scoredisabled" disabled="true" value="(floor(@{PsionicsKnowledgeO}/2))">/
+							<input type="text" name="attr_PsionicsKnowledgeA" class="sheet-scoredisabled" disabled="true" value="(floor(@{PsionicsKnowledgeO}/4))">
 						</div>
 					</div>
 					<div class="sheet-skill-row sheet-spec">
@@ -3060,19 +3060,19 @@ on("change:undorank sheet:opened", function() { getAttrs(["UndoRank"], function(
 						</div>
 					</div>
 					<div class="sheet-skill-row sheet-spec">
-						<input type="checkbox" name="attr_Psionics_is_trained" class="sheet-trained-check" value="1" style="display: none;">
-						<input type="hidden" name="attr_Psionics_macro" value="">
-						<input type="hidden" name="attr_Psionics_is_trained_only" value="1">
+						<input type="checkbox" name="attr_PsionicsLaw_is_trained" class="sheet-trained-check" value="1" style="display: none;">
+						<input type="hidden" name="attr_PsionicsLaw_macro" value="">
+						<input type="hidden" name="attr_PsionicsLaw_is_trained_only" value="1">
 						<div class="sheet-roll-container">
-							<button type="roll" name="roll_Psionics" class="sheet-roll-skill" value="@{Psionics_macro}"></button>
+							<button type="roll" name="roll_PsionicsLaw" class="sheet-roll-skill" value="@{PsionicsLaw_macro}"></button>
 						</div>
-						<div class="sheet-skill-name sheet-trained-only">Psionics <button type="roll" name="roll_Psionics_link" class="sheet-skill-link" value="[Psionics Wiki](https://aaa.dimble.net/skills/life-science#psionics)">&#x2197;</button><div class="sheet-skill-info"><span class="sheet-info-icon">i</span><div class="sheet-tooltip"><span class="sheet-tooltip-trained">Trained Only</span><span class="sheet-tooltip-separator"></span><span class="sheet-tooltip-cost">Base cost: 3</span></div></div></div>
+						<div class="sheet-skill-name sheet-trained-only">Psionics <button type="roll" name="roll_PsionicsLaw_link" class="sheet-skill-link" value="[Psionics Wiki](https://aaa.dimble.net/skills/life-science#psionics)">&#x2197;</button><div class="sheet-skill-info"><span class="sheet-info-icon">i</span><div class="sheet-tooltip"><span class="sheet-tooltip-trained">Trained Only</span><span class="sheet-tooltip-separator"></span><span class="sheet-tooltip-cost">Base cost: 3</span></div></div></div>
 						<div class="sheet-skill-ability-label">INT</div>
-						<input type="number" name="attr_PsionicsRank" class="sheet-score" value="0">
+						<input type="number" name="attr_PsionicsLawRank" class="sheet-score" value="0">
 						<div class="sheet-skill-score-cell">
-							<input type="text" name="attr_PsionicsO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{PsionicsRank}+@{Intelligence})*@{Law}) * (@{PsionicsRank}/(@{PsionicsRank}+0.001)) + 0.5))">/
-							<input type="text" name="attr_PsionicsG" class="sheet-scoredisabled" disabled="true" value="(floor(@{PsionicsO}/2))">/
-							<input type="text" name="attr_PsionicsA" class="sheet-scoredisabled" disabled="true" value="(floor(@{PsionicsO}/4))">
+							<input type="text" name="attr_PsionicsLawO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{PsionicsLawRank}+@{Intelligence})*@{Law}) * (@{PsionicsLawRank}/(@{PsionicsLawRank}+0.001)) + 0.5))">/
+							<input type="text" name="attr_PsionicsLawG" class="sheet-scoredisabled" disabled="true" value="(floor(@{PsionicsLawO}/2))">/
+							<input type="text" name="attr_PsionicsLawA" class="sheet-scoredisabled" disabled="true" value="(floor(@{PsionicsLawO}/4))">
 						</div>
 					</div>
 				</div>
@@ -3208,19 +3208,19 @@ on("change:undorank sheet:opened", function() { getAttrs(["UndoRank"], function(
 						</div>
 					</div>
 					<div class="sheet-skill-row sheet-spec">
-						<input type="checkbox" name="attr_Psionics_is_trained" class="sheet-trained-check" value="1" style="display: none;">
-						<input type="hidden" name="attr_Psionics_macro" value="">
-						<input type="hidden" name="attr_Psionics_is_trained_only" value="1">
+						<input type="checkbox" name="attr_PsionicsLifeScience_is_trained" class="sheet-trained-check" value="1" style="display: none;">
+						<input type="hidden" name="attr_PsionicsLifeScience_macro" value="">
+						<input type="hidden" name="attr_PsionicsLifeScience_is_trained_only" value="1">
 						<div class="sheet-roll-container">
-							<button type="roll" name="roll_Psionics" class="sheet-roll-skill" value="@{Psionics_macro}"></button>
+							<button type="roll" name="roll_PsionicsLifeScience" class="sheet-roll-skill" value="@{PsionicsLifeScience_macro}"></button>
 						</div>
-						<div class="sheet-skill-name sheet-trained-only">Psionics <button type="roll" name="roll_Psionics_link" class="sheet-skill-link" value="[Psionics Wiki](https://aaa.dimble.net/skills/life-science#psionics)">&#x2197;</button><div class="sheet-skill-info"><span class="sheet-info-icon">i</span><div class="sheet-tooltip"><span class="sheet-tooltip-trained">Trained Only</span><span class="sheet-tooltip-separator"></span><span class="sheet-tooltip-cost">Base cost: 3</span></div></div></div>
+						<div class="sheet-skill-name sheet-trained-only">Psionics <button type="roll" name="roll_PsionicsLifeScience_link" class="sheet-skill-link" value="[Psionics Wiki](https://aaa.dimble.net/skills/life-science#psionics)">&#x2197;</button><div class="sheet-skill-info"><span class="sheet-info-icon">i</span><div class="sheet-tooltip"><span class="sheet-tooltip-trained">Trained Only</span><span class="sheet-tooltip-separator"></span><span class="sheet-tooltip-cost">Base cost: 3</span></div></div></div>
 						<div class="sheet-skill-ability-label">INT</div>
-						<input type="number" name="attr_PsionicsRank" class="sheet-score" value="0">
+						<input type="number" name="attr_PsionicsLifeScienceRank" class="sheet-score" value="0">
 						<div class="sheet-skill-score-cell">
-							<input type="text" name="attr_PsionicsO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{PsionicsRank}+@{Intelligence})*@{LifeScience}) * (@{PsionicsRank}/(@{PsionicsRank}+0.001)) + 0.5))">/
-							<input type="text" name="attr_PsionicsG" class="sheet-scoredisabled" disabled="true" value="(floor(@{PsionicsO}/2))">/
-							<input type="text" name="attr_PsionicsA" class="sheet-scoredisabled" disabled="true" value="(floor(@{PsionicsO}/4))">
+							<input type="text" name="attr_PsionicsLifeScienceO" class="sheet-scoredisabled" disabled="true" value="(floor(((@{PsionicsLifeScienceRank}+@{Intelligence})*@{LifeScience}) * (@{PsionicsLifeScienceRank}/(@{PsionicsLifeScienceRank}+0.001)) + 0.5))">/
+							<input type="text" name="attr_PsionicsLifeScienceG" class="sheet-scoredisabled" disabled="true" value="(floor(@{PsionicsLifeScienceO}/2))">/
+							<input type="text" name="attr_PsionicsLifeScienceA" class="sheet-scoredisabled" disabled="true" value="(floor(@{PsionicsLifeScienceO}/4))">
 						</div>
 					</div>
 					<div class="sheet-skill-row sheet-spec">

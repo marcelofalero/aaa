@@ -283,6 +283,8 @@ def generate_skills_html(data_list, indent_level=3, is_psionics=False, urls_map=
             spec_untrained_allowed = spec["u"]
             spec_attr_full = ABILITY_MAP[spec_attr]
             spec_id = clean_id(spec_name)
+            if spec_id == "Psionics":
+                spec_id = f"Psionics{id_name}"
             is_spec_trained_only = 1 if spec_untrained_allowed == "NO" else 0
             
             spec_url = urls_map.get(spec_name.lower()) if urls_map else None
