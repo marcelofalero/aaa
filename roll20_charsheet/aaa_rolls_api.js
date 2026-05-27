@@ -53,6 +53,7 @@ on("chat:message", function(msg) {
         
         var usedIndices = {};
         var d20 = 10;
+        var d20Found = false;
         
         // 1. Explicitly identify the control d20 roll (expression containing "1d20" or "d20")
         for (var k = 0; k < msgObj.inlinerolls.length; k++) {
@@ -62,12 +63,13 @@ on("chat:message", function(msg) {
                 if (normExpr.indexOf("1d20") !== -1 || normExpr.indexOf("d20") !== -1) {
                     d20 = roll.results.total;
                     usedIndices[k] = true;
+                    d20Found = true;
                     break;
                 }
             }
         }
         // Fallback: if d20 wasn't matched (or expression is empty), use the first roll in the array
-        if (!usedIndices[0] && msgObj.inlinerolls[0]) {
+        if (!d20Found && msgObj.inlinerolls[0]) {
             d20 = msgObj.inlinerolls[0].results.total;
             usedIndices[0] = true;
         }
