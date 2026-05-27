@@ -31,18 +31,12 @@ on("chat:message", function(msg) {
     // Construct the inline roll expression for sendChat
     // First roll is always the control d20
     var rollExpr = "[[1d20cs<1cf>20]]";
-    var rollMap = []; // Map from attack index to its situation die's inline roll index
-    var currentRollIndex = 1;
     
     for (var i = 1; i <= mode; i++) {
         var argIndex = 7 + (i * 2); // 9 for i = 1, 11 for i = 2, 13 for i = 3
         var rollStr = parts[argIndex];
         if (rollStr && rollStr.trim() !== '0') {
             rollExpr += " [[" + rollStr.trim() + "]]";
-            rollMap[i] = currentRollIndex;
-            currentRollIndex++;
-        } else {
-            rollMap[i] = -1;
         }
     }
     
@@ -57,9 +51,28 @@ on("chat:message", function(msg) {
         // Whispering debug info to GM
         sendChat("aaa API Debug", "/w gm [DEBUG] rollExpr: " + rollExpr + " | inlinerolls: " + JSON.stringify(msgObj.inlinerolls) + " | parts: " + JSON.stringify(parts));
         
-        var d20 = msgObj.inlinerolls[0].results.total;
+        var usedIndices = {};
+        var d20 = 10;
         
-        // Calculate the results of all attacks as formulaic inline rolls
+        // 1. Explicitly identify the control d20 roll (expression containing "1d20" or "d20")
+        for (var k = 0; k < msgObj.inlinerolls.length; k++) {
+            var roll = msgObj.inlinerolls[k];
+            if (roll && roll.expression) {
+                var normExpr = roll.expression.toLowerCase().replace(/\s+/g, '');
+                if (normExpr.indexOf("1d20") !== -1 || normExpr.indexOf("d20") !== -1) {
+                    d20 = roll.results.total;
+                    usedIndices[k] = true;
+                    break;
+                }
+            }
+        }
+        // Fallback: if d20 wasn't matched (or expression is empty), use the first roll in the array
+        if (!usedIndices[0] && msgObj.inlinerolls[0]) {
+            d20 = msgObj.inlinerolls[0].results.total;
+            usedIndices[0] = true;
+        }
+        
+        // 2. Assign the remaining situation dice sequentially to the unused inline rolls
         var attackRollExprs = {};
         for (var i = 1; i <= mode; i++) {
             var argIndex = 7 + (i * 2);
@@ -70,9 +83,14 @@ on("chat:message", function(msg) {
             var dieName = '';
             if (rollStr && rollStr.trim() !== '0') {
                 dieName = rollStr.replace(/cs<0cf<0/g, '').trim();
-                var rollIdx = rollMap[i];
-                if (rollIdx !== -1 && msgObj.inlinerolls[rollIdx]) {
-                    sitVal = msgObj.inlinerolls[rollIdx].results.total;
+                
+                // Retrieve the next unused inline roll from the evaluated array
+                for (var k = 0; k < msgObj.inlinerolls.length; k++) {
+                    if (!usedIndices[k]) {
+                        sitVal = msgObj.inlinerolls[k].results.total;
+                        usedIndices[k] = true;
+                        break;
+                    }
                 }
             }
             
@@ -95,7 +113,7 @@ on("chat:message", function(msg) {
         // Add the rolls for each attack mode
         for (var i = 1; i <= mode; i++) {
             output += " {{attack" + i + "=[[" + attackRollExprs[i] + "]]}}";
-            output += " {{scores" + i + "}=[" + scoreO + "/" + scoreG + "/" + scoreA + "]}}";
+            output += " {{scores" + i + "=[" + scoreO + "/" + scoreG + "/" + scoreA + "]}}";
             output += " {{ordinary" + i + "=[[" + scoreO + "]]}}";
             output += " {{good" + i + "=[[" + scoreG + "]]}}";
             output += " {{amazing" + i + "=[[" + scoreA + "]]}}";
