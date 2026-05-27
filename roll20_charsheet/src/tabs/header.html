@@ -280,13 +280,18 @@ function updateAttackMacro(section, rowId) {
             };
         };
         
+        const sanitize = (str) => {
+            if (!str) return '';
+            return str.replace(/\r?\n|\r/g, ' ').replace(/\|\|/g, '|').trim();
+        };
+
         const generateMacro = (mode) => {
-            const weaponName = getVal('name') || 'Weapon';
-            const charName = v['character_name'] || 'Character';
+            const weaponName = sanitize(getVal('name') || 'Weapon');
+            const charName = sanitize(v['character_name'] || 'Character');
             
-            const type = getVal('type') || '-';
-            const range = getVal('range') || '-';
-            const notes = getVal('notes') || '';
+            const type = sanitize(getVal('type') || '-');
+            const range = sanitize(getVal('range') || '-');
+            const notes = sanitize(getVal('notes') || '');
             
             const scoreO = score;
             const scoreGVal = scoreG;
