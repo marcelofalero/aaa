@@ -31,12 +31,18 @@ on("chat:message", function(msg) {
     // Construct the inline roll expression for sendChat
     // First roll is always the control d20
     var rollExpr = "[[1d20cs<1cf>20]]";
+    var rollMap = []; // Map from attack index to its situation die's inline roll index
+    var currentRollIndex = 1;
     
     for (var i = 1; i <= mode; i++) {
         var argIndex = 7 + (i * 2); // 9 for i = 1, 11 for i = 2, 13 for i = 3
         var rollStr = parts[argIndex];
         if (rollStr && rollStr.trim() !== '0') {
             rollExpr += " [[" + rollStr.trim() + "]]";
+            rollMap[i] = currentRollIndex;
+            currentRollIndex++;
+        } else {
+            rollMap[i] = -1;
         }
     }
     
@@ -51,43 +57,7 @@ on("chat:message", function(msg) {
         // Whispering debug info to GM
         sendChat("aaa API Debug", "/w gm [DEBUG] rollExpr: " + rollExpr + " | inlinerolls: " + JSON.stringify(msgObj.inlinerolls) + " | parts: " + JSON.stringify(parts));
         
-        function normalizeExpr(expr) {
-            if (!expr) return "";
-            return expr.toLowerCase().replace(/\s+/g, "").trim();
-        }
-        
-        var usedIndices = {};
-        var d20 = 10;
-        
-        // Find the unique control d20 roll (contains cs<1cf>20)
-        for (var k = 0; k < msgObj.inlinerolls.length; k++) {
-            var roll = msgObj.inlinerolls[k];
-            if (roll.expression && normalizeExpr(roll.expression).indexOf("cs<1cf>20") !== -1) {
-                d20 = roll.results.total;
-                usedIndices[k] = true;
-                break;
-            }
-        }
-        
-        function findRollValue(expression) {
-            var normTarget = normalizeExpr(expression);
-            for (var k = 0; k < msgObj.inlinerolls.length; k++) {
-                if (usedIndices[k]) continue;
-                var roll = msgObj.inlinerolls[k];
-                if (roll.expression && normalizeExpr(roll.expression) === normTarget) {
-                    usedIndices[k] = true;
-                    return roll.results.total;
-                }
-            }
-            // Fallback: return first unused roll
-            for (var k = 0; k < msgObj.inlinerolls.length; k++) {
-                if (!usedIndices[k]) {
-                    usedIndices[k] = true;
-                    return msgObj.inlinerolls[k].results.total;
-                }
-            }
-            return 0;
-        }
+        var d20 = msgObj.inlinerolls[0].results.total;
         
         // Calculate the results of all attacks as formulaic inline rolls
         var attackRollExprs = {};
@@ -100,7 +70,10 @@ on("chat:message", function(msg) {
             var dieName = '';
             if (rollStr && rollStr.trim() !== '0') {
                 dieName = rollStr.replace(/cs<0cf<0/g, '').trim();
-                sitVal = findRollValue(rollStr.trim());
+                var rollIdx = rollMap[i];
+                if (rollIdx !== -1 && msgObj.inlinerolls[rollIdx]) {
+                    sitVal = msgObj.inlinerolls[rollIdx].results.total;
+                }
             }
             
             if (dieName && dieName !== '0') {
