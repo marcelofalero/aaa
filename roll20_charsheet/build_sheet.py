@@ -207,6 +207,22 @@ def parse_yaml_skills(file_path):
             skills_data.append({'a': attr, 's': sorted_skills})
     return skills_data
 
+def find_duplicate_specialties(skills_data, psionics_data):
+    """Finds all duplicate specialty clean IDs across the rulesets."""
+    counts = {}
+    
+    def process_data(data_list):
+        for group in data_list:
+            for skill in group["s"]:
+                for spec in skill.get("sp", []):
+                    spec_id = clean_id(spec["n"])
+                    counts[spec_id] = counts.get(spec_id, 0) + 1
+                    
+    process_data(skills_data)
+    process_data(psionics_data)
+    
+    return {k for k, v in counts.items() if v > 1}
+
 def generate_skills_html(data_list, indent_level=3, is_psionics=False, urls_map=None):
     """Generates the HTML for broad and specialty skills based on the provided data."""
     all_broad_skills = []
@@ -267,7 +283,7 @@ def generate_skills_html(data_list, indent_level=3, is_psionics=False, urls_map=
         h += f'{indent}\t\t<div class="sheet-roll-container">\n'
         h += f'{indent}\t\t\t<button type="roll" name="roll_{id_name}" class="sheet-roll-skill" value="@{{{id_name}_macro}}"></button>\n'
         h += f'{indent}\t\t</div>\n'
-        h += f'{indent}\t\t<div class="sheet-skill-name{" sheet-trained-only" if is_trained_only else ""}">{name} <button type="roll" name="roll_{id_name}_link" class="sheet-skill-link" value="[{name} Wiki]({url})">&#x2197;</button>{info_icon}</div>\n'
+        h += f'{indent}\t\t<div class="sheet-skill-name{" sheet-trained-only" if is_trained_only else ""}"><span class="sheet-skill-name-text">{name}</span> <button type="roll" name="roll_{id_name}_link" class="sheet-skill-link" value="[{name} Wiki]({url})">&#x2197;</button>{info_icon}</div>\n'
         h += f'{indent}\t\t<div class="sheet-skill-ability-label">{attr_short}</div>\n'
         h += f'{indent}\t\t<div class="sheet-skill-score-cell">\n'
         h += f'{indent}\t\t\t<input type="text" name="attr_{id_name}O" class="sheet-scoredisabled" disabled="true" value="{formula}">/\n'
@@ -282,9 +298,7 @@ def generate_skills_html(data_list, indent_level=3, is_psionics=False, urls_map=
             spec_attr = spec["at"]
             spec_untrained_allowed = spec["u"]
             spec_attr_full = ABILITY_MAP[spec_attr]
-            spec_id = clean_id(spec_name)
-            if spec_id == "Psionics":
-                spec_id = f"Psionics{id_name}"
+            spec_id = f"{id_name}_{clean_id(spec_name)}"
             is_spec_trained_only = 1 if spec_untrained_allowed == "NO" else 0
             
             spec_url = urls_map.get(spec_name.lower()) if urls_map else None
@@ -316,7 +330,7 @@ def generate_skills_html(data_list, indent_level=3, is_psionics=False, urls_map=
             h += f'{indent}\t\t\t<div class="sheet-roll-container">\n'
             h += f'{indent}\t\t\t\t<button type="roll" name="roll_{spec_id}" class="sheet-roll-skill" value="@{{{spec_id}_macro}}"></button>\n'
             h += f'{indent}\t\t\t</div>\n'
-            h += f'{indent}\t\t\t<div class="sheet-skill-name{" sheet-trained-only" if is_spec_trained_only else ""}">{spec_name} <button type="roll" name="roll_{spec_id}_link" class="sheet-skill-link" value="[{spec_name} Wiki]({spec_url})">&#x2197;</button>{spec_info_icon}</div>\n'
+            h += f'{indent}\t\t\t<div class="sheet-skill-name{" sheet-trained-only" if is_spec_trained_only else ""}"><span class="sheet-skill-name-text">{spec_name}</span> <button type="roll" name="roll_{spec_id}_link" class="sheet-skill-link" value="[{spec_name} Wiki]({spec_url})">&#x2197;</button>{spec_info_icon}</div>\n'
             h += f'{indent}\t\t\t<div class="sheet-skill-ability-label">{spec_attr}</div>\n'
             h += f'{indent}\t\t\t<input type="number" name="attr_{spec_id}Rank" class="sheet-score" value="0">\n'
             h += f'{indent}\t\t\t<div class="sheet-skill-score-cell">\n'
@@ -369,7 +383,7 @@ function updateSkillMacro(skillId, name, url, isTrainedOnly, type, parentBroadId
         if (!canRoll) {
             macro = `/w gm attempts to use ${name} untrained, but it is a Trained Only skill.`;
         } else {
-            const defaultStep = !isTrained ? 1 : 0;
+            const defaultStep = isSpecialty ? (!isTrained ? 1 : 0) : 1;
             const query = getAlternityRollQuery(defaultStep);
             const untrainedFlag = (!isTrained) ? " {{untrained=1}}" : "";
             macro = `&{template:alternity-skill} {{name=${name}}} {{score=${scores}}} {{results=[[${query}]]}} {{wiki=[↗ Wiki Documentation](${url})}}${untrainedFlag}`;
@@ -491,14 +505,6 @@ def build():
             content = content.replace('<!-- PSIONICS_PLACEHOLDER -->', psionics_html)
         
         if filename == 'header.html':
-            # Generate specialty training workers
-            spec_workers = []
-            for s in all_skill_ids:
-                if s['type'] == 'specialty':
-                    sid = s['id']
-                    spec_workers.append(f'on("change:{sid.lower()}rank sheet:opened", function() {{ getAttrs(["{sid}Rank"], function(v) {{ setAttrs({{ "{sid}_is_trained": ((parseInt(v["{sid.lower()}rank"]) || 0) > 0 ? 1 : 0) }}); }}); }});')
-            
-            content = content.replace('<!-- SPECIALTY_WORKERS_PLACEHOLDER -->', "\n".join(spec_workers))
             content = content.replace('<!-- SKILL_MACRO_WORKERS_PLACEHOLDER -->', skill_worker_code)
             
         content = content.replace('<!-- ROLL_QUERY_DEFAULT_0 -->', roll_query_0)

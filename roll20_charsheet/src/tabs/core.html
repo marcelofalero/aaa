@@ -203,7 +203,7 @@
 						<div class="sheet-core-row"
 							style="align-items: center; gap: 8px; margin-bottom: 5px; flex-wrap: wrap; border: 0px">
 							<button type="roll"
-								value="&{template:default} {{name=@{character_name} - @{ArmorName}}} {{protection= [[@{LowImpact}]]LI / [[@{HighImpact}]]HI / [[@{Energy}]]EN}} {{notes=@{ArmorNotes}}}"></button>
+								value="&{template:alternity-armor} {{name=@{character_name} - @{ArmorName}}} {{protection= [[@{LowImpact}]]LI / [[@{HighImpact}]]HI / [[@{Energy}]]EN}} {{notes=@{ArmorNotes}}}"></button>
 							<div class="sheet-field" style="flex: 5; min-width: 250px;">
 								<input type="text" name="attr_ArmorName" data-i18n-placeholder="armor-name-placeholder"
 									placeholder="Armor Name" style="border-bottom: 1px solid var(--color-accent-teal);">
@@ -256,7 +256,7 @@
 							<button type="roll" name="roll_attackformdamagegoo"
 								value="&{template:alternity-damage} {{name=@{character_name} - @{attackformname}}} {{label=Good Damage}} {{damage=[[@{attackformdamagegood}]]}} {{notes=@{attackformdamagegoodtype}}}">Good</button>
 							
-							<button type="roll" name="roll_attackform3" value="@{attackformmacro3}">Auto</button>
+							<span></span>
 							<button type="roll" name="roll_attackformdamageama"
 								value="&{template:alternity-damage} {{name=@{character_name} - @{attackformname}}} {{label=Amazing Damage}} {{damage=[[@{attackformdamageamazing}]]}} {{notes=@{attackformdamageamazingtype}}}">Amazing</button>
 						</div>
