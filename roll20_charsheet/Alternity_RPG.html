@@ -632,7 +632,7 @@ function updateAttackMacro(section, rowId) {
 }
 
 // Attack Forms Listeners
-on('change:repeating_attackforms:attackformname change:repeating_attackforms:attackformscore change:repeating_attackforms:attackformdie change:repeating_attackforms:attackformaccuracy change:repeating_attackforms:attackformsit change:repeating_attackforms:attackformmulti remove:repeating_attackforms sheet:opened', function() {
+on('change:repeating_attackforms:attackformname change:repeating_attackforms:attackformnotes change:repeating_attackforms:attackformscore change:repeating_attackforms:attackformdie change:repeating_attackforms:attackformaccuracy change:repeating_attackforms:attackformsit change:repeating_attackforms:attackformmulti remove:repeating_attackforms sheet:opened', function() {
     console.log("DEBUG: attackforms listener triggered");
     getSectionIDs('repeating_attackforms', ids => ids.forEach(id => updateAttackMacro('attackforms', id)));
 });
