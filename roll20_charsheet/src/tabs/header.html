@@ -290,6 +290,9 @@ function updateAttackMacro(section, rowId) {
                 macro += ` {{is_starship=1}}`;
             }
             
+            // Roll the control d20 exactly once as the first inline roll in the macro (index 0)
+            macro += ` {{dicepool=[[1d20cs<1cf>20]]}}`;
+            
             const type = getVal('type');
             const range = getVal('range');
             if (type) macro += ` {{type=${type}}}`;
@@ -303,10 +306,11 @@ function updateAttackMacro(section, rowId) {
                 const total = baseMod + penalty;
                 const step = getStepDieRoll(total);
                 
+                // Reference $[[0.computed]] to perform math on the exact same control die result
                 if (step.roll === '0') {
-                    macro += ` {{attack${i}=[[1d20cs<1cf>20]]}}`;
+                    macro += ` {{attack${i}=[[ $[[0.computed]] ]]}}`;
                 } else {
-                    macro += ` {{attack${i}=[[1d20cs<1cf>20 ${step.sign} ${step.roll}]]}}`;
+                    macro += ` {{attack${i}=[[ $[[0.computed]] ${step.sign} ${step.roll} ]]}}`;
                 }
                 macro += ` {{scores${i}}}=[${score}/${scoreG}/${scoreA}]`;
                 macro += ` {{ordinary${i}=[[${score}]]}}`;
