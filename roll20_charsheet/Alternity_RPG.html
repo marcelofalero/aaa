@@ -589,41 +589,87 @@ function updateAttackMacro(section, rowId) {
             const charName = v['character_name'] || 'Character';
             const fullName = `${charName} - ${weaponName}`;
             
-            let macro = `&{template:alternity-attack} {{name=${fullName}}} {{rowid=${rowId}}}`;
-            if (isStarship) {
-                macro += ` {{is_starship=1}}`;
-            }
-            
-            // Roll the control d20 exactly once as the first inline roll in the macro (index 0)
-            macro += ` {{dicepool=[[1d20cs<1cf>20]]}}`;
-            
-            const type = getVal('type');
-            const range = getVal('range');
-            if (type) macro += ` {{type=${type}}}`;
-            if (range) macro += ` {{range=${range}}}`;
-            
+            const type = getVal('type') || '-';
+            const range = getVal('range') || '-';
             const notes = getVal('notes') || '';
-            if (notes) macro += ` {{notes=${notes}}}`;
+            
+            let macro = `!script {{`;
+            macro += `\n  --#title|${fullName}`;
+            macro += `\n  --#titleCardBackground|#0f172a`;
+            macro += `\n  --#titleTextColor|#38bdf8`;
+            macro += `\n  --#borderColor|#334155`;
+            macro += `\n  --#evenRowBackground|#1e293b`;
+            macro += `\n  --#oddRowBackground|#1e293b`;
+            macro += `\n  --#evenRowTextColor|#cbd5e1`;
+            macro += `\n  --#oddRowTextColor|#cbd5e1`;
+            macro += `\n  --#lineHeight|1.4em`;
+            
+            // Roll the control d20 exactly once
+            macro += `\n  --=Control|1d20`;
+            
+            // Subtitle
+            macro += `\n  --#leftsub|Type: ${type}  |  Range: ${range}`;
+            macro += `\n  --#rightsub|Control: [$Control]`;
             
             for (let i = 1; i <= mode; i++) {
                 const penalty = (mode > 1) ? i : 0;
                 const total = baseMod + penalty;
                 const step = getStepDieRoll(total);
                 
-                // Reference $[[0.computed]] to perform math on the exact same control die result
-                if (step.roll === '0') {
-                    macro += ` {{attack${i}=[[ $[[0.computed]] ]]}}`;
+                const cleanRoll = step.roll === '0' ? '0' : step.roll.replace('cs<0cf<0', '');
+                
+                if (cleanRoll === '0') {
+                    macro += `\n  --=Result${i}|[$Control]`;
                 } else {
-                    macro += ` {{attack${i}=[[ $[[0.computed]] ${step.sign} ${step.roll} ]]}}`;
+                    macro += `\n  --=Sit${i}|${cleanRoll}`;
+                    macro += `\n  --=Result${i}|[$Control] ${step.sign} [$Sit${i}]`;
                 }
-                macro += ` {{scores${i}}}=[${score}/${scoreG}/${scoreA}]`;
-                macro += ` {{ordinary${i}=[[${score}]]}}`;
-                macro += ` {{good${i}=[[${scoreG}]]}}`;
-                macro += ` {{amazing${i}=[[${scoreA}]]}}`;
-                macro += ` {{amazing${i}_p1=[[${scoreA + 1}]]}}`;
-                macro += ` {{good${i}_p1=[[${scoreG + 1}]]}}`;
+                
+                macro += `\n  --? [$Result${i}] -le ${scoreA} | ^SuccessAma${i}`;
+                macro += `\n  --? [$Result${i}] -le ${scoreG} | ^SuccessGoo${i}`;
+                macro += `\n  --? [$Result${i}] -le ${score} | ^SuccessOrd${i}`;
+                macro += `\n  --&Success${i}|(Miss)`;
+                macro += `\n  --&SuccessColor${i}|#64748b`;
+                macro += `\n  --&SuccessStyle${i}|font-style: italic; font-weight: bold; font-size: 1.1em;`;
+                macro += `\n  --^Done${i}|`;
+                
+                macro += `\n  --:SuccessAma${i}|`;
+                macro += `\n  --&Success${i}|Amazing`;
+                macro += `\n  --&SuccessColor${i}|#fbbf24`;
+                macro += `\n  --&SuccessStyle${i}|font-weight: 800; text-shadow: 0 0 6px rgba(251, 191, 36, 0.6); font-size: 1.1em; text-transform: uppercase;`;
+                macro += `\n  --^Done${i}|`;
+                
+                macro += `\n  --:SuccessGoo${i}|`;
+                macro += `\n  --&Success${i}|Good`;
+                macro += `\n  --&SuccessColor${i}|#a855f7`;
+                macro += `\n  --&SuccessStyle${i}|font-weight: 800; text-shadow: 0 0 6px rgba(168, 85, 247, 0.6); font-size: 1.1em; text-transform: uppercase;`;
+                macro += `\n  --^Done${i}|`;
+                
+                macro += `\n  --:SuccessOrd${i}|`;
+                macro += `\n  --&Success${i}|Ordinary`;
+                macro += `\n  --&SuccessColor${i}|#0d9488`;
+                macro += `\n  --&SuccessStyle${i}|font-weight: 800; text-shadow: 0 0 6px rgba(13, 148, 136, 0.6); font-size: 1.1em; text-transform: uppercase;`;
+                macro += `\n  --^Done${i}|`;
+                
+                macro += `\n  --:Done${i}|`;
             }
             
+            // Output each attack
+            for (let i = 1; i <= mode; i++) {
+                const penalty = (mode > 1) ? i : 0;
+                const total = baseMod + penalty;
+                
+                let stepStr = total === 0 ? '' : ` (${total > 0 ? '+' : ''}${total} step)`;
+                
+                macro += `\n  --+Att. ${i} [${score}/${scoreG}/${scoreA}]${stepStr}|<div style="display: flex; justify-content: space-between; align-items: center; width: 100%;"><span style="font-size: 1.4em; font-weight: bold; background: #0f172a; border: 1px solid #334155; padding: 2px 8px; border-radius: 4px; color: #cbd5e1; margin-right: 10px;">[$Result${i}]</span> <span style="color: [&SuccessColor${i}]; [&SuccessStyle${i}]">[&Success${i}]</span></div>`;
+            }
+            
+            // Output notes
+            if (notes) {
+                macro += `\n  --+Notes|[i]${notes}[/i]`;
+            }
+            
+            macro += `\n}}`;
             return macro;
         };
         
