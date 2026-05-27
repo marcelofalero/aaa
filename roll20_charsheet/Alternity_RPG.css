@@ -2477,3 +2477,10 @@ fieldset.repeating_weapons {
     color: #ffffff !important;
 }
 
+/* Preserve newlines in all roll template notes sections */
+.sheet-rolltemplate-alternity-attack .sheet-template-notes,
+.sheet-rolltemplate-alternity-damage .sheet-template-notes,
+.sheet-rolltemplate-alternity-armor .sheet-template-notes {
+    white-space: pre-wrap !important;
+}
+
