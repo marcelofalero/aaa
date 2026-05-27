@@ -1,20 +1,20 @@
 /**
- * Alternity RPG - Custom Roll20 API Dice Rolling Script
+ * aaa RPG - Custom Roll20 API Dice Rolling Script
  * Handles multi-action attacks by rolling a single control d20 die exactly once,
  * applying different situation step dice for each attack, and outputting to the
  * character sheet's premium HTML roll template.
  */
 
 on("chat:message", function(msg) {
-    // Only intercept API commands starting with !alternity-roll
+    // Only intercept API commands starting with !aaa-roll
     if (msg.type !== "api") return;
-    if (msg.content.indexOf("!alternity-roll") !== 0) return;
+    if (msg.content.indexOf("!aaa-roll") !== 0) return;
     
     // Parse arguments separated by " || "
-    var argsStr = msg.content.substring("!alternity-roll ".length);
+    var argsStr = msg.content.substring("!aaa-roll ".length);
     var parts = argsStr.split(" || ");
     if (parts.length < 10) {
-        sendChat("Alternity API", "/w gm [ERROR] Alternity API received invalid arguments: " + msg.content);
+        sendChat("aaa API", "/w gm [ERROR] aaa API received invalid arguments: " + msg.content);
         return;
     }
     
@@ -50,7 +50,7 @@ on("chat:message", function(msg) {
     sendChat("", rollExpr, function(ops) {
         var msgObj = ops[0];
         if (!msgObj || !msgObj.inlinerolls || msgObj.inlinerolls.length === 0) {
-            sendChat("Alternity API", "/w gm [ERROR] Failed to evaluate dice rolls.");
+            sendChat("aaa API", "/w gm [ERROR] Failed to evaluate dice rolls.");
             return;
         }
         

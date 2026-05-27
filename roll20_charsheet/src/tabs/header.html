@@ -293,8 +293,8 @@ function updateAttackMacro(section, rowId) {
             const scoreAVal = scoreA;
             
             // Format command:
-            // !alternity-roll [CharName] || [WeaponName] || [Type] || [Range] || [Notes] || [ScoreO] || [ScoreG] || [ScoreA] || [Mode]
-            let cmd = `!alternity-roll ${charName} || ${weaponName} || ${type} || ${range} || ${notes} || ${scoreO} || ${scoreGVal} || ${scoreAVal} || ${mode}`;
+            // !aaa-roll [CharName] || [WeaponName] || [Type] || [Range] || [Notes] || [ScoreO] || [ScoreG] || [ScoreA] || [Mode]
+            let cmd = `!aaa-roll ${charName} || ${weaponName} || ${type} || ${range} || ${notes} || ${scoreO} || ${scoreGVal} || ${scoreAVal} || ${mode}`;
             
             for (let i = 1; i <= mode; i++) {
                 const penalty = (mode > 1) ? i : 0;
