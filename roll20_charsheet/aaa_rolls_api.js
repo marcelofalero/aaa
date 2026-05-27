@@ -75,9 +75,9 @@ on("chat:message", function(msg) {
             }
             
             if (dieName && dieName !== '0') {
-                attackRollExprs[i] = d20 + "[d20] " + sign + " " + sitVal + "[" + dieName + "]";
+                attackRollExprs[i] = "(" + d20 + ")[1d20] " + sign + " (" + sitVal + ")[" + dieName + "]";
             } else {
-                attackRollExprs[i] = d20 + "[d20]";
+                attackRollExprs[i] = "(" + d20 + ")[1d20]";
             }
         }
         
