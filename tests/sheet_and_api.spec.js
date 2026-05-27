@@ -73,10 +73,6 @@ test.describe('Alternity/aaa RPG Roll20 Automated Test Suite', () => {
             // Mode 2: Double action (+1 step on first, +2 steps on second -> d8 and d12)
             const macro2 = setAttrsVal['repeating_attackforms_row123_attackformmacro2'];
             expect(macro2).toBe('!aaa-roll Razor || Laser Pistol || Energy || 20/40/80 || Point-blank bonuses || 12 || 6 || 3 || 2 || 1d8cs<0cf<0 || + || 1d12cs<0cf<0 || +');
-            
-            // Mode 3: Triple action (+1 step, +2 steps, +3 steps -> d8, d12, 1d20)
-            const macro3 = setAttrsVal['repeating_attackforms_row123_attackformmacro3'];
-            expect(macro3).toBe('!aaa-roll Razor || Laser Pistol || Energy || 20/40/80 || Point-blank bonuses || 12 || 6 || 3 || 3 || 1d8cs<0cf<0 || + || 1d12cs<0cf<0 || + || 1d20cs<0cf<0 || +');
         });
 
         test('Should sanitize newlines and double pipes to maintain command string integrity', () => {

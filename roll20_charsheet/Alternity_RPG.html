@@ -619,7 +619,6 @@ function updateAttackMacro(section, rowId) {
         const update = {};
         update[prefix + s + 'macro1'] = generateMacro(1);
         update[prefix + s + 'macro2'] = generateMacro(2);
-        update[prefix + s + 'macro3'] = generateMacro(3);
         setAttrs(update);
     });
 }
@@ -1000,7 +999,6 @@ on('change:repeating_starshipweapons:StarshipWeaponName change:repeating_starshi
 						<input type="hidden" name="attr_attackformstepdie" value="+0">
 						<input type="hidden" name="attr_attackformmacro1" value="">
 						<input type="hidden" name="attr_attackformmacro2" value="">
-						<input type="hidden" name="attr_attackformmacro3" value="">
 						<input type="hidden" name="attr_attackformwarning" value="">
 
 						<div class="sheet-attackform-field" style="flex: 6; min-width: 200px;">
@@ -5858,7 +5856,6 @@ on('change:repeating_starshipweapons:StarshipWeaponName change:repeating_starshi
 
 				<input type="hidden" name="attr_StarshipWeaponMacro1" value="">
 				<input type="hidden" name="attr_StarshipWeaponMacro2" value="">
-				<input type="hidden" name="attr_StarshipWeaponMacro3" value="">
 				
 				<div class="sheet-attackform-field" style="flex: 6; min-width: 200px;">
 					<input type="text" name="attr_StarshipWeaponName" placeholder="Weapon Name" style="width: 100% !important;">
