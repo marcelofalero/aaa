@@ -66,6 +66,7 @@ async function main() {
     const htmlPath = path.resolve(__dirname, '../roll20_charsheet/Alternity_RPG.html');
     const cssPath = path.resolve(__dirname, '../roll20_charsheet/Alternity_RPG.css');
     const transPath = path.resolve(__dirname, '../roll20_charsheet/translation.json');
+    const scriptPath = path.resolve(__dirname, '../roll20_charsheet/aaa_rolls_api.js');
     
     console.log('\nReading character sheet files...');
     if (!fs.existsSync(htmlPath)) {
@@ -88,6 +89,13 @@ async function main() {
     console.log(`- Loaded HTML:        ${htmlContent.length} bytes`);
     console.log(`- Loaded CSS:         ${cssContent.length} bytes`);
     console.log(`- Loaded Translation: ${transContent.length} bytes`);
+    
+    let scriptContent = '';
+    const hasScript = fs.existsSync(scriptPath);
+    if (hasScript) {
+        scriptContent = fs.readFileSync(scriptPath, 'utf8');
+        console.log(`- Loaded API Script:   ${scriptContent.length} bytes (aaa_rolls_api.js)`);
+    }
     
     if (dryRun) {
         console.log('\nDry run completed successfully. Local files parsed and paths validated.');
@@ -309,6 +317,91 @@ async function main() {
             console.error('\nError: Could not locate "Save Changes" button on the page.');
             console.log('Please click the "Save Changes" button manually in the browser.');
             await page.waitForTimeout(10000);
+        }
+        
+        // 9. Optionally Upload API Scripts
+        if (hasScript) {
+            const scriptsUrl = `https://app.roll20.net/campaigns/scripts/${campaignId}`;
+            console.log(`\nNavigating to API Scripts page: ${scriptsUrl}`);
+            await page.goto(scriptsUrl, { waitUntil: 'load' });
+            
+            // Wait for script tabs container to load
+            console.log('Waiting for scripts page to initialize...');
+            await page.waitForSelector('#scriptorder', { timeout: 15000 }).catch(err => {
+                throw new Error('Timeout waiting for "#scriptorder" tab list to load on Roll20 API Scripts page.');
+            });
+            
+            // Give Ace editor a second to load libraries
+            await page.waitForTimeout(2000);
+            
+            console.log('Pasting and saving aaa_rolls_api.js...');
+            const scriptUploadResult = await page.evaluate(({ name, code }) => {
+                const anchors = Array.from(document.querySelectorAll('#scriptorder a[data-toggle="tab"]'));
+                let existingAnchor = null;
+                for (const a of anchors) {
+                    if (a.textContent.replace(/\s+/g, ' ').trim().toLowerCase().includes(name.toLowerCase())) {
+                        existingAnchor = a;
+                        break;
+                    }
+                }
+                
+                if (existingAnchor) {
+                    existingAnchor.click();
+                    const targetId = existingAnchor.getAttribute('href');
+                    const pane = document.querySelector(targetId);
+                    if (!pane) return { success: false, error: `Could not find pane for target ${targetId}` };
+                    
+                    const editorEl = pane.querySelector('.ace_editor');
+                    if (!editorEl) return { success: false, error: `Could not find Ace editor inside pane ${targetId}` };
+                    
+                    ace.edit(editorEl).setValue(code, -1);
+                    
+                    const saveBtn = pane.querySelector('button.savescript');
+                    if (!saveBtn) return { success: false, error: `Could not find Save button inside pane ${targetId}` };
+                    
+                    saveBtn.click();
+                    return { success: true, action: 'updated', paneId: targetId };
+                } else {
+                    const newTabAnchor = document.querySelector('#scriptorder a[href="#script-new"]');
+                    if (!newTabAnchor) return { success: false, error: 'Could not find "New Script" tab' };
+                    
+                    newTabAnchor.click();
+                    const pane = document.querySelector('#script-new');
+                    if (!pane) return { success: false, error: 'Could not find "#script-new" pane' };
+                    
+                    const nameInput = pane.querySelector('input[type="text"]');
+                    if (!nameInput) return { success: false, error: 'Could not find script name input field' };
+                    
+                    nameInput.value = name;
+                    nameInput.dispatchEvent(new Event('input', { bubbles: true }));
+                    nameInput.dispatchEvent(new Event('change', { bubbles: true }));
+                    
+                    const editorEl = pane.querySelector('.ace_editor');
+                    if (!editorEl) return { success: false, error: 'Could not find Ace editor inside #script-new' };
+                    
+                    ace.edit(editorEl).setValue(code, -1);
+                    
+                    const saveBtn = pane.querySelector('button.savescript');
+                    if (!saveBtn) return { success: false, error: 'Could not find Save button inside #script-new' };
+                    
+                    saveBtn.click();
+                    return { success: true, action: 'created' };
+                }
+            }, { name: 'aaa_rolls_api.js', code: scriptContent });
+            
+            if (!scriptUploadResult.success) {
+                throw new Error(`Failed to upload API script: ${scriptUploadResult.error}`);
+            }
+            
+            console.log(`Success: API script successfully ${scriptUploadResult.action === 'created' ? 'created as a new script' : 'updated in existing tab'}!`);
+            
+            // Wait for save action to finish (savescript trigger restarts sandbox)
+            console.log('Saving script and waiting for sandbox restart...');
+            await page.waitForTimeout(5000);
+            
+            console.log('\n==================================================');
+            console.log('🎉 API Script uploaded successfully in Roll20!');
+            console.log('==================================================');
         }
         
     } catch (err) {
