@@ -57,28 +57,28 @@ on("chat:message", function(msg) {
         // Extract the control d20 roll result (first inline roll)
         var d20 = msgObj.inlinerolls[0].results.total;
         
-        // Calculate the results of all attacks
-        var finalRolls = {};
+        // Calculate the results of all attacks as formulaic inline rolls
+        var attackRollExprs = {};
         for (var i = 1; i <= mode; i++) {
             var argIndex = 7 + (i * 2);
             var rollStr = parts[argIndex];
             var sign = parts[argIndex + 1] ? parts[argIndex + 1].trim() : '+';
             
             var sitVal = 0;
-            if (rollStr && rollStr.trim() !== '0' && rollMap[i] !== -1) {
+            var dieName = '';
+            if (rollStr && rollStr.trim() !== '0') {
+                dieName = rollStr.replace(/cs<0cf<0/g, '').trim();
                 var rollIdx = rollMap[i];
-                if (msgObj.inlinerolls[rollIdx]) {
+                if (rollIdx !== -1 && msgObj.inlinerolls[rollIdx]) {
                     sitVal = msgObj.inlinerolls[rollIdx].results.total;
                 }
             }
             
-            var totalRoll = d20;
-            if (sign === '+') {
-                totalRoll += sitVal;
-            } else if (sign === '-') {
-                totalRoll -= sitVal;
+            if (dieName && dieName !== '0') {
+                attackRollExprs[i] = d20 + "[d20] " + sign + " " + sitVal + "[" + dieName + "]";
+            } else {
+                attackRollExprs[i] = d20 + "[d20]";
             }
-            finalRolls[i] = totalRoll;
         }
         
         // Build and output the message styled with our premium HTML template
@@ -92,7 +92,7 @@ on("chat:message", function(msg) {
         
         // Add the rolls for each attack mode
         for (var i = 1; i <= mode; i++) {
-            output += " {{attack" + i + "=[[" + finalRolls[i] + "]]}}";
+            output += " {{attack" + i + "=[[" + attackRollExprs[i] + "]]}}";
             output += " {{scores" + i + "}=[" + scoreO + "/" + scoreG + "/" + scoreA + "]}}";
             output += " {{ordinary" + i + "=[[" + scoreO + "]]}}";
             output += " {{good" + i + "=[[" + scoreG + "]]}}";

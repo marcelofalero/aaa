@@ -307,7 +307,7 @@ async function main() {
             // Roll20 save buttons often require scrolling into view
             await saveButton.scrollIntoViewIfNeeded();
             await Promise.all([
-                page.waitForNavigation({ waitUntil: 'networkidle', timeout: 45000 }),
+                page.waitForNavigation({ waitUntil: 'load', timeout: 25000 }).catch(() => {}),
                 saveButton.click()
             ]);
             console.log('\n==================================================');
