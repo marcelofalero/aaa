@@ -781,4 +781,25 @@ test.describe('Alternity/aaa RPG Roll20 Automated Test Suite', () => {
             ]);
         });
     });
+
+    test.describe('3. Character Sheet HTML/DOM Tooltip Verification Tests', () => {
+        test('Should successfully compile tooltips with rank benefits in the HTML', () => {
+            const htmlPath = path.resolve(__dirname, '../roll20_charsheet/Alternity_RPG.html');
+            const htmlContent = fs.readFileSync(htmlPath, 'utf8');
+            
+            // Check that Bureaucracy has its correct rank benefits
+            expect(htmlContent).toContain('Bureaucracy');
+            expect(htmlContent).toContain('Optimized Routing');
+            expect(htmlContent).toContain('Procedural Immunity');
+            expect(htmlContent).toContain('Invisible Hand');
+            expect(htmlContent).toContain('Loophole Master');
+            
+            // Check that Zero-g Training has its correct rank benefits
+            expect(htmlContent).toContain('Zero-g Training');
+            expect(htmlContent).toContain('Improved Balance');
+            expect(htmlContent).toContain('No Penalty in Zero-G');
+            expect(htmlContent).toContain('Improved Locomotion');
+        });
+    });
 });
+
