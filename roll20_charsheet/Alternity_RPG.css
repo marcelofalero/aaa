@@ -1137,7 +1137,7 @@ button[type="roll"]:hover {
     text-decoration: underline !important;
 }
 
-.sheet-skill-row:not(.sheet-spec) .sheet-trained-check:checked ~ .sheet-skill-name .sheet-skill-name-text {
+.sheet-trained-check-hidden:checked ~ .sheet-skill-header-row .sheet-skill-name {
     color: var(--color-accent-yellow) !important;
 }
 

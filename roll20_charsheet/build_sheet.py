@@ -268,6 +268,7 @@ def generate_skills_html(data_list, indent_level=3, is_psionics=False, urls_map=
         info_icon = build_info_icon(cost, is_untrained_allowed, broad_rb)
         
         h = f'{indent}<div class="sheet-skill-group-box">\n'
+        h += f'{indent}\t<input type="checkbox" name="attr_{id_name}" class="sheet-trained-check-hidden" value="1" style="display: none;" />\n'
         h += f'{indent}\t<div class="sheet-skill-header-row">\n'
         h += f'{indent}\t\t<div></div>\n'
         h += f'{indent}\t\t<div class="sheet-skill-name">{name.upper()}</div>\n'
