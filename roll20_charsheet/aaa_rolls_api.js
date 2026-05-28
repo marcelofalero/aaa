@@ -127,35 +127,13 @@ on("chat:message", function(msg) {
         if (tokenId && phases.length > 0 && typeof Campaign !== 'undefined') {
             var turnorder = JSON.parse(Campaign().get("turnorder") || "[]");
             
-            // Find and delete any previously spawned card graphics on the map for this character,
-            // collecting their graphic IDs so we can remove them from the Turn Tracker as well.
-            // We ALWAYS target the Players Ribbon page where players are viewing to ensure Turn Tracker visibility!
-            var activePageId = Campaign().get("playerpageid") || (chosenToken ? (typeof chosenToken.get === "function" ? chosenToken.get("_pageid") : chosenToken._pageid) : null);
-            var cardsToRemove = [];
-            if (activePageId && typeof findObjs !== 'undefined') {
-                var mapGraphics = findObjs({
-                    _type: "graphic",
-                    _pageid: activePageId
-                });
-                mapGraphics.forEach(function(g) {
-                    var gName = g.get("name") || "";
-                    if (gName.indexOf(charName + " (") === 0) {
-                        cardsToRemove.push(g.id || g.get("id"));
-                        if (typeof g.remove === "function") {
-                            g.remove();
-                        }
-                    }
-                });
-            }
-            
-            // Clean up any existing turn entries for this character
+            // Clean up any existing turn entries for this character:
+            // 1. Remove the character's direct token turn if present
+            // 2. Remove any old custom phase turns for this character (identified by name match)
             var cleanTurnorder = [];
             turnorder.forEach(function(turn) {
                 if (turn.id === tokenId) {
                     return; // Skip and remove character token directly
-                }
-                if (cardsToRemove.indexOf(turn.id) !== -1) {
-                    return; // Skip and remove old card graphic turns
                 }
                 if (turn.id === "-1" && turn.custom && turn.custom.indexOf(charName + " (") === 0) {
                     return; // Skip and remove old custom phase turns
@@ -164,78 +142,20 @@ on("chat:message", function(msg) {
             });
             turnorder = cleanTurnorder;
             
-            // Check if "Alternity Phases" deck exists in the campaign
-            var deck = typeof findObjs !== 'undefined' ? findObjs({ _type: "deck", name: "Alternity Phases" })[0] : null;
-            var cards = deck && typeof findObjs !== 'undefined' ? findObjs({ _type: "card", _deckid: deck.id }) : [];
-            
-            // Push each phase as a separate entry to Turn Tracker and spawn on map
-            phases.forEach(function(phase, idx) {
-                var card = null;
-                if (cards.length > 0) {
-                    for (var cIdx = 0; cIdx < cards.length; cIdx++) {
-                        if (cards[cIdx].get("name").toLowerCase() === phase.name.toLowerCase()) {
-                            card = cards[cIdx];
-                            break;
-                        }
-                    }
-                }
-                
-                // 1. Spawn custom card graphic off-screen so it does not clutter the map tabletop
-                var spawnedCardId = null;
-                if (card && chosenToken && typeof createObj !== 'undefined') {
-                    var avatarUrl = card.get("avatar") || "";
-                    var cleanImgSrc = avatarUrl.replace("max", "thumb").replace("med", "thumb");
-                    var offset = (idx + 1) * 70; // Cascade offset to the right
-                    
-                    var cardGraphic = createObj("graphic", {
-                        imgsrc: cleanImgSrc,
-                        left: 10 + (idx * 5), // Place at the very top-left edge of the canvas to prevent culling!
-                        top: 10,
-                        width: 1,  // Microscopic 1px size so it is completely invisible on the map tabletop
-                        height: 1, // Microscopic 1px size so it is completely invisible on the map tabletop
-                        _pageid: activePageId,
-                        layer: "objects",
-                        name: charName + " (" + phase.name + ")"
-                    });
-                    
-                    if (cardGraphic) {
-                        spawnedCardId = cardGraphic.id || cardGraphic.get("id");
-                    }
-                }
-                
-                // 2. Add Turn Tracker entry (linked to card graphic so image is rendered, fallback to text)
-                if (spawnedCardId) {
-                    turnorder.push({
-                        id: spawnedCardId,
-                        pr: String(phase.val),
-                        custom: ""
-                    });
-                } else {
-                    turnorder.push({
-                        id: "-1",
-                        pr: String(phase.val),
-                        custom: charName + " (" + phase.name + ")"
-                    });
-                }
+            // Push each phase as a separate clean custom text entry to the Turn Tracker
+            phases.forEach(function(phase) {
+                turnorder.push({
+                    id: "-1",
+                    pr: String(phase.val),
+                    custom: charName + " (" + phase.name + ")"
+                });
             });
             
-            // Use setTimeout to avoid Roll20's websocket race condition where the turnorder update
-            // is sent to the client before the newly created graphics are registered and drawn.
-            if (typeof setTimeout !== "undefined") {
-                setTimeout(function() {
-                    Campaign().set("turnorder", JSON.stringify(turnorder));
-                    Campaign().set("initiativepage", true); // Force Turn Tracker to open and refresh!
-                }, 200);
-            } else {
-                Campaign().set("turnorder", JSON.stringify(turnorder));
-                Campaign().set("initiativepage", true); // Force Turn Tracker to open and refresh!
-            }
+            Campaign().set("turnorder", JSON.stringify(turnorder));
+            Campaign().set("initiativepage", true); // Force Turn Tracker to open and refresh!
             
             var phaseNames = phases.map(function(p) { return p.name; });
             trackerStatusMsg = "<br>Added to Turn Tracker for phases: **" + phaseNames.join(", ") + "**";
-            if (deck && cards.length > 0) {
-                trackerStatusMsg += "<br>*(Using card graphics from 'Alternity Phases' deck!)*";
-            }
         } else if (phases.length > 0) {
             trackerStatusMsg = "<br>⚠️ **Warning:** Could not find a map token representing this character. Please ensure you have a token on the map, and its **'Represents Character'** property is set to **" + charName + "**!";
         }
