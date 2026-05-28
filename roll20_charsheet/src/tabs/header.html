@@ -103,7 +103,7 @@ on("change:actioncheck change:actiondie sheet:opened", function() {
         let val = parseInt(v.ActionCheck) || 0;
         let die = v.ActionDie || "d0";
         let scores = `${val + 1}+ / ${val} / ${Math.floor(val / 2)} / ${Math.floor(val / 4)}`;
-        let results = `[[1d20cs<1cf>20+${die}cs<0cf<0]]`;
+        let results = `[[1d20cs<1cf>20+${die}cs<0cf<0 &{tracker}]]`;
         let macro = `&{template:alternity-skill} {{name=Action Check}} {{score=${scores}}} {{results=${results}}}`;
         
         setAttrs({
