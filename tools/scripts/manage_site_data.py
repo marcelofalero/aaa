@@ -440,7 +440,7 @@ def process_psionics(psionics_list, mapping):
         search_data = {
             "search_config": {
                 "display_name": "PSIONICS" if lang == 'en' else "PSIÓNICA",
-                "base_url": "/core-mechanics/psionics/",
+                "base_url": "/psionics/",
                 "section": "psionics"
             },
             "groups": search_groups

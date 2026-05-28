@@ -251,8 +251,7 @@ def generate_skills_html(data_list, indent_level=3, is_psionics=False, urls_map=
             url = urls_map.get(name_lower.replace(' ', '-')) if urls_map else None
         if not url:
             url = f"https://aaa.dimble.net/{fallback_path}/{name_lower.replace(' ', '-')}"
-        if "https://aaa.dimble.net/psionics/" in url:
-            url = url.replace("/psionics/", "/core-mechanics/psionics/")
+
 
         # Collect metadata for the worker
         skill_metadata_list.append({
@@ -304,8 +303,7 @@ def generate_skills_html(data_list, indent_level=3, is_psionics=False, urls_map=
             spec_url = urls_map.get(spec_name.lower()) if urls_map else None
             if not spec_url:
                 spec_url = f"{url}#{spec_name.lower().replace(' ', '-')}"
-            if "https://aaa.dimble.net/psionics/" in spec_url:
-                spec_url = spec_url.replace("/psionics/", "/core-mechanics/psionics/")
+
 
             # Collect metadata for the worker
             skill_metadata_list.append({
