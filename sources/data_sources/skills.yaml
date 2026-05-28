@@ -3539,6 +3539,15 @@ items:
                 ### Beneficios de Rango
                 ⊗ **Efecto aumentado:** Un Personaje recibe una bonificación **-1** en Rango 3, **-2** en Rango 6, **-3** en Rango 9 y **-4** en Rango 12 en ciertas pruebas de habilidad de Otros que pueden ser asistidas por esta especialidad.
         trained_only: false
+        rank_benefits:
+          - rank: 3
+            title: Increased Effect
+          - rank: 6
+            title: Increased Effect
+          - rank: 9
+            title: Increased Effect
+          - rank: 12
+            title: Increased Effect
       botany:
         attribute: INT
         cost: 3

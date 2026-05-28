@@ -2,6 +2,15 @@
 attribute: INT
 cost: 3
 url: /skills/life-science#biology
+rank_benefits:
+  - rank: 3
+    title: Increased Effect
+  - rank: 6
+    title: Increased Effect
+  - rank: 9
+    title: Increased Effect
+  - rank: 12
+    title: Increased Effect
 trained_only: false
 name: Biology
 ---
