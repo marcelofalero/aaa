@@ -86,13 +86,30 @@ on("chat:message", function(msg) {
             var dieName = '';
             if (rollStr && rollStr.trim() !== '0') {
                 dieName = rollStr.replace(/cs<0cf<0/g, '').trim();
+                var cleanDie = dieName.toLowerCase().replace(/\s+/g, '');
+                var matchFound = false;
                 
-                // Retrieve the next unused inline roll from the evaluated array
+                // Find an unused inline roll that matches this exact die type (e.g. "1d6" or "1d8")
                 for (var k = 0; k < msgObj.inlinerolls.length; k++) {
                     if (!usedIndices[k]) {
-                        sitVal = msgObj.inlinerolls[k].results.total;
-                        usedIndices[k] = true;
-                        break;
+                        var rollExprClean = msgObj.inlinerolls[k].expression.toLowerCase().replace(/\s+/g, '');
+                        if (rollExprClean.indexOf(cleanDie) !== -1) {
+                            sitVal = msgObj.inlinerolls[k].results.total;
+                            usedIndices[k] = true;
+                            matchFound = true;
+                            break;
+                        }
+                    }
+                }
+                
+                // Fallback if no exact die expression match was found
+                if (!matchFound) {
+                    for (var k = 0; k < msgObj.inlinerolls.length; k++) {
+                        if (!usedIndices[k]) {
+                            sitVal = msgObj.inlinerolls[k].results.total;
+                            usedIndices[k] = true;
+                            break;
+                        }
                     }
                 }
             }

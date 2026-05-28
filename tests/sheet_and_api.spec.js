@@ -531,5 +531,64 @@ test.describe('Alternity/aaa RPG Roll20 Automated Test Suite', () => {
             expect(finalOutput).toContain('{{status1=Ordinary}}');
             expect(finalOutput).toContain('{{status_class1=hit-ord}}');
         });
+
+        test('Should correctly pair multiple different situation dice (like 1d6 and 1d8) even if Roll20 returns them out-of-order in the array', () => {
+            const apiCode = loadApiScriptCode();
+            
+            let chatMessageListener = null;
+            let sendChatCalls = [];
+            
+            const apiContext = {
+                on: (event, callback) => {
+                    if (event === 'chat:message') chatMessageListener = callback;
+                },
+                sendChat: (who, content, callback) => {
+                    sendChatCalls.push({ who: who, content: content });
+                    if (callback) {
+                        callback([{
+                            type: 'api',
+                            inlinerolls: [
+                                {
+                                    expression: '1d20cs<1cf>20',
+                                    results: { total: 20 }
+                                },
+                                {
+                                    expression: '1d8cs<0cf<0',
+                                    results: { total: 8 } // d8 rolled 8, returned FIRST in the situation dice
+                                },
+                                {
+                                    expression: '1d6cs<0cf<0',
+                                    results: { total: 2 } // d6 rolled 2, returned SECOND in the situation dice
+                                }
+                            ]
+                        }]);
+                    }
+                },
+                log: () => {},
+                parseInt: parseInt,
+                Math: Math,
+                JSON: JSON
+            };
+            
+            vm.createContext(apiContext);
+            vm.runInContext(apiCode, apiContext);
+            
+            // Double action roll: Attack 1 wants 1d6, Attack 2 wants 1d8.
+            // Even though the array of rolls returns 1d8 first, it must pair the 1d6 name with the value 2, and 1d8 name with the value 8!
+            const command = '!aaa-roll Razor || Harpon Gun || Li/O || - || - || 16 || 8 || 4 || 2 || 1d6cs<0cf<0 || + || 1d8cs<0cf<0 || +';
+            chatMessageListener({
+                type: 'api',
+                content: command,
+                who: 'Razor'
+            });
+            
+            const finalOutput = sendChatCalls[1].content;
+            
+            // Attack 1: (20)[1d20] + (2)[1d6] = 22
+            expect(finalOutput).toContain('{{attack1=[[(20)[1d20] + (2)[1d6]]]}}');
+            
+            // Attack 2: (20)[1d20] + (8)[1d8] = 28
+            expect(finalOutput).toContain('{{attack2=[[(20)[1d20] + (8)[1d8]]]}}');
+        });
     });
 });
