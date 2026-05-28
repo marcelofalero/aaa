@@ -9,7 +9,7 @@ out_dir = "roll20_charsheet/initiative_cards"
 os.makedirs(out_dir, exist_ok=True)
 
 # Download Airstrike font from Dafont
-font_path = "airstrike.ttf"
+font_path = "airstrikegrad.ttf"
 if not os.path.exists(font_path):
     print("Downloading Airstrike font from Dafont...")
     url = "https://dl.dafont.com/dl/?f=airstrike"
@@ -18,8 +18,8 @@ if not os.path.exists(font_path):
         with urllib.request.urlopen(req) as response:
             zip_data = response.read()
         with zipfile.ZipFile(io.BytesIO(zip_data)) as z:
-            z.extract("airstrike.ttf", ".")
-        print("Successfully extracted airstrike.ttf!")
+            z.extract("airstrikegrad.ttf", ".")
+        print("Successfully extracted airstrikegrad.ttf!")
     except Exception as e:
         print(f"Failed to download Airstrike: {e}. Falling back to default.")
         font_path = None
