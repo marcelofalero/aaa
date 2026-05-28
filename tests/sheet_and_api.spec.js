@@ -129,6 +129,78 @@ test.describe('Alternity/aaa RPG Roll20 Automated Test Suite', () => {
             expect(macro1).not.toContain('First line\nSecond line');
             expect(macro1).not.toContain('|| With pipes');
         });
+
+        test('Should migrate legacy single-word specialty attributes to deconflicted IDs', () => {
+            const rawWorkerCode = loadSheetWorkerCode();
+            // Inject mock specialty mapping for the test
+            const mockMapping = '[{"oldId": "Dodge", "newId": "Acrobatics_Dodge"}, {"oldId": "Climb", "newId": "Athletics_Climb"}]';
+            const workerCode = rawWorkerCode.replace(
+                'const specialtiesToMigrate = /* <!-- SPECIALTY_MIGRATION_LIST_PLACEHOLDER --> */ [];',
+                `const specialtiesToMigrate = ${mockMapping};`
+            );
+            
+            let mockAttrs = {
+                'specialties_migrated': '0',
+                'DodgeRank': '3',
+                'Dodge_is_trained': '1',
+                'ClimbRank': '2',
+                'Climb_is_trained': '1',
+                'PsionicsRank': '4',
+                'Psionics_is_trained': '1',
+                'Acrobatics_DodgeRank': '0',
+                'Athletics_ClimbRank': '0',
+                'PsionicsKnowledgeRank': '0',
+                'PsionicsLawRank': '0',
+                'PsionicsLifeScienceRank': '0'
+            };
+            
+            let setAttrsVal = {};
+            let registeredListeners = [];
+            
+            const context = {
+                console: { log: () => {} },
+                parseInt: parseInt,
+                Math: Math,
+                on: (event, callback) => {
+                    if (event.includes('sheet:opened')) {
+                        registeredListeners.push(callback);
+                    }
+                },
+                getAttrs: (attrs, callback) => {
+                    const res = {};
+                    attrs.forEach(a => { res[a] = mockAttrs[a]; });
+                    callback(res);
+                },
+                setAttrs: (obj) => {
+                    Object.assign(setAttrsVal, obj);
+                },
+                getSectionIDs: (section, callback) => {
+                    callback([]);
+                },
+                getAlternityRollQuery: (s) => `?{Situation Modifier}`
+            };
+            
+            vm.createContext(context);
+            vm.runInContext(workerCode, context);
+            
+            // Trigger all sheet:opened events
+            expect(registeredListeners.length).toBeGreaterThan(0);
+            registeredListeners.forEach(cb => cb());
+            
+            expect(setAttrsVal).toMatchObject({
+                'Acrobatics_DodgeRank': 3,
+                'Acrobatics_Dodge_is_trained': '1',
+                'Athletics_ClimbRank': 2,
+                'Athletics_Climb_is_trained': '1',
+                'PsionicsKnowledgeRank': 4,
+                'PsionicsKnowledge_is_trained': '1',
+                'PsionicsLawRank': 4,
+                'PsionicsLaw_is_trained': '1',
+                'PsionicsLifeScienceRank': 4,
+                'PsionicsLifeScience_is_trained': '1',
+                'specialties_migrated': 1
+            });
+        });
     });
 
     test.describe('2. Roll20 API Script Roll Evaluation Tests', () => {

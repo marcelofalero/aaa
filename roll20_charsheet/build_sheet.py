@@ -507,6 +507,22 @@ def build():
         if filename == 'header.html':
             content = content.replace('<!-- SKILL_MACRO_WORKERS_PLACEHOLDER -->', skill_worker_code)
             
+            # Generate specialty skills migration list
+            specialties_to_migrate = []
+            for s in all_skill_ids:
+                if s['type'] == 'specialty':
+                    # Skip Psionics specialty since it's handled separately
+                    if s['name'] == 'Psionics':
+                        continue
+                    old_id = clean_id(s['name'])
+                    new_id = s['id']
+                    specialties_to_migrate.append({
+                        'oldId': old_id,
+                        'newId': new_id
+                    })
+            migration_list_js = json.dumps(specialties_to_migrate)
+            content = content.replace('/* <!-- SPECIALTY_MIGRATION_LIST_PLACEHOLDER --> */ []', migration_list_js)
+            
         content = content.replace('<!-- ROLL_QUERY_DEFAULT_0 -->', roll_query_0)
         content = content.replace('<!-- ROLL_QUERY_DEFAULT_1 -->', roll_query_1)
             

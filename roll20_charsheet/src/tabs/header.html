@@ -80,6 +80,94 @@ on('sheet:opened', function() {
 	});
 });
 
+/* ===== SPECIALTY SKILLS DATA MIGRATION ===== */
+on("sheet:opened", function() {
+	getAttrs(["specialties_migrated"], function(status) {
+		if (parseInt(status.specialties_migrated) === 1) {
+			return;
+		}
+		
+		// In unit tests, this parses as an empty array [] since the placeholder is commented out.
+		// In production, build_sheet.py replaces this comment and array with the actual JSON map.
+		const specialtiesToMigrate = /* <!-- SPECIALTY_MIGRATION_LIST_PLACEHOLDER --> */ [];
+		
+		// Add Psionics explicitly since it maps to multiple targets
+		const psionicsTargets = ["PsionicsKnowledge", "PsionicsLaw", "PsionicsLifeScience"];
+		
+		// Build list of all attributes to fetch
+		const oldAttrs = [];
+		const newAttrs = [];
+		
+		specialtiesToMigrate.forEach(function(spec) {
+			oldAttrs.push(spec.oldId + "Rank", spec.oldId + "_is_trained");
+			newAttrs.push(spec.newId + "Rank", spec.newId + "_is_trained");
+		});
+		
+		oldAttrs.push("PsionicsRank", "Psionics_is_trained");
+		psionicsTargets.forEach(function(target) {
+			newAttrs.push(target + "Rank", target + "_is_trained");
+		});
+		
+		getAttrs([...oldAttrs, ...newAttrs], function(values) {
+			const update = {};
+			let migratedCount = 0;
+			
+			// Migrate standard specialties
+			specialtiesToMigrate.forEach(function(spec) {
+				const oldRankKey = spec.oldId + "Rank";
+				const oldRankVal = values[oldRankKey] !== undefined ? values[oldRankKey] : values[oldRankKey.toLowerCase()];
+				const oldRank = parseInt(oldRankVal) || 0;
+				
+				const oldTrainedKey = spec.oldId + "_is_trained";
+				const oldTrainedVal = values[oldTrainedKey] !== undefined ? values[oldTrainedKey] : values[oldTrainedKey.toLowerCase()];
+				
+				const newRankKey = spec.newId + "Rank";
+				const newRankVal = values[newRankKey] !== undefined ? values[newRankKey] : values[newRankKey.toLowerCase()];
+				const newRank = parseInt(newRankVal) || 0;
+				
+				if (oldRank > 0 && newRank === 0) {
+					update[newRankKey] = oldRank;
+					if (oldTrainedVal !== undefined) {
+						update[spec.newId + "_is_trained"] = oldTrainedVal;
+					}
+					migratedCount++;
+				}
+			});
+			
+			// Migrate Psionics
+			const oldPsionicsRankVal = values["PsionicsRank"] !== undefined ? values["PsionicsRank"] : values["psionicsrank"];
+			const oldPsionicsRank = parseInt(oldPsionicsRankVal) || 0;
+			const oldPsionicsTrainedVal = values["Psionics_is_trained"] !== undefined ? values["Psionics_is_trained"] : values["psionics_is_trained"];
+			
+			if (oldPsionicsRank > 0) {
+				psionicsTargets.forEach(function(target) {
+					const newRankKey = target + "Rank";
+					const newRankVal = values[newRankKey] !== undefined ? values[newRankKey] : values[newRankKey.toLowerCase()];
+					const newRank = parseInt(newRankVal) || 0;
+					if (newRank === 0) {
+						update[newRankKey] = oldPsionicsRank;
+						if (oldPsionicsTrainedVal !== undefined) {
+							update[target + "_is_trained"] = oldPsionicsTrainedVal;
+						}
+						migratedCount++;
+					}
+				});
+			}
+			
+			// Always set migration status to 1 so this doesn't run again
+			update["specialties_migrated"] = 1;
+			
+			if (migratedCount > 0) {
+				console.log("Migrating " + migratedCount + " specialty skill values to new deconflicted IDs:", update);
+				setAttrs(update);
+			} else {
+				console.log("No specialty skill values needed migration.");
+				setAttrs({ specialties_migrated: 1 });
+			}
+		});
+	});
+});
+
 /* ===== SUCCESS SCORE AUTO-CALCULATION ===== */
 const attributes = ['Strength', 'Dexterity', 'Constitution', 'Intelligence', 'Will', 'Personality'];
 
