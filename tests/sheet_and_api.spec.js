@@ -666,9 +666,9 @@ test.describe('Alternity/aaa RPG Roll20 Automated Test Suite', () => {
             const parsedTracker = JSON.parse(trackerData);
             expect(parsedTracker).toEqual([
                 { id: 'old-token', pr: 'Marginal', custom: '' },
-                { id: 'token-123', pr: 'Good', custom: '' },
-                { id: 'token-123', pr: 'Ordinary', custom: '' },
-                { id: 'token-123', pr: 'Marginal', custom: '' }
+                { id: 'token-123', pr: 3, custom: '' },
+                { id: 'token-123', pr: 2, custom: '' },
+                { id: 'token-123', pr: 1, custom: '' }
             ]);
 
             // Re-roll as Ordinary Success (d20 = 12, sit = 1, total = 13 <= 13)
@@ -686,8 +686,8 @@ test.describe('Alternity/aaa RPG Roll20 Automated Test Suite', () => {
             const reRolledTracker = JSON.parse(trackerData);
             expect(reRolledTracker).toEqual([
                 { id: 'old-token', pr: 'Marginal', custom: '' },
-                { id: 'token-123', pr: 'Ordinary', custom: '' },
-                { id: 'token-123', pr: 'Marginal', custom: '' }
+                { id: 'token-123', pr: 2, custom: '' },
+                { id: 'token-123', pr: 1, custom: '' }
             ]);
 
             // Roll above Ordinary score (d20 = 15, sit = 1, total = 16 > 13)
@@ -705,7 +705,7 @@ test.describe('Alternity/aaa RPG Roll20 Automated Test Suite', () => {
             const marginalTracker = JSON.parse(trackerData);
             expect(marginalTracker).toEqual([
                 { id: 'old-token', pr: 'Marginal', custom: '' },
-                { id: 'token-123', pr: 'Marginal', custom: '' }
+                { id: 'token-123', pr: 1, custom: '' }
             ]);
         });
     });

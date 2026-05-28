@@ -60,13 +60,27 @@ on("chat:message", function(msg) {
         
         var phases = [];
         if (successLevel === "Amazing") {
-            phases = ["Amazing", "Good", "Ordinary", "Marginal"];
+            phases = [
+                { name: "Amazing", val: 4 },
+                { name: "Good", val: 3 },
+                { name: "Ordinary", val: 2 },
+                { name: "Marginal", val: 1 }
+            ];
         } else if (successLevel === "Good") {
-            phases = ["Good", "Ordinary", "Marginal"];
+            phases = [
+                { name: "Good", val: 3 },
+                { name: "Ordinary", val: 2 },
+                { name: "Marginal", val: 1 }
+            ];
         } else if (successLevel === "Ordinary") {
-            phases = ["Ordinary", "Marginal"];
+            phases = [
+                { name: "Ordinary", val: 2 },
+                { name: "Marginal", val: 1 }
+            ];
         } else if (successLevel === "Marginal") {
-            phases = ["Marginal"];
+            phases = [
+                { name: "Marginal", val: 1 }
+            ];
         }
         
         // Add to Turn Tracker if a valid token is found
@@ -106,17 +120,18 @@ on("chat:message", function(msg) {
                 return turn.id !== tokenId;
             });
             
-            // Push each phase as a separate entry
+            // Push each phase as a separate entry (Roll20 pr must be numeric)
             phases.forEach(function(phase) {
                 turnorder.push({
                     id: tokenId,
-                    pr: phase,
+                    pr: phase.val,
                     custom: ""
                 });
             });
             
             Campaign().set("turnorder", JSON.stringify(turnorder));
-            trackerStatusMsg = "<br>Added to Turn Tracker for phases: **" + phases.join(", ") + "**";
+            var phaseNames = phases.map(function(p) { return p.name; });
+            trackerStatusMsg = "<br>Added to Turn Tracker for phases: **" + phaseNames.join(", ") + "**";
         } else if (phases.length > 0) {
             trackerStatusMsg = "<br>⚠️ **Warning:** Could not find a map token representing this character. Please ensure you have a token on the map, and its **'Represents Character'** property is set to **" + charName + "**!";
         }
