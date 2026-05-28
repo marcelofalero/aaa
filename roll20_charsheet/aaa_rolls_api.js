@@ -48,8 +48,6 @@ on("chat:message", function(msg) {
             return;
         }
         
-        // Whispering debug info to GM
-        sendChat("aaa API Debug", "/w gm [DEBUG] rollExpr: " + rollExpr + " | inlinerolls: " + JSON.stringify(msgObj.inlinerolls) + " | parts: " + JSON.stringify(parts));
         
         var usedIndices = {};
         var d20 = 10;

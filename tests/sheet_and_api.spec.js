@@ -182,13 +182,10 @@ test.describe('Alternity/aaa RPG Roll20 Automated Test Suite', () => {
                 who: 'Razor'
             });
             
-            // First call should be to evaluate rolls
-            expect(sendChatCalls.length).toBe(3); // debug whisper, GM whisper, final output
+            // First call is evaluation roll, second is final output
+            expect(sendChatCalls.length).toBe(2);
             
-            const debugWhisper = sendChatCalls[1];
-            expect(debugWhisper.who).toBe('aaa API Debug');
-            
-            const finalOutput = sendChatCalls[2];
+            const finalOutput = sendChatCalls[1];
             expect(finalOutput.who).toBe('Razor');
             
             // Verify final styled layout and exact values
@@ -257,7 +254,7 @@ test.describe('Alternity/aaa RPG Roll20 Automated Test Suite', () => {
                 content: command
             });
             
-            const finalOutput = sendChatCalls[2].content;
+            const finalOutput = sendChatCalls[1].content;
             expect(finalOutput).toContain('{{dicepool=[[15]]}}');
             expect(finalOutput).toContain('{{attack1=[[(15)[1d20] + (3)[1d6]]]}}');
         });
@@ -314,7 +311,7 @@ test.describe('Alternity/aaa RPG Roll20 Automated Test Suite', () => {
                 content: command
             });
             
-            const finalOutput = sendChatCalls[2].content;
+            const finalOutput = sendChatCalls[1].content;
             expect(finalOutput).toContain('{{dicepool=[[8]]}}');
             
             // Attack 1: (8)[1d20] + (5)[1d6]
@@ -372,7 +369,7 @@ test.describe('Alternity/aaa RPG Roll20 Automated Test Suite', () => {
                 who: 'Razor'
             });
             
-            const finalOutput = sendChatCalls[2].content;
+            const finalOutput = sendChatCalls[1].content;
             
             // The d20 roll MUST still be resolved as 11, and the d6 roll as 4
             expect(finalOutput).toContain('{{dicepool=[[11]]}}');
