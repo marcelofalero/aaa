@@ -16,7 +16,7 @@ This broad skill provides a character with training in survival across wildernes
 - **Amazing:** The character becomes so familiar with the locale that survival is no longer an issue unless the situation changes.
 
 ### Survival Situation Modifiers
-The type of terrain or environment where the character is located can provide a modifier to the skill check: 
+The type of terrain or environment where the character is located can provide a modifier to the skill check:
 
 | Terrain / Situation | Modifier |
 | :--- | :--- |

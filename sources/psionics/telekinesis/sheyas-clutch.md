@@ -4,6 +4,11 @@ cost: 5
 url: /psionics/telekinesis/#sheyas-clutch
 trained_only: true
 alien_only: true
+rank_benefits:
+- rank: 5
+  title: Increased Damage
+- rank: 9
+  title: Increased Damage
 name: Sheya's Clutch
 ---
 

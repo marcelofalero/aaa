@@ -4,10 +4,16 @@ cost: 3
 url: /skills/modern-ranged-weapons#pistol
 trained_only: false
 rank_benefits:
+- rank: 1
+  title: Pistol CQB
 - rank: 3
   title: Quick Draw
 - rank: 4
-  title: Quick Draw
+  title: Lightning Draw
+- rank: 6
+  title: Dual-Wield Coordination
+- rank: 9
+  title: Akimbo Mastery
 name: Pistol
 ---
 

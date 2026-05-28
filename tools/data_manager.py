@@ -532,7 +532,7 @@ def main():
             yaml_path=str(root_dir / 'sources/data_sources/skills.yaml'),
             review_dir=str(root_dir / 'sources/skills'),
             folder_mapping={},
-            metadata_keys=['attribute', 'cost', 'url', 'category', 'trained_only', 'untrained'],
+            metadata_keys=['attribute', 'cost', 'url', 'category', 'trained_only', 'untrained', 'rank_benefits'],
         ),
 
         'psionics': DomainConfig(

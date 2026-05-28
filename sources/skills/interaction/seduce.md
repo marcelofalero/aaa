@@ -6,9 +6,9 @@ trained_only: false
 name: Seduce
 ---
 
-The seduce skill represents the ability to entice or beguile another character through the use of opening lines, witty exchanges, playful conversation, and intimate behavior. To seduce another character is to manipulate that character’s emotions through planned exchanges. 
+The seduce skill represents the ability to entice or beguile another character through the use of opening lines, witty exchanges, playful conversation, and intimate behavior. To seduce another character is to manipulate that character’s emotions through planned exchanges.
 
-The final goal of seduction is to gain the seduced character's trust or cooperation through romantic overtures. To actually accomplish the seduction, the character must achieve an **Ordinary** result or better. 
+The final goal of seduction is to gain the seduced character's trust or cooperation through romantic overtures. To actually accomplish the seduction, the character must achieve an **Ordinary** result or better.
 
 ### Seduction Effects
 A seduced character won't stay that way forever. How long the character remains seduced depends on the result of the check:

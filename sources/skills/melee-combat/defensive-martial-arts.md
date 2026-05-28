@@ -3,6 +3,21 @@ attribute: STR
 cost: 3
 url: /skills/melee-combat#defensive-martial-arts
 trained_only: false
+rank_benefits:
+- rank: 1
+  title: Base Damage
+- rank: 3
+  title: Resistance Modifier
+- rank: 7
+  title: Resistance Modifier
+- rank: 11
+  title: Resistance Modifier
+- rank: 4
+  title: Counterstrike
+- rank: 8
+  title: Redirection of Force
+- rank: 12
+  title: Formless Master
 name: Defensive Martial Arts
 ---
 

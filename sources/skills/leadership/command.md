@@ -3,7 +3,15 @@ attribute: PER
 cost: 4
 url: /skills/leadership#command
 trained_only: false
-rank_benefits: []
+rank_benefits:
+- rank: 3
+  title: Increased Effect
+- rank: 6
+  title: Increased Effect
+- rank: 9
+  title: Increased Effect
+- rank: 12
+  title: Increased Effect
 name: Command
 ---
 

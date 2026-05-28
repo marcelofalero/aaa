@@ -8,12 +8,12 @@ rank_benefits:
   title: Action Benefit
 - rank: 4
   title: Resistance Modifier
-- rank: 7
-  title: Reaction Dodge
 - rank: 8
   title: Resistance Modifier
 - rank: 12
   title: Resistance Modifier
+- rank: 7
+  title: Reaction Dodge
 name: Dodge
 ---
 

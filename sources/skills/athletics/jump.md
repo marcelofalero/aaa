@@ -3,6 +3,27 @@ attribute: STR
 cost: 1
 url: /skills/athletics#jump
 trained_only: false
+rank_benefits:
+- rank: 3
+  title: Increased Running Distance
+- rank: 6
+  title: Increased Running Distance
+- rank: 9
+  title: Increased Running Distance
+- rank: 12
+  title: Increased Running Distance
+- rank: 4
+  title: Increased Standing Distance
+- rank: 7
+  title: Increased Standing Distance
+- rank: 10
+  title: Increased Standing Distance
+- rank: 5
+  title: Increased Vertical Distance
+- rank: 8
+  title: Increased Vertical Distance
+- rank: 11
+  title: Increased Vertical Distance
 name: Jump
 ---
 

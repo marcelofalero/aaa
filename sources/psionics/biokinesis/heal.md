@@ -5,9 +5,11 @@ url: /psionics/biokinesis/#heal
 trained_only: true
 rank_benefits:
 - rank: 4
-  title: Treat Poison
+  title: Treating Poison
 - rank: 6
-  title: Heal Mortal
+  title: Healing Mortal Damage
+- rank: 8
+  title: Improved Effect
 - rank: 8
   title: Laying On Hands
 - rank: 12
@@ -27,7 +29,7 @@ By concentrating, a character using this skill can heal wounds or disease. The c
 For disease, the following results apply:
 - **Ordinary:** reduce the degree of illness by one grade (from Good to Ordinary, for instance).
 - **Good:** reduce by two grades.
-- **Amazing:** reduce by three grades. 
+- **Amazing:** reduce by three grades.
 
 Diseases reduced below Marginal are considered cured.
 

@@ -3,6 +3,17 @@ attribute: STR
 cost: 2
 url: /skills/athletics#throw
 trained_only: false
+rank_benefits:
+- rank: 3
+  title: Trajectory Mastery
+- rank: 6
+  title: Trajectory Mastery
+- rank: 9
+  title: Trajectory Mastery
+- rank: 12
+  title: Trajectory Mastery
+- rank: 12
+  title: Deflect
 name: Throw
 ---
 

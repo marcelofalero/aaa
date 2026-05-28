@@ -1,5 +1,4 @@
 ---
-name: Transfer Vitality
 attribute: CON
 cost: 2
 url: /psionics/biokinesis/#transfer-vitality
@@ -12,6 +11,7 @@ rank_benefits:
 - rank: 12
   title: Systemic Overdrive
 extended_duration: false
+name: Transfer Vitality
 ---
 
 By establishing physical contact, the psion forces a parasitic bio-electric link that violently siphons biological energy from the target. The target suffers immediate metabolic collapse while the psion experiences a temporary surge in biological efficiency.
@@ -25,7 +25,7 @@ By establishing physical contact, the psion forces a parasitic bio-electric link
 | **Good** | +2 step penalty. | -2 step bonus. |
 | **Amazing** | +3 step penalty. | -3 step bonus. |
 
-The effect lasts until the end of the next round. 
+The effect lasts until the end of the next round.
 
 ### Rank Benefits
 **Rank 6 [Symbiotic Absorption]**, the psion can choose to convert the siphoned energy into raw regenerative material. Instead of taking the step bonus for themselves, the psion can heal:
