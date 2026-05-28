@@ -188,10 +188,10 @@ on("chat:message", function(msg) {
                     
                     var cardGraphic = createObj("graphic", {
                         imgsrc: cleanImgSrc,
-                        left: -1000 - offset, // Far off-screen to keep the tabletop clean!
-                        top: -1000,
-                        width: 49,
-                        height: 70,
+                        left: 10 + (idx * 5), // Place at the very top-left edge of the canvas to prevent culling!
+                        top: 10,
+                        width: 1,  // Microscopic 1px size so it is completely invisible on the map tabletop
+                        height: 1, // Microscopic 1px size so it is completely invisible on the map tabletop
                         _pageid: activePageId,
                         layer: "objects",
                         name: charName + " (" + phase.name + ")"
