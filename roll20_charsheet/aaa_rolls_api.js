@@ -179,20 +179,17 @@ on("chat:message", function(msg) {
                     }
                 }
                 
-                // 1. Spawn custom card graphic on map next to token
+                // 1. Spawn custom card graphic off-screen so it does not clutter the map tabletop
                 var spawnedCardId = null;
                 if (card && chosenToken && typeof createObj !== 'undefined') {
                     var avatarUrl = card.get("avatar") || "";
                     var cleanImgSrc = avatarUrl.replace("max", "thumb").replace("med", "thumb");
                     var offset = (idx + 1) * 70; // Cascade offset to the right
                     
-                    var tokenLeft = typeof chosenToken.get === "function" ? chosenToken.get("left") : (chosenToken.left || 100);
-                    var tokenTop = typeof chosenToken.get === "function" ? chosenToken.get("top") : (chosenToken.top || 100);
-                    
                     var cardGraphic = createObj("graphic", {
                         imgsrc: cleanImgSrc,
-                        left: tokenLeft + offset,
-                        top: tokenTop,
+                        left: -1000 - offset, // Far off-screen to keep the tabletop clean!
+                        top: -1000,
                         width: 49,
                         height: 70,
                         pageid: activePageId,
