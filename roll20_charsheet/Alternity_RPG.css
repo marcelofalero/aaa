@@ -1137,7 +1137,7 @@ button[type="roll"]:hover {
     text-decoration: underline !important;
 }
 
-.sheet-trained-check-hidden:checked ~ .sheet-skill-group-box {
+.sheet-trained-check-hidden:checked + .sheet-skill-group-box {
     border-color: var(--color-accent-yellow) !important;
 }
 
