@@ -85,15 +85,18 @@ on("chat:message", function(msg) {
         
         // Add to Turn Tracker if a valid token is found
         var tokenId = null;
+        var chosenToken = null;
         if (msg.selected && msg.selected.length > 0) {
             tokenId = msg.selected[0]._id || msg.selected[0].id;
+            if (typeof findObjs !== 'undefined') {
+                chosenToken = findObjs({ _type: "graphic", id: tokenId })[0];
+            }
         } else if (charId && typeof findObjs !== 'undefined') {
             var tokens = findObjs({
                 _type: "graphic",
                 represents: charId
             });
             if (tokens && tokens.length > 0) {
-                var chosenToken = null;
                 if (typeof Campaign !== 'undefined') {
                     var playerPageId = Campaign().get("playerpageid");
                     for (var i = 0; i < tokens.length; i++) {
@@ -115,23 +118,90 @@ on("chat:message", function(msg) {
         if (tokenId && phases.length > 0 && typeof Campaign !== 'undefined') {
             var turnorder = JSON.parse(Campaign().get("turnorder") || "[]");
             
-            // Clean up any existing turn entries for this token
-            turnorder = turnorder.filter(function(turn) {
-                return turn.id !== tokenId;
+            // Clean up any existing turn entries for this token,
+            // and delete any previously spawned card graphics on the map for this character
+            var cleanTurnorder = [];
+            turnorder.forEach(function(turn) {
+                if (turn.id === tokenId) {
+                    return; // Skip and remove character token directly
+                }
+                // Check if this turn is a card graphic representing a phase card for this character
+                var obj = typeof findObjs !== 'undefined' ? findObjs({ _type: "graphic", id: turn.id })[0] : null;
+                if (obj && typeof obj.get === "function" && obj.get("_subtype") === "card") {
+                    var objName = obj.get("name") || "";
+                    if (objName.indexOf(charName + " (") === 0) {
+                        if (typeof obj.remove === "function") {
+                            obj.remove();
+                        }
+                        return; // Skip and delete card graphic
+                    }
+                }
+                cleanTurnorder.push(turn);
             });
+            turnorder = cleanTurnorder;
+            
+            // Check if "Alternity Phases" deck exists in the campaign
+            var deck = typeof findObjs !== 'undefined' ? findObjs({ _type: "deck", name: "Alternity Phases" })[0] : null;
+            var cards = deck && typeof findObjs !== 'undefined' ? findObjs({ _type: "card", _deckid: deck.id }) : [];
             
             // Push each phase as a separate entry (Roll20 pr must be numeric)
-            phases.forEach(function(phase) {
-                turnorder.push({
-                    id: tokenId,
-                    pr: phase.val,
-                    custom: ""
-                });
+            phases.forEach(function(phase, idx) {
+                var card = null;
+                if (cards.length > 0) {
+                    for (var cIdx = 0; cIdx < cards.length; cIdx++) {
+                        if (cards[cIdx].get("name").toLowerCase() === phase.name.toLowerCase()) {
+                            card = cards[cIdx];
+                            break;
+                        }
+                    }
+                }
+                
+                if (card && chosenToken && typeof createObj !== 'undefined') {
+                    // Spawn custom card graphic on map next to token
+                    var avatarUrl = card.get("avatar") || "";
+                    var cleanImgSrc = avatarUrl.replace("max", "thumb").replace("med", "thumb");
+                    var offset = (idx + 1) * 70; // Cascade offset to the right
+                    
+                    var tokenLeft = typeof chosenToken.get === "function" ? chosenToken.get("left") : (chosenToken.left || 100);
+                    var tokenTop = typeof chosenToken.get === "function" ? chosenToken.get("top") : (chosenToken.top || 100);
+                    var tokenPage = typeof chosenToken.get === "function" ? chosenToken.get("_pageid") : (chosenToken._pageid || "");
+                    
+                    var cardGraphic = createObj("graphic", {
+                        _subtype: "card",
+                        _cardid: card.id,
+                        imgsrc: cleanImgSrc,
+                        left: tokenLeft + offset,
+                        top: tokenTop,
+                        width: 49,
+                        height: 70,
+                        _pageid: tokenPage,
+                        layer: "objects",
+                        name: charName + " (" + phase.name + ")"
+                    });
+                    
+                    if (cardGraphic) {
+                        turnorder.push({
+                            id: cardGraphic.id || cardGraphic.get("id"),
+                            pr: phase.val,
+                            custom: ""
+                        });
+                    }
+                } else {
+                    // Fallback to numeric priority on character's direct token
+                    turnorder.push({
+                        id: tokenId,
+                        pr: phase.val,
+                        custom: ""
+                    });
+                }
             });
             
             Campaign().set("turnorder", JSON.stringify(turnorder));
             var phaseNames = phases.map(function(p) { return p.name; });
             trackerStatusMsg = "<br>Added to Turn Tracker for phases: **" + phaseNames.join(", ") + "**";
+            if (deck && cards.length > 0) {
+                trackerStatusMsg += "<br>*(Using card graphics from 'Alternity Phases' deck!)*";
+            }
         } else if (phases.length > 0) {
             trackerStatusMsg = "<br>⚠️ **Warning:** Could not find a map token representing this character. Please ensure you have a token on the map, and its **'Represents Character'** property is set to **" + charName + "**!";
         }
