@@ -74,6 +74,9 @@ on("chat:message", function(msg) {
         
         // 2. Assign the remaining situation dice sequentially to the unused inline rolls
         var attackRollExprs = {};
+        var attackStatuses = {};
+        var attackStatusClasses = {};
+        
         for (var i = 1; i <= mode; i++) {
             var argIndex = 7 + (i * 2);
             var rollStr = parts[argIndex];
@@ -99,6 +102,50 @@ on("chat:message", function(msg) {
             } else {
                 attackRollExprs[i] = "(" + d20 + ")[1d20]";
             }
+            
+            // Calculate actual total
+            var total = d20;
+            if (dieName && dieName !== '0') {
+                total = (sign === '+') ? (d20 + sitVal) : (d20 - sitVal);
+            }
+            
+            // Determine success level with full Alternity rules
+            var status = "";
+            var statusClass = "";
+            
+            if (d20 === 20) {
+                status = "Critical Failure";
+                statusClass = "miss";
+            } else if (d20 === 1) {
+                // Natural 1 is always a success (Ordinary at worst)
+                if (total <= scoreA) {
+                    status = "Amazing";
+                    statusClass = "hit-ama";
+                } else if (total <= scoreG) {
+                    status = "Good";
+                    statusClass = "hit-goo";
+                } else {
+                    status = "Ordinary";
+                    statusClass = "hit-ord";
+                }
+            } else {
+                if (total <= scoreA) {
+                    status = "Amazing";
+                    statusClass = "hit-ama";
+                } else if (total <= scoreG) {
+                    status = "Good";
+                    statusClass = "hit-goo";
+                } else if (total <= scoreO) {
+                    status = "Ordinary";
+                    statusClass = "hit-ord";
+                } else {
+                    status = "(Miss)";
+                    statusClass = "miss";
+                }
+            }
+            
+            attackStatuses[i] = status;
+            attackStatusClasses[i] = statusClass;
         }
         
         // Build and output the message styled with our premium HTML template
@@ -119,6 +166,8 @@ on("chat:message", function(msg) {
             output += " {{amazing" + i + "=[[" + scoreA + "]]}}";
             output += " {{amazing" + i + "_p1=[[" + (scoreA + 1) + "]]}}";
             output += " {{good" + i + "_p1=[[" + (scoreG + 1) + "]]}}";
+            output += " {{status" + i + "=" + attackStatuses[i] + "}}";
+            output += " {{status_class" + i + "=" + attackStatusClasses[i] + "}}";
         }
         
         // Send to chat using the original sender's identity

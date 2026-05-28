@@ -379,5 +379,157 @@ test.describe('Alternity/aaa RPG Roll20 Automated Test Suite', () => {
             expect(finalOutput).not.toContain('(4)[1d20]');
             expect(finalOutput).not.toContain('(11)[1d6]');
         });
+
+        test('Should evaluate roll <= amazing score as Amazing success (including 0 and negatives)', () => {
+            const apiCode = loadApiScriptCode();
+            
+            let chatMessageListener = null;
+            let sendChatCalls = [];
+            
+            const apiContext = {
+                on: (event, callback) => {
+                    if (event === 'chat:message') chatMessageListener = callback;
+                },
+                sendChat: (who, content, callback) => {
+                    sendChatCalls.push({ who: who, content: content });
+                    if (callback) {
+                        callback([{
+                            type: 'api',
+                            inlinerolls: [
+                                {
+                                    expression: '1d20cs<1cf>20',
+                                    results: { total: 4 }
+                                },
+                                {
+                                    expression: '1d6cs<0cf<0',
+                                    results: { total: 4 }
+                                }
+                            ]
+                        }]);
+                    }
+                },
+                log: () => {},
+                parseInt: parseInt,
+                Math: Math,
+                JSON: JSON
+            };
+            
+            vm.createContext(apiContext);
+            vm.runInContext(apiCode, apiContext);
+            
+            // Score amazing is 4. Roll is 1d20 - 1d6.
+            // total = 4 - 4 = 0. Since 0 <= 4, it should be Amazing success!
+            const command = '!aaa-roll Razor || Harpon Gun || Li/O || - || - || 16 || 8 || 4 || 1 || 1d6cs<0cf<0 || -';
+            chatMessageListener({
+                type: 'api',
+                content: command,
+                who: 'Razor'
+            });
+            
+            const finalOutput = sendChatCalls[1].content;
+            expect(finalOutput).toContain('{{status1=Amazing}}');
+            expect(finalOutput).toContain('{{status_class1=hit-ama}}');
+        });
+
+        test('Should evaluate natural 20 as Critical Failure regardless of total sum', () => {
+            const apiCode = loadApiScriptCode();
+            
+            let chatMessageListener = null;
+            let sendChatCalls = [];
+            
+            const apiContext = {
+                on: (event, callback) => {
+                    if (event === 'chat:message') chatMessageListener = callback;
+                },
+                sendChat: (who, content, callback) => {
+                    sendChatCalls.push({ who: who, content: content });
+                    if (callback) {
+                        callback([{
+                            type: 'api',
+                            inlinerolls: [
+                                {
+                                    expression: '1d20cs<1cf>20',
+                                    results: { total: 20 }
+                                },
+                                {
+                                    expression: '1d6cs<0cf<0',
+                                    results: { total: 1 }
+                                }
+                            ]
+                        }]);
+                    }
+                },
+                log: () => {},
+                parseInt: parseInt,
+                Math: Math,
+                JSON: JSON
+            };
+            
+            vm.createContext(apiContext);
+            vm.runInContext(apiCode, apiContext);
+            
+            // Natural 20, minus 1 d6 = 19. Even though 19 <= 25, it must be a Critical Failure because d20 rolled 20.
+            const command = '!aaa-roll Razor || Harpon Gun || Li/O || - || - || 25 || 12 || 6 || 1 || 1d6cs<0cf<0 || -';
+            chatMessageListener({
+                type: 'api',
+                content: command,
+                who: 'Razor'
+            });
+            
+            const finalOutput = sendChatCalls[1].content;
+            expect(finalOutput).toContain('{{status1=Critical Failure}}');
+            expect(finalOutput).toContain('{{status_class1=miss}}');
+        });
+
+        test('Should evaluate natural 1 as at least Ordinary success even if total adds to more than skill score', () => {
+            const apiCode = loadApiScriptCode();
+            
+            let chatMessageListener = null;
+            let sendChatCalls = [];
+            
+            const apiContext = {
+                on: (event, callback) => {
+                    if (event === 'chat:message') chatMessageListener = callback;
+                },
+                sendChat: (who, content, callback) => {
+                    sendChatCalls.push({ who: who, content: content });
+                    if (callback) {
+                        callback([{
+                            type: 'api',
+                            inlinerolls: [
+                                {
+                                    expression: '1d20cs<1cf>20',
+                                    results: { total: 1 }
+                                },
+                                {
+                                    expression: '1d20cs<0cf<0',
+                                    results: { total: 15 } // huge positive modifier
+                                }
+                            ]
+                        }]);
+                    }
+                },
+                log: () => {},
+                parseInt: parseInt,
+                Math: Math,
+                JSON: JSON
+            };
+            
+            vm.createContext(apiContext);
+            vm.runInContext(apiCode, apiContext);
+            
+            // d20 rolled 1 (natural 1). Plus 15 = 16. The ordinary score is 12.
+            // 16 > 12, but because it is a natural 1, it must be an Ordinary success!
+            const command = '!aaa-roll Razor || Harpon Gun || Li/O || - || - || 12 || 6 || 3 || 1 || 1d20cs<0cf<0 || +';
+            chatMessageListener({
+                type: 'api',
+                content: command,
+                who: 'Razor'
+            });
+            
+            const finalOutput = sendChatCalls[1].content;
+            expect(finalOutput).toContain('{{status1=Ordinary}}');
+            expect(finalOutput).toContain('{{status_class1=hit-ord}}');
+        });
     });
 });

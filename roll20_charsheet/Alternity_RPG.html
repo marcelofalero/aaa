@@ -6080,18 +6080,23 @@ on('change:repeating_starshipweapons:StarshipWeaponName change:repeating_starshi
 				<span class="sheet-template-result">{{attack1}}</span>
 				
 				<div class="sheet-template-action">
-					{{#rollBetween() attack1 1 amazing1}}
-						<span class="sheet-template-hit-ama">Amazing</span>
-					{{/rollBetween() attack1 1 amazing1}}
-					{{#rollBetween() attack1 amazing1_p1 good1}}
-						<span class="sheet-template-hit-goo">Good</span>
-					{{/rollBetween() attack1 amazing1_p1 good1}}
-					{{#rollBetween() attack1 good1_p1 ordinary1}}
-						<span class="sheet-template-hit-ord">Ordinary</span>
-					{{/rollBetween() attack1 good1_p1 ordinary1}}
-					{{#rollGreater() attack1 ordinary1}}
-						<span class="sheet-template-miss">(Miss)</span>
-					{{/rollGreater() attack1 ordinary1}}
+					{{#status1}}
+						<span class="sheet-template-{{status_class1}}">{{status1}}</span>
+					{{/status1}}
+					{{^status1}}
+						{{#rollBetween() attack1 -999 amazing1}}
+							<span class="sheet-template-hit-ama">Amazing</span>
+						{{/rollBetween() attack1 -999 amazing1}}
+						{{#rollBetween() attack1 amazing1_p1 good1}}
+							<span class="sheet-template-hit-goo">Good</span>
+						{{/rollBetween() attack1 amazing1_p1 good1}}
+						{{#rollBetween() attack1 good1_p1 ordinary1}}
+							<span class="sheet-template-hit-ord">Ordinary</span>
+						{{/rollBetween() attack1 good1_p1 ordinary1}}
+						{{#rollGreater() attack1 ordinary1}}
+							<span class="sheet-template-miss">(Miss)</span>
+						{{/rollGreater() attack1 ordinary1}}
+					{{/status1}}
 				</div>
 			</div>
 			{{/attack1}}
@@ -6102,18 +6107,23 @@ on('change:repeating_starshipweapons:StarshipWeaponName change:repeating_starshi
 				<span class="sheet-template-result">{{attack2}}</span>
 				
 				<div class="sheet-template-action">
-					{{#rollBetween() attack2 1 amazing2}}
-						<span class="sheet-template-hit-ama">Amazing</span>
-					{{/rollBetween() attack2 1 amazing2}}
-					{{#rollBetween() attack2 amazing2_p1 good2}}
-						<span class="sheet-template-hit-goo">Good</span>
-					{{/rollBetween() attack2 amazing2_p1 good2}}
-					{{#rollBetween() attack2 good2_p1 ordinary2}}
-						<span class="sheet-template-hit-ord">Ordinary</span>
-					{{/rollBetween() attack2 good2_p1 ordinary2}}
-					{{#rollGreater() attack2 ordinary2}}
-						<span class="sheet-template-miss">(Miss)</span>
-					{{/rollGreater() attack2 ordinary2}}
+					{{#status2}}
+						<span class="sheet-template-{{status_class2}}">{{status2}}</span>
+					{{/status2}}
+					{{^status2}}
+						{{#rollBetween() attack2 -999 amazing2}}
+							<span class="sheet-template-hit-ama">Amazing</span>
+						{{/rollBetween() attack2 -999 amazing2}}
+						{{#rollBetween() attack2 amazing2_p1 good2}}
+							<span class="sheet-template-hit-goo">Good</span>
+						{{/rollBetween() attack2 amazing2_p1 good2}}
+						{{#rollBetween() attack2 good2_p1 ordinary2}}
+							<span class="sheet-template-hit-ord">Ordinary</span>
+						{{/rollBetween() attack2 good2_p1 ordinary2}}
+						{{#rollGreater() attack2 ordinary2}}
+							<span class="sheet-template-miss">(Miss)</span>
+						{{/rollGreater() attack2 ordinary2}}
+					{{/status2}}
 				</div>
 			</div>
 			{{/attack2}}
@@ -6124,18 +6134,23 @@ on('change:repeating_starshipweapons:StarshipWeaponName change:repeating_starshi
 				<span class="sheet-template-result">{{attack3}}</span>
 				
 				<div class="sheet-template-action">
-					{{#rollBetween() attack3 1 amazing3}}
-						<span class="sheet-template-hit-ama">Amazing</span>
-					{{/rollBetween() attack3 1 amazing3}}
-					{{#rollBetween() attack3 amazing3_p1 good3}}
-						<span class="sheet-template-hit-goo">Good</span>
-					{{/rollBetween() attack3 amazing3_p1 good3}}
-					{{#rollBetween() attack3 good3_p1 ordinary3}}
-						<span class="sheet-template-hit-ord">Ordinary</span>
-					{{/rollBetween() attack3 good3_p1 ordinary3}}
-					{{#rollGreater() attack3 ordinary3}}
-						<span class="sheet-template-miss">(Miss)</span>
-					{{/rollGreater() attack3 ordinary3}}
+					{{#status3}}
+						<span class="sheet-template-{{status_class3}}">{{status3}}</span>
+					{{/status3}}
+					{{^status3}}
+						{{#rollBetween() attack3 -999 amazing3}}
+							<span class="sheet-template-hit-ama">Amazing</span>
+						{{/rollBetween() attack3 -999 amazing3}}
+						{{#rollBetween() attack3 amazing3_p1 good3}}
+							<span class="sheet-template-hit-goo">Good</span>
+						{{/rollBetween() attack3 amazing3_p1 good3}}
+						{{#rollBetween() attack3 good3_p1 ordinary3}}
+							<span class="sheet-template-hit-ord">Ordinary</span>
+						{{/rollBetween() attack3 good3_p1 ordinary3}}
+						{{#rollGreater() attack3 ordinary3}}
+							<span class="sheet-template-miss">(Miss)</span>
+						{{/rollGreater() attack3 ordinary3}}
+					{{/status3}}
 				</div>
 			</div>
 			{{/attack3}}
