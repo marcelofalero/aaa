@@ -608,12 +608,61 @@ test.describe('Alternity/aaa RPG Roll20 Automated Test Suite', () => {
                 },
                 set: (key, val) => {
                     if (key === 'turnorder') trackerData = val;
+                    if (key === 'initiativepage') {}
+                }
+            };
+            
+            let spawnedGraphics = [];
+            let cardCount = 0;
+            
+            const createObjMock = (type, attrs) => {
+                if (type === 'graphic') {
+                    cardCount++;
+                    const id = 'mock-card-' + cardCount;
+                    const newGraphic = {
+                        id: id,
+                        get: (attr) => {
+                            if (attr === 'name') return attrs.name;
+                            if (attr === '_pageid') return attrs.pageid;
+                            return id;
+                        },
+                        remove: () => {
+                            spawnedGraphics = spawnedGraphics.filter(g => g.id !== id);
+                        }
+                    };
+                    spawnedGraphics.push(newGraphic);
+                    return newGraphic;
                 }
             };
             
             const findObjsMock = (query) => {
-                if (query._type === 'graphic' && query.represents === 'char-123') {
-                    return [{ id: 'token-123' }];
+                if (query._type === 'graphic') {
+                    if (query.represents === 'char-123') {
+                        return [{
+                            id: 'token-123',
+                            get: (attr) => attr === '_pageid' ? 'page-123' : 'token-123'
+                        }];
+                    }
+                    if (query._pageid === 'page-123') {
+                        return spawnedGraphics;
+                    }
+                    if (query.id === 'token-123') {
+                        return [{
+                            id: 'token-123',
+                            get: (attr) => attr === '_pageid' ? 'page-123' : 'token-123'
+                        }];
+                    }
+                }
+                if (query._type === 'deck' && query.name === 'Alternity Phases') {
+                    return [{ id: 'deck-123' }];
+                }
+                if (query._type === 'card' && query._deckid === 'deck-123') {
+                    return [
+                        { id: 'card-amazing', get: (attr) => attr === 'name' ? 'Amazing' : 'avatar-amazing' },
+                        { id: 'card-good', get: (attr) => attr === 'name' ? 'Good' : 'avatar-good' },
+                        { id: 'card-ordinary', get: (attr) => attr === 'name' ? 'Ordinary' : 'avatar-ordinary' },
+                        { id: 'card-marginal', get: (attr) => attr === 'name' ? 'Marginal' : 'avatar-marginal' }
+                    ];
                 }
                 return [];
             };
@@ -627,6 +676,7 @@ test.describe('Alternity/aaa RPG Roll20 Automated Test Suite', () => {
                 },
                 Campaign: () => campaignMock,
                 findObjs: findObjsMock,
+                createObj: createObjMock,
                 log: () => {},
                 parseInt: parseInt,
                 Math: Math,
@@ -662,14 +712,15 @@ test.describe('Alternity/aaa RPG Roll20 Automated Test Suite', () => {
             expect(chatMsg).toContain('Success: **Good**');
             expect(chatMsg).toContain('Added to Turn Tracker for phases: **Good, Ordinary, Marginal**');
             
-            // Verify trackerData has the correct entries (old-token should remain unaffected)
+            // Verify trackerData has the correct card graphic IDs (old-token should remain unaffected)
             const parsedTracker = JSON.parse(trackerData);
             expect(parsedTracker).toEqual([
                 { id: 'old-token', pr: 'Marginal', custom: '' },
-                { id: '-1', pr: '3', custom: 'Razor (Good)' },
-                { id: '-1', pr: '2', custom: 'Razor (Ordinary)' },
-                { id: '-1', pr: '1', custom: 'Razor (Marginal)' }
+                { id: 'mock-card-1', pr: '3', custom: '' },
+                { id: 'mock-card-2', pr: '2', custom: '' },
+                { id: 'mock-card-3', pr: '1', custom: '' }
             ]);
+            expect(spawnedGraphics.map(g => g.id)).toEqual(['mock-card-1', 'mock-card-2', 'mock-card-3']);
 
             // Re-roll as Ordinary Success (d20 = 12, sit = 1, total = 13 <= 13)
             chatMessageListener({
@@ -682,13 +733,14 @@ test.describe('Alternity/aaa RPG Roll20 Automated Test Suite', () => {
                 ]
             });
 
-            // The old custom turns should be removed, and new Ordinary and Marginal entries added
+            // The old card graphic turns should be removed, and new Ordinary and Marginal entries added
             const reRolledTracker = JSON.parse(trackerData);
             expect(reRolledTracker).toEqual([
                 { id: 'old-token', pr: 'Marginal', custom: '' },
-                { id: '-1', pr: '2', custom: 'Razor (Ordinary)' },
-                { id: '-1', pr: '1', custom: 'Razor (Marginal)' }
+                { id: 'mock-card-4', pr: '2', custom: '' },
+                { id: 'mock-card-5', pr: '1', custom: '' }
             ]);
+            expect(spawnedGraphics.map(g => g.id)).toEqual(['mock-card-4', 'mock-card-5']);
 
             // Roll above Ordinary score (d20 = 15, sit = 1, total = 16 > 13)
             chatMessageListener({
@@ -705,8 +757,9 @@ test.describe('Alternity/aaa RPG Roll20 Automated Test Suite', () => {
             const marginalTracker = JSON.parse(trackerData);
             expect(marginalTracker).toEqual([
                 { id: 'old-token', pr: 'Marginal', custom: '' },
-                { id: '-1', pr: '1', custom: 'Razor (Marginal)' }
+                { id: 'mock-card-6', pr: '1', custom: '' }
             ]);
+            expect(spawnedGraphics.map(g => g.id)).toEqual(['mock-card-6']);
         });
     });
 });
