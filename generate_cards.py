@@ -6,15 +6,15 @@ from PIL import Image, ImageDraw, ImageFont
 out_dir = "roll20_charsheet/initiative_cards"
 os.makedirs(out_dir, exist_ok=True)
 
-# Download clean sci-fi font
-font_path = "Orbitron.ttf"
+# Download sharp geometric font (Montserrat-Bold has a very pointy, clean A and M)
+font_path = "Montserrat-Bold.ttf"
 if not os.path.exists(font_path):
-    print("Downloading Orbitron font...")
-    font_url = "https://github.com/google/fonts/raw/main/ofl/orbitron/Orbitron%5Bwght%5D.ttf"
+    print("Downloading Montserrat-Bold font...")
+    font_url = "https://github.com/JulietaUla/Montserrat/raw/master/fonts/ttf/Montserrat-Bold.ttf"
     try:
         urllib.request.urlretrieve(font_url, font_path)
     except Exception as e:
-        print(f"Failed to download font: {e}. Falling back to default.")
+        print(f"Failed to download Montserrat-Bold: {e}. Falling back to default.")
         font_path = None
 
 def get_font(size):
@@ -69,19 +69,20 @@ def draw_sci_fi_card(phase_name, priority, color_hex):
     # Bottom-Right
     draw.line([(w-10, h-45), (w-10, h-25), (w-25, h-10), (w-45, h-10)], fill=accent_color, width=4)
     
-    # Huge Central Letter (A, G, O, M)
+    # Huge Central Letter (A, G, O, M) - Pointy and Massive!
     central_letter = phase_name[0].upper()
-    font_large_letter = get_font(150)
-    draw.text((w/2, h/2 - 40), central_letter, fill=accent_color, font=font_large_letter, anchor="mm")
+    font_large_letter = get_font(220)
+    # Adjusting vertical center slightly for perfect visual balance with the larger size
+    draw.text((w/2, h/2 - 45), central_letter, fill=accent_color, font=font_large_letter, anchor="mm")
     
     # Full Phase Name below letter
     font_phase = get_font(28)
-    draw.text((w/2, h/2 + 75), phase_name.upper(), fill=white, font=font_phase, anchor="mm")
+    draw.text((w/2, h/2 + 85), phase_name.upper(), fill=white, font=font_phase, anchor="mm")
     
     # Subtitle with tech priority
     font_desc = get_font(12)
     desc_text = f"PRIORITY RANK {priority}"
-    draw.text((w/2, h/2 + 115), desc_text, fill=gray, font=font_desc, anchor="mm")
+    draw.text((w/2, h/2 + 125), desc_text, fill=gray, font=font_desc, anchor="mm")
     
     # Tech lines at bottom
     draw.line([(60, h-55), (w-60, h-55)], fill=accent_dim, width=1)
