@@ -78,9 +78,9 @@ def draw_sci_fi_card(phase_name, priority, color_hex):
     
     # Huge Central Letter (A, G, O, M) - Pointy and Massive in Airstrike!
     central_letter = phase_name[0].upper()
-    font_large_letter = get_font(220)
+    font_large_letter = get_font(310)
     # Airstrike has wide characters, middle centering is perfect
-    draw.text((w/2, h/2 - 40), central_letter, fill=accent_color, font=font_large_letter, anchor="mm")
+    draw.text((w/2, h/2 - 50), central_letter, fill=accent_color, font=font_large_letter, anchor="mm")
     
     # Full Phase Name below letter
     font_phase = get_font(28)
