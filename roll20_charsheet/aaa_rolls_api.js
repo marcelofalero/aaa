@@ -53,10 +53,8 @@ on("chat:message", function(msg) {
                 successLevel = "Good";
             } else if (total <= scoreO) {
                 successLevel = "Ordinary";
-            } else if (total <= scoreM) {
-                successLevel = "Marginal";
             } else {
-                successLevel = "Miss";
+                successLevel = "Marginal";
             }
         }
         

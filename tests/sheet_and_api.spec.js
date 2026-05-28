@@ -689,6 +689,24 @@ test.describe('Alternity/aaa RPG Roll20 Automated Test Suite', () => {
                 { id: 'token-123', pr: 'Ordinary', custom: '' },
                 { id: 'token-123', pr: 'Marginal', custom: '' }
             ]);
+
+            // Roll above Ordinary score (d20 = 15, sit = 1, total = 16 > 13)
+            chatMessageListener({
+                type: 'api',
+                content: command,
+                who: 'Razor',
+                inlinerolls: [
+                    { expression: '1d20cs<1cf>20', results: { total: 15 } },
+                    { expression: '1d4cs<0cf<0', results: { total: 1 } }
+                ]
+            });
+
+            // Even though 16 is greater than Ordinary score (13), it should be evaluated as Marginal Success, not Miss!
+            const marginalTracker = JSON.parse(trackerData);
+            expect(marginalTracker).toEqual([
+                { id: 'old-token', pr: 'Marginal', custom: '' },
+                { id: 'token-123', pr: 'Marginal', custom: '' }
+            ]);
         });
     });
 });
