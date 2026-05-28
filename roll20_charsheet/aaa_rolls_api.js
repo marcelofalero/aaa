@@ -142,11 +142,16 @@ on("chat:message", function(msg) {
             });
             turnorder = cleanTurnorder;
             
-            // Push each phase as a separate clean custom text entry to the Turn Tracker
-            phases.forEach(function(phase) {
+            // Push each phase as a separate clean custom text entry to the Turn Tracker.
+            // Under Alternity rules, characters who haven't acted yet in the round take
+            // precedence in any given phase over characters who have already acted in a
+            // prior phase. We achieve this inside Roll20's default descending sort by
+            // giving the character's first (highest) phase a sub-priority boost (+0.1).
+            phases.forEach(function(phase, idx) {
+                var priorityVal = (idx === 0) ? (phase.val + 0.1) : phase.val;
                 turnorder.push({
                     id: "-1",
-                    pr: String(phase.val),
+                    pr: String(priorityVal),
                     custom: charName + " (" + phase.name + ")"
                 });
             });

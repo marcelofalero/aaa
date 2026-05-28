@@ -666,7 +666,7 @@ test.describe('Alternity/aaa RPG Roll20 Automated Test Suite', () => {
             const parsedTracker = JSON.parse(trackerData);
             expect(parsedTracker).toEqual([
                 { id: 'old-token', pr: 'Marginal', custom: '' },
-                { id: '-1', pr: '3', custom: 'Razor (Good)' },
+                { id: '-1', pr: '3.1', custom: 'Razor (Good)' },
                 { id: '-1', pr: '2', custom: 'Razor (Ordinary)' },
                 { id: '-1', pr: '1', custom: 'Razor (Marginal)' }
             ]);
@@ -686,7 +686,7 @@ test.describe('Alternity/aaa RPG Roll20 Automated Test Suite', () => {
             const reRolledTracker = JSON.parse(trackerData);
             expect(reRolledTracker).toEqual([
                 { id: 'old-token', pr: 'Marginal', custom: '' },
-                { id: '-1', pr: '2', custom: 'Razor (Ordinary)' },
+                { id: '-1', pr: '2.1', custom: 'Razor (Ordinary)' },
                 { id: '-1', pr: '1', custom: 'Razor (Marginal)' }
             ]);
 
@@ -705,7 +705,7 @@ test.describe('Alternity/aaa RPG Roll20 Automated Test Suite', () => {
             const marginalTracker = JSON.parse(trackerData);
             expect(marginalTracker).toEqual([
                 { id: 'old-token', pr: 'Marginal', custom: '' },
-                { id: '-1', pr: '1', custom: 'Razor (Marginal)' }
+                { id: '-1', pr: '1.1', custom: 'Razor (Marginal)' }
             ]);
         });
     });
