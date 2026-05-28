@@ -1137,6 +1137,10 @@ button[type="roll"]:hover {
     text-decoration: underline !important;
 }
 
+.sheet-skill-row:not(.sheet-spec) .sheet-trained-check:checked ~ .sheet-skill-name .sheet-skill-name-text {
+    color: var(--color-accent-yellow) !important;
+}
+
 .sheet-trained-only-msg {
     color: #ef4444 !important; /* Red */
 }
