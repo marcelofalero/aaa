@@ -129,7 +129,8 @@ on("chat:message", function(msg) {
             
             // Find and delete any previously spawned card graphics on the map for this character,
             // collecting their graphic IDs so we can remove them from the Turn Tracker as well.
-            var activePageId = chosenToken ? (typeof chosenToken.get === "function" ? chosenToken.get("_pageid") : chosenToken._pageid) : Campaign().get("playerpageid");
+            // We ALWAYS target the Players Ribbon page where players are viewing to ensure Turn Tracker visibility!
+            var activePageId = Campaign().get("playerpageid") || (chosenToken ? (typeof chosenToken.get === "function" ? chosenToken.get("_pageid") : chosenToken._pageid) : null);
             var cardsToRemove = [];
             if (activePageId && typeof findObjs !== 'undefined') {
                 var mapGraphics = findObjs({
@@ -218,18 +219,22 @@ on("chat:message", function(msg) {
                 }
             });
             
-            Campaign().set("turnorder", JSON.stringify(turnorder));
-            Campaign().set("initiativepage", true); // Force Turn Tracker to open and refresh!
+            // Use setTimeout to avoid Roll20's websocket race condition where the turnorder update
+            // is sent to the client before the newly created graphics are registered and drawn.
+            if (typeof setTimeout !== "undefined") {
+                setTimeout(function() {
+                    Campaign().set("turnorder", JSON.stringify(turnorder));
+                    Campaign().set("initiativepage", true); // Force Turn Tracker to open and refresh!
+                }, 200);
+            } else {
+                Campaign().set("turnorder", JSON.stringify(turnorder));
+                Campaign().set("initiativepage", true); // Force Turn Tracker to open and refresh!
+            }
             
             var phaseNames = phases.map(function(p) { return p.name; });
             trackerStatusMsg = "<br>Added to Turn Tracker for phases: **" + phaseNames.join(", ") + "**";
             if (deck && cards.length > 0) {
                 trackerStatusMsg += "<br>*(Using card graphics from 'Alternity Phases' deck!)*";
-            }
-            
-            var playerPageId = Campaign().get("playerpageid");
-            if (activePageId !== playerPageId) {
-                trackerStatusMsg += "<br>⚠️ **VTT Ribbon Notice**: The red **'Players' ribbon** is currently on a different map. To see your custom phase card images inside the Turn Tracker panel, drag the **Players** ribbon onto this page!";
             }
         } else if (phases.length > 0) {
             trackerStatusMsg = "<br>⚠️ **Warning:** Could not find a map token representing this character. Please ensure you have a token on the map, and its **'Represents Character'** property is set to **" + charName + "**!";

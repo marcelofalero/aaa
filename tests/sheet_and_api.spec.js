@@ -677,6 +677,7 @@ test.describe('Alternity/aaa RPG Roll20 Automated Test Suite', () => {
                 Campaign: () => campaignMock,
                 findObjs: findObjsMock,
                 createObj: createObjMock,
+                setTimeout: (cb) => cb(),
                 log: () => {},
                 parseInt: parseInt,
                 Math: Math,
