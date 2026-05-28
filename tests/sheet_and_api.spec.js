@@ -623,7 +623,7 @@ test.describe('Alternity/aaa RPG Roll20 Automated Test Suite', () => {
                         id: id,
                         get: (attr) => {
                             if (attr === 'name') return attrs.name;
-                            if (attr === '_pageid') return attrs.pageid;
+                            if (attr === '_pageid') return attrs._pageid;
                             return id;
                         },
                         remove: () => {

@@ -192,7 +192,7 @@ on("chat:message", function(msg) {
                         top: -1000,
                         width: 49,
                         height: 70,
-                        pageid: activePageId,
+                        _pageid: activePageId,
                         layer: "objects",
                         name: charName + " (" + phase.name + ")"
                     });
