@@ -69,45 +69,24 @@ def draw_sci_fi_card(phase_name, priority, color_hex):
     # Bottom-Right
     draw.line([(w-10, h-45), (w-10, h-25), (w-25, h-10), (w-45, h-10)], fill=accent_color, width=4)
     
-    # Draw header text: "ALTERNITY"
-    font_alt = get_font(12)
-    draw.text((w/2, 35), "ALTERNITY RPG", fill=gray, font=font_alt, anchor="mm")
+    # Huge Central Letter (A, G, O, M)
+    central_letter = phase_name[0].upper()
+    font_large_letter = get_font(150)
+    draw.text((w/2, h/2 - 40), central_letter, fill=accent_color, font=font_large_letter, anchor="mm")
     
-    # Tech line under header
-    draw.line([(60, 50), (w-60, 50)], fill=accent_dim, width=1)
-    
-    # Priority circle in center-top
-    circle_r = 35
-    circle_center = (w/2, h/2 - 70)
-    draw.ellipse(
-        [(circle_center[0] - circle_r, circle_center[1] - circle_r),
-         (circle_center[0] + circle_r, circle_center[1] + circle_r)],
-        fill=(15, 20, 30),
-        outline=accent_color,
-        width=3
-    )
-    
-    # Main value inside circle (Priority number)
-    font_val = get_font(36)
-    draw.text(circle_center, str(priority), fill=white, font=font_val, anchor="mm")
-    
-    # "PHASE" label under circle
-    font_lbl = get_font(10)
-    draw.text((w/2, h/2 - 18), "PHASE TIER", fill=gray, font=font_lbl, anchor="mm")
-    
-    # Large Phase Name
+    # Full Phase Name below letter
     font_phase = get_font(28)
-    draw.text((w/2, h/2 + 40), phase_name.upper(), fill=accent_color, font=font_phase, anchor="mm")
+    draw.text((w/2, h/2 + 75), phase_name.upper(), fill=white, font=font_phase, anchor="mm")
     
-    # Subtitle with tech description
-    font_desc = get_font(10)
-    desc_text = f"Priority Rank {priority} Initiative Phase"
-    draw.text((w/2, h/2 + 80), desc_text, fill=gray, font=font_desc, anchor="mm")
+    # Subtitle with tech priority
+    font_desc = get_font(12)
+    desc_text = f"PRIORITY RANK {priority}"
+    draw.text((w/2, h/2 + 115), desc_text, fill=gray, font=font_desc, anchor="mm")
     
     # Tech lines at bottom
     draw.line([(60, h-55), (w-60, h-55)], fill=accent_dim, width=1)
     
-    # Footer "INITIATIVE SYSTEM"
+    # Footer "ACTION CHECK INITIATIVE"
     font_foot = get_font(11)
     draw.text((w/2, h-40), "ACTION CHECK INITIATIVE", fill=gray, font=font_foot, anchor="mm")
     
@@ -171,9 +150,10 @@ def draw_card_back():
 
 if __name__ == "__main__":
     print("Generating cards...")
+    # Amazing: Gold, Good: Green, Ordinary: Blue, Marginal: Grey
     draw_sci_fi_card("Amazing", 4, "#ffcc00")
-    draw_sci_fi_card("Good", 3, "#3b82f6")
-    draw_sci_fi_card("Ordinary", 2, "#10b981")
-    draw_sci_fi_card("Marginal", 1, "#f97316")
+    draw_sci_fi_card("Good", 3, "#10b981")
+    draw_sci_fi_card("Ordinary", 2, "#3b82f6")
+    draw_sci_fi_card("Marginal", 1, "#9ca3af")
     draw_card_back()
     print("All card graphics generated successfully!")
