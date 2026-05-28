@@ -76,11 +76,22 @@ def draw_sci_fi_card(phase_name, priority, color_hex):
     # Bottom-Right
     draw.line([(w-10, h-45), (w-10, h-25), (w-25, h-10), (w-45, h-10)], fill=accent_color, width=4)
     
-    # Huge Central Letter (A, G, O, M) - Pointy and Massive in Airstrike!
+    # Huge Central Letter (A, G, O, M)
     central_letter = phase_name[0].upper()
-    font_large_letter = get_font(310)
-    # Airstrike has wide characters, middle centering is perfect
-    draw.text((w/2, h/2 - 50), central_letter, fill=accent_color, font=font_large_letter, anchor="mm")
+    
+    # Specs for perfect optical centering and sizing of slanted Airstrike font
+    specs = {
+        'A': {'size': 310, 'dx': -10, 'dy': -10},
+        'G': {'size': 290, 'dx': -12, 'dy': -10},
+        'O': {'size': 290, 'dx': -12, 'dy': -10},
+        'M': {'size': 240, 'dx': -15, 'dy': -5}
+    }
+    
+    spec = specs.get(central_letter, {'size': 310, 'dx': 0, 'dy': -10})
+    font_large_letter = get_font(spec['size'])
+    
+    # Draw letter with optical offset to counter rightward slant
+    draw.text((w/2 + spec['dx'], h/2 - 50 + spec['dy']), central_letter, fill=accent_color, font=font_large_letter, anchor="mm")
     
     # Full Phase Name below letter
     font_phase = get_font(28)
