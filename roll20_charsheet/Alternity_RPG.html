@@ -102,9 +102,7 @@ on("change:actioncheck change:actiondie sheet:opened", function() {
     getAttrs(["ActionCheck", "ActionDie", "character_name"], function(v) {
         let val = parseInt(v.ActionCheck) || 0;
         let die = v.ActionDie || "d0";
-        let scores = `${val + 1}+ / ${val} / ${Math.floor(val / 2)} / ${Math.floor(val / 4)}`;
-        let results = `[[1d20cs<1cf>20+${die}cs<0cf<0 &{tracker}]]`;
-        let macro = `&{template:alternity-skill} {{name=Action Check}} {{score=${scores}}} {{results=${results}}}`;
+        let macro = `!aaa-action-check @{character_name} || @{character_id} || ${val + 1} || ${val} || ${Math.floor(val / 2)} || ${Math.floor(val / 4)} || [[1d20cs<1cf>20]] || [[${die}cs<0cf<0]]`;
         
         setAttrs({
             "ActionCheckM": val + 1,

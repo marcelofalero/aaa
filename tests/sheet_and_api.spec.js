@@ -590,5 +590,105 @@ test.describe('Alternity/aaa RPG Roll20 Automated Test Suite', () => {
             // Attack 2: (20)[1d20] + (8)[1d8] = 28
             expect(finalOutput).toContain('{{attack2=[[(20)[1d20] + (8)[1d8]]]}}');
         });
+
+        test('Should correctly calculate Action Check success level and add appropriate phases to the Turn Tracker', () => {
+            const apiCode = loadApiScriptCode();
+            
+            let chatMessageListener = null;
+            let sendChatCalls = [];
+            let trackerData = JSON.stringify([
+                { id: 'old-token', pr: 'Marginal', custom: '' }
+            ]);
+            
+            const campaignMock = {
+                get: (key) => {
+                    if (key === 'turnorder') return trackerData;
+                    if (key === 'playerpageid') return 'page-123';
+                    return '';
+                },
+                set: (key, val) => {
+                    if (key === 'turnorder') trackerData = val;
+                }
+            };
+            
+            const findObjsMock = (query) => {
+                if (query._type === 'graphic' && query.represents === 'char-123') {
+                    return [{ id: 'token-123' }];
+                }
+                return [];
+            };
+            
+            const apiContext = {
+                on: (event, callback) => {
+                    if (event === 'chat:message') chatMessageListener = callback;
+                },
+                sendChat: (who, content, callback) => {
+                    sendChatCalls.push({ who: who, content: content });
+                },
+                Campaign: () => campaignMock,
+                findObjs: findObjsMock,
+                log: () => {},
+                parseInt: parseInt,
+                Math: Math,
+                JSON: JSON
+            };
+            
+            vm.createContext(apiContext);
+            vm.runInContext(apiCode, apiContext);
+            
+            // Action Check command: Name || CharId || ScoreM || ScoreO || ScoreG || ScoreA
+            // Marginal: 14, Ordinary: 13, Good: 6, Amazing: 3
+            const command = '!aaa-action-check Razor || char-123 || 14 || 13 || 6 || 3';
+            
+            // Simulating a Good success (e.g. total roll = 5, where 5 <= 6).
+            // Let's pass the inline rolls:
+            // Roll 0: d20 = 4
+            // Roll 1: sit = 1
+            chatMessageListener({
+                type: 'api',
+                content: command,
+                who: 'Razor',
+                inlinerolls: [
+                    { expression: '1d20cs<1cf>20', results: { total: 4 } },
+                    { expression: '1d4cs<0cf<0', results: { total: 1 } }
+                ]
+            });
+            
+            // The command should execute and send the chat message
+            expect(sendChatCalls.length).toBe(1);
+            const chatMsg = sendChatCalls[0].content;
+            
+            // Check that it identifies Good success
+            expect(chatMsg).toContain('Success: **Good**');
+            expect(chatMsg).toContain('Added to Turn Tracker for phases: **Good, Ordinary, Marginal**');
+            
+            // Verify trackerData has the correct entries (old-token should remain unaffected)
+            const parsedTracker = JSON.parse(trackerData);
+            expect(parsedTracker).toEqual([
+                { id: 'old-token', pr: 'Marginal', custom: '' },
+                { id: 'token-123', pr: 'Good', custom: '' },
+                { id: 'token-123', pr: 'Ordinary', custom: '' },
+                { id: 'token-123', pr: 'Marginal', custom: '' }
+            ]);
+
+            // Re-roll as Ordinary Success (d20 = 12, sit = 1, total = 13 <= 13)
+            chatMessageListener({
+                type: 'api',
+                content: command,
+                who: 'Razor',
+                inlinerolls: [
+                    { expression: '1d20cs<1cf>20', results: { total: 12 } },
+                    { expression: '1d4cs<0cf<0', results: { total: 1 } }
+                ]
+            });
+
+            // The old token-123 entries should be removed, and new Ordinary and Marginal entries added
+            const reRolledTracker = JSON.parse(trackerData);
+            expect(reRolledTracker).toEqual([
+                { id: 'old-token', pr: 'Marginal', custom: '' },
+                { id: 'token-123', pr: 'Ordinary', custom: '' },
+                { id: 'token-123', pr: 'Marginal', custom: '' }
+            ]);
+        });
     });
 });

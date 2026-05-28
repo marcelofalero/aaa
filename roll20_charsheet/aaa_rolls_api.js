@@ -6,8 +6,118 @@
  */
 
 on("chat:message", function(msg) {
-    // Only intercept API commands starting with !aaa-roll
+    // Only intercept API commands starting with !aaa-roll or !aaa-action-check
     if (msg.type !== "api") return;
+
+    if (msg.content.indexOf("!aaa-action-check") === 0) {
+        var commandText = msg.content.substring("!aaa-action-check ".length);
+        var parts = commandText.split(" || ").map(function(p) { return p.trim(); });
+        
+        var charName = parts[0] || "Character";
+        var charId = parts[1] || "";
+        var scoreM = parseInt(parts[2]) || 0;
+        var scoreO = parseInt(parts[3]) || 0;
+        var scoreG = parseInt(parts[4]) || 0;
+        var scoreA = parseInt(parts[5]) || 0;
+        
+        var d20 = 10;
+        var sit = 0;
+        
+        if (msg.inlinerolls) {
+            if (msg.inlinerolls[0]) {
+                d20 = msg.inlinerolls[0].results.total;
+            }
+            if (msg.inlinerolls[1]) {
+                sit = msg.inlinerolls[1].results.total;
+            }
+        }
+        
+        var total = d20 + sit;
+        var successLevel = "";
+        
+        if (d20 === 20) {
+            successLevel = "Critical Failure";
+        } else if (d20 === 1) {
+            // Natural 1 is always success. Check best level achieved.
+            if (total <= scoreA) {
+                successLevel = "Amazing";
+            } else if (total <= scoreG) {
+                successLevel = "Good";
+            } else {
+                successLevel = "Ordinary";
+            }
+        } else {
+            if (total <= scoreA) {
+                successLevel = "Amazing";
+            } else if (total <= scoreG) {
+                successLevel = "Good";
+            } else if (total <= scoreO) {
+                successLevel = "Ordinary";
+            } else if (total <= scoreM) {
+                successLevel = "Marginal";
+            } else {
+                successLevel = "Miss";
+            }
+        }
+        
+        var phases = [];
+        if (successLevel === "Amazing") {
+            phases = ["Amazing", "Good", "Ordinary", "Marginal"];
+        } else if (successLevel === "Good") {
+            phases = ["Good", "Ordinary", "Marginal"];
+        } else if (successLevel === "Ordinary") {
+            phases = ["Ordinary", "Marginal"];
+        } else if (successLevel === "Marginal") {
+            phases = ["Marginal"];
+        }
+        
+        // Add to Turn Tracker if a valid token is found
+        var tokenId = null;
+        if (msg.selected && msg.selected.length > 0) {
+            tokenId = msg.selected[0]._id;
+        } else if (charId && typeof findObjs !== 'undefined' && typeof Campaign !== 'undefined') {
+            var token = findObjs({
+                _type: "graphic",
+                _pageid: Campaign().get("playerpageid"),
+                represents: charId
+            })[0];
+            if (token) tokenId = token.id;
+        }
+        
+        var trackerStatusMsg = "";
+        if (tokenId && phases.length > 0 && typeof Campaign !== 'undefined') {
+            var turnorder = JSON.parse(Campaign().get("turnorder") || "[]");
+            
+            // Clean up any existing turn entries for this token
+            turnorder = turnorder.filter(function(turn) {
+                return turn.id !== tokenId;
+            });
+            
+            // Push each phase as a separate entry
+            phases.forEach(function(phase) {
+                turnorder.push({
+                    id: tokenId,
+                    pr: phase,
+                    custom: ""
+                });
+            });
+            
+            Campaign().set("turnorder", JSON.stringify(turnorder));
+            trackerStatusMsg = "<br>Added to Turn Tracker for phases: **" + phases.join(", ") + "**";
+        } else if (phases.length > 0) {
+            trackerStatusMsg = "<br>*(Select your token next time to add to Turn Tracker!)*";
+        }
+        
+        var sign = sit >= 0 ? "+" : "-";
+        var absSit = Math.abs(sit);
+        var rollResultExpr = "[[" + d20 + "[d20] " + sign + " " + absSit + "[Situation]]]";
+        
+        var chatMsg = "&{template:alternity-skill} {{name=" + charName + " - Action Check}} {{score=" + scoreM + "+ / " + scoreO + " / " + scoreG + " / " + scoreA + "}} {{results=" + rollResultExpr + "}} {{wiki=Success: **" + successLevel + "**" + trackerStatusMsg + "}}";
+        
+        sendChat("character|" + charId, chatMsg);
+        return;
+    }
+
     if (msg.content.indexOf("!aaa-roll") !== 0) return;
     
     // Parse arguments separated by " || "
