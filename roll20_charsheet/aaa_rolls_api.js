@@ -72,14 +72,29 @@ on("chat:message", function(msg) {
         // Add to Turn Tracker if a valid token is found
         var tokenId = null;
         if (msg.selected && msg.selected.length > 0) {
-            tokenId = msg.selected[0]._id;
-        } else if (charId && typeof findObjs !== 'undefined' && typeof Campaign !== 'undefined') {
-            var token = findObjs({
+            tokenId = msg.selected[0]._id || msg.selected[0].id;
+        } else if (charId && typeof findObjs !== 'undefined') {
+            var tokens = findObjs({
                 _type: "graphic",
-                _pageid: Campaign().get("playerpageid"),
                 represents: charId
-            })[0];
-            if (token) tokenId = token.id;
+            });
+            if (tokens && tokens.length > 0) {
+                var chosenToken = null;
+                if (typeof Campaign !== 'undefined') {
+                    var playerPageId = Campaign().get("playerpageid");
+                    for (var i = 0; i < tokens.length; i++) {
+                        var tokenPageId = typeof tokens[i].get === "function" ? tokens[i].get("_pageid") : tokens[i]._pageid;
+                        if (tokenPageId === playerPageId) {
+                            chosenToken = tokens[i];
+                            break;
+                        }
+                    }
+                }
+                if (!chosenToken) {
+                    chosenToken = tokens[0];
+                }
+                tokenId = chosenToken.id || (typeof chosenToken.get === "function" ? (chosenToken.get("_id") || chosenToken.get("id")) : (chosenToken._id || chosenToken.id));
+            }
         }
         
         var trackerStatusMsg = "";
@@ -103,7 +118,7 @@ on("chat:message", function(msg) {
             Campaign().set("turnorder", JSON.stringify(turnorder));
             trackerStatusMsg = "<br>Added to Turn Tracker for phases: **" + phases.join(", ") + "**";
         } else if (phases.length > 0) {
-            trackerStatusMsg = "<br>*(Select your token next time to add to Turn Tracker!)*";
+            trackerStatusMsg = "<br>⚠️ **Warning:** Could not find a map token representing this character. Please ensure you have a token on the map, and its **'Represents Character'** property is set to **" + charName + "**!";
         }
         
         var sign = sit >= 0 ? "+" : "-";
