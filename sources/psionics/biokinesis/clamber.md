@@ -37,4 +37,3 @@ reaching his or her destination.
 **Rank 8 [Increased Distance]** the distance is three times the base rate.
 
 **Rank 12 [Increased Distance]** the distance is four times the base rate.
-

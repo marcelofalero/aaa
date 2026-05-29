@@ -9,9 +9,9 @@ rank_benefits:
 - rank: 6
   title: Increased Damage
 - rank: 9
-  title: Improved Damage
-- rank: 12
   title: Increased Damage
+- rank: 12
+  title: Improved Damage
 extended_duration: true
 name: Bioweapon
 ---
@@ -43,4 +43,4 @@ This bonus lasts until the character chooses not to maintain the bioweapon.
 
 **Rank 9 [Increased Damage]** all attacks made with the bioweapon are considered to deliver **Good damage**.
 
-**Rank 12 [Improved Damage]** it increases by another +1 (to a total of +3). 
+**Rank 12 [Improved Damage]** it increases by another +1 (to a total of +3).

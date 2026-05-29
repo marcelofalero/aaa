@@ -2,7 +2,7 @@ const { test, expect } = require('@playwright/test');
 
 test.describe('Psionics Interface Automated Tests', () => {
     test.beforeEach(async ({ page }) => {
-        await page.goto('http://localhost:1313/core-mechanics/psionics/');
+        await page.goto('http://localhost:1313/psionics/');
     });
 
     test('Step 1: Verify correctly updated Attributes (Data Fixes)', async ({ page }) => {

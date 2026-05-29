@@ -672,6 +672,16 @@ fieldset.sheet-section-skills {
     appearance: none;
 }
 
+.sheet-skill-header-row > * {
+    grid-row: 1;
+}
+
+.sheet-skill-header-row > div:nth-child(1) { grid-column: 1; }
+.sheet-skill-header-row > div:nth-child(2) { grid-column: 2; }
+.sheet-skill-header-row > div:nth-child(3) { grid-column: 3; }
+.sheet-skill-header-row > div:nth-child(4) { grid-column: 4; }
+.sheet-skill-header-row > div:nth-child(5) { grid-column: 5; }
+
 .sheet-skill-header-row:hover {
     background: rgba(255, 255, 255, 0.05);
 }
@@ -738,6 +748,8 @@ fieldset.sheet-section-skills {
 
 .sheet-skill-row.sheet-spec input[type="number"] {
     grid-column: 4;
+    margin: 0 auto !important;
+    align-self: center !important;
 }
 
 .sheet-skill-score-cell {
@@ -745,7 +757,11 @@ fieldset.sheet-section-skills {
 }
 
 .sheet-skill-row.sheet-spec {
-    padding-left: 15px;
+    padding-left: 0 !important;
+}
+
+.sheet-skill-row.sheet-spec .sheet-skill-name {
+    padding-left: 15px !important;
 }
 
 .sheet-skill-row:hover {
@@ -1112,14 +1128,17 @@ button[type="roll"]:hover {
     color: #ef4444 !important; /* Red */
 }
 
-/* Highlight skill name when trained */
+/* Highlight skill name when trained (underscored) */
 .sheet-trained-check:checked ~ .sheet-skill-name {
     font-weight: bold !important;
 }
 
-/* Light blue accent only for trained-only skills when checked */
-.sheet-trained-check:checked ~ .sheet-skill-name.sheet-trained-only {
-    color: #38bdf8 !important; /* Light blue accent */
+.sheet-trained-check:checked ~ .sheet-skill-name .sheet-skill-name-text {
+    text-decoration: underline !important;
+}
+
+.sheet-trained-check-hidden:checked + .sheet-skill-group-box {
+    border-color: var(--color-accent-yellow) !important;
 }
 
 .sheet-trained-only-msg {
@@ -2000,200 +2019,258 @@ fieldset.repeating_weapons {
 
 /* ===== ROLL TEMPLATE: ALTERNITY ATTACK ===== */
 .sheet-rolltemplate-alternity-attack .sheet-template-container {
-    border: 1px solid #1e293b;
-    background-color: #f9f7f2;
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    border: 1px solid #334155;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.1);
+    font-family: "Outfit", "Inter", "Roboto", sans-serif;
+    color: #f1f5f9;
     padding: 6px;
-    border-radius: 4px;
-    color: #1e293b;
-    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    min-width: 200px;
+    min-width: 240px;
+    max-width: 280px;
 }
 
 .sheet-rolltemplate-alternity-attack .sheet-template-header {
-    background-color: #1e293b;
-    color: white;
-    padding: 6px 10px;
-    font-weight: bold;
-    border-radius: 4px 4px 0 0;
-    margin-bottom: 6px;
+    background: rgba(15, 23, 42, 0.8);
+    backdrop-filter: blur(4px);
+    color: #38bdf8; /* Light Sky Blue */
+    padding: 8px 12px;
+    font-weight: 700;
     text-transform: uppercase;
-    font-size: 0.95em;
+    font-size: 0.8em;
     letter-spacing: 0.05em;
+    border-bottom: 1px solid rgba(51, 65, 85, 0.5);
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-radius: 6px 6px 0 0;
 }
 
 .sheet-rolltemplate-alternity-attack .sheet-template-control {
-    font-size: 0.8em;
-    background: rgba(255, 255, 255, 0.2);
+    font-size: 0.75em;
+    background: rgba(56, 189, 248, 0.15);
+    border: 1px solid rgba(56, 189, 248, 0.3);
+    color: #38bdf8;
     padding: 2px 6px;
-    border-radius: 3px;
+    border-radius: 4px;
     text-transform: none;
-    font-weight: normal;
+    font-weight: 600;
 }
 
 .sheet-rolltemplate-alternity-attack .sheet-template-row {
-    padding: 2px 4px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    font-size: 0.85em;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 6px 10px;
+    font-size: 0.85em;
+    border-bottom: 1px solid rgba(51, 65, 85, 0.2);
 }
 
 .sheet-rolltemplate-alternity-attack .sheet-template-row span {
-    font-weight: bold;
-    color: #475569;
+    font-weight: 700;
+    color: #94a3b8;
+    font-size: 0.85em;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
 }
 
 .sheet-rolltemplate-alternity-attack .sheet-template-body {
-    padding: 4px;
+    padding: 8px;
     display: flex;
     flex-direction: column;
-    gap: 3px;
+    gap: 6px;
 }
 
 .sheet-rolltemplate-alternity-attack .sheet-template-attack-row {
-    padding: 6px 8px;
-    background-color: rgba(0, 0, 0, 0.03);
-    border-radius: 4px;
+    padding: 8px 10px;
+    background-color: rgba(30, 41, 59, 0.4);
+    border: 1px solid rgba(51, 65, 85, 0.3);
+    border-radius: 6px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: 10px;
-    border: 1px solid rgba(0, 0, 0, 0.02);
 }
 
 .sheet-rolltemplate-alternity-attack .sheet-template-label {
-    font-weight: bold;
+    font-weight: 700;
     font-size: 0.8em;
+    color: #cbd5e1;
     flex: 1;
-    color: #334155;
 }
 
 .sheet-rolltemplate-alternity-attack .sheet-template-result {
-    font-weight: 900;
-    background-color: #1e293b;
-    color: white;
-    padding: 2px 8px;
-    border-radius: 50%;
-    min-width: 1.8em;
-    height: 1.8em;
-    line-height: 1.8em;
+    font-family: "Share Tech Mono", "Courier New", monospace;
+    font-weight: 700;
+    color: #ffffff;
+    background: #020617;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 1.05em;
+    box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.8);
+    border: 1px solid #334155;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+    min-width: 2em;
     text-align: center;
-    font-size: 1.1em;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
 }
 
 .sheet-rolltemplate-alternity-attack .sheet-template-action {
     flex: 0 0 auto;
-    min-width: 60px;
+    min-width: 65px;
     text-align: right;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.sheet-rolltemplate-alternity-attack .sheet-template-hit-ama {
+    color: #fbbf24; /* Amber */
+    font-weight: 800;
+    text-shadow: 0 0 6px rgba(251, 191, 36, 0.6);
+    font-size: 0.85em;
+    text-transform: uppercase;
+}
+
+.sheet-rolltemplate-alternity-attack .sheet-template-hit-goo {
+    color: #a855f7; /* Purple */
+    font-weight: 800;
+    text-shadow: 0 0 6px rgba(168, 85, 247, 0.6);
+    font-size: 0.85em;
+    text-transform: uppercase;
+}
+
+.sheet-rolltemplate-alternity-attack .sheet-template-hit-ord {
+    color: #0d9488; /* Teal */
+    font-weight: 800;
+    text-shadow: 0 0 6px rgba(13, 148, 136, 0.6);
+    font-size: 0.85em;
+    text-transform: uppercase;
 }
 
 .sheet-rolltemplate-alternity-attack .sheet-template-miss {
-    color: #94a3b8;
+    color: #64748b; /* Slate */
     font-style: italic;
     font-size: 0.85em;
     font-weight: bold;
+    text-transform: uppercase;
 }
 
 .sheet-rolltemplate-alternity-attack .sheet-template-notes {
     font-size: 0.8em;
     margin-top: 6px;
-    padding: 4px;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 6px;
+    border-top: 1px solid rgba(51, 65, 85, 0.3);
     font-style: italic;
-    color: #475569;
+    color: #94a3b8;
 }
 
 .sheet-rolltemplate-alternity-attack .sheet-template-notes span {
-    font-weight: bold;
+    font-weight: 700;
     font-style: normal;
+    color: #cbd5e1;
+    text-transform: uppercase;
+    font-size: 0.95em;
 }
 
-/* Style the buttons in the template to look like professional UI buttons */
-.sheet-rolltemplate-alternity-attack a[href^="~"] {
-    background-color: #0d9488; /* Teal */
-    color: white !important;
-    border: 1px solid #0f766e;
-    padding: 1px 8px;
-    border-radius: 4px;
-    font-size: 0.85em;
-    text-decoration: none;
-    font-weight: bold;
-    display: inline-block;
-    transition: background-color 0.2s;
-    line-height: 1.4;
+/* Force same font size and style for all inline rolls */
+.sheet-rolltemplate-alternity-attack .inlinerollresult {
+    background-color: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+    font-size: 1em !important;
+    font-weight: 700 !important;
+    color: #ffffff !important;
 }
 
-.sheet-rolltemplate-alternity-attack a[href^="~"]:hover {
-    background-color: #0f766e;
-    border-color: #115e59;
-}
 
-/* Specific hit level colors for damage buttons */
-.sheet-rolltemplate-alternity-attack .sheet-template-hit-ord a[href^="~"] { background-color: #0d9488; }
-.sheet-rolltemplate-alternity-attack .sheet-template-hit-goo a[href^="~"] { background-color: #2563eb; }
-.sheet-rolltemplate-alternity-attack .sheet-template-hit-ama a[href^="~"] { background-color: #7c3aed; }
-
+/* ===== ROLL TEMPLATE: ALTERNITY DAMAGE ===== */
 .sheet-rolltemplate-alternity-damage .sheet-template-container {
-    border: 1px solid #1e293b;
-    background-color: #f9f7f2;
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    border: 1px solid #334155;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.1);
+    font-family: "Outfit", "Inter", "Roboto", sans-serif;
+    color: #f1f5f9;
     padding: 6px;
-    border-radius: 4px;
-    color: #1e293b;
-    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    min-width: 200px;
+    min-width: 240px;
+    max-width: 280px;
 }
 
 .sheet-rolltemplate-alternity-damage .sheet-template-header {
-    background-color: #1e293b;
-    color: white;
-    padding: 6px 10px;
-    font-weight: bold;
-    border-radius: 4px 4px 0 0;
-    margin-bottom: 6px;
+    background: rgba(15, 23, 42, 0.8);
+    backdrop-filter: blur(4px);
+    color: #f43f5e; /* Vibrant Rose / Red for damage */
+    padding: 8px 12px;
+    font-weight: 700;
     text-transform: uppercase;
-    font-size: 0.95em;
+    font-size: 0.8em;
     letter-spacing: 0.05em;
+    border-bottom: 1px solid rgba(51, 65, 85, 0.5);
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-radius: 6px 6px 0 0;
 }
 
 .sheet-rolltemplate-alternity-damage .sheet-template-row {
-    padding: 2px 4px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    font-size: 0.85em;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 8px 10px;
+    font-size: 0.85em;
+    background-color: rgba(30, 41, 59, 0.4);
+    border: 1px solid rgba(51, 65, 85, 0.3);
+    border-radius: 6px;
+    margin: 8px;
 }
 
 .sheet-rolltemplate-alternity-damage .sheet-template-row span {
-    font-weight: bold;
-    color: #475569;
+    font-weight: 700;
+    color: #94a3b8;
+    font-size: 0.85em;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
 }
 
 .sheet-rolltemplate-alternity-damage .sheet-template-result {
-    font-family: "Share Tech Mono", monospace;
-    font-weight: bold;
-    color: #1e293b;
-    background: #fef08a;
-    padding: 1px 6px;
-    border-radius: 3px;
-    border: 1px solid #eab308;
-    box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
-    font-size: 1em;
+    font-family: "Share Tech Mono", "Courier New", monospace;
+    font-weight: 700;
+    color: #ffffff;
+    background: #020617;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 1.05em;
+    box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.8);
+    border: 1px solid #334155;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
 }
 
+.sheet-rolltemplate-alternity-damage .sheet-template-notes {
+    font-size: 0.8em;
+    margin-top: 6px;
+    padding: 6px;
+    border-top: 1px solid rgba(51, 65, 85, 0.3);
+    font-style: italic;
+    color: #94a3b8;
+}
+
+.sheet-rolltemplate-alternity-damage .sheet-template-notes span {
+    font-weight: 700;
+    font-style: normal;
+    color: #cbd5e1;
+    text-transform: uppercase;
+    font-size: 0.95em;
+}
+
+/* Force same font size and style for all inline rolls */
 .sheet-rolltemplate-alternity-damage .inlinerollresult {
     background-color: transparent !important;
     border: none !important;
     padding: 0 !important;
     font-size: 1em !important;
     font-weight: 700 !important;
+    color: #ffffff !important;
 }
 
 
@@ -2314,3 +2391,100 @@ fieldset.repeating_weapons {
     color: #7dd3fc;
     text-shadow: 0 0 5px rgba(56, 189, 248, 0.5);
 }
+
+/* ===== ROLL TEMPLATE: ALTERNITY ARMOR ===== */
+.sheet-rolltemplate-alternity-armor .sheet-template-container {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    border: 1px solid #334155;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.1);
+    font-family: "Outfit", "Inter", "Roboto", sans-serif;
+    color: #f1f5f9;
+    padding: 6px;
+    min-width: 240px;
+    max-width: 280px;
+}
+
+.sheet-rolltemplate-alternity-armor .sheet-template-header {
+    background: rgba(15, 23, 42, 0.8);
+    backdrop-filter: blur(4px);
+    color: #a855f7; /* Vibrant Purple for Armor/Protection */
+    padding: 8px 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    letter-spacing: 0.05em;
+    border-bottom: 1px solid rgba(51, 65, 85, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 6px 6px 0 0;
+}
+
+.sheet-rolltemplate-alternity-armor .sheet-template-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 10px;
+    background-color: rgba(30, 41, 59, 0.4);
+    border: 1px solid rgba(51, 65, 85, 0.3);
+    border-radius: 6px;
+    margin: 8px;
+}
+
+.sheet-rolltemplate-alternity-armor .sheet-template-row span {
+    font-weight: 700;
+    color: #94a3b8;
+    font-size: 0.85em;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+.sheet-rolltemplate-alternity-armor .sheet-template-result {
+    font-family: "Share Tech Mono", "Courier New", monospace;
+    font-weight: 700;
+    color: #ffffff;
+    background: #020617;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 1.3em;
+    box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.8);
+    border: 1px solid #334155;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+}
+
+.sheet-rolltemplate-alternity-armor .sheet-template-notes {
+    font-size: 0.8em;
+    margin-top: 6px;
+    padding: 6px;
+    border-top: 1px solid rgba(51, 65, 85, 0.3);
+    font-style: italic;
+    color: #94a3b8;
+}
+
+.sheet-rolltemplate-alternity-armor .sheet-template-notes span {
+    font-weight: 700;
+    font-style: normal;
+    color: #cbd5e1;
+    text-transform: uppercase;
+    font-size: 0.95em;
+}
+
+/* Force same font size and style for all inline rolls */
+.sheet-rolltemplate-alternity-armor .inlinerollresult {
+    background-color: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+    font-size: 1.25em !important;
+    font-weight: 700 !important;
+    color: #ffffff !important;
+}
+
+/* Preserve newlines in all roll template notes sections */
+.sheet-rolltemplate-alternity-attack .sheet-template-notes,
+.sheet-rolltemplate-alternity-damage .sheet-template-notes,
+.sheet-rolltemplate-alternity-armor .sheet-template-notes {
+    white-space: pre-wrap !important;
+}
+

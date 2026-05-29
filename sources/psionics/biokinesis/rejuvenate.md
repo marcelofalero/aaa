@@ -4,9 +4,11 @@ cost: 3
 url: /psionics/biokinesis/#rejuvenate
 trained_only: false
 rank_benefits:
-- rank: 4
+- rank: 3
   title: Improved Effect
-- rank: 8
+- rank: 3
+  title: Treating Disease
+- rank: 6
   title: Laying On Hands
 - rank: 12
   title: Two Recipients

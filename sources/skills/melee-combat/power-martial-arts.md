@@ -3,6 +3,17 @@ attribute: STR
 cost: 3
 url: /skills/melee-combat#power-martial-arts
 trained_only: false
+rank_benefits:
+- rank: 1
+  title: Mass Leverage
+- rank: 3
+  title: High Impulse
+- rank: 5
+  title: Short-range Power (Fajin)
+- rank: 8
+  title: Structural Destruction
+- rank: 12
+  title: Master of Force
 name: Power Martial Arts
 ---
 

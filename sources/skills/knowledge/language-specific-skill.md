@@ -4,8 +4,6 @@ cost: 3
 url: /skills/knowledge#language-specific-skill
 trained_only: true
 rank_benefits:
-- rank: 3
-  title: Improved Communication
 - rank: 4
   title: Improved Communication
 - rank: 8

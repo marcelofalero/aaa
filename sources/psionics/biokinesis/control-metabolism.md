@@ -27,7 +27,7 @@ By spending an extra point of psionic energy, the character can treat the skill 
 
 #### Adrenal boost
 The character can mentally boost adrenaline output, giving an action check
-bonus. 
+bonus.
 - **Ordinary:** +1 to action check score.
 - **Good:** +2 to action check score.
 - **Amazing:** +3 to action check score.

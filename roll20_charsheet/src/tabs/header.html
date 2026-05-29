@@ -80,6 +80,94 @@ on('sheet:opened', function() {
 	});
 });
 
+/* ===== SPECIALTY SKILLS DATA MIGRATION ===== */
+on("sheet:opened", function() {
+	getAttrs(["specialties_migrated"], function(status) {
+		if (parseInt(status.specialties_migrated) === 1) {
+			return;
+		}
+		
+		// In unit tests, this parses as an empty array [] since the placeholder is commented out.
+		// In production, build_sheet.py replaces this comment and array with the actual JSON map.
+		const specialtiesToMigrate = /* <!-- SPECIALTY_MIGRATION_LIST_PLACEHOLDER --> */ [];
+		
+		// Add Psionics explicitly since it maps to multiple targets
+		const psionicsTargets = ["PsionicsKnowledge", "PsionicsLaw", "PsionicsLifeScience"];
+		
+		// Build list of all attributes to fetch
+		const oldAttrs = [];
+		const newAttrs = [];
+		
+		specialtiesToMigrate.forEach(function(spec) {
+			oldAttrs.push(spec.oldId + "Rank", spec.oldId + "_is_trained");
+			newAttrs.push(spec.newId + "Rank", spec.newId + "_is_trained");
+		});
+		
+		oldAttrs.push("PsionicsRank", "Psionics_is_trained");
+		psionicsTargets.forEach(function(target) {
+			newAttrs.push(target + "Rank", target + "_is_trained");
+		});
+		
+		getAttrs([...oldAttrs, ...newAttrs], function(values) {
+			const update = {};
+			let migratedCount = 0;
+			
+			// Migrate standard specialties
+			specialtiesToMigrate.forEach(function(spec) {
+				const oldRankKey = spec.oldId + "Rank";
+				const oldRankVal = values[oldRankKey] !== undefined ? values[oldRankKey] : values[oldRankKey.toLowerCase()];
+				const oldRank = parseInt(oldRankVal) || 0;
+				
+				const oldTrainedKey = spec.oldId + "_is_trained";
+				const oldTrainedVal = values[oldTrainedKey] !== undefined ? values[oldTrainedKey] : values[oldTrainedKey.toLowerCase()];
+				
+				const newRankKey = spec.newId + "Rank";
+				const newRankVal = values[newRankKey] !== undefined ? values[newRankKey] : values[newRankKey.toLowerCase()];
+				const newRank = parseInt(newRankVal) || 0;
+				
+				if (oldRank > 0 && newRank === 0) {
+					update[newRankKey] = oldRank;
+					if (oldTrainedVal !== undefined) {
+						update[spec.newId + "_is_trained"] = oldTrainedVal;
+					}
+					migratedCount++;
+				}
+			});
+			
+			// Migrate Psionics
+			const oldPsionicsRankVal = values["PsionicsRank"] !== undefined ? values["PsionicsRank"] : values["psionicsrank"];
+			const oldPsionicsRank = parseInt(oldPsionicsRankVal) || 0;
+			const oldPsionicsTrainedVal = values["Psionics_is_trained"] !== undefined ? values["Psionics_is_trained"] : values["psionics_is_trained"];
+			
+			if (oldPsionicsRank > 0) {
+				psionicsTargets.forEach(function(target) {
+					const newRankKey = target + "Rank";
+					const newRankVal = values[newRankKey] !== undefined ? values[newRankKey] : values[newRankKey.toLowerCase()];
+					const newRank = parseInt(newRankVal) || 0;
+					if (newRank === 0) {
+						update[newRankKey] = oldPsionicsRank;
+						if (oldPsionicsTrainedVal !== undefined) {
+							update[target + "_is_trained"] = oldPsionicsTrainedVal;
+						}
+						migratedCount++;
+					}
+				});
+			}
+			
+			// Always set migration status to 1 so this doesn't run again
+			update["specialties_migrated"] = 1;
+			
+			if (migratedCount > 0) {
+				console.log("Migrating " + migratedCount + " specialty skill values to new deconflicted IDs:", update);
+				setAttrs(update);
+			} else {
+				console.log("No specialty skill values needed migration.");
+				setAttrs({ specialties_migrated: 1 });
+			}
+		});
+	});
+});
+
 /* ===== SUCCESS SCORE AUTO-CALCULATION ===== */
 const attributes = ['Strength', 'Dexterity', 'Constitution', 'Intelligence', 'Will', 'Personality'];
 
@@ -102,9 +190,7 @@ on("change:actioncheck change:actiondie sheet:opened", function() {
     getAttrs(["ActionCheck", "ActionDie", "character_name"], function(v) {
         let val = parseInt(v.ActionCheck) || 0;
         let die = v.ActionDie || "d0";
-        let scores = `${val + 1}+ / ${val} / ${Math.floor(val / 2)} / ${Math.floor(val / 4)}`;
-        let results = `[[1d20cs<1cf>20+${die}cs<0cf<0]]`;
-        let macro = `&{template:alternity-skill} {{name=Action Check}} {{score=${scores}}} {{results=${results}}}`;
+        let macro = `!aaa-action-check @{character_name} || @{character_id} || ${val + 1} || ${val} || ${Math.floor(val / 2)} || ${Math.floor(val / 4)} || [[1d20cs<1cf>20]] || [[${die}cs<0cf<0]]`;
         
         setAttrs({
             "ActionCheckM": val + 1,
@@ -203,7 +289,7 @@ function updateAttackMacro(section, rowId) {
     // Core attributes to fetch
     const coreAttrs = [
         'name', 'score', 'type', 'range', 'die', 'accuracy', 'sit', 'multi',
-        'damageordinary', 'damagegood', 'damageamazing'
+        'damageordinary', 'damagegood', 'damageamazing', 'notes'
     ];
     
     // Map to actual Roll20 attribute names
@@ -219,26 +305,26 @@ function updateAttackMacro(section, rowId) {
             if (attr === 'accuracy') suffix = 'Acc';
             if (attr === 'sit') suffix = 'Sit';
             if (attr === 'multi') suffix = 'Multi';
-            // Damage suffixes are lowercase in both
+            if (attr === 'notes') suffix = 'Notes';
         }
         return prefix + s + suffix;
     });
 
     const extraFields = isStarship ? ['WeaponStationO', 'WeaponStationG', 'WeaponStationA'] : [];
     
-    getAttrs(['character_id', ...fields, ...extraFields], function(v) {
+    getAttrs(['character_name', 'character_id', ...fields, ...extraFields], function(v) {
         console.log(`DEBUG: updateAttackMacro values for ${rowId}:`, v);
-        const charId = v.character_id;
         
         const getVal = (suffix) => {
             let actualSuffix = suffix;
             if (isStarship) {
                 if (suffix === 'accuracy') actualSuffix = 'Acc';
-                else if (suffix === 'name' || suffix === 'score' || suffix === 'type' || suffix === 'range' || suffix === 'die' || suffix === 'sit' || suffix === 'multi') {
+                else if (suffix === 'name' || suffix === 'score' || suffix === 'type' || suffix === 'range' || suffix === 'die' || suffix === 'sit' || suffix === 'multi' || suffix === 'notes') {
                     actualSuffix = suffix.charAt(0).toUpperCase() + suffix.slice(1);
                 }
             }
-            return v[prefix + s + actualSuffix];
+            const key = (prefix + s + actualSuffix).toLowerCase();
+            return v[key];
         };
 
         const name = getVal('name') || 'Weapon';
@@ -256,62 +342,71 @@ function updateAttackMacro(section, rowId) {
         let scoreA = Math.floor(score / 4);
         
         if (isStarship && !score) {
-            score = parseInt(v['WeaponStationO']) || 0;
-            scoreG = parseInt(v['WeaponStationG']) || 0;
-            scoreA = parseInt(v['WeaponStationA']) || 0;
+            score = parseInt(v['weaponstationo']) || 0;
+            scoreG = parseInt(v['weaponstationg']) || 0;
+            scoreA = parseInt(v['weaponstationa']) || 0;
         }
+
+        const getStepDieRoll = (stepVal) => {
+            const clamped = Math.max(-15, Math.min(15, stepVal));
+            const sign = clamped >= 0 ? '+' : '-';
+            const absStep = Math.abs(clamped);
+            if (absStep === 0) {
+                return { sign: '+', roll: '0' };
+            }
+            const dieMap = {
+                1: '1d4', 2: '1d6', 3: '1d8', 4: '1d12', 5: '1d20',
+                6: '2d20', 7: '3d20', 8: '4d20', 9: '5d20', 10: '6d20',
+                11: '7d20', 12: '8d20', 13: '9d20', 14: '10d20', 15: '11d20'
+            };
+            const die = dieMap[absStep] || '0';
+            return {
+                sign: sign,
+                roll: die === '0' ? '0' : `${die}cs<0cf<0`
+            };
+        };
         
+        const sanitize = (str) => {
+            if (!str) return '';
+            return str.replace(/\r?\n|\r/g, ' ').replace(/\|\|/g, '|').trim();
+        };
+
         const generateMacro = (mode) => {
-            let script = "!script {{";
-            script += `\n--#title|${name}\n`;
-            script += `--#titlecardbackground|#1e293b\n`;
-            script += `--#titlecardfontcolor|#ffffff\n`;
-            script += `--#commandcardborder|1px solid #1e293b\n`;
-            script += `--#commandcardboxshadow|0 2px 5px rgba(0,0,0,0.2)\n`;
-            script += `--#titlecardstyle|border-radius: 4px 4px 0 0; padding: 6px 10px;\n`;
-            script += `--#bodycardstyle|border-top: none; border-radius: 0 0 4px 4px;\n`;
-            script += `--#bodyfontsize|12px\n`;
-            script += `--#oddrowbackground|#111827\n`;
-            script += `--#evenrowbackground|#030712\n`;
-            script += `--#oddrowfontcolor|#f9fafb\n`;
-            script += `--#evenrowfontcolor|#f9fafb\n`;
+            const weaponName = sanitize(getVal('name') || 'Weapon');
+            const charName = sanitize(v['character_name'] || 'Character');
             
-            const type = getVal('type');
-            const range = getVal('range');
-            if (type) script += `--+Type|${type}\n`;
-            if (range) script += `--+Range|${range}\n`;
-
-            script += `--+Scores|**${score}** / **${scoreG}** / **${scoreA}**\n`;
-            script += `--+Damage Reference|**${dmgO}** / **${dmgG}** / **${dmgA}**\n`;
-            script += `--+---\n`;
-
-            script += `--=a|1d20\n`;
-            script += `--+Control Die|**[$a]**\n`;
+            const type = sanitize(getVal('type') || '-');
+            const range = sanitize(getVal('range') || '-');
+            const notes = sanitize(getVal('notes') || '');
+            
+            const scoreO = score;
+            const scoreGVal = scoreG;
+            const scoreAVal = scoreA;
+            
+            // Format command:
+            // !aaa-roll [CharName] || [WeaponName] || [Type] || [Range] || [Notes] || [ScoreO] || [ScoreG] || [ScoreA] || [Mode]
+            let cmd = `!aaa-roll ${charName} || ${weaponName} || ${type} || ${range} || ${notes} || ${scoreO} || ${scoreGVal} || ${scoreAVal} || ${mode}`;
             
             for (let i = 1; i <= mode; i++) {
                 const penalty = (mode > 1) ? i : 0;
                 const total = baseMod + penalty;
-                const stepDie = combatStepMap[String(Math.max(-15, Math.min(15, total)))] || '+0';
+                const step = getStepDieRoll(total);
                 
-                script += `--=s${i}|0${stepDie}\n`;
-                script += `--=res${i}|[$a] + [$s${i}]\n`;
-                script += `--+Attack ${i} ([$a] ${stepDie})|**[$res${i}]**\n`;
+                cmd += ` || ${step.roll} || ${step.sign}`;
             }
             
-            script += "}}";
-            return script;
+            return cmd;
         };
         
         const update = {};
         update[prefix + s + 'macro1'] = generateMacro(1);
         update[prefix + s + 'macro2'] = generateMacro(2);
-        update[prefix + s + 'macro3'] = generateMacro(3);
         setAttrs(update);
     });
 }
 
 // Attack Forms Listeners
-on('change:repeating_attackforms:attackformname change:repeating_attackforms:attackformscore change:repeating_attackforms:attackformdie change:repeating_attackforms:attackformaccuracy change:repeating_attackforms:attackformsit change:repeating_attackforms:attackformmulti remove:repeating_attackforms sheet:opened', function() {
+on('change:repeating_attackforms:attackformname change:repeating_attackforms:attackformnotes change:repeating_attackforms:attackformscore change:repeating_attackforms:attackformdie change:repeating_attackforms:attackformaccuracy change:repeating_attackforms:attackformsit change:repeating_attackforms:attackformmulti remove:repeating_attackforms sheet:opened', function() {
     console.log("DEBUG: attackforms listener triggered");
     getSectionIDs('repeating_attackforms', ids => ids.forEach(id => updateAttackMacro('attackforms', id)));
 });
@@ -324,8 +419,6 @@ on('change:repeating_starshipweapons:StarshipWeaponName change:repeating_starshi
 
 
 
-/* ===== SPECIALTY TRAINING WORKERS ===== */
-<!-- SPECIALTY_WORKERS_PLACEHOLDER -->
 
 	</script>
 

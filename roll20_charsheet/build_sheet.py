@@ -207,6 +207,22 @@ def parse_yaml_skills(file_path):
             skills_data.append({'a': attr, 's': sorted_skills})
     return skills_data
 
+def find_duplicate_specialties(skills_data, psionics_data):
+    """Finds all duplicate specialty clean IDs across the rulesets."""
+    counts = {}
+    
+    def process_data(data_list):
+        for group in data_list:
+            for skill in group["s"]:
+                for spec in skill.get("sp", []):
+                    spec_id = clean_id(spec["n"])
+                    counts[spec_id] = counts.get(spec_id, 0) + 1
+                    
+    process_data(skills_data)
+    process_data(psionics_data)
+    
+    return {k for k, v in counts.items() if v > 1}
+
 def generate_skills_html(data_list, indent_level=3, is_psionics=False, urls_map=None):
     """Generates the HTML for broad and specialty skills based on the provided data."""
     all_broad_skills = []
@@ -235,8 +251,7 @@ def generate_skills_html(data_list, indent_level=3, is_psionics=False, urls_map=
             url = urls_map.get(name_lower.replace(' ', '-')) if urls_map else None
         if not url:
             url = f"https://aaa.dimble.net/{fallback_path}/{name_lower.replace(' ', '-')}"
-        if "https://aaa.dimble.net/psionics/" in url:
-            url = url.replace("/psionics/", "/core-mechanics/psionics/")
+
 
         # Collect metadata for the worker
         skill_metadata_list.append({
@@ -252,7 +267,8 @@ def generate_skills_html(data_list, indent_level=3, is_psionics=False, urls_map=
         broad_rb = skill.get("rb", None)
         info_icon = build_info_icon(cost, is_untrained_allowed, broad_rb)
         
-        h = f'{indent}<div class="sheet-skill-group-box">\n'
+        h = f'{indent}<input type="checkbox" name="attr_{id_name}" class="sheet-trained-check-hidden" value="1" style="display: none;" />\n'
+        h += f'{indent}<div class="sheet-skill-group-box">\n'
         h += f'{indent}\t<div class="sheet-skill-header-row">\n'
         h += f'{indent}\t\t<div></div>\n'
         h += f'{indent}\t\t<div class="sheet-skill-name">{name.upper()}</div>\n'
@@ -267,7 +283,7 @@ def generate_skills_html(data_list, indent_level=3, is_psionics=False, urls_map=
         h += f'{indent}\t\t<div class="sheet-roll-container">\n'
         h += f'{indent}\t\t\t<button type="roll" name="roll_{id_name}" class="sheet-roll-skill" value="@{{{id_name}_macro}}"></button>\n'
         h += f'{indent}\t\t</div>\n'
-        h += f'{indent}\t\t<div class="sheet-skill-name{" sheet-trained-only" if is_trained_only else ""}">{name} <button type="roll" name="roll_{id_name}_link" class="sheet-skill-link" value="[{name} Wiki]({url})">&#x2197;</button>{info_icon}</div>\n'
+        h += f'{indent}\t\t<div class="sheet-skill-name{" sheet-trained-only" if is_trained_only else ""}"><span class="sheet-skill-name-text">{name}</span> <button type="roll" name="roll_{id_name}_link" class="sheet-skill-link" value="[{name} Wiki]({url})">&#x2197;</button>{info_icon}</div>\n'
         h += f'{indent}\t\t<div class="sheet-skill-ability-label">{attr_short}</div>\n'
         h += f'{indent}\t\t<div class="sheet-skill-score-cell">\n'
         h += f'{indent}\t\t\t<input type="text" name="attr_{id_name}O" class="sheet-scoredisabled" disabled="true" value="{formula}">/\n'
@@ -282,14 +298,13 @@ def generate_skills_html(data_list, indent_level=3, is_psionics=False, urls_map=
             spec_attr = spec["at"]
             spec_untrained_allowed = spec["u"]
             spec_attr_full = ABILITY_MAP[spec_attr]
-            spec_id = clean_id(spec_name)
+            spec_id = f"{id_name}_{clean_id(spec_name)}"
             is_spec_trained_only = 1 if spec_untrained_allowed == "NO" else 0
             
             spec_url = urls_map.get(spec_name.lower()) if urls_map else None
             if not spec_url:
                 spec_url = f"{url}#{spec_name.lower().replace(' ', '-')}"
-            if "https://aaa.dimble.net/psionics/" in spec_url:
-                spec_url = spec_url.replace("/psionics/", "/core-mechanics/psionics/")
+
 
             # Collect metadata for the worker
             skill_metadata_list.append({
@@ -314,7 +329,7 @@ def generate_skills_html(data_list, indent_level=3, is_psionics=False, urls_map=
             h += f'{indent}\t\t\t<div class="sheet-roll-container">\n'
             h += f'{indent}\t\t\t\t<button type="roll" name="roll_{spec_id}" class="sheet-roll-skill" value="@{{{spec_id}_macro}}"></button>\n'
             h += f'{indent}\t\t\t</div>\n'
-            h += f'{indent}\t\t\t<div class="sheet-skill-name{" sheet-trained-only" if is_spec_trained_only else ""}">{spec_name} <button type="roll" name="roll_{spec_id}_link" class="sheet-skill-link" value="[{spec_name} Wiki]({spec_url})">&#x2197;</button>{spec_info_icon}</div>\n'
+            h += f'{indent}\t\t\t<div class="sheet-skill-name{" sheet-trained-only" if is_spec_trained_only else ""}"><span class="sheet-skill-name-text">{spec_name}</span> <button type="roll" name="roll_{spec_id}_link" class="sheet-skill-link" value="[{spec_name} Wiki]({spec_url})">&#x2197;</button>{spec_info_icon}</div>\n'
             h += f'{indent}\t\t\t<div class="sheet-skill-ability-label">{spec_attr}</div>\n'
             h += f'{indent}\t\t\t<input type="number" name="attr_{spec_id}Rank" class="sheet-score" value="0">\n'
             h += f'{indent}\t\t\t<div class="sheet-skill-score-cell">\n'
@@ -334,19 +349,40 @@ def generate_skill_worker_code(skill_ids):
     """Generates the JavaScript code for the skill macro worker."""
     code = """
 /* ===== SMART SKILL ROLL WORKER ===== */
-function updateSkillMacro(skillId, name, url, isTrainedOnly, type, parentBroadId) {
+function updateSkillMacro(skillId, name, url, isTrainedOnly, type, parentBroadId, isParentTrainedOnly) {
     const isSpecialty = type === 'specialty';
-    const trainingAttr = isSpecialty ? skillId + '_is_trained' : skillId;
+    const attrsToGet = isSpecialty ? [skillId + 'Rank', parentBroadId] : [skillId];
     
-    getAttrs([trainingAttr, skillId + 'O', skillId + 'G', skillId + 'A'], function(v) {
-        const isTrained = (v[trainingAttr] === '1' || v[trainingAttr] === 'on' || parseInt(v[trainingAttr]) === 1) ? 1 : 0;
+    getAttrs(attrsToGet, function(v) {
+        let isTrained = 0;
+        let isParentTrained = 0;
+        
+        if (isSpecialty) {
+            const rankVal = v[skillId + 'Rank'] !== undefined ? v[skillId + 'Rank'] : v[skillId.toLowerCase() + 'rank'];
+            const rank = parseInt(rankVal) || 0;
+            isTrained = rank > 0 ? 1 : 0;
+            
+            const parentVal = v[parentBroadId] !== undefined ? v[parentBroadId] : v[parentBroadId.toLowerCase()];
+            isParentTrained = (parentVal === '1' || parentVal === 'on' || parentVal === true || parentVal === 'true' || parseInt(parentVal) === 1) ? 1 : 0;
+        } else {
+            const val = v[skillId] !== undefined ? v[skillId] : v[skillId.toLowerCase()];
+            isTrained = (val === '1' || val === 'on' || val === true || val === 'true' || parseInt(val) === 1) ? 1 : 0;
+        }
+        
         const scores = `[[@{${skillId}O}]] / [[@{${skillId}G}]] / [[@{${skillId}A}]]`;
         
+        let canRoll = true;
+        if (isTrainedOnly && !isTrained) {
+            canRoll = false;
+        } else if (isSpecialty && isParentTrainedOnly && !isParentTrained && !isTrained) {
+            canRoll = false;
+        }
+        
         let macro = "";
-        if (!isTrained && isTrainedOnly) {
+        if (!canRoll) {
             macro = `/w gm attempts to use ${name} untrained, but it is a Trained Only skill.`;
         } else {
-            const defaultStep = !isTrained ? 1 : 0;
+            const defaultStep = isSpecialty ? (!isTrained ? 1 : 0) : 1;
             const query = getAlternityRollQuery(defaultStep);
             const untrainedFlag = (!isTrained) ? " {{untrained=1}}" : "";
             macro = `&{template:alternity-skill} {{name=${name}}} {{score=${scores}}} {{results=[[${query}]]}} {{wiki=[↗ Wiki Documentation](${url})}}${untrainedFlag}`;
@@ -354,6 +390,9 @@ function updateSkillMacro(skillId, name, url, isTrainedOnly, type, parentBroadId
         
         const update = {};
         update[skillId + '_macro'] = macro;
+        if (isSpecialty) {
+            update[skillId + '_is_trained'] = isTrained;
+        }
         setAttrs(update);
     });
 }
@@ -390,11 +429,22 @@ function getAlternityRollQuery(defaultStep) {
     return `?{Situation Modifier|${options.join('|')}}`;
 }
 """
+    broad_is_trained_only = {}
+    for s in skill_ids:
+        if s['type'] == 'broad':
+            broad_is_trained_only[s['id']] = s['is_trained_only']
+            
     listeners = []
     for s in skill_ids:
-        trigger = s['id'] if s['type'] == 'broad' else f"{s['id']}_is_trained"
-        name_param = f"{s['broad_name']} - {s['name']}" if s['type'] == 'specialty' else s['name']
-        listeners.append(f'on("change:{trigger.lower()} sheet:opened", function() {{ updateSkillMacro("{s["id"]}", "{name_param}", "{s["url"]}", {s["is_trained_only"]}, "{s["type"]}", "{s.get("parent_broad_id", "")}"); }});')
+        if s['type'] == 'broad':
+            trigger_str = f'change:{s["id"].lower()}'
+            listeners.append(f'on("{trigger_str} sheet:opened", function() {{ updateSkillMacro("{s["id"]}", "{s["name"]}", "{s["url"]}", {s["is_trained_only"]}, "broad", "", 0); }});')
+        else:
+            parent_id = s["parent_broad_id"]
+            parent_trained_only = broad_is_trained_only.get(parent_id, 0)
+            trigger_str = f'change:{s["id"].lower()}rank change:{parent_id.lower()}'
+            name_param = f"{s['broad_name']} - {s['name']}"
+            listeners.append(f'on("{trigger_str} sheet:opened", function() {{ updateSkillMacro("{s["id"]}", "{name_param}", "{s["url"]}", {s["is_trained_only"]}, "specialty", "{parent_id}", {parent_trained_only}); }});')
     
     return code + "\n" + "\n".join(listeners)
 
@@ -454,15 +504,23 @@ def build():
             content = content.replace('<!-- PSIONICS_PLACEHOLDER -->', psionics_html)
         
         if filename == 'header.html':
-            # Generate specialty training workers
-            spec_workers = []
+            content = content.replace('<!-- SKILL_MACRO_WORKERS_PLACEHOLDER -->', skill_worker_code)
+            
+            # Generate specialty skills migration list
+            specialties_to_migrate = []
             for s in all_skill_ids:
                 if s['type'] == 'specialty':
-                    sid = s['id']
-                    spec_workers.append(f'on("change:{sid.lower()}rank sheet:opened", function() {{ getAttrs(["{sid}Rank"], function(v) {{ setAttrs({{ "{sid}_is_trained": ((parseInt(v["{sid}Rank"]) || 0) > 0 ? 1 : 0) }}); }}); }});')
-            
-            content = content.replace('<!-- SPECIALTY_WORKERS_PLACEHOLDER -->', "\n".join(spec_workers))
-            content = content.replace('<!-- SKILL_MACRO_WORKERS_PLACEHOLDER -->', skill_worker_code)
+                    # Skip Psionics specialty since it's handled separately
+                    if s['name'] == 'Psionics':
+                        continue
+                    old_id = clean_id(s['name'])
+                    new_id = s['id']
+                    specialties_to_migrate.append({
+                        'oldId': old_id,
+                        'newId': new_id
+                    })
+            migration_list_js = json.dumps(specialties_to_migrate)
+            content = content.replace('/* <!-- SPECIALTY_MIGRATION_LIST_PLACEHOLDER --> */ []', migration_list_js)
             
         content = content.replace('<!-- ROLL_QUERY_DEFAULT_0 -->', roll_query_0)
         content = content.replace('<!-- ROLL_QUERY_DEFAULT_1 -->', roll_query_1)

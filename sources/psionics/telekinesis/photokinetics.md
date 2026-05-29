@@ -6,16 +6,10 @@ trained_only: false
 rank_benefits:
 - rank: 3
   title: Simple Illusion
-- rank: 4
-  title: ''
 - rank: 6
   title: Flash
-- rank: 8
-  title: ''
 - rank: 9
   title: Gargantuan Illusion
-- rank: 12
-  title: ''
 - rank: 12
   title: Improved Illusion
 extended_duration: true

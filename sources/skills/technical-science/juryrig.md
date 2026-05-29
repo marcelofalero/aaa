@@ -3,6 +3,9 @@ attribute: INT
 cost: 3
 url: /skills/technical-science#juryrig
 trained_only: false
+rank_benefits:
+- rank: 6
+  title: Improved Juryrig
 name: Juryrig
 ---
 

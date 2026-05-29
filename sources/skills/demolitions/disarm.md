@@ -6,12 +6,12 @@ trained_only: false
 rank_benefits:
 - rank: 3
   title: Improved Handling
-- rank: 6
-  title: Disaster Avoidance
 - rank: 9
   title: Improved Handling
 - rank: 12
   title: Improved Handling
+- rank: 6
+  title: Disaster Avoidance
 name: Disarm
 ---
 

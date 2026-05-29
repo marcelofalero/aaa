@@ -3,7 +3,13 @@ attribute: INT
 cost: 2
 url: /skills/knowledge#deduce
 trained_only: false
-rank_benefits: []
+rank_benefits:
+- rank: 4
+  title: Resistance Modifier
+- rank: 8
+  title: Resistance Modifier
+- rank: 12
+  title: Resistance Modifier
 name: Deduce
 ---
 

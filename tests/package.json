@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "playwright test sheet_and_api.spec.js",
+    "test:vtt": "playwright test roll20_vtt.spec.js",
+    "update-sheet": "node update_sheet.js"
   },
   "keywords": [],
   "author": "",

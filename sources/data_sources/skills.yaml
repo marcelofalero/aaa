@@ -34,9 +34,9 @@ items:
           - en:
               name: Aerobatics
               description: |-
-                This specialty skill represents a character's mastery of complex maneuvers during personal flight, whether through natural wings, specialized jump-packs, or gravitic personal flight devices (GADS). 
+                This specialty skill represents a character's mastery of complex maneuvers during personal flight, whether through natural wings, specialized jump-packs, or gravitic personal flight devices (GADS).
 
-                While very basic maneuvering in flight is covered by the Acrobatics broad skill, Aerobatics is required for high-speed turns, precise landing, evasive maneuvers, and aerial acrobatics. 
+                While very basic maneuvering in flight is covered by the Acrobatics broad skill, Aerobatics is required for high-speed turns, precise landing, evasive maneuvers, and aerial acrobatics.
 
                 At **Rank 4** in **Armor Operation—Propulsion Systems**, this skill can also be used for complex maneuvers using a powered suit's integrated thrusters.
 
@@ -160,12 +160,12 @@ items:
             title: Action Benefit
           - rank: 4
             title: Resistance Modifier
-          - rank: 7
-            title: Reaction Dodge
           - rank: 8
             title: Resistance Modifier
           - rank: 12
             title: Resistance Modifier
+          - rank: 7
+            title: Reaction Dodge
       fall:
         attribute: DEX
         cost: 3
@@ -214,7 +214,13 @@ items:
 
                 **Ventaja de Sesheyan** Los personajes Sesheyan sin la habilidad Entrenamiento en gravedad cero funcionan como si la tuvieran en Rango 1. Si un sesheyan compra esta habilidad, las penalizaciones se reducen en 1 paso y las bonificaciones mejoran en la misma cantidad (bonificación máxima -2 en gravedad ligera).
         trained_only: true
-        rank_benefits: []
+        rank_benefits:
+          - rank: 4
+            title: Improved Balance
+          - rank: 7
+            title: No Penalty in Zero-G
+          - rank: 10
+            title: Improved Locomotion
     trained_only: false
   administration:
     attribute: WIL
@@ -379,6 +385,15 @@ items:
 
                 ▶ **Rango 12 [Loophole Master]** El Personaje genera **el doble que el Éxitos** en cualquier verificación. Además, no se puede interferir con el Personaje; Utilizan rutas de procedimiento oscuras que hacen imposible que otros accedan a Rastrear donde realmente se está procesando la solicitud.
         trained_only: false
+        rank_benefits:
+          - rank: 2
+            title: Optimized Routing
+          - rank: 6
+            title: Procedural Immunity
+          - rank: 9
+            title: Invisible Hand
+          - rank: 12
+            title: Loophole Master
       management:
         attribute: WIL
         cost: 3
@@ -419,6 +434,13 @@ items:
 
                 ▶ **Rango 6 [Master of Capital]** El Personaje optimiza drásticamente la tasa de quema del grupo. Todos los **costos de mantenimiento** para empleados, barcos y propiedades bajo la supervisión de Personaje se **reducen a la mitad**.
         trained_only: false
+        rank_benefits:
+          - rank: 2
+            title: Investment Portfolio
+          - rank: 3
+            title: Financial Leverage
+          - rank: 6
+            title: Master of Capital
     trained_only: false
   animal-handling:
     attribute: WIL
@@ -575,7 +597,9 @@ items:
 
                 *Nota: Esto no protege el soporte. Los trucos no se pueden combinar con acciones Otros (por ejemplo, atacar mientras se salta).*
         trained_only: false
-        rank_benefits: []
+        rank_benefits:
+          - rank: 3
+            title: Trick Riding
       animal-training:
         attribute: WIL
         cost: 3
@@ -692,7 +716,23 @@ items:
         rank_benefits:
           - rank: 1
             title: Improved Operation
+          - rank: 4
+            title: Improved Operation
+          - rank: 6
+            title: Improved Operation
+          - rank: 10
+            title: Improved Operation
           - rank: 2
+            title: Shaking Off Stuns
+          - rank: 4
+            title: Shaking Off Stuns
+          - rank: 6
+            title: Shaking Off Stuns
+          - rank: 8
+            title: Shaking Off Stuns
+          - rank: 10
+            title: Shaking Off Stuns
+          - rank: 12
             title: Shaking Off Stuns
           - rank: 7
             title: Powered Armor Operation
@@ -893,6 +933,27 @@ items:
 
                 ▶ **Rango 5, 8, 11 [Distancia vertical aumentada]:** La distancia vertical aumenta en +0,5 m.
         trained_only: false
+        rank_benefits:
+          - rank: 3
+            title: Increased Running Distance
+          - rank: 6
+            title: Increased Running Distance
+          - rank: 9
+            title: Increased Running Distance
+          - rank: 12
+            title: Increased Running Distance
+          - rank: 4
+            title: Increased Standing Distance
+          - rank: 7
+            title: Increased Standing Distance
+          - rank: 10
+            title: Increased Standing Distance
+          - rank: 5
+            title: Increased Vertical Distance
+          - rank: 8
+            title: Increased Vertical Distance
+          - rank: 11
+            title: Increased Vertical Distance
       swim:
         attribute: STR
         cost: 2
@@ -915,6 +976,21 @@ items:
 
                 ▶ **Rango 4, 8, 12 [Velocidad de natación aumentada]:** La velocidad de natación aumenta en 1 m en Rango 4, 8 y 12.
         trained_only: true
+        rank_benefits:
+          - rank: 1
+            title: Improved Breathing
+          - rank: 4
+            title: Improved Breathing
+          - rank: 8
+            title: Improved Breathing
+          - rank: 12
+            title: Improved Breathing
+          - rank: 4
+            title: Increased Swim Speed
+          - rank: 8
+            title: Increased Swim Speed
+          - rank: 12
+            title: Increased Swim Speed
       throw:
         attribute: STR
         cost: 2
@@ -949,6 +1025,17 @@ items:
 
                 ▶ **Rango 12 (Desviar):** Una vez por ronda, el Personaje puede intentar desviar un proyectil lanzado (como una granada o un cuchillo), para ello necesita estar al alcance del brazo del proyectil y tener éxito en una prueba opuesta de lanzamiento de Atletismo. Un resultado **Asombroso** en la prueba significa que pueden devolverlo inmediatamente como acción gratuita.
         trained_only: false
+        rank_benefits:
+          - rank: 3
+            title: Trajectory Mastery
+          - rank: 6
+            title: Trajectory Mastery
+          - rank: 9
+            title: Trajectory Mastery
+          - rank: 12
+            title: Trajectory Mastery
+          - rank: 12
+            title: Deflect
     trained_only: false
   awareness:
     attribute: WIL
@@ -1157,6 +1244,15 @@ items:
                 ### Beneficios de Rango
                 ⊗ **Rango 1, 4, 7, 10 [Arte del trato]** Obtiene una cantidad de pasos de bonificación de situación basados en el Rangos en este Especialidad (-1 paso en Rango 1, -2 pasos en Rango 4, -3 pasos en Rango 7 y -4 pasos en Rango 10) al hacer tratos, regatear o negociar dentro del alcance. de las finanzas corporativas.
         trained_only: false
+        rank_benefits:
+          - rank: 1
+            title: Art of the deal
+          - rank: 4
+            title: Art of the deal
+          - rank: 7
+            title: Art of the deal
+          - rank: 10
+            title: Art of the deal
       illicit-business:
         attribute: INT
         cost: 3
@@ -1177,7 +1273,15 @@ items:
                 ### Beneficios de Rango
                 ⊗ **Rango 1, 4, 7, 10 [Arte del trato]** Obtiene una cantidad de pasos de bonificación de situación basados en el Rangos en este Especialidad (-1 paso en Rango 1, -2 pasos en Rango 4, -3 pasos en Rango 7 y -4 pasos en Rango 10) al hacer tratos, regatear o negociar dentro del alcance. de Negocios ilícito.
         trained_only: false
-        rank_benefits: []
+        rank_benefits:
+          - rank: 1
+            title: Art of the deal
+          - rank: 4
+            title: Art of the deal
+          - rank: 7
+            title: Art of the deal
+          - rank: 10
+            title: Art of the deal
       small-business:
         attribute: INT
         cost: 3
@@ -1198,7 +1302,15 @@ items:
                 ### Beneficios de Rango
                 ⊗ **Rango 1, 4, 7, 10 [Arte del trato]** Obtiene una cantidad de pasos de bonificación de situación basados en el Rangos en este Especialidad (-1 paso en Rango 1, -2 pasos en Rango 4, -3 pasos en Rango 7 y -4 pasos en Rango 10) al hacer tratos, regatear o negociar dentro del alcance. de las pequeñas finanzas Negocios.
         trained_only: false
-        rank_benefits: []
+        rank_benefits:
+          - rank: 1
+            title: Art of the deal
+          - rank: 4
+            title: Art of the deal
+          - rank: 7
+            title: Art of the deal
+          - rank: 10
+            title: Art of the deal
     trained_only: false
   computer-science:
     attribute: INT
@@ -1255,6 +1367,13 @@ items:
 
                 ▶ Rango 4, 8, 12 [Efecto aumentado]: A medida que un Personaje gana Rangos en este Especialidad, mejora su capacidad para realizar acciones relacionadas con la piratería. Esto se refleja en una bonificación de **-1 Dado de Situación en Rango 4**, una bonificación de **-2 en Rango 8** y una bonificación de **-3 en Rango 12**.
         trained_only: true
+        rank_benefits:
+          - rank: 4
+            title: Increased Effect
+          - rank: 8
+            title: Increased Effect
+          - rank: 12
+            title: Increased Effect
       hardware:
         attribute: INT
         cost: 3
@@ -1273,6 +1392,13 @@ items:
 
                 ▶ Rango 4, 8, 12 [Efecto aumentado]: A medida que un Personaje gana Rangos en este Especialidad, mejora su capacidad para reparar sistemas informáticos y trabajar con hardware informático en forma Otros. Esto se refleja en una bonificación de **-1 Dado de Situación en Rango 4**, una bonificación de **-2 en Rango 8** y una bonificación de **-3 en Rango 12**.
         trained_only: false
+        rank_benefits:
+          - rank: 4
+            title: Increased Effect
+          - rank: 8
+            title: Increased Effect
+          - rank: 12
+            title: Increased Effect
       programming:
         attribute: INT
         cost: 3
@@ -1295,6 +1421,19 @@ items:
 
                 **Rango 3, 6, 9, 12 [Crear programas]:** Un Personaje con Rango 3 en esta habilidad es capaz de crear nuevos programas de calidad marginal y complejidad marginal. Los programas Ordinario se pueden crear en Rango 6, los programas Bueno en Rango 9 y los programas Asombroso en Rango 12.
         trained_only: false
+        rank_benefits:
+          - rank: 3
+            title: Modify/Enhance Programs
+          - rank: 6
+            title: Modify/Enhance Programs
+          - rank: 3
+            title: Create Programs
+          - rank: 6
+            title: Create Programs
+          - rank: 9
+            title: Create Programs
+          - rank: 12
+            title: Create Programs
     trained_only: false
   covert-ops:
     attribute: DEX
@@ -1651,7 +1790,7 @@ items:
       - en:
           name: Culture
           description: |-
-            This broad skill represents a character's ability to understand and interact with cultures that are different from his own. Areas of knowledge covered by the skill include the customs, philosophy, and way of life of a particular culture, as well as a basic familiarity with major historical figures, events, and trends important to that culture. In the use of the broad skill, a character applies what he knows about cultural trends and studies to make an educated guess about how to interact with a member of another culture. The broad skill provides at least a working knowledge of what to do when dealing with any alien culture. 
+            This broad skill represents a character's ability to understand and interact with cultures that are different from his own. Areas of knowledge covered by the skill include the customs, philosophy, and way of life of a particular culture, as well as a basic familiarity with major historical figures, events, and trends important to that culture. In the use of the broad skill, a character applies what he knows about cultural trends and studies to make an educated guess about how to interact with a member of another culture. The broad skill provides at least a working knowledge of what to do when dealing with any alien culture.
 
             When Culture or any of its specialty skills is used in an interactive context with one or more other characters, it is considered an encounter skill (see the sidebar). A Critical Failure result on a skill check indicates that the character has thoroughly insulted the individual or group he's trying to deal with. Other skill check results change the target's attitude as shown on **TABLE P25: ENCOUNTER SKILL EFFECTS**. The greater the degree of success, the more endearing and flattering the character appears to the member(s) of the culture he's dealing with. The complexity of the ideas that are being communicated during a use of the Culture skill (or the use of one of its specialty skills) may provide a modifier to the skill check:
 
@@ -1715,7 +1854,15 @@ items:
                 ### Beneficios de Rango
                 ⊗ **Rango 3, 6, 9, 12 [Efecto aumentado]:** Obtener Rangos en *Cultura-Etiqueta* en lo que respecta a un determinado Cultura se traduce en una bonificación al uso de *Cultura-Diplomacia* cuando esa habilidad se usa en un miembro del Cultura en cuestión. Tener la habilidad *Cultura-Etiqueta* apropiada en Rango 3 proporciona una bonificación de -1 a las pruebas de habilidad *Cultura-Diplomacia*. La bonificación mejora a -2 en Rango 6, a -3 en Rango 9 y a -4 en Rango 12.
         trained_only: true
-        rank_benefits: []
+        rank_benefits:
+          - rank: 3
+            title: Increased Effect
+          - rank: 6
+            title: Increased Effect
+          - rank: 9
+            title: Increased Effect
+          - rank: 12
+            title: Increased Effect
       diplomacy:
         attribute: PER
         cost: 3
@@ -1738,9 +1885,9 @@ items:
           - en:
               name: First Encounter
               description: |-
-                This specialty skill represents a character's training in the theories and protocols of making first contact with a previously unknown culture. With this skill, a character can assess the mental, physical, and technological capabilities of an unfamiliar species, begin the process of establishing communications and learning each other's language, and make a preliminary study of the strangers' cultural and societal habits. 
+                This specialty skill represents a character's training in the theories and protocols of making first contact with a previously unknown culture. With this skill, a character can assess the mental, physical, and technological capabilities of an unfamiliar species, begin the process of establishing communications and learning each other's language, and make a preliminary study of the strangers' cultural and societal habits.
 
-                A first encounter skill check is always a complex chore, and may take days, weeks, or even months to successfully complete. The Gamemaster will assign the number of successes necessary to complete the skill check based on the extent of difference between the two cultures involved. Also, the Gamemaster will determine the initial attitude of the target creature(s) toward the character, and may inform the character of changes in that attitude that take place while the complex skill check is under way. 
+                A first encounter skill check is always a complex chore, and may take days, weeks, or even months to successfully complete. The Gamemaster will assign the number of successes necessary to complete the skill check based on the extent of difference between the two cultures involved. Also, the Gamemaster will determine the initial attitude of the target creature(s) toward the character, and may inform the character of changes in that attitude that take place while the complex skill check is under way.
 
                 Upon the successful completion of the first encounter skill check, the character immediately gains rank 1 in the *knowledge-language* and *culture-etiquette* skills that relate to the formerly unknown culture.
 
@@ -1758,6 +1905,15 @@ items:
                 ### Beneficios de Rango
                 ⊗ **Rango 3, 6, 9, 12 [Adaptable]:** Obtiene una bonificación de situación basada en Rangos en este Especialidad (-1 paso en Rango 3, -2 pasos en Rango 6, -3 pasos en Rango 9 y -4 pasos en Rango 12) cuando se trata de culturas desconocidas.
         trained_only: true
+        rank_benefits:
+          - rank: 3
+            title: Adaptable
+          - rank: 6
+            title: Adaptable
+          - rank: 9
+            title: Adaptable
+          - rank: 12
+            title: Adaptable
     trained_only: false
   deception:
     attribute: PER
@@ -1922,6 +2078,15 @@ items:
 
                 ▶ **Rango 3, 6, 9, 12 [Ventaja Pro]:** El Personaje recibe un bono Dado de Situación en cheques de juego: **Rango 3 (-1)**, **Rango 6 (-2)**, **Rango 9 (-3)**, **Rango 12 (-4)**.
         trained_only: false
+        rank_benefits:
+          - rank: 3
+            title: Pro Advantage
+          - rank: 6
+            title: Pro Advantage
+          - rank: 9
+            title: Pro Advantage
+          - rank: 12
+            title: Pro Advantage
       gamble-nerve-games:
         attribute: PER
         cost: 3
@@ -1944,6 +2109,15 @@ items:
 
                 ▶ **Rango 3, 6, 9, 12 [Ventaja Pro]:** El Personaje recibe un bono Dado de Situación en cheques de juego: **Rango 3 (-1)**, **Rango 6 (-2)**, **Rango 9 (-3)**, **Rango 12 (-4)**.
         trained_only: false
+        rank_benefits:
+          - rank: 3
+            title: Pro Advantage
+          - rank: 6
+            title: Pro Advantage
+          - rank: 9
+            title: Pro Advantage
+          - rank: 12
+            title: Pro Advantage
     trained_only: false
   demolitions:
     attribute: WIL
@@ -2081,12 +2255,12 @@ items:
         rank_benefits:
           - rank: 3
             title: Improved Handling
-          - rank: 6
-            title: Disaster Avoidance
           - rank: 9
             title: Improved Handling
           - rank: 12
             title: Improved Handling
+          - rank: 6
+            title: Disaster Avoidance
       scratch-built-explosives:
         attribute: WIL
         cost: 3
@@ -2146,12 +2320,12 @@ items:
         rank_benefits:
           - rank: 3
             title: Improved Handling
-          - rank: 6
-            title: Disaster Avoidance
           - rank: 9
             title: Improved Handling
           - rank: 12
             title: Improved Handling
+          - rank: 6
+            title: Disaster Avoidance
     trained_only: false
   entertainment:
     attribute: PER
@@ -2313,6 +2487,8 @@ items:
                 *Ejemplos: Actuar + Seducir; Danza + Carterista; Cantar + Burlarse; Instrumento + Inspirar.*
         trained_only: false
         rank_benefits:
+          - rank: 4
+            title: Disguise
           - rank: 1
             title: Skill Synergy
           - rank: 4
@@ -2440,9 +2616,9 @@ items:
       - en:
           name: Interaction
           description: |-
-            Interaction provides a character with the basics of interpersonal contact with members of the same species and native culture. Through the use of the associated specialty skills, a character can become an expert in the arts of interaction and communication. 
+            Interaction provides a character with the basics of interpersonal contact with members of the same species and native culture. Through the use of the associated specialty skills, a character can become an expert in the arts of interaction and communication.
 
-            While everyone who grows up around other people has some skill at interacting with others, those who purchase any of the specialty skills are either trained or naturally proficient at winning friends and influencing people. 
+            While everyone who grows up around other people has some skill at interacting with others, those who purchase any of the specialty skills are either trained or naturally proficient at winning friends and influencing people.
 
             ### Specialties
             Interaction includes specific areas such as:
@@ -2464,12 +2640,12 @@ items:
             | Acquainted | -1 step |
 
             ### Mechanics
-            Interaction is an **encounter skill**, meaning that any skill check takes into account the target's starting attitude (see [Table P25: Encounter Skill Effects]({{< relref "core-mechanics/useful-tables#table-p25-encounter-skill-effects" >}})). 
+            Interaction is an **encounter skill**, meaning that any skill check takes into account the target's starting attitude (see [Table P25: Encounter Skill Effects]({{< relref "core-mechanics/useful-tables#table-p25-encounter-skill-effects" >}})).
 
             - **Target Restrictions:** Neither a **Combative** character nor a **Fanatic** character can be influenced by Interaction.
-            - **Resistance:** The target's **Will resistance modifier** also applies. 
-            - **Cumulative Modifiers:** The modifiers listed above are cumulative. 
-            - **Longevity:** In general, the changes in attitude that can be brought about by the use of Interaction are longer-lasting than the changes achieved through the use of Deception or Entertainment skills. Otherwise, a target’s change in attitude lasts until the character does something to alter that attitude in either a positive or negative way. 
+            - **Resistance:** The target's **Will resistance modifier** also applies.
+            - **Cumulative Modifiers:** The modifiers listed above are cumulative.
+            - **Longevity:** In general, the changes in attitude that can be brought about by the use of Interaction are longer-lasting than the changes achieved through the use of Deception or Entertainment skills. Otherwise, a target’s change in attitude lasts until the character does something to alter that attitude in either a positive or negative way.
 
             > When possible, it's better to roleplay an Interaction encounter than simply rolling dice and deciding an outcome.
       - es:
@@ -2502,8 +2678,8 @@ items:
             Interacción es una **habilidad de encuentro**, lo que significa que cualquier prueba de habilidad tiene en cuenta la actitud inicial del objetivo (consulte la [Tabla P25: Efectos de las habilidades de encuentro]({{< relref "core-mechanics/useful-tables#table-p25-encounter-skill-effects" >}})).
 
             - **Restricciones de objetivos:** Ni un Personaje **Combativo** ni un Personaje **Fanático** pueden verse influenciados por Interacción.
-            - **Resistencia:** También se aplica el **modificador de resistencia a la voluntad** del objetivo. 
-            - **Modificadores acumulativos:** Los modificadores enumerados anteriormente son acumulativos. 
+            - **Resistencia:** También se aplica el **modificador de resistencia a la voluntad** del objetivo.
+            - **Modificadores acumulativos:** Los modificadores enumerados anteriormente son acumulativos.
             - **Longevidad:** En general, los cambios de actitud que se pueden provocar con el uso de Interacción son más duraderos que los cambios logrados mediante el uso de Engaño o habilidades de entretenimiento. De lo contrario, el cambio de actitud de un objetivo dura hasta que el Personaje haga algo para alterar esa actitud de forma positiva o negativa.
 
             > Cuando sea posible, es mejor interpretar un encuentro Interacción que simplemente tirar los dados y decidir un resultado.
@@ -2516,7 +2692,7 @@ items:
           - en:
               name: Bargain
               description: |-
-                Bargain represents a character’s ability to negotiate a cheaper price for an object they want to buy or a better price for one they’re selling. It also covers more formal business negotiations. A successful check improves the character’s position at the bargaining table. 
+                Bargain represents a character’s ability to negotiate a cheaper price for an object they want to buy or a better price for one they’re selling. It also covers more formal business negotiations. A successful check improves the character’s position at the bargaining table.
 
                 The degree of success determines who gets the better outcome. A success also changes the target’s attitude as shown on [Table P25: Encounter Skill Effects]({{< relref "core-mechanics/useful-tables#table-p25-encounter-skill-effects" >}}).
 
@@ -2580,7 +2756,7 @@ items:
           - en:
               name: Charm
               description: |-
-                The charm skill represents a character’s ability to change the attitudes of those they interact with by presenting themselves in a likable, friendly manner. A character with this skill seeks to charm others into giving up something—whether it’s material goods or simply a change of attitude—with kind words, a winning smile, and a personable attitude. 
+                The charm skill represents a character’s ability to change the attitudes of those they interact with by presenting themselves in a likable, friendly manner. A character with this skill seeks to charm others into giving up something—whether it’s material goods or simply a change of attitude—with kind words, a winning smile, and a personable attitude.
 
                 To actually charm someone, the character must achieve an **Ordinary** result or better. The result of the check determines how much the target’s attitude improves, as shown on [Table P25: Encounter Skill Effects]({{< relref "core-mechanics/useful-tables#table-p25-encounter-skill-effects" >}}).
 
@@ -2604,7 +2780,7 @@ items:
           - en:
               name: Interview
               description: |-
-                The interview skill represents a character’s ability to get information from another character in a non-aggressive way. Interviews are often used by reporters, investigators, and officials conducting standard administrative procedures. It differs from **Investigate—interrogate** (a **Will**-based skill) in the amount of aggressiveness and fear applied by the questioner. 
+                The interview skill represents a character’s ability to get information from another character in a non-aggressive way. Interviews are often used by reporters, investigators, and officials conducting standard administrative procedures. It differs from **Investigate—interrogate** (a **Will**-based skill) in the amount of aggressiveness and fear applied by the questioner.
 
                 The result of the check determines the amount of information the character is able to obtain. A success also changes the target’s attitude as shown on [Table P25: Encounter Skill Effects]({{< relref "core-mechanics/useful-tables#table-p25-encounter-skill-effects" >}}).
 
@@ -2628,7 +2804,7 @@ items:
           - en:
               name: Intimidate
               description: |-
-                The intimidate skill represents a character’s ability to threaten another, either by physical presence or the weight of authority. Intimidate enables a character to force an opponent to back down, reveal information, or cooperate in some other way due to fear. 
+                The intimidate skill represents a character’s ability to threaten another, either by physical presence or the weight of authority. Intimidate enables a character to force an opponent to back down, reveal information, or cooperate in some other way due to fear.
 
                 The target's **Will resistance modifier** applies to the skill check, along with other Interaction modifiers. The greater the degree of success, the more cooperation the character can elicit. A success also changes the target's attitude as shown on [Table P25: Encounter Skill Effects]({{< relref "core-mechanics/useful-tables#table-p25-encounter-skill-effects" >}}).
 
@@ -2652,9 +2828,9 @@ items:
           - en:
               name: Seduce
               description: |-
-                The seduce skill represents the ability to entice or beguile another character through the use of opening lines, witty exchanges, playful conversation, and intimate behavior. To seduce another character is to manipulate that character’s emotions through planned exchanges. 
+                The seduce skill represents the ability to entice or beguile another character through the use of opening lines, witty exchanges, playful conversation, and intimate behavior. To seduce another character is to manipulate that character’s emotions through planned exchanges.
 
-                The final goal of seduction is to gain the seduced character's trust or cooperation through romantic overtures. To actually accomplish the seduction, the character must achieve an **Ordinary** result or better. 
+                The final goal of seduction is to gain the seduced character's trust or cooperation through romantic overtures. To actually accomplish the seduction, the character must achieve an **Ordinary** result or better.
 
                 ### Seduction Effects
                 A seduced character won't stay that way forever. How long the character remains seduced depends on the result of the check:
@@ -2812,7 +2988,7 @@ items:
           - en:
               name: Track
               description: |-
-                This specialty skill allows a character to improve his ability to follow a person, creature, or land vehicle by noting the tracks it leaves in its wake. Tracks can be anything from actual footprints to telltale signs such as broken branches, discarded litter, obvious waste material, or other evidence of passage. 
+                This specialty skill allows a character to improve his ability to follow a person, creature, or land vehicle by noting the tracks it leaves in its wake. Tracks can be anything from actual footprints to telltale signs such as broken branches, discarded litter, obvious waste material, or other evidence of passage.
 
                 A tracker may not necessarily be following physical evidence; he may be using detective skills, interview techniques, sensors, or other special equipment. Track is used to locate and follow a trail, either a physical one or a trail of information. Once a character spots his prey, Cover Ops-Stealth can be used to follow closely without being spotted.
           - es:
@@ -2877,8 +3053,6 @@ items:
                 ⊗ **Rango 4, 8, 12 [Comunicación mejorada]** A medida que un Personaje alcanza una mayor habilidad Rangos en un idioma específico, mejora en el empleo de habilidades Otros que involucran el uso del lenguaje (como habilidades de encuentro y algunas especialidades de creatividad). Este beneficio proporciona una reducción de las penalizaciones de Dado de Situación: **1 paso en Rango 4**, **2 pasos en Rango 8** y **3 pasos en Rango 12**. Este beneficio sólo reduce una pena; nunca proporciona una bonificación.
         trained_only: true
         rank_benefits:
-          - rank: 3
-            title: Improved Communication
           - rank: 4
             title: Improved Communication
           - rank: 8
@@ -2942,7 +3116,13 @@ items:
                 ## Beneficios de Rango
                 ⊗ **Rango 4, 8, 12 [Modificador de resistencia]** En Rangos más alto, la habilidad de deducir proporciona una mejora al **modificador de resistencia de inteligencia** de Personaje, lo que hace que sea más difícil para los oponentes usar con éxito habilidades de encuentro para engañar a Personaje. El modificador mejora en **+1 en Rango 4**, **+1 en Rango 8** y **+1 en Rango 12**.
         trained_only: false
-        rank_benefits: []
+        rank_benefits:
+          - rank: 4
+            title: Resistance Modifier
+          - rank: 8
+            title: Resistance Modifier
+          - rank: 12
+            title: Resistance Modifier
       first-aid:
         attribute: INT
         cost: 3
@@ -2995,7 +3175,13 @@ items:
                 ### Beneficios de Rango
                 ⊗ **Rango 4, 8, 12 [Primeros auxilios mejorados]** A medida que Personaje alcanza una mayor habilidad Rangos, se vuelve más competente para brindar ayuda a pacientes lesionados. Esto reduce la penalización de Dado de Situación en **1 paso en Rango 4**, **2 pasos en Rango 8** y **3 pasos en Rango 12**.
         trained_only: true
-        rank_benefits: []
+        rank_benefits:
+          - rank: 4
+            title: Improved First Aid
+          - rank: 8
+            title: Improved First Aid
+          - rank: 12
+            title: Improved First Aid
       research:
         attribute: INT
         cost: 2
@@ -3030,13 +3216,13 @@ items:
         trained_only: false
         rank_benefits:
           - rank: 3
-            title: Efficient Investigation
+            title: Efficient Research
           - rank: 6
-            title: Efficient Investigation
+            title: Efficient Research
           - rank: 9
-            title: Efficient Investigation
+            title: Efficient Research
           - rank: 12
-            title: Efficient Investigation
+            title: Efficient Research
     trained_only: false
   law:
     attribute: INT
@@ -3242,7 +3428,15 @@ items:
                 ### Beneficios de Rango
                 ⊗ **Rango 3, 6, 9, 12 [Efecto aumentado]** A medida que un Personaje logra un Rangos más alto en esta especialidad, la bonificación a sus pruebas de habilidad Liderazgo mejora a **-1 en Rango 3**, **-2 en Rango 6**, **-3 en Rango 9** y **-4 en Rango. 12**. (Nota: este bono no es acumulable).
         trained_only: false
-        rank_benefits: []
+        rank_benefits:
+          - rank: 3
+            title: Increased Effect
+          - rank: 6
+            title: Increased Effect
+          - rank: 9
+            title: Increased Effect
+          - rank: 12
+            title: Increased Effect
       inspire:
         attribute: PER
         cost: 3
@@ -3252,7 +3446,6 @@ items:
               name: Inspire
               description: |-
                 Leading by example and shifting the morale of a group.
-
 
                 **Morale Pivot:** Unlike the broad skill, **Inspire** can be used on **Hostile** or **Combative** targets to shift their attitude as per [Table P25: Encounter Skill Effects]({{< relref "core-mechanics/useful-tables#table-p25-encounter-skill-effects" >}}).
 
@@ -3313,6 +3506,15 @@ items:
                 ### Beneficios de Rango
                 ⊗ **Rango 3, 6, 9, 12 [Efecto aumentado]** Un Personaje recibe una bonificación **-1** en Rango 3, **-2** en Rango 6, **-3** en Rango 9 y **-4** en Rango 12 en ciertas pruebas de habilidad de Otros que pueden ser asistidas por esta especialidad. Estas habilidades incluyen Telepatía (drenaje), Biokinesis (bioluminiscente) y Biokinesis (arma biológica).
         trained_only: true
+        rank_benefits:
+          - rank: 3
+            title: Increased Effect
+          - rank: 6
+            title: Increased Effect
+          - rank: 9
+            title: Increased Effect
+          - rank: 12
+            title: Increased Effect
       biology:
         attribute: INT
         cost: 3
@@ -3323,7 +3525,7 @@ items:
               description: |-
                 This specialty skill represents the character’s knowledge of biology and the study of life and living organisms, including their structure, function, growth, origin, evolution, and distribution.
 
-                It can be used to ascertain information about the biochemical processes of living beings.  
+                It can be used to ascertain information about the biochemical processes of living beings.
 
                 ### Rank Benefits
                 ⊗ **Increased Effect:** A character receives a **-1 bonus** at rank 3, **-2** at rank 6, **-3** at rank 9, and **-4** at rank 12 on certain other skill checks that can be assisted by this specialty.
@@ -3337,6 +3539,15 @@ items:
                 ### Beneficios de Rango
                 ⊗ **Efecto aumentado:** Un Personaje recibe una bonificación **-1** en Rango 3, **-2** en Rango 6, **-3** en Rango 9 y **-4** en Rango 12 en ciertas pruebas de habilidad de Otros que pueden ser asistidas por esta especialidad.
         trained_only: false
+        rank_benefits:
+          - rank: 3
+            title: Increased Effect
+          - rank: 6
+            title: Increased Effect
+          - rank: 9
+            title: Increased Effect
+          - rank: 12
+            title: Increased Effect
       botany:
         attribute: INT
         cost: 3
@@ -3361,6 +3572,15 @@ items:
                 ### Beneficios de Rango
                 ⊗ **Rango 3, 6, 9, 12 [Efecto aumentado]** A medida que un Personaje logra un Rangos más alto en esta especialidad, se vuelve más eficiente en el estudio de plantas. Reciben un **-1 Bonificación de paso** en controles de botánica en **Rango 3**, **-2** en Rango 6, **-3** en Rango 9 y **-4** en Rango 12.
         trained_only: false
+        rank_benefits:
+          - rank: 3
+            title: Increased Effect
+          - rank: 6
+            title: Increased Effect
+          - rank: 9
+            title: Increased Effect
+          - rank: 12
+            title: Increased Effect
       genetics:
         attribute: INT
         cost: 3
@@ -3410,6 +3630,15 @@ items:
                 ### Beneficios de Rango
                 ⊗ **Rango 3, 6, 9, 12 [Efecto aumentado]** Un Personaje recibe una bonificación **-1** en Rango 3, **-2** en Rango 6, **-3** en Rango 9 y **-4** en Rango 12 en ciertas pruebas de habilidad de Otros que pueden ser asistidas por esta especialidad. Estas habilidades incluyen manejo de animales (con criaturas alienígenas), Ciencias médicas: xenomedicina y supervivencia (en entornos alienígenas).
         trained_only: false
+        rank_benefits:
+          - rank: 3
+            title: Increased Effect
+          - rank: 6
+            title: Increased Effect
+          - rank: 9
+            title: Increased Effect
+          - rank: 12
+            title: Increased Effect
     trained_only: false
   medical-science:
     attribute: INT
@@ -3423,14 +3652,12 @@ items:
             This skill provides a character with the training needed to perform certain medical procedures, including the ability to diagnose common ailments, diseases, and wounds. Skill checks made to determine if a character knows a certain piece of medical information, or if he's able to research a question and discover an answer, are made the same way as Knowledge skill checks.
 
             A character with just the Medical Science broad skill can't treat characters who have suffered damage, however. The *treatment* specialty skill is necessary to heal stun or wound damage, and reducing a patient's mortal damage requires the *surgery* specialty skill.
-
       - es:
           name: Ciencias médicas
           description: |-
             Esta habilidad proporciona a Personaje la capacitación necesaria para realizar ciertos procedimientos médicos, incluida la capacidad de diagnosticar dolencias, enfermedades y heridas comunes. Las comprobaciones de habilidades realizadas para determinar si un Personaje conoce cierta información médica, o si es capaz de investigar una pregunta y descubrir una respuesta, se realizan de la misma manera que las comprobaciones de habilidades de conocimiento.
 
             Sin embargo, un Personaje con solo la habilidad amplia Ciencias médicas no puede tratar a personajes que hayan sufrido daños. El *tratamiento* Especialidad es necesario para curar el daño Aturdimiento o Herida, y reducir el daño Mortal de un paciente requiere la *cirugía* Especialidad.
-
     items:
       forensics:
         attribute: INT
@@ -3444,7 +3671,6 @@ items:
 
                 ### Rank Benefits
                 ⊗ **Rank 3, 6, 9, 12 [Increased Effect]** As a character attains higher ranks in forensics, he receives a **situation die bonus** on forensics checks. The bonus is **-1 step at rank 3**, **-2 steps at rank 6**, **-3 steps at rank 9**, and **-4 steps at rank 12**.
-
           - es:
               name: Ciencias forenses
               description: |-
@@ -3452,7 +3678,6 @@ items:
 
                 ### Beneficios de Rango
                 ⊗ **Rango 3, 6, 9, 12 [Efecto aumentado]** A medida que un Personaje alcanza un Rangos más alto en análisis forense, recibe una **bonificación Dado de Situación** en comprobaciones forenses. La bonificación es **-1 paso en Rango 3**, **-2 pasos en Rango 6**, **-3 pasos en Rango 9** y **-4 pasos en Rango 12**.
-
         trained_only: false
         rank_benefits:
           - rank: 3
@@ -3475,7 +3700,6 @@ items:
 
                 ### Rank Benefits
                 ⊗ **Rank 3, 6, 9, 12 [Increased Effect]** A character receives a **-1 bonus** at rank 3, **-2** at rank 6, **-3** at rank 9, and **-4** at rank 12 on other Medical Science checks (e.g., diagnosis, research).
-
           - es:
               name: Conocimiento médico
               description: |-
@@ -3483,7 +3707,6 @@ items:
 
                 ### Beneficios de Rango
                 ⊗ **Rango 3, 6, 9, 12 [Efecto aumentado]** Un Personaje recibe una bonificación **-1** en Rango 3, **-2** en Rango 6, **-3** en Rango 9 y **-4** en Rango 12 en comprobaciones de Otros Ciencias médicas (por ejemplo, diagnóstico, investigación).
-
         trained_only: false
         rank_benefits:
           - rank: 3
@@ -3509,7 +3732,6 @@ items:
 
                 ### Stress Management
                 When the persistent stress rules are being used, a character with the Psychology skill may use it to provide psychological support to themselves or others, which may help to resist the effects of stress. A successful skill check may provides up to 12 characters with a bonus based the weekly check result. Granting a bonus of -1 (Ordinary), +2 (Good), or +3 (Amazing) to the weekly resolve-mental resolve check to avoid gaining stress levels.
-
           - es:
               name: Psicología
               description: |-
@@ -3520,7 +3742,6 @@ items:
 
                 ### Manejo del estrés
                 Cuando se utilizan las reglas de estrés persistente, un Personaje con la habilidad Psicología puede usarla para brindar apoyo psicológico a sí mismo o a otros, lo que puede ayudar a resistir los efectos del estrés. Una prueba de habilidad exitosa puede proporcionar hasta 12 personajes con una bonificación basada en el resultado de la prueba semanal. Otorgar una bonificación de -1 (Ordinario), +2 (Bueno) o +3 (Asombroso) a la prueba semanal Firmeza-Mental Firmeza para evitar ganar niveles de estrés.
-
         trained_only: false
         rank_benefits:
           - rank: 3
@@ -3559,7 +3780,7 @@ items:
                 The complexity of a surgery check depends on the amount of mortal
                 damage the patient is suffering from when the procedure is begun:
                 1 point of damage is Marginal, 2 is Ordinary, 3 is Good, and 4 or
-                more is Amazing. 
+                more is Amazing.
 
                 If the patient is suffering only from wound
                 damage, then 2 points of damage is Marginal, 4 is Ordinary, 6 is
@@ -3573,7 +3794,6 @@ items:
                 ⊗ **Rank 3 [Cybernetic Surgery]** A character who has achieved at least rank 3 in surgery can use this skill to treat patients with existing cybernetic implants.
 
                 ⊗ **Rank 6 [Cybernetic Surgery, Install]** A character who has achieved at least rank 6 in surgery can use this skill to install cybernetic implants.
-
           - es:
               name: Cirugía
               description: |-
@@ -3611,13 +3831,12 @@ items:
                 ⊗ **Rango 3 [Cirugía cibernética]** Un Personaje que haya alcanzado al menos Rango 3 en cirugía puede utilizar esta habilidad para tratar pacientes con implantes cibernéticos existentes.
 
                 ⊗ **Rango 6 [Cirugía cibernética, instalación]** Un Personaje que haya alcanzado al menos Rango 6 en cirugía puede usar esta habilidad para instalar implantes cibernéticos.
-
         trained_only: true
         rank_benefits:
           - rank: 3
-            title: Surgical Proficiency
+            title: Cybernetic Surgery
           - rank: 6
-            title: Surgical Proficiency
+            title: Cybernetic Surgery, Install
       treatment:
         attribute: INT
         cost: 4
@@ -3654,7 +3873,6 @@ items:
                 penalties: -1 step at rank 3, -2 steps at rank 6, -3 steps at rank
                 9, and -4 at rank 12. Note that this benefit only reduces a
                 penalty; it never provides a bonus.
-
           - es:
               name: Tratamiento
               description: |-
@@ -3686,7 +3904,6 @@ items:
                 penalizaciones: -1 paso en Rango 3, -2 pasos en Rango 6, -3 pasos en Rango
                 9 y -4 en Rango 12. Tenga en cuenta que este beneficio solo reduce un
                 pena; nunca proporciona una bonificación.
-
         trained_only: true
         rank_benefits:
           - rank: 3
@@ -3718,7 +3935,6 @@ items:
                 penalty associated with healing alien characters is applied.
 
                 ⊗ **Rank 3, 6, 9, 12 [Improved Treatment]** As a character achieves higher ranks in a specific application of xenomedicine, she becomes more proficient at providing aid to patients of the appropriate species. When the character reaches rank 3 in xenomedicine, the initial +3 penalty is reduced to +2; at rank 6, the penalty is +1; at rank 9, the penalty is eliminated; and at rank 12, the doctor receives a -1 bonus.
-
           - es:
               name: Xenomedicina
               description: |-
@@ -3763,6 +3979,15 @@ items:
                 ### Beneficios de Rango
                 ⊗ **Rango 3, 6, 9, 12 [Efecto aumentado]:** Un Personaje recibe una bonificación **-1** en Rango 3, **-2** en Rango 6, **-3** en Rango 9 y **-4** en Rango 12 en ciertas pruebas de habilidad de Otros que pueden ser asistidas por esta especialidad (por ejemplo, Investigar, Ley).
         trained_only: false
+        rank_benefits:
+          - rank: 3
+            title: Increased Effect
+          - rank: 6
+            title: Increased Effect
+          - rank: 9
+            title: Increased Effect
+          - rank: 12
+            title: Increased Effect
     trained_only: false
   melee-combat:
     attribute: STR
@@ -3821,6 +4046,13 @@ items:
 
                 > Estos beneficios solo se aplican cuando el Personaje usa un arma cubierta por esta habilidad.
         trained_only: false
+        rank_benefits:
+          - rank: 4
+            title: Reaction Parry
+          - rank: 6
+            title: Double-Strike
+          - rank: 9
+            title: Multistrike
       blunt:
         attribute: STR
         cost: 3
@@ -3857,6 +4089,13 @@ items:
 
                 > Estos beneficios solo se aplican cuando el Personaje usa un arma cubierta por esta habilidad.
         trained_only: false
+        rank_benefits:
+          - rank: 4
+            title: Reaction Parry
+          - rank: 6
+            title: Double-Strike
+          - rank: 9
+            title: Multistrike
       defensive-martial-arts:
         attribute: STR
         cost: 3
@@ -3899,6 +4138,21 @@ items:
 
                 ▶ **Rango 12 [Maestro sin forma]** Cuando un Personaje alcanza Rango 12, puede ignorar 1 paso de la defensa de Fuerza de un oponente debido a la imprevisibilidad de sus ataques.
         trained_only: false
+        rank_benefits:
+          - rank: 1
+            title: Base Damage
+          - rank: 3
+            title: Resistance Modifier
+          - rank: 7
+            title: Resistance Modifier
+          - rank: 11
+            title: Resistance Modifier
+          - rank: 4
+            title: Counterstrike
+          - rank: 8
+            title: Redirection of Force
+          - rank: 12
+            title: Formless Master
       power-martial-arts:
         attribute: STR
         cost: 3
@@ -3955,6 +4209,17 @@ items:
 
                 > Los practicantes que utilizan con frecuencia la opción All Out Attack en Combate generalmente se denominan **brawlers**.
         trained_only: false
+        rank_benefits:
+          - rank: 1
+            title: Mass Leverage
+          - rank: 3
+            title: High Impulse
+          - rank: 5
+            title: Short-range Power (Fajin)
+          - rank: 8
+            title: Structural Destruction
+          - rank: 12
+            title: Master of Force
       powered-weapons:
         attribute: STR
         cost: 3
@@ -3987,6 +4252,13 @@ items:
 
                 ▶ **Rango 9 [Multistrike]** Cuando un Personaje alcanza la habilidad Rango 9, aprende a realizar múltiples ataques en una sola fase. El Personaje puede atacar con un arma cuerpo a cuerpo tres veces en una fase. Estos ataques pueden dirigirse a un solo objetivo o hasta a tres objetivos separados dentro de dos metros del Personaje.
         trained_only: false
+        rank_benefits:
+          - rank: 4
+            title: Reaction Parry
+          - rank: 6
+            title: Double-Strike
+          - rank: 9
+            title: Multistrike
     trained_only: false
   modern-ranged-weapons:
     attribute: DEX
@@ -4135,6 +4407,15 @@ items:
 
                 ⊗ **Rango 9 [Control de retroceso absoluto]** Cuando un Personaje alcanza Rango 9 en esta especialidad, logra un dominio perfecto de Físico sobre la acción del arma. El Bonificación de paso para usar el modo de ataque Burst aumenta de un paso de -1 a un Bonificación de paso -2, lo que aumenta enormemente la probabilidad de infligir daño de alto nivel a un solo objetivo.
         trained_only: false
+        rank_benefits:
+          - rank: 3
+            title: Rock-n-Roll
+          - rank: 4
+            title: Distance Precision
+          - rank: 6
+            title: Suppressive Angles
+          - rank: 9
+            title: Absolute Recoil Control
       pistol:
         attribute: DEX
         cost: 3
@@ -4204,10 +4485,16 @@ items:
                 ▶ **Rango 9 [Akimbo Mastery]** Cuando un Personaje alcanza Rango 9, puede operar dos armas tan perfectamente como una. Cuando se utiliza el modo de doble empuñadura de objetivo dividido, la penalización por ambos disparos se reduce en 2 pasos (el Personaje dispara a +0/+2. O +0/+0 para un Personaje con ambidestreza).
         trained_only: false
         rank_benefits:
+          - rank: 1
+            title: Pistol CQB
           - rank: 3
             title: Quick Draw
           - rank: 4
-            title: Quick Draw
+            title: Lightning Draw
+          - rank: 6
+            title: Dual-Wield Coordination
+          - rank: 9
+            title: Akimbo Mastery
       rifle:
         attribute: DEX
         cost: 3
@@ -4250,7 +4537,13 @@ items:
         trained_only: false
         rank_benefits:
           - rank: 3
-            title: Improved Aim
+            title: Optic Familiarity
+          - rank: 4
+            title: Distance Precision
+          - rank: 8
+            title: Sniper Shot
+          - rank: 12
+            title: Master Sniper
       smg:
         attribute: DEX
         cost: 3
@@ -4297,6 +4590,13 @@ items:
 
                 ▶ **Rango 9 (Bullet Rain):** Cuando un Personaje alcanza Rango 9 en esta especialidad, puede hacer que cada bala cuente. Agrega +1 al daño de todos sus ataques con SMG.
         trained_only: false
+        rank_benefits:
+          - rank: 3
+            title: Rock-n-Roll
+          - rank: 6
+            title: Autofire Master
+          - rank: 9
+            title: Bullet Rain
       shotgun:
         attribute: DEX
         cost: 3
@@ -4343,6 +4643,13 @@ items:
 
                 ⊗ **Rango 4 [Precisión de distancia]** Cuando un Personaje alcanza Rango 4 en esta especialidad, sabe cómo compensar la distancia. Se elimina el Penalización de paso por un tiro de media distancia y la penalización por un tiro de larga distancia se reduce en 1 paso.
         trained_only: false
+        rank_benefits:
+          - rank: 2
+            title: Close Quarters Shotgun Handling
+          - rank: 3
+            title: Tactical Load / Selection
+          - rank: 4
+            title: Distance Precision
     trained_only: false
   navigation:
     attribute: INT
@@ -4415,7 +4722,7 @@ items:
               description: |-
                 This specialty skill involves the study and performance of navigation through drivespace, usually involving movement from one star system to another within the galaxy.
 
-                Drivespace, in settings with faster-than-light space travel, is a parallel dimension tied to the gravity plane of the galaxy. 
+                Drivespace, in settings with faster-than-light space travel, is a parallel dimension tied to the gravity plane of the galaxy.
 
                 A character with this skill can plot courses for stardrive-equipped starships of all kinds. Any stardrive-equipped ship has a maximum distance, in light-years, that it can travel every time it drops out of normal space and into drivespace. This process is known as making a starfall.
 
@@ -4747,6 +5054,11 @@ items:
 
                 * **Ejemplo de doble disparo:** Darsen tiene el beneficio de ataque especial de doble disparo y una puntuación de habilidad de 14. Su Dado de Situación base después de haber considerado todos los modificadores es +d4. Tira un Dado de Control (d20), un +d6 y un +d8. En los dados aparecen los números 11, 4 y 2. Esto le da a Darsen resultados de prueba de habilidades de 15 (11 + 4) y 13 (11 + 2). El primer disparo no da en el blanco, pero el segundo logra un impacto Ordinario.
         trained_only: false
+        rank_benefits:
+          - rank: 3
+            title: Distance Precision
+          - rank: 6
+            title: Double-Shot
       crossbow:
         attribute: DEX
         cost: 3
@@ -4771,6 +5083,11 @@ items:
 
                 ▶ **Rango 6 [Aumento de velocidad de disparo]** Cuando un Personaje alcanza Rango 6 en esta especialidad, obtiene la capacidad de cargar y disparar su arma más rápidamente. Un Ballesta se puede cargar y disparar en la misma acción.
         trained_only: false
+        rank_benefits:
+          - rank: 3
+            title: Distance Precision
+          - rank: 6
+            title: Rate of Fire Increase
       flintlock:
         attribute: DEX
         cost: 3
@@ -4799,6 +5116,13 @@ items:
 
                 ▶ **Rango 12 [Aumento de cadencia de disparo]** Cuando un Personaje alcanza Rango 12 en esta especialidad, puede cargar y disparar un rifle Arma de chispa en la misma acción.
         trained_only: false
+        rank_benefits:
+          - rank: 3
+            title: Distance Precision
+          - rank: 6
+            title: Rate of Fire Increase
+          - rank: 12
+            title: Rate of Fire Increase
       sling:
         attribute: DEX
         cost: 3
@@ -4827,6 +5151,11 @@ items:
 
                 * **Ejemplo de doble disparo:** Darsen tiene el beneficio de ataque especial de doble disparo y una puntuación de habilidad de 14. Su Dado de Situación base después de haber considerado todos los modificadores es +d4. Tira un Dado de Control (d20), un +d6 y un +d8. En los dados aparecen los números 11, 4 y 2. Esto le da a Darsen resultados de prueba de habilidades de 15 (11 + 4) y 13 (11 + 2). El primer disparo no da en el blanco, pero el segundo logra un impacto Ordinario.
         trained_only: false
+        rank_benefits:
+          - rank: 3
+            title: Distance Precision
+          - rank: 6
+            title: Double-Shot
     trained_only: false
   resolve:
     attribute: WIL
@@ -4929,8 +5258,8 @@ items:
                 **Mortal Damage:** Mortal damage **cannot be healed naturally**; only the application of the **Medical Science—surgery** skill can repair mortal damage.
 
                 #### Activity Modifiers
-                During natural healing, all checks are considered to be made while the character engages in minimal activity. 
-                - **Total Rest:** If the character confines himself to a hospital bed or remains in a state of total rest for the period, the check receives a **-2 step bonus**. 
+                During natural healing, all checks are considered to be made while the character engages in minimal activity.
+                - **Total Rest:** If the character confines himself to a hospital bed or remains in a state of total rest for the period, the check receives a **-2 step bonus**.
                 - **Normal Activity:** If the character engages in normal activity, the check receives a **+2 step penalty**.
           - es:
               name: Firmeza Física
@@ -4976,8 +5305,8 @@ items:
                 **Daño Mortal:** El daño Mortal **no se puede curar de forma natural**; solo la aplicación de la habilidad **Ciencias médicas—cirugía** puede reparar el daño de Mortal.
 
                 #### Modificadores de actividad
-                Durante la curación natural, se considera que todas las comprobaciones se realizan mientras el Personaje realiza una actividad mínima. 
-                - **Descanso total:** Si el Personaje se confina a una cama de hospital o permanece en estado de reposo total durante el período, el cheque recibe un **-2 Bonificación de paso**. 
+                Durante la curación natural, se considera que todas las comprobaciones se realizan mientras el Personaje realiza una actividad mínima.
+                - **Descanso total:** Si el Personaje se confina a una cama de hospital o permanece en estado de reposo total durante el período, el cheque recibe un **-2 Bonificación de paso**.
                 - **Actividad normal:** Si el Personaje realiza una actividad normal, el cheque recibe un **+2 Penalización de paso**.
         trained_only: false
         rank_benefits:
@@ -5275,7 +5604,7 @@ items:
             - **Amazing:** The character becomes so familiar with the locale that survival is no longer an issue unless the situation changes.
 
             ### Survival Situation Modifiers
-            The type of terrain or environment where the character is located can provide a modifier to the skill check: 
+            The type of terrain or environment where the character is located can provide a modifier to the skill check:
 
             | Terrain / Situation | Modifier |
             | :--- | :--- |
@@ -5329,12 +5658,11 @@ items:
         localized:
           - en:
               name: Survival training
-              description: 'This specialty skill enables a character to improve his ability to use the Survival broad skill in a certain type of terrain. If he wants to improve his skill in more than one type of terrain, he must first succeed on a **Survival – Adaptability** challenge and master the terrain.
-
+              description: |-
+                This specialty skill enables a character to improve his ability to use the Survival broad skill in a certain type of terrain. If he wants to improve his skill in more than one type of terrain, he must first succeed on a **Survival – Adaptability** challenge and master the terrain.
                 Available terrain types include all of those listed in the “Survival Situation Modifiers” sidebar, plus any other type the Gamemaster allows.
 
-
-                When starting a new campaign, a character can buy ranks in this skill for any terrain the GM consider reasonable for the character''s background and concept.'
+                When starting a new campaign, a character can buy ranks in this skill for any terrain the GM consider reasonable for the character's background and concept.
           - es:
               name: Apertura de Sendas
               description: |-
@@ -5409,7 +5737,7 @@ items:
           description: |-
             This broad skill provides a character with basic training in the use of spaceship systems other than the helm or piloting systems. (Vehicle Operation covers the actual piloting of a spaceship).
 
-            It also applies to other types of vehicles or installations that use one or more of the specific systems described below in the Specialty Skills section. These other vehicles and installations include (but are not limited to) large water vessels such as battleships, military submarines, and cargo ships; jet fighters and large commercial aircraft; and radar outposts and gun emplacements, space stations, etc. 
+            It also applies to other types of vehicles or installations that use one or more of the specific systems described below in the Specialty Skills section. These other vehicles and installations include (but are not limited to) large water vessels such as battleships, military submarines, and cargo ships; jet fighters and large commercial aircraft; and radar outposts and gun emplacements, space stations, etc.
 
             For full details on how **System Operation** skills are used, see the sections on ["What's in a Spaceship?"](/core-mechanics/vehicles-and-vessels/) and ["Space Vehicle Combat"](/core-mechanics/vehicles-and-vessels#space-vehicle-combat).
       - es:
@@ -5763,6 +6091,9 @@ items:
                 ### Beneficios de Rango
                 ▶ **Rango 6 (Juryrig mejorado):** Cuando un Personaje alcanza **Rango 6**, su habilidad mejora de la siguiente manera: un éxito Ordinario produce un resultado Bueno, un éxito Bueno produce un resultado Asombroso y un éxito Asombroso significa que el jurado funciona tan bien que el sistema o elemento se considera reparado y en condiciones normales de funcionamiento.
         trained_only: false
+        rank_benefits:
+          - rank: 6
+            title: Improved Juryrig
     trained_only: false
   vehicle-operation:
     attribute: DEX

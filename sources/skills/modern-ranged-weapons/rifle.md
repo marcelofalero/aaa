@@ -5,7 +5,13 @@ url: /skills/modern-ranged-weapons#rifle
 trained_only: false
 rank_benefits:
 - rank: 3
-  title: Improved Aim
+  title: Optic Familiarity
+- rank: 4
+  title: Distance Precision
+- rank: 8
+  title: Sniper Shot
+- rank: 12
+  title: Master Sniper
 name: Rifle
 ---
 

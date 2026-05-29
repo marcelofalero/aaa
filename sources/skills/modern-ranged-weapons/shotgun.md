@@ -3,6 +3,13 @@ attribute: DEX
 cost: 3
 url: /skills/modern-ranged-weapons#shotgun
 trained_only: false
+rank_benefits:
+- rank: 2
+  title: Close Quarters Shotgun Handling
+- rank: 3
+  title: Tactical Load / Selection
+- rank: 4
+  title: Distance Precision
 name: Shotgun
 ---
 

@@ -3,6 +3,13 @@ attribute: DEX
 cost: 3
 url: /skills/modern-ranged-weapons#smg
 trained_only: false
+rank_benefits:
+- rank: 3
+  title: Rock-n-Roll
+- rank: 6
+  title: Autofire Master
+- rank: 9
+  title: Bullet Rain
 name: SMG
 ---
 

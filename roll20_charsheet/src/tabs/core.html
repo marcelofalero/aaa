@@ -118,6 +118,14 @@
 								style="width: 100%; margin-bottom: 5px;">ACTION CHECK SCORE</div>
 
 							<div>
+								<div class="sheet-label-grid" style="height: 1.2em;">&nbsp;</div>
+								<div class="sheet-roll-container">
+									<input type="hidden" name="attr_ActionCheckMacro" value="">
+									<button type="roll" name="roll_ActionCheck" class="sheet-roll-skill" value="@{ActionCheckMacro}"></button>
+								</div>
+							</div>
+
+							<div>
 								<div class="sheet-label-grid" data-i18n="marginal">Marginal</div><input type="text"
 									name="attr_ActionCheckM" disabled="true" class="sheet-ability"
 									style="width: 4em !important;" value="(@{ActionCheck}+1)">
@@ -133,12 +141,9 @@
 									style="width: 4em !important;" value="(floor(@{ActionCheck}/2))">
 							</div>
 							<div>
-								<div class="sheet-label-grid" data-i18n="amazing">Amazing</div>
-								<div class="sheet-field-row" style="gap: 5px; align-items: center;">
-									<input type="text" name="attr_ActionCheckA" disabled="true" class="sheet-ability"
-										style="width: 4em !important;" value="(floor(@{ActionCheck}/4))">
-									<input type="hidden" name="attr_ActionCheckMacro" value=""><div class="sheet-roll-container"><button type="roll" name="roll_ActionCheck" class="sheet-roll-skill" value="@{ActionCheckMacro}"></button></div>
-								</div>
+								<div class="sheet-label-grid" data-i18n="amazing">Amazing</div><input type="text"
+									name="attr_ActionCheckA" disabled="true" class="sheet-ability"
+									style="width: 4em !important;" value="(floor(@{ActionCheck}/4))">
 							</div>
 
 							<div>
@@ -203,7 +208,7 @@
 						<div class="sheet-core-row"
 							style="align-items: center; gap: 8px; margin-bottom: 5px; flex-wrap: wrap; border: 0px">
 							<button type="roll"
-								value="&{template:default} {{name=@{character_name} - @{ArmorName}}} {{protection= [[@{LowImpact}]]LI / [[@{HighImpact}]]HI / [[@{Energy}]]EN}} {{notes=@{ArmorNotes}}}"></button>
+								value="&{template:alternity-armor} {{name=@{character_name} - @{ArmorName}}} {{protection= [[@{LowImpact}]]LI / [[@{HighImpact}]]HI / [[@{Energy}]]EN}} {{notes=@{ArmorNotes}}}"></button>
 							<div class="sheet-field" style="flex: 5; min-width: 250px;">
 								<input type="text" name="attr_ArmorName" data-i18n-placeholder="armor-name-placeholder"
 									placeholder="Armor Name" style="border-bottom: 1px solid var(--color-accent-teal);">
@@ -250,21 +255,20 @@
 						<div class="sheet-attackform-buttons">
 							<button type="roll" name="roll_attackform1" value="@{attackformmacro1}">Single</button>
 							<button type="roll" name="roll_attackformdamageord"
-								value="!script {{ --#title|@{character_name} - @{attackformname} --#titlecardbackground|#1e293b --#titlecardfontcolor|#ffffff --#commandcardborder|1px solid #1e293b --#commandcardboxshadow|0 2px 5px rgba(0,0,0,0.2) --#titlecardstyle|border-radius: 4px 4px 0 0; padding: 6px 10px; --#bodycardstyle|border-top: none; border-radius: 0 0 4px 4px; --#bodyfontsize|12px --#oddrowbackground|#111827 --#evenrowbackground|#030712 --#oddrowfontcolor|#f9fafb --#evenrowfontcolor|#f9fafb --=dmg|@{attackformdamageordinary} --+Ordinary Damage (@{attackformdamageordinary})|**[$dmg]** @{attackformdamageordinarytype} }}">Ordinary</button>
+								value="&{template:alternity-damage} {{name=@{character_name} - @{attackformname}}} {{label=Ordinary Damage}} {{damage=[[@{attackformdamageordinary}]]}} {{notes=@{attackformdamageordinarytype}}}">Ordinary</button>
 							
 							<button type="roll" name="roll_attackform2" value="@{attackformmacro2}">Double</button>
 							<button type="roll" name="roll_attackformdamagegoo"
-								value="!script {{ --#title|@{character_name} - @{attackformname} --#titlecardbackground|#1e293b --#titlecardfontcolor|#ffffff --#commandcardborder|1px solid #1e293b --#commandcardboxshadow|0 2px 5px rgba(0,0,0,0.2) --#titlecardstyle|border-radius: 4px 4px 0 0; padding: 6px 10px; --#bodycardstyle|border-top: none; border-radius: 0 0 4px 4px; --#bodyfontsize|12px --#oddrowbackground|#111827 --#evenrowbackground|#030712 --#oddrowfontcolor|#f9fafb --#evenrowfontcolor|#f9fafb --=dmg|@{attackformdamagegood} --+Good Damage (@{attackformdamagegood})|**[$dmg]** @{attackformdamagegoodtype} }}">Good</button>
+								value="&{template:alternity-damage} {{name=@{character_name} - @{attackformname}}} {{label=Good Damage}} {{damage=[[@{attackformdamagegood}]]}} {{notes=@{attackformdamagegoodtype}}}">Good</button>
 							
-							<button type="roll" name="roll_attackform3" value="@{attackformmacro3}">Auto</button>
+							<span></span>
 							<button type="roll" name="roll_attackformdamageama"
-								value="!script {{ --#title|@{character_name} - @{attackformname} --#titlecardbackground|#1e293b --#titlecardfontcolor|#ffffff --#commandcardborder|1px solid #1e293b --#commandcardboxshadow|0 2px 5px rgba(0,0,0,0.2) --#titlecardstyle|border-radius: 4px 4px 0 0; padding: 6px 10px; --#bodycardstyle|border-top: none; border-radius: 0 0 4px 4px; --#bodyfontsize|12px --#oddrowbackground|#111827 --#evenrowbackground|#030712 --#oddrowfontcolor|#f9fafb --#evenrowfontcolor|#f9fafb --=dmg|@{attackformdamageamazing} --+Amazing Damage (@{attackformdamageamazing})|**[$dmg]** @{attackformdamageamazingtype} }}">Amazing</button>
+								value="&{template:alternity-damage} {{name=@{character_name} - @{attackformname}}} {{label=Amazing Damage}} {{damage=[[@{attackformdamageamazing}]]}} {{notes=@{attackformdamageamazingtype}}}">Amazing</button>
 						</div>
 
 						<input type="hidden" name="attr_attackformstepdie" value="+0">
 						<input type="hidden" name="attr_attackformmacro1" value="">
 						<input type="hidden" name="attr_attackformmacro2" value="">
-						<input type="hidden" name="attr_attackformmacro3" value="">
 						<input type="hidden" name="attr_attackformwarning" value="">
 
 						<div class="sheet-attackform-field" style="flex: 6; min-width: 200px;">
@@ -286,8 +290,8 @@
 
 						<div class="sheet-attackform-field" style="flex: 10; min-width: 300px;">
 							<div class="sheet-attackform-label" data-i18n="notes">Notes</div>
-							<input type="text" name="attr_attackformnotes" placeholder="Notes"
-								style="width: 100% !important;">
+							<textarea name="attr_attackformnotes" placeholder="Notes" rows="2"
+								style="width: 100% !important; resize: vertical; min-height: 38px !important; height: 38px !important; margin: 0 !important;"></textarea>
 						</div>
 					</div>
 
@@ -535,83 +539,3 @@
 		</div>
 	</div>
 
-	<rolltemplate class="sheet-rolltemplate-alternity-attack">
-		<div class="sheet-template-container">
-			<div class="sheet-template-header">
-				<span class="sheet-template-title">{{name}}</span>
-				{{#dicepool}}<span class="sheet-template-control">Control: {{dicepool}}</span>{{/dicepool}}
-			</div>
-			{{#type}}<div class="sheet-template-row"><span>Type:</span> {{type}}</div>{{/type}}
-			{{#range}}<div class="sheet-template-row"><span>Range:</span> {{range}}</div>{{/range}}
-			
-			<div class="sheet-template-body">
-				{{#attack1}}
-				<div class="sheet-template-attack-row">
-					<span class="sheet-template-label">Att. 1 {{scores1}}:</span> 
-					<span class="sheet-template-result">{{attack1}}</span>
-					
-					<div class="sheet-template-action">
-						{{#rollBetween() attack1 1 amazing1}}
-							<span class="sheet-template-hit-ama">[Dmg](~repeating_attackforms_{{rowid}}_attackformdamageama)</span>
-						{{/rollBetween()}}
-						{{#rollBetween() attack1 amazing1_p1 good1}}
-							<span class="sheet-template-hit-goo">[Dmg](~repeating_attackforms_{{rowid}}_attackformdamagegoo)</span>
-						{{/rollBetween()}}
-						{{#rollBetween() attack1 good1_p1 ordinary1}}
-							<span class="sheet-template-hit-ord">[Dmg](~repeating_attackforms_{{rowid}}_attackformdamageord)</span>
-						{{/rollBetween()}}
-						{{#rollGreater() attack1 ordinary1}}
-							<span class="sheet-template-miss">(Miss)</span>
-						{{/rollGreater()}}
-					</div>
-				</div>
-				{{/attack1}}
-
-				{{#attack2}}
-				<div class="sheet-template-attack-row">
-					<span class="sheet-template-label">Att. 2 {{scores2}}:</span> 
-					<span class="sheet-template-result">{{attack2}}</span>
-					
-					<div class="sheet-template-action">
-						{{#rollBetween() attack2 1 amazing2}}
-							<span class="sheet-template-hit-ama">[Dmg](~repeating_attackforms_{{rowid}}_attackformdamageama)</span>
-						{{/rollBetween()}}
-						{{#rollBetween() attack2 amazing2_p1 good2}}
-							<span class="sheet-template-hit-goo">[Dmg](~repeating_attackforms_{{rowid}}_attackformdamagegoo)</span>
-						{{/rollBetween()}}
-						{{#rollBetween() attack2 good2_p1 ordinary2}}
-							<span class="sheet-template-hit-ord">[Dmg](~repeating_attackforms_{{rowid}}_attackformdamageord)</span>
-						{{/rollBetween()}}
-						{{#rollGreater() attack2 ordinary2}}
-							<span class="sheet-template-miss">(Miss)</span>
-						{{/rollGreater()}}
-					</div>
-				</div>
-				{{/attack2}}
-
-				{{#attack3}}
-				<div class="sheet-template-attack-row">
-					<span class="sheet-template-label">Att. 3 {{scores3}}:</span> 
-					<span class="sheet-template-result">{{attack3}}</span>
-					
-					<div class="sheet-template-action">
-						{{#rollBetween() attack3 1 amazing3}}
-							<span class="sheet-template-hit-ama">[Dmg](~repeating_attackforms_{{rowid}}_attackformdamageama)</span>
-						{{/rollBetween()}}
-						{{#rollBetween() attack3 amazing3_p1 good3}}
-							<span class="sheet-template-hit-goo">[Dmg](~repeating_attackforms_{{rowid}}_attackformdamagegoo)</span>
-						{{/rollBetween()}}
-						{{#rollBetween() attack3 good3_p1 ordinary3}}
-							<span class="sheet-template-hit-ord">[Dmg](~repeating_attackforms_{{rowid}}_attackformdamageord)</span>
-						{{/rollBetween()}}
-						{{#rollGreater() attack3 ordinary3}}
-							<span class="sheet-template-miss">(Miss)</span>
-						{{/rollGreater()}}
-					</div>
-				</div>
-				{{/attack3}}
-			</div>
-
-			{{#notes}}<div class="sheet-template-notes"><span>Notes:</span> {{notes}}</div>{{/notes}}
-		</div>
-	</rolltemplate>

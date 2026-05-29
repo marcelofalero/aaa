@@ -4,6 +4,8 @@ cost: 2
 url: /skills/entertainment#act
 trained_only: false
 rank_benefits:
+- rank: 4
+  title: Disguise
 - rank: 1
   title: Skill Synergy
 - rank: 4

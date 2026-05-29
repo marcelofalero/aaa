@@ -3,6 +3,15 @@ attribute: WIL
 cost: 3
 url: /skills/administration#bureaucracy
 trained_only: false
+rank_benefits:
+- rank: 2
+  title: Optimized Routing
+- rank: 6
+  title: Procedural Immunity
+- rank: 9
+  title: Invisible Hand
+- rank: 12
+  title: Loophole Master
 name: Bureaucracy
 ---
 

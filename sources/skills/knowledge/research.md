@@ -5,13 +5,13 @@ url: /skills/knowledge#research
 trained_only: false
 rank_benefits:
 - rank: 3
-  title: Efficient Investigation
+  title: Efficient Research
 - rank: 6
-  title: Efficient Investigation
+  title: Efficient Research
 - rank: 9
-  title: Efficient Investigation
+  title: Efficient Research
 - rank: 12
-  title: Efficient Investigation
+  title: Efficient Research
 name: Research
 ---
 

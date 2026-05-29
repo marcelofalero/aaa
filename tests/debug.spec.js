@@ -1,7 +1,7 @@
 const { test, expect } = require('@playwright/test');
 
 test('debug psionics', async ({ page }) => {
-    await page.goto('http://localhost:1313/core-mechanics/psionics/');
+    await page.goto('http://localhost:1313/psionics/');
     
     // Check attributes
     const biokinesisRow = page.locator('tr.level-2:has-text("Biokinesis")');

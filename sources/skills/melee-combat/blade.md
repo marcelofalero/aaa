@@ -3,6 +3,13 @@ attribute: STR
 cost: 3
 url: /skills/melee-combat#blade
 trained_only: false
+rank_benefits:
+- rank: 4
+  title: Reaction Parry
+- rank: 6
+  title: Double-Strike
+- rank: 9
+  title: Multistrike
 name: Blade
 ---
 

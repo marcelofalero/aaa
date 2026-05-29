@@ -7,6 +7,7 @@ rank_benefits:
 - rank: 1
   title: Check Skill
   extended_duration: true
+extended_duration: false
 name: Morph
 ---
 
@@ -62,8 +63,8 @@ A morphed body part retains its original characteristics; no game statistics cha
 **Rank 9** – Elongate legs: +1 m height.
 
 #### Contortion and Compression (Ranks 5, 7, 9)
-**Rank 5** – Fit into a container of similar "volume" as your body. The volume of an average human male can fit in a 50cm side cube with a limited degree of movement. 
+**Rank 5** – Fit into a container of similar "volume" as your body. The volume of an average human male can fit in a 50cm side cube with a limited degree of movement.
 
-**Rank 7** – Fit into a container of 3/4 the volume of your body, movement is not hindered. 
+**Rank 7** – Fit into a container of 3/4 the volume of your body, movement is not hindered.
 
 **Rank 9** – Fit into a container of 1/2 the volume of your body, movement is not hindered.

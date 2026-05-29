@@ -3,6 +3,21 @@ attribute: STR
 cost: 2
 url: /skills/athletics#swim
 trained_only: true
+rank_benefits:
+- rank: 1
+  title: Improved Breathing
+- rank: 4
+  title: Improved Breathing
+- rank: 8
+  title: Improved Breathing
+- rank: 12
+  title: Improved Breathing
+- rank: 4
+  title: Increased Swim Speed
+- rank: 8
+  title: Increased Swim Speed
+- rank: 12
+  title: Increased Swim Speed
 name: Swim
 ---
 

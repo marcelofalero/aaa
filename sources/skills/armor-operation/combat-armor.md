@@ -6,7 +6,23 @@ trained_only: false
 rank_benefits:
 - rank: 1
   title: Improved Operation
+- rank: 4
+  title: Improved Operation
+- rank: 6
+  title: Improved Operation
+- rank: 10
+  title: Improved Operation
 - rank: 2
+  title: Shaking Off Stuns
+- rank: 4
+  title: Shaking Off Stuns
+- rank: 6
+  title: Shaking Off Stuns
+- rank: 8
+  title: Shaking Off Stuns
+- rank: 10
+  title: Shaking Off Stuns
+- rank: 12
   title: Shaking Off Stuns
 - rank: 7
   title: Powered Armor Operation

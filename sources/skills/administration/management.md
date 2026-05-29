@@ -3,6 +3,13 @@ attribute: WIL
 cost: 3
 url: /skills/administration#management
 trained_only: false
+rank_benefits:
+- rank: 2
+  title: Investment Portfolio
+- rank: 3
+  title: Financial Leverage
+- rank: 6
+  title: Master of Capital
 name: Management
 ---
 

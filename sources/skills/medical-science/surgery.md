@@ -5,9 +5,9 @@ url: /skills/medical-science#surgery
 trained_only: true
 rank_benefits:
 - rank: 3
-  title: Surgical Proficiency
+  title: Cybernetic Surgery
 - rank: 6
-  title: Surgical Proficiency
+  title: Cybernetic Surgery, Install
 name: Surgery
 ---
 
@@ -31,7 +31,7 @@ The conditions for surgery are considered:
 The complexity of a surgery check depends on the amount of mortal
 damage the patient is suffering from when the procedure is begun:
 1 point of damage is Marginal, 2 is Ordinary, 3 is Good, and 4 or
-more is Amazing. 
+more is Amazing.
 
 If the patient is suffering only from wound
 damage, then 2 points of damage is Marginal, 4 is Ordinary, 6 is
