@@ -33,8 +33,8 @@ Interacción incluye áreas específicas como:
 Interacción es una **habilidad de encuentro**, lo que significa que cualquier prueba de habilidad tiene en cuenta la actitud inicial del objetivo (consulte la [Tabla P25: Efectos de las habilidades de encuentro]({{< relref "core-mechanics/useful-tables#table-p25-encounter-skill-effects" >}})).
 
 - **Restricciones de objetivos:** Ni un Personaje **Combativo** ni un Personaje **Fanático** pueden verse influenciados por Interacción.
-- **Resistencia:** También se aplica el **modificador de resistencia a la voluntad** del objetivo. 
-- **Modificadores acumulativos:** Los modificadores enumerados anteriormente son acumulativos. 
+- **Resistencia:** También se aplica el **modificador de resistencia a la voluntad** del objetivo.
+- **Modificadores acumulativos:** Los modificadores enumerados anteriormente son acumulativos.
 - **Longevidad:** En general, los cambios de actitud que se pueden provocar con el uso de Interacción son más duraderos que los cambios logrados mediante el uso de Engaño o habilidades de entretenimiento. De lo contrario, el cambio de actitud de un objetivo dura hasta que el Personaje haga algo para alterar esa actitud de forma positiva o negativa.
 
 > Cuando sea posible, es mejor interpretar un encuentro Interacción que simplemente tirar los dados y decidir un resultado.

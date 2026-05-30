@@ -844,187 +844,31 @@ items:
                 user a bonus to his or her action checks:
                 - **Ordinary:** -1 step bonus.
                 - **Good:** -2 step bonus.
-                - **Amazing:** -3 step bonus. For purposes of using this skill, “battle” is defined as any situation in which the character has made an action check in the same round he or she uses the battle mind skill.
-                **Rank Benefits:**
-                - **At rank 4 [Increased Effect]:** the bonus to action checks improves: Ordinary, -2 steps; Good, -3 steps; Amazing, -4 steps.
-                - **At rank 8 [Move Like Water]:** the character employing this ability gains a temporary last resort point, which he or she must use before the ability’s duration ends or lose it. This point can only be used to offset damage.
-                - **At rank 12 [Unerring Accuracy]:** the character gains a temporary last resort point, which must be used before the ability’s duration ends or it becomes lost. This point can only be used to increase the success of an attack made by the character using this ability.
+                - **Amazing:** -3 step bonus. 
+
+                For purposes of using this skill, “battle” is defined as any situation in which the character has made an action check in the same round he or she uses the battle mind skill.
+
+                ### Rank Benefits
+                - **Rank 4 [Increased Effect]** whenever you are allowed an action check, you are also allowed to make a [[ESP-Battle Mind]] check to activate this power and gain its benefits to the first round. This check consumes one of your actions for the round, unless the result is amazing, then it doesn't cost an action. 
+                - **Rank 8 [Move Like Water]** the character employing this ability gains a temporary last resort point, which he or she must use before the ability’s duration ends or lose it. This point can only be used to offset damage.
+                - **Rank 12 [Unerring Accuracy]** the character gains a temporary last resort point, which must be used before the ability’s duration ends or it becomes lost. This point can only be used to increase the success of an attack made by the character using this ability.
           - es:
               name: Mente de Batalla
               description: |-
-                Para usar esta habilidad, un psiónico se concentra en la batalla actual y
-                realiza una tirada de habilidad. El éxito logrado indica el beneficio mientras
-                la aplicación actual de la habilidad permanezca activa. Una tirada con éxito
-                otorga al usuario un bonificador a sus tiradas de acción:
-                - **Ordinario:** bonificador de -1 paso.
-                - **Bueno:** bonificador de -2 pasos.
-                - **Asombroso:** bonificador de -3 pasos. A efectos del uso de esta habilidad, "batalla" se define como cualquier situación en la que el personaje haya realizado una tirada de acción en el mismo asalto en que usa la habilidad de mente de batalla.
-                **Beneficios de Rango:**
-                - **Al rango 4 [Efecto Incrementado]:** el bonificador a las tiradas de acción mejora: Ordinario, -2 pasos; Bueno, -3 pasos; Asombroso, -4 pasos.
-                - **Al rango 8 [Moverse como el Agua]:** el personaje que emplea esta capacidad gana un punto de último recurso temporal, que debe usar antes de que termine la duración de la capacidad o lo perderá. Este punto solo puede usarse para compensar daño.
-                - **Al rango 12 [Precisión Infalible]:** el personaje gana un punto de último recurso temporal, que debe usarse antes de que termine la duración de la capacidad o se perderá. Este punto solo puede usarse para aumentar el éxito de un ataque realizado por el personaje que usa esta capacidad.
-      clairaudience:
-        attribute: INT
-        cost: 2
-        url: /psionics/esp/#clairaudience
-        trained_only: false
-        rank_benefits:
-          - rank: 4
-            title: Increased Duration
-          - rank: 6
-            title: Change of Perspective
-          - rank: 8
-            title: Increased Duration
-          - rank: 12
-            title: Increased Duration
-        extended_duration: true
-        localized:
-          - en:
-              name: Clairaudience
-              description: |-
-                With this skill, a character selects a location and projects his or her mind
-                to that spot, hearing sounds as though physically present.
+                Para usar esta habilidad, un psion se concentra en la batalla en cuestión y desarrolla una habilidad.
+                cheque. El éxito alcanzado indica el beneficio, mientras que el actual
+                La aplicación de la habilidad permanece activa. Una prueba de habilidad exitosa le da al
+                usuario una bonificación a sus comprobaciones de acción:
+                - **Ordinario:** -1 Bonificación de paso.
+                - **Bueno:** -2 Bonificación de paso.
+                - **Asombroso:** -3 Bonificación de paso.
 
-                Clairaudience does not filter out ambient noise, so the user might have
-                trouble distinguishing particular sounds. It provides no help in interpreting
-                unfamiliar languages or recognizing unfamiliar sounds, and the mental ear
-                can't move from the selected spot. The location itself can be moving (a
-                vehicle, for example), but such a target requires additional skill checks if
-                the range to the target increases.
+                A los efectos del uso de esta habilidad, “batalla” se define como cualquier situación en la que Personaje haya realizado un Tirada de Acción en la misma ronda en la que usa la habilidad mental de batalla.
 
-                The user remains conscious within his or her body and is aware of what's
-                happening around it.
-
-                The better the result of the skill check, the longer the ability lasts:
-                - **Ordinary:** 1 round
-                - **Good:** 2 rounds
-                - **Amazing:** 3 rounds
-
-                This duration can be extended by spending 1 psionic energy point for every
-                additional round. Situation modifiers for the familiarity of the location and
-                the distance at which clairaudience is being used are as follows:
-
-                | Situation/distance | Modifier |
-                | :--- | :---: |-
-                | Familiar location | –1 |
-                | Unfamiliar location | none |
-                | 1–10 meters | –1 |
-                | 11–100 meters | none |
-                | 101 m–1 km | +1 |
-                | 2–10 km | +2 |
-                | 11–100 km | +3 |
-                | 101–1,000 km (low orbit) | +4 |
-                | 1,001–10,000 km (high orbit) | +5 |
-
-                **Rank Benefits:**
-                - **At rank 4 [Increased Duration]**, the time increment for a successful use of the skill increases to minutes (**Ordinary:** 1 minute; **Good:** 2 minutes; **Amazing:** 3 minutes). Each additional psionic energy point used to extend the duration adds 1 minute to the duration.
-                - **At rank 6 [Change of Perspective]**, the character can attempt another ESP-clairaudience skill check to shift the location to which the mental ear has been projected. The new check is modified by the distance from the current location that the psion is listening to, rather than the physical distance the psion is from the target area.
-                - **At rank 8 [Increased Duration]**, the time increment increases again: **Ordinary:** 5 minutes; **Good:** 10 minutes; **Amazing:** 15 minutes. Each additional psionic energy point adds 5 minutes.
-                - **At rank 12 [Increased Duration]**, the time increment becomes: **Ordinary:** 30 minutes; **Good:** 60 minutes; **Amazing:** 90 minutes. Each additional psionic energy point adds 30 minutes.
-
-                ---
-          - es:
-              name: Clariaudiencia
-              description: |-
-                Con esta habilidad, un Personaje selecciona una ubicación y proyecta su mente.
-                a ese lugar, escuchando sonidos como si estuvieran físicamente presentes.
-
-                La clariaudiencia no filtra el ruido ambiental, por lo que es posible que el usuario tenga
-                dificultad para distinguir sonidos particulares. No proporciona ninguna ayuda en la interpretación.
-                idiomas desconocidos o reconocer sonidos desconocidos, y el oído Mental
-                No puedo moverme del lugar seleccionado. La ubicación en sí puede estar en movimiento (un
-                vehículo, por ejemplo), pero tal objetivo requiere controles de habilidad adicionales si
-                el alcance hasta el objetivo aumenta.
-
-                El usuario permanece consciente dentro de su cuerpo y es consciente de lo que está
-                sucediendo a su alrededor.
-
-                Cuanto mejor sea el resultado de la prueba de habilidad, más durará la habilidad:
-                - **Ordinario:** 1 ronda
-                - **Bueno:** 2 rondas
-                - **Asombroso:** 3 rondas
-
-                Esta duración se puede ampliar gastando 1 punto de energía psiónica por cada
-                ronda adicional. Modificadores de situación por la familiaridad de la ubicación y
-                La distancia a la que se utiliza la clariaudiencia es la siguiente:
-
-                | Situación/distancia | Modificador |
-                | :--- | :---: |-
-                | Ubicación familiar | –1 |
-                | Ubicación desconocida | ninguno |
-                | 1–10 metros | –1 |
-                | 11–100 metros | ninguno |
-                | 101 m–1 km | +1 |
-                | 2–10 kilómetros | +2 |
-                | 11-100 kilómetros | +3 |
-                | 101-1.000 km (órbita baja) | +4 |
-                | 1.001-10.000 km (órbita alta) | +5 |
-
-                **Beneficios de Rango:**
-                - **En Rango 4 [Duración aumentada]**, el incremento de tiempo para un uso exitoso de la habilidad aumenta a minutos (**Ordinario:** 1 minuto; **Bueno:** 2 minutos; **Asombroso:** 3 minutos). Cada punto de energía psiónica adicional utilizado para extender la duración agrega 1 minuto a la duración.
-                - **En Rango 6 [Cambio de perspectiva]**, el Personaje puede intentar otra prueba de habilidad de clariaudiencia ESP para cambiar la ubicación a la que se ha proyectado el oído Mental. La nueva verificación se modifica por la distancia desde la ubicación actual que el psion está escuchando, en lugar de la distancia Físico entre el psion y el área objetivo.
-                - **En Rango 8 [Duración aumentada]**, el incremento de tiempo aumenta nuevamente: **Ordinario:** 5 minutos; **Bueno:** 10 minutos; **Asombroso:** 15 minutos. Cada punto de energía psiónica adicional suma 5 minutos.
-                - **En Rango 12 [Duración aumentada]**, el incremento de tiempo pasa a ser: **Ordinario:** 30 minutos; **Bueno:** 60 minutos; **Asombroso:** 90 minutos. Cada punto de energía psiónica adicional suma 30 minutos.
-
-                ---
-      clairvoyance:
-        attribute: INT
-        cost: 2
-        url: /psionics/esp/#clairvoyance
-        trained_only: false
-        rank_benefits:
-          - rank: 4
-            title: Increased Duration
-          - rank: 6
-            title: Change of Perspective
-          - rank: 8
-            title: Increased Duration
-          - rank: 12
-            title: Increased Duration
-        extended_duration: true
-        localized:
-          - en:
-              name: Clairvoyance
-              description: |-
-                To employ this skill, a character selects a location and projects his or her
-                mind to that spot, seeing everything going on around that spot as though
-                physically there. Clairvoyance doesn't block normal vision, so the user sees
-                double images unless his or her eyes are closed. It also provides no help in
-                seeing through obscuring elements, such as walls, closed doors, or darkness,
-                and the mental eye can't move from the selected spot. The location itself may
-                be moving (a vehicle, for example), but such a target necessitates additional
-                skill checks if the range to the target increases. The better the result of
-                the skill check, the longer the ability lasts: Ordinary, 1 round; Good, 2
-                rounds; Amazing, 3 rounds. This duration can be extended by spending 1 psionic
-                energy point for every additional round. Situation modifiers for distance and
-                familiarity are the same as for Clairaudience.
-                **Rank Benefits:**
-                - **At rank 4 [Increased Duration]:** the time increment increases to minutes (Ordinary, 1 minute; Good, 2 minutes, Amazing, 3 minutes).
-                - **At rank 6 [Change of Perspective]:** the character can attempt another check to shift the location of the mental eye. The new check is modified by the distance from the current location being viewed.
-                - **At rank 8 [Increased Duration]:** the time increment becomes 5 minutes (Ordinary, 5 minutes; Good, 10 minutes; Amazing, 15 minutes).
-                - **At rank 12 [Increased Duration]:** the increment becomes 30 minutes (Ordinary, 30 minutes; Good, 60 minutes; Amazing, 90 minutes).
-          - es:
-              name: Clarividencia
-              description: |-
-                Para emplear esta habilidad, un personaje selecciona una ubicación y proyecta
-                su mente a ese lugar, viendo todo lo que sucede alrededor de ese punto como si
-                estuviera físicamente allí. La clarividencia no bloquea la visión normal, por
-                lo que el usuario ve imágenes dobles a menos que tenga los ojos cerrados.
-                Tampoco proporciona ayuda para ver a través de elementos que oscurezcan la
-                visión, como paredes, puertas cerradas o oscuridad, y el ojo mental no puede
-                moverse del lugar seleccionado. La ubicación en sí puede estar en movimiento
-                (un vehículo, por ejemplo), pero tal objetivo requiere tiradas de habilidad
-                adicionales si el rango al objetivo aumenta. Cuanto mejor sea el resultado de
-                la tirada de habilidad, más tiempo durará la capacidad: Ordinario, 1 asalto;
-                Bueno, 2 asaltos; Asombroso, 3 asaltos. Esta duración se puede extender
-                gastando 1 punto de energía psiónica por cada asalto adicional. Los
-                modificadores de situación por distancia y familiaridad son los mismos que
-                para la Clariaudiencia.
-                **Beneficios de Rango:**
-                - **Al rango 4 [Duración Incrementada]:** el incremento de tiempo aumenta a minutos (Ordinario, 1 minuto; Bueno, 2 minutos, Asombroso, 3 minutos).
-                - **Al rango 6 [Cambio de Perspectiva]:** el personaje puede intentar otra tirada para mover la ubicación del ojo mental. La nueva tirada se modifica por la distancia desde la ubicación actual que se está viendo.
-                - **Al rango 8 [Duración Incrementada]:** el incremento de tiempo pasa a ser de 5 minutos (Ordinario, 5 minutos; Bueno, 10 minutos; Asombroso, 15 minutos).
-                - **Al rango 12 [Duración Incrementada]:** el incremento pasa a ser de 30 minutos (Ordinario, 30 minutos; Bueno, 60 minutos; Asombroso, 90 minutos).
+                ### Beneficios de Rango
+                - **Rango 4 [Efecto aumentado]** siempre que se te permita un Tirada de Acción, también puedes realizar una prueba de [[ESP-Battle Mind]] para activar este poder y obtener sus beneficios en la primera ronda. Esta prueba consume una de tus acciones de la ronda, a menos que el resultado sea Asombroso, entonces no cuesta una acción. 
+                - **Rango 8 [Move Like Water]** el Personaje que emplea esta habilidad gana un punto Último Recurso temporal, que debe usar antes de que finalice la duración de la habilidad o la pierda. Este punto sólo se puede utilizar para compensar el daño.
+                - **Rango 12 [Precisión infalible]** el Personaje gana un punto Último Recurso temporal, que debe usarse antes de que finalice la duración de la habilidad o se pierda. Este punto sólo puede usarse para aumentar el éxito de un ataque realizado por Personaje usando esta habilidad.
       dream-hunt:
         attribute: INT
         cost: 3
@@ -1051,36 +895,52 @@ items:
                 determines the place where the quarry will be at any single locale in the next
                 24 hours (though not when). The better the target's habits are known, the
                 easier the hunt:
+
                 - **Familiar target / territory:** -2 / -1 step bonus.
                 - **Described / Unknown target:** +1 / +2 step penalty. The degree of success determines how accurately the psion can pinpoint the location:
                 - **Ordinary:** within 1000 meters.
                 - **Good:** within 500 meters.
-                - **Amazing:** within 100 meters. Characters who receive this information can make Awareness-perception checks or Investigate-search checks with a -1, -2, or -3 step bonus to locate or avoid being surprised by the quarry.
-                **Rank Benefits:**
-                - **At rank 3 [Improved Accuracy]:** the psion is able to narrow down the time the prey will be at a given locale to within 3 hours.
-                - **At rank 6 [Improved Accuracy]:** pinpointing improved: Ordinary 500m; Good 100m; Amazing 50m.
-                - **At rank 9 [Improved Timing]:** the psion can determine when the prey will be at a particular location to within 30 minutes.
-                - **At rank 12 [Improved Accuracy]:** pinpointing improved: Ordinary 100m; Good 50m; Amazing 10m.
+                - **Amazing:** within 100 meters. 
+
+                Characters who receive this information can make Awareness-perception checks or Investigate-search checks with a -1, -2, or -3 step bonus to locate or avoid being surprised by the quarry.
+
+                ### Rank Benefits
+
+                **Rank 3 [Improved Accuracy]:** the psion is able to narrow down the time the prey will be at a given locale to within 3 hours.
+
+                **Rank 6 [Improved Accuracy]:** pinpointing improved: Ordinary 500m; Good 100m; Amazing 50m.
+
+                **Rank 9 [Improved Timing]:** the psion can determine when the prey will be at a particular location to within 30 minutes.
+
+                **Rank 12 [Improved Accuracy]:** pinpointing improved: Ordinary 100m; Good 50m; Amazing 10m.
           - es:
               name: Caza Onírica
               description: |-
-                Aunque originalmente desarrollada para cazar animales, esta técnica funciona
-                en cualquier ser vivo. El psiónico se concentra en el sujeto y se involucra
-                mentalmente en una caza. Si la tirada de habilidad tiene éxito, el psiónico
-                determina el lugar donde estará la presa en cualquier ubicación única en las
-                próximas 24 horas (aunque no cuándo). Cuanto mejor se conozcan los hábitos del
-                objetivo, más fácil será la caza:
-                - **Objetivo / territorio familiar:** bonificador de -2 / -1 pasos.
-                - **Objetivo descrito / desconocido:** penalizador de +1 / +2 pasos. El grado de éxito determina con qué precisión el psiónico puede identificar la ubicación:
+                Aunque originalmente fue desarrollada para la caza de animales, la técnica funciona en cualquier
+                ser vivo. El psion sesheyan (o entrenado por sesheyan) se concentra en el
+                sujeto y mentalmente se involucra en una cacería. Cuanto mejores sean los hábitos del sujeto
+                conocido, más fácil será la caza. Si la prueba de habilidad tiene éxito, el psion
+                determina el lugar donde estará la cantera en cualquier lugar en el próximo
+                24 horas (aunque no cuando). Cuanto mejor se conozcan los hábitos del objetivo, más
+                más fácil la caza:
+
+                - **Objetivo/territorio familiar:** -2 / -1 Bonificación de paso.
+                - **Objetivo descrito/desconocido:** +1 / +2 Penalización de paso. El grado de éxito determina la precisión con la que el psion puede señalar la ubicación:
                 - **Ordinario:** dentro de 1000 metros.
-                - **Bueno:** dentro de 500 metros.
-                - **Asombroso:** dentro de 100 metros. Los personajes que reciben esta información pueden realizar tiradas de Percepción-avistar o Investigar-buscar con un bonificador de -1,
-                -2 o -3 pasos para localizar o evitar ser sorprendidos por la presa.
-                **Beneficios de Rango:**
-                - **Al rango 3 [Precisión Mejorada]:** el psiónico reduce el tiempo en que la presa estará en un lugar a un margen de 3 horas.
-                - **Al rango 6 [Precisión Mejorada]:** identificación mejorada: Ordinario 500m; Bueno 100m; Asombroso 50m.
-                - **Al rango 9 [Sincronización Mejorada]:** el psiónico determina cuándo estará la presa en un lugar con un margen de 30 minutos.
-                - **Al rango 12 [Precisión Mejorada]:** identificación mejorada: Ordinario 100m; Bueno 50m; Asombroso 10m.
+                - **Bueno:** a menos de 500 metros.
+                - **Asombroso:** dentro de 100 metros.
+
+                Los personajes que reciban esta información pueden realizar pruebas de Alerta-Percepción o pruebas de Investigar-buscar con un -1, -2 o -3 Bonificación de paso para localizar o evitar ser sorprendidos por la presa.
+
+                ### Beneficios de Rango
+
+                **Rango 3 [Precisión mejorada]:** el psion puede reducir el tiempo que la presa estará en un lugar determinado a 3 horas.
+
+                **Rango 6 [Precisión mejorada]:** localización mejorada: Ordinario 500m; Bueno 100m; Asombroso 50m.
+
+                **Rango 9 [Tiempo mejorado]:** el psion puede determinar cuándo estará la presa en un lugar particular en un plazo de 30 minutos.
+
+                **Rango 12 [Precisión mejorada]:** localización mejorada: Ordinario 100m; Bueno 50m; Asombroso 10m.
       empathy:
         attribute: INT
         cost: 1
@@ -1097,7 +957,7 @@ items:
             title: Connection
           - rank: 12
             title: Relationship
-        extended_duration: false
+        extended_duration: true
         localized:
           - en:
               name: Empathy
@@ -1111,30 +971,32 @@ items:
                 - **Ordinary:** -1 step bonus.
                 - **Good:** -2 step bonus.
                 - **Amazing:** -3 step bonus.
-                **Rank Benefits:**
-                - **At rank 4 [Relationship]:** the empath can sense the surface emotions of two other characters toward each other.
-                - **At rank 6 [Aura Reading]:** evaluate health state (healthy, injured, sick, dying, insane, etc.). Grants a -1 to -3 step bonus to Medical Science, Knowledge-first aid, or Biokinesis-transfer damage (or heal if at rank 8+) checks used to treat the target. Attempts on different species suffer a +1 step penalty.
-                - **At rank 8 [Relationship]:** the empath can apply this skill to three other characters.
-                - **At rank 9 [Connection]:** develop a connection with an individual to sense emotions even when not in visual range, up to 1 mile per rank away.
-                - **At rank 12 [Relationship]:** the empath can apply this skill to four other characters.
+
+                ### Rank Benefits
+                **Rank 4 [Relationship]:** the empath can sense the surface emotions of two other characters toward each other.
+                **Rank 6 [Aura Reading]:** evaluate health state (healthy, injured, sick, dying, insane, etc.). Grants a -1 to -3 step bonus to Medical Science, Knowledge-first aid, or Biokinesis-Heal or Biokinasis-Rejuvenate checks used to treat the target. Attempts on different species suffer a +1 step penalty.
+                **Rank 8 [Relationship]:** the empath can apply this skill to three other characters.
+                **Rank 9 [Connection]:** develop a connection with an individual to sense emotions even when not in visual range, up to 1 mile per rank away.
+                **Rank 12 [Relationship]:** the empath can apply this skill to four other characters.
           - es:
               name: Empatía
               description: |-
-                Esta habilidad permite a un psiónico "leer" las emociones superficiales de
-                otro personaje. Esta capacidad ayuda al usuario en situaciones de encuentro.
-                El objetivo debe estar dentro del rango visual. Un uso exitoso de la empatía
-                proporciona una comprensión del estado emocional del objetivo (Combativo,
-                Hostil, Neutral, Amistoso, Encantado o Fanático) y otorga un bonificador al
-                usar habilidades de encuentro sobre ese personaje objetivo:
-                - **Ordinario:** bonificador de -1 paso.
-                - **Bueno:** bonificador de -2 pasos.
-                - **Asombroso:** bonificador de -3 pasos.
-                **Beneficios de Rango:**
-                - **Al rango 4 [Relación]:** el empático puede sentir las emociones superficiales de otros dos personajes entre sí.
-                - **Al rango 6 [Lectura de Aura]:** evalúa el estado de salud (sano, herido, enfermo, moribundo, demente, etc.). Otorga un bonificador de -1 a -3 pasos a las tiradas de Ciencia Médica, Conocimiento-primeros auxilios o Biokinesis-transferir daño (o curar si tiene rango 8+) usadas para tratar al objetivo. Los intentos sobre especies distintas sufren un penalizador de +1 paso.
-                - **Al rango 8 [Relación]:** el empático puede aplicar esta habilidad a otros tres personajes.
-                - **Al rango 9 [Conexión]:** desarrolla una conexión con un individuo para sentir sus emociones incluso cuando no está en el rango visual, a una distancia de hasta 1,5 km por rango.
-                - **Al rango 12 [Relación]:** el empático puede aplicar esta habilidad a otros cuatro personajes.
+                Esta habilidad permite a un psion "leer" las emociones superficiales de otro Personaje.
+                Esta habilidad ayuda al usuario en situaciones de encuentro. El objetivo debe ser
+                dentro del alcance visual. Un uso exitoso de la empatía proporciona una comprensión de
+                el estado emocional del objetivo (Combativo, Hostil, Neutral, Amistoso, Encantado,
+                o Fanático) y proporciona una bonificación al usar habilidades de encuentro sobre ese objetivo.
+                Personaje:
+                - **Ordinario:** -1 Bonificación de paso.
+                - **Bueno:** -2 Bonificación de paso.
+                - **Asombroso:** -3 Bonificación de paso.
+
+                ### Beneficios de Rango
+                **Rango 4 [Relación]:** el empático puede sentir las emociones superficiales de dos personajes de Otros hacia cada Otros.
+                **Rango 6 [Lectura del Aura]:** evaluar el estado de salud (sano, herido, enfermo, moribundo, demente, etc.). Otorga de -1 a -3 Bonificación de paso a Ciencias médicas, pruebas de conocimiento-primeros auxilios o biokinesis-curación o biokinasis-rejuvenecimiento utilizadas para tratar al objetivo. Los intentos sobre diferentes especies sufren un +1 Penalización de paso.
+                **Rango 8 [Relación]:** el empático puede aplicar esta habilidad a tres personajes Otros.
+                **Rango 9 [Conexión]:** desarrolle una conexión con un individuo para sentir emociones incluso cuando no esté en el alcance visual, hasta 1 milla por Rango de distancia.
+                **Rango 12 [Relación]:** el empático puede aplicar esta habilidad a cuatro personajes Otros.
       mind-reading:
         attribute: INT
         cost: 3
@@ -1158,30 +1020,39 @@ items:
                 character. The target must be within 500 meters (100m/200m/500m) of the
                 psionics-user. The mental contact remains in effect for a limited time and
                 can't be extended by the use of psionic energy points.
+                ### Check Results
                 - **Ordinary:** contact lasts for 1 phase after the skill check is made. Only random and disjointed thoughts are perceived.
                 - **Good:** contact lasts for 2 phases. In addition to random thoughts, more detail and coherence is received, such as why the target is thinking about someone or something.
                 - **Amazing:** contact lasts for 3 phases. Complete surface thoughts can be read, plus some key fact related to what the psionics-user hoped to discover.
-                **Rank Benefits:**
-                - **At rank 3 [Extra Time]:** the character may add an additional phase to the duration: Ordinary, 2 phases; Good, 3 phases; Amazing, 4 phases.
-                - **At rank 6 [Probe]:** focused search through a target’s mind for a specific piece of information. (+2 step penalty for aliens). Will resistance applies.
-                - **At rank 9 [Extra Time]:** duration increases: Ordinary, 1 round; Good, 2 rounds; Amazing, 3 rounds.
-                - **At rank 12 [Extra Time]:** duration increases: Ordinary, 1 minute; Good, 2 minutes; Amazing, 3 minutes.
+
+                ### Rank Benefits
+                **Rank 3 [Extra Time]:** the character may add an additional phase to the duration: Ordinary, 2 phases; Good, 3 phases; Amazing, 4 phases.
+
+                **Rank 6 [Probe]:** focused search through a target’s mind for a specific piece of information. (+2 step penalty for aliens). Will resistance applies.
+
+                **Rank 9 [Extra Time]:** duration increases: Ordinary, 1 round; Good, 2 rounds; Amazing, 3 rounds.
+
+                **Rank 12 [Extra Time]:** duration increases: Ordinary, 1 minute; Good, 2 minutes; Amazing, 3 minutes.
           - es:
               name: Lectura Mental
               description: |-
-                Esta habilidad permite a un psiónico "leer" los pensamientos superficiales de
-                otro personaje. El objetivo debe estar dentro de los 500 metros
-                (100m/200m/500m) del usuario. El contacto mental permanece en vigor por un
-                tiempo limitado y no puede extenderse mediante el uso de puntos de energía
-                psiónica.
-                - **Ordinario:** el contacto dura 1 fase después de realizar la tirada. Solo se perciben pensamientos aleatorios e inconexos.
-                - **Bueno:** el contacto dura 2 fases. Además de los pensamientos aleatorios, se recibe más detalle y coherencia, como por qué el objetivo piensa en algo o alguien.
-                - **Asombroso:** el contacto dura 3 fases. Se pueden leer los pensamientos superficiales completos, además de algún dato clave relacionado con lo que el usuario esperaba descubrir.
-                **Beneficios de Rango:**
-                - **Al rango 3 [Tiempo Extra]:** el personaje puede añadir una fase adicional a la duración: Ordinario, 2 fases; Bueno, 3 fases; Asombroso, 4 fases.
-                - **Al rango 6 [Sonda]:** búsqueda enfocada en la mente de un objetivo para obtener una pieza específica de información (+2 pasos de penalización para alienígenas). Se aplican modificadores de resistencia de Voluntad.
-                - **Al rango 9 [Tiempo Extra]:** la duración aumenta: Ordinario, 1 asalto; Bueno, 2 asaltos; Asombroso, 3 asaltos.
-                - **Al rango 12 [Tiempo Extra]:** la duración aumenta: Ordinario, 1 minuto; Bueno, 2 minutos; Asombroso, 3 minutos.
+                Esta habilidad permite a un psion "leer" los pensamientos superficiales de otro.
+                Personaje. El objetivo debe estar a menos de 500 metros (100 m/200 m/500 m) del
+                usuario psiónico. El contacto Mental permanece vigente por tiempo limitado y
+                No se puede ampliar mediante el uso de puntos de energía psiónica.
+                ### Verificar resultados
+                - **Ordinario:** el contacto dura 1 fase después de realizar la prueba de habilidad. Sólo se perciben pensamientos aleatorios e inconexos.
+                - **Bueno:** el contacto tiene una duración de 2 fases. Además de los pensamientos aleatorios, se reciben más detalles y coherencia, como por ejemplo por qué el objetivo está pensando en alguien o algo.
+                - **Asombroso:** el contacto tiene una duración de 3 fases. Se pueden leer pensamientos superficiales completos, además de algún hecho clave relacionado con lo que el usuario psiónico esperaba descubrir.
+
+                ### Beneficios de Rango
+                **Rango 3 [Tiempo Extra]:** el Personaje puede agregar una fase adicional a la duración: Ordinario, 2 fases; Bueno, 3 fases; Asombroso, 4 fases.
+
+                **Rango 6 [Sonda]:** búsqueda enfocada a través de la mente de un objetivo para una información específica. (+2 Penalización de paso para extraterrestres). Se aplica la resistencia a la voluntad.
+
+                **Rango 9 [Tiempo extra]:** aumentos de duración: Ordinario, 1 ronda; Bueno, 2 rondas; Asombroso, 3 rondas.
+
+                **Rango 12 [Tiempo extra]:** aumentos de duración: Ordinario, 1 minuto; Bueno, 2 minutos; Asombroso, 3 minutos.
       navcognition:
         attribute: INT
         cost: 3
@@ -1193,11 +1064,11 @@ items:
           - rank: 4
             title: Travel Distance
           - rank: 5
-            title: Extra Specialties
+            title: System Navigation
           - rank: 6
             title: Clarity of Mind
           - rank: 9
-            title: Extra Specialties
+            title: Drivespace Navigation
           - rank: 12
             title: Tracking
         extended_duration: false
@@ -1208,40 +1079,66 @@ items:
                 A character who uses this skill can instinctively determine his or her present
                 location and mentally plot a course. This can be accomplished on a planetary
                 surface, in normal space, and even through drivespace. This mental ability
-                replaces the use of the Navigation skill. At rank 1, the character selects one
-                specialty: surface navigation, system astrogation, or drivespace astrogation.
-                | Situation/Condition | Modifier | | :--- | :---: | | Combat / Hostile
-                conditions | +4 / +2 | | Unexplored / Partially explored territory | +4 / +2 |
-                | Less than 5 minutes plotting | +1 per min. | | More than 5 minutes plotting
-                | -1 per min. |
-                **Rank Benefits:**
-                - **At rank 4 [Travel Time]:** becomes able to determine the clearest way to the destination. Cuts travel time (surface/system): Ordinary 75%; Good 50%; Amazing 25% of normal.
-                - **At rank 4 [Travel Distance]:** for drivespace, travel distance is multiplied: Ordinary x2; Good x5; Amazing x10.
-                - **At rank 5 [Extra Specialties]:** a second Navigation specialty can be selected.
-                - **At rank 6 [Clarity of Mind]:** allows a -4 step bonus during chases, races, or vehicle combat for reducing situational penalties.
-                - **At rank 9 [Extra Specialties]:** the remaining specialty becomes available.
-                - **At rank 12 [Tracking]:** attempt to track the most likely destination of a target subject, even through drivespace. (+2 seen, +4 witness/recorded).
+                replaces the use of the Navigation skill. On it's basic form it can only be as a
+                substitute for the [[navigation-surface]] skill. But by spending 1 psionic it can work
+                at system scale, and by spending 2 it can plot courses through drivespace.
+
+                | Situation/Condition | Modifier |
+                | :--- | :---: |
+                | Combat / Hostile conditions | +4 / +2 |
+                | Unexplored / Partially explored territory | +4 / +2 |
+                | Less than 5 minutes plotting | +1 per min. |
+                | More than 5 minutes plotting | -1 per min. |
+
+                ### Rank Benefits
+                **Rank 4 [Travel Time]:** becomes able to determine the clearest way to the destination. Cuts travel time (surface/system): Ordinary 10%; Good 25%; Amazing 50% of normal. A critical failure results in 50% longer travel time.
+
+                **Rank 4 [Drivespace Distance]:** when used for drivespace the skill allows for plotting courses using the otherwise unpreditable drivespace faults. The travel distance is increased by: Ordinary +5ly; Good +10ly; Amazing +20ly. A critical failure results in -10ly shorter travel distance.
+
+                **Rank 5 [Improved Navigation]:** reduce the cost of using the skill at system scale and to drivespace by 1. The character can also gain a -1 step bonus when using the skill by spending 1 additional psionic energy point.
+
+                **Rank 6 [Clarity of Mind]:** During combat is the psion is the pilot, copilot or navigator, he can use this power to reduce the penalties for situational conditions up to 4 step. For example navigating through an asteroid field, combat while avoiding debris, ships, or other hazards.
+
+                **Rank 9 [Advanced Navigation]:** allows the character to use the skill at drivespace without additional cost. The character can ear a -2 step bonus when using the skill by spending 1 additional psionic energy point.
+
+                **Rank 12 [Tracking]:** may use navcognition to attempt to track the most likely
+                destination of a target subject.
+                This ability may even be attempted through drivespace.
+                Using this ability requires that the character begin at a location where the target was last seen. Either by the character, or by a witness. The character must attempt a navcognition skill
+                check, with a +2 step penalty if he or she witnessed the subject, or a +4 step penalty if the subject was witnessed by someone else, or merely recorded. These penalties are cumulative with other navcognition situational modifiers.
           - es:
               name: Navcognición
               description: |-
-                Un personaje que usa esta habilidad puede determinar instintivamente su
-                ubicación actual y trazar mentalmente un curso. Esto puede lograrse en una
-                superficie planetaria, en el espacio normal e incluso a través del espacio de
-                curvatura. Esta capacidad mental sustituye al uso de la habilidad de
-                Navegación. Al rango 1, el personaje selecciona una especialidad: navegación
-                de superficie, astrografía de sistema o astrografía de motores de curvatura. |
-                Situación/Condición | Modificador | | :--- | :---: | | Condiciones de combate
-                / hostiles | +4 / +2 | | Territorio inexplorado / parcialmente explorado | +4
-                / +2 | | Menos de 5 minutos trazando | +1 por min. | | Más de 5 minutos
-                trazando |
-                -1 por min. |
-                **Beneficios de Rango:**
-                - **Al rango 4 [Tiempo de Viaje]:** capaz de determinar el camino más claro. Reduce el tiempo de viaje (superficie/sistema): Ordinario 75%; Bueno 50%; Asombroso 25% del normal.
-                - **Al rango 4 [Distancia de Viaje]:** para espacio de curvatura, la distancia de viaje se multiplica: Ordinario x2; Bueno x5; Asombroso x10.
-                - **Al rango 5 [Especialidades Extra]:** se puede seleccionar una segunda especialidad de Navegación.
-                - **Al rango 6 [Claridad Mental]:** permite un bonificador de -4 pasos durante persecuciones, carreras o combate de vehículos para reducir penalizadores circunstanciales.
-                - **Al rango 9 [Especialidades Extra]:** la especialidad restante de Navegación queda disponible.
-                - **Al rango 12 [Rastreo]:** intenta rastrear el destino más probable de un sujeto, incluso a través del espacio de curvatura (+2 si fue visto, +4 si fue presenciado por otro/grabado).
+                Un Personaje que usa esta habilidad puede determinar instintivamente su presente
+                ubicación y trazar mentalmente un rumbo. Esto se puede lograr en un planeta
+                superficie, en el espacio normal e incluso a través del espacio del disco. Esta habilidad Mental
+                reemplaza el uso de la habilidad Navegación. En su forma básica sólo puede ser como un
+                sustituto de la habilidad [[Navegación-surface]]. Pero gastando 1 psiónico puede funcionar.
+                a escala del sistema, y al gastar 2 puede trazar cursos a través del espacio de conducción.
+
+                | Situación/Condición | Modificador |
+                | :--- | :---: |
+                | Combate / Condiciones hostiles | +4 / +2 |
+                | Territorio inexplorado/parcialmente explorado | +4 / +2 |
+                | Menos de 5 minutos tramando | +1 por minuto. |
+                | Más de 5 minutos tramando | -1 por minuto. |
+
+                ### Beneficios de Rango
+                **Rango 4 [Tiempo de viaje]:** puede determinar el camino más claro hacia el destino. Reduce el tiempo de viaje (superficie/sistema): Ordinario 10%; Bueno 25%; Asombroso 50% de lo normal. Un Fallo Crítico da como resultado un tiempo de viaje un 50% más largo.
+
+                **Rango 4 [Distancia del espacio de conducción]:** cuando se usa para el espacio de conducción, la habilidad permite trazar cursos utilizando las fallas del espacio de conducción que de otro modo serían impredecibles. La distancia recorrida aumenta en: Ordinario +5ly; Bueno +10ly; Asombroso +20ly. Un Fallo Crítico da como resultado una distancia de recorrido -10 veces más corta.
+
+                **Rango 5 [Navegación mejorado]:** reduce el costo de usar la habilidad a escala del sistema y en el espacio de conducción en 1. El Personaje también puede obtener un -1 Bonificación de paso al usar la habilidad gastando 1 punto de energía psiónica adicional.
+
+                **Rango 6 [Claridad mental]:** Durante Combate, si el psion es el piloto, copiloto o navegante, puede usar este poder para reducir las penalizaciones por condiciones situacionales hasta 4 pasos. Por ejemplo, navegar a través de un campo de asteroides, Combate mientras evita escombros, barcos o peligros Otros.
+
+                **Rango 9 [Navegación avanzado]:** permite que Personaje use la habilidad en el espacio de conducción sin costo adicional. El Personaje puede obtener un -2 Bonificación de paso cuando usa la habilidad gastando 1 punto de energía psiónica adicional.
+
+                **Rango 12 [Seguimiento]:** puede usar navcognition para intentar Rastrear lo más probable
+                destino de un sujeto objetivo.
+                Esta habilidad puede incluso intentarse a través del espacio del disco.
+                El uso de esta habilidad requiere que el Personaje comience en el lugar donde se vio el objetivo por última vez. Ya sea por el Personaje, o por un testigo. El Personaje debe intentar una habilidad de navegación
+                marque, con un +2 Penalización de paso si fue testigo del sujeto, o un +4 Penalización de paso si el sujeto fue presenciado por otra persona, o simplemente grabado. Estas penalizaciones son acumulativas con los modificadores situacionales de navegación Otros.
       postcognition:
         attribute: INT
         cost: 3
@@ -1265,29 +1162,41 @@ items:
                 events that happened there in the recent past. The character must be in the
                 actual area to sense psychic resonance. In general, a character can see a
                 number of days into the past equal to his or her skill rank.
+
+                ### Check Results
                 - **Ordinary:** the character senses general emotions that have been left in an area.
                 - **Good:** the psion also receives brief flashes of events that may or may not make sense.
                 - **Amazing:** the character actually experiences a brief encounter as though at the scene when the events occurred.
-                **Rank Benefits:**
-                - **At rank 3 [Extended Reach]:** the character can see a number of weeks into the past equal to his skill rank.
-                - **At rank 6 [Extended Reach]:** view months into the past equal to rank.
-                - **At rank 9 [Extended Reach]:** view years into the past equal to rank.
-                - **At rank 12 [Extended Reach]:** view decades into the past equal to rank.
+
+                ### Rank Benefits
+                **Rank 3 [Extended Reach]:** the character can see a number of weeks into the past equal to his skill rank.
+
+                **Rank 6 [Extended Reach]:** view months into the past equal to rank.
+
+                **Rank 9 [Extended Reach]:** view years into the past equal to rank.
+
+                **Rank 12 [Extended Reach]:** view decades into the past equal to rank.
           - es:
               name: Postcognición
               description: |-
-                Con esta habilidad, un personaje puede sentir el ambiente de un área e incluso
-                "ver" eventos que ocurrieron allí en el pasado reciente. El personaje debe
-                estar en la ubicación real para sentir la resonancia psíquica. En general, un
-                personaje puede ver tantos días en el pasado como su rango de habilidad.
-                - **Ordinario:** el personaje siente emociones generales que han quedado en un área.
-                - **Bueno:** el psiónico también recibe breves destellos de eventos que pueden o no tener sentido.
-                - **Asombroso:** el personaje experimenta realmente un breve encuentro como si estuviera en la escena cuando ocurrieron los hechos.
-                **Beneficios de Rango:**
-                - **Al rango 3 [Alcance Extendido]:** el personaje puede ver tantas semanas en el pasado como su rango de habilidad.
-                - **Al rango 6 [Alcance Extendido]:** ve meses en el pasado por rango.
-                - **Al rango 9 [Alcance Extendido]:** ve años en el pasado por rango.
-                - **Al rango 12 [Alcance Extendido]:** ve décadas en el pasado por rango.
+                Con esta habilidad, un Personaje puede sentir el estado de ánimo de un área e incluso "ver"
+                hechos ocurridos allí en el pasado reciente. El Personaje debe estar en el
+                área real para sentir la resonancia psíquica. En general, un Personaje puede ver una
+                número de días en el pasado igual a su habilidad Rango.
+
+                ### Verificar resultados
+                - **Ordinario:** el Personaje detecta emociones generales que han quedado en un área.
+                - **Bueno:** el psion también recibe breves destellos de eventos que pueden o no tener sentido.
+                - **Asombroso:** el Personaje en realidad experimenta un breve encuentro como si estuviera en el lugar donde ocurrieron los hechos.
+
+                ### Beneficios de Rango
+                **Rango 3 [Alcance extendido]:** el Personaje puede ver un número de semanas en el pasado igual a su habilidad Rango.
+
+                **Rango 6 [Alcance extendido]:** ver meses en el pasado igual a Rango.
+
+                **Rango 9 [Alcance extendido]:** ver años en el pasado igual a Rango.
+
+                **Rango 12 [Alcance extendido]:** vea décadas en el pasado igual a Rango.
       precognition:
         attribute: INT
         cost: 4
@@ -1295,49 +1204,133 @@ items:
         trained_only: true
         rank_benefits:
           - rank: 3
-            title: Increased Time
+            title: Tactical Horizon
           - rank: 6
-            title: Increased Time
+            title: Operational Horizon
           - rank: 9
-            title: Increased Time
+            title: Strategic Horizon
           - rank: 12
-            title: Increased Time
+            title: Causal Horizon
         extended_duration: false
         localized:
           - en:
               name: Precognition
               description: |-
-                This skill is the ability to receive impressions about possible future
-                events—what the psion sees will probably happen if no one takes action to
-                change it. In general, a character can see a number of hours into the future
-                equal to his or her skill rank. On a successful skill check, the character
-                gains information about the event as well as a free last resort point (LRP),
-                which can only be used during the scene.
-                - **Ordinary:** perceptions of vague images. The LRP can only be used to modify a check which directly affects the psion (e.g. reducing an opponent's attack roll).
-                - **Good:** brief flashes of coming events. The LRP may be used to modify the result of any action made against or by him or her during the scene.
-                - **Amazing:** mentally experiences a brief encounter as though seeing events transpire. The LRP can be applied to any skill check made by any character involved in the scene. Forcing a flash doubles the cost in energy points, applies a +3 step penalty, and the skill can't be used again consciously for 2d6 days.
-                **Rank Benefits:**
-                - **At rank 3 [Increased Time]:** extend precognitive ability to a number of days equal to skill rank.
-                - **At rank 6 [Increased Time]:** extend to weeks equal to rank.
-                - **At rank 9 [Increased Time]:** extend to months equal to rank.
-                - **At rank 12 [Increased Time]:** extend to years equal to rank.
+                > [!NOTE]
+                > **Requires Perk:** [Precog]({{< relref "/perks_flaws/perks/precog" >}}).
+
+                ### The Session Flash
+
+                At the start of each session, the Gamemaster makes three secret rolls to determine the nature of the "Fixed Point" that the psion will sense during the session. Normally, the psion needs to be in a calm state of mind to receive a vision, while some can only receive them in dreams. For that reason, it is possible that in some sessions the psion does not receive a vision. The psion's visions are usually unclear and might make no sense when they occur; instead, they experience a persistent sense of déjà vu or intuitive dread as events unfold toward the Point.
+
+                #### 1. Scope (The Breadth of the Ripple)
+
+                | Result | Scope | Description |
+                | :---: | :--- | :--- |
+                | **20** | Systemic | Affecting an entire station, city, or population. |
+                | **15–19** | Social | Involving a group of acquaintances or public figures. |
+                | **10–14** | Localized | Affecting someone close to the psion or a specific small group. |
+                | **1–9** | Isolated | A single point of interaction. |
+
+                #### 2. Weight (The Entropy of the Event)
+
+                | Result | Weight | Description |
+                | :---: | :--- | :--- |
+                | **18–20** | Catastrophic | A high-entropy event forcing a massive shift in reality. |
+                | **10–17** | Significant | A major hazard, turning point, or dangerous obstacle. |
+                | **2–9** | Moderate | A standard complication or minor opportunity. |
+                | **1** | Beneficial | A rare "constructive" fixed point; a moment of great advantage. |
+
+                #### 3. Closeness (The Temporal Anchor)
+
+                | Result | Closeness | Description |
+                | :---: | :--- | :--- |
+                | **17–20** | Personal | The event involves the psion directly. |
+                | **11–16** | Intimate | Involves a crewmate or loved one. |
+                | **6–10** | Connected | Involves a known acquaintance, rival, or ally. |
+                | **1–5** | Disconnected | Unrelated to the psion (a background world hook). |
+
+                ### Causal Navigation
+
+                The player may make an ESP-precognition skill check to sensitize themselves to the reverse flow of causality. A success grants one Last Resort Point (LRP). This LRP represents a déjà vu that allows the psion to adjust actions to navigate the immediate causal path.
+
+                ### Check Results
+                - **Ordinary:** The LRP can only be used defensively, worsening an enemy attack against the psion or improving an active defense like a dodge or hit-the-deck check.
+                - **Good:** The LRP can also be used to improve any action made by the psion.
+                - **Amazing:** The LRP also applies to any check in the scene as long as the psion can intervene.
+
+                ### Overuse
+
+                Once the LRP is used, the character can exert to reactivate the power, but doing so carries its own risks. Forcing another activation in the same session requires a [[resolve—mental resolve]] check with a +3 step penalty. Failure results in the loss of all remaining psionic energy, while a critical failure renders the psion unconscious for as many hours as their Will score.
+
+                ### Rank Benefits
+
+                **Rank 3 [Tactical Horizon]:** The Overuse penalty is reduced to +2 steps.
+
+                **Rank 6 [Operational Horizon]:** The Overuse penalty is reduced to +1 step. Precognition skill checks receive a -1 step bonus.
+
+                **Rank 9 [Strategic Horizon]:** There is no penalty for Overuse.
+
+                **Rank 12 [Causal Horizon]:** The GM provides precise timing for the event described in the session flash (ranging from minutes for imminent events to a specific day for events months away).
           - es:
               name: Precognición
               description: |-
-                Esta habilidad es la capacidad de recibir impresiones sobre posibles eventos
-                futuros: lo que el psiónico ve probablemente sucederá si nadie toma medidas
-                para cambiarlo. En general, un personaje puede ver tantas horas en el futuro
-                como su rango de habilidad. En una tirada de habilidad exitosa, el personaje
-                gana información sobre el evento, así como un punto de último recurso (LRP)
-                gratuito, que solo puede usarse durante la escena.
-                - **Ordinario:** percepciones de imágenes vagas. El LRP solo puede usarse para modificar una tirada que afecte directamente al psiónico (por ejemplo, reducir la tirada de ataque de un oponente).
-                - **Bueno:** breves destellos de eventos venideros. El LRP puede usarse para modificar el resultado de cualquier acción realizada contra él/ella o por él/ella durante la escena.
-                - **Asombroso:** experimenta mentalmente un breve encuentro como si viera los hechos transcurrir. El LRP puede aplicarse a cualquier tirada de habilidad realizada por cualquier personaje involucrado en la escena. Forzar un destello dobla el coste en puntos de energía, aplica un penalizador de +3 pasos, y la habilidad no podrá volver a usarse conscientemente durante 2d6 días.
-                **Beneficios de Rango:**
-                - **Al rango 3 [Tiempo Incrementado]:** extiende la capacidad precognitiva a un número de días igual al rango de habilidad.
-                - **Al rango 6 [Tiempo Incrementado]:** extiende a semanas igual al rango.
-                - **Al rango 9 [Tiempo Incrementado]:** extiende a meses igual al rango.
-                - **Al rango 12 [Tiempo Incrementado]:** extiende a años igual al rango.
+                > [!NOTA]
+                > **Requiere Ventaja:** [Precog]({{< relref "/perks_flaws/perks/precog" >}}).
+
+                ### El flash de la sesión
+
+                Al comienzo de cada sesión, el Director de Juego realiza tres tiradas secretas para determinar la naturaleza del "Punto Fijo" que el psion detectará durante la sesión. Normalmente, el psion necesita estar en un estado mental tranquilo para recibir una visión, mientras que algunos sólo pueden recibirla en sueños. Por ese motivo, es posible que en algunas sesiones el psion no reciba visión. Las visiones del psion suelen ser confusas y pueden no tener sentido cuando ocurren; en cambio, experimentan una sensación persistente de déjà vu o temor intuitivo a medida que los acontecimientos se desarrollan hacia el Punto.
+
+                #### 1. Alcance (La amplitud de la onda expansiva)
+
+                | Resultado | Alcance | Descripción |
+                | :---: | :--- | :--- |
+                | **20** | Sistémico | Afectando a toda una estación, ciudad o población. |
+                | **15–19** | Social | Involucrar a un grupo de conocidos o figuras públicas. |
+                | **10–14** | Localizado | Afectar a alguien cercano al psion o a un pequeño grupo específico. |
+                | **1–9** | Aislado | Un solo punto de Interacción. |
+
+                #### 2. Peso (La entropía del evento)
+
+                | Resultado | Peso | Descripción |
+                | :---: | :--- | :--- |
+                | **18–20** | Catastrófico | Un evento de alta entropía que obliga a un cambio masivo en la realidad. |
+                | **10–17** | Significativo | Un peligro importante, un punto de inflexión u obstáculo peligroso. |
+                | **2–9** | Moderado | Una complicación estándar u oportunidad menor. |
+                | **1** | Beneficioso | Un punto fijo "constructivo" Raro; un momento de gran ventaja. |
+
+                #### 3. Cercanía (El Ancla Temporal)
+
+                | Resultado | Cercanía | Descripción |
+                | :---: | :--- | :--- |
+                | **17–20** | Personales | El evento involucra directamente a la psion. |
+                | **11–16** | Íntimo | Involucra a un compañero de tripulación o un ser querido. |
+                | **6–10** | Conectado | Involucra a un conocido, rival o aliado conocido. |
+                | **1–5** | Desconectado | No relacionado con el psion (un gancho mundial de fondo). |
+
+                ### Causal Navegación
+
+                El jugador puede realizar una prueba de habilidad de precognición ESP para sensibilizarse al flujo inverso de causalidad. Un éxito otorga un punto Último Recurso (LRP). Este LRP representa un déjà vu que permite al psion ajustar sus acciones para navegar por el camino causal inmediato.
+
+                ### Verificar resultados
+                - **Ordinario:** El LRP solo se puede usar de forma defensiva, empeorando un ataque enemigo contra el psion o mejorando una defensa activa como un Esquivar o un control de ataque.
+                - **Bueno:** El LRP también se puede utilizar para mejorar cualquier acción realizada por el psion.
+                - **Asombroso:** El LRP también se aplica a cualquier check en la escena siempre y cuando el psion pueda intervenir.
+
+                ### Uso excesivo
+
+                Una vez que se utiliza el LRP, el Personaje puede esforzarse para reactivar la energía, pero hacerlo conlleva sus propios riesgos. Forzar otra activación en la misma sesión requiere una verificación de [[Firmeza—Mental Firmeza]] con un +3 Penalización de paso. El fallo resulta en la pérdida de toda la energía psiónica restante, mientras que un Fallo Crítico deja al psion inconsciente durante tantas horas como su puntuación de Voluntad.
+
+                ### Beneficios de Rango
+
+                **Rango 3 [Horizonte Táctico]:** La penalización por uso excesivo se reduce a +2 pasos.
+
+                **Rango 6 [Horizonte operativo]:** La penalización por uso excesivo se reduce a +1 paso. Las pruebas de habilidades de precognición reciben un -1 Bonificación de paso.
+
+                **Rango 9 [Horizonte estratégico]:** No hay penalización por uso excesivo.
+
+                **Rango 12 [Horizonte Causal]:** El GM proporciona tiempos precisos para el evento descrito en el flash de la sesión (que van desde minutos para eventos inminentes hasta un día específico para eventos a meses de distancia).
       psychometry:
         attribute: INT
         cost: 3
@@ -1387,6 +1380,96 @@ items:
                 - **Al rango 4 [Uso Regular]:** el objeto puede ser simplemente algo que el dueño usaba regularmente (por ejemplo, un reloj).
                 - **Al rango 8 [Uso Frecuente]:** algo que el dueño simplemente usaba con frecuencia (por ejemplo, un bolígrafo o llaves).
                 - **Al rango 12 [Uso Mínimo]:** casi cualquier cosa perteneciente al dueño, siempre que la haya usado durante al menos una hora en total.
+      clairsentience:
+        attribute: INT
+        cost: 2
+        url: /psionics/esp/#clairsentience
+        trained_only: false
+        localized:
+          - en:
+              name: Clairsentience
+              description: |-
+                To employ this skill, a character selects a location and projects his or her mind to that spot, seeing or hearing everything going on around that spot as though physically there. The spot can be a absolute coordinate, but is more commonly used to relative one, inside a house, a meter over a vehicle, or even a person. This last case would need an additional -1 penalty to the skill check, and is resisted by the target's [[Will defense modifier]].
+
+                Clairsentience doesn't block normal vision or hearing, so the user sees double images unless his or her eyes are closed and hears overlapping ambient sounds. It also provides no help in seeing through obscuring elements (such as walls, closed doors, or darkness) or interpreting unfamiliar languages, and the mental sensor can't move from the selected spot. The location itself can be moving (a vehicle, for example), but such a target requires additional skill checks if the range to the target increases.
+
+                The user remains conscious within his or her body and is aware of what's happening around it.
+
+                ### Check results
+                - **Ordinary:** the sensor field of view is fixed, while the user can hear all around he can only see in a direction. He can easily pick de direction if the target is in a predictable position(let say inside a room in a nearby building). but doing so in a ship in space would be a lot harder as he could easily end up looking at the ceiling.
+                - **Good:** While the sensor cannot move, the user can change the direction it is pointing at. As the sensor is a single point in space judging size and distances can be deceiving.
+                - **Amazing:** In addition to the good effect, the user have good stereo-scopic vision allowing him to easily judge distances and sizes.
+
+                Situation modifiers for the familiarity of the location and the distance at which clairsentience is being used are as follows:
+
+                | Situation/distance | Modifier |
+                | :--- | :---: |-
+                | Familiar location | –1 |
+                | Unfamiliar location | none |
+                | 1–10 meters | –1 |
+                | 11–100 meters | none |
+                | 101 m–1 km | +1 |
+                | 2–10 km | +2 |
+                | 11–100 km | +3 |
+                | 101–1,000 km (low orbit) | +4 |
+                | 1,001–10,000 km (high orbit) | +5 |
+
+                ### Rank Benefits
+
+                **Rank 4 [Combined Senses]**: The psionic sensor and see and hear at the same time
+
+                **Rank 6 [Change of Perspective]**: the character can attempt another ESP-clairsentience skill check to shift the location to which the mental projection has been projected. The new check is modified by the distance from the current location that the psion is viewing and listening to, rather than the physical distance the psion is from the target area.
+
+                **Rank 8 [Sensitivity]**: the sensor can now also perceive psionic impresions.
+
+                **Rank 12 [Power projection]**: the psion can perform [[ESP-postcognition]], [[ESP-emphaty]] or [[ESP-psychometry]] at the location of the sensor. But doing so incurs an additional -2 penalty on the skill check.
+          - es:
+              name: 'Clarisensibilidad'
+              description: |-
+                Para emplear esta habilidad, un Personaje selecciona una ubicación y proyecta su mente en ese lugar, viendo o escuchando todo lo que sucede a su alrededor como si estuviera físicamente allí. El punto puede ser una coordenada absoluta, pero se usa más comúnmente para una relativa, dentro de una casa, un metro por encima de un vehículo o incluso una persona. Este último caso necesitaría una penalización adicional de -1 a la prueba de habilidad, y es resistido por el [[modificador de defensa de voluntad]] del objetivo.
+
+                La clarisentiencia no bloquea la visión o la audición normales, por lo que el usuario ve imágenes dobles a menos que tenga los ojos cerrados y escuche sonidos ambientales superpuestos. Tampoco proporciona ayuda para ver a través de elementos que oscurecen (como paredes, puertas cerradas u oscuridad) o para interpretar idiomas desconocidos, y el sensor Mental no puede moverse del lugar seleccionado. La ubicación en sí puede estar en movimiento (un vehículo, por ejemplo), pero dicho objetivo requiere pruebas de habilidad adicionales si el alcance hasta el objetivo aumenta.
+
+                El usuario permanece consciente dentro de su cuerpo y es consciente de lo que sucede a su alrededor.
+
+                ### Verificar resultados
+                - **Ordinario:** el campo de visión del sensor es fijo, mientras que el usuario puede escuchar todo a su alrededor y solo puede ver en una dirección. Puede elegir fácilmente la dirección si el objetivo está en una posición predecible (digamos dentro de una habitación en un edificio cercano). pero hacerlo en una nave en el espacio sería mucho más difícil ya que fácilmente podría terminar mirando al techo.
+                - **Bueno:** Mientras el sensor no se pueda mover, el usuario puede cambiar la dirección a la que apunta. Como el sensor es un único punto en el espacio, juzgar el tamaño y las distancias puede ser engañoso.
+                - **Asombroso:** Además del efecto Bueno, el usuario tiene visión estereoscópica Bueno que le permite juzgar fácilmente distancias y tamaños.
+
+                Los modificadores de situación por la familiaridad con la ubicación y la distancia a la que se utiliza la clarisentiencia son los siguientes:
+
+                | Situación/distancia | Modificador |
+                | :--- | :---: |-
+                | Ubicación familiar | –1 |
+                | Ubicación desconocida | ninguno |
+                | 1–10 metros | –1 |
+                | 11–100 metros | ninguno |
+                | 101 m–1 km | +1 |
+                | 2–10 kilómetros | +2 |
+                | 11-100 kilómetros | +3 |
+                | 101-1.000 km (órbita baja) | +4 |
+                | 1.001-10.000 km (órbita alta) | +5 |
+
+                ### Beneficios de Rango
+
+                **Rango 4 [Sentidos Combinados]**: El sensor psiónico y ver y oír al mismo tiempo
+
+                **Rango 6 [Cambio de perspectiva]**: el Personaje puede intentar otra prueba de habilidad de clarisentiencia ESP para cambiar la ubicación en la que se proyectó la proyección Mental. La nueva verificación se modifica por la distancia desde la ubicación actual que el psion está viendo y escuchando, en lugar de la distancia Físico entre el psion y el área objetivo.
+
+                **Rango 8 [Sensibilidad]**: el sensor ahora también puede percibir impresiones psiónicas.
+
+                **Rango 12 [Proyección de energía]**: el psion puede realizar [[ESP-postcognición]], [[ESP-emfaty]] o [[ESP-psicometría]] en la ubicación del sensor. Pero hacerlo conlleva una penalización adicional de -2 en la prueba de habilidad.
+        rank_benefits:
+          - rank: 4
+            title: Increased Duration
+          - rank: 6
+            title: Change of Perspective
+          - rank: 8
+            title: Increased Duration
+          - rank: 12
+            title: Increased Duration
+        extended_duration: true
     trained_only: true
   Psychoportation:
     attribute: WIL

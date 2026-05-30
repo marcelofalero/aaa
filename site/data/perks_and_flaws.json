@@ -226,6 +226,14 @@
                         "type": "Active",
                         "description": "This perk provides a character with 2 extra Psionic Energy Points (PP). This perk can only be purchased once.",
                         "url": "/perks_flaws/perks/extra-psionic-energy/"
+                    },
+                    {
+                        "name": "Precog",
+                        "cost": "4",
+                        "ability": "WIL",
+                        "type": "Exclusive",
+                        "description": "Based on the Theory of Fixed Points, space-time is a rigid manifold where\nhigh-entropy events create \"Causal Echoes\" that ripple backward and forward\nalong the temporal axis. The psion acts as a biological antenna, sensing the\nechoes before their physical occurrence.\n\nThis perk turns a character capable of manifesting psionic power into a\nstrategic asset. However, once identified by a government or a corporation,\ntheir personal freedom is at risk of being restricted by such groups.\nRegistration is mandatory in most sectors, and unregistered psions are hunted\nby special task forces.\n\nIn settings where Psionics are widely known, some laws offer limited\nprotections to precogs, as they are seen as strategic assets that are better to\nkeep on your side, than on your enemy's side. Oppression has proved\ncounterproductive, since a precog that goes underground or deserts to other\nfaction is a great loss. Most factions go to great lenghts to keep their\nprecogs hidden from other factions, and the consequences of a precog being\nouted can be severe.\n\n**Exclusive Perk:** Only one character in a crew may possess this ability. A\ncharacter can only possess one Exclusive Perk.",
+                        "url": "/perks_flaws/perks/precog/"
                     }
                 ]
             }

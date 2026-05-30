@@ -226,6 +226,14 @@
                         "type": "Active",
                         "description": "Esta ventaja proporciona al personaje 2 Puntos de Energía Psiónica (PP) adicionales. Esta ventaja solo puede comprarse una vez.",
                         "url": "/es/perks_flaws/perks/extra-psionic-energy/"
+                    },
+                    {
+                        "name": "Precog",
+                        "cost": "4",
+                        "ability": "VOL",
+                        "type": "Exclusive",
+                        "description": "Basado en la Teoría de los Puntos Fijos, el espacio-tiempo es una variedad\nrígida donde los eventos de alta entropía crean \"Ecos Causales\" que se\npropagan hacia atrás y hacia adelante a lo largo del eje temporal. El psiónico\nactúa como una antena biológica, sintiendo los ecos antes de su ocurrencia\nfísica.\n\nEsta ventaja convierte a un personaje capaz de manifestar poder psiónico en un\nactivo estratégico. Sin embargo, una vez identificado por un gobierno o una\ncorporación, su libertad personal corre el riesgo de ser restringida por dichos\ngrupos. El registro es obligatorio en la mayoría de los sectores, y los\npsiónicos no registrados son perseguidos por fuerzas de tareas especiales.\n\nEn entornos donde la Psiónica es ampliamente conocida, algunas leyes ofrecen\nprotecciones limitadas a los precogs, ya que se les ve como activos\nestratégicos que es mejor mantener de tu lado que del lado del enemigo. La\nopresión ha demostrado ser contraproducente, ya que un precog que se vuelve\nclandestino o deserta a otra facción representa una gran pérdida. La mayoría\nde las facciones hacen grandes esfuerzos para mantener a sus precogs ocultos\nde otras facciones, y las consecuencias de que un precog sea descubierto\npueden ser graves.\n\n**Ventaja Exclusiva:** Solo un personaje en una tripulación puede poseer esta\ncapacidad. Un personaje solo puede poseer una Ventaja Exclusiva.",
+                        "url": "/es/perks_flaws/perks/precog/"
                     }
                 ]
             }
