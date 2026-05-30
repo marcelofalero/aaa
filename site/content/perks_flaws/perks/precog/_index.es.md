@@ -1,6 +1,6 @@
 +++
 title = "Precog"
-cost = "4"
+cost = "6"
 ability = "WIL"
 type = "perk"
 layout = "list"
@@ -27,6 +27,9 @@ clandestino o deserta a otra facción representa una gran pérdida. La mayoría
 de las facciones hacen grandes esfuerzos para mantener a sus precogs ocultos
 de otras facciones, y las consecuencias de que un precog sea descubierto
 pueden ser graves.
+
+Ver el poder psiónico de [ESP-precognición]({{< relref
+"/psionics/esp#precognicion" >}}).
 
 **Ventaja Exclusiva:** Solo un personaje en una tripulación puede poseer esta
 capacidad. Un personaje solo puede poseer una Ventaja Exclusiva.

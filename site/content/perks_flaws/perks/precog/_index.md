@@ -1,6 +1,6 @@
 +++
 title = "Precog"
-cost = "4"
+cost = "6"
 ability = "WIL"
 type = "perk"
 layout = "list"
@@ -25,6 +25,9 @@ counterproductive, since a precog that goes underground or deserts to other
 faction is a great loss. Most factions go to great lenghts to keep their
 precogs hidden from other factions, and the consequences of a precog being
 outed can be severe.
+
+See the [ESP-precognition]({{< relref
+"/psionics/esp#precognition" >}}) psionic power.
 
 **Exclusive Perk:** Only one character in a crew may possess this ability. A
 character can only possess one Exclusive Perk.
