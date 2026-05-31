@@ -2260,9 +2260,15 @@ items:
         url: /psionics/telepathy/#empathic-projection
         trained_only: false
         rank_benefits:
+          - rank: 3
+            title: Ignore penalty
           - rank: 4
-            title: Increased Duration
-          - rank: 4
+            title: Extended Duration
+          - rank: 6
+            title: Ignore penalty
+          - rank: 9
+            title: Ignore penalty
+          - rank: 12
             title: Ignore penalty
         extended_duration: false
         localized:
@@ -2295,9 +2301,16 @@ items:
 
                 ### Rank Benefits
 
-                ▶ **Rank 4 [Increased Duration]** The skill is now considered extended duration.
+                ▶ **Rank 3 [Extended Duration]** The skill is now considered extended duration.
 
-                ▶ **Rank 4, 8, 12 [Ignore penalty]** The user can ignore one penalty step for either the target's current emotional state, or the number of intended targets. At rank 8, the character can ignore two such penalty steps, and at rank 12, the character can ignore three.
+                ▶ **Rank 5 [Subtlety]** using this skill is now very hard to detect, only characters with psionic sensitivity have a chance of detecting it, but they still suffer +3 step penalty yo their [[awareness-psionic sense]] skill roll.
+
+                ▶ **Rank 6, 9, 12 [Ignore penalty]** The user can ignore one step of penalty for either the target's current emotional state, or the number of intended targets. At rank 6, the character can ignore two such penalty steps, and at rank 12, the character can ignore three.
+
+                ### Stress Relief
+                When the persistent stress rules are in play, the character can use this skill to help the surrounding people to resist the effects of stress, doing so require the character to be trained in this specialty skill and spend at least one hour a day in the presence of the people he wants to help.
+
+                The result of the skill check is translated into a bonus on the [[resolve-mental resolve]] skill check used to resist stress. The bonus applies to each person in the group, include the psion.
           - es:
               name: Proyección Empática
               description: |-
@@ -2327,9 +2340,16 @@ items:
 
                 ### Beneficios de Rango
 
-                ▶ **Rango 4 [Duración aumentada]** La habilidad ahora se considera de duración extendida.
+                ▶ **Rango 3 [Duración extendida]** La habilidad ahora se considera de duración extendida.
 
-                ▶ **Rango 4, 8, 12 [Ignorar penalización]** El usuario puede ignorar un paso de penalización ya sea por el estado emocional actual del objetivo o por el número de objetivos previstos. En Rango 8, el Personaje puede ignorar dos de esos pasos de penalización, y en Rango 12, el Personaje puede ignorar tres.
+                ▶ **Rango 5 [Sutileza]** usar esta habilidad ahora es muy difícil de detectar, solo los personajes con sensibilidad psiónica tienen la posibilidad de detectarla, pero aún sufren +3 Penalización de paso en su tirada de habilidad [[Alerta-Sentido psiónico]].
+
+                ▶ **Rango 6, 9, 12 [Ignorar penalización]** El usuario puede ignorar un paso de penalización ya sea por el estado emocional actual del objetivo o por la cantidad de objetivos previstos. En Rango 6, el Personaje puede ignorar dos de esos pasos de penalización, y en Rango 12, el Personaje puede ignorar tres.
+
+                ### Alivio del estrés
+                Cuando las reglas del estrés persistente están en juego, el Personaje puede usar esta habilidad para ayudar a las personas que lo rodean a resistir los efectos del estrés, para ello es necesario que el Personaje esté entrenado en este Especialidad y pase al menos una hora al día en presencia de las personas a las que quiere ayudar.
+
+                El resultado de la prueba de habilidad se traduce en una bonificación en la prueba de habilidad [[Firmeza-Mental Firmeza]] utilizada para resistir el estrés. El bono aplica para cada persona del grupo, incluye el psion.
       illusion:
         attribute: PER
         cost: 3

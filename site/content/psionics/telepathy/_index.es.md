@@ -83,9 +83,16 @@ Los modificadores de situación para la actitud actual del objetivo son los sigu
 
 ### Beneficios de Rango
 
-▶ **Rango 4 [Duración aumentada]** La habilidad ahora se considera de duración extendida.
+▶ **Rango 3 [Duración extendida]** La habilidad ahora se considera de duración extendida.
 
-▶ **Rango 4, 8, 12 [Ignorar penalización]** El usuario puede ignorar un paso de penalización ya sea por el estado emocional actual del objetivo o por el número de objetivos previstos. En Rango 8, el Personaje puede ignorar dos de esos pasos de penalización, y en Rango 12, el Personaje puede ignorar tres.
+▶ **Rango 5 [Sutileza]** usar esta habilidad ahora es muy difícil de detectar, solo los personajes con sensibilidad psiónica tienen la posibilidad de detectarla, pero aún sufren +3 Penalización de paso en su tirada de habilidad [[Alerta-Sentido psiónico]].
+
+▶ **Rango 6, 9, 12 [Ignorar penalización]** El usuario puede ignorar un paso de penalización ya sea por el estado emocional actual del objetivo o por la cantidad de objetivos previstos. En Rango 6, el Personaje puede ignorar dos de esos pasos de penalización, y en Rango 12, el Personaje puede ignorar tres.
+
+### Alivio del estrés
+Cuando las reglas del estrés persistente están en juego, el Personaje puede usar esta habilidad para ayudar a las personas que lo rodean a resistir los efectos del estrés, para ello es necesario que el Personaje esté entrenado en este Especialidad y pase al menos una hora al día en presencia de las personas a las que quiere ayudar.
+
+El resultado de la prueba de habilidad se traduce en una bonificación en la prueba de habilidad [[Firmeza-Mental Firmeza]] utilizada para resistir el estrés. El bono aplica para cada persona del grupo, incluye el psion.
 
 ---
 

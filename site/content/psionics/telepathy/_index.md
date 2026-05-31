@@ -82,9 +82,16 @@ Situation modifiers for the current attitude of the target are as follows:
 
 ### Rank Benefits
 
-▶ **Rank 4 [Increased Duration]** The skill is now considered extended duration.
+▶ **Rank 3 [Extended Duration]** The skill is now considered extended duration.
 
-▶ **Rank 4, 8, 12 [Ignore penalty]** The user can ignore one penalty step for either the target's current emotional state, or the number of intended targets. At rank 8, the character can ignore two such penalty steps, and at rank 12, the character can ignore three.
+▶ **Rank 5 [Subtlety]** using this skill is now very hard to detect, only characters with psionic sensitivity have a chance of detecting it, but they still suffer +3 step penalty yo their [[awareness-psionic sense]] skill roll.
+
+▶ **Rank 6, 9, 12 [Ignore penalty]** The user can ignore one step of penalty for either the target's current emotional state, or the number of intended targets. At rank 6, the character can ignore two such penalty steps, and at rank 12, the character can ignore three.
+
+### Stress Relief
+When the persistent stress rules are in play, the character can use this skill to help the surrounding people to resist the effects of stress, doing so require the character to be trained in this specialty skill and spend at least one hour a day in the presence of the people he wants to help.
+
+The result of the skill check is translated into a bonus on the [[resolve-mental resolve]] skill check used to resist stress. The bonus applies to each person in the group, include the psion.
 
 ---
 
