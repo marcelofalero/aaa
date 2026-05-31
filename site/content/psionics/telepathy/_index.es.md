@@ -22,18 +22,36 @@ habilidad de base.
 ## Contacto
 {{< specialty attr="PER" untrained="yes" cost="3" extended="true" >}}
 
-Con esta habilidad, un personaje puede enviar y recibir pensamientos de otro
-personaje, generalmente con el propósito de intercambiar información. Se
-pueden aplicar modificadores, dependiendo de la distancia, la familiaridad y
-la disposición de la mente objetivo a ser contactada. El tipo de pensamientos
-que se pueden intercambiar depende del resultado de una tirada de habilidad:
+Con esta habilidad, un Personaje puede enviar y recibir pensamientos hacia y desde otro Personaje, generalmente con el fin de intercambiar información. Se pueden aplicar modificadores, dependiendo del alcance, la familiaridad y la voluntad de la mente objetivo con la que se contacta. El tipo de pensamientos que se pueden intercambiar depende del resultado de una prueba de habilidad.
+
+### Verificar resultados
 - **Ordinario:** se pueden intercambiar conceptos simples (preguntas breves y respuestas de una palabra).
-- **Bueno:** puede haber una discusión moderada (intercambiar notas, una nota cada 2 fases).
-- **Asombroso:** los personajes que se comunican pueden tener una discusión detallada, como si estuvieran conversando vocalmente. Si el objetivo previsto por el usuario psiónico no está dispuesto a comunicarse, el modificador de resistencia de Voluntad del objetivo se aplica como un penalizador a la tirada de habilidad, además de cualquier otro modificador de situación. Si se establece contacto de todos modos, una mente involuntaria puede expulsar al usuario realizando una proeza de Voluntad exitosa o una tirada de la habilidad Resolución Mental, con un penalizador (+1, +2 o +3 pasos) dependiendo del grado de éxito del usuario psiónico.
-**Beneficios de Rango:**
-- **Al rango 4 [Duración Incrementada]:** la unidad de duración es de 1 minuto, más un minuto adicional por cada punto de energía psiónica gastado para extenderla. Al rango 8, esta duración se convierte en 5 minutos, y al rango 12, la unidad base de duración se convierte en 30 minutos.
-- **Al rango 6 [Idioma]:** un telépata aprende a comprender el significado subyacente de ideas expresadas incluso en idiomas que no entiende. El personaje puede intentar una tirada de proeza de Inteligencia para comprender la idea general del concepto que se comunica, o para aclarar sus propios pensamientos al objetivo. A discreción del Director de Juego, se aplica un penalizador de +2 pasos al intentar comunicarse con mentes alienígenas.
-- **Al rango 12 [Intercambio]:** Un telépata que alcanza el rango 12 en contacto puede intentar intercambiar su conciencia con la del objetivo, intercambiando cuerpos de manera efectiva.
+- **Bueno:** puede ocurrir una discusión moderada (pasar notas de un lado a otro, una nota por 2 fases).
+- **Asombroso:** los personajes que se comunican pueden tener una discusión detallada, como si estuvieran conversando vocalmente. Si el objetivo previsto del usuario de psionics no está dispuesto a comunicarse, el modificador de resistencia a la voluntad del objetivo se aplica como penalización a la prueba de habilidad, además de cualquier modificador de situación Otros. Si se establece contacto de todos modos, una mente renuente puede expulsar al usuario realizando una prueba exitosa de dote de Voluntad o una prueba de habilidad Firmeza-Mental Firmeza, con una penalización (+1, +2 o +3 pasos) dependiendo del grado de éxito del usuario psiónico.
+
+Los modificadores de situación según la familiaridad de la mente y la distancia a la que se utiliza el contacto son los siguientes:
+
+| Situación/distancia | Modificador |
+| :--- | :---: |
+| Mente familiar | –1 |
+| Mente desconocida | ninguno |
+| Mente combativa | +2 |
+| Mente hostil | +1 |
+| 1–10 metros | –1 |
+| 11–100 metros | ninguno |
+| 101 m–1 km | +1 |
+| 2–10 kilómetros | +2 |
+| 11-100 kilómetros | +3 |
+| 101-1.000 km (órbita baja) | +4 |
+| 1.001-10.000 km (órbita alta) | +5 |
+
+### Beneficios de Rango
+
+▶ **Rango 4 [Duración aumentada]** La unidad de duración es 1 minuto, más un minuto adicional por cada punto de energía psiónica gastado para extenderla. En Rango 8, esta duración pasa a ser 5 minutos, y en Rango 12, la unidad base de duración pasa a ser 30 minutos.
+
+▶ **Rango 6 [Idioma]** Un telépata aprende a comprender el significado subyacente de las ideas expresadas incluso en idiomas que no comprende. El Personaje puede intentar una prueba de dote de Inteligencia para comprender la esencia del concepto que se comunica o para aclarar sus propios pensamientos al objetivo. A discreción del Director de Juego, se aplica un +2 Penalización de paso al intentar comunicarse con mentes alienígenas.
+
+▶ **Rango 12 [Cambiar]** Un telépata que alcanza Rango 12 en contacto puede intentar cambiar su conciencia con la del objetivo, intercambiando cuerpos de manera efectiva.
 
 ---
 
