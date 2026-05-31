@@ -1158,45 +1158,49 @@ items:
           - en:
               name: Postcognition
               description: |-
-                With this skill, a character can sense the mood of an area and even “see”
-                events that happened there in the recent past. The character must be in the
-                actual area to sense psychic resonance. In general, a character can see a
-                number of days into the past equal to his or her skill rank.
+                With this skill, a character can sense the mood of an area and even "see" events that happened there in the recent past. What a character senses depends on the result of a skill check:
 
                 ### Check Results
-                - **Ordinary:** the character senses general emotions that have been left in an area.
-                - **Good:** the psion also receives brief flashes of events that may or may not make sense.
-                - **Amazing:** the character actually experiences a brief encounter as though at the scene when the events occurred.
+                - **Ordinary:** The character senses general emotions that have been left in an area.
+                - **Good:** The psion also receives brief flashes of events that may or may not make sense.
+                - **Amazing:** The character actually experiences a brief encounter as though at the scene when the events occurred.
+
+                One successful skill check can be made in an area, and the character must be in the actual area to sense psychic resonance. In general, a character can see a number of days into the past equal to his or her skill rank. (With just the broad skill, less than one time unit is available to the character.)
+
+                Players can use this skill to gain clues for their characters, or the Gamemaster can use it to direct story elements in a certain direction. The Gamemaster can automatically activate this skill (no psionic energy point cost) to provide clues.
 
                 ### Rank Benefits
-                **Rank 3 [Extended Reach]:** the character can see a number of weeks into the past equal to his skill rank.
 
-                **Rank 6 [Extended Reach]:** view months into the past equal to rank.
+                ▶ **Rank 3 [Extended Reach]** At rank 3, the character can see a number of weeks into the past equal to his skill rank.
 
-                **Rank 9 [Extended Reach]:** view years into the past equal to rank.
+                ▶ **Rank 6 [Extended Reach]** At rank 6, this increases to months.
 
-                **Rank 12 [Extended Reach]:** view decades into the past equal to rank.
+                ▶ **Rank 9 [Extended Reach]** At rank 9, this increases to years.
+
+                ▶ **Rank 12 [Extended Reach]** At rank 12, this increases to decades.
           - es:
               name: Postcognición
               description: |-
-                Con esta habilidad, un Personaje puede sentir el estado de ánimo de un área e incluso "ver"
-                hechos ocurridos allí en el pasado reciente. El Personaje debe estar en el
-                área real para sentir la resonancia psíquica. En general, un Personaje puede ver una
-                número de días en el pasado igual a su habilidad Rango.
+                Con esta habilidad, un Personaje puede sentir el estado de ánimo de un área e incluso "ver" eventos que sucedieron allí en el pasado reciente. Lo que detecta un Personaje depende del resultado de una prueba de habilidad:
 
                 ### Verificar resultados
-                - **Ordinario:** el Personaje detecta emociones generales que han quedado en un área.
-                - **Bueno:** el psion también recibe breves destellos de eventos que pueden o no tener sentido.
-                - **Asombroso:** el Personaje en realidad experimenta un breve encuentro como si estuviera en el lugar donde ocurrieron los hechos.
+                - **Ordinario:** El Personaje detecta emociones generales que han quedado en un área.
+                - **Bueno:** El psion también recibe breves destellos de eventos que pueden o no tener sentido.
+                - **Asombroso:** El Personaje en realidad experimenta un breve encuentro como si estuviera en el lugar donde ocurrieron los hechos.
+
+                Se puede realizar una prueba de habilidad exitosa en un área, y el Personaje debe estar en el área real para detectar la resonancia psíquica. En general, un Personaje puede ver una cantidad de días en el pasado igual a su habilidad Rango. (Con solo la habilidad amplia, el Personaje dispone de menos de una unidad de tiempo).
+
+                Los jugadores pueden usar esta habilidad para obtener pistas para sus personajes, o el Director de Juego puede usarla para dirigir elementos de la historia en una dirección determinada. El Director de Juego puede activar automáticamente esta habilidad (sin costo de puntos de energía psiónica) para proporcionar pistas.
 
                 ### Beneficios de Rango
-                **Rango 3 [Alcance extendido]:** el Personaje puede ver un número de semanas en el pasado igual a su habilidad Rango.
 
-                **Rango 6 [Alcance extendido]:** ver meses en el pasado igual a Rango.
+                ▶ **Rango 3 [Alcance extendido]** En Rango 3, el Personaje puede ver un número de semanas en el pasado igual a su habilidad Rango.
 
-                **Rango 9 [Alcance extendido]:** ver años en el pasado igual a Rango.
+                ▶ **Rango 6 [Alcance extendido]** En Rango 6, esto aumenta a meses.
 
-                **Rango 12 [Alcance extendido]:** vea décadas en el pasado igual a Rango.
+                ▶ **Rango 9 [Alcance extendido]** En Rango 9, esto aumenta a años.
+
+                ▶ **Rango 12 [Alcance extendido]** En Rango 12, esto aumenta a décadas.
       precognition:
         attribute: INT
         cost: 4
@@ -1365,13 +1369,13 @@ items:
 
                 ### Rank Benefits
 
-                ▶ **Rank 1 [Treasured]:** At rank 1 in this skill, the item in question must be something special to the owner (an item he or she treasured, such as a wedding ring).
+                ▶ **Rank 1 [Treasured]** At rank 1 in this skill, the item in question must be something special to the owner (an item he or she treasured, such as a wedding ring).
 
-                ▶ **Rank 4 [Regular Use]:** At rank 4, the item can be merely something the owner used regularly (such as a watch, or spectacles).
+                ▶ **Rank 4 [Regular Use]** At rank 4, the item can be merely something the owner used regularly (such as a watch, or spectacles).
 
-                ▶ **Rank 8 [Frequent Use]:** At rank 8, the item can be something the owner merely used frequently (such as a pen, or keys).
+                ▶ **Rank 8 [Frequent Use]** At rank 8, the item can be something the owner merely used frequently (such as a pen, or keys).
 
-                ▶ **Rank 12 [Minimal Use]:** At rank 12, the item can be nearly anything belonging to the owner, as long as he or she used it for at least an hour in total (such as a weapon, or a book).
+                ▶ **Rank 12 [Minimal Use]** At rank 12, the item can be nearly anything belonging to the owner, as long as he or she used it for at least an hour in total (such as a weapon, or a book).
           - es:
               name: Psicometría
               description: |-
@@ -1390,13 +1394,13 @@ items:
 
                 ### Beneficios de Rango
 
-                ▶ **Rango 1 (Atesorado):** En Rango 1 en esta habilidad, el objeto en cuestión debe ser algo especial para el propietario (un objeto que atesora, como un anillo de bodas).
+                ▶ **Rango 1 [Atesorado]** En Rango 1 en esta habilidad, el objeto en cuestión debe ser algo especial para el propietario (un objeto que atesora, como un anillo de bodas).
 
-                ▶ **Rango 4 (Uso regular):** En Rango 4, el artículo puede ser simplemente algo que el propietario usa regularmente (como un reloj o gafas).
+                ▶ **Rango 4 [Uso regular]** En Rango 4, el artículo puede ser simplemente algo que el propietario usó regularmente (como un reloj o gafas).
 
-                ▶ **Rango 8 (Uso frecuente):** En Rango 8, el artículo puede ser algo que el propietario simplemente usó con frecuencia (como un bolígrafo o llaves).
+                ▶ **Rango 8 [Uso frecuente]** En Rango 8, el artículo puede ser algo que el propietario simplemente usó con frecuencia (como un bolígrafo o llaves).
 
-                ▶ **Rango 12 (Uso mínimo):** En Rango 12, el artículo puede ser casi cualquier cosa que pertenezca al propietario, siempre y cuando lo haya usado durante al menos una hora en total (como un arma o un libro).
+                ▶ **Rango 12 [Uso mínimo]** En Rango 12, el artículo puede ser casi cualquier cosa que pertenezca al propietario, siempre y cuando lo haya usado durante al menos una hora en total (como un arma o un libro).
       clairsentience:
         attribute: INT
         cost: 2

@@ -31,10 +31,10 @@ The Gamemaster can automatically activate this skill (no psionic energy point co
 
 ### Rank Benefits
 
-▶ **Rank 1 [Treasured]:** At rank 1 in this skill, the item in question must be something special to the owner (an item he or she treasured, such as a wedding ring).
+▶ **Rank 1 [Treasured]** At rank 1 in this skill, the item in question must be something special to the owner (an item he or she treasured, such as a wedding ring).
 
-▶ **Rank 4 [Regular Use]:** At rank 4, the item can be merely something the owner used regularly (such as a watch, or spectacles).
+▶ **Rank 4 [Regular Use]** At rank 4, the item can be merely something the owner used regularly (such as a watch, or spectacles).
 
-▶ **Rank 8 [Frequent Use]:** At rank 8, the item can be something the owner merely used frequently (such as a pen, or keys).
+▶ **Rank 8 [Frequent Use]** At rank 8, the item can be something the owner merely used frequently (such as a pen, or keys).
 
-▶ **Rank 12 [Minimal Use]:** At rank 12, the item can be nearly anything belonging to the owner, as long as he or she used it for at least an hour in total (such as a weapon, or a book).
+▶ **Rank 12 [Minimal Use]** At rank 12, the item can be nearly anything belonging to the owner, as long as he or she used it for at least an hour in total (such as a weapon, or a book).

@@ -152,24 +152,26 @@ marque, con un +2 Penalización de paso si fue testigo del sujeto, o un +4 Penal
 ## Postcognición
 {{< specialty attr="INT" untrained="yes" cost="3" >}}
 
-Con esta habilidad, un Personaje puede sentir el estado de ánimo de un área e incluso "ver"
-hechos ocurridos allí en el pasado reciente. El Personaje debe estar en el
-área real para sentir la resonancia psíquica. En general, un Personaje puede ver una
-número de días en el pasado igual a su habilidad Rango.
+Con esta habilidad, un Personaje puede sentir el estado de ánimo de un área e incluso "ver" eventos que sucedieron allí en el pasado reciente. Lo que detecta un Personaje depende del resultado de una prueba de habilidad:
 
 ### Verificar resultados
-- **Ordinario:** el Personaje detecta emociones generales que han quedado en un área.
-- **Bueno:** el psion también recibe breves destellos de eventos que pueden o no tener sentido.
-- **Asombroso:** el Personaje en realidad experimenta un breve encuentro como si estuviera en el lugar donde ocurrieron los hechos.
+- **Ordinario:** El Personaje detecta emociones generales que han quedado en un área.
+- **Bueno:** El psion también recibe breves destellos de eventos que pueden o no tener sentido.
+- **Asombroso:** El Personaje en realidad experimenta un breve encuentro como si estuviera en el lugar donde ocurrieron los hechos.
+
+Se puede realizar una prueba de habilidad exitosa en un área, y el Personaje debe estar en el área real para detectar la resonancia psíquica. En general, un Personaje puede ver una cantidad de días en el pasado igual a su habilidad Rango. (Con solo la habilidad amplia, el Personaje dispone de menos de una unidad de tiempo).
+
+Los jugadores pueden usar esta habilidad para obtener pistas para sus personajes, o el Director de Juego puede usarla para dirigir elementos de la historia en una dirección determinada. El Director de Juego puede activar automáticamente esta habilidad (sin costo de puntos de energía psiónica) para proporcionar pistas.
 
 ### Beneficios de Rango
-**Rango 3 [Alcance extendido]:** el Personaje puede ver un número de semanas en el pasado igual a su habilidad Rango.
 
-**Rango 6 [Alcance extendido]:** ver meses en el pasado igual a Rango.
+▶ **Rango 3 [Alcance extendido]** En Rango 3, el Personaje puede ver un número de semanas en el pasado igual a su habilidad Rango.
 
-**Rango 9 [Alcance extendido]:** ver años en el pasado igual a Rango.
+▶ **Rango 6 [Alcance extendido]** En Rango 6, esto aumenta a meses.
 
-**Rango 12 [Alcance extendido]:** vea décadas en el pasado igual a Rango.
+▶ **Rango 9 [Alcance extendido]** En Rango 9, esto aumenta a años.
+
+▶ **Rango 12 [Alcance extendido]** En Rango 12, esto aumenta a décadas.
 
 ---
 
@@ -253,13 +255,13 @@ El Director de Juego puede activar automáticamente esta habilidad (sin costo de
 
 ### Beneficios de Rango
 
-▶ **Rango 1 (Atesorado):** En Rango 1 en esta habilidad, el objeto en cuestión debe ser algo especial para el propietario (un objeto que atesora, como un anillo de bodas).
+▶ **Rango 1 [Atesorado]** En Rango 1 en esta habilidad, el objeto en cuestión debe ser algo especial para el propietario (un objeto que atesora, como un anillo de bodas).
 
-▶ **Rango 4 (Uso regular):** En Rango 4, el artículo puede ser simplemente algo que el propietario usa regularmente (como un reloj o gafas).
+▶ **Rango 4 [Uso regular]** En Rango 4, el artículo puede ser simplemente algo que el propietario usó regularmente (como un reloj o gafas).
 
-▶ **Rango 8 (Uso frecuente):** En Rango 8, el artículo puede ser algo que el propietario simplemente usó con frecuencia (como un bolígrafo o llaves).
+▶ **Rango 8 [Uso frecuente]** En Rango 8, el artículo puede ser algo que el propietario simplemente usó con frecuencia (como un bolígrafo o llaves).
 
-▶ **Rango 12 (Uso mínimo):** En Rango 12, el artículo puede ser casi cualquier cosa que pertenezca al propietario, siempre y cuando lo haya usado durante al menos una hora en total (como un arma o un libro).
+▶ **Rango 12 [Uso mínimo]** En Rango 12, el artículo puede ser casi cualquier cosa que pertenezca al propietario, siempre y cuando lo haya usado durante al menos una hora en total (como un arma o un libro).
 
 ---
 
