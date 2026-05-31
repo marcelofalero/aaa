@@ -31,9 +31,11 @@ usuario una bonificación a sus comprobaciones de acción:
 A los efectos del uso de esta habilidad, “batalla” se define como cualquier situación en la que Personaje haya realizado un Tirada de Acción en la misma ronda en la que usa la habilidad mental de batalla.
 
 ### Beneficios de Rango
-- **Rango 4 [Efecto aumentado]** siempre que se te permita un Tirada de Acción, también puedes realizar una prueba de [[ESP-Battle Mind]] para activar este poder y obtener sus beneficios en la primera ronda. Esta prueba consume una de tus acciones de la ronda, a menos que el resultado sea Asombroso, entonces no cuesta una acción. 
-- **Rango 8 [Move Like Water]** el Personaje que emplea esta habilidad gana un punto Último Recurso temporal, que debe usar antes de que finalice la duración de la habilidad o la pierda. Este punto sólo se puede utilizar para compensar el daño.
-- **Rango 12 [Precisión infalible]** el Personaje gana un punto Último Recurso temporal, que debe usarse antes de que finalice la duración de la habilidad o se pierda. Este punto sólo puede usarse para aumentar el éxito de un ataque realizado por Personaje usando esta habilidad.
+▶ **Rango 4 [Efecto aumentado]** siempre que se te permita un Tirada de Acción, también puedes realizar una prueba de [[ESP-Battle Mind]] para activar este poder y obtener sus beneficios en la primera ronda. Esta prueba consume una de tus acciones de la ronda, a menos que el resultado sea Asombroso, entonces no cuesta una acción.
+
+▶ **Rango 8 [Move Like Water]** el Personaje que emplea esta habilidad gana un punto Último Recurso temporal, que debe usar antes de que termine la duración de la habilidad o la pierda. Este punto sólo se puede utilizar para compensar el daño.
+
+▶ **Rango 12 [Precisión infalible]** el Personaje gana un punto Último Recurso temporal, que debe usarse antes de que finalice la duración de la habilidad o se pierda. Este punto sólo puede usarse para aumentar el éxito de un ataque realizado por Personaje usando esta habilidad.
 
 ---
 
@@ -58,13 +60,13 @@ Los personajes que reciban esta información pueden realizar pruebas de Alerta-P
 
 ### Beneficios de Rango
 
-**Rango 3 [Precisión mejorada]:** el psion puede reducir el tiempo que la presa estará en un lugar determinado a 3 horas.
+▶ **Rango 3 (Precisión mejorada):** el psion puede reducir el tiempo que la presa estará en un lugar determinado a 3 horas.
 
-**Rango 6 [Precisión mejorada]:** localización mejorada: Ordinario 500m; Bueno 100m; Asombroso 50m.
+▶ **Rango 6 (Precisión mejorada):** localización mejorada: Ordinario 500m; Bueno 100m; Asombroso 50m.
 
-**Rango 9 [Tiempo mejorado]:** el psion puede determinar cuándo estará la presa en un lugar particular en un plazo de 30 minutos.
+▶ **Rango 9 (Tiempo mejorado):** el psion puede determinar cuándo estará la presa en un lugar particular en un plazo de 30 minutos.
 
-**Rango 12 [Precisión mejorada]:** localización mejorada: Ordinario 100m; Bueno 50m; Asombroso 10m.
+▶ **Rango 12 (Precisión mejorada):** localización mejorada: Ordinario 100m; Bueno 50m; Asombroso 10m.
 
 ---
 
@@ -82,11 +84,15 @@ Personaje:
 - **Asombroso:** -3 Bonificación de paso.
 
 ### Beneficios de Rango
-**Rango 4 [Relación]:** el empático puede sentir las emociones superficiales de dos personajes de Otros hacia cada Otros.
-**Rango 6 [Lectura del Aura]:** evaluar el estado de salud (sano, herido, enfermo, moribundo, demente, etc.). Otorga de -1 a -3 Bonificación de paso a Ciencias médicas, pruebas de conocimiento-primeros auxilios o biokinesis-curación o biokinasis-rejuvenecimiento utilizadas para tratar al objetivo. Los intentos sobre diferentes especies sufren un +1 Penalización de paso.
-**Rango 8 [Relación]:** el empático puede aplicar esta habilidad a tres personajes Otros.
-**Rango 9 [Conexión]:** desarrolle una conexión con un individuo para sentir emociones incluso cuando no esté en el alcance visual, hasta 1 milla por Rango de distancia.
-**Rango 12 [Relación]:** el empático puede aplicar esta habilidad a cuatro personajes Otros.
+▶ **Rango 4 (Relación):** el empático puede sentir las emociones superficiales de dos personajes Otros hacia cada Otros.
+
+▶ **Rango 6 (Lectura de Aura):** evaluar el estado de salud (sano, herido, enfermo, moribundo, demente, etc.). Otorga de -1 a -3 Bonificación de paso a Ciencias médicas, conocimientos de primeros auxilios o pruebas de [[Biokinesis-Heal]] o [[Biokinasis-Rejuvenate]] utilizadas para tratar al objetivo. Los intentos sobre diferentes especies sufren un +1 Penalización de paso.
+
+▶ **Rango 8 (Relación):** el empático puede aplicar esta habilidad a tres personajes Otros.
+
+▶ **Rango 9 (Conexión):** desarrolle una conexión con un individuo para sentir emociones incluso cuando no esté en el alcance visual, hasta 1 milla por Rango de distancia.
+
+▶ **Rango 12 (Relación):** el empático puede aplicar esta habilidad a cuatro personajes Otros.
 
 ---
 
@@ -103,13 +109,13 @@ No se puede ampliar mediante el uso de puntos de energía psiónica.
 - **Asombroso:** el contacto tiene una duración de 3 fases. Se pueden leer pensamientos superficiales completos, además de algún hecho clave relacionado con lo que el usuario psiónico esperaba descubrir.
 
 ### Beneficios de Rango
-**Rango 3 [Tiempo Extra]:** el Personaje puede agregar una fase adicional a la duración: Ordinario, 2 fases; Bueno, 3 fases; Asombroso, 4 fases.
+▶ **Rango 3 (Tiempo Extra):** el Personaje puede agregar una fase adicional a la duración: Ordinario, 2 fases; Bueno, 3 fases; Asombroso, 4 fases.
 
-**Rango 6 [Sonda]:** búsqueda enfocada a través de la mente de un objetivo para una información específica. (+2 Penalización de paso para extraterrestres). Se aplica la resistencia a la voluntad.
+▶ **Rango 6 (Sonda):** búsqueda enfocada a través de la mente de un objetivo para obtener una información específica. (+2 Penalización de paso para extraterrestres). Se aplica la resistencia a la voluntad.
 
-**Rango 9 [Tiempo extra]:** aumentos de duración: Ordinario, 1 ronda; Bueno, 2 rondas; Asombroso, 3 rondas.
+▶ **Rango 9 (Tiempo extra):** aumentos de duración: Ordinario, 1 ronda; Bueno, 2 rondas; Asombroso, 3 rondas.
 
-**Rango 12 [Tiempo extra]:** aumentos de duración: Ordinario, 1 minuto; Bueno, 2 minutos; Asombroso, 3 minutos.
+▶ **Rango 12 (Tiempo extra):** aumentos de duración: Ordinario, 1 minuto; Bueno, 2 minutos; Asombroso, 3 minutos.
 
 ---
 
@@ -131,17 +137,17 @@ a escala del sistema, y al gastar 2 puede trazar cursos a través del espacio de
 | Más de 5 minutos tramando | -1 por minuto. |
 
 ### Beneficios de Rango
-**Rango 4 [Tiempo de viaje]:** puede determinar el camino más claro hacia el destino. Reduce el tiempo de viaje (superficie/sistema): Ordinario 10%; Bueno 25%; Asombroso 50% de lo normal. Un Fallo Crítico da como resultado un tiempo de viaje un 50% más largo.
+▶ **Rango 4 (Tiempo de viaje):** puede determinar el camino más claro hacia el destino. Reduce el tiempo de viaje (superficie/sistema): Ordinario 10%; Bueno 25%; Asombroso 50% de lo normal. Un Fallo Crítico da como resultado un tiempo de viaje un 50% más largo.
 
-**Rango 4 [Distancia del espacio de conducción]:** cuando se usa para el espacio de conducción, la habilidad permite trazar cursos utilizando las fallas del espacio de conducción que de otro modo serían impredecibles. La distancia recorrida aumenta en: Ordinario +5ly; Bueno +10ly; Asombroso +20ly. Un Fallo Crítico da como resultado una distancia de recorrido -10 veces más corta.
+▶ **Rango 4 (Distancia del espacio de conducción):** cuando se usa para el espacio de conducción, la habilidad permite trazar cursos utilizando las fallas del espacio de conducción que de otro modo serían impredecibles. La distancia recorrida aumenta en: Ordinario +5ly; Bueno +10ly; Asombroso +20ly. Un Fallo Crítico da como resultado una distancia de recorrido -10 veces más corta.
 
-**Rango 5 [Navegación mejorado]:** reduce el costo de usar la habilidad a escala del sistema y en el espacio de conducción en 1. El Personaje también puede obtener un -1 Bonificación de paso al usar la habilidad gastando 1 punto de energía psiónica adicional.
+▶ **Rango 5 (Navegación mejorado):** reduce el costo de usar la habilidad a escala del sistema y en el espacio de conducción en 1. El Personaje también puede obtener un -1 Bonificación de paso al usar la habilidad gastando 1 punto de energía psiónica adicional.
 
-**Rango 6 [Claridad mental]:** Durante Combate, si el psion es el piloto, copiloto o navegante, puede usar este poder para reducir las penalizaciones por condiciones situacionales hasta 4 pasos. Por ejemplo, navegar a través de un campo de asteroides, Combate mientras evita escombros, barcos o peligros Otros.
+▶ **Rango 6 (Claridad mental):** Durante Combate, si el psion es el piloto, copiloto o navegante, puede usar este poder para reducir las penalizaciones por condiciones situacionales hasta 4 pasos. Por ejemplo, navegar a través de un campo de asteroides, Combate mientras evita escombros, barcos o peligros Otros.
 
-**Rango 9 [Navegación avanzado]:** permite que Personaje use la habilidad en el espacio de conducción sin costo adicional. El Personaje puede obtener un -2 Bonificación de paso cuando usa la habilidad gastando 1 punto de energía psiónica adicional.
+▶ **Rango 9 (Navegación avanzado):** permite que Personaje use la habilidad en el espacio de conducción sin costo adicional. El Personaje puede obtener un -2 Bonificación de paso cuando usa la habilidad gastando 1 punto de energía psiónica adicional.
 
-**Rango 12 [Seguimiento]:** puede usar navcognition para intentar Rastrear lo más probable
+▶ **Rango 12 (Seguimiento):** puede usar navcognition para intentar Rastrear lo más probable
 destino de un sujeto objetivo.
 Esta habilidad puede incluso intentarse a través del espacio del disco.
 El uso de esta habilidad requiere que el Personaje comience en el lugar donde se vio el objetivo por última vez. Ya sea por el Personaje, o por un testigo. El Personaje debe intentar una habilidad de navegación
@@ -179,7 +185,7 @@ Los jugadores pueden usar esta habilidad para obtener pistas para sus personajes
 {{< specialty attr="INT" untrained="no" cost="4" >}}
 
 > [!NOTA]
-> **Requiere Ventaja:** [Precog]({{< relref "/perks_flaws/perks/precog" >}}).
+> **Requiere Ventaja:** Precog.
 
 ### El flash de la sesión
 
@@ -227,13 +233,13 @@ Una vez que se utiliza el LRP, el Personaje puede esforzarse para reactivar la e
 
 ### Beneficios de Rango
 
-**Rango 3 [Horizonte Táctico]:** La penalización por uso excesivo se reduce a +2 pasos.
+▶ **Rango 3 (Horizonte Táctico):** La penalización por uso excesivo se reduce a +2 pasos.
 
-**Rango 6 [Horizonte operativo]:** La penalización por uso excesivo se reduce a +1 paso. Las pruebas de habilidades de precognición reciben un -1 Bonificación de paso.
+▶ **Rango 6 (Horizonte operativo):** La penalización por uso excesivo se reduce a +1 paso. Las pruebas de habilidades de precognición reciben un -1 Bonificación de paso.
 
-**Rango 9 [Horizonte estratégico]:** No hay penalización por uso excesivo.
+▶ **Rango 9 (Horizonte estratégico):** No hay penalización por uso excesivo.
 
-**Rango 12 [Horizonte Causal]:** El GM proporciona tiempos precisos para el evento descrito en el flash de la sesión (que van desde minutos para eventos inminentes hasta un día específico para eventos a meses de distancia).
+▶ **Rango 12 (Horizonte Causal):** El GM proporciona tiempos precisos para el evento descrito en el flash de la sesión (que van desde minutos para eventos inminentes hasta un día específico para eventos que faltan meses).
 
 ---
 

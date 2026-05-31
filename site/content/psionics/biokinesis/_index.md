@@ -29,13 +29,13 @@ The result of the skill check determines the duration of the bio-armor:
 The skin hardening impairs the character's movement in the same way as worn armor with AP 1, but a lighter version can be achieved by sacrificing 1 point of armor on each category, this eliminates the armor penalty.
 
 ### Rank Benefits
-**Rank 3 [Increased Effect]** the protection afforded by bio-armor increases to (LI d8 / HI d6 / En d4+1).
+▶ **Rank 3 [Increased Effect]** the protection afforded by bio-armor increases to (LI d8 / HI d6 / En d4+1).
 
-**Rank 6 [Increased Effect]** this value further increases to (LI d8 / HI d6+1 / En d6)b .
+▶ **Rank 6 [Increased Effect]** this value further increases to (LI d8 / HI d6+1 / En d6)b .
 
-**Rank 9 [Increased Toughness]** the armor is treated as being of Good toughness.
+▶ **Rank 9 [Increased Toughness]** the armor is treated as being of Good toughness.
 
-**Rank 12 [Increased Effect]** the armor value increases again to (LI 2d4 / HI 2d4 / En d8).
+▶ **Rank 12 [Increased Effect]** the armor value increases again to (LI 2d4 / HI 2d4 / En d8).
 
 ---
 
@@ -63,13 +63,13 @@ The result of the bioweapon skill check may add a bonus to the attack check as f
 This bonus lasts until the character chooses not to maintain the bioweapon.
 
 ### Rank Benefits:
-**Rank 3 [Increased Damage]** the damage of the bioweapon increases by +1.
+▶ **Rank 3 [Increased Damage]** the damage of the bioweapon increases by +1.
 
-**Rank 6 [Increased Damage]** it increases again (to a total of +2).
+▶ **Rank 6 [Increased Damage]** it increases again (to a total of +2).
 
-**Rank 9 [Increased Damage]** all attacks made with the bioweapon are considered to deliver **Good damage**.
+▶ **Rank 9 [Increased Damage]** all attacks made with the bioweapon are considered to deliver **Good damage**.
 
-**Rank 12 [Improved Damage]** it increases by another +1 (to a total of +3).
+▶ **Rank 12 [Improved Damage]** it increases by another +1 (to a total of +3).
 
 ---
 
@@ -134,15 +134,15 @@ Diseases reduced below Marginal are considered cured.
 Psionic healing imposes heavy strain on the body, so the skill can't be attempted more than once per hour, any attempt of using the skill more than once per hour will result in a level of exhaustion that cannot be recovered from until 24 hours have passed since the last attempt.
 
 ### Rank Benefits
-**Rank 4 [Treating Poison]**, a character may counteract the effect of poisons or drugs in his or her system before the end of their onset time, reducing the impact they may have. The degree of success acts as a bonus to the Constitution feat check required: **Ordinary:** –2 step bonus, **Good:** –3 step bonus, **Amazing:** –4 step bonus.
+▶ **Rank 4 [Treating Poison]**, a character may counteract the effect of poisons or drugs in his or her system before the end of their onset time, reducing the impact they may have. The degree of success acts as a bonus to the Constitution feat check required: **Ordinary:** –2 step bonus, **Good:** –3 step bonus, **Amazing:** –4 step bonus.
 
-**Rank 6 [Healing Mortal Damage]**, a character becomes able to heal mortal damage. Skill check results change to: **Ordinary:** 2 wounds, **Good:** 3 wounds or 1 mortal, **Amazing:** 4 wounds or 2 mortals.
+▶ **Rank 6 [Healing Mortal Damage]**, a character becomes able to heal mortal damage. Skill check results change to: **Ordinary:** 2 wounds, **Good:** 3 wounds or 1 mortal, **Amazing:** 4 wounds or 2 mortals.
 
-**Rank 8 [Improved Effect]**, a character's ability to heal improves further: **Ordinary:** 3 wounds or 1 mortal, **Good:** 4 wounds or 2 mortals, **Amazing:** 6 wounds or 3 mortals.
+▶ **Rank 8 [Improved Effect]**, a character's ability to heal improves further: **Ordinary:** 3 wounds or 1 mortal, **Good:** 4 wounds or 2 mortals, **Amazing:** 6 wounds or 3 mortals.
 
-**Rank 8 [Laying On Hands]**, a character becomes able to heal damage in others. The subject to be healed must be in physical contact with the character using this ability.
+▶ **Rank 8 [Laying On Hands]**, a character becomes able to heal damage in others. The subject to be healed must be in physical contact with the character using this ability.
 
-**Rank 12 [Master Healer]**, a character reduces the strain of psionic healing, the skill can be attempted once every 10 minutes without causing exhaustion. Additionally, the character can double the number of mortals healed at the cost of 1 additional psionic energy per mortal healed and one point of exhaustion on both healer and subject.
+▶ **Rank 12 [Master Healer]**, a character reduces the strain of psionic healing, the skill can be attempted once every 10 minutes without causing exhaustion. Additionally, the character can double the number of mortals healed at the cost of 1 additional psionic energy per mortal healed and one point of exhaustion on both healer and subject.
 
 ---
 
@@ -162,50 +162,50 @@ A morphed body part retains its original characteristics; no game statistics cha
 
 ### Rank Benefits
 #### Disguise (ranks 5, 7, 9, 12)
-**Rank 5** – Facial disguise: +2 step penalty to Awareness checks when trying to recognize the character.
+▶ **Rank 5** – Facial disguise: +2 step penalty to Awareness checks when trying to recognize the character.
 
-**Rank 7** – Limb‑length adaptation: alter limb length to aid impersonation.
+▶ **Rank 7** – Limb‑length adaptation: alter limb length to aid impersonation.
 
-**Rank 9** – Body‑volume change: shrink or expand to fit unusually shaped spaces.
+▶ **Rank 9** – Body‑volume change: shrink or expand to fit unusually shaped spaces.
 
-**Rank 12** – Improved disguise: +4 step penalty, can mimic a specific person.
+▶ **Rank 12** – Improved disguise: +4 step penalty, can mimic a specific person.
 
 #### Impersonation (ranks 5, 7, 9)
-**Rank 5** – Voice mimicry: copy another's speech patterns. -1 step bonus to Entertainment-Act checks.
+▶ **Rank 5** – Voice mimicry: copy another's speech patterns. -1 step bonus to Entertainment-Act checks.
 
-**Rank 7** – Mannerism replication: an additional -1 step bonus to Entertainment-Act checks due to the ability of freely replicating the subject's mannerisms.
+▶ **Rank 7** – Mannerism replication: an additional -1 step bonus to Entertainment-Act checks due to the ability of freely replicating the subject's mannerisms.
 
-**Rank 9** – Full persona adoption: combine voice, mannerisms, and appearance for a convincing impersonation. Due to the ability to completely separate his mental state from the visible persona, the character gains an additional -1 step bonus to Interaction and Entertainment-Act checks.
+▶ **Rank 9** – Full persona adoption: combine voice, mannerisms, and appearance for a convincing impersonation. Due to the ability to completely separate his mental state from the visible persona, the character gains an additional -1 step bonus to Interaction and Entertainment-Act checks.
 
 #### Mechanical Alteration (ranks 5, 7, 9, 12)
-**Rank 5** – Increase flexibility: +0.5 m reach for a specific limb.
+▶ **Rank 5** – Increase flexibility: +0.5 m reach for a specific limb.
 
-**Rank 7** – Reduce stun damage taken from blunt attacks and secondary damage by 1.
+▶ **Rank 7** – Reduce stun damage taken from blunt attacks and secondary damage by 1.
 
-**Rank 9** – Soft landing: halve damage from falling.
+▶ **Rank 9** – Soft landing: halve damage from falling.
 
-**Rank 12** – Reduce stun damage taken from blunt attacks and secondary damage by 2.
+▶ **Rank 12** – Reduce stun damage taken from blunt attacks and secondary damage by 2.
 
 #### Small‑Space Passage (Ranks 5, 7, 9)
-**Rank 5** – Squeeze through cracks (up to 30 cm wide).
+▶ **Rank 5** – Squeeze through cracks (up to 30 cm wide).
 
-**Rank 7** – Pass through tight spaces as if you have no bones up to 25cm diameter.
+▶ **Rank 7** – Pass through tight spaces as if you have no bones up to 25cm diameter.
 
-**Rank 9** – Able to pass a arm through a 1 cm wide crack or space, allowing to pass the arm under a door and combine with elongate arms reach the lock from the inside.
+▶ **Rank 9** – Able to pass a arm through a 1 cm wide crack or space, allowing to pass the arm under a door and combine with elongate arms reach the lock from the inside.
 
 #### Reach & Height (Ranks 5, 7, 9)
-**Rank 5** – Elongate fingers: +0.5 m reach.
+▶ **Rank 5** – Elongate fingers: +0.5 m reach.
 
-**Rank 7** – Elongate arms: +1 m reach.
+▶ **Rank 7** – Elongate arms: +1 m reach.
 
-**Rank 9** – Elongate legs: +1 m height.
+▶ **Rank 9** – Elongate legs: +1 m height.
 
 #### Contortion and Compression (Ranks 5, 7, 9)
-**Rank 5** – Fit into a container of similar "volume" as your body. The volume of an average human male can fit in a 50cm side cube with a limited degree of movement.
+▶ **Rank 5** – Fit into a container of similar "volume" as your body. The volume of an average human male can fit in a 50cm side cube with a limited degree of movement.
 
-**Rank 7** – Fit into a container of 3/4 the volume of your body, movement is not hindered.
+▶ **Rank 7** – Fit into a container of 3/4 the volume of your body, movement is not hindered.
 
-**Rank 9** – Fit into a container of 1/2 the volume of your body, movement is not hindered.
+▶ **Rank 9** – Fit into a container of 1/2 the volume of your body, movement is not hindered.
 
 ---
 
@@ -229,16 +229,16 @@ rejuvenate skill can't be attempted more than once per hour.
 
 ### Rank Benefits:
 
-**Rank 3 [Improved Effect]** the effect of a successful skill roll improves as follows:
+▶ **Rank 3 [Improved Effect]** the effect of a successful skill roll improves as follows:
 - **Ordinary:** 4 points
 - **Good:** 6 points
 - **Amazing:** 8 points
 
-**Rank 3 [Treating Disease]** a character may counteract the effect of disease in his or her system. The result of the skill check determines how much the disease is reduced. The disease is reduced by one grade on **Good** success, and 2 grades on an **Amazing** success. An **Ordinary** success is not enough to help recover from the disease, but it eliminates all penalties the disease may be causing for a day. Only one successful check per day may be made to treat a disease.
+▶ **Rank 3 [Treating Disease]** a character may counteract the effect of disease in his or her system. The result of the skill check determines how much the disease is reduced. The disease is reduced by one grade on **Good** success, and 2 grades on an **Amazing** success. An **Ordinary** success is not enough to help recover from the disease, but it eliminates all penalties the disease may be causing for a day. Only one successful check per day may be made to treat a disease.
 
-**Rank 6 [Laying On Hands]** a character becomes able to heal fatigue or stun damage, as well as disease, in others. The subject to be healed must be in physical contact with the character using this ability.
+▶ **Rank 6 [Laying On Hands]** a character becomes able to heal fatigue or stun damage, as well as disease, in others. The subject to be healed must be in physical contact with the character using this ability.
 
-**Rank 12 [Two Recipients]** a character using rejuvenate may affect two individuals with a single use of the skill. This can be on two other people or on the character and one other person. Each gains whatever benefit is determined by the Biokinesis-rejuvenate skill check.
+▶ **Rank 12 [Two Recipients]** a character using rejuvenate may affect two individuals with a single use of the skill. This can be on two other people or on the character and one other person. Each gains whatever benefit is determined by the Biokinesis-rejuvenate skill check.
 
 ---
 
@@ -263,11 +263,11 @@ falling. The same will happen if the character has nothing to hold onto on
 reaching his or her destination.
 
 ### Rank Benefits
-**Rank 4 [Increased Distance]** the distance the user can travel while climbing or running across inverted surfaces is doubled.
+▶ **Rank 4 [Increased Distance]** the distance the user can travel while climbing or running across inverted surfaces is doubled.
 
-**Rank 8 [Increased Distance]** the distance is three times the base rate.
+▶ **Rank 8 [Increased Distance]** the distance is three times the base rate.
 
-**Rank 12 [Increased Distance]** the distance is four times the base rate.
+▶ **Rank 12 [Increased Distance]** the distance is four times the base rate.
 
 ---
 
@@ -298,11 +298,11 @@ Claw/Spur/Horn attacks are made while this power is active, inflict additional d
 - **Amazing:** +3 damage
 
 ### Rank Benefits
-**Rank 6 [Increased Quality]** claws/spurs/horns attacks are now considered good quality.
+▶ **Rank 6 [Increased Quality]** claws/spurs/horns attacks are now considered good quality.
 
-**Rank 8 [Improved Destabilization]** From this onwards the good success on attacks are enough to destabilize an armor. This effect now works on good quality armors as well.
+▶ **Rank 8 [Improved Destabilization]** From this onwards the good success on attacks are enough to destabilize an armor. This effect now works on good quality armors as well.
 
-**Rank 12 [Armor Degradation]** On an amazing success the armor integrity is now so compromised that its toughness is also reduced, from Amazing to Good, from Good to Ordinary, Ordinary armor stop protecting until the effect ends.
+▶ **Rank 12 [Armor Degradation]** On an amazing success the armor integrity is now so compromised that its toughness is also reduced, from Amazing to Good, from Good to Ordinary, Ordinary armor stop protecting until the effect ends.
 
 ---
 
@@ -325,13 +325,13 @@ Navigating while actively scanning through solid barriers slows the character to
 
 **Rank Benefits:**
 
-**Rank 3 [Infrared Pit Detection]**, modeled after the loreal pits of vipers, the character integrates thermal imaging into their visual field. Specialized heat-sensing pits may visibly open near the tear ducts or temples. The character can trace heat signatures, detect thermal footprints, and see living targets through low-density barriers (such as thin walls or foliage).
+▶ **Rank 3 [Infrared Pit Detection]**, modeled after the loreal pits of vipers, the character integrates thermal imaging into their visual field. Specialized heat-sensing pits may visibly open near the tear ducts or temples. The character can trace heat signatures, detect thermal footprints, and see living targets through low-density barriers (such as thin walls or foliage).
 
-**Rank 6 [Foveal Resolution]**, utilizing the dual-fovea structure and deep-pit anatomy found in raptors like eagles, the character’s eyes function as an integrated telescopic scope. The character ignores the first +1 step penalty for range (Medium or Long). This benefit does **not** stack with scopes or binoculars. Additionally, the high-resolution clarity allows the character to detect involuntary microexpressions, granting a -1 step bonus to [[awareness—perception]] or [[interaction—empathy]] checks made to discern lies or emotional states. And [[investigation—search]] checks.
+▶ **Rank 6 [Foveal Resolution]**, utilizing the dual-fovea structure and deep-pit anatomy found in raptors like eagles, the character’s eyes function as an integrated telescopic scope. The character ignores the first +1 step penalty for range (Medium or Long). This benefit does **not** stack with scopes or binoculars. Additionally, the high-resolution clarity allows the character to detect involuntary microexpressions, granting a -1 step bonus to [[awareness—perception]] or [[interaction—empathy]] checks made to discern lies or emotional states. And [[investigation—search]] checks.
 
-**Rank 8 [Wide-Spectrum Sensorium]**, replicating the advanced eyes of the mantis shrimp, the character’s eyes become visibly faceted and compound. They can simultaneously perceive polarized light, ultraviolet radiation, and active electromagnetic emissions (radio waves and sensor frequencies). This allows them to "see" active transmittors, like radio equipment, active sensors.
+▶ **Rank 8 [Wide-Spectrum Sensorium]**, replicating the advanced eyes of the mantis shrimp, the character’s eyes become visibly faceted and compound. They can simultaneously perceive polarized light, ultraviolet radiation, and active electromagnetic emissions (radio waves and sensor frequencies). This allows them to "see" active transmittors, like radio equipment, active sensors.
 
-**Rank 12 [Cortical Integration]**, the character's is able to seamlessly morph this visual organs making impossible to notice them at plain sight, eliminating any social penalty. Additionally, the character can switch between modes as an action.
+▶ **Rank 12 [Cortical Integration]**, the character's is able to seamlessly morph this visual organs making impossible to notice them at plain sight, eliminating any social penalty. Additionally, the character can switch between modes as an action.
 
 ---
 
@@ -352,13 +352,13 @@ By establishing physical contact, the psion forces a parasitic bio-electric link
 The effect lasts until the end of the next round.
 
 ### Rank Benefits
-**Rank 6 [Symbiotic Absorption]**, the psion can choose to convert the siphoned energy into raw regenerative material. Instead of taking the step bonus for themselves, the psion can heal:
+▶ **Rank 6 [Symbiotic Absorption]**, the psion can choose to convert the siphoned energy into raw regenerative material. Instead of taking the step bonus for themselves, the psion can heal:
 - **Good:** 2 wounds
 - **Amazing:** 3 wounds
 
-**Rank 9 [Channel Vitality]**, the psion can use this power to restore vitality to an ally instead of the psion. Both the recipient and the donor must be adjacent to the psion when the power is activated.
+▶ **Rank 9 [Channel Vitality]**, the psion can use this power to restore vitality to an ally instead of the psion. Both the recipient and the donor must be adjacent to the psion when the power is activated.
 
-**Rank 12 [Systemic Overdrive]**, the siphoning becomes so efficient that the psion can even use the energy to heal mortal damage:
+▶ **Rank 12 [Systemic Overdrive]**, the siphoning becomes so efficient that the psion can even use the energy to heal mortal damage:
 - **Ordinary:** 1 wound
 - **Good:** 2 wounds or 1 mortal
 - **Amazing:** 4 wounds or 2 mortals

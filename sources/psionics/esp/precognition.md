@@ -17,7 +17,7 @@ name: Precognition
 ---
 
 > [!NOTE]
-> **Requires Perk:** [Precog]({{< relref "/perks_flaws/perks/precog" >}}).
+> **Requires Perk:** Precog.
 
 ### The Session Flash
 
@@ -65,10 +65,10 @@ Once the LRP is used, the character can exert to reactivate the power, but doing
 
 ### Rank Benefits
 
-**Rank 3 [Tactical Horizon]:** The Overuse penalty is reduced to +2 steps.
+▶ **Rank 3 [Tactical Horizon]:** The Overuse penalty is reduced to +2 steps.
 
-**Rank 6 [Operational Horizon]:** The Overuse penalty is reduced to +1 step. Precognition skill checks receive a -1 step bonus.
+▶ **Rank 6 [Operational Horizon]:** The Overuse penalty is reduced to +1 step. Precognition skill checks receive a -1 step bonus.
 
-**Rank 9 [Strategic Horizon]:** There is no penalty for Overuse.
+▶ **Rank 9 [Strategic Horizon]:** There is no penalty for Overuse.
 
-**Rank 12 [Causal Horizon]:** The GM provides precise timing for the event described in the session flash (ranging from minutes for imminent events to a specific day for events months away).
+▶ **Rank 12 [Causal Horizon]:** The GM provides precise timing for the event described in the session flash (ranging from minutes for imminent events to a specific day for events months away).
