@@ -322,7 +322,7 @@ items:
           description: |-
             Esta ventaja proporciona al personaje 2 Puntos de Energía Psiónica (PP) adicionales. Esta ventaja solo puede comprarse una vez.
   precog:
-    cost: '6'
+    cost: '5'
     ability: WIL
     type: Exclusive
     localized:

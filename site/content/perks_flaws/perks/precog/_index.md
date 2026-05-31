@@ -1,6 +1,6 @@
 +++
 title = "Precog"
-cost = "6"
+cost = "5"
 ability = "WIL"
 type = "perk"
 layout = "list"
