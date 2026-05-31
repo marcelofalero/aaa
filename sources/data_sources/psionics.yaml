@@ -2254,101 +2254,6 @@ items:
                 ▶ **Rango 6 [Idioma]** Un telépata aprende a comprender el significado subyacente de las ideas expresadas incluso en idiomas que no comprende. El Personaje puede intentar una prueba de dote de Inteligencia para comprender la esencia del concepto que se comunica o para aclarar sus propios pensamientos al objetivo. A discreción del Director de Juego, se aplica un +2 Penalización de paso al intentar comunicarse con mentes alienígenas.
 
                 ⊗ **Rango 12 [Cambiar]** Un telépata que alcanza Rango 12 en contacto puede intentar cambiar su conciencia con la del objetivo, intercambiando cuerpos de manera efectiva.
-      datalink:
-        attribute: PER
-        cost: 4
-        url: /psionics/telepathy/#datalink
-        trained_only: true
-        rank_benefits:
-          - rank: 3
-            title: Increased Distance
-          - rank: 3
-            title: Memory Slots
-          - rank: 4
-            title: Increased Duration
-          - rank: 4
-            title: Edit
-          - rank: 6
-            title: Robolink
-        extended_duration: true
-        localized:
-          - en:
-              name: Datalink
-              description: |-
-                This skill is the ability to link one's mind with a computer (or a cybernetic
-                machine, if the optional rules for cybertech are being used) without using a
-                physical connection of any kind. The datalink skill can be used to operate
-                computers or cybernetic machinery with mental commands, to project one's mind
-                into the datastream without using a neural interface jack (NIJack) or
-                gridcaster, or to examine computer data by mentally scanning the storage unit.
-                In game terms, the character is able to use the same functions provided by a
-                computer operating system: copy, delete, error recognition, file management,
-                protection, protocol, and save.
-                **Rank Benefits:**
-                - **At rank 3 [Increased Distance]:** the distance at which the character can use the datalink skill increases to 4 (no penalty)/ 8 (+1 step penalty)/ 12 (+2 step penalty) meters. At rank 6, this becomes 8/16/25 meters. At rank 9, it increases again to 15/30/50 meters, and at rank 12, it improves to 30/60/100 meters.
-                - **At rank 3 [Memory Slots]:** the character effectively has 1 slot of active memory, which can be used to store data or programs. At rank 6, the active memory increases to 2 slots, to 3 slots at rank 9, and 4 slots at rank 12.
-                - **At rank 4 [Increased Duration]:** the base unit of duration increases to 1 minute, plus an additional minute per psionic energy point spent to maintain it. At rank 8, this unit of duration becomes 5 minutes, and at rank 12, it increases to 30 minutes.
-                - **At rank 4 [Edit]:** the character can edit information stored on computers, deleting, resequencing, or otherwise changing the appearance of the data.
-                - **At rank 6 [Robolink]:** the character can temporarily seize control of robots. On a successful skill check, the character can implant commands in a single robot, which then behaves as though it had been affected by Telepathy-suggest.
-          - es:
-              name: Enlace de Datos
-              description: |-
-                Esta habilidad es la capacidad de vincular la propia mente con un ordenador (o
-                una máquina cibernética, si se usan las reglas opcionales para
-                cibertecnología) sin usar una conexión física de ningún tipo. La habilidad
-                enlace de datos se puede utilizar para operar ordenadores o maquinaria
-                cibernética con órdenes mentales, para proyectar la propia mente en el flujo
-                de datos sin utilizar un conector de interfaz neuronal (NIJack) o integrador
-                de red, o para examinar los datos de un ordenador explorando mentalmente la
-                unidad de almacenamiento. En términos de juego, el personaje puede usar las
-                mismas funciones proporcionadas por un sistema operativo de ordenador: copiar,
-                eliminar, reconocimiento de errores, gestión de archivos, protección,
-                protocolo y guardar.
-                **Beneficios de Rango:**
-                - **Al rango 3 [Distancia Incrementada]:** la distancia a la que el personaje puede usar la habilidad de enlace de datos aumenta a 4 (sin penalizador) / 8 (penalizador de +1 paso) / 12 (penalizador de +2 pasos) metros. Al rango 6, esto se convierte en 8/16/25 metros. Al rango 9, aumenta nuevamente a 15/30/50 metros, y al rango 12, mejora a 30/60/100 metros.
-                - **Al rango 3 [Ranuras de Memoria]:** el personaje tiene efectivamente 1 ranura de memoria activa, que puede usarse para almacenar datos o programas. Al rango 6, la memoria activa aumenta a 2 ranuras, a 3 ranuras al rango 9 y a 4 ranuras al rango 12.
-                - **Al rango 4 [Duración Incrementada]:** la unidad de duración base aumenta a 1 minuto, más un minuto adicional por punto de energía psiónica gastado para mantenerla. Al rango 8, esta unidad de duración pasa a ser de 5 minutos, y al rango 12, aumenta a 30 minutos.
-                - **Al rango 4 [Editar]:** el personaje puede editar la información almacenada en los ordenadores, borrando, resecuenciando o cambiando la apariencia de los datos.
-                - **Al rango 6 [Roboenlace]:** el personaje puede tomar el control temporal de los robots. Con una tirada de habilidad exitosa, el personaje puede implantar comandos en un solo robot, que luego se comporta como si hubiera sido afectado por una Sugerencia de Telepatía.
-      drain:
-        attribute: PER
-        cost: 4
-        url: /psionics/telepathy/#drain
-        trained_only: true
-        rank_benefits:
-          - rank: 1
-            title: Attribute Select
-          - rank: 6
-            title: Transference
-        extended_duration: false
-        localized:
-          - en:
-              name: Drain
-              description: |-
-                The character becomes able to sap the energy of another living being from a
-                short distance away (range 1/2/4). When the psion purchases the skill, he or
-                she selects one of the target's attributes (STR, DEX, CON, INT, or WIL) to
-                govern the effect type. Any success on the skill check results in the target
-                losing 1 point of the related attribute. If the target reaches a 0 score in
-                the affected ability, he or she is helpless and unable to do anything until
-                his or her score improves to at least 1.
-                **Rank Benefits:**
-                - **At rank 1 [Attribute Select]:** At ranks 1, 4, 8, and 12, the character can pick a new attribute to sap. The specific attribute affected is chosen before the skill check is made.
-                - **At rank 6 [Transference]:** the user can temporarily gain the use of the drained attribute points. The benefit lasts until the victim recovers the lost points (to a maximum of 24 hours).
-          - es:
-              name: Drenar
-              description: |-
-                El personaje se vuelve capaz de absorber la energía de otro ser vivo desde una
-                corta distancia (rango 1/2/4). Cuando el psiónico adquiere la habilidad,
-                selecciona una de las características del objetivo (FUE, DES, CON, INT o VOL)
-                para gobernar el tipo de efecto. Cualquier éxito en la tirada de habilidad da
-                como resultado que el objetivo pierda 1 punto de la característica
-                relacionada. Si el objetivo llega a una puntuación de 0 en la capacidad
-                afectada, queda indefenso e incapaz de hacer nada hasta que su puntuación
-                mejore al menos a 1.
-                **Beneficios de Rango:**
-                - **Al rango 1 [Selección de Característica]:** Al rango 1, 4, 8 y 12, el personaje puede elegir una nueva característica para absorber. La característica específica afectada se elige antes de realizar la tirada de habilidad.
-                - **Al rango 6 [Transferencia]:** el usuario puede obtener temporalmente el uso de los puntos de característica drenados. El beneficio dura hasta que la víctima recupera los puntos perdidos (hasta un máximo de 24 horas).
       empathic-projection:
         attribute: PER
         cost: 3
@@ -2364,38 +2269,67 @@ items:
           - en:
               name: Empathic Projection
               description: |-
-                With this skill, a character may alter the mood of other beings—even those
-                with whom the character does not share a language, such as foreigners, aliens,
-                or animals. In game terms, this shifts the emotional state of the target
-                (Combative, Hostile, Neutral, Friendly, Charmed, or Fanatic) by one, two, or
-                three steps, depending on the success (Ordinary, Good, or Amazing). In the
-                event of a Critical Failure, the target's emotional state shifts two steps in
-                the direction opposite of what was desired. The target must be within visual
-                range of the psion. Minimum duration is d4 phases; add an additional number of
-                phases equal to the user's skill rank. Multiple targets can be selected, but
-                each additional target beyond the first provides a cumulative +1 step penalty
-                to the skill check.
-                **Rank Benefits:**
-                - **At rank 4 [Increased Duration]:** the duration is in rounds (modified by an additional number of rounds equal to the user's skill rank). At rank 8, the duration increases to minutes. Finally, at rank 12, the duration is in 5-minute intervals.
-                - **At rank 4 [Ignore penalty]:** the user can ignore one penalty step for either the target's current emotional state, or the number of intended targets. At rank 8, the character can ignore two such penalty steps, and at rank 12, the character can ignore three.
+                With this skill, a character may alter the mood of other beings, even those with whom the character does not share a language, such as foreigners, aliens, or animals. 
+
+                In the event of a Critical Failure, the target's emotional state shifts two steps in the direction opposite of what was desired. 
+
+                The target must be within visual range of the psion. 
+
+                This power last until the begining of the next turn and a number of extra turns equal to half the ranks in this skill. Multiple targets can be selected, but each additional target beyond the first provides a cumulative +1 step penalty to the skill check.
+
+                ### Check Results
+                - **Ordinary:** the user shifts the emotional state of the target by 1 step.
+                - **Good:** the user shifts the emotional state of the target by 2 steps.
+                - **Amazing:** the user shifts the emotional state of the target by 3 steps.
+
+                Situation modifiers for the current attitude of the target are as follows:
+
+                | Attitude | Modifier |
+                | :--- | :---: |
+                | Combative | +3 |
+                | Hostile | +2 |
+                | Neutral | 0 |
+                | Friendly | +1 |
+                | Charmed | +2 |
+                | Fanatic | +3 |
+
+                ### Rank Benefits
+
+                ▶ **Rank 4 [Increased Duration]** The skill is now considered extended duration.
+
+                ▶ **Rank 4, 8, 12 [Ignore penalty]** The user can ignore one penalty step for either the target's current emotional state, or the number of intended targets. At rank 8, the character can ignore two such penalty steps, and at rank 12, the character can ignore three.
           - es:
               name: Proyección Empática
               description: |-
-                Con esta habilidad, un personaje puede alterar el estado de ánimo de otros
-                seres, incluso de aquellos con quienes no comparte un idioma, como
-                extranjeros, alienígenas o animales. En términos de juego, esto cambia el
-                estado emocional del objetivo (Combativo, Hostil, Neutral, Amistoso, Encantado
-                o Fanático) en uno, dos o tres pasos, dependiendo del éxito (Ordinario, Bueno
-                o Asombroso). En caso de un Fallo Crítico, el estado emocional del objetivo
-                cambia dos pasos en la dirección opuesta a la deseada. El objetivo debe estar
-                dentro del rango visual del psiónico. La duración mínima es de d4 fases; añada
-                un número adicional de fases igual al rango de habilidad del usuario. Se
-                pueden seleccionar múltiples objetivos, pero cada objetivo adicional más allá
-                del primero proporciona un penalizador acumulativo de +1 paso a la tirada de
-                habilidad.
-                **Beneficios de Rango:**
-                - **Al rango 4 [Duración Incrementada]:** la duración es en asaltos (modificada por un número adicional de asaltos igual al rango de habilidad del usuario). Al rango 8, la duración aumenta a minutos. Finalmente, al rango 12, la duración es en intervalos de 5 minutos.
-                - **Al rango 4 [Ignorar penalizador]:** el usuario puede ignorar un paso de penalizador, ya sea por el estado emocional actual del objetivo o por el número de objetivos previstos. Al rango 8, el personaje puede ignorar dos pasos de penalizador, y al rango 12, el personaje puede ignorar tres.
+                Con esta habilidad, un Personaje puede alterar el estado de ánimo de los seres Otros, incluso aquellos con quienes el Personaje no comparte idioma, como extranjeros, extraterrestres o animales.
+
+                En el caso de un Fallo Crítico, el estado emocional del objetivo cambia dos pasos en la dirección opuesta a la deseada.
+
+                El objetivo debe estar dentro del alcance visual del psion.
+
+                Este poder dura hasta el inicio del siguiente turno y un número de turnos extra igual a la mitad del Rangos en esta habilidad. Se pueden seleccionar varios objetivos, pero cada objetivo adicional más allá del primero proporciona un +1 Penalización de paso acumulativo a la prueba de habilidad.
+
+                ### Verificar resultados
+                - **Ordinario:** el usuario cambia el estado emocional del objetivo en 1 paso.
+                - **Bueno:** el usuario cambia el estado emocional del objetivo en 2 pasos.
+                - **Asombroso:** el usuario cambia el estado emocional del objetivo en 3 pasos.
+
+                Los modificadores de situación para la actitud actual del objetivo son los siguientes:
+
+                | Actitud | Modificador |
+                | :--- | :---: |
+                | Combativo | +3 |
+                | Hostil | +2 |
+                | Neutro | 0 |
+                | Amistoso | +1 |
+                | Encantada | +2 |
+                | Fanático | +3 |
+
+                ### Beneficios de Rango
+
+                ▶ **Rango 4 [Duración aumentada]** La habilidad ahora se considera de duración extendida.
+
+                ▶ **Rango 4, 8, 12 [Ignorar penalización]** El usuario puede ignorar un paso de penalización ya sea por el estado emocional actual del objetivo o por el número de objetivos previstos. En Rango 8, el Personaje puede ignorar dos de esos pasos de penalización, y en Rango 12, el Personaje puede ignorar tres.
       illusion:
         attribute: PER
         cost: 3
@@ -2878,4 +2812,62 @@ items:
                 **Beneficios de Rango:**
                 - **Al rango 4 [Efecto Incrementado]:** el usuario puede afectar a dos objetivos con la misma tirada de habilidad. Al rango 8, puede afectar a cuatro objetivos, y a ocho objetivos al rango
                   12.
+      thought-worm:
+        attribute: PER
+        cost: 4
+        url: /psionics/telepathy/#thought-worm
+        trained_only: true
+        localized:
+          - en:
+              name: Thought Worm
+              description: |-
+                The psion inserts a mental construct into the mind of another being. This worm consumes the target's cognitive energy, making mental tasks harder while allowing the psion to force the target's mind to process tasks for them.
+
+                Upon activation, the target's Will defense imposes a penalty to the activation check. If successful, the worm is implanted and the psion selects one of the target's Intelligence-based skills. While the power lasts, the psion can use that selected skill, utilizing the target's ranks and Intelligence score.
+
+                **Awareness & Control:** The target is aware of the psion's presence as alien thoughts pop up in their mind. If the target is unwilling, whenever the psion wants to use the borrowed skill, the psion must make a new skill check (penalized by the target's Will defense modifier) to force the target's mind to comply. Failing this check means the task is not processed, but the worm remains; only a Critical Failure frees the target.
+
+                ### Check Results
+
+                - **Ordinary:** The target suffers a -1 step penalty to all Intelligence-based skill and feat checks.
+                - **Good:** The penalty is -2 steps.
+                - **Amazing:** The penalty is -3 steps.
+
+                ### Rank Benefits
+                ▶ **Rank 3 [Broad Selection]** You can now select up to 3 of the target's specialty skills instead of a single one.
+
+                ▶ **Rank 6 [Psionic Link]** If the target is a psion, you can choose one of their psionic skills instead of a standard skill. Because you are only drawing upon their knowledge rather than utilizing their remote mind to process it, you use your own ability score combined with the target's ranks. The power point cost comes from your own reserves and is doubled.
+
+                ▶ **Rank 9 [Improved Link]** Using the target's psionic skill via Psionic Link no longer costs double power points.
+
+                ▶ **Rank 12 [Improved Worm]** You are no longer limited to Intelligence. You can now select any Intelligence, Will, or Personality-based specialty skill. All selected skills must share the same ability score, and the step penalty from the Check Results is applied to all checks using that chosen ability score.
+          - es:
+              name: 'Gusano del pensamiento'
+              description: |-
+                El psion inserta una construcción Mental en la mente de otro ser. Este gusano consume la energía cognitiva del objetivo, lo que dificulta las tareas de Mental y permite que el psion fuerce la mente del objetivo a procesar las tareas por él.
+
+                Tras la activación, la defensa de Voluntad del objetivo impone una penalización a la prueba de activación. Si tiene éxito, se implanta el gusano y el psion selecciona una de las habilidades basadas en Inteligencia del objetivo. Mientras dure el poder, el psion puede usar esa habilidad seleccionada, utilizando el Rangos y la puntuación de Inteligencia del objetivo.
+
+                **Alerta y Control:** El objetivo es consciente de la presencia del psion cuando pensamientos alienígenas aparecen en su mente. Si el objetivo no está dispuesto, siempre que el psion quiera usar la habilidad prestada, debe realizar una nueva prueba de habilidad (penalizada por el modificador de defensa de Voluntad del objetivo) para obligar a la mente del objetivo a obedecer. Si no se supera esta verificación, la tarea no se procesa, pero el gusano permanece; sólo un Fallo Crítico libera al objetivo.
+
+                ### Verificar resultados
+
+                - **Ordinario:** El objetivo sufre un -1 Penalización de paso en todas las pruebas de habilidades y dotes basadas en Inteligencia.
+                - **Bueno:** La penalización es de -2 pasos.
+                - **Asombroso:** La penalización es de -3 pasos.
+
+                ### Beneficios de Rango
+                ▶ **Rango 3 [Selección amplia]** Ahora puedes seleccionar hasta 3 de las habilidades especiales del objetivo en lugar de una sola.
+
+                ▶ **Rango 6 [Psionic Link]** Si el objetivo es un psion, puedes elegir una de sus habilidades psiónicas en lugar de una habilidad estándar. Debido a que solo estás aprovechando su conocimiento en lugar de utilizar su mente remota para procesarlo, usas tu propia puntuación de habilidad combinada con el Rangos del objetivo. El coste del power point proviene de tus propias reservas y se duplica.
+
+                ▶ **Rango 9 [Enlace mejorado]** Usar la habilidad psiónica del objetivo a través de Enlace psiónico ya no cuesta el doble de puntos de poder.
+
+                ▶ **Rango 12 [Gusano mejorado]** Ya no estás limitado a la Inteligencia. Ahora puede seleccionar cualquier Especialidad basado en Inteligencia, Voluntad o Personalidad. Todas las habilidades seleccionadas deben compartir la misma puntuación de habilidad, y el Penalización de paso de los resultados de la verificación se aplica a todas las comprobaciones que utilizan esa puntuación de habilidad elegida.
+        rank_benefits:
+          - rank: 1
+            title: Attribute Select
+          - rank: 6
+            title: Transference
+        extended_duration: true
     trained_only: true

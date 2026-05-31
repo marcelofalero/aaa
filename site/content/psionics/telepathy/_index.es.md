@@ -54,64 +54,38 @@ Los modificadores de situación según la familiaridad de la mente y la distanci
 
 ---
 
-## Enlace de Datos
-{{< specialty attr="PER" untrained="no" cost="4" extended="true" >}}
-
-Esta habilidad es la capacidad de vincular la propia mente con un ordenador (o
-una máquina cibernética, si se usan las reglas opcionales para
-cibertecnología) sin usar una conexión física de ningún tipo. La habilidad
-enlace de datos se puede utilizar para operar ordenadores o maquinaria
-cibernética con órdenes mentales, para proyectar la propia mente en el flujo
-de datos sin utilizar un conector de interfaz neuronal (NIJack) o integrador
-de red, o para examinar los datos de un ordenador explorando mentalmente la
-unidad de almacenamiento. En términos de juego, el personaje puede usar las
-mismas funciones proporcionadas por un sistema operativo de ordenador: copiar,
-eliminar, reconocimiento de errores, gestión de archivos, protección,
-protocolo y guardar.
-**Beneficios de Rango:**
-- **Al rango 3 [Distancia Incrementada]:** la distancia a la que el personaje puede usar la habilidad de enlace de datos aumenta a 4 (sin penalizador) / 8 (penalizador de +1 paso) / 12 (penalizador de +2 pasos) metros. Al rango 6, esto se convierte en 8/16/25 metros. Al rango 9, aumenta nuevamente a 15/30/50 metros, y al rango 12, mejora a 30/60/100 metros.
-- **Al rango 3 [Ranuras de Memoria]:** el personaje tiene efectivamente 1 ranura de memoria activa, que puede usarse para almacenar datos o programas. Al rango 6, la memoria activa aumenta a 2 ranuras, a 3 ranuras al rango 9 y a 4 ranuras al rango 12.
-- **Al rango 4 [Duración Incrementada]:** la unidad de duración base aumenta a 1 minuto, más un minuto adicional por punto de energía psiónica gastado para mantenerla. Al rango 8, esta unidad de duración pasa a ser de 5 minutos, y al rango 12, aumenta a 30 minutos.
-- **Al rango 4 [Editar]:** el personaje puede editar la información almacenada en los ordenadores, borrando, resecuenciando o cambiando la apariencia de los datos.
-- **Al rango 6 [Roboenlace]:** el personaje puede tomar el control temporal de los robots. Con una tirada de habilidad exitosa, el personaje puede implantar comandos en un solo robot, que luego se comporta como si hubiera sido afectado por una Sugerencia de Telepatía.
-
----
-
-## Drenar
-{{< specialty attr="PER" untrained="no" cost="4" >}}
-
-El personaje se vuelve capaz de absorber la energía de otro ser vivo desde una
-corta distancia (rango 1/2/4). Cuando el psiónico adquiere la habilidad,
-selecciona una de las características del objetivo (FUE, DES, CON, INT o VOL)
-para gobernar el tipo de efecto. Cualquier éxito en la tirada de habilidad da
-como resultado que el objetivo pierda 1 punto de la característica
-relacionada. Si el objetivo llega a una puntuación de 0 en la capacidad
-afectada, queda indefenso e incapaz de hacer nada hasta que su puntuación
-mejore al menos a 1.
-**Beneficios de Rango:**
-- **Al rango 1 [Selección de Característica]:** Al rango 1, 4, 8 y 12, el personaje puede elegir una nueva característica para absorber. La característica específica afectada se elige antes de realizar la tirada de habilidad.
-- **Al rango 6 [Transferencia]:** el usuario puede obtener temporalmente el uso de los puntos de característica drenados. El beneficio dura hasta que la víctima recupera los puntos perdidos (hasta un máximo de 24 horas).
-
----
-
 ## Proyección Empática
 {{< specialty attr="PER" untrained="yes" cost="3" >}}
 
-Con esta habilidad, un personaje puede alterar el estado de ánimo de otros
-seres, incluso de aquellos con quienes no comparte un idioma, como
-extranjeros, alienígenas o animales. En términos de juego, esto cambia el
-estado emocional del objetivo (Combativo, Hostil, Neutral, Amistoso, Encantado
-o Fanático) en uno, dos o tres pasos, dependiendo del éxito (Ordinario, Bueno
-o Asombroso). En caso de un Fallo Crítico, el estado emocional del objetivo
-cambia dos pasos en la dirección opuesta a la deseada. El objetivo debe estar
-dentro del rango visual del psiónico. La duración mínima es de d4 fases; añada
-un número adicional de fases igual al rango de habilidad del usuario. Se
-pueden seleccionar múltiples objetivos, pero cada objetivo adicional más allá
-del primero proporciona un penalizador acumulativo de +1 paso a la tirada de
-habilidad.
-**Beneficios de Rango:**
-- **Al rango 4 [Duración Incrementada]:** la duración es en asaltos (modificada por un número adicional de asaltos igual al rango de habilidad del usuario). Al rango 8, la duración aumenta a minutos. Finalmente, al rango 12, la duración es en intervalos de 5 minutos.
-- **Al rango 4 [Ignorar penalizador]:** el usuario puede ignorar un paso de penalizador, ya sea por el estado emocional actual del objetivo o por el número de objetivos previstos. Al rango 8, el personaje puede ignorar dos pasos de penalizador, y al rango 12, el personaje puede ignorar tres.
+Con esta habilidad, un Personaje puede alterar el estado de ánimo de los seres Otros, incluso aquellos con quienes el Personaje no comparte idioma, como extranjeros, extraterrestres o animales.
+
+En el caso de un Fallo Crítico, el estado emocional del objetivo cambia dos pasos en la dirección opuesta a la deseada.
+
+El objetivo debe estar dentro del alcance visual del psion.
+
+Este poder dura hasta el inicio del siguiente turno y un número de turnos extra igual a la mitad del Rangos en esta habilidad. Se pueden seleccionar varios objetivos, pero cada objetivo adicional más allá del primero proporciona un +1 Penalización de paso acumulativo a la prueba de habilidad.
+
+### Verificar resultados
+- **Ordinario:** el usuario cambia el estado emocional del objetivo en 1 paso.
+- **Bueno:** el usuario cambia el estado emocional del objetivo en 2 pasos.
+- **Asombroso:** el usuario cambia el estado emocional del objetivo en 3 pasos.
+
+Los modificadores de situación para la actitud actual del objetivo son los siguientes:
+
+| Actitud | Modificador |
+| :--- | :---: |
+| Combativo | +3 |
+| Hostil | +2 |
+| Neutro | 0 |
+| Amistoso | +1 |
+| Encantada | +2 |
+| Fanático | +3 |
+
+### Beneficios de Rango
+
+▶ **Rango 4 [Duración aumentada]** La habilidad ahora se considera de duración extendida.
+
+▶ **Rango 4, 8, 12 [Ignorar penalización]** El usuario puede ignorar un paso de penalización ya sea por el estado emocional actual del objetivo o por el número de objetivos previstos. En Rango 8, el Personaje puede ignorar dos de esos pasos de penalización, y en Rango 12, el Personaje puede ignorar tres.
 
 ---
 
@@ -328,6 +302,32 @@ es necesario que el Aleerin supere una tirada de Resolución Mental.
 **Beneficios de Rango:**
 - **Al rango 4 [Efecto Incrementado]:** el usuario puede afectar a dos objetivos con la misma tirada de habilidad. Al rango 8, puede afectar a cuatro objetivos, y a ocho objetivos al rango
   12.
+
+---
+
+## Gusano del pensamiento
+{{< specialty attr="PER" untrained="no" cost="4" extended="true" >}}
+
+El psion inserta una construcción Mental en la mente de otro ser. Este gusano consume la energía cognitiva del objetivo, lo que dificulta las tareas de Mental y permite que el psion fuerce la mente del objetivo a procesar las tareas por él.
+
+Tras la activación, la defensa de Voluntad del objetivo impone una penalización a la prueba de activación. Si tiene éxito, se implanta el gusano y el psion selecciona una de las habilidades basadas en Inteligencia del objetivo. Mientras dure el poder, el psion puede usar esa habilidad seleccionada, utilizando el Rangos y la puntuación de Inteligencia del objetivo.
+
+**Alerta y Control:** El objetivo es consciente de la presencia del psion cuando pensamientos alienígenas aparecen en su mente. Si el objetivo no está dispuesto, siempre que el psion quiera usar la habilidad prestada, debe realizar una nueva prueba de habilidad (penalizada por el modificador de defensa de Voluntad del objetivo) para obligar a la mente del objetivo a obedecer. Si no se supera esta verificación, la tarea no se procesa, pero el gusano permanece; sólo un Fallo Crítico libera al objetivo.
+
+### Verificar resultados
+
+- **Ordinario:** El objetivo sufre un -1 Penalización de paso en todas las pruebas de habilidades y dotes basadas en Inteligencia.
+- **Bueno:** La penalización es de -2 pasos.
+- **Asombroso:** La penalización es de -3 pasos.
+
+### Beneficios de Rango
+▶ **Rango 3 [Selección amplia]** Ahora puedes seleccionar hasta 3 de las habilidades especiales del objetivo en lugar de una sola.
+
+▶ **Rango 6 [Psionic Link]** Si el objetivo es un psion, puedes elegir una de sus habilidades psiónicas en lugar de una habilidad estándar. Debido a que solo estás aprovechando su conocimiento en lugar de utilizar su mente remota para procesarlo, usas tu propia puntuación de habilidad combinada con el Rangos del objetivo. El coste del power point proviene de tus propias reservas y se duplica.
+
+▶ **Rango 9 [Enlace mejorado]** Usar la habilidad psiónica del objetivo a través de Enlace psiónico ya no cuesta el doble de puntos de poder.
+
+▶ **Rango 12 [Gusano mejorado]** Ya no estás limitado a la Inteligencia. Ahora puede seleccionar cualquier Especialidad basado en Inteligencia, Voluntad o Personalidad. Todas las habilidades seleccionadas deben compartir la misma puntuación de habilidad, y el Penalización de paso de los resultados de la verificación se aplica a todas las comprobaciones que utilizan esa puntuación de habilidad elegida.
 
 ---
 
