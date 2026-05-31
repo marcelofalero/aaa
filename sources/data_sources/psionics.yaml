@@ -48,13 +48,13 @@ items:
                 The skin hardening impairs the character's movement in the same way as worn armor with AP 1, but a lighter version can be achieved by sacrificing 1 point of armor on each category, this eliminates the armor penalty.
 
                 ### Rank Benefits
-                **Rank 3 [Increased Effect]** the protection afforded by bio-armor increases to (LI d8 / HI d6 / En d4+1).
+                ▶ **Rank 3 [Increased Effect]** the protection afforded by bio-armor increases to (LI d8 / HI d6 / En d4+1).
 
-                **Rank 6 [Increased Effect]** this value further increases to (LI d8 / HI d6+1 / En d6)b .
+                ▶ **Rank 6 [Increased Effect]** this value further increases to (LI d8 / HI d6+1 / En d6)b .
 
-                **Rank 9 [Increased Toughness]** the armor is treated as being of Good toughness.
+                ▶ **Rank 9 [Increased Toughness]** the armor is treated as being of Good toughness.
 
-                **Rank 12 [Increased Effect]** the armor value increases again to (LI 2d4 / HI 2d4 / En d8).
+                ▶ **Rank 12 [Increased Effect]** the armor value increases again to (LI 2d4 / HI 2d4 / En d8).
           - es:
               name: Bioarmadura
               description: |-
@@ -68,13 +68,13 @@ items:
                 El endurecimiento de la piel perjudica el movimiento del Personaje de la misma manera que una armadura desgastada con AP 1, pero se puede lograr una versión más ligera sacrificando 1 punto de armadura en cada categoría, esto elimina la penalización de armadura.
 
                 ### Beneficios de Rango
-                **Rango 3 [Efecto aumentado]** la protección brindada por la bioarmadura aumenta a (LI d8 / HI d6 / En d4+1).
+                ▶ **Rango 3 [Efecto aumentado]** la protección brindada por la bioarmadura aumenta a (LI d8 / HI d6 / En d4+1).
 
-                **Rango 6 [Efecto aumentado]** este valor aumenta aún más a (LI d8 / HI d6+1 / En d6)b.
+                ▶ **Rango 6 [Efecto aumentado]** este valor aumenta aún más a (LI d8 / HI d6+1 / En d6)b.
 
-                **Rango 9 [Dureza aumentada]** la armadura se trata como si tuviera dureza Bueno.
+                ▶ **Rango 9 [Dureza aumentada]** la armadura se trata como si tuviera dureza Bueno.
 
-                **Rango 12 [Efecto aumentado]** el valor de la armadura aumenta nuevamente a (LI 2d4 / HI 2d4 / En d8).
+                ▶ **Rango 12 [Efecto aumentado]** el valor de la armadura aumenta nuevamente a (LI 2d4 / HI 2d4 / En d8).
       bioweapon:
         attribute: CON
         cost: 3
@@ -115,13 +115,13 @@ items:
                 This bonus lasts until the character chooses not to maintain the bioweapon.
 
                 ### Rank Benefits:
-                **Rank 3 [Increased Damage]** the damage of the bioweapon increases by +1.
+                ▶ **Rank 3 [Increased Damage]** the damage of the bioweapon increases by +1.
 
-                **Rank 6 [Increased Damage]** it increases again (to a total of +2).
+                ▶ **Rank 6 [Increased Damage]** it increases again (to a total of +2).
 
-                **Rank 9 [Increased Damage]** all attacks made with the bioweapon are considered to deliver **Good damage**.
+                ▶ **Rank 9 [Increased Damage]** all attacks made with the bioweapon are considered to deliver **Good damage**.
 
-                **Rank 12 [Improved Damage]** it increases by another +1 (to a total of +3).
+                ▶ **Rank 12 [Improved Damage]** it increases by another +1 (to a total of +3).
           - es:
               name: Bioarma
               description: |-
@@ -146,13 +146,13 @@ items:
                 Esta bonificación dura hasta que Personaje decida no mantener el arma biológica.
 
                 ### Beneficios de Rango:
-                **Rango 3 [Daño aumentado]** el daño del arma biológica aumenta en +1.
+                ▶ **Rango 3 [Daño aumentado]** el daño del arma biológica aumenta en +1.
 
-                **Rango 6 [Daño aumentado]** aumenta nuevamente (a un total de +2).
+                ▶ **Rango 6 [Daño aumentado]** aumenta nuevamente (a un total de +2).
 
-                **Rango 9 [Daño aumentado]** se considera que todos los ataques realizados con el arma biológica causan **daño Bueno**.
+                ▶ **Rango 9 [Daño aumentado]** se considera que todos los ataques realizados con el arma biológica causan **daño Bueno**.
 
-                **Rango 12 [Daño mejorado]** aumenta en otro +1 (hasta un total de +3).
+                ▶ **Rango 12 [Daño mejorado]** aumenta en otro +1 (hasta un total de +3).
       control-metabolism:
         attribute: CON
         cost: 2
@@ -272,15 +272,15 @@ items:
                 Psionic healing imposes heavy strain on the body, so the skill can't be attempted more than once per hour, any attempt of using the skill more than once per hour will result in a level of exhaustion that cannot be recovered from until 24 hours have passed since the last attempt.
 
                 ### Rank Benefits
-                **Rank 4 [Treating Poison]**, a character may counteract the effect of poisons or drugs in his or her system before the end of their onset time, reducing the impact they may have. The degree of success acts as a bonus to the Constitution feat check required: **Ordinary:** –2 step bonus, **Good:** –3 step bonus, **Amazing:** –4 step bonus.
+                ▶ **Rank 4 [Treating Poison]**, a character may counteract the effect of poisons or drugs in his or her system before the end of their onset time, reducing the impact they may have. The degree of success acts as a bonus to the Constitution feat check required: **Ordinary:** –2 step bonus, **Good:** –3 step bonus, **Amazing:** –4 step bonus.
 
-                **Rank 6 [Healing Mortal Damage]**, a character becomes able to heal mortal damage. Skill check results change to: **Ordinary:** 2 wounds, **Good:** 3 wounds or 1 mortal, **Amazing:** 4 wounds or 2 mortals.
+                ▶ **Rank 6 [Healing Mortal Damage]**, a character becomes able to heal mortal damage. Skill check results change to: **Ordinary:** 2 wounds, **Good:** 3 wounds or 1 mortal, **Amazing:** 4 wounds or 2 mortals.
 
-                **Rank 8 [Improved Effect]**, a character's ability to heal improves further: **Ordinary:** 3 wounds or 1 mortal, **Good:** 4 wounds or 2 mortals, **Amazing:** 6 wounds or 3 mortals.
+                ▶ **Rank 8 [Improved Effect]**, a character's ability to heal improves further: **Ordinary:** 3 wounds or 1 mortal, **Good:** 4 wounds or 2 mortals, **Amazing:** 6 wounds or 3 mortals.
 
-                **Rank 8 [Laying On Hands]**, a character becomes able to heal damage in others. The subject to be healed must be in physical contact with the character using this ability.
+                ▶ **Rank 8 [Laying On Hands]**, a character becomes able to heal damage in others. The subject to be healed must be in physical contact with the character using this ability.
 
-                **Rank 12 [Master Healer]**, a character reduces the strain of psionic healing, the skill can be attempted once every 10 minutes without causing exhaustion. Additionally, the character can double the number of mortals healed at the cost of 1 additional psionic energy per mortal healed and one point of exhaustion on both healer and subject.
+                ▶ **Rank 12 [Master Healer]**, a character reduces the strain of psionic healing, the skill can be attempted once every 10 minutes without causing exhaustion. Additionally, the character can double the number of mortals healed at the cost of 1 additional psionic energy per mortal healed and one point of exhaustion on both healer and subject.
           - es:
               name: Sanar
               description: |-
@@ -303,15 +303,15 @@ items:
                 La curación psiónica impone una gran tensión en el cuerpo, por lo que la habilidad no se puede intentar más de una vez por hora; cualquier intento de usar la habilidad más de una vez por hora resultará en un nivel de agotamiento del que no se podrá recuperar hasta que hayan pasado 24 horas desde el último intento.
 
                 ### Beneficios de Rango
-                **Rango 4 [Tratamiento del Veneno]**, un Personaje puede contrarrestar el efecto de los venenos o drogas en su sistema antes de que finalice su tiempo de aparición, reduciendo el impacto que puedan tener. El grado de éxito actúa como una bonificación a la prueba de dote de Constitución requerida: **Ordinario:** –2 Bonificación de paso, **Bueno:** –3 Bonificación de paso, **Asombroso:** –4 Bonificación de paso.
+                ▶ **Rango 4 [Tratamiento del Veneno]**, un Personaje puede contrarrestar el efecto de los venenos o drogas en su sistema antes de que finalice su tiempo de aparición, reduciendo el impacto que puedan tener. El grado de éxito actúa como una bonificación a la prueba de dote de Constitución requerida: **Ordinario:** –2 Bonificación de paso, **Bueno:** –3 Bonificación de paso, **Asombroso:** –4 Bonificación de paso.
 
-                **Rango 6 [Curación del daño de Mortal]**, un Personaje puede curar el daño de Mortal. Los resultados de la prueba de habilidad cambian a: **Ordinario:** 2 heridas, **Bueno:** 3 heridas o 1 Mortal, **Asombroso:** 4 heridas o 2 mortales.
+                ▶ **Rango 6 [Curación del daño de Mortal]**, un Personaje puede curar el daño de Mortal. Los resultados de la prueba de habilidad cambian a: **Ordinario:** 2 heridas, **Bueno:** 3 heridas o 1 Mortal, **Asombroso:** 4 heridas o 2 mortales.
 
-                **Rango 8 [Efecto mejorado]**, la capacidad de curación de un Personaje mejora aún más: **Ordinario:** 3 heridas o 1 Mortal, **Bueno:** 4 heridas o 2 mortales, **Asombroso:** 6 heridas o 3 mortales.
+                ▶ **Rango 8 [Efecto mejorado]**, la capacidad de curación de un Personaje mejora aún más: **Ordinario:** 3 heridas o 1 Mortal, **Bueno:** 4 heridas o 2 mortales, **Asombroso:** 6 heridas o 3 mortales.
 
-                **Rango 8 [Imposición de manos]**, un Personaje se vuelve capaz de curar el daño de otros. El sujeto a curar debe estar en contacto Físico con el Personaje usando esta habilidad.
+                ▶ **Rango 8 [Imposición de manos]**, un Personaje se vuelve capaz de curar el daño de otros. El sujeto a curar debe estar en contacto Físico con el Personaje usando esta habilidad.
 
-                **Rango 12 [Master Healer]**, un Personaje reduce la tensión de la curación psiónica, la habilidad se puede intentar una vez cada 10 minutos sin causar agotamiento. Además, el Personaje puede duplicar el número de mortales curados a costa de 1 energía psiónica adicional por cada Mortal curado y un punto de agotamiento tanto para el sanador como para el sujeto.
+                ▶ **Rango 12 [Master Healer]**, un Personaje reduce la tensión de la curación psiónica, la habilidad se puede intentar una vez cada 10 minutos sin causar agotamiento. Además, el Personaje puede duplicar el número de mortales curados a costa de 1 energía psiónica adicional por cada Mortal curado y un punto de agotamiento tanto para el sanador como para el sujeto.
       morph:
         attribute: CON
         cost: 4
@@ -339,50 +339,50 @@ items:
 
                 ### Rank Benefits
                 #### Disguise (ranks 5, 7, 9, 12)
-                **Rank 5** – Facial disguise: +2 step penalty to Awareness checks when trying to recognize the character.
+                ▶ **Rank 5** – Facial disguise: +2 step penalty to Awareness checks when trying to recognize the character.
 
-                **Rank 7** – Limb‑length adaptation: alter limb length to aid impersonation.
+                ▶ **Rank 7** – Limb‑length adaptation: alter limb length to aid impersonation.
 
-                **Rank 9** – Body‑volume change: shrink or expand to fit unusually shaped spaces.
+                ▶ **Rank 9** – Body‑volume change: shrink or expand to fit unusually shaped spaces.
 
-                **Rank 12** – Improved disguise: +4 step penalty, can mimic a specific person.
+                ▶ **Rank 12** – Improved disguise: +4 step penalty, can mimic a specific person.
 
                 #### Impersonation (ranks 5, 7, 9)
-                **Rank 5** – Voice mimicry: copy another's speech patterns. -1 step bonus to Entertainment-Act checks.
+                ▶ **Rank 5** – Voice mimicry: copy another's speech patterns. -1 step bonus to Entertainment-Act checks.
 
-                **Rank 7** – Mannerism replication: an additional -1 step bonus to Entertainment-Act checks due to the ability of freely replicating the subject's mannerisms.
+                ▶ **Rank 7** – Mannerism replication: an additional -1 step bonus to Entertainment-Act checks due to the ability of freely replicating the subject's mannerisms.
 
-                **Rank 9** – Full persona adoption: combine voice, mannerisms, and appearance for a convincing impersonation. Due to the ability to completely separate his mental state from the visible persona, the character gains an additional -1 step bonus to Interaction and Entertainment-Act checks.
+                ▶ **Rank 9** – Full persona adoption: combine voice, mannerisms, and appearance for a convincing impersonation. Due to the ability to completely separate his mental state from the visible persona, the character gains an additional -1 step bonus to Interaction and Entertainment-Act checks.
 
                 #### Mechanical Alteration (ranks 5, 7, 9, 12)
-                **Rank 5** – Increase flexibility: +0.5 m reach for a specific limb.
+                ▶ **Rank 5** – Increase flexibility: +0.5 m reach for a specific limb.
 
-                **Rank 7** – Reduce stun damage taken from blunt attacks and secondary damage by 1.
+                ▶ **Rank 7** – Reduce stun damage taken from blunt attacks and secondary damage by 1.
 
-                **Rank 9** – Soft landing: halve damage from falling.
+                ▶ **Rank 9** – Soft landing: halve damage from falling.
 
-                **Rank 12** – Reduce stun damage taken from blunt attacks and secondary damage by 2.
+                ▶ **Rank 12** – Reduce stun damage taken from blunt attacks and secondary damage by 2.
 
                 #### Small‑Space Passage (Ranks 5, 7, 9)
-                **Rank 5** – Squeeze through cracks (up to 30 cm wide).
+                ▶ **Rank 5** – Squeeze through cracks (up to 30 cm wide).
 
-                **Rank 7** – Pass through tight spaces as if you have no bones up to 25cm diameter.
+                ▶ **Rank 7** – Pass through tight spaces as if you have no bones up to 25cm diameter.
 
-                **Rank 9** – Able to pass a arm through a 1 cm wide crack or space, allowing to pass the arm under a door and combine with elongate arms reach the lock from the inside.
+                ▶ **Rank 9** – Able to pass a arm through a 1 cm wide crack or space, allowing to pass the arm under a door and combine with elongate arms reach the lock from the inside.
 
                 #### Reach & Height (Ranks 5, 7, 9)
-                **Rank 5** – Elongate fingers: +0.5 m reach.
+                ▶ **Rank 5** – Elongate fingers: +0.5 m reach.
 
-                **Rank 7** – Elongate arms: +1 m reach.
+                ▶ **Rank 7** – Elongate arms: +1 m reach.
 
-                **Rank 9** – Elongate legs: +1 m height.
+                ▶ **Rank 9** – Elongate legs: +1 m height.
 
                 #### Contortion and Compression (Ranks 5, 7, 9)
-                **Rank 5** – Fit into a container of similar "volume" as your body. The volume of an average human male can fit in a 50cm side cube with a limited degree of movement.
+                ▶ **Rank 5** – Fit into a container of similar "volume" as your body. The volume of an average human male can fit in a 50cm side cube with a limited degree of movement.
 
-                **Rank 7** – Fit into a container of 3/4 the volume of your body, movement is not hindered.
+                ▶ **Rank 7** – Fit into a container of 3/4 the volume of your body, movement is not hindered.
 
-                **Rank 9** – Fit into a container of 1/2 the volume of your body, movement is not hindered.
+                ▶ **Rank 9** – Fit into a container of 1/2 the volume of your body, movement is not hindered.
           - es:
               name: Metamorfosis
               description: |-
@@ -399,50 +399,50 @@ items:
 
                 ### Beneficios de Rango
                 #### Disfraz (Rangos 5, 7, 9, 12)
-                **Rango 5** – Disfraz facial: +2 controles de Penalización de paso a Alerta al intentar reconocer el Personaje.
+                ▶ **Rango 5** – Disfraz facial: +2 controles de Penalización de paso a Alerta al intentar reconocer el Personaje.
 
-                **Rango 7** – Adaptación de la longitud de las extremidades: modifique la longitud de las extremidades para facilitar la suplantación.
+                ▶ **Rango 7** – Adaptación de la longitud de las extremidades: modifique la longitud de las extremidades para facilitar la suplantación.
 
-                **Rango 9** – Cambio de volumen corporal: encoge o expande para adaptarse a espacios con formas inusuales.
+                ▶ **Rango 9** – Cambio de volumen corporal: encoge o expande para adaptarse a espacios con formas inusuales.
 
-                **Rango 12** – Disfraz mejorado: +4 Penalización de paso, puede imitar a una persona específica.
+                ▶ **Rango 12** – Disfraz mejorado: +4 Penalización de paso, puede imitar a una persona específica.
 
                 #### Suplantación (Rangos 5, 7, 9)
-                **Rango 5** – Mimetismo de voz: copia los patrones de habla de otra persona. -1 Bonificación de paso a las comprobaciones de la Ley de Entretenimiento.
+                ▶ **Rango 5** – Mimetismo de voz: copia los patrones de habla de otra persona. -1 Bonificación de paso a las comprobaciones de la Ley de Entretenimiento.
 
-                **Rango 7** – Replicación de manierismos: -1 Bonificación de paso adicional a las pruebas de Ley de entretenimiento debido a la capacidad de replicar libremente los manierismos del sujeto.
+                ▶ **Rango 7** – Replicación de manierismos: un -1 Bonificación de paso adicional a las pruebas de Ley de entretenimiento debido a la capacidad de replicar libremente los manierismos del sujeto.
 
-                **Rango 9** – Adopción total de la persona: combina voz, gestos y apariencia para una personificación convincente. Debido a la capacidad de separar completamente su estado Mental de la persona visible, el Personaje gana -1 Bonificación de paso adicional a Interacción y controles de Ley de Entretenimiento.
+                ▶ **Rango 9** – Adopción total de la persona: combina voz, gestos y apariencia para una personificación convincente. Debido a la capacidad de separar completamente su estado Mental de la persona visible, el Personaje gana -1 Bonificación de paso adicional a Interacción y controles de Ley de Entretenimiento.
 
                 #### Alteración mecánica (Rangos 5, 7, 9, 12)
-                **Rango 5** – Aumenta la flexibilidad: +0,5 m de alcance para una extremidad específica.
+                ▶ **Rango 5** – Aumenta la flexibilidad: +0,5 m de alcance para una extremidad específica.
 
-                **Rango 7** – Reduce en 1 el daño Aturdimiento recibido por ataques Arma contundente y el daño secundario.
+                ▶ **Rango 7** – Reduce en 1 el daño de Aturdimiento recibido por ataques de Arma contundente y el daño secundario.
 
-                **Rango 9** – Aterrizaje suave: reduce a la mitad el daño por caída.
+                ▶ **Rango 9** – Aterrizaje suave: reduce a la mitad el daño por caída.
 
-                **Rango 12** – Reduce el daño Aturdimiento recibido de los ataques Arma contundente y el daño secundario en 2.
+                ▶ **Rango 12** – Reduce en 2 el daño de Aturdimiento recibido por ataques de Arma contundente y el daño secundario.
 
                 #### Pasaje para espacios pequeños (Rangos 5, 7, 9)
-                **Rango 5** – Exprimir a través de grietas (hasta 30 cm de ancho).
+                ▶ **Rango 5** – Exprimir a través de grietas (hasta 30 cm de ancho).
 
-                **Rango 7** – Pasa por espacios reducidos como si no tuvieras huesos de hasta 25 cm de diámetro.
+                ▶ **Rango 7** – Pasa por espacios reducidos como si no tuvieras huesos de hasta 25 cm de diámetro.
 
-                **Rango 9** – Capaz de pasar un brazo a través de una grieta o espacio de 1 cm de ancho, permitiendo pasar el brazo debajo de una puerta y combinado con brazos alargados llegar a la cerradura desde el interior.
+                ▶ **Rango 9** – Capaz de pasar un brazo a través de una grieta o espacio de 1 cm de ancho, lo que permite pasar el brazo por debajo de una puerta y, combinado con brazos alargados, llegar a la cerradura desde el interior.
 
                 #### Alcance y altura (Rangos 5, 7, 9)
-                **Rango 5** – Dedos alargados: +0,5 m de alcance.
+                ▶ **Rango 5** – Dedos alargados: +0,5 m de alcance.
 
-                **Rango 7** – Brazos alargados: +1m de alcance.
+                ▶ **Rango 7** – Brazos alargados: +1m de alcance.
 
-                **Rango 9** – Patas alargadas: +1m de altura.
+                ▶ **Rango 9** – Patas alargadas: +1m de altura.
 
                 #### Contorsión y Compresión (Rangos 5, 7, 9)
-                **Rango 5** – Colóquelo en un recipiente de "volumen" similar al de su cuerpo. El volumen de un hombre humano promedio puede caber en un cubo de 50 cm de lado con un grado limitado de movimiento.
+                ▶ **Rango 5** – Colóquelo en un recipiente de "volumen" similar al de su cuerpo. El volumen de un hombre humano promedio puede caber en un cubo de 50 cm de lado con un grado limitado de movimiento.
 
-                **Rango 7** – Cabe en un recipiente de 3/4 del volumen de su cuerpo, no obstaculiza el movimiento.
+                ▶ **Rango 7** – Cabe en un recipiente de 3/4 del volumen de su cuerpo, no se obstaculiza el movimiento.
 
-                **Rango 9** – Cabe en un recipiente de la mitad del volumen de su cuerpo, no se obstaculiza el movimiento.
+                ▶ **Rango 9** – Cabe en un recipiente de la mitad del volumen de su cuerpo, no se obstaculiza el movimiento.
       rejuvenate:
         attribute: CON
         cost: 3
@@ -479,16 +479,16 @@ items:
 
                 ### Rank Benefits:
 
-                **Rank 3 [Improved Effect]** the effect of a successful skill roll improves as follows:
+                ▶ **Rank 3 [Improved Effect]** the effect of a successful skill roll improves as follows:
                 - **Ordinary:** 4 points
                 - **Good:** 6 points
                 - **Amazing:** 8 points
 
-                **Rank 3 [Treating Disease]** a character may counteract the effect of disease in his or her system. The result of the skill check determines how much the disease is reduced. The disease is reduced by one grade on **Good** success, and 2 grades on an **Amazing** success. An **Ordinary** success is not enough to help recover from the disease, but it eliminates all penalties the disease may be causing for a day. Only one successful check per day may be made to treat a disease.
+                ▶ **Rank 3 [Treating Disease]** a character may counteract the effect of disease in his or her system. The result of the skill check determines how much the disease is reduced. The disease is reduced by one grade on **Good** success, and 2 grades on an **Amazing** success. An **Ordinary** success is not enough to help recover from the disease, but it eliminates all penalties the disease may be causing for a day. Only one successful check per day may be made to treat a disease.
 
-                **Rank 6 [Laying On Hands]** a character becomes able to heal fatigue or stun damage, as well as disease, in others. The subject to be healed must be in physical contact with the character using this ability.
+                ▶ **Rank 6 [Laying On Hands]** a character becomes able to heal fatigue or stun damage, as well as disease, in others. The subject to be healed must be in physical contact with the character using this ability.
 
-                **Rank 12 [Two Recipients]** a character using rejuvenate may affect two individuals with a single use of the skill. This can be on two other people or on the character and one other person. Each gains whatever benefit is determined by the Biokinesis-rejuvenate skill check.
+                ▶ **Rank 12 [Two Recipients]** a character using rejuvenate may affect two individuals with a single use of the skill. This can be on two other people or on the character and one other person. Each gains whatever benefit is determined by the Biokinesis-rejuvenate skill check.
           - es:
               name: Rejuvenecer
               description: |-
@@ -509,16 +509,16 @@ items:
 
                 ### Beneficios de Rango:
 
-                **Rango 3 [Efecto mejorado]** el efecto de una tirada de habilidad exitosa mejora de la siguiente manera:
+                ▶ **Rango 3 [Efecto mejorado]** el efecto de una tirada de habilidad exitosa mejora de la siguiente manera:
                 - **Ordinario:** 4 puntos
                 - **Bueno:** 6 puntos
                 - **Asombroso:** 8 puntos
 
-                **Rango 3 [Tratamiento de enfermedades]** un Personaje puede contrarrestar el efecto de la enfermedad en su sistema. El resultado de la prueba de habilidad determina cuánto se reduce la enfermedad. La enfermedad se reduce en un grado si se logra **Bueno** y en 2 grados si se logra **Asombroso**. Un éxito **Ordinario** no es suficiente para ayudar a recuperarse de la enfermedad, pero elimina todas las penalizaciones que la enfermedad pueda estar causando durante un día. Sólo se podrá realizar un control exitoso por día para tratar una enfermedad.
+                ▶ **Rango 3 [Tratamiento de enfermedades]** un Personaje puede contrarrestar el efecto de la enfermedad en su sistema. El resultado de la prueba de habilidad determina cuánto se reduce la enfermedad. La enfermedad se reduce en un grado si se logra **Bueno** y en 2 grados si se logra **Asombroso**. Un éxito **Ordinario** no es suficiente para ayudar a recuperarse de la enfermedad, pero elimina todas las penalizaciones que la enfermedad pueda estar causando durante un día. Sólo se podrá realizar un control exitoso por día para tratar una enfermedad.
 
-                **Rango 6 [Imposición de manos]** un Personaje se vuelve capaz de curar daños Fatiga o Aturdimiento, así como enfermedades, en otros. El sujeto a curar debe estar en contacto Físico con el Personaje usando esta habilidad.
+                ▶ **Rango 6 [Imposición de manos]** un Personaje se vuelve capaz de curar daños Fatiga o Aturdimiento, así como enfermedades, en otros. El sujeto a curar debe estar en contacto Físico con el Personaje usando esta habilidad.
 
-                **Rango 12 [Dos destinatarios]** un Personaje que usa rejuvenecer puede afectar a dos personas con un solo uso de la habilidad. Esto puede ser en dos personas Otros o en Personaje y una persona Otros. Cada uno obtiene el beneficio que determine la prueba de habilidad de rejuvenecimiento de Biokinesis.
+                ▶ **Rango 12 [Dos destinatarios]** un Personaje que usa rejuvenecer puede afectar a dos personas con un solo uso de la habilidad. Esto puede ser en dos personas Otros o en Personaje y una persona Otros. Cada uno obtiene el beneficio que determine la prueba de habilidad de rejuvenecimiento de Biokinesis.
       clamber:
         attribute: CON
         cost: 2
@@ -554,11 +554,11 @@ items:
                 reaching his or her destination.
 
                 ### Rank Benefits
-                **Rank 4 [Increased Distance]** the distance the user can travel while climbing or running across inverted surfaces is doubled.
+                ▶ **Rank 4 [Increased Distance]** the distance the user can travel while climbing or running across inverted surfaces is doubled.
 
-                **Rank 8 [Increased Distance]** the distance is three times the base rate.
+                ▶ **Rank 8 [Increased Distance]** the distance is three times the base rate.
 
-                **Rank 12 [Increased Distance]** the distance is four times the base rate.
+                ▶ **Rank 12 [Increased Distance]** the distance is four times the base rate.
           - es:
               description: |-
                 En el pasado lejano, ciertos t'sa psions desarrollaron la **trepa**
@@ -579,11 +579,11 @@ items:
                 llegando a su destino.
 
                 ### Beneficios de Rango
-                **Rango 4 [Distancia aumentada]** la distancia que el usuario puede recorrer mientras trepa o corre por superficies invertidas se duplica.
+                ▶ **Rango 4 [Distancia aumentada]** la distancia que el usuario puede recorrer mientras trepa o corre por superficies invertidas se duplica.
 
-                **Rango 8 [Distancia aumentada]** la distancia es tres veces la tarifa base.
+                ▶ **Rango 8 [Distancia aumentada]** la distancia es tres veces la tarifa base.
 
-                **Rango 12 [Distancia aumentada]** la distancia es cuatro veces la tarifa base.
+                ▶ **Rango 12 [Distancia aumentada]** la distancia es cuatro veces la tarifa base.
               name: Trepado
       shatter:
         attribute: CON
@@ -626,11 +626,11 @@ items:
                 - **Amazing:** +3 damage
 
                 ### Rank Benefits
-                **Rank 6 [Increased Quality]** claws/spurs/horns attacks are now considered good quality.
+                ▶ **Rank 6 [Increased Quality]** claws/spurs/horns attacks are now considered good quality.
 
-                **Rank 8 [Improved Destabilization]** From this onwards the good success on attacks are enough to destabilize an armor. This effect now works on good quality armors as well.
+                ▶ **Rank 8 [Improved Destabilization]** From this onwards the good success on attacks are enough to destabilize an armor. This effect now works on good quality armors as well.
 
-                **Rank 12 [Armor Degradation]** On an amazing success the armor integrity is now so compromised that its toughness is also reduced, from Amazing to Good, from Good to Ordinary, Ordinary armor stop protecting until the effect ends.
+                ▶ **Rank 12 [Armor Degradation]** On an amazing success the armor integrity is now so compromised that its toughness is also reduced, from Amazing to Good, from Good to Ordinary, Ordinary armor stop protecting until the effect ends.
           - es:
               description: |-
                 La historia de Weren habla de un clan que usó armaduras para conquistar a los clanes Otros.
@@ -657,11 +657,11 @@ items:
                 - **Asombroso:** +3 de daño
 
                 ### Beneficios de Rango
-                **Rango 6 [Calidad aumentada]** Los ataques de garras, espuelas y cuernos ahora se consideran de calidad Bueno.
+                ▶ **Rango 6 [Calidad aumentada]** los ataques de garras/espuelas/cuernos ahora se consideran calidad Bueno.
 
-                **Rango 8 [Desestabilización mejorada]** A partir de ahora, el éxito de los ataques de Bueno es suficiente para desestabilizar una armadura. Este efecto ahora también funciona en armaduras de calidad Bueno.
+                ▶ **Rango 8 [Desestabilización mejorada]** A partir de ahora, el éxito de los ataques de Bueno es suficiente para desestabilizar una armadura. Este efecto ahora también funciona en armaduras de calidad Bueno.
 
-                **Rango 12 [Degradación de armadura]** Con un éxito de Asombroso, la integridad de la armadura ahora está tan comprometida que su dureza también se reduce, de Asombroso a Bueno, de Bueno a Ordinario, la armadura Ordinario deja de proteger hasta que finaliza el efecto.
+                ▶ **Rango 12 [Degradación de armadura]** Con un éxito de Asombroso, la integridad de la armadura ahora está tan comprometida que su resistencia también se reduce, de Asombroso a Bueno, de Bueno a Ordinario, la armadura Ordinario deja de proteger hasta que finaliza el efecto.
               name: Destrozar
       visual-enhancement:
         attribute: CON
@@ -688,25 +688,25 @@ items:
 
                 **Rank Benefits:**
 
-                **Rank 3 [Infrared Pit Detection]**, modeled after the loreal pits of vipers, the character integrates thermal imaging into their visual field. Specialized heat-sensing pits may visibly open near the tear ducts or temples. The character can trace heat signatures, detect thermal footprints, and see living targets through low-density barriers (such as thin walls or foliage).
+                ▶ **Rank 3 [Infrared Pit Detection]**, modeled after the loreal pits of vipers, the character integrates thermal imaging into their visual field. Specialized heat-sensing pits may visibly open near the tear ducts or temples. The character can trace heat signatures, detect thermal footprints, and see living targets through low-density barriers (such as thin walls or foliage).
 
-                **Rank 6 [Foveal Resolution]**, utilizing the dual-fovea structure and deep-pit anatomy found in raptors like eagles, the character’s eyes function as an integrated telescopic scope. The character ignores the first +1 step penalty for range (Medium or Long). This benefit does **not** stack with scopes or binoculars. Additionally, the high-resolution clarity allows the character to detect involuntary microexpressions, granting a -1 step bonus to [[awareness—perception]] or [[interaction—empathy]] checks made to discern lies or emotional states. And [[investigation—search]] checks.
+                ▶ **Rank 6 [Foveal Resolution]**, utilizing the dual-fovea structure and deep-pit anatomy found in raptors like eagles, the character’s eyes function as an integrated telescopic scope. The character ignores the first +1 step penalty for range (Medium or Long). This benefit does **not** stack with scopes or binoculars. Additionally, the high-resolution clarity allows the character to detect involuntary microexpressions, granting a -1 step bonus to [[awareness—perception]] or [[interaction—empathy]] checks made to discern lies or emotional states. And [[investigation—search]] checks.
 
-                **Rank 8 [Wide-Spectrum Sensorium]**, replicating the advanced eyes of the mantis shrimp, the character’s eyes become visibly faceted and compound. They can simultaneously perceive polarized light, ultraviolet radiation, and active electromagnetic emissions (radio waves and sensor frequencies). This allows them to "see" active transmittors, like radio equipment, active sensors.
+                ▶ **Rank 8 [Wide-Spectrum Sensorium]**, replicating the advanced eyes of the mantis shrimp, the character’s eyes become visibly faceted and compound. They can simultaneously perceive polarized light, ultraviolet radiation, and active electromagnetic emissions (radio waves and sensor frequencies). This allows them to "see" active transmittors, like radio equipment, active sensors.
 
-                **Rank 12 [Cortical Integration]**, the character's is able to seamlessly morph this visual organs making impossible to notice them at plain sight, eliminating any social penalty. Additionally, the character can switch between modes as an action.
+                ▶ **Rank 12 [Cortical Integration]**, the character's is able to seamlessly morph this visual organs making impossible to notice them at plain sight, eliminating any social penalty. Additionally, the character can switch between modes as an action.
           - es:
               name: Mejora Visual
               description: |-
                 Al remodelar psiónicamente sus órganos visuales y reescribir las vías neuronales de la corteza visual, el Personaje puede cambiar su visión a través de diferentes bandas del espectro electromagnético y mapear entornos estructurales a través de firmas biológicas.
 
-                Para activar este poder, el Personaje realiza una prueba de habilidad. Mientras dure el poder, el Personaje gana **visión en condiciones de poca luz** (equivalente al *tapetum lucidum* de un felino), lo que les permite ver en una oscuridad casi total como si fuera el crepúsculo. Además, el Personaje recibe un Bonificación de paso en todas las comprobaciones Alerta-Percepción que involucran la vista (normal o aumentada) según el nivel de éxito:
+                Para activar este poder, el Personaje realiza una prueba de habilidad. Mientras dura el poder, el Personaje gana **visión en condiciones de poca luz** (equivalente al *tapetum lucidum* de un felino), lo que les permite ver en una oscuridad casi total como si fuera el crepúsculo. Además, el Personaje recibe un Bonificación de paso en todas las comprobaciones Alerta-Percepción que involucran la vista (normal o aumentada) según el nivel de éxito:
 
                 * **Éxito de Ordinario:** Otorga un -1 Bonificación de paso.
                 * **Éxito de Bueno:** Otorga un -2 Bonificación de paso.
                 * **Éxito de Asombroso:** Otorga un -3 Bonificación de paso.
 
-                **Efectos secundarios fisiológicos:** La activación de este poder provoca cambios biológicos visibles, a menudo perturbadores. Como mínimo, las pupilas del Personaje se dilatan por completo y una membrana reflectante cubre el iris, lo que hace que los ojos brillen con la luz ambiental. Los modos específicos (ver a continuación) pueden hacer que los ojos se vuelvan facetados, multilentes o que se abran fosas sensoriales en El Rostro, lo que puede afectar las interacciones de Social a discreción de Director de Juego.
+                **Efectos secundarios fisiológicos:** La activación de este poder provoca cambios biológicos visibles y a menudo perturbadores. Como mínimo, las pupilas del Personaje se dilatan por completo y una membrana reflectante cubre el iris, lo que hace que los ojos brillen con la luz ambiental. Los modos específicos (ver a continuación) pueden hacer que los ojos se vuelvan facetados, multilentes o que se abran fosas sensoriales en El Rostro, lo que puede afectar las interacciones de Social a discreción de Director de Juego.
 
                 **Limitación operativa:** Solo se puede activar un modo de visión adicional en un momento dado. La biología ocular cambiante es mutuamente excluyente; Si los ojos están actualmente modificados para la detección de hoyos por infrarrojos, no pueden utilizar simultáneamente la estructura compuesta como los del camarón mantis.  El cambio entre modos activos requiere una nueva activación de la alimentación.
 
@@ -714,13 +714,13 @@ items:
 
                 **Beneficios de Rango:**
 
-                **Rango 3 [Detección de hoyos por infrarrojos]**, modelado a partir de los hoyos reales de las víboras, el Personaje integra imágenes térmicas en su campo visual. Es posible que se abran visiblemente fosas especializadas sensibles al calor cerca de los conductos lagrimales o las sienes. El Personaje puede rastrear firmas de calor, detectar huellas térmicas y ver objetivos vivos a través de barreras de baja densidad (como paredes delgadas o follaje).
+                ▶ **Rango 3 [Detección de hoyos por infrarrojos]**, modelado a partir de los hoyos reales de las víboras, el Personaje integra imágenes térmicas en su campo visual. Es posible que se abran visiblemente fosas especializadas sensibles al calor cerca de los conductos lagrimales o las sienes. El Personaje puede rastrear firmas de calor, detectar huellas térmicas y ver objetivos vivos a través de barreras de baja densidad (como paredes delgadas o follaje).
 
-                **Rango 6 [Resolución foveal]**, utilizando la estructura de fóvea dual y la anatomía profunda que se encuentran en aves rapaces como las águilas, los ojos del Personaje funcionan como un telescopio telescópico integrado. El Personaje ignora el primer +1 Penalización de paso para alcance (Medio o Largo). Este beneficio **no** se acumula con telescopios o binoculares. Además, la claridad de alta resolución permite que Personaje detecte microexpresiones involuntarias, otorgando un -1 Bonificación de paso a [[Alerta—Percepción]] o [[Interacción—empathy]] controles realizados para discernir mentiras o estados emocionales. Y [[Investigar—search]] comprobaciones.
+                ▶ **Rango 6 [Resolución foveal]**, utilizando la estructura de fóvea dual y la anatomía profunda que se encuentran en aves rapaces como las águilas, los ojos del Personaje funcionan como un telescopio telescópico integrado. El Personaje ignora el primer +1 Penalización de paso para alcance (Medio o Largo). Este beneficio **no** se acumula con telescopios o binoculares. Además, la claridad de alta resolución permite que Personaje detecte microexpresiones involuntarias, otorgando un -1 Bonificación de paso a [[Alerta—Percepción]] o [[Interacción—empathy]] controles realizados para discernir mentiras o estados emocionales. Y [[Investigar—search]] comprobaciones.
 
-                **Rango 8 [Sensor de amplio espectro]**, que replica los ojos avanzados del camarón mantis, los ojos del Personaje se vuelven visiblemente facetados y compuestos. Pueden percibir simultáneamente luz polarizada, radiación ultravioleta y emisiones electromagnéticas activas (ondas de radio y frecuencias de sensores). Esto les permite "ver" transmisores activos, como equipos de radio, sensores activos.
+                ▶ **Rango 8 [Sensor de amplio espectro]**, que replica los ojos avanzados del camarón mantis, los ojos del Personaje se vuelven visiblemente facetados y compuestos. Pueden percibir simultáneamente luz polarizada, radiación ultravioleta y emisiones electromagnéticas activas (ondas de radio y frecuencias de sensores). Esto les permite "ver" transmisores activos, como equipos de radio, sensores activos.
 
-                **Rango 12 [Integración cortical]**, el Personaje es capaz de transformar perfectamente estos órganos visuales haciendo imposible notarlos a simple vista, eliminando cualquier penalización de Social. Además, el Personaje puede cambiar entre modos como una acción.
+                ▶ **Rango 12 [Integración cortical]**, el Personaje es capaz de transformar perfectamente estos órganos visuales haciendo imposible notarlos a simple vista, eliminando cualquier penalización por Social. Además, el Personaje puede cambiar entre modos como una acción.
         rank_benefits:
           - rank: 3
             title: Infrared Pit Detection
@@ -754,13 +754,13 @@ items:
                 The effect lasts until the end of the next round.
 
                 ### Rank Benefits
-                **Rank 6 [Symbiotic Absorption]**, the psion can choose to convert the siphoned energy into raw regenerative material. Instead of taking the step bonus for themselves, the psion can heal:
+                ▶ **Rank 6 [Symbiotic Absorption]**, the psion can choose to convert the siphoned energy into raw regenerative material. Instead of taking the step bonus for themselves, the psion can heal:
                 - **Good:** 2 wounds
                 - **Amazing:** 3 wounds
 
-                **Rank 9 [Channel Vitality]**, the psion can use this power to restore vitality to an ally instead of the psion. Both the recipient and the donor must be adjacent to the psion when the power is activated.
+                ▶ **Rank 9 [Channel Vitality]**, the psion can use this power to restore vitality to an ally instead of the psion. Both the recipient and the donor must be adjacent to the psion when the power is activated.
 
-                **Rank 12 [Systemic Overdrive]**, the siphoning becomes so efficient that the psion can even use the energy to heal mortal damage:
+                ▶ **Rank 12 [Systemic Overdrive]**, the siphoning becomes so efficient that the psion can even use the energy to heal mortal damage:
                 - **Ordinary:** 1 wound
                 - **Good:** 2 wounds or 1 mortal
                 - **Amazing:** 4 wounds or 2 mortals
@@ -781,13 +781,13 @@ items:
                 El efecto dura hasta el final de la siguiente ronda.
 
                 ### Beneficios de Rango
-                **Rango 6 [Absorción simbiótica]**, el psion puede optar por convertir la energía desviada en material regenerativo en bruto. En lugar de tomar Bonificación de paso usted mismo, Psion puede curar:
+                ▶ **Rango 6 [Absorción simbiótica]**, el psion puede optar por convertir la energía desviada en material regenerativo en bruto. En lugar de tomar Bonificación de paso usted mismo, Psion puede curar:
                 - **Bueno:** 2 heridas
                 - **Asombroso:** 3 heridas
 
-                **Rango 9 [Channel Vitality]**, el psion puede usar este poder para restaurar la vitalidad de un aliado en lugar del psion. Tanto el receptor como el donante deben estar adyacentes al psion cuando se activa el poder.
+                ▶ **Rango 9 [Channel Vitality]**, el psion puede usar este poder para restaurar la vitalidad de un aliado en lugar del psion. Tanto el receptor como el donante deben estar adyacentes al psion cuando se activa el poder.
 
-                **Rango 12 [Systemic Overdrive]**, el sifón se vuelve tan eficiente que el psion puede incluso usar la energía para curar el daño de Mortal:
+                ▶ **Rango 12 [Systemic Overdrive]**, el sifón se vuelve tan eficiente que el psion puede incluso usar la energía para curar el daño de Mortal:
                 - **Ordinario:** 1 Herida
                 - **Bueno:** 2 heridas o 1 Mortal
                 - **Asombroso:** 4 heridas o 2 mortales
@@ -849,9 +849,11 @@ items:
                 For purposes of using this skill, “battle” is defined as any situation in which the character has made an action check in the same round he or she uses the battle mind skill.
 
                 ### Rank Benefits
-                - **Rank 4 [Increased Effect]** whenever you are allowed an action check, you are also allowed to make a [[ESP-Battle Mind]] check to activate this power and gain its benefits to the first round. This check consumes one of your actions for the round, unless the result is amazing, then it doesn't cost an action. 
-                - **Rank 8 [Move Like Water]** the character employing this ability gains a temporary last resort point, which he or she must use before the ability’s duration ends or lose it. This point can only be used to offset damage.
-                - **Rank 12 [Unerring Accuracy]** the character gains a temporary last resort point, which must be used before the ability’s duration ends or it becomes lost. This point can only be used to increase the success of an attack made by the character using this ability.
+                ▶ **Rank 4 [Increased Effect]** whenever you are allowed an action check, you are also allowed to make a [[ESP-Battle Mind]] check to activate this power and gain its benefits to the first round. This check consumes one of your actions for the round, unless the result is amazing, then it doesn't cost an action. 
+
+                ▶ **Rank 8 [Move Like Water]** the character employing this ability gains a temporary last resort point, which he or she must use before the ability’s duration ends or lose it. This point can only be used to offset damage.
+
+                ▶ **Rank 12 [Unerring Accuracy]** the character gains a temporary last resort point, which must be used before the ability’s duration ends or it becomes lost. This point can only be used to increase the success of an attack made by the character using this ability.
           - es:
               name: Mente de Batalla
               description: |-
@@ -866,9 +868,11 @@ items:
                 A los efectos del uso de esta habilidad, “batalla” se define como cualquier situación en la que Personaje haya realizado un Tirada de Acción en la misma ronda en la que usa la habilidad mental de batalla.
 
                 ### Beneficios de Rango
-                - **Rango 4 [Efecto aumentado]** siempre que se te permita un Tirada de Acción, también puedes realizar una prueba de [[ESP-Battle Mind]] para activar este poder y obtener sus beneficios en la primera ronda. Esta prueba consume una de tus acciones de la ronda, a menos que el resultado sea Asombroso, entonces no cuesta una acción. 
-                - **Rango 8 [Move Like Water]** el Personaje que emplea esta habilidad gana un punto Último Recurso temporal, que debe usar antes de que finalice la duración de la habilidad o la pierda. Este punto sólo se puede utilizar para compensar el daño.
-                - **Rango 12 [Precisión infalible]** el Personaje gana un punto Último Recurso temporal, que debe usarse antes de que finalice la duración de la habilidad o se pierda. Este punto sólo puede usarse para aumentar el éxito de un ataque realizado por Personaje usando esta habilidad.
+                ▶ **Rango 4 [Efecto aumentado]** siempre que se te permita un Tirada de Acción, también puedes realizar una prueba de [[ESP-Battle Mind]] para activar este poder y obtener sus beneficios en la primera ronda. Esta prueba consume una de tus acciones de la ronda, a menos que el resultado sea Asombroso, entonces no cuesta una acción.
+
+                ▶ **Rango 8 [Move Like Water]** el Personaje que emplea esta habilidad gana un punto Último Recurso temporal, que debe usar antes de que termine la duración de la habilidad o la pierda. Este punto sólo se puede utilizar para compensar el daño.
+
+                ▶ **Rango 12 [Precisión infalible]** el Personaje gana un punto Último Recurso temporal, que debe usarse antes de que finalice la duración de la habilidad o se pierda. Este punto sólo puede usarse para aumentar el éxito de un ataque realizado por Personaje usando esta habilidad.
       dream-hunt:
         attribute: INT
         cost: 3
@@ -906,13 +910,13 @@ items:
 
                 ### Rank Benefits
 
-                **Rank 3 [Improved Accuracy]:** the psion is able to narrow down the time the prey will be at a given locale to within 3 hours.
+                ▶ **Rank 3 [Improved Accuracy]:** the psion is able to narrow down the time the prey will be at a given locale to within 3 hours.
 
-                **Rank 6 [Improved Accuracy]:** pinpointing improved: Ordinary 500m; Good 100m; Amazing 50m.
+                ▶ **Rank 6 [Improved Accuracy]:** pinpointing improved: Ordinary 500m; Good 100m; Amazing 50m.
 
-                **Rank 9 [Improved Timing]:** the psion can determine when the prey will be at a particular location to within 30 minutes.
+                ▶ **Rank 9 [Improved Timing]:** the psion can determine when the prey will be at a particular location to within 30 minutes.
 
-                **Rank 12 [Improved Accuracy]:** pinpointing improved: Ordinary 100m; Good 50m; Amazing 10m.
+                ▶ **Rank 12 [Improved Accuracy]:** pinpointing improved: Ordinary 100m; Good 50m; Amazing 10m.
           - es:
               name: Caza Onírica
               description: |-
@@ -934,13 +938,13 @@ items:
 
                 ### Beneficios de Rango
 
-                **Rango 3 [Precisión mejorada]:** el psion puede reducir el tiempo que la presa estará en un lugar determinado a 3 horas.
+                ▶ **Rango 3 (Precisión mejorada):** el psion puede reducir el tiempo que la presa estará en un lugar determinado a 3 horas.
 
-                **Rango 6 [Precisión mejorada]:** localización mejorada: Ordinario 500m; Bueno 100m; Asombroso 50m.
+                ▶ **Rango 6 (Precisión mejorada):** localización mejorada: Ordinario 500m; Bueno 100m; Asombroso 50m.
 
-                **Rango 9 [Tiempo mejorado]:** el psion puede determinar cuándo estará la presa en un lugar particular en un plazo de 30 minutos.
+                ▶ **Rango 9 (Tiempo mejorado):** el psion puede determinar cuándo estará la presa en un lugar particular en un plazo de 30 minutos.
 
-                **Rango 12 [Precisión mejorada]:** localización mejorada: Ordinario 100m; Bueno 50m; Asombroso 10m.
+                ▶ **Rango 12 (Precisión mejorada):** localización mejorada: Ordinario 100m; Bueno 50m; Asombroso 10m.
       empathy:
         attribute: INT
         cost: 1
@@ -973,11 +977,15 @@ items:
                 - **Amazing:** -3 step bonus.
 
                 ### Rank Benefits
-                **Rank 4 [Relationship]:** the empath can sense the surface emotions of two other characters toward each other.
-                **Rank 6 [Aura Reading]:** evaluate health state (healthy, injured, sick, dying, insane, etc.). Grants a -1 to -3 step bonus to Medical Science, Knowledge-first aid, or Biokinesis-Heal or Biokinasis-Rejuvenate checks used to treat the target. Attempts on different species suffer a +1 step penalty.
-                **Rank 8 [Relationship]:** the empath can apply this skill to three other characters.
-                **Rank 9 [Connection]:** develop a connection with an individual to sense emotions even when not in visual range, up to 1 mile per rank away.
-                **Rank 12 [Relationship]:** the empath can apply this skill to four other characters.
+                ▶ **Rank 4 [Relationship]:** the empath can sense the surface emotions of two other characters toward each other.
+
+                ▶ **Rank 6 [Aura Reading]:** evaluate health state (healthy, injured, sick, dying, insane, etc.). Grants a -1 to -3 step bonus to Medical Science, Knowledge-first aid, or [[Biokinesis-Heal]] or [[Biokinasis-Rejuvenate]] checks used to treat the target. Attempts on different species suffer a +1 step penalty.
+
+                ▶ **Rank 8 [Relationship]:** the empath can apply this skill to three other characters.
+
+                ▶ **Rank 9 [Connection]:** develop a connection with an individual to sense emotions even when not in visual range, up to 1 mile per rank away.
+
+                ▶ **Rank 12 [Relationship]:** the empath can apply this skill to four other characters.
           - es:
               name: Empatía
               description: |-
@@ -992,11 +1000,15 @@ items:
                 - **Asombroso:** -3 Bonificación de paso.
 
                 ### Beneficios de Rango
-                **Rango 4 [Relación]:** el empático puede sentir las emociones superficiales de dos personajes de Otros hacia cada Otros.
-                **Rango 6 [Lectura del Aura]:** evaluar el estado de salud (sano, herido, enfermo, moribundo, demente, etc.). Otorga de -1 a -3 Bonificación de paso a Ciencias médicas, pruebas de conocimiento-primeros auxilios o biokinesis-curación o biokinasis-rejuvenecimiento utilizadas para tratar al objetivo. Los intentos sobre diferentes especies sufren un +1 Penalización de paso.
-                **Rango 8 [Relación]:** el empático puede aplicar esta habilidad a tres personajes Otros.
-                **Rango 9 [Conexión]:** desarrolle una conexión con un individuo para sentir emociones incluso cuando no esté en el alcance visual, hasta 1 milla por Rango de distancia.
-                **Rango 12 [Relación]:** el empático puede aplicar esta habilidad a cuatro personajes Otros.
+                ▶ **Rango 4 (Relación):** el empático puede sentir las emociones superficiales de dos personajes Otros hacia cada Otros.
+
+                ▶ **Rango 6 (Lectura de Aura):** evaluar el estado de salud (sano, herido, enfermo, moribundo, demente, etc.). Otorga de -1 a -3 Bonificación de paso a Ciencias médicas, conocimientos de primeros auxilios o pruebas de [[Biokinesis-Heal]] o [[Biokinasis-Rejuvenate]] utilizadas para tratar al objetivo. Los intentos sobre diferentes especies sufren un +1 Penalización de paso.
+
+                ▶ **Rango 8 (Relación):** el empático puede aplicar esta habilidad a tres personajes Otros.
+
+                ▶ **Rango 9 (Conexión):** desarrolle una conexión con un individuo para sentir emociones incluso cuando no esté en el alcance visual, hasta 1 milla por Rango de distancia.
+
+                ▶ **Rango 12 (Relación):** el empático puede aplicar esta habilidad a cuatro personajes Otros.
       mind-reading:
         attribute: INT
         cost: 3
@@ -1026,13 +1038,13 @@ items:
                 - **Amazing:** contact lasts for 3 phases. Complete surface thoughts can be read, plus some key fact related to what the psionics-user hoped to discover.
 
                 ### Rank Benefits
-                **Rank 3 [Extra Time]:** the character may add an additional phase to the duration: Ordinary, 2 phases; Good, 3 phases; Amazing, 4 phases.
+                ▶ **Rank 3 [Extra Time]:** the character may add an additional phase to the duration: Ordinary, 2 phases; Good, 3 phases; Amazing, 4 phases.
 
-                **Rank 6 [Probe]:** focused search through a target’s mind for a specific piece of information. (+2 step penalty for aliens). Will resistance applies.
+                ▶ **Rank 6 [Probe]:** focused search through a target’s mind for a specific piece of information. (+2 step penalty for aliens). Will resistance applies.
 
-                **Rank 9 [Extra Time]:** duration increases: Ordinary, 1 round; Good, 2 rounds; Amazing, 3 rounds.
+                ▶ **Rank 9 [Extra Time]:** duration increases: Ordinary, 1 round; Good, 2 rounds; Amazing, 3 rounds.
 
-                **Rank 12 [Extra Time]:** duration increases: Ordinary, 1 minute; Good, 2 minutes; Amazing, 3 minutes.
+                ▶ **Rank 12 [Extra Time]:** duration increases: Ordinary, 1 minute; Good, 2 minutes; Amazing, 3 minutes.
           - es:
               name: Lectura Mental
               description: |-
@@ -1046,13 +1058,13 @@ items:
                 - **Asombroso:** el contacto tiene una duración de 3 fases. Se pueden leer pensamientos superficiales completos, además de algún hecho clave relacionado con lo que el usuario psiónico esperaba descubrir.
 
                 ### Beneficios de Rango
-                **Rango 3 [Tiempo Extra]:** el Personaje puede agregar una fase adicional a la duración: Ordinario, 2 fases; Bueno, 3 fases; Asombroso, 4 fases.
+                ▶ **Rango 3 (Tiempo Extra):** el Personaje puede agregar una fase adicional a la duración: Ordinario, 2 fases; Bueno, 3 fases; Asombroso, 4 fases.
 
-                **Rango 6 [Sonda]:** búsqueda enfocada a través de la mente de un objetivo para una información específica. (+2 Penalización de paso para extraterrestres). Se aplica la resistencia a la voluntad.
+                ▶ **Rango 6 (Sonda):** búsqueda enfocada a través de la mente de un objetivo para obtener una información específica. (+2 Penalización de paso para extraterrestres). Se aplica la resistencia a la voluntad.
 
-                **Rango 9 [Tiempo extra]:** aumentos de duración: Ordinario, 1 ronda; Bueno, 2 rondas; Asombroso, 3 rondas.
+                ▶ **Rango 9 (Tiempo extra):** aumentos de duración: Ordinario, 1 ronda; Bueno, 2 rondas; Asombroso, 3 rondas.
 
-                **Rango 12 [Tiempo extra]:** aumentos de duración: Ordinario, 1 minuto; Bueno, 2 minutos; Asombroso, 3 minutos.
+                ▶ **Rango 12 (Tiempo extra):** aumentos de duración: Ordinario, 1 minuto; Bueno, 2 minutos; Asombroso, 3 minutos.
       navcognition:
         attribute: INT
         cost: 3
@@ -1091,17 +1103,17 @@ items:
                 | More than 5 minutes plotting | -1 per min. |
 
                 ### Rank Benefits
-                **Rank 4 [Travel Time]:** becomes able to determine the clearest way to the destination. Cuts travel time (surface/system): Ordinary 10%; Good 25%; Amazing 50% of normal. A critical failure results in 50% longer travel time.
+                ▶ **Rank 4 [Travel Time]:** becomes able to determine the clearest way to the destination . Cuts travel time (surface/system): Ordinary 10%; Good 25%; Amazing 50% of normal. A critical failure results in 50% longer travel time.
 
-                **Rank 4 [Drivespace Distance]:** when used for drivespace the skill allows for plotting courses using the otherwise unpreditable drivespace faults. The travel distance is increased by: Ordinary +5ly; Good +10ly; Amazing +20ly. A critical failure results in -10ly shorter travel distance.
+                ▶ **Rank 4 [Drivespace Distance]:** when used for drivespace the skill allows for plotting courses using the otherwise unpreditable drivespace faults. The travel distance is increased by: Ordinary +5ly; Good +10ly; Amazing +20ly. A critical failure results in -10ly shorter travel distance.
 
-                **Rank 5 [Improved Navigation]:** reduce the cost of using the skill at system scale and to drivespace by 1. The character can also gain a -1 step bonus when using the skill by spending 1 additional psionic energy point.
+                ▶ **Rank 5 [Improved Navigation]:** reduce the cost of using the skill at system scale and to drivespace by 1. The character can also gain a -1 step bonus when using the skill by spending 1 additional psionic energy point.
 
-                **Rank 6 [Clarity of Mind]:** During combat is the psion is the pilot, copilot or navigator, he can use this power to reduce the penalties for situational conditions up to 4 step. For example navigating through an asteroid field, combat while avoiding debris, ships, or other hazards.
+                ▶ **Rank 6 [Clarity of Mind]:** During combat is the psion is the pilot, copilot or navigator, he can use this power to reduce the penalties for situational conditions up to 4 step. For example navigating through an asteroid field, combat while avoiding debris, ships, or other hazards.
 
-                **Rank 9 [Advanced Navigation]:** allows the character to use the skill at drivespace without additional cost. The character can ear a -2 step bonus when using the skill by spending 1 additional psionic energy point.
+                ▶ **Rank 9 [Advanced Navigation]:** allows the character to use the skill at drivespace without additional cost. The character can ear a -2 step bonus when using the skill by spending 1 additional psionic energy point.
 
-                **Rank 12 [Tracking]:** may use navcognition to attempt to track the most likely
+                ▶ **Rank 12 [Tracking]:** may use navcognition to attempt to track the most likely
                 destination of a target subject.
                 This ability may even be attempted through drivespace.
                 Using this ability requires that the character begin at a location where the target was last seen. Either by the character, or by a witness. The character must attempt a navcognition skill
@@ -1124,17 +1136,17 @@ items:
                 | Más de 5 minutos tramando | -1 por minuto. |
 
                 ### Beneficios de Rango
-                **Rango 4 [Tiempo de viaje]:** puede determinar el camino más claro hacia el destino. Reduce el tiempo de viaje (superficie/sistema): Ordinario 10%; Bueno 25%; Asombroso 50% de lo normal. Un Fallo Crítico da como resultado un tiempo de viaje un 50% más largo.
+                ▶ **Rango 4 (Tiempo de viaje):** puede determinar el camino más claro hacia el destino. Reduce el tiempo de viaje (superficie/sistema): Ordinario 10%; Bueno 25%; Asombroso 50% de lo normal. Un Fallo Crítico da como resultado un tiempo de viaje un 50% más largo.
 
-                **Rango 4 [Distancia del espacio de conducción]:** cuando se usa para el espacio de conducción, la habilidad permite trazar cursos utilizando las fallas del espacio de conducción que de otro modo serían impredecibles. La distancia recorrida aumenta en: Ordinario +5ly; Bueno +10ly; Asombroso +20ly. Un Fallo Crítico da como resultado una distancia de recorrido -10 veces más corta.
+                ▶ **Rango 4 (Distancia del espacio de conducción):** cuando se usa para el espacio de conducción, la habilidad permite trazar cursos utilizando las fallas del espacio de conducción que de otro modo serían impredecibles. La distancia recorrida aumenta en: Ordinario +5ly; Bueno +10ly; Asombroso +20ly. Un Fallo Crítico da como resultado una distancia de recorrido -10 veces más corta.
 
-                **Rango 5 [Navegación mejorado]:** reduce el costo de usar la habilidad a escala del sistema y en el espacio de conducción en 1. El Personaje también puede obtener un -1 Bonificación de paso al usar la habilidad gastando 1 punto de energía psiónica adicional.
+                ▶ **Rango 5 (Navegación mejorado):** reduce el costo de usar la habilidad a escala del sistema y en el espacio de conducción en 1. El Personaje también puede obtener un -1 Bonificación de paso al usar la habilidad gastando 1 punto de energía psiónica adicional.
 
-                **Rango 6 [Claridad mental]:** Durante Combate, si el psion es el piloto, copiloto o navegante, puede usar este poder para reducir las penalizaciones por condiciones situacionales hasta 4 pasos. Por ejemplo, navegar a través de un campo de asteroides, Combate mientras evita escombros, barcos o peligros Otros.
+                ▶ **Rango 6 (Claridad mental):** Durante Combate, si el psion es el piloto, copiloto o navegante, puede usar este poder para reducir las penalizaciones por condiciones situacionales hasta 4 pasos. Por ejemplo, navegar a través de un campo de asteroides, Combate mientras evita escombros, barcos o peligros Otros.
 
-                **Rango 9 [Navegación avanzado]:** permite que Personaje use la habilidad en el espacio de conducción sin costo adicional. El Personaje puede obtener un -2 Bonificación de paso cuando usa la habilidad gastando 1 punto de energía psiónica adicional.
+                ▶ **Rango 9 (Navegación avanzado):** permite que Personaje use la habilidad en el espacio de conducción sin costo adicional. El Personaje puede obtener un -2 Bonificación de paso cuando usa la habilidad gastando 1 punto de energía psiónica adicional.
 
-                **Rango 12 [Seguimiento]:** puede usar navcognition para intentar Rastrear lo más probable
+                ▶ **Rango 12 (Seguimiento):** puede usar navcognition para intentar Rastrear lo más probable
                 destino de un sujeto objetivo.
                 Esta habilidad puede incluso intentarse a través del espacio del disco.
                 El uso de esta habilidad requiere que el Personaje comience en el lugar donde se vio el objetivo por última vez. Ya sea por el Personaje, o por un testigo. El Personaje debe intentar una habilidad de navegación
@@ -1221,7 +1233,7 @@ items:
               name: Precognition
               description: |-
                 > [!NOTE]
-                > **Requires Perk:** [Precog]({{< relref "/perks_flaws/perks/precog" >}}).
+                > **Requires Perk:** Precog.
 
                 ### The Session Flash
 
@@ -1269,18 +1281,18 @@ items:
 
                 ### Rank Benefits
 
-                **Rank 3 [Tactical Horizon]:** The Overuse penalty is reduced to +2 steps.
+                ▶ **Rank 3 [Tactical Horizon]:** The Overuse penalty is reduced to +2 steps.
 
-                **Rank 6 [Operational Horizon]:** The Overuse penalty is reduced to +1 step. Precognition skill checks receive a -1 step bonus.
+                ▶ **Rank 6 [Operational Horizon]:** The Overuse penalty is reduced to +1 step. Precognition skill checks receive a -1 step bonus.
 
-                **Rank 9 [Strategic Horizon]:** There is no penalty for Overuse.
+                ▶ **Rank 9 [Strategic Horizon]:** There is no penalty for Overuse.
 
-                **Rank 12 [Causal Horizon]:** The GM provides precise timing for the event described in the session flash (ranging from minutes for imminent events to a specific day for events months away).
+                ▶ **Rank 12 [Causal Horizon]:** The GM provides precise timing for the event described in the session flash (ranging from minutes for imminent events to a specific day for events months away).
           - es:
               name: Precognición
               description: |-
                 > [!NOTA]
-                > **Requiere Ventaja:** [Precog]({{< relref "/perks_flaws/perks/precog" >}}).
+                > **Requiere Ventaja:** Precog.
 
                 ### El flash de la sesión
 
@@ -1328,13 +1340,13 @@ items:
 
                 ### Beneficios de Rango
 
-                **Rango 3 [Horizonte Táctico]:** La penalización por uso excesivo se reduce a +2 pasos.
+                ▶ **Rango 3 (Horizonte Táctico):** La penalización por uso excesivo se reduce a +2 pasos.
 
-                **Rango 6 [Horizonte operativo]:** La penalización por uso excesivo se reduce a +1 paso. Las pruebas de habilidades de precognición reciben un -1 Bonificación de paso.
+                ▶ **Rango 6 (Horizonte operativo):** La penalización por uso excesivo se reduce a +1 paso. Las pruebas de habilidades de precognición reciben un -1 Bonificación de paso.
 
-                **Rango 9 [Horizonte estratégico]:** No hay penalización por uso excesivo.
+                ▶ **Rango 9 (Horizonte estratégico):** No hay penalización por uso excesivo.
 
-                **Rango 12 [Horizonte Causal]:** El GM proporciona tiempos precisos para el evento descrito en el flash de la sesión (que van desde minutos para eventos inminentes hasta un día específico para eventos a meses de distancia).
+                ▶ **Rango 12 (Horizonte Causal):** El GM proporciona tiempos precisos para el evento descrito en el flash de la sesión (que van desde minutos para eventos inminentes hasta un día específico para eventos que faltan meses).
       psychometry:
         attribute: INT
         cost: 3

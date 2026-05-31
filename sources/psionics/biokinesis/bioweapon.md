@@ -37,10 +37,10 @@ The result of the bioweapon skill check may add a bonus to the attack check as f
 This bonus lasts until the character chooses not to maintain the bioweapon.
 
 ### Rank Benefits:
-**Rank 3 [Increased Damage]** the damage of the bioweapon increases by +1.
+▶ **Rank 3 [Increased Damage]** the damage of the bioweapon increases by +1.
 
-**Rank 6 [Increased Damage]** it increases again (to a total of +2).
+▶ **Rank 6 [Increased Damage]** it increases again (to a total of +2).
 
-**Rank 9 [Increased Damage]** all attacks made with the bioweapon are considered to deliver **Good damage**.
+▶ **Rank 9 [Increased Damage]** all attacks made with the bioweapon are considered to deliver **Good damage**.
 
-**Rank 12 [Improved Damage]** it increases by another +1 (to a total of +3).
+▶ **Rank 12 [Improved Damage]** it increases by another +1 (to a total of +3).

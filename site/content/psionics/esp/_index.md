@@ -30,9 +30,11 @@ user a bonus to his or her action checks:
 For purposes of using this skill, “battle” is defined as any situation in which the character has made an action check in the same round he or she uses the battle mind skill.
 
 ### Rank Benefits
-- **Rank 4 [Increased Effect]** whenever you are allowed an action check, you are also allowed to make a [[ESP-Battle Mind]] check to activate this power and gain its benefits to the first round. This check consumes one of your actions for the round, unless the result is amazing, then it doesn't cost an action. 
-- **Rank 8 [Move Like Water]** the character employing this ability gains a temporary last resort point, which he or she must use before the ability’s duration ends or lose it. This point can only be used to offset damage.
-- **Rank 12 [Unerring Accuracy]** the character gains a temporary last resort point, which must be used before the ability’s duration ends or it becomes lost. This point can only be used to increase the success of an attack made by the character using this ability.
+▶ **Rank 4 [Increased Effect]** whenever you are allowed an action check, you are also allowed to make a [[ESP-Battle Mind]] check to activate this power and gain its benefits to the first round. This check consumes one of your actions for the round, unless the result is amazing, then it doesn't cost an action. 
+
+▶ **Rank 8 [Move Like Water]** the character employing this ability gains a temporary last resort point, which he or she must use before the ability’s duration ends or lose it. This point can only be used to offset damage.
+
+▶ **Rank 12 [Unerring Accuracy]** the character gains a temporary last resort point, which must be used before the ability’s duration ends or it becomes lost. This point can only be used to increase the success of an attack made by the character using this ability.
 
 ---
 
@@ -57,13 +59,13 @@ Characters who receive this information can make Awareness-perception checks or 
 
 ### Rank Benefits
 
-**Rank 3 [Improved Accuracy]:** the psion is able to narrow down the time the prey will be at a given locale to within 3 hours.
+▶ **Rank 3 [Improved Accuracy]:** the psion is able to narrow down the time the prey will be at a given locale to within 3 hours.
 
-**Rank 6 [Improved Accuracy]:** pinpointing improved: Ordinary 500m; Good 100m; Amazing 50m.
+▶ **Rank 6 [Improved Accuracy]:** pinpointing improved: Ordinary 500m; Good 100m; Amazing 50m.
 
-**Rank 9 [Improved Timing]:** the psion can determine when the prey will be at a particular location to within 30 minutes.
+▶ **Rank 9 [Improved Timing]:** the psion can determine when the prey will be at a particular location to within 30 minutes.
 
-**Rank 12 [Improved Accuracy]:** pinpointing improved: Ordinary 100m; Good 50m; Amazing 10m.
+▶ **Rank 12 [Improved Accuracy]:** pinpointing improved: Ordinary 100m; Good 50m; Amazing 10m.
 
 ---
 
@@ -81,11 +83,15 @@ character:
 - **Amazing:** -3 step bonus.
 
 ### Rank Benefits
-**Rank 4 [Relationship]:** the empath can sense the surface emotions of two other characters toward each other.
-**Rank 6 [Aura Reading]:** evaluate health state (healthy, injured, sick, dying, insane, etc.). Grants a -1 to -3 step bonus to Medical Science, Knowledge-first aid, or Biokinesis-Heal or Biokinasis-Rejuvenate checks used to treat the target. Attempts on different species suffer a +1 step penalty.
-**Rank 8 [Relationship]:** the empath can apply this skill to three other characters.
-**Rank 9 [Connection]:** develop a connection with an individual to sense emotions even when not in visual range, up to 1 mile per rank away.
-**Rank 12 [Relationship]:** the empath can apply this skill to four other characters.
+▶ **Rank 4 [Relationship]:** the empath can sense the surface emotions of two other characters toward each other.
+
+▶ **Rank 6 [Aura Reading]:** evaluate health state (healthy, injured, sick, dying, insane, etc.). Grants a -1 to -3 step bonus to Medical Science, Knowledge-first aid, or [[Biokinesis-Heal]] or [[Biokinasis-Rejuvenate]] checks used to treat the target. Attempts on different species suffer a +1 step penalty.
+
+▶ **Rank 8 [Relationship]:** the empath can apply this skill to three other characters.
+
+▶ **Rank 9 [Connection]:** develop a connection with an individual to sense emotions even when not in visual range, up to 1 mile per rank away.
+
+▶ **Rank 12 [Relationship]:** the empath can apply this skill to four other characters.
 
 ---
 
@@ -102,13 +108,13 @@ can't be extended by the use of psionic energy points.
 - **Amazing:** contact lasts for 3 phases. Complete surface thoughts can be read, plus some key fact related to what the psionics-user hoped to discover.
 
 ### Rank Benefits
-**Rank 3 [Extra Time]:** the character may add an additional phase to the duration: Ordinary, 2 phases; Good, 3 phases; Amazing, 4 phases.
+▶ **Rank 3 [Extra Time]:** the character may add an additional phase to the duration: Ordinary, 2 phases; Good, 3 phases; Amazing, 4 phases.
 
-**Rank 6 [Probe]:** focused search through a target’s mind for a specific piece of information. (+2 step penalty for aliens). Will resistance applies.
+▶ **Rank 6 [Probe]:** focused search through a target’s mind for a specific piece of information. (+2 step penalty for aliens). Will resistance applies.
 
-**Rank 9 [Extra Time]:** duration increases: Ordinary, 1 round; Good, 2 rounds; Amazing, 3 rounds.
+▶ **Rank 9 [Extra Time]:** duration increases: Ordinary, 1 round; Good, 2 rounds; Amazing, 3 rounds.
 
-**Rank 12 [Extra Time]:** duration increases: Ordinary, 1 minute; Good, 2 minutes; Amazing, 3 minutes.
+▶ **Rank 12 [Extra Time]:** duration increases: Ordinary, 1 minute; Good, 2 minutes; Amazing, 3 minutes.
 
 ---
 
@@ -130,17 +136,17 @@ at system scale, and by spending 2 it can plot courses through drivespace.
 | More than 5 minutes plotting | -1 per min. |
 
 ### Rank Benefits
-**Rank 4 [Travel Time]:** becomes able to determine the clearest way to the destination. Cuts travel time (surface/system): Ordinary 10%; Good 25%; Amazing 50% of normal. A critical failure results in 50% longer travel time.
+▶ **Rank 4 [Travel Time]:** becomes able to determine the clearest way to the destination . Cuts travel time (surface/system): Ordinary 10%; Good 25%; Amazing 50% of normal. A critical failure results in 50% longer travel time.
 
-**Rank 4 [Drivespace Distance]:** when used for drivespace the skill allows for plotting courses using the otherwise unpreditable drivespace faults. The travel distance is increased by: Ordinary +5ly; Good +10ly; Amazing +20ly. A critical failure results in -10ly shorter travel distance.
+▶ **Rank 4 [Drivespace Distance]:** when used for drivespace the skill allows for plotting courses using the otherwise unpreditable drivespace faults. The travel distance is increased by: Ordinary +5ly; Good +10ly; Amazing +20ly. A critical failure results in -10ly shorter travel distance.
 
-**Rank 5 [Improved Navigation]:** reduce the cost of using the skill at system scale and to drivespace by 1. The character can also gain a -1 step bonus when using the skill by spending 1 additional psionic energy point.
+▶ **Rank 5 [Improved Navigation]:** reduce the cost of using the skill at system scale and to drivespace by 1. The character can also gain a -1 step bonus when using the skill by spending 1 additional psionic energy point.
 
-**Rank 6 [Clarity of Mind]:** During combat is the psion is the pilot, copilot or navigator, he can use this power to reduce the penalties for situational conditions up to 4 step. For example navigating through an asteroid field, combat while avoiding debris, ships, or other hazards.
+▶ **Rank 6 [Clarity of Mind]:** During combat is the psion is the pilot, copilot or navigator, he can use this power to reduce the penalties for situational conditions up to 4 step. For example navigating through an asteroid field, combat while avoiding debris, ships, or other hazards.
 
-**Rank 9 [Advanced Navigation]:** allows the character to use the skill at drivespace without additional cost. The character can ear a -2 step bonus when using the skill by spending 1 additional psionic energy point.
+▶ **Rank 9 [Advanced Navigation]:** allows the character to use the skill at drivespace without additional cost. The character can ear a -2 step bonus when using the skill by spending 1 additional psionic energy point.
 
-**Rank 12 [Tracking]:** may use navcognition to attempt to track the most likely
+▶ **Rank 12 [Tracking]:** may use navcognition to attempt to track the most likely
 destination of a target subject.
 This ability may even be attempted through drivespace.
 Using this ability requires that the character begin at a location where the target was last seen. Either by the character, or by a witness. The character must attempt a navcognition skill
@@ -178,7 +184,7 @@ Players can use this skill to gain clues for their characters, or the Gamemaster
 {{< specialty attr="INT" untrained="no" cost="4" >}}
 
 > [!NOTE]
-> **Requires Perk:** [Precog]({{< relref "/perks_flaws/perks/precog" >}}).
+> **Requires Perk:** Precog.
 
 ### The Session Flash
 
@@ -226,13 +232,13 @@ Once the LRP is used, the character can exert to reactivate the power, but doing
 
 ### Rank Benefits
 
-**Rank 3 [Tactical Horizon]:** The Overuse penalty is reduced to +2 steps.
+▶ **Rank 3 [Tactical Horizon]:** The Overuse penalty is reduced to +2 steps.
 
-**Rank 6 [Operational Horizon]:** The Overuse penalty is reduced to +1 step. Precognition skill checks receive a -1 step bonus.
+▶ **Rank 6 [Operational Horizon]:** The Overuse penalty is reduced to +1 step. Precognition skill checks receive a -1 step bonus.
 
-**Rank 9 [Strategic Horizon]:** There is no penalty for Overuse.
+▶ **Rank 9 [Strategic Horizon]:** There is no penalty for Overuse.
 
-**Rank 12 [Causal Horizon]:** The GM provides precise timing for the event described in the session flash (ranging from minutes for imminent events to a specific day for events months away).
+▶ **Rank 12 [Causal Horizon]:** The GM provides precise timing for the event described in the session flash (ranging from minutes for imminent events to a specific day for events months away).
 
 ---
 

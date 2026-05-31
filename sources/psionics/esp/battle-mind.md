@@ -25,6 +25,8 @@ user a bonus to his or her action checks:
 For purposes of using this skill, “battle” is defined as any situation in which the character has made an action check in the same round he or she uses the battle mind skill.
 
 ### Rank Benefits
-- **Rank 4 [Increased Effect]** whenever you are allowed an action check, you are also allowed to make a [[ESP-Battle Mind]] check to activate this power and gain its benefits to the first round. This check consumes one of your actions for the round, unless the result is amazing, then it doesn't cost an action. 
-- **Rank 8 [Move Like Water]** the character employing this ability gains a temporary last resort point, which he or she must use before the ability’s duration ends or lose it. This point can only be used to offset damage.
-- **Rank 12 [Unerring Accuracy]** the character gains a temporary last resort point, which must be used before the ability’s duration ends or it becomes lost. This point can only be used to increase the success of an attack made by the character using this ability.
+▶ **Rank 4 [Increased Effect]** whenever you are allowed an action check, you are also allowed to make a [[ESP-Battle Mind]] check to activate this power and gain its benefits to the first round. This check consumes one of your actions for the round, unless the result is amazing, then it doesn't cost an action. 
+
+▶ **Rank 8 [Move Like Water]** the character employing this ability gains a temporary last resort point, which he or she must use before the ability’s duration ends or lose it. This point can only be used to offset damage.
+
+▶ **Rank 12 [Unerring Accuracy]** the character gains a temporary last resort point, which must be used before the ability’s duration ends or it becomes lost. This point can only be used to increase the success of an attack made by the character using this ability.

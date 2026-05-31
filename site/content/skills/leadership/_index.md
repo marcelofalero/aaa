@@ -50,6 +50,7 @@ This specialty skill represents the character's ability to lead others by virtue
 
 Leading by example and shifting the morale of a group.
 
+
 **Morale Pivot:** Unlike the broad skill, **Inspire** can be used on **Hostile** or **Combative** targets to shift their attitude as per [Table P25: Encounter Skill Effects]({{< relref "core-mechanics/useful-tables#table-p25-encounter-skill-effects" >}}).
 
 ### Rank Benefits

@@ -26,10 +26,10 @@ can't be extended by the use of psionic energy points.
 - **Amazing:** contact lasts for 3 phases. Complete surface thoughts can be read, plus some key fact related to what the psionics-user hoped to discover.
 
 ### Rank Benefits
-**Rank 3 [Extra Time]:** the character may add an additional phase to the duration: Ordinary, 2 phases; Good, 3 phases; Amazing, 4 phases.
+▶ **Rank 3 [Extra Time]:** the character may add an additional phase to the duration: Ordinary, 2 phases; Good, 3 phases; Amazing, 4 phases.
 
-**Rank 6 [Probe]:** focused search through a target’s mind for a specific piece of information. (+2 step penalty for aliens). Will resistance applies.
+▶ **Rank 6 [Probe]:** focused search through a target’s mind for a specific piece of information. (+2 step penalty for aliens). Will resistance applies.
 
-**Rank 9 [Extra Time]:** duration increases: Ordinary, 1 round; Good, 2 rounds; Amazing, 3 rounds.
+▶ **Rank 9 [Extra Time]:** duration increases: Ordinary, 1 round; Good, 2 rounds; Amazing, 3 rounds.
 
-**Rank 12 [Extra Time]:** duration increases: Ordinary, 1 minute; Good, 2 minutes; Amazing, 3 minutes.
+▶ **Rank 12 [Extra Time]:** duration increases: Ordinary, 1 minute; Good, 2 minutes; Amazing, 3 minutes.

@@ -35,17 +35,17 @@ at system scale, and by spending 2 it can plot courses through drivespace.
 | More than 5 minutes plotting | -1 per min. |
 
 ### Rank Benefits
-**Rank 4 [Travel Time]:** becomes able to determine the clearest way to the destination. Cuts travel time (surface/system): Ordinary 10%; Good 25%; Amazing 50% of normal. A critical failure results in 50% longer travel time.
+▶ **Rank 4 [Travel Time]:** becomes able to determine the clearest way to the destination . Cuts travel time (surface/system): Ordinary 10%; Good 25%; Amazing 50% of normal. A critical failure results in 50% longer travel time.
 
-**Rank 4 [Drivespace Distance]:** when used for drivespace the skill allows for plotting courses using the otherwise unpreditable drivespace faults. The travel distance is increased by: Ordinary +5ly; Good +10ly; Amazing +20ly. A critical failure results in -10ly shorter travel distance.
+▶ **Rank 4 [Drivespace Distance]:** when used for drivespace the skill allows for plotting courses using the otherwise unpreditable drivespace faults. The travel distance is increased by: Ordinary +5ly; Good +10ly; Amazing +20ly. A critical failure results in -10ly shorter travel distance.
 
-**Rank 5 [Improved Navigation]:** reduce the cost of using the skill at system scale and to drivespace by 1. The character can also gain a -1 step bonus when using the skill by spending 1 additional psionic energy point.
+▶ **Rank 5 [Improved Navigation]:** reduce the cost of using the skill at system scale and to drivespace by 1. The character can also gain a -1 step bonus when using the skill by spending 1 additional psionic energy point.
 
-**Rank 6 [Clarity of Mind]:** During combat is the psion is the pilot, copilot or navigator, he can use this power to reduce the penalties for situational conditions up to 4 step. For example navigating through an asteroid field, combat while avoiding debris, ships, or other hazards.
+▶ **Rank 6 [Clarity of Mind]:** During combat is the psion is the pilot, copilot or navigator, he can use this power to reduce the penalties for situational conditions up to 4 step. For example navigating through an asteroid field, combat while avoiding debris, ships, or other hazards.
 
-**Rank 9 [Advanced Navigation]:** allows the character to use the skill at drivespace without additional cost. The character can ear a -2 step bonus when using the skill by spending 1 additional psionic energy point.
+▶ **Rank 9 [Advanced Navigation]:** allows the character to use the skill at drivespace without additional cost. The character can ear a -2 step bonus when using the skill by spending 1 additional psionic energy point.
 
-**Rank 12 [Tracking]:** may use navcognition to attempt to track the most likely
+▶ **Rank 12 [Tracking]:** may use navcognition to attempt to track the most likely
 destination of a target subject.
 This ability may even be attempted through drivespace.
 Using this ability requires that the character begin at a location where the target was last seen. Either by the character, or by a witness. The character must attempt a navcognition skill

@@ -34,10 +34,10 @@ Characters who receive this information can make Awareness-perception checks or 
 
 ### Rank Benefits
 
-**Rank 3 [Improved Accuracy]:** the psion is able to narrow down the time the prey will be at a given locale to within 3 hours.
+▶ **Rank 3 [Improved Accuracy]:** the psion is able to narrow down the time the prey will be at a given locale to within 3 hours.
 
-**Rank 6 [Improved Accuracy]:** pinpointing improved: Ordinary 500m; Good 100m; Amazing 50m.
+▶ **Rank 6 [Improved Accuracy]:** pinpointing improved: Ordinary 500m; Good 100m; Amazing 50m.
 
-**Rank 9 [Improved Timing]:** the psion can determine when the prey will be at a particular location to within 30 minutes.
+▶ **Rank 9 [Improved Timing]:** the psion can determine when the prey will be at a particular location to within 30 minutes.
 
-**Rank 12 [Improved Accuracy]:** pinpointing improved: Ordinary 100m; Good 50m; Amazing 10m.
+▶ **Rank 12 [Improved Accuracy]:** pinpointing improved: Ordinary 100m; Good 50m; Amazing 10m.

@@ -28,13 +28,13 @@ By establishing physical contact, the psion forces a parasitic bio-electric link
 The effect lasts until the end of the next round.
 
 ### Rank Benefits
-**Rank 6 [Symbiotic Absorption]**, the psion can choose to convert the siphoned energy into raw regenerative material. Instead of taking the step bonus for themselves, the psion can heal:
+▶ **Rank 6 [Symbiotic Absorption]**, the psion can choose to convert the siphoned energy into raw regenerative material. Instead of taking the step bonus for themselves, the psion can heal:
 - **Good:** 2 wounds
 - **Amazing:** 3 wounds
 
-**Rank 9 [Channel Vitality]**, the psion can use this power to restore vitality to an ally instead of the psion. Both the recipient and the donor must be adjacent to the psion when the power is activated.
+▶ **Rank 9 [Channel Vitality]**, the psion can use this power to restore vitality to an ally instead of the psion. Both the recipient and the donor must be adjacent to the psion when the power is activated.
 
-**Rank 12 [Systemic Overdrive]**, the siphoning becomes so efficient that the psion can even use the energy to heal mortal damage:
+▶ **Rank 12 [Systemic Overdrive]**, the siphoning becomes so efficient that the psion can even use the energy to heal mortal damage:
 - **Ordinary:** 1 wound
 - **Good:** 2 wounds or 1 mortal
 - **Amazing:** 4 wounds or 2 mortals

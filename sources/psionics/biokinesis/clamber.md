@@ -32,8 +32,8 @@ falling. The same will happen if the character has nothing to hold onto on
 reaching his or her destination.
 
 ### Rank Benefits
-**Rank 4 [Increased Distance]** the distance the user can travel while climbing or running across inverted surfaces is doubled.
+▶ **Rank 4 [Increased Distance]** the distance the user can travel while climbing or running across inverted surfaces is doubled.
 
-**Rank 8 [Increased Distance]** the distance is three times the base rate.
+▶ **Rank 8 [Increased Distance]** the distance is three times the base rate.
 
-**Rank 12 [Increased Distance]** the distance is four times the base rate.
+▶ **Rank 12 [Increased Distance]** the distance is four times the base rate.

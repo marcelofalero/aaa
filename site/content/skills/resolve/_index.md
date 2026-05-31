@@ -67,8 +67,8 @@ A character naturally recovers a certain number of wound boxes according to the 
 **Mortal Damage:** Mortal damage **cannot be healed naturally**; only the application of the **Medical Science—surgery** skill can repair mortal damage.
 
 #### Activity Modifiers
-During natural healing, all checks are considered to be made while the character engages in minimal activity.
-- **Total Rest:** If the character confines himself to a hospital bed or remains in a state of total rest for the period, the check receives a **-2 step bonus**.
+During natural healing, all checks are considered to be made while the character engages in minimal activity. 
+- **Total Rest:** If the character confines himself to a hospital bed or remains in a state of total rest for the period, the check receives a **-2 step bonus**. 
 - **Normal Activity:** If the character engages in normal activity, the check receives a **+2 step penalty**.
 
 ---
