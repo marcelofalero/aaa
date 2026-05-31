@@ -295,13 +295,13 @@ Los modificadores de situación por la familiaridad con la ubicación y la dista
 
 ### Beneficios de Rango
 
-**Rango 4 [Sentidos Combinados]**: El sensor psiónico y ver y oír al mismo tiempo
+▶ **Rango 4 [Sentidos combinados]** El sensor psiónico puede ver y oír al mismo tiempo.
 
-**Rango 6 [Cambio de perspectiva]**: el Personaje puede intentar otra prueba de habilidad de clarisentiencia ESP para cambiar la ubicación en la que se proyectó la proyección Mental. La nueva verificación se modifica por la distancia desde la ubicación actual que el psion está viendo y escuchando, en lugar de la distancia Físico entre el psion y el área objetivo.
+▶ **Rango 6 [Cambio de perspectiva]** El Personaje puede intentar otra prueba de habilidad de clarisentiencia ESP para cambiar la ubicación a la que se ha proyectado la proyección Mental. La nueva verificación se modifica por la distancia desde la ubicación actual que el psion está viendo y escuchando, en lugar de la distancia Físico entre el psion y el área objetivo.
 
-**Rango 8 [Sensibilidad]**: el sensor ahora también puede percibir impresiones psiónicas.
+▶ **Rango 8 [Sensibilidad]** El sensor ahora también puede percibir impresiones psiónicas.
 
-**Rango 12 [Proyección de energía]**: el psion puede realizar [[ESP-postcognición]], [[ESP-emfaty]] o [[ESP-psicometría]] en la ubicación del sensor. Pero hacerlo conlleva una penalización adicional de -2 en la prueba de habilidad.
+▶ **Rango 12 [Proyección de energía]** El psion puede realizar [[ESP-postcognición]], [[ESP-empatía]] o [[ESP-psicometría]] en la ubicación del sensor. Pero hacerlo conlleva una penalización adicional de -2 en la prueba de habilidad.
 
 ---
 

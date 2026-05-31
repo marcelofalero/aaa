@@ -294,13 +294,13 @@ Situation modifiers for the familiarity of the location and the distance at whic
 
 ### Rank Benefits
 
-**Rank 4 [Combined Senses]**: The psionic sensor and see and hear at the same time
+▶ **Rank 4 [Combined Senses]** The psionic sensor can see and hear at the same time.
 
-**Rank 6 [Change of Perspective]**: the character can attempt another ESP-clairsentience skill check to shift the location to which the mental projection has been projected. The new check is modified by the distance from the current location that the psion is viewing and listening to, rather than the physical distance the psion is from the target area.
+▶ **Rank 6 [Change of Perspective]** The character can attempt another ESP-clairsentience skill check to shift the location to which the mental projection has been projected. The new check is modified by the distance from the current location that the psion is viewing and listening to, rather than the physical distance the psion is from the target area.
 
-**Rank 8 [Sensitivity]**: the sensor can now also perceive psionic impresions.
+▶ **Rank 8 [Sensitivity]** The sensor can now also perceive psionic impressions.
 
-**Rank 12 [Power projection]**: the psion can perform [[ESP-postcognition]], [[ESP-emphaty]] or [[ESP-psychometry]] at the location of the sensor. But doing so incurs an additional -2 penalty on the skill check.
+▶ **Rank 12 [Power Projection]** The psion can perform [[ESP-postcognition]], [[ESP-empathy]] or [[ESP-psychometry]] at the location of the sensor. But doing so incurs an additional -2 penalty on the skill check.
 
 ---
 
