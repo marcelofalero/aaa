@@ -50,7 +50,7 @@ Situation modifiers for the familiarity of the mind and the distance at which co
 
 ▶ **Rank 6 [Language]** A telepath learns to comprehend the meaning underlying ideas expressed even in languages he or she does not understand. The character may attempt an Intelligence feat check to understand the gist of the concept being communicated, or to make his or her own thoughts clearer to the target. At the Gamemaster's discretion, a +2 step penalty applies to attempting to communicate with alien minds.
 
-▶ **Rank 12 [Switch]** A telepath who reaches rank 12 in contact can attempt to switch his or her consciousness with that of the target—effectively trading bodies.
+⊗ **Rank 12 [Switch]** A telepath who reaches rank 12 in contact can attempt to switch his or her consciousness with that of the target—effectively trading bodies.
 
 ---
 

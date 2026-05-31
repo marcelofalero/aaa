@@ -51,7 +51,7 @@ Los modificadores de situación según la familiaridad de la mente y la distanci
 
 ▶ **Rango 6 [Idioma]** Un telépata aprende a comprender el significado subyacente de las ideas expresadas incluso en idiomas que no comprende. El Personaje puede intentar una prueba de dote de Inteligencia para comprender la esencia del concepto que se comunica o para aclarar sus propios pensamientos al objetivo. A discreción del Director de Juego, se aplica un +2 Penalización de paso al intentar comunicarse con mentes alienígenas.
 
-▶ **Rango 12 [Cambiar]** Un telépata que alcanza Rango 12 en contacto puede intentar cambiar su conciencia con la del objetivo, intercambiando cuerpos de manera efectiva.
+⊗ **Rango 12 [Cambiar]** Un telépata que alcanza Rango 12 en contacto puede intentar cambiar su conciencia con la del objetivo, intercambiando efectivamente cuerpos.
 
 ---
 

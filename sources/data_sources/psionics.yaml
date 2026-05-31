@@ -2222,7 +2222,7 @@ items:
 
                 ▶ **Rank 6 [Language]** A telepath learns to comprehend the meaning underlying ideas expressed even in languages he or she does not understand. The character may attempt an Intelligence feat check to understand the gist of the concept being communicated, or to make his or her own thoughts clearer to the target. At the Gamemaster's discretion, a +2 step penalty applies to attempting to communicate with alien minds.
 
-                ▶ **Rank 12 [Switch]** A telepath who reaches rank 12 in contact can attempt to switch his or her consciousness with that of the target—effectively trading bodies.
+                ⊗ **Rank 12 [Switch]** A telepath who reaches rank 12 in contact can attempt to switch his or her consciousness with that of the target—effectively trading bodies.
           - es:
               name: Contacto
               description: |-
@@ -2255,7 +2255,7 @@ items:
 
                 ▶ **Rango 6 [Idioma]** Un telépata aprende a comprender el significado subyacente de las ideas expresadas incluso en idiomas que no comprende. El Personaje puede intentar una prueba de dote de Inteligencia para comprender la esencia del concepto que se comunica o para aclarar sus propios pensamientos al objetivo. A discreción del Director de Juego, se aplica un +2 Penalización de paso al intentar comunicarse con mentes alienígenas.
 
-                ▶ **Rango 12 [Cambiar]** Un telépata que alcanza Rango 12 en contacto puede intentar cambiar su conciencia con la del objetivo, intercambiando cuerpos de manera efectiva.
+                ⊗ **Rango 12 [Cambiar]** Un telépata que alcanza Rango 12 en contacto puede intentar cambiar su conciencia con la del objetivo, intercambiando efectivamente cuerpos.
       datalink:
         attribute: PER
         cost: 4
