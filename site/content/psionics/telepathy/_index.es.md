@@ -46,12 +46,11 @@ Los modificadores de situación según la familiaridad de la mente y la distanci
 | 1.001-10.000 km (órbita alta) | +5 |
 
 ### Beneficios de Rango
-
-▶ **Rango 4 [Duración aumentada]** La unidad de duración es 1 minuto, más un minuto adicional por cada punto de energía psiónica gastado para extenderla. En Rango 8, esta duración pasa a ser 5 minutos, y en Rango 12, la unidad base de duración pasa a ser 30 minutos.
+▶ **Rango 4 [Múltiples objetivos]** El Personaje puede establecer contacto con objetivos adicionales: igual al número de Rangos en esta habilidad, pero la habilidad sufre un -1 Penalización de paso.
 
 ▶ **Rango 6 [Idioma]** Un telépata aprende a comprender el significado subyacente de las ideas expresadas incluso en idiomas que no comprende. El Personaje puede intentar una prueba de dote de Inteligencia para comprender la esencia del concepto que se comunica o para aclarar sus propios pensamientos al objetivo. A discreción del Director de Juego, se aplica un +2 Penalización de paso al intentar comunicarse con mentes alienígenas.
 
-⊗ **Rango 12 [Cambiar]** Un telépata que alcanza Rango 12 en contacto puede intentar cambiar su conciencia con la del objetivo, intercambiando efectivamente cuerpos.
+⊗ **Rango 12 [Cambiar]** Un telépata que alcanza Rango 12 en contacto puede intentar cambiar su conciencia con la del objetivo, intercambiando cuerpos de manera efectiva.
 
 ---
 

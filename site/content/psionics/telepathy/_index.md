@@ -45,8 +45,7 @@ Situation modifiers for the familiarity of the mind and the distance at which co
 | 1,001–10,000 km (high orbit) | +5 |
 
 ### Rank Benefits
-
-▶ **Rank 4 [Increased Duration]** The unit of duration is 1 minute, plus an additional minute per psionic energy point spent to extend it. At rank 8, this duration becomes 5 minutes, and at rank 12, the base unit of duration becomes 30 minutes.
+▶ **Rank 4 [Multiple Targets]** The character can establish contact with additional targets: equal to the number of ranks in this skill, but the skill suffers a -1 step penalty.
 
 ▶ **Rank 6 [Language]** A telepath learns to comprehend the meaning underlying ideas expressed even in languages he or she does not understand. The character may attempt an Intelligence feat check to understand the gist of the concept being communicated, or to make his or her own thoughts clearer to the target. At the Gamemaster's discretion, a +2 step penalty applies to attempting to communicate with alien minds.
 

@@ -20,14 +20,12 @@ Though the fraal tried to join human society from the moment they arrived in the
 At some later point in human history, however, a meeting of the minds finally took place. As humanity put aside its own hostile nature to create a world of peace, the ancient visitors revealed themselves. The fraal joined forces with the humans, helping to lead humanity to the next great plateau. A free exchange of knowledge and ideas advanced both societies in numerous ways. One of the fraal's most significant gifts spawned a leap in technology that paved the way for true faster-than-light travel. Both sides prospered, and they soon merged to become a united society.
 
 ## Special Abilities
-
 - **Psionic Proficiency:** Fraal are extremely proficient in psionics. A fraal character who is a Talent or a Mindwalker has significantly higher psionic energy points than other species (Will x 1.0 or Will x 1.5 respectively).
-- **Natural Telepath:** When using the specialty skill [**telepathy-contact**](/psionics/telepathy/#contact), a fraal character expends **no psionic energy** unless the skill check fails.
+- **Natural Telepath:** When using the specialty skill [**telepathy-contact**](/psionics/telepathy/#contact) to communicate with a single target he spend 1 psionic energy point less than normal (minimum 0).
 - **Psionic Focus:** A Fraal character select a Psionic Specialty skill he is able to use at character creation; when using this skill he has a -1 step bonus. Every time a the character advance to the next Character Rank he can change his focus to a different skill he is able to use.
 - **Free Broad Skills:** Awareness (PER), Resolve (WIL), Vehicle Operation (DEX), Knowledge (INT), Interaction (PER), Telepathy (WIL).
 
 ## Culture & Roleplaying
-
 Fraal aren't physically inclined. They tend to develop their minds instead of their bodies, working as Mindwalkers or Tech Ops rather than in the Free Agent or Combat Spec professions. They are thinkers and philosophers with a deeply spiritual nature. Because they are a long-lived species, the fraal have a patient attitude that sometimes annoys humans. Their spirituality centers around mind-walking, the study and application of psionics. To them, the powers of the mind have almost religious significance; they feel that all species can find common ground by touching thoughts and sharing inner peace.
 
 Fraal aren't pacifists, but they believe that violence should be the last resort of an intelligent, civilized species. They can seem cold and distant, but that's because they don't have as wide a range of emotions as humans do—and the emotional range they do possess doesn't shift as rapidly or unpredictably as humans' emotions do.
