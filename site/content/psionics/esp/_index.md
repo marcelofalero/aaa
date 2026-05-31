@@ -149,7 +149,7 @@ check, with a +2 step penalty if he or she witnessed the subject, or a +4 step p
 ---
 
 ## Postcognition
-{{< specialty attr="INT" untrained="yes" cost="3" >}}
+{{< specialty attr="INT" untrained="yes" cost="4" >}}
 
 With this skill, a character can sense the mood of an area and even "see" events that happened there in the recent past. What a character senses depends on the result of a skill check:
 

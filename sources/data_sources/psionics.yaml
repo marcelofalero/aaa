@@ -1141,7 +1141,7 @@ items:
                 marque, con un +2 Penalización de paso si fue testigo del sujeto, o un +4 Penalización de paso si el sujeto fue presenciado por otra persona, o simplemente grabado. Estas penalizaciones son acumulativas con los modificadores situacionales de navegación Otros.
       postcognition:
         attribute: INT
-        cost: 3
+        cost: 4
         url: /psionics/esp/#postcognition
         trained_only: false
         rank_benefits:

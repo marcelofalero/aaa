@@ -150,7 +150,7 @@ marque, con un +2 Penalización de paso si fue testigo del sujeto, o un +4 Penal
 ---
 
 ## Postcognición
-{{< specialty attr="INT" untrained="yes" cost="3" >}}
+{{< specialty attr="INT" untrained="yes" cost="4" >}}
 
 Con esta habilidad, un Personaje puede sentir el estado de ánimo de un área e incluso "ver" eventos que sucedieron allí en el pasado reciente. Lo que detecta un Personaje depende del resultado de una prueba de habilidad:
 

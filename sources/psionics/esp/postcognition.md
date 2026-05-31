@@ -1,6 +1,6 @@
 ---
 attribute: INT
-cost: 3
+cost: 4
 url: /psionics/esp/#postcognition
 trained_only: false
 rank_benefits:
