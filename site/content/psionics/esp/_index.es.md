@@ -238,20 +238,28 @@ Una vez que se utiliza el LRP, el Personaje puede esforzarse para reactivar la e
 ## Psicometría
 {{< specialty attr="INT" untrained="yes" cost="3" >}}
 
-Esta habilidad otorga a su usuario la capacidad de leer impresiones psíquicas
-de objetos inanimados. El personaje debe tocar el objeto para obtener
-información sobre quién lo ha usado y en qué contexto. Se pueden estudiar
-herramientas, armas, ropa, joyas, libros, otros artículos personales e incluso
-cadáveres. Las personas y criaturas vivas no pueden ser estudiadas con esta
-habilidad.
-- **Ordinario:** el personaje recibe emociones simples asociadas al objeto.
-- **Bueno:** recibe imágenes simples asociadas al objeto.
-- **Asombroso:** el personaje experimenta un breve encuentro como si fuera la persona que usa el objeto o su dueño.
-**Beneficios de Rango:**
-- **Al rango 1 [Tesoros]:** el objeto en cuestión debe ser algo especial para el dueño (por ejemplo, un anillo de bodas).
-- **Al rango 4 [Uso Regular]:** el objeto puede ser simplemente algo que el dueño usaba regularmente (por ejemplo, un reloj).
-- **Al rango 8 [Uso Frecuente]:** algo que el dueño simplemente usaba con frecuencia (por ejemplo, un bolígrafo o llaves).
-- **Al rango 12 [Uso Mínimo]:** casi cualquier cosa perteneciente al dueño, siempre que la haya usado durante al menos una hora en total.
+Esta habilidad le da a su usuario la capacidad de leer impresiones psíquicas de objetos inanimados. El Personaje debe tocar el objeto para saber quién lo ha utilizado y en qué contexto. Lo que detecta un Personaje depende del resultado de una prueba de habilidad:
+
+### Verificar resultados
+- **Ordinario:** El Personaje recibe emociones simples asociadas con el objeto.
+- **Bueno:** Recibe imágenes simples asociadas al objeto.
+- **Asombroso:** El Personaje experimenta un breve encuentro como si fuera la persona que utiliza el objeto o su dueño.
+
+Para verse afectado por esta habilidad, un objeto debe ser un elemento que el Personaje pueda sostener y manipular para captar impresiones psiónicas. Se pueden estudiar herramientas, armas, ropa, joyas, libros, objetos personales e incluso cadáveres mediante la psicometría. Las personas y criaturas vivas no se pueden estudiar con esta habilidad.
+
+La suciedad, el suelo, el polvo o los objetos encontrados casualmente no se ven afectados porque las personas no hacen el tipo de conexiones con estos objetos que resultan en residuos psiónicos que quedan (aunque la poscognición recoge las impresiones dejadas en un área).
+
+El Director de Juego puede activar automáticamente esta habilidad (sin costo de puntos de energía psiónica) para proporcionar una pista o dirigir una historia.
+
+### Beneficios de Rango
+
+▶ **Rango 1 (Atesorado):** En Rango 1 en esta habilidad, el objeto en cuestión debe ser algo especial para el propietario (un objeto que atesora, como un anillo de bodas).
+
+▶ **Rango 4 (Uso regular):** En Rango 4, el artículo puede ser simplemente algo que el propietario usa regularmente (como un reloj o gafas).
+
+▶ **Rango 8 (Uso frecuente):** En Rango 8, el artículo puede ser algo que el propietario simplemente usó con frecuencia (como un bolígrafo o llaves).
+
+▶ **Rango 12 (Uso mínimo):** En Rango 12, el artículo puede ser casi cualquier cosa que pertenezca al propietario, siempre y cuando lo haya usado durante al menos una hora en total (como un arma o un libro).
 
 ---
 
