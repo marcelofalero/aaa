@@ -29,7 +29,7 @@ de otras facciones, y las consecuencias de que un precog sea descubierto
 pueden ser graves.
 
 Ver el poder psiónico de [ESP-precognición]({{< relref
-"/psionics/esp#precognicion" >}}).
+"/psionics/esp#precognición" >}}).
 
 **Ventaja Exclusiva:** Solo un personaje en una tripulación puede poseer esta
 capacidad. Un personaje solo puede poseer una Ventaja Exclusiva.
