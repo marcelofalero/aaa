@@ -96,7 +96,7 @@ By spending an extra point of psionic energy, the character can treat the skill 
 
 #### Adrenal boost
 The character can mentally boost adrenaline output, giving an action check
-bonus. 
+bonus.
 - **Ordinary:** +1 to action check score.
 - **Good:** +2 to action check score.
 - **Amazing:** +3 to action check score.
@@ -126,7 +126,7 @@ By concentrating, a character using this skill can heal wounds or disease. The c
 For disease, the following results apply:
 - **Ordinary:** reduce the degree of illness by one grade (from Good to Ordinary, for instance).
 - **Good:** reduce by two grades.
-- **Amazing:** reduce by three grades. 
+- **Amazing:** reduce by three grades.
 
 Diseases reduced below Marginal are considered cured.
 
@@ -201,9 +201,9 @@ A morphed body part retains its original characteristics; no game statistics cha
 **Rank 9** – Elongate legs: +1 m height.
 
 #### Contortion and Compression (Ranks 5, 7, 9)
-**Rank 5** – Fit into a container of similar "volume" as your body. The volume of an average human male can fit in a 50cm side cube with a limited degree of movement. 
+**Rank 5** – Fit into a container of similar "volume" as your body. The volume of an average human male can fit in a 50cm side cube with a limited degree of movement.
 
-**Rank 7** – Fit into a container of 3/4 the volume of your body, movement is not hindered. 
+**Rank 7** – Fit into a container of 3/4 the volume of your body, movement is not hindered.
 
 **Rank 9** – Fit into a container of 1/2 the volume of your body, movement is not hindered.
 
@@ -298,7 +298,7 @@ Claw/Spur/Horn attacks are made while this power is active, inflict additional d
 - **Amazing:** +3 damage
 
 ### Rank Benefits
-**Rank 6 [Increased Quality]** claws/spurs/horns attacks are now considered good quality. 
+**Rank 6 [Increased Quality]** claws/spurs/horns attacks are now considered good quality.
 
 **Rank 8 [Improved Destabilization]** From this onwards the good success on attacks are enough to destabilize an armor. This effect now works on good quality armors as well.
 
@@ -349,7 +349,7 @@ By establishing physical contact, the psion forces a parasitic bio-electric link
 | **Good** | +2 step penalty. | -2 step bonus. |
 | **Amazing** | +3 step penalty. | -3 step bonus. |
 
-The effect lasts until the end of the next round. 
+The effect lasts until the end of the next round.
 
 ### Rank Benefits
 **Rank 6 [Symbiotic Absorption]**, the psion can choose to convert the siphoned energy into raw regenerative material. Instead of taking the step bonus for themselves, the psion can heal:

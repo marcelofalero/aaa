@@ -21,75 +21,77 @@ just the broad skill.
 ## Contact
 {{< specialty attr="PER" untrained="yes" cost="3" extended="true" >}}
 
-With this skill, a character can send and receive thoughts to and from another
-character, usually for the purpose of exchanging information. Modifiers may
-apply, depending on the range, familiarity, and willingness of the target mind
-to be contacted. The type of thoughts that can be exchanged depends on the
-result of a skill check:
+With this skill, a character can send and receive thoughts to and from another character, usually for the purpose of exchanging information. Modifiers may apply, depending on the range, familiarity, and willingness of the target mind to be contacted. The type of thoughts that can be exchanged depends on the result of a skill check.
+
+### Check Results
 - **Ordinary:** simple concepts (brief questions and one-word answers) can be exchanged.
 - **Good:** moderate discussion (pass notes back and forth, one note per 2 phases) can occur.
 - **Amazing:** the communicating characters can have a detailed discussion, as though they were conversing vocally. If the psionics-user's intended target isn't willing to communicate, the target's Will resistance modifier is applied as a penalty to the skill check, in addition to any other situation modifiers. If contact is established anyway, an unwilling mind can expel the user by making a successful Will feat check or a Resolve-mental resolve skill check, with a penalty (+1, +2, or +3 steps) depending on the psionics-user's degree of success.
-**Rank Benefits:**
-- **At rank 4 [Increased Duration]:** the unit of duration is 1 minute, plus an additional minute per psionic energy point spent to extend it. At rank 8, this duration becomes 5 minutes, and at rank 12, the base unit of duration becomes 30 minutes.
-- **At rank 6 [Language]:** a telepath learns to comprehend the meaning underlying ideas expressed even in languages he or she does not understand. The character may attempt an Intelligence feat check to understand the gist of the concept being communicated, or to make his or her own thoughts clearer to the target. At the Gamemaster's discretion, a +2 step penalty applies to attempting to communicate with alien minds.
-- **At rank 12 [Switch]:** A telepath who reaches rank 12 in contact can attempt to switch his or her consciousness with that of the target—effectively trading bodies.
 
----
+Situation modifiers for the familiarity of the mind and the distance at which contact is being used are as follows:
 
-## Datalink
-{{< specialty attr="PER" untrained="no" cost="4" extended="true" >}}
+| Situation/distance | Modifier |
+| :--- | :---: |
+| Familiar mind | –1 |
+| Unfamiliar mind | none |
+| Combative mind | +2 |
+| Hostile mind | +1 |
+| 1–10 meters | –1 |
+| 11–100 meters | none |
+| 101 m–1 km | +1 |
+| 2–10 km | +2 |
+| 11–100 km | +3 |
+| 101–1,000 km (low orbit) | +4 |
+| 1,001–10,000 km (high orbit) | +5 |
 
-This skill is the ability to link one's mind with a computer (or a cybernetic
-machine, if the optional rules for cybertech are being used) without using a
-physical connection of any kind. The datalink skill can be used to operate
-computers or cybernetic machinery with mental commands, to project one's mind
-into the datastream without using a neural interface jack (NIJack) or
-gridcaster, or to examine computer data by mentally scanning the storage unit.
-In game terms, the character is able to use the same functions provided by a
-computer operating system: copy, delete, error recognition, file management,
-protection, protocol, and save.
-**Rank Benefits:**
-- **At rank 3 [Increased Distance]:** the distance at which the character can use the datalink skill increases to 4 (no penalty)/ 8 (+1 step penalty)/ 12 (+2 step penalty) meters. At rank 6, this becomes 8/16/25 meters. At rank 9, it increases again to 15/30/50 meters, and at rank 12, it improves to 30/60/100 meters.
-- **At rank 3 [Memory Slots]:** the character effectively has 1 slot of active memory, which can be used to store data or programs. At rank 6, the active memory increases to 2 slots, to 3 slots at rank 9, and 4 slots at rank 12.
-- **At rank 4 [Increased Duration]:** the base unit of duration increases to 1 minute, plus an additional minute per psionic energy point spent to maintain it. At rank 8, this unit of duration becomes 5 minutes, and at rank 12, it increases to 30 minutes.
-- **At rank 4 [Edit]:** the character can edit information stored on computers, deleting, resequencing, or otherwise changing the appearance of the data.
-- **At rank 6 [Robolink]:** the character can temporarily seize control of robots. On a successful skill check, the character can implant commands in a single robot, which then behaves as though it had been affected by Telepathy-suggest.
+### Rank Benefits
+▶ **Rank 4 [Multiple Targets]** The character can establish contact with additional targets: equal to the number of ranks in this skill, but the skill suffers a -1 step penalty.
 
----
+▶ **Rank 6 [Language]** A telepath learns to comprehend the meaning underlying ideas expressed even in languages he or she does not understand. The character may attempt an Intelligence feat check to understand the gist of the concept being communicated, or to make his or her own thoughts clearer to the target. At the Gamemaster's discretion, a +2 step penalty applies to attempting to communicate with alien minds.
 
-## Drain
-{{< specialty attr="PER" untrained="no" cost="4" >}}
-
-The character becomes able to sap the energy of another living being from a
-short distance away (range 1/2/4). When the psion purchases the skill, he or
-she selects one of the target's attributes (STR, DEX, CON, INT, or WIL) to
-govern the effect type. Any success on the skill check results in the target
-losing 1 point of the related attribute. If the target reaches a 0 score in
-the affected ability, he or she is helpless and unable to do anything until
-his or her score improves to at least 1.
-**Rank Benefits:**
-- **At rank 1 [Attribute Select]:** At ranks 1, 4, 8, and 12, the character can pick a new attribute to sap. The specific attribute affected is chosen before the skill check is made.
-- **At rank 6 [Transference]:** the user can temporarily gain the use of the drained attribute points. The benefit lasts until the victim recovers the lost points (to a maximum of 24 hours).
+⊗ **Rank 12 [Switch]** A telepath who reaches rank 12 in contact can attempt to switch his or her consciousness with that of the target—effectively trading bodies.
 
 ---
 
 ## Empathic Projection
 {{< specialty attr="PER" untrained="yes" cost="3" >}}
 
-With this skill, a character may alter the mood of other beings—even those
-with whom the character does not share a language, such as foreigners, aliens,
-or animals. In game terms, this shifts the emotional state of the target
-(Combative, Hostile, Neutral, Friendly, Charmed, or Fanatic) by one, two, or
-three steps, depending on the success (Ordinary, Good, or Amazing). In the
-event of a Critical Failure, the target's emotional state shifts two steps in
-the direction opposite of what was desired. The target must be within visual
-range of the psion. Minimum duration is d4 phases; add an additional number of
-phases equal to the user's skill rank. Multiple targets can be selected, but
-each additional target beyond the first provides a cumulative +1 step penalty
-to the skill check.
-**Rank Benefits:**
-- **At rank 4 [Increased Duration]:** the duration is in rounds (modified by an additional number of rounds equal to the user's skill rank). At rank 8, the duration increases to minutes. Finally, at rank 12, the duration is in 5-minute intervals.
-- **At rank 4 [Ignore penalty]:** the user can ignore one penalty step for either the target's current emotional state, or the number of intended targets. At rank 8, the character can ignore two such penalty steps, and at rank 12, the character can ignore three.
+With this skill, a character may alter the mood of other beings, even those with whom the character does not share a language, such as foreigners, aliens, or animals. 
+
+In the event of a Critical Failure, the target's emotional state shifts two steps in the direction opposite of what was desired. 
+
+The target must be within visual range of the psion. 
+
+This power last until the begining of the next turn and a number of extra turns equal to half the ranks in this skill. Multiple targets can be selected, but each additional target beyond the first provides a cumulative +1 step penalty to the skill check.
+
+### Check Results
+- **Ordinary:** the user shifts the emotional state of the target by 1 step.
+- **Good:** the user shifts the emotional state of the target by 2 steps.
+- **Amazing:** the user shifts the emotional state of the target by 3 steps.
+
+Situation modifiers for the current attitude of the target are as follows:
+
+| Attitude | Modifier |
+| :--- | :---: |
+| Combative | +3 |
+| Hostile | +2 |
+| Neutral | 0 |
+| Friendly | +1 |
+| Charmed | +2 |
+| Fanatic | +3 |
+
+### Rank Benefits
+
+▶ **Rank 3 [Extended Duration]** The skill is now considered extended duration.
+
+▶ **Rank 5 [Subtlety]** using this skill is now very hard to detect, only characters with psionic sensitivity have a chance of detecting it, but they still suffer +3 step penalty yo their [[awareness-psionic sense]] skill roll.
+
+▶ **Rank 6, 9, 12 [Ignore penalty]** The user can ignore one step of penalty for either the target's current emotional state, or the number of intended targets. At rank 6, the character can ignore two such penalty steps, and at rank 12, the character can ignore three.
+
+### Stress Relief
+When the persistent stress rules are in play, the character can use this skill to help the surrounding people to resist the effects of stress, doing so require the character to be trained in this specialty skill and spend at least one hour a day in the presence of the people he wants to help.
+
+The result of the skill check is translated into a bonus on the [[resolve-mental resolve]] skill check used to resist stress. The bonus applies to each person in the group, include the psion.
 
 ---
 
@@ -299,6 +301,32 @@ advantage of another being. To do so requires that the Aleerin succeed at a
 Resolve-mental resolve check.
 **Rank Benefits:**
 - **At rank 4 [Increased Effect]:** the user can affect two targets with the same skill check. At rank 8, he or she can affect four targets, and eight targets at rank 12.
+
+---
+
+## Thought Worm
+{{< specialty attr="PER" untrained="no" cost="4" extended="true" >}}
+
+The psion inserts a mental construct into the mind of another being. This worm consumes the target's cognitive energy, making mental tasks harder while allowing the psion to force the target's mind to process tasks for them.
+
+Upon activation, the target's Will defense imposes a penalty to the activation check. If successful, the worm is implanted and the psion selects one of the target's Intelligence-based skills. While the power lasts, the psion can use that selected skill, utilizing the target's ranks and Intelligence score.
+
+**Awareness & Control:** The target is aware of the psion's presence as alien thoughts pop up in their mind. If the target is unwilling, whenever the psion wants to use the borrowed skill, the psion must make a new skill check (penalized by the target's Will defense modifier) to force the target's mind to comply. Failing this check means the task is not processed, but the worm remains; only a Critical Failure frees the target.
+
+### Check Results
+
+- **Ordinary:** The target suffers a -1 step penalty to all Intelligence-based skill and feat checks.
+- **Good:** The penalty is -2 steps.
+- **Amazing:** The penalty is -3 steps.
+
+### Rank Benefits
+▶ **Rank 3 [Broad Selection]** You can now select up to 3 of the target's specialty skills instead of a single one.
+
+▶ **Rank 6 [Psionic Link]** If the target is a psion, you can choose one of their psionic skills instead of a standard skill. Because you are only drawing upon their knowledge rather than utilizing their remote mind to process it, you use your own ability score combined with the target's ranks. The power point cost comes from your own reserves and is doubled.
+
+▶ **Rank 9 [Improved Link]** Using the target's psionic skill via Psionic Link no longer costs double power points.
+
+▶ **Rank 12 [Improved Worm]** You are no longer limited to Intelligence. You can now select any Intelligence, Will, or Personality-based specialty skill. All selected skills must share the same ability score, and the step penalty from the Check Results is applied to all checks using that chosen ability score.
 
 ---
 

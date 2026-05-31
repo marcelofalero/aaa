@@ -96,7 +96,7 @@ Al gastar un punto extra de energía psiónica, el Personaje puede tratar el uso
 
 #### Impulso suprarrenal
 El Personaje puede aumentar mentalmente la producción de adrenalina, dando un Tirada de Acción
-bonificación. 
+bonificación.
 - **Ordinario:** +1 a la puntuación Tirada de Acción.
 - **Bueno:** +2 a la puntuación Tirada de Acción.
 - **Asombroso:** +3 a la puntuación Tirada de Acción.
