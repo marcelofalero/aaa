@@ -116,7 +116,7 @@ usuario psiónico. Cada objetivo tiene derecho a hacer una tirada de
 Percepción-intuición para ver si la ilusión es efectiva contra ese individuo.
 **Beneficios de Rango:**
 - **Al rango 5 [Desaparecer]:** un personaje que alcanza el rango 5 puede ocultar su presencia, haciéndose efectivamente invisible. La habilidad afecta a un número de observadores igual al rango del usuario psiónico en Ilusión sin penalizador a la tirada de habilidad; cada objetivo adicional proporciona un penalizador acumulativo de +1 paso a la tirada de habilidad del usuario.
-- **Al rango 9 [Delirio]:** el usuario se vuelve capaz de proyectar una ilusión que el objetivo ayuda a crear. El usuario proporciona el esquema más básico de una sugerencia, y la mente del objetivo completa los detalles. (Trátelo como una tirada de habilidad de Telepatía-sugerencia, aunque conlleva un bonificador de +1 en lugar de un penalizador). Si el delirio surte efecto, el objetivo responde como si se tratara de estímulos físicos.
+- **Al rango 9 [Delirio]:** la ilusión creada es tan convincente que el objetivo suministra mentalmente detalles no sensoriales, como emociones, e intangibles, como una sensación de libertad o paz. Con una prueba de habilidad de ilusión exitosa, el psiónico puede incluir una sugerencia en la ilusión, según la habilidad especializada de Telepatía Sugerir.
 
 ---
 
@@ -325,7 +325,7 @@ es necesario que el Aleerin supere una tirada de Resolución Mental.
 
 El psion inserta una construcción Mental en la mente de otro ser. Este gusano consume la energía cognitiva del objetivo, lo que dificulta las tareas de Mental y permite que el psion fuerce la mente del objetivo a procesar las tareas por él.
 
-Tras la activación, la defensa de Voluntad del objetivo impone una penalización a la prueba de activación. Si tiene éxito, se implanta el gusano y el psion selecciona una de las habilidades basadas en Inteligencia del objetivo. Mientras dure el poder, el psion puede usar esa habilidad seleccionada, utilizando el Rangos y la puntuación de Inteligencia del objetivo.
+El objetivo debe estar dentro de un rango de 30 metros y en la línea de visión, o ser un objetivo activo del poder [Telepatía-contacto]({{< relref "/psionics/telepathy#contact" >}}). Tras la activación, la defensa de Voluntad del objetivo impone una penalización a la prueba de activación. Si tiene éxito, se implanta el gusano y el psion selecciona una de las habilidades basadas en Inteligencia del objetivo. Mientras dure el poder, el psion puede usar esa habilidad seleccionada, utilizando el Rangos y la puntuación de Inteligencia del objetivo.
 
 **Alerta y Control:** El objetivo es consciente de la presencia del psion cuando pensamientos alienígenas aparecen en su mente. Si el objetivo no está dispuesto, siempre que el psion quiera usar la habilidad prestada, debe realizar una nueva prueba de habilidad (penalizada por el modificador de defensa de Voluntad del objetivo) para obligar a la mente del objetivo a obedecer. Si no se supera esta verificación, la tarea no se procesa, pero el gusano permanece; sólo un Fallo Crítico libera al objetivo.
 
