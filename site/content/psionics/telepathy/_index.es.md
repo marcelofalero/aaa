@@ -276,24 +276,6 @@ rango del usuario original es menor. Solo se permite un intento por día.
 ## Guía
 {{< specialty attr="PER" untrained="no" cost="4" extended="true" >}}
 
-nombre: Orientación
-atributo: PER
-costo: 4
-URL: /psionics/telepatía/#orientación
-solo entrenado: verdadero
-duración_extendida: verdadero
-rango_beneficios:
-- Rango: 3
-  título: Sesión prolongada
-- Rango: 4
-  título: Competencia fundamental
-- Rango: 6
-  título: Competencia fundamental
-- Rango: 8
-  título: Sesión prolongada
-- Rango: 12
-  título: Acceso restringido
-
 Requiere Ventaja: Fraal Psionics Schooling (exclusivo Ventaja).
 
 La psion llega a la Dimensión de las Ideas, un antiguo depósito Fraal de conocimiento semi-sensible. El psion consulta al constructo para obtener orientación general sobre la situación actual. Si tiene éxito, la dimensión proyecta un "asistente virtual" en la mente del psion, proporcionando conocimiento abstracto y práctico, así como consejos interesantes en tiempo real.

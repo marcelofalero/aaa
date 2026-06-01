@@ -4,10 +4,14 @@ cost: 4
 url: /psionics/telepathy/#thought-worm
 trained_only: true
 rank_benefits:
-- rank: 1
-  title: Attribute Select
+- rank: 3
+  title: Broad Selection
 - rank: 6
-  title: Transference
+  title: Psionic Link
+- rank: 9
+  title: Improved Link
+- rank: 12
+  title: Improved Worm
 extended_duration: true
 name: Thought Worm
 ---
