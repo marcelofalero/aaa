@@ -1,3 +1,4 @@
+---
 name: Guidance
 attribute: PER
 cost: 4
@@ -15,7 +16,7 @@ rank_benefits:
   title: Prolonged Session
 - rank: 12
   title: Restricted Access
-
+---
 Requires Perk: Fraal Psionics Schooling (Exclusive Perk).
 
 The psion reaches into the Idea Dimension—an ancient, semi-sentient Fraal repository of knowledge. The psion queries the construct for general guidance on the situation at hand. If successful, the dimension projects a "virtual assistant" into the psion's mind, providing abstract and practical knowledge, as well as insightful tip in real-time.

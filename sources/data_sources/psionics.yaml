@@ -2763,33 +2763,21 @@ items:
         url: /psionics/telepathy/#guidance
         trained_only: true
         rank_benefits:
+          - rank: 3
+            title: Prolonged Session
+          - rank: 4
+            title: Foundational Competence
           - rank: 6
-            title: Extended Time
+            title: Foundational Competence
+          - rank: 8
+            title: Prolonged Session
           - rank: 12
-            title: Conduit
+            title: Restricted Access
         extended_duration: true
         localized:
           - en:
               name: Guidance
               description: |-
-                name: Guidance
-                attribute: PER
-                cost: 4
-                url: /psionics/telepathy/#guidance
-                trained_only: true
-                extended_duration: true
-                rank_benefits:
-                - rank: 3
-                  title: Prolonged Session
-                - rank: 4
-                  title: Foundational Competence
-                - rank: 6
-                  title: Foundational Competence
-                - rank: 8
-                  title: Prolonged Session
-                - rank: 12
-                  title: Restricted Access
-
                 Requires Perk: Fraal Psionics Schooling (Exclusive Perk).
 
                 The psion reaches into the Idea Dimension—an ancient, semi-sentient Fraal repository of knowledge. The psion queries the construct for general guidance on the situation at hand. If successful, the dimension projects a "virtual assistant" into the psion's mind, providing abstract and practical knowledge, as well as insightful tip in real-time.
@@ -2814,24 +2802,6 @@ items:
           - es:
               name: Guía
               description: |-
-                nombre: Orientación
-                atributo: PER
-                costo: 4
-                URL: /psionics/telepatía/#orientación
-                solo entrenado: verdadero
-                duración_extendida: verdadero
-                rango_beneficios:
-                - Rango: 3
-                  título: Sesión prolongada
-                - Rango: 4
-                  título: Competencia fundamental
-                - Rango: 6
-                  título: Competencia fundamental
-                - Rango: 8
-                  título: Sesión prolongada
-                - Rango: 12
-                  título: Acceso restringido
-
                 Requiere Ventaja: Fraal Psionics Schooling (exclusivo Ventaja).
 
                 La psion llega a la Dimensión de las Ideas, un antiguo depósito Fraal de conocimiento semi-sensible. El psion consulta al constructo para obtener orientación general sobre la situación actual. Si tiene éxito, la dimensión proyecta un "asistente virtual" en la mente del psion, proporcionando conocimiento abstracto y práctico, así como consejos interesantes en tiempo real.
@@ -2949,9 +2919,13 @@ items:
 
                 ▶ **Rango 12 [Gusano mejorado]** Ya no estás limitado a la Inteligencia. Ahora puede seleccionar cualquier Especialidad basado en Inteligencia, Voluntad o Personalidad. Todas las habilidades seleccionadas deben compartir la misma puntuación de habilidad, y el Penalización de paso de los resultados de la verificación se aplica a todas las comprobaciones que utilizan esa puntuación de habilidad elegida.
         rank_benefits:
-          - rank: 1
-            title: Attribute Select
+          - rank: 3
+            title: Broad Selection
           - rank: 6
-            title: Transference
+            title: Psionic Link
+          - rank: 9
+            title: Improved Link
+          - rank: 12
+            title: Improved Worm
         extended_duration: true
     trained_only: true
