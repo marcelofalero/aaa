@@ -2772,35 +2772,87 @@ items:
           - en:
               name: Guidance
               description: |-
-                With a successful skill check, the telepath can implant one of his or her
-                non-psionic skills in the mind of a subject for as long as he or she continues
-                to expend psionic energy points. The attempt carries the same situational
-                modifiers as the contact skill. The target must be within visual range of the
-                psion using this skill. The subject gains access to the appropriate broad
-                skill on an Ordinary success, half the telepath's rank (rounded down) in the
-                appropriate specialty skill on a Good success, or the telepath's rank -1 on an
-                Amazing success. Obviously, the telepath cannot use guidance to confer skills
-                he or she does not possess—and cannot confer skills learned via another
-                telepath using guidance!
-                **Rank Benefits:**
-                - **At rank 6 [Extended Time]:** the user only needs to expend psionic energy points every 5 rounds in order to continue granting the skill to the subject.
-                - **At rank 12 [Conduit]:** the user can transfer a non-psionic skill he or she does not possess by taking it from the mind of a willing "donor."
+                name: Guidance
+                attribute: PER
+                cost: 4
+                url: /psionics/telepathy/#guidance
+                trained_only: true
+                extended_duration: true
+                rank_benefits:
+                - rank: 3
+                  title: Prolonged Session
+                - rank: 4
+                  title: Foundational Competence
+                - rank: 6
+                  title: Foundational Competence
+                - rank: 8
+                  title: Prolonged Session
+                - rank: 12
+                  title: Restricted Access
+
+                Requires Perk: Fraal Psionics Schooling (Exclusive Perk).
+
+                The psion reaches into the Idea Dimension—an ancient, semi-sentient Fraal repository of knowledge. The psion queries the construct for general guidance on the situation at hand. If successful, the dimension projects a "virtual assistant" into the psion's mind, providing abstract and practical knowledge, as well as insightful tip in real-time.
+
+                The assistant resist helping with actions with the intent of harming sentient being (+3 steps penalty to the activation test), while is eager to help with action which have a clear, and in the short term will save people (-3 step bonus to the activation test), like for example disarming a bomb. The power last until the beginning of the next round, but it can be extended by spending a psionic power point at the beginning of the round. Out of combat it last 1 minute per rank, or until the task for which it was invoked is resolved.
+
+                The depth of the construct's guidance—and thus the resulting Assist Score—is determined by the psion's activation check.
+
+                # Check Results
+                - Ordinary: The construct is partially engaged. The Assist Score is equal to 12/6/3.
+                - Good: The construct shows willingness to help. The Assist Score is 16/8/4.
+                - Amazing: The construct help to the best of his abilities 20/10/5.
+
+                Once the Assist Score is determined, the psion must acts as a channel for the construct. He doesn’t spend actions to assist that he makes, but while assisting other rolls he still needs to spend an action to communicate the assistant advice. If the character is capable of using the contact power he can treat the assistant as another target an avoid needing using his time or actions to assist. Resolve the assistance as usual, replacing the skill used to assist with the Assist Score.
+
+                ### Rank Benefits
+                ▶ **Rank 3, 8 [Prolonged Session]** At rank 3 the out of combat duration increases to 10 minutes per rank. At rank 8 the duration increase once again to 1 hour per rank.
+
+                ▶ **Rank 4, 6 [Foundational Competence]** The virtual assistant provides such clear foundational instructions, if the character making the main check does not possess the required Broad Skill for the task, he counts as having it for the assisted checks. At rank 6, if he is not trained in the required specialty skill he counts as having 1 rank.
+
+                ▶ **Rank 12 [Restricted Access]** The sentient dimension recognizes the psion as a trusted user. Giving him access to secret and restricted information. Reaching rank 12 is not enough to use this benefit, it also requires authorization from the Fraal governing body in charge of the construct. It is usually granted after a rigorous background check and an oath(tied to the construct).
           - es:
               name: Guía
               description: |-
-                Con una tirada de habilidad exitosa, el telépata puede implantar una de sus
-                habilidades no psiónicas en la mente de un objetivo durante el tiempo que
-                continúe gastando puntos de energía psiónica. El intento conlleva los mismos
-                modificadores situacionales que la habilidad Contacto. El objetivo debe estar
-                dentro del rango visual del psiónico. El sujeto adquiere acceso a la habilidad
-                general apropiada en un éxito Ordinario, la mitad del rango del telépata
-                (redondeado hacia abajo) en la habilidad especializada con un éxito Bueno, o
-                el rango del telépata -1 en un éxito Asombroso. Está claro que el telépata no
-                puede conferir habilidades que no posee él mismo, y no puede conferir
-                habilidades adquiridas a través de la Guía de otra persona.
-                **Beneficios de Rango:**
-                - **Al rango 6 [Tiempo Extendido]:** el usuario solo necesita gastar puntos de energía psiónica cada 5 asaltos para poder seguir concediendo la habilidad al objetivo.
-                - **Al rango 12 [Conducto]:** el usuario puede transferir una habilidad no psiónica que no posee sacándola de la mente de un donante dispuesto.
+                nombre: Orientación
+                atributo: PER
+                costo: 4
+                URL: /psionics/telepatía/#orientación
+                solo entrenado: verdadero
+                duración_extendida: verdadero
+                rango_beneficios:
+                - Rango: 3
+                  título: Sesión prolongada
+                - Rango: 4
+                  título: Competencia fundamental
+                - Rango: 6
+                  título: Competencia fundamental
+                - Rango: 8
+                  título: Sesión prolongada
+                - Rango: 12
+                  título: Acceso restringido
+
+                Requiere Ventaja: Fraal Psionics Schooling (exclusivo Ventaja).
+
+                La psion llega a la Dimensión de las Ideas, un antiguo depósito Fraal de conocimiento semi-sensible. El psion consulta al constructo para obtener orientación general sobre la situación actual. Si tiene éxito, la dimensión proyecta un "asistente virtual" en la mente del psion, proporcionando conocimiento abstracto y práctico, así como consejos interesantes en tiempo real.
+
+                El asistente se resiste a ayudar con acciones con la intención de dañar a seres sensibles (penalización de +3 pasos a la prueba de activación), mientras que está ansioso por ayudar con acciones que tienen un objetivo claro y que en el corto plazo salvarán a las personas (-3 Bonificación de paso a la prueba de activación), como por ejemplo desarmar una bomba. El poder dura hasta el comienzo de la siguiente ronda, pero se puede extender gastando un punto de poder psiónico al comienzo de la ronda. Fuera de Combate dura 1 minuto por Rango, o hasta que se resuelva la tarea para la que fue invocado.
+
+                La profundidad de la guía del constructo (y, por tanto, la puntuación de asistencia resultante) está determinada por la comprobación de activación del psion.
+
+                # Verificar resultados
+                - Ordinario: La construcción está parcialmente comprometida. La puntuación de asistencia es igual a 12/6/3.
+                - Bueno: El constructo muestra voluntad de ayudar. La puntuación de asistencia es 16/8/4.
+                - Asombroso: El constructo ayuda lo mejor que puede 20/10/5.
+
+                Una vez que se determina la puntuación de asistencia, el psion debe actuar como canal para la construcción. No gasta acciones para ayudar a lo que hace, pero mientras ayuda en las tiradas de Otros aún necesita gastar una acción para comunicar el consejo del asistente. Si el Personaje es capaz de utilizar el poder de contacto, puede tratar al asistente como otro objetivo y evitar la necesidad de utilizar su tiempo o acciones para ayudar. Firmeza la asistencia como de costumbre, reemplazando la habilidad utilizada para ayudar con Assist Score.
+
+                ### Beneficios de Rango
+                ▶ **Rango 3, 8 [Sesión prolongada]** En Rango 3, la duración fuera de Combate aumenta a 10 minutos por Rango. En Rango 8, la duración aumenta una vez más a 1 hora por Rango.
+
+                ▶ **Rango 4, 6 [Competencia fundamental]** El asistente virtual proporciona instrucciones fundamentales tan claras que si el Personaje que realiza la comprobación principal no posee la habilidad amplia requerida para la tarea, cuenta como si la tuviera para las comprobaciones asistidas. En Rango 6, si no está capacitado en el Especialidad requerido, cuenta como si tuviera 1 Rango.
+
+                ▶ **Rango 12 [Acceso restringido]** La dimensión sensible reconoce psion como un usuario confiable. Dándole acceso a información secreta y restringida. Llegar a Rango 12 no es suficiente para utilizar este beneficio, también requiere autorización del organismo rector de Fraal a cargo de la construcción. Por lo general, se otorga después de una rigurosa verificación de antecedentes y un juramento (vinculado a la construcción).
       subdual:
         attribute: PER
         cost: 3

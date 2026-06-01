@@ -276,19 +276,45 @@ rango del usuario original es menor. Solo se permite un intento por día.
 ## Guía
 {{< specialty attr="PER" untrained="no" cost="4" extended="true" >}}
 
-Con una tirada de habilidad exitosa, el telépata puede implantar una de sus
-habilidades no psiónicas en la mente de un objetivo durante el tiempo que
-continúe gastando puntos de energía psiónica. El intento conlleva los mismos
-modificadores situacionales que la habilidad Contacto. El objetivo debe estar
-dentro del rango visual del psiónico. El sujeto adquiere acceso a la habilidad
-general apropiada en un éxito Ordinario, la mitad del rango del telépata
-(redondeado hacia abajo) en la habilidad especializada con un éxito Bueno, o
-el rango del telépata -1 en un éxito Asombroso. Está claro que el telépata no
-puede conferir habilidades que no posee él mismo, y no puede conferir
-habilidades adquiridas a través de la Guía de otra persona.
-**Beneficios de Rango:**
-- **Al rango 6 [Tiempo Extendido]:** el usuario solo necesita gastar puntos de energía psiónica cada 5 asaltos para poder seguir concediendo la habilidad al objetivo.
-- **Al rango 12 [Conducto]:** el usuario puede transferir una habilidad no psiónica que no posee sacándola de la mente de un donante dispuesto.
+nombre: Orientación
+atributo: PER
+costo: 4
+URL: /psionics/telepatía/#orientación
+solo entrenado: verdadero
+duración_extendida: verdadero
+rango_beneficios:
+- Rango: 3
+  título: Sesión prolongada
+- Rango: 4
+  título: Competencia fundamental
+- Rango: 6
+  título: Competencia fundamental
+- Rango: 8
+  título: Sesión prolongada
+- Rango: 12
+  título: Acceso restringido
+
+Requiere Ventaja: Fraal Psionics Schooling (exclusivo Ventaja).
+
+La psion llega a la Dimensión de las Ideas, un antiguo depósito Fraal de conocimiento semi-sensible. El psion consulta al constructo para obtener orientación general sobre la situación actual. Si tiene éxito, la dimensión proyecta un "asistente virtual" en la mente del psion, proporcionando conocimiento abstracto y práctico, así como consejos interesantes en tiempo real.
+
+El asistente se resiste a ayudar con acciones con la intención de dañar a seres sensibles (penalización de +3 pasos a la prueba de activación), mientras que está ansioso por ayudar con acciones que tienen un objetivo claro y que en el corto plazo salvarán a las personas (-3 Bonificación de paso a la prueba de activación), como por ejemplo desarmar una bomba. El poder dura hasta el comienzo de la siguiente ronda, pero se puede extender gastando un punto de poder psiónico al comienzo de la ronda. Fuera de Combate dura 1 minuto por Rango, o hasta que se resuelva la tarea para la que fue invocado.
+
+La profundidad de la guía del constructo (y, por tanto, la puntuación de asistencia resultante) está determinada por la comprobación de activación del psion.
+
+# Verificar resultados
+- Ordinario: La construcción está parcialmente comprometida. La puntuación de asistencia es igual a 12/6/3.
+- Bueno: El constructo muestra voluntad de ayudar. La puntuación de asistencia es 16/8/4.
+- Asombroso: El constructo ayuda lo mejor que puede 20/10/5.
+
+Una vez que se determina la puntuación de asistencia, el psion debe actuar como canal para la construcción. No gasta acciones para ayudar a lo que hace, pero mientras ayuda en las tiradas de Otros aún necesita gastar una acción para comunicar el consejo del asistente. Si el Personaje es capaz de utilizar el poder de contacto, puede tratar al asistente como otro objetivo y evitar la necesidad de utilizar su tiempo o acciones para ayudar. Firmeza la asistencia como de costumbre, reemplazando la habilidad utilizada para ayudar con Assist Score.
+
+### Beneficios de Rango
+▶ **Rango 3, 8 [Sesión prolongada]** En Rango 3, la duración fuera de Combate aumenta a 10 minutos por Rango. En Rango 8, la duración aumenta una vez más a 1 hora por Rango.
+
+▶ **Rango 4, 6 [Competencia fundamental]** El asistente virtual proporciona instrucciones fundamentales tan claras que si el Personaje que realiza la comprobación principal no posee la habilidad amplia requerida para la tarea, cuenta como si la tuviera para las comprobaciones asistidas. En Rango 6, si no está capacitado en el Especialidad requerido, cuenta como si tuviera 1 Rango.
+
+▶ **Rango 12 [Acceso restringido]** La dimensión sensible reconoce psion como un usuario confiable. Dándole acceso a información secreta y restringida. Llegar a Rango 12 no es suficiente para utilizar este beneficio, también requiere autorización del organismo rector de Fraal a cargo de la construcción. Por lo general, se otorga después de una rigurosa verificación de antecedentes y un juramento (vinculado a la construcción).
 
 ---
 
