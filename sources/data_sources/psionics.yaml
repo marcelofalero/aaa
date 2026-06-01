@@ -2877,7 +2877,7 @@ items:
               description: |-
                 The psion inserts a mental construct into the mind of another being. This worm consumes the target's cognitive energy, making mental tasks harder while allowing the psion to force the target's mind to process tasks for them.
 
-                Upon activation, the target's Will defense imposes a penalty to the activation check. If successful, the worm is implanted and the psion selects one of the target's Intelligence-based skills. While the power lasts, the psion can use that selected skill, utilizing the target's ranks and Intelligence score.
+                The target must be within 30 meters and in line of sight, or an active target of the [Telepathy-contact]({{< relref "/psionics/telepathy#contact" >}}) power. Upon activation, the target's Will defense imposes a penalty to the activation check. If successful, the worm is implanted and the psion selects one of the target's Intelligence-based skills. While the power lasts, the psion can use that selected skill, utilizing the target's ranks and Intelligence score.
 
                 **Awareness & Control:** The target is aware of the psion's presence as alien thoughts pop up in their mind. If the target is unwilling, whenever the psion wants to use the borrowed skill, the psion must make a new skill check (penalized by the target's Will defense modifier) to force the target's mind to comply. Failing this check means the task is not processed, but the worm remains; only a Critical Failure frees the target.
 
@@ -2900,7 +2900,7 @@ items:
               description: |-
                 El psion inserta una construcción Mental en la mente de otro ser. Este gusano consume la energía cognitiva del objetivo, lo que dificulta las tareas de Mental y permite que el psion fuerce la mente del objetivo a procesar las tareas por él.
 
-                Tras la activación, la defensa de Voluntad del objetivo impone una penalización a la prueba de activación. Si tiene éxito, se implanta el gusano y el psion selecciona una de las habilidades basadas en Inteligencia del objetivo. Mientras dure el poder, el psion puede usar esa habilidad seleccionada, utilizando el Rangos y la puntuación de Inteligencia del objetivo.
+                El objetivo debe estar dentro de un rango de 30 metros y en la línea de visión, o ser un objetivo activo del poder [Telepatía-contacto]({{< relref "/psionics/telepathy#contact" >}}). Tras la activación, la defensa de Voluntad del objetivo impone una penalización a la prueba de activación. Si tiene éxito, se implanta el gusano y el psion selecciona una de las habilidades basadas en Inteligencia del objetivo. Mientras dure el poder, el psion puede usar esa habilidad seleccionada, utilizando el Rangos y la puntuación de Inteligencia del objetivo.
 
                 **Alerta y Control:** El objetivo es consciente de la presencia del psion cuando pensamientos alienígenas aparecen en su mente. Si el objetivo no está dispuesto, siempre que el psion quiera usar la habilidad prestada, debe realizar una nueva prueba de habilidad (penalizada por el modificador de defensa de Voluntad del objetivo) para obligar a la mente del objetivo a obedecer. Si no se supera esta verificación, la tarea no se procesa, pero el gusano permanece; sólo un Fallo Crítico libera al objetivo.
 
