@@ -12,3 +12,5 @@ character can attempt to use any of the related specialty skills except those
 that can't be used untrained. The difficulty of such an action is reflected in
 the increased psionic energy cost and the higher base situation die for using
 just the broad skill.
+
+Unless noted otherwise, all psionic powers have a range of 10 meters, plus 5 per rank, and require line of sight. Some powers can be used over longer distances and without line of sight as long are the target is connected by [Telepathy-contact]({{< relref "/psionics/telepathy#contact" >}}).

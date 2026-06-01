@@ -1,7 +1,7 @@
 +++
 title = "Precog"
 cost = "5"
-ability = "WIL"
+ability = "—"
 type = "perk"
 layout = "list"
 omit_automatic_list = true

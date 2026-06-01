@@ -2393,7 +2393,7 @@ items:
                 effective against that individual.
                 **Rank Benefits:**
                 - **At rank 5 [Vanish]:** a character who reaches rank 5 can mask his or her presence, effectively becoming invisible. The ability affects a number of observers equal to the psionics-user's rank in illusion without a penalty to the skill check; each additional target provides a cumulative +1 step penalty to the user's skill check.
-                - **At rank 9 [Delusion]:** the user becomes capable of projecting an illusion that the target helps create. The user supplies the barest outline of a suggestion, and the target's mind fills in the details. (Treat this as a Telepathy-suggest skill check, though it carries a +1 bonus instead of a penalty). If the delusion takes effect, the target responds as though to physical stimuli.
+                - **At rank 9 [Delusion]:** the illusion created is so convincing that the target mentally supplies nonsensory details, such as emotion, and intangibles, such as a sense of freedom or peace. With a successful illusion skill check, the psion can include a suggestion in the illusion, as per the Telepathy specialty skill suggest.
           - es:
               name: Ilusión
               description: |-
@@ -2414,7 +2414,7 @@ items:
                 Percepción-intuición para ver si la ilusión es efectiva contra ese individuo.
                 **Beneficios de Rango:**
                 - **Al rango 5 [Desaparecer]:** un personaje que alcanza el rango 5 puede ocultar su presencia, haciéndose efectivamente invisible. La habilidad afecta a un número de observadores igual al rango del usuario psiónico en Ilusión sin penalizador a la tirada de habilidad; cada objetivo adicional proporciona un penalizador acumulativo de +1 paso a la tirada de habilidad del usuario.
-                - **Al rango 9 [Delirio]:** el usuario se vuelve capaz de proyectar una ilusión que el objetivo ayuda a crear. El usuario proporciona el esquema más básico de una sugerencia, y la mente del objetivo completa los detalles. (Trátelo como una tirada de habilidad de Telepatía-sugerencia, aunque conlleva un bonificador de +1 en lugar de un penalizador). Si el delirio surte efecto, el objetivo responde como si se tratara de estímulos físicos.
+                - **Al rango 9 [Delirio]:** la ilusión creada es tan convincente que el objetivo suministra mentalmente detalles no sensoriales, como emociones, e intangibles, como una sensación de libertad o paz. Con una prueba de habilidad de ilusión exitosa, el psiónico puede incluir una sugerencia en la ilusión, según la habilidad especializada de Telepatía Sugerir.
       mind-blast:
         attribute: PER
         cost: 4
