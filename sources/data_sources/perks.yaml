@@ -323,7 +323,7 @@ items:
             Esta ventaja proporciona al personaje 2 Puntos de Energía Psiónica (PP) adicionales. Esta ventaja solo puede comprarse una vez.
   precog:
     cost: '5'
-    ability: WIL
+    ability: —
     type: Exclusive
     localized:
       - en:
@@ -382,3 +382,24 @@ items:
 
             **Ventaja Exclusiva:** Solo un personaje en una tripulación puede poseer esta
             capacidad. Un personaje solo puede poseer una Ventaja Exclusiva.
+  fraal-psionics-schooling:
+    cost: '5'
+    ability: —
+    type: Exclusive
+    localized:
+      - en:
+          name: Fraal Psionics Schooling
+          description: |-
+            The character has received specialized psionic training from the Fraal.
+            
+            See the [Telepathy-guidance]({{< relref "/psionics/telepathy#guidance" >}}) psionic power.
+            
+            **Exclusive Perk:** Only one character in a crew may possess this ability. A character can only possess one Exclusive Perk.
+      - es:
+          name: Escolarización psiónica Fraal
+          description: |-
+            El personaje ha recibido entrenamiento psiónico especializado de los Fraal.
+            
+            Ver el poder psiónico de [Telepatía-orientación]({{< relref "/psionics/telepathy#guidance" >}}).
+            
+            **Ventaja Exclusiva:** Solo un personaje en una tripulación puede poseer esta capacidad. Un personaje solo puede poseer una Ventaja Exclusiva.
