@@ -18,7 +18,7 @@ name: Thought Worm
 
 The psion inserts a mental construct into the mind of another being. This worm consumes the target's cognitive energy, making mental tasks harder while allowing the psion to force the target's mind to process tasks for them.
 
-Upon activation, the target's Will defense imposes a penalty to the activation check. If successful, the worm is implanted and the psion selects one of the target's Intelligence-based skills. While the power lasts, the psion can use that selected skill, utilizing the target's ranks and Intelligence score.
+The target must be within 30 meters and in line of sight, or an active target of the [Telepathy-contact]({{< relref "/psionics/telepathy#contact" >}}) power. Upon activation, the target's Will defense imposes a penalty to the activation check. If successful, the worm is implanted and the psion selects one of the target's Intelligence-based skills. While the power lasts, the psion can use that selected skill, utilizing the target's ranks and Intelligence score.
 
 **Awareness & Control:** The target is aware of the psion's presence as alien thoughts pop up in their mind. If the target is unwilling, whenever the psion wants to use the borrowed skill, the psion must make a new skill check (penalized by the target's Will defense modifier) to force the target's mind to comply. Failing this check means the task is not processed, but the worm remains; only a Critical Failure frees the target.
 
