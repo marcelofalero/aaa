@@ -2635,6 +2635,8 @@ items:
 
                 **Rank Benefits:**
                 - **At rank 12 [Body-Riding]:** the character can attempt to seize control of a body that is already occupied, by making a Telepathy-psychic projection skill check, modified by the target's Will resistance modifier. The result determines how much control the character has over the new form, if any. On an Amazing result, the character has complete control of the target's body, and the target's consciousness is effectively "shut off." On a Good success, the character can only partially operate the body, as described above under entering unoccupied bodies. On an Ordinary success, the character can control the target's body only when the target is unconscious, or otherwise voluntarily relinquishes "control." On a Failure, the character merely remains noncorporeal. With a Critical Failure, the character enters the body, but becomes buried in the target's subconscious, unable to influence the target's body or mind (except perhaps as a sort of vague nagging sensation). The character can attempt to "escape" once per day, by making another Telepathy-psychic projection skill check.
+          - es: {}
+          - es: {}
       suggest:
         attribute: PER
         cost: 3
