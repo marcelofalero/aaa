@@ -205,23 +205,23 @@ personaje ha sido alterado por Telepatía-proyección empática.
 
 ---
 
-## Proyección Psíquica
+## Psychic Projection
 {{< specialty attr="PER" untrained="yes" cost="5" >}}
 
-Con esta habilidad, un personaje puede separar la mente del cuerpo y viajar a
-donde desee, dejando atrás su forma física. La conciencia del psiónico es
-capaz de volar y atravesar objetos sólidos. La forma mental del personaje es
-invisible e intangible, aunque su cuerpo físico sigue siendo vulnerable. Al
-viajar psíquicamente, la velocidad de movimiento del personaje es igual a (INT
-+ VOL) x 2. El personaje está efectivamente desnudo, siendo incapaz de llevar
-consigo objetos físicos como ropa o armas, aunque puede aparecer como desee.
-Solo otros seres proyectados psíquicamente pueden percibir al personaje de
-alguna manera, aunque el personaje puede percibir el mundo real a través de la
-vista y el oído. Un individuo proyectado puede regresar a su cuerpo físico en
-cualquier momento deseado, simplemente viajando de regreso a él y realizando
-con éxito otra tirada de habilidad de Telepatía-proyección psíquica.
-**Beneficios de Rango:**
-- **Al rango 12 [Posesión de Cuerpos]:** el personaje puede intentar tomar el control de un cuerpo que ya está ocupado haciendo una tirada de habilidad de Telepatía-proyección psíquica, modificada por el modificador de resistencia de Voluntad del objetivo. El resultado determina cuánto control tiene el personaje sobre la nueva forma.
+With this skill, a Personaje can separate mind from body and travel wherever desired, leaving his or her Físico form behind. The psion's consciousness is able to fly and to pass through solid objects. The Personaje's Mental form is invisible and intangible, though his or her Físico body is still vulnerable, making psychic "joyriding" a less intriguing prospect. Many psions endowed with this ability make use of a bodyguard (literally).
+
+While travelling psychically, the Personaje's movement rate is equal to (INT + VOL) x 2. The Personaje is effectively naked—being unable to bring Físico objects such as clothing or weapons along—though he or she can appear however desired. Only Otros psychically projected beings can perceive the Personaje in any fashion, though he or she can perceive the real world via sight and sound. Otros senses are effectively inactive—except for perceiving contact with Otros psychically projected beings as a sort of tingling sensation, which is either pleasant or unpleasant, depending on the reaction of the Otros being toward the Personaje.
+
+While projected individuals can pass through solid real-world objects, they cannot pass through one another. This makes it possible for such characters to attack one another, though they will ordinarily only be able to do so with unarmed Combate techniques, or with psionic abilities. See "Mental Combate", later in this chapter, for more information.
+
+A projected individual can return to his or her Físico body at any time desired, simply by traveling back to it and successfully performing another Telepathy-psychic projection skill check. A Personaje who runs out of psionic energy points while attempting to return becomes trapped in non-corporeal form until such time as he or she is able to recover enough psionic energy to try again. In the meantime, the body is effectively comatose, and will begin to deteriorate unless care is somehow provided.
+
+The major danger of psychic projection is that one will return to one's corporeal form only to find it already inhabited by someone else. In such dire circumstances, the Personaje will be unable to reenter his or her body, and must find another Físico body to occupy. The alternative is living forever after as a kind of ghost, able to perceive the real world, but unable to affect it in any way.
+
+Characters can enter any "unoccupied" living being they encounter, by the same means they reenter their own bodies. However, a Personaje occupying an unfamiliar form will be unable to "operate" it as well as his or her own. While in another person's body, a Personaje retains his or her own memories and skill Rangos, but uses the Atributos for the occupied body. (See the description of ESP-contact for more information.)
+
+**Rango Benefits:**
+- **At Rango 12 [Body-Riding]:** the Personaje can attempt to seize control of a body that is already occupied, by making a Telepathy-psychic projection skill check, modified by the target's Will resistance modifier. The result determines how much control the Personaje has over the new form, if any. On an Asombroso result, the Personaje has complete control of the target's body, and the target's consciousness is effectively "shut off." On a Bueno success, the Personaje can only partially operate the body, as described above under entering unoccupied bodies. On an Ordinario success, the Personaje can control the target's body only when the target is unconscious, or otherwise voluntarily relinquishes "control." On a Failure, the Personaje merely remains noncorporeal. With a Fallo Crítico, the Personaje enters the body, but becomes buried in the target's subconscious, unable to influence the target's body or mind (except perhaps as a sort of vague nagging sensation). The Personaje can attempt to "escape" once per day, by making another Telepathy-psychic projection skill check.
 
 ---
 
