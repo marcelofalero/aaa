@@ -1,7 +1,7 @@
 +++
 title = "Hangars & Miscellaneous"
 description = "Step 11 and Step 12 of Starship Construction."
-weight = 50
+weight = 60
 +++
 
 ## Step 11: Hangars And

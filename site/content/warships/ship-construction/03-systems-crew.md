@@ -1,7 +1,7 @@
 +++
 title = "Support Systems & Crew"
 description = "Step 6 of Starship Construction."
-weight = 20
+weight = 30
 +++
 
 ## Step 6: Support Systems

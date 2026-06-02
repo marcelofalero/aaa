@@ -1,7 +1,7 @@
 +++
 title = "Weapons & Defenses"
 description = "Step 7 and Step 8 of Starship Construction."
-weight = 30
+weight = 40
 +++
 
 ## Step 7: Weapons

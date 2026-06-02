@@ -1,7 +1,7 @@
 +++
 title = "Finalizing the Design"
 description = "Step 13 and Starship Construction Examples."
-weight = 60
+weight = 70
 +++
 
 ## Step 13: Adding It Up
