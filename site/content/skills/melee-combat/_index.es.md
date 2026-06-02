@@ -71,28 +71,28 @@ Esta habilidad se puede utilizar para determinar el éxito de un intento de domi
 ## Artes marciales de poder
 {{< specialty attr="STR" untrained="yes" cost="3" >}}
 
-As a Personaje improves his ability in the Artes marciales de poder Especialidad, he gains Rango benefits as described below. Note: These benefits only apply when the Personaje is fighting unarmed or with appropriate martial arts implements. The essence of power-oriented martial arts lies in the efficient mobilization of total body mass through structural alignment and explosive kinetic sequencing. These styles treat the body as a single, rigid unit at the moment of impact, using the ground as a fulcrum to funnel energy.
+A medida que un Personaje mejora su habilidad en el Artes marciales de poder Especialidad, obtiene los beneficios del Rango como se describe a continuación. Nota: Estos beneficios solo se aplican cuando el Personaje pelea desarmado o con implementos de artes marciales adecuados. La esencia de las artes marciales orientadas al poder radica en la movilización eficiente de la masa corporal total mediante la alineación estructural y la secuencia cinética explosiva. Estos estilos tratan el cuerpo como una unidad única y rígida en el momento del impacto, utilizando el suelo como punto de apoyo para canalizar la energía.
 
-### Overpowering
+### abrumador
 
-This skill can be used to determine the success of an attempt to overpower an opponent. Briefly, overpowering is a form of unarmed attack made simultaneously by one or more allies trying to grab and restrain a single opponent. If a single attacker tries to overpower another Personaje, his Combate cuerpo a cuerpo skill check is made at a +1 penalty. Every additional attacker who takes part in the same overpowering attempt provides a cumulative –1 bonus to the skill check. Overpowering does not cause damage, but it immobilizes an opponent for as long as one of the attackers continues to maintain a tight hold on that opponent.
+Esta habilidad se puede utilizar para determinar el éxito de un intento de dominar a un oponente. Brevemente, dominar es una forma de ataque desarmado realizado simultáneamente por uno o más aliados que intentan agarrar y contener a un solo oponente. Si un solo atacante intenta dominar a otro Personaje, su prueba de habilidad Combate cuerpo a cuerpo se realiza con una penalización de +1. Cada atacante adicional que participe en el mismo intento abrumador proporciona una bonificación acumulativa de -1 a la prueba de habilidad. Abrumar no causa daño, pero inmoviliza a un oponente mientras uno de los atacantes continúe manteniendo un fuerte control sobre ese oponente.
 
-### Rango Benefits
-⊗ **Rango 1 [Mass Leverage]** When a Personaje reaches skill Rango 1, he learns to properly leverage his mass. This increases his base unarmed damage to **d4s/d4w/d6+1w**.
+### Beneficios de Rango
+⊗ **Rango 1 [Apalancamiento masivo]** Cuando un Personaje alcanza la habilidad Rango 1, aprende a aprovechar adecuadamente su masa. Esto aumenta su daño base sin armas a **d4s/d4w/d6+1w**.
 
-▶ **Rango 3 [High Impulse]** When a Personaje reaches Rango 3, an Asombroso success on an attack forces the target to make the knockout check with a +1 Penalización de paso. This penalty increases to +2 at Rango 6, +3 at Rango 9, and +4 at Rango 12.
+▶ **Rango 3 [Alto Impulso]** Cuando un Personaje alcanza Rango 3, un éxito de Asombroso en un ataque obliga al objetivo a realizar la prueba de nocaut con un +1 Penalización de paso. Esta penalización aumenta a +2 en Rango 6, +3 en Rango 9 y +4 en Rango 12.
 
-▶ **Rangos 4, 8, 12 [Structural Efficiency]** When a Personaje reaches Rango 4, all unarmed damage increases by +1. This bonus increases by an additional +1 at Rango 8 and again at Rango 12.
+▶ **Rangos 4, 8, 12 [Eficiencia estructural]** Cuando un Personaje alcanza Rango 4, todo el daño sin armas aumenta en +1. Esta bonificación aumenta en un +1 adicional en Rango 8 y nuevamente en Rango 12.
 
-⊗ **Rangos 4, 8, 12 [Resistance Modifier]** At higher Rangos, the skill provides an improvement to a Personaje's Strength resistance modifier. It improves by +1 at Rango 4, by +1 again at Rango 8, and by +1 again at Rango 12. This increase doesn''t stack with similar bonuses provided by Otros Combate cuerpo a cuerpo specialty skills.
+⊗ **Rangos 4, 8, 12 [Modificador de resistencia]** En Rangos más alto, la habilidad proporciona una mejora al modificador de resistencia a Fuerza de Personaje. Mejora en +1 en Rango 4, en +1 nuevamente en Rango 8 y en +1 nuevamente en Rango 12. Este aumento no se acumula con bonificaciones similares proporcionadas por las habilidades especiales de Otros Combate cuerpo a cuerpo.
 
-▶ **Rango 5 [Short-range Power (Fajin)]** When a Personaje reaches Rango 5, he learns to strike effectively even if his hands are bound or unusable by utilizing his shoulders, knees, or head.
+▶ **Rango 5 [Poder de corto alcance (Fajin)]** Cuando un Personaje alcanza Rango 5, aprende a golpear eficazmente incluso si sus manos están atadas o inutilizables utilizando sus hombros, rodillas o cabeza.
 
-▶ **Rango 8 [Structural Destruction]** When a Personaje reaches Rango 8, if he utilizes an All Out Attack, the target must roll their Armor dice twice and take the worse result. This applies only to non-Armas de energía armors.
+▶ **Rango 8 [Destrucción estructural]** Cuando un Personaje alcanza Rango 8, si utiliza un ataque total, el objetivo debe tirar sus dados de armadura dos veces y obtener el peor resultado. Esto se aplica sólo a armaduras que no son Armas de energía.
 
-▶ **Rango 12 [Master of Force]** When a Personaje reaches Rango 12, the "roll twice/take worse" armor penalty now applies to Armas de energía Armors, bio-armors and all form of personal defenses that translate as an armor roll.
+▶ **Rango 12 [Master of Force]** Cuando un Personaje alcanza Rango 12, la penalización de armadura "tirar dos veces/tomar peor" ahora se aplica a las armaduras Armas de energía, bioarmaduras y todo tipo de defensas personales que se traducen como una tirada de armadura.
 
-> Practitioners that frequently utilize the All Out Attack option in Combate are usually refered as **brawlers**.
+> Los practicantes que utilizan con frecuencia la opción All Out Attack en Combate generalmente se denominan **brawlers**.
 
 ---
 

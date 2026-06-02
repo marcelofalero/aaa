@@ -10,16 +10,16 @@ Mientras las fuerzas terrestres luchan por metros, tú luchas por sistemas. Enti
 * Ninguna.
 
 ## Habilidades de Especialidad Favorecidas:
-* [Tácticas-Tácticas Espaciales] ({{< relref "/skills/tactics/#space-tactics" >}})
-* [Navegación-Astrogación de Sistemas] ({{< relref "/skills/navigation/#astrogation-system" >}})
-* [Operación de Sistemas-Sensores] ({{< relref "/skills/system-operation/#sensors" >}})
-* [Liderazgo-Mando] ({{< relref "/skills/leadership/#command" >}})
+* [Tácticas-Tácticas Espaciales]({{< relref "/skills/tactics/#space-tactics" >}})
+* [Navegación-Astrogación de Sistemas]({{< relref "/skills/navigation/#astrogation-system" >}})
+* [Operación de Sistemas-Sensores]({{< relref "/skills/system-operation/#sensors" >}})
+* [Liderazgo-Mando]({{< relref "/skills/leadership/#command" >}})
 
 ## Ventajas Favorecidas:
-* [Reputación] ({{< relref "/perks_flaws/#reputation" >}})
+* [Reputación]({{< relref "/perks_flaws/#reputation" >}})
 
 ## Defecto Automático:
-* [Enemigo Poderoso] ({{< relref "/perks_flaws/#powerful-enemy" >}}) (Comandante Rival)
+* [Enemigo Poderoso]({{< relref "/perks_flaws/#powerful-enemy" >}}) (Comandante Rival)
 
 ## Equipo Inicial:
 Un uniforme naval, un traje espacial personal (traje de vacío) diseñado para emergencias en gravedad cero y un arma de fuego de oficial.

@@ -10,16 +10,16 @@ You know everyone, you owe everyone, and you're the only one who can get the job
 * None.
 
 ## Favored Specialty Skills:
-* [Interaction-Bargain] ({{< relref "/skills/interaction/#bargain" >}})
-* [Administration-Bureaucracy] ({{< relref "/skills/administration/#bureaucracy" >}})
-* [Street Smart-Street Knowledge] ({{< relref "/skills/street-smart/#street-knowledge" >}})
-* [Deception-Bribe] ({{< relref "/skills/deception/#bribe" >}})
+* [Interaction-Bargain]({{< relref "/skills/interaction/#bargain" >}})
+* [Administration-Bureaucracy]({{< relref "/skills/administration/#bureaucracy" >}})
+* [Street Smart-Street Knowledge]({{< relref "/skills/street-smart/#street-knowledge" >}})
+* [Deception-Bribe]({{< relref "/skills/deception/#bribe" >}})
 
 ## Favored Perks:
 * None.
 
 ## Automatic Flaw:
-* [Powerful Enemy] ({{< relref "/perks_flaws/#powerful-enemy" >}}) (A dangerous character or slighted client).
+* [Powerful Enemy]({{< relref "/perks_flaws/#powerful-enemy" >}}) (A dangerous character or slighted client).
 
 ## Starting Equipment:
 An untraceable comm-link, a pocket full of varied currency or physical trade chits, and a concealed weapon.

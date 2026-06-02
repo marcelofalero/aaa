@@ -10,17 +10,17 @@ You come from a place where technology is magic and survival is the only law.
 * None.
 
 ## Favored Specialty Skills:
-* [Survival-Survival Training] ({{< relref "/skills/survival/#survival-training" >}})
-* [Athletics-Climb] ({{< relref "/skills/athletics/#climb" >}})
-* [Athletics- Throw] ({{< relref "/skills/athletics/#throw" >}})
-* [Awareness-Perception] ({{< relref "/skills/awareness/#perception" >}})
-* [Covert Ops-Stealth] ({{< relref "/skills/covert-ops/#stealth" >}})
+* [Survival-Survival Training]({{< relref "/skills/survival/#survival-training" >}})
+* [Athletics-Climb]({{< relref "/skills/athletics/#climb" >}})
+* [Athletics- Throw]({{< relref "/skills/athletics/#throw" >}})
+* [Awareness-Perception]({{< relref "/skills/awareness/#perception" >}})
+* [Covert Ops-Stealth]({{< relref "/skills/covert-ops/#stealth" >}})
 
 ## Favored Perks:
 * None.
 
 ## Automatic Flaw:
-* [Primitive] ({{< relref "/perks_flaws/#primitive" >}})
+* [Primitive]({{< relref "/perks_flaws/#primitive" >}})
 
 ## Starting Equipment:
 A sturdy archaic weapon (like a spear, bow, or heavy blade), a survival knife, tribal or clan tokens, and rugged survival clothing.

@@ -10,16 +10,16 @@ Profesional paramilitar especializado en acción directa y misiones tácticas.
 * Ninguna.
 
 ## Habilidades de Especialidad Favorecidas:
-* [Armas a Distancia Modernas-SMG] ({{< relref "/skills/modern-ranged-weapons/#smg" >}})
-* [Resistencia-Aguante] ({{< relref "/skills/stamina/#endurance" >}})
-* [Táctica- Táctica de Infantería] ({{< relref "/skills/tactics/#infantry-tactics" >}})
-* [Atletismo-Correr] ({{< relref "/skills/athletics/#run" >}})
+* [Armas a Distancia Modernas-SMG]({{< relref "/skills/modern-ranged-weapons/#smg" >}})
+* [Resistencia-Aguante]({{< relref "/skills/stamina/#endurance" >}})
+* [Táctica- Táctica de Infantería]({{< relref "/skills/tactics/#infantry-tactics" >}})
+* [Atletismo-Correr]({{< relref "/skills/athletics/#run" >}})
 
 ## Ventajas Favorecidas:
-* [Reflejos] ({{< relref "/perks_flaws/#reflexes" >}})
+* [Reflejos]({{< relref "/perks_flaws/#reflexes" >}})
 
 ## Defecto Automático:
-* [Código de Honor] ({{< relref "/perks_flaws/#code-of-honor" >}})
+* [Código de Honor]({{< relref "/perks_flaws/#code-of-honor" >}})
 
 ## Equipo Inicial:
 SMG, ropa de combate, enlace de comunicaciones.

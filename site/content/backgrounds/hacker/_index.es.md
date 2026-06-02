@@ -10,16 +10,16 @@ Para ti, el universo no está hecho de átomos y vacío, sino de datos y redes f
 * Ninguna.
 
 ## Habilidades de Especialidad Favorecidas:
-* [Computación-Hacking] ({{< relref "/skills/computer-science/#hacking" >}})
-* [Computación-Programación] ({{< relref "/skills/computer-science/#programming" >}})
-* [Operación de Sistemas- Comunicaciones] ({{< relref "/skills/system-operation/#communications" >}})
-* [Investigar-Búsqueda de Datos] ({{< relref "/skills/investigate/#data-retrieval" >}})
+* [Computación-Hacking]({{< relref "/skills/computer-science/#hacking" >}})
+* [Computación-Programación]({{< relref "/skills/computer-science/#programming" >}})
+* [Operación de Sistemas- Comunicaciones]({{< relref "/skills/system-operation/#communications" >}})
+* [Investigar-Búsqueda de Datos]({{< relref "/skills/investigate/#data-retrieval" >}})
 
 ## Ventajas Favorecidas:
-* [Sentido Común] ({{< relref "/perks_flaws/#common-sense" >}})
+* [Sentido Común]({{< relref "/perks_flaws/#common-sense" >}})
 
 ## Defecto Automático:
-* [Obsesionado] ({{< relref "/perks_flaws/#obsessed" >}}) (Con la Eficiencia)
+* [Obsesionado]({{< relref "/perks_flaws/#obsessed" >}}) (Con la Eficiencia)
 
 ## Equipo Inicial:
 Un mazo cibernético personalizado, una suscripción de por vida a un servicio de proxy de datos y un par de gafas de realidad aumentada para visualización de red.

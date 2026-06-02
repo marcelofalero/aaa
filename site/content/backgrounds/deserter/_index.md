@@ -10,15 +10,15 @@ You are a ghost in the machine. You have the reflexes of a soldier but the soul 
 * None.
 
 ## Favored Specialty Skills:
-* [Survival-Survival Training] ({{< relref "/skills/survival/#survival-training" >}})
-* [Deception-Bluff] ({{< relref "/skills/deception/#bluff" >}})
-* [Covert Ops-Conceal] ({{< relref "/skills/covert-ops/#conceal" >}})
+* [Survival-Survival Training]({{< relref "/skills/survival/#survival-training" >}})
+* [Deception-Bluff]({{< relref "/skills/deception/#bluff" >}})
+* [Covert Ops-Conceal]({{< relref "/skills/covert-ops/#conceal" >}})
 
 ## Favored Perks:
-* [Reflexes] ({{< relref "/perks_flaws/#reflexes" >}})
+* [Reflexes]({{< relref "/perks_flaws/#reflexes" >}})
 
 ## Automatic Flaw:
-* [Powerful Enemy] ({{< relref "/perks_flaws/#powerful-enemy" >}}) (The entity you abandoned).
+* [Powerful Enemy]({{< relref "/perks_flaws/#powerful-enemy" >}}) (The entity you abandoned).
 
 ## Starting Equipment:
 A military-grade weapon (with filed-off serial numbers), a rugged survival tent or sleeping roll, and a high-quality fake ident-card.

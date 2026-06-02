@@ -10,16 +10,16 @@ You hold the keys to the most valuable asset in the galaxy: a starship. However,
 * None.
 
 ## Favored Specialty Skills:
-* [Vehicle Operation-Space Vehicle] ({{< relref "/skills/vehicle-operation/#space-vehicle" >}})
-* [Business-Small Business] ({{< relref "/skills/business/#small-business" >}})
-* [Leadership-Command] ({{< relref "/skills/leadership/#command" >}})
-* [Administration-Management] ({{< relref "/skills/administration/#management" >}})
+* [Vehicle Operation-Space Vehicle]({{< relref "/skills/vehicle-operation/#space-vehicle" >}})
+* [Business-Small Business]({{< relref "/skills/business/#small-business" >}})
+* [Leadership-Command]({{< relref "/skills/leadership/#command" >}})
+* [Administration-Management]({{< relref "/skills/administration/#management" >}})
 
 ## Favored Perks:
 * None.
 
 ## Automatic Flaw:
-* [Debt Ridden] ({{< relref "/perks_flaws/#debt-ridden" >}}) (You owe a massive debt on your vessel. Unlike other flaws, this cannot be bought off with XP during character advancement; it can only be removed by physically paying off the creditor in-game. Furthermore, if you miss a payment, the creditor can make demands, forcing you to take dangerous jobs or favor their interests to keep the ship).
+* [Debt Ridden]({{< relref "/perks_flaws/#debt-ridden" >}}) (You owe a massive debt on your vessel. Unlike other flaws, this cannot be bought off with XP during character advancement; it can only be removed by physically paying off the creditor in-game. Furthermore, if you miss a payment, the creditor can make demands, forcing you to take dangerous jobs or favor their interests to keep the ship).
 
 ## Starting Equipment:
 A captain's coat, a heavy spanner or multi- tool, and a personal distress beacon linked to your ship.

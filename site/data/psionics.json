@@ -1,7 +1,7 @@
 {
     "search_config": {
         "display_name": "PSIONICS",
-        "base_url": "/psionics/",
+        "base_url": "/core-mechanics/psionics/",
         "section": "psionics"
     },
     "groups": {

@@ -7,14 +7,14 @@ layout = "background"
 Life on the streets taught you how to survive, but it left you with a name that the authorities won't forget.
 
 ## Favored Broad Skill:
-* [Street Smart] ({{< relref "/skills/street-smart/" >}})
+* [Street Smart]({{< relref "/skills/street-smart/" >}})
 
 ## Favored Specialty Skills:
-* [Street Smart-Street Knowledge] ({{< relref "/skills/street-smart/#street-knowledge" >}})
-* [Covert Ops-Pickpocket] ({{< relref "/skills/covert-ops/#pickpocket" >}})
-* [Covert Ops-Stealth] ({{< relref "/skills/covert-ops/#stealth" >}})
-* [Deception-Bribe] ({{< relref "/skills/deception/#bribe" >}})
-* [Security- Security Devices] ({{< relref "/skills/security/#security-devices" >}})
+* [Street Smart-Street Knowledge]({{< relref "/skills/street-smart/#street-knowledge" >}})
+* [Covert Ops-Pickpocket]({{< relref "/skills/covert-ops/#pickpocket" >}})
+* [Covert Ops-Stealth]({{< relref "/skills/covert-ops/#stealth" >}})
+* [Deception-Bribe]({{< relref "/skills/deception/#bribe" >}})
+* [Security- Security Devices]({{< relref "/skills/security/#security-devices" >}})
 
 ## Favored Perks:
 * None.

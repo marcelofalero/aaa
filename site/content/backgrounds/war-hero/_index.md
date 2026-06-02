@@ -10,21 +10,21 @@ You are defined by a single, highly publicized conflict. Whether you were an ace
 * None.
 
 ## Favored Specialty Skills:
-- [Leadership-Inspire] ({{< relref "/skills/leadership/#inspire" >}})
-- [Stamina-Endurance] ({{< relref "/skills/stamina/#endurance" >}})
-- [Resolve- Mental Resolve] ({{< relref "/skills/resolve/#mental-resolve" >}})
+- [Leadership-Inspire]({{< relref "/skills/leadership/#inspire" >}})
+- [Stamina-Endurance]({{< relref "/skills/stamina/#endurance" >}})
+- [Resolve- Mental Resolve]({{< relref "/skills/resolve/#mental-resolve" >}})
 
 ## Favored Perks:
-* [Celebrity] ({{< relref "/perks_flaws/#celebrity" >}})
+* [Celebrity]({{< relref "/perks_flaws/#celebrity" >}})
 
 ## Automatic Flaw:
-* [Old Injury] ({{< relref "/perks_flaws/#old-injury" >}}) (A lasting physical reminder of the event that made you famous).
+* [Old Injury]({{< relref "/perks_flaws/#old-injury" >}}) (A lasting physical reminder of the event that made you famous).
 
 ## Starting Equipment:
 A personalized or heavily battle-scarred signature weapon, official combat medals, a rugged military jacket, and a supply of medical painkillers.
 
 ## Special Ability:
-**Burden of Glory:** You receive a -1 step bonus to [Interaction] ({{< relref "/skills/interaction/" >}}) or [Leadership] ({{< relref "/skills/leadership/" >}}) skill checks when dealing with veterans, active military personnel, or patriotic citizens who recognize your service.
+**Burden of Glory:** You receive a -1 step bonus to [Interaction]({{< relref "/skills/interaction/" >}}) or [Leadership]({{< relref "/skills/leadership/" >}}) skill checks when dealing with veterans, active military personnel, or patriotic citizens who recognize your service.
 
 ## Tendencies (Pick 2):
 - **The Living Legend:** Voluntarily accept a significant disadvantage or take the brunt of an attack to protect civilians or allies, driven by the need to live up to your impossible reputation.

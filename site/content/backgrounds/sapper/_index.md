@@ -10,16 +10,16 @@ Demolitions expert specialized in structural destruction and tactical entry.
 * None.
 
 ## Favored Specialty Skills:
-* [Demolitions-Set Explosives] ({{< relref "/skills/demolitions/#set-explosives" >}})
-* [Heavy Weapons-Direct Fire] ({{< relref "/skills/heavy-weapons/#direct-fire" >}})
-* [Technical Science-Juryrig] ({{< relref "/skills/technical-science/#juryrig" >}})
-* [Modern Ranged Weapons] ({{< relref "/skills/modern-ranged-weapons/" >}})
+* [Demolitions-Set Explosives]({{< relref "/skills/demolitions/#set-explosives" >}})
+* [Heavy Weapons-Direct Fire]({{< relref "/skills/heavy-weapons/#direct-fire" >}})
+* [Technical Science-Juryrig]({{< relref "/skills/technical-science/#juryrig" >}})
+* [Modern Ranged Weapons]({{< relref "/skills/modern-ranged-weapons/" >}})
 
 ## Favored Perks:
-* [Stable Hands] ({{< relref "/perks_flaws/#stable-hands" >}})
+* [Stable Hands]({{< relref "/perks_flaws/#stable-hands" >}})
 
 ## Automatic Flaw:
-* [Old Injury] ({{< relref "/perks_flaws/#old-injury" >}})
+* [Old Injury]({{< relref "/perks_flaws/#old-injury" >}})
 
 ## Starting Equipment:
 Explosive blocks, detonator, tactical jacket.

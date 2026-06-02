@@ -10,16 +10,16 @@ Bureaucratic survivor who knows how to navigate the complex red tape of the econ
 * None.
 
 ## Favored Specialty Skills:
-* [Administration-Bureaucracy] ({{< relref "/skills/administration/#bureaucracy" >}})
-* [Knowledge-Computer Operation] ({{< relref "/skills/knowledge/#computer-operation" >}})
-* [Business-Corporate] ({{< relref "/skills/business/#corporate" >}})
-* [Administration-Management] ({{< relref "/skills/administration/#management" >}})
+* [Administration-Bureaucracy]({{< relref "/skills/administration/#bureaucracy" >}})
+* [Knowledge-Computer Operation]({{< relref "/skills/knowledge/#computer-operation" >}})
+* [Business-Corporate]({{< relref "/skills/business/#corporate" >}})
+* [Administration-Management]({{< relref "/skills/administration/#management" >}})
 
 ## Favored Perks:
-* [Common Sense] ({{< relref "/perks_flaws/#common-sense" >}})
+* [Common Sense]({{< relref "/perks_flaws/#common-sense" >}})
 
 ## Automatic Flaw:
-* [Oblivious] ({{< relref "/perks_flaws/#oblivious" >}})
+* [Oblivious]({{< relref "/perks_flaws/#oblivious" >}})
 
 ## Starting Equipment:
 Business suit, corporate datapad, forms/templates.
