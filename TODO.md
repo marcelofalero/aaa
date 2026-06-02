@@ -11,9 +11,9 @@
 
 ## Content Review
 - [x] Skills review completed (all 34 broad skills).
-- [ ] Psionics review — **Biokinesis** and **Telepathy** done, working on **ESP**.
+- [ ] Psionics review — **Biokinesis**, **Telepathy**, and **ESP** done, working on **Psychoportation**.
   - [x] Biokinesis
   - [x] Telepathy
-  - [ ] ESP
+  - [x] ESP
   - [ ] Psychoportation
   - [ ] Telekinesis
