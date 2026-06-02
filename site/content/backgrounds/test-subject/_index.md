@@ -11,18 +11,16 @@ physiological insights.
 * None.
 
 ## Favored Specialty Skills:
-* [Resolve-Physical Resolve]
-({{< relref "/skills/resolve/#physical-resolve" >}})
-* [Stamina-Endurance] ({{< relref "/skills/stamina/#endurance" >}})
-* [Awareness-Intuition]
-({{< relref "/skills/awareness/#intuition" >}})
-* [Medical Science] ({{< relref "/skills/medical-science/" >}})
+* [Resolve-Physical Resolve]({{< relref "/skills/resolve/#physical-resolve" >}})
+* [Stamina-Endurance]({{< relref "/skills/stamina/#endurance" >}})
+* [Awareness-Intuition]({{< relref "/skills/awareness/#intuition" >}})
+* [Medical Science]({{< relref "/skills/medical-science/" >}})
 
 ## Favored Perks:
-* [Tough as Nails] ({{< relref "/perks_flaws/#tough-as-nails" >}})
+* [Tough as Nails]({{< relref "/perks_flaws/#tough-as-nails" >}})
 
 ## Automatic Flaw:
-* [Powerful Enemy] ({{< relref "/perks_flaws/#powerful-enemy" >}})
+* [Powerful Enemy]({{< relref "/perks_flaws/#powerful-enemy" >}})
 
 ## Starting Equipment:
 Recovery monitors, surgical scars, stabilizers.

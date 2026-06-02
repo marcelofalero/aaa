@@ -10,16 +10,16 @@ Maestro del engaño y la ingeniería social, prosperando gracias a la codicia aj
 * Ninguna.
 
 ## Habilidades de Especialidad Favorecidas:
-* [Engaño-Engañar] ({{< relref "/skills/deception/#bluff" >}})
-* [Interacción-Persuadir] ({{< relref "/skills/interaction/#charm" >}})
-* [Manipulación-Robar Bolsillos] ({{< relref "/skills/covert-ops/#pickpocket" >}})
-* [Engaño-Sobornar] ({{< relref "/skills/deception/#bribe" >}})
+* [Engaño-Engañar]({{< relref "/skills/deception/#bluff" >}})
+* [Interacción-Persuadir]({{< relref "/skills/interaction/#charm" >}})
+* [Manipulación-Robar Bolsillos]({{< relref "/skills/covert-ops/#pickpocket" >}})
+* [Engaño-Sobornar]({{< relref "/skills/deception/#bribe" >}})
 
 ## Ventajas Favorecidas:
-* [Buen Aspecto] ({{< relref "/perks_flaws/#great-looks" >}})
+* [Buen Aspecto]({{< relref "/perks_flaws/#great-looks" >}})
 
 ## Defecto Automático:
-* [Enemigo Poderoso] ({{< relref "/perks_flaws/#powerful-enemy" >}})
+* [Enemigo Poderoso]({{< relref "/perks_flaws/#powerful-enemy" >}})
 
 ## Equipo Inicial:
 Ropa de diseño, IDs falsas, kit de fixer.

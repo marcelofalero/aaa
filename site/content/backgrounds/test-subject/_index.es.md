@@ -11,18 +11,16 @@ percepciones fisiológicas únicas.
 * Ninguna.
 
 ## Habilidades de Especialidad Favorecidas:
-* [Voluntad-Voluntad Física]
-({{< relref "/skills/resolve/#physical-resolve" >}})
-* [Resistencia-Aguante] ({{< relref "/skills/stamina/#endurance" >}})
-* [Conciencia-Intuición]
-({{< relref "/skills/awareness/#intuition" >}})
-* [Ciencia Médica] ({{< relref "/skills/medical-science/" >}})
+* [Voluntad-Voluntad Física]({{< relref "/skills/resolve/#physical-resolve" >}})
+* [Resistencia-Aguante]({{< relref "/skills/stamina/#endurance" >}})
+* [Conciencia-Intuición]({{< relref "/skills/awareness/#intuition" >}})
+* [Ciencia Médica]({{< relref "/skills/medical-science/" >}})
 
 ## Ventajas Favorecidas:
-* [Duro como un Clavo] ({{< relref "/perks_flaws/#tough-as-nails" >}})
+* [Duro como un Clavo]({{< relref "/perks_flaws/#tough-as-nails" >}})
 
 ## Defecto Automático:
-* [Enemigo Poderoso] ({{< relref "/perks_flaws/#powerful-enemy" >}})
+* [Enemigo Poderoso]({{< relref "/perks_flaws/#powerful-enemy" >}})
 
 ## Equipo Inicial:
 Monitores de recuperación, cicatrices quirúrgicas, estabilizadores.

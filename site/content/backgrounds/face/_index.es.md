@@ -10,22 +10,22 @@ Eres un maestro del "engaño". Ya sea que estés buscando suministros restringid
 * Ninguna.
 
 ## Habilidades de Especialidad Favorecidas:
-* [Entretenimiento-Actuar] ({{< relref "/skills/entertainment/#act" >}})
-* [Engaño- Farolear] ({{< relref "/skills/deception/#bluff" >}})
-* [Interacción-Negociar] ({{< relref "/skills/interaction/#bargain" >}})
-* [Interacción-Encanto] ({{< relref "/skills/interaction/#charm" >}})
+* [Entretenimiento-Actuar]({{< relref "/skills/entertainment/#act" >}})
+* [Engaño- Farolear]({{< relref "/skills/deception/#bluff" >}})
+* [Interacción-Negociar]({{< relref "/skills/interaction/#bargain" >}})
+* [Interacción-Encanto]({{< relref "/skills/interaction/#charm" >}})
 
 ## Ventajas Favorecidas:
-* [Gran Apariencia] ({{< relref "/perks_flaws/#great-looks" >}})
+* [Gran Apariencia]({{< relref "/perks_flaws/#great-looks" >}})
 
 ## Defecto Automático:
-* [Obsesionado] ({{< relref "/perks_flaws/#obsessed" >}}) (Con su Imagen)
+* [Obsesionado]({{< relref "/perks_flaws/#obsessed" >}}) (Con su Imagen)
 
 ## Equipo Inicial:
 Un vestuario extravagante adecuado para eventos de alto nivel, un kit de disfraz cosmético y un arma de fuego llamativa pero de bajo calibre.
 
 ## Capacidad Especial:
-**El Rebuscador:** Recibes una bonificación de -1 paso a las tiradas de [Interacción- Negociar] ({{< relref "/skills/interaction/#bargain" >}}) o [Pillería-Conocimiento Callejero] ({{< relref "/skills/street-smart/#street-knowledge" >}}) al intentar adquirir equipo específico o artículos restringidos por medios no monetarios (engaños, favores o "préstamos").
+**El Rebuscador:** Recibes una bonificación de -1 paso a las tiradas de [Interacción- Negociar]({{< relref "/skills/interaction/#bargain" >}}) o [Pillería-Conocimiento Callejero]({{< relref "/skills/street-smart/#street-knowledge" >}}) al intentar adquirir equipo específico o artículos restringidos por medios no monetarios (engaños, favores o "préstamos").
 
 ## Tendencias (Elige 2):
 * **El Buscador de Atención:** Intencionalmente llama la atención sobre sí mismo en un entorno social para crear una distracción, incluso cuando pasar desapercibido es más seguro.

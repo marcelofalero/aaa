@@ -10,16 +10,16 @@ Naciste en los márgenes de la sociedad educada. Ya sea por elección o por circ
 * Ninguna.
 
 ## Habilidades de Especialidad Favorecidas:
-* [Supervivencia-Supervivencia Urbana] ({{< relref "/skills/survival/#urban-survival" >}})
-* [Operaciones Encubiertas-Ocultar] ({{< relref "/skills/covert-ops/#conceal" >}})
-* [Pillería-Conocimiento Callejero] ({{< relref "/skills/street-smart/#street-knowledge" >}})
-* [Voluntad-Voluntad Mental] ({{< relref "/skills/resolve/#mental-resolve" >}})
+* [Supervivencia-Supervivencia Urbana]({{< relref "/skills/survival/#urban-survival" >}})
+* [Operaciones Encubiertas-Ocultar]({{< relref "/skills/covert-ops/#conceal" >}})
+* [Pillería-Conocimiento Callejero]({{< relref "/skills/street-smart/#street-knowledge" >}})
+* [Voluntad-Voluntad Mental]({{< relref "/skills/resolve/#mental-resolve" >}})
 
 ## Ventajas Favorecidas:
-* [Buena Suerte] ({{< relref "/perks_flaws/#good-luck" >}})
+* [Buena Suerte]({{< relref "/perks_flaws/#good-luck" >}})
 
 ## Defecto Automático:
-* [Infamia] ({{< relref "/perks_flaws/#infamy" >}}) (Marginado)
+* [Infamia]({{< relref "/perks_flaws/#infamy" >}}) (Marginado)
 
 ## Equipo Inicial:
 Ropa de calle raída pero funcional, una máscara de respirador básica y un pequeño objeto tecnológico robado o recuperado.

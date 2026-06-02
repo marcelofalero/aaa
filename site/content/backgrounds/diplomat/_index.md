@@ -10,13 +10,13 @@ You were raised in the halls of power, where protocol is a weapon and reputation
 * None.
 
 ## Favored Specialty Skills:
-* [Culture-Etiquette] ({{< relref "/skills/culture/#etiquette-specific" >}})
-* [Administration-Bureaucracy] ({{< relref "/skills/administration/#bureaucracy" >}})
-* [Interaction-Charm] ({{< relref "/skills/interaction/#charm" >}})
-* [Interaction-Bargain] ({{< relref "/skills/interaction/#bargain" >}})
+* [Culture-Etiquette]({{< relref "/skills/culture/#etiquette-specific" >}})
+* [Administration-Bureaucracy]({{< relref "/skills/administration/#bureaucracy" >}})
+* [Interaction-Charm]({{< relref "/skills/interaction/#charm" >}})
+* [Interaction-Bargain]({{< relref "/skills/interaction/#bargain" >}})
 
 ## Favored Perks:
-* [Reputation] ({{< relref "/perks_flaws/#reputation" >}})
+* [Reputation]({{< relref "/perks_flaws/#reputation" >}})
 
 ## Automatic Flaw:
 * None.

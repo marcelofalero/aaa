@@ -1,0 +1,166 @@
+Acrobatics: 7
+  - Aerobatics: 3
+  - Daredevil: 3
+  - Dodge: 3
+  - Fall: 3
+  - Zero-g Training: 3
+Administration: 4
+  - Bureaucracy: 3
+  - Management: 3
+Animal Handling: 3
+  - Animal riding: 1
+  - Animal training: 3
+Armor Operation: 7
+  - Combat armor: 3
+  - Tactical armor: 3
+  - Propulsion systems: 3
+  - Shields: 3
+Athletics: 3
+  - Climb: 2
+  - Jump: 1
+  - Swim: 2
+  - Throw: 2
+Awareness: 3
+  - Intuition: 3
+  - Perception: 3
+  - Psionic Sense: 4
+Business: 4
+  - Corporate: 3
+  - Illicit business: 3
+  - Small business: 3
+Computer Science: 7
+  - Hacking: 4
+  - Hardware: 3
+  - Programming: 3
+Covert Ops: 8
+  - Conceal: 3
+  - Disguise: 3
+  - Pickpocket: 3
+  - Stealth: 3
+Creativity: 6
+  - The Intangible: 3
+  - The Shape: 3
+  - The Word: 3
+Culture: 5
+  - Etiquette: 3
+  - Diplomacy: 3
+  - First Encounter: 3
+Deception: 5
+  - Bluff: 3
+  - Bribe: 3
+  - Gamble-Logic-Games: 3
+  - Gamble-Nerve-Games: 3
+Demolitions: 6
+  - Disarm: 4
+  - Scratch-Built Explosives: 3
+  - Set explosives: 3
+Entertainment: 3
+  - Musical instrument: 2
+  - Sing: 3
+  - Act: 2
+  - Dance: 2
+Heavy Weapons: 6
+  - Direct fire: 4
+  - Indirect fire: 4
+Interaction: 3
+  - Bargain: 3
+  - Charm: 3
+  - Interview: 3
+  - Intimidate: 3
+  - Seduce: 3
+  - Taunt: 3
+Investigate: 3
+  - Interrogate: 3
+  - Search: 3
+  - Track: 3
+Knowledge: 4
+  - Language, Specific Skill: 3
+  - Psionics: 3
+  - Computer Operation: 2
+  - Deduce: 2
+  - First Aid: 3
+  - Research: 2
+Law: 0
+  - Court procedures: 3
+  - Law enforcement procedures: 3
+  - Law, specific skill: 2
+  - Psionics: 3
+Leadership: 4
+  - Command: 4
+  - Inspire: 3
+Life Science: 7
+  - Psionics: 3
+  - Biology: 3
+  - Botany: 3
+  - Genetics: 3
+  - Zoology: 3
+Medical Science: 7
+  - Forensics: 3
+  - Medical Knowledge: 3
+  - Psychology: 5
+  - Surgery: 5
+  - Treatment: 4
+  - Xenomedicine: 3
+  - Forensic Science: 3
+Melee Combat: 6
+  - Blade: 3
+  - Blunt: 3
+  - Defensive Martial Arts: 3
+  - Power Martial Arts: 3
+  - Powered: 3
+Modern Ranged Weapons: 6
+  - Assault Rifle: 3
+  - Pistol: 3
+  - Rifle: 3
+  - SMG: 3
+  - Shotgun: 3
+Navigation: 6
+  - Astrogation—drivespace: 3
+  - Astrogation—system: 3
+  - Navigation—surface: 3
+Physical Science: 5
+  - Astronomy: 3
+  - Chemistry: 3
+  - Physics: 3
+  - Planetology: 3
+Primitive Ranged Weapons: 7
+  - Bow: 3
+  - Crossbow: 3
+  - Flintlock: 3
+  - Sling: 3
+Resolve: 6
+  - Mental resolve: 3
+  - Physical resolve: 3
+Security: 3
+  - Protection protocols: 3
+  - Security devices: 4
+Stamina: 3
+  - Endurance: 4
+  - Resist pain: 5
+Street Smart: 3
+  - Street Knowledge: 3
+  - Criminal elements: 5
+Survival: 3
+  - Survival training: 3
+  - Adaptability: 3
+  - Trailblazing: 3
+System Operation: 3
+  - Communications: 3
+  - Defenses: 3
+  - Engineering: 3
+  - Sensors: 3
+  - Weapons: 3
+Tactics: 6
+  - Infantry tactics: 3
+  - Space tactics: 3
+  - Vehicle tactics: 3
+Technical Science: 7
+  - Technical Knowledge: 3
+  - Invention: 3
+  - Repair: 3
+  - Juryrig: 3
+Vehicle Operation: 3
+  - Air vehicle: 5
+  - Land vehicle: 3
+  - Space vehicle: 5
+  - Water vehicle: 3

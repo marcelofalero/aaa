@@ -7,14 +7,14 @@ layout = "background"
 La vida en las calles te enseñó a sobrevivir, pero te dejó con un nombre que las autoridades no olvidarán.
 
 ## Paquete de Habilidades:
-* [Callejeo] ({{< relref "/skills/street-smart/" >}})
+* [Callejeo]({{< relref "/skills/street-smart/" >}})
 
 ## Habilidades de Especialidad Favorecidas:
-* [Pillería-Conocimiento Callejero] ({{< relref "/skills/street-smart/#street-knowledge" >}})
-* [Operaciones Encubiertas- Carterista] ({{< relref "/skills/covert-ops/#pickpocket" >}})
-* [Operaciones Encubiertas-Sigilo] ({{< relref "/skills/covert-ops/#stealth" >}})
-* [Engaño- Soborno] ({{< relref "/skills/deception/#bribe" >}})
-* [Seguridad-Dispositivos de Seguridad] ({{< relref "/skills/security/#security-devices" >}})
+* [Pillería-Conocimiento Callejero]({{< relref "/skills/street-smart/#street-knowledge" >}})
+* [Operaciones Encubiertas- Carterista]({{< relref "/skills/covert-ops/#pickpocket" >}})
+* [Operaciones Encubiertas-Sigilo]({{< relref "/skills/covert-ops/#stealth" >}})
+* [Engaño- Soborno]({{< relref "/skills/deception/#bribe" >}})
+* [Seguridad-Dispositivos de Seguridad]({{< relref "/skills/security/#security-devices" >}})
 
 ## Ventajas Favorecidas:
 * Ninguna.

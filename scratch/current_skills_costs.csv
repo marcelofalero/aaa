@@ -1,0 +1,167 @@
+Skill Type,Broad Skill,Skill Name,Cost,Rulebook Cost
+Broad,Acrobatics,Acrobatics,7,7
+Specialty,Acrobatics,Aerobatics,3,
+Specialty,Acrobatics,Daredevil,3,4
+Specialty,Acrobatics,Dodge,3,4
+Specialty,Acrobatics,Fall,3,3
+Specialty,Acrobatics,Zero-g Training,3,2
+Broad,Administration,Administration,4,4
+Specialty,Administration,Bureaucracy,3,3
+Specialty,Administration,Management,3,3
+Broad,Animal Handling,Animal Handling,3,3
+Specialty,Animal Handling,Animal riding,1,1
+Specialty,Animal Handling,Animal training,3,1
+Broad,Armor Operation,Armor Operation,7,7
+Specialty,Armor Operation,Combat armor,3,3
+Specialty,Armor Operation,Tactical armor,3,
+Specialty,Armor Operation,Propulsion systems,3,
+Specialty,Armor Operation,Shields,3,
+Broad,Athletics,Athletics,3,3
+Specialty,Athletics,Climb,2,2
+Specialty,Athletics,Jump,1,1
+Specialty,Athletics,Swim,2,1
+Specialty,Athletics,Throw,2,2
+Broad,Awareness,Awareness,3,3
+Specialty,Awareness,Intuition,3,3
+Specialty,Awareness,Perception,3,2
+Specialty,Awareness,Psionic Sense,4,
+Broad,Business,Business,4,4
+Specialty,Business,Corporate,3,3
+Specialty,Business,Illicit business,3,3
+Specialty,Business,Small business,3,3
+Broad,Computer Science,Computer Science,7,7
+Specialty,Computer Science,Hacking,4,5
+Specialty,Computer Science,Hardware,3,4
+Specialty,Computer Science,Programming,3,4
+Broad,Covert Ops,Covert Ops,8,
+Specialty,Covert Ops,Conceal,3,
+Specialty,Covert Ops,Disguise,3,
+Specialty,Covert Ops,Pickpocket,3,4
+Specialty,Covert Ops,Stealth,3,
+Broad,Creativity,Creativity,6,4
+Specialty,Creativity,The Intangible,3,
+Specialty,Creativity,The Shape,3,
+Specialty,Creativity,The Word,3,
+Broad,Culture,Culture,5,5
+Specialty,Culture,Etiquette,3,
+Specialty,Culture,Diplomacy,3,3
+Specialty,Culture,First Encounter,3,3
+Broad,Deception,Deception,5,5
+Specialty,Deception,Bluff,3,3
+Specialty,Deception,Bribe,3,3
+Specialty,Deception,Gamble-Logic-Games,3,
+Specialty,Deception,Gamble-Nerve-Games,3,
+Broad,Demolitions,Demolitions,6,6
+Specialty,Demolitions,Disarm,4,4
+Specialty,Demolitions,Scratch-Built Explosives,3,
+Specialty,Demolitions,Set explosives,3,3
+Broad,Entertainment,Entertainment,3,4
+Specialty,Entertainment,Musical instrument,2,2
+Specialty,Entertainment,Sing,3,2
+Specialty,Entertainment,Act,2,2
+Specialty,Entertainment,Dance,2,2
+Broad,Heavy Weapons,Heavy Weapons,6,6
+Specialty,Heavy Weapons,Direct fire,4,4
+Specialty,Heavy Weapons,Indirect fire,4,4
+Broad,Interaction,Interaction,3,3
+Specialty,Interaction,Bargain,3,3
+Specialty,Interaction,Charm,3,3
+Specialty,Interaction,Interview,3,3
+Specialty,Interaction,Intimidate,3,3
+Specialty,Interaction,Seduce,3,3
+Specialty,Interaction,Taunt,3,2
+Broad,Investigate,Investigate,3,7
+Specialty,Investigate,Interrogate,3,4
+Specialty,Investigate,Search,3,4
+Specialty,Investigate,Track,3,4
+Broad,Knowledge,Knowledge,4,3
+Specialty,Knowledge,"Language, Specific Skill",3,
+Specialty,Knowledge,Psionics,3,
+Specialty,Knowledge,Computer Operation,2,1
+Specialty,Knowledge,Deduce,2,2
+Specialty,Knowledge,First Aid,3,2
+Specialty,Knowledge,Research,2,
+Broad,Law,Law,0,5
+Specialty,Law,Court procedures,3,3
+Specialty,Law,Law enforcement procedures,3,
+Specialty,Law,"Law, specific skill",2,
+Specialty,Law,Psionics,3,
+Broad,Leadership,Leadership,4,4
+Specialty,Leadership,Command,4,4
+Specialty,Leadership,Inspire,3,4
+Broad,Life Science,Life Science,7,7
+Specialty,Life Science,Psionics,3,
+Specialty,Life Science,Biology,3,3
+Specialty,Life Science,Botany,3,3
+Specialty,Life Science,Genetics,3,3
+Specialty,Life Science,Zoology,3,3
+Broad,Medical Science,Medical Science,7,7
+Specialty,Medical Science,Forensics,3,3
+Specialty,Medical Science,Medical Knowledge,3,3
+Specialty,Medical Science,Psychology,5,3
+Specialty,Medical Science,Surgery,5,5
+Specialty,Medical Science,Treatment,4,4
+Specialty,Medical Science,Xenomedicine,3,
+Specialty,Medical Science,Forensic Science,3,
+Broad,Melee Combat,Melee Combat,6,
+Specialty,Melee Combat,Blade,3,3
+Specialty,Melee Combat,Blunt,3,
+Specialty,Melee Combat,Defensive Martial Arts,3,5
+Specialty,Melee Combat,Power Martial Arts,3,5
+Specialty,Melee Combat,Powered,3,
+Broad,Modern Ranged Weapons,Modern Ranged Weapons,6,
+Specialty,Modern Ranged Weapons,Assault Rifle,3,
+Specialty,Modern Ranged Weapons,Pistol,3,4
+Specialty,Modern Ranged Weapons,Rifle,3,4
+Specialty,Modern Ranged Weapons,SMG,3,4
+Specialty,Modern Ranged Weapons,Shotgun,3,
+Broad,Navigation,Navigation,6,6
+Specialty,Navigation,Astrogation—drivespace,3,
+Specialty,Navigation,Astrogation—system,3,
+Specialty,Navigation,Navigation—surface,3,
+Broad,Physical Science,Physical Science,5,7
+Specialty,Physical Science,Astronomy,3,3
+Specialty,Physical Science,Chemistry,3,3
+Specialty,Physical Science,Physics,3,3
+Specialty,Physical Science,Planetology,3,3
+Broad,Primitive Ranged Weapons,Primitive Ranged Weapons,7,
+Specialty,Primitive Ranged Weapons,Bow,3,4
+Specialty,Primitive Ranged Weapons,Crossbow,3,3
+Specialty,Primitive Ranged Weapons,Flintlock,3,3
+Specialty,Primitive Ranged Weapons,Sling,3,4
+Broad,Resolve,Resolve,6,5
+Specialty,Resolve,Mental resolve,3,3
+Specialty,Resolve,Physical resolve,3,3
+Broad,Security,Security,3,5
+Specialty,Security,Protection protocols,3,3
+Specialty,Security,Security devices,4,3
+Broad,Stamina,Stamina,3,
+Specialty,Stamina,Endurance,4,4
+Specialty,Stamina,Resist pain,5,4
+Broad,Street Smart,Street Smart,3,5
+Specialty,Street Smart,Street Knowledge,3,3
+Specialty,Street Smart,Criminal elements,5,3
+Broad,Survival,Survival,3,5
+Specialty,Survival,Survival training,3,3
+Specialty,Survival,Adaptability,3,
+Specialty,Survival,Trailblazing,3,3
+Broad,System Operation,System Operation,3,4
+Specialty,System Operation,Communications,3,3
+Specialty,System Operation,Defenses,3,3
+Specialty,System Operation,Engineering,3,3
+Specialty,System Operation,Sensors,3,3
+Specialty,System Operation,Weapons,3,3
+Broad,Tactics,Tactics,6,6
+Specialty,Tactics,Infantry tactics,3,3
+Specialty,Tactics,Space tactics,3,3
+Specialty,Tactics,Vehicle tactics,3,3
+Broad,Technical Science,Technical Science,7,7
+Specialty,Technical Science,Technical Knowledge,3,3
+Specialty,Technical Science,Invention,3,4
+Specialty,Technical Science,Repair,3,3
+Specialty,Technical Science,Juryrig,3,3
+Broad,Vehicle Operation,Vehicle Operation,3,3
+Specialty,Vehicle Operation,Air vehicle,5,5
+Specialty,Vehicle Operation,Land vehicle,3,3
+Specialty,Vehicle Operation,Space vehicle,5,5
+Specialty,Vehicle Operation,Water vehicle,3,3

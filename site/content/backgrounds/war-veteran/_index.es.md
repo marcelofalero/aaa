@@ -13,17 +13,15 @@ la altura de la leyenda.
 * Ninguna.
 
 ## Habilidades de Especialidad Favorecidas:
-* [Liderazgo-Inspirar] ({{< relref "/skills/leadership/#inspire" >}})
-* [Resistencia-Aguante]
-({{< relref "/skills/stamina/#endurance" >}})
-* [Voluntad-Voluntad Mental]
-({{< relref "/skills/resolve/#mental-resolve" >}})
+* [Liderazgo-Inspirar]({{< relref "/skills/leadership/#inspire" >}})
+* [Resistencia-Aguante]({{< relref "/skills/stamina/#endurance" >}})
+* [Voluntad-Voluntad Mental]({{< relref "/skills/resolve/#mental-resolve" >}})
 
 ## Ventajas Favorecidas:
-* [Celebridad] ({{< relref "/perks_flaws/#celebrity" >}})
+* [Celebridad]({{< relref "/perks_flaws/#celebrity" >}})
 
 ## Defecto Automático:
-* [Vieja Herida] ({{< relref "/perks_flaws/#old-injury" >}}) (Un
+* [Vieja Herida]({{< relref "/perks_flaws/#old-injury" >}}) (Un
 recordatorio físico duradero del evento que te hizo famoso).
 
 ## Equipo Inicial:
@@ -33,8 +31,8 @@ de analgésicos médicos.
 
 ## Capacidad Especial:
 **Carga de Gloria:** Recibes una bonificación de -1 paso a las
-tiradas de habilidad de [Interacción] ({{< relref
-"/skills/interaction/" >}}) o [Liderazgo] ({{< relref
+tiradas de habilidad de [Interacción]({{< relref
+"/skills/interaction/" >}}) o [Liderazgo]({{< relref
 "/skills/leadership/" >}}) al tratar con veteranos, personal
 militar activo o ciudadanos patrióticos que reconocen tu servicio.
 
