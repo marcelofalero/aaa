@@ -1,7 +1,7 @@
 +++
 title = "Command & Sensors"
 description = "Step 9 and Step 10 of Starship Construction."
-weight = 50
+weight = 60
 +++
 
 ## Step 9: Command And

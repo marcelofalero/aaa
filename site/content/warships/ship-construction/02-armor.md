@@ -1,7 +1,7 @@
 +++
 title = "Armor"
 description = "Step 2 of Starship Construction."
-weight = 10
+weight = 20
 +++
 
 ## Step 2: Armor

@@ -1,7 +1,7 @@
 +++
 title = "Engineering"
 description = "Step 3 through Step 5 of Starship Construction."
-weight = 20
+weight = 30
 +++
 
 ## Step 3: Power Plant
