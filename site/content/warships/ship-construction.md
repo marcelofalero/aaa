@@ -156,133 +156,50 @@ Fast Freighter Fast freighters are a commercial hull generally employed in small
 
 Destroyer Destroyers take their name from the torpedo-boat destroyers of the late 19th century. They’re integral to the defense of a task force, screening it against small craft and attack ships. Destroyers are often armed with a oneor two-shot weapons useful against much larger ships. A destroyer is usually about 150 to 200 meters long and masses about 8,000 metric tons. It carries a crew of 150 to 200.
 
-Table 5-1a: Military Hulls Hull Type Hull Pts. Small Craft Fighter Strike fighter Cutter Scout Escort Light Ships Corvette 80 (+8) Frigate 120 (+12) Destroyer 160 (+16) Medium Ships Light cruiser 320 (+64) Heavy cruiser 400 (+80) Armored cruiser 480 (+96) Heavy Ships Battlecruiser 960 (+288) Battleship 1200 (+360) Fleet carrier 1600 (+480) Super-heavy Ships Dreadnought 3200 (+1600) Super-carrier 4000 (+2000) Super-dread. 6400 (+3200) Fortress ship 12000 (+6000)
+### Table 5-1a: Military Hulls
 
-5%
+| +3 steps | 4 |
+|---|---|
+| Strike fighter | 15 | 1 | 1.5 | Sm | +3 steps | 4 | 8 | 8 | 4 | 2 | 2 | $500 K |
+| Cutter | 20 | 1 | 2 | Sm | +2 steps | 4 | 10 | 10 | 5 | 3 | 4 | $600 K |
+| Scout | 30 | 1.5 | 3 | Sm | +2 steps | 4 | 15 | 15 | 8 | 4 | 6 | $800 K |
+| Escort | 40 | 2 | 4 | Sm | +2 steps | 4 | 20 | 20 | 10 | 5 | 10 | $1 M |
+| Corvette | 80 (+8) | 4 | 8 | Lt | +1 step | 3 | 20 | 20 | 10 | 5 | 20 | $5 M |
+| Frigate | 120 (+12) | 6 | 12 | Lt | +1 step | 3 | 30 | 30 | 15 | 8 | 60 | $15 M |
+| Destroyer | 160 (+16) | 8 | 16 | Lt | +1 step | 3 | 40 | 40 | 20 | 10 | 80 | $30 M |
+| Light cruiser | 320 (+64) | 16 | 32 | Md | 0 | 2 | 40 | 40 | 20 | 10 | 240 | $50 M |
+| Heavy cruiser | 400 (+80) | 20 | 40 | Md | 0 | 2 | 45 | 45 | 23 | 12 | 300 | $100 M |
+| Armored cruiser 480 (+96) | 24 | 48 | Md | -1 step | 2 | 60 | 60 | 30 | 15 | 360 | $200 M |
+| Battlecruiser | 960 (+288) | 48 | 96 | Hv | -2 steps | 1 | 60 | 60 | 30 | 15 | 960 | $500 M |
+| Battleship | 1200 (+360) | 60 | 120 | Hv | -2 steps | 1 | 75 | 75 | 38 | 19 | 1200 | $1000 M |
+| Fleet carrier | 1600 (+480) | 80 | 160 | Hv | -3 steps | 1 | 100 | 100 | 50 | 25 | 1600 | $1500 M |
+| Dreadnought | 3200 (+1600) | 160 | 320 | SHv | -3 steps | 1 | 100 | 100 | 50 | 25 | 3200 $2000 M |
+| Super-carrier | 4000 (+2000) | 200 | 400 | SHv | -4 steps | 1 | 125 | 125 | 63 | 32 | 4000 $4000 M |
+| Super-dread. | 6400 (+3200) | 320 | 640 | SHv | -5 steps | 1 | 200 | 200 | 100 | 50 | 6400 $10000 M |
+| Fortress ship | 12000 (+6000) | 600 | 1200 | SHv | -5 steps | 1 | 375 | 375 | 188 | 94 | 12000 $50000 M |
 
-10%
+### Table 5-1b: Civilian Hulls
 
-Tough
+| Hull Type | Hull Pts. | 5% | 10% | Tough | Target Mvr | s | w | m | c | Crew | Cost |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| Launch | 8 | 0.5 | 1 | (Gd) | +3 steps | 4 | 4 | 4 | 2 | 1 | 2 | $300 K |
+| Courier | 16 | 1 | 1.5 | (Gd) | +2 steps | 4 | 8 | 8 | 4 | 2 | 4 | $400 K |
+| Trader | 24 | 1 | 2 | (Gd) | +2 steps | 4 | 12 | 12 | 6 | 3 | 6 | $500 K |
+| Fast freighter | 32 | 1.5 | 3 | Sm | +2 steps | 4 | 16 | 16 | 8 | 4 | 8 | $600 K |
+| Fast transport | 40 | 2 | 4 | Sm | +2 steps | 4 | 20 | 20 | 10 | 5 | 10 | $800 K |
+| Hauler | 72 (+7) | 3 | 7 | Sm | +1 step | 3 | 18 | 18 | 9 | 5 | 18 | $1 M |
+| Industrial | 96 (+10) | 5 | 10 | Sm | +1 step | 3 | 24 | 24 | 12 | 6 | 24 | $2 M |
+| Medium freighter 240 (+48) | 12 | 24 | Lt | 0 | 2 | 30 | 30 | 15 | 8 | 30 | $20 M |
+| Clipper | 360 (+72) | 18 | 36 | Lt | 0 | 2 | 45 | 45 | 23 | 12 | 360 | $40 M |
+| Medium transport 480 (+96) | 24 | 48 | Lt | -1 step | 2 | 60 | 60 | 30 | 15 | 60 | $60 M |
+| Tanker | 720 (+216) | 36 | 72 | Md | -1 step | 1 | 45 | 45 | 23 | 12 | 90 | $100 M |
+| Liner | 840 (+252) | 42 | 84 | Md | -1 step | 1 | 53 | 53 | 27 | 14 | 840 | $150 M |
+| Heavy transport 1280 (+384) | 64 | 128 | Md | -2 steps | 1 | 80 | 80 | 40 | 20 | 160 | $200 M |
+| Super-freighter 2400 (+1200) | 120 | 240 | Hv | -3 steps | 0 | 75 | 75 | 38 | 19 | 300 | $400 M |
+| Colony transport 3600 (+1800) | 180 | 360 | Hv | -4 steps | 0 | 113 | 113 | 57 | 29 | 3600 | $1000 M |
 
-Target Mvr
 
-s
 
-w
-
-m
-
-c
-
-Crew
-
-Cost
-
-0.5 1.5
-
-1.5
-
-Sm Sm Sm Sm Sm
-
-+3 steps +3 steps +2 steps +2 steps +2 steps
-
-$350 K $500 K $600 K $800 K $1 M
-
-Lt Lt Lt
-
-+1 step +1 step +1 step
-
-$5 M $15 M $30 M
-
-Md Md Md
-
--1 step
-
-$50 M $100 M $200 M
-
-Hv Hv Hv
-
--2 steps
-
--2 steps
-
--3 steps
-
-$500 M $1000 M $1500 M
-
-SHv SHv SHv SHv
-
--3 steps
-
--4 steps
-
--5 steps
-
--5 steps
-
-3200 $2000 M 4000 $4000 M 6400 $10000 M 12000 $50000 M
-
-Table 5-1b: Civilian Hulls Hull Type Hull Pts. Small Craft Launch Courier Trader Fast freighter Fast transport Light Ships Hauler 72 (+7) Industrial 96 (+10) Medium Ships Medium freighter 240 (+48) Clipper 360 (+72) Medium transport 480 (+96) Heavy Ships Tanker 720 (+216) Liner 840 (+252) Heavy transport 1280 (+384) Super-heavy Ships Super-freighter 2400 (+1200) Colony transport 3600 (+1800)
-
-5%
-
-10%
-
-Tough
-
-Target Mvr
-
-s
-
-w
-
-m
-
-c
-
-Crew
-
-Cost
-
-0.5 1.5
-
-1.5
-
-(Gd) (Gd) (Gd) Sm Sm
-
-+3 steps +2 steps +2 steps +2 steps +2 steps
-
-$300 K $400 K $500 K $600 K $800 K
-
-Sm Sm
-
-+1 step +1 step
-
-$1 M $2 M
-
-Lt Lt Lt
-
--1 step
-
-$20 M $40 M $60 M
-
-Md Md Md
-
--1 step
-
--1 step
-
--2 steps
-
-$100 M $150 M $200 M
-
-Hv Hv
-
--3 steps
-
--4 steps
-
-$400 M $1000 M
 
 Hull Points: The number of hull points available in this type, representing its capacity for installing systems. The first number is the basic hull point total, the number in parenthesis is the bonus hull point total. Tough: The ship’s toughness rating. Note that some ships have Good toughness, one step less than Small Craft. Target: The ship’s basic resistance modifier to enemy fire, based on its size and maneuverability. Maneuver: The ship’s maneuverability class. 5% and 10%: This is the number of hull points a system requiring 5 or 10 percent of the hull requires. This information is simply a shortcut to save you time and effort. S, W, M, C: The ship’s Stun, Wound, Mortal, and Critical damage tracks. Crew: For information purposes only, a general estimate of how many crewmen a typical ship of this type carries. Cost: The cost of the hull, in credits, Concord dollars, or the appropriate currency for your campaign.
 
@@ -396,65 +313,49 @@ Reflective Consisting of dense, highly polished plates of metal, reflective armo
 
 Design Tip: Armor Your ship design should devote about 10 to 20 percent of its hull points to defenses—armor and shields. Of course, you can maximize protection, but you’ll have to give up firepower or maneuverability. Similarly, going light on the armor leaves you more room for weapons and engines. It’s your call.
 
-Table 5-2: Armor Armor Type Progress Level 6: Fusion Age Polymeric, light Reflective, light Alloy, medium Polymeric, medium Reflective, medium Alloy, heavy* Reflective, heavy* Alloy, super-heavy! Progress Level 7: Gravity Age Cerametal, light Cerametal, medium Neutronite, medium Reactive, medium Cerametal, heavy* Neutronite, heavy* Reactive, heavy* Neutronite, super-heavy! Reactive, super-heavy! Progress Level 8: Energy Age Crystallis, light Nanofluidic, light Crystallis, medium Nanofluidic, medium Nanofluidic, heavy* Nanofluidic, super-heavy!
+### Table 5-2: Armor
 
-Tech
+| Tech | LI | HI | En | Hull | Cost/Hull Pt. | 59 |
+|---|---|---|---|---|---|---|
+| Polymeric, light | - | d4-1 | d4-1 | d4-2 | 2.5% | $50 K |
+| Reflective, light | - | d4-3 | d4-2 | d6-1 | 2.5% | $50 K |
+| Alloy, medium | - | d4+1 | d4+1 | d4 | 5% | $150 K |
+| Polymeric, medium | - | d4 | d4 | d4-1 | 5% | $100 K |
+| Reflective, medium | - | d4-2 | d4-1 | d6 | 5% | $100 K |
+| Alloy, heavy* | - | d6+1 | d6+1 | d6 | 10% | $300 K |
+| Reflective, heavy* | - | d4 | d4 | d8+1 | 10% | $200 K |
+| Alloy, super-heavy! | - | d6+3 | d6+3 | d6+2 | 20% | $600 K |
+| Cerametal, light | - | d6-1 | d6-1 | d6-1 | 2.5% | $100 K |
+| Cerametal, medium | - | d4+1 | d4+1 | d4+1 | 5% | $200 K |
+| Neutronite, medium | S | d6+1 | d6+1 | d6+1 | 5% | $500 K |
+| Reactive, medium | - | d4+2 | d6 | d4 | 5% | $150 K |
+| Cerametal, heavy* | - | d8 | d8 | d8 | 10% | $400 K |
+| Neutronite, heavy* | S | d8+1 | d8+1 | d8+1 | 10% | $1 M |
+| Reactive, heavy* | - | 2d4+1 | d8 | d4+1 | 10% | $300 K |
+| Neutronite, super-heavy! | S | d8+3 | d8+3 | d8+3 | 20% | $2 M |
+| Reactive, super-heavy! | - | 2d4+3 | d8+2 | d4+3 | 20% | $600 K |
+| Crystallis, light | P, X | d6-1 | d6 | d6+2 | 2.5% | $250 K |
+| Nanofluidic, light | S, C | d8-1 | d8-1 | d8 | 2.5% | $500 K |
+| Crystallis, medium | P, X | d6 | d6+1 | 2d4+1 | 5% | $500 K |
+| Nanofluidic, medium | S, C | 2d4 | 2d4 | 2d4 | 5% | $1 M |
+| Nanofluidic, heavy* | S, C | 2d4+1 | 2d4+2 | 2d4+1 | 10% | $2 M |
+| Nanofluidic, super-heavy! | S, C | 2d4+3 | 2d4+4 | 2d4+3 | 20% | $4 M |
+| points for the ship (round up to 8), and costs 600,000. | For example, one large mass reactor capable of generat- |
+| Some power plants can’t be miniaturized past a certain | ing 10 points of power requires 4 durability points (each |
+| point and are unavailable for minimal installations. This is | durability point provides 2.5 points of power). This installa- |
+| expressed as a minimum size for the power plant. Some | tion costs 100,000 for the reactor, plus 100,000 for each of |
+| power plants may also have a maximum size, indicating | the four durability points associated with the reactor—a total |
+| that the technology just isn’t suited for extremely large ap- | of 500,000. If you bought this as four one-durability mass |
+| plications. However, you can get around the maximum size | reactors, you’d pay the base cost times four, plus the dura- |
+| limitation by installing multiple small power plants—power | bility cost again, for a total of 800,000. Note that some |
+| from all sources counts for the ship’s total. | power systems are difficult to enlarge, and have a relatively |
+| Since you’re the designer, you can decide whether multi- | high cost per durability point, while other systems can be |
+| ple durability points spent on your power plant make up | easily scaled up and have a low cost per durability point. |
+| age—it’s hard to knock out all of your power at one shot. | At higher Progress Levels, most power plants require refu- |
+| However, it’s more expensive to build a ship this way. | eling only at infrequent intervals. Their fuel is either inex- |
 
-LI
 
-HI
 
-En
-
-Hull
-
-Cost/Hull Pt.
-
--
-
-d4-1 d4-3 d4+1 d4 d4-2 d6+1 d4 d6+3
-
-d4-1 d4-2 d4+1 d4 d4-1 d6+1 d4 d6+3
-
-d4-2 d6-1 d4 d4-1 d6 d6 d8+1 d6+2
-
-2.5% 2.5% 5% 5% 5% 10% 10% 20%
-
-$50 K $50 K $150 K $100 K $100 K $300 K $200 K $600 K
-
-S S S -
-
-d6-1 d4+1 d6+1 d4+2 d8 d8+1 2d4+1 d8+3 2d4+3
-
-d6-1 d4+1 d6+1 d6 d8 d8+1 d8 d8+3 d8+2
-
-d6-1 d4+1 d6+1 d4 d8 d8+1 d4+1 d8+3 d4+3
-
-2.5% 5% 5% 5% 10% 10% 10% 20% 20%
-
-$100 K $200 K $500 K $150 K $400 K $1 M $300 K $2 M $600 K
-
-## P, X
-
-## S, C
-
-## P, X
-
-## S, C
-
-## S, C
-
-## S, C
-
-d6-1 d8-1 d6 2d4 2d4+1 2d4+3
-
-d6 d8-1 d6+1 2d4 2d4+2 2d4+4
-
-d6+2 d8 2d4+1 2d4 2d4+1 2d4+3
-
-2.5% 2.5% 5% 5% 10% 20%
-
-$250 K $500 K $500 K $1 M $2 M $4 M
 
 * Heavy armors cannot be installed on small craft. ! Super-heavy armors cannot be installed on small craft or light ships.
 
@@ -464,87 +365,44 @@ For example, one large mass reactor capable of generating 10 points of power req
 
 Fuel Tanks and Refueling At higher Progress Levels, most power plants require refueling only at infrequent intervals. Their fuel is either inex-
 
-Table 5-3: Power Plants
+### Table 5-3: Power Plants
 
-Power Plant Progress Level 6: Fusion Age Solar Cell Fission Generator Fusion Generator Grav-fusion Cell Fuel Tank Progress Level 7: Gravity Age Tachyonic Collider Antimatter Reactor Mass Reactor Progress Level 8: Energy Age Dynamic Mass Reactor Matter Converter Quantum Cell Progress Level 9: Matter Age Singularity Generator
+| 60 | Power Plant | Tech | Pow |
+|---|---|---|---|
+| Size | Fuel? |
+| Solar Cell | S | 1.5 | $500 K | $200 K | 4 | No | - | - |
+| Fission Generator | - | 1.5 | $1 M | $100 K | 4 | No | - | - |
+| Fusion Generator | F | 2.0 | $1 M | $200 K | 2 | Yes | $1 K | 200 |
+| Grav-fusion Cell | G | 2.5 | $2 M | $200 K | 4 | Yes | $1 K | 300 |
+| Fuel Tank | - | - | $50 K | $10 K | - | - | - | - |
+| Tachyonic Collider | Q | 2.5 | $1 M | $100 K | 2 | No | - | - |
+| Antimatter Reactor | A | 3.0 | $4 M | $400 K | 3 | No | - | - |
+| Mass Reactor | D | 3.5 | $2 M | $250 K | 2 | No | - | - |
+| Dynamic Mass Reactor | D | 4.0 | $3 M | $200 K | 1 | No | - | - |
+| Matter Converter | M, X | 4.5 | $4 M | $200 K | 2 | No | - | - |
+| Quantum Cell | Q | 5.0 | $5 M | $400 K | 3 | No | - | - |
+| Singularity Generator | G | 6.0 | $10 M | $500 K | 20 | No | - | - |
+| haustible or needs to be replaced only when the entire ship | a fission or fusion generator converts the energy of atomic |
+| is overhauled. However, many PL 6 power plants require | bonds into heat energy which is then transformed into elec- |
+| fuel tank in addition to the power systems proper. | tricity, or some other easily used energy form. |
+| The amount of fuel a ship carries is up to you, but the | Most of these power systems actually carry fuel of one |
+| major consideration here is endurance. In other words, how | kind or another, even if no fuel tank is required. A fission |
+| long can the power plant operate on one tank of fuel? This | generator doesn’t need thousands of gallons of water, but it |
+| is measured by the fuel tank’s total power-days. If a fuel | does need some amount of uranium or plutonium which is |
+| tank holds 100 power-days, it can operate a power plant | consumed over time. The duration of a typical plant and its |
+| that generates 1 point of power for 100 days, 2 points of | refueling costs are addressed in each power system de- |
+| power for 50 days, 20 points of power for 5 days, and so | scription. |
+| least a couple of weeks without refueling. | The solar cell converts light and heat energy from a nearby |
+| Power Systems | (150 million kilometers) of a Sol-type star, the solar cell’s |
+| With the possible exception of the quantum cell, a power | power generation capacity increases by 50 percent; simi- |
+| generation system doesn’t create energy. Instead, it trans - | larly, at a distance of more than 5 AU from a Sol-type star, |
+| forms energy from one type to another, more usable, type. | the solar cell’s power generation capacity drops by 50 per- |
+| A steamship’s boiler transforms the energy stored in the | cent. For example, a cruiser equipped with 40 durability |
+| chemical bonds of its fuel oil into heat energy, which is then | points of solar cells normally generates 40 points of power; |
+| transformed into kinetic energy through a turbine. Similarly, | this increases to 60 power points in the inner portion of a |
 
-Tech
 
-Pow
 
-Base. Cost
-
-Cost/ Hull Pt.
-
-Min Size
-
-Fuel?
-
-Fuel Cost
-
-Fuel Efficiency
-
-S F G -
-
-1.5 1.5 2.0 2.5 -
-
-$500 K $1 M $1 M $2 M $50 K
-
-$200 K $100 K $200 K $200 K $10 K
-
--
-
-No No Yes Yes -
-
-$1 K $1 K -
-
--
-
-Q A D
-
-2.5 3.0 3.5
-
-$1 M $4 M $2 M
-
-$100 K $400 K $250 K
-
-No No No
-
--
-
--
-
-D
-
-## M, X
-
-Q
-
-4.0 4.5 5.0
-
-$3 M $4 M $5 M
-
-$200 K $200 K $400 K
-
-No No No
-
--
-
--
-
-G
-
-6.0
-
-$10 M
-
-$500 K
-
-No
-
--
-
--
 
 Tech: The technology track necessary to produce this power system. Pow: The amount of power produced by a power plant of 1 hull point. Fractions round normally, so a 2-hull point antimatter reactor (3.0 power produced per hull point) produces 6 power points. Base Cost: The cost for each separate power plant installed. Cost/Hull Point: The cost for each hull point of the power plant, cumulative with the cost for each new plant. Min Size: The smallest power plant possible, in hull points. Max Size: The largest power plant possible, in hull points. Fuel: Whether or not the power system requires additional fuel tankage. Fuel Cost: The cost per hull point of fuel purchased. Efficiency: The number of power-days that can generated by 1 hull point of fuel. For example, one hull point of fuel provides 200 power-days for a fusion generator of 1 hull point size, or 20 power-days for a fusion generator of 10 hull points. haustible or needs to be replaced only when the entire ship is overhauled. However, many PL 6 power plants require fuel tank in addition to the power systems proper. The amount of fuel a ship carries is up to you, but the major consideration here is endurance. In other words, how long can the power plant operate on one tank of fuel? This is measured by the fuel tank’s total power-days. If a fuel tank holds 100 power-days, it can operate a power plant that generates 1 point of power for 100 days, 2 points of power for 50 days, 20 points of power for 5 days, and so on. If your design calls for 10 power points to run its major systems, it’s a very good idea to purchase multiple fuel tanks (or one big one) so that your ship will operate for at least a couple of weeks without refueling.
 
@@ -602,73 +460,19 @@ Without engines, a ship can’t go anywhere. Many small ships rely on their mobi
 
 Engine Fuel Requirements Several engine types require some kind of fuel tanks, above and beyond the fuel requirements for the ship’s power plant. Each hull point of fuel contains a certain number of thrust-days for a 1-hull point engine; this is the number of days the engine could operate continuously on 1 hull point of fuel. Engines with 2, 3, or more hull points
 
-Table 5-4: Engines Engine Tech Pow Progress Level 6: Fusion Age Planetary thruster 1.0 Photon sail Fusion torch 0.33 Ion engine S 0.5 Progress Level 7: Gravity Age Particle impulse 0.75 Induction engine G 1.0 Progress Level 8: Energy Age Inertial flux engine X 1.0 Gravitic redirector G 0.67 Progress Level 9: Matter Age Spatial compressor T 2.0
-
-Min Size
-
-Base Cost.
-
-Cost/ Hull
-
-5%
-
-Acceleration Rating at... 10% 15% 20% 30% 40% 50% Eff. Cost
-
-$200 K $500 K $500 K $800 K
-
-$50 K $50 K $100 K $200 K
-
-0.1*
-
--0.5*
-
---
-
-0.25* 0.02* 1* 0.5*
-
-0.5* 0.05* 1.5* 1*
-
-1* 0.1* 2* 1.5*
-
-0.15* 3* 2*
-
-0.2* 4* 3*
-
-10 $10 K 0.25* 5* 200 $1 K 4* 400 $5 K
-
-$500 K $1 M
-
-$300 K 0.5 $500 K 1
-
-1.0
-
-1.5
-
-2.5
-
--
-
--
-
-$2 M $3 M
-
-$500 K 2 $1 M
-
--
-
--
-
-$1.5 M
-
-$200 K 3
-
--
-
--
-
-* Acceleration on PL 6 game scale; see Chapter 2.
-
-Tech: The technology type required to build an engine of this type. Power: The number of power points required by each hull point assigned to this engine. For example, a 30-hull point fusion torch requires 10 power points to operate. Min Size: The smallest number of hull points that can be assigned to this system. Base Cost: The cost for an engine installation of this type. Cost/Hull: The cost per hull point assigned to this engine; cumulative with the base cost. Acceleration rating at...: The ship’s acceleration for an installation comprising 5-50% of its overall hull. For example, a 300-hull point cruiser with 60 hull points assigned to its engines uses the 20% column. Acceleration figures are given in megameters per turn unless otherwise indicated. Fuel Efficiency: The number of thrust-days provided by one hull point of engine fuel. Engines of more than 1 hull point burn fuel at a correspondingly faster rate, so a 20 hull point fusion torch burns 20 thrust-days of fuel in one day of continuous thrust. Fuel Cost: The cost to purchase 1 hull point of fuel for this engine type.
+### ### Table 5-4: Engines
+| Min | Base | Cost/ | Acceleration Rating at... |
+|---|---|---|---|
+| Engine | Tech Pow | Size | Cost. | Hull | 5% | 10% 15% 20% 30% 40% 50% Eff. Cost |
+| Planetary thruster | - | 1.0 | 1 | $200 K | $50 K | 0.1* | 0.25* | 0.5* | 1* | - | - | - | 10 $10 K |
+| Photon sail | - | - | 5 | $500 K | $50 K | -- | 0.02* | 0.05* | 0.1* | 0.15* | 0.2* | 0.25* - | - |
+| Fusion torch | - | 0.33 | 3 | $500 K | $100 K | 0.5* | 1* | 1.5* | 2* | 3* | 4* | 5* | 200 $1 K |
+| Ion engine | S | 0.5 | 2 | $800 K | $200 K | -- | 0.5* | 1* | 1.5* | 2* | 3* | 4* 400 $5 K |
+| Particle impulse | - | 0.75 | 4 | $500 K | $300 K 0.5 | 1.0 | 1.5 | 2 | 2.5 | 3 | 4 | - | - |
+| Induction engine | G | 1.0 | 2 | $1 M | $500 K 1 | 2 | 3 | 4 | 5 | 6 | 8 | - | - |
+| Inertial flux engine X | 1.0 | 1 | $2 M | $500 K 2 | 3 | 4 | 5 | 6 | 8 | 10 | - | - |
+| Gravitic redirector G | 0.67 | 3 | $3 M | $1 M | 2 | 4 | 6 | 8 | 10 | 12 | 16 | - | - |
+| Spatial compressor T | 2.0 | 4 | $1.5 M | $200 K 3 | 6 | 9 | 12 | 15 | 18 | 20 | - | - |
 
 will burn fuel two, three, and so on times faster than the figure listed. The fuel use figure assumes more or less continuous maximum thrust. Naturally, a ship that spends three weeks drifting without firing its engines consumes no fuel at all.
 
@@ -718,95 +522,21 @@ other terminus and cannot jump to a place where no gate exists. The length of th
 
 Hyperdrive (PL 7) This drive system hurls the ship into an alternate dimension or reality in which the lightspeed limit is meaningless. As with the jump drive, it’s necessary to calculate a destination before entering hyperspace. This requires 1d4 (x) 10 minutes, or a Navigation skill check (complex skill check of 4 successes at no penalty, 10 minutes per check). Once the ship is engaged in a hyperspace jump, it can’t change course. It can drop out of hyperspace at any time simply by disengaging the hyperdrive, and there may be devices or natural phenomena that bar hyperspace travel and interdict any ship passing through the vicinity. A ship’s FTL speed depends on how much of the hull
 
-Table 5-5: FTL Drives Engine Tech Pow Progress Level 6: Fusion Age Jump Drive T Fuel spent Wormhole Screen M Progress Level 7: Gravity Age Gate Activator T Hyperdrive X Stardrive G ! Progress Level 8: Energy Age Drivewave G ! Spacefold Drive T Psychoportive Drive P Progress Level 9: Matter Age Transcendent Drive P Warpdrive X
-
-Min Size
-
-Base Cost.
-
-Cost/ Hull
-
-5%
-
-Acceleration Rating at... 10% 15% 20% 30% 40%
-
-$4 M $1 M
-
-$1 M $10 K $200 K
-
-var
-
-## 1 Ly 2 Ly
-
-** -
-
-$500 K $5 M $2 M
-
-$100 K $2 M $1 M
-
-$3 M $8 M $6 M
-
-$12 M $10 M
-
-## 8 Ly
-
--
-
-## 10 Ly
-
--
-
-** 1/day 2/day 3/day var -
-
-4/day 5/day 6/day -
-
-7/day -
-
-$1.5 M $2 M $200 K
-
-var -
-
--
-
--
-
--
-
-$400 K $5 M
-
-PEP/hr1/hr 2/hr 4/hr
-
-8/hr
-
-16/hr 32/hr
-
-pow PEP
-
-## 3 Ly
-
--
-
--
-
-## 4 Ly
-
--
-
-## 6 Ly
-
--
-
-50%
-
--
-
-64/hr
-
-* The jump drive takes 10 percent of the ship’s hull points. Its FTL rating varies with the amount of fuel expended for a
-
-jump. ** The wormhole screen takes 5 percent of the ship’s hull points; the gate activator takes 1 percent. Performance varies.
-
-! The stardrive and the drivewave require a mass reactor power plant. Performance varies. Tech: The technology required to build this drive system. Pow: The amount of power required, per hull point devoted to this system. Minimum Size: The smallest installation possible for this drive. Base Cost: The cost of the drive. Cost/Hull: The cost per hull point allocated to this drive; cumulative with the base cost. FTL rating at: The system’s FTL travel capability. Refer to the system descriptions for details.
+### ### Table 5-5: FTL Drives
+| Min | Base | Cost/ | Acceleration Rating at... |
+|---|---|---|---|
+| Engine | Tech Pow | Size | Cost. | Hull | 5% | 10% 15% 20% 30% 40% | 50% |
+| Jump Drive | T | 1 | 5 | $4 M | $1 M | - | var | - | - | - | - | - |
+| Fuel spent | - | - | - | $10 K | 1 LY 2 LY | 3 LY | 4 LY | 6 LY | 8 LY | 10 LY |
+| Wormhole Screen | M | 2 | 1 | $1 M | $200 K | ** | - | - | - | - | - | - |
+| Gate Activator | T | 2 | 1 | $500 K | $100 K | ** | - | - | - | - | - | - |
+| Hyperdrive | X | 3 | 4 | $5 M | $2 M | 1/day 2/day 3/day | 4/day 5/day 6/day | 7/day |
+| Stardrive | G | ! | 3 | $2 M | $1 M | var - | - | - | - | - | - |
+| Drivewave | G | ! | 2 | $3 M | $1.5 M | var | - | - | - | - | - | - |
+| Spacefold Drive | T | 4 | 4 | $8 M | $2 M | - | pow | - | - | - | - | - |
+| Psychoportive Drive P | 1 | 10 | $6 M | $200 K | - | PEP | - | - | - | - | - |
+| Transcendent Drive P | 1 | 4 | $12 M | $400 K | - | PEP/hr- | - | - | - | - |
+| Warpdrive | X | 2 | 2 | $10 M | $5 M | 1/hr 2/hr 4/hr | 8/hr | 16/hr 32/hr | 64/hr |
 
 is devoted to the hyperdrive system, with a minimum of 10 percent. Each hull point spent on the hyperdrive requires 3 power points to activate the system. For example, a ship of 300 hull points has a hyperdrive of 45 hull points, or 15 percent of the hull; this requires 135 power points to activate, and provides the ship with a speed of 2 light-years per day of hyperdrive travel. There’s no limit on the length of a jump other than the simple question of how long a ship can remain in hyperspace without refreshing its stores. (The GM may impose a limit of 1000 light-years per hyperjump at his discretion.)
 
@@ -870,37 +600,22 @@ nology at PL 6 or higher, or type X technology at PL 8 or higher. Artificial gra
 
 Constant Acceleration Obviously, this isn’t an installed system as much as it is a philosophy of spaceflight. A constant, moderate acceleration serves quite well as artificial gravity. In fact, if a ship can achieve and sustain an acceleration of 1 G (30 KPH per phase, or about 0.000025 megameters per phase, per phase) it’s just like standing on the surface of the Earth. By maintaining this slow, steady acceleration to the halfway point of the voyage, and then “flipping the ship” to
 
-Table 5-6: Support Systems System Progress Level 6: Fusion Age Life Support Crew or Troop Bunkroom Cabin Crew Quarters Seating Deck Passenger Quarters Cryogenics Unit Hydroponics Bay Recycler Unit Deep Stores Progress Level 7: Gravity Age Autosupport Life Suspension Unit Progress Level 8: Energy Age Symbiotic Hull
-
-Tech
-
-Hull
-
-Power
-
-Cost
-
-Notes
-
--
-
-$100 K $40 K $20 K $20 K $10 K $50 K $100 K $75 K $300 K $5 K
-
-Life support for 20 hull points Berthing for 20 crewmen Berthing for 2 crewmen Berthing for 6 crewmen Short-term seating for 20 passengers Staterooms for 2 passengers Capacity of 12 people Feeds 10 people Reduces consumption to 10% normal for 20 people Increases stores by 1,000 days
-
-S
-
-$200 K $250 K
-
-Life support for 40 hull points Capacity of 12 people
-
-## P, M
-
-$250 K
-
-Life support for 100 hull pts, recycling for 20 people
-
-Tech: Any advanced technology required for this system. Hull: The number of hull points used by this system. Some systems require a percentage of the hull. Power: The amount of power required for a system of this type. Some systems require the listed power for each hull point assigned to the system, while other systems are simply bought and installed as separate units. Cost: The system cost, or the cost per hull point for a system requiring some percentage of the hull.
+### Table 5-6: Support Systems
+| System | Tech | Hull | Power | Cost | Notes |
+|---|---|---|---|---|---|
+| Life Support | - | 1 | 1 | $100 K | Life support for 20 hull points |
+| Crew or Troop Bunkroom | - | 3 | 0 | $40 K | Berthing for 20 crewmen |
+| Cabin | - | 1 | 0 | $20 K | Berthing for 2 crewmen |
+| Crew Quarters | - | 2 | 0 | $20 K | Berthing for 6 crewmen |
+| Seating Deck | - | 2 | 0 | $10 K | Short-term seating for 20 passengers |
+| Passenger Quarters | - | 2 | 0 | $50 K | Staterooms for 2 passengers |
+| Cryogenics Unit | - | 2 | 1 | $100 K | Capacity of 12 people |
+| Hydroponics Bay | - | 2 | 1 | $75 K | Feeds 10 people |
+| Recycler Unit | - | 1 | 1 | $300 K | Reduces consumption to 10% normal for 20 people |
+| Deep Stores | - | 1 | 0 | $5 K | Increases stores by 1,000 days |
+| Autosupport | - | 1 | 1 | $200 K | Life support for 40 hull points |
+| Life Suspension Unit | S | 1 | 1 | $250 K | Capacity of 12 people |
+| Symbiotic Hull | P, M | 1 | 1 | $250 K | Life support for 100 hull pts, recycling for 20 people |
 
 begin decelerating at the same rate, a spacecraft can simulate gravity for most of its trip. There are three problems with this method: First, the ship is limited to 1G of acceleration, which means that even relatively short interplanetary voyages will take months. Second, the ship can’t maintain its simulated gravity during violent combat maneuvers. Finally, maintaining a constant acceleration for weeks or months may be beyond the capabilities of the ship’s engines or force the ship to carry a prohibitive amount of fuel.
 
@@ -954,7 +669,17 @@ Fixed Mounts By eliminating any mechanical training devices, it’s possible to 
 
 Turrets By mounting a weapon in a raised structure with clear fields of fire to all sides, it’s possible to allocate three arcs of fire to a weapon mount instead of the one arc allowed by a standard mount. The turret includes significant machinery, extra armor, climate control, and other systems common to the ship, so it costs 25% more money and hull points than the standard mount.
 
-Table 5–7: Hull Point Costs for Fixed Mounts and Turrets Standard Fixed Turret
+### Table 5-7: Hull Point Costs for Fixed Mounts and Turrets
+
+| Standard | Fixed | Turret |
+|---|---|---|
+| 1 | 1 | 1 |
+| 2 | 2 | 3 |
+| 3 | 2 | 4 |
+| 4 | 3 | 5 |
+
+
+
 
 Sponson The sponson is a bulge or blister in the side of the ship where a weapon can be mounted for an improved field of fire. It’s not as good as a turret; a sponson allows fire only into two arcs instead of three. The sponson costs 25% more than a standard mount of the same type, but it does not require any additional allocation of hull points.
 
@@ -984,97 +709,44 @@ Hydrogen Bore (PL 6) This mammoth weapon is basically a fusion torch drive desig
 
 Particle Beam (PL 7) An improved version of the PL 6 neutron gun, this device projects a stream of protons, neutrons, or alpha particles at the target, accelerating each to near light-speed. Not only does it deliver a scathing blast of hard radiation, but the kinetic energy of particle impact can vaporize its target. The heavy particle beam delivers a higher volume of particles to the target.
 
-Table 5-8: Beam Weapons Weapon Tech Hull Progress Level 6: Fusion Age Laser IR Laser X-ray Laser Heavy Laser Neutron Gun Fusion Laser F Graser Q Heavy Neutron Gun 22 Hydrogen Bore** F Progress Level 7: Gravity Age Plasma Cannon F Particle Beam Heavy Particle Beam 6 Heavy Plasma Beam F Matter Beam A Fusion Beam F Quantum Cannon Q Boson Gun Heavy Matter Beam A Fusion Bore** F Progress Level 8: Energy Age Maser Kinetic Lance X Pulse Maser EM Cannon Dark Fusion Gun D Gatling Maser Weak Force Gun M Strong Force Gun** M Zero Bore** Q Progress Level 9: Matter Age Blacklaser D Tachyon Gun X String Projector
+### Table 5-8: Beam Weapons                                                                        73
+| Weapon | Tech Hull | Pow | Cost. | Acc | Range | Fire | Damage | Mode |
+|---|---|---|---|---|---|---|---|---|
+| Laser | - | 1 | 2 | $100 K | -2 | 1/2/3 | En/S | d4s/d4w/d4+2w | F* |
+| IR Laser | - | 2 | 2 | $250 K | -2 | 1/2/3 | En/S | d4+1s/d4+1w/d6+1w | F* |
+| X-ray Laser | - | 2 | 2 | $350 K | -2 | 1/2/3 | En/S | d6+1s/d4+2w/d4m | F* |
+| Heavy Laser | - | 5 | 5 | $2 M | -1 | 1/3/5 | En/L | d6+2s/d6+2w/d6m | F/G |
+| Neutron Gun | - | 7 | 7 | $10 M | 0 | 1/3/5 | En/L | 2d4w/2d4+2w/2d4m | F/G |
+| Fusion Laser | F | 12 | 12 | $20 M | +1 | 2/4/6 | En/M | 2d6w/2d6+2w/2d6m | F/G |
+| Graser | Q | 15 | 15 | $40 M | +2 | 3/6/9 | En/M | 3d4s/2d4m/3d4m | F/G |
+| Heavy Neutron Gun - | 22 | 22 | $60 M | +3 | 3/6/9 | En/H | 2d6w/2d6m/2d6+2m | F/G |
+| Hydrogen Bore** | F | 50 | 60 | $100 M | +3 | 4/8/12 | En/SH | 3d4w/3d4m/3d4c | F |
+| Plasma Cannon | F | 3 | 3 | $400 K | -2 | 1/2/4 | En/S | d6+2w/d8+2w/d6+1m | F* |
+| Particle Beam | - | 4 | 5 | $500 K | -2 | 2/4/6 | En/S | d6+3s/d4+1m/d4+3m | F |
+| Heavy Particle Beam - | 6 | 8 | $4 M | -1 | 2/4/6 | En/L | d12+3s/d6+1m/d6+3m | F/G |
+| Heavy Plasma Beam F | 8 | 8 | $12 M | 0 | 2/4/8 | En/L | d8+2w/d12+2w/d8+2m | F/G |
+| Matter Beam | A | 11 | 11 | $20 M | 0 | 2/5/10 | En/M | 2d6+1w/2d8+1w/2d8m | F/G |
+| Fusion Beam | F | 15 | 15 | $25 M | +1 | 3/6/12 | En/M | d12+2w/d12+4w/d8+5m | F/G |
+| Quantum Cannon | Q | 18 | 18 | $50 M | +2 | 4/8/12 | En/M | 2d8w/2d6m/2d4c | F/G |
+| Boson Gun | - | 20 | 20 | $80 M | +3 | 4/8/12 | En/H | 3d6w/3d6m/4d6m | F/G |
+| Heavy Matter Beam A | 24 | 24 | $100 M | +3 | 4/8/16 | En/H | 2d6+1m/2d8+1m/2d8c | F/G |
+| Fusion Bore** | F | 60 | 75 | $200 M | +3 | 5/10/15 | En/SH | 3d6m/3d4c/3d6c | F |
+| Maser | - | 4 | 3 | $400 K | -3 | 1/3/5 | En/S | d6+2w/d4+1m/d6+2m | F* |
+| Kinetic Lance | X | 2 | 1 | $750 K | -3 | 2/4/6 | HI/S | d4+1w/2d4w/d4+3m | F* |
+| Pulse Maser | - | 6 | 4 | $4 M | -1 | 2/5/10 | En/L | d8+4w/d8+2m/d12+2m | F/G |
+| EM Cannon | - | 8 | 8 | $10 M | -1 | 3/6/12 | En/L | 3d6s/4d6s/4d8s | F/G |
+| Dark Fusion Gun | D | 15 | 15 | $40 M | 0 | 4/8/12 | En/M | 2d6w/3d4m/2d4+1c | F/G |
+| Gatling Maser | - | 18 | 36 | $50 M | +1 | 3/7/14 | En/M | d8+4w/d8+2m/d12+2m | F/G/B/A |
+| Weak Force Gun | M | 25 | 25 | $120 M | +2 | 5/10/15 | En/H | 4d4w/4d4m/4d4c | F/G |
+| Strong Force Gun** | M | 32 | 32 | $150 M | +3 | 5/10/20 | En/H | 3d6+2m/3d4c/4d6c | F/G |
+| Zero Bore** | Q | 100 | 120 | $300 M | +3 | 6/12/18 | En/SH | 4d6m/3d6c/3d8c | F |
+| Blacklaser | D | 3 | 3 | $1 M | -3 | 2/4/6 | En/S | d8w/d12w/d8m | F/B/A/G |
+| Tachyon Gun | X | 12 | 12 | $40 M | 0 | 4/8/12 | En/M | 2d8+2w/2d8m/d8+1c | F/G |
+| String Projector | Q, G | 24 | 30 | $200 M | +2 | 6/12/24 | LI/H | 4d8w/3d8m/3d8c | F/G |
 
-## Q, G
 
-Pow
 
-Cost.
 
-Acc
-
-Range
-
-Fire
-
-Damage
-
-Mode
-
-$100 K $250 K $350 K $2 M $10 M $20 M $40 M $60 M $100 M
-
--2
-
--2
-
--2
-
--1
-
-+1 +2 +3 +3
-
-1/2/3 1/2/3 1/2/3 1/3/5 1/3/5 2/4/6 3/6/9 3/6/9 4/8/12
-
-En/S En/S En/S En/L En/L En/M En/M En/H En/SH
-
-d4s/d4w/d4+2w d4+1s/d4+1w/d6+1w d6+1s/d4+2w/d4m d6+2s/d6+2w/d6m 2d4w/2d4+2w/2d4m 2d6w/2d6+2w/2d6m 3d4s/2d4m/3d4m 2d6w/2d6m/2d6+2m 3d4w/3d4m/3d4c
-
-F* F* F* F/G F/G F/G F/G F/G F
-
-$400 K $500 K $4 M $12 M $20 M $25 M $50 M $80 M $100 M $200 M
-
--2
-
--2
-
--1
-
-+1 +2 +3 +3 +3
-
-1/2/4 2/4/6 2/4/6 2/4/8 2/5/10 3/6/12 4/8/12 4/8/12 4/8/16 5/10/15
-
-En/S En/S En/L En/L En/M En/M En/M En/H En/H En/SH
-
-d6+2w/d8+2w/d6+1m d6+3s/d4+1m/d4+3m d12+3s/d6+1m/d6+3m d8+2w/d12+2w/d8+2m 2d6+1w/2d8+1w/2d8m d12+2w/d12+4w/d8+5m 2d8w/2d6m/2d4c 3d6w/3d6m/4d6m 2d6+1m/2d8+1m/2d8c 3d6m/3d4c/3d6c
-
-F* F F/G F/G F/G F/G F/G F/G F/G F
-
-$400 K $750 K $4 M $10 M $40 M $50 M $120 M $150 M $300 M
-
--3
-
--3
-
--1
-
--1
-
-+1 +2 +3 +3
-
-1/3/5 2/4/6 2/5/10 3/6/12 4/8/12 3/7/14 5/10/15 5/10/20 6/12/18
-
-En/S HI/S En/L En/L En/M En/M En/H En/H En/SH
-
-d6+2w/d4+1m/d6+2m d4+1w/2d4w/d4+3m d8+4w/d8+2m/d12+2m 3d6s/4d6s/4d8s 2d6w/3d4m/2d4+1c d8+4w/d8+2m/d12+2m 4d4w/4d4m/4d4c 3d6+2m/3d4c/4d6c 4d6m/3d6c/3d8c
-
-F* F* F/G F/G F/G F/G/B/A F/G F/G F
-
-$1 M $40 M $200 M
-
--3
-
-+2
-
-2/4/6 4/8/12 6/12/24
-
-En/S En/M LI/H
-
-d8w/d12w/d8m 2d8+2w/2d8m/d8+1c 4d8w/3d8m/3d8c
-
-F/B/A/G F/G F/G
-
-* Weapon modifications may make additional fire modes available. ** Area effect weapon; see TABLE 5-11. Weapon: The name of the weapon. Tech: The tech track required by this weapon. If more than one tech track code appears here, the builder need only have access to one of the tech tracks mentioned. Hull: The number of hull points required for the installation of this weapon system. Pow: The power required to employ this weapon in one round of combat. Cost: The cost, in millions of credits, Concord Dollars, or denomination appropriate to your game. Acc: The weapon’s base accuracy modifier. Range: The weapons short/medium/long ranges in megameters (units of 1,000 kilometers). Fire: The weapon’s type (low impact, high impact, or energy) and firepower (Small, Light, Medium, Heavy, or Super-Heavy). Damage: The weapon’s damage for an Ordinary/Good/Amazing-quality success on the attack roll. Mode: The weapon system’s allowed fire modes. ‘F’ stands for single-shot; ‘G’ stands for group (or battery) fire; ‘B’ stands for burst fire; and ‘A’ stands for autofire.
 
 Plasma Cannon (PL 7) The plasma cannon uses a powerful charge to convert a mix of chemicals into a white-hot plasma and then accelerates the mass toward the target with a simple rail gun. The result is a bolt of incandescent plasma that can explosively vaporize mundane materials. The heavy plasma cannon simply fires a larger bolt. Modification: At an additional cost of 200,000 credits and 1 hull point, the plasma cannon can be configured in a rapidfire quad mount for burst or autofire attack modes. This increases the power consumption to 5 power points per round.
 
@@ -1112,75 +784,28 @@ Like the naval cannons of old, projectile weapons use a motive force of some kin
 
 Tachyon Gun (PL 9) The tachyon gun actually fires a blast of high-energy, fasterthan-light particles at the target. Due to its ability to fire in a line of sight regardless of relative speed between the firing ship and the target, the tachyon gun ignores all penalties for firing at extreme high-velocity targets (see Chapter 4).
 
-Table 5-9: Projectile Weapons Weapon Tech Hull Progress Level 6: Fusion Age Point Defense Gun Rail Cannon Needle Driver Gauss Gun S Hi-Velocity Rail Gun Progress Level 7: Gravity Age Mass Cannon G Heavy Mass Cannon G Accelerator* Tach Rifle X Heavy Accelerator* Antimatter Gun* A Super Tach Rifle X Progress Level 8: Energy Age Sliver Gun Neutronium Driver S Bomb Projector* T Bomb Salvo* T Kinetic Converter* X Progress Level 9: Matter Age Tunneling Driver* Q Black Hole Gun G
-
-Pow
-
-Cost.
-
-Acc
-
-Range
-
-Fire
-
-Damage
-
-Mode
-
-$200 K $500 K $2 M $5 M $50 M
-
--1
-
-+1 +2 +4
-
-1/2/3 1/2/5 1/3/5 2/4/6 3/6/12
-
-HI/Gd HI/S HI/L HI/M HI/H
-
-d4s/d4w/d4+2w 2d4s/d6+2w/d4+1m d6+1w/d6+3w/d4+3m d6+1w/d6+2m/d4+1c d8+2w/d8+2m/d6+2c
-
-F/B/A F/G B/A F/G F/G
-
-3 $300 K $2 M 7 $10 M 8 $30 M 14 $40 M 18 $80 M 30 $120 M
-
--1
-
-+1 +1 +3 +4 +4
-
-1/3/5 2/4/6 3/5/7 6/8/10 4/8/10 4/8/12 8/10/14
-
-LI/S LI/L En/M HI/M En/H En/H HI/SH
-
-d6+2s/d6+1w/d6+3w 2d6s/2d6w/3d6w 2d6s/2d6w/2d6m d12w/d8m/d12m 2d6w/2d6m/2d6c 3d6w/3d4m/3d4c 2d8m/2d12m/2d8c
-
-F/G F/G F/G F/G F/G F/G F
-
-$250 K $4 M $15 M $20 M $50 M
-
--2
-
--1
-
--1
-
-+2
-
-1/2/4 2/4/8 4/6/8 5/7/10 4/8/16
-
-HI/S HI/L En/M En/M LI/H
-
-d6+1w/d6+3w/d4+2m F/B/A d6+3w/d6+1m/d6c F/G 2d6s/2d6w/2d6m F 2d6s/2d6w/2d6m F d12+3w/d12+3m/d12+1c F/G
-
-15 $90 M 40 $200 M
-
-+3 +1
-
-5/10/20 En/M** 2d6s/2d6w/2d6m 6/12/24 LI/SH 3d6m/4d6m/3d8c
-
-F/G S
-
-* Area effect weapon; see TABLE 5-11 for more information. ** Ignores target armor and shields or screens. Weapon: The name of the weapon. Tech: The tech track required by this weapon. Hull: The number of hull points required for the installation of this weapon system. Pow: The power required to employ this weapon in one action round of combat, regardless of how many shots it actually fires. Cost: The cost, in millions of credits, Concord Dollars, or denomination appropriate to your game. Acc: The weapon’s base accuracy modifier. Range: The weapons short/medium/long ranges in megameters. Fire: The weapon’s type (low impact, high impact, or energy) and firepower (Small craft, Light, Medium, Heavy, or Super-Heavy). Damage: The weapon’s damage for an Ordinary/Good/Amazing-quality success on the attack roll. Mode: The weapon system’s allowed fire modes. ‘F’ stands for single-shot;‘G’ stands for group (or battery) fire; ‘B’ stands for burst fire; and ‘A’ stands for autofire.
+### Table 5-9: Projectile Weapons
+| Weapon | Tech Hull | Pow | Cost. | Acc | Range | Fire | Damage | Mode |
+|---|---|---|---|---|---|---|---|---|
+| Point Defense Gun | - | 1 | 0 | $200 K | -1 | 1/2/3 | HI/Gd | d4s/d4w/d4+2w | F/B/A |
+| Rail Cannon | - | 4 | 3 | $500 K | 0 | 1/2/5 | HI/S | 2d4s/d6+2w/d4+1m | F/G |
+| Needle Driver | - | 6 | 6 | $2 M | +1 | 1/3/5 | HI/L | d6+1w/d6+3w/d4+3m | B/A |
+| Gauss Gun | S | 8 | 6 | $5 M | +2 | 2/4/6 | HI/M | d6+1w/d6+2m/d4+1c | F/G |
+| Hi-Velocity Rail Gun | - | 20 | 16 | $50 M | +4 | 3/6/12 | HI/H | d8+2w/d8+2m/d6+2c | F/G |
+| Mass Cannon | G | 2 | 3 $300 K | -1 | 1/3/5 | LI/S | d6+2s/d6+1w/d6+3w | F/G |
+| Heavy Mass Cannon | G | 5 | 6 | $2 M | 0 | 2/4/6 | LI/L | 2d6s/2d6w/3d6w | F/G |
+| Accelerator* | - | 9 | 7 $10 M | +1 | 3/5/7 | En/M | 2d6s/2d6w/2d6m | F/G |
+| Tach Rifle | X | 12 | 8 $30 M | +1 | 6/8/10 | HI/M | d12w/d8m/d12m | F/G |
+| Heavy Accelerator* | - | 18 | 14 $40 M | +3 | 4/8/10 | En/H | 2d6w/2d6m/2d6c | F/G |
+| Antimatter Gun* | A | 25 | 18 $80 M | +4 | 4/8/12 | En/H | 3d6w/3d4m/3d4c | F/G |
+| Super Tach Rifle | X | 40 | 30 $120 M | +4 | 8/10/14 | HI/SH | 2d8m/2d12m/2d8c | F |
+| Sliver Gun | - | 4 | 2 | $250 K | -2 | 1/2/4 | HI/S | d6+1w/d6+3w/d4+2m | F/B/A |
+| Neutronium Driver | S | 8 | 4 | $4 M | 0 | 2/4/8 | HI/L | d6+3w/d6+1m/d6c | F/G |
+| Bomb Projector* | T | 10 | 15 | $15 M | -1 | 4/6/8 | En/M | 2d6s/2d6w/2d6m | F |
+| Bomb Salvo* | T | 12 | 18 | $20 M | -1 | 5/7/10 | En/M | 2d6s/2d6w/2d6m | F |
+| Kinetic Converter* | X | 20 | 10 | $50 M | +2 | 4/8/16 | LI/H | d12+3w/d12+3m/d12+1c F/G |
+| Tunneling Driver* | Q | 30 | 15 $90 M | +3 | 5/10/20 En/M** 2d6s/2d6w/2d6m | F/G |
+| Black Hole Gun | G | 75 | 40 $200 M | +1 | 6/12/24 LI/SH 3d6m/4d6m/3d8c | S |
 
 Point Defense Gun (PL 6) The point defense gun is primarily a defensive system intended for use against incoming missiles. At close ranges, it can be employed in an offensive role. The point-defense gun can’t be used both defensively and offensively in the same action round. The point-defense gun can fire in burst or automatic mode with no additional modification.
 
@@ -1238,225 +863,113 @@ Launch Systems Launch systems are designed much like other weapon systems. They 
 
 Launched Ordnance Here’s a brief summary of how you need to equip your warship to carry launched ordnance: Bombs require a bomb rack or bomb bay, a bomb propulsion system (really just a casing), and a warhead. Mines require a minelayer, a mine propulsion system (again, a simple casing), a warhead, and a guidance system. Missiles require a missile rack or tube, a missile propulsion system, a warhead, and a guidance system. If you don’t want to go to the trouble of customizing your ship’s ordnance, check out the standard launch systems described later in this section.
 
-Table 5-10: Missiles, Bombs, and Mines (Part 1) Launch Systems Weapon Tech Progress Level 6: Fusion Age Bomb Rack Bomb Bay Extra capacity Minelayer ...Extra capacity Missile Rack Missile Tube Magazine Progress Level 7: Gravity Age Ordnance Cell Array Extra cells -
+### Table 5-10: Missiles, Bombs, and Mines (Part 1)
+
+| Tech | Hull | Power | Cost | Cap | Reload | ROF | Notes |
+|---|---|---|---|---|---|---|---|
+| Bomb Rack | - | 1 | 0 | $10 K | 4 | N | All |
+| Bomb Bay | - | 10 | 1 | $100 K | 40 | Y | 10/rd |
+| Extra capacity | - | +1 | 0 | $10 K | +4 | - |
+| Minelayer | - | 5 | 2 | $100 K | 10 | N | 10/rd | Deploys one mine pattern |
+| ...Extra capacity | - | +5 | +2 | $50 K | +10 | - |
+| Missile Rack | - | 2 | 1 | $50 K | 8 | N | 4/rd |
+| Missile Tube | - | 3 | 1 | $100 K | 12 | Y | 1/rd |
+| Magazine | - | +1 | 0 | $50 K | +4 | - | - |
+| Ordnance Cell Array | - | 10 | 2 | $1 M | 40 | N | All | Carries missiles, bombs, or mines |
+| Extra cells | - | 1 | 0 | $25 K | +4 | N | - |
+| Weapon | Tech | Size | War | Cost | Acc | End | ACC | Notes |
+| Bomb or mine, light | - | 1 | 1 | $5 K | -3 | - | - |
+| Bomb or mine, med | - | 2 | 2 | $10 K | -2 | - | - |
+| Bomb, or mine, hvy | - | 4 | 4 | $20 K | -1 | - | - |
+| Rocket, chem | - | 2 | 1 | $15 K | +2 | 2 | 2* |
+| Missile, light | S | 2 | 2 | $25 K | 0 | 2 | 4* |
+| Missile, heavy | S | 4 | 4 | $50 K | +1 | 4 | 3* |
+| Missile, light | Q, G | 1 | 1 | $40 K | -1 | 4 | 6 |
+| Missile, medium | Q, G | 2 | 2 | $60 K | 0 | 6 | 5 |
+| Missile, heavy | Q, G | 4 | 4 | $100 K | +1 | 8 | 4 |
+| Missile, light | X | 1 | 2 | $50 K | -2 | 6 | 8 |
+| Missile, medium | X | 2 | 4 | $100 K | -1 | 10 | 6 |
+| Missile, tachyon | Q | 4 | 4 | $500 K | 0 | - | - | Hits target in same phase |
+
+| Tech | War | Cost | Acc | Fire | Damage |
+|---|---|---|---|---|---|
+| AA Burst* | - | 1 | $5 K | -2 | HI/S | d8w/d6m/2d4m |
+| CHE* | - | 2 | $10 K | 0 | En/L | d6+1s/d6+1w/d4+2m |
+| KE Submunition* | - | 2 | $20 K | -1 | HI/L | d6+2s/d6+2w/d6+4w |
+| Low-yield Nuke* | - | 2 | $500 K | 0 | En/M | 2d6s/2d6w/2d6m |
+| Hi-yield Nuke* | - | 4 | $1 M | +1 | En/H | 2d6w/2d6m/2d6c |
+| Plasma* | F | 1 | $50 K | -1 | En/L | d6+3w/d8+3w/d6+2m |
+| MRB (Mass Reaction)* | D | 2 | $200 K | 0 | En/M | 2d4+1s/2d4w/d8+1m |
+| Matter* | A | 4 | $2 M | +1 | En/SH | 3d6w/3d6m/2d6+2c |
+| Starload* | D | 1 | $80 K | -2 | En/L | 2d6w/2d6m/2d4c |
+| Nova Burst* | G | 2 | $500 K | -1 | LI/H | 2d8w/2d6m/2d4c |
+| Zero Point* | Q | 4 | $3 M | 0 | En/SH | 3d8w/3d8m/3d6c |
+| Null Bomb* | X | 4 | $5 M | -1 | En/SH | 4d6w/4d6m/4d6c |
+| Weapon | Tech | Cost | Acc | Notes |
+| Active Radar | - | $20 K | 0 | Can be jammed by ECM |
+| EM Homing | - | $10 K | 0 | Accuracy drops to +2 step penalty if target is not |
+| IR Homing | - | $10 K | 0 | Accuracy drops to +2 step penalty if target is not IR |
+| Command | - | $5 K | +1 | Can be jammed by ECM |
+| Mass Homing | G | $10 K | -1 |
+| AI Probability | C | $20 K | -2 |
+| All launch systems possess a special characteristic called | launch system’s capacity, medium weapons take up 2 |
+| capacity, which indicates how much ordnance the system | points, and heavy weapons take up 3 points. For example, |
+| can carry. Obviously, a missile rack can carry a lot of small | a bomb rack (capacity 4) could carry 4 light bombs, 2 |
+| missiles or a few big ones. Generally, each hull point devot- | medium bombs, or 1 heavy bomb. |
+| ed to a launch system provides two to four points of capac- | Most launch systems can be reloaded only in a friend- |
+| ity for ordnance. As the designer, you can choose to buy | ly base or port. Even if a ship is carrying extra missiles |
+| extra capacity for your launch system by allocating some | in its cargo space, it takes a long and complicated EVA |
+| extra hull space and money to the launch system. | procedure to maneuver the ordnance into its firing posi- |
+| Missiles, bombs, and mines come in three sizes—light, | tion. Reloading bomb racks, missile racks, or ordnance |
+| medium, and heavy. Light weapons take up 1 point of the | cells in open space requires the ship to avoid all speed |
+
+| Weapon | Tech Hull | Pow | Cost. | Acc | Range | Fire | Damage | Mode |
+|---|---|---|---|---|---|---|---|---|
+| SMP Bomb Rack | - | 1 | 0 | $70 K | -3 | 0 | HI/L | d6+2s/d6+2w/d6+4w | F (2) |
+| Fusion Bomb Rack | - | 1 | 0 | $1 M | -1 | 0 | En/H | 2d6w/2d8m/2d6c | F (1) |
+| CHE Missile Rack | S | 2 | 1 | $270 K | 0 | * | En/L | d6+1s/d6+1w/d4+2m | F (4) |
+| Missile Mount | S | 10 | 1 | $1.6 M | - | * | - | - | F |
+| SMP Missiles | -1 | * | HI/L | d6+2s/d6+2w/d6+4w | (10) |
+| AA Missiles | -2 | * | HI/S | d8w/d6m/2d4m | (10) |
+| Plasma Missile Rack | F, G | 2 | 1 | $850 K | -3 | * | En/L | d6+3w/d8+3w/d6+2m | F (8) |
+| Matter Missile Rack | A, G | 2 | 1 | $4.2 M | +1 | * | En/SH | 3d6m/2d6c/2d6+2c | F (2) |
+| Ordnance Array | ! | 20 | 2 | $16 M | - | * | - | - | F |
+| Plasma Missiles | -3 | * | En/L | d6+3w/d8+3w/d6+2m | (20) |
+| Matter Missiles | +1 | * | En/SH | 3d6m/2d6c/2d6+2c | (10) |
+| MRB Mines | -3 | 0 | En/M | 2d4+1s/2d4w/d8+1m | (10) |
+| Nova Array | G, C | 10 | 2 | $23.8 M | -5 | * | LI/H | 2d8w/2d6m/2d4c | (40) |
+| changes or maneuvers for 1d4 hours. | multiple missile racks. |
+| Bomb bays and missile tubes are an exception to this | Missile Tube (PL 6): This is an internal missile storage |
+| rule; they can be reloaded in space, as long as the ship is | and launch facility. Its basic capacity is twelve, and it can |
+| carrying extra ordnance in an internal magazine. | fire one missile per round. While its rate of fire is inferior |
+| Finally, every launch system possesses a basic rate of | to the missile rack, the missile tube enjoys one advantage; |
+| fire, which indicates how many weapons it can fire, drop, | it can be reloaded in space. |
+| or dispense in a single round. A missile tube must cycle | Ordnance Cell Array (PL 7): This system is similar to the |
+| through the process of bringing the next missile from the | vertical launch cells of today’s naval vessels. Each missile is |
+| magazine to the rail and then firing it off, but a simple rack | pre-loaded into a single cell or canister; the array consists |
+| or cell system can torch off a number of missiles at the | of dozens of these canisters. Bombs, mines, and missiles of |
+| same time. | various sizes and warheads can be carried as the ship- |
+| Bomb Rack (PL 6): As you might expect, this launch sys- | builder sees fit, offering a great deal of tactical flexibility. |
+| Bomb Bay (PL 6): The bomb bay has a capacity of 40 | The fuselage, engine, casing, and general design of the |
+| light, 20 medium, or 10 heavy bombs. Its capacity can be | weapon is included in this category. Propulsion systems |
+| expanded by 4 points (4 light, 2 medium, or 1 heavy | range from virtually none (bombs or mines) to sophisticated |
+| bomb) for each additional hull point assigned to the system | devices such as the tachyon missile. |
+| beyond the 10 hull points normally required. | The size of the propulsion system indicates how many |
+| Minelayer (PL 6): This system consists of two or more | points of launch system capacity it takes up. For example, a |
+| mine rails, low-powered magnetic accelerators designed to | medium bomb takes 2 points of capacity, so a bomb rack |
+| deploy a pattern of mines into one hex adjacent to the | (capacity 4) could carry two medium bombs. |
+| launching ship in a single phase. Unlike other launched | The warhead rating of the propulsion system describes |
+| weapons, at least ten mines (a single mine pattern) must be | the maximum size of the warhead that can be fitted to that |
+| deployed to be effective. | propulsion system. Very large and powerful warheads re- |
+| Since the minelayer also includes machinery for deploy- | quire heavy propulsion systems, while small warheads re- |
+| ing the mines, it has half the capacity of other launch sys- | quire light propulsion systems. |
+| tems of a similar size. | The weapon’s propulsion system also provides a basic |
+| Missile Rack (PL 6): This is a system that can hold eight | accuracy rating. This reflects the fact that small missiles are |
+| light missiles, four medium missiles, or two heavy missiles. | generally more nimble than large missiles, and thus more |
+| Its capacity can’t be increased, but it’s easy enough to buy | likely to hit a target that’s trying not to be hit. |
 
-Hull
 
-Power
 
-Cost
-
-Cap
-
-Reload
-
-ROF
-
-+1 +5 +1
-
-+2
-
-$10 K $100 K $10 K $100 K $50 K $50 K $100 K $50 K
-
-+4 +10 +4
-
-N Y N N Y -
-
-All 10/rd
-
-$1 M $25 K
-
-+4
-
-N N
-
-All -
-
-10/rd
-
-Notes
-
-Deploys one mine pattern
-
-4/rd 1/rd Carries missiles, bombs, or mines
-
-Tech: The tech track required by this weapon. Hull: The number of hull points required for the installation of this weapon system. Pow: The power required to employ this weapon in one turn of combat. Cost: The cost, in millions of credits, Concord Dollars, or denomination appropriate to your game. The launch system cost does not include the cost of any ordnance carried. Capacity: The capacity of the launch system. Missiles, mines, and bombs of Size 1 require 1 point each; weapons of Size 2 require 2 points each. Reload: Whether or not this system can be reloaded in open space. ROF: The number of missiles, bombs, or mines that may be fired in a single round.
-
-Propulsion Systems Weapon Tech Progress Level 6: Fusion Age Bomb or mine, light Bomb or mine, med Bomb, or mine, hvy Rocket, chem Missile, light S Missile, heavy S Progress Level 7: Gravity Age Missile, light
-
-## Q, G
-
-Missile, medium
-
-## Q, G
-
-Missile, heavy
-
-## Q, G
-
-Progress Level 8: Energy Age Missile, light X Missile, medium X Progress Level 9: Matter Age Missile, tachyon Q
-
-Size
-
-War
-
-Cost
-
-Acc
-
-End
-
-ACC
-
-$5 K $10 K $20 K $15 K $25 K $50 K
-
--3
-
--2
-
--1
-
-+2 +1
-
-2* 4* 3*
-
-$40 K $60 K $100 K
-
--1
-
-+1
-
-$50 K $100 K
-
--2
-
--1
-
-$500 K
-
--
-
--
-
-Notes
-
-Hits target in same phase
-
-* On the PL 6 scale. In PL 7 encounters, divide this figure by ten. Size: The number of launch system capacity points required by this weapon. For example, two bombs (size 1) or one heavy bomb (size 2) could fit into a bomb rack with a capacity of 2. Warhead: The size of the warhead that can be mounted on this propulsion system. Acc: The basic accuracy modifier for the weapon, in steps. End: The number of rounds in which this propulsion system can apply its acceleration before its fuel or power is exhausted. ACC: The acceleration rating of the missile system, in megameters per phase per phase.
-
-Table 5-10: Missiles, Bombs, and Mines (Part 2) Warheads (Mines, Bombs, and Missiles) Weapon Progress Level 6: Fusion Age AA Burst* CHE* KE Submunition* Low-yield Nuke* Hi-yield Nuke* Progress Level 7: Gravity Age Plasma* MRB (Mass Reaction)* Matter* Progress Level 8: Energy Age Starload* Nova Burst* Zero Point* Progress Level 9: Matter Age Null Bomb*
-
-Tech
-
-War
-
-Cost
-
-Acc
-
-Fire
-
-Damage
-
--
-
-$5 K $10 K $20 K $500 K $1 M
-
--2
-
--1
-
-+1
-
-HI/S En/L HI/L En/M En/H
-
-d8w/d6m/2d4m d6+1s/d6+1w/d4+2m d6+2s/d6+2w/d6+4w 2d6s/2d6w/2d6m 2d6w/2d6m/2d6c
-
-F D A
-
-$50 K $200 K $2 M
-
--1
-
-+1
-
-En/L En/M En/SH
-
-d6+3w/d8+3w/d6+2m 2d4+1s/2d4w/d8+1m 3d6w/3d6m/2d6+2c
-
-D G Q
-
-$80 K $500 K $3 M
-
--2
-
--1
-
-En/L LI/H En/SH
-
-2d6w/2d6m/2d4c 2d8w/2d6m/2d4c 3d8w/3d8m/3d6c
-
-X
-
-$5 M
-
--1
-
-En/SH
-
-4d6w/4d6m/4d6c
-
-* Area effect weapon.
-
-War: The size of the warhead. Acc: The warhead’s accuracy modifier. Fire: The attack type (low impact, high impact, or energy) and its firepower (small, light, medium, heavy, or super-heavy.) Damage: The damage inflicted by an Ordinary, Good, or Amazing-quality success on the attack roll.
-
-Guidance Systems (Missiles, Mines) Weapon Progress Level 6: Fusion Age Active Radar EM Homing EM active IR Homing hot Command Progress Level 7: Gravity Age Mass Homing Progress Level 8: Energy Age AI Probability
-
-Tech
-
-Cost
-
-Acc
-
-Notes
-
--
-
-$20 K $10 K
-
-Can be jammed by ECM Accuracy drops to +2 step penalty if target is not
-
--
-
-$10 K
-
-Accuracy drops to +2 step penalty if target is not IR
-
--
-
-$5 K
-
-+1
-
-Can be jammed by ECM
-
-G
-
-$10 K
-
--1
-
-C
-
-$20 K
-
--2
-
-Acc: The guidance system’s accuracy modifier, cumulative with the propulsion system and warhead accuracy. All launch systems possess a special characteristic called capacity, which indicates how much ordnance the system can carry. Obviously, a missile rack can carry a lot of small missiles or a few big ones. Generally, each hull point devoted to a launch system provides two to four points of capacity for ordnance. As the designer, you can choose to buy extra capacity for your launch system by allocating some extra hull space and money to the launch system. Missiles, bombs, and mines come in three sizes—light, medium, and heavy. Light weapons take up 1 point of the
-
-launch system’s capacity, medium weapons take up 2 points, and heavy weapons take up 3 points. For example, a bomb rack (capacity 4) could carry 4 light bombs, 2 medium bombs, or 1 heavy bomb. Most launch systems can be reloaded only in a friendly base or port. Even if a ship is carrying extra missiles in its cargo space, it takes a long and complicated EVA procedure to maneuver the ordnance into its firing position. Reloading bomb racks, missile racks, or ordnance cells in open space requires the ship to avoid all speed
-
-Table 5-10: Missiles, Bombs, and Mines (Part 3) Sample Systems Weapon Tech Hull Progress Level 6: Fusion Age SMP Bomb Rack Fusion Bomb Rack CHE Missile Rack S Missile Mount S SMP Missiles AA Missiles Progress Level 7: Gravity Age Plasma Missile Rack
 
 ## F, G
 
@@ -1556,7 +1069,48 @@ Warheads The warhead is the business end of the bomb, mine, or missile. Warheads
 
 gy) and firepower (small craft to super-heavy) of the warhead. It’s the best indication of just how destructive the warhead is; a light bomb can blow up a vehicle or a building, while a superheavy warhead may destroy fortress ships or entire cities. The weapon’s damage rating indicates the damage inflicted by an Ordinary, Good, or Amazing-quality success on the attack roll. AA Burst (PL 6): This small warhead is intended for use against small craft, enemy missiles, and vehicles. It can seriously damage a fighter or trader, but it’s unlikely to cause any significant damage to a destroyer or cruiser. The warhead consists of a high explosive burst charge and a directed spray of shrapnel. The AA burst is an area-effect weapon. It can damage targets dozens of meters from its burst point. The quality of the attack roll indicates how close to the target the missile got before it detonated. CHE (PL 6): The conventional high-explosive warhead can wreck many small craft, but it’s useful only in salvos or flights against light and medium warships. Heavy vessels such as battleships can ignore the weapon despite its payload of hundreds of kilos of advanced chemical explosives. The CHE warhead is an area-effect weapon. KE Submunition (PL 6): This warhead consists of a bundle of dozens or hundreds of tungsten steel darts or rods, each mounted on small rocket motors. When the weapon approaches its target, the warhead splits into a deadly sleet of high-velocity metal arrows. The impact energy alone can vaporize meters of heavy armor. Any other targets within 200 meters of the primary target are attacked at the same time. Each target gets its own attack and damage rolls. Low-Yield Nuke (PL 6): Marginally more acceptable than the H-bomb, the low-yield nuke is a fission weapon designed to “fizzle” in an explosion of only 2 or 3 kilotons, instead of a 30 or 40 kiloton city-killer. This is still an enormous amount of firepower, capable of devastating a city center or military base. The low-yield nuke is an area-effect weapon. Don’t forget that damage upgrades against targets of inferior toughness—the nuke inflicts 2d6m against things like people and cars within its 800-meter blast radius. While the low-yield nuke will devastate an area more than a kilometer across, in a space battle this almost always means that only a single enemy ship is affected. On the megameter scale of combat, a single hex is 1,000 kilometers across. High-Yield Nuke (PL 6): This a 1-megaton monster, a city-busting fusion bomb hundreds of times more powerful than the low-yield weapon. In open space, it’s unlikely that more than one enemy ship could be affected by a single blast. However, a high-yield nuke is a city-killer. Plasma (PL 7): The plasma warhead is an improvement on the advanced explosives of the previous Progress Level. It creates a blast of white-hot plasma that can blast a small ship like a fighter out of the sky with one shot. MRB (PL 7): This warhead uses a dark matter reaction to
 
-Table 5-11: Area Effect Weapons Weapon Progress Level 6: Fusion Age Hydrogen Bore AA Burst CHE KE Low-yield Nuke High-yield Nuke Progress Level 7: Gravity Age Fusion Bore Strong Force Gun Antimatter Gun Plasma Matter Reaction Matter Bomb Progress Level 8: Energy Age Zero Bore Kinetic Converter Starload Nova Burst Zero Point Progress Level 9: Matter Age Null torpedo Null bomb
+### Table 5-11: Area Effect Weapons
+
+| Weapon | Type | Ama | Good | Ordinary | Notes |
+|---|---|---|---|---|---|
+| Hydrogen Bore | beam | 100m | 200m | 300m | TA |
+| AA Burst | warhead | 10m | 20m | 40m | TA |
+| CHE | warhead | 20m | 40m | 60m | TA |
+| KE | warhead | all targets within 200m attacked | TA |
+| Low-yield Nuke | warhead | 200m | 400m | 800m | MD |
+| High-yield Nuke | warhead | 5 km | 10 km | 20 km | SA |
+| Fusion Bore | beam | 200m | 400m | 600m | TA |
+| Strong Force Gun | beam | 150m | 300m | 600m | TA |
+| Antimatter Gun | proj. | 100m | 200m | 300m | MD |
+| Plasma | warhead | 60m | 120m | 180m | TA |
+| Matter Reaction | warhead | 500m | 1 km | 2 km | SA |
+| Matter Bomb | warhead | 10 km | 20 km | 40 km | SA |
+| Zero Bore | beam | 300m | 600m | 1 km | MD |
+| Kinetic Converter | proj. | 200m | 400m | 800m | MD |
+| Starload | warhead | 80m | 160m | 240m | TA |
+| Nova Burst | warhead | 1 km | 2 km | 4 km | SA |
+| Zero Point | warhead | 20 km | 40 km | 80 km | SA |
+| Null torpedo | torpedo | 100m | 200m | 300m | TA |
+| Null bomb | warhead | 30 km | 60 km | 100 km | SA |
+| create a powerful wave of energy. It’s more concentrated | cruiser, and may seriously damage larger warships. The |
+| than a nuclear blast, but less likely to cause unwanted col- | nova burst is an area-effect weapon. |
+| lateral damage. See TABLE 5–11 for details on area-effect | Zero Point (PL 8): This bomb creates a spontaneous |
+| weapons. | quantum fluctuation of energy akin to the Big Bang, albeit |
+| Matter (PL 7): The matter warhead is more properly called | on a smaller scale. It can devastate thousands of square |
+| the antimatter warhead; it contains a kilo or two of antimatter | kilometers in an instant. The warhead may miss its target |
+| in a magnetic bottle, and detonates simply by shutting down | by dozens of kilometers and still inflict lethal damage to ro- |
+| the containment vessel. It’s equivalent to a nuke. | bust targets such as orbital fortresses or heavily armored |
+| Starload (PL 8): The most powerful of the purely tactical | battleships. |
+| warheads, the starload is fueled by a dark-matter reaction | Null Bomb (PL 9): This horrifying weapon simply gener- |
+| akin to that of the matter reaction burst of PL 7. However, | ates a field in which all atomic bonds cease to exist. All |
+| it’s miniaturized for smaller applications. Like most war- | nearby matter is reduced to subatomic dust. |
+| Nova Burst (PL 8): This warhead creates an incredible | The last component of a missile or mine is its guidance sys- |
+| gravitational force to compress normal matter into an in- | tem. How does it recognize its target, and what controls its |
+| credibly dense mass, which then explodes in a colossal det- | detonation? The only game effect a guidance system provides |
+| onation. A single nova burst can cripple a destroyer or | is a final modifier to the weapon’s accuracy. Most missiles |
+
+
+
 
 Type
 
@@ -1636,7 +1190,43 @@ Tractor Beam (PL 7) An application of advanced gravity tech, the tractor beam wo
 
 Target Acceleration 0.25 Mpp 0.5 Mpp 1 Mpp 2 Mpp 3 Mpp
 
-Table 5-12: Torpedoes and Special Weapons Weapon Tech Hull Pow Cost. Acc Range Fire Damage Mode Progress Level 6: Fusion Age Cable Gun S 1 $150 K +1
+### Table 5-12: Torpedoes and Special Weapons
+
+| Tech Hull Pow Cost. | Acc | Range Fire | Damage | Mode |
+|---|---|---|---|---|
+| Cable Gun | S | 2 | 1 $150 K +1 | 0 | -- | Special | F |
+| RF Spike | - | 3 | 6 $500 K | -2 | 1/2/3 En/SH 3d4s/3d6s/2d4w**** | F |
+| Thermal Inducer | X | 8 | 12 | $4 M +3@ 2/4/6 En/M | d6w/d6+1w/d6m | F |
+| Thermal Nullifier | X | 15 | 20 $35 M +3@ 2/4/6 En/M | d6+3w/d6+4w/d6+2m F |
+| Tractor Beam | G | 2 | 5 $500 K | -1 | 2/4/8 -- | Special | F |
+| Mass Converter | M | 4 | 6 | $1 M | -4 | 2/4/6 En/S | d6+3s/d6+3w/d6+2m | F |
+| Matter Torpedo | D | 5 | 7 $600 K | 0 | 2/4/8 En/M | 2d6s/2d6w/d6+3m | F |
+| Plasma Torpedo | F | 10 | 15 $10 M | +1 | 3/6/9 En/H | 3d6s/3d6w/d8+3m | F |
+| EM Torpedo | Q | 3 | 5 $450 K | -2 | 2/5/10 En/M | d6+3s/2d8s/d4+2w | F |
+| Neural Inhibitor | P | 12 | 20 $40 M | 0 | 1/2/3 ** | 1d12s/1d12w/1d20w** | F |
+| Fission Activator | M | 25 | 75 $80 M | 0 | 4/8/12 En/H | 2d4m/2d4+2m/3d4+2c F |
+| Boarding Transporter | T | 6 | 9 | $10 M | -- | 4/6/8 -- | Special | F |
+| Null Torpedo | X | 18 | 25 $50 M | +2 | 3/6/15 En/SH 2d8w/2d8m/2d8c | F |
+| Code Arranger | M | 25 | 50 $100 M +1 | 4/8/12 ***/H | d8m/d8+4m/d8c | F |
+| 6x | 4 Mpp | If the target is too big to affect but the tractor-armed ship |
+| 7x | 5 Mpp | isn’t, the tractor beam will pull the firing ship towards its |
+| 8x | 6 Mpp | target, not the other way around. If both ships can be affect- |
+| 9x | 7 Mpp | ed, the smaller ship moves toward the larger. Note that the |
+| 10x | 8 Mpp | acceleration applied by the tractor beam always pulls the |
+| For example, a destroyer mounts three tractor beams, so | a convenient asteroid or planet. |
+| it can affect a target of up to 150 hull points. It encounters | Once the tractor beam scores a successful hit, it remains |
+| a scoutship of 30 hull points and tries to capture it. The | “locked on” and exerts its acceleration each phase until the |
+| tractor capacity is 5 times that needed to hold the scout, so | firing ship releases the beam or the target escapes. A target |
+| the destroyer can apply an acceleration of 3 Mpp to the | ship can shake off a tractor beam with a successful crew |
+| ship each phase. Depending on the power of the scout’s en- | check (or pilot skill roll against Vehicle Operations-space - |
+| gines, this may be enough to slow it down, halt it altogether, | craft) provided the check equals or exceeds the success |
+| and begin to pull it in. Ships without acceleration compen- | grade of the tractor beam’s attack roll. In other words, it |
+| sation can be instantly destroyed by the extreme accelera- | takes a Good success in a crew check to shake off a tractor |
+| tion imparted if the operator is not careful; see “Acceleration | beam that scored a Good hit when it initially captured the |
+| Kills” in Chapter 4. | target vessel. |
+
+
+
 
 -Special
 
@@ -1694,7 +1284,44 @@ Large warships are extremely valuable investments, both in terms of the amount o
 
 Chaff (PL 6) Consisting of a number of small rocket launchers positioned around the ship, the chaff system deploys a cloud of millions of tiny metal strips or particles to interfere with active sensors and missile seekers. Deploying chaff adds a +1 step penalty to enemy missile attack rolls and sensor checks for three full action rounds. Enemy vessels equipped with mass detectors may ignore the effect of chaff.
 
-Table 5-13: Defensive Systems System Tech Progress Level 6: Fusion Age Chaff Damage Control Decoy Drone C Jammer Magnetic Screen S Stealth Hull S Progress Level 7: Gravity Age Defense Network
+### Table 5-13: Defensive Systems
+
+| Hull | Power | Cost | Coverage | Notes |
+|---|---|---|---|---|
+| Chaff | - | 1 | 0 | $50 K | 100 hull pts | +1 step to missiles, sensors |
+| Damage Control | - | 5% | 1/hull | $100 K/hull | -- | -2 step bonus to Damage Checks |
+| Decoy Drone | C | 1 | 1 | $600 K | 100 hull pts | 3 drones |
+| Jammer | - | 1 | 1 | $100 K | 100 hull pts | +2 steps to missiles, sensors |
+| Magnetic Screen | S | 4 | 2 | $400 K | 20 hull pts | +2 steps to missiles, projectiles |
+| Stealth Hull | S | 2 | 1 | $500 K | 50 hull pts | +2 steps to enemy Sensor Checks |
+| Defense Network | C, F | 2 | 2 | $500 K | 100 hull pts | Special |
+| Deflection Inducer | G | 1 | 2 | $500 K | 20 hull pts | +2 step penalty to enemy attacks |
+| Particle Screen | Q | 2 | 3 | $750 K | 20 hull pts | Adds d4 (LI), d4 (HI), d6 (En) armor |
+| Stealth Shield | M | 2 | 2 | $2 M | 100 hull pts | +3 steps to missiles, sensors |
+| Stardrive Scrambler | G | 1 | 2 | $200 K | 100 hull pts | +4 step penalty to drive detectors |
+| Repair Bots | C | 5% | 1/hull | $500 K/hull | -- | -3 step bonus to Damage Checks |
+| Generator | -- | 1 | 2 | $500 K | 20 hull pts | capacitor or compiler required |
+| Capacitor | -- | 1 | - | $100 K | -- | 10 shield points |
+| Energy Compiler | X | 1 | - | $500 K | -- | 20 shield points |
+| Cloaking Unit | M | 1 | 5 | $1 M | 100 hull points +4 steps to missiles, sensors |
+| Displacer | T | 2 | 3 | $1 M | 20 hull points +3 step penalty to enemy attacks |
+| Nanite Repair Array | C | 5% | 2/hull | $1 M/hull | -- | -5 step bonus to Damage Checks |
+| If the ship changes its course or speed after deploying | cludes redundant systems, casualty control modes for |
+| chaff, it leaves the cloud and loses the defensive benefits. | major machinery, extra compartmentation, repair materi- |
+| The chaff system includes enough rockets for 4 chaff | als, and advanced monitoring systems throughout the |
+| launches (although it’s easy to buy multiple chaff systems | ship. Equipping a ship with damage control systems re- |
+| and increase this to 8, 12, or more chaff launches). | quires 5 percent of the hull, but the ship gains a –2 step |
+| Since large ships require more chaff for complete cover- | bonus to all damage checks it must make. In other |
+| age, the system is ineffective if there is not at least one | words, it’s more likely to keep its systems operational |
+| launcher per 100 hull points of the ship to be covered. For | under heavy enemy fire. |
+| launches, he’d have to buy 10 chaff dispensers. | This is a small, unmanned vehicle equipped with elec- |
+| Damage Control (PL 6) | forces any enemy ships to make a sensor check or |
+| While all ships are equipped with some damage control | break track on the launch ship. If the enemy succeeds, |
+| provisions, this system represents a sophisticated and | the drone is spotted and ignored. If the enemy fails, it |
+| complete approach to compensating for damage. It in- | can still fire at the launch ship, but there’s a 50-50 |
+
+
+
 
 ## C, F
 
@@ -1832,7 +1459,24 @@ Sometimes referred to as “C-4” (command, communication, computers, and contr
 
 Cockpit (PL 6) The cockpit is the nerve center of a small ship. For half a hull point, it includes one control station or seat. The maximum size of a cockpit is four seats or stations (2 hull points). Anything larger than that is more accurately described as a small command deck. While it’s theoretically possible for a ship of several hundred hull points to be controlled by a single pilot in a one-seat cockpit through heavy automation, in practice a cockpit is just too small to handle anything larger than 50 hull points. The cockpit includes a hatch (or sliding canopy) for access, but it’s not a full airlock. It also provides life support to its occupants, with a maximum duration of three days. Ships requiring more endurance than that must purchase a normal life support system.
 
-Table 5-14: Command, Control, and Communication Systems System Progress Level 6: Fusion Age Cockpit Command Deck Flag Bridge Launch Tower Laser Transceiver Radio Transceiver Progress Level 7: Gravity Age Mass Transceiver Drivesat Comm Array Progress Level 8: Energy Age Drive Transceiver Psionic Transceiver Progress Level 9: Matter Age Ansible
+### Table 5-14: Command, Control, and Communication Systems
+
+| System | Tech | Hull | Power | Cost | Notes |
+|---|---|---|---|---|---|
+| Cockpit | - | 0.5 | 0 | $100 K | per station (max 3 stations) |
+| Command Deck | - | 2+ | 0 | $300 K/hull | +1 hull point per 100 hull (max 10) |
+| Flag Bridge | - | 3 | 0 | $50 K | - |
+| Launch Tower | - | 2 | 0 | $50 K | - |
+| Laser Transceiver | - | 1 | 1 | $50 K | - |
+| Radio Transceiver | - | 0.5 | 1 | $25 K | - |
+| Mass Transceiver | G | 1 | 1 | $100 K | - |
+| Drivesat Comm Array | G, C | 150 | 300 | $2000 M | interstellar comms |
+| Drive Transceiver | G | 2 | 2 | $200 K | - |
+| Psionic Transceiver | P | 1 | 2 | $150 K | - |
+| Ansible | M | 4 | 4 | $1 M | instantaneous interstellar comms |
+
+
+
 
 Tech
 
@@ -1886,7 +1530,29 @@ Flag Bridge (PL 6) Many armored cruisers, battleships, carriers, or dreadnoughts
 
 The Computer Core Basic systems monitoring, navigation, and engineering controls require some amount of computer support. Any ship equipped with a cockpit or command deck possesses builtin computers with the bare minimum of computing power necessary to fly the ship. However, it’s possible to install computers that add substantially to the ship’s combat abilities. You can install a computer core of Ordinary or better quality if you so choose. A computer core is necessary to support dedicated control computers, which are computers that enhance the functioning of one particular system. For example, a fire control computer may be installed to provide bonuses to attack rolls with one particular weapon system. The quality of the control computer can’t exceed the quality of the ship’s computer core. In other words, if you want to install a Good
 
-Table 5-14a: Computers System Progress Level 6: Fusion Age Computer Core, Ordinary Fire Control, Ordinary Sensor Control, Ordinary Tac Control, Ordinary Nav Control, Ordinary Progress Level 7: Gravity Age Attack Computer Computer Core, Good Fire Control, Good Sensor Control, Good Tac Control, Good Nav Control, Good Progress Level 8: Energy Age Computer Core, Amazing Fire Control, Amazing Sensor Control, Amazing Tac Control, Amazing Nav Control, Amazing
+### Table 5-14a: Computers
+
+| System | Tech | Hull | Power | Cost | Notes |
+|---|---|---|---|---|---|
+| Computer Core, Ordinary | C | 1 | 1 | $500 K/hull | 1 required per 200 hull points |
+| Fire Control, Ordinary | C | 1 | 0 | $200 K/hull* | -1 step bonus to dedicated weapon |
+| Sensor Control, Ordinary | C | 1 | 0 | $200 K/hull* | -1 step bonus to dedicated sensor |
+| Tac Control, Ordinary | C | 1 | 0 | $100 K | -1 step bonus to Tactics skill checks |
+| Nav Control, Ordinary | C | 1 | 0 | $500 K | -1 step bonus to Maneuver checks |
+| Attack Computer | C | 0.5 | 0 | $200 K | -1 step bonus to attack rolls |
+| Computer Core, Good | C | 1 | 1 | $1 M/hull | 1 required per 200 hull points |
+| Fire Control, Good | C | 1 | 0 | $300 K/hull* | -2 step bonus to dedicated weapon |
+| Sensor Control, Good | C | 1 | 0 | $300 K/hull* | -2 step bonus to dedicated sensor |
+| Tac Control, Good | C | 1 | 0 | $200 K | -2 step bonus to Tactics skill checks |
+| Nav Control, Good | C | 1 | 0 | $750 K | -2 step bonus to Maneuver checks |
+| Computer Core, Amazing | C | 1 | 1 | $2 M/hull | 1 required per 200 hull points |
+| Fire Control, Amazing | C | 1 | 0 | $300 K* | -3 step bonus to dedicated weapon |
+| Sensor Control, Amazing | C | 1 | 0 | $300 K* | -3 step bonus to dedicated sensor |
+| Tac Control, Amazing | C | 1 | 0 | $400 K | -3 step bonus to Tactics skill checks |
+| Nav Control, Amazing | C | 1 | 0 | $1 M | -3 step bonus to Maneuver checks |
+
+
+
 
 Tech
 
@@ -2010,7 +1676,48 @@ Ansible (PL 9) The ansible is a device that induces precise energy state changes
 
 Any experienced spacehand can tell you that winning the information battle is every bit as crucial as winning the armament battle. Without good information on the enemy’s course, speed, and capabilities, even the most powerful weapon system is virtually useless. It’s highly advisable to purchase at least one air/space radar set. This is the minimum necessary to practice safe navigation in heavily trafficked areas and hazardous regions such as asteroid belts or ring systems. If you’re building anything more militant than an ore hauler, you probably want to equip your ship with the best sensors money can buy. Seeing the enemy before he sees you is simply too significant an advantage to skimp on sensors.
 
-Table 5-15: Sensors System Tech Progress Level 6: Fusion Age Air/space Radar EM Detector Hi-Res Video IR Detector Ladar Probe Progress Level 7: Gravity Age Mass Detector G Multiband Radar Probe, advanced C Remote Network C Spectroanalyzer Drive Detection Array
+### Table 5-15: Sensors
+
+| Power | Cost | Type | Range | Arcs | Targeting |
+|---|---|---|---|---|---|
+| Air/space Radar | - | 0.5 | 1 | $20 K | Active | 5/10/20 Mm | 1 | Normal |
+| EM Detector | - | 0.5 | 0 | $20 K | Passive | 10/20/60 Mm | 2 | +3 step penalty |
+| Hi-Res Video | - | 0.5 | 0 | $10 K | Passive | 1/2/10 Mm | 1 | +2 step penalty |
+| IR Detector | - | 0.5 | 0 | $20 K | Passive | 2/4/8 Mm | 1 | +2 step penalty |
+| Ladar | - | 1 | 1 | $100 K | Active | 5/10/30 Mm | 1 | Normal |
+| Probe | - | 1 | 0 | $200 K | Remote | Special | 4 | - |
+| Mass Detector | G | 1 | 1 | $100 K | Passive | 10/30/50 Mm | 2 | +1 step penalty |
+| Multiband Radar | - | 0.5 | 1 | $50 K | Active | 10/20/40 Mm | 1 | Normal |
+| Probe, advanced | C | 1 | 0 | $500 K | Remote | Special | 4 | - |
+| Remote Network | C | 2 | 2 | $750 K | Remote | Special | 4 | - |
+| Spectroanalyzer | - | 1 | 1 | $100 K | Active | Special | 1 | None |
+| Drive Detection Array | G, C | 80 | 120 | $1000 M | Passive | Special | 4 | None |
+| CE Passive Array | C | 2 | 1 | $1 M | Passive | 30/60/100 Mm 2 | Normal |
+| Drive Detector | G | 4 | 4 | $500 K | Passive | Special | 4 | None |
+| Madar | G | 1 | 1 | $200 K | Active | 20/30/40 Mm 1 | Normal |
+| Multiphase Radar | Q | 1 | 0 | $250 K | Active | 20/40/80 Mm 1 | Normal |
+| Omniscience Sphere | P | 3 | 1 | $2 M | Passive | 50 Mm | 4 | Normal |
+| Sensor Arcs | at the same time. In most space battles, this isn’t a prob- |
+| Sensor systems have “arcs of fire”, much like weapons: for- | ter at any one time. In large battles, tracking capability be- |
+| ward, port, starboard, and aft. However, many sensors can | comes crucial. |
+| cover more than one arc at a time. For example, the drive | If a sensor system is currently maxed out on its tracking |
+| detector automatically covers all four sensor arcs; it’s an | capability and new targets appear, the sensor operator must |
+| omnidirectional installation that doesn’t require any special | choose whether or not he will “drop track” on an existing |
+| provisions to achieve a 360 degree coverage of the sur- | contact to attempt a sensor check against one of the new |
+| rounding area. | targets. See Chapter 2: Advanced Combat for details. |
+| Extending the coverage of a sensor system from one arc | Tracking capability is a function of the Progress Level at |
+| to multiple arcs is simple: Just buy more. Four 1-arc sys- | which the ship (not the sensor!) is constructed and the qual- |
+| tems provide coverage of all four sensor arcs, as do two 2- | ity of any dedicated sensor control computer assigned to the |
+| arc systems. Obviously, a sensor system can’t make a sen- | system. |
+| sor check against a target that’s outside its current arc, so | For example, a PL 7 ship with a Good-quality sensor con- |
+| it’s a good idea to provide plenty of coverage for search | trol computer can track 20 targets simultaneously. |
+| radars and threat receivers. | A shipbuilder can increase the tracking capability of his |
+| Tracking Capability | to 6 targets with that sensor, but if the shipbuilder installs 4 |
+| Unless otherwise stated in the system description, all sensor | EM detectors, he increases the ship’s tracking capability to |
+| systems are limited in their ability to track multiple targets | 24 targets with the EM detector. |
+
+
+
 
 ## G, C
 
@@ -2092,7 +1799,16 @@ EM Detector (PL 6) The electronmagnetic detector is an antennae array designed t
 
 Ladar (PL 6)
 
-Table 5-16: Tracking Capability PL
+### Table 5-16: Tracking Capability
+
+| PL | None | O | G | A |
+|---|---|---|---|---|
+| PL 6 | 5 | 10 | 20 | 40 |
+| PL 7 | 10 | 20 | 40 | unlimited |
+| PL 8 | 20 | 40 | 80 | unlimited |
+
+
+
 
 ## PL 6
 
@@ -2146,51 +1862,46 @@ Hangar (PL 6) The hangar is an internal docking, launch, storage, and service fa
 
 Magazine (PL 6) Just because a carrier embarks 50 fighters armed with matter bombs, it doesn’t mean that there are more matter bombs lying around for the fighters to rearm and strike again. Carriers whose embarked craft rely on dropped ordnance or missiles require vast ordnance stores to sustain any kind of prolonged hostilities. Each hull point spent on magazines can store 4 size points of missiles, mines, or bombs.
 
-Table 5-17: Hangars and Miscellaneous Installations System
+### Table 5-17: Hangars and Miscellaneous Installations
 
-Tech
+| 98 | System | Tech | Hull | Power | Cost | Type | Notes |
+|---|---|---|---|---|---|---|---|
+| Airlock | - | 1 | 0 | $10 K | Hangar | Free with command deck or crew quarters |
+| Brig | - | 2 | 0 | $20 K | Accom. | per 4 prisoners |
+| Cargo Space | - | 1 | 0 | $10 K | Cargo | per 24m3 |
+| Cargo Bay | - | 2 | 0 | $20 K | Cargo | per 50m3 |
+| Cargo Hold | - | 3 | 0 | $50 K | Cargo | per 100m3 |
+| Docking Clamps | - | 2 | 0 | $50 K | Hangar | per 10 hull point capacity |
+| Escape Pod | - | 1 | 0 | $50 K | Hangar | 10 man capacity |
+| Fuel Collectors | - | 2 | 0 | $100 K | Fuel | - |
+| Hangar | - | 1 | 0 | $100/25 K* | Hangar | per hull point capacity |
+| Lab Section | - | 2 | 0 | $100 K | Accom. | - |
+| Magazine | - | 1 | 0 | $50 K | Misc. | per 4 size points of carried ordnance |
+| Reentry Capsule | - | 0.5 | 0 | $5 K | Hangar | 2 crewmen |
+| Sick Bay | - | 2 | 0 | $150 K | Misc. | 4 beds |
+| Workshop | - | 2 | 1 | $20 K | Misc. | - |
+| Accumulator | S | 1 | 0 | $40 K | Power | stores 10 power points |
+| Autocargo | - | 1 | 1 | $30 K | Cargo | per 6 hull points of cargo serviced |
+| Boarding Pod | - | 2 | 0 | $200 K | Hangar | 10 troop capacity |
+| Evac System | - | 4 | 0 | $250 K | Hangar | 4 10-man lifeboats |
+| Extra pods | - | 1 | 0 | $50 K | Hangar | 2 10-man lifeboats |
+| Fabrication Facility | - | 4 | 2 | $200 K | Misc. | - |
+| Ordnance Transfer System- | 2 | 2 | $150 K | Hangar | - |
+| Security Suite | - | 1 | 1 | $200 K | Cmd | per 40 hull points protected |
+| Stabilizer | G, X | 5% | 1/hull | $200 K/hull | Engine | Adds 1 to maneuverability class |
+| Holofield Bay | Q, C | 1 | 1 | $100 K | Misc. |
+| Nanomanufacture Bay | S, C | 4 | 4 | $500 K | Misc. |
+| STEP 12: MISCELLANEOUS | bunkroom, docking clamp, hangar, cargo hold, or ordnance |
+| INSTALLATIONS | cost of 1 hull point and 10 K each. |
+| category. Some of these may be crucial to the ship’s mis- | Think of the brig as accommodations for undesirable pas- |
+| sion; a heavy freighter should buy its cargo space first, and | sengers. Each two hull points devoted to the brig provides |
+| its defensive armament second. | individual cells for four individuals, plus a security station, |
+| also includes the pumps and controls necessary to pressur- | One hull point provides enough space for 10 cubic meters |
+| ize or depressurize the room. A ship automatically includes | of cargo, or one cargo unit. A compartment 2 meters tall, 2 |
+| one free airlock per command deck, crew quarters, crew | meters wide, and 2.5 meters deep would be typical for 1 |
 
-Progress Level 6: Fusion Age Airlock Brig Cargo Space Cargo Bay Cargo Hold Docking Clamps Escape Pod Fuel Collectors Hangar Lab Section Magazine Reentry Capsule Sick Bay Workshop Progress Level 7: Gravity Age Accumulator S Autocargo Boarding Pod Evac System Extra pods Fabrication Facility Ordnance Transfer SystemSecurity Suite Stabilizer
 
-## G, X
 
-Progress Level 8: Energy Age Holofield Bay
-
-## Q, C
-
-Nanomanufacture Bay
-
-## S, C
-
-Hull
-
-Power
-
-Cost
-
-Type
-
-Notes
-
-0.5
-
-$10 K $20 K $10 K $20 K $50 K $50 K $50 K $100 K $100/25 K* $100 K $50 K $5 K $150 K $20 K
-
-Hangar Accom. Cargo Cargo Cargo Hangar Hangar Fuel Hangar Accom. Misc. Hangar Misc. Misc.
-
-Free with command deck or crew quarters per 4 prisoners per 24m3 per 50m3 per 100m3 per 10 hull point capacity 10 man capacity per hull point capacity per 4 size points of carried ordnance 2 crewmen 4 beds -
-
-5%
-
-1/hull
-
-$40 K $30 K $200 K $250 K $50 K $200 K $150 K $200 K $200 K/hull
-
-Power Cargo Hangar Hangar Hangar Misc. Hangar Cmd Engine
-
-stores 10 power points per 6 hull points of cargo serviced 10 troop capacity 4 10-man lifeboats 2 10-man lifeboats per 40 hull points protected Adds 1 to maneuverability class
-
-$100 K $500 K
 
 Misc. Misc.
 
@@ -2344,69 +2055,44 @@ Let’s say that John has decided that his ALTERNITY game will be based around a
 
 Step 1: Class and Hull Selection John decides that the heavy cruiser is a good hull to work from. The heavy cruiser hull has 400 hull points, plus an additional 80 for economy of scale. The heavy cruiser is a medium hull, with medium toughness. It costs 100 million credits.
 
-Table 5-18: Hit Locations and Zone Limits Hull Type
+### Table 5-18: Hit Locations and Zone Limits
+| Hull Type | Hull Points | Zones | ZoneLimit |
+|---|---|---|---|
+| Fighter | 10 | 2 | 7 |
+| Strike fighter | 15 | 2 | 10 |
+| Cutter | 20 | 2 | 14 |
+| Scout | 30 | 4 | 10 |
+| Escort | 40 | 4 | 14 |
+| Corvette | 80 (+8) | 6 | 22 |
+| Frigate | 120 (+12) | 6 | 33 |
+| Destroyer | 160 (+16) | 6 | 44 |
+| Light cruiser | 320 (+64) | 8 | 75 |
+| Heavy cruiser | 400 (+80) | 8 | 96 |
+| Armored cruiser | 480 (+96) | 8 | 115 |
+| Battlecruiser | 960 (+288) | 12 | 156 |
+| Battleship | 1200 (+360) | 12 | 195 |
+| Fleet carrier | 1600 (+480) | 12 | 260 |
+| Dreadnought | 3200 (+1600) | 20 | 480 |
+| Super-carrier | 4000 (+2000) | 20 | 600 |
+| Super-dread. | 6400 (+3200) | 20 | 960 |
+| Fortress ship | 12000 (+6000) | 20 | 1800 |
+| Launch | 8 | 2 | 5 |
+| Courier | 16 | 2 | 10 |
+| Trader | 24 | 4 | 8 |
+| Fast freighter | 32 | 4 | 11 |
+| Fast transport | 40 | 4 | 14 |
+| Hauler | 72 (+7) | 6 | 20 |
+| Industrial | 96 (+10) | 6 | 27 |
+| Medium freighter | 240 (+48) | 8 | 58 |
+| Clipper | 360 (+72) | 8 | 87 |
+| Medium transport | 480 (+96) | 8 | 115 |
+| Tanker | 720 (+216) | 12 | 117 |
+| Liner | 840 (+252) | 12 | 137 |
+| Heavy transport | 1280 (+384) | 12 | 208 |
+| Super-freighter | 2400 (+1200) | 20 | 360 |
+| Colony transport | 3600 (+1800) | 20 | 540 |
 
-Hull Points
 
-Zones
-
-ZoneLimit
-
-Fighter Strike fighter Cutter Scout Escort
-
-Corvette Frigate Destroyer
-
-80 (+8) 120 (+12) 160 (+16)
-
-Light cruiser Heavy cruiser Armored cruiser
-
-320 (+64) 400 (+80) 480 (+96)
-
-Battlecruiser Battleship Fleet carrier
-
-960 (+288) 1200 (+360) 1600 (+480)
-
-Dreadnought Super-carrier Super-dread. Fortress ship
-
-3200 (+1600) 4000 (+2000) 6400 (+3200) 12000 (+6000)
-
-Launch Courier Trader Fast freighter Fast transport
-
-Hauler Industrial
-
-72 (+7) 96 (+10)
-
-Medium freighter Clipper Medium transport
-
-240 (+48) 360 (+72) 480 (+96)
-
-Tanker Liner Heavy transport
-
-720 (+216) 840 (+252) 1280 (+384)
-
-Super-freighter Colony transport
-
-2400 (+1200) 3600 (+1800)
-
-Military Hulls Small Craft
-
-Light Ships
-
-Medium Ships
-
-Heavy Ships
-
-Super-heavy Ships
-
-Civilian Hulls Small Craft
-
-Light Ships
-
-Medium Ships
-
-Heavy Ships
-
-Super-heavy Ships
 
 Step 2: Armor
 

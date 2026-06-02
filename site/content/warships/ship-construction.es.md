@@ -155,133 +155,47 @@ Carguero rápido Los cargueros rápidos son cascos comerciales que generalmente 
 
 Destructor Los destructores toman su nombre de los destructores de torpederos de finales del siglo XIX. Son parte integral de la defensa de un grupo de trabajo, protegiéndolo contra embarcaciones pequeñas y barcos de ataque. Los destructores suelen estar armados con armas de uno o dos disparos, útiles contra barcos mucho más grandes. Un destructor suele tener entre 150 y 200 metros de largo y una masa de unas 8.000 toneladas métricas. Lleva una tripulación de 150 a 200 personas.
 
-Tabla 5-1a: Cascos militares Tipo de casco Puntos del casco. Embarcaciones pequeñas Caza Caza de ataque Cortador Explorador Escolta Barcos ligeros Corbeta 80 (+8) Fragata 120 (+12) Destructor 160 (+16) Barcos medianos Crucero ligero 320 (+64) Crucero pesado 400 (+80) Crucero blindado 480 (+96) Barcos pesados Crucero de batalla 960 (+288) Acorazado 1200 (+360) Portaaviones 1600 (+480) Barcos superpesados Dreadnought 3200 (+1600) Superportaaviones 4000 (+2000) Super-dread. 6400 (+3200) Barco fortaleza 12000 (+6000)
+### Tabla 5-1a: Cascos militares
 
-5%
+| +3 pasos | 4 |
+|---|---|
+| Luchador de huelga | 15 | 1 | 1.5 | pequeño | +3 pasos | 4 | 8 | 8 | 4 | 2 | 2 | $500 mil |
+| Cortador | 20 | 1 | 2 | pequeño | +2 pasos | 4 | 10 | 10 | 5 | 3 | 4 | $600 mil |
+| Explorador | 30 | 1.5 | 3 | pequeño | +2 pasos | 4 | 15 | 15 | 8 | 4 | 6 | $800 mil |
+| Escolta | 40 | 2 | 4 | pequeño | +2 pasos | 4 | 20 | 20 | 10 | 5 | 10 | 1 millón de dólares |
+| Corbeta | 80 (+8) | 4 | 8 | teniente | +1 paso | 3 | 20 | 20 | 10 | 5 | 20 | 5 millones de dólares |
+| Fragata | 120 (+12) | 6 | 12 | Teniente | +1 paso | 3 | 30 | 30 | 15 | 8 | 60 | 15 millones de dólares |
+| Destructor | 160 (+16) | 8 | 16 | teniente | +1 paso | 3 | 40 | 40 | 20 | 10 | 80 | 30 millones de dólares |
+| Crucero ligero | 320 (+64) | 16 | 32 | médico | 0 | 2 | 40 | 40 | 20 | 10 | 240 | 50 millones de dólares |
+| Crucero pesado | 400 (+80) | 20 | 40 | médico | 0 | 2 | 45 | 45 | 23 | 12 | 300 | 100 millones de dólares |
+| Crucero blindado 480 (+96) | 24 | 48 | médico | -1 paso | 2 | 60 | 60 | 30 | 15 | 360 | 200 millones de dólares |
+| Crucero de batalla | 960 (+288) | 48 | 96 | Hv | -2 pasos | 1 | 60 | 60 | 30 | 15 | 960 | 500 millones de dólares |
+| Acorazado | 1200 (+360) | 60 | 120 | Hv | -2 pasos | 1 | 75 | 75 | 38 | 19 | 1200 | 1.000 millones de dólares |
+| Transportista de flotas | 1600 (+480) | 80 | 160 | Hv | -3 pasos | 1 | 100 | 100 | 50 | 25 | 1600 | $1500 Millones |
+| Acorazado | 3200 (+1600) | 160 | 320 | SHv | -3 pasos | 1 | 100 | 100 | 50 | 25 | 3200 $2000 Millones |
+| Superportador | 4000 (+2000) | 200 | 400 | SHv | -4 pasos | 1 | 125 | 125 | 63 | 32 | 4000 $4000 Millones |
+| Súper pavor. | 6400 (+3200) | 320 | 640 | SHv | -5 pasos | 1 | 200 | 200 | 100 | 50 | 6400 $10000 Millones |
+| Barco fortaleza | 12000 (+6000) | 600 | 1200 | SHv | -5 pasos | 1 | 375 | 375 | 188 | 94 | 12000 $50000 Millones |
 
-10%
+### Tabla 5-1b: Cascos civiles
 
-duro
-
-objetivo mvr
-
-s
-
-w
-
-m
-
-c
-
-Tripulación
-
-Costo
-
-0,5 1,5
-
-1.5
-
-Sm Sm Sm Sm Sm
-
-+3 pasos +3 pasos +2 pasos +2 pasos +2 pasos
-
-$350 mil $500 mil $600 mil $800 mil $1 millón
-
-Teniente Teniente Teniente
-
-+1 paso +1 paso +1 paso
-
-$5 millones $15 millones $30 millones
-
-MD MD MD
-
--1 paso
-
-$50 millones $100 millones $200 millones
-
-Hv Hv Hv
-
--2 pasos
-
--2 pasos
-
--3 pasos
-
-$500 millones $1000 millones $1500 millones
-
-SHv SHv SHv SHv
-
--3 pasos
-
--4 pasos
-
--5 pasos
-
--5 pasos
-
-3200 $2000 millones 4000 $4000 millones 6400 $10000 millones 12000 $50000 millones
-
-Tabla 5-1b: Cascos civiles Tipo de casco Puntos del casco. Lancha Pequeña Courier Trader Carguero rápido Transporte rápido Buques ligeros Hauler 72 (+7) Industrial 96 (+10) Buques medianos Carguero mediano 240 (+48) Clipper 360 (+72) Transporte mediano 480 (+96) Buques pesados Petrolero 720 (+216) Transatlántico 840 (+252) Transporte pesado 1280 (+384) Buques superpesados Supercarguero 2400 (+1200) Transporte de colonias 3600 (+1800)
-
-5%
-
-10%
-
-duro
-
-objetivo mvr
-
-s
-
-w
-
-m
-
-c
-
-Tripulación
-
-Costo
-
-0,5 1,5
-
-1.5
-
-(Dios) (Dios) (Dios) Sm Sm
-
-+3 pasos +2 pasos +2 pasos +2 pasos +2 pasos
-
-$300 mil $400 mil $500 mil $600 mil $800 mil
-
-sm sm
-
-+1 paso +1 paso
-
-$1 millón $2 millones
-
-Teniente Teniente Teniente
-
--1 paso
-
-$20 millones $40 millones $60 millones
-
-MD MD MD
-
--1 paso
-
--1 paso
-
--2 pasos
-
-$100 millones $150 millones $200 millones
-
-Hv Hv
-
--3 pasos
-
--4 pasos
-
-$400 millones $1000 millones
+| Tipo de casco | Puntos del casco. | 5% | 10% | Duro | Objetivo Mvr | s | w | metro | c | Tripulación | Costo |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| Lanzamiento | 8 | 0,5 | 1 | (Dios) | +3 pasos | 4 | 4 | 4 | 2 | 1 | 2 | $300 mil |
+| Mensajero | 16 | 1 | 1.5 | (Dios) | +2 pasos | 4 | 8 | 8 | 4 | 2 | 4 | $400 mil |
+| Comerciante | 24 | 1 | 2 | (Dios) | +2 pasos | 4 | 12 | 12 | 6 | 3 | 6 | $500 mil |
+| Carguero rápido | 32 | 1.5 | 3 | pequeño | +2 pasos | 4 | 16 | 16 | 8 | 4 | 8 | $600 mil |
+| Transporte rápido | 40 | 2 | 4 | pequeño | +2 pasos | 4 | 20 | 20 | 10 | 5 | 10 | $800 mil |
+| Transportista | 72 (+7) | 3 | 7 | pequeño | +1 paso | 3 | 18 | 18 | 9 | 5 | 18 | 1 millón de dólares |
+| Industriales | 96 (+10) | 5 | 10 | pequeño | +1 paso | 3 | 24 | 24 | 12 | 6 | 24 | 2 millones de dólares |
+| Carguero mediano 240 (+48) | 12 | 24 | teniente | 0 | 2 | 30 | 30 | 15 | 8 | 30 | 20 millones de dólares |
+| Clíper | 360 (+72) | 18 | 36 | teniente | 0 | 2 | 45 | 45 | 23 | 12 | 360 | 40 millones de dólares |
+| Transporte medio 480 (+96) | 24 | 48 | teniente | -1 paso | 2 | 60 | 60 | 30 | 15 | 60 | 60 millones de dólares |
+| Petrolero | 720 (+216) | 36 | 72 | médico | -1 paso | 1 | 45 | 45 | 23 | 12 | 90 | 100 millones de dólares |
+| Forro | 840 (+252) | 42 | 84 | médico | -1 paso | 1 | 53 | 53 | 27 | 14 | 840 | 150 millones de dólares |
+| Transporte pesado 1280 (+384) | 64 | 128 | médico | -2 pasos | 1 | 80 | 80 | 40 | 20 | 160 | 200 millones de dólares |
+| Supercarguero 2400 (+1200) | 120 | 240 | Hv | -3 pasos | 0 | 75 | 75 | 38 | 19 | 300 | 400 millones de dólares |
+| Transporte de colonias 3600 (+1800) | 180 | 360 | Hv | -4 pasos | 0 | 113 | 113 | 57 | 29 | 3600 | 1.000 millones de dólares |
 
 Puntos de Casco: El número de puntos de casco disponibles en este tipo, representando su capacidad para instalar sistemas. El primer número es el total de puntos básicos, el número entre paréntesis es el total de puntos extra. Duro: El índice de dureza del barco. Tenga en cuenta que algunas naves tienen resistencia Bueno, un paso menos que las Small Craft. Objetivo: el modificador de resistencia básico del barco al fuego enemigo, según su tamaño y maniobrabilidad. Maniobra: Clase de maniobrabilidad del barco. 5% y 10%: Esta es la cantidad de puntos de casco que requiere un sistema que requiere 5 o 10 por ciento del casco. Esta información es simplemente un atajo para ahorrarle tiempo y esfuerzo. S, W, M, C: las pistas Aturdimiento, Herida, Mortal y daños críticos del barco. Tripulación: Sólo con fines informativos, una estimación general de cuántas tripulantes lleva un barco típico de este tipo. Costo: El costo del casco, en créditos, dólares de Concord o la moneda apropiada para tu campaña.
 
@@ -395,65 +309,46 @@ Reflectante La armadura reflectante, que consta de placas de metal densas y muy 
 
 Consejo de diseño: blindaje El diseño de tu nave debe dedicar entre un 10 y un 20 por ciento de los puntos de su casco a las defensas: blindaje y Escudos. Por supuesto, puedes maximizar la protección, pero tendrás que renunciar a la potencia de fuego o la maniobrabilidad. Del mismo modo, usar armadura ligera te deja más espacio para armas y motores. Es tu decisión.
 
-Tabla 5-2: Armadura Tipo de armadura Nivel de progreso 6: Edad de fusión Polimérico, ligero Reflectante, ligero Aleación, medio Polimérico, medio Reflectante, medio Aleación, pesado* Reflectante, pesado* Aleación, súper pesado. Nivel de progreso 7: Edad de gravedad Cerametal, ligero Cerametal, medio Neutronita, medio Reactivo, medio Cerametal, pesado* Neutronita, pesado* Reactivo, pesado* Neutronita, ¡súper pesado! ¡Reactivo, superpesado! Nivel de progreso 8: Energy Age Crystallis, nanofluídico ligero, Crystallis ligero, nanofluídico medio, nanofluídico medio, nanofluídico pesado*, ¡súper pesado!
+### Tabla 5-2: Armadura
 
-tecnología
-
-LI
-
-hola
-
-es
-
-casco
-
-Costo/casco pt.
-
--
-
-d4-1 d4-3 d4+1 d4 d4-2 d6+1 d4 d6+3
-
-d4-1 d4-2 d4+1 d4 d4-1 d6+1 d4 d6+3
-
-d4-2 d6-1 d4 d4-1 d6 d6 d8+1 d6+2
-
-2,5% 2,5% 5% 5% 5% 10% 10% 20%
-
-$50 mil $50 mil $150 mil $100 mil $100 mil $300 mil $200 mil $600 mil
-
-S S S -
-
-d6-1 d4+1 d6+1 d4+2 d8 d8+1 2d4+1 d8+3 2d4+3
-
-d6-1 d4+1 d6+1 d6 d8 d8+1 d8 d8+3 d8+2
-
-d6-1 d4+1 d6+1 d4 d8 d8+1 d4+1 d8+3 d4+3
-
-2,5% 5% 5% 5% 10% 10% 10% 20% 20%
-
-$100 mil $200 mil $500 mil $150 mil $400 mil $1 millón $300 mil $2 millones $600 mil
-
-## P, X
-
-## S, C
-
-## P, X
-
-## S, C
-
-## S, C
-
-## S, C
-
-d6-1 d8-1 d6 2d4 2d4+1 2d4+3
-
-d6 d8-1 d6+1 2d4 2d4+2 2d4+4
-
-d6+2 d8 2d4+1 2d4 2d4+1 2d4+3
-
-2,5% 2,5% 5% 5% 10% 20%
-
-$250 mil $500 mil $500 mil $1 millón $2 millones $4 millones
+| Tecnología | LI | Hola | En | Casco | Costo/casco pt. | 59 |
+|---|---|---|---|---|---|---|
+| Polimérico, ligero | - | d4-1 | d4-1 | d4-2 | 2,5% | $50 mil |
+| Reflectante, ligero | - | d4-3 | d4-2 | d6-1 | 2,5% | $50 mil |
+| Aleación media | - | d4+1 | d4+1 | d4 | 5% | $150 mil |
+| Polimérico, medio | - | d4 | d4 | d4-1 | 5% | $100 mil |
+| Reflectante, medio | - | d4-2 | d4-1 | d6 | 5% | $100 mil |
+| Aleación pesada* | - | d6+1 | d6+1 | d6 | 10% | $300 mil |
+| Reflectante, pesado* | - | d4 | d4 | d8+1 | 10% | $200 mil |
+| ¡Aleación, súper pesada! | - | d6+3 | d6+3 | d6+2 | 20% | $600 mil |
+| Cerametal ligero | - | d6-1 | d6-1 | d6-1 | 2,5% | $100 mil |
+| Cerametal medio | - | d4+1 | d4+1 | d4+1 | 5% | $200 mil |
+| Neutronita, media | S | d6+1 | d6+1 | d6+1 | 5% | $500 mil |
+| Reactivo, medio | - | d4+2 | d6 | d4 | 5% | $150 mil |
+| Cerametal pesado* | - | d8 | d8 | d8 | 10% | $400 mil |
+| Neutronita, pesada* | S | d8+1 | d8+1 | d8+1 | 10% | 1 millón de dólares |
+| Reactivo, pesado* | - | 2d4+1 | d8 | d4+1 | 10% | $300 mil |
+| ¡Neutronita, superpesada! | S | d8+3 | d8+3 | d8+3 | 20% | 2 millones de dólares |
+| ¡Reactivo, superpesado! | - | 2d4+3 | d8+2 | d4+3 | 20% | $600 mil |
+| Crystallis, luz | P, X | d6-1 | d6 | d6+2 | 2,5% | $250 mil |
+| Nanofluidos, ligeros | S, C | d8-1 | d8-1 | d8 | 2,5% | $500 mil |
+| Crystallis, mediana | P, X | d6 | d6+1 | 2d4+1 | 5% | $500 mil |
+| Nanofluídico, medio | S, C | 2d4 | 2d4 | 2d4 | 5% | 1 millón de dólares |
+| Nanofluídico, pesado* | S, C | 2d4+1 | 2d4+2 | 2d4+1 | 10% | 2 millones de dólares |
+| ¡Nanofluídico, súper pesado! | S, C | 2d4+3 | 2d4+4 | 2d4+3 | 20% | 4 millones de dólares |
+| puntos para el barco (redondeando a 8), y cuesta 600.000. | Por ejemplo, un gran reactor de masa capaz de generar |
+| Algunas centrales eléctricas no se pueden miniaturizar más allá de cierto | Obtener 10 puntos de potencia requiere 4 puntos de durabilidad (cada uno |
+| punto y no están disponibles para instalaciones mínimas. Esto es | punto de durabilidad proporciona 2,5 puntos de potencia). Esta instalación |
+| expresado como un tamaño mínimo para la central eléctrica. Algunos | La instalación cuesta 100.000 por el reactor, más 100.000 por cada uno de |
+| Las centrales eléctricas también podrán tener un tamaño máximo, indicando | los cuatro puntos de durabilidad asociados con el reactor: un total |
+| que la tecnología simplemente no es adecuada para aplicaciones extremadamente grandes | de 500.000. Si compraste esto como cuatro masas de una durabilidad |
+| plicaciones. Sin embargo, puedes evitar el tamaño máximo | reactores, pagaría el costo base multiplicado por cuatro, más la duración |
+| limitación mediante la instalación de múltiples plantas de energía pequeñas: energía | Coste de movilidad nuevamente, para un total de 800.000. Tenga en cuenta que algunos |
+| de todas las fuentes cuenta para el total del barco. | Los sistemas eléctricos son difíciles de ampliar y tienen un coste relativamente |
+| Como usted es el diseñador, puede decidir si multi- | punto de durabilidad PER de alto costo, mientras que los sistemas Otros pueden ser |
+| múltiples puntos de durabilidad gastados en su planta de energía componen | Se escala fácilmente y tiene un punto de durabilidad PER de bajo costo. |
+| edad: es difícil eliminar todo tu poder de una sola vez. | En niveles de progreso más altos, la mayoría de las centrales eléctricas requieren refu- |
+| Sin embargo, es más caro construir un barco de esta manera. | eling sólo a intervalos poco frecuentes. Su combustible es inex- |
 
 * No se pueden instalar armaduras pesadas en embarcaciones pequeñas. ! Los blindajes superpesados ​​no se pueden instalar en embarcaciones pequeñas ni en barcos ligeros.
 
@@ -463,87 +358,41 @@ Por ejemplo, un reactor de gran masa capaz de generar 10 puntos de potencia requ
 
 Tanques de combustible y reabastecimiento de combustible En los niveles de progreso más altos, la mayoría de las centrales eléctricas requieren reabastecimiento de combustible sólo a intervalos poco frecuentes. Su combustible es inex-
 
-Tabla 5-3: Centrales eléctricas
+### Tabla 5-3: Centrales eléctricas
 
-Progreso de la planta de energía Nivel 6: Era de la fusión Generador de fisión de células solares Generador de fusión Celda de fusión gravitacional Tanque de combustible Nivel de progreso 7: Era de la gravedad Colisionador taquiónico Reactor de antimateria Progreso del reactor de masa Nivel 8: Era de la energía Reactor de masa dinámico Convertidor de materia Progreso de la célula cuántica Nivel 9: Generador de singularidad de la era de la materia
-
-tecnología
-
-poder
-
-Base. Costo
-
-Costo/Parte del casco
-
-Tamaño mínimo
-
-¿Combustible?
-
-Costo de combustible
-
-Eficiencia de combustible
-
-S F G -
-
-1,5 1,5 2,0 2,5 -
-
-$500 mil $1 millón $1 millón $2 millones $50 mil
-
-$200 mil $100 mil $200 mil $200 mil $10 mil
-
--
-
-No No Si Si -
-
-$1 mil $1 mil -
-
--
-
-Preguntas y respuestas
-
-2,5 3,0 3,5
-
-$1 millón $4 millones $2 millones
-
-$100 mil $400 mil $250 mil
-
-No No No
-
--
-
--
-
-re
-
-## M,X
-
-q
-
-4,0 4,5 5,0
-
-$3 millones $4 millones $5 millones
-
-$200 mil $200 mil $400 mil
-
-No No No
-
--
-
--
-
-GRAMO
-
-6.0
-
-10 millones de dólares
-
-$500 mil
-
-No
-
--
-
--
+| 60 | Planta de energía | Tecnología | Pow |
+|---|---|---|---|
+| Tamaño | ¿Combustible? |
+| Célula solar | S | 1.5 | $500 mil | $200 mil | 4 | No | - | - |
+| Generador de fisión | - | 1.5 | 1 millón de dólares | $100 mil | 4 | No | - | - |
+| Generador de fusión | F | 2.0 | 1 millón de dólares | $200 mil | 2 | Sí | $1 mil | 200 |
+| Célula de fusión gravitacional | GRAMO | 2.5 | 2 millones de dólares | $200 mil | 4 | Sí | $1 mil | 300 |
+| Tanque de combustible | - | - | $50 mil | $10 mil | - | - | - | - |
+| Colisionador taquiónico | Q | 2.5 | 1 millón de dólares | $100 mil | 2 | No | - | - |
+| Reactor de antimateria | Un | 3.0 | 4 millones de dólares | $400 mil | 3 | No | - | - |
+| Reactor de masa | D | 3.5 | 2 millones de dólares | $250 mil | 2 | No | - | - |
+| Reactor de masa dinámico | D | 4.0 | 3 millones de dólares | $200 mil | 1 | No | - | - |
+| Convertidor de Materia | M, X | 4.5 | 4 millones de dólares | $200 mil | 2 | No | - | - |
+| Célula cuántica | Q | 5.0 | 5 millones de dólares | $400 mil | 3 | No | - | - |
+| Generador de singularidad | GRAMO | 6.0 | 10 millones de dólares | $500 mil | 20 | No | - | - |
+| agotable o necesita ser reemplazado sólo cuando todo el barco | un generador de fisión o fusión convierte la energía atómica |
+| está revisado. Sin embargo, muchas centrales eléctricas PL 6 requieren | enlaces en energía térmica que luego se transforma en electricidad |
+| tanque de combustible además de los sistemas de energía propiamente dichos. | tricidad, o alguna forma de energía Otros fácil de usar. |
+| La cantidad de combustible que lleva un barco depende de ti, pero el | La mayoría de estos sistemas de energía en realidad transportan combustible de uno |
+| La consideración más importante aquí es Resistencia. En palabras Otros, ¿cómo | tipo u otro, incluso si no se requiere depósito de combustible. Una fisión |
+| ¿Cuánto tiempo puede funcionar la central eléctrica con un tanque de combustible? Este | El generador no necesita miles de galones de agua, pero |
+| se mide por los días de energía totales del tanque de combustible. Si un combustible | necesita cierta cantidad de uranio o plutonio que es |
+| tanque tiene capacidad para 100 días de energía y puede operar una central eléctrica | consumido a lo largo del tiempo. La duración de una planta típica y su |
+| que genera 1 punto de potencia durante 100 días, 2 puntos de | Los costos de reabastecimiento de combustible se abordan en cada sistema de energía de- |
+| energía por 50 días, 20 puntos de energía por 5 días, y así | descripción. |
+| al menos un par de semanas sin repostar. | La célula solar convierte la energía luminosa y térmica de una fuente cercana |
+| Sistemas de energía | (150 millones de kilómetros) de una estrella de tipo Sol, la de la célula solar |
+| Con la posible excepción de la celda cuántica, una potencia | la capacidad de generación de energía aumenta en un 50 por ciento; similar- |
+| El sistema de generación no crea energía. En cambio, trans - | principalmente, a una distancia de más de 5 AU de una estrella de tipo Sol, |
+| forma energía de un tipo a otro, más utilizable. | la capacidad de generación de energía de la célula solar cae en 50 PER- |
+| La caldera de un barco de vapor transforma la energía almacenada en el | centavo. Por ejemplo, un crucero equipado con 40 de durabilidad |
+| enlaces químicos de su fueloil en energía térmica, que luego se | Los puntos de células solares normalmente generan 40 puntos de energía; |
+| transformada en energía cinética a través de una turbina. De manera similar, | esto aumenta a 60 puntos de potencia en la parte interior de un |
 
 Tech: La tecnología Rastrear necesaria para producir este sistema de energía. Pow: La cantidad de energía producida por una central eléctrica de 1 punto de casco. Las fracciones se redondean normalmente, por lo que un reactor de antimateria de 2 puntos de casco (3.0 de potencia producida por el punto de casco PER) produce 6 puntos de potencia. Costo base: El costo de cada planta de energía instalada por separado. Costo/Punto de Casco: El costo de cada punto de casco de la planta de energía, acumulativo con el costo de cada nueva planta. Tamaño mínimo: La central eléctrica más pequeña posible, en puntos de casco. Tamaño máximo: La mayor central eléctrica posible, en puntos de casco. Combustible: si el sistema de energía requiere o no tanque de combustible adicional. Costo de combustible: El costo del combustible comprado en el casco. Eficiencia: El número de días de energía que puede generar 1 punto de combustible del casco. Por ejemplo, un punto de combustible en el casco proporciona 200 días de energía para un generador de fusión de 1 punto de casco, o 20 días de energía para un generador de fusión de 10 puntos de casco. agotable o necesita ser reemplazado solo cuando se revisa todo el barco. Sin embargo, muchas centrales eléctricas PL 6 requieren un tanque de combustible además de los sistemas de energía propiamente dichos. La cantidad de combustible que lleva un barco depende de usted, pero la consideración más importante aquí es Resistencia. En palabras de Otros, ¿cuánto tiempo puede funcionar la central eléctrica con un tanque de combustible? Esto se mide por los días de energía totales del tanque de combustible. Si un tanque de combustible tiene capacidad para 100 días de energía, puede operar una planta de energía que genera 1 punto de energía por 100 días, 2 puntos de energía por 50 días, 20 puntos de energía por 5 días, y así sucesivamente. Si su diseño requiere 10 puntos de energía para hacer funcionar sus sistemas principales, es una idea muy Bueno comprar varios tanques de combustible (o uno grande) para que su barco funcione durante al menos un par de semanas sin repostar.
 
@@ -601,73 +450,19 @@ Sin motores, un barco no puede ir a ninguna parte. Muchos barcos pequeños conf�
 
 Requisitos de combustible del motor Varios tipos de motores requieren algún tipo de tanque de combustible, más allá de los requisitos de combustible para la planta de energía del barco. Cada punto de combustible del casco contiene una cierta cantidad de días de empuje para un motor de 1 punto del casco; Esta es la cantidad de días que el motor podría funcionar continuamente con 1 punto de combustible en el casco. Motores con 2, 3 o más puntos de casco.
 
-Tabla 5-4: Motores Motor Tech Pow Nivel de progreso 6: Era de la fusión Propulsor planetario 1,0 Vela de fotones Antorcha de fusión 0,33 Motor de iones S 0,5 Nivel de progreso 7: Edad de la gravedad Impulso de partículas 0,75 Motor de inducción G 1,0 Nivel de progreso 8: Era de la energía Motor de flujo inercial X 1,0 Redirector gravitacional G 0,67 Nivel de progreso 9: Edad de la materia Compresor espacial T 2,0
-
-Tamaño mínimo
-
-Costo Básico.
-
-Costo/casco
-
-5%
-
-Calificación de aceleración en... 10% 15% 20% 30% 40% 50% Ef. Costo
-
-$200 mil $500 mil $500 mil $800 mil
-
-$50 mil $50 mil $100 mil $200 mil
-
-0,1*
-
--0,5*
-
---
-
-0,25* 0,02* 1* 0,5*
-
-0,5* 0,05* 1,5* 1*
-
-1* 0,1* 2* 1,5*
-
-0,15* 3* 2*
-
-0,2* 4* 3*
-
-10 $10 mil 0,25* 5* 200 $1 mil 4* 400 $5 mil
-
-$500 mil $1 millón
-
-$300 mil 0.5 $500 mil 1
-
-1.0
-
-1.5
-
-2.5
-
--
-
--
-
-$2 millones $3 millones
-
-$500 mil 2 $1 millón
-
--
-
--
-
-1,5 millones de dólares
-
-$200 mil 3
-
--
-
--
-
-* Aceleración en escala de juego PL 6; ver el Capítulo 2.
-
-Tecnología: el tipo de tecnología necesaria para construir un motor de este tipo. Potencia: El número de puntos de potencia requeridos por cada punto del casco asignado a este motor. Por ejemplo, una antorcha de fusión de 30 puntos de casco requiere 10 puntos de alimentación para funcionar. Tamaño mínimo: el número más pequeño de puntos de casco que se pueden asignar a este sistema. Costo Base: El costo de la instalación de un motor de este tipo. Costo/Casco: El costo del punto de casco PER asignado a este motor; acumulable con el costo base. Índice de aceleración en...: La aceleración del barco para una instalación que comprende entre el 5 y el 50% de su casco total. Por ejemplo, un crucero de 300 puntos de casco con 60 puntos de casco asignados a sus motores utiliza la columna del 20%. Las cifras de aceleración se dan en megametros PER giro a menos que se indique lo contrario. Eficiencia de combustible: número de días de empuje proporcionados por un punto de combustible del motor en el casco. Los motores de más de 1 punto de casco queman combustible a un ritmo correspondientemente más rápido, por lo que una antorcha de fusión de 20 puntos de casco quema 20 días de empuje de combustible en un día de empuje continuo. Costo de combustible: El costo de comprar 1 punto de casco de combustible para este tipo de motor.
+### ### Tabla 5-4: Motores
+| Mín | Base | Costo/ | Clasificación de aceleración en... |
+|---|---|---|---|
+| Motor | Poder tecnológico | Tamaño | Costo. | Casco | 5% | 10% 15% 20% 30% 40% 50% Efectivo. Costo |
+| Propulsor planetario | - | 1.0 | 1 | $200 mil | $50 mil | 0,1* | 0,25* | 0,5* | 1* | - | - | - | 10 $10 mil |
+| Vela de fotones | - | - | 5 | $500 mil | $50 mil | -- | 0,02* | 0,05* | 0,1* | 0,15* | 0,2* | 0,25* - | - |
+| Antorcha de fusión | - | 0,33 | 3 | $500 mil | $100 mil | 0,5* | 1* | 1,5* | 2* | 3* | 4* | 5* | 200 $1 mil |
+| Motor de iones | S | 0,5 | 2 | $800 mil | $200 mil | -- | 0,5* | 1* | 1,5* | 2* | 3* | 4* 400 $5 mil |
+| Impulso de partículas | - | 0,75 | 4 | $500 mil | $300 mil 0.5 | 1.0 | 1.5 | 2 | 2.5 | 3 | 4 | - | - |
+| Motor de inducción | GRAMO | 1.0 | 2 | 1 millón de dólares | $500 mil 1 | 2 | 3 | 4 | 5 | 6 | 8 | - | - |
+| Motor de flujo inercial X | 1.0 | 1 | 2 millones de dólares | $500 K 2 | 3 | 4 | 5 | 6 | 8 | 10 | - | - |
+| Redirector gravitacional G | 0,67 | 3 | 3 millones de dólares | 1 millón de dólares | 2 | 4 | 6 | 8 | 10 | 12 | 16 | - | - |
+| Compresor espacial T | 2.0 | 4 | 1,5 millones de dólares | $200 K 3 | 6 | 9 | 12 | 15 | 18 | 20 | - | - |
 
 quemará combustible dos, tres, y así sucesivamente, veces más rápido que la cifra indicada. La cifra de consumo de combustible supone un empuje máximo más o menos continuo. Naturalmente, un barco que pasa tres semanas a la deriva sin encender sus motores no consume combustible alguno.
 
@@ -717,95 +512,21 @@ terminal Otros y no puede saltar a un lugar donde no existe una puerta. La durac
 
 Hyperdrive (PL 7) Este sistema de propulsión lanza la nave a una dimensión o realidad alternativa en la que el límite de velocidad de la luz no tiene sentido. Al igual que con el impulso de salto, es necesario calcular un destino antes de ingresar al hiperespacio. Esto requiere 1d4 (x) 10 minutos, o una prueba de habilidad Navegación (prueba de habilidad compleja de 4 Éxitos sin penalización, prueba de 10 minutos PER). Una vez que la nave realiza un salto hiperespacial, no puede cambiar de rumbo. Puede salir del hiperespacio en cualquier momento simplemente desconectando el hiperimpulsor, y puede haber dispositivos o fenómenos naturales que impidan los viajes al hiperespacio e impidan cualquier nave que pase por las proximidades. La velocidad FTL de un barco depende de qué tan grande sea el casco.
 
-Tabla 5-5: Impulsiones FTL Tecnología del motor Pow Nivel de progreso 6: Impulsor de salto de la era de la fusión T Combustible gastado Pantalla de agujero de gusano M Nivel de progreso 7: Activador de la puerta de la era de la gravedad T Hyperdrive X Stardrive G ! Nivel de progreso 8: Era de la energía Drivewave G. Spacefold Drive T Psychoportive Drive P Nivel de progreso 9: Materia Era Trascendente Drive P Warpdrive X
-
-Tamaño mínimo
-
-Costo Básico.
-
-Costo/casco
-
-5%
-
-Calificación de aceleración en... 10% 15% 20% 30% 40%
-
-$4 millones $1 millón
-
-$1 millón $10 mil $200 mil
-
-var
-
-## 1 ly 2 ly
-
-** -
-
-$500 mil $5 millones $2 millones
-
-$100 mil $2 millones $1 millón
-
-$3 millones $8 millones $6 millones
-
-$12 millones $10 millones
-
-## 8 Ly
-
--
-
-## 10 ly
-
--
-
-** 1/día 2/día 3/día var -
-
-4/día 5/día 6/día -
-
-7/día -
-
-$1,5 millones $2 millones $200 mil
-
-var -
-
--
-
--
-
--
-
-$400 mil $5 millones
-
-PEP/hora 1/hora 2/hora 4/hora
-
-8/hora
-
-16/h 32/h
-
-PEP de potencia
-
-## 3 Ly
-
--
-
--
-
-## 4 Ly
-
--
-
-## 6 Ly
-
--
-
-50%
-
--
-
-64/hora
-
-* El motor de salto requiere el 10 por ciento de los puntos del casco del barco. Su clasificación FTL varía según la cantidad de combustible gastado en un
-
-saltar. ** La pantalla del agujero de gusano ocupa el 5 por ciento de los puntos del casco del barco; el activador de puerta se lleva el 1 por ciento. El rendimiento varía.
-
-! El stardrive y el drivewave requieren una planta de energía con un reactor de masa. El rendimiento varía. Tecnología: La tecnología necesaria para construir este sistema de propulsión. Pow: La cantidad de energía requerida, punto del casco PER dedicado a este sistema. Tamaño mínimo: la instalación más pequeña posible para esta unidad. Costo base: El costo de la unidad. Costo/Casco: El costo del punto de casco PER asignado a esta unidad; acumulable con el costo base. Clasificación FTL en: La capacidad de viaje FTL del sistema. Consulte las descripciones del sistema para obtener más detalles.
+### ### Tabla 5-5: Unidades FTL
+| Mín | Base | Costo/ | Clasificación de aceleración en... |
+|---|---|---|---|
+| Motor | Poder tecnológico | Tamaño | Costo. | Casco | 5% | 10% 15% 20% 30% 40% | 50% |
+| Unidad de salto | T | 1 | 5 | 4 millones de dólares | 1 millón de dólares | - | var | - | - | - | - | - |
+| Combustible gastado | - | - | - | $10 mil | 1 LY 2 LY | 3 años | 4 años | 6 años | 8 años | 10 años |
+| Pantalla de agujero de gusano | METRO | 2 | 1 | 1 millón de dólares | $200 mil | ** | - | - | - | - | - | - |
+| Activador de puerta | T | 2 | 1 | $500 mil | $100 mil | ** | - | - | - | - | - | - |
+| Hiperimpulsor | X | 3 | 4 | 5 millones de dólares | 2 millones de dólares | 1/día 2/día 3/día | 4/día 5/día 6/día | 7/día |
+| Motor estelar | GRAMO | ! | 3 | 2 millones de dólares | 1 millón de dólares | var - | - | - | - | - | - |
+| Onda impulsora | GRAMO | ! | 2 | 3 millones de dólares | 1,5 millones de dólares | var | - | - | - | - | - | - |
+| Unidad plegada espacial | T | 4 | 4 | 8 millones de dólares | 2 millones de dólares | - | prisionero de guerra | - | - | - | - | - |
+| Impulso Psicoportivo P | 1 | 10 | 6 millones de dólares | $200 mil | - | PEP | - | - | - | - | - |
+| Unidad trascendente P | 1 | 4 | 12 millones de dólares | $400 mil | - | PEP/h- | - | - | - | - |
+| motor de deformación | X | 2 | 2 | 10 millones de dólares | 5 millones de dólares | 1/h 2/h 4/h | 8/hora | 16/h 32/h | 64/h |
 
 está dedicado al sistema de hiperimpulsión, con un mínimo del 10 por ciento. Cada punto del casco gastado en el hiperimpulsor requiere 3 puntos de energía para activar el sistema. Por ejemplo, un barco de 300 puntos de casco tiene un hiperimpulsor de 45 puntos de casco, o el 15 por ciento del casco; esto requiere 135 puntos de energía para activarse y proporciona a la nave una velocidad de 2 años luz PER día de viaje en hiperimpulsor. No hay límite para la duración de un salto Otros que la simple pregunta de cuánto tiempo puede permanecer una nave en el hiperespacio sin actualizar sus provisiones. (El DJ puede imponer un límite de hipersalto PER de 1000 años luz a su discreción).
 
@@ -869,37 +590,22 @@ tecnología de PL 6 o superior, o tecnología tipo X de PL 8 o superior. La grav
 
 Aceleración constante Obviamente, este no es tanto un sistema instalado como una filosofía de los vuelos espaciales. Una aceleración constante y moderada sirve bastante bien como gravedad artificial. De hecho, si una nave puede alcanzar y mantener una aceleración de 1 G (fase PER de 30 KPH, o aproximadamente 0,000025 megametros de fase PER, fase PER), es como estar sobre la superficie de la Tierra. Manteniendo esta aceleración lenta y constante hasta la mitad del viaje y luego “girando el barco” para
 
-Tabla 5-6: Sistemas de apoyo Progreso del sistema Nivel 6: Era de fusión Equipo de soporte vital o literas de tropa Cuartos para la tripulación de cabina Cubierta de asientos Cuartos de pasajeros Unidad criogénica Bahía de hidroponía Unidad de reciclado Almacenes profundos Nivel de progreso 7: Edad de gravedad Autosuporte Unidad de suspensión vital Nivel de progreso 8: Casco simbiótico de la era energética
-
-tecnología
-
-casco
-
-poder
-
-Costo
-
-Notas
-
--
-
-$100 mil $40 mil $20 mil $20 mil $10 mil $50 mil $100 mil $75 mil $300 mil $5 mil
-
-Soporte vital para 20 puntos de casco Atraque para 20 tripulantes Atraque para 2 tripulantes Atraque para 6 tripulantes Asientos de corta duración para 20 pasajeros Camarotes para 2 pasajeros Capacidad de 12 personas Alimenta a 10 personas Reduce el consumo al 10% normal para 20 personas Aumenta las provisiones en 1.000 días
-
-S
-
-$200 mil $250 mil
-
-Soporte vital para 40 puntos de casco Capacidad de 12 personas
-
-## P,M
-
-$250 mil
-
-Soporte vital para 100 pts de casco, reciclaje para 20 personas
-
-Tecnología: Cualquier tecnología avanzada requerida para este sistema. Casco: el número de puntos de casco utilizados por este sistema. Algunos sistemas requieren un porcentaje del casco. Potencia: La cantidad de potencia requerida para un sistema de este tipo. Algunos sistemas requieren la potencia indicada para cada punto del casco asignado al sistema, mientras que los sistemas Otros simplemente se compran e instalan como unidades separadas. Costo: El costo del sistema, o el costo del punto de casco PER para un sistema que requiere algún porcentaje del casco.
+### Tabla 5-6: Sistemas de soporte
+| Sistema | Tecnología | Casco | Poder | Costo | Notas |
+|---|---|---|---|---|---|
+| Soporte vital | - | 1 | 1 | $100 mil | Soporte vital para 20 puntos del casco |
+| Litera para tripulación o tropa | - | 3 | 0 | $40 mil | Atraque para 20 tripulantes |
+| Cabaña | - | 1 | 0 | $20 mil | Atraque para 2 tripulantes |
+| Cuartos de tripulación | - | 2 | 0 | $20 mil | Atraque para 6 tripulantes |
+| Terraza con asientos | - | 2 | 0 | $10 mil | Asientos de corta duración para 20 pasajeros |
+| Cuartos de pasajeros | - | 2 | 0 | $50 mil | Camarotes para 2 pasajeros |
+| Unidad de Criogenia | - | 2 | 1 | $100 mil | Capacidad de 12 personas |
+| Bahía de hidroponía | - | 2 | 1 | $75 mil | Alimenta a 10 personas |
+| Unidad Recicladora | - | 1 | 1 | $300 mil | Reduce el consumo al 10% normal para 20 personas |
+| Tiendas profundas | - | 1 | 0 | $5 mil | Aumenta las tiendas en 1.000 días |
+| Soporte automático | - | 1 | 1 | $200 mil | Soporte vital para 40 puntos del casco |
+| Unidad de suspensión de vida | S | 1 | 1 | $250 mil | Capacidad de 12 personas |
+| Casco simbiótico | P, M | 1 | 1 | $250 mil | Soporte vital para 100 cascos, reciclaje para 20 personas |
 
 Si comienza a desacelerar al mismo ritmo, una nave espacial puede simular la gravedad durante la mayor parte de su viaje. Este método presenta tres problemas: en primer lugar, la nave está limitada a 1G de aceleración, lo que significa que incluso los viajes interplanetarios relativamente cortos tardarán meses. En segundo lugar, la nave no puede mantener su gravedad simulada durante las violentas maniobras Combate. Finalmente, mantener una aceleración constante durante semanas o meses puede estar más allá de las capacidades de los motores del barco o obligarlo a transportar una cantidad prohibitiva de combustible.
 
@@ -953,7 +659,14 @@ Monturas fijas Al eliminar cualquier dispositivo mecánico de entrenamiento, es 
 
 Torretas Al montar un arma en una estructura elevada con campos de tiro despejados en todos los lados, es posible asignar tres arcos de fuego a una montura de arma en lugar del único arco permitido por una montura estándar. La torreta incluye maquinaria importante, blindaje adicional, control climático y sistemas Otros comunes al barco, por lo que cuesta un 25% más de dinero y puntos de casco que la montura estándar.
 
-Tabla 5–7: Costos de puntos de casco para monturas fijas y torretas Torreta fija estándar
+### Tabla 5-7: Costos de puntos de casco para monturas fijas y torretas
+
+| Estándar | Fijo | Torreta |
+|---|---|---|
+| 1 | 1 | 1 |
+| 2 | 2 | 3 |
+| 3 | 2 | 4 |
+| 4 | 3 | 5 |
 
 Patrocinador El patrocinador es un bulto o ampolla en el costado del barco donde se puede montar un arma para mejorar el campo de tiro. No es tan Bueno como una torreta; un patrocinador permite disparar sólo en dos arcos en lugar de tres. El patrocinador cuesta un 25% más que una montura estándar del mismo tipo, pero no requiere ninguna asignación adicional de puntos de casco.
 
@@ -983,97 +696,40 @@ Hydrogen Bore (PL 6) Esta gigantesca arma es básicamente un propulsor de antorc
 
 Haz de partículas (PL 7) Una versión mejorada del cañón de neutrones PL 6, este dispositivo proyecta una corriente de protones, neutrones o partículas alfa en el objetivo, acelerando cada uno de ellos hasta casi la velocidad de la luz. No sólo lanza una mordaz explosión de fuerte radiación, sino que la energía cinética del impacto de las partículas puede vaporizar su objetivo. El haz de partículas pesadas entrega un mayor volumen de partículas al objetivo.
 
-Tabla 5-8: Armas de haz Arma Tecnología Casco Nivel de progreso 6: Láser de la era de la fusión Láser IR Láser de rayos X Láser pesado Cañón de neutrones Láser de fusión F Graser Q Pistola de neutrones pesados 22 Orificio de hidrógeno** F Nivel de progreso 7: Cañón de plasma de la era de la gravedad F Haz de partículas Haz de partículas pesadas 6 Haz de plasma pesado F Haz de materia A Haz de fusión F Cañón cuántico Q Cañón de bosones Haz de materia pesada A Orificio de fusión** F Nivel de progreso 8: Lanza cinética del máser de la era de la energía X Maser de pulso Cañón EM Pistola de fusión oscura D Maser Gatling Pistola de fuerza débil M Pistola de fuerza fuerte** M Calibre cero** Q Nivel de progreso 9: Edad de la materia Láser negro D Pistola de taquiones X Proyector de cuerdas
-
-## Q, G
-
-poder
-
-Costo.
-
-Acc
-
-Rango
-
-fuego
-
-Daño
-
-Modo
-
-$100 mil $250 mil $350 mil $2 millones $10 millones $20 millones $40 millones $60 millones $100 millones
-
--2
-
--2
-
--2
-
--1
-
-+1 +2 +3 +3
-
-1/2/3 1/2/3 1/2/3 1/3/5 1/3/5 2/4/6 3/6/9 3/6/9 4/8/12
-
-En/S En/S En/S En/L En/L En/M En/M En/H En/SH
-
-d4s/d4w/d4+2w d4+1s/d4+1w/d6+1w d6+1s/d4+2w/d4m d6+2s/d6+2w/d6m 2d4w/2d4+2w/2d4m 2d6w/2d6+2w/2d6m 3d4s/2d4m/3d4m 2d6w/2d6m/2d6+2m 3d4w/3d4m/3d4c
-
-F* F* F* F/G F/G F/G F/G F/G F
-
-$400 mil $500 mil $4 millones $12 millones $20 millones $25 millones $50 millones $80 millones $100 millones $200 millones
-
--2
-
--2
-
--1
-
-+1 +2 +3 +3 +3
-
-1/2/4 2/4/6 2/4/6 2/4/8 2/5/10 3/6/12 4/8/12 4/8/12 4/8/16 5/10/15
-
-En/S En/S En/L En/L En/M En/M En/M En/H En/H En/SH
-
-d6+2w/d8+2w/d6+1m d6+3s/d4+1m/d4+3m d12+3s/d6+1m/d6+3m d8+2w/d12+2w/d8+2m 2d6+1w/2d8+1w/2d8m d12+2w/d12+4w/d8+5m 2d8w/2d6m/2d4c 3d6w/3d6m/4d6m 2d6+1m/2d8+1m/2d8c 3d6m/3d4c/3d6c
-
-F* F F/G F/G F/G F/G F/G F/G F/G F
-
-$400 mil $750 mil $4 millones $10 millones $40 millones $50 millones $120 millones $150 millones $300 millones
-
--3
-
--3
-
--1
-
--1
-
-+1 +2 +3 +3
-
-1/3/5 2/4/6 2/5/10 3/6/12 4/8/12 3/7/14 5/10/15 5/10/20 6/12/18
-
-En/S HI/S En/L En/L En/M En/M En/H En/H En/SH
-
-d6+2w/d4+1m/d6+2m d4+1w/2d4w/d4+3m d8+4w/d8+2m/d12+2m 3d6s/4d6s/4d8s 2d6w/3d4m/2d4+1c d8+4w/d8+2m/d12+2m 4d4w/4d4m/4d4c 3d6+2m/3d4c/4d6c 4d6m/3d6c/3d8c
-
-F* F* F/G F/G F/G F/G/B/A F/G F/G F
-
-$1 millón $40 millones $200 millones
-
--3
-
-+2
-
-2/4/6 4/8/12 6/12/24
-
-En/S En/M LI/H
-
-d8w/d12w/d8m 2d8+2w/2d8m/d8+1c 4d8w/3d8m/3d8c
-
-F/B/A/G F/G F/G
-
-* Las modificaciones de armas pueden hacer que estén disponibles modos de disparo adicionales. ** Arma de efecto de área; ver TABLA 5-11. Arma: El nombre del arma. Tecnología: La tecnología Rastrear requerida por esta arma. Si aquí aparece más de un código tecnológico Rastrear, el constructor solo necesita tener acceso a una de las pistas tecnológicas mencionadas. Casco: El número de puntos de casco necesarios para la instalación de este sistema de armas. Pow: la potencia necesaria para emplear esta arma en una ronda de Combate. Costo: El costo, en millones de créditos, dólares Concord o denominación adecuada a tu juego. Acc: el modificador de precisión base del arma. Alcance: Las armas de corto/medio/largo alcance en megámetros (unidades de 1.000 kilómetros). Fuego: el tipo de arma (bajo impacto, alto impacto o energía) y potencia de fuego (pequeña, ligera, mediana, pesada o superpesada). Daño: El daño del arma por un éxito de calidad Ordinario/Bueno/Asombroso en la tirada de ataque. Modo: los modos de disparo permitidos del sistema de armas. 'F' significa disparo único; 'G' significa fuego de grupo (o batería); 'B' significa ráfaga de fuego; y 'A' significa disparo automático.
+### Tabla 5-8: Armas de rayos 73
+| Arma | Casco tecnológico | Pow | Costo. | Acceso | Gama | Fuego | Daños | Modo |
+|---|---|---|---|---|---|---|---|---|
+| Láser | - | 1 | 2 | $100 mil | -2 | 1/2/3 | En/S | d4s/d4w/d4+2w | F* |
+| Láser infrarrojo | - | 2 | 2 | $250 mil | -2 | 1/2/3 | En/S | d4+1s/d4+1w/d6+1w | F* |
+| Láser de rayos X | - | 2 | 2 | $350 mil | -2 | 1/2/3 | En/S | d6+1s/d4+2w/d4m | F* |
+| Láser pesado | - | 5 | 5 | 2 millones de dólares | -1 | 1/3/5 | En/L | d6+2s/d6+2w/d6m | F/G |
+| Pistola de neutrones | - | 7 | 7 | 10 millones de dólares | 0 | 1/3/5 | En/L | 2d4w/2d4+2w/2d4m | F/G |
+| Láser de fusión | F | 12 | 12 | 20 millones de dólares | +1 | 2/4/6 | En/M | 2d6w/2d6+2w/2d6m | F/G |
+| Graser | Q | 15 | 15 | 40 millones de dólares | +2 | 6/03/9 | En/M | 3d4s/2d4m/3d4m | F/G |
+| Pistola de neutrones pesada - | 22 | 22 | 60 millones de dólares | +3 | 6/03/9 | En/H | 2d6w/2d6m/2d6+2m | F/G |
+| Perforación de hidrógeno** | F | 50 | 60 | 100 millones de dólares | +3 | 8/04/12 | En/SH | 3d4w/3d4m/3d4c | F |
+| Cañón de plasma | F | 3 | 3 | $400 mil | -2 | 1/2/4 | En/S | d6+2w/d8+2w/d6+1m | F* |
+| Haz de partículas | - | 4 | 5 | $500 mil | -2 | 2/4/6 | En/S | d6+3s/d4+1m/d4+3m | F |
+| Haz de partículas pesadas - | 6 | 8 | 4 millones de dólares | -1 | 2/4/6 | En/L | d12+3s/d6+1m/d6+3m | F/G |
+| Haz de plasma pesado F | 8 | 8 | 12 millones de dólares | 0 | 4/2/8 | En/L | d8+2w/d12+2w/d8+2m | F/G |
+| Haz de materia | Un | 11 | 11 | 20 millones de dólares | 0 | 5/02/10 | En/M | 2d6+1w/2d8+1w/2d8m | F/G |
+| Haz de fusión | F | 15 | 15 | 25 millones de dólares | +1 | 6/03/12 | En/M | d12+2w/d12+4w/d8+5m | F/G |
+| Cañón cuántico | Q | 18 | 18 | 50 millones de dólares | +2 | 8/04/12 | En/M | 2d8w/2d6m/2d4c | F/G |
+| Pistola de bosones | - | 20 | 20 | 80 millones de dólares | +3 | 8/04/12 | En/H | 3d6w/3d6m/4d6m | F/G |
+| Haz de materia pesada A | 24 | 24 | 100 millones de dólares | +3 | 8/04/16 | En/H | 2d6+1m/2d8+1m/2d8c | F/G |
+| Orificio de fusión** | F | 60 | 75 | 200 millones de dólares | +3 | 10/05/15 | En/SH | 3d6m/3d4c/3d6c | F |
+| Máser | - | 4 | 3 | $400 mil | -3 | 1/3/5 | En/S | d6+2w/d4+1m/d6+2m | F* |
+| Lanza cinética | X | 2 | 1 | $750 mil | -3 | 2/4/6 | ALTA/S | d4+1w/2d4w/d4+3m | F* |
+| Máser de pulso | - | 6 | 4 | 4 millones de dólares | -1 | 5/02/10 | En/L | d8+4w/d8+2m/d12+2m | F/G |
+| Cañón electromagnético | - | 8 | 8 | 10 millones de dólares | -1 | 6/03/12 | En/L | 3d6s/4d6s/4d8s | F/G |
+| Pistola de fusión oscura | D | 15 | 15 | 40 millones de dólares | 0 | 8/04/12 | En/M | 2d6w/3d4m/2d4+1c | F/G |
+| Máser Gatling | - | 18 | 36 | 50 millones de dólares | +1 | 7/03/14 | En/M | d8+4w/d8+2m/d12+2m | F/G/B/A |
+| Arma de fuerza débil | METRO | 25 | 25 | 120 millones de dólares | +2 | 10/05/15 | En/H | 4d4w/4d4m/4d4c | F/G |
+| Pistola de fuerza fuerte** | METRO | 32 | 32 | 150 millones de dólares | +3 | 10/05/20 | En/H | 3d6+2m/3d4c/4d6c | F/G |
+| Orificio cero** | Q | 100 | 120 | 300 millones de dólares | +3 | 12/06/18 | En/SH | 4d6m/3d6c/3d8c | F |
+| Láser negro | D | 3 | 3 | 1 millón de dólares | -3 | 2/4/6 | En/S | d8w/d12w/d8m | F/B/A/G |
+| Pistola de taquiones | X | 12 | 12 | 40 millones de dólares | 0 | 8/04/12 | En/M | 2d8+2w/2d8m/d8+1c | F/G |
+| Proyector de cuerdas | Q, GRAMO | 24 | 30 | 200 millones de dólares | +2 | 12/06/24 | LI/H | 4d8w/3d8m/3d8c | F/G |
 
 Cañón de plasma (PL 7) El cañón de plasma utiliza una carga poderosa para convertir una mezcla de químicos en plasma candente y luego acelera la masa hacia el objetivo con un simple cañón de riel. El resultado es un rayo de plasma incandescente que puede vaporizar explosivamente materiales mundanos. El pesado cañón de plasma simplemente dispara un rayo más grande. Modificación: Por un coste adicional de 200.000 créditos y 1 punto de casco, el cañón de plasma se puede configurar en una montura cuádruple de disparo rápido para modos de ataque de ráfaga o de disparo automático. Esto aumenta el consumo de energía a 5 puntos de alimentación redondos PER.
 
@@ -1081,7 +737,7 @@ Haz de fusión (PL 7) Al igual que el orificio de hidrógeno del nivel 6 de prog
 
 Costo de 2.000.000 y 2 puntos de casco. Su consumo de energía aumenta a 8 puntos.
 
-Lanza cinética (PL 8) La lanza cinética crea una corriente de partículas virtuales que simulan materia sólida. A las velocidades involucradas con el espacio Combate, el impacto de la lanza es bastante destructivo.
+Lanza cinética (PL 8) La lanza cinética crea una corriente de partículas virtuales que simulan materia sólida. A las velocidades involucradas en el espacio Combate, el impacto de la lanza es bastante destructivo.
 
 Cañón EM (PL 8) El cañón EM funciona de manera muy similar a los cañones láser o máser, pero concentra su potencia máxima en la banda de radio. Es especialmente eficaz contra equipos electrónicos, induciendo un efecto EMP (pulso electromagnético) similar al de una explosión nuclear.
 
@@ -1111,75 +767,28 @@ Al igual que los antiguos cañones navales, las armas de proyectiles utilizan un
 
 Pistola de taquiones (PL 9) La pistola de taquiones en realidad dispara una ráfaga de partículas de alta energía y más rápidas que la luz al objetivo. Debido a su capacidad para disparar en una línea de visión independientemente de la velocidad relativa entre el barco que dispara y el objetivo, el cañón de taquiones ignora todas las penalizaciones por disparar a objetivos de velocidad extremadamente alta (ver Capítulo 4).
 
-Tabla 5-9: Armas de proyectiles Arma Tecnología Casco Nivel de progreso 6: Edad de fusión Arma de defensa de puntos Cañón de riel Conductor de aguja Pistola Gauss S Cañón de riel de alta velocidad Nivel de progreso 7: Edad de gravedad Cañón de masa G Cañón de masa pesado G Acelerador* Rifle tacómetro X Acelerador pesado* Pistola de antimateria* A Rifle súper tacómetro X Nivel de progreso 8: Era de energía Pistola de astillas Controlador de neutronio S Proyector de bomba* T Bomba Salvo* T Convertidor cinético* X Nivel de progreso 9: Conductor de túneles Matter Age* Q Pistola de agujeros negros G
-
-poder
-
-Costo.
-
-Acc
-
-Rango
-
-fuego
-
-Daño
-
-Modo
-
-$200 mil $500 mil $2 millones $5 millones $50 millones
-
--1
-
-+1 +2 +4
-
-1/2/3 1/2/5 1/3/5 2/4/6 3/6/12
-
-ALTO/Gd ALTO/S ALTO/L ALTO/M ALTO/H
-
-d4s/d4w/d4+2w 2d4s/d6+2w/d4+1m d6+1w/d6+3w/d4+3m d6+1w/d6+2m/d4+1c d8+2w/d8+2m/d6+2c
-
-F/B/A F/G B/A F/G F/G
-
-3 $300 mil $2 millones 7 $10 millones 8 $30 millones 14 $40 millones 18 $80 millones 30 $120 millones
-
--1
-
-+1 +1 +3 +4 +4
-
-1/3/5 2/4/6 3/5/7 6/8/10 4/8/10 4/8/12 8/10/14
-
-LI/S LI/L En/M HI/M En/H En/H HI/SH
-
-d6+2s/d6+1w/d6+3w 2d6s/2d6w/3d6w 2d6s/2d6w/2d6m d12w/d8m/d12m 2d6w/2d6m/2d6c 3d6w/3d4m/3d4c 2d8m/2d12m/2d8c
-
-F/G F/G F/G F/G F/G F/G F
-
-$250 mil $4 millones $15 millones $20 millones $50 millones
-
--2
-
--1
-
--1
-
-+2
-
-1/2/4 2/4/8 4/6/8 5/7/10 4/8/16
-
-HI/S HI/L En/M En/M LI/H
-
-d6+1w/d6+3w/d4+2m F/B/A d6+3w/d6+1m/d6c F/G 2d6s/2d6w/2d6m F 2d6s/2d6w/2d6m F d12+3w/d12+3m/d12+1c F/G
-
-15 $90 millones 40 $200 millones
-
-+3 +1
-
-10/05/20 En/M** 2d6s/2d6w/2d6m 6/12/24 LI/SH 3d6m/4d6m/3d8c
-
-F/G S
-
-* Arma de efecto de área; consulte la TABLA 5-11 para obtener más información. ** Ignora la armadura del objetivo y Escudos o pantallas. Arma: El nombre del arma. Tecnología: La tecnología Rastrear requerida por esta arma. Casco: El número de puntos de casco necesarios para la instalación de este sistema de armas. Pow: la potencia necesaria para emplear esta arma en una ronda de acción de Combate, independientemente de cuántos disparos dispare realmente. Costo: El costo, en millones de créditos, dólares Concord o denominación adecuada a tu juego. Acc: el modificador de precisión base del arma. Alcance: Las armas de corto/medio/largo alcance en megámetros. Fuego: el tipo de arma (bajo impacto, alto impacto o energía) y potencia de fuego (embarcación pequeña, ligera, mediana, pesada o superpesada). Daño: El daño del arma por un éxito de calidad Ordinario/Bueno/Asombroso en la tirada de ataque. Modo: los modos de disparo permitidos del sistema de armas. 'F' significa disparo único; 'G' significa fuego grupal (o batería); 'B' significa ráfaga de fuego; y 'A' significa disparo automático.
+### Tabla 5-9: Armas de proyectiles
+| Arma | Casco tecnológico | Pow | Costo. | Acceso | Gama | Fuego | Daños | Modo |
+|---|---|---|---|---|---|---|---|---|
+| Arma de defensa puntual | - | 1 | 0 | $200 mil | -1 | 1/2/3 | Hola/Dios | d4s/d4w/d4+2w | F/B/A |
+| Cañón de riel | - | 4 | 3 | $500 mil | 0 | 1/2/5 | ALTA/S | 2d4s/d6+2w/d4+1m | F/G |
+| Controlador de aguja | - | 6 | 6 | 2 millones de dólares | +1 | 1/3/5 | ALTO/L | d6+1w/d6+3w/d4+3m | B/A |
+| Pistola Gauss | S | 8 | 6 | 5 millones de dólares | +2 | 2/4/6 | ALTA/M | d6+1w/d6+2m/d4+1c | F/G |
+| Cañón de riel de alta velocidad | - | 20 | 16 | 50 millones de dólares | +4 | 6/03/12 | ALTO/ALTO | d8+2w/d8+2m/d6+2c | F/G |
+| Cañón de masas | GRAMO | 2 | 3 $300 mil | -1 | 1/3/5 | LI/S | d6+2s/d6+1w/d6+3w | F/G |
+| Cañón de masa pesada | GRAMO | 5 | 6 | 2 millones de dólares | 0 | 2/4/6 | LI/L | 2d6s/2d6w/3d6w | F/G |
+| Acelerador* | - | 9 | 7 10 millones de dólares | +1 | 3/5/7 | En/M | 2d6s/2d6w/2d6m | F/G |
+| Rifle tacómetro | X | 12 | 8 30 millones de dólares | +1 | 8/06/10 | ALTA/M | d12w/d8m/d12m | F/G |
+| Acelerador pesado* | - | 18 | 14 $40 millones | +3 | 8/04/10 | En/H | 2d6w/2d6m/2d6c | F/G |
+| Pistola de antimateria* | Un | 25 | 18 80 millones de dólares | +4 | 8/04/12 | En/H | 3d6w/3d4m/3d4c | F/G |
+| Rifle súper tacómetro | X | 40 | 30 $120 Millones | +4 | 10/08/14 | ALTO/SH | 2d8m/2d12m/2d8c | F |
+| Pistola de astilla | - | 4 | 2 | $250 mil | -2 | 1/2/4 | ALTA/S | d6+1w/d6+3w/d4+2m | F/B/A |
+| Controlador de neutronio | S | 8 | 4 | 4 millones de dólares | 0 | 4/2/8 | ALTO/L | d6+3w/d6+1m/d6c | F/G |
+| Proyector de bombas* | T | 10 | 15 | 15 millones de dólares | -1 | 6/4/8 | En/M | 2d6s/2d6w/2d6m | F |
+| Salva de bomba* | T | 12 | 18 | 20 millones de dólares | -1 | 7/05/10 | En/M | 2d6s/2d6w/2d6m | F |
+| Convertidor cinético* | X | 20 | 10 | 50 millones de dólares | +2 | 8/04/16 | LI/H | d12+3w/d12+3m/d12+1c F/G |
+| Conductor de túneles* | Q | 30 | 15 $90 Millones | +3 | 10/05/20 En/M** 2d6s/2d6w/2d6m | F/G |
+| Pistola de agujero negro | GRAMO | 75 | 40 $200 Millones | +1 | 6/12/24 LI/SH 3d6m/4d6m/3d8c | S |
 
 Cañón de defensa puntual (PL 6) El cañón de defensa puntual es principalmente un sistema defensivo destinado a usarse contra misiles entrantes. A corta distancia, puede emplearse en un papel ofensivo. El arma de defensa no se puede usar tanto defensiva como ofensivamente en la misma ronda de acción. El arma de defensa puntual puede disparar en modo ráfaga o automático sin modificaciones adicionales.
 
@@ -1237,225 +846,110 @@ Sistemas de lanzamiento Los sistemas de lanzamiento están diseñados de manera 
 
 Artillería lanzada Aquí tienes un breve resumen de cómo necesitas equipar tu buque de guerra para transportar artillería lanzada: Las bombas requieren un soporte o compartimento para bombas, un sistema de propulsión de bomba (en realidad, solo una carcasa) y una ojiva. Las minas requieren un minador, un sistema de propulsión de minas (nuevamente, una carcasa simple), una ojiva y un sistema de guía. Los misiles requieren un bastidor o tubo de misiles, un sistema de propulsión de misiles, una ojiva y un sistema de guía. Si no quiere tomarse la molestia de personalizar la artillería de su barco, consulte los sistemas de lanzamiento estándar que se describen más adelante en esta sección.
 
-Tabla 5-10: Misiles, bombas y minas (Parte 1) Sistemas de lanzamiento Progreso en tecnología de armas Nivel 6: Estante de bombas de la era de la fusión Bahía de bombas Capacidad extra Minador... Capacidad adicional Estante de misiles Tubo de misiles Cargador Nivel de progreso 7: Era de la gravedad Matriz de celdas de artillería Celdas adicionales -
-
-casco
-
-poder
-
-Costo
-
-gorra
-
-recargar
-
-ROF
-
-+1 +5 +1
-
-+2
-
-$10 mil $100 mil $10 mil $100 mil $50 mil $50 mil $100 mil $50 mil
-
-+4 +10 +4
-
-N S N N S -
-
-Todo el 10/rd
-
-$1 millón $25 mil
-
-+4
-
-norte norte
-
-Todos -
-
-10/rd
-
-Notas
-
-Implementa un patrón de mina
-
-4/rd 1/rd Lleva misiles, bombas o minas
-
-Tecnología: La tecnología Rastrear requerida por esta arma. Casco: El número de puntos de casco necesarios para la instalación de este sistema de armas. Pow: La potencia necesaria para emplear esta arma en un turno de Combate. Costo: El costo, en millones de créditos, dólares Concord o denominación adecuada a tu juego. El costo del sistema de lanzamiento no incluye el costo de las municiones transportadas. Capacidad: La capacidad del sistema de lanzamiento. Los misiles, minas y bombas de tamaño 1 requieren 1 punto cada uno; Las armas de tamaño 2 requieren 2 puntos cada una. Recargar: si este sistema se puede recargar o no en un espacio abierto. ROF: La cantidad de misiles, bombas o minas que pueden dispararse en una sola ronda.
-
-Sistemas de propulsión Progreso tecnológico de armas Nivel 6: Era de fusión Bomba o mía, ligera Bomba o mía, médica Bomba o mía, hvy Cohete, chem Misil, ligero S Misil, pesado S Nivel de progreso 7: Misil de la era de la gravedad, ligero
-
-## Q, G
-
-Misil, mediano
-
-## Q, G
-
-Misil, pesado
-
-## Q, G
-
-Nivel de progreso 8: Misil de la era de la energía, ligero X Misil, medio X Nivel de progreso 9: Misil de la era de la materia, taquión Q
-
-Tamaño
-
-guerra
-
-Costo
-
-Acc
-
-Fin
-
-CAC
-
-$5 mil $10 mil $20 mil $15 mil $25 mil $50 mil
-
--3
-
--2
-
--1
-
-+2 +1
-
-2* 4* 3*
-
-$40 mil $60 mil $100 mil
-
--1
-
-+1
-
-$50 mil $100 mil
-
--2
-
--1
-
-$500 mil
-
--
-
--
-
-Notas
-
-Golpea al objetivo en la misma fase.
-
-* En la escala PL 6. En encuentros de PL 7, divide esta cifra por diez. Tamaño: La cantidad de puntos de capacidad del sistema de lanzamiento requeridos por esta arma. Por ejemplo, dos bombas (tamaño 1) o una bomba pesada (tamaño 2) podrían caber en un portabombas con capacidad para 2. Ojiva: el tamaño de la ojiva que se puede montar en este sistema de propulsión. Acc: El modificador de precisión básico del arma, en pasos. Fin: El número de rondas en las que este sistema de propulsión puede aplicar su aceleración antes de que se agote su combustible o potencia. ACC: El índice de aceleración del sistema de misiles, en megámetros Fase PER Fase PER.
-
-Tabla 5-10: Misiles, bombas y minas (Parte 2) Ojivas (minas, bombas y misiles) Progreso del arma Nivel 6: Explosión AA de la era de fusión* CHE* Submunición KE* Bomba nuclear de bajo rendimiento* Bomba nuclear de alto rendimiento* Nivel de progreso 7: Plasma de la era de la gravedad* MRB (reacción masiva)* Materia* Nivel de progreso 8: Carga estelar de la era de la energía* Explosión de Nova* Punto cero* Nivel de progreso 9: Bomba nula de edad de materia*
-
-tecnología
-
-guerra
-
-Costo
-
-Acc
-
-fuego
-
-Daño
-
--
-
-$5 mil $10 mil $20 mil $500 mil $1 millón
-
--2
-
--1
-
-+1
-
-HI/S En/L HI/L En/M En/H
-
-d8w/d6m/2d4m d6+1s/d6+1w/d4+2m d6+2s/d6+2w/d6+4w 2d6s/2d6w/2d6m 2d6w/2d6m/2d6c
-
-FDA
-
-$50 mil $200 mil $2 millones
-
--1
-
-+1
-
-En/L En/M En/SH
-
-d6+3w/d8+3w/d6+2m 2d4+1s/2d4w/d8+1m 3d6w/3d6m/2d6+2c
-
-DGQ
-
-$80 mil $500 mil $3 millones
-
--2
-
--1
-
-En/L LI/H En/SH
-
-2d6w/2d6m/2d4c 2d8w/2d6m/2d4c 3d8w/3d8m/3d6c
-
-x
-
-5 millones de dólares
-
--1
-
-En/SH
-
-4d6w/4d6m/4d6c
-
-* Arma de efecto de área.
-
-Guerra: El tamaño de la ojiva. Acc: el modificador de precisión de la ojiva. Fuego: El tipo de ataque (bajo impacto, alto impacto o energía) y su potencia de fuego (pequeño, ligero, mediano, pesado o súper pesado). Daño: El daño infligido por un éxito de calidad Ordinario, Bueno o Asombroso en la tirada de ataque.
-
-Sistemas de guía (misiles, minas) Progreso de armas Nivel 6: Edad de fusión Radar activo Orientación EM EM activa Orientación IR caliente Progreso de comando Nivel 7: Era de la gravedad Progreso de orientación masiva Nivel 8: Era de la energía Probabilidad de la IA
-
-tecnología
-
-Costo
-
-Acc
-
-Notas
-
--
-
-$20 mil $10 mil
-
-Puede ser bloqueado por el ECM. La precisión cae a +2 Penalización de paso si el objetivo no está
-
--
-
-$10 mil
-
-La precisión cae a +2 Penalización de paso si el objetivo no es IR
-
--
-
-$5 mil
-
-+1
-
-Puede ser bloqueado por el ECM
-
-GRAMO
-
-$10 mil
-
--1
-
-c
-
-$20 mil
-
--2
-
-Acc: Modificador de precisión del sistema de guía, acumulativo con la precisión del sistema de propulsión y de la ojiva. Todos los sistemas de lanzamiento poseen una característica especial llamada capacidad, que indica cuánta artillería puede transportar el sistema. Obviamente, un bastidor de misiles puede transportar muchos misiles pequeños o algunos grandes. Generalmente, cada punto del casco dedicado a un sistema de lanzamiento proporciona de dos a cuatro puntos de capacidad para artillería. Como diseñador, puede optar por comprar capacidad adicional para su sistema de lanzamiento asignando algo de espacio adicional en el casco y dinero al sistema de lanzamiento. Los misiles, bombas y minas vienen en tres tamaños: ligeros, medianos y pesados. Las armas ligeras ocupan 1 punto del
-
-Según la capacidad del sistema de lanzamiento, las armas medianas ocupan 2 puntos y Armas pesadas ocupa 3 puntos. Por ejemplo, un bastidor de bombas (capacidad para 4) podría transportar 4 bombas ligeras, 2 bombas medianas o 1 bomba pesada. La mayoría de los sistemas de lanzamiento sólo se pueden recargar en una base o puerto amigo. Incluso si un barco lleva misiles adicionales en su espacio de carga, se necesita un procedimiento EVA largo y complicado para maniobrar la artillería hasta su posición de disparo. Recargar bastidores de bombas, bastidores de misiles o celdas de artillería en espacios abiertos requiere que la nave evite toda velocidad.
-
-Tabla 5-10: Misiles, bombas y minas (Parte 3) Sistemas de muestra Tecnología de armas Casco Progreso Nivel 6: Estante de bombas SMP de la era de fusión Estante de bombas de fusión Estante de misiles CHE Montaje de misiles S Misiles SMP Misiles AA Nivel de progreso 7: Estante de misiles de plasma de la era de la gravedad
+### Tabla 5-10: Misiles, bombas y minas (Parte 1)
+
+| Tecnología | Casco | Poder | Costo | Gorra | Recargar | ROF | Notas |
+|---|---|---|---|---|---|---|---|
+| Estante de bombas | - | 1 | 0 | $10 mil | 4 | norte | Todo |
+| Bahía de bombas | - | 10 | 1 | $100 mil | 40 | Y | 10/er |
+| Capacidad adicional | - | +1 | 0 | $10 mil | +4 | - |
+| Minador | - | 5 | 2 | $100 mil | 10 | norte | 10/er | Implementa un patrón de mina |
+| ...Capacidad adicional | - | +5 | +2 | $50 mil | +10 | - |
+| Estante de misiles | - | 2 | 1 | $50 mil | 8 | norte | 4/er |
+| Tubo de misil | - | 3 | 1 | $100 mil | 12 | Y | 1/er |
+| Revista | - | +1 | 0 | $50 mil | +4 | - | - |
+| Matriz de células de artillería | - | 10 | 2 | 1 millón de dólares | 40 | norte | Todo | Lleva misiles, bombas o minas |
+| Celdas adicionales | - | 1 | 0 | $25 mil | +4 | norte | - |
+| Arma | Tecnología | Tamaño | Guerra | Costo | Acceso | Fin | CAC | Notas |
+| Bomba o mía, ligera | - | 1 | 1 | $5 mil | -3 | - | - |
+| Bomba o mía, medicina | - | 2 | 2 | $10 mil | -2 | - | - |
+| Bomba, o mía, hvy | - | 4 | 4 | $20 mil | -1 | - | - |
+| Cohete, química | - | 2 | 1 | $15 mil | +2 | 2 | 2* |
+| Misil ligero | S | 2 | 2 | $25 mil | 0 | 2 | 4* |
+| Misil pesado | S | 4 | 4 | $50 mil | +1 | 4 | 3* |
+| Misil ligero | Q, GRAMO | 1 | 1 | $40 mil | -1 | 4 | 6 |
+| Misil mediano | Q, GRAMO | 2 | 2 | $60 mil | 0 | 6 | 5 |
+| Misil pesado | Q, GRAMO | 4 | 4 | $100 mil | +1 | 8 | 4 |
+| Misil ligero | X | 1 | 2 | $50 mil | -2 | 6 | 8 |
+| Misil mediano | X | 2 | 4 | $100 mil | -1 | 10 | 6 |
+| Misil, taquión | Q | 4 | 4 | $500 mil | 0 | - | - | Golpea al objetivo en la misma fase |
+
+| Tecnología | Guerra | Costo | Acceso | Fuego | Daños |
+|---|---|---|---|---|---|
+| Explosión AA* | - | 1 | $5 mil | -2 | ALTA/S | d8w/d6m/2d4m |
+| CHE* | - | 2 | $10 mil | 0 | En/L | d6+1s/d6+1w/d4+2m |
+| Submunición KE* | - | 2 | $20 mil | -1 | ALTO/L | d6+2s/d6+2w/d6+4w |
+| Nuclear de bajo rendimiento* | - | 2 | $500 mil | 0 | En/M | 2d6s/2d6w/2d6m |
+| Nuclear de alto rendimiento* | - | 4 | 1 millón de dólares | +1 | En/H | 2d6w/2d6m/2d6c |
+| Plasma* | F | 1 | $50 mil | -1 | En/L | d6+3w/d8+3w/d6+2m |
+| MRB (reacción masiva)* | D | 2 | $200 mil | 0 | En/M | 2d4+1s/2d4w/d8+1m |
+| Materia* | Un | 4 | 2 millones de dólares | +1 | En/SH | 3d6w/3d6m/2d6+2c |
+| Carga estelar* | D | 1 | $80 mil | -2 | En/L | 2d6w/2d6m/2d4c |
+| Explosión de Nova* | GRAMO | 2 | $500 mil | -1 | LI/H | 2d8w/2d6m/2d4c |
+| Punto Cero* | Q | 4 | 3 millones de dólares | 0 | En/SH | 3d8w/3d8m/3d6c |
+| Bomba nula* | X | 4 | 5 millones de dólares | -1 | En/SH | 4d6w/4d6m/4d6c |
+| Arma | Tecnología | Costo | Acceso | Notas |
+| Radar activo | - | $20 mil | 0 | Puede ser bloqueado por el ECM |
+| Búsqueda EM | - | $10 mil | 0 | La precisión cae a +2 Penalización de paso si el objetivo no es |
+| Búsqueda por infrarrojos | - | $10 mil | 0 | La precisión cae a +2 Penalización de paso si el objetivo no es IR |
+| Comando | - | $5 mil | +1 | Puede ser bloqueado por el ECM |
+| Homing masivo | GRAMO | $10 mil | -1 |
+| Probabilidad de IA | C | $20 mil | -2 |
+| Todos los sistemas de lanzamiento poseen una característica especial llamada | capacidad del sistema de lanzamiento, las armas medianas ocupan 2 |
+| capacidad, que indica cuántas municiones tiene el sistema | puntos, y Armas pesadas toma 3 puntos. Por ejemplo, |
+| puede llevar. Obviamente, un bastidor de misiles puede transportar muchos objetos pequeños | un portabombas (capacidad para 4) podría transportar 4 bombas ligeras, 2 |
+| misiles o algunos grandes. Generalmente, cada punto del casco dedica- | bombas medianas o 1 bomba pesada. |
+| acoplado a un sistema de lanzamiento proporciona de dos a cuatro puntos de capacidad | La mayoría de los sistemas de lanzamiento sólo se pueden recargar en un amigo- |
+| idad para artillería. Como diseñador, puedes optar por comprar | base o puerto. Incluso si un barco lleva misiles adicionales |
+| capacidad adicional para su sistema de lanzamiento asignando algo | en su espacio de carga, se necesita un largo y complicado EVA |
+| espacio extra en el casco y dinero para el sistema de lanzamiento. | procedimiento para maniobrar la artillería hasta su posición de disparo |
+| Los misiles, bombas y minas vienen en tres tamaños: ligeros, | ción. Recarga de bastidores de bombas, bastidores de misiles o municiones |
+| mediano y pesado. Las armas ligeras ocupan 1 punto del | celdas en espacio abierto obliga a la nave a evitar toda velocidad |
+
+| Arma | Casco tecnológico | Pow | Costo. | Acceso | Gama | Fuego | Daños | Modo |
+|---|---|---|---|---|---|---|---|---|
+| Estante de bombas SMP | - | 1 | 0 | $70 mil | -3 | 0 | ALTO/L | d6+2s/d6+2w/d6+4w | F (2) |
+| Estante de bombas de fusión | - | 1 | 0 | 1 millón de dólares | -1 | 0 | En/H | 2d6w/2d8m/2d6c | F (1) |
+| Estante de misiles CHE | S | 2 | 1 | $270 mil | 0 | * | En/L | d6+1s/d6+1w/d4+2m | F (4) |
+| Montaje de misiles | S | 10 | 1 | 1,6 millones de dólares | - | * | - | - | F |
+| Misiles SMP | -1 | * | ALTO/L | d6+2s/d6+2w/d6+4w | (10) |
+| Misiles AA | -2 | * | ALTA/S | d8w/d6m/2d4m | (10) |
+| Estante de misiles de plasma | F, GRAMO | 2 | 1 | $850 mil | -3 | * | En/L | d6+3w/d8+3w/d6+2m | F (8) |
+| Estante de misiles Matter | A, GRAMO | 2 | 1 | 4,2 millones de dólares | +1 | * | En/SH | 3d6m/2d6c/2d6+2c | F (2) |
+| Matriz de artillería | ! | 20 | 2 | 16 millones de dólares | - | * | - | - | F |
+| Misiles de plasma | -3 | * | En/L | d6+3w/d8+3w/d6+2m | (20) |
+| Misiles Materia | +1 | * | En/SH | 3d6m/2d6c/2d6+2c | (10) |
+| Minas MRB | -3 | 0 | En/M | 2d4+1s/2d4w/d8+1m | (10) |
+| Matriz Nova | G, C | 10 | 2 | 23,8 millones de dólares | -5 | * | LI/H | 2d8w/2d6m/2d4c | (40) |
+| cambios o maniobras durante 1d4 horas. | múltiples bastidores de misiles. |
+| Una excepción son los depósitos de bombas y los tubos de misiles | Tubo de misiles (PL 6): Este es un almacenamiento interno de misiles |
+| regla; se pueden recargar en el espacio, siempre y cuando la nave esté | e instalación de lanzamiento. Su capacidad básica es de doce y puede |
+| llevando municiones adicionales en un cargador interno. | Dispara una ronda de misil PER. Si bien su cadencia de tiro es inferior |
+| Por último, todo sistema de lanzamiento posee una tasa básica de | Respecto al portamisiles, el tubo de misil goza de una ventaja; |
+| fuego, que indica cuántas armas puede disparar, soltar, | se puede recargar en el espacio. |
+| o dispensar en una sola ronda. Un tubo de misil debe circular | Ordnance Cell Array (PL 7): este sistema es similar al |
+| a través del proceso de traer el próximo misil del | Células de lanzamiento verticales de los buques de guerra actuales. Cada misil es |
+| cargador al riel y luego dispararlo, pero un simple estante | precargado en una sola celda o recipiente; la matriz consta |
+| o sistema celular puede disparar varios misiles en el | de docenas de estos botes. Bombas, minas y misiles de |
+| mismo tiempo. | Se pueden transportar varios tamaños y ojivas como barco- |
+| Bomb Rack (PL 6): Como era de esperar, este sistema de lanzamiento | constructor crea conveniente, ofreciendo una gran flexibilidad táctica. |
+| Bahía de bombas (PL 6): La bahía de bombas tiene una capacidad de 40 | El fuselaje, motor, carcasa y diseño general del |
+| bombas ligeras, 20 medianas o 10 pesadas. Su capacidad puede ser | El arma está incluida en esta categoría. Sistemas de propulsión |
+| ampliado en 4 puntos (4 ligeros, 2 medianos o 1 pesado | rango desde prácticamente ninguno (bombas o minas) hasta sofisticado |
+| bomba) para cada punto adicional del casco asignado al sistema | dispositivos como el misil taquiónico. |
+| más allá de los 10 puntos de casco normalmente requeridos. | El tamaño del sistema de propulsión indica cuántos |
+| Minador (PL 6): Este sistema consta de dos o más | puntos de capacidad del sistema de lanzamiento que ocupa. Por ejemplo, un |
+| carriles mineros, aceleradores magnéticos de bajo Armas de energía diseñados para | bomba mediana requiere 2 puntos de capacidad, por lo que un portabombas |
+| desplegar un patrón de minas en un hexágono adyacente al | (capacidad 4) podría transportar dos bombas medianas. |
+| botadura del buque en una sola fase. A diferencia del lanzamiento de Otros | La calificación de la ojiva del sistema de propulsión describe |
+| armas, al menos diez minas (un solo patrón de mina) deben ser | el tamaño máximo de la ojiva que se le puede colocar |
+| desplegados para ser efectivos. | sistema de propulsión. Ojivas muy grandes y poderosas re- |
+| Dado que el minador también incluye maquinaria para su despliegue- | requieren Sistemas de propulsión pesados, mientras que las ojivas pequeñas re- |
+| ing las minas, tiene la mitad de la capacidad del sistema de lanzamiento Otros- | requiere luz Sistemas de propulsión. |
+| artículos de tamaño similar. | El sistema de propulsión del arma también proporciona una base |
+| Estante de misiles (PL 6): este es un sistema que puede contener ocho | calificación de precisión. Esto refleja el hecho de que los misiles pequeños son |
+| misiles ligeros, cuatro misiles medianos o dos misiles pesados. | generalmente más ágiles que los misiles grandes y, por tanto, más |
+| No se puede aumentar su capacidad, pero es bastante fácil de comprar | Es probable que golpee un objetivo que está tratando de no ser golpeado. |
 
 ## F, GRAMO
 
@@ -1555,7 +1049,45 @@ Ojivas La ojiva es el extremo Negocios de una bomba, mina o misil. Las ojivas va
 
 gy) y potencia de fuego (desde embarcaciones pequeñas hasta superpesadas) de la ojiva. Es la mejor indicación de cuán destructiva es la ojiva; una bomba ligera puede hacer estallar un vehículo o un edificio, mientras que una ojiva superpesada puede destruir barcos fortificados o ciudades enteras. El índice de daño del arma indica el daño infligido por un éxito de calidad Ordinario, Bueno o Asombroso en la tirada de ataque. AA Burst (PL 6): esta pequeña ojiva está diseñada para usarse contra embarcaciones pequeñas, misiles enemigos y vehículos. Puede dañar seriamente a un caza o un comerciante, pero es poco probable que cause daños significativos a un destructor o crucero. La ojiva consiste en una carga explosiva de alto poder explosivo y un chorro dirigido de metralla. La ráfaga AA es un arma de efecto de área. Puede dañar objetivos a decenas de metros de su punto de explosión. La calidad de la tirada de ataque indica qué tan cerca del objetivo estuvo el misil antes de detonar. CHE (PL 6): La ojiva convencional altamente explosiva puede destruir muchas naves pequeñas, pero sólo es útil en salvas o vuelos contra buques de guerra ligeros y medianos. Los buques pesados, como los acorazados, pueden ignorar el arma a pesar de su carga útil de cientos de kilos de explosivos químicos avanzados. La ojiva CHE es un arma de efecto de área. Submunición KE (PL 6): esta ojiva consta de un conjunto de docenas o cientos de dardos o varillas de acero de tungsteno, cada uno de ellos montado en pequeños motores de cohetes. Cuando el arma se acerca a su objetivo, la ojiva se divide en una letal lluvia de flechas metálicas de alta velocidad. La energía del impacto por sí sola puede vaporizar metros de armadura pesada. Cualquier objetivo Otros dentro de un radio de 200 metros del objetivo principal es atacado al mismo tiempo. Cada objetivo tiene sus propias tiradas de ataque y daño. Bomba nuclear de bajo rendimiento (PL 6): ligeramente más aceptable que la bomba H, la bomba nuclear de bajo rendimiento es un arma de fisión diseñada para "esfumarse" en una explosión de sólo 2 o 3 kilotones, en lugar de una de 30 o 40 kilotones que mata ciudades. Se trata todavía de una enorme cantidad de potencia de fuego, capaz de devastar el centro de una ciudad o una base militar. La bomba nuclear de bajo rendimiento es un arma de efecto de área. No olvides que el daño aumenta contra objetivos de resistencia inferior: la bomba nuclear inflige 2d6 m contra cosas como personas y automóviles dentro de su radio de explosión de 800 metros. Si bien la bomba nuclear de bajo rendimiento devastará un área de más de un kilómetro de diámetro, en una batalla espacial esto casi siempre significa que sólo una nave enemiga se ve afectada. En la escala de megametros de Combate, un solo hexágono tiene 1.000 kilómetros de diámetro. Bomba nuclear de alto rendimiento (PL 6): se trata de un monstruo de 1 megatón, una bomba de fusión que destruye ciudades cientos de veces más poderosa que el arma de bajo rendimiento. En el espacio abierto, es poco probable que más de una nave enemiga pueda verse afectada por una sola explosión. Sin embargo, una bomba nuclear de alto rendimiento acaba con las ciudades. Plasma (PL 7): La ojiva de plasma es una mejora de los explosivos avanzados del nivel de progreso anterior. Crea una explosión de plasma candente que puede hacer volar del cielo una pequeña nave como un caza con un solo disparo. MRB (PL 7): Esta ojiva utiliza una reacción de materia oscura para
 
-Tabla 5-11: Armas con efecto de área Progreso del arma Nivel 6: Era de fusión Orificio de hidrógeno Explosión AA CHE KE Nuclear de bajo rendimiento Nuclear de alto rendimiento Nivel de progreso 7: Era de gravedad Orificio de fusión Pistola de fuerza fuerte Pistola de antimateria Materia de plasma Reacción Materia Bomba Progreso Nivel 8: Era de energía Convertidor cinético de calibre cero Starload Nova Burst Nivel de progreso de punto cero Nivel 9: Edad de la materia Torpedo nulo Bomba nula
+### Tabla 5-11: Armas con efecto de área
+
+| Arma | Tipo | Ama | Bueno | Ordinario | Notas |
+|---|---|---|---|---|---|
+| Perforación de hidrógeno | viga | 100 metros | 200 metros | 300m | asistencia técnica |
+| Explosión AA | ojiva | 10m | 20m | 40m | asistencia técnica |
+| CHE | ojiva | 20m | 40m | 60m | asistencia técnica |
+| KE | ojiva | todos los objetivos dentro de 200 m atacados | asistencia técnica |
+| Bomba nuclear de bajo rendimiento | ojiva | 200 metros | 400m | 800m | Médico |
+| Bomba nuclear de alto rendimiento | ojiva | 5 kilómetros | 10 kilómetros | 20 kilómetros | SA |
+| Orificio de fusión | viga | 200 metros | 400m | 600m | asistencia técnica |
+| Arma de fuerza fuerte | viga | 150m | 300m | 600m | asistencia técnica |
+| Pistola de antimateria | proyecto | 100 metros | 200 metros | 300m | Médico |
+| Plasma | ojiva | 60m | 120m | 180m | asistencia técnica |
+| Reacción de la Materia | ojiva | 500m | 1 kilometro | 2 kilómetros | SA |
+| Bomba de Materia | ojiva | 10 kilómetros | 20 kilómetros | 40 kilometros | SA |
+| Diámetro cero | viga | 300m | 600m | 1 kilometro | Médico |
+| Convertidor cinético | proyecto | 200 metros | 400m | 800m | Médico |
+| Carga de estrellas | ojiva | 80m | 160m | 240m | asistencia técnica |
+| Explosión de Nova | ojiva | 1 kilometro | 2 kilómetros | 4 kilómetros | SA |
+| Punto Cero | ojiva | 20 kilómetros | 40 kilometros | 80 kilometros | SA |
+| Torpedo nulo | torpedo | 100 metros | 200 metros | 300m | asistencia técnica |
+| Bomba nula | ojiva | 30 kilómetros | 60 kilometros | 100 kilometros | SA |
+| Crea una poderosa ola de energía. Está más concentrado | crucero, y puede dañar seriamente a buques de guerra más grandes. El |
+| que una explosión nuclear, pero es menos probable que cause colisiones no deseadas. La explosión de nova es un arma de efecto de área. |
+| daño lateral. Consulte la TABLA 5-11 para obtener detalles sobre el efecto de área | Punto Cero (PL 8): Esta bomba crea un efecto espontáneo |
+| armas. | fluctuación cuántica de energía similar al Big Bang, aunque |
+| Materia (PL 7): La ojiva de materia se llama más propiamente | en menor escala. Puede devastar miles de cuadrados |
+| la ojiva de antimateria; contiene uno o dos kilos de antimateria | kilómetros en un instante. La ojiva puede no alcanzar su objetivo |
+| en una botella magnética y detona simplemente apagándola | por decenas de kilómetros y aún infligir daños letales a ro- |
+| el recipiente de contención. Es equivalente a una bomba nuclear. | destruir objetivos como fortalezas orbitales o vehículos fuertemente blindados |
+| Starload (PL 8): El más poderoso de los puramente tácticos | acorazados. |
+| ojivas, la carga estelar es alimentada por una reacción de materia oscura | Bomba nula (PL 9): esta horrible arma simplemente genera |
+| similar al del estallido de reacción de materia de PL 7. Sin embargo, | crea un campo en el que todos los enlaces atómicos dejan de existir. Todo |
+| Está miniaturizado para aplicaciones más pequeñas. Como la mayoría de las guerras- | la materia cercana se reduce a polvo subatómico. |
+| Nova Burst (PL 8): Esta ojiva crea una increíble | El último componente de un misil o mina es su sistema de guía.
+| fuerza gravitacional para comprimir la materia normal en una | tem. ¿Cómo reconoce su objetivo y qué controla su objetivo?
+| masa creíblemente densa, que luego explota en un colosal det- | ¿detonación? El único efecto de juego que proporciona un sistema de guía |
+| onación. Una sola explosión de nova puede paralizar a un destructor o | es un modificador final de la precisión del arma. La mayoría de los misiles |
 
 Tipo
 
@@ -1635,7 +1167,40 @@ Rayo tractor (PL 7) Una aplicación de tecnología de gravedad avanzada, el rayo
 
 Aceleración objetivo 0,25 Mpp 0,5 Mpp 1 Mpp 2 Mpp 3 Mpp
 
-Tabla 5-12: Torpedos y armas especiales Tecnología de armas Costo de potencia del casco. Acc Range Modo de daño por fuego Nivel de progreso 6: Fusion Age Cable Gun S 1 $150 K +1
+### Tabla 5-12: Torpedos y armas especiales
+
+| Costo de potencia del casco tecnológico. | Acceso | Fuego de campo | Daños | Modo |
+|---|---|---|---|---|
+| Pistola de cables | S | 2 | 1 $150 mil +1 | 0 | -- | Especial | F |
+| Pico de RF | - | 3 | 6 $500 mil | -2 | 1/2/3 Es/SH 3d4s/3d6s/2d4w**** | F |
+| Inductor térmico | X | 8 | 12 | $4 M +3@ 2/4/6 En/M | d6w/d6+1w/d6m | F |
+| Anulador Térmico | X | 15 | 20 $35 M +3@ 2/4/6 En/M | d6+3w/d6+4w/d6+2m F |
+| Haz de tractor | GRAMO | 2 | 5 $500 mil | -1 | 4/2/8 -- | Especial | F |
+| Convertidor de masa | METRO | 4 | 6 | 1 millón de dólares | -4 | 2/4/6 En/S | d6+3s/d6+3w/d6+2m | F |
+| Materia Torpedo | D | 5 | 7 $600 mil | 0 | 2/4/8 En/M | 2d6s/2d6w/d6+3m | F |
+| Torpedo de plasma | F | 10 | 15 $10 Millones | +1 | 6/3/9 Es/H | 3d6s/3d6w/d8+3m | F |
+| Torpedo electromagnético | Q | 3 | 5 $450 mil | -2 | 5/2/10 En/M | d6+3s/2d8s/d4+2w | F |
+| Inhibidor neuronal | P | 12 | 20 $40 millones | 0 | 1/2/3 ** | 1d12s/1d12s/1d20s** | F |
+| Activador de fisión | METRO | 25 | 75 $80 Millones | 0 | 8/4/12 Es/H | 2d4m/2d4+2m/3d4+2c F |
+| Transportador de embarque | T | 6 | 9 | 10 millones de dólares | -- | 6/4/8 -- | Especial | F |
+| Torpedo nulo | X | 18 | 25 $50 Millones | +2 | 6/3/15 Es/SH 2d8w/2d8m/2d8c | F |
+| Organizador de código | METRO | 25 | 50 $100 Millones +1 | 8/04/12 ***/H | d8m/d8+4m/d8c | F |
+| 6x | 4 Mpp | Si el objetivo es demasiado grande para afectarlo, pero el barco armado con un tractor |
+| 7x | 5 Mpp | Si no es así, el rayo tractor atraerá al barco que dispara hacia su |
+| 8x | 6 Mpp | objetivo, no al revés. Si ambos barcos pueden verse afectados- |
+| 9x | 7 Mpp | ed, el barco más pequeño se mueve hacia el más grande. Tenga en cuenta que el |
+| 10x | 8 Mpp | La aceleración aplicada por el rayo tractor siempre tira del |
+| Por ejemplo, un destructor monta tres rayos tractores, por lo que | un asteroide o planeta conveniente. |
+| puede afectar a un objetivo de hasta 150 puntos de casco. Se encuentra | Una vez que el rayo tractor logra un impacto exitoso, permanece |
+| una nave de exploración de 30 puntos de casco e intenta capturarla. El | “bloqueado” y ejerce su aceleración en cada fase hasta que |
+| La capacidad del tractor es 5 veces la necesaria para sostener al explorador, por lo que | El barco que dispara suelta el rayo o el objetivo escapa. Un objetivo |
+| el destructor puede aplicar una aceleración de 3 Mpp al | barco puede librarse de un rayo tractor con una tripulación exitosa |
+| enviar cada fase. Dependiendo del poder del enemigo del explorador | verificación (o tirada de habilidad del piloto contra Operaciones de vehículos-espacio - |
+| motores, esto puede ser suficiente para frenarlo, detenerlo por completo, | embarcación) siempre que la prueba iguale o supere el éxito |
+| y comenzar a tirar de él. Naves sin compensación de aceleración | grado de la tirada de ataque del rayo tractor. En palabras Otros, |
+| sación puede ser destruida instantáneamente por la aceleración extrema- | obtiene un éxito Bueno en un control de tripulación para sacudirse un tractor |
+| ción impartida si el operador no tiene cuidado; consulte “Aceleración | haz que obtuvo un impacto Bueno cuando capturó inicialmente el |
+| Mata” en el Capítulo 4. | buque objetivo. |
 
 -Especial
 
@@ -1693,7 +1258,41 @@ Los grandes buques de guerra son inversiones extremadamente valiosas, tanto en t
 
 Chaff (PL 6) El sistema chaff, que consta de varios pequeños lanzacohetes colocados alrededor del barco, despliega una nube de millones de pequeñas tiras o partículas de metal para interferir con los sensores activos y los buscadores de misiles. El despliegue de paja añade un +1 Penalización de paso a las tiradas de ataque con misiles enemigos y a las comprobaciones de sensores durante tres rondas de acción completa. Las naves enemigas equipadas con detectores de masas pueden ignorar el efecto de la paja.
 
-Tabla 5-13: Sistemas defensivos Progreso tecnológico del sistema Nivel 6: Era de fusión Chaff Control de daños Señuelo Drone C Jammer Pantalla magnética S Casco sigiloso S Nivel de progreso 7: Red de defensa de la era de la gravedad
+### Tabla 5-13: Sistemas defensivos
+
+| Casco | Poder | Costo | Cobertura | Notas |
+|---|---|---|---|---|
+| paja | - | 1 | 0 | $50 mil | 100 puntos de casco | +1 paso a misiles, sensores |
+| Control de daños | - | 5% | 1/casco | $100 mil/casco | -- | -2 Bonificación de paso para comprobaciones de daños |
+| Dron señuelo | C | 1 | 1 | $600 mil | 100 puntos de casco | 3 drones |
+| Bloqueador | - | 1 | 1 | $100 mil | 100 puntos de casco | +2 pasos a misiles, sensores |
+| Pantalla magnética | S | 4 | 2 | $400 mil | 20 puntos de casco | +2 pasos a misiles, proyectiles |
+| Casco sigiloso | S | 2 | 1 | $500 mil | 50 puntos de casco | +2 pasos para las comprobaciones de sensores enemigos |
+| Red de Defensa | C, F | 2 | 2 | $500 mil | 100 puntos de casco | Especial |
+| Inductor de deflexión | GRAMO | 1 | 2 | $500 mil | 20 puntos de casco | +2 Penalización de paso a ataques enemigos |
+| Pantalla de partículas | Q | 2 | 3 | $750 mil | 20 puntos de casco | Agrega armadura d4 (LI), d4 (HI), d6 (En) |
+| Escudo sigiloso | METRO | 2 | 2 | 2 millones de dólares | 100 puntos de casco | +3 pasos para misiles, sensores |
+| Codificador Stardrive | GRAMO | 1 | 2 | $200 mil | 100 puntos de casco | +4 Penalización de paso para controlar detectores |
+| Bots de reparación | C | 5% | 1/casco | $500 mil/casco | -- | -3 Bonificación de paso para comprobaciones de daños |
+| Generador | -- | 1 | 2 | $500 mil | 20 puntos de casco | Se requiere condensador o compilador |
+| Condensador | -- | 1 | - | $100 mil | -- | 10 puntos de escudo |
+| Compilador de energía | X | 1 | - | $500 mil | -- | 20 puntos de escudo |
+| Unidad de camuflaje | METRO | 1 | 5 | 1 millón de dólares | 100 puntos de casco +4 pasos a misiles, sensores |
+| Desplazador | T | 2 | 3 | 1 millón de dólares | 20 puntos de casco +3 Penalización de paso a ataques enemigos |
+| Matriz de reparación de nanitos | C | 5% | 2/casco | 1 millón de dólares/casco | -- | -5 Bonificación de paso para controles de daños |
+| Si el buque cambia de rumbo o de velocidad después del despliegue | incluye sistemas redundantes, modos de control de víctimas para |
+| paja, sale de la nube y pierde los beneficios defensivos. | maquinaria mayor, compartimentación extra, material de reparación |
+| El sistema chaff incluye suficientes cohetes para 4 chaff | als y sistemas de monitoreo avanzados en todo el |
+| lanzamientos (aunque es fácil comprar múltiples sistemas de paja | barco. Equipar un barco con sistemas de control de daños re- |
+| y aumentar esto a 8, 12 o más lanzamientos de paja). | requiere el 5 por ciento del casco, pero el barco gana un paso –2 |
+| Dado que los barcos grandes requieren más paja para una cobertura completa- | bonificación a todas las comprobaciones de daño que debe realizar. En Otros |
+| edad, el sistema es ineficaz si no hay al menos uno | En otras palabras, es más probable que mantenga sus sistemas operativos |
+| lanzador PER 100 puntos del casco del barco a cubrir. Para | bajo intenso fuego enemigo. |
+| lanzamientos, tendría que comprar 10 dispensadores de paja. | Se trata de un pequeño vehículo no tripulado equipado con electricidad |
+| Control de daños (PL 6) | obliga a cualquier nave enemiga a realizar una verificación de sensores o |
+| Si bien todos los barcos están equipados con algún control de daños | rompe Rastrear en el barco de lanzamiento. Si el enemigo tiene éxito, |
+| disposiciones, este sistema representa un sofisticado y | el dron es detectado e ignorado. Si el enemigo falla, |
+| enfoque completo para compensar los daños. ITIN- | todavía puede disparar al barco de lanzamiento, pero hay un 50-50 |
 
 ## C, F
 
@@ -1831,7 +1430,21 @@ A veces denominados “C-4” (comando, comunicación, computadoras y control), 
 
 Cabina (PL 6) La cabina es el centro neurálgico de un barco pequeño. Por medio punto de casco incluye un puesto de mando o asiento. El tamaño máximo de una cabina es de cuatro asientos o puestos (2 puntos de casco). Cualquier cosa más grande que eso se describe con mayor precisión como una pequeña plataforma de mando. Si bien es teóricamente posible que un barco con varios cientos de puntos de casco sea controlado por un solo piloto en una cabina de un solo asiento mediante una gran automatización, en la práctica una cabina es demasiado pequeña para manejar algo mayor que 50 puntos de casco. La cabina incluye una escotilla (o dosel deslizante) para acceder, pero no es una esclusa de aire completa. También proporciona soporte vital a sus ocupantes, con una duración máxima de tres días. Los barcos que requieran más Resistencia que eso deben comprar un sistema de soporte vital normal.
 
-Tabla 5-14: Sistemas de comando, control y comunicación Progreso del sistema Nivel 6: Cabina de la era de la fusión Cubierta de comando Puente de bandera Torre de lanzamiento Transceptor láser Transceptor de radio Progreso Nivel 7: Transceptor de masa de la era de la gravedad Conjunto de comunicaciones Drivesat Nivel de progreso 8: Transceptor de propulsión de la era de la energía Progreso del transceptor psiónico Nivel 9: Ansible de la era de la materia
+### Tabla 5-14: Sistemas de comando, control y comunicación
+
+| Sistema | Tecnología | Casco | Poder | Costo | Notas |
+|---|---|---|---|---|---|
+| Cabina | - | 0,5 | 0 | $100 mil | Estación PER (máximo 3 estaciones) |
+| Cubierta de mando | - | 2+ | 0 | $300 mil/casco | +1 punto de casco PER 100 casco (máx. 10) |
+| Puente de la bandera | - | 3 | 0 | $50 mil | - |
+| Torre de Lanzamiento | - | 2 | 0 | $50 mil | - |
+| Transceptor láser | - | 1 | 1 | $50 mil | - |
+| Transceptor de radio | - | 0,5 | 1 | $25 mil | - |
+| Transceptor masivo | GRAMO | 1 | 1 | $100 mil | - |
+| Conjunto de comunicaciones Drivesat | G, C | 150 | 300 | $2000 Millones | comunicaciones interestelares |
+| Transceptor de accionamiento | GRAMO | 2 | 2 | $200 mil | - |
+| Transceptor psiónico | P | 1 | 2 | $150 mil | - |
+| Ansible | METRO | 4 | 4 | 1 millón de dólares | comunicaciones interestelares instantáneas |
 
 tecnología
 
@@ -1871,7 +1484,7 @@ m
 
 comunicaciones interestelares instantáneas
 
-Tecnología: el tipo de tecnología necesaria para construir este dispositivo. Casco: el número de puntos de casco requeridos por el sistema. Energía: La cantidad de puntos de energía requeridos por una unidad de este tipo. Costo: El costo de una unidad de este sistema, o PER punto de casco de un sistema basado en un porcentaje del casco. Algunos sistemas son más caros en instalaciones más grandes.
+Tecnología: el tipo de tecnología necesaria para construir este dispositivo. Casco: el número de puntos de casco requeridos por el sistema. Energía: La cantidad de puntos de energía requeridos por una unidad de este tipo. Costo: El costo de una unidad de este sistema, o punto de casco PER de un sistema basado en un porcentaje del casco. Algunos sistemas son más caros en instalaciones más grandes.
 
 Cubierta de mando (PL 6)
 
@@ -1883,9 +1496,28 @@ Los portaaviones y barcos Otros que transportan un gran número de embarcaciones
 
 Puente de bandera (PL 6) Muchos cruceros blindados, acorazados, portaaviones o acorazados están equipados con un puente de bandera, una plataforma de mando con instalaciones para coordinar las acciones de una flota entera de barcos. El puente de bandera elimina las penalizaciones aplicadas a las pruebas de habilidades tácticas por parte del comandante del escuadrón o almirante de la flota debido a limitaciones de mando y control; ver el Capítulo 3.
 
-Los sistemas de monitoreo Computer Core Basic, Navegación y los controles de ingeniería requieren cierta cantidad de soporte informático. Cualquier barco equipado con una cabina de mando o una cubierta de mando posee computadoras integradas con el mínimo de potencia informática necesaria para pilotar el barco. Sin embargo, es posible instalar computadoras que mejoren sustancialmente las capacidades Combate del barco. Puede instalar un núcleo de computadora de Ordinario o de mejor calidad si así lo desea. Es necesario un núcleo de computadora para soportar computadoras de control dedicadas, que son computadoras que mejoran el funcionamiento de un sistema en particular. Por ejemplo, se puede instalar una computadora de control de fuego para proporcionar bonificaciones a las tiradas de ataque con un sistema de armas en particular. La calidad de la computadora de control no puede exceder la calidad del núcleo de la computadora del barco. En palabras de Otros, si desea instalar un Bueno
+Los sistemas de monitoreo Computer Core Basic, Navegación y los controles de ingeniería requieren cierta cantidad de soporte informático. Cualquier barco equipado con una cabina de mando o una cubierta de mando posee computadoras integradas con el mínimo de potencia informática necesaria para pilotar el barco. Sin embargo, es posible instalar computadoras que aumenten sustancialmente las capacidades Combate de la nave. Puede instalar un núcleo de computadora de Ordinario o de mejor calidad si así lo desea. Es necesario un núcleo de computadora para soportar computadoras de control dedicadas, que son computadoras que mejoran el funcionamiento de un sistema en particular. Por ejemplo, se puede instalar una computadora de control de fuego para proporcionar bonificaciones a las tiradas de ataque con un sistema de armas en particular. La calidad de la computadora de control no puede exceder la calidad del núcleo de la computadora del barco. En palabras de Otros, si desea instalar un Bueno
 
-Tabla 5-14a: Progreso del sistema de computadoras Nivel 6: Núcleo de computadora Fusion Age, Control de fuego Ordinario, Control de sensor Ordinario, Control táctico Ordinario, Control de navegación Ordinario, Nivel de progreso 7: Computadora de ataque Gravity Age Núcleo de computadora, Control de fuego Bueno, Control de sensor Bueno, Control táctico Bueno, Control de navegación Bueno, Nivel de progreso Bueno 8: Núcleo de computadora de la era energética, control de incendios Asombroso, control de sensor Asombroso, control táctico Asombroso, control de navegación Asombroso, Asombroso
+### Tabla 5-14a: Computadoras
+
+| Sistema | Tecnología | Casco | Poder | Costo | Notas |
+|---|---|---|---|---|---|
+| Núcleo de computadora, Ordinario | C | 1 | 1 | $500 mil/casco | 1 requerido PER 200 puntos de casco |
+| Control de incendios, Ordinario | C | 1 | 0 | $200 mil/casco* | -1 Bonificación de paso al arma dedicada |
+| Control de sensores, Ordinario | C | 1 | 0 | $200 mil/casco* | -1 Bonificación de paso al sensor dedicado |
+| Control táctico, Ordinario | C | 1 | 0 | $100 mil | -1 Bonificación de paso a comprobaciones de habilidades tácticas |
+| Control de navegación, Ordinario | C | 1 | 0 | $500 mil | -1 Bonificación de paso a controles de maniobra |
+| Computadora de ataque | C | 0,5 | 0 | $200 mil | -1 Bonificación de paso a tiradas de ataque |
+| Núcleo de computadora, Bueno | C | 1 | 1 | 1 millón de dólares/casco | 1 requerido PER 200 puntos de casco |
+| Control de incendios, Bueno | C | 1 | 0 | $300 mil/casco* | -2 Bonificación de paso al arma dedicada |
+| Control de sensores, Bueno | C | 1 | 0 | $300 mil/casco* | -2 Bonificación de paso al sensor dedicado |
+| Control táctico, Bueno | C | 1 | 0 | $200 mil | -2 Bonificación de paso a comprobaciones de habilidades tácticas |
+| Control de navegación, Bueno | C | 1 | 0 | $750 mil | -2 Bonificación de paso a controles de maniobra |
+| Núcleo de computadora, Asombroso | C | 1 | 1 | 2 millones de dólares/casco | 1 requerido PER 200 puntos de casco |
+| Control de incendios, Asombroso | C | 1 | 0 | $300 mil* | -3 Bonificación de paso al arma dedicada |
+| Control de sensores, Asombroso | C | 1 | 0 | $300 mil* | -3 Bonificación de paso al sensor dedicado |
+| Control táctico, Asombroso | C | 1 | 0 | $400 mil | -3 Bonificación de paso a comprobaciones de habilidades tácticas |
+| Control de navegación, Asombroso | C | 1 | 0 | 1 millón de dólares | -3 Bonificación de paso a controles de maniobra |
 
 tecnología
 
@@ -1945,7 +1577,7 @@ $2 M/casco $300 K* $300 K* $400 K $1 M
 
 * PER punto del casco del sistema al que está dedicada la computadora.
 
-Tecnología: el tipo de tecnología necesaria para construir este dispositivo. Casco: el número de puntos de casco requeridos por el sistema. Energía: La cantidad de puntos de energía requeridos por una unidad de este tipo. Costo: El costo de una unidad de este sistema, o PER punto de casco de un sistema basado en un porcentaje del casco.
+Tecnología: el tipo de tecnología necesaria para construir este dispositivo. Casco: el número de puntos de casco requeridos por el sistema. Energía: La cantidad de puntos de energía requeridos por una unidad de este tipo. Costo: El costo de una unidad de este sistema, o punto de casco PER de un sistema basado en un porcentaje del casco.
 
 sistema de control de fuego para los cañones de fuerza potente de su barco, debe instalar un núcleo de computadora Bueno o Asombroso; un núcleo de computadora Ordinario simplemente no está a la altura.
 
@@ -1993,7 +1625,7 @@ Drivesat Comm Array (PL 7) Esta enorme instalación proporciona a las naves o es
 
 Transceptor de propulsión (PL 8) El transceptor de propulsión es el primer dispositivo de comunicación interestelar práctico para naves pequeñas o colonias de segunda categoría. Al igual que el conjunto de comunicaciones drivesat de PL 7, puede enviar una señal a una distancia de hasta 50 años luz. La señal tarda 11 horas en llegar a la estación de destino, que también debe estar equipada con un transceptor de accionamiento. El transceptor de propulsión no puede transmitir ni recibir mientras la nave se encuentre en el espacio de propulsión. El transceptor de accionamiento es un orden de magnitud más barato y más pequeño que su predecesor.
 
-Transceptor psiónico (PL 8) Este dispositivo consta de una serie especial de dispositivos de mejora psi que hacen posible que un caminante mental con la habilidad amplia Telepatía se comunique a distancias interestelares. La estación receptora también debe tener un telépata equipado con un transceptor psiónico, o el caminante mental de la nave estará perdiendo el tiempo. Monitorear el transceptor en busca de mensajes entrantes requiere la atención del caminante mental, aunque puede realizar las tareas Otros siempre que use los auriculares que lo conectan con el transceptor. Cuidar las frecuencias psiónicas cuenta
+Transceptor psiónico (PL 8) Este dispositivo consta de una serie especial de dispositivos de mejora psi que hacen posible que un caminante mental con la habilidad amplia Telepatía se comunique a distancias interestelares. La estación receptora también debe tener un telépata equipado con un transceptor psiónico, o el caminante mental de la nave estará perdiendo el tiempo. Monitorear el transceptor en busca de mensajes entrantes requiere la atención del caminante mental, aunque puede realizar tareas Otros siempre que use los auriculares que lo conectan con el transceptor. Cuidar las frecuencias psiónicas cuenta
 
 Consejo de diseño: sensores Compre al menos dos sistemas de comunicaciones y tres sistemas de sensores, incluso para barcos bastante pequeños. No ocupan muchos puntos del casco y es fundamental tener redundancia para estos sistemas vitales. Los grandes buques de guerra deberían reservar de 10 a 20 puntos de casco para sistemas de mando y sensores para garantizar que tengan la capacidad de luchar eficazmente en una batalla espacial campal. Los buques de guerra más pequeños, como corbetas y destructores, pueden salirse con la suya con 5 o 6 puntos de mando y sistemas de sensores en el casco.
 
@@ -2009,7 +1641,45 @@ Ansible (PL 9) El ansible es un dispositivo que induce cambios precisos de estad
 
 Cualquier astronauta experimentado puede decirle que ganar la batalla de la información es tan crucial como ganar la batalla del armamento. Sin información Bueno sobre el rumbo, la velocidad y las capacidades del enemigo, incluso el sistema de armas más poderoso es prácticamente inútil. Es muy recomendable comprar al menos un equipo de radar aéreo/espacial. Este es el mínimo necesario para practicar Navegación de forma segura en áreas muy transitadas y regiones peligrosas como cinturones de asteroides o sistemas de anillos. Si estás construyendo algo más militante que un transportador de minerales, probablemente quieras equipar tu nave con los mejores sensores que el dinero pueda comprar. Ver al enemigo antes de que él te vea a ti es simplemente una ventaja demasiado significativa como para escatimar en sensores.
 
-Tabla 5-15: Progreso técnico del sistema de sensores Nivel 6: Era de la fusión Radar aéreo/espacial Detector EM Video de alta resolución Detector IR Progreso de la sonda Ladar Nivel 7: Detector de masas de la era de la gravedad G Sonda de radar multibanda, avanzada C Red remota C Matriz de detección de unidades de espectroanalizador
+### Tabla 5-15: Sensores
+
+| Poder | Costo | Tipo | Gama | Arcos | Orientación |
+|---|---|---|---|---|---|
+| Radar aéreo/espacial | - | 0,5 | 1 | $20 mil | Activo | 5/10/20 mm | 1 | Normales |
+| Detector electromagnético | - | 0,5 | 0 | $20 mil | Pasivo | 10/20/60 mm | 2 | +3 Penalización de paso |
+| Vídeo de alta resolución | - | 0,5 | 0 | $10 mil | Pasivo | 1/2/10mm | 1 | +2 Penalización de paso |
+| Detector de infrarrojos | - | 0,5 | 0 | $20 mil | Pasivo | 2/4/8 mm | 1 | +2 Penalización de paso |
+| Ládar | - | 1 | 1 | $100 mil | Activo | 5/10/30mm | 1 | Normales |
+| Sonda | - | 1 | 0 | $200 mil | Remoto | Especial | 4 | - |
+| Detector de masas | GRAMO | 1 | 1 | $100 mil | Pasivo | 10/30/50mm | 2 | +1 Penalización de paso |
+| Radar multibanda | - | 0,5 | 1 | $50 mil | Activo | 10/20/40 mm | 1 | Normales |
+| Sonda avanzada | C | 1 | 0 | $500 mil | Remoto | Especial | 4 | - |
+| Red Remota | C | 2 | 2 | $750 mil | Remoto | Especial | 4 | - |
+| Espectroanalizador | - | 1 | 1 | $100 mil | Activo | Especial | 1 | Ninguno |
+| Matriz de detección de unidades | G, C | 80 | 120 | 1.000 millones de dólares | Pasivo | Especial | 4 | Ninguno |
+| Matriz pasiva CE | C | 2 | 1 | 1 millón de dólares | Pasivo | 30/60/100 mm2 | Normales |
+| Detector de conducción | GRAMO | 4 | 4 | $500 mil | Pasivo | Especial | 4 | Ninguno |
+| Madar | GRAMO | 1 | 1 | $200 mil | Activo | 20/30/40 mm 1 | Normales |
+| Radar multifase | Q | 1 | 0 | $250 mil | Activo | 20/40/80 mm 1 | Normales |
+| Esfera de omnisciencia | P | 3 | 1 | 2 millones de dólares | Pasivo | 50 milímetros | 4 | Normales |
+| Arcos de sensores | al mismo tiempo. En la mayoría de las batallas espaciales, esto no es un problema.
+| Los sistemas de sensores tienen "arcos de fuego", muy parecidos a las armas: for- | ter en cualquier momento. En grandes batallas, la capacidad de seguimiento aumenta |
+| sala, babor, estribor y popa. Sin embargo, muchos sensores pueden | viene crucial. |
+| cubrir más de un arco a la vez. Por ejemplo, la unidad | Si un sistema de sensores está actualmente al máximo en su seguimiento |
+| el detector cubre automáticamente los cuatro arcos del sensor; es un | capacidad y aparecen nuevos objetivos, el operador del sensor debe |
+| instalación omnidireccional que no requiere ningún tipo de especial | elija si "soltará o no Rastrear" en un existente |
+| disposiciones para lograr una cobertura de 360 ​​grados de la superficie | contacto para intentar una verificación del sensor con uno de los nuevos |
+| zona de redondeo. | objetivos. Consulte el Capítulo 2: Combate avanzado para obtener más detalles. |
+| Ampliación de la cobertura de un sistema de sensores desde un arco | La capacidad de seguimiento es una función del nivel de progreso en |
+| a múltiples arcos es simple: simplemente compre más. Cuatro sistemas de 1 arco | en que está construido el barco (¡no el sensor!) y la calidad |
+| Los sistemas proporcionan cobertura de los cuatro arcos del sensor, al igual que dos 2- | idad de cualquier ordenador de control de sensores dedicado asignado al |
+| sistemas de arco. Obviamente, un sistema de sensores no puede generar una sensación | sistema. |
+| o compararlo con un objetivo que esté fuera de su arco actual, por lo que | Por ejemplo, un PL 7 se envía con un sensor de calidad Bueno CON- |
+| es una idea de Bueno para brindar amplia cobertura de búsqueda | La computadora de control puede Rastrear 20 objetivos simultáneamente. |
+| radares y receptores de amenazas. | Un constructor naval puede aumentar la capacidad de seguimiento de su |
+| Capacidad de seguimiento | a 6 objetivos con ese sensor, pero si el constructor naval instala 4 |
+| A menos que se indique lo contrario en la descripción del sistema, todos los sensores | Detectores EM, aumenta la capacidad de seguimiento del barco a |
+| sistemas tienen una capacidad limitada para Rastrear múltiples objetivos | 24 objetivos con el detector EM. |
 
 ## G, C
 
@@ -2091,7 +1761,13 @@ Detector EM (PL 6) El detector electromagnético es un conjunto de antenas dise�
 
 Ládar (PL 6)
 
-Tabla 5-16: Capacidad de seguimiento PL
+### Tabla 5-16: Capacidad de seguimiento
+
+| ES | Ninguno | O | GRAMO | Un |
+|---|---|---|---|---|
+| PL 6 | 5 | 10 | 20 | 40 |
+| PL 7 | 10 | 20 | 40 | ilimitado |
+| PL 8 | 20 | 40 | 80 | ilimitado |
 
 ## PL 6
 
@@ -2145,51 +1821,43 @@ Hangar (PL 6) El hangar es una instalación interna de atraque, lanzamiento, alm
 
 Revista (PL 6) El hecho de que un portaaviones embarque a 50 cazas armados con bombas de materia no significa que haya más bombas de materia por ahí para que los cazas se rearmen y ataquen de nuevo. Los transportistas cuyas naves embarcadas dependen de municiones o misiles lanzados requieren grandes almacenes de municiones para sostener cualquier tipo de hostilidades prolongadas. Cada punto de casco gastado en cargadores puede almacenar 4 puntos de tamaño de misiles, minas o bombas.
 
-Tabla 5-17: Sistema de Hangares e Instalaciones Misceláneas
+### Tabla 5-17: Hangares e instalaciones diversas
 
-tecnología
-
-Nivel de progreso 6: Era de fusión Esclusa de aire Brigada Espacio de carga Bahía de carga Bodega de carga Abrazaderas de atraque Cápsula de escape Colectores de combustible Hangar Sección de laboratorio Revista Cápsula de reentrada Enfermería Taller Nivel de progreso 7: Edad de gravedad Acumulador S Módulo de embarque de carga automática Sistema de evacuación Módulos adicionales Instalación de fabricación Sistema de transferencia de artillería Estabilizador de suite de seguridad
-
-## G, X
-
-Nivel de progreso 8: Bahía Holofield de la era energética
-
-## Q, C
-
-Bahía de nanofabricación
-
-## S, C
-
-casco
-
-poder
-
-Costo
-
-Tipo
-
-Notas
-
-0,5
-
-$10 mil $20 mil $10 mil $20 mil $50 mil $50 mil $50 mil $100 mil $100/25 mil* $100 mil $50 mil $5 mil $150 mil $20 mil
-
-Alojamiento en hangar. Carga Carga Carga Hangar Hangar Combustible Hangar Alojamiento Varios. Hangar varios. Varios.
-
-Libre con cubierta de mando o alojamiento para la tripulación PER 4 prisioneros PER 24m3 PER 50m3 PER 100m3 PER Capacidad de 10 puntos de casco Capacidad de 10 hombres PER Capacidad de puntos de casco PER 4 puntos de tamaño de artillería transportada 2 tripulantes 4 camas -
-
-5%
-
-1/casco
-
-$40 K $30 K $200 K $250 K $50 K $200 K $150 K $200 K $200 K/casco
-
-Hangar de carga eléctrica Hangar Hangar Misc. Motor de comando de hangar
-
-tiendas 10 puntos de energía PER 6 puntos de casco de carga atendidos 10 capacidad de tropas 4 botes salvavidas de 10 hombres 2 botes salvavidas de 10 hombres PER 40 puntos de casco protegidos Agrega 1 a la clase de maniobrabilidad
-
-$100 mil $500 mil
+| 98 | Sistema | Tecnología | Casco | Poder | Costo | Tipo | Notas |
+|---|---|---|---|---|---|---|---|
+| Esclusa de aire | - | 1 | 0 | $10 mil | Hangar | Gratis con cubierta de mando o alojamiento para la tripulación |
+| Bergantín | - | 2 | 0 | $20 mil | Acomodación. | PER 4 prisioneros |
+| Espacio de carga | - | 1 | 0 | $10 mil | Carga | PER 24m3 |
+| Bahía de carga | - | 2 | 0 | $20 mil | Carga | PER 50m3 |
+| Bodega de carga | - | 3 | 0 | $50 mil | Carga | PER 100m3 |
+| Abrazaderas de acoplamiento | - | 2 | 0 | $50 mil | Hangar | PER Capacidad de 10 puntos de casco |
+| Cápsula de escape | - | 1 | 0 | $50 mil | Hangar | Capacidad para 10 personas |
+| Colectores de combustible | - | 2 | 0 | $100 mil | Combustible | - |
+| Hangar | - | 1 | 0 | $100/25 mil* | Hangar | PER capacidad del punto del casco |
+| Sección de laboratorio | - | 2 | 0 | $100 mil | Acomodación. | - |
+| Revista | - | 1 | 0 | $50 mil | Varios. | PER 4 puntos de tamaño de artillería transportada |
+| Cápsula de reentrada | - | 0,5 | 0 | $5 mil | Hangar | 2 tripulantes |
+| Enfermería | - | 2 | 0 | $150 mil | Varios. | 4 habitaciones |
+| Taller | - | 2 | 1 | $20 mil | Varios. | - |
+| Acumulador | S | 1 | 0 | $40 mil | Poder | almacena 10 tomas de corriente |
+| Autocarga | - | 1 | 1 | $30 mil | Carga | PER 6 puntos de carga en el casco atendidos |
+| Módulo de embarque | - | 2 | 0 | $200 mil | Hangar | Capacidad para 10 tropas |
+| Sistema de evacuación | - | 4 | 0 | $250 mil | Hangar | 4 botes salvavidas de 10 plazas |
+| Vainas adicionales | - | 1 | 0 | $50 mil | Hangar | 2 botes salvavidas de 10 plazas |
+| Instalación de fabricación | - | 4 | 2 | $200 mil | Varios. | - |
+| Sistema de transferencia de artillería- | 2 | 2 | $150 mil | Hangar | - |
+| Suite de seguridad | - | 1 | 1 | $200 mil | comando | PER 40 puntos del casco protegidos |
+| Estabilizador | G, X | 5% | 1/casco | $200 mil/casco | Motor | Agrega 1 a la clase de maniobrabilidad |
+| Bahía de Holofield | Q, C | 1 | 1 | $100 mil | Varios. |
+| Bahía de Nanofabricación | S, C | 4 | 4 | $500 mil | Varios. |
+| PASO 12: VARIOS | literas, abrazadera de atraque, hangar, bodega de carga o artillería |
+| INSTALACIONES | Costo de 1 punto de casco y 10 K cada uno. |
+| categoría. Algunos de estos pueden ser cruciales para el fracaso del barco. Piense en el bergantín como alojamiento para pasajeros indeseables.
+| sión; un carguero pesado debería comprar su espacio de carga primero, y | sensores. Cada dos puntos del casco dedicados al bergantín proporcionan |
+| su armamento defensivo en segundo lugar. | celdas individuales para cuatro personas, más un puesto de seguridad, |
+| también incluye las bombas y controles necesarios para presurizar | Un punto de casco ofrece espacio suficiente para 10 metros cúbicos |
+| ize o despresurice la habitación. Un barco incluye automáticamente | de carga, o una unidad de carga. Un compartimento de 2 metros de altura, 2 |
+| una esclusa de aire libre PER cubierta de mando, alojamiento para la tripulación, tripulación | metros de ancho y 2,5 metros de profundidad serían lo típico para 1 |
 
 Varios. Varios.
 
@@ -2343,69 +2011,42 @@ Digamos que John ha decidido que su juego ALTERNITY se basará en un gran crucer
 
 Paso 1: Selección de clase y casco John decide que el crucero pesado es un casco Bueno para trabajar. El casco del crucero pesado tiene 400 puntos de casco, más 80 adicionales para economía de escala. El crucero pesado tiene un casco medio y una dureza media. Cuesta 100 millones de créditos.
 
-Tabla 5-18: Ubicaciones de impacto y límites de zona Tipo de casco
-
-Puntos del casco
-
-Zonas
-
-Límite de zona
-
-Caza Caza Caza Caza Cortador Explorador Escolta
-
-Destructor de fragatas corbeta
-
-80 (+8) 120 (+12) 160 (+16)
-
-Crucero ligero Crucero pesado Crucero blindado
-
-320 (+64) 400 (+80) 480 (+96)
-
-Crucero de batalla Acorazado Portaaviones de flota
-
-960 (+288) 1200 (+360) 1600 (+480)
-
-Dreadnought Super-portaaviones Super-dread. barco fortaleza
-
-3200 (+1600) 4000 (+2000) 6400 (+3200) 12000 (+6000)
-
-Lanzamiento Courier Trader Carguero rápido Transporte rápido
-
-Transportista Industrial
-
-72 (+7) 96 (+10)
-
-Carguero mediano Clipper Transporte mediano
-
-240 (+48) 360 (+72) 480 (+96)
-
-Transporte pesado cisterna
-
-720 (+216) 840 (+252) 1280 (+384)
-
-Transporte de colonias en supercarguero
-
-2400 (+1200) 3600 (+1800)
-
-Cascos militares para embarcaciones pequeñas
-
-Barcos ligeros
-
-Barcos Medianos
-
-Barcos pesados
-
-Barcos superpesados
-
-Cascos civiles para embarcaciones pequeñas
-
-Barcos ligeros
-
-Barcos Medianos
-
-Barcos pesados
-
-Barcos superpesados
+### Tabla 5-18: Ubicaciones de impacto y límites de zona
+| Tipo de casco | Puntos del casco | Zonas | Límite de zona |
+|---|---|---|---|
+| Luchador | 10 | 2 | 7 |
+| Luchador de huelga | 15 | 2 | 10 |
+| Cortador | 20 | 2 | 14 |
+| Explorador | 30 | 4 | 10 |
+| Escolta | 40 | 4 | 14 |
+| Corbeta | 80 (+8) | 6 | 22 |
+| Fragata | 120 (+12) | 6 | 33 |
+| Destructor | 160 (+16) | 6 | 44 |
+| Crucero ligero | 320 (+64) | 8 | 75 |
+| Crucero pesado | 400 (+80) | 8 | 96 |
+| Crucero blindado | 480 (+96) | 8 | 115 |
+| Crucero de batalla | 960 (+288) | 12 | 156 |
+| Acorazado | 1200 (+360) | 12 | 195 |
+| Transportista de flotas | 1600 (+480) | 12 | 260 |
+| Acorazado | 3200 (+1600) | 20 | 480 |
+| Superportador | 4000 (+2000) | 20 | 600 |
+| Súper pavor. | 6400 (+3200) | 20 | 960 |
+| Barco fortaleza | 12000 (+6000) | 20 | 1800 |
+| Lanzamiento | 8 | 2 | 5 |
+| Mensajero | 16 | 2 | 10 |
+| Comerciante | 24 | 4 | 8 |
+| Carguero rápido | 32 | 4 | 11 |
+| Transporte rápido | 40 | 4 | 14 |
+| Transportista | 72 (+7) | 6 | 20 |
+| Industriales | 96 (+10) | 6 | 27 |
+| Carguero mediano | 240 (+48) | 8 | 58 |
+| Clíper | 360 (+72) | 8 | 87 |
+| Transporte medio | 480 (+96) | 8 | 115 |
+| Petrolero | 720 (+216) | 12 | 117 |
+| Forro | 840 (+252) | 12 | 137 |
+| Transporte pesado | 1280 (+384) | 12 | 208 |
+| Supercarguero | 2400 (+1200) | 20 | 360 |
+| Transporte de colonias | 3600 (+1800) | 20 | 540 |
 
 Paso 2: armadura
 
@@ -2431,7 +2072,7 @@ Paso 4: motores
 
 Las monturas son bastante económicas en cuanto a espacio y potencia, y proporcionan al Resistencia un arma de gran potencia de fuego. En una montura fija, cada torpedo sólo requiere 8 puntos de casco y cuesta 7,5 millones de créditos. Utiliza 15 puntos de poder. Finalmente, John arma el Resistencia con una batería secundaria de 18 cañones de masa en torretas triples. Un cañón de una sola masa requiere 2 puntos de casco, 3 puntos de energía y 300.000 créditos. Montar las armas en torretas eleva esta cifra a 3 puntos de casco y 375.000 cada uno. Sin embargo, el soporte triple significa que tres armas cuentan por dos en términos de espacio y dinero, por lo que sólo doce de las dieciocho aumentan los requisitos de espacio y los costos de construcción de la nave. La batería de cañones de masa tiene un total de 30 puntos de casco, 54 de potencia y 4,5 millones. John distribuye las torretas alrededor del barco de modo que tres cubran cada uno los arcos de babor cero y estribor cero, tres cada uno cubran los arcos de babor y estribor, cuatro avancen y dos a popa. (Cada torreta se orienta en tres arcos). El cañón masivo debería servir bien contra misiles enemigos y embarcaciones pequeñas. El armamento puede ser un poco liviano para un crucero pesado, pero recordarás que el Resistencia cuenta con soporte vital completo y reciclaje, y es rápido. Combate tiene un papel secundario, ¡pero cuidado con el torpedo de plasma! John se da cuenta de que en este momento se está quedando sin energía. Necesitará más para luchar eficazmente contra el barco. Regresa al Paso 3 y aumenta la central eléctrica de 72 puntos de casco a 84 puntos de casco.
 
-Paso 8: Defensas John necesita darle al Resistencia algunas defensas de alta tecnología. La pantalla de partículas es probablemente la mejor opción en PL 7, pero John decide que requiere demasiada potencia y espacio, y se conforma con el inductor de desviación como defensa principal de su nave. Dado que el Resistencia es un crucero de 400 puntos de casco, necesita 20 inductores. Esto requiere 20 puntos de casco y 40 puntos de potencia y cuesta 10 millones. También equipa el barco con un bloqueador. El bloqueador requiere 4 puntos de casco y 4 puntos de energía para cubrir un barco de 400 puntos de casco; El costo del sistema es de 400.000. A John le gustaría controlar algún daño, pero tiene sistemas Otros que debe abordar primero. De todos modos, se supone que todos los barcos tienen algún grado de control integral de daños.
+Paso 8: Defensas John necesita darle al Resistencia algunas defensas de alta tecnología. La pantalla de partículas es probablemente la mejor opción en PL 7, pero John decide que requiere demasiada potencia y espacio, y se conforma con el inductor de desviación como defensa principal de su nave. Dado que el Resistencia es un crucero de 400 puntos de casco, necesita 20 inductores. Esto requiere 20 puntos de casco y 40 puntos de potencia y cuesta 10 millones. También equipa el barco con un bloqueador. El bloqueador requiere 4 puntos de casco y 4 puntos de energía para cubrir un barco de 400 puntos de casco; El costo del sistema es de 400.000. A John le gustaría controlar los daños, pero tiene sistemas Otros que debe abordar primero. De todos modos, se supone que todos los barcos tienen algún grado de control integral de daños.
 
 Paso 9: Comando, Computadoras y Comunicaciones John comienza comprando una plataforma de comando para el Resistencia, uno de los pocos sistemas obligatorios para una nave estelar. Esto requiere 6 puntos de casco y cuesta 1,8 millones. A continuación, John compra el mejor conjunto de computadoras disponible. Elige un núcleo de computadora Bueno, computadoras de control de fuego Bueno para cada una de las tres baterías de armas, tres computadoras con sensores Bueno, una computadora de control táctico Bueno y una computadora de control Bueno Navegación (tenga en cuenta que John no sabe exactamente cuánto costarán las computadoras de control de sensores hasta que realmente compre los sensores de su nave; completamos esto temprano).
 
