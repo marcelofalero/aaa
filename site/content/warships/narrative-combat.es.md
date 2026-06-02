@@ -1,0 +1,216 @@
++++
+title = "Combate narrativo"
+description = "Reglas para personajes que sirven a bordo de naves capitales durante el combate."
+weight = 40
++++
+# Capítulo 3: Combate narrativo
+
+Hasta ahora, hemos hablado del barco Combate como una simulación de Combate desarrollada en una hoja de mapa de hexágonos. Ahora vamos a centrarnos en Combate desde el punto de vista de un jugador Personaje.
+
+## Héroes en combate
+
+En los dos capítulos anteriores, hemos utilizado el término "verificación de tripulación" como un término general para cualquier tipo de verificación de habilidades que los cientos o miles de tripulantes anónimos a bordo de un buque de guerra importante podrían realizar en el transcurso de un Combate espacial. Los personajes controlados por el jugador pueden realizar pruebas de habilidad contra sus propias habilidades en posiciones clave de batalla en lugar de confiar en la habilidad general de la tripulación. En general, puede ignorar el procedimiento Tirada de Acción normal para caracteres en Combate para un Combate usando los sistemas presentados en el Capítulo 1: Combate básico y el Capítulo 2: Combate avanzado. Si bien la ronda de acción de ALTERNIDAD consta de cuatro fases de 3 segundos, los personajes que están al mando de puestos en un buque de guerra importante no pueden realizar tres, cuatro o cinco acciones en cada ronda de juego. Realizan pruebas de habilidades en lugar de tiradas de ataque, pruebas de sensores, pruebas de tácticas, etc., pero sus pruebas de acciones individuales simplemente no son significativas en el curso general de la batalla. Si esto parece denigrar el papel de los personajes en la pelea, míralo de esta manera. Manejar una estación de armas o una estación de timón durante una batalla presenta al Personaje una prueba de habilidad compleja que debe resolverse para maniobrar el barco, disparar un arma, reparar daños o lo que sea. Un Personaje en la consola de armas principal del barco no se limita a presionar el botón tan rápido como puede. Ella está constantemente calculando soluciones de control de fuego, monitoreando la recarga de armas o los procedimientos de recarga, compensando los daños a bordo que podrían derribar algunos de los soportes de armas bajo su control, eligiendo fuentes de entrada de sensores que le brinden la mejor vista de la batalla para su trabajo y tratando de prestar atención a cualquier nueva orden de disparo que pueda emitirse. Ella está realizando una serie de pequeñas tareas para realizar ese ataque con esa arma o batería.
+
+Estaciones Personaje Cuando comienza la batalla, el Director de Juego debe determinar dónde se encuentra cada Personaje controlado por el jugador y qué va a intentar hacer cada Personaje. Claramente, una Personaje encarcelada en el bergantín del barco no puede tomar ninguna medida para ayudar a sus compañeros a disparar los cañones del barco. Las posibles estaciones incluyen las siguientes:
+
+• Comando
+
+• Puente
+
+• Información Combate
+
+• Computadoras
+
+• Comunicaciones
+
+• Sensores
+
+• Armas y Defensas
+
+• Ingeniería
+
+• Reparación
+
+• Seguridad Interna
+
+• Vuelo
+
+• Grupo de embarque
+
+Comando La estación de mando decide a qué enemigos enfrentarse, dónde atacarlos y cuándo interrumpir la acción. La mayor parte del personal de mando está ubicado en la cubierta de mando, el puente, la cubierta de mando auxiliar, el puente de bandera o la torre de lanzamiento del barco. Oficiales: Los oficiales de mando incluyen al oficial táctico (un oficial encargado de supervisar los detalles del enfrentamiento), el comandante de ataque (el oficial a cargo de las operaciones de vuelo) y el capitán del barco. Si el barco es el buque insignia del escuadrón, el comodoro o almirante y cualquier oficial de su personal se consideran oficiales de mando. Incluso en un acorazado o un barco fortaleza, el número de oficiales de mando es muy limitado. Sólo el capitán y uno o dos delegados elegidos son responsables del mando en la batalla. Alistados: Los alistados están presentes según sea necesario para apoyar a los oficiales de mando. Por lo general, dos o tres mensajeros, operadores de comunicaciones y técnicos de computación ayudan al oficial táctico o al oficial de ataque vigilando varias redes de comunicaciones de batalla y enlaces de datos. Alguien tiene que mantener la conversación radiofónica clara.
+
+Puente En muchos barcos, el puente y la cubierta de mando son el mismo espacio. Los personajes en el puente (o los que tienen responsabilidades en el puente) se preocupan principalmente por la Navegación segura y las maniobras del barco. Supervisan continuamente la posición del barco, la posición de cualquier obstáculo o peligro (planetas, por ejemplo) y el rumbo y rumbo actual del barco. Oficiales: El oficial de cubierta es el oficial a cargo del puente. Ella decide hacia dónde se dirige el barco y responde a los requisitos del capitán y del oficial táctico. El oficial de cubierta suele contar con la asistencia de un oficial de cubierta subalterno. En realidad, el barco es “dirigido” por un oficial de timón, oficial de mando, piloto u operador de timón que responde ante el oficial de cubierta. El astrogator proporciona información de navegación al oficial de cubierta. En los buques de guerra pequeños, el oficial de cubierta es probablemente el oficial táctico. El operador del timón puede ser un oficial de vuelo certificado o puede ser una persona alistada que maniobra el barco por orden del oficial de mando. Alistado: el operador del timón y el operador del timón a sotavento en realidad conducen el barco si el barco no tiene un piloto oficial. Los mensajeros y operadores de comunicaciones ayudan a mantener el puente en contacto con las estaciones vitales Otros del barco. El astrogador suele tener un pequeño equipo de intendentes (navegantes) para Rastrear la posición del barco. El contramaestre de guardia es la persona alistada que mantiene el orden en el puente y supervisa a los alistados subalternos bajo el mando del oficial de cubierta.
+
+Información Combate En muchos buques de guerra, la cubierta de mando y el centro de información Combate están ubicados en el mismo espacio, junto con el puente. Por ejemplo, la cubierta de mando de un destructor normalmente incluye estaciones de mando, Navegación, sensores y armas, todo en la misma área general del barco. El centro de información Combate alberga la mayoría de las estaciones de sensores, armas y comunicaciones del barco. Oficiales: El oficial de información Combate se asegura de que el centro funcione como se supone que debe hacerlo y asesora al oficial táctico o al capitán según sea necesario. El oficial de inteligencia analiza los buques enemigos y asesora al oficial táctico sobre sus capacidades. Dependiendo del tamaño del barco, los oficiales de sensores y armas pueden supervisar a los operadores de sus sistemas desde el centro de información Combate. Alistados: El centro de información Combate está repleto de consolas y estaciones de control para la mayoría de los sistemas de sensores, armas, defensa y comunicaciones de la nave. Un operador de sensores o un operador de armas se encarga de cada estación.
+
+Computadoras El núcleo de la computadora del barco y sus computadoras de control generalmente están manejados en batalla por comptechs bajo la supervisión de un oficial de informática. Se aseguran de que las computadoras funcionen con la máxima eficiencia e inician o defienden contra la guerra de datos según sea necesario. El oficial informático puede estar estacionado en el puente o en la cubierta de mando.
+
+Comunicaciones Los operadores de comunicaciones bajo la supervisión del oficial de comunicaciones manejan la mayoría de los sistemas de comunicación a bordo del barco. Las estaciones de comunicaciones generalmente están ubicadas en el centro de información Combate (o plataforma de comando), por lo que el oficial de comunicaciones informa al oficial de información o al oficial táctico de Combate. Los oficiales y técnicos de comunicaciones se aseguran de que el barco mantenga comunicaciones y fuentes de datos claras y seguras con todos los barcos amigos en el área. También supervisan los intentos de interferir las comunicaciones enemigas.
+
+Sensores Cada sistema de sensores a bordo está a cargo de un operador de sensores que depende del oficial de sensores (u oficial científico). Las estaciones de sensores suelen estar ubicadas en el centro de información Combate.
+
+Armas y defensas Los miembros de la tripulación que sirven las armas y defensas del barco trabajan en uno de dos lugares: la cubierta de mando del barco o los soportes de armas. Oficiales: El oficial táctico dirige las actividades de los miembros de la tripulación que manejan las estaciones centrales de armas. La mayoría de las guerras
+
+envía los controles de armas esclavas a una estación central cerca del capitán del barco y su equipo de mando. Sin embargo, los montajes de armas grandes suelen tener tripulaciones asociadas que disparan según las instrucciones de la estación central. Estas tripulaciones de montura también pueden disparar de forma independiente si la cubierta de mando del barco queda destruida o las comunicaciones y los controles de disparo remoto quedan inutilizados por daño enemigo. Por lo tanto, la mayoría de las monturas principales tienen un capitán de montura o un comandante de batería que comanda a la tripulación local. Alistados: los artilleros alistados suelen ocuparse de las estaciones de control de armas en la cubierta de mando o en la montura. Una montura grande puede requerir una docena o más de especialistas altamente capacitados para operar en una batalla.
+
+Ingeniería Los timoneles o pilotos del barco normalmente “controlan” los motores del barco de forma remota a través de sus propias estaciones en el puente o cubierta de mando. El control está subordinado desde las consolas locales que gobiernan el funcionamiento exacto de cada motor individual a la consola de ingeniería principal en el centro de control de ingeniería. Luego el control del motor pasa al nivel de comando. Es responsabilidad del departamento de ingeniería mantener los motores y las plantas de energía del barco disponibles para el equipo de mando para que el barco pueda ejecutar el fuego de armas y las maniobras necesarias en la batalla. Oficiales: un oficial de ingeniería suele estar presente en la cubierta de mando o en el puente para monitorear los tableros de estado de los sistemas y manejar órdenes que son más complejas que simples maniobras. Ella responde ante el oficial de cubierta o el oficial táctico. El centro neurálgico de la sección de ingeniería del barco es el centro de control de ingeniería o ingeniería principal, una estación de comando que controla y monitorea todas las plantas de energía, soporte vital, sistemas de propulsión, motores y sistemas de ingeniería Otros. Por último, los barcos grandes pueden tener estaciones de control más pequeñas para sistemas importantes, como motores individuales o centrales eléctricas. Oficiales de ingeniería, conducción y auxiliares supervisan estas estaciones. Alistados: Los alistados son similares a lo que se describió anteriormente para los oficiales. Por lo general, los especialistas alistados están ubicados cerca de los paneles de control locales de los sistemas con los que están familiarizados.
+
+Reparación Si todo funciona correctamente y el barco no sufre daños, la mayoría de los miembros de la tripulación no tienen mucho que hacer en una batalla. Desafortunadamente, este rara vez es el caso. Los equipos de reparación están listos para reparar las grietas del casco, ayudar a los heridos, combatir incendios, corregir fallas del sistema, reparar desvíos y, en general, mantener la nave en condiciones de estar en condiciones de espacio el mayor tiempo posible bajo el fuego enemigo. El ingeniero jefe supervisa los esfuerzos de control de daños a través de su representante, el oficial de control de daños o su asistente. Cada grupo de reparación está bajo el Liderazgo de un oficial de reparación, generalmente un oficial de cubierta o un oficial de suministros, ya que estos trabajos no requieren su atención en la batalla. Docenas de soldados (una vez más, en gran parte formados por personal de cubierta, suministros y apoyo) completan el grupo, con un puñado de especialistas en reparaciones que se capacitan exclusivamente en procedimientos de control de daños.
+
+Los portaaviones y los barcos de asalto que transportan escuadrones de pequeñas naves de ataque o cazas poseen secciones o departamentos de vuelo. El oficial de ataque suele ser un oficial de alto rango del escuadrón embarcado. Ella maneja la torre de vuelo y dirige las operaciones de las naves de ataque y de combate que están alejadas del barco. El oficial de ataque responde ante el capitán, al igual que el oficial táctico. Un equipo de oficiales subalternos y miembros de la tripulación alistados en la torre o en la cubierta de mando del barco proporcionan control del tráfico, comunicaciones de ataque y mando y control de patrulla. Obviamente, cualquier tripulación de vuelo involucrada en ataques aéreos, intercepciones o patrullas Combate también está de servicio. Hay tres misiones básicas para las naves pequeñas: atacar objetivos enemigos, proporcionar cobertura de combate a las fuerzas de ataque amigas y proporcionar cobertura de combate al portaaviones para derrotar los ataques enemigos. Cualquier fuerza de ataque o vuelo de combate normalmente responde a un líder de vuelo, el oficial superior en el aire. Los transportistas pueden tener cientos de tripulantes y oficiales empleados en la cubierta del hangar. Durante la batalla, reabastecen de combustible, rearman o reparan las naves según sea necesario, asegurándose de que las pequeñas naves del portaaviones estén donde puedan hacer el máximo Bueno en lugar de estar embotelladas dentro de la nave.
+
+Seguridad interna y grupos de abordaje Las tropas o infantes de marina del barco normalmente son responsables de brindar seguridad interna y defender el barco de los atacantes enemigos. Los equipos de seguridad o destacamentos de tropas suelen proteger las áreas más importantes del barco contra posibles grupos de abordaje, al tiempo que reservan varios equipos de reacción rápida para sellar rápidamente los puntos problemáticos. Si el capitán anticipa la oportunidad de abordar un barco enemigo, el grupo de abordaje se reúne cerca de las esclusas de aire o de las cápsulas de abordaje del barco.
+
+o éxito Asombroso, confiere un –1, -2 o –3 Bonificación de paso a la prueba de tripulación de su equipo para esa ronda. Un Personaje puede afectar sólo a los miembros de la tripulación asignados a una tarea o estación en particular. A efectos del juego, puedes definir esto como una ronda de tirada de dado PER: una tirada de ataque, prueba de sensores, prueba de reparación, prueba de maniobra o cualquier tirada similar. Por ejemplo, el capitán de un barco podría usar su habilidad Liderazgo para ayudar al equipo del puente en maniobras evasivas, dirigir el fuego de una batería o supervisar una revisión de reparación, pero no podría hacer las tres cosas al mismo tiempo.
+
+Ventaja Si estás jugando con personajes de ALTERNITY, haz que el personaje al mando de la flota realice una prueba de habilidad de Tácticas—espacio Combate en lugar de una prueba de tripulación.
+
+Distribución de energía Un Personaje que maneja la consola de ingeniería en el puente o en ingeniería principal puede intentar aumentar la cantidad de energía disponible para el barco en la fase de energía actual. Está llevando la planta de energía al límite de su rendimiento, cortando selectivamente los sistemas no vitales y utilizando su conocimiento de la planta de ingeniería del barco para exprimir hasta el último bit de energía. El Personaje puede intentar una operación del sistema: prueba de habilidades de ingeniería. (No olvide las penalizaciones por barcos sacudidos, inutilizados o averiados). Aumenta los puntos de poder totales del barco en un 10, 20 o 30 por ciento para un éxito Ordinario, Bueno o Asombroso.
+
+Sensores Obviamente, un Personaje que maneje uno de los sensores de la nave (o la consola de control de sensores principal) puede sustituir su operación del sistema: verificación de habilidades de sensores por la verificación de la tripulación de la nave al realizar una verificación de sensores con ese sistema.
+
+Tareas de Personaje
+
+movimiento
+
+Si piensas en una ronda típica del espacio Combate como docenas de tareas que varios miembros de la tripulación de la nave deben realizar, entonces verás que un grupo de personajes controlados por el jugador tienen que elegir qué tareas exigen su atención personal. Un equipo de personajes altamente cualificados puede luchar contra un barco mucho mejor que incluso una tripulación de primera, al tomar el control de los trabajos más importantes del barco.
+
+Un Personaje manejando la consola de navegación o el timón de la nave puede sustituir una prueba de maniobra de Operaciones del vehículo—nave espacial por una prueba de maniobra. Si el Personaje vuela un caza monoplaza, puede usar esta habilidad para tiradas de ataque, comprobaciones de sensores y comprobaciones de la tripulación del Otros.
+
+La habilidad Liderazgo
+
+Un Personaje que maneje la consola de armas de la nave puede usar su propia operación del sistema: habilidad de armas en lugar del número de verificación de la tripulación para todos los disparos de esa arma. Normalmente, un operador de armas o un capitán de montura puede obtener esta bonificación: un Personaje que trabaja como oficial táctico del barco está demasiado ocupado para disparar armas él mismo. En el lado receptor, los personajes que tripulan barcos en batalla tienen una probabilidad Bueno de ser heridos o asesinados por el enemigo.
+
+En lugar de realizar una prueba práctica realizando pruebas de habilidad basadas en sus propias habilidades de Operación del sistema o Operación del vehículo, un Personaje podría usar la habilidad Liderazgo para coordinar los esfuerzos de los personajes secundarios que en realidad están disparando los cañones o maniobrando la nave. El Personaje en cuestión realiza una prueba de habilidad del Liderazgo; en un Ordinario, Bueno,
+
+Ataques
+
+fuego. Cuando la nave de los personajes es reducida a átomos por una bomba de materia bien colocada o por un impacto de calibre cero, es probable que alguien resulte herido. Consulte “Lesiones y muerte”, más adelante en este capítulo.
+
+Reparaciones Los personajes que manejan la consola de ingeniería en el puente o la cubierta de comando pueden reparar el daño del Aturdimiento o volver a poner en funcionamiento un sistema inutilizado en la fase de reparación con una prueba exitosa de operación del sistema (habilidad de ingeniería). Un éxito de Ordinario, Bueno o Asombroso repara 1, 2 o 3 puntos de daño de Aturdimiento. Los personajes estacionados en ingeniería principal, el centro de control de daños de la nave o los equipos de reparación de la nave pueden reparar daños Aturdimiento, daños Herida o volver a poner en funcionamiento sistemas inutilizados con una prueba exitosa de habilidad de reparación o jurado de Ciencia técnica. Un éxito de Ordinario, Bueno o Asombroso repara 1, 2 o 3 puntos de daño.
+
+Las acciones de embarque de Órdenes Especiales, mientras que Raro, están hechas para personajes. Al liderar un grupo de abordaje o repeler a los atacantes, las habilidades personales de Combate de un Personaje se convierten en los activos más importantes a su disposición. Un Personaje a cargo de un grupo de abordaje o detalle de seguridad puede usar su habilidad de comando Tácticas (infantería Combate o Liderazgo) para agregar un –1, –2 o –3 Bonificación de paso a la verificación de la tripulación de abordaje Combate de su bando para un éxito de Ordinario, Bueno o Asombroso. A opción del Personaje, puede aplicar un +1, +2 o +3 Penalización de paso a la verificación de la tripulación Combate de abordaje del enemigo. Esto aumenta las pérdidas enemigas infligidas por las tropas bajo su mando o reduce las bajas de las tropas amigas. Si el Personaje no está en una posición de mando, puedes asumir que vale el doble de puntos de abordaje que un soldado armado y blindado de manera similar. Quizás prefieras esbozar un breve escenario para que los personajes lo interpreten y basar el éxito o el fracaso de la acción de abordaje en el éxito o el fracaso del encuentro de los personajes.
+
+Lesiones y muerte ¿Qué sucede cuando seis personajes jugadores se encuentran entre los mil miembros de la tripulación de un acorazado que sufre graves daños? Presumiblemente, decenas o cientos de tripulantes del barco podrían haber resultado heridos o muertos durante la batalla. ¿Cómo se determina si los personajes se encontraban entre esas desafortunadas víctimas?
+
+Pérdidas de tripulación En general, no es necesario realizar un seguimiento exacto de las pérdidas de tripulación. Es razonable suponer que un barco reducido a aproximadamente la mitad de sus puntos Mortal ha sufrido varias bajas, algunas de las cuales están heridas y otras están muertas. Sin embargo, si es importante adivinar cuántos miembros de la tripulación
+
+estás siendo asesinado o herido por fuego enemigo, utiliza las siguientes pautas. Primero, divida la tripulación en cuatro grupos: 10 por ciento, 20 por ciento, 30 por ciento y 40 por ciento. A continuación, asigne estos números a las cuatro pistas de daños del barco: Aturdimiento, Herida, Mortal y crítico, respectivamente. Por ejemplo, un crucero ligero tiene una tripulación total de 240 marineros. De ellos, 24 están en el Aturdimiento Rastrear; 48 en el Herida Rastrear; 72 en el Mortal Rastrear; y 96 en el crítico Rastrear. Las casillas marcadas con el daño Rastrear causan un número proporcional de pérdidas de tripulación. Un crucero ligero tiene 40 Aturdimiento, 40 Herida, 20 Mortal y 10 puntos críticos. Esto significa que cada caja Aturdimiento "vale" 0,6 bajas de tripulación, cada caja Herida vale 1,2 bajas, cada caja Mortal 3,6 bajas y cada caja crítica 9,6 bajas para un crucero ligero con una tripulación de 240 hombres. Si el barco pierde 10 puntos Herida y 5 puntos Aturdimiento, puedes asumir que alrededor de 15 (12+3) miembros de la tripulación han resultado bajas. Finalmente, se puede suponer que aproximadamente la mitad de todas las víctimas mueren inmediatamente, una cuarta parte están gravemente heridas y requieren atención inmediata, y una cuarta parte tienen heridas leves y pueden esperar atención médica durante un breve período. Para continuar con nuestro ejemplo, se podrían suponer 7 muertos, 4 gravemente heridos y 4 con heridas leves. La tasa de mortalidad es alta porque los efectos de las armas antibuque en los miembros de la tripulación que se encuentran cerca del lugar del impacto suelen ser bastante espantosos. Las pérdidas sufridas por la tripulación no tienen ningún efecto en el juego a menos que así lo requieran resultados específicos en la tabla de ubicación de impactos. En general, las penalizaciones de pasos para barcos sacudidos, inutilizados y averiados reflejan pérdidas crecientes de tripulación entre los efectos Otros. Estas directrices se proporcionan sólo como punto de información.
+
+Personajes en peligro Si no quieres mantener Rastrear la ubicación exacta de cada jugador Personaje a bordo o la ubicación exacta de todo el fuego enemigo entrante, simplemente puedes usar esta regla. Cada vez que el barco marca daños en su Rastrear, existe la posibilidad de que un Personaje a bordo sufra daños. Cada jugador tira un d20 para determinar si su Personaje está en peligro por el impacto. En barcos más grandes, las probabilidades de que un impacto particular ponga en peligro el Personaje son muy pequeñas.
+
+Tabla 3–1: Peligros aleatorios (d20) Buque en peligro en… Clase Aturdimiento Wnd Mor Pequeño 1–4 1–6 1–8 Ligero 1–3 1–4 1–6 Mediano 1–2 1–3 1–4 Pesado 1–2 1–3 S-Pesado 1 1–2
+
+Crítico 1–12 1–8 1–6 1–4 1–3
+
+Por ejemplo, si un Personaje está a bordo de un destructor (un barco ligero) que sufre daño Mortal, está en peligro por el daño con una tirada de 1 a 6 en un d20. En un acorazado (un
+
+barco pesado) está en peligro sólo por el daño Mortal con una tirada de 1 a 3 en un d20. Los personajes en peligro de daño tiran dotes de personalidad y comparan los resultados con la siguiente tabla. ¿Por qué una hazaña de personalidad? En este nivel, la cuestión de si el Personaje se encuentra en el camino del rayo de plasma entrante es una cuestión de pura suerte, y la Personalidad mide la suerte tan bien como cualquier atributo heroico.
+
+Tabla 3–2: Lesión Personaje PER Hazaña Asombroso Bueno Ordinario Fallo Crítico. fracaso
+
+Seguro Ninguno Ninguno 1d6s 1d8w 1d6m
+
+Vulnerable Ninguno 1d4s 1d8s 1d12w 1d8m
+
+Considere que este daño es de bajo impacto, alto impacto o energía según el arma que causó el golpe. La potencia de fuego del ataque es Bueno. Los personajes asegurados están atados a sus asientos y protegidos por sofás de aceleración blindados. Los personajes vulnerables son aquellos que intentan moverse por el barco durante la pelea. Esto no significa que la gente sobreviva habitualmente a los impactos directos de pesados ​​rayos de plasma. No lo hacen. Pero el pesado rayo de plasma no apuntaba al Personaje que está en peligro por el ataque, sino a su nave. Las personas que se encuentran en las proximidades corren peligro por descompresión explosiva, metralla voladora, explosiones, fallos catastróficos del sistema y Otros otros peligros similares. Los golpes directos se manejarían mediante las reglas normales de mejora de daños descritas en el Capítulo 1: Combate básico.
+
+Personajes en la estación Si prefieres ser más preciso sobre cuándo y dónde un Personaje podría resultar herido durante la batalla, consulta las reglas de daño del sistema en el Capítulo 2: Reglas avanzadas. Determina qué estación o sistema está tripulado por cada Personaje y en qué sección o zona de la nave se encuentra ese sistema. Cuando ese sistema o ubicación es impactado, los personajes están en peligro, tal como se describe en la sección anterior. Por ejemplo, todos los personajes podrían estar al mando de la cubierta de mando de un crucero, que está ubicada en la sección central delantera del barco. Cuando la sección FC es golpeada y el mazo de mando queda expuesto a una posible prueba de daño del Sistema, los personajes corren peligro por el daño y deben realizar pruebas de dotes de Personalidad como se describe en la sección anterior.
+
+Rescatar Generalmente es aconsejable rescatar una embarcación averiada o destruida antes de que más daños hagan que el rescate sea imposible. Rescatar o abandonar el barco es una orden especial. Se necesita un poco de tiempo para llegar al sistema de escape del barco (si lo hay) y salir de los restos del naufragio:
+
+Tabla 3–3: Tiempos de rescate Clase Pequeña Liviana Mediana Pesada Súper pesada
+
+Tiempo de rescate Misma ronda 1d4 rondas 1d6+1 rondas 2d6 rondas 3d6 rondas
+
+Las cifras de la TABLA 3-3 representan una evacuación de la mayoría de los miembros de la tripulación supervivientes. Generalmente, entre el 10 y el 20 por ciento de los miembros de la tripulación supervivientes no podrán evacuar debido a salidas bloqueadas, embarcaciones de escape dañadas, lesiones graves y factores Otros. Aunque se pueden necesitar 8 o 10 rondas para abandonar completamente un barco grande, un cierto número de miembros de la tripulación lograrán salir de los restos del naufragio en cada ronda durante la evacuación. Supongamos que el 20 por ciento de los supervivientes se salvan en cada ronda para un barco ligero o mediano, y el 10 por ciento de los supervivientes se salvan en cada ronda para un barco pesado o superpesado. Los personajes jugadores pueden irse tan pronto como lleguen a una cápsula de escape o esclusa de aire.
+
+## Combate sin
+
+## Miniaturas
+
+Muchos Gamemasters prefieren ejecutar sus juegos sin utilizar ningún mapa o miniatura. Obviamente, las reglas Combate de los capítulos anteriores suponen el uso de algún tipo de hoja de mapa, pero no es necesario que lo hagas si prefieres no hacerlo. En el Manual del jugador de ALTERNITY, el vehículo o nave espacial Combate sin algún tipo de representación Físico frente a los jugadores se refiere a resolución narrativa Combate.
+
+Posición Lo único que importa para el posicionamiento en la narrativa Combate es la categoría de alcance y el rumbo de cada barco. En la narrativa Combate, supongamos que todos los barcos de ambas flotas están maniobrando exactamente de la misma manera y comparten la categoría de alcance, rumbo y velocidad exactos de todos los barcos amigos en relación con la flota enemiga.
+
+Categorías de alcance En lugar de mantener Rastrear la distancia exacta entre las flotas enemigas, la distancia se describe como una de las siguientes categorías de alcance:
+
+• Desconectado
+
+• Contacto
+
+• Extremo
+
+• Largo
+
+• Moderado
+
+• Cerrar
+
+• Muy cerca
+
+Desactivado: La batalla ha terminado, ya que ambas naves pierden el contacto del sensor con cada Otros. Contacto: Es posible disparar misiles, pero ninguna arma Otros puede alcanzar el barco o barcos enemigos. Extremo: Esto es de largo alcance para armas de rayos o proyectiles de potencia de fuego súper pesada o pesada; Ninguna arma Otros puede disparar. Largo: Se trata de largo alcance para armas de haz o proyectiles de potencia de fuego media o ligera; alcance normal para armas de proyectiles y rayos pesados ​​y superpesados. Moderado: Esto es de largo alcance para torpedos y armas especiales, así como armas de rayos o proyectiles de pequeña potencia de fuego. Alcance normal para todas las armas Otros. Cerca: todas las armas están a alcance normal. Muy cerca: Se pueden ejecutar ataques con bombas y ataques con misiles. Las armas de rayos o proyectiles de potencia de fuego pesada o superpesada, los torpedos y las armas especiales no pueden disparar porque simplemente están demasiado cerca. Los ataques a distancia normal se llevan a cabo con normalidad; Los ataques en la categoría de largo alcance de un arma sufren un +3 Penalización de paso.
+
+Rumbo Básicamente, hay tres formas en las que un barco puede orientarse respecto al enemigo: acercándose, manteniéndose o abriéndose. Acercándose: El barco o barcos generalmente apuntan al enemigo e intentan acercarse. Las armas que apuntan hacia adelante (el arco de disparo frontal) pueden dispararse contra el enemigo. Esperando: El barco o barcos mantienen su posición. Es posible que estén a la deriva en el espacio o conduciendo en alguna dirección que realmente no cierra ni abre la distancia, sino que maniobran alrededor del enemigo. El comandante puede elegir cuál de los cuatro arcos de tiro mira hacia el enemigo. Apertura: El barco o barcos se alejan del enemigo. Las armas que apuntan a popa pueden dispararse contra la flota enemiga. Todos los barcos amigos comparten el mismo título en el sistema narrativo. Se supone que están maniobrando en formación para brindar apoyo mutuo a cada Otros.
+
+Movimiento En el sistema narrativo Combate, la fase de movimiento es simplemente un conjunto de declaraciones: ¿Quieres acercarte al enemigo y en qué dirección quieres mirar? El jugador contrario debe declarar su rumbo primero. Como se señaló anteriormente, todos los barcos de la flota del jugador contrario comparten el mismo título en las reglas narrativas de Combate. Después de que el jugador contrario declara sus intenciones, el jugador de ventaja declara sus intenciones. Nuevamente, todos los barcos de borde comparten el mismo rumbo. Después de que ambos bandos hayan declarado su rumbo, ajuste la categoría de rango actual en consecuencia:
+
+Tabla 3–4: Movimiento narrativo Borde Jugador Cerrar Mantener abierto
+
+Jugador contrario Mantener cerrado
+
+## –2°C
+
+## –1 taza
+
+## –1 taza
+
+NE?? +1 C
+
+Abierto?? +1 °C +2 °C
+
+–2 C: Disminuye el alcance actual en dos categorías, hasta un alcance mínimo muy cercano. –1 C: Disminuye el rango actual en una categoría (mínimo muy cerca). NE: Sin cambios, mantenga la categoría de rango actual en esta ronda. +1 C: aumenta el alcance en una categoría (máx. desconectado). +2 C: aumenta el alcance en dos categorías (máx. desconectado). ??: Si ambas flotas tienen la misma aceleración, la categoría de alcance sigue siendo la misma; de lo contrario, la flota más rápida cierra o abre el alcance en consecuencia. Ejemplo: El Audacious es un destructor Concord que ataca una fragata externa. La categoría de alcance para la primera ronda es contacto; Este es un encuentro en un espacio abierto. El comandante de Concord decide perseguir la nave Externa y llevarla a la batalla a una distancia mucho más cercana, por lo que declara su intención de acercarse. El comandante externo no quiere formar parte del Audaz y elige abrir el alcance, con la esperanza de escapar por completo aumentando el alcance desde contacto hasta desconectado. Dado que el comandante de Concord quiere cerrar y el comandante externo quiere abrir, la siguiente categoría de alcance depende de qué barco es más rápido. La Audacious tiene una aceleración de 4, mientras que la fragata Externa solo tiene una aceleración de 3. Como la Audacious es más rápida, el alcance disminuirá en una categoría, de Contacto a Extremo. Al Audacious le tomará un par de rondas más, pero eventualmente atropellará a la fragata Externa y la obligará a luchar lo quiera o no.
+
+Secuencia de juego Si bien la ronda narrativa Combate se desarrolla de manera muy similar a la ronda visual Combate, existen algunas diferencias importantes. Fase de borde Fase de potencia Fase del sensor Fase de movimiento a. Declaración del jugador contrario b. Declaración del jugador de ventaja c. Actualizaciones de Posición Fase de Ataque a. Armas de rayos y proyectiles b. Torpedos y armas especiales c. Ataques con misiles d. Ataques con bombas Fase de lanzamiento Fase de reparación Órdenes especiales
+
+Requisitos de la tripulación Tripulación básica Marineros de cubierta: 1 marinero de cubierta PER 40 puntos de casco Manipuladores de carga: 1 manipulador de carga PER sistema de autocarga, o 1 manipulador de carga PER bahía y 2 bodegas PER Oficiales de contramaestre: 1 contramaestre PER 5 marineros de cubierta o manipuladores de carga Contramaestre del barco Oficiales de cubierta: 1 PER 3 contramaestres compañeros primer teniente
+
+Técnicos de ingeniería de unidades: 1 tecnología de unidades PER 5 puntos de casco para unidades FTL. Tecnología de motor: 1 tecnología de motor PER 10 puntos de casco dedicados a motores, más 1 motor de tecnología PER. Power Tech: 1 power tech PER 10 puntos de casco dedicados a plantas de energía, más 1 power tech PER. Técnico de apoyo: 1 técnico de apoyo PER sistema de soporte vital Tecnología fría: 1 técnico de frío PER 2 unidades de sospecha de vida Eco Tech: 1 unidad de reciclaje eco tech PER o compartimento hidropónico Suboficiales: 1 compañero de motor PER 5 técnicos de conducción, técnicos de potencia, técnicos de motores, técnicos de apoyo, técnicos ecológicos o técnicos de frío Fuel King (si el barco lleva combustible) Oficiales de ingeniería: 1 PER 3 suboficiales Oficiales ingeniero jefe
+
+Navegación Intendentes: 2 intendentes, más 1 clase PER (2 para ligero, 3 para medio, etc.) Operadores de timón: 1 operador de timón más 1 clase PER (2 para ligero, 3 para mediano, etc.) Suboficiales: 1 PER 4 intendentes u operadores de timón. Navegador
+
+Técnicos de electrónica de operaciones: 1 sensor PER o sistema de comunicaciones Técnicos de compensación: 1 más 1 clase PER (núcleo de computadora); 1 sistema PER asignado a una computadora dedicada. Especialistas en operaciones: 1 sistema de sensores PER; 1 sistema de armas PER; 1 sistema defensivo PER. Especialistas en inteligencia: 2 en barcos medianos, 4 en barcos pesados ​​o 10 en barcos súper pesados ​​Suboficiales: 1 PER 3 técnicos Oficiales: 1 PER 3 suboficiales Oficial de operaciones Oficiales Psi—Psi según sea necesario Técnicos auxiliares de reparación de ingeniería: 1 PER 40 puntos de casco Maquinistas: 4 PER taller, instalación de fabricación o bahía de nanofabricación. Suboficiales: 1 PER 4 técnicos de reparación o maquinistas. Oficial de control de daños Artilleros de armas: 2 soportes para arma de haz o proyectil PER, más 1 PER de 5 puntos de casco dedicados a armas de haz o proyectil. Técnicos de misiles: 2 bastidores de misiles PER, 4 tubos de misiles PER o conjunto de 4 células PER. Torpederos: 4 sistemas de torpedos PER, más 1 PER de 5 puntos de casco dedicados a sistemas de torpedos. Suboficiales: 1 PER 4 artilleros, técnicos de misiles o torpederos. Oficiales de armas: 1 PER 3 suboficiales Jefe de armas
+
+Tripulaciones de vuelo: Según sea necesario Técnicos de aviación: 3 naves embarcadas PER Almacenistas de aviación: 1 nave embarcada PER Marineros de vuelo: 1 nave embarcada PER Especialistas en operaciones de vuelo: 1 nave embarcada PER Armadores de aviación: 1 nave embarcada PER Suboficiales: 1 PER 4 técnicos de aviación, tenderos de aviación, marineros de cubierta, operaciones de vuelo especialistas y artilleros de aviación Oficiales: 1 PER 4 suboficiales Oficial de vuelo: Oficial de ataque: Comandante de ala: Técnicos científicos: 4 sección de laboratorio PER Oficiales científicos: 1 sección de laboratorio PER Oficial científico en jefe Tropas del barco Infantes de marina: Según sea necesario Sargentos: 1 PER 4 infantes de marina Oficiales: 1 PER 4 sargentos Comandante:
+
+Tripulación de apoyo Médico Técnicos médicos: 1 PER 50 tripulantes básicos o 1 PER 2 camas en enfermería, lo que sea mayor Suboficiales: 1 PER 3 técnicos médicos Cirujanos: 1 enfermería PER (solo barcos de tropas) Servicio médico del barco Mess Hands: 1 PER 20 tripulantes básicos Camareros: 1 PER 3 oficiales básicos más 1 pasajero PER Suboficiales: 1 PER 5 manos de comedor o azafatas Jefe de comedor Almacenistas: 1 PER 20 tripulantes básicos Suboficiales: 1 PER 5 tenderos Oficial de suministros Oficial de administración Yeomen: 1 PER 40 tripulantes básicos Especialistas en seguridad: 1 PER 40 tripulantes básicos Suboficiales Oficiales: 1 PER 4 yeomen o especialistas en seguridad Oficiales: 1 PER 3 suboficiales Jefe Maestro de Armas Oficial administrativo Suboficiales de bandera embarcados: 20 Oficiales: 10 Capellán Teniente de bandera Oficial de inteligencia Almirante Comando Jefe maestro Suboficial Oficial ejecutivo Oficial político (si es necesario) Capitán
+
+Borde (narrativa) En el estilo narrativo Combate, el borde es incluso más importante que en el Combate basado en mapas. El comandante con ventaja tiene el privilegio de decidir su rumbo (descrito a continuación) después de que el comandante contrario declara su rumbo. La ventaja se determina como se describe en el Capítulo 1: Combate básico, con una prueba de tripulación o una prueba de habilidad de Tácticas y tácticas espaciales. Sin embargo, el primer desempate para la narrativa Combate es el tamaño del barco; la flota con el barco más grande o más pesado pierde vínculos. El segundo desempate es el número de barcos por bando; el lado con menos barcos gana los empates.
+
+Sensores (Narrativa) Supongamos que todos los sistemas de sensores tienen capacidad normal hasta el rango Extremo y capacidad de largo alcance (verificaciones con un +3 Penalización de paso) en la categoría de rango Desactivado.
+
+Movimiento (Narrativa) Como se describe en “Posición” y “Movimiento” en la página anterior, el estilo narrativo Combate no requiere ningún tipo de mapa. El rango es una de las siete categorías generales, desde desconectado hasta muy cercano. El rumbo es relativo al barco enemigo: ¿el barco del Personaje está acortando, manteniendo o abriendo la distancia entre él y su oponente? El primer paso de la fase de movimiento es la declaración del comandante contrario. El jugador contrario es el equipo que actualmente no tiene ventaja; primero deben declarar sus intenciones (cerrar, mantener o abrir). Luego, el comandante del borde declara su intención para la ronda. Según las intenciones de ambas partes, el alcance entre los dos barcos o flotas puede actualizarse como se muestra en la TABLA 3-4.
+
+Ataque (Narrativa) Si no estás jugando la batalla en un mapa de algún tipo, el alcance exacto de las armas no importa. En cambio, a las armas se les asignan categorías de alcance según su tipo y tamaño. Rango Normal Largo Categoría Fuego Fuego Desactivado ninguno ninguno Contacto A ninguno Extremo A B Largo
+
+## A, B
+
+C Moderado
+
+## A, B, C
+
+## re, mi
+
+Cerca
+
+## A, B, C, D, E
+
+ninguno Muy cerca
+
+## C, D, F
+
+ninguno
+
+R: Lanzamientos de misiles. B: Armas de haz y proyectiles de potencia de fuego pesada o superpesada. C: Armas de haz y proyectiles de potencia de fuego ligera o media. D: Armas de haz y proyectiles de pequeña potencia de fuego. E: Torpedos y armas especiales. F: Impactos de bombas y misiles. El fuego normal permite una tirada de ataque sin penalización por alcance. El fuego de largo alcance añade un +3 Penalización de paso al disparo.
+
+Órdenes especiales (Narrativa) Capítulo 2: Avanzado Combate cubre tres maniobras o acciones especiales: embestida, abordaje y autodestrucción. Es posible realizar estas acciones en narrativa Combate, con alguna modificación en las reglas. Embestida: Para llevar a cabo un ataque de embestida, un capitán debe tener la ventaja y debe estar en la categoría de muy corta distancia. El barco que embiste debe tener un índice de aceleración igual o mayor que el del objetivo. La nave que embiste debe pasar una verificación de la tripulación (o una verificación de habilidades de la nave espacial en Operaciones con vehículos por parte del piloto). Si el barco que embiste tiene éxito en su tirada de ataque, el objetivo tiene derecho a una prueba de tripulación (o Tácticas: prueba de habilidad espacial Combate por parte del capitán) para evitar la colisión. Añade el modificador de tamaño objetivo de la embarcación objetivo a la prueba de evasión. El daño del ataque de embestida se enumera en "Embestida" en el Capítulo 2: Avanzado Combate. Después del ariete, los barcos implicados se encuentran a muy corta distancia. Abordaje: Las etapas de entrada y asalto de una acción de abordaje funcionan como se describe en el Capítulo 2: Combate avanzado. Sin embargo, la etapa de aproximación es un poco diferente. Los transportadores de embarque se pueden utilizar a una distancia moderada, siempre que ninguna pantalla de energía interfiera con el transporte. Para aproximaciones convencionales, el barco de abordaje debe estar a muy corta distancia y el barco objetivo debe ser incapaz de maniobrar en su propia defensa. Autodestrucción: el inicio de la autodestrucción se lleva a cabo tal como se describe en el Capítulo 2. Cuando una nave se autodestruye, crea una explosión igual a la causada por la pérdida de más del doble de su puntuación de puntos críticos. Consulte daños por explosión en la TABLA 2-3. Los barcos que están muy cerca del recipiente detonante se tratan como si estuvieran a 1 hexágono de distancia en la TABLA 2-3; Los barcos que están cerca del recipiente detonante se tratan como si estuvieran a 2 hexágonos de distancia.
