@@ -80,7 +80,7 @@ This skill can be used to determine the success of an attempt to overpower an op
 ### Rank Benefits
 ⊗ **Rank 1 [Mass Leverage]** When a character reaches skill rank 1, he learns to properly leverage his mass. This increases his base unarmed damage to **d4s/d4w/d6+1w**.
 
-▶ **Rank 3 [High Impulse]** When a character reaches rank 3, an Amazing success on an attack forces the target to make a knockout check (Resolve or Stamina) with a +1 step penalty. This penalty increases to +2 at rank 6, +3 at rank 9, and +4 at rank 12.
+▶ **Rank 3 [High Impulse]** When a character reaches rank 3, an Amazing success on an attack forces the target to make the knockout check with a +1 step penalty. This penalty increases to +2 at rank 6, +3 at rank 9, and +4 at rank 12.
 
 ▶ **Ranks 4, 8, 12 [Structural Efficiency]** When a character reaches rank 4, all unarmed damage increases by +1. This bonus increases by an additional +1 at rank 8 and again at rank 12.
 

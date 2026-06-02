@@ -24,13 +24,6 @@ Crear una obra de arte o literatura implica una **comprobación de habilidad com
 - **Complejidad (se requiere Éxitos):** Ordinario (2), Bueno (4-6), Asombroso (8+).
 - **Falla del proyecto:** Si la verificación termina en un **Fallo Crítico** o **tres resultados de falla**, el proyecto se descarta.
 
-## Habilidades de Especialidad
-{{< specialty attr="WIL" untrained="yes" cost="3" >}}
-
-Se proporciona una línea en blanco debajo de la habilidad Creatividad en la hoja Personaje para que la use un jugador si su Personaje se especializa en algún aspecto de esta habilidad. El Director de Juego determinará si un determinado Especialidad es permitido, generalmente en función de si define un campo de interés lo suficientemente limitado. Por ejemplo, la ilustración podría permitirse como especialidad de creatividad, o podría ser necesario que un Personaje sea más específico y destaque los gráficos por computadora o el arte holográfico como su área de especialización.
-
----
-
 ## The Intangible
 {{< specialty attr="WIL" untrained="yes" cost="3" >}}
 

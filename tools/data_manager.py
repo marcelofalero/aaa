@@ -533,6 +533,7 @@ def main():
             review_dir=str(root_dir / 'sources/skills'),
             folder_mapping={},
             metadata_keys=['attribute', 'cost', 'url', 'category', 'trained_only', 'untrained', 'rank_benefits'],
+            auto_delete=True,
         ),
 
         'psionics': DomainConfig(

@@ -28,7 +28,7 @@ La habilidad Interrogar representa la capacidad de un Personaje de hacer las pre
 ---
 
 ## Buscar
-{{< specialty attr="WIL" untrained="yes" cost="1" >}}
+{{< specialty attr="WIL" untrained="yes" cost="3" >}}
 
 Este Especialidad permite a un Personaje desarrollar su ojo para los detalles y su capacidad para detectar objetos ocultos. La búsqueda se utiliza cuando un Personaje quiere buscar pistas en un área específica, encontrar un objeto o persona en particular que sabe que está en el área, o buscar objetos importantes de la manera más rápida y sistemática posible. El grado de éxito alcanzado en una prueba de habilidad determina lo que detecta el Personaje después de una cierta cantidad de tiempo dedicado a la búsqueda, desde un único elemento pequeño o información en una búsqueda corta hasta varios elementos pequeños o una información importante en una búsqueda larga.
 

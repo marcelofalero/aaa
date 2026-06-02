@@ -36,7 +36,7 @@ This broad skill provides a character with training in navigating on a planetary
 
 This specialty skill involves the study and performance of navigation through drivespace, usually involving movement from one star system to another within the galaxy.
 
-Drivespace, in settings with faster-than-light space travel, is a parallel dimension tied to the gravity plane of the galaxy. 
+Drivespace, in settings with faster-than-light space travel, is a parallel dimension tied to the gravity plane of the galaxy.
 
 A character with this skill can plot courses for stardrive-equipped starships of all kinds. Any stardrive-equipped ship has a maximum distance, in light-years, that it can travel every time it drops out of normal space and into drivespace. This process is known as making a starfall.
 

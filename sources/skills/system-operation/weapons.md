@@ -1,6 +1,6 @@
 ---
 attribute: INT
-cost: 6
+cost: 3
 url: /skills/system-operation#weapons
 trained_only: false
 name: Weapons

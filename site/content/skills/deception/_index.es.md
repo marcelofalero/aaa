@@ -63,14 +63,6 @@ Ofrecer más que el Soborno adecuado proporciona una bonificación a la verifica
 
 ---
 
-## Juego
-{{< specialty attr="PER" untrained="yes" cost="4" >}}
-
-Este Especialidad representa la competencia de un Personaje en varios juegos de azar. Con cada compra del Especialidad, el jugador selecciona un juego diferente (sujeto a la aprobación del Director de Juego) para que su Personaje sea experto. Con una comprobación exitosa del Juego, un Personaje puede estimar las probabilidades, determinar si un juego en particular ha sido manipulado, contar cartas, detectar a un tramposo u otro jugador experto y aumentar sus propias probabilidades de ganar. Un jugador puede mejorar sus probabilidades de ganar jugando con habilidad y honestidad o haciendo trampa. Si un Personaje juega honestamente, el ganador en un concurso de apuestas es aquel que logra el mayor nivel de éxito, y cada empate representa un aumento en las apuestas. La prueba de habilidad de un jugador se realiza con un **bono -2** si está jugando contra un **oponente no entrenado** (alguien que no tiene la habilidad amplia Engaño), sin **ningún modificador** si juega contra un **oponente entrenado** (alguien que tiene Engaño y quizás también Juego, pero con el mismo o menor Rango), o con una **penalización +2** si juega contra un **oponente entrenado con una habilidad superior Rango**. Si un Personaje decide hacer trampa, se aplican diferentes modificadores: una **bonificación -3** si juega contra un **oponente no entrenado**, una **penalización +1** si juega contra un **oponente entrenado** y una **penalización +3** si juega contra un **oponente entrenado con una habilidad superior Rango**. Sin embargo, los pagos son mejores dependiendo del resultado de la verificación que finalice el concurso: en cualquier **Fallo Crítico**, el Personaje es sorprendido haciendo trampa. Con un éxito **Marginal**, gana el bote; con un éxito **Ordinario**, gana el bote más una apuesta adicional igual a la mitad del bote; En un **Bueno**, gana el bote más una apuesta adicional de igual cantidad;
-**Asombroso**, gana el bote más una apuesta adicional del doble de esa cantidad. Como opción, puedes usar las reglas "Personaje vs. Personaje" en la página 63 para determinar el resultado cuando los personajes Juego se enfrentan entre sí. En este caso, sin embargo, el tamaño del bote se acuerda antes de tirar los dados.
-
----
-
 ## Gamble-Logic-Games
 {{< specialty attr="INT" untrained="yes" cost="3" >}}
 

@@ -28,7 +28,7 @@ The Interrogate skill represents a character''s ability to ask the right questio
 ---
 
 ## Search
-{{< specialty attr="WIL" untrained="yes" cost="1" >}}
+{{< specialty attr="WIL" untrained="yes" cost="3" >}}
 
 This specialty skill enables a character to develop his eye for detail and his ability to spot hidden objects. Search is used when a character wants to look for clues in a specific area, find a particular object or person he knows is in the area, or hunt for important objects in as fast and systematic a fashion as possible. The degree of success achieved on a skill check determines what the character spots after a certain amount of time spent searching, ranging from a single small item or piece of information on a short search to several small items or a major piece of information on a long search.
 
@@ -37,7 +37,7 @@ This specialty skill enables a character to develop his eye for detail and his a
 ## Track
 {{< specialty attr="WIL" untrained="yes" cost="3" >}}
 
-This specialty skill allows a character to improve his ability to follow a person, creature, or land vehicle by noting the tracks it leaves in its wake. Tracks can be anything from actual footprints to telltale signs such as broken branches, discarded litter, obvious waste material, or other evidence of passage. 
+This specialty skill allows a character to improve his ability to follow a person, creature, or land vehicle by noting the tracks it leaves in its wake. Tracks can be anything from actual footprints to telltale signs such as broken branches, discarded litter, obvious waste material, or other evidence of passage.
 
 A tracker may not necessarily be following physical evidence; he may be using detective skills, interview techniques, sensors, or other special equipment. Track is used to locate and follow a trail, either a physical one or a trail of information. Once a character spots his prey, Cover Ops-Stealth can be used to follow closely without being spotted.
 

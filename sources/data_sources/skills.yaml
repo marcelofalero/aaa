@@ -34,9 +34,9 @@ items:
           - en:
               name: Aerobatics
               description: |-
-                This specialty skill represents a character's mastery of complex maneuvers during personal flight, whether through natural wings, specialized jump-packs, or gravitic personal flight devices (GADS). 
+                This specialty skill represents a character's mastery of complex maneuvers during personal flight, whether through natural wings, specialized jump-packs, or gravitic personal flight devices (GADS).
 
-                While very basic maneuvering in flight is covered by the Acrobatics broad skill, Aerobatics is required for high-speed turns, precise landing, evasive maneuvers, and aerial acrobatics. 
+                While very basic maneuvering in flight is covered by the Acrobatics broad skill, Aerobatics is required for high-speed turns, precise landing, evasive maneuvers, and aerial acrobatics.
 
                 At **Rank 4** in **Armor Operation—Propulsion Systems**, this skill can also be used for complex maneuvers using a powered suit's integrated thrusters.
 
@@ -1076,7 +1076,7 @@ items:
     items:
       intuition:
         attribute: WIL
-        cost: 1
+        cost: 3
         url: /skills/awareness#intuition
         localized:
           - en:
@@ -1703,20 +1703,6 @@ items:
             - **Complejidad (se requiere Éxitos):** Ordinario (2), Bueno (4-6), Asombroso (8+).
             - **Falla del proyecto:** Si la verificación termina en un **Fallo Crítico** o **tres resultados de falla**, el proyecto se descarta.
     items:
-      creativity-specific-skill:
-        attribute: WIL
-        cost: 3
-        url: /skills/creativity#creativity-specific-skill
-        localized:
-          - en:
-              name: Creativity, Specific Skill
-              description: |-
-                A blank line is provided under the Creativity skill on the character sheet for a player to use if his character specializes in some aspect of this skill. The Gamemaster will determine if a certain specialty skill is allowable, usually based on whether it defines a narrow enough field of interest. For instance, illustration might be allowed as a Creativity specialty, or it might be necessary for a character to be more specific by singling out computer graphics or holo art as his area of expertise.
-          - es:
-              name: Habilidades de Especialidad
-              description: |-
-                Se proporciona una línea en blanco debajo de la habilidad Creatividad en la hoja Personaje para que la use un jugador si su Personaje se especializa en algún aspecto de esta habilidad. El Director de Juego determinará si un determinado Especialidad es permitido, generalmente en función de si define un campo de interés lo suficientemente limitado. Por ejemplo, la ilustración podría permitirse como especialidad de creatividad, o podría ser necesario que un Personaje sea más específico y destaque los gráficos por computadora o el arte holográfico como su área de especialización.
-        trained_only: false
       the-intangible:
         attribute: WIL
         cost: 3
@@ -1790,7 +1776,7 @@ items:
       - en:
           name: Culture
           description: |-
-            This broad skill represents a character's ability to understand and interact with cultures that are different from his own. Areas of knowledge covered by the skill include the customs, philosophy, and way of life of a particular culture, as well as a basic familiarity with major historical figures, events, and trends important to that culture. In the use of the broad skill, a character applies what he knows about cultural trends and studies to make an educated guess about how to interact with a member of another culture. The broad skill provides at least a working knowledge of what to do when dealing with any alien culture. 
+            This broad skill represents a character's ability to understand and interact with cultures that are different from his own. Areas of knowledge covered by the skill include the customs, philosophy, and way of life of a particular culture, as well as a basic familiarity with major historical figures, events, and trends important to that culture. In the use of the broad skill, a character applies what he knows about cultural trends and studies to make an educated guess about how to interact with a member of another culture. The broad skill provides at least a working knowledge of what to do when dealing with any alien culture.
 
             When Culture or any of its specialty skills is used in an interactive context with one or more other characters, it is considered an encounter skill (see the sidebar). A Critical Failure result on a skill check indicates that the character has thoroughly insulted the individual or group he's trying to deal with. Other skill check results change the target's attitude as shown on **TABLE P25: ENCOUNTER SKILL EFFECTS**. The greater the degree of success, the more endearing and flattering the character appears to the member(s) of the culture he's dealing with. The complexity of the ideas that are being communicated during a use of the Culture skill (or the use of one of its specialty skills) may provide a modifier to the skill check:
 
@@ -1885,9 +1871,9 @@ items:
           - en:
               name: First Encounter
               description: |-
-                This specialty skill represents a character's training in the theories and protocols of making first contact with a previously unknown culture. With this skill, a character can assess the mental, physical, and technological capabilities of an unfamiliar species, begin the process of establishing communications and learning each other's language, and make a preliminary study of the strangers' cultural and societal habits. 
+                This specialty skill represents a character's training in the theories and protocols of making first contact with a previously unknown culture. With this skill, a character can assess the mental, physical, and technological capabilities of an unfamiliar species, begin the process of establishing communications and learning each other's language, and make a preliminary study of the strangers' cultural and societal habits.
 
-                A first encounter skill check is always a complex chore, and may take days, weeks, or even months to successfully complete. The Gamemaster will assign the number of successes necessary to complete the skill check based on the extent of difference between the two cultures involved. Also, the Gamemaster will determine the initial attitude of the target creature(s) toward the character, and may inform the character of changes in that attitude that take place while the complex skill check is under way. 
+                A first encounter skill check is always a complex chore, and may take days, weeks, or even months to successfully complete. The Gamemaster will assign the number of successes necessary to complete the skill check based on the extent of difference between the two cultures involved. Also, the Gamemaster will determine the initial attitude of the target creature(s) toward the character, and may inform the character of changes in that attitude that take place while the complex skill check is under way.
 
                 Upon the successful completion of the first encounter skill check, the character immediately gains rank 1 in the *knowledge-language* and *culture-etiquette* skills that relate to the formerly unknown culture.
 
@@ -2039,22 +2025,6 @@ items:
                 - **Asombroso:** Soborno aceptado; La actitud mejora dos grados durante 4d6 horas o hasta que el Personaje haga algo para cambiar la relación.
                 - **Error:** Soborno se negó. Los intentos posteriores requieren un valor más alto.
                 - **Fallo Crítico:** Soborno se negó; El objetivo se vuelve **Hostil** o **Combativo**.
-        trained_only: false
-      gamble:
-        attribute: PER
-        cost: 4
-        url: /skills/deception#gamble
-        localized:
-          - en:
-              name: Gamble
-              description: |-
-                This specialty skill represents a character''s proficiency at various games of chance. With each purchase of the specialty skill, the player selects a different game (subject to the approval of the Gamemaster) for his character to be skilled in. With a successful gamble check, a character can estimate the odds, determine if a particular game has been rigged, count cards, spot a cheater or another skilled gambler, and increase his own odds of winning. A gambler can improve his odds of winning either by playing skillfully and honestly—or by cheating. If a character plays honestly, the winner in a gambling contest is the one who achieves the highest success level, with each tie representing an increase in the stakes. A gambler''s skill check is made with a **-2 bonus** if he is playing against an **untrained opponent** (someone who does not have the Deception broad skill), with **no modifier** if playing against a **trained opponent** (someone who has Deception and perhaps also gamble, but at the same or a lower rank), or with a **+2 penalty** if playing against a **trained opponent of a higher skill rank**. If a character decides to cheat, different modifiers apply: a **-3 bonus** if playing against an **untrained opponent**, a **+1 penalty** if playing against a **trained opponent**, and a **+3 penalty** if playing against a **trained opponent of a higher skill rank**. Payoffs are better, however, depending on the check result that ends the contest: On any **Critical Failure**, the character is caught cheating. On a **Marginal** success, he wins the pot; on an **Ordinary** success, he wins the pot plus a side bet equal to half of the pot; On a **Good**, he wins the pot plus a side bet of an equal amount;
-                **Amazing**, he wins the pot plus a side bet of twice that amount. As an option, you may use the "Character vs. Character" rules on page 63 to determine the outcome when characters gamble against one another. In this case, however, the size of the pot is agreed upon before any dice are rolled.
-          - es:
-              name: Juego
-              description: |-
-                Este Especialidad representa la competencia de un Personaje en varios juegos de azar. Con cada compra del Especialidad, el jugador selecciona un juego diferente (sujeto a la aprobación del Director de Juego) para que su Personaje sea experto. Con una comprobación exitosa del Juego, un Personaje puede estimar las probabilidades, determinar si un juego en particular ha sido manipulado, contar cartas, detectar a un tramposo u otro jugador experto y aumentar sus propias probabilidades de ganar. Un jugador puede mejorar sus probabilidades de ganar jugando con habilidad y honestidad o haciendo trampa. Si un Personaje juega honestamente, el ganador en un concurso de apuestas es aquel que logra el mayor nivel de éxito, y cada empate representa un aumento en las apuestas. La prueba de habilidad de un jugador se realiza con un **bono -2** si está jugando contra un **oponente no entrenado** (alguien que no tiene la habilidad amplia Engaño), sin **ningún modificador** si juega contra un **oponente entrenado** (alguien que tiene Engaño y quizás también Juego, pero con el mismo o menor Rango), o con una **penalización +2** si juega contra un **oponente entrenado con una habilidad superior Rango**. Si un Personaje decide hacer trampa, se aplican diferentes modificadores: una **bonificación -3** si juega contra un **oponente no entrenado**, una **penalización +1** si juega contra un **oponente entrenado** y una **penalización +3** si juega contra un **oponente entrenado con una habilidad superior Rango**. Sin embargo, los pagos son mejores dependiendo del resultado de la verificación que finalice el concurso: en cualquier **Fallo Crítico**, el Personaje es sorprendido haciendo trampa. Con un éxito **Marginal**, gana el bote; con un éxito **Ordinario**, gana el bote más una apuesta adicional igual a la mitad del bote; En un **Bueno**, gana el bote más una apuesta adicional de igual cantidad;
-                **Asombroso**, gana el bote más una apuesta adicional del doble de esa cantidad. Como opción, puedes usar las reglas "Personaje vs. Personaje" en la página 63 para determinar el resultado cuando los personajes Juego se enfrentan entre sí. En este caso, sin embargo, el tamaño del bote se acuerda antes de tirar los dados.
         trained_only: false
       gamble-logic-games:
         attribute: INT
@@ -2616,9 +2586,9 @@ items:
       - en:
           name: Interaction
           description: |-
-            Interaction provides a character with the basics of interpersonal contact with members of the same species and native culture. Through the use of the associated specialty skills, a character can become an expert in the arts of interaction and communication. 
+            Interaction provides a character with the basics of interpersonal contact with members of the same species and native culture. Through the use of the associated specialty skills, a character can become an expert in the arts of interaction and communication.
 
-            While everyone who grows up around other people has some skill at interacting with others, those who purchase any of the specialty skills are either trained or naturally proficient at winning friends and influencing people. 
+            While everyone who grows up around other people has some skill at interacting with others, those who purchase any of the specialty skills are either trained or naturally proficient at winning friends and influencing people.
 
             ### Specialties
             Interaction includes specific areas such as:
@@ -2640,12 +2610,12 @@ items:
             | Acquainted | -1 step |
 
             ### Mechanics
-            Interaction is an **encounter skill**, meaning that any skill check takes into account the target's starting attitude (see [Table P25: Encounter Skill Effects]({{< relref "core-mechanics/useful-tables#table-p25-encounter-skill-effects" >}})). 
+            Interaction is an **encounter skill**, meaning that any skill check takes into account the target's starting attitude (see [Table P25: Encounter Skill Effects]({{< relref "core-mechanics/useful-tables#table-p25-encounter-skill-effects" >}})).
 
             - **Target Restrictions:** Neither a **Combative** character nor a **Fanatic** character can be influenced by Interaction.
-            - **Resistance:** The target's **Will resistance modifier** also applies. 
-            - **Cumulative Modifiers:** The modifiers listed above are cumulative. 
-            - **Longevity:** In general, the changes in attitude that can be brought about by the use of Interaction are longer-lasting than the changes achieved through the use of Deception or Entertainment skills. Otherwise, a target’s change in attitude lasts until the character does something to alter that attitude in either a positive or negative way. 
+            - **Resistance:** The target's **Will resistance modifier** also applies.
+            - **Cumulative Modifiers:** The modifiers listed above are cumulative.
+            - **Longevity:** In general, the changes in attitude that can be brought about by the use of Interaction are longer-lasting than the changes achieved through the use of Deception or Entertainment skills. Otherwise, a target’s change in attitude lasts until the character does something to alter that attitude in either a positive or negative way.
 
             > When possible, it's better to roleplay an Interaction encounter than simply rolling dice and deciding an outcome.
       - es:
@@ -2678,8 +2648,8 @@ items:
             Interacción es una **habilidad de encuentro**, lo que significa que cualquier prueba de habilidad tiene en cuenta la actitud inicial del objetivo (consulte la [Tabla P25: Efectos de las habilidades de encuentro]({{< relref "core-mechanics/useful-tables#table-p25-encounter-skill-effects" >}})).
 
             - **Restricciones de objetivos:** Ni un Personaje **Combativo** ni un Personaje **Fanático** pueden verse influenciados por Interacción.
-            - **Resistencia:** También se aplica el **modificador de resistencia a la voluntad** del objetivo. 
-            - **Modificadores acumulativos:** Los modificadores enumerados anteriormente son acumulativos. 
+            - **Resistencia:** También se aplica el **modificador de resistencia a la voluntad** del objetivo.
+            - **Modificadores acumulativos:** Los modificadores enumerados anteriormente son acumulativos.
             - **Longevidad:** En general, los cambios de actitud que se pueden provocar con el uso de Interacción son más duraderos que los cambios logrados mediante el uso de Engaño o habilidades de entretenimiento. De lo contrario, el cambio de actitud de un objetivo dura hasta que el Personaje haga algo para alterar esa actitud de forma positiva o negativa.
 
             > Cuando sea posible, es mejor interpretar un encuentro Interacción que simplemente tirar los dados y decidir un resultado.
@@ -2692,7 +2662,7 @@ items:
           - en:
               name: Bargain
               description: |-
-                Bargain represents a character’s ability to negotiate a cheaper price for an object they want to buy or a better price for one they’re selling. It also covers more formal business negotiations. A successful check improves the character’s position at the bargaining table. 
+                Bargain represents a character’s ability to negotiate a cheaper price for an object they want to buy or a better price for one they’re selling. It also covers more formal business negotiations. A successful check improves the character’s position at the bargaining table.
 
                 The degree of success determines who gets the better outcome. A success also changes the target’s attitude as shown on [Table P25: Encounter Skill Effects]({{< relref "core-mechanics/useful-tables#table-p25-encounter-skill-effects" >}}).
 
@@ -2756,7 +2726,7 @@ items:
           - en:
               name: Charm
               description: |-
-                The charm skill represents a character’s ability to change the attitudes of those they interact with by presenting themselves in a likable, friendly manner. A character with this skill seeks to charm others into giving up something—whether it’s material goods or simply a change of attitude—with kind words, a winning smile, and a personable attitude. 
+                The charm skill represents a character’s ability to change the attitudes of those they interact with by presenting themselves in a likable, friendly manner. A character with this skill seeks to charm others into giving up something—whether it’s material goods or simply a change of attitude—with kind words, a winning smile, and a personable attitude.
 
                 To actually charm someone, the character must achieve an **Ordinary** result or better. The result of the check determines how much the target’s attitude improves, as shown on [Table P25: Encounter Skill Effects]({{< relref "core-mechanics/useful-tables#table-p25-encounter-skill-effects" >}}).
 
@@ -2780,7 +2750,7 @@ items:
           - en:
               name: Interview
               description: |-
-                The interview skill represents a character’s ability to get information from another character in a non-aggressive way. Interviews are often used by reporters, investigators, and officials conducting standard administrative procedures. It differs from **Investigate—interrogate** (a **Will**-based skill) in the amount of aggressiveness and fear applied by the questioner. 
+                The interview skill represents a character’s ability to get information from another character in a non-aggressive way. Interviews are often used by reporters, investigators, and officials conducting standard administrative procedures. It differs from **Investigate—interrogate** (a **Will**-based skill) in the amount of aggressiveness and fear applied by the questioner.
 
                 The result of the check determines the amount of information the character is able to obtain. A success also changes the target’s attitude as shown on [Table P25: Encounter Skill Effects]({{< relref "core-mechanics/useful-tables#table-p25-encounter-skill-effects" >}}).
 
@@ -2804,7 +2774,7 @@ items:
           - en:
               name: Intimidate
               description: |-
-                The intimidate skill represents a character’s ability to threaten another, either by physical presence or the weight of authority. Intimidate enables a character to force an opponent to back down, reveal information, or cooperate in some other way due to fear. 
+                The intimidate skill represents a character’s ability to threaten another, either by physical presence or the weight of authority. Intimidate enables a character to force an opponent to back down, reveal information, or cooperate in some other way due to fear.
 
                 The target's **Will resistance modifier** applies to the skill check, along with other Interaction modifiers. The greater the degree of success, the more cooperation the character can elicit. A success also changes the target's attitude as shown on [Table P25: Encounter Skill Effects]({{< relref "core-mechanics/useful-tables#table-p25-encounter-skill-effects" >}}).
 
@@ -2828,9 +2798,9 @@ items:
           - en:
               name: Seduce
               description: |-
-                The seduce skill represents the ability to entice or beguile another character through the use of opening lines, witty exchanges, playful conversation, and intimate behavior. To seduce another character is to manipulate that character’s emotions through planned exchanges. 
+                The seduce skill represents the ability to entice or beguile another character through the use of opening lines, witty exchanges, playful conversation, and intimate behavior. To seduce another character is to manipulate that character’s emotions through planned exchanges.
 
-                The final goal of seduction is to gain the seduced character's trust or cooperation through romantic overtures. To actually accomplish the seduction, the character must achieve an **Ordinary** result or better. 
+                The final goal of seduction is to gain the seduced character's trust or cooperation through romantic overtures. To actually accomplish the seduction, the character must achieve an **Ordinary** result or better.
 
                 ### Seduction Effects
                 A seduced character won't stay that way forever. How long the character remains seduced depends on the result of the check:
@@ -2968,7 +2938,7 @@ items:
         trained_only: false
       search:
         attribute: WIL
-        cost: 1
+        cost: 3
         url: /skills/investigate#search
         localized:
           - en:
@@ -2988,7 +2958,7 @@ items:
           - en:
               name: Track
               description: |-
-                This specialty skill allows a character to improve his ability to follow a person, creature, or land vehicle by noting the tracks it leaves in its wake. Tracks can be anything from actual footprints to telltale signs such as broken branches, discarded litter, obvious waste material, or other evidence of passage. 
+                This specialty skill allows a character to improve his ability to follow a person, creature, or land vehicle by noting the tracks it leaves in its wake. Tracks can be anything from actual footprints to telltale signs such as broken branches, discarded litter, obvious waste material, or other evidence of passage.
 
                 A tracker may not necessarily be following physical evidence; he may be using detective skills, interview techniques, sensors, or other special equipment. Track is used to locate and follow a trail, either a physical one or a trail of information. Once a character spots his prey, Cover Ops-Stealth can be used to follow closely without being spotted.
           - es:
@@ -3447,7 +3417,6 @@ items:
               description: |-
                 Leading by example and shifting the morale of a group.
 
-
                 **Morale Pivot:** Unlike the broad skill, **Inspire** can be used on **Hostile** or **Combative** targets to shift their attitude as per [Table P25: Encounter Skill Effects]({{< relref "core-mechanics/useful-tables#table-p25-encounter-skill-effects" >}}).
 
                 ### Rank Benefits
@@ -3526,7 +3495,7 @@ items:
               description: |-
                 This specialty skill represents the character’s knowledge of biology and the study of life and living organisms, including their structure, function, growth, origin, evolution, and distribution.
 
-                It can be used to ascertain information about the biochemical processes of living beings.  
+                It can be used to ascertain information about the biochemical processes of living beings.
 
                 ### Rank Benefits
                 ⊗ **Increased Effect:** A character receives a **-1 bonus** at rank 3, **-2** at rank 6, **-3** at rank 9, and **-4** at rank 12 on certain other skill checks that can be assisted by this specialty.
@@ -3653,14 +3622,12 @@ items:
             This skill provides a character with the training needed to perform certain medical procedures, including the ability to diagnose common ailments, diseases, and wounds. Skill checks made to determine if a character knows a certain piece of medical information, or if he's able to research a question and discover an answer, are made the same way as Knowledge skill checks.
 
             A character with just the Medical Science broad skill can't treat characters who have suffered damage, however. The *treatment* specialty skill is necessary to heal stun or wound damage, and reducing a patient's mortal damage requires the *surgery* specialty skill.
-
       - es:
           name: Ciencias médicas
           description: |-
             Esta habilidad proporciona a Personaje la capacitación necesaria para realizar ciertos procedimientos médicos, incluida la capacidad de diagnosticar dolencias, enfermedades y heridas comunes. Las comprobaciones de habilidades realizadas para determinar si un Personaje conoce cierta información médica, o si es capaz de investigar una pregunta y descubrir una respuesta, se realizan de la misma manera que las comprobaciones de habilidades de conocimiento.
 
             Sin embargo, un Personaje con solo la habilidad amplia Ciencias médicas no puede tratar a personajes que hayan sufrido daños. El *tratamiento* Especialidad es necesario para curar el daño Aturdimiento o Herida, y reducir el daño Mortal de un paciente requiere la *cirugía* Especialidad.
-
     items:
       forensics:
         attribute: INT
@@ -3674,7 +3641,6 @@ items:
 
                 ### Rank Benefits
                 ⊗ **Rank 3, 6, 9, 12 [Increased Effect]** As a character attains higher ranks in forensics, he receives a **situation die bonus** on forensics checks. The bonus is **-1 step at rank 3**, **-2 steps at rank 6**, **-3 steps at rank 9**, and **-4 steps at rank 12**.
-
           - es:
               name: Ciencias forenses
               description: |-
@@ -3682,7 +3648,6 @@ items:
 
                 ### Beneficios de Rango
                 ⊗ **Rango 3, 6, 9, 12 [Efecto aumentado]** A medida que un Personaje alcanza un Rangos más alto en análisis forense, recibe una **bonificación Dado de Situación** en comprobaciones forenses. La bonificación es **-1 paso en Rango 3**, **-2 pasos en Rango 6**, **-3 pasos en Rango 9** y **-4 pasos en Rango 12**.
-
         trained_only: false
         rank_benefits:
           - rank: 3
@@ -3705,7 +3670,6 @@ items:
 
                 ### Rank Benefits
                 ⊗ **Rank 3, 6, 9, 12 [Increased Effect]** A character receives a **-1 bonus** at rank 3, **-2** at rank 6, **-3** at rank 9, and **-4** at rank 12 on other Medical Science checks (e.g., diagnosis, research).
-
           - es:
               name: Conocimiento médico
               description: |-
@@ -3713,7 +3677,6 @@ items:
 
                 ### Beneficios de Rango
                 ⊗ **Rango 3, 6, 9, 12 [Efecto aumentado]** Un Personaje recibe una bonificación **-1** en Rango 3, **-2** en Rango 6, **-3** en Rango 9 y **-4** en Rango 12 en comprobaciones de Otros Ciencias médicas (por ejemplo, diagnóstico, investigación).
-
         trained_only: false
         rank_benefits:
           - rank: 3
@@ -3739,7 +3702,6 @@ items:
 
                 ### Stress Management
                 When the persistent stress rules are being used, a character with the Psychology skill may use it to provide psychological support to themselves or others, which may help to resist the effects of stress. A successful skill check may provides up to 12 characters with a bonus based the weekly check result. Granting a bonus of -1 (Ordinary), +2 (Good), or +3 (Amazing) to the weekly resolve-mental resolve check to avoid gaining stress levels.
-
           - es:
               name: Psicología
               description: |-
@@ -3750,7 +3712,6 @@ items:
 
                 ### Manejo del estrés
                 Cuando se utilizan las reglas de estrés persistente, un Personaje con la habilidad Psicología puede usarla para brindar apoyo psicológico a sí mismo o a otros, lo que puede ayudar a resistir los efectos del estrés. Una prueba de habilidad exitosa puede proporcionar hasta 12 personajes con una bonificación basada en el resultado de la prueba semanal. Otorgar una bonificación de -1 (Ordinario), +2 (Bueno) o +3 (Asombroso) a la prueba semanal Firmeza-Mental Firmeza para evitar ganar niveles de estrés.
-
         trained_only: false
         rank_benefits:
           - rank: 3
@@ -3789,7 +3750,7 @@ items:
                 The complexity of a surgery check depends on the amount of mortal
                 damage the patient is suffering from when the procedure is begun:
                 1 point of damage is Marginal, 2 is Ordinary, 3 is Good, and 4 or
-                more is Amazing. 
+                more is Amazing.
 
                 If the patient is suffering only from wound
                 damage, then 2 points of damage is Marginal, 4 is Ordinary, 6 is
@@ -3803,7 +3764,6 @@ items:
                 ⊗ **Rank 3 [Cybernetic Surgery]** A character who has achieved at least rank 3 in surgery can use this skill to treat patients with existing cybernetic implants.
 
                 ⊗ **Rank 6 [Cybernetic Surgery, Install]** A character who has achieved at least rank 6 in surgery can use this skill to install cybernetic implants.
-
           - es:
               name: Cirugía
               description: |-
@@ -3841,7 +3801,6 @@ items:
                 ⊗ **Rango 3 [Cirugía cibernética]** Un Personaje que haya alcanzado al menos Rango 3 en cirugía puede utilizar esta habilidad para tratar pacientes con implantes cibernéticos existentes.
 
                 ⊗ **Rango 6 [Cirugía cibernética, instalación]** Un Personaje que haya alcanzado al menos Rango 6 en cirugía puede usar esta habilidad para instalar implantes cibernéticos.
-
         trained_only: true
         rank_benefits:
           - rank: 3
@@ -3884,7 +3843,6 @@ items:
                 penalties: -1 step at rank 3, -2 steps at rank 6, -3 steps at rank
                 9, and -4 at rank 12. Note that this benefit only reduces a
                 penalty; it never provides a bonus.
-
           - es:
               name: Tratamiento
               description: |-
@@ -3916,7 +3874,6 @@ items:
                 penalizaciones: -1 paso en Rango 3, -2 pasos en Rango 6, -3 pasos en Rango
                 9 y -4 en Rango 12. Tenga en cuenta que este beneficio solo reduce un
                 pena; nunca proporciona una bonificación.
-
         trained_only: true
         rank_benefits:
           - rank: 3
@@ -3948,7 +3905,6 @@ items:
                 penalty associated with healing alien characters is applied.
 
                 ⊗ **Rank 3, 6, 9, 12 [Improved Treatment]** As a character achieves higher ranks in a specific application of xenomedicine, she becomes more proficient at providing aid to patients of the appropriate species. When the character reaches rank 3 in xenomedicine, the initial +3 penalty is reduced to +2; at rank 6, the penalty is +1; at rank 9, the penalty is eliminated; and at rank 12, the doctor receives a -1 bonus.
-
           - es:
               name: Xenomedicina
               description: |-
@@ -4184,7 +4140,7 @@ items:
                 ### Rank Benefits
                 ⊗ **Rank 1 [Mass Leverage]** When a character reaches skill rank 1, he learns to properly leverage his mass. This increases his base unarmed damage to **d4s/d4w/d6+1w**.
 
-                ▶ **Rank 3 [High Impulse]** When a character reaches rank 3, an Amazing success on an attack forces the target to make a knockout check (Resolve or Stamina) with a +1 step penalty. This penalty increases to +2 at rank 6, +3 at rank 9, and +4 at rank 12.
+                ▶ **Rank 3 [High Impulse]** When a character reaches rank 3, an Amazing success on an attack forces the target to make the knockout check with a +1 step penalty. This penalty increases to +2 at rank 6, +3 at rank 9, and +4 at rank 12.
 
                 ▶ **Ranks 4, 8, 12 [Structural Efficiency]** When a character reaches rank 4, all unarmed damage increases by +1. This bonus increases by an additional +1 at rank 8 and again at rank 12.
 
@@ -4199,29 +4155,7 @@ items:
                 > Practitioners that frequently utilize the All Out Attack option in combat are usually refered as **brawlers**.
           - es:
               name: Artes marciales de poder
-              description: |-
-                A medida que un Personaje mejora su habilidad en el Artes marciales de poder Especialidad, obtiene los beneficios del Rango como se describe a continuación. Nota: Estos beneficios solo se aplican cuando el Personaje pelea desarmado o con implementos de artes marciales adecuados. La esencia de las artes marciales orientadas al poder radica en la movilización eficiente de la masa corporal total mediante la alineación estructural y la secuencia cinética explosiva. Estos estilos tratan el cuerpo como una unidad única y rígida en el momento del impacto, utilizando el suelo como punto de apoyo para canalizar la energía.
-
-                ### abrumador
-
-                Esta habilidad se puede utilizar para determinar el éxito de un intento de dominar a un oponente. Brevemente, dominar es una forma de ataque desarmado realizado simultáneamente por uno o más aliados que intentan agarrar y contener a un solo oponente. Si un solo atacante intenta dominar a otro Personaje, su prueba de habilidad Combate cuerpo a cuerpo se realiza con una penalización de +1. Cada atacante adicional que participe en el mismo intento abrumador proporciona una bonificación acumulativa de -1 a la prueba de habilidad. Abrumar no causa daño, pero inmoviliza a un oponente mientras uno de los atacantes continúe manteniendo un fuerte control sobre ese oponente.
-
-                ### Beneficios de Rango
-                ⊗ **Rango 1 [Apalancamiento masivo]** Cuando un Personaje alcanza la habilidad Rango 1, aprende a aprovechar adecuadamente su masa. Esto aumenta su daño base sin armas a **d4s/d4w/d6+1w**.
-
-                ▶ **Rango 3 [Alto Impulso]** Cuando un Personaje alcanza Rango 3, un éxito de Asombroso en un ataque obliga al objetivo a realizar una prueba de nocaut (Firmeza o Aguante) con un +1 Penalización de paso. Esta penalización aumenta a +2 en Rango 6, +3 en Rango 9 y +4 en Rango 12.
-
-                ▶ **Rangos 4, 8, 12 [Eficiencia estructural]** Cuando un Personaje alcanza Rango 4, todo el daño sin armas aumenta en +1. Esta bonificación aumenta en un +1 adicional en Rango 8 y nuevamente en Rango 12.
-
-                ⊗ **Rangos 4, 8, 12 [Modificador de resistencia]** En un Rangos más alto, la habilidad proporciona una mejora al modificador de resistencia a la fuerza de un Personaje. Mejora en +1 en Rango 4, en +1 nuevamente en Rango 8 y en +1 nuevamente en Rango 12. Este aumento no se acumula con bonificaciones similares proporcionadas por las habilidades especiales de Otros Combate cuerpo a cuerpo.
-
-                ▶ **Rango 5 [Poder de corto alcance (Fajin)]** Cuando un Personaje alcanza Rango 5, aprende a golpear de manera efectiva incluso si sus manos están atadas o inutilizables utilizando sus hombros, rodillas o cabeza.
-
-                ▶ **Rango 8 [Destrucción estructural]** Cuando un Personaje alcanza Rango 8, si utiliza un ataque total, el objetivo debe tirar sus dados de armadura dos veces y obtener el peor resultado. Esto se aplica sólo a armaduras que no son Armas de energía.
-
-                ▶ **Rango 12 [Master of Force]** Cuando un Personaje alcanza Rango 12, la penalización de armadura "tirar dos veces/tomar peor" ahora se aplica a las armaduras Armas de energía, bioarmaduras y todo tipo de defensas personales que se traducen como una tirada de armadura.
-
-                > Los practicantes que utilizan con frecuencia la opción All Out Attack en Combate generalmente se denominan **brawlers**.
+              description: |
         trained_only: false
         rank_benefits:
           - rank: 1
@@ -4736,7 +4670,7 @@ items:
               description: |-
                 This specialty skill involves the study and performance of navigation through drivespace, usually involving movement from one star system to another within the galaxy.
 
-                Drivespace, in settings with faster-than-light space travel, is a parallel dimension tied to the gravity plane of the galaxy. 
+                Drivespace, in settings with faster-than-light space travel, is a parallel dimension tied to the gravity plane of the galaxy.
 
                 A character with this skill can plot courses for stardrive-equipped starships of all kinds. Any stardrive-equipped ship has a maximum distance, in light-years, that it can travel every time it drops out of normal space and into drivespace. This process is known as making a starfall.
 
@@ -5272,8 +5206,8 @@ items:
                 **Mortal Damage:** Mortal damage **cannot be healed naturally**; only the application of the **Medical Science—surgery** skill can repair mortal damage.
 
                 #### Activity Modifiers
-                During natural healing, all checks are considered to be made while the character engages in minimal activity. 
-                - **Total Rest:** If the character confines himself to a hospital bed or remains in a state of total rest for the period, the check receives a **-2 step bonus**. 
+                During natural healing, all checks are considered to be made while the character engages in minimal activity.
+                - **Total Rest:** If the character confines himself to a hospital bed or remains in a state of total rest for the period, the check receives a **-2 step bonus**.
                 - **Normal Activity:** If the character engages in normal activity, the check receives a **+2 step penalty**.
           - es:
               name: Firmeza Física
@@ -5319,8 +5253,8 @@ items:
                 **Daño Mortal:** El daño Mortal **no se puede curar de forma natural**; solo la aplicación de la habilidad **Ciencias médicas—cirugía** puede reparar el daño de Mortal.
 
                 #### Modificadores de actividad
-                Durante la curación natural, se considera que todas las comprobaciones se realizan mientras el Personaje realiza una actividad mínima. 
-                - **Descanso total:** Si el Personaje se confina a una cama de hospital o permanece en estado de reposo total durante el período, el cheque recibe un **-2 Bonificación de paso**. 
+                Durante la curación natural, se considera que todas las comprobaciones se realizan mientras el Personaje realiza una actividad mínima.
+                - **Descanso total:** Si el Personaje se confina a una cama de hospital o permanece en estado de reposo total durante el período, el cheque recibe un **-2 Bonificación de paso**.
                 - **Actividad normal:** Si el Personaje realiza una actividad normal, el cheque recibe un **+2 Penalización de paso**.
         trained_only: false
         rank_benefits:
@@ -5618,7 +5552,7 @@ items:
             - **Amazing:** The character becomes so familiar with the locale that survival is no longer an issue unless the situation changes.
 
             ### Survival Situation Modifiers
-            The type of terrain or environment where the character is located can provide a modifier to the skill check: 
+            The type of terrain or environment where the character is located can provide a modifier to the skill check:
 
             | Terrain / Situation | Modifier |
             | :--- | :--- |
@@ -5672,12 +5606,11 @@ items:
         localized:
           - en:
               name: Survival training
-              description: 'This specialty skill enables a character to improve his ability to use the Survival broad skill in a certain type of terrain. If he wants to improve his skill in more than one type of terrain, he must first succeed on a **Survival – Adaptability** challenge and master the terrain.
-
+              description: |-
+                This specialty skill enables a character to improve his ability to use the Survival broad skill in a certain type of terrain. If he wants to improve his skill in more than one type of terrain, he must first succeed on a **Survival – Adaptability** challenge and master the terrain.
                 Available terrain types include all of those listed in the “Survival Situation Modifiers” sidebar, plus any other type the Gamemaster allows.
 
-
-                When starting a new campaign, a character can buy ranks in this skill for any terrain the GM consider reasonable for the character''s background and concept.'
+                When starting a new campaign, a character can buy ranks in this skill for any terrain the GM consider reasonable for the character's background and concept.
           - es:
               name: Apertura de Sendas
               description: |-
@@ -5752,7 +5685,7 @@ items:
           description: |-
             This broad skill provides a character with basic training in the use of spaceship systems other than the helm or piloting systems. (Vehicle Operation covers the actual piloting of a spaceship).
 
-            It also applies to other types of vehicles or installations that use one or more of the specific systems described below in the Specialty Skills section. These other vehicles and installations include (but are not limited to) large water vessels such as battleships, military submarines, and cargo ships; jet fighters and large commercial aircraft; and radar outposts and gun emplacements, space stations, etc. 
+            It also applies to other types of vehicles or installations that use one or more of the specific systems described below in the Specialty Skills section. These other vehicles and installations include (but are not limited to) large water vessels such as battleships, military submarines, and cargo ships; jet fighters and large commercial aircraft; and radar outposts and gun emplacements, space stations, etc.
 
             For full details on how **System Operation** skills are used, see the sections on ["What's in a Spaceship?"](/core-mechanics/vehicles-and-vessels/) and ["Space Vehicle Combat"](/core-mechanics/vehicles-and-vessels#space-vehicle-combat).
       - es:
@@ -5822,7 +5755,7 @@ items:
         trained_only: false
       weapons:
         attribute: INT
-        cost: 6
+        cost: 3
         url: /skills/system-operation#weapons
         localized:
           - en:
