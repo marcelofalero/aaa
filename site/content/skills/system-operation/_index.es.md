@@ -41,7 +41,7 @@ Un especialista en sensores puede operar con precisión todos los equipos de sen
 ---
 
 ## Armas
-{{< specialty attr="INT" untrained="yes" cost="6" >}}
+{{< specialty attr="INT" untrained="yes" cost="3" >}}
 
 Un especialista en armas puede operar con precisión todos los sistemas de armas a bordo. En la nave espacial Combate, el operador de armas elige objetivos y realiza ataques.
 

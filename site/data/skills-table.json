@@ -436,7 +436,7 @@
                             "skill": "Intuition",
                             "attribute": "WIL",
                             "url": "/skills/awareness#intuition",
-                            "cost": 1,
+                            "cost": 3,
                             "type": "Specialty",
                             "css_class": ""
                         },
@@ -465,14 +465,6 @@
                     "cost": 6,
                     "type": "Broad",
                     "items": [
-                        {
-                            "skill": "Creativity, Specific Skill",
-                            "attribute": "WIL",
-                            "url": "/skills/creativity#creativity-specific-skill",
-                            "cost": 3,
-                            "type": "Specialty",
-                            "css_class": ""
-                        },
                         {
                             "skill": "The Intangible",
                             "attribute": "WIL",
@@ -818,14 +810,6 @@
                             "css_class": ""
                         },
                         {
-                            "skill": "Gamble",
-                            "attribute": "PER",
-                            "url": "/skills/deception#gamble",
-                            "cost": 4,
-                            "type": "Specialty",
-                            "css_class": ""
-                        },
-                        {
                             "skill": "Gamble-Logic-Games",
                             "attribute": "INT",
                             "url": "/skills/deception#gamble-logic-games",
@@ -919,7 +903,7 @@
                             "skill": "Search",
                             "attribute": "WIL",
                             "url": "/skills/investigate#search",
-                            "cost": 1,
+                            "cost": 3,
                             "type": "Specialty",
                             "css_class": ""
                         },
@@ -1335,7 +1319,7 @@
                             "skill": "Weapons",
                             "attribute": "INT",
                             "url": "/skills/system-operation#weapons",
-                            "cost": 6,
+                            "cost": 3,
                             "type": "Specialty",
                             "css_class": ""
                         }

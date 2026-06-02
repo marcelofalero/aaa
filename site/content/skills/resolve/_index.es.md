@@ -67,8 +67,8 @@ Un Personaje recupera naturalmente una cierta cantidad de cajas Herida según el
 **Daño Mortal:** El daño Mortal **no se puede curar de forma natural**; solo la aplicación de la habilidad **Ciencias médicas—cirugía** puede reparar el daño de Mortal.
 
 #### Modificadores de actividad
-Durante la curación natural, se considera que todas las comprobaciones se realizan mientras el Personaje realiza una actividad mínima. 
-- **Descanso total:** Si el Personaje se confina a una cama de hospital o permanece en estado de reposo total durante el período, el cheque recibe un **-2 Bonificación de paso**. 
+Durante la curación natural, se considera que todas las comprobaciones se realizan mientras el Personaje realiza una actividad mínima.
+- **Descanso total:** Si el Personaje se confina a una cama de hospital o permanece en estado de reposo total durante el período, el cheque recibe un **-2 Bonificación de paso**.
 - **Actividad normal:** Si el Personaje realiza una actividad normal, el cheque recibe un **+2 Penalización de paso**.
 
 ---

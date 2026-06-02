@@ -1,6 +1,6 @@
 ---
 attribute: WIL
-cost: 1
+cost: 3
 url: /skills/investigate#search
 trained_only: false
 name: Search

@@ -17,9 +17,9 @@ Vaulting is a vertical leap enhanced by assistance (springing off an object or u
 ## Aerobatics
 {{< specialty attr="DEX" untrained="yes" cost="3" >}}
 
-This specialty skill represents a character's mastery of complex maneuvers during personal flight, whether through natural wings, specialized jump-packs, or gravitic personal flight devices (GADS). 
+This specialty skill represents a character's mastery of complex maneuvers during personal flight, whether through natural wings, specialized jump-packs, or gravitic personal flight devices (GADS).
 
-While very basic maneuvering in flight is covered by the Acrobatics broad skill, Aerobatics is required for high-speed turns, precise landing, evasive maneuvers, and aerial acrobatics. 
+While very basic maneuvering in flight is covered by the Acrobatics broad skill, Aerobatics is required for high-speed turns, precise landing, evasive maneuvers, and aerial acrobatics.
 
 At **Rank 4** in **Armor Operation—Propulsion Systems**, this skill can also be used for complex maneuvers using a powered suit's integrated thrusters.
 

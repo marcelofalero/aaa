@@ -20,7 +20,7 @@ La mayoría de las veces, los personajes con puntuaciones respetables en Alerta 
 - **Habilidades del oponente:** El uso de ciertas habilidades por parte de otro Personaje (como Sigilo o Seguridad) puede agregar modificadores a una prueba de Alerta.
 
 ## Intuición
-{{< specialty attr="WIL" untrained="yes" cost="1" >}}
+{{< specialty attr="WIL" untrained="yes" cost="3" >}}
 
 Este Especialidad representa los instintos naturales de un Personaje: la capacidad de sentir el peligro cuando no hay signos evidentes, evitar la sorpresa o dar un salto lógico intuitivo sin el apoyo de hechos concretos. Es la capacidad de hacer una "mejor suposición" en una situación determinada.
 

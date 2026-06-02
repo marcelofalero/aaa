@@ -20,7 +20,7 @@ More often than not, characters with respectable scores in Awareness or its spec
 - **Opponent Skills:** Another character’s use of certain skills (such as Stealth or Security) can add modifiers to an Awareness check.
 
 ## Intuition
-{{< specialty attr="WIL" untrained="yes" cost="1" >}}
+{{< specialty attr="WIL" untrained="yes" cost="3" >}}
 
 This specialty skill represents a character's natural instincts—the ability to sense danger when no obvious signs are evident, to avoid surprise, or to make an intuitive leap of logic without the support of hard facts. It is the ability to make a "best guess" in a given situation.
 
