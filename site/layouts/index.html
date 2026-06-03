@@ -55,6 +55,24 @@
           </p>
         </div>
         {{ end }}
+                {{ else if eq .Section "warships" }}
+        {{ range .Sections }}
+        <div class="mb3">
+          <h3 class="f6 ttu tracked neon-cyan mb2 o-80"><a href="{{ .RelPermalink }}" class="link neon-cyan hover-white">{{ .Title }}</a></h3>
+          <ul>
+            {{ range .Pages.ByWeight }}
+            <li class="flex items-center mb1">
+              <span class="mr2 neon-cyan">›</span>
+              <a href="{{ .RelPermalink }}" class="link silver hover-white f5 flex-shrink-0 whitespace-nowrap">{{ .Title }}</a>
+              {{ with .Description }}
+              <div class="toc-dotted-line"></div>
+              <span class="toc-description f7 o-50 truncate" title="{{ . }}">{{ . }}</span>
+              {{ end }}
+            </li>
+            {{ end }}
+          </ul>
+        </div>
+        {{ end }}
         {{ else }}
         {{/* Default section layout */}}
         <ul>
