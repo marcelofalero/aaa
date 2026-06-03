@@ -12,8 +12,9 @@ If you don’t want to figure out your ship’s manpower requirements quite yet,
 
 ### Life Support
 
-To support human life in space, a ship must maintain an atmosphere and temperature similar to the human norm. Furthermore, the ship must have some way to provide its crew with water and deal with their organic waste. One life support system is capable of supporting up to twenty humans indefinitely (provided food and water is available, of course). Most ships carry at least twice as much life support capacity as they need to accommodate passengers and survive damage. Ships with no life support systems must be crewed by robots or characters in spacesuits.
-At PL 7 and 8, more efficient and advanced life support systems become available. Refer to the table below.
+To support human life in space, a ship must maintain an atmosphere and temperature similar to the human norm. Furthermore, the ship must have some way to provide its crew with water and deal with their organic waste. One life support system is capable of supporting up to twenty humans indefinitely (provided food and water is available, of course). 
+
+Most ships carry at least twice as much life support capacity as they need to accommodate passengers and survive damage. Ships with no life support systems must be crewed by robots or characters in spacesuits. At PL 7 and 8, more efficient and advanced life support systems become available. Refer to the table below.
 
 ### Berthing
 
@@ -32,6 +33,7 @@ While most starship crews find themselves crammed into bunks with very little pr
 ### Stores
 
 In addition to oxygen, the crew requires food and water. This is represented by stores. Simply put, a single person consumes 1 day of stores each day. A crew of twenty consumes 20 days of stores each day. Standard berthing includes a small amount of stores—500 days per system installed. Note that water recycling systems are generally included in the life support system of the ship, but some stores must still be allocated to replace unrecoverable water.
+
 Stores must be replenished from time to time. The ship’s total stores divided by the total number of people on board dictates how long the ship can voyage without replenishing its stores. In emergencies, stores can be tightly rationed, effectively doubling the life of the ship’s stores, but the crew will slowly weaken during this time.
 
 ### Table 5-6: Support Systems
@@ -62,7 +64,9 @@ Any ship with more than 50 crewmen should be equipped with a galley. The galley 
 
 ### Medical Bay
 
-While the basic first-aid kit is available on virtually any ship, an extended voyage requires better medical facilities. The medical bay supports the ship’s doctor (even if the doctor is an AI or an automated system) and offers an excellent chance for severely injured characters to recover. It can accommodate 10 patients at a time. The medical bay includes an isolation ward, a surgery, and a small biological sciences lab. At PL 7 and 8, the medical bay incorporates increasingly sophisticated automated systems, including autodocs and stasis beds. The cost, power, and hull requirements don’t change.
+While the basic first-aid kit is available on virtually any ship, an extended voyage requires better medical facilities. The medical bay supports the ship’s doctor (even if the doctor is an AI or an automated system) and offers an excellent chance for severely injured characters to recover. It can accommodate 10 patients at a time. 
+
+The medical bay includes an isolation ward, a surgery, and a small biological sciences lab. At PL 7 and 8, the medical bay incorporates increasingly sophisticated automated systems, including autodocs and stasis beds. The cost, power, and hull requirements don’t change.
 
 ### Hydroponics Bay
 
