@@ -6,73 +6,22 @@ weight = 30
 
 ## Step 3: Power Plant
 
-Polymeric armor is made up of advanced polymers, like carbon fiber and high-grade fiberglass. It is relatively cheap and light, but doesn’t offer tremendous protection.
+The heart of any ship is its power plant. It takes vast amounts of power to drive a ship through space, energize its weaponry and defenses, and supply heat and gravity. An under-powered ship may have dozens of deadly weapons, but no capacity to get them to the fight or employ them all once it’s there.
 
-The heart of any ship is its power plant. It takes vast amounts of power to drive a ship through space, energize its weaponry and defenses, and supply heat and gravity. An under-powered ship may have dozens of deadly weapons, but no capacity to get them to the fight or employ them all once it’s there. The ship’s power plant supplies one of the three basic commodities you’ll want to keep track of as you build your ship: Power. (The other two commodities are hull points and money, in case you forgot.) Many systems require a specified amount of power to function, so you’ll want to make sure that you know whether or not your ship has enough power points to make everything you deem important work at the same time. Power plants are rated by how many power points they produce per point of durability. For example, if you’re building a 10-durability fighter, you might decide to install a mass reactor of 3 durability. This generates 7.5 power
+The ship’s power plant supplies one of the three basic commodities you’ll want to keep track of as you build your ship: Power. (The other two commodities are hull points and money, in case you forgot.) Many systems require a specified amount of power to function, so you’ll want to make sure that you know whether or not your ship has enough power points to make everything you deem important work at the same time.
 
-Alloy
+Power plants are rated by how many power points they produce per point of durability. For example, if you’re building a 10-durability fighter, you might decide to install a mass reactor of 3 durability. This generates 7.5 power points for the ship (round up to 8), and costs 600,000.
 
-Reflective Consisting of dense, highly polished plates of metal, reflective armor is effective against simple energy weapons. It is quickly defeated by more advanced weaponry.
+Some power plants can’t be miniaturized past a certain point and are unavailable for minimal installations. This is expressed as a minimum size for the power plant. Some power plants may also have a maximum size, indicating that the technology just isn’t suited for extremely large applications. However, you can get around the maximum size limitation by installing multiple small power plants—power from all sources counts for the ship’s total.
 
-Design Tip: Armor Your ship design should devote about 10 to 20 percent of its hull points to defenses—armor and shields. Of course, you can maximize protection, but you’ll have to give up firepower or maneuverability. Similarly, going light on the armor leaves you more room for weapons and engines. It’s your call.
-
-### Table 5-2: Armor
-
-| Tech | LI | HI | En | Hull | Cost/Hull Pt. | 59 |
-|---|---|---|---|---|---|---|
-| Polymeric, light | - | d4-1 | d4-1 | d4-2 | 2.5% | $50 K |
-| Reflective, light | - | d4-3 | d4-2 | d6-1 | 2.5% | $50 K |
-| Alloy, medium | - | d4+1 | d4+1 | d4 | 5% | $150 K |
-| Polymeric, medium | - | d4 | d4 | d4-1 | 5% | $100 K |
-| Reflective, medium | - | d4-2 | d4-1 | d6 | 5% | $100 K |
-| Alloy, heavy* | - | d6+1 | d6+1 | d6 | 10% | $300 K |
-| Reflective, heavy* | - | d4 | d4 | d8+1 | 10% | $200 K |
-| Alloy, super-heavy! | - | d6+3 | d6+3 | d6+2 | 20% | $600 K |
-| Cerametal, light | - | d6-1 | d6-1 | d6-1 | 2.5% | $100 K |
-| Cerametal, medium | - | d4+1 | d4+1 | d4+1 | 5% | $200 K |
-| Neutronite, medium | S | d6+1 | d6+1 | d6+1 | 5% | $500 K |
-| Reactive, medium | - | d4+2 | d6 | d4 | 5% | $150 K |
-| Cerametal, heavy* | - | d8 | d8 | d8 | 10% | $400 K |
-| Neutronite, heavy* | S | d8+1 | d8+1 | d8+1 | 10% | $1 M |
-| Reactive, heavy* | - | 2d4+1 | d8 | d4+1 | 10% | $300 K |
-| Neutronite, super-heavy! | S | d8+3 | d8+3 | d8+3 | 20% | $2 M |
-| Reactive, super-heavy! | - | 2d4+3 | d8+2 | d4+3 | 20% | $600 K |
-| Crystallis, light | P, X | d6-1 | d6 | d6+2 | 2.5% | $250 K |
-| Nanofluidic, light | S, C | d8-1 | d8-1 | d8 | 2.5% | $500 K |
-| Crystallis, medium | P, X | d6 | d6+1 | 2d4+1 | 5% | $500 K |
-| Nanofluidic, medium | S, C | 2d4 | 2d4 | 2d4 | 5% | $1 M |
-| Nanofluidic, heavy* | S, C | 2d4+1 | 2d4+2 | 2d4+1 | 10% | $2 M |
-| Nanofluidic, super-heavy! | S, C | 2d4+3 | 2d4+4 | 2d4+3 | 20% | $4 M |
-| points for the ship (round up to 8), and costs 600,000. | For example, one large mass reactor capable of generat- |
-| Some power plants can’t be miniaturized past a certain | ing 10 points of power requires 4 durability points (each |
-| point and are unavailable for minimal installations. This is | durability point provides 2.5 points of power). This installa- |
-| expressed as a minimum size for the power plant. Some | tion costs 100,000 for the reactor, plus 100,000 for each of |
-| power plants may also have a maximum size, indicating | the four durability points associated with the reactor—a total |
-| that the technology just isn’t suited for extremely large ap- | of 500,000. If you bought this as four one-durability mass |
-| plications. However, you can get around the maximum size | reactors, you’d pay the base cost times four, plus the dura- |
-| limitation by installing multiple small power plants—power | bility cost again, for a total of 800,000. Note that some |
-| from all sources counts for the ship’s total. | power systems are difficult to enlarge, and have a relatively |
-| Since you’re the designer, you can decide whether multi- | high cost per durability point, while other systems can be |
-| ple durability points spent on your power plant make up | easily scaled up and have a low cost per durability point. |
-| age—it’s hard to knock out all of your power at one shot. | At higher Progress Levels, most power plants require refu- |
-| However, it’s more expensive to build a ship this way. | eling only at infrequent intervals. Their fuel is either inex- |
-
-
-
-
-* Heavy armors cannot be installed on small craft. ! Super-heavy armors cannot be installed on small craft or light ships.
-
-Tech: The technology track required for this type of armor. If two technologies are listed, either will suffice. LI, HI, En: The armor’s protective value against Low Impact, Hi Impact, and Energy attacks, respectively. Hull: The amount of the ship’s hull points required by armor of this weight. Refer to the hull table for the number of hull points each percentage equals (2.5% is half of 5%, rounded normally). Cost per Hull Point: Each hull point allocated to armor costs this much money. If the armor installation takes less than 1 hull point, use a minimum cost of 1 hull point worth of armor. points for the ship (round up to 8), and costs 600,000. Some power plants can’t be miniaturized past a certain point and are unavailable for minimal installations. This is expressed as a minimum size for the power plant. Some power plants may also have a maximum size, indicating that the technology just isn’t suited for extremely large applications. However, you can get around the maximum size limitation by installing multiple small power plants—power from all sources counts for the ship’s total. Since you’re the designer, you can decide whether multiple durability points spent on your power plant make up one big power plant, or several small power plants scattered around the ship. The advantage of several small plants is that your ship is somewhat more resistant to damage—it’s hard to knock out all of your power at one shot. However, it’s more expensive to build a ship this way.
+Since you’re the designer, you can decide whether multiple durability points spent on your power plant make up one big power plant, or several small power plants scattered around the ship. The advantage of several small plants is that your ship is somewhat more resistant to damage—it’s hard to knock out all of your power at one shot. However, it’s more expensive to build a ship this way.
 
 For example, one large mass reactor capable of generating 10 points of power requires 4 durability points (each durability point provides 2.5 points of power). This installation costs 100,000 for the reactor, plus 100,000 for each of the four durability points associated with the reactor—a total of 500,000. If you bought this as four one-durability mass reactors, you’d pay the base cost times four, plus the durability cost again, for a total of 800,000. Note that some power systems are difficult to enlarge, and have a relatively high cost per durability point, while other systems can be easily scaled up and have a low cost per durability point.
 
-Fuel Tanks and Refueling At higher Progress Levels, most power plants require refueling only at infrequent intervals. Their fuel is either inex-
-
 ### Table 5-3: Power Plants
 
-| 60 | Power Plant | Tech | Pow |
-|---|---|---|---|
-| Size | Fuel? |
+| Power Plant | Tech | Pow | Base Cost | Cost/Hull Pt. | Min Size | Fuel? | Fuel Cost | Fuel Efficiency |
+|---|---|---|---|---|---|---|---|---|
 | Solar Cell | S | 1.5 | $500 K | $200 K | 4 | No | - | - |
 | Fission Generator | - | 1.5 | $1 M | $100 K | 4 | No | - | - |
 | Fusion Generator | F | 2.0 | $1 M | $200 K | 2 | Yes | $1 K | 200 |
@@ -85,194 +34,234 @@ Fuel Tanks and Refueling At higher Progress Levels, most power plants require re
 | Matter Converter | M, X | 4.5 | $4 M | $200 K | 2 | No | - | - |
 | Quantum Cell | Q | 5.0 | $5 M | $400 K | 3 | No | - | - |
 | Singularity Generator | G | 6.0 | $10 M | $500 K | 20 | No | - | - |
-| haustible or needs to be replaced only when the entire ship | a fission or fusion generator converts the energy of atomic |
-| is overhauled. However, many PL 6 power plants require | bonds into heat energy which is then transformed into elec- |
-| fuel tank in addition to the power systems proper. | tricity, or some other easily used energy form. |
-| The amount of fuel a ship carries is up to you, but the | Most of these power systems actually carry fuel of one |
-| major consideration here is endurance. In other words, how | kind or another, even if no fuel tank is required. A fission |
-| long can the power plant operate on one tank of fuel? This | generator doesn’t need thousands of gallons of water, but it |
-| is measured by the fuel tank’s total power-days. If a fuel | does need some amount of uranium or plutonium which is |
-| tank holds 100 power-days, it can operate a power plant | consumed over time. The duration of a typical plant and its |
-| that generates 1 point of power for 100 days, 2 points of | refueling costs are addressed in each power system de- |
-| power for 50 days, 20 points of power for 5 days, and so | scription. |
-| least a couple of weeks without refueling. | The solar cell converts light and heat energy from a nearby |
-| Power Systems | (150 million kilometers) of a Sol-type star, the solar cell’s |
-| With the possible exception of the quantum cell, a power | power generation capacity increases by 50 percent; simi- |
-| generation system doesn’t create energy. Instead, it trans - | larly, at a distance of more than 5 AU from a Sol-type star, |
-| forms energy from one type to another, more usable, type. | the solar cell’s power generation capacity drops by 50 per- |
-| A steamship’s boiler transforms the energy stored in the | cent. For example, a cruiser equipped with 40 durability |
-| chemical bonds of its fuel oil into heat energy, which is then | points of solar cells normally generates 40 points of power; |
-| transformed into kinetic energy through a turbine. Similarly, | this increases to 60 power points in the inner portion of a |
 
+**Tech**: The technology track necessary to produce this power system.
+**Pow**: The amount of power produced by a power plant of 1 hull point. Fractions round normally, so a 2-hull point antimatter reactor (3.0 power produced per hull point) produces 6 power points.
+**Base Cost**: The cost for each separate power plant installed.
+**Cost/Hull Point**: The cost for each hull point of the power plant, cumulative with the cost for each new plant.
+**Min Size**: The smallest power plant possible, in hull points.
+**Max Size**: The largest power plant possible, in hull points.
+**Fuel**: Whether or not the power system requires additional fuel tankage.
+**Fuel Cost**: The cost per hull point of fuel purchased.
+**Efficiency**: The number of power-days that can generated by 1 hull point of fuel. For example, one hull point of fuel provides 200 power-days for a fusion generator of 1 hull point size, or 20 power-days for a fusion generator of 10 hull points.
 
+### Fuel Tanks and Refueling
 
+At higher Progress Levels, most power plants require refueling only at infrequent intervals. Their fuel is either inexhaustible or needs to be replaced only when the entire ship is overhauled. However, many PL 6 power plants require fuel tank in addition to the power systems proper.
 
-Tech: The technology track necessary to produce this power system. Pow: The amount of power produced by a power plant of 1 hull point. Fractions round normally, so a 2-hull point antimatter reactor (3.0 power produced per hull point) produces 6 power points. Base Cost: The cost for each separate power plant installed. Cost/Hull Point: The cost for each hull point of the power plant, cumulative with the cost for each new plant. Min Size: The smallest power plant possible, in hull points. Max Size: The largest power plant possible, in hull points. Fuel: Whether or not the power system requires additional fuel tankage. Fuel Cost: The cost per hull point of fuel purchased. Efficiency: The number of power-days that can generated by 1 hull point of fuel. For example, one hull point of fuel provides 200 power-days for a fusion generator of 1 hull point size, or 20 power-days for a fusion generator of 10 hull points. haustible or needs to be replaced only when the entire ship is overhauled. However, many PL 6 power plants require fuel tank in addition to the power systems proper. The amount of fuel a ship carries is up to you, but the major consideration here is endurance. In other words, how long can the power plant operate on one tank of fuel? This is measured by the fuel tank’s total power-days. If a fuel tank holds 100 power-days, it can operate a power plant that generates 1 point of power for 100 days, 2 points of power for 50 days, 20 points of power for 5 days, and so on. If your design calls for 10 power points to run its major systems, it’s a very good idea to purchase multiple fuel tanks (or one big one) so that your ship will operate for at least a couple of weeks without refueling.
+The amount of fuel a ship carries is up to you, but the major consideration here is endurance. In other words, how long can the power plant operate on one tank of fuel? This is measured by the fuel tank’s total power-days. If a fuel tank holds 100 power-days, it can operate a power plant that generates 1 point of power for 100 days, 2 points of power for 50 days, 20 points of power for 5 days, and so on. If your design calls for 10 power points to run its major systems, it’s a very good idea to purchase multiple fuel tanks (or one big one) so that your ship will operate for at least a couple of weeks without refueling.
 
-Power Systems With the possible exception of the quantum cell, a power generation system doesn’t create energy. Instead, it trans forms energy from one type to another, more usable, type. A steamship’s boiler transforms the energy stored in the chemical bonds of its fuel oil into heat energy, which is then transformed into kinetic energy through a turbine. Similarly,
+### Power Systems
 
-a fission or fusion generator converts the energy of atomic bonds into heat energy which is then transformed into electricity, or some other easily used energy form. Most of these power systems actually carry fuel of one kind or another, even if no fuel tank is required. A fission generator doesn’t need thousands of gallons of water, but it does need some amount of uranium or plutonium which is consumed over time. The duration of a typical plant and its refueling costs are addressed in each power system description.
+With the possible exception of the quantum cell, a power generation system doesn’t create energy. Instead, it transforms energy from one type to another, more usable, type. A steamship’s boiler transforms the energy stored in the chemical bonds of its fuel oil into heat energy, which is then transformed into kinetic energy through a turbine. Similarly, a fission or fusion generator converts the energy of atomic bonds into heat energy which is then transformed into electricity, or some other easily used energy form.
 
-Solar Cell (PL 6) The solar cell converts light and heat energy from a nearby star into shipboard power through large banks of highly efficient photovoltaic cells and heat exchangers. Within 1 AU (150 million kilometers) of a Sol-type star, the solar cell’s power generation capacity increases by 50 percent; similarly, at a distance of more than 5 AU from a Sol-type star, the solar cell’s power generation capacity drops by 50 percent. For example, a cruiser equipped with 40 durability points of solar cells normally generates 40 points of power; this increases to 60 power points in the inner portion of a
+Most of these power systems actually carry fuel of one kind or another, even if no fuel tank is required. A fission generator doesn’t need thousands of gallons of water, but it does need some amount of uranium or plutonium which is consumed over time. The duration of a typical plant and its refueling costs are addressed in each power system description.
 
-star system, and drops to 20 power points in the outer portion of a star system. Note that particularly bright stars (class O, B, or A) extend the range of high-efficiency and power drop-off to 2 AU and 10 AU, while very small stars (class K and M) change these figures to 0.5 AU and 2 AU.
+**Solar Cell (PL 6)**
+The solar cell converts light and heat energy from a nearby star into shipboard power through large banks of highly efficient photovoltaic cells and heat exchangers. Within 1 AU (150 million kilometers) of a Sol-type star, the solar cell’s power generation capacity increases by 50 percent; similarly, at a distance of more than 5 AU from a Sol-type star, the solar cell’s power generation capacity drops by 50 percent. For example, a cruiser equipped with 40 durability points of solar cells normally generates 40 points of power; this increases to 60 power points in the inner portion of a star system, and drops to 20 power points in the outer portion of a star system. Note that particularly bright stars (class O, B, or A) extend the range of high-efficiency and power drop-off to 2 AU and 10 AU, while very small stars (class K and M) change these figures to 0.5 AU and 2 AU.
 
-Fission Generator (PL 6)
+**Fission Generator (PL 6)**
+Also known as an atomic or nuclear power plant, the fission generator extracts energy from a controlled chain reaction of uranium or plutonium. Fission generators require heavy shielding, so small installations are very difficult. However, the technology is easy to apply to large installations.
+A fission generator’s fuel rods last approximately two to four years, and then must be replaced at a cost of 50,000 per hull point of the power plant.
 
-similar to radioactive decay in which energy is released by the transformation of dark matter to “normal matter”. The mass reactor harnesses this fantastic energy. Like the antimatter reactor, the mass reactor requires no fuel tank; the dark matter and its containment device is already included. The mass reactor requires refueling about once every six months, at a cost equal to 5,000 per hull point of the power plant.
+**Fusion Generator (PL 6)**
+A fusion generator harnesses the power of nuclear fusion to create shipboard power. A containment device “bottles” the reaction in magnetic fields, since the generator’s core burns at temperatures as hot as the surface of a star. Fortunately, most fusion generators are designed to fail-safe in the event of damage.
+The fusion generator uses hydrogen for fuel, but like the cold fusion reactor, this is often stored as water.
 
-Also known as an atomic or nuclear power plant, the fission generator extracts energy from a controlled chain reaction of uranium or plutonium. Fission generators require heavy shielding, so small installations are very difficult. However, the technology is easy to apply to large installations. A fission generator’s fuel rods last approximately two to four years, and then must be replaced at a cost of 50,000 per hull point of the power plant.
-
-Tachyons are particles that move faster than the speed of light. The tachyonic collider slows these particles and harnesses their energy. While the collider is expensive and it doesn’t provide as much power as other power systems at this progress level, it has one significant advantage: It doesn’t require any fuel at all.
-
-Fusion Generator (PL 6)
-
-Dynamic Mass Reactor (PL 8)
-
-A fusion generator harnesses the power of nuclear fusion to create shipboard power. A containment device “bottles” the reaction in magnetic fields, since the generator’s core burns at temperatures as hot as the surface of a star. Fortunately, most fusion generators are designed to fail-safe in the event of damage. The fusion generator uses hydrogen for fuel, but like the cold fusion reactor, this is often stored as water.
-
-Basically a refinement of the PL 7 mass reactor, the dynamic mass reactor accelerates the decay process, releasing more energy than its predecessor. It’s also a smaller and safer installation. The dynamic mass reactor requires refueling once every six months, at a cost equal to 10,000 per hull point of the power plant. For example, a dynamic mass reactor of 30 durability points costs 300,000 to refuel.
-
-Grav-Fusion Cell (PL 6)
-
-Matter Converter (PL 8)
-
+**Grav-Fusion Cell (PL 6)**
 Based on a fraal device, the grav-fusion cell employs artificial gravity fields to contain and enhance the performance of a fusion reaction. It’s otherwise similar to the fusion generator.
 
+**Antimatter Reactor (PL 7)**
+The antimatter reactor annihilates particles of antimatter to create vast amounts of power. Like the fusion generator, it requires some very careful containment procedures, and a significant portion of the generator’s output must be devoted to maintaining the magnetic fields that insulate its fuel source from its surroundings. No fuel tank is required—the antimatter and its containment device are included in the durability cost and price of the reactor.
+The antimatter reactor requires refueling about once per three to five years, although running at a minimal power configuration (nothing more than life support) could extend this to ten or fifteen years between fueling. Antimatter is expensive; refueling the reactor costs half the amount of money spent on the power plant at the time of its construction.
+
+**Mass Reactor (PL 7)**
+Dark matter technology presumes that nonbaryonic dark matter may have properties unknown to 20th century science. Specifically, dark matter can undergo a decay process similar to radioactive decay in which energy is released by the transformation of dark matter to “normal matter”. The mass reactor harnesses this fantastic energy. Like the antimatter reactor, the mass reactor requires no fuel tank; the dark matter and its containment device is already included.
+The mass reactor requires refueling about once every six months, at a cost equal to 5,000 per hull point of the power plant.
+
+**Tachyonic Collider (PL 7)**
+Tachyons are particles that move faster than the speed of light. The tachyonic collider slows these particles and harnesses their energy. While the collider is expensive and it doesn’t provide as much power as other power systems at this progress level, it has one significant advantage: It doesn’t require any fuel at all.
+
+**Dynamic Mass Reactor (PL 8)**
+Basically a refinement of the PL 7 mass reactor, the dynamic mass reactor accelerates the decay process, releasing more energy than its predecessor. It’s also a smaller and safer installation.
+The dynamic mass reactor requires refueling once every six months, at a cost equal to 10,000 per hull point of the power plant. For example, a dynamic mass reactor of 30 durability points costs 300,000 to refuel.
+
+**Matter Converter (PL 8)**
 This device produces energy through the total conversion of matter. Literally anything can be used as fuel. While the matter converter is expensive, it produces an immense amount of power and requires no significant fuel source.
 
-Tachyonic Collider (PL 7)
+**Quantum Cell (PL 8)**
+Harnessing the Holy Grail of energy sources—the quantum fluctuation or zero-point energy observed in vacuum—the quantum cell produces an enormous amount of energy from no fuel source at all.
 
-Antimatter Reactor (PL 7) The antimatter reactor annihilates particles of antimatter to create vast amounts of power. Like the fusion generator, it requires some very careful containment procedures, and a significant portion of the generator’s output must be devoted to maintaining the magnetic fields that insulate its fuel source from its surroundings. No fuel tank is required—the antimatter and its containment device are included in the durability cost and price of the reactor. The antimatter reactor requires refueling about once per three to five years, although running at a minimal power configuration (nothing more than life support) could extend this to ten or fifteen years between fueling. Antimatter is expensive; refueling the reactor costs half the amount of money spent on the power plant at the time of its construction.
+> **Design Tip: Power**
+> Assuming you’re using an average power system—say, a mass reactor—you probably want to devote about 10 to 15 percent of your ship’s hull points to its power plant. (Fuel tanks would run another 5 to 10 percent, if necessary.) This should give you plenty of power points for all of your engines, weapons, and defenses. Under-powering a ship is a real nuisance, since you’ll have to decide which systems need to be powered during each round of combat. Providing a ship with more power than it needs is safer, since you can take damage to the power plant and not lose the ability to fight effectively, but it may waste hull space and money that could be better spent elsewhere.
 
-Mass Reactor (PL 7) Dark matter technology presumes that nonbaryonic dark matter may have properties unknown to 20th century science. Specifically, dark matter can undergo a decay process
-
-Quantum Cell (PL 8) Harnessing the Holy Grail of energy sources—the quantum fluctuation or zero-point energy observed in vacuum—the quantum cell produces an enormous amount of energy from no fuel source at all.
-
-Design Tip: Power Assuming you’re using an average power system—say, a mass reactor—you probably want to devote about 10 to 15 percent of your ship’s hull points to its power plant. (Fuel tanks would run another 5 to 10 percent, if necessary.) This should give you plenty of power points for all of your engines, weapons, and defenses. Under-powering a ship is a real nuisance, since you’ll have to decide which systems need to be powered during each round of combat. Providing a ship with more power than it needs is safer, since you can take damage to the power plant and not lose the ability to fight effectively, but it may waste hull space and money that could be better spent elsewhere.
-
-Singularity Generator (PL 9)
-
-Note that all ships are assigned a Maneuverability Class based on the hull type, which is a measure of how often they can make course changes during a combat round, pro vided they have sufficient acceleration remaining. Engines determine acceleration, but maneuverability is based on the size of the ship. Acceleration is normally measured in Mpp, or megameters per phase per phase. An acceleration of 1 Mpp means that the ship can change its velocity by 1 megameter per phase (roughly 1,000 kilometers per hour) in a single phase of acceleration. Some low-tech engines are instead rated in KPH per phase, or kilometers per hour per phase. An acceleration of 30 KPH per phase is roughly equal to 1 G; powerful engines are capable of thousands of Gs.
-
-The singularity generator is an incredibly powerful device that taps the power of a small black hole. It’s not a generator so much as an extremely capacious battery, but the energy contained in a tiny black hole is staggering. Over the course of years, the singularity will shrink as it “evaporates”, or loses energy; the singularity generator must be refueled by the creation of a new black hole. A singularity generator lasts for 10 to 15 years before refueling is required. Refueling costs an amount of money equal to half the cost of the power plant at the time of construction.
+**Singularity Generator (PL 9)**
+The singularity generator is an incredibly powerful device that taps the power of a small black hole. It’s not a generator so much as an extremely capacious battery, but the energy contained in a tiny black hole is staggering.
+Over the course of years, the singularity will shrink as it “evaporates”, or loses energy; the singularity generator must be refueled by the creation of a new black hole. A singularity generator lasts for 10 to 15 years before refueling is required. Refueling costs an amount of money equal to half the cost of the power plant at the time of construction.
 
 ## Step 4: Engines
 
 Without engines, a ship can’t go anywhere. Many small ships rely on their mobility and maneuverability as their first (and sometimes only) line of defense against enemy fire. Engine systems consume power points created by the ship’s power plant and convert them into acceleration. Like armor, engine systems are proportional to the size of the ship and require the devotion of some percentage of the ship’s hull points to reach the designated breakpoints of effectiveness.
 
-Engine Fuel Requirements Several engine types require some kind of fuel tanks, above and beyond the fuel requirements for the ship’s power plant. Each hull point of fuel contains a certain number of thrust-days for a 1-hull point engine; this is the number of days the engine could operate continuously on 1 hull point of fuel. Engines with 2, 3, or more hull points
+### Engine Fuel Requirements
 
-### ### Table 5-4: Engines
-| Min | Base | Cost/ | Acceleration Rating at... |
-|---|---|---|---|
-| Engine | Tech Pow | Size | Cost. | Hull | 5% | 10% 15% 20% 30% 40% 50% Eff. Cost |
-| Planetary thruster | - | 1.0 | 1 | $200 K | $50 K | 0.1* | 0.25* | 0.5* | 1* | - | - | - | 10 $10 K |
-| Photon sail | - | - | 5 | $500 K | $50 K | -- | 0.02* | 0.05* | 0.1* | 0.15* | 0.2* | 0.25* - | - |
-| Fusion torch | - | 0.33 | 3 | $500 K | $100 K | 0.5* | 1* | 1.5* | 2* | 3* | 4* | 5* | 200 $1 K |
-| Ion engine | S | 0.5 | 2 | $800 K | $200 K | -- | 0.5* | 1* | 1.5* | 2* | 3* | 4* 400 $5 K |
-| Particle impulse | - | 0.75 | 4 | $500 K | $300 K 0.5 | 1.0 | 1.5 | 2 | 2.5 | 3 | 4 | - | - |
-| Induction engine | G | 1.0 | 2 | $1 M | $500 K 1 | 2 | 3 | 4 | 5 | 6 | 8 | - | - |
-| Inertial flux engine X | 1.0 | 1 | $2 M | $500 K 2 | 3 | 4 | 5 | 6 | 8 | 10 | - | - |
-| Gravitic redirector G | 0.67 | 3 | $3 M | $1 M | 2 | 4 | 6 | 8 | 10 | 12 | 16 | - | - |
-| Spatial compressor T | 2.0 | 4 | $1.5 M | $200 K 3 | 6 | 9 | 12 | 15 | 18 | 20 | - | - |
+Several engine types require some kind of fuel tanks, above and beyond the fuel requirements for the ship’s power plant. Each hull point of fuel contains a certain number of thrust-days for a 1-hull point engine; this is the number of days the engine could operate continuously on 1 hull point of fuel. Engines with 2, 3, or more hull points will burn fuel two, three, and so on times faster than the figure listed. The fuel use figure assumes more or less continuous maximum thrust. Naturally, a ship that spends three weeks drifting without firing its engines consumes no fuel at all.
 
-will burn fuel two, three, and so on times faster than the figure listed. The fuel use figure assumes more or less continuous maximum thrust. Naturally, a ship that spends three weeks drifting without firing its engines consumes no fuel at all.
+### Table 5-4: Engines
 
-Engine System Descriptions Not all engines are created equal. Low-tech engines may take hours, days, or weeks of continuous acceleration to build up to a speed that a high-tech engine can match in a matter of two or three phases. When you select an engine system for your starship, record the engine’s acceleration rating on your ship record sheet and assign the engines to one or more hit locations. See the later part of the chapter for more information.
+| Engine | Tech | Pow | Min Size | Base Cost. | Cost/Hull | Accel @ 5% | @ 10% | @ 15% | @ 20% | @ 30% | @ 40% | @ 50% | Eff. | Cost |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Planetary thruster | - | 1.0 | 1 | $200 K | $50 K | 0.1* | 0.25* | 0.5* | 1* | - | - | - | 10 | $10 K |
+| Photon sail | - | - | 5 | $500 K | $50 K | -- | 0.02* | 0.05* | 0.1* | 0.15* | 0.2* | 0.25* | - | - |
+| Fusion torch | - | 0.33 | 3 | $500 K | $100 K | 0.5* | 1* | 1.5* | 2* | 3* | 4* | 5* | 200 | $1 K |
+| Ion engine | S | 0.5 | 2 | $800 K | $200 K | -- | 0.5* | 1* | 1.5* | 2* | 3* | 4* | 400 | $5 K |
+| Particle impulse | - | 0.75 | 4 | $500 K | $300 K | 0.5 | 1.0 | 1.5 | 2 | 2.5 | 3 | 4 | - | - |
+| Induction engine | G | 1.0 | 2 | $1 M | $500 K | 1 | 2 | 3 | 4 | 5 | 6 | 8 | - | - |
+| Inertial flux engine | X | 1.0 | 1 | $2 M | $500 K | 2 | 3 | 4 | 5 | 6 | 8 | 10 | - | - |
+| Gravitic redirector | G | 0.67 | 3 | $3 M | $1 M | 2 | 4 | 6 | 8 | 10 | 12 | 16 | - | - |
+| Spatial compressor | T | 2.0 | 4 | $1.5 M | $200 K | 3 | 6 | 9 | 12 | 15 | 18 | 20 | - | - |
 
-Photon Sail (PL 6) This device is an immense but incredibly fragile foil structure only a few molecules thick. It uses light pressure from a nearby star or laser drive station for its motive force. Its acceleration rates drop by 50% if the ship is more than 5 AU distant from the system’s star. The sail can be wrecked by the most minor damage, but every ship equipped with a photon sail carries at least three spares. Unfortunately, it takes hours to stow or deploy a sail. Crew Check Crit. Failure Failure Ordinary Good Amazing
+**Tech**: The technology type required to build an engine of this type.
+**Power**: The number of power points required by each hull point assigned to this engine. For example, a 30-hull point fusion torch requires 10 power points to operate.
+**Min Size**: The smallest number of hull points that can be assigned to this system.
+**Base Cost**: The cost for an engine installation of this type.
+**Cost/Hull**: The cost per hull point assigned to this engine; cumulative with the base cost.
+**Acceleration rating at...**: The ship’s acceleration for an installation comprising 5-50% of its overall hull. For example, a ship of 100 hull points with 20 hull points of induction engine possesses an acceleration of 4.
+**Eff.**: The fuel efficiency of the engine. A single hull point devoted to fuel powers a 1-hull point engine for this many days of continuous operation.
+**Cost**: The cost per hull point devoted to fuel for this type of engine.
 
-Deployment d4+1 days 3d4 hours 2d4 hours 1d4 hours 1 hour
+### Engine System Descriptions
+
+Not all engines are created equal. Low-tech engines may take hours, days, or weeks of continuous acceleration to build up to a speed that a high-tech engine can match in a matter of two or three phases. When you select an engine system for your starship, record the engine’s acceleration rating on your ship record sheet and assign the engines to one or more hit locations. See the later part of the chapter for more information.
+
+**Photon Sail (PL 6)**
+This device is an immense but incredibly fragile foil structure only a few molecules thick. It uses light pressure from a nearby star or laser drive station for its motive force. Its acceleration rates drop by 50% if the ship is more than 5 AU distant from the system’s star. The sail can be wrecked by the most minor damage, but every ship equipped with a photon sail carries at least three spares. Unfortunately, it takes hours to stow or deploy a sail. 
+
+| Crew Check | Crit. Failure | Failure | Ordinary | Good | Amazing |
+|---|---|---|---|---|---|
+| Deployment | d4+1 days | 3d4 hours | 2d4 hours | 1d4 hours | 1 hour |
 
 In combat, any weapon hit destroys a deployed photon sail and prevents the sail-ship from making maneuvers until the sail can be re-deployed. The sail-ship will continue on its last course and retain its former speed until it gets a working sail again. Since ships powered exclusively by sails can’t change course easily, assume that all sail-ships are Class I maneuverability. It’s a good idea for a sail-ship to carry a secondary propulsion system such as a small ion engine or rocket for emergency maneuvering and sailing against the sun. Photon sails are completely useless in atmosphere—in fact, they’re instantly destroyed by atmospheric entry. Most sail-ships carry a small back-up propulsion system for fine maneuvering.
 
-Planetary Thruster (PL 6) Several PL 6 engine systems are useless or dangerous in any kind of atmosphere. The planetary thruster is a backup engine system designed specifically for use when the
+**Planetary Thruster (PL 6)**
+Several PL 6 engine systems are useless or dangerous in any kind of atmosphere. The planetary thruster is a backup engine system designed specifically for use when the ship’s main drives must be shut down to make planetfall. The most common varieties are the scramjet, chemical rocket, or powered airfoil. The exact form doesn’t matter. The planetary thruster requires either fuel or power, but not both. You can choose to install a standard fuel tank, or to make sure that the ship has enough power available to run a planetary thruster at need.
 
-ship’s main drives must be shut down to make planetfall. The most common varieties are the scramjet, chemical rocket, or powered airfoil. The exact form doesn’t matter. The planetary thruster requires either fuel or power, but not both. You can choose to install a standard fuel tank, or to make sure that the ship has enough power available to run a planetary thruster at need.
+**Fusion Torch (PL 6)**
+This engine is basically a fusion reactor with one wall of the magnetic bottle missing; the exhaust is incredibly hot plasma. The fusion torch is intended for space-only work; its exhaust stream would slag anything it landed on and incinerate everything within a few hundred meters of ground zero. Many ships fitted with fusion rockets carry planetary thrusters for atmospheric work, or remain permanently in space, using shuttlecraft to reach a planet’s surface. Its fuel is hydrogen, fused in the reaction chamber and expelled as white-hot plasma.
 
-Fusion Torch (PL 6) This engine is basically a fusion reactor with one wall of the magnetic bottle missing; the exhaust is incredibly hot plasma. The fusion torch is intended for space-only work; its exhaust stream would slag anything it landed on and incinerate everything within a few hundred meters of ground zero. Many ships fitted with fusion rockets carry planetary thrusters for atmospheric work, or remain permanently in space, using shuttlecraft to reach a planet’s surface. Its fuel is hydrogen, fused in the reaction chamber and expelled as white-hot plasma.
+**Ion Engine (PL 6)**
+The ion engine uses power to break down molecules of a fuel material to create ions, and then expels them by means of a magnetic impeller. It doesn’t provide the thrust potential of the fusion torch, but it’s much more fuel efficient, and its exhaust is not anywhere near as dangerous. Ion engines don’t function in any kind of atmosphere, so most ships with this kind of power plant also carry a planetary thruster.
 
-Ion Engine (PL 6) The ion engine uses power to break down molecules of a fuel material to create ions, and then expels them by means of a magnetic impeller. It doesn’t provide the thrust potential of the fusion torch, but it’s much more fuel efficient, and its exhaust is not anywhere near as dangerous. Ion engines don’t function in any kind of atmosphere, so most ships with this kind of power plant also carry a planetary thruster.
+**Particle Impulse Engine (PL 7)**
+This is simply an improved version of the PL 6 ion engine. The particle impulse drive uses magnetic fields to produce a constant stream of high-energy particles and vector it for thrust. Unlike the ion engine, the particle impulse engine doesn’t require a fuel tank. Its reaction is so efficient that the very small amount of matter present in interplanetary or interstellar space can be collected through weak magnetic fields and converted into a thrust medium.
+The particle impulse engine is capable of atmospheric entry. It causes some damage to any surface close to its exhaust ports, but it’s not too much worse than a modernday jetwash.
 
-Particle Impulse Engine (PL 7) This is simply an improved version of the PL 6 ion engine. The particle impulse drive uses magnetic fields to produce a constant stream of high-energy particles and vector it for thrust. Unlike the ion engine, the particle impulse engine doesn’t require a fuel tank. Its reaction is so efficient that the very small amount of matter present in interplanetary or interstellar space can be collected through weak magnetic fields and converted into a thrust medium. The particle impulse engine is capable of atmospheric entry. It causes some damage to any surface close to its exhaust ports, but it’s not too much worse than a modernday jetwash.
+> **Design Tip: Engines**
+> An engine of 10 to 20 percent of your hull is pretty reasonable. Anything more than that is going to be nearly impossible to design around, unless you’re building a special fast courier with minimal armament and amenities for the crew.
 
-Design Tip: Engines An engine of 10 to 20 percent of your hull is pretty reasonable. Anything more than that is going to be nearly impossible to design around, unless you’re building a special fast courier with minimal armament and amenities for the crew.
+**Induction Engine (PL 7)**
+Hands-down the best engine available at this or any previous Progress Level, the induction engine uses artificial gravity to provide incredible thrust and maneuverability. The induction engine requires no fuel and produces no exhaust; it’s ideal for atmospheric, orbital, or deep-space work.
 
-Induction Engine (PL 7) Hands-down the best engine available at this or any previous Progress Level, the induction engine uses artificial gravity to provide incredible thrust and maneuverability. The induction engine requires no fuel and produces no exhaust; it’s ideal for atmospheric, orbital, or deep-space work.
+**Inertial Flux Engine (PL 8)**
+By precisely controlling the quantum energy level of every atom on the ship simultaneously, the inertial flux engine assumes the inertial states necessary to produce motion in any direction. In effect, the pilot chooses from instant to instant what vector the ship will next possess, and the inertial flux engine makes it possible. This engine requires no fuel and is safe for atmospheric work.
 
-Inertial Flux Engine (PL 8) By precisely controlling the quantum energy level of every atom on the ship simultaneously, the inertial flux engine assumes the inertial states necessary to produce motion in any direction. In effect, the pilot chooses from instant to instant what vector the ship will next possess, and the inertial flux engine makes it possible. This engine requires no fuel and is safe for atmospheric work.
+**Gravitic Redirector (PL 8)**
+A refinement of the induction engine, the gravitic redirector changes the ambient gravity in the vicinity of the ship to produce a motive force. It’s more powerful and more efficient than the induction engine.
 
-Gravitic Redirector (PL 8) A refinement of the induction engine, the gravitic redirector changes the ambient gravity in the vicinity of the ship to produce a motive force. It’s more powerful and more efficient than the induction engine.
+**Spatial Compressor (PL 9)**
+One of the most advanced engines available, the spatial compressor surrounds the ship in a field that “folds” or “wrinkles” the structure of space in the direction the pilot wishes to travel. This results in a continuous series of micro-jumps in which the ship flickers into and out of reality, teleporting thousands of times every second. Since the ship has no intrinsic velocity (it’s stationary while it teleports) the spatial compressor can instantaneously stop or change direction and thrust vector without any maneuvering whatsoever. However, the engine still needs to build up cyclic speed to increase the frequency of its microjumps, so it accelerates normally.
+The spatial compressor requires a lot of power, but no fuel. It’s safe for atmospheric flight.
 
-Spatial Compressor (PL 9) One of the most advanced engines available, the spatial compressor surrounds the ship in a field that “folds” or “wrinkles” the structure of space in the direction the pilot wishes to travel. This results in a continuous series of micro-jumps in which the ship flickers into and out of reality, teleporting thousands of times every second. Since the ship has no intrinsic velocity (it’s stationary while it teleports) the spatial compressor can instantaneously stop or change direction and thrust vector without any maneuvering whatsoever. However, the engine still needs to build up cyclic speed to increase the frequency of its microjumps, so it accelerates normally. The spatial compressor requires a lot of power, but no fuel. It’s safe for atmospheric flight.
-
-## Step 5: FTL D Rive
+## Step 5: FTL Drive
 
 The term ‘FTL’ stands for faster-than-light. A ship’s FTL drive is the engine system that allows it to break out of the Einsteinian universe and travel at speeds that make interstellar travel easy. With an FTL drive, a ship can make a trip of many years at sub-light speeds into a voyage of months, weeks, days, or perhaps even hours. Obviously, not every ship needs to be equipped with an FTL drive. In fact, the expense of most FTL systems means that only the ships that need FTL capability will be built with it, even when technology advances to the point of commonplace interstellar commerce.
+Ships with no FTL drive may still enjoy access to FTL travel; it’s possible for a large ship with an FTL drive to tow or carry a sub-light ship. See “Miscellaneous Installations” for information on docking clamps.
 
-Ships with no F TL drive may still enjoy access to FTL travel; it’s possible for a large ship with a FTL drive to tow or carry a sub-light ship. See “Miscellaneous Installations” for information on docking clamps.
+**Jump Drive (PL 6)**
+The jump drive relies on a fairly rare technology type, the technology of matter transmission. It requires an enormous amount of power, so much so that the jump drive itself is a colossal fusion device that derives the power for its jump by annihilating massive amounts of hydrogen fuel for a single jump. Thus, the jump drive only requires 5 percent of the ship’s hull points, but it must be built with a fuel tank that may account for anywhere from another 5 to 50 percent of the ship’s hull. A small amount of shipboard power (1 power point per hull point devoted to the jump drive machinery) is also required to control the machinery and direct the jump.
+The distance a jump drive can teleport in one jump depends on how much of the ship’s mass (i.e., hull points) is annihilated for the jump. For example, a jump ship of 200 hull points might have fuel tanks with a capacity of 60 hull points of fuel—30 percent of the ship’s hull. It could eliminate 10 hull points of fuel (5 percent of the hull) for a jump of 1 light-year, or it could eliminate all 60 fuel points for a jump of 6 light-years.
+Since most jump ships use most or all of their available fuel in a jump, they need to jump to a point at which they can refuel their tanks. Obviously, a civilized system will have fueling capability, but if fuel can’t be purchased, the jump ship must improvise. Hydrogen can be skimmed from gas giants, separated from water, or mined in the form of ice. Assuming that a suitable source of hydrogen is available, you can assume that a ship requires 1 full day of fueling per 10 hull points of fuel collected. See “Miscellaneous Installations.”
+The jump drive can execute a jump anytime it has enough fuel to do so. It takes 1d4 hours to cycle the engine and plot the next jump point, so there’s usually a small delay between jumps even if fuel is immediately available.
 
-Jump Drive (PL 6) The jump drive relies on a fairly rare technology type, the technology of matter transmission. It requires an enormous amount of power, so much so that the jump drive itself is a colossal fusion device that derives the power for its jump by annihilating massive amounts of hydrogen fuel for a single jump. Thus, the jump drive only requires 5 percent of the ship’s hull points, but it must be built with a fuel tank that may account for anywhere from another 5 to 50 percent of the ship’s hull. A small amount of shipboard power (1 power point per hull point devoted to the jump drive machinery) is also required to control the machinery and direct the jump. The distance a jump drive can teleport in one jump depends on how much of the ship’s mass (i.e., hull points) is annihilated for the jump. For example, a jump ship of 200 hull points might have fuel tanks with a capacity of 60 hull points of fuel—30 percent of the ship’s hull. It could eliminate 10 hull points of fuel (5 percent of the hull) for a jump of 1 light-year, or it could eliminate all 60 fuel points for a jump of 6 light-years. Since most jump ships use most or all of their available fuel in a jump, they need to jump to a point at which they can refuel their tanks. Obviously, a civilized system will have fueling capability, but if fuel can’t be purchased, the jump ship must improvise. Hydrogen can be skimmed from gas giants, separated from water, or mined in the form of ice. Assuming that a suitable source of hydrogen is available, you can assume that a ship requires 1 full day of fueling per 10 hull points of fuel collected. See “Miscellaneous Installations.” The jump drive can execute a jump anytime it has enough fuel to do so. It takes 1d4 hours to cycle the engine and plot the next jump point, so there’s usually a small delay between jumps even if fuel is immediately available.
+**Wormhole Screen (PL 6)**
+It’s theoretically possible for an object such as a ship to pass through a wormhole—a tunnel in space produced by a spectacular event such as the creation of a black hole—and emerge dozens, hundreds, or thousands of light-years from its previous location. However, the simple act of passing through a wormhole triggers its collapse, which makes it difficult to use a wormhole as a means of interstellar travel. The wormhole screen masks the starship’s mass from the wormhole, thus keeping the conduit open long enough for the ship to pass from one end to the other. It also protects the ship from the extreme conditions in the vicinity of the wormhole.
+The wormhole screen only allows transit along a naturally occurring wormhole, which means that a ship can’t pick its destination; it has to go wherever the wormhole takes it. (In some campaigns, networks of pre-existing artificial wormholes may make it possible to reach a great number of stars in this fashion.) The screen device requires 5 percent of the ship’s hull points, and 2 power points per hull point devoted to the system. A ship of 800 hull points must spend 40 hull points on the screen, and a total of 80 power points to energize the device. Entering a wormhole is a dicey proposition at best, so it takes 2d4 hours to perform the course calculations and maneuvering necessary to initiate a wormhole transit once the ship is in the vicinity of the next wormhole it intends to jump through.
 
-Wormhole Screen (PL 6) It’s theoretically possible for an object such as a ship to pass through a wormhole—a tunnel in space produced by a spectacular event such as the creation of a black hole—and emerge dozens, hundreds, or thousands of light-years from its previous location. However, the simple act of passing through a wormhole triggers its collapse, which makes it difficult to use a wormhole as a means of interstellar travel. The wormhole screen masks the starship’s mass from the wormhole, thus keeping the conduit open long enough for the ship to pass from one end to the other. It also protects the ship from the extreme conditions in the vicinity of the wormhole. The wormhole screen only allows transit along a natural-
+**Gate Activator (PL 7)**
+This device simply keys a gate device of some kind, which functions as a huge teleporter to another gate somewhere else. It doesn’t require very much power compared to other FTL drives because most of the work is done by the gate itself. The gate activator requires 1 percent of the ship’s hull points (1 hull point per 100 hull points of the ship), and 2 power points per hull point allocated to the system. The ship transiting the gate automatically arrives at the other terminus and cannot jump to a place where no gate exists. The length of the transit may be instantaneous, or it could last for several hours; it depends on the GM’s campaign. A gate device usually requires some cycle time to amass the incredible energies needed to fling a ship across interstellar distances. Again, this is up to the GM, but a period of 2d4 hours as a minimum cycle time is reasonable.
 
-ly occurring wormhole, which means that a ship can’t pick its destination; it has to go wherever the wormhole takes it. (In some campaigns, networks of pre-existing artificial wormholes may make it possible to reach a great number of stars in this fashion.) The screen device requires 5 percent of the ship’s hull points, and 2 power points per hull point devoted to the system. A ship of 800 hull points must spend 40 hull points on the screen, and a total of 80 power points to energize the device. Entering a wormhole is a dicey proposition at best, so it takes 2d4 hours to perform the course calculations and maneuvering necessary to initiate a wormhole transit once the ship is in the vicinity of the next wormhole it intends to jump through.
+**Hyperdrive (PL 7)**
+This drive system hurls the ship into an alternate dimension or reality in which the lightspeed limit is meaningless. As with the jump drive, it’s necessary to calculate a destination before entering hyperspace. This requires 1d4 (x) 10 minutes, or a Navigation skill check (complex skill check of 4 successes at no penalty, 10 minutes per check). Once the ship is engaged in a hyperspace jump, it can’t change course. It can drop out of hyperspace at any time simply by disengaging the hyperdrive, and there may be devices or natural phenomena that bar hyperspace travel and interdict any ship passing through the vicinity.
 
-Gate Activator (PL 7) This device simply keys a gate device of some kind, which functions as a huge teleporter to another gate somewhere else. It doesn’t require very much power compared to other FTL drives because most of the work is done by the gate itself. The gate activator requires 1 percent of the ship’s hull points (1 hull point per 100 hull points of the ship), and 2 power points per hull point allocated to the system. The ship transiting the gate automatically arrives at the
+### Table 5-5: FTL Drives
 
-other terminus and cannot jump to a place where no gate exists. The length of the transit may be instantaneous, or it could last for several hours; it depends on the GM’s campaign. A gate device usually requires some cycle time to amass the incredible energies needed to fling a ship across interstellar distances. Again, this is up to the GM, but a period of 2d4 hours as a minimum cycle time is reasonable.
-
-Hyperdrive (PL 7) This drive system hurls the ship into an alternate dimension or reality in which the lightspeed limit is meaningless. As with the jump drive, it’s necessary to calculate a destination before entering hyperspace. This requires 1d4 (x) 10 minutes, or a Navigation skill check (complex skill check of 4 successes at no penalty, 10 minutes per check). Once the ship is engaged in a hyperspace jump, it can’t change course. It can drop out of hyperspace at any time simply by disengaging the hyperdrive, and there may be devices or natural phenomena that bar hyperspace travel and interdict any ship passing through the vicinity. A ship’s FTL speed depends on how much of the hull
-
-### ### Table 5-5: FTL Drives
-| Min | Base | Cost/ | Acceleration Rating at... |
-|---|---|---|---|
-| Engine | Tech Pow | Size | Cost. | Hull | 5% | 10% 15% 20% 30% 40% | 50% |
+| Engine | Tech | Pow | Min Size | Base Cost. | Cost/Hull | Accel @ 5% | @ 10% | @ 15% | @ 20% | @ 30% | @ 40% | @ 50% |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | Jump Drive | T | 1 | 5 | $4 M | $1 M | - | var | - | - | - | - | - |
-| Fuel spent | - | - | - | $10 K | 1 LY 2 LY | 3 LY | 4 LY | 6 LY | 8 LY | 10 LY |
+| Fuel spent | - | - | - | - | $10 K | 1 LY | 2 LY | 3 LY | 4 LY | 6 LY | 8 LY | 10 LY |
 | Wormhole Screen | M | 2 | 1 | $1 M | $200 K | ** | - | - | - | - | - | - |
 | Gate Activator | T | 2 | 1 | $500 K | $100 K | ** | - | - | - | - | - | - |
-| Hyperdrive | X | 3 | 4 | $5 M | $2 M | 1/day 2/day 3/day | 4/day 5/day 6/day | 7/day |
-| Stardrive | G | ! | 3 | $2 M | $1 M | var - | - | - | - | - | - |
+| Hyperdrive | X | 3 | 4 | $5 M | $2 M | 1/day | 2/day | 3/day | 4/day | 5/day | 6/day | 7/day |
+| Stardrive | G | ! | 3 | $2 M | $1 M | var | - | - | - | - | - | - |
 | Drivewave | G | ! | 2 | $3 M | $1.5 M | var | - | - | - | - | - | - |
 | Spacefold Drive | T | 4 | 4 | $8 M | $2 M | - | pow | - | - | - | - | - |
-| Psychoportive Drive P | 1 | 10 | $6 M | $200 K | - | PEP | - | - | - | - | - |
-| Transcendent Drive P | 1 | 4 | $12 M | $400 K | - | PEP/hr- | - | - | - | - |
-| Warpdrive | X | 2 | 2 | $10 M | $5 M | 1/hr 2/hr 4/hr | 8/hr | 16/hr 32/hr | 64/hr |
+| Psychoportive Drive | P | 1 | 10 | $6 M | $200 K | - | PEP | - | - | - | - | - |
+| Transcendent Drive | P | 1 | 4 | $12 M | $400 K | - | PEP/hr | - | - | - | - | - |
+| Warpdrive | X | 2 | 2 | $10 M | $5 M | 1/hr | 2/hr | 4/hr | 8/hr | 16/hr | 32/hr | 64/hr |
 
-is devoted to the hyperdrive system, with a minimum of 10 percent. Each hull point spent on the hyperdrive requires 3 power points to activate the system. For example, a ship of 300 hull points has a hyperdrive of 45 hull points, or 15 percent of the hull; this requires 135 power points to activate, and provides the ship with a speed of 2 light-years per day of hyperdrive travel. There’s no limit on the length of a jump other than the simple question of how long a ship can remain in hyperspace without refreshing its stores. (The GM may impose a limit of 1000 light-years per hyperjump at his discretion.)
+* The jump drive takes 10 percent of the ship’s hull points. Its FTL rating varies with the amount of fuel expended for a jump.
+** The wormhole screen takes 5 percent of the ship’s hull points; the gate activator takes 1 percent. Performance varies.
+! The stardrive and the drivewave require a mass reactor power plant. Performance varies.
+**Tech**: The technology required to build this drive system.
+**Pow**: The amount of power required, per hull point devoted to this system.
+**Min Size**: The smallest drive installation of this type possible, in hull points.
+**Base Cost**: The cost for an FTL installation of this type.
+**Cost/Hull**: The cost per hull point assigned to this drive; cumulative with the base cost.
+**Acceleration rating at...**: The ship’s FTL speed for an installation comprising 5-50% of its overall hull. For example, a ship of 100 hull points with 20 hull points of hyperdrive travels at 4 light-years per day of hyperspace travel.
 
-Psychoportive Drive (PL 7) Psychoportive drive technology uses the power of the mind to defeat the restrictions of time and space. The psychoportive drive works a lot like a jump drive, except that instead of burning fuel, it burns psionic energy points (or PEPs) as shown below: Class Small Light Medium Heavy Super-Heavy
+A ship’s FTL speed depends on how much of the hull is devoted to the hyperdrive system, with a minimum of 10 percent. Each hull point spent on the hyperdrive requires 3 power points to activate the system. For example, a ship of 300 hull points has a hyperdrive of 45 hull points, or 15 percent of the hull; this requires 135 power points to activate, and provides the ship with a speed of 2 light-years per day of hyperdrive travel. There’s no limit on the length of a jump other than the simple question of how long a ship can remain in hyperspace without refreshing its stores. (The GM may impose a limit of 1000 light-years per hyperjump at his discretion.)
 
-Psi Energy per LY 3 PEP per LY 6 PEP per LY 10 PEP per LY 15 PEP per LY 25 PEP per LY
+**Psychoportive Drive (PL 7)**
+Psychoportive drive technology uses the power of the mind to defeat the restrictions of time and space. The psychoportive drive works a lot like a jump drive, except that instead of burning fuel, it burns psionic energy points (or PEPs) as shown below:
 
-Multiple psionic characters can contribute PEPs to increase the range of the jump. Each psychoportive jump takes one full day. Psionic characters recover their psionic energy points normally after using them on the initial entry into Otherspace. Calculating the probabilities and energies of the next jump requires one psionic character, the navigator, to perform a complex skill check against ESP-navcognition. The navigator requires 4 successes and may make one skill check every ten minutes to prepare the ship for its next jump. The psychoportive drive requires 10 percent of the ship’s hull, and uses 1 point of power per hull point devoted to the drive.
+| Class | Psi Energy per LY |
+|---|---|
+| Small | 3 PEP per LY |
+| Light | 6 PEP per LY |
+| Medium | 10 PEP per LY |
+| Heavy | 15 PEP per LY |
+| Super-Heavy | 25 PEP per LY |
 
-Stardrive (PL 7) The stardrive creates a short-lived, controlled singularity that drops the ship out of normal space and into drivespace, a parallel dimension tied to the real universe. All drivespace submergences last for 121 hours (about five days). A stardrive must be coupled to a mass reactor; no other power system can energize a stardrive. Like the hyperdrive or jump drive, a ship powered by a stardrive must plot its jump carefully; it can’t maneuver once it enters drivespace, and nothing can interfere with its progress until it arrives at its destination. The base distance achieved by a stardrive in a single jump is based on the ship class:
+Multiple psionic characters can contribute PEPs to increase the range of the jump. Each psychoportive jump takes one full day. Psionic characters recover their psionic energy points normally after using them on the initial entry into Otherspace. Calculating the probabilities and energies of the next jump requires one psionic character, the navigator, to perform a complex skill check against ESP-navcognition. The navigator requires 4 successes and may make one skill check every ten minutes to prepare the ship for its next jump.
+The psychoportive drive requires 10 percent of the ship’s hull, and uses 1 point of power per hull point devoted to the drive.
 
-Class Small Light Medium Heavy S-heavy
+**Stardrive (PL 7)**
+The stardrive creates a short-lived, controlled singularity that drops the ship out of normal space and into drivespace, a parallel dimension tied to the real universe. All drivespace submergences last for 121 hours (about five days). A stardrive must be coupled to a mass reactor; no other power system can energize a stardrive. Like the hyperdrive or jump drive, a ship powered by a stardrive must plot its jump carefully; it can’t maneuver once it enters drivespace, and nothing can interfere with its progress until it arrives at its destination. The base distance achieved by a stardrive in a single jump is based on the ship class:
 
-Base Starfall
+| Class | Base Starfall |
+|---|---|
+| Small | 5 Ly |
+| Light | 10 Ly |
+| Medium | 20 Ly |
+| Heavy | 30 Ly |
+| S-heavy | 50 Ly |
 
-## 5 Ly
+The stardrive requires 5 percent of the ship’s hull and 3 power points per hull point of the system; for example, a ship of 80 hull points requires a 4-hull point stardrive and 12 power points to make starfall. It’s possible to increase the distances shown above by exceeding the power requirements found on TABLE 5–5. For every 10 power points beyond the minimum allocated to the stardrive, the ship can starfall one additional light-year. For example, a battleship of 1,000 hull points needs 150 power for its stardrive, but if 300 power points are allocated, it starfalls up to 45 light-years instead of 30 light-years.
+The stardrive requires several days to recharge after a drivespace journey. Typically, it takes d4+1 days to recharge a stardrive for the next starfall.
 
-## 10 Ly
+**Drivewave (PL 8)**
+The drivewave generator is simply an improvement of the stardrive. It resembles the earlier engine in most details, except that the length of a drivespace submergence is only 11 hours, and the recharge time for the drive is only d4+1 hours. Since it cycles much faster, it can cover territory at a correspondingly faster pace.
 
-## 20 Ly
+**Spacefold Drive (PL 8)**
+The spacefold drive “folds space”, making it possible for a ship to leap dozens or hundreds of light-years in a single instant. The range of the drive is determined entirely by the amount of energy used to power the system, as long as it meets the minimums specified on TABLE 5–5. For instance, a 200-hull point ship must allocate 20 hull points to the spacefold drive, which requires 120 power points. As long as the ship can generate 120 or more power points, it can perform a spacefold of up to one light-year per power point assigned to the drive.
+The spacefold drive can cycle almost instantaneously, but it creates dangerous stresses in the fabric of space; for safety a ship must travel 5d20 (x) 10 AU (astronomical units) from its arrival point in normal space before it’s safe to use the drive again.
 
-## 30 Ly
+**Transcendent Drive (PL 9)**
+The transcendent drive system harnesses the power of a psionically gifted person and unlocks unfathomable energies with the key of an intelligent mind. The drive permits travel at FTL speeds in normal space with no careful navigation plots or calculations required. The ship’s speed is a number of light-years per hour equal to the psionic energy score of a single psionic character who is flying the ship at any given time. A psionic character who powers the transcendent drive even for a moment immediately expends all of his psionic energy points. He can stay “in the chair” for up to eight hours before becoming exhausted. He can begin to recover psionic energy points normally after he leaves the chair.
 
-## 50 Ly
+Example: Jaleel is a fraal mindwalker with 18 psionic energy points. If he takes the helm of a ship fitted with a transcendent drive, the ship will travel at the rate of 18 light-years per hour until Jaleel runs out of steam, at which point another psionic character could take over. Large ships of this type frequently have small teams of pilot-helmsmen who can rotate the piloting duties.
+The transcendent drive requires 10 percent of the ship’s hull points and a modest amount of power.
 
-The stardrive requires 5 percent of the ship’s hull and 3 power points per hull point of the system; for example, a ship of 80 hull points requires a 4-hull point stardrive and 12 power points to make starfall. It’s possible to increase the distances shown above by exceeding the power requirements found on TABLE 5–5. For every 10 power points beyond the minimum allocated to the stardrive, the ship can starfall one additional light-year. For example, a battleship of 1,000 hull points needs 150 power for its stardrive, but if 300 power points are allocated, it starfalls up to 45 light-years instead of 30 light-years. The stardrive requires several days to recharge after a drivespace journey. Typically, it takes d4+1 days to recharge a stardrive for the next starfall.
-
-Drivewave (PL 8) The drivewave generator is simply an improvement of the stardrive. It resembles the earlier engine in most details, except that the length of a drivespace submergence is only 11 hours, and the recharge time for the drive is only d4+1 hours. Since it cycles much faster, it can cover territory at a correspondingly faster pace.
-
-Spacefold Drive (PL 8) The spacefold drive “folds space”, making it possible for a ship to leap dozens or hundreds of light-years in a single instant. The range of the drive is determined entirely by the amount of energy used to power the system, as long as it meets the minimums specified on TABLE 5–5. For instance, a 200-hull point ship must allocate 20 hull points to the spacefold drive, which requires 120 power points. As long as the ship can generate 120 or more power points, it can perform a spacefold of up to one light-year per power point assigned to the drive. The spacefold drive can cycle almost instantaneously, but it creates dangerous stresses in the fabric of space; for safety a ship must travel 5d20 (x) 10 AU (astronomical units) from its arrival point in normal space before it’s safe to use the drive again.
-
-Transcendent Drive (PL 9) The transcendent drive system harnesses the power of a psionically gifted person and unlocks unfathomable energies with the key of an intelligent mind. The drive permits travel at FTL speeds in normal space with no careful navigation plots or calculations required. The ship’s speed is a number of light-years per hour equal to the psionic energy
-
-score of a single psionic character who is flying the ship at any given time. A psionic character who powers the transcendent drive even for a moment immediately expends all of his psionic energy points. He can stay “in the chair” for up to eight hours before becoming exhausted. He can begin to recover psionic energy points normally after he leaves the chair. Example: Jaleel is a fraal mindwalker with 18 psionic energy points. If he takes the helm of a ship fitted with a transcendent drive, the ship will travel at the rate of 18 light-years per hour until Jaleel runs out of steam, at which point another psionic character could take over. Large ships of this type frequently have small teams of pilot-helmsmen who can rotate the piloting duties. The transcendent drive requires 10 percent of the ship’s hull points and a modest amount of power.
-
-Warpdrive (PL 9) By creating a warp field in which the normal laws of physics are suspended, the warpdrive permits FTL travel. The warp field does not interfere with a ship’s ability to gather information from its surroundings, and a ship traveling with warp drive can change course, stop, or start again at will, as long as power for the drive is available. Like the hyperdrive, the warp-drive’s speed is measured in the number of light-years it can cross per hour of operation. A ship of 100 hull points that devotes 15 hull points to its warpdrive has allocated 15 percent of hull to the drive, so it can travel at a speed of 4 light-years per hour.
+**Warpdrive (PL 9)**
+By creating a warp field in which the normal laws of physics are suspended, the warpdrive permits FTL travel. The warp field does not interfere with a ship’s ability to gather information from its surroundings, and a ship traveling with warp drive can change course, stop, or start again at will, as long as power for the drive is available.
+Like the hyperdrive, the warp-drive’s speed is measured in the number of light-years it can cross per hour of operation. A ship of 100 hull points that devotes 15 hull points to its warpdrive has allocated 15 percent of hull to the drive, so it can travel at a speed of 4 light-years per hour.
