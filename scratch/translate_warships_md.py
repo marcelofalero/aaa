@@ -109,7 +109,7 @@ def main():
     
     translator = GoogleTranslator(source='en', target='es')
     
-    target_dir = 'site/content/warships'
+    target_dir = 'site/content/warships/ship-construction'
     files = [f for f in os.listdir(target_dir) if f.endswith('.md') and not f.endswith('.es.md')]
     
     for filename in sorted(files):

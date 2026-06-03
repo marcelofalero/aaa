@@ -35,8 +35,8 @@ Elige el tipo de casco que deseas utilizar para tu nave espacial. Si bien hemos 
 
 ### Tabla 5-1a: Cascos militares
 
-| +3 pasos | 4 |
-|---|---|
+| Tipo de casco | Puntos del casco | 5% | 10% | Duro | Objetivo | Maniobra | S | W | M | C | Tripulación | Costo |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | Luchador de huelga | 15 | 1 | 1.5 | pequeño | +3 pasos | 4 | 8 | 8 | 4 | 2 | 2 | $500 mil |
 | Cortador | 20 | 1 | 2 | pequeño | +2 pasos | 4 | 10 | 10 | 5 | 3 | 4 | $600 mil |
 | Explorador | 30 | 1.5 | 3 | pequeño | +2 pasos | 4 | 15 | 15 | 8 | 4 | 6 | $800 mil |
@@ -57,8 +57,8 @@ Elige el tipo de casco que deseas utilizar para tu nave espacial. Si bien hemos 
 
 ### Tabla 5-1b: Cascos civiles
 
-| Tipo de casco | Puntos del casco. | 5% | 10% | Duro | Objetivo Mvr | s | w | metro | c | Tripulación | Costo |
-|---|---|---|---|---|---|---|---|---|---|---|---|
+| Tipo de casco | Puntos del casco | 5% | 10% | Duro | Objetivo | Maniobra | S | W | M | C | Tripulación | Costo |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | Lanzamiento | 8 | 0,5 | 1 | (Dios) | +3 pasos | 4 | 4 | 4 | 2 | 1 | 2 | $300 mil |
 | Mensajero | 16 | 1 | 1.5 | (Dios) | +2 pasos | 4 | 8 | 8 | 4 | 2 | 4 | $400 mil |
 | Comerciante | 24 | 1 | 2 | (Dios) | +2 pasos | 4 | 12 | 12 | 6 | 3 | 6 | $500 mil |

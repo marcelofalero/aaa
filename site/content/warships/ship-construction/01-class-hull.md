@@ -36,8 +36,8 @@ Choose the hull type you want to use for your spaceship. While we’ve attached 
 
 ### Table 5-1a: Military Hulls
 
-| +3 steps | 4 |
-|---|---|
+| Hull Type | Hull Pts | 5% | 10% | Tough | Target | Maneuver | S | W | M | C | Crew | Cost |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | Strike fighter | 15 | 1 | 1.5 | Sm | +3 steps | 4 | 8 | 8 | 4 | 2 | 2 | $500 K |
 | Cutter | 20 | 1 | 2 | Sm | +2 steps | 4 | 10 | 10 | 5 | 3 | 4 | $600 K |
 | Scout | 30 | 1.5 | 3 | Sm | +2 steps | 4 | 15 | 15 | 8 | 4 | 6 | $800 K |
@@ -58,8 +58,8 @@ Choose the hull type you want to use for your spaceship. While we’ve attached 
 
 ### Table 5-1b: Civilian Hulls
 
-| Hull Type | Hull Pts. | 5% | 10% | Tough | Target Mvr | s | w | m | c | Crew | Cost |
-|---|---|---|---|---|---|---|---|---|---|---|---|
+| Hull Type | Hull Pts | 5% | 10% | Tough | Target | Maneuver | S | W | M | C | Crew | Cost |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | Launch | 8 | 0.5 | 1 | (Gd) | +3 steps | 4 | 4 | 4 | 2 | 1 | 2 | $300 K |
 | Courier | 16 | 1 | 1.5 | (Gd) | +2 steps | 4 | 8 | 8 | 4 | 2 | 4 | $400 K |
 | Trader | 24 | 1 | 2 | (Gd) | +2 steps | 4 | 12 | 12 | 6 | 3 | 6 | $500 K |
