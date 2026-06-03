@@ -36,30 +36,37 @@ Choose the hull type you want to use for your spaceship. While we’ve attached 
 
 ### Table 5-1a: Military Hulls
 
-| Hull Type | Hull Pts | 5% | 10% | Tough | Target | Maneuver | S | W | M | C | Crew | Cost |
+Hull Type | Hull Pts. | 5% | 10% | Tough | Target | Mvr | s | w | m | c | Crew | Cost |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| **Small Craft** | ||||||||||||||
+| Fighter | 10 | 0.5 | 1 | Sm | +3 steps | 4 | 5 | 5 | 3 | 2 | 1 | $350 K |
 | Strike fighter | 15 | 1 | 1.5 | Sm | +3 steps | 4 | 8 | 8 | 4 | 2 | 2 | $500 K |
+| **Light Ships** | ||||||||||||||
 | Cutter | 20 | 1 | 2 | Sm | +2 steps | 4 | 10 | 10 | 5 | 3 | 4 | $600 K |
 | Scout | 30 | 1.5 | 3 | Sm | +2 steps | 4 | 15 | 15 | 8 | 4 | 6 | $800 K |
 | Escort | 40 | 2 | 4 | Sm | +2 steps | 4 | 20 | 20 | 10 | 5 | 10 | $1 M |
 | Corvette | 80 (+8) | 4 | 8 | Lt | +1 step | 3 | 20 | 20 | 10 | 5 | 20 | $5 M |
 | Frigate | 120 (+12) | 6 | 12 | Lt | +1 step | 3 | 30 | 30 | 15 | 8 | 60 | $15 M |
 | Destroyer | 160 (+16) | 8 | 16 | Lt | +1 step | 3 | 40 | 40 | 20 | 10 | 80 | $30 M |
+| **Medium Ships** | ||||||||||||||
 | Light cruiser | 320 (+64) | 16 | 32 | Md | 0 | 2 | 40 | 40 | 20 | 10 | 240 | $50 M |
 | Heavy cruiser | 400 (+80) | 20 | 40 | Md | 0 | 2 | 45 | 45 | 23 | 12 | 300 | $100 M |
-| Armored cruiser 480 (+96) | 24 | 48 | Md | -1 step | 2 | 60 | 60 | 30 | 15 | 360 | $200 M |
+| Armored cruiser | 480 (+96) | 24 | 48 | Md | -1 step | 2 | 60 | 60 | 30 | 15 | 360 | $200 M |
+| **Heavy Ships** | ||||||||||||||
 | Battlecruiser | 960 (+288) | 48 | 96 | Hv | -2 steps | 1 | 60 | 60 | 30 | 15 | 960 | $500 M |
 | Battleship | 1200 (+360) | 60 | 120 | Hv | -2 steps | 1 | 75 | 75 | 38 | 19 | 1200 | $1000 M |
 | Fleet carrier | 1600 (+480) | 80 | 160 | Hv | -3 steps | 1 | 100 | 100 | 50 | 25 | 1600 | $1500 M |
-| Dreadnought | 3200 (+1600) | 160 | 320 | SHv | -3 steps | 1 | 100 | 100 | 50 | 25 | 3200 $2000 M |
-| Super-carrier | 4000 (+2000) | 200 | 400 | SHv | -4 steps | 1 | 125 | 125 | 63 | 32 | 4000 $4000 M |
-| Super-dread. | 6400 (+3200) | 320 | 640 | SHv | -5 steps | 1 | 200 | 200 | 100 | 50 | 6400 $10000 M |
-| Fortress ship | 12000 (+6000) | 600 | 1200 | SHv | -5 steps | 1 | 375 | 375 | 188 | 94 | 12000 $50000 M |
+| **Super-Heavy Ships** | ||||||||||||||
+| Dreadnought | 3200 (+1600) | 160 | 320 | SHv | -3 steps | 1 | 100 | 100 | 50 | 25 | 3200 | $2000 M |
+| Super-carrier | 4000 (+2000) | 200 | 400 | SHv | -4 steps | 1 | 125 | 125 | 63 | 32 | 4000 | $4000 M |
+| Super-dread. | 6400 (+3200) | 320 | 640 | SHv | -5 steps | 1 | 200 | 200 | 100 | 50 | 6400 | $10000 M |
+| Fortress ship | 12000 (+6000) | 600 | 1200 | SHv | -5 steps | 1 | 375 | 375 | 188 | 94 | 12000 | $50000 M |
 
 ### Table 5-1b: Civilian Hulls
 
-| Hull Type | Hull Pts | 5% | 10% | Tough | Target | Maneuver | S | W | M | C | Crew | Cost |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Hull Type | Hull Pts. | 5% | 10% | Tough | Target Mvr | s | w | m | c | Crew | Cost |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| **Small Craft** | ||||||||||||||
 | Launch | 8 | 0.5 | 1 | (Gd) | +3 steps | 4 | 4 | 4 | 2 | 1 | 2 | $300 K |
 | Courier | 16 | 1 | 1.5 | (Gd) | +2 steps | 4 | 8 | 8 | 4 | 2 | 4 | $400 K |
 | Trader | 24 | 1 | 2 | (Gd) | +2 steps | 4 | 12 | 12 | 6 | 3 | 6 | $500 K |
@@ -67,16 +74,33 @@ Choose the hull type you want to use for your spaceship. While we’ve attached 
 | Fast transport | 40 | 2 | 4 | Sm | +2 steps | 4 | 20 | 20 | 10 | 5 | 10 | $800 K |
 | Hauler | 72 (+7) | 3 | 7 | Sm | +1 step | 3 | 18 | 18 | 9 | 5 | 18 | $1 M |
 | Industrial | 96 (+10) | 5 | 10 | Sm | +1 step | 3 | 24 | 24 | 12 | 6 | 24 | $2 M |
-| Medium freighter 240 (+48) | 12 | 24 | Lt | 0 | 2 | 30 | 30 | 15 | 8 | 30 | $20 M |
+| **Medium Ships** | ||||||||||||||
+| Medium freighter | 240 (+48) | 12 | 24 | Lt | 0 | 2 | 30 | 30 | 15 | 8 | 30 | $20 M |
 | Clipper | 360 (+72) | 18 | 36 | Lt | 0 | 2 | 45 | 45 | 23 | 12 | 360 | $40 M |
-| Medium transport 480 (+96) | 24 | 48 | Lt | -1 step | 2 | 60 | 60 | 30 | 15 | 60 | $60 M |
+| Medium transport | 480 (+96) | 24 | 48 | Lt | -1 step | 2 | 60 | 60 | 30 | 15 | 60 | $60 M |
 | Tanker | 720 (+216) | 36 | 72 | Md | -1 step | 1 | 45 | 45 | 23 | 12 | 90 | $100 M |
 | Liner | 840 (+252) | 42 | 84 | Md | -1 step | 1 | 53 | 53 | 27 | 14 | 840 | $150 M |
-| Heavy transport 1280 (+384) | 64 | 128 | Md | -2 steps | 1 | 80 | 80 | 40 | 20 | 160 | $200 M |
-| Super-freighter 2400 (+1200) | 120 | 240 | Hv | -3 steps | 0 | 75 | 75 | 38 | 19 | 300 | $400 M |
-| Colony transport 3600 (+1800) | 180 | 360 | Hv | -4 steps | 0 | 113 | 113 | 57 | 29 | 3600 | $1000 M |
+| **Heavy Ships** | ||||||||||||||
+| Heavy transport | 1280 (+384) | 64 | 128 | Md | -2 steps | 1 | 80 | 80 | 40 | 20 | 160 | $200 M |
+| Super-freighter | 2400 (+1200) | 120 | 240 | Hv | -3 steps | 0 | 75 | 75 | 38 | 19 | 300 | $400 M |
+| **Super-Heavy Ships** | ||||||||||||||
+| Colony transport | 3600 (+1800) | 180 | 360 | Hv | -4 steps | 0 | 113 | 113 | 57 | 29 | 3600 | $1000 M |
 
-Hull Points: The number of hull points available in this type, representing its capacity for installing systems. The first number is the basic hull point total, the number in parenthesis is the bonus hull point total. Tough: The ship’s toughness rating. Note that some ships have Good toughness, one step less than Small Craft. Target: The ship’s basic resistance modifier to enemy fire, based on its size and maneuverability. Maneuver: The ship’s maneuverability class. 5% and 10%: This is the number of hull points a system requiring 5 or 10 percent of the hull requires. This information is simply a shortcut to save you time and effort. S, W, M, C: The ship’s Stun, Wound, Mortal, and Critical damage tracks. Crew: For information purposes only, a general estimate of how many crewmen a typical ship of this type carries. Cost: The cost of the hull, in credits, Concord dollars, or the appropriate currency for your campaign.
+Hull Points: The number of hull points available in this type, representing its capacity for installing systems. The first number is the basic hull point total, the number in parenthesis is the bonus hull point total. 
+
+Tough: The ship’s toughness rating. Note that some ships have Good toughness, one step less than Small Craft. 
+
+Target: The ship’s basic resistance modifier to enemy fire, based on its size and maneuverability. 
+
+Maneuver: The ship’s maneuverability class. 
+
+5% and 10%: This is the number of hull points a system requiring 5 or 10 percent of the hull requires. This information is simply a shortcut to save you time and effort. 
+
+S, W, M, C: The ship’s Stun, Wound, Mortal, and Critical damage tracks. 
+
+Crew: For information purposes only, a general estimate of how many crewmen a typical ship of this type carries. 
+
+Cost: The cost of the hull, in credits, Concord dollars, or the appropriate currency for your campaign.
 
 ### Civilian Hulls
 
