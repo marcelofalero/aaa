@@ -39,7 +39,7 @@ Consisting of a thick layer of gel-like fluid sandwiched in a neutronite structu
 
 ### Table 5-2: Armor
 
-| Type | PL 5 | PL 6 | PL 7 | Hull | Cost/Hull Pt. |
+| Type | LI | HI | En | Hull | Cost/Hull Pt. |
 |---|---|---|---|---|---|
 | Light alloy | d4-1 | d4-1 | d4-2 | 2.5% | $50 K |
 | Light polymeric | d4-3 | d4-2 | d6-1 | 2.5% | $50 K |
@@ -48,21 +48,27 @@ Consisting of a thick layer of gel-like fluid sandwiched in a neutronite structu
 | Medium reflective | d4-2 | d4-1 | d6 | 5% | $100 K |
 | Heavy alloy* | d6+1 | d6+1 | d6 | 10% | $300 K |
 | Heavy reflective* | d4 | d4 | d8+1 | 10% | $200 K |
-| Super-heavy alloy* | d6+3 | d6+3 | d6+2 | 20% | $600 K |
+| Super-heavy alloy** | d6+3 | d6+3 | d6+2 | 20% | $600 K |
 | Light cerametal | d6-1 | d6-1 | d6-1 | 2.5% | $100 K |
 | Medium cerametal | d6+1 | d6+1 | d6 | 5% | $250 K |
 | Heavy cerametal* | d8+1 | d8+1 | d6+1 | 10% | $500 K |
-| Super-heavy cerametal* | d8+3 | d8+3 | d8 | 20% | $1 M |
+| Super-heavy cerametal** | d8+3 | d8+3 | d8 | 20% | $1 M |
 | Medium neutronite | -- | d8 | d8-1 | 5% | $500 K |
 | Heavy neutronite* | -- | d10+1 | d8+1 | 10% | $1 M |
-| Super-heavy neutronite* | -- | d10+3 | d10 | 20% | $2 M |
+| Super-heavy neutronite** | -- | d10+3 | d10 | 20% | $2 M |
 | Medium reactive | -- | -- | d8+1 | 5% | $500 K |
 | Heavy reactive* | -- | -- | d10+2 | 10% | $1 M |
-| Super-heavy reactive* | -- | -- | d12+1 | 20% | $2 M |
+| Super-heavy reactive** | -- | -- | d12+1 | 20% | $2 M |
 | Medium crystallis | -- | -- | d6-1(d10) | 5% | $1 M |
 | Heavy crystallis* | -- | -- | d8(d12+1) | 10% | $2 M |
-| Super-heavy crystallis* | -- | -- | d10(d20) | 20% | $4 M |
+| Super-heavy crystallis** | -- | -- | d10(d20) | 20% | $4 M |
 | Medium nanofluidic | -- | -- | d10+1 | 5% | $1 M |
 | Heavy nanofluidic* | -- | -- | d12+2 | 10% | $2 M |
-| Super-heavy nanofluidic*| -- | -- | d20+1 | 20% | $4 M |
+| Super-heavy nanofluidic**| -- | -- | d20+1 | 20% | $4 M |
 
+\\* Heavy armors cannot be installed on small craft.
+\\*\\* Super-heavy armors cannot be installed on small craft or light ships.
+
+**LI, HI, En:** The armor’s protective value against Low Impact, High Impact, and Energy attacks, respectively.
+**Hull:** The amount of the ship’s hull points required by armor of this weight. Refer to the hull table for the number of hull points each percentage equals (2.5% is half of 5%, rounded normally).
+**Cost/Hull Pt.:** Each hull point allocated to armor costs this much money. If the armor installation takes less than 1 hull point, use a minimum cost of 1 hull point worth of armor.
