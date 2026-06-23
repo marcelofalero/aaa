@@ -34,7 +34,7 @@ As weren join the galactic community, they take the roles of soldiers, mercenari
 - **Resilient:** Receive a **-1 step bonus** on **stamina-resist pain** skill checks.
 - **Pathogen Resistance:** Receive a **-2 step bonus** on **health-resist pathogen** skill checks. Their powerful immune system also halves their cybertolerance.
 - **Intimidating:** Receive a **-2 step bonus** on **interaction-intimidate** skill checks when physically threatening someone.
-- **Primitive Culture:** Suffer a **+2 step penalty** with technology from Progress Level 4 or higher (can be reduced with skill points).
+- **Primitive Culture:** Grants the flaw **[Primitive (2 steps)]({{< relref "perks_flaws/flaws/primitive" >}})**.
 - **Free Broad Skills:** Athletics (STR), Melee Combat (STR), Stamina (CON), Knowledge (INT), Awareness (WIL), Interaction (PER).
 
 ## Culture & Roleplaying

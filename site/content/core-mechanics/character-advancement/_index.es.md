@@ -35,6 +35,12 @@ Un Título de Personaje es más que un hito mecánico; es un estatus narrativo q
 
 Se alienta a los DJ a tejer estos avances de Título en la historia de la campaña, asegurando que el crecimiento mecánico se refleje en la creciente huella del personaje en la galaxia.
 
+### Superando Defectos
+
+Cada vez que un personaje avanza al siguiente Título (por ejemplo, de Novato a Experimentado), puede usar Puntos de Experiencia (PX) para cancelar parte del costo de un defecto, en el caso de los defectos con múltiples niveles, o eliminar por completo un defecto pagando su costo total.
+
+Por ejemplo, un personaje puede reducir el defecto *Primitivo* de su nivel de penalización de 3 escalones a su penalización de 2 escalones pagando 2 PX. Alternativamente, podría eliminar por completo un defecto de un solo nivel como *Distraído* pagando su costo total de 4 PX.
+
 ## El Arte de la Maestría y la Escala
 
 La maestría en un campo sigue una ley de rendimientos decrecientes. Si bien la competencia inicial es relativamente económica de adquirir, superar los límites de lo posible requiere una inversión exponencial de tiempo y enfoque. Esto se representa mediante el Precio Estándar de una habilidad, que aumenta a medida que alcanzas rangos más altos.

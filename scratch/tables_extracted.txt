@@ -1,0 +1,1677 @@
+
+================================================================================
+
+Table 5-1: Hulls. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 55
+Table 5-2: Armor . . . . . . . . . . . . . . . . . . . . . . . . . . . . 59
+Table 5-3: Power Plants. . . . . . . . . . . . . . . . . . . . . . . . 60
+Table 5-4: Engines . . . . . . . . . . . . . . . . . . . . . . . . . . . 62
+Table 5-5: FTL Drives . . . . . . . . . . . . . . . . . . . . . . . . . 65
+Table 5-6: Support Systems. . . . . . . . . . . . . . . . . . . . . 66
+Table 5-7: Hull Point Costs for Fixed Mounts and Turrets. . 71
+Table 5-8: Beam Weapons. . . . . . . . . . . . . . . . . . . . . . 73
+Table 5-9: Projectile Weapons . . . . . . . . . . . . . . . . . . . 75
+Table 5-10: Missiles, Bombs, and Mines . . . . . . . . 78–80
+Table 5-12: Torpedoes and Special Weapons. . . . . . . . 85
+Table 5-11: Area Effect Weapons. . . . . . . . . . . . . . . . . 82
+Table 5-13: Defensive Systems . . . . . . . . . . . . . . . . . . 87
+Table 5-14: Command, Control, and Communication . . . . 90
+Table 5-14a: Computers . . . . . . . . . . . . . . . . . . . . . . . 91
+Table 5-15: Sensors . . . . . . . . . . . . . . . . . . . . . . . . . . 94
+Table 5-16: Tracking Capability . . . . . . . . . . . . . . . . . . 95
+Table 5-17: Hangars and Miscellaneous Installations . . 98
+Table 5-18: Hit Locations and Zone Limits. . . . . . . . . 103
+Table 6-1: Stations and Bases . . . . . . . . . . . . . . . . . . 108
+                                                 INTRODUCTION
+4
+    From the beginning of time, humankind has engaged in war-                Finally, the ancient art of espionage is one more aspect
+    fare. Conflict, violence, and conquest are a part of the human        of diplomacy. A warship is an excellent platform for all
+    condition, which is a fact of life that seems unlikely to change      kinds of secret operations, covert strikes, sabotage, intel-
+    with the simple advance in technological progress. While sci-         ligence-gathering efforts, and clandestine meetings. In
+    ence fiction often features benevolent aliens and incredible          fact, most warships spend as much time in diplomatic
+    social advances, it is ultimately a genre of speculation about        missions as they do in fleet exercises or similar prepara-
+    the human condition. And that means that war is a central             tions for war.
+    theme of a great amount of science fiction.
+       Some of the most famous works of the genre feature in-
+    terplanetary, interstellar, or even intergalactic conflicts of
+                                                                              Surveys, Exploration, and
+    staggering scale. Even the stories that present humanity as a                     Research
+    united, advanced species often pit terrifying and implacable
+    aliens against the forces of civilization; science fiction stories    For centuries, the navies of Earth’s maritime powers
+    without the specter of warfare are the exception, not the rule.       backed extensive efforts to explore and chart the world
+                                                                          around them. While some of this effort produced clear na-
+                                                                          tional benefits—the discovery of new lands to colonize, for
+              THE WARSHIP AS A                                            instance—these same efforts were also instrumental in
+
+================================================================================
+
+Table 5-2: Armor . . . . . . . . . . . . . . . . . . . . . . . . . . . . 59
+Table 5-3: Power Plants. . . . . . . . . . . . . . . . . . . . . . . . 60
+Table 5-4: Engines . . . . . . . . . . . . . . . . . . . . . . . . . . . 62
+Table 5-5: FTL Drives . . . . . . . . . . . . . . . . . . . . . . . . . 65
+Table 5-6: Support Systems. . . . . . . . . . . . . . . . . . . . . 66
+Table 5-7: Hull Point Costs for Fixed Mounts and Turrets. . 71
+Table 5-8: Beam Weapons. . . . . . . . . . . . . . . . . . . . . . 73
+Table 5-9: Projectile Weapons . . . . . . . . . . . . . . . . . . . 75
+Table 5-10: Missiles, Bombs, and Mines . . . . . . . . 78–80
+Table 5-12: Torpedoes and Special Weapons. . . . . . . . 85
+Table 5-11: Area Effect Weapons. . . . . . . . . . . . . . . . . 82
+Table 5-13: Defensive Systems . . . . . . . . . . . . . . . . . . 87
+Table 5-14: Command, Control, and Communication . . . . 90
+Table 5-14a: Computers . . . . . . . . . . . . . . . . . . . . . . . 91
+Table 5-15: Sensors . . . . . . . . . . . . . . . . . . . . . . . . . . 94
+Table 5-16: Tracking Capability . . . . . . . . . . . . . . . . . . 95
+Table 5-17: Hangars and Miscellaneous Installations . . 98
+Table 5-18: Hit Locations and Zone Limits. . . . . . . . . 103
+Table 6-1: Stations and Bases . . . . . . . . . . . . . . . . . . 108
+                                                 INTRODUCTION
+4
+    From the beginning of time, humankind has engaged in war-                Finally, the ancient art of espionage is one more aspect
+    fare. Conflict, violence, and conquest are a part of the human        of diplomacy. A warship is an excellent platform for all
+    condition, which is a fact of life that seems unlikely to change      kinds of secret operations, covert strikes, sabotage, intel-
+    with the simple advance in technological progress. While sci-         ligence-gathering efforts, and clandestine meetings. In
+    ence fiction often features benevolent aliens and incredible          fact, most warships spend as much time in diplomatic
+    social advances, it is ultimately a genre of speculation about        missions as they do in fleet exercises or similar prepara-
+    the human condition. And that means that war is a central             tions for war.
+    theme of a great amount of science fiction.
+       Some of the most famous works of the genre feature in-
+    terplanetary, interstellar, or even intergalactic conflicts of
+                                                                              Surveys, Exploration, and
+    staggering scale. Even the stories that present humanity as a                     Research
+    united, advanced species often pit terrifying and implacable
+    aliens against the forces of civilization; science fiction stories    For centuries, the navies of Earth’s maritime powers
+    without the specter of warfare are the exception, not the rule.       backed extensive efforts to explore and chart the world
+                                                                          around them. While some of this effort produced clear na-
+                                                                          tional benefits—the discovery of new lands to colonize, for
+              THE WARSHIP AS A                                            instance—these same efforts were also instrumental in
+                WEAPON . . .                                              shaping our understanding of the world we inhabit. Mili-
+
+================================================================================
+
+Table 5-3: Power Plants. . . . . . . . . . . . . . . . . . . . . . . . 60
+Table 5-4: Engines . . . . . . . . . . . . . . . . . . . . . . . . . . . 62
+Table 5-5: FTL Drives . . . . . . . . . . . . . . . . . . . . . . . . . 65
+Table 5-6: Support Systems. . . . . . . . . . . . . . . . . . . . . 66
+Table 5-7: Hull Point Costs for Fixed Mounts and Turrets. . 71
+Table 5-8: Beam Weapons. . . . . . . . . . . . . . . . . . . . . . 73
+Table 5-9: Projectile Weapons . . . . . . . . . . . . . . . . . . . 75
+Table 5-10: Missiles, Bombs, and Mines . . . . . . . . 78–80
+Table 5-12: Torpedoes and Special Weapons. . . . . . . . 85
+Table 5-11: Area Effect Weapons. . . . . . . . . . . . . . . . . 82
+Table 5-13: Defensive Systems . . . . . . . . . . . . . . . . . . 87
+Table 5-14: Command, Control, and Communication . . . . 90
+Table 5-14a: Computers . . . . . . . . . . . . . . . . . . . . . . . 91
+Table 5-15: Sensors . . . . . . . . . . . . . . . . . . . . . . . . . . 94
+Table 5-16: Tracking Capability . . . . . . . . . . . . . . . . . . 95
+Table 5-17: Hangars and Miscellaneous Installations . . 98
+Table 5-18: Hit Locations and Zone Limits. . . . . . . . . 103
+Table 6-1: Stations and Bases . . . . . . . . . . . . . . . . . . 108
+                                                 INTRODUCTION
+4
+    From the beginning of time, humankind has engaged in war-                Finally, the ancient art of espionage is one more aspect
+    fare. Conflict, violence, and conquest are a part of the human        of diplomacy. A warship is an excellent platform for all
+    condition, which is a fact of life that seems unlikely to change      kinds of secret operations, covert strikes, sabotage, intel-
+    with the simple advance in technological progress. While sci-         ligence-gathering efforts, and clandestine meetings. In
+    ence fiction often features benevolent aliens and incredible          fact, most warships spend as much time in diplomatic
+    social advances, it is ultimately a genre of speculation about        missions as they do in fleet exercises or similar prepara-
+    the human condition. And that means that war is a central             tions for war.
+    theme of a great amount of science fiction.
+       Some of the most famous works of the genre feature in-
+    terplanetary, interstellar, or even intergalactic conflicts of
+                                                                              Surveys, Exploration, and
+    staggering scale. Even the stories that present humanity as a                     Research
+    united, advanced species often pit terrifying and implacable
+    aliens against the forces of civilization; science fiction stories    For centuries, the navies of Earth’s maritime powers
+    without the specter of warfare are the exception, not the rule.       backed extensive efforts to explore and chart the world
+                                                                          around them. While some of this effort produced clear na-
+                                                                          tional benefits—the discovery of new lands to colonize, for
+              THE WARSHIP AS A                                            instance—these same efforts were also instrumental in
+                WEAPON . . .                                              shaping our understanding of the world we inhabit. Mili-
+                                                                          tary vessels carried scientific expeditions to the far cor-
+
+================================================================================
+
+Table 5-4: Engines . . . . . . . . . . . . . . . . . . . . . . . . . . . 62
+Table 5-5: FTL Drives . . . . . . . . . . . . . . . . . . . . . . . . . 65
+Table 5-6: Support Systems. . . . . . . . . . . . . . . . . . . . . 66
+Table 5-7: Hull Point Costs for Fixed Mounts and Turrets. . 71
+Table 5-8: Beam Weapons. . . . . . . . . . . . . . . . . . . . . . 73
+Table 5-9: Projectile Weapons . . . . . . . . . . . . . . . . . . . 75
+Table 5-10: Missiles, Bombs, and Mines . . . . . . . . 78–80
+Table 5-12: Torpedoes and Special Weapons. . . . . . . . 85
+Table 5-11: Area Effect Weapons. . . . . . . . . . . . . . . . . 82
+Table 5-13: Defensive Systems . . . . . . . . . . . . . . . . . . 87
+Table 5-14: Command, Control, and Communication . . . . 90
+Table 5-14a: Computers . . . . . . . . . . . . . . . . . . . . . . . 91
+Table 5-15: Sensors . . . . . . . . . . . . . . . . . . . . . . . . . . 94
+Table 5-16: Tracking Capability . . . . . . . . . . . . . . . . . . 95
+Table 5-17: Hangars and Miscellaneous Installations . . 98
+Table 5-18: Hit Locations and Zone Limits. . . . . . . . . 103
+Table 6-1: Stations and Bases . . . . . . . . . . . . . . . . . . 108
+                                                 INTRODUCTION
+4
+    From the beginning of time, humankind has engaged in war-                Finally, the ancient art of espionage is one more aspect
+    fare. Conflict, violence, and conquest are a part of the human        of diplomacy. A warship is an excellent platform for all
+    condition, which is a fact of life that seems unlikely to change      kinds of secret operations, covert strikes, sabotage, intel-
+    with the simple advance in technological progress. While sci-         ligence-gathering efforts, and clandestine meetings. In
+    ence fiction often features benevolent aliens and incredible          fact, most warships spend as much time in diplomatic
+    social advances, it is ultimately a genre of speculation about        missions as they do in fleet exercises or similar prepara-
+    the human condition. And that means that war is a central             tions for war.
+    theme of a great amount of science fiction.
+       Some of the most famous works of the genre feature in-
+    terplanetary, interstellar, or even intergalactic conflicts of
+                                                                              Surveys, Exploration, and
+    staggering scale. Even the stories that present humanity as a                     Research
+    united, advanced species often pit terrifying and implacable
+    aliens against the forces of civilization; science fiction stories    For centuries, the navies of Earth’s maritime powers
+    without the specter of warfare are the exception, not the rule.       backed extensive efforts to explore and chart the world
+                                                                          around them. While some of this effort produced clear na-
+                                                                          tional benefits—the discovery of new lands to colonize, for
+              THE WARSHIP AS A                                            instance—these same efforts were also instrumental in
+                WEAPON . . .                                              shaping our understanding of the world we inhabit. Mili-
+                                                                          tary vessels carried scientific expeditions to the far cor-
+    Of all the weapons that may be employed in these futuristic           ners of the world and contributed greatly to the advance
+
+================================================================================
+
+Table 5-5: FTL Drives . . . . . . . . . . . . . . . . . . . . . . . . . 65
+Table 5-6: Support Systems. . . . . . . . . . . . . . . . . . . . . 66
+Table 5-7: Hull Point Costs for Fixed Mounts and Turrets. . 71
+Table 5-8: Beam Weapons. . . . . . . . . . . . . . . . . . . . . . 73
+Table 5-9: Projectile Weapons . . . . . . . . . . . . . . . . . . . 75
+Table 5-10: Missiles, Bombs, and Mines . . . . . . . . 78–80
+Table 5-12: Torpedoes and Special Weapons. . . . . . . . 85
+Table 5-11: Area Effect Weapons. . . . . . . . . . . . . . . . . 82
+Table 5-13: Defensive Systems . . . . . . . . . . . . . . . . . . 87
+Table 5-14: Command, Control, and Communication . . . . 90
+Table 5-14a: Computers . . . . . . . . . . . . . . . . . . . . . . . 91
+Table 5-15: Sensors . . . . . . . . . . . . . . . . . . . . . . . . . . 94
+Table 5-16: Tracking Capability . . . . . . . . . . . . . . . . . . 95
+Table 5-17: Hangars and Miscellaneous Installations . . 98
+Table 5-18: Hit Locations and Zone Limits. . . . . . . . . 103
+Table 6-1: Stations and Bases . . . . . . . . . . . . . . . . . . 108
+                                                 INTRODUCTION
+4
+    From the beginning of time, humankind has engaged in war-                Finally, the ancient art of espionage is one more aspect
+    fare. Conflict, violence, and conquest are a part of the human        of diplomacy. A warship is an excellent platform for all
+    condition, which is a fact of life that seems unlikely to change      kinds of secret operations, covert strikes, sabotage, intel-
+    with the simple advance in technological progress. While sci-         ligence-gathering efforts, and clandestine meetings. In
+    ence fiction often features benevolent aliens and incredible          fact, most warships spend as much time in diplomatic
+    social advances, it is ultimately a genre of speculation about        missions as they do in fleet exercises or similar prepara-
+    the human condition. And that means that war is a central             tions for war.
+    theme of a great amount of science fiction.
+       Some of the most famous works of the genre feature in-
+    terplanetary, interstellar, or even intergalactic conflicts of
+                                                                              Surveys, Exploration, and
+    staggering scale. Even the stories that present humanity as a                     Research
+    united, advanced species often pit terrifying and implacable
+    aliens against the forces of civilization; science fiction stories    For centuries, the navies of Earth’s maritime powers
+    without the specter of warfare are the exception, not the rule.       backed extensive efforts to explore and chart the world
+                                                                          around them. While some of this effort produced clear na-
+                                                                          tional benefits—the discovery of new lands to colonize, for
+              THE WARSHIP AS A                                            instance—these same efforts were also instrumental in
+                WEAPON . . .                                              shaping our understanding of the world we inhabit. Mili-
+                                                                          tary vessels carried scientific expeditions to the far cor-
+    Of all the weapons that may be employed in these futuristic           ners of the world and contributed greatly to the advance
+    conflicts, the warship is the most complex and powerful. Like         of knowledge.
+
+================================================================================
+
+Table 5-6: Support Systems. . . . . . . . . . . . . . . . . . . . . 66
+Table 5-7: Hull Point Costs for Fixed Mounts and Turrets. . 71
+Table 5-8: Beam Weapons. . . . . . . . . . . . . . . . . . . . . . 73
+Table 5-9: Projectile Weapons . . . . . . . . . . . . . . . . . . . 75
+Table 5-10: Missiles, Bombs, and Mines . . . . . . . . 78–80
+Table 5-12: Torpedoes and Special Weapons. . . . . . . . 85
+Table 5-11: Area Effect Weapons. . . . . . . . . . . . . . . . . 82
+Table 5-13: Defensive Systems . . . . . . . . . . . . . . . . . . 87
+Table 5-14: Command, Control, and Communication . . . . 90
+Table 5-14a: Computers . . . . . . . . . . . . . . . . . . . . . . . 91
+Table 5-15: Sensors . . . . . . . . . . . . . . . . . . . . . . . . . . 94
+Table 5-16: Tracking Capability . . . . . . . . . . . . . . . . . . 95
+Table 5-17: Hangars and Miscellaneous Installations . . 98
+Table 5-18: Hit Locations and Zone Limits. . . . . . . . . 103
+Table 6-1: Stations and Bases . . . . . . . . . . . . . . . . . . 108
+                                                 INTRODUCTION
+4
+    From the beginning of time, humankind has engaged in war-                Finally, the ancient art of espionage is one more aspect
+    fare. Conflict, violence, and conquest are a part of the human        of diplomacy. A warship is an excellent platform for all
+    condition, which is a fact of life that seems unlikely to change      kinds of secret operations, covert strikes, sabotage, intel-
+    with the simple advance in technological progress. While sci-         ligence-gathering efforts, and clandestine meetings. In
+    ence fiction often features benevolent aliens and incredible          fact, most warships spend as much time in diplomatic
+    social advances, it is ultimately a genre of speculation about        missions as they do in fleet exercises or similar prepara-
+    the human condition. And that means that war is a central             tions for war.
+    theme of a great amount of science fiction.
+       Some of the most famous works of the genre feature in-
+    terplanetary, interstellar, or even intergalactic conflicts of
+                                                                              Surveys, Exploration, and
+    staggering scale. Even the stories that present humanity as a                     Research
+    united, advanced species often pit terrifying and implacable
+    aliens against the forces of civilization; science fiction stories    For centuries, the navies of Earth’s maritime powers
+    without the specter of warfare are the exception, not the rule.       backed extensive efforts to explore and chart the world
+                                                                          around them. While some of this effort produced clear na-
+                                                                          tional benefits—the discovery of new lands to colonize, for
+              THE WARSHIP AS A                                            instance—these same efforts were also instrumental in
+                WEAPON . . .                                              shaping our understanding of the world we inhabit. Mili-
+                                                                          tary vessels carried scientific expeditions to the far cor-
+    Of all the weapons that may be employed in these futuristic           ners of the world and contributed greatly to the advance
+    conflicts, the warship is the most complex and powerful. Like         of knowledge.
+    any weapon, it may be used in the defense of the innocent,               Major warships detached to exploration or scientific
+
+================================================================================
+
+Table 5-7: Hull Point Costs for Fixed Mounts and Turrets. . 71
+Table 5-8: Beam Weapons. . . . . . . . . . . . . . . . . . . . . . 73
+Table 5-9: Projectile Weapons . . . . . . . . . . . . . . . . . . . 75
+Table 5-10: Missiles, Bombs, and Mines . . . . . . . . 78–80
+Table 5-12: Torpedoes and Special Weapons. . . . . . . . 85
+Table 5-11: Area Effect Weapons. . . . . . . . . . . . . . . . . 82
+Table 5-13: Defensive Systems . . . . . . . . . . . . . . . . . . 87
+Table 5-14: Command, Control, and Communication . . . . 90
+Table 5-14a: Computers . . . . . . . . . . . . . . . . . . . . . . . 91
+Table 5-15: Sensors . . . . . . . . . . . . . . . . . . . . . . . . . . 94
+Table 5-16: Tracking Capability . . . . . . . . . . . . . . . . . . 95
+Table 5-17: Hangars and Miscellaneous Installations . . 98
+Table 5-18: Hit Locations and Zone Limits. . . . . . . . . 103
+Table 6-1: Stations and Bases . . . . . . . . . . . . . . . . . . 108
+                                                 INTRODUCTION
+4
+    From the beginning of time, humankind has engaged in war-                Finally, the ancient art of espionage is one more aspect
+    fare. Conflict, violence, and conquest are a part of the human        of diplomacy. A warship is an excellent platform for all
+    condition, which is a fact of life that seems unlikely to change      kinds of secret operations, covert strikes, sabotage, intel-
+    with the simple advance in technological progress. While sci-         ligence-gathering efforts, and clandestine meetings. In
+    ence fiction often features benevolent aliens and incredible          fact, most warships spend as much time in diplomatic
+    social advances, it is ultimately a genre of speculation about        missions as they do in fleet exercises or similar prepara-
+    the human condition. And that means that war is a central             tions for war.
+    theme of a great amount of science fiction.
+       Some of the most famous works of the genre feature in-
+    terplanetary, interstellar, or even intergalactic conflicts of
+                                                                              Surveys, Exploration, and
+    staggering scale. Even the stories that present humanity as a                     Research
+    united, advanced species often pit terrifying and implacable
+    aliens against the forces of civilization; science fiction stories    For centuries, the navies of Earth’s maritime powers
+    without the specter of warfare are the exception, not the rule.       backed extensive efforts to explore and chart the world
+                                                                          around them. While some of this effort produced clear na-
+                                                                          tional benefits—the discovery of new lands to colonize, for
+              THE WARSHIP AS A                                            instance—these same efforts were also instrumental in
+                WEAPON . . .                                              shaping our understanding of the world we inhabit. Mili-
+                                                                          tary vessels carried scientific expeditions to the far cor-
+    Of all the weapons that may be employed in these futuristic           ners of the world and contributed greatly to the advance
+    conflicts, the warship is the most complex and powerful. Like         of knowledge.
+    any weapon, it may be used in the defense of the innocent,               Major warships detached to exploration or scientific
+    the oppression of the weak, or the destruction of a mortal en-        missions are a staple of science fiction. Knowledge is
+
+================================================================================
+
+Table 5-8: Beam Weapons. . . . . . . . . . . . . . . . . . . . . . 73
+Table 5-9: Projectile Weapons . . . . . . . . . . . . . . . . . . . 75
+Table 5-10: Missiles, Bombs, and Mines . . . . . . . . 78–80
+Table 5-12: Torpedoes and Special Weapons. . . . . . . . 85
+Table 5-11: Area Effect Weapons. . . . . . . . . . . . . . . . . 82
+Table 5-13: Defensive Systems . . . . . . . . . . . . . . . . . . 87
+Table 5-14: Command, Control, and Communication . . . . 90
+Table 5-14a: Computers . . . . . . . . . . . . . . . . . . . . . . . 91
+Table 5-15: Sensors . . . . . . . . . . . . . . . . . . . . . . . . . . 94
+Table 5-16: Tracking Capability . . . . . . . . . . . . . . . . . . 95
+Table 5-17: Hangars and Miscellaneous Installations . . 98
+Table 5-18: Hit Locations and Zone Limits. . . . . . . . . 103
+Table 6-1: Stations and Bases . . . . . . . . . . . . . . . . . . 108
+                                                 INTRODUCTION
+4
+    From the beginning of time, humankind has engaged in war-                Finally, the ancient art of espionage is one more aspect
+    fare. Conflict, violence, and conquest are a part of the human        of diplomacy. A warship is an excellent platform for all
+    condition, which is a fact of life that seems unlikely to change      kinds of secret operations, covert strikes, sabotage, intel-
+    with the simple advance in technological progress. While sci-         ligence-gathering efforts, and clandestine meetings. In
+    ence fiction often features benevolent aliens and incredible          fact, most warships spend as much time in diplomatic
+    social advances, it is ultimately a genre of speculation about        missions as they do in fleet exercises or similar prepara-
+    the human condition. And that means that war is a central             tions for war.
+    theme of a great amount of science fiction.
+       Some of the most famous works of the genre feature in-
+    terplanetary, interstellar, or even intergalactic conflicts of
+                                                                              Surveys, Exploration, and
+    staggering scale. Even the stories that present humanity as a                     Research
+    united, advanced species often pit terrifying and implacable
+    aliens against the forces of civilization; science fiction stories    For centuries, the navies of Earth’s maritime powers
+    without the specter of warfare are the exception, not the rule.       backed extensive efforts to explore and chart the world
+                                                                          around them. While some of this effort produced clear na-
+                                                                          tional benefits—the discovery of new lands to colonize, for
+              THE WARSHIP AS A                                            instance—these same efforts were also instrumental in
+                WEAPON . . .                                              shaping our understanding of the world we inhabit. Mili-
+                                                                          tary vessels carried scientific expeditions to the far cor-
+    Of all the weapons that may be employed in these futuristic           ners of the world and contributed greatly to the advance
+    conflicts, the warship is the most complex and powerful. Like         of knowledge.
+    any weapon, it may be used in the defense of the innocent,               Major warships detached to exploration or scientific
+    the oppression of the weak, or the destruction of a mortal en-        missions are a staple of science fiction. Knowledge is
+    emy. Unlike a pistol or a rifle, though, the warship has the ca-      power, after all, and the more the heroes discover about
+
+================================================================================
+
+Table 5-9: Projectile Weapons . . . . . . . . . . . . . . . . . . . 75
+Table 5-10: Missiles, Bombs, and Mines . . . . . . . . 78–80
+Table 5-12: Torpedoes and Special Weapons. . . . . . . . 85
+Table 5-11: Area Effect Weapons. . . . . . . . . . . . . . . . . 82
+Table 5-13: Defensive Systems . . . . . . . . . . . . . . . . . . 87
+Table 5-14: Command, Control, and Communication . . . . 90
+Table 5-14a: Computers . . . . . . . . . . . . . . . . . . . . . . . 91
+Table 5-15: Sensors . . . . . . . . . . . . . . . . . . . . . . . . . . 94
+Table 5-16: Tracking Capability . . . . . . . . . . . . . . . . . . 95
+Table 5-17: Hangars and Miscellaneous Installations . . 98
+Table 5-18: Hit Locations and Zone Limits. . . . . . . . . 103
+Table 6-1: Stations and Bases . . . . . . . . . . . . . . . . . . 108
+                                                 INTRODUCTION
+4
+    From the beginning of time, humankind has engaged in war-                Finally, the ancient art of espionage is one more aspect
+    fare. Conflict, violence, and conquest are a part of the human        of diplomacy. A warship is an excellent platform for all
+    condition, which is a fact of life that seems unlikely to change      kinds of secret operations, covert strikes, sabotage, intel-
+    with the simple advance in technological progress. While sci-         ligence-gathering efforts, and clandestine meetings. In
+    ence fiction often features benevolent aliens and incredible          fact, most warships spend as much time in diplomatic
+    social advances, it is ultimately a genre of speculation about        missions as they do in fleet exercises or similar prepara-
+    the human condition. And that means that war is a central             tions for war.
+    theme of a great amount of science fiction.
+       Some of the most famous works of the genre feature in-
+    terplanetary, interstellar, or even intergalactic conflicts of
+                                                                              Surveys, Exploration, and
+    staggering scale. Even the stories that present humanity as a                     Research
+    united, advanced species often pit terrifying and implacable
+    aliens against the forces of civilization; science fiction stories    For centuries, the navies of Earth’s maritime powers
+    without the specter of warfare are the exception, not the rule.       backed extensive efforts to explore and chart the world
+                                                                          around them. While some of this effort produced clear na-
+                                                                          tional benefits—the discovery of new lands to colonize, for
+              THE WARSHIP AS A                                            instance—these same efforts were also instrumental in
+                WEAPON . . .                                              shaping our understanding of the world we inhabit. Mili-
+                                                                          tary vessels carried scientific expeditions to the far cor-
+    Of all the weapons that may be employed in these futuristic           ners of the world and contributed greatly to the advance
+    conflicts, the warship is the most complex and powerful. Like         of knowledge.
+    any weapon, it may be used in the defense of the innocent,               Major warships detached to exploration or scientific
+    the oppression of the weak, or the destruction of a mortal en-        missions are a staple of science fiction. Knowledge is
+    emy. Unlike a pistol or a rifle, though, the warship has the ca-      power, after all, and the more the heroes discover about
+    pacity to affect issues on a planetary scale. Heroes serving          the universe, the better they can represent their society’s
+
+================================================================================
+
+Table 5-10: Missiles, Bombs, and Mines . . . . . . . . 78–80
+Table 5-12: Torpedoes and Special Weapons. . . . . . . . 85
+Table 5-11: Area Effect Weapons. . . . . . . . . . . . . . . . . 82
+Table 5-13: Defensive Systems . . . . . . . . . . . . . . . . . . 87
+Table 5-14: Command, Control, and Communication . . . . 90
+Table 5-14a: Computers . . . . . . . . . . . . . . . . . . . . . . . 91
+Table 5-15: Sensors . . . . . . . . . . . . . . . . . . . . . . . . . . 94
+Table 5-16: Tracking Capability . . . . . . . . . . . . . . . . . . 95
+Table 5-17: Hangars and Miscellaneous Installations . . 98
+Table 5-18: Hit Locations and Zone Limits. . . . . . . . . 103
+Table 6-1: Stations and Bases . . . . . . . . . . . . . . . . . . 108
+                                                 INTRODUCTION
+4
+    From the beginning of time, humankind has engaged in war-                Finally, the ancient art of espionage is one more aspect
+    fare. Conflict, violence, and conquest are a part of the human        of diplomacy. A warship is an excellent platform for all
+    condition, which is a fact of life that seems unlikely to change      kinds of secret operations, covert strikes, sabotage, intel-
+    with the simple advance in technological progress. While sci-         ligence-gathering efforts, and clandestine meetings. In
+    ence fiction often features benevolent aliens and incredible          fact, most warships spend as much time in diplomatic
+    social advances, it is ultimately a genre of speculation about        missions as they do in fleet exercises or similar prepara-
+    the human condition. And that means that war is a central             tions for war.
+    theme of a great amount of science fiction.
+       Some of the most famous works of the genre feature in-
+    terplanetary, interstellar, or even intergalactic conflicts of
+                                                                              Surveys, Exploration, and
+    staggering scale. Even the stories that present humanity as a                     Research
+    united, advanced species often pit terrifying and implacable
+    aliens against the forces of civilization; science fiction stories    For centuries, the navies of Earth’s maritime powers
+    without the specter of warfare are the exception, not the rule.       backed extensive efforts to explore and chart the world
+                                                                          around them. While some of this effort produced clear na-
+                                                                          tional benefits—the discovery of new lands to colonize, for
+              THE WARSHIP AS A                                            instance—these same efforts were also instrumental in
+                WEAPON . . .                                              shaping our understanding of the world we inhabit. Mili-
+                                                                          tary vessels carried scientific expeditions to the far cor-
+    Of all the weapons that may be employed in these futuristic           ners of the world and contributed greatly to the advance
+    conflicts, the warship is the most complex and powerful. Like         of knowledge.
+    any weapon, it may be used in the defense of the innocent,               Major warships detached to exploration or scientific
+    the oppression of the weak, or the destruction of a mortal en-        missions are a staple of science fiction. Knowledge is
+    emy. Unlike a pistol or a rifle, though, the warship has the ca-      power, after all, and the more the heroes discover about
+    pacity to affect issues on a planetary scale. Heroes serving          the universe, the better they can represent their society’s
+    aboard a warship are affecting the plot at an epic level, and         interests. Even if a ship is assigned to strictly military
+
+================================================================================
+
+Table 5-12: Torpedoes and Special Weapons. . . . . . . . 85
+Table 5-11: Area Effect Weapons. . . . . . . . . . . . . . . . . 82
+Table 5-13: Defensive Systems . . . . . . . . . . . . . . . . . . 87
+Table 5-14: Command, Control, and Communication . . . . 90
+Table 5-14a: Computers . . . . . . . . . . . . . . . . . . . . . . . 91
+Table 5-15: Sensors . . . . . . . . . . . . . . . . . . . . . . . . . . 94
+Table 5-16: Tracking Capability . . . . . . . . . . . . . . . . . . 95
+Table 5-17: Hangars and Miscellaneous Installations . . 98
+Table 5-18: Hit Locations and Zone Limits. . . . . . . . . 103
+Table 6-1: Stations and Bases . . . . . . . . . . . . . . . . . . 108
+                                                 INTRODUCTION
+4
+    From the beginning of time, humankind has engaged in war-                Finally, the ancient art of espionage is one more aspect
+    fare. Conflict, violence, and conquest are a part of the human        of diplomacy. A warship is an excellent platform for all
+    condition, which is a fact of life that seems unlikely to change      kinds of secret operations, covert strikes, sabotage, intel-
+    with the simple advance in technological progress. While sci-         ligence-gathering efforts, and clandestine meetings. In
+    ence fiction often features benevolent aliens and incredible          fact, most warships spend as much time in diplomatic
+    social advances, it is ultimately a genre of speculation about        missions as they do in fleet exercises or similar prepara-
+    the human condition. And that means that war is a central             tions for war.
+    theme of a great amount of science fiction.
+       Some of the most famous works of the genre feature in-
+    terplanetary, interstellar, or even intergalactic conflicts of
+                                                                              Surveys, Exploration, and
+    staggering scale. Even the stories that present humanity as a                     Research
+    united, advanced species often pit terrifying and implacable
+    aliens against the forces of civilization; science fiction stories    For centuries, the navies of Earth’s maritime powers
+    without the specter of warfare are the exception, not the rule.       backed extensive efforts to explore and chart the world
+                                                                          around them. While some of this effort produced clear na-
+                                                                          tional benefits—the discovery of new lands to colonize, for
+              THE WARSHIP AS A                                            instance—these same efforts were also instrumental in
+                WEAPON . . .                                              shaping our understanding of the world we inhabit. Mili-
+                                                                          tary vessels carried scientific expeditions to the far cor-
+    Of all the weapons that may be employed in these futuristic           ners of the world and contributed greatly to the advance
+    conflicts, the warship is the most complex and powerful. Like         of knowledge.
+    any weapon, it may be used in the defense of the innocent,               Major warships detached to exploration or scientific
+    the oppression of the weak, or the destruction of a mortal en-        missions are a staple of science fiction. Knowledge is
+    emy. Unlike a pistol or a rifle, though, the warship has the ca-      power, after all, and the more the heroes discover about
+    pacity to affect issues on a planetary scale. Heroes serving          the universe, the better they can represent their society’s
+    aboard a warship are affecting the plot at an epic level, and         interests. Even if a ship is assigned to strictly military
+    deciding the fates of entire worlds.                                  tasks, space is full of anomalies, mysteries, and unchart-
+
+================================================================================
+
+Table 5-11: Area Effect Weapons. . . . . . . . . . . . . . . . . 82
+Table 5-13: Defensive Systems . . . . . . . . . . . . . . . . . . 87
+Table 5-14: Command, Control, and Communication . . . . 90
+Table 5-14a: Computers . . . . . . . . . . . . . . . . . . . . . . . 91
+Table 5-15: Sensors . . . . . . . . . . . . . . . . . . . . . . . . . . 94
+Table 5-16: Tracking Capability . . . . . . . . . . . . . . . . . . 95
+Table 5-17: Hangars and Miscellaneous Installations . . 98
+Table 5-18: Hit Locations and Zone Limits. . . . . . . . . 103
+Table 6-1: Stations and Bases . . . . . . . . . . . . . . . . . . 108
+                                                 INTRODUCTION
+4
+    From the beginning of time, humankind has engaged in war-                Finally, the ancient art of espionage is one more aspect
+    fare. Conflict, violence, and conquest are a part of the human        of diplomacy. A warship is an excellent platform for all
+    condition, which is a fact of life that seems unlikely to change      kinds of secret operations, covert strikes, sabotage, intel-
+    with the simple advance in technological progress. While sci-         ligence-gathering efforts, and clandestine meetings. In
+    ence fiction often features benevolent aliens and incredible          fact, most warships spend as much time in diplomatic
+    social advances, it is ultimately a genre of speculation about        missions as they do in fleet exercises or similar prepara-
+    the human condition. And that means that war is a central             tions for war.
+    theme of a great amount of science fiction.
+       Some of the most famous works of the genre feature in-
+    terplanetary, interstellar, or even intergalactic conflicts of
+                                                                              Surveys, Exploration, and
+    staggering scale. Even the stories that present humanity as a                     Research
+    united, advanced species often pit terrifying and implacable
+    aliens against the forces of civilization; science fiction stories    For centuries, the navies of Earth’s maritime powers
+    without the specter of warfare are the exception, not the rule.       backed extensive efforts to explore and chart the world
+                                                                          around them. While some of this effort produced clear na-
+                                                                          tional benefits—the discovery of new lands to colonize, for
+              THE WARSHIP AS A                                            instance—these same efforts were also instrumental in
+                WEAPON . . .                                              shaping our understanding of the world we inhabit. Mili-
+                                                                          tary vessels carried scientific expeditions to the far cor-
+    Of all the weapons that may be employed in these futuristic           ners of the world and contributed greatly to the advance
+    conflicts, the warship is the most complex and powerful. Like         of knowledge.
+    any weapon, it may be used in the defense of the innocent,               Major warships detached to exploration or scientific
+    the oppression of the weak, or the destruction of a mortal en-        missions are a staple of science fiction. Knowledge is
+    emy. Unlike a pistol or a rifle, though, the warship has the ca-      power, after all, and the more the heroes discover about
+    pacity to affect issues on a planetary scale. Heroes serving          the universe, the better they can represent their society’s
+    aboard a warship are affecting the plot at an epic level, and         interests. Even if a ship is assigned to strictly military
+    deciding the fates of entire worlds.                                  tasks, space is full of anomalies, mysteries, and unchart-
+                                                                          ed systems for the heroes to explore and study.
+
+================================================================================
+
+Table 5-13: Defensive Systems . . . . . . . . . . . . . . . . . . 87
+Table 5-14: Command, Control, and Communication . . . . 90
+Table 5-14a: Computers . . . . . . . . . . . . . . . . . . . . . . . 91
+Table 5-15: Sensors . . . . . . . . . . . . . . . . . . . . . . . . . . 94
+Table 5-16: Tracking Capability . . . . . . . . . . . . . . . . . . 95
+Table 5-17: Hangars and Miscellaneous Installations . . 98
+Table 5-18: Hit Locations and Zone Limits. . . . . . . . . 103
+Table 6-1: Stations and Bases . . . . . . . . . . . . . . . . . . 108
+                                                 INTRODUCTION
+4
+    From the beginning of time, humankind has engaged in war-                Finally, the ancient art of espionage is one more aspect
+    fare. Conflict, violence, and conquest are a part of the human        of diplomacy. A warship is an excellent platform for all
+    condition, which is a fact of life that seems unlikely to change      kinds of secret operations, covert strikes, sabotage, intel-
+    with the simple advance in technological progress. While sci-         ligence-gathering efforts, and clandestine meetings. In
+    ence fiction often features benevolent aliens and incredible          fact, most warships spend as much time in diplomatic
+    social advances, it is ultimately a genre of speculation about        missions as they do in fleet exercises or similar prepara-
+    the human condition. And that means that war is a central             tions for war.
+    theme of a great amount of science fiction.
+       Some of the most famous works of the genre feature in-
+    terplanetary, interstellar, or even intergalactic conflicts of
+                                                                              Surveys, Exploration, and
+    staggering scale. Even the stories that present humanity as a                     Research
+    united, advanced species often pit terrifying and implacable
+    aliens against the forces of civilization; science fiction stories    For centuries, the navies of Earth’s maritime powers
+    without the specter of warfare are the exception, not the rule.       backed extensive efforts to explore and chart the world
+                                                                          around them. While some of this effort produced clear na-
+                                                                          tional benefits—the discovery of new lands to colonize, for
+              THE WARSHIP AS A                                            instance—these same efforts were also instrumental in
+                WEAPON . . .                                              shaping our understanding of the world we inhabit. Mili-
+                                                                          tary vessels carried scientific expeditions to the far cor-
+    Of all the weapons that may be employed in these futuristic           ners of the world and contributed greatly to the advance
+    conflicts, the warship is the most complex and powerful. Like         of knowledge.
+    any weapon, it may be used in the defense of the innocent,               Major warships detached to exploration or scientific
+    the oppression of the weak, or the destruction of a mortal en-        missions are a staple of science fiction. Knowledge is
+    emy. Unlike a pistol or a rifle, though, the warship has the ca-      power, after all, and the more the heroes discover about
+    pacity to affect issues on a planetary scale. Heroes serving          the universe, the better they can represent their society’s
+    aboard a warship are affecting the plot at an epic level, and         interests. Even if a ship is assigned to strictly military
+    deciding the fates of entire worlds.                                  tasks, space is full of anomalies, mysteries, and unchart-
+                                                                          ed systems for the heroes to explore and study.
+      . . . AND AN INSTRUMENT
+
+================================================================================
+
+Table 5-14: Command, Control, and Communication . . . . 90
+Table 5-14a: Computers . . . . . . . . . . . . . . . . . . . . . . . 91
+Table 5-15: Sensors . . . . . . . . . . . . . . . . . . . . . . . . . . 94
+Table 5-16: Tracking Capability . . . . . . . . . . . . . . . . . . 95
+Table 5-17: Hangars and Miscellaneous Installations . . 98
+Table 5-18: Hit Locations and Zone Limits. . . . . . . . . 103
+Table 6-1: Stations and Bases . . . . . . . . . . . . . . . . . . 108
+                                                 INTRODUCTION
+4
+    From the beginning of time, humankind has engaged in war-                Finally, the ancient art of espionage is one more aspect
+    fare. Conflict, violence, and conquest are a part of the human        of diplomacy. A warship is an excellent platform for all
+    condition, which is a fact of life that seems unlikely to change      kinds of secret operations, covert strikes, sabotage, intel-
+    with the simple advance in technological progress. While sci-         ligence-gathering efforts, and clandestine meetings. In
+    ence fiction often features benevolent aliens and incredible          fact, most warships spend as much time in diplomatic
+    social advances, it is ultimately a genre of speculation about        missions as they do in fleet exercises or similar prepara-
+    the human condition. And that means that war is a central             tions for war.
+    theme of a great amount of science fiction.
+       Some of the most famous works of the genre feature in-
+    terplanetary, interstellar, or even intergalactic conflicts of
+                                                                              Surveys, Exploration, and
+    staggering scale. Even the stories that present humanity as a                     Research
+    united, advanced species often pit terrifying and implacable
+    aliens against the forces of civilization; science fiction stories    For centuries, the navies of Earth’s maritime powers
+    without the specter of warfare are the exception, not the rule.       backed extensive efforts to explore and chart the world
+                                                                          around them. While some of this effort produced clear na-
+                                                                          tional benefits—the discovery of new lands to colonize, for
+              THE WARSHIP AS A                                            instance—these same efforts were also instrumental in
+                WEAPON . . .                                              shaping our understanding of the world we inhabit. Mili-
+                                                                          tary vessels carried scientific expeditions to the far cor-
+    Of all the weapons that may be employed in these futuristic           ners of the world and contributed greatly to the advance
+    conflicts, the warship is the most complex and powerful. Like         of knowledge.
+    any weapon, it may be used in the defense of the innocent,               Major warships detached to exploration or scientific
+    the oppression of the weak, or the destruction of a mortal en-        missions are a staple of science fiction. Knowledge is
+    emy. Unlike a pistol or a rifle, though, the warship has the ca-      power, after all, and the more the heroes discover about
+    pacity to affect issues on a planetary scale. Heroes serving          the universe, the better they can represent their society’s
+    aboard a warship are affecting the plot at an epic level, and         interests. Even if a ship is assigned to strictly military
+    deciding the fates of entire worlds.                                  tasks, space is full of anomalies, mysteries, and unchart-
+                                                                          ed systems for the heroes to explore and study.
+      . . . AND AN INSTRUMENT
+             OF DIPLOMACY                                                                 SPACEPOWER
+
+================================================================================
+
+Table 5-14a: Computers . . . . . . . . . . . . . . . . . . . . . . . 91
+Table 5-15: Sensors . . . . . . . . . . . . . . . . . . . . . . . . . . 94
+Table 5-16: Tracking Capability . . . . . . . . . . . . . . . . . . 95
+Table 5-17: Hangars and Miscellaneous Installations . . 98
+Table 5-18: Hit Locations and Zone Limits. . . . . . . . . 103
+Table 6-1: Stations and Bases . . . . . . . . . . . . . . . . . . 108
+                                                 INTRODUCTION
+4
+    From the beginning of time, humankind has engaged in war-                Finally, the ancient art of espionage is one more aspect
+    fare. Conflict, violence, and conquest are a part of the human        of diplomacy. A warship is an excellent platform for all
+    condition, which is a fact of life that seems unlikely to change      kinds of secret operations, covert strikes, sabotage, intel-
+    with the simple advance in technological progress. While sci-         ligence-gathering efforts, and clandestine meetings. In
+    ence fiction often features benevolent aliens and incredible          fact, most warships spend as much time in diplomatic
+    social advances, it is ultimately a genre of speculation about        missions as they do in fleet exercises or similar prepara-
+    the human condition. And that means that war is a central             tions for war.
+    theme of a great amount of science fiction.
+       Some of the most famous works of the genre feature in-
+    terplanetary, interstellar, or even intergalactic conflicts of
+                                                                              Surveys, Exploration, and
+    staggering scale. Even the stories that present humanity as a                     Research
+    united, advanced species often pit terrifying and implacable
+    aliens against the forces of civilization; science fiction stories    For centuries, the navies of Earth’s maritime powers
+    without the specter of warfare are the exception, not the rule.       backed extensive efforts to explore and chart the world
+                                                                          around them. While some of this effort produced clear na-
+                                                                          tional benefits—the discovery of new lands to colonize, for
+              THE WARSHIP AS A                                            instance—these same efforts were also instrumental in
+                WEAPON . . .                                              shaping our understanding of the world we inhabit. Mili-
+                                                                          tary vessels carried scientific expeditions to the far cor-
+    Of all the weapons that may be employed in these futuristic           ners of the world and contributed greatly to the advance
+    conflicts, the warship is the most complex and powerful. Like         of knowledge.
+    any weapon, it may be used in the defense of the innocent,               Major warships detached to exploration or scientific
+    the oppression of the weak, or the destruction of a mortal en-        missions are a staple of science fiction. Knowledge is
+    emy. Unlike a pistol or a rifle, though, the warship has the ca-      power, after all, and the more the heroes discover about
+    pacity to affect issues on a planetary scale. Heroes serving          the universe, the better they can represent their society’s
+    aboard a warship are affecting the plot at an epic level, and         interests. Even if a ship is assigned to strictly military
+    deciding the fates of entire worlds.                                  tasks, space is full of anomalies, mysteries, and unchart-
+                                                                          ed systems for the heroes to explore and study.
+      . . . AND AN INSTRUMENT
+             OF DIPLOMACY                                                                 SPACEPOWER
+                                                                          As soon as humanity mastered the technology of crossing
+
+================================================================================
+
+Table 5-15: Sensors . . . . . . . . . . . . . . . . . . . . . . . . . . 94
+Table 5-16: Tracking Capability . . . . . . . . . . . . . . . . . . 95
+Table 5-17: Hangars and Miscellaneous Installations . . 98
+Table 5-18: Hit Locations and Zone Limits. . . . . . . . . 103
+Table 6-1: Stations and Bases . . . . . . . . . . . . . . . . . . 108
+                                                 INTRODUCTION
+4
+    From the beginning of time, humankind has engaged in war-                Finally, the ancient art of espionage is one more aspect
+    fare. Conflict, violence, and conquest are a part of the human        of diplomacy. A warship is an excellent platform for all
+    condition, which is a fact of life that seems unlikely to change      kinds of secret operations, covert strikes, sabotage, intel-
+    with the simple advance in technological progress. While sci-         ligence-gathering efforts, and clandestine meetings. In
+    ence fiction often features benevolent aliens and incredible          fact, most warships spend as much time in diplomatic
+    social advances, it is ultimately a genre of speculation about        missions as they do in fleet exercises or similar prepara-
+    the human condition. And that means that war is a central             tions for war.
+    theme of a great amount of science fiction.
+       Some of the most famous works of the genre feature in-
+    terplanetary, interstellar, or even intergalactic conflicts of
+                                                                              Surveys, Exploration, and
+    staggering scale. Even the stories that present humanity as a                     Research
+    united, advanced species often pit terrifying and implacable
+    aliens against the forces of civilization; science fiction stories    For centuries, the navies of Earth’s maritime powers
+    without the specter of warfare are the exception, not the rule.       backed extensive efforts to explore and chart the world
+                                                                          around them. While some of this effort produced clear na-
+                                                                          tional benefits—the discovery of new lands to colonize, for
+              THE WARSHIP AS A                                            instance—these same efforts were also instrumental in
+                WEAPON . . .                                              shaping our understanding of the world we inhabit. Mili-
+                                                                          tary vessels carried scientific expeditions to the far cor-
+    Of all the weapons that may be employed in these futuristic           ners of the world and contributed greatly to the advance
+    conflicts, the warship is the most complex and powerful. Like         of knowledge.
+    any weapon, it may be used in the defense of the innocent,               Major warships detached to exploration or scientific
+    the oppression of the weak, or the destruction of a mortal en-        missions are a staple of science fiction. Knowledge is
+    emy. Unlike a pistol or a rifle, though, the warship has the ca-      power, after all, and the more the heroes discover about
+    pacity to affect issues on a planetary scale. Heroes serving          the universe, the better they can represent their society’s
+    aboard a warship are affecting the plot at an epic level, and         interests. Even if a ship is assigned to strictly military
+    deciding the fates of entire worlds.                                  tasks, space is full of anomalies, mysteries, and unchart-
+                                                                          ed systems for the heroes to explore and study.
+      . . . AND AN INSTRUMENT
+             OF DIPLOMACY                                                                 SPACEPOWER
+                                                                          As soon as humanity mastered the technology of crossing
+    The most effective weapon is the weapon that is never need-           seas and oceans, seapower began to shape the course of
+
+================================================================================
+
+Table 5-16: Tracking Capability . . . . . . . . . . . . . . . . . . 95
+Table 5-17: Hangars and Miscellaneous Installations . . 98
+Table 5-18: Hit Locations and Zone Limits. . . . . . . . . 103
+Table 6-1: Stations and Bases . . . . . . . . . . . . . . . . . . 108
+                                                 INTRODUCTION
+4
+    From the beginning of time, humankind has engaged in war-                Finally, the ancient art of espionage is one more aspect
+    fare. Conflict, violence, and conquest are a part of the human        of diplomacy. A warship is an excellent platform for all
+    condition, which is a fact of life that seems unlikely to change      kinds of secret operations, covert strikes, sabotage, intel-
+    with the simple advance in technological progress. While sci-         ligence-gathering efforts, and clandestine meetings. In
+    ence fiction often features benevolent aliens and incredible          fact, most warships spend as much time in diplomatic
+    social advances, it is ultimately a genre of speculation about        missions as they do in fleet exercises or similar prepara-
+    the human condition. And that means that war is a central             tions for war.
+    theme of a great amount of science fiction.
+       Some of the most famous works of the genre feature in-
+    terplanetary, interstellar, or even intergalactic conflicts of
+                                                                              Surveys, Exploration, and
+    staggering scale. Even the stories that present humanity as a                     Research
+    united, advanced species often pit terrifying and implacable
+    aliens against the forces of civilization; science fiction stories    For centuries, the navies of Earth’s maritime powers
+    without the specter of warfare are the exception, not the rule.       backed extensive efforts to explore and chart the world
+                                                                          around them. While some of this effort produced clear na-
+                                                                          tional benefits—the discovery of new lands to colonize, for
+              THE WARSHIP AS A                                            instance—these same efforts were also instrumental in
+                WEAPON . . .                                              shaping our understanding of the world we inhabit. Mili-
+                                                                          tary vessels carried scientific expeditions to the far cor-
+    Of all the weapons that may be employed in these futuristic           ners of the world and contributed greatly to the advance
+    conflicts, the warship is the most complex and powerful. Like         of knowledge.
+    any weapon, it may be used in the defense of the innocent,               Major warships detached to exploration or scientific
+    the oppression of the weak, or the destruction of a mortal en-        missions are a staple of science fiction. Knowledge is
+    emy. Unlike a pistol or a rifle, though, the warship has the ca-      power, after all, and the more the heroes discover about
+    pacity to affect issues on a planetary scale. Heroes serving          the universe, the better they can represent their society’s
+    aboard a warship are affecting the plot at an epic level, and         interests. Even if a ship is assigned to strictly military
+    deciding the fates of entire worlds.                                  tasks, space is full of anomalies, mysteries, and unchart-
+                                                                          ed systems for the heroes to explore and study.
+      . . . AND AN INSTRUMENT
+             OF DIPLOMACY                                                                 SPACEPOWER
+                                                                          As soon as humanity mastered the technology of crossing
+    The most effective weapon is the weapon that is never need-           seas and oceans, seapower began to shape the course of
+    ed. In the delicate balance of power between rival societies,         history. It only stands to reason that, as humankind expands
+
+================================================================================
+
+Table 5-17: Hangars and Miscellaneous Installations . . 98
+Table 5-18: Hit Locations and Zone Limits. . . . . . . . . 103
+Table 6-1: Stations and Bases . . . . . . . . . . . . . . . . . . 108
+                                                 INTRODUCTION
+4
+    From the beginning of time, humankind has engaged in war-                Finally, the ancient art of espionage is one more aspect
+    fare. Conflict, violence, and conquest are a part of the human        of diplomacy. A warship is an excellent platform for all
+    condition, which is a fact of life that seems unlikely to change      kinds of secret operations, covert strikes, sabotage, intel-
+    with the simple advance in technological progress. While sci-         ligence-gathering efforts, and clandestine meetings. In
+    ence fiction often features benevolent aliens and incredible          fact, most warships spend as much time in diplomatic
+    social advances, it is ultimately a genre of speculation about        missions as they do in fleet exercises or similar prepara-
+    the human condition. And that means that war is a central             tions for war.
+    theme of a great amount of science fiction.
+       Some of the most famous works of the genre feature in-
+    terplanetary, interstellar, or even intergalactic conflicts of
+                                                                              Surveys, Exploration, and
+    staggering scale. Even the stories that present humanity as a                     Research
+    united, advanced species often pit terrifying and implacable
+    aliens against the forces of civilization; science fiction stories    For centuries, the navies of Earth’s maritime powers
+    without the specter of warfare are the exception, not the rule.       backed extensive efforts to explore and chart the world
+                                                                          around them. While some of this effort produced clear na-
+                                                                          tional benefits—the discovery of new lands to colonize, for
+              THE WARSHIP AS A                                            instance—these same efforts were also instrumental in
+                WEAPON . . .                                              shaping our understanding of the world we inhabit. Mili-
+                                                                          tary vessels carried scientific expeditions to the far cor-
+    Of all the weapons that may be employed in these futuristic           ners of the world and contributed greatly to the advance
+    conflicts, the warship is the most complex and powerful. Like         of knowledge.
+    any weapon, it may be used in the defense of the innocent,               Major warships detached to exploration or scientific
+    the oppression of the weak, or the destruction of a mortal en-        missions are a staple of science fiction. Knowledge is
+    emy. Unlike a pistol or a rifle, though, the warship has the ca-      power, after all, and the more the heroes discover about
+    pacity to affect issues on a planetary scale. Heroes serving          the universe, the better they can represent their society’s
+    aboard a warship are affecting the plot at an epic level, and         interests. Even if a ship is assigned to strictly military
+    deciding the fates of entire worlds.                                  tasks, space is full of anomalies, mysteries, and unchart-
+                                                                          ed systems for the heroes to explore and study.
+      . . . AND AN INSTRUMENT
+             OF DIPLOMACY                                                                 SPACEPOWER
+                                                                          As soon as humanity mastered the technology of crossing
+    The most effective weapon is the weapon that is never need-           seas and oceans, seapower began to shape the course of
+    ed. In the delicate balance of power between rival societies,         history. It only stands to reason that, as humankind expands
+    a warship is a statement of intent and resolve. It is a deter-        into the galaxy, the control of space as the common ground
+
+================================================================================
+
+Table 5-18: Hit Locations and Zone Limits. . . . . . . . . 103
+Table 6-1: Stations and Bases . . . . . . . . . . . . . . . . . . 108
+                                                 INTRODUCTION
+4
+    From the beginning of time, humankind has engaged in war-                Finally, the ancient art of espionage is one more aspect
+    fare. Conflict, violence, and conquest are a part of the human        of diplomacy. A warship is an excellent platform for all
+    condition, which is a fact of life that seems unlikely to change      kinds of secret operations, covert strikes, sabotage, intel-
+    with the simple advance in technological progress. While sci-         ligence-gathering efforts, and clandestine meetings. In
+    ence fiction often features benevolent aliens and incredible          fact, most warships spend as much time in diplomatic
+    social advances, it is ultimately a genre of speculation about        missions as they do in fleet exercises or similar prepara-
+    the human condition. And that means that war is a central             tions for war.
+    theme of a great amount of science fiction.
+       Some of the most famous works of the genre feature in-
+    terplanetary, interstellar, or even intergalactic conflicts of
+                                                                              Surveys, Exploration, and
+    staggering scale. Even the stories that present humanity as a                     Research
+    united, advanced species often pit terrifying and implacable
+    aliens against the forces of civilization; science fiction stories    For centuries, the navies of Earth’s maritime powers
+    without the specter of warfare are the exception, not the rule.       backed extensive efforts to explore and chart the world
+                                                                          around them. While some of this effort produced clear na-
+                                                                          tional benefits—the discovery of new lands to colonize, for
+              THE WARSHIP AS A                                            instance—these same efforts were also instrumental in
+                WEAPON . . .                                              shaping our understanding of the world we inhabit. Mili-
+                                                                          tary vessels carried scientific expeditions to the far cor-
+    Of all the weapons that may be employed in these futuristic           ners of the world and contributed greatly to the advance
+    conflicts, the warship is the most complex and powerful. Like         of knowledge.
+    any weapon, it may be used in the defense of the innocent,               Major warships detached to exploration or scientific
+    the oppression of the weak, or the destruction of a mortal en-        missions are a staple of science fiction. Knowledge is
+    emy. Unlike a pistol or a rifle, though, the warship has the ca-      power, after all, and the more the heroes discover about
+    pacity to affect issues on a planetary scale. Heroes serving          the universe, the better they can represent their society’s
+    aboard a warship are affecting the plot at an epic level, and         interests. Even if a ship is assigned to strictly military
+    deciding the fates of entire worlds.                                  tasks, space is full of anomalies, mysteries, and unchart-
+                                                                          ed systems for the heroes to explore and study.
+      . . . AND AN INSTRUMENT
+             OF DIPLOMACY                                                                 SPACEPOWER
+                                                                          As soon as humanity mastered the technology of crossing
+    The most effective weapon is the weapon that is never need-           seas and oceans, seapower began to shape the course of
+    ed. In the delicate balance of power between rival societies,         history. It only stands to reason that, as humankind expands
+    a warship is a statement of intent and resolve. It is a deter-        into the galaxy, the control of space as the common ground
+    rentthreat in being.                                                 between myriad island-worlds will be just as important as
+
+================================================================================
+
+                                       Table 5-1a: Military Hulls
+Hull Type
+Small Craft
+Fighter
+                   Hull Pts.
+
+                      10
+                                 5%
+
+                                 0.5
+                                        10%
+
+                                           1
+                                                  Tough
+
+                                                   Sm
+                                                           Target Mvr
+
+                                                          +3 steps    4
+                                                                            s
+
+                                                                            5
+                                                                                    w
+
+                                                                                     5
+                                                                                             m
+
+                                                                                              3
+                                                                                                      c
+
+                                                                                                      2
+                                                                                                             Crew
+
+                                                                                                               1
+                                                                                                                        Cost
+
+                                                                                                                       $350 K
+                                                                                                                                     55
+Strike fighter        15          1       1.5      Sm     +3 steps    4     8        8        4       2        2       $500 K
+Cutter                20          1        2       Sm     +2 steps    4    10       10        5       3        4       $600 K
+
+================================================================================
+
+                                       Table 5-1b: Civilian Hulls
+Hull Type          Hull Pts.     5%      10%      Tough    Target Mvr       s       w        m         c     Crew       Cost
+Small Craft
+Launch                  8        0.5       1       (Gd)   +3 steps    4    4        4        2        1       2       $300 K
+Courier                16         1       1.5      (Gd)   +2 steps    4     8        8        4       2        4      $400 K
+Trader                 24         1        2       (Gd)   +2 steps    4    12       12        6       3        6      $500 K
+Fast freighter         32        1.5       3       Sm     +2 steps    4    16       16       8        4       8       $600 K
+Fast transport         40         2        4       Sm     +2 steps    4    20       20       10       5       10      $800 K
+Light Ships
+Hauler               72 (+7)      3        7       Sm      +1 step    3    18       18       9        5       18       $1 M
+Industrial          96 (+10)      5       10       Sm      +1 step    3    24       24       12       6       24       $2 M
+Medium Ships
+Medium freighter 240 (+48)       12       24        Lt        0       2    30       30       15        8       30      $20 M
+Clipper            360 (+72)     18       36        Lt        0       2    45       45       23       12      360      $40 M
+Medium transport 480 (+96)       24       48        Lt     -1 step    2    60       60       30       15       60      $60 M
+Heavy Ships
+Tanker            720 (+216)     36       72       Md       -1 step   1    45       45       23       12      90      $100 M
+Liner             840 (+252)     42      84        Md       -1 step   1    53       53       27       14      840     $150 M
+Heavy transport 1280 (+384)      64      128       Md      -2 steps   1    80       80       40       20      160     $200 M
+Super-heavy Ships
+Super-freighter 2400 (+1200)     120     240        Hv     -3 steps   0     75      75       38       19     300       $400 M
+Colony transport 3600 (+1800)    180     360        Hv     -4 steps   0    113     113       57       29     3600     $1000 M
+
+
+   Hull Points: The number of hull points available in this type, representing its capacity for installing systems. The first num-
+ber is the basic hull point total, the number in parenthesis is the bonus hull point total.
+   Tough: The ship’s toughness rating. Note that some ships have Good toughness, one step less than Small Craft.
+   Target: The ship’s basic resistance modifier to enemy fire, based on its size and maneuverability.
+   Maneuver: The ship’s maneuverability class.
+   5% and 10%: This is the number of hull points a system requiring 5 or 10 percent of the hull requires. This information is
+simply a shortcut to save you time and effort.
+   S, W, M, C: The ship’s Stun, Wound, Mortal, and Critical damage tracks.
+   Crew: For information purposes only, a general estimate of how many crewmen a typical ship of this type carries.
+   Cost: The cost of the hull, in credits, Concord dollars, or the appropriate currency for your campaign.
+                    Medium Freighter                                   a large number of passengers, usually in some degree of
+
+56   The medium freighter usually carries containerized cargo.
+     Most operate in regular runs between densely populated
+                                                                       luxury. A liner is about 400 meters in length and weighs in
+                                                                       at 60,000 to 90,000 tons. The crew numbers about 200,
+
+================================================================================
+
+                                                Table 5-2: Armor
+
+Armor Type
+Progress Level 6: Fusion Age
+                                    Tech         LI          HI            En          Hull                   Cost/Hull Pt.          59
+Polymeric, light                    -          d4-1         d4-1          d4-2         2.5%                   $50 K
+Reflective, light                   -          d4-3         d4-2          d6-1         2.5%                   $50 K
+Alloy, medium                       -          d4+1         d4+1           d4          5%                     $150 K
+Polymeric, medium                   -           d4           d4           d4-1         5%                     $100 K
+Reflective, medium                  -          d4-2         d4-1           d6          5%                     $100 K
+Alloy, heavy*                       -          d6+1         d6+1           d6          10%                    $300 K
+Reflective, heavy*                  -           d4           d4           d8+1         10%                    $200 K
+Alloy, super-heavy!                 -          d6+3         d6+3          d6+2         20%                    $600 K
+Progress Level 7: Gravity Age
+Cerametal, light                    -           d6-1        d6-1          d6-1         2.5%                   $100 K
+Cerametal, medium                   -          d4+1         d4+1          d4+1         5%                     $200 K
+Neutronite, medium                  S          d6+1         d6+1          d6+1         5%                     $500 K
+Reactive, medium                    -          d4+2          d6            d4          5%                     $150 K
+Cerametal, heavy*                   -            d8          d8            d8          10%                    $400 K
+Neutronite, heavy*                  S          d8+1         d8+1          d8+1         10%                    $1 M
+Reactive, heavy*                    -          2d4+1         d8           d4+1         10%                    $300 K
+Neutronite, super-heavy!            S          d8+3         d8+3          d8+3         20%                    $2 M
+Reactive, super-heavy!              -          2d4+3        d8+2          d4+3         20%                    $600 K
+Progress Level 8: Energy Age
+Crystallis, light                   P, X        d6-1         d6           d6+2         2.5%                   $250 K
+Nanofluidic, light                  S, C        d8-1        d8-1            d8         2.5%                   $500 K
+Crystallis, medium                  P, X         d6         d6+1          2d4+1        5%                     $500 K
+Nanofluidic, medium                 S, C        2d4          2d4           2d4         5%                     $1 M
+Nanofluidic, heavy*                 S, C       2d4+1       2d4+2          2d4+1        10%                    $2 M
+Nanofluidic, super-heavy!           S, C       2d4+3       2d4+4          2d4+3        20%                    $4 M
+
+* Heavy armors cannot be installed on small craft.
+! Super-heavy armors cannot be installed on small craft or light ships.
+
+
+   Tech: The technology track required for this type of armor. If two technologies are listed, either will suffice.
+   LI, HI, En: The armor’s protective value against Low Impact, Hi Impact, and Energy attacks, respectively.
+   Hull: The amount of the ship’s hull points required by armor of this weight. Refer to the hull table for the number of hull
+points each percentage equals (2.5% is half of 5%, rounded normally).
+   Cost per Hull Point: Each hull point allocated to armor costs this much money. If the armor installation takes less than 1 hull
+
+================================================================================
+
+                                             Table 5-3: Power Plants
+60   Power Plant                         Tech       Pow
+                                                             Base.
+                                                             Cost
+                                                                       Cost/
+                                                                      Hull Pt.
+                                                                                    Min
+                                                                                    Size       Fuel?
+                                                                                                            Fuel
+                                                                                                            Cost
+                                                                                                                      Fuel
+                                                                                                                      Efficiency
+     Progress Level 6: Fusion Age
+     Solar Cell                         S           1.5     $500 K    $200 K        4          No           -         -
+     Fission Generator                  -           1.5      $1 M     $100 K        4          No           -         -
+     Fusion Generator                   F           2.0      $1 M     $200 K        2          Yes          $1 K      200
+     Grav-fusion Cell                   G           2.5      $2 M     $200 K        4          Yes          $1 K      300
+     Fuel Tank                          -            -       $50 K     $10 K        -          -            -         -
+     Progress Level 7: Gravity Age
+     Tachyonic Collider                 Q           2.5      $1 M     $100 K        2          No           -         -
+     Antimatter Reactor                 A           3.0      $4 M     $400 K        3          No           -         -
+     Mass Reactor                       D           3.5      $2 M     $250 K        2          No           -         -
+     Progress Level 8: Energy Age
+     Dynamic Mass Reactor               D           4.0      $3 M     $200 K        1          No           -         -
+     Matter Converter                   M, X        4.5      $4 M     $200 K        2          No           -         -
+     Quantum Cell                       Q           5.0      $5 M     $400 K        3          No           -         -
+     Progress Level 9: Matter Age
+     Singularity Generator               G          6.0      $10 M    $500 K        20         No           -         -
+       Tech: The technology track necessary to produce this power system.
+       Pow: The amount of power produced by a power plant of 1 hull point. Fractions round normally, so a 2-hull point antimatter
+       reactor (3.0 power produced per hull point) produces 6 power points.
+       Base Cost: The cost for each separate power plant installed.
+       Cost/Hull Point: The cost for each hull point of the power plant, cumulative with the cost for each new plant.
+       Min Size: The smallest power plant possible, in hull points.
+       Max Size: The largest power plant possible, in hull points.
+       Fuel: Whether or not the power system requires additional fuel tankage.
+       Fuel Cost: The cost per hull point of fuel purchased.
+       Efficiency: The number of power-days that can generated by 1 hull point of fuel. For example, one hull point of fuel
+       provides 200 power-days for a fusion generator of 1 hull point size, or 20 power-days for a fusion generator of
+       10 hull points.
+
+================================================================================
+
+                                                   Table 5-4: Engines
+
+                                         Min      Base       Cost/           Acceleration Rating at...
+     Engine               Tech Pow       Size     Cost.      Hull     5%     10% 15% 20% 30% 40% 50% Eff. Cost
+     Progress Level 6: Fusion Age
+     Planetary thruster   -       1.0     1      $200 K      $50 K    0.1*   0.25*   0.5*    1*     -       -      -     10 $10 K
+     Photon sail          -        -      5      $500 K      $50 K    --     0.02*   0.05*   0.1*   0.15*   0.2*   0.25* -   -
+     Fusion torch         -      0.33     3      $500 K      $100 K   0.5*   1*      1.5*    2*     3*      4*     5*    200 $1 K
+     Ion engine           S       0.5     2      $800 K      $200 K   --     0.5*    1*      1.5*   2*      3*     4* 400 $5 K
+     Progress Level 7: Gravity Age
+     Particle impulse     -      0.75     4      $500 K      $300 K 0.5      1.0     1.5     2      2.5     3      4    -     -
+     Induction engine     G       1.0     2       $1 M       $500 K 1        2       3       4      5       6      8    -     -
+     Progress Level 8: Energy Age
+     Inertial flux engine X       1.0     1       $2 M       $500 K 2        3       4       5      6       8      10   -     -
+     Gravitic redirector G       0.67     3       $3 M       $1 M   2        4       6       8      10      12     16   -     -
+     Progress Level 9: Matter Age
+     Spatial compressor T         2.0     4      $1.5 M      $200 K 3        6       9       12     15      18     20   -     -
+
+     * Acceleration on PL 6 game scale; see Chapter 2.
+        Tech: The technology type required to build an engine of this type.
+        Power: The number of power points required by each hull point assigned to this engine. For example, a 30-hull point fu-
+     sion torch requires 10 power points to operate.
+        Min Size: The smallest number of hull points that can be assigned to this system.
+        Base Cost: The cost for an engine installation of this type.
+        Cost/Hull: The cost per hull point assigned to this engine; cumulative with the base cost.
+        Acceleration rating at...: The ship’s acceleration for an installation comprising 5-50% of its overall hull. For example, a
+        300-hull point cruiser with 60 hull points assigned to its engines uses the 20% column. Acceleration figures are given
+        in megameters per turn unless otherwise indicated.
+        Fuel Efficiency: The number of thrust-days provided by one hull point of engine fuel. Engines of more than 1 hull point
+        burn fuel at a correspondingly faster rate, so a 20 hull point fusion torch burns 20 thrust-days of fuel in one day of
+        continuous thrust.
+        Fuel Cost: The cost to purchase 1 hull point of fuel for this engine type.
+will burn fuel two, three, and so on times faster than the       ship’s main drives must be shut down to make planetfall.
+figure listed.
+   The fuel use figure assumes more or less continuous
+maximum thrust. Naturally, a ship that spends three weeks
+                                                                 The most common varieties are the scramjet, chemical
+                                                                 rocket, or powered airfoil. The exact form doesn’t matter.
+                                                                    The planetary thruster requires either fuel or power,
+                                                                                                                                  63
+
+================================================================================
+
+                                             Table 5-5: FTL Drives
+
+                                      Min     Base       Cost/            Acceleration Rating at...
+Engine               Tech Pow         Size    Cost.      Hull      5%     10% 15% 20% 30% 40%                         50%
+Progress Level 6: Fusion Age
+Jump Drive           T        1        5      $4 M       $1 M      -    var      -         -         -      -         -
+  Fuel spent         -        -        -                 $10 K     1 LY 2 LY     3 LY      4 LY      6 LY   8 LY      10 LY
+Wormhole Screen      M        2        1      $1 M       $200 K    **   -        -         -         -      -         -
+Progress Level 7: Gravity Age
+Gate Activator       T        2        1      $500 K     $100 K    **    -     -           -     -     -              -
+Hyperdrive           X        3        4       $5 M      $2 M      1/day 2/day 3/day       4/day 5/day 6/day          7/day
+Stardrive            G        !        3       $2 M      $1 M      var -       -           -     -     -              -
+Progress Level 8: Energy Age
+Drivewave            G        !       2       $3 M       $1.5 M    var    -      -         -         -      -         -
+Spacefold Drive      T        4        4      $8 M       $2 M      -      pow    -         -         -      -         -
+Psychoportive Drive P         1       10      $6 M       $200 K    -      PEP    -         -         -      -         -
+Progress Level 9: Matter Age
+Transcendent Drive P          1        4      $12 M      $400 K    -    PEP/hr-            -         -     -          -
+Warpdrive            X        2        2      $10 M      $5 M      1/hr 2/hr 4/hr          8/hr      16/hr 32/hr      64/hr
+
+* The jump drive takes 10 percent of the ship’s hull points. Its FTL rating varies with the amount of fuel expended for a
+jump.
+** The wormhole screen takes 5 percent of the ship’s hull points; the gate activator takes 1 percent. Performance varies.
+! The stardrive and the drivewave require a mass reactor power plant. Performance varies.
+  Tech: The technology required to build this drive system.
+  Pow: The amount of power required, per hull point devoted to this system.
+  Minimum Size: The smallest installation possible for this drive.
+  Base Cost: The cost of the drive.
+  Cost/Hull: The cost per hull point allocated to this drive; cumulative with the base cost.
+  FTL rating at: The system’s FTL travel capability. Refer to the system descriptions for details.
+     is devoted to the hyperdrive system, with a minimum of             Class              Base Starfall
+
+66   10 percent. Each hull point spent on the hyperdrive re-
+     quires 3 power points to activate the system. For example,
+     a ship of 300 hull points has a hyperdrive of 45 hull
+                                                                        Small
+                                                                        Light
+                                                                        Medium
+                                                                                           5 LY
+                                                                                           10 LY
+
+================================================================================
+
+                                            Table 5-6: Support Systems
+
+     System                             Tech     Hull    Power           Cost        Notes
+     Progress Level 6: Fusion Age
+     Life Support                       -          1        1           $100 K       Life support for 20 hull points
+     Crew or Troop Bunkroom             -          3        0            $40 K       Berthing for 20 crewmen
+     Cabin                              -          1        0            $20 K       Berthing for 2 crewmen
+     Crew Quarters                      -          2        0            $20 K       Berthing for 6 crewmen
+     Seating Deck                       -          2        0            $10 K       Short-term seating for 20 passengers
+     Passenger Quarters                 -          2        0            $50 K       Staterooms for 2 passengers
+     Cryogenics Unit                    -          2        1           $100 K       Capacity of 12 people
+     Hydroponics Bay                    -          2        1            $75 K       Feeds 10 people
+     Recycler Unit                      -          1        1           $300 K       Reduces consumption to 10% normal for 20 people
+     Deep Stores                        -          1        0             $5 K       Increases stores by 1,000 days
+     Progress Level 7: Gravity Age
+     Autosupport                        -          1        1           $200 K       Life support for 40 hull points
+     Life Suspension Unit               S          1        1           $250 K       Capacity of 12 people
+     Progress Level 8: Energy Age
+     Symbiotic Hull                     P, M       1        1           $250 K       Life support for 100 hull pts, recycling for 20 people
+
+
+        Tech: Any advanced technology required for this system.
+        Hull: The number of hull points used by this system. Some systems require a percentage of the hull.
+        Power: The amount of power required for a system of this type. Some systems require the listed power for each hull point
+        assigned to the system, while other systems are simply bought and installed as separate units.
+        Cost: The system cost, or the cost per hull point for a system requiring some percentage of the hull.
+begin decelerating at the same rate, a spacecraft can simu-          A crew or troop bunkroom includes an airlock. This may
+late gravity for most of its trip. There are three problems
+with this method: First, the ship is limited to 1G of accelera-
+tion, which means that even relatively short interplanetary
+                                                                  or may not be directly connected to the bunkroom, but
+                                                                  somewhere in the passageways, lounges, and open areas
+                                                                  that are assumed to come with a bunkroom there’s an ac-
+                                                                                                                                   69
+voyages will take months. Second, the ship can’t maintain         cess to the exterior of the hull.
+its simulated gravity during violent combat maneuvers. Fi-           Bunkrooms can be used for passengers, but they’re not
+nally, maintaining a constant acceleration for weeks or           suited for paying fares. No passenger would pay more than
+months may be beyond the capabilities of the ship’s engines       a third-rate fare for these accommodations.
+or force the ship to carry a prohibitive amount of fuel.
+                                                                                      Cabin (PL 6)
+
+================================================================================
+
+                                      Table 5-8: Beam Weapons                                                                        73
+Weapon                 Tech Hull       Pow      Cost.     Acc     Range       Fire       Damage                       Mode
+Progress Level 6: Fusion Age
+Laser                  -        1        2     $100 K      -2     1/2/3       En/S       d4s/d4w/d4+2w                F*
+IR Laser               -       2         2     $250 K      -2     1/2/3       En/S       d4+1s/d4+1w/d6+1w            F*
+X-ray Laser            -        2        2     $350 K      -2     1/2/3       En/S       d6+1s/d4+2w/d4m              F*
+Heavy Laser            -        5        5       $2 M      -1     1/3/5       En/L       d6+2s/d6+2w/d6m              F/G
+Neutron Gun            -        7        7      $10 M      0      1/3/5       En/L       2d4w/2d4+2w/2d4m             F/G
+Fusion Laser           F      12        12      $20 M      +1     2/4/6       En/M       2d6w/2d6+2w/2d6m             F/G
+Graser                 Q       15       15      $40 M      +2     3/6/9       En/M       3d4s/2d4m/3d4m               F/G
+Heavy Neutron Gun -            22       22      $60 M      +3     3/6/9       En/H       2d6w/2d6m/2d6+2m             F/G
+Hydrogen Bore**        F      50        60     $100 M      +3     4/8/12      En/SH      3d4w/3d4m/3d4c               F
+Progress Level 7: Gravity Age
+Plasma Cannon          F       3        3      $400 K      -2     1/2/4       En/S       d6+2w/d8+2w/d6+1m            F*
+Particle Beam          -       4        5      $500 K      -2     2/4/6       En/S       d6+3s/d4+1m/d4+3m            F
+Heavy Particle Beam -           6        8       $4 M      -1     2/4/6       En/L       d12+3s/d6+1m/d6+3m           F/G
+Heavy Plasma Beam F             8       8       $12 M       0     2/4/8       En/L       d8+2w/d12+2w/d8+2m           F/G
+Matter Beam            A      11        11      $20 M       0     2/5/10      En/M       2d6+1w/2d8+1w/2d8m           F/G
+Fusion Beam            F      15        15      $25 M      +1     3/6/12      En/M       d12+2w/d12+4w/d8+5m          F/G
+Quantum Cannon         Q       18       18      $50 M      +2     4/8/12      En/M       2d8w/2d6m/2d4c               F/G
+Boson Gun              -       20       20      $80 M      +3     4/8/12      En/H       3d6w/3d6m/4d6m               F/G
+Heavy Matter Beam A            24       24     $100 M      +3     4/8/16      En/H       2d6+1m/2d8+1m/2d8c           F/G
+Fusion Bore**          F      60        75     $200 M      +3     5/10/15     En/SH      3d6m/3d4c/3d6c               F
+Progress Level 8: Energy Age
+Maser                  -       4        3      $400 K      -3     1/3/5       En/S       d6+2w/d4+1m/d6+2m            F*
+Kinetic Lance          X        2        1     $750 K      -3     2/4/6       HI/S       d4+1w/2d4w/d4+3m             F*
+Pulse Maser            -        6        4       $4 M      -1     2/5/10      En/L       d8+4w/d8+2m/d12+2m           F/G
+EM Cannon              -        8        8      $10 M      -1     3/6/12      En/L       3d6s/4d6s/4d8s               F/G
+Dark Fusion Gun        D       15       15      $40 M      0      4/8/12      En/M       2d6w/3d4m/2d4+1c             F/G
+Gatling Maser          -      18       36       $50 M      +1     3/7/14      En/M       d8+4w/d8+2m/d12+2m           F/G/B/A
+Weak Force Gun         M      25       25      $120 M      +2     5/10/15     En/H       4d4w/4d4m/4d4c               F/G
+Strong Force Gun**     M       32       32     $150 M      +3     5/10/20     En/H       3d6+2m/3d4c/4d6c             F/G
+Zero Bore**            Q      100      120     $300 M      +3     6/12/18     En/SH      4d6m/3d6c/3d8c               F
+Progress Level 9: Matter Age
+Blacklaser             D        3        3       $1 M      -3     2/4/6       En/S       d8w/d12w/d8m                 F/B/A/G
+Tachyon Gun            X      12        12      $40 M       0     4/8/12      En/M       2d8+2w/2d8m/d8+1c            F/G
+String Projector       Q, G   24        30     $200 M      +2     6/12/24     LI/H       4d8w/3d8m/3d8c               F/G
+
+
+  * Weapon modifications may make additional fire modes available.
+
+================================================================================
+
+                                        Table 5-9: Projectile Weapons
+
+Weapon                      Tech Hull           Pow      Cost.      Acc     Range      Fire     Damage                       Mode
+Progress Level 6: Fusion Age
+Point Defense Gun           -      1             0      $200 K       -1     1/2/3      HI/Gd    d4s/d4w/d4+2w                F/B/A
+Rail Cannon                 -      4             3      $500 K       0      1/2/5      HI/S     2d4s/d6+2w/d4+1m             F/G
+Needle Driver               -     6               6      $2 M        +1     1/3/5      HI/L     d6+1w/d6+3w/d4+3m            B/A
+Gauss Gun                   S      8              6      $5 M        +2     2/4/6      HI/M     d6+1w/d6+2m/d4+1c            F/G
+Hi-Velocity Rail Gun        -     20             16     $50 M        +4     3/6/12     HI/H     d8+2w/d8+2m/d6+2c            F/G
+Progress Level 7: Gravity Age
+Mass Cannon                 G      2              3 $300 K           -1     1/3/5      LI/S     d6+2s/d6+1w/d6+3w            F/G
+Heavy Mass Cannon           G      5              6  $2 M            0      2/4/6      LI/L     2d6s/2d6w/3d6w               F/G
+Accelerator*                -      9              7 $10 M            +1     3/5/7      En/M     2d6s/2d6w/2d6m               F/G
+Tach Rifle                  X     12              8 $30 M            +1     6/8/10     HI/M     d12w/d8m/d12m                F/G
+Heavy Accelerator*          -     18             14 $40 M            +3     4/8/10     En/H     2d6w/2d6m/2d6c               F/G
+Antimatter Gun*             A     25             18 $80 M            +4     4/8/12     En/H     3d6w/3d4m/3d4c               F/G
+Super Tach Rifle            X     40             30 $120 M           +4     8/10/14    HI/SH    2d8m/2d12m/2d8c              F
+Progress Level 8: Energy Age
+Sliver Gun                  -      4              2     $250 K       -2     1/2/4      HI/S     d6+1w/d6+3w/d4+2m    F/B/A
+Neutronium Driver           S      8              4      $4 M         0     2/4/8      HI/L     d6+3w/d6+1m/d6c      F/G
+Bomb Projector*             T     10             15     $15 M        -1     4/6/8      En/M     2d6s/2d6w/2d6m       F
+Bomb Salvo*                 T     12             18     $20 M        -1     5/7/10     En/M     2d6s/2d6w/2d6m       F
+Kinetic Converter*          X     20             10     $50 M        +2     4/8/16     LI/H     d12+3w/d12+3m/d12+1c F/G
+Progress Level 9: Matter Age
+Tunneling Driver*           Q     30             15 $90 M            +3     5/10/20 En/M** 2d6s/2d6w/2d6m                    F/G
+Black Hole Gun              G     75             40 $200 M           +1     6/12/24 LI/SH 3d6m/4d6m/3d8c                     S
+
+
+   * Area effect weapon; see TABLE 5-11 for more information.
+   ** Ignores target armor and shields or screens.
+
+   Weapon: The name of the weapon.
+   Tech: The tech track required by this weapon.
+   Hull: The number of hull points required for the installation of this weapon system.
+   Pow: The power required to employ this weapon in one action round of combat, regardless of how many shots it actually fires.
+   Cost: The cost, in millions of credits, Concord Dollars, or denomination appropriate to your game.
+   Acc: The weapon’s base accuracy modifier.
+   Range: The weapons short/medium/long ranges in megameters.
+   Fire: The weapon’s type (low impact, high impact, or energy) and firepower (Small craft, Light, Medium, Heavy, or Super-Heavy).
+   Damage: The weapon’s damage for an Ordinary/Good/Amazing-quality success on the attack roll.
+
+================================================================================
+
+                     Table 5-10: Missiles, Bombs, and Mines (Part 1)
+
+                              Tech     Hull    Power      Cost          Cap       Reload        ROF       Notes
+     Progress Level 6: Fusion Age
+     Bomb Rack                -        1           0      $10 K       4           N             All
+     Bomb Bay                 -        10          1     $100 K       40          Y             10/rd
+         Extra capacity       -        +1          0      $10 K      +4           -
+     Minelayer                -        5           2     $100 K       10          N             10/rd     Deploys one mine pattern
+     ...Extra capacity        -        +5          +2     $50 K      +10          -
+     Missile Rack             -        2           1      $50 K       8           N             4/rd
+     Missile Tube             -        3           1     $100 K      12           Y             1/rd
+         Magazine             -        +1          0      $50 K      +4           -             -
+     Progress Level 7: Gravity Age
+     Ordnance Cell Array      -        10          2      $1 M          40        N             All       Carries missiles, bombs, or mines
+         Extra cells          -        1           0      $25 K         +4        N             -
+
+       Tech: The tech track required by this weapon.
+       Hull: The number of hull points required for the installation of this weapon system.
+       Pow: The power required to employ this weapon in one turn of combat.
+       Cost: The cost, in millions of credits, Concord Dollars, or denomination appropriate to your game. The launch system
+       cost does not include the cost of any ordnance carried.
+       Capacity: The capacity of the launch system. Missiles, mines, and bombs of Size 1 require 1 point each; weapons of
+       Size 2 require 2 points each.
+       Reload: Whether or not this system can be reloaded in open space.
+       ROF: The number of missiles, bombs, or mines that may be fired in a single round.
+
+
+     Propulsion Systems
+     Weapon                  Tech     Size     War      Cost        Acc       End          ACC          Notes
+     Progress Level 6: Fusion Age
+     Bomb or mine, light     -        1        1        $5 K        -3        -            -
+     Bomb or mine, med       -        2        2        $10 K       -2        -            -
+     Bomb, or mine, hvy      -        4        4        $20 K       -1        -            -
+     Rocket, chem            -        2        1        $15 K       +2        2            2*
+     Missile, light          S        2        2        $25 K       0         2            4*
+     Missile, heavy          S        4        4        $50 K       +1        4            3*
+     Progress Level 7: Gravity Age
+     Missile, light          Q, G     1        1        $40 K       -1        4            6
+     Missile, medium         Q, G     2        2        $60 K       0         6            5
+     Missile, heavy          Q, G     4        4        $100 K      +1        8            4
+
+================================================================================
+
+                Table 5-10: Missiles, Bombs, and Mines (Part 2)
+Warheads (Mines, Bombs, and Missiles)
+                                Tech        War     Cost        Acc      Fire          Damage
+                                                                                                                                  79
+Progress Level 6: Fusion Age
+AA Burst*                       -           1        $5 K       -2      HI/S           d8w/d6m/2d4m
+CHE*                            -           2       $10 K       0       En/L           d6+1s/d6+1w/d4+2m
+KE Submunition*                 -           2       $20 K       -1      HI/L           d6+2s/d6+2w/d6+4w
+Low-yield Nuke*                 -           2      $500 K       0       En/M           2d6s/2d6w/2d6m
+Hi-yield Nuke*                  -           4       $1 M        +1      En/H           2d6w/2d6m/2d6c
+Progress Level 7: Gravity Age
+Plasma*                         F           1      $50 K        -1       En/L          d6+3w/d8+3w/d6+2m
+MRB (Mass Reaction)*            D           2      $200 K        0      En/M           2d4+1s/2d4w/d8+1m
+Matter*                         A           4       $2 M        +1      En/SH          3d6w/3d6m/2d6+2c
+Progress Level 8: Energy Age
+Starload*                       D           1       $80 K       -2       En/L          2d6w/2d6m/2d4c
+Nova Burst*                     G           2      $500 K       -1       LI/H          2d8w/2d6m/2d4c
+Zero Point*                     Q           4       $3 M         0      En/SH          3d8w/3d8m/3d6c
+Progress Level 9: Matter Age
+Null Bomb*                      X           4       $5 M        -1      En/SH          4d6w/4d6m/4d6c
+
+* Area effect weapon.
+
+  War: The size of the warhead.
+  Acc: The warhead’s accuracy modifier.
+  Fire: The attack type (low impact, high impact, or energy) and its firepower (small, light, medium, heavy, or super-heavy.)
+  Damage: The damage inflicted by an Ordinary, Good, or Amazing-quality success on the attack roll.
+
+
+Guidance Systems (Missiles, Mines)
+Weapon                                  Tech        Cost         Acc      Notes
+Progress Level 6: Fusion Age
+Active Radar                            -           $20 K        0        Can be jammed by ECM
+EM Homing                               -           $10 K        0        Accuracy drops to +2 step penalty if target is not
+EM active
+IR Homing                               -           $10 K        0        Accuracy drops to +2 step penalty if target is not IR
+hot
+Command                                 -           $5 K         +1       Can be jammed by ECM
+Progress Level 7: Gravity Age
+Mass Homing                             G           $10 K        -1
+
+================================================================================
+
+                     Table 5-10: Missiles, Bombs, and Mines (Part 3)
+
+
+     Weapon                      Tech Hull       Pow     Cost.        Acc      Range     Fire      Damage                       Mode
+     Progress Level 6: Fusion Age
+     SMP Bomb Rack               -      1         0      $70 K        -3       0         HI/L      d6+2s/d6+2w/d6+4w            F (2)
+     Fusion Bomb Rack            -      1         0      $1 M         -1       0         En/H      2d6w/2d8m/2d6c               F (1)
+     CHE Missile Rack            S      2         1     $270 K         0       *         En/L      d6+1s/d6+1w/d4+2m            F (4)
+     Missile Mount               S     10         1     $1.6 M         -       *         -         -                            F
+        SMP Missiles                                                  -1       *         HI/L      d6+2s/d6+2w/d6+4w            (10)
+       AA Missiles                                                    -2       *         HI/S      d8w/d6m/2d4m                 (10)
+     Progress Level 7: Gravity Age
+     Plasma Missile Rack         F, G  2          1     $850 K        -3       *         En/L      d6+3w/d8+3w/d6+2m            F (8)
+     Matter Missile Rack         A, G   2         1     $4.2 M        +1       *         En/SH     3d6m/2d6c/2d6+2c             F (2)
+     Ordnance Array              !     20         2     $16 M          -       *         -         -                            F
+        Plasma Missiles                                               -3       *         En/L      d6+3w/d8+3w/d6+2m            (20)
+        Matter Missiles                                               +1       *         En/SH     3d6m/2d6c/2d6+2c             (10)
+        MRB Mines                                                     -3       0         En/M      2d4+1s/2d4w/d8+1m            (10)
+     Progress Level 8: Energy Age
+     Nova Array                  G, C  10         2    $23.8 M        -5       *         LI/H      2d8w/2d6m/2d4c               (40)
+
+     * Missile systems have special range considerations; see text.
+     ! The PL 7 ordnance array requires technology types A, D, F, and G.
+
+     changes or maneuvers for 1d4 hours.                                    multiple missile racks.
+        Bomb bays and missile tubes are an exception to this                   Missile Tube (PL 6): This is an internal missile storage
+     rule; they can be reloaded in space, as long as the ship is            and launch facility. Its basic capacity is twelve, and it can
+     carrying extra ordnance in an internal magazine.                       fire one missile per round. While its rate of fire is inferior
+        Finally, every launch system possesses a basic rate of              to the missile rack, the missile tube enjoys one advantage;
+     fire, which indicates how many weapons it can fire, drop,              it can be reloaded in space.
+     or dispense in a single round. A missile tube must cycle                  Ordnance Cell Array (PL 7): This system is similar to the
+     through the process of bringing the next missile from the              vertical launch cells of today’s naval vessels. Each missile is
+     magazine to the rail and then firing it off, but a simple rack         pre-loaded into a single cell or canister; the array consists
+     or cell system can torch off a number of missiles at the               of dozens of these canisters. Bombs, mines, and missiles of
+     same time.                                                             various sizes and warheads can be carried as the ship-
+        Bomb Rack (PL 6): As you might expect, this launch sys-             builder sees fit, offering a great deal of tactical flexibility.
+     tem is designed to carry bombs. Its capacity can’t be ex-
+     panded, but a ship could buy and mount multiple bomb
+                                                                                          Propulsion Systems
+     racks.
+
+================================================================================
+
+                    Table 5-12: Torpedoes and Special Weapons
+
+                              Tech Hull Pow Cost.             Acc      Range Fire      Damage                     Mode
+                                                                                                                                      85
+Progress Level 6: Fusion Age
+Cable Gun                     S          2     1 $150 K +1             0       --      Special                    F
+RF Spike                      -         3      6 $500 K        -2      1/2/3 En/SH 3d4s/3d6s/2d4w****             F
+Thermal Inducer               X          8    12      $4 M +3@ 2/4/6 En/M              d6w/d6+1w/d6m              F
+Thermal Nullifier             X         15    20 $35 M +3@ 2/4/6 En/M                  d6+3w/d6+4w/d6+2m F
+Progress Level 7: Gravity Age
+Tractor Beam                  G          2     5 $500 K        -1      2/4/8 --        Special                    F
+Mass Converter                M          4     6      $1 M     -4      2/4/6 En/S      d6+3s/d6+3w/d6+2m          F
+Matter Torpedo                D          5     7 $600 K        0       2/4/8 En/M      2d6s/2d6w/d6+3m            F
+Plasma Torpedo                F         10    15 $10 M        +1       3/6/9 En/H      3d6s/3d6w/d8+3m            F
+Progress Level 8: Energy Age
+EM Torpedo                    Q          3     5 $450 K        -2      2/5/10 En/M     d6+3s/2d8s/d4+2w           F
+Neural Inhibitor              P         12    20 $40 M          0      1/2/3 **        1d12s/1d12w/1d20w**        F
+Fission Activator             M         25    75 $80 M          0      4/8/12 En/H     2d4m/2d4+2m/3d4+2c F
+Progress Level 9: Matter Age
+Boarding Transporter          T          6     9     $10 M     --      4/6/8 --        Special                    F
+Null Torpedo                  X         18    25 $50 M        +2       3/6/15 En/SH 2d8w/2d8m/2d8c                F
+Code Arranger                 M         25    50 $100 M +1             4/8/12 ***/H    d8m/d8+4m/d8c              F
+** The neural inhibitor only affects crewmen; see the weapon description.
+*** The code arranger ignores armor.
+**** The RF spike never upgrades damage against targets of inferior toughness.
+@ Accuracy improves by 1 step for each consecutive round the weapon is fired at the same target, to a maximum of a –4 step
+accuracy bonus.
+  Weapon: The name of the weapon.
+  Tech: The tech track required by this weapon.
+  Hull: The number of hull points required for the installation of this weapon system.
+  Pow: The power required to employ this weapon in one round of combat.
+  Cost: The cost, in millions of credits, Concord Dollars, or denomination appropriate to your game.
+  Acc: The weapon’s base accuracy modifier.
+  Range: The weapons short/medium/long ranges in megameters (units of 1,000 kilometers).
+  Fire: The weapon’s type (low impact, high impact, or energy) and firepower (Small craft, Light, Medium, Heavy, or
+  Super-Heavy).
+  Damage: The weapon’s damage for an Ordinary/Good/Amazing-quality success on the attack roll.
+  Mode: The weapon system’s allowed fire modes. ‘F’ stands for single-shot.
+
+   6x              4 Mpp                                              If the target is too big to affect but the tractor-armed ship
+
+================================================================================
+
+                                 Table 5-13: Defensive Systems
+
+                                  Hull      Power     Cost           Coverage         Notes
+                                                                                                                                 87
+Progress Level 6: Fusion Age
+Chaff                     -       1         0         $50 K          100 hull pts     +1 step to missiles, sensors
+Damage Control            -       5%        1/hull    $100 K/hull    --                 -2 step bonus to Damage Checks
+Decoy Drone               C       1         1         $600 K         100 hull pts     3 drones
+Jammer                    -       1         1         $100 K         100 hull pts     +2 steps to missiles, sensors
+Magnetic Screen           S       4         2         $400 K         20 hull pts      +2 steps to missiles, projectiles
+Stealth Hull              S       2         1         $500 K         50 hull pts      +2 steps to enemy Sensor Checks
+Progress Level 7: Gravity Age
+Defense Network           C, F    2         2         $500 K         100 hull pts     Special
+Deflection Inducer        G       1         2         $500 K         20 hull pts      +2 step penalty to enemy attacks
+Particle Screen           Q       2         3         $750 K         20 hull pts      Adds d4 (LI), d4 (HI), d6 (En) armor
+Stealth Shield            M       2         2         $2 M           100 hull pts     +3 steps to missiles, sensors
+Stardrive Scrambler       G       1         2         $200 K         100 hull pts     +4 step penalty to drive detectors
+Repair Bots               C       5%        1/hull    $500 K/hull    --                 -3 step bonus to Damage Checks
+Progress Level 8: Energy Age
+Ablative Shield
+  Generator               --      1         2         $500 K         20 hull pts     capacitor or compiler required
+  Capacitor               --      1         -         $100 K         --                10 shield points
+  Energy Compiler         X       1         -         $500 K         --                20 shield points
+Cloaking Unit             M       1         5         $1 M           100 hull points +4 steps to missiles, sensors
+Displacer                 T       2         3         $1 M           20 hull points +3 step penalty to enemy attacks
+Progress Level 9: Matter Age
+Nanite Repair Array       C       5%        2/hull    $1 M/hull      --                 -5 step bonus to Damage Checks
+
+
+   Tech: The technology type necessary to build this device.
+   Hull: The number of hull points required by the system. Some systems require hull points equal to 5 percent of the ship’s
+total, so a ship of 240 hull points would require 12 hull points for a damage control system.
+   Power: The number of power points required by one unit of this type, or one hull point of this system in the case of a sys-
+tem defined as a percentage of the hull. A ship dedicating 12 hull points to a damage control system requires 12 points of
+power to keep the system operational.
+   Cost: The cost for one unit of this system, or per hull point of a system based on a percentage of the hull.
+   Coverage: The number of hull points one unit of this type can protect. For example, a deflection inducer covers 20 hull
+points, so a ship of 200 hull points needs 10 inducers to gain the protective benefits.
+
+   If the ship changes its course or speed after deploying          cludes redundant systems, casualty control modes for
+
+================================================================================
+
+       Table 5-14: Command, Control, and Communication Systems
+
+     System                               Tech      Hull      Power    Cost            Notes
+     Progress Level 6: Fusion Age
+     Cockpit                              -         0.5       0        $100 K          per station (max 3 stations)
+     Command Deck                         -         2+        0        $300 K/hull     +1 hull point per 100 hull (max 10)
+     Flag Bridge                          -         3         0        $50 K           -
+     Launch Tower                         -         2         0        $50 K           -
+     Laser Transceiver                    -         1         1        $50 K           -
+     Radio Transceiver                    -         0.5       1        $25 K           -
+     Progress Level 7: Gravity Age
+     Mass Transceiver                     G         1         1        $100 K          -
+     Drivesat Comm Array                  G, C      150       300      $2000 M         interstellar comms
+     Progress Level 8: Energy Age
+     Drive Transceiver                    G         2         2        $200 K          -
+     Psionic Transceiver                  P         1         2        $150 K          -
+     Progress Level 9: Matter Age
+     Ansible                              M         4         4        $1 M            instantaneous interstellar comms
+
+       Tech: The technology type necessary to build this device.
+       Hull: The number of hull points required by the system.
+       Power: The number of power points required by one unit of this type.
+       Cost: The cost for one unit of this system, or per hull point of a system based on a percentage of the hull. Some systems
+       are more expensive in larger installations.
+           Command Deck (PL 6)                                                  Launch Tower (PL 6)
+Every ship requires either a cockpit or a command deck. A
+command deck begins at 2 hull points, and requires 1 extra
+                                                                   Carriers and other ships that carry a large number of em-
+                                                                   barked small craft usually set aside special facilities for
+                                                                                                                                  91
+hull point for each 100 hull points after the first 100 (a total   controlling the launch and recovery of their fighters and
+of 3 hull points for a ship of 100 or more hull points, 4 for      bombers. The launch tower is a center for coordinating the
+a ship of 200 or more, and so on). However, a command              activities of small craft squadrons and maintaining “traffic
+deck of 10 hull points can handle a ship of any size. A com-       control” in the vicinity of the ship.
+mand deck includes three seats or stations per hull point.
+    In a pitched battle, enemy fire may knock out the ship’s
+bridge or command deck. Many ships install an auxiliary
+                                                                             The Computer Core
+command deck as a little bit of insurance against that lucky       Basic systems monitoring, navigation, and engineering con-
+hit. All command functions are duplicated in the auxiliary         trols require some amount of computer support. Any ship
+
+================================================================================
+
+                                         Table 5-14a: Computers
+
+System                               Tech       Hull      Power     Cost            Notes
+Progress Level 6: Fusion Age
+Computer Core, Ordinary              C          1         1         $500 K/hull     1 required per 200 hull points
+Fire Control, Ordinary               C          1         0         $200 K/hull*    -1 step bonus to dedicated weapon
+Sensor Control, Ordinary             C          1         0         $200 K/hull*    -1 step bonus to dedicated sensor
+Tac Control, Ordinary                C          1         0         $100 K          -1 step bonus to Tactics skill checks
+Nav Control, Ordinary                C          1         0         $500 K          -1 step bonus to Maneuver checks
+Progress Level 7: Gravity Age
+Attack Computer                      C          0.5       0         $200 K          -1 step bonus to attack rolls
+Computer Core, Good                  C          1         1         $1 M/hull       1 required per 200 hull points
+Fire Control, Good                   C          1         0         $300 K/hull*    -2 step bonus to dedicated weapon
+Sensor Control, Good                 C          1         0         $300 K/hull*    -2 step bonus to dedicated sensor
+Tac Control, Good                    C          1         0         $200 K          -2 step bonus to Tactics skill checks
+Nav Control, Good                    C          1         0         $750 K          -2 step bonus to Maneuver checks
+Progress Level 8: Energy Age
+Computer Core, Amazing               C          1         1         $2 M/hull       1 required per 200 hull points
+Fire Control, Amazing                C          1         0         $300 K*         -3 step bonus to dedicated weapon
+Sensor Control, Amazing              C          1         0         $300 K*         -3 step bonus to dedicated sensor
+Tac Control, Amazing                 C          1         0         $400 K          -3 step bonus to Tactics skill checks
+Nav Control, Amazing                 C          1         0         $1 M            -3 step bonus to Maneuver checks
+
+* Per hull point of the system the computer is dedicated to.
+
+   Tech: The technology type necessary to build this device.
+   Hull: The number of hull points required by the system.
+   Power: The number of power points required by one unit of this type.
+   Cost: The cost for one unit of this system, or per hull point of a system based on a percentage of the hull.
+     fire control system for your ship’s strong force guns, you          some kind of tactical display—a flat screen or holo display.
+
+92   have to install a Good or Amazing computer core; an Ordi-
+     nary computer core just isn’t up to snuff.
+                                                                         The tac control computer adds a –1, –2, or –3 step bonus
+                                                                         to Tactics checks.
+
+               Computer Core (PL 6-9)                                                Nav Control (PL 6-8)
+     While the most advanced computer cores are available at             The nav computer adds a –1, –2, or –3 step bonus to ma-
+     the higher Progress Levels, you don’t have to install the           neuver checks and Navigation-system astrogation or Navi-
+     best computer core available into a ship. It’s perfectly ac-        gation-drivespace astrogation skill checks. It continuously
+
+================================================================================
+
+                                                 Table 5-15: Sensors
+
+                                                 Power     Cost       Type            Range            Arcs     Targeting
+     Progress Level 6: Fusion Age
+     Air/space Radar           -        0.5      1         $20 K      Active          5/10/20 Mm       1       Normal
+     EM Detector               -        0.5      0         $20 K      Passive         10/20/60 Mm      2       +3 step penalty
+     Hi-Res Video              -        0.5      0         $10 K      Passive         1/2/10 Mm        1       +2 step penalty
+     IR Detector               -        0.5      0         $20 K      Passive         2/4/8 Mm         1       +2 step penalty
+     Ladar                     -        1        1         $100 K     Active          5/10/30 Mm       1       Normal
+     Probe                     -        1        0         $200 K     Remote          Special          4       -
+     Progress Level 7: Gravity Age
+     Mass Detector             G        1        1         $100 K     Passive         10/30/50 Mm      2       +1 step penalty
+     Multiband Radar           -        0.5      1         $50 K      Active          10/20/40 Mm      1       Normal
+     Probe, advanced           C        1        0         $500 K     Remote          Special          4       -
+     Remote Network            C        2        2         $750 K     Remote          Special          4       -
+     Spectroanalyzer           -        1        1         $100 K     Active          Special          1       None
+     Drive Detection Array     G, C     80       120       $1000 M    Passive         Special          4       None
+     Progress Level 8: Energy Age
+     CE Passive Array          C        2        1         $1 M       Passive         30/60/100 Mm 2           Normal
+     Drive Detector            G        4        4         $500 K     Passive         Special      4           None
+     Madar                     G        1        1         $200 K     Active          20/30/40 Mm 1            Normal
+     Multiphase Radar          Q        1        0         $250 K     Active          20/40/80 Mm 1            Normal
+     Omniscience Sphere        P        3        1         $2 M       Passive         50 Mm        4           Normal
+
+
+       Tech: The technology type necessary to build this device.
+       Hull: The number of hull points required by the system.
+       Power: The number of power points required by one unit of this type.
+       Cost: The cost for one unit of this system.
+       Type: Active, passive, or remote. See Chapter 2 for details on sensor types.
+       Range: Short, medium, and long range for sensor checks made with this system. See Chapter 2.
+       Arcs: How many arcs of fire one sensor unit bears on. Multiple sensor systems may be purchased to provide
+       360-degree coverage.
+       Targeting: Attack penalties for firing on a target using this sensor information.
+
+                        Sensor Arcs                                   at the same time. In most space battles, this isn’t a prob-
+                                                                      lem—there aren’t more than a half-dozen contacts that mat-
+     Sensor systems have “arcs of fire”, much like weapons: for-      ter at any one time. In large battles, tracking capability be-
+     ward, port, starboard, and aft. However, many sensors can        comes crucial.
+     cover more than one arc at a time. For example, the drive            If a sensor system is currently maxed out on its tracking
+
+================================================================================
+
+                                  Table 5-16: Tracking Capability
+
+                                                    Sensor Control Computer
+                                       PL           None       O        G                  A
+                                       PL 6         5          10       20                 40
+                                       PL 7         10         20       40                 unlimited
+                                       PL 8         20         40       80                 unlimited
+
+                                       PL: The Progress Level at which the ship is built.
+                  Sensor Control Computer: The quality of the sensor control computer dedicated to the system.
+                                #: The number of contacts the system can track simultaneously.
+                  Mass Detector (PL 7)                                      The location of the arrival or departure is also recorded,
+
+96   This device detects targets through their gravitational signa-
+     tures. Even though a spaceship has an infinitesimal mass
+                                                                         although the sensor operator can’t tell where the arriving
+                                                                         ship came from, or the departing ship is heading to. The
+                                                                         detection array does not function while the array-equipped
+     compared to a planet, a sufficiently sensitive sensor can de-       ship is traveling in drivespace itself.
+     termine its bearing and approximate range by measuring
+     the target’s influence on the sensing ship.
+                                                                                    Spectroanalyzer (PL 7)
+                                                                         While the spectroanalyzer isn’t useful as a targeting sensor,
+               Multiband Radar (PL 7)                                    it is a powerful analytical tool. It combines spectrum analy-
+     This is a more powerful and sophisticated version of the            sis of visible light, radar mapping, and precise mass meas-
+     air/space radar.                                                    urements to create a profile of a planet or space object. The
+                                                                         spectroanalyzer is an active sensor that confers a –2 step
+                                                                         bonus on sensor checks for Battle Damage Assessment (see
+                Probe, Advanced (PL 7)                                   Chapter 2) and any Physical Science—astronomy or plane -
+     Obviously, this is a PL 7 version of the probe. It has an ac-       tology skill checks for the purpose of determining the mass,
+     celeration of 2 Mpp per phase (or 2000 KPH per phase)               composition, or characteristics of a space object.
+     and enough power to operate for up to 72 hours after                    Ship-sized objects may be examined at distances of
+     launch. The probe’s telemetry package allows it to transmit         2/4/16 Mm for short/medium/long range on the sensor
+     its video and radar data up to 1,000 Mm without degrada-            check; planets may be examined at ranges of 1/5/25 AUs
+     tion, and up to 1 AU (150 million kilometers) with a rea-           for short/medium/long range.
+     sonably clear results.
+        Each probe bay contains four probes. They can be re-
+                                                                                   CE Passive Array (PL 8)
+     placed at a cost of 100 K each.
+                                                                         This system collates and analyzes all electromagnetic ener-
+
+================================================================================
+
+                 Table 5-17: Hangars and Miscellaneous Installations
+98      System                   Tech     Hull    Power     Cost          Type          Notes
+       Progress Level 6: Fusion Age
+       Airlock                   -        1       0         $10 K         Hangar        Free with command deck or crew quarters
+       Brig                      -        2       0         $20 K         Accom.        per 4 prisoners
+       Cargo Space               -        1       0         $10 K         Cargo         per 24m3
+       Cargo Bay                 -        2       0         $20 K         Cargo         per 50m3
+       Cargo Hold                -        3       0         $50 K         Cargo         per 100m3
+       Docking Clamps            -        2       0         $50 K         Hangar        per 10 hull point capacity
+       Escape Pod                -        1       0         $50 K         Hangar        10 man capacity
+       Fuel Collectors           -        2       0         $100 K        Fuel          -
+       Hangar                    -        1       0         $100/25 K*    Hangar        per hull point capacity
+       Lab Section               -        2       0         $100 K        Accom.        -
+       Magazine                  -        1       0         $50 K         Misc.         per 4 size points of carried ordnance
+       Reentry Capsule           -        0.5     0         $5 K          Hangar        2 crewmen
+       Sick Bay                  -        2       0         $150 K        Misc.         4 beds
+       Workshop                  -        2       1         $20 K         Misc.         -
+       Progress Level 7: Gravity Age
+       Accumulator               S        1       0         $40 K         Power         stores 10 power points
+       Autocargo                 -        1       1         $30 K         Cargo         per 6 hull points of cargo serviced
+       Boarding Pod              -        2       0         $200 K        Hangar        10 troop capacity
+       Evac System               -        4       0         $250 K        Hangar        4 10-man lifeboats
+       Extra pods                -        1       0         $50 K         Hangar        2 10-man lifeboats
+       Fabrication Facility      -        4       2         $200 K        Misc.         -
+       Ordnance Transfer System-          2       2         $150 K        Hangar        -
+       Security Suite            -        1       1         $200 K        Cmd           per 40 hull points protected
+       Stabilizer                G, X     5%      1/hull    $200 K/hull   Engine        Adds 1 to maneuverability class
+       Progress Level 8: Energy Age
+       Holofield Bay             Q, C     1       1         $100 K        Misc.
+       Nanomanufacture Bay       S, C     4       4         $500 K        Misc.
+
+     * A hangar costs $100 K, plus $25 K per hull point spent on the system.
+       Tech: The technology type necessary to build this device.
+       Hull: The number of hull points required by the system.
+       Power: The number of power points required by one unit of this type.
+       Cost: The cost for one unit of this system.
+       Type: The general category of this system for purposes of assigning it to the damage diagram.
+
+        STEP 12: MISCELLANEOUS                                         bunkroom, docking clamp, hangar, cargo hold, or ordnance
+                                                                       transfer system; additional airlocks may be purchased at a
+
+================================================================================
+
+                    Table 5-18: Hit Locations and Zone Limits
+
+                        Hull Type              Hull Points           Zones             ZoneLimit
+  Military Hulls
+  Small Craft
+                        Fighter                10                    2                 7
+                        Strike fighter         15                    2                 10
+                        Cutter                 20                    2                 14
+                        Scout                  30                    4                 10
+                        Escort                 40                    4                 14
+  Light Ships
+                        Corvette               80 (+8)               6                 22
+                        Frigate                120 (+12)             6                 33
+                        Destroyer              160 (+16)             6                 44
+  Medium Ships
+                        Light cruiser          320 (+64)             8                 75
+                        Heavy cruiser          400 (+80)             8                 96
+                        Armored cruiser        480 (+96)             8                 115
+  Heavy Ships
+                        Battlecruiser          960 (+288)            12                156
+                        Battleship             1200 (+360)           12                195
+                        Fleet carrier          1600 (+480)           12                260
+  Super-heavy Ships
+                        Dreadnought            3200 (+1600)          20                480
+                        Super-carrier          4000 (+2000)          20                600
+                        Super-dread.           6400 (+3200)          20                960
+                        Fortress ship          12000 (+6000)         20                1800
+  Civilian Hulls
+  Small Craft
+                        Launch                 8                     2                 5
+                        Courier                16                    2                 10
+                        Trader                 24                    4                 8
+                        Fast freighter         32                    4                 11
+                        Fast transport         40                    4                 14
+  Light Ships
+                        Hauler                 72 (+7)               6                 20
+                        Industrial             96 (+10)              6                 27
+  Medium Ships
+                        Medium freighter       240 (+48)             8                 58
+                        Clipper                360 (+72)             8                 87

@@ -35,6 +35,12 @@ A Character Title is more than a mechanical milestone; it is a narrative status 
 
 GMs are encouraged to weave these Title advancements into the campaign’s story, ensuring that the mechanical growth is mirrored by the character's increasing footprint in the galaxy.
 
+### Overcoming Flaws
+
+Each time a character advances to the next Title (e.g., Rookie to Seasoned), they can use Experience Points (XP) to pay off part of the cost of a flaw, for flaws with multiple levels, or completely write-off a flaw by paying its cost.
+
+For example, a character can reduce the *Primitive* flaw from its 3-step penalty to its 2-step penalty by paying 2 XP. Alternatively, they could completely remove a single-level flaw like *Oblivious* by paying its full cost of 4 XP.
+
 ## The Art of Mastery and Scale
 
 Mastery in a field follows a law of diminishing returns. While initial competence is relatively inexpensive to acquire, pushing the boundaries of what is possible requires an exponential investment of time and focus. This is represented by the Standard Price of a skill, which increases as you reach higher ranks.

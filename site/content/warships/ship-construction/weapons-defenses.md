@@ -35,8 +35,8 @@ Since the fixed mount requires less hardware than the standard mount, a beam, pr
 ### Turrets
 
 By mounting a weapon in a raised structure with clear fields of fire to all sides, it’s possible to allocate three arcs of fire to a weapon mount instead of the one arc allowed by a standard mount. The turret includes significant machinery, extra armor, climate control, and other systems common to the ship, so it costs 25% more money and hull points than the standard mount.
-### Sponson
 
+### Sponson
 The sponson is a bulge or blister in the side of the ship where a weapon can be mounted for an improved field of fire. It’s not as good as a turret; a sponson allows fire only into two arcs instead of three. The sponson costs 25% more than a standard mount of the same type, but it does not require any additional allocation of hull points.
 
 ### Banks
@@ -168,7 +168,7 @@ Like the hydrogen bore of Progress Level 6, the fusion
 The EM cannon works much like the laser or maser cannons, but it concentrates its peak power in the radio band. It is especially effective against electronic equipment, inducing an EMP (electromagnetic pulse) effect similar to that of a nuclear explosion.
 
 beam initiates a fusion reaction and then directs the blast at
-
+can you track witch resource?track which resource
 the target. The PL 7 version is simply smaller and more efficient. The colossal fusion bore is simply an exceedingly large example of this same technology.
 
 The fusion bore can be fired only as a special weapon; see Chapter 1 for details. The fusion bore is an area-effect weapon.
