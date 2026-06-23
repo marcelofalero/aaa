@@ -1,0 +1,980 @@
+TITLE: Table 5-1: Hulls. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 55
+1: Table 5-2: Armor . . . . . . . . . . . . . . . . . . . . . . . . . . . . 59
+3: Table 5-3: Power Plants. . . . . . . . . . . . . . . . . . . . . . . . 60
+5: Table 5-4: Engines . . . . . . . . . . . . . . . . . . . . . . . . . . . 62
+7: Table 5-5: FTL Drives . . . . . . . . . . . . . . . . . . . . . . . . . 65
+9: Table 5-6: Support Systems. . . . . . . . . . . . . . . . . . . . . 66
+11: Table 5-7: Hull Point Costs for Fixed Mounts and Turrets. . 71
+13: Table 5-8: Beam Weapons. . . . . . . . . . . . . . . . . . . . . . 73
+15: Table 5-9: Projectile Weapons . . . . . . . . . . . . . . . . . . . 75
+17: Table 5-10: Missiles, Bombs, and Mines . . . . . . . . 78–80
+18: Table 5-12: Torpedoes and Special Weapons. . . . . . . . 85
+20: Table 5-11: Area Effect Weapons. . . . . . . . . . . . . . . . . 82
+22: Table 5-13: Defensive Systems . . . . . . . . . . . . . . . . . . 87
+24: Table 5-14: Command, Control, and Communication . . . . 90
+26: Table 5-14a: Computers . . . . . . . . . . . . . . . . . . . . . . . 91
+28: Table 5-15: Sensors . . . . . . . . . . . . . . . . . . . . . . . . . . 94
+-------
+TITLE: Table 5-2: Armor . . . . . . . . . . . . . . . . . . . . . . . . . . . . 59
+1: Table 5-3: Power Plants. . . . . . . . . . . . . . . . . . . . . . . . 60
+3: Table 5-4: Engines . . . . . . . . . . . . . . . . . . . . . . . . . . . 62
+5: Table 5-5: FTL Drives . . . . . . . . . . . . . . . . . . . . . . . . . 65
+7: Table 5-6: Support Systems. . . . . . . . . . . . . . . . . . . . . 66
+9: Table 5-7: Hull Point Costs for Fixed Mounts and Turrets. . 71
+11: Table 5-8: Beam Weapons. . . . . . . . . . . . . . . . . . . . . . 73
+13: Table 5-9: Projectile Weapons . . . . . . . . . . . . . . . . . . . 75
+15: Table 5-10: Missiles, Bombs, and Mines . . . . . . . . 78–80
+16: Table 5-12: Torpedoes and Special Weapons. . . . . . . . 85
+18: Table 5-11: Area Effect Weapons. . . . . . . . . . . . . . . . . 82
+20: Table 5-13: Defensive Systems . . . . . . . . . . . . . . . . . . 87
+22: Table 5-14: Command, Control, and Communication . . . . 90
+24: Table 5-14a: Computers . . . . . . . . . . . . . . . . . . . . . . . 91
+26: Table 5-15: Sensors . . . . . . . . . . . . . . . . . . . . . . . . . . 94
+28: Table 5-16: Tracking Capability . . . . . . . . . . . . . . . . . . 95
+-------
+TITLE: Table 5-3: Power Plants. . . . . . . . . . . . . . . . . . . . . . . . 60
+1: Table 5-4: Engines . . . . . . . . . . . . . . . . . . . . . . . . . . . 62
+3: Table 5-5: FTL Drives . . . . . . . . . . . . . . . . . . . . . . . . . 65
+5: Table 5-6: Support Systems. . . . . . . . . . . . . . . . . . . . . 66
+7: Table 5-7: Hull Point Costs for Fixed Mounts and Turrets. . 71
+9: Table 5-8: Beam Weapons. . . . . . . . . . . . . . . . . . . . . . 73
+11: Table 5-9: Projectile Weapons . . . . . . . . . . . . . . . . . . . 75
+13: Table 5-10: Missiles, Bombs, and Mines . . . . . . . . 78–80
+14: Table 5-12: Torpedoes and Special Weapons. . . . . . . . 85
+16: Table 5-11: Area Effect Weapons. . . . . . . . . . . . . . . . . 82
+18: Table 5-13: Defensive Systems . . . . . . . . . . . . . . . . . . 87
+20: Table 5-14: Command, Control, and Communication . . . . 90
+22: Table 5-14a: Computers . . . . . . . . . . . . . . . . . . . . . . . 91
+24: Table 5-15: Sensors . . . . . . . . . . . . . . . . . . . . . . . . . . 94
+26: Table 5-16: Tracking Capability . . . . . . . . . . . . . . . . . . 95
+28: Table 5-17: Hangars and Miscellaneous Installations . . 98
+29: Table 5-18: Hit Locations and Zone Limits. . . . . . . . . 103
+-------
+TITLE: Table 5-4: Engines . . . . . . . . . . . . . . . . . . . . . . . . . . . 62
+1: Table 5-5: FTL Drives . . . . . . . . . . . . . . . . . . . . . . . . . 65
+3: Table 5-6: Support Systems. . . . . . . . . . . . . . . . . . . . . 66
+5: Table 5-7: Hull Point Costs for Fixed Mounts and Turrets. . 71
+7: Table 5-8: Beam Weapons. . . . . . . . . . . . . . . . . . . . . . 73
+9: Table 5-9: Projectile Weapons . . . . . . . . . . . . . . . . . . . 75
+11: Table 5-10: Missiles, Bombs, and Mines . . . . . . . . 78–80
+12: Table 5-12: Torpedoes and Special Weapons. . . . . . . . 85
+14: Table 5-11: Area Effect Weapons. . . . . . . . . . . . . . . . . 82
+16: Table 5-13: Defensive Systems . . . . . . . . . . . . . . . . . . 87
+18: Table 5-14: Command, Control, and Communication . . . . 90
+20: Table 5-14a: Computers . . . . . . . . . . . . . . . . . . . . . . . 91
+22: Table 5-15: Sensors . . . . . . . . . . . . . . . . . . . . . . . . . . 94
+24: Table 5-16: Tracking Capability . . . . . . . . . . . . . . . . . . 95
+26: Table 5-17: Hangars and Miscellaneous Installations . . 98
+27: Table 5-18: Hit Locations and Zone Limits. . . . . . . . . 103
+29: Table 6-1: Stations and Bases . . . . . . . . . . . . . . . . . . 108
+-------
+TITLE: Table 5-5: FTL Drives . . . . . . . . . . . . . . . . . . . . . . . . . 65
+1: Table 5-6: Support Systems. . . . . . . . . . . . . . . . . . . . . 66
+3: Table 5-7: Hull Point Costs for Fixed Mounts and Turrets. . 71
+5: Table 5-8: Beam Weapons. . . . . . . . . . . . . . . . . . . . . . 73
+7: Table 5-9: Projectile Weapons . . . . . . . . . . . . . . . . . . . 75
+9: Table 5-10: Missiles, Bombs, and Mines . . . . . . . . 78–80
+10: Table 5-12: Torpedoes and Special Weapons. . . . . . . . 85
+12: Table 5-11: Area Effect Weapons. . . . . . . . . . . . . . . . . 82
+14: Table 5-13: Defensive Systems . . . . . . . . . . . . . . . . . . 87
+16: Table 5-14: Command, Control, and Communication . . . . 90
+18: Table 5-14a: Computers . . . . . . . . . . . . . . . . . . . . . . . 91
+20: Table 5-15: Sensors . . . . . . . . . . . . . . . . . . . . . . . . . . 94
+22: Table 5-16: Tracking Capability . . . . . . . . . . . . . . . . . . 95
+24: Table 5-17: Hangars and Miscellaneous Installations . . 98
+25: Table 5-18: Hit Locations and Zone Limits. . . . . . . . . 103
+27: Table 6-1: Stations and Bases . . . . . . . . . . . . . . . . . . 108
+-------
+TITLE: Table 5-6: Support Systems. . . . . . . . . . . . . . . . . . . . . 66
+1: Table 5-7: Hull Point Costs for Fixed Mounts and Turrets. . 71
+3: Table 5-8: Beam Weapons. . . . . . . . . . . . . . . . . . . . . . 73
+5: Table 5-9: Projectile Weapons . . . . . . . . . . . . . . . . . . . 75
+7: Table 5-10: Missiles, Bombs, and Mines . . . . . . . . 78–80
+8: Table 5-12: Torpedoes and Special Weapons. . . . . . . . 85
+10: Table 5-11: Area Effect Weapons. . . . . . . . . . . . . . . . . 82
+12: Table 5-13: Defensive Systems . . . . . . . . . . . . . . . . . . 87
+14: Table 5-14: Command, Control, and Communication . . . . 90
+16: Table 5-14a: Computers . . . . . . . . . . . . . . . . . . . . . . . 91
+18: Table 5-15: Sensors . . . . . . . . . . . . . . . . . . . . . . . . . . 94
+20: Table 5-16: Tracking Capability . . . . . . . . . . . . . . . . . . 95
+22: Table 5-17: Hangars and Miscellaneous Installations . . 98
+23: Table 5-18: Hit Locations and Zone Limits. . . . . . . . . 103
+25: Table 6-1: Stations and Bases . . . . . . . . . . . . . . . . . . 108
+28: --- PAGE BREAK ---
+-------
+TITLE: Table 5-7: Hull Point Costs for Fixed Mounts and Turrets. . 71
+1: Table 5-8: Beam Weapons. . . . . . . . . . . . . . . . . . . . . . 73
+3: Table 5-9: Projectile Weapons . . . . . . . . . . . . . . . . . . . 75
+5: Table 5-10: Missiles, Bombs, and Mines . . . . . . . . 78–80
+6: Table 5-12: Torpedoes and Special Weapons. . . . . . . . 85
+8: Table 5-11: Area Effect Weapons. . . . . . . . . . . . . . . . . 82
+10: Table 5-13: Defensive Systems . . . . . . . . . . . . . . . . . . 87
+12: Table 5-14: Command, Control, and Communication . . . . 90
+14: Table 5-14a: Computers . . . . . . . . . . . . . . . . . . . . . . . 91
+16: Table 5-15: Sensors . . . . . . . . . . . . . . . . . . . . . . . . . . 94
+18: Table 5-16: Tracking Capability . . . . . . . . . . . . . . . . . . 95
+20: Table 5-17: Hangars and Miscellaneous Installations . . 98
+21: Table 5-18: Hit Locations and Zone Limits. . . . . . . . . 103
+23: Table 6-1: Stations and Bases . . . . . . . . . . . . . . . . . . 108
+26: --- PAGE BREAK ---
+28: 4
+29: From the beginning of time, humankind has engaged in war-
+-------
+TITLE: Table 5-8: Beam Weapons. . . . . . . . . . . . . . . . . . . . . . 73
+1: Table 5-9: Projectile Weapons . . . . . . . . . . . . . . . . . . . 75
+3: Table 5-10: Missiles, Bombs, and Mines . . . . . . . . 78–80
+4: Table 5-12: Torpedoes and Special Weapons. . . . . . . . 85
+6: Table 5-11: Area Effect Weapons. . . . . . . . . . . . . . . . . 82
+8: Table 5-13: Defensive Systems . . . . . . . . . . . . . . . . . . 87
+10: Table 5-14: Command, Control, and Communication . . . . 90
+12: Table 5-14a: Computers . . . . . . . . . . . . . . . . . . . . . . . 91
+14: Table 5-15: Sensors . . . . . . . . . . . . . . . . . . . . . . . . . . 94
+16: Table 5-16: Tracking Capability . . . . . . . . . . . . . . . . . . 95
+18: Table 5-17: Hangars and Miscellaneous Installations . . 98
+19: Table 5-18: Hit Locations and Zone Limits. . . . . . . . . 103
+21: Table 6-1: Stations and Bases . . . . . . . . . . . . . . . . . . 108
+24: --- PAGE BREAK ---
+26: 4
+27: From the beginning of time, humankind has engaged in war-
+28: fare. Conflict, violence, and conquest are a part of the human
+29: condition, which is a fact of life that seems unlikely to change
+-------
+TITLE: Table 5-9: Projectile Weapons . . . . . . . . . . . . . . . . . . . 75
+1: Table 5-10: Missiles, Bombs, and Mines . . . . . . . . 78–80
+2: Table 5-12: Torpedoes and Special Weapons. . . . . . . . 85
+4: Table 5-11: Area Effect Weapons. . . . . . . . . . . . . . . . . 82
+6: Table 5-13: Defensive Systems . . . . . . . . . . . . . . . . . . 87
+8: Table 5-14: Command, Control, and Communication . . . . 90
+10: Table 5-14a: Computers . . . . . . . . . . . . . . . . . . . . . . . 91
+12: Table 5-15: Sensors . . . . . . . . . . . . . . . . . . . . . . . . . . 94
+14: Table 5-16: Tracking Capability . . . . . . . . . . . . . . . . . . 95
+16: Table 5-17: Hangars and Miscellaneous Installations . . 98
+17: Table 5-18: Hit Locations and Zone Limits. . . . . . . . . 103
+19: Table 6-1: Stations and Bases . . . . . . . . . . . . . . . . . . 108
+22: --- PAGE BREAK ---
+24: 4
+25: From the beginning of time, humankind has engaged in war-
+26: fare. Conflict, violence, and conquest are a part of the human
+27: condition, which is a fact of life that seems unlikely to change
+28: with the simple advance in technological progress. While sci-
+29: ence fiction often features benevolent aliens and incredible
+-------
+TITLE: Table 5-10: Missiles, Bombs, and Mines . . . . . . . . 78–80
+0: Table 5-12: Torpedoes and Special Weapons. . . . . . . . 85
+2: Table 5-11: Area Effect Weapons. . . . . . . . . . . . . . . . . 82
+4: Table 5-13: Defensive Systems . . . . . . . . . . . . . . . . . . 87
+6: Table 5-14: Command, Control, and Communication . . . . 90
+8: Table 5-14a: Computers . . . . . . . . . . . . . . . . . . . . . . . 91
+10: Table 5-15: Sensors . . . . . . . . . . . . . . . . . . . . . . . . . . 94
+12: Table 5-16: Tracking Capability . . . . . . . . . . . . . . . . . . 95
+14: Table 5-17: Hangars and Miscellaneous Installations . . 98
+15: Table 5-18: Hit Locations and Zone Limits. . . . . . . . . 103
+17: Table 6-1: Stations and Bases . . . . . . . . . . . . . . . . . . 108
+20: --- PAGE BREAK ---
+22: 4
+23: From the beginning of time, humankind has engaged in war-
+24: fare. Conflict, violence, and conquest are a part of the human
+25: condition, which is a fact of life that seems unlikely to change
+26: with the simple advance in technological progress. While sci-
+27: ence fiction often features benevolent aliens and incredible
+28: social advances, it is ultimately a genre of speculation about
+29: the human condition. And that means that war is a central
+-------
+TITLE: Table 5-12: Torpedoes and Special Weapons. . . . . . . . 85
+1: Table 5-11: Area Effect Weapons. . . . . . . . . . . . . . . . . 82
+3: Table 5-13: Defensive Systems . . . . . . . . . . . . . . . . . . 87
+5: Table 5-14: Command, Control, and Communication . . . . 90
+7: Table 5-14a: Computers . . . . . . . . . . . . . . . . . . . . . . . 91
+9: Table 5-15: Sensors . . . . . . . . . . . . . . . . . . . . . . . . . . 94
+11: Table 5-16: Tracking Capability . . . . . . . . . . . . . . . . . . 95
+13: Table 5-17: Hangars and Miscellaneous Installations . . 98
+14: Table 5-18: Hit Locations and Zone Limits. . . . . . . . . 103
+16: Table 6-1: Stations and Bases . . . . . . . . . . . . . . . . . . 108
+19: --- PAGE BREAK ---
+21: 4
+22: From the beginning of time, humankind has engaged in war-
+23: fare. Conflict, violence, and conquest are a part of the human
+24: condition, which is a fact of life that seems unlikely to change
+25: with the simple advance in technological progress. While sci-
+26: ence fiction often features benevolent aliens and incredible
+27: social advances, it is ultimately a genre of speculation about
+28: the human condition. And that means that war is a central
+29: theme of a great amount of science fiction.
+-------
+TITLE: Table 5-11: Area Effect Weapons. . . . . . . . . . . . . . . . . 82
+1: Table 5-13: Defensive Systems . . . . . . . . . . . . . . . . . . 87
+3: Table 5-14: Command, Control, and Communication . . . . 90
+5: Table 5-14a: Computers . . . . . . . . . . . . . . . . . . . . . . . 91
+7: Table 5-15: Sensors . . . . . . . . . . . . . . . . . . . . . . . . . . 94
+9: Table 5-16: Tracking Capability . . . . . . . . . . . . . . . . . . 95
+11: Table 5-17: Hangars and Miscellaneous Installations . . 98
+12: Table 5-18: Hit Locations and Zone Limits. . . . . . . . . 103
+14: Table 6-1: Stations and Bases . . . . . . . . . . . . . . . . . . 108
+17: --- PAGE BREAK ---
+19: 4
+20: From the beginning of time, humankind has engaged in war-
+21: fare. Conflict, violence, and conquest are a part of the human
+22: condition, which is a fact of life that seems unlikely to change
+23: with the simple advance in technological progress. While sci-
+24: ence fiction often features benevolent aliens and incredible
+25: social advances, it is ultimately a genre of speculation about
+26: the human condition. And that means that war is a central
+27: theme of a great amount of science fiction.
+28: Some of the most famous works of the genre feature in-
+-------
+TITLE: Table 5-13: Defensive Systems . . . . . . . . . . . . . . . . . . 87
+1: Table 5-14: Command, Control, and Communication . . . . 90
+3: Table 5-14a: Computers . . . . . . . . . . . . . . . . . . . . . . . 91
+5: Table 5-15: Sensors . . . . . . . . . . . . . . . . . . . . . . . . . . 94
+7: Table 5-16: Tracking Capability . . . . . . . . . . . . . . . . . . 95
+9: Table 5-17: Hangars and Miscellaneous Installations . . 98
+10: Table 5-18: Hit Locations and Zone Limits. . . . . . . . . 103
+12: Table 6-1: Stations and Bases . . . . . . . . . . . . . . . . . . 108
+15: --- PAGE BREAK ---
+17: 4
+18: From the beginning of time, humankind has engaged in war-
+19: fare. Conflict, violence, and conquest are a part of the human
+20: condition, which is a fact of life that seems unlikely to change
+21: with the simple advance in technological progress. While sci-
+22: ence fiction often features benevolent aliens and incredible
+23: social advances, it is ultimately a genre of speculation about
+24: the human condition. And that means that war is a central
+25: theme of a great amount of science fiction.
+26: Some of the most famous works of the genre feature in-
+28: INTRODUCTION
+29: Finally, the ancient art of espionage is one more aspect
+-------
+TITLE: Table 5-14: Command, Control, and Communication . . . . 90
+1: Table 5-14a: Computers . . . . . . . . . . . . . . . . . . . . . . . 91
+3: Table 5-15: Sensors . . . . . . . . . . . . . . . . . . . . . . . . . . 94
+5: Table 5-16: Tracking Capability . . . . . . . . . . . . . . . . . . 95
+7: Table 5-17: Hangars and Miscellaneous Installations . . 98
+8: Table 5-18: Hit Locations and Zone Limits. . . . . . . . . 103
+10: Table 6-1: Stations and Bases . . . . . . . . . . . . . . . . . . 108
+13: --- PAGE BREAK ---
+15: 4
+16: From the beginning of time, humankind has engaged in war-
+17: fare. Conflict, violence, and conquest are a part of the human
+18: condition, which is a fact of life that seems unlikely to change
+19: with the simple advance in technological progress. While sci-
+20: ence fiction often features benevolent aliens and incredible
+21: social advances, it is ultimately a genre of speculation about
+22: the human condition. And that means that war is a central
+23: theme of a great amount of science fiction.
+24: Some of the most famous works of the genre feature in-
+26: INTRODUCTION
+27: Finally, the ancient art of espionage is one more aspect
+28: of diplomacy. A warship is an excellent platform for all
+29: kinds of secret operations, covert strikes, sabotage, intel-
+-------
+TITLE: Table 5-14a: Computers . . . . . . . . . . . . . . . . . . . . . . . 91
+1: Table 5-15: Sensors . . . . . . . . . . . . . . . . . . . . . . . . . . 94
+3: Table 5-16: Tracking Capability . . . . . . . . . . . . . . . . . . 95
+5: Table 5-17: Hangars and Miscellaneous Installations . . 98
+6: Table 5-18: Hit Locations and Zone Limits. . . . . . . . . 103
+8: Table 6-1: Stations and Bases . . . . . . . . . . . . . . . . . . 108
+11: --- PAGE BREAK ---
+13: 4
+14: From the beginning of time, humankind has engaged in war-
+15: fare. Conflict, violence, and conquest are a part of the human
+16: condition, which is a fact of life that seems unlikely to change
+17: with the simple advance in technological progress. While sci-
+18: ence fiction often features benevolent aliens and incredible
+19: social advances, it is ultimately a genre of speculation about
+20: the human condition. And that means that war is a central
+21: theme of a great amount of science fiction.
+22: Some of the most famous works of the genre feature in-
+24: INTRODUCTION
+25: Finally, the ancient art of espionage is one more aspect
+26: of diplomacy. A warship is an excellent platform for all
+27: kinds of secret operations, covert strikes, sabotage, intel-
+28: ligence-gathering efforts, and clandestine meetings. In
+29: fact, most warships spend as much time in diplomatic
+-------
+TITLE: Table 5-15: Sensors . . . . . . . . . . . . . . . . . . . . . . . . . . 94
+1: Table 5-16: Tracking Capability . . . . . . . . . . . . . . . . . . 95
+3: Table 5-17: Hangars and Miscellaneous Installations . . 98
+4: Table 5-18: Hit Locations and Zone Limits. . . . . . . . . 103
+6: Table 6-1: Stations and Bases . . . . . . . . . . . . . . . . . . 108
+9: --- PAGE BREAK ---
+11: 4
+12: From the beginning of time, humankind has engaged in war-
+13: fare. Conflict, violence, and conquest are a part of the human
+14: condition, which is a fact of life that seems unlikely to change
+15: with the simple advance in technological progress. While sci-
+16: ence fiction often features benevolent aliens and incredible
+17: social advances, it is ultimately a genre of speculation about
+18: the human condition. And that means that war is a central
+19: theme of a great amount of science fiction.
+20: Some of the most famous works of the genre feature in-
+22: INTRODUCTION
+23: Finally, the ancient art of espionage is one more aspect
+24: of diplomacy. A warship is an excellent platform for all
+25: kinds of secret operations, covert strikes, sabotage, intel-
+26: ligence-gathering efforts, and clandestine meetings. In
+27: fact, most warships spend as much time in diplomatic
+28: missions as they do in fleet exercises or similar prepara-
+29: tions for war.
+-------
+TITLE: Table 5-16: Tracking Capability . . . . . . . . . . . . . . . . . . 95
+1: Table 5-17: Hangars and Miscellaneous Installations . . 98
+2: Table 5-18: Hit Locations and Zone Limits. . . . . . . . . 103
+4: Table 6-1: Stations and Bases . . . . . . . . . . . . . . . . . . 108
+7: --- PAGE BREAK ---
+9: 4
+10: From the beginning of time, humankind has engaged in war-
+11: fare. Conflict, violence, and conquest are a part of the human
+12: condition, which is a fact of life that seems unlikely to change
+13: with the simple advance in technological progress. While sci-
+14: ence fiction often features benevolent aliens and incredible
+15: social advances, it is ultimately a genre of speculation about
+16: the human condition. And that means that war is a central
+17: theme of a great amount of science fiction.
+18: Some of the most famous works of the genre feature in-
+20: INTRODUCTION
+21: Finally, the ancient art of espionage is one more aspect
+22: of diplomacy. A warship is an excellent platform for all
+23: kinds of secret operations, covert strikes, sabotage, intel-
+24: ligence-gathering efforts, and clandestine meetings. In
+25: fact, most warships spend as much time in diplomatic
+26: missions as they do in fleet exercises or similar prepara-
+27: tions for war.
+29: terplanetary, interstellar, or even intergalactic conflicts of
+-------
+TITLE: Table 5-17: Hangars and Miscellaneous Installations . . 98
+0: Table 5-18: Hit Locations and Zone Limits. . . . . . . . . 103
+2: Table 6-1: Stations and Bases . . . . . . . . . . . . . . . . . . 108
+5: --- PAGE BREAK ---
+7: 4
+8: From the beginning of time, humankind has engaged in war-
+9: fare. Conflict, violence, and conquest are a part of the human
+10: condition, which is a fact of life that seems unlikely to change
+11: with the simple advance in technological progress. While sci-
+12: ence fiction often features benevolent aliens and incredible
+13: social advances, it is ultimately a genre of speculation about
+14: the human condition. And that means that war is a central
+15: theme of a great amount of science fiction.
+16: Some of the most famous works of the genre feature in-
+18: INTRODUCTION
+19: Finally, the ancient art of espionage is one more aspect
+20: of diplomacy. A warship is an excellent platform for all
+21: kinds of secret operations, covert strikes, sabotage, intel-
+22: ligence-gathering efforts, and clandestine meetings. In
+23: fact, most warships spend as much time in diplomatic
+24: missions as they do in fleet exercises or similar prepara-
+25: tions for war.
+27: terplanetary, interstellar, or even intergalactic conflicts of
+29: staggering scale. Even the stories that present humanity as a
+-------
+TITLE: Table 5-18: Hit Locations and Zone Limits. . . . . . . . . 103
+1: Table 6-1: Stations and Bases . . . . . . . . . . . . . . . . . . 108
+4: --- PAGE BREAK ---
+6: 4
+7: From the beginning of time, humankind has engaged in war-
+8: fare. Conflict, violence, and conquest are a part of the human
+9: condition, which is a fact of life that seems unlikely to change
+10: with the simple advance in technological progress. While sci-
+11: ence fiction often features benevolent aliens and incredible
+12: social advances, it is ultimately a genre of speculation about
+13: the human condition. And that means that war is a central
+14: theme of a great amount of science fiction.
+15: Some of the most famous works of the genre feature in-
+17: INTRODUCTION
+18: Finally, the ancient art of espionage is one more aspect
+19: of diplomacy. A warship is an excellent platform for all
+20: kinds of secret operations, covert strikes, sabotage, intel-
+21: ligence-gathering efforts, and clandestine meetings. In
+22: fact, most warships spend as much time in diplomatic
+23: missions as they do in fleet exercises or similar prepara-
+24: tions for war.
+26: terplanetary, interstellar, or even intergalactic conflicts of
+28: staggering scale. Even the stories that present humanity as a
+29: united, advanced species often pit terrifying and implacable
+-------
+TITLE: Table 5-1a: Military Hulls
+0: Hull Type
+1: Small Craft
+2: Fighter
+3: Hull Pts.
+4: 10
+5: 5%
+6: 0.5
+7: Strike fighter        15          1
+8: Cutter                20          1
+9: Scout                 30         1.5
+10: Escort                40          2
+11: Light Ships
+12: Corvette            80 (+8)       4
+13: Frigate            120 (+12)      6
+14: Destroyer          160 (+16)      8
+15: Medium Ships
+16: Light cruiser      320 (+64)     16
+17: Heavy cruiser      400 (+80)     20
+18: Armored cruiser 480 (+96)        24
+19: Heavy Ships
+20: Battlecruiser     960 (+288)     48
+21: Battleship       1200 (+360)     60
+22: Fleet carrier    1600 (+480)     80
+23: Super-heavy Ships
+24: Dreadnought     3200 (+1600)     160
+25: Super-carrier   4000 (+2000)     200
+26: Super-dread.     6400 (+3200)    320
+27: Fortress ship   12000 (+6000)    600
+28: Table 5-1b: Civilian Hulls
+29: Hull Type          Hull Pts.     5%
+-------
+TITLE: Table 5-1b: Civilian Hulls
+0: Hull Type          Hull Pts.     5%
+1: Small Craft
+2: Launch                  8        0.5
+3: Courier                16         1
+4: Trader                 24         1
+5: Fast freighter         32        1.5
+6: Fast transport         40         2
+7: Light Ships
+8: Hauler               72 (+7)      3
+9: Industrial          96 (+10)      5
+10: Medium Ships
+11: Medium freighter 240 (+48)       12
+12: Clipper            360 (+72)     18
+13: Medium transport 480 (+96)       24
+14: Heavy Ships
+15: Tanker            720 (+216)     36
+16: Liner             840 (+252)     42
+17: Heavy transport 1280 (+384)      64
+18: Super-heavy Ships
+19: Super-freighter 2400 (+1200)     120
+20: Colony transport 3600 (+1800)    180
+22: 10%
+23: 1
+24: Tough
+25: Sm
+26: Target Mvr
+27: +3 steps    4
+28: s
+29: 5
+-------
+TITLE: Table 5-2: Armor
+0: LI          HI            En          Hull                   Cost/Hull Pt.          59
+1: d4-1         d4-1          d4-2         2.5%                   $50 K
+2: d4-3         d4-2          d6-1         2.5%                   $50 K
+3: d4+1         d4+1           d4          5%                     $150 K
+4: d4           d4           d4-1         5%                     $100 K
+5: d4-2         d4-1           d6          5%                     $100 K
+6: d6+1         d6+1           d6          10%                    $300 K
+7: d4           d4           d8+1         10%                    $200 K
+8: d6+3         d6+3          d6+2         20%                    $600 K
+9: d6-1        d6-1          d6-1         2.5%                   $100 K
+10: d4+1         d4+1          d4+1         5%                     $200 K
+11: d6+1         d6+1          d6+1         5%                     $500 K
+12: d4+2          d6            d4          5%                     $150 K
+13: d8          d8            d8          10%                    $400 K
+14: d8+1         d8+1          d8+1         10%                    $1 M
+15: 2d4+1         d8           d4+1         10%                    $300 K
+16: d8+3         d8+3          d8+3         20%                    $2 M
+17: 2d4+3        d8+2          d4+3         20%                    $600 K
+18: d6-1         d6           d6+2         2.5%                   $250 K
+19: d8-1        d8-1            d8         2.5%                   $500 K
+20: d6         d6+1          2d4+1        5%                     $500 K
+21: 2d4          2d4           2
+-------
+TITLE: Table 5-3: Power Plants
+0: Tech       Pow
+1: Base.
+2: Cost
+3: Cost/
+4: Hull Pt.
+5: Min
+6: Size       Fuel?
+7: Fuel
+8: Cost
+9: Fuel
+10: Efficiency
+11: S           1.5     $500 K    $200 K        4          No           -         -
+12: -           1.5      $1 M     $100 K        4          No           -         -
+13: F           2.0      $1 M     $200 K        2          Yes          $1 K      200
+14: G           2.5      $2 M     $200 K        4          Yes          $1 K      300
+15: -            -       $50 K     $10 K        -          -            -         -
+16: Q           2.5      $1 M     $100 K        2          No           -         -
+17: A           3.0      $4 M     $400 K        3          No           -         -
+18: D           3.5      $2 M     $250 K        2          No           -         -
+19: D           4.0      $3 M     $200 K        1          No           -         -
+20: M, X        4.5      $4 M     $200 K        2          No           -         -
+21: Q           5.0      $5 M     $400 K        3          No           -         -
+22: G          6.0      $10 M    $500 K        20         No           -         -
+24: Tech: The technology track necessary to produce this power system.
+26: Pow: The amount of power produced by a power plant of 1 hull point. Fractions round normally, so a 2-hull point antimatter
+28: reactor (3.0 power produced per hull point) produces 6 power points.
+-------
+TITLE: Table 5-4: Engines
+0: Min      Base       Cost/           Acceleration Rating at...
+1: Size     Cost.      Hull     5%     10% 15% 20% 30% 40% 50% Eff. Cost
+2: 1      $200 K      $50 K    0.1*   0.25*   0.5*    1*     -       -      -     10 $10 K
+3: 5      $500 K      $50 K    --     0.02*   0.05*   0.1*   0.15*   0.2*   0.25* -   -
+4: 3      $500 K      $100 K   0.5*   1*      1.5*    2*     3*      4*     5*    200 $1 K
+5: 2      $800 K      $200 K   --     0.5*    1*      1.5*   2*      3*     4* 400 $5 K
+6: 4      $500 K      $300 K 0.5      1.0     1.5     2      2.5     3      4    -     -
+7: 2       $1 M       $500 K 1        2       3       4      5       6      8    -     -
+8: 1       $2 M       $500 K 2        3       4       5      6       8      10   -     -
+9: 3       $3 M       $1 M   2        4       6       8      10      12     16   -     -
+10: 4      $1.5 M      $200 K 3        6       9       12     15      18     20   -     -
+12: Tech: The technology type required to build an engine of this type.
+14: Power: The number of power points required by each hull point assigned to this engine. For example, a 30-hull point fu-
+16: sion torch requires 10 power points to operate.
+18: Min Size: The smallest number of hull points that can be assigned to this system.
+20: Base Cost: The cost for an engine installation of this type.
+22: Cost/Hull: The cost per hull point assigned to this engine; cumulative with the base cost.
+24: Acceleration rating at...: The ship’s acceleration for an installation comprising 5-50% of its overall hull. For ex
+-------
+TITLE: Table 5-5: FTL Drives
+0: Base       Cost/            Acceleration Rating at...
+1: Cost.      Hull      5%     10% 15% 20% 30% 40%                         50%
+2: $4 M       $1 M      -    var      -         -         -      -         -
+3: $10 K     1 LY 2 LY     3 LY      4 LY      6 LY   8 LY      10 LY
+4: $1 M       $200 K    **   -        -         -         -      -         -
+5: $500 K     $100 K    **    -     -           -     -     -              -
+6: $5 M      $2 M      1/day 2/day 3/day       4/day 5/day 6/day          7/day
+7: $2 M      $1 M      var -       -           -     -     -              -
+8: $3 M       $1.5 M    var    -      -         -         -      -         -
+9: $8 M       $2 M      -      pow    -         -         -      -         -
+10: $6 M       $200 K    -      PEP    -         -         -      -         -
+11: $12 M      $400 K    -    PEP/hr-            -         -     -          -
+12: $10 M      $5 M      1/hr 2/hr 4/hr          8/hr      16/hr 32/hr      64/hr
+14: * The jump drive takes 10 percent of the ship’s hull points. Its FTL rating varies with the amount of fuel expended for a
+16: jump.
+18: ** The wormhole screen takes 5 percent of the ship’s hull points; the gate activator takes 1 percent. Performance varies.
+20: ! The stardrive and the drivewave require a mass reactor power plant. Performance varies.
+22: Tech: The technology required to build this drive system.
+24: Pow: The amount of power required, per hull point devoted to this system.
+26: Minimum Size: The smallest installation possible for this drive.
+28: Base Cost: T
+-------
+TITLE: Table 5-6: Support Systems
+0: Tech     Hull    Power           Cost        Notes
+1: -          1        1           $100 K       Life support for 20 hull points
+2: -          3        0            $40 K       Berthing for 20 crewmen
+3: -          1        0            $20 K       Berthing for 2 crewmen
+4: -          2        0            $20 K       Berthing for 6 crewmen
+5: -          2        0            $10 K       Short-term seating for 20 passengers
+6: -          2        0            $50 K       Staterooms for 2 passengers
+7: -          2        1           $100 K       Capacity of 12 people
+8: -          2        1            $75 K       Feeds 10 people
+9: -          1        1           $300 K       Reduces consumption to 10% normal for 20 people
+10: -          1        0             $5 K       Increases stores by 1,000 days
+11: -          1        1           $200 K       Life support for 40 hull points
+12: S          1        1           $250 K       Capacity of 12 people
+13: P, M       1        1           $250 K       Life support for 100 hull pts, recycling for 20 people
+15: Hull: The number of hull points used by this system. Some systems require a percentage of the hull.
+17: Power: The amount of power required for a system of this type. Some systems require the listed power for each hull point
+19: assigned to the system, while other systems are simply bought and installed as separate units.
+21: Cost: The system cost, or the cost per hull point for a system requiring some percentage of the hull.
+24: --- PAGE BREAK ---
+26: begin decelerating at the s
+-------
+TITLE: Table 5-8: Beam Weapons
+0: Weapon                 Tech Hull       Pow
+1: Progress Level 6: Fusion Age
+2: Laser                  -        1
+3: IR Laser               -       2
+4: X-ray Laser            -        2
+5: Heavy Laser            -        5
+6: Neutron Gun            -        7
+7: Fusion Laser           F      12
+8: Graser                 Q       15
+9: Heavy Neutron Gun -            22
+10: Hydrogen Bore**        F      50
+11: Progress Level 7: Gravity Age
+12: Plasma Cannon          F       3
+13: Particle Beam          -       4
+14: Heavy Particle Beam -           6
+15: Heavy Plasma Beam F             8
+16: Matter Beam            A      11
+17: Fusion Beam            F      15
+18: Quantum Cannon         Q       18
+19: Boson Gun              -       20
+20: Heavy Matter Beam A            24
+21: Fusion Bore**          F      60
+22: Progress Level 8: Energy Age
+23: Maser                  -       4
+24: Kinetic Lance          X        2
+25: Pulse Maser            -        6
+26: EM Cannon              -        8
+27: Dark Fusion Gun        D       15
+28: Gatling Maser          -      18       36
+29: Weak Force Gun         M      25       25
+-------
+TITLE: Table 5-9: Projectile Weapons
+0: Pow      Cost.      Acc     Range      Fire     Damage                       Mode
+1: 0      $200 K       -1     1/2/3      HI/Gd    d4s/d4w/d4+2w                F/B/A
+2: 3      $500 K       0      1/2/5      HI/S     2d4s/d6+2w/d4+1m             F/G
+3: 6      $2 M        +1     1/3/5      HI/L     d6+1w/d6+3w/d4+3m            B/A
+4: 6      $5 M        +2     2/4/6      HI/M     d6+1w/d6+2m/d4+1c            F/G
+5: 16     $50 M        +4     3/6/12     HI/H     d8+2w/d8+2m/d6+2c            F/G
+6: 3 $300 K           -1     1/3/5      LI/S     d6+2s/d6+1w/d6+3w            F/G
+7: 6  $2 M            0      2/4/6      LI/L     2d6s/2d6w/3d6w               F/G
+8: 7 $10 M            +1     3/5/7      En/M     2d6s/2d6w/2d6m               F/G
+9: 8 $30 M            +1     6/8/10     HI/M     d12w/d8m/d12m                F/G
+10: 14 $40 M            +3     4/8/10     En/H     2d6w/2d6m/2d6c               F/G
+11: 18 $80 M            +4     4/8/12     En/H     3d6w/3d4m/3d4c               F/G
+12: 30 $120 M           +4     8/10/14    HI/SH    2d8m/2d12m/2d8c              F
+13: 2     $250 K       -2     1/2/4      HI/S     d6+1w/d6+3w/d4+2m    F/B/A
+14: 4      $4 M         0     2/4/8      HI/L     d6+3w/d6+1m/d6c      F/G
+15: 15     $15 M        -1     4/6/8      En/M     2d6s/2d6w/2d6m       F
+16: 18     $20 M        -1     5/7/10     En/M     2d6s/2d6w/2d6m       F
+17: 10     $50 M        +2     4/8/16     LI/H     d12+3w/d12+3m/d12+1c F/G
+18: 15 $90 M            +3     5/10/20 En/M** 2d6s/2d6w/2d6m                    F/G
+19: 40 $200 M           +1     6
+-------
+TITLE: Table 5-10: Missiles, Bombs, and Mines (Part 1)
+1: Tech     Hull
+2: Progress Level 6: Fusion Age
+3: Bomb Rack                -        1
+4: Bomb Bay                 -        10
+5: Extra capacity       -        +1
+6: Minelayer                -        5
+7: ...Extra capacity        -        +5
+8: Missile Rack             -        2
+9: Missile Tube             -        3
+10: Magazine             -        +1
+11: Progress Level 7: Gravity Age
+12: Ordnance Cell Array      -        10
+13: Extra cells          -        1
+14: Tech: The tech track required by this weapon.
+16: Power      Cost          Cap       Reload        ROF       Notes
+17: 0      $10 K       4           N             All
+18: 1     $100 K       40          Y             10/rd
+19: 0      $10 K      +4           -
+20: 2     $100 K       10          N             10/rd     Deploys one mine pattern
+21: +2     $50 K      +10          -
+22: 1      $50 K       8           N             4/rd
+23: 1     $100 K      12           Y             1/rd
+24: 0      $50 K      +4           -             -
+25: 2      $1 M          40        N             All       Carries missiles, bombs, or mines
+26: 0      $25 K         +4        N             -
+28: Hull: The number of hull points required for the installation of this weapon system.
+-------
+TITLE: Table 5-10: Missiles, Bombs, and Mines (Part 2)
+0: Warheads (Mines, Bombs, and Missiles)
+1: Tech
+2: Progress Level 6: Fusion Age
+3: AA Burst*                       -
+4: CHE*                            -
+5: KE Submunition*                 -
+6: Low-yield Nuke*                 -
+7: Hi-yield Nuke*                  -
+8: Progress Level 7: Gravity Age
+9: Plasma*                         F
+10: MRB (Mass Reaction)*            D
+11: Matter*                         A
+12: Progress Level 8: Energy Age
+13: Starload*                       D
+14: Nova Burst*                     G
+15: Zero Point*                     Q
+16: Progress Level 9: Matter Age
+17: Null Bomb*                      X
+18: * Area effect weapon.
+19: War: The size of the warhead.
+20: Acc: The warhead’s accuracy modifier.
+22: War     Cost        Acc      Fire          Damage
+23: 79
+24: 1        $5 K       -2      HI/S           d8w/d6m/2d4m
+25: 2       $10 K       0       En/L           d6+1s/d6+1w/d4+2m
+26: 2       $20 K       -1      HI/L           d6+2s/d6+2w/d6+4w
+27: 2      $500 K       0       En/M           2d6s/2d6w/2d6m
+28: 4       $1 M        +1      En/H           2d6w/2d6m/2d6c
+29: 1      $50 K        -1       En/L          d6+3w/d8+3w/d6+2m
+-------
+TITLE: Table 5-10: Missiles, Bombs, and Mines (Part 3)
+1: Weapon                      Tech Hull
+2: Progress Level 6: Fusion Age
+3: SMP Bomb Rack               -
+4: Fusion Bomb Rack            -
+5: CHE Missile Rack            S
+6: Missile Mount               S     10
+7: SMP Missiles
+8: AA Missiles
+9: Progress Level 7: Gravity Age
+10: Plasma Missile Rack         F, G  2
+11: Matter Missile Rack         A, G
+12: Ordnance Array              !     20
+13: Plasma Missiles
+14: Matter Missiles
+15: MRB Mines
+16: Progress Level 8: Energy Age
+17: Nova Array                  G, C  10
+19: Pow     Cost.        Acc      Range     Fire      Damage                       Mode
+20: 1         0      $70 K        -3       0         HI/L      d6+2s/d6+2w/d6+4w            F (2)
+21: 1         0      $1 M         -1       0         En/H      2d6w/2d8m/2d6c               F (1)
+22: 2         1     $270 K         0       *         En/L      d6+1s/d6+1w/d4+2m            F (4)
+23: 1     $1.6 M         -       *         -         -                            F
+24: -1       *         HI/L      d6+2s/d6+2w/d6+4w            (10)
+25: -2       *         HI/S      d8w/d6m/2d4m                 (10)
+26: 1     $850 K        -3       *         En/L      d6+3w/d8+3w/d6+2m            F (8)
+27: 2         1     $4.2 M        +1       *         En/SH     3d6m/2d6c/2d6+2c             F (2)
+28: 2     $16 M          -       *         -         -                            F
+29: -3       *         En/L      d6+3w/d8+3w/d6+2m            (20)
+-------
+TITLE: Table 5-11: Area Effect Weapons
+1: Weapon
+2: Progress Level 6: Fusion Age
+3: Hydrogen Bore
+4: AA Burst
+5: CHE
+6: KE
+7: Low-yield Nuke
+8: High-yield Nuke
+9: Progress Level 7: Gravity Age
+10: Fusion Bore
+11: Strong Force Gun
+12: Antimatter Gun
+13: Plasma
+14: Matter Reaction
+15: Matter Bomb
+16: Progress Level 8: Energy Age
+17: Zero Bore
+18: Kinetic Converter
+19: Starload
+20: Nova Burst
+21: Zero Point
+22: Progress Level 9: Matter Age
+23: Null torpedo
+24: Null bomb
+26: Range for Damage of Quality
+27: Type           Ama       Good       Ordinary              Notes
+28: beam           100m           200m         300m           TA
+29: warhead        10m            20m          40m            TA
+-------
+TITLE: Table 5-12: Torpedoes and Special Weapons
+0: Tech Hull Pow Cost.
+1: Progress Level 6: Fusion Age
+2: Cable Gun                     S
+3: RF Spike                      -
+4: Thermal Inducer               X
+5: Thermal Nullifier             X
+6: Progress Level 7: Gravity Age
+7: Tractor Beam                  G
+8: Mass Converter                M
+9: Matter Torpedo                D
+10: Plasma Torpedo                F
+11: Progress Level 8: Energy Age
+12: EM Torpedo                    Q
+13: Neural Inhibitor              P
+14: Fission Activator             M
+15: Progress Level 9: Matter Age
+16: Boarding Transporter          T
+17: Null Torpedo                  X
+18: Code Arranger                 M
+20: Acc      Range Fire      Damage                     Mode
+21: 85
+22: 2     1 $150 K +1             0       --      Special                    F
+23: 3      6 $500 K        -2      1/2/3 En/SH 3d4s/3d6s/2d4w****             F
+24: 8    12      $4 M +3@ 2/4/6 En/M              d6w/d6+1w/d6m              F
+25: 15    20 $35 M +3@ 2/4/6 En/M                  d6+3w/d6+4w/d6+2m F
+26: 2     5 $500 K        -1      2/4/8 --        Special                    F
+27: 4     6      $1 M     -4      2/4/6 En/S      d6+3s/d6+3w/d6+2m          F
+28: 5     7 $600 K        0       2/4/8 En/M      2d6s/2d6w/d6+3m            F
+29: 10    15 $10 M        +1       3/6/9 En/H      3d6s/3d6w/d8+3m            F
+-------
+TITLE: Table 5-13: Defensive Systems
+0: Hull
+1: Progress Level 6: Fusion Age
+2: Chaff                     -       1
+3: Damage Control            -       5%
+4: Decoy Drone               C       1
+5: Jammer                    -       1
+6: Magnetic Screen           S       4
+7: Stealth Hull              S       2
+8: Progress Level 7: Gravity Age
+9: Defense Network           C, F    2
+10: Deflection Inducer        G       1
+11: Particle Screen           Q       2
+12: Stealth Shield            M       2
+13: Stardrive Scrambler       G       1
+14: Repair Bots               C       5%
+15: Progress Level 8: Energy Age
+16: Ablative Shield
+17: Generator               --      1
+18: Capacitor               --      1
+19: Energy Compiler         X       1
+20: Cloaking Unit             M       1
+21: Displacer                 T       2
+22: Progress Level 9: Matter Age
+23: Nanite Repair Array       C       5%
+24: Tech: The technology type necessary to build this device.
+26: Power     Cost           Coverage         Notes
+27: 87
+28: 0         $50 K          100 hull pts     +1 step to missiles, sensors
+29: 1/hull    $100 K/hull    --                 -2 step bonus to Damage Checks
+-------
+TITLE: Table 5-14: Command, Control, and Communication Systems
+0: System
+1: Progress Level 6: Fusion Age
+2: Cockpit
+3: Command Deck
+4: Flag Bridge
+5: Launch Tower
+6: Laser Transceiver
+7: Radio Transceiver
+8: Progress Level 7: Gravity Age
+9: Mass Transceiver
+10: Drivesat Comm Array
+11: Progress Level 8: Energy Age
+12: Drive Transceiver
+13: Psionic Transceiver
+14: Progress Level 9: Matter Age
+15: Ansible
+16: Tech: The technology type necessary to build this device.
+17: Hull: The number of hull points required by the system.
+19: Before you install any of the systems described on TABLE
+20: 5–13, you need to be aware that you must install either
+21: a cockpit or command deck on your ship. Larger ships
+22: require larger command decks. Regardless of how big
+23: your ship is, the command deck is large enough to ac-
+24: commodate all personnel and all the system controls
+25: necessary to fly and fight the ship.
+26: You can buy a secondary or tertiary command deck if
+27: you wish. In fact, most large warships (cruisers or big-
+28: ger) almost always have an auxiliary bridge or second-
+29: ary command deck, so that one lucky hit to the primary
+-------
+TITLE: Table 5-14a: Computers
+0: Hull      Power     Cost            Notes
+1: 1         1         $500 K/hull     1 required per 200 hull points
+2: 1         0         $200 K/hull*    -1 step bonus to dedicated weapon
+3: 1         0         $200 K/hull*    -1 step bonus to dedicated sensor
+4: 1         0         $100 K          -1 step bonus to Tactics skill checks
+5: 1         0         $500 K          -1 step bonus to Maneuver checks
+6: 0.5       0         $200 K          -1 step bonus to attack rolls
+7: 1         1         $1 M/hull       1 required per 200 hull points
+8: 1         0         $300 K/hull*    -2 step bonus to dedicated weapon
+9: 1         0         $300 K/hull*    -2 step bonus to dedicated sensor
+10: 1         0         $200 K          -2 step bonus to Tactics skill checks
+11: 1         0         $750 K          -2 step bonus to Maneuver checks
+12: 1         1         $2 M/hull       1 required per 200 hull points
+13: 1         0         $300 K*         -3 step bonus to dedicated weapon
+14: 1         0         $300 K*         -3 step bonus to dedicated sensor
+15: 1         0         $400 K          -3 step bonus to Tactics skill checks
+16: 1         0         $1 M            -3 step bonus to Maneuver checks
+18: Power: The number of power points required by one unit of this type.
+20: Cost: The cost for one unit of this system, or per hull point of a system based on a percentage of the hull.
+23: --- PAGE BREAK ---
+25: fire control system for your ship’s strong force guns, you
+26: 92   have to install a Good or Amazing computer core; an Ordi-
+27: nary computer core
+-------
+TITLE: Table 5-15: Sensors
+0: Power     Cost       Type            Range            Arcs     Targeting
+1: 0.5      1         $20 K      Active          5/10/20 Mm       1       Normal
+2: 0.5      0         $20 K      Passive         10/20/60 Mm      2       +3 step penalty
+3: 0.5      0         $10 K      Passive         1/2/10 Mm        1       +2 step penalty
+4: 0.5      0         $20 K      Passive         2/4/8 Mm         1       +2 step penalty
+5: 1        1         $100 K     Active          5/10/30 Mm       1       Normal
+6: 1        0         $200 K     Remote          Special          4       -
+7: 1        1         $100 K     Passive         10/30/50 Mm      2       +1 step penalty
+8: 0.5      1         $50 K      Active          10/20/40 Mm      1       Normal
+9: 1        0         $500 K     Remote          Special          4       -
+10: 2        2         $750 K     Remote          Special          4       -
+11: 1        1         $100 K     Active          Special          1       None
+12: 80       120       $1000 M    Passive         Special          4       None
+13: 2        1         $1 M       Passive         30/60/100 Mm 2           Normal
+14: 4        4         $500 K     Passive         Special      4           None
+15: 1        1         $200 K     Active          20/30/40 Mm 1            Normal
+16: 1        0         $250 K     Active          20/40/80 Mm 1            Normal
+17: 3        1         $2 M       Passive         50 Mm        4           Normal
+19: Power: The number of power points required by one unit of this type.
+21: Cost: The cost 
+-------
+TITLE: Table 5-16: Tracking Capability
+0: PL
+1: PL 6
+2: PL 7
+3: PL 8
+5: Hi-Res Video (PL 6)
+6: This is a high-powered camera system designed to spot tar-
+7: gets by their visual profile. It includes a very powerful zoom
+8: 95
+9: feature, allowing close inspection of far-off targets. It’s not a
+10: very good targeting or sensor system, but it’s perfect for
+11: evaluating damage the target has suffered. It’s hard to find a
+12: system that provides a better look at an object of interest.
+13: IR Detector (PL 6)
+14: Also known as a heat sensor, the infrared detector looks for
+15: targets that are radiating infrared energy—heat. It confers a
+16: –2 step bonus to sensor checks against targets maneuver-
+17: ing with a fission rocket, fusion torch, ion engine, or anti-
+18: matter rocket.
+19: Ladar (PL 6)
+20: A laser detection and ranging system uses low-powered
+21: laser beams to pinpoint the target. Ladar ignores jamming,
+22: and it’s considered a passive sensor if the target does not
+23: itself possess ladar or a laser transceiver.
+24: Probe (PL 6)
+25: The sensor probe is a small rocket fitted with a video
+26: camera and a small air/space radar set. It has an accel-
+27: eration of .05 Mpp per phase (or 50 KPH per phase)
+28: and enough fuel to operate for up to 48 hours after
+29: launch. The probe’s telemetry package allows it to trans-
+-------
+TITLE: Table 5-17: Hangars and Miscellaneous Installations
+1: 98      System                   Tech
+2: Progress Level 6: Fusion Age
+3: Airlock                   -
+4: Brig                      -
+5: Cargo Space               -
+6: Cargo Bay                 -
+7: Cargo Hold                -
+8: Docking Clamps            -
+9: Escape Pod                -
+10: Fuel Collectors           -
+11: Hangar                    -
+12: Lab Section               -
+13: Magazine                  -
+14: Reentry Capsule           -
+15: Sick Bay                  -
+16: Workshop                  -
+17: Progress Level 7: Gravity Age
+18: Accumulator               S
+19: Autocargo                 -
+20: Boarding Pod              -
+21: Evac System               -
+22: Extra pods                -
+23: Fabrication Facility      -
+24: Ordnance Transfer System-
+25: Security Suite            -
+26: Stabilizer                G, X
+27: Progress Level 8: Energy Age
+28: Holofield Bay             Q, C
+29: Nanomanufacture Bay       S, C
+-------
+TITLE: Table 5-18: Hit Locations and Zone Limits
+0: Hull Type
+1: Military Hulls
+2: Small Craft
+3: Fighter
+4: Strike fighter
+5: Cutter
+6: Scout
+7: Escort
+8: Light Ships
+9: Corvette
+10: Frigate
+11: Destroyer
+12: Medium Ships
+13: Light cruiser
+14: Heavy cruiser
+15: Armored cruiser
+16: Heavy Ships
+17: Battlecruiser
+18: Battleship
+19: Fleet carrier
+20: Super-heavy Ships
+21: Dreadnought
+22: Super-carrier
+23: Super-dread.
+24: Fortress ship
+25: Civilian Hulls
+26: Small Craft
+27: Launch
+28: Courier
+29: Trader
+-------

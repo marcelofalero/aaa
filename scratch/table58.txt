@@ -1,0 +1,106 @@
+
+Laser (PL 6) The simplest beam weapon, the laser is used generally for small craft or point-defense batteries. It directs a focused beam of white-hot light to the target. The heavy laser is simply an oversized laser that pours more energy on the target. It’s too big to install on light spacecraft, but is common on destroyers and larger warships. Modification: At an additional cost of 100,000 credits and 1 hull point, the laser (not the heavy laser) can be configured for burst or autofire attack modes. This increases the power consumption to 3 power points per round.
+
+IR Laser (PL 6) Somewhat more powerful than the visible laser, the IR (infrared) laser focuses light in the infrared spectrum. It delivers more energy to the target than the basic laser. Modification: At an additional cost of 200,000 credits and 1 hull point, the IR laser can be configured for burst or autofire attack modes. This increases the power consumption to 3 power points per round.
+
+X-Ray Laser (PL 6) This device lases very high-energy x-rays. It is the most powerful of the light lasers. Modification: At an additional cost of 300,000 credits and 1 hull point, the X-ray laser can be configured for burst or autofire attack modes. This increases the power consumption to 4 power points per round.
+
+Neutron Gun (PL 6) This device directs an intense blast of neutron radiation at the target, creating severe radiation effects and wreaking havoc on both mechanical and biological targets. The heavy neutron gun is simply a larger version of this device.
+
+Fusion Laser (PL 6) Using a controlled fusion reaction to prime an immensely powerful high-energy burst of radiation, the fusion laser is an extremely powerful version of the x-ray laser.
+
+Graser (PL 6) Like the x-ray laser, the graser is a device that lases very high-energy electromagnetic waves—in this case, gamma rays. It causes severe radiation damage to its target.
+
+Hydrogen Bore (PL 6) This mammoth weapon is basically a fusion torch drive designed to function as a weapon. It uses magnetic fields to direct a blast of fusing hydrogen at its target. The temperature of the hydrogen bore’s discharge approaches ten thousand degrees. The hydrogen bore can be fired only as a special weapon; see Chapter 1 for details. Note that it is an area-effect weapon and may inflict damage on targets in the general vicinity of the primary target.
+
+Particle Beam (PL 7) An improved version of the PL 6 neutron gun, this device projects a stream of protons, neutrons, or alpha particles at the target, accelerating each to near light-speed. Not only does it deliver a scathing blast of hard radiation, but the kinetic energy of particle impact can vaporize its target. The heavy particle beam delivers a higher volume of particles to the target.
+
+Table 5-8: Beam Weapons Weapon Tech Hull Progress Level 6: Fusion Age Laser IR Laser X-ray Laser Heavy Laser Neutron Gun Fusion Laser F Graser Q Heavy Neutron Gun 22 Hydrogen Bore** F Progress Level 7: Gravity Age Plasma Cannon F Particle Beam Heavy Particle Beam 6 Heavy Plasma Beam F Matter Beam A Fusion Beam F Quantum Cannon Q Boson Gun Heavy Matter Beam A Fusion Bore** F Progress Level 8: Energy Age Maser Kinetic Lance X Pulse Maser EM Cannon Dark Fusion Gun D Gatling Maser Weak Force Gun M Strong Force Gun** M Zero Bore** Q Progress Level 9: Matter Age Blacklaser D Tachyon Gun X String Projector
+
+## Q, G
+
+Pow
+
+Cost.
+
+Acc
+
+Range
+
+Fire
+
+Damage
+
+Mode
+
+$100 K $250 K $350 K $2 M $10 M $20 M $40 M $60 M $100 M
+
+-2
+
+-2
+
+-2
+
+-1
+
++1 +2 +3 +3
+
+1/2/3 1/2/3 1/2/3 1/3/5 1/3/5 2/4/6 3/6/9 3/6/9 4/8/12
+
+En/S En/S En/S En/L En/L En/M En/M En/H En/SH
+
+d4s/d4w/d4+2w d4+1s/d4+1w/d6+1w d6+1s/d4+2w/d4m d6+2s/d6+2w/d6m 2d4w/2d4+2w/2d4m 2d6w/2d6+2w/2d6m 3d4s/2d4m/3d4m 2d6w/2d6m/2d6+2m 3d4w/3d4m/3d4c
+
+F* F* F* F/G F/G F/G F/G F/G F
+
+$400 K $500 K $4 M $12 M $20 M $25 M $50 M $80 M $100 M $200 M
+
+-2
+
+-2
+
+-1
+
++1 +2 +3 +3 +3
+
+1/2/4 2/4/6 2/4/6 2/4/8 2/5/10 3/6/12 4/8/12 4/8/12 4/8/16 5/10/15
+
+En/S En/S En/L En/L En/M En/M En/M En/H En/H En/SH
+
+d6+2w/d8+2w/d6+1m d6+3s/d4+1m/d4+3m d12+3s/d6+1m/d6+3m d8+2w/d12+2w/d8+2m 2d6+1w/2d8+1w/2d8m d12+2w/d12+4w/d8+5m 2d8w/2d6m/2d4c 3d6w/3d6m/4d6m 2d6+1m/2d8+1m/2d8c 3d6m/3d4c/3d6c
+
+F* F F/G F/G F/G F/G F/G F/G F/G F
+
+$400 K $750 K $4 M $10 M $40 M $50 M $120 M $150 M $300 M
+
+-3
+
+-3
+
+-1
+
+-1
+
++1 +2 +3 +3
+
+1/3/5 2/4/6 2/5/10 3/6/12 4/8/12 3/7/14 5/10/15 5/10/20 6/12/18
+
+En/S HI/S En/L En/L En/M En/M En/H En/H En/SH
+
+d6+2w/d4+1m/d6+2m d4+1w/2d4w/d4+3m d8+4w/d8+2m/d12+2m 3d6s/4d6s/4d8s 2d6w/3d4m/2d4+1c d8+4w/d8+2m/d12+2m 4d4w/4d4m/4d4c 3d6+2m/3d4c/4d6c 4d6m/3d6c/3d8c
+
+F* F* F/G F/G F/G F/G/B/A F/G F/G F
+
+$1 M $40 M $200 M
+
+-3
+
++2
+
+2/4/6 4/8/12 6/12/24
+
+En/S En/M LI/H
+
+d8w/d12w/d8m 2d8+2w/2d8m/d8+1c 4d8w/3d8m/3d8c
+
+F/B/A/G F/G F/G

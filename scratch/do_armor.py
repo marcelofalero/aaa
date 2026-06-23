@@ -1,4 +1,5 @@
-+++
+with open('site/content/warships/ship-construction/02-armor.md', 'w') as f:
+    f.write("""+++
 title = "Armor"
 description = "Step 2 of Starship Construction."
 weight = 20
@@ -39,41 +40,31 @@ Consisting of a thick layer of gel-like fluid sandwiched in a neutronite structu
 
 ### Table 5-2: Armor
 
-| Armor Type | Tech | LI | HI | En | Hull | Cost/Hull Pt. |
-|---|---|---|---|---|---|---|
-| _Progress Level 6: Fusion Age_ | | | | | | |
-| Alloy, Medium | - | d4+1 | d4+1 | d4 | 5% | $150 K |
-| Alloy, Heavy* | - | d6+1 | d6+1 | d6 | 10% | $300 K |
-| Alloy, Super-heavy! | - | d6+3 | d6+3 | d6+2 | 20% | $600 K |
-| Polymeric, Light | - | d4-1 | d4-1 | d4-2 | 2.5% | $50 K |
-| Polymeric, Medium | - | d4 | d4 | d4-1 | 5% | $100 K |
-| Reflective, Light | - | d4-3 | d4-2 | d6-1 | 2.5% | $50 K |
-| Reflective, Medium | - | d4-2 | d4-1 | d6 | 5% | $100 K |
-| Reflective, Heavy* | - | d4 | d4 | d8+1 | 10% | $200 K |
-| _Progress Level 7: Gravity Age_ | | | | | | |
-| Cerametal, Light | - | d6-1 | d6-1 | d6-1 | 2.5% | $100 K |
-| Cerametal, Medium | - | d4+1 | d4+1 | d4+1 | 5% | $200 K |
-| Cerametal, Heavy* | - | d8 | d8 | d8 | 10% | $400 K |
-| Neutronite, Medium | S | d6+1 | d6+1 | d6+1 | 5% | $500 K |
-| Neutronite, Heavy* | S | d8+1 | d8+1 | d8+1 | 10% | $1 M |
-| Neutronite, Super-heavy! | S | d8+3 | d8+3 | d8+3 | 20% | $2 M |
-| Reactive, Medium | - | d4+2 | d6 | d4 | 5% | $150 K |
-| Reactive, Heavy* | - | 2d4+1 | d8 | d4+1 | 10% | $300 K |
-| Reactive, Super-heavy! | - | 2d4+3 | d8+2 | d4+3 | 20% | $600 K |
-| _Progress Level 8: Energy Age_ | | | | | | |
-| Crystallis, Light | P, X | d6-1 | d6 | d6+2 | 2.5% | $250 K |
-| Crystallis, Medium | P, X | d6 | d6+1 | 2d4+1 | 5% | $500 K |
-| Nanofluidic, Light | S, C | d8-1 | d8-1 | d8 | 2.5% | $500 K |
-| Nanofluidic, Medium | S, C | 2d4 | 2d4 | 2d4 | 5% | $1 M |
-| Nanofluidic, Heavy* | S, C | 2d4+1 | 2d4+2 | 2d4+1 | 10% | $2 M |
-| Nanofluidic, Super-heavy! | S, C | 2d4+3 | 2d4+4 | 2d4+3 | 20% | $4 M |
+| Type | PL 5 | PL 6 | PL 7 | Hull | Cost/Hull Pt. |
+|---|---|---|---|---|---|
+| Light alloy | d4-1 | d4-1 | d4-2 | 2.5% | $50 K |
+| Light polymeric | d4-3 | d4-2 | d6-1 | 2.5% | $50 K |
+| Medium alloy | d4+1 | d4+1 | d4 | 5% | $150 K |
+| Medium polymeric | d4 | d4 | d4-1 | 5% | $100 K |
+| Medium reflective | d4-2 | d4-1 | d6 | 5% | $100 K |
+| Heavy alloy* | d6+1 | d6+1 | d6 | 10% | $300 K |
+| Heavy reflective* | d4 | d4 | d8+1 | 10% | $200 K |
+| Super-heavy alloy* | d6+3 | d6+3 | d6+2 | 20% | $600 K |
+| Light cerametal | d6-1 | d6-1 | d6-1 | 2.5% | $100 K |
+| Medium cerametal | d6+1 | d6+1 | d6 | 5% | $250 K |
+| Heavy cerametal* | d8+1 | d8+1 | d6+1 | 10% | $500 K |
+| Super-heavy cerametal* | d8+3 | d8+3 | d8 | 20% | $1 M |
+| Medium neutronite | -- | d8 | d8-1 | 5% | $500 K |
+| Heavy neutronite* | -- | d10+1 | d8+1 | 10% | $1 M |
+| Super-heavy neutronite* | -- | d10+3 | d10 | 20% | $2 M |
+| Medium reactive | -- | -- | d8+1 | 5% | $500 K |
+| Heavy reactive* | -- | -- | d10+2 | 10% | $1 M |
+| Super-heavy reactive* | -- | -- | d12+1 | 20% | $2 M |
+| Medium crystallis | -- | -- | d6-1(d10) | 5% | $1 M |
+| Heavy crystallis* | -- | -- | d8(d12+1) | 10% | $2 M |
+| Super-heavy crystallis* | -- | -- | d10(d20) | 20% | $4 M |
+| Medium nanofluidic | -- | -- | d10+1 | 5% | $1 M |
+| Heavy nanofluidic* | -- | -- | d12+2 | 10% | $2 M |
+| Super-heavy nanofluidic*| -- | -- | d20+1 | 20% | $4 M |
 
-\* Heavy armors cannot be installed on small craft.
-
-! Super-heavy armors cannot be installed on small craft or light ships.
-
-**LI, HI, En:** The armor’s protective value against Low Impact, High Impact, and Energy attacks, respectively.
-
-**Hull:** The amount of the ship’s hull points required by armor of this weight. Refer to the hull table for the number of hull points each percentage equals (2.5% is half of 5%, rounded normally).
-
-**Cost/Hull Pt.:** Each hull point allocated to armor costs this much money. If the armor installation takes less than 1 hull point, use a minimum cost of 1 hull point worth of armor.
+""")

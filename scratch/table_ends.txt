@@ -1,0 +1,424 @@
+--- START: Table 5-8: Beam Weapons
+7066: Table 5-8: Beam Weapons
+7067: Weapon                 Tech Hull       Pow
+7068: Progress Level 6: Fusion Age
+7069: Laser                  -        1
+7070: IR Laser               -       2
+7071: X-ray Laser            -        2
+7072: Heavy Laser            -        5
+7073: Neutron Gun            -        7
+7074: Fusion Laser           F      12
+7075: Graser                 Q       15
+7076: Heavy Neutron Gun -            22
+7077: Hydrogen Bore**        F      50
+7078: Progress Level 7: Gravity Age
+7079: Plasma Cannon          F       3
+7080: Particle Beam          -       4
+7081: Heavy Particle Beam -           6
+7082: Heavy Plasma Beam F             8
+7083: Matter Beam            A      11
+7084: Fusion Beam            F      15
+7085: Quantum Cannon         Q       18
+7086: Boson Gun              -       20
+7087: Heavy Matter Beam A            24
+7088: Fusion Bore**          F      60
+7089: Progress Level 8: Energy Age
+7090: Maser                  -       4
+7091: Kinetic Lance          X        2
+7092: Pulse Maser            -        6
+7093: EM Cannon              -        8
+7094: Dark Fusion Gun        D       15
+7095: Gatling Maser          -      18       36
+7096: Weak Force Gun         M      25       25
+7097: Strong Force Gun**     M       32
+7098: Zero Bore**            Q      100      120
+7099: Progress Level 9: Matter Age
+7100: Blacklaser             D        3
+7101: Tachyon Gun            X      12
+7102: String Projector       Q, G   24
+7103: 
+7104: 73
+7105: Cost.     Acc     Range       Fire       Damage                       Mode
+7106: 2     $100 K      -2     1/2/3       En/S       d4s/d4w/d4+2w                F*
+7107: 2     $250 K      -2     1/2/3       En/S       d4+1s/d4+1w/d6+1w            F*
+7108: 2     $350 K      -2     1/2/3       En/S       d6+1s/d4+2w/d4m              F*
+7109: 5       $2 M      -1     1/3/5       En/L       d6+2s/d6+2w/d6m              F/G
+7110: 7      $10 M      0      1/3/5       En/L       2d4w/2d4+2w/2d4m             F/G
+7111: 12      $20 M      +1     2/4/6       En/M       2d6w/2d6+2w/2d6m             F/G
+7112: 15      $40 M      +2     3/6/9       En/M       3d4s/2d4m/3d4m               F/G
+7113: 22      $60 M      +3     3/6/9       En/H       2d6w/2d6m/2d6+2m             F/G
+7114: 60     $100 M      +3     4/8/12      En/SH      3d4w/3d4m/3d4c               F
+7115: 3      $400 K      -2     1/2/4       En/S       d6+2w/d8+2w/d6+1m            F*
+7116: 5      $500 K      -2     2/4/6       En/S       d6+3s/d4+1m/d4+3m            F
+---
+--- START: Table 5-9: Projectile Weapons
+7332: Table 5-9: Projectile Weapons
+7333: Pow      Cost.      Acc     Range      Fire     Damage                       Mode
+7334: 0      $200 K       -1     1/2/3      HI/Gd    d4s/d4w/d4+2w                F/B/A
+7335: 3      $500 K       0      1/2/5      HI/S     2d4s/d6+2w/d4+1m             F/G
+7336: 6      $2 M        +1     1/3/5      HI/L     d6+1w/d6+3w/d4+3m            B/A
+7337: 6      $5 M        +2     2/4/6      HI/M     d6+1w/d6+2m/d4+1c            F/G
+7338: 16     $50 M        +4     3/6/12     HI/H     d8+2w/d8+2m/d6+2c            F/G
+7339: 3 $300 K           -1     1/3/5      LI/S     d6+2s/d6+1w/d6+3w            F/G
+7340: 6  $2 M            0      2/4/6      LI/L     2d6s/2d6w/3d6w               F/G
+7341: 7 $10 M            +1     3/5/7      En/M     2d6s/2d6w/2d6m               F/G
+7342: 8 $30 M            +1     6/8/10     HI/M     d12w/d8m/d12m                F/G
+7343: 14 $40 M            +3     4/8/10     En/H     2d6w/2d6m/2d6c               F/G
+7344: 18 $80 M            +4     4/8/12     En/H     3d6w/3d4m/3d4c               F/G
+7345: 30 $120 M           +4     8/10/14    HI/SH    2d8m/2d12m/2d8c              F
+7346: 2     $250 K       -2     1/2/4      HI/S     d6+1w/d6+3w/d4+2m    F/B/A
+7347: 4      $4 M         0     2/4/8      HI/L     d6+3w/d6+1m/d6c      F/G
+7348: 15     $15 M        -1     4/6/8      En/M     2d6s/2d6w/2d6m       F
+7349: 18     $20 M        -1     5/7/10     En/M     2d6s/2d6w/2d6m       F
+7350: 10     $50 M        +2     4/8/16     LI/H     d12+3w/d12+3m/d12+1c F/G
+7351: 15 $90 M            +3     5/10/20 En/M** 2d6s/2d6w/2d6m                    F/G
+7352: 40 $200 M           +1     6/12/24 LI/SH 3d6m/4d6m/3d8c                     S
+7353: 
+7354: Hull: The number of hull points required for the installation of this weapon system.
+7355: 
+7356: Pow: The power required to employ this weapon in one action round of combat, regardless of how many shots it actually fires.
+7357: 
+7358: Cost: The cost, in millions of credits, Concord Dollars, or denomination appropriate to your game.
+7359: 
+7360: Acc: The weapon’s base accuracy modifier.
+7361: Range: The weapons short/medium/long ranges in megameters.
+7362: 
+7363: Fire: The weapon’s type (low impact, high impact, or energy) and firepower (Small craft, Light, Medium, Heavy, or Super-Heavy).
+7364: 
+7365: Damage: The weapon’s damage for an Ordinary/Good/Amazing-quality success on the attack roll.
+7366: 
+7367: Mode: The weapon system’s allowed fire modes. ‘F’ stands for single-shot;‘G’ stands for group (or battery) fire; ‘B’ stands for
+7368: 
+7369: burst fire; and ‘A’ stands for autofire.
+7370: 
+7371: 
+7372: --- PAGE BREAK ---
+7373: 
+7374: Point Defense Gun (PL 6)
+7375: 76   The point defense gun is primarily a defensive system in-
+7376: 
+7377: a low-yield nuke is the warhead of choice).
+7378: 
+7379: tended for use against incoming missiles. At close ranges, it
+7380: 
+7381: can be employed in an offensive role. The point-defense
+7382: gun can’t be used both defensively and offensively in the
+---
+--- START: Table 5-10: Missiles, Bombs, and Mines (Part 1)
+7583: Table 5-10: Missiles, Bombs, and Mines (Part 1)
+7584: 
+7585: Tech     Hull
+7586: Progress Level 6: Fusion Age
+7587: Bomb Rack                -        1
+7588: Bomb Bay                 -        10
+7589: Extra capacity       -        +1
+7590: Minelayer                -        5
+7591: ...Extra capacity        -        +5
+7592: Missile Rack             -        2
+7593: Missile Tube             -        3
+7594: Magazine             -        +1
+7595: Progress Level 7: Gravity Age
+7596: Ordnance Cell Array      -        10
+7597: Extra cells          -        1
+7598: Tech: The tech track required by this weapon.
+7599: 
+7600: Power      Cost          Cap       Reload        ROF       Notes
+7601: 0      $10 K       4           N             All
+7602: 1     $100 K       40          Y             10/rd
+7603: 0      $10 K      +4           -
+7604: 2     $100 K       10          N             10/rd     Deploys one mine pattern
+7605: +2     $50 K      +10          -
+7606: 1      $50 K       8           N             4/rd
+7607: 1     $100 K      12           Y             1/rd
+7608: 0      $50 K      +4           -             -
+7609: 2      $1 M          40        N             All       Carries missiles, bombs, or mines
+7610: 0      $25 K         +4        N             -
+7611: 
+7612: Hull: The number of hull points required for the installation of this weapon system.
+7613: 
+7614: Pow: The power required to employ this weapon in one turn of combat.
+7615: 
+7616: Cost: The cost, in millions of credits, Concord Dollars, or denomination appropriate to your game. The launch system
+7617: 
+7618: cost does not include the cost of any ordnance carried.
+7619: 
+7620: Capacity: The capacity of the launch system. Missiles, mines, and bombs of Size 1 require 1 point each; weapons of
+7621: 
+7622: Size 2 require 2 points each.
+7623: 
+7624: Reload: Whether or not this system can be reloaded in open space.
+7625: 
+7626: ROF: The number of missiles, bombs, or mines that may be fired in a single round.
+7627: 
+7628: Propulsion Systems
+7629: Weapon                  Tech     Size
+7630: Progress Level 6: Fusion Age
+7631: Bomb or mine, light     -        1
+7632: Bomb or mine, med       -        2
+7633: Bomb, or mine, hvy      -        4
+---
+--- START: Table 5-10: Missiles, Bombs, and Mines (Part 2)
+7679: Table 5-10: Missiles, Bombs, and Mines (Part 2)
+7680: Warheads (Mines, Bombs, and Missiles)
+7681: Tech
+7682: Progress Level 6: Fusion Age
+7683: AA Burst*                       -
+7684: CHE*                            -
+7685: KE Submunition*                 -
+7686: Low-yield Nuke*                 -
+7687: Hi-yield Nuke*                  -
+7688: Progress Level 7: Gravity Age
+7689: Plasma*                         F
+7690: MRB (Mass Reaction)*            D
+7691: Matter*                         A
+7692: Progress Level 8: Energy Age
+7693: Starload*                       D
+7694: Nova Burst*                     G
+7695: Zero Point*                     Q
+7696: Progress Level 9: Matter Age
+7697: Null Bomb*                      X
+7698: * Area effect weapon.
+7699: War: The size of the warhead.
+7700: Acc: The warhead’s accuracy modifier.
+7701: 
+7702: War     Cost        Acc      Fire          Damage
+7703: 79
+7704: 1        $5 K       -2      HI/S           d8w/d6m/2d4m
+7705: 2       $10 K       0       En/L           d6+1s/d6+1w/d4+2m
+7706: 2       $20 K       -1      HI/L           d6+2s/d6+2w/d6+4w
+7707: 2      $500 K       0       En/M           2d6s/2d6w/2d6m
+7708: 4       $1 M        +1      En/H           2d6w/2d6m/2d6c
+7709: 1      $50 K        -1       En/L          d6+3w/d8+3w/d6+2m
+7710: 2      $200 K        0      En/M           2d4+1s/2d4w/d8+1m
+7711: 4       $2 M        +1      En/SH          3d6w/3d6m/2d6+2c
+7712: 1       $80 K       -2       En/L          2d6w/2d6m/2d4c
+7713: 2      $500 K       -1       LI/H          2d8w/2d6m/2d4c
+7714: 4       $3 M         0      En/SH          3d8w/3d8m/3d6c
+7715: 4       $5 M        -1      En/SH          4d6w/4d6m/4d6c
+7716: 
+7717: Fire: The attack type (low impact, high impact, or energy) and its firepower (small, light, medium, heavy, or super-heavy.)
+7718: 
+7719: Damage: The damage inflicted by an Ordinary, Good, or Amazing-quality success on the attack roll.
+7720: 
+7721: Guidance Systems (Missiles, Mines)
+7722: Weapon
+7723: Progress Level 6: Fusion Age
+7724: Active Radar
+7725: EM Homing
+7726: EM active
+7727: IR Homing
+7728: hot
+7729: Command
+---
+--- START: Table 5-10: Missiles, Bombs, and Mines (Part 3)
+7772: Table 5-10: Missiles, Bombs, and Mines (Part 3)
+7773: 
+7774: Weapon                      Tech Hull
+7775: Progress Level 6: Fusion Age
+7776: SMP Bomb Rack               -
+7777: Fusion Bomb Rack            -
+7778: CHE Missile Rack            S
+7779: Missile Mount               S     10
+7780: SMP Missiles
+7781: AA Missiles
+7782: Progress Level 7: Gravity Age
+7783: Plasma Missile Rack         F, G  2
+7784: Matter Missile Rack         A, G
+7785: Ordnance Array              !     20
+7786: Plasma Missiles
+7787: Matter Missiles
+7788: MRB Mines
+7789: Progress Level 8: Energy Age
+7790: Nova Array                  G, C  10
+7791: 
+7792: Pow     Cost.        Acc      Range     Fire      Damage                       Mode
+7793: 1         0      $70 K        -3       0         HI/L      d6+2s/d6+2w/d6+4w            F (2)
+7794: 1         0      $1 M         -1       0         En/H      2d6w/2d8m/2d6c               F (1)
+7795: 2         1     $270 K         0       *         En/L      d6+1s/d6+1w/d4+2m            F (4)
+7796: 1     $1.6 M         -       *         -         -                            F
+7797: -1       *         HI/L      d6+2s/d6+2w/d6+4w            (10)
+7798: -2       *         HI/S      d8w/d6m/2d4m                 (10)
+7799: 1     $850 K        -3       *         En/L      d6+3w/d8+3w/d6+2m            F (8)
+7800: 2         1     $4.2 M        +1       *         En/SH     3d6m/2d6c/2d6+2c             F (2)
+7801: 2     $16 M          -       *         -         -                            F
+7802: -3       *         En/L      d6+3w/d8+3w/d6+2m            (20)
+7803: +1       *         En/SH     3d6m/2d6c/2d6+2c             (10)
+7804: -3       0         En/M      2d4+1s/2d4w/d8+1m            (10)
+7805: 2    $23.8 M        -5       *         LI/H      2d8w/2d6m/2d4c               (40)
+7806: 
+7807: * Missile systems have special range considerations; see text.
+7808: 
+7809: ! The PL 7 ordnance array requires technology types A, D, F, and G.
+7810: 
+7811: changes or maneuvers for 1d4 hours.
+7812: Bomb bays and missile tubes are an exception to this
+7813: rule; they can be reloaded in space, as long as the ship is
+7814: carrying extra ordnance in an internal magazine.
+7815: Finally, every launch system possesses a basic rate of
+7816: fire, which indicates how many weapons it can fire, drop,
+7817: or dispense in a single round. A missile tube must cycle
+7818: through the process of bringing the next missile from the
+7819: magazine to the rail and then firing it off, but a simple rack
+7820: or cell system can torch off a number of missiles at the
+7821: same time.
+7822: Bomb Rack (PL 6): As you might expect, this launch sys-
+---
+--- START: 82                                   Table 5-11: Area Effect Weapons
+7996: 82                                   Table 5-11: Area Effect Weapons
+7997: 
+7998: Weapon
+7999: Progress Level 6: Fusion Age
+8000: Hydrogen Bore
+8001: AA Burst
+8002: CHE
+8003: KE
+8004: Low-yield Nuke
+8005: High-yield Nuke
+8006: Progress Level 7: Gravity Age
+8007: Fusion Bore
+8008: Strong Force Gun
+8009: Antimatter Gun
+8010: Plasma
+8011: Matter Reaction
+8012: Matter Bomb
+8013: Progress Level 8: Energy Age
+8014: Zero Bore
+8015: Kinetic Converter
+8016: Starload
+8017: Nova Burst
+8018: Zero Point
+8019: Progress Level 9: Matter Age
+8020: Null torpedo
+8021: Null bomb
+8022: 
+8023: Range for Damage of Quality
+8024: Type           Ama       Good       Ordinary              Notes
+8025: beam           100m           200m         300m           TA
+8026: warhead        10m            20m          40m            TA
+8027: warhead        20m            40m          60m            TA
+8028: warhead        all targets within 200m attacked           TA
+8029: warhead        200m           400m         800m           MD
+8030: warhead        5 km           10 km        20 km          SA
+8031: beam           200m         400m         600m             TA
+8032: beam           150m         300m         600m             TA
+8033: proj.          100m         200m         300m             MD
+8034: warhead        60m          120m         180m             TA
+8035: warhead        500m         1 km         2 km             SA
+8036: warhead        10 km        20 km        40 km            SA
+8037: beam           300m         600m         1 km             MD
+8038: proj.          200m         400m         800m             MD
+8039: warhead        80m          160m         240m             TA
+8040: warhead        1 km         2 km         4 km             SA
+8041: warhead        20 km        40 km        80 km            SA
+8042: torpedo        100m         200m         300m             TA
+8043: warhead        30 km        60 km        100 km           SA
+8044: 
+8045: Type: The weapon’s category (beam weapon, projectile weapon, or warhead for a missile, bomb, or mine).
+8046: 
+---
+--- START: Table 5-12: Torpedoes and Special Weapons
+8329: Table 5-12: Torpedoes and Special Weapons
+8330: Tech Hull Pow Cost.
+8331: Progress Level 6: Fusion Age
+8332: Cable Gun                     S
+8333: RF Spike                      -
+8334: Thermal Inducer               X
+8335: Thermal Nullifier             X
+8336: Progress Level 7: Gravity Age
+8337: Tractor Beam                  G
+8338: Mass Converter                M
+8339: Matter Torpedo                D
+8340: Plasma Torpedo                F
+8341: Progress Level 8: Energy Age
+8342: EM Torpedo                    Q
+8343: Neural Inhibitor              P
+8344: Fission Activator             M
+8345: Progress Level 9: Matter Age
+8346: Boarding Transporter          T
+8347: Null Torpedo                  X
+8348: Code Arranger                 M
+8349: 
+8350: Acc      Range Fire      Damage                     Mode
+8351: 85
+8352: 2     1 $150 K +1             0       --      Special                    F
+8353: 3      6 $500 K        -2      1/2/3 En/SH 3d4s/3d6s/2d4w****             F
+8354: 8    12      $4 M +3@ 2/4/6 En/M              d6w/d6+1w/d6m              F
+8355: 15    20 $35 M +3@ 2/4/6 En/M                  d6+3w/d6+4w/d6+2m F
+8356: 2     5 $500 K        -1      2/4/8 --        Special                    F
+8357: 4     6      $1 M     -4      2/4/6 En/S      d6+3s/d6+3w/d6+2m          F
+8358: 5     7 $600 K        0       2/4/8 En/M      2d6s/2d6w/d6+3m            F
+8359: 10    15 $10 M        +1       3/6/9 En/H      3d6s/3d6w/d8+3m            F
+8360: 3     5 $450 K        -2      2/5/10 En/M     d6+3s/2d8s/d4+2w           F
+8361: 12    20 $40 M          0      1/2/3 **        1d12s/1d12w/1d20w**        F
+8362: 25    75 $80 M          0      4/8/12 En/H     2d4m/2d4+2m/3d4+2c F
+8363: 6     9     $10 M     --      4/6/8 --        Special                    F
+8364: 18    25 $50 M        +2       3/6/15 En/SH 2d8w/2d8m/2d8c                F
+8365: 25    50 $100 M +1             4/8/12 ***/H    d8m/d8+4m/d8c              F
+8366: 
+8367: ** The neural inhibitor only affects crewmen; see the weapon description.
+8368: 
+8369: *** The code arranger ignores armor.
+8370: 
+8371: **** The RF spike never upgrades damage against targets of inferior toughness.
+8372: 
+8373: @ Accuracy improves by 1 step for each consecutive round the weapon is fired at the same target, to a maximum of a –4 step
+8374: 
+8375: accuracy bonus.
+8376: Weapon: The name of the weapon.
+8377: Tech: The tech track required by this weapon.
+8378: 
+8379: Hull: The number of hull points required for the installation of this weapon system.
+---
+--- START: Table 5-13: Defensive Systems
+8543: Table 5-13: Defensive Systems
+8544: Hull
+8545: Progress Level 6: Fusion Age
+8546: Chaff                     -       1
+8547: Damage Control            -       5%
+8548: Decoy Drone               C       1
+8549: Jammer                    -       1
+8550: Magnetic Screen           S       4
+8551: Stealth Hull              S       2
+8552: Progress Level 7: Gravity Age
+8553: Defense Network           C, F    2
+8554: Deflection Inducer        G       1
+8555: Particle Screen           Q       2
+8556: Stealth Shield            M       2
+8557: Stardrive Scrambler       G       1
+8558: Repair Bots               C       5%
+8559: Progress Level 8: Energy Age
+8560: Ablative Shield
+8561: Generator               --      1
+8562: Capacitor               --      1
+8563: Energy Compiler         X       1
+8564: Cloaking Unit             M       1
+8565: Displacer                 T       2
+8566: Progress Level 9: Matter Age
+8567: Nanite Repair Array       C       5%
+8568: Tech: The technology type necessary to build this device.
+8569: 
+8570: Power     Cost           Coverage         Notes
+8571: 87
+8572: 0         $50 K          100 hull pts     +1 step to missiles, sensors
+8573: 1/hull    $100 K/hull    --                 -2 step bonus to Damage Checks
+8574: 1         $600 K         100 hull pts     3 drones
+8575: 1         $100 K         100 hull pts     +2 steps to missiles, sensors
+8576: 2         $400 K         20 hull pts      +2 steps to missiles, projectiles
+8577: 1         $500 K         50 hull pts      +2 steps to enemy Sensor Checks
+8578: 2         $500 K         100 hull pts     Special
+8579: 2         $500 K         20 hull pts      +2 step penalty to enemy attacks
+8580: 3         $750 K         20 hull pts      Adds d4 (LI), d4 (HI), d6 (En) armor
+8581: 2         $2 M           100 hull pts     +3 steps to missiles, sensors
+8582: 2         $200 K         100 hull pts     +4 step penalty to drive detectors
+8583: 1/hull    $500 K/hull    --                 -3 step bonus to Damage Checks
+8584: 2         $500 K         20 hull pts     capacitor or compiler required
+8585: -         $100 K         --                10 shield points
+8586: -         $500 K         --                20 shield points
+8587: 5         $1 M           100 hull points +4 steps to missiles, sensors
+8588: 3         $1 M           20 hull points +3 step penalty to enemy attacks
+8589: 2/hull    $1 M/hull      --                 -5 step bonus to Damage Checks
+8590: 
+8591: Hull: The number of hull points required by the system. Some systems require hull points equal to 5 percent of the ship’s
+8592: 
+8593: total, so a ship of 240 hull points would require 12 hull points for a damage control system.
+---

@@ -1,0 +1,83 @@
+--- Table 5-8 ---
+7080: Particle Beam          -       4
+7081: Heavy Particle Beam -           6
+7082: Heavy Plasma Beam F             8
+7083: Matter Beam            A      11
+7084: Fusion Beam            F      15
+7085: Quantum Cannon         Q       18
+7086: Boson Gun              -       20
+7087: Heavy Matter Beam A            24
+7088: Fusion Bore**          F      60
+7089: Progress Level 8: Energy Age
+7090: Maser                  -       4
+7091: Kinetic Lance          X        2
+7092: Pulse Maser            -        6
+7093: EM Cannon              -        8
+7094: Dark Fusion Gun        D       15
+7095: Gatling Maser          -      18       36
+7096: Weak Force Gun         M      25       25
+7097: Strong Force Gun**     M       32
+7098: Zero Bore**            Q      100      120
+7099: Progress Level 9: Matter Age
+--- Table 5-9 ---
+7350: 10     $50 M        +2     4/8/16     LI/H     d12+3w/d12+3m/d12+1c F/G
+7351: 15 $90 M            +3     5/10/20 En/M** 2d6s/2d6w/2d6m                    F/G
+7352: 40 $200 M           +1     6/12/24 LI/SH 3d6m/4d6m/3d8c                     S
+7353: 
+7354: Hull: The number of hull points required for the installation of this weapon system.
+7355: 
+7356: Pow: The power required to employ this weapon in one action round of combat, regardless of how many shots it actually fires.
+7357: 
+7358: Cost: The cost, in millions of credits, Concord Dollars, or denomination appropriate to your game.
+7359: 
+7360: Acc: The weapon’s base accuracy modifier.
+7361: Range: The weapons short/medium/long ranges in megameters.
+7362: 
+7363: Fire: The weapon’s type (low impact, high impact, or energy) and firepower (Small craft, Light, Medium, Heavy, or Super-Heavy).
+7364: 
+7365: Damage: The weapon’s damage for an Ordinary/Good/Amazing-quality success on the attack roll.
+7366: 
+7367: Mode: The weapon system’s allowed fire modes. ‘F’ stands for single-shot;‘G’ stands for group (or battery) fire; ‘B’ stands for
+7368: 
+7369: burst fire; and ‘A’ stands for autofire.
+--- Table 5-10 ---
+7780: SMP Missiles
+7781: AA Missiles
+7782: Progress Level 7: Gravity Age
+7783: Plasma Missile Rack         F, G  2
+7784: Matter Missile Rack         A, G
+7785: Ordnance Array              !     20
+7786: Plasma Missiles
+7787: Matter Missiles
+7788: MRB Mines
+7789: Progress Level 8: Energy Age
+7790: Nova Array                  G, C  10
+7791: 
+7792: Pow     Cost.        Acc      Range     Fire      Damage                       Mode
+7793: 1         0      $70 K        -3       0         HI/L      d6+2s/d6+2w/d6+4w            F (2)
+7794: 1         0      $1 M         -1       0         En/H      2d6w/2d8m/2d6c               F (1)
+7795: 2         1     $270 K         0       *         En/L      d6+1s/d6+1w/d4+2m            F (4)
+7796: 1     $1.6 M         -       *         -         -                            F
+7797: -1       *         HI/L      d6+2s/d6+2w/d6+4w            (10)
+7798: -2       *         HI/S      d8w/d6m/2d4m                 (10)
+7799: 1     $850 K        -3       *         En/L      d6+3w/d8+3w/d6+2m            F (8)
+7800: 2         1     $4.2 M        +1       *         En/SH     3d6m/2d6c/2d6+2c             F (2)
+7801: 2     $16 M          -       *         -         -                            F
+7802: -3       *         En/L      d6+3w/d8+3w/d6+2m            (20)
+7803: +1       *         En/SH     3d6m/2d6c/2d6+2c             (10)
+7804: -3       0         En/M      2d4+1s/2d4w/d8+1m            (10)
+7805: 2    $23.8 M        -5       *         LI/H      2d8w/2d6m/2d4c               (40)
+7806: 
+7807: * Missile systems have special range considerations; see text.
+7808: 
+7809: ! The PL 7 ordnance array requires technology types A, D, F, and G.
+7810: 
+7811: changes or maneuvers for 1d4 hours.
+7812: Bomb bays and missile tubes are an exception to this
+7813: rule; they can be reloaded in space, as long as the ship is
+7814: carrying extra ordnance in an internal magazine.
+7815: Finally, every launch system possesses a basic rate of
+7816: fire, which indicates how many weapons it can fire, drop,
+7817: or dispense in a single round. A missile tube must cycle
+7818: through the process of bringing the next missile from the
+7819: magazine to the rail and then firing it off, but a simple rack
