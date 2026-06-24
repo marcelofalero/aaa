@@ -175,7 +175,7 @@ The fusion bore can be fired only as a special weapon; see Chapter 1 for details
 
 ### Matter Beam (PL 7)
 
-The matter beam works much like a particle accelerator, except that it fires particles of antimatter. The power requirements to manufacture and contain antimatter within
+The matter beam works much like a particle accelerator, except that it fires particles of antimatter. The power requirements to manufacture and contain antimatter within the weapon’s bore are significant, but the effects are nothing short of spectacular. The heavy matter beam fires a substantially greater number of antimatter particles with a correspondingly greater effect. Note that this weapon cannot be fired through an atmosphere.
 
 ### Dark Fusion Gun (PL 8)
 
@@ -185,15 +185,11 @@ Based on dark matter reactions, the dark fusion gun initiates a reaction in whic
 
 The weak force gun interferes with the nuclear weak force, causing intense radioactive decay effects at the point of impact. The target suffers thermal and radioactive damage as its own atoms irradiate the vicinity.
 
-the weapon’s bore are significant, but the effects are nothing
-
-short of spectacular. The heavy matter beam fires a sub-
-
 ### Strong Force Gun (PL 8)
 
-stantially greater number of antimatter particles with a cor-
+The nuclear strong force is the force that binds atoms together. The strong force beam emitted by this weapon causes the target’s atomic nuclei to bind together so tightly that they fuse, releasing an incredible amount of energy. The target, in effect, becomes its own hydrogen bomb.
 
-respondingly greater effect. Note that this weapon cannot be fired through an atmosphere.
+The strong force gun is an area-effect weapon; see TABLE 5–11.
 
 ### Quantum Cannon (PL 7)
 
@@ -204,12 +200,6 @@ The quantum cannon fires a stream of highly charged subatomic particles designed
 The maser channels an enormous amount of power through a linear antenna array, creating a broad-spectrum blast of electromagnetic energy. It devastates the target with heat, light, and intense radiation. The pulse maser is a larger version of the same weapon, firing in high-energy pulses.
 
 The gatling maser uses multiple firing arrays to handle even higher energy compressions into shorter pulse widths without burning out the emitters. Modification: At an additional cost of 300,000 credits and 1 hull point, the maser cannon can be configured for burst or autofire attack modes. This increases the power consumption to 6 power points per round.
-
-The pulse maser can be configured for burst or autofire attack modes at a
-
-The nuclear strong force is the force that binds atoms together. The strong force beam emitted by this weapon causes the target’s atomic nuclei to bind together so tightly that they fuse, releasing an incredible amount of energy. The target, in effect, becomes its own hydrogen bomb.
-
-The strong force gun is an area-effect weapon; see TABLE 5–11.
 
 ### Zero Bore (PL 8)
 

@@ -158,7 +158,7 @@ The power cells can provide 6 hours of flight and up to 48 hours of life support
 
 ### Fabrication Facility (PL 7)
 
-This facility is a large, automated workshop with a manufacturing computer that holds design specs for thousands of useful devices and critical machinery. Virtually any part or component of the ship can be duplicated by the fabrication facility. Not only is the facility useful for creating specialpurpose tools, furniture, or repair parts, it also makes possible the repair of mortal damage to the ship without returning to a shipyard.
+This facility is a large, automated workshop with a manufacturing computer that holds design specs for thousands of useful devices and critical machinery. Virtually any part or component of the ship can be duplicated by the fabrication facility. Not only is the facility useful for creating special-purpose tools, furniture, or repair parts, it also makes possible the repair of mortal damage to the ship without returning to a shipyard.
 
 ### Ordnance Transfer System (PL 7)
 

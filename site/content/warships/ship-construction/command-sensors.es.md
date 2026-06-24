@@ -266,7 +266,7 @@ although the sensor operator can’t tell where the arriving ship came from, or 
 
 ### Spectroanalyzer (PL 7)
 
-While the spectroanalyzer isn’t useful as a targeting sensor, it is a powerful analytical tool. It combines spectrum analysis of visible light, radar mapping, and precise mass measurements to create a profile of a planet or space object. The spectroanalyzer is an active sensor that confers a –2 step bonus on sensor checks for Battle Damage Assessment (see Chapter 2) and any Physical Science—astronomy or plane tology skill checks for the purpose of determining the mass, composition, or characteristics of a space object.
+While the spectroanalyzer isn’t useful as a targeting sensor, it is a powerful analytical tool. It combines spectrum analysis of visible light, radar mapping, and precise mass measurements to create a profile of a planet or space object. The spectroanalyzer is an active sensor that confers a –2 step bonus on sensor checks for Battle Damage Assessment (see Chapter 2) and any Physical Science—astronomy or planetology skill checks for the purpose of determining the mass, composition, or characteristics of a space object.
 
 Ship-sized objects may be examined at distances of 2/4/16 Mm for short/medium/long range on the sensor check; planets may be examined at ranges of 1/5/25 AUs for short/medium/long range.
 
