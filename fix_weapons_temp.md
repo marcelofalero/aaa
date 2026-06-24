@@ -145,7 +145,7 @@ burst fire; and ‘A’ stands for autofire.
 
 ### Plasma Cannon (PL 7)
 
-74   The plasma cannon uses a powerful charge to convert a mix of chemicals into a white-hot plasma and then accelerates the mass toward the target with a simple rail gun. The result is a bolt of incandescent plasma that can explosively vaporize mundane materials. The heavy plasma cannon simply fires a larger bolt.
+The plasma cannon uses a powerful charge to convert a mix of chemicals into a white-hot plasma and then accelerates the mass toward the target with a simple rail gun. The result is a bolt of incandescent plasma that can explosively vaporize mundane materials. The heavy plasma cannon simply fires a larger bolt.
 
 cost of 2,000,000 and 2 hull points. Its power consumption increases to 8 points.
 
@@ -241,7 +241,7 @@ er than beam weapons, but they don’t have the same range or accuracy. The dama
 
 ### Point Defense Gun (PL 6)
 
-76   The point defense gun is primarily a defensive system in-
+The point defense gun is primarily a defensive system in-
 
 a low-yield nuke is the warhead of choice).
 
@@ -341,23 +341,27 @@ Here’s a brief summary of how you need to equip your warship to carry launched
 
 If you don’t want to go to the trouble of customizing your ship’s ordnance, check out the standard launch systems described later in this section.
 
-78   Launch Systems
+Most launch systems cannot be reloaded in space. Reloading them requires a base or tender and prevents the ship from making changes or maneuvers for 1d4 hours. Bomb bays and missile tubes are an exception to this rule; they can be reloaded in space, as long as the ship is carrying extra ordnance in an internal magazine.
 
-### Weapon
+Finally, every launch system possesses a basic rate of fire, which indicates how many weapons it can fire, drop, or dispense in a single round. A missile tube must cycle through the process of bringing the next missile from the magazine to the rail and then firing it off, but a simple rack or cell system can torch off a number of missiles at the same time.
 
-or cell system can torch off a number of missiles at the same time. Bomb Rack (PL 6): As you might expect, this launch system is designed to carry bombs. Its capacity can’t be expanded, but a ship could buy and mount multiple bomb racks.
+### Bomb Rack (PL 6)
+As you might expect, this launch system is designed to carry bombs. Its capacity can’t be expanded, but a ship could buy and mount multiple bomb racks.
 
-Bomb Bay (PL 6): The bomb bay has a capacity of 40 light, 20 medium, or 10 heavy bombs. Its capacity can be expanded by 4 points (4 light, 2 medium, or 1 heavy bomb) for each additional hull point assigned to the system beyond the 10 hull points normally required. Minelayer (PL 6): This system consists of two or more mine rails, low-powered magnetic accelerators designed to deploy a pattern of mines into one hex adjacent to the launching ship in a single phase.
+### Bomb Bay (PL 6)
+The bomb bay has a capacity of 40 light, 20 medium, or 10 heavy bombs. Its capacity can be expanded by 4 points (4 light, 2 medium, or 1 heavy bomb) for each additional hull point assigned to the system beyond the 10 hull points normally required.
 
-Unlike other launched weapons, at least ten mines (a single mine pattern) must be deployed to be effective. Since the minelayer also includes machinery for deploying the mines, it has half the capacity of other launch systems of a similar size. Missile Rack (PL 6): This is a system that can hold eight light missiles, four medium missiles, or two heavy missiles.
+### Minelayer (PL 6)
+This system consists of two or more mine rails, low-powered magnetic accelerators designed to deploy a pattern of mines into one hex adjacent to the launching ship in a single phase. Unlike other launched weapons, at least ten mines (a single mine pattern) must be deployed to be effective. Since the minelayer also includes machinery for deploying the mines, it has half the capacity of other launch systems of a similar size.
 
-Its capacity can’t be increased, but it’s easy enough to buy
+### Missile Rack (PL 6)
+This is a system that can hold eight light missiles, four medium missiles, or two heavy missiles. Its capacity can’t be increased, but it’s easy enough to buy multiple missile racks.
 
-multiple missile racks. Missile Tube (PL 6): This is an internal missile storage and launch facility. Its basic capacity is twelve, and it can fire one missile per round.
+### Missile Tube (PL 6)
+This is an internal missile storage and launch facility. Its basic capacity is twelve, and it can fire one missile per round. While its rate of fire is inferior to the missile rack, the missile tube enjoys one advantage; it can be reloaded in space.
 
-While its rate of fire is inferior to the missile rack, the missile tube enjoys one advantage; it can be reloaded in space. Ordnance Cell Array (PL 7): This system is similar to the vertical launch cells of today’s naval vessels. Each missile is pre-loaded into a single cell or canister; the array consists of dozens of these canisters.
-
-Bombs, mines, and missiles of various sizes and warheads can be carried as the shipbuilder sees fit, offering a great deal of tactical flexibility.
+### Ordnance Cell Array (PL 7)
+This system is similar to the vertical launch cells of today’s naval vessels. Each missile is pre-loaded into a single cell or canister; the array consists of dozens of these canisters. Bombs, mines, and missiles of various sizes and warheads can be carried as the shipbuilder sees fit, offering a great deal of tactical flexibility.
 
 ### Propulsion Systems
 
@@ -567,7 +571,18 @@ An application of advanced gravity tech, the tractor beam works a lot like the c
 
 Multiple tractor beams can “combine” to capture larger vessels. If the tractor beam can affect the target, the firing ship can apply an acceleration of 0.25 Mpp per phase to the target vessel. If the firing ship has enough tractor beams to affect the target multiple times, this acceleration capacity increases as shown below:
 
-### Weapon
+| Tractor Overage | Target Acceleration |
+| --- | --- |
+| 1x | 0.25 Mpp |
+| 2x | 0.5 Mpp |
+| 3x | 1 Mpp |
+| 4x | 2 Mpp |
+| 5x | 3 Mpp |
+| 6x | 4 Mpp |
+| 7x | 5 Mpp |
+| 8x | 6 Mpp |
+| 9x | 7 Mpp |
+| 10x | 8 Mpp |
 
 For example, a destroyer mounts three tractor beams, so it can affect a target of up to 150 hull points. It encounters a scoutship of 30 hull points and tries to capture it. The tractor capacity is 5 times that needed to hold the scout, so the destroyer can apply an acceleration of 3 Mpp to the ship each phase.
 
@@ -579,7 +594,7 @@ Once the tractor beam scores a successful hit, it remains “locked on” and ex
 
 ### Mass Converter (PL 7)
 
-86   The mass converter manipulates matter at a distance, causing the target’s atoms to strip each other of electrons. The corrosive effect can turn steel into a fine gray powder in seconds. The mass converter ignores all defensive screens or shields except for the ablative screen.
+The mass converter manipulates matter at a distance, causing the target’s atoms to strip each other of electrons. The corrosive effect can turn steel into a fine gray powder in seconds. The mass converter ignores all defensive screens or shields except for the ablative screen.
 
 ### Matter Torpedo (PL 7)
 
@@ -773,13 +788,7 @@ When an ablative shield backed by an energy compiler is struck by enemy fire, th
 
 This device is an improvement of the PL 7 stealth shield. It renders the ship essentially invisible in every known medium.
 
-The cloaking unit imposes a +4 step penalty to enemy sensor
-
-### Command Systems
-
-90   checks and missile attack rolls. Obviously, the cloaking unit
-
-can’t be used in conjunction with a jammer or chaff bloom, since those devices would give away the ship’s position.
+The cloaking unit imposes a +4 step penalty to enemy sensor checks and missile attack rolls. Obviously, the cloaking unit can’t be used in conjunction with a jammer or chaff bloom, since those devices would give away the ship’s position.
 
 ### Displacer (PL 8)
 
@@ -905,6 +914,24 @@ See Chapter 1.
 | Command | - | $5 K | +1 | Can be jammed by ECM |
 | Mass Homing | G | $10 K | -1 |
 | AI Probability | C | $20 K | -2 |
+| All launch systems possess a special characteristic called | launch system’s capacity, medium weapons take up 2 |
+| capacity, which indicates how much ordnance the system | points, and heavy weapons take up 3 points. For example, |
+| can carry. Obviously, a missile rack can carry a lot of small | a bomb rack (capacity 4) could carry 4 light bombs, 2 |
+| missiles or a few big ones. Generally, each hull point devot- | medium bombs, or 1 heavy bomb. |
+| ed to a launch system provides two to four points of capac- | Most launch systems can be reloaded only in a friend- |
+| ity for ordnance. As the designer, you can choose to buy | ly base or port. Even if a ship is carrying extra missiles |
+| extra capacity for your launch system by allocating some | in its cargo space, it takes a long and complicated EVA |
+| extra hull space and money to the launch system. | procedure to maneuver the ordnance into its firing posi- |
+| Missiles, bombs, and mines come in three sizes—light, | tion. Reloading bomb racks, missile racks, or ordnance |
+| medium, and heavy. Light weapons take up 1 point of the | cells in open space requires the ship to avoid all speed |
+
+| Weapon | Tech Hull | Pow | Cost. | Acc | Range | Fire | Damage | Mode |
+|---|---|---|---|---|---|---|---|---|
+| SMP Bomb Rack | - | 1 | 0 | $70 K | -3 | 0 | HI/L | d6+2s/d6+2w/d6+4w | F (2) |
+| Fusion Bomb Rack | - | 1 | 0 | $1 M | -1 | 0 | En/H | 2d6w/2d8m/2d6c | F (1) |
+| CHE Missile Rack | S | 2 | 1 | $270 K | 0 | * | En/L | d6+1s/d6+1w/d4+2m | F (4) |
+| Missile Mount | S | 10 | 1 | $1.6 M | - | * | - | - | F |
+| SMP Missiles | -1 | * | HI/L | d6+2s/d6+2w/d6+4w | (10) |
 | AA Missiles | -2 | * | HI/S | d8w/d6m/2d4m | (10) |
 | Plasma Missile Rack | F, G | 2 | 1 | $850 K | -3 | * | En/L | d6+3w/d8+3w/d6+2m | F (8) |
 | Matter Missile Rack | A, G | 2 | 1 | $4.2 M | +1 | * | En/SH | 3d6m/2d6c/2d6+2c | F (2) |
@@ -913,6 +940,35 @@ See Chapter 1.
 | Matter Missiles | +1 | * | En/SH | 3d6m/2d6c/2d6+2c | (10) |
 | MRB Mines | -3 | 0 | En/M | 2d4+1s/2d4w/d8+1m | (10) |
 | Nova Array | G, C | 10 | 2 | $23.8 M | -5 | * | LI/H | 2d8w/2d6m/2d4c | (40) |
+| changes or maneuvers for 1d4 hours. | multiple missile racks. |
+| Bomb bays and missile tubes are an exception to this | Missile Tube (PL 6): This is an internal missile storage |
+| rule; they can be reloaded in space, as long as the ship is | and launch facility. Its basic capacity is twelve, and it can |
+| carrying extra ordnance in an internal magazine. | fire one missile per round. While its rate of fire is inferior |
+| Finally, every launch system possesses a basic rate of | to the missile rack, the missile tube enjoys one advantage; |
+| fire, which indicates how many weapons it can fire, drop, | it can be reloaded in space. |
+| or dispense in a single round. A missile tube must cycle | Ordnance Cell Array (PL 7): This system is similar to the |
+| through the process of bringing the next missile from the | vertical launch cells of today’s naval vessels. Each missile is |
+| magazine to the rail and then firing it off, but a simple rack | pre-loaded into a single cell or canister; the array consists |
+| or cell system can torch off a number of missiles at the | of dozens of these canisters. Bombs, mines, and missiles of |
+| same time. | various sizes and warheads can be carried as the ship- |
+| Bomb Rack (PL 6): As you might expect, this launch sys- | builder sees fit, offering a great deal of tactical flexibility. |
+| Bomb Bay (PL 6): The bomb bay has a capacity of 40 | The fuselage, engine, casing, and general design of the |
+| light, 20 medium, or 10 heavy bombs. Its capacity can be | weapon is included in this category. Propulsion systems |
+| expanded by 4 points (4 light, 2 medium, or 1 heavy | range from virtually none (bombs or mines) to sophisticated |
+| bomb) for each additional hull point assigned to the system | devices such as the tachyon missile. |
+| beyond the 10 hull points normally required. | The size of the propulsion system indicates how many |
+| Minelayer (PL 6): This system consists of two or more | points of launch system capacity it takes up. For example, a |
+| mine rails, low-powered magnetic accelerators designed to | medium bomb takes 2 points of capacity, so a bomb rack |
+| deploy a pattern of mines into one hex adjacent to the | (capacity 4) could carry two medium bombs. |
+| launching ship in a single phase. Unlike other launched | The warhead rating of the propulsion system describes |
+| weapons, at least ten mines (a single mine pattern) must be | the maximum size of the warhead that can be fitted to that |
+| deployed to be effective. | propulsion system. Very large and powerful warheads re- |
+| Since the minelayer also includes machinery for deploy- | quire heavy propulsion systems, while small warheads re- |
+| ing the mines, it has half the capacity of other launch sys- | quire light propulsion systems. |
+| tems of a similar size. | The weapon’s propulsion system also provides a basic |
+| Missile Rack (PL 6): This is a system that can hold eight | accuracy rating. This reflects the fact that small missiles are |
+| light missiles, four medium missiles, or two heavy missiles. | generally more nimble than large missiles, and thus more |
+| Its capacity can’t be increased, but it’s easy enough to buy | likely to hit a target that’s trying not to be hit. |
 
 ### Table 5-11: Area Effect Weapons
 | Weapon | Type | Ama | Good | Ordinary | Notes |
@@ -936,6 +992,22 @@ See Chapter 1.
 | Zero Point | warhead | 20 km | 40 km | 80 km | SA |
 | Null torpedo | torpedo | 100m | 200m | 300m | TA |
 | Null bomb | warhead | 30 km | 60 km | 100 km | SA |
+| create a powerful wave of energy. It’s more concentrated | cruiser, and may seriously damage larger warships. The |
+| than a nuclear blast, but less likely to cause unwanted col- | nova burst is an area-effect weapon. |
+| lateral damage. See TABLE 5–11 for details on area-effect | Zero Point (PL 8): This bomb creates a spontaneous |
+| weapons. | quantum fluctuation of energy akin to the Big Bang, albeit |
+| Matter (PL 7): The matter warhead is more properly called | on a smaller scale. It can devastate thousands of square |
+| the antimatter warhead; it contains a kilo or two of antimatter | kilometers in an instant. The warhead may miss its target |
+| in a magnetic bottle, and detonates simply by shutting down | by dozens of kilometers and still inflict lethal damage to ro- |
+| the containment vessel. It’s equivalent to a nuke. | bust targets such as orbital fortresses or heavily armored |
+| Starload (PL 8): The most powerful of the purely tactical | battleships. |
+| warheads, the starload is fueled by a dark-matter reaction | Null Bomb (PL 9): This horrifying weapon simply gener- |
+| akin to that of the matter reaction burst of PL 7. However, | ates a field in which all atomic bonds cease to exist. All |
+| it’s miniaturized for smaller applications. Like most war- | nearby matter is reduced to subatomic dust. |
+| Nova Burst (PL 8): This warhead creates an incredible | The last component of a missile or mine is its guidance sys- |
+| gravitational force to compress normal matter into an in- | tem. How does it recognize its target, and what controls its |
+| credibly dense mass, which then explodes in a colossal det- | detonation? The only game effect a guidance system provides |
+| onation. A single nova burst can cripple a destroyer or | is a final modifier to the weapon’s accuracy. Most missiles |
 
 ### Table 5-12: Torpedoes and Special Weapons
 | Tech Hull Pow Cost. | Acc | Range Fire | Damage | Mode |
@@ -954,6 +1026,22 @@ See Chapter 1.
 | Boarding Transporter | T | 6 | 9 | $10 M | -- | 4/6/8 -- | Special | F |
 | Null Torpedo | X | 18 | 25 $50 M | +2 | 3/6/15 En/SH 2d8w/2d8m/2d8c | F |
 | Code Arranger | M | 25 | 50 $100 M +1 | 4/8/12 ***/H | d8m/d8+4m/d8c | F |
+| 6x | 4 Mpp | If the target is too big to affect but the tractor-armed ship |
+| 7x | 5 Mpp | isn’t, the tractor beam will pull the firing ship towards its |
+| 8x | 6 Mpp | target, not the other way around. If both ships can be affect- |
+| 9x | 7 Mpp | ed, the smaller ship moves toward the larger. Note that the |
+| 10x | 8 Mpp | acceleration applied by the tractor beam always pulls the |
+| For example, a destroyer mounts three tractor beams, so | a convenient asteroid or planet. |
+| it can affect a target of up to 150 hull points. It encounters | Once the tractor beam scores a successful hit, it remains |
+| a scoutship of 30 hull points and tries to capture it. The | “locked on” and exerts its acceleration each phase until the |
+| tractor capacity is 5 times that needed to hold the scout, so | firing ship releases the beam or the target escapes. A target |
+| the destroyer can apply an acceleration of 3 Mpp to the | ship can shake off a tractor beam with a successful crew |
+| ship each phase. Depending on the power of the scout’s en- | check (or pilot skill roll against Vehicle Operations-space - |
+| gines, this may be enough to slow it down, halt it altogether, | craft) provided the check equals or exceeds the success |
+| and begin to pull it in. Ships without acceleration compen- | grade of the tractor beam’s attack roll. In other words, it |
+| sation can be instantly destroyed by the extreme accelera- | takes a Good success in a crew check to shake off a tractor |
+| tion imparted if the operator is not careful; see “Acceleration | beam that scored a Good hit when it initially captured the |
+| Kills” in Chapter 4. | target vessel. |
 
 ### Table 5-13: Defensive Systems
 | Hull | Power | Cost | Coverage | Notes |
@@ -976,3 +1064,17 @@ See Chapter 1.
 | Cloaking Unit | M | 1 | 5 | $1 M | 100 hull points +4 steps to missiles, sensors |
 | Displacer | T | 2 | 3 | $1 M | 20 hull points +3 step penalty to enemy attacks |
 | Nanite Repair Array | C | 5% | 2/hull | $1 M/hull | -- | -5 step bonus to Damage Checks |
+| If the ship changes its course or speed after deploying | cludes redundant systems, casualty control modes for |
+| chaff, it leaves the cloud and loses the defensive benefits. | major machinery, extra compartmentation, repair materi- |
+| The chaff system includes enough rockets for 4 chaff | als, and advanced monitoring systems throughout the |
+| launches (although it’s easy to buy multiple chaff systems | ship. Equipping a ship with damage control systems re- |
+| and increase this to 8, 12, or more chaff launches). | quires 5 percent of the hull, but the ship gains a –2 step |
+| Since large ships require more chaff for complete cover- | bonus to all damage checks it must make. In other |
+| age, the system is ineffective if there is not at least one | words, it’s more likely to keep its systems operational |
+| launcher per 100 hull points of the ship to be covered. For | under heavy enemy fire. |
+| launches, he’d have to buy 10 chaff dispensers. | This is a small, unmanned vehicle equipped with elec- |
+| Damage Control (PL 6) | forces any enemy ships to make a sensor check or |
+| While all ships are equipped with some damage control | break track on the launch ship. If the enemy succeeds, |
+| provisions, this system represents a sophisticated and | the drone is spotted and ignored. If the enemy fails, it |
+| complete approach to compensating for damage. It in- | can still fire at the launch ship, but there’s a 50-50 |
+

@@ -234,11 +234,7 @@ Sensor Control Computer: The quality of the sensor control computer dedicated to
 
 ### Mass Detector (PL 7)
 
-The location of the arrival or departure is also recorded,
-
-96   This device detects targets through their gravitational signa-
-
-tures. Even though a spaceship has an infinitesimal mass compared to a planet, a sufficiently sensitive sensor can determine its bearing and approximate range by measuring the target’s influence on the sensing ship.
+This device detects targets through their gravitational signatures. Even though a spaceship has an infinitesimal mass compared to a planet, a sufficiently sensitive sensor can determine its bearing and approximate range by measuring the target’s influence on the sensing ship.
 
 ### Multiband Radar (PL 7)
 
@@ -260,9 +256,7 @@ The shipbuilder can provide three additional deployments of the remote network p
 
 ### Drive Detection Array (PL 7)
 
-Based on the same technology as the drivesat comm relay,
-
-although the sensor operator can’t tell where the arriving ship came from, or the departing ship is heading to. The detection array does not function while the array-equipped ship is traveling in drivespace itself.
+Based on the same technology as the drivesat comm relay, the drive detection array provides a ship with the ability to detect events occurring across interstellar distances—specifically, the starfalls and starrises of ships traveling by means of a stardrive, drivewave generator, or jump drive. The drive detection array has a range of fifty light-years. It takes eleven hours for the “splash” of the ship entering or emerging from drivespace to propagate, so the drive detection array doesn’t provide real-time information. However, it does indicate the class of ship traveling (small, light, medium, heavy, or super-heavy) and the number of ships traveling. The location of the arrival or departure is also recorded, although the sensor operator can’t tell where the arriving ship came from, or the departing ship is heading to. The detection array does not function while the array-equipped ship is traveling in drivespace itself.
 
 ### Spectroanalyzer (PL 7)
 
@@ -286,17 +280,9 @@ This makes the mass radar ideal for locating bases or facilities buried deep und
 
 ### Multiphase Radar (PL 8)
 
-the drive detection array provides a ship with the ability to
-
-detect events occurring across interstellar distances—specifically, the starfalls and starrises of ships traveling by means of a stardrive, drivewave generator, or jump drive. The drive detection array has a range of fifty light-years. It takes eleven hours for the “splash” of the ship entering or emerging from drivespace to propagate, so the drive detec-
-
 This radar system works much like the multiband radar of PL 7, but it’s even more powerful and sophisticated. Due to its track-with-scan capabilities, the multiphase radar has a tracking capability 50 percent higher than normal.
 
 ### Omniscience Sphere (PL 8)
-
-tion array doesn’t provide real-time information. However, it
-
-does indicate the class of ship traveling (small, light, medium, heavy, or super-heavy) and the number of ships traveling.
 
 Based on rare psi-technology, the omniscience sphere is a sensor device that automatically detects any and all objects
 
