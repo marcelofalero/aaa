@@ -88,24 +88,30 @@
 
 /* Wizard Steps Bar */
 .cb-wizard-nav {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
   gap: 0.5rem;
   padding-bottom: 0.75rem;
   margin-bottom: 2rem;
   border-bottom: 1px solid rgba(75, 181, 193, 0.35);
 }
 
+@media (max-width: 1024px) {
+  .cb-wizard-nav {
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  }
+}
+
 .cb-step-btn {
-  flex: 1 1 130px;
   min-width: 0;
+  width: 100%;
   background: rgba(14, 42, 69, 0.85);
   border: 1px solid rgba(75, 181, 193, 0.45);
   color: #e2e8f0;
-  padding: 0.65rem 0.75rem;
+  padding: 0.65rem 0.5rem;
   border-radius: 8px;
   font-family: 'Michroma', sans-serif;
-  font-size: 0.72rem;
+  font-size: 0.7rem;
   text-transform: uppercase;
   cursor: pointer;
   transition: all 0.25s ease;
@@ -113,6 +119,13 @@
   align-items: center;
   gap: 0.4rem;
   justify-content: center;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.cb-step-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
   white-space: nowrap;
 }
 
