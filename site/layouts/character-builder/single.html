@@ -226,23 +226,23 @@
   <!-- Navigation Action Bar -->
   <div class="cb-action-bar">
     <div>
-      <button class="cb-btn cb-btn-secondary" id="cb-btn-prev" disabled>
+      <button type="button" class="cb-btn cb-btn-secondary" id="cb-btn-prev" disabled>
         <span>←</span> <span>{{ if eq .Language.Lang "es" }}Anterior{{ else }}Previous{{ end }}</span>
       </button>
-      <button class="cb-btn cb-btn-secondary ml2" id="cb-btn-reset">
+      <button type="button" class="cb-btn cb-btn-secondary ml2" id="cb-btn-reset">
         <span>↺</span> <span>{{ if eq .Language.Lang "es" }}Reiniciar{{ else }}Reset{{ end }}</span>
       </button>
     </div>
 
     <div>
-      <button class="cb-btn cb-btn-secondary" id="cb-btn-export-json">
+      <button type="button" class="cb-btn cb-btn-secondary" id="cb-btn-export-json">
         <span>⬇</span> <span>{{ if eq .Language.Lang "es" }}Exportar JSON{{ else }}Export JSON{{ end }}</span>
       </button>
       <input type="file" id="cb-input-import-json" accept=".json" style="display: none;">
-      <button class="cb-btn cb-btn-secondary ml2" id="cb-btn-import-json">
+      <button type="button" class="cb-btn cb-btn-secondary ml2" id="cb-btn-import-json">
         <span>⬆</span> <span>{{ if eq .Language.Lang "es" }}Importar JSON{{ else }}Import JSON{{ end }}</span>
       </button>
-      <button class="cb-btn cb-btn-primary ml2" id="cb-btn-next">
+      <button type="button" class="cb-btn cb-btn-primary ml2" id="cb-btn-next">
         <span>{{ if eq .Language.Lang "es" }}Siguiente{{ else }}Next{{ end }}</span> <span>→</span>
       </button>
     </div>

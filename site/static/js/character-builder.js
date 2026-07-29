@@ -467,6 +467,13 @@ document.addEventListener('DOMContentLoaded', () => {
     if (step === 5) renderStep5();
     if (step === 6) renderStep6();
     if (step === 7) renderStep7();
+
+    const wizardNav = document.getElementById('cb-wizard-nav');
+    if (wizardNav) {
+      wizardNav.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    } else {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
   }
 
   // STEP 2: FACTION (STAR*DRIVE)
@@ -750,16 +757,6 @@ document.addEventListener('DOMContentLoaded', () => {
                   </span>
                 </div>
                 <div class="cb-rank-controls">
-                  ${[0, 1, 2, 3].map(r => `
-                    <button class="cb-btn-rank ${currentRanks === r ? 'active' : ''}" data-skill="${specSkill.skill}" data-rank="${r}" data-cost="${specSkill.cost}" data-cat="${category.skill}">
-                      ${r}
-                    </button>
-                  `).join('')}
-                </div>
-              </div>
-            `;
-          });
-        }
                   ${[0, 1, 2, 3].map(r => `
                     <button class="cb-btn-rank ${currentRanks === r ? 'active' : ''}" data-skill="${specSkill.skill}" data-rank="${r}" data-cost="${specSkill.cost}" data-cat="${category.skill}">
                       ${r}
