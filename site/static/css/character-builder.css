@@ -621,3 +621,48 @@ body.scifi-body .cb-card {
     color: #000 !important;
   }
 }
+
+/* Character Sheet Skill Table */
+.cb-sheet-skill-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+}
+
+.cb-sheet-skill-table th {
+  font-family: 'Michroma', sans-serif;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: var(--accent-cyan);
+  background: rgba(10, 30, 50, 0.8);
+  border-bottom: 2px solid var(--accent-cyan);
+  padding: 0.6rem 0.75rem;
+  text-align: left;
+}
+
+.cb-sheet-skill-table td {
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid rgba(75, 181, 193, 0.2);
+  color: #e2e8f0;
+}
+
+.cb-sheet-skill-table tr.broad-row {
+  background: rgba(10, 61, 84, 0.45);
+  font-weight: bold;
+}
+
+.cb-sheet-skill-table tr.broad-row td {
+  color: #ffffff;
+  border-top: 1px solid rgba(75, 181, 193, 0.4);
+}
+
+.cb-sheet-skill-table tr.spec-row td {
+  padding-left: 1.5rem;
+}
+
+.cb-target-scores {
+  font-family: monospace;
+  font-weight: bold;
+  color: #a6c12e;
+}

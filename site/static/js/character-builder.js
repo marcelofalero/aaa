@@ -691,6 +691,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
         let baseBroadCost = broadFavored ? Math.max(1, broadSkill.cost - 1) : broadSkill.cost;
         let actualBroadCost = Math.max(0, baseBroadCost - discount);
+        let broadAbilityVal = state.abilities[broadSkill.attribute] || 10;
+        let broadOrd = broadAbilityVal;
+        let broadGood = Math.floor(broadOrd / 2);
+        let broadAmaz = Math.floor(broadOrd / 4);
 
         html += `
           <div class="cb-skill-row broad ${broadFavored ? 'favored' : ''}">
@@ -700,8 +704,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 ${broadFavored ? `<span class="cb-badge-favored">${isEs ? 'FAVORECIDA' : 'FAVORED'}</span>` : ''}
               </span>
               <span class="cb-skill-meta">
-                <span>[${broadSkill.attribute}]</span>
-                <span>${isEs ? 'Base' : 'Cost'}: ${actualBroadCost} SP (AP: ${broadSkill.cost})</span>
+                <span>[${broadSkill.attribute}: ${broadAbilityVal}]</span>
+                <span>${isEs ? 'Objetivo' : 'Target'}: <strong>${broadOrd} / ${broadGood} / ${broadAmaz}</strong></span>
+                <span>${isEs ? 'Coste' : 'Cost'}: ${actualBroadCost} SP (AP: ${broadSkill.cost})</span>
               </span>
             </div>
             <div class="cb-rank-controls">
@@ -725,6 +730,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
             let baseSpecCost = specFavored ? Math.max(1, specSkill.cost - 1) : specSkill.cost;
             let actualSpecCost = Math.max(0, baseSpecCost - specDiscount);
+            let totalSpecScore = broadAbilityVal + currentRanks;
+            let specOrd = totalSpecScore;
+            let specGood = Math.floor(specOrd / 2);
+            let specAmaz = Math.floor(specOrd / 4);
 
             html += `
               <div class="cb-skill-row ${specFavored ? 'favored' : ''}" style="padding-left: 2.5rem;">
@@ -734,10 +743,23 @@ document.addEventListener('DOMContentLoaded', () => {
                     ${specFavored ? `<span class="cb-badge-favored">${isEs ? 'FAVORECIDA' : 'FAVORED'}</span>` : ''}
                   </span>
                   <span class="cb-skill-meta">
+                    <span>${isEs ? 'Rangos' : 'Ranks'}: +${currentRanks}</span>
+                    <span>${isEs ? 'Puntuación Total' : 'Total Score'}: <strong>${totalSpecScore}</strong></span>
+                    <span>${isEs ? 'Objetivo' : 'Target'}: <strong>${specOrd} / ${specGood} / ${specAmaz}</strong></span>
                     <span>${isEs ? 'Precio' : 'Cost'}: ${actualSpecCost} SP/rank (AP: ${specSkill.cost})</span>
                   </span>
                 </div>
                 <div class="cb-rank-controls">
+                  ${[0, 1, 2, 3].map(r => `
+                    <button class="cb-btn-rank ${currentRanks === r ? 'active' : ''}" data-skill="${specSkill.skill}" data-rank="${r}" data-cost="${specSkill.cost}" data-cat="${category.skill}">
+                      ${r}
+                    </button>
+                  `).join('')}
+                </div>
+              </div>
+            `;
+          });
+        }
                   ${[0, 1, 2, 3].map(r => `
                     <button class="cb-btn-rank ${currentRanks === r ? 'active' : ''}" data-skill="${specSkill.skill}" data-rank="${r}" data-cost="${specSkill.cost}" data-cat="${category.skill}">
                       ${r}
@@ -852,6 +874,71 @@ document.addEventListener('DOMContentLoaded', () => {
     const actionsPerRound = getActionsPerRound(state.abilities.CON + state.abilities.WIL);
     const mov = getMovementRates(state.abilities.STR + state.abilities.DEX);
 
+    // Build character sheet skill table
+    let skillRowsHtml = '';
+    const purchasedSkills = state.skills;
+    const broadList = [];
+
+    if (data.skillsTable && data.skillsTable.items) {
+      data.skillsTable.items.forEach(cat => {
+        cat.items.forEach(broad => {
+          const isBroadBought = purchasedSkills[broad.skill]?.ranks > 0;
+          const hasSpecBought = broad.items && broad.items.some(s => purchasedSkills[s.skill]?.ranks > 0);
+          if (isBroadBought || hasSpecBought) {
+            broadList.push(broad);
+          }
+        });
+      });
+    }
+
+    if (broadList.length === 0) {
+      skillRowsHtml = `<tr><td colspan="6" style="text-align:center; padding:1.5rem; color:#8099AC;">${isEs ? 'No se han seleccionado habilidades.' : 'No skills trained yet.'}</td></tr>`;
+    } else {
+      broadList.forEach(broad => {
+        const broadInfo = purchasedSkills[broad.skill];
+        const att = broad.attribute || 'INT';
+        const abilityScore = state.abilities[att] || 10;
+        const broadOrd = abilityScore;
+        const broadGood = Math.floor(broadOrd / 2);
+        const broadAmaz = Math.floor(broadOrd / 4);
+
+        skillRowsHtml += `
+          <tr class="broad-row">
+            <td><strong>${broad.skill}</strong></td>
+            <td class="tc"><strong>${att}</strong></td>
+            <td class="tc"><strong>${abilityScore}</strong></td>
+            <td class="tc">${broadInfo ? 'Broad' : '-'}</td>
+            <td class="tc"><strong>${broadOrd}</strong></td>
+            <td class="tc cb-target-scores">${broadOrd} / ${broadGood} / ${broadAmaz}</td>
+          </tr>
+        `;
+
+        if (broad.items) {
+          broad.items.forEach(spec => {
+            if (purchasedSkills[spec.skill] && !purchasedSkills[spec.skill].isBroad) {
+              const specInfo = purchasedSkills[spec.skill];
+              const ranks = specInfo.ranks || 0;
+              const totalScore = abilityScore + ranks;
+              const ord = totalScore;
+              const good = Math.floor(ord / 2);
+              const amaz = Math.floor(ord / 4);
+
+              skillRowsHtml += `
+                <tr class="spec-row">
+                  <td>› ${spec.skill}</td>
+                  <td class="tc">${att}</td>
+                  <td class="tc">${abilityScore}</td>
+                  <td class="tc">+${ranks}</td>
+                  <td class="tc"><strong>${totalScore}</strong></td>
+                  <td class="tc cb-target-scores">${ord} / ${good} / ${amaz}</td>
+                </tr>
+              `;
+            }
+          });
+        }
+      });
+    }
+
     container.innerHTML = `
       <div class="cb-sheet">
         <div class="cb-sheet-header">
@@ -886,7 +973,7 @@ document.addEventListener('DOMContentLoaded', () => {
           <div class="cb-sheet-section">
             <h3 class="cb-sheet-sec-title">${isEs ? 'Estadísticas Secundarias' : 'Secondary Stats'}</h3>
             <div class="cb-track-box">
-              <span>${isEs ? 'Puntuación de Acción' : 'Action Check Score'}</span>
+              <span>${isEs ? 'Chequeo de Acción' : 'Action Check Score'}</span>
               <span class="cb-track-val">${actionCheck}</span>
             </div>
             <div class="cb-track-box">
@@ -916,15 +1003,25 @@ document.addEventListener('DOMContentLoaded', () => {
           </div>
         </div>
 
-        <!-- Trained Skills List -->
+        <!-- Trained Skills Table (Character Sheet Structure) -->
         <div class="cb-sheet-section mb4">
           <h3 class="cb-sheet-sec-title">${isEs ? 'Habilidades Entrenadas' : 'Trained Skills'}</h3>
-          <div class="flex flex-wrap gap2">
-            ${Object.entries(state.skills).map(([name, item]) => `
-              <div class="cb-res-tag">
-                <strong>${name}:</strong> ${item.isBroad ? 'Broad' : `Rnk ${item.ranks}`}
-              </div>
-            `).join('')}
+          <div style="overflow-x: auto;">
+            <table class="cb-sheet-skill-table">
+              <thead>
+                <tr>
+                  <th>${isEs ? 'Habilidad' : 'Skill Name'}</th>
+                  <th class="tc">${isEs ? 'Atrib.' : 'Att'}</th>
+                  <th class="tc">${isEs ? 'Base' : 'Base'}</th>
+                  <th class="tc">${isEs ? 'Rangos' : 'Ranks'}</th>
+                  <th class="tc">${isEs ? 'Puntuación Total' : 'Total Score'}</th>
+                  <th class="tc">${isEs ? 'Objetivo (Ord / Bu / As)' : 'Target (Ord / Good / Amaz)'}</th>
+                </tr>
+              </thead>
+              <tbody>
+                ${skillRowsHtml}
+              </tbody>
+            </table>
           </div>
         </div>
 
