@@ -89,27 +89,27 @@ Ability scores provide a "resistance modifier" that modifies the difficulty for 
 
 </div>
 
-## 6. Purchase Skills
+## 6. Select Perks & Flaws
 
-Each character starts the game with **70** skill points to spend on skills at character creation. You can purchase additional **Broad Skills** (base abilities) and **Specialty Skills** (specific training), subject to the following limitations at character creation:
+(Optional) You may choose up to three perks (advantages) by spending skill points, and up to three flaws (disadvantages) to gain extra skill points. Free perks earned by your species or background do not count towards this limit. Perks and flaws are selected before purchasing skills so that your available skill point budget is updated accordingly.
 
-* You may purchase a maximum of 5 Non-Pionic Broad Skills.
-* You may purchase a maximum of 3 Pionic Broad Skills if you are playing a Mindwalker. *(For other sources of psionic powers refer to the specific rule.)*
+## 7. Purchase Skills
+
+Each character starts the game with **70** base skill points to spend on skills at character creation (adjusted by your selected perks and flaws). You can purchase **Broad Skills** (base abilities) and **Specialty Skills** (specific training), subject to the following limitations at character creation:
+
+* You may purchase a maximum of 5 Non-Psionic Broad Skills.
+* You may purchase a maximum of 3 Psionic Broad Skills if you are playing a Mindwalker. *(For other sources of psionic powers refer to the specific rule.)*
 * You may purchase a maximum of **3 ranks** in any single Specialty Skill, at a flat cost listed in the ***[Skills section](/skills)***.
 
 _(Note: For skill rank limits and scaling costs beyond character creation, see the **[Character Advancement section](/core-mechanics/character-advancement)**.)_
 
-### Standard Price vs. Purchase Cost
+### Starting Skill Points vs. Advancement Points (AP)
 
-In AAA, your progression is tracked via **Advancement Points (AP)**, representing the total investment in your training. This ensures that your Character Rank accurately reflects your character's power, regardless of how efficiently you acquired your training.
+In AAA, starting skill points spent during character creation do **not** count toward your total **Advancement Points (AP)**. A newly created character begins at **0 AP** (Rookie rank).
 
-- **Standard Price:** The base value of the skill. This value is always added to your Total AP.
-- **Purchase Cost:** If a skill is **Favored** (by your Background or Profession), you pay **1 point less** than the Standard Price.
-- **Example:** A skill with a Standard Price of 5 that is Favored costs you **4 points per rank**. If you buy 3 ranks, you spend 12 points, but add **15 AP** to your total.
-
-## 7. Select Perks & Flaws
-
-(Optional) You may choose up to three perks (advantages) by spending skill points, and up to three flaws (disadvantages) to gain extra skill points. Free perks earned by your species or background do not count towards this limit.
+- **Character Creation:** Starting skill points (70 base + Flaws - Perks) establish your initial character background and training at 0 AP.
+- **Campaign Advancement:** XP/AP awarded by the GM after character creation is spent on further skill ranks, broad skills, and ability score increases. Standard prices spent during campaign advancement increment your total AP, increasing your character title and rank.
+- **Purchase Cost:** If a skill is **Favored** (by your Background or Profession), you pay **1 point less** per rank than the Standard Price.
 
 ## 8. Choose Attributes
 

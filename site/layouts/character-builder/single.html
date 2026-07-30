@@ -1,0 +1,337 @@
+{{ define "main" }}
+<div class="main-container cb-container">
+  {{ partial "breadcrumbs.html" . }}
+
+  <!-- Builder 3-Column Layout with 2 Sidebars -->
+  <div class="cb-builder-layout">
+
+    <!-- LEFT SIDEBAR: Wizard Navigation Steps -->
+    <aside class="cb-sidebar cb-nav-sidebar" id="cb-nav-sidebar">
+      <div class="cb-wizard-nav" id="cb-wizard-nav">
+        <h3 class="cb-sidebar-title">{{ if eq .Language.Lang "es" }}Navegación / Pasos{{ else }}Navigation / Steps{{ end }}</h3>
+        <button type="button" class="cb-step-btn active" data-step="1">
+          <span class="cb-step-num">1</span>
+          <span class="cb-step-text">{{ if eq .Language.Lang "es" }}Bio y Concepto{{ else }}Concept & Bio{{ end }}</span>
+        </button>
+        <button type="button" class="cb-step-btn" data-step="2">
+          <span class="cb-step-num">2</span>
+          <span class="cb-step-text">{{ if eq .Language.Lang "es" }}Facción{{ else }}Faction{{ end }}</span>
+        </button>
+        <button type="button" class="cb-step-btn" data-step="3">
+          <span class="cb-step-num">3</span>
+          <span class="cb-step-text">{{ if eq .Language.Lang "es" }}Especie y Profesión{{ else }}Species & Profession{{ end }}</span>
+        </button>
+        <button type="button" class="cb-step-btn" data-step="4">
+          <span class="cb-step-num">4</span>
+          <span class="cb-step-text">{{ if eq .Language.Lang "es" }}Características{{ else }}Ability Scores{{ end }}</span>
+        </button>
+        <button type="button" class="cb-step-btn" data-step="5">
+          <span class="cb-step-num">5</span>
+          <span class="cb-step-text">{{ if eq .Language.Lang "es" }}Ventajas y Defectos{{ else }}Perks & Flaws{{ end }}</span>
+        </button>
+        <button type="button" class="cb-step-btn" data-step="6">
+          <span class="cb-step-num">6</span>
+          <span class="cb-step-text">{{ if eq .Language.Lang "es" }}Habilidades{{ else }}Skills{{ end }}</span>
+        </button>
+        <button type="button" class="cb-step-btn" data-step="7">
+          <span class="cb-step-num">7</span>
+          <span class="cb-step-text">{{ if eq .Language.Lang "es" }}Hoja y Exportación{{ else }}Sheet & Export{{ end }}</span>
+        </button>
+      </div>
+    </aside>
+
+    <!-- CENTER MAIN AREA: Builder Step Content Views -->
+    <main class="cb-main-area">
+      <div id="cb-steps-wrapper">
+    
+    <!-- STEP 1: CONCEPT & BIO -->
+    <div class="cb-step-content" id="cb-step-1">
+      <h2 class="neon-cyan">{{ if eq .Language.Lang "es" }}1. Concepto del Personaje y Detalles{{ else }}1. Character Concept & Details{{ end }}</h2>
+      <p class="silver">{{ if eq .Language.Lang "es" }}Define la identidad básica de tu personaje, sus motivaciones y rasgos distintivos.{{ else }}Define your character's base identity, motivations, and defining traits.{{ end }}</p>
+
+      <div class="sci-fi-card mb4">
+        <div class="cb-form-group">
+          <label class="cb-form-label" for="cb-input-name">{{ if eq .Language.Lang "es" }}Nombre del Personaje{{ else }}Character Name{{ end }}</label>
+          <input type="text" id="cb-input-name" class="cb-input" placeholder="{{ if eq .Language.Lang "es" }}Ej. Jax Vane{{ else }}e.g. Jax Vane{{ end }}">
+        </div>
+
+        <div class="cb-form-group">
+          <label class="cb-form-label" for="cb-input-player">{{ if eq .Language.Lang "es" }}Nombre del Jugador{{ else }}Player Name{{ end }}</label>
+          <input type="text" id="cb-input-player" class="cb-input" placeholder="{{ if eq .Language.Lang "es" }}Tu nombre{{ else }}Your name{{ end }}">
+        </div>
+
+        <div class="cb-form-group">
+          <label class="cb-form-label" for="cb-input-concept">{{ if eq .Language.Lang "es" }}Concepto del Personaje{{ else }}Character Concept{{ end }}</label>
+          <input type="text" id="cb-input-concept" class="cb-input" placeholder="{{ if eq .Language.Lang "es" }}Ej. Piloto y contrabandista sarcástico{{ else }}e.g. Sarcastic smuggler pilot{{ end }}">
+        </div>
+
+        <div class="cb-form-group">
+          <label class="cb-form-label" for="cb-input-motivation">{{ if eq .Language.Lang "es" }}Motivación{{ else }}Motivation{{ end }}</label>
+          <input type="text" id="cb-input-motivation" class="cb-input" placeholder="{{ if eq .Language.Lang "es" }}Ej. Libertad a cualquier precio{{ else }}e.g. Freedom at all costs{{ end }}">
+        </div>
+
+        <div class="cb-form-group">
+          <label class="cb-form-label" for="cb-input-attitude">{{ if eq .Language.Lang "es" }}Actitud Moral{{ else }}Moral Attitude{{ end }}</label>
+          <input type="text" id="cb-input-attitude" class="cb-input" placeholder="{{ if eq .Language.Lang "es" }}Ej. Indiferente / Pragmático{{ else }}e.g. Pragmatic / Neutral{{ end }}">
+        </div>
+
+        <div class="cb-form-group">
+          <label class="cb-form-label" for="cb-input-traits">{{ if eq .Language.Lang "es" }}Rasgos de Personalidad{{ else }}Character Traits{{ end }}</label>
+          <textarea id="cb-input-traits" class="cb-input" rows="3" placeholder="{{ if eq .Language.Lang "es" }}Ej. Cauteloso con desconocidos, siempre limpia su arma{{ else }}e.g. Cautious with strangers, obsessive about gear upkeep{{ end }}"></textarea>
+        </div>
+      </div>
+    </div>
+
+    <!-- STEP 2: FACTION (STAR*DRIVE) -->
+    <div class="cb-step-content" id="cb-step-2" style="display: none;">
+      <h2 class="neon-cyan">{{ if eq .Language.Lang "es" }}2. Selección de Facción (Star*Drive){{ else }}2. Star*Drive Faction Selection{{ end }}</h2>
+      <p class="silver mb4">
+        {{ if eq .Language.Lang "es" }}
+        Selecciona la nación o facción de la que proviene tu personaje en la galaxia de Star*Drive. Cada facción otorga ventajas y modificadores especiales.
+        {{ else }}
+        Select your character's home nation or faction in the Star*Drive galaxy. Each faction grants unique thematic bonuses and abilities.
+        {{ end }}
+      </p>
+
+      <div class="cb-selection-grid" id="cb-faction-grid"></div>
+    </div>
+
+    <!-- STEP 3: SPECIES, BACKGROUND & PROFESSION -->
+    <div class="cb-step-content" id="cb-step-3" style="display: none;">
+      <h2 class="neon-cyan">{{ if eq .Language.Lang "es" }}3. Selección de Especie, Trasfondo y Profesión{{ else }}3. Species, Background & Profession{{ end }}</h2>
+      
+      <!-- Species Selection -->
+      <h3 class="neon-cyan mt4 mb3">{{ if eq .Language.Lang "es" }}Especie{{ else }}Species{{ end }}</h3>
+      <div class="cb-selection-grid" id="cb-species-grid"></div>
+
+      <!-- Background Selection -->
+      <h3 class="neon-cyan mt4 mb3">{{ if eq .Language.Lang "es" }}Trasfondo (Background){{ else }}Background{{ end }}</h3>
+      <div class="cb-selection-grid" id="cb-background-grid"></div>
+
+      <!-- Profession Selection -->
+      <h3 class="neon-cyan mt4 mb3">{{ if eq .Language.Lang "es" }}Profesión{{ else }}Profession{{ end }}</h3>
+      <div class="cb-selection-grid" id="cb-profession-grid"></div>
+    </div>
+
+    <!-- STEP 4: ABILITY SCORES -->
+    <div class="cb-step-content" id="cb-step-4" style="display: none;">
+      <h2 class="neon-cyan">{{ if eq .Language.Lang "es" }}4. Asignación de Puntos de Característica{{ else }}4. Assign Ability Scores{{ end }}</h2>
+      <p class="silver mb4">
+        {{ if eq .Language.Lang "es" }}
+        Tienes un total de <strong>60 puntos</strong> para distribuir entre las 6 características (FUE, DES, CON, INT, VOL, PER).
+        Las puntuaciones deben cumplir con los límites de tu Especie y los requisitos mínimos de tu Profesión.
+        {{ else }}
+        You have <strong>60 total points</strong> to divide among six Abilities (STR, DEX, CON, INT, WIL, PER).
+        Scores must meet your Profession minimums and Species limits at 1 point per score.
+        {{ end }}
+      </p>
+
+      <!-- Total Allocated Sum Counter Header -->
+      <div class="sci-fi-card mb4" style="background: rgba(10, 61, 84, 0.4); border: 2px solid var(--accent-cyan);">
+        <div class="flex items-center justify-between flex-wrap gap2">
+          <span class="f4 athelas neon-cyan" style="margin: 0;">{{ if eq .Language.Lang "es" }}SUMA TOTAL DE CARACTERÍSTICAS:{{ else }}TOTAL ALLOCATED ABILITY POINTS:{{ end }}</span>
+          <span class="cb-score-display f2" id="cb-ability-total-sum" style="color: #a6c12e;">60 / 60</span>
+        </div>
+      </div>
+
+      <div class="cb-ability-grid" id="cb-ability-grid"></div>
+
+      <!-- Derived Resistance Modifiers & Derived Stats Summary -->
+      <div class="sci-fi-card mt4">
+        <h3 class="neon-cyan mv0 mb3">{{ if eq .Language.Lang "es" }}Estadísticas Derivadas y Modificadores de Resistencia{{ else }}Calculated Derived Stats & Resistance Modifiers{{ end }}</h3>
+        <div class="cb-res-summary-grid mb4" id="cb-res-summary"></div>
+        <div class="cb-sheet-grid mt3" id="cb-derived-summary"></div>
+      </div>
+    </div>
+
+    <!-- STEP 5: PERKS & FLAWS -->
+    <div class="cb-step-content" id="cb-step-5" style="display: none;">
+      <h2 class="neon-cyan">{{ if eq .Language.Lang "es" }}5. Defectos y Ventajas (Flaws & Perks){{ else }}5. Select Flaws & Perks{{ end }}</h2>
+      <p class="silver mb4">
+        {{ if eq .Language.Lang "es" }}
+        Puedes elegir hasta 3 Defectos (para ganar Puntos de Habilidad extra) y hasta 3 Ventajas (gastando Puntos de Habilidad). Selecciona el Nivel correspondiente en las opciones de múltiples grados.
+        {{ else }}
+        Select up to 3 voluntary Flaws (granting extra Skill Points) and up to 3 Perks (costing Skill Points). Select the specific Level/Degree for multi-tier options.
+        {{ end }}
+      </p>
+
+      <div class="cb-perks-flaws-stacked" style="display: flex; flex-direction: column; gap: 2rem;">
+        <!-- Top Section: Flaws -->
+        <div class="sci-fi-card">
+          <h3 class="neon-cyan mv0 mb3">{{ if eq .Language.Lang "es" }}Defectos (Flaws){{ else }}Flaws{{ end }}</h3>
+          <div id="cb-flaws-list"></div>
+        </div>
+
+        <!-- Bottom Section: Perks -->
+        <div class="sci-fi-card">
+          <h3 class="neon-cyan mv0 mb3">{{ if eq .Language.Lang "es" }}Ventajas (Perks){{ else }}Perks{{ end }}</h3>
+          <div id="cb-perks-list"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- STEP 6: SKILLS -->
+    <div class="cb-step-content" id="cb-step-6" style="display: none;">
+      <h2 class="neon-cyan">{{ if eq .Language.Lang "es" }}6. Compra de Habilidades{{ else }}6. Purchase Skills{{ end }}</h2>
+      <p class="silver mb3">
+        {{ if eq .Language.Lang "es" }}
+        Empiezas con <strong>70 Puntos de Habilidad</strong> (ajustados por tus Ventajas y Defectos). Compra Habilidades Generales (Base) y Especialidades (hasta rango 3 en creación).
+        Las habilidades <strong>Favorecidas</strong> (por tu Trasfondo o Profesión) cuestan <strong>1 punto menos por rango</strong> de su precio estándar.
+        {{ else }}
+        You start with <strong>70 Skill Points</strong> (adjusted by your Perks & Flaws) to spend on Broad and Specialty Skills (up to 3 ranks).
+        <strong>Favored Skills</strong> (by Background or Profession) cost <strong>1 point less per rank</strong> than their Standard Price.
+        {{ end }}
+      </p>
+
+      <div class="cb-skill-filters">
+        <input type="text" id="cb-skill-search" class="table-filter-input" placeholder="{{ if eq .Language.Lang "es" }}Buscar habilidad...{{ else }}Search skills...{{ end }}">
+        <select id="cb-skill-category-filter" class="cb-input" style="width: auto;">
+          <option value="ALL">{{ if eq .Language.Lang "es" }}Todas las Categorías{{ else }}All Categories{{ end }}</option>
+          <option value="Combat">Combat</option>
+          <option value="Psionics">Psionics</option>
+          <option value="Social">Social</option>
+          <option value="Technical">Technical</option>
+          <option value="Academic">Academic</option>
+          <option value="Other">Other</option>
+        </select>
+        <label class="silver flex items-center gap2 ml-auto">
+          <input type="checkbox" id="cb-skill-favored-only"> {{ if eq .Language.Lang "es" }}Solo Favorecidas{{ else }}Only Favored{{ end }}
+        </label>
+      </div>
+
+      <div class="cb-skill-table-container">
+        <div id="cb-skills-list"></div>
+      </div>
+    </div>
+
+    <!-- STEP 7: SHEET & EXPORT -->
+    <div class="cb-step-content" id="cb-step-7" style="display: none;">
+      <div id="cb-character-sheet-container"></div>
+    </div>
+
+    </div>
+
+      <!-- Navigation Action Bar -->
+      <div class="cb-action-bar">
+        <div>
+          <button type="button" class="cb-btn cb-btn-secondary" id="cb-btn-prev" disabled>
+            <span>←</span> <span>{{ if eq .Language.Lang "es" }}Anterior{{ else }}Previous{{ end }}</span>
+          </button>
+          <button type="button" class="cb-btn cb-btn-secondary ml2" id="cb-btn-reset">
+            <span>↺</span> <span>{{ if eq .Language.Lang "es" }}Reiniciar{{ else }}Reset{{ end }}</span>
+          </button>
+        </div>
+
+        <div>
+          <button type="button" class="cb-btn cb-btn-secondary" id="cb-btn-export-json">
+            <span>⬇</span> <span>{{ if eq .Language.Lang "es" }}Exportar JSON{{ else }}Export JSON{{ end }}</span>
+          </button>
+          <input type="file" id="cb-input-import-json" accept=".json" style="display: none;">
+          <button type="button" class="cb-btn cb-btn-secondary ml2" id="cb-btn-import-json">
+            <span>⬆</span> <span>{{ if eq .Language.Lang "es" }}Importar JSON{{ else }}Import JSON{{ end }}</span>
+          </button>
+          <button type="button" class="cb-btn cb-btn-primary ml2" id="cb-btn-next">
+            <span>{{ if eq .Language.Lang "es" }}Siguiente{{ else }}Next{{ end }}</span> <span>→</span>
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <!-- RIGHT SIDEBAR: Choices Tracker & Budget Summary -->
+    <aside class="cb-sidebar cb-summary-sidebar" id="cb-summary-sidebar">
+      
+      <!-- Choices Summary Box -->
+      <div class="cb-sidebar-section">
+        <h3 class="cb-sidebar-title">{{ if eq .Language.Lang "es" }}Elecciones Realizadas{{ else }}Tracked Choices{{ end }}</h3>
+        
+        <div class="cb-tracker-box">
+          <span class="cb-tracker-label">{{ if eq .Language.Lang "es" }}Nombre{{ else }}Name{{ end }}</span>
+          <span class="cb-tracker-val" id="cb-tracker-name">—</span>
+        </div>
+
+        <div class="cb-tracker-box">
+          <span class="cb-tracker-label">{{ if eq .Language.Lang "es" }}Facción{{ else }}Faction{{ end }}</span>
+          <span class="cb-tracker-val" id="cb-tracker-faction">—</span>
+        </div>
+
+        <div class="cb-tracker-box">
+          <span class="cb-tracker-label">{{ if eq .Language.Lang "es" }}Especie{{ else }}Species{{ end }}</span>
+          <span class="cb-tracker-val" id="cb-tracker-species">—</span>
+        </div>
+
+        <div class="cb-tracker-box">
+          <span class="cb-tracker-label">{{ if eq .Language.Lang "es" }}Trasfondo{{ else }}Background{{ end }}</span>
+          <span class="cb-tracker-val" id="cb-tracker-bg">—</span>
+        </div>
+
+        <div class="cb-tracker-box">
+          <span class="cb-tracker-label">{{ if eq .Language.Lang "es" }}Profesión{{ else }}Profession{{ end }}</span>
+          <span class="cb-tracker-val" id="cb-tracker-prof">—</span>
+        </div>
+      </div>
+
+      <!-- Budget & Advancement Summary Box -->
+      <div class="cb-sidebar-section mt3" id="cb-budget-bar">
+        <h3 class="cb-sidebar-title" id="cb-budget-sidebar-title">{{ if eq .Language.Lang "es" }}Resumen de Puntos{{ else }}Point Summary{{ end }}</h3>
+        
+        <!-- Creation Mode Budget Wrap -->
+        <div id="cb-creation-budget-wrap" style="display: flex; flex-direction: column; gap: 0.45rem;">
+          <div class="cb-budget-item">
+            <span class="cb-budget-label">{{ if eq .Language.Lang "es" }}Puntos Característica{{ else }}Ability Score Points{{ end }}</span>
+            <span class="cb-budget-val" id="cb-val-ability-pts">60 / 60</span>
+          </div>
+          
+          <div class="cb-budget-item">
+            <span class="cb-budget-label">{{ if eq .Language.Lang "es" }}Puntos Habilidad{{ else }}Skill Points Remaining{{ end }}</span>
+            <span class="cb-budget-val" id="cb-val-skill-pts">70 / 70</span>
+          </div>
+        </div>
+
+        <!-- Campaign Mode XP / Advancement Wrap -->
+        <div id="cb-campaign-budget-wrap" style="display: none; flex-direction: column; gap: 0.45rem;">
+          <div class="cb-budget-item" style="border-color: #a6c12e; background: rgba(20, 50, 20, 0.4);">
+            <span class="cb-budget-label" style="color: #a6c12e;">{{ if eq .Language.Lang "es" }}Puntos Avance / XP Ganados{{ else }}Earned Advancement / XP{{ end }}</span>
+            <div style="display: flex; gap: 0.3rem; align-items: center; width: 100%; margin-top: 0.25rem;">
+              <input type="number" id="cb-sidebar-input-earned-ap" class="cb-input" min="0" value="0" style="padding: 0.25rem 0.4rem; font-size: 0.9rem; font-weight: bold; width: 60px; text-align: center;">
+              <div style="display: flex; gap: 0.2rem; flex: 1;">
+                <button type="button" class="cb-btn cb-btn-secondary" id="cb-sidebar-btn-add-1ap" style="padding: 0.25rem 0.35rem; font-size: 0.6rem;">+1</button>
+                <button type="button" class="cb-btn cb-btn-secondary" id="cb-sidebar-btn-add-5ap" style="padding: 0.25rem 0.35rem; font-size: 0.6rem;">+5</button>
+                <button type="button" class="cb-btn cb-btn-secondary" id="cb-sidebar-btn-add-10ap" style="padding: 0.25rem 0.35rem; font-size: 0.6rem;">+10</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="cb-budget-item">
+            <span class="cb-budget-label">{{ if eq .Language.Lang "es" }}XP Disponibles / Gastados{{ else }}XP Available / Spent{{ end }}</span>
+            <span class="cb-budget-val" id="cb-val-sidebar-ap-summary" style="font-size: 0.88rem; color: #e0f2fe;">0 Disp. / 0 Gastados</span>
+          </div>
+
+          <div class="cb-budget-item">
+            <span class="cb-budget-label">{{ if eq .Language.Lang "es" }}Título & Límite Rango{{ else }}Rank Title & Max Rank{{ end }}</span>
+            <span class="cb-budget-val" id="cb-val-sidebar-rank-title" style="font-size: 0.82rem; color: #a6c12e;">Novato (Máx: 5)</span>
+          </div>
+        </div>
+
+        <div class="cb-budget-status-wrap">
+          <span class="cb-status-badge badge-success" id="cb-status-badge">
+            <span>✓</span> <span id="cb-status-text">{{ if eq .Language.Lang "es" }}VÁLIDO{{ else }}VALID{{ end }}</span>
+          </span>
+        </div>
+      </div>
+
+    </aside>
+
+  </div>
+
+<!-- Embed Site Data into Global Window JS Object -->
+<script>
+  window.AAA_CHARACTER_DATA = {
+    lang: "{{ .Language.Lang }}",
+    skillsTable: {{ index site.Data (printf "skills-table%s" (cond (eq .Language.Lang "es") ".es" "")) | jsonify | safeJS }},
+    backgrounds: {{ index site.Data (printf "backgrounds%s" (cond (eq .Language.Lang "es") ".es" "")) | jsonify | safeJS }},
+    perksFlaws: {{ index site.Data (printf "perks_and_flaws%s" (cond (eq .Language.Lang "es") ".es" "")) | jsonify | safeJS }},
+    psionics: {{ index site.Data (printf "psionics%s" (cond (eq .Language.Lang "es") ".es" "")) | jsonify | safeJS }}
+  };
+</script>
+<script src="{{ urls.RelURL "js/character-builder.js" }}"></script>
+{{ end }}
