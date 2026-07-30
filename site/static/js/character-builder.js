@@ -297,6 +297,58 @@ document.addEventListener('DOMContentLoaded', () => {
     return skills;
   }
 
+  function getBackgroundFavoredPerks(bg) {
+    if (!bg) return [];
+    const str = bg.favored_perks || '';
+    const perks = [];
+    const matches = str.match(/\[(.*?)\]/g);
+    if (matches) {
+      matches.forEach(m => {
+        const clean = m.replace(/^\[/, '').replace(/\]$/, '').trim();
+        if (clean && !perks.includes(clean)) perks.push(clean);
+      });
+    }
+    if (perks.length === 0 && str.trim()) {
+      perks.push(str.replace(/\*/g, '').trim());
+    }
+    return perks;
+  }
+
+  function getBackgroundFlaw(bg) {
+    if (!bg || !bg.flaw) return null;
+    const str = bg.flaw;
+    const match = str.match(/\[(.*?)\]/);
+    if (match && match[1]) {
+      return match[1].trim();
+    }
+    const clean = str.split('(')[0].replace(/\*/g, '').trim();
+    return clean || null;
+  }
+
+  function getPerksList() {
+    if (!data.perksFlaws) return [];
+    const p = data.perksFlaws.perks;
+    if (!p) return [];
+    if (Array.isArray(p)) return p;
+    if (p.items && p.items[0] && Array.isArray(p.items[0].items)) {
+      return p.items[0].items;
+    }
+    if (Array.isArray(p.items)) return p.items;
+    return [];
+  }
+
+  function getFlawsList() {
+    if (!data.perksFlaws) return [];
+    const f = data.perksFlaws.flaws;
+    if (!f) return [];
+    if (Array.isArray(f)) return f;
+    if (f.items && f.items[0] && Array.isArray(f.items[0].items)) {
+      return f.items[0].items;
+    }
+    if (Array.isArray(f.items)) return f.items;
+    return [];
+  }
+
   function getResMod(score) {
     if (score <= 4) return -2;
     if (score <= 6) return -1;
@@ -932,13 +984,35 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (!data.perksFlaws) return;
 
-    if (perksContainer && data.perksFlaws.perks) {
-      perksContainer.innerHTML = data.perksFlaws.perks.map(p => {
+    const bgItems = getBackgroundItems();
+    const currentBg = bgItems.find(b => b.name === state.background || b.id === state.background);
+    const bgFlaw = getBackgroundFlaw(currentBg);
+    const bgFavoredPerks = getBackgroundFavoredPerks(currentBg);
+
+    const perksList = getPerksList();
+    const flawsList = getFlawsList();
+
+    // Ensure background flaw is included in state.flaws if present
+    if (bgFlaw && !state.flaws.some(f => f.toLowerCase().includes(bgFlaw.toLowerCase()) || bgFlaw.toLowerCase().includes(f.toLowerCase()))) {
+      state.flaws.push(bgFlaw);
+      saveStateToLocalStorage();
+    }
+
+    if (perksContainer) {
+      perksContainer.innerHTML = perksList.map(p => {
         const selected = state.perks.includes(p.name);
+        const isBgFavored = bgFavoredPerks.some(fp => p.name.toLowerCase().includes(fp.toLowerCase()) || fp.toLowerCase().includes(p.name.toLowerCase()));
+        
         return `
           <div class="cb-card ${selected ? 'selected' : ''}" style="margin-bottom: 0.75rem;" data-perk="${p.name}">
-            <h4 class="cb-card-title" style="font-size: 0.95rem;">${p.name}</h4>
-            <p class="cb-card-desc" style="font-size: 0.8rem;">${p.description || ''}</p>
+            <div class="cb-card-header" style="display: flex; justify-content: space-between; align-items: center;">
+              <h4 class="cb-card-title" style="font-size: 0.95rem; margin: 0;">${p.name}</h4>
+              <div style="display: flex; gap: 0.3rem; align-items: center;">
+                ${isBgFavored ? `<span class="cb-badge-favored">${isEs ? 'FAVORECIDA (TRASFONDO)' : 'FAVORED (BG)'}</span>` : ''}
+                <span class="cb-badge-free" style="background: rgba(56, 158, 189, 0.2); color: var(--accent-cyan); border-color: var(--accent-cyan);">${isEs ? 'Coste' : 'Cost'}: ${p.cost || '3'} SP</span>
+              </div>
+            </div>
+            <p class="cb-card-desc" style="font-size: 0.8rem; margin-top: 0.4rem;">${p.description || ''}</p>
           </div>
         `;
       }).join('');
@@ -957,13 +1031,21 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }
 
-    if (flawsContainer && data.perksFlaws.flaws) {
-      flawsContainer.innerHTML = data.perksFlaws.flaws.map(f => {
-        const selected = state.flaws.includes(f.name);
+    if (flawsContainer) {
+      flawsContainer.innerHTML = flawsList.map(f => {
+        const isBgFlaw = bgFlaw && (f.name.toLowerCase().includes(bgFlaw.toLowerCase()) || bgFlaw.toLowerCase().includes(f.name.toLowerCase()));
+        const selected = state.flaws.includes(f.name) || isBgFlaw;
+        
         return `
-          <div class="cb-card ${selected ? 'selected' : ''}" style="margin-bottom: 0.75rem;" data-flaw="${f.name}">
-            <h4 class="cb-card-title" style="font-size: 0.95rem;">${f.name}</h4>
-            <p class="cb-card-desc" style="font-size: 0.8rem;">${f.description || ''}</p>
+          <div class="cb-card ${selected ? 'selected' : ''} ${isBgFlaw ? 'cb-card-locked' : ''}" style="margin-bottom: 0.75rem; ${isBgFlaw ? 'border-color: #ffa500; background: rgba(255, 165, 0, 0.12);' : ''}" data-flaw="${f.name}" data-is-bg="${isBgFlaw}">
+            <div class="cb-card-header" style="display: flex; justify-content: space-between; align-items: center;">
+              <h4 class="cb-card-title" style="font-size: 0.95rem; margin: 0;">${f.name}</h4>
+              <div style="display: flex; gap: 0.3rem; align-items: center;">
+                ${isBgFlaw ? `<span class="cb-badge-free" style="background: rgba(255, 165, 0, 0.25); color: #ffa500; border-color: #ffa500;">🔒 ${isEs ? 'TRASFONDO (BLOQUEADO)' : 'BACKGROUND (LOCKED)'}</span>` : ''}
+                <span class="cb-badge-free" style="background: rgba(166, 193, 46, 0.2); color: #a6c12e; border-color: #a6c12e;">+${f.bonus_points || '3'} SP</span>
+              </div>
+            </div>
+            <p class="cb-card-desc" style="font-size: 0.8rem; margin-top: 0.4rem;">${f.description || ''}</p>
           </div>
         `;
       }).join('');
@@ -971,10 +1053,17 @@ document.addEventListener('DOMContentLoaded', () => {
       flawsContainer.querySelectorAll('.cb-card').forEach(card => {
         card.addEventListener('click', () => {
           const flaw = card.dataset.flaw;
+          const isBg = card.dataset.isBg === 'true';
+          if (isBg) {
+            return;
+          }
           if (state.flaws.includes(flaw)) {
             state.flaws = state.flaws.filter(x => x !== flaw);
-          } else if (state.flaws.length < 3) {
-            state.flaws.push(flaw);
+          } else {
+            const userFlaws = state.flaws.filter(x => !bgFlaw || (!x.toLowerCase().includes(bgFlaw.toLowerCase()) && !bgFlaw.toLowerCase().includes(x.toLowerCase())));
+            if (userFlaws.length < 3) {
+              state.flaws.push(flaw);
+            }
           }
           renderStep6();
           recalculateBudgets();
