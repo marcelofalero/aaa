@@ -418,6 +418,18 @@ document.addEventListener('DOMContentLoaded', () => {
     return spec;
   }
 
+  function getParentBroadSkillName(specSkillName) {
+    if (!data.skillsTable || !data.skillsTable.items) return null;
+    for (const category of data.skillsTable.items) {
+      for (const broadSkill of category.items) {
+        if (broadSkill.items && broadSkill.items.some(s => s.skill === specSkillName)) {
+          return broadSkill.skill;
+        }
+      }
+    }
+    return null;
+  }
+
   // Calculation of Budgets
   function recalculateBudgets() {
     syncSpeciesFreeSkills();
@@ -460,7 +472,7 @@ document.addEventListener('DOMContentLoaded', () => {
             else psionicBroadCount++;
           }
         } else {
-          let parentBroadName = Object.keys(state.skills).find(k => state.skills[k].isBroad && skillName.startsWith(k));
+          let parentBroadName = getParentBroadSkillName(skillName);
           let favored = isFavored(skillName, item.category, parentBroadName);
           let discount = 0;
           if (state.faction === 'rigunmor' && (skillName.includes('bargain') || skillName.includes('regatear'))) discount += 1;
@@ -834,7 +846,9 @@ document.addEventListener('DOMContentLoaded', () => {
           </div>
         `;
 
-        if (broadBought && broadSkill.items) {
+        let hasChildBought = broadSkill.items && broadSkill.items.some(specSkill => state.skills[specSkill.skill]?.ranks > 0);
+
+        if ((broadBought || hasChildBought) && broadSkill.items) {
           broadSkill.items.forEach(specSkill => {
             if (searchTerm && !specSkill.skill.toLowerCase().includes(searchTerm) && !matchesSearch) return;
 
