@@ -2,61 +2,77 @@
 <div class="main-container cb-container">
   {{ partial "breadcrumbs.html" . }}
 
-  <!-- Sticky Budget Bar -->
-  <div class="cb-budget-bar" id="cb-budget-bar">
-    <div class="cb-budget-item">
-      <span class="cb-budget-label">{{ if eq .Language.Lang "es" }}Puntos de Característica{{ else }}Ability Score Points{{ end }}</span>
-      <span class="cb-budget-val" id="cb-val-ability-pts">60 / 60</span>
-    </div>
-    <div class="cb-budget-item">
-      <span class="cb-budget-label">{{ if eq .Language.Lang "es" }}Puntos de Habilidad Restantes{{ else }}Skill Points Remaining{{ end }}</span>
-      <span class="cb-budget-val" id="cb-val-skill-pts">70 / 70</span>
-    </div>
-    <div class="cb-budget-item">
-      <span class="cb-budget-label">{{ if eq .Language.Lang "es" }}Puntos de Avance (PA){{ else }}Advancement Points (AP){{ end }}</span>
-      <span class="cb-budget-val" id="cb-val-ap-pts">0</span>
-    </div>
-    <div class="cb-budget-item">
-      <span class="cb-status-badge badge-success" id="cb-status-badge">
-        <span>✓</span> <span id="cb-status-text">{{ if eq .Language.Lang "es" }}VÁLIDO{{ else }}VALID{{ end }}</span>
-      </span>
-    </div>
-  </div>
+  <!-- Builder 2-Column Layout -->
+  <div class="cb-builder-layout">
 
-  <!-- Wizard Navigation (7 Steps) -->
-  <div class="cb-wizard-nav" id="cb-wizard-nav">
-    <button class="cb-step-btn active" data-step="1">
-      <span class="cb-step-num">1</span>
-      <span class="cb-step-text">{{ if eq .Language.Lang "es" }}Bio y Concepto{{ else }}Concept & Bio{{ end }}</span>
-    </button>
-    <button class="cb-step-btn" data-step="2">
-      <span class="cb-step-num">2</span>
-      <span class="cb-step-text">{{ if eq .Language.Lang "es" }}Facción{{ else }}Faction{{ end }}</span>
-    </button>
-    <button class="cb-step-btn" data-step="3">
-      <span class="cb-step-num">3</span>
-      <span class="cb-step-text">{{ if eq .Language.Lang "es" }}Especie y Profesión{{ else }}Species & Profession{{ end }}</span>
-    </button>
-    <button class="cb-step-btn" data-step="4">
-      <span class="cb-step-num">4</span>
-      <span class="cb-step-text">{{ if eq .Language.Lang "es" }}Características{{ else }}Ability Scores{{ end }}</span>
-    </button>
-    <button class="cb-step-btn" data-step="5">
-      <span class="cb-step-num">5</span>
-      <span class="cb-step-text">{{ if eq .Language.Lang "es" }}Habilidades{{ else }}Skills{{ end }}</span>
-    </button>
-    <button class="cb-step-btn" data-step="6">
-      <span class="cb-step-num">6</span>
-      <span class="cb-step-text">{{ if eq .Language.Lang "es" }}Ventajas y Defectos{{ else }}Perks & Flaws{{ end }}</span>
-    </button>
-    <button class="cb-step-btn" data-step="7">
-      <span class="cb-step-num">7</span>
-      <span class="cb-step-text">{{ if eq .Language.Lang "es" }}Hoja y Exportación{{ else }}Sheet & Export{{ end }}</span>
-    </button>
-  </div>
+    <!-- Sticky Always-Visible Sidebar -->
+    <aside class="cb-sidebar" id="cb-sidebar">
+      
+      <!-- Budget Summary Box -->
+      <div class="cb-sidebar-section" id="cb-budget-bar">
+        <h3 class="cb-sidebar-title">{{ if eq .Language.Lang "es" }}Resumen de Puntos{{ else }}Point Summary{{ end }}</h3>
+        
+        <div class="cb-budget-item">
+          <span class="cb-budget-label">{{ if eq .Language.Lang "es" }}Puntos Característica{{ else }}Ability Score Points{{ end }}</span>
+          <span class="cb-budget-val" id="cb-val-ability-pts">60 / 60</span>
+        </div>
+        
+        <div class="cb-budget-item">
+          <span class="cb-budget-label">{{ if eq .Language.Lang "es" }}Puntos Habilidad{{ else }}Skill Points Remaining{{ end }}</span>
+          <span class="cb-budget-val" id="cb-val-skill-pts">70 / 70</span>
+        </div>
+        
+        <div class="cb-budget-item">
+          <span class="cb-budget-label">{{ if eq .Language.Lang "es" }}Puntos Avance (PA){{ else }}Advancement Points (AP){{ end }}</span>
+          <span class="cb-budget-val" id="cb-val-ap-pts">0</span>
+        </div>
 
-  <!-- Step Content Views -->
-  <div id="cb-steps-wrapper">
+        <div class="cb-budget-status-wrap">
+          <span class="cb-status-badge badge-success" id="cb-status-badge">
+            <span>✓</span> <span id="cb-status-text">{{ if eq .Language.Lang "es" }}VÁLIDO{{ else }}VALID{{ end }}</span>
+          </span>
+        </div>
+      </div>
+
+      <!-- Wizard Navigation Steps (Vertical List) -->
+      <div class="cb-wizard-nav" id="cb-wizard-nav">
+        <h3 class="cb-sidebar-title">{{ if eq .Language.Lang "es" }}Pasos de Creación{{ else }}Builder Steps{{ end }}</h3>
+        <button type="button" class="cb-step-btn active" data-step="1">
+          <span class="cb-step-num">1</span>
+          <span class="cb-step-text">{{ if eq .Language.Lang "es" }}Bio y Concepto{{ else }}Concept & Bio{{ end }}</span>
+        </button>
+        <button type="button" class="cb-step-btn" data-step="2">
+          <span class="cb-step-num">2</span>
+          <span class="cb-step-text">{{ if eq .Language.Lang "es" }}Facción{{ else }}Faction{{ end }}</span>
+        </button>
+        <button type="button" class="cb-step-btn" data-step="3">
+          <span class="cb-step-num">3</span>
+          <span class="cb-step-text">{{ if eq .Language.Lang "es" }}Especie y Profesión{{ else }}Species & Profession{{ end }}</span>
+        </button>
+        <button type="button" class="cb-step-btn" data-step="4">
+          <span class="cb-step-num">4</span>
+          <span class="cb-step-text">{{ if eq .Language.Lang "es" }}Características{{ else }}Ability Scores{{ end }}</span>
+        </button>
+        <button type="button" class="cb-step-btn" data-step="5">
+          <span class="cb-step-num">5</span>
+          <span class="cb-step-text">{{ if eq .Language.Lang "es" }}Habilidades{{ else }}Skills{{ end }}</span>
+        </button>
+        <button type="button" class="cb-step-btn" data-step="6">
+          <span class="cb-step-num">6</span>
+          <span class="cb-step-text">{{ if eq .Language.Lang "es" }}Ventajas y Defectos{{ else }}Perks & Flaws{{ end }}</span>
+        </button>
+        <button type="button" class="cb-step-btn" data-step="7">
+          <span class="cb-step-num">7</span>
+          <span class="cb-step-text">{{ if eq .Language.Lang "es" }}Hoja y Exportación{{ else }}Sheet & Export{{ end }}</span>
+        </button>
+      </div>
+
+    </aside>
+
+    <!-- Main Builder Content Area -->
+    <main class="cb-main-area">
+      <!-- Step Content Views -->
+      <div id="cb-steps-wrapper">
     
     <!-- STEP 1: CONCEPT & BIO -->
     <div class="cb-step-content" id="cb-step-1">
@@ -221,34 +237,33 @@
       <div id="cb-character-sheet-container"></div>
     </div>
 
+      <!-- Navigation Action Bar -->
+      <div class="cb-action-bar">
+        <div>
+          <button type="button" class="cb-btn cb-btn-secondary" id="cb-btn-prev" disabled>
+            <span>←</span> <span>{{ if eq .Language.Lang "es" }}Anterior{{ else }}Previous{{ end }}</span>
+          </button>
+          <button type="button" class="cb-btn cb-btn-secondary ml2" id="cb-btn-reset">
+            <span>↺</span> <span>{{ if eq .Language.Lang "es" }}Reiniciar{{ else }}Reset{{ end }}</span>
+          </button>
+        </div>
+
+        <div>
+          <button type="button" class="cb-btn cb-btn-secondary" id="cb-btn-export-json">
+            <span>⬇</span> <span>{{ if eq .Language.Lang "es" }}Exportar JSON{{ else }}Export JSON{{ end }}</span>
+          </button>
+          <input type="file" id="cb-input-import-json" accept=".json" style="display: none;">
+          <button type="button" class="cb-btn cb-btn-secondary ml2" id="cb-btn-import-json">
+            <span>⬆</span> <span>{{ if eq .Language.Lang "es" }}Importar JSON{{ else }}Import JSON{{ end }}</span>
+          </button>
+          <button type="button" class="cb-btn cb-btn-primary ml2" id="cb-btn-next">
+            <span>{{ if eq .Language.Lang "es" }}Siguiente{{ else }}Next{{ end }}</span> <span>→</span>
+          </button>
+        </div>
+      </div>
+    </main>
+
   </div>
-
-  <!-- Navigation Action Bar -->
-  <div class="cb-action-bar">
-    <div>
-      <button type="button" class="cb-btn cb-btn-secondary" id="cb-btn-prev" disabled>
-        <span>←</span> <span>{{ if eq .Language.Lang "es" }}Anterior{{ else }}Previous{{ end }}</span>
-      </button>
-      <button type="button" class="cb-btn cb-btn-secondary ml2" id="cb-btn-reset">
-        <span>↺</span> <span>{{ if eq .Language.Lang "es" }}Reiniciar{{ else }}Reset{{ end }}</span>
-      </button>
-    </div>
-
-    <div>
-      <button type="button" class="cb-btn cb-btn-secondary" id="cb-btn-export-json">
-        <span>⬇</span> <span>{{ if eq .Language.Lang "es" }}Exportar JSON{{ else }}Export JSON{{ end }}</span>
-      </button>
-      <input type="file" id="cb-input-import-json" accept=".json" style="display: none;">
-      <button type="button" class="cb-btn cb-btn-secondary ml2" id="cb-btn-import-json">
-        <span>⬆</span> <span>{{ if eq .Language.Lang "es" }}Importar JSON{{ else }}Import JSON{{ end }}</span>
-      </button>
-      <button type="button" class="cb-btn cb-btn-primary ml2" id="cb-btn-next">
-        <span>{{ if eq .Language.Lang "es" }}Siguiente{{ else }}Next{{ end }}</span> <span>→</span>
-      </button>
-    </div>
-  </div>
-
-</div>
 
 <!-- Embed Site Data into Global Window JS Object -->
 <script>

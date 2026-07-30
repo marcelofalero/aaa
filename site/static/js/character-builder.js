@@ -570,9 +570,9 @@ document.addEventListener('DOMContentLoaded', () => {
     if (step === 6) renderStep6();
     if (step === 7) renderStep7();
 
-    const wizardNav = document.getElementById('cb-wizard-nav');
-    if (wizardNav) {
-      wizardNav.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    const stepsWrapper = document.getElementById('cb-steps-wrapper');
+    if (stepsWrapper) {
+      stepsWrapper.scrollIntoView({ behavior: 'smooth', block: 'start' });
     } else {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
