@@ -297,11 +297,62 @@ document.addEventListener('DOMContentLoaded', () => {
     return 4;
   }
 
-  function isFavored(skillName, skillCategory) {
+  const SPECIES_FREE_BROAD_SLUGS = {
+    human: ['athletics', 'vehicle-operation', 'stamina', 'knowledge', 'awareness', 'interaction'],
+    fraal: ['awareness', 'resolve', 'vehicle-operation', 'knowledge', 'interaction', 'telepathy'],
+    mechalus: ['athletics', 'vehicle-operation', 'stamina', 'knowledge', 'awareness', 'computer-science'],
+    sesheyan: ['melee-combat', 'acrobatics', 'stamina', 'knowledge', 'awareness', 'interaction'],
+    tsa: ['athletics', 'covert-ops', 'stamina', 'knowledge', 'awareness', 'interaction'],
+    weren: ['athletics', 'melee-combat', 'stamina', 'knowledge', 'awareness', 'interaction']
+  };
+
+  function isSpeciesFreeBroad(broadSkill) {
+    if (!broadSkill) return false;
+    const slugs = SPECIES_FREE_BROAD_SLUGS[state.species] || [];
+    const skillName = typeof broadSkill === 'string' ? broadSkill : (broadSkill.skill || '');
+    const skillUrl = typeof broadSkill === 'object' && broadSkill.url ? broadSkill.url : '';
+
+    if (skillUrl) {
+      const slug = skillUrl.toLowerCase().split('#')[0].split('/').filter(Boolean).pop();
+      if (slugs.includes(slug)) return true;
+    }
+
+    const nameLower = skillName.toLowerCase();
+    return slugs.some(s => {
+      const norm = s.replace('-', ' ');
+      return nameLower.includes(norm) || nameLower.includes(s);
+    });
+  }
+
+  function syncSpeciesFreeSkills() {
+    if (!data.skillsTable || !data.skillsTable.items) return;
+    data.skillsTable.items.forEach(category => {
+      category.items.forEach(broadSkill => {
+        if (isSpeciesFreeBroad(broadSkill)) {
+          if (!state.skills[broadSkill.skill]) {
+            state.skills[broadSkill.skill] = {
+              ranks: 1,
+              isBroad: true,
+              isSpeciesFree: true,
+              standardCost: broadSkill.cost,
+              category: category.skill
+            };
+          } else {
+            state.skills[broadSkill.skill].isSpeciesFree = true;
+          }
+        }
+      });
+    });
+  }
+
+  function isFavored(skillName, skillCategory, parentBroadSkillName = null) {
+    if (parentBroadSkillName && isFavored(parentBroadSkillName, skillCategory)) {
+      return true;
+    }
     const prof = PROFESSION_DATA[state.profession];
     if (prof) {
       if (prof.favoredCategories && prof.favoredCategories.includes(skillCategory)) return true;
-      if (prof.favoredSkills && prof.favoredSkills.includes(skillName)) return true;
+      if (prof.favoredSkills && prof.favoredSkills.some(s => skillName.toLowerCase().includes(s.toLowerCase()) || s.toLowerCase().includes(skillName.toLowerCase()))) return true;
     }
     const bgItems = getBackgroundItems();
     if (state.background && bgItems.length > 0) {
@@ -311,6 +362,11 @@ document.addEventListener('DOMContentLoaded', () => {
         if (bgFav.some(s => skillName.toLowerCase().includes(s.toLowerCase()) || s.toLowerCase().includes(skillName.toLowerCase()))) return true;
       }
     }
+    if (state.faction === 'austrin_ontis' && (skillName.includes('Heavy Weapons') || skillName.includes('Modern Ranged Weapons') || skillName.includes('Armas pesadas') || skillName.includes('Armas a distancia modernas'))) return true;
+    if (state.faction === 'orion' && (skillName.includes('Culture') || skillName.includes('Cultura') || skillCategory === 'Culture' || skillCategory === 'Cultura')) return true;
+    if (state.faction === 'orlamu' && (skillName.includes('Physical Science') || skillName.includes('Navigation') || skillName.includes('Ciencias físicas') || skillName.includes('Navegación'))) return true;
+    if (state.faction === 'starmech' && (skillName.includes('Technical Science') || skillName.includes('Ciencias técnicas') || skillCategory === 'Technical Science')) return true;
+
     return false;
   }
 
@@ -329,6 +385,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Calculation of Budgets
   function recalculateBudgets() {
+    syncSpeciesFreeSkills();
+
     const fact = FACTION_DATA[state.faction];
     if (fact && fact.apply) fact.apply(state);
 
@@ -352,22 +410,29 @@ document.addEventListener('DOMContentLoaded', () => {
 
     Object.entries(state.skills).forEach(([skillName, item]) => {
       if (item.ranks > 0) {
-        let favored = isFavored(skillName, item.category);
-        let discount = 0;
-
-        if (state.faction === 'rigunmor' && skillName === 'Interaction-bargain') discount += 1;
-        if (state.faction === 'orlamu' && state.profession === 'mindwalker' && item.category === 'Psionics') discount += 1;
-
-        let baseCostPerRank = item.standardCost;
-        if (favored) baseCostPerRank = Math.max(1, baseCostPerRank - 1);
-        let actualCostPerRank = Math.max(0, baseCostPerRank - discount);
+        let isFree = isSpeciesFreeBroad(skillName) || (state.faction === 'voidcorp' && (skillName.includes('Business') || skillName.includes('Negocios')));
 
         if (item.isBroad) {
-          skillPtsSpent += actualCostPerRank;
-          totalAP += item.standardCost;
-          if (item.standardCost > 0) broadSkillCount++;
-          if (item.category === 'Psionics') psionicBroadCount++;
+          if (!isFree) {
+            let favored = isFavored(skillName, item.category);
+            let discount = 0;
+            if (state.faction === 'orlamu' && state.profession === 'mindwalker' && item.category === 'Psionics') discount += 1;
+            let baseCost = favored ? Math.max(1, item.standardCost - 1) : item.standardCost;
+            let actualCost = Math.max(0, baseCost - discount);
+            skillPtsSpent += actualCost;
+            totalAP += item.standardCost;
+            if (item.category !== 'Psionics') broadSkillCount++;
+            else psionicBroadCount++;
+          }
         } else {
+          let parentBroadName = Object.keys(state.skills).find(k => state.skills[k].isBroad && skillName.startsWith(k));
+          let favored = isFavored(skillName, item.category, parentBroadName);
+          let discount = 0;
+          if (state.faction === 'rigunmor' && (skillName.includes('bargain') || skillName.includes('regatear'))) discount += 1;
+          if (state.faction === 'orlamu' && state.profession === 'mindwalker' && item.category === 'Psionics') discount += 1;
+
+          let baseCostPerRank = favored ? Math.max(1, item.standardCost - 1) : item.standardCost;
+          let actualCostPerRank = Math.max(0, baseCostPerRank - discount);
           skillPtsSpent += actualCostPerRank * item.ranks;
           totalAP += item.standardCost * item.ranks;
         }
@@ -690,8 +755,9 @@ document.addEventListener('DOMContentLoaded', () => {
       if (catFilter !== 'ALL' && category.skill !== catFilter) return;
 
       category.items.forEach(broadSkill => {
+        let isFreeBroad = isSpeciesFreeBroad(broadSkill) || (state.faction === 'voidcorp' && (broadSkill.skill.includes('Business') || broadSkill.skill.includes('Negocios')));
         let broadFavored = isFavored(broadSkill.skill, category.skill);
-        let broadBought = state.skills[broadSkill.skill]?.ranks > 0;
+        let broadBought = state.skills[broadSkill.skill]?.ranks > 0 || isFreeBroad;
 
         if (favoredOnly && !broadFavored) return;
 
@@ -703,7 +769,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (state.faction === 'orlamu' && state.profession === 'mindwalker' && category.skill === 'Psionics') discount += 1;
 
         let baseBroadCost = broadFavored ? Math.max(1, broadSkill.cost - 1) : broadSkill.cost;
-        let actualBroadCost = Math.max(0, baseBroadCost - discount);
+        let actualBroadCost = isFreeBroad ? 0 : Math.max(0, baseBroadCost - discount);
         let broadAbilityVal = state.abilities[broadSkill.attribute] || 10;
         let broadOrd = broadAbilityVal;
         let broadGood = Math.floor(broadOrd / 2);
@@ -714,16 +780,17 @@ document.addEventListener('DOMContentLoaded', () => {
             <div class="cb-skill-info">
               <span class="cb-skill-title">
                 ${broadSkill.skill}
+                ${isFreeBroad ? `<span class="cb-badge-free">${isEs ? 'ESPECIE (GRATIS)' : 'SPECIES (FREE)'}</span>` : ''}
                 ${broadFavored ? `<span class="cb-badge-favored">${isEs ? 'FAVORECIDA' : 'FAVORED'}</span>` : ''}
               </span>
               <span class="cb-skill-meta">
                 <span>[${broadSkill.attribute}: ${broadAbilityVal}]</span>
                 <span>${isEs ? 'Objetivo' : 'Target'}: <strong>${broadOrd} / ${broadGood} / ${broadAmaz}</strong></span>
-                <span>${isEs ? 'Coste' : 'Cost'}: ${actualBroadCost} SP (AP: ${broadSkill.cost})</span>
+                <span>${isEs ? 'Coste' : 'Cost'}: ${isFreeBroad ? (isEs ? '0 SP (Gratis)' : '0 SP (Free)') : `${actualBroadCost} SP (AP: ${broadSkill.cost})`}</span>
               </span>
             </div>
             <div class="cb-rank-controls">
-              <button class="cb-btn-rank ${broadBought ? 'active' : ''}" data-skill="${broadSkill.skill}" data-is-broad="true" data-cost="${broadSkill.cost}" data-cat="${category.skill}">
+              <button class="cb-btn-rank ${broadBought ? 'active' : ''}" data-skill="${broadSkill.skill}" data-is-broad="true" data-cost="${broadSkill.cost}" data-cat="${category.skill}" ${isFreeBroad ? 'disabled title="Free Species Skill"' : ''}>
                 ${broadBought ? '✓' : '+'}
               </button>
             </div>
@@ -734,11 +801,11 @@ document.addEventListener('DOMContentLoaded', () => {
           broadSkill.items.forEach(specSkill => {
             if (searchTerm && !specSkill.skill.toLowerCase().includes(searchTerm) && !matchesSearch) return;
 
-            let specFavored = isFavored(specSkill.skill, category.skill);
+            let specFavored = isFavored(specSkill.skill, category.skill, broadSkill.skill);
             let currentRanks = state.skills[specSkill.skill]?.ranks || 0;
 
             let specDiscount = 0;
-            if (state.faction === 'rigunmor' && specSkill.skill === 'Interaction-bargain') specDiscount += 1;
+            if (state.faction === 'rigunmor' && (specSkill.skill.includes('bargain') || specSkill.skill.includes('regatear'))) specDiscount += 1;
             if (state.faction === 'orlamu' && state.profession === 'mindwalker' && category.skill === 'Psionics') specDiscount += 1;
 
             let baseSpecCost = specFavored ? Math.max(1, specSkill.cost - 1) : specSkill.cost;

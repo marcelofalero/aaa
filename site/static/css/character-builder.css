@@ -463,6 +463,20 @@ body.scifi-body .cb-card {
   padding: 0.1rem 0.4rem;
   border-radius: 4px;
   font-family: 'Michroma', sans-serif;
+  letter-spacing: 0.5px;
+  margin-left: 0.4rem;
+}
+
+.cb-badge-free {
+  background: rgba(56, 158, 189, 0.25);
+  color: var(--accent-cyan);
+  border: 1px solid var(--accent-cyan);
+  font-size: 0.65rem;
+  padding: 0.1rem 0.4rem;
+  border-radius: 4px;
+  font-family: 'Michroma', sans-serif;
+  letter-spacing: 0.5px;
+  margin-left: 0.4rem;
 }
 
 /* Character Sheet View */
