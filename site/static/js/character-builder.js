@@ -40,7 +40,9 @@ document.addEventListener('DOMContentLoaded', () => {
     isFinalized: false,
     earnedAP: 0,
     advancementSkills: {},
-    advancementAbilities: {}
+    advancementAbilities: {},
+    advancementPerks: [],
+    removedFlaws: []
   };
 
   function getCharacterTitle(totalAP) {
@@ -118,6 +120,18 @@ document.addEventListener('DOMContentLoaded', () => {
           const targetRank = creationRanks + r;
           spent += getAdvancementSkillCost(skillName, targetRank);
         }
+      });
+    }
+
+    if (state.advancementPerks && Array.isArray(state.advancementPerks)) {
+      state.advancementPerks.forEach(p => {
+        spent += (p.apCost || (p.level || 1) * 3);
+      });
+    }
+
+    if (state.removedFlaws && Array.isArray(state.removedFlaws)) {
+      state.removedFlaws.forEach(f => {
+        spent += (f.apCost || (f.level || 1) * 3);
       });
     }
 
@@ -624,6 +638,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function getEffectiveAbilityScore(stat) {
     let score = parseInt(state.abilities[stat], 10) || 10;
+    if (state.advancementAbilities && state.advancementAbilities[stat]) {
+      score += parseInt(state.advancementAbilities[stat], 10) || 0;
+    }
     if (state.species === 'human') {
       if (state.faction === 'orion' && stat === 'PER') score += 1;
       if (state.faction === 'borealis' && stat === 'INT') score += 1;
@@ -1023,8 +1040,19 @@ document.addEventListener('DOMContentLoaded', () => {
       btn.addEventListener('click', () => {
         const stat = btn.dataset.stat;
         const dir = parseInt(btn.dataset.dir, 10);
-        const curr = parseInt(state.abilities[stat], 10) || 10;
-        state.abilities[stat] = curr + dir;
+        if (state.isFinalized) {
+          const adv = parseInt(state.advancementAbilities[stat], 10) || 0;
+          const base = parseInt(state.abilities[stat], 10) || 10;
+          const [min, max] = limits[stat];
+          if (dir === 1 && (base + adv) < max) {
+            state.advancementAbilities[stat] = adv + 1;
+          } else if (dir === -1 && adv > 0) {
+            state.advancementAbilities[stat] = adv - 1;
+          }
+        } else {
+          const curr = parseInt(state.abilities[stat], 10) || 10;
+          state.abilities[stat] = curr + dir;
+        }
         saveStateToLocalStorage();
         renderStep4();
         recalculateBudgets();
@@ -1107,7 +1135,8 @@ document.addEventListener('DOMContentLoaded', () => {
       flawsContainer.innerHTML = flawsList.map(f => {
         const isBgFlaw = bgFlaw && (f.name.toLowerCase().includes(bgFlaw.toLowerCase()) || bgFlaw.toLowerCase().includes(f.name.toLowerCase()));
         const stateFlaw = state.flaws.find(x => (typeof x === 'string' ? x : x.name) === f.name);
-        const selected = !!stateFlaw || isBgFlaw;
+        const isRemovedInCampaign = state.isFinalized && state.removedFlaws && state.removedFlaws.some(rf => rf.name === f.name);
+        const selected = (!!stateFlaw || isBgFlaw) && !isRemovedInCampaign;
         const currentLevel = isBgFlaw ? 1 : (stateFlaw ? (typeof stateFlaw === 'object' && stateFlaw.level ? stateFlaw.level : 1) : 0);
 
         const { options } = getFlawBonus(f);
@@ -1115,6 +1144,25 @@ document.addEventListener('DOMContentLoaded', () => {
         let levelButtonsHtml = '';
         if (isBgFlaw) {
           levelButtonsHtml = `<span class="cb-badge-free" style="background: rgba(255, 165, 0, 0.25); color: #ffa500; border-color: #ffa500;">🔒 ${isEs ? 'TRASFONDO (BLOQUEADO)' : 'BACKGROUND (LOCKED)'}</span>`;
+        } else if (state.isFinalized) {
+          if (stateFlaw) {
+            if (isRemovedInCampaign) {
+              levelButtonsHtml = `
+                <button type="button" class="cb-btn-rank active" data-flaw="${f.name}" data-level="${currentLevel}" style="width: auto; padding: 0.2rem 0.6rem; background: rgba(166, 193, 46, 0.3); border-color: #a6c12e; color: #a6c12e;">
+                  ✨ ${isEs ? 'Restaurar Defecto' : 'Restore Flaw'}
+                </button>
+              `;
+            } else {
+              const buyOffCost = currentLevel * 3;
+              levelButtonsHtml = `
+                <button type="button" class="cb-btn-rank" data-flaw="${f.name}" data-level="${currentLevel}" style="width: auto; padding: 0.2rem 0.6rem; border-color: #a6c12e; color: #a6c12e;">
+                  ✨ ${isEs ? 'Eliminar con PA' : 'Buy Off'} (${buyOffCost} PA)
+                </button>
+              `;
+            }
+          } else {
+            levelButtonsHtml = `<span style="font-size: 0.75rem; color: #8099AC;">${isEs ? 'No seleccionado en creación' : 'Not selected at creation'}</span>`;
+          }
         } else if (options.length > 1) {
           levelButtonsHtml = `
             <div class="cb-level-btn-group" style="display: flex; gap: 0.3rem; align-items: center; flex-wrap: wrap;">
@@ -1139,9 +1187,12 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         return `
-          <div class="cb-card ${selected ? 'selected' : ''} ${isBgFlaw ? 'cb-card-locked' : ''}" style="margin-bottom: 0.75rem; ${isBgFlaw ? 'border-color: #ffa500; background: rgba(255, 165, 0, 0.12);' : ''}">
+          <div class="cb-card ${selected ? 'selected' : ''} ${isRemovedInCampaign ? 'cb-card-removed' : ''}" style="margin-bottom: 0.75rem; ${isRemovedInCampaign ? 'opacity: 0.7; border-color: #a6c12e;' : (isBgFlaw ? 'border-color: #ffa500; background: rgba(255, 165, 0, 0.12);' : '')}">
             <div class="cb-card-header" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem;">
-              <h4 class="cb-card-title" style="font-size: 0.95rem; margin: 0; color: #ffffff;">${f.name}</h4>
+              <h4 class="cb-card-title" style="font-size: 0.95rem; margin: 0; color: #ffffff; ${isRemovedInCampaign ? 'text-decoration: line-through;' : ''}">
+                ${f.name}
+                ${isRemovedInCampaign ? `<span class="cb-badge-free" style="margin-left:0.4rem; background: rgba(166,193,46,0.2); color:#a6c12e; border-color:#a6c12e;">✨ ${isEs ? 'ELIMINADO' : 'BOUGHT OFF'}</span>` : ''}
+              </h4>
               ${levelButtonsHtml}
             </div>
             <p class="cb-card-desc" style="font-size: 0.8rem; margin-top: 0.4rem;">${f.description || ''}</p>
@@ -1158,25 +1209,35 @@ document.addEventListener('DOMContentLoaded', () => {
           const isBg = bgFlaw && (flawName.toLowerCase().includes(bgFlaw.toLowerCase()) || bgFlaw.toLowerCase().includes(flawName.toLowerCase()));
           if (isBg) return;
 
-          const existingIdx = state.flaws.findIndex(x => (typeof x === 'string' ? x : x.name) === flawName);
-
-          if (existingIdx >= 0) {
-            const currentObj = state.flaws[existingIdx];
-            const currLvl = typeof currentObj === 'object' && currentObj.level ? currentObj.level : 1;
-
-            if (currLvl === lvl) {
-              state.flaws.splice(existingIdx, 1);
+          if (state.isFinalized) {
+            if (!state.removedFlaws) state.removedFlaws = [];
+            const removedIdx = state.removedFlaws.findIndex(x => x.name === flawName);
+            if (removedIdx >= 0) {
+              state.removedFlaws.splice(removedIdx, 1);
             } else {
-              state.flaws[existingIdx] = { name: flawName, level: lvl };
+              state.removedFlaws.push({ name: flawName, level: lvl, apCost: lvl * 3 });
             }
           } else {
-            const userFlawsCount = state.flaws.filter(x => {
-              const name = typeof x === 'string' ? x : x.name;
-              return !bgFlaw || (!name.toLowerCase().includes(bgFlaw.toLowerCase()) && !bgFlaw.toLowerCase().includes(name.toLowerCase()));
-            }).length;
+            const existingIdx = state.flaws.findIndex(x => (typeof x === 'string' ? x : x.name) === flawName);
 
-            if (userFlawsCount < 3) {
-              state.flaws.push({ name: flawName, level: lvl });
+            if (existingIdx >= 0) {
+              const currentObj = state.flaws[existingIdx];
+              const currLvl = typeof currentObj === 'object' && currentObj.level ? currentObj.level : 1;
+
+              if (currLvl === lvl) {
+                state.flaws.splice(existingIdx, 1);
+              } else {
+                state.flaws[existingIdx] = { name: flawName, level: lvl };
+              }
+            } else {
+              const userFlawsCount = state.flaws.filter(x => {
+                const name = typeof x === 'string' ? x : x.name;
+                return !bgFlaw || (!name.toLowerCase().includes(bgFlaw.toLowerCase()) && !bgFlaw.toLowerCase().includes(name.toLowerCase()));
+              }).length;
+
+              if (userFlawsCount < 3) {
+                state.flaws.push({ name: flawName, level: lvl });
+              }
             }
           }
 
@@ -1191,13 +1252,17 @@ document.addEventListener('DOMContentLoaded', () => {
     if (perksContainer) {
       perksContainer.innerHTML = perksList.map(p => {
         const statePerk = state.perks.find(x => (typeof x === 'string' ? x : x.name) === p.name);
-        const selected = !!statePerk;
-        const currentLevel = statePerk ? (typeof statePerk === 'object' && statePerk.level ? statePerk.level : 1) : 0;
+        const advPerk = (state.advancementPerks || []).find(x => x.name === p.name);
+        const isStartingPerk = !!statePerk;
+        const selected = isStartingPerk || !!advPerk;
+        const currentLevel = advPerk ? advPerk.level : (statePerk ? (typeof statePerk === 'object' && statePerk.level ? statePerk.level : 1) : 0);
 
         const { options, favored } = getPerkCost(p);
 
         let levelButtonsHtml = '';
-        if (options.length > 1) {
+        if (state.isFinalized && isStartingPerk) {
+          levelButtonsHtml = `<span class="cb-badge-free" style="background: rgba(75, 181, 193, 0.25); color: var(--accent-cyan); border-color: var(--accent-cyan);">🛡️ ${isEs ? 'CREACIÓN' : 'CREATION'} (Nvl ${currentLevel})</span>`;
+        } else if (options.length > 1) {
           levelButtonsHtml = `
             <div style="display: flex; gap: 0.3rem; align-items: center; flex-wrap: wrap;">
               ${favored ? `<span class="cb-badge-favored">${isEs ? 'FAVORECIDA' : 'FAVORED'}</span>` : ''}
@@ -1206,9 +1271,10 @@ document.addEventListener('DOMContentLoaded', () => {
                   const lvl = idx + 1;
                   const active = currentLevel === lvl;
                   const optCost = favored ? Math.max(1, optVal - 1) : optVal;
+                  const unitLabel = state.isFinalized ? 'PA' : 'SP';
                   return `
                     <button type="button" class="cb-btn-rank ${active ? 'active' : ''}" data-perk="${p.name}" data-level="${lvl}">
-                      Nvl ${lvl} (${optCost} SP)
+                      Nvl ${lvl} (${optCost} ${unitLabel})
                     </button>
                   `;
                 }).join('')}
@@ -1218,11 +1284,12 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
           const optVal = options[0] || 3;
           const optCost = favored ? Math.max(1, optVal - 1) : optVal;
+          const unitLabel = state.isFinalized ? 'PA' : 'SP';
           levelButtonsHtml = `
             <div style="display: flex; gap: 0.3rem; align-items: center;">
               ${favored ? `<span class="cb-badge-favored">${isEs ? 'FAVORECIDA' : 'FAVORED'}</span>` : ''}
               <button type="button" class="cb-btn-rank ${selected ? 'active' : ''}" data-perk="${p.name}" data-level="1" style="width: auto; padding: 0.2rem 0.6rem;">
-                ${selected ? '✓' : '+'} (${optCost} SP)
+                ${selected ? '✓' : '+'} (${optCost} ${unitLabel})
               </button>
             </div>
           `;
@@ -1231,7 +1298,10 @@ document.addEventListener('DOMContentLoaded', () => {
         return `
           <div class="cb-card ${selected ? 'selected' : ''}" style="margin-bottom: 0.75rem;">
             <div class="cb-card-header" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem;">
-              <h4 class="cb-card-title" style="font-size: 0.95rem; margin: 0; color: #ffffff;">${p.name}</h4>
+              <h4 class="cb-card-title" style="font-size: 0.95rem; margin: 0; color: #ffffff;">
+                ${p.name}
+                ${advPerk ? `<span class="cb-badge-free" style="margin-left: 0.4rem; background: rgba(166, 193, 46, 0.25); color: #a6c12e; border-color: #a6c12e;">✨ ${isEs ? 'APRENDIDA CON PA' : 'CAMPAIGN AP'}</span>` : ''}
+              </h4>
               ${levelButtonsHtml}
             </div>
             <p class="cb-card-desc" style="font-size: 0.8rem; margin-top: 0.4rem;">${p.description || ''}</p>
@@ -1245,20 +1315,42 @@ document.addEventListener('DOMContentLoaded', () => {
           const perkName = btn.dataset.perk;
           const lvl = parseInt(btn.dataset.level, 10);
 
-          const existingIdx = state.perks.findIndex(x => (typeof x === 'string' ? x : x.name) === perkName);
+          if (state.isFinalized) {
+            if (!state.advancementPerks) state.advancementPerks = [];
+            const isStartingPerk = state.perks.some(x => (typeof x === 'string' ? x : x.name) === perkName);
+            if (isStartingPerk) return;
 
-          if (existingIdx >= 0) {
-            const currentObj = state.perks[existingIdx];
-            const currLvl = typeof currentObj === 'object' && currentObj.level ? currentObj.level : 1;
+            const existingAdvIdx = state.advancementPerks.findIndex(x => x.name === perkName);
+            const { options, favored } = getPerkCost(perkName, lvl);
+            const optVal = (options && options[lvl - 1]) || (lvl * 3);
+            const optCost = favored ? Math.max(1, optVal - 1) : optVal;
 
-            if (currLvl === lvl) {
-              state.perks.splice(existingIdx, 1);
+            if (existingAdvIdx >= 0) {
+              const currObj = state.advancementPerks[existingAdvIdx];
+              if (currObj.level === lvl) {
+                state.advancementPerks.splice(existingAdvIdx, 1);
+              } else {
+                state.advancementPerks[existingAdvIdx] = { name: perkName, level: lvl, apCost: optCost };
+              }
             } else {
-              state.perks[existingIdx] = { name: perkName, level: lvl };
+              state.advancementPerks.push({ name: perkName, level: lvl, apCost: optCost });
             }
           } else {
-            if (state.perks.length < 3) {
-              state.perks.push({ name: perkName, level: lvl });
+            const existingIdx = state.perks.findIndex(x => (typeof x === 'string' ? x : x.name) === perkName);
+
+            if (existingIdx >= 0) {
+              const currentObj = state.perks[existingIdx];
+              const currLvl = typeof currentObj === 'object' && currentObj.level ? currentObj.level : 1;
+
+              if (currLvl === lvl) {
+                state.perks.splice(existingIdx, 1);
+              } else {
+                state.perks[existingIdx] = { name: perkName, level: lvl };
+              }
+            } else {
+              if (state.perks.length < 3) {
+                state.perks.push({ name: perkName, level: lvl });
+              }
             }
           }
 
@@ -1494,8 +1586,19 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Perks and Flaws formatting
-    const formattedPerks = [...species.freePerks, ...state.perks].map(p => typeof p === 'string' ? p : `${p.name}${p.level ? ` (Nvl ${p.level})` : ''}`).join(', ');
-    const formattedFlaws = state.flaws.map(f => typeof f === 'string' ? f : `${f.name}${f.level ? ` (Nvl ${f.level})` : ''}`).join(', ');
+    const startingPerks = [...species.freePerks, ...state.perks].map(p => typeof p === 'string' ? p : `${p.name}${p.level ? ` (Nvl ${p.level})` : ''}`);
+    const campaignPerks = (state.advancementPerks || []).map(p => `${p.name}${p.level ? ` (Nvl ${p.level})` : ''} (✨ PA)`);
+    const formattedPerks = [...startingPerks, ...campaignPerks].join(', ');
+
+    const activeFlaws = state.flaws.filter(f => {
+      const name = typeof f === 'string' ? f : f.name;
+      return !(state.removedFlaws || []).some(rf => rf.name === name);
+    });
+    const removedFlawsList = (state.removedFlaws || []).map(f => `${f.name} (✨ ${isEs ? 'Eliminado con PA' : 'Bought off'})`);
+    const formattedFlaws = [
+      ...activeFlaws.map(f => typeof f === 'string' ? f : `${f.name}${f.level ? ` (Nvl ${f.level})` : ''}`),
+      ...removedFlawsList
+    ].join(', ');
 
     const spentAP = state.isFinalized ? calculateCampaignSpentAP() : 0;
     const availableAP = (state.earnedAP || 0) - spentAP;
