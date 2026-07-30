@@ -539,9 +539,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const fact = FACTION_DATA[state.faction];
     if (fact && fact.apply) fact.apply(state);
 
-    const targetAbilityBudget = state.faction === 'union_of_sol' ? 62 : 60;
+    const heightenedCount = state.perks.filter(p => p && p.toLowerCase().includes('heightened ability')).length;
+    const targetAbilityBudget = (state.faction === 'union_of_sol' ? 62 : 60) + heightenedCount;
+
     let abilityPtsSpent = 0;
-    Object.values(state.abilities).forEach(val => abilityPtsSpent += val);
+    Object.values(state.abilities).forEach(val => abilityPtsSpent += (parseInt(val, 10) || 0));
 
     let baseSkillPoints = 70;
     if (state.faction === 'rigunmor' && state.rigunmorBonusChoice === 'points') {
@@ -852,8 +854,10 @@ document.addEventListener('DOMContentLoaded', () => {
     grid.querySelectorAll('.cb-btn-score').forEach(btn => {
       btn.addEventListener('click', () => {
         const stat = btn.dataset.stat;
-        const dir = parseInt(btn.dataset.dir);
-        state.abilities[stat] += dir;
+        const dir = parseInt(btn.dataset.dir, 10);
+        const curr = parseInt(state.abilities[stat], 10) || 10;
+        state.abilities[stat] = curr + dir;
+        saveStateToLocalStorage();
         renderStep4();
         recalculateBudgets();
       });
