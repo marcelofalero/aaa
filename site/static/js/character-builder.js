@@ -1107,6 +1107,10 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // STEP 5: PERKS & FLAWS
+  let activePickerMode = null; // 'flaw' | 'perk' | null
+  let selectedPickerItem = null;
+  let selectedPickerLevel = 1;
+
   function renderStep5() {
     const perksContainer = document.getElementById('cb-perks-list');
     const flawsContainer = document.getElementById('cb-flaws-list');
@@ -1116,10 +1120,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const bgItems = getBackgroundItems();
     const currentBg = bgItems.find(b => b.name === state.background || b.id === state.background);
     const bgFlaw = getBackgroundFlaw(currentBg);
-    const bgFavoredPerks = getBackgroundFavoredPerks(currentBg);
 
-    const perksList = getPerksList();
-    const flawsList = getFlawsList();
+    const allPerks = getPerksList();
+    const allFlaws = getFlawsList();
 
     // Ensure background flaw is included in state.flaws if present
     if (bgFlaw && !state.flaws.some(f => {
@@ -1130,235 +1133,308 @@ document.addEventListener('DOMContentLoaded', () => {
       saveStateToLocalStorage();
     }
 
-    // 1. RENDER FLAWS (Top Section)
+    // 1. RENDER FLAWS LIST
     if (flawsContainer) {
-      flawsContainer.innerHTML = flawsList.map(f => {
-        const isBgFlaw = bgFlaw && (f.name.toLowerCase().includes(bgFlaw.toLowerCase()) || bgFlaw.toLowerCase().includes(f.name.toLowerCase()));
-        const stateFlaw = state.flaws.find(x => (typeof x === 'string' ? x : x.name) === f.name);
-        const isRemovedInCampaign = state.isFinalized && state.removedFlaws && state.removedFlaws.some(rf => rf.name === f.name);
-        const selected = (!!stateFlaw || isBgFlaw) && !isRemovedInCampaign;
-        const currentLevel = isBgFlaw ? 1 : (stateFlaw ? (typeof stateFlaw === 'object' && stateFlaw.level ? stateFlaw.level : 1) : 0);
+      const activeFlawsList = state.flaws.map(f => {
+        const name = typeof f === 'string' ? f : f.name;
+        const level = typeof f === 'object' && f.level ? f.level : 1;
+        const flawObj = allFlaws.find(x => x.name.toLowerCase() === name.toLowerCase()) || { name, description: '' };
+        const isBg = bgFlaw && (name.toLowerCase().includes(bgFlaw.toLowerCase()) || bgFlaw.toLowerCase().includes(name.toLowerCase()));
+        const isRemovedInCampaign = state.isFinalized && state.removedFlaws && state.removedFlaws.some(rf => rf.name === name);
+        const { options } = getFlawBonus(flawObj);
+        const bonusSP = options[level - 1] || (level * 3);
+        return { name, level, flawObj, isBg, isRemovedInCampaign, bonusSP };
+      });
 
-        const { options } = getFlawBonus(f);
-
-        let levelButtonsHtml = '';
-        if (isBgFlaw) {
-          levelButtonsHtml = `<span class="cb-badge-free" style="background: rgba(255, 165, 0, 0.25); color: #ffa500; border-color: #ffa500;">🔒 ${isEs ? 'TRASFONDO (BLOQUEADO)' : 'BACKGROUND (LOCKED)'}</span>`;
-        } else if (state.isFinalized) {
-          if (stateFlaw) {
-            if (isRemovedInCampaign) {
-              levelButtonsHtml = `
-                <button type="button" class="cb-btn-rank active" data-flaw="${f.name}" data-level="${currentLevel}" style="width: auto; padding: 0.2rem 0.6rem; background: rgba(166, 193, 46, 0.3); border-color: #a6c12e; color: #a6c12e;">
-                  ✨ ${isEs ? 'Restaurar Defecto' : 'Restore Flaw'}
-                </button>
-              `;
-            } else {
-              const buyOffCost = currentLevel * 3;
-              levelButtonsHtml = `
-                <button type="button" class="cb-btn-rank" data-flaw="${f.name}" data-level="${currentLevel}" style="width: auto; padding: 0.2rem 0.6rem; border-color: #a6c12e; color: #a6c12e;">
-                  ✨ ${isEs ? 'Eliminar con PA' : 'Buy Off'} (${buyOffCost} PA)
-                </button>
-              `;
-            }
-          } else {
-            levelButtonsHtml = `<span style="font-size: 0.75rem; color: #8099AC;">${isEs ? 'No seleccionado en creación' : 'Not selected at creation'}</span>`;
-          }
-        } else if (options.length > 1) {
-          levelButtonsHtml = `
-            <div class="cb-level-btn-group" style="display: flex; gap: 0.3rem; align-items: center; flex-wrap: wrap;">
-              ${options.map((optVal, idx) => {
-                const lvl = idx + 1;
-                const active = currentLevel === lvl;
-                return `
-                  <button type="button" class="cb-btn-rank ${active ? 'active' : ''}" data-flaw="${f.name}" data-level="${lvl}">
-                    Nvl ${lvl} (+${optVal} SP)
-                  </button>
-                `;
-              }).join('')}
-            </div>
-          `;
-        } else {
-          const optVal = options[0] || 3;
-          levelButtonsHtml = `
-            <button type="button" class="cb-btn-rank ${selected ? 'active' : ''}" data-flaw="${f.name}" data-level="1" style="width: auto; padding: 0.2rem 0.6rem;">
-              ${selected ? '✓' : '+'} (+${optVal} SP)
-            </button>
-          `;
-        }
-
-        return `
-          <div class="cb-card ${selected ? 'selected' : ''} ${isRemovedInCampaign ? 'cb-card-removed' : ''}" style="margin-bottom: 0.75rem; ${isRemovedInCampaign ? 'opacity: 0.7; border-color: #a6c12e;' : (isBgFlaw ? 'border-color: #ffa500; background: rgba(255, 165, 0, 0.12);' : '')}">
-            <div class="cb-card-header" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem;">
-              <h4 class="cb-card-title" style="font-size: 0.95rem; margin: 0; color: #ffffff; ${isRemovedInCampaign ? 'text-decoration: line-through;' : ''}">
-                ${f.name}
-                ${isRemovedInCampaign ? `<span class="cb-badge-free" style="margin-left:0.4rem; background: rgba(166,193,46,0.2); color:#a6c12e; border-color:#a6c12e;">✨ ${isEs ? 'ELIMINADO' : 'BOUGHT OFF'}</span>` : ''}
-              </h4>
-              ${levelButtonsHtml}
-            </div>
-            <p class="cb-card-desc" style="font-size: 0.8rem; margin-top: 0.4rem;">${f.description || ''}</p>
+      let flawsHtml = '';
+      if (activeFlawsList.length === 0) {
+        flawsHtml = `
+          <div class="silver tc pa3 font-italic mb3" style="background: rgba(0,0,0,0.2); border: 1px dashed #405566; border-radius: 6px;">
+            ${isEs ? 'No tienes defectos seleccionados. Haz clic en "Añadir Defecto" abajo para seleccionar uno.' : 'No flaws selected. Click "Add Flaw" below to select one.'}
           </div>
         `;
-      }).join('');
+      } else {
+        flawsHtml = activeFlawsList.map(item => `
+          <div class="cb-card selected ${item.isRemovedInCampaign ? 'cb-card-removed' : ''}" style="margin-bottom: 0.75rem; ${item.isRemovedInCampaign ? 'opacity: 0.6; border-color: #a6c12e;' : (item.isBg ? 'border-color: #ffa500; background: rgba(255, 165, 0, 0.12);' : '')}">
+            <div class="cb-card-header" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem;">
+              <div>
+                <h4 class="cb-card-title" style="font-size: 0.95rem; margin: 0; color: #ffffff; ${item.isRemovedInCampaign ? 'text-decoration: line-through;' : ''}">
+                  ${item.name} ${item.level > 1 ? `(Nvl ${item.level})` : ''}
+                  ${item.isBg ? `<span class="cb-badge-free" style="margin-left:0.4rem; background: rgba(255, 165, 0, 0.25); color: #ffa500; border-color: #ffa500;">🔒 ${isEs ? 'TRASFONDO' : 'BACKGROUND'}</span>` : ''}
+                  ${item.isRemovedInCampaign ? `<span class="cb-badge-free" style="margin-left:0.4rem; background: rgba(166,193,46,0.2); color:#a6c12e; border-color:#a6c12e;">✨ ${isEs ? 'ELIMINADO' : 'BOUGHT OFF'}</span>` : ''}
+                </h4>
+                <span style="font-size: 0.8rem; color: #a6c12e; font-weight: bold;">+${item.bonusSP} SP</span>
+              </div>
+              <div>
+                ${item.isBg ? '' : `
+                  <button type="button" class="cb-btn cb-btn-danger cb-btn-remove-flaw" data-flaw="${item.name}" style="font-size: 0.75rem; padding: 0.3rem 0.6rem;">
+                    🗑️ ${state.isFinalized ? (item.isRemovedInCampaign ? (isEs ? 'Restaurar' : 'Restore') : (isEs ? 'Eliminar con PA' : 'Buy Off')) : (isEs ? 'Eliminar' : 'Remove')}
+                  </button>
+                `}
+              </div>
+            </div>
+            <p class="cb-card-desc" style="font-size: 0.8rem; margin-top: 0.4rem;">${item.flawObj.description || ''}</p>
+          </div>
+        `).join('');
+      }
 
-      flawsContainer.querySelectorAll('.cb-btn-rank').forEach(btn => {
-        btn.addEventListener('click', (e) => {
-          e.stopPropagation();
+      const availableFlaws = allFlaws.filter(f => !state.flaws.some(sf => (typeof sf === 'string' ? sf : sf.name) === f.name));
+
+      flawsHtml += `
+        <div style="margin-top: 1rem;">
+          ${activePickerMode === 'flaw' ? '' : `
+            <button type="button" class="cb-btn cb-btn-secondary" id="cb-btn-open-flaw-picker" style="font-size: 0.85rem;">
+              ➕ ${isEs ? 'Añadir Defecto' : 'Add Flaw'}
+            </button>
+          `}
+          <div id="cb-flaw-picker-panel" style="display: ${activePickerMode === 'flaw' ? 'block' : 'none'}; margin-top: 0.75rem; padding: 1rem; background: rgba(10, 30, 50, 0.95); border: 1px solid var(--accent-cyan); border-radius: 8px;">
+            <h4 class="neon-cyan" style="margin-top:0; margin-bottom: 0.75rem;">${isEs ? 'Añadir un Defecto a tu Personaje' : 'Add a Flaw to Character'}</h4>
+            <div style="display: flex; gap: 0.75rem; flex-wrap: wrap; align-items: center; margin-bottom: 0.75rem;">
+              <select id="cb-select-flaw" class="cb-input" style="flex: 1; min-width: 220px;">
+                <option value="">-- ${isEs ? 'Selecciona un defecto...' : 'Select a flaw...'} --</option>
+                ${availableFlaws.map(f => `<option value="${f.name}" ${selectedPickerItem === f.name ? 'selected' : ''}>${f.name}</option>`).join('')}
+              </select>
+            </div>
+            <div id="cb-flaw-picker-desc" class="silver f6" style="min-height: 2.5rem; background: rgba(0,0,0,0.3); padding: 0.6rem; border-radius: 4px; margin-bottom: 0.75rem;">
+              ${selectedPickerItem ? (allFlaws.find(x => x.name === selectedPickerItem)?.description || '') : (isEs ? 'Selecciona un defecto para ver sus detalles.' : 'Select a flaw to view details.')}
+            </div>
+            <div style="display: flex; gap: 0.5rem; justify-content: flex-end;">
+              <button type="button" class="cb-btn cb-btn-secondary" id="cb-btn-cancel-flaw-picker" style="font-size: 0.8rem;">${isEs ? 'Cancelar' : 'Cancel'}</button>
+              <button type="button" class="cb-btn cb-btn-primary" id="cb-btn-confirm-add-flaw" style="font-size: 0.8rem;" ${selectedPickerItem ? '' : 'disabled'}>${isEs ? 'Añadir Defecto' : 'Add Flaw'}</button>
+            </div>
+          </div>
+        </div>
+      `;
+
+      flawsContainer.innerHTML = flawsHtml;
+
+      flawsContainer.querySelectorAll('.cb-btn-remove-flaw').forEach(btn => {
+        btn.addEventListener('click', () => {
           const flawName = btn.dataset.flaw;
-          const lvl = parseInt(btn.dataset.level, 10);
-          
-          const isBg = bgFlaw && (flawName.toLowerCase().includes(bgFlaw.toLowerCase()) || bgFlaw.toLowerCase().includes(flawName.toLowerCase()));
-          if (isBg) return;
-
           if (state.isFinalized) {
             if (!state.removedFlaws) state.removedFlaws = [];
             const removedIdx = state.removedFlaws.findIndex(x => x.name === flawName);
             if (removedIdx >= 0) {
               state.removedFlaws.splice(removedIdx, 1);
             } else {
+              const stateFlaw = state.flaws.find(x => (typeof x === 'string' ? x : x.name) === flawName);
+              const lvl = typeof stateFlaw === 'object' && stateFlaw.level ? stateFlaw.level : 1;
               state.removedFlaws.push({ name: flawName, level: lvl, apCost: lvl * 3 });
             }
           } else {
-            const existingIdx = state.flaws.findIndex(x => (typeof x === 'string' ? x : x.name) === flawName);
-
-            if (existingIdx >= 0) {
-              const currentObj = state.flaws[existingIdx];
-              const currLvl = typeof currentObj === 'object' && currentObj.level ? currentObj.level : 1;
-
-              if (currLvl === lvl) {
-                state.flaws.splice(existingIdx, 1);
-              } else {
-                state.flaws[existingIdx] = { name: flawName, level: lvl };
-              }
-            } else {
-              const userFlawsCount = state.flaws.filter(x => {
-                const name = typeof x === 'string' ? x : x.name;
-                return !bgFlaw || (!name.toLowerCase().includes(bgFlaw.toLowerCase()) && !bgFlaw.toLowerCase().includes(name.toLowerCase()));
-              }).length;
-
-              if (userFlawsCount < 3) {
-                state.flaws.push({ name: flawName, level: lvl });
-              }
-            }
+            const idx = state.flaws.findIndex(x => (typeof x === 'string' ? x : x.name) === flawName);
+            if (idx >= 0) state.flaws.splice(idx, 1);
           }
-
           saveStateToLocalStorage();
           renderStep5();
           recalculateBudgets();
         });
       });
+
+      const btnOpenPicker = flawsContainer.querySelector('#cb-btn-open-flaw-picker');
+      if (btnOpenPicker) {
+        btnOpenPicker.addEventListener('click', () => {
+          activePickerMode = 'flaw';
+          selectedPickerItem = null;
+          selectedPickerLevel = 1;
+          renderStep5();
+        });
+      }
+
+      const btnCancelPicker = flawsContainer.querySelector('#cb-btn-cancel-flaw-picker');
+      if (btnCancelPicker) {
+        btnCancelPicker.addEventListener('click', () => {
+          activePickerMode = null;
+          selectedPickerItem = null;
+          renderStep5();
+        });
+      }
+
+      const selectFlaw = flawsContainer.querySelector('#cb-select-flaw');
+      if (selectFlaw) {
+        selectFlaw.addEventListener('change', () => {
+          selectedPickerItem = selectFlaw.value || null;
+          selectedPickerLevel = 1;
+          renderStep5();
+        });
+      }
+
+      const btnConfirmFlaw = flawsContainer.querySelector('#cb-btn-confirm-add-flaw');
+      if (btnConfirmFlaw) {
+        btnConfirmFlaw.addEventListener('click', () => {
+          if (selectedPickerItem) {
+            state.flaws.push({ name: selectedPickerItem, level: selectedPickerLevel });
+            activePickerMode = null;
+            selectedPickerItem = null;
+            saveStateToLocalStorage();
+            renderStep5();
+            recalculateBudgets();
+          }
+        });
+      }
     }
 
-    // 2. RENDER PERKS (Bottom Section)
+    // 2. RENDER PERKS LIST
     if (perksContainer) {
-      perksContainer.innerHTML = perksList.map(p => {
-        const statePerk = state.perks.find(x => (typeof x === 'string' ? x : x.name) === p.name);
-        const advPerk = (state.advancementPerks || []).find(x => x.name === p.name);
-        const isStartingPerk = !!statePerk;
-        const selected = isStartingPerk || !!advPerk;
-        const currentLevel = advPerk ? advPerk.level : (statePerk ? (typeof statePerk === 'object' && statePerk.level ? statePerk.level : 1) : 0);
+      const speciesObj = SPECIES_DATA[state.species] || {};
+      const freePerksList = (speciesObj.freePerks || []).map(name => ({
+        name, level: 1, perkObj: allPerks.find(x => x.name.toLowerCase() === name.toLowerCase()) || { name, description: '' },
+        isFreeSpecies: true, isAdvancement: false, cost: 0
+      }));
 
-        const { options, favored } = getPerkCost(p);
+      const creationPerksList = state.perks.map(p => {
+        const name = typeof p === 'string' ? p : p.name;
+        const level = typeof p === 'object' && p.level ? p.level : 1;
+        const perkObj = allPerks.find(x => x.name.toLowerCase() === name.toLowerCase()) || { name, description: '' };
+        const { options, favored } = getPerkCost(perkObj);
+        const optVal = options[level - 1] || (level * 3);
+        const optCost = favored ? Math.max(1, optVal - 1) : optVal;
+        return { name, level, perkObj, isFreeSpecies: false, isAdvancement: false, favored, cost: optCost };
+      });
 
-        let levelButtonsHtml = '';
-        if (state.isFinalized && isStartingPerk) {
-          levelButtonsHtml = `<span class="cb-badge-free" style="background: rgba(75, 181, 193, 0.25); color: var(--accent-cyan); border-color: var(--accent-cyan);">🛡️ ${isEs ? 'CREACIÓN' : 'CREATION'} (Nvl ${currentLevel})</span>`;
-        } else if (options.length > 1) {
-          levelButtonsHtml = `
-            <div style="display: flex; gap: 0.3rem; align-items: center; flex-wrap: wrap;">
-              ${favored ? `<span class="cb-badge-favored">${isEs ? 'FAVORECIDA' : 'FAVORED'}</span>` : ''}
-              <div class="cb-level-btn-group" style="display: flex; gap: 0.3rem;">
-                ${options.map((optVal, idx) => {
-                  const lvl = idx + 1;
-                  const active = currentLevel === lvl;
-                  const optCost = favored ? Math.max(1, optVal - 1) : optVal;
-                  const unitLabel = state.isFinalized ? 'PA' : 'SP';
-                  return `
-                    <button type="button" class="cb-btn-rank ${active ? 'active' : ''}" data-perk="${p.name}" data-level="${lvl}">
-                      Nvl ${lvl} (${optCost} ${unitLabel})
-                    </button>
-                  `;
-                }).join('')}
-              </div>
-            </div>
-          `;
-        } else {
-          const optVal = options[0] || 3;
-          const optCost = favored ? Math.max(1, optVal - 1) : optVal;
-          const unitLabel = state.isFinalized ? 'PA' : 'SP';
-          levelButtonsHtml = `
-            <div style="display: flex; gap: 0.3rem; align-items: center;">
-              ${favored ? `<span class="cb-badge-favored">${isEs ? 'FAVORECIDA' : 'FAVORED'}</span>` : ''}
-              <button type="button" class="cb-btn-rank ${selected ? 'active' : ''}" data-perk="${p.name}" data-level="1" style="width: auto; padding: 0.2rem 0.6rem;">
-                ${selected ? '✓' : '+'} (${optCost} ${unitLabel})
-              </button>
-            </div>
-          `;
-        }
+      const campaignPerksList = (state.advancementPerks || []).map(p => {
+        const name = p.name;
+        const level = p.level || 1;
+        const perkObj = allPerks.find(x => x.name.toLowerCase() === name.toLowerCase()) || { name, description: '' };
+        const { favored } = getPerkCost(perkObj);
+        return { name, level, perkObj, isFreeSpecies: false, isAdvancement: true, favored, cost: p.apCost || (level * 3) };
+      });
 
-        return `
-          <div class="cb-card ${selected ? 'selected' : ''}" style="margin-bottom: 0.75rem;">
-            <div class="cb-card-header" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem;">
-              <h4 class="cb-card-title" style="font-size: 0.95rem; margin: 0; color: #ffffff;">
-                ${p.name}
-                ${advPerk ? `<span class="cb-badge-free" style="margin-left: 0.4rem; background: rgba(166, 193, 46, 0.25); color: #a6c12e; border-color: #a6c12e;">✨ ${isEs ? 'APRENDIDA CON PA' : 'CAMPAIGN AP'}</span>` : ''}
-              </h4>
-              ${levelButtonsHtml}
-            </div>
-            <p class="cb-card-desc" style="font-size: 0.8rem; margin-top: 0.4rem;">${p.description || ''}</p>
+      const activePerksList = [...freePerksList, ...creationPerksList, ...campaignPerksList];
+
+      let perksHtml = '';
+      if (activePerksList.length === 0) {
+        perksHtml = `
+          <div class="silver tc pa3 font-italic mb3" style="background: rgba(0,0,0,0.2); border: 1px dashed #405566; border-radius: 6px;">
+            ${isEs ? 'No tienes ventajas seleccionadas. Haz clic en "Añadir Ventaja" abajo para seleccionar una.' : 'No perks selected. Click "Add Perk" below to select one.'}
           </div>
         `;
-      }).join('');
+      } else {
+        perksHtml = activePerksList.map(item => `
+          <div class="cb-card selected" style="margin-bottom: 0.75rem;">
+            <div class="cb-card-header" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem;">
+              <div>
+                <h4 class="cb-card-title" style="font-size: 0.95rem; margin: 0; color: #ffffff;">
+                  ${item.name} ${item.level > 1 ? `(Nvl ${item.level})` : ''}
+                  ${item.isFreeSpecies ? `<span class="cb-badge-free" style="margin-left:0.4rem;">🛡️ ${isEs ? 'ESPECIE' : 'SPECIES'}</span>` : ''}
+                  ${item.favored ? `<span class="cb-badge-favored" style="margin-left:0.4rem;">${isEs ? 'FAVORECIDA' : 'FAVORED'}</span>` : ''}
+                  ${item.isAdvancement ? `<span class="cb-badge-free" style="margin-left:0.4rem; background: rgba(166,193,46,0.25); color:#a6c12e; border-color:#a6c12e;">✨ ${isEs ? 'AP' : 'AP'}</span>` : ''}
+                </h4>
+                <span style="font-size: 0.8rem; color: var(--accent-cyan); font-weight: bold;">
+                  ${item.isFreeSpecies ? (isEs ? 'Gratis' : 'Free') : `${item.cost} ${item.isAdvancement ? 'PA' : 'SP'}`}
+                </span>
+              </div>
+              <div>
+                ${item.isFreeSpecies || (state.isFinalized && !item.isAdvancement) ? '' : `
+                  <button type="button" class="cb-btn cb-btn-danger cb-btn-remove-perk" data-perk="${item.name}" data-adv="${item.isAdvancement}" style="font-size: 0.75rem; padding: 0.3rem 0.6rem;">
+                    🗑️ ${isEs ? 'Eliminar' : 'Remove'}
+                  </button>
+                `}
+              </div>
+            </div>
+            <p class="cb-card-desc" style="font-size: 0.8rem; margin-top: 0.4rem;">${item.perkObj.description || ''}</p>
+          </div>
+        `).join('');
+      }
 
-      perksContainer.querySelectorAll('.cb-btn-rank').forEach(btn => {
-        btn.addEventListener('click', (e) => {
-          e.stopPropagation();
+      const availablePerks = allPerks.filter(p => !activePerksList.some(ap => ap.name.toLowerCase() === p.name.toLowerCase()));
+
+      perksHtml += `
+        <div style="margin-top: 1rem;">
+          ${activePickerMode === 'perk' ? '' : `
+            <button type="button" class="cb-btn cb-btn-secondary" id="cb-btn-open-perk-picker" style="font-size: 0.85rem;">
+              ➕ ${isEs ? 'Añadir Ventaja' : 'Add Perk'}
+            </button>
+          `}
+          <div id="cb-perk-picker-panel" style="display: ${activePickerMode === 'perk' ? 'block' : 'none'}; margin-top: 0.75rem; padding: 1rem; background: rgba(10, 30, 50, 0.95); border: 1px solid var(--accent-cyan); border-radius: 8px;">
+            <h4 class="neon-cyan" style="margin-top:0; margin-bottom: 0.75rem;">${isEs ? 'Añadir una Ventaja a tu Personaje' : 'Add a Perk to Character'}</h4>
+            <div style="display: flex; gap: 0.75rem; flex-wrap: wrap; align-items: center; margin-bottom: 0.75rem;">
+              <select id="cb-select-perk" class="cb-input" style="flex: 1; min-width: 220px;">
+                <option value="">-- ${isEs ? 'Selecciona una ventaja...' : 'Select a perk...'} --</option>
+                ${availablePerks.map(p => `<option value="${p.name}" ${selectedPickerItem === p.name ? 'selected' : ''}>${p.name}</option>`).join('')}
+              </select>
+            </div>
+            <div id="cb-perk-picker-desc" class="silver f6" style="min-height: 2.5rem; background: rgba(0,0,0,0.3); padding: 0.6rem; border-radius: 4px; margin-bottom: 0.75rem;">
+              ${selectedPickerItem ? (allPerks.find(x => x.name === selectedPickerItem)?.description || '') : (isEs ? 'Selecciona una ventaja para ver sus detalles.' : 'Select a perk to view details.')}
+            </div>
+            <div style="display: flex; gap: 0.5rem; justify-content: flex-end;">
+              <button type="button" class="cb-btn cb-btn-secondary" id="cb-btn-cancel-perk-picker" style="font-size: 0.8rem;">${isEs ? 'Cancelar' : 'Cancel'}</button>
+              <button type="button" class="cb-btn cb-btn-primary" id="cb-btn-confirm-add-perk" style="font-size: 0.8rem;" ${selectedPickerItem ? '' : 'disabled'}>${isEs ? 'Añadir Ventaja' : 'Add Perk'}</button>
+            </div>
+          </div>
+        </div>
+      `;
+
+      perksContainer.innerHTML = perksHtml;
+
+      perksContainer.querySelectorAll('.cb-btn-remove-perk').forEach(btn => {
+        btn.addEventListener('click', () => {
           const perkName = btn.dataset.perk;
-          const lvl = parseInt(btn.dataset.level, 10);
-
-          if (state.isFinalized) {
-            if (!state.advancementPerks) state.advancementPerks = [];
-            const isStartingPerk = state.perks.some(x => (typeof x === 'string' ? x : x.name) === perkName);
-            if (isStartingPerk) return;
-
-            const existingAdvIdx = state.advancementPerks.findIndex(x => x.name === perkName);
-            const { options, favored } = getPerkCost(perkName, lvl);
-            const optVal = (options && options[lvl - 1]) || (lvl * 3);
-            const optCost = favored ? Math.max(1, optVal - 1) : optVal;
-
-            if (existingAdvIdx >= 0) {
-              const currObj = state.advancementPerks[existingAdvIdx];
-              if (currObj.level === lvl) {
-                state.advancementPerks.splice(existingAdvIdx, 1);
-              } else {
-                state.advancementPerks[existingAdvIdx] = { name: perkName, level: lvl, apCost: optCost };
-              }
-            } else {
-              state.advancementPerks.push({ name: perkName, level: lvl, apCost: optCost });
-            }
+          const isAdv = btn.dataset.adv === 'true';
+          if (isAdv) {
+            const idx = state.advancementPerks.findIndex(x => x.name === perkName);
+            if (idx >= 0) state.advancementPerks.splice(idx, 1);
           } else {
-            const existingIdx = state.perks.findIndex(x => (typeof x === 'string' ? x : x.name) === perkName);
-
-            if (existingIdx >= 0) {
-              const currentObj = state.perks[existingIdx];
-              const currLvl = typeof currentObj === 'object' && currentObj.level ? currentObj.level : 1;
-
-              if (currLvl === lvl) {
-                state.perks.splice(existingIdx, 1);
-              } else {
-                state.perks[existingIdx] = { name: perkName, level: lvl };
-              }
-            } else {
-              if (state.perks.length < 3) {
-                state.perks.push({ name: perkName, level: lvl });
-              }
-            }
+            const idx = state.perks.findIndex(x => (typeof x === 'string' ? x : x.name) === perkName);
+            if (idx >= 0) state.perks.splice(idx, 1);
           }
-
           saveStateToLocalStorage();
           renderStep5();
           recalculateBudgets();
         });
       });
+
+      const btnOpenPicker = perksContainer.querySelector('#cb-btn-open-perk-picker');
+      if (btnOpenPicker) {
+        btnOpenPicker.addEventListener('click', () => {
+          activePickerMode = 'perk';
+          selectedPickerItem = null;
+          selectedPickerLevel = 1;
+          renderStep5();
+        });
+      }
+
+      const btnCancelPicker = perksContainer.querySelector('#cb-btn-cancel-perk-picker');
+      if (btnCancelPicker) {
+        btnCancelPicker.addEventListener('click', () => {
+          activePickerMode = null;
+          selectedPickerItem = null;
+          renderStep5();
+        });
+      }
+
+      const selectPerk = perksContainer.querySelector('#cb-select-perk');
+      if (selectPerk) {
+        selectPerk.addEventListener('change', () => {
+          selectedPickerItem = selectPerk.value || null;
+          selectedPickerLevel = 1;
+          renderStep5();
+        });
+      }
+
+      const btnConfirmPerk = perksContainer.querySelector('#cb-btn-confirm-add-perk');
+      if (btnConfirmPerk) {
+        btnConfirmPerk.addEventListener('click', () => {
+          if (selectedPickerItem) {
+            const perkObj = allPerks.find(x => x.name === selectedPickerItem);
+            const { options, favored } = getPerkCost(perkObj);
+            const optVal = options[selectedPickerLevel - 1] || (selectedPickerLevel * 3);
+            const optCost = favored ? Math.max(1, optVal - 1) : optVal;
+
+            if (state.isFinalized) {
+              if (!state.advancementPerks) state.advancementPerks = [];
+              state.advancementPerks.push({ name: selectedPickerItem, level: selectedPickerLevel, apCost: optCost });
+            } else {
+              state.perks.push({ name: selectedPickerItem, level: selectedPickerLevel });
+            }
+            activePickerMode = null;
+            selectedPickerItem = null;
+            saveStateToLocalStorage();
+            renderStep5();
+            recalculateBudgets();
+          }
+        });
+      }
     }
   }
 
