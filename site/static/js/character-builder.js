@@ -349,6 +349,56 @@ document.addEventListener('DOMContentLoaded', () => {
     return [];
   }
 
+  function isFavoredPerk(perkName) {
+    if (!perkName) return false;
+    const bgItems = getBackgroundItems();
+    if (state.background && bgItems.length > 0) {
+      const bg = bgItems.find(b => b.name === state.background || b.id === state.background);
+      if (bg) {
+        const bgFav = getBackgroundFavoredPerks(bg);
+        if (bgFav.some(fp => perkName.toLowerCase().includes(fp.toLowerCase()) || fp.toLowerCase().includes(perkName.toLowerCase()))) {
+          return true;
+        }
+      }
+    }
+    const prof = PROFESSION_DATA[state.profession];
+    if (prof && prof.favoredPerks) {
+      if (prof.favoredPerks.some(fp => perkName.toLowerCase().includes(fp.toLowerCase()) || fp.toLowerCase().includes(perkName.toLowerCase()))) {
+        return true;
+      }
+    }
+    return false;
+  }
+
+  function getPerkCost(perkObjOrName) {
+    const perksList = getPerksList();
+    const perkName = typeof perkObjOrName === 'string' ? perkObjOrName : (perkObjOrName ? perkObjOrName.name : '');
+    const perkObj = perksList.find(p => p.name === perkName);
+
+    let rawCost = 3;
+    if (perkObj && perkObj.cost) {
+      const num = parseInt(perkObj.cost.split('/')[0]);
+      if (!isNaN(num)) rawCost = num;
+    }
+
+    const favored = isFavoredPerk(perkName);
+    const finalCost = favored ? Math.max(1, rawCost - 1) : rawCost;
+    return { rawCost, finalCost, favored };
+  }
+
+  function getFlawBonus(flawObjOrName) {
+    const flawsList = getFlawsList();
+    const flawName = typeof flawObjOrName === 'string' ? flawObjOrName : (flawObjOrName ? flawObjOrName.name : '');
+    const flawObj = flawsList.find(f => f.name === flawName);
+
+    let rawBonus = 3;
+    if (flawObj && flawObj.bonus_points) {
+      const num = parseInt(flawObj.bonus_points.replace('+', '').split('/')[0]);
+      if (!isNaN(num)) rawBonus = num;
+    }
+    return rawBonus;
+  }
+
   function getResMod(score) {
     if (score <= 4) return -2;
     if (score <= 6) return -1;
@@ -498,8 +548,17 @@ document.addEventListener('DOMContentLoaded', () => {
       baseSkillPoints += 6;
     }
 
-    let perkCost = state.perks.filter(p => !['Faith', 'Filthy Rich', 'Free Cyber Gear ($5,000)'].includes(p)).length * 3;
-    let flawBonus = state.flaws.filter(f => f !== 'Obsessed (Borealin Discovery)').length * 3;
+    let perkCost = 0;
+    state.perks.forEach(p => {
+      const { finalCost } = getPerkCost(p);
+      perkCost += finalCost;
+    });
+
+    let flawBonus = 0;
+    state.flaws.forEach(f => {
+      flawBonus += getFlawBonus(f);
+    });
+
     let totalSkillBudget = baseSkillPoints - perkCost + flawBonus;
 
     let skillPtsSpent = 0;
@@ -1001,15 +1060,15 @@ document.addEventListener('DOMContentLoaded', () => {
     if (perksContainer) {
       perksContainer.innerHTML = perksList.map(p => {
         const selected = state.perks.includes(p.name);
-        const isBgFavored = bgFavoredPerks.some(fp => p.name.toLowerCase().includes(fp.toLowerCase()) || fp.toLowerCase().includes(p.name.toLowerCase()));
+        const { rawCost, finalCost, favored } = getPerkCost(p);
         
         return `
           <div class="cb-card ${selected ? 'selected' : ''}" style="margin-bottom: 0.75rem;" data-perk="${p.name}">
             <div class="cb-card-header" style="display: flex; justify-content: space-between; align-items: center;">
               <h4 class="cb-card-title" style="font-size: 0.95rem; margin: 0;">${p.name}</h4>
               <div style="display: flex; gap: 0.3rem; align-items: center;">
-                ${isBgFavored ? `<span class="cb-badge-favored">${isEs ? 'FAVORECIDA (TRASFONDO)' : 'FAVORED (BG)'}</span>` : ''}
-                <span class="cb-badge-free" style="background: rgba(56, 158, 189, 0.2); color: var(--accent-cyan); border-color: var(--accent-cyan);">${isEs ? 'Coste' : 'Cost'}: ${p.cost || '3'} SP</span>
+                ${favored ? `<span class="cb-badge-favored">${isEs ? 'FAVORECIDA (TRASFONDO)' : 'FAVORED (BG)'}</span>` : ''}
+                <span class="cb-badge-free" style="background: rgba(56, 158, 189, 0.2); color: var(--accent-cyan); border-color: var(--accent-cyan);">${isEs ? 'Coste' : 'Cost'}: ${finalCost} SP ${favored ? `(AP: ${rawCost})` : ''}</span>
               </div>
             </div>
             <p class="cb-card-desc" style="font-size: 0.8rem; margin-top: 0.4rem;">${p.description || ''}</p>
