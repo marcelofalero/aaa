@@ -89,9 +89,13 @@ Las puntuaciones de habilidad proporcionan un "modificador de resistencia" que m
 
 </div>
 
-## 6. Compra Habilidades
+## 6. Selecciona Ventajas y Desventajas
 
-Cada personaje comienza el juego con **70** puntos de habilidad para gastar en habilidades en la creación del personaje. Puedes comprar **Habilidades Generales** (habilidades base) y **Especializaciones** (entrenamiento específico) adicionales, sujeto a las siguientes limitaciones en la creación del personaje:
+(Opcional) Puedes elegir hasta tres ventajas (beneficios) gastando puntos de habilidad, y hasta tres desventajas (perjuicios) para ganar puntos de habilidad adicionales. Las ventajas gratuitas obtenidas por tu especie o trasfondo no cuentan para este límite. Las ventajas y desventajas se seleccionan antes de comprar habilidades para que tu presupuesto de puntos de habilidad se actualice en consecuencia.
+
+## 7. Compra Habilidades
+
+Cada personaje comienza el juego con **70** puntos de habilidad base para gastar en habilidades en la creación del personaje (ajustados por las ventajas y desventajas seleccionadas). Puedes comprar **Habilidades Generales** (habilidades base) y **Especializaciones** (entrenamiento específico), sujeto a las siguientes limitaciones en la creación del personaje:
 
 * Puedes comprar un máximo de 5 Habilidades Generales No Psiónicas.
 * Puedes comprar un máximo de 3 Habilidades Generales Psiónicas si estás jugando un Caminante Mental. *(Para otras fuentes de poderes psiónicos, consulta la regla específica.)*
@@ -99,17 +103,13 @@ Cada personaje comienza el juego con **70** puntos de habilidad para gastar en h
 
 _(Nota: Para los límites de rango de habilidad y los costos de escalado más allá de la creación del personaje, consulta la **[sección de Avance de Personajes](/es/core-mechanics/character-advancement)**.)_
 
-### Precio Estándar vs. Costo de Compra
+### Puntos de Habilidad Iniciales vs. Puntos de Avance (PA)
 
-En AAA, tu progresión se rastrea a través de **Puntos de Avance (PA)**, que representan la inversión total en tu entrenamiento. Esto asegura que tu Rango de Personaje refleje con precisión el poder de tu personaje, independientemente de cuán eficientemente hayas adquirido tu entrenamiento.
+En AAA, los puntos de habilidad iniciales gastados durante la creación del personaje **no** cuentan para tus **Puntos de Avance (PA)** totales. Un personaje recién creado comienza en **0 PA** (Rango Novato).
 
-- **Precio Estándar:** El valor base de la habilidad. Este valor siempre se suma a tu Total de PA.
-- **Costo de Compra:** Si una habilidad es **Favorecida** (por tu Trasfondo o Profesión), pagas **1 punto menos** que el Precio Estándar.
-- **Ejemplo:** Una habilidad con un Precio Estándar de 5 que es Favorecida te cuesta **4 puntos por rango**. Si compras 3 rangos, gastas 12 puntos, pero sumas **15 PA** a tu total.
-
-## 7. Selecciona Ventajas y Desventajas
-
-(Opcional) Puedes elegir hasta tres ventajas (beneficios) gastando puntos de habilidad, y hasta tres desventajas (perjuicios) para ganar puntos de habilidad adicionales. Las ventajas gratuitas obtenidas por tu especie o trasfondo no cuentan para este límite.
+- **Creación de Personaje:** Los puntos de habilidad iniciales (70 base + Desventajas - Ventajas) establecen el entrenamiento inicial de tu personaje a 0 PA.
+- **Avance de Campaña:** Los PA otorgados por el DJ después de la creación del personaje se gastan en rangos adicionales de habilidad, habilidades generales y aumentos de puntuación de característica. Los precios estándar gastados incrementan tu total de PA, aumentando el título y rango de tu personaje.
+- **Costo de Compra:** Si una habilidad es **Favorecida** (por tu Trasfondo o Profesión), pagas **1 punto menos** por rango que el Precio Estándar.
 
 ## 8. Elige Atributos
 

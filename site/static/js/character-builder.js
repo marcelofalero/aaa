@@ -33,9 +33,88 @@ document.addEventListener('DOMContentLoaded', () => {
       WIL: 10,
       PER: 10
     },
+    skills: {},
     perks: [],
-    flaws: []
+    flaws: [],
+    // Campaign Advancement
+    isFinalized: false,
+    earnedAP: 0,
+    advancementSkills: {},
+    advancementAbilities: {}
   };
+
+  function getCharacterTitle(totalAP) {
+    if (totalAP >= 300) return { title: isEs ? 'Leyenda' : 'Legend', maxSkillRank: isEs ? 'Sin Límite' : 'No Limit', maxBroad: 13 };
+    if (totalAP >= 200) return { title: isEs ? 'Ejemplar' : 'Exemplar', maxSkillRank: 12, maxBroad: 11 };
+    if (totalAP >= 100) return { title: isEs ? 'Veterano' : 'Veteran', maxSkillRank: 10, maxBroad: 9 };
+    if (totalAP >= 50) return { title: isEs ? 'Experimentado' : 'Seasoned', maxSkillRank: 8, maxBroad: 7 };
+    return { title: isEs ? 'Novato' : 'Rookie', maxSkillRank: 5, maxBroad: 5 };
+  }
+
+  function getAdvancementSkillCost(skillName, targetRank) {
+    let standardCost = 3;
+    let isBroad = false;
+    let category = 'Other';
+
+    if (data.skillsTable && data.skillsTable.items) {
+      for (const cat of data.skillsTable.items) {
+        for (const broad of cat.items) {
+          if (broad.skill === skillName) {
+            standardCost = broad.cost || 3;
+            isBroad = true;
+            category = cat.skill;
+            break;
+          }
+          if (broad.items) {
+            const spec = broad.items.find(s => s.skill === skillName);
+            if (spec) {
+              standardCost = spec.cost || 3;
+              isBroad = false;
+              category = cat.skill;
+              break;
+            }
+          }
+        }
+      }
+    }
+
+    if (isBroad) {
+      let favored = isFavored(skillName, category);
+      return favored ? Math.max(1, standardCost - 1) : standardCost;
+    } else {
+      let parentBroadName = getParentBroadSkillName(skillName);
+      let favored = isFavored(skillName, category, parentBroadName);
+      let baseCost = favored ? Math.max(1, standardCost - 1) : standardCost;
+
+      if (targetRank >= 11) baseCost += 6;
+      else if (targetRank >= 9) baseCost += 4;
+      else if (targetRank >= 6) baseCost += 2;
+
+      return baseCost;
+    }
+  }
+
+  function calculateCampaignSpentAP() {
+    let spent = 0;
+    if (state.advancementAbilities) {
+      Object.values(state.advancementAbilities).forEach(pts => {
+        spent += (parseInt(pts, 10) || 0) * 10;
+      });
+    }
+
+    if (state.advancementSkills) {
+      Object.entries(state.advancementSkills).forEach(([skillName, campaignRanks]) => {
+        const totalRanks = state.skills[skillName] ? state.skills[skillName].ranks : 0;
+        const creationRanks = Math.max(0, totalRanks - campaignRanks);
+        for (let r = 1; r <= campaignRanks; r++) {
+          const targetRank = creationRanks + r;
+          spent += getAdvancementSkillCost(skillName, targetRank);
+        }
+      });
+    }
+
+    return spent;
+  }
 
   const STORAGE_KEY = 'stardrive_character_builder_state_v1';
 
@@ -535,6 +614,15 @@ document.addEventListener('DOMContentLoaded', () => {
     return spec;
   }
 
+  function getEffectiveAbilityScore(stat) {
+    let score = parseInt(state.abilities[stat], 10) || 10;
+    if (state.species === 'human') {
+      if (state.faction === 'orion' && stat === 'PER') score += 1;
+      if (state.faction === 'borealis' && stat === 'INT') score += 1;
+    }
+    return score;
+  }
+
   function getParentBroadSkillName(specSkillName) {
     if (!data.skillsTable || !data.skillsTable.items) return null;
     for (const category of data.skillsTable.items) {
@@ -576,7 +664,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let flawBonus = 0;
     state.flaws.forEach(f => {
-      flawBonus += getFlawBonus(f);
+      const { rawBonus } = getFlawBonus(f);
+      flawBonus += (rawBonus || 0);
     });
 
     let totalSkillBudget = baseSkillPoints - perkCost + flawBonus;
@@ -643,6 +732,19 @@ document.addEventListener('DOMContentLoaded', () => {
       warnings.push(isEs ? 'Límite de Habilidades Psiónicas Generales excedido' : 'Psionic Broad Skills limit exceeded');
     }
 
+    // Update Right Sidebar Tracked Choices
+    const elTrackName = document.getElementById('cb-tracker-name');
+    const elTrackFaction = document.getElementById('cb-tracker-faction');
+    const elTrackSpecies = document.getElementById('cb-tracker-species');
+    const elTrackBg = document.getElementById('cb-tracker-bg');
+    const elTrackProf = document.getElementById('cb-tracker-prof');
+
+    if (elTrackName) elTrackName.textContent = state.bio.name || '—';
+    if (elTrackFaction) elTrackFaction.textContent = FACTION_DATA[state.faction]?.name || '—';
+    if (elTrackSpecies) elTrackSpecies.textContent = SPECIES_DATA[state.species]?.name || '—';
+    if (elTrackBg) elTrackBg.textContent = state.background || '—';
+    if (elTrackProf) elTrackProf.textContent = PROFESSION_DATA[state.profession]?.name || '—';
+
     const elAbility = document.getElementById('cb-val-ability-pts');
     const elSkill = document.getElementById('cb-val-skill-pts');
     const elAP = document.getElementById('cb-val-ap-pts');
@@ -660,17 +762,28 @@ document.addEventListener('DOMContentLoaded', () => {
       elTotalSum.style.color = abilityPtsSpent === targetAbilityBudget ? '#a6c12e' : (abilityPtsSpent > targetAbilityBudget ? '#ff4d4d' : '#ffa500');
     }
 
+    const spentAP = state.isFinalized ? calculateCampaignSpentAP() : 0;
+    const titleObj = getCharacterTitle(spentAP);
+
     if (elSkill) {
       elSkill.textContent = `${totalSkillBudget - skillPtsSpent} / ${totalSkillBudget}`;
       elSkill.className = `cb-budget-val ${skillPtsSpent <= totalSkillBudget ? 'valid' : 'over-limit'}`;
     }
 
     if (elAP) {
-      elAP.textContent = `${totalAP}`;
+      if (state.isFinalized) {
+        const availAP = (state.earnedAP || 0) - spentAP;
+        elAP.textContent = `${spentAP} AP (${availAP} ${isEs ? 'Disp.' : 'Avail'}) - ${titleObj.title}`;
+      } else {
+        elAP.textContent = `0 AP (${titleObj.title})`;
+      }
     }
 
     if (elBadge && elBadgeText) {
-      if (warnings.length === 0 && abilityPtsSpent === targetAbilityBudget) {
+      if (state.isFinalized) {
+        elBadge.className = 'cb-status-badge badge-success';
+        elBadgeText.textContent = `🛡️ ${isEs ? 'CAMPAÑA' : 'CAMPAIGN'} (${titleObj.title})`;
+      } else if (warnings.length === 0 && abilityPtsSpent === targetAbilityBudget) {
         elBadge.className = 'cb-status-badge badge-success';
         elBadgeText.textContent = isEs ? 'VÁLIDO' : 'VALID';
       } else if (warnings.length > 0) {
@@ -836,10 +949,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const prof = PROFESSION_DATA[state.profession];
 
     grid.innerHTML = Object.keys(state.abilities).map(stat => {
-      const score = state.abilities[stat];
+      const baseScore = state.abilities[stat];
+      const effScore = getEffectiveAbilityScore(stat);
       const [min, max] = limits[stat];
       const reqMin = prof && prof.reqs[stat] ? prof.reqs[stat] : null;
-      let resMod = getResMod(score);
+      let resMod = getResMod(effScore);
 
       if (state.faction === 'concord' && state.concordResModStat === stat) {
         resMod += 1;
@@ -847,17 +961,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
       const modText = resMod >= 0 ? `+${resMod}` : `${resMod}`;
 
+      let bonusBadge = '';
+      if (state.species === 'human' && state.faction === 'orion' && stat === 'PER') {
+        bonusBadge = `<span class="cb-badge-free" style="margin-left:0.3rem; font-size: 0.7rem;">+1 Orión</span>`;
+      } else if (state.species === 'human' && state.faction === 'borealis' && stat === 'INT') {
+        bonusBadge = `<span class="cb-badge-free" style="margin-left:0.3rem; font-size: 0.7rem;">+1 Boreal</span>`;
+      }
+
       return `
         <div class="cb-ability-card">
           <div class="cb-ability-header">
-            <span class="cb-ability-name">${stat}</span>
+            <span class="cb-ability-name">${stat}${bonusBadge}</span>
             <span class="cb-ability-range">[${min} - ${max}]</span>
           </div>
 
           <div class="cb-ability-controls">
-            <button class="cb-btn-score" data-stat="${stat}" data-dir="-1" ${score <= min ? 'disabled' : ''}>-</button>
-            <span class="cb-score-display">${score}</span>
-            <button class="cb-btn-score" data-stat="${stat}" data-dir="1" ${score >= max ? 'disabled' : ''}>+</button>
+            <button class="cb-btn-score" data-stat="${stat}" data-dir="-1" ${baseScore <= min ? 'disabled' : ''}>-</button>
+            <span class="cb-score-display">${effScore}</span>
+            <button class="cb-btn-score" data-stat="${stat}" data-dir="1" ${baseScore >= max ? 'disabled' : ''}>+</button>
           </div>
 
           <div class="cb-res-modifier">
@@ -884,7 +1005,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const resSummary = document.getElementById('cb-res-summary');
     if (resSummary) {
       resSummary.innerHTML = Object.keys(state.abilities).map(stat => {
-        let mod = getResMod(state.abilities[stat]);
+        let mod = getResMod(getEffectiveAbilityScore(stat));
         if (state.faction === 'concord' && state.concordResModStat === stat) mod += 1;
         const modText = mod >= 0 ? `+${mod}` : `${mod}`;
         return `
@@ -898,9 +1019,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const derivedSummary = document.getElementById('cb-derived-summary');
     if (derivedSummary) {
-      const actionCheck = Math.floor((state.abilities.DEX + state.abilities.INT) / 2) + 1;
-      const actionsPerRound = getActionsPerRound(state.abilities.CON + state.abilities.WIL);
-      const mov = getMovementRates(state.abilities.STR + state.abilities.DEX);
+      const effDEX = getEffectiveAbilityScore('DEX');
+      const effINT = getEffectiveAbilityScore('INT');
+      const effCON = getEffectiveAbilityScore('CON');
+      const effWIL = getEffectiveAbilityScore('WIL');
+      const effSTR = getEffectiveAbilityScore('STR');
+
+      const actionCheck = Math.floor((effDEX + effINT) / 2) + 1;
+      const actionsPerRound = getActionsPerRound(effCON + effWIL);
+      const mov = getMovementRates(effSTR + effDEX);
 
       derivedSummary.innerHTML = `
         <div class="cb-derived-card">
@@ -915,158 +1042,15 @@ document.addEventListener('DOMContentLoaded', () => {
         </div>
         <div class="cb-derived-card">
           <h4 class="cb-derived-title">${isEs ? 'Salud y Durabilidad' : 'Health & Durability'}</h4>
-          <div class="cb-track-box"><span>Wounds / Stun</span><span class="cb-track-val">${state.abilities.CON} / ${state.abilities.CON}</span></div>
-          <div class="cb-track-box"><span>Mortal / Fatigue</span><span class="cb-track-val">${Math.ceil(state.abilities.CON / 2)} / ${Math.ceil(state.abilities.CON / 2)}</span></div>
+          <div class="cb-track-box"><span>Wounds / Stun</span><span class="cb-track-val">${effCON} / ${effCON}</span></div>
+          <div class="cb-track-box"><span>Mortal / Fatigue</span><span class="cb-track-val">${Math.ceil(effCON / 2)} / ${Math.ceil(effCON / 2)}</span></div>
         </div>
       `;
     }
   }
 
-  // STEP 5: SKILLS
+  // STEP 5: PERKS & FLAWS
   function renderStep5() {
-    const listEl = document.getElementById('cb-skills-list');
-    if (!listEl || !data.skillsTable || !data.skillsTable.items) return;
-
-    const searchTerm = (document.getElementById('cb-skill-search')?.value || '').toLowerCase();
-    const catFilter = document.getElementById('cb-skill-category-filter')?.value || 'ALL';
-    const favoredOnly = document.getElementById('cb-skill-favored-only')?.checked || false;
-
-    let html = '';
-
-    data.skillsTable.items.forEach(category => {
-      if (catFilter !== 'ALL' && category.skill !== catFilter) return;
-
-      category.items.forEach(broadSkill => {
-        let isFreeBroad = isSpeciesFreeBroad(broadSkill) || (state.faction === 'voidcorp' && (broadSkill.skill.includes('Business') || broadSkill.skill.includes('Negocios')));
-        let broadFavored = isFavored(broadSkill.skill, category.skill);
-        let broadBought = state.skills[broadSkill.skill]?.ranks > 0 || isFreeBroad;
-
-        if (favoredOnly && !broadFavored) return;
-
-        let matchesSearch = broadSkill.skill.toLowerCase().includes(searchTerm);
-        let childMatches = broadSkill.items && broadSkill.items.some(s => s.skill.toLowerCase().includes(searchTerm));
-        if (searchTerm && !matchesSearch && !childMatches) return;
-
-        let discount = 0;
-        if (state.faction === 'orlamu' && state.profession === 'mindwalker' && category.skill === 'Psionics') discount += 1;
-
-        let baseBroadCost = broadFavored ? Math.max(1, broadSkill.cost - 1) : broadSkill.cost;
-        let actualBroadCost = isFreeBroad ? 0 : Math.max(0, baseBroadCost - discount);
-        let broadAbilityVal = state.abilities[broadSkill.attribute] || 10;
-        let broadOrd = broadAbilityVal;
-        let broadGood = Math.floor(broadOrd / 2);
-        let broadAmaz = Math.floor(broadOrd / 4);
-
-        let broadTotalSpent = broadBought ? (isFreeBroad ? 0 : actualBroadCost) : 0;
-
-        html += `
-          <div class="cb-skill-row broad ${broadFavored ? 'favored' : ''}">
-            <div class="cb-skill-info">
-              <span class="cb-skill-title">
-                ${broadSkill.skill}
-                ${isFreeBroad ? `<span class="cb-badge-free">${isEs ? 'ESPECIE (GRATIS)' : 'SPECIES (FREE)'}</span>` : ''}
-                ${broadFavored ? `<span class="cb-badge-favored">${isEs ? 'FAVORECIDA' : 'FAVORED'}</span>` : ''}
-              </span>
-              <span class="cb-skill-meta">
-                <span>[${broadSkill.attribute}: ${broadAbilityVal}]</span>
-                <span>${isEs ? 'Objetivo' : 'Target'}: <strong>${broadOrd} / ${broadGood} / ${broadAmaz}</strong></span>
-                <span>${isEs ? 'Coste' : 'Cost'}: ${isFreeBroad ? (isEs ? '0 SP (Gratis)' : '0 SP (Free)') : `${actualBroadCost} SP (AP: ${broadSkill.cost})`}</span>
-                <span style="color: var(--accent-cyan); font-weight: bold;">${isEs ? 'Total' : 'Total'}: <strong>${broadTotalSpent} SP</strong></span>
-              </span>
-            </div>
-            <div class="cb-rank-controls">
-              <span class="cb-skill-total-badge ${broadTotalSpent > 0 ? 'active' : ''}">${broadTotalSpent} SP</span>
-              <button class="cb-btn-rank ${broadBought ? 'active' : ''}" data-skill="${broadSkill.skill}" data-is-broad="true" data-cost="${broadSkill.cost}" data-cat="${category.skill}" ${isFreeBroad ? 'disabled title="Free Species Skill"' : ''}>
-                ${broadBought ? '✓' : '+'}
-              </button>
-            </div>
-          </div>
-        `;
-
-        let hasChildBought = broadSkill.items && broadSkill.items.some(specSkill => state.skills[specSkill.skill]?.ranks > 0);
-
-        if ((broadBought || hasChildBought) && broadSkill.items) {
-          broadSkill.items.forEach(specSkill => {
-            if (searchTerm && !specSkill.skill.toLowerCase().includes(searchTerm) && !matchesSearch) return;
-
-            let specFavored = isFavored(specSkill.skill, category.skill, broadSkill.skill);
-            let currentRanks = state.skills[specSkill.skill]?.ranks || 0;
-
-            let specDiscount = 0;
-            if (state.faction === 'rigunmor' && (specSkill.skill.includes('bargain') || specSkill.skill.includes('regatear'))) specDiscount += 1;
-            if (state.faction === 'orlamu' && state.profession === 'mindwalker' && category.skill === 'Psionics') specDiscount += 1;
-
-            let baseSpecCost = specFavored ? Math.max(1, specSkill.cost - 1) : specSkill.cost;
-            let actualSpecCost = Math.max(0, baseSpecCost - specDiscount);
-            let specTotalSpent = actualSpecCost * currentRanks;
-            let totalSpecScore = broadAbilityVal + currentRanks;
-            let specOrd = totalSpecScore;
-            let specGood = Math.floor(specOrd / 2);
-            let specAmaz = Math.floor(specOrd / 4);
-
-            html += `
-              <div class="cb-skill-row ${specFavored ? 'favored' : ''}" style="padding-left: 2.5rem;">
-                <div class="cb-skill-info">
-                  <span class="cb-skill-title">
-                    › ${specSkill.skill}
-                    ${specFavored ? `<span class="cb-badge-favored">${isEs ? 'FAVORECIDA' : 'FAVORED'}</span>` : ''}
-                  </span>
-                  <span class="cb-skill-meta">
-                    <span>${isEs ? 'Rangos' : 'Ranks'}: +${currentRanks}</span>
-                    <span>${isEs ? 'Puntuación Total' : 'Total Score'}: <strong>${totalSpecScore}</strong></span>
-                    <span>${isEs ? 'Objetivo' : 'Target'}: <strong>${specOrd} / ${specGood} / ${specAmaz}</strong></span>
-                    <span>${isEs ? 'Precio' : 'Cost'}: ${actualSpecCost} SP/rank (AP: ${specSkill.cost})</span>
-                    <span style="color: var(--accent-cyan); font-weight: bold;">${isEs ? 'Total' : 'Total'}: <strong>${specTotalSpent} SP</strong></span>
-                  </span>
-                </div>
-                <div class="cb-rank-controls">
-                  <span class="cb-skill-total-badge ${specTotalSpent > 0 ? 'active' : ''}">${specTotalSpent} SP</span>
-                  ${[0, 1, 2, 3].map(r => `
-                    <button class="cb-btn-rank ${currentRanks === r ? 'active' : ''}" data-skill="${specSkill.skill}" data-rank="${r}" data-cost="${specSkill.cost}" data-cat="${category.skill}">
-                      ${r}
-                    </button>
-                  `).join('')}
-                </div>
-              </div>
-            `;
-          });
-        }
-      });
-    });
-
-    listEl.innerHTML = html;
-
-    listEl.querySelectorAll('.cb-btn-rank').forEach(btn => {
-      btn.addEventListener('click', () => {
-        const skillName = btn.dataset.skill;
-        const isBroad = btn.dataset.isBroad === 'true';
-        const cost = parseInt(btn.dataset.cost);
-        const cat = btn.dataset.cat;
-
-        if (isBroad) {
-          const currentlyBought = state.skills[skillName]?.ranks > 0;
-          if (currentlyBought) {
-            delete state.skills[skillName];
-          } else {
-            state.skills[skillName] = { ranks: 1, isBroad: true, standardCost: cost, category: cat };
-          }
-        } else {
-          const rank = parseInt(btn.dataset.rank);
-          if (rank === 0) {
-            delete state.skills[skillName];
-          } else {
-            state.skills[skillName] = { ranks: rank, isBroad: false, standardCost: cost, category: cat };
-          }
-        }
-
-        renderStep5();
-        recalculateBudgets();
-      });
-    });
-  }
-
-  // STEP 6: PERKS & FLAWS
-  function renderStep6() {
     const perksContainer = document.getElementById('cb-perks-list');
     const flawsContainer = document.getElementById('cb-flaws-list');
 
@@ -1168,7 +1152,7 @@ document.addEventListener('DOMContentLoaded', () => {
           }
 
           saveStateToLocalStorage();
-          renderStep6();
+          renderStep5();
           recalculateBudgets();
         });
       });
@@ -1250,11 +1234,154 @@ document.addEventListener('DOMContentLoaded', () => {
           }
 
           saveStateToLocalStorage();
-          renderStep6();
+          renderStep5();
           recalculateBudgets();
         });
       });
     }
+  }
+
+  // STEP 6: SKILLS
+  function renderStep6() {
+    const listEl = document.getElementById('cb-skills-list');
+    if (!listEl || !data.skillsTable || !data.skillsTable.items) return;
+
+    const searchTerm = (document.getElementById('cb-skill-search')?.value || '').toLowerCase();
+    const catFilter = document.getElementById('cb-skill-category-filter')?.value || 'ALL';
+    const favoredOnly = document.getElementById('cb-skill-favored-only')?.checked || false;
+
+    let html = '';
+
+    data.skillsTable.items.forEach(category => {
+      if (catFilter !== 'ALL' && category.skill !== catFilter) return;
+
+      category.items.forEach(broadSkill => {
+        let isFreeBroad = isSpeciesFreeBroad(broadSkill) || (state.faction === 'voidcorp' && (broadSkill.skill.includes('Business') || broadSkill.skill.includes('Negocios')));
+        let broadFavored = isFavored(broadSkill.skill, category.skill);
+        let broadBought = state.skills[broadSkill.skill]?.ranks > 0 || isFreeBroad;
+
+        if (favoredOnly && !broadFavored) return;
+
+        let matchesSearch = broadSkill.skill.toLowerCase().includes(searchTerm);
+        let childMatches = broadSkill.items && broadSkill.items.some(s => s.skill.toLowerCase().includes(searchTerm));
+        if (searchTerm && !matchesSearch && !childMatches) return;
+
+        let discount = 0;
+        if (state.faction === 'orlamu' && state.profession === 'mindwalker' && category.skill === 'Psionics') discount += 1;
+
+        let baseBroadCost = broadFavored ? Math.max(1, broadSkill.cost - 1) : broadSkill.cost;
+        let actualBroadCost = isFreeBroad ? 0 : Math.max(0, baseBroadCost - discount);
+        let broadAbilityVal = state.abilities[broadSkill.attribute] || 10;
+        let broadOrd = broadAbilityVal;
+        let broadGood = Math.floor(broadOrd / 2);
+        let broadAmaz = Math.floor(broadOrd / 4);
+
+        let broadTotalSpent = broadBought ? (isFreeBroad ? 0 : actualBroadCost) : 0;
+
+        html += `
+          <div class="cb-skill-row broad ${broadFavored ? 'favored' : ''}">
+            <div class="cb-skill-info">
+              <span class="cb-skill-title">
+                ${broadSkill.skill}
+                ${isFreeBroad ? `<span class="cb-badge-free">${isEs ? 'ESPECIE (GRATIS)' : 'SPECIES (FREE)'}</span>` : ''}
+                ${broadFavored ? `<span class="cb-badge-favored">${isEs ? 'FAVORECIDA' : 'FAVORED'}</span>` : ''}
+              </span>
+              <span class="cb-skill-meta">
+                <span>[${broadSkill.attribute}: ${broadAbilityVal}]</span>
+                <span>${isEs ? 'Objetivo' : 'Target'}: <strong>${broadOrd} / ${broadGood} / ${broadAmaz}</strong></span>
+                <span>${isEs ? 'Coste' : 'Cost'}: ${isFreeBroad ? (isEs ? '0 SP (Gratis)' : '0 SP (Free)') : `${actualBroadCost} SP`}</span>
+                <span style="color: var(--accent-cyan); font-weight: bold;">${isEs ? 'Total' : 'Total'}: <strong>${broadTotalSpent} SP</strong></span>
+              </span>
+            </div>
+            <div class="cb-rank-controls">
+              <span class="cb-skill-total-badge ${broadTotalSpent > 0 ? 'active' : ''}">${broadTotalSpent} SP</span>
+              <button class="cb-btn-rank ${broadBought ? 'active' : ''}" data-skill="${broadSkill.skill}" data-is-broad="true" data-cost="${broadSkill.cost}" data-cat="${category.skill}" ${isFreeBroad ? 'disabled title="Free Species Skill"' : ''}>
+                ${broadBought ? '✓' : '+'}
+              </button>
+            </div>
+          </div>
+        `;
+
+        let hasChildBought = broadSkill.items && broadSkill.items.some(specSkill => state.skills[specSkill.skill]?.ranks > 0);
+
+        if ((broadBought || hasChildBought) && broadSkill.items) {
+          broadSkill.items.forEach(specSkill => {
+            if (searchTerm && !specSkill.skill.toLowerCase().includes(searchTerm) && !matchesSearch) return;
+
+            let specFavored = isFavored(specSkill.skill, category.skill, broadSkill.skill);
+            let currentRanks = state.skills[specSkill.skill]?.ranks || 0;
+
+            let specDiscount = 0;
+            if (state.faction === 'rigunmor' && (specSkill.skill.includes('bargain') || specSkill.skill.includes('regatear'))) specDiscount += 1;
+            if (state.faction === 'orlamu' && state.profession === 'mindwalker' && category.skill === 'Psionics') specDiscount += 1;
+
+            let baseSpecCost = specFavored ? Math.max(1, specSkill.cost - 1) : specSkill.cost;
+            let actualSpecCost = Math.max(0, baseSpecCost - specDiscount);
+            let specTotalSpent = actualSpecCost * currentRanks;
+            let totalSpecScore = broadAbilityVal + currentRanks;
+            let specOrd = totalSpecScore;
+            let specGood = Math.floor(specOrd / 2);
+            let specAmaz = Math.floor(specOrd / 4);
+
+            html += `
+              <div class="cb-skill-row ${specFavored ? 'favored' : ''}" style="padding-left: 2.5rem;">
+                <div class="cb-skill-info">
+                  <span class="cb-skill-title">
+                    › ${specSkill.skill}
+                    ${specFavored ? `<span class="cb-badge-favored">${isEs ? 'FAVORECIDA' : 'FAVORED'}</span>` : ''}
+                  </span>
+                  <span class="cb-skill-meta">
+                    <span>${isEs ? 'Rangos' : 'Ranks'}: +${currentRanks}</span>
+                    <span>${isEs ? 'Puntuación Total' : 'Total Score'}: <strong>${totalSpecScore}</strong></span>
+                    <span>${isEs ? 'Objetivo' : 'Target'}: <strong>${specOrd} / ${specGood} / ${specAmaz}</strong></span>
+                    <span>${isEs ? 'Precio' : 'Cost'}: ${actualSpecCost} SP/rank</span>
+                    <span style="color: var(--accent-cyan); font-weight: bold;">${isEs ? 'Total' : 'Total'}: <strong>${specTotalSpent} SP</strong></span>
+                  </span>
+                </div>
+                <div class="cb-rank-controls">
+                  <span class="cb-skill-total-badge ${specTotalSpent > 0 ? 'active' : ''}">${specTotalSpent} SP</span>
+                  ${[0, 1, 2, 3].map(r => `
+                    <button class="cb-btn-rank ${currentRanks === r ? 'active' : ''}" data-skill="${specSkill.skill}" data-rank="${r}" data-cost="${specSkill.cost}" data-cat="${category.skill}">
+                      ${r}
+                    </button>
+                  `).join('')}
+                </div>
+              </div>
+            `;
+          });
+        }
+      });
+    });
+
+    listEl.innerHTML = html;
+
+    listEl.querySelectorAll('.cb-btn-rank').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const skillName = btn.dataset.skill;
+        const isBroad = btn.dataset.isBroad === 'true';
+        const cost = parseInt(btn.dataset.cost);
+        const cat = btn.dataset.cat;
+
+        if (isBroad) {
+          const currentlyBought = state.skills[skillName]?.ranks > 0;
+          if (currentlyBought) {
+            delete state.skills[skillName];
+          } else {
+            state.skills[skillName] = { ranks: 1, isBroad: true, standardCost: cost, category: cat };
+          }
+        } else {
+          const rank = parseInt(btn.dataset.rank);
+          if (rank === 0) {
+            delete state.skills[skillName];
+          } else {
+            state.skills[skillName] = { ranks: rank, isBroad: false, standardCost: cost, category: cat };
+          }
+        }
+
+        renderStep6();
+        recalculateBudgets();
+      });
+    });
   }
 
   // STEP 7: SHEET & EXPORT
@@ -1265,9 +1392,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const faction = FACTION_DATA[state.faction];
     const species = SPECIES_DATA[state.species];
     const prof = PROFESSION_DATA[state.profession];
-    const actionCheck = Math.floor((state.abilities.DEX + state.abilities.INT) / 2) + 1;
-    const actionsPerRound = getActionsPerRound(state.abilities.CON + state.abilities.WIL);
-    const mov = getMovementRates(state.abilities.STR + state.abilities.DEX);
+    const actionCheck = Math.floor((getEffectiveAbilityScore('DEX') + getEffectiveAbilityScore('INT')) / 2) + 1;
+    const actionsPerRound = getActionsPerRound(getEffectiveAbilityScore('CON') + getEffectiveAbilityScore('WIL'));
+    const mov = getMovementRates(getEffectiveAbilityScore('STR') + getEffectiveAbilityScore('DEX'));
 
     // Build character sheet skill table
     let skillRowsHtml = '';
@@ -1292,7 +1419,7 @@ document.addEventListener('DOMContentLoaded', () => {
       broadList.forEach(broad => {
         const broadInfo = purchasedSkills[broad.skill];
         const att = broad.attribute || 'INT';
-        const abilityScore = state.abilities[att] || 10;
+        const abilityScore = getEffectiveAbilityScore(att);
         const broadOrd = abilityScore;
         const broadGood = Math.floor(broadOrd / 2);
         const broadAmaz = Math.floor(broadOrd / 4);
@@ -1334,6 +1461,65 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }
 
+    // Perks and Flaws formatting
+    const formattedPerks = [...species.freePerks, ...state.perks].map(p => typeof p === 'string' ? p : `${p.name}${p.level ? ` (Nvl ${p.level})` : ''}`).join(', ');
+    const formattedFlaws = state.flaws.map(f => typeof f === 'string' ? f : `${f.name}${f.level ? ` (Nvl ${f.level})` : ''}`).join(', ');
+
+    const spentAP = state.isFinalized ? calculateCampaignSpentAP() : 0;
+    const availableAP = (state.earnedAP || 0) - spentAP;
+    const titleObj = getCharacterTitle(spentAP);
+
+    let advancementBannerHtml = '';
+    if (!state.isFinalized) {
+      advancementBannerHtml = `
+        <div class="cb-sheet-section mb4" style="background: rgba(10, 61, 84, 0.4); border: 2px solid var(--accent-cyan); text-align: center; padding: 1.25rem;">
+          <h3 class="neon-cyan" style="margin-top: 0;">${isEs ? '¿Personaje Listo para la Aventura?' : 'Ready for Campaign Play?'}</h3>
+          <p class="silver mb3" style="font-size: 0.85rem;">${isEs ? 'Al finalizar la creación, el personaje pasará al modo de Avance de Campaña a 0 PA (Novato). Podrás otorgar Puntos de Avance (PA) para entrenar habilidades y mejorar características.' : 'Finalizing locks creation baseline at 0 AP (Rookie). You can then award Advancement Points (AP) during campaign play to train skills and improve scores.'}</p>
+          <button type="button" class="cb-btn cb-btn-primary" id="cb-btn-finalize-creation">
+            <span>🛡️</span> <span>${isEs ? 'Finalizar Creación e Iniciar Avance de Campaña' : 'Finalize Character & Begin Campaign'}</span>
+          </button>
+        </div>
+      `;
+    } else {
+      advancementBannerHtml = `
+        <div class="cb-sheet-section mb4" style="background: rgba(16, 37, 66, 0.7); border: 2px solid #a6c12e; padding: 1.25rem;">
+          <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem;">
+            <div>
+              <span class="cb-badge-free" style="background: rgba(166, 193, 46, 0.25); color: #a6c12e; border-color: #a6c12e; font-size: 0.8rem; padding: 0.2rem 0.6rem;">
+                🛡️ ${isEs ? 'MODO AVANCE DE CAMPAÑA' : 'CAMPAIGN ADVANCEMENT MODE'}
+              </span>
+              <h3 class="neon-cyan" style="margin: 0.4rem 0 0 0;">${isEs ? 'Título:' : 'Title:'} ${titleObj.title} (${spentAP} PA ${isEs ? 'Gastados' : 'Spent'})</h3>
+              <div class="silver f6" style="margin-top: 0.2rem;">
+                ${isEs ? 'Máx. Rango Habilidad:' : 'Max Skill Rank:'} <strong>${titleObj.maxSkillRank}</strong> | ${isEs ? 'Máx. Habilidades Generales:' : 'Max Broad Skills:'} <strong>${titleObj.maxBroad}</strong>
+              </div>
+            </div>
+            <button type="button" class="cb-btn cb-btn-secondary" id="cb-btn-unfinalize" style="font-size: 0.8rem;">
+              <span>🔓</span> <span>${isEs ? 'Editar Creación Inicial' : 'Edit Starting Character'}</span>
+            </button>
+          </div>
+
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; background: rgba(0,0,0,0.3); padding: 1rem; border-radius: 6px; align-items: center;" class="mb3">
+            <div>
+              <label style="display: block; font-size: 0.75rem; color: #8099AC; margin-bottom: 0.3rem;">${isEs ? 'PA Otorgados por DJ' : 'Earned AP (GM Awarded)'}:</label>
+              <div style="display: flex; gap: 0.4rem; align-items: center;">
+                <input type="number" id="cb-input-earned-ap" class="cb-input" value="${state.earnedAP || 0}" min="0" style="width: 80px; text-align: center; padding: 0.3rem;">
+                <button type="button" class="cb-btn-score" id="cb-btn-add-5ap" style="width: auto; padding: 0.3rem 0.6rem; font-size: 0.75rem;">+5 PA</button>
+                <button type="button" class="cb-btn-score" id="cb-btn-add-10ap" style="width: auto; padding: 0.3rem 0.6rem; font-size: 0.75rem;">+10 PA</button>
+              </div>
+            </div>
+            <div>
+              <span style="display:block; font-size: 0.75rem; color: #8099AC;">${isEs ? 'PA Gastados' : 'Spent AP'}:</span>
+              <span style="font-size: 1.3rem; font-family: 'Michroma', sans-serif; color: #a6c12e;">${spentAP} PA</span>
+            </div>
+            <div>
+              <span style="display:block; font-size: 0.75rem; color: #8099AC;">${isEs ? 'PA Disponibles' : 'Available AP'}:</span>
+              <span style="font-size: 1.3rem; font-family: 'Michroma', sans-serif; color: ${availableAP >= 0 ? 'var(--accent-cyan)' : '#ff4d4d'};">${availableAP} PA</span>
+            </div>
+          </div>
+        </div>
+      `;
+    }
+
     container.innerHTML = `
       <div class="cb-sheet">
         <div class="cb-sheet-header">
@@ -1348,16 +1534,19 @@ document.addEventListener('DOMContentLoaded', () => {
           </button>
         </div>
 
+        ${advancementBannerHtml}
+
         <div class="cb-sheet-grid">
           <!-- Primary Ability Scores -->
           <div class="cb-sheet-section">
             <h3 class="cb-sheet-sec-title">${isEs ? 'Características' : 'Ability Scores'}</h3>
-            ${Object.entries(state.abilities).map(([stat, val]) => {
-              let mod = getResMod(val);
+            ${Object.keys(state.abilities).map(stat => {
+              const effVal = getEffectiveAbilityScore(stat);
+              let mod = getResMod(effVal);
               if (state.faction === 'concord' && state.concordResModStat === stat) mod += 1;
               return `
                 <div class="cb-track-box">
-                  <span><strong>${stat}:</strong> ${val}</span>
+                  <span><strong>${stat}:</strong> ${effVal}</span>
                   <span class="cb-track-val">Res: ${mod >= 0 ? '+' : ''}${mod}</span>
                 </div>
               `;
@@ -1379,11 +1568,11 @@ document.addEventListener('DOMContentLoaded', () => {
             <h4 class="neon-cyan f6 mt3 mb2">${isEs ? 'Salud y Durabilidad' : 'Durability / Health'}</h4>
             <div class="cb-track-box">
               <span>Wounds / Stun</span>
-              <span class="cb-track-val">${state.abilities.CON}</span>
+              <span class="cb-track-val">${getEffectiveAbilityScore('CON')}</span>
             </div>
             <div class="cb-track-box">
               <span>Mortal / Fatigue</span>
-              <span class="cb-track-val">${Math.ceil(state.abilities.CON / 2)}</span>
+              <span class="cb-track-val">${Math.ceil(getEffectiveAbilityScore('CON') / 2)}</span>
             </div>
           </div>
 
@@ -1425,11 +1614,50 @@ document.addEventListener('DOMContentLoaded', () => {
           <h3 class="cb-sheet-sec-title">${isEs ? 'Beneficios de Facción, Ventajas y Defectos' : 'Faction Benefits, Perks & Flaws'}</h3>
           <p><strong>${isEs ? 'Facción' : 'Faction'}:</strong> ${faction ? faction.name : ''}</p>
           <p><em>${faction ? faction.bonus : ''}</em></p>
-          <p class="mt2"><strong>Perks:</strong> ${[...species.freePerks, ...state.perks].join(', ') || (isEs ? 'Ninguna' : 'None')}</p>
-          <p><strong>Flaws:</strong> ${state.flaws.join(', ') || (isEs ? 'Ninguno' : 'None')}</p>
+          <p class="mt2"><strong>Perks:</strong> ${formattedPerks || (isEs ? 'Ninguna' : 'None')}</p>
+          <p><strong>Flaws:</strong> ${formattedFlaws || (isEs ? 'Ninguno' : 'None')}</p>
         </div>
       </div>
     `;
+
+    // Attach listeners for campaign advancement
+    document.getElementById('cb-btn-finalize-creation')?.addEventListener('click', () => {
+      state.isFinalized = true;
+      saveStateToLocalStorage();
+      renderStep7();
+      recalculateBudgets();
+    });
+
+    document.getElementById('cb-btn-unfinalize')?.addEventListener('click', () => {
+      if (confirm(isEs ? '¿Volver al modo de edición de creación?' : 'Return to character creation mode?')) {
+        state.isFinalized = false;
+        saveStateToLocalStorage();
+        renderStep7();
+        recalculateBudgets();
+      }
+    });
+
+    const inputEarned = document.getElementById('cb-input-earned-ap');
+    inputEarned?.addEventListener('change', e => {
+      state.earnedAP = Math.max(0, parseInt(e.target.value, 10) || 0);
+      saveStateToLocalStorage();
+      renderStep7();
+      recalculateBudgets();
+    });
+
+    document.getElementById('cb-btn-add-5ap')?.addEventListener('click', () => {
+      state.earnedAP = (state.earnedAP || 0) + 5;
+      saveStateToLocalStorage();
+      renderStep7();
+      recalculateBudgets();
+    });
+
+    document.getElementById('cb-btn-add-10ap')?.addEventListener('click', () => {
+      state.earnedAP = (state.earnedAP || 0) + 10;
+      saveStateToLocalStorage();
+      renderStep7();
+      recalculateBudgets();
+    });
   }
 
   // Attach Event Listeners

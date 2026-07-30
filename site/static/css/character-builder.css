@@ -7,13 +7,20 @@ html, body, .scifi-body {
   overflow: visible !important;
 }
 
-/* Character Builder Sidebar & Main Layout Grid */
+/* Character Builder Dual Sidebar Grid (Left Nav, Center Main, Right Summary/Tracker) */
 .cb-builder-layout {
   display: grid;
-  grid-template-columns: 280px 1fr;
-  gap: 2rem;
+  grid-template-columns: 230px 1fr 270px;
+  gap: 1.5rem;
   align-items: start;
   position: relative;
+}
+
+@media (max-width: 1180px) {
+  .cb-builder-layout {
+    grid-template-columns: 210px 1fr 240px;
+    gap: 1rem;
+  }
 }
 
 @media (max-width: 960px) {
@@ -22,30 +29,30 @@ html, body, .scifi-body {
   }
 }
 
-/* Sticky Always-Visible Sidebar */
+/* Sticky Always-Visible Sidebars */
 .cb-sidebar {
   position: sticky;
   top: 80px;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1.25rem;
   background: rgba(10, 25, 45, 0.94);
   backdrop-filter: blur(14px);
   border: 1px solid var(--accent-cyan);
   border-radius: 12px;
-  padding: 1.25rem;
+  padding: 1.1rem;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5), inset 0 0 15px rgba(56, 158, 189, 0.15);
   max-height: calc(100vh - 100px);
   overflow-y: auto;
   z-index: 90;
 }
 
-#cb-budget-bar {
-  position: sticky;
-  top: 0;
-  background: rgba(10, 25, 45, 0.98);
-  z-index: 10;
-  padding-bottom: 0.5rem;
+.cb-nav-sidebar {
+  padding: 1rem 0.85rem;
+}
+
+.cb-summary-sidebar {
+  padding: 1.1rem;
 }
 
 .cb-sidebar-title {
@@ -57,6 +64,37 @@ html, body, .scifi-body {
   margin: 0 0 0.75rem 0;
   padding-bottom: 0.4rem;
   border-bottom: 1px solid rgba(56, 158, 189, 0.3);
+}
+
+/* Tracked Choices Box */
+.cb-tracker-box {
+  background: rgba(14, 42, 69, 0.5);
+  border: 1px solid rgba(75, 181, 193, 0.25);
+  border-radius: 6px;
+  padding: 0.4rem 0.65rem;
+  margin-bottom: 0.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.cb-tracker-label {
+  font-family: 'Michroma', sans-serif;
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  color: #8099AC;
+}
+
+.cb-tracker-val {
+  font-size: 0.78rem;
+  font-weight: bold;
+  color: #e0f2fe;
+  text-align: right;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 140px;
 }
 
 /* Sidebar Budget Section */

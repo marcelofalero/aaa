@@ -2,41 +2,13 @@
 <div class="main-container cb-container">
   {{ partial "breadcrumbs.html" . }}
 
-  <!-- Builder 2-Column Layout -->
+  <!-- Builder 3-Column Layout with 2 Sidebars -->
   <div class="cb-builder-layout">
 
-    <!-- Sticky Always-Visible Sidebar -->
-    <aside class="cb-sidebar" id="cb-sidebar">
-      
-      <!-- Budget Summary Box -->
-      <div class="cb-sidebar-section" id="cb-budget-bar">
-        <h3 class="cb-sidebar-title">{{ if eq .Language.Lang "es" }}Resumen de Puntos{{ else }}Point Summary{{ end }}</h3>
-        
-        <div class="cb-budget-item">
-          <span class="cb-budget-label">{{ if eq .Language.Lang "es" }}Puntos Característica{{ else }}Ability Score Points{{ end }}</span>
-          <span class="cb-budget-val" id="cb-val-ability-pts">60 / 60</span>
-        </div>
-        
-        <div class="cb-budget-item">
-          <span class="cb-budget-label">{{ if eq .Language.Lang "es" }}Puntos Habilidad{{ else }}Skill Points Remaining{{ end }}</span>
-          <span class="cb-budget-val" id="cb-val-skill-pts">70 / 70</span>
-        </div>
-        
-        <div class="cb-budget-item">
-          <span class="cb-budget-label">{{ if eq .Language.Lang "es" }}Puntos Avance (PA){{ else }}Advancement Points (AP){{ end }}</span>
-          <span class="cb-budget-val" id="cb-val-ap-pts">0</span>
-        </div>
-
-        <div class="cb-budget-status-wrap">
-          <span class="cb-status-badge badge-success" id="cb-status-badge">
-            <span>✓</span> <span id="cb-status-text">{{ if eq .Language.Lang "es" }}VÁLIDO{{ else }}VALID{{ end }}</span>
-          </span>
-        </div>
-      </div>
-
-      <!-- Wizard Navigation Steps (Vertical List) -->
+    <!-- LEFT SIDEBAR: Wizard Navigation Steps -->
+    <aside class="cb-sidebar cb-nav-sidebar" id="cb-nav-sidebar">
       <div class="cb-wizard-nav" id="cb-wizard-nav">
-        <h3 class="cb-sidebar-title">{{ if eq .Language.Lang "es" }}Pasos de Creación{{ else }}Builder Steps{{ end }}</h3>
+        <h3 class="cb-sidebar-title">{{ if eq .Language.Lang "es" }}Navegación / Pasos{{ else }}Navigation / Steps{{ end }}</h3>
         <button type="button" class="cb-step-btn active" data-step="1">
           <span class="cb-step-num">1</span>
           <span class="cb-step-text">{{ if eq .Language.Lang "es" }}Bio y Concepto{{ else }}Concept & Bio{{ end }}</span>
@@ -55,23 +27,21 @@
         </button>
         <button type="button" class="cb-step-btn" data-step="5">
           <span class="cb-step-num">5</span>
-          <span class="cb-step-text">{{ if eq .Language.Lang "es" }}Habilidades{{ else }}Skills{{ end }}</span>
+          <span class="cb-step-text">{{ if eq .Language.Lang "es" }}Ventajas y Defectos{{ else }}Perks & Flaws{{ end }}</span>
         </button>
         <button type="button" class="cb-step-btn" data-step="6">
           <span class="cb-step-num">6</span>
-          <span class="cb-step-text">{{ if eq .Language.Lang "es" }}Ventajas y Defectos{{ else }}Perks & Flaws{{ end }}</span>
+          <span class="cb-step-text">{{ if eq .Language.Lang "es" }}Habilidades{{ else }}Skills{{ end }}</span>
         </button>
         <button type="button" class="cb-step-btn" data-step="7">
           <span class="cb-step-num">7</span>
           <span class="cb-step-text">{{ if eq .Language.Lang "es" }}Hoja y Exportación{{ else }}Sheet & Export{{ end }}</span>
         </button>
       </div>
-
     </aside>
 
-    <!-- Main Builder Content Area -->
+    <!-- CENTER MAIN AREA: Builder Step Content Views -->
     <main class="cb-main-area">
-      <!-- Step Content Views -->
       <div id="cb-steps-wrapper">
     
     <!-- STEP 1: CONCEPT & BIO -->
@@ -174,15 +144,41 @@
       </div>
     </div>
 
-    <!-- STEP 5: SKILLS -->
+    <!-- STEP 5: PERKS & FLAWS -->
     <div class="cb-step-content" id="cb-step-5" style="display: none;">
-      <h2 class="neon-cyan">{{ if eq .Language.Lang "es" }}5. Compra de Habilidades{{ else }}5. Purchase Skills{{ end }}</h2>
+      <h2 class="neon-cyan">{{ if eq .Language.Lang "es" }}5. Defectos y Ventajas (Flaws & Perks){{ else }}5. Select Flaws & Perks{{ end }}</h2>
+      <p class="silver mb4">
+        {{ if eq .Language.Lang "es" }}
+        Puedes elegir hasta 3 Defectos (para ganar Puntos de Habilidad extra) y hasta 3 Ventajas (gastando Puntos de Habilidad). Selecciona el Nivel correspondiente en las opciones de múltiples grados.
+        {{ else }}
+        Select up to 3 voluntary Flaws (granting extra Skill Points) and up to 3 Perks (costing Skill Points). Select the specific Level/Degree for multi-tier options.
+        {{ end }}
+      </p>
+
+      <div class="cb-perks-flaws-stacked" style="display: flex; flex-direction: column; gap: 2rem;">
+        <!-- Top Section: Flaws -->
+        <div class="sci-fi-card">
+          <h3 class="neon-cyan mv0 mb3">{{ if eq .Language.Lang "es" }}Defectos (Flaws){{ else }}Flaws{{ end }}</h3>
+          <div id="cb-flaws-list"></div>
+        </div>
+
+        <!-- Bottom Section: Perks -->
+        <div class="sci-fi-card">
+          <h3 class="neon-cyan mv0 mb3">{{ if eq .Language.Lang "es" }}Ventajas (Perks){{ else }}Perks{{ end }}</h3>
+          <div id="cb-perks-list"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- STEP 6: SKILLS -->
+    <div class="cb-step-content" id="cb-step-6" style="display: none;">
+      <h2 class="neon-cyan">{{ if eq .Language.Lang "es" }}6. Compra de Habilidades{{ else }}6. Purchase Skills{{ end }}</h2>
       <p class="silver mb3">
         {{ if eq .Language.Lang "es" }}
-        Empiezas con <strong>70 Puntos de Habilidad</strong>. Compra Habilidades Generales (Base) y Especialidades (hasta rango 3 en creación).
+        Empiezas con <strong>70 Puntos de Habilidad</strong> (ajustados por tus Ventajas y Defectos). Compra Habilidades Generales (Base) y Especialidades (hasta rango 3 en creación).
         Las habilidades <strong>Favorecidas</strong> (por tu Trasfondo o Profesión) cuestan <strong>1 punto menos por rango</strong> de su precio estándar.
         {{ else }}
-        You start with <strong>70 Skill Points</strong> to spend on Broad and Specialty Skills (up to 3 ranks).
+        You start with <strong>70 Skill Points</strong> (adjusted by your Perks & Flaws) to spend on Broad and Specialty Skills (up to 3 ranks).
         <strong>Favored Skills</strong> (by Background or Profession) cost <strong>1 point less per rank</strong> than their Standard Price.
         {{ end }}
       </p>
@@ -208,35 +204,11 @@
       </div>
     </div>
 
-    <!-- STEP 6: PERKS & FLAWS -->
-    <div class="cb-step-content" id="cb-step-6" style="display: none;">
-      <h2 class="neon-cyan">{{ if eq .Language.Lang "es" }}6. Defectos y Ventajas (Flaws & Perks){{ else }}6. Select Flaws & Perks{{ end }}</h2>
-      <p class="silver mb4">
-        {{ if eq .Language.Lang "es" }}
-        Puedes elegir hasta 3 Defectos (para ganar Puntos de Habilidad extra) y hasta 3 Ventajas (gastando Puntos de Habilidad). Selecciona el Nivel correspondiente en las opciones de múltiples grados.
-        {{ else }}
-        Select up to 3 voluntary Flaws (granting extra Skill Points) and up to 3 Perks (costing Skill Points). Select the specific Level/Degree for multi-tier options.
-        {{ end }}
-      </p>
-
-      <div class="cb-perks-flaws-stacked" style="display: flex; flex-direction: column; gap: 2rem;">
-        <!-- Top Section: Flaws -->
-        <div class="sci-fi-card">
-          <h3 class="neon-cyan mv0 mb3">{{ if eq .Language.Lang "es" }}Defectos (Flaws){{ else }}Flaws{{ end }}</h3>
-          <div id="cb-flaws-list"></div>
-        </div>
-
-        <!-- Bottom Section: Perks -->
-        <div class="sci-fi-card">
-          <h3 class="neon-cyan mv0 mb3">{{ if eq .Language.Lang "es" }}Ventajas (Perks){{ else }}Perks{{ end }}</h3>
-          <div id="cb-perks-list"></div>
-        </div>
-      </div>
-    </div>
-
     <!-- STEP 7: SHEET & EXPORT -->
     <div class="cb-step-content" id="cb-step-7" style="display: none;">
       <div id="cb-character-sheet-container"></div>
+    </div>
+
     </div>
 
       <!-- Navigation Action Bar -->
@@ -264,6 +236,67 @@
         </div>
       </div>
     </main>
+
+    <!-- RIGHT SIDEBAR: Choices Tracker & Budget Summary -->
+    <aside class="cb-sidebar cb-summary-sidebar" id="cb-summary-sidebar">
+      
+      <!-- Choices Summary Box -->
+      <div class="cb-sidebar-section">
+        <h3 class="cb-sidebar-title">{{ if eq .Language.Lang "es" }}Elecciones Realizadas{{ else }}Tracked Choices{{ end }}</h3>
+        
+        <div class="cb-tracker-box">
+          <span class="cb-tracker-label">{{ if eq .Language.Lang "es" }}Nombre{{ else }}Name{{ end }}</span>
+          <span class="cb-tracker-val" id="cb-tracker-name">—</span>
+        </div>
+
+        <div class="cb-tracker-box">
+          <span class="cb-tracker-label">{{ if eq .Language.Lang "es" }}Facción{{ else }}Faction{{ end }}</span>
+          <span class="cb-tracker-val" id="cb-tracker-faction">—</span>
+        </div>
+
+        <div class="cb-tracker-box">
+          <span class="cb-tracker-label">{{ if eq .Language.Lang "es" }}Especie{{ else }}Species{{ end }}</span>
+          <span class="cb-tracker-val" id="cb-tracker-species">—</span>
+        </div>
+
+        <div class="cb-tracker-box">
+          <span class="cb-tracker-label">{{ if eq .Language.Lang "es" }}Trasfondo{{ else }}Background{{ end }}</span>
+          <span class="cb-tracker-val" id="cb-tracker-bg">—</span>
+        </div>
+
+        <div class="cb-tracker-box">
+          <span class="cb-tracker-label">{{ if eq .Language.Lang "es" }}Profesión{{ else }}Profession{{ end }}</span>
+          <span class="cb-tracker-val" id="cb-tracker-prof">—</span>
+        </div>
+      </div>
+
+      <!-- Budget Summary Box -->
+      <div class="cb-sidebar-section mt3" id="cb-budget-bar">
+        <h3 class="cb-sidebar-title">{{ if eq .Language.Lang "es" }}Resumen de Puntos{{ else }}Point Summary{{ end }}</h3>
+        
+        <div class="cb-budget-item">
+          <span class="cb-budget-label">{{ if eq .Language.Lang "es" }}Puntos Característica{{ else }}Ability Score Points{{ end }}</span>
+          <span class="cb-budget-val" id="cb-val-ability-pts">60 / 60</span>
+        </div>
+        
+        <div class="cb-budget-item">
+          <span class="cb-budget-label">{{ if eq .Language.Lang "es" }}Puntos Habilidad{{ else }}Skill Points Remaining{{ end }}</span>
+          <span class="cb-budget-val" id="cb-val-skill-pts">70 / 70</span>
+        </div>
+        
+        <div class="cb-budget-item">
+          <span class="cb-budget-label">{{ if eq .Language.Lang "es" }}Puntos Avance (PA){{ else }}Advancement Points (AP){{ end }}</span>
+          <span class="cb-budget-val" id="cb-val-ap-pts">0</span>
+        </div>
+
+        <div class="cb-budget-status-wrap">
+          <span class="cb-status-badge badge-success" id="cb-status-badge">
+            <span>✓</span> <span id="cb-status-text">{{ if eq .Language.Lang "es" }}VÁLIDO{{ else }}VALID{{ end }}</span>
+          </span>
+        </div>
+      </div>
+
+    </aside>
 
   </div>
 
