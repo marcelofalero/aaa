@@ -1,3 +1,12 @@
+/* Unblock sticky positioning for character builder */
+html, body, .scifi-body {
+  overflow-x: visible !important;
+}
+
+.main-container.cb-container {
+  overflow: visible !important;
+}
+
 /* Character Builder Sidebar & Main Layout Grid */
 .cb-builder-layout {
   display: grid;
@@ -415,8 +424,21 @@ body.scifi-body .cb-card {
   background: #001a33;
   border: 1px solid var(--accent-cyan);
   border-radius: 10px;
-  overflow: hidden;
+  max-height: calc(100vh - 280px);
+  min-height: 400px;
+  overflow-y: auto;
   margin-bottom: 2rem;
+  scrollbar-width: thin;
+  scrollbar-color: var(--accent-cyan) rgba(0, 26, 51, 0.8);
+}
+
+.cb-skill-table-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.cb-skill-table-container::-webkit-scrollbar-thumb {
+  background: var(--accent-cyan);
+  border-radius: 4px;
 }
 
 .cb-skill-row {
@@ -525,6 +547,16 @@ body.scifi-body .cb-card {
   font-family: 'Michroma', sans-serif;
   letter-spacing: 0.5px;
   margin-left: 0.4rem;
+}
+
+#cb-perks-list,
+#cb-flaws-list {
+  max-height: calc(100vh - 340px);
+  min-height: 300px;
+  overflow-y: auto;
+  padding-right: 0.4rem;
+  scrollbar-width: thin;
+  scrollbar-color: var(--accent-cyan) transparent;
 }
 
 .cb-badge-free {
