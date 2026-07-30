@@ -210,24 +210,26 @@
 
     <!-- STEP 6: PERKS & FLAWS -->
     <div class="cb-step-content" id="cb-step-6" style="display: none;">
-      <h2 class="neon-cyan">{{ if eq .Language.Lang "es" }}6. Ventajas y Defectos (Perks & Flaws){{ else }}6. Select Perks & Flaws{{ end }}</h2>
+      <h2 class="neon-cyan">{{ if eq .Language.Lang "es" }}6. Defectos y Ventajas (Flaws & Perks){{ else }}6. Select Flaws & Perks{{ end }}</h2>
       <p class="silver mb4">
         {{ if eq .Language.Lang "es" }}
-        Puedes elegir hasta 3 Ventajas (gastando Puntos de Habilidad) y hasta 3 Defectos (para ganar Puntos de Habilidad extra).
+        Puedes elegir hasta 3 Defectos (para ganar Puntos de Habilidad extra) y hasta 3 Ventajas (gastando Puntos de Habilidad). Selecciona el Nivel correspondiente en las opciones de múltiples grados.
         {{ else }}
-        Select up to 3 voluntary Perks (costing Skill Points) and up to 3 Flaws (granting extra Skill Points).
+        Select up to 3 voluntary Flaws (granting extra Skill Points) and up to 3 Perks (costing Skill Points). Select the specific Level/Degree for multi-tier options.
         {{ end }}
       </p>
 
-      <div class="grid-index">
-        <div class="sci-fi-card">
-          <h3 class="neon-cyan mv0 mb3">{{ if eq .Language.Lang "es" }}Ventajas (Perks){{ else }}Perks{{ end }}</h3>
-          <div id="cb-perks-list"></div>
-        </div>
-
+      <div class="cb-perks-flaws-stacked" style="display: flex; flex-direction: column; gap: 2rem;">
+        <!-- Top Section: Flaws -->
         <div class="sci-fi-card">
           <h3 class="neon-cyan mv0 mb3">{{ if eq .Language.Lang "es" }}Defectos (Flaws){{ else }}Flaws{{ end }}</h3>
           <div id="cb-flaws-list"></div>
+        </div>
+
+        <!-- Bottom Section: Perks -->
+        <div class="sci-fi-card">
+          <h3 class="neon-cyan mv0 mb3">{{ if eq .Language.Lang "es" }}Ventajas (Perks){{ else }}Perks{{ end }}</h3>
+          <div id="cb-perks-list"></div>
         </div>
       </div>
     </div>

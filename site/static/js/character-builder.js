@@ -370,33 +370,48 @@ document.addEventListener('DOMContentLoaded', () => {
     return false;
   }
 
-  function getPerkCost(perkObjOrName) {
+  function getPerkCost(perkObjOrName, level = 1) {
     const perksList = getPerksList();
     const perkName = typeof perkObjOrName === 'string' ? perkObjOrName : (perkObjOrName ? perkObjOrName.name : '');
+    if (typeof perkObjOrName === 'object' && perkObjOrName && perkObjOrName.level) {
+      level = perkObjOrName.level;
+    }
     const perkObj = perksList.find(p => p.name === perkName);
 
-    let rawCost = 3;
+    let options = [3];
     if (perkObj && perkObj.cost) {
-      const num = parseInt(perkObj.cost.split('/')[0]);
-      if (!isNaN(num)) rawCost = num;
+      const parts = perkObj.cost.split('/');
+      const parsed = parts.map(p => parseInt(p, 10)).filter(n => !isNaN(n));
+      if (parsed.length > 0) options = parsed;
     }
+
+    const selectedIdx = Math.min(Math.max(0, level - 1), options.length - 1);
+    const rawCost = options[selectedIdx];
 
     const favored = isFavoredPerk(perkName);
     const finalCost = favored ? Math.max(1, rawCost - 1) : rawCost;
-    return { rawCost, finalCost, favored };
+    return { rawCost, finalCost, favored, options };
   }
 
-  function getFlawBonus(flawObjOrName) {
+  function getFlawBonus(flawObjOrName, level = 1) {
     const flawsList = getFlawsList();
     const flawName = typeof flawObjOrName === 'string' ? flawObjOrName : (flawObjOrName ? flawObjOrName.name : '');
+    if (typeof flawObjOrName === 'object' && flawObjOrName && flawObjOrName.level) {
+      level = flawObjOrName.level;
+    }
     const flawObj = flawsList.find(f => f.name === flawName);
 
-    let rawBonus = 3;
+    let options = [3];
     if (flawObj && flawObj.bonus_points) {
-      const num = parseInt(flawObj.bonus_points.replace('+', '').split('/')[0]);
-      if (!isNaN(num)) rawBonus = num;
+      const clean = flawObj.bonus_points.replace(/\+/g, '');
+      const parts = clean.split('/');
+      const parsed = parts.map(p => parseInt(p, 10)).filter(n => !isNaN(n));
+      if (parsed.length > 0) options = parsed;
     }
-    return rawBonus;
+
+    const selectedIdx = Math.min(Math.max(0, level - 1), options.length - 1);
+    const rawBonus = options[selectedIdx];
+    return { rawBonus, options };
   }
 
   function getResMod(score) {
@@ -539,7 +554,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const fact = FACTION_DATA[state.faction];
     if (fact && fact.apply) fact.apply(state);
 
-    const heightenedCount = state.perks.filter(p => p && p.toLowerCase().includes('heightened ability')).length;
+    const heightenedCount = state.perks.filter(p => {
+      const pName = typeof p === 'string' ? p : (p ? p.name : '');
+      return pName && pName.toLowerCase().includes('heightened ability');
+    }).length;
     const targetAbilityBudget = (state.faction === 'union_of_sol' ? 62 : 60) + heightenedCount;
 
     let abilityPtsSpent = 0;
@@ -1063,78 +1081,175 @@ document.addEventListener('DOMContentLoaded', () => {
     const flawsList = getFlawsList();
 
     // Ensure background flaw is included in state.flaws if present
-    if (bgFlaw && !state.flaws.some(f => f.toLowerCase().includes(bgFlaw.toLowerCase()) || bgFlaw.toLowerCase().includes(f.toLowerCase()))) {
-      state.flaws.push(bgFlaw);
+    if (bgFlaw && !state.flaws.some(f => {
+      const name = typeof f === 'string' ? f : f.name;
+      return name.toLowerCase().includes(bgFlaw.toLowerCase()) || bgFlaw.toLowerCase().includes(name.toLowerCase());
+    })) {
+      state.flaws.push({ name: bgFlaw, level: 1 });
       saveStateToLocalStorage();
     }
 
-    if (perksContainer) {
-      perksContainer.innerHTML = perksList.map(p => {
-        const selected = state.perks.includes(p.name);
-        const { rawCost, finalCost, favored } = getPerkCost(p);
-        
-        return `
-          <div class="cb-card ${selected ? 'selected' : ''}" style="margin-bottom: 0.75rem;" data-perk="${p.name}">
-            <div class="cb-card-header" style="display: flex; justify-content: space-between; align-items: center;">
-              <h4 class="cb-card-title" style="font-size: 0.95rem; margin: 0;">${p.name}</h4>
-              <div style="display: flex; gap: 0.3rem; align-items: center;">
-                ${favored ? `<span class="cb-badge-favored">${isEs ? 'FAVORECIDA (TRASFONDO)' : 'FAVORED (BG)'}</span>` : ''}
-                <span class="cb-badge-free" style="background: rgba(56, 158, 189, 0.2); color: var(--accent-cyan); border-color: var(--accent-cyan);">${isEs ? 'Coste' : 'Cost'}: ${finalCost} SP ${favored ? `(AP: ${rawCost})` : ''}</span>
-              </div>
-            </div>
-            <p class="cb-card-desc" style="font-size: 0.8rem; margin-top: 0.4rem;">${p.description || ''}</p>
-          </div>
-        `;
-      }).join('');
-
-      perksContainer.querySelectorAll('.cb-card').forEach(card => {
-        card.addEventListener('click', () => {
-          const perk = card.dataset.perk;
-          if (state.perks.includes(perk)) {
-            state.perks = state.perks.filter(x => x !== perk);
-          } else if (state.perks.length < 3) {
-            state.perks.push(perk);
-          }
-          renderStep6();
-          recalculateBudgets();
-        });
-      });
-    }
-
+    // 1. RENDER FLAWS (Top Section)
     if (flawsContainer) {
       flawsContainer.innerHTML = flawsList.map(f => {
         const isBgFlaw = bgFlaw && (f.name.toLowerCase().includes(bgFlaw.toLowerCase()) || bgFlaw.toLowerCase().includes(f.name.toLowerCase()));
-        const selected = state.flaws.includes(f.name) || isBgFlaw;
-        
+        const stateFlaw = state.flaws.find(x => (typeof x === 'string' ? x : x.name) === f.name);
+        const selected = !!stateFlaw || isBgFlaw;
+        const currentLevel = isBgFlaw ? 1 : (stateFlaw ? (typeof stateFlaw === 'object' && stateFlaw.level ? stateFlaw.level : 1) : 0);
+
+        const { options } = getFlawBonus(f);
+
+        let levelButtonsHtml = '';
+        if (isBgFlaw) {
+          levelButtonsHtml = `<span class="cb-badge-free" style="background: rgba(255, 165, 0, 0.25); color: #ffa500; border-color: #ffa500;">🔒 ${isEs ? 'TRASFONDO (BLOQUEADO)' : 'BACKGROUND (LOCKED)'}</span>`;
+        } else if (options.length > 1) {
+          levelButtonsHtml = `
+            <div class="cb-level-btn-group" style="display: flex; gap: 0.3rem; align-items: center; flex-wrap: wrap;">
+              ${options.map((optVal, idx) => {
+                const lvl = idx + 1;
+                const active = currentLevel === lvl;
+                return `
+                  <button type="button" class="cb-btn-rank ${active ? 'active' : ''}" data-flaw="${f.name}" data-level="${lvl}">
+                    Nvl ${lvl} (+${optVal} SP)
+                  </button>
+                `;
+              }).join('')}
+            </div>
+          `;
+        } else {
+          const optVal = options[0] || 3;
+          levelButtonsHtml = `
+            <button type="button" class="cb-btn-rank ${selected ? 'active' : ''}" data-flaw="${f.name}" data-level="1" style="width: auto; padding: 0.2rem 0.6rem;">
+              ${selected ? '✓' : '+'} (+${optVal} SP)
+            </button>
+          `;
+        }
+
         return `
-          <div class="cb-card ${selected ? 'selected' : ''} ${isBgFlaw ? 'cb-card-locked' : ''}" style="margin-bottom: 0.75rem; ${isBgFlaw ? 'border-color: #ffa500; background: rgba(255, 165, 0, 0.12);' : ''}" data-flaw="${f.name}" data-is-bg="${isBgFlaw}">
-            <div class="cb-card-header" style="display: flex; justify-content: space-between; align-items: center;">
-              <h4 class="cb-card-title" style="font-size: 0.95rem; margin: 0;">${f.name}</h4>
-              <div style="display: flex; gap: 0.3rem; align-items: center;">
-                ${isBgFlaw ? `<span class="cb-badge-free" style="background: rgba(255, 165, 0, 0.25); color: #ffa500; border-color: #ffa500;">🔒 ${isEs ? 'TRASFONDO (BLOQUEADO)' : 'BACKGROUND (LOCKED)'}</span>` : ''}
-                <span class="cb-badge-free" style="background: rgba(166, 193, 46, 0.2); color: #a6c12e; border-color: #a6c12e;">+${f.bonus_points || '3'} SP</span>
-              </div>
+          <div class="cb-card ${selected ? 'selected' : ''} ${isBgFlaw ? 'cb-card-locked' : ''}" style="margin-bottom: 0.75rem; ${isBgFlaw ? 'border-color: #ffa500; background: rgba(255, 165, 0, 0.12);' : ''}">
+            <div class="cb-card-header" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem;">
+              <h4 class="cb-card-title" style="font-size: 0.95rem; margin: 0; color: #ffffff;">${f.name}</h4>
+              ${levelButtonsHtml}
             </div>
             <p class="cb-card-desc" style="font-size: 0.8rem; margin-top: 0.4rem;">${f.description || ''}</p>
           </div>
         `;
       }).join('');
 
-      flawsContainer.querySelectorAll('.cb-card').forEach(card => {
-        card.addEventListener('click', () => {
-          const flaw = card.dataset.flaw;
-          const isBg = card.dataset.isBg === 'true';
-          if (isBg) {
-            return;
-          }
-          if (state.flaws.includes(flaw)) {
-            state.flaws = state.flaws.filter(x => x !== flaw);
+      flawsContainer.querySelectorAll('.cb-btn-rank').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          const flawName = btn.dataset.flaw;
+          const lvl = parseInt(btn.dataset.level, 10);
+          
+          const isBg = bgFlaw && (flawName.toLowerCase().includes(bgFlaw.toLowerCase()) || bgFlaw.toLowerCase().includes(flawName.toLowerCase()));
+          if (isBg) return;
+
+          const existingIdx = state.flaws.findIndex(x => (typeof x === 'string' ? x : x.name) === flawName);
+
+          if (existingIdx >= 0) {
+            const currentObj = state.flaws[existingIdx];
+            const currLvl = typeof currentObj === 'object' && currentObj.level ? currentObj.level : 1;
+
+            if (currLvl === lvl) {
+              state.flaws.splice(existingIdx, 1);
+            } else {
+              state.flaws[existingIdx] = { name: flawName, level: lvl };
+            }
           } else {
-            const userFlaws = state.flaws.filter(x => !bgFlaw || (!x.toLowerCase().includes(bgFlaw.toLowerCase()) && !bgFlaw.toLowerCase().includes(x.toLowerCase())));
-            if (userFlaws.length < 3) {
-              state.flaws.push(flaw);
+            const userFlawsCount = state.flaws.filter(x => {
+              const name = typeof x === 'string' ? x : x.name;
+              return !bgFlaw || (!name.toLowerCase().includes(bgFlaw.toLowerCase()) && !bgFlaw.toLowerCase().includes(name.toLowerCase()));
+            }).length;
+
+            if (userFlawsCount < 3) {
+              state.flaws.push({ name: flawName, level: lvl });
             }
           }
+
+          saveStateToLocalStorage();
+          renderStep6();
+          recalculateBudgets();
+        });
+      });
+    }
+
+    // 2. RENDER PERKS (Bottom Section)
+    if (perksContainer) {
+      perksContainer.innerHTML = perksList.map(p => {
+        const statePerk = state.perks.find(x => (typeof x === 'string' ? x : x.name) === p.name);
+        const selected = !!statePerk;
+        const currentLevel = statePerk ? (typeof statePerk === 'object' && statePerk.level ? statePerk.level : 1) : 0;
+
+        const { options, favored } = getPerkCost(p);
+
+        let levelButtonsHtml = '';
+        if (options.length > 1) {
+          levelButtonsHtml = `
+            <div style="display: flex; gap: 0.3rem; align-items: center; flex-wrap: wrap;">
+              ${favored ? `<span class="cb-badge-favored">${isEs ? 'FAVORECIDA' : 'FAVORED'}</span>` : ''}
+              <div class="cb-level-btn-group" style="display: flex; gap: 0.3rem;">
+                ${options.map((optVal, idx) => {
+                  const lvl = idx + 1;
+                  const active = currentLevel === lvl;
+                  const optCost = favored ? Math.max(1, optVal - 1) : optVal;
+                  return `
+                    <button type="button" class="cb-btn-rank ${active ? 'active' : ''}" data-perk="${p.name}" data-level="${lvl}">
+                      Nvl ${lvl} (${optCost} SP)
+                    </button>
+                  `;
+                }).join('')}
+              </div>
+            </div>
+          `;
+        } else {
+          const optVal = options[0] || 3;
+          const optCost = favored ? Math.max(1, optVal - 1) : optVal;
+          levelButtonsHtml = `
+            <div style="display: flex; gap: 0.3rem; align-items: center;">
+              ${favored ? `<span class="cb-badge-favored">${isEs ? 'FAVORECIDA' : 'FAVORED'}</span>` : ''}
+              <button type="button" class="cb-btn-rank ${selected ? 'active' : ''}" data-perk="${p.name}" data-level="1" style="width: auto; padding: 0.2rem 0.6rem;">
+                ${selected ? '✓' : '+'} (${optCost} SP)
+              </button>
+            </div>
+          `;
+        }
+
+        return `
+          <div class="cb-card ${selected ? 'selected' : ''}" style="margin-bottom: 0.75rem;">
+            <div class="cb-card-header" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem;">
+              <h4 class="cb-card-title" style="font-size: 0.95rem; margin: 0; color: #ffffff;">${p.name}</h4>
+              ${levelButtonsHtml}
+            </div>
+            <p class="cb-card-desc" style="font-size: 0.8rem; margin-top: 0.4rem;">${p.description || ''}</p>
+          </div>
+        `;
+      }).join('');
+
+      perksContainer.querySelectorAll('.cb-btn-rank').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          const perkName = btn.dataset.perk;
+          const lvl = parseInt(btn.dataset.level, 10);
+
+          const existingIdx = state.perks.findIndex(x => (typeof x === 'string' ? x : x.name) === perkName);
+
+          if (existingIdx >= 0) {
+            const currentObj = state.perks[existingIdx];
+            const currLvl = typeof currentObj === 'object' && currentObj.level ? currentObj.level : 1;
+
+            if (currLvl === lvl) {
+              state.perks.splice(existingIdx, 1);
+            } else {
+              state.perks[existingIdx] = { name: perkName, level: lvl };
+            }
+          } else {
+            if (state.perks.length < 3) {
+              state.perks.push({ name: perkName, level: lvl });
+            }
+          }
+
+          saveStateToLocalStorage();
           renderStep6();
           recalculateBudgets();
         });
