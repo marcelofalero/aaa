@@ -939,6 +939,8 @@ document.addEventListener('DOMContentLoaded', () => {
         let broadGood = Math.floor(broadOrd / 2);
         let broadAmaz = Math.floor(broadOrd / 4);
 
+        let broadTotalSpent = broadBought ? (isFreeBroad ? 0 : actualBroadCost) : 0;
+
         html += `
           <div class="cb-skill-row broad ${broadFavored ? 'favored' : ''}">
             <div class="cb-skill-info">
@@ -951,9 +953,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 <span>[${broadSkill.attribute}: ${broadAbilityVal}]</span>
                 <span>${isEs ? 'Objetivo' : 'Target'}: <strong>${broadOrd} / ${broadGood} / ${broadAmaz}</strong></span>
                 <span>${isEs ? 'Coste' : 'Cost'}: ${isFreeBroad ? (isEs ? '0 SP (Gratis)' : '0 SP (Free)') : `${actualBroadCost} SP (AP: ${broadSkill.cost})`}</span>
+                <span style="color: var(--accent-cyan); font-weight: bold;">${isEs ? 'Total' : 'Total'}: <strong>${broadTotalSpent} SP</strong></span>
               </span>
             </div>
             <div class="cb-rank-controls">
+              <span class="cb-skill-total-badge ${broadTotalSpent > 0 ? 'active' : ''}">${broadTotalSpent} SP</span>
               <button class="cb-btn-rank ${broadBought ? 'active' : ''}" data-skill="${broadSkill.skill}" data-is-broad="true" data-cost="${broadSkill.cost}" data-cat="${category.skill}" ${isFreeBroad ? 'disabled title="Free Species Skill"' : ''}>
                 ${broadBought ? '✓' : '+'}
               </button>
@@ -976,6 +980,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             let baseSpecCost = specFavored ? Math.max(1, specSkill.cost - 1) : specSkill.cost;
             let actualSpecCost = Math.max(0, baseSpecCost - specDiscount);
+            let specTotalSpent = actualSpecCost * currentRanks;
             let totalSpecScore = broadAbilityVal + currentRanks;
             let specOrd = totalSpecScore;
             let specGood = Math.floor(specOrd / 2);
@@ -993,9 +998,11 @@ document.addEventListener('DOMContentLoaded', () => {
                     <span>${isEs ? 'Puntuación Total' : 'Total Score'}: <strong>${totalSpecScore}</strong></span>
                     <span>${isEs ? 'Objetivo' : 'Target'}: <strong>${specOrd} / ${specGood} / ${specAmaz}</strong></span>
                     <span>${isEs ? 'Precio' : 'Cost'}: ${actualSpecCost} SP/rank (AP: ${specSkill.cost})</span>
+                    <span style="color: var(--accent-cyan); font-weight: bold;">${isEs ? 'Total' : 'Total'}: <strong>${specTotalSpent} SP</strong></span>
                   </span>
                 </div>
                 <div class="cb-rank-controls">
+                  <span class="cb-skill-total-badge ${specTotalSpent > 0 ? 'active' : ''}">${specTotalSpent} SP</span>
                   ${[0, 1, 2, 3].map(r => `
                     <button class="cb-btn-rank ${currentRanks === r ? 'active' : ''}" data-skill="${specSkill.skill}" data-rank="${r}" data-cost="${specSkill.cost}" data-cat="${category.skill}">
                       ${r}
