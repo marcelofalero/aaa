@@ -33,10 +33,45 @@ document.addEventListener('DOMContentLoaded', () => {
       WIL: 10,
       PER: 10
     },
-    skills: {}, // { skillName: { ranks: number, isBroad: bool, cost: number, standardCost: number } }
     perks: [],
     flaws: []
   };
+
+  const STORAGE_KEY = 'stardrive_character_builder_state_v1';
+
+  function saveStateToLocalStorage() {
+    try {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+    } catch (e) {
+      console.warn('Unable to save character state to localStorage', e);
+    }
+  }
+
+  function loadStateFromLocalStorage() {
+    try {
+      const saved = localStorage.getItem(STORAGE_KEY);
+      if (saved) {
+        const parsed = JSON.parse(saved);
+        Object.assign(state, parsed);
+        if (state.bio) {
+          const fields = {
+            'cb-input-name': state.bio.name,
+            'cb-input-player': state.bio.player,
+            'cb-input-concept': state.bio.concept,
+            'cb-input-motivation': state.bio.motivation,
+            'cb-input-attitude': state.bio.attitude,
+            'cb-input-traits': state.bio.traits
+          };
+          Object.entries(fields).forEach(([id, val]) => {
+            const el = document.getElementById(id);
+            if (el && val !== undefined) el.value = val;
+          });
+        }
+      }
+    } catch (e) {
+      console.warn('Unable to load character state from localStorage', e);
+    }
+  }
 
   // Official Star*Drive Factions Data & Mechanics
   const FACTION_DATA = {
@@ -503,11 +538,13 @@ document.addEventListener('DOMContentLoaded', () => {
         elBadgeText.textContent = isEs ? `ASIGNA ${targetAbilityBudget - abilityPtsSpent} PTS` : `ASSIGN ${targetAbilityBudget - abilityPtsSpent} PTS`;
       }
     }
+    saveStateToLocalStorage();
   }
 
   // Render Step Content
   function renderStep(step) {
     state.step = step;
+    saveStateToLocalStorage();
     document.querySelectorAll('.cb-step-btn').forEach(btn => {
       const btnStep = parseInt(btn.dataset.step);
       btn.classList.toggle('active', btnStep === step);
@@ -1108,12 +1145,12 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // Attach Event Listeners
-  document.getElementById('cb-input-name')?.addEventListener('input', e => state.bio.name = e.target.value);
-  document.getElementById('cb-input-player')?.addEventListener('input', e => state.bio.player = e.target.value);
-  document.getElementById('cb-input-concept')?.addEventListener('input', e => state.bio.concept = e.target.value);
-  document.getElementById('cb-input-motivation')?.addEventListener('input', e => state.bio.motivation = e.target.value);
-  document.getElementById('cb-input-attitude')?.addEventListener('input', e => state.bio.attitude = e.target.value);
-  document.getElementById('cb-input-traits')?.addEventListener('input', e => state.bio.traits = e.target.value);
+  document.getElementById('cb-input-name')?.addEventListener('input', e => { state.bio.name = e.target.value; saveStateToLocalStorage(); });
+  document.getElementById('cb-input-player')?.addEventListener('input', e => { state.bio.player = e.target.value; saveStateToLocalStorage(); });
+  document.getElementById('cb-input-concept')?.addEventListener('input', e => { state.bio.concept = e.target.value; saveStateToLocalStorage(); });
+  document.getElementById('cb-input-motivation')?.addEventListener('input', e => { state.bio.motivation = e.target.value; saveStateToLocalStorage(); });
+  document.getElementById('cb-input-attitude')?.addEventListener('input', e => { state.bio.attitude = e.target.value; saveStateToLocalStorage(); });
+  document.getElementById('cb-input-traits')?.addEventListener('input', e => { state.bio.traits = e.target.value; saveStateToLocalStorage(); });
 
   document.getElementById('cb-skill-search')?.addEventListener('input', renderStep5);
   document.getElementById('cb-skill-category-filter')?.addEventListener('change', renderStep5);
@@ -1155,7 +1192,8 @@ document.addEventListener('DOMContentLoaded', () => {
       try {
         const loadedState = JSON.parse(evt.target.result);
         Object.assign(state, loadedState);
-        renderStep(state.step);
+        saveStateToLocalStorage();
+        renderStep(state.step || 1);
         recalculateBudgets();
         alert(isEs ? '¡Personaje cargado con éxito!' : 'Character loaded successfully!');
       } catch (err) {
@@ -1168,6 +1206,9 @@ document.addEventListener('DOMContentLoaded', () => {
   // Reset Button
   document.getElementById('cb-btn-reset')?.addEventListener('click', () => {
     if (confirm(isEs ? '¿Estás seguro de reiniciar la creación?' : 'Reset character creation?')) {
+      try { localStorage.removeItem(STORAGE_KEY); } catch(e){}
+      state.step = 1;
+      state.bio = { name: '', player: '', concept: '', motivation: '', attitude: '', traits: '' };
       state.faction = 'concord';
       state.species = 'human';
       state.background = null;
@@ -1176,12 +1217,19 @@ document.addEventListener('DOMContentLoaded', () => {
       state.skills = {};
       state.perks = [];
       state.flaws = [];
+
+      ['cb-input-name', 'cb-input-player', 'cb-input-concept', 'cb-input-motivation', 'cb-input-attitude', 'cb-input-traits'].forEach(id => {
+        const el = document.getElementById(id);
+        if (el) el.value = '';
+      });
+
       renderStep(1);
       recalculateBudgets();
     }
   });
 
   // Initial Initialization
-  renderStep(1);
+  loadStateFromLocalStorage();
+  renderStep(state.step || 1);
   recalculateBudgets();
 });
