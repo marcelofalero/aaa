@@ -639,7 +639,13 @@ document.addEventListener('DOMContentLoaded', () => {
       resSummary.innerHTML = Object.keys(state.abilities).map(stat => {
         let mod = getResMod(state.abilities[stat]);
         if (state.faction === 'concord' && state.concordResModStat === stat) mod += 1;
-        return `<div class="cb-res-tag"><strong>Res ${stat}:</strong> ${mod >= 0 ? '+' : ''}${mod}</div>`;
+        const modText = mod >= 0 ? `+${mod}` : `${mod}`;
+        return `
+          <div class="cb-res-card">
+            <span class="cb-res-card-label">Res ${stat}</span>
+            <span class="cb-res-card-val ${mod > 0 ? 'highlight' : ''}">${modText}</span>
+          </div>
+        `;
       }).join('');
     }
 
@@ -650,18 +656,18 @@ document.addEventListener('DOMContentLoaded', () => {
       const mov = getMovementRates(state.abilities.STR + state.abilities.DEX);
 
       derivedSummary.innerHTML = `
-        <div class="cb-sheet-section">
-          <h4 class="neon-cyan f6 mt0 mb2">${isEs ? 'Iniciativa y Acciones' : 'Initiative & Actions'}</h4>
+        <div class="cb-derived-card">
+          <h4 class="cb-derived-title">${isEs ? 'Iniciativa y Acciones' : 'Initiative & Actions'}</h4>
           <div class="cb-track-box"><span>${isEs ? 'Chequeo de Acción (Iniciativa)' : 'Action Check Score (Initiative)'}</span><span class="cb-track-val">${actionCheck}</span></div>
           <div class="cb-track-box"><span>${isEs ? 'Acciones por Ronda' : 'Actions per Round'}</span><span class="cb-track-val">${actionsPerRound}</span></div>
         </div>
-        <div class="cb-sheet-section">
-          <h4 class="neon-cyan f6 mt0 mb2">${isEs ? 'Velocidad de Movimiento' : 'Movement Rates'}</h4>
+        <div class="cb-derived-card">
+          <h4 class="cb-derived-title">${isEs ? 'Velocidad de Movimiento' : 'Movement Rates'}</h4>
           <div class="cb-track-box"><span>Sprint / Run / Walk</span><span class="cb-track-val">${mov.sprint}m / ${mov.run}m / ${mov.walk}m</span></div>
           <div class="cb-track-box"><span>Swim / Glide</span><span class="cb-track-val">${mov.swim}m / ${mov.glide}m</span></div>
         </div>
-        <div class="cb-sheet-section">
-          <h4 class="neon-cyan f6 mt0 mb2">${isEs ? 'Salud y Durabilidad' : 'Health & Durability'}</h4>
+        <div class="cb-derived-card">
+          <h4 class="cb-derived-title">${isEs ? 'Salud y Durabilidad' : 'Health & Durability'}</h4>
           <div class="cb-track-box"><span>Wounds / Stun</span><span class="cb-track-val">${state.abilities.CON} / ${state.abilities.CON}</span></div>
           <div class="cb-track-box"><span>Mortal / Fatigue</span><span class="cb-track-val">${Math.ceil(state.abilities.CON / 2)} / ${Math.ceil(state.abilities.CON / 2)}</span></div>
         </div>
