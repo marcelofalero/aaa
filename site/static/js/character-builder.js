@@ -778,7 +778,7 @@ document.addEventListener('DOMContentLoaded', () => {
         elSidebarApSum.textContent = `${availAP} ${isEs ? 'Disp.' : 'Avail'} / ${spentAP} ${isEs ? 'Gastados' : 'Spent'}`;
       }
       if (elSidebarRankTitle) {
-        elSidebarRankTitle.textContent = `${titleObj.title} (${isEs ? 'Máx Rango' : 'Max Rank'}: ${titleObj.maxSkillRank})`;
+        elSidebarRankTitle.textContent = `${titleObj.title} (${isEs ? 'Rango Máx' : 'Max Rank'}: ${titleObj.maxSkillRank} | Broad: ${titleObj.maxBroad})`;
       }
     } else {
       if (elCreationWrap) elCreationWrap.style.display = 'flex';
