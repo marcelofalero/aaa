@@ -10,20 +10,20 @@ html, body, .scifi-body {
 /* Character Builder Dual Sidebar Grid (Left Nav, Center Main, Right Summary/Tracker) */
 .cb-builder-layout {
   display: grid;
-  grid-template-columns: 230px 1fr 270px;
-  gap: 1.5rem;
+  grid-template-columns: 170px 1fr 200px;
+  gap: 1rem;
   align-items: start;
   position: relative;
 }
 
-@media (max-width: 1180px) {
+@media (max-width: 1100px) {
   .cb-builder-layout {
-    grid-template-columns: 210px 1fr 240px;
-    gap: 1rem;
+    grid-template-columns: 150px 1fr 180px;
+    gap: 0.75rem;
   }
 }
 
-@media (max-width: 960px) {
+@media (max-width: 900px) {
   .cb-builder-layout {
     grid-template-columns: 1fr;
   }
@@ -32,83 +32,83 @@ html, body, .scifi-body {
 /* Sticky Always-Visible Sidebars */
 .cb-sidebar {
   position: sticky;
-  top: 80px;
+  top: 75px;
   display: flex;
   flex-direction: column;
-  gap: 1.25rem;
+  gap: 0.85rem;
   background: rgba(10, 25, 45, 0.94);
   backdrop-filter: blur(14px);
   border: 1px solid var(--accent-cyan);
-  border-radius: 12px;
-  padding: 1.1rem;
+  border-radius: 8px;
+  padding: 0.75rem;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5), inset 0 0 15px rgba(56, 158, 189, 0.15);
-  max-height: calc(100vh - 100px);
+  max-height: calc(100vh - 90px);
   overflow-y: auto;
   z-index: 90;
 }
 
 .cb-nav-sidebar {
-  padding: 1rem 0.85rem;
+  padding: 0.65rem 0.5rem;
 }
 
 .cb-summary-sidebar {
-  padding: 1.1rem;
+  padding: 0.75rem;
 }
 
 .cb-sidebar-title {
   font-family: 'Michroma', sans-serif;
-  font-size: 0.72rem;
+  font-size: 0.62rem;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.08em;
   color: var(--accent-cyan);
-  margin: 0 0 0.75rem 0;
-  padding-bottom: 0.4rem;
+  margin: 0 0 0.5rem 0;
+  padding-bottom: 0.3rem;
   border-bottom: 1px solid rgba(56, 158, 189, 0.3);
 }
 
-/* Tracked Choices Box */
+/* Compact Tracked Choices Box */
 .cb-tracker-box {
   background: rgba(14, 42, 69, 0.5);
   border: 1px solid rgba(75, 181, 193, 0.25);
-  border-radius: 6px;
-  padding: 0.4rem 0.65rem;
-  margin-bottom: 0.4rem;
+  border-radius: 5px;
+  padding: 0.35rem 0.5rem;
+  margin-bottom: 0.3rem;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 0.5rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.15rem;
 }
 
 .cb-tracker-label {
   font-family: 'Michroma', sans-serif;
-  font-size: 0.6rem;
+  font-size: 0.55rem;
   text-transform: uppercase;
   color: #8099AC;
+  letter-spacing: 0.05em;
 }
 
 .cb-tracker-val {
   font-size: 0.78rem;
   font-weight: bold;
   color: #e0f2fe;
-  text-align: right;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  max-width: 140px;
+  text-align: left;
+  word-break: break-word;
+  max-width: 100%;
+  line-height: 1.15;
 }
 
 /* Sidebar Budget Section */
 .cb-sidebar-section {
   display: flex;
   flex-direction: column;
-  gap: 0.65rem;
+  gap: 0.45rem;
 }
 
 .cb-budget-item {
   background: rgba(14, 42, 69, 0.65);
   border: 1px solid rgba(75, 181, 193, 0.35);
-  border-radius: 8px;
-  padding: 0.6rem 0.85rem;
+  border-radius: 6px;
+  padding: 0.4rem 0.6rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -116,15 +116,15 @@ html, body, .scifi-body {
 
 .cb-budget-label {
   font-family: 'Michroma', sans-serif;
-  font-size: 0.65rem;
+  font-size: 0.58rem;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.06em;
   color: #8099AC;
 }
 
 .cb-budget-val {
   font-family: 'Michroma', sans-serif;
-  font-size: 1.25rem;
+  font-size: 1.05rem;
   font-weight: bold;
   color: var(--accent-cyan);
 }
@@ -182,7 +182,7 @@ html, body, .scifi-body {
 .cb-wizard-nav {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 0.35rem;
   padding-bottom: 0;
   margin-bottom: 0;
   border-bottom: none;
@@ -194,16 +194,16 @@ html, body, .scifi-body {
   background: rgba(14, 42, 69, 0.85);
   border: 1px solid rgba(75, 181, 193, 0.45);
   color: #e2e8f0;
-  padding: 0.65rem 0.8rem;
-  border-radius: 8px;
+  padding: 0.45rem 0.55rem;
+  border-radius: 6px;
   font-family: 'Michroma', sans-serif;
-  font-size: 0.7rem;
+  font-size: 0.62rem;
   text-transform: uppercase;
   cursor: pointer;
   transition: all 0.25s ease;
   display: flex;
   align-items: center;
-  gap: 0.6rem;
+  gap: 0.45rem;
   justify-content: flex-start;
   box-sizing: border-box;
   text-align: left;
@@ -219,8 +219,10 @@ html, body, .scifi-body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 22px;
-  height: 22px;
+  width: 18px;
+  height: 18px;
+  font-size: 0.6rem;
+  flex-shrink: 0;
   border-radius: 50%;
   background: rgba(56, 158, 189, 0.25);
   color: var(--accent-cyan);
