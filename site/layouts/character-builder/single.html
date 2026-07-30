@@ -270,23 +270,46 @@
         </div>
       </div>
 
-      <!-- Budget Summary Box -->
+      <!-- Budget & Advancement Summary Box -->
       <div class="cb-sidebar-section mt3" id="cb-budget-bar">
-        <h3 class="cb-sidebar-title">{{ if eq .Language.Lang "es" }}Resumen de Puntos{{ else }}Point Summary{{ end }}</h3>
+        <h3 class="cb-sidebar-title" id="cb-budget-sidebar-title">{{ if eq .Language.Lang "es" }}Resumen de Puntos{{ else }}Point Summary{{ end }}</h3>
         
-        <div class="cb-budget-item">
-          <span class="cb-budget-label">{{ if eq .Language.Lang "es" }}Puntos Característica{{ else }}Ability Score Points{{ end }}</span>
-          <span class="cb-budget-val" id="cb-val-ability-pts">60 / 60</span>
+        <!-- Creation Mode Budget Wrap -->
+        <div id="cb-creation-budget-wrap" style="display: flex; flex-direction: column; gap: 0.45rem;">
+          <div class="cb-budget-item">
+            <span class="cb-budget-label">{{ if eq .Language.Lang "es" }}Puntos Característica{{ else }}Ability Score Points{{ end }}</span>
+            <span class="cb-budget-val" id="cb-val-ability-pts">60 / 60</span>
+          </div>
+          
+          <div class="cb-budget-item">
+            <span class="cb-budget-label">{{ if eq .Language.Lang "es" }}Puntos Habilidad{{ else }}Skill Points Remaining{{ end }}</span>
+            <span class="cb-budget-val" id="cb-val-skill-pts">70 / 70</span>
+          </div>
         </div>
-        
-        <div class="cb-budget-item">
-          <span class="cb-budget-label">{{ if eq .Language.Lang "es" }}Puntos Habilidad{{ else }}Skill Points Remaining{{ end }}</span>
-          <span class="cb-budget-val" id="cb-val-skill-pts">70 / 70</span>
-        </div>
-        
-        <div class="cb-budget-item">
-          <span class="cb-budget-label">{{ if eq .Language.Lang "es" }}Puntos Avance (PA){{ else }}Advancement Points (AP){{ end }}</span>
-          <span class="cb-budget-val" id="cb-val-ap-pts">0</span>
+
+        <!-- Campaign Mode XP / Advancement Wrap -->
+        <div id="cb-campaign-budget-wrap" style="display: none; flex-direction: column; gap: 0.45rem;">
+          <div class="cb-budget-item" style="border-color: #a6c12e; background: rgba(20, 50, 20, 0.4);">
+            <span class="cb-budget-label" style="color: #a6c12e;">{{ if eq .Language.Lang "es" }}Puntos Avance / XP Ganados{{ else }}Earned Advancement / XP{{ end }}</span>
+            <div style="display: flex; gap: 0.3rem; align-items: center; width: 100%; margin-top: 0.25rem;">
+              <input type="number" id="cb-sidebar-input-earned-ap" class="cb-input" min="0" value="0" style="padding: 0.25rem 0.4rem; font-size: 0.9rem; font-weight: bold; width: 60px; text-align: center;">
+              <div style="display: flex; gap: 0.2rem; flex: 1;">
+                <button type="button" class="cb-btn cb-btn-secondary" id="cb-sidebar-btn-add-1ap" style="padding: 0.25rem 0.35rem; font-size: 0.6rem;">+1</button>
+                <button type="button" class="cb-btn cb-btn-secondary" id="cb-sidebar-btn-add-5ap" style="padding: 0.25rem 0.35rem; font-size: 0.6rem;">+5</button>
+                <button type="button" class="cb-btn cb-btn-secondary" id="cb-sidebar-btn-add-10ap" style="padding: 0.25rem 0.35rem; font-size: 0.6rem;">+10</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="cb-budget-item">
+            <span class="cb-budget-label">{{ if eq .Language.Lang "es" }}XP Disponibles / Gastados{{ else }}XP Available / Spent{{ end }}</span>
+            <span class="cb-budget-val" id="cb-val-sidebar-ap-summary" style="font-size: 0.88rem; color: #e0f2fe;">0 Disp. / 0 Gastados</span>
+          </div>
+
+          <div class="cb-budget-item">
+            <span class="cb-budget-label">{{ if eq .Language.Lang "es" }}Título & Límite Rango{{ else }}Rank Title & Max Rank{{ end }}</span>
+            <span class="cb-budget-val" id="cb-val-sidebar-rank-title" style="font-size: 0.82rem; color: #a6c12e;">Novato (Máx: 5)</span>
+          </div>
         </div>
 
         <div class="cb-budget-status-wrap">

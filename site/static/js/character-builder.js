@@ -51,6 +51,14 @@ document.addEventListener('DOMContentLoaded', () => {
     return { title: isEs ? 'Novato' : 'Rookie', maxSkillRank: 5, maxBroad: 5 };
   }
 
+  function getRankBenefitDescription(ranks) {
+    if (!ranks || ranks <= 0) return isEs ? 'Sin Rango' : 'Untrained';
+    if (ranks === 1) return isEs ? 'Rango 1: Puntuación Base (+1 Objetivo)' : 'Rank 1: Base Score (+1 Target)';
+    if (ranks === 2) return isEs ? 'Rango 2: Precisión (+2 Objetivo)' : 'Rank 2: Precision (+2 Target)';
+    if (ranks === 3) return isEs ? 'Rango 3: Maestría de Creación (+3 Objetivo)' : 'Rank 3: Creation Mastery (+3 Target)';
+    return isEs ? `Rango ${ranks}: Especialista (+${ranks} Objetivo)` : `Rank ${ranks}: Specialist (+${ranks} Target)`;
+  }
+
   function getAdvancementSkillCost(skillName, targetRank) {
     let standardCost = 3;
     let isBroad = false;
@@ -745,39 +753,60 @@ document.addEventListener('DOMContentLoaded', () => {
     if (elTrackBg) elTrackBg.textContent = state.background || '—';
     if (elTrackProf) elTrackProf.textContent = PROFESSION_DATA[state.profession]?.name || '—';
 
-    const elAbility = document.getElementById('cb-val-ability-pts');
-    const elSkill = document.getElementById('cb-val-skill-pts');
-    const elAP = document.getElementById('cb-val-ap-pts');
-    const elBadge = document.getElementById('cb-status-badge');
-    const elBadgeText = document.getElementById('cb-status-text');
-    const elTotalSum = document.getElementById('cb-ability-total-sum');
-
-    if (elAbility) {
-      elAbility.textContent = `${abilityPtsSpent} / ${targetAbilityBudget}`;
-      elAbility.className = `cb-budget-val ${abilityPtsSpent === targetAbilityBudget ? 'valid' : (abilityPtsSpent > targetAbilityBudget ? 'over-limit' : '')}`;
-    }
-
-    if (elTotalSum) {
-      elTotalSum.textContent = `${abilityPtsSpent} / ${targetAbilityBudget}`;
-      elTotalSum.style.color = abilityPtsSpent === targetAbilityBudget ? '#a6c12e' : (abilityPtsSpent > targetAbilityBudget ? '#ff4d4d' : '#ffa500');
-    }
+    // Creation vs Campaign Mode Sidebar View Switch
+    const elCreationWrap = document.getElementById('cb-creation-budget-wrap');
+    const elCampaignWrap = document.getElementById('cb-campaign-budget-wrap');
+    const elSidebarTitle = document.getElementById('cb-budget-sidebar-title');
 
     const spentAP = state.isFinalized ? calculateCampaignSpentAP() : 0;
+    const availAP = (state.earnedAP || 0) - spentAP;
     const titleObj = getCharacterTitle(spentAP);
 
-    if (elSkill) {
-      elSkill.textContent = `${totalSkillBudget - skillPtsSpent} / ${totalSkillBudget}`;
-      elSkill.className = `cb-budget-val ${skillPtsSpent <= totalSkillBudget ? 'valid' : 'over-limit'}`;
-    }
+    if (state.isFinalized) {
+      if (elCreationWrap) elCreationWrap.style.display = 'none';
+      if (elCampaignWrap) elCampaignWrap.style.display = 'flex';
+      if (elSidebarTitle) elSidebarTitle.textContent = isEs ? 'Avance de Campaña (XP)' : 'Campaign XP & AP';
 
-    if (elAP) {
-      if (state.isFinalized) {
-        const availAP = (state.earnedAP || 0) - spentAP;
-        elAP.textContent = `${spentAP} AP (${availAP} ${isEs ? 'Disp.' : 'Avail'}) - ${titleObj.title}`;
-      } else {
-        elAP.textContent = `0 AP (${titleObj.title})`;
+      const inputSidebarEarned = document.getElementById('cb-sidebar-input-earned-ap');
+      const elSidebarApSum = document.getElementById('cb-val-sidebar-ap-summary');
+      const elSidebarRankTitle = document.getElementById('cb-val-sidebar-rank-title');
+
+      if (inputSidebarEarned && document.activeElement !== inputSidebarEarned) {
+        inputSidebarEarned.value = state.earnedAP || 0;
+      }
+      if (elSidebarApSum) {
+        elSidebarApSum.textContent = `${availAP} ${isEs ? 'Disp.' : 'Avail'} / ${spentAP} ${isEs ? 'Gastados' : 'Spent'}`;
+      }
+      if (elSidebarRankTitle) {
+        elSidebarRankTitle.textContent = `${titleObj.title} (${isEs ? 'Máx Rango' : 'Max Rank'}: ${titleObj.maxSkillRank})`;
+      }
+    } else {
+      if (elCreationWrap) elCreationWrap.style.display = 'flex';
+      if (elCampaignWrap) elCampaignWrap.style.display = 'none';
+      if (elSidebarTitle) elSidebarTitle.textContent = isEs ? 'Resumen de Puntos' : 'Point Summary';
+
+      const elAbility = document.getElementById('cb-val-ability-pts');
+      const elSkill = document.getElementById('cb-val-skill-pts');
+      const elTotalSum = document.getElementById('cb-ability-total-sum');
+
+      if (elAbility) {
+        elAbility.textContent = `${abilityPtsSpent} / ${targetAbilityBudget}`;
+        elAbility.className = `cb-budget-val ${abilityPtsSpent === targetAbilityBudget ? 'valid' : (abilityPtsSpent > targetAbilityBudget ? 'over-limit' : '')}`;
+      }
+
+      if (elTotalSum) {
+        elTotalSum.textContent = `${abilityPtsSpent} / ${targetAbilityBudget}`;
+        elTotalSum.style.color = abilityPtsSpent === targetAbilityBudget ? '#a6c12e' : (abilityPtsSpent > targetAbilityBudget ? '#ff4d4d' : '#ffa500');
+      }
+
+      if (elSkill) {
+        elSkill.textContent = `${totalSkillBudget - skillPtsSpent} / ${totalSkillBudget}`;
+        elSkill.className = `cb-budget-val ${skillPtsSpent <= totalSkillBudget ? 'valid' : 'over-limit'}`;
       }
     }
+
+    const elBadge = document.getElementById('cb-status-badge');
+    const elBadgeText = document.getElementById('cb-status-text');
 
     if (elBadge && elBadgeText) {
       if (state.isFinalized) {
@@ -1334,6 +1363,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <span>${isEs ? 'Rangos' : 'Ranks'}: +${currentRanks}</span>
                     <span>${isEs ? 'Puntuación Total' : 'Total Score'}: <strong>${totalSpecScore}</strong></span>
                     <span>${isEs ? 'Objetivo' : 'Target'}: <strong>${specOrd} / ${specGood} / ${specAmaz}</strong></span>
+                    <span style="color: #a6c12e; font-weight: bold;">${getRankBenefitDescription(currentRanks)}</span>
                     <span>${isEs ? 'Precio' : 'Cost'}: ${actualSpecCost} SP/rank</span>
                     <span style="color: var(--accent-cyan); font-weight: bold;">${isEs ? 'Total' : 'Total'}: <strong>${specTotalSpent} SP</strong></span>
                   </span>
@@ -1414,7 +1444,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     if (broadList.length === 0) {
-      skillRowsHtml = `<tr><td colspan="6" style="text-align:center; padding:1.5rem; color:#8099AC;">${isEs ? 'No se han seleccionado habilidades.' : 'No skills trained yet.'}</td></tr>`;
+      skillRowsHtml = `<tr><td colspan="7" style="text-align:center; padding:1.5rem; color:#8099AC;">${isEs ? 'No se han seleccionado habilidades.' : 'No skills trained yet.'}</td></tr>`;
     } else {
       broadList.forEach(broad => {
         const broadInfo = purchasedSkills[broad.skill];
@@ -1431,6 +1461,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <td class="tc"><strong>${abilityScore}</strong></td>
             <td class="tc">${broadInfo ? 'Broad' : '-'}</td>
             <td class="tc"><strong>${broadOrd}</strong></td>
+            <td class="tc" style="font-size: 0.78rem; color: #a6c12e;">${isEs ? 'Habilidad General (Base)' : 'Broad Skill (Base)'}</td>
             <td class="tc cb-target-scores">${broadOrd} / ${broadGood} / ${broadAmaz}</td>
           </tr>
         `;
@@ -1452,6 +1483,7 @@ document.addEventListener('DOMContentLoaded', () => {
                   <td class="tc">${abilityScore}</td>
                   <td class="tc">+${ranks}</td>
                   <td class="tc"><strong>${totalScore}</strong></td>
+                  <td class="tc" style="font-size: 0.78rem; color: #a6c12e;">${getRankBenefitDescription(ranks)}</td>
                   <td class="tc cb-target-scores">${ord} / ${good} / ${amaz}</td>
                 </tr>
               `;
@@ -1599,6 +1631,7 @@ document.addEventListener('DOMContentLoaded', () => {
                   <th class="tc">${isEs ? 'Base' : 'Base'}</th>
                   <th class="tc">${isEs ? 'Rangos' : 'Ranks'}</th>
                   <th class="tc">${isEs ? 'Puntuación Total' : 'Total Score'}</th>
+                  <th class="tc">${isEs ? 'Beneficios de Rango' : 'Rank Benefits'}</th>
                   <th class="tc">${isEs ? 'Objetivo (Ord / Bu / As)' : 'Target (Ord / Good / Amaz)'}</th>
                 </tr>
               </thead>
@@ -1659,6 +1692,36 @@ document.addEventListener('DOMContentLoaded', () => {
       recalculateBudgets();
     });
   }
+
+  // Sidebar XP / Advancement Event Listeners
+  const inputSidebarEarned = document.getElementById('cb-sidebar-input-earned-ap');
+  inputSidebarEarned?.addEventListener('change', e => {
+    state.earnedAP = Math.max(0, parseInt(e.target.value, 10) || 0);
+    saveStateToLocalStorage();
+    recalculateBudgets();
+    if (state.step === 7) renderStep7();
+  });
+
+  document.getElementById('cb-sidebar-btn-add-1ap')?.addEventListener('click', () => {
+    state.earnedAP = (state.earnedAP || 0) + 1;
+    saveStateToLocalStorage();
+    recalculateBudgets();
+    if (state.step === 7) renderStep7();
+  });
+
+  document.getElementById('cb-sidebar-btn-add-5ap')?.addEventListener('click', () => {
+    state.earnedAP = (state.earnedAP || 0) + 5;
+    saveStateToLocalStorage();
+    recalculateBudgets();
+    if (state.step === 7) renderStep7();
+  });
+
+  document.getElementById('cb-sidebar-btn-add-10ap')?.addEventListener('click', () => {
+    state.earnedAP = (state.earnedAP || 0) + 10;
+    saveStateToLocalStorage();
+    recalculateBudgets();
+    if (state.step === 7) renderStep7();
+  });
 
   // Attach Event Listeners
   document.getElementById('cb-input-name')?.addEventListener('input', e => { state.bio.name = e.target.value; saveStateToLocalStorage(); });
