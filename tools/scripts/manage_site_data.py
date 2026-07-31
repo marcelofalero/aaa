@@ -45,6 +45,8 @@ CATEGORY_MAP = {
     'Combat': 'Combate',
     'Technical': 'Técnica',
     'Social': 'Social',
+    'Academic': 'Académica',
+    'Physical': 'Física',
     'Other': 'Otros'
 }
 
@@ -343,6 +345,7 @@ def process_psionics(psionics_list, mapping):
             d_url = localize_url(d.get('url', ''), lang, d_title)
             
             broad_entry = {
+                "id": (d.get('id') or d_title.lower()).lower(),
                 "skill": d_title,
                 "attribute": d_attr,
                 "url": d_url,
@@ -360,6 +363,7 @@ def process_psionics(psionics_list, mapping):
                 p_desc = translate_field_robust(p, 'description', lang, mapping)
                 
                 power_entry = {
+                    "id": (p.get('id') or p_title.lower()).lower(),
                     "skill": p_title,
                     "attribute": p_attr,
                     "url": p_url,
@@ -477,6 +481,7 @@ def process_perks_flaws(perks_list, flaws_list, mapping):
             desc = translate_field_robust(item, 'description', lang, mapping) or ""
             
             processed_perks.append({
+                "id": item.get('id') or slug,
                 "name": title,
                 "cost": item.get('cost'),
                 "ability": translate_field(item.get('ability', '—'), None, mapping, lang),
@@ -500,6 +505,7 @@ def process_perks_flaws(perks_list, flaws_list, mapping):
             desc = translate_field_robust(item, 'description', lang, mapping) or ""
             
             processed_flaws.append({
+                "id": item.get('id') or slug,
                 "name": title,
                 "bonus_points": item.get('bonus_points'),
                 "ability": translate_field(item.get('ability', '—'), None, mapping, lang),
@@ -561,6 +567,7 @@ def process_backgrounds(backgrounds_list, mapping):
 
             # Process all fields
             processed_item = {
+                "id": item.get('id') or slug,
                 "name": title,
                 "summary": summary,
                 "favored_broad_skill": translate_field(item.get('favored_broad_skill', ''), None, mapping, lang),
@@ -681,6 +688,7 @@ def process_skills(skills_list, mapping):
             desc = translate_field_robust(b, 'description', lang, mapping)
             
             broad_entry = {
+                "id": b.get('id') or title,
                 "skill": title,
                 "attribute": translate_field(b['attribute'], None, mapping, lang),
                 "url": localize_url(b.get('url') or b.get('skill_url'), lang, title),
@@ -691,6 +699,7 @@ def process_skills(skills_list, mapping):
             for s in to_list(b.get('items', [])):
                 s_title = translate_field_robust(s, 'name', lang, mapping)
                 specs.append({
+                    "id": s.get('id') or s_title,
                     "skill": s_title,
                     "attribute": translate_field(s.get('attribute', b.get('attribute', 'N/A')), None, mapping, lang),
                     "url": localize_url(s.get('url') or s.get('skill_url'), lang, s_title),
@@ -703,7 +712,7 @@ def process_skills(skills_list, mapping):
             
         items = []
         for cat in sorted(categories.keys()):
-            items.append({"skill": cat, "type": "Category", "items": categories[cat]})
+            items.append({"id": cat.lower().replace('é', 'e').replace('í', 'i').replace('ó', 'o').replace('á', 'a'), "skill": cat, "type": "Category", "items": categories[cat]})
         return {"fields": fields, "items": items}
 
     with open(os.path.join(SITE_DATA_DIR, 'skills-table.json'), 'w', encoding='utf-8') as f:

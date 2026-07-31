@@ -420,6 +420,300 @@ on('change:repeating_starshipweapons:StarshipWeaponName change:repeating_starshi
 
 
 
+
+/* ===== IMPORT / EXPORT JSON WORKERS ===== */
+on('clicked:import_json', function() {
+    getAttrs(['import_export_json'], function(v) {
+        try {
+            if (!v.import_export_json) throw new Error("JSON field is empty.");
+            const data = JSON.parse(v.import_export_json);
+            const update = {};
+            
+            // Map Character Builder JSON to Roll20 attributes
+            if (data.bio) {
+                if (data.bio.name) update.character_name = data.bio.name;
+                if (data.bio.species) update.race = data.bio.species;
+                if (data.bio.profession) update.profession = data.bio.profession;
+                if (data.bio.background) update.career = data.bio.background;
+            }
+            
+            if (data.abilities) {
+                if (data.abilities.STR) update.Strength = data.abilities.STR;
+                if (data.abilities.DEX) update.Dexterity = data.abilities.DEX;
+                if (data.abilities.CON) update.Constitution = data.abilities.CON;
+                if (data.abilities.INT) update.Intelligence = data.abilities.INT;
+                if (data.abilities.WIL) update.Will = data.abilities.WIL;
+                if (data.abilities.PER) update.Personality = data.abilities.PER;
+            }
+            
+            const ROLL20_SKILL_MAP = {
+                "acrobatics": "Acrobatics",
+                "aerobatics": "Acrobatics_Aerobatics",
+                "daredevil": "Acrobatics_Daredevil",
+                "dodge": "Acrobatics_Dodge",
+                "fall": "Acrobatics_Fall",
+                "zero-g-training": "Acrobatics_ZerogTraining",
+                "administration": "Administration",
+                "bureaucracy": "Administration_Bureaucracy",
+                "management": "Administration_Management",
+                "animal-handling": "AnimalHandling",
+                "animal-riding": "AnimalHandling_Animalriding",
+                "animal-training": "AnimalHandling_Animaltraining",
+                "armor-operation": "ArmorOperation",
+                "combat-armor": "ArmorOperation_Combatarmor",
+                "tactical-armor": "ArmorOperation_Tacticalarmor",
+                "propulsion-systems": "ArmorOperation_Propulsionsystems",
+                "shields": "ArmorOperation_Shields",
+                "athletics": "Athletics",
+                "climb": "Athletics_Climb",
+                "jump": "Athletics_Jump",
+                "swim": "Athletics_Swim",
+                "throw": "Athletics_Throw",
+                "awareness": "Awareness",
+                "intuition": "Awareness_Intuition",
+                "perception": "Awareness_Perception",
+                "psionic-sense": "Awareness_PsionicSense",
+                "business": "Business",
+                "corporate": "Business_Corporate",
+                "illicit-business": "Business_Illicitbusiness",
+                "small-business": "Business_Smallbusiness",
+                "computer-science": "ComputerScience",
+                "hacking": "ComputerScience_Hacking",
+                "hardware": "ComputerScience_Hardware",
+                "programming": "ComputerScience_Programming",
+                "covert-ops": "CovertOps",
+                "conceal": "CovertOps_Conceal",
+                "disguise": "CovertOps_Disguise",
+                "pickpocket": "CovertOps_Pickpocket",
+                "stealth": "CovertOps_Stealth",
+                "creativity": "Creativity",
+                "the-intangible": "Creativity_TheIntangible",
+                "the-shape": "Creativity_TheShape",
+                "the-word": "Creativity_TheWord",
+                "culture": "Culture",
+                "etiquette": "Culture_Etiquette",
+                "diplomacy": "Culture_Diplomacy",
+                "first-encounter": "Culture_FirstEncounter",
+                "deception": "Deception",
+                "bluff": "Deception_Bluff",
+                "bribe": "Deception_Bribe",
+                "gamble-logic-games": "Deception_GambleLogicGames",
+                "gamble-nerve-games": "Deception_GambleNerveGames",
+                "demolitions": "Demolitions",
+                "disarm": "Demolitions_Disarm",
+                "scratch-built-explosives": "Demolitions_ScratchBuiltExplosives",
+                "set-explosives": "Demolitions_Setexplosives",
+                "entertainment": "Entertainment",
+                "musical-instrument": "Entertainment_Musicalinstrument",
+                "sing": "Entertainment_Sing",
+                "act": "Entertainment_Act",
+                "dance": "Entertainment_Dance",
+                "heavy-weapons": "HeavyWeapons",
+                "direct-fire": "HeavyWeapons_Directfire",
+                "indirect-fire": "HeavyWeapons_Indirectfire",
+                "interaction": "Interaction",
+                "bargain": "Interaction_Bargain",
+                "charm": "Interaction_Charm",
+                "interview": "Interaction_Interview",
+                "intimidate": "Interaction_Intimidate",
+                "seduce": "Interaction_Seduce",
+                "taunt": "Interaction_Taunt",
+                "investigate": "Investigate",
+                "interrogate": "Investigate_Interrogate",
+                "search": "Investigate_Search",
+                "track": "Investigate_Track",
+                "knowledge": "Knowledge",
+                "language-specific-skill": "Knowledge_LanguageSpecificSkill",
+                "psionics": "LifeScience_Psionics",
+                "computer-operation": "Knowledge_ComputerOperation",
+                "deduce": "Knowledge_Deduce",
+                "first-aid": "Knowledge_FirstAid",
+                "research": "Knowledge_Research",
+                "law": "Law",
+                "court-procedures": "Law_Courtprocedures",
+                "law-enforcement-procedures": "Law_Lawenforcementprocedures",
+                "law-specific-skill": "Law_Lawspecificskill",
+                "leadership": "Leadership",
+                "command": "Leadership_Command",
+                "inspire": "Leadership_Inspire",
+                "life-science": "LifeScience",
+                "biology": "LifeScience_Biology",
+                "botany": "LifeScience_Botany",
+                "genetics": "LifeScience_Genetics",
+                "zoology": "LifeScience_Zoology",
+                "medical-science": "MedicalScience",
+                "forensics": "MedicalScience_Forensics",
+                "medical-knowledge": "MedicalScience_MedicalKnowledge",
+                "psychology": "MedicalScience_Psychology",
+                "surgery": "MedicalScience_Surgery",
+                "treatment": "MedicalScience_Treatment",
+                "xenomedicine": "MedicalScience_Xenomedicine",
+                "forensic-science": "MedicalScience_ForensicScience",
+                "melee-combat": "MeleeCombat",
+                "blade": "MeleeCombat_Blade",
+                "blunt": "MeleeCombat_Blunt",
+                "defensive-martial-arts": "MeleeCombat_DefensiveMartialArts",
+                "power-martial-arts": "MeleeCombat_PowerMartialArts",
+                "powered-weapons": "MeleeCombat_Powered",
+                "modern-ranged-weapons": "ModernRangedWeapons",
+                "assault-rifle": "ModernRangedWeapons_AssaultRifle",
+                "pistol": "ModernRangedWeapons_Pistol",
+                "rifle": "ModernRangedWeapons_Rifle",
+                "smg": "ModernRangedWeapons_SMG",
+                "shotgun": "ModernRangedWeapons_Shotgun",
+                "navigation": "Navigation",
+                "astrogationdrivespace": "Navigation_Astrogationdrivespace",
+                "astrogationsystem": "Navigation_Astrogationsystem",
+                "navigationsurface": "Navigation_Navigationsurface",
+                "physical-science": "PhysicalScience",
+                "astronomy": "PhysicalScience_Astronomy",
+                "chemistry": "PhysicalScience_Chemistry",
+                "physics": "PhysicalScience_Physics",
+                "planetology": "PhysicalScience_Planetology",
+                "primitive-ranged-weapons": "PrimitiveRangedWeapons",
+                "bow": "PrimitiveRangedWeapons_Bow",
+                "crossbow": "PrimitiveRangedWeapons_Crossbow",
+                "flintlock": "PrimitiveRangedWeapons_Flintlock",
+                "sling": "PrimitiveRangedWeapons_Sling",
+                "resolve": "Resolve",
+                "mental-resolve": "Resolve_Mentalresolve",
+                "physical-resolve": "Resolve_Physicalresolve",
+                "security": "Security",
+                "protection-protocols": "Security_Protectionprotocols",
+                "security-devices": "Security_Securitydevices",
+                "stamina": "Stamina",
+                "endurance": "Stamina_Endurance",
+                "resist-pain": "Stamina_Resistpain",
+                "street-smart": "StreetSmart",
+                "street-knowledge": "StreetSmart_StreetKnowledge",
+                "criminal-elements": "StreetSmart_Criminalelements",
+                "survival": "Survival",
+                "survival-training": "Survival_Survivaltraining",
+                "adaptability": "Survival_Adaptability",
+                "trailblazing": "Survival_Trailblazing",
+                "system-operation": "SystemOperation",
+                "communications": "SystemOperation_Communications",
+                "defenses": "SystemOperation_Defenses",
+                "engineering": "SystemOperation_Engineering",
+                "sensors": "SystemOperation_Sensors",
+                "weapons": "SystemOperation_Weapons",
+                "tactics": "Tactics",
+                "infantry-tactics": "Tactics_Infantrytactics",
+                "space-tactics": "Tactics_Spacetactics",
+                "vehicle-tactics": "Tactics_Vehicletactics",
+                "technical-science": "TechnicalScience",
+                "technical-knowledge": "TechnicalScience_TechnicalKnowledge",
+                "invention": "TechnicalScience_Invention",
+                "repair": "TechnicalScience_Repair",
+                "juryrig": "TechnicalScience_Juryrig",
+                "vehicle-operation": "VehicleOperation",
+                "air-vehicle": "VehicleOperation_Airvehicle",
+                "land-vehicle": "VehicleOperation_Landvehicle",
+                "space-vehicle": "VehicleOperation_Spacevehicle",
+                "water-vehicle": "VehicleOperation_Watervehicle",
+                "Biokinesis": "Biokinesis",
+                "bio-armor": "Biokinesis_Bioarmor",
+                "bioweapon": "Biokinesis_Bioweapon",
+                "control-metabolism": "Biokinesis_ControlMetabolism",
+                "heal": "Biokinesis_Heal",
+                "morph": "Biokinesis_Morph",
+                "rejuvenate": "Biokinesis_Rejuvenate",
+                "clamber": "Biokinesis_Clamber",
+                "shatter": "Biokinesis_Shatter",
+                "visual-enhancement": "Biokinesis_VisualEnhancement",
+                "transfer-vitality": "Biokinesis_TransferVitality",
+                "ESP": "ESP",
+                "battle-mind": "ESP_BattleMind",
+                "dream-hunt": "ESP_DreamHunt",
+                "empathy": "ESP_Empathy",
+                "mind-reading": "ESP_MindReading",
+                "navcognition": "ESP_Navcognition",
+                "postcognition": "ESP_Postcognition",
+                "precognition": "ESP_Precognition",
+                "psychometry": "ESP_Psychometry",
+                "clairsentience": "ESP_Clairsentience",
+                "Psychoportation": "Psychoportation",
+                "alter-speed": "Psychoportation_AlterSpeed",
+                "apportation": "Psychoportation_Apportation",
+                "duplicate": "Psychoportation_Duplicate",
+                "teleportation": "Psychoportation_Teleportation",
+                "timeslip": "Psychoportation_Timeslip",
+                "dimension-walk": "Psychoportation_DimensionWalk",
+                "Telekinesis": "Telekinesis",
+                "cryokinetics": "Telekinesis_Cryokinetics",
+                "electrokinetics": "Telekinesis_Electrokinetics",
+                "kinetic-blow": "Telekinesis_KineticBlow",
+                "kinetic-shield": "Telekinesis_KineticShield",
+                "levitation": "Telekinesis_Levitation",
+                "photokinetics": "Telekinesis_Photokinetics",
+                "psychokinetics": "Telekinesis_Psychokinetics",
+                "pyrokinesis": "Telekinesis_Pyrokinesis",
+                "sheyas-clutch": "Telekinesis_SheyasClutch",
+                "Telepathy": "Telepathy",
+                "contact": "Telepathy_Contact",
+                "empathic-projection": "Telepathy_EmpathicProjection",
+                "illusion": "Telepathy_Illusion",
+                "mind-blast": "Telepathy_MindBlast",
+                "mind-shield": "Telepathy_MindShield",
+                "mind-wipe": "Telepathy_MindWipe",
+                "psychic-armor": "Telepathy_PsychicArmor",
+                "psychic-projection": "Telepathy_PsychicProjection",
+                "suggest": "Telepathy_Suggest",
+                "tire": "Telepathy_Tire",
+                "undo": "Telepathy_Undo",
+                "guidance": "Telepathy_Guidance",
+                "subdual": "Telepathy_Subdual",
+                "thought-worm": "Telepathy_ThoughtWorm"
+};
+            
+            if (data.skills) {
+                Object.keys(data.skills).forEach(skillId => {
+                    const r20Attr = ROLL20_SKILL_MAP[skillId] || ROLL20_SKILL_MAP[skillId.toLowerCase()] || skillId.replace(/\s/g, '').replace(/-/g, '').replace(/\./g, '').replace(/,/g, '').replace(/—/g, '').replace(/'/g, '');
+                    update[`${r20Attr}Rank`] = (update[`${r20Attr}Rank`] || 0) + data.skills[skillId].ranks;
+                    update[`${r20Attr}_is_trained`] = "on";
+                });
+            }
+            if (data.advancementSkills) {
+                Object.keys(data.advancementSkills).forEach(skillId => {
+                    const r20Attr = ROLL20_SKILL_MAP[skillId] || ROLL20_SKILL_MAP[skillId.toLowerCase()] || skillId.replace(/\s/g, '').replace(/-/g, '').replace(/\./g, '').replace(/,/g, '').replace(/—/g, '').replace(/'/g, '');
+                    update[`${r20Attr}Rank`] = (update[`${r20Attr}Rank`] || 0) + data.advancementSkills[skillId].ranks;
+                    update[`${r20Attr}_is_trained`] = "on";
+                });
+            }
+            
+            update.import_status = "Import successful! ✅";
+            setAttrs(update);
+        } catch(e) {
+            setAttrs({ import_status: "❌ Error: " + e.message });
+        }
+    });
+});
+
+on('clicked:export_json', function() {
+    getAttrs(['character_name', 'race', 'profession', 'career', 'Strength', 'Dexterity', 'Constitution', 'Intelligence', 'Will', 'Personality'], function(v) {
+        const out = {
+            bio: {
+                name: v.character_name || "",
+                species: v.race || "",
+                profession: v.profession || "",
+                background: v.career || ""
+            },
+            abilities: {
+                STR: parseInt(v.Strength) || 0,
+                DEX: parseInt(v.Dexterity) || 0,
+                CON: parseInt(v.Constitution) || 0,
+                INT: parseInt(v.Intelligence) || 0,
+                WIL: parseInt(v.Will) || 0,
+                PER: parseInt(v.Personality) || 0
+            }
+        };
+        setAttrs({ 
+            import_export_json: JSON.stringify(out, null, 2),
+            import_status: "Export successful! ✅"
+        });
+    });
+});
+
 	</script>
 
 	<div class="sheet-logo-container">

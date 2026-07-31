@@ -21,6 +21,7 @@
                 "name": "Antecedentes",
                 "items": [
                     {
+                        "id": "academy-graduate",
                         "name": "El Graduado de la Academia",
                         "summary": "Representas el nivel de élite de la formación institucional.",
                         "favored_broad_skill": "",
@@ -34,6 +35,7 @@
                         "tendencies": "**El Oficial al Mando:** Afirma tu rango o autoridad para tomar el control de una situación caótica, incluso cuando hacerlo te convierte en el objetivo principal de enemigos o del escrutinio social.<br>**El Estratega:** Se niega a desviarse de un plan táctico sofisticado o \"correcto\" incluso cuando una solución más simple y \"ruda\" está disponible, priorizando la doctrina que le enseñaron."
                     },
                     {
+                        "id": "austin-combat-school",
                         "name": "Graduado de la Escuela de Combate Austin",
                         "summary": "Un graduado de una academia militar de élite conocida por producir soldados disciplinados y brillantes.",
                         "favored_broad_skill": "[Tactics]({{< relref \"/skills/tactics/\" >}})",
@@ -47,6 +49,7 @@
                         "tendencies": ""
                     },
                     {
+                        "id": "bounty-hunter",
                         "name": "El Cazarrecompensas",
                         "summary": "La galaxia es vasta, pero para ti, es solo una serie de huellas y rastros digitales.",
                         "favored_broad_skill": "",
@@ -60,6 +63,7 @@
                         "tendencies": "**El Obsesivo:** Persigue un objetivo o una pista en una situación claramente peligrosa o desventajosa en lugar de elegir un camino más seguro y lento.<br>**El Profesional:** Honra la letra específica de un contrato incluso cuando se le ofrece un \"trato secundario\" más rentable o una salida moral más fácil."
                     },
                     {
+                        "id": "breacher",
                         "name": "El Especialista en Brechas",
                         "summary": "Especialista en sortear barreras físicas e iniciar entradas tácticas.",
                         "favored_broad_skill": "",
@@ -73,6 +77,7 @@
                         "tendencies": ""
                     },
                     {
+                        "id": "certified-psychic",
                         "name": "El Psíquico Certificado",
                         "summary": "Eres una entidad legal autónoma, con la rara autoridad de usar poderes psiónicos abiertamente.",
                         "favored_broad_skill": "",
@@ -86,6 +91,7 @@
                         "tendencies": "**La Verdad Absoluta:** Fuerza una verdad dura o peligrosa a la luz para mantener tu neutralidad absoluta, incluso cuando una mentira educada o un engaño habrían facilitado las cosas para la parte.<br>**El Juez No Deseado:** Complica una situación actuando sobre un crimen o un secreto oscuro que obtuviste de la mente de alguien, usando tu autoridad autónoma para intervenir cuando no era tu lucha."
                     },
                     {
+                        "id": "corporate-enforcer",
                         "name": "El Ejecutor Corporativo",
                         "summary": "Músculo para megacorporaciones, especializado en protección de activos y resolución de disputas.",
                         "favored_broad_skill": "",
@@ -99,6 +105,7 @@
                         "tendencies": ""
                     },
                     {
+                        "id": "criminal-urchin",
                         "name": "El Criminal / Golfillo",
                         "summary": "La vida en las calles te enseñó a sobrevivir, pero te dejó con un nombre que las autoridades no olvidarán.",
                         "favored_broad_skill": "[Callejeo]({{< relref \"/skills/street-smart/\" >}})",
@@ -112,6 +119,7 @@
                         "tendencies": "**El Oportunista:** Asume un riesgo innecesario para asegurar un beneficio personal o una \"ventaja\".<br>**El Paranoico:** Compromete un plan para asegurar una ruta de escape clara."
                     },
                     {
+                        "id": "deserter",
                         "name": "El Desertor",
                         "summary": "Hiciste el juramento, recibiste el entrenamiento y luego viste la verdad.",
                         "favored_broad_skill": "",
@@ -125,6 +133,7 @@
                         "tendencies": "**La Fuga Pragmática:** Abandona una causa cuando los riesgos se vuelven \"inaceptables\" para asegurar tu supervivencia.<br>**La Mano Oculta:** Renuncia a la fama o la recompensa para asegurar que tu identidad permanezca sin descubrir."
                     },
                     {
+                        "id": "diplomat",
                         "name": "El Diplomático",
                         "summary": "Estás entrenado para hablar el lenguaje del poder y el protocolo.",
                         "favored_broad_skill": "",
@@ -138,6 +147,7 @@
                         "tendencies": "**El Mediador:** Intenta resolver una situación hostil mediante la negociación, incluso cuando el combate sea más fácil.<br>**El Arquitecto:** Retrasa la acción para asegurar que cada variable social o consecuencia sea considerada."
                     },
                     {
+                        "id": "face",
                         "name": "La Cara",
                         "summary": "Eres un maestro del \"engaño\".",
                         "favored_broad_skill": "",
@@ -151,6 +161,7 @@
                         "tendencies": "**El Buscador de Atención:** Intencionalmente llama la atención sobre sí mismo en un entorno social para crear una distracción, incluso cuando pasar desapercibido es más seguro.<br>**El Estafador:** Intenta \"estafar\" o salir de un problema o entrar en un área restringida usando su atractivo personal, incluso cuando existe un método más directo (pero menos elegante)."
                     },
                     {
+                        "id": "field-medic",
                         "name": "El Médico de Campo",
                         "summary": "Healer listo para el combate entrenado para salvar vidas bajo fuego.",
                         "favored_broad_skill": "",
@@ -164,6 +175,7 @@
                         "tendencies": ""
                     },
                     {
+                        "id": "field-researcher",
                         "name": "El Investigador de Campo",
                         "summary": "Científico especializado en catalogar y analizar datos en entornos peligrosos.",
                         "favored_broad_skill": "",
@@ -177,6 +189,7 @@
                         "tendencies": ""
                     },
                     {
+                        "id": "fixer",
                         "name": "El Arreglador",
                         "summary": "Eres el pegamento que mantiene unidos los bajos fondos.",
                         "favored_broad_skill": "",
@@ -190,6 +203,7 @@
                         "tendencies": "**The Negotiator:** Solve a conflict by brokering a deal that moves the plot forward.<br>**The Asset Manager:** Risk an objective to preserve a useful contact or piece of equipment."
                     },
                     {
+                        "id": "fleet-officer",
                         "name": "El Oficial de Flota",
                         "summary": "Mientras las fuerzas terrestres luchan por metros, tú luchas por sistemas.",
                         "favored_broad_skill": "",
@@ -203,6 +217,7 @@
                         "tendencies": "**El Alma de la Nave:** Prioriza la integridad estructural y el mantenimiento a largo plazo de la nave sobre el equipo personal o los objetivos de la misión.<br>**El Purista del Protocolo:** Insiste en seguir los protocolos estándar de comunicación y combate naval incluso cuando opera en la \"naturaleza\" o con tripulaciones civiles, lo que podría causar fricción social."
                     },
                     {
+                        "id": "freelance-captain",
                         "name": "El Capitán Freelance",
                         "summary": "Operador de nave estelar independiente que sobrevive gracias a su olfato comercial.",
                         "favored_broad_skill": "",
@@ -216,6 +231,7 @@
                         "tendencies": ""
                     },
                     {
+                        "id": "ghost-agent",
                         "name": "El Agente Fantasma",
                         "summary": "Operativo de cobertura profunda especializado en subversión e infiltración no combatiente.",
                         "favored_broad_skill": "",
@@ -229,6 +245,7 @@
                         "tendencies": ""
                     },
                     {
+                        "id": "grifter",
                         "name": "El Estafador",
                         "summary": "Maestro del engaño y la ingeniería social, prosperando gracias a la codicia ajena.",
                         "favored_broad_skill": "",
@@ -242,6 +259,7 @@
                         "tendencies": ""
                     },
                     {
+                        "id": "hacker",
                         "name": "El Hacker",
                         "summary": "Para ti, el universo no está hecho de átomos y vacío, sino de datos y redes flotando en el ciberespacio.",
                         "favored_broad_skill": "",
@@ -255,6 +273,7 @@
                         "tendencies": "**The Digital Ghost:** Prioritize erasing your digital footprint or stealing secondary data over the Físico safety or immediate tactical needs of the party.<br>**The Curious Intruder:** Cannot resist poking into a secure system or locked file even when it has nothing to do with the current mission and risks triggering alarms."
                     },
                     {
+                        "id": "innovator",
                         "name": "El Innovador",
                         "summary": "Mente técnica que encuentra soluciones no estándar a problemas imposibles.",
                         "favored_broad_skill": "",
@@ -268,6 +287,7 @@
                         "tendencies": ""
                     },
                     {
+                        "id": "mercenary",
                         "name": "Mercenario",
                         "summary": "Un combatiente de supervivencia que ha visto las sombrías realidades del campo de batalla.",
                         "favored_broad_skill": "[Survival]({{< relref \"/skills/survival/\" >}})",
@@ -281,6 +301,7 @@
                         "tendencies": ""
                     },
                     {
+                        "id": "military-brat",
                         "name": "El Hijo de Militares",
                         "summary": "Creciste a la sombra del servicio.",
                         "favored_broad_skill": "",
@@ -294,6 +315,7 @@
                         "tendencies": "**El Seguidor de Órdenes:** Se adhiere a un plan o instrucción incluso cuando las circunstancias han cambiado.<br>**El Protector:** Se pone en riesgo para cubrir el flanco de un aliado."
                     },
                     {
+                        "id": "operative",
                         "name": "El Operativo",
                         "summary": "Profesional paramilitar especializado en acción directa y misiones tácticas.",
                         "favored_broad_skill": "",
@@ -307,6 +329,7 @@
                         "tendencies": ""
                     },
                     {
+                        "id": "orlamu-clergy",
                         "name": "Miembro del Clero Orlamu",
                         "summary": "Fuiste criado en los serenos templos de los Fraal, estudiando la conexión entre la mente y el cosmos.",
                         "favored_broad_skill": "[Firmeza]({{< relref \"/skills/resolve/\" >}})",
@@ -320,6 +343,7 @@
                         "tendencies": ""
                     },
                     {
+                        "id": "outcast",
                         "name": "El Marginado",
                         "summary": "Naciste en los márgenes de la sociedad educada.",
                         "favored_broad_skill": "",
@@ -333,6 +357,7 @@
                         "tendencies": "**El Tradicionalista:** Resuelve un problema moderno utilizando un método antiguo, de baja tecnología o ritualista.<br>**El Solitario:** Asume una desventaja para realizar una tarea completamente solo, rechazando la ayuda de la tecnología \"blanda\" o de sus compañeros de equipo."
                     },
                     {
+                        "id": "paramilitary-officer",
                         "name": "El Oficial Paramilitar",
                         "summary": "No te entrenaste en una academia prestigiosa ni luchaste bajo una bandera planetaria.",
                         "favored_broad_skill": "",
@@ -346,6 +371,7 @@
                         "tendencies": "**El Mercenario:** Exige renegociación, pago por riesgo o una clara ventaja táctica antes de comprometerse en un peligroso tiroteo que no estaba en el plan original.<br>**El Pragmatista:** Ignora las reglas de enfrentamiento tradicionales o la doctrina \"honorable\" en favor de trampas, sabotajes o una fuerza desproporcionada abrumadora."
                     },
                     {
+                        "id": "private-eye",
                         "name": "El Detective Privado",
                         "summary": "Investigador urbano curtido que descubre verdades ocultas en rincones oscuros.",
                         "favored_broad_skill": "",
@@ -359,6 +385,7 @@
                         "tendencies": ""
                     },
                     {
+                        "id": "roughneck",
                         "name": "El Estibador Espacial",
                         "summary": "Trabajador de la frontera industrial acostumbrado a maquinaria pesada y entornos duros.",
                         "favored_broad_skill": "",
@@ -372,6 +399,7 @@
                         "tendencies": ""
                     },
                     {
+                        "id": "sapper",
                         "name": "El Zapador",
                         "summary": "Experto en demoliciones especializado en destrucción estructural y entrada táctica.",
                         "favored_broad_skill": "",
@@ -385,6 +413,7 @@
                         "tendencies": ""
                     },
                     {
+                        "id": "scavenger",
                         "name": "El Chatarrero",
                         "summary": "Superviviente marginal que encuentra y arregla valor en chatarra planetaria y barcos abandonados.",
                         "favored_broad_skill": "",
@@ -398,6 +427,7 @@
                         "tendencies": ""
                     },
                     {
+                        "id": "ship-owner",
                         "name": "El Propietario de Nave",
                         "summary": "Tienes las llaves del activo más valioso de la galaxia: una nave estelar.",
                         "favored_broad_skill": "",
@@ -411,6 +441,7 @@
                         "tendencies": "**El Resultado Final:** Toma una decisión táctica o narrativa estrictamente basada en la ganancia financiera o la preservación física de tu nave, ignorando súplicas morales o riesgos personales.<br>**Mi Nave, Mis Reglas:** Afirma tu autoridad absoluta sobre una situación o pasajero a bordo de tu nave, incluso cuando ceder ante un aliado o experto sería significativamente más seguro."
                     },
                     {
+                        "id": "smuggler",
                         "name": "El Contrabandista",
                         "summary": "Te ganas la vida en las zonas grises entre fronteras y leyes.",
                         "favored_broad_skill": "",
@@ -424,6 +455,7 @@
                         "tendencies": "**El Contrabandista:** Asume un riesgo narrativo o táctico para introducir algo ilegal o restringido en un área segura, incluso si la misión actual no lo requiere estrictamente.<br>**El Quemador:** Desecha carga valiosa, abandona un trato lucrativo o rompe lazos con un contacto útil a la primera señal de escrutinio oficial para asegurar tu propia libertad."
                     },
                     {
+                        "id": "subverter",
                         "name": "El Subversor",
                         "summary": "Usas tu arte no para las galerías, sino para las calles.",
                         "favored_broad_skill": "[Creativity]({{< relref \"/skills/creativity/\" >}})",
@@ -437,6 +469,7 @@
                         "tendencies": "**La Tarjeta de Visita:** Deja una pieza reconocible de tu arte o propaganda en la escena de una misión, llamando intencionalmente la atención sobre ti mismo y arriesgando el descubrimiento inmediato.<br>**El Agitador:** Provoca abiertamente a figuras de autoridad o a la seguridad corporativa, utilizando el caos resultante para hacer una declaración política incluso si pone en peligro la operación actual."
                     },
                     {
+                        "id": "test-subject",
                         "name": "El Sujeto de Pruebas",
                         "summary": "Superviviente de procedimientos de laboratorio experimentales con\npercepciones fisiológicas únicas.",
                         "favored_broad_skill": "",
@@ -450,6 +483,7 @@
                         "tendencies": ""
                     },
                     {
+                        "id": "virtuoso",
                         "name": "El Virtuoso",
                         "summary": "Eres un maestro de la estética y la interpretación.",
                         "favored_broad_skill": "[Creativity]({{< relref \"/skills/creativity/\" >}})",
@@ -463,6 +497,7 @@
                         "tendencies": "**El Esteta:** Elige un curso de acción basado puramente en su atractivo estético o estilo dramático en lugar de su solidez táctica o eficiencia.<br>**La Diva:** Se niega a cooperar o transigir con el grupo hasta que se cumplan sus demandas específicas, a menudo insignificantes, con respecto a la comodidad o la integridad artística."
                     },
                     {
+                        "id": "wage-slave",
                         "name": "El Esclavo del Salario",
                         "summary": "Superviviente burocrático que sabe navegar por el laberinto de la economía.",
                         "favored_broad_skill": "",
@@ -476,6 +511,7 @@
                         "tendencies": ""
                     },
                     {
+                        "id": "war-veteran",
                         "name": "El Veterano de Guerra",
                         "summary": "Te defines por un solo conflicto muy publicitado.",
                         "favored_broad_skill": "",
@@ -489,6 +525,7 @@
                         "tendencies": "**La Leyenda Viviente:** Acepta voluntariamente una desventaja\nsignificativa o soporta el peso de un ataque para proteger a\nciviles o aliados, impulsado por la necesidad de estar a la altura\nde tu reputación imposible.<br>**El Fantasma del Pasado:**\nReacciona a una situación actual utilizando el contexto obsoleto o\ntraumático de tu guerra pasada, complicando una simple negociación\no infiltración al tratarla como un campo de batalla."
                     },
                     {
+                        "id": "whistleblower",
                         "name": "Informante",
                         "summary": "Eres un implacable periodista de investigación o un informante independiente.",
                         "favored_broad_skill": "[Creativity]({{< relref \"/skills/creativity/\" >}})",
@@ -502,6 +539,7 @@
                         "tendencies": "**La Exposición:** Prioriza documentar un crimen, una conspiración o un evento antes que detenerlo, poniéndote en peligro táctico para asegurar que el metraje o la historia sobrevivan.<br>**La Pregunta Difícil:** Interroga o provoca agresivamente a un individuo poderoso en un entorno social, destruyendo el progreso diplomático para evaluar su reacción."
                     },
                     {
+                        "id": "war-hero",
                         "name": "El Héroe de Guerra",
                         "summary": "Te defines por un solo conflicto muy publicitado.",
                         "favored_broad_skill": "",

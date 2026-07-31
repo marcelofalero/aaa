@@ -36,6 +36,7 @@
                 "name": "Perks",
                 "items": [
                     {
+                        "id": "alien-artifact",
                         "name": "Alien Artifact",
                         "cost": "8",
                         "ability": "—",
@@ -44,6 +45,7 @@
                         "url": "/perks_flaws/perks/alien-artifact/"
                     },
                     {
+                        "id": "ambidextrous",
                         "name": "Ambidextrous",
                         "cost": "4",
                         "ability": "DEX",
@@ -52,6 +54,7 @@
                         "url": "/perks_flaws/perks/ambidextrous/"
                     },
                     {
+                        "id": "animal-friend",
                         "name": "Animal Friend",
                         "cost": "4",
                         "ability": "WIL",
@@ -60,6 +63,7 @@
                         "url": "/perks_flaws/perks/animal-friend/"
                     },
                     {
+                        "id": "celebrity",
                         "name": "Celebrity",
                         "cost": "3",
                         "ability": "PER",
@@ -68,6 +72,7 @@
                         "url": "/perks_flaws/perks/celebrity/"
                     },
                     {
+                        "id": "concentration",
                         "name": "Concentration",
                         "cost": "3",
                         "ability": "INT",
@@ -76,6 +81,7 @@
                         "url": "/perks_flaws/perks/concentration/"
                     },
                     {
+                        "id": "danger-sense",
                         "name": "Danger Sense",
                         "cost": "4",
                         "ability": "WIL",
@@ -84,6 +90,7 @@
                         "url": "/perks_flaws/perks/danger-sense/"
                     },
                     {
+                        "id": "faith",
                         "name": "Faith",
                         "cost": "5",
                         "ability": "WIL",
@@ -92,6 +99,7 @@
                         "url": "/perks_flaws/perks/faith/"
                     },
                     {
+                        "id": "filthy-rich",
                         "name": "Filthy Rich",
                         "cost": "6",
                         "ability": "PER",
@@ -100,6 +108,7 @@
                         "url": "/perks_flaws/perks/filthy-rich/"
                     },
                     {
+                        "id": "fists-of-iron",
                         "name": "Fists of Iron",
                         "cost": "2/5",
                         "ability": "STR",
@@ -108,6 +117,7 @@
                         "url": "/perks_flaws/perks/fists-of-iron/"
                     },
                     {
+                        "id": "fortitude",
                         "name": "Fortitude",
                         "cost": "4",
                         "ability": "CON",
@@ -116,6 +126,7 @@
                         "url": "/perks_flaws/perks/fortitude/"
                     },
                     {
+                        "id": "good-luck",
                         "name": "Good Luck",
                         "cost": "3",
                         "ability": "WIL",
@@ -124,6 +135,7 @@
                         "url": "/perks_flaws/perks/good-luck/"
                     },
                     {
+                        "id": "great-looks",
                         "name": "Great Looks",
                         "cost": "3",
                         "ability": "PER",
@@ -132,6 +144,7 @@
                         "url": "/perks_flaws/perks/great-looks/"
                     },
                     {
+                        "id": "heightened-ability",
                         "name": "Heightened Ability",
                         "cost": "10",
                         "ability": "Special",
@@ -140,6 +153,7 @@
                         "url": "/perks_flaws/perks/heightened-ability/"
                     },
                     {
+                        "id": "observant",
                         "name": "Observant",
                         "cost": "3",
                         "ability": "WIL",
@@ -148,6 +162,7 @@
                         "url": "/perks_flaws/perks/observant/"
                     },
                     {
+                        "id": "photo-memory",
                         "name": "Photo Memory",
                         "cost": "3",
                         "ability": "INT",
@@ -156,6 +171,7 @@
                         "url": "/perks_flaws/perks/photo-memory/"
                     },
                     {
+                        "id": "powerful-ally",
                         "name": "Powerful Ally",
                         "cost": "4",
                         "ability": "PER",
@@ -164,6 +180,7 @@
                         "url": "/perks_flaws/perks/powerful-ally/"
                     },
                     {
+                        "id": "psionic-awareness",
                         "name": "Psionic Awareness",
                         "cost": "3",
                         "ability": "INT",
@@ -172,6 +189,7 @@
                         "url": "/perks_flaws/perks/psionic-awareness/"
                     },
                     {
+                        "id": "reflexes",
                         "name": "Reflexes",
                         "cost": "4",
                         "ability": "DEX",
@@ -180,6 +198,7 @@
                         "url": "/perks_flaws/perks/reflexes/"
                     },
                     {
+                        "id": "reputation",
                         "name": "Reputation",
                         "cost": "3",
                         "ability": "WIL",
@@ -188,6 +207,7 @@
                         "url": "/perks_flaws/perks/reputation/"
                     },
                     {
+                        "id": "specialty-skill-focus-skill",
                         "name": "Specialty Skill Focus (Skill)",
                         "cost": "5",
                         "ability": "—",
@@ -196,6 +216,7 @@
                         "url": "/perks_flaws/perks/specialty-skill-focus-skill/"
                     },
                     {
+                        "id": "tough-as-nails",
                         "name": "Tough as Nails",
                         "cost": "4",
                         "ability": "STR",
@@ -204,6 +225,7 @@
                         "url": "/perks_flaws/perks/tough-as-nails/"
                     },
                     {
+                        "id": "vigor",
                         "name": "Vigor",
                         "cost": "2/3/4",
                         "ability": "CON",
@@ -212,6 +234,7 @@
                         "url": "/perks_flaws/perks/vigor/"
                     },
                     {
+                        "id": "willpower",
                         "name": "Willpower",
                         "cost": "4",
                         "ability": "WIL",
@@ -220,6 +243,7 @@
                         "url": "/perks_flaws/perks/willpower/"
                     },
                     {
+                        "id": "extra-psionic-energy",
                         "name": "Extra Psionic Energy",
                         "cost": "3",
                         "ability": "WIL",
@@ -228,6 +252,7 @@
                         "url": "/perks_flaws/perks/extra-psionic-energy/"
                     },
                     {
+                        "id": "precog",
                         "name": "Precog",
                         "cost": "5",
                         "ability": "—",
@@ -236,6 +261,7 @@
                         "url": "/perks_flaws/perks/precog/"
                     },
                     {
+                        "id": "fraal-psionics-schooling",
                         "name": "Fraal Psionics Schooling",
                         "cost": "5",
                         "ability": "—",
@@ -275,6 +301,7 @@
                 "name": "Flaws",
                 "items": [
                     {
+                        "id": "alien-artifact",
                         "name": "Alien Artifact",
                         "bonus_points": "+5",
                         "ability": "-",
@@ -282,6 +309,7 @@
                         "url": "/perks_flaws/flaws/alien-artifact/"
                     },
                     {
+                        "id": "bad-luck",
                         "name": "Bad Luck",
                         "bonus_points": "+6",
                         "ability": "WIL",
@@ -289,6 +317,7 @@
                         "url": "/perks_flaws/flaws/bad-luck/"
                     },
                     {
+                        "id": "clueless",
                         "name": "Clueless",
                         "bonus_points": "+2/4/6",
                         "ability": "INT",
@@ -296,6 +325,7 @@
                         "url": "/perks_flaws/flaws/clueless/"
                     },
                     {
+                        "id": "clumsy",
                         "name": "Clumsy",
                         "bonus_points": "+6",
                         "ability": "DEX",
@@ -303,6 +333,7 @@
                         "url": "/perks_flaws/flaws/clumsy/"
                     },
                     {
+                        "id": "code-of-honor",
                         "name": "Code of Honor",
                         "bonus_points": "+3",
                         "ability": "WIL",
@@ -310,6 +341,7 @@
                         "url": "/perks_flaws/flaws/code-of-honor/"
                     },
                     {
+                        "id": "delicate",
                         "name": "Delicate",
                         "bonus_points": "+3",
                         "ability": "STR",
@@ -317,6 +349,7 @@
                         "url": "/perks_flaws/flaws/delicate/"
                     },
                     {
+                        "id": "dirt-poor",
                         "name": "Dirt Poor",
                         "bonus_points": "+5",
                         "ability": "PER",
@@ -324,6 +357,7 @@
                         "url": "/perks_flaws/flaws/dirt-poor/"
                     },
                     {
+                        "id": "forgetful",
                         "name": "Forgetful",
                         "bonus_points": "+5",
                         "ability": "INT",
@@ -331,6 +365,7 @@
                         "url": "/perks_flaws/flaws/forgetful/"
                     },
                     {
+                        "id": "fragile",
                         "name": "Fragile",
                         "bonus_points": "+3",
                         "ability": "CON",
@@ -338,6 +373,7 @@
                         "url": "/perks_flaws/flaws/fragile/"
                     },
                     {
+                        "id": "infamy",
                         "name": "Infamy",
                         "bonus_points": "+2/4/6",
                         "ability": "PER",
@@ -345,6 +381,7 @@
                         "url": "/perks_flaws/flaws/infamy/"
                     },
                     {
+                        "id": "oblivious",
                         "name": "Oblivious",
                         "bonus_points": "+4",
                         "ability": "WIL",
@@ -352,6 +389,7 @@
                         "url": "/perks_flaws/flaws/oblivious/"
                     },
                     {
+                        "id": "obsessed",
                         "name": "Obsessed",
                         "bonus_points": "+2/4/6",
                         "ability": "INT",
@@ -359,6 +397,7 @@
                         "url": "/perks_flaws/flaws/obsessed/"
                     },
                     {
+                        "id": "old-injury",
                         "name": "Old Injury",
                         "bonus_points": "+2/4/6",
                         "ability": "STR",
@@ -366,6 +405,7 @@
                         "url": "/perks_flaws/flaws/old-injury/"
                     },
                     {
+                        "id": "phobia",
                         "name": "Phobia",
                         "bonus_points": "+2/4/6",
                         "ability": "WIL",
@@ -373,6 +413,7 @@
                         "url": "/perks_flaws/flaws/phobia/"
                     },
                     {
+                        "id": "poor-looks",
                         "name": "Poor Looks",
                         "bonus_points": "+3",
                         "ability": "PER",
@@ -380,6 +421,7 @@
                         "url": "/perks_flaws/flaws/poor-looks/"
                     },
                     {
+                        "id": "powerful-enemy",
                         "name": "Powerful Enemy",
                         "bonus_points": "+2/4/6",
                         "ability": "PER",
@@ -387,6 +429,7 @@
                         "url": "/perks_flaws/flaws/powerful-enemy/"
                     },
                     {
+                        "id": "primitive",
                         "name": "Primitive",
                         "bonus_points": "+2/4/6",
                         "ability": "INT",
@@ -394,6 +437,7 @@
                         "url": "/perks_flaws/flaws/primitive/"
                     },
                     {
+                        "id": "slow",
                         "name": "Slow",
                         "bonus_points": "+6",
                         "ability": "DEX",
@@ -401,6 +445,7 @@
                         "url": "/perks_flaws/flaws/slow/"
                     },
                     {
+                        "id": "spineless",
                         "name": "Spineless",
                         "bonus_points": "+2/4/6",
                         "ability": "WIL",
@@ -408,6 +453,7 @@
                         "url": "/perks_flaws/flaws/spineless/"
                     },
                     {
+                        "id": "temper",
                         "name": "Temper",
                         "bonus_points": "+2/4/6",
                         "ability": "WIL",

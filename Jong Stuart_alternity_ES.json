@@ -1,0 +1,374 @@
+{
+  "step": 7,
+  "bio": {
+    "name": "Jong Stuart",
+    "player": "NPC",
+    "concept": "Ritired Concord General, turned diplomat",
+    "motivation": "Protect the Concord and it's ideals",
+    "attitude": "Pragmatic",
+    "traits": ""
+  },
+  "faction": "concord",
+  "bonusResistanceAttribute": "WIL",
+  "bonusSpecialtySkill": "Modern Ranged Weapons",
+  "bonusPerkOrPointsChoice": "points",
+  "species": "human",
+  "background": "El Graduado de la Academia",
+  "profession": "combat-spec",
+  "abilities": {
+    "STR": 11,
+    "DEX": 7,
+    "CON": 9,
+    "INT": 11,
+    "WIL": 11,
+    "PER": 11
+  },
+  "skills": {
+    "Atletismo": {
+      "ranks": 1,
+      "isBroad": true,
+      "isSpeciesFree": true,
+      "standardCost": 3,
+      "category": "Otros"
+    },
+    "Percepci\u00f3n": {
+      "ranks": 1,
+      "isBroad": true,
+      "isSpeciesFree": true,
+      "standardCost": 3,
+      "category": "Other"
+    },
+    "Resistencia": {
+      "ranks": 1,
+      "isBroad": true,
+      "isSpeciesFree": true,
+      "standardCost": 3,
+      "category": "Other"
+    },
+    "Interacci\u00f3n": {
+      "ranks": 1,
+      "isBroad": true,
+      "isSpeciesFree": true,
+      "standardCost": 3,
+      "category": "Social"
+    },
+    "Conocimiento": {
+      "ranks": 1,
+      "isBroad": true,
+      "isSpeciesFree": true,
+      "standardCost": 4,
+      "category": "T\u00e9cnica"
+    },
+    "Operaci\u00f3n de Veh\u00edculos": {
+      "ranks": 1,
+      "isBroad": true,
+      "isSpeciesFree": true,
+      "standardCost": 3,
+      "category": "T\u00e9cnica"
+    },
+    "Armas Cuerpo a Cuerpo": {
+      "ranks": 1,
+      "isBroad": true,
+      "standardCost": 6,
+      "category": "Combat"
+    },
+    "Powered": {
+      "ranks": 10,
+      "isBroad": false,
+      "standardCost": 3,
+      "category": "Combat"
+    },
+    "Armas de Proyectil Modernas": {
+      "ranks": 1,
+      "isBroad": true,
+      "standardCost": 6,
+      "category": "Combat"
+    },
+    "Assault Rifle": {
+      "ranks": 4,
+      "isBroad": false,
+      "standardCost": 3,
+      "category": "Combat"
+    },
+    "Pistol": {
+      "ranks": 2,
+      "isBroad": false,
+      "standardCost": 3,
+      "category": "Combat"
+    },
+    "Space tactics": {
+      "ranks": 10,
+      "isBroad": false,
+      "standardCost": 3,
+      "category": "Combat"
+    },
+    "Operaci\u00f3n de Armaduras": {
+      "ranks": 1,
+      "isBroad": true,
+      "standardCost": 7,
+      "category": "Other"
+    },
+    "Combat armor": {
+      "ranks": 8,
+      "isBroad": false,
+      "standardCost": 3,
+      "category": "Other"
+    },
+    "Tactical armor": {
+      "ranks": 3,
+      "isBroad": false,
+      "standardCost": 3,
+      "category": "Other"
+    },
+    "Propulsion systems": {
+      "ranks": 1,
+      "isBroad": false,
+      "standardCost": 3,
+      "category": "Other"
+    },
+    "Intuition": {
+      "ranks": 9,
+      "isBroad": false,
+      "standardCost": 3,
+      "category": "Other"
+    },
+    "Perception": {
+      "ranks": 5,
+      "isBroad": false,
+      "standardCost": 3,
+      "category": "Other"
+    },
+    "Resolve": {
+      "ranks": 1,
+      "isBroad": true,
+      "standardCost": 6,
+      "category": "Other"
+    },
+    "Mental resolve": {
+      "ranks": 7,
+      "isBroad": false,
+      "standardCost": 3,
+      "category": "Other"
+    },
+    "Endurance": {
+      "ranks": 3,
+      "isBroad": false,
+      "standardCost": 4,
+      "category": "Other"
+    },
+    "Leadership": {
+      "ranks": 1,
+      "isBroad": true,
+      "standardCost": 4,
+      "category": "Social"
+    },
+    "Command": {
+      "ranks": 8,
+      "isBroad": false,
+      "standardCost": 4,
+      "category": "Social"
+    },
+    "Computer Operation": {
+      "ranks": 3,
+      "isBroad": false,
+      "standardCost": 2,
+      "category": "Technical"
+    },
+    "Research": {
+      "ranks": 3,
+      "isBroad": false,
+      "standardCost": 2,
+      "category": "Technical"
+    },
+    "First Aid": {
+      "ranks": 3,
+      "isBroad": false,
+      "standardCost": 3,
+      "category": "Technical"
+    },
+    "Infantry tactics": {
+      "ranks": 3,
+      "isBroad": false,
+      "standardCost": 3,
+      "category": "Combat"
+    },
+    "Climb": {
+      "ranks": 1,
+      "isBroad": false,
+      "standardCost": 2,
+      "category": "Other"
+    },
+    "Jump": {
+      "ranks": 1,
+      "isBroad": false,
+      "standardCost": 1,
+      "category": "Other"
+    },
+    "Throw": {
+      "ranks": 1,
+      "isBroad": false,
+      "standardCost": 2,
+      "category": "Other"
+    },
+    "Resist pain": {
+      "ranks": 1,
+      "isBroad": false,
+      "standardCost": 5,
+      "category": "Other"
+    },
+    "Psionics": {
+      "ranks": 3,
+      "isBroad": false,
+      "standardCost": 3,
+      "category": "Technical"
+    },
+    "Land vehicle": {
+      "ranks": 1,
+      "isBroad": false,
+      "standardCost": 3,
+      "category": "Technical"
+    },
+    "System Operation": {
+      "ranks": 1,
+      "isBroad": true,
+      "standardCost": 3,
+      "category": "Technical"
+    },
+    "Weapons": {
+      "ranks": 3,
+      "isBroad": false,
+      "standardCost": 3,
+      "category": "Technical"
+    },
+    "Administration": {
+      "ranks": 1,
+      "isBroad": true,
+      "standardCost": 4,
+      "category": "Technical"
+    },
+    "Management": {
+      "ranks": 5,
+      "isBroad": false,
+      "standardCost": 3,
+      "category": "Technical"
+    },
+    "Bureaucracy": {
+      "ranks": 5,
+      "isBroad": false,
+      "standardCost": 3,
+      "category": "Technical"
+    },
+    "Deduce": {
+      "ranks": 3,
+      "isBroad": false,
+      "standardCost": 2,
+      "category": "Technical"
+    },
+    "Alerta": {
+      "ranks": 1,
+      "isBroad": true,
+      "isSpeciesFree": true,
+      "standardCost": 3,
+      "category": "Otros"
+    },
+    "Aguante": {
+      "ranks": 1,
+      "isBroad": true,
+      "isSpeciesFree": true,
+      "standardCost": 3,
+      "category": "Otros"
+    }
+  },
+  "perks": [
+    {
+      "name": "Faith",
+      "level": 1
+    }
+  ],
+  "flaws": [
+    {
+      "name": "Code of Honor",
+      "level": 1
+    },
+    {
+      "name": "Old Injury",
+      "level": 1
+    },
+    {
+      "name": "Obsessed",
+      "level": 1
+    }
+  ],
+  "isFinalized": true,
+  "earnedAP": 308,
+  "advancementSkills": {
+    "Powered": 7,
+    "Assault Rifle": 3,
+    "Pistol": 1,
+    "Space tactics": 7,
+    "Infantry tactics": 3,
+    "Combat armor": 6,
+    "Climb": 1,
+    "Jump": 1,
+    "Throw": 1,
+    "Intuition": 7,
+    "Mental resolve": 6,
+    "Resist pain": 1,
+    "Endurance": 1,
+    "Command": 7,
+    "Psionics": 3,
+    "Land vehicle": 1,
+    "Weapons": 3,
+    "Computer Operation": 2,
+    "Tactical armor": 2,
+    "Perception": 4,
+    "Management": 5,
+    "Bureaucracy": 5,
+    "Deduce": 3
+  },
+  "advancementAbilities": {
+    "INT": 3,
+    "PER": 1
+  },
+  "advancementPerks": [
+    {
+      "name": "Good Luck",
+      "level": 1,
+      "apCost": 3
+    },
+    {
+      "name": "Reputation",
+      "level": 1,
+      "apCost": 2
+    },
+    {
+      "name": "Heightened Ability (PER)",
+      "level": 1,
+      "apCost": 10,
+      "baseApCost": 10
+    },
+    {
+      "name": "Specialty Skill Focus (Skill) (Space tactics)",
+      "level": 1,
+      "apCost": 5,
+      "baseApCost": 5
+    }
+  ],
+  "removedFlaws": [
+    {
+      "name": "Obsessed",
+      "level": 1,
+      "boughtOffLevels": 1,
+      "apCost": 2
+    },
+    {
+      "name": "Old Injury",
+      "level": 1,
+      "boughtOffLevels": 1,
+      "apCost": 2
+    }
+  ],
+  "concordResModStat": "WIL",
+  "austrinSpecSkill": "Modern Ranged Weapons",
+  "rigunmorBonusChoice": "points"
+}

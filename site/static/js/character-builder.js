@@ -19,9 +19,9 @@ document.addEventListener('DOMContentLoaded', () => {
       traits: ''
     },
     faction: 'concord',
-    concordResModStat: 'WIL', // Default choice for Concord +1 Res Mod
-    austrinSpecSkill: 'Modern Ranged Weapons', // Default choice for Austrin
-    rigunmorBonusChoice: 'points', // 'perk' (Filthy Rich) or 'points' (+6 SP)
+    bonusResistanceAttribute: 'WIL', // Default selected attribute for +1 bonus Resistance Modifier
+    bonusSpecialtySkill: 'Modern Ranged Weapons', // Default choice for skill bonus
+    bonusPerkOrPointsChoice: 'points', // Choice for bonus perk vs bonus points
     species: 'human',
     background: null,
     profession: 'combat-spec',
@@ -46,22 +46,14 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   function getCharacterTitle(totalAP) {
-    if (totalAP >= 300) return { title: isEs ? 'Leyenda' : 'Legend', maxSkillRank: isEs ? 'Sin Límite' : 'No Limit', maxBroad: 13 };
-    if (totalAP >= 200) return { title: isEs ? 'Ejemplar' : 'Exemplar', maxSkillRank: 12, maxBroad: 11 };
-    if (totalAP >= 100) return { title: isEs ? 'Veterano' : 'Veteran', maxSkillRank: 10, maxBroad: 9 };
-    if (totalAP >= 50) return { title: isEs ? 'Experimentado' : 'Seasoned', maxSkillRank: 8, maxBroad: 7 };
-    return { title: isEs ? 'Novato' : 'Rookie', maxSkillRank: 5, maxBroad: 5 };
+    if (totalAP >= 300) return { title: isEs ? 'Leyenda' : 'Legend', maxSkillRank: isEs ? 'Sin Límite' : 'No Limit', maxBroad: 13, ranksOverRookie: 4 };
+    if (totalAP >= 200) return { title: isEs ? 'Ejemplar' : 'Exemplar', maxSkillRank: 12, maxBroad: 11, ranksOverRookie: 3 };
+    if (totalAP >= 100) return { title: isEs ? 'Veterano' : 'Veteran', maxSkillRank: 10, maxBroad: 9, ranksOverRookie: 2 };
+    if (totalAP >= 50) return { title: isEs ? 'Experimentado' : 'Seasoned', maxSkillRank: 8, maxBroad: 7, ranksOverRookie: 1 };
+    return { title: isEs ? 'Novato' : 'Rookie', maxSkillRank: 5, maxBroad: 5, ranksOverRookie: 0 };
   }
 
-  function getRankBenefitDescription(ranks) {
-    if (!ranks || ranks <= 0) return isEs ? 'Sin Rango' : 'Untrained';
-    if (ranks === 1) return isEs ? 'Rango 1: Puntuación Base (+1 Objetivo)' : 'Rank 1: Base Score (+1 Target)';
-    if (ranks === 2) return isEs ? 'Rango 2: Precisión (+2 Objetivo)' : 'Rank 2: Precision (+2 Target)';
-    if (ranks === 3) return isEs ? 'Rango 3: Maestría de Creación (+3 Objetivo)' : 'Rank 3: Creation Mastery (+3 Target)';
-    return isEs ? `Rango ${ranks}: Especialista (+${ranks} Objetivo)` : `Rank ${ranks}: Specialist (+${ranks} Target)`;
-  }
-
-  function getAdvancementSkillCost(skillName, targetRank) {
+  function getAdvancementSkillCost(skillName, targetRank, useBaseCost = false) {
     let standardCost = 3;
     let isBroad = false;
     let category = 'Other';
@@ -69,18 +61,18 @@ document.addEventListener('DOMContentLoaded', () => {
     if (data.skillsTable && data.skillsTable.items) {
       for (const cat of data.skillsTable.items) {
         for (const broad of cat.items) {
-          if (broad.skill === skillName) {
+          if (broad.id === skillName) {
             standardCost = broad.cost || 3;
             isBroad = true;
-            category = cat.skill;
+            category = cat.id;
             break;
           }
           if (broad.items) {
-            const spec = broad.items.find(s => s.skill === skillName);
+            const spec = broad.items.find(s => s.id === skillName);
             if (spec) {
               standardCost = spec.cost || 3;
               isBroad = false;
-              category = cat.skill;
+              category = cat.id;
               break;
             }
           }
@@ -90,11 +82,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (isBroad) {
       let favored = isFavored(skillName, category);
-      return favored ? Math.max(1, standardCost - 1) : standardCost;
+      return (favored && !useBaseCost) ? Math.max(1, standardCost - 1) : standardCost;
     } else {
       let parentBroadName = getParentBroadSkillName(skillName);
       let favored = isFavored(skillName, category, parentBroadName);
-      let baseCost = favored ? Math.max(1, standardCost - 1) : standardCost;
+      let baseCost = (favored && !useBaseCost) ? Math.max(1, standardCost - 1) : standardCost;
 
       if (targetRank >= 11) baseCost += 6;
       else if (targetRank >= 9) baseCost += 4;
@@ -104,7 +96,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  function calculateCampaignSpentAP() {
+  function calculateCampaignSpentAP(useBaseCost = false) {
     let spent = 0;
     if (state.advancementAbilities) {
       Object.values(state.advancementAbilities).forEach(pts => {
@@ -118,20 +110,31 @@ document.addEventListener('DOMContentLoaded', () => {
         const creationRanks = Math.max(0, totalRanks - campaignRanks);
         for (let r = 1; r <= campaignRanks; r++) {
           const targetRank = creationRanks + r;
-          spent += getAdvancementSkillCost(skillName, targetRank);
+          spent += getAdvancementSkillCost(skillName, targetRank, useBaseCost);
         }
       });
     }
 
     if (state.advancementPerks && Array.isArray(state.advancementPerks)) {
       state.advancementPerks.forEach(p => {
-        spent += (p.apCost || (p.level || 1) * 3);
+        if (useBaseCost) {
+           spent += (p.baseApCost !== undefined ? p.baseApCost : (p.level || 1) * 3);
+        } else {
+           spent += (p.apCost || (p.level || 1) * 3);
+        }
       });
     }
 
     if (state.removedFlaws && Array.isArray(state.removedFlaws)) {
       state.removedFlaws.forEach(f => {
-        spent += (f.apCost || (f.level || 1) * 3);
+        const flawObj = getFlawsList().find(x => x.name.toLowerCase() === f.name.toLowerCase());
+        const { options } = getFlawBonus(flawObj);
+        const fromLevel = f.level || 1;
+        const targetLevel = fromLevel - 1;
+        const currentBonus = options[fromLevel - 1] || (fromLevel * 3);
+        const newBonus = targetLevel > 0 ? (options[targetLevel - 1] || (targetLevel * 3)) : 0;
+        const stepCost = currentBonus - newBonus;
+        spent += (f.apCost !== undefined ? f.apCost : stepCost);
       });
     }
 
@@ -179,6 +182,7 @@ document.addEventListener('DOMContentLoaded', () => {
     austrin_ontis: {
       id: 'austrin_ontis',
       name: 'Austrin-Ontis Unlimited',
+      favoredSkills: ['heavy-weapons', 'modern-ranged-weapons'],
       bonus: isEs ? '-1 paso en Armas Pesadas o Armas a Distancia Modernas (acumulable con Combate Especialista para -2).' : '-1 step bonus to Heavy Weapons or Modern Ranged Weapons (stacks with Combat Spec for -2).',
       desc: isEs ? 'El vínculo entre un Austrin y su arma trasciende la comprensión. Cultura entrenada en la serenidad bajo fuego enemigo.' : 'Cultural flair for firearms born from centuries of coolness under fire and enhanced hand-eye coordination.',
       apply: (st) => {}
@@ -186,6 +190,8 @@ document.addEventListener('DOMContentLoaded', () => {
     borealis: {
       id: 'borealis',
       name: isEs ? 'República de Boreal' : 'Borealis Republic',
+      abilityLimits: { INT: 15 },
+      bonusScore: { INT: 1 },
       bonus: isEs ? '+1 Inteligencia (máx. 15) y Defecto "Obsesionado" moderado (+4) automático.' : '+1 Intelligence score (max 15 for Humans) & automatic Moderate Obsessed (+4) flaw.',
       desc: isEs ? 'Educación adaptativa avanzada y siglos de selección intelectual. Propensos a distracción por investigación desmedida.' : 'Highly adaptive early education and intellect, though prone to obsession with new discovery.',
       apply: (st) => {
@@ -226,6 +232,10 @@ document.addEventListener('DOMContentLoaded', () => {
     orion: {
       id: 'orion',
       name: isEs ? 'Liga de Orión' : 'Orion League',
+      abilityLimits: { PER: 15 },
+      bonusScore: { PER: 1 },
+      favoredCategories: ['culture'],
+      favoredSkills: ['culture'],
       bonus: isEs ? '+1 Personalidad (máx. 15) y -1 paso de bonificación en habilidad Cultura.' : '+1 Personality score (max 15) & -1 step bonus to Culture broad/specialty skills.',
       desc: isEs ? 'Fundadores de valores de relaciones interpersonales, entendimiento intercultural y reputación de buena voluntad.' : 'Emphasizes intercultural goodwill, high interpersonal relations, and universal tolerance.',
       apply: (st) => {}
@@ -233,6 +243,8 @@ document.addEventListener('DOMContentLoaded', () => {
     orlamu: {
       id: 'orlamu',
       name: isEs ? 'Teocracia Orlamu' : 'Orlamu Theocracy',
+      favoredSkills: ['physical-science', 'navigation'],
+      skillDiscounts: (st, skill, category) => (st.profession === 'mindwalker' && category === 'psionics' ? 1 : 0),
       bonus: isEs ? '-1 paso en Ciencias Físicas/Navegación. Mindwalkers Orlamu descuentan 1 PT en habilidades psiónicas.' : '-1 step bonus to Physical Science/Navigation. Orlamu Mindwalkers discount all psionic skills by 1 SP/AP.',
       desc: isEs ? 'Pioneros científicos y espirituales con prestigiosas academias psiónicas e influencia Fraal.' : 'Scientific and spiritual pioneers with legendary psionic academies and Fraal influence.',
       apply: (st) => {}
@@ -240,10 +252,11 @@ document.addEventListener('DOMContentLoaded', () => {
     rigunmor: {
       id: 'rigunmor',
       name: isEs ? 'Consorcio Estelar Rigunmor' : 'Rigunmor Star Consortium',
+      skillDiscounts: (st, skill, category) => (skill === 'bargain' ? 1 : 0),
       bonus: isEs ? '-1 paso en Interacción y Engaño; descuento en Bargain; Ventaja "Filthy Rich" gratis o +6 Puntos de Habilidad.' : '-1 step to Interaction & Deception; discount on Bargain; Free "Filthy Rich" perk OR +6 Skill Points.',
       desc: isEs ? 'Los comerciantes más prósperos y hábiles de la galaxia capaces de confortar al cliente en cualquier trato.' : 'Prosperous trading conglomerate with unmatched bargaining skill and wealthy assets.',
       apply: (st) => {
-        if (st.rigunmorBonusChoice === 'perk' && !st.perks.includes('Filthy Rich')) {
+        if (st.bonusPerkOrPointsChoice === 'perk' && !st.perks.includes('Filthy Rich')) {
           st.perks.push('Filthy Rich');
         }
       }
@@ -344,32 +357,32 @@ document.addEventListener('DOMContentLoaded', () => {
       name: isEs ? 'Especialista de Combate' : 'Combat Spec',
       reqs: { STR: 11, CON: 9 },
       desc: isEs ? 'Maestros del combate táctico y el armamento pesado.' : 'Masters of tactical combat and weaponry.',
-      favoredCategories: ['Combat'],
-      favoredSkills: ['Athletics', 'Armor Operation', 'Tactics', 'Heavy Weapons', 'Melee Combat', 'Modern Ranged Weapons']
+      favoredCategories: ['combat'],
+      favoredSkills: ['athletics', 'armor-operation', 'tactics', 'heavy-weapons', 'melee-combat', 'modern-ranged-weapons']
     },
     'free-agent': {
       id: 'free-agent',
       name: isEs ? 'Agente Libre' : 'Free Agent',
       reqs: { DEX: 11, WIL: 9 },
       desc: isEs ? 'Expertos en sigilo, pilotaje y operaciones encubiertas.' : 'Experts in stealth, piloting, and covert ops.',
-      favoredCategories: ['Social'],
-      favoredSkills: ['Covert Ops', 'Deception', 'Stealth', 'Drive', 'Pilot', 'Acrobatics', 'Culture']
+      favoredCategories: ['social'],
+      favoredSkills: ['covert-ops', 'deception', 'stealth', 'drive', 'vehicle-operation', 'acrobatics', 'culture']
     },
     'tech-op': {
       id: 'tech-op',
       name: isEs ? 'Operador Técnico' : 'Tech Op',
       reqs: { DEX: 9, INT: 11 },
       desc: isEs ? 'Especialistas en tecnología, informática e ingeniería.' : 'Specialists in technology, computers, and engineering.',
-      favoredCategories: ['Technical', 'Academic'],
-      favoredSkills: ['Computer Science', 'Technical Sciences', 'Physical Science', 'System Operation', 'Navigation', 'Repair']
+      favoredCategories: ['technical', 'academic'],
+      favoredSkills: ['computer-science', 'technical-sciences', 'physical-science', 'system-operation', 'navigation', 'repair']
     },
     'mindwalker': {
       id: 'mindwalker',
       name: isEs ? 'Mindwalker (Psiónico)' : 'Mindwalker',
       reqs: { CON: 9, INT: 9, WIL: 11 },
       desc: isEs ? 'Maestros de las disciplinas y poderes psiónicos.' : 'Masters of psionic disciplines and mental powers.',
-      favoredCategories: ['Psionics'],
-      favoredSkills: ['Awareness', 'Resolve', 'Telepathy', 'Telekinesis', 'Biokinesis', 'ESP', 'Psychoportation']
+      favoredCategories: ['psionics'],
+      favoredSkills: ['awareness', 'resolve', 'telepathy', 'telekinesis', 'biokinesis', 'esp', 'psychoportation']
     }
   };
 
@@ -473,11 +486,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function getPerkCost(perkObjOrName, level = 1) {
     const perksList = getPerksList();
-    const perkName = typeof perkObjOrName === 'string' ? perkObjOrName : (perkObjOrName ? perkObjOrName.name : '');
+    let perkName = typeof perkObjOrName === 'string' ? perkObjOrName : (perkObjOrName ? perkObjOrName.name : '');
+    const baseName = perkName.replace(/\s*\(.*\)$/, '');
     if (typeof perkObjOrName === 'object' && perkObjOrName && perkObjOrName.level) {
       level = perkObjOrName.level;
     }
-    const perkObj = perksList.find(p => p.name === perkName);
+    const perkObj = perksList.find(p => p.name === baseName || p.name === perkName);
 
     let options = [3];
     if (perkObj && perkObj.cost) {
@@ -496,11 +510,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function getFlawBonus(flawObjOrName, level = 1) {
     const flawsList = getFlawsList();
-    const flawName = typeof flawObjOrName === 'string' ? flawObjOrName : (flawObjOrName ? flawObjOrName.name : '');
+    let flawName = typeof flawObjOrName === 'string' ? flawObjOrName : (flawObjOrName ? flawObjOrName.name : '');
+    const baseName = flawName.replace(/\s*\(.*\)$/, '');
     if (typeof flawObjOrName === 'object' && flawObjOrName && flawObjOrName.level) {
       level = flawObjOrName.level;
     }
-    const flawObj = flawsList.find(f => f.name === flawName);
+    const flawObj = flawsList.find(f => f.name === baseName || f.name === flawName);
 
     let options = [3];
     if (flawObj && flawObj.bonus_points) {
@@ -582,8 +597,8 @@ document.addEventListener('DOMContentLoaded', () => {
     data.skillsTable.items.forEach(category => {
       category.items.forEach(broadSkill => {
         if (isSpeciesFreeBroad(broadSkill)) {
-          if (!state.skills[broadSkill.skill]) {
-            state.skills[broadSkill.skill] = {
+          if (!state.skills[broadSkill.id]) {
+            state.skills[broadSkill.id] = {
               ranks: 1,
               isBroad: true,
               isSpeciesFree: true,
@@ -591,7 +606,7 @@ document.addEventListener('DOMContentLoaded', () => {
               category: category.skill
             };
           } else {
-            state.skills[broadSkill.skill].isSpeciesFree = true;
+            state.skills[broadSkill.id].isSpeciesFree = true;
           }
         }
       });
@@ -615,10 +630,9 @@ document.addEventListener('DOMContentLoaded', () => {
         if (bgFav.some(s => skillName.toLowerCase().includes(s.toLowerCase()) || s.toLowerCase().includes(skillName.toLowerCase()))) return true;
       }
     }
-    if (state.faction === 'austrin_ontis' && (skillName.includes('Heavy Weapons') || skillName.includes('Modern Ranged Weapons') || skillName.includes('Armas pesadas') || skillName.includes('Armas a distancia modernas'))) return true;
-    if (state.faction === 'orion' && (skillName.includes('Culture') || skillName.includes('Cultura') || skillCategory === 'Culture' || skillCategory === 'Cultura')) return true;
-    if (state.faction === 'orlamu' && (skillName.includes('Physical Science') || skillName.includes('Navigation') || skillName.includes('Ciencias físicas') || skillName.includes('Navegación'))) return true;
-    if (state.faction === 'starmech' && (skillName.includes('Technical Science') || skillName.includes('Ciencias técnicas') || skillCategory === 'Technical Science')) return true;
+    const factionFavoredCats = FACTION_DATA[state.faction]?.favoredCategories || [];
+    const factionFavoredSkills = FACTION_DATA[state.faction]?.favoredSkills || [];
+    if (factionFavoredCats.includes(skillCategory) || factionFavoredSkills.includes(skillName)) return true;
 
     return false;
   }
@@ -626,12 +640,10 @@ document.addEventListener('DOMContentLoaded', () => {
   function getEffectiveSpeciesLimits() {
     const spec = JSON.parse(JSON.stringify(SPECIES_DATA[state.species].limits));
     if (state.species === 'human') {
-      if (state.faction === 'borealis') spec.INT[1] = 15;
-      if (state.faction === 'orion') spec.PER[1] = 15;
-      if (state.faction === 'thuldan') {
-        spec.STR[1] = 15;
-        spec.CON[1] = 15;
-      }
+      const factionLimits = FACTION_DATA[state.faction]?.abilityLimits || {};
+      Object.entries(factionLimits).forEach(([stat, maxVal]) => {
+        spec[stat][1] = Math.max(spec[stat][1], maxVal);
+      });
     }
     return spec;
   }
@@ -642,18 +654,18 @@ document.addEventListener('DOMContentLoaded', () => {
       score += parseInt(state.advancementAbilities[stat], 10) || 0;
     }
     if (state.species === 'human') {
-      if (state.faction === 'orion' && stat === 'PER') score += 1;
-      if (state.faction === 'borealis' && stat === 'INT') score += 1;
+      const factionBonus = FACTION_DATA[state.faction]?.bonusScore?.[stat] || 0;
+      score += factionBonus;
     }
     return score;
   }
 
-  function getParentBroadSkillName(specSkillName) {
+  function getParentBroadSkillName(specSkillId) {
     if (!data.skillsTable || !data.skillsTable.items) return null;
     for (const category of data.skillsTable.items) {
       for (const broadSkill of category.items) {
-        if (broadSkill.items && broadSkill.items.some(s => s.skill === specSkillName)) {
-          return broadSkill.skill;
+        if (broadSkill.items && broadSkill.items.some(s => s.id === specSkillId)) {
+          return broadSkill.id;
         }
       }
     }
@@ -669,15 +681,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const heightenedCount = state.perks.filter(p => {
       const pName = typeof p === 'string' ? p : (p ? p.name : '');
-      return pName && pName.toLowerCase().includes('heightened ability');
+      const lower = pName ? pName.toLowerCase() : '';
+      return lower.includes('heightened ability') || lower.includes('habilidad aumentada');
     }).length;
-    const targetAbilityBudget = (state.faction === 'union_of_sol' ? 62 : 60) + heightenedCount;
+    const targetAbilityBudget = (FACTION_DATA[state.faction]?.abilityBudget || 60) + heightenedCount;
 
     let abilityPtsSpent = 0;
     Object.values(state.abilities).forEach(val => abilityPtsSpent += (parseInt(val, 10) || 0));
 
     let baseSkillPoints = 70;
-    if (state.faction === 'rigunmor' && state.rigunmorBonusChoice === 'points') {
+    if (state.faction === 'rigunmor' && state.bonusPerkOrPointsChoice === 'points') {
       baseSkillPoints += 6;
     }
 
@@ -708,7 +721,6 @@ document.addEventListener('DOMContentLoaded', () => {
           if (!isFree) {
             let favored = isFavored(skillName, item.category);
             let discount = 0;
-            if (state.faction === 'orlamu' && state.profession === 'mindwalker' && item.category === 'Psionics') discount += 1;
             let baseCost = favored ? Math.max(1, item.standardCost - 1) : item.standardCost;
             let actualCost = Math.max(0, baseCost - discount);
             skillPtsSpent += actualCost;
@@ -721,7 +733,6 @@ document.addEventListener('DOMContentLoaded', () => {
           let favored = isFavored(skillName, item.category, parentBroadName);
           let discount = 0;
           if (state.faction === 'rigunmor' && (skillName.includes('bargain') || skillName.includes('regatear'))) discount += 1;
-          if (state.faction === 'orlamu' && state.profession === 'mindwalker' && item.category === 'Psionics') discount += 1;
 
           let baseCostPerRank = favored ? Math.max(1, item.standardCost - 1) : item.standardCost;
           let actualCostPerRank = Math.max(0, baseCostPerRank - discount);
@@ -776,8 +787,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const elSidebarTitle = document.getElementById('cb-budget-sidebar-title');
 
     const spentAP = state.isFinalized ? calculateCampaignSpentAP() : 0;
+    const baseSpentAP = state.isFinalized ? calculateCampaignSpentAP(true) : 0;
     const availAP = (state.earnedAP || 0) - spentAP;
-    const titleObj = getCharacterTitle(spentAP);
+    const titleObj = getCharacterTitle(baseSpentAP);
 
     if (state.isFinalized) {
       if (elCreationWrap) elCreationWrap.style.display = 'none';
@@ -787,6 +799,8 @@ document.addEventListener('DOMContentLoaded', () => {
       const inputSidebarEarned = document.getElementById('cb-sidebar-input-earned-ap');
       const elSidebarApSum = document.getElementById('cb-val-sidebar-ap-summary');
       const elSidebarRankTitle = document.getElementById('cb-val-sidebar-rank-title');
+      const elSidebarPerkSlots = document.getElementById('cb-val-sidebar-perk-slots');
+      const elSidebarAbilitySlots = document.getElementById('cb-val-sidebar-ability-slots');
 
       if (inputSidebarEarned && document.activeElement !== inputSidebarEarned) {
         inputSidebarEarned.value = state.earnedAP || 0;
@@ -795,7 +809,39 @@ document.addEventListener('DOMContentLoaded', () => {
         elSidebarApSum.textContent = `${availAP} ${isEs ? 'Disp.' : 'Avail'} / ${spentAP} ${isEs ? 'Gastados' : 'Spent'}`;
       }
       if (elSidebarRankTitle) {
-        elSidebarRankTitle.textContent = `${titleObj.title} (${isEs ? 'Rango Máx' : 'Max Rank'}: ${titleObj.maxSkillRank} | Broad: ${titleObj.maxBroad})`;
+        elSidebarRankTitle.textContent = `${titleObj.title} [${baseSpentAP} ${isEs ? 'PA Base' : 'Base AP'}] (${isEs ? 'Rango Máx' : 'Max Rank'}: ${titleObj.maxSkillRank} | Broad: ${titleObj.maxBroad})`;
+      }
+
+      const totalPerkSlots = titleObj.ranksOverRookie;
+      const usedPerkSlots = (state.advancementPerks || []).length;
+      if (elSidebarPerkSlots) {
+        elSidebarPerkSlots.textContent = `${usedPerkSlots} / ${totalPerkSlots} ${isEs ? 'usados' : 'used'}`;
+        elSidebarPerkSlots.style.color = usedPerkSlots <= totalPerkSlots ? '#38bdf8' : '#ff4d4d';
+      }
+
+      const totalAbilityPts = titleObj.ranksOverRookie;
+      let usedAbilityPts = 0;
+      if (state.advancementAbilities) {
+        Object.values(state.advancementAbilities).forEach(pts => {
+          usedAbilityPts += (parseInt(pts, 10) || 0);
+        });
+      }
+      if (elSidebarAbilitySlots) {
+        elSidebarAbilitySlots.textContent = `${usedAbilityPts} / ${totalAbilityPts} ${isEs ? 'usados' : 'used'}`;
+        elSidebarAbilitySlots.style.color = usedAbilityPts <= totalAbilityPts ? '#facc15' : '#ff4d4d';
+      }
+
+      const totalFlawReductions = titleObj.ranksOverRookie;
+      let usedFlawReductions = 0;
+      if (state.removedFlaws) {
+        state.removedFlaws.forEach(rf => {
+          usedFlawReductions += (rf.boughtOffLevels || 1);
+        });
+      }
+      const elSidebarFlawSlots = document.getElementById('cb-val-sidebar-flaw-slots');
+      if (elSidebarFlawSlots) {
+        elSidebarFlawSlots.textContent = `${usedFlawReductions} / ${totalFlawReductions} ${isEs ? 'usados' : 'used'}`;
+        elSidebarFlawSlots.style.color = usedFlawReductions <= totalFlawReductions ? '#f43f5e' : '#ff4d4d';
       }
     } else {
       if (elCreationWrap) elCreationWrap.style.display = 'flex';
@@ -884,19 +930,50 @@ document.addEventListener('DOMContentLoaded', () => {
   function renderStep2() {
     const factGrid = document.getElementById('cb-faction-grid');
     if (factGrid) {
-      factGrid.innerHTML = Object.values(FACTION_DATA).map(fact => `
-        <div class="cb-card ${state.faction === fact.id ? 'selected' : ''}" data-faction="${fact.id}">
-          <h4 class="cb-card-title">${fact.name}</h4>
-          <p class="cb-card-desc">${fact.desc}</p>
-          <div class="cb-card-meta">
-            <strong>${isEs ? 'Beneficio de Juego' : 'Game Benefit'}:</strong> ${fact.bonus}
+      factGrid.innerHTML = Object.values(FACTION_DATA).map(fact => {
+        let extraOptions = '';
+        if (fact.id === 'concord' && state.faction === 'concord') {
+          extraOptions = `
+            <div class="mt3 pt2" style="border-top: 1px solid rgba(255,255,255,0.15);" onclick="event.stopPropagation();">
+              <label class="neon-cyan" style="font-size: 0.85rem; font-weight: bold; display: block; margin-bottom: 0.4rem;">
+                🛡️ ${isEs ? 'Seleccionar característica para el +1 Mod. Resistencia:' : 'Select attribute for +1 Resistance Modifier:'}
+              </label>
+              <div class="flex gap2 flex-wrap">
+                ${['STR', 'DEX', 'CON', 'INT', 'WIL'].map(stat => `
+                  <label class="silver flex items-center gap1" style="font-size: 0.8rem; cursor: pointer; background: rgba(0,0,0,0.3); padding: 0.2rem 0.5rem; border-radius: 4px;">
+                    <input type="radio" name="cb-step2-concord-stat" value="${stat}" ${state.bonusResistanceAttribute === stat ? 'checked' : ''}>
+                    <span>${stat}</span>
+                  </label>
+                `).join('')}
+              </div>
+            </div>
+          `;
+        }
+
+        return `
+          <div class="cb-card ${state.faction === fact.id ? 'selected' : ''}" data-faction="${fact.id}">
+            <h4 class="cb-card-title">${fact.name}</h4>
+            <p class="cb-card-desc">${fact.desc}</p>
+            <div class="cb-card-meta">
+              <strong>${isEs ? 'Beneficio de Juego' : 'Game Benefit'}:</strong> ${fact.bonus}
+            </div>
+            ${extraOptions}
           </div>
-        </div>
-      `).join('');
+        `;
+      }).join('');
 
       factGrid.querySelectorAll('.cb-card').forEach(card => {
         card.addEventListener('click', () => {
           state.faction = card.dataset.faction;
+          renderStep2();
+          recalculateBudgets();
+        });
+      });
+
+      factGrid.querySelectorAll('input[name="cb-step2-concord-stat"]').forEach(radio => {
+        radio.addEventListener('change', (e) => {
+          state.bonusResistanceAttribute = e.target.value;
+          saveStateToLocalStorage();
           renderStep2();
           recalculateBudgets();
         });
@@ -1001,7 +1078,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const reqMin = prof && prof.reqs[stat] ? prof.reqs[stat] : null;
       let resMod = getResMod(effScore);
 
-      if (state.faction === 'concord' && state.concordResModStat === stat) {
+      if (state.faction === 'concord' && state.bonusResistanceAttribute === stat) {
         resMod += 1;
       }
 
@@ -1014,6 +1091,13 @@ document.addEventListener('DOMContentLoaded', () => {
         bonusBadge = `<span class="cb-badge-free" style="margin-left:0.3rem; font-size: 0.7rem;">+1 Boreal</span>`;
       }
 
+      const advPts = parseInt(state.advancementAbilities[stat], 10) || 0;
+      const advPtsUsed = state.advancementAbilities
+        ? Object.values(state.advancementAbilities).reduce((s, v) => s + (parseInt(v, 10) || 0), 0)
+        : 0;
+      const advPtsMax = state.isFinalized ? getCharacterTitle(calculateCampaignSpentAP(true)).ranksOverRookie : Infinity;
+      const advAtCap = state.isFinalized && advPtsUsed >= advPtsMax;
+
       return `
         <div class="cb-ability-card">
           <div class="cb-ability-header">
@@ -1024,7 +1108,7 @@ document.addEventListener('DOMContentLoaded', () => {
           <div class="cb-ability-controls">
             <button class="cb-btn-score" data-stat="${stat}" data-dir="-1" ${baseScore <= min ? 'disabled' : ''}>-</button>
             <span class="cb-score-display">${effScore}</span>
-            <button class="cb-btn-score" data-stat="${stat}" data-dir="1" ${baseScore >= max ? 'disabled' : ''}>+</button>
+            <button class="cb-btn-score" data-stat="${stat}" data-dir="1" ${(baseScore >= max || (state.isFinalized && advAtCap)) ? 'disabled' : ''}>+</button>
           </div>
 
           <div class="cb-res-modifier">
@@ -1044,6 +1128,17 @@ document.addEventListener('DOMContentLoaded', () => {
           const adv = parseInt(state.advancementAbilities[stat], 10) || 0;
           const base = parseInt(state.abilities[stat], 10) || 10;
           const [min, max] = limits[stat];
+          
+          const spentAP = calculateCampaignSpentAP();
+          const titleObj = getCharacterTitle(spentAP);
+          const maxAdvAbilityPts = titleObj.ranksOverRookie;
+          let currentTotalAdvPts = 0;
+          if (state.advancementAbilities) {
+            Object.values(state.advancementAbilities).forEach(pts => {
+              currentTotalAdvPts += (parseInt(pts, 10) || 0);
+            });
+          }
+
           if (dir === 1 && (base + adv) < max) {
             state.advancementAbilities[stat] = adv + 1;
           } else if (dir === -1 && adv > 0) {
@@ -1061,17 +1156,47 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const resSummary = document.getElementById('cb-res-summary');
     if (resSummary) {
-      resSummary.innerHTML = Object.keys(state.abilities).map(stat => {
+      let concordHtml = '';
+      if (state.faction === 'concord') {
+        concordHtml = `
+          <div class="sci-fi-card mb3" style="background: rgba(10, 61, 84, 0.3); border: 1px solid var(--accent-cyan); padding: 0.75rem 1rem;">
+            <div class="flex items-center justify-between flex-wrap gap2">
+              <span class="neon-cyan" style="font-weight: bold; font-size: 0.9rem;">
+                🛡️ ${isEs ? 'Bono de Resistencia de la Concordia Galáctica (+1):' : 'Galactic Concord Resistance Bonus (+1):'}
+              </span>
+              <div class="flex gap3 flex-wrap">
+                ${['STR', 'DEX', 'CON', 'INT', 'WIL'].map(stat => `
+                  <label class="silver flex items-center gap1" style="font-size: 0.85rem; cursor: pointer;">
+                    <input type="radio" name="cb-concord-res-stat" value="${stat}" ${state.bonusResistanceAttribute === stat ? 'checked' : ''}>
+                    <span>${stat}</span>
+                  </label>
+                `).join('')}
+              </div>
+            </div>
+          </div>
+        `;
+      }
+
+      resSummary.innerHTML = concordHtml + '<div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">' + Object.keys(state.abilities).map(stat => {
         let mod = getResMod(getEffectiveAbilityScore(stat));
-        if (state.faction === 'concord' && state.concordResModStat === stat) mod += 1;
+        if (FACTION_DATA[state.faction]?.hasBonusResistance && state.bonusResistanceAttribute === stat) mod += 1;
         const modText = mod >= 0 ? `+${mod}` : `${mod}`;
         return `
-          <div class="cb-res-card">
+          <div class="cb-res-card" style="flex: 1; min-width: 90px;">
             <span class="cb-res-card-label">Res ${stat}</span>
             <span class="cb-res-card-val ${mod > 0 ? 'highlight' : ''}">${modText}</span>
           </div>
         `;
-      }).join('');
+      }).join('') + '</div>';
+
+      resSummary.querySelectorAll('input[name="cb-concord-res-stat"]').forEach(radio => {
+        radio.addEventListener('change', (e) => {
+          state.bonusResistanceAttribute = e.target.value;
+          saveStateToLocalStorage();
+          renderStep4();
+          recalculateBudgets();
+        });
+      });
     }
 
     const derivedSummary = document.getElementById('cb-derived-summary');
@@ -1109,6 +1234,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // STEP 5: PERKS & FLAWS
   let activePickerMode = null; // 'flaw' | 'perk' | null
   let selectedPickerItem = null;
+  let selectedPickerChoice = '';
   let selectedPickerLevel = 1;
 
   function renderStep5() {
@@ -1137,13 +1263,17 @@ document.addEventListener('DOMContentLoaded', () => {
     if (flawsContainer) {
       const activeFlawsList = state.flaws.map(f => {
         const name = typeof f === 'string' ? f : f.name;
-        const level = typeof f === 'object' && f.level ? f.level : 1;
-        const flawObj = allFlaws.find(x => x.name.toLowerCase() === name.toLowerCase()) || { name, description: '' };
         const isBg = bgFlaw && (name.toLowerCase().includes(bgFlaw.toLowerCase()) || bgFlaw.toLowerCase().includes(name.toLowerCase()));
-        const isRemovedInCampaign = state.isFinalized && state.removedFlaws && state.removedFlaws.some(rf => rf.name === name);
+        const level = isBg ? 1 : (typeof f === 'object' && f.level ? f.level : 1);
+        const flawObj = allFlaws.find(x => x.name.toLowerCase() === name.toLowerCase()) || { name, description: '' };
+        
+        const removedEntry = state.isFinalized && state.removedFlaws ? state.removedFlaws.find(rf => rf.name === name) : null;
+        const isRemovedInCampaign = Boolean(removedEntry);
+        const currentLevel = removedEntry ? Math.max(0, level - (removedEntry.boughtOffLevels || 1)) : level;
+
         const { options } = getFlawBonus(flawObj);
-        const bonusSP = options[level - 1] || (level * 3);
-        return { name, level, flawObj, isBg, isRemovedInCampaign, bonusSP };
+        const bonusSP = options[currentLevel - 1] || (currentLevel > 0 ? currentLevel * 3 : 0);
+        return { name, level, currentLevel, flawObj, isBg, isRemovedInCampaign, removedEntry, bonusSP, options };
       });
 
       let flawsHtml = '';
@@ -1155,20 +1285,20 @@ document.addEventListener('DOMContentLoaded', () => {
         `;
       } else {
         flawsHtml = activeFlawsList.map(item => `
-          <div class="cb-card selected ${item.isRemovedInCampaign ? 'cb-card-removed' : ''}" style="margin-bottom: 0.75rem; ${item.isRemovedInCampaign ? 'opacity: 0.6; border-color: #a6c12e;' : (item.isBg ? 'border-color: #ffa500; background: rgba(255, 165, 0, 0.12);' : '')}">
+          <div class="cb-card selected ${item.currentLevel === 0 ? 'cb-card-removed' : ''}" style="margin-bottom: 0.75rem; ${item.currentLevel === 0 ? 'opacity: 0.6; border-color: #a6c12e;' : (item.isBg ? 'border-color: #ffa500; background: rgba(255, 165, 0, 0.12);' : '')}">
             <div class="cb-card-header" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem;">
               <div>
-                <h4 class="cb-card-title" style="font-size: 0.95rem; margin: 0; color: #ffffff; ${item.isRemovedInCampaign ? 'text-decoration: line-through;' : ''}">
-                  ${item.name} ${item.level > 1 ? `(Nvl ${item.level})` : ''}
-                  ${item.isBg ? `<span class="cb-badge-free" style="margin-left:0.4rem; background: rgba(255, 165, 0, 0.25); color: #ffa500; border-color: #ffa500;">🔒 ${isEs ? 'TRASFONDO' : 'BACKGROUND'}</span>` : ''}
-                  ${item.isRemovedInCampaign ? `<span class="cb-badge-free" style="margin-left:0.4rem; background: rgba(166,193,46,0.2); color:#a6c12e; border-color:#a6c12e;">✨ ${isEs ? 'ELIMINADO' : 'BOUGHT OFF'}</span>` : ''}
+                <h4 class="cb-card-title" style="font-size: 0.95rem; margin: 0; color: #ffffff; ${item.currentLevel === 0 ? 'text-decoration: line-through;' : ''}">
+                  ${item.name} ${item.options.length > 1 ? `(${isEs ? 'Nvl' : 'Lvl'} ${item.currentLevel}/${item.level})` : (item.level > 1 ? `(Nvl ${item.currentLevel})` : '')}
+                  ${item.isBg ? `<span class="cb-badge-free" style="margin-left:0.4rem; background: rgba(255, 165, 0, 0.25); color: #ffa500; border-color: #ffa500;">🔒 ${isEs ? 'TRASFONDO (Nivel 1)' : 'BACKGROUND (Tier 1)'}</span>` : ''}
+                  ${item.isRemovedInCampaign ? `<span class="cb-badge-free" style="margin-left:0.4rem; background: rgba(166,193,46,0.2); color:#a6c12e; border-color:#a6c12e;">✨ ${item.currentLevel === 0 ? (isEs ? 'ELIMINADO' : 'BOUGHT OFF') : (isEs ? 'REDUCIDO 1 NIVEL' : 'REDUCED 1 TIER')}</span>` : ''}
                 </h4>
                 <span style="font-size: 0.8rem; color: #a6c12e; font-weight: bold;">+${item.bonusSP} SP</span>
               </div>
               <div>
-                ${item.isBg ? '' : `
+                ${(item.isBg && !state.isFinalized) ? '' : `
                   <button type="button" class="cb-btn cb-btn-danger cb-btn-remove-flaw" data-flaw="${item.name}" style="font-size: 0.75rem; padding: 0.3rem 0.6rem;">
-                    🗑️ ${state.isFinalized ? (item.isRemovedInCampaign ? (isEs ? 'Restaurar' : 'Restore') : (isEs ? 'Eliminar con PA' : 'Buy Off')) : (isEs ? 'Eliminar' : 'Remove')}
+                    🗑️ ${state.isFinalized ? (item.isRemovedInCampaign ? (isEs ? 'Restaurar Nivel' : 'Restore Tier') : (item.level > 1 ? (isEs ? 'Reducir 1 Nivel (PA)' : 'Buy Off 1 Tier') : (isEs ? 'Eliminar (PA)' : 'Buy Off'))) : (isEs ? 'Eliminar' : 'Remove')}
                   </button>
                 `}
               </div>
@@ -1179,6 +1309,8 @@ document.addEventListener('DOMContentLoaded', () => {
       }
 
       const availableFlaws = allFlaws.filter(f => !state.flaws.some(sf => (typeof sf === 'string' ? sf : sf.name) === f.name));
+      const selectedFlawObj = selectedPickerItem ? allFlaws.find(x => x.name === selectedPickerItem) : null;
+      const flawOptions = selectedFlawObj ? getFlawBonus(selectedFlawObj).options : [3];
 
       flawsHtml += `
         <div style="margin-top: 1rem;">
@@ -1194,9 +1326,18 @@ document.addEventListener('DOMContentLoaded', () => {
                 <option value="">-- ${isEs ? 'Selecciona un defecto...' : 'Select a flaw...'} --</option>
                 ${availableFlaws.map(f => `<option value="${f.name}" ${selectedPickerItem === f.name ? 'selected' : ''}>${f.name}</option>`).join('')}
               </select>
+              ${flawOptions.length > 1 ? `
+                <select id="cb-select-flaw-level" class="cb-input" style="width: 140px;">
+                  ${flawOptions.map((opt, idx) => `
+                    <option value="${idx + 1}" ${selectedPickerLevel === (idx + 1) ? 'selected' : ''}>
+                      ${isEs ? 'Nivel' : 'Level'} ${idx + 1} (+${opt} SP)
+                    </option>
+                  `).join('')}
+                </select>
+              ` : ''}
             </div>
             <div id="cb-flaw-picker-desc" class="silver f6" style="min-height: 2.5rem; background: rgba(0,0,0,0.3); padding: 0.6rem; border-radius: 4px; margin-bottom: 0.75rem;">
-              ${selectedPickerItem ? (allFlaws.find(x => x.name === selectedPickerItem)?.description || '') : (isEs ? 'Selecciona un defecto para ver sus detalles.' : 'Select a flaw to view details.')}
+              ${selectedPickerItem ? (selectedFlawObj?.description || '') : (isEs ? 'Selecciona un defecto para ver sus detalles.' : 'Select a flaw to view details.')}
             </div>
             <div style="display: flex; gap: 0.5rem; justify-content: flex-end;">
               <button type="button" class="cb-btn cb-btn-secondary" id="cb-btn-cancel-flaw-picker" style="font-size: 0.8rem;">${isEs ? 'Cancelar' : 'Cancel'}</button>
@@ -1213,13 +1354,44 @@ document.addEventListener('DOMContentLoaded', () => {
           const flawName = btn.dataset.flaw;
           if (state.isFinalized) {
             if (!state.removedFlaws) state.removedFlaws = [];
+            const stateFlaw = state.flaws.find(x => (typeof x === 'string' ? x : x.name) === flawName);
+            const currentLevel = typeof stateFlaw === 'object' && stateFlaw.level ? stateFlaw.level : 1;
+            const flawObj = allFlaws.find(x => x.name.toLowerCase() === flawName.toLowerCase());
+            const { options } = getFlawBonus(flawObj);
+
             const removedIdx = state.removedFlaws.findIndex(x => x.name === flawName);
             if (removedIdx >= 0) {
-              state.removedFlaws.splice(removedIdx, 1);
+              const existing = state.removedFlaws[removedIdx];
+              if (existing.boughtOffLevels && existing.boughtOffLevels > 1) {
+                existing.boughtOffLevels -= 1;
+                const fromLvl = currentLevel - existing.boughtOffLevels;
+                const toLvl = fromLvl - 1;
+                const curBonus = options[fromLvl - 1] || (fromLvl * 3);
+                const newBonus = toLvl > 0 ? (options[toLvl - 1] || (toLvl * 3)) : 0;
+                existing.apCost -= (curBonus - newBonus);
+              } else {
+                state.removedFlaws.splice(removedIdx, 1);
+              }
             } else {
-              const stateFlaw = state.flaws.find(x => (typeof x === 'string' ? x : x.name) === flawName);
-              const lvl = typeof stateFlaw === 'object' && stateFlaw.level ? stateFlaw.level : 1;
-              state.removedFlaws.push({ name: flawName, level: lvl, apCost: lvl * 3 });
+              const spentAP = calculateCampaignSpentAP(true);
+              const titleObj = getCharacterTitle(spentAP);
+              const maxFlawBuyoffs = titleObj.ranksOverRookie;
+
+              let currentTotalBuyoffs = 0;
+              state.removedFlaws.forEach(rf => {
+                currentTotalBuyoffs += (rf.boughtOffLevels || 1);
+              });
+
+              if (currentTotalBuyoffs >= maxFlawBuyoffs) {
+                return;
+              }
+
+              const fromLvl = currentLevel;
+              const toLvl = currentLevel - 1;
+              const curBonus = options[fromLvl - 1] || (fromLvl * 3);
+              const newBonus = toLvl > 0 ? (options[toLvl - 1] || (toLvl * 3)) : 0;
+              const stepCost = curBonus - newBonus;
+              state.removedFlaws.push({ name: flawName, level: currentLevel, boughtOffLevels: 1, apCost: stepCost });
             }
           } else {
             const idx = state.flaws.findIndex(x => (typeof x === 'string' ? x : x.name) === flawName);
@@ -1256,6 +1428,13 @@ document.addEventListener('DOMContentLoaded', () => {
           selectedPickerItem = selectFlaw.value || null;
           selectedPickerLevel = 1;
           renderStep5();
+        });
+      }
+
+      const selectFlawLevel = flawsContainer.querySelector('#cb-select-flaw-level');
+      if (selectFlawLevel) {
+        selectFlawLevel.addEventListener('change', () => {
+          selectedPickerLevel = parseInt(selectFlawLevel.value, 10) || 1;
         });
       }
 
@@ -1338,6 +1517,8 @@ document.addEventListener('DOMContentLoaded', () => {
       }
 
       const availablePerks = allPerks.filter(p => !activePerksList.some(ap => ap.name.toLowerCase() === p.name.toLowerCase()));
+      const selectedPerkObj = selectedPickerItem ? allPerks.find(x => x.name === selectedPickerItem) : null;
+      const perkOptions = selectedPerkObj ? getPerkCost(selectedPerkObj).options : [3];
 
       perksHtml += `
         <div style="margin-top: 1rem;">
@@ -1353,13 +1534,65 @@ document.addEventListener('DOMContentLoaded', () => {
                 <option value="">-- ${isEs ? 'Selecciona una ventaja...' : 'Select a perk...'} --</option>
                 ${availablePerks.map(p => `<option value="${p.name}" ${selectedPickerItem === p.name ? 'selected' : ''}>${p.name}</option>`).join('')}
               </select>
+              ${(() => {
+                if (!selectedPickerItem) return '';
+                const pName = selectedPickerItem.toLowerCase();
+                const needsAbility = pName === 'heightened ability' || pName === 'habilidad aumentada';
+                const needsSpecialty = pName.includes('specialty skill focus') || pName.includes('enfoque en habilidad de especialidad');
+                const needsText = ['alien artifact', 'celebrity', 'faith', 'powerful ally', 'psionic awareness', 'artefacto alienígena', 'celebridad', 'fe', 'aliado poderoso', 'conciencia psiónica'].some(x => pName.includes(x));
+                if (needsAbility) {
+                  return `
+                    <select id="cb-select-perk-choice" class="cb-input" style="width: 140px;">
+                      <option value="">-- ${isEs ? 'Característica' : 'Ability'} --</option>
+                      <option value="STR" ${selectedPickerChoice === 'STR' ? 'selected' : ''}>STR</option>
+                      <option value="DEX" ${selectedPickerChoice === 'DEX' ? 'selected' : ''}>DEX</option>
+                      <option value="CON" ${selectedPickerChoice === 'CON' ? 'selected' : ''}>CON</option>
+                      <option value="INT" ${selectedPickerChoice === 'INT' ? 'selected' : ''}>INT</option>
+                      <option value="WIL" ${selectedPickerChoice === 'WIL' ? 'selected' : ''}>WIL</option>
+                      <option value="PER" ${selectedPickerChoice === 'PER' ? 'selected' : ''}>PER</option>
+                    </select>
+                  `;
+                } else if (needsSpecialty) {
+                  let specOptions = `<option value="">-- ${isEs ? 'Habilidad' : 'Skill'} --</option>`;
+                  if (data.skillsTable && data.skillsTable.items) {
+                    data.skillsTable.items.forEach(cat => {
+                      cat.items.forEach(broad => {
+                        if (broad.items) {
+                          broad.items.forEach(spec => {
+                            specOptions += `<option value="${spec.skill}" ${selectedPickerChoice === spec.skill ? 'selected' : ''}>${broad.skill} - ${spec.skill}</option>`;
+                          });
+                        }
+                      });
+                    });
+                  }
+                  return `
+                    <select id="cb-select-perk-choice" class="cb-input" style="width: 180px;">
+                      ${specOptions}
+                    </select>
+                  `;
+                } else if (needsText) {
+                  return `
+                    <input type="text" id="cb-select-perk-choice" class="cb-input" style="width: 160px;" placeholder="${isEs ? 'Especificar...' : 'Specify...'}" value="${selectedPickerChoice}">
+                  `;
+                }
+                return '';
+              })()}
+              ${perkOptions.length > 1 ? `
+                <select id="cb-select-perk-level" class="cb-input" style="width: 140px;">
+                  ${perkOptions.map((opt, idx) => `
+                    <option value="${idx + 1}" ${selectedPickerLevel === (idx + 1) ? 'selected' : ''}>
+                      ${isEs ? 'Nivel' : 'Level'} ${idx + 1} (${opt} ${isEs ? 'SP/PA' : 'SP/AP'})
+                    </option>
+                  `).join('')}
+                </select>
+              ` : ''}
             </div>
             <div id="cb-perk-picker-desc" class="silver f6" style="min-height: 2.5rem; background: rgba(0,0,0,0.3); padding: 0.6rem; border-radius: 4px; margin-bottom: 0.75rem;">
-              ${selectedPickerItem ? (allPerks.find(x => x.name === selectedPickerItem)?.description || '') : (isEs ? 'Selecciona una ventaja para ver sus detalles.' : 'Select a perk to view details.')}
+              ${selectedPickerItem ? (selectedPerkObj?.description || '') : (isEs ? 'Selecciona una ventaja para ver sus detalles.' : 'Select a perk to view details.')}
             </div>
             <div style="display: flex; gap: 0.5rem; justify-content: flex-end;">
               <button type="button" class="cb-btn cb-btn-secondary" id="cb-btn-cancel-perk-picker" style="font-size: 0.8rem;">${isEs ? 'Cancelar' : 'Cancel'}</button>
-              <button type="button" class="cb-btn cb-btn-primary" id="cb-btn-confirm-add-perk" style="font-size: 0.8rem;" ${selectedPickerItem ? '' : 'disabled'}>${isEs ? 'Añadir Ventaja' : 'Add Perk'}</button>
+              <button type="button" class="cb-btn cb-btn-primary" id="cb-btn-confirm-add-perk" style="font-size: 0.8rem;" ${selectedPickerItem && (!['heightened ability', 'habilidad aumentada', 'specialty skill focus', 'alien artifact', 'celebrity', 'faith', 'powerful ally', 'psionic awareness', 'enfoque en habilidad de especialidad', 'artefacto alienígena', 'celebridad', 'fe', 'aliado poderoso', 'conciencia psiónica'].some(x => selectedPickerItem.toLowerCase().includes(x)) || selectedPickerChoice.trim() !== '') ? '' : 'disabled'}>${isEs ? 'Añadir Ventaja' : 'Add Perk'}</button>
             </div>
           </div>
         </div>
@@ -1389,6 +1622,7 @@ document.addEventListener('DOMContentLoaded', () => {
         btnOpenPicker.addEventListener('click', () => {
           activePickerMode = 'perk';
           selectedPickerItem = null;
+          selectedPickerChoice = '';
           selectedPickerLevel = 1;
           renderStep5();
         });
@@ -1399,6 +1633,7 @@ document.addEventListener('DOMContentLoaded', () => {
         btnCancelPicker.addEventListener('click', () => {
           activePickerMode = null;
           selectedPickerItem = null;
+          selectedPickerChoice = '';
           renderStep5();
         });
       }
@@ -1407,8 +1642,27 @@ document.addEventListener('DOMContentLoaded', () => {
       if (selectPerk) {
         selectPerk.addEventListener('change', () => {
           selectedPickerItem = selectPerk.value || null;
+          selectedPickerChoice = '';
           selectedPickerLevel = 1;
           renderStep5();
+        });
+      }
+
+      const selectPerkChoice = perksContainer.querySelector('#cb-select-perk-choice');
+      if (selectPerkChoice) {
+        selectPerkChoice.addEventListener('input', () => {
+          selectedPickerChoice = selectPerkChoice.value;
+          const btnConfirmPerk = perksContainer.querySelector('#cb-btn-confirm-add-perk');
+          if (btnConfirmPerk) {
+            btnConfirmPerk.disabled = !selectedPickerChoice.trim();
+          }
+        });
+      }
+
+      const selectPerkLevel = perksContainer.querySelector('#cb-select-perk-level');
+      if (selectPerkLevel) {
+        selectPerkLevel.addEventListener('change', () => {
+          selectedPickerLevel = parseInt(selectPerkLevel.value, 10) || 1;
         });
       }
 
@@ -1417,18 +1671,34 @@ document.addEventListener('DOMContentLoaded', () => {
         btnConfirmPerk.addEventListener('click', () => {
           if (selectedPickerItem) {
             const perkObj = allPerks.find(x => x.name === selectedPickerItem);
+            const pNameLower = selectedPickerItem.toLowerCase();
+            const needsChoice = ['heightened ability', 'habilidad aumentada', 'specialty skill focus', 'alien artifact', 'celebrity', 'faith', 'powerful ally', 'psionic awareness', 'enfoque en habilidad de especialidad', 'artefacto alienígena', 'celebridad', 'fe', 'aliado poderoso', 'conciencia psiónica'].some(x => pNameLower.includes(x));
+            if (needsChoice && !selectedPickerChoice.trim()) return;
+
+            const finalPerkName = needsChoice ? `${selectedPickerItem} (${selectedPickerChoice.trim()})` : selectedPickerItem;
+            
             const { options, favored } = getPerkCost(perkObj);
             const optVal = options[selectedPickerLevel - 1] || (selectedPickerLevel * 3);
             const optCost = favored ? Math.max(1, optVal - 1) : optVal;
 
             if (state.isFinalized) {
+              const spentAP = calculateCampaignSpentAP(true);
+              const titleObj = getCharacterTitle(spentAP);
+              const maxPerkSlots = titleObj.ranksOverRookie;
+              const usedPerkSlots = (state.advancementPerks || []).length;
+
+              if (usedPerkSlots >= maxPerkSlots) {
+                return;
+              }
+
               if (!state.advancementPerks) state.advancementPerks = [];
-              state.advancementPerks.push({ name: selectedPickerItem, level: selectedPickerLevel, apCost: optCost });
+              state.advancementPerks.push({ name: finalPerkName, level: selectedPickerLevel, apCost: optCost, baseApCost: optVal });
             } else {
-              state.perks.push({ name: selectedPickerItem, level: selectedPickerLevel });
+              state.perks.push({ name: finalPerkName, level: selectedPickerLevel });
             }
             activePickerMode = null;
             selectedPickerItem = null;
+            selectedPickerChoice = '';
             saveStateToLocalStorage();
             renderStep5();
             recalculateBudgets();
@@ -1449,13 +1719,25 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let html = '';
 
+    // Compute broad cap once using skill table as ground truth (not state.skills flags)
+    const _broadSpentAP = state.isFinalized ? calculateCampaignSpentAP(true) : 0;
+    const _broadTitleObj = getCharacterTitle(_broadSpentAP);
+    let _trueBroadCount = 0;
+    data.skillsTable.items.forEach(cat => {
+      cat.items.forEach(broad => {
+        const isFree = isSpeciesFreeBroad(broad) ||
+          (state.faction === 'voidcorp' && (broad.skill.includes('Business') || broad.skill.includes('Negocios')));
+        if (!isFree && state.skills[broad.id]?.ranks > 0) _trueBroadCount++;
+      });
+    });
+
     data.skillsTable.items.forEach(category => {
       if (catFilter !== 'ALL' && category.skill !== catFilter) return;
 
       category.items.forEach(broadSkill => {
-        let isFreeBroad = isSpeciesFreeBroad(broadSkill) || (state.faction === 'voidcorp' && (broadSkill.skill.includes('Business') || broadSkill.skill.includes('Negocios')));
+        let isFreeBroad = isSpeciesFreeBroad(broadSkill) || (FACTION_DATA[state.faction]?.freeSkills || []).includes(broadSkill.id);
         let broadFavored = isFavored(broadSkill.skill, category.skill);
-        let broadBought = state.skills[broadSkill.skill]?.ranks > 0 || isFreeBroad;
+        let broadBought = state.skills[broadSkill.id]?.ranks > 0 || isFreeBroad;
 
         if (favoredOnly && !broadFavored) return;
 
@@ -1464,7 +1746,6 @@ document.addEventListener('DOMContentLoaded', () => {
         if (searchTerm && !matchesSearch && !childMatches) return;
 
         let discount = 0;
-        if (state.faction === 'orlamu' && state.profession === 'mindwalker' && category.skill === 'Psionics') discount += 1;
 
         let baseBroadCost = broadFavored ? Math.max(1, broadSkill.cost - 1) : broadSkill.cost;
         let actualBroadCost = isFreeBroad ? 0 : Math.max(0, baseBroadCost - discount);
@@ -1475,6 +1756,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         let broadTotalSpent = broadBought ? (isFreeBroad ? 0 : actualBroadCost) : 0;
 
+        const broadAtCap = state.isFinalized && !broadBought && _trueBroadCount >= _broadTitleObj.maxBroad;
+
         html += `
           <div class="cb-skill-row broad ${broadFavored ? 'favored' : ''}">
             <div class="cb-skill-info">
@@ -1482,6 +1765,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 ${broadSkill.skill}
                 ${isFreeBroad ? `<span class="cb-badge-free">${isEs ? 'ESPECIE (GRATIS)' : 'SPECIES (FREE)'}</span>` : ''}
                 ${broadFavored ? `<span class="cb-badge-favored">${isEs ? 'FAVORECIDA' : 'FAVORED'}</span>` : ''}
+                ${broadAtCap ? `<span style="font-size: 0.65rem; color: #ff6b6b; margin-left: 0.4rem; font-family: 'Michroma', sans-serif;">${isEs ? 'LÍMITE ALCANZADO' : 'CAP REACHED'}</span>` : ''}
               </span>
               <span class="cb-skill-meta">
                 <span>[${broadSkill.attribute}: ${broadAbilityVal}]</span>
@@ -1492,25 +1776,28 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
             <div class="cb-rank-controls">
               <span class="cb-skill-total-badge ${broadTotalSpent > 0 ? 'active' : ''}">${broadTotalSpent} SP</span>
-              <button class="cb-btn-rank ${broadBought ? 'active' : ''}" data-skill="${broadSkill.skill}" data-is-broad="true" data-cost="${broadSkill.cost}" data-cat="${category.skill}" ${isFreeBroad ? 'disabled title="Free Species Skill"' : ''}>
-                ${broadBought ? '✓' : '+'}
-              </button>
+              ${isFreeBroad ? `<span class="cb-rank-display" style="padding: 0.25rem 0.6rem; font-size: 0.8rem; color: #a6c12e;">✓ Free</span>` : `
+                <div class="cb-rank-stepper">
+                  <button class="cb-btn-rank-step" data-skill="${broadSkill.id}" data-is-broad="true" data-cost="${broadSkill.cost}" data-cat="${category.id}" data-dir="-1" ${!broadBought ? 'disabled' : ''}>−</button>
+                  <span class="cb-rank-display">${broadBought ? 1 : 0}</span>
+                  <button class="cb-btn-rank-step" data-skill="${broadSkill.id}" data-is-broad="true" data-cost="${broadSkill.cost}" data-cat="${category.id}" data-dir="1" ${(broadBought || broadAtCap) ? 'disabled' : ''}>+</button>
+                </div>
+              `}
             </div>
           </div>
         `;
 
-        let hasChildBought = broadSkill.items && broadSkill.items.some(specSkill => state.skills[specSkill.skill]?.ranks > 0);
+        let hasChildBought = broadSkill.items && broadSkill.items.some(specSkill => state.skills[specSkill.id]?.ranks > 0);
 
         if ((broadBought || hasChildBought) && broadSkill.items) {
           broadSkill.items.forEach(specSkill => {
             if (searchTerm && !specSkill.skill.toLowerCase().includes(searchTerm) && !matchesSearch) return;
 
             let specFavored = isFavored(specSkill.skill, category.skill, broadSkill.skill);
-            let currentRanks = state.skills[specSkill.skill]?.ranks || 0;
+            let currentRanks = state.skills[specSkill.id]?.ranks || 0;
 
             let specDiscount = 0;
-            if (state.faction === 'rigunmor' && (specSkill.skill.includes('bargain') || specSkill.skill.includes('regatear'))) specDiscount += 1;
-            if (state.faction === 'orlamu' && state.profession === 'mindwalker' && category.skill === 'Psionics') specDiscount += 1;
+            
 
             let baseSpecCost = specFavored ? Math.max(1, specSkill.cost - 1) : specSkill.cost;
             let actualSpecCost = Math.max(0, baseSpecCost - specDiscount);
@@ -1520,6 +1807,23 @@ document.addEventListener('DOMContentLoaded', () => {
             let specGood = Math.floor(specOrd / 2);
             let specAmaz = Math.floor(specOrd / 4);
 
+            const spentAP = state.isFinalized ? calculateCampaignSpentAP(true) : 0;
+            const titleObj = getCharacterTitle(spentAP);
+            const maxAllowedRank = state.isFinalized
+              ? (typeof titleObj.maxSkillRank === 'number' ? titleObj.maxSkillRank : 99)
+              : 3;
+
+            let rankButtons = [];
+            if (state.isFinalized) {
+              // Show 0 through (currentRanks + 1), capped at maxAllowedRank
+              const maxDisplay = Math.min(maxAllowedRank, Math.max(currentRanks, currentRanks + 1));
+              for (let r = 0; r <= maxDisplay; r++) {
+                rankButtons.push(r);
+              }
+            } else {
+              rankButtons = [0, 1, 2, 3];
+            }
+
             html += `
               <div class="cb-skill-row ${specFavored ? 'favored' : ''}" style="padding-left: 2.5rem;">
                 <div class="cb-skill-info">
@@ -1528,21 +1832,19 @@ document.addEventListener('DOMContentLoaded', () => {
                     ${specFavored ? `<span class="cb-badge-favored">${isEs ? 'FAVORECIDA' : 'FAVORED'}</span>` : ''}
                   </span>
                   <span class="cb-skill-meta">
-                    <span>${isEs ? 'Rangos' : 'Ranks'}: +${currentRanks}</span>
                     <span>${isEs ? 'Puntuación Total' : 'Total Score'}: <strong>${totalSpecScore}</strong></span>
                     <span>${isEs ? 'Objetivo' : 'Target'}: <strong>${specOrd} / ${specGood} / ${specAmaz}</strong></span>
-                    <span style="color: #a6c12e; font-weight: bold;">${getRankBenefitDescription(currentRanks)}</span>
-                    <span>${isEs ? 'Precio' : 'Cost'}: ${actualSpecCost} SP/rank</span>
-                    <span style="color: var(--accent-cyan); font-weight: bold;">${isEs ? 'Total' : 'Total'}: <strong>${specTotalSpent} SP</strong></span>
+                    <span>${isEs ? 'Precio' : 'Cost'}: ${actualSpecCost} ${isEs ? 'SP/rango' : 'SP/rank'}</span>
+                    <span style="color: var(--accent-cyan); font-weight: bold;">${isEs ? 'Total' : 'Total'}: <strong>${specTotalSpent} ${state.isFinalized ? 'AP' : 'SP'}</strong></span>
                   </span>
                 </div>
                 <div class="cb-rank-controls">
-                  <span class="cb-skill-total-badge ${specTotalSpent > 0 ? 'active' : ''}">${specTotalSpent} SP</span>
-                  ${[0, 1, 2, 3].map(r => `
-                    <button class="cb-btn-rank ${currentRanks === r ? 'active' : ''}" data-skill="${specSkill.skill}" data-rank="${r}" data-cost="${specSkill.cost}" data-cat="${category.skill}">
-                      ${r}
-                    </button>
-                  `).join('')}
+                  <span class="cb-skill-total-badge ${specTotalSpent > 0 ? 'active' : ''}">${specTotalSpent} ${state.isFinalized ? 'AP' : 'SP'}</span>
+                  <div class="cb-rank-stepper">
+                    <button class="cb-btn-rank-step" data-skill="${specSkill.id}" data-is-broad="false" data-cost="${specSkill.cost}" data-cat="${category.id}" data-dir="-1" ${currentRanks <= 0 ? 'disabled' : ''}>−</button>
+                    <span class="cb-rank-display">+${currentRanks}</span>
+                    <button class="cb-btn-rank-step" data-skill="${specSkill.id}" data-is-broad="false" data-cost="${specSkill.cost}" data-cat="${category.id}" data-dir="1" ${currentRanks >= maxAllowedRank ? 'disabled' : ''}>+</button>
+                  </div>
                 </div>
               </div>
             `;
@@ -1553,26 +1855,43 @@ document.addEventListener('DOMContentLoaded', () => {
 
     listEl.innerHTML = html;
 
-    listEl.querySelectorAll('.cb-btn-rank').forEach(btn => {
+    listEl.querySelectorAll('.cb-btn-rank-step').forEach(btn => {
       btn.addEventListener('click', () => {
         const skillName = btn.dataset.skill;
         const isBroad = btn.dataset.isBroad === 'true';
         const cost = parseInt(btn.dataset.cost);
         const cat = btn.dataset.cat;
+        const dir = parseInt(btn.dataset.dir);
 
         if (isBroad) {
           const currentlyBought = state.skills[skillName]?.ranks > 0;
-          if (currentlyBought) {
+          if (dir === -1 && currentlyBought) {
             delete state.skills[skillName];
-          } else {
+          } else if (dir === 1 && !currentlyBought) {
             state.skills[skillName] = { ranks: 1, isBroad: true, standardCost: cost, category: cat };
           }
         } else {
-          const rank = parseInt(btn.dataset.rank);
-          if (rank === 0) {
+          const currentTotalRanks = state.skills[skillName]?.ranks || 0;
+          const newRank = currentTotalRanks + dir;
+
+          if (newRank <= 0) {
             delete state.skills[skillName];
+            if (state.advancementSkills) delete state.advancementSkills[skillName];
           } else {
-            state.skills[skillName] = { ranks: rank, isBroad: false, standardCost: cost, category: cat };
+            const currentAdvRanks = (state.advancementSkills && state.advancementSkills[skillName]) || 0;
+            const creationRanks = Math.max(0, currentTotalRanks - currentAdvRanks);
+
+            if (state.isFinalized) {
+              const newAdvRanks = Math.max(0, newRank - creationRanks);
+              if (!state.advancementSkills) state.advancementSkills = {};
+              if (newAdvRanks > 0) {
+                state.advancementSkills[skillName] = newAdvRanks;
+              } else {
+                delete state.advancementSkills[skillName];
+              }
+            }
+
+            state.skills[skillName] = { ranks: newRank, isBroad: false, standardCost: cost, category: cat };
           }
         }
 
@@ -1651,7 +1970,6 @@ document.addEventListener('DOMContentLoaded', () => {
                   <td class="tc">${abilityScore}</td>
                   <td class="tc">+${ranks}</td>
                   <td class="tc"><strong>${totalScore}</strong></td>
-                  <td class="tc" style="font-size: 0.78rem; color: #a6c12e;">${getRankBenefitDescription(ranks)}</td>
                   <td class="tc cb-target-scores">${ord} / ${good} / ${amaz}</td>
                 </tr>
               `;
@@ -1677,8 +1995,9 @@ document.addEventListener('DOMContentLoaded', () => {
     ].join(', ');
 
     const spentAP = state.isFinalized ? calculateCampaignSpentAP() : 0;
+    const baseSpentAP = state.isFinalized ? calculateCampaignSpentAP(true) : 0;
     const availableAP = (state.earnedAP || 0) - spentAP;
-    const titleObj = getCharacterTitle(spentAP);
+    const titleObj = getCharacterTitle(baseSpentAP);
 
     let advancementBannerHtml = '';
     if (!state.isFinalized) {
@@ -1754,7 +2073,7 @@ document.addEventListener('DOMContentLoaded', () => {
             ${Object.keys(state.abilities).map(stat => {
               const effVal = getEffectiveAbilityScore(stat);
               let mod = getResMod(effVal);
-              if (state.faction === 'concord' && state.concordResModStat === stat) mod += 1;
+              if (FACTION_DATA[state.faction]?.hasBonusResistance && state.bonusResistanceAttribute === stat) mod += 1;
               return `
                 <div class="cb-track-box">
                   <span><strong>${stat}:</strong> ${effVal}</span>
@@ -1881,27 +2200,6 @@ document.addEventListener('DOMContentLoaded', () => {
     if (state.step === 7) renderStep7();
   });
 
-  document.getElementById('cb-sidebar-btn-add-1ap')?.addEventListener('click', () => {
-    state.earnedAP = (state.earnedAP || 0) + 1;
-    saveStateToLocalStorage();
-    recalculateBudgets();
-    if (state.step === 7) renderStep7();
-  });
-
-  document.getElementById('cb-sidebar-btn-add-5ap')?.addEventListener('click', () => {
-    state.earnedAP = (state.earnedAP || 0) + 5;
-    saveStateToLocalStorage();
-    recalculateBudgets();
-    if (state.step === 7) renderStep7();
-  });
-
-  document.getElementById('cb-sidebar-btn-add-10ap')?.addEventListener('click', () => {
-    state.earnedAP = (state.earnedAP || 0) + 10;
-    saveStateToLocalStorage();
-    recalculateBudgets();
-    if (state.step === 7) renderStep7();
-  });
-
   // Attach Event Listeners
   document.getElementById('cb-input-name')?.addEventListener('input', e => { state.bio.name = e.target.value; saveStateToLocalStorage(); });
   document.getElementById('cb-input-player')?.addEventListener('input', e => { state.bio.player = e.target.value; saveStateToLocalStorage(); });
@@ -1939,6 +2237,8 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // Import JSON
+  
+
   const importInput = document.getElementById('cb-input-import-json');
   document.getElementById('cb-btn-import-json')?.addEventListener('click', () => importInput?.click());
 
@@ -1990,4 +2290,16 @@ document.addEventListener('DOMContentLoaded', () => {
   loadStateFromLocalStorage();
   renderStep(state.step || 1);
   recalculateBudgets();
+
+  // Expose API for testing
+  if (typeof window !== 'undefined') {
+    window.__CB_TEST_API__ = {
+      isFavored,
+      getAdvancementSkillCost,
+      calculateCampaignSpentAP,
+      getParentBroadSkillName: getParentBroadSkillName,
+      state,
+      data
+    };
+  }
 });

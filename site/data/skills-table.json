@@ -16,10 +16,12 @@
     ],
     "items": [
         {
+            "id": "academic",
             "skill": "Academic",
             "type": "Category",
             "items": [
                 {
+                    "id": "physical-science",
                     "skill": "Physical Science",
                     "attribute": "INT",
                     "url": "/skills/physical-science",
@@ -27,6 +29,7 @@
                     "type": "Broad",
                     "items": [
                         {
+                            "id": "astronomy",
                             "skill": "Astronomy",
                             "attribute": "INT",
                             "url": "/skills/physical-science#astronomy",
@@ -35,6 +38,7 @@
                             "css_class": ""
                         },
                         {
+                            "id": "chemistry",
                             "skill": "Chemistry",
                             "attribute": "INT",
                             "url": "/skills/physical-science#chemistry",
@@ -43,6 +47,7 @@
                             "css_class": ""
                         },
                         {
+                            "id": "physics",
                             "skill": "Physics",
                             "attribute": "WIL",
                             "url": "/skills/physical-science#physics",
@@ -51,6 +56,7 @@
                             "css_class": ""
                         },
                         {
+                            "id": "planetology",
                             "skill": "Planetology",
                             "attribute": "WIL",
                             "url": "/skills/physical-science#planetology",
@@ -63,10 +69,12 @@
             ]
         },
         {
+            "id": "combat",
             "skill": "Combat",
             "type": "Category",
             "items": [
                 {
+                    "id": "heavy-weapons",
                     "skill": "Heavy Weapons",
                     "attribute": "STR",
                     "url": "/skills/heavy-weapons",
@@ -74,6 +82,7 @@
                     "type": "Broad",
                     "items": [
                         {
+                            "id": "direct-fire",
                             "skill": "Direct fire",
                             "attribute": "STR",
                             "url": "/skills/heavy-weapons#direct-fire",
@@ -82,6 +91,7 @@
                             "css_class": ""
                         },
                         {
+                            "id": "indirect-fire",
                             "skill": "Indirect fire",
                             "attribute": "STR",
                             "url": "/skills/heavy-weapons#indirect-fire",
@@ -92,6 +102,7 @@
                     ]
                 },
                 {
+                    "id": "melee-combat",
                     "skill": "Melee Combat",
                     "attribute": "STR",
                     "url": "/skills/melee-combat",
@@ -99,6 +110,7 @@
                     "type": "Broad",
                     "items": [
                         {
+                            "id": "blade",
                             "skill": "Blade",
                             "attribute": "STR",
                             "url": "/skills/melee-combat#blade",
@@ -107,6 +119,7 @@
                             "css_class": ""
                         },
                         {
+                            "id": "blunt",
                             "skill": "Blunt",
                             "attribute": "STR",
                             "url": "/skills/melee-combat#blunt",
@@ -115,6 +128,7 @@
                             "css_class": ""
                         },
                         {
+                            "id": "defensive-martial-arts",
                             "skill": "Defensive Martial Arts",
                             "attribute": "STR",
                             "url": "/skills/melee-combat#defensive-martial-arts",
@@ -123,6 +137,7 @@
                             "css_class": ""
                         },
                         {
+                            "id": "power-martial-arts",
                             "skill": "Power Martial Arts",
                             "attribute": "STR",
                             "url": "/skills/melee-combat#power-martial-arts",
@@ -131,6 +146,7 @@
                             "css_class": ""
                         },
                         {
+                            "id": "powered-weapons",
                             "skill": "Powered",
                             "attribute": "STR",
                             "url": "/skills/melee-combat#powered-weapons",
@@ -141,6 +157,7 @@
                     ]
                 },
                 {
+                    "id": "modern-ranged-weapons",
                     "skill": "Modern Ranged Weapons",
                     "attribute": "DEX",
                     "url": "/skills/modern-ranged-weapons",
@@ -148,6 +165,7 @@
                     "type": "Broad",
                     "items": [
                         {
+                            "id": "assault-rifle",
                             "skill": "Assault Rifle",
                             "attribute": "DEX",
                             "url": "/skills/modern-ranged-weapons#assault-rifle",
@@ -156,6 +174,7 @@
                             "css_class": ""
                         },
                         {
+                            "id": "pistol",
                             "skill": "Pistol",
                             "attribute": "DEX",
                             "url": "/skills/modern-ranged-weapons#pistol",
@@ -164,6 +183,7 @@
                             "css_class": ""
                         },
                         {
+                            "id": "rifle",
                             "skill": "Rifle",
                             "attribute": "DEX",
                             "url": "/skills/modern-ranged-weapons#rifle",
@@ -172,6 +192,7 @@
                             "css_class": ""
                         },
                         {
+                            "id": "smg",
                             "skill": "SMG",
                             "attribute": "DEX",
                             "url": "/skills/modern-ranged-weapons#smg",
@@ -180,6 +201,7 @@
                             "css_class": ""
                         },
                         {
+                            "id": "shotgun",
                             "skill": "Shotgun",
                             "attribute": "DEX",
                             "url": "/skills/modern-ranged-weapons#shotgun",
@@ -190,6 +212,7 @@
                     ]
                 },
                 {
+                    "id": "primitive-ranged-weapons",
                     "skill": "Primitive Ranged Weapons",
                     "attribute": "DEX",
                     "url": "/skills/primitive-ranged-weapons",
@@ -197,6 +220,7 @@
                     "type": "Broad",
                     "items": [
                         {
+                            "id": "bow",
                             "skill": "Bow",
                             "attribute": "DEX",
                             "url": "/skills/primitive-ranged-weapons#bow",
@@ -205,6 +229,7 @@
                             "css_class": ""
                         },
                         {
+                            "id": "crossbow",
                             "skill": "Crossbow",
                             "attribute": "DEX",
                             "url": "/skills/primitive-ranged-weapons#crossbow",
@@ -213,6 +238,7 @@
                             "css_class": ""
                         },
                         {
+                            "id": "flintlock",
                             "skill": "Flintlock",
                             "attribute": "DEX",
                             "url": "/skills/primitive-ranged-weapons#flintlock",
@@ -221,6 +247,7 @@
                             "css_class": ""
                         },
                         {
+                            "id": "sling",
                             "skill": "Sling",
                             "attribute": "DEX",
                             "url": "/skills/primitive-ranged-weapons#sling",
@@ -231,6 +258,7 @@
                     ]
                 },
                 {
+                    "id": "tactics",
                     "skill": "Tactics",
                     "attribute": "INT",
                     "url": "/skills/tactics",
@@ -238,6 +266,7 @@
                     "type": "Broad",
                     "items": [
                         {
+                            "id": "infantry-tactics",
                             "skill": "Infantry tactics",
                             "attribute": "INT",
                             "url": "/skills/tactics#infantry-tactics",
@@ -246,6 +275,7 @@
                             "css_class": ""
                         },
                         {
+                            "id": "space-tactics",
                             "skill": "Space tactics",
                             "attribute": "INT",
                             "url": "/skills/tactics#space-tactics",
@@ -254,6 +284,7 @@
                             "css_class": ""
                         },
                         {
+                            "id": "vehicle-tactics",
                             "skill": "Vehicle tactics",
                             "attribute": "INT",
                             "url": "/skills/tactics#vehicle-tactics",
@@ -266,10 +297,12 @@
             ]
         },
         {
+            "id": "other",
             "skill": "Other",
             "type": "Category",
             "items": [
                 {
+                    "id": "acrobatics",
                     "skill": "Acrobatics",
                     "attribute": "DEX",
                     "url": "/skills/acrobatics",
@@ -277,6 +310,7 @@
                     "type": "Broad",
                     "items": [
                         {
+                            "id": "aerobatics",
                             "skill": "Aerobatics",
                             "attribute": "DEX",
                             "url": "/skills/acrobatics#aerobatics",
@@ -285,6 +319,7 @@
                             "css_class": ""
                         },
                         {
+                            "id": "daredevil",
                             "skill": "Daredevil",
                             "attribute": "DEX",
                             "url": "/skills/acrobatics#daredevil",
@@ -293,6 +328,7 @@
                             "css_class": ""
                         },
                         {
+                            "id": "dodge",
                             "skill": "Dodge",
                             "attribute": "DEX",
                             "url": "/skills/acrobatics#dodge",
@@ -301,6 +337,7 @@
                             "css_class": ""
                         },
                         {
+                            "id": "fall",
                             "skill": "Fall",
                             "attribute": "DEX",
                             "url": "/skills/acrobatics#fall",
@@ -309,6 +346,7 @@
                             "css_class": ""
                         },
                         {
+                            "id": "zero-g-training",
                             "skill": "Zero-g Training",
                             "attribute": "DEX",
                             "url": "/skills/acrobatics#zero-g-training",
@@ -319,6 +357,7 @@
                     ]
                 },
                 {
+                    "id": "animal-handling",
                     "skill": "Animal Handling",
                     "attribute": "WIL",
                     "url": "/skills/animal-handling",
@@ -326,6 +365,7 @@
                     "type": "Broad",
                     "items": [
                         {
+                            "id": "animal-riding",
                             "skill": "Animal riding",
                             "attribute": "WIL",
                             "url": "/skills/animal-handling#animal-riding",
@@ -334,6 +374,7 @@
                             "css_class": ""
                         },
                         {
+                            "id": "animal-training",
                             "skill": "Animal training",
                             "attribute": "WIL",
                             "url": "/skills/animal-handling#animal-training",
@@ -344,6 +385,7 @@
                     ]
                 },
                 {
+                    "id": "armor-operation",
                     "skill": "Armor Operation",
                     "attribute": "STR",
                     "url": "/skills/armor-operation",
@@ -351,6 +393,7 @@
                     "type": "Broad",
                     "items": [
                         {
+                            "id": "combat-armor",
                             "skill": "Combat armor",
                             "attribute": "STR",
                             "url": "/skills/armor-operation#combat-armor",
@@ -359,6 +402,7 @@
                             "css_class": ""
                         },
                         {
+                            "id": "tactical-armor",
                             "skill": "Tactical armor",
                             "attribute": "INT",
                             "url": "/skills/armor-operation#tactical-armor",
@@ -367,6 +411,7 @@
                             "css_class": ""
                         },
                         {
+                            "id": "propulsion-systems",
                             "skill": "Propulsion systems",
                             "attribute": "INT",
                             "url": "/skills/armor-operation#propulsion-systems",
@@ -375,6 +420,7 @@
                             "css_class": ""
                         },
                         {
+                            "id": "shields",
                             "skill": "Shields",
                             "attribute": "STR",
                             "url": "/skills/armor-operation#shields",
@@ -385,6 +431,7 @@
                     ]
                 },
                 {
+                    "id": "athletics",
                     "skill": "Athletics",
                     "attribute": "STR",
                     "url": "/skills/athletics",
@@ -392,6 +439,7 @@
                     "type": "Broad",
                     "items": [
                         {
+                            "id": "climb",
                             "skill": "Climb",
                             "attribute": "STR",
                             "url": "/skills/athletics#climb",
@@ -400,6 +448,7 @@
                             "css_class": ""
                         },
                         {
+                            "id": "jump",
                             "skill": "Jump",
                             "attribute": "STR",
                             "url": "/skills/athletics#jump",
@@ -408,6 +457,7 @@
                             "css_class": ""
                         },
                         {
+                            "id": "swim",
                             "skill": "Swim",
                             "attribute": "STR",
                             "url": "/skills/athletics#swim",
@@ -416,6 +466,7 @@
                             "css_class": "trained-only"
                         },
                         {
+                            "id": "throw",
                             "skill": "Throw",
                             "attribute": "STR",
                             "url": "/skills/athletics#throw",
@@ -426,6 +477,7 @@
                     ]
                 },
                 {
+                    "id": "awareness",
                     "skill": "Awareness",
                     "attribute": "WIL",
                     "url": "/skills/awareness",
@@ -433,6 +485,7 @@
                     "type": "Broad",
                     "items": [
                         {
+                            "id": "intuition",
                             "skill": "Intuition",
                             "attribute": "WIL",
                             "url": "/skills/awareness#intuition",
@@ -441,6 +494,7 @@
                             "css_class": ""
                         },
                         {
+                            "id": "perception",
                             "skill": "Perception",
                             "attribute": "WIL",
                             "url": "/skills/awareness#perception",
@@ -449,6 +503,7 @@
                             "css_class": ""
                         },
                         {
+                            "id": "psionic-sense",
                             "skill": "Psionic Sense",
                             "attribute": "WIL",
                             "url": "/skills/awareness#psionic-sense",
@@ -459,6 +514,7 @@
                     ]
                 },
                 {
+                    "id": "creativity",
                     "skill": "Creativity",
                     "attribute": "WIL",
                     "url": "/skills/creativity",
@@ -466,6 +522,7 @@
                     "type": "Broad",
                     "items": [
                         {
+                            "id": "the-intangible",
                             "skill": "The Intangible",
                             "attribute": "WIL",
                             "url": "/skills/creativity#the-intangible",
@@ -474,6 +531,7 @@
                             "css_class": ""
                         },
                         {
+                            "id": "the-shape",
                             "skill": "The Shape",
                             "attribute": "WIL",
                             "url": "/skills/creativity#the-shape",
@@ -482,6 +540,7 @@
                             "css_class": ""
                         },
                         {
+                            "id": "the-word",
                             "skill": "The Word",
                             "attribute": "WIL",
                             "url": "/skills/creativity#the-word",
@@ -492,6 +551,7 @@
                     ]
                 },
                 {
+                    "id": "entertainment",
                     "skill": "Entertainment",
                     "attribute": "PER",
                     "url": "/skills/entertainment",
@@ -499,6 +559,7 @@
                     "type": "Broad",
                     "items": [
                         {
+                            "id": "musical-instrument",
                             "skill": "Musical instrument",
                             "attribute": "PER",
                             "url": "/skills/entertainment#musical-instrument",
@@ -507,6 +568,7 @@
                             "css_class": "trained-only"
                         },
                         {
+                            "id": "sing",
                             "skill": "Sing",
                             "attribute": "PER",
                             "url": "/skills/entertainment#sing",
@@ -515,6 +577,7 @@
                             "css_class": ""
                         },
                         {
+                            "id": "act",
                             "skill": "Act",
                             "attribute": "PER",
                             "url": "/skills/entertainment#act",
@@ -523,6 +586,7 @@
                             "css_class": ""
                         },
                         {
+                            "id": "dance",
                             "skill": "Dance",
                             "attribute": "PER",
                             "url": "/skills/entertainment#dance",
@@ -533,6 +597,7 @@
                     ]
                 },
                 {
+                    "id": "navigation",
                     "skill": "Navigation",
                     "attribute": "INT",
                     "url": "/skills/navigation",
@@ -540,6 +605,7 @@
                     "type": "Broad",
                     "items": [
                         {
+                            "id": "astrogationdrivespace",
                             "skill": "Astrogation—drivespace",
                             "attribute": "INT",
                             "url": "/skills/navigation#astrogationdrivespace",
@@ -548,6 +614,7 @@
                             "css_class": "trained-only"
                         },
                         {
+                            "id": "astrogationsystem",
                             "skill": "Astrogation—system",
                             "attribute": "INT",
                             "url": "/skills/navigation#astrogationsystem",
@@ -556,6 +623,7 @@
                             "css_class": ""
                         },
                         {
+                            "id": "navigationsurface",
                             "skill": "Navigation—surface",
                             "attribute": "INT",
                             "url": "/skills/navigation#navigationsurface",
@@ -566,6 +634,7 @@
                     ]
                 },
                 {
+                    "id": "resolve",
                     "skill": "Resolve",
                     "attribute": "WIL",
                     "url": "/skills/resolve",
@@ -573,6 +642,7 @@
                     "type": "Broad",
                     "items": [
                         {
+                            "id": "mental-resolve",
                             "skill": "Mental resolve",
                             "attribute": "WIL",
                             "url": "/skills/resolve#mental-resolve",
@@ -581,6 +651,7 @@
                             "css_class": ""
                         },
                         {
+                            "id": "physical-resolve",
                             "skill": "Physical resolve",
                             "attribute": "WIL",
                             "url": "/skills/resolve#physical-resolve",
@@ -591,6 +662,7 @@
                     ]
                 },
                 {
+                    "id": "security",
                     "skill": "Security",
                     "attribute": "INT",
                     "url": "/skills/security",
@@ -598,6 +670,7 @@
                     "type": "Broad",
                     "items": [
                         {
+                            "id": "protection-protocols",
                             "skill": "Protection protocols",
                             "attribute": "INT",
                             "url": "/skills/security#protection-protocols",
@@ -606,6 +679,7 @@
                             "css_class": ""
                         },
                         {
+                            "id": "security-devices",
                             "skill": "Security devices",
                             "attribute": "INT",
                             "url": "/skills/security#security-devices",
@@ -616,6 +690,7 @@
                     ]
                 },
                 {
+                    "id": "stamina",
                     "skill": "Stamina",
                     "attribute": "CON",
                     "url": "/skills/stamina",
@@ -623,6 +698,7 @@
                     "type": "Broad",
                     "items": [
                         {
+                            "id": "endurance",
                             "skill": "Endurance",
                             "attribute": "CON",
                             "url": "/skills/stamina#endurance",
@@ -631,6 +707,7 @@
                             "css_class": ""
                         },
                         {
+                            "id": "resist-pain",
                             "skill": "Resist pain",
                             "attribute": "CON",
                             "url": "/skills/stamina#resist-pain",
@@ -641,6 +718,7 @@
                     ]
                 },
                 {
+                    "id": "survival",
                     "skill": "Survival",
                     "attribute": "CON",
                     "url": "/skills/survival",
@@ -648,6 +726,7 @@
                     "type": "Broad",
                     "items": [
                         {
+                            "id": "survival-training",
                             "skill": "Survival training",
                             "attribute": "CON",
                             "url": "/skills/survival#survival-training",
@@ -656,6 +735,7 @@
                             "css_class": ""
                         },
                         {
+                            "id": "adaptability",
                             "skill": "Adaptability",
                             "attribute": "CON",
                             "url": "/skills/survival#adaptability",
@@ -664,6 +744,7 @@
                             "css_class": ""
                         },
                         {
+                            "id": "trailblazing",
                             "skill": "Trailblazing",
                             "attribute": "CON",
                             "url": "/skills/survival#trailblazing",
@@ -676,10 +757,12 @@
             ]
         },
         {
+            "id": "social",
             "skill": "Social",
             "type": "Category",
             "items": [
                 {
+                    "id": "business",
                     "skill": "Business",
                     "attribute": "INT",
                     "url": "/skills/business",
@@ -687,6 +770,7 @@
                     "type": "Broad",
                     "items": [
                         {
+                            "id": "corporate",
                             "skill": "Corporate",
                             "attribute": "INT",
                             "url": "/skills/business#corporate",
@@ -695,6 +779,7 @@
                             "css_class": ""
                         },
                         {
+                            "id": "illicit-business",
                             "skill": "Illicit business",
                             "attribute": "INT",
                             "url": "/skills/business#illicit-business",
@@ -703,6 +788,7 @@
                             "css_class": ""
                         },
                         {
+                            "id": "small-business",
                             "skill": "Small business",
                             "attribute": "INT",
                             "url": "/skills/business#small-business",
@@ -713,6 +799,7 @@
                     ]
                 },
                 {
+                    "id": "covert-ops",
                     "skill": "Covert Ops",
                     "attribute": "DEX",
                     "url": "/skills/covert-ops",
@@ -720,6 +807,7 @@
                     "type": "Broad",
                     "items": [
                         {
+                            "id": "conceal",
                             "skill": "Conceal",
                             "attribute": "DEX",
                             "url": "/skills/covert-ops#conceal",
@@ -728,6 +816,7 @@
                             "css_class": ""
                         },
                         {
+                            "id": "disguise",
                             "skill": "Disguise",
                             "attribute": "CHA",
                             "url": "/skills/covert-ops#disguise",
@@ -736,6 +825,7 @@
                             "css_class": ""
                         },
                         {
+                            "id": "pickpocket",
                             "skill": "Pickpocket",
                             "attribute": "DEX",
                             "url": "/skills/covert-ops#pickpocket",
@@ -744,6 +834,7 @@
                             "css_class": ""
                         },
                         {
+                            "id": "stealth",
                             "skill": "Stealth",
                             "attribute": "DEX",
                             "url": "/skills/covert-ops#stealth",
@@ -754,6 +845,7 @@
                     ]
                 },
                 {
+                    "id": "culture",
                     "skill": "Culture",
                     "attribute": "PER",
                     "url": "/skills/culture",
@@ -761,6 +853,7 @@
                     "type": "Broad",
                     "items": [
                         {
+                            "id": "etiquette",
                             "skill": "Etiquette",
                             "attribute": "PER",
                             "url": "/skills/culture#etiquette",
@@ -769,6 +862,7 @@
                             "css_class": "trained-only"
                         },
                         {
+                            "id": "diplomacy",
                             "skill": "Diplomacy",
                             "attribute": "PER",
                             "url": "/skills/culture#diplomacy",
@@ -777,6 +871,7 @@
                             "css_class": ""
                         },
                         {
+                            "id": "first-encounter",
                             "skill": "First Encounter",
                             "attribute": "PER",
                             "url": "/skills/culture#first-encounter",
@@ -787,6 +882,7 @@
                     ]
                 },
                 {
+                    "id": "deception",
                     "skill": "Deception",
                     "attribute": "PER",
                     "url": "/skills/deception",
@@ -794,6 +890,7 @@
                     "type": "Broad",
                     "items": [
                         {
+                            "id": "bluff",
                             "skill": "Bluff",
                             "attribute": "PER",
                             "url": "/skills/deception#bluff",
@@ -802,6 +899,7 @@
                             "css_class": ""
                         },
                         {
+                            "id": "bribe",
                             "skill": "Bribe",
                             "attribute": "PER",
                             "url": "/skills/deception#bribe",
@@ -810,6 +908,7 @@
                             "css_class": ""
                         },
                         {
+                            "id": "gamble-logic-games",
                             "skill": "Gamble-Logic-Games",
                             "attribute": "INT",
                             "url": "/skills/deception#gamble-logic-games",
@@ -818,6 +917,7 @@
                             "css_class": ""
                         },
                         {
+                            "id": "gamble-nerve-games",
                             "skill": "Gamble-Nerve-Games",
                             "attribute": "PER",
                             "url": "/skills/deception#gamble-nerve-games",
@@ -828,6 +928,7 @@
                     ]
                 },
                 {
+                    "id": "interaction",
                     "skill": "Interaction",
                     "attribute": "PER",
                     "url": "/skills/interaction",
@@ -835,6 +936,7 @@
                     "type": "Broad",
                     "items": [
                         {
+                            "id": "bargain",
                             "skill": "Bargain",
                             "attribute": "PER",
                             "url": "/skills/interaction#bargain",
@@ -843,6 +945,7 @@
                             "css_class": ""
                         },
                         {
+                            "id": "charm",
                             "skill": "Charm",
                             "attribute": "PER",
                             "url": "/skills/interaction#charm",
@@ -851,6 +954,7 @@
                             "css_class": ""
                         },
                         {
+                            "id": "interview",
                             "skill": "Interview",
                             "attribute": "PER",
                             "url": "/skills/interaction#interview",
@@ -859,6 +963,7 @@
                             "css_class": ""
                         },
                         {
+                            "id": "intimidate",
                             "skill": "Intimidate",
                             "attribute": "PER",
                             "url": "/skills/interaction#intimidate",
@@ -867,6 +972,7 @@
                             "css_class": ""
                         },
                         {
+                            "id": "seduce",
                             "skill": "Seduce",
                             "attribute": "PER",
                             "url": "/skills/interaction#seduce",
@@ -875,6 +981,7 @@
                             "css_class": ""
                         },
                         {
+                            "id": "taunt",
                             "skill": "Taunt",
                             "attribute": "PER",
                             "url": "/skills/interaction#taunt",
@@ -885,6 +992,7 @@
                     ]
                 },
                 {
+                    "id": "investigate",
                     "skill": "Investigate",
                     "attribute": "WIL",
                     "url": "/skills/investigate",
@@ -892,6 +1000,7 @@
                     "type": "Broad",
                     "items": [
                         {
+                            "id": "interrogate",
                             "skill": "Interrogate",
                             "attribute": "WIL",
                             "url": "/skills/investigate#interrogate",
@@ -900,6 +1009,7 @@
                             "css_class": ""
                         },
                         {
+                            "id": "search",
                             "skill": "Search",
                             "attribute": "WIL",
                             "url": "/skills/investigate#search",
@@ -908,6 +1018,7 @@
                             "css_class": ""
                         },
                         {
+                            "id": "track",
                             "skill": "Track",
                             "attribute": "WIL",
                             "url": "/skills/investigate#track",
@@ -918,6 +1029,7 @@
                     ]
                 },
                 {
+                    "id": "law",
                     "skill": "Law",
                     "attribute": "INT",
                     "url": "/skills/law",
@@ -925,6 +1037,7 @@
                     "type": "Broad",
                     "items": [
                         {
+                            "id": "court-procedures",
                             "skill": "Court procedures",
                             "attribute": "INT",
                             "url": "/skills/law#court-procedures",
@@ -933,6 +1046,7 @@
                             "css_class": ""
                         },
                         {
+                            "id": "law-enforcement-procedures",
                             "skill": "Law enforcement procedures",
                             "attribute": "INT",
                             "url": "/skills/law#law-enforcement-procedures",
@@ -941,6 +1055,7 @@
                             "css_class": ""
                         },
                         {
+                            "id": "law-specific-skill",
                             "skill": "Law, specific skill",
                             "attribute": "INT",
                             "url": "/skills/law#law-specific-skill",
@@ -949,6 +1064,7 @@
                             "css_class": "trained-only"
                         },
                         {
+                            "id": "psionics",
                             "skill": "Psionics",
                             "attribute": "INT",
                             "url": "/skills/law#psionics",
@@ -959,6 +1075,7 @@
                     ]
                 },
                 {
+                    "id": "leadership",
                     "skill": "Leadership",
                     "attribute": "PER",
                     "url": "/skills/leadership",
@@ -966,6 +1083,7 @@
                     "type": "Broad",
                     "items": [
                         {
+                            "id": "command",
                             "skill": "Command",
                             "attribute": "PER",
                             "url": "/skills/leadership#command",
@@ -974,6 +1092,7 @@
                             "css_class": ""
                         },
                         {
+                            "id": "inspire",
                             "skill": "Inspire",
                             "attribute": "PER",
                             "url": "/skills/leadership#inspire",
@@ -984,6 +1103,7 @@
                     ]
                 },
                 {
+                    "id": "street-smart",
                     "skill": "Street Smart",
                     "attribute": "WIL",
                     "url": "/skills/street-smart",
@@ -991,6 +1111,7 @@
                     "type": "Broad",
                     "items": [
                         {
+                            "id": "street-knowledge",
                             "skill": "Street Knowledge",
                             "attribute": "WIL",
                             "url": "/skills/street-smart#street-knowledge",
@@ -999,6 +1120,7 @@
                             "css_class": ""
                         },
                         {
+                            "id": "criminal-elements",
                             "skill": "Criminal elements",
                             "attribute": "WIL",
                             "url": "/skills/street-smart#criminal-elements",
@@ -1011,10 +1133,12 @@
             ]
         },
         {
+            "id": "technical",
             "skill": "Technical",
             "type": "Category",
             "items": [
                 {
+                    "id": "administration",
                     "skill": "Administration",
                     "attribute": "WIL",
                     "url": "/skills/administration",
@@ -1022,6 +1146,7 @@
                     "type": "Broad",
                     "items": [
                         {
+                            "id": "bureaucracy",
                             "skill": "Bureaucracy",
                             "attribute": "WIL",
                             "url": "/skills/administration#bureaucracy",
@@ -1030,6 +1155,7 @@
                             "css_class": ""
                         },
                         {
+                            "id": "management",
                             "skill": "Management",
                             "attribute": "WIL",
                             "url": "/skills/administration#management",
@@ -1040,6 +1166,7 @@
                     ]
                 },
                 {
+                    "id": "computer-science",
                     "skill": "Computer Science",
                     "attribute": "INT",
                     "url": "/skills/computer-science",
@@ -1047,6 +1174,7 @@
                     "type": "Broad",
                     "items": [
                         {
+                            "id": "hacking",
                             "skill": "Hacking",
                             "attribute": "INT",
                             "url": "/skills/computer-science#hacking",
@@ -1055,6 +1183,7 @@
                             "css_class": "trained-only"
                         },
                         {
+                            "id": "hardware",
                             "skill": "Hardware",
                             "attribute": "INT",
                             "url": "/skills/computer-science#hardware",
@@ -1063,6 +1192,7 @@
                             "css_class": ""
                         },
                         {
+                            "id": "programming",
                             "skill": "Programming",
                             "attribute": "INT",
                             "url": "/skills/computer-science#programming",
@@ -1073,6 +1203,7 @@
                     ]
                 },
                 {
+                    "id": "demolitions",
                     "skill": "Demolitions",
                     "attribute": "WIL",
                     "url": "/skills/demolitions",
@@ -1080,6 +1211,7 @@
                     "type": "Broad",
                     "items": [
                         {
+                            "id": "disarm",
                             "skill": "Disarm",
                             "attribute": "WIL",
                             "url": "/skills/demolitions#disarm",
@@ -1088,6 +1220,7 @@
                             "css_class": ""
                         },
                         {
+                            "id": "scratch-built-explosives",
                             "skill": "Scratch-Built Explosives",
                             "attribute": "WIL",
                             "url": "/skills/demolitions#scratch-built-explosives",
@@ -1096,6 +1229,7 @@
                             "css_class": "trained-only"
                         },
                         {
+                            "id": "set-explosives",
                             "skill": "Set explosives",
                             "attribute": "WIL",
                             "url": "/skills/demolitions#set-explosives",
@@ -1106,6 +1240,7 @@
                     ]
                 },
                 {
+                    "id": "knowledge",
                     "skill": "Knowledge",
                     "attribute": "INT",
                     "url": "/skills/knowledge",
@@ -1113,6 +1248,7 @@
                     "type": "Broad",
                     "items": [
                         {
+                            "id": "language-specific-skill",
                             "skill": "Language, Specific Skill",
                             "attribute": "INT",
                             "url": "/skills/knowledge#language-specific-skill",
@@ -1121,6 +1257,7 @@
                             "css_class": "trained-only"
                         },
                         {
+                            "id": "psionics",
                             "skill": "Psionics",
                             "attribute": "INT",
                             "url": "/skills/knowledge#psionics",
@@ -1129,6 +1266,7 @@
                             "css_class": "trained-only"
                         },
                         {
+                            "id": "computer-operation",
                             "skill": "Computer Operation",
                             "attribute": "INT",
                             "url": "/skills/knowledge#computer-operation",
@@ -1137,6 +1275,7 @@
                             "css_class": "trained-only"
                         },
                         {
+                            "id": "deduce",
                             "skill": "Deduce",
                             "attribute": "INT",
                             "url": "/skills/knowledge#deduce",
@@ -1145,6 +1284,7 @@
                             "css_class": ""
                         },
                         {
+                            "id": "first-aid",
                             "skill": "First Aid",
                             "attribute": "INT",
                             "url": "/skills/knowledge#first-aid",
@@ -1153,6 +1293,7 @@
                             "css_class": "trained-only"
                         },
                         {
+                            "id": "research",
                             "skill": "Research",
                             "attribute": "INT",
                             "url": "/skills/knowledge#research",
@@ -1163,6 +1304,7 @@
                     ]
                 },
                 {
+                    "id": "life-science",
                     "skill": "Life Science",
                     "attribute": "INT",
                     "url": "/skills/life-science",
@@ -1170,6 +1312,7 @@
                     "type": "Broad",
                     "items": [
                         {
+                            "id": "psionics",
                             "skill": "Psionics",
                             "attribute": "INT",
                             "url": "/skills/life-science#psionics",
@@ -1178,6 +1321,7 @@
                             "css_class": "trained-only"
                         },
                         {
+                            "id": "biology",
                             "skill": "Biology",
                             "attribute": "INT",
                             "url": "/skills/life-science#biology",
@@ -1186,6 +1330,7 @@
                             "css_class": ""
                         },
                         {
+                            "id": "botany",
                             "skill": "Botany",
                             "attribute": "INT",
                             "url": "/skills/life-science#botany",
@@ -1194,6 +1339,7 @@
                             "css_class": ""
                         },
                         {
+                            "id": "genetics",
                             "skill": "Genetics",
                             "attribute": "INT",
                             "url": "/skills/life-science#genetics",
@@ -1202,6 +1348,7 @@
                             "css_class": ""
                         },
                         {
+                            "id": "zoology",
                             "skill": "Zoology",
                             "attribute": "INT",
                             "url": "/skills/life-science#zoology",
@@ -1212,6 +1359,7 @@
                     ]
                 },
                 {
+                    "id": "medical-science",
                     "skill": "Medical Science",
                     "attribute": "INT",
                     "url": "/skills/medical-science",
@@ -1219,6 +1367,7 @@
                     "type": "Broad",
                     "items": [
                         {
+                            "id": "forensics",
                             "skill": "Forensics",
                             "attribute": "INT",
                             "url": "/skills/medical-science#forensics",
@@ -1227,6 +1376,7 @@
                             "css_class": ""
                         },
                         {
+                            "id": "medical-knowledge",
                             "skill": "Medical Knowledge",
                             "attribute": "INT",
                             "url": "/skills/medical-science#medical-knowledge",
@@ -1235,6 +1385,7 @@
                             "css_class": ""
                         },
                         {
+                            "id": "psychology",
                             "skill": "Psychology",
                             "attribute": "INT",
                             "url": "/skills/medical-science#psychology",
@@ -1243,6 +1394,7 @@
                             "css_class": ""
                         },
                         {
+                            "id": "surgery",
                             "skill": "Surgery",
                             "attribute": "INT",
                             "url": "/skills/medical-science#surgery",
@@ -1251,6 +1403,7 @@
                             "css_class": "trained-only"
                         },
                         {
+                            "id": "treatment",
                             "skill": "Treatment",
                             "attribute": "INT",
                             "url": "/skills/medical-science#treatment",
@@ -1259,6 +1412,7 @@
                             "css_class": "trained-only"
                         },
                         {
+                            "id": "xenomedicine",
                             "skill": "Xenomedicine",
                             "attribute": "INT",
                             "url": "/skills/medical-science#xenomedicine",
@@ -1267,6 +1421,7 @@
                             "css_class": "trained-only"
                         },
                         {
+                            "id": "forensic-science",
                             "skill": "Forensic Science",
                             "attribute": "WIL",
                             "url": "/skills/medical-science#forensic-science",
@@ -1277,6 +1432,7 @@
                     ]
                 },
                 {
+                    "id": "system-operation",
                     "skill": "System Operation",
                     "attribute": "INT",
                     "url": "/skills/system-operation",
@@ -1284,6 +1440,7 @@
                     "type": "Broad",
                     "items": [
                         {
+                            "id": "communications",
                             "skill": "Communications",
                             "attribute": "INT",
                             "url": "/skills/system-operation#communications",
@@ -1292,6 +1449,7 @@
                             "css_class": ""
                         },
                         {
+                            "id": "defenses",
                             "skill": "Defenses",
                             "attribute": "INT",
                             "url": "/skills/system-operation#defenses",
@@ -1300,6 +1458,7 @@
                             "css_class": ""
                         },
                         {
+                            "id": "engineering",
                             "skill": "Engineering",
                             "attribute": "INT",
                             "url": "/skills/system-operation#engineering",
@@ -1308,6 +1467,7 @@
                             "css_class": ""
                         },
                         {
+                            "id": "sensors",
                             "skill": "Sensors",
                             "attribute": "INT",
                             "url": "/skills/system-operation#sensors",
@@ -1316,6 +1476,7 @@
                             "css_class": ""
                         },
                         {
+                            "id": "weapons",
                             "skill": "Weapons",
                             "attribute": "INT",
                             "url": "/skills/system-operation#weapons",
@@ -1326,6 +1487,7 @@
                     ]
                 },
                 {
+                    "id": "technical-science",
                     "skill": "Technical Science",
                     "attribute": "INT",
                     "url": "/skills/technical-science",
@@ -1333,6 +1495,7 @@
                     "type": "Broad",
                     "items": [
                         {
+                            "id": "technical-knowledge",
                             "skill": "Technical Knowledge",
                             "attribute": "INT",
                             "url": "/skills/technical-science#technical-knowledge",
@@ -1341,6 +1504,7 @@
                             "css_class": ""
                         },
                         {
+                            "id": "invention",
                             "skill": "Invention",
                             "attribute": "INT",
                             "url": "/skills/technical-science#invention",
@@ -1349,6 +1513,7 @@
                             "css_class": ""
                         },
                         {
+                            "id": "repair",
                             "skill": "Repair",
                             "attribute": "INT",
                             "url": "/skills/technical-science#repair",
@@ -1357,6 +1522,7 @@
                             "css_class": ""
                         },
                         {
+                            "id": "juryrig",
                             "skill": "Juryrig",
                             "attribute": "INT",
                             "url": "/skills/technical-science#juryrig",
@@ -1367,6 +1533,7 @@
                     ]
                 },
                 {
+                    "id": "vehicle-operation",
                     "skill": "Vehicle Operation",
                     "attribute": "DEX",
                     "url": "/skills/vehicle-operation",
@@ -1374,6 +1541,7 @@
                     "type": "Broad",
                     "items": [
                         {
+                            "id": "air-vehicle",
                             "skill": "Air vehicle",
                             "attribute": "DEX",
                             "url": "/skills/vehicle-operation#air-vehicle",
@@ -1382,6 +1550,7 @@
                             "css_class": "trained-only"
                         },
                         {
+                            "id": "land-vehicle",
                             "skill": "Land vehicle",
                             "attribute": "DEX",
                             "url": "/skills/vehicle-operation#land-vehicle",
@@ -1390,6 +1559,7 @@
                             "css_class": ""
                         },
                         {
+                            "id": "space-vehicle",
                             "skill": "Space vehicle",
                             "attribute": "DEX",
                             "url": "/skills/vehicle-operation#space-vehicle",
@@ -1398,6 +1568,7 @@
                             "css_class": "trained-only"
                         },
                         {
+                            "id": "water-vehicle",
                             "skill": "Water vehicle",
                             "attribute": "DEX",
                             "url": "/skills/vehicle-operation#water-vehicle",
