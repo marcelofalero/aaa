@@ -292,12 +292,7 @@
           <div class="cb-budget-item" style="border-color: #a6c12e; background: rgba(20, 50, 20, 0.4);">
             <span class="cb-budget-label" style="color: #a6c12e;">{{ if eq .Language.Lang "es" }}Puntos Avance / XP Ganados{{ else }}Earned Advancement / XP{{ end }}</span>
             <div style="display: flex; gap: 0.3rem; align-items: center; width: 100%; margin-top: 0.25rem;">
-              <input type="number" id="cb-sidebar-input-earned-ap" class="cb-input" min="0" value="0" style="padding: 0.25rem 0.4rem; font-size: 0.9rem; font-weight: bold; width: 60px; text-align: center;">
-              <div style="display: flex; gap: 0.2rem; flex: 1;">
-                <button type="button" class="cb-btn cb-btn-secondary" id="cb-sidebar-btn-add-1ap" style="padding: 0.25rem 0.35rem; font-size: 0.6rem;">+1</button>
-                <button type="button" class="cb-btn cb-btn-secondary" id="cb-sidebar-btn-add-5ap" style="padding: 0.25rem 0.35rem; font-size: 0.6rem;">+5</button>
-                <button type="button" class="cb-btn cb-btn-secondary" id="cb-sidebar-btn-add-10ap" style="padding: 0.25rem 0.35rem; font-size: 0.6rem;">+10</button>
-              </div>
+              <input type="number" id="cb-sidebar-input-earned-ap" class="cb-input" min="0" value="0" style="padding: 0.25rem 0.4rem; font-size: 0.9rem; font-weight: bold; width: 100%; text-align: center;">
             </div>
           </div>
 
@@ -309,6 +304,21 @@
           <div class="cb-budget-item">
             <span class="cb-budget-label">{{ if eq .Language.Lang "es" }}Título & Límite Rango{{ else }}Rank Title & Max Rank{{ end }}</span>
             <span class="cb-budget-val" id="cb-val-sidebar-rank-title" style="font-size: 0.82rem; color: #a6c12e;">Novato (Máx: 5)</span>
+          </div>
+
+          <div class="cb-budget-item">
+            <span class="cb-budget-label">{{ if eq .Language.Lang "es" }}Huecos de Ventaja (Post-Creación){{ else }}Perk Slots (Post-Creation){{ end }}</span>
+            <span class="cb-budget-val" id="cb-val-sidebar-perk-slots" style="font-size: 0.82rem; color: #38bdf8;">0 / 0</span>
+          </div>
+
+          <div class="cb-budget-item">
+            <span class="cb-budget-label">{{ if eq .Language.Lang "es" }}Pt. Característica de Avance{{ else }}Advancement Ability Points{{ end }}</span>
+            <span class="cb-budget-val" id="cb-val-sidebar-ability-slots" style="font-size: 0.82rem; color: #facc15;">0 / 0</span>
+          </div>
+
+          <div class="cb-budget-item">
+            <span class="cb-budget-label">{{ if eq .Language.Lang "es" }}Reducciones de Defecto (Post-Creación){{ else }}Flaw Reductions (Post-Creation){{ end }}</span>
+            <span class="cb-budget-val" id="cb-val-sidebar-flaw-slots" style="font-size: 0.82rem; color: #f43f5e;">0 / 0</span>
           </div>
         </div>
 

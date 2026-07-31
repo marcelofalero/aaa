@@ -21,6 +21,7 @@
                 "name": "Backgrounds",
                 "items": [
                     {
+                        "id": "academy-graduate",
                         "name": "The Academy Graduate",
                         "summary": "You represent the elite tier of institutional training.",
                         "favored_broad_skill": "",
@@ -34,6 +35,7 @@
                         "tendencies": "**The Officer in Charge:** Assert your rank or authority to take command of a chaotic situation, even when doing so makes you the primary target for enemies or social scrutiny.<br>**The Strategist:** Refuse to deviate from a sophisticated or \"correct\" tactical plan even when a simpler, more \"rugged\" solution is available, prioritizing the doctrine you were taught."
                     },
                     {
+                        "id": "austin-combat-school",
                         "name": "Austin Combat School Graduate",
                         "summary": "A graduate of a premier military academy known for producing disciplined and tactically brilliant soldiers.",
                         "favored_broad_skill": "[Tactics]({{< relref \"/skills/tactics/\" >}})",
@@ -47,6 +49,7 @@
                         "tendencies": ""
                     },
                     {
+                        "id": "bounty-hunter",
                         "name": "The Bounty Hunter",
                         "summary": "The galaxy is vast, but for you, it is just a series of footprints and digital trails.",
                         "favored_broad_skill": "",
@@ -60,6 +63,7 @@
                         "tendencies": "**The Single-Minded:** Pursue a target or a lead into a clearly dangerous or disadvantageous situation instead of choosing a safer, slower path.<br>**The Professional:** Honor the specific letter of a contract even when offered a more profitable \"side deal\" or an easier moral out."
                     },
                     {
+                        "id": "breacher",
                         "name": "The Breacher",
                         "summary": "Specialist in bypassing physical barriers and initiating tactical entries.",
                         "favored_broad_skill": "",
@@ -73,6 +77,7 @@
                         "tendencies": ""
                     },
                     {
+                        "id": "certified-psychic",
                         "name": "The Certified Psychic",
                         "summary": "You are an autonomous legal entity, granted the rare authority to use psionic powers openly.",
                         "favored_broad_skill": "",
@@ -86,6 +91,7 @@
                         "tendencies": "**The Absolute Truth:** Force a harsh or dangerous truth out into the open to maintain your absolute neutrality, even when a polite lie or deception would have made things easier for the party.<br>**The Unwanted Judge:** Complicate a situation by acting on a crime or dark secret you gleaned from someone's mind, using your autonomous authority to intervene when it wasn't your fight."
                     },
                     {
+                        "id": "corporate-enforcer",
                         "name": "The Corporate Enforcer",
                         "summary": "Muscle for megacorporations, specializing in asset protection and dispute resolution.",
                         "favored_broad_skill": "",
@@ -99,6 +105,7 @@
                         "tendencies": ""
                     },
                     {
+                        "id": "criminal-urchin",
                         "name": "The Criminal / Urchin",
                         "summary": "Life on the streets taught you how to survive, but it left you with a name that the authorities won't forget.",
                         "favored_broad_skill": "[Street Smart]({{< relref \"/skills/street-smart/\" >}})",
@@ -112,6 +119,7 @@
                         "tendencies": "**The Opportunist:** Take an unnecessary risk to secure a personal profit or an \"angle.\"<br>**The Paranoiac:** Compromise a plan to ensure you have a clear escape route."
                     },
                     {
+                        "id": "deserter",
                         "name": "The Deserter",
                         "summary": "You are a ghost in the machine.",
                         "favored_broad_skill": "",
@@ -125,6 +133,7 @@
                         "tendencies": "**The Pragmatic Escape:** Abandon a cause when the risks become \"unacceptable\" to ensure your survival.<br>**The Hidden Hand:** Pass up fame or reward to ensure your identity remains undiscovered."
                     },
                     {
+                        "id": "diplomat",
                         "name": "The Diplomat",
                         "summary": "You were raised in the halls of power, where protocol is a weapon and reputation is everything.",
                         "favored_broad_skill": "",
@@ -138,6 +147,7 @@
                         "tendencies": "**The Mediator:** Attempt to resolve a hostile situation through negotiation even when combat is easier.<br>**The Architect:** Delay action to ensure every social variable or consequence is accounted for."
                     },
                     {
+                        "id": "face",
                         "name": "The Face",
                         "summary": "You are a master of the \"hustle.",
                         "favored_broad_skill": "",
@@ -151,6 +161,7 @@
                         "tendencies": "**The Spotlight Seeker:** Intentionally draw attention to yourself in a social setting to create a distraction, even when being inconspicuous is safer.<br>**The Hustler:** Attempt to \"scam\" or talk your way out of a problem or into a restricted area using your personal appeal, even when a more direct (but less elegant) method exists."
                     },
                     {
+                        "id": "field-medic",
                         "name": "The Field Medic",
                         "summary": "Combat-ready healer trained to save lives under fire.",
                         "favored_broad_skill": "",
@@ -164,6 +175,7 @@
                         "tendencies": ""
                     },
                     {
+                        "id": "field-researcher",
                         "name": "The Field Researcher",
                         "summary": "Scientist specialized in cataloging and analyzing data in dangerous environments.",
                         "favored_broad_skill": "",
@@ -177,6 +189,7 @@
                         "tendencies": ""
                     },
                     {
+                        "id": "fixer",
                         "name": "The Fixer",
                         "summary": "You know everyone, you owe everyone, and you're the only one who can get the job done.",
                         "favored_broad_skill": "",
@@ -190,6 +203,7 @@
                         "tendencies": "**The Negotiator:** Solve a conflict by brokering a deal that moves the plot forward.<br>**The Asset Manager:** Risk an objective to preserve a useful contact or piece of equipment."
                     },
                     {
+                        "id": "fleet-officer",
                         "name": "The Fleet Officer",
                         "summary": "While ground forces fight for meters, you fight for systems.",
                         "favored_broad_skill": "",
@@ -203,6 +217,7 @@
                         "tendencies": "**The Ship’s Soul:** Prioritize the structural integrity and long-term maintenance of the vessel over personal equipment or mission objectives.<br>**The Protocol Purist:** Insist on following standard naval communications and engagement protocols even when operating in the \"wild\" or with civilian crews, potentially causing social friction."
                     },
                     {
+                        "id": "freelance-captain",
                         "name": "The Freelance Captain",
                         "summary": "Independent starship operator surviving on business acumen and pilot skill.",
                         "favored_broad_skill": "",
@@ -216,6 +231,7 @@
                         "tendencies": ""
                     },
                     {
+                        "id": "ghost-agent",
                         "name": "The Ghost Agent",
                         "summary": "Deep-cover operative specialized in non-combat subversion and infiltration.",
                         "favored_broad_skill": "",
@@ -229,6 +245,7 @@
                         "tendencies": ""
                     },
                     {
+                        "id": "grifter",
                         "name": "The Grifter",
                         "summary": "Master of deception and social engineering, flourishing on the greed of others.",
                         "favored_broad_skill": "",
@@ -242,6 +259,7 @@
                         "tendencies": ""
                     },
                     {
+                        "id": "hacker",
                         "name": "The Hacker",
                         "summary": "You grew up in the digital shadows, viewing the physical world as a secondary reality.",
                         "favored_broad_skill": "",
@@ -255,6 +273,7 @@
                         "tendencies": "**The Digital Ghost:** Prioritize erasing your digital footprint or stealing secondary data over the physical safety or immediate tactical needs of the party.<br>**The Curious Intruder:** Cannot resist poking into a secure system or locked file even when it has nothing to do with the current mission and risks triggering alarms."
                     },
                     {
+                        "id": "innovator",
                         "name": "The Innovator",
                         "summary": "Technical mind finding non-standard solutions to impossible problems.",
                         "favored_broad_skill": "",
@@ -268,6 +287,7 @@
                         "tendencies": ""
                     },
                     {
+                        "id": "mercenary",
                         "name": "Mercenary",
                         "summary": "A survivalist combatant who has seen the grim realities of the battlefield.",
                         "favored_broad_skill": "[Survival]({{< relref \"/skills/survival/\" >}})",
@@ -281,6 +301,7 @@
                         "tendencies": ""
                     },
                     {
+                        "id": "military-brat",
                         "name": "The Military Brat",
                         "summary": "You grew up in the shadow of the service.",
                         "favored_broad_skill": "",
@@ -294,6 +315,7 @@
                         "tendencies": "**The Order-Follower:** Adhere to a plan or instruction even when circumstances have shifted.<br>**The Protector:** Put yourself at risk to cover an ally's flank."
                     },
                     {
+                        "id": "operative",
                         "name": "The Operative",
                         "summary": "Paramilitary professional specialized in direct action and tactical missions.",
                         "favored_broad_skill": "",
@@ -307,6 +329,7 @@
                         "tendencies": ""
                     },
                     {
+                        "id": "orlamu-clergy",
                         "name": "Orlamu Clergy Member",
                         "summary": "You were raised in the serene temples of the Fraal, studying the connection between the mind and the cosmos.",
                         "favored_broad_skill": "[Resolve]({{< relref \"/skills/resolve/\" >}})",
@@ -320,6 +343,7 @@
                         "tendencies": ""
                     },
                     {
+                        "id": "outcast",
                         "name": "The Outcast",
                         "summary": "You come from a place where technology is magic and survival is the only law.",
                         "favored_broad_skill": "",
@@ -333,6 +357,7 @@
                         "tendencies": "**The Traditionalist:** Solve a modern problem using an ancient, low-tech, or ritualistic method.<br>**The Loner:** Take a disadvantage to handle a task entirely on your own, refusing the help of \"soft\" technology or teammates."
                     },
                     {
+                        "id": "paramilitary-officer",
                         "name": "The Paramilitary Officer",
                         "summary": "You didn't train at a prestigious academy or fight under a planetary flag.",
                         "favored_broad_skill": "",
@@ -346,6 +371,7 @@
                         "tendencies": "**The Mercenary:** Demand renegotiation, hazard pay, or a clear tactical advantage before committing to a dangerous firefight that wasn't in the original plan.<br>**The Pragmatist:** Disregard traditional rules of engagement or \"honorable\" doctrine in favor of traps, sabotage, or overwhelming disproportionate force."
                     },
                     {
+                        "id": "private-eye",
                         "name": "The Private Eye",
                         "summary": "Hardboiled urban investigator uncovering hidden truths in dark corners.",
                         "favored_broad_skill": "",
@@ -359,6 +385,7 @@
                         "tendencies": ""
                     },
                     {
+                        "id": "roughneck",
                         "name": "The Roughneck",
                         "summary": "Industrial frontier worker accustomed to heavy machinery and harsh environments.",
                         "favored_broad_skill": "",
@@ -372,6 +399,7 @@
                         "tendencies": ""
                     },
                     {
+                        "id": "sapper",
                         "name": "The Sapper",
                         "summary": "Demolitions expert specialized in structural destruction and tactical entry.",
                         "favored_broad_skill": "",
@@ -385,6 +413,7 @@
                         "tendencies": ""
                     },
                     {
+                        "id": "scavenger",
                         "name": "The Scavenger",
                         "summary": "Fringe survivor finding and fixing value in planetary junk and derelicts.",
                         "favored_broad_skill": "",
@@ -398,6 +427,7 @@
                         "tendencies": ""
                     },
                     {
+                        "id": "ship-owner",
                         "name": "The Ship Owner",
                         "summary": "You hold the keys to the most valuable asset in the galaxy: a starship.",
                         "favored_broad_skill": "",
@@ -411,6 +441,7 @@
                         "tendencies": "**The Bottom Line:** Make a tactical or narrative decision strictly based on financial gain or the physical preservation of your ship, ignoring moral pleas or personal risks.<br>**My Ship, My Rules:** Assert your absolute authority over a situation or passenger while aboard your vessel, even when deferring to an ally or expert would be significantly safer."
                     },
                     {
+                        "id": "smuggler",
                         "name": "The Smuggler",
                         "summary": "You make your living in the gray areas between borders and laws.",
                         "favored_broad_skill": "",
@@ -424,6 +455,7 @@
                         "tendencies": "**The Contrabandist:** Take a narrative or tactical risk to sneak something illegal or restricted into a secure area, even if the current mission doesn't strictly require it.<br>**The Burner:** Dump valuable cargo, abandon a lucrative deal, or cut ties with a useful contact at the first sign of official scrutiny to ensure your own freedom."
                     },
                     {
+                        "id": "subverter",
                         "name": "The Subverter",
                         "summary": "You use your art not for the galleries, but for the streets.",
                         "favored_broad_skill": "[Creativity]({{< relref \"/skills/creativity/\" >}})",
@@ -437,6 +469,7 @@
                         "tendencies": "**The Calling Card:** Leave a recognizable piece of your art or propaganda at the scene of a mission, intentionally drawing attention to yourself and risking immediate discovery.<br>**The Agitator:** Openly provoke authority figures or corporate security, using the resulting chaos to make a political point even if it jeopardizes the current operation."
                     },
                     {
+                        "id": "test-subject",
                         "name": "The Test Subject",
                         "summary": "Survivor of experimental laboratory procedures with unique\nphysiological insights.",
                         "favored_broad_skill": "",
@@ -450,6 +483,7 @@
                         "tendencies": ""
                     },
                     {
+                        "id": "virtuoso",
                         "name": "The Virtuoso",
                         "summary": "You are a master of aesthetics and performance.",
                         "favored_broad_skill": "[Creativity]({{< relref \"/skills/creativity/\" >}})",
@@ -463,6 +497,7 @@
                         "tendencies": "**The Aesthete:** Choose a course of action based purely on its aesthetic appeal or dramatic flair rather than its tactical soundness or efficiency.<br>**The Diva:** Refuse to cooperate or compromise with the party until your specific, often petty, demands regarding comfort or artistic integrity are met."
                     },
                     {
+                        "id": "wage-slave",
                         "name": "The Wage Slave",
                         "summary": "Bureaucratic survivor who knows how to navigate the complex red tape of the economy.",
                         "favored_broad_skill": "",
@@ -476,6 +511,7 @@
                         "tendencies": ""
                     },
                     {
+                        "id": "war-veteran",
                         "name": "The War Veteran",
                         "summary": "You are defined by a single, highly publicized conflict.",
                         "favored_broad_skill": "",
@@ -489,6 +525,7 @@
                         "tendencies": "**The Living Legend:** Voluntarily accept a significant disadvantage\nor take the brunt of an attack to protect civilians or allies,\ndriven by the need to live up to your impossible reputation.\n<br>**The Ghost of the Past:** React to a current situation using\nthe outdated or traumatic context of your past war, complicating a\nsimple negotiation or infiltration by treating it like a\nbattlefield."
                     },
                     {
+                        "id": "whistleblower",
                         "name": "The Whistleblower",
                         "summary": "You are a relentless investigative journalist or freelance whistleblower.",
                         "favored_broad_skill": "[Creativity]({{< relref \"/skills/creativity/\" >}})",
@@ -502,6 +539,7 @@
                         "tendencies": "**The Exposé:** Prioritize documenting a crime, conspiracy, or event over stopping it, putting yourself in tactical danger to ensure the footage or story survives.<br>**The Hard Question:** Aggressively interrogate or provoke a powerful individual in a social setting, destroying diplomatic progress in order to gauge their reaction."
                     },
                     {
+                        "id": "war-hero",
                         "name": "The War Hero",
                         "summary": "You are defined by a single, highly publicized conflict.",
                         "favored_broad_skill": "",

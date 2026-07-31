@@ -36,6 +36,7 @@
                 "name": "Ventajas",
                 "items": [
                     {
+                        "id": "alien-artifact",
                         "name": "Artefacto alienígena",
                         "cost": "8",
                         "ability": "—",
@@ -44,6 +45,7 @@
                         "url": "/es/perks_flaws/perks/alien-artifact/"
                     },
                     {
+                        "id": "ambidextrous",
                         "name": "Ambidextro",
                         "cost": "4",
                         "ability": "DES",
@@ -52,6 +54,7 @@
                         "url": "/es/perks_flaws/perks/ambidextrous/"
                     },
                     {
+                        "id": "animal-friend",
                         "name": "Amigo animal",
                         "cost": "4",
                         "ability": "VOL",
@@ -60,6 +63,7 @@
                         "url": "/es/perks_flaws/perks/animal-friend/"
                     },
                     {
+                        "id": "celebrity",
                         "name": "Celebridad",
                         "cost": "3",
                         "ability": "PER",
@@ -68,6 +72,7 @@
                         "url": "/es/perks_flaws/perks/celebrity/"
                     },
                     {
+                        "id": "concentration",
                         "name": "Concentración",
                         "cost": "3",
                         "ability": "INT",
@@ -76,6 +81,7 @@
                         "url": "/es/perks_flaws/perks/concentration/"
                     },
                     {
+                        "id": "danger-sense",
                         "name": "Sentido de peligro",
                         "cost": "4",
                         "ability": "VOL",
@@ -84,6 +90,7 @@
                         "url": "/es/perks_flaws/perks/danger-sense/"
                     },
                     {
+                        "id": "faith",
                         "name": "Fe",
                         "cost": "5",
                         "ability": "VOL",
@@ -92,6 +99,7 @@
                         "url": "/es/perks_flaws/perks/faith/"
                     },
                     {
+                        "id": "filthy-rich",
                         "name": "Asquerosamente rico",
                         "cost": "6",
                         "ability": "PER",
@@ -100,6 +108,7 @@
                         "url": "/es/perks_flaws/perks/filthy-rich/"
                     },
                     {
+                        "id": "fists-of-iron",
                         "name": "Puños de hierro",
                         "cost": "2/5",
                         "ability": "FUE",
@@ -108,6 +117,7 @@
                         "url": "/es/perks_flaws/perks/fists-of-iron/"
                     },
                     {
+                        "id": "fortitude",
                         "name": "Fortaleza",
                         "cost": "4",
                         "ability": "CON",
@@ -116,6 +126,7 @@
                         "url": "/es/perks_flaws/perks/fortitude/"
                     },
                     {
+                        "id": "good-luck",
                         "name": "Buena suerte",
                         "cost": "3",
                         "ability": "VOL",
@@ -124,6 +135,7 @@
                         "url": "/es/perks_flaws/perks/good-luck/"
                     },
                     {
+                        "id": "great-looks",
                         "name": "Gran apariencia",
                         "cost": "3",
                         "ability": "PER",
@@ -132,6 +144,7 @@
                         "url": "/es/perks_flaws/perks/great-looks/"
                     },
                     {
+                        "id": "heightened-ability",
                         "name": "Mayor capacidad",
                         "cost": "10",
                         "ability": "Special",
@@ -140,6 +153,7 @@
                         "url": "/es/perks_flaws/perks/heightened-ability/"
                     },
                     {
+                        "id": "observant",
                         "name": "Observante",
                         "cost": "3",
                         "ability": "VOL",
@@ -148,6 +162,7 @@
                         "url": "/es/perks_flaws/perks/observant/"
                     },
                     {
+                        "id": "photo-memory",
                         "name": "Memoria fotográfica",
                         "cost": "3",
                         "ability": "INT",
@@ -156,6 +171,7 @@
                         "url": "/es/perks_flaws/perks/photo-memory/"
                     },
                     {
+                        "id": "powerful-ally",
                         "name": "Poderoso aliado",
                         "cost": "4",
                         "ability": "PER",
@@ -164,6 +180,7 @@
                         "url": "/es/perks_flaws/perks/powerful-ally/"
                     },
                     {
+                        "id": "psionic-awareness",
                         "name": "Conciencia psiónica",
                         "cost": "3",
                         "ability": "INT",
@@ -172,6 +189,7 @@
                         "url": "/es/perks_flaws/perks/psionic-awareness/"
                     },
                     {
+                        "id": "reflexes",
                         "name": "Reflejos",
                         "cost": "4",
                         "ability": "DES",
@@ -180,6 +198,7 @@
                         "url": "/es/perks_flaws/perks/reflexes/"
                     },
                     {
+                        "id": "reputation",
                         "name": "Reputación",
                         "cost": "3",
                         "ability": "VOL",
@@ -188,6 +207,7 @@
                         "url": "/es/perks_flaws/perks/reputation/"
                     },
                     {
+                        "id": "specialty-skill-focus-skill",
                         "name": "Enfoque en Habilidad de Especialidad (Habilidad)",
                         "cost": "5",
                         "ability": "—",
@@ -196,6 +216,7 @@
                         "url": "/es/perks_flaws/perks/specialty-skill-focus-skill/"
                     },
                     {
+                        "id": "tough-as-nails",
                         "name": "Duro como las uñas",
                         "cost": "4",
                         "ability": "FUE",
@@ -204,6 +225,7 @@
                         "url": "/es/perks_flaws/perks/tough-as-nails/"
                     },
                     {
+                        "id": "vigor",
                         "name": "Vigor",
                         "cost": "2/3/4",
                         "ability": "CON",
@@ -212,6 +234,7 @@
                         "url": "/es/perks_flaws/perks/vigor/"
                     },
                     {
+                        "id": "willpower",
                         "name": "Fuerza de voluntad",
                         "cost": "4",
                         "ability": "VOL",
@@ -220,6 +243,7 @@
                         "url": "/es/perks_flaws/perks/willpower/"
                     },
                     {
+                        "id": "extra-psionic-energy",
                         "name": "Energía Psiónica Extra",
                         "cost": "3",
                         "ability": "VOL",
@@ -228,6 +252,7 @@
                         "url": "/es/perks_flaws/perks/extra-psionic-energy/"
                     },
                     {
+                        "id": "precog",
                         "name": "Precog",
                         "cost": "5",
                         "ability": "—",
@@ -236,6 +261,7 @@
                         "url": "/es/perks_flaws/perks/precog/"
                     },
                     {
+                        "id": "fraal-psionics-schooling",
                         "name": "Escolarización psiónica Fraal",
                         "cost": "5",
                         "ability": "—",
@@ -275,6 +301,7 @@
                 "name": "Defectos",
                 "items": [
                     {
+                        "id": "alien-artifact",
                         "name": "Artefacto alienígena",
                         "bonus_points": "+5",
                         "ability": "-",
@@ -282,6 +309,7 @@
                         "url": "/es/perks_flaws/flaws/alien-artifact/"
                     },
                     {
+                        "id": "bad-luck",
                         "name": "Mala suerte",
                         "bonus_points": "+6",
                         "ability": "VOL",
@@ -289,6 +317,7 @@
                         "url": "/es/perks_flaws/flaws/bad-luck/"
                     },
                     {
+                        "id": "clueless",
                         "name": "Despistado",
                         "bonus_points": "+2/4/6",
                         "ability": "INT",
@@ -296,6 +325,7 @@
                         "url": "/es/perks_flaws/flaws/clueless/"
                     },
                     {
+                        "id": "clumsy",
                         "name": "Torpe",
                         "bonus_points": "+6",
                         "ability": "DES",
@@ -303,6 +333,7 @@
                         "url": "/es/perks_flaws/flaws/clumsy/"
                     },
                     {
+                        "id": "code-of-honor",
                         "name": "Código de honor",
                         "bonus_points": "+3",
                         "ability": "VOL",
@@ -310,6 +341,7 @@
                         "url": "/es/perks_flaws/flaws/code-of-honor/"
                     },
                     {
+                        "id": "delicate",
                         "name": "Delicado",
                         "bonus_points": "+3",
                         "ability": "FUE",
@@ -317,6 +349,7 @@
                         "url": "/es/perks_flaws/flaws/delicate/"
                     },
                     {
+                        "id": "dirt-poor",
                         "name": "Muy pobre",
                         "bonus_points": "+5",
                         "ability": "PER",
@@ -324,6 +357,7 @@
                         "url": "/es/perks_flaws/flaws/dirt-poor/"
                     },
                     {
+                        "id": "forgetful",
                         "name": "Olvidadizo",
                         "bonus_points": "+5",
                         "ability": "INT",
@@ -331,6 +365,7 @@
                         "url": "/es/perks_flaws/flaws/forgetful/"
                     },
                     {
+                        "id": "fragile",
                         "name": "Frágil",
                         "bonus_points": "+3",
                         "ability": "CON",
@@ -338,6 +373,7 @@
                         "url": "/es/perks_flaws/flaws/fragile/"
                     },
                     {
+                        "id": "infamy",
                         "name": "Infamia",
                         "bonus_points": "+2/4/6",
                         "ability": "PER",
@@ -345,6 +381,7 @@
                         "url": "/es/perks_flaws/flaws/infamy/"
                     },
                     {
+                        "id": "oblivious",
                         "name": "Inconsciente de",
                         "bonus_points": "+4",
                         "ability": "VOL",
@@ -352,6 +389,7 @@
                         "url": "/es/perks_flaws/flaws/oblivious/"
                     },
                     {
+                        "id": "obsessed",
                         "name": "Obsesionado",
                         "bonus_points": "+2/4/6",
                         "ability": "INT",
@@ -359,6 +397,7 @@
                         "url": "/es/perks_flaws/flaws/obsessed/"
                     },
                     {
+                        "id": "old-injury",
                         "name": "Vieja herida",
                         "bonus_points": "+2/4/6",
                         "ability": "FUE",
@@ -366,6 +405,7 @@
                         "url": "/es/perks_flaws/flaws/old-injury/"
                     },
                     {
+                        "id": "phobia",
                         "name": "Fobia",
                         "bonus_points": "+2/4/6",
                         "ability": "VOL",
@@ -373,6 +413,7 @@
                         "url": "/es/perks_flaws/flaws/phobia/"
                     },
                     {
+                        "id": "poor-looks",
                         "name": "Mala apariencia",
                         "bonus_points": "+3",
                         "ability": "PER",
@@ -380,6 +421,7 @@
                         "url": "/es/perks_flaws/flaws/poor-looks/"
                     },
                     {
+                        "id": "powerful-enemy",
                         "name": "Enemigo poderoso",
                         "bonus_points": "+2/4/6",
                         "ability": "PER",
@@ -387,6 +429,7 @@
                         "url": "/es/perks_flaws/flaws/powerful-enemy/"
                     },
                     {
+                        "id": "primitive",
                         "name": "Primitivo",
                         "bonus_points": "+2/4/6",
                         "ability": "INT",
@@ -394,6 +437,7 @@
                         "url": "/es/perks_flaws/flaws/primitive/"
                     },
                     {
+                        "id": "slow",
                         "name": "Lento",
                         "bonus_points": "+6",
                         "ability": "DES",
@@ -401,6 +445,7 @@
                         "url": "/es/perks_flaws/flaws/slow/"
                     },
                     {
+                        "id": "spineless",
                         "name": "Sin carácter",
                         "bonus_points": "+2/4/6",
                         "ability": "VOL",
@@ -408,6 +453,7 @@
                         "url": "/es/perks_flaws/flaws/spineless/"
                     },
                     {
+                        "id": "temper",
                         "name": "Temperamento",
                         "bonus_points": "+2/4/6",
                         "ability": "VOL",

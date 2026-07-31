@@ -188,14 +188,15 @@ def parse_yaml_skills(file_path):
             if spec_rb_data:
                 rb = [{'rank': str(b.get('rank')), 'title': b.get('title')} for b in spec_rb_data]
             
-            spec_entry = {'n': spec_name, 'at': spec_attr, 'u': spec_untrained, 'c': spec_cost}
+            spec_entry = {'n': spec_name, 'at': spec_attr, 'u': spec_untrained, 'c': spec_cost, 'yid': spec_key}
             if rb: spec_entry['rb'] = rb
             specialties.append(spec_entry)
 
         broad_entry = {
             'n': name, 'u': untrained, 'at': attr,
             'sp': sorted(specialties, key=lambda x: x['n']),
-            'c': cost
+            'c': cost,
+            'yid': broad_key
         }
         if broad_rb: broad_entry['rb'] = broad_rb
         skills_by_attr[attr].append(broad_entry)
@@ -256,6 +257,7 @@ def generate_skills_html(data_list, indent_level=3, is_psionics=False, urls_map=
         # Collect metadata for the worker
         skill_metadata_list.append({
             'id': id_name,
+            'yid': skill.get('yid', ''),
             'name': name,
             'url': url,
             'is_trained_only': is_trained_only,
@@ -309,6 +311,7 @@ def generate_skills_html(data_list, indent_level=3, is_psionics=False, urls_map=
             # Collect metadata for the worker
             skill_metadata_list.append({
                 'id': spec_id,
+                'yid': spec.get('yid', ''),
                 'name': spec_name,
                 'url': spec_url,
                 'is_trained_only': is_spec_trained_only,
@@ -521,6 +524,10 @@ def build():
                     })
             migration_list_js = json.dumps(specialties_to_migrate)
             content = content.replace('/* <!-- SPECIALTY_MIGRATION_LIST_PLACEHOLDER --> */ []', migration_list_js)
+            
+            # Inject mapping for import JSON
+            roll20_skill_map = { s['yid']: s['id'] for s in all_skill_ids if s.get('yid') }
+            content = content.replace('/* <!-- ROLL20_SKILL_MAP_PLACEHOLDER --> */ {}', json.dumps(roll20_skill_map))
             
         content = content.replace('<!-- ROLL_QUERY_DEFAULT_0 -->', roll_query_0)
         content = content.replace('<!-- ROLL_QUERY_DEFAULT_1 -->', roll_query_1)

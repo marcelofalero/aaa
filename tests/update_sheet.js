@@ -246,10 +246,14 @@ async function main() {
             
             // If traversal was completely successful, use those resolved elements
             if (htmlEditorEl && cssEditorEl && transEditorEl) {
+                const oldHtml = ace.edit(htmlEditorEl).getValue();
+                const oldCss = ace.edit(cssEditorEl).getValue();
+                const oldTrans = ace.edit(transEditorEl).getValue();
+                
                 ace.edit(htmlEditorEl).setValue(html, -1);
                 ace.edit(cssEditorEl).setValue(css, -1);
                 ace.edit(transEditorEl).setValue(translation, -1);
-                return { success: true, method: 'Traversed Ace DOM' };
+                return { success: true, method: 'Traversed Ace DOM', oldHtml, oldCss, oldTrans };
             }
             
             // Fallback: If traversal failed to resolve all 3 uniquely, fall back to tab link matching
@@ -276,18 +280,26 @@ async function main() {
             const transTabEditor = findEditorByTab(['translation', 'trans', 'json']);
             
             if (htmlTabEditor && cssTabEditor && transTabEditor) {
+                const oldHtml = ace.edit(htmlTabEditor).getValue();
+                const oldCss = ace.edit(cssTabEditor).getValue();
+                const oldTrans = ace.edit(transTabEditor).getValue();
+                
                 ace.edit(htmlTabEditor).setValue(html, -1);
                 ace.edit(cssTabEditor).setValue(css, -1);
                 ace.edit(transTabEditor).setValue(translation, -1);
-                return { success: true, method: 'Tab Matched Ace DOM' };
+                return { success: true, method: 'Tab Matched Ace DOM', oldHtml, oldCss, oldTrans };
             }
             
             // Absolute Last Resort Fallback: Match by DOM index order (if exactly 3 exist)
             if (editors.length === 3) {
+                const oldHtml = ace.edit(editors[0]).getValue();
+                const oldCss = ace.edit(editors[1]).getValue();
+                const oldTrans = ace.edit(editors[2]).getValue();
+                
                 ace.edit(editors[0]).setValue(html, -1);
                 ace.edit(editors[1]).setValue(css, -1);
                 ace.edit(editors[2]).setValue(translation, -1);
-                return { success: true, method: 'Indexed Ace DOM (Fallback)' };
+                return { success: true, method: 'Indexed Ace DOM (Fallback)', oldHtml, oldCss, oldTrans };
             }
             
             return { success: false, foundEditors: editors.length, traversalStatus: { html: !!htmlEditorEl, css: !!cssEditorEl, trans: !!transEditorEl } };
@@ -295,6 +307,17 @@ async function main() {
         
         if (!uploadResult.success) {
             throw new Error(`Failed to locate custom character sheet editors on page. Found ${uploadResult.foundEditors} Ace editors.`);
+        }
+        
+        if (uploadResult.oldHtml || uploadResult.oldCss || uploadResult.oldTrans) {
+            const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
+            const backupDir = path.resolve(__dirname, '../scratch/backups');
+            if (!fs.existsSync(backupDir)) fs.mkdirSync(backupDir, { recursive: true });
+            
+            if (uploadResult.oldHtml) fs.writeFileSync(path.join(backupDir, `sheet_${timestamp}.html`), uploadResult.oldHtml, 'utf8');
+            if (uploadResult.oldCss) fs.writeFileSync(path.join(backupDir, `sheet_${timestamp}.css`), uploadResult.oldCss, 'utf8');
+            if (uploadResult.oldTrans) fs.writeFileSync(path.join(backupDir, `translation_${timestamp}.json`), uploadResult.oldTrans, 'utf8');
+            console.log(`Saved previous sheet versions to ${backupDir}`);
         }
         
         console.log(`Success: Pasted assets using method: ${uploadResult.method || 'Ace Editor API'}`);
@@ -354,13 +377,14 @@ async function main() {
                     const editorEl = pane.querySelector('.ace_editor');
                     if (!editorEl) return { success: false, error: `Could not find Ace editor inside pane ${targetId}` };
                     
+                    const oldCode = ace.edit(editorEl).getValue();
                     ace.edit(editorEl).setValue(code, -1);
                     
                     const saveBtn = pane.querySelector('button.savescript');
                     if (!saveBtn) return { success: false, error: `Could not find Save button inside pane ${targetId}` };
                     
                     saveBtn.click();
-                    return { success: true, action: 'updated', paneId: targetId };
+                    return { success: true, action: 'updated', paneId: targetId, oldCode };
                 } else {
                     const newTabAnchor = document.querySelector('#scriptorder a[href="#script-new"]');
                     if (!newTabAnchor) return { success: false, error: 'Could not find "New Script" tab' };
@@ -391,6 +415,14 @@ async function main() {
             
             if (!scriptUploadResult.success) {
                 throw new Error(`Failed to upload API script: ${scriptUploadResult.error}`);
+            }
+            
+            if (scriptUploadResult.oldCode) {
+                const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
+                const backupDir = path.resolve(__dirname, '../scratch/backups');
+                if (!fs.existsSync(backupDir)) fs.mkdirSync(backupDir, { recursive: true });
+                fs.writeFileSync(path.join(backupDir, `api_${timestamp}.js`), scriptUploadResult.oldCode, 'utf8');
+                console.log(`Saved previous API script version to ${backupDir}`);
             }
             
             console.log(`Success: API script successfully ${scriptUploadResult.action === 'created' ? 'created as a new script' : 'updated in existing tab'}!`);
