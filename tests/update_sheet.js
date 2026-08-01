@@ -117,6 +117,7 @@ async function main() {
     // 3. Launch Playwright
     console.log('\nLaunching Chromium browser with persistent Chrome profile...');
     const context = await chromium.launchPersistentContext(profilePath, {
+        executablePath: process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH || '/snap/bin/chromium',
         headless: false, // Run in headful mode so the user can see it and log in if session expires
         viewport: null,
         ignoreDefaultArgs: ['--enable-automation'],
