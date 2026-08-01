@@ -24,42 +24,40 @@
     "PER": 11
   },
   "skills": {
-    "Atletismo": {
+    "athletics": {
       "ranks": 1,
       "isBroad": true,
       "isSpeciesFree": true,
       "standardCost": 3,
       "category": "Otros"
     },
-    "Percepci\u00f3n": {
-      "ranks": 1,
-      "isBroad": true,
-      "isSpeciesFree": true,
+    "perception": {
+      "ranks": 5,
+      "isBroad": false,
       "standardCost": 3,
       "category": "Other"
     },
-    "Resistencia": {
-      "ranks": 1,
-      "isBroad": true,
-      "isSpeciesFree": true,
-      "standardCost": 3,
+    "endurance": {
+      "ranks": 3,
+      "isBroad": false,
+      "standardCost": 4,
       "category": "Other"
     },
-    "Interacci\u00f3n": {
+    "interaction": {
       "ranks": 1,
       "isBroad": true,
       "isSpeciesFree": true,
       "standardCost": 3,
       "category": "Social"
     },
-    "Conocimiento": {
+    "knowledge": {
       "ranks": 1,
       "isBroad": true,
       "isSpeciesFree": true,
       "standardCost": 4,
       "category": "T\u00e9cnica"
     },
-    "Operaci\u00f3n de Veh\u00edculos": {
+    "vehicle-operation": {
       "ranks": 1,
       "isBroad": true,
       "isSpeciesFree": true,
@@ -90,7 +88,7 @@
       "standardCost": 3,
       "category": "Combat"
     },
-    "Pistol": {
+    "pistol": {
       "ranks": 2,
       "isBroad": false,
       "standardCost": 3,
@@ -126,19 +124,13 @@
       "standardCost": 3,
       "category": "Other"
     },
-    "Intuition": {
+    "intuition": {
       "ranks": 9,
       "isBroad": false,
       "standardCost": 3,
       "category": "Other"
     },
-    "Perception": {
-      "ranks": 5,
-      "isBroad": false,
-      "standardCost": 3,
-      "category": "Other"
-    },
-    "Resolve": {
+    "resolve": {
       "ranks": 1,
       "isBroad": true,
       "standardCost": 6,
@@ -150,19 +142,13 @@
       "standardCost": 3,
       "category": "Other"
     },
-    "Endurance": {
-      "ranks": 3,
-      "isBroad": false,
-      "standardCost": 4,
-      "category": "Other"
-    },
-    "Leadership": {
+    "leadership": {
       "ranks": 1,
       "isBroad": true,
       "standardCost": 4,
       "category": "Social"
     },
-    "Command": {
+    "command": {
       "ranks": 8,
       "isBroad": false,
       "standardCost": 4,
@@ -174,7 +160,7 @@
       "standardCost": 2,
       "category": "Technical"
     },
-    "Research": {
+    "research": {
       "ranks": 3,
       "isBroad": false,
       "standardCost": 2,
@@ -192,31 +178,31 @@
       "standardCost": 3,
       "category": "Combat"
     },
-    "Climb": {
+    "climb": {
       "ranks": 1,
       "isBroad": false,
       "standardCost": 2,
       "category": "Other"
     },
-    "Jump": {
+    "jump": {
       "ranks": 1,
       "isBroad": false,
       "standardCost": 1,
       "category": "Other"
     },
-    "Throw": {
+    "throw": {
       "ranks": 1,
       "isBroad": false,
       "standardCost": 2,
       "category": "Other"
     },
-    "Resist pain": {
+    "resist-pain": {
       "ranks": 1,
       "isBroad": false,
       "standardCost": 5,
       "category": "Other"
     },
-    "Psionics": {
+    "psionics": {
       "ranks": 3,
       "isBroad": false,
       "standardCost": 3,
@@ -234,44 +220,44 @@
       "standardCost": 3,
       "category": "Technical"
     },
-    "Weapons": {
+    "weapons": {
       "ranks": 3,
       "isBroad": false,
       "standardCost": 3,
       "category": "Technical"
     },
-    "Administration": {
+    "administration": {
       "ranks": 1,
       "isBroad": true,
       "standardCost": 4,
       "category": "Technical"
     },
-    "Management": {
+    "management": {
       "ranks": 5,
       "isBroad": false,
       "standardCost": 3,
       "category": "Technical"
     },
-    "Bureaucracy": {
+    "bureaucracy": {
       "ranks": 5,
       "isBroad": false,
       "standardCost": 3,
       "category": "Technical"
     },
-    "Deduce": {
+    "deduce": {
       "ranks": 3,
       "isBroad": false,
       "standardCost": 2,
       "category": "Technical"
     },
-    "Alerta": {
+    "awareness": {
       "ranks": 1,
       "isBroad": true,
       "isSpeciesFree": true,
       "standardCost": 3,
       "category": "Otros"
     },
-    "Aguante": {
+    "stamina": {
       "ranks": 1,
       "isBroad": true,
       "isSpeciesFree": true,
@@ -304,27 +290,27 @@
   "advancementSkills": {
     "Powered": 7,
     "Assault Rifle": 3,
-    "Pistol": 1,
+    "pistol": 1,
     "Space tactics": 7,
     "Infantry tactics": 3,
     "Combat armor": 6,
-    "Climb": 1,
-    "Jump": 1,
-    "Throw": 1,
-    "Intuition": 7,
+    "climb": 1,
+    "jump": 1,
+    "throw": 1,
+    "intuition": 7,
     "Mental resolve": 6,
-    "Resist pain": 1,
-    "Endurance": 1,
-    "Command": 7,
-    "Psionics": 3,
+    "resist-pain": 1,
+    "endurance": 1,
+    "command": 7,
+    "psionics": 3,
     "Land vehicle": 1,
-    "Weapons": 3,
+    "weapons": 3,
     "Computer Operation": 2,
     "Tactical armor": 2,
-    "Perception": 4,
-    "Management": 5,
-    "Bureaucracy": 5,
-    "Deduce": 3
+    "perception": 4,
+    "management": 5,
+    "bureaucracy": 5,
+    "deduce": 3
   },
   "advancementAbilities": {
     "INT": 3,

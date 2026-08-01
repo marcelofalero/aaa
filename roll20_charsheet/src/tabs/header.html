@@ -669,15 +669,26 @@ on('clicked:import_json', function() {
             if (data.skills) {
                 Object.keys(data.skills).forEach(skillId => {
                     const r20Attr = ROLL20_SKILL_MAP[skillId] || ROLL20_SKILL_MAP[skillId.toLowerCase()] || skillId.replace(/\s/g, '').replace(/-/g, '').replace(/\./g, '').replace(/,/g, '').replace(/—/g, '').replace(/'/g, '');
-                    update[`${r20Attr}Rank`] = (update[`${r20Attr}Rank`] || 0) + data.skills[skillId].ranks;
-                    update[`${r20Attr}_is_trained`] = "on";
+                    const isBroad = data.skills[skillId].isBroad || !r20Attr.includes('_');
+                    if (isBroad) {
+                        update[r20Attr] = "on";
+                    } else {
+                        update[`${r20Attr}Rank`] = (update[`${r20Attr}Rank`] || 0) + data.skills[skillId].ranks;
+                        update[`${r20Attr}_is_trained`] = "on";
+                    }
                 });
             }
             if (data.advancementSkills) {
                 Object.keys(data.advancementSkills).forEach(skillId => {
                     const r20Attr = ROLL20_SKILL_MAP[skillId] || ROLL20_SKILL_MAP[skillId.toLowerCase()] || skillId.replace(/\s/g, '').replace(/-/g, '').replace(/\./g, '').replace(/,/g, '').replace(/—/g, '').replace(/'/g, '');
-                    update[`${r20Attr}Rank`] = (update[`${r20Attr}Rank`] || 0) + data.advancementSkills[skillId].ranks;
-                    update[`${r20Attr}_is_trained`] = "on";
+                    const isBroad = !r20Attr.includes('_');
+                    if (isBroad) {
+                        update[r20Attr] = "on";
+                    } else {
+                        const advancedRanks = typeof data.advancementSkills[skillId] === 'number' ? data.advancementSkills[skillId] : (data.advancementSkills[skillId].ranks || 0);
+                        update[`${r20Attr}Rank`] = (update[`${r20Attr}Rank`] || 0) + advancedRanks;
+                        update[`${r20Attr}_is_trained`] = "on";
+                    }
                 });
             }
             
@@ -690,7 +701,17 @@ on('clicked:import_json', function() {
 });
 
 on('clicked:export_json', function() {
-    getAttrs(['character_name', 'race', 'profession', 'career', 'Strength', 'Dexterity', 'Constitution', 'Intelligence', 'Will', 'Personality'], function(v) {
+    const baseAttrs = ['character_name', 'race', 'profession', 'career', 'Strength', 'Dexterity', 'Constitution', 'Intelligence', 'Will', 'Personality'];
+    const skillAttrs = [];
+    Object.values(ROLL20_SKILL_MAP).forEach(r20Attr => {
+        if (r20Attr.includes('_')) {
+            skillAttrs.push(r20Attr + 'Rank', r20Attr + '_is_trained');
+        } else {
+            skillAttrs.push(r20Attr);
+        }
+    });
+    
+    getAttrs([...baseAttrs, ...skillAttrs], function(v) {
         const out = {
             bio: {
                 name: v.character_name || "",
@@ -705,8 +726,26 @@ on('clicked:export_json', function() {
                 INT: parseInt(v.Intelligence) || 0,
                 WIL: parseInt(v.Will) || 0,
                 PER: parseInt(v.Personality) || 0
-            }
+            },
+            skills: {},
+            advancementSkills: {}
         };
+        
+        Object.entries(ROLL20_SKILL_MAP).forEach(([yid, r20Attr]) => {
+            if (r20Attr.includes('_')) {
+                const isTrained = v[r20Attr + '_is_trained'];
+                const rank = parseInt(v[r20Attr + 'Rank']) || 0;
+                if (isTrained === 'on' || isTrained === '1' || rank > 0) {
+                    out.advancementSkills[yid] = rank;
+                }
+            } else {
+                const isTrained = v[r20Attr];
+                if (isTrained === 'on' || isTrained === '1') {
+                    out.skills[yid] = { ranks: 1, isBroad: true };
+                }
+            }
+        });
+
         setAttrs({ 
             import_export_json: JSON.stringify(out, null, 2),
             import_status: "Export successful! ✅"

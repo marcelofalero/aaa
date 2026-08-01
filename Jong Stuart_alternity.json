@@ -24,287 +24,245 @@
     "PER": 11
   },
   "skills": {
-    "Athletics": {
+    "athletics": {
       "ranks": 1,
       "isBroad": true,
       "isSpeciesFree": true,
       "standardCost": 3,
-      "category": "Other"
+      "category": "Otros"
     },
-    "Awareness": {
+    "awareness": {
       "ranks": 1,
       "isBroad": true,
       "isSpeciesFree": true,
       "standardCost": 3,
-      "category": "Other"
+      "category": "Otros"
     },
-    "Stamina": {
+    "stamina": {
       "ranks": 1,
       "isBroad": true,
       "isSpeciesFree": true,
       "standardCost": 3,
-      "category": "Other"
+      "category": "Otros"
     },
-    "Interaction": {
+    "interaction": {
       "ranks": 1,
       "isBroad": true,
       "isSpeciesFree": true,
       "standardCost": 3,
       "category": "Social"
     },
-    "Knowledge": {
+    "knowledge": {
       "ranks": 1,
       "isBroad": true,
       "isSpeciesFree": true,
       "standardCost": 4,
-      "category": "Technical"
+      "category": "T\u00e9cnica"
     },
-    "Vehicle Operation": {
+    "vehicle-operation": {
       "ranks": 1,
       "isBroad": true,
       "isSpeciesFree": true,
       "standardCost": 3,
-      "category": "Technical"
+      "category": "T\u00e9cnica"
     },
-    "Melee Combat": {
+    "melee-combat": {
       "ranks": 1,
       "isBroad": true,
       "standardCost": 6,
       "category": "Combat"
     },
-    "Powered": {
+    "powered-weapons": {
       "ranks": 10,
       "isBroad": false,
       "standardCost": 3,
       "category": "Combat"
     },
-    "Modern Ranged Weapons": {
+    "modern-ranged-weapons": {
       "ranks": 1,
       "isBroad": true,
       "standardCost": 6,
       "category": "Combat"
     },
-    "Assault Rifle": {
+    "assault-rifle": {
       "ranks": 4,
       "isBroad": false,
       "standardCost": 3,
       "category": "Combat"
     },
-    "Pistol": {
+    "pistol": {
       "ranks": 2,
       "isBroad": false,
       "standardCost": 3,
       "category": "Combat"
     },
-    "Space tactics": {
+    "space-tactics": {
       "ranks": 10,
       "isBroad": false,
       "standardCost": 3,
       "category": "Combat"
     },
-    "Armor Operation": {
+    "armor-operation": {
       "ranks": 1,
       "isBroad": true,
       "standardCost": 7,
       "category": "Other"
     },
-    "Combat armor": {
+    "combat-armor": {
       "ranks": 8,
       "isBroad": false,
       "standardCost": 3,
       "category": "Other"
     },
-    "Tactical armor": {
+    "tactical-armor": {
       "ranks": 3,
       "isBroad": false,
       "standardCost": 3,
       "category": "Other"
     },
-    "Propulsion systems": {
+    "propulsion-systems": {
       "ranks": 1,
       "isBroad": false,
       "standardCost": 3,
       "category": "Other"
     },
-    "Intuition": {
+    "intuition": {
       "ranks": 9,
       "isBroad": false,
       "standardCost": 3,
       "category": "Other"
     },
-    "Perception": {
+    "perception": {
       "ranks": 5,
       "isBroad": false,
       "standardCost": 3,
       "category": "Other"
     },
-    "Resolve": {
+    "resolve": {
       "ranks": 1,
       "isBroad": true,
       "standardCost": 6,
       "category": "Other"
     },
-    "Mental resolve": {
+    "mental-resolve": {
       "ranks": 7,
       "isBroad": false,
       "standardCost": 3,
       "category": "Other"
     },
-    "Endurance": {
+    "endurance": {
       "ranks": 3,
       "isBroad": false,
       "standardCost": 4,
       "category": "Other"
     },
-    "Leadership": {
+    "leadership": {
       "ranks": 1,
       "isBroad": true,
       "standardCost": 4,
       "category": "Social"
     },
-    "Command": {
+    "command": {
       "ranks": 8,
       "isBroad": false,
       "standardCost": 4,
       "category": "Social"
     },
-    "Computer Operation": {
+    "computer-operation": {
       "ranks": 3,
       "isBroad": false,
       "standardCost": 2,
       "category": "Technical"
     },
-    "Research": {
+    "research": {
       "ranks": 3,
       "isBroad": false,
       "standardCost": 2,
       "category": "Technical"
     },
-    "First Aid": {
+    "first-aid": {
       "ranks": 3,
       "isBroad": false,
       "standardCost": 3,
       "category": "Technical"
     },
-    "Infantry tactics": {
+    "infantry-tactics": {
       "ranks": 3,
       "isBroad": false,
       "standardCost": 3,
       "category": "Combat"
     },
-    "Climb": {
+    "climb": {
       "ranks": 1,
       "isBroad": false,
       "standardCost": 2,
       "category": "Other"
     },
-    "Jump": {
+    "jump": {
       "ranks": 1,
       "isBroad": false,
       "standardCost": 1,
       "category": "Other"
     },
-    "Throw": {
+    "throw": {
       "ranks": 1,
       "isBroad": false,
       "standardCost": 2,
       "category": "Other"
     },
-    "Resist pain": {
+    "resist-pain": {
       "ranks": 1,
       "isBroad": false,
       "standardCost": 5,
       "category": "Other"
     },
-    "Psionics": {
+    "psionics": {
       "ranks": 3,
       "isBroad": false,
       "standardCost": 3,
       "category": "Technical"
     },
-    "Land vehicle": {
+    "land-vehicle": {
       "ranks": 1,
       "isBroad": false,
       "standardCost": 3,
       "category": "Technical"
     },
-    "System Operation": {
+    "system-operation": {
       "ranks": 1,
       "isBroad": true,
       "standardCost": 3,
       "category": "Technical"
     },
-    "Weapons": {
+    "weapons": {
       "ranks": 3,
       "isBroad": false,
       "standardCost": 3,
       "category": "Technical"
     },
-    "Administration": {
+    "administration": {
       "ranks": 1,
       "isBroad": true,
       "standardCost": 4,
       "category": "Technical"
     },
-    "Management": {
+    "management": {
       "ranks": 5,
       "isBroad": false,
       "standardCost": 3,
       "category": "Technical"
     },
-    "Bureaucracy": {
+    "bureaucracy": {
       "ranks": 5,
       "isBroad": false,
       "standardCost": 3,
       "category": "Technical"
     },
-    "Deduce": {
+    "deduce": {
       "ranks": 3,
       "isBroad": false,
       "standardCost": 2,
       "category": "Technical"
-    },
-    "Atletismo": {
-      "ranks": 1,
-      "isBroad": true,
-      "isSpeciesFree": true,
-      "standardCost": 3,
-      "category": "Otros"
-    },
-    "Alerta": {
-      "ranks": 1,
-      "isBroad": true,
-      "isSpeciesFree": true,
-      "standardCost": 3,
-      "category": "Otros"
-    },
-    "Aguante": {
-      "ranks": 1,
-      "isBroad": true,
-      "isSpeciesFree": true,
-      "standardCost": 3,
-      "category": "Otros"
-    },
-    "Interacción": {
-      "ranks": 1,
-      "isBroad": true,
-      "isSpeciesFree": true,
-      "standardCost": 3,
-      "category": "Social"
-    },
-    "Conocimiento": {
-      "ranks": 1,
-      "isBroad": true,
-      "isSpeciesFree": true,
-      "standardCost": 4,
-      "category": "Técnica"
-    },
-    "Operación de Vehículos": {
-      "ranks": 1,
-      "isBroad": true,
-      "isSpeciesFree": true,
-      "standardCost": 3,
-      "category": "Técnica"
     }
   },
   "perks": [
@@ -330,29 +288,29 @@
   "isFinalized": true,
   "earnedAP": 308,
   "advancementSkills": {
-    "Powered": 7,
-    "Assault Rifle": 3,
-    "Pistol": 1,
-    "Space tactics": 7,
-    "Infantry tactics": 3,
-    "Combat armor": 6,
-    "Climb": 1,
-    "Jump": 1,
-    "Throw": 1,
-    "Intuition": 7,
-    "Mental resolve": 6,
-    "Resist pain": 1,
-    "Endurance": 1,
-    "Command": 7,
-    "Psionics": 3,
-    "Land vehicle": 1,
-    "Weapons": 3,
-    "Computer Operation": 2,
-    "Tactical armor": 2,
-    "Perception": 4,
-    "Management": 5,
-    "Bureaucracy": 5,
-    "Deduce": 3
+    "powered-weapons": 7,
+    "assault-rifle": 3,
+    "pistol": 1,
+    "space-tactics": 7,
+    "infantry-tactics": 3,
+    "combat-armor": 6,
+    "climb": 1,
+    "jump": 1,
+    "throw": 1,
+    "intuition": 7,
+    "mental-resolve": 6,
+    "resist-pain": 1,
+    "endurance": 1,
+    "command": 7,
+    "psionics": 3,
+    "land-vehicle": 1,
+    "weapons": 3,
+    "computer-operation": 2,
+    "tactical-armor": 2,
+    "perception": 4,
+    "management": 5,
+    "bureaucracy": 5,
+    "deduce": 3
   },
   "advancementAbilities": {
     "INT": 3,

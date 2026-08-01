@@ -1921,8 +1921,8 @@ document.addEventListener('DOMContentLoaded', () => {
     if (data.skillsTable && data.skillsTable.items) {
       data.skillsTable.items.forEach(cat => {
         cat.items.forEach(broad => {
-          const isBroadBought = purchasedSkills[broad.skill]?.ranks > 0;
-          const hasSpecBought = broad.items && broad.items.some(s => purchasedSkills[s.skill]?.ranks > 0);
+          const isBroadBought = purchasedSkills[broad.id]?.ranks > 0;
+          const hasSpecBought = broad.items && broad.items.some(s => purchasedSkills[s.id]?.ranks > 0);
           if (isBroadBought || hasSpecBought) {
             broadList.push(broad);
           }
@@ -1934,7 +1934,7 @@ document.addEventListener('DOMContentLoaded', () => {
       skillRowsHtml = `<tr><td colspan="7" style="text-align:center; padding:1.5rem; color:#8099AC;">${isEs ? 'No se han seleccionado habilidades.' : 'No skills trained yet.'}</td></tr>`;
     } else {
       broadList.forEach(broad => {
-        const broadInfo = purchasedSkills[broad.skill];
+        const broadInfo = purchasedSkills[broad.id];
         const att = broad.attribute || 'INT';
         const abilityScore = getEffectiveAbilityScore(att);
         const broadOrd = abilityScore;
@@ -1955,8 +1955,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (broad.items) {
           broad.items.forEach(spec => {
-            if (purchasedSkills[spec.skill] && !purchasedSkills[spec.skill].isBroad) {
-              const specInfo = purchasedSkills[spec.skill];
+            if (purchasedSkills[spec.id] && !purchasedSkills[spec.id].isBroad) {
+              const specInfo = purchasedSkills[spec.id];
               const ranks = specInfo.ranks || 0;
               const totalScore = abilityScore + ranks;
               const ord = totalScore;
