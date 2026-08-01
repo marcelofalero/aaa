@@ -1,0 +1,2490 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&family=Share+Tech+Mono&display=swap');
+
+.sheet-overall-wrapper {
+    /* DEFAULT DARK THEME (Alternity Classic) */
+    --color-bg: #050a14;
+    --color-panel: #0b1a2e;
+    --color-accent-yellow: #f8cc3a;
+    --color-accent-teal: #00d2df;
+    --color-text: #ffffff;
+    --color-text-dim: #94a3b8;
+    --color-border: #1e293b;
+    --color-row-even: #1a2a3f;
+    --color-row-odd: #050a14;
+
+    /* Font families */
+    --font-ui: 'Outfit', sans-serif;
+    --font-data: 'Share Tech Mono', monospace;
+    --font-logo: 'Share Tech Mono', monospace;
+}
+
+/* LIGHT THEME OVERRIDE */
+.sheet-theme-control[value="1"]~.sheet-overall-wrapper {
+    --color-bg: #f0f4f8;
+    --color-panel: #ffffff;
+    --color-accent-yellow: #92400e;
+    /* Darker amber */
+    --color-accent-teal: #0369a1;
+    /* Darker sky blue */
+    --color-text: #1e293b;
+    /* Slate 800 */
+    --color-text-dim: #64748b;
+    /* Slate 500 */
+    --color-border: #cbd5e1;
+    /* Slate 300 */
+    --color-row-even: #f1f5f9;
+    /* Slate 100 */
+    --color-row-odd: #ffffff;
+}
+
+.sheet-overall-wrapper {
+    max-width: 820px;
+    margin: 0 auto;
+    width: 100%;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    font-family: var(--font-ui);
+    padding: 10px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.sheet-overall-wrapper *,
+.sheet-overall-wrapper *::before,
+.sheet-overall-wrapper *::after {
+    box-sizing: border-box;
+}
+
+
+img {
+    display: block;
+    margin: 10px auto;
+    max-height: 100px;
+}
+
+/* --- LOGO STYLES --- */
+.sheet-logo-container {
+    padding: 5px 0;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.sheet-logo-wrapper {
+    display: inline-block;
+    cursor: default;
+    user-select: none;
+}
+
+.sheet-neon-text-glitch {
+    position: relative;
+    color: var(--color-accent-teal);
+    font-family: var(--font-logo);
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px rgba(0, 210, 223, 0.4);
+    letter-spacing: 0.1em;
+    line-height: 1;
+}
+
+.sheet-neon-text-glitch::before,
+.sheet-neon-text-glitch::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+}
+
+.sheet-neon-text-glitch::before {
+    left: 2px;
+    text-shadow: -2px 0 #ff00c1;
+    clip: rect(44px, 450px, 56px, 0);
+    animation: sheet-glitch-anim 5s infinite linear alternate-reverse;
+}
+
+.sheet-neon-text-glitch::after {
+    left: -2px;
+    text-shadow: -2px 0 #00fff9, 2px 2px #ff00c1;
+    clip: rect(44px, 450px, 56px, 0);
+    animation: sheet-glitch-anim2 2s infinite linear alternate-reverse;
+}
+
+@keyframes sheet-glitch-anim {
+    0% {
+        clip: rect(31px, 9999px, 94px, 0);
+        transform: skew(0.85deg);
+    }
+
+    5% {
+        clip: rect(70px, 9999px, 71px, 0);
+        transform: skew(0.1deg);
+    }
+
+    10% {
+        clip: rect(29px, 9999px, 83px, 0);
+        transform: skew(0.57deg);
+    }
+
+    15% {
+        clip: rect(46px, 9999px, 15px, 0);
+        transform: skew(0.48deg);
+    }
+
+    20% {
+        clip: rect(94px, 9999px, 45px, 0);
+        transform: skew(0.96deg);
+    }
+
+    25% {
+        clip: rect(47px, 9999px, 17px, 0);
+        transform: skew(0.33deg);
+    }
+
+    30% {
+        clip: rect(54px, 9999px, 14px, 0);
+        transform: skew(0.36deg);
+    }
+
+    35% {
+        clip: rect(42px, 9999px, 91px, 0);
+        transform: skew(0.32deg);
+    }
+
+    40% {
+        clip: rect(10px, 9999px, 16px, 0);
+        transform: skew(0.04deg);
+    }
+
+    45% {
+        clip: rect(14px, 9999px, 100px, 0);
+        transform: skew(0.12deg);
+    }
+
+    50% {
+        clip: rect(69px, 9999px, 70px, 0);
+        transform: skew(0.16deg);
+    }
+
+    55% {
+        clip: rect(51px, 9999px, 97px, 0);
+        transform: skew(0.53deg);
+    }
+
+    60% {
+        clip: rect(82px, 9999px, 14px, 0);
+        transform: skew(0.58deg);
+    }
+
+    65% {
+        clip: rect(44px, 9999px, 72px, 0);
+        transform: skew(0.42deg);
+    }
+
+    70% {
+        clip: rect(81px, 9999px, 5px, 0);
+        transform: skew(0.81deg);
+    }
+
+    75% {
+        clip: rect(73px, 9999px, 97px, 0);
+        transform: skew(0.46deg);
+    }
+
+    80% {
+        clip: rect(98px, 9999px, 40px, 0);
+        transform: skew(0.31deg);
+    }
+
+    85% {
+        clip: rect(15px, 9999px, 63px, 0);
+        transform: skew(0.79deg);
+    }
+
+    90% {
+        clip: rect(87px, 9999px, 2px, 0);
+        transform: skew(0.24deg);
+    }
+
+    95% {
+        clip: rect(25px, 9999px, 40px, 0);
+        transform: skew(0.79deg);
+    }
+
+    100% {
+        clip: rect(12px, 9999px, 18px, 0);
+        transform: skew(0.72deg);
+    }
+}
+
+@keyframes sheet-glitch-anim2 {
+    0% {
+        clip: rect(62px, 9999px, 14px, 0);
+        transform: skew(0.06deg);
+    }
+
+    5% {
+        clip: rect(8px, 9999px, 100px, 0);
+        transform: skew(0.81deg);
+    }
+
+    10% {
+        clip: rect(4px, 9999px, 96px, 0);
+        transform: skew(0.55deg);
+    }
+
+    15% {
+        clip: rect(49px, 9999px, 7px, 0);
+        transform: skew(0.18deg);
+    }
+
+    20% {
+        clip: rect(21px, 9999px, 57px, 0);
+        transform: skew(0.5deg);
+    }
+
+    25% {
+        clip: rect(58px, 9999px, 74px, 0);
+        transform: skew(0.79deg);
+    }
+
+    30% {
+        clip: rect(32px, 9999px, 47px, 0);
+        transform: skew(0.51deg);
+    }
+
+    35% {
+        clip: rect(3px, 9999px, 46px, 0);
+        transform: skew(0.92deg);
+    }
+
+    40% {
+        clip: rect(91px, 9999px, 65px, 0);
+        transform: skew(0.75deg);
+    }
+
+    45% {
+        clip: rect(67px, 9999px, 73px, 0);
+        transform: skew(0.25deg);
+    }
+
+    50% {
+        clip: rect(32px, 9999px, 83px, 0);
+        transform: skew(0.8deg);
+    }
+
+    55% {
+        clip: rect(84px, 9999px, 91px, 0);
+        transform: skew(0.84deg);
+    }
+
+    60% {
+        clip: rect(15px, 9999px, 76px, 0);
+        transform: skew(0.48deg);
+    }
+
+    65% {
+        clip: rect(14px, 9999px, 48px, 0);
+        transform: skew(0.86deg);
+    }
+
+    70% {
+        clip: rect(44px, 9999px, 95px, 0);
+        transform: skew(0.39deg);
+    }
+
+    75% {
+        clip: rect(7px, 9999px, 53px, 0);
+        transform: skew(0.66deg);
+    }
+
+    80% {
+        clip: rect(57px, 9999px, 42px, 0);
+        transform: skew(0.41deg);
+    }
+
+    85% {
+        clip: rect(9px, 9999px, 20px, 0);
+        transform: skew(0.24deg);
+    }
+
+    90% {
+        clip: rect(99px, 9999px, 9px, 0);
+        transform: skew(0.97deg);
+    }
+
+    95% {
+        clip: rect(11px, 9999px, 95px, 0);
+        transform: skew(0.91deg);
+    }
+
+    100% {
+        clip: rect(32px, 9999px, 61px, 0);
+        transform: skew(0.66deg);
+    }
+}
+
+.sheet-thirdwidth {
+    float: left;
+    width: calc(33% - 3px);
+    min-width: fit-content;
+}
+
+.sheet-twothirdwidth {
+    float: left;
+    width: calc(66% - 3px);
+    min-width: fit-content;
+}
+
+.sheet-halfwidth {
+    float: left;
+    width: calc(50% - 2px);
+    min-width: fit-content;
+}
+
+.sheet-fullwidth {
+    display: block;
+    clear: both;
+}
+
+.sheet-skillcol {
+    float: left;
+    vertical-align: top;
+}
+
+
+.sheet-bordersolid {
+    border: 1px solid var(--color-border);
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 4px;
+}
+
+input[type=number].sheet-ability,
+input[type=text].sheet-ability,
+.sheet-5emwidth {
+    width: 5em;
+}
+
+input[type=number].sheet-score,
+input[type=text].sheet-score,
+.sheet-3emwidth {
+    width: 3em;
+}
+
+input[type=number].sheet-scoredisabled,
+input[type=text].sheet-scoredisabled {
+    width: 2em;
+}
+
+input[type=text].sheet-dmgtype {
+    width: 2.5em;
+}
+
+input[type=text].sheet-dicetype,
+.sheet-4emwidth {
+    width: 4em;
+}
+
+input[type=text].sheet-range,
+select.sheet-range,
+.sheet-8emwidth {
+    width: 8em;
+}
+
+input[type=text],
+.sheet-12emwidth {
+    width: 12em;
+}
+
+input[type=text],
+.sheet-10emwidth {
+    width: 10em;
+}
+
+input[type=text].sheet-16emwidth,
+.sheet-16emwidth {
+    width: 16em;
+}
+
+input[type=text].sheet-20emwidth,
+.sheet-20emwidth {
+    width: 20em;
+}
+
+.sheet-situation {
+    width: 5em;
+    height: 2em;
+    float: left;
+    text-align: center;
+}
+
+
+textarea {
+    width: 28em;
+    height: 6em;
+}
+
+textarea.sheet-perks {
+    width: 13em;
+    height: 4em;
+}
+
+textarea.sheet-bigbox {
+    width: 28em;
+    height: 10em;
+}
+
+textarea.sheet-smallbox {
+    width: 28em;
+    height: 3em;
+}
+
+textarea.sheet-fullbox {
+    width: 61em;
+    height: 10em;
+}
+
+.sheet-specskilluntrained::-webkit-input-placeholder {
+    color: #0d71bc;
+    font-style: italic;
+}
+
+.sheet-specskilluntrained {
+    color: var(--color-text-dim);
+    font-style: italic;
+    font-family: var(--font-ui);
+    font-size: 0.95rem;
+}
+
+.sheet-specskill {
+    font-style: italic;
+    font-family: var(--font-ui);
+    font-size: 0.95rem;
+    color: var(--color-text);
+}
+
+.sheet-broadskilluntrained {
+    color: var(--color-accent-teal);
+    font-weight: 800;
+    font-family: var(--font-ui);
+    opacity: 0.7;
+}
+
+.sheet-broadskill {
+    font-weight: 800;
+    color: var(--color-accent-teal);
+    font-family: var(--font-ui);
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.sheet-skilltitle {
+    color: var(--color-accent-yellow);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.1em;
+}
+
+.sheet-skilltitle,
+.sheet-broadskill,
+.sheet-specskill,
+.sheet-specskilluntrained,
+.sheet-broadskilluntrained,
+.sheet-tablecell,
+input {
+    display: table-cell;
+}
+
+.sheet-rowtable {
+    display: table-row;
+}
+
+.sheet-table {
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.sheet-tablecell {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 2px;
+}
+
+/* --- Input/Select Defaults --- */
+.sheet-overall-wrapper input,
+.sheet-overall-wrapper select,
+.sheet-overall-wrapper textarea {
+    height: 20px !important;
+    font-size: 0.95rem !important;
+    font-family: var(--font-ui);
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid var(--color-border);
+    color: var(--color-text);
+    padding: 1px 4px;
+    border-radius: 0;
+    transition: all 0.2s ease;
+    line-height: normal !important;
+    box-sizing: border-box;
+    margin: 0 !important;
+    vertical-align: middle;
+}
+
+.sheet-overall-wrapper textarea {
+    height: auto;
+    min-height: 32px !important;
+}
+
+.sheet-overall-wrapper input:focus,
+.sheet-overall-wrapper select:focus,
+.sheet-overall-wrapper textarea:focus {
+    border-bottom-color: var(--color-accent-teal);
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* Combat modification selects (Base Die, Acc, SIT) */
+select[name^="attr_formmelee"],
+select[name^="attr_formranged"] {
+    width: 3.5em !important;
+}
+
+/* Damage triplet min-width */
+.sheet-damage-triplet {
+    min-width: 8.5em;
+}
+
+.sheet-armor-input {
+    width: 4.2em !important;
+    font-size: 1.15rem !important;
+    font-family: var(--font-ui);
+    background: rgba(255, 255, 255, 0.1);
+    border: none !important;
+    border-bottom: 1px solid var(--color-border) !important;
+    color: var(--color-accent-teal);
+    text-align: center;
+    border-radius: 0;
+    padding: 2px 4px;
+    transition: all 0.2s ease;
+}
+
+.sheet-armor-input:focus {
+    background: rgba(0, 210, 223, 0.08);
+    border-color: var(--color-accent-teal);
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 210, 223, 0.2);
+}
+
+/* Hide numeric arrows */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+.sheet-aligncenter {
+    text-align: center;
+}
+
+.sheet-movement {
+    width: 9em;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+input[disabled]::-webkit-inner-spin-button,
+input[disabled]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+/* --- MODERN GRID LAYOUTS --- */
+
+.sheet-header-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px 12px;
+    background: transparent;
+    padding: 5px 0 10px 0;
+    border-bottom: 1px solid var(--color-border);
+    margin-bottom: 12px;
+}
+
+.sheet-header-right-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+fieldset.sheet-section-skills {
+    padding: 10px 0;
+}
+
+.sheet-skills-grid-wrapper {
+    column-width: 360px;
+    column-gap: 12px;
+    margin-top: 10px;
+    display: block;
+}
+
+/* Skills Styling */
+.sheet-skill-name.sheet-trained-only {
+    color: #3b82f6 !important;
+}
+
+.sheet-skill-header-row {
+    display: grid !important;
+    grid-template-columns: 24px 1fr 34px 38px 7.5em !important;
+    width: 100% !important;
+    padding: 2px 4px !important;
+    margin: 0 !important;
+    box-sizing: border-box !important;
+    background-color: var(--color-row-even);
+    border: none;
+    border-bottom: 1px solid var(--color-border);
+    font-size: 0.8em;
+    font-weight: bold;
+    color: var(--color-accent-teal);
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    position: relative;
+    z-index: 5;
+    align-items: center;
+    text-align: left;
+    height: auto;
+    font-family: inherit;
+    box-shadow: none;
+    text-shadow: none;
+    appearance: none;
+}
+
+.sheet-skill-header-row > * {
+    grid-row: 1;
+}
+
+.sheet-skill-header-row > div:nth-child(1) { grid-column: 1; }
+.sheet-skill-header-row > div:nth-child(2) { grid-column: 2; }
+.sheet-skill-header-row > div:nth-child(3) { grid-column: 3; }
+.sheet-skill-header-row > div:nth-child(4) { grid-column: 4; }
+.sheet-skill-header-row > div:nth-child(5) { grid-column: 5; }
+
+.sheet-skill-header-row:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.sheet-skill-header-row:hover .sheet-skill-name {
+    text-shadow: 0 0 5px var(--accent-color-1);
+}
+
+.sheet-skill-group-box {
+    break-inside: avoid;
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    background: rgba(255, 255, 255, 0.02);
+    padding: 4px 6px;
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    margin-bottom: 12px;
+}
+
+.sheet-skill-row {
+    display: grid;
+    grid-template-columns: 24px 1fr 34px 38px 7.5em;
+    align-items: center;
+    padding: 2px 4px;
+    border-bottom: 1px solid rgba(30, 41, 59, 0.5);
+    gap: 4px;
+}
+
+.sheet-roll-container {
+    grid-column: 1;
+}
+
+.sheet-skill-name {
+    grid-column: 2;
+}
+
+.sheet-skill-ability-label {
+    grid-column: 3;
+}
+
+.sheet-skill-row > * {
+    grid-row: 1;
+}
+
+/* Checkbox (Broad) and Rank (Spec) both occupy col 4 */
+.sheet-trained-check {
+    grid-column: 4;
+    width: 20px;
+    height: 20px;
+    margin: 0 auto !important;
+    align-self: center !important;
+}
+
+.sheet-skill-row:not(.sheet-spec) .sheet-trained-check {
+    display: block !important;
+}
+
+.sheet-skill-row.sheet-spec .sheet-trained-check {
+    display: none !important;
+}
+
+.sheet-skill-row.sheet-spec input[type="number"] {
+    grid-column: 4;
+    margin: 0 auto !important;
+    align-self: center !important;
+}
+
+.sheet-skill-score-cell {
+    grid-column: 5;
+}
+
+.sheet-skill-row.sheet-spec {
+    padding-left: 0 !important;
+}
+
+.sheet-skill-row.sheet-spec .sheet-skill-name {
+    padding-left: 15px !important;
+}
+
+.sheet-skill-row:hover {
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.sheet-skill-name {
+    font-size: 0.9rem;
+    font-family: var(--font-ui);
+    color: var(--color-text);
+    padding-right: 4px;
+    line-height: 1.1;
+    display: flex;
+    align-items: center;
+}
+
+.sheet-skill-ability-label {
+    font-size: 0.7rem;
+    font-weight: 800;
+    color: var(--color-accent-teal);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.sheet-skill-rank-placeholder,
+.sheet-skill-rank-box-placeholder {
+    grid-column: 4;
+    width: 38px;
+}
+
+.sheet-skill-header-row .sheet-skill-name {
+    color: var(--color-accent-teal);
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+}
+
+.sheet-skill-score-cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1px;
+    font-family: var(--font-data);
+    font-size: 0.85rem;
+    color: var(--color-text-dim);
+}
+
+.sheet-skill-score-cell input {
+    margin: 0 !important;
+}
+
+.sheet-specialties-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+fieldset.repeating_armor {
+    border: 0px;
+}
+
+.sheet-field {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.sheet-field label {
+    font-size: 0.85rem;
+    font-family: var(--font-ui);
+    text-transform: uppercase;
+    color: var(--color-accent-teal);
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    margin-bottom: 2px;
+}
+
+.sheet-field input {
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-bottom: 2px solid var(--color-border);
+    color: var(--color-text);
+    padding: 2px 4px;
+    font-family: var(--font-ui);
+    font-size: 1.15rem;
+    border-radius: 0;
+    transition: all 0.2s ease;
+    width: 100%;
+}
+
+.sheet-field input:hover {
+    border-bottom-color: var(--color-accent-teal);
+}
+
+.sheet-field input:focus {
+    border-color: var(--color-accent-teal);
+    box-shadow: 0 0 8px rgba(0, 210, 223, 0.2);
+    outline: none;
+}
+
+.sheet-field-row {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.sheet-field-row input {
+    flex: 1;
+}
+
+.sheet-label-span {
+    color: var(--color-text-dim);
+    font-size: 0.9em;
+}
+
+
+/* Main Sheet Tabs */
+div[class^="sheet-section"] {
+    display: none;
+}
+
+input.sheet-tab1:checked~div.sheet-section-core,
+input.sheet-tab2:checked~div.sheet-section-skills,
+input.sheet-tab3:checked~div.sheet-section-psionics,
+input.sheet-tab4:checked~div.sheet-section-cybermutations,
+input.sheet-tab5:checked~div.sheet-section-wealthequipment,
+input.sheet-tab6:checked~div.sheet-section-customskills,
+input.sheet-tab7:checked~div.sheet-section-options,
+input.sheet-tab8:checked~div.sheet-section-campaign,
+input.sheet-tab21:checked~div.sheet-section-charactermode,
+input.sheet-tab22:checked~div.sheet-section-starshipmode {
+    display: block;
+    border: none;
+}
+
+input.sheet-tab99:checked~div[class^="sheet-section"] {
+    display: block;
+}
+
+/* Main Sheet Tab Menu */
+input.sheet-tab {
+    width: 95px;
+    height: 32px;
+    margin: 0;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+}
+
+span.sheet-tab {
+    display: inline-block;
+    text-align: center;
+    width: 95px;
+    height: 32px;
+    line-height: 32px;
+    margin-left: -95px;
+    /* Exact overlap with the input */
+    background: var(--color-row-even);
+    color: var(--color-text-dim);
+    font-weight: 800;
+    border: 1px solid var(--color-border);
+    border-bottom: none;
+    border-radius: 4px 4px 0 0;
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    pointer-events: none;
+    /* Let the input catch the clicks */
+    transition: all 0.2s ease;
+}
+
+input.sheet-tab1:checked+span.sheet-tab1,
+input.sheet-tab2:checked+span.sheet-tab2,
+input.sheet-tab3:checked+span.sheet-tab3,
+input.sheet-tab4:checked+span.sheet-tab4,
+input.sheet-tab5:checked+span.sheet-tab5,
+input.sheet-tab6:checked+span.sheet-tab6,
+input.sheet-tab7:checked+span.sheet-tab7,
+input.sheet-tab8:checked+span.sheet-tab8,
+input.sheet-tab21:checked+span.sheet-tab21,
+input.sheet-tab22:checked+span.sheet-tab22 {
+    background: var(--color-accent-teal);
+    color: var(--color-bg);
+}
+
+input.sheet-tab:hover+span.sheet-tab {
+    border-color: var(--color-accent-teal);
+    color: var(--color-accent-teal);
+    z-index: 1;
+}
+
+input.sheet-tab:checked+span.sheet-tab {
+    z-index: 3;
+}
+
+
+/* END Main sheet tabs */
+
+
+/* START Div hide for compartments */
+
+input.sheet-compartment {
+    float: left;
+}
+
+input.sheet-compartment~div.sheet-compartment {
+    display: none;
+}
+
+input.sheet-compartment:checked~div.sheet-compartment {
+    display: inline;
+}
+
+div.sheet-compartmentcontainer {
+    width: 20em;
+    height: 10em;
+}
+
+/* END Div hide for compartments */
+
+/* --- CORE SECTION LAYOUT --- */
+.sheet-core-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    width: 100%;
+    align-items: flex-start;
+    border-top: 1px solid var(--color-border);
+}
+
+.sheet-core-col:first-child {
+    flex: 0 0 300px;
+    width: 300px;
+}
+
+.sheet-core-col:nth-child(2) {
+    flex: 1;
+}
+
+.sheet-panel {
+    background: transparent;
+    padding: 0 15px 0 0;
+    height: 100%;
+}
+
+.sheet-core-col+.sheet-core-col .sheet-panel {
+    border-right: none;
+    padding-left: 15px;
+    padding-right: 0;
+}
+
+.sheet-core-col:last-child .sheet-panel {
+    border-right: none;
+    padding-right: 0;
+}
+
+.sheet-skilltitle {
+    color: var(--color-accent-teal);
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    font-family: var(--font-ui);
+    letter-spacing: 0.05em;
+    margin-bottom: 8px;
+}
+
+.sheet-broadskill {
+    color: var(--color-text);
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+.sheet-armor-input {
+    background: rgba(255, 255, 255, 0.05) !important;
+    border: 1px solid var(--color-border) !important;
+    width: 3.5em !important;
+    border-radius: 4px !important;
+    font-size: 1em !important;
+    padding: 2px !important;
+    text-align: center;
+    font-family: var(--font-data);
+}
+
+.sheet-armor-input:focus {
+    border-color: var(--color-accent-teal) !important;
+    background: rgba(0, 210, 223, 0.1) !important;
+    outline: none;
+}
+
+/* --- BUTTON STYLES --- */
+button[type="roll"] {
+    background: transparent !important;
+    border: none !important;
+    color: var(--color-accent-teal) !important;
+    font-size: 1.3rem !important;
+    cursor: pointer !important;
+    padding: 0 !important;
+    margin: 0 4px !important;
+    transition: all 0.2s ease !important;
+    box-shadow: none !important;
+    vertical-align: middle;
+}
+
+button[type="roll"]:hover {
+    color: var(--color-accent-yellow) !important;
+    text-shadow: 0 0 8px rgba(248, 204, 58, 0.4);
+    transform: scale(1.1);
+}
+
+/* --- DUAL ROLL BUTTONS (Trained/Untrained) --- */
+.sheet-roll-container {
+    display: inline-block;
+    position: relative;
+    width: 28px;
+    height: 24px;
+    vertical-align: middle;
+}
+
+.sheet-roll-container button[type="roll"] {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 !important;
+}
+
+.sheet-trained-check {
+    grid-column: 4;
+}
+
+.sheet-trained-check-placeholder {
+    grid-column: 4;
+    width: 38px;
+}
+
+.sheet-roll-container {
+    grid-column: 1;
+}
+
+/* Toggle Logic for Unified Skill Button */
+.sheet-trained-check:checked ~ .sheet-roll-container .sheet-roll-skill {
+    color: var(--color-accent-teal) !important;
+    opacity: 1;
+    filter: drop-shadow(0 0 2px rgba(0, 210, 223, 0.3));
+}
+
+.sheet-trained-check:not(:checked) ~ .sheet-roll-container .sheet-roll-skill {
+    color: var(--color-text-dim) !important;
+    opacity: 0.5;
+}
+
+.sheet-roll-skill:hover {
+    transform: translate(-50%, -50%) scale(1.2) !important;
+    opacity: 1 !important;
+    filter: drop-shadow(0 0 5px var(--color-accent-teal));
+}
+
+.sheet-trained-check:checked ~ .sheet-roll-container .sheet-roll-skill:hover {
+    color: var(--color-accent-yellow) !important;
+    filter: drop-shadow(0 0 5px var(--color-accent-yellow));
+}
+
+/* Trained Only Warning (used in Workers) */
+.sheet-trained-only-msg {
+    color: #ef4444 !important; /* Red */
+}
+
+/* Highlight skill name when trained (underscored) */
+.sheet-trained-check:checked ~ .sheet-skill-name {
+    font-weight: bold !important;
+}
+
+.sheet-trained-check:checked ~ .sheet-skill-name .sheet-skill-name-text {
+    text-decoration: underline !important;
+}
+
+.sheet-trained-check-hidden:checked + .sheet-skill-group-box {
+    border-color: var(--color-accent-yellow) !important;
+}
+
+.sheet-trained-only-msg {
+    color: #ef4444 !important; /* Red */
+}
+
+.sheet-trained-only-msg:hover::after {
+    content: "Trained Only";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #ef4444;
+    color: white;
+    font-size: 0.7rem;
+    padding: 2px 6px;
+    border-radius: 4px;
+    white-space: nowrap;
+    pointer-events: none;
+    z-index: 100;
+}
+
+button[type="roll"]::before {
+    content: "t" !important;
+    font-family: "dicefontd20" !important;
+}
+
+/* Repeating sections controls */
+.repcontrol {
+    margin-top: 10px;
+}
+
+.repcontrol_add,
+.repcontrol_edit,
+.repcontrol_del {
+    background: transparent !important;
+    color: var(--color-text-dim) !important;
+    border: 1px solid var(--color-border) !important;
+    border-radius: 4px !important;
+    padding: 2px 10px !important;
+    font-family: var(--font-ui) !important;
+    font-size: 0.75rem !important;
+    text-transform: uppercase !important;
+    font-weight: 800 !important;
+    letter-spacing: 0.05em !important;
+    transition: all 0.2s ease !important;
+    height: auto !important;
+    margin: 4px !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+}
+
+.repcontrol_add:hover {
+    color: var(--color-accent-teal) !important;
+    border-color: var(--color-accent-teal) !important;
+    background: rgba(0, 210, 223, 0.05) !important;
+    box-shadow: 0 0 8px rgba(0, 210, 223, 0.2) !important;
+}
+
+.repcontrol_edit:active,
+.repcontrol_edit:hover {
+    color: var(--color-accent-yellow) !important;
+    border-color: var(--color-accent-yellow) !important;
+    background: rgba(248, 204, 58, 0.05) !important;
+    box-shadow: 0 0 8px rgba(248, 204, 58, 0.2) !important;
+}
+
+.repcontrol_del:hover {
+    color: #ef4444 !important;
+    border-color: #ef4444 !important;
+    background: rgba(239, 68, 68, 0.05) !important;
+}
+
+.sheet-grid-abilities {
+    display: grid;
+    grid-template-columns: 105px 1fr 65px;
+    gap: 10px 15px;
+    align-items: center;
+}
+
+.sheet-grid-action {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 25px;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+.sheet-grid-movement {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 20px;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+.sheet-label-grid {
+    color: var(--color-accent-teal);
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    font-family: var(--font-ui);
+    letter-spacing: 0.06em;
+    margin-bottom: 2px;
+}
+
+.sheet-grid-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.sheet-footer-section {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.sheet-grid-personal {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px 15px;
+}
+
+.sheet-footer-textarea {
+    width: 100% !important;
+    min-height: 80px !important;
+    background: rgba(255, 255, 255, 0.1) !important;
+    border: none !important;
+    border-bottom: 2px solid var(--color-border) !important;
+    border-radius: 0 !important;
+    color: var(--color-text) !important;
+    font-family: var(--font-ui) !important;
+    font-size: 1.15rem !important;
+    padding: 6px !important;
+    resize: vertical;
+}
+
+.sheet-footer-textarea:focus {
+    border-color: var(--color-accent-teal) !important;
+    background: rgba(0, 210, 223, 0.05) !important;
+    outline: none;
+}
+
+.sheet-field-inline {
+    display: flex;
+    align-items: flex-end;
+    gap: 8px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 2px;
+}
+
+.sheet-field-inline label {
+    flex: 0 0 auto;
+    width: 60px;
+    margin-bottom: 0;
+    font-size: 0.85rem;
+    font-family: var(--font-ui);
+    color: var(--color-accent-teal);
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.sheet-field-inline input {
+    flex: 1;
+    background: transparent !important;
+    border: none !important;
+    color: var(--color-text) !important;
+    font-family: var(--font-ui) !important;
+    font-size: 1.15rem !important;
+    padding: 0 !important;
+    height: auto !important;
+}
+
+.sheet-field-inline input:focus {
+    color: var(--color-accent-teal) !important;
+    outline: none !important;
+}
+
+/* Attack Forms & Weapons Grid */
+.sheet-grid-attack-row,
+.sheet-header-attack {
+    display: grid;
+    grid-template-columns: 28px minmax(70px, 1fr) 72px 35px 25px 35px 35px 115px 130px;
+    gap: 3px;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 2px 4px;
+    box-sizing: border-box;
+}
+
+.sheet-grid-attack-row input {
+    width: 100% !important;
+    min-width: 0 !important;
+    padding: 1px 2px !important;
+    height: 1.4rem !important;
+    display: block !important;
+    box-sizing: border-box !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-radius: 2px !important;
+    background: rgba(255, 255, 255, 0.05) !important;
+    text-align: center;
+    margin: 0 !important;
+}
+
+.sheet-grid-attack-row input[name*="form"],
+.sheet-grid-attack-row input[placeholder] {
+    text-align: left;
+    padding-left: 4px !important;
+}
+
+.sheet-header-attack {
+    background: rgba(0, 210, 223, 0.05);
+    border-radius: 4px;
+    margin-bottom: 8px;
+    border-bottom: none;
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.sheet-header-attack div {
+    color: var(--color-accent-teal);
+    text-align: center;
+}
+
+.sheet-header-attack div:nth-child(2) {
+    text-align: left;
+}
+
+.sheet-triplet {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid var(--color-border);
+    border-radius: 0;
+    padding: 0 4px;
+    height: 20px !important;
+    line-height: normal !important;
+    box-sizing: border-box;
+    margin: 0 !important;
+    vertical-align: middle;
+}
+
+.sheet-triplet input {
+    flex: 1;
+    min-width: 0;
+    text-align: center;
+    padding: 0 !important;
+    border: none !important;
+    background: transparent !important;
+    font-size: 1.15rem !important;
+    font-family: var(--font-ui) !important;
+    height: 100% !important;
+}
+
+.sheet-triplet span {
+    font-size: 1.1rem;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-text-dim);
+    margin: 0 2px;
+}
+
+.sheet-score-triplet {
+    width: 7.2em !important;
+    /* more room for 3 values and slashes */
+    padding: 0 !important;
+}
+
+.sheet-score-triplet input {
+    width: 2.1em !important;
+    flex: none !important;
+}
+
+.sheet-score-triplet span {
+    color: var(--color-text-dim);
+    font-size: 1.1rem;
+    padding: 0;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+}
+
+/* Weapon Data Section */
+.sheet-grid-weapon-row,
+.sheet-header-weapons {
+    display: grid;
+    grid-template-columns: 32px minmax(180px, 6fr) 45px 75px 105px 65px 55px;
+    gap: 8px 10px;
+    align-items: center;
+    padding: 2px 6px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    box-sizing: border-box;
+}
+
+.sheet-grid-weapon-row input {
+    width: 100% !important;
+    min-width: 0 !important;
+    padding: 1px 3px !important;
+    height: 1.4rem !important;
+    display: block !important;
+    box-sizing: border-box !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-radius: 2px !important;
+    background: transparent !important;
+    text-align: center;
+}
+
+.sheet-grid-weapon-row input.sheet-weapon-name {
+    text-align: left;
+    padding-left: 6px !important;
+}
+
+.sheet-header-weapons {
+    background: rgba(0, 210, 223, 0.05);
+    border-radius: 4px;
+    margin: 15px 0 6px 0;
+    border-bottom: none;
+}
+
+.sheet-header-weapons div {
+    color: var(--color-accent-teal);
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 0.72rem;
+    text-align: center;
+}
+
+.sheet-header-weapons div:first-child {
+    text-align: left;
+}
+
+.sheet-weapon-name-span {
+    color: var(--color-text-main);
+    font-weight: 600;
+    font-size: 0.85rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    min-height: 1.2em;
+    display: block;
+}
+
+/* Ensure inputs don't explode the grid */
+.sheet-grid-weapon-row input {
+    width: 100% !important;
+    text-align: center;
+}
+
+.sheet-grid-weapon-row .sheet-triplet input {
+    flex: 1;
+}
+
+/* Repeating weapons fieldset */
+fieldset.repeating_weapons {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+/* Weapon data sub-row */
+.sheet-grid-weapon-data-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 4px 10px;
+    padding: 3px 4px 5px 34px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    margin-bottom: 2px;
+    background: rgba(0, 0, 0, 0.15);
+    border-radius: 0 0 3px 3px;
+}
+
+.sheet-grid-weapon-data-row input {
+    width: 4em !important;
+    min-width: 0 !important;
+    padding: 1px 3px !important;
+    height: 1.3rem !important;
+    box-sizing: border-box !important;
+    border: none !important;
+    border-bottom: 2px solid var(--color-border) !important;
+    border-radius: 0 !important;
+    background: rgba(255, 255, 255, 0.1) !important;
+    text-align: center;
+    font-size: 1.15rem !important;
+    font-family: var(--font-ui);
+}
+
+.sheet-grid-weapon-data-row .sheet-triplet {
+    width: auto;
+}
+
+.sheet-grid-weapon-data-row .sheet-triplet input {
+    width: 3.5em !important;
+}
+
+.sheet-wdata-label {
+    color: var(--color-accent-teal);
+    font-size: 0.85rem;
+    font-family: var(--font-ui);
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    white-space: nowrap;
+}
+
+/* 2-row attack form layout */
+.sheet-attackform-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 8px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.sheet-attackform-row {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: flex-end;
+    /* Align labels properly */
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.sheet-damage-triplet {
+    width: auto !important;
+    min-width: 8.5em;
+    gap: 1px;
+}
+
+.sheet-damage-triplet input {
+    text-align: center;
+    width: 2.8em !important;
+    flex: none !important;
+}
+
+.sheet-damage-triplet .sheet-damage-type {
+    width: 1.5em !important;
+    font-size: 0.85rem !important;
+    color: var(--color-accent-blue) !important;
+}
+
+.sheet-attackform-field {
+    display: flex;
+    flex-direction: column;
+    gap: 2px !important;
+    justify-content: flex-end;
+    /* Push field to bottom */
+}
+
+.sheet-attackform-label {
+    font-size: 0.7rem;
+    font-family: var(--font-ui);
+    color: var(--color-accent-teal);
+    text-transform: uppercase;
+    font-weight: 800;
+    height: 12px !important;
+    line-height: 12px !important;
+    display: block !important;
+}
+
+.sheet-attackform-buttons {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 4px;
+    margin-right: 12px;
+    align-self: center;
+}
+
+.sheet-attackform-buttons button[type="roll"] {
+    width: 60px !important;
+    height: 18px !important;
+    font-size: 9px !important;
+    padding: 0 2px !important;
+    margin: 0 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-panel);
+    color: var(--color-accent-teal);
+    border: 1px solid var(--color-border);
+    border-radius: 3px;
+    font-family: var(--font-data);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.sheet-attackform-row button[type="roll"] {
+    margin-top: 0;
+}
+
+
+/* Theme Switching Specific Adjustments */
+.sheet-theme-control[value="1"]~.sheet-overall-wrapper .sheet-neon-text-glitch {
+    text-shadow: 2px 2px 0px rgba(0, 210, 223, 0.2), -2px -2px 0px rgba(248, 204, 58, 0.2);
+    color: var(--color-accent-teal);
+    animation: none;
+    /* Reduce eye strain in light mode */
+}
+
+.sheet-theme-control[value="1"]~.sheet-overall-wrapper .sheet-field label {
+    color: var(--color-text);
+}
+
+.sheet-theme-control[value="1"]~.sheet-overall-wrapper .sheet-panel {
+    border-color: var(--color-border);
+}
+
+.sheet-theme-control[value="1"]~.sheet-overall-wrapper input[type="text"],
+.sheet-theme-control[value="1"]~.sheet-overall-wrapper input[type="number"],
+.sheet-theme-control[value="1"]~.sheet-overall-wrapper select,
+.sheet-theme-control[value="1"]~.sheet-overall-wrapper textarea,
+.sheet-theme-control[value="1"]~.sheet-overall-wrapper .sheet-triplet {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid var(--color-border);
+}
+
+.sheet-theme-control[value="1"]~.sheet-overall-wrapper .sheet-scoredisabled {
+    background-color: #f8fafc !important;
+}
+
+.sheet-theme-control[value="1"]~.sheet-overall-wrapper .sheet-skill-header-row {
+    background: #e2e8f0;
+    color: #1e293b;
+}
+
+.sheet-theme-control[value="1"]~.sheet-overall-wrapper .sheet-skill-row:nth-child(even) {
+    background-color: #f1f5f9;
+}
+
+.sheet-theme-control[value="1"]~.sheet-overall-wrapper .sheet-skill-group-box {
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+/* --- FONT SIZE ACCESSIBILITY OVERRIDES --- */
+
+/* When font-size control is "1" (Enlarged) */
+.sheet-font-control[value="1"]~.sheet-overall-wrapper {
+    font-size: 1.1rem;
+}
+
+.sheet-font-control[value="1"]~.sheet-overall-wrapper input,
+.sheet-font-control[value="1"]~.sheet-overall-wrapper select,
+.sheet-font-control[value="1"]~.sheet-overall-wrapper textarea {
+    font-size: 1.1rem !important;
+    height: 24px !important;
+}
+
+.sheet-font-control[value="1"]~.sheet-overall-wrapper .sheet-skill-name {
+    font-size: 1.05rem;
+}
+
+.sheet-font-control[value="1"]~.sheet-overall-wrapper .sheet-skill-header-row {
+    font-size: 0.95em;
+}
+
+.sheet-font-control[value="1"]~.sheet-overall-wrapper .sheet-skill-score-cell {
+    font-size: 1rem;
+}
+
+.sheet-font-control[value="1"]~.sheet-overall-wrapper .sheet-field label {
+    font-size: 1rem;
+}
+
+.sheet-font-control[value="1"]~.sheet-overall-wrapper .sheet-field input {
+    font-size: 1.3rem;
+}
+
+.sheet-font-control[value="1"]~.sheet-overall-wrapper .sheet-label-grid {
+    font-size: 0.95rem;
+}
+
+.sheet-font-control[value="1"]~.sheet-overall-wrapper .sheet-broadskill {
+    font-size: 1.15rem;
+}
+
+.sheet-font-control[value="1"]~.sheet-overall-wrapper .sheet-skilltitle {
+    font-size: 1.25em;
+}
+
+.sheet-font-control[value="1"]~.sheet-overall-wrapper .sheet-attackform-label {
+    font-size: 0.9rem;
+}
+
+.sheet-font-control[value="1"]~.sheet-overall-wrapper .sheet-triplet input {
+    font-size: 1rem !important;
+}
+
+.sheet-font-control[value="1"]~.sheet-overall-wrapper .sheet-weapon-name {
+    font-size: 1.1rem !important;
+}
+
+.sheet-font-control[value="1"]~.sheet-overall-wrapper .sheet-tab {
+    font-size: 1.15rem !important;
+}
+
+.sheet-font-control[value="1"]~.sheet-overall-wrapper .sheet-header-attack,
+.sheet-font-control[value="1"]~.sheet-overall-wrapper .sheet-header-weapons div,
+.sheet-font-control[value="1"]~.sheet-overall-wrapper .sheet-skill-header-row {
+    font-size: 0.95rem !important;
+}
+
+.sheet-font-control[value="1"]~.sheet-overall-wrapper .sheet-triplet span,
+.sheet-font-control[value="1"]~.sheet-overall-wrapper .sheet-score-triplet span,
+.sheet-font-control[value="1"]~.sheet-overall-wrapper .sheet-label-span {
+    font-size: 1.25rem !important;
+}
+
+.sheet-font-control[value="1"]~.sheet-overall-wrapper .sheet-wdata-label,
+.sheet-font-control[value="1"]~.sheet-overall-wrapper .sheet-attackform-label,
+.sheet-font-control[value="1"]~.sheet-overall-wrapper .sheet-skill-ability-label {
+    font-size: 0.95rem !important;
+}
+
+.sheet-font-control[value="1"]~.sheet-overall-wrapper .sheet-damage-triplet .sheet-damage-type {
+    font-size: 1rem !important;
+}
+
+.sheet-font-control[value="1"]~.sheet-overall-wrapper .sheet-field label,
+.sheet-font-control[value="1"]~.sheet-overall-wrapper .sheet-field-inline label {
+    font-size: 1.05rem !important;
+}
+
+.sheet-font-control[value="1"]~.sheet-overall-wrapper .sheet-field-inline input {
+    font-size: 1.3rem !important;
+}
+
+.sheet-font-control[value="1"]~.sheet-overall-wrapper .sheet-weapon-name-span,
+.sheet-font-control[value="1"]~.sheet-overall-wrapper .sheet-skill-name {
+    font-size: 1.1rem !important;
+}
+
+.sheet-font-control[value="1"]~.sheet-overall-wrapper .sheet-broadskill,
+.sheet-font-control[value="1"]~.sheet-overall-wrapper .sheet-broadskilluntrained,
+.sheet-font-control[value="1"]~.sheet-overall-wrapper .sheet-specskill,
+.sheet-font-control[value="1"]~.sheet-overall-wrapper .sheet-specskilluntrained {
+    font-size: 1.1rem !important;
+}
+
+.sheet-font-control[value="1"]~.sheet-overall-wrapper .sheet-skilltitle {
+    font-size: 1.3rem !important;
+}
+
+.sheet-font-control[value="1"]~.sheet-overall-wrapper h1,
+.sheet-font-control[value="1"]~.sheet-overall-wrapper h2,
+.sheet-font-control[value="1"]~.sheet-overall-wrapper h3 {
+    font-size: 1.5rem !important;
+}
+
+.sheet-font-control[value="1"]~.sheet-overall-wrapper .sheet-label-grid {
+    font-size: 1rem !important;
+}
+
+.sheet-font-control[value="1"]~.sheet-overall-wrapper .sheet-attackform-row input,
+.sheet-font-control[value="1"]~.sheet-overall-wrapper .sheet-grid-attack-row input,
+.sheet-font-control[value="1"]~.sheet-overall-wrapper .sheet-grid-weapon-row input {
+    height: 1.8rem !important;
+}
+
+.sheet-font-control[value="1"]~.sheet-overall-wrapper .repcontrol_add,
+.sheet-font-control[value="1"]~.sheet-overall-wrapper .repcontrol_edit,
+.sheet-font-control[value="1"]~.sheet-overall-wrapper .repcontrol_del {
+    font-size: 1rem !important;
+    padding: 2px 8px !important;
+}
+
+.sheet-skill-link {
+    text-decoration: none !important;
+    font-size: 0.8em;
+    margin-left: 4px;
+    color: var(--color-text-dim) !important;
+    transition: color 0.2s ease;
+    vertical-align: middle;
+    background: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+    cursor: pointer;
+    line-height: normal;
+}
+
+.sheet-skill-link::before {
+    display: none !important;
+    content: "" !important;
+    font-family: inherit !important;
+}
+
+.sheet-skill-link:hover {
+    color: var(--color-accent-teal) !important;
+    text-shadow: 0 0 5px rgba(0, 255, 255, 0.3);
+    background: transparent !important;
+}
+
+.sheet-font-control[value="1"]~.sheet-overall-wrapper .sheet-skill-link {
+    font-size: 1rem !important;
+}
+
+.sheet-font-control[value="1"]~.sheet-overall-wrapper .sheet-tablecell {
+    font-size: 1rem !important;
+}
+
+/* --- SKILL INFO & TOOLTIPS --- */
+.sheet-skill-info {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    margin-left: 6px;
+    cursor: help;
+    vertical-align: middle;
+}
+
+.sheet-info-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 14px;
+    height: 14px;
+    font-size: 10px;
+    font-family: var(--font-data);
+    font-weight: bold;
+    color: #3b82f6;
+    border: 1px solid rgba(59, 130, 246, 0.5);
+    border-radius: 50%;
+    opacity: 0.5;
+    transition: all 0.2s ease;
+    line-height: 1;
+}
+
+.sheet-skill-info:hover .sheet-info-icon {
+    opacity: 1;
+    color: #60a5fa;
+    border-color: #3b82f6;
+    background-color: rgba(59, 130, 246, 0.1);
+    box-shadow: 0 0 8px rgba(59, 130, 246, 0.3);
+}
+
+.sheet-tooltip {
+    visibility: hidden;
+    position: absolute;
+    bottom: 150%;
+    left: -10px;
+    background: #0f172a;
+    color: #f8fafc;
+    text-align: left;
+    padding: 6px 10px;
+    border-radius: 4px;
+    border: 1px solid #3b82f6;
+    font-size: 1.75rem;
+    font-family: var(--font-ui);
+    white-space: nowrap;
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease, bottom 0.3s ease;
+    pointer-events: none;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    min-width: 120px;
+}
+
+.sheet-tooltip::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 15px;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #3b82f6 transparent transparent transparent;
+}
+
+.sheet-skill-info:hover .sheet-tooltip {
+    visibility: visible;
+    opacity: 1;
+    bottom: 165%;
+}
+
+.sheet-tooltip-cost {
+    color: var(--color-accent-teal, #00d2df);
+    font-weight: 700;
+    font-size: 1.875rem;
+}
+
+.sheet-tooltip-separator {
+    display: block;
+    height: 1px;
+    background: rgba(59, 130, 246, 0.3);
+    margin: 2px 0;
+}
+
+.sheet-tooltip-rank {
+    color: #cbd5e1;
+    font-size: 1.625rem;
+    line-height: 1.3;
+}
+
+.sheet-tooltip-rank b {
+    color: #60a5fa;
+    font-weight: 700;
+    font-family: var(--font-data);
+    margin-right: 4px;
+}
+
+/* Ensure tooltips are not cut off by grid-scrolling if any */
+.sheet-skill-name {
+    overflow: visible !important;
+}
+
+/* --- TOOLTIP STYLES --- */
+.sheet-skill-info {
+    position: relative;
+    display: inline-block;
+    cursor: help;
+}
+
+.sheet-info-icon {
+    font-family: "pictos";
+    font-size: 1.1em;
+    color: var(--color-accent-teal);
+    margin-left: 4px;
+    opacity: 0.6;
+    transition: opacity 0.2s;
+}
+
+.sheet-info-icon:hover {
+    opacity: 1;
+}
+
+.sheet-tooltip {
+    visibility: hidden;
+    width: 250px;
+    background-color: var(--color-panel);
+    color: var(--color-text);
+    text-align: left;
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    padding: 10px;
+    position: absolute;
+    z-index: 100;
+    bottom: 125%;
+    left: -10px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    font-family: var(--font-ui);
+    font-size: 0.85rem;
+    line-height: 1.4;
+    white-space: normal;
+    pointer-events: none;
+}
+
+.sheet-skill-info:hover .sheet-tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Tooltip arrow */
+.sheet-tooltip::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 15px;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: var(--color-border) transparent transparent transparent;
+}
+
+/* ===== ROLL TEMPLATE: ALTERNITY ATTACK ===== */
+.sheet-rolltemplate-alternity-attack .sheet-template-container {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    border: 1px solid #334155;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.1);
+    font-family: "Outfit", "Inter", "Roboto", sans-serif;
+    color: #f1f5f9;
+    padding: 6px;
+    min-width: 240px;
+    max-width: 280px;
+}
+
+.sheet-rolltemplate-alternity-attack .sheet-template-header {
+    background: rgba(15, 23, 42, 0.8);
+    backdrop-filter: blur(4px);
+    color: #38bdf8; /* Light Sky Blue */
+    padding: 8px 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    letter-spacing: 0.05em;
+    border-bottom: 1px solid rgba(51, 65, 85, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 6px 6px 0 0;
+}
+
+.sheet-rolltemplate-alternity-attack .sheet-template-control {
+    font-size: 0.75em;
+    background: rgba(56, 189, 248, 0.15);
+    border: 1px solid rgba(56, 189, 248, 0.3);
+    color: #38bdf8;
+    padding: 2px 6px;
+    border-radius: 4px;
+    text-transform: none;
+    font-weight: 600;
+}
+
+.sheet-rolltemplate-alternity-attack .sheet-template-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 10px;
+    font-size: 0.85em;
+    border-bottom: 1px solid rgba(51, 65, 85, 0.2);
+}
+
+.sheet-rolltemplate-alternity-attack .sheet-template-row span {
+    font-weight: 700;
+    color: #94a3b8;
+    font-size: 0.85em;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+.sheet-rolltemplate-alternity-attack .sheet-template-body {
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.sheet-rolltemplate-alternity-attack .sheet-template-attack-row {
+    padding: 8px 10px;
+    background-color: rgba(30, 41, 59, 0.4);
+    border: 1px solid rgba(51, 65, 85, 0.3);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.sheet-rolltemplate-alternity-attack .sheet-template-label {
+    font-weight: 700;
+    font-size: 0.8em;
+    color: #cbd5e1;
+    flex: 1;
+}
+
+.sheet-rolltemplate-alternity-attack .sheet-template-result {
+    font-family: "Share Tech Mono", "Courier New", monospace;
+    font-weight: 700;
+    color: #ffffff;
+    background: #020617;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 1.05em;
+    box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.8);
+    border: 1px solid #334155;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+    min-width: 2em;
+    text-align: center;
+}
+
+.sheet-rolltemplate-alternity-attack .sheet-template-action {
+    flex: 0 0 auto;
+    min-width: 65px;
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.sheet-rolltemplate-alternity-attack .sheet-template-hit-ama {
+    color: #fbbf24; /* Amber */
+    font-weight: 800;
+    text-shadow: 0 0 6px rgba(251, 191, 36, 0.6);
+    font-size: 0.85em;
+    text-transform: uppercase;
+}
+
+.sheet-rolltemplate-alternity-attack .sheet-template-hit-goo {
+    color: #a855f7; /* Purple */
+    font-weight: 800;
+    text-shadow: 0 0 6px rgba(168, 85, 247, 0.6);
+    font-size: 0.85em;
+    text-transform: uppercase;
+}
+
+.sheet-rolltemplate-alternity-attack .sheet-template-hit-ord {
+    color: #0d9488; /* Teal */
+    font-weight: 800;
+    text-shadow: 0 0 6px rgba(13, 148, 136, 0.6);
+    font-size: 0.85em;
+    text-transform: uppercase;
+}
+
+.sheet-rolltemplate-alternity-attack .sheet-template-miss {
+    color: #64748b; /* Slate */
+    font-style: italic;
+    font-size: 0.85em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.sheet-rolltemplate-alternity-attack .sheet-template-notes {
+    font-size: 0.8em;
+    margin-top: 6px;
+    padding: 6px;
+    border-top: 1px solid rgba(51, 65, 85, 0.3);
+    font-style: italic;
+    color: #94a3b8;
+}
+
+.sheet-rolltemplate-alternity-attack .sheet-template-notes span {
+    font-weight: 700;
+    font-style: normal;
+    color: #cbd5e1;
+    text-transform: uppercase;
+    font-size: 0.95em;
+}
+
+/* Force same font size and style for all inline rolls */
+.sheet-rolltemplate-alternity-attack .inlinerollresult {
+    background-color: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+    font-size: 1em !important;
+    font-weight: 700 !important;
+    color: #ffffff !important;
+}
+
+
+/* ===== ROLL TEMPLATE: ALTERNITY DAMAGE ===== */
+.sheet-rolltemplate-alternity-damage .sheet-template-container {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    border: 1px solid #334155;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.1);
+    font-family: "Outfit", "Inter", "Roboto", sans-serif;
+    color: #f1f5f9;
+    padding: 6px;
+    min-width: 240px;
+    max-width: 280px;
+}
+
+.sheet-rolltemplate-alternity-damage .sheet-template-header {
+    background: rgba(15, 23, 42, 0.8);
+    backdrop-filter: blur(4px);
+    color: #f43f5e; /* Vibrant Rose / Red for damage */
+    padding: 8px 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    letter-spacing: 0.05em;
+    border-bottom: 1px solid rgba(51, 65, 85, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 6px 6px 0 0;
+}
+
+.sheet-rolltemplate-alternity-damage .sheet-template-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 10px;
+    font-size: 0.85em;
+    background-color: rgba(30, 41, 59, 0.4);
+    border: 1px solid rgba(51, 65, 85, 0.3);
+    border-radius: 6px;
+    margin: 8px;
+}
+
+.sheet-rolltemplate-alternity-damage .sheet-template-row span {
+    font-weight: 700;
+    color: #94a3b8;
+    font-size: 0.85em;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+.sheet-rolltemplate-alternity-damage .sheet-template-result {
+    font-family: "Share Tech Mono", "Courier New", monospace;
+    font-weight: 700;
+    color: #ffffff;
+    background: #020617;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 1.05em;
+    box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.8);
+    border: 1px solid #334155;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+}
+
+.sheet-rolltemplate-alternity-damage .sheet-template-notes {
+    font-size: 0.8em;
+    margin-top: 6px;
+    padding: 6px;
+    border-top: 1px solid rgba(51, 65, 85, 0.3);
+    font-style: italic;
+    color: #94a3b8;
+}
+
+.sheet-rolltemplate-alternity-damage .sheet-template-notes span {
+    font-weight: 700;
+    font-style: normal;
+    color: #cbd5e1;
+    text-transform: uppercase;
+    font-size: 0.95em;
+}
+
+/* Force same font size and style for all inline rolls */
+.sheet-rolltemplate-alternity-damage .inlinerollresult {
+    background-color: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+    font-size: 1em !important;
+    font-weight: 700 !important;
+    color: #ffffff !important;
+}
+
+
+/* ===== ALTERNITY SKILL ROLL TEMPLATE ===== */
+.sheet-rolltemplate-alternity-skill .sheet-template-container {
+    border: 2px solid #334155;
+    background-color: #0f172a; /* Dark background */
+    border-radius: 6px;
+    overflow: hidden;
+    font-family: "Inter", "Segoe UI", Roboto, sans-serif;
+    color: #f8fafc; /* Light text */
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+    max-width: 280px;
+}
+
+.sheet-rolltemplate-alternity-skill .sheet-template-container {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    border: 1px solid #334155;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.1);
+    font-family: "Inter", "Roboto", sans-serif;
+    color: #f1f5f9;
+}
+
+.sheet-rolltemplate-alternity-skill .sheet-template-header {
+    background: rgba(15, 23, 42, 0.8);
+    backdrop-filter: blur(4px);
+    color: #38bdf8; /* Light Sky Blue */
+    padding: 8px 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.75em; /* Reduced from 0.9em */
+    letter-spacing: 0.05em;
+    border-bottom: 1px solid rgba(51, 65, 85, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sheet-rolltemplate-alternity-skill .sheet-template-body {
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.sheet-rolltemplate-alternity-skill .sheet-template-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 10px;
+    font-size: 0.95em;
+    border-radius: 6px;
+    background-color: rgba(30, 41, 59, 0.4);
+    border: 1px solid rgba(51, 65, 85, 0.3);
+}
+
+.sheet-rolltemplate-alternity-skill .sheet-template-row span:first-child {
+    font-weight: 700;
+    color: #94a3b8;
+    font-size: 0.75em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.sheet-rolltemplate-alternity-skill .sheet-template-result {
+    font-family: "Share Tech Mono", "Courier New", monospace;
+    font-weight: 700;
+    color: #ffffff;
+    background: #020617;
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-size: 1em; /* Reduced from 1.2em to match targets */
+    box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.8);
+    border: 1px solid #334155;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+}
+
+/* Force same font size and style for all inline rolls (Ordinary/Good/Amazing) */
+.sheet-rolltemplate-alternity-skill .inlinerollresult {
+    background-color: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+    font-size: 1em !important;
+    font-weight: 700 !important;
+    color: #ffffff !important;
+}
+
+.sheet-rolltemplate-alternity-skill .sheet-template-untrained {
+    background-color: rgba(245, 158, 11, 0.1);
+    color: #fbbf24;
+    padding: 6px 10px;
+    border-radius: 4px;
+    font-size: 0.8em;
+    font-weight: 600;
+    text-align: center;
+    border: 1px dashed rgba(245, 158, 11, 0.3);
+    margin-top: 4px;
+}
+
+.sheet-rolltemplate-alternity-skill .sheet-template-footer {
+    padding: 8px 12px;
+    background: rgba(15, 23, 42, 0.5);
+    font-size: 0.75em;
+    border-top: 1px solid rgba(51, 65, 85, 0.5);
+    text-align: right;
+}
+
+.sheet-rolltemplate-alternity-skill .sheet-template-footer a {
+    color: #38bdf8;
+    text-decoration: none;
+    font-weight: 700;
+    transition: color 0.2s, text-shadow 0.2s;
+}
+
+.sheet-rolltemplate-alternity-skill .sheet-template-footer a:hover {
+    color: #7dd3fc;
+    text-shadow: 0 0 5px rgba(56, 189, 248, 0.5);
+}
+
+/* ===== ROLL TEMPLATE: ALTERNITY ARMOR ===== */
+.sheet-rolltemplate-alternity-armor .sheet-template-container {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    border: 1px solid #334155;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.1);
+    font-family: "Outfit", "Inter", "Roboto", sans-serif;
+    color: #f1f5f9;
+    padding: 6px;
+    min-width: 240px;
+    max-width: 280px;
+}
+
+.sheet-rolltemplate-alternity-armor .sheet-template-header {
+    background: rgba(15, 23, 42, 0.8);
+    backdrop-filter: blur(4px);
+    color: #a855f7; /* Vibrant Purple for Armor/Protection */
+    padding: 8px 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    letter-spacing: 0.05em;
+    border-bottom: 1px solid rgba(51, 65, 85, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 6px 6px 0 0;
+}
+
+.sheet-rolltemplate-alternity-armor .sheet-template-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 10px;
+    background-color: rgba(30, 41, 59, 0.4);
+    border: 1px solid rgba(51, 65, 85, 0.3);
+    border-radius: 6px;
+    margin: 8px;
+}
+
+.sheet-rolltemplate-alternity-armor .sheet-template-row span {
+    font-weight: 700;
+    color: #94a3b8;
+    font-size: 0.85em;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+.sheet-rolltemplate-alternity-armor .sheet-template-result {
+    font-family: "Share Tech Mono", "Courier New", monospace;
+    font-weight: 700;
+    color: #ffffff;
+    background: #020617;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 1.3em;
+    box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.8);
+    border: 1px solid #334155;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+}
+
+.sheet-rolltemplate-alternity-armor .sheet-template-notes {
+    font-size: 0.8em;
+    margin-top: 6px;
+    padding: 6px;
+    border-top: 1px solid rgba(51, 65, 85, 0.3);
+    font-style: italic;
+    color: #94a3b8;
+}
+
+.sheet-rolltemplate-alternity-armor .sheet-template-notes span {
+    font-weight: 700;
+    font-style: normal;
+    color: #cbd5e1;
+    text-transform: uppercase;
+    font-size: 0.95em;
+}
+
+/* Force same font size and style for all inline rolls */
+.sheet-rolltemplate-alternity-armor .inlinerollresult {
+    background-color: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+    font-size: 1.25em !important;
+    font-weight: 700 !important;
+    color: #ffffff !important;
+}
+
+/* Preserve newlines in all roll template notes sections */
+.sheet-rolltemplate-alternity-attack .sheet-template-notes,
+.sheet-rolltemplate-alternity-damage .sheet-template-notes,
+.sheet-rolltemplate-alternity-armor .sheet-template-notes {
+    white-space: pre-wrap !important;
+}
+
