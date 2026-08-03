@@ -1,0 +1,187 @@
+{
+  "step": 7,
+  "bio": {
+    "name": "Scout K'Vann",
+    "player": "NPC",
+    "concept": "Sesheyan Frontier Pathfinding Scout",
+    "motivation": "Map unknown star systems on the Fringe",
+    "attitude": "Observant & Wild",
+    "traits": "Camouflage hunting cloak, keen multi-directional ears.",
+    "gender": "Female",
+    "age": "24 standard years",
+    "height": "1.58 m",
+    "weight": "50 kg",
+    "hair": "Dark fur accents",
+    "eyes": "Emerald green"
+  },
+  "faction": "borealis",
+  "species": "sesheyan",
+  "background": "field-researcher",
+  "profession": "free-agent",
+  "abilities": {
+    "STR": 10,
+    "DEX": 13,
+    "CON": 10,
+    "INT": 10,
+    "WIL": 10,
+    "PER": 12
+  },
+  "skills": {
+    "athletics": {
+      "ranks": 1,
+      "isBroad": true,
+      "standardCost": 3,
+      "category": "Other"
+    },
+    "awareness": {
+      "ranks": 1,
+      "isBroad": true,
+      "standardCost": 3,
+      "category": "Other",
+      "isSpeciesFree": true
+    },
+    "stamina": {
+      "ranks": 1,
+      "isBroad": true,
+      "standardCost": 3,
+      "category": "Other",
+      "isSpeciesFree": true
+    },
+    "interaction": {
+      "ranks": 1,
+      "isBroad": true,
+      "standardCost": 3,
+      "category": "Social",
+      "isSpeciesFree": true
+    },
+    "knowledge": {
+      "ranks": 1,
+      "isBroad": true,
+      "standardCost": 4,
+      "category": "Technical",
+      "isSpeciesFree": true
+    },
+    "vehicle-operation": {
+      "ranks": 1,
+      "isBroad": true,
+      "standardCost": 3,
+      "category": "Technical"
+    },
+    "survival": {
+      "ranks": 1,
+      "isBroad": true,
+      "standardCost": 3,
+      "category": "Other"
+    },
+    "navigation": {
+      "ranks": 1,
+      "isBroad": true,
+      "standardCost": 6,
+      "category": "Other"
+    },
+    "melee-combat": {
+      "ranks": 1,
+      "isBroad": true,
+      "standardCost": 6,
+      "category": "Combat",
+      "isSpeciesFree": true
+    },
+    "acrobatics": {
+      "ranks": 1,
+      "isBroad": true,
+      "standardCost": 7,
+      "category": "Other",
+      "isSpeciesFree": true
+    },
+    "covert-ops": {
+      "ranks": 1,
+      "isBroad": true,
+      "standardCost": 8,
+      "category": "Social"
+    },
+    "climb": {
+      "ranks": 5,
+      "isBroad": false,
+      "standardCost": 2,
+      "category": "Other"
+    },
+    "jump": {
+      "ranks": 7,
+      "isBroad": false,
+      "standardCost": 1,
+      "category": "Other"
+    },
+    "swim": {
+      "ranks": 4,
+      "isBroad": false,
+      "standardCost": 2,
+      "category": "Other"
+    },
+    "throw": {
+      "ranks": 6,
+      "isBroad": false,
+      "standardCost": 2,
+      "category": "Other"
+    },
+    "intuition": {
+      "ranks": 6,
+      "isBroad": false,
+      "standardCost": 3,
+      "category": "Other"
+    },
+    "perception": {
+      "ranks": 6,
+      "isBroad": false,
+      "standardCost": 3,
+      "category": "Other"
+    },
+    "psionic-sense": {
+      "ranks": 6,
+      "isBroad": false,
+      "standardCost": 4,
+      "category": "Other"
+    },
+    "bargain": {
+      "ranks": 6,
+      "isBroad": false,
+      "standardCost": 3,
+      "category": "Social"
+    }
+  },
+  "perks": [
+    {
+      "id": "observant",
+      "name": "Observant",
+      "level": 1
+    }
+  ],
+  "flaws": [
+    {
+      "id": "primitive",
+      "name": "Primitive",
+      "level": 1
+    }
+  ],
+  "isFinalized": true,
+  "earnedAP": 75,
+  "advancementSkills": {
+    "climb": 4,
+    "jump": 4,
+    "swim": 3,
+    "throw": 3,
+    "intuition": 3,
+    "perception": 3,
+    "psionic-sense": 3,
+    "bargain": 3
+  },
+  "advancementAbilities": {
+    "DEX": 1
+  },
+  "advancementPerks": [],
+  "removedFlaws": [],
+  "equipment": "Frontier survival kit, planetary survey scanner, gliding wings, high-power binocular scope, flare gun, water purifier.",
+  "weapons": "Frontier Hunting Rifle, Sesheyan Hunting Dagger",
+  "armor": "Reinforced Scout Leather (d4-1 LI)",
+  "credits": 460,
+  "notes": "Pathfinder and wildlife survey specialist mapping unexplored planetary biomes and alien flora."
+}

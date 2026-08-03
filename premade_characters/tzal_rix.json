@@ -1,0 +1,140 @@
+{
+  "step": 7,
+  "bio": {
+    "name": "T'zal \"Boomer\" Rix",
+    "player": "Premade / NPC",
+    "concept": "T'sa Orion League Tech-Op Demolitions Specialist & Ordnance Gunner",
+    "motivation": "Prove that small reptilians can be master combat engineers and demolitions experts for the Orion League.",
+    "attitude": "Boisterous, tech-savvy, loves high-yield breach charges and heavy guns.",
+    "traits": "Scratched blast-goggles, bandolier of charge detonators, tool belt loaded with wire-cutters.",
+    "gender": "Male",
+    "age": "26 standard years",
+    "height": "1.45 m",
+    "weight": "50 kg",
+    "hair": "None (mottled bronze scales)",
+    "eyes": "Crimson red"
+  },
+  "faction": "orion",
+  "species": "tsa",
+  "background": "mercenary",
+  "profession": "tech-op",
+  "abilities": {
+    "STR": 9,
+    "DEX": 14,
+    "CON": 9,
+    "INT": 12,
+    "WIL": 8,
+    "PER": 8
+  },
+  "skills": {
+    "athletics": {
+      "ranks": 1,
+      "isBroad": true,
+      "isSpeciesFree": true
+    },
+    "covert-ops": {
+      "ranks": 1,
+      "isBroad": true,
+      "isSpeciesFree": true
+    },
+    "stamina": {
+      "ranks": 1,
+      "isBroad": true,
+      "isSpeciesFree": true
+    },
+    "knowledge": {
+      "ranks": 1,
+      "isBroad": true,
+      "isSpeciesFree": true
+    },
+    "awareness": {
+      "ranks": 1,
+      "isBroad": true,
+      "isSpeciesFree": true
+    },
+    "interaction": {
+      "ranks": 1,
+      "isBroad": true,
+      "isSpeciesFree": true
+    },
+    "demolitions": {
+      "ranks": 1,
+      "isBroad": true
+    },
+    "vehicle-operation": {
+      "ranks": 1,
+      "isBroad": true
+    },
+    "heavy-weapons": {
+      "ranks": 1,
+      "isBroad": true
+    },
+    "modern-ranged-weapons": {
+      "ranks": 1,
+      "isBroad": true
+    },
+    "armor-operation": {
+      "ranks": 1,
+      "isBroad": true
+    },
+    "shotgun": {
+      "ranks": 3,
+      "isBroad": false
+    },
+    "combat-armor": {
+      "ranks": 6,
+      "isBroad": false
+    },
+    "land-vehicle": {
+      "ranks": 7,
+      "isBroad": false
+    },
+    "perception": {
+      "ranks": 8,
+      "isBroad": false
+    },
+    "intuition": {
+      "ranks": 8,
+      "isBroad": false
+    },
+    "jump": {
+      "ranks": 7,
+      "isBroad": false
+    }
+  },
+  "perks": [
+    {
+      "id": "good-luck",
+      "name": "Good Luck",
+      "level": 1,
+      "cost": 3
+    }
+  ],
+  "flaws": [
+    {
+      "id": "temper",
+      "name": "Temper",
+      "level": 1,
+      "bonus": 2
+    }
+  ],
+  "isFinalized": true,
+  "earnedAP": 75,
+  "advancementAbilities": {
+    "INT": 1
+  },
+  "advancementPerks": [],
+  "removedFlaws": [],
+  "equipment": "High-yield Breach Charges, Remote Detonators, Ordnance Tool Kit, Orion Heavy Auto-Shotgun, Blast Shield Vest, Orion Guild Badge.",
+  "weapons": "Orion Auto-Shotgun (d4+3w/d6+2w), Breach Charges (d8+2w), Heavy Plasma Tube (d6+4w)",
+  "armor": "Demolitions Blast Vest (d4+2 LI, d4 HI)",
+  "credits": 3100,
+  "notes": "Orion League combat engineer and breach specialist. Nicknamed 'Boomer' for his tactical mastery of high explosives.",
+  "advancementSkills": {
+    "combat-armor": 3,
+    "land-vehicle": 5,
+    "perception": 5,
+    "intuition": 5,
+    "jump": 4
+  }
+}

@@ -1,0 +1,183 @@
+{
+  "step": 7,
+  "bio": {
+    "name": "Director Marcus Vance",
+    "player": "NPC",
+    "concept": "Voidcorp Executive Handler",
+    "motivation": "Expand Voidcorp territory and streamline assets",
+    "attitude": "Cold & Calculating",
+    "traits": "Immaculate executive suit, sleek ocular implant.",
+    "gender": "Male",
+    "age": "52 standard years",
+    "height": "1.80 m",
+    "weight": "80 kg",
+    "hair": "Slicked black",
+    "eyes": "Dark brown"
+  },
+  "faction": "voidcorp",
+  "species": "human",
+  "background": "corporate-enforcer",
+  "profession": "free-agent",
+  "abilities": {
+    "STR": 9,
+    "DEX": 10,
+    "CON": 10,
+    "INT": 13,
+    "WIL": 12,
+    "PER": 12
+  },
+  "skills": {
+    "athletics": {
+      "ranks": 1,
+      "isBroad": true,
+      "standardCost": 3,
+      "category": "Other",
+      "isSpeciesFree": true
+    },
+    "awareness": {
+      "ranks": 1,
+      "isBroad": true,
+      "standardCost": 3,
+      "category": "Other",
+      "isSpeciesFree": true
+    },
+    "stamina": {
+      "ranks": 1,
+      "isBroad": true,
+      "standardCost": 3,
+      "category": "Other",
+      "isSpeciesFree": true
+    },
+    "interaction": {
+      "ranks": 1,
+      "isBroad": true,
+      "standardCost": 3,
+      "category": "Social",
+      "isSpeciesFree": true
+    },
+    "knowledge": {
+      "ranks": 1,
+      "isBroad": true,
+      "standardCost": 4,
+      "category": "Technical",
+      "isSpeciesFree": true
+    },
+    "vehicle-operation": {
+      "ranks": 1,
+      "isBroad": true,
+      "standardCost": 3,
+      "category": "Technical",
+      "isSpeciesFree": true
+    },
+    "business": {
+      "ranks": 1,
+      "isBroad": true,
+      "standardCost": 4,
+      "category": "Social"
+    },
+    "bargain": {
+      "ranks": 5,
+      "isBroad": false,
+      "standardCost": 3,
+      "category": "Social"
+    },
+    "covert-ops": {
+      "ranks": 1,
+      "isBroad": true,
+      "standardCost": 8,
+      "category": "Social"
+    },
+    "climb": {
+      "ranks": 4,
+      "isBroad": false,
+      "standardCost": 2,
+      "category": "Other"
+    },
+    "jump": {
+      "ranks": 6,
+      "isBroad": false,
+      "standardCost": 1,
+      "category": "Other"
+    },
+    "swim": {
+      "ranks": 4,
+      "isBroad": false,
+      "standardCost": 2,
+      "category": "Other"
+    },
+    "throw": {
+      "ranks": 6,
+      "isBroad": false,
+      "standardCost": 2,
+      "category": "Other"
+    },
+    "intuition": {
+      "ranks": 6,
+      "isBroad": false,
+      "standardCost": 3,
+      "category": "Other"
+    },
+    "perception": {
+      "ranks": 6,
+      "isBroad": false,
+      "standardCost": 3,
+      "category": "Other"
+    },
+    "psionic-sense": {
+      "ranks": 5,
+      "isBroad": false,
+      "standardCost": 4,
+      "category": "Other"
+    },
+    "endurance": {
+      "ranks": 5,
+      "isBroad": false,
+      "standardCost": 4,
+      "category": "Other"
+    },
+    "charm": {
+      "ranks": 5,
+      "isBroad": false,
+      "standardCost": 3,
+      "category": "Social"
+    }
+  },
+  "perks": [
+    {
+      "id": "filthy-rich",
+      "name": "Filthy Rich",
+      "level": 1
+    }
+  ],
+  "flaws": [
+    {
+      "id": "spineless",
+      "name": "Spineless",
+      "level": 1
+    }
+  ],
+  "isFinalized": true,
+  "earnedAP": 75,
+  "advancementSkills": {
+    "bargain": 4,
+    "climb": 3,
+    "jump": 3,
+    "swim": 3,
+    "throw": 3,
+    "intuition": 3,
+    "perception": 3,
+    "psionic-sense": 2,
+    "endurance": 2,
+    "charm": 2
+  },
+  "advancementAbilities": {
+    "PER": 1
+  },
+  "advancementPerks": [],
+  "removedFlaws": [],
+  "equipment": "Voidcorp executive cipher deck, satellite uplink, contract binder, expensive chrono, biometric security passcard.",
+  "weapons": "Concealed Holdout Blaster, Monofilament Dagger",
+  "armor": "Reinforced Corporate Suit (d4-1 LI / d4-2 HI)",
+  "credits": 5200,
+  "notes": "Calculated Voidcorp executive handler who enforces corporate interests across frontier colonies with cold efficiency."
+}

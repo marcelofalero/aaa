@@ -1,0 +1,144 @@
+{
+  "step": 7,
+  "bio": {
+    "name": "K'skik \"Quickdraw\" Vrax",
+    "player": "Premade / NPC",
+    "concept": "T'sa Mercenary Pistol Specialist & Ship's Gunslinger",
+    "motivation": "Earn enough corporate bounties in the Verge to buy back his clan's ancestral trade frigate.",
+    "attitude": "Hyperactive, cocky, lightning-fast reflexes",
+    "traits": "Fidgety reptilian tail, custom dual hip-holsters, cybernetic target-lock monocle.",
+    "gender": "Male",
+    "age": "24 standard years",
+    "height": "1.42 m",
+    "weight": "48 kg",
+    "hair": "None (emerald green scales)",
+    "eyes": "Golden yellow"
+  },
+  "faction": "orion",
+  "species": "tsa",
+  "background": "bounty-hunter",
+  "profession": "combat-spec",
+  "abilities": {
+    "STR": 8,
+    "DEX": 15,
+    "CON": 8,
+    "INT": 9,
+    "WIL": 8,
+    "PER": 12
+  },
+  "skills": {
+    "athletics": {
+      "ranks": 1,
+      "isBroad": true,
+      "isSpeciesFree": true
+    },
+    "covert-ops": {
+      "ranks": 1,
+      "isBroad": true,
+      "isSpeciesFree": true
+    },
+    "stamina": {
+      "ranks": 1,
+      "isBroad": true,
+      "isSpeciesFree": true
+    },
+    "knowledge": {
+      "ranks": 1,
+      "isBroad": true,
+      "isSpeciesFree": true
+    },
+    "awareness": {
+      "ranks": 1,
+      "isBroad": true,
+      "isSpeciesFree": true
+    },
+    "interaction": {
+      "ranks": 1,
+      "isBroad": true,
+      "isSpeciesFree": true
+    },
+    "modern-ranged-weapons": {
+      "ranks": 1,
+      "isBroad": true
+    },
+    "heavy-weapons": {
+      "ranks": 1,
+      "isBroad": true
+    },
+    "armor-operation": {
+      "ranks": 1,
+      "isBroad": true
+    },
+    "melee-combat": {
+      "ranks": 1,
+      "isBroad": true
+    },
+    "vehicle-operation": {
+      "ranks": 1,
+      "isBroad": true
+    },
+    "combat-armor": {
+      "ranks": 3,
+      "isBroad": false
+    },
+    "blade": {
+      "ranks": 3,
+      "isBroad": false
+    },
+    "land-vehicle": {
+      "ranks": 6,
+      "isBroad": false
+    },
+    "perception": {
+      "ranks": 8,
+      "isBroad": false
+    },
+    "intuition": {
+      "ranks": 8,
+      "isBroad": false
+    },
+    "jump": {
+      "ranks": 8,
+      "isBroad": false
+    },
+    "swim": {
+      "ranks": 8,
+      "isBroad": false
+    }
+  },
+  "perks": [
+    {
+      "id": "good-luck",
+      "name": "Good Luck",
+      "level": 1,
+      "cost": 3
+    }
+  ],
+  "flaws": [
+    {
+      "id": "temper",
+      "name": "Temper",
+      "level": 1,
+      "bonus": 2
+    }
+  ],
+  "isFinalized": true,
+  "earnedAP": 75,
+  "advancementAbilities": {
+    "DEX": 1
+  },
+  "advancementPerks": [],
+  "removedFlaws": [],
+  "equipment": "Dual Orion Light Charge Pistols, Submachine Gun, Quick-release hip holsters, Target-lock monocle visor, Orion Mercenary Guild badge.",
+  "weapons": "Dual Orion Light Charge Pistols (d4+1w/d6+1w), SMG (d4+2w)",
+  "armor": "Tactical Combat Vest (d4-1 LI, d4-2 HI)",
+  "credits": 3200,
+  "notes": "Fastest draw in the Orion League mercenary contingent. Specializes in dual-wielding light charge sidearms.",
+  "advancementSkills": {
+    "land-vehicle": 3,
+    "perception": 5,
+    "intuition": 5,
+    "jump": 5,
+    "swim": 5
+  }
+}

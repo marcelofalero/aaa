@@ -1,0 +1,182 @@
+{
+  "step": 7,
+  "bio": {
+    "name": "S'tik Swifthand",
+    "player": "NPC",
+    "concept": "Tsa Master Starship Engineer",
+    "motivation": "Build the fastest starship drive in the Frontier",
+    "attitude": "Hyperactive & Ingenious",
+    "traits": "Reptilian crest, nimble four-clawed hands.",
+    "gender": "Male",
+    "age": "30 standard years",
+    "height": "1.35 m",
+    "weight": "40 kg",
+    "hair": "Copper scales",
+    "eyes": "Golden yellow"
+  },
+  "faction": "starmech",
+  "species": "tsa",
+  "background": "innovator",
+  "profession": "tech-op",
+  "abilities": {
+    "STR": 8,
+    "DEX": 13,
+    "CON": 10,
+    "INT": 13,
+    "WIL": 9,
+    "PER": 10
+  },
+  "skills": {
+    "athletics": {
+      "ranks": 1,
+      "isBroad": true,
+      "standardCost": 3,
+      "category": "Other",
+      "isSpeciesFree": true
+    },
+    "awareness": {
+      "ranks": 1,
+      "isBroad": true,
+      "standardCost": 3,
+      "category": "Other",
+      "isSpeciesFree": true
+    },
+    "stamina": {
+      "ranks": 1,
+      "isBroad": true,
+      "standardCost": 3,
+      "category": "Other",
+      "isSpeciesFree": true
+    },
+    "interaction": {
+      "ranks": 1,
+      "isBroad": true,
+      "standardCost": 3,
+      "category": "Social",
+      "isSpeciesFree": true
+    },
+    "knowledge": {
+      "ranks": 1,
+      "isBroad": true,
+      "standardCost": 4,
+      "category": "Technical",
+      "isSpeciesFree": true
+    },
+    "vehicle-operation": {
+      "ranks": 1,
+      "isBroad": true,
+      "standardCost": 3,
+      "category": "Technical"
+    },
+    "technical-science": {
+      "ranks": 1,
+      "isBroad": true,
+      "standardCost": 7,
+      "category": "Technical"
+    },
+    "engineering": {
+      "ranks": 5,
+      "isBroad": false
+    },
+    "repair": {
+      "ranks": 6,
+      "isBroad": false,
+      "standardCost": 3,
+      "category": "Technical"
+    },
+    "system-operation": {
+      "ranks": 1,
+      "isBroad": true,
+      "standardCost": 3,
+      "category": "Technical"
+    },
+    "covert-ops": {
+      "ranks": 1,
+      "isBroad": true,
+      "standardCost": 8,
+      "category": "Social",
+      "isSpeciesFree": true
+    },
+    "computer-science": {
+      "ranks": 1,
+      "isBroad": true,
+      "standardCost": 7,
+      "category": "Technical"
+    },
+    "climb": {
+      "ranks": 6,
+      "isBroad": false,
+      "standardCost": 2,
+      "category": "Other"
+    },
+    "jump": {
+      "ranks": 5,
+      "isBroad": false
+    },
+    "swim": {
+      "ranks": 6,
+      "isBroad": false,
+      "standardCost": 2,
+      "category": "Other"
+    },
+    "throw": {
+      "ranks": 6,
+      "isBroad": false,
+      "standardCost": 2,
+      "category": "Other"
+    },
+    "intuition": {
+      "ranks": 6,
+      "isBroad": false
+    },
+    "perception": {
+      "ranks": 6,
+      "isBroad": false,
+      "standardCost": 3,
+      "category": "Other"
+    },
+    "bargain": {
+      "ranks": 6,
+      "isBroad": false,
+      "standardCost": 3,
+      "category": "Social"
+    }
+  },
+  "perks": [
+    {
+      "id": "reflexes",
+      "name": "Reflexes",
+      "level": 1
+    }
+  ],
+  "flaws": [
+    {
+      "id": "obsessed",
+      "name": "Obsessed",
+      "level": 1
+    }
+  ],
+  "isFinalized": true,
+  "earnedAP": 75,
+  "advancementSkills": {
+    "engineering": 3,
+    "repair": 3,
+    "climb": 3,
+    "jump": 3,
+    "swim": 3,
+    "throw": 3,
+    "intuition": 3,
+    "perception": 3,
+    "bargain": 3
+  },
+  "advancementAbilities": {
+    "DEX": 1
+  },
+  "advancementPerks": [],
+  "removedFlaws": [],
+  "equipment": "Master engineering kit, fusion welder, plasma torch, wire crimpers, ship systems diagnostic deck, spare circuitry.",
+  "weapons": "Blaster Pistol, Shock Torch",
+  "armor": "Engineering Utility Vest (d4-1 LI)",
+  "credits": 1350,
+  "notes": "Genius T'sa engineer constantly overclocking starship sub-light engines and power grids beyond safety specs."
+}

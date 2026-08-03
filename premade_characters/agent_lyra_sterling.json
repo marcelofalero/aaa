@@ -1,0 +1,176 @@
+{
+  "step": 7,
+  "bio": {
+    "name": "Agent Lyra Sterling",
+    "player": "NPC",
+    "concept": "Covert Intelligence Specialist",
+    "motivation": "Infiltrate hostile corporate operations secretly",
+    "attitude": "Charming & Secretive",
+    "traits": "Sleek tailored clothing, concealed translator ring.",
+    "gender": "Female",
+    "age": "29 standard years",
+    "height": "1.68 m",
+    "weight": "57 kg",
+    "hair": "Jet black (cropped sleek)",
+    "eyes": "Steel grey"
+  },
+  "faction": "insight",
+  "species": "human",
+  "background": "ghost-agent",
+  "profession": "free-agent",
+  "abilities": {
+    "STR": 9,
+    "DEX": 12,
+    "CON": 10,
+    "INT": 12,
+    "WIL": 10,
+    "PER": 12
+  },
+  "skills": {
+    "athletics": {
+      "ranks": 1,
+      "isBroad": true,
+      "standardCost": 3,
+      "category": "Other",
+      "isSpeciesFree": true
+    },
+    "awareness": {
+      "ranks": 1,
+      "isBroad": true,
+      "standardCost": 3,
+      "category": "Other",
+      "isSpeciesFree": true
+    },
+    "stamina": {
+      "ranks": 1,
+      "isBroad": true,
+      "standardCost": 3,
+      "category": "Other",
+      "isSpeciesFree": true
+    },
+    "interaction": {
+      "ranks": 1,
+      "isBroad": true,
+      "standardCost": 3,
+      "category": "Social",
+      "isSpeciesFree": true
+    },
+    "knowledge": {
+      "ranks": 1,
+      "isBroad": true,
+      "standardCost": 4,
+      "category": "Technical",
+      "isSpeciesFree": true
+    },
+    "vehicle-operation": {
+      "ranks": 1,
+      "isBroad": true,
+      "standardCost": 3,
+      "category": "Technical",
+      "isSpeciesFree": true
+    },
+    "deception": {
+      "ranks": 1,
+      "isBroad": true,
+      "standardCost": 5,
+      "category": "Social"
+    },
+    "bluff": {
+      "ranks": 5,
+      "isBroad": false,
+      "standardCost": 3,
+      "category": "Social"
+    },
+    "disguise": {
+      "ranks": 6,
+      "isBroad": false,
+      "standardCost": 3,
+      "category": "Social"
+    },
+    "covert-ops": {
+      "ranks": 1,
+      "isBroad": true,
+      "standardCost": 8,
+      "category": "Social"
+    },
+    "climb": {
+      "ranks": 6,
+      "isBroad": false,
+      "standardCost": 2,
+      "category": "Other"
+    },
+    "jump": {
+      "ranks": 6,
+      "isBroad": false,
+      "standardCost": 1,
+      "category": "Other"
+    },
+    "swim": {
+      "ranks": 6,
+      "isBroad": false,
+      "standardCost": 2,
+      "category": "Other"
+    },
+    "throw": {
+      "ranks": 6,
+      "isBroad": false,
+      "standardCost": 2,
+      "category": "Other"
+    },
+    "intuition": {
+      "ranks": 6,
+      "isBroad": false,
+      "standardCost": 3,
+      "category": "Other"
+    },
+    "perception": {
+      "ranks": 6,
+      "isBroad": false,
+      "standardCost": 3,
+      "category": "Other"
+    },
+    "psionic-sense": {
+      "ranks": 5,
+      "isBroad": false,
+      "standardCost": 4,
+      "category": "Other"
+    }
+  },
+  "perks": [
+    {
+      "id": "great-looks",
+      "name": "Great Looks",
+      "level": 1
+    }
+  ],
+  "flaws": [
+    {
+      "id": "bad-luck",
+      "name": "Bad Luck",
+      "level": 1
+    }
+  ],
+  "isFinalized": true,
+  "earnedAP": 75,
+  "advancementSkills": {
+    "bluff": 4,
+    "disguise": 3,
+    "climb": 3,
+    "jump": 3,
+    "swim": 3,
+    "throw": 3,
+    "intuition": 3,
+    "perception": 3,
+    "psionic-sense": 2
+  },
+  "advancementAbilities": {
+    "DEX": 1
+  },
+  "advancementPerks": [],
+  "removedFlaws": [],
+  "equipment": "Encrypted micro-comms transponder, sub-dermal wiretap bug set, multi-frequency key bypass tool, forged diplomatic credentials, optical camouflage cloak.",
+  "weapons": "Needler Pistol, Suppressed Laser Pistol, Concealed Monofilament Knife",
+  "armor": "Stealth Weave Bodysuit (d4-1 LI / d4-2 HI)",
+  "credits": 1450,
+  "notes": "Operates in the shadows between Concord Intelligence and corporate syndicate networks. Expert in covert infiltration and counter-espionage."
+}

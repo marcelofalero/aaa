@@ -1,0 +1,189 @@
+{
+  "step": 7,
+  "bio": {
+    "name": "Sergeant Thorne",
+    "player": "NPC",
+    "concept": "Hardened Veterans Squad Leader",
+    "motivation": "Keep his squad alive through the Verge conflicts",
+    "attitude": "Gritty & Protective",
+    "traits": "Battle-worn power armor, buzz-cut gray hair.",
+    "gender": "Male",
+    "age": "39 standard years",
+    "height": "1.86 m",
+    "weight": "92 kg",
+    "hair": "Crew cut black",
+    "eyes": "Steel blue"
+  },
+  "faction": "concord",
+  "species": "human",
+  "background": "war-veteran",
+  "profession": "combat-spec",
+  "abilities": {
+    "STR": 12,
+    "DEX": 11,
+    "CON": 12,
+    "INT": 9,
+    "WIL": 11,
+    "PER": 9
+  },
+  "skills": {
+    "athletics": {
+      "ranks": 1,
+      "isBroad": true,
+      "standardCost": 3,
+      "category": "Other",
+      "isSpeciesFree": true
+    },
+    "awareness": {
+      "ranks": 1,
+      "isBroad": true,
+      "standardCost": 3,
+      "category": "Other",
+      "isSpeciesFree": true
+    },
+    "stamina": {
+      "ranks": 1,
+      "isBroad": true,
+      "standardCost": 3,
+      "category": "Other",
+      "isSpeciesFree": true
+    },
+    "interaction": {
+      "ranks": 1,
+      "isBroad": true,
+      "standardCost": 3,
+      "category": "Social",
+      "isSpeciesFree": true
+    },
+    "knowledge": {
+      "ranks": 1,
+      "isBroad": true,
+      "standardCost": 4,
+      "category": "Technical",
+      "isSpeciesFree": true
+    },
+    "vehicle-operation": {
+      "ranks": 1,
+      "isBroad": true,
+      "standardCost": 3,
+      "category": "Technical",
+      "isSpeciesFree": true
+    },
+    "armor-operation": {
+      "ranks": 1,
+      "isBroad": true,
+      "standardCost": 7,
+      "category": "Other"
+    },
+    "combat-armor": {
+      "ranks": 5,
+      "isBroad": false,
+      "standardCost": 3,
+      "category": "Other"
+    },
+    "heavy-weapons": {
+      "ranks": 1,
+      "isBroad": true,
+      "standardCost": 6,
+      "category": "Combat"
+    },
+    "modern-ranged-weapons": {
+      "ranks": 1,
+      "isBroad": true,
+      "standardCost": 6,
+      "category": "Combat"
+    },
+    "climb": {
+      "ranks": 5,
+      "isBroad": false,
+      "standardCost": 2,
+      "category": "Other"
+    },
+    "jump": {
+      "ranks": 4,
+      "isBroad": false,
+      "standardCost": 1,
+      "category": "Other"
+    },
+    "swim": {
+      "ranks": 4,
+      "isBroad": false,
+      "standardCost": 2,
+      "category": "Other"
+    },
+    "throw": {
+      "ranks": 4,
+      "isBroad": false,
+      "standardCost": 2,
+      "category": "Other"
+    },
+    "intuition": {
+      "ranks": 6,
+      "isBroad": false,
+      "standardCost": 3,
+      "category": "Other"
+    },
+    "perception": {
+      "ranks": 6,
+      "isBroad": false,
+      "standardCost": 3,
+      "category": "Other"
+    },
+    "psionic-sense": {
+      "ranks": 6,
+      "isBroad": false,
+      "standardCost": 4,
+      "category": "Other"
+    },
+    "endurance": {
+      "ranks": 6,
+      "isBroad": false,
+      "standardCost": 4,
+      "category": "Other"
+    },
+    "computer-operation": {
+      "ranks": 5,
+      "isBroad": false,
+      "standardCost": 2,
+      "category": "Technical"
+    }
+  },
+  "perks": [
+    {
+      "id": "fortitude",
+      "name": "Fortitude",
+      "level": 1
+    }
+  ],
+  "flaws": [
+    {
+      "id": "old-injury",
+      "name": "Old Injury",
+      "level": 1
+    }
+  ],
+  "isFinalized": true,
+  "earnedAP": 75,
+  "advancementSkills": {
+    "combat-armor": 4,
+    "climb": 4,
+    "jump": 3,
+    "swim": 3,
+    "throw": 3,
+    "intuition": 3,
+    "perception": 3,
+    "psionic-sense": 3,
+    "endurance": 3,
+    "computer-operation": 2
+  },
+  "advancementAbilities": {
+    "STR": 1
+  },
+  "advancementPerks": [],
+  "removedFlaws": [],
+  "equipment": "Squad comms unit, tactical grenade web, field rations, combat medical dressings, entrenching tool, signal flare.",
+  "weapons": "Assault Rifle, Frag Grenades (x3), Combat Knife",
+  "armor": "Heavy Infantry Combat Armor (d4+1 LI / d4+1 HI / d4-1 En)",
+  "credits": 720,
+  "notes": "Frontline squad leader whose tactical discipline and combat instincts have kept his squad alive through blood wars."
+}

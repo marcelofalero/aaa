@@ -1,0 +1,182 @@
+{
+  "step": 7,
+  "bio": {
+    "name": "K'rsha the Shadow",
+    "player": "NPC",
+    "concept": "Sesheyan Stealth Recon Specialist",
+    "motivation": "Eliminate targets threatening the pack",
+    "attitude": "Silent & Lethal",
+    "traits": "Six-winged leathery expanse, dark midnight scales.",
+    "gender": "Male",
+    "age": "27 standard years",
+    "height": "1.62 m",
+    "weight": "54 kg",
+    "hair": "Dark leathery hide",
+    "eyes": "Glowing crimson"
+  },
+  "faction": "nariac",
+  "species": "sesheyan",
+  "background": "outcast",
+  "profession": "free-agent",
+  "abilities": {
+    "STR": 10,
+    "DEX": 14,
+    "CON": 9,
+    "INT": 9,
+    "WIL": 10,
+    "PER": 12
+  },
+  "skills": {
+    "athletics": {
+      "ranks": 1,
+      "isBroad": true,
+      "standardCost": 3,
+      "category": "Other"
+    },
+    "awareness": {
+      "ranks": 1,
+      "isBroad": true,
+      "standardCost": 3,
+      "category": "Other",
+      "isSpeciesFree": true
+    },
+    "stamina": {
+      "ranks": 1,
+      "isBroad": true,
+      "standardCost": 3,
+      "category": "Other",
+      "isSpeciesFree": true
+    },
+    "interaction": {
+      "ranks": 1,
+      "isBroad": true,
+      "standardCost": 3,
+      "category": "Social",
+      "isSpeciesFree": true
+    },
+    "knowledge": {
+      "ranks": 1,
+      "isBroad": true,
+      "standardCost": 4,
+      "category": "Technical",
+      "isSpeciesFree": true
+    },
+    "vehicle-operation": {
+      "ranks": 1,
+      "isBroad": true,
+      "standardCost": 3,
+      "category": "Technical"
+    },
+    "stealth": {
+      "ranks": 5,
+      "isBroad": false,
+      "standardCost": 3,
+      "category": "Social"
+    },
+    "covert-ops": {
+      "ranks": 1,
+      "isBroad": true,
+      "standardCost": 8,
+      "category": "Social"
+    },
+    "melee-combat": {
+      "ranks": 1,
+      "isBroad": true,
+      "standardCost": 6,
+      "category": "Combat",
+      "isSpeciesFree": true
+    },
+    "acrobatics": {
+      "ranks": 1,
+      "isBroad": true,
+      "standardCost": 7,
+      "category": "Other",
+      "isSpeciesFree": true
+    },
+    "climb": {
+      "ranks": 6,
+      "isBroad": false,
+      "standardCost": 2,
+      "category": "Other"
+    },
+    "jump": {
+      "ranks": 6,
+      "isBroad": false,
+      "standardCost": 1,
+      "category": "Other"
+    },
+    "swim": {
+      "ranks": 6,
+      "isBroad": false,
+      "standardCost": 2,
+      "category": "Other"
+    },
+    "throw": {
+      "ranks": 6,
+      "isBroad": false,
+      "standardCost": 2,
+      "category": "Other"
+    },
+    "intuition": {
+      "ranks": 6,
+      "isBroad": false,
+      "standardCost": 3,
+      "category": "Other"
+    },
+    "perception": {
+      "ranks": 6,
+      "isBroad": false,
+      "standardCost": 3,
+      "category": "Other"
+    },
+    "psionic-sense": {
+      "ranks": 6,
+      "isBroad": false,
+      "standardCost": 4,
+      "category": "Other"
+    },
+    "computer-operation": {
+      "ranks": 5,
+      "isBroad": false,
+      "standardCost": 2,
+      "category": "Technical"
+    }
+  },
+  "perks": [
+    {
+      "id": "danger-sense",
+      "name": "Danger Sense",
+      "level": 1
+    }
+  ],
+  "flaws": [
+    {
+      "id": "primitive",
+      "name": "Primitive",
+      "level": 1
+    }
+  ],
+  "isFinalized": true,
+  "earnedAP": 75,
+  "advancementSkills": {
+    "stealth": 3,
+    "climb": 3,
+    "jump": 3,
+    "swim": 3,
+    "throw": 3,
+    "intuition": 3,
+    "perception": 3,
+    "psionic-sense": 3,
+    "computer-operation": 2
+  },
+  "advancementAbilities": {
+    "DEX": 1
+  },
+  "advancementPerks": [],
+  "removedFlaws": [],
+  "equipment": "Gliding wing harness, night-vision optics, camouflage cloak, climbing claws, grappling line, sound dampener.",
+  "weapons": "Sesheyan Shadow Blade, Silent Needle Rifle",
+  "armor": "Sesheyan Leather Harness (d4-1 LI)",
+  "credits": 420,
+  "notes": "Solitary Sesheyan night-hunter who moves silently through darkness, scouting enemy compounds from above."
+}

@@ -331,15 +331,15 @@
                     {
                         "id": "orlamu-clergy",
                         "name": "Miembro del Clero Orlamu",
-                        "summary": "Fuiste criado en los serenos templos de los Fraal, estudiando la conexión entre la mente y el cosmos.",
+                        "summary": "Fuiste criado en los serenos templos de la Teocracia Orlamu, donde la ciencia y el misticismo convergen.",
                         "favored_broad_skill": "[Firmeza]({{< relref \"/skills/resolve/\" >}})",
                         "url": "/es/backgrounds/orlamu-clergy/",
                         "skill_url": "/es/backgrounds/orlamu-clergy/",
-                        "favored_specialty_skills": "[Telepatía-Contacto]({{< relref \"/psionics/telepathy/#contact\" >}}) <br> [ESP- Empatía]({{< relref \"/psionics/esp/#empathy\" >}}) <br> [Bioquinesis-Curar]({{< relref \"/psionics/biokinesis/#heal\" >}}) <br> [Telequinesis-Escudo Cinético]({{< relref \"/psionics/telekinesis/#kinetic-shield\" >}})",
+                        "favored_specialty_skills": "[Ciencia Física-Física]({{< relref \"/skills/physical-science/#physics\" >}}) <br> [Navegación-Astrogación (Espacio de Impulso)]({{< relref \"/skills/navigation/#astrogationdrivespace\" >}}) <br> [Operación de Sistemas-Sensores]({{< relref \"/skills/system-operation/#sensors\" >}}) <br> [Voluntad-Voluntad Mental]({{< relref \"/skills/resolve/#mental-resolve\" >}}) <br> [Conocimiento-Investigar]({{< relref \"/skills/knowledge/#research\" >}})",
                         "favored_perks": "[Fe]({{< relref \"/perks_flaws/#faith\" >}}) <br> [Conciencia Psiónica]({{< relref \"/perks_flaws/#psionic-awareness\" >}})",
                         "flaw": "[Código de Honor]({{< relref \"/perks_flaws/#code-of-honor\" >}})",
-                        "equipment": "Túnicas sencillas de clero, un símbolo sagrado o foco meditativo.",
-                        "special_ability": "**Foco Psíquico:** Recibe un bono de -1 paso en todos los chequeos de [Voluntad]({{< relref \"/skills/resolve/\" >}}) al resistir el estrés mental no psiónico.",
+                        "equipment": "Túnicas sencillas de clero, un símbolo sagrado o foco meditativo, un escáner de mano y escrituras digitales encriptadas.",
+                        "special_ability": "**Foco Psíquico:** Recibe un bono de -1 paso en todos los chequeos de [Voluntad]({{< relref \"/skills/resolve/\" >}}) al resistir el estrés mental, miedo o fatiga, o al calcular coordenadas de salto en el espacio de impulso.",
                         "tendencies": ""
                     },
                     {

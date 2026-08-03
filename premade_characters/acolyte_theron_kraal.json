@@ -1,0 +1,171 @@
+{
+  "step": 7,
+  "bio": {
+    "name": "Acolyte Theron Kraal",
+    "player": "NPC",
+    "concept": "Void Society Mystic Navigator",
+    "motivation": "Decipher mysterious drive signatures in deep space",
+    "attitude": "Devout & Quiet",
+    "traits": "Dark hooded robes, glowing blue wrist focus.",
+    "gender": "Male",
+    "age": "34 standard years",
+    "height": "1.78 m",
+    "weight": "72 kg",
+    "hair": "Dark brown (monk-trimmed)",
+    "eyes": "Pale cerulean blue"
+  },
+  "faction": "orlamu",
+  "species": "human",
+  "background": "orlamu-clergy",
+  "profession": "mindwalker",
+  "abilities": {
+    "STR": 8,
+    "DEX": 10,
+    "CON": 9,
+    "INT": 12,
+    "WIL": 14,
+    "PER": 12
+  },
+  "skills": {
+    "athletics": {
+      "ranks": 1,
+      "isBroad": true,
+      "standardCost": 3,
+      "category": "Other",
+      "isSpeciesFree": true
+    },
+    "awareness": {
+      "ranks": 1,
+      "isBroad": true,
+      "standardCost": 3,
+      "category": "Other",
+      "isSpeciesFree": true
+    },
+    "stamina": {
+      "ranks": 1,
+      "isBroad": true,
+      "standardCost": 3,
+      "category": "Other",
+      "isSpeciesFree": true
+    },
+    "interaction": {
+      "ranks": 1,
+      "isBroad": true,
+      "standardCost": 3,
+      "category": "Social",
+      "isSpeciesFree": true
+    },
+    "knowledge": {
+      "ranks": 1,
+      "isBroad": true,
+      "standardCost": 4,
+      "category": "Technical",
+      "isSpeciesFree": true
+    },
+    "vehicle-operation": {
+      "ranks": 1,
+      "isBroad": true,
+      "standardCost": 3,
+      "category": "Technical",
+      "isSpeciesFree": true
+    },
+    "climb": {
+      "ranks": 5,
+      "isBroad": false,
+      "standardCost": 2,
+      "category": "Other"
+    },
+    "jump": {
+      "ranks": 4,
+      "isBroad": false,
+      "standardCost": 1,
+      "category": "Other"
+    },
+    "swim": {
+      "ranks": 4,
+      "isBroad": false,
+      "standardCost": 2,
+      "category": "Other"
+    },
+    "throw": {
+      "ranks": 4,
+      "isBroad": false,
+      "standardCost": 2,
+      "category": "Other"
+    },
+    "intuition": {
+      "ranks": 6,
+      "isBroad": false,
+      "standardCost": 3,
+      "category": "Other"
+    },
+    "perception": {
+      "ranks": 6,
+      "isBroad": false,
+      "standardCost": 3,
+      "category": "Other"
+    },
+    "psionic-sense": {
+      "ranks": 5,
+      "isBroad": false,
+      "standardCost": 4,
+      "category": "Other"
+    },
+    "endurance": {
+      "ranks": 5,
+      "isBroad": false,
+      "standardCost": 4,
+      "category": "Other"
+    },
+    "resist-pain": {
+      "ranks": 5,
+      "isBroad": false,
+      "standardCost": 5,
+      "category": "Other"
+    },
+    "computer-operation": {
+      "ranks": 5,
+      "isBroad": false,
+      "standardCost": 2,
+      "category": "Technical"
+    }
+  },
+  "perks": [
+    {
+      "id": "faith",
+      "name": "Faith",
+      "level": 1
+    }
+  ],
+  "flaws": [
+    {
+      "id": "phobia",
+      "name": "Phobia",
+      "level": 1
+    }
+  ],
+  "isFinalized": true,
+  "earnedAP": 75,
+  "advancementSkills": {
+    "climb": 4,
+    "jump": 3,
+    "swim": 3,
+    "throw": 3,
+    "intuition": 3,
+    "perception": 3,
+    "psionic-sense": 2,
+    "endurance": 2,
+    "resist-pain": 2,
+    "computer-operation": 2
+  },
+  "advancementAbilities": {
+    "CON": 1
+  },
+  "advancementPerks": [],
+  "removedFlaws": [],
+  "equipment": "Orlamu monastic robes, deep-space astrogation datapad, silver focus ring, planetary survey gear, emergency oxygen canister, 5 days rations.",
+  "weapons": "Stun Baton, Light Laser Pistol",
+  "armor": "Orlamu Reinforced Vest (d4-1 LI / d4-2 HI)",
+  "credits": 650,
+  "notes": "Serves as a mystic astrogator for Orlamu expeditions into uncharted sectors of the Verge. Dedicated to cataloging drive-space anomalies."
+}

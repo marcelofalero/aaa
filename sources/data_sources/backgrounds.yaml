@@ -773,33 +773,33 @@ items:
     localized:
       - en:
           description: |-
-            You were raised in the serene temples of the Fraal, studying the connection between the mind and the cosmos.
+            You were raised in the serene temples of the Orlamu Theocracy, where science and mysticism converge. You study the deep physics of drivespace, cosmology, and quantum mechanics as physical manifestations of cosmic consciousness.
           equipment: |-
-            Simple clergy robes, a holy symbol or meditative focus.
+            Simple clergy robes, a meditative focus or holy symbol, a handheld sensor scanner, and encrypted digital scriptures.
           favored_perks: |-
             [Faith]({{< relref "/perks_flaws/#faith" >}}) <br> [Psionic Awareness]({{< relref "/perks_flaws/#psionic-awareness" >}})
           favored_specialty_skills: |-
-            [Telepathy-Contact]({{< relref "/psionics/telepathy/#contact" >}}) <br> [ESP- Empathy]({{< relref "/psionics/esp/#empathy" >}}) <br> [Biokinesis-Heal]({{< relref "/psionics/biokinesis/#heal" >}}) <br> [Telekinesis-Kinetic Shield]({{< relref "/psionics/telekinesis/#kinetic-shield" >}})
+            [Physical Science-Physics]({{< relref "/skills/physical-science/#physics" >}}) <br> [Navigation-Astrogation (Drivespace)]({{< relref "/skills/navigation/#astrogationdrivespace" >}}) <br> [System Operation-Sensors]({{< relref "/skills/system-operation/#sensors" >}}) <br> [Resolve-Mental Resolve]({{< relref "/skills/resolve/#mental-resolve" >}}) <br> [Knowledge-Research]({{< relref "/skills/knowledge/#research" >}})
           flaw: |-
             [Code of Honor]({{< relref "/perks_flaws/#code-of-honor" >}})
           name: Orlamu Clergy Member
           special_ability: |-
-            **Psy-Focus:** Receive a -1 step bonus to all [Resolve]({{< relref "/skills/resolve/" >}}) checks when resisting non-psionic mental stress or fatigue.
+            **Psy-Focus:** Receive a -1 step bonus to all [Resolve]({{< relref "/skills/resolve/" >}}) checks when resisting mental stress, fear, or fatigue, or when calculating drivespace jump coordinates.
           tendencies: ''
       - es:
           description: |-
-            Fuiste criado en los serenos templos de los Fraal, estudiando la conexión entre la mente y el cosmos.
+            Fuiste criado en los serenos templos de la Teocracia Orlamu, donde la ciencia y el misticismo convergen. Estudias la física profunda del espacio de impulso, la cosmología y la mecánica cuántica como manifestaciones físicas de la conciencia cósmica.
           equipment: |-
-            Túnicas sencillas de clero, un símbolo sagrado o foco meditativo.
+            Túnicas sencillas de clero, un símbolo sagrado o foco meditativo, un escáner de mano y escrituras digitales encriptadas.
           favored_perks: |-
             [Fe]({{< relref "/perks_flaws/#faith" >}}) <br> [Conciencia Psiónica]({{< relref "/perks_flaws/#psionic-awareness" >}})
           favored_specialty_skills: |-
-            [Telepatía-Contacto]({{< relref "/psionics/telepathy/#contact" >}}) <br> [ESP- Empatía]({{< relref "/psionics/esp/#empathy" >}}) <br> [Bioquinesis-Curar]({{< relref "/psionics/biokinesis/#heal" >}}) <br> [Telequinesis-Escudo Cinético]({{< relref "/psionics/telekinesis/#kinetic-shield" >}})
+            [Ciencia Física-Física]({{< relref "/skills/physical-science/#physics" >}}) <br> [Navegación-Astrogación (Espacio de Impulso)]({{< relref "/skills/navigation/#astrogationdrivespace" >}}) <br> [Operación de Sistemas-Sensores]({{< relref "/skills/system-operation/#sensors" >}}) <br> [Voluntad-Voluntad Mental]({{< relref "/skills/resolve/#mental-resolve" >}}) <br> [Conocimiento-Investigar]({{< relref "/skills/knowledge/#research" >}})
           flaw: |-
             [Código de Honor]({{< relref "/perks_flaws/#code-of-honor" >}})
           name: Miembro del Clero Orlamu
           special_ability: |-
-            **Foco Psíquico:** Recibe un bono de -1 paso en todos los chequeos de [Voluntad]({{< relref "/skills/resolve/" >}}) al resistir el estrés mental no psiónico.
+            **Foco Psíquico:** Recibe un bono de -1 paso en todos los chequeos de [Voluntad]({{< relref "/skills/resolve/" >}}) al resistir el estrés mental, miedo o fatiga, o al calcular coordenadas de salto en el espacio de impulso.
           tendencies: ''
     url: /backgrounds/orlamu-clergy/
   outcast:
