@@ -858,7 +858,7 @@ document.addEventListener('DOMContentLoaded', () => {
       flawBonus += (rawBonus || 0);
     });
 
-    let totalSkillBudget = baseSkillPoints - perkCost + flawBonus;
+    let totalSkillBudget = baseSkillPoints;
     let skillPtsSpent = rep.creationSPSpent !== undefined ? rep.creationSPSpent : 0;
     let broadSkillCount = 0;
     let psionicBroadCount = 0;

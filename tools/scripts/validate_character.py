@@ -200,9 +200,8 @@ def validate_character_json(file_path, verbose=False):
         elif isinstance(f, str):
             flaw_sp_bonus += 3
             
-    total_sp_budget = base_sp - perk_sp_cost + flaw_sp_bonus
-    
-    creation_sp_spent = 0
+    total_sp_budget = base_sp
+    creation_sp_spent = perk_sp_cost - flaw_sp_bonus
     broad_count = 0
     adv_skills = data.get('advancementSkills', {})
     skills = data.get('skills', {})

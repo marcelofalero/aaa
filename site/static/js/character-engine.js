@@ -375,18 +375,19 @@
         }
       });
 
-      const baseSP = 70;
-      const totalSPBudget = baseSP - perkSPCost + flawSPBonus;
-
-      // 3. Skills Validation & BP Calculation
-      let creationSPSpent = 0;
-      let broadCount = 0;
       const species = normalizeId(this.state.species);
       const faction = normalizeId(this.state.faction);
       const profession = normalizeId(this.state.profession);
       const speciesFreeBroads = SPECIES_FREE_BROAD_SLUGS[species] || [];
       const advSkills = this.state.advancementSkills || {};
       const skills = this.state.skills || {};
+
+      const baseSP = (faction === 'rigunmor' && this.state.bonusPerkOrPointsChoice === 'points') ? 76 : 70;
+      const totalSPBudget = baseSP;
+
+      // 3. Skills Validation & BP Calculation
+      let creationSPSpent = perkSPCost - flawSPBonus;
+      let broadCount = 0;
 
       for (const [sId, item] of Object.entries(skills)) {
         const ns = normalizeId(sId);
