@@ -178,5 +178,18 @@
   "weapons": "Blaster Pistol, Shock Torch",
   "armor": "Engineering Utility Vest (d4-1 LI)",
   "credits": 1350,
-  "notes": "Genius T'sa engineer constantly overclocking starship sub-light engines and power grids beyond safety specs."
+  "notes": "Genius T'sa engineer constantly overclocking starship sub-light engines and power grids beyond safety specs.",
+  "durability": {
+    "StunMax": 10,
+    "WoundMax": 10,
+    "FatigueMax": 5,
+    "MortalMax": 5,
+    "PsionicEnergyMax": 0
+  },
+  "availableAP": 0,
+  "spentAP": 75,
+  "computed": {
+    "title": "Seasoned",
+    "maxLastResorts": 2
+  }
 }

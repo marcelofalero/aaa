@@ -185,5 +185,18 @@
   "weapons": "Pulse Laser Pistol, Shock Baton",
   "armor": "Subdermal Cyber-Armor (d4-1 LI / d4-1 HI)",
   "credits": 1080,
-  "notes": "Cyber-security specialist who leaked classified corporate data to protect public freedoms across the sector."
+  "notes": "Cyber-security specialist who leaked classified corporate data to protect public freedoms across the sector.",
+  "durability": {
+    "StunMax": 10,
+    "WoundMax": 10,
+    "FatigueMax": 5,
+    "MortalMax": 5,
+    "PsionicEnergyMax": 0
+  },
+  "availableAP": 0,
+  "spentAP": 75,
+  "computed": {
+    "title": "Seasoned",
+    "maxLastResorts": 2
+  }
 }

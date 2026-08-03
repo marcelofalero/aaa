@@ -2090,7 +2090,7 @@ items:
             title: Pro Advantage
     trained_only: false
   demolitions:
-    attribute: WIL
+    attribute: INT
     cost: 6
     category: Technical
     url: /skills/demolitions
@@ -2195,7 +2195,7 @@ items:
             El proceso de instalación sólo coloca el dispositivo. Para ocultarlo correctamente, el instalador o un aliado debe realizar una verificación de **Operaciones encubiertas--Ocultar** como parte del proceso de instalación.
     items:
       disarm:
-        attribute: WIL
+        attribute: INT
         cost: 4
         url: /skills/demolitions#disarm
         localized:
@@ -2232,7 +2232,7 @@ items:
           - rank: 6
             title: Disaster Avoidance
       scratch-built-explosives:
-        attribute: WIL
+        attribute: INT
         cost: 3
         url: /skills/demolitions#scratch-built-explosives
         localized:
@@ -2260,7 +2260,7 @@ items:
                 Un Personaje con conocimientos de Química puede optimizar aún más una mezcla explosiva seleccionando los mejores ingredientes. Consulte [Ciencias Físicas—Química]({{< relref "skills/physical-science#chemistry" >}}) para obtener más información.
         trained_only: true
       set-explosives:
-        attribute: WIL
+        attribute: INT
         cost: 3
         url: /skills/demolitions#set-explosives
         localized:
@@ -4067,7 +4067,7 @@ items:
           - rank: 9
             title: Multistrike
       defensive-martial-arts:
-        attribute: STR
+        attribute: DEX
         cost: 3
         url: /skills/melee-combat#defensive-martial-arts
         localized:

@@ -50,24 +50,20 @@
   // Profession Favored Tables (Matching validate_character.py)
   const PROFESSION_DATA = {
     'combat-spec': {
-      favoredCategories: ['combat'],
-      favoredBroad: ['modern-ranged-weapons', 'heavy-weapons', 'armor-operation', 'athletics']
+      favoredCategories: [],
+      favoredBroad: ['athletics', 'armor-operation', 'tactics', 'heavy-weapons', 'melee-combat', 'modern-ranged-weapons']
     },
     'free-agent': {
-      favoredCategories: ['social', 'technical'],
-      favoredBroad: ['covert-ops', 'interaction', 'investigation', 'vehicle-operation']
+      favoredCategories: [],
+      favoredBroad: ['covert-ops', 'deception', 'stealth', 'drive', 'vehicle-operation', 'acrobatics', 'culture']
     },
-    'tech-spec': {
-      favoredCategories: ['technical'],
-      favoredBroad: ['computer-science', 'engineering', 'knowledge', 'system-operation', 'technical-science']
-    },
-    'diplomat': {
-      favoredCategories: ['social'],
-      favoredBroad: ['interaction', 'culture', 'law', 'business']
+    'tech-op': {
+      favoredCategories: [],
+      favoredBroad: ['computer-science', 'technical-sciences', 'physical-science', 'system-operation', 'navigation', 'repair']
     },
     'mindwalker': {
-      favoredCategories: ['psionics'],
-      favoredBroad: ['telepathy', 'telekinesis', 'biokinesis', 'teleportation']
+      favoredCategories: [],
+      favoredBroad: ['awareness', 'resolve', 'telepathy', 'telekinesis', 'biokinesis', 'esp', 'psychoportation']
     }
   };
 
@@ -158,6 +154,19 @@
       if (prof.favoredCategories.includes(cat)) return true;
       if (prof.favoredBroad.includes(ns)) return true;
       if (np && prof.favoredBroad.includes(np)) return true;
+
+      // Check species free broads
+      const species = normalizeId(this.state.species);
+      if (SPECIES_FREE_BROAD_SLUGS[species]) {
+        if (SPECIES_FREE_BROAD_SLUGS[species].includes(ns)) return true;
+        if (np && SPECIES_FREE_BROAD_SLUGS[species].includes(np)) return true;
+      }
+      
+      // Check background favored skills
+      const bgFavored = this.state.backgroundFavoredSkills || [];
+      if (bgFavored.includes(ns)) return true;
+      if (np && bgFavored.includes(np)) return true;
+
       return false;
     }
 
@@ -461,6 +470,18 @@
         for (let r = 1; r <= advRanks; r++) {
           campaignAPSpent += this.getAdvancementSkillCost(sId, creationRanks + r, isBroad);
         }
+      }
+
+      if (Array.isArray(this.state.advancementPerks)) {
+        this.state.advancementPerks.forEach(p => {
+          campaignAPSpent += p.apCost || p.cost || 0;
+        });
+      }
+
+      if (Array.isArray(this.state.removedFlaws)) {
+        this.state.removedFlaws.forEach(f => {
+          campaignAPSpent += f.apCost || 0;
+        });
       }
 
       if (this.state.earnedAP !== campaignAPSpent) {

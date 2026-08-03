@@ -1,5 +1,5 @@
 {
-  "step": 7,
+  "step": 6,
   "bio": {
     "name": "T'zal \"Boomer\" Rix",
     "player": "Premade / NPC",
@@ -65,10 +65,6 @@
       "ranks": 1,
       "isBroad": true
     },
-    "heavy-weapons": {
-      "ranks": 1,
-      "isBroad": true
-    },
     "modern-ranged-weapons": {
       "ranks": 1,
       "isBroad": true
@@ -78,28 +74,100 @@
       "isBroad": true
     },
     "shotgun": {
-      "ranks": 3,
-      "isBroad": false
+      "ranks": 6,
+      "isBroad": false,
+      "standardCost": 3,
+      "category": "combat"
     },
     "combat-armor": {
-      "ranks": 6,
-      "isBroad": false
+      "ranks": 2,
+      "isBroad": false,
+      "standardCost": 3,
+      "category": "other"
     },
     "land-vehicle": {
-      "ranks": 7,
-      "isBroad": false
+      "ranks": 2,
+      "isBroad": false,
+      "standardCost": 3,
+      "category": "technical"
     },
     "perception": {
-      "ranks": 8,
-      "isBroad": false
+      "ranks": 1,
+      "isBroad": false,
+      "standardCost": 3,
+      "category": "other"
     },
     "intuition": {
-      "ranks": 8,
-      "isBroad": false
+      "ranks": 3,
+      "isBroad": false,
+      "standardCost": 3,
+      "category": "other"
     },
-    "jump": {
-      "ranks": 7,
-      "isBroad": false
+    "technical-science": {
+      "ranks": 1,
+      "isBroad": true,
+      "standardCost": 7,
+      "category": "technical"
+    },
+    "technical-knowledge": {
+      "ranks": 3,
+      "isBroad": false,
+      "standardCost": 3,
+      "category": "technical"
+    },
+    "disarm": {
+      "ranks": 4,
+      "isBroad": false,
+      "standardCost": 4,
+      "category": "technical"
+    },
+    "set-explosives": {
+      "ranks": 4,
+      "isBroad": false,
+      "standardCost": 3,
+      "category": "technical"
+    },
+    "conceal": {
+      "ranks": 4,
+      "isBroad": false,
+      "standardCost": 3,
+      "category": "social"
+    },
+    "stealth": {
+      "ranks": 2,
+      "isBroad": false,
+      "standardCost": 3,
+      "category": "social"
+    },
+    "endurance": {
+      "ranks": 1,
+      "isBroad": false,
+      "standardCost": 4,
+      "category": "other"
+    },
+    "resist-pain": {
+      "ranks": 1,
+      "isBroad": false,
+      "standardCost": 5,
+      "category": "other"
+    },
+    "system-operation": {
+      "ranks": 1,
+      "isBroad": true,
+      "standardCost": 3,
+      "category": "technical"
+    },
+    "weapons": {
+      "ranks": 4,
+      "isBroad": false,
+      "standardCost": 3,
+      "category": "technical"
+    },
+    "repair": {
+      "ranks": 3,
+      "isBroad": false,
+      "standardCost": 3,
+      "category": "technical"
     }
   },
   "perks": [
@@ -116,25 +184,62 @@
       "name": "Temper",
       "level": 1,
       "bonus": 2
+    },
+    {
+      "name": "code-of-honor",
+      "level": 1
     }
   ],
   "isFinalized": true,
-  "earnedAP": 75,
+  "earnedAP": 79,
   "advancementAbilities": {
     "INT": 1
   },
-  "advancementPerks": [],
-  "removedFlaws": [],
+  "advancementPerks": [
+    {
+      "name": "Concentration",
+      "level": 1,
+      "apCost": 3,
+      "baseApCost": 3
+    }
+  ],
+  "removedFlaws": [
+    {
+      "name": "Temper",
+      "level": 1,
+      "boughtOffLevels": 1,
+      "apCost": 2
+    }
+  ],
   "equipment": "High-yield Breach Charges, Remote Detonators, Ordnance Tool Kit, Orion Heavy Auto-Shotgun, Blast Shield Vest, Orion Guild Badge.",
   "weapons": "Orion Auto-Shotgun (d4+3w/d6+2w), Breach Charges (d8+2w), Heavy Plasma Tube (d6+4w)",
   "armor": "Demolitions Blast Vest (d4+2 LI, d4 HI)",
   "credits": 3100,
   "notes": "Orion League combat engineer and breach specialist. Nicknamed 'Boomer' for his tactical mastery of high explosives.",
   "advancementSkills": {
-    "combat-armor": 3,
-    "land-vehicle": 5,
-    "perception": 5,
-    "intuition": 5,
-    "jump": 4
+    "land-vehicle": 1,
+    "technical-knowledge": 3,
+    "disarm": 4,
+    "set-explosives": 4,
+    "conceal": 4,
+    "stealth": 2,
+    "endurance": 1,
+    "resist-pain": 1,
+    "shotgun": 3,
+    "weapons": 4,
+    "repair": 3
+  },
+  "durability": {
+    "StunMax": 9,
+    "WoundMax": 9,
+    "FatigueMax": 5,
+    "MortalMax": 5,
+    "PsionicEnergyMax": 0
+  },
+  "availableAP": 0,
+  "spentAP": 79,
+  "computed": {
+    "title": "Seasoned",
+    "maxLastResorts": 2
   }
 }

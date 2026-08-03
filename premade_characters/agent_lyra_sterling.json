@@ -172,5 +172,18 @@
   "weapons": "Needler Pistol, Suppressed Laser Pistol, Concealed Monofilament Knife",
   "armor": "Stealth Weave Bodysuit (d4-1 LI / d4-2 HI)",
   "credits": 1450,
-  "notes": "Operates in the shadows between Concord Intelligence and corporate syndicate networks. Expert in covert infiltration and counter-espionage."
+  "notes": "Operates in the shadows between Concord Intelligence and corporate syndicate networks. Expert in covert infiltration and counter-espionage.",
+  "durability": {
+    "StunMax": 10,
+    "WoundMax": 10,
+    "FatigueMax": 5,
+    "MortalMax": 5,
+    "PsionicEnergyMax": 0
+  },
+  "availableAP": 0,
+  "spentAP": 75,
+  "computed": {
+    "title": "Seasoned",
+    "maxLastResorts": 2
+  }
 }

@@ -183,5 +183,18 @@
   "weapons": "Officer Laser Pistol, Ceremonial Officer Saber",
   "armor": "Concord Command Mesh Vest (d4 LI / d4-1 HI)",
   "credits": 2200,
-  "notes": "Decorated Concord naval commander with extensive tactical experience in capital ship fleet engagements."
+  "notes": "Decorated Concord naval commander with extensive tactical experience in capital ship fleet engagements.",
+  "durability": {
+    "StunMax": 11,
+    "WoundMax": 11,
+    "FatigueMax": 6,
+    "MortalMax": 6,
+    "PsionicEnergyMax": 0
+  },
+  "availableAP": 0,
+  "spentAP": 75,
+  "computed": {
+    "title": "Seasoned",
+    "maxLastResorts": 2
+  }
 }

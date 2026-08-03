@@ -1,6 +1,6 @@
 +++
 title = "Demoliciones"
-attribute = "WIL"
+attribute = "INT"
 category = "Technical"
 type = "skill"
 layout = "list"
@@ -54,7 +54,7 @@ El Personaje identifica la mejor ubicación y afina el disparador. Esta es una *
 El proceso de instalación sólo coloca el dispositivo. Para ocultarlo correctamente, el instalador o un aliado debe realizar una verificación de **Operaciones encubiertas--Ocultar** como parte del proceso de instalación.
 
 ## Desarmar
-{{< specialty attr="WIL" untrained="yes" cost="4" >}}
+{{< specialty attr="INT" untrained="yes" cost="4" >}}
 
 La capacidad de inutilizar bombas, minas y paquetes de demolición.
 - **Requisito:** Éxito automático al desarmar trabajos propios o explosivos simples y comunes. Se requiere una verificación en caso de marcas inusuales, dispositivos manipulados o bajo presión de tiempo extrema.
@@ -68,7 +68,7 @@ La capacidad de inutilizar bombas, minas y paquetes de demolición.
 ---
 
 ## Explosivos improvisados
-{{< specialty attr="WIL" untrained="no" cost="3" >}}
+{{< specialty attr="INT" untrained="no" cost="3" >}}
 
 La capacidad de construir paquetes de demolición desde cero o reutilizar artillería militar (por ejemplo, convertir un proyectil de mortero en una carga de cartera).
 
@@ -82,7 +82,7 @@ Un Personaje con conocimientos de Química puede optimizar aún más una mezcla 
 ---
 
 ## Colocar Explosivos
-{{< specialty attr="WIL" untrained="yes" cost="3" >}}
+{{< specialty attr="INT" untrained="yes" cost="3" >}}
 
 Competencia avanzada en el despliegue de cargas fabricadas.
 

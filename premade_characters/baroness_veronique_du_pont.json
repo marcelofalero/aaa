@@ -179,5 +179,18 @@
   "weapons": "Holdout Charge Pistol, Micro-Laser Dagger",
   "armor": "Ballistic Silk Formal Gown (d4-2 LI)",
   "credits": 4800,
-  "notes": "High-society trade envoy balancing corporate monopolies and underworld connections across the Orion-Rigel merchant routes."
+  "notes": "High-society trade envoy balancing corporate monopolies and underworld connections across the Orion-Rigel merchant routes.",
+  "durability": {
+    "StunMax": 9,
+    "WoundMax": 9,
+    "FatigueMax": 5,
+    "MortalMax": 5,
+    "PsionicEnergyMax": 0
+  },
+  "availableAP": 0,
+  "spentAP": 75,
+  "computed": {
+    "title": "Seasoned",
+    "maxLastResorts": 2
+  }
 }

@@ -178,5 +178,18 @@
   "weapons": "Industrial Rivet Gun / Heavy Pistol, Pneumatic Power Claw",
   "armor": "Heavy Industrial Exosuit Harness (d4+2 LI / d4 HI)",
   "credits": 780,
-  "notes": "Towering Weren engineer capable of conducting mid-flight drive-space repairs and patching starship hulls under heavy fire."
+  "notes": "Towering Weren engineer capable of conducting mid-flight drive-space repairs and patching starship hulls under heavy fire.",
+  "durability": {
+    "StunMax": 12,
+    "WoundMax": 12,
+    "FatigueMax": 6,
+    "MortalMax": 6,
+    "PsionicEnergyMax": 0
+  },
+  "availableAP": 0,
+  "spentAP": 75,
+  "computed": {
+    "title": "Seasoned",
+    "maxLastResorts": 2
+  }
 }

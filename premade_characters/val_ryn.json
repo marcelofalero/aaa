@@ -157,5 +157,18 @@
   "weapons": "Psionic Mind-Blade Focus, Light Stun Pistol",
   "armor": "Mindwalker Padded Robes (d4-2 LI)",
   "credits": 920,
-  "notes": "Fraal psionic astrogator who navigates perilous drive-space routes by sensing gravitational and psychic energy fields."
+  "notes": "Fraal psionic astrogator who navigates perilous drive-space routes by sensing gravitational and psychic energy fields.",
+  "durability": {
+    "StunMax": 8,
+    "WoundMax": 8,
+    "FatigueMax": 4,
+    "MortalMax": 4,
+    "PsionicEnergyMax": 21
+  },
+  "availableAP": 0,
+  "spentAP": 75,
+  "computed": {
+    "title": "Seasoned",
+    "maxLastResorts": 2
+  }
 }

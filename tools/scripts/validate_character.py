@@ -135,7 +135,7 @@ def get_adv_cost(skill_id, target_rank, profession='combat-spec'):
         return base
     return 3
 
-def validate_character_json(file_path, verbose=False):
+def validate_character_json(file_path, verbose=False, loose=False):
     path = Path(file_path)
     if not path.exists():
         return False, [f"File not found: {file_path}"], [], []
@@ -241,7 +241,7 @@ def validate_character_json(file_path, verbose=False):
             if not parent_item or parent_item.get('ranks', 0) <= 0:
                 errors.append(f"Specialty skill '{skill_name}' trained (rank {total_ranks}) but parent broad '{parent_broad}' is missing/untrained!")
                 
-            if creation_ranks > 3:
+            if not loose and creation_ranks > 3:
                 errors.append(f"Specialty skill '{skill_name}' exceeds MAX 3 Creation Ranks! Found {creation_ranks} creation ranks.")
                 
             if creation_ranks > 0:
@@ -254,16 +254,19 @@ def validate_character_json(file_path, verbose=False):
     remaining_bp = total_sp_budget - creation_sp_spent
     is_finalized = data.get('isFinalized', True) or bool(adv_skills) or data.get('earnedAP', 0) > 0
     
-    if is_finalized and remaining_bp > 0:
-        errors.append(f"Unspent Build Points (BP) Violation: Found {remaining_bp} unspent BP! Characters entering campaign mode must spend all BP.")
-    elif creation_sp_spent > total_sp_budget:
-        errors.append(f"Build Points Budget Exceeded: Spent {creation_sp_spent} BP out of {total_sp_budget} total budget ({total_sp_budget - creation_sp_spent} BP).")
-    else:
-        info.append(f"Creation Budget (BP): {creation_sp_spent} / {total_sp_budget} BP spent (0 remaining)")
+    if not loose:
+        if is_finalized and remaining_bp > 0:
+            errors.append(f"Unspent Build Points (BP) Violation: Found {remaining_bp} unspent BP! Characters entering campaign mode must spend all BP.")
+        elif creation_sp_spent > total_sp_budget:
+            errors.append(f"Build Points Budget Exceeded: Spent {creation_sp_spent} BP out of {total_sp_budget} total budget ({total_sp_budget - creation_sp_spent} BP).")
+        else:
+            info.append(f"Creation Budget (BP): {creation_sp_spent} / {total_sp_budget} BP spent (0 remaining)")
 
-    # 3. Broad Skill Count Check (Max 5)
-    if broad_count > 5:
-        errors.append(f"Broad Skill Cap Violation: Has {broad_count} broad skills at creation (Max allowed is 5).")
+        # 3. Broad Skill Count Check (Max 5)
+        if broad_count > 5:
+            errors.append(f"Broad Skill Cap Violation: Has {broad_count} broad skills at creation (Max allowed is 5).")
+    else:
+        info.append(f"Creation Budget (BP): {creation_sp_spent} BP estimated (strict limits disabled in loose mode)")
 
     # 4. Campaign AP Spent Check
     total_campaign_ap = 0
@@ -282,10 +285,16 @@ def validate_character_json(file_path, verbose=False):
     for perk in data.get('advancementPerks', []):
         total_campaign_ap += perk.get('apCost', perk.get('cost', 0))
         
+    for flaw in data.get('removedFlaws', []):
+        total_campaign_ap += flaw.get('apCost', 0)
+        
     earned_ap = data.get('earnedAP', 75)
     if is_finalized:
         if total_campaign_ap != earned_ap:
-            warnings.append(f"Campaign AP mismatch: Spent {total_campaign_ap} AP vs Earned {earned_ap} AP.")
+            if not loose:
+                warnings.append(f"Campaign AP mismatch: Spent {total_campaign_ap} AP vs Earned {earned_ap} AP.")
+            else:
+                info.append(f"Total Campaign AP Value: {total_campaign_ap} AP (Strict AP parity disabled in loose mode).")
         else:
             info.append(f"Campaign Advancement: {total_campaign_ap} / {earned_ap} AP spent (Parity OK)")
 
@@ -328,7 +337,8 @@ def validate_character_json(file_path, verbose=False):
 
 def main():
     verbose = "-v" in sys.argv or "--verbose" in sys.argv
-    args = [a for a in sys.argv[1:] if a not in ("-v", "--verbose")]
+    loose = "--loose" in sys.argv
+    args = [a for a in sys.argv[1:] if a not in ("-v", "--verbose", "--loose")]
     
     if len(args) < 1:
         target = ROOT_DIR / "premade_characters"
@@ -353,7 +363,7 @@ def main():
     
     for f in sorted(files):
         rel_path = f.relative_to(ROOT_DIR) if ROOT_DIR in f.parents else f
-        valid, errors, warnings, info = validate_character_json(f, verbose=verbose)
+        valid, errors, warnings, info = validate_character_json(f, verbose=verbose, loose=loose)
         
         status = "✅ PASS" if valid else "❌ FAIL"
         print(f"\n[{status}] {rel_path}")

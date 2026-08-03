@@ -1205,7 +1205,7 @@
                 {
                     "id": "demolitions",
                     "skill": "Demolitions",
-                    "attribute": "WIL",
+                    "attribute": "INT",
                     "url": "/skills/demolitions",
                     "cost": 6,
                     "type": "Broad",
@@ -1213,7 +1213,7 @@
                         {
                             "id": "disarm",
                             "skill": "Disarm",
-                            "attribute": "WIL",
+                            "attribute": "INT",
                             "url": "/skills/demolitions#disarm",
                             "cost": 4,
                             "type": "Specialty",
@@ -1222,7 +1222,7 @@
                         {
                             "id": "scratch-built-explosives",
                             "skill": "Scratch-Built Explosives",
-                            "attribute": "WIL",
+                            "attribute": "INT",
                             "url": "/skills/demolitions#scratch-built-explosives",
                             "cost": 3,
                             "type": "Specialty",
@@ -1231,7 +1231,7 @@
                         {
                             "id": "set-explosives",
                             "skill": "Set explosives",
-                            "attribute": "WIL",
+                            "attribute": "INT",
                             "url": "/skills/demolitions#set-explosives",
                             "cost": 3,
                             "type": "Specialty",

@@ -177,5 +177,18 @@
   "weapons": "Heavy Rotary Cannon, Heavy Vibro-Axe",
   "armor": "Weren Heavy Shock Armor (d4+2 LI / d4+2 HI / d4 En)",
   "credits": 620,
-  "notes": "Fearless Weren warrior who leads breaches into fortified enemy strongholds, holding the front line without flinching."
+  "notes": "Fearless Weren warrior who leads breaches into fortified enemy strongholds, holding the front line without flinching.",
+  "durability": {
+    "StunMax": 13,
+    "WoundMax": 13,
+    "FatigueMax": 7,
+    "MortalMax": 7,
+    "PsionicEnergyMax": 0
+  },
+  "availableAP": 0,
+  "spentAP": 75,
+  "computed": {
+    "title": "Seasoned",
+    "maxLastResorts": 2
+  }
 }

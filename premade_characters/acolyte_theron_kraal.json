@@ -167,5 +167,18 @@
   "weapons": "Stun Baton, Light Laser Pistol",
   "armor": "Orlamu Reinforced Vest (d4-1 LI / d4-2 HI)",
   "credits": 650,
-  "notes": "Serves as a mystic astrogator for Orlamu expeditions into uncharted sectors of the Verge. Dedicated to cataloging drive-space anomalies."
+  "notes": "Serves as a mystic astrogator for Orlamu expeditions into uncharted sectors of the Verge. Dedicated to cataloging drive-space anomalies.",
+  "durability": {
+    "StunMax": 10,
+    "WoundMax": 10,
+    "FatigueMax": 5,
+    "MortalMax": 5,
+    "PsionicEnergyMax": 14
+  },
+  "availableAP": 0,
+  "spentAP": 75,
+  "computed": {
+    "title": "Seasoned",
+    "maxLastResorts": 2
+  }
 }

@@ -1,6 +1,6 @@
 +++
 title = "Demolitions"
-attribute = "WIL"
+attribute = "INT"
 category = "Technical"
 type = "skill"
 layout = "list"
@@ -54,7 +54,7 @@ The character identifies the best placement and fine-tunes the trigger. This is 
 The installation process only places the device. To properly hide it, a **Covert Ops--Conceal** check must be made by the installer or an ally as part of the installation process.
 
 ## Disarm
-{{< specialty attr="WIL" untrained="yes" cost="4" >}}
+{{< specialty attr="INT" untrained="yes" cost="4" >}}
 
 The ability to render bombs, mines, and demolition packages inoperative.
 - **Requirement:** Automatic success when disarming your own work or simple, common explosives. A check is required for unusual makes, rigged devices, or under extreme time pressure.
@@ -68,7 +68,7 @@ The ability to render bombs, mines, and demolition packages inoperative.
 ---
 
 ## Scratch-Built Explosives
-{{< specialty attr="WIL" untrained="no" cost="3" >}}
+{{< specialty attr="INT" untrained="no" cost="3" >}}
 
 The ability to build demolition packages from scratch or repurposing military ordnance (e.g., turning a mortar shell into a satchel charge).
 
@@ -82,7 +82,7 @@ A character with Chemistry knowledge can further optimize an explosive mixture b
 ---
 
 ## Set explosives
-{{< specialty attr="WIL" untrained="yes" cost="3" >}}
+{{< specialty attr="INT" untrained="yes" cost="3" >}}
 
 Advanced proficiency in deploying manufactured charges.
 

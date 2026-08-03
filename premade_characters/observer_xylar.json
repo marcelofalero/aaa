@@ -177,5 +177,18 @@
   "weapons": "Psionic Focus Ring, Small Stun Pistol",
   "armor": "Fraal Envoy Mesh Robes (d4-2 LI)",
   "credits": 1850,
-  "notes": "Fraal ambassador tasked with monitoring humanity's expanding presence in the Verge while fostering diplomatic dialogue."
+  "notes": "Fraal ambassador tasked with monitoring humanity's expanding presence in the Verge while fostering diplomatic dialogue.",
+  "durability": {
+    "StunMax": 8,
+    "WoundMax": 8,
+    "FatigueMax": 4,
+    "MortalMax": 4,
+    "PsionicEnergyMax": 20
+  },
+  "availableAP": 0,
+  "spentAP": 75,
+  "computed": {
+    "title": "Seasoned",
+    "maxLastResorts": 2
+  }
 }
