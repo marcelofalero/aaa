@@ -5,36 +5,39 @@
   <!-- Builder 3-Column Layout with 2 Sidebars -->
   <div class="cb-builder-layout">
 
-    <!-- LEFT SIDEBAR: Wizard Navigation Steps -->
+    <!-- LEFT SIDEBAR: Wizard Navigation Steps (Thin Icon Bar) -->
     <aside class="cb-sidebar cb-nav-sidebar" id="cb-nav-sidebar">
       <div class="cb-wizard-nav" id="cb-wizard-nav">
-        <h3 class="cb-sidebar-title">{{ if eq .Language.Lang "es" }}Navegación / Pasos{{ else }}Navigation / Steps{{ end }}</h3>
-        <button type="button" class="cb-step-btn active" data-step="1">
-          <span class="cb-step-num">1</span>
+        <h3 class="cb-sidebar-title" id="cb-nav-title">
+          <span class="cb-nav-title-icon">🧭</span>
+          <span class="cb-nav-title-text">{{ if eq .Language.Lang "es" }}Pasos{{ else }}Steps{{ end }}</span>
+        </h3>
+        <button type="button" class="cb-step-btn active" data-step="1" title="{{ if eq .Language.Lang "es" }}Bio y Concepto{{ else }}Concept & Bio{{ end }}">
+          <span class="cb-step-icon">🆔</span>
           <span class="cb-step-text">{{ if eq .Language.Lang "es" }}Bio y Concepto{{ else }}Concept & Bio{{ end }}</span>
         </button>
-        <button type="button" class="cb-step-btn" data-step="2">
-          <span class="cb-step-num">2</span>
+        <button type="button" class="cb-step-btn" data-step="2" title="{{ if eq .Language.Lang "es" }}Facción{{ else }}Faction{{ end }}">
+          <span class="cb-step-icon">🚩</span>
           <span class="cb-step-text">{{ if eq .Language.Lang "es" }}Facción{{ else }}Faction{{ end }}</span>
         </button>
-        <button type="button" class="cb-step-btn" data-step="3">
-          <span class="cb-step-num">3</span>
+        <button type="button" class="cb-step-btn" data-step="3" title="{{ if eq .Language.Lang "es" }}Especie y Profesión{{ else }}Species & Profession{{ end }}">
+          <span class="cb-step-icon">👽</span>
           <span class="cb-step-text">{{ if eq .Language.Lang "es" }}Especie y Profesión{{ else }}Species & Profession{{ end }}</span>
         </button>
-        <button type="button" class="cb-step-btn" data-step="4">
-          <span class="cb-step-num">4</span>
+        <button type="button" class="cb-step-btn" data-step="4" title="{{ if eq .Language.Lang "es" }}Características{{ else }}Ability Scores{{ end }}">
+          <span class="cb-step-icon">💪</span>
           <span class="cb-step-text">{{ if eq .Language.Lang "es" }}Características{{ else }}Ability Scores{{ end }}</span>
         </button>
-        <button type="button" class="cb-step-btn" data-step="5">
-          <span class="cb-step-num">5</span>
+        <button type="button" class="cb-step-btn" data-step="5" title="{{ if eq .Language.Lang "es" }}Ventajas y Defectos{{ else }}Perks & Flaws{{ end }}">
+          <span class="cb-step-icon">⭐</span>
           <span class="cb-step-text">{{ if eq .Language.Lang "es" }}Ventajas y Defectos{{ else }}Perks & Flaws{{ end }}</span>
         </button>
-        <button type="button" class="cb-step-btn" data-step="6">
-          <span class="cb-step-num">6</span>
+        <button type="button" class="cb-step-btn" data-step="6" title="{{ if eq .Language.Lang "es" }}Habilidades{{ else }}Skills{{ end }}">
+          <span class="cb-step-icon">🎯</span>
           <span class="cb-step-text">{{ if eq .Language.Lang "es" }}Habilidades{{ else }}Skills{{ end }}</span>
         </button>
-        <button type="button" class="cb-step-btn" data-step="7">
-          <span class="cb-step-num">7</span>
+        <button type="button" class="cb-step-btn" data-step="7" title="{{ if eq .Language.Lang "es" }}Hoja y Exportación{{ else }}Sheet & Export{{ end }}">
+          <span class="cb-step-icon">📄</span>
           <span class="cb-step-text">{{ if eq .Language.Lang "es" }}Hoja y Exportación{{ else }}Sheet & Export{{ end }}</span>
         </button>
       </div>
@@ -78,6 +81,74 @@
         <div class="cb-form-group">
           <label class="cb-form-label" for="cb-input-traits">{{ if eq .Language.Lang "es" }}Rasgos de Personalidad{{ else }}Character Traits{{ end }}</label>
           <textarea id="cb-input-traits" class="cb-input" rows="3" placeholder="{{ if eq .Language.Lang "es" }}Ej. Cauteloso con desconocidos, siempre limpia su arma{{ else }}e.g. Cautious with strangers, obsessive about gear upkeep{{ end }}"></textarea>
+        </div>
+      </div>
+
+      <!-- Physical Characteristics Card -->
+      <div class="sci-fi-card mb4">
+        <h3 class="neon-cyan mv0 mb3">{{ if eq .Language.Lang "es" }}Características Físicas{{ else }}Physical Characteristics{{ end }}</h3>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem;">
+          <div class="cb-form-group">
+            <label class="cb-form-label" for="cb-input-gender">{{ if eq .Language.Lang "es" }}Género{{ else }}Gender{{ end }}</label>
+            <input type="text" id="cb-input-gender" class="cb-input" placeholder="{{ if eq .Language.Lang "es" }}Ej. Femenino / Masculino / N/A{{ else }}e.g. Female / Male / N/A{{ end }}">
+          </div>
+
+          <div class="cb-form-group">
+            <label class="cb-form-label" for="cb-input-age">{{ if eq .Language.Lang "es" }}Edad{{ else }}Age{{ end }}</label>
+            <input type="text" id="cb-input-age" class="cb-input" placeholder="{{ if eq .Language.Lang "es" }}Ej. 28 años{{ else }}e.g. 28 standard years{{ end }}">
+          </div>
+
+          <div class="cb-form-group">
+            <label class="cb-form-label" for="cb-input-height">{{ if eq .Language.Lang "es" }}Estatura{{ else }}Height{{ end }}</label>
+            <input type="text" id="cb-input-height" class="cb-input" placeholder="{{ if eq .Language.Lang "es" }}Ej. 1.78 m{{ else }}e.g. 1.78 m{{ end }}">
+          </div>
+
+          <div class="cb-form-group">
+            <label class="cb-form-label" for="cb-input-weight">{{ if eq .Language.Lang "es" }}Peso{{ else }}Weight{{ end }}</label>
+            <input type="text" id="cb-input-weight" class="cb-input" placeholder="{{ if eq .Language.Lang "es" }}Ej. 75 kg{{ else }}e.g. 75 kg{{ end }}">
+          </div>
+
+          <div class="cb-form-group">
+            <label class="cb-form-label" for="cb-input-hair">{{ if eq .Language.Lang "es" }}Cabello / Pelaje{{ else }}Hair / Fur{{ end }}</label>
+            <input type="text" id="cb-input-hair" class="cb-input" placeholder="{{ if eq .Language.Lang "es" }}Ej. Negro / Escamas cobrizas{{ else }}e.g. Black / Copper scales{{ end }}">
+          </div>
+
+          <div class="cb-form-group">
+            <label class="cb-form-label" for="cb-input-eyes">{{ if eq .Language.Lang "es" }}Ojos{{ else }}Eyes{{ end }}</label>
+            <input type="text" id="cb-input-eyes" class="cb-input" placeholder="{{ if eq .Language.Lang "es" }}Ej. Amber / Bioluminiscente{{ else }}e.g. Amber / Bioluminescent{{ end }}">
+          </div>
+        </div>
+      </div>
+
+      <!-- Equipment, Weapons & Gear Card -->
+      <div class="sci-fi-card mb4">
+        <h3 class="neon-cyan mv0 mb3">{{ if eq .Language.Lang "es" }}Equipo, Armas y Créditos{{ else }}Equipment, Weapons & Credits{{ end }}</h3>
+        
+        <div class="cb-form-group mb3">
+          <label class="cb-form-label" for="cb-input-equipment">{{ if eq .Language.Lang "es" }}Equipo e Inventario Carried{{ else }}Equipment & Carried Inventory{{ end }}</label>
+          <textarea id="cb-input-equipment" class="cb-input" rows="3" placeholder="{{ if eq .Language.Lang "es" }}Ej. Traje espacial ligero, comunicador cuántico, kit médico...{{ else }}e.g. Light spacesuit, quantum communicator, trauma kit...{{ end }}"></textarea>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem;" class="mb3">
+          <div class="cb-form-group">
+            <label class="cb-form-label" for="cb-input-weapons">{{ if eq .Language.Lang "es" }}Armas Equipadas{{ else }}Equipped Weapons{{ end }}</label>
+            <input type="text" id="cb-input-weapons" class="cb-input" placeholder="{{ if eq .Language.Lang "es" }}Ej. Escopeta Automática, Pistola Láser{{ else }}e.g. Auto-Shotgun, Laser Pistol{{ end }}">
+          </div>
+
+          <div class="cb-form-group">
+            <label class="cb-form-label" for="cb-input-armor">{{ if eq .Language.Lang "es" }}Armadura Equipada{{ else }}Equipped Armor{{ end }}</label>
+            <input type="text" id="cb-input-armor" class="cb-input" placeholder="{{ if eq .Language.Lang "es" }}Ej. Traje de Combate Blindado (LI+4, HI+4, En+2){{ else }}e.g. Combat Armor (d4-1 LI / d4-1 HI / d4-2 En){{ end }}">
+          </div>
+
+          <div class="cb-form-group">
+            <label class="cb-form-label" for="cb-input-credits">{{ if eq .Language.Lang "es" }}Créditos / Dinero (Cr){{ else }}Credits / Currency (Cr){{ end }}</label>
+            <input type="number" id="cb-input-credits" class="cb-input" placeholder="e.g. 500" min="0">
+          </div>
+        </div>
+
+        <div class="cb-form-group">
+          <label class="cb-form-label" for="cb-input-notes">{{ if eq .Language.Lang "es" }}Notas de Campaña / Historial{{ else }}Campaign Notes & History{{ end }}</label>
+          <textarea id="cb-input-notes" class="cb-input" rows="3" placeholder="{{ if eq .Language.Lang "es" }}Ej. Contactos en Verge, recompensa activa en Thuldan...{{ else }}e.g. Verge contacts, active bounty in Thuldan Empire...{{ end }}"></textarea>
         </div>
       </div>
     </div>
@@ -334,14 +405,30 @@
   </div>
 
 <!-- Embed Site Data into Global Window JS Object -->
+{{ $st := index site.Data "skills-table" }}
+{{ if and (eq .Language.Lang "es") (reflect.IsMap $st) (isset $st "es") }}{{ $st = index $st "es" }}{{ end }}
+
+{{ $bg := index site.Data "backgrounds" }}
+{{ if and (eq .Language.Lang "es") (reflect.IsMap $bg) (isset $bg "es") }}{{ $bg = index $bg "es" }}{{ end }}
+
+{{ $pf := index site.Data "perks_and_flaws" }}
+{{ if and (eq .Language.Lang "es") (reflect.IsMap $pf) (isset $pf "es") }}{{ $pf = index $pf "es" }}{{ end }}
+
+{{ $psi := index site.Data "psionics" }}
+{{ if and (eq .Language.Lang "es") (reflect.IsMap $psi) (isset $psi "es") }}{{ $psi = index $psi "es" }}{{ end }}
+
 <script>
   window.AAA_CHARACTER_DATA = {
     lang: "{{ .Language.Lang }}",
-    skillsTable: {{ index site.Data (printf "skills-table%s" (cond (eq .Language.Lang "es") ".es" "")) | jsonify | safeJS }},
-    backgrounds: {{ index site.Data (printf "backgrounds%s" (cond (eq .Language.Lang "es") ".es" "")) | jsonify | safeJS }},
-    perksFlaws: {{ index site.Data (printf "perks_and_flaws%s" (cond (eq .Language.Lang "es") ".es" "")) | jsonify | safeJS }},
-    psionics: {{ index site.Data (printf "psionics%s" (cond (eq .Language.Lang "es") ".es" "")) | jsonify | safeJS }}
+    skillsTable: {{ $st | jsonify | safeJS }},
+    backgrounds: {{ $bg | jsonify | safeJS }},
+    perksFlaws: {{ $pf | jsonify | safeJS }},
+    psionics: {{ $psi | jsonify | safeJS }}
   };
 </script>
-<script src="{{ urls.RelURL "js/character-builder.js" }}"></script>
+<script src="{{ urls.RelURL "js/i18n/en.js" }}?v={{ now.Unix }}"></script>
+<script src="{{ urls.RelURL "js/i18n/es.js" }}?v={{ now.Unix }}"></script>
+<script src="{{ urls.RelURL "js/i18n/index.js" }}?v={{ now.Unix }}"></script>
+<script src="{{ urls.RelURL "js/character-engine.js" }}?v={{ now.Unix }}"></script>
+<script src="{{ urls.RelURL "js/character-builder.js" }}?v={{ now.Unix }}"></script>
 {{ end }}

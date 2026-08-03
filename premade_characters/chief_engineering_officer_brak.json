@@ -1,0 +1,182 @@
+{
+  "step": 7,
+  "bio": {
+    "name": "Chief Engineering Officer Brak",
+    "player": "NPC",
+    "concept": "Weren Heavy Ship Wright",
+    "motivation": "Keep the salvage fleet operational at all costs",
+    "attitude": "Gruff & Dependable",
+    "traits": "Thick oil-stained aprons, heavy hydro-wrench.",
+    "gender": "Male",
+    "age": "42 standard years",
+    "height": "2.18 m",
+    "weight": "192 kg",
+    "hair": "Thick silver-grey fur",
+    "eyes": "Amber yellow"
+  },
+  "faction": "thuldan",
+  "species": "weren",
+  "background": "scavenger",
+  "profession": "tech-op",
+  "abilities": {
+    "STR": 13,
+    "DEX": 9,
+    "CON": 12,
+    "INT": 11,
+    "WIL": 10,
+    "PER": 9
+  },
+  "skills": {
+    "athletics": {
+      "ranks": 1,
+      "isBroad": true,
+      "standardCost": 3,
+      "category": "Other",
+      "isSpeciesFree": true
+    },
+    "awareness": {
+      "ranks": 1,
+      "isBroad": true,
+      "standardCost": 3,
+      "category": "Other",
+      "isSpeciesFree": true
+    },
+    "stamina": {
+      "ranks": 1,
+      "isBroad": true,
+      "standardCost": 3,
+      "category": "Other",
+      "isSpeciesFree": true
+    },
+    "interaction": {
+      "ranks": 1,
+      "isBroad": true,
+      "standardCost": 3,
+      "category": "Social",
+      "isSpeciesFree": true
+    },
+    "knowledge": {
+      "ranks": 1,
+      "isBroad": true,
+      "standardCost": 4,
+      "category": "Technical",
+      "isSpeciesFree": true
+    },
+    "vehicle-operation": {
+      "ranks": 1,
+      "isBroad": true,
+      "standardCost": 3,
+      "category": "Technical"
+    },
+    "technical-science": {
+      "ranks": 1,
+      "isBroad": true,
+      "standardCost": 7,
+      "category": "Technical"
+    },
+    "engineering": {
+      "ranks": 5,
+      "isBroad": false
+    },
+    "repair": {
+      "ranks": 6,
+      "isBroad": false,
+      "standardCost": 3,
+      "category": "Technical"
+    },
+    "system-operation": {
+      "ranks": 1,
+      "isBroad": true,
+      "standardCost": 3,
+      "category": "Technical"
+    },
+    "melee-combat": {
+      "ranks": 1,
+      "isBroad": true,
+      "standardCost": 6,
+      "category": "Combat",
+      "isSpeciesFree": true
+    },
+    "computer-science": {
+      "ranks": 1,
+      "isBroad": true,
+      "standardCost": 7,
+      "category": "Technical"
+    },
+    "climb": {
+      "ranks": 6,
+      "isBroad": false,
+      "standardCost": 2,
+      "category": "Other"
+    },
+    "jump": {
+      "ranks": 5,
+      "isBroad": false
+    },
+    "swim": {
+      "ranks": 6,
+      "isBroad": false,
+      "standardCost": 2,
+      "category": "Other"
+    },
+    "throw": {
+      "ranks": 6,
+      "isBroad": false,
+      "standardCost": 2,
+      "category": "Other"
+    },
+    "intuition": {
+      "ranks": 6,
+      "isBroad": false
+    },
+    "perception": {
+      "ranks": 6,
+      "isBroad": false,
+      "standardCost": 3,
+      "category": "Other"
+    },
+    "bargain": {
+      "ranks": 6,
+      "isBroad": false,
+      "standardCost": 3,
+      "category": "Social"
+    }
+  },
+  "perks": [
+    {
+      "id": "vigor",
+      "name": "Vigor",
+      "level": 1
+    }
+  ],
+  "flaws": [
+    {
+      "id": "clumsy",
+      "name": "Clumsy",
+      "level": 1
+    }
+  ],
+  "isFinalized": true,
+  "earnedAP": 75,
+  "advancementSkills": {
+    "engineering": 3,
+    "repair": 3,
+    "climb": 3,
+    "jump": 3,
+    "swim": 3,
+    "throw": 3,
+    "intuition": 3,
+    "perception": 3,
+    "bargain": 3
+  },
+  "advancementAbilities": {
+    "INT": 1
+  },
+  "advancementPerks": [],
+  "removedFlaws": [],
+  "equipment": "Industrial plasma arc-welder, heavy spanner set, diagnostic rig, heavy harness, metal alloy patches, thermal visor.",
+  "weapons": "Industrial Rivet Gun / Heavy Pistol, Pneumatic Power Claw",
+  "armor": "Heavy Industrial Exosuit Harness (d4+2 LI / d4 HI)",
+  "credits": 780,
+  "notes": "Towering Weren engineer capable of conducting mid-flight drive-space repairs and patching starship hulls under heavy fire."
+}

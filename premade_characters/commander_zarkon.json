@@ -1,0 +1,187 @@
+{
+  "step": 7,
+  "bio": {
+    "name": "Commander Zarkon",
+    "player": "NPC",
+    "concept": "Concord Naval Fleet Commander",
+    "motivation": "Defend Concord outposts against Klick raids",
+    "attitude": "Tactical & Authoritative",
+    "traits": "Formal officer uniform, decorated service medals.",
+    "gender": "Male",
+    "age": "48 standard years",
+    "height": "1.85 m",
+    "weight": "88 kg",
+    "hair": "Dark brown with silvered temples",
+    "eyes": "Ice blue"
+  },
+  "faction": "concord",
+  "species": "human",
+  "background": "fleet-officer",
+  "profession": "combat-spec",
+  "abilities": {
+    "STR": 10,
+    "DEX": 10,
+    "CON": 11,
+    "INT": 12,
+    "WIL": 12,
+    "PER": 11
+  },
+  "skills": {
+    "athletics": {
+      "ranks": 1,
+      "isBroad": true,
+      "standardCost": 3,
+      "category": "Other",
+      "isSpeciesFree": true
+    },
+    "awareness": {
+      "ranks": 1,
+      "isBroad": true,
+      "standardCost": 3,
+      "category": "Other",
+      "isSpeciesFree": true
+    },
+    "stamina": {
+      "ranks": 1,
+      "isBroad": true,
+      "standardCost": 3,
+      "category": "Other",
+      "isSpeciesFree": true
+    },
+    "interaction": {
+      "ranks": 1,
+      "isBroad": true,
+      "standardCost": 3,
+      "category": "Social",
+      "isSpeciesFree": true
+    },
+    "knowledge": {
+      "ranks": 1,
+      "isBroad": true,
+      "standardCost": 4,
+      "category": "Technical",
+      "isSpeciesFree": true
+    },
+    "vehicle-operation": {
+      "ranks": 1,
+      "isBroad": true,
+      "standardCost": 3,
+      "category": "Technical",
+      "isSpeciesFree": true
+    },
+    "tactics": {
+      "ranks": 1,
+      "isBroad": true,
+      "standardCost": 6,
+      "category": "Combat"
+    },
+    "space-tactics": {
+      "ranks": 6,
+      "isBroad": false,
+      "standardCost": 3,
+      "category": "Combat"
+    },
+    "leadership": {
+      "ranks": 1,
+      "isBroad": true,
+      "standardCost": 4,
+      "category": "Social"
+    },
+    "modern-ranged-weapons": {
+      "ranks": 1,
+      "isBroad": true,
+      "standardCost": 6,
+      "category": "Combat"
+    },
+    "heavy-weapons": {
+      "ranks": 1,
+      "isBroad": true,
+      "standardCost": 6,
+      "category": "Combat"
+    },
+    "armor-operation": {
+      "ranks": 1,
+      "isBroad": true,
+      "standardCost": 7,
+      "category": "Other"
+    },
+    "climb": {
+      "ranks": 6,
+      "isBroad": false,
+      "standardCost": 2,
+      "category": "Other"
+    },
+    "jump": {
+      "ranks": 7,
+      "isBroad": false,
+      "standardCost": 1,
+      "category": "Other"
+    },
+    "swim": {
+      "ranks": 7,
+      "isBroad": false,
+      "standardCost": 2,
+      "category": "Other"
+    },
+    "throw": {
+      "ranks": 6,
+      "isBroad": false,
+      "standardCost": 2,
+      "category": "Other"
+    },
+    "intuition": {
+      "ranks": 6,
+      "isBroad": false,
+      "standardCost": 3,
+      "category": "Other"
+    },
+    "perception": {
+      "ranks": 6,
+      "isBroad": false,
+      "standardCost": 3,
+      "category": "Other"
+    },
+    "psionic-sense": {
+      "ranks": 6,
+      "isBroad": false,
+      "standardCost": 4,
+      "category": "Other"
+    }
+  },
+  "perks": [
+    {
+      "id": "willpower",
+      "name": "Willpower",
+      "level": 1
+    }
+  ],
+  "flaws": [
+    {
+      "id": "code-of-honor",
+      "name": "Code of Honor",
+      "level": 1
+    }
+  ],
+  "isFinalized": true,
+  "earnedAP": 75,
+  "advancementSkills": {
+    "space-tactics": 4,
+    "climb": 4,
+    "jump": 4,
+    "swim": 4,
+    "throw": 3,
+    "intuition": 3,
+    "perception": 3,
+    "psionic-sense": 3
+  },
+  "advancementAbilities": {
+    "STR": 1
+  },
+  "advancementPerks": [],
+  "removedFlaws": [],
+  "equipment": "Concord Naval Command insignia, tactical fleet display datapad, secure comms link, dress uniform, command access codes.",
+  "weapons": "Officer Laser Pistol, Ceremonial Officer Saber",
+  "armor": "Concord Command Mesh Vest (d4 LI / d4-1 HI)",
+  "credits": 2200,
+  "notes": "Decorated Concord naval commander with extensive tactical experience in capital ship fleet engagements."
+}

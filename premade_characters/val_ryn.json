@@ -1,0 +1,161 @@
+{
+  "step": 7,
+  "bio": {
+    "name": "Val-Ryn",
+    "player": "NPC",
+    "concept": "Fraal Mindwalker Astrogator",
+    "motivation": "Seek ancient alien relics and lost knowledge",
+    "attitude": "Enigmatic & Soft-spoken",
+    "traits": "Slender pale build, glowing obsidian eyes.",
+    "gender": "Male-presenting",
+    "age": "58 standard years",
+    "height": "1.52 m",
+    "weight": "46 kg",
+    "hair": "Smooth pale grey skin (hairless)",
+    "eyes": "Deep black"
+  },
+  "faction": "insight",
+  "species": "fraal",
+  "background": "certified-psychic",
+  "profession": "mindwalker",
+  "abilities": {
+    "STR": 7,
+    "DEX": 10,
+    "CON": 8,
+    "INT": 13,
+    "WIL": 14,
+    "PER": 11
+  },
+  "skills": {
+    "awareness": {
+      "ranks": 1,
+      "isBroad": true,
+      "isSpeciesFree": true,
+      "standardCost": 3,
+      "category": "Other"
+    },
+    "resolve": {
+      "ranks": 1,
+      "isBroad": true,
+      "isSpeciesFree": true,
+      "standardCost": 3,
+      "category": "Other"
+    },
+    "vehicle-operation": {
+      "ranks": 1,
+      "isBroad": true,
+      "isSpeciesFree": true,
+      "standardCost": 3,
+      "category": "Other"
+    },
+    "knowledge": {
+      "ranks": 1,
+      "isBroad": true,
+      "isSpeciesFree": true,
+      "standardCost": 3,
+      "category": "Other"
+    },
+    "interaction": {
+      "ranks": 1,
+      "isBroad": true,
+      "isSpeciesFree": true,
+      "standardCost": 3,
+      "category": "Other"
+    },
+    "athletics": {
+      "ranks": 1,
+      "isBroad": true,
+      "standardCost": 3,
+      "category": "Other"
+    },
+    "stamina": {
+      "ranks": 1,
+      "isBroad": true,
+      "standardCost": 3,
+      "category": "Other"
+    },
+    "navigation": {
+      "ranks": 1,
+      "isBroad": true,
+      "standardCost": 6,
+      "category": "Other"
+    },
+    "climb": {
+      "ranks": 5,
+      "isBroad": false,
+      "standardCost": 3,
+      "category": "Other"
+    },
+    "jump": {
+      "ranks": 7,
+      "isBroad": false,
+      "standardCost": 3,
+      "category": "Other"
+    },
+    "intuition": {
+      "ranks": 6,
+      "isBroad": false,
+      "standardCost": 3,
+      "category": "Other"
+    },
+    "perception": {
+      "ranks": 6,
+      "isBroad": false,
+      "standardCost": 3,
+      "category": "Other"
+    },
+    "psionic-sense": {
+      "ranks": 6,
+      "isBroad": false,
+      "standardCost": 3,
+      "category": "Other"
+    },
+    "endurance": {
+      "ranks": 6,
+      "isBroad": false,
+      "standardCost": 3,
+      "category": "Other"
+    },
+    "bargain": {
+      "ranks": 6,
+      "isBroad": false,
+      "standardCost": 3,
+      "category": "Other"
+    }
+  },
+  "perks": [
+    {
+      "id": "psionic-awareness",
+      "name": "Psionic Awareness",
+      "level": 1
+    }
+  ],
+  "flaws": [
+    {
+      "id": "fragile",
+      "name": "Fragile",
+      "level": 1
+    }
+  ],
+  "isFinalized": true,
+  "earnedAP": 75,
+  "advancementSkills": {
+    "climb": 3,
+    "jump": 4,
+    "intuition": 3,
+    "perception": 3,
+    "psionic-sense": 3,
+    "endurance": 3,
+    "bargain": 3
+  },
+  "advancementAbilities": {
+    "DEX": 1
+  },
+  "advancementPerks": [],
+  "removedFlaws": [],
+  "equipment": "Astrogation star-chart reader, psionic focusing crystal, long-range comms, meditative robes, logbook.",
+  "weapons": "Psionic Mind-Blade Focus, Light Stun Pistol",
+  "armor": "Mindwalker Padded Robes (d4-2 LI)",
+  "credits": 920,
+  "notes": "Fraal psionic astrogator who navigates perilous drive-space routes by sensing gravitational and psychic energy fields."
+}

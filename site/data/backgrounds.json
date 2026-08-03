@@ -331,15 +331,15 @@
                     {
                         "id": "orlamu-clergy",
                         "name": "Orlamu Clergy Member",
-                        "summary": "You were raised in the serene temples of the Fraal, studying the connection between the mind and the cosmos.",
+                        "summary": "You were raised in the serene temples of the Orlamu Theocracy, where science and mysticism converge.",
                         "favored_broad_skill": "[Resolve]({{< relref \"/skills/resolve/\" >}})",
                         "url": "/backgrounds/orlamu-clergy/",
                         "skill_url": "/backgrounds/orlamu-clergy/",
-                        "favored_specialty_skills": "[Telepathy-Contact]({{< relref \"/psionics/telepathy/#contact\" >}}) <br> [ESP- Empathy]({{< relref \"/psionics/esp/#empathy\" >}}) <br> [Biokinesis-Heal]({{< relref \"/psionics/biokinesis/#heal\" >}}) <br> [Telekinesis-Kinetic Shield]({{< relref \"/psionics/telekinesis/#kinetic-shield\" >}})",
+                        "favored_specialty_skills": "[Physical Science-Physics]({{< relref \"/skills/physical-science/#physics\" >}}) <br> [Navigation-Astrogation (Drivespace)]({{< relref \"/skills/navigation/#astrogationdrivespace\" >}}) <br> [System Operation-Sensors]({{< relref \"/skills/system-operation/#sensors\" >}}) <br> [Resolve-Mental Resolve]({{< relref \"/skills/resolve/#mental-resolve\" >}}) <br> [Knowledge-Research]({{< relref \"/skills/knowledge/#research\" >}})",
                         "favored_perks": "[Faith]({{< relref \"/perks_flaws/#faith\" >}}) <br> [Psionic Awareness]({{< relref \"/perks_flaws/#psionic-awareness\" >}})",
                         "flaw": "[Code of Honor]({{< relref \"/perks_flaws/#code-of-honor\" >}})",
-                        "equipment": "Simple clergy robes, a holy symbol or meditative focus.",
-                        "special_ability": "**Psy-Focus:** Receive a -1 step bonus to all [Resolve]({{< relref \"/skills/resolve/\" >}}) checks when resisting non-psionic mental stress or fatigue.",
+                        "equipment": "Simple clergy robes, a meditative focus or holy symbol, a handheld sensor scanner, and encrypted digital scriptures.",
+                        "special_ability": "**Psy-Focus:** Receive a -1 step bonus to all [Resolve]({{< relref \"/skills/resolve/\" >}}) checks when resisting mental stress, fear, or fatigue, or when calculating drivespace jump coordinates.",
                         "tendencies": ""
                     },
                     {

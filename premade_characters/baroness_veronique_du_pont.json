@@ -1,0 +1,183 @@
+{
+  "step": 7,
+  "bio": {
+    "name": "Baroness Veronique Du Pont",
+    "player": "NPC",
+    "concept": "Orion-Rigel Syndicate Trade Envoy",
+    "motivation": "Monopolize rare mineral trade routes across the Ring",
+    "attitude": "Aristocratic & Shrewd",
+    "traits": "Extravagant velvet coat, custom jeweled datapad.",
+    "gender": "Female",
+    "age": "38 standard years",
+    "height": "1.72 m",
+    "weight": "61 kg",
+    "hair": "Platinum blonde (styled wave)",
+    "eyes": "Emerald green"
+  },
+  "faction": "orion",
+  "species": "human",
+  "background": "fixer",
+  "profession": "free-agent",
+  "abilities": {
+    "STR": 8,
+    "DEX": 10,
+    "CON": 9,
+    "INT": 13,
+    "WIL": 11,
+    "PER": 13
+  },
+  "skills": {
+    "athletics": {
+      "ranks": 1,
+      "isBroad": true,
+      "standardCost": 3,
+      "category": "Other",
+      "isSpeciesFree": true
+    },
+    "awareness": {
+      "ranks": 1,
+      "isBroad": true,
+      "standardCost": 3,
+      "category": "Other",
+      "isSpeciesFree": true
+    },
+    "stamina": {
+      "ranks": 1,
+      "isBroad": true,
+      "standardCost": 3,
+      "category": "Other",
+      "isSpeciesFree": true
+    },
+    "interaction": {
+      "ranks": 1,
+      "isBroad": true,
+      "standardCost": 3,
+      "category": "Social",
+      "isSpeciesFree": true
+    },
+    "knowledge": {
+      "ranks": 1,
+      "isBroad": true,
+      "standardCost": 4,
+      "category": "Technical",
+      "isSpeciesFree": true
+    },
+    "vehicle-operation": {
+      "ranks": 1,
+      "isBroad": true,
+      "standardCost": 3,
+      "category": "Technical",
+      "isSpeciesFree": true
+    },
+    "bargain": {
+      "ranks": 5,
+      "isBroad": false,
+      "standardCost": 3,
+      "category": "Social"
+    },
+    "business": {
+      "ranks": 1,
+      "isBroad": true,
+      "standardCost": 4,
+      "category": "Social"
+    },
+    "covert-ops": {
+      "ranks": 1,
+      "isBroad": true,
+      "standardCost": 8,
+      "category": "Social"
+    },
+    "climb": {
+      "ranks": 4,
+      "isBroad": false,
+      "standardCost": 2,
+      "category": "Other"
+    },
+    "jump": {
+      "ranks": 6,
+      "isBroad": false,
+      "standardCost": 1,
+      "category": "Other"
+    },
+    "swim": {
+      "ranks": 6,
+      "isBroad": false,
+      "standardCost": 2,
+      "category": "Other"
+    },
+    "throw": {
+      "ranks": 6,
+      "isBroad": false,
+      "standardCost": 2,
+      "category": "Other"
+    },
+    "intuition": {
+      "ranks": 6,
+      "isBroad": false,
+      "standardCost": 3,
+      "category": "Other"
+    },
+    "perception": {
+      "ranks": 6,
+      "isBroad": false,
+      "standardCost": 3,
+      "category": "Other"
+    },
+    "psionic-sense": {
+      "ranks": 6,
+      "isBroad": false,
+      "standardCost": 4,
+      "category": "Other"
+    },
+    "charm": {
+      "ranks": 5,
+      "isBroad": false,
+      "standardCost": 3,
+      "category": "Social"
+    },
+    "computer-operation": {
+      "ranks": 5,
+      "isBroad": false,
+      "standardCost": 2,
+      "category": "Technical"
+    }
+  },
+  "perks": [
+    {
+      "id": "powerful-ally",
+      "name": "Powerful Ally",
+      "level": 1
+    }
+  ],
+  "flaws": [
+    {
+      "id": "poor-looks",
+      "name": "Poor Looks",
+      "level": 1
+    }
+  ],
+  "isFinalized": true,
+  "earnedAP": 75,
+  "advancementSkills": {
+    "bargain": 3,
+    "climb": 3,
+    "jump": 3,
+    "swim": 3,
+    "throw": 3,
+    "intuition": 3,
+    "perception": 3,
+    "psionic-sense": 3,
+    "charm": 2,
+    "computer-operation": 2
+  },
+  "advancementAbilities": {
+    "PER": 1
+  },
+  "advancementPerks": [],
+  "removedFlaws": [],
+  "equipment": "Rigel diplomatic seal ring, luxury HoloCom terminal, credit chip repository, forged passport portfolio, custom silk travel case.",
+  "weapons": "Holdout Charge Pistol, Micro-Laser Dagger",
+  "armor": "Ballistic Silk Formal Gown (d4-2 LI)",
+  "credits": 4800,
+  "notes": "High-society trade envoy balancing corporate monopolies and underworld connections across the Orion-Rigel merchant routes."
+}

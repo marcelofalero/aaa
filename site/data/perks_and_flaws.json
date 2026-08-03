@@ -36,6 +36,15 @@
                 "name": "Perks",
                 "items": [
                     {
+                        "id": "cybernetic-interface",
+                        "name": "Cybernetic Interface",
+                        "cost": "10",
+                        "ability": "CON",
+                        "type": "Special",
+                        "description": "This perk provides the neural compatibility and intensive physical training required to operate cybernetic implants and body gear without additional preparation costs. Mechalus characters and citizens of the Nariac Domain possess this perk automatically.",
+                        "url": "/perks_flaws/perks/cybernetic-interface/"
+                    },
+                    {
                         "id": "alien-artifact",
                         "name": "Alien Artifact",
                         "cost": "8",
