@@ -106,7 +106,7 @@
       "category": "Other"
     },
     "jump": {
-      "ranks": 6,
+      "ranks": 5,
       "isBroad": false,
       "standardCost": 1,
       "category": "Other"
@@ -142,7 +142,7 @@
       "category": "Other"
     },
     "bargain": {
-      "ranks": 5,
+      "ranks": 4,
       "isBroad": false,
       "standardCost": 3,
       "category": "Social"

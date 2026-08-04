@@ -59,7 +59,11 @@
     },
     'tech-spec': {
       favoredCategories: ['technical'],
-      favoredBroad: ['computer-science', 'engineering', 'knowledge', 'system-operation', 'technical-science']
+      favoredBroad: ['computer-science', 'engineering', 'knowledge', 'system-operation', 'technical-science', 'demolitions', 'vehicle-operation']
+    },
+    'tech-op': {
+      favoredCategories: ['technical'],
+      favoredBroad: ['computer-science', 'engineering', 'knowledge', 'system-operation', 'technical-science', 'demolitions', 'vehicle-operation']
     },
     'diplomat': {
       favoredCategories: ['social'],
