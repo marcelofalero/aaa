@@ -110,7 +110,7 @@
       "category": "Other"
     },
     "jump": {
-      "ranks": 5,
+      "ranks": 6,
       "isBroad": false
     },
     "swim": {
@@ -136,7 +136,7 @@
       "category": "Other"
     },
     "bargain": {
-      "ranks": 6,
+      "ranks": 5,
       "isBroad": false,
       "standardCost": 3,
       "category": "Social"
@@ -162,7 +162,7 @@
     "engineering": 3,
     "repair": 3,
     "climb": 3,
-    "jump": 3,
+    "jump": 4,
     "swim": 3,
     "throw": 3,
     "intuition": 3,

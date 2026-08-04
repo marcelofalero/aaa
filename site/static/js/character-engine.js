@@ -57,9 +57,18 @@
       favoredCategories: [],
       favoredBroad: ['covert-ops', 'deception', 'stealth', 'drive', 'vehicle-operation', 'acrobatics', 'culture']
     },
+    'tech-spec': {
+      favoredCategories: ['technical'],
+      favoredBroad: ['computer-science', 'engineering', 'knowledge', 'system-operation', 'technical-science', 'demolitions', 'vehicle-operation', 'navigation', 'repair']
+    },
     'tech-op': {
-      favoredCategories: [],
-      favoredBroad: ['computer-science', 'technical-sciences', 'physical-science', 'system-operation', 'navigation', 'repair']
+      favoredCategories: ['technical'],
+      favoredBroad: ['computer-science', 'engineering', 'knowledge', 'system-operation', 'technical-science', 'demolitions', 'vehicle-operation', 'navigation', 'repair']
+    },
+    'diplomat': {
+      favoredCategories: ['social'],
+      favoredBroad: ['interaction', 'culture', 'law', 'business']
+    },
     },
     'mindwalker': {
       favoredCategories: [],
