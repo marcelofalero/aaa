@@ -191,5 +191,18 @@
   "weapons": "Star Law Heavy Pistol, Stun Baton",
   "armor": "Marshal Duty Armor (d4 LI / d4-1 HI)",
   "credits": 1600,
-  "notes": "Uncompromising lawman patrolling the outer fringes of Star Law jurisdiction. Respects honor and strict chain of command."
+  "notes": "Uncompromising lawman patrolling the outer fringes of Star Law jurisdiction. Respects honor and strict chain of command.",
+  "durability": {
+    "StunMax": 11,
+    "WoundMax": 11,
+    "FatigueMax": 6,
+    "MortalMax": 6,
+    "PsionicEnergyMax": 0
+  },
+  "availableAP": 0,
+  "spentAP": 75,
+  "computed": {
+    "title": "Seasoned",
+    "maxLastResorts": 2
+  }
 }

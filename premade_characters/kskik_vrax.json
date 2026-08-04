@@ -3,10 +3,10 @@
   "bio": {
     "name": "K'skik \"Quickdraw\" Vrax",
     "player": "Premade / NPC",
-    "concept": "T'sa Mercenary Pistol Specialist & Ship's Gunslinger",
+    "concept": "T'sa Mercenary SMG Specialist, Bounty Hunter & Ship's Gunner",
     "motivation": "Earn enough corporate bounties in the Verge to buy back his clan's ancestral trade frigate.",
     "attitude": "Hyperactive, cocky, lightning-fast reflexes",
-    "traits": "Fidgety reptilian tail, custom dual hip-holsters, cybernetic target-lock monocle.",
+    "traits": "Fidgety reptilian tail, custom SMG quick-draw harness, cybernetic target-lock monocle.",
     "gender": "Male",
     "age": "24 standard years",
     "height": "1.42 m",
@@ -17,14 +17,14 @@
   "faction": "orion",
   "species": "tsa",
   "background": "bounty-hunter",
-  "profession": "combat-spec",
+  "profession": "free-agent",
   "abilities": {
     "STR": 8,
     "DEX": 15,
-    "CON": 8,
+    "CON": 10,
     "INT": 9,
-    "WIL": 8,
-    "PER": 12
+    "WIL": 9,
+    "PER": 9
   },
   "skills": {
     "athletics": {
@@ -61,14 +61,6 @@
       "ranks": 1,
       "isBroad": true
     },
-    "heavy-weapons": {
-      "ranks": 1,
-      "isBroad": true
-    },
-    "armor-operation": {
-      "ranks": 1,
-      "isBroad": true
-    },
     "melee-combat": {
       "ranks": 1,
       "isBroad": true
@@ -77,32 +69,44 @@
       "ranks": 1,
       "isBroad": true
     },
-    "combat-armor": {
-      "ranks": 3,
+    "investigate": {
+      "ranks": 1,
+      "isBroad": true
+    },
+    "system-operation": {
+      "ranks": 1,
+      "isBroad": true
+    },
+    "smg": {
+      "ranks": 5,
       "isBroad": false
     },
-    "blade": {
-      "ranks": 3,
+    "stealth": {
+      "ranks": 5,
       "isBroad": false
     },
-    "land-vehicle": {
+    "track": {
+      "ranks": 5,
+      "isBroad": false
+    },
+    "weapons": {
+      "ranks": 5,
+      "isBroad": false
+    },
+    "defensive-martial-arts": {
+      "ranks": 4,
+      "isBroad": false
+    },
+    "intimidate": {
+      "ranks": 5,
+      "isBroad": false
+    },
+    "interview": {
+      "ranks": 4,
+      "isBroad": false
+    },
+    "interrogate": {
       "ranks": 6,
-      "isBroad": false
-    },
-    "perception": {
-      "ranks": 8,
-      "isBroad": false
-    },
-    "intuition": {
-      "ranks": 8,
-      "isBroad": false
-    },
-    "jump": {
-      "ranks": 8,
-      "isBroad": false
-    },
-    "swim": {
-      "ranks": 8,
       "isBroad": false
     }
   },
@@ -125,20 +129,39 @@
   "isFinalized": true,
   "earnedAP": 75,
   "advancementAbilities": {
-    "DEX": 1
+    "DEX": 1,
+    "CON": 1
   },
   "advancementPerks": [],
   "removedFlaws": [],
-  "equipment": "Dual Orion Light Charge Pistols, Submachine Gun, Quick-release hip holsters, Target-lock monocle visor, Orion Mercenary Guild badge.",
-  "weapons": "Dual Orion Light Charge Pistols (d4+1w/d6+1w), SMG (d4+2w)",
+  "equipment": "Compact SMG (custom quick-draw harness), vibroblade, Target-lock monocle visor, Orion Mercenary Guild badge, tracking sensor kit.",
+  "weapons": "Compact SMG (d4+2w/d6+2w), Vibroblade (d4+1w)",
   "armor": "Tactical Combat Vest (d4-1 LI, d4-2 HI)",
-  "credits": 3200,
-  "notes": "Fastest draw in the Orion League mercenary contingent. Specializes in dual-wielding light charge sidearms.",
+  "credits": 2800,
+  "notes": "Quickest draw in the Verge. Specializes in close-quarters SMG bursts, silent takedowns, and tracking bounties across ships and settlements. Doubles as ship's weapon station operator. Uses Defensive Martial Arts to neutralize threats without firearms when discretion is needed.",
   "advancementSkills": {
-    "land-vehicle": 3,
-    "perception": 5,
-    "intuition": 5,
-    "jump": 5,
-    "swim": 5
+    "smg": 2,
+    "stealth": 3,
+    "track": 2,
+    "weapons": 2,
+    "defensive-martial-arts": 1,
+    "intimidate": 3,
+    "interview": 4,
+    "interrogate": 5,
+    "athletics": 1,
+    "covert-ops": 1
+  },
+  "durability": {
+    "StunMax": 10,
+    "WoundMax": 10,
+    "FatigueMax": 5,
+    "MortalMax": 5,
+    "PsionicEnergyMax": 0
+  },
+  "availableAP": 0,
+  "spentAP": 75,
+  "computed": {
+    "title": "Seasoned",
+    "maxLastResorts": 2
   }
 }

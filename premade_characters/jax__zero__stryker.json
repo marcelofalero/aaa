@@ -94,7 +94,7 @@
       "category": "Other"
     },
     "jump": {
-      "ranks": 6,
+      "ranks": 4,
       "isBroad": false,
       "standardCost": 1,
       "category": "Other"
@@ -161,7 +161,8 @@
     "intuition": 3,
     "perception": 3,
     "psionic-sense": 2,
-    "computer-operation": 3
+    "computer-operation": 3,
+    "athletics": 0
   },
   "advancementAbilities": {
     "DEX": 1
@@ -172,5 +173,18 @@
   "weapons": "Blaster Pistol, Vibro-blade",
   "armor": "Flight Combat Jacket (d4-1 LI / d4-2 HI)",
   "credits": 1400,
-  "notes": "Charismatic pilot who has outrun Concord blockades and syndicate enforcers across three star systems."
+  "notes": "Charismatic pilot who has outrun Concord blockades and syndicate enforcers across three star systems.",
+  "durability": {
+    "StunMax": 10,
+    "WoundMax": 10,
+    "FatigueMax": 5,
+    "MortalMax": 5,
+    "PsionicEnergyMax": 0
+  },
+  "availableAP": 0,
+  "spentAP": 75,
+  "computed": {
+    "title": "Seasoned",
+    "maxLastResorts": 2
+  }
 }

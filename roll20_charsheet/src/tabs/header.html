@@ -429,21 +429,89 @@ on('clicked:import_json', function() {
             const data = JSON.parse(v.import_export_json);
             const update = {};
             
+            const METADATA_MAP = {
+                species: {
+                    'human': 'Human',
+                    'fraal': 'Fraal',
+                    'mechalus': 'Mechalus',
+                    'sesheyan': 'Sesheyan',
+                    'tsa': "T'sa",
+                    'weren': 'Weren'
+                },
+                profession: {
+                    'combat-spec': 'Combat Spec',
+                    'free-agent': 'Free Agent',
+                    'tech-op': 'Tech Op',
+                    'mindwalker': 'Mindwalker',
+                    'diplomat': 'Diplomat'
+                },
+                faction: {
+                    'orion': 'Orion League',
+                    'concord': 'Galactic Concord',
+                    'austerity': 'Austerity',
+                    'borealis': 'Borealis Republic',
+                    'rigunmor': 'Rigunmor Star Consortium',
+                    'voidcorp': 'VoidCorp',
+                    'thuldan': 'Thuldan Empire',
+                    'external': 'External / Independent',
+                    'insight': 'Insight',
+                    'vanguard': 'Vanguard',
+                    'tendril': 'Tendril'
+                }
+            };
+            
+            const formatMetadata = (type, key) => {
+                if (!key) return '';
+                if (METADATA_MAP[type] && METADATA_MAP[type][key]) return METADATA_MAP[type][key];
+                return key.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+            };
+
             // Map Character Builder JSON to Roll20 attributes
             if (data.bio) {
                 if (data.bio.name) update.character_name = data.bio.name;
-                if (data.bio.species) update.race = data.bio.species;
-                if (data.bio.profession) update.profession = data.bio.profession;
-                if (data.bio.background) update.career = data.bio.background;
+                if (data.bio.gender) update.gender = data.bio.gender;
+            }
+            if (data.species) update.race = formatMetadata('species', data.species);
+            if (data.profession) update.profession = formatMetadata('profession', data.profession);
+            if (data.background) update.career = formatMetadata('background', data.background);
+            if (data.faction) update.faction = formatMetadata('faction', data.faction);
+            
+            // Map Computed AP, Title, and Last Resorts
+            if (data.computed) {
+                if (data.computed.title) update.character_title = formatMetadata('title', data.computed.title);
+                if (data.computed.maxLastResorts !== undefined) {
+                    update.lastresortsmax = data.computed.maxLastResorts;
+                    update.lastresorts = data.computed.maxLastResorts;
+                }
             }
             
+            // Try to find XP in computed block, then in root block, then in legacy fields
+            const availAP = (data.computed && data.computed.availableAP !== undefined) ? data.computed.availableAP : data.availableAP;
+            const effAP = (data.computed && data.computed.effectiveAP !== undefined) ? data.computed.effectiveAP : data.earnedAP;
+            
+            if (availAP !== undefined) update.xp_stored = availAP;
+            if (effAP !== undefined) update.xp_effective = effAP;
+            
             if (data.abilities) {
-                if (data.abilities.STR) update.Strength = data.abilities.STR;
-                if (data.abilities.DEX) update.Dexterity = data.abilities.DEX;
-                if (data.abilities.CON) update.Constitution = data.abilities.CON;
-                if (data.abilities.INT) update.Intelligence = data.abilities.INT;
-                if (data.abilities.WIL) update.Will = data.abilities.WIL;
-                if (data.abilities.PER) update.Personality = data.abilities.PER;
+                const getStat = (statName) => {
+                    const base = parseInt(data.abilities[statName]) || 0;
+                    const adv = data.advancementAbilities ? (parseInt(data.advancementAbilities[statName]) || 0) : 0;
+                    return base + adv;
+                };
+                if (data.abilities.STR) update.Strength = getStat('STR');
+                if (data.abilities.DEX) update.Dexterity = getStat('DEX');
+                if (data.abilities.CON) update.Constitution = getStat('CON');
+                if (data.abilities.INT) update.Intelligence = getStat('INT');
+                if (data.abilities.WIL) update.Will = getStat('WIL');
+                if (data.abilities.PER) update.Personality = getStat('PER');
+            }
+            
+            if (data.durability) {
+                if (data.durability.StunMax !== undefined) { update.StunMax = data.durability.StunMax; update.StunCurrent = data.durability.StunMax; }
+                if (data.durability.WoundMax !== undefined) { update.WoundMax = data.durability.WoundMax; update.WoundCurrent = data.durability.WoundMax; }
+                if (data.durability.FatigueMax !== undefined) { update.FatigueMax = data.durability.FatigueMax; update.FatigueCurrent = data.durability.FatigueMax; }
+                if (data.durability.MortalMax !== undefined) { update.MortalMax = data.durability.MortalMax; update.MortalCurrent = data.durability.MortalMax; }
+                if (data.durability.PsionicEnergyMax !== undefined) { update.PsionicEnergyMax = data.durability.PsionicEnergyMax; update.PsionicEnergyCurrent = data.durability.PsionicEnergyMax; }
             }
             
             const ROLL20_SKILL_MAP = {
@@ -671,27 +739,56 @@ on('clicked:import_json', function() {
                     const r20Attr = ROLL20_SKILL_MAP[skillId] || ROLL20_SKILL_MAP[skillId.toLowerCase()] || skillId.replace(/\s/g, '').replace(/-/g, '').replace(/\./g, '').replace(/,/g, '').replace(/—/g, '').replace(/'/g, '');
                     const isBroad = data.skills[skillId].isBroad || !r20Attr.includes('_');
                     if (isBroad) {
-                        update[r20Attr] = "on";
+                        update[r20Attr] = "1";
                     } else {
                         update[`${r20Attr}Rank`] = (update[`${r20Attr}Rank`] || 0) + data.skills[skillId].ranks;
-                        update[`${r20Attr}_is_trained`] = "on";
+                        update[`${r20Attr}_is_trained`] = "1";
                     }
                 });
             }
-            if (data.advancementSkills) {
-                Object.keys(data.advancementSkills).forEach(skillId => {
-                    const r20Attr = ROLL20_SKILL_MAP[skillId] || ROLL20_SKILL_MAP[skillId.toLowerCase()] || skillId.replace(/\s/g, '').replace(/-/g, '').replace(/\./g, '').replace(/,/g, '').replace(/—/g, '').replace(/'/g, '');
-                    const isBroad = !r20Attr.includes('_');
-                    if (isBroad) {
-                        update[r20Attr] = "on";
-                    } else {
-                        const advancedRanks = typeof data.advancementSkills[skillId] === 'number' ? data.advancementSkills[skillId] : (data.advancementSkills[skillId].ranks || 0);
-                        update[`${r20Attr}Rank`] = (update[`${r20Attr}Rank`] || 0) + advancedRanks;
-                        update[`${r20Attr}_is_trained`] = "on";
-                    }
-                });
+            // Note: We DO NOT iterate over data.advancementSkills here because data.skills already contains the total skill ranks.
+            
+            // Map extra bio details
+            if (data.bio) {
+                if (data.bio.age) update.age = data.bio.age;
+                if (data.bio.height) update.height = data.bio.height;
+                if (data.bio.weight) update.weight = data.bio.weight;
+                
+                const otherLines = [];
+                if (data.bio.concept) otherLines.push(`Concept: ${data.bio.concept}`);
+                if (data.bio.motivation) otherLines.push(`Motivation: ${data.bio.motivation}`);
+                if (data.bio.attitude) otherLines.push(`Attitude: ${data.bio.attitude}`);
+                if (data.bio.traits) otherLines.push(`Traits: ${data.bio.traits}`);
+                if (otherLines.length > 0) update.other = otherLines.join('\n');
             }
             
+            // Map Perks and Flaws
+            if (Array.isArray(data.perks) && data.perks.length > 0) {
+                update.perks = data.perks.map(p => `• ${p.name || p.id}`).join('\n');
+            }
+            if (Array.isArray(data.flaws) && data.flaws.length > 0) {
+                update.flaws = data.flaws.map(f => `• ${f.name || f.id}`).join('\n');
+            }
+            
+            // Map Movement Rates based on species
+            const speciesStr = (data.species || (data.bio ? data.bio.species : 'human')).toLowerCase().replace(/[^a-z]/g, '');
+            const movement = {
+                human: { Sprint: "20", Run: "12", Walk: "4", EasySwim: "2", Swim: "4", Glide: "0", Fly: "0" },
+                mechalus: { Sprint: "20", Run: "12", Walk: "4", EasySwim: "2", Swim: "4", Glide: "0", Fly: "0" },
+                fraal: { Sprint: "14", Run: "8", Walk: "4", EasySwim: "2", Swim: "4", Glide: "0", Fly: "0" },
+                tsa: { Sprint: "24", Run: "16", Walk: "6", EasySwim: "2", Swim: "4", Glide: "0", Fly: "0" },
+                weren: { Sprint: "22", Run: "14", Walk: "4", EasySwim: "2", Swim: "4", Glide: "0", Fly: "0" },
+                sesheyan: { Sprint: "16", Run: "10", Walk: "4", EasySwim: "2", Swim: "4", Glide: "8", Fly: "32" }
+            };
+            const spMove = movement[speciesStr] || movement.human;
+            update.Sprint = spMove.Sprint;
+            update.Run = spMove.Run;
+            update.Walk = spMove.Walk;
+            update.EasySwim = spMove.EasySwim;
+            update.Swim = spMove.Swim;
+            update.Glide = spMove.Glide;
+            update.Fly = spMove.Fly;
+
             update.import_status = "Import successful! ✅";
             setAttrs(update);
         } catch(e) {
@@ -701,7 +798,7 @@ on('clicked:import_json', function() {
 });
 
 on('clicked:export_json', function() {
-    const baseAttrs = ['character_name', 'race', 'profession', 'career', 'Strength', 'Dexterity', 'Constitution', 'Intelligence', 'Will', 'Personality'];
+    const baseAttrs = ['import_export_json', 'character_name', 'race', 'profession', 'career', 'Strength', 'Dexterity', 'Constitution', 'Intelligence', 'Will', 'Personality'];
     const skillAttrs = [];
     Object.values(ROLL20_SKILL_MAP).forEach(r20Attr => {
         if (r20Attr.includes('_')) {
@@ -712,36 +809,84 @@ on('clicked:export_json', function() {
     });
     
     getAttrs([...baseAttrs, ...skillAttrs], function(v) {
-        const out = {
-            bio: {
-                name: v.character_name || "",
-                species: v.race || "",
-                profession: v.profession || "",
-                background: v.career || ""
-            },
-            abilities: {
-                STR: parseInt(v.Strength) || 0,
-                DEX: parseInt(v.Dexterity) || 0,
-                CON: parseInt(v.Constitution) || 0,
-                INT: parseInt(v.Intelligence) || 0,
-                WIL: parseInt(v.Will) || 0,
-                PER: parseInt(v.Personality) || 0
-            },
-            skills: {},
-            advancementSkills: {}
+        let out = {};
+        try {
+            if (v.import_export_json) {
+                out = JSON.parse(v.import_export_json);
+            }
+        } catch(e) {
+            // Ignore parse errors, start fresh
+        }
+
+        if (!out.bio) out.bio = {};
+        out.bio.name = v.character_name || out.bio.name || "";
+        out.bio.species = v.race || out.bio.species || "";
+        out.bio.profession = v.profession || out.bio.profession || "";
+        out.bio.background = v.career || out.bio.background || "";
+
+        if (!out.abilities) out.abilities = {};
+        if (!out.advancementAbilities) out.advancementAbilities = {};
+        
+        const handleStat = (r20Val, statName) => {
+            const total = parseInt(r20Val) || 0;
+            const base = parseInt(out.abilities[statName]) || 0;
+            if (base === 0 || total < base) {
+                out.abilities[statName] = total;
+                delete out.advancementAbilities[statName];
+            } else if (total > base) {
+                out.advancementAbilities[statName] = total - base;
+            } else {
+                delete out.advancementAbilities[statName];
+            }
         };
+
+        handleStat(v.Strength, 'STR');
+        handleStat(v.Dexterity, 'DEX');
+        handleStat(v.Constitution, 'CON');
+        handleStat(v.Intelligence, 'INT');
+        handleStat(v.Will, 'WIL');
+        handleStat(v.Personality, 'PER');
+
+        if (!out.skills) out.skills = {};
+        if (!out.advancementSkills) out.advancementSkills = {};
         
         Object.entries(ROLL20_SKILL_MAP).forEach(([yid, r20Attr]) => {
             if (r20Attr.includes('_')) {
                 const isTrained = v[r20Attr + '_is_trained'];
                 const rank = parseInt(v[r20Attr + 'Rank']) || 0;
-                if (isTrained === 'on' || isTrained === '1' || rank > 0) {
-                    out.advancementSkills[yid] = rank;
+                const totalRank = (isTrained === 'on' || isTrained === '1' || rank > 0) ? Math.max(1, rank) : 0;
+                
+                if (totalRank > 0) {
+                    const prevTotal = (out.skills[yid] && out.skills[yid].ranks) ? out.skills[yid].ranks : 0;
+                    const prevAdv = out.advancementSkills[yid] || 0;
+                    const creationRank = Math.max(0, prevTotal - prevAdv);
+                    
+                    const newAdvRank = Math.max(0, totalRank - creationRank);
+                    
+                    if (out.skills[yid]) {
+                        out.skills[yid].ranks = totalRank;
+                    } else {
+                        out.skills[yid] = { ranks: totalRank, isBroad: false };
+                    }
+                    
+                    if (newAdvRank > 0) {
+                        out.advancementSkills[yid] = newAdvRank;
+                    } else {
+                        delete out.advancementSkills[yid];
+                    }
+                } else {
+                    delete out.skills[yid];
+                    delete out.advancementSkills[yid];
                 }
             } else {
                 const isTrained = v[r20Attr];
                 if (isTrained === 'on' || isTrained === '1') {
-                    out.skills[yid] = { ranks: 1, isBroad: true };
+                    if (!out.skills[yid]) {
+                        out.skills[yid] = { ranks: 1, isBroad: true };
+                    }
+                } else {
+                    delete out.skills[yid];
+                    delete out.advancementSkills[yid];
                 }
             }
         });

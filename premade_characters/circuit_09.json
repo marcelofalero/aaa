@@ -160,7 +160,7 @@
   "earnedAP": 75,
   "advancementSkills": {
     "hacking": 3,
-    "computer-operation": 4,
+    "computer-operation": 5,
     "climb": 3,
     "jump": 3,
     "swim": 3,
@@ -178,5 +178,18 @@
   "weapons": "Subcompact Laser Pistol, Shock Knife",
   "armor": "Subdermal Mesh Armor (d4-1 LI / d4-2 HI)",
   "credits": 980,
-  "notes": "Logic-driven Mechalus hacker who views encrypted corporate mainframes as puzzles waiting to be solved."
+  "notes": "Logic-driven Mechalus hacker who views encrypted corporate mainframes as puzzles waiting to be solved.",
+  "durability": {
+    "StunMax": 10,
+    "WoundMax": 10,
+    "FatigueMax": 5,
+    "MortalMax": 5,
+    "PsionicEnergyMax": 0
+  },
+  "availableAP": 0,
+  "spentAP": 75,
+  "computed": {
+    "title": "Seasoned",
+    "maxLastResorts": 2
+  }
 }

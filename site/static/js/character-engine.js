@@ -50,24 +50,28 @@
   // Profession Favored Tables (Matching validate_character.py)
   const PROFESSION_DATA = {
     'combat-spec': {
-      favoredCategories: ['combat'],
-      favoredBroad: ['modern-ranged-weapons', 'heavy-weapons', 'armor-operation', 'athletics']
+      favoredCategories: [],
+      favoredBroad: ['athletics', 'armor-operation', 'tactics', 'heavy-weapons', 'melee-combat', 'modern-ranged-weapons']
     },
     'free-agent': {
-      favoredCategories: ['social', 'technical'],
-      favoredBroad: ['covert-ops', 'interaction', 'investigation', 'vehicle-operation']
+      favoredCategories: [],
+      favoredBroad: ['covert-ops', 'deception', 'stealth', 'drive', 'vehicle-operation', 'acrobatics', 'culture']
     },
     'tech-spec': {
       favoredCategories: ['technical'],
-      favoredBroad: ['computer-science', 'engineering', 'knowledge', 'system-operation', 'technical-science']
+      favoredBroad: ['computer-science', 'engineering', 'knowledge', 'system-operation', 'technical-science', 'demolitions', 'vehicle-operation', 'navigation', 'repair']
+    },
+    'tech-op': {
+      favoredCategories: ['technical'],
+      favoredBroad: ['computer-science', 'engineering', 'knowledge', 'system-operation', 'technical-science', 'demolitions', 'vehicle-operation', 'navigation', 'repair']
     },
     'diplomat': {
       favoredCategories: ['social'],
       favoredBroad: ['interaction', 'culture', 'law', 'business']
     },
     'mindwalker': {
-      favoredCategories: ['psionics'],
-      favoredBroad: ['telepathy', 'telekinesis', 'biokinesis', 'teleportation']
+      favoredCategories: [],
+      favoredBroad: ['awareness', 'resolve', 'telepathy', 'telekinesis', 'biokinesis', 'esp', 'psychoportation']
     }
   };
 
@@ -158,6 +162,12 @@
       if (prof.favoredCategories.includes(cat)) return true;
       if (prof.favoredBroad.includes(ns)) return true;
       if (np && prof.favoredBroad.includes(np)) return true;
+
+      // Check background favored skills
+      const bgFavored = this.state.backgroundFavoredSkills || [];
+      if (bgFavored.includes(ns)) return true;
+      if (np && bgFavored.includes(np)) return true;
+
       return false;
     }
 
@@ -382,6 +392,15 @@
       const advSkills = this.state.advancementSkills || {};
       const skills = this.state.skills || {};
 
+      // Sanitize advancementSkills against skills
+      for (const [sId, advRanks] of Object.entries(advSkills)) {
+        if (!skills[sId] || (skills[sId].ranks || 0) <= 0) {
+          delete advSkills[sId];
+        } else if (advRanks > skills[sId].ranks) {
+          advSkills[sId] = skills[sId].ranks;
+        }
+      }
+
       const baseSP = (faction === 'rigunmor' && this.state.bonusPerkOrPointsChoice === 'points') ? 76 : 70;
       const totalSPBudget = baseSP;
 
@@ -463,10 +482,24 @@
         }
       }
 
-      if (this.state.earnedAP !== campaignAPSpent) {
-        warnings.push(`Campaign AP mismatch: Spent ${campaignAPSpent} AP vs Earned ${this.state.earnedAP} AP.`);
-      } else {
-        info.push(`Campaign Advancement: ${campaignAPSpent} / ${this.state.earnedAP} AP spent (Parity OK)`);
+      if (Array.isArray(this.state.advancementPerks)) {
+        this.state.advancementPerks.forEach(p => {
+          campaignAPSpent += p.apCost || p.cost || 0;
+        });
+      }
+
+      if (Array.isArray(this.state.removedFlaws)) {
+        this.state.removedFlaws.forEach(f => {
+          campaignAPSpent += f.apCost || 0;
+        });
+      }
+
+      if (this.state.isFinalized) {
+        if (this.state.earnedAP !== campaignAPSpent) {
+          warnings.push(`Campaign AP mismatch: Spent ${campaignAPSpent} AP vs Earned ${this.state.earnedAP} AP.`);
+        } else {
+          info.push(`Campaign Advancement: ${campaignAPSpent} / ${this.state.earnedAP} AP spent (Parity OK)`);
+        }
       }
 
       return {

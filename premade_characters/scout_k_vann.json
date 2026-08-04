@@ -124,7 +124,7 @@
       "category": "Other"
     },
     "intuition": {
-      "ranks": 6,
+      "ranks": 5,
       "isBroad": false,
       "standardCost": 3,
       "category": "Other"
@@ -183,5 +183,18 @@
   "weapons": "Frontier Hunting Rifle, Sesheyan Hunting Dagger",
   "armor": "Reinforced Scout Leather (d4-1 LI)",
   "credits": 460,
-  "notes": "Pathfinder and wildlife survey specialist mapping unexplored planetary biomes and alien flora."
+  "notes": "Pathfinder and wildlife survey specialist mapping unexplored planetary biomes and alien flora.",
+  "durability": {
+    "StunMax": 10,
+    "WoundMax": 10,
+    "FatigueMax": 5,
+    "MortalMax": 5,
+    "PsionicEnergyMax": 0
+  },
+  "availableAP": 0,
+  "spentAP": 75,
+  "computed": {
+    "title": "Seasoned",
+    "maxLastResorts": 2
+  }
 }

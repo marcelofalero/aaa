@@ -121,6 +121,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function getEngine() {
     if (typeof CharacterEngine === 'function') {
+      const bgObj = findBackground(state.background);
+      state.backgroundFavoredSkills = getBackgroundFavoredSkills(bgObj);
       return new CharacterEngine(state, data.skillsTable);
     }
     return null;
@@ -456,31 +458,15 @@ document.addEventListener('DOMContentLoaded', () => {
     if (Array.isArray(bg.favored_skills)) return bg.favored_skills;
     const skills = new Set();
     const str = `${bg.favored_broad_skill || ''} ${bg.favored_specialty_skills || ''}`;
-    const relrefMatches = str.match(/relref\s*["']?\/([^"'\s]+)["']?/gi) || str.match(/\/skills\/[^\s"\)]+/gi) || str.match(/\/psionics\/[^\s"\)]+/gi);
-    if (relrefMatches) {
-      relrefMatches.forEach(m => {
-        const parts = m.split(/[\/#]/);
-        parts.forEach(p => {
-          const clean = p.replace(/[^a-z0-9\-]/gi, '').toLowerCase();
-          if (clean && !['relref', 'skills', 'psionics', 'http', 'https'].includes(clean)) {
-            const norm = normalizeSkillId(clean);
-            skills.add(norm);
-          }
-        });
-      });
+    
+    // Parse the relref markdown links directly to extract the exact skill slugs
+    const regex = /\/(?:skills|psionics)\/([a-z0-9\-]+)(?:\/)?(?:#([a-z0-9\-]+))?/gi;
+    let match;
+    while ((match = regex.exec(str)) !== null) {
+      if (match[1]) skills.add(normalizeSkillId(match[1]));
+      if (match[2]) skills.add(normalizeSkillId(match[2]));
     }
-
-    const matches = str.match(/\[(.*?)\]/g);
-    if (matches) {
-      matches.forEach(m => {
-        const clean = m.replace(/^\[/, '').replace(/\]$/, '').trim();
-        if (clean) {
-          skills.add(clean.toLowerCase());
-          const norm = normalizeSkillId(clean);
-          if (norm) skills.add(norm);
-        }
-      });
-    }
+    
     return Array.from(skills);
   }
 
@@ -730,35 +716,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function isFavored(skillInput, categoryInput = null, parentBroadInput = null) {
     if (!skillInput) return false;
-    if (window.CharacterEngine && window.CharacterEngine.prototype && window.CharacterEngine.prototype.isFavored) {
-      const engine = new window.CharacterEngine({ profession: state.profession });
-      return engine.isFavored(skillInput, categoryInput, parentBroadInput, state.profession);
+    const engine = getEngine();
+    if (engine) {
+      return engine.isFavored(skillInput, categoryInput, parentBroadInput);
     }
-
-    const skillId = normalizeSkillId(skillInput);
-    const parentBroadId = parentBroadInput ? normalizeSkillId(parentBroadInput) : getParentBroadSkillName(skillId);
-
-    const profKey = normalizeSkillId(state.profession) || 'free-agent';
-    const prof = (window.CharacterEngine && window.CharacterEngine.PROFESSION_DATA ? window.CharacterEngine.PROFESSION_DATA[profKey] : null) || PROFESSION_DATA[profKey];
-
-    if (!prof) return false;
-
-    const catMap = {
-      'combate': 'combat', 'combat': 'combat', 'combat-skills': 'combat',
-      'técnica': 'technical', 'tecnica': 'technical', 'technical': 'technical', 'technical-skills': 'technical',
-      'social': 'social', 'social-skills': 'social',
-      'otros': 'other', 'other': 'other', 'other-skills': 'other',
-      'psiónica': 'psionics', 'psionica': 'psionics', 'psionics': 'psionics', 'psionic-disciplines': 'psionics'
-    };
-    const cat = categoryInput ? (catMap[normalizeSkillId(categoryInput)] || normalizeSkillId(categoryInput)) : '';
-
-    const favoredCats = prof.favoredCategories || [];
-    const favoredBroads = prof.favoredBroad || prof.favoredSkills || [];
-
-    if (cat && favoredCats.includes(cat)) return true;
-    if (favoredBroads.some(s => normalizeSkillId(s) === skillId)) return true;
-    if (parentBroadId && favoredBroads.some(s => normalizeSkillId(s) === parentBroadId)) return true;
-
     return false;
   }
 
@@ -822,7 +783,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const baseSpentAP = state.isFinalized ? rep.campaignAPSpent : 0;
     const availAP = (state.earnedAP || 0) - spentAP;
     const effectiveAP = Math.max(state.earnedAP || 0, baseSpentAP);
-    const titleObj = rep.rankTier || getCharacterTitle(effectiveAP);
+    const titleObj = getCharacterTitle(effectiveAP);
     const advAbilityBudget = state.isFinalized ? titleObj.ranksOverRookie : 0;
 
     const targetAbilityBudget = (FACTION_DATA[state.faction]?.abilityBudget || 60) + (heightenedCount * 3) + humanFactionBonus + advAbilityBudget;
@@ -858,8 +819,8 @@ document.addEventListener('DOMContentLoaded', () => {
       flawBonus += (rawBonus || 0);
     });
 
-    let totalSkillBudget = baseSkillPoints;
-    let skillPtsSpent = rep.creationSPSpent !== undefined ? rep.creationSPSpent : 0;
+    let totalSkillBudget = baseSkillPoints - perkCost + flawBonus;
+    let skillPtsSpent = rep.creationSPSpent !== undefined ? rep.creationSPSpent - perkCost + flawBonus : 0;
     let broadSkillCount = 0;
     let psionicBroadCount = 0;
 
@@ -1885,8 +1846,18 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
 
-    let totalCreationSP = 0;
-    let totalCampaignAP = 0;
+    let _engineInstance = getEngine();
+    let _engineRes = _engineInstance ? _engineInstance.validate() : { creationSPSpent: 0, campaignAPSpent: 0 };
+    
+    // We only want to show the SP spent strictly on skills in the step 3 footer.
+    // The engine's creationSPSpent includes perks and flaws (perkCost - flawBonus + skills).
+    let _perkCost = 0;
+    state.perks.forEach(p => { _perkCost += getPerkCost(p).finalCost; });
+    let _flawBonus = 0;
+    state.flaws.forEach(f => { _flawBonus += (getFlawBonus(f).rawBonus || 0); });
+
+    let totalCreationSP = _engineRes.creationSPSpent !== undefined ? _engineRes.creationSPSpent - _perkCost + _flawBonus : 0;
+    let totalCampaignAP = _engineRes.campaignAPSpent !== undefined ? _engineRes.campaignAPSpent : 0;
 
     data.skillsTable.items.forEach(category => {
       if (catFilter !== 'ALL' && category.skill !== catFilter) return;
@@ -1915,9 +1886,9 @@ document.addEventListener('DOMContentLoaded', () => {
         if (broadBought && !isFreeBroad) {
           const advRanks = (state.advancementSkills && state.advancementSkills[broadSkill.id]) || 0;
           if (advRanks > 0 && state.isFinalized) {
-            totalCampaignAP += getAdvancementSkillCost(broadSkill.id, 1, false);
+            // totalCampaignAP is now handled by the engine
           } else {
-            totalCreationSP += actualBroadCost;
+            // totalCreationSP is now handled by the engine
           }
         }
 
@@ -1977,11 +1948,11 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             if (currentRanks > 0) {
-              totalCreationSP += specCreationSpent;
-              totalCampaignAP += specCampaignSpent;
+              // Totals are now handled globally by CharacterEngine
             }
 
-            let totalSpecScore = broadAbilityVal + currentRanks;
+            let specAbilityVal = specSkill.attribute ? getEffectiveAbilityScore(specSkill.attribute) : broadAbilityVal;
+            let totalSpecScore = specAbilityVal + currentRanks;
             let specOrd = totalSpecScore;
             let specGood = Math.floor(specOrd / 2);
             let specAmaz = Math.floor(specOrd / 4);
@@ -1995,15 +1966,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const nextRankAPCost = getAdvancementSkillCost(specSkill.id, currentRanks + 1, false);
 
-            let rankButtons = [];
-            if (state.isFinalized) {
-              const maxDisplay = Math.min(maxAllowedRank, Math.max(currentRanks, currentRanks + 1));
-              for (let r = 0; r <= maxDisplay; r++) {
-                rankButtons.push(r);
-              }
-            } else {
-              rankButtons = [0, 1, 2, 3];
-            }
+            const canRemove = state.isFinalized ? campaignRanks > 0 : creationRanks > 0;
+            const canAdd = state.isFinalized ? currentRanks < maxAllowedRank : creationRanks < 3;
 
             html += `
               <div class="cb-skill-row ${specFavored ? 'favored' : ''}" style="padding-left: 2.5rem;">
@@ -2040,9 +2004,9 @@ document.addEventListener('DOMContentLoaded', () => {
                     <span class="cb-skill-total-badge ${specCreationSpent > 0 ? 'active' : ''}">${specCreationSpent} SP</span>
                   `}
                   <div class="cb-rank-stepper">
-                    <button class="cb-btn-rank-step" data-skill="${specSkill.id}" data-is-broad="false" data-cost="${specSkill.cost}" data-cat="${normalizeCategoryId(category.id)}" data-dir="-1" ${currentRanks <= 0 ? 'disabled' : ''}>−</button>
-                    <span class="cb-rank-display">+${currentRanks}</span>
-                    <button class="cb-btn-rank-step" data-skill="${specSkill.id}" data-is-broad="false" data-cost="${specSkill.cost}" data-cat="${normalizeCategoryId(category.id)}" data-dir="1" ${currentRanks >= maxAllowedRank ? 'disabled' : ''}>+</button>
+                    <button class="cb-btn-rank-step" data-skill="${specSkill.id}" data-is-broad="false" data-cost="${specSkill.cost}" data-cat="${normalizeCategoryId(category.id)}" data-dir="-1" ${!canRemove ? 'disabled' : ''}>−</button>
+                    <span class="cb-rank-display">+${state.isFinalized ? currentRanks : creationRanks}</span>
+                    <button class="cb-btn-rank-step" data-skill="${specSkill.id}" data-is-broad="false" data-cost="${specSkill.cost}" data-cat="${normalizeCategoryId(category.id)}" data-dir="1" ${!canAdd ? 'disabled' : ''}>+</button>
                   </div>
                 </div>
               </div>
@@ -2098,35 +2062,67 @@ document.addEventListener('DOMContentLoaded', () => {
         const cat = normalizeCategoryId(btn.dataset.cat);
         const dir = parseInt(btn.dataset.dir);
 
+        const currentTotalRanks = state.skills[skillName]?.ranks || 0;
+        const currentAdvRanks = (state.advancementSkills && state.advancementSkills[skillName]) || 0;
+        const currentCreationRanks = Math.max(0, currentTotalRanks - currentAdvRanks);
+
         if (isBroad) {
-          const currentlyBought = state.skills[skillName]?.ranks > 0;
-          if (dir === -1 && currentlyBought) {
-            delete state.skills[skillName];
-          } else if (dir === 1 && !currentlyBought) {
-            state.skills[skillName] = { ranks: 1, isBroad: true, standardCost: cost, category: cat };
-          }
-        } else {
-          const currentTotalRanks = state.skills[skillName]?.ranks || 0;
-          const newRank = currentTotalRanks + dir;
-
-          if (newRank <= 0) {
-            delete state.skills[skillName];
-            if (state.advancementSkills) delete state.advancementSkills[skillName];
-          } else {
-            const currentAdvRanks = (state.advancementSkills && state.advancementSkills[skillName]) || 0;
-            const creationRanks = Math.max(0, currentTotalRanks - currentAdvRanks);
-
-            if (state.isFinalized) {
-              const newAdvRanks = Math.max(0, newRank - creationRanks);
+          if (state.isFinalized) {
+            if (dir === 1 && currentAdvRanks === 0) {
               if (!state.advancementSkills) state.advancementSkills = {};
-              if (newAdvRanks > 0) {
-                state.advancementSkills[skillName] = newAdvRanks;
+              state.advancementSkills[skillName] = 1;
+              const newTotal = currentCreationRanks + 1;
+              state.skills[skillName] = { ranks: newTotal, isBroad: true, standardCost: cost, category: cat };
+            } else if (dir === -1 && currentAdvRanks > 0) {
+              delete state.advancementSkills[skillName];
+              const newTotal = currentCreationRanks;
+              if (newTotal <= 0) {
+                delete state.skills[skillName];
               } else {
-                delete state.advancementSkills[skillName];
+                state.skills[skillName] = { ranks: newTotal, isBroad: true, standardCost: cost, category: cat };
               }
             }
+          } else {
+            if (dir === 1 && currentCreationRanks === 0) {
+              const newTotal = 1 + currentAdvRanks;
+              state.skills[skillName] = { ranks: newTotal, isBroad: true, standardCost: cost, category: cat };
+            } else if (dir === -1 && currentCreationRanks > 0) {
+              const newTotal = currentAdvRanks;
+              if (newTotal <= 0) {
+                delete state.skills[skillName];
+                if (state.advancementSkills) delete state.advancementSkills[skillName];
+              } else {
+                state.skills[skillName] = { ranks: newTotal, isBroad: true, standardCost: cost, category: cat };
+              }
+            }
+          }
+        } else {
+          if (state.isFinalized) {
+            const newAdvRanks = Math.max(0, currentAdvRanks + dir);
+            const newTotalRanks = currentCreationRanks + newAdvRanks;
+            if (newAdvRanks > 0) {
+              if (!state.advancementSkills) state.advancementSkills = {};
+              state.advancementSkills[skillName] = newAdvRanks;
+            } else {
+              if (state.advancementSkills) delete state.advancementSkills[skillName];
+            }
 
-            state.skills[skillName] = { ranks: newRank, isBroad: false, standardCost: cost, category: cat };
+            if (newTotalRanks <= 0) {
+              delete state.skills[skillName];
+            } else {
+              state.skills[skillName] = { ranks: newTotalRanks, isBroad: false, standardCost: cost, category: cat };
+            }
+          } else {
+            const newCreationRanks = Math.max(0, currentCreationRanks + dir);
+            if (newCreationRanks > 3) return;
+
+            const newTotalRanks = newCreationRanks + currentAdvRanks;
+            if (newTotalRanks <= 0) {
+              delete state.skills[skillName];
+              if (state.advancementSkills) delete state.advancementSkills[skillName];
+            } else {
+              state.skills[skillName] = { ranks: newTotalRanks, isBroad: false, standardCost: cost, category: cat };
+            }
           }
         }
 
@@ -2255,28 +2251,47 @@ document.addEventListener('DOMContentLoaded', () => {
     let totalSkillBudget = baseSkillPoints - perkCost + flawBonus;
 
     let skillPtsSpent = 0;
-    Object.entries(state.skills).forEach(([skillName, item]) => {
-      if (item.ranks > 0) {
-        let normId = normalizeSkillId(skillName);
-        let isFree = isSpeciesFreeBroad(skillName) || (state.faction === 'voidcorp' && normId === 'business');
-        let campaignRanks = (state.advancementSkills && state.advancementSkills[skillName]) || 0;
-        let creationRanks = Math.max(0, item.ranks - campaignRanks);
-
-        if (item.isBroad) {
-          if (!isFree && creationRanks > 0) {
-            let favored = isFavored(skillName, item.category);
-            let baseCost = favored ? Math.max(1, item.standardCost - 1) : item.standardCost;
-            skillPtsSpent += Math.max(0, baseCost);
-          }
-        } else if (creationRanks > 0) {
-          let parentBroadName = getParentBroadSkillName(skillName);
-          let favored = isFavored(skillName, item.category, parentBroadName);
-          let discount = (state.faction === 'rigunmor' && normId === 'bargain') ? 1 : 0;
-          let baseCostPerRank = favored ? Math.max(1, item.standardCost - 1) : item.standardCost;
-          skillPtsSpent += Math.max(0, baseCostPerRank - discount) * creationRanks;
-        }
+    if (window.CharacterEngine) {
+      try {
+        const engine = new window.CharacterEngine(state);
+        const res = engine.validate();
+        skillPtsSpent = res.creationSPSpent;
+        // Total budget is base + flaws - perks.
+        // We want the UI to show `remaining / (base + flaws - perks)`.
+        totalSkillBudget = baseSkillPoints - perkCost + flawBonus;
+        
+        // res.creationSPSpent already includes `+ perkCost - flawBonus`.
+        // To isolate JUST the skill costs, we reverse that:
+        skillPtsSpent = res.creationSPSpent - perkCost + flawBonus;
+      } catch (e) {
+        console.error("Error running CharacterEngine validation:", e);
       }
-    });
+    } else {
+      // Fallback
+      Object.entries(state.skills).forEach(([skillName, item]) => {
+        if (item.ranks > 0) {
+          let normId = normalizeSkillId(skillName);
+          let isFree = isSpeciesFreeBroad(skillName) || (state.faction === 'voidcorp' && normId === 'business');
+          let campaignRanks = (state.advancementSkills && state.advancementSkills[skillName]) || 0;
+          let creationRanks = Math.max(0, item.ranks - campaignRanks);
+
+          if (item.isBroad) {
+            if (!isFree && creationRanks > 0) {
+              let favored = isFavored(skillName, item.category);
+              let baseCost = favored ? Math.max(1, item.standardCost - 1) : item.standardCost;
+              skillPtsSpent += Math.max(0, baseCost);
+            }
+          } else if (creationRanks > 0) {
+            let parentBroadName = getParentBroadSkillName(skillName);
+            let favored = isFavored(skillName, item.category, parentBroadName);
+            let discount = (state.faction === 'rigunmor' && normId === 'bargain') ? 1 : 0;
+            let baseCostPerRank = favored ? Math.max(1, item.standardCost - 1) : item.standardCost;
+            skillPtsSpent += Math.max(0, baseCostPerRank - discount) * creationRanks;
+          }
+        }
+      });
+      // In fallback, skillPtsSpent is just skills. We keep totalSkillBudget as base - perks + flaws.
+    }
 
     const remainingBP = totalSkillBudget - skillPtsSpent;
 
@@ -2613,6 +2628,46 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Export JSON
   document.getElementById('cb-btn-export-json')?.addEventListener('click', () => {
+    // Calculate durability before export
+    const con = (state.abilities?.CON || 0) + (state.advancementAbilities?.CON || 0);
+    const wil = (state.abilities?.WIL || 0) + (state.advancementAbilities?.WIL || 0);
+    let stunBonus = 0, woundBonus = 0, fatigueBonus = 0, mortalBonus = 0, ppBonus = 0;
+    
+    (state.perks || []).forEach(p => {
+      if (p.id === 'extra-psionic-energy') ppBonus += 2;
+      if (p.id === 'tough') { stunBonus += 1; woundBonus += 1; fatigueBonus += 1; mortalBonus += 1; }
+    });
+    
+    let pp = 0;
+    if (state.species === 'fraal') { pp = Math.ceil(wil * 1.5) + ppBonus; }
+    else if (state.profession === 'mindwalker' || state.faction === 'orlamu') { pp = wil + ppBonus; }
+    else {
+      const hasPsionics = Object.keys(state.skills || {}).some(k => ['biokinesis', 'esp', 'telekinesis', 'telepathy', 'psychoportation'].some(cat => k.toLowerCase().includes(cat)));
+      if (hasPsionics || ppBonus > 0) pp = wil + ppBonus;
+    }
+    
+    state.durability = {
+      StunMax: con + stunBonus,
+      WoundMax: con + woundBonus,
+      FatigueMax: Math.ceil(con / 2) + fatigueBonus,
+      MortalMax: Math.ceil(con / 2) + mortalBonus,
+      PsionicEnergyMax: pp
+    };
+
+    const spentAP_export = state.isFinalized ? calculateCampaignSpentAP() : 0;
+    const baseSpentAP_export = state.isFinalized ? calculateCampaignSpentAP(true) : 0;
+    const availableAP_export = (state.earnedAP || 0) - spentAP_export;
+    const effectiveAP_export = Math.max(state.earnedAP || 0, baseSpentAP_export);
+    const titleObj_export = getCharacterTitle(effectiveAP_export);
+
+    state.computed = {
+      spentAP: spentAP_export,
+      availableAP: availableAP_export,
+      effectiveAP: effectiveAP_export,
+      title: titleObj_export.title,
+      maxLastResorts: 1 + titleObj_export.ranksOverRookie
+    };
+
     const jsonStr = JSON.stringify(state, null, 2);
     const blob = new Blob([jsonStr], { type: 'application/json' });
     const url = URL.createObjectURL(blob);

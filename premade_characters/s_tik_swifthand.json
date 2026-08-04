@@ -110,7 +110,7 @@
       "category": "Other"
     },
     "jump": {
-      "ranks": 5,
+      "ranks": 6,
       "isBroad": false
     },
     "swim": {
@@ -136,7 +136,7 @@
       "category": "Other"
     },
     "bargain": {
-      "ranks": 6,
+      "ranks": 5,
       "isBroad": false,
       "standardCost": 3,
       "category": "Social"
@@ -162,7 +162,7 @@
     "engineering": 3,
     "repair": 3,
     "climb": 3,
-    "jump": 3,
+    "jump": 4,
     "swim": 3,
     "throw": 3,
     "intuition": 3,
@@ -178,5 +178,18 @@
   "weapons": "Blaster Pistol, Shock Torch",
   "armor": "Engineering Utility Vest (d4-1 LI)",
   "credits": 1350,
-  "notes": "Genius T'sa engineer constantly overclocking starship sub-light engines and power grids beyond safety specs."
+  "notes": "Genius T'sa engineer constantly overclocking starship sub-light engines and power grids beyond safety specs.",
+  "durability": {
+    "StunMax": 10,
+    "WoundMax": 10,
+    "FatigueMax": 5,
+    "MortalMax": 5,
+    "PsionicEnergyMax": 0
+  },
+  "availableAP": 0,
+  "spentAP": 75,
+  "computed": {
+    "title": "Seasoned",
+    "maxLastResorts": 2
+  }
 }

@@ -100,7 +100,7 @@
       "category": "Other"
     },
     "jump": {
-      "ranks": 6,
+      "ranks": 5,
       "isBroad": false,
       "standardCost": 1,
       "category": "Other"
@@ -161,7 +161,7 @@
   "advancementSkills": {
     "stealth": 3,
     "climb": 3,
-    "jump": 3,
+    "jump": 5,
     "swim": 3,
     "throw": 3,
     "intuition": 3,
@@ -178,5 +178,18 @@
   "weapons": "Sesheyan Shadow Blade, Silent Needle Rifle",
   "armor": "Sesheyan Leather Harness (d4-1 LI)",
   "credits": 420,
-  "notes": "Solitary Sesheyan night-hunter who moves silently through darkness, scouting enemy compounds from above."
+  "notes": "Solitary Sesheyan night-hunter who moves silently through darkness, scouting enemy compounds from above.",
+  "durability": {
+    "StunMax": 9,
+    "WoundMax": 9,
+    "FatigueMax": 5,
+    "MortalMax": 5,
+    "PsionicEnergyMax": 0
+  },
+  "availableAP": 0,
+  "spentAP": 75,
+  "computed": {
+    "title": "Seasoned",
+    "maxLastResorts": 2
+  }
 }

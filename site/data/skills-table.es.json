@@ -1205,7 +1205,7 @@
                 {
                     "id": "demolitions",
                     "skill": "Demoliciones",
-                    "attribute": "VOL",
+                    "attribute": "INT",
                     "url": "/es/skills/demolitions",
                     "cost": 6,
                     "type": "Broad",
@@ -1213,7 +1213,7 @@
                         {
                             "id": "disarm",
                             "skill": "Desarmar",
-                            "attribute": "VOL",
+                            "attribute": "INT",
                             "url": "/es/skills/demolitions#desarmar",
                             "cost": 4,
                             "type": "Specialty",
@@ -1222,7 +1222,7 @@
                         {
                             "id": "scratch-built-explosives",
                             "skill": "Explosivos improvisados",
-                            "attribute": "VOL",
+                            "attribute": "INT",
                             "url": "/es/skills/demolitions#explosivos-improvisados",
                             "cost": 3,
                             "type": "Specialty",
@@ -1231,7 +1231,7 @@
                         {
                             "id": "set-explosives",
                             "skill": "Colocar Explosivos",
-                            "attribute": "VOL",
+                            "attribute": "INT",
                             "url": "/es/skills/demolitions#colocar-explosivos",
                             "cost": 3,
                             "type": "Specialty",

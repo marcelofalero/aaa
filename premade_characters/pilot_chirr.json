@@ -88,7 +88,7 @@
       "category": "Other"
     },
     "jump": {
-      "ranks": 6,
+      "ranks": 4,
       "isBroad": false,
       "standardCost": 1,
       "category": "Other"
@@ -155,7 +155,7 @@
   "advancementSkills": {
     "space-vehicle": 3,
     "climb": 3,
-    "jump": 3,
+    "jump": 4,
     "swim": 3,
     "throw": 3,
     "intuition": 3,
@@ -173,5 +173,18 @@
   "weapons": "Light Laser Pistol, Utility Knife",
   "armor": "T'sa Flight Suit (d4-1 LI)",
   "credits": 820,
-  "notes": "Hyperactive T'sa pilot with razor-sharp reflexes who thrives under extreme G-force maneuvers and asteroid racing."
+  "notes": "Hyperactive T'sa pilot with razor-sharp reflexes who thrives under extreme G-force maneuvers and asteroid racing.",
+  "durability": {
+    "StunMax": 10,
+    "WoundMax": 10,
+    "FatigueMax": 5,
+    "MortalMax": 5,
+    "PsionicEnergyMax": 0
+  },
+  "availableAP": 0,
+  "spentAP": 75,
+  "computed": {
+    "title": "Seasoned",
+    "maxLastResorts": 2
+  }
 }

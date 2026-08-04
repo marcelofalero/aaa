@@ -63,7 +63,7 @@
       "isSpeciesFree": true
     },
     "vehicle-operation": {
-      "ranks": 1,
+      "ranks": 3,
       "isBroad": true,
       "standardCost": 3,
       "category": "Technical",
@@ -160,7 +160,8 @@
     "swim": 3,
     "throw": 3,
     "intuition": 3,
-    "language-specific-skill": 3
+    "language-specific-skill": 3,
+    "vehicle-operation": 2
   },
   "advancementAbilities": {
     "CON": 1
@@ -171,5 +172,18 @@
   "weapons": "Needler Pistol, Tranquilizer Dart Injector",
   "armor": "Medical Response Vest (d4-1 LI)",
   "credits": 1150,
-  "notes": "Frontier physician dedicated to saving lives on remote planet-survey expeditions regardless of faction allegiance."
+  "notes": "Frontier physician dedicated to saving lives on remote planet-survey expeditions regardless of faction allegiance.",
+  "durability": {
+    "StunMax": 11,
+    "WoundMax": 11,
+    "FatigueMax": 6,
+    "MortalMax": 6,
+    "PsionicEnergyMax": 0
+  },
+  "availableAP": 0,
+  "spentAP": 75,
+  "computed": {
+    "title": "Seasoned",
+    "maxLastResorts": 2
+  }
 }

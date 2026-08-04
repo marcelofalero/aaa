@@ -185,5 +185,18 @@
   "weapons": "Assault Rifle, Frag Grenades (x3), Combat Knife",
   "armor": "Heavy Infantry Combat Armor (d4+1 LI / d4+1 HI / d4-1 En)",
   "credits": 720,
-  "notes": "Frontline squad leader whose tactical discipline and combat instincts have kept his squad alive through blood wars."
+  "notes": "Frontline squad leader whose tactical discipline and combat instincts have kept his squad alive through blood wars.",
+  "durability": {
+    "StunMax": 12,
+    "WoundMax": 12,
+    "FatigueMax": 6,
+    "MortalMax": 6,
+    "PsionicEnergyMax": 0
+  },
+  "availableAP": 0,
+  "spentAP": 75,
+  "computed": {
+    "title": "Seasoned",
+    "maxLastResorts": 2
+  }
 }

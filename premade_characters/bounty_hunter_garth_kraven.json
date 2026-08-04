@@ -185,5 +185,18 @@
   "weapons": "Heavy Blaster Pistol, Target Rifle, Shock Baton",
   "armor": "Tactical Combat Armor (d4+1 LI / d4+1 HI / d4-1 En)",
   "credits": 850,
-  "notes": "Veteran bounty hunter known across the Verge for tracking fugitive warlords and bringing high-value targets in alive."
+  "notes": "Veteran bounty hunter known across the Verge for tracking fugitive warlords and bringing high-value targets in alive.",
+  "durability": {
+    "StunMax": 11,
+    "WoundMax": 11,
+    "FatigueMax": 6,
+    "MortalMax": 6,
+    "PsionicEnergyMax": 0
+  },
+  "availableAP": 0,
+  "spentAP": 75,
+  "computed": {
+    "title": "Seasoned",
+    "maxLastResorts": 2
+  }
 }
