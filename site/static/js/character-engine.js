@@ -69,7 +69,6 @@
       favoredCategories: ['social'],
       favoredBroad: ['interaction', 'culture', 'law', 'business']
     },
-    },
     'mindwalker': {
       favoredCategories: [],
       favoredBroad: ['awareness', 'resolve', 'telepathy', 'telekinesis', 'biokinesis', 'esp', 'psychoportation']
@@ -164,13 +163,6 @@
       if (prof.favoredBroad.includes(ns)) return true;
       if (np && prof.favoredBroad.includes(np)) return true;
 
-      // Check species free broads
-      const species = normalizeId(this.state.species);
-      if (SPECIES_FREE_BROAD_SLUGS[species]) {
-        if (SPECIES_FREE_BROAD_SLUGS[species].includes(ns)) return true;
-        if (np && SPECIES_FREE_BROAD_SLUGS[species].includes(np)) return true;
-      }
-      
       // Check background favored skills
       const bgFavored = this.state.backgroundFavoredSkills || [];
       if (bgFavored.includes(ns)) return true;

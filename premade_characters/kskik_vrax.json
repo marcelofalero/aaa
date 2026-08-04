@@ -78,11 +78,11 @@
       "isBroad": true
     },
     "smg": {
-      "ranks": 8,
+      "ranks": 5,
       "isBroad": false
     },
     "stealth": {
-      "ranks": 6,
+      "ranks": 5,
       "isBroad": false
     },
     "track": {
@@ -140,14 +140,16 @@
   "credits": 2800,
   "notes": "Quickest draw in the Verge. Specializes in close-quarters SMG bursts, silent takedowns, and tracking bounties across ships and settlements. Doubles as ship's weapon station operator. Uses Defensive Martial Arts to neutralize threats without firearms when discretion is needed.",
   "advancementSkills": {
-    "smg": 5,
+    "smg": 2,
     "stealth": 3,
     "track": 2,
     "weapons": 2,
     "defensive-martial-arts": 1,
     "intimidate": 3,
     "interview": 4,
-    "interrogate": 5
+    "interrogate": 5,
+    "athletics": 1,
+    "covert-ops": 1
   },
   "durability": {
     "StunMax": 10,

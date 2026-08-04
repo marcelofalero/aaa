@@ -63,7 +63,7 @@
       "isSpeciesFree": true
     },
     "vehicle-operation": {
-      "ranks": 1,
+      "ranks": 3,
       "isBroad": true,
       "standardCost": 3,
       "category": "Technical",
@@ -160,7 +160,8 @@
     "swim": 3,
     "throw": 3,
     "intuition": 3,
-    "language-specific-skill": 3
+    "language-specific-skill": 3,
+    "vehicle-operation": 2
   },
   "advancementAbilities": {
     "CON": 1

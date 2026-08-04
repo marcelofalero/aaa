@@ -80,7 +80,7 @@
       "category": "Social"
     },
     "etiquette": {
-      "ranks": 6,
+      "ranks": 4,
       "isBroad": false,
       "standardCost": 3,
       "category": "Social"
@@ -135,7 +135,7 @@
       "category": "Other"
     },
     "bargain": {
-      "ranks": 6,
+      "ranks": 5,
       "isBroad": false,
       "standardCost": 3,
       "category": "Social"
@@ -159,14 +159,16 @@
   "earnedAP": 75,
   "advancementSkills": {
     "diplomacy": 4,
-    "etiquette": 3,
+    "etiquette": 1,
     "climb": 3,
     "jump": 3,
     "swim": 3,
     "throw": 3,
     "intuition": 3,
     "perception": 3,
-    "bargain": 3
+    "bargain": 2,
+    "athletics": 2,
+    "vehicle-operation": 1
   },
   "advancementAbilities": {
     "INT": 1

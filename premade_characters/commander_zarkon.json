@@ -28,7 +28,7 @@
   },
   "skills": {
     "athletics": {
-      "ranks": 1,
+      "ranks": 2,
       "isBroad": true,
       "standardCost": 3,
       "category": "Other",
@@ -172,7 +172,8 @@
     "throw": 3,
     "intuition": 3,
     "perception": 3,
-    "psionic-sense": 3
+    "psionic-sense": 3,
+    "athletics": 1
   },
   "advancementAbilities": {
     "STR": 1

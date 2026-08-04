@@ -28,7 +28,7 @@
   },
   "skills": {
     "athletics": {
-      "ranks": 1,
+      "ranks": 2,
       "isBroad": true,
       "isSpeciesFree": true
     },
@@ -38,7 +38,7 @@
       "isSpeciesFree": true
     },
     "stamina": {
-      "ranks": 1,
+      "ranks": 2,
       "isBroad": true,
       "isSpeciesFree": true
     },
@@ -65,40 +65,36 @@
       "ranks": 1,
       "isBroad": true
     },
-    "modern-ranged-weapons": {
-      "ranks": 1,
-      "isBroad": true
-    },
     "armor-operation": {
       "ranks": 1,
       "isBroad": true
     },
     "shotgun": {
-      "ranks": 6,
+      "ranks": 4,
       "isBroad": false,
       "standardCost": 3,
       "category": "combat"
     },
     "combat-armor": {
-      "ranks": 2,
+      "ranks": 3,
       "isBroad": false,
       "standardCost": 3,
       "category": "other"
     },
     "land-vehicle": {
-      "ranks": 2,
+      "ranks": 1,
       "isBroad": false,
       "standardCost": 3,
       "category": "technical"
     },
     "perception": {
-      "ranks": 1,
+      "ranks": 5,
       "isBroad": false,
       "standardCost": 3,
       "category": "other"
     },
     "intuition": {
-      "ranks": 3,
+      "ranks": 2,
       "isBroad": false,
       "standardCost": 3,
       "category": "other"
@@ -110,7 +106,7 @@
       "category": "technical"
     },
     "technical-knowledge": {
-      "ranks": 3,
+      "ranks": 2,
       "isBroad": false,
       "standardCost": 3,
       "category": "technical"
@@ -122,25 +118,25 @@
       "category": "technical"
     },
     "set-explosives": {
-      "ranks": 4,
+      "ranks": 3,
       "isBroad": false,
       "standardCost": 3,
       "category": "technical"
     },
     "conceal": {
-      "ranks": 4,
+      "ranks": 3,
       "isBroad": false,
       "standardCost": 3,
       "category": "social"
     },
     "stealth": {
-      "ranks": 2,
+      "ranks": 4,
       "isBroad": false,
       "standardCost": 3,
       "category": "social"
     },
     "endurance": {
-      "ranks": 1,
+      "ranks": 4,
       "isBroad": false,
       "standardCost": 4,
       "category": "other"
@@ -164,7 +160,7 @@
       "category": "technical"
     },
     "repair": {
-      "ranks": 3,
+      "ranks": 2,
       "isBroad": false,
       "standardCost": 3,
       "category": "technical"
@@ -191,7 +187,7 @@
     }
   ],
   "isFinalized": true,
-  "earnedAP": 79,
+  "earnedAP": 75,
   "advancementAbilities": {
     "INT": 1
   },
@@ -217,17 +213,20 @@
   "credits": 3100,
   "notes": "Orion League combat engineer and breach specialist. Nicknamed 'Boomer' for his tactical mastery of high explosives.",
   "advancementSkills": {
+    "shotgun": 4,
+    "combat-armor": 0,
     "land-vehicle": 1,
-    "technical-knowledge": 3,
+    "perception": 2,
+    "intuition": 0,
+    "technical-knowledge": 0,
     "disarm": 4,
-    "set-explosives": 4,
-    "conceal": 4,
-    "stealth": 2,
-    "endurance": 1,
-    "resist-pain": 1,
-    "shotgun": 3,
-    "weapons": 4,
-    "repair": 3
+    "set-explosives": 3,
+    "conceal": 3,
+    "stealth": 1,
+    "endurance": 4,
+    "resist-pain": 0,
+    "weapons": 1,
+    "repair": 1
   },
   "durability": {
     "StunMax": 9,

@@ -76,7 +76,7 @@
       "category": "Social"
     },
     "bargain": {
-      "ranks": 5,
+      "ranks": 4,
       "isBroad": false,
       "standardCost": 3,
       "category": "Social"
@@ -88,7 +88,7 @@
       "category": "Social"
     },
     "climb": {
-      "ranks": 4,
+      "ranks": 6,
       "isBroad": false,
       "standardCost": 2,
       "category": "Other"
@@ -106,7 +106,7 @@
       "category": "Other"
     },
     "throw": {
-      "ranks": 6,
+      "ranks": 3,
       "isBroad": false,
       "standardCost": 2,
       "category": "Other"
@@ -118,7 +118,7 @@
       "category": "Other"
     },
     "perception": {
-      "ranks": 6,
+      "ranks": 4,
       "isBroad": false,
       "standardCost": 3,
       "category": "Other"
@@ -159,8 +159,8 @@
   "isFinalized": true,
   "earnedAP": 75,
   "advancementSkills": {
-    "bargain": 4,
-    "climb": 3,
+    "bargain": 1,
+    "climb": 4,
     "jump": 3,
     "swim": 3,
     "throw": 3,
@@ -168,7 +168,8 @@
     "perception": 3,
     "psionic-sense": 2,
     "endurance": 2,
-    "charm": 2
+    "charm": 2,
+    "athletics": 1
   },
   "advancementAbilities": {
     "PER": 1

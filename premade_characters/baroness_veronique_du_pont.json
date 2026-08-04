@@ -112,13 +112,13 @@
       "category": "Other"
     },
     "intuition": {
-      "ranks": 6,
+      "ranks": 4,
       "isBroad": false,
       "standardCost": 3,
       "category": "Other"
     },
     "perception": {
-      "ranks": 6,
+      "ranks": 4,
       "isBroad": false,
       "standardCost": 3,
       "category": "Other"
@@ -164,8 +164,8 @@
     "jump": 3,
     "swim": 3,
     "throw": 3,
-    "intuition": 3,
-    "perception": 3,
+    "intuition": 1,
+    "perception": 4,
     "psionic-sense": 3,
     "charm": 2,
     "computer-operation": 2

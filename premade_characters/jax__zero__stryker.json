@@ -94,7 +94,7 @@
       "category": "Other"
     },
     "jump": {
-      "ranks": 6,
+      "ranks": 4,
       "isBroad": false,
       "standardCost": 1,
       "category": "Other"
@@ -161,7 +161,8 @@
     "intuition": 3,
     "perception": 3,
     "psionic-sense": 2,
-    "computer-operation": 3
+    "computer-operation": 3,
+    "athletics": 0
   },
   "advancementAbilities": {
     "DEX": 1

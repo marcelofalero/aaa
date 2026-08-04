@@ -100,7 +100,7 @@
       "category": "Other"
     },
     "jump": {
-      "ranks": 6,
+      "ranks": 4,
       "isBroad": false,
       "standardCost": 1,
       "category": "Other"
@@ -161,7 +161,7 @@
   "advancementSkills": {
     "stealth": 3,
     "climb": 3,
-    "jump": 3,
+    "jump": 5,
     "swim": 3,
     "throw": 3,
     "intuition": 3,
