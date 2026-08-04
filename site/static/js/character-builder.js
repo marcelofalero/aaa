@@ -1966,15 +1966,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const nextRankAPCost = getAdvancementSkillCost(specSkill.id, currentRanks + 1, false);
 
-            let rankButtons = [];
-            if (state.isFinalized) {
-              const maxDisplay = Math.min(maxAllowedRank, Math.max(currentRanks, currentRanks + 1));
-              for (let r = 0; r <= maxDisplay; r++) {
-                rankButtons.push(r);
-              }
-            } else {
-              rankButtons = [0, 1, 2, 3];
-            }
+            const canRemove = state.isFinalized ? campaignRanks > 0 : creationRanks > 0;
+            const canAdd = state.isFinalized ? currentRanks < maxAllowedRank : creationRanks < 3;
 
             html += `
               <div class="cb-skill-row ${specFavored ? 'favored' : ''}" style="padding-left: 2.5rem;">
@@ -2011,9 +2004,9 @@ document.addEventListener('DOMContentLoaded', () => {
                     <span class="cb-skill-total-badge ${specCreationSpent > 0 ? 'active' : ''}">${specCreationSpent} SP</span>
                   `}
                   <div class="cb-rank-stepper">
-                    <button class="cb-btn-rank-step" data-skill="${specSkill.id}" data-is-broad="false" data-cost="${specSkill.cost}" data-cat="${normalizeCategoryId(category.id)}" data-dir="-1" ${currentRanks <= 0 ? 'disabled' : ''}>−</button>
-                    <span class="cb-rank-display">+${currentRanks}</span>
-                    <button class="cb-btn-rank-step" data-skill="${specSkill.id}" data-is-broad="false" data-cost="${specSkill.cost}" data-cat="${normalizeCategoryId(category.id)}" data-dir="1" ${currentRanks >= maxAllowedRank ? 'disabled' : ''}>+</button>
+                    <button class="cb-btn-rank-step" data-skill="${specSkill.id}" data-is-broad="false" data-cost="${specSkill.cost}" data-cat="${normalizeCategoryId(category.id)}" data-dir="-1" ${!canRemove ? 'disabled' : ''}>−</button>
+                    <span class="cb-rank-display">+${state.isFinalized ? currentRanks : creationRanks}</span>
+                    <button class="cb-btn-rank-step" data-skill="${specSkill.id}" data-is-broad="false" data-cost="${specSkill.cost}" data-cat="${normalizeCategoryId(category.id)}" data-dir="1" ${!canAdd ? 'disabled' : ''}>+</button>
                   </div>
                 </div>
               </div>
@@ -2069,46 +2062,67 @@ document.addEventListener('DOMContentLoaded', () => {
         const cat = normalizeCategoryId(btn.dataset.cat);
         const dir = parseInt(btn.dataset.dir);
 
+        const currentTotalRanks = state.skills[skillName]?.ranks || 0;
+        const currentAdvRanks = (state.advancementSkills && state.advancementSkills[skillName]) || 0;
+        const currentCreationRanks = Math.max(0, currentTotalRanks - currentAdvRanks);
+
         if (isBroad) {
-          const currentlyBought = state.skills[skillName]?.ranks > 0;
-          if (dir === -1 && currentlyBought) {
-            const advRanks = (state.advancementSkills && state.advancementSkills[skillName]) || 0;
-            const isCreation = (state.skills[skillName].ranks - advRanks) > 0;
-            if (state.isFinalized && isCreation) return;
-            delete state.skills[skillName];
-            if (state.advancementSkills) delete state.advancementSkills[skillName];
-          } else if (dir === 1 && !currentlyBought) {
-            state.skills[skillName] = { ranks: 1, isBroad: true, standardCost: cost, category: cat };
-            if (state.isFinalized) {
+          if (state.isFinalized) {
+            if (dir === 1 && currentAdvRanks === 0) {
               if (!state.advancementSkills) state.advancementSkills = {};
               state.advancementSkills[skillName] = 1;
+              const newTotal = currentCreationRanks + 1;
+              state.skills[skillName] = { ranks: newTotal, isBroad: true, standardCost: cost, category: cat };
+            } else if (dir === -1 && currentAdvRanks > 0) {
+              delete state.advancementSkills[skillName];
+              const newTotal = currentCreationRanks;
+              if (newTotal <= 0) {
+                delete state.skills[skillName];
+              } else {
+                state.skills[skillName] = { ranks: newTotal, isBroad: true, standardCost: cost, category: cat };
+              }
+            }
+          } else {
+            if (dir === 1 && currentCreationRanks === 0) {
+              const newTotal = 1 + currentAdvRanks;
+              state.skills[skillName] = { ranks: newTotal, isBroad: true, standardCost: cost, category: cat };
+            } else if (dir === -1 && currentCreationRanks > 0) {
+              const newTotal = currentAdvRanks;
+              if (newTotal <= 0) {
+                delete state.skills[skillName];
+                if (state.advancementSkills) delete state.advancementSkills[skillName];
+              } else {
+                state.skills[skillName] = { ranks: newTotal, isBroad: true, standardCost: cost, category: cat };
+              }
             }
           }
         } else {
-          const currentTotalRanks = state.skills[skillName]?.ranks || 0;
-          const currentAdvRanks = (state.advancementSkills && state.advancementSkills[skillName]) || 0;
-          const creationRanks = Math.max(0, currentTotalRanks - currentAdvRanks);
-          const newRank = currentTotalRanks + dir;
-
-          if (state.isFinalized && newRank < creationRanks) {
-            return;
-          }
-
-          if (newRank <= 0) {
-            delete state.skills[skillName];
-            if (state.advancementSkills) delete state.advancementSkills[skillName];
-          } else {
-            if (state.isFinalized) {
-              const newAdvRanks = Math.max(0, newRank - creationRanks);
+          if (state.isFinalized) {
+            const newAdvRanks = Math.max(0, currentAdvRanks + dir);
+            const newTotalRanks = currentCreationRanks + newAdvRanks;
+            if (newAdvRanks > 0) {
               if (!state.advancementSkills) state.advancementSkills = {};
-              if (newAdvRanks > 0) {
-                state.advancementSkills[skillName] = newAdvRanks;
-              } else {
-                delete state.advancementSkills[skillName];
-              }
+              state.advancementSkills[skillName] = newAdvRanks;
+            } else {
+              if (state.advancementSkills) delete state.advancementSkills[skillName];
             }
 
-            state.skills[skillName] = { ranks: newRank, isBroad: false, standardCost: cost, category: cat };
+            if (newTotalRanks <= 0) {
+              delete state.skills[skillName];
+            } else {
+              state.skills[skillName] = { ranks: newTotalRanks, isBroad: false, standardCost: cost, category: cat };
+            }
+          } else {
+            const newCreationRanks = Math.max(0, currentCreationRanks + dir);
+            if (newCreationRanks > 3) return;
+
+            const newTotalRanks = newCreationRanks + currentAdvRanks;
+            if (newTotalRanks <= 0) {
+              delete state.skills[skillName];
+              if (state.advancementSkills) delete state.advancementSkills[skillName];
+            } else {
+              state.skills[skillName] = { ranks: newTotalRanks, isBroad: false, standardCost: cost, category: cat };
+            }
           }
         }
 

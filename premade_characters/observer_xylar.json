@@ -105,7 +105,7 @@
       "category": "Other"
     },
     "jump": {
-      "ranks": 6,
+      "ranks": 7,
       "isBroad": false,
       "standardCost": 1,
       "category": "Other"
@@ -161,13 +161,13 @@
     "diplomacy": 4,
     "etiquette": 1,
     "climb": 3,
-    "jump": 3,
+    "jump": 4,
     "swim": 3,
     "throw": 3,
     "intuition": 3,
     "perception": 3,
     "bargain": 2,
-    "athletics": 2,
+    "athletics": 1,
     "vehicle-operation": 1
   },
   "advancementAbilities": {

@@ -28,7 +28,7 @@
   },
   "skills": {
     "awareness": {
-      "ranks": 2,
+      "ranks": 1,
       "isBroad": true,
       "isSpeciesFree": true,
       "standardCost": 3,
@@ -105,7 +105,7 @@
       "category": "Other"
     },
     "psionic-sense": {
-      "ranks": 6,
+      "ranks": 4,
       "isBroad": false,
       "standardCost": 3,
       "category": "Other"
@@ -117,7 +117,7 @@
       "category": "Other"
     },
     "bargain": {
-      "ranks": 5,
+      "ranks": 6,
       "isBroad": false,
       "standardCost": 3,
       "category": "Other"
@@ -156,13 +156,14 @@
     "jump": 3,
     "intuition": 3,
     "perception": 3,
-    "psionic-sense": 3,
+    "psionic-sense": 1,
     "endurance": 3,
-    "bargain": 2,
+    "bargain": 3,
     "swim": 3,
     "interaction": 1,
-    "awareness": 1,
-    "throw": 2
+    "awareness": 0,
+    "throw": 2,
+    "resolve": 1
   },
   "advancementAbilities": {
     "DEX": 1

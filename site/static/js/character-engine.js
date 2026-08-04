@@ -392,6 +392,15 @@
       const advSkills = this.state.advancementSkills || {};
       const skills = this.state.skills || {};
 
+      // Sanitize advancementSkills against skills
+      for (const [sId, advRanks] of Object.entries(advSkills)) {
+        if (!skills[sId] || (skills[sId].ranks || 0) <= 0) {
+          delete advSkills[sId];
+        } else if (advRanks > skills[sId].ranks) {
+          advSkills[sId] = skills[sId].ranks;
+        }
+      }
+
       const baseSP = (faction === 'rigunmor' && this.state.bonusPerkOrPointsChoice === 'points') ? 76 : 70;
       const totalSPBudget = baseSP;
 
@@ -485,10 +494,12 @@
         });
       }
 
-      if (this.state.earnedAP !== campaignAPSpent) {
-        warnings.push(`Campaign AP mismatch: Spent ${campaignAPSpent} AP vs Earned ${this.state.earnedAP} AP.`);
-      } else {
-        info.push(`Campaign Advancement: ${campaignAPSpent} / ${this.state.earnedAP} AP spent (Parity OK)`);
+      if (this.state.isFinalized) {
+        if (this.state.earnedAP !== campaignAPSpent) {
+          warnings.push(`Campaign AP mismatch: Spent ${campaignAPSpent} AP vs Earned ${this.state.earnedAP} AP.`);
+        } else {
+          info.push(`Campaign Advancement: ${campaignAPSpent} / ${this.state.earnedAP} AP spent (Parity OK)`);
+        }
       }
 
       return {
