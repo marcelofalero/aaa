@@ -354,11 +354,26 @@
       errors.push(...abRes.errors);
 
       // 2. Perks & Flaws Limits & SP Modifications
-      const chosenPerks = (this.state.perks || []).filter(p => {
+      const creationState = this.state.creation || this.state;
+      const currentState = this.state.current || { 
+        skills: this.state.advancementSkills || {}, 
+        perks: this.state.advancementPerks || [], 
+        flaws: this.state.removedFlaws || [] 
+      };
+
+      const isDict = (obj) => obj && typeof obj === 'object' && !Array.isArray(obj);
+      
+      let rawPerks = creationState.perks || [];
+      if (isDict(rawPerks)) rawPerks = Object.values(rawPerks).map(p => ({ name: p.name || p.slug || p.id || '', level: p.ranks || 1 }));
+      
+      let rawFlaws = creationState.flaws || [];
+      if (isDict(rawFlaws)) rawFlaws = Object.values(rawFlaws).map(f => ({ name: f.name || f.slug || f.id || '', level: f.ranks || 1 }));
+
+      const chosenPerks = rawPerks.filter(p => {
         const name = typeof p === 'string' ? p : (p.name || '');
         return !name.toLowerCase().includes('cybernetic interface') && !name.toLowerCase().includes('innate psionics');
       });
-      const chosenFlaws = this.state.flaws || [];
+      const chosenFlaws = rawFlaws;
 
       if (chosenPerks.length > 3) {
         errors.push(`Perks Limit Violation: Has ${chosenPerks.length} chosen creation perks (Max allowed is 3).`);
@@ -389,6 +404,8 @@
       const faction = normalizeId(this.state.faction);
       const profession = normalizeId(this.state.profession);
       const speciesFreeBroads = SPECIES_FREE_BROAD_SLUGS[species] || [];
+      const creationSkills = creationState.skills || {};
+      const currentSkills = currentState.skills || {};
       const advSkills = this.state.advancementSkills || {};
       const skills = this.state.skills || {};
 
@@ -482,14 +499,14 @@
         }
       }
 
-      if (Array.isArray(this.state.advancementPerks)) {
-        this.state.advancementPerks.forEach(p => {
+      if (Array.isArray(currentState.perks) ? currentState.perks.length > 0 : Object.keys(currentState.perks || {}).length > 0) {
+        (Array.isArray(currentState.perks) ? currentState.perks : Object.values(currentState.perks || {})).forEach(p => {
           campaignAPSpent += p.apCost || p.cost || 0;
         });
       }
 
-      if (Array.isArray(this.state.removedFlaws)) {
-        this.state.removedFlaws.forEach(f => {
+      if (Array.isArray(currentState.flaws) ? currentState.flaws.length > 0 : Object.keys(currentState.flaws || {}).length > 0) {
+        (Array.isArray(currentState.flaws) ? currentState.flaws : Object.values(currentState.flaws || {})).forEach(f => {
           campaignAPSpent += f.apCost || 0;
         });
       }
@@ -529,6 +546,57 @@
       }
       this.state = this.createDefaultState(jsonObj);
       return this;
+    }
+
+    /**
+     * Parses a dual-rank CSV string of character traits into separated snapshot structures.
+     * Expected CSV headers: slug, type, creation_ranks, current_ranks, as, parent
+     */
+    static parseTraitsCSV(csvStr) {
+      const lines = csvStr.split('\n').map(l => l.trim()).filter(l => l && !l.toLowerCase().startsWith('slug'));
+      
+      const createEmptySnapshot = () => ({ skills: {}, perks: {}, flaws: {}, psionics: {}, fx: {} });
+      const creation = createEmptySnapshot();
+      const current = createEmptySnapshot();
+
+      lines.forEach(line => {
+        const parts = line.split(',').map(p => p.trim());
+        if (parts.length < 4) return;
+        const [slug, type, cRanksStr, curRanksStr, as, parent] = parts;
+        
+        const cRanks = parseInt(cRanksStr, 10) || 0;
+        const curRanks = parseInt(curRanksStr, 10) || 0;
+        
+        const buildItem = (ranks) => {
+            const item = { ranks, type };
+            if (as) item.as = as;
+            if (parent) item.parent = parent;
+            item.name = slug;
+            return item;
+        };
+
+        const placeItem = (dict, ranks) => {
+            if (ranks <= 0 && type !== 'f' && type !== 'p') return; 
+            const itemRanks = ranks || 1;
+            
+            if (type === 'bs' || type === 'ss') {
+              dict.skills[slug] = buildItem(itemRanks);
+            } else if (type === 'p') {
+              dict.perks[slug] = buildItem(itemRanks);
+            } else if (type === 'f') {
+              dict.flaws[slug] = buildItem(itemRanks);
+            } else if (type === 'pbs' || type === 'ps') {
+              dict.psionics[slug] = buildItem(itemRanks);
+            } else if (type === 'fx') {
+              dict.fx[slug] = buildItem(itemRanks);
+            }
+        };
+
+        if (cRanks > 0 || type === 'p' || type === 'f') placeItem(creation, cRanks);
+        if (curRanks > 0 || type === 'p' || type === 'f') placeItem(current, curRanks);
+      });
+
+      return { creation, current };
     }
   }
 
