@@ -1,0 +1,303 @@
+# ALTERNITY RPG AI RULES SUMMARY
+This is an AI-optimized reference containing all mechanics needed to build and advance characters.
+
+## SPECIES & FACTIONS LORE & TENDENCIES
+### SPECIES (Including Free Broad Skills & Perks)
+- **Human:** Versatile. Free Broads: `athletics`, `vehicle-operation`, `stamina`, `knowledge`, `awareness`, `interaction`.
+- **Fraal:** Ancient, psionically gifted. Free Broads: `awareness`, `resolve`, `vehicle-operation`, `knowledge`, `interaction`, `telepathy`.
+- **Mechalus:** Cybernetic. Free Broads: `athletics`, `vehicle-operation`, `stamina`, `knowledge`, `awareness`, `computer-science`. Free Perks: `cybernetic_interface`.
+- **Sesheyan:** Winged hunters. Free Broads: `melee-combat`, `acrobatics`, `stamina`, `knowledge`, `awareness`, `interaction`.
+- **T'sa:** Fast tinkers. Free Broads: `athletics`, `covert-ops`, `stamina`, `knowledge`, `awareness`, `interaction`.
+- **Weren:** Large furry warriors. Free Broads: `athletics`, `melee-combat`, `stamina`, `knowledge`, `awareness`, `interaction`.
+
+### HUMAN FACTIONS
+- **Austrin-Ontis:** Pragmatic survivalists focusing on practicality and resilience.
+- **Borealis Republic:** Progressive innovators focusing on education and technology.
+- **Orion League:** Opportunistic free traders and fast-talking merchants.
+- **Rigunmor Star Consortium:** Ruthless megacorporation hyper-focused on efficiency and wealth.
+- **Thuldan Empire:** Highly militarized and disciplined, valuing physical perfection.
+- **Union of Sol:** Diverse traditionalists maintaining Earth's rich cultures.
+- **Voidcorp:** Bureaucratic corporate drones heavily reliant on AI and process.
+- **Galactic Concord:** Peacekeeping diplomats focused on stellar unity and defense.
+
+## CREATION RULES
+- **Budget:** 70 BP (Build Points). Flaws add BP (e.g. +3). Perks cost BP.
+- **Favored Skills:** If a skill is favored by Profession or Background, its base BP cost is reduced by 1 (e.g. a 7 BP skill becomes 6 SP).
+- **Skill Ranks:** Broad skills cost BP to unlock (Rank 1). Specialty skills cost BP *per rank*. Max 3 ranks per specialty skill at creation.
+
+## ADVANCEMENT RULES & TITLES
+After creation, characters use XP (Advancement Points). Total XP dictates Title and limits.
+- **Rookie** (0 XP): Max Skill Rank 5, Max Broads 5, +0 Ability Points.
+- **Seasoned** (50 XP): Max Skill Rank 8, Max Broads 7, +1 Ability Point.
+- **Veteran** (100 XP): Max Skill Rank 10, Max Broads 9, +2 Ability Points.
+- **Exemplar** (200 XP): Max Skill Rank 12, Max Broads 11, +3 Ability Points.
+- **Legend** (300 XP): Max Skill Rank 12, Max Broads 13, +4 Ability Points.
+
+**AP Cost Scaling for Specialty Skills:**
+- Ranks 1 to 5: baseCost (e.g. 2 or 3 XP)
+- Ranks 6 to 8: baseCost + 2
+- Ranks 9 to 10: baseCost + 4
+- Ranks 11+: baseCost + 6
+
+## SKILLS (Costs and Categories)
+- **acrobatics** (Broad, 7 BP, Other)
+  - aerobatics (3 SP/rank)
+  - daredevil (3 SP/rank)
+  - dodge (3 SP/rank)
+  - fall (3 SP/rank)
+  - zero-g-training (3 SP/rank)
+- **administration** (Broad, 4 BP, Technical)
+  - bureaucracy (3 SP/rank)
+  - management (3 SP/rank)
+- **animal-handling** (Broad, 3 BP, Other)
+  - animal-riding (1 SP/rank)
+  - animal-training (3 SP/rank)
+- **armor-operation** (Broad, 7 BP, Other)
+  - combat-armor (3 SP/rank)
+  - tactical-armor (3 SP/rank)
+  - propulsion-systems (3 SP/rank)
+  - shields (3 SP/rank)
+- **athletics** (Broad, 3 BP, Other)
+  - climb (2 SP/rank)
+  - jump (1 SP/rank)
+  - swim (2 SP/rank)
+  - throw (2 SP/rank)
+- **awareness** (Broad, 3 BP, Other)
+  - intuition (3 SP/rank)
+  - perception (3 SP/rank)
+  - psionic-sense (4 SP/rank)
+- **business** (Broad, 4 BP, Social)
+  - corporate (3 SP/rank)
+  - illicit-business (3 SP/rank)
+  - small-business (3 SP/rank)
+- **computer-science** (Broad, 7 BP, Technical)
+  - hacking (4 SP/rank)
+  - hardware (3 SP/rank)
+  - programming (3 SP/rank)
+- **covert-ops** (Broad, 8 BP, Social)
+  - conceal (3 SP/rank)
+  - disguise (3 SP/rank)
+  - pickpocket (3 SP/rank)
+  - stealth (3 SP/rank)
+- **creativity** (Broad, 6 BP, Other)
+  - the-intangible (3 SP/rank)
+  - the-shape (3 SP/rank)
+  - the-word (3 SP/rank)
+- **culture** (Broad, 5 BP, Social)
+  - etiquette (3 SP/rank)
+  - diplomacy (3 SP/rank)
+  - first-encounter (3 SP/rank)
+- **deception** (Broad, 5 BP, Social)
+  - bluff (3 SP/rank)
+  - bribe (3 SP/rank)
+  - gamble-logic-games (3 SP/rank)
+  - gamble-nerve-games (3 SP/rank)
+- **demolitions** (Broad, 6 BP, Technical)
+  - disarm (4 SP/rank)
+  - scratch-built-explosives (3 SP/rank)
+  - set-explosives (3 SP/rank)
+- **entertainment** (Broad, 3 BP, Other)
+  - musical-instrument (2 SP/rank)
+  - sing (3 SP/rank)
+  - act (2 SP/rank)
+  - dance (2 SP/rank)
+- **heavy-weapons** (Broad, 6 BP, Combat)
+  - direct-fire (4 SP/rank)
+  - indirect-fire (4 SP/rank)
+- **interaction** (Broad, 3 BP, Social)
+  - bargain (3 SP/rank)
+  - charm (3 SP/rank)
+  - interview (3 SP/rank)
+  - intimidate (3 SP/rank)
+  - seduce (3 SP/rank)
+  - taunt (3 SP/rank)
+- **investigate** (Broad, 3 BP, Social)
+  - interrogate (3 SP/rank)
+  - search (3 SP/rank)
+  - track (3 SP/rank)
+- **knowledge** (Broad, 4 BP, Technical)
+  - language-specific-skill (3 SP/rank)
+  - psionics (3 SP/rank)
+  - computer-operation (2 SP/rank)
+  - deduce (2 SP/rank)
+  - first-aid (3 SP/rank)
+  - research (2 SP/rank)
+- **law** (Broad, 0 BP, Social)
+  - court-procedures (3 SP/rank)
+  - law-enforcement-procedures (3 SP/rank)
+  - law-specific-skill (2 SP/rank)
+  - psionics (3 SP/rank)
+- **leadership** (Broad, 4 BP, Social)
+  - command (4 SP/rank)
+  - inspire (3 SP/rank)
+- **life-science** (Broad, 7 BP, Technical)
+  - psionics (3 SP/rank)
+  - biology (3 SP/rank)
+  - botany (3 SP/rank)
+  - genetics (3 SP/rank)
+  - zoology (3 SP/rank)
+- **medical-science** (Broad, 7 BP, Technical)
+  - forensics (3 SP/rank)
+  - medical-knowledge (3 SP/rank)
+  - psychology (5 SP/rank)
+  - surgery (5 SP/rank)
+  - treatment (4 SP/rank)
+  - xenomedicine (3 SP/rank)
+  - forensic-science (3 SP/rank)
+- **melee-combat** (Broad, 6 BP, Combat)
+  - blade (3 SP/rank)
+  - blunt (3 SP/rank)
+  - defensive-martial-arts (3 SP/rank)
+  - power-martial-arts (3 SP/rank)
+  - powered-weapons (3 SP/rank)
+- **modern-ranged-weapons** (Broad, 6 BP, Combat)
+  - assault-rifle (3 SP/rank)
+  - pistol (3 SP/rank)
+  - rifle (3 SP/rank)
+  - smg (3 SP/rank)
+  - shotgun (3 SP/rank)
+- **navigation** (Broad, 6 BP, Other)
+  - astrogationdrivespace (3 SP/rank)
+  - astrogationsystem (3 SP/rank)
+  - navigationsurface (3 SP/rank)
+- **physical-science** (Broad, 5 BP, Academic)
+  - astronomy (3 SP/rank)
+  - chemistry (3 SP/rank)
+  - physics (3 SP/rank)
+  - planetology (3 SP/rank)
+- **primitive-ranged-weapons** (Broad, 7 BP, Combat)
+  - bow (3 SP/rank)
+  - crossbow (3 SP/rank)
+  - flintlock (3 SP/rank)
+  - sling (3 SP/rank)
+- **resolve** (Broad, 6 BP, Other)
+  - mental-resolve (3 SP/rank)
+  - physical-resolve (3 SP/rank)
+- **security** (Broad, 3 BP, Other)
+  - protection-protocols (3 SP/rank)
+  - security-devices (4 SP/rank)
+- **stamina** (Broad, 3 BP, Other)
+  - endurance (4 SP/rank)
+  - resist-pain (5 SP/rank)
+- **street-smart** (Broad, 3 BP, Social)
+  - street-knowledge (3 SP/rank)
+  - criminal-elements (5 SP/rank)
+- **survival** (Broad, 3 BP, Other)
+  - survival-training (3 SP/rank)
+  - adaptability (3 SP/rank)
+  - trailblazing (3 SP/rank)
+- **system-operation** (Broad, 3 BP, Technical)
+  - communications (3 SP/rank)
+  - defenses (3 SP/rank)
+  - engineering (3 SP/rank)
+  - sensors (3 SP/rank)
+  - weapons (3 SP/rank)
+- **tactics** (Broad, 6 BP, Combat)
+  - infantry-tactics (3 SP/rank)
+  - space-tactics (3 SP/rank)
+  - vehicle-tactics (3 SP/rank)
+- **technical-science** (Broad, 7 BP, Technical)
+  - technical-knowledge (3 SP/rank)
+  - invention (3 SP/rank)
+  - repair (3 SP/rank)
+  - juryrig (3 SP/rank)
+- **vehicle-operation** (Broad, 3 BP, Technical)
+  - air-vehicle (5 SP/rank)
+  - land-vehicle (3 SP/rank)
+  - space-vehicle (5 SP/rank)
+  - water-vehicle (3 SP/rank)
+
+## PERKS
+- **alien-artifact** (Cost: 8 BP): An alien artifact is a strange device or relic that the character doesn't know anything about.
+- **ambidextrous** (Cost: 4 BP): A character with this perk can use both hands at the same time with more ease than someone who is not ambidextrous.
+- **animal-friend** (Cost: 4 BP): Animals of all kinds innately trust a character who has this perk.
+- **celebrity** (Cost: 3 BP): This perk indicates that the character is famous in certain circles, as chosen by the player and Gamemaster.
+- **concentration** (Cost: 3 BP): This perk provides a character with the ability to concentrate on the task at hand.
+- **danger-sense** (Cost: 4 BP): This perk provides a character with the innate ability to anticipate danger.
+- **faith** (Cost: 5 BP): This perk provides a character with belief in either himself or a power or agency greater than himself.
+- **filthy-rich** (Cost: 6 BP): This perk suggests a lot about a character’s background and usually indicates a connection to a wealthy (and perhaps influential) family.
+- **fists-of-iron** (Cost: 2///5 BP): This perk provides a character with a 1-point increase to the damage he inflicts on a successful Unarmed Attack skill check.
+- **fortitude** (Cost: 4 BP): A character with Fortitude receives a -1 bonus whenever he is required to make a Stamina-endurance check.
+- **good-luck** (Cost: 3 BP): A character with the Good Luck perk can make use of this benefit once during a scene.
+- **great-looks** (Cost: 3 BP): A character with the Great Looks perk receives a -1 bonus to any Personality-based skill check made when his appearance could have a positive effect on an encounter.
+- **heightened-ability** (Cost: 1/0 BP): This perk provides a character with 1 extra point in the Ability Score of his choice.
+- **observant** (Cost: 3 BP): This perk provides a character with exceptional powers of observation, giving him a -1 bonus to any Awareness-perception check.
+- **photo-memory** (Cost: 3 BP): This perk gives a character an extraordinary memory.
+- **powerful-ally** (Cost: 4 BP): When this perk is selected, the Gamemaster and the player should discuss the nature and identity of this ally.
+- **psionic-awareness** (Cost: 3 BP): This perk allows a character to purchase ranks in the Awareness - Psionic Sense specialty skill, enabling them to detect and identify psionic powers and phenomena.
+- **reflexes** (Cost: 4 BP): A character with the Reflexes perk receives a +1 increase to his Dexterity resistance modifier.
+- **reputation** (Cost: 3 BP): This perk provides a character with a reputation that's known far and wide.
+- **specialty-skill-focus-skill** (Cost: 5 BP) [REQUIRES TARGET SKILL IN 'parent' CSV COLUMN]: This perk alters how rank benefits are earned for a specific specialty skill.
+- **tough-as-nails** (Cost: 4 BP): This perk provide a character with a +1 step increase to his Strength resistance modifier.
+- **vigor** (Cost: 2///3///4 BP): This perk allows a character to increase the amount of damage he can sustain.
+- **willpower** (Cost: 4 BP): This perk provides a character with a +1 step increase to his Will resistance modifier.
+- **extra-psionic-energy** (Cost: 3 BP): This perk provides a character with 2 extra Psionic Energy Points (PP).
+- **precog** (Cost: 5 BP): Based on the Theory of Fixed Points, space-time is a rigid manifold where high-entropy events create "Causal Echoes" that ripple backward and forward along the temporal axis.
+- **fraal-psionics-schooling** (Cost: 5 BP): The character has received specialized psionic training from the Fraal.
+
+## FLAWS
+- **alien-artifact** (Bonus: +3 BP): An alien artifact is a strange device or relic that the character doesn't know anything about.
+- **bad-luck** (Bonus: +3 BP): A character with this flaw suffers a Critical Failure result whenever a 19 or 20 comes up on the control die.
+- **clueless** (Bonus: +3 BP): A character with the Clueless flaw thinks he's proficient in a particular specialty skill, when in fact he's not as good as he thinks he is.
+- **clumsy** (Bonus: +3 BP): A character with the Clumsy flaw has poor coordination and an unsteady hand.
+- **code-of-honor** (Bonus: +3 BP): The Code of Honor flaw represents a standard the character decides to live by.
+- **delicate** (Bonus: +3 BP): A character with the Delicate flaw suffers 1 point of stun damage whenever he makes a successful Unarmed Attack against an opponent.
+- **dirt-poor** (Bonus: +3 BP): The Dirt Poor flaw suggests a lot about a character's background and usually indicates an impoverished upbringing.
+- **forgetful** (Bonus: +3 BP): A character with the Forgetful flaw has trouble remembering details—his recollection of a name, face, or fact has a tendency to slip away when the character needs it most.
+- **fragile** (Bonus: +3 BP): A character with the Fragile flaw is hampered by a +1 penalty to all Stamina-endurance skill checks he makes as a result of damage he has suffered.
+- **infamy** (Bonus: +3 BP): Infamy is a state of being publicly known for an evil or criminal act.
+- **oblivious** (Bonus: +3 BP): A character with the Oblivious flaw has trouble noticing things, suffering a +1 penalty to all Awareness-perception skill checks.
+- **obsessed** (Bonus: +3 BP): This flaw indicates that a character is obsessed with a particular person, place, or thing, which is known as the trigger for the flaw.
+- **old-injury** (Bonus: +3 BP): Sometime in the past, the character suffered an injury.
+- **phobia** (Bonus: +3 BP): This flaw represents an irrational fear that hampers the character in some way.
+- **poor-looks** (Bonus: +3 BP): A character with the Poor Looks flaw suffers a +1 penalty to all Personality-based skill checks when appearance could have a negative effect.
+- **powerful-enemy** (Bonus: +3 BP): A character with this flaw begins play with a Powerful Enemy who's out to make his life terrible.
+- **primitive** (Bonus: +3 BP): This flaw indicates that a character has come from a primitive culture and upbringing, which causes problems for him when dealing with modern technology.
+- **slow** (Bonus: +3 BP): A character with the Slow flaw has reduced reaction time, which manifests as a +1 penalty to his action checks.
+- **spineless** (Bonus: +3 BP): The Spineless flaw hampers a character by weakening his will, making him fearful, indecisive, and easier to manipulate.
+- **temper** (Bonus: +3 BP): A character with this flaw has a short fuse.
+
+## BACKGROUNDS (Favored Skills)
+- **academy-graduate**:  
+- **austin-combat-school**: [Tactics]({{< relref "/skills/tactics/" >}}) 
+- **bounty-hunter**:  
+- **breacher**:  
+- **certified-psychic**:  
+- **corporate-enforcer**:  
+- **criminal-urchin**: [Street Smart]({{< relref "/skills/street-smart/" >}}) 
+- **deserter**:  
+- **diplomat**:  
+- **face**:  
+- **field-medic**:  
+- **field-researcher**:  
+- **fixer**:  
+- **fleet-officer**:  
+- **freelance-captain**:  
+- **ghost-agent**:  
+- **grifter**:  
+- **hacker**:  
+- **innovator**:  
+- **mercenary**: [Survival]({{< relref "/skills/survival/" >}}) 
+- **military-brat**:  
+- **operative**:  
+- **orlamu-clergy**: [Resolve]({{< relref "/skills/resolve/" >}}) 
+- **outcast**:  
+- **paramilitary-officer**:  
+- **private-eye**:  
+- **roughneck**:  
+- **sapper**:  
+- **scavenger**:  
+- **ship-owner**:  
+- **smuggler**:  
+- **subverter**: [Creativity]({{< relref "/skills/creativity/" >}}) 
+- **test-subject**:  
+- **virtuoso**: [Creativity]({{< relref "/skills/creativity/" >}}) 
+- **wage-slave**:  
+- **war-veteran**:  
+- **whistleblower**: [Creativity]({{< relref "/skills/creativity/" >}}) 
+- **war-hero**:  
+
+## EQUIPMENT (Weapons & Armor)
+Just reference these if the user concept requires gear. No strict AP/SP costs for equipment, usually bought with credits in-game.
+- **Weapons**:  ...
+- **Armor**: pl-0-stone-age, pl-1-bronze-iron-age, pl-2-middle-ages, pl-3-age-of-reason, pl-4-industrial-age, pl-5-information-age, pl-6-fusion-age, pl-7-gravity-age, pl-8-energy-age ...
