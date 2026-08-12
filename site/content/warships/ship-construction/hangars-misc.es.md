@@ -222,7 +222,7 @@ The final step in shipboard manufacturing and repair technology, the nanomanufac
 | Extra pods | - | 1 | 0 | $50 K | Hangar | 2 10-man lifeboats |
 | Fabrication Facility | - | 4 | 2 | $200 K | Misc. | - |
 | Ordnance Transfer System- | 2 | 2 | $150 K | Hangar | - |
-| Security Suite | - | 1 | 1 | $200 K | Cmd | per 40 hull points protected |
+| Security Suite | - | 1 | 1 | $200 K | Misc. | per 40 hull points protected |
 | Stabilizer | G, X | 5% | 1/hull | $200 K/hull | Engine | Adds 1 to maneuverability class |
 | Holofield Bay | Q, C | 1 | 1 | $100 K | Misc. |
 | Nanomanufacture Bay | S, C | 4 | 4 | $500 K | Misc. |
